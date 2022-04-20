@@ -1,5 +1,5 @@
 ---
-title: Motywy — zbierania elektronicznych materiałów dowodowych
+title: Motywy w Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,23 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Użyj motywów w Advanced eDiscovery, aby uporządkować zestawy recenzji, znajdując motyw motywu dominującego w każdym dokumencie.
+description: Motywy zbierania elektronicznych materiałów dowodowych (Premium) umożliwiają organizowanie zestawów przeglądów przez znalezienie dominującego motywu w każdym dokumencie.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed7759353230e80359a771416c01e62d2ec03337
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49605d2d7fb3103c672fd5ae4d2249956d52b6a0
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987271"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934522"
 ---
-# <a name="themes-in-advanced-ediscovery"></a>Motywy w programie Advanced eDiscovery
+# <a name="themes-in-ediscovery-premium"></a>Motywy zbierania elektronicznych materiałów dowodowych (Premium)
 
-Jak osoba może napisać dokument? Zazwyczaj zaczynają się od jednego lub większej liczby pomysłów, które chcą przekazać w dokumencie, i redagują za pomocą wyrazów, które są zgodne z pomysłami. Im bardziej rozpowszechniony jest pomysł, tym częściej wyrazy związane z tym pomysłem zwykle się powtarzają. Dzięki temu można dowiedzieć się, jak inne osoby również mogą korzystać z dokumentów. Ważną rzeczą, którą należy zrozumieć podczas czytania dokumentu, są pomysły, które dokument próbuje przekazać, które pomysły pojawiają się w miejscu, i relacje między nimi.
+Jak osoba pisze dokument? Zazwyczaj zaczynają od co najmniej jednego pomysłu, który chcą przekazać w dokumencie, i tworzą je przy użyciu słów zgodnych z pomysłami. Bardziej rozpowszechnionym pomysłem jest częstsze słowa, które są związane z tą ideą. Informuje to również o tym, jak użytkownicy korzystają z dokumentów. Ważną rzeczą, którą należy zrozumieć podczas czytania dokumentu, są pomysły, które dokument próbuje przekazać, które pomysły pojawiają się gdzie i jakie są relacje między pomysłami.
 
-Można to rozszerzyć do sposobu, w jaki dana osoba chce korzystać z zestawu dokumentów. Chcą zobaczyć, które pomysły są obecne w zestawach, a które dokumenty mówią o tych pomysłach. Ponadto jeśli znajdą konkretny dokument, który ich interesuje, chcą mieć możliwość zobaczenia dokumentów, w których omawiają podobne pomysły.
+Można go rozszerzyć na sposób, w jaki dana osoba chce korzystać z zestawu dokumentów. Chcą zobaczyć, które pomysły są obecne w zestawach i które dokumenty mówią o tych pomysłach. Ponadto, jeśli znajdą konkretny dokument zainteresowania, chcą mieć możliwość zobaczenia dokumentów, które omawiają podobne pomysły.
 
-Funkcja Motywy w programie Advanced eDiscovery próbach naśladowania przyczyn przyczyn dokumentu przez analizowanie motywów omówinych w zestawie  recenzji i przypisywanie motywu do dokumentów w zestawie recenzji. W Advanced eDiscovery motywy poszły o krok dalej i zidentyfikowały *motyw motywu dominującego* w każdym dokumencie. Motyw dominującej jest tym, który występuje najczęściej w dokumencie.
+Funkcja Motywy w usłudze eDiscovery (Premium) próbuje naśladować sposób, w jaki ludzie uzasadniają dokumenty, analizując *motywy* omówione w zestawie przeglądów i przypisując motyw do dokumentów w zestawie przeglądów. W obszarze eDiscovery (Premium) motywy idą o krok dalej i identyfikują *dominujący motyw* w każdym dokumencie. Dominującym motywem jest ten, który pojawia się najczęściej w dokumencie.
 
-## <a name="how-does-themes-work"></a>Jak działają motywy?
+## <a name="how-does-themes-work"></a>Jak działa motywy?
 
-Funkcja Motywy analizuje dokumenty z tekstem w zestawie recenzji w celu przeanalizowania typowych motywów wyświetlanych we wszystkich dokumentach w zestawie recenzji. Advanced eDiscovery te motywy są przypisywane do dokumentów, w których są wyświetlane. Ponadto każdy motyw jest oznaczany wyrazami w dokumentach, które są reprezentatywne dla motywu. Dokument może zawierać różnego rodzaju tematy, dlatego Advanced eDiscovery często przypisuje do dokumentów wiele motywów. Motyw, który jest najbardziej widoczny w dokumencie, jest wyznaczony jako motyw motywu dominującego.
+Funkcja Motywy analizuje dokumenty z tekstem w zestawie przeglądów, aby przeanalizować typowe motywy, które pojawiają się we wszystkich dokumentach w zestawie przeglądów. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) przypisuje te motywy do dokumentów, w których się pojawiają. Oznacza również każdy motyw słowami używanymi w dokumentach, które są reprezentatywne dla motywu. Ponieważ dokument może zawierać różne rodzaje przedmiotów, funkcja zbierania elektronicznych materiałów dowodowych (Premium) często przypisuje wiele motywów do dokumentów. Motyw, który jest najbardziej widoczny w dokumencie, jest wyznaczony jako motyw dominujący.

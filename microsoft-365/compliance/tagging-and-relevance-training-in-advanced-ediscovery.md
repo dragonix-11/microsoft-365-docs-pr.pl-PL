@@ -1,5 +1,5 @@
 ---
-title: Szkolenia dotyczące otagowania i istotności w programie Advanced eDiscovery
+title: Trenowanie tagowania i istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,83 +16,83 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: Dowiedz się, jakie czynności należy wykonać w celu otagowania i pracy z przykładem szkoleniowym 40 plików na etapie szkolenia Advanced eDiscovery.
-ms.openlocfilehash: c21ec89896dbd67bd348abd317d1389f8e105fda
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Zapoznaj się z krokami tagowania, a następnie pracuj z próbką szkoleniową zawierającą 40 plików na etapie trenowania istotności w usłudze eDiscovery (Premium).
+ms.openlocfilehash: 9744fd06548b4a0956db63cf200bc0a443deed9e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988023"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935571"
 ---
-# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Szkolenia dotyczące otagowania i istotności w programie Advanced eDiscovery
+# <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>Trenowanie tagowania i istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
   
-W tym artykule opisano procedurę pracy z modułem szkolenia dotyczące istotności w programie Advanced eDiscovery.
+W tym artykule opisano procedurę pracy z modułem szkoleniowym Istotność w usłudze Microsoft Purview eDiscovery (Premium).
   
-Po zakończeniu oceny w programie Advanced eDiscovery i wprowadzeniu etapu szkolenia Istotność na karcie Tag jest przeniesiena próbka szkolenia z 40 plików.
+Po zakończeniu oceny w obszarze eDiscovery (Premium) i wprowadzeniu etapu trenowania istotności na karcie Tag na potrzeby tagowania jest wprowadzana próbka szkoleniowa zawierająca 40 plików.
   
-## <a name="performing-relevance-training"></a>Przeprowadzanie szkolenia z zakresie istotności
+## <a name="performing-relevance-training"></a>Przeprowadzanie trenowania istotności
 
-1. Na karcie **Tag \> istotności** okienko Otagowanie jest domyślnie wyświetlane w okienku po lewej stronie, a przykładowe pliki są wyświetlane po jednym tagowaniu.
+1. Na karcie **Tag istotności \>** okienko Tagowanie jest wyświetlane domyślnie w okienku po lewej stronie, a przykładowe pliki są wyświetlane pojedynczo na potrzeby tagowania.
 
-    ![Panel tagu istotności.](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Panel Tag istotności.](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
-    Na **karcie Tag** jest wyświetlana nazwa pliku. Może to być ścieżka, temat wiadomości e-mail, tytuł lub nazwa zdefiniowana przez użytkownika. Identyfikator, ścieżkę pliku lub ścieżkę tekstową można skopiować, klikając prawym przyciskiem myszy ścieżkę pliku.
+    Na karcie **Tag** jest wyświetlana nazwa wyświetlana pliku. Może to być ścieżka, temat wiadomości e-mail, tytuł lub nazwa zdefiniowana przez użytkownika. Identyfikator, ścieżka pliku lub ścieżka tekstowa można skopiować, klikając prawym przyciskiem myszy ścieżkę pliku.
 
-    **Statystyki** tagów na karcie Tag pokazują przykładowy numer pliku (u góry lewego okienka), liczbę obecnie wyświetlanego pliku z wszystkich plików w przykładowym (dolnej części prawego okienka) oraz bieżącą całkowitą liczbę otagowanych plików w przykładzie (na dole lewego okienka), która zmienia się wraz z dodawaniem tagów do plików. Dotyczy to wszelkiego oznaczania istotności wykonanego zarówno w ramach testów, szkoleń, zajęć, jak i testów.
+    Statystyki tagowania na karcie **Tag** pokazują numer przykładu pliku (w górnej części okienka po lewej stronie), liczbę aktualnie wyświetlanego pliku z łącznej liczby plików w przykładzie (u dołu okienka po prawej stronie) oraz bieżącą całkowitą liczbę tagowanych plików w przykładzie (u dołu okienka po lewej stronie), która zmienia się w miarę tagowania plików. Dotyczy to wszelkich wykonanych tagów istotności, zarówno w obszarze Ocena, Szkolenie, Nadrabianie zaległości, czy Test.
 
-    Ikony oznaczające istnienie komentarzy, tagów i plików rodzinnych są wyświetlane w widoku pliku na pasku nad plikiem.
+    Ikony wskazujące istnienie komentarzy, tagów i plików rodzinnych są wyświetlane w widoku plików na pasku nad plikiem.
 
-2. Określ istotność pliku dla problemu i otaguj plik za pomocą przycisków ikon opcji tagowania lub skrótów klawiaturowych, jak pokazano w poniższej tabeli:
+2. Określ istotność pliku w przypadku problemu i otaguj go przy użyciu przycisków ikony opcji tagowania lub skrótów klawiaturowych, jak pokazano w poniższej tabeli:
 
-   |**Opcja otagowania**|**Opis**|**Skrót klawiaturowy**|**Zbiorczo tagowanie skrótu klawiaturowego (w przypadku wielu problemów)**|
+   |**Opcja tagowania**|**Opis**|**Skrót klawiatury**|**Zbiorcze tagowanie skrótu klawiaturowego (w przypadku wielu problemów)**|
    |-----|-----|-----|-----|
-   |R  <br/> |Odpowiedni temat  <br/> |Z  <br/> |`Shift + Z`  <br/> |
-   |NR  <br/> |Nie istotne  <br/> |X  <br/> |`Shift + X`  <br/> |
-   |Pomiń  <br/> |Pomiń  <br/> |C  <br/> |`Shift + A`  <br/> |
+   |R  <br/> |Odpowiednich  <br/> |Z  <br/> |`Shift + Z`  <br/> |
+   |NR  <br/> |Nie dotyczy  <br/> |X  <br/> |`Shift + X`  <br/> |
+   |Pominąć  <br/> |Pominąć  <br/> |C  <br/> |`Shift + A`  <br/> |
    |||||
 
-   - Jeśli w przypadku pliku występuje wiele problemów, po oznakowaniu jednego problemu zaznaczenie jest przenosowane do następnego problemu (jeśli istnieją).  
+   - Gdy istnieje wiele problemów z plikiem, po otagowaniu jednego problemu wybór przechodzi do następnego problemu (jeśli istnieje).  
 
-   - Słowa kluczowe zdefiniowane przez administratora lub menedżera przypadków podczas wyróżniania słów kluczowych ( \> Wyróżnione słowa kluczowe konfiguracji istotności) zostaną wyświetlone (w określonych kolorach), aby ułatwić identyfikację odpowiednich plików podczas znakowania. Jeśli słowo kluczowe ma podwójne podkreślenie, można je kliknąć, aby wyświetlić etykietkę narzędzia z opisem słowa kluczowego.
+   - Słowa kluczowe zdefiniowane przez administratora lub menedżera spraw podczas wyróżniania słów kluczowych (słowa kluczowe z wyróżnioną konfiguracją \> istotności) będą wyświetlane (w określonych kolorach), aby ułatwić identyfikację odpowiednich plików podczas tagowania. Jeśli słowo kluczowe ma podwójne podkreślenie, można je kliknąć, aby wyświetlić etykietkę narzędzia z opisem słowa kluczowego.
 
-     Opcjonalnie na karcie **Tag** kliknij pozycję **Ustawienia tagu** , aby ustawić następujące opcje:
+     Opcjonalnie na karcie **Tag** kliknij pozycję **Ustawienia tagów** , aby ustawić następujące opcje:
 
       ![Ustawienia tagu istotności.](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
-   - **Tag zbiorczy**: Użyj tej opcji, aby przypisać wiele problemów do pliku,  wybierając pozycję Wszystkie, aby ustawić tag dla wybranego pliku dla wszystkich problemów (zastępuje już otagowane problemy) lub  wybierając pozycję Pozostałe, aby zastosować tag do pozostałych niepoddanych problemów. Wybrana opcja będzie obowiązywać we wszystkich przypadkach tego użytkownika, dopóki nie zostanie zmieniona przez tego użytkownika (ustawienie jest dla każdego użytkownika we wszystkich przypadkach użytkownika).
+   - **Tag zbiorczy**: użyj tej opcji, aby przypisać wiele problemów dla pliku, wybierając pozycję **Wszystkie** , aby ustawić tag dla wybranego pliku dla wszystkich problemów (przesłonięcia już oznaczonych problemów) lub wybierając **pozycję Reszta** , aby zastosować tag do pozostałych nieoznaczonych problemów. Wybrana opcja pozostaje w mocy dla wszystkich przypadków tego użytkownika, dopóki nie zostanie zmieniona przez tego użytkownika (ustawienie dotyczy wszystkich przypadków użytkownika).
 
-   - **Tag automatyczny**: Zaznacz to pole wyboru, aby ustawić inne problemy dotyczące pliku jako Nie dotyczy po jednym Odpowiednim otagowaniu.
+   - **Tag automatyczny**: zaznacz to pole wyboru, aby ustawić inne problemy dotyczące pliku jako nieistotne po pojedynczym tagowaniu odpowiednim.
 
-   - **Automatyczne przechodzenie** do następnego pliku: zaznacz to pole wyboru, aby przenieść wyświetlany plik do następnego pliku podczas otagowania ostatniego lub tylko niezarchiwowanego problemu.
+   - **Automatyczne przechodzenie**: zaznacz to pole wyboru, aby przenieść wyświetlony wybór pliku do następnego pliku podczas tagowania ostatniego lub jedynego nieoznaczonego problemu.
 
-    Pominięte pliki nie będą uznawane za na potrzeby oceniania wyników z oceny istotności i istotności.
+    Pominięte pliki nie będą brane pod uwagę do celów trenowania istotności i oceniania istotności.
 
-3. Komentarze w tekście, skojarzone z plikiem, można wyświetlać i edytować za pomocą opcji Komentarz  na liście rozwijanej okienka po lewej stronie. (opcjonalnie)
+3. Komentarze z bezpłatnym tekstem, skojarzone z plikiem, można wyświetlać i edytować za pośrednictwem opcji **Komentarz** na liście rozwijanej okienka po lewej stronie. (opcjonalnie)
 
-4. Wskazówki dotyczące otagowania można wyświetlić, wybierając opcję Wytyczne **dotyczące otagowania** na liście rozwijanej okienka po lewej stronie.
+4. Wskazówki dotyczące tagowania można wyświetlić, wybierając opcję **Wskazówki dotyczące tagowania** na liście rozwijanej w okienku po lewej stronie.
 
-5. Po zakończeniu tagowania wszystkich plików na liście i przygotowaniu się do obliczenia wyników kliknij przycisk **Oblicz**. Zostanie **wyświetlona** karta Śledzenie.  
+5. Po zakończeniu tagowania wszystkich plików na liście i przygotowaniu do obliczenia wyników kliknij pozycję **Oblicz**. Zostanie wyświetlona karta **Śledzenie** .  
 
-## <a name="working-with-the-sample-files-list"></a>Praca z listą plików przykładowych
+## <a name="working-with-the-sample-files-list"></a>Praca z listą przykładowych plików
 
-Lista plików przykładowych umożliwia wyświetlanie listy plików w przykładzie szkolenia i wykonywanie różnych akcji na jednym lub kilku plikach. Na karcie **Tag** \> **istotności** w okienku  po lewej stronie w okienku Przykładowe pliki jest wyświetlana lista przykładowych plików do przetworzenia z procesami Oceny, Szkolenia, Dojścia i Niespójności.
+Lista przykładowych plików umożliwia wyświetlenie listy plików w przykładzie szkoleniowym i wykonanie różnych akcji na co najmniej jednym pliku. Na karcie **Tag** **istotności** \> w lewym okienku **Przykładowe pliki** zostanie wyświetlona lista przykładowych plików do przetwarzania z procesami oceny, trenowania, nadrabiania zaległości i niespójności.
   
-1. Na karcie **Tag istotności \>** wybierz pozycję Przykładowe pliki na liście rozwijanej okienka po lewej stronie. Przykładowe pliki są wyświetlane w okienku po lewej stronie.
+1. Na karcie **Tag istotności \>** wybierz listę rozwijaną Przykładowe pliki w okienku po lewej stronie. Przykładowe pliki są wyświetlane w okienku po lewej stronie.
 
-    ![Lista plików przykładowych tagu istotności.](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![Lista plików przykładowych tagów istotności.](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
-2. Wybierz określony przykład lub numer pliku, wprowadzając lub wybierając jego numer w polach **Przykład lub Plik**.
+2. Wybierz określony przykład lub numer pliku, wprowadzając lub wybierając jego numer w polach **Przykład** lub **Plik** .
 
-   - W lewej kolumnie wyświetlanej listy plików na karcie Tag jest wyświetlany **numer sekwencji** plików. Klikając nagłówek, zostanie wyświetlona oryginalna kolejność plików, która wraca do pierwotnej kolejności.
+   - Numer sekwencji plików znajduje się w lewej kolumnie wyświetlonej listy plików na karcie **Tag** . Klikając nagłówek, oryginalna wyświetlana kolejność plików powraca do oryginalnej kolejności.
 
-   - Kliknięcie wiersza pliku powoduje wyświetlenie jego zawartości w prawym okienku.
+   - Kliknięcie wiersza pliku powoduje wyświetlenie jego zawartości w okienku po prawej stronie.
 
-   - Przechodzenie między plikami w bieżącym przykładzie przy użyciu dolnej opcji paska menu. Ponadto dostępne są skróty klawiaturowe:
+   - Nawiguj między plikami w bieżącym przykładzie, używając opcji dolnego paska menu. Ponadto dostępne są skróty klawiaturowe nawigacji:
   
      - Aby przejść do pierwszego pliku w przykładzie: `Shift + Ctrl + <`
 
      - Aby przejść do poprzedniego pliku w przykładzie: `Shift + <`
 
-     - Aby przejść do następnego pliku z przykładu: `Shift + >`
+     - Aby przejść do następnego pliku w przykładzie: `Shift + >`
 
      - Aby przejść do ostatniego pliku w przykładzie: `Shift + Ctrl + >`

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ba816430521db2848273a4f7c6ca7d1a61703690
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 77eb8c0aa4d0ebd78788e9701e4933788af2e46c
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862289"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915912"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Dołączanie urządzeń do Microsoft Defender dla Firm
 
@@ -41,7 +41,6 @@ Dzięki Microsoft Defender dla Firm masz do wyboru kilka opcji dołączania urz�
 1. Wybierz kartę dla systemu operacyjnego: 
 
    - klienci Windows
-   - serwer Windows (wersja zapoznawcza)
    - Komputery z systemem macOS
    - urządzenia przenośne
 
@@ -56,6 +55,7 @@ Dzięki Microsoft Defender dla Firm masz do wyboru kilka opcji dołączania urz�
 Wybierz jedną z następujących opcji dołączania Windows urządzeń klienckich do usługi Defender dla Firm:
 
 - [Skrypt lokalny](#local-script-for-windows-clients) (do ręcznego dołączania urządzeń w portalu Microsoft 365 Defender)
+- [Zasady grupy](#group-policy-for-windows-clients)
 - [Microsoft Endpoint Manager](#endpoint-manager-for-windows-clients) (zawarte w [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 
@@ -81,6 +81,10 @@ Do dołączania Windows urządzeń klienckich można użyć skryptu lokalnego. P
 7. Wpisz lokalizację pliku skryptu. Jeśli na przykład plik został skopiowany do folderu Desktop, wpisz `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`polecenie , a następnie naciśnij klawisz Enter (lub wybierz przycisk **OK**).
 
 8. Po uruchomieniu skryptu przejdź do [pozycji Uruchom test wykrywania](#running-a-detection-test-on-a-windows-client).
+
+### <a name="group-policy-for-windows-clients"></a>zasady grupy dla klientów Windows
+
+Jeśli wolisz używać zasady grupy do dołączania klientów Windows, postępuj zgodnie ze wskazówkami w temacie [Dołączanie urządzeń Windows przy użyciu zasady grupy](../defender-endpoint/configure-endpoints-gp.md). W tym artykule opisano kroki dołączania do Ochrona punktu końcowego w usłudze Microsoft Defender. Jednak kroki dołączania do usługi Defender dla Firm są podobne.
 
 ### <a name="endpoint-manager-for-windows-clients"></a>Endpoint Manager dla klientów Windows
 
@@ -133,67 +137,6 @@ Podczas konfigurowania rejestracji automatycznej użytkownicy dodają swoje kont
 Po dodaniu urządzeń Windows do usługi Defender dla Firm możesz uruchomić test wykrywania na urządzeniu Windows, aby upewnić się, że wszystko działa poprawnie.
 
 1. Na urządzeniu Windows utwórz folder: `C:\test-MDATP-test`.
-
-2. Otwórz wiersz polecenia jako administrator.
-
-3. W oknie wiersza polecenia uruchom następujące polecenie programu PowerShell:
-
-   ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
-   ```
-
-Po uruchomieniu polecenia okno wiersza polecenia zostanie zamknięte automatycznie. Jeśli test wykrywania zakończy się pomyślnie, zostanie on oznaczony jako ukończony, a nowy alert zostanie wyświetlony w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) dla nowo dołączonego urządzenia w ciągu około 10 minut.
-
-## <a name="view-a-list-of-onboarded-devices"></a>Wyświetlanie listy dołączonych urządzeń
-
-Aby wyświetlić listę urządzeń dołączonych do usługi Defender dla Firm, w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) w okienku nawigacji w obszarze **Punkty końcowe** wybierz pozycję **Invetory urządzenia**.
-
-## <a name="next-steps"></a>Następne kroki
-
-- Jeśli masz inne urządzenia do dołączenia, wybierz kartę odpowiadającą systemowi operacyjnemu na urządzeniach [(Windows klientów, Windows Server, macOS lub urządzenia przenośne](#what-to-do)) i postępuj zgodnie ze wskazówkami na tej karcie.
-- Jeśli skończysz dołączać urządzenia, przejdź do [kroku 5. Konfigurowanie ustawień zabezpieczeń i zasad w Microsoft Defender dla Firm](mdb-configure-security-settings.md)
-- Zobacz [Wprowadzenie przy użyciu Microsoft Defender dla Firm](mdb-get-started.md).
-
-## <a name="windows-server"></a>[**Windows Server**](#tab/WindowsServerEndpoints)
-
-## <a name="windows-server-preview"></a>serwer Windows (wersja zapoznawcza)
-
-Urządzenie Windows Server można dołączyć przy użyciu skryptu lokalnego. 
-
-> [!IMPORTANT]
-> Możliwość dołączania punktów końcowych serwera Windows jest obecnie dostępna w wersji zapoznawczej.
-
-1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
-
-2. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Punkty końcowe**, a następnie w obszarze **Zarządzanie urządzeniami** wybierz pozycję **Dołączanie**.
-
-3. Wybierz system operacyjny, taki jak **Windows Server 1803, 2019 i 2022**, a następnie w sekcji **Metoda wdrażania** wybierz pozycję **Skrypt lokalny**. 
-
-   Jeśli wybierzesz **Windows Server 2012 R2 i 2016**, będziesz mieć dwa pakiety do pobrania i uruchomienia: pakiet instalacyjny i pakiet dołączania. Pakiet instalacyjny zawiera plik MSI, który instaluje agenta Microsoft Defender dla Firm. Pakiet dołączania zawiera skrypt dołączania punktu końcowego Windows Server do usługi Defender for Business. 
-
-4. Wybierz pozycję **Pobierz pakiet dołączania**. Zalecamy zapisanie pakietu dołączania na dysku wymiennym.
-
-   Jeśli wybrano **opcje Windows Server 2012 R2 i 2016**, wybierz również pozycję **Pobierz pakiet instalacyjny** i zapisz go na dysku wymiennym
-
-5. W punkcie końcowym serwera Windows wyodrębnij zawartość pakietów instalacyjnych/dołączających do lokalizacji, takiej jak folder Desktop. Powinien istnieć plik o nazwie `WindowsDefenderATPLocalOnboardingScript.cmd`. 
-
-   Jeśli dołączasz Windows Server 2012 R2 lub Windows Server 2016, najpierw wyodrębnij pakiet instalacyjny.
-
-6. Otwórz wiersz polecenia jako administrator.
-
-7. Jeśli dołączasz Windows Server 2012R2 lub Windows Server 2016, uruchom następujące polecenie: `Msiexec /i md4ws.msi /quiet`. 
-
-   Jeśli dołączasz Windows Server 1803, 2019 lub 2022, pomiń ten krok i przejdź do kroku 8.
-
-8. Wpisz lokalizację pliku skryptu. Jeśli na przykład plik został skopiowany do folderu Desktop, wpisz `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`polecenie , a następnie naciśnij klawisz Enter (lub wybierz przycisk **OK**).
-
-9. Kontynuuj [uruchamianie testu wykrywania na serwerze Windows](#running-a-detection-test-on-windows-server)
-
-### <a name="running-a-detection-test-on-windows-server"></a>Uruchamianie testu wykrywania na serwerze Windows
-
-Po dodaniu punktu końcowego serwera Windows do usługi Defender dla Firm możesz uruchomić test wykrywania, aby upewnić się, że wszystko działa prawidłowo.
-
-1. Na urządzeniu Windows Server utwórz folder: `C:\test-MDATP-test`.
 
 2. Otwórz wiersz polecenia jako administrator.
 

@@ -18,15 +18,15 @@ ms.custom:
 - intro-overview
 search.appverid:
 - MET150
-description: Dowiedz się Microsoft 365 Business Premium o usłudze subskrypcyjnej, która zajmuje się it w pierwszej części za Ciebie.
+description: Dowiedz się więcej o Microsoft 365 Business Premium— usłudze subskrypcji, która zajmuje się częścią IT.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: bee91aeb09fa2b2baff34c8f7d7193db6085b2a1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 48644f2b823c441ce6db8b10eac6213699792b9c
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011353"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934186"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -34,20 +34,20 @@ ms.locfileid: "63011353"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 
-Microsoft 365 Business Premium to usługa subskrypcji, która umożliwia prowadzenie organizacji w chmurze, podczas gdy firma Microsoft zajmuje się infrastrukturą it, zarządzanie urządzeniami, ochronę przed rzeczywistymi zagrożeniami oraz udostępnianie organizacji najnowszego oprogramowania biznesowego.
+Microsoft 365 Business Premium to usługa subskrypcji, która umożliwia uruchamianie organizacji w chmurze, podczas gdy firma Microsoft zajmuje się infrastrukturą IT, zarządza urządzeniami, chroni przed rzeczywistymi zagrożeniami i udostępnia organizacji najnowsze oprogramowanie biznesowe.
 
-Po rejestracji w programie Microsoft 365 Business Premium otrzymasz te same narzędzia zwiększające produktywność, które są dostępne w programie Microsoft 365 Business Standard oraz następujące funkcje zabezpieczeń:
+Gdy zarejestrujesz się w Microsoft 365 Business Premium, uzyskasz wszystkie te same narzędzia zwiększające produktywność, które otrzymujesz z Microsoft 365 Business Standard i następujące funkcje zabezpieczeń:
 
-**Zabezpieczanie danych**
+**Ochrona danych**
 
 
 |Funkcja|Opis|
 | --- | --- |
-| Ochrona przed zagrożeniami | Microsoft 365 Business Premium zapewnia ochronę przed zagrożeniami dzięki zaawansowanym możliwościom ochrony przed zagrożeniami. Te funkcje obejmują bezpieczne załączniki i ochronę bezpiecznych linków. <br/><br/>Aby uzyskać dodatkowe funkcje zabezpieczeń i ochrony przed zagrożeniami, zobacz Omówienie programu [Microsoft Defender dla](../../security/defender-business/mdb-overview.md) firm (wersja Preview!). |
-| Zabezpieczanie danych biznesowych | Twoje dane osobowe są chronione na urządzeniach osobistych przy użyciu dostępu za pomocą numeru PIN oraz z ograniczeniami dotyczącymi kopiowania i zapisywania. Możesz również dodać ochronę informacji, aby upewnić się, że tylko uprawnione osoby mogą uzyskać dostęp do informacji poufnych. |
-| Zabezpieczanie urządzeń | Możesz chronić swoje pliki na urządzeniach, ograniczając dostęp mobilny, taki jak kopiowanie i wklejanie. Możesz także selektywnie wyczyścić dane biznesowe z zarejestrowanych urządzeń przenośnych w przypadku ich zgubienia lub kradzieży. |
-| Dodatkowe funkcje zabezpieczeń | Dostępne są zaawansowane funkcje Microsoft 365 Business Premium, które pomagają chronić firmę przed cyberzagrożeniami i chronić poufne informacje. Dostępne funkcje obejmują usługę Microsoft Defender for Office 365 Plan 1, zasady ochrony przed utratą danych (DLP), Exchange Online archiwizację, usługę Azure Information Protection i usługę Intune. |
+| Ochrona przed zagrożeniami | Microsoft 365 Business Premium ułatwia ochronę przed zagrożeniami dzięki zaawansowanym funkcjom ochrony przed zagrożeniami. Te możliwości obejmują bezpieczne załączniki i ochronę bezpiecznych linków. <br/><br/>Zapoznaj się [z omówieniem Microsoft Defender dla Firm](../../security/defender-business/mdb-overview.md) (wersja zapoznawcza!), aby uzyskać dodatkowe funkcje zabezpieczeń i ochrony przed zagrożeniami. |
+| Zabezpieczanie danych biznesowych | Twoje dane osobowe są chronione na urządzeniach osobistych z dostępem do numeru PIN oraz ograniczonym kopiowaniem i zapisywaniem. Możesz również dodać ochronę informacji, aby upewnić się, że tylko autoryzowane osoby mogą uzyskiwać dostęp do poufnych informacji. |
+| Zabezpieczanie urządzeń | Pliki służbowe można chronić na urządzeniach, ograniczając dostęp mobilny, taki jak kopiowanie i wklejanie. Możesz również selektywnie czyścić dane biznesowe z zarejestrowanych urządzeń przenośnych, jeśli zostaną utracone lub skradzione. |
+| Dodatkowe funkcje zabezpieczeń | Dostępne są zaawansowane funkcje w Microsoft 365 Business Premium, które ułatwiają ochronę firmy przed zagrożeniami cybernetycznymi i ochronę poufnych informacji. Funkcje te obejmują Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1, zasady ochrony przed utratą danych (DLP) usługi Microsoft Purview, archiwizowanie Exchange Online, Information Protection platformy Azure i Intune. |
 
-Jeśli masz usługę Microsoft Business Premium, najszybszym sposobem konfiguracji zabezpieczeń i bezpiecznego rozpoczynania współpracy jest postępuj zgodnie z wskazówkami w tej bibliotece: Microsoft 365 dla mniejszych firm i [kampanii](../../business-premium/index.md). Te wskazówki opracowano we współpracy z zespołem Microsoft Do obrony przed cyberzagrożeniami, które zostały uruchomione przez zaawansowane hakerów. 
+Jeśli masz usługę Microsoft Business Premium, najszybszym sposobem skonfigurowania zabezpieczeń i bezpiecznego rozpoczęcia współpracy jest skorzystanie ze wskazówek w tej bibliotece: [Microsoft 365 dla mniejszych firm i kampanii](../../business-premium/index.md). Wskazówki te zostały opracowane we współpracy z zespołem Microsoft Defending Democracy w celu ochrony wszystkich małych klientów biznesowych przed zagrożeniami cybernetycznymi wprowadzonymi przez zaawansowanych hakerów. 
 
-Aby uzyskać szczegółowe informacje, [zobacz Microsoft 365 Zawartość dla firm](../../admin/index.yml).
+Aby uzyskać szczegółowe informacje, zobacz [zawartość Microsoft 365 Business](../../admin/index.yml).

@@ -1,5 +1,5 @@
 ---
-title: Dodawanie użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych za pomocą skryptu
+title: Używanie skryptu do dodawania użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,17 +21,17 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: Dowiedz się, jak uruchomić skrypt w celu dodania skrzynek pocztowych & OneDrive dla Firm witryn do nowego archiwum skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.
-ms.openlocfilehash: 10a605b422178e5006d8a027a697ca6745f82b98
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Dowiedz się, jak uruchomić skrypt w celu dodania skrzynek pocztowych & OneDrive dla Firm witryn do nowego archiwum skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview.
+ms.openlocfilehash: 8835e853825786668ba1b7617078d899c0773779
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824493"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934534"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Dodawanie użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych za pomocą skryptu
+# <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Używanie skryptu do dodawania użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa)
 
-Program PowerShell & Compliance Center zapewnia polecenia cmdlet, które umożliwiają automatyzowanie czasochłonnych zadań związanych z tworzeniem przypadków zbierania elektronicznych materiałów dowodowych i zarządzaniem nimi. Obecnie użycie przypadku core eDiscovery w Centrum zgodności platformy Microsoft 365 do umieszczenia dużej liczby lokalizacji zawartości opiekuna w zawieszeniu wymaga czasu i przygotowania. Na przykład przed utworzeniem blokady musisz zebrać adres URL dla każdej witryny OneDrive dla Firm, która ma zostać wstrzymana. Następnie dla każdego użytkownika, który chcesz umieścić w zawieszeniu, musisz dodać jego skrzynkę pocztową i witrynę OneDrive dla Firm do blokady. Aby zautomatyzować ten proces, możesz użyć skryptu w tym artykule.
+Program PowerShell & Compliance Center zapewnia polecenia cmdlet, które umożliwiają automatyzowanie czasochłonnych zadań związanych z tworzeniem przypadków zbierania elektronicznych materiałów dowodowych i zarządzaniem nimi. Obecnie użycie sprawy zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) w portalu zgodności usługi Microsoft Purview w celu wstrzymania dużej liczby lokalizacji zawartości opiekuna wymaga czasu i przygotowania. Na przykład przed utworzeniem blokady musisz zebrać adres URL dla każdej witryny OneDrive dla Firm, która ma zostać wstrzymana. Następnie dla każdego użytkownika, który chcesz umieścić w zawieszeniu, musisz dodać jego skrzynkę pocztową i witrynę OneDrive dla Firm do blokady. Aby zautomatyzować ten proces, możesz użyć skryptu w tym artykule.
   
 Skrypt wyświetla monit o podanie nazwy domeny Moja witryna organizacji (na przykład `contoso` w adresie URL https://contoso-my.sharepoint.com)nazwa istniejącego przypadku zbierania elektronicznych materiałów dowodowych, nazwa nowego archiwum skojarzonego ze sprawą, lista adresów e-mail użytkowników, których chcesz wstrzymać, oraz zapytanie wyszukiwania do użycia, jeśli chcesz utworzyć blokadę opartą na zapytaniach. Następnie skrypt pobiera adres URL witryny OneDrive dla Firm dla każdego użytkownika na liście, tworzy nowe blokady, a następnie dodaje skrzynkę pocztową i witrynę OneDrive dla Firm dla każdego użytkownika na liście do blokady. Skrypt generuje również pliki dziennika zawierające informacje o nowym blokadzie.
   
@@ -45,9 +45,9 @@ Poniżej przedstawiono kroki, które należy wykonać:
   
 ## <a name="before-you-add-users-to-a-hold"></a>Przed dodaniem użytkowników do blokady
 
-- Aby uruchomić skrypt w kroku 3, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365 i administratorem usługi SharePoint Online. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w centrum Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+- Aby uruchomić skrypt w kroku 3, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności i administratorem usługi SharePoint Online. Aby uzyskać więcej informacji, zobacz [Assign eDiscovery permissions in the Office 365 Security & Compliance Center (Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w Centrum zgodności Office 365 Security & Compliance Center](assign-ediscovery-permissions.md)).
 
-- Maksymalnie 1000 skrzynek pocztowych i 100 witryn można dodać do blokady skojarzonej ze sprawą zbierania elektronicznych elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Zakładając, że każdy użytkownik, który ma zostać wstrzymany, ma witrynę OneDrive dla Firm, możesz dodać maksymalnie 100 użytkowników do blokady przy użyciu skryptu w tym artykule.
+- Maksymalnie 1000 skrzynek pocztowych i 100 witryn można dodać do blokady skojarzonej z przypadkiem zbierania elektronicznych materiałów dowodowych w portalu zgodności. Zakładając, że każdy użytkownik, który ma zostać wstrzymany, ma witrynę OneDrive dla Firm, możesz dodać maksymalnie 100 użytkowników do blokady przy użyciu skryptu w tym artykule.
 
 - Pamiętaj, aby zapisać listę użytkowników utworzonych w kroku 2 i skrypt w kroku 3 w tym samym folderze. Ułatwi to uruchamianie skryptu.
 
@@ -93,7 +93,7 @@ Po uruchomieniu skryptu w tym kroku zostanie wyświetlony monit o podanie nastę
 
 - **Wyszukaj zapytanie dotyczące blokady opartej na zapytaniach:** Można utworzyć blokadę opartą na zapytaniach, aby tylko zawartość spełniająca określone kryteria wyszukiwania została wstrzymana. Aby wstrzymać całą zawartość, naciśnij klawisz **Enter** po wyświetleniu monitu o zapytanie wyszukiwania.
 
-- **Włączanie blokady lub nie:** Po jego utworzeniu skrypt może włączyć blokadę lub utworzyć blokadę bez włączania go. Jeśli skrypt nie jest włączony, możesz go włączyć w dalszej części Centrum zgodności platformy Microsoft 365 lub uruchamiając następujące polecenia programu PowerShell:
+- **Włączanie blokady lub nie:** Po jego utworzeniu skrypt może włączyć blokadę lub utworzyć blokadę bez włączania go. Jeśli nie masz włączonego blokady skryptu, możesz go włączyć później w portalu zgodności lub uruchamiając następujące polecenia programu PowerShell:
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -114,7 +114,7 @@ Po zebraniu informacji, o które zostanie wyświetlony monit skrypt, ostatnim kr
 " "
 write-host "***********************************************"
 write-host "   Security & Compliance Center PowerShell  " -foregroundColor yellow -backgroundcolor darkgreen
-write-host "   Core eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
+write-host "   eDiscovery (Standard) cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
 write-host "***********************************************"
 " "
 # Connect to SCC PowerShell using modern authentication
@@ -283,7 +283,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 4. Wprowadź informacje, o które monituje skrypt.
 
-   Skrypt łączy się z programem PowerShell Security & Compliance Center, a następnie tworzy nowe blokady w przypadku zbierania elektronicznych materiałów dowodowych i dodaje skrzynki pocztowe i OneDrive dla Firm dla użytkowników na liście. Możesz przejść do sprawy na stronie **zbierania elektronicznych materiałów dowodowych** w Centrum zgodności platformy Microsoft 365, aby wyświetlić nową blokadę.
+   Skrypt łączy się z programem PowerShell Security & Compliance Center, a następnie tworzy nowe blokady w przypadku zbierania elektronicznych materiałów dowodowych i dodaje skrzynki pocztowe i OneDrive dla Firm dla użytkowników na liście. Możesz przejść do sprawy na stronie **zbierania elektronicznych materiałów dowodowych** w portalu zgodności, aby wyświetlić nowe blokady.
 
 Po zakończeniu działania skryptu tworzy następujące pliki dziennika i zapisuje je w folderze, w którym znajduje się skrypt.
   

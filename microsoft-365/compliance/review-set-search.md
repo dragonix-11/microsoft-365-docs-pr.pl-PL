@@ -1,5 +1,5 @@
 ---
-title: Kwerenda zawartości w zestawie recenzji
+title: Wykonywanie zapytań dotyczących zawartości w zestawie przeglądów
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,124 +15,124 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak utworzyć i uruchomić zapytanie w zestawie recenzji w celu zorganizowania zawartości w celu bardziej efektywnego przeglądu Advanced eDiscovery przypadku.
+description: Dowiedz się, jak utworzyć i uruchomić zapytanie w zestawie przeglądów, aby zorganizować zawartość w celu bardziej wydajnego przeglądu w przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ebcb129241565321297b78072a5d02d173552ee1
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: ead066428d5c2404da5bf863ad428784b3c3a30c
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015410"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936296"
 ---
-# <a name="query-and-filter-content-in-a-review-set"></a>Wykonywanie kwerend i filtrowanie zawartości w zestawie recenzji
+# <a name="query-and-filter-content-in-a-review-set"></a>Wykonuj zapytania i filtruj zawartość w zestawie do przeglądu
 
-W większości przypadków warto bardziej przećwiać zawartość zestawu recenzji i zorganizować ją w celu ułatwienia bardziej wydajnego przeglądu. Korzystanie z filtrów i zapytań w zestawie recenzji ułatwia skupienie się na podzbiorze dokumentów spełniających kryteria recenzji.
+W większości przypadków warto zagłębić się w zawartość w zestawie przeglądów i zorganizować ją w celu ułatwienia bardziej wydajnego przeglądu. Używanie filtrów i zapytań w zestawie przeglądów pomaga skupić się na podzbiorze dokumentów spełniających kryteria przeglądu.
 
 ## <a name="default-filters"></a>Filtry domyślne
 
-W zestawie recenzji istnieje pięć domyślnych filtrów wstępnie załadowanych w zestawie recenzji:
+W zestawie przeglądów istnieje pięć domyślnych filtrów, które są wstępnie załadowane w zestawie przeglądów:
 
 - Słowa kluczowe
 - Data
-- Nadawca/Autor
+- Nadawca/autor
 - Temat/tytuł
 - Tagi
 
 ![Domyślne typy filtrów.](../media/DefaultFilterTypes.png)
 
-Kliknij każdy filtr, aby go rozwinąć i przypisać wartość. Kliknij poza filtrem, aby automatycznie zastosować filtr do zestawu recenzji. Poniższy zrzut ekranu przedstawia filtr daty skonfigurowany do pokazywania dokumentów z zakresu dat.
+Kliknij każdy filtr, aby go rozwinąć i przypisać wartość. Kliknij poza filtrem, aby automatycznie zastosować filtr do zestawu przeglądów. Poniższy zrzut ekranu przedstawia filtr Daty skonfigurowany do wyświetlania dokumentów w zakresie dat.
 
-![Rozwinięty filtr domyślny.](../media/ExpandedFilter.png)
+![Filtr domyślny został rozwinięty.](../media/ExpandedFilter.png)
 
 ## <a name="add-or-remove-filters"></a>Dodawanie lub usuwanie filtrów
 
-Aby dodać lub usunąć filtry wyświetlane w zestawie recenzji, wybierz pozycję Filtry  w celu otwarcia panelu filtrów wyświetlanego na wysuwana stronie. 
+Aby dodać lub usunąć filtry wyświetlane dla zestawu przeglądów, wybierz pozycję **Filtry** , aby otworzyć panel filtru, który jest wyświetlany na stronie wysuwanej. 
 
-![Panel filtrów.](../media/FilterPanel.png)
+![Panel filtru.](../media/FilterPanel.png)
 
 Dostępne filtry są zorganizowane w czterech sekcjach:
 
-- **Wyszukiwanie**: Filtry, które zapewniają różne funkcje wyszukiwania.
+- **Wyszukiwanie**: filtry, które zapewniają różne możliwości wyszukiwania.
 
-- **Analiza &** **predykcyjne** kodowanie: Umożliwia filtrowanie właściwości generowanych i dodawanych do dokumentów podczas uruchamiania zadania analitycznego usługi & poczty e-mail lub korzystania z modeli predykcyjnego kodowania.
+- **Analiza & kodowanie predykcyjne**: filtry właściwości wygenerowanych i dodanych do dokumentów podczas **uruchamiania zadania analitycznego & wiadomości e-mail lub używania** modeli kodowania predykcyjnego.
 
-- **Identyfikatory**: Filtry dla wszystkich właściwości identyfikatorów dokumentów.
+- **Identyfikatory: filtruje** wszystkie właściwości identyfikatorów dokumentów.
 
-- **Właściwości elementu**: Filtry dla właściwości dokumentu. 
+- **Właściwości elementu**: filtry właściwości dokumentu. 
 
-Rozwiń poszczególne sekcje i zaznacz lub usuń zaznaczenie filtrów w celu dodania lub usunięcia ich w zestawie filtrów. Po dodaniu filtr jest on wyświetlany w zestawie filtrów. 
+Rozwiń każdą sekcję i wybierz lub usuń zaznaczenie filtrów, aby dodać lub usunąć je w zestawie filtrów. Po dodaniu filtru jest on wyświetlany w zestawie filtrów. 
 
-![Lista sekcji i właściwości filtru w panelu filtru.](../media/FilterPanel2.png)
+![Lista sekcji filtrów i właściwości w panelu filtru.](../media/FilterPanel2.png)
 
 > [!NOTE]
-> Po rozwinięciu sekcji w panelu filtrów zauważysz, że są zaznaczone domyślne typy filtrów. Możesz zachować te zaznaczone lub usunąć ich zaznaczenie i usunąć je z zestawu filtrów. 
+> Gdy rozwiniesz sekcję w panelu filtru, zauważysz, że wybrane są domyślne typy filtrów. Można je zachować lub usunąć zaznaczenie i usunąć je z zestawu filtrów. 
 
 ## <a name="filter-types"></a>Typy filtrów
 
-Każde pole z polem recenzji, które można wyszukiwać w zestawie recenzji, ma odpowiedni filtr, który umożliwia filtrowanie elementów według określonego pola.
+Każde pole z możliwością wyszukiwania w zestawie przeglądów ma odpowiedni filtr, którego można użyć do filtrowania elementów na podstawie określonego pola.
 
 Istnieje wiele typów filtrów:
 
-- **Freetext**: Do pól tekstowych, takich jak "Temat", jest stosowany filtr freetext. Możesz utworzyć listę wielu wyszukiwanych terminów, oddzielając je przecinkami.
+- **Freetext**: filtr tekstu wolnego jest stosowany do pól tekstowych, takich jak "Temat". Możesz wyświetlić listę wielu wyszukiwanych terminów, oddzielając je przecinkami.
 
 - **Data**: Filtr daty jest używany dla pól daty, takich jak "Data ostatniej modyfikacji".
 
-- **Opcje wyszukiwania**: Filtr opcji wyszukiwania udostępnia listę możliwych wartości (każda wartość jest wyświetlana z polem wyboru, które można wybrać) dla poszczególnych pól w recenzji. Ten filtr jest używany dla pól, takich jak "Nadawca", gdzie w zestawie recenzji istnieje skończona liczba możliwych wartości.
+- **Opcje wyszukiwania**: filtr opcji wyszukiwania zawiera listę możliwych wartości (każda wartość jest wyświetlana z polem wyboru, które można wybrać) dla określonych pól w przeglądzie. Ten filtr jest używany dla pól, takich jak "Nadawca", gdzie w zestawie przeglądów istnieje skończona liczba możliwych wartości.
 
-- **Słowo** kluczowe: warunek słowa kluczowego to konkretne wystąpienie warunku freetext, za pomocą których można wyszukiwać terminy. W tym typie filtru można również używać języka zapytań podobnego do języka KQL. Aby uzyskać więcej informacji, zobacz sekcje Język zapytań i Zaawansowany konstruktor zapytań w tym artykule.
+- **Słowo kluczowe**: warunek słowa kluczowego to określone wystąpienie warunku wolnego tekstu, którego można użyć do wyszukiwania terminów. W tym typie filtru można również użyć języka zapytań przypominającego KQL. Aby uzyskać więcej informacji, zobacz sekcje Język zapytań i Zaawansowany konstruktor zapytań w tym artykule.
 
 ## <a name="include-and-exclude-filter-relationships"></a>Uwzględnianie i wykluczanie relacji filtru
 
-Możesz zmienić relację dołączania i wykluczania dla określonego filtru. Na przykład w filtrze Tag możesz wykluczyć elementy otagowane określonym tagiem, wybierając pozycję **Równa** się żadna z w filtrze listy rozwijanej. 
+Możesz zmienić relację dołączania i wykluczania dla określonego filtru. Na przykład w filtrze Tag można wykluczyć elementy oznaczone określonym tagiem, wybierając pozycję **Równa się żadnemu z elementów** w filtrze listy rozwijanej. 
 
 ![Wyklucz filtr tagów.](../media/TagFilterExclude.png)
 
 ## <a name="save-filters-as-queries"></a>Zapisywanie filtrów jako zapytań
 
-Po zakończeniu pracy z filtrami możesz zapisać ich kombinację jako zapytanie filtru. Dzięki temu można zastosować filtr w przyszłych sesjach recenzji.
+Po spełnieniu filtrów możesz zapisać kombinację filtrów jako zapytanie filtru. Dzięki temu można zastosować filtr w przyszłych sesjach przeglądu.
 
-Aby zapisać filtr, wybierz **pozycję Zapisz zapytanie i** nadaj jego nazwę. Recenzentzy mogą uruchamiać wcześniej zapisane zapytania filtru, wybierając  menu rozwijane Zapisane zapytania filtru i wybierając zapytanie filtru do zastosowania w celu przejrzenia zestawu dokumentów. 
+Aby zapisać filtr, wybierz pozycję **Zapisz zapytanie i nadaj** mu nazwę. Ty lub inni recenzenci możesz uruchamiać wcześniej zapisane zapytania filtru, wybierając listę rozwijaną **Zapisane zapytania filtru** i wybierając zapytanie filtru do zastosowania w celu przejrzenia zestawu dokumentów. 
 
-![Zapisywanie zapytania filtru.](../media/SaveFilterQuery.png)
+![Zapisz zapytanie filtru.](../media/SaveFilterQuery.png)
 
-Aby usunąć zapytanie filtru, otwórz panel filtrów i wybierz ikonę kosza na śmieci obok zapytania.
+Aby usunąć zapytanie filtru, otwórz panel filtru i wybierz ikonę kosza obok zapytania.
 
-![Usuwanie zapytania filtru.](../media/DeleteFilterQuery.png)
+![Usuń zapytanie filtru.](../media/DeleteFilterQuery.png)
 
 ## <a name="query-language"></a>Język zapytań
 
-Oprócz używania filtrów do tworzenia zapytania wyszukiwania zestawu recenzji można także użyć języka zapytania podobnego do języka KQL w filtrze Słowa kluczowe. Język zapytań dla zapytań zestawu recenzji obsługuje standardowe operatory logiczne, takie jak **AND**, **OR**, **NOT** i **NEAR**. Obsługuje także jednoznakową symbol wieloznaczny (?) i wieloznaczny symbol wieloznaczny (*).
+Oprócz używania filtrów można również użyć języka zapytań przypominającego KQL w filtrze Słowa kluczowe, aby utworzyć zapytanie wyszukiwania zestawu przeglądów. Język zapytań dla zapytań zestawu przeglądów obsługuje standardowe operatory logiczne, takie jak **AND**, **OR**, **NOT** i **NEAR**. Obsługuje również symbol wieloznaczny (?) z jednym znakiem i wieloznacznym symbolem wieloznacznym (*).
 
 ## <a name="advanced-query-builder"></a>Zaawansowany konstruktor zapytań
 
-Możesz również tworzyć bardziej zaawansowane zapytania do wyszukiwania dokumentów w zestawie recenzji.
+Możesz również tworzyć bardziej zaawansowane zapytania w celu wyszukiwania dokumentów w zestawie przeglądów.
 
-1. Otwórz panel filtrów, wybierz pozycję **Filtry** i rozwiń **sekcję** Wyszukiwanie.
+1. Otwórz panel filtru, wybierz pozycję **Filtry** i rozwiń sekcję **Wyszukaj** .
 
   ![Dodaj filtr KQL.](../media/AddKQLFilter.png)
 
 2. Wybierz filtr **KQL** i kliknij pozycję **Otwórz konstruktora zapytań**.
 
-   W tym panelu można tworzyć złożone zapytania KQL przy użyciu konstruktora zapytań. Można dodawać warunki lub dodawać grupy warunków, które składa się z wielu warunków, które są logicznie połączone relacjami **ORAZ** **lub LUB** .
+   W tym panelu można tworzyć złożone zapytania KQL przy użyciu konstruktora zapytań. Możesz dodać warunki lub dodać grupy warunków składające się z wielu warunków, które są logicznie połączone przez relacje **AND** lub **OR** .
 
-   ![Za pomocą Konstruktora zapytań skonfiguruj złożone zapytania filtru.](../media/ComplexQuery.png)
+   ![Konstruktor zapytań umożliwia konfigurowanie złożonych zapytań filtru.](../media/ComplexQuery.png)
 
-## <a name="filter-partially-indexed-items"></a>Filtrowanie elementów częściowo indeksowanych
+## <a name="filter-partially-indexed-items"></a>Filtrowanie częściowo indeksowanych elementów
 
-Jeśli wybrano opcję dodawania elementów częściowo indeksowanych z dodatkowych źródeł danych po za zatwierdzonej wersji roboczej kolekcji do zestawu recenzji. Prawdopodobnie trzeba będzie zidentyfikować i wyświetlić te elementy, aby ustalić, czy element może być istotny dla prowadzonego badania, i czy trzeba naprawić błąd, który spowoduje, że element został częściowo zindeksowany.
+Jeśli wybrano opcję dodania częściowo zaindeksowanych elementów z dodatkowych źródeł danych po zatwierdzeniu kolekcji roboczej do zestawu przeglądów. Prawdopodobnie chcesz zidentyfikować i wyświetlić te elementy, aby określić, czy element może być istotny dla badania i czy należy skorygować błąd, który spowodował częściowe zaindeksowanie elementu.
 
-Obecnie w zestawie recenzji nie ma opcji filtrowania służącej do wyświetlania elementów częściowo indeksowanych. Ale pracujemy nad tym. Do tego czasu oto sposób filtrowania i wyświetlania częściowo indeksowanych elementów dodanych do zestawu recenzji.
+Obecnie w zestawie przeglądów nie ma opcji filtru umożliwiającej wyświetlanie częściowo zaindeksowanych elementów. Ale pracujemy nad tym. Do tego czasu można filtrować i wyświetlać częściowo indeksowane elementy dodane do zestawu przeglądów.
 
-1. Utwórz kolekcję i zat zatwierdzeniu jej w nowym zestawie recenzji *bez* dodawania częściowo indeksowanych elementów z dodatkowych źródeł danych.
+1. Utwórz kolekcję i zatwierdź ją w nowym zestawie przeglądów *bez* dodawania częściowo indeksowanych elementów z dodatkowych źródeł danych.
 
-2. Utwórz nową kolekcję, kopiując kolekcję od kroku 1.
+2. Utwórz nową kolekcję, kopiując kolekcję z kroku 1.
 
-3. Zatwierdzenie nowej kolekcji do tego samego zestawu recenzji. Jednak tym razem dodaj elementy częściowo indeksowane z dodatkowych źródeł danych. Ponieważ elementy z kolekcji utworzonej w kroku 1 zostały już dodane do zestawu recenzji, do zestawu recenzji są już dodawane tylko częściowo indeksowane elementy z drugiej kolekcji.
+3. Zatwierdź nową kolekcję w tym samym zestawie przeglądów. Tym razem jednak dodaj częściowo zaindeksowane elementy z dodatkowych źródeł danych. Ponieważ elementy z kolekcji utworzonej w kroku 1 zostały już dodane do zestawu przeglądów, tylko częściowo zaindeksowane elementy z drugiej kolekcji są dodawane do zestawu przeglądów.
 
-4. Po dodaniu obu kolekcji do zestawu recenzji przejdź do zestawu recenzji i wybierz pozycję **Zarządzaj Zestawami** >  **ładowania**.
+4. Po dodaniu obu kolekcji do zestawu przeglądów przejdź do zestawu przeglądów i wybierz pozycję **ManageLoad sets (Zarządzaj zestawami** >  **ładunków**).
 
-5. Skopiuj identyfikator ładowania drugiej kolekcji (tej utworzonej w kroku 2). Nazwa kolekcji jest identyfikowana w **kolumnie Informacje o źródle** .
+5. Skopiuj lub **zanotuj identyfikator obciążenia** dla drugiej kolekcji (utworzonej w kroku 2). Nazwa kolekcji jest identyfikowana w kolumnie **Informacje o źródle** .
 
-6. W zestawie recenzji **kliknij pozycję** Filtruj, rozwiń **sekcję** identyfikatorów, a następnie zaznacz pole **wyboru Identyfikator** ładowania.
+6. Wróć do zestawu przeglądów, kliknij pozycję **Filtruj**, rozwiń **sekcję Identyfikatory** , a następnie zaznacz pole wyboru **Identyfikator obciążenia** .
 
-7. Rozwiń **filtr Load Id** (Załaduj identyfikator), a następnie zaznacz pole wyboru identyfikatora ładowania odpowiadającego drugiej kolekcji, aby wyświetlić częściowo indeksowane elementy.
+7. Rozwiń filtr **Load Id (Załaduj identyfikator** ), a następnie zaznacz pole wyboru identyfikatora obciążenia odpowiadającego drugiej kolekcji, aby wyświetlić częściowo zaindeksowane elementy.

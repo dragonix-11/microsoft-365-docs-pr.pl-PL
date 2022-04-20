@@ -1,5 +1,5 @@
 ---
-title: Dodawanie opiekunów do sprawy Advanced eDiscovery
+title: Dodawanie opiekunów do sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak za pomocą wbudowanego narzędzia do zarządzania opiekunami w Advanced eDiscovery koordynować przepływy pracy i identyfikować odpowiednie źródła danych w danym przypadku.
+description: Dowiedz się, jak używać wbudowanego narzędzia do zarządzania opiekunami w usłudze Microsoft Purview eDiscovery (Premium) do koordynowania przepływów pracy i identyfikowania odpowiednich źródeł danych w danym przypadku.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bbd5bb1955fc0c8ee5917a6827b35a6688928571
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 7da45eca9e57ef64c9272c89e24c21a20dc5af80
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759374"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935813"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Dodawanie opiekunów do sprawy Advanced eDiscovery
+# <a name="add-custodians-to-an-ediscovery-premium-case"></a>Dodawanie opiekunów do sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 
-Użyj wbudowanego narzędzia do zarządzania opiekunami w Advanced eDiscovery, aby koordynować przepływy pracy związane z zarządzaniem opiekunami i identyfikowaniem odpowiednich źródeł danych opieki skojarzonych ze sprawą. Po dodaniu opiekuna system może automatycznie identyfikować i umieszczać blokady w skrzynce pocztowej Exchange i koncie OneDrive dla Firm. Podczas procesu odnajdywania badania możesz również zidentyfikować inne źródła danych (takie jak skrzynki pocztowe, witryny lub Teams), do których administrator uzyskiwał dostęp lub do których się przyczynił. W takiej sytuacji możesz użyć narzędzia do zarządzania opiekunem, aby skojarzyć te źródła danych, który będzie określonym opiekunem. Po dodaniu opiekunów do sprawy i skojarzeniu z nimi innego źródła danych można szybko zachować dane i przeszukać dane powiernicze.
+Użyj wbudowanego narzędzia do zarządzania opiekunami w usłudze Microsoft Purview eDiscovery (Premium), aby koordynować przepływy pracy związane z zarządzaniem opiekunami i identyfikowaniem odpowiednich źródeł danych opieki skojarzonych ze sprawą. Po dodaniu opiekuna system może automatycznie identyfikować i umieszczać blokady w skrzynce pocztowej Exchange i koncie OneDrive dla Firm. Podczas procesu odnajdywania badania możesz również zidentyfikować inne źródła danych (takie jak skrzynki pocztowe, witryny lub Teams), do których administrator uzyskiwał dostęp lub do których się przyczynił. W takiej sytuacji możesz użyć narzędzia do zarządzania opiekunem, aby skojarzyć te źródła danych, który będzie określonym opiekunem. Po dodaniu opiekunów do sprawy i skojarzeniu z nimi innego źródła danych można szybko zachować dane i przeszukać dane powiernicze.
 
-Możesz dodawać opiekunów i zarządzać nimi w Advanced eDiscovery przypadkach w czterech krokach:
+Możesz dodawać opiekunów i zarządzać nimi w sprawach zbierania elektronicznych materiałów dowodowych (Premium) w czterech krokach:
 
 1. Zidentyfikuj opiekunów.
 
@@ -46,7 +46,7 @@ Aby dodać opiekunów do sprawy, musisz być członkiem grupy ról menedżera zb
 
 1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com) i zaloguj się przy użyciu konta użytkownika, do których przypisano odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych.
 
-2. W okienku nawigacji po lewej stronie Centrum zgodności platformy Microsoft 365 wybierz pozycję **eDiscovery** >  **Advanced eDiscovery** i wybierz kartę [**Sprawy**](https://go.microsoft.com/fwlink/p/?linkid=2173764).
+2. W okienku nawigacji po lewej stronie portalu zgodności usługi Microsoft Purview wybierz pozycję **eDiscoveryeDiscovery** >  **(Premium)**, a następnie wybierz kartę [**Sprawy**](https://go.microsoft.com/fwlink/p/?linkid=2173764).
 
 3. Wybierz przypadek, do których chcesz dodać opiekunów.
 
@@ -83,7 +83,7 @@ Aby skojarzyć inne skrzynki pocztowe, witryny, Teams lub grupy Yammer z określ
    > [!NOTE]
    > Możesz użyć **selektorów lokalizacji Exchange** i **SharePoint**, aby skojarzyć dowolną skrzynkę pocztową lub witrynę w organizacji z opiekunem. , Obejmuje to skojarzenie skrzynki pocztowej i witryny dla zespołu firmy Microsoft lub grupy Yammer, do których opiekun nie jest członkiem. W tym celu należy dodać zarówno skrzynkę pocztową, jak i witrynę skojarzoną z każdym zespołem lub grupą Yammer.
 
-2. Możesz wyświetlić całkowitą liczbę skrzynek pocztowych, witryn, Teams i grup Yammer przypisanych do każdego opiekuna, rozszerzając każdego opiekuna w tabeli. Po sfinalizowaniu przypisanych lokalizacji danych dla każdego opiekuna te skojarzenia będą utrzymywane i używane podczas etapów zbierania, przetwarzania i przeglądania w przepływie pracy Advanced eDiscovery.
+2. Możesz wyświetlić całkowitą liczbę skrzynek pocztowych, witryn, Teams i grup Yammer przypisanych do każdego opiekuna, rozszerzając każdego opiekuna w tabeli. Po sfinalizowaniu przypisanych lokalizacji danych dla każdego opiekuna te skojarzenia będą utrzymywane i używane podczas etapów zbierania, przetwarzania i przeglądania w przepływie pracy zbierania elektronicznych materiałów dowodowych (Premium).
 
 3. Po dodaniu opiekunów i skonfigurowaniu ich lokalizacji danych kliknij przycisk **Dalej** , aby przejść do strony **Ustawienia blokady** .  
 

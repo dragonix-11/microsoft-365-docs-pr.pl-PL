@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: b1dbe79aadea39bfc737ae9f5457715b669cc79b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: e32018f52f3a45624fcf07ae03e44c662a594297
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861823"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916320"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Porównanie Microsoft Defender dla Firm z Microsoft 365 Business Premium
 
@@ -73,9 +73,9 @@ W poniższej tabeli porównano funkcje zabezpieczeń i możliwości usługi Defe
 
 Usługa Defender dla firm oferuje możliwości usługi Defender for Endpoint klasy korporacyjnej dla małych i średnich firm.
 
-W poniższej tabeli porównaliśmy funkcje zabezpieczeń i możliwości usługi Defender for Business z planami Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2.
+W poniższej tabeli porównaliśmy funkcje zabezpieczeń i możliwości usługi Defender dla firm z ofertami dla przedsiębiorstw, Ochrona punktu końcowego w usłudze Microsoft Defender Plany 1 i 2.
 
-|Funkcja/możliwość|[Defender dla Firm](mdb-overview.md)<br/>(autonomiczny; obecnie w wersji zapoznawczej)|[Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)|
+|Funkcja/możliwość|[Defender dla Firm](mdb-overview.md)<br/>(autonomiczny; obecnie w wersji zapoznawczej)|[Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(dla klientów korporacyjnych) |[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(dla klientów korporacyjnych) |
 |---|---|---|---|
 |[Scentralizowane zarządzanie](../defender-endpoint/manage-atp-post-migration.md) |Tak <sup>[[1](#fn1)]</sup>|Tak|Tak|
 |[Uproszczona konfiguracja klienta](mdb-simplified-configuration.md)|Tak|Nie|Nie|

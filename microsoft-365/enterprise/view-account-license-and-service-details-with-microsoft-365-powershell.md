@@ -19,12 +19,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Objaśnienie sposobu używania programu PowerShell do określania usług Microsoft 365, które zostały przypisane do użytkowników.
-ms.openlocfilehash: 2789026e2e22bbae3e84e91ada7ad21af2252f03
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7e5724acbff571825f1496db5d59e04e11ba3a67
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823965"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916000"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>Wyświetlanie licencji Microsoft 365 konta i szczegółów usługi za pomocą programu PowerShell
 
@@ -41,7 +41,7 @@ Najpierw [połącz się z dzierżawą Microsoft 365](/graph/powershell/get-start
 Odczytywanie właściwości użytkownika, w tym szczegółów licencji, wymaga zakresu uprawnień User.Read.All lub jednego z innych uprawnień wymienionych na [stronie odwołania interfejs Graph API "Pobierz użytkownika"](/graph/api/user-get).
 
 ```powershell
-Connect-Graph -Scopes User.Read.All
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 Następnie wyświetl listę planów licencji dla dzierżawy za pomocą tego polecenia.

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 zbierania elektronicznych materiałów dowodowych
+title: Rozwiązania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,171 +19,171 @@ search.appverid:
 - SPO160
 - MOE150
 - MET150
-description: Microsoft 365 udostępnia trzy narzędzia zbierania elektronicznych materiałów dowodowych, za pomocą których można wyszukiwać i eksportować zawartość znalezioną w różnych lokalizacjach, takich jak skrzynki pocztowe usługi Exchange, witryny usług SharePoint i OneDrive dla Firm oraz grupy Microsoft 365. Microsoft Teams i Skype dla firm konwersacji. Podstawowe funkcje zbierania elektronicznych materiałów dowodowych Advanced eDiscovery wiele dodatkowych funkcji, które ułatwiają zarządzanie badaniami.
-ms.openlocfilehash: cccc30dd649dc5abe74c551434e904236ecf9d35
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+description: Usługa Microsoft Purview oferuje trzy narzędzia zbierania elektronicznych materiałów dowodowych, których można użyć do wyszukiwania i eksportowania zawartości znajdującej się w różnych lokalizacjach, takich jak skrzynki pocztowe Exchange, witryny SharePoint i OneDrive dla Firm, Grupy Microsoft 365, Microsoft Teams i Skype dla firm konwersacje. eDiscovery (Standard) i eDiscovery (Premium) udostępniają wiele dodatkowych funkcji ułatwiających zarządzanie badaniami.
+ms.openlocfilehash: efa7f12ec20377713598edc54f032e7c2a27d706
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512492"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932227"
 ---
-# <a name="ediscovery-solutions-in-microsoft-365"></a>Rozwiązania zbierania elektronicznych materiałów dowodowych w Microsoft 365
+# <a name="microsoft-purview-ediscovery-solutions"></a>Rozwiązania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview
 
-Elektroniczne zbierania elektronicznych materiałów dowodowych to proces identyfikowania i dostarczania informacji elektronicznych, które mogą być używane jako dowód w postępowaniach prawnych. Za pomocą narzędzi zbierania elektronicznych materiałów dowodowych w programie Microsoft 365 można wyszukiwać zawartość w usługach Exchange Online, OneDrive dla Firm, SharePoint Online, Microsoft Teams, Microsoft 365 Groups i Yammer zespołów. Możesz przeszukiwać skrzynki pocztowe i witryny w tym samym wyszukiwaniu zbierania elektronicznych materiałów dowodowych, a następnie wyeksportować wyniki wyszukiwania. Za pomocą podstawowych spraw zbierania elektronicznych materiałów dowodowych można identyfikować, przechowywać i eksportować zawartość znalezioną w skrzynkach pocztowych i witrynach. Jeśli organizacja ma subskrypcję usługi Office 365 E5 lub Microsoft 365 E5 (lub powiązane subskrypcje dodatków E5), możesz dalej zarządzać użytkownikami i analizować zawartość, korzystając z rozbudowanych funkcji Advanced eDiscovery w programie Microsoft 365.
+Odnajdywanie elektroniczne to proces identyfikowania i dostarczania informacji elektronicznych, które mogą być wykorzystane jako dowód w sprawach prawnych. Narzędzia zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview umożliwiają wyszukiwanie zawartości w zespołach Exchange Online, OneDrive dla Firm, SharePoint Online, Microsoft Teams, Grupy Microsoft 365 i Yammer. Możesz przeszukiwać skrzynki pocztowe i witryny w tym samym wyszukiwaniu zbierania elektronicznych materiałów dowodowych, a następnie eksportować wyniki wyszukiwania. Przypadki zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) umożliwiają identyfikowanie, utrzymywanie i eksportowanie zawartości znalezionej w skrzynkach pocztowych i witrynach. Jeśli Twoja organizacja ma subskrypcję Office 365 E5 lub Microsoft 365 E5 (lub powiązane subskrypcje dodatków E5), możesz dalej zarządzać opiekunami i analizować zawartość przy użyciu zaawansowanego w funkcji rozwiązania Microsoft Purview eDiscovery (Premium) w Microsoft 365.
 
 ## <a name="ediscovery-solutions"></a>Rozwiązania zbierania elektronicznych materiałów dowodowych
 
-Microsoft 365 udostępnia trzy rozwiązania zbierania elektronicznych materiałów dowodowych: przeszukiwanie zawartości, podstawowe usługi zbierania elektronicznych materiałów dowodowych i Advanced eDiscovery.
+Usługa Microsoft Purview oferuje trzy rozwiązania zbierania elektronicznych materiałów dowodowych: wyszukiwanie zawartości, elektroniczne dowody elektroniczne (Standard) i eDiscovery (Premium).
 
-![Kluczowe możliwości narzędzi zbierania Microsoft 365 eDiscovery.](..\media\m365-ediscovery-solution-graphic.png)
+![Kluczowe możliwości narzędzi zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview.](..\media\m365-ediscovery-solution-graphic.png)
 
-- **Wyszukiwanie zawartości**. Za pomocą narzędzia Przeszukiwanie zawartości wyszukaj zawartość w Microsoft 365 źródeł danych, a następnie wyeksportuj wyniki wyszukiwania na komputer lokalny.
+- **Wyszukiwanie zawartości**. Użyj narzędzia do wyszukiwania zawartości, aby wyszukać zawartość w Microsoft 365 źródłach danych, a następnie wyeksportować wyniki wyszukiwania na komputer lokalny.
 
-- **Podstawowe funkcje zbierania elektronicznych materiałów dowodowych**. Podstawowa funkcja zbierania elektronicznych materiałów dowodowych bazuje na podstawowych funkcjach wyszukiwania i eksportowania przeszukiwania zawartości, umożliwiając tworzenie spraw zbierania elektronicznych materiałów dowodowych i przypisywanie menedżerów zbierania elektronicznych materiałów dowodowych do określonych spraw. Menedżerowie zbierania elektronicznych materiałów dowodowych mają dostęp tylko do spraw, do których są członkami. Podstawowa funkcja zbierania elektronicznych materiałów dowodowych umożliwia również kojarzenie wyszukiwań i eksportów ze sprawą i umożliwia umieszczenie w odpowiednich lokalizacjach zawartości miejsc zbierania elektronicznych materiałów dowodowych.
+- **eDiscovery (Standard)**. Funkcja zbierania elektronicznych materiałów dowodowych (Standardowa) opiera się na podstawowej funkcji wyszukiwania i eksportowania wyszukiwania zawartości, umożliwiając tworzenie przypadków zbierania elektronicznych materiałów dowodowych i przypisywanie menedżerów zbierania elektronicznych materiałów dowodowych do określonych przypadków. Menedżerowie zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp tylko do przypadków, w których są członkami. Funkcja zbierania elektronicznych materiałów dowodowych (Standardowa) umożliwia również kojarzenie wyszukiwań i eksportów ze sprawą oraz umożliwia wstrzymanie zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości istotnych dla danego przypadku.
 
-- **Advanced eDiscovery**. To Advanced eDiscovery bazuje na istniejących możliwościach zarządzania, zachowywania, wyszukiwania i eksportowania sprawy w ramach podstawowego zbierania elektronicznych materiałów dowodowych. Advanced eDiscovery udostępnia szczegółowe przepływy pracy służące do identyfikowania, zachowywania, zbierania, przeglądania, analizowania i eksportowania zawartości, która odpowiada na wewnętrzne i zewnętrzne badania Twojej organizacji. Umożliwia ona zespołom prawnym zarządzanie plikami przechowywania dokumentów i przepływem pracy z powiadomieniem o zerowym zeru w celu komunikowania się z opiekunami zaangażowanymi w sprawę. Umożliwia on zbieranie i kopiowanie danych z usługi na żywo do zestawów recenzji, dzięki czemu można filtrować, wyszukiwać i oznaczać zawartość w celu oznaczenia zawartości, która nie jest istotny, z dalszego przeglądu w celu zidentyfikowania najbardziej istotnej zawartości i skupienia się na niej. Advanced eDiscovery udostępnia modele analizy i kodu predykcyjnego oparte na uczeniu maszynowym, które dodatkowo zawężają zakres badania do najbardziej istotnej zawartości.
+- **eDiscovery (Premium)**. Narzędzie do zbierania elektronicznych materiałów dowodowych (Premium) opiera się na istniejących możliwościach zarządzania przypadkami, konserwacji, wyszukiwania i eksportu w środowisku eDiscovery (Standard). Funkcja zbierania elektronicznych materiałów dowodowych (Premium) udostępnia kompleksowy przepływ pracy umożliwiający identyfikowanie, zachowywanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości reagującej na wewnętrzne i zewnętrzne badania organizacji. Umożliwia zespołom prawnym zarządzanie opiekunami i przepływem pracy powiadamiania o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę. Umożliwia ona zbieranie i kopiowanie danych z usługi na żywo do zestawów przeglądów, gdy można filtrować, wyszukiwać i tagować zawartość w celu wykreślenia nieistotnej zawartości z dalszego przeglądu, aby przepływ pracy mógł identyfikować i koncentrować się na najbardziej istotnej zawartości. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) udostępnia modele kodowania predykcyjnego oparte na analizie i uczeniu maszynowym w celu dalszego zawężenia zakresu badania do najbardziej odpowiedniej zawartości.
 
-## <a name="comparison-of-key-capabilities"></a>Porównanie kluczowych funkcji
+## <a name="comparison-of-key-capabilities"></a>Porównanie kluczowych możliwości
 
-W poniższej tabeli porównano kluczowe funkcje dostępne w przeszukiwaniu zawartości, podstawowym zbierania elektronicznych materiałów dowodowych i Advanced eDiscovery.
+W poniższej tabeli porównano kluczowe możliwości dostępne w funkcjach wyszukiwania zawartości, eDiscovery (Standard) i eDiscovery (Premium).
 
-|Funkcja|Przeszukiwanie zawartości|Core eDiscovery|Advanced eDiscovery|
+|Możliwości|Wyszukiwanie zawartości|eDiscovery (Standardowa)|eDiscovery (Premium)|
 |:------|:-------------|:-------------|:-------------|
-|Wyszukiwanie zawartości|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
-|Zapytania słów kluczowych i warunki wyszukiwania|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
+|Szukaj zawartości|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
+|Zapytania ze słowami kluczowymi i warunki wyszukiwania|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
 |Statystyki wyszukiwania|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
-|Eksportowanie wyników wyszukiwania|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
+|Eksportuj wyniki wyszukiwania|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
 |Uprawnienia oparte na rolach|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
-|Zarządzanie sprawą||![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
-|Umieszczenie lokalizacji zawartości w zbędnych prawach||![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
-|Zarządzanie wiadami|||![Obsługiwane.](../media/check-mark.png)|
-|Powiadomienia o wstrzymaniu ze prawnie|||![Obsługiwane.](../media/check-mark.png)|
-|Indeksowanie zaawansowane|||![Obsługiwane.](../media/check-mark.png)|
-|Rozwiązywanie problemów|||![Obsługiwane.](../media/check-mark.png)|
-|Zestawy recenzji|||![Obsługiwane.](../media/check-mark.png)|
-|Obsługa załączników w chmurze i SharePoint wersji|||![Obsługiwane.](../media/check-mark.png)|
+|Zarządzanie sprawami||![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
+|Umieszczanie lokalizacji zawartości w stan archiwizacji ze względów prawnych||![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
+|Zarządzanie opiekunem|||![Obsługiwane.](../media/check-mark.png)|
+|Powiadomienia o blokadzie prawnej|||![Obsługiwane.](../media/check-mark.png)|
+|Zaawansowane indeksowanie|||![Obsługiwane.](../media/check-mark.png)|
+|Korygowanie błędów|||![Obsługiwane.](../media/check-mark.png)|
+|Zestawy przeglądów|||![Obsługiwane.](../media/check-mark.png)|
+|Obsługa załączników w chmurze i wersji SharePoint|||![Obsługiwane.](../media/check-mark.png)|
 |Optyczne rozpoznawanie znaków|||![Obsługiwane.](../media/check-mark.png)|
-|Wątkowanie konwersacji|||![Obsługiwane.](../media/check-mark.png)|
-|Statystyki i raporty dotyczące kolekcji|||![Obsługiwane.](../media/check-mark.png)|
-|Przeglądanie zestawu filtrowania|||![Obsługiwane.](../media/check-mark.png)|
-|Tagowanie|||![Obsługiwane.](../media/check-mark.png)|
-|Analiza|||![Obsługiwane.](../media/check-mark.png)|
-|Predykcyjne modele kodowania|||![Obsługiwane.](../media/check-mark.png)|
+|Wątek konwersacji|||![Obsługiwane.](../media/check-mark.png)|
+|Statystyki i raporty kolekcji|||![Obsługiwane.](../media/check-mark.png)|
+|Filtrowanie zestawu przeglądów|||![Obsługiwane.](../media/check-mark.png)|
+|Oznaczanie|||![Obsługiwane.](../media/check-mark.png)|
+|Analytics|||![Obsługiwane.](../media/check-mark.png)|
+|Modele kodowania predykcyjnego|||![Obsługiwane.](../media/check-mark.png)|
 |Obliczone metadane dokumentu|||![Obsługiwane.](../media/check-mark.png)|
-|Przezroczystość długo działających zadań|||![Obsługiwane.](../media/check-mark.png)|
-|Eksportowanie do lokalizacji usługi Azure Storage klienta|||![Obsługiwane.](../media/check-mark.png)|
+|Przejrzystość długotrwałych zadań|||![Obsługiwane.](../media/check-mark.png)|
+|Eksportowanie do lokalizacji Storage platformy Azure należącej do klienta|||![Obsługiwane.](../media/check-mark.png)|
 |||||
 
-Oto opis poszczególnych funkcji zbierania elektronicznych materiałów dowodowych.
+Oto opis każdej funkcji zbierania elektronicznych materiałów dowodowych.
 
-- **Wyszukiwanie zawartości**. Wyszukaj zawartość przechowywaną w skrzynkach pocztowych usługi Exchange, kontach OneDrive dla Firm, witrynach SharePoint, witrynach Microsoft Teams, Microsoft 365 grupach i Yammer Teams. Dotyczy to zawartości wygenerowanej przez inne aplikacje Microsoft 365, które przechowują dane w skrzynkach pocztowych i witrynach.
+- **Wyszukaj zawartość**. Wyszukaj zawartość przechowywaną w skrzynkach pocztowych Exchange, kontach OneDrive dla Firm, witrynach SharePoint, Microsoft Teams, Grupy Microsoft 365 i Yammer Teams. Obejmuje to zawartość generowaną przez inne aplikacje Microsoft 365, które przechowują dane w skrzynkach pocztowych i witrynach.
 
-- **Zapytania słów kluczowych i warunki wyszukiwania**. Utwórz zapytania wyszukiwania słów kluczowych KQL w celu wyszukiwania zawartości zgodnej z kryteriami zapytania. Możesz także dołączyć warunki, aby zawęzić zakres wyszukiwania.
+- **Zapytania słów kluczowych i warunki wyszukiwania**. Utwórz KQL zapytań wyszukiwania słów kluczowych, aby wyszukać zawartość zgodną z kryteriami zapytania. Możesz również uwzględnić warunki, aby zawęzić zakres wyszukiwania.
 
-- **Statystyki wyszukiwania**. Po uruchomieniu wyszukiwania możesz wyświetlić statystyki dotyczące szacowanych wyników wyszukiwania, takie jak liczba i całkowity rozmiar elementów spełniających kryteria wyszukiwania. Inne statystyki obejmują najlepsze lokalizacje zawartości zawierające wyniki wyszukiwania oraz liczbę elementów, które pasują do różnych części zapytania wyszukiwania.
+- **Statystyki wyszukiwania**. Po uruchomieniu wyszukiwania możesz wyświetlić statystyki szacowanych wyników wyszukiwania, takie jak liczba i łączny rozmiar elementów spełniających kryteria wyszukiwania. Inne statystyki obejmują najważniejsze lokalizacje zawartości zawierające wyniki wyszukiwania oraz liczbę elementów odpowiadających różnym częściom zapytania wyszukiwania.
 
-- **Eksportowanie wyników wyszukiwania**. Eksportowanie wyników wyszukiwania na komputer lokalny w organizacji w procesie dwuetapowym. Podczas eksportowania wyników wyszukiwania elementy są kopiowane z ich oryginalnej lokalizacji zawartości w programie Microsoft 365 do lokalizacji danych usługi Azure Storage dostarczony przez firmę Microsoft. Następnie możesz pobrać te elementy na komputer lokalny.
+- **Eksportuj wyniki wyszukiwania**. Eksportuj wyniki wyszukiwania na komputer lokalny w organizacji w procesie dwuetapowym. Podczas eksportowania wyników wyszukiwania elementy są kopiowane z oryginalnej lokalizacji zawartości w Microsoft 365 do lokalizacji Storage platformy Azure udostępnionej przez firmę Microsoft. Następnie możesz pobrać te elementy na komputer lokalny.
 
-- **Uprawnienia oparte na rolach**. Za pomocą uprawnień dostępu opartego na rolach (RBAC, role based access) możesz kontrolować, jakie zadania związane z zbierania elektronicznych materiałów dowodowych mogą wykonywać różni użytkownicy. Możesz użyć wbudowanej grupy ról związanej z zbierania elektronicznych materiałów dowodowych lub utworzyć niestandardowe grupy ról, które przypiszą określone uprawnienia zbierania elektronicznych materiałów dowodowych.
+- **Uprawnienia oparte na rolach**. Uprawnienia dostępu opartego na rolach (RBAC) umożliwiają kontrolowanie zadań związanych zbierania elektronicznych materiałów dowodowych, które mogą wykonywać różni użytkownicy. Możesz użyć wbudowanej grupy ról związanych zbierania elektronicznych materiałów dowodowych lub utworzyć niestandardowe grupy ról, które przypisują określone uprawnienia zbierania elektronicznych materiałów dowodowych.
 
-- **Zarządzanie sprawą**. Sprawy zbierania elektronicznych materiałów dowodowych w podstawowych przypadkach zbierania elektronicznych materiałów dowodowych Advanced eDiscovery umożliwiają kojarzenie określonych wyszukiwań i eksportów z określonym badaniem. Do sprawy można także przypisać członków, aby kontrolować, kto może uzyskać dostęp do sprawy i wyświetlać jej zawartość.
+- **Zarządzanie sprawami**. Przypadki zbierania elektronicznych materiałów dowodowych w ramach zbierania elektronicznych materiałów dowodowych (standard) i zbierania elektronicznych materiałów dowodowych (Premium) umożliwiają skojarzenie określonych wyszukiwań i eksportów z określonym badaniem. Możesz również przypisać członków do sprawy, aby kontrolować, kto może uzyskać dostęp do sprawy i wyświetlić zawartość sprawy.
 
-- **Umieszczaj lokalizacje zawartości w statusie prawnych**. Zachowywanie zawartości związanej z prowadzonym śledztwem przez umieszczenie informacji prawnych w lokalizacjach zawartości w danym przypadku. Umożliwia to zabezpieczanie informacji przechowywanych elektronicznie przed przypadkowym (lub celowym) usunięciem podczas badania.
+- **Umieszczanie lokalizacji zawartości w stan archiwizacji ze względów prawnych**. Zachowaj zawartość istotną dla badania, wstrzymując w danym przypadku prawne blokady lokalizacji zawartości. Dzięki temu można zabezpieczyć przechowywane elektronicznie informacje przed niezamierzonym (lub zamierzonym) usunięciem podczas badania.
 
-- **Zarządzanie pochłoną.** Zarządzaj osobami wskazanymi w sprawie jako osoby zainteresowań (nazywanymi osobami *przechowywania) i* innymi źródłami danych, które mogą nie być skojarzone z opiekunem. Po dodaniu do sprawy materiałów do przechowywania danych i źródeł danych, których nie chcesz przechowywać, możesz umieścić te źródła danych w zes względu na przepisy prawne, komunikować się z użytkownikami przy użyciu procesu powiadamiania o wstrzymaniu ze względu na przepisy prawne oraz wyszukiwać źródła danych w celu zbierania treści istotnych dla danej sprawy.
+- **Zarządzanie opiekunem**. Zarządzaj osobami zidentyfikowanymi jako osoby zainteresowane sprawą (nazywanymi *opiekunami*) i innymi źródłami danych, które mogą nie być skojarzone z opiekunem. Po dodaniu opiekunów i źródeł danych nienadzorowania do sprawy możesz wstrzymać te źródła danych, komunikować się z opiekunami przy użyciu procesu powiadamiania o blokadzie prawnej oraz wyszukiwać źródła danych i źródła danych bez nadzoru w celu zbierania treści istotnych dla sprawy.
 
-- **Powiadomienia o wstrzymaniu ze statusem prawnej**. Zarządzaj procesem komunikowania się z opiekunami przypadków. Powiadomienie o zatrzymaniu ze względu na przepisy prawne nakazuje opiekunom zachowanie zawartości, która ma znaczenie dla danej sprawy. Informacje, które zostały odebrane, przeczytane i potwierdzone przez opiekunów, można śledzić. Przepływ pracy komunikacji w programie Advanced eDiscovery umożliwia tworzenie i wysyłanie początkowych powiadomień, przypomnień i eskalacji, jeśli osoby te nie zdążą potwierdzić powiadomienia o wstrzymaniu.
+- **Powiadomienia o blokadzie prawnej**. Zarządzanie procesem komunikowania się z opiekunami spraw. Powiadomienie o blokadzie prawnej nakazuje opiekunom zachowanie treści istotnych dla sprawy. Możesz śledzić powiadomienia, które zostały odebrane, przeczytane i potwierdzone przez opiekunów. Przepływ pracy komunikacji w usłudze eDiscovery (Premium) umożliwia tworzenie i wysyłanie początkowych powiadomień, przypomnień i eskalacji, jeśli opiekunowie nie potwierdźą powiadomienia o wstrzymaniu.
 
-- **Indeksowanie zaawansowane**. Po dodaniu do sprawy źródeł danych częściowych i niepostrzebowych skojarzone lokalizacje zawartości są ponownie indeksowane (w procesie nazywanym indeksowaniem *zaawansowanym), tak* aby każda zawartość uważana za częściowo zindeksowana była ponownie przetwarzana w celu pełnego przeszukiwania podczas zbierania danych do badania.
+- **Zaawansowane indeksowanie**. Po dodaniu źródeł danych o charakterze powierniczym i bez nadzoru do sprawy skojarzone lokalizacje zawartości są ponownie indeksowane (w procesie o nazwie *Zaawansowane indeksowanie*), dzięki czemu każda zawartość uznana za częściowo zindeksowana jest ponownie przetwarzana, aby umożliwić jej pełne wyszukiwanie podczas zbierania danych na potrzeby badania.
 
-- **Rozwiązywanie problemów**. Usuwanie błędów przetwarzania przy użyciu procesu *nazywanego rozwiązywaniem problemów*. Rozwiązywanie problemów z błędami pozwala rozwiązać problemy z danymi, które uniemożliwiają Advanced eDiscovery prawidłowego przetwarzania zawartości podczas indeksowania zaawansowanego. Na przykład pliki chronione hasłem nie mogą być przetwarzane, ponieważ są one zablokowane lub zaszyfrowane. Za pomocą środków zaradczych można pobierać pliki z błędami, usuwać ochronę hasłem, a następnie przekazywać te pliki.
+- **Błąd podczas korygowania**. Naprawianie błędów przetwarzania przy użyciu procesu o nazwie *korygowanie błędów*. Korygowanie błędów umożliwia rozwiązywanie problemów z danymi, które uniemożliwiają prawidłowe przetwarzanie zawartości podczas indeksowania zaawansowanego zbierania elektronicznych materiałów dowodowych (Premium). Na przykład nie można przetwarzać plików chronionych hasłem, ponieważ pliki są zablokowane lub szyfrowane. Za pomocą korygowania błędów można pobrać pliki z błędami, usunąć ochronę haseł, a następnie przekazać skorygowane pliki.
 
-- **Zestawy recenzji**. Dodawanie odpowiednich danych do zestawu recenzji. Zestaw recenzji to bezpieczna, podana przez firmę Microsoft Storage Azure lokalizacja w chmurze firmy Microsoft. Po dodaniu danych do zestawu recenzji zebrane elementy są kopiowane z ich oryginalnej lokalizacji zawartości do zestawu recenzji. Zestawy recenzji zawierają statyczny, znany zestaw zawartości, który można wyszukiwać, filtrować, tagować, analizować i przewidywać istotność przy użyciu modeli predykcyjnego kodowania. Ponadto można śledzić i raportować zawartość dodaną do zestawu recenzji.
+- **Przejrzyj zestawy**. Dodaj odpowiednie dane do zestawu przeglądów. Zestaw przeglądów to bezpieczna, udostępniana przez firmę Microsoft lokalizacja Storage platformy Azure w chmurze firmy Microsoft. Po dodaniu danych do zestawu przeglądów zebrane elementy są kopiowane z ich oryginalnej lokalizacji zawartości do zestawu przeglądów. Zestawy przeglądów udostępniają statyczny, znany zestaw zawartości, który można wyszukiwać, filtrować, tagować, analizować i przewidywać trafność przy użyciu modeli kodowania predykcyjnego. Możesz również śledzić i raportować zawartość dodawaną do zestawu przeglądów.
 
-- **Obsługa załączników i wersji SharePoint w chmurze**. Podczas dodawania zawartości do zestawu recenzji możesz dołączać załączniki w chmurze lub pliki połączone. Oznacza to, że do zestawu recenzji zostanie dodany plik docelowy załącznika w chmurze lub pliku połączonego. Możesz również dodać wszystkie wersje dokumentu do SharePoint recenzji.
+- **Obsługa załączników w chmurze i wersji SharePoint**. Po dodaniu zawartości do zestawu przeglądów możesz dołączyć załączniki w chmurze lub połączone pliki. Oznacza to, że plik docelowy załącznika w chmurze lub połączonego pliku jest dodawany do zestawu przeglądów. Istnieje również możliwość dodania wszystkich wersji dokumentu SharePoint do zestawu przeglądów.
 
-- **Optyczne rozpoznawanie znaków (OCR)** Po dodaniu zawartości do zestawu recenzji funkcja OCR wyodrębnia tekst z obrazów i dodaje tekst obrazu do zawartości dodanej do zestawu recenzji. Umożliwia to wyszukiwanie tekstu obrazu podczas wykonywania zapytań na zawartości w zestawie recenzji.
+- **Optyczne rozpoznawanie znaków (OCR).** Po dodaniu zawartości do zestawu przeglądów funkcja OCR wyodrębnia tekst z obrazów i zawiera tekst obrazu z zawartością dodaną do zestawu przeglądów. Umożliwia to wyszukiwanie tekstu obrazu podczas wykonywania zapytań dotyczących zawartości w zestawie przeglądów.
 
-- **Wątkowanie konwersacji**. Gdy wiadomości czatu z Teams i Yammer zostaną dodane do zestawu recenzji, możesz zebrać cały wątek konwersacji. Oznacza to, że do zestawu recenzji zostanie dodana cała konwersacja na czacie zawierająca elementy zgodne z kryteriami kolekcji. Pozwala to przeglądać elementy czatu w kontekście konwersacji w tył i w tył.
+- **Wątek konwersacji**. Gdy wiadomości czatu z Teams i konwersacji Yammer są dodawane do zestawu przeglądów, możesz zebrać cały wątek konwersacji. Oznacza to, że cała konwersacja czatu zawierająca elementy zgodne z kryteriami kolekcji jest dodawana do zestawu przeglądów. Dzięki temu możesz przeglądać elementy czatu w kontekście konwersacji z powrotem i z powrotem.
 
-- **Statystyki i raporty dotyczące kolekcji**. Po utworzeniu kolekcji roboczej lub zatwierdzeniu kolekcji do zestawu recenzji możesz wyświetlić bogaty zestaw statystyk dotyczących pobranych elementów, takich jak lokalizacje zawartości zawierające najwięcej elementów, które pasują do kryteriów wyszukiwania, oraz liczba elementów zwróconych przez zapytanie wyszukiwania. Możesz także wyświetlić podgląd podzestawu wyników.
+- **Statystyki kolekcji i raporty**. Po utworzeniu kolekcji roboczej lub zatwierdzeniu kolekcji w zestawie przeglądów można wyświetlić bogaty zestaw statystyk dotyczących pobranych elementów, takich jak lokalizacje zawartości zawierające najwięcej elementów zgodnych z kryteriami wyszukiwania i liczbę elementów zwracanych przez zapytanie wyszukiwania. Możesz również wyświetlić podgląd podzestawu wyników.
 
-- **Przejrzyj ustawienia filtrowania**. Po dodaniu zawartości do zestawu recenzji możesz zastosować filtry, aby wyświetlić tylko zestaw elementów, które spełniają kryteria filtrowania. Następnie możesz zapisać zestawy filtrów jako zapytanie, które umożliwia szybkie ponowne filtrowanie zapisanych filtrów. Przeglądanie zestawu filtrowania i zapisanych zapytań pomaga szybko pomylić zawartość z elementami, które są najbardziej istotne dla badania.
+- **Przejrzyj filtrowanie zestawów**. Po dodaniu zawartości do zestawu przeglądów można zastosować filtry, aby wyświetlić tylko zestaw elementów spełniających kryteria filtrowania. Następnie możesz zapisać zestawy filtrów jako zapytanie, które pozwala szybko ponownie zastosować zapisane filtry. Filtrowanie zestawów przeglądów i zapisane zapytania ułatwiają szybkie usuwanie zawartości do elementów, które są najbardziej istotne dla badania.
 
-- **Znakowanie**. Tagi ułatwiają także oznaczanie nieistnieowej zawartości i identyfikowanie najbardziej istotnej zawartości. Gdy eksperci, prawnicy lub inni użytkownicy przeglądają zawartość zestawu recenzji, ich opinie dotyczące tej zawartości można chwycić za pomocą znaczników. Jeśli na przykład celem jest zmierzowanie niepotrzebnej zawartości, użytkownik może otagować dokumenty za pomocą tagu, takiego jak "nie odpowiada". Po przejrzeniu i oznaczeniu zawartości można utworzyć zapytanie zestawu recenzji w celu wykluczenia wszelkiej zawartości oznaczonej jako nieaktywna. Ten proces eliminuje nieaktywną zawartość z kolejnych kroków przepływu pracy zbierania elektronicznych materiałów dowodowych.
+- **Tagowanie**. Tagi pomagają również usuwać nieistotne treści i identyfikować najbardziej odpowiednią zawartość. Gdy eksperci, adwokaci lub inni użytkownicy przeglądają zawartość w zestawie przeglądów, ich opinie dotyczące zawartości mogą być przechwytywane przy użyciu tagów. Jeśli na przykład celem jest usunięcie niepotrzebnej zawartości, użytkownik może oznaczyć dokumenty tagiem, takim jak "nie odpowiada". Po przejrzeniu i otagowaniu zawartości można utworzyć zapytanie zestawu przeglądów, aby wykluczyć dowolną zawartość oznaczoną jako "niesponsywna". Ten proces eliminuje zawartość niesponsywną z kolejnych kroków w przepływie pracy zbierania elektronicznych materiałów dowodowych.
 
-- **Analiza**. Advanced eDiscovery udostępnia narzędzia do analizowania dokumentów zestawu recenzji, które ułatwiają spójne organizowanie dokumentów i zmniejszanie ilości dokumentów do przejrzenia. *Niemal duplikaty wykrywania* grupuje dokumenty podobne tekstowo, aby ułatwić wydajniejszą weryfikację. *W wątkach wiadomości* e-mail są identyfikowane konkretne wiadomości e-mail, które zapewniają pełny kontekst konwersacji w wątku wiadomości e-mail. *Funkcja* motywów próbuje przeanalizować motywy podczas przeglądania ustawiać dokumenty i przypisywać motyw do dokumentów, aby można było przeglądać dokumenty z powiązanym motywem. Te funkcje analizy sprawiają, że proces reenzentów jest wydajniejszy, dzięki czemu recenzentzy mogą przejrzeć część zebranych dokumentów.
+- **Analiza**. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) udostępnia narzędzia do analizowania dokumentów zestawu przeglądów, które ułatwiają organizowanie dokumentów w spójny sposób i zmniejszają liczbę dokumentów do przejrzenia. *Niemal zduplikowane grupy wykrywania* razem zbliżą się tekstowo do dokumentów, aby ułatwić bardziej wydajny proces przeglądu. *Wątek wiadomości e-mail* identyfikuje określone wiadomości e-mail, które zapewniają pełny kontekst konwersacji w wątku wiadomości e-mail. Funkcje *motywów* próbują analizować motywy w ramach przeglądania zestawu dokumentów i przypisywać motyw do dokumentów, aby można było przeglądać dokumenty z powiązanym motywem. Te możliwości analizy pomagają zwiększyć wydajność procesu przeglądania, dzięki czemu recenzenci mogą przeglądać ułamek zebranych dokumentów.
 
-- **Predykcyjne modele kodowania**. Skorzystaj z modeli predykcyjnego kodowania, aby zmniejszyć i pomylić duże ilości zawartości sprawy do odpowiedniego zestawu elementów, których priorytety możesz ustalić na potrzeby przeglądu. Jest to możliwe dzięki utworzeniu i szkoleniu własnych modeli predykcyjnego kodowania, które ułatwiają określanie priorytetów przeglądu najbardziej istotnych elementów w zestawie recenzji. System używa tego szkolenia do stosowania wyników prognozowania do wszystkich elementów w zestawie recenzji. Umożliwia to filtrowanie elementów na podstawie wyników prognozy, dzięki którym można najpierw przejrzeć najbardziej istotne (lub nieistome) elementy.
+- **Modele kodowania predykcyjnego**. Użyj modeli kodowania predykcyjnego, aby ograniczyć i zlikwidować dużą ilość zawartości przypadków do odpowiedniego zestawu elementów, które można określić priorytetowo do przeglądu. Można to osiągnąć, tworząc i szkoląc własne modele kodowania predykcyjnego, które ułatwiają określenie priorytetów przeglądu najbardziej odpowiednich elementów w zestawie przeglądów. System używa trenowania, aby zastosować wyniki przewidywania do każdego elementu w zestawie przeglądów. Umożliwia to filtrowanie elementów na podstawie wyniku przewidywania, co pozwala najpierw przejrzeć najbardziej odpowiednie (lub nieistotne) elementy.
 
-- **Metadane dokumentu obliczeniowego**. Wiele z tych Advanced eDiscovery, takich jak indeksowanie zaawansowane, wątki konwersacji, analiza i podpowidanie kodu, dodaj właściwości metadanych, aby przejrzeć ustaw dokumenty. Te metadane zawierają informacje dotyczące funkcji wykonywanej przez określoną funkcję. Podczas przeglądania dokumentów można filtrować według właściwości metadanych, aby wyświetlić dokumenty zgodne z kryteriami filtru. Te metadane można zaimportować do aplikacji do przeglądu innych firm po wyeksportowaniu dokumentów zestawu recenzji.
+- **Obliczone metadane dokumentu**. Wiele funkcji zbierania elektronicznych materiałów dowodowych (Premium), takich jak zaawansowane indeksowanie, wątki konwersacji, analiza i kodowanie predykcyjne, dodaje właściwości metadanych w celu przeglądania zestawu dokumentów. Te metadane zawierają informacje związane z funkcją wykonywaną przez określoną funkcję. Podczas przeglądania dokumentów można filtrować właściwości metadanych, aby wyświetlać dokumenty zgodne z kryteriami filtru. Te metadane można zaimportować do aplikacji przeglądania innych firm po wyeksportowaniu dokumentów zestawu przeglądów.
 
-- **Przezroczystość długo działających zadań**. Zadania w Advanced eDiscovery to zwykle długo działające procesy wyzwalane przez akcje użytkownika, takie jak dodawanie osób do sprawy opiekunów, dodawanie zawartości do zestawu recenzji, uruchamianie analiz i szkolenia w zakresie predykcyjnego kodowania. Możesz śledzić stan tych zadań i uzyskać informacje o pomocy technicznej, jeśli chcesz eskalować problemy do pomocy technicznej ms.
+- **Przejrzystość długotrwałych zadań**. Zadania zbierania elektronicznych materiałów dowodowych (Premium) to zazwyczaj długotrwałe procesy wyzwalane przez akcje użytkownika, takie jak dodawanie opiekunów do sprawy, dodawanie zawartości do zestawu przeglądów, uruchamianie analizy i trenowanie modeli kodowania predykcyjnego. Możesz śledzić stan tych zadań i uzyskać informacje o pomocy technicznej, jeśli chcesz eskalować problemy do pomocy technicznej ms.
 
-- **Wyeksportuj dane do lokalizacji Storage Azure**. Podczas eksportowania dokumentów z zestawu recenzji możesz wyeksportować je na konto usługi Azure Storage zarządzane przez Twoją organizację. Ponadto funkcja Advanced eDiscovery pozwala dostosować eksportowane dane. Obejmuje to eksportowanie metadanych, plików natywnych, plików tekstowych, tagów i dokumentów redagowanych zapisanych w pliku PDF.
+- **Eksportuj do lokalizacji Storage platformy Azure należącej do klienta**. Podczas eksportowania dokumentów z zestawu przeglądów możesz wyeksportować je na konto usługi Azure Storage zarządzane przez organizację. Ponadto funkcja zbierania elektronicznych materiałów dowodowych (Premium) umożliwia dostosowywanie eksportowanych danych. Obejmuje to eksportowanie metadanych plików, plików natywnych, plików tekstowych, tagów i zredagowanych dokumentów zapisanych w pliku PDF.
 
 ## <a name="ediscovery-subscription-comparison"></a>Porównanie subskrypcji zbierania elektronicznych materiałów dowodowych
 
-W poniższych sekcjach przedstawiono minimalne wymagania dotyczące subskrypcji dotyczące wyszukiwania zawartości, zbierania elektronicznych materiałów dowodowych i zbierania elektronicznych materiałów dowodowych Advanced eDiscovery. Subskrypcje, które obsługują podstawowe usługi zbierania elektronicznych materiałów dowodowych, również obsługują wyszukiwanie zawartości. Subskrypcje, które obsługują Advanced eDiscovery również wyszukiwanie zawartości i podstawowe usługi zbierania elektronicznych materiałów dowodowych.
+W poniższych sekcjach przedstawiono minimalne wymagania dotyczące subskrypcji wyszukiwania zawartości, zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium). Subskrypcje obsługujące funkcję zbierania elektronicznych materiałów dowodowych (Standardowa) obsługują również wyszukiwanie zawartości. Subskrypcje obsługujące funkcję zbierania elektronicznych materiałów dowodowych (Premium) obsługują również wyszukiwanie zawartości i pozyskiwanie elektronicznych materiałów dowodowych (Standard).
 
-### <a name="content-search"></a>Przeszukiwanie zawartości
+### <a name="content-search"></a>Wyszukiwanie zawartości
 
-- Microsoft 365 E1
-- Microsoft 365 G1
-- Microsoft 365 F1 lub F3 albo F5 Security add-on
-- Microsoft 365 Business Premium subskrypcji
-- Microsoft 365 Business Standard subskrypcji
-- Microsoft 365 Business Basic subskrypcji
-- Office 365 Education A1
-- Office 365 E1 subskrypcji
+- subskrypcja Microsoft 365 E1
+- subskrypcja Microsoft 365 G1
+- subskrypcja Microsoft 365 F1 lub F3 lub dodatek F5 Security
+- subskrypcja Microsoft 365 Business Premium
+- subskrypcja Microsoft 365 Business Standard
+- subskrypcja Microsoft 365 Business Basic
+- subskrypcja Office 365 Education A1
+- subskrypcja Office 365 E1
 
 
-### <a name="core-ediscovery"></a>Core eDiscovery
+### <a name="ediscovery-standard"></a>eDiscovery (Standardowa)
 
-- Microsoft 365 E3 subskrypcji
-- Microsoft 365 G3 subskrypcji
-- Microsoft 365 Business Premium subskrypcji
-- Microsoft 365 F5 lub F5 Security & Security & Compliance add-on
-- Microsoft 365 Education A3 lub Office 365 Education A3
-- Office 365 E3 subskrypcji
+- subskrypcja Microsoft 365 E3
+- subskrypcja Microsoft 365 G3
+- subskrypcja Microsoft 365 Business Premium
+- dodatek zgodności Microsoft 365 F5 lub dodatek F5 Security & Compliance
+- subskrypcja Microsoft 365 Education A3 lub Office 365 Education A3
+- subskrypcja Office 365 E3
 
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+### <a name="ediscovery-premium"></a>eDiscovery (Premium)
 
 - subskrypcję platformy Microsoft 365 E5 lub pakietu Office 365 E5;
 - subskrypcję platformy Microsoft 365 E3 z dodatkiem E5 Compliance;
-- Microsoft 365 E3 subskrypcji zbierania elektronicznych materiałów dowodowych E5 i dodatku Inspekcja
-- Microsoft 365 G5
-- Microsoft 365 G5 z dodatku zgodności G5
-- Microsoft 365 G5 z dodatków G5 eDiscovery i Audit
-- Microsoft 365 F5 lub F5 Security & Security & Compliance add-on
-- Microsoft 365 Education A5 lub Office 365 Education A5
+- Microsoft 365 E3 subskrypcji z dodatkiem E5 eDiscovery and Audit
+- subskrypcja Microsoft 365 G5
+- subskrypcja Microsoft 365 G5 z dodatkiem G5 Compliance
+- subskrypcja Microsoft 365 G5 z dodatkiem G5 eDiscovery and Audit
+- dodatek zgodności Microsoft 365 F5 lub dodatek F5 Security & Compliance
+- subskrypcja Microsoft 365 Education A5 lub Office 365 Education A5
 
-## <a name="get-started-with-ediscovery"></a>Wprowadzenie do zbierania elektronicznych materiałów dowodowych
+## <a name="get-started-with-ediscovery"></a>Wprowadzenie zbierania elektronicznych materiałów dowodowych
 
-Zapoznaj się z następującymi artykułami, aby dowiedzieć się więcej i rozpocząć korzystanie z rozwiązań zbierania elektronicznych materiałów dowodowych w programie Microsoft 365.
+Zapoznaj się z poniższymi artykułami, aby dowiedzieć się więcej i rozpocząć korzystanie z rozwiązań zbierania elektronicznych materiałów dowodowych w Microsoft 365.
 
-### <a name="content-search"></a>Przeszukiwanie zawartości
+### <a name="content-search"></a>Wyszukiwanie zawartości
 
-- [Wyszukiwanie zawartości za pomocą wyszukiwania zawartości](search-for-content.md)
+- [Wyszukiwanie zawartości przy użyciu wyszukiwania zawartości](search-for-content.md)
 
 - [Tworzenie wyszukiwania](content-search.md)
 
-### <a name="core-ediscovery"></a>Core eDiscovery
+### <a name="ediscovery-standard"></a>eDiscovery (Standardowa)
 
-- [Wprowadzenie do zbierania elektronicznych materiałów dowodowych w podstawowym programie](get-started-core-ediscovery.md)
+- [Wprowadzenie zbierania elektronicznych materiałów dowodowych (standardowa)](get-started-core-ediscovery.md)
 
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+### <a name="ediscovery-premium"></a>eDiscovery (Premium)
 
-- [Omówienie Advanced eDiscovery](overview-ediscovery-20.md)
+- [Omówienie zbierania elektronicznych materiałów dowodowych (Premium)](overview-ediscovery-20.md)
 
-- [Konfigurowanie Advanced eDiscovery](get-started-with-advanced-ediscovery.md)
+- [Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md)
 
-- [Tworzenie sprawy Advanced eDiscovery i zarządzanie nimi](create-and-manage-advanced-ediscoveryv2-case.md)
+- [Tworzenie sprawy zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nią](create-and-manage-advanced-ediscoveryv2-case.md)
 
-## <a name="ediscovery-roadmap"></a>Przewodnik po zbierania elektronicznych materiałów dowodowych
+## <a name="ediscovery-roadmap"></a>Plan zbierania elektronicznych materiałów dowodowych
 
-Aby sprawdzić, jakie funkcje zbierania elektronicznych materiałów dowodowych zostały uruchomione, są obecnie wdrażania lub są w opracowywania, zobacz Przewodnik po Microsoft 365 [elektronicznych materiałów dowodowych](https://aka.ms/eDiscoRoadMap).
+Aby zobaczyć, jakie funkcje zbierania elektronicznych materiałów dowodowych zostały uruchomione, wdrażane lub opracowywane, zobacz [plan Microsoft 365](https://aka.ms/eDiscoRoadMap).
 
 ## <a name="training"></a>Szkolenia
 
-Szkolenie administratorów informatycznych, menedżerów zbierania elektronicznych materiałów dowodowych i zespołów ds. zgodności w zakresie podstaw wyszukiwania zawartości, podstawowych narzędzi zbierania elektronicznych materiałów dowodowych i Advanced eDiscovery może ułatwić Twojej organizacji szybkie rozpoczynanie pracy z narzędziami zbierania elektronicznych materiałów dowodowych w Microsoft 365. Microsoft 365 udostępnia następujące zasoby, które pomogą tym użytkownikom w organizacji rozpocząć pracę z usługą zbierania elektronicznych materiałów dowodowych: Opis funkcji zbierania elektronicznych materiałów dowodowych i [inspekcji w programie Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Szkolenie administratorów IT, menedżerów zbierania elektronicznych materiałów dowodowych i zespołów ds. badania zgodności w podstawach wyszukiwania zawartości, zbierania elektronicznych materiałów dowodowych (Standard) i zbierania elektronicznych materiałów dowodowych (Premium) może pomóc organizacji szybciej rozpocząć pracę przy użyciu narzędzi do zbierania elektronicznych materiałów dowodowych Microsoft 365. Microsoft 365 udostępnia następujący zasób, który ułatwia tym użytkownikom w organizacji rozpoczęcie pracy zbierania elektronicznych materiałów dowodowych: [Opis możliwości zbierania elektronicznych materiałów dowodowych i inspekcji Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

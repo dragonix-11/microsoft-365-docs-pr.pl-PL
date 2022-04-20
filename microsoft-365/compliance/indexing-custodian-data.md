@@ -1,5 +1,5 @@
 ---
-title: Zaawansowane indeksowanie danych przetwarzających
+title: Zaawansowane indeksowanie danych opiekuna
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,41 +15,41 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Po dodaniu do sprawy Advanced eDiscovery wszelkie treści uważane za częściowo zindeksowane są ponownie przetwarzane w celu w pełni możliwego wyszukiwania.
-ms.openlocfilehash: 1c43f55f399f69d58e05c073e688170d53480b42
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+description: Po dodaniu opiekuna do sprawy zbierania elektronicznych materiałów dowodowych (Premium) każda zawartość, która została uznana za częściowo indeksowana, jest ponownie przetwarzana, aby była w pełni przeszukiwalna.
+ms.openlocfilehash: 3c6f0079f87dbc4711fed7d776204c287d5b5865
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "62996847"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64931993"
 ---
-# <a name="advanced-indexing-of-custodian-data"></a>Zaawansowane indeksowanie danych przetwarzających
+# <a name="advanced-indexing-of-custodian-data"></a>Zaawansowane indeksowanie danych opiekuna
 
-Po dodaniu do sprawy Advanced eDiscovery zawartości uważanej za częściowo zindeksowane lub błędy indeksowania jest ponownie indeksowana. Ten proces ponownego indeksowania nosi *nazwę Indeksowanie zaawansowane*. Istnieje wiele powodów, dla których zawartość jest częściowo indeksowana lub występują błędy indeksowania. Dotyczy to plików obrazów lub informacji o obecności obrazów w pliku, nieobsługiwanych typów plików lub limitów indeksowania o rozmiarze pliku. W SharePoint pliki indeksowania zaawansowanego są uruchamiane tylko dla elementów oznaczonych jako częściowo indeksowane lub z błędami indeksowania. W Exchange e-mail, które mają załączniki w obrazach, nie są oznaczane jako częściowo indeksowane ani z błędami indeksowania. Oznacza to, że te pliki nie zostaną ponownie zindeksowane przez proces indeksowania zaawansowanego.
+Po dodaniu opiekuna do sprawy zbierania elektronicznych materiałów dowodowych (Premium) każda zawartość, która została uznana za częściowo indeksowana lub miała błędy indeksowania, zostanie ponownie wyświetlona. Ten proces ponownego indeksowania jest nazywany *indeksowaniem zaawansowanym*. Istnieje wiele powodów, dla których zawartość jest częściowo indeksowana lub ma błędy indeksowania. Obejmuje to pliki obrazów lub obecność obrazów w pliku, nieobsługiwanych typów plików lub limity indeksowania rozmiaru pliku. W przypadku plików SharePoint zaawansowane indeksowanie działa tylko na elementach, które są oznaczone jako częściowo indeksowane lub mają błędy indeksowania. W Exchange wiadomości e-mail z załącznikami obrazów nie są oznaczone jako częściowo indeksowane lub z błędami indeksowania. Oznacza to, że te pliki nie zostaną ponownie wygenerowane przez proces indeksowania zaawansowanego.
 
-Aby dowiedzieć się więcej o przetwarzaniu pomocy technicznej i elementach częściowo indeksowanych, zobacz:
+Aby dowiedzieć się więcej na temat obsługi przetwarzania i częściowo indeksowanych elementów, zobacz:
 
-- [Typy plików obsługiwane w programie Advanced eDiscovery](supported-filetypes-ediscovery20.md)
+- [Obsługiwane typy plików zbierania elektronicznych materiałów dowodowych (Premium)](supported-filetypes-ediscovery20.md)
 
-- [Częściowo indeksowane elementy na zbierania elektronicznych materiałów dowodowych](partially-indexed-items-in-content-search.md)
+- [Częściowo zaindeksowane elementy w środowisku zbierania elektronicznych materiałów dowodowych](partially-indexed-items-in-content-search.md)
 
-- [Formaty plików indeksowane przez Exchange wyszukiwania](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [Formaty plików indeksowane przez Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- [Domyślne rozszerzenia nazw plików przeszukanych i typy plików analizowanych w programie SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Domyślne rozszerzenia nazw plików przeszukanych i analizowane typy plików na serwerze SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
-## <a name="viewing-advanced-indexing-results"></a>Wyświetlanie wyników indeksowania zaawansowanego
+## <a name="viewing-advanced-indexing-results"></a>Wyświetlanie zaawansowanych wyników indeksowania
 
-Po zakończeniu procesu indeksowania zaawansowanego możesz lepiej zrozumieć skuteczność ponownego przetwarzania.  W widoku Wyniki indeksowania zaawansowanego na karcie  Przetwarzanie dla sprawy na wykresie jest wymieniona liczba elementów dodanych do indeksu *hybrydowego*.  Indeks hybrydowy to miejsce, Advanced eDiscovery przechowywaną zawartość.
+Po zakończeniu procesu indeksowania zaawansowanego można zrozumieć skuteczność ponownego przetwarzania.  W widoku Zaawansowane wyniki indeksowania na karcie **Przetwarzanie** dla przypadku wykres zawiera listę elementów dodanych do *indeksu hybrydowego*.  Indeks hybrydowy to miejsce, w którym funkcja zbierania elektronicznych materiałów dowodowych (Premium) przechowuje ponownie przetworzoną zawartość.
 
-Ten widok zawiera również liczbę elementów wymagających rozwiązywania problemów i inny wykres błędów według typu pliku. Więcej informacji można znaleźć w następujących artykułach:
+Ten widok zawiera również liczbę elementów, które wymagają korygowania, oraz inny wykres błędów według typu pliku. Więcej informacji można znaleźć w następujących artykułach:
 
-- [Rozwiązywanie problemów podczas przetwarzania danych](error-remediation-when-processing-data-in-advanced-ediscovery.md)
+- [Korygowanie błędów podczas przetwarzania danych](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
-- [Rozwiązywanie problemów z jednym elementem](single-item-error-remediation.md)
+- [Korygowanie błędu pojedynczego elementu](single-item-error-remediation.md)
 
-## <a name="updating-the-advanced-index-for-custodians"></a>Aktualizowanie indeksu zaawansowanego dla zatrzymań
+## <a name="updating-the-advanced-index-for-custodians"></a>Aktualizowanie indeksu zaawansowanego dla opiekunów
 
-Po dodaniu do sprawy Advanced eDiscovery ponownego przetwarzania wszystkich częściowo indeksowanych elementów. Jednak w momencie upływu czasu elementy częściowo indeksowane mogą być dodawane do skrzynki pocztowej użytkownika lub do OneDrive konta.  W razie potrzeby można zaktualizować indeks dla określonego opiekuna. Aby uzyskać więcej informacji, zobacz [Zarządzanie opiekunami w Advanced eDiscovery przypadku](manage-new-custodians.md#reindex-custodian-data). Indeks można także zaktualizować dla wszystkich opiekunów w przypadku, klikając **indeks** Aktualizuj na **karcie** Przetwarzanie.
+Po dodaniu opiekuna do sprawy zbierania elektronicznych materiałów dowodowych (Premium) wszystkie częściowo indeksowane elementy są ponownie przetwarzane. Jednak w miarę upływu czasu do skrzynki pocztowej użytkownika lub konta OneDrive można dodać więcej częściowo indeksowanych elementów.  W razie potrzeby można zaktualizować indeks dla określonego opiekuna. Aby uzyskać więcej informacji, zobacz [Zarządzanie opiekunami w sprawie zbierania elektronicznych materiałów dowodowych (Premium](manage-new-custodians.md#reindex-custodian-data)). Możesz również zaktualizować indeks dla wszystkich opiekunów w jednym przypadku, klikając **indeks Aktualizacji** na karcie **Przetwarzanie** .
 
 > [!NOTE]
-> Aktualizowanie indeksów bazoerowych jest procesem długotrwałym. Zaleca się, aby w przypadku każdego przypadku nie aktualizować indeksów więcej niż raz dziennie.
+> Aktualizowanie indeksów opiekunów jest długotrwałym procesem. Zaleca się, aby w danym przypadku nie aktualizować indeksów więcej niż raz dziennie.

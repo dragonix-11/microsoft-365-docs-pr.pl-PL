@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie zasadami przechowywania dziennika inspekcji
+title: Zarządzanie zasadami przechowywania dzienników inspekcji
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,153 +16,153 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Zasady przechowywania dziennika inspekcji są częścią nowych funkcji zaawansowanej inspekcji w programie Microsoft 365. Zasady przechowywania dziennika inspekcji pozwalają określić, jak długo mają być zachowywane dzienniki inspekcji w organizacji.
-ms.openlocfilehash: f8c269aa4541c438942c69831857ed531681b742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Zasady przechowywania dzienników inspekcji są częścią nowych funkcji inspekcji usługi Microsoft Purview (Premium). Zasady przechowywania dzienników inspekcji umożliwiają określenie czasu przechowywania dzienników inspekcji w organizacji.
+ms.openlocfilehash: 7f745baa78ebf61c0d32d39c49e3158b2418553f
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986426"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934874"
 ---
-# <a name="manage-audit-log-retention-policies"></a>Zarządzanie zasadami przechowywania dziennika inspekcji
+# <a name="manage-audit-log-retention-policies"></a>Zarządzanie zasadami przechowywania dzienników inspekcji
 
-Zasady przechowywania dziennika inspekcji można tworzyć i zarządzać nimi w Centrum zgodności platformy Microsoft 365. Zasady przechowywania dziennika inspekcji są częścią nowych funkcji zaawansowanej inspekcji w programie Microsoft 365. Zasady przechowywania dziennika inspekcji pozwalają określić, jak długo mają być zachowywane dzienniki inspekcji w organizacji. Dzienniki inspekcji można przechowywać przez maksymalnie 10 lat. Zasady można tworzyć na podstawie następujących kryteriów:
+Zasady przechowywania dzienników inspekcji można tworzyć i zarządzać nimi w portalu zgodności usługi Microsoft Purview. Zasady przechowywania dzienników inspekcji są częścią nowych funkcji inspekcji usługi Microsoft Purview (Premium). Zasady przechowywania dzienników inspekcji umożliwiają określenie czasu przechowywania dzienników inspekcji w organizacji. Dzienniki inspekcji można przechowywać przez maksymalnie 10 lat. Zasady można tworzyć na podstawie następujących kryteriów:
 
-- Wszystkie działania w jednej lub większej Microsoft 365 usługach
-- Określone działania (w usłudze Microsoft 365) wykonane przez wszystkich lub określonych użytkowników
-- Poziom priorytetu określający zasady, które mają pierwszeństwo w przypadku wielu zasad w organizacji
+- Wszystkie działania w co najmniej jednej usłudze Microsoft 365
+- Określone działania (w usłudze Microsoft 365) wykonywane przez wszystkich użytkowników lub przez określonych użytkowników
+- Poziom priorytetu określający, które zasady mają pierwszeństwo w wielu zasadach w organizacji
 
-## <a name="default-audit-log-retention-policy"></a>Domyślne zasady przechowywania dziennika inspekcji
+## <a name="default-audit-log-retention-policy"></a>Domyślne zasady przechowywania dzienników inspekcji
 
-Advanced Audit in Microsoft 365 provides a default audit log retention policy for all organizations. Te zasady zachowują przez jeden Exchange Online, SharePoint online, OneDrive dla Firm i Azure Active Directory inspekcji. Te zasady domyślne zachowują rekordy inspekcji, które zawierają wartość właściwości **Exchange**, **SharePoint**, **OneDrive** i **AzureActiveDirectory** dla właściwości **Workload** (czyli usługi, w której wystąpiło działanie). Nie można modyfikować zasad domyślnych. Zobacz [sekcję Więcej informacji](#more-information) w tym artykule, aby uzyskać listę typów rekordów dla każdego obciążenia pracą uwzględnionego w zasadach domyślnych.
+Inspekcja (Premium) w Microsoft 365 zapewnia domyślne zasady przechowywania dzienników inspekcji dla wszystkich organizacji. Te zasady zachowują wszystkie rekordy inspekcji Exchange Online, SharePoint Online, OneDrive dla Firm i Azure Active Directory przez jeden rok. Te domyślne zasady zachowują rekordy inspekcji zawierające wartość **Exchange**, **SharePoint**, **OneDrive**, **AzureActiveDirectory** dla właściwości **Workload** (czyli usługi, w której wystąpiło działanie). Nie można zmodyfikować zasad domyślnych. Zobacz sekcję [Więcej informacji](#more-information) w tym artykule, aby uzyskać listę typów rekordów dla każdego obciążenia, które są uwzględnione w zasadach domyślnych.
 
 > [!NOTE]
-> Domyślne zasady przechowywania dziennika inspekcji mają zastosowanie tylko do rekordów inspekcji działań wykonywanych przez użytkowników, którym przypisano licencję usługi Office 365 lub Microsoft 365 E5 albo którzy mają licencję na zbierania elektronicznych materiałów dowodowych w programie Zgodność platformy Microsoft 365 E5 lub E5 oraz licencję na dodatek Inspekcja. Jeśli w organizacji są użytkownicy niebędący użytkownikami E5 lub goście, odpowiadające im rekordy inspekcji są zachowywane przez 90 dni.
+> Domyślne zasady przechowywania dzienników inspekcji dotyczą tylko rekordów inspekcji dla działań wykonywanych przez użytkowników, którzy mają przypisaną licencję Office 365 lub Microsoft 365 E5 lub mają licencję dodatku Zgodność platformy Microsoft 365 E5 lub E5 eDiscovery i Audit. Jeśli masz użytkowników innych niż E5 lub użytkowników-gości w organizacji, ich odpowiednie rekordy inspekcji są przechowywane przez 90 dni.
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Przed utworzeniem zasad przechowywania dziennika inspekcji
 
-- Aby utworzyć lub zmodyfikować zasady przechowywania inspekcji, musisz mieć przypisaną rolę Konfiguracja organizacji Centrum zgodności platformy Microsoft 365 grupy.
+- Musisz mieć przypisaną rolę Konfiguracja organizacji w portalu zgodności, aby utworzyć lub zmodyfikować zasady przechowywania inspekcji.
 
-- W organizacji można mieć maksymalnie 50 zasad przechowywania dziennika inspekcji.
+- W organizacji możesz mieć maksymalnie 50 zasad przechowywania dzienników inspekcji.
 
-- Aby dziennik inspekcji był zachowywany przez czas dłuższy niż 90 dni (i do 1 roku), użytkownik, który generuje dziennik inspekcji (przez wykonanie działań inspekcji), musi mieć przypisaną licencję usługi Office 365 E5 lub Microsoft 365 E5 albo licencję na usługę zbierania elektronicznych materiałów dowodowych w ramach usługi Zgodność platformy Microsoft 365 E5 lub E5 i licencję na dodatek inspekcja. Aby przechowywać dzienniki inspekcji przez 10 lat, oprócz licencji E5 użytkownik, który wygeneruje dziennik inspekcji, musi mieć przypisaną licencję dodatkową do przechowywania dziennika inspekcji na 10 lat.
+- Aby zachować dziennik inspekcji dłużej niż 90 dni (i do 1 roku), użytkownik, który generuje dziennik inspekcji (wykonując inspekcję działania), musi mieć przypisaną licencję Office 365 E5 lub Microsoft 365 E5 albo mieć licencję dodatku Zgodność platformy Microsoft 365 E5 lub E5 zbierania elektronicznych materiałów dowodowych i inspekcji. Aby zachować dzienniki inspekcji przez 10 lat, użytkownik, który generuje dziennik inspekcji, musi również otrzymać 10-letnią licencję dodatku przechowywania dziennika inspekcji oprócz licencji E5.
 
-- Wszystkie niestandardowe zasady przechowywania dziennika inspekcji (utworzone przez Twoją organizację) mają priorytet nad domyślnymi zasadami przechowywania. Jeśli na przykład utworzysz zasady przechowywania dziennika inspekcji dla działań w skrzynce pocztowej programu Exchange, który ma okres przechowywania krótszy niż rok, rekordy inspekcji dotyczące działań skrzynki pocztowej programu Exchange będą przechowywane przez krótszy czas określony w zasadach niestandardowych.
+- Wszystkie niestandardowe zasady przechowywania dzienników inspekcji (utworzone przez organizację) mają pierwszeństwo przed domyślnymi zasadami przechowywania. Jeśli na przykład utworzysz zasady przechowywania dzienników inspekcji dla działania Exchange skrzynki pocztowej z okresem przechowywania krótszym niż jeden rok, rekordy inspekcji dla Exchange działań skrzynki pocztowej zostaną zachowane przez krótszy czas określony przez zasady niestandardowe.
 
 ## <a name="create-an-audit-log-retention-policy"></a>Tworzenie zasad przechowywania dziennika inspekcji
 
-1. Przejdź do <https://compliance.microsoft.com> konta użytkownika z przypisaną rolą Konfiguracja organizacji i zaloguj się do tego konta na stronie Uprawnienia w Centrum zgodności platformy Microsoft 365.
+1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu konta użytkownika, do których przypisano rolę Konfiguracja organizacji na stronie Uprawnienia w portalu zgodności.
 
-2. W lewym okienku okna Centrum zgodności platformy Microsoft 365 pozycję **Inspekcja**.
+2. W lewym okienku portalu zgodności kliknij pozycję **Inspekcja**.
 
-3. Kliknij **kartę Inspekcja zasad** przechowywania.
+3. Kliknij kartę **Zasady przechowywania inspekcji** .
 
-4. Kliknij **pozycję Utwórz zasady przechowywania inspekcji**, a następnie na wysuwanych stronie wypełnij następujące pola:
+4. Kliknij **pozycję Utwórz zasady przechowywania inspekcji**, a następnie wypełnij następujące pola na stronie wysuwanej:
 
-   ![Wysuwna strona nowych zasad przechowywania inspekcji.](../media/CreateAuditLogRetentionPolicy.png)
+   ![Nowa strona wysuwanych zasad przechowywania inspekcji.](../media/CreateAuditLogRetentionPolicy.png)
 
-   1. **Nazwa zasad:** Nazwa zasad przechowywania dziennika inspekcji. Ta nazwa musi być unikatowa w Twojej organizacji i nie można jej zmienić po utworzeniu zasad.
+   1. **Nazwa zasad:** Nazwa zasad przechowywania dziennika inspekcji. Ta nazwa musi być unikatowa w organizacji i nie można jej zmienić po utworzeniu zasad.
 
-   2. **Opis:** Opcjonalne, ale pomocne w dostarczaniu informacji o zasadach, takich jak typ rekordu lub obciążenie pracą, użytkownicy określone w zasadach i czas trwania.
+   2. **Opis:** Opcjonalne, ale pomocne w dostarczaniu informacji o zasadach, takich jak typ rekordu lub obciążenie, użytkownicy określoni w zasadach i czas trwania.
 
-   3. **Użytkownicy:** Wybierz co najmniej jednego użytkownika, do których chcesz zastosować zasady. Jeśli pozostawisz to pole puste, zasady zostaną stosowane do wszystkich użytkowników. Jeśli pole **Typ rekordu jest** puste, należy wybrać użytkownika.
+   3. **Użytkowników:** Wybierz co najmniej jednego użytkownika, do których mają zostać zastosowane zasady. Jeśli to pole pozostanie puste, zasady będą stosowane do wszystkich użytkowników. Jeśli **typ rekordu** pozostanie pusty, musisz wybrać użytkownika.
 
-   4. **Typ rekordu:** Typ rekordu inspekcji, do jakiego mają zastosowanie zasady. Jeśli pozostawisz tę właściwość pustą, musisz wybrać użytkownika w **polu Użytkownicy** . Możesz wybrać jeden typ rekordu lub wiele typów rekordów:
-      - Jeśli wybierzesz jeden typ rekordu, pole **Działania** zostanie dynamicznie wyświetlone. Za pomocą listy rozwijanej możesz wybrać działania z wybranego typu rekordu w celu zastosowania zasad. Jeśli nie wybierzesz określonych działań, zasady zostaną stosowane do wszystkich działań wybranego typu rekordu.
-      - Jeśli wybierzesz wiele typów rekordów, nie będziesz mieć możliwości zaznaczania działań. Zasady zostaną stosowane do wszystkich działań wybranych typów rekordów.
+   4. **Typ rekordu:** Typ rekordu inspekcji, do jakiego mają zastosowanie zasady. Jeśli pozostawisz tę właściwość pustą, musisz wybrać użytkownika w polu **Użytkownicy** . Możesz wybrać jeden typ rekordu lub wiele typów rekordów:
+      - Jeśli wybierzesz pojedynczy typ rekordu, pole **Działania** zostanie wyświetlone dynamicznie. Możesz użyć listy rozwijanej, aby wybrać działania z wybranego typu rekordu, do którego mają zostać zastosowane zasady. Jeśli nie wybierzesz konkretnych działań, zasady będą stosowane do wszystkich działań wybranego typu rekordu.
+      - Jeśli wybierzesz wiele typów rekordów, nie masz możliwości wybierania działań. Zasady będą stosowane do wszystkich działań wybranych typów rekordów.
 
-   5. **Czas trwania:** Czas przechowywania dzienników inspekcji spełniających kryteria zasad.
+   5. **Długość:** Czas przechowywania dzienników inspekcji spełniających kryteria zasad.
 
-   6. **Priorytet:** Ta wartość określa kolejność przetwarzania zasad przechowywania dziennika inspekcji w organizacji. O niższej wartości informuje o wyższym priorytecie. Prawidłowe priorytety to wartości liczbowe od **1** **do 10000**. Wartość **1 jest** najwyższym priorytetem, a wartość **10000** ma najniższy priorytet. Na przykład zasady o wartości **5** mają pierwszeństwo przed zasadami o wartości **10**. Jak wyjaśniono wcześniej, wszystkie niestandardowe zasady przechowywania dziennika inspekcji mają pierwszeństwo przed domyślnymi zasadami organizacji.
+   6. **Priorytet:** Ta wartość określa kolejność przetwarzania zasad przechowywania dzienników inspekcji w organizacji. Niższa wartość wskazuje wyższy priorytet. Prawidłowe priorytety to wartości liczbowe z zakresu **od 1** **do 10000**. Wartość **1** jest najwyższym priorytetem, a wartość **10000** jest najniższym priorytetem. Na przykład zasady o wartości **5** mają pierwszeństwo przed zasadami o wartości **10**. Jak wyjaśniono wcześniej, wszelkie niestandardowe zasady przechowywania dzienników inspekcji mają pierwszeństwo przed domyślnymi zasadami organizacji.
 
-5. Kliknij **pozycję Zapisz** , aby utworzyć nowe zasady przechowywania dziennika inspekcji.
+5. Kliknij **przycisk Zapisz** , aby utworzyć nowe zasady przechowywania dziennika inspekcji.
 
-Nowe zasady zostaną wyświetlone na liście na karcie **Inspekcja zasad** przechowywania.
+Nowe zasady są wyświetlane na liście na karcie **Zasady przechowywania inspekcji** .
 
-## <a name="manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center"></a>Zarządzanie zasadami przechowywania dziennika inspekcji w Centrum zgodności platformy Microsoft 365
+## <a name="manage-audit-log-retention-policies-in-the-compliance-portal"></a>Zarządzanie zasadami przechowywania dzienników inspekcji w portalu zgodności
 
-Zasady przechowywania dziennika inspekcji są wymienione na karcie **Zasady przechowywania inspekcji** (nazywanej również *pulpitem nawigacyjnym*). Za pomocą pulpitu nawigacyjnego można wyświetlać, edytować i usuwać zasady przechowywania inspekcji.
+Zasady przechowywania dzienników inspekcji są wyświetlane na karcie **Zasady przechowywania inspekcji** (nazywanej również *pulpitem nawigacyjnym*). Pulpit nawigacyjny umożliwia wyświetlanie, edytowanie i usuwanie zasad przechowywania inspekcji.
 
 ### <a name="view-policies-in-the-dashboard"></a>Wyświetlanie zasad na pulpicie nawigacyjnym
 
-Zasady przechowywania dziennika inspekcji są wyświetlane na pulpicie nawigacyjnym. Jedną z zalet wyświetlania zasad na pulpicie nawigacyjnym jest możliwość kliknięcia  kolumny Priorytet w celu wyświetlenia listy zasad, w których mają one zastosowanie. Jak wyjaśniono wcześniej, mniejsza wartość wskazuje wyższy priorytet.
+Zasady przechowywania dzienników inspekcji są wyświetlane na pulpicie nawigacyjnym. Jedną z zalet wyświetlania zasad na pulpicie nawigacyjnym jest kliknięcie kolumny **Priorytet** , aby wyświetlić listę zasad w priorytecie, w którym są stosowane. Jak wyjaśniono wcześniej, niższa wartość wskazuje wyższy priorytet.
 
-![Kolumna Priorytet na pulpicie nawigacyjnym Inspekcja zasad przechowywania.](../media/AuditLogRetentionDashboardPriority.png)
+![Kolumna Priorytet na pulpicie nawigacyjnym Zasady przechowywania inspekcji.](../media/AuditLogRetentionDashboardPriority.png)
 
-Możesz także wybrać zasady, aby wyświetlić ich ustawienia na stronie wysuwu.
+Możesz również wybrać zasady, aby wyświetlić ich ustawienia na stronie wysuwanej.
 
 > [!NOTE]
-> Domyślne zasady przechowywania dziennika inspekcji dla organizacji nie są wyświetlane na pulpicie nawigacyjnym.
+> Domyślne zasady przechowywania dzienników inspekcji dla organizacji nie są wyświetlane na pulpicie nawigacyjnym.
 
 ### <a name="edit-policies-in-the-dashboard"></a>Edytowanie zasad na pulpicie nawigacyjnym
 
-Aby edytować zasady, zaznacz je w celu wyświetlenia strony wysuwu. Możesz zmodyfikować jedno lub więcej ustawień, a następnie zapisać zmiany.
+Aby edytować zasady, wybierz je, aby wyświetlić stronę wysuwaną. Możesz zmodyfikować co najmniej jedno ustawienie, a następnie zapisać zmiany.
 
 > [!IMPORTANT]
 >
-> Jeśli używasz polecenia cmdlet **New-UnifiedAuditLogRetentionPolicy**, możesz utworzyć zasady przechowywania dziennika inspekcji dla typów rekordów lub działań, które nie są dostępne w narzędziu Do tworzenia zasad przechowywania inspekcji  na pulpicie nawigacyjnym. W takim przypadku nie będzie można edytować zasad (na przykład zmienić czasu trwania przechowywania lub dodać i usunąć działania) z pulpitu nawigacyjnego Inspekcja **zasad** przechowywania. Zasady będzie można tylko wyświetlać i usuwać w Centrum zgodności. Aby edytować zasady, musisz użyć polecenia cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) w programie PowerShell w centrum zabezpieczeń & zgodności.>
+> Jeśli używasz polecenia cmdlet **New-UnifiedAuditLogRetentionPolicy** , możesz utworzyć zasady przechowywania dziennika inspekcji dla typów rekordów lub działań, które nie są dostępne w narzędziu **Tworzenie zasad przechowywania inspekcji** na pulpicie nawigacyjnym. W takim przypadku nie będzie można edytować zasad (na przykład zmienić czasu przechowywania lub dodać i usunąć działania) na pulpicie nawigacyjnym **Zasady przechowywania inspekcji** . Zasady można wyświetlać i usuwać tylko w Centrum zgodności. Aby edytować zasady, musisz użyć polecenia cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) w usłudze Security & Compliance Center PowerShell.>
 >
-> **Porada:** W górnej części wysuwanych stron zostanie wyświetlony komunikat z informacjami o zasadach, które trzeba edytować przy użyciu programu PowerShell.
+> **Wskazówka:** W górnej części strony wysuwanej zostanie wyświetlony komunikat dotyczący zasad, które należy edytować przy użyciu programu PowerShell.
 
-### <a name="delete-policies-in-the-dashboard"></a>Usuwanie zasad z pulpitu nawigacyjnego
+### <a name="delete-policies-in-the-dashboard"></a>Usuwanie zasad na pulpicie nawigacyjnym
 
-Aby usunąć zasady, kliknij **ikonę Usuń** ![usuń.](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) , a następnie potwierdź usunięcie zasad. Zasady zostaną usunięte z pulpitu nawigacyjnego, ale usunięcie zasad z organizacji może potrwać do 30 minut.
+Aby usunąć zasady, kliknij ikonę **Usuń**![.](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) ikona, a następnie upewnij się, że chcesz usunąć zasady. Zasady zostaną usunięte z pulpitu nawigacyjnego, ale usunięcie zasad z organizacji może potrwać do 30 minut.
 
-## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>Tworzenie zasad przechowywania dziennika inspekcji i zarządzanie nimi w programie PowerShell
+## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>Tworzenie zasad przechowywania dzienników inspekcji i zarządzanie nimi w programie PowerShell
 
-Do tworzenia zasad przechowywania dziennika inspekcji & zarządzania nimi możesz także użyć programu PowerShell w Centrum zabezpieczeń i zgodności. Jednym z powodów korzystania z programu PowerShell jest utworzenie zasad dla typu rekordu lub działania, które nie jest dostępne w interfejsie użytkownika.
+Możesz również użyć programu PowerShell Security & Compliance Center do tworzenia zasad przechowywania dzienników inspekcji i zarządzania nimi. Jednym z powodów używania programu PowerShell jest utworzenie zasad dla typu rekordu lub działania, które nie są dostępne w interfejsie użytkownika.
 
-### <a name="create-an-audit-log-retention-policy-in-powershell"></a>Tworzenie zasad przechowywania dziennika inspekcji w programie PowerShell
+### <a name="create-an-audit-log-retention-policy-in-powershell"></a>Tworzenie zasad przechowywania dzienników inspekcji w programie PowerShell
 
-Wykonaj poniższe czynności, aby utworzyć zasady przechowywania dziennika inspekcji w programie PowerShell:
+Wykonaj następujące kroki, aby utworzyć zasady przechowywania dzienników inspekcji w programie PowerShell:
 
-1. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
-2. Uruchom następujące polecenie, aby utworzyć zasady przechowywania dziennika inspekcji:
+2. Uruchom następujące polecenie, aby utworzyć zasady przechowywania dzienników inspekcji:
 
    ```powershell
    New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TenYears -Priority 100
    ```
 
-   W tym przykładzie są tworzy zasady przechowywania dziennika inspekcji o nazwie "Microsoft Teams inspekcji" z tymi ustawieniami:
+   W tym przykładzie są tworzone zasady przechowywania dzienników inspekcji o nazwie "Microsoft Teams zasady inspekcji" z następującymi ustawieniami:
 
    - Opis zasad.
-   - Zachowuje wszystkie Microsoft Teams (zgodnie z definicją *parametru RecordType*).
-   - Zachowuje Microsoft Teams inspekcji przez 10 lat.
+   - Zachowuje wszystkie działania Microsoft Teams (zgodnie z definicją parametru *RecordType*).
+   - Przechowuje dzienniki inspekcji Microsoft Teams przez 10 lat.
    - Priorytet 100.
 
-Oto kolejny przykład tworzenia zasad przechowywania dziennika inspekcji. Te zasady zachowują dzienniki inspekcji dla działania "Użytkownik zalogowany" przez sześć miesięcy dla użytkownika, który admin@contoso.onmicrosoft.com.
+Oto kolejny przykład tworzenia zasad przechowywania dzienników inspekcji. Te zasady zachowują dzienniki inspekcji dla działania "Użytkownik zalogowany" przez sześć miesięcy dla użytkownika admin@contoso.onmicrosoft.com.
 
 ```powershell
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
 ```
 
-Aby uzyskać więcej informacji, [zobacz New-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
+Aby uzyskać więcej informacji, zobacz [New-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
 
 ### <a name="view-policies-in-powershell"></a>Wyświetlanie zasad w programie PowerShell
 
-Aby wyświetlić zasady przechowywania dziennika inspekcji, użyj polecenia cmdlet [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) w programie PowerShell & w Centrum zabezpieczeń i zgodności.
+Użyj polecenia cmdlet [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) w programie PowerShell Security & Compliance Center, aby wyświetlić zasady przechowywania dzienników inspekcji.
 
-Oto przykładowe polecenie służące do wyświetlania ustawień dla wszystkich zasad przechowywania dziennika inspekcji w organizacji. To polecenie sortuje zasady od najwyższego do najniższego priorytetu.
+Oto przykładowe polecenie umożliwiające wyświetlenie ustawień wszystkich zasad przechowywania dzienników inspekcji w organizacji. To polecenie sortuje zasady z najwyższego do najniższego priorytetu.
 
 ```powershell
 Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending | FL Priority,Name,Description,RecordTypes,Operations,UserIds,RetentionDuration
 ```
 
 > [!NOTE]
-> Polecenie **cmdlet Get-UnifiedAuditLogRetentionPolicy** nie zwraca domyślnych zasad przechowywania dziennika inspekcji dla organizacji.
+> Polecenie cmdlet **Get-UnifiedAuditLogRetentionPolicy** nie zwraca domyślnych zasad przechowywania dzienników inspekcji dla organizacji.
 
 ### <a name="edit-policies-in-powershell"></a>Edytowanie zasad w programie PowerShell
 
-Użyj polecenia [cmdlet Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) w programie PowerShell w & Security & Compliance Center, aby edytować istniejące zasady przechowywania dziennika inspekcji.
+Użyj polecenia cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) w programie PowerShell Security & Compliance Center, aby edytować istniejące zasady przechowywania dzienników inspekcji.
 
 ### <a name="delete-policies-in-powershell"></a>Usuwanie zasad w programie PowerShell
 
-Aby usunąć zasady przechowywania dziennika inspekcji, użyj polecenia cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) w programie PowerShell w centrum & zabezpieczeń i zgodności. Usunięcie zasad z organizacji może potrwać do 30 minut.
+Użyj polecenia cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) w programie PowerShell Security & Compliance Center, aby usunąć zasady przechowywania dzienników inspekcji. Usunięcie zasad z organizacji może potrwać do 30 minut.
 
 ## <a name="more-information"></a>Więcej informacji
 
-Jak wspomniano wcześniej, rekordy inspekcji dotyczące operacji Azure Active Directory, Exchange Online, SharePoint Online i OneDrive dla Firm są domyślnie przechowywane przez jeden rok. W poniższej tabeli wymieniono wszystkie typy rekordów (dla każdej z tych usług) zawarte w domyślnych zasadach przechowywania dziennika inspekcji. Oznacza to, że dzienniki inspekcji dla każdej operacji z tym typem rekordu są przechowywane przez jeden rok, chyba że niestandardowe zasady przechowywania dziennika inspekcji mają pierwszeństwo przed określonym typem rekordu, operacją lub użytkownikiem. Wartość wsadowa (wyświetlana jako wartość właściwości RecordType (Typ Rekordu) dla każdego typu rekordu jest wyświetlana w nawiasach.
+Jak wspomniano wcześniej, rekordy inspekcji operacji w Azure Active Directory, Exchange Online, SharePoint Online i OneDrive dla Firm są domyślnie przechowywane przez jeden rok. W poniższej tabeli wymieniono wszystkie typy rekordów (dla każdej z tych usług) uwzględnione w domyślnych zasadach przechowywania dzienników inspekcji. Oznacza to, że dzienniki inspekcji dla dowolnej operacji z tym typem rekordu są przechowywane przez jeden rok, chyba że niestandardowe zasady przechowywania dzienników inspekcji mają pierwszeństwo przed określonym typem rekordu, operacją lub użytkownikiem. Wartość Enum (wyświetlana jako wartość właściwości RecordType w rekordzie inspekcji) dla każdego typu rekordu jest wyświetlana w nawiasach.
 
 <br>
 

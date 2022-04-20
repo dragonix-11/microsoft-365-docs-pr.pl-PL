@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do podstawowych spraw zbierania elektronicznych materiałów dowodowych w programie Microsoft 365
+title: Wprowadzenie z przypadkami zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,143 +17,143 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: W tym artykule opisano, jak rozpocząć korzystanie z podstawowych funkcji zbierania elektronicznych materiałów dowodowych w Microsoft 365. Po przypisaniu uprawnień zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy możesz dodawać członków, tworzyć zbierania elektronicznych materiałów dowodowych, a następnie wyszukiwać i eksportować zawartość, która jest istotne dla prowadzonego badania.
-ms.openlocfilehash: ff2baf1e4844532ba53f3aa32ae02b7a7c49f00e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: W tym artykule opisano, jak rozpocząć korzystanie z eDiscovery (Standard) w usłudze Microsoft Purview. Po przypisaniu uprawnień do zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy można dodać członków, utworzyć blokady zbierania elektronicznych materiałów dowodowych, a następnie wyszukać i wyeksportować zawartość, która jest odpowiednia dla badania.
+ms.openlocfilehash: bf49ebd886a85005166f07b1a3d6c97e10412e20
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320525"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934736"
 ---
-# <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Wprowadzenie do zbierania elektronicznych materiałów dowodowych w programie Microsoft 365
+# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Wprowadzenie zbierania elektronicznych materiałów dowodowych (Standard) w usłudze Microsoft Purview
 
-Podstawowe usługi zbierania elektronicznych materiałów dowodowych w programie Microsoft 365 zapewniają podstawowe narzędzie zbierania elektronicznych materiałów dowodowych, za pomocą których organizacje mogą wyszukiwać i eksportować zawartość w usługach Microsoft 365 i Office 365. Za pomocą funkcji Podstawowe zbierania elektronicznych materiałów dowodowych możesz także umieścić w stanie przechowywania zawartości lokalizacje zawartości, takie jak skrzynki pocztowe usługi Exchange, witryny usługi SharePoint, konta OneDrive i Microsoft Teams. Do wdrożenia podstawowego zbierania elektronicznych materiałów dowodowych nie jest wymagane nic, ale istnieje kilka wstępnych zadań, które musi wykonać administrator IT i menedżer zbierania elektronicznych materiałów dowodowych, zanim Twoja organizacja będzie w stanie zacząć korzystać z podstawowych funkcji zbierania elektronicznych materiałów dowodowych w celu przeszukiwania, eksportowania i zachowywania zawartości.
+Usługa Microsoft Purview eDiscovery (Standard) w usłudze Microsoft Purview udostępnia podstawowe narzędzie zbierania elektronicznych materiałów dowodowych, którego organizacje mogą używać do wyszukiwania i eksportowania zawartości w Microsoft 365 i Office 365. Możesz również użyć funkcji zbierania elektronicznych materiałów dowodowych (Standardowa), aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, takich jak skrzynki pocztowe Exchange, witryny SharePoint, konta OneDrive i Microsoft Teams. Do wdrożenia zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) nie jest wymagane żadne zadanie, ale istnieją pewne zadania wstępne, które musi wykonać administrator IT i menedżer zbierania elektronicznych elektronicznych materiałów dowodowych, zanim organizacja będzie mogła rozpocząć wyszukiwanie, eksportowanie i zachowywanie zawartości przy użyciu zbierania elektronicznych materiałów dowodowych (Standard).
 
-W tym artykule omówiono czynności niezbędne do skonfigurowania podstawowego zbierania elektronicznych materiałów dowodowych. Obejmuje to zapewnienie odpowiedniego licencjonowania wymaganego do uzyskiwania dostępu do podstawowych zbierania elektronicznych materiałów dowodowych i umieszczenie miejsc zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, a także przypisanie uprawnień do zespołu IT, prawnego i badania w celu uzyskiwania dostępu do spraw i zarządzania nimi. Ten artykuł zawiera również ogólne omówienie korzystania ze spraw w celu wyszukiwania i eksportowania zawartości.
+W tym artykule omówiono kroki niezbędne do skonfigurowania zbierania elektronicznych materiałów dowodowych (Standard). Obejmuje to zapewnienie właściwego licencjonowania wymaganego do uzyskania dostępu do zbierania elektronicznych materiałów dowodowych (Standard) i wstrzymanie zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, a także przypisanie uprawnień do zespołu IT, prawnego i dochodzeniowego w celu uzyskania dostępu do spraw i zarządzania nimi. Ten artykuł zawiera również ogólne omówienie przypadków użycia do wyszukiwania i eksportowania zawartości.
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>Krok 1. Weryfikowanie i przypisywanie odpowiednich licencji
 
-Licencjonowanie dla podstawowego zbierania elektronicznych materiałów dowodowych wymaga odpowiedniej subskrypcji organizacji i licencjonowania na użytkownika.
+Licencjonowanie zbierania elektronicznych materiałów dowodowych (Standardowa) wymaga odpowiedniej subskrypcji organizacji i licencjonowania dla poszczególnych użytkowników.
 
-- **Subskrypcja organizacji:** Aby uzyskać dostęp do core eDiscovery w p Centrum zgodności platformy Microsoft 365 i korzystać z funkcji blokowania i eksportowania, Twoja organizacja musi mieć subskrypcję usługi Microsoft 365 E3 lub Office 365 E3 lub wyższą. Microsoft 365 Frontline organizacje muszą mieć subskrypcję F5.
+- **Subskrypcja organizacji:** Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Standard) w portalu zgodności usługi Microsoft Purview i korzystać z funkcji przechowywania i eksportowania, organizacja musi mieć subskrypcję Microsoft 365 E3 lub Office 365 E3 lub nowszą. Microsoft 365 organizacje linii frontu muszą mieć subskrypcję F5.
 
-- **Licencjonowanie na użytkownika:** Aby umieścić wstrzymywanie zbierania elektronicznych materiałów dowodowych w skrzynkach pocztowych i witrynach, użytkownicy muszą mieć przypisaną jedną z następujących licencji, w zależności od subskrypcji twojej organizacji:
+- **Licencjonowanie na użytkownika:** Aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w skrzynkach pocztowych i witrynach, użytkownicy muszą mieć przypisaną jedną z następujących licencji, w zależności od subskrypcji organizacji:
 
-  - Licencja Microsoft 365 E3 lub Office 365 E3 lub wyższa
-
-   LUB
-
-  - Office 365 E1 z licencją Exchange Online Plan 2 lub Exchange Online — archiwum dodatku
+  - Licencja Microsoft 365 E3 lub Office 365 E3 lub nowsza
 
    LUB
 
-  - Microsoft 365 Frontline F5 Compliance lub F5 Security & Security & Compliance  
+  - licencja Office 365 E1 z licencją dodatku Exchange Online Plan 2 lub Exchange Online — archiwum
 
-  AND
+   LUB
 
-  - Office 365 E1 z licencją dodatku SharePoint Online (plan 2) lub OneDrive dla Firm Plan 2
+  - Microsoft 365 licencja dodatku Zgodność z usługą Frontline F5 lub F5 Security & Compliance  
+
+  I
+
+  - licencja Office 365 E1 z licencją dodatku SharePoint Online Plan 2 lub OneDrive dla Firm Plan 2
   
   Aby uzyskać informacje na temat przypisywania licencji, zobacz [Przypisywanie licencji do użytkowników](../admin/manage/assign-licenses-to-users.md).
 
 Aby uzyskać informacje i wskazówki dotyczące zabezpieczeń i zgodności:
 
-- Pobierz i zobacz sekcję zbierania elektronicznych materiałów dowodowych i inspekcji w [Microsoft 365 porównania.](https://aka.ms/M365EnterprisePlans)
+- Pobierz i zobacz sekcję eDiscovery and auditing (Wykrywanie elektroniczne i inspekcja) w [tabeli Microsoft 365 Comparison (Porównanie Microsoft 365](https://aka.ms/M365EnterprisePlans)).
 
-- Zobacz wskazówki [Microsoft 365 dotyczące zgodności & zabezpieczeń — opisy | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+- Zapoznaj się ze [wskazówkami Microsoft 365 dotyczącymi zgodności & zabezpieczeń — opisy usług | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Krok 2. Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych
 
-Aby uzyskać dostęp do core eDiscovery lub zostać dodany jako członek podstawowej sprawy zbierania elektronicznych materiałów dowodowych, użytkownik musi mieć odpowiednie uprawnienia. W szczególności należy dodać użytkownika jako członka grupy ról Menedżer zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Członkowie tej grupy ról mogą tworzyć podstawowe sprawy zbierania elektronicznych materiałów dowodowych i zarządzać nimi. Mogą dodawać i usuwać członków, tworzyć i edytować wyszukiwania użytkowników oraz eksportować zawartość ze sprawy zbierania elektronicznych materiałów dowodowych.
+Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) lub zostać dodanym jako członek sprawy zbierania elektronicznych materiałów dowodowych (Standardowa), użytkownik musi mieć przypisane odpowiednie uprawnienia. W szczególności użytkownik musi zostać dodany jako członek grupy ról Menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności. Członkowie tej grupy ról mogą tworzyć przypadki zbierania elektronicznych materiałów dowodowych (standardowa) i zarządzać nimi. Mogą dodawać i usuwać członków, umieszczać blokadę zbierania elektronicznych materiałów dowodowych dla użytkowników, tworzyć i edytować wyszukiwania oraz eksportować zawartość ze sprawy zbierania elektronicznych materiałów dowodowych (standardowa).
 
-Wykonaj następujące czynności, aby dodać użytkowników do grupy ról Menedżer zbierania elektronicznych materiałów dowodowych:
+Wykonaj następujące kroki, aby dodać użytkowników do grupy ról menedżera zbierania elektronicznych materiałów dowodowych:
 
-1. Przejdź do tego Centrum zgodności platformy Microsoft 365 i zaloguj się przy użyciu poświadczeń administratora dla konta administratora w Twojej organizacji usługi Microsoft 365 lub Office 365 organizacji.
+1. Przejdź do portalu zgodności i zaloguj się przy użyciu poświadczeń konta administratora w organizacji Microsoft 365 lub Office 365.
 
-2. Na stronie <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Uprawnienia**</a> wybierz grupę ról **Menedżer zbierania** elektronicznych materiałów dowodowych.
+2. Na stronie <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Uprawnienia**</a> wybierz grupę ról **Menedżera zbierania elektronicznych materiałów dowodowych** .
 
-3. Na stronie wysuwu Menedżera zbierania elektronicznych materiałów dowodowych kliknij pozycję **Edytuj** obok sekcji **Menedżer zbierania** elektronicznych materiałów dowodowych.
+3. Na stronie wysuwanego Menedżera zbierania elektronicznych materiałów dowodowych kliknij pozycję **Edytuj** obok sekcji **Menedżer zbierania elektronicznych** materiałów dowodowych.
 
-4. Na stronie **Wybieranie menedżera zbierania elektronicznych materiałów** dowodowych w kreatorze edytowania grupy ról kliknij pozycję **Wybierz menedżera zbierania elektronicznych materiałów dowodowych**.
+4. Na stronie **Wybieranie menedżera zbierania elektronicznych materiałów dowodowych** w kreatorze edytowania grupy ról kliknij pozycję **Wybierz menedżera odnajdywania**.
 
-5. Kliknij **pozycję** Dodaj, a następnie zaznacz pole wyboru dla wszystkich użytkowników, których chcesz dodać do grupy ról.
+5. Kliknij przycisk **Dodaj** , a następnie zaznacz pole wyboru dla wszystkich użytkowników, którzy chcesz dodać do grupy ról.
 
-6. Kliknij **pozycję Dodaj** , aby dodać wybranych użytkowników, a następnie kliknij pozycję **Gotowe**.
+6. Kliknij **przycisk Dodaj** , aby dodać wybranych użytkowników, a następnie kliknij przycisk **Gotowe**.
 
-7. Kliknij **pozycję** Zapisz, aby dodać użytkowników do grupy ról, a następnie kliknij przycisk **Zamknij** , aby ukończyć ten krok.
+7. Kliknij przycisk **Zapisz** , aby dodać użytkowników do grupy ról, a następnie kliknij przycisk **Zamknij** , aby ukończyć ten krok.
 
-### <a name="more-information-about-the-ediscovery-manager-role-group"></a>Więcej informacji na temat grupy ról Menedżer zbierania elektronicznych materiałów dowodowych
+### <a name="more-information-about-the-ediscovery-manager-role-group"></a>Więcej informacji o grupie ról menedżera zbierania elektronicznych materiałów dowodowych
 
-W grupie ról Menedżer zbierania elektronicznych materiałów dowodowych są dwie podgrupy. Różnica między tymi podgrupami zależy od zakresu.
+W grupie ról Menedżera zbierania elektronicznych materiałów dowodowych znajdują się dwie podgrupy. Różnica między tymi podgrupami zależy od zakresu.
 
-- **Menedżer zbierania elektronicznych materiałów dowodowych**: Może wyświetlać podstawowe sprawy zbierania elektronicznych materiałów dowodowych i zarządzać nimi, które tworzą, lub do których należy. Jeśli inny menedżer zbierania elektronicznych materiałów dowodowych utworzy sprawę, ale nie doda drugiego menedżera zbierania elektronicznych materiałów dowodowych jako członka tej sprawy, drugi menedżer zbierania elektronicznych materiałów dowodowych nie będzie mógł wyświetlić ani otworzyć sprawy na stronie Podstawowe zbierania elektronicznych materiałów dowodowych w Centrum zgodności. Na ogół większość osób w organizacji może zostać dodana do podgrupy Menedżer zbierania elektronicznych materiałów dowodowych.
+- **Menedżer zbierania** elektronicznych materiałów dowodowych: może wyświetlać tworzone przez nich przypadki zbierania elektronicznych materiałów dowodowych (standard) lub zarządzać nimi. Jeśli inny menedżer zbierania elektronicznych materiałów dowodowych tworzy przypadek, ale nie dodaje drugiego menedżera zbierania elektronicznych materiałów dowodowych jako członka tej sprawy, drugi menedżer zbierania elektronicznych materiałów dowodowych nie będzie mógł wyświetlić ani otworzyć sprawy na stronie zbierania elektronicznych materiałów dowodowych (Standard) w centrum zgodności. Ogólnie rzecz biorąc, większość osób w organizacji może zostać dodana do podgrupy Menedżera zbierania elektronicznych materiałów dowodowych.
 
-- **Administrator zbierania elektronicznych materiałów** dowodowych: może wykonywać wszystkie zadania związane z zarządzaniem sprawymi, które może wykonywać Menedżer zbierania elektronicznych materiałów dowodowych. Ponadto administrator zbierania elektronicznych materiałów dowodowych może:
+- **Administrator zbierania elektronicznych materiałów dowodowych**: może wykonywać wszystkie zadania zarządzania przypadkami, które może wykonać menedżer zbierania elektronicznych materiałów dowodowych. Ponadto administrator zbierania elektronicznych materiałów dowodowych może:
 
-  - Wyświetlanie wszystkich spraw wymienionych na stronie Podstawowe zbierania elektronicznych materiałów dowodowych.
+  - Wyświetl wszystkie przypadki wymienione na stronie eDiscovery (Standard).
   
-  - Zarządzanie wszystkimi sprawymi w organizacji po dodaniu siebie jako członka do sprawy.
+  - Zarządzaj dowolnym przypadkiem w organizacji po dodaniu się jako członek sprawy.
 
-  - Uzyskiwanie dostępu do danych sprawy i eksportowanie ich dla dowolnej sprawy w organizacji.
+  - Uzyskiwanie dostępu do danych przypadków i eksportowanie ich w dowolnym przypadku w organizacji.
   
-  - Usuwanie członków ze sprawy zbierania elektronicznych materiałów dowodowych. Tylko administrator zbierania elektronicznych materiałów dowodowych może usuwać członków ze sprawy. Użytkownicy, którzy są członkami podgrupy Menedżer zbierania elektronicznych materiałów dowodowych, nie mogą usuwać członków ze sprawy, nawet jeśli użytkownik utworzył sprawę.
+  - Usuń elementy członkowskie ze sprawy zbierania elektronicznych materiałów dowodowych. Tylko administrator zbierania elektronicznych materiałów dowodowych może usunąć członków ze sprawy. Użytkownicy, którzy są członkami podgrupy Menedżera zbierania elektronicznych materiałów dowodowych, nie mogą usuwać członków ze sprawy, nawet jeśli użytkownik utworzył przypadek.
 
-  Ze względu na szeroki zakres dostępu organizacja powinna mieć tylko kilku administratorów, którzy są członkami podgrupy Administratorzy zbierania elektronicznych materiałów dowodowych.
+  Ze względu na szeroki zakres dostępu organizacja powinna mieć tylko kilku administratorów, którzy są członkami podgrupy administratorzy zbierania elektronicznych materiałów dowodowych.
 
-Aby uzyskać więcej informacji o uprawnieniach zbierania elektronicznych materiałów dowodowych i opis każdej roli przypisanej do grupy ról Menedżer zbierania elektronicznych materiałów dowodowych, zobacz Przypisywanie uprawnień [zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
+Aby uzyskać więcej informacji o uprawnieniach do zbierania elektronicznych materiałów dowodowych i opis każdej roli przypisanej do grupy ról menedżera zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
-## <a name="step-3-create-a-core-ediscovery-case"></a>Krok 3. Tworzenie podstawowej sprawy zbierania elektronicznych materiałów dowodowych
+## <a name="step-3-create-a-ediscovery-standard-case"></a>Krok 3. Tworzenie sprawy zbierania elektronicznych materiałów dowodowych (standardowa)
 
-Następnym krokiem jest utworzenie sprawy i rozpoczęcie korzystania z podstawowych funkcji zbierania elektronicznych materiałów dowodowych. Wykonaj poniższe czynności, aby utworzyć sprawę i dodać członków. Użytkownik, który tworzy sprawę, jest automatycznie dodawany jako członek.
+Następnym krokiem jest utworzenie sprawy i rozpoczęcie korzystania z eDiscovery (Standard). Wykonaj poniższe kroki, aby utworzyć przypadek i dodać członków. Użytkownik tworzący sprawę jest automatycznie dodawany jako członek.
 
-1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> i zaloguj się przy użyciu poświadczeń dla konta użytkownika, do których zostały przypisane odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych. Członkowie grupy ról Zarządzanie organizacją mogą również tworzyć podstawowe sprawy zbierania elektronicznych materiałów dowodowych.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a> i zaloguj się przy użyciu poświadczeń dla konta użytkownika, do których przypisano odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych. Członkowie grupy ról Zarządzanie organizacją mogą również tworzyć przypadki zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa).
 
-2. W okienku nawigacji po lewej stronie Centrum zgodności platformy Microsoft 365 kliknij pozycję Pokaż **wszystko**, a następnie kliknij **pozycję eDiscoveryCore** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Pokaż wszystko**, a następnie kliknij pozycję **eDiscoveryCore** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
 
-3. Na stronie **Podstawowe zbierania elektronicznych materiałów dowodowych** kliknij pozycję **Utwórz sprawę**.
+3. Na stronie **eDiscovery (Standard)** kliknij **pozycję Utwórz przypadek**.
 
-4. Na stronie **wysuwana** Nowa sprawa nadaj sprawę nazwę (wymagane), a następnie wpisz opcjonalny opis. Nazwa sprawy musi być unikatowa w Twojej organizacji.
+4. Na stronie **Wysuwany nowy przypadek** nadaj przypadkowi nazwę (wymaganą), a następnie wpisz opcjonalny opis. Nazwa sprawy musi być unikatowa w organizacji.
 
-5. Kliknij **przycisk Zapisz** , aby utworzyć sprawę.
+5. Kliknij przycisk **Zapisz** , aby utworzyć przypadek.
 
-   Nowa sprawa zostanie utworzona i wyświetlona na stronie Core eDiscovery. Może być trzeba kliknąć pozycję **Odśwież,** aby wyświetlić nową sprawę.
+   Nowy przypadek jest tworzony i wyświetlany na stronie eDiscovery (Standard). Może być konieczne **kliknięcie** przycisku Odśwież, aby wyświetlić nowy przypadek.
 
-## <a name="step-4-optional-add-members-to-a-core-ediscovery-case"></a>Krok 4 (opcjonalnie): Dodawanie członków do podstawowej sprawy zbierania elektronicznych materiałów dowodowych
+## <a name="step-4-optional-add-members-to-a-ediscovery-standard-case"></a>Krok 4 (opcjonalnie): Dodawanie członków do sprawy zbierania elektronicznych materiałów dowodowych (standardowa)
 
-Jeśli utworzysz sprawę w kroku 3 i jesteś jedyną osobą, która będzie korzystać ze sprawy, nie musisz wykonywać tego kroku. Możesz rozpocząć tworzenie zbierania elektronicznych materiałów dowodowych, wyszukiwanie zawartości i eksportowanie wyników wyszukiwania. Wykonaj tę czynności, jeśli chcesz udzielić innym użytkownikom (lub grupie ról) dostępu do sprawy.
+Jeśli utworzysz przypadek w kroku 3 i jesteś jedyną osobą, która będzie używać sprawy, nie musisz wykonywać tego kroku. Możesz zacząć używać sprawy do tworzenia blokad zbierania elektronicznych materiałów dowodowych, wyszukiwania zawartości i eksportowania wyników wyszukiwania. Wykonaj ten krok, jeśli chcesz udzielić innym użytkownikom (lub grupie ról) dostępu do sprawy.
 
-1. Na **stronie Podstawowe zbierania** elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365 kliknij nazwę sprawy, do której chcesz dodać członków.
+1. Na stronie **eDiscovery (Standard)** w portalu zgodności kliknij nazwę przypadku, do którego chcesz dodać członków.
 
-2. Na stronie głównej sprawy wybierz kartę **numer Ustawienia,** a następnie wybierz pozycję **Dostęp & uprawnienia**.
+2. Na stronie głównej sprawy wybierz kartę **Ustawienia**, a następnie wybierz pozycję **Dostęp & uprawnienia**.
 
-3. Na stronie **wysuwu & uprawnień** dostępu programu Access w obszarze **Członkowie** kliknij pozycję **Dodaj** , aby dodać członków do sprawy.
+3. Na stronie **wysuwanej Uprawnienia & dostępu** w obszarze **Członkowie** kliknij pozycję **Dodaj** , aby dodać członków do sprawy.
 
-    Możesz również dodać grupy ról jako członków sprawy. W **obszarze Grupy ról** kliknij pozycję **Dodaj**. Do sprawy można przypisywać tylko te grupy ról, których jesteś członkiem. Jest tak dlatego, że grupy ról kontrolują, kto może przypisywać członków do sprawy zbierania elektronicznych materiałów dowodowych.
+    Możesz również dodać grupy ról jako elementy członkowskie sprawy. W obszarze **Grupy ról** kliknij pozycję **Dodaj**. Do sprawy można przypisać tylko grupy ról, których jesteś członkiem. Dzieje się tak dlatego, że grupy ról kontrolują, kto może przypisywać członków do sprawy zbierania elektronicznych materiałów dowodowych.
 
-4. Na liście osób lub grup ról, które mogą być dodawane jako członkowie sprawy, kliknij po lewej stronie nazwiska osób (lub grup ról), które chcesz dodać. Jeśli masz dużą listę osób lub grup ról, które można dodać jako członków, użyj pola Wyszukaj, aby  wyszukać określoną osobę lub grupę ról na liście.
+4. Na liście osób lub grup ról, które mogą zostać dodane jako członkowie sprawy, kliknij po lewej stronie nazwy osób (lub grup ról), które chcesz dodać. Jeśli masz dużą listę osób lub grup ról, które mogą zostać dodane jako członkowie, użyj pola **Wyszukiwania** , aby wyszukać określoną osobę lub grupę ról na liście.
   
-5. Po wybraniu osób lub grup ról do dodania jako członków sprawy kliknij pozycję Zapisz, aby zapisać  nowych członków lub grupy ról.
+5. Po wybraniu osób lub grup ról, które mają zostać dodane jako członkowie sprawy, kliknij przycisk **Zapisz** , aby zapisać nowych członków lub grupy ról.
 
 > [!IMPORTANT]
 >
->- Jeśli rola zostanie dodana lub usunięta z grupy ról dodanej jako członek sprawy, grupa ról zostanie automatycznie usunięta jako członek sprawy (lub w dowolnym przypadku, do których należy grupa ról). Przyczyną tego jest ochrona organizacji przed nieumyślnie udostępnieniem dodatkowych uprawnień członkom sprawy. Podobnie, jeśli grupa ról zostanie usunięta, zostanie usunięta ze wszystkich spraw, do których była członkiem. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases). 
+>- Jeśli rola zostanie dodana lub usunięta z grupy ról, która została dodana jako członek sprawy, grupa ról zostanie automatycznie usunięta jako członek sprawy (lub w każdym przypadku grupa ról jest członkiem). Powodem jest ochrona organizacji przed nieumyślnym udzieleniem dodatkowych uprawnień członkom sprawy. Podobnie, jeśli grupa ról zostanie usunięta, zostanie usunięta ze wszystkich przypadków, do które należała. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases). 
 >
->- Jak wyjaśniono wcześniej, tylko administrator zbierania elektronicznych materiałów dowodowych może usuwać członków ze sprawy. Użytkownicy, którzy są członkami podgrupy Menedżer zbierania elektronicznych materiałów dowodowych, nie mogą usuwać członków ze sprawy, nawet jeśli użytkownik utworzył sprawę.
+>- Jak wyjaśniono wcześniej, tylko administrator zbierania elektronicznych materiałów dowodowych może usunąć członków ze sprawy. Użytkownicy, którzy są członkami podgrupy Menedżera zbierania elektronicznych materiałów dowodowych, nie mogą usuwać członków ze sprawy, nawet jeśli użytkownik utworzył przypadek.
 >
 
-## <a name="explore-the-core-ediscovery-workflow"></a>Poznawanie przepływu pracy Podstawowe zbieranie elektronicznych materiałów dowodowych
+## <a name="explore-the-ediscovery-standard-workflow"></a>Eksplorowanie przepływu pracy zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa)
 
-Aby rozpocząć korzystanie z podstawowych funkcji zbierania elektronicznych materiałów dowodowych, oto prosty przepływ pracy służący do tworzenia zbierania elektronicznych materiałów dowodowych dla osób zainteresowanych, wyszukiwania zawartości istotnej dla prowadzonego badania, a następnie eksportowania tych danych do dalszego przeglądu. W każdej z tych czynności wyróżnimy też niektóre rozszerzone funkcje podstawowe zbierania elektronicznych materiałów dowodowych, które możesz odkrywać.
+Aby rozpocząć korzystanie z podstawowych zbierania elektronicznych materiałów dowodowych, oto prosty przepływ pracy tworzenia blokad zbierania elektronicznych materiałów dowodowych dla osób zainteresowanych, wyszukiwania zawartości odpowiedniej dla badania, a następnie eksportowania tych danych do dalszego przeglądu. W każdym z tych kroków wyróżnimy również niektóre rozszerzone funkcje zbierania elektronicznych materiałów dowodowych (Standard), które można eksplorować.
 
-![Podstawowy przepływ pracy zbierania elektronicznych materiałów dowodowych.](../media/CoreEdiscoveryWorkflow.png)
+![Przepływ pracy zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa).](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[Tworzenie zbierania elektronicznych materiałów dowodowych](create-ediscovery-holds.md)**. Pierwszym krokiem po utworzeniu sprawy jest umieszczenie w miejscu zawartości lokalizacji osób, które są interesujące w prowadzonym śledzeniu, nazywane także holdm zbierania elektronicznych materiałów dowodowych. Lokalizacje zawartości obejmują Exchange pocztowe, witryny SharePoint, konta OneDrive oraz skrzynki pocztowe i witryny skojarzone z grupami Microsoft Teams i Microsoft 365. Mimo że ten krok jest opcjonalny, utworzenie funkcji zbierania elektronicznych materiałów dowodowych zachowuje zawartość, która może być istotny dla sprawy w trakcie badania. Po utworzeniu przechowywania zbierania elektronicznych materiałów dowodowych można zachować całą zawartość w określonych lokalizacjach zawartości lub utworzyć hold oparty na kwerendzie, aby zachować tylko zawartość, która odpowiada zapytaniu wstrzymywaniu. Oprócz zachowania zawartości innym dobrym powodem tworzenia zbierania elektronicznych materiałów dowodowych jest szybkie przeszukiwanie lokalizacji zawartości (zamiast wybierania poszczególnych lokalizacji do wyszukania) podczas tworzenia i uruchamiania wyszukiwań w następnym kroku. Po zakończeniu badania możesz zwolnić wszelkie utworzone przez Ciebie wstrzymywanie.
+1. **[Utwórz blokadę zbierania elektronicznych materiałów dowodowych](create-ediscovery-holds.md)**. Pierwszym krokiem po utworzeniu sprawy jest wstrzymanie ( *nazywane również blokadą zbierania elektronicznych materiałów dowodowych*) w lokalizacjach zawartości osób zainteresowanych badaniem. Lokalizacje zawartości obejmują Exchange skrzynki pocztowe, witryny SharePoint, konta OneDrive oraz skrzynki pocztowe i witryny skojarzone z Microsoft Teams i Grupy Microsoft 365. Chociaż ten krok jest opcjonalny, utworzenie blokady zbierania elektronicznych materiałów dowodowych zachowuje zawartość, która może być istotna dla sprawy podczas badania. Podczas tworzenia blokady zbierania elektronicznych materiałów dowodowych można zachować całą zawartość w określonych lokalizacjach zawartości lub utworzyć blokadę opartą na zapytaniach, aby zachować tylko zawartość zgodną z zapytaniem blokady. Oprócz zachowania zawartości innym dobrym powodem do utworzenia blokad zbierania elektronicznych materiałów dowodowych jest szybkie przeszukiwanie lokalizacji zawartości w stanie wstrzymania (zamiast wybierania każdej lokalizacji do wyszukania) podczas tworzenia i uruchamiania wyszukiwań w następnym kroku. Po zakończeniu badania możesz zwolnić wszystkie utworzone blokady.
 
-2. **[Wyszukiwanie zawartości](search-for-content-in-core-ediscovery.md)**. Po utworzeniu zbierania elektronicznych materiałów dowodowych użyj wbudowanego narzędzia wyszukiwania, aby przeszukać wstrzymywane lokalizacje zawartości. Możesz również przeszukiwać inne lokalizacje zawartości w poszukiwaniu danych, które mogą być istotne dla danej sprawy. Można tworzyć i uruchamiać różne wyszukiwania skojarzone ze sprawą. Za pomocą słów kluczowych, właściwości i warunków można [](keyword-queries-and-search-conditions.md) tworzyć zapytania wyszukiwania zwracające wyniki wyszukiwania z danymi, które najprawdopodobniej są istotne dla danej sprawy. Możesz również:
+2. **[Wyszukaj zawartość](search-for-content-in-core-ediscovery.md)**. Po utworzeniu blokad zbierania elektronicznych materiałów dowodowych użyj wbudowanego narzędzia wyszukiwania do przeszukiwania lokalizacji zawartości w stanie wstrzymania. Możesz również wyszukać w innych lokalizacjach zawartości dane, które mogą być istotne dla danego przypadku. Możesz tworzyć i uruchamiać różne wyszukiwania skojarzone ze sprawą. Słowa kluczowe, właściwości i warunki umożliwiają [tworzenie zapytań wyszukiwania zwracających](keyword-queries-and-search-conditions.md) wyniki wyszukiwania z danymi, które najprawdopodobniej są istotne dla danego przypadku. Możesz również:
 
-   - Wyświetlanie statystyk wyszukiwania, które mogą pomóc uściślić zapytanie wyszukiwania w celu zawężenia wyników.
+   - Wyświetl statystyki wyszukiwania, które mogą ułatwić uściślanie zapytania wyszukiwania w celu zawężenia wyników.
 
-   - Wyświetl podgląd wyników wyszukiwania, aby szybko sprawdzić, czy odpowiednie dane są wyszukiwane.
+   - Wyświetl podgląd wyników wyszukiwania, aby szybko sprawdzić, czy znaleziono odpowiednie dane.
 
-   - Popraw kwerendę i ponownie uruchomić wyszukiwanie.
+   - Popraw zapytanie i uruchom ponownie wyszukiwanie.
 
-3. **[Eksportowanie i pobieranie wyników wyszukiwania](export-content-in-core-ediscovery.md)**. Po wyszukaniu i odnalezieniu danych, które są istotne dla prowadzonego badania, możesz wyeksportować je Office 365 do przeglądu przez osoby spoza zespołu badania. Eksportowanie danych jest procesem dwuetapowym. Pierwszym krokiem jest wyeksportowanie wyników wyszukiwania w przypadku, gdy nie Office 365. Jest to możliwe dzięki skopiowaniu wyników wyszukiwania do lokalizacji danych usługi Azure Storage firmy Microsoft. Następnym krokiem jest pobranie zawartości na komputer lokalny za pomocą narzędzia eDiscovery Export Tool. Oprócz wyeksportowanych plików danych pakiet eksportu zawiera raport eksportu, raport podsumowujący i raport o błędach.
+3. **[Eksportowanie i pobieranie wyników wyszukiwania](export-content-in-core-ediscovery.md)**. Po wyszukaniu i znalezieniu danych istotnych dla badania możesz wyeksportować je z Office 365 do przeglądu przez osoby spoza zespołu dochodzeniowego. Eksportowanie danych jest procesem dwuetapowym. Pierwszym krokiem jest wyeksportowanie wyników wyszukiwania w przypadku braku Office 365. Jest to realizowane przez skopiowanie wyników wyszukiwania do lokalizacji Storage platformy Azure udostępnionej przez firmę Microsoft. Następnym krokiem jest użycie narzędzia eDiscovery Export do pobrania zawartości na komputer lokalny. Oprócz wyeksportowanych plików danych pakiet eksportu zawiera raport eksportu, raport podsumowania i raport o błędach.

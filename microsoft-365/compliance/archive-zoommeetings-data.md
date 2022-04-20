@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika do archiwizowania danych spotkań powiększenia w Microsoft 365
+title: Konfigurowanie łącznika do archiwizowania danych spotkania zoomu w Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,39 +11,39 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych ze spotkań przybliżania veritas w Microsoft 365. Dzięki temu można archiwizować dane ze źródeł danych innych firm w programie Microsoft 365, aby zarządzać danymi innych firm przy użyciu funkcji zgodności, takich jak archiwizacja ze względu na przepisy prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: f776fe3d03f8674a698b5c8fe2f355aa5635577f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych ze spotkań veritas zoom do Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
+ms.openlocfilehash: f8239b1c624712b1eafe0bdce7250143c80610a5
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327311"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934912"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Konfigurowanie łącznika do archiwizowania danych spotkań z powiększeniem
+# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Konfigurowanie łącznika do archiwizowania danych spotkania zoomu
 
-Za pomocą łącznika veritas w Centrum zgodności platformy Microsoft 365 można importować i archiwizować dane ze spotkań powiększania do skrzynek pocztowych użytkowników w Microsoft 365 organizacji. Veritas [udostępnia łącznik spotkań](https://globanet.com/zoom/) z powiększeniem, który jest skonfigurowany do regularnego przechwytywania elementów ze źródła danych innej firmy i importowania ich do Microsoft 365. Łącznik konwertuje zawartość spotkań (w tym czaty, zarejestrowane pliki i metadane) z konta powiększeń spotkań na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
+Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze spotkań zoomu do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Spotkania zoomu](https://globanet.com/zoom/), który jest skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie) i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość spotkań (w tym czaty, zarejestrowane pliki i metadane) z konta Spotkania zoomu na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 
-Po przechowywaniu danych spotkań powiększenia w skrzynkach pocztowych użytkowników można stosować funkcje zgodności usługi Microsoft 365, takie jak przechowywanie w związku z postępowaniem sądowym, zbierania elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania oraz zgodność komunikacji. Importowanie i archiwizowanie danych w programie Microsoft 365 za pomocą łącznika spotkań z powiększeniem może ułatwić organizacji zachowania zgodności z zasadami rządowymi i przepisami prawa.
+Po zapisaniu danych spotkań zoomu w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania oraz zgodność z komunikacją. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika Zoom Meetings ułatwia organizacji zachowanie zgodności z zasadami rządowymi i regulacyjnymi.
 
-## <a name="overview-of-archiving-zoom-meetings-data"></a>Omówienie archiwizowania danych spotkań z powiększeniem
+## <a name="overview-of-archiving-zoom-meetings-data"></a>Omówienie archiwizacji danych spotkań zoomu
 
-W poniższym o omówieniem wyjaśniono proces używania łącznika do archiwizowania danych spotkań powiększenia w Microsoft 365.
+W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania danych spotkania zoomu w Microsoft 365.
 
-![Przepływ pracy archiwizowania spotkań powiększenia.](../media/ZoomMeetingsConnectorWorkflow.png)
+![Powiększenie przepływu pracy archiwizacji spotkań.](../media/ZoomMeetingsConnectorWorkflow.png)
 
-1. Twoja organizacja współpracuje ze spotkaniami z powiększeniem, aby skonfigurować witrynę Spotkania z powiększeniem.
+1. Twoja organizacja współpracuje ze spotkaniami zoomu w celu skonfigurowania i skonfigurowania witryny Spotkania zoomu.
 
-2. Co 24 godziny elementy spotkania z widoku Spotkania z powiększeniem są kopiowane do witryny Veritas Merge1. Łącznik konwertuje także zawartość spotkań na format wiadomości e-mail.
+2. Raz na 24 godziny elementy spotkań ze spotkań zoomu są kopiowane do witryny Veritas Merge1. Łącznik konwertuje również zawartość spotkań na format wiadomości e-mail.
 
-3. Łącznik Powiększ spotkania tworzyć w Centrum zgodności platformy Microsoft 365, łączy się z usługą Veritas Merge1 każdego dnia i przesyła wiadomości o spotkaniach do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
+3. Łącznik Spotkania zoomu tworzony w portalu zgodności, codziennie łączy się z usługą Veritas Merge1 i przesyła komunikaty ze spotkań do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
 
-4. Łącznik zaim importuje przekonwertowane elementy spotkania do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości  Poczta e-mail i automatycznego mapowania użytkowników, jak to opisano w kroku 3. W skrzynkach pocztowych użytkowników jest tworzony nowy podfolder  w folderze Skrzynka odbiorcza o nazwie Powiększ spotkania, a elementy spotkania są importowane do tego folderu. Łącznik robi to przy użyciu wartości właściwości *Email* . Każdy element spotkania zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika spotkania.
+4. Łącznik importuje przekonwertowane elementy spotkania do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości *Poczta e-mail* i automatycznego mapowania użytkownika, zgodnie z opisem w kroku 3. Nowy podfolder w folderze Skrzynka odbiorcza o nazwie **Spotkania powiększenia** jest tworzony w skrzynkach pocztowych użytkownika, a elementy spotkania są importowane do tego folderu. Łącznik wykonuje to przy użyciu wartości właściwości *Poczta e-mail* . Każdy element spotkania zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika spotkania.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Utwórz konto korespondencji seryjnej Veritas merge1 dla łączników firmy Microsoft. Aby utworzyć to konto, skontaktuj się z [działem obsługi klienta firmy Veritas](https://globanet.com/ms-connectors-contact). Do tego konta zalogujesz się podczas tworzenia łącznika w kroku 1.
+- Utwórz konto veritas merge1 dla łączników firmy Microsoft. Aby utworzyć to konto, skontaktuj się z [pomocą techniczną veritas](https://globanet.com/ms-connectors-contact). Zalogujesz się do tego konta podczas tworzenia łącznika w kroku 1.
 
-- Uzyskaj nazwę użytkownika i hasło do konta funkcji Powiększenie i powiększenie Enterprise Twojej organizacji. Podczas konfigurowania łącznika Powiększ spotkania musisz zalogować się do tego konta w kroku 2.
+- Uzyskaj nazwę użytkownika i hasło dla konta Enterprise Zoom Business lub Zoom w organizacji. Podczas konfigurowania łącznika Spotkania zoomu musisz zalogować się do tego konta w kroku 2.
 
 - Utwórz następujące aplikacje w witrynie [Zoom Marketplace](https://marketplace.zoom.us):
 
@@ -51,54 +51,54 @@ W poniższym o omówieniem wyjaśniono proces używania łącznika do archiwizow
 
   - Aplikacja JWT
 
-  Po utworzeniu tych aplikacji platforma Powiększenie generuje zestaw unikatowych poświadczeń używanych do wygenerowania tokenów. Te tokeny są używane do uwierzytelniania łącznika podczas łączenia się z Twoim kontem powiększania i kopiuje elementy do witryny Scal1. Te tokeny będą używać podczas konfigurowania łącznika powiększenia w kroku 2.
+  Po utworzeniu tych aplikacji platforma Zoom generuje zestaw unikatowych poświadczeń używanych do generowania tokenów. Te tokeny służą do uwierzytelniania łącznika podczas nawiązywania połączenia z kontem zoomu i kopiowania elementów do witryny Merge1. Te tokeny będą używane podczas konfigurowania łącznika zoomu w kroku 2.
 
-  Aby uzyskać instrukcje krok po kroku dotyczące tworzenia aplikacji OAuth i JWT, zobacz [Podręcznik użytkownika scalania1 łączników innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
+  Aby uzyskać instrukcje krok po kroku dotyczące tworzenia aplikacji OAuth i JWT, zobacz [Merge1 Third-Party Connectors User Guide (Scal1 łączniki innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)).
 
-- Użytkownik, który utworzy łącznik Spotkania z powiększeniem w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi, który utworzy łącznik Spotkania zoomu w kroku 1 (i ukończy go w kroku 3) musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych usługi Veritas jest w publicznej wersji zapoznawczej GCC w środowisku danych Microsoft 365 chmurze dla instytucji rządowych Stanów Zjednoczonych. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Organizacji w systemach innych firm, które znajdują się poza infrastrukturą firmy Microsoft 365 i dlatego nie są objęte zobowiązaniami firmy Microsoft 365 w zakresie zgodności z przepisami i ochrony danych. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
-## <a name="step-1-set-up-the-zoom-meetings-connector"></a>Krok 1. Konfigurowanie łącznika Powiększ spotkania
+## <a name="step-1-set-up-the-zoom-meetings-connector"></a>Krok 1. Konfigurowanie łącznika Spotkania zoomu
 
-Pierwszym krokiem jest uzyskanie dostępu do łączników **danych** w Centrum zgodności platformy Microsoft 365 i utworzenie łącznika Spotkania powiększenia.
+Pierwszym krokiem jest uzyskanie dostępu do **łączników danych** w portalu zgodności i utworzenie łącznika Spotkania zoomu.
 
-1. Przejdź do, [https://compliance.microsoft.com](https://compliance.microsoft.com/) a następnie kliknij pozycję **Łączniki danychZoom** >  Spotkania.
+1. Przejdź do obszaru [https://compliance.microsoft.com](https://compliance.microsoft.com/) , a następnie kliknij pozycję **Łączniki danychZłącz** >  **spotkania**.
 
-2. Na stronie **opisowej produktu** Spotkania powiększenia kliknij pozycję **Dodaj łącznik**.
+2. Na stronie Opis produktu **Zoom Meetings** kliknij pozycję **Dodaj łącznik**.
 
-3. Na stronie **Warunki użytkowania usługi** kliknij pozycję **Zaakceptuj**.
+3. Na stronie **Warunki korzystania z usługi** kliknij pozycję **Akceptuj**.
 
 4. Wprowadź unikatową nazwę identyfikującą łącznik, a następnie kliknij przycisk **Dalej**.
 
-5. Zaloguj się do konta korespondencji seryjnej1, aby skonfigurować łącznik.
+5. Zaloguj się do konta merge1, aby skonfigurować łącznik.
 
-## <a name="step-2-configure-the-zoom-meetings-connector"></a>Krok 2. Konfigurowanie łącznika Spotkań z powiększeniem
+## <a name="step-2-configure-the-zoom-meetings-connector"></a>Krok 2. Konfigurowanie łącznika Spotkania zoomu
 
-Drugim krokiem jest skonfigurowanie łącznika Spotkania powiększenia w witrynie Scal1. Aby uzyskać więcej informacji na temat konfigurowania łącznika Spotkań z powiększeniem w witrynie Veritas Merge1, zobacz Przewodnik użytkownika dotyczący [scalania1 łączników innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
+Drugim krokiem jest skonfigurowanie łącznika Spotkania powiększenia w witrynie Merge1. Aby uzyskać więcej informacji na temat konfigurowania łącznika Zoom Meetings w witrynie Veritas Merge1, zobacz [Merge1 Third-Party Connectors User Guide (Scal1 łączniki innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)).
 
-Po kliknięciu **przycisku Zapisz & zakończ** zostanie **wyświetlona** strona Mapowanie użytkowników w kreatorze łączników w Centrum zgodności platformy Microsoft 365 stronie.
+Po kliknięciu **przycisku Zapisz & Zakończ** zostanie wyświetlona strona **Mapowanie użytkownika** w kreatorze łącznika w portalu zgodności.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Krok 3. Mapowanie użytkowników i ukończenie konfiguracji łącznika
 
-1. Na stronie **Mapowanie użytkowników zewnętrznych Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników.
+1. Na stronie **Mapowanie użytkowników zewnętrznych na Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników.
 
-   Elementy spotkań powiększenia zawierają właściwość o nazwie Adres *e-mail* , która zawiera adresy e-mail użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z Microsoft 365, elementy zostaną zaimportowane do skrzynki pocztowej tego użytkownika.
+   Elementy spotkania powiększenia obejmują właściwość o nazwie *Email* zawierającą adresy e-mail dla użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z użytkownikiem Microsoft 365, elementy są importowane do skrzynki pocztowej tego użytkownika
 
-2. Kliknij **przycisk** Dalej, przejrzyj ustawienia i przejdź do strony Łączniki danych, aby wyświetlić postęp procesu importowania nowego łącznika.
+2. Kliknij **przycisk Dalej**, przejrzyj ustawienia i przejdź do strony **Łączniki danych** , aby zobaczyć postęp procesu importowania nowego łącznika.
 
-## <a name="step-4-monitor-the-zoom-meetings-connector"></a>Krok 4. Monitorowanie łącznika Spotkań z powiększeniem
+## <a name="step-4-monitor-the-zoom-meetings-connector"></a>Krok 4. Monitorowanie łącznika Spotkania zoomu
 
-Po utworzeniu łącznika Spotkania z powiększeniem można sprawdzić stan łącznika w Centrum zgodności platformy Microsoft 365.
+Po utworzeniu łącznika Zoom Meetings możesz wyświetlić stan łącznika w portalu zgodności.
 
-1. Przejdź do łączników [https://compliance.microsoft.com](https://compliance.microsoft.com) **danych w lewym okienku narracji i** kliknij je.
+1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com) i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 
-2. Kliknij **kartę Łączniki** , a następnie wybierz **łącznik Spotkania powiększenia** , aby wyświetlić stronę wysuwaną. Ta strona zawiera właściwości i informacje o łączniku.
+2. Kliknij kartę **Łączniki** , a następnie wybierz łącznik **Powiększ spotkania** , aby wyświetlić stronę wysuwaną. Ta strona zawiera właściwości i informacje o łączniku.
 
-3. W **obszarze Stan łącznika ze** źródłem **kliknij link Pobierz** dziennik, aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera informacje o danych, które zostały zaimportowane do chmury firmy Microsoft.
+3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera informacje o danych zaimportowanych do chmury firmy Microsoft.
 
 ## <a name="known-issues"></a>Znane problemy
 
-- Obecnie importowanie załączników ani elementów większych niż 10 MB nie jest obsługuje. Obsługa większych elementów będzie dostępna w późniejszym terminie.
+- Obecnie nie obsługujemy importowania załączników ani elementów o rozmiarze większym niż 10 MB. Obsługa większych elementów będzie dostępna w późniejszym terminie.
 
-- Aby łącznik Powiększenia spotkania działał, należy włączyć nagrania podczas konfigurowania spotkań powiększenia.
+- Aby łącznik Spotkania zoomu działał, musisz włączyć nagrania podczas konfigurowania spotkań powiększenia.

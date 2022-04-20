@@ -25,93 +25,93 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
-description: Utwórz udostępnioną skrzynkę pocztową, aby umożliwić wielu użytkownikom w firmie udostępnianie odpowiedzialności za czytanie i odpowiadanie na wiadomości e-mail wysyłane na jeden adres.
-ms.openlocfilehash: f8a7f725e029021626bf408a3797ac6bfbb16215
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Utwórz udostępnioną skrzynkę pocztową, aby umożliwić wielu użytkownikom w firmie dzielenie się odpowiedzialnością za odczytywanie i odpowiadanie na wiadomości e-mail wysyłane na jeden adres.
+ms.openlocfilehash: 38e7e1c1371c83fd5b55105bbd91485e2b6c26a3
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011329"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915956"
 ---
 # <a name="create-a-shared-mailbox"></a>Tworzenie udostępnionej skrzynki pocztowej 
 
 > [!NOTE]
-> Jeśli Twoja organizacja korzysta z hybrydowego Exchange, do tworzenia udostępnionych skrzynek pocztowych i zarządzania nimi <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a> należy używać Exchange administracyjnego lokalnego centrum administracyjnego. Zobacz [Tworzenie udostępnionych skrzynek pocztowych w centrum Exchange administracyjnego.](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+> Jeśli Organizacja korzysta ze środowiska Exchange hybrydowego, do tworzenia udostępnionych skrzynek pocztowych i zarządzania nimi należy użyć lokalnego <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a>. Zobacz [Tworzenie udostępnionych skrzynek pocztowych w centrum administracyjnym Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
 >
-> Jeśli nie masz pewności, czy utworzyć udostępnioną skrzynkę pocztową, czy grupę Microsoft 365 dla usługi Outlook, zobacz Porównanie grup, aby uzyskać [](../create-groups/compare-groups.md) wskazówki. Pamiętaj, że obecnie nie jest możliwe migrowanie udostępnionej skrzynki pocztowej do Microsoft 365 grupy. Jeśli chcesz coś o tym wiedzieć, po prostu [przegłosuj tutaj](https://go.microsoft.com/fwlink/?linkid=871518).
+> Jeśli nie masz pewności, czy chcesz utworzyć udostępnioną skrzynkę pocztową, czy grupę Microsoft 365 dla Outlook, zobacz [Porównanie grup](../create-groups/compare-groups.md), aby uzyskać wskazówki. Należy pamiętać, że obecnie nie można migrować udostępnionej skrzynki pocztowej do grupy Microsoft 365. Jeśli jest to coś, czego chcesz, daj nam znać, [głosując tutaj](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Tworzenie udostępnionych skrzynek pocztowych jest łatwe. Dzięki nim grupa osób może monitorować wiadomości e-mail i wysyłać je ze wspólnego adresu e-mail, takiego jak info@contoso.com. Gdy osoba z grupy odpowie na wiadomość wysłaną do udostępnionej skrzynki pocztowej, utworzona przez nią wiadomość jest wysyłana z udostępnionej skrzynki pocztowej, a nie z indywidualnej skrzynki tej osoby.
 
 Udostępnione skrzynki pocztowe zawierają kalendarz udostępniony. Wiele małych firm lubi używać kalendarza udostępnionego jako miejsca, w którym wszyscy mogą wprowadzać swoje terminy. Jeśli na przykład masz trzech pracowników, którzy spotykają się z klientami, mogą oni wprowadzać swoje terminy w kalendarzu udostępnionym. W ten prosty sposób wszyscy zostają poinformowani, gdzie kto jest.
 
-Przed utworzeniem udostępnionej skrzynki pocztowej przeczytaj Informacje o udostępnionych skrzynkach [pocztowych](about-shared-mailboxes.md) , aby uzyskać więcej informacji.
+Przed utworzeniem udostępnionej skrzynki pocztowej przeczytaj [informacje o udostępnionych skrzynkach pocztowych](about-shared-mailboxes.md) , aby uzyskać więcej informacji.
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej czynności opisanej w tym temacie, rozważ współpracę z specjalistą [ds. małej firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy możecie uzyskać całodobowy dostęp do małych ekspertów biznesowych, gdy rozwijasz swoją firmę, od dołączania do codziennego użytku.
+> Jeśli potrzebujesz pomocy dotyczących kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małej firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy możecie uzyskać całodobowy dostęp do specjalistów ds. małej firmy, gdy rozwijasz swoją firmę, od momentu dołączenia po codzienne użytkowanie.
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Tworzenie udostępnionej skrzynki pocztowej i dodawanie członków
   
-1. Zaloguj się przy użyciu konta administratora globalnego lub Exchange konta administratora. Jeśli zostanie wyświetlony komunikat "Nie masz uprawnień dostępu do tej strony lub wykonywania tej czynności", oznacza **to**, że nie jesteś administratorem. 
+1. Zaloguj się przy użyciu konta administratora globalnego lub konta administratora Exchange. Jeśli zostanie wyświetlony komunikat "**Nie masz uprawnień dostępu do tej strony lub wykonasz tę akcję**", nie jesteś administratorem. 
 
 ::: moniker range="o365-worldwide"
 
-2. W centrum administracyjnym przejdź do strony skrzynki **Teams & udostępnione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">skrzynki pocztowe grup</a>.
+2. W centrum administracyjnym przejdź do strony udostępnione <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">skrzynki pocztowe</a> **Teams & Grupy**\>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-2. W centrum [administracyjnym](https://go.microsoft.com/fwlink/p/?linkid=850627) przejdź do strony Teams & **grupy Udostępnione** \> **skrzynki pocztowe**.
+2. W [centrum administracyjnym](https://go.microsoft.com/fwlink/p/?linkid=850627) przejdź do strony udostępnione **skrzynki pocztowe** **grup** \> Teams &.
 
 ::: moniker-end
     
-3. Na stronie **Udostępnione skrzynki pocztowe** wybierz pozycję **+ Dodaj udostępnioną skrzynkę pocztową**. Wprowadź nazwę udostępnionej skrzynki pocztowej. Wybiera adres e-mail, ale w razie potrzeby możesz go edytować.
+3. Na stronie **Udostępnione skrzynki pocztowe** wybierz pozycję **+ Dodaj udostępnioną skrzynkę pocztową**. Wprowadź nazwę udostępnionej skrzynki pocztowej. Spowoduje to wybranie adresu e-mail, ale w razie potrzeby można go edytować.
     
     ![Name your shared mailbox.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. Wybierz **pozycję Zapisz zmiany**. Może upłynąć kilka minut, zanim będzie możliwe dodanie członków.
+4. Wybierz pozycję **Zapisz zmiany**. Może upłynąć kilka minut, zanim będzie możliwe dodanie członków.
 
-5. W **obszarze Następne kroki** wybierz **pozycję Dodaj członków do tej skrzynki pocztowej**. Członkowie to osoby, które będą mogły wyświetlać pocztę przychodzącą do tej udostępnionej skrzynki pocztowej oraz wychodzące odpowiedzi.
+5. W obszarze **Następne kroki** wybierz pozycję **Dodaj członków do tej skrzynki pocztowej**. Członkowie to osoby, które będą mogły wyświetlać pocztę przychodzącą do tej udostępnionej skrzynki pocztowej oraz wychodzące odpowiedzi.
 
    ![Wybierz pozycję Dodaj członków.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. Wybierz przycisk **+Dodaj** członków. Umieść znacznik wyboru obok osób, które mają korzystać z tej udostępnionej skrzynki pocztowej, a następnie wybierz pozycję **Zapisz**.
+6. Wybierz przycisk **+Dodaj członków** . Umieść znacznik wyboru obok osób, które mają korzystać z tej udostępnionej skrzynki pocztowej, a następnie wybierz pozycję **Zapisz**.
 
    ![Przypisz członków do udostępnionej skrzynki pocztowej.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Wybierz pozycję **Zamknij**.
 
-Masz udostępnioną skrzynkę pocztową i zawiera ona kalendarz udostępniony. Przejdź do następnego kroku: [Blokowanie logowania dla konta udostępnionej skrzynki pocztowej](#block-sign-in-for-the-shared-mailbox-account).
+Masz udostępnioną skrzynkę pocztową i zawiera ona kalendarz udostępniony. Przejdź do następnego kroku: [Blokuj logowanie do udostępnionego konta skrzynki pocztowej](#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="which-permissions-should-you-use"></a>Jakich uprawnień należy użyć?
 
-Z udostępnioną skrzynką pocztową można używać następujących uprawnień:
+Możesz użyć następujących uprawnień w udostępnionej skrzynce pocztowej:
 
-- **Pełny dostęp**: Uprawnienia Pełny dostęp umożliwiają użytkownikowi otwieranie udostępnionej skrzynki pocztowej i działanie jako właściciel tej skrzynki pocztowej. Po uzyskiwaniu dostępu do udostępnionej skrzynki pocztowej użytkownik może tworzyć elementy kalendarza, czytać, wyświetlać, usuwać i zmieniać wiadomości e-mail oraz tworzyć zadania i kontakty kalendarza. Użytkownik z uprawnieniami Pełny dostęp nie może jednak wysyłać wiadomości e-mail z udostępnionej skrzynki pocztowej, chyba że ma również uprawnienia Wyślij jako lub Wyślij w imieniu.
+- **Pełny dostęp**: uprawnienie Pełny dostęp umożliwia użytkownikowi otwarcie udostępnionej skrzynki pocztowej i pełnienie roli właściciela tej skrzynki pocztowej. Po uzyskaniu dostępu do udostępnionej skrzynki pocztowej użytkownik może tworzyć elementy kalendarza, odczytywać, wyświetlać, usuwać i zmieniać wiadomości e-mail oraz tworzyć zadania i kontakty kalendarza. Użytkownik z uprawnieniami Pełny dostęp nie może jednak wysyłać wiadomości e-mail z udostępnionej skrzynki pocztowej, chyba że ma również uprawnienia Wyślij jako lub Wyślij w imieniu.
 
-- **Wyślij jako**: Uprawnienie Wyślij jako umożliwia użytkownikowi personifikowanie udostępnionej skrzynki pocztowej podczas wysyłania poczty. Jeśli na przykład Kateina zaloguje się do udostępnionej skrzynki pocztowej Dział marketingu i wyśle wiadomość e-mail, będzie ona wyglądać tak, jakby została wysłana przez dział marketingu.
+- **Wyślij jako**: uprawnienie Wyślij jako umożliwia użytkownikowi personifikowanie udostępnionej skrzynki pocztowej podczas wysyłania wiadomości e-mail. Jeśli na przykład Katerina zaloguje się do działu marketingu udostępnionej skrzynki pocztowej i wyśle wiadomość e-mail, będzie ona wyglądać tak, jakby dział marketingu wysłał wiadomość e-mail.
 
-- **Wyślij w imieniu**: Uprawnienie Wyślij w imieniu umożliwia użytkownikowi wysyłanie wiadomości e-mail w imieniu udostępnionej skrzynki pocztowej. Jeśli na przykład Jan zaloguje się do udostępnionej skrzynki pocztowej Recepcja budynku 32 i wyśle wiadomość e-mail, będzie ona wyglądać tak, jakby została wysłana przez użytkownika "Jan w imieniu recepcjonistki budynku 32". Za pomocą programu EAC nie można udzielać uprawnień Wyślij w imieniu. Należy użyć polecenia cmdlet **Set-Mailbox** z parametrem _GrantSendonBehalf_ .
+- **Wyślij w imieniu**: uprawnienie Wyślij w imieniu umożliwia użytkownikowi wysyłanie wiadomości e-mail w imieniu udostępnionej skrzynki pocztowej. Jeśli na przykład Jan zaloguje się do udostępnionego budynku recepcji skrzynki pocztowej 32 i wyśle wiadomość e-mail, będzie to wyglądać tak, jakby wiadomość została wysłana przez "Jana w imieniu budynku recepcji 32". Nie można użyć EAC do udzielenia uprawnień Wyślij w imieniu. Należy użyć polecenia cmdlet **Set-Mailbox** z parametrem _GrantSendonBehalf_ .
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Edytowanie delegowania udostępnionej skrzynki pocztowej za pomocą Centrum administracyjnego programu Exchange
 
-1. W centrum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administracyjnego</a> przejdź do **pozycji Adresaci udostępniani**\>. Wybierz udostępnioną skrzynkę pocztową, a następnie wybierz **pozycję Edytuj** ![ikonę Edytuj](../../media/ITPro-EAC-EditIcon.png).
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> przejdź do **obszaru Skrzynki pocztowe** **adresatów**\>. Wybierz udostępnioną skrzynkę pocztową, a następnie wybierz pozycję **Edytuj** ![ikonę Edycja.](../../media/ITPro-EAC-EditIcon.png)
 
-2. Wybierz pozycję **Delegowanie skrzynki pocztowej**.
+2. W obszarze **Uprawnienia skrzynki pocztowej** wybierz pozycję **Zarządzaj delegowaniem skrzynki pocztowej**.
 
-3. Aby przyznać lub usunąć uprawnienia Pełny dostęp i Wyślij jako, wybierz pozycję **Dodaj ikonę** ![Dodaj.](../../media/ITPro-EAC-AddIcon.png) lub **usuń** ![ikonę Usuń](../../media/ITPro-EAC-RemoveIcon.gif) , a następnie wybierz użytkowników, którym chcesz przyznać uprawnienia.
+3. Aby udzielić lub usunąć uprawnienia Pełny dostęp i Wyślij jako, wybierz pozycję **Dodaj** ![ikonę.](../../media/ITPro-EAC-AddIcon.png) lub **Usuń** ![ikonę](../../media/ITPro-EAC-RemoveIcon.gif) Usuń, a następnie wybierz użytkowników, do których chcesz udzielić uprawnień.
 
    > [!NOTE]
    > Uprawnienia Pełny dostęp umożliwiają użytkownikowi otwieranie skrzynki pocztowej, a także tworzenie i modyfikowanie zawartych w niej elementów. Uprawnienia Wyślij jako umożliwiają każdej osobie innej niż właściciel skrzynki pocztowej wysyłanie wiadomość e-mail z tej udostępnionej skrzynki pocztowej. Oba uprawnienia są wymagane do obsługi udostępnionej skrzynki pocztowej.
 
-4. Wybierz **pozycję Zapisz** , aby zapisać zmiany.
+4. Wybierz pozycję **Zapisz** , aby zapisać zmiany.
 
 
-## <a name="block-sign-in-for-the-shared-mailbox-account"></a>Blokowanie logowania do konta udostępnionej skrzynki pocztowej
+## <a name="block-sign-in-for-the-shared-mailbox-account"></a>Blokuj logowanie do udostępnionego konta skrzynki pocztowej
 
-Każda udostępniona skrzynka pocztowa ma odpowiednie konto użytkownika. Zwróć uwagę, że podczas tworzenia udostępnionej skrzynki pocztowej nie poproszono Cię o podanie hasła? Konto ma hasło, ale jest generowane przez system (nieznany). Nie musisz logować się do udostępnionej skrzynki pocztowej przy użyciu tego konta.
+Każda udostępniona skrzynka pocztowa ma odpowiednie konto użytkownika. Zwróć uwagę, że podczas tworzenia udostępnionej skrzynki pocztowej nie poproszono Cię o podanie hasła? Konto ma hasło, ale jest generowane przez system (nieznane). Nie należy używać konta do logowania się do udostępnionej skrzynki pocztowej.
 
-Co jednak zrobić, jeśli administrator po prostu zresetuje hasło do konta użytkownika udostępnionej skrzynki pocztowej? A co w przypadku uzyskania przez atakującego dostępu do poświadczeń konta udostępnionej skrzynki pocztowej? Dzięki temu konto użytkownika może logować się do udostępnionej skrzynki pocztowej i wysyłać wiadomości e-mail. Aby temu zapobiec, musisz zablokować logowanie dla konta skojarzonego z udostępnioną skrzynką pocztową.
+Ale co zrobić, jeśli administrator po prostu zresetował hasło udostępnionego konta użytkownika skrzynki pocztowej? A co, jeśli osoba atakująca uzyska dostęp do udostępnionych poświadczeń konta skrzynki pocztowej? Pozwoliłoby to kontu użytkownika zalogować się do udostępnionej skrzynki pocztowej i wysłać wiadomość e-mail. Aby temu zapobiec, musisz zablokować logowanie do konta skojarzonego z udostępnioną skrzynką pocztową.
 
 ::: moniker range="o365-worldwide"
 
@@ -124,22 +124,22 @@ Co jednak zrobić, jeśli administrator po prostu zresetuje hasło do konta uży
 1. W centrum administracyjnym przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktywni użytkownicy</a>.
 ::: moniker-end
 
-2. Na liście kont użytkowników znajdź konto dla udostępnionej skrzynki pocztowej (na przykład zmień filtr na **Nielicencjonowani użytkownicy**).
+2. Na liście kont użytkowników znajdź konto udostępnionej skrzynki pocztowej (na przykład zmień filtr na **Nielicencjonowani użytkownicy**).
 
-3. Wybierz użytkownika, aby otworzyć jego okienko właściwości, a  ![następnie wybierz ikonę Zablokuj tego użytkownika Zrzut ekranu: ikona Zablokuj tego użytkownika.](../../media/block-user-icon.png)
+3. Wybierz użytkownika, aby otworzyć okienko właściwości, a następnie wybierz ikonę ![**Blokuj tego użytkownika** Zrzut ekranu przedstawiający ikonę Blokuj tego użytkownika.](../../media/block-user-icon.png)
 
    > [!NOTE]
-   > Jeśli konto jest już **zablokowane, u** góry zostanie wyświetlone menu Logowanie zablokowane, a na ikonie będzie wyświetlany odczyt **Odblokuj tego użytkownika**.
+   > Jeśli konto jest już zablokowane, **zablokowane logowanie zostanie wyświetlone** u góry, a ikona będzie odczytywać polecenie **Odblokuj tego użytkownika**.
 
-4. W **okienku Zablokować tego użytkownika?** **wybierz pozycję** Zablokuj logowanie się użytkownika, a następnie wybierz pozycję **Zapisz zmiany**.
+4. W okienku **Blokuj tego użytkownika?** wybierz pozycję **Blokuj logowanie użytkownika**, a następnie wybierz pozycję **Zapisz zmiany**.
 
-Aby uzyskać instrukcje dotyczące blokowania logowania dla kont przy użyciu programu PowerShell usługi Azure AD (w tym wielu kont jednocześnie), zobacz Blokowanie kont użytkowników za [pomocą programu Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
+Aby uzyskać instrukcje dotyczące blokowania logowania dla kont przy użyciu programu Azure AD PowerShell (w tym wielu kont w tym samym czasie), zobacz [Blokowanie kont użytkowników za pomocą programu Office 365 programu PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>Dodawanie udostępnionej skrzynki pocztowej do programu Outlook
 
-Jeśli w firmie włączono automatyczne mapowanie (domyślnie większość osób korzysta z tej funkcji), udostępniona skrzynka pocztowa pojawi się automatycznie w aplikacji usługi Outlook użytkownika po zamknięciu i ponownym uruchomieniu przez nich Outlook. 
+Jeśli w twojej firmie włączono automatyczne aplikacje (domyślnie większość osób to robi), udostępniona skrzynka pocztowa zostanie automatycznie wyświetlona w aplikacji Outlook użytkownika po zamknięciu i ponownym uruchomieniu Outlook. 
 
-Automatyczne mapowanie ustawia się dla skrzynki pocztowej użytkownika, nie dla udostępnionej skrzynki pocztowej. Oznacza to, że jeśli spróbujesz zarządzać tym, kto ma dostęp do udostępnionej skrzynki pocztowej, za pomocą grupy zabezpieczeń, automatyczne mapowanie nie będzie działać. Jeśli chcesz używać automatycznego mapowania, musisz jawnie przypisać uprawnienia. Automatyczne mapowanie jest domyślnie włączone. Aby dowiedzieć się, jak je wyłączyć, zobacz [Usuwanie automatycznego mapowania dla udostępnionej skrzynki pocztowej](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox).
+Automatyczne mapowanie ustawia się dla skrzynki pocztowej użytkownika, nie dla udostępnionej skrzynki pocztowej. Oznacza to, że jeśli spróbujesz zarządzać tym, kto ma dostęp do udostępnionej skrzynki pocztowej, za pomocą grupy zabezpieczeń, automatyczne mapowanie nie będzie działać. Jeśli chcesz używać automatycznego mapowania, musisz jawnie przypisać uprawnienia. Automatyczne aplikacje są domyślnie włączone. Aby dowiedzieć się, jak go wyłączyć, zobacz [Remove automapping for a shared mailbox (Usuwanie automappingu dla udostępnionej skrzynki pocztowej](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox)).
 
 Aby dowiedzieć się więcej o udostępnionych skrzynkach pocztowych w Outlook, zobacz:
 
@@ -147,7 +147,7 @@ Aby dowiedzieć się więcej o udostępnionych skrzynkach pocztowych w Outlook, 
 
 - <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Dodawanie udostępnionej skrzynki pocztowej do aplikacji Outlook w sieci Web</a>
 
-- <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Dodawanie udostępnionej skrzynki pocztowej do Outlook urządzenia przenośnego</a>
+- <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Dodawanie udostępnionej skrzynki pocztowej do Outlook mobile</a>
 
 - <a href="https://support.microsoft.com/office/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2" target="_blank">Otwieranie folderu udostępnionego lub skrzynki pocztowej w programie Outlook dla komputerów Mac</a>
 
@@ -155,27 +155,27 @@ Aby dowiedzieć się więcej o udostępnionych skrzynkach pocztowych w Outlook, 
 
 ## <a name="use-a-shared-mailbox-on-a-mobile-device-phone-or-tablet"></a>Używanie udostępnionej skrzynki pocztowej na urządzeniu przenośnym (telefonie lub tablecie)
 
-Udostępnioną skrzynkę pocztową można uzyskać na urządzeniu przenośnym na dwa sposoby:
-- Dodaj udostępnioną skrzynkę pocztową <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">w aplikacji Outlook dla systemu iOS</a> lub aplikacji mobilnej <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Outlook dla systemu Android</a>. 
+Dostęp do udostępnionej skrzynki pocztowej na urządzeniu przenośnym można uzyskać na dwa sposoby:
+- Dodaj udostępnioną skrzynkę pocztową w <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">Outlook dla aplikacji dla systemu iOS</a> lub <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Outlook dla aplikacji mobilnej systemu Android</a>. 
     
-    Aby uzyskać instrukcje, <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">zobacz Dodawanie udostępnionej skrzynki pocztowej do Outlook urządzenia przenośnego</a>.
+    Aby uzyskać instrukcje, zobacz <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Dodawanie udostępnionej skrzynki pocztowej do Outlook urządzenia przenośnego</a>.
 
 - Otwórz przeglądarkę, zaloguj się, a następnie przejdź do Outlook w sieci Web. Z aplikacji Outlook w sieci Web można uzyskać dostęp do udostępnionej skrzynki pocztowej.
 
-    Aby uzyskać instrukcje, <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">zobacz Dodawanie udostępnionej skrzynki pocztowej do Outlook w sieci Web</a>.
+    Aby uzyskać instrukcje, zobacz <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Dodawanie udostępnionej skrzynki pocztowej do Outlook w sieci Web</a>.
     
 > [!NOTE]
-> Udostępnioną skrzynkę pocztową można dodawać tylko do aplikacji Outlook dla systemu iOS lub aplikacji Outlook dla urządzeń przenośnych z systemem Android
+> Udostępnioną skrzynkę pocztową można dodać tylko do Outlook dla aplikacji systemu iOS lub Outlook dla aplikacji mobilnej systemu Android
 
 ## <a name="use-the-shared-calendar"></a>Korzystanie z kalendarza udostępnionego
 
-Podczas tworzenia udostępnionej skrzynki pocztowej automatycznie utworzono kalendarz udostępniony. Wolimy kalendarz udostępnionej skrzynki pocztowej od kalendarza programu SharePoint do śledzenia terminów i tego, gdzie przebywają poszczególne osoby. Kalendarz udostępniony jest zintegrowany Outlook i jest znacznie łatwiejszy w użyciu niż kalendarz SharePoint kalendarzy.
+Po utworzeniu udostępnionej skrzynki pocztowej automatycznie utworzono kalendarz udostępniony. Wolimy kalendarz udostępnionej skrzynki pocztowej od kalendarza programu SharePoint do śledzenia terminów i tego, gdzie przebywają poszczególne osoby. Kalendarz udostępniony jest zintegrowany z Outlook i jest znacznie łatwiejszy w użyciu niż kalendarz SharePoint.
 
 1. W aplikacji Outlook przejdź do widoku kalendarza i wybierz udostępnioną skrzynkę pocztową.
 
 2. Po wprowadzeniu terminów wszystkie osoby będące członkami udostępnionej skrzynki pocztowej będą je widzieć.
 
-3. Każdy członek udostępnionej skrzynki pocztowej może tworzyć i wyświetlać terminy oraz zarządzać nimi w kalendarzu, tak jak w przypadku swoich osobistych terminów. Wszystkie osoby, które są członkami udostępnionej skrzynki pocztowej, mogą zobaczyć wprowadzone przez siebie zmiany w kalendarzu udostępnionym.
+3. Każdy członek udostępnionej skrzynki pocztowej może tworzyć i wyświetlać terminy w kalendarzu oraz zarządzać nimi, tak jak w przypadku spotkań osobistych. Każdy, kto jest członkiem udostępnionej skrzynki pocztowej, może zobaczyć zmiany w kalendarzu udostępnionym.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 

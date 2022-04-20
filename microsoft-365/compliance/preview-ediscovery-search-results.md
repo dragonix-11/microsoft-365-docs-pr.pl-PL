@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie podglądu wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
+title: Podgląd wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,55 +19,55 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Wyświetl podgląd przykładowych wyników zwróconych przez wyszukiwanie zawartości lub podstawowe wyszukiwanie zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.
-ms.openlocfilehash: af0811d0c442d6f064fd336d4261d1f7b2337dc8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Wyświetl podgląd przykładu wyników zwróconych przez wyszukiwanie zawartości lub wyszukiwanie zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w portalu zgodności usługi Microsoft Purview.
+ms.openlocfilehash: 83779ad333d6944b65b92b2032d46b3eaa016479
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985104"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934714"
 ---
-# <a name="preview-ediscovery-search-results"></a>Podgląd wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
+# <a name="preview-ediscovery-search-results"></a>Eksportowanie wyników wyszukiwania w ramach zbierania elektronicznych materiałów dowodowych
 
-Po uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego ze sprawą Core eDiscovery możesz wyświetlić podgląd przykładowych wyników zwróconych przez wyszukiwanie. Wyświetlanie podglądu elementów zwróconych przez zapytanie wyszukiwania pomaga ustalić, czy wyszukiwanie zwraca spodziewane wyniki, czy też musisz zmienić zapytanie wyszukiwania i ponownie uruchomić wyszukiwanie.
+Po uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) możesz wyświetlić podgląd przykładu wyników zwróconych przez wyszukiwanie. Podgląd elementów zwracanych przez zapytanie wyszukiwania może pomóc w określeniu, czy wyszukiwanie zwraca wyniki, których oczekujesz, lub jeśli chcesz zmienić zapytanie wyszukiwania i ponownie uruchomić wyszukiwanie.
 
-Aby wyświetlić podgląd przykładowych wyników wyszukiwania:
+Aby wyświetlić podgląd przykładu wyników zwróconych przez wyszukiwanie:
 
-1. W Centrum zgodności platformy Microsoft 365 przejdź do strony Przeszukiwanie zawartości lub Podstawowej sprawy zbierania elektronicznych materiałów dowodowych.
+1. W portalu zgodności usługi Microsoft Purview przejdź do strony wyszukiwania zawartości lub zgłoszenia zbierania elektronicznych materiałów dowodowych (Standard).
 
-2. Wybierz pozycję wyszukaj, aby wyświetlić stronę wysuwu.
+2. Wybierz pozycję Wyszukaj, aby wyświetlić stronę wysuwaną.
 
-3. U dołu strony wysuwu kliknij pozycję **Przejrzyj przykład**.
+3. W dolnej części strony wysuwanej kliknij pozycję **Przejrzyj przykład**.
 
-   ![Kliknij pozycję Przejrzyj przykład na wysuwana stronie, aby wyświetlić podgląd wyników.](../media/PreviewSearchResults1.png)
+   ![Kliknij pozycję Przejrzyj przykład na stronie wysuwanej, aby wyświetlić podgląd wyników.](../media/PreviewSearchResults1.png)
 
-   Zostanie wyświetlona strona zawierająca przykładowe wyniki wyszukiwania.
+   Zostanie wyświetlona strona zawierająca przykład wyników wyszukiwania.
 
-4. Zaznacz element, aby wyświetlić jego zawartość w okienku odczytu.
+4. Wybierz element, aby wyświetlić jego zawartość w okienku odczytu.
 
-   ![Wyświetlanie podglądu elementów w okienku odczytu.](../media/PreviewSearchResults2.png)
+   ![Podgląd elementów w okienku odczytu.](../media/PreviewSearchResults2.png)
 
-   Na poprzednim zrzucie ekranu zwróć uwagę, że słowa kluczowe z zapytania wyszukiwania są wyróżniane podczas wyświetlania podglądu elementów.
+   Na poprzednim zrzucie ekranu zwróć uwagę, że słowa kluczowe z zapytania wyszukiwania są wyróżnione podczas podglądu elementów.
 
-## <a name="how-the-search-result-samples-are-selected"></a>Jak wybrano przykłady wyników wyszukiwania
+## <a name="how-the-search-result-samples-are-selected"></a>Wybieranie przykładów wyników wyszukiwania
 
-Aby wyświetlić podgląd, dostępnych jest maksymalnie 1000 losowo wybranych elementów. Oprócz losowego wyboru elementy dostępne do podglądu muszą również spełniać następujące kryteria:
+Do wyświetlenia podglądu jest dostępnych maksymalnie 1000 losowo wybranych elementów. Oprócz losowego wybierania elementy dostępne w wersji zapoznawczej muszą również spełniać następujące kryteria:
 
-- Można wyświetlić podgląd maksymalnie 100 elementów z jednej lokalizacji zawartości (skrzynki pocztowej lub witryny). Oznacza to, że do podglądu może być dostępnych mniej niż 1000 elementów. Jeśli na przykład podczas przeszukiwania czterech skrzynek pocztowych zostanie zwracanych 1500 szacowanych elementów, do podglądu będzie dostępnych tylko 400 elementów, ponieważ można wyświetlić podgląd tylko 100 elementów z każdej skrzynki pocztowej.
+- Można wyświetlić podgląd maksymalnie 100 elementów z jednej lokalizacji zawartości (skrzynki pocztowej lub witryny). Oznacza to, że może być dostępnych mniej niż 1000 elementów w wersji zapoznawczej. Jeśli na przykład wyszukasz cztery skrzynki pocztowe, a wyszukiwanie zwróci 1500 szacowanych elementów, tylko 400 będzie dostępnych w wersji zapoznawczej, ponieważ można wyświetlić podgląd tylko 100 elementów z każdej skrzynki pocztowej.
 
-- W przypadku elementów skrzynki pocztowej podgląd jest dostępny tylko w przypadku wiadomości e-mail. Nie można wyświetlić podglądu elementów, takich jak zadania, elementy kalendarza i kontakty.
+- W przypadku elementów skrzynki pocztowej tylko wiadomości e-mail są dostępne w wersji zapoznawczej. Nie można wyświetlić podglądu elementów, takich jak zadania, elementy kalendarza i kontakty.
 
-- W przypadku elementów witryny do podglądu są dostępne tylko dokumenty. Nie można wyświetlić podglądu elementów, takich jak foldery, listy lub załączniki listy.
+- W przypadku elementów witryny tylko dokumenty są dostępne w wersji zapoznawczej. Nie można wyświetlić podglądu elementów, takich jak foldery, listy lub załączniki listy.
 
-## <a name="file-types-supported-when-previewing-search-results"></a>Typy plików obsługiwane podczas wyświetlania podglądu wyników wyszukiwania
+## <a name="file-types-supported-when-previewing-search-results"></a>Typy plików obsługiwane podczas podglądu wyników wyszukiwania
 
-W okienku podglądu można wyświetlać podgląd obsługiwanych typów plików. Jeśli typ pliku nie jest obsługiwany, musisz pobrać kopię pliku na komputer lokalny (klikając pozycję **Pobierz oryginalny element**). W przypadku stron sieci Web aspx adres URL strony jest uwzględniany, ale możesz nie mieć uprawnień dostępu do tej strony. Elementy nieindeksowane nie są dostępne do wyświetlania podglądu.
+W okienku podglądu można wyświetlić podgląd obsługiwanych typów plików. Jeśli typ pliku nie jest obsługiwany, musisz pobrać kopię pliku na komputer lokalny (klikając pozycję **Pobierz oryginalny element**). W przypadku stron sieci Web aspx adres URL strony jest uwzględniany, ale możesz nie mieć uprawnień dostępu do strony. Elementy z systemem Unindexed nie są dostępne do podglądu.
 
-Następujące typy plików są obsługiwane i można wyświetlać ich podgląd w okienku wyników wyszukiwania.
+Następujące typy plików są obsługiwane i można je wyświetlić w okienku wyników wyszukiwania.
   
 - .txt, .html, mhtml
 
-- eml
+- .eml
 
 - .doc, .docx, docm
 
@@ -75,8 +75,8 @@ Następujące typy plików są obsługiwane i można wyświetlać ich podgląd w
 
 - .pdf
 
-Obsługiwane są również następujące typy kontenerów plików. W okienku podglądu można wyświetlić listę plików w kontenerze.
+Obsługiwane są również następujące typy kontenerów plików. Listę plików w kontenerze można wyświetlić w okienku podglądu.
   
 - .zip
 
-- gzip
+- .gzip

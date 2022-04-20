@@ -1,5 +1,5 @@
 ---
-title: Decyzja oparta na wynikach w programie Advanced eDiscovery
+title: Decyzja oparta na wynikach z zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: Dowiedz się, jak karta Advanced eDiscovery udostępnia dane, które mogą pomóc w ustaleniu poprawnego rozmiaru zestawu reenzentów plików sprawy.
+description: Dowiedz się, jak karta Zdecyduj w usłudze eDiscovery (Premium) udostępnia dane, które mogą pomóc w określeniu prawidłowego rozmiaru zestawu przeglądów plików sprawy.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32682690c6febac247d67e3b78f56d1f71b9a2fb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6c8759db2445b8d98c47cc1103deda058d2f3508
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988362"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932425"
 ---
-# <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>Decyzje oparte na wynikach z istotności w Advanced eDiscovery
+# <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Decyzje oparte na istotności skutkują zbierania elektronicznych materiałów dowodowych (Premium)
   
-W module Istotność w programie Advanced eDiscovery na karcie Podejmowanie decyzji przedstawiono dodatkowe informacje dotyczące wyświetlania i używania statystyk dotyczących decyzji w celu określenia rozmiaru zestawu przeglądanych plików sprawy.
+W module Istotność w usłudze eDiscovery (Premium) karta Zdecyduj zawiera dodatkowe informacje dotyczące wyświetlania i używania statystyk dotyczących podejmowania decyzji w celu określenia rozmiaru zestawu przeglądów plików sprawy.
   
 ## <a name="using-the-decide-tab"></a>Korzystanie z karty Zdecyduj
 
@@ -34,20 +34,20 @@ W module Istotność w programie Advanced eDiscovery na karcie Podejmowanie decy
   
 Ta karta zawiera następujące składniki:
   
-- **Problem**: W tym miejscu możesz wybrać z listy problem, który cię interesuje.
+- **Problem**: W tym miejscu możesz wybrać interesujący cię problem z listy.
 
-- **Współczynnik odwołania recenzji**: Porównanie wyników Advanced eDiscovery na podstawie wyników istotności. Punkt odcięty na wykresie reprezentuje procent plików do przejrzenia zamapowany na wynik Istotności. Jest on stosowany w fazie Test istotności i jako próg eksportu dla wyników. Domyślnym punktem odciętym dla liczby plików do przejrzenia jest punkt, w którym jest optymalna równowaga między odwołaniami i dokładnością. Rzeczywisty punkt odcięty powinien zostać określony przez użytkownika w zależności od celów oraz kompromisu kosztowego (%review) i ryzyka (%odwołania). Za pomocą suwaka możesz dostosować punkt odcięty i zobaczyć wpływ tej zmiany na wykres i parametry, dostosować procent pobierania odpowiednich plików i przed podjęciem decyzji.
+- **Współczynnik recenzowania i wycofywania**: porównanie przeglądu zbierania elektronicznych materiałów dowodowych (Premium) zgodnie z wynikami istotności. Punkt odcięcia na wykresie reprezentuje procent plików do przejrzenia, zamapowany na wynik istotności. Jest to używane w fazie testu istotności i jako próg eksportu na potrzeby uboju. Domyślnym punktem odcięcia dla liczby plików do przejrzenia jest punkt, w którym równowaga między odwołaniem a dokładnością jest optymalna. Rzeczywisty punkt odcięcia powinien być określany przez użytkownika w zależności od celów, kompromisu kosztowego (%review) i ryzyka (%recall). Za pomocą suwaka można dostosować punkt odcięcia i zobaczyć wpływ na wykres i parametry, podczas dostosowywania procentu odpowiednich plików do pobrania i przed zweryfikowaniem decyzji.
 
-- **Parametry**: Przeglądanie, Odwoływanie, Następne parametry dotyczące kosztów całkowitych i Następne są skumulowaną statystyką obliczoną dla zbioru recenzji dla całej sprawy. Definicje tych parametrów są następujące:
+- **Parametry**: Przejrzyj, Przywołuj, Następne odpowiednie i Łączne parametry kosztu to skumulowane statystyki obliczeniowe dotyczące zestawu przeglądów w odniesieniu do kolekcji dla całego przypadku. Definicje tych parametrów są następujące:
 
-  - **Recenzja**: Procent plików do przejrzenia na podstawie tego odciętych plików.
+  - **Przegląd**: Procent plików do przejrzenia na podstawie tego odcięcia.
 
-  - **Odwołaj**: Procent odpowiednich plików w zestawie recenzji.
+  - **Przypomnij sobie**: Procent odpowiednich plików w zestawie przeglądów.
 
-  - **Kolejne istotne**: Koszt przeglądania i identyfikowania innego odpowiedniego pliku, który nie znajduje się obecnie w zestawie recenzji.
+  - **Następne istotne**: Koszt przeglądania i identyfikowania innego odpowiedniego pliku, który nie znajduje się obecnie w zestawie przeglądów.
 
-  - **Łączny koszt**: koszt przeglądania tej wartości procentowej plików sprawy. Ustawienia parametru koszt mogą zostać określone przez menedżera sprawy.
+  - **Całkowity koszt**: koszt przeglądania tego procentu plików sprawy. Ustawienia parametrów kosztu mogą być ustawiane przez menedżera spraw.
 
-  - **Rozkład według istotności**: Pliki na ciemnoszarym ekranie po lewej stronie znajdują się poniżej wyniku odciętych. Etykietka narzędzia wyświetla wynik istotności i powiązaną wartość procentową plików w zestawie recenzji względem łącznych plików.
+  - **Rozkład według wskaźnika istotności**: Pliki na ciemnoszarym ekranie po lewej stronie znajdują się poniżej wyniku odcięcia. Porada narzędzia wyświetla wynik istotności i powiązany procent plików w pliku przeglądu ustawionym w odniesieniu do łącznej liczby plików.
 
-W rozwiniętym **okienku** Szczegóły są wyświetlane więcej szczegółów. Pliki w rysunkach kolekcji nie zawierają pustych ani niepustych plików. Ilustracje dotyczące plików rodzinnych reprezentują pliki, które nie zostały załadowane w celu oceny istotności, ale nadal są liczone jako część rodziny.
+Rozwinięte okienko **Szczegóły** zawiera więcej szczegółów. Pliki na rysunkach kolekcji nie zawierają pustych ani mglistych plików. Dane dotyczące plików rodzinnych reprezentują pliki, które nie są ładowane w obszarze Istotność, ale nadal są liczone jako część rodziny.

@@ -21,35 +21,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Zawiera omówienie centrum Microsoft 365 wiadomości i jego roli w śledzeniu nowych i zmienionych funkcji oraz innych ważnych ogłoszeń.
-ms.openlocfilehash: 09ae8e85a6de64848733c4f80b5d2e28e99072fc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Zapoznaj się z omówieniem Microsoft 365 Centrum komunikatów i jego roli w śledzeniu nowych i zmienionych funkcji oraz innych ważnych ogłoszeń.
+ms.openlocfilehash: 6fabb66407eb21dc97880eaf2532b89ce02f9281
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322327"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935286"
 ---
 # <a name="message-center"></a>Centrum wiadomości
 
-Aby śledzić nadchodzące zmiany, w tym nowe i zmienione funkcje, planowane konserwacje lub inne ważne ogłoszenia, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centrum wiadomości</a>.
+Aby śledzić nadchodzące zmiany, w tym nowe i zmienione funkcje, planowaną konserwację lub inne ważne ogłoszenia, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centrum komunikatów</a>.
   
-Aby otworzyć Centrum wiadomości:
+Aby otworzyć Centrum komunikatów:
 
 ::: moniker range="o365-worldwide"
 
-- W centrum administracyjnym przejdź do pozycji **Centrum wiadomości** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">w kondycji</a>.
+- W centrum administracyjnym przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">centrum komunikatów o kondycji</a>>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-- W centrum <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administracyjnym</a> przejdź do pozycji **Centrum wiadomości** > **w kondycji**.
+- W <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centrum administracyjnym</a> przejdź do **centrum komunikatów o kondycji**>.
 
 ::: moniker-end
 
-Centrum wiadomości można [też wyświetlać za pomocą](https://go.microsoft.com/fwlink/p/?linkid=627216) Administracja Microsoft 365 na urządzeniu przenośnym, co jest doskonałym sposobem na pozostawanie na urządzeniu przenośnym za pomocą powiadomień wypychanych.
+Możesz również użyć [aplikacji Administracja Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=627216) na urządzeniu przenośnym, aby wyświetlić Centrum komunikatów, co jest doskonałym sposobem na bieżąco z powiadomieniami wypychanym.
 
-Aby anulować subskrypcję wiadomości e-mail w Centrum wiadomości, zobacz [Anulowanie subskrypcji wiadomości](#unsubscribe-from-message-center-emails) e-mail w Centrum wiadomości w tym artykule.
+Aby anulować subskrypcję wiadomości e-mail centrum wiadomości, zobacz [Anulowanie subskrypcji wiadomości e-mail w centrum wiadomości](#unsubscribe-from-message-center-emails) w tym artykule.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
@@ -59,122 +59,122 @@ Aby anulować subskrypcję wiadomości e-mail w Centrum wiadomości, zobacz [Anu
 
 |Pytanie|Odpowiedź|
 |---|---|
-|KtoTo wyświetlać wpisy w Centrum wiadomości?|Większość użytkowników z przypisaną rolą administratora w centrum Microsoft 365 może wyświetlać wpisy w Centrum wiadomości. [Poniżej znajduje się lista ról](#admin-roles-that-dont-have-access-to-the-message-center) administratora, które nie mają dostępu do Centrum wiadomości. Można również przypisać rolę czytnika centrum wiadomości użytkownikom, którzy powinni mieć możliwość odczytywania i udostępniania wpisów w Centrum wiadomości bez konieczności posiadania jakichkolwiek innych uprawnień administratora.|
-|Czy jest to jedyny sposób przekazywania przez firmę Microsoft zmian dotyczących Microsoft 365?|Nie, ale Centrum wiadomości jest podstawowym sposobem przekazywania informacji o chronometrażu poszczególnych zmian w Microsoft 365. Aby [uzyskać więcej informacji o dodatkowych zasobach, Microsoft 365](stay-on-top-of-updates.md) się na ten temat, zobacz Pozostawanie na wierzchu zmianami.|
-|Jak wyświetlić wpisy w moim języku?|Wpisy w Centrum wiadomości są pisane tylko w języku angielskim, ale możesz kontrolować, czy domyślnie wpisy są wyświetlane w języku angielskim, czy są automatycznie tłumaczone maszynowo na preferowany język. Możesz również wybrać tłumaczenie maszynowe wpisów na dowolny język, który obsługujemy. Aby [uzyskać więcej szczegółowych informacji, zobacz Tłumaczenie językowe wpisów w Centrum](language-translation-for-message-center-posts.md) wiadomości.|
-|Czy mogę wyświetlić podgląd zmian lub funkcji przed ich rozpoczęciem w mojej organizacji?|Po dojściu do programu wydań kierowanego można wyświetlić podgląd niektórych zmian i nowych funkcji. Aby się w tym programie wybrać, w centrum administracyjnym przejdź do **Ustawienia** >  **Org settingsOrganizacja** >  **ProfilZamówienie** >  preferencje. (W centrum administracyjnym może być konieczne wybranie pozycji Pokaż wszystko  u dołu lewego okienka nawigacji, aby wyświetlić Ustawienia). Możesz wybrać pozycję Wersja kierowane dla całej organizacji lub tylko dla wybranych użytkowników. Aby [uzyskać więcej informacji](release-options-in-office-365.md) o programie, Microsoft 365 opcje wydania standardowego lub kierowanego.|
-|Czy mogę sprawdzić dokładną datę, kiedy zmiana będzie dostępna dla mojej organizacji?|Niestety, nie możemy określić dokładnej daty zmiany w organizacji. W naszym wpisie w Centrum wiadomości podamy jak najwięcej informacji na temat chronometrażu wydania, w zależności od poziomu ufności. Pracujemy nad ulepszeniami, aby poprawić ten poziom szczegółów.|
-|Czy te wiadomości są specyficzne dla mojej organizacji?|Staramy się, aby w Centrum wiadomości pojawiały się tylko wpisy mające wpływ na Twoją organizację. Przewodnik Microsoft 365 zawiera wszystkie funkcje, nad które obecnie pracujemy i które wprowadzamy, ale nie wszystkie te funkcje mają zastosowanie do każdej organizacji.|
-|Czy zamiast tego mogę wysyłać wiadomości e-mail do centrum wiadomości?|Tak! Możesz wybrać, aby cotygodniowe podsumowanie było wysyłane pocztą e-mail do Ciebie i maksymalnie dwóch innych adresów e-mail. Podsumowanie tygodniowe pocztą e-mail jest domyślnie włączone. Jeśli nie będziesz otrzymywać cotygodniowych podsumowanie, sprawdź folder spamu. Aby uzyskać [więcej informacji](#preferences) na temat cotygodniowego podsumowanie, zobacz sekcję Preferencje w tym artykule.|
-|Jak zatrzymać pobieranie podsumowanie w Centrum wiadomości?|Przejdź do centrum wiadomości w centrum administracyjnym i wybierz pozycję **Preferencje**. Na karcie **Poczta** e-mail wyłącz opcję Wyślij **mi powiadomienia e-mail z Centrum wiadomości**.|
-|Jak mogę się upewnić, że powiadomienia o ochronie prywatności dotyczące danych są otrzymywane przez odpowiednie kontakty w mojej organizacji?|Jako administrator globalny będziesz otrzymywać wiadomości dotyczące prywatności danych w swojej organizacji. Ponadto można przypisać rolę czytnika prywatności Centrum wiadomości do osób, które powinny widzieć wiadomości dotyczące prywatności danych. Inne role administratorów z dostępem do Centrum wiadomości nie mogą wyświetlać wiadomości dotyczących prywatności danych.   <br/><br/>Aby uzyskać więcej informacji, zobacz [Preferencje](#preferences) w tym artykule.|
-|Dlaczego nie widzę wcześniej tam wiadomości?|Aby zarządzać liczbą wiadomości w Centrum wiadomości, każda wiadomość wygaśnie i zostanie usunięta po upływie okresu. Ogólnie rzecz biorąc, wiadomości wygasają po 30 dniach od czasu opisanego w treści wiadomości.|
+|KtoTo można wyświetlać wpisy w Centrum komunikatów?|Większość użytkowników, do których przypisano dowolną rolę administratora w Microsoft 365, może wyświetlać wpisy w Centrum komunikatów. [Oto lista](#admin-roles-that-dont-have-access-to-the-message-center) ról administratora, które nie mają dostępu do Centrum komunikatów. Możesz również przypisać rolę czytelnika centrum komunikatów użytkownikom, którzy powinni mieć możliwość odczytywania i udostępniania wpisów w Centrum wiadomości bez żadnych innych uprawnień administratora.|
+|Czy jest to jedyny sposób, w jaki firma Microsoft przekaże zmiany dotyczące Microsoft 365?|Nie, ale centrum komunikatów to podstawowy sposób przekazywania czasu poszczególnych zmian w Microsoft 365. Aby uzyskać informacje o dodatkowych zasobach, zobacz [Pozostań na bieżąco ze zmianami Microsoft 365](stay-on-top-of-updates.md).|
+|Jak mogę wyświetlać wpisy w moim języku?|Wpisy w centrum wiadomości są pisane tylko w języku angielskim, ale możesz kontrolować, czy domyślnie wpisy są wyświetlane w języku angielskim, czy są automatycznie tłumaczone maszynowo na preferowany język. Możesz również wybrać opcję tłumaczenia maszynowego wpisów na dowolny obsługiwany język. Aby uzyskać więcej informacji, zobacz [Tłumaczenie języka dla wpisów w centrum komunikatów](language-translation-for-message-center-posts.md) .|
+|Czy mogę wyświetlić podgląd zmian lub funkcji przed ich wdrożeniem w mojej organizacji?|Niektóre zmiany i nowe funkcje można wyświetlić w wersji zapoznawczej, decydując się na program wersji docelowej. Aby wyrazić zgodę, w centrum administracyjnym przejdź do **obszaru Ustawienia** >  **Ustawienia** >  **usługiOrgUstawienia organizacyjneUstawienia** >  **preferencji**. (W centrum administracyjnym może być konieczne wybranie pozycji **Pokaż wszystko** w dolnej części okienka nawigacji po lewej stronie, aby wyświetlić **Ustawienia**). Możesz wybrać wersję docelową dla całej organizacji lub tylko dla wybranych użytkowników. Aby uzyskać więcej informacji na temat programu, zobacz [Opcje wersji standardowej lub docelowej w Microsoft 365](release-options-in-office-365.md).|
+|Czy mogę ustalić dokładną datę udostępnienia zmiany w mojej organizacji?|Niestety, nie możemy określić dokładnej daty zmiany w Twojej organizacji. W naszym wpisie w Centrum wiadomości przekażemy jak najwięcej informacji na temat czasu wydania w oparciu o nasz poziom ufności. Pracujemy nad ulepszeniami, aby lepiej korzystać z tego poziomu szczegółowości.|
+|Czy te komunikaty są specyficzne dla mojej organizacji?|Dokładamy starań, aby mieć pewność, że widzisz tylko wpisy w Centrum wiadomości, które mają wpływ na Twoją organizację. Plan Microsoft 365 obejmuje wszystkie funkcje, nad którymi obecnie pracujemy i które wdrażamy, ale nie wszystkie te funkcje mają zastosowanie do każdej organizacji.|
+|Czy zamiast tego można otrzymywać wiadomości e-mail z wpisami w centrum wiadomości?|Tak! Możesz wybrać, aby otrzymać wiadomość e-mail z podsumowaniem tygodniowym i maksymalnie dwa inne adresy e-mail. Skrót tygodniowy wysyłany pocztą e-mail jest domyślnie włączony. Jeśli nie otrzymujesz cotygodniowych skrótów, sprawdź folder spamu. Zobacz sekcję [Preferencje](#preferences) w tym artykule, aby uzyskać więcej informacji na temat konfigurowania skrótu tygodniowego.|
+|Jak mogę przestać szyfrować centrum komunikatów?|Przejdź do centrum komunikatów w centrum administracyjnym i wybierz pozycję **Preferencje**. Na karcie **Poczta e-mail** wyłącz opcję **Wyślij mi powiadomienia e-mail z centrum wiadomości**.|
+|Jak mogę zapewnić otrzymywanie powiadomień o ochronie prywatności danych przez odpowiednie kontakty w mojej organizacji?|Jako administrator globalny będziesz otrzymywać komunikaty o ochronie prywatności danych dla swojej organizacji. Ponadto możesz przypisać rolę czytelnika prywatności centrum komunikatów do osób, które powinny wyświetlać komunikaty o ochronie prywatności danych. Inne role administratora z dostępem do Centrum komunikatów nie mogą wyświetlać komunikatów o ochronie prywatności danych.   <br/><br/>Aby uzyskać więcej informacji, zobacz [Preferencje](#preferences) w tym artykule.|
+|Dlaczego nie widzę komunikatu, który był wcześniej?|Aby zarządzać liczbą komunikatów w centrum komunikatów, każda wiadomość wygaśnie i zostanie usunięta po upływie pewnego czasu. Ogólnie rzecz biorąc, komunikaty wygasają 30 dni po upływie okresu określonego w treści wiadomości.|
 |
 
-## <a name="filter-messages"></a>Filtrowanie wiadomości
+## <a name="filter-messages"></a>Filtrowanie komunikatów
 
-Centrum wiadomości wyświetla widok wszystkich aktywnych wiadomości w formacie tabeli. Domyślnie najnowsza wiadomość jest wyświetlany na początku listy. Możesz wybrać pozycję **Usługa,** aby wyświetlić wiadomości dla różnych usług, takich jak Aplikacje Microsoft 365, SharePoint online itp.   W **obszarze Tag** możesz wybrać pozycję **Wpływ** administratora, Prywatność **danych**, **Aktualizacja** funkcji, **Aktualizacja** **główna, Nowa** funkcja, **Wycofanie** lub **Komunikaty dotyczące wpływu na** użytkownika. W **obszarze Stan wiadomości** możesz wybrać pozycję **Ulubione**, **Nieprzeczytane** lub **Zaktualizowane** wiadomości.
+Centrum komunikatów przedstawia widok wszystkich aktywnych komunikatów w formacie tabeli. Domyślnie jest wyświetlany najnowszy komunikat w górnej części listy. Możesz wybrać pozycję **Usługa**, aby wyświetlić komunikaty dla różnych usług, takich jak Aplikacje Microsoft 365, SharePoint Online itp.   W obszarze **Tag** możesz wybrać pozycję **Wpływ administratora**, **Prywatność danych**, **Aktualizacja funkcji**, **Aktualizacja główna**, **Nowa funkcja**, **Wycofanie** lub Komunikaty **o wpływie na użytkownika**. W obszarze **Stan komunikatu** możesz wybrać pozycję Ulubione, **Nieprzeczytane** lub **Zaktualizowane komunikaty**.
 
-Karta Archiwum zawiera wiadomości zarchiwizowane. Aby zarchiwizować wiadomość, w okienku wiadomości wybierz pozycję **Archiwizuj**.
+Na karcie Archiwum są wyświetlane zarchiwizowane komunikaty. Aby zarchiwizować komunikat, w okienku wiadomości wybierz pozycję **Archiwum**.
 
 ::: moniker range="o365-worldwide"
 
-Użyj menu **rozwijanych Service** (Usługa), **Tag** (Tag) i **Message state**  (Stan wiadomości), aby wybrać filtrowany widok wiadomości. Na przykład na tym diagramie wiadomości są otagowane tagiem **wpływów administratora** .
+Użyj menu rozwijanego **Usługa**, **Tag** i **Stan komunikatu**  , aby wybrać filtrowany widok komunikatów. Na przykład na tym diagramie komunikaty są oznaczane tagiem **Wpływ administratora** .
 
-Możesz wybrać dowolny nagłówek kolumny(oprócz kolumn **Service** (Usługa) i **Tag (Tag**), aby posortować wiadomości w kolejności rosnącej lub malejącej.
+Możesz wybrać dowolny nagłówek kolumny, z wyjątkiem **usługi** i **tagu**, aby sortować komunikaty w kolejności rosnącej lub malejącej.
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Widok Centrum wiadomości posortowany według wpływu na administratora.":::
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Widok centrum komunikatów posortowany według wpływu administratora.":::
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Użyj menu **rozwijanych Service** (Usługa), **Tag** (Tag) i **Message state**  (Stan wiadomości), aby wybrać filtrowany widok wiadomości. Na przykład na tym diagramie komunikaty są otagowane **wpływem na administratora**.
+Użyj menu rozwijanego **Usługa**, **Tag** i **Stan komunikatu**  , aby wybrać filtrowany widok komunikatów. Na przykład na tym diagramie komunikaty są oznaczane **wpływem administratora**.
 
-Możesz wybrać dowolny nagłówek kolumny(oprócz pozycji **Usługa i** **Tagi**), aby posortować wiadomości w kolejności rosnącej lub malejącej.
+Możesz wybrać dowolny nagłówek kolumny, z wyjątkiem **usługi** i **tagów**, aby sortować komunikaty w kolejności rosnącej lub malejącej.
 
 ::: moniker-end
 
-### <a name="major-updates"></a>Główne aktualizacje
+### <a name="major-updates"></a>Aktualizacje główne
 
-Główne aktualizacje można przeglądać, wybierając **aktualizację Główna** z **listy** rozwijanej Tagi.
+Aktualizacje główne można przejrzeć, wybierając **aktualizację główną** z listy rozwijanej **Tagi** .
 
-O głównych aktualizacjach informuje się co najmniej 30 dni wcześniej, jeśli wymagane jest działanie i mogą one obejmować:
+Główne aktualizacje są przekazywane z co najmniej 30-dniowym wyprzedzeniem, gdy jest wymagana akcja i mogą obejmować:
 
-- Zmiany dotyczące codziennej produktywności, takie jak skrzynka odbiorcza, spotkania, delegowanie, udostępnianie i dostęp
-- Zmiany motywów, składników Web Part i innych składników, które mogą mieć wpływ na funkcje niestandardowe
-- Zwiększenie lub zmniejszenie widocznej pojemności, na przykład magazynu, liczby reguł, elementów lub czasu trwania
-- Zmiany  brandingu produktu, które mogą:
-  - Przyczyna nieporozumień wśród użytkowników końcowych
-  - Powodować zmiany w procesach pomocy technicznej i materiałach referencyjnych, lub
+- Zmiany codziennej produktywności, takie jak skrzynka odbiorcza, spotkania, delegacje, udostępnianie i dostęp
+- Zmiany motywów, składników Web Part i innych składników, które mogą mieć wpływ na dostosowane funkcje
+- Zwiększa lub zmniejsza się do widocznej pojemności, takiej jak magazyn, liczba reguł, elementów lub czasy trwania
+- Zmiany znakowania produktów, które mogą:
+  - Powodować pomyłek użytkowników końcowych,
+  - Wprowadzanie zmian w procesach pomocy technicznej i materiałach referencyjnych lub
   - Zmienianie adresu URL
 - Nowa usługa lub aplikacja
-- Zmiany wymagające działania administratora (z wyłącznym zapobieganiem problemom lub ich rozwiązywaniem)
+- Zmiany wymagające działania administratora (z wyłączeniem problemów z zapobieganiem lub rozwiązywaniem problemów)
 - Zmiany miejsca przechowywania danych
   
 ### <a name="preferences"></a>Preferencje
 
-Jeśli administracja jest rozłożona w całej organizacji, być może nie chcesz lub potrzebujesz oglądać wpisów dotyczących wszystkich Microsoft 365 usług. Każdy administrator może:
+Jeśli administracja jest rozproszona w organizacji, może nie być konieczne wyświetlanie wpisów dotyczących wszystkich usług Microsoft 365. Każdy administrator może:
 
-- Ustawianie preferencji sterujących tym, które wiadomości są wyświetlane w Centrum wiadomości.
-- Filtrowanie wiadomości
-- Skonfiguruj preferencje poczty e-mail, aby otrzymywać cotygodniowe podsumowanie wszystkich wiadomości, wiadomości e-mail tylko z głównymi aktualizacjami oraz wiadomości e-mail z wiadomościami dotyczącymi prywatności danych.  
+- Ustaw preferencje określające, które komunikaty są wyświetlane w Centrum komunikatów.
+- Filtrowanie komunikatów
+- Ustaw preferencje poczty e-mail, aby otrzymywać cotygodniowe podsumowanie wszystkich wiadomości, wiadomości e-mail tylko dla głównych aktualizacji i wiadomości e-mail dotyczących wiadomości dotyczących prywatności danych.  
 
 ::: moniker range="o365-worldwide"
 
-1. Wybierz **pozycję Preferencje** w górnej części Centrum wiadomości.
+1. Wybierz pozycję **Preferencje** w górnej części centrum komunikatów.
 
-2. Na **karcie Widok niestandardowy** upewnij się, że pole wyboru jest zaznaczone dla każdej usługi, którą chcesz monitorować. Wyczyść pola wyboru usług, które chcesz filtrować, z widoku Centrum wiadomości.
+2. Na karcie **Widok niestandardowy** upewnij się, że pole wyboru jest zaznaczone dla każdej usługi, którą chcesz monitorować. Wyczyść pola wyboru dla usług, które chcesz odfiltrować z widoku Centrum komunikatów.
 
-3. Podsumowanie wiadomości e-mail są domyślnie włączone i wysyłane na podstawowy adres e-mail. Aby przestać odbierać podsumowanie tygodniowe, wyczyść  pole wyboru Wysyłaj mi powiadomienia e-mail z Centrum wiadomości na karcie Poczta **e-mail**. 
+3. Wiadomości e-mail szyfrowane są domyślnie włączone i wysyłane na podstawowy adres e-mail. Aby przestać otrzymywać cotygodniowe podsumowanie, wyczyść pole wyboru **Wyślij mi powiadomienia e-mail z centrum wiadomości** na **karcie Poczta e-mail**. 
 
-   Możesz również wprowadzić maksymalnie dwa adresy e-mail, rozdzielając je średnikami.
+   Możesz również wprowadzić maksymalnie dwa adresy e-mail oddzielone średnikiem.
 
-   Możesz także wybrać wiadomości e-mail, które chcesz otrzymywać, a także cotygodniowe podsumowanie wybranych usług.
+   Możesz również wybrać wiadomości e-mail, które chcesz uzyskać, a także cotygodniowe podsumowanie wybranych usług.
 
-4. Wybierz **pozycję Zapisz** , aby zachować zmiany.
+4. Wybierz pozycję **Zapisz** , aby zachować zmiany.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wybierz **pozycję Preferencje** w górnej części Centrum wiadomości.
+1. Wybierz pozycję **Preferencje** w górnej części centrum komunikatów.
 
-2. Na **karcie Widok niestandardowy** upewnij się, że pole wyboru jest zaznaczone dla każdej usługi, którą chcesz monitorować. Wyczyść pola wyboru usług, które chcesz filtrować, z widoku Centrum wiadomości.
+2. Na karcie **Widok niestandardowy** upewnij się, że pole wyboru jest zaznaczone dla każdej usługi, którą chcesz monitorować. Wyczyść pola wyboru dla usług, które chcesz odfiltrować z widoku Centrum komunikatów.
 
-3. Podsumowanie wiadomości e-mail są domyślnie włączone i wysyłane na podstawowy adres e-mail. Aby przestać odbierać podsumowanie tygodniowe, wyczyść  pole wyboru Wysyłaj mi powiadomienia e-mail z Centrum wiadomości na karcie Poczta **e-mail**.
+3. Wiadomości e-mail szyfrowane są domyślnie włączone i wysyłane na podstawowy adres e-mail. Aby przestać otrzymywać cotygodniowe podsumowanie, wyczyść pole wyboru **Wyślij mi powiadomienia e-mail z centrum wiadomości** na **karcie Poczta e-mail**.
 
-   Możesz również wprowadzić maksymalnie dwa adresy e-mail, rozdzielając je średnikami.
+   Możesz również wprowadzić maksymalnie dwa adresy e-mail oddzielone średnikiem.
 
-   Możesz także wybrać wiadomości e-mail, które chcesz otrzymywać, a także cotygodniowe podsumowanie wybranych usług.
+   Możesz również wybrać wiadomości e-mail, które chcesz uzyskać, a także cotygodniowe podsumowanie wybranych usług.
 
-4. Wybierz **pozycję Zapisz** , aby zachować zmiany.
+4. Wybierz pozycję **Zapisz** , aby zachować zmiany.
 
 ::: moniker-end
 
-### <a name="display-messages-in-your-preferred-language"></a>Wyświetlanie wiadomości w preferowanym języku
+### <a name="display-messages-in-your-preferred-language"></a>Wyświetlanie komunikatów w preferowanym języku
   
-Używamy tłumaczenia maszynowego do automatycznego wyświetlania wiadomości w preferowanym języku. Aby [uzyskać więcej informacji na](language-translation-for-message-center-posts.md) temat sposobu ustawienia języka, przeczytaj tłumaczenie językowe wpisów w Centrum wiadomości.
+Tłumaczenie maszynowe służy do automatycznego wyświetlania komunikatów w preferowanym języku. Aby uzyskać więcej informacji na temat ustawiania języka, przeczytaj [artykuł Tłumaczenie języka dla wpisów w Centrum komunikatów](language-translation-for-message-center-posts.md) .
   
 > [!NOTE]
-> Podsumowanie tygodniowe i wszystkie wysyłane wiadomości e-mail są wysyłane tylko w języku angielskim. [Adresaci mogą](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) Translator dla programu Outlook wiadomości w preferowanym języku.
+> Skrót tygodniowy i wszystkie wpisy wysyłane pocztą e-mail są wysyłane tylko w języku angielskim. Adresaci mogą używać [Translator dla programu Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) do odczytywania wiadomości w preferowanym języku.
 
-## <a name="monthly-active-users"></a>Miesięczna aktywność użytkowników
+## <a name="monthly-active-users"></a>Aktywni użytkownicy miesięcznie
 
-Gdy otworzysz wpis w centrum wiadomości, w sekcji Usługa **&** zostanie ci podana liczba użytkowników, którzy używali tej aplikacji lub usługi Microsoft 365. Liczby z ostatnich 28 dni. Te informacje ułatwiają priorytetyzowanie zmian, nad którymi należy pracować.
+Po otwarciu wpisu w centrum komunikatów poinformujemy Cię o liczbie użytkowników, którzy korzystali z tej aplikacji lub usługi Microsoft 365 w sekcji **Usługa & co miesiąc aktywnych użytkowników**. Liczby dotyczą ostatnich 28 dni. Te informacje mogą ułatwić określenie priorytetów zmian, nad którymi należy pracować.
 
-:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Zrzut ekranu: strona gęstości Microsoft Teams wiadomości w poście centrum wiadomości z comiesięcznych danymi aktywnych użytkowników":::
+:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Zrzut ekranu: wyświetlanie strony gęstości czatu Microsoft Teams w poście w centrum komunikatów z comiesięcznymi danymi aktywnych użytkowników":::
 
-Miesięczna liczba użytkowników dotyczy wszystkich użytkowników, którzy używali tej Microsoft 365 lub usługi na dowolnym urządzeniu.
+Liczba użytkowników miesięcznych dotyczy wszystkich użytkowników, którzy korzystali z tej Microsoft 365 aplikacji lub usługi na dowolnym urządzeniu.
 
 > [!NOTE]
-> Ta funkcja nie jest jeszcze dostępna dla Microsoft 365 i usług. Jeśli ta funkcja nie jest dostępna, będziesz wiedzieć, co się stanie.
+> Ta funkcja nie jest jeszcze dostępna dla wszystkich Microsoft 365 aplikacji i usług. Poinformujemy Cię, gdy funkcja nie jest dostępna.
 
 ## <a name="choose-columns"></a>Wybieranie kolumn
 
-Aby wybrać kolumny, na stronie **Centrum** wiadomości po prawej stronie wybierz pozycję Wybierz kolumny **, a** następnie w okienku Wybierz **kolumny** wybierz te, które mają być wyświetlane.
+Aby wybrać kolumny, na stronie **Centrum wiadomości** po prawej stronie wybierz pozycję **Wybierz kolumny**, a następnie w okienku **Wybierz kolumny** wybierz te, które chcesz wyświetlić.
 
-Oto krótki przegląd informacji, które będą zawarte w poszczególnych kolumnach.
+Oto krótkie omówienie informacji, które będą widoczne w każdej kolumnie.
 
 ### <a name="column-information"></a>Informacje o kolumnie
 
@@ -184,18 +184,18 @@ Oto krótki przegląd informacji, które będą zawarte w poszczególnych kolumn
 
 |Kolumna|Opis|
 |---|---|
-|Znacznik wyboru|Zaznaczenie znacznika wyboru w wierszu nagłówka kolumny spowoduje zaznaczenie wszystkich obecnie wyświetlanych wiadomości. Zaznaczenie znacznika wyboru obok jednej lub większej liczby wiadomości umożliwia działanie na tych wiadomościach.|
-|Tytuł wiadomości|Tytuły wiadomości to krótkie opisy nadchodzących zmian. Jeśli pełny tytuł nie zostanie wyświetlony, umieść na nim kursor, a cały tytuł zostanie wyświetlony w oknie podręcznym.|
-|Usługa|Ikony wskazują aplikację, której dotyczy wiadomość.|
-|Więcej opcji|Więcej opcji pozwala odrzucić wiadomość, oznaczyć ją jako przeczytaną lub nieprzeczytaną albo udostępnić ją in inowi administratorowi. Aby przywrócić zarchiwizowane wiadomości, **wybierz kartę** Archiwum, zaznacz znacznik wyboru obok wiadomości, a następnie wybierz pozycję **Przywróć**.|
-|Tagi| Możesz wybrać tagi z listy rozwijanej Tag, aby filtrować wiadomości. <br> <p> **Prywatność danych**: Powiadomienia dotyczące prywatności danych (ograniczone do administratora globalnego i centrum wiadomości Role czytnika prywatności). <p> **Aktualizacja główna**: zmiany są przekazywane z co najmniej 30 dni wcześniej ([aktualizacje główne](#major-updates)). <p> **Wycofanie**: Wycofanie usługi lub funkcji. <p> **Nowa funkcja**: Nowa funkcja lub usługa. <p> **Aktualizacja funkcji**: aktualizacja do istniejącej funkcji. <p> **Wpływ na administratora**: gdy zmiana w wyraźny sposób wpływa na administratora w następujący sposób: zmiana interfejsu użytkownika, zmiana przepływu pracy, kontrola dostępna i określone/potencjalne działanie. <p> **Wpływ na** użytkownika: gdy zmiana w usłudze w wyraźny sposób wpływa na użytkownika — zmiana interfejsu użytkownika i zmiana przepływu pracy. <p> **Zaktualizowano wiadomość**: Gdy wiadomość jest aktualizowana.|
-|Kategoria| Ta opcja nie jest domyślnie wyświetlana, ale można ją określić w **panelu Wybierz kolumny** . Wiadomości można zidentyfikować za pomocą jednej z trzech następujących kategorii: <p> **Zapobieganie problemom lub** rozwiązywanie ich: Informuje o znanych problemach mających wpływ na organizację i może wymagać podjęcia działań w celu uniknięcia przerw w działaniu usługi. Zapobieganie problemom lub rozwiązywanie ich różni się od komunikatów dotyczących kondycji usługi, ponieważ monituje o proaktywne działania w celu uniknięcia problemów. <p> **Planowanie zmian**: Informacje o zmianach wprowadzonych w Microsoft 365 które mogą wymagać działania w celu uniknięcia przerw w działaniu usługi. Na przykład otrzymasz informacje o zmianach wymagań systemowych lub funkcjach, które zostaną usunięte. Staramy się z co najmniej 30-dniowym powiadomieniem o każdej zmianie, która wymaga od administratora działania w celu normalnie działającej usługi. <p> **Bądź na bieżąco**: zawiera informacje o nowych lub zaktualizowanych funkcjach, które są włączanie w Twojej organizacji. Funkcje są zazwyczaj zapowiadane jako pierwsze w Microsoft 365 [Przewodnik po programie](https://go.microsoft.com/fwlink/?linkid=2070821). <p> Możesz również poówić Cię o planowanej konserwacji zgodnie z umową o poziomie usług. Planowane konserwacje mogą skutkować czasem, w którym Ani Ty, ani Twoi użytkownicy nie będziecie mieć dostępu do Microsoft 365, określonej funkcji lub usługi, takiej jak poczta e-mail OneDrive dla Firm.|
-|Działanie według|W tym miejscu będziemy mieć daty tylko wtedy, gdy będziemy zmianami wymagały wykonania działania do określonego terminu ostatecznego. Ponieważ rzadko korzystamy z **kolumny Act by** ( Działanie według), jeśli coś tu widzisz, należy zwrócić na nie większą uwagę.|
-|Ostatnia aktualizacja|Data opublikowania lub ostatniej aktualizacji wiadomości.|
-|Identyfikator wiadomości|Firma Microsoft śledzi wpisy w Centrum wiadomości według identyfikatora wiadomości. Możesz odwołać się do tego identyfikatora, jeśli chcesz przekazać opinię lub zadzwonić do pomocy technicznej dotyczącej określonej wiadomości.|
+|Znacznik wyboru|Wybranie znacznika wyboru w wierszu nagłówka kolumny spowoduje wybranie wszystkich aktualnie wyświetlanych komunikatów. Wybranie znacznika wyboru obok co najmniej jednego komunikatu umożliwia podjęcie akcji w przypadku tych komunikatów.|
+|Tytuł komunikatu|Tytuły komunikatów to krótkie opisy nadchodzących zmian. Jeśli pełny tytuł nie zostanie wyświetlony, umieść kursor nad nim, a cały tytuł pojawi się w oknie podręcznym.|
+|Usługa|Ikony wskazują aplikację, do której ma zastosowanie komunikat.|
+|Więcej opcji|Więcej opcji pozwala odrzucić komunikat, oznaczyć go jako przeczytany lub nieprzeczytany albo udostępnić go innemu administratorowi. Aby przywrócić zarchiwizowany komunikat, wybierz kartę **Archiwum** , zaznacz znacznik wyboru obok komunikatu, a następnie wybierz pozycję **Przywróć**.|
+|Tagi| Możesz wybrać tagi z listy rozwijanej Tag, aby filtrować komunikaty. <br> <p> **Prywatność danych**: powiadomienie o prywatności danych (ograniczone do ról administratora globalnego i czytelnika prywatności centrum komunikatów). <p> **Aktualizacja główna**: zmiany przekazywane z co najmniej 30-dniowym wyprzedzeniem ([aktualizacje główne](#major-updates)). <p> **Wycofanie**: wycofanie usługi lub funkcji. <p> **Nowa funkcja**: nowa funkcja lub usługa. <p> **Aktualizacja funkcji**: zaktualizuj do istniejącej funkcji. <p> **Wpływ administratora**: gdy zmiana wyraźnie wpływa na administratora w następujący sposób — zmiana interfejsu użytkownika, zmiana przepływu pracy, dostępna kontrola i akcja specyficzna/potencjalna. <p> **Wpływ na użytkownika**: gdy zmiana w usłudze wyraźnie wpływa na użytkownika — zmiana interfejsu użytkownika i zmiana przepływu pracy. <p> **Zaktualizowany komunikat**: po zaktualizowaniu komunikatu.|
+|Kategoria| Nie jest to domyślnie wyświetlane, ale można je określić w panelu **Wybieranie kolumn** . Komunikaty są identyfikowane przez jedną z następujących trzech kategorii: <p> **Zapobieganie lub rozwiązywanie problemów**: informuje o znanych problemach mających wpływ na organizację i może wymagać podjęcia działań w celu uniknięcia zakłóceń w działaniu usługi. Zapobieganie lub rozwiązywanie problemów różni się od Kondycja usługi komunikatów, ponieważ monituje o proaktywne działanie w celu uniknięcia problemów. <p> **Planowanie zmian**: informuje o zmianach w Microsoft 365, które mogą wymagać działania w celu uniknięcia zakłóceń w działaniu usługi. Na przykład poinformujemy Cię o zmianach wymagań systemowych lub o usuwanych funkcjach. Staramy się przekazać co najmniej 30-dniowe powiadomienie o każdej zmianie, która wymaga, aby administrator działał w celu zapewnienia normalnego działania usługi. <p> **Bądź na bieżąco**: informuje o nowych lub zaktualizowanych funkcjach, które włączamy w Twojej organizacji. Funkcje są zwykle ogłaszane jako pierwsze w [planie Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2070821). <p> Może również poinformować Cię o planowanej konserwacji zgodnie z naszą umową dotyczącą poziomu usług. Planowana konserwacja może spowodować przestoje, gdy Ty lub Twoi użytkownicy nie będą mogli uzyskać dostępu do Microsoft 365, określonej funkcji lub usługi, takiej jak poczta e-mail lub OneDrive dla Firm.|
+|Ustaw według|W tym miejscu będziemy mieć daty tylko wtedy, gdy wprowadzamy zmianę, która wymaga podjęcia działania w określonym terminie. Ponieważ rzadko używamy **ustawy według** kolumny, jeśli coś tu widzisz, należy zwrócić na to szczególną uwagę.|
+|Ostatnia aktualizacja|Data opublikowania lub ostatniej aktualizacji komunikatu.|
+|Identyfikator komunikatu|Firma Microsoft śledzi wpisy w Centrum komunikatów według identyfikatora wiadomości. Możesz odwołać się do tego identyfikatora, jeśli chcesz przekazać opinię lub jeśli zadzwonisz do pomocy technicznej dotyczącej konkretnej wiadomości.|
 |
 
-### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Role administratorów, które nie mają dostępu do Centrum wiadomości
+### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Role administratora, które nie mają dostępu do Centrum komunikatów
 
 - Administrator zgodności
 - Administrator dostępu warunkowego
@@ -204,85 +204,85 @@ Oto krótki przegląd informacji, które będą zawarte w poszczególnych kolumn
 - Czytniki katalogów
 - Konta synchronizacji katalogów
 - Autorzy katalogów
-- Administrator usługi Intune
-- Administrator roli z uprawnieniami
+- administrator usługi Intune
+- Administrator ról uprzywilejowanych
 - Czytelnik raportów
 
-## <a name="give-feedback-on-a-post"></a>Opinie na temat wpisu
+## <a name="give-feedback-on-a-post"></a>Przekaż opinię na temat wpisu
 
-W Centrum wiadomości możesz wybrać wiadomość, aby wyświetlić szczegółowe informacje.
+W Centrum komunikatów możesz wybrać komunikat, aby wyświetlić szczegóły.
 
-Jeśli chcesz przekazać opinię na temat wiadomości, w okienku szczegółów wybierz ikonę Lubię to  lub Nie  lubię tego u dołu okienka szczegółów wiadomości i podaj opcjonalną opinię w wyświetlonym polu tekstowym. Nie pozyskaj żadnych danych osobowych. Możesz opcjonalnie wybrać pozycję **W porządku** , aby skontaktować się ze mną w sprawie tej opinii, a następnie wybrać pozycję **Wyślij**.
+Jeśli chcesz przekazać opinię na temat wiadomości, w okienku szczegółów wybierz ikonę **Lubię** to lub **nie lubię** w dolnej części okienka szczegółów wiadomości i podaj opcjonalną opinię w wyświetlonym polu tekstowym. Nie podaj żadnych danych osobowych. Opcjonalnie możesz wybrać pozycję **Ok, aby skontaktować się ze mną w tej opinii** , a następnie wybrać pozycję **Wyślij**.
 
 > [!NOTE]
-> Jeśli korzystasz z usługi Microsoft 365 dla instytucji rządowych — GCC, Microsoft 365 dla instytucji rządowych — GCC Wysoki i Office 365 dla instytucji rządowych — DoD, nie możesz przekazać opinii dotyczącej wpisu.
+> Jeśli używasz usługi Microsoft 365 for Government — GCC, Microsoft 365 for Government — GCC High i Office 365 dla instytucji rządowych — DoD, nie będziesz w stanie przekazać opinii na temat wpisu.
 
 ## <a name="share-a-message"></a>Udostępnianie wiadomości
 
-Widzisz komunikat, że inna osoba musi działać? Możesz udostępnić zawartość wiadomości dowolneowi użytkownikowi w wiadomości e-mail:
+Widzisz komunikat, na który musi działać ktoś inny? Zawartość wiadomości można udostępnić dowolnemu użytkownikowi pocztą e-mail:
   
-1. Wybierz wiadomość, aby ją otworzyć, a następnie wybierz pozycję **Udostępnij**.
+1. Wybierz komunikat, aby go otworzyć, a następnie wybierz pozycję **Udostępnij**.
   
-2. Aby udostępnić wiadomość, wprowadź maksymalnie dwa adresy e-mail oddzielone dwukropkiem. Możesz wysyłać wiadomości na indywidualne i grupowe adresy e-mail. Opcjonalnie możesz wybrać otrzymywanie kopii wiadomości e-mail (wiadomość zostanie przekierowyna na podstawowy adres e-mail) lub dodać wiadomość osobistą, aby udostępnić adresatom więcej kontekstu.
+2. Aby udostępnić wiadomość, wprowadź maksymalnie dwa adresy e-mail oddzielone dwukropkiem. Możesz wysłać do poszczególnych adresów e-mail i grupować adresy e-mail. Opcjonalnie możesz wybrać opcję odebrania kopii wiadomości w wiadomości e-mail (wiadomość zostanie wysłana na podstawowy adres e-mail) lub dodania wiadomości osobistej w celu udostępnienia adresatom większego kontekstu.
   
-3. Wybierz **pozycję Udostępnij,** aby wysłać wiadomość e-mail.
+3. Wybierz pozycję **Udostępnij** , aby wysłać wiadomość e-mail.
 
 ## <a name="get-a-link"></a>Uzyskiwanie linku
 
-Musisz wykonać czynności z innym administratorem, aby upewnić się, że wie o zmianie i podjąć działanie? Możesz na przykład wygenerować link do udostępniania w wiadomości e-mail lub wiadomości błyskawicznej, który połączy użytkownika bezpośrednio z wiadomością. Osoba, której udostępniasz link, musi mieć dostęp do Centrum wiadomości. Aby [uzyskać więcej informacji, zobacz](message-center.md#admin-roles-that-dont-have-access-to-the-message-center) Role administratorów, które nie mają dostępu do Centrum wiadomości.
+Musisz podjąć działania z innym administratorem, aby upewnić się, że jest świadomy zmiany i podejmuje działania? Możesz wygenerować link do udostępniania w wiadomościach e-mail lub wiadomościach błyskawicznych, na przykład, który połączy użytkownika bezpośrednio z tą wiadomością. Osoba, której udostępniasz link, musi mieć dostęp do Centrum wiadomości. Aby uzyskać więcej informacji [, zobacz Role administratora, które nie mają dostępu do Centrum komunikatów](message-center.md#admin-roles-that-dont-have-access-to-the-message-center) .
 
-1. Wybierz wiadomość, aby ją otworzyć.
+1. Wybierz komunikat, aby go otworzyć.
 
-2. Wybierz **pozycję Kopiuj link**.
+2. Wybierz pozycję **Kopiuj link**.
 
-3. Użyj klawiszy Ctrl+V lub kliknij prawym przyciskiem myszy i wybierz polecenie **Wklej** , aby wstawić link do wybranego dokumentu.
+3. Użyj klawiszy Ctrl+V lub kliknij prawym przyciskiem myszy i wybierz pozycję **Wklej** , aby wstawić link do dowolnego dokumentu.
 
-## <a name="read-and-unread-states"></a>Stany przeczytane i nieprzeczytane
+## <a name="read-and-unread-states"></a>Stany odczytu i nieprzeczytane
 
-Nieprzeczytana wiadomość w Centrum wiadomości zostanie pogrubiona. Otwarcie wiadomości oznacza ją jako przeczytaną. Możesz oznaczyć wiadomość jako nieprzeczytaną.
+Każda nieprzeczytana wiadomość w centrum komunikatów będzie wyświetlana pogrubiona. Otwarcie komunikatu oznacza go jako przeczytany. Komunikat można oznaczyć jako nieprzeczytany.
 
-Na stronie głównej Centrum wiadomości wybierz wielokropek Więcej  opcji obok wiadomości, a następnie wybierz pozycję Oznacz **jako nieprzeczytane**.
+Na stronie głównej centrum komunikatów wybierz wielokropek **Więcej opcji** obok komunikatu, a następnie wybierz pozycję **Oznacz jako nieprzeczytaną**.
 
-Możesz również otworzyć wiadomość i oznaczyć ją jako nieprzeczytaną w panelu szczegółów.
+Możesz również otworzyć komunikat i oznaczyć go jako nieprzeczytany w panelu szczegółów.
   
 ## <a name="archive-and-restore"></a>Archiwizowanie i przywracanie
 
-Jeśli zobaczysz wiadomość, która nie dotyczy Ciebie lub została już zarchiwizowana, możesz ją zarchiwizować, aby usunąć ją ze skrzynki odbiorczej. Widok wyświetlany w Centrum wiadomości jest specyficzny dla Twojego konta użytkownika, więc jego archiwizacja z twojego widoku nie ma wpływu na innych administratorów. Istnieją dwa sposoby archiwizowania wiadomości.
+Jeśli zostanie wyświetlony komunikat, który cię nie dotyczy, lub być może został on już wdrożony, możesz zarchiwizować wiadomość, aby usunąć ją ze skrzynki odbiorczej. Widok widoczny w Centrum komunikatów jest specyficzny dla Twojego konta użytkownika, więc archiwizowanie go z widoku nie ma wpływu na innych administratorów. Istnieją dwa sposoby archiwizacji wiadomości.
 
-- Na stronie głównej Centrum wiadomości zaznacz wiadomość, a następnie wybierz pozycję Archiwizuj powyżej  listy wiadomości.
-- Otwórz wiadomość, a następnie **wybierz pozycję** Archiwizuj w górnej części okienka wiadomości.
+- Na stronie głównej Centrum wiadomości wybierz komunikat, a następnie wybierz pozycję **Archiwum** powyżej listy komunikatów.
+- Otwórz komunikat, a następnie wybierz pozycję **Archiwum** w górnej części okienka wiadomości.
 
-Chcesz odzyskać zarchiwizowane wiadomości? Nie ma sprawy.
+Chcesz odzyskać zarchiwizowanej wiadomości? Nie ma sprawy.
   
-1. Wybierz **kartę** Archiwum u góry Centrum wiadomości. Zostanie wyświetlona lista zarchiwizowane wiadomości.
+1. Wybierz kartę **Archiwum** w górnej części centrum wiadomości. Zostanie wyświetlona lista zarchiwizowanych komunikatów.
 
-1. Zaznacz wiadomość, wybierz pozycję **Przywróć**, a wiadomość zostanie przywrócona do skrzynki odbiorczej.
+1. Wybierz komunikat, wybierz pozycję **Przywróć**, a komunikat zostanie przywrócony do skrzynki odbiorczej.
 
 ## <a name="favorite-messages"></a>Ulubione wiadomości
 
-Aby oznaczyć wiadomość jako ulubioną, umieść wskaźnik myszy na tytule wiadomości **, aby** :::image type="icon" source="../../media/favorite-star.png" border="false"::: wyświetlić gwiazdkę Ulubione, która będzie można wybrać bezpośrednio po  wielokropka Więcej opcji. Po oznaczce wiadomości jako ulubione możesz je też sortować i filtrować.
+Aby oznaczyć wiadomość jako ulubioną, umieść kursor nad tytułem wiadomości, a zobaczysz gwiazdkę **Ulubione**:::image type="icon" source="../../media/favorite-star.png" border="false":::, którą możesz wybrać bezpośrednio po wielokropku **Więcej opcji**. Po oznaczeniu komunikatów jako ulubionych można je również sortować i filtrować.
 
-## <a name="scroll-messages-in-the-message-pane"></a>Przewijanie wiadomości w okienku wiadomości
+## <a name="scroll-messages-in-the-message-pane"></a>Przewijanie komunikatów w okienku wiadomości
 
-Po otwarciu wiadomości  :::image type="icon" source="../../media/updownarrows.png" border="false"::: w okienku odczytu możesz użyć strzałek w górę  i w dół u góry okienka, aby przejść do następnej lub poprzedniej wiadomości na liście.
+Po otwarciu komunikatu w okienku odczytu możesz użyć strzałek **w górę** i w **dół** :::image type="icon" source="../../media/updownarrows.png" border="false"::: w górnej części okienka, aby przejść do następnego lub poprzedniego komunikatu na liście.
 
-## <a name="track-your-message-center-tasks-in-planner"></a>Śledzenie zadań w centrum wiadomości w aplikacji Planner
+## <a name="track-your-message-center-tasks-in-planner"></a>Śledzenie zadań centrum komunikatów w programie Planner
 
-Wiele informacji z akcjami na temat zmian w Microsoft 365 jest wyświetlanych w centrum Microsoft 365 wiadomości. Śledzenie zmian wymagających wykonania, kiedy i przez kogo oraz śledzenie poszczególnych zadań do wykonania może być trudne. Warto również zanotować coś i dodać tag do późniejszego sprawdzenia. Wszystko to i nie tylko możesz wykonać podczas synchronizowania wiadomości z usługi centrum administracyjne platformy Microsoft 365 z usługą Microsoft Planner. Aby uzyskać więcej informacji, zobacz [Śledzenie zadań w centrum wiadomości w programie Planner](/office365/planner/track-message-center-tasks-planner).
+W centrum komunikatów Microsoft 365 pojawia się wiele praktycznych informacji o zmianach w usługach Microsoft 365. Śledzenie zmian, które wymagają wykonania zadań, kiedy i przez kogo oraz śledzić poszczególne zadania do ukończenia, może być trudne. Możesz również zanotować coś i oznaczyć go do sprawdzenia później. Możesz to zrobić i nie tylko podczas synchronizowania komunikatów z Centrum administracyjne platformy Microsoft 365 do Microsoft Planner. Aby uzyskać więcej informacji, zobacz [Śledzenie zadań centrum komunikatów w programie Planner](/office365/planner/track-message-center-tasks-planner).
 
-Aby uzyskać omówienie Centrum wiadomości, zobacz [Centrum wiadomości w programie Microsoft 365](message-center.md). Aby dowiedzieć się, jak skonfigurować preferencje językowe w celu włączenia tłumaczenia maszynowego dla wpisów w Centrum wiadomości, zobacz Tłumaczenie językowe wpisów [w Centrum wiadomości](language-translation-for-message-center-posts.md). Jeśli chcesz zaprogramować alternatywny sposób na uzyskiwanie informacji o kondycji usług w czasie rzeczywistym i komunikacji w Centrum wiadomości, zapoznaj się z artykułem Praca z interfejsem API komunikacji usługowej w programie [Microsoft Graph](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta).
+Aby zapoznać się z omówieniem centrum komunikatów, zobacz [Centrum komunikatów w Microsoft 365](message-center.md). Aby dowiedzieć się, jak ustawić preferencje językowe w celu włączenia tłumaczenia maszynowego dla wpisów w Centrum komunikatów, zobacz [Tłumaczenie języka dla wpisów w centrum wiadomości](language-translation-for-message-center-posts.md). Jeśli chcesz zaprogramować alternatywny sposób uzyskiwania informacji o kondycji usługi w czasie rzeczywistym i komunikacji centrum komunikatów, zapoznaj się z tematem [Praca z interfejsem API komunikacji usług w usłudze Microsoft Graph](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta).
 
-## <a name="unsubscribe-from-message-center-emails"></a>Anulowanie subskrypcji wiadomości e-mail w Centrum wiadomości
+## <a name="unsubscribe-from-message-center-emails"></a>Anulowanie subskrypcji w wiadomościach e-mail centrum wiadomości
 
-1. Podsumowanie wiadomości e-mail są domyślnie włączone i wysyłane na podstawowy adres e-mail. Aby przestać otrzymywać podsumowanie tygodniowe, wybierz pozycję **Preferencje** , a następnie pozycję Wyślij wiadomość **e-mail**.
-    - De-select the **Send a weekly digest of my messages checkbox** .
-    - Powiadomienie e-mail o głównych aktualizacjach jest osobną kontrolą. Jeśli nie chcesz otrzymywać wiadomości e-mail z powiadomieniami o głównych aktualizacjach, sprawdź, czy pole wyboru Wysyłaj mi wiadomości e-mail z głównymi aktualizacjami nie jest zaznaczone.
-    - Aby przestać otrzymywać powiadomienia e-mail o ochronie prywatności danych, upewnij  się, że pole wyboru Wysyłaj mi wiadomości e-mail do wiadomości dotyczących prywatności danych nie jest zaznaczone.  (Cotygodniowe podsumowanie nie obejmuje wiadomości dotyczących prywatności danych).
+1. Wiadomości e-mail szyfrowane są domyślnie włączone i wysyłane na podstawowy adres e-mail. Aby zatrzymać otrzymywanie skrótu tygodniowego, wybierz pozycję **Preferencje,** a następnie pozycję **Poczta e-mail**.
+    - Usuń zaznaczenie pola wyboru **Wyślij cotygodniowe podsumowanie moich komunikatów** .
+    - Powiadomienie e-mail dotyczące aktualizacji głównych jest oddzielną kontrolką. Jeśli nie chcesz otrzymywać powiadomień e-mail o głównych aktualizacjach, sprawdź, czy pole wyboru **Wyślij mi wiadomości e-mail z aktualizacjami głównymi nie jest zaznaczone** .
+    - Aby zatrzymać otrzymywanie powiadomień e-mail dotyczących komunikatów o ochronie prywatności danych, sprawdź, czy pole wyboru **Wyślij mi wiadomości e-mail dla wiadomości o ochronie prywatności danych** nie jest zaznaczone.  (Komunikaty o ochronie prywatności danych nie są uwzględniane w cotygodniowym podsumowaniu).
 
-2. Wybierz **pozycję Zapisz** , aby zachować zmiany.
+2. Wybierz pozycję **Zapisz** , aby zachować zmiany.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Konfigurowanie opcji wydania standardowego lub kierowanego](../manage/release-options-in-office-365.md) (artykuł)\
-[Zarządzanie tym Office które funkcje są wyświetlane w artykule](../manage/show-hide-new-features.md) Co nowego (artykuł)\
-[Dokumentacja dotycząca subskrypcji i rozliczeń dla firm](../../commerce/index.yml) (strona linku)
+[Konfigurowanie standardowych lub docelowych opcji wydania](../manage/release-options-in-office-365.md) (artykuł)\
+[Zarządzanie funkcjami Office wyświetlanymi w artykule Co nowego](../manage/show-hide-new-features.md) (artykuł)\
+[Subskrypcje biznesowe i dokumentacja rozliczeń](../../commerce/index.yml) (strona linku)

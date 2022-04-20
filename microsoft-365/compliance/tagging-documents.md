@@ -1,5 +1,5 @@
 ---
-title: Oznaczanie dokumentów w zestawie recenzji
+title: Taguj dokumenty w zestawie do przeglądu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,124 +15,124 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Otagowanie dokumentów w zestawie recenzji pomaga usunąć niepotrzebną zawartość i zidentyfikować odpowiednią zawartość w Advanced eDiscovery przypadku.
+description: Tagowanie dokumentów w zestawie przeglądów pomaga usunąć niepotrzebną zawartość i zidentyfikować odpowiednią zawartość w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 43b0bf42bcd94f0bc3ade169ee5b41ee33dcbc5a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c1d30cdefe0ae93fe7c87a1c5ecc9712d80bc3fb
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984947"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64931610"
 ---
-# <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Oznaczanie dokumentów w zestawie recenzji w programie Advanced eDiscovery
+# <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Tagowanie dokumentów w zestawie przeglądów w usłudze eDiscovery (Premium)
 
-Organizowanie zawartości w zestawie recenzji jest ważne do ukończenia różnych przepływów pracy w procesie zbierania elektronicznych materiałów dowodowych. Obejmuje to:
+Organizowanie zawartości w zestawie przeglądów jest ważne, aby ukończyć różne przepływy pracy w procesie zbierania elektronicznych materiałów dowodowych. Obejmuje to:
 
-- Obliczanie niepotrzebnej zawartości
+- Ubój niepotrzebnej zawartości
 
 - Identyfikowanie odpowiedniej zawartości
 
-- Identyfikowanie zawartości, która musi zostać przejmowana przez eksperta lub pełnomocnika
+- Identyfikowanie zawartości, która musi zostać zweryfikowana przez eksperta lub adwokata
 
-Gdy eksperci, prawnicy lub inni użytkownicy przeglądają zawartość zestawu recenzji, ich opinie dotyczące tej zawartości można chwycić za pomocą znaczników. Jeśli na przykład celem jest zmierzowanie niepotrzebnej zawartości, użytkownik może otagować dokumenty za pomocą tagu, takiego jak "nie odpowiada". Po przejrzeniu i oznaczeniu zawartości można utworzyć wyszukiwanie zestawu recenzji w celu wykluczenia z witryny wszelkiej zawartości oznaczonej jako nieaktywna. Ten proces eliminuje nie odpowiadanie zawartości z kolejnych kroków przepływu pracy zbierania elektronicznych materiałów dowodowych. Panel otagowania w zestawie recenzji można dostosować do każdej sprawy, tak aby tagi obsługiły przepływ pracy przeglądu zamierzony w przypadku sprawy.
+Gdy eksperci, adwokaci lub inni użytkownicy przeglądają zawartość w zestawie przeglądów, ich opinie dotyczące zawartości mogą być przechwytywane przy użyciu tagów. Jeśli na przykład celem jest usunięcie niepotrzebnej zawartości, użytkownik może oznaczyć dokumenty tagiem, takim jak "nie odpowiada". Po przejrzeniu i otagowaniu zawartości można utworzyć wyszukiwanie zestawu przeglądów, aby wykluczyć dowolną zawartość oznaczoną jako "niesponsywna". Ten proces eliminuje niesponsywną zawartość z następnych kroków w przepływie pracy zbierania elektronicznych materiałów dowodowych. Panel tagowania w zestawie przeglądów można dostosować dla każdego przypadku, aby tagi obsługiwały zamierzony przepływ pracy przeglądu dla danego przypadku.
 
 > [!NOTE]
-> Zakres tagów jest Advanced eDiscovery przypadku. Oznacza to, że w przypadku sprawy może być tylko jeden zestaw tagów, za pomocą których recenzentzy mogą oznaczać dokumenty zestawu recenzji. W tym samym przypadku nie można skonfigurować innego zestawu tagów do używania w różnych zestawach recenzji.
+> Zakres tagów to przypadek zbierania elektronicznych materiałów dowodowych (Premium). Oznacza to, że przypadek może mieć tylko jeden zestaw tagów, których recenzenci mogą używać do tagowania dokumentów zestawu przeglądów. W tym samym przypadku nie można skonfigurować innego zestawu tagów do użycia w różnych zestawach przeglądów.
 
 ## <a name="tag-types"></a>Typy tagów
 
-Advanced eDiscovery udostępnia dwa typy tagów:
+Funkcja zbierania elektronicznych materiałów dowodowych (Premium) udostępnia dwa typy tagów:
 
-- **Tagi wyboru pojedynczego**: Ogranicza recenzentów do wybierania pojedynczego tagu w grupie. Te typy tagów mogą być przydatne w celu zagwarantowania, że recenzentzy nie wybierają tagów powodującego konflikt, takich jak "czas odpowiedzi" i "nie odpowiada". Tagi wyboru pojedynczego są wyświetlane jako przyciski radiowe.
+- **Tagi pojedynczego wyboru**: ogranicza recenzentów do wybierania pojedynczego tagu w grupie. Te typy tagów mogą być przydatne, aby upewnić się, że recenzenci nie wybierają tagów powodujących konflikt, takich jak "responsive" i "non-responsive". Tagi pojedynczego wyboru są wyświetlane jako przyciski radiowe.
 
-- **Tagi wyboru wielokrotnego** wyboru: Zezwalaj na zaznaczanie wielu tagów w grupie przez recenzowanie. Tagi tego typu są wyświetlane jako pola wyboru.
+- **Tagi wielokrotnego wyboru**: zezwalaj przeglądom na wybieranie wielu tagów w grupie. Te typy tagów są wyświetlane jako pola wyboru.
 
-## <a name="tag-structure"></a>Struktura znaczników
+## <a name="tag-structure"></a>Struktura tagów
 
-Oprócz typów tagów można zmienić strukturę zorganizowania tagów w panelu tagów, aby tagi są bardziej intuicyjne. Tagi są pogrupowane według sekcji. Wyszukiwanie zestawu recenzji umożliwia wyszukiwanie według tagu i sekcji tagów. Oznacza to, że możesz utworzyć wyszukiwanie zestawu recenzji w celu pobrania dokumentów oznaczonych dowolnym tagiem w sekcji.
+Oprócz typów tagów struktura sposobu organizowania tagów w panelu tagów może służyć do bardziej intuicyjnego tagowania dokumentów. Tagi są grupowane według sekcji. Wyszukiwanie zestawu przeglądów obsługuje możliwość wyszukiwania według tagów i według sekcji tagów. Oznacza to, że możesz utworzyć wyszukiwanie zestawu przeglądów w celu pobrania dokumentów oznaczonych dowolnym tagiem w sekcji.
 
-![Oznacz sekcje w panelu znaczników.](../media/TagTypes.png)
+![Sekcje tagów w panelu tagów.](../media/TagTypes.png)
 
-Tagi można dodatkowo organizować, zagnieżdżając je w sekcji. Jeśli na przykład celem jest zidentyfikowanie zawartości z uprawnieniami i tagowanie jej, można użyć zagnieżdżania, aby było jasne, że recenzent może otagować dokument jako "Uprawnienia", a następnie wybrać typ uprawnień, sprawdzając odpowiedni tag zagnieżdżony.
+Tagi można dodatkowo organizować, zagnieżdżając je w sekcji. Jeśli na przykład celem jest identyfikowanie i oznaczanie zawartości uprzywilejowanej, można użyć zagnieżdżenia, aby wyjaśnić, że recenzent może oznaczyć dokument jako "Uprzywilejowany" i wybrać typ uprawnień, sprawdzając odpowiedni zagnieżdżony tag.
 
 ![Zagnieżdżone tagi w sekcji tagów.](../media/NestingTags.png)
 
 ## <a name="creating-and-applying-tags"></a>Tworzenie i stosowanie tagów
 
-Oznaczanie elementów w zestawach recenzji jest procesem dwuetapowym. Pierwszym krokiem jest utworzenie tagów, które zostaną następnie zastosowane w celu przejrzenia zestawu elementów. Po utworzeniu tagów ty i inni recenzentzy możecie zastosować je do elementów w zestawie recenzji. Jak już wyjaśniono, Advanced eDiscovery przypadku może mieć tylko jeden zestaw tagów, których recenzentzy mogą używać do oznaczania elementów zestawu recenzji.
+Tagowanie elementów w zestawach przeglądów jest procesem dwuetapowym. Pierwszym krokiem jest utworzenie tagów, które są następnie stosowane do przeglądania ustawionych elementów. Po utworzeniu tagów ty i inni recenzenci możesz zastosować je do elementów w zestawie przeglądów. Jak wyjaśniono wcześniej, przypadek zbierania elektronicznych materiałów dowodowych (Premium) może mieć tylko jeden zestaw tagów, których recenzenci mogą używać do tagowania elementów zestawu przeglądów.
 
 ### <a name="create-tags"></a>Tworzenie tagów
 
-Przed zastosowaniem tagów do elementów w zestawie recenzji musisz utworzyć strukturę tagów.
+Przed zastosowaniem tagów do elementów w zestawie przeglądów należy utworzyć strukturę tagów.
 
-1. Otwórz zestaw recenzji, przejdź do paska poleceń i wybierz pozycję **Oznakuj pliki**.
+1. Otwórz zestaw przeglądów, przejdź do paska poleceń i wybierz pozycję **Taguj pliki**.
 
-2. Na **wysuwana strona Pliki** znaczników kliknij pozycję **Utwórz/edytuj tagi**.
+2. Na stronie Wysuwane **pliki tagów** kliknij pozycję **Utwórz/edytuj tagi**.
 
-   ![Na wysuwanych stronie kliknij pozycję Utwórz/edytuj tagi.](../media/CreateAeDTags1.png)
+   ![Kliknij pozycję Utwórz/edytuj tagi na stronie wysuwanej.](../media/CreateAeDTags1.png)
 
 3. Na stronie **Tagi** wybierz pozycję **Dodaj sekcję**.
 
-4. Wpisz tytuł grupy tagów i opcjonalny opis, a następnie kliknij **pozycjęZapis**.
+4. Wpisz tytuł grupy tagów i opcjonalny opis, a następnie kliknij pozycję **Zapisz**.
 
-5. Wybierz menu rozwijane z trzema kropkami obok tytułu grupy tagów i kliknij pole wyboru **Dodaj** lub **przycisk Dodaj opcję**.
+5. Wybierz menu rozwijane z potrójną kropką obok tytułu grupy tagów, a następnie kliknij **pozycję Dodaj pole wyboru** lub **przycisk Dodaj opcję**.
 
-6. Wpisz nazwę i opis pola wyboru lub przycisku opcji.
+6. Wpisz nazwę i opis dla pola wyboru lub przycisku opcji.
 
-7. Powtórz tę procedurę, aby utworzyć nowe sekcje tagów, opcje znaczników i pola wyboru. Poniższy zrzut ekranu przedstawia na przykład grupę tagów o nazwie **Recenzja**, która zawiera  pola wyboru Odpowiadanie **i Nie** odpowiadanie.
+7. Powtórz ten proces, aby utworzyć nowe sekcje tagów, opcje tagów i pola wyboru. Na przykład poniższy zrzut ekranu przedstawia grupę tagów o nazwie **Review**, która składa się z pól wyboru **Responsive** i **Not-responsive** .
 
-   ![Konfigurowanie struktury tagów.](../media/ManageTagOptions3.png)
+   ![Skonfiguruj strukturę tagów.](../media/ManageTagOptions3.png)
 
 ### <a name="apply-tags"></a>Stosowanie tagów
 
-Po skonfigurowaniu struktury tagów recenzentzy mogą stosować tagi do elementów w zestawie recenzji, konfigurując ustawienia tagów.
+Dzięki strukturze tagów recenzenci mogą stosować tagi do elementów w zestawie przeglądów, konfigurując ustawienia tagowania.
 
-1. Na pasku poleceń zestawu recenzji wybierz pozycję **Otaguj** pliki, aby wyświetlić wysuwaną stronę Tagowanie plików (nazywaną również  *panelem tagowania*).
+1. Na pasku poleceń zestawu przeglądów wybierz pozycję **Taguj pliki** , aby wyświetlić stronę wysuwaną **Pliki tagów** (nazywaną również *panelem tagowania*).
 
-   ![Kliknij pozycję Otaguj pliki na pasku poleceń, aby otworzyć panel tagowania.](../media/TagFilesFlyoutPage.png)
+   ![Kliknij pozycję Taguj pliki na pasku poleceń, aby otworzyć panel tagowania.](../media/TagFilesFlyoutPage.png)
 
-2. Na stronie **wysuwu** Pliki znaczników możesz ustawić następujące opcje w celu skonfigurowania sposobu tagowania elementów wyświetlanych w zestawie recenzji. Filtry lub zapytania filtru stosowane obecnie do zestawu recenzji określają, które elementy są wyświetlane, a zatem elementy, do których można stosować tagi. Aby uzyskać więcej informacji, zobacz [Wykonywanie zapytań i filtrowanie zawartości w zestawie recenzji](review-set-search.md).
+2. Na stronie Wysuwane **pliki tagów** można ustawić następujące opcje, aby skonfigurować sposób tagowania elementów wyświetlanych w zestawie przeglądów. Filtry lub zapytania filtrów stosowane obecnie do zestawu przeglądów określają, które elementy są wyświetlane, a zatem elementy, do których można zastosować tagi. Aby uzyskać więcej informacji, zobacz [Wykonywanie zapytań i filtrowanie zawartości w zestawie przeglądów](review-set-search.md).
 
-   - **Wybierz zaznaczenie**. Wybierz jedną z następujących opcji, aby określić zakres elementów, do których mają być stosowane tagi.
+   - **Wybierz opcję zaznaczenia**. Wybierz jedną z następujących opcji, aby określić zakres elementów do zastosowania tagów.
 
-      - **Oznacz zaznaczone elementy**: ta opcja powoduje zastosowanie tagów do wybranych elementów. Możesz wybrać elementy przed uruchomieniem panelu otagowania lub po nim. Ta opcja powoduje wyświetlenie (w czasie rzeczywistym) liczby zaznaczonych elementów, które zostaną otagowane.
+      - **Tagowanie wybranych elementów**: ta opcja stosuje tagi do wybranych elementów. Możesz wybrać elementy przed uruchomieniem panelu tagowania lub po jego uruchomieniu. Ta opcja wyświetla (w czasie rzeczywistym) liczbę wybranych elementów, które zostaną oznaczone tagiem.
 
-      - **Oznacz wszystkie elementy na liście**: ta opcja powoduje zastosowanie tagów do wszystkich elementów wyświetlanych w zestawie recenzji. Ta opcja wyświetla łączną liczbę elementów, które będą otagowane.
+      - **Otaguj wszystkie elementy na liście**: ta opcja stosuje tagi do wszystkich elementów wyświetlanych w zestawie przeglądów. Ta opcja wyświetla całkowitą liczbę elementów, które zostaną oznaczone tagiem.
 
-   - **Rozszerzanie zaznaczenia**: Za pomocą następujących opcji można oznaczać dodatkowe elementy, które są powiązane z elementami oznakowanych w zestawie recenzji.
+   - **Rozwiń zaznaczenie**: Użyj następujących opcji, aby oznaczyć dodatkowe elementy powiązane z oznakowanymi elementami w zestawie przeglądów.
 
-      - **Uwzględnij skojarzone elementy rodziny**: ta opcja powoduje zastosowanie tego samego tagu do skojarzonych elementów rodzinnych otagowanych elementów.  *Elementy rodziny* to elementy, które mają taką samą wartość właściwości metadanych **FamilyId** . Na przykład dokument dołączony do wiadomości e-mail ma ten sam adres **FamilyId** co wiadomość e-mail. Jeśli w tym przykładzie jest zaznaczona ta opcja, wiadomość e-mail i dokument są otagowane, mimo że dokument może nie zostać uwzględniony na liście elementów zestawu recenzji.
+      - **Dołącz skojarzone elementy rodzinne**: ta opcja stosuje ten sam tag do skojarzonych elementów rodziny elementów, które są oznaczone tagiem.  *Elementy rodziny* to elementy, które mają tę samą wartość właściwości metadanych **FamilyId** . Na przykład dokument dołączony do wiadomości e-mail udostępnia ten sam identyfikator **FamilyId** co wiadomość e-mail. Jeśli więc ta opcja zostanie wybrana w tym przykładzie, wiadomość e-mail i dokument zostaną oznaczone tagiem, mimo że dokument może nie zostać uwzględniony na liście elementów zestawu przeglądów.
 
-      - **Uwzględnij skojarzone elementy** konwersacji: ta opcja powoduje zastosowanie tego samego tagu do wszystkich elementów, które znajdują się w tym samym Teams lub Yammer co otagowane elementy. *Elementy konwersacji* to elementy, które mają taką samą wartość właściwości metadanych **ConversationId** . Wszystkie wiadomości, wpisy i odpowiedni plik transkrypcji konwersacji mają ten **samid konwersacji**. Jeśli ta opcja jest zaznaczona, oznacza to, że wszystkie elementy tej samej konwersacji (i plik transkrypcji) są tagowane, mimo że niektóre z tych elementów konwersacji mogą nie być uwzględnione na liście elementów zestawu recenzji. Aby uzyskać więcej informacji na temat elementów konwersacji, zobacz sekcję "Grupowanie" w te Advanced eDiscovery [przepływu pracy dla zawartości w programie Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
+      - **Dołącz skojarzone elementy konwersacji**: ta opcja stosuje ten sam tag do wszystkich elementów, które znajdują się w tej samej Teams lub Yammer konwersacji co elementy, które są oznakowane. *Elementy konwersacji* to elementy, które mają tę samą wartość właściwości metadanych **ConversationId** . Wszystkie komunikaty, wpisy i odpowiedni plik transkrypcji konwersacji mają ten sam **identyfikator Konwersacji**. Jeśli ta opcja jest zaznaczona, wszystkie elementy w tym samym pliku konwersacji (i pliku transkrypcji) są oznaczane tagiem, mimo że niektóre z tych elementów konwersacji mogą nie zostać uwzględnione na liście elementów zestawu przeglądów. Aby uzyskać więcej informacji na temat elementów konwersacji, zobacz sekcję "Grupowanie" w [przepływie pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
 
-      - **Brak**: ta opcja nie powoduje zastosowania tagów do elementów rodzinnych ani do konwersacji. Powoduje ono zastosowanie tagów tylko do zaznaczonych elementów lub do wszystkich elementów na liście zestawu recenzji.
+      - **Brak**: ta opcja nie stosuje tagów do elementów rodziny ani elementów konwersacji. Stosuje tagi tylko do elementów, które są zaznaczone lub do wszystkich elementów na liście zestawów przeglądów.
 
    > [!NOTE]
-   > Uwzględnienie skojarzonych elementów rodziny lub konwersacji nie spowoduje zmiany liczby elementów wyświetlanych w opcjach **Oznacz zaznaczone** elementy lub **Oznacz wszystkie elementy w opcjach** listy. Oznacza to, że liczba skojarzonych elementów, które zostaną otagowane, nie jest wyświetlana.
+   > Uwzględnienie skojarzonych elementów rodziny lub konwersacji nie spowoduje zmiany liczby elementów wyświetlanych w obszarze **Tagowanie wybranych elementów** ani **Tagowanie wszystkich elementów na liście** . Innymi słowy, liczba skojarzonych elementów, które zostaną oznaczone, nie jest wyświetlana.
 
-   - **Przypisz tagi**: w tej sekcji są wyświetlane tagi (uporządkowane według grup tagów), które można stosować do dokumentów. W jednej grupie tagów można zastosować tylko jeden tag wyboru pojedynczego (oznaczony za pomocą przycisku radiowego). Można jednak zastosować wiele tagów wielokrotnego wyboru (które są oznaczone polem wyboru).
+   - **Przypisz tagi**: W tej sekcji są wyświetlane tagi (uporządkowane według grup tagów), które można zastosować do dokumentów. Można zastosować tylko jeden tag jednego wyboru (identyfikowany za pomocą przycisku radiowego) dla grupy tagów. Można jednak zastosować wiele tagów wielokrotnego wyboru (które są identyfikowane przez pole wyboru).
 
-3. Kliknij **pozycję Zastosuj tagi** , aby zastosować tagi w zależności od ustawień.
+3. Kliknij **pozycję Zastosuj tagi** , aby zastosować tagi na podstawie ustawień.
 
-   Dla **każdej grupy** tagów w panelu tagów zostanie wyświetlony komunikat o stanie Stosowania znaczników wskazujący, że zadanie tagowania zostało uruchomione. Tagi dla każdej grupy tagów w sekcji **Przypisywanie tagów** są wyszańne do czasu ukończenia zadania.
+   Komunikat **o stanie Stosowanie tagów** jest wyświetlany dla każdej grupy tagów na panelu tagowania, aby wskazać, że zadanie tagowania zostało uruchomione. Tagi dla każdej grupy **tagów w sekcji Przypisywanie tagów** są wyszarzone do momentu ukończenia zadania.
 
 > [!TIP]
-> Jeśli jesteś w trakcie konfigurowania ustawień w panelu tagów, ale chcesz zacząć od początku, kliknij pozycję **Resetuj** przypisanie tagu, aby wyczyścić bieżące ustawienie. Ta kontrolka nie dotyczy elementów, które są już oznakowane, ani nie zmienia ani nie usuwa tagów z wcześniej otagowanych elementów.  
+> Jeśli konfigurujesz ustawienia na panelu tagowania, ale chcesz zacząć od nowa, kliknij przycisk **Resetuj przypisanie tagu** , aby wyczyścić bieżące ustawienie. Ta kontrolka nie ma zastosowania do elementów, które zostały już oznakowane, i nie zmienia ani nie usuwa tagów z wcześniej oznakowanych elementów.  
 
-#### <a name="monitor-tagging-jobs"></a>Monitorowanie zadań otagowania
+#### <a name="monitor-tagging-jobs"></a>Monitorowanie zadań tagowania
 
-Po oznaczeniu dużej liczby elementów (lub wybraniu opcji **Oznacz** wszystkie elementy na liście) jest tworzone zadanie Otagowanie dokumentów. Stan tego zadania można wyświetlić **na karcie Zadania** w tym przypadku. Ułatwia to śledzenie dużych zadań tagowania, których ukończenie może zająć dużo czasu. W niektórych przypadkach zadanie tagowania może być ukończone, ale w panelu otagowania nadal jest wyświetlany komunikat o stanie stosowania tagów. Aby zaktualizować stan otagowania zadań, kliknij pozycję **Odśwież** na pasku poleceń zestawu recenzji.
+Po otagowaniu dużej liczby elementów (lub wybraniu opcji **Taguj wszystkie elementy na liście**) zostanie utworzone zadanie **Tagowanie dokumentów** . Stan tego zadania można wyświetlić na karcie **Zadania** w przypadku. Ułatwia to śledzenie dużych zadań tagowania, które mogą zająć dużo czasu. W niektórych przypadkach zadanie tagowania może zostać ukończone, ale komunikat **o stanie Stosowanie tagów** na panelu tagowania jest nadal wyświetlany. Aby zaktualizować stan zadań tagowania, kliknij przycisk **Odśwież** na pasku poleceń zestawu przeglądów.
 
 ## <a name="removing-tags"></a>Usuwanie tagów
 
-Możesz usuwać tagi z elementów w zestawie recenzji. Nie można jednak usunąć tagu jednorazowego wyboru, który został zastosowany do elementu zestawu recenzji. Tag z pojedynczym wyborem można zmienić tylko na inny tag z pojedynczym wyborem w obrębie tej samej grupy tagów.
+Tagi z elementów można usunąć w zestawie przeglądów. Nie można jednak usunąć tagu pojedynczego wyboru, który został zastosowany do elementu zestawu przeglądów. Tag pojedynczego wyboru można zmienić tylko na inny tag pojedynczego wyboru w tej samej grupie tagów.
 
 Aby usunąć tag:
 
-1. Zaznacz elementy, z których chcesz usunąć tag.
+1. Wybierz elementy, z które chcesz usunąć tag.
 
-2. Kliknij **pozycję Otaguj** pliki, aby wyświetlić panel tagów.
+2. Kliknij **pozycję Taguj pliki** , aby wyświetlić panel tagowania.
 
-3. W **obszarze Przypisywanie** tagów usuń jego zaznaczenie, a następnie kliknij pozycję **Zastosuj tagi**.
+3. W obszarze **Przypisywanie tagów** usuń zaznaczenie tagu, a następnie kliknij pozycję **Zastosuj tagi**.
 
-Możesz również użyć poprzedniej procedury, aby zmienić tag zastosowany do wybranych elementów. Po odznaczeniu bieżącego tagu możesz wybrać inny.
+Możesz również użyć poprzedniej procedury, aby zmienić tag zastosowany do wybranych elementów. Po usunięciu zaznaczenia bieżącego tagu możesz wybrać inny.

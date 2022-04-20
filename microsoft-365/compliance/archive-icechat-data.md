@@ -11,208 +11,208 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Administratorzy mogą skonfigurować łącznik w celu importowania i archiwizowania danych z narzędzia CZAT ICE do Microsoft 365. Dzięki temu można archiwizować dane ze źródeł danych innych firm w programie Microsoft 365, aby zarządzać danymi innych firm przy użyciu funkcji zgodności, takich jak archiwizacja ze względu na przepisy prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: c29a39c8c398a0d8721931cbcb770aa18d0f3c4b
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z narzędzia ICE Chat do Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
+ms.openlocfilehash: 51c79127894f506f2f0f59a9c883f1b4c4bb5f24
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568099"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937328"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Konfigurowanie łącznika do archiwizowania danych czatu ICE
 
-Użyj natywnego łącznika w Centrum zgodności platformy Microsoft 365, aby zaimportować i zarchiwizować dane czatu usług finansowych z narzędzia do współpracy za pomocą czatu ICE. Po skonfigurowaniu i skonfigurowaniu łącznika połączy się on z witryną bezpiecznego portalu FTP (SFTP) w Twojej organizacji raz dziennie, konwertuje zawartość wiadomości czatu na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych w programie Microsoft 365.
+Użyj natywnego łącznika w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane czatu usług finansowych z narzędzia do współpracy ICE Chat. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z bezpieczną witryną FTP (SFTP) w organizacji raz dziennie, konwertuje zawartość wiadomości czatu na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych w Microsoft 365.
 
-Po Microsoft 365 zapisaniu danych czatu ICE w skrzynkach pocztowych użytkowników możesz zastosować funkcje zgodności, takie jak archiwizacja w związku z postępowaniem sądowym, zbierania elektronicznych materiałów dowodowych, archiwizowanie, inspekcja, zgodność z komunikacją i zasady przechowywania Microsoft 365 do danych czatu ICE. Na przykład możesz przeszukiwać wiadomości w czacie ICE przy użyciu wyszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane czatu ICE ze współpracownikiem w Advanced eDiscovery przypadku. Importowanie i archiwizowanie danych w programie Microsoft 365 za pomocą łącznika ice chat może ułatwić organizacji zachowania zgodności z zasadami rządowymi i przepisami regulacyjną.
+Po przechowywaniu danych czatu ICE w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, archiwizowanie, inspekcja, zgodność z komunikacją i zasady przechowywania Microsoft 365 do danych czatu ICE. Na przykład możesz wyszukiwać wiadomości ice chat przy użyciu wyszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane ice chat z opiekunem w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika ICE Chat może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
-## <a name="overview-of-archiving-ice-chat-data"></a>Omówienie archiwizowania danych czatu ICE
+## <a name="overview-of-archiving-ice-chat-data"></a>Omówienie archiwizacji danych czatu ICE
 
-Poniższe omówienie przedstawia proces używania łącznika do archiwizowania danych czatu ICE w Microsoft 365.
+W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania danych czatu ICE w Microsoft 365.
 
-![Przepływ pracy archiwizacji czatu ICE.](../media/ICEChatConnectorWorkflow.png)
+![Przepływ pracy archiwizacji ice chat.](../media/ICEChatConnectorWorkflow.png)
 
-1. Twoja organizacja współpracuje z czatem ICE, aby skonfigurować witrynę ICE Chat SFTP. Wraz z czatem ICE Chat skonfigurujesz czat ICE, aby kopiować wiadomości czatu do witryny ICE Chat SFTP.
+1. Twoja organizacja współpracuje z ICE Chat, aby skonfigurować witrynę ICE Chat SFTP. Będziesz również współpracować z ICE Chat, aby skonfigurować ice chat do kopiowania wiadomości czatu do witryny ICE Chat SFTP.
 
-2. Co 24 godziny wiadomości czatu z witryny ICE Chat są kopiowane do witryny ICE Chat SFTP.
+2. Raz na 24 godziny wiadomości czatu z ICE Chat są kopiowane do witryny ICE Chat SFTP.
 
-3. Łącznik ICE Chat tworzyć w Centrum zgodności platformy Microsoft 365 łączy się z witryną ICE Chat SFTP codziennie i przenosi wiadomości czatu z poprzednich 24 godzin do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft. Łącznik konwertuje także treść wiadomości czatu na format wiadomości e-mail.
+3. Łącznik ICE Chat tworzony w portalu zgodności codziennie łączy się z witryną ICE Chat SFTP i przesyła komunikaty rozmów z poprzednich 24 godzin do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft. Łącznik konwertuje również zawartość masażu czatu na format wiadomości e-mail.
 
-4. Łącznik zaim importuje elementy wiadomości czatu do skrzynek pocztowych konkretnych użytkowników. W skrzynkach pocztowych użytkowników zostanie utworzony nowy folder o nazwie **ICE Chat** , a elementy wiadomości czatu zostaną zaimportowane do tego folderu. Łącznik działa przy użyciu wartości właściwości *SenderEmail i* *RecipientEmail* . Każda wiadomość czatu zawiera te właściwości, które są wypełnione adresem e-mail nadawcy i każdego adresata/uczestnika wiadomości czatu.
+4. Łącznik importuje elementy wiadomości czatu do skrzynek pocztowych określonych użytkowników. Nowy folder o nazwie **ICE Chat** jest tworzony w skrzynkach pocztowych użytkownika, a elementy wiadomości czatu są importowane do tego folderu. Łącznik jest używany przy użyciu wartości właściwości *SenderEmail* i *RecipientEmail* . Każda wiadomość czatu zawiera te właściwości, które są wypełniane adresem e-mail nadawcy i każdego adresata/uczestnika wiadomości czatu.
 
-   Oprócz automatycznego mapowania użytkowników, które korzysta z wartości właściwości *SenderEmail* i *RecipientEmail* (co oznacza, że łącznik importuje wiadomość czatu do skrzynki pocztowej nadawcy i skrzynek pocztowych każdego adresata), możesz również zdefiniować niestandardowe mapowanie użytkowników, przesyłając plik mapowania plików CSV. Ten plik mapowania zawiera identyfikator *wiadomości błyskawicznych* w czacie ICE oraz Microsoft 365 adres skrzynki pocztowej dla każdego użytkownika w organizacji. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz plik mapowania niestandardowego, dla każdego elementu czatu łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli nie znajdzie ona prawidłowego konta użytkownika programu Microsoft 365 odpowiadającego identyfikatorowi imId czatu ICE, łącznik użyje właściwości *SenderEmail* i *RecipientEmail* elementu czatu do zaimportowania elementu do skrzynek pocztowych uczestników czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w pliku mapowania niestandardowego albo we właściwościach *SenderEmail* i *RecipientEmail*, element nie zostanie zaimportowany.
+   Oprócz automatycznego mapowania użytkownika korzystającego z wartości właściwości *SenderEmail* i *RecipientEmail* (co oznacza, że łącznik importuje wiadomość czatu do skrzynki pocztowej nadawcy i skrzynek pocztowych każdego adresata), możesz również zdefiniować mapowanie użytkownika niestandardowego, przekazując plik mapowania CSV. Ten plik mapowania zawiera identyfikator *IMId* czatu ICE i odpowiedni adres skrzynki pocztowej Microsoft 365 dla każdego użytkownika w organizacji. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz plik mapowania niestandardowego, dla każdego elementu czatu łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli nie znajdzie prawidłowego konta użytkownika Microsoft 365, które odpowiada identyfikatorowi IMId czatu ICE użytkownika, łącznik *użyje właściwości SenderEmail* i *RecipientEmail* elementu czatu, aby zaimportować element do skrzynek pocztowych uczestników czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w pliku mapowania niestandardowego lub we właściwościach *SenderEmail* i *RecipientEmail*, element nie zostanie zaimportowany.
 
 ## <a name="before-you-set-up-a-connector"></a>Przed skonfigurowaniem łącznika
 
-Niektóre kroki implementacji wymagane do archiwizowania danych czatu ICE są zewnętrzne Microsoft 365 i muszą zostać ukończone, zanim będzie można utworzyć łącznik w centrum zgodności.
+Niektóre kroki implementacji wymagane do archiwizacji danych ice chat są zewnętrzne dla Microsoft 365 i muszą zostać ukończone przed utworzeniem łącznika w centrum zgodności.
 
-- Ice Chat nalicza dla klientów opłatę za zgodność zewnętrzną. Twoja organizacja powinna skontaktować się z grupą sprzedaży Ice Chat w celu omówienia i podpisania umowy dotyczącej usług danych ICE Chat, którą można uzyskać na stronie [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf). Niniejsza umowa jest zawarta między czatem ICE a Twoją organizacją i nie obejmuje firmy Microsoft. Po skonfigurowaniu witryny SFTP czatu ICE w kroku 2 czat ICE podaje poświadczenia FTP bezpośrednio dla Twojej organizacji. Następnie należy podać te poświadczenia firmie Microsoft podczas konfigurowania łącznika w kroku 3.
+- Ice Chat pobiera od klientów opłatę za zgodność zewnętrzną. Twoja organizacja powinna skontaktować się z grupą sprzedaży ICE Chat w celu omówienia i podpisania umowy dotyczącej usług danych ICE Chat, którą można uzyskać pod adresem [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf). Niniejsza umowa jest zawarta między ICE Chat i Twoją organizacją i nie obejmuje firmy Microsoft. Po skonfigurowaniu witryny ICE Chat SFTP w kroku 2 usługa ICE Chat udostępnia poświadczenia FTP bezpośrednio twojej organizacji. Następnie możesz podać te poświadczenia firmie Microsoft podczas konfigurowania łącznika w kroku 3.
 
-- Przed utworzeniem łącznika w kroku 3 należy skonfigurować witrynę ICE Chat SFTP. Po zakończeniu pracy w czacie ICE w celu skonfigurowania witryny SFTP dane z portalu ICE Chat są codziennie przekazywane do witryny SFTP. Łącznik, który tworzysz w kroku 3, łączy się z tą witryną SFTP i przesyła dane czatu do Microsoft 365 pocztowych. SfTP szyfruje również dane czatu ICE, które są wysyłane do skrzynek pocztowych w trakcie procesu przenoszenia.
+- Przed utworzeniem łącznika w kroku 3 należy skonfigurować witrynę ICE Chat SFTP. Po współpracy z ICE Chat w celu skonfigurowania witryny SFTP dane z ice chat są codziennie przekazywane do witryny SFTP. Łącznik utworzony w kroku 3 łączy się z tą witryną SFTP i przesyła dane czatu do Microsoft 365 skrzynek pocztowych. Protokół SFTP szyfruje również dane czatu ICE, które są wysyłane do skrzynek pocztowych podczas procesu transferu.
 
-- Aby skonfigurować łącznik ice chat, musisz używać klawiszy i kluczowych zwrotów dla plików PGP (Pretty Good Privacy) i Secure Shell (SSH). Te klucze służą do konfigurowania witryny ICE Chat SFTP i są używane przez łącznik do łączenia się z witryną ICE Chat SFTP w celu importowania danych do Microsoft 365. Klawisz PGP służy do konfigurowania szyfrowania danych przesyłanych z witryny ICE Chat SFTP do Microsoft 365. Klawisz SSH służy do konfigurowania bezpiecznej powłoki w celu umożliwienia bezpiecznego logowania zdalnego, gdy łącznik łączy się z witryną ICE Chat SFTP.
+- Aby skonfigurować łącznik ICE Chat, należy użyć kluczy i haseł kluczy w celu zapewnienia dobrej prywatności (PGP) i protokołu Secure Shell (SSH). Te klucze są używane do konfigurowania witryny ICE Chat SFTP i używane przez łącznik do nawiązywania połączenia z witryną ICE Chat SFTP w celu zaimportowania danych do Microsoft 365. Klucz PGP służy do konfigurowania szyfrowania danych przesyłanych z witryny ICE Chat SFTP do Microsoft 365. Klucz SSH służy do konfigurowania bezpiecznej powłoki w celu włączenia bezpiecznego zdalnego logowania, gdy łącznik nawiązuje połączenie z witryną ICE Chat SFTP.
 
-  Podczas konfigurowania łącznika możesz używać kluczy publicznych i kluczowych zwrotów dostarczanych przez firmę Microsoft lub możesz używać własnych kluczy prywatnych i zwrotów. Zalecamy używanie kluczy publicznych dostarczonych przez firmę Microsoft. Jeśli jednak organizacja skonfigurowała już witrynę ICE Chat SFTP przy użyciu kluczy prywatnych, możesz utworzyć łącznik, używając tych samych kluczy prywatnych.
+  Podczas konfigurowania łącznika możesz użyć kluczy publicznych i haseł kluczy udostępnianych przez firmę Microsoft lub użyć własnych kluczy prywatnych i haseł. Zalecamy użycie kluczy publicznych dostarczonych przez firmę Microsoft. Jeśli jednak organizacja już skonfigurowała witrynę ICE Chat SFTP przy użyciu kluczy prywatnych, możesz utworzyć łącznik przy użyciu tych samych kluczy prywatnych.
 
-- Łącznik ICE Chat może importować łącznie 200 000 elementów w jednym dniu. Jeśli w witrynie SFTP istnieje więcej niż 200 000 elementów, żadne z tych elementów nie zostaną zaimportowane do Microsoft 365.
+- Łącznik ICE Chat może zaimportować łącznie 200 000 elementów w ciągu jednego dnia. Jeśli w witrynie SFTP znajduje się więcej niż 200 000 elementów, żaden z tych elementów nie zostanie zaimportowany do Microsoft 365.
 
-- Administrator, który tworzy łącznik ice chat w kroku 3 (oraz kto pobiera klucze publiczne i adres IP w kroku 1), musi mieć przypisaną rolę Administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Administratorowi, który tworzy łącznik ICE Chat w kroku 3 (i który pobiera klucze publiczne i adres IP w kroku 1) musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="set-up-a-connector-using-public-keys"></a>Konfigurowanie łącznika przy użyciu kluczy publicznych
 
-W krokach w tej sekcji popisano, jak skonfigurować łącznik ICE Chat przy użyciu kluczy publicznych dla plików PGP (Pretty Good Privacy) i Secure Shell (SSH).
+W krokach opisanych w tej sekcji pokazano, jak skonfigurować łącznik ICE Chat przy użyciu kluczy publicznych dla funkcji Pretty Good Privacy (PGP) i Secure Shell (SSH).
 
 ### <a name="step-1-obtain-pgp-and-ssh-public-keys"></a>Krok 1. Uzyskiwanie kluczy publicznych PGP i SSH
 
-Pierwszym krokiem jest uzyskanie kopii kluczy publicznych dla plików PGP (Pretty Good Privacy) i Secure Shell (SSH). Użyj tych klawiszy w kroku 2, aby skonfigurować witrynę ICE Chat SFTP w celu umożliwienia łącznikowi (który został przez Ciebie utworzyć w kroku 3) łączenia się z witryną SFTP i przenoszenia danych czatu ICE do Microsoft 365 pocztowych. Uzyskasz również adres IP w tym kroku, którego używasz podczas konfigurowania witryny ICE Chat SFTP.
+Pierwszym krokiem jest uzyskanie kopii kluczy publicznych dla bardzo dobrej prywatności (PGP) i bezpiecznej powłoki (SSH). Te klucze są używane w kroku 2, aby skonfigurować witrynę ICE Chat SFTP, aby umożliwić łącznikowi (utworzonemu w kroku 3) łączenie się z witryną SFTP i przesyłanie danych czatu ICE do Microsoft 365 skrzynek pocztowych. W tym kroku uzyskasz również adres IP używany podczas konfigurowania witryny ICE Chat SFTP.
 
-1. Przejdź do łączników [https://compliance.microsoft.com](https://compliance.microsoft.com) **danych w lewym okienku narracji i** kliknij je.
+1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com) i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 
-2. Na stronie **Łączniki danych** w obszarze **CZAT ICE** kliknij pozycję **Widok**.
+2. Na stronie **Łączniki danych** w obszarze **ICE Chat** kliknij pozycję **Wyświetl**.
 
-3. Na stronie **Czat z LODEM** kliknij pozycję **Dodaj łącznik**.
+3. Na stronie **ICE Chat** kliknij pozycję **Dodaj łącznik**.
 
-4. Na stronie **Warunki użytkowania usługi** kliknij pozycję **Zaakceptuj**.
+4. Na stronie **Warunki korzystania z usługi** kliknij pozycję **Akceptuj**.
 
-5. Na stronie **Dodaj poświadczenia dla źródła** zawartości kliknij pozycję Chcę używać kluczy publicznych **PGP i SSH dostarczonych przez firmę Microsoft**.
+5. Na stronie **Dodawanie poświadczeń dla źródła zawartości** kliknij **pozycję Chcę użyć kluczy publicznych PGP i SSH dostarczonych przez firmę Microsoft**.
 
-   ![Wybierz opcję, aby użyć kluczy publicznych.](../media/ICEChatPublicKeysOption.png)
+   ![Wybierz opcję używania kluczy publicznych.](../media/ICEChatPublicKeysOption.png)
 
-6. W obszarze krok 1 kliknij linki Pobierz **klucz SSH**, Pobierz klucz **PGP** i Pobierz adres **IP** , aby zapisać kopię każdego pliku na komputerze lokalnym.
+6. W kroku 1 kliknij **pozycję Pobierz klucz SSH**, **pobierz klucz PGP** i pobierz linki **adresów IP** , aby zapisać kopię każdego pliku na komputerze lokalnym.
 
    ![Linki do pobierania kluczy publicznych i adresu IP.](../media/ICEChatPublicKeyDownloadLinks.png)
 
    Te pliki zawierają następujące elementy, które są używane do konfigurowania witryny ICE Chat SFTP w kroku 2:
 
-   - Klucz publiczny PGP: Ten klucz służy do konfigurowania szyfrowania danych przesyłanych z witryny ICE Chat SFTP w celu Microsoft 365.
+   - Klucz publiczny PGP: ten klucz służy do konfigurowania szyfrowania danych przesyłanych z witryny ICE Chat SFTP do Microsoft 365.
 
-   - Klucz publiczny SSH: Ten klucz służy do konfigurowania bezpiecznego protokołu SSH w celu umożliwienia bezpiecznego logowania zdalnego, gdy łącznik łączy się z witryną ICE Chat SFTP.
+   - Klucz publiczny SSH: ten klucz służy do konfigurowania protokołu Secure SSH w celu włączenia bezpiecznego zdalnego logowania, gdy łącznik nawiązuje połączenie z witryną ICE Chat SFTP.
 
-   - Adres IP: Witryna ICE Chat SFTP jest skonfigurowana do akceptowania żądania połączenia tylko z tego adresu IP, który jest używany przez łącznik ICE Chat, który został utworzyć w kroku 3.
+   - Adres IP: witryna ICE Chat SFTP jest skonfigurowana do akceptowania żądania połączenia tylko z tego adresu IP, który jest używany przez łącznik ICE Chat utworzony w kroku 3.
 
-7. Kliknij **przycisk Anuluj** , aby zamknąć kreatora. Powrócisz do tego kreatora w kroku 3, aby utworzyć łącznik.
+7. Kliknij **przycisk Anuluj** , aby zamknąć kreatora. Wrócisz do tego kreatora w kroku 3, aby utworzyć łącznik.
 
 ### <a name="step-2-configure-the-ice-chat-sftp-site"></a>Krok 2. Konfigurowanie witryny ICE Chat SFTP
 
-Następnym krokiem jest użycie kluczy publicznych PGP i SSH oraz adresu IP uzyskanego w kroku 1 w celu skonfigurowania szyfrowania PGP i uwierzytelniania SSH dla witryny ICE Chat SFTP. Dzięki temu łącznik ice chatu, który utworzysz w kroku 3, połączy się z witryną ICE Chat SFTP i przenieś dane czatu ICE Microsoft 365. Musisz współpracować z działem obsługi klienta ICE Chat, aby skonfigurować witrynę ICE Chat SFTP.
+Następnym krokiem jest użycie kluczy publicznych PGP i SSH oraz adresu IP uzyskanego w kroku 1 w celu skonfigurowania szyfrowania PGP i uwierzytelniania SSH dla witryny ICE Chat SFTP. Dzięki temu łącznik ICE Chat utworzony w kroku 3 łączy się z witryną ICE Chat SFTP i przesyła dane ice chat do Microsoft 365. Aby skonfigurować witrynę ICE Chat SFTP, musisz współpracować z działem obsługi klienta ICE Chat.
 
 ### <a name="step-3-create-an-ice-chat-connector"></a>Krok 3. Tworzenie łącznika ice chat
 
-Ostatnim krokiem jest utworzenie łącznika ICE Chat w Centrum zgodności platformy Microsoft 365. Łącznik korzysta z informacji, które pozyskasz, aby połączyć się z witryną ICE Chat SFTP i przenieść wiadomości czatu do odpowiednich skrzynek pocztowych użytkowników w Microsoft 365.
+Ostatnim krokiem jest utworzenie łącznika ICE Chat w portalu zgodności. Łącznik używa podanych informacji, aby nawiązać połączenie z witryną ICE Chat SFTP i przenieść wiadomości czatu do odpowiednich skrzynek pocztowych użytkownika w Microsoft 365.
 
-1. Przejdź do łączników [https://compliance.microsoft.com](https://compliance.microsoft.com) **danych w lewym okienku narracji i** kliknij je.
+1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com) i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 
-2. Na stronie **Łączniki danych** w obszarze **CZAT ICE** kliknij pozycję **Widok**.
+2. Na stronie **Łączniki danych** w obszarze **ICE Chat** kliknij pozycję **Wyświetl**.
 
-3. Na stronie **Czat z LODEM** kliknij pozycję **Dodaj łącznik**.
+3. Na stronie **ICE Chat** kliknij pozycję **Dodaj łącznik**.
 
-4. Na stronie **Warunki użytkowania usługi** kliknij pozycję **Zaakceptuj**.
+4. Na stronie **Warunki korzystania z usługi** kliknij pozycję **Akceptuj**.
 
-5. Na stronie **Dodawanie poświadczeń dla źródła zawartości** kliknij pozycję Chcę używać kluczy publicznych **PGP i SSH**.
+5. Na stronie **Dodawanie poświadczeń dla źródła zawartości** kliknij **pozycję Chcę użyć kluczy publicznych PGP i SSH**.
 
-6. W obszarze Krok 3 wprowadź wymagane informacje w następujących polach, a następnie kliknij pozycję **Sprawdź poprawność połączenia**.
+6. W obszarze Krok 3 wprowadź wymagane informacje w poniższych polach, a następnie kliknij pozycję **Weryfikuj połączenie**.
 
    - **Kod firmy:** Identyfikator organizacji, który jest używany jako nazwa użytkownika witryny ICE Chat SFTP.
 
    - **Hasło:** Hasło do witryny ICE Chat SFTP.
 
-   - **SFTP URL:** Adres URL witryny ICE Chat SFTP (na przykład `sftp.theice.com`). W tej wartości możesz również użyć adresu IP.
+   - **Adres URL protokołu SFTP:** Adres URL witryny ICE Chat SFTP (na przykład `sftp.theice.com`). Możesz również użyć adresu IP dla tej wartości.
 
-   - **Port SFTP:** Numer portu witryny ICE Chat SFTP. Łącznik używa tego portu do łączenia się z witryną SFTP.
+   - **Port SFTP:** Numer portu witryny ICE Chat SFTP. Łącznik używa tego portu do nawiązywania połączenia z lokacją SFTP.
 
-7. Po pomyślnym weryfikacji połączenia kliknij przycisk **Dalej**.
+7. Po pomyślnym zweryfikowaniu połączenia kliknij przycisk **Dalej**.
 
-8. Na stronie **Definiowanie** użytkownika określ użytkowników, dla których mają być importowane dane.
+8. Na stronie **Definiowanie użytkownika** określ użytkowników do zaimportowania danych.
 
-     - **Wszyscy użytkownicy w Organizacji**. Zaznacz tę opcję, aby zaimportować dane wszystkich użytkowników.
+     - **Wszyscy użytkownicy w organizacji**. Wybierz tę opcję, aby zaimportować dane dla wszystkich użytkowników.
 
-     - **Tylko użytkownicy, którzy mają zawieszenie w postępowaniem sądowym**. Zaznacz tę opcję, aby importować dane tylko tych użytkowników, których skrzynki pocztowe są umieszczone w związku z postępowaniem sądowym. Ta opcja powoduje importowanie danych do skrzynek pocztowych użytkowników, dla których właściwość LitigationHoldEnabled ma wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie postępowania w związku z postępowaniem sądowym](create-a-litigation-hold.md).
+     - **Blokada dotyczy tylko użytkowników w postępowaniu sądowym**. Wybierz tę opcję, aby zaimportować dane tylko dla użytkowników, których skrzynki pocztowe zostały wstrzymane w postępowaniu sądowym. Ta opcja importuje dane do skrzynek pocztowych użytkowników z właściwością LitigationHoldEnabled ustawioną na wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie blokady postępowania sądowego](create-a-litigation-hold.md).
 
-9. Na stronie **Mapowanie użytkowników zewnętrznych Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i zapewnij niestandardowe mapowanie użytkowników zgodnie z wymaganiami. Na tej stronie możesz pobrać kopię pliku CSV mapowania użytkowników. Możesz dodać mapowania użytkowników do pliku, a następnie przekazać go.
+9. Na stronie **Mapowanie użytkowników zewnętrznych do Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i w razie potrzeby udostępnij niestandardowe mapowanie użytkowników. Możesz pobrać kopię pliku CSV mapowania użytkownika na tej stronie. Możesz dodać mapowania użytkowników do pliku, a następnie przekazać je.
 
    > [!NOTE]
-   > Jak wyjaśniono wcześniej, plik CSV niestandardowego mapowania zawiera identyfikator ICE Chat i Microsoft 365 adres skrzynki pocztowej dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe dla każdego elementu czatu, łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli użytkownik nie znajdzie prawidłowego użytkownika programu Microsoft 365 odpowiadającego identyfikatorowi imid czatu ICE, łącznik zaimportuje element do skrzynek pocztowych użytkowników określonych we właściwościach *SenderEmail* i *RecipientEmail* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 za pomocą automatycznego lub niestandardowego mapowania użytkowników, element nie zostanie zaimportowany.
+   > Jak wyjaśniono wcześniej, plik CSV pliku mapowania niestandardowego zawiera identyfikator ICE Chat i odpowiadający mu adres skrzynki pocztowej Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu czatu łącznik najpierw przyjrzy się niestandardowemu plikowi mapowania. Jeśli nie znajdzie prawidłowego Microsoft 365 użytkownika odpowiadającego identyfikatorowi ice chat użytkownika, łącznik zaimportuje element do skrzynek pocztowych dla użytkowników określonych we właściwościach *SenderEmail* i *RecipientEmail* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego Microsoft 365 użytkownika przez automatyczne lub niestandardowe mapowanie użytkownika, element nie zostanie zaimportowany.
 
-10. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+10. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ** , aby utworzyć łącznik.
 
-11. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika.
+11. Przejdź do strony **Łączniki danych** , aby zobaczyć postęp procesu importowania nowego łącznika.
 
 ## <a name="set-up-a-connector-using-private-keys"></a>Konfigurowanie łącznika przy użyciu kluczy prywatnych
 
-W krokach w tej sekcji popisano, jak skonfigurować łącznik ICE Chat przy użyciu kluczy prywatnych PGP i SSH. Ta opcja konfiguracji łącznika jest przeznaczona dla organizacji, które już skonfigurowały witrynę ICE Chat SFTP przy użyciu kluczy prywatnych.
+Kroki opisane w tej sekcji pokazują, jak skonfigurować łącznik ICE Chat przy użyciu kluczy prywatnych PGP i SSH. Ta opcja konfiguracji łącznika jest przeznaczona dla organizacji, które już skonfigurowały witrynę ICE Chat SFTP przy użyciu kluczy prywatnych.
 
 ### <a name="step-1-obtain-an-ip-address-to-configure-the-ice-chat-sftp-site"></a>Krok 1. Uzyskiwanie adresu IP w celu skonfigurowania witryny ICE Chat SFTP
 
-Jeśli Twoja organizacja użyła kluczy prywatnych PGP i SSH do skonfigurowania witryny ICE Chat SFTP, musisz uzyskać adres IP i przekazać go działowi obsługi klienta ICE Chat. Witryna ICE Chat SFTP musi być skonfigurowana do akceptowania żądań połączeń z tego adresu IP. Ten sam adres IP jest używany przez łącznik ICE Chat do łączenia się z witryną SFTP i przesyłania danych czatu ICE Microsoft 365.
+Jeśli Twoja organizacja użyła kluczy prywatnych PGP i SSH do skonfigurowania witryny ICE Chat SFTP, musisz uzyskać adres IP i przekazać go do pomocy technicznej ice chat. Witryna ICE Chat SFTP musi być skonfigurowana do akceptowania żądań połączenia z tego adresu IP. Ten sam adres IP jest używany przez łącznik ICE Chat do nawiązywania połączenia z witryną SFTP i przesyłania danych ice chat do Microsoft 365.
 
 Aby uzyskać adres IP:
 
-1. Przejdź do łączników <https://compliance.microsoft.com> **danych w lewym okienku narracji i** kliknij je.
+1. Przejdź do strony <https://compliance.microsoft.com> i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 
-2. Na stronie **Łączniki danych** w obszarze **CZAT ICE** kliknij pozycję **Widok**.
+2. Na stronie **Łączniki danych** w obszarze **ICE Chat** kliknij pozycję **Wyświetl**.
 
-3. Na stronie **opisów produktu w** czacie ICE kliknij **pozycję Dodaj łącznik**
+3. Na stronie opisu produktu **ICE Chat** kliknij pozycję **Dodaj łącznik**
 
-4. Na stronie **Warunki użytkowania usługi** kliknij pozycję **Zaakceptuj**.
+4. Na stronie **Warunki korzystania z usługi** kliknij pozycję **Akceptuj**.
 
-5. Na stronie **Dodaj poświadczenia dla źródła zawartości** kliknij pozycję **Chcę używać kluczy prywatnych PGP i SSH**.
+5. Na stronie **Dodawanie poświadczeń dla źródła zawartości** kliknij **pozycję Chcę używać kluczy prywatnych PGP i SSH**.
 
-   ![Wybierz opcję, aby użyć kluczy prywatnych.](../media/ICEChatPrivateKeysOption.png)
+   ![Wybierz opcję używania kluczy prywatnych.](../media/ICEChatPrivateKeysOption.png)
 
-6. W obszarze krok 1 kliknij pozycję **Pobierz adres IP** , aby zapisać kopię pliku adresu IP na komputerze lokalnym.
+6. W kroku 1 kliknij pozycję **Pobierz adres IP** , aby zapisać kopię pliku adresu IP na komputerze lokalnym.
 
    ![Pobierz adres IP.](../media/ICEChatConnectorIPAddress.png)
 
-7. Kliknij **przycisk Anuluj** , aby zamknąć kreatora. Powrócisz do tego kreatora w kroku 2, aby utworzyć łącznik.
+7. Kliknij **przycisk Anuluj** , aby zamknąć kreatora. Wrócisz do tego kreatora w kroku 2, aby utworzyć łącznik.
 
-Musisz współpracować z działem obsługi klienta ICE Chat, aby skonfigurować witrynę ICE Chat SFTP w celu akceptowania żądań połączeń z tego adresu IP.
+Aby skonfigurować witrynę ICE Chat SFTP do akceptowania żądań połączenia z tego adresu IP, musisz współpracować z działem obsługi klienta ICE Chat.
 
 ### <a name="step-2-create-an-ice-chat-connector"></a>Krok 2. Tworzenie łącznika ice chat
 
-Po skonfigurowaniu witryny SFTP czatu ICE Chat następnym krokiem jest utworzenie łącznika ICE Chat w Centrum zgodności platformy Microsoft 365. Łącznik używa podanych przez Ciebie informacji do łączenia się z witryną ICE Chat SFTP i przesyłania wiadomości e-mail do odpowiadających im skrzynek pocztowych użytkowników w Microsoft 365. Aby wykonać ten krok, upewnij się, że masz kopie tych samych kluczy prywatnych i kluczowych zwrotów, które zostały użyte do skonfigurowania witryny ICE Chat SFTP.
+Po skonfigurowaniu witryny ICE Chat SFTP następnym krokiem jest utworzenie łącznika ICE Chat w portalu zgodności. Łącznik używa podanych informacji, aby nawiązać połączenie z witryną ICE Chat SFTP i przenieść wiadomości e-mail do odpowiednich skrzynek pocztowych użytkownika w Microsoft 365. Aby wykonać ten krok, upewnij się, że masz kopie tych samych kluczy prywatnych i haseł kluczy, które zostały użyte do skonfigurowania witryny ICE Chat SFTP.
 
-1. Przejdź do łączników <https://compliance.microsoft.com> **danych w lewym okienku narracji i** kliknij je.
+1. Przejdź do strony <https://compliance.microsoft.com> i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 
-2. Na stronie **Łączniki danych** w obszarze **CZAT ICE** kliknij pozycję **Widok**.
+2. Na stronie **Łączniki danych** w obszarze **ICE Chat** kliknij pozycję **Wyświetl**.
 
-3. Na stronie **opisów produktu w** czacie ICE kliknij **pozycję Dodaj łącznik**
+3. Na stronie opisu produktu **ICE Chat** kliknij pozycję **Dodaj łącznik**
 
-4. Na stronie **Warunki użytkowania usługi** kliknij pozycję **Zaakceptuj**.
+4. Na stronie **Warunki korzystania z usługi** kliknij pozycję **Akceptuj**.
 
-5. Na stronie **Dodaj poświadczenia dla źródła zawartości** kliknij pozycję **Chcę używać kluczy prywatnych PGP i SSH**.
+5. Na stronie **Dodawanie poświadczeń dla źródła zawartości** kliknij **pozycję Chcę używać kluczy prywatnych PGP i SSH**.
 
-6. W obszarze Krok 3 wprowadź wymagane informacje w następujących polach, a następnie kliknij pozycję **Sprawdź poprawność połączenia**.
+6. W obszarze Krok 3 wprowadź wymagane informacje w poniższych polach, a następnie kliknij pozycję **Weryfikuj połączenie**.
 
-      - **Nazwa:** Nazwa łącznika. Musi być unikatowy w Twojej organizacji.
+      - **Nazwa:** Nazwa łącznika. Musi być unikatowa w organizacji.
 
-      - **Kod firmy:** Identyfikator organizacji używany jako nazwa użytkownika witryny ICE Chat SFTP.
+      - **Kod firmy:** Identyfikator organizacji, który jest używany jako nazwa użytkownika witryny ICE Chat SFTP.
 
-      - **Hasło:** Hasło do witryny SFTP czatów ICE w Twojej organizacji.
+      - **Hasło:** Hasło do witryny ICE Chat SFTP organizacji.
 
-      - **SFTP URL:** Adres URL witryny ICE Chat SFTP (na przykład `sftp.theice.com`). W tej wartości możesz również użyć adresu IP.
+      - **Adres URL protokołu SFTP:** Adres URL witryny ICE Chat SFTP (na przykład `sftp.theice.com`). Możesz również użyć adresu IP dla tej wartości.
 
-      - **Port SFTP:** Numer portu witryny ICE Chat SFTP. Łącznik używa tego portu do łączenia się z witryną SFTP.
+      - **Port SFTP:** Numer portu witryny ICE Chat SFTP. Łącznik używa tego portu do nawiązywania połączenia z lokacją SFTP.
 
-      - **Klucz prywatny PGP:** Klucz prywatny PGP dla witryny ICE Chat SFTP. Pamiętaj o uwzględnieniu całej wartości klucza prywatnego, łącznie z pierwszym i końcową łącznie z blokiem klucza.
+      - **Klucz prywatny PGP:** Klucz prywatny PGP dla witryny ICE Chat SFTP. Pamiętaj o uwzględnieniu całej wartości klucza prywatnego, w tym początkowych i końcowych wierszy bloku kluczy.
 
-      - **Hasło klucza PGP:** Kod dostępu do klucza prywatnego PGP.
+      - **Hasło klucza PGP:** Hasło klucza prywatnego PGP.
 
-      - **Klucz prywatny SSH:** Klucz prywatny SSH dla witryny ICE Chat SFTP. Pamiętaj o uwzględnieniu całej wartości klucza prywatnego, łącznie z pierwszym i końcową łącznie z blokiem klucza.
+      - **Klucz prywatny SSH:** Klucz prywatny SSH dla witryny ICE Chat SFTP. Pamiętaj o uwzględnieniu całej wartości klucza prywatnego, w tym początkowych i końcowych wierszy bloku kluczy.
 
-      - **Kluczowy zwrot SSH:** Kod dostępu do klucza prywatnego SSH.
+      - **Hasło klucza SSH:** Hasło klucza prywatnego SSH.
 
-7. Po pomyślnym weryfikacji połączenia kliknij przycisk **Dalej**.
+7. Po pomyślnym zweryfikowaniu połączenia kliknij przycisk **Dalej**.
 
-8. Na stronie **Definiowanie** użytkownika określ użytkowników, dla których mają być importowane dane.
+8. Na stronie **Definiowanie użytkownika** określ użytkowników do zaimportowania danych.
 
-     - **Wszyscy użytkownicy w Organizacji**. Zaznacz tę opcję, aby zaimportować dane wszystkich użytkowników.
+     - **Wszyscy użytkownicy w organizacji**. Wybierz tę opcję, aby zaimportować dane dla wszystkich użytkowników.
 
-     - **Tylko użytkownicy, którzy mają zawieszenie w postępowaniem sądowym**. Zaznacz tę opcję, aby importować dane tylko tych użytkowników, których skrzynki pocztowe są umieszczone w związku z postępowaniem sądowym. Ta opcja powoduje importowanie danych do skrzynek pocztowych użytkowników, dla których właściwość LitigationHoldEnabled ma wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie postępowania w związku z postępowaniem sądowym](create-a-litigation-hold.md).
+     - **Blokada dotyczy tylko użytkowników w postępowaniu sądowym**. Wybierz tę opcję, aby zaimportować dane tylko dla użytkowników, których skrzynki pocztowe zostały wstrzymane w postępowaniu sądowym. Ta opcja importuje dane do skrzynek pocztowych użytkowników z właściwością LitigationHoldEnabled ustawioną na wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie blokady postępowania sądowego](create-a-litigation-hold.md).
 
-9. Na stronie **Mapowanie użytkowników czatu ICE do Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i w razie potrzeby udostępnij niestandardowe mapowanie użytkowników.
+9. Na stronie **Mapuj użytkowników czatu ICE na Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i w razie potrzeby udostępnij niestandardowe mapowanie użytkowników.
 
    > [!NOTE]
-   > Jak wyjaśniono wcześniej, plik CSV niestandardowego mapowania zawiera identyfikator ICE Chat i Microsoft 365 adres skrzynki pocztowej dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe dla każdego elementu czatu, łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli użytkownik nie znajdzie prawidłowego użytkownika programu Microsoft 365 odpowiadającego identyfikatorowi imid czatu ICE, łącznik zaimportuje element do skrzynek pocztowych użytkowników określonych we właściwościach *SenderEmail* i *RecipientEmail* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 za pomocą automatycznego lub niestandardowego mapowania użytkowników, element nie zostanie zaimportowany.
+   > Jak wyjaśniono wcześniej, plik CSV pliku mapowania niestandardowego zawiera identyfikator ICE Chat i odpowiadający mu adres skrzynki pocztowej Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu czatu łącznik najpierw przyjrzy się niestandardowemu plikowi mapowania. Jeśli nie znajdzie prawidłowego Microsoft 365 użytkownika odpowiadającego identyfikatorowi ice chat użytkownika, łącznik zaimportuje element do skrzynek pocztowych dla użytkowników określonych we właściwościach *SenderEmail* i *RecipientEmail* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego Microsoft 365 użytkownika przez automatyczne lub niestandardowe mapowanie użytkownika, element nie zostanie zaimportowany.
 
-10. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+10. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ** , aby utworzyć łącznik.
 
-11. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika. Kliknij łącznik, aby wyświetlić stronę wysuwu zawierającą informacje o łączniku.
+11. Przejdź do strony **Łączniki danych** , aby zobaczyć postęp procesu importowania nowego łącznika. Kliknij łącznik, aby wyświetlić stronę wysuwaną zawierającą informacje o łączniku.

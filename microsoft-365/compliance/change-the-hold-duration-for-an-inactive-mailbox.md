@@ -1,5 +1,5 @@
 ---
-title: Zmienianie czasu trwania wstrzymywania nieaktywnej skrzynki pocztowej
+title: Zmień czas trwania archiwizacji dla nieaktywnej skrzynki pocztowej
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,76 +19,76 @@ search.appverid:
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
-description: Gdy skrzynka Office 365 zostanie nieaktywna, zmień czas trwania stosowania lub zasad przechowywania Office 365 przypisanych do nieaktywnej skrzynki pocztowej.
-ms.openlocfilehash: bf1131aa0d14222bec7ab1c94983925cfe39e673
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+description: Po nieaktywności Office 365 skrzynki pocztowej zmień czas trwania zasad przechowywania lub Office 365 przypisanych do nieaktywnej skrzynki pocztowej.
+ms.openlocfilehash: d959195731ee0bf4de9b533f85fa2e2356259c12
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010650"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911373"
 ---
-# <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Zmienianie czasu trwania wstrzymywania nieaktywnej skrzynki pocztowej
+# <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Zmień czas trwania archiwizacji dla nieaktywnej skrzynki pocztowej
 
-[Nieaktywna skrzynka](inactive-mailboxes-in-office-365.md) pocztowa to stan skrzynki pocztowej używany do zachowywania wiadomości e-mail byłego pracownika po opuszczeniu organizacji. Skrzynka pocztowa staje się nieaktywna, gdy do skrzynki pocztowej jest stosowana stosowana Microsoft 365 usunięcia obiektu użytkownika.  Następujące typy blokady zapoczynują tworzenie nieaktywnych skrzynek pocztowych po usunięciu konta użytkownika:
+[Nieaktywna skrzynka pocztowa](inactive-mailboxes-in-office-365.md) to stan skrzynki pocztowej, który służy do przechowywania poczty e-mail byłego pracownika po opuszczeniu organizacji. Skrzynka pocztowa staje się nieaktywna, gdy zostanie do niej zastosowana odpowiednia blokada przed usunięciem Microsoft 365 obiektu użytkownika.  Następujące typy blokad zainicjują utworzenie nieaktywnej skrzynki pocztowej po usunięciu konta użytkownika:
 
-- [Microsoft 365 przechowywania i etykiet z zachowaniem](retention.md) lub zachowaniem i usunięciem ustawień
+- [Microsoft 365 zasad przechowywania i etykiet](retention.md) z ustawieniami zachowywania lub zachowywania i usuwania
 
-- A hold associated with [an eDiscovery](ediscovery.md) case
+- Blokada skojarzona ze sprawą zbierania [elektronicznych materiałów dowodowych](ediscovery.md)
 
-- [Zawieszenie w  postępowaniach sądowych](create-a-litigation-hold.md)
+- [Wstrzymanie postępowania sądowego](create-a-litigation-hold.md)
 
-- Istniejące In-Place wstrzymaj.
+- Istniejący In-Place wstrzymany.
 
 > [!IMPORTANT]
-> Jakiekolwiek z powyższych blokady wymuszają nieaktywność skrzynki pocztowej po usunięciu konta użytkownika, Microsoft 365 zdecydowanie zaleca się korzystanie z przechowywania w programie Microsoft 365, gdy aktywnie planujesz korzystać z nieaktywnych skrzynek pocztowych.
+> Chociaż dowolna z powyższych blokad wymusi, że skrzynka pocztowa stanie się nieaktywna po usunięciu konta użytkownika Microsoft 365, zdecydowanie zaleca się użycie Microsoft 365 przechowywania podczas proaktywnego planowania korzystania z nieaktywnych skrzynek pocztowych.
 >
-> - Zbierania elektronicznych materiałów dowodowych są przeznaczone do konkretnych spraw związanych z problemami prawnie powiązanymi z określonymi terminami. W pewnym momencie sprawa prawdopodobnie zakończy się, a blokady skojarzone z tą sprawą zostaną usunięte, a sprawa zbierania elektronicznych materiałów dowodowych zostanie zamknięta (lub usunięta). Jeśli z sprawę zbierania elektronicznych materiałów dowodowych zostanie skojarzona nieaktywna skrzynka pocztowa umieszczona w zbierania elektronicznych materiałów dowodowych i sprawa zbierania elektronicznych materiałów dowodowych zostanie zamknięta lub usunięta, nieaktywna skrzynka pocztowa zostanie trwale usunięta.
+> - Blokady zbierania elektronicznych materiałów dowodowych są przeznaczone dla konkretnych, czasowych spraw związanych z problemem prawnym. W pewnym momencie sprawa prawna prawdopodobnie zakończy się, a blokady związane ze sprawą zostaną usunięte, a sprawa zbierania elektronicznych materiałów dowodowych zostanie zamknięta (lub usunięta). Jeśli blokada umieszczona w nieaktywnej skrzynce pocztowej jest skojarzona ze sprawą zbierania elektronicznych materiałów dowodowych, a blokada zostanie zwolniona lub sprawa zbierania elektronicznych materiałów dowodowych zostanie zamknięta lub usunięta, nieaktywna skrzynka pocztowa zostanie trwale usunięta.
 >
-> - In-Place w centrum administracyjnym usługi Exchange zostały wycofane. Od 1 lipca 2020 r. nie można utworzyć nowych In-Place w programie Exchange Online. Od 1 października 2020 r. nie można już zmieniać czasu trwania blokady w miejscu. Nieaktywną skrzynkę pocztową, do In-Place wstrzymywanie wiadomości, można usunąć tylko przez usunięcie In-Place wiadomości. Istniejące nieaktywne skrzynki pocztowe, In-Place wstrzymają, będą zachowywane do momentu usunięcia go. Aby uzyskać więcej informacji na In-Place wycofanie, zobacz Wycofanie starszych narzędzi [zbierania elektronicznych materiałów dowodowych](legacy-ediscovery-retirement.md).
+> - In-Place Blokady w centrum administracyjnym Exchange są teraz wycofywane. Od 1 lipca 2020 r. nie można utworzyć nowych blokad In-Place w Exchange Online. Od 1 października 2020 r. nie można już zmienić czasu trwania blokady miejscowej. Każdą nieaktywną skrzynkę pocztową z zastosowaną blokadą In-Place można usunąć tylko przez usunięcie blokady In-Place. Istniejące nieaktywne skrzynki pocztowe znajdujące się w In-Place Blokada będą nadal zachowywane do momentu usunięcia blokady. Aby uzyskać więcej informacji na temat wycofywania In-Place, zobacz [Wycofywanie starszych narzędzi zbierania elektronicznych materiałów dowodowych](legacy-ediscovery-retirement.md).
 >
-> - [Zawieszenie w procesów](create-a-litigation-hold.md) sądowych jest obsługiwane jako metoda alternatywna w celu przechowywania zawartości w skrzynce pocztowej i jej nieaktywności po usunięciu konta użytkownika. Jednak w przypadku starszej technologii zalecamy używanie przechowywania Microsoft 365 przechowywania.
+> - [Blokada postępowania sądowego](create-a-litigation-hold.md) pozostaje obsługiwana jako alternatywna metoda przechowywania zawartości w skrzynce pocztowej i uniemożliwiania jej działania po usunięciu konta użytkownika. Jednak jako starsza technologia zalecamy użycie Microsoft 365 przechowywania.
 
-Po tym, jak skrzynka pocztowa została już nieaktywna, zawartość skrzynki pocztowej wraz z [folderem](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) Elementy do odzyskania jest zachowywana do momentu jej umieszczenia w skrzynce pocztowej przed jej zmianą.  
+Po nieaktywności zawartość skrzynki pocztowej, w tym [folderu Elementy możliwe do odzyskania, jest zachowywana](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) do momentu, gdy blokada umieszczona w skrzynce pocztowej przed jej nieaktywnym stanem nie będzie już stosowana.  
 
-Jeśli obowiązujące przechowywanie nie jest oparte na czasie, na przykład z zachowaniem przez czas nieograniczony zasad lub etykiety przechowywania aplikacji Microsoft 365, sprawy zbierania elektronicznych materiałów dowodowych lub postępowania w związku z postępowaniem sądowym (```LitigationHoldDuration```bez skonfigurowanego), zawartość skrzynki pocztowej będzie przez czas nieograniczony zachowywana przez czas nieograniczony do chwili usunięcia zawieszania.  
+Jeśli odpowiedni blokada nie jest oparta na czasie, na przykład blokada skojarzona z zasadami przechowywania na czas nieokreślony Microsoft 365 zasadami przechowywania lub etykietą, sprawą zbierania elektronicznych materiałów dowodowych lub blokadą postępowania sądowego (bez skonfigurowanego```LitigationHoldDuration```), zawartość skrzynki pocztowej będzie przechowywana przez czas nieokreślony do momentu usunięcia blokady.  
 
-Jeśli jednak zawartość skrzynki pocztowej jest oparta na czasie, zawartość skrzynki pocztowej będzie zachowywana do czasu jej wygaśnięcia — wówczas wszystkie elementy w folderze Elementy do odzyskania zostaną trwale usunięte (usunięte) z nieaktywnej skrzynki pocztowej.
+Jeśli jednak blokada jest oparta na czasie, zawartość skrzynki pocztowej zostanie zachowana do czasu wygaśnięcia czasu przechowywania, w którym to momencie wszystkie elementy w folderze Elementy możliwe do odzyskania zostaną trwale usunięte (przeczyszczane) ze skrzynki pocztowej nieaktywnej.
 
 > [!NOTE]
-> W przypadku nieaktywnych skrzynek pocztowych zalecamy zachowanie i usunięcie ustawień przechowywania Microsoft 365 przechowywania lub etykiet.  Jeśli wybierzesz ustawienie zachowaj tylko, folder Elementy do odzyskania zostanie trwale usunięty na koniec okresu przechowywania, jednak wszelkie inne elementy, które nie zostały usunięte, pozostaną w nieaktywnej skrzynce pocztowej przez nieograniczony czas.
+> W przypadku nieaktywnych skrzynek pocztowych zalecamy użycie ustawienia zachowywania i usuwania dla Microsoft 365 zasad przechowywania lub etykiet.  Jeśli wybierzesz ustawienie zachowaj tylko, folder Elementy możliwe do odzyskania zostanie przeczyszczony na końcu czasu trwania blokady, jednak wszystkie inne elementy, które nie zostaną usunięte, pozostaną w nieaktywnej skrzynce pocztowej przez czas nieokreślony.
 
-W związku z rozwojem przepisów i zasad może się okazać, że trzeba zmienić czas trwania stosowania holdu przydzielonego do nieaktywnej skrzynki pocztowej.  Poniżej przedstawiono kroki, które należy wykonać w tym celu.
+W miarę rozwoju przepisów i zasad mogą wystąpić sytuacje, w których należy zmienić czas trwania blokady przypisanej do nieaktywnej skrzynki pocztowej.  W poniższych krokach opisano, jak to zrobić.
 
 ## <a name="connect-to-powershell"></a>Połączenie do programu PowerShell
 
-Jak wspomniano wcześniej, tworzenie nieaktywnej skrzynki pocztowej może być wyzwalane przez wiele różnych typów blokady.  Z tego powodu, aby zmienić czas trwania blokady stosowany do nieaktywnej skrzynki pocztowej, musisz najpierw określić, jaki typ blokady ma wpływ na tę skrzynkę.  W tym celu należy użyć programu Exchange Online PowerShell do identyfikowania typów blokady, Microsoft 365 także, jeśli na nieaktywną skrzynkę pocztową mają wpływ zasady przechowywania lub etykiety, należy również użyć programu PowerShell w Centrum zabezpieczeń i zgodności w celu zidentyfikowania konkretnych zasad.
+Jak wspomniano wcześniej, wiele różnych typów blokad może wyzwolić utworzenie nieaktywnej skrzynki pocztowej.  Z tego powodu, aby zmienić czas przechowywania zastosowany do nieaktywnej skrzynki pocztowej, należy najpierw określić, jakiego typu blokady mają na nią wpływ.  W tym celu należy użyć programu Exchange Online programu PowerShell do identyfikowania typów blokad, a jeśli nieaktywna skrzynka pocztowa ma wpływ na zasady lub etykiety przechowywania Microsoft 365, musisz również użyć programu PowerShell Centrum zabezpieczeń i zgodności, aby zidentyfikować określone zasady.
 
-- Aby nawiązać połączenie Exchange Online z programem PowerShell lub centrum zabezpieczeń & w programie PowerShell, zobacz jeden z następujących tematów:
+- Aby nawiązać połączenie z programem Exchange Online programu PowerShell lub programem PowerShell & Security & Compliance Center, zobacz jeden z następujących tematów:
 
-  - [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+  - [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-  - [Połączenie do centrum & zabezpieczeń w programie PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell)
 
-## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Krok 1. Identyfikowanie blokady nieaktywnej skrzynki pocztowej
+## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Krok 1. Identyfikowanie blokad w nieaktywnej skrzynce pocztowej
 
-Ponieważ w nieaktywnej skrzynce pocztowej mogą być Microsoft 365 różne typy blokady lub co najmniej jedna z tych zasad, pierwszym krokiem jest zidentyfikowanie blokady nieaktywnej skrzynki pocztowej.
+Ponieważ różne typy blokad lub co najmniej jedna Microsoft 365 zasady przechowywania mogą być umieszczane w nieaktywnej skrzynce pocztowej, pierwszym krokiem jest zidentyfikowanie blokad w nieaktywnej skrzynce pocztowej.
   
-Uruchom następujące polecenie w programie Exchange Online PowerShell, aby wyświetlić informacje o holdie dla określonej nieaktywnej skrzynki pocztowej w Twojej organizacji.
+Uruchom następujące polecenie w programie Exchange Online Programu PowerShell, aby wyświetlić informacje o blokadzie dla określonej nieaktywnej skrzynki pocztowej w organizacji.
   
 ```powershell
 Get-Mailbox -Identity <identity of inactive mailbox> -InactiveMailboxOnly | FL DisplayName,Name,DistinguishedName,ExchangeGuid,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,LitigationHoldDate,LitigationHoldOwner,InPlaceHolds,ComplianceTagHoldApplied
 ```
 
-Jeśli musisz zidentyfikować typ blokowania wielu nieaktywnych skrzynek pocztowych i Twoja organizacja ma wiele z nich, wyświetlanie ich za pomocą programu PowerShell może stać się niewykonalne. W takim przypadku możesz wyeksportować wszystkie odpowiednie informacje do pliku CSV ```Path``` przy użyciu następującego polecenia i zmodyfikować odpowiednie informacje w środowisku:
+Jeśli musisz zidentyfikować typ blokady dla wielu nieaktywnych skrzynek pocztowych, a twoja organizacja ma ich dużą liczbę, wyświetlanie przy użyciu programu PowerShell może stać się niezarządzane. W takim przypadku można wyeksportować wszystkie odpowiednie informacje do pliku CSV przy użyciu następującego polecenia i zmodyfikować ```Path``` je zgodnie z potrzebami środowiska:
 
 ```powershell
 Get-Mailbox -InactiveMailboxOnly -ResultSize Unlimited | Select DisplayName,Name,DistinguishedName,ExchangeGuid,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,LitigationHoldDate,LitigationHoldOwner,InPlaceHolds,ComplianceTagHoldApplied | Export-Csv -NoTypeInformation -Path "C:\Temp\InactiveMailboxHoldTypes.csv"
 ```
 
-Na potrzeby tego przykładu pokazano wyniki dla 6 nieaktywnych skrzynek pocztowych z różnymi możliwymi typami blokowania.
+Na potrzeby tego przykładu poniżej przedstawiono wyniki dla sześciu nieaktywnych skrzynek pocztowych o różnych możliwych typach blokad.
 
 > [!NOTE]
-> Do jednej nieaktywnej skrzynki pocztowej można stosować wiele blokady w tym wiele typów blokady.
+> Wiele blokad, w tym wiele typów blokad, może mieć zastosowanie do jednej nieaktywnej skrzynki pocztowej.
   
 ```text
 DisplayName              : Ann Beebe
@@ -176,117 +176,117 @@ InPlaceHolds             : {c0ba3ce811b6432a8751430937152491}
 ComplianceTagHoldApplied : False
 ```
 
-W poniższej tabeli przedstawiono sześć różnych typów holdów, które zostały użyte do oznaczania każdej skrzynki pocztowej jako nieaktywnej z powyższego przykładu.
+W poniższej tabeli zidentyfikowano sześć różnych typów blokad, które zostały użyte do nieaktywnego działania każdej skrzynki pocztowej z powyższego przykładu.
   
-|**Nieaktywna skrzynka pocztowa**|**Typ wstrzymywania**|**Jak zidentyfikować wstrzymaj nieaktywną skrzynkę pocztową**|
+|**Nieaktywna skrzynka pocztowa**|**Typ blokady**|**Jak zidentyfikować blokadę w nieaktywnej skrzynce pocztowej**|
 |:-----|:-----|:-----|
-|Ann Beebe  <br/> |Zawieszenie w  postępowaniach sądowych  <br/> | Właściwość  `LitigationHoldEnabled`  jest ustawiana tak, aby  `True` wskazywała, że skrzynka pocztowa jest w posiadaniu postępowaniem sądowym. <br/><br/> Ponadto ustawiono ustawienie wskazujące, `LitigationHoldDuration` `365.00:00:00` że elementy skrzynki pocztowej nie będą już objęte postępowaniem sądowym 365 dni od daty ich utworzenia (wysłane/odebrane).  <br/><br/> Wskazuje `LitigationHoldDate` datę włączonego sporu sądowego i `LitigationHoldOwner` identyfikuje osobę, która zainicjowała postępowanie sądowe. <br/> |
-|Anna Olson  <br/> |Microsoft 365 przechowywania ze skrzynki Centrum zgodności platformy Microsoft 365, które są stosowane do określonych skrzynek pocztowych  <br/> |Ta `InPlaceHolds` właściwość zawiera identyfikator GUID Microsoft 365 przechowywania, które są stosowane do nieaktywnej skrzynki pocztowej. Jak widać, są to zasady przechowywania stosowane do określonych skrzynek pocztowych, ponieważ identyfikator GUID `mbx` zaczyna się od prefiksu i kończy na lub `:3``:2` . <br/><br/> Aby uzyskać więcej informacji, zobacz [Opis formatu wartości InPlaceHolds dla zasad przechowywania](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies).  <br/> |
-|Megan Bowen <br/> | Microsoft 365 przechowywania z zachowaniem lub zachowaniem i usunięciem co najmniej jednego elementu w skrzynce pocztowej  <br/> |Właściwość `ComplianceTagHoldApplied` wskazuje, `True` że element został oznaczony etykietą z zachowaniem lub zachowaniem i usunięciem etykiety.  <br/><br/> Ponadto właściwość zawiera `InPlaceHolds` identyfikator GUID Microsoft 365 etykiet przechowywania, które są stosowane do nieaktywnej skrzynki pocztowej.  <br/><br/> Aby uzyskać więcej informacji, zobacz [Identyfikowanie skrzynek pocztowych w holdie, ponieważ etykieta przechowywania została zastosowana do folderu lub elementu](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) <br/>  |
-|Mario Necaise  <br/> |Zasady przechowywania Microsoft 365 dla całej organizacji z Centrum zgodności platformy Microsoft 365  <br/> |Właściwość  `InPlaceHolds`  jest pusta, `LitigationHoldEnabled` jest `False` i `ComplianceTagHoldApplied` jest `False`. Oznacza to, że co najmniej jedna cała lokalizacja (Exchange) Microsoft 365 zasady przechowywania stosowane do organizacji, która dziedziczy nieaktywną skrzynkę pocztową. <br/><br/> Aby uzyskać więcej informacji, zobacz Jak potwierdzić zastosowanie zasad przechowywania w całej organizacji [do skrzynki pocztowej.](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox) <br/> |
-|Przedimek McMahon  <br/> |Wstrzymywanie sprawy zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365  <br/> |Ta  `InPlaceHolds`  właściwość zawiera identyfikator GUID przechowywania sprawy zbierania elektronicznych materiałów dowodowych, który jest umieszczany w nieaktywnej skrzynce pocztowej. Jak widać, jest to hold sprawy zbierania elektronicznych materiałów dowodowych, ponieważ identyfikator GUID zaczyna się od prefiksu  `UniH` .  <br/><br/> Aby uzyskać więcej informacji, zobacz [Zbierania elektronicznych materiałów dowodowych](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds). <br/> |
-|Pilar Pinilla  <br/> |In-Place hold  <br/> |Właściwość  `InPlaceHolds`  zawiera identyfikator GUID In-Place, który jest umieszczany w nieaktywnej skrzynce pocztowej. Można stwierdzić, że jest In-Place, ponieważ identyfikator GUID nie zaczyna się od prefiksu.  <br/><br/> **UWAGA**: Od 1 października 2020 r. nie można już zmieniać czasu trwania blokady w miejscu. Możesz usunąć tylko In-Place, co spowoduje usunięcie nieaktywnej skrzynki pocztowej. <br/><br/> Aby uzyskać więcej informacji, zobacz [Wycofanie starszych narzędzi zbierania elektronicznych materiałów dowodowych](legacy-ediscovery-retirement.md). <br/> |
+|Ann Beebe  <br/> |Wstrzymanie postępowania sądowego  <br/> | Właściwość jest ustawiona  `LitigationHoldEnabled`  na  `True` wskazującą, że skrzynka pocztowa znajduje się w blokadzie postępowania sądowego. <br/><br/> Ponadto parametr ma wartość `365.00:00:00` wskazującą, `LitigationHoldDuration` że elementy skrzynki pocztowej nie będą już podlegać postępowaniu sądowemu po upływie 365 dni od daty ich utworzenia (wysłane/odebrane).  <br/><br/> Wskazuje `LitigationHoldDate` datę włączenia elementu LitigationHold i `LitigationHoldOwner` identyfikuje osobę, która wszczęła postępowanie sądowe. <br/> |
+|Carol Olson  <br/> |Microsoft 365 zasad przechowywania z Centrum zgodności platformy Microsoft 365, które są stosowane do określonych skrzynek pocztowych  <br/> |Właściwość `InPlaceHolds` zawiera identyfikator GUID zasad przechowywania Microsoft 365 stosowanych do nieaktywnej skrzynki pocztowej. Można powiedzieć, że są to zasady przechowywania stosowane do określonych skrzynek pocztowych, ponieważ identyfikator GUID zaczyna się od prefiksu `mbx` i kończy się znakiem `:2` lub `:3`. <br/><br/> Aby uzyskać więcej informacji, zobacz [Opis formatu wartości InPlaceHolds dla zasad przechowywania](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies).  <br/> |
+|Megan Bowen <br/> | Microsoft 365 etykieta przechowywania z akcją zachowywania lub zachowywania i usuwania jest stosowana do co najmniej jednego elementu w skrzynce pocztowej  <br/> |Właściwość `ComplianceTagHoldApplied` `True` wskazuje, że element został oznaczony etykietą zachowywania lub zachowywania i usuwania.  <br/><br/> Ponadto właściwość `InPlaceHolds` zawiera identyfikator GUID zasad etykiety przechowywania Microsoft 365 zastosowanych do nieaktywnej skrzynki pocztowej.  <br/><br/> Aby uzyskać więcej informacji, zobacz [Identyfikowanie zablokowanych skrzynek pocztowych, ponieważ etykieta przechowywania została zastosowana do folderu lub elementu](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) <br/>  |
+|Mario Necaise  <br/> |Zasady przechowywania Microsoft 365 w całej organizacji z Centrum zgodności platformy Microsoft 365  <br/> |Właściwość jest pusta  `InPlaceHolds`  , `LitigationHoldEnabled` jest `False` i `ComplianceTagHoldApplied` jest `False`. Oznacza to, że co najmniej jedna cała lokalizacja (Exchange) Microsoft 365 zasad przechowywania stosowanych do organizacji, którą dziedziczy nieaktywna skrzynka pocztowa. <br/><br/> Aby uzyskać więcej informacji, zobacz [How to confirm that an organization-wide retention policy is applied to a mailbox (Jak potwierdzić, że zasady przechowywania w całej organizacji są stosowane do skrzynki pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox)) <br/> |
+|Abraham McMahon  <br/> |Sprawa zbierania elektronicznych materiałów dowodowych jest przechowywana w Centrum zgodności platformy Microsoft 365  <br/> |Właściwość  `InPlaceHolds`  zawiera identyfikator GUID blokady sprawy zbierania elektronicznych materiałów dowodowych umieszczony w nieaktywnej skrzynce pocztowej. Możesz powiedzieć, że jest to blokada sprawy zbierania elektronicznych materiałów dowodowych, ponieważ identyfikator GUID rozpoczyna się od prefiksu  `UniH` .  <br/><br/> Aby uzyskać więcej informacji, zobacz [Blokady zbierania elektronicznych materiałów dowodowych](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds). <br/> |
+|Pilar Pinilla  <br/> |blokada In-Place  <br/> |Właściwość  `InPlaceHolds`  zawiera identyfikator GUID blokady In-Place umieszczony w nieaktywnej skrzynce pocztowej. Możesz powiedzieć, że jest to In-Place Hold, ponieważ identyfikator GUID nie zaczyna się od prefiksu.  <br/><br/> **UWAGA**: Od 1 października 2020 r. czas trwania blokady miejscowej nie może już ulec zmianie. Możesz usunąć tylko In-Place Hold, co spowoduje usunięcie nieaktywnej skrzynki pocztowej. <br/><br/> Aby uzyskać więcej informacji, zobacz [Wycofywanie starszych narzędzi zbierania elektronicznych materiałów dowodowych](legacy-ediscovery-retirement.md). <br/> |
 
-## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>Krok 2. Zmienianie czasu trwania wstrzymywania nieaktywnej skrzynki pocztowej
+## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>Krok 2. Zmiana czasu przechowywania nieaktywnej skrzynki pocztowej
 
-Po zidentyfikowaniu, jaki typ blokady jest umieszczany w nieaktywnej skrzynce pocztowej (i czy jest ich wiele), następnym krokiem jest zmiana czasu trwania blokady.  Ten proces różni się w zależności od typu zastosowanego wstrzymywania.
+Po zidentyfikowaniu typu blokady w nieaktywnej skrzynce pocztowej (i tego, czy istnieje wiele blokad), następnym krokiem jest zmiana czasu trwania blokady.  Proces różni się w zależności od typu blokady.
 
-- [Zmienianie czasu trwania zasad Microsoft 365 przechowywania](#change-the-duration-for-a-microsoft-365-retention-policy)
+- [Zmienianie czasu trwania zasad przechowywania Microsoft 365](#change-the-duration-for-a-microsoft-365-retention-policy)
 
-- [Zmienianie czasu trwania etykiety Microsoft 365 przechowywania](#change-the-duration-for-a-microsoft-365-retention-label)
+- [Zmienianie czasu trwania etykiety przechowywania Microsoft 365](#change-the-duration-for-a-microsoft-365-retention-label)
 
-- [Zmienianie czasu trwania zbierania elektronicznych materiałów dowodowych](#change-the-duration-for-an-ediscovery-hold)
+- [Zmienianie czasu trwania blokady zbierania elektronicznych materiałów dowodowych](#change-the-duration-for-an-ediscovery-hold)
 
-- [Zmienianie czasu trwania sporu sądowego](#change-the-duration-for-a-litigation-hold)
+- [Zmienianie czasu trwania blokady postępowania sądowego](#change-the-duration-for-a-litigation-hold)
 
-- [Zmienianie czasu trwania In-Place Hold](#change-the-duration-for-an-in-place-hold)
+- [Zmienianie czasu trwania blokady In-Place](#change-the-duration-for-an-in-place-hold)
 
-### <a name="change-the-duration-for-a-microsoft-365-retention-policy"></a>Zmienianie czasu trwania zasad Microsoft 365 przechowywania
+### <a name="change-the-duration-for-a-microsoft-365-retention-policy"></a>Zmienianie czasu trwania zasad przechowywania Microsoft 365
 
-Aby zmodyfikować czas trwania blokowania dla zasad przechowywania usługi Microsoft 365, należy najpierw zidentyfikować zasady wpływające na nieaktywną skrzynkę pocztową, `Get-RetentionCompliancePolicy` uruchamiając go ze skojarzonym identyfikatorem GUID `InPlaceHolds` z właściwości skrzynki pocztowej w programie PowerShell Centrum zabezpieczeń i zgodności.
+Aby zmodyfikować czas przechowywania dla zasad przechowywania Microsoft 365, należy najpierw zidentyfikować zasady wpływające na nieaktywną skrzynkę pocztową, uruchamiając z `Get-RetentionCompliancePolicy` skojarzonym identyfikatorem GUID z `InPlaceHolds` właściwości w skrzynce pocztowej w programie PowerShell Centrum zabezpieczeń i zgodności.
 
-Pamiętaj o usunięciu prefiksu i sufiksu z identyfikatora GUID podczas uruchamiania tego polecenia.  Na przykład, korzystając z powyższych przykładowych informacji, `InPlaceHolds` `:3` `mbxcdbbb86ce60342489bff371876e7f224:3` `mbx` należy użyć wartości usuń, a następnie w wyniku czego zostanie jej identyfikator GUID zasad o wartości .`cdbbb86ce60342489bff371876e7f224`  W tym przykładzie chcesz uruchomić:
+Pamiętaj, aby usunąć prefiks i sufiks z identyfikatora GUID podczas uruchamiania tego polecenia.  Na przykład, korzystając z przykładowych informacji z powyższych `mbxcdbbb86ce60342489bff371876e7f224:3` informacji, należy wziąć `InPlaceHolds` wartość, a następnie usunąć `mbx` i `:3` spowodować identyfikator GUID zasad .`cdbbb86ce60342489bff371876e7f224`  W tym przykładzie należy uruchomić następujące polecenie:
 
 ```powershell
 Get-RetentionCompliancePolicy cdbbb86ce60342489bff371876e7f224 | FL Name
 ```
 
-Gdy znasz nazwę zasad, możesz po prostu zmodyfikować zasady przechowywania w centrum Microsoft 365 zgodności.  Należy pamiętać, że zasady przechowywania są zazwyczaj stosowane do więcej niż jednej lokalizacji, więc modyfikowanie zasad ma wpływ na wszystkie zastosowane lokalizacje — zarówno nieaktywne, jak i aktywne, które mogą także obejmować lokalizacje inne niż Exchange.  Aby uzyskać więcej informacji, [zobacz Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md).  
+Gdy znasz nazwę zasad, możesz po prostu zmodyfikować zasady przechowywania w centrum zgodności Microsoft 365.  Należy pamiętać, że zasady przechowywania są zwykle stosowane do więcej niż jednej lokalizacji, więc modyfikowanie zasad będzie miało wpływ na wszystkie zastosowane lokalizacje — zarówno nieaktywne, jak i aktywne, które mogą również obejmować lokalizacje inne niż Exchange.  Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md).  
 
 > [!IMPORTANT]
-> Zasady przechowywania z [włączonym blokowaniem](retention-preservation-lock.md) zachowywania mogą wydłużyć okres przechowywania, ale nie mogą zostać zmniejszone ani usunięte.
+> Zasady przechowywania z włączoną [blokadą zachowywania](retention-preservation-lock.md) mogą mieć przedłużony okres przechowywania, ale nie są zmniejszane ani usuwane.
 
-Jeśli zamierzasz zmodyfikować okres przechowywania tylko dla nieaktywnych skrzynek pocztowych lub tylko określonych nieaktywnych skrzynek pocztowych, możesz rozważyć wdrożenie adaptacyjnych zakresów [zasad, których](retention.md#adaptive-or-static-policy-scopes-for-retention) można używać do indywidualnego kierowania określonych skrzynek pocztowych — lub typów skrzynek pocztowych, takich jak nieaktywne skrzynki pocztowe — przy użyciu usługi Azure AD oraz atrybutów i właściwości usługi Exchange.
+Jeśli celem jest zmodyfikowanie okresu przechowywania tylko dla nieaktywnych skrzynek pocztowych lub tylko określonych nieaktywnych skrzynek pocztowych, możesz rozważyć wdrożenie [adaptacyjnych zakresów zasad](retention.md#adaptive-or-static-policy-scopes-for-retention), które mogą służyć do indywidualnego określania konkretnych skrzynek pocztowych lub typów skrzynek pocztowych, takich jak nieaktywne skrzynki pocztowe , przy użyciu usługi Azure AD i Exchange atrybutów i właściwości.
 
-### <a name="change-the-duration-for-a-microsoft-365-retention-label"></a>Zmienianie czasu trwania etykiety Microsoft 365 przechowywania
+### <a name="change-the-duration-for-a-microsoft-365-retention-label"></a>Zmienianie czasu trwania etykiety przechowywania Microsoft 365
 
-Podobnie jak w przypadku zasad przechowywania, podczas modyfikowania czasu trwania przechowywania etykiety przechowywania programu Microsoft 365 należy najpierw zidentyfikować zasady, `Get-RetentionCompliancePolicy` które publikują etykietę wpływającą na zawartość w nieaktywnej skrzynce pocztowej, uruchamiając skojarzony identyfikator GUID `InPlaceHolds` z właściwości skrzynki pocztowej w programie PowerShell Centrum zabezpieczeń i zgodności.
+Podobnie jak w przypadku zasad przechowywania, podczas modyfikowania czasu przechowywania etykiety przechowywania Microsoft 365 należy najpierw zidentyfikować zasady, które publikują etykietę wpływającą na zawartość w nieaktywnej skrzynce pocztowej, uruchamiając `Get-RetentionCompliancePolicy` skojarzony identyfikator GUID z `InPlaceHolds` właściwości w skrzynce pocztowej w programie PowerShell Centrum zabezpieczeń i zgodności.
 
-Pamiętaj o usunięciu prefiksu i sufiksu z identyfikatora GUID podczas uruchamiania tego polecenia.  Na przykład, korzystając z powyższych przykładowych informacji, `InPlaceHolds` `:1` `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` `mbx` należy użyć wartości usuń, a następnie w wyniku czego zostanie jej identyfikator GUID zasad o wartości .`6fe063689d404a5bb9940eed0f0bf5d2`  W tym przykładzie chcesz uruchomić:
+Pamiętaj, aby usunąć prefiks i sufiks z identyfikatora GUID podczas uruchamiania tego polecenia.  Na przykład, korzystając z przykładowych informacji z powyższych `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` informacji, należy wziąć `InPlaceHolds` wartość, a następnie usunąć `mbx` i `:1` spowodować identyfikator GUID zasad .`6fe063689d404a5bb9940eed0f0bf5d2`  W tym przykładzie należy uruchomić następujące polecenie:
 
 ```powershell
 Get-RetentionCompliancePolicy 6fe063689d404a5bb9940eed0f0bf5d2 | FL Name
 ```
 
-Po zidentyfikowaniu zasad będziesz wiedzieć, które etykiety zostały opublikowane i ich ustawienia.  Ponieważ etykiety dotyczą poszczególnych elementów, w zależności od liczby etykiet opublikowanych w związku z zasadami i ich ustawieniami, bezpośrednie zidentyfikowanie etykiet mających wpływ na zawartość może być nie możliwe.  
+Po zidentyfikowaniu zasad będziesz wiedzieć, które etykiety zostały opublikowane i jakie są ich ustawienia.  Ponieważ etykiety mają zastosowanie do poszczególnych elementów, w zależności od liczby etykiet opublikowanych przy użyciu zasad i ich ustawień, możesz nie być w stanie bezpośrednio określić, która etykieta ma wpływ na zawartość.  
 
-Jedną z metod identyfikowania zawartości, do których są stosowane poszczególne etykiety, jest korzystanie z [wyszukiwania zawartości](content-search.md).  Na przykład, korzystając z powyższych informacji przykładowych, założono, że zasady publikują kilka etykiet, z których jedna nosi nazwę "Zawartość-kadr".  Jeśli masz odpowiednie [uprawnienia,](microsoft-365-compliance-center-permissions.md) przeszukiwanie zawartości można uruchomić za pomocą polecenia [programu PowerShell New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch), określającego podstawowy adres SMTP nieaktywnej skrzynki pocztowej i wstępnie zapisanego z okresem (`.`) `-AllowNotFoundExchangeLocationsEnabled $true` oraz parametru, aby pominąć sprawdzanie poprawności:
+Jedną z metod, za pomocą których można zidentyfikować zawartość, do których stosuje się każdą etykietę, jest użycie [wyszukiwania zawartości](content-search.md).  Na przykład korzystając z powyższych przykładowych informacji, załóżmy, że zasady publikują kilka etykiet, z których jedna nosi nazwę "HR-Content".  Przy [prawidłowych uprawnieniach](microsoft-365-compliance-center-permissions.md) można uruchomić wyszukiwanie zawartości za pomocą [polecenia New-ComplianceSearch programu PowerShell](/powershell/module/exchange/new-compliancesearch), określając podstawowy adres SMTP nieaktywnej skrzynki pocztowej, wstępnie z kropką (`.`) i `-AllowNotFoundExchangeLocationsEnabled $true` parametrem pomijającym walidację:
 
 ```powershell
 New-ComplianceSearch -Name "MeganB Inactive Mailbox HR-Content Label Search" -ExchangeLocation .meganb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true -ContentMatchQuery "compliancetag=HR-Content"
 ```
 
-Po utworzeniu wyszukiwania możesz rozpocząć wyszukiwanie, korzystając z następującego polecenia:
+Po utworzeniu wyszukiwania rozpoczniesz wyszukiwanie przy użyciu następującego polecenia:
 
 ```powershell
 Start-ComplianceSearch "MeganB Inactive Mailbox HR-Content Label Search"
 ```
 
-Przy użyciu tej metody możesz następnie określić, które etykiety z zidentyfikowanych zasad etykiet mają zastosowanie do zawartości w nieaktywnej skrzynce pocztowej, aby zmodyfikować ich okresy przechowywania. Należy pamiętać, że etykiety przechowywania są zazwyczaj stosowane do więcej niż jednej lokalizacji, więc modyfikowanie etykiet ma wpływ na wszystkie zastosowane lokalizacje i zawartość oznaczoną etykietą, która może również zawierać lokalizacje i zawartość inną niż Exchange. Aby uzyskać więcej informacji, zobacz [Tworzenie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md).
+Korzystając z tej metody, możesz określić, które etykiety z zidentyfikowanych zasad etykiet mają zastosowanie do zawartości w nieaktywnej skrzynce pocztowej, aby można było modyfikować ich okresy przechowywania. Należy pamiętać, że etykiety przechowywania są zwykle stosowane do więcej niż jednej lokalizacji, dlatego modyfikowanie etykiety będzie miało wpływ na wszystkie zastosowane lokalizacje i zawartość z etykietami, które mogą również obejmować lokalizacje i zawartość inną niż Exchange. Aby uzyskać więcej informacji, zobacz [Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md).
 
 > [!NOTE]
-> Nie wszystkie typy etykiet przechowywania można modyfikować.  W przypadku niektórych etykiet możesz tylko zwiększyć czas przechowywania, a w przypadku innych nie możesz w ogóle zmodyfikować okresu przechowywania.
+> Nie można modyfikować wszystkich typów etykiet przechowywania.  W przypadku niektórych etykiet może być możliwe tylko wydłużenie czasu przechowywania, a w przypadku innych może nie być możliwe zmodyfikowanie okresu przechowywania w ogóle.
 
-### <a name="change-the-duration-for-an-ediscovery-hold"></a>Zmienianie czasu trwania zbierania elektronicznych materiałów dowodowych
+### <a name="change-the-duration-for-an-ediscovery-hold"></a>Zmienianie czasu trwania blokady zbierania elektronicznych materiałów dowodowych
 
-Blokady skojarzone ze sprawami zbierania elektronicznych materiałów dowodowych są nieokreślone, co oznacza, że nie ma czasu trwania blokady, który można zmienić. Elementy są przechowywane na zawsze lub do [](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold) momentu usunięcia trzymania lub zamknięcia sprawy.
+Blokady skojarzone ze sprawami zbierania elektronicznych materiałów dowodowych są przechowywane na czas nieokreślony, co oznacza, że nie ma czasu przechowywania, który można zmienić. Elementy są przechowywane na zawsze lub do momentu [usunięcia blokady](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold) lub zamknięcia sprawy.
   
-### <a name="change-the-duration-for-a-litigation-hold"></a>Zmienianie czasu trwania sporu sądowego
+### <a name="change-the-duration-for-a-litigation-hold"></a>Zmienianie czasu trwania blokady postępowania sądowego
 
-Za pomocą programu Exchange Online PowerShell można zmienić czas trwania stosowania funkcji zawieszenie w przypadku postępowania w sądach sądowych, która jest umieszczana w nieaktywnej skrzynce pocztowej. Nie można korzystać z programu EAC. Uruchom następujące polecenie, aby zmienić czas trwania blokowania. W tym przykładzie czas trwania zawieszonego połączenia jest zmieniany na nieograniczony czas:
+Należy użyć Exchange Online programu PowerShell, aby zmienić czas przechowywania blokady postępowania sądowego umieszczonego w nieaktywnej skrzynce pocztowej. Nie można użyć umowy EAC. Uruchom następujące polecenie, aby zmienić czas przechowywania. W tym przykładzie czas trwania blokady jest zmieniany na nieograniczony okres czasu:
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited
 ```
 
-W efekcie elementy w nieaktywnej skrzynce pocztowej są zachowywane przez czas nieograniczony lub do czasu usunięcia zawieszania lub zmiany czasu trwania zawieszania na inną wartość.
+W rezultacie elementy w nieaktywnej skrzynce pocztowej są przechowywane przez czas nieokreślony lub do momentu usunięcia blokady lub zmiany czasu przechowywania na inną wartość.
   
 > [!TIP]
-> Najlepszym sposobem na zidentyfikowanie nieaktywnej skrzynki pocztowej jest użycie jej nazwy **wyróżnianej** lub **Exchange GUID**. Użycie jednej z tych wartości pomaga zapobiec przypadkowemu określeniu niewłaściwej skrzynki pocztowej.
+> Najlepszym sposobem identyfikacji nieaktywnej skrzynki pocztowej jest użycie jej **wartości Identyfikator GUID lub nazwa wyróżniająca** lub **Exchange**. Użycie jednej z tych wartości pomaga zapobiec przypadkowemu określeniu niewłaściwej skrzynki pocztowej.
 
-### <a name="change-the-duration-for-an-in-place-hold"></a>Zmienianie czasu trwania In-Place Hold
+### <a name="change-the-duration-for-an-in-place-hold"></a>Zmienianie czasu trwania blokady In-Place
 
-In-Place zostały wycofane i nie można już ich modyfikować. Jeśli do nieaktywnej skrzynki In-Place do skrzynki pocztowej zastosowano wstrzymanie, nie można zmienić czasu trwania wstrzymywania. Możesz usunąć tylko In-Place, co spowoduje usunięcie nieaktywnej skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz [Usuwanie nieaktywnej skrzynki pocztowej](delete-an-inactive-mailbox.md#remove-in-place-holds).
+In-Place Blokady zostały wycofane i nie można ich już modyfikować. Jeśli nieaktywna skrzynka pocztowa ma zastosowany In-Place Hold, nie można zmienić czasu przechowywania. Można usunąć tylko In-Place Hold, co spowoduje usunięcie nieaktywnej skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz [Usuwanie nieaktywnej skrzynki pocztowej](delete-an-inactive-mailbox.md#remove-in-place-holds).
   
 ## <a name="more-information"></a>Więcej informacji
 
-- **Jak jest obliczany czas trwania zawieszonego elementu w nieaktywnej skrzynce pocztowej?** Czas trwania jest obliczany na podstawie pierwotnej daty, gdy odebrano lub utworzono element skrzynki pocztowej.
+- **Jak jest obliczany czas przechowywania dla elementu w nieaktywnej skrzynce pocztowej?** Czas trwania jest obliczany na podstawie oryginalnej daty odebrania lub utworzenia elementu skrzynki pocztowej.
     
-- **Co się dzieje po wygaśnięciu czasu trwania zawieszonego?** Gdy czas trwania przechowywania dla elementu skrzynki pocztowej w folderze Elementy do odzyskania wygasa, ten element jest trwale usuwany (usuwany) z nieaktywnej skrzynki pocztowej. Jeśli nie określono czasu trwania dla umieszczenia w nieaktywnej skrzynce pocztowej, elementy w folderze Elementy do odzyskania nie są czyszowane (chyba że czas trwania przechowywania nieaktywnej skrzynki pocztowej zostanie zmieniony). 
+- **Co się stanie, gdy czas trwania blokady wygaśnie?** Gdy czas przechowywania wygaśnie dla elementu skrzynki pocztowej w folderze Elementy możliwe do odzyskania, element zostanie trwale usunięty (przeczyszczany) ze nieaktywnej skrzynki pocztowej. Jeśli dla blokady umieszczonej w nieaktywnej skrzynce pocztowej nie określono czasu trwania, elementy w folderze Elementy możliwe do odzyskania nigdy nie zostaną wyczyszczone (chyba że czas przechowywania nieaktywnej skrzynki pocztowej zostanie zmieniony). 
     
-- **Czy zasady Exchange MRM są nadal przetwarzane w nieaktywnych skrzynkach pocztowych?**  Jeśli zasady przechowywania MRM zostały zastosowane do skrzynki pocztowej przed jej nieaktywnym działaniem, wszelkie zasady usuwania (tagi przechowywania MRM  skonfigurowane przy użyciu akcji Usuń) będą nadal przetwarzane w nieaktywnej skrzynce pocztowej. Oznacza to, że elementy otagowane przy użyciu zasad usuwania mrm zostaną przeniesione do folderu Elementy do odzyskania po wygaśnięciu okresu przechowywania. Te elementy są czyszowane z nieaktywnej skrzynki pocztowej po wygaśnięciu czasu trwania blokowania. Jeśli nie określono czasu trwania zawieszania dla nieaktywnej skrzynki pocztowej, elementy w folderze Odzyskiwanie elementów będą zachowywane przez czas nieograniczony.
+- **Czy zasady Exchange MRM są nadal przetwarzane w nieaktywnych skrzynkach pocztowych?**  Jeśli zasady przechowywania MRM zostały zastosowane do skrzynki pocztowej przed jej nieaktywnym działaniem, wszelkie zasady usuwania (tagi przechowywania MRM skonfigurowane za pomocą akcji **Usuń** ) będą nadal przetwarzane w nieaktywnej skrzynce pocztowej. Oznacza to, że elementy oznaczone zasadami usuwania mrm zostaną przeniesione do folderu Elementy możliwe do odzyskania po upływie okresu przechowywania. Te elementy są usuwane z nieaktywnej skrzynki pocztowej po wygaśnięciu czasu przechowywania. Jeśli czas przechowywania nie zostanie określony dla nieaktywnej skrzynki pocztowej, elementy w folderze Odzyskiwanie elementów zostaną zachowane przez czas nieokreślony.
 
-    Natomiast wszelkie zasady archiwizacji (tagi przechowywania MRM skonfigurowane za pomocą akcji **MoveToArchive** ) zawarte w zasadach przechowywania MRM przypisanych do nieaktywnej skrzynki pocztowej są ignorowane. Oznacza to, że elementy w nieaktywnej skrzynce pocztowej otagowane przy użyciu zasad archiwizacji pozostają w podstawowej skrzynce pocztowej po wygaśnięciu okresu przechowywania. Nie są one przenoszone do archiwaowej skrzynki pocztowej ani do folderu Elementy do odzyskania w archiwaowej skrzynce pocztowej. Będą one przechowywane przez czas nieograniczony.
+    Z drugiej strony wszystkie zasady archiwum (tagi przechowywania mrm skonfigurowane za pomocą akcji **MoveToArchive** ), które są uwzględnione w zasadach przechowywania mrm przypisanych do nieaktywnej skrzynki pocztowej, są ignorowane. Oznacza to, że elementy w nieaktywnej skrzynce pocztowej oznaczone zasadami archiwum pozostają w podstawowej skrzynce pocztowej po upływie okresu przechowywania. Nie są one przenoszone do skrzynki pocztowej archiwum ani do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum. Zostaną one zachowane na czas nieokreślony.
     > [!NOTE]
-    > Stosowanie zasad Exchange przechowywania (funkcji Zarządzanie rekordami wiadomości lub MRM w programie Exchange Online) nie powoduje utworzenia nieaktywnej skrzynki pocztowej po usunięciu konta użytkownika.
+    > Zastosowanie zasad przechowywania Exchange (funkcja Zarządzanie rekordami obsługi komunikatów lub MRM w Exchange Online) nie powoduje utworzenia nieaktywnej skrzynki pocztowej po usunięciu konta użytkownika.
 
-- **Podobnie jak w przypadku zwykłych skrzynek pocztowych asystent folderów zarządzanych (MFA) również przetwarza nieaktywne skrzynki pocztowe.** W Exchange Online uwierzytelniania wieloskładnikowego skrzynki pocztowe są przetwarzane mniej więcej raz na siedem dni. Po zmianie czasu trwania blokowania nieaktywnej skrzynki pocztowej możesz użyć polecenia **cmdlet Start-ManagedFolderAssistant** , aby natychmiast rozpocząć przetwarzanie nowego czasu trwania nowego blokowania dla nieaktywnej skrzynki pocztowej. Uruchom następujące polecenie: 
+- **Podobnie jak w przypadku zwykłych skrzynek pocztowych, asystent folderów zarządzanych (MFA) przetwarza również nieaktywne skrzynki pocztowe.** W Exchange Online uwierzytelnianie wieloskładnikowe przetwarza skrzynki pocztowe około raz na siedem dni. Po zmianie czasu przechowywania nieaktywnej skrzynki pocztowej możesz użyć polecenia cmdlet **Start-ManagedFolderAssistant** , aby natychmiast rozpocząć przetwarzanie nowego czasu przechowywania nieaktywnej skrzynki pocztowej. Uruchom następujące polecenie: 
 
     ```powershell
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>
     ```
    
-- **Jeśli wiele z `InPlaceHolds` nich znajduje się w nieaktywnej skrzynce pocztowej, nie są wyświetlane wszystkie identyfikatory GUID przechowywania.** Poniższe polecenie umożliwia wyświetlenie identyfikatorów GUID wszystkich `InPlaceHolds` osób umieszczonych w nieaktywnej skrzynce pocztowej.
+- **Jeśli wiele z nich `InPlaceHolds` zostanie umieszczonych w nieaktywnej skrzynce pocztowej, nie zostaną wyświetlone wszystkie identyfikatory GUID blokady.** Możesz uruchomić następujące polecenie, aby wyświetlić identyfikatory GUID dla wszystkich `InPlaceHolds` elementów umieszczonych w nieaktywnej skrzynce pocztowej.
     
     ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds

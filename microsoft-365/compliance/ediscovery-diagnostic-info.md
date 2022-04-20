@@ -1,5 +1,5 @@
 ---
-title: Zbieranie informacji diagnostycznych zbierania elektronicznych materiałów dowodowych
+title: Zbieraj informacje diagnostyczne dotyczące zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,35 +16,35 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: Dowiedz się, jak zbierać informacje diagnostyczne zbierania elektronicznych materiałów dowodowych dla sprawy pomocy technicznej firmy Microsoft.
-ms.openlocfilehash: cab21c71168119b27a478b99a19ad5693ffb678e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Dowiedz się, jak zbierać informacje diagnostyczne zbierania elektronicznych materiałów dowodowych dla pomoc techniczna firmy Microsoft przypadku.
+ms.openlocfilehash: 13d3967adc6eddb6f0fc5a5b57119eb6c47114de
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021164"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932205"
 ---
-# <a name="collect-ediscovery-diagnostic-information"></a>Zbieranie informacji diagnostycznych zbierania elektronicznych materiałów dowodowych
+# <a name="collect-ediscovery-diagnostic-information"></a>Zbieraj informacje diagnostyczne dotyczące zbierania elektronicznych materiałów dowodowych
 
-Czasami inżynierowie pomocy technicznej firmy Microsoft wymagają szczegółowych informacji o problemie podczas otwierania sprawy pomocy technicznej związanej z core eDiscovery lub Advanced eDiscovery. Ten artykuł zawiera wskazówki dotyczące zbierania informacji diagnostycznych, które ułatwiają inżynierom pomocy technicznej w zbadaniu i rozwiązaniu problemów. Zazwyczaj nie musisz zbierać tych informacji, dopóki nie poprosi o to inżynier pomocy technicznej firmy Microsoft.
+Czasami inżynierowie pomoc techniczna firmy Microsoft wymagają konkretnych informacji o problemie podczas otwierania zgłoszenia do pomocy technicznej związanego zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) lub microsoft Purview eDiscovery (Premium). Ten artykuł zawiera wskazówki dotyczące gromadzenia informacji diagnostycznych, które ułatwiają inżynierom pomocy technicznej badanie i rozwiązywanie problemów. Zazwyczaj nie trzeba zbierać tych informacji, dopóki nie zostanie o to poproszony inżynier pomoc techniczna firmy Microsoft.
 
 > [!IMPORTANT]
-> Dane wyjściowe z polecenia cmdlet i informacji diagnostycznych opisanych w tym artykule mogą zawierać informacje poufne dotyczące sporu sądowego lub dochodzenia wewnętrznego w organizacji. Przed wysłaniem nieprzetworzonych informacji diagnostycznych do pomocy technicznej firmy Microsoft należy przejrzeć te informacje i ponownie przejrzeć wszelkie poufne informacje (na przykład nazwiska lub inne informacje na temat stron sporu sądowego lub śledztwa), `XXXXXXX`zastępując je . Zastosowanie tej metody będzie również wskazywać inżynierowi pomocy technicznej firmy Microsoft, że informacje były redagowane.
+> Dane wyjściowe poleceń cmdlet i informacji diagnostycznych opisanych w tym artykule mogą zawierać poufne informacje na temat sporów sądowych lub wewnętrznych dochodzeń w organizacji. Przed wysłaniem nieprzetworzonych informacji diagnostycznych do pomoc techniczna firmy Microsoft należy przejrzeć informacje i zredagować wszelkie poufne informacje (takie jak nazwy lub inne informacje dotyczące stron sporu sądowego lub dochodzenia), zastępując je `XXXXXXX`. Użycie tej metody będzie również wskazywać inżynierowi pomoc techniczna firmy Microsoft, że informacje zostały zredagowane.
 
-## <a name="collect-diagnostic-information-for-core-ediscovery"></a>Zbieranie informacji diagnostycznych na temat podstawowych zbierania elektronicznych materiałów dowodowych
+## <a name="collect-diagnostic-information-for-ediscovery-standard"></a>Zbieranie informacji diagnostycznych dotyczących zbierania elektronicznych materiałów dowodowych (standard)
 
-Zbieranie informacji diagnostycznych na temat zbierania elektronicznych materiałów dowodowych jest oparte na poleceniach cmdlet, więc musisz użyć programu PowerShell w centrum zabezpieczeń & zgodności. Poniższe przykłady programu PowerShell zawierają polecenia cmdlet, a następnie zapisują dane wyjściowe w określonym pliku tekstowym. W większości przypadków pomocy technicznej wystarczy uruchomić tylko jedno z tych poleceń.
+Zbieranie informacji diagnostycznych dotyczących zbierania elektronicznych materiałów dowodowych (Standardowa) jest oparte na poleceniach cmdlet, dlatego należy użyć programu PowerShell & Security & Compliance Center. W poniższych przykładach programu PowerShell zostaną uruchomione polecenia cmdlet, a następnie zapiszą dane wyjściowe w określonym pliku tekstowym. W większości przypadków pomocy technicznej należy uruchomić tylko jedno z tych poleceń.
 
-Aby uruchomić następujące polecenia cmdlet, połącz [się z programem PowerShell w & zabezpieczeń i zgodności</span>](/powershell/exchange/connect-to-scc-powershell). Po na połączeniu uruchom jedno lub więcej z poniższych poleceń i zastąp symbole zastępcze rzeczywistymi nazwami obiektów.
+Aby uruchomić następujące polecenia cmdlet, [połącz się z programem PowerShell</span> Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell). Po nawiązaniu połączenia uruchom co najmniej jedno z następujących poleceń i zastąp symbole zastępcze rzeczywistymi nazwami obiektów.
 
-Po przejrzeniu wygenerowanego pliku tekstowego i redagowania informacji poufnych wyślij go do inżyniera pomocy technicznej firmy Microsoft pracującego nad sprawą.
+Po przejrzeniu wygenerowanego pliku tekstowego i zredagowaniu poufnych informacji wyślij go do inżyniera pomoc techniczna firmy Microsoft pracującego nad Twoją sprawą.
 
 > [!NOTE]
-> Polecenia zawarte w tej sekcji można także uruchomić w celu zbierania informacji diagnostycznych dotyczących wyszukiwań i eksportów wymienionych na  stronie Przeszukiwanie zawartości w Centrum zgodności platformy Microsoft 365.
+> Możesz również uruchomić polecenia w tej sekcji, aby zebrać informacje diagnostyczne dotyczące wyszukiwań i eksportów wymienionych na stronie **wyszukiwania zawartości** w portalu zgodności usługi Microsoft Purview.
 
 ### <a name="collect-information-about-searches"></a>Zbieranie informacji o wyszukiwaniach
 
-Poniższe polecenie zbiera informacje, które są przydatne podczas badania problemów z wyszukiwaniem zawartości lub wyszukiwaniem skojarzonym z podstawową sprawą zbierania elektronicznych materiałów dowodowych.
+Poniższe polecenie zbiera informacje przydatne podczas badania problemów z wyszukiwaniem zawartości lub wyszukiwaniem skojarzonym ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa).
 
 ```powershell
 Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
@@ -52,42 +52,42 @@ Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
 
 ### <a name="collect-information-about-search-actions"></a>Zbieranie informacji o akcjach wyszukiwania
 
-Poniższe polecenie zbiera informacje w celu zbadania problemów dotyczących wyświetlania podglądu, eksportowania lub przeczyszczania wyników wyszukiwania zawartości lub wyszukiwania skojarzonego ze sprawą core eDiscovery. Nazwę akcji wyszukiwania można określić, klikając eksport wymieniony na karcie **Eksporty** . Aby zidentyfikować nazwy akcji podglądu i przeczyszczania, możesz uruchomić polecenie cmdlet **Get-ComplianceSearchAction** w celu wyświetlenia listy wszystkich akcji. Format nazwy akcji wyszukiwania jest tworzony na przykład przez dołączenie `_Preview``_Export``_Purge` lub nazwy odpowiadającej jej nazwy.
+Poniższe polecenie zbiera informacje w celu zbadania problemów z podglądem, eksportowaniem lub przeczyszczaniem wyników wyszukiwania zawartości lub wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych (standardowa). Nazwę akcji wyszukiwania można zidentyfikować, klikając eksport wymieniony na **karcie Eksporty** . Aby zidentyfikować nazwy akcji podglądu i przeczyszczania, możesz uruchomić polecenie cmdlet **Get-ComplianceSearchAction** , aby wyświetlić listę wszystkich akcji. Format nazwy akcji wyszukiwania jest konstruowany przez dołączenie `_Preview`, `_Export`lub `_Purge` do nazwy odpowiedniego wyszukiwania.
 
 ```powershell
 Get-ComplianceSearchAction "<Search action name>" | FL > "ComplianceSearchAction.txt"
 ```
 
-### <a name="collect-information-about-ediscovery-holds"></a>Zbieranie informacji o zbierania elektronicznych materiałów dowodowych
+### <a name="collect-information-about-ediscovery-holds"></a>Zbieranie informacji o blokadach zbierania elektronicznych materiałów dowodowych
 
-Jeśli hold eDiscovery associated with a Core eDiscovery case isn't functioning as expected, run the following command to collect information about the Case Hold Policy and associated Case Hold Rule for the eDiscovery hold. Nazwa *zasad przechowywania sprawy w następującym* poleceniu jest taka sama jak nazwa przechowywania zbierania elektronicznych materiałów dowodowych. Możesz określić tę nazwę na kartach **Zarchiwniaki** w podstawowej sprawie zbierania elektronicznych materiałów dowodowych.
+Jeśli blokada zbierania elektronicznych materiałów dowodowych skojarzona z przypadkiem zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) nie działa zgodnie z oczekiwaniami, uruchom następujące polecenie, aby zebrać informacje o zasadach blokady sprawy i skojarzonej regule blokady sprawy dla blokady zbierania elektronicznych materiałów dowodowych. *Nazwa zasad przechowywania przypadku* w poniższym poleceniu jest taka sama jak nazwa blokady zbierania elektronicznych materiałów dowodowych. Tę nazwę można zidentyfikować na kartach **Blokady** w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa).
 
 ```powershell
 Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--CaseHoldRule--";Get-CaseHoldRule -Policy $_.Name | FL} > "eDiscoveryCaseHold.txt"
 ```
 
-### <a name="collect-all-case-information"></a>Zbierz wszystkie informacje o sprawy
+### <a name="collect-all-case-information"></a>Zbieranie wszystkich informacji o przypadku
 
-Czasami nie wiadomo, jakie informacje są wymagane przez pomoc techniczną firmy Microsoft do zbadania problemu. W takiej sytuacji możesz zebrać wszystkie informacje diagnostyczne dla podstawowej sprawy zbierania elektronicznych materiałów dowodowych. Nazwa *sprawy core eDiscovery* w następującym poleceniu jest taka sama jak nazwa sprawy wyświetlanej na stronie Podstawowe sprawy zbierania elektronicznych  materiałów dowodowych w Centrum zgodności platformy Microsoft 365.
+Czasami nie jest jasne, jakie informacje są wymagane przez pomoc techniczna firmy Microsoft do zbadania problemu. W takiej sytuacji możesz zebrać wszystkie informacje diagnostyczne dla przypadku zbierania elektronicznych materiałów dowodowych (Standardowa). *Nazwa przypadku zbierania elektronicznych materiałów dowodowych (Standardowa)* w poniższym poleceniu jest taka sama jak nazwa przypadku wyświetlanego na stronie **eDiscovery (Standard)** w portalu zgodności.
 
 ```powershell
-Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
+Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
-## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>Zbieranie informacji diagnostycznych dla Advanced eDiscovery
+## <a name="collect-diagnostic-information-for-ediscovery-premium"></a>Zbieranie informacji diagnostycznych dotyczących zbierania elektronicznych materiałów dowodowych (Premium)
 
-Karta **Ustawienia** w przypadku Advanced eDiscovery umożliwia szybkie skopiowanie informacji diagnostycznych dotyczących sprawy. Informacje diagnostyczne są zapisywane w schowku, dzięki czemu można je wkleić do pliku tekstowego i wysłać do pomocy technicznej firmy Microsoft.
+Karta **Ustawienia** w przypadku zbierania elektronicznych materiałów dowodowych (Premium) umożliwia szybkie skopiowanie informacji diagnostycznych dla sprawy. Informacje diagnostyczne są zapisywane w schowku, dzięki czemu można je wkleić do pliku tekstowego i wysłać do pomoc techniczna firmy Microsoft.
 
-1. Przejdź do Centrum zgodności platformy Microsoft 365 i wybierz **pozycję eDiscoveryAdvanced** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank"></a>
+1. Przejdź do portalu zgodności i wybierz pozycję **eDiscoveryAdvanced** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank"></a>
 
-2. Zaznacz sprawę, a następnie kliknij **kartę Ustawienia** sprawy.
+2. Wybierz przypadek, a następnie kliknij kartę **Ustawienia**.
 
-3. W **obszarze Informacje o przypadku** kliknij przycisk **Wybierz**.
+3. W obszarze **Informacje o wielkości liter** kliknij **pozycję Wybierz**.
 
-4. Na stronie wysuwu kliknij pozycję **AkcjeKopiowanie**  >  informacji o pomocy technicznej, aby skopiować informacje do schowka.
+4. Na stronie wysuwanej kliknij pozycję ActionsCopy support information ( **Akcje** > **) Informacje o pomocy technicznej** , aby skopiować informacje do schowka.
 
-5. Otwórz plik tekstowy (w programie Notatnik), a następnie wklej informacje z tego pliku.
+5. Otwórz plik tekstowy (w Notatnik), a następnie wklej informacje w pliku tekstowym.
 
-6. Zapisz plik tekstowy i nadaj plikowi `AeD Diagnostic Info YYYY.MM.DD` nazwę w podobny sposób `AeD Diagnostic Info 2020.11.03`(na przykład ).
+6. Zapisz plik tekstowy i nadaj mu nazwę podobną `AeD Diagnostic Info YYYY.MM.DD` (na przykład `AeD Diagnostic Info 2020.11.03`).
 
-Po przejrzeniu pliku i redagowania informacji poufnych wyślij go do inżyniera pomocy technicznej firmy Microsoft pracującego nad sprawą.
+Po przejrzeniu pliku i zredagowaniu poufnych informacji wyślij go do inżyniera pomoc techniczna firmy Microsoft pracującego nad Twoją sprawą.

@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usługa Basic Mobility and Security może pomóc w zabezpieczeniu urządzeń przenośnych organizacji i zarządzaniu nimi.
-ms.openlocfilehash: 02c8efbed8f781dfdb0e9abfaa2af3a2c92733ff
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: f2da9a20c496d5229d62e477fcf4cc0024436788
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780814"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935242"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Zarządzanie urządzeniami zarejestrowanymi w usłudze Mobile Zarządzanie urządzeniami w Microsoft 365
 
 Wbudowane zarządzanie urządzeniami przenośnymi dla Microsoft 365 ułatwia zabezpieczanie urządzeń przenośnych użytkowników, takich jak telefony iPhone, iPady, Androidy i Windows telefony oraz zarządzanie nimi. Pierwszym krokiem jest zalogowanie się do Microsoft 365 i skonfigurowanie pakietu Basic Mobility and Security. Aby uzyskać więcej informacji, zobacz [Konfigurowanie pakietu Basic Mobility and Security](set-up.md).
 
-Po skonfigurowaniu tych urządzeń osoby w organizacji muszą zarejestrować swoje urządzenia w usłudze. Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security](enroll-your-mobile-device.md). Następnie możesz użyć pakietu Basic Mobility and Security, aby ułatwić zarządzanie urządzeniami w organizacji. Na przykład można użyć zasad zabezpieczeń urządzeń, aby ograniczyć dostęp do poczty e-mail lub innych usług, wyświetlać raporty urządzeń i zdalnie czyścić urządzenie. Zazwyczaj należy przejść do Centrum zgodności & zabezpieczeń, aby wykonać te zadania. Aby uzyskać więcej informacji, zobacz [Centrum zgodności platformy Microsoft 365](../../compliance/microsoft-365-compliance-center.md).
+Po skonfigurowaniu tych urządzeń osoby w organizacji muszą zarejestrować swoje urządzenia w usłudze. Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security](enroll-your-mobile-device.md).Następnie możesz użyć pakietu Basic Mobility and Security, aby ułatwić zarządzanie urządzeniami w organizacji. Na przykład można użyć zasad zabezpieczeń urządzeń, aby ograniczyć dostęp do poczty e-mail lub innych usług, wyświetlać raporty urządzeń i zdalnie czyścić urządzenie. Zazwyczaj należy przejść do Centrum zgodności & zabezpieczeń, aby wykonać te zadania. Aby uzyskać więcej informacji, zobacz [Portal zgodności usługi Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
 
 ## <a name="device-management-tasks"></a>Zadania zarządzania urządzeniami
 

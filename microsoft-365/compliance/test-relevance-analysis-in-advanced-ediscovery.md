@@ -1,5 +1,5 @@
 ---
-title: Analiza istotności testów w programie Advanced eDiscovery
+title: Analiza istotności testu w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,98 +16,98 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: Dowiedz się, jak używać karty Test po obliczeniu wsadowym w programie Advanced eDiscovery do testowania, porównywania i sprawdzania ogólnej jakości przetwarzania.
-ms.openlocfilehash: 0ea34ce101f6891670a0b646380c965a4391ea32
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak używać karty Test po obliczeniu usługi Batch w usłudze eDiscovery (Premium) do testowania, porównywania i weryfikowania ogólnej jakości przetwarzania.
+ms.openlocfilehash: 7e4541aa2309b6209537931160bf351d22ee8eb7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973672"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935505"
 ---
-# <a name="test-relevance-analysis-in-advanced-ediscovery"></a>Analiza istotności testów w programie Advanced eDiscovery
+# <a name="test-relevance-analysis-in-ediscovery-premium"></a>Analiza istotności testu w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
   
-Karta Test w aplikacji Advanced eDiscovery umożliwia testowanie, porównywanie i sprawdzanie ogólnej jakości przetwarzania. Te testy są wykonywane po obliczeniu wsadu. Dzięki otagowaniu plików w kolekcji ekspert podejmuje ostateczną decyzję o tym, czy każdy z otagowanych plików jest istotny dla danej sprawy.
+Karta Test w usłudze Microsoft Purview eDiscovery (Premium) umożliwia testowanie, porównywanie i weryfikowanie ogólnej jakości przetwarzania. Te testy są wykonywane po obliczeniu usługi Batch. Oznaczając pliki w kolekcji, ekspert dokonuje ostatecznego osądu, czy każdy otagowany plik ma znaczenie dla sprawy.
   
-W scenariuszach z jednym i wieloma problemami zazwyczaj przeprowadzane są testy dla 1 problemu. Wyniki można wyświetlać po każdym teście, a wyniki testów można ponowniepracować z określonymi przykładami plików testowych.
+W scenariuszach z pojedynczym i wieloma problemami testy są zwykle wykonywane dla każdego problemu. Wyniki można wyświetlić po każdym teście, a wyniki testu można ponownie wykonać za pomocą określonych przykładowych plików testowych.
   
-## <a name="testing-the-rest"></a>Testowanie pozostałej części
+## <a name="testing-the-rest"></a>Testowanie reszty
 
-Test "Testuj resztę" służy do sprawdzania poprawności decyzji dotyczących oceny, na przykład w celu przeglądania na podstawie ostatecznych wyników odciętych tylko plików powyżej określonego wyniku odciętych od istotności na podstawie ostatecznych Advanced eDiscovery wyników. Ekspert przegląda próbkę plików w wybranym wyniku odciętym, aby ocenić liczbę odpowiednich plików w tym zestawie.
+Test "Przetestuj resztę" służy do weryfikowania decyzji dotyczących uboju, na przykład do przeglądania tylko plików powyżej określonego wyniku odcięcia istotności na podstawie końcowych wyników zbierania elektronicznych materiałów dowodowych (Premium). Ekspert przegląda próbkę plików pod wybranym wynikiem odcięcia, aby ocenić liczbę odpowiednich plików w tym zestawie.
   
-Ten test udostępnia statystyki i porównanie zestawu recenzji z populacją Test populacji rest. Wyniki zestawu recenzji są obliczane na podstawie istotności podczas szkolenia. Wyniki obejmują obliczenia oparte na ustawieniach i parametrach wejściowych, takich jak:
+Ten test zawiera statystyki i porównanie zestawu przeglądów i populacji Testowanie reszty. Wyniki zestawu przeglądów są obliczane przez wartość Istotność podczas trenowania. Wyniki obejmują obliczenia na podstawie ustawień i parametrów wejściowych, takich jak:
   
-- Przetestuj przykładową statystykę liczby plików w próbce i zidentyfikowanych odpowiednich plików.
+- Przetestuj przykładowe statystyki liczby plików w przykładzie i zidentyfikowano odpowiednie pliki.
 
-- Tabelarycznie porównanie parametrów Population (Populacja) zestawu recenzji i reszty (na przykład liczba plików, szacowana liczba odpowiednich plików, szacowane dosyć rozbudowy i średni koszt znajdowania innego odpowiedniego pliku). Ustawienia parametru Koszt mogą zostać określone przez administratora.
+- Tabelaryczne porównanie parametrów Populacji zestawu przeglądów i reszty, na przykład liczby plików, szacowanej liczby odpowiednich plików, szacowanego bogactwa i średniego kosztu znalezienia innego odpowiedniego pliku. Ustawienia parametru kosztu mogą być ustawiane przez administratora.
 
-Aby uruchomić test "Test rest":
+Aby uruchomić test "Przetestuj resztę":
 
-1. Otwórz **kartę Test istotności\>**.
+1. Otwórz kartę **Test istotności\>**.
 
-2. Na karcie **Test** kliknij pozycję **Nowy test**. Zostanie **wyświetlone okno dialogowe** Tworzenie testu, jak pokazano w poniższym przykładzie.
+2. Na karcie **Test** kliknij pozycję **Nowy test**. Zostanie wyświetlone okno dialogowe **Tworzenie testu** , jak pokazano w poniższym przykładzie.
 
-    ![Test istotności : wyniki spoczynku.](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![Relevance Test the Rest results (Testowanie istotności wyników rest).](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
-3. W **polach** Nazwa testu **i Opis** wpisz nazwę i opis.
+3. W **obszarze Nazwa testu** i **Opis** wpisz nazwę i opis.
 
-4. Z listy **Typ testu** wybierz pozycję **Testuj resztę**
+4. Na liście **Typ testu** wybierz pozycję **Przetestuj resztę**
 
-5. Na **liście Problem/kategoria** wybierz nazwę problemu.
+5. Na liście **Problem/kategoria** wybierz nazwę problemu.
 
-6. Z **listy Załaduj** wybierz obciążenie. 
+6. Na liście **Załaduj** wybierz obciążenie. 
 
-7. W **odczytu %** zaakceptuj wartość domyślną lub wybierz wartość dla wyniku odciętych istotności. 
+7. W **obszarze Odczyt %** zaakceptuj wartość domyślną lub wybierz wartość dla wyniku istotności limitu. 
 
-8. W **ustawieniach** Ustaw rozmiar lub zaakceptuj wartość domyślną. Ikony przywracania przywrócą wartości domyślne.
+8. W **obszarze Ustaw rozmiar** lub zaakceptuj wartość domyślną. Ikony przywracania przywrócą wartości domyślne.
 
-9. Kliknij **pozycję Rozpocznij tagowanie**. Zostanie wygenerowana próbka testowa.
+9. Kliknij **przycisk Rozpocznij tagowanie**. Generowany jest przykład testowy.
 
-10. Przejrzyj i otaguj każdy z plików na karcie **\> Tag istotności**, a po jego kliknięciu kliknij przycisk **Oblicz**.
+10. Przejrzyj i otaguj każdy z plików na karcie **Tag istotności\>**, a po zakończeniu kliknij pozycję **Oblicz**.
 
 11. Na karcie Test możesz kliknąć pozycję **Wyświetl wyniki** , aby wyświetlić wyniki testu. Przykład przedstawiono na poniższym zrzucie ekranu.
 
     ![Przetestuj wyniki pozostałych.](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
-Na poprzednim zrzucie  ekranu sekcja Przykładowe parametry w tabeli zawiera szczegółowe informacje o liczbie plików w przykładzie oznaczonym przez eksperta oraz liczbie odpowiednich plików znalezionych w tej próbce.
+Na poprzednim zrzucie ekranu sekcja **Przykładowe parametry** tabeli zawiera szczegółowe informacje o liczbie plików w przykładzie oznaczonym przez eksperta oraz liczbie odpowiednich plików znalezionych w tym przykładzie.
   
-Sekcja **Parametry populacji** w tabeli zawiera wyniki testów, w tym przeglądanie zestawu populacji plików z wynikami poniżej wybranego odciętych plików i populacji "Resztę" z wynikiem powyżej wybranego odciętych plików. Dla każdej populacji są wyświetlane następujące wyniki:
+Sekcja **Parametry populacji** tabeli zawiera wyniki testów, w tym populację zestawu przeglądów plików z wynikiem poniżej wybranego odcięcia i populację plików "The Rest" z wynikiem powyżej wybranego odcięcia. Dla każdej populacji są wyświetlane następujące wyniki:
   
-- Zawiera pliki z odczytaną wartością % — odcięty od wartości
+- Zawiera pliki z procentem odczytu — deklarowane odcięcie
 
 - Całkowita liczba plików
 
 - Szacowana liczba odpowiednich plików
 
-- Szacowane richness
+- Szacowane bogactwo
 
-- Średni koszt przeglądu wyszukiwania innego odpowiedniego pliku
+- Średni koszt przeglądu znalezienia innego odpowiedniego pliku
 
 ## <a name="testing-the-slice"></a>Testowanie wycinka
 
-Test "Test the Slice" wykonuje testy podobne do testu "Testuj resztę", ale w przypadku segmentu pliku określonego za pomocą ustawienia Istotność odczytu %.
+Test "Testowanie wycinka" wykonuje test podobny do testu "Przetestuj resztę", ale do segmentu pliku ustawionego zgodnie z wartością Relevance Read %.
 
 Aby uruchomić test "Testowanie wycinka":
   
-1. Otwórz **kartę Test istotności\>**.
+1. Otwórz kartę **Test istotności\>**.
 
-2. Na karcie **Test** kliknij pozycję **Nowy test**. Zostanie **wyświetlone okno dialogowe** Tworzenie testu.
+2. Na karcie **Test** kliknij pozycję **Nowy test**. Zostanie wyświetlone okno dialogowe **Tworzenie testu** .
 
-3. W **polach Nazwa** testu **i Opis** wpisz informacje.
+3. W **obszarze Nazwa testu** i **Opis** wpisz informacje.
 
-4. Z listy **Typ testu** wybierz pozycję **Testuj wycinek**.
+4. Na liście **Typ testu** wybierz pozycję **Przetestuj wycinek**.
 
 5. Na liście **Problem** wybierz nazwę problemu.
 
-6. Z **listy Załaduj** wybierz obciążenie.
+6. Na liście **Załaduj** wybierz obciążenie.
 
-7. W **pól Odczytuj %** między zaakceptuj domyślne wartości niskie i wysokiego zakresu lub wybierz wartości, aby uzyskać odcięty wynik istotności.
+7. W **obszarze Procent odczytu między** zaakceptuj domyślne wartości niskiego i wysokiego zakresu lub wybierz wartości dla oceny istotności limitu.
 
-8. W **polecej** Ustaw rozmiar wybierz wartość lub zaakceptuj wartość domyślną.
+8. W **obszarze Ustaw rozmiar** wybierz wartość lub zaakceptuj wartość domyślną.
 
     Ikony przywracania przywrócą wartość domyślną.
 
-9. Kliknij **pozycję Rozpocznij tagowanie**. Zostanie wygenerowana próbka testowa.
+9. Kliknij **przycisk Rozpocznij tagowanie**. Generowany jest przykład testowy.
 
-10. Przejrzyj i otaguj każdy z plików na karcie **\> Tag istotności**, a po jego kliknięciu kliknij przycisk **Oblicz**.
+10. Przejrzyj i otaguj każdy z plików na karcie **Tag istotności\>**, a po zakończeniu kliknij pozycję **Oblicz**.
 
 11. Na karcie Test możesz kliknąć pozycję **Wyświetl wyniki** , aby wyświetlić wyniki testu.

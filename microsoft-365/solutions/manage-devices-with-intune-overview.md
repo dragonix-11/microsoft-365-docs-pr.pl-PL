@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: a9872e707bbbb6546d6801ac88ebd28f23fb9806
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: 23a0bb391acdf584d278c9de4aee0fdedf4d8071
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651328"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934230"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Omówienie zarządzania urządzeniami za pomocą Intune
 
@@ -49,7 +49,7 @@ W tej serii artykułów przedstawiono zalecany proces zarządzania urządzeniami
 
 ## <a name="implementing-the-layers-of-protection-on-and-for-devices"></a>Implementowanie warstw ochrony na urządzeniach i dla nich
 
-Ochrona danych i aplikacji na urządzeniach i samych urządzeniach jest procesem wielowarstwowym. Istnieją pewne zabezpieczenia, które można uzyskać na urządzeniach niezarządzanych. Po zarejestrowaniu urządzeń w Intune można zaimplementować bardziej zaawansowane kontrolki. Gdy ochrona przed zagrożeniami jest wdrażana w punktach końcowych, uzyskujesz jeszcze więcej szczegółowych informacji i możliwość automatycznego korygowania niektórych ataków. Na koniec, jeśli organizacja włożyła pracę w identyfikowanie poufnych danych, stosowanie klasyfikacji i etykiet oraz konfigurowanie zasad ochrony przed utratą danych, możesz uzyskać jeszcze bardziej szczegółową ochronę danych w punktach końcowych.
+Ochrona danych i aplikacji na urządzeniach i samych urządzeniach jest procesem wielowarstwowym. Istnieją pewne zabezpieczenia, które można uzyskać na urządzeniach niezarządzanych. Po zarejestrowaniu urządzeń w systemie zarządzania można zaimplementować bardziej zaawansowane mechanizmy kontroli. Gdy ochrona przed zagrożeniami jest wdrażana w punktach końcowych, uzyskujesz jeszcze więcej szczegółowych informacji i możliwość automatycznego korygowania niektórych ataków. Na koniec, jeśli Twoja organizacja włożyła pracę w identyfikowanie poufnych danych, stosowanie klasyfikacji i etykiet oraz konfigurowanie zasad ochrony przed utratą danych w usłudze Microsoft Purview, możesz uzyskać jeszcze bardziej szczegółową ochronę danych w punktach końcowych.
 
 Na poniższym diagramie przedstawiono bloki konstrukcyjne umożliwiające osiągnięcie Zero Trust stanu zabezpieczeń dla Microsoft 365 i innych aplikacji SaaS wprowadzonych w tym środowisku. Elementy związane z urządzeniami są ponumerowane od 1 do 7. Są to warstwy ochrony, które administratorzy urządzeń będą koordynować z innymi administratorami.
 
@@ -89,7 +89,7 @@ Na tej ilustracji:
 Jeśli zastosujesz się do tych wskazówek, zarejestrujesz urządzenia w zarządzaniu przy użyciu Intune i dołączysz urządzenia do następujących funkcji Microsoft 365:
 
 - Ochrona punktu końcowego w usłudze Microsoft Defender
-- Microsoft 365 Compliance (w celu zapobiegania utracie danych punktu końcowego (DLP)) 
+- Microsoft Purview (w celu zapobiegania utracie danych punktu końcowego (DLP)) 
 
 Poniższa ilustracja zawiera szczegółowe informacje o tym, jak to działa przy użyciu Intune.
 
@@ -98,8 +98,19 @@ Poniższa ilustracja zawiera szczegółowe informacje o tym, jak to działa przy
 Na ilustracji:
 
 1. Rejestrowanie urządzeń do zarządzania przy użyciu Intune.
-2. Użyj Intune, aby dołączyć urządzenia do Ochrona punktu końcowego w usłudze Microsoft Defender.
-3. Urządzenia dołączone do usługi Defender for Endpoint są również dołączane do funkcji zgodności Microsoft 365, w tym punktu końcowego DLP.
+2. Użyj Intune, aby dołączyć urządzenia do usługi Defender for Endpoint.
+3. Urządzenia dołączone do usługi Defender for Endpoint są również dołączane do funkcji usługi Microsoft Purview, w tym programu Endpoint DLP.
+ 
+Należy pamiętać, że tylko Intune zarządza urządzeniami. Dołączanie odnosi się do możliwości udostępniania informacji przez urządzenie określonej usłudze. Poniższa tabela zawiera podsumowanie różnic między rejestrowaniem urządzeń do zarządzania i dołączaniem urządzeń do określonej usługi.
+
+
+|         |Zarejestrować     |Onboard  |
+|---------|---------|---------|
+|Opis     |  Rejestracja dotyczy zarządzania urządzeniami. Urządzenia są rejestrowane do zarządzania za pomocą Intune lub Configuration Manager.        | Dołączanie konfiguruje urządzenie do pracy z określonym zestawem możliwości w Microsoft 365. Obecnie dołączanie ma zastosowanie do Ochrona punktu końcowego w usłudze Microsoft Defender i możliwości zgodności firmy Microsoft. <br><br>Na urządzeniach Windows dołączanie obejmuje przełączanie ustawienia w Windows Defender, które umożliwia usłudze Defender nawiązywanie połączenia z usługą online i akceptowanie zasad, które mają zastosowanie do urządzenia.        |
+|Zakres     | Te narzędzia do zarządzania urządzeniami zarządzają całym urządzeniem, w tym konfigurują urządzenie tak, aby spełniało określone cele, takie jak zabezpieczenia.        |Dołączanie ma wpływ tylko na usługi, które mają zastosowanie.     |
+|Zalecana metoda     | Azure Active Directory dołączanie automatycznie rejestruje urządzenia w Intune.        | Intune jest preferowaną metodą dołączania urządzeń do Windows Defender dla punktu końcowego, a w konsekwencji możliwości usługi Microsoft Purview.<br><br>Należy pamiętać, że urządzenia dołączone do funkcji usługi Microsoft Purview przy użyciu innych metod nie są automatycznie rejestrowane w usłudze Defender for Endpoint.        |
+|Inne metody     |   Inne metody rejestracji zależą od platformy urządzenia i od tego, czy jest to model BYOD, czy też jest zarządzany przez organizację.      | Inne metody dołączania urządzeń obejmują, w zalecanej kolejności:<br><li>Menedżer konfiguracji<li>Inne narzędzie do zarządzania urządzeniami przenośnymi (jeśli urządzenie jest zarządzane przez jedno)<li>Skrypt lokalny<li>Pakiet konfiguracji interfejsu VDI do dołączania nietrwałych urządzeń infrastruktury pulpitu wirtualnego (VDI)<li>Zasady grupy|
+| | |     |
 
 Należy pamiętać, że tylko Intune zarządza urządzeniami. Dołączanie odnosi się do możliwości udostępniania informacji przez urządzenie określonej funkcji usługi. Poniższa tabela zawiera podsumowanie różnic między rejestrowaniem urządzeń do zarządzania i dołączaniem urządzeń w celu określonej możliwości.
 
@@ -107,7 +118,7 @@ Należy pamiętać, że tylko Intune zarządza urządzeniami. Dołączanie odnos
 |---|---|---|
 |Opis|Rejestracja dotyczy zarządzania urządzeniami. Urządzenia są rejestrowane do zarządzania za pomocą Intune lub Configuration Manager.|Dołączanie konfiguruje urządzenie do pracy z określonym zestawem możliwości w Microsoft 365. Obecnie dołączanie ma zastosowanie do Ochrona punktu końcowego w usłudze Microsoft Defender i możliwości zgodności firmy Microsoft. <br/><br/> Na urządzeniach Windows dołączanie obejmuje przełączanie ustawienia w Windows Defender, które umożliwia usłudze Defender nawiązywanie połączenia z usługą online i akceptowanie zasad, które mają zastosowanie do urządzenia.|
 |Zakres|Te narzędzia do zarządzania urządzeniami zarządzają całym urządzeniem, w tym konfigurują urządzenie tak, aby spełniało określone cele, takie jak zabezpieczenia.|Dołączanie ma wpływ tylko na zastosowane możliwości.|
-|Zalecana metoda|Azure Active Directory dołączanie automatycznie rejestruje urządzenia w Intune.|Intune jest preferowaną metodą dołączania urządzeń do Windows Defender dla punktu końcowego, a w związku z tym Microsoft 365 możliwości zgodności. <br/><br/> Należy pamiętać, że urządzenia dołączone do Microsoft 365 możliwości zgodności przy użyciu innych metod nie są automatycznie rejestrowane w usłudze Defender for Endpoint.|
+|Zalecana metoda|Azure Active Directory dołączanie automatycznie rejestruje urządzenia w Intune.|Intune jest preferowaną metodą dołączania urządzeń do Windows Defender dla punktu końcowego, a w konsekwencji możliwości usługi Microsoft Purview. <br/><br/> Należy pamiętać, że urządzenia dołączone do funkcji usługi Microsoft Purview przy użyciu innych metod nie są automatycznie rejestrowane w usłudze Defender for Endpoint.|
 |Inne metody|Inne metody rejestracji zależą od platformy urządzenia i od tego, czy jest to model BYOD, czy też jest zarządzany przez organizację.|Inne metody dołączania urządzeń obejmują, w zalecanej kolejności: <ul><li>Menedżer konfiguracji</li><li>Inne narzędzie do zarządzania urządzeniami przenośnymi (jeśli urządzenie jest zarządzane przez jedno)</li><li>Skrypt lokalny</li><li>Pakiet konfiguracji interfejsu VDI do dołączania nietrwałych urządzeń infrastruktury pulpitu wirtualnego (VDI)</li><li>Zasady grupy</li></ul>|
 
 ## <a name="learning-for-administrators"></a>Edukacja dla administratorów

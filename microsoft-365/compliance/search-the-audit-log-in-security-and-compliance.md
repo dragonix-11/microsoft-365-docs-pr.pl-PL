@@ -1,5 +1,5 @@
 ---
-title: Przeszukaj dziennik inspekcji w Centrum zgodności platformy Microsoft 365
+title: Przeszukiwanie dziennika inspekcji w portalu zgodności usługi Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Użyj Centrum zgodności platformy Microsoft 365, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji.
+description: Użyj portalu zgodności usługi Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 1a10bf738562f8fd9a263252d4a56eddf8acee9d
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: f35bfbbe299495e912d018bd00615964f883031e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841943"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936274"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Przeszukiwanie dziennika inspekcji w centrum zgodności
 
-Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w Centrum zgodności platformy Microsoft 365, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
+Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
 
 ## <a name="microsoft-365-services-that-support-auditing"></a>usługi Microsoft 365 obsługujące inspekcję
 
@@ -92,7 +92,7 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
 - Aby przeszukać dziennik inspekcji, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w centrum administracyjnym Exchange. Administratorzy globalni w Office 365 i Microsoft 365 są automatycznie dodawani jako członkowie grupy ról Zarządzanie organizacją w Exchange Online. Aby umożliwić użytkownikowi przeszukiwanie dziennika inspekcji z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w Exchange Online, dodać rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
-  > Jeśli przypiszesz użytkownikowi rolę dzienników inspekcji lub dzienników inspekcji View-Only na stronie **Uprawnienia** w Centrum zgodności platformy Microsoft 365, nie będzie mógł przeszukiwać dziennika inspekcji. Musisz przypisać uprawnienia w Exchange Online. Dzieje się tak, ponieważ podstawowe polecenie cmdlet używane do przeszukiwania dziennika inspekcji jest Exchange Online poleceniem cmdlet.
+  > Jeśli przypiszesz użytkownikowi rolę dzienników inspekcji lub dzienników inspekcji View-Only na stronie **Uprawnienia** w portalu zgodności, nie będzie mógł przeszukiwać dziennika inspekcji. Musisz przypisać uprawnienia w Exchange Online. Dzieje się tak, ponieważ podstawowe polecenie cmdlet używane do przeszukiwania dziennika inspekcji jest Exchange Online poleceniem cmdlet.
 
 - Gdy inspekcja działania jest wykonywana przez użytkownika lub administratora, rekord inspekcji jest generowany i przechowywany w dzienniku inspekcji organizacji. Czas, przez który rekord inspekcji jest przechowywany (i można go przeszukiwać w dzienniku inspekcji) zależy od twojej subskrypcji Office 365 lub Microsoft 365 Enterprise, a w szczególności od typu licencji przypisanej do określonych użytkowników.
 
@@ -104,7 +104,7 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
   - W przypadku użytkowników, do których przypisano dowolną inną licencję Office 365 lub Microsoft 365 E5, rekordy inspekcji są przechowywane przez 90 dni. Aby uzyskać listę subskrypcji Office 365 i Microsoft 365 obsługujących ujednolicone rejestrowanie inspekcji, zobacz [opis usługi Centrum zabezpieczeń i zgodności](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Nawet jeśli inspekcja skrzynki pocztowej jest domyślnie włączona, można zauważyć, że zdarzenia inspekcji skrzynki pocztowej dla niektórych użytkowników nie znajdują się w przeszukiwaniu dzienników inspekcji w Centrum zgodności platformy Microsoft 365 lub za pośrednictwem interfejsu API działania zarządzania Office 365. Aby uzyskać więcej informacji, zobacz [Więcej informacji na temat rejestrowania inspekcji skrzynki pocztowej](enable-mailbox-auditing.md#more-information).
+    > Nawet jeśli domyślnie włączono inspekcję skrzynek pocztowych, można zauważyć, że zdarzenia inspekcji skrzynki pocztowej dla niektórych użytkowników nie są odnalezione podczas przeszukiwania dzienników inspekcji w portalu zgodności lub za pośrednictwem interfejsu API działania zarządzania Office 365. Aby uzyskać więcej informacji, zobacz [Więcej informacji na temat rejestrowania inspekcji skrzynki pocztowej](enable-mailbox-auditing.md#more-information).
 
 - Jeśli chcesz wyłączyć wyszukiwanie dzienników inspekcji w organizacji, możesz uruchomić następujące polecenie w zdalnym programie PowerShell połączonym z organizacją Exchange Online:
 
@@ -120,7 +120,7 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
 
   Aby uzyskać więcej informacji, zobacz [Wyłączanie wyszukiwania dzienników inspekcji](turn-audit-log-search-on-or-off.md).
 
-- Jak wspomniano wcześniej, podstawowym poleceniem cmdlet używanym do przeszukiwania dziennika inspekcji jest polecenie cmdlet Exchange Online, czyli **Search-UnifiedAuditLog**. Oznacza to, że można użyć tego polecenia cmdlet do przeszukiwania dziennika inspekcji zamiast używania narzędzia wyszukiwania na stronie **Inspekcja** w Centrum zgodności platformy Microsoft 365. To polecenie cmdlet należy uruchomić w programie Exchange Online programie PowerShell. Aby uzyskać więcej informacji, zobacz [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- Jak wspomniano wcześniej, podstawowym poleceniem cmdlet używanym do przeszukiwania dziennika inspekcji jest polecenie cmdlet Exchange Online, czyli **Search-UnifiedAuditLog**. Oznacza to, że można użyć tego polecenia cmdlet do przeszukiwania dziennika inspekcji zamiast używania narzędzia wyszukiwania na stronie **Inspekcja** w portalu zgodności. To polecenie cmdlet należy uruchomić w programie Exchange Online programie PowerShell. Aby uzyskać więcej informacji, zobacz [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   Aby uzyskać informacje na temat eksportowania wyników wyszukiwania zwróconych przez polecenie cmdlet **Search-UnifiedAuditLog** do pliku CSV, zobacz sekcję "Wskazówki eksportowania i wyświetlania dziennika inspekcji" w temacie [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -147,9 +147,9 @@ Oto proces przeszukiwania dziennika inspekcji w Microsoft 365.
 1. Przejdź do i <https://compliance.microsoft.com> zaloguj się.
 
     > [!TIP]
-    > Użyj prywatnej sesji przeglądania (nie zwykłej sesji), aby uzyskać dostęp do Centrum zgodności platformy Microsoft 365, ponieważ uniemożliwi to użycie poświadczeń, za pomocą których aktualnie zalogowano się. Naciśnij **klawisze CTRL+SHIFT+N**, aby otworzyć sesję przeglądania InPrivate w Microsoft Edge lub sesję przeglądania prywatnego w przeglądarce Google Chrome (nazywaną oknem incognito).
+    > Użyj prywatnej sesji przeglądania (nie zwykłej sesji), aby uzyskać dostęp do portalu zgodności, ponieważ uniemożliwi to użycie poświadczeń, za pomocą których aktualnie zalogowano się. Naciśnij **klawisze CTRL+SHIFT+N**, aby otworzyć sesję przeglądania InPrivate w Microsoft Edge lub sesję przeglądania prywatnego w przeglądarce Google Chrome (nazywaną oknem incognito).
 
-2. W okienku po lewej stronie Centrum zgodności platformy Microsoft 365 kliknij pozycję **Inspekcja**.
+2. W lewym okienku portalu zgodności kliknij pozycję **Inspekcja**.
 
     Zostanie wyświetlona strona **Inspekcja** .
 
@@ -314,7 +314,7 @@ Kliknij jeden z poniższych linków, aby przejść do określonej tabeli.
         [Działania zbierania elektronicznych materiałów dowodowych](#ediscovery-activities)
     :::column-end:::
     :::column:::
-        [działania Advanced eDiscovery](#advanced-ediscovery-activities)
+        [Działania zbierania elektronicznych materiałów dowodowych (Premium)](#ediscovery-premium-activities)
     :::column-end:::
 :::row-end:::
 
@@ -644,7 +644,7 @@ W poniższej tabeli wymieniono działania, które mogą być rejestrowane przez 
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Elementy skrzynki pocztowej z dostępem|MailItemsAccessed|Wiadomości były odczytywane lub uzyskiwane w skrzynce pocztowej. Rekordy inspekcji dla tego działania są wyzwalane na jeden z dwóch sposobów: gdy klient poczty (na przykład Outlook) wykonuje operację powiązania na komunikatach lub gdy protokoły poczty (takie jak Exchange ActiveSync lub IMAP) synchronizują elementy w folderze poczty. To działanie jest rejestrowane tylko dla użytkowników z licencją Office 365 lub Microsoft 365 E5. Analizowanie rekordów inspekcji dla tego działania jest przydatne podczas badania naruszonego konta e-mail. Aby uzyskać więcej informacji, zobacz sekcję "Zaawansowane zdarzenia inspekcji" w sekcji [Zaawansowany inspekcja](advanced-audit.md#advanced-audit-events). |
+|Elementy skrzynki pocztowej z dostępem|MailItemsAccessed|Wiadomości były odczytywane lub uzyskiwane w skrzynce pocztowej. Rekordy inspekcji dla tego działania są wyzwalane na jeden z dwóch sposobów: gdy klient poczty (na przykład Outlook) wykonuje operację powiązania na komunikatach lub gdy protokoły poczty (takie jak Exchange ActiveSync lub IMAP) synchronizują elementy w folderze poczty. To działanie jest rejestrowane tylko dla użytkowników z licencją Office 365 lub Microsoft 365 E5. Analizowanie rekordów inspekcji dla tego działania jest przydatne podczas badania naruszonego konta e-mail. Aby uzyskać więcej informacji, zobacz sekcję "Inspekcja (Premium) zdarzeń" w sekcji [Inspekcja (Premium)](advanced-audit.md#audit-premium-events). |
 |Dodano uprawnienia delegowanych skrzynek pocztowych|Add-MailboxPermission|Administrator przypisył uprawnienie do skrzynki pocztowej funkcji FullAccess użytkownikowi (znanemu jako pełnomocnik) do skrzynki pocztowej innej osoby. Uprawnienie FullAccess umożliwia pełnomocnikowi otwieranie skrzynki pocztowej innej osoby oraz odczytywanie zawartości skrzynki pocztowej i zarządzanie nią. Rekord inspekcji dla tego działania jest również generowany, gdy konto systemowe w usłudze Microsoft 365 okresowo wykonuje zadania konserwacji w imieniu organizacji. Typowym zadaniem wykonywanym przez konto systemowe jest aktualizowanie uprawnień dla systemowych skrzynek pocztowych. Aby uzyskać więcej informacji, zobacz [Konta systemowe w rekordach inspekcji Exchange skrzynki pocztowej](#system-accounts-in-exchange-mailbox-audit-records).|
 |Dodano lub usunięto użytkownika z delegowaniem dostępu do folderu kalendarza|UpdateCalendarDelegation|Użytkownik został dodany lub usunięty jako pełnomocnik do kalendarza skrzynki pocztowej innego użytkownika. Delegowanie kalendarza daje innej osobie w tej samej organizacji uprawnienia do zarządzania kalendarzem właściciela skrzynki pocztowej.|
 |Dodano uprawnienia do folderu|DodajfolderPermissions|Dodano uprawnienie folderu. Uprawnienia folderu określają, którzy użytkownicy w organizacji mogą uzyskiwać dostęp do folderów w skrzynce pocztowej i wiadomości znajdujących się w tych folderach.|
@@ -660,7 +660,7 @@ W poniższej tabeli wymieniono działania, które mogą być rejestrowane przez 
 |Przeczyszczane wiadomości ze skrzynki pocztowej|HardDelete|Wiadomość została usunięta z folderu Elementy możliwe do odzyskania (trwale usunięta ze skrzynki pocztowej).|
 |Usunięto uprawnienia delegowanych skrzynek pocztowych|Remove-MailboxPermission|Administrator usunął uprawnienie FullAccess (przypisane do pełnomocnika) ze skrzynki pocztowej danej osoby. Po usunięciu uprawnienia FullAccess pełnomocnik nie może otworzyć skrzynki pocztowej innej osoby ani uzyskać do niej dostępu.|
 |Usunięto uprawnienia z folderu|RemoveFolderPermissions|Usunięto uprawnienie folderu. Uprawnienia folderu określają, którzy użytkownicy w organizacji mogą uzyskiwać dostęp do folderów w skrzynce pocztowej i wiadomości znajdujących się w tych folderach.|
-|Wysłana wiadomość|Wyślij|Wiadomość została wysłana, przekazana lub przekazana dalej. To działanie jest rejestrowane tylko dla użytkowników z licencją Office 365 lub Microsoft 365 E5. Aby uzyskać więcej informacji, zobacz sekcję "Zaawansowane zdarzenia inspekcji" w sekcji [Zaawansowany inspekcja](advanced-audit.md#advanced-audit-events).|
+|Wysłana wiadomość|Wyślij|Wiadomość została wysłana, przekazana lub przekazana dalej. To działanie jest rejestrowane tylko dla użytkowników z licencją Office 365 lub Microsoft 365 E5. Aby uzyskać więcej informacji, zobacz sekcję "Inspekcja (Premium) zdarzeń" w sekcji [Inspekcja (Premium)](advanced-audit.md#audit-premium-events).|
 |Wysłano wiadomość przy użyciu uprawnień Wyślij jako|SendAs|Wiadomość została wysłana przy użyciu uprawnienia SendAs. Oznacza to, że inny użytkownik wysłał wiadomość tak, jakby pochodziła od właściciela skrzynki pocztowej.|
 |Wysłano wiadomość przy użyciu uprawnień Wyślij w imieniu|SendOnBehalf|Wiadomość została wysłana przy użyciu uprawnienia SendOnBehalf. Oznacza to, że inny użytkownik wysłał wiadomość w imieniu właściciela skrzynki pocztowej. Wiadomość wskazuje adresatowi, któremu wiadomość została wysłana w imieniu użytkownika i który faktycznie wysłał wiadomość.|
 |Zaktualizowano reguły skrzynki odbiorczej z klienta Outlook|UpdateInboxRules|Właściciel skrzynki pocztowej lub inny użytkownik z dostępem do skrzynki pocztowej utworzonej, zmodyfikowanej lub usuniętej reguły skrzynki odbiorczej przy użyciu klienta Outlook.|
@@ -782,11 +782,11 @@ W dzienniku inspekcji są rejestrowane działania związane z wyszukiwaniem zawa
 Aby uzyskać listę i szczegółowy opis zarejestrowanych działań zbierania elektronicznych materiałów dowodowych, zobacz [Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> Wyświetlenie z listy rozwijanej Działania zdarzeń wymienionych w obszarze Działania zbierania **elektronicznych** materiałów dowodowych i **Advanced eDiscovery działań** na liście rozwijanej **Działania** trwa do 30 minut. Z drugiej strony wyświetlenie odpowiednich zdarzeń z działań poleceń cmdlet zbierania elektronicznych materiałów dowodowych trwa do 24 godzin.
+> Wyświetlenie w wynikach wyszukiwania zdarzeń wynikających z działań wymienionych w obszarze Działania zbierania **elektronicznych** materiałów dowodowych i **działań zbierania elektronicznych materiałów dowodowych (Premium)** na liście rozwijanej **Działania**. Z drugiej strony wyświetlenie odpowiednich zdarzeń z działań poleceń cmdlet zbierania elektronicznych materiałów dowodowych trwa do 24 godzin.
 
-### <a name="advanced-ediscovery-activities"></a>działania Advanced eDiscovery
+### <a name="ediscovery-premium-activities"></a>Działania zbierania elektronicznych materiałów dowodowych (Premium)
 
-Możesz również wyszukać w dzienniku inspekcji działania w Advanced eDiscovery. Opis tych działań można znaleźć w sekcji "działania Advanced eDiscovery" w [temacie Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
+Możesz również wyszukać w dzienniku inspekcji działania w usłudze Microsoft Purview eDiscovery (Premium). Opis tych działań można znaleźć w sekcji "Działania zbierania elektronicznych materiałów dowodowych (Premium) w [temacie Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
 
 ### <a name="power-bi-activities"></a>działania Power BI
 
@@ -840,7 +840,7 @@ Aby uzyskać opis działań aplikacji Shifts, zobacz [Wyszukiwanie w dzienniku i
 W poniższej tabeli wymieniono działania użytkownika i administratora w Yammer, które są rejestrowane w dzienniku inspekcji. Aby zwrócić działania związane z Yammer z dziennika inspekcji, musisz wybrać pozycję **Pokaż wyniki dla wszystkich działań** na liście **Działania**. Użyj pól zakresu dat i listy **Użytkownicy** , aby zawęzić wyniki wyszukiwania.
 
 > [!NOTE]
-> Niektóre Yammer działania inspekcji są dostępne tylko w usłudze Advanced Audit. Oznacza to, że użytkownicy muszą mieć przypisaną odpowiednią licencję, zanim te działania zostaną zarejestrowane w dzienniku inspekcji. Aby uzyskać więcej informacji o działaniach dostępnych tylko w usłudze Advanced Audit, zobacz [Advanced Audit in Microsoft 365 (Zaawansowany inspekcja w Microsoft 365](advanced-audit.md#advanced-audit-events)). Aby zapoznać się z wymaganiami dotyczącymi licencjonowania zaawansowanego inspekcji, zobacz [Auditing solutions in Microsoft 365 (Rozwiązania inspekcji w Microsoft 365](auditing-solutions-overview.md#licensing-requirements)). <br/><br/>W poniższej tabeli zaawansowane działania inspekcji są wyróżnione gwiazdką (*).
+> Niektóre działania inspekcji Yammer są dostępne tylko w obszarze Inspekcja (Premium). Oznacza to, że użytkownicy muszą mieć przypisaną odpowiednią licencję, zanim te działania zostaną zarejestrowane w dzienniku inspekcji. Aby uzyskać więcej informacji o działaniach dostępnych tylko w obszarze Inspekcja (Premium), zobacz [Audit (Premium) in Microsoft 365 (Inspekcja (Premium) w Microsoft 365](advanced-audit.md#audit-premium-events). Aby zapoznać się z wymaganiami dotyczącymi licencjonowania inspekcji (Premium), zobacz [Auditing solutions in Microsoft 365 (Rozwiązania inspekcji w Microsoft 365](auditing-solutions-overview.md#licensing-requirements)). <br/><br/>W poniższej tabeli działania inspekcji (Premium) są wyróżnione gwiazdką (*).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
@@ -871,7 +871,7 @@ W poniższej tabeli wymieniono działania użytkownika i administratora w Yammer
 
 ### <a name="microsoft-power-automate-activities"></a>Działania firmy Microsoft Power Automate
 
-W dzienniku inspekcji można wyszukiwać działania w Power Automate (dawniej nazywanych Microsoft Flow). Działania te obejmują tworzenie, edytowanie i usuwanie przepływów oraz zmienianie uprawnień przepływu. Aby uzyskać informacje na temat inspekcji działań Power Automate, zobacz blog [Power Automate zdarzenia inspekcji dostępne teraz w Centrum zgodności platformy Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+W dzienniku inspekcji można wyszukiwać działania w Power Automate (dawniej nazywanych Microsoft Flow). Działania te obejmują tworzenie, edytowanie i usuwanie przepływów oraz zmienianie uprawnień przepływu. Aby uzyskać informacje na temat inspekcji działań Power Automate, zobacz blog [Power Automate zdarzenia inspekcji dostępne teraz w portalu zgodności](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-power-apps-activities"></a>Działania firmy Microsoft Power Apps
 
@@ -883,7 +883,7 @@ W dzienniku inspekcji można wyszukiwać działania w Microsoft Stream. Działan
 
 ### <a name="content-explorer-activities"></a>Działania Eksploratora zawartości
 
-W poniższej tabeli wymieniono działania w Eksploratorze zawartości, które są rejestrowane w dzienniku inspekcji. Eksplorator zawartości, do którego uzyskuje się dostęp za pomocą narzędzia klasyfikacji danych w Centrum zgodności platformy Microsoft 365. Aby uzyskać więcej informacji, zobacz [Korzystanie z eksploratora zawartości klasyfikacji danych](data-classification-content-explorer.md).
+W poniższej tabeli wymieniono działania w Eksploratorze zawartości, które są rejestrowane w dzienniku inspekcji. Eksplorator zawartości dostępny w narzędziu klasyfikacji danych w portalu zgodności. Aby uzyskać więcej informacji, zobacz [Korzystanie z eksploratora zawartości klasyfikacji danych](data-classification-content-explorer.md).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
@@ -910,7 +910,7 @@ Tabele w tej sekcji dotyczące działań użytkownika i administratora w Microso
 Jeśli działanie formularzy jest wykonywane przez współautora lub anonimowego użytkownika odpowiadającego, zostanie ono zarejestrowane nieco inaczej. Aby uzyskać więcej informacji, zobacz sekcję [Forms activities performed by coauthors and anonymous responders (Działania formularzy wykonywane przez współautorów i osoby odpowiadające anonimowe](#forms-activities-performed-by-coauthors-and-anonymous-responders) ).
 
 > [!NOTE]
-> Niektóre działania inspekcji formularzy są dostępne tylko w usłudze Advanced Audit. Oznacza to, że użytkownicy muszą mieć przypisaną odpowiednią licencję, zanim te działania zostaną zarejestrowane w dzienniku inspekcji. Aby uzyskać więcej informacji o działaniach dostępnych tylko w usłudze Advanced Audit, zobacz [Advanced Audit in Microsoft 365 (Zaawansowany inspekcja w Microsoft 365](advanced-audit.md#advanced-audit-events)). Aby zapoznać się z wymaganiami dotyczącymi licencjonowania zaawansowanego inspekcji, zobacz [Auditing solutions in Microsoft 365 (Rozwiązania inspekcji w Microsoft 365](auditing-solutions-overview.md#licensing-requirements)). <br/><br/>W poniższej tabeli zaawansowane działania inspekcji są wyróżnione gwiazdką (*).
+> Niektóre działania inspekcji formularzy są dostępne tylko w obszarze Inspekcja (Premium). Oznacza to, że użytkownicy muszą mieć przypisaną odpowiednią licencję, zanim te działania zostaną zarejestrowane w dzienniku inspekcji. Aby uzyskać więcej informacji o działaniach dostępnych tylko w obszarze Inspekcja (Premium), zobacz [Audit (Premium) in Microsoft 365 (Inspekcja (Premium) w Microsoft 365](advanced-audit.md#audit-premium-events). Aby zapoznać się z wymaganiami dotyczącymi licencjonowania inspekcji (Premium), zobacz [Auditing solutions in Microsoft 365 (Rozwiązania inspekcji w Microsoft 365](auditing-solutions-overview.md#licensing-requirements)). <br/><br/>W poniższej tabeli działania inspekcji (Premium) są wyróżnione gwiazdką (*).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|

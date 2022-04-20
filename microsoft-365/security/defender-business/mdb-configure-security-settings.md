@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ff24d246172337923b145a8dbd64db58a671aa9e
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 22c2de998f4d4cfadb0262ccedf04decc01ce226
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861801"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916298"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Wyświetlanie i edytowanie zasad zabezpieczeń i ustawień w Microsoft Defender dla Firm
 
@@ -31,7 +31,12 @@ ms.locfileid: "64861801"
 
 ## <a name="overview"></a>Omówienie
 
-Po dołączeniu urządzeń firmy do Microsoft Defender dla Firm następnym krokiem jest wyświetlenie i w razie potrzeby edytowanie zasad i ustawień zabezpieczeń. Zasady zabezpieczeń do skonfigurowania obejmują:
+Po dołączeniu urządzeń firmy do Microsoft Defender dla Firm następnym krokiem jest zapoznanie się z zasadami zabezpieczeń. W razie potrzeby można edytować zasady i ustawienia zabezpieczeń. 
+
+> [!TIP]
+> Usługa Defender dla firm zawiera wstępnie skonfigurowane zasady zabezpieczeń, które używają zalecanych ustawień. Można jednak edytować ustawienia zgodnie z potrzebami biznesowymi.
+
+Zasady zabezpieczeń do przeglądania i konfigurowania obejmują:
 
 - **[Zasady ochrony nowej generacji](#view-or-edit-your-next-generation-protection-policies)**, które określają ochronę antywirusową i ochronę przed złośliwym kodem dla urządzeń firmy
 - **[Ochrona zapory i reguły](#view-or-edit-your-firewall-policies-and-custom-rules)**, które określają, jaki ruch sieciowy może przepływać do lub z urządzeń firmy
@@ -73,7 +78,7 @@ Poniższa tabela może pomóc w wyborze miejsca zarządzania zasadami zabezpiecz
 
 | Opcja | Opis |
 |:---|:---|
-| **Korzystanie z portalu Microsoft 365 Defender** (*zalecane*) | Portal Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) może być punktem obsługi do zarządzania urządzeniami firmy, zasadami zabezpieczeń i ustawieniami zabezpieczeń. Możesz uzyskiwać dostęp do zasad i ustawień zabezpieczeń, korzystać z [pulpitu nawigacyjnego zarządzania lukami w zabezpieczeniach & zagrożeniami](mdb-view-tvm-dashboard.md) oraz [wyświetlać zdarzenia i zarządzać nimi](mdb-view-manage-incidents.md) w jednym miejscu. <br/><br/>Jeśli używasz Microsoft Endpoint Manager, urządzenia dołączone do usługi Defender dla Firm i zasady zabezpieczeń są widoczne w Endpoint Manager. Aby dowiedzieć się więcej, zobacz następujące artykuły:<br/><br/>- [Ustawienia domyślne usługi Defender dla firm i Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Zapora w Microsoft Defender dla Firm](mdb-firewall.md)   |
+| **Korzystanie z portalu Microsoft 365 Defender** (*zalecane*) | Portal Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) może być punktem obsługi do zarządzania urządzeniami firmy, zasadami zabezpieczeń i ustawieniami zabezpieczeń. Możesz uzyskiwać dostęp do zasad i ustawień zabezpieczeń, korzystać z [pulpitu nawigacyjnego zarządzania lukami w zabezpieczeniach & zagrożeniami](mdb-view-tvm-dashboard.md) oraz [wyświetlać zdarzenia i zarządzać nimi](mdb-view-manage-incidents.md) w jednym miejscu. <br/><br/>Jeśli używasz Microsoft Endpoint Manager, urządzenia dołączone do usługi Defender dla Firm i zasady zabezpieczeń są widoczne w Endpoint Manager. Aby dowiedzieć się więcej, zobacz następujące artykuły:<br/>- [Ustawienia domyślne usługi Defender dla firm i Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/>- [Zapora w Microsoft Defender dla Firm](mdb-firewall.md)   |
 | **Korzystanie z Microsoft Endpoint Manager** | Jeśli twoja firma już używa Endpoint Manager (w tym Microsoft Intune) do zarządzania zasadami zabezpieczeń, możesz nadal używać Endpoint Manager do zarządzania urządzeniami i zasadami zabezpieczeń. Aby dowiedzieć się więcej, zobacz [Zarządzanie zabezpieczeniami urządzeń przy użyciu zasad zabezpieczeń punktu końcowego w Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Jeśli zdecydujesz się na przejście do [uproszczonego procesu konfiguracji w usłudze Defender dla firm](mdb-simplified-configuration.md), zostanie wyświetlony monit o usunięcie wszelkich istniejących zasad zabezpieczeń w Endpoint Manager, aby uniknąć [konfliktów zasad](mdb-troubleshooting.yml) później. |
 
 > [!IMPORTANT]
@@ -141,13 +146,13 @@ W poniższej tabeli opisano ustawienia funkcji zaawansowanych:
 | Ustawienie | Opis |
 |:---|:---|
 | Badanie zautomatyzowane <br/>(domyślnie włączone) | W miarę generowania alertów mogą być wykonywane zautomatyzowane badania. Każde zautomatyzowane badanie określa, czy wykryte zagrożenie wymaga działania, a następnie podejmuje (lub zaleca) akcje korygujące (takie jak wysyłanie pliku do kwarantanny, zatrzymywanie procesu, izolowanie urządzenia lub blokowanie adresu URL). Gdy badanie jest uruchomione, wszelkie inne powiązane alerty, które pojawiają się, są dodawane do badania do czasu jego zakończenia. Jeśli jednostka, których dotyczy problem, jest widoczna gdzie indziej, zautomatyzowane badanie rozszerza swój zakres, aby uwzględnić tę jednostkę, a proces badania powtarza się.<br/><br/>Możesz wyświetlić badania na stronie **Zdarzenia** . Wybierz zdarzenie, a następnie wybierz kartę **Badania** .<br/><br/>[Dowiedz się więcej o zautomatyzowanych badaniach](../defender-endpoint/automated-investigations.md).   |
-| Odpowiedź na żywo <br/>(domyślnie włączone) | Usługa Defender dla firm obejmuje następujące typy akcji ręcznego reagowania: <br/>— Uruchamianie skanowania antywirusowego<br/>- Izolowanie urządzenia<br/>— Zatrzymywanie i kwarantanna pliku<br/>- Dodaj wskaźnik, aby zablokować lub zezwolić na plik <br/><br/>[Dowiedz się więcej o akcjach reagowania](../defender-endpoint/respond-machine-alerts.md). |
+| Odpowiedź na żywo  | Usługa Defender dla firm obejmuje następujące typy akcji ręcznego reagowania: <br/>— Uruchamianie skanowania antywirusowego<br/>- Izolowanie urządzenia<br/>— Zatrzymywanie i kwarantanna pliku<br/>- Dodaj wskaźnik, aby zablokować lub zezwolić na plik <br/><br/>[Dowiedz się więcej o akcjach reagowania](../defender-endpoint/respond-machine-alerts.md). |
 | Odpowiedź na żywo dla serwerów | (To ustawienie nie jest obecnie dostępne w usłudze Defender dla Firm)   |
 | Wykonywanie skryptu bez znaku odpowiedzi na żywo | (To ustawienie nie jest obecnie dostępne w usłudze Defender dla Firm)  | 
 | Włączanie EDR w trybie bloku<br/>(domyślnie włączone) | Zapewnia dodatkową ochronę przed złośliwymi artefaktami, gdy Program antywirusowy Microsoft Defender nie jest podstawowym produktem antywirusowym i działa w trybie pasywnym na urządzeniu. EDR w trybie bloku działa w tle, aby korygować złośliwe artefakty, które zostały wykryte przez EDR możliwości. Takie artefakty mogły zostać pominięte przez podstawowy produkt antywirusowy spoza firmy Microsoft. W przypadku urządzeń z systemem Program antywirusowy Microsoft Defender jako podstawowym programem antywirusowym EDR w trybie bloku zapewnia dodatkową warstwę ochrony, umożliwiając Program antywirusowy Microsoft Defender wykonywanie automatycznych działań w przypadku wykrywania EDR behawioralnych po naruszeniu zabezpieczeń.<br/><br/>[Dowiedz się więcej o EDR w trybie bloku](../defender-endpoint/edr-in-block-mode.md). |
 | Zezwalanie na plik lub blokowanie go <br/>(domyślnie włączone) | Umożliwia zezwalanie na plik lub blokowanie go przy użyciu [wskaźników](../defender-endpoint/indicator-file.md). Ta funkcja wymaga włączenia Program antywirusowy Microsoft Defender w trybie aktywnym i [ochrony w chmurze](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md).<br/><br/>Zablokowanie pliku uniemożliwi jego odczyt, zapisanie lub wykonanie na urządzeniach w organizacji. <br/><br/>[Dowiedz się więcej o wskaźnikach dla plików](../defender-endpoint/indicator-file.md).  |
 | Niestandardowe wskaźniki sieci<br/>(domyślnie włączone) | Umożliwia zezwalanie na adres IP, adres URL lub domenę lub blokowanie go przy użyciu [wskaźników sieciowych](../defender-endpoint/indicator-ip-domain.md). Ta funkcja wymaga włączenia Program antywirusowy Microsoft Defender w trybie aktywnym i [ochrony sieci](../defender-endpoint/enable-network-protection.md).<br/><br/>Możesz zezwalać na adresy IP, adresy URL lub domeny albo blokować je na podstawie własnej analizy zagrożeń. Możesz również ostrzec użytkowników za pomocą monitu, jeśli otworzą ryzykowną aplikację. Monit nie uniemożliwi im korzystania z aplikacji, ale możesz podać ostrzeżenie dla użytkowników.<br/><br/>[Dowiedz się więcej o ochronie sieci](../defender-endpoint/network-protection.md). |
-| Ochrona przed naruszeniami<br/>(Zalecamy włączenie tego ustawienia) | Ochrona przed naruszeniami uniemożliwia złośliwym aplikacjom podejmowanie akcji, takich jak:<br/>- Wyłączanie ochrony przed wirusami i zagrożeniami<br/>— Wyłączanie ochrony w czasie rzeczywistym<br/>- Wyłączanie monitorowania zachowania<br/>— Wyłączanie ochrony w chmurze<br/>— Usuwanie aktualizacji analizy zabezpieczeń<br/>— Wyłączanie automatycznych akcji w wykrytych zagrożeniach<br/><br/>Ochrona przed naruszeniami zasadniczo blokuje Program antywirusowy Microsoft Defender do jej bezpiecznych, domyślnych wartości i uniemożliwia zmianę ustawień zabezpieczeń przez aplikacje i nieautoryzowane metody. <br/><br/>[Lern więcej na temat ochrony przed naruszeniami](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md).  |
+| Ochrona przed naruszeniami<br/>(Zalecamy włączenie tego ustawienia) | Ochrona przed naruszeniami uniemożliwia złośliwym aplikacjom podejmowanie akcji, takich jak:<br/>- Wyłączanie ochrony przed wirusami i zagrożeniami<br/>— Wyłączanie ochrony w czasie rzeczywistym<br/>- Wyłączanie monitorowania zachowania<br/>— Wyłączanie ochrony w chmurze<br/>— Usuwanie aktualizacji analizy zabezpieczeń<br/>— Wyłączanie automatycznych akcji w wykrytych zagrożeniach<br/><br/>Ochrona przed naruszeniami zasadniczo blokuje Program antywirusowy Microsoft Defender do jej bezpiecznych, domyślnych wartości i uniemożliwia zmianę ustawień zabezpieczeń przez aplikacje i nieautoryzowane metody. <br/><br/>[Dowiedz się więcej o ochronie przed naruszeniami](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md).  |
 | Pokaż szczegóły użytkownika<br/>(domyślnie włączone) | Umożliwia osobom w organizacji wyświetlanie szczegółów, takich jak obraz, nazwa, tytuł i dział pracowników. Te szczegóły są przechowywane w Azure Active Directory (Azure AD).<br/><br/>[Dowiedz się więcej o profilach użytkowników w usłudze Azure AD](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).  |
 | integracja Skype dla firm<br/>(domyślnie włączone) | Skype dla firm został wycofany w lipcu 2021 roku. Jeśli jeszcze nie przeniesiono cię do Microsoft Teams, zobacz [Konfigurowanie Microsoft Teams w małej firmie](/microsoftteams/deploy-small-business). <br/><br/>Integracja z Microsoft Teams (lub byłym Skype dla firm) umożliwia komunikację jednym kliknięciem między osobami w Firmie.   |
 | Filtrowanie zawartości sieci Web<br/>(domyślnie włączone) | Blokuj dostęp do witryn internetowych zawierających niepożądaną zawartość i śledź aktywność internetową we wszystkich domenach. Zobacz [Konfigurowanie filtrowania zawartości internetowej](#set-up-web-content-filtering). |

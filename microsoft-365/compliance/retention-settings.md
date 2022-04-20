@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zapoznaj się z ustawieniami, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i pozbyć się tego, czego nie chcesz.
-ms.openlocfilehash: 0ec9ace6d2a2205996baed8cd64ca0e29ac83ed3
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 729c31935ee3ded04a12f7822a17082ef1b52c26
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836089"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911517"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
@@ -33,7 +33,7 @@ Wiele ustawień przechowywania jest typowych zarówno dla zasad przechowywania, 
 Aby zapoznać się ze scenariuszami, które obsługują te zasady przechowywania, zobacz:
 
 - [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md).
-- [Tworzenie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
+- [Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
 - [Automatyczne stosowanie etykiety przechowywania do zawartości](apply-retention-labels-automatically.md)
 
 Ustawienia specyficzne dla każdego scenariusza zostały wyjaśnione w odpowiedniej dokumentacji.

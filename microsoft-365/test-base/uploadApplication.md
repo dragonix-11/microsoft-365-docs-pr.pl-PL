@@ -1,5 +1,5 @@
 ---
-title: Upload swoją paczkę
+title: Przekazywanie pakietu
 description: Jak przekazać aplikację, pliki binarne i zależności do bazy testowej
 search.appverid: MET150
 author: mansipatel-usl
@@ -14,74 +14,74 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 99b25757b3f7b0b3d4fcd43f97bab2ac303de6fa
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: 9ee299c0972ed4e286e5a660f5082dd5632167e4
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "63018974"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934274"
 ---
-# <a name="step-2-uploading-a-package"></a>Krok 2. Przekazanie pakietu
+# <a name="upload-your-test-base-package-zip"></a>Upload pakietu Test Base (Zip) 
 
-Na stronie Test Base portal (Portal testowy) przejdź do Upload **opcji** nowego pakietu na lewym pasku nawigacyjnym, jak pokazano poniżej:
+Na stronie Portal bazy testów przejdź do **Upload nowej opcji pakietu** na lewym pasku nawigacyjnym, jak pokazano poniżej:
 
-:::image type="content" alt-text="Upload nową paczkę." source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
+:::image type="content" alt-text="Upload nowy pakiet." source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
 
-Po dojechu do tej aplikacji wykonaj poniższe czynności, aby przekazać nowy pakiet.
+W tym miejscu wykonaj poniższe kroki, aby przekazać nowy pakiet.
 
-## <a name="enter-details-for-your-package"></a>Wprowadź szczegóły paczki
+## <a name="enter-details-for-your-package"></a>Wprowadź szczegóły pakietu
 
 Na karcie Szczegóły testu wpisz nazwę, wersję i inne szczegóły pakietu zgodnie z żądaniem.
 
-**Testowanie gotowego rozwiązania i** **funkcjonalności** można przetestować za pośrednictwem tego pulpitu nawigacyjnego.
+**Testowanie gotowe do użycia** i **funkcjonalne** można wykonać za pośrednictwem tego pulpitu nawigacyjnego.
 
-Poniższe kroki zapewniają przewodnik dotyczący wypełniania szczegółów pakietu:
+Poniższe kroki zawierają przewodnik po sposobie wypełniania szczegółów pakietu:
 
-1. W polu wprowadź nazwę, która ma zostać nadana pakietowi `Package name` .
+1. Wprowadź nazwę, która ma zostać nadana pakietowi `Package name` w polu.
 
     > [!NOTE]
-    > Wprowadzona kombinacja nazwy pakietu i wersji musi być unikatowa w twojej organizacji. Jest on sprawdzany za pomocą znacznika wyboru, jak pokazano poniżej.
+    > Wprowadzona kombinacja nazwy pakietu i wersji musi być unikatowa w organizacji. Jest to weryfikowane przez znacznik wyboru, jak pokazano poniżej.
 
-    - Jeśli zdecydujesz się użyć ponownie nazwy pakietu, numer wersji musi być unikatowy (to jest nigdy nie używany z wpływem na pakiet o tej konkretnej nazwie).
+    - Jeśli zdecydujesz się ponownie użyć nazwy pakietu, numer wersji musi być unikatowy (czyli nigdy nie był używany z pakietem o tej konkretnej nazwie).
 
-    - Jeśli kombinacja nazwy pakietu + wersja nie przejdzie kontroli unikatowości, zostanie wyświetlony komunikat o błędzie z komunikatem "Pakiet z tą wersją pakietu *już istnieje"*.
+    - Jeśli kombinacja nazwy pakietu i wersji nie przejdzie sprawdzania unikatowości, zostanie wyświetlony komunikat o błędzie z komunikatem *"Pakiet z tą wersją pakietu już istnieje"*.
 
-    :::image type="content" alt-text="Obraz instrukcji przekazywania pakietu." source="Media/Instructions.png":::
+    :::image type="content" alt-text="Obraz przedstawiający przekazywanie instrukcji dotyczących pakietu." source="Media/Instructions.png":::
 
 2. Wprowadź wersję w polu "Wersja pakietu".
 
     :::image type="content" alt-text="Wersja pakietu." source="Media/ApplicationVersion.png":::
 
-3. Wybierz typ testu, który chcesz uruchomić dla tego pakietu.
+3. Wybierz typ testu, który chcesz uruchomić w tym pakiecie.
 
-    Test **typu "Out-of-Box" (OOB)** wykonuje *instalację*, *uruchamianie*, *zamykanie* i *odinstalowywanie* pakietu. Po zakończeniu instalacji procedura uruchamiania i zamykania jest powtarzana 30 razy, zanim zostanie uruchomione pojedyncze odinstalowanie.
+    Test **out-of-box (OOB)** wykonuje *instalację*, *uruchamianie*, *zamykanie* i *odinstalowywanie* pakietu. Po zainstalowaniu procedura zamykania uruchamiania jest powtarzana 30 razy przed uruchomieniem pojedynczego odinstalowywania.
 
-    Ten test OOB udostępnia usterekzowany telemetrię dla Twojego pakietu w celu porównania Windows kompilacji.
+    Ten test OOB zapewnia ustandaryzowane dane telemetryczne w pakiecie do porównania między Windows kompilacjami.
 
-    Test **funkcjonalny może** wykonać przekazany skrypty testów na Twoim pakiecie. Skrypty są uruchamiane w sekwencji przekazywania, a niepowodzenie w określonym skrypcie zatrzyma wykonywanie kolejnych skryptów.
+    **Test funkcjonalny** umożliwia wykonanie przekazanych skryptów testowych w pakiecie. Skrypty są uruchamiane w sekwencji przekazywania, a niepowodzenie w określonym skryptzie spowoduje zatrzymanie wykonywania kolejnych skryptów.
 
     > [!NOTE]
     > **Wszystkie** skrypty są uruchamiane najwyżej przez 80 minut.
 
 4. Wybierz typ aktualizacji systemu operacyjnego.
 
-    - "Aktualizacje zabezpieczeń" umożliwiają przetestowanie Pakietu pod kątem przyrostowych Windows comiesięcznych aktualizacji zabezpieczeń.
-    - "Aktualizacje funkcji" umożliwiają przetestowanie Twojego pakietu Windows przed ich wydaniem dwurocznych aktualizacji funkcji z niejawnego programu testów pakietu Windows niejawnego programu testów.
+    - "Aktualizacje zabezpieczeń" umożliwiają testowanie pakietu pod kątem przyrostowych zmian Windows miesięcznych aktualizacji zabezpieczeń w wersji wstępnej.
+    - "Aktualizacje funkcji" umożliwiają testowanie pakietu pod kątem Windows kompilacji corocznych aktualizacji funkcji w wersji wstępnej z programu Windows Insider Program.
     <!---
     Change to the correct picture
     -->
     :::image type="content" alt-text="Typ aktualizacji systemu operacyjnego." source="Media/OSUpdateType.png":::
 
-5. Wybierz wersje systemu operacyjnego w testach aktualizacji zabezpieczeń.
+5. Wybierz wersje systemu operacyjnego dla testów aktualizacji zabezpieczeń.
 
-    Z listy rozwijanej wielokrotnego wyboru wybierz wersje systemu operacyjnego Windows na których twój pakiet zostanie zainstalowany.
+    Na liście rozwijanej Wielokrotne wybieranie wybierz wersje systemu operacyjnego Windows pakiet zostanie zainstalowany.
 
-    - Aby przetestować pakiet tylko pod Windows systemami operacyjnymi klienta, wybierz z listy menu odpowiednie Windows o wersjach systemu operacyjnego klienta.
-    - Aby przetestować pakiet tylko pod Windows systemami operacyjnymi programu Windows Server, wybierz z listy menu odpowiednie wersje systemu operacyjnego Windows Server.
-    - Aby przetestować pakiet pod Windows systemami operacyjnymi client i Windows Server, wybierz z listy menu wszystkie odpowiednie systemy operacyjne.
+    - Aby przetestować pakiet tylko w systemach operacyjnych Windows Client, wybierz odpowiednią Windows wersje systemu operacyjnego klienta z listy menu.
+    - Aby przetestować pakiet tylko w systemach operacyjnych Windows Server, wybierz odpowiednie wersje systemu operacyjnego serwera Windows z listy menu.
+    - Aby przetestować pakiet w systemach operacyjnych Windows Client i Windows Server, wybierz z listy menu wszystkie odpowiednie systemy operacyjne.
 
     > [!NOTE]
-    > Jeśli wybierzesz opcję przetestowania pakietu zarówno w przypadku systemu operacyjnego serwera, jak i systemu operacyjnego klienta, upewnij się, że pakiet jest zgodny i może być uruchamiany w obu systemach operacyjnych.
+    > Jeśli wybierzesz opcję testowania pakietu zarówno w systemach operacyjnych serwera, jak i klienta, upewnij się, że pakiet jest zgodny i może działać w obu systemach operacyjnych
 
     :::image type="content" alt-text="Wybieranie wersji systemu operacyjnego." source="Media/OSVersion.png":::
     <!---
@@ -90,14 +90,14 @@ Poniższe kroki zapewniają przewodnik dotyczący wypełniania szczegółów pak
 
 6. Wybierz opcje testów aktualizacji funkcji:
 
-    - Wybierz opcję "Wybierz kanał niejawnego programu testów" i `Windows Insider Program Channel` wybierz kompilację, pod kątem których powinny być testowane Twoje pakiety.
+    - Z opcją "Wybierz kanał niejawnych testów" wybierz `Windows Insider Program Channel` kompilację , pod którą pakiety powinny być testowane.
 
-      Obecnie korzystamy z kompilacji testowych w kanale beta niejawnego programu testów.
+      Obecnie używamy kompilacji, które zostały uruchomione w kanale testerów wersji beta.
 
-    - Przy opcji "Wybierz plan bazowy systemu operacyjnego dla szczegółowych informacji" wybierz wersję systemu Windows, która ma być używana jako plan bazowy podczas porównywania wyników testu.
+    - Z opcją "Wybierz punkt odniesienia systemu operacyjnego dla szczegółowych informacji" wybierz wersję systemu operacyjnego Windows, która ma być używana jako punkt odniesienia podczas porównywania wyników testu.
 
     > [!NOTE]
-    > Obecnie NIE obsługujemy testowania aktualizacji funkcji dla systemu operacyjnego serwera
+    > Obecnie nie obsługujemy testowania aktualizacji funkcji dla systemów operacyjnych serwera
     <!---
     Note to actual note format for markdown
     -->
@@ -106,13 +106,13 @@ Poniższe kroki zapewniają przewodnik dotyczący wypełniania szczegółów pak
     -->
     :::image type="content" alt-text="Testowanie aktualizacji funkcji." source="Media/FeatureUpdate.png":::
 
-7. Strona Ukończone szczegóły testu powinna wyglądać tak:
+7. Ukończona strona Szczegóły testu powinna wyglądać następująco:
 
     :::image type="content" alt-text="Wyświetlanie szczegółów testu." source="Media/TestDetails.png":::
 
 ## <a name="next-steps"></a>Następne kroki
 
-W następnym artykule o mowa przekazywanie danych binralnych do naszej usługi.
+W następnym artykule opisano przekazywanie plików binarnych do naszej usługi.
 
 > [!div class="nextstepaction"]
 > [Następny krok](binaries.md)

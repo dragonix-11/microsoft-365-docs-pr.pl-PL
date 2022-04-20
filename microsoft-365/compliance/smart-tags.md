@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie tagów inteligentnych w aplikacji Advanced eDiscovery
+title: Konfigurowanie tagów inteligentnych w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,36 +16,36 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Tagi inteligentne umożliwiają stosowanie funkcji uczenia maszynowego podczas przeglądania zawartości w Advanced eDiscovery przypadku. Za pomocą grup tagów inteligentnych można wyświetlać wyniki modeli wykrywania maszynowego uczenia, takich jak model prawniowo-klienta.
-ms.openlocfilehash: 80c946da943e4880dbd82ea6b34d238b80030b4c
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: Tagi inteligentne umożliwiają stosowanie możliwości uczenia maszynowego podczas przeglądania zawartości w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Użyj grup tagów inteligentnych, aby wyświetlić wyniki modeli wykrywania uczenia maszynowego, takich jak model uprawnień adwokackiego klienta.
+ms.openlocfilehash: 9fd4a53df00bcb096a885ed311e4fb4ed365725e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014684"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934626"
 ---
-# <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Konfigurowanie tagów inteligentnych w aplikacji Advanced eDiscovery
+# <a name="set-up-smart-tags-in-ediscovery-premium"></a>Konfigurowanie tagów inteligentnych w usłudze eDiscovery (Premium)
 
-Funkcje uczenia maszynowego (ML) w programie Advanced eDiscovery ułatwiają wydajniejsze podejmowanie decyzji podczas przeglądania dokumentów spraw w zestawie recenzji. Tagi inteligentne to sposób na zapewnianie możliwości ML miejsca, w którym są rejestrowane decyzje: podczas tagowania dokumentów podczas przeglądu. Po utworzeniu grupy tagów inteligentnych decyzje wynikające z modelu ML skojarzonego z grupą tagów inteligentnych są wyświetlane razem z tagami w grupie tagów. Dzięki temu podczas rerecenzowania określonych ML zostaną one podane w wierszach.
+Funkcje uczenia maszynowego (ML) w usłudze Microsoft Purview eDiscovery (Premium) mogą pomóc w usprawnieniu procesu podejmowania decyzji podczas przeglądania dokumentów przypadków w zestawie przeglądów. Tagi inteligentne to sposób na zapewnienie możliwości ML do miejsca, w którym są rejestrowane decyzje: podczas tagowania dokumentów podczas przeglądania. Podczas tworzenia grupy tagów inteligentnych decyzje będące wynikiem modelu ML skojarzonego z grupą tagów inteligentnych są wyświetlane w wierszu z tagami w grupie tagów. Pomaga to wyświetlić informacje o wynikach ML w wierszu podczas przeglądania określonych dokumentów.
 
 ## <a name="how-to-set-up-a-smart-tag-group"></a>Jak skonfigurować grupę tagów inteligentnych
 
-1. W zestawie recenzji kliknij pozycję **Zarządzaj zestawem recenzji** , a następnie kliknij pozycję **Zarządzaj tagami**.
+1. W zestawie przeglądów kliknij pozycję **Zarządzaj zestawem przeglądów** , a następnie kliknij pozycję **Zarządzaj tagami**.
 
-2. Kliknij **pozycję Dodaj grupę tagów** , a następnie wybierz **pozycję Dodaj grupę tagów inteligentnych**.
+2. Kliknij **pozycję Dodaj grupę tagów** , a następnie wybierz pozycję **Dodaj grupę tagów inteligentnych**.
 
-3. Wybierz ML, który chcesz skojarzyć z grupą tagów.
+3. Wybierz model ML, który chcesz skojarzyć z grupą tagów.
     
-   Powoduje to utworzenie grupy tagów i *N* tagów podrzędnych, gdzie *N* oznacza liczbę możliwych wyników modelu. Na przykład model [wykrywania uprawnień klienta obsługi klienta ma](attorney-privilege-detection.md) dwa możliwe wyniki: 
+   Spowoduje to utworzenie grupy tagów i *tagów* podrzędnych N, gdzie *N* jest liczbą możliwych danych wyjściowych modelu. Na przykład [model wykrywania uprawnień adwokackiego klienta](attorney-privilege-detection.md) ma dwa możliwe dane wyjściowe: 
 
-   - **Dodatni** — oznacza dokumenty zawierające treści o uprawnieniach klienta.
+   - **Pozytywne** — służy do tagowania dokumentów zawierających uprzywilejowaną zawartość adwokacka klienta.
    
-   - **Ujemne** — oznacza dokumenty, które nie zawierają treści o uprawnieniach klienta.
+   - **Negatywna** — służy do tagowania dokumentów, które nie zawierają uprzywilejowanej zawartości adwokackiej klienta.
     
-    W przypadku wybrania tego modelu zostanie utworzona grupa tagów z dwoma tagami podrzędnmi (jeden tag podrzędny o nazwie **Dodatni, a** drugi o nazwie Ujemny **) dla** zestawu recenzji. W tym przykładzie każdy tag podrzędny odpowiada jednemu z możliwych wyników modelu wykrywania uprawnień obsługi klienta i obsługi klienta.
+    Jeśli wybierzesz ten model, zostanie utworzona grupa tagów z dwoma tagami podrzędnymi (jeden tag podrzędny o nazwie **Positive** , a drugi o nazwie **Negative**) dla zestawu przeglądów. W tym przykładzie każdy tag podrzędny odpowiada jednemu z możliwych danych wyjściowych z modelu wykrywania uprawnień adwokackiego klienta.
 
-4. Opcjonalnie możesz zmienić nazwę grupy tagów i tagów podrzędnych. Można na przykład zmienić nazwę tagu **Dodatni** na **"Privileged" (** Uprawnienie), a tag **negatywowy** na **Nieumiejętny**.
+4. Opcjonalnie możesz zmienić nazwę grupy tagów i tagów podrzędnych. Można na przykład zmienić nazwę tagu **Pozytywna** na **Uprzywilejowana** , a wartość **Tag ujemny** na **Nieusłuszona**.
 
 ## <a name="how-to-use-smart-tags"></a>Jak używać tagów inteligentnych
 
-Podczas przeglądania dokumentu wyniki modelu są wyświetlane obok odpowiedniego tagu podrzędnego. Na przykład jeśli masz grupę tagów inteligentnych do wykrywania uprawnień klienta-obsługi klienta i przeglądasz dokument, który ma potencjalnie uprzywilejowany, przyczyna takiego wnioski jest wyświetlana obok odpowiedniego znacznika. Należy pamiętać, że tag nie jest automatycznie stosowany do dokumentu. Recenzent podejmuje decyzję o oknie o oknie otagowanie dokumentu.
+Podczas przeglądania dokumentu wyniki modelu są wyświetlane obok odpowiedniego tagu podrzędnego. Jeśli na przykład masz grupę tagów inteligentnych do wykrywania uprawnień adwokata klienta i przejrzysz dokument, który jest potencjalnie uprzywilejowany, przyczyna tego wniosku jest wyświetlana obok odpowiedniego tagu. Należy pamiętać, że tag nie jest automatycznie stosowany do dokumentu. Recenzent podejmuje decyzję o tym, jak otagować dokument.

@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Użyj funkcji wyszukiwania i przeczyszczania w Centrum zgodności platformy Microsoft 365, aby wyszukać i usunąć wiadomość e-mail ze wszystkich skrzynek pocztowych w organizacji.
-ms.openlocfilehash: 8d283148b0a0cee0aed3d91a6332c96bd31111b4
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+description: Użyj funkcji wyszukiwania i przeczyszczania w portalu zgodności usługi Microsoft Purview, aby wyszukać i usunąć wiadomość e-mail ze wszystkich skrzynek pocztowych w organizacji.
+ms.openlocfilehash: 23eeff8078dbd7ab65b0bddb9684aa81d65aab94
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64846976"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936252"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Wyszukaj i usuń wiadomości e-mail
 
@@ -43,10 +43,10 @@ Funkcja wyszukiwania zawartości umożliwia wyszukiwanie i usuwanie wiadomości 
 
 - Przepływ pracy wyszukiwania i przeczyszczania opisany w tym artykule nie usuwa wiadomości czatu ani innej zawartości z Microsoft Teams. Jeśli wyszukiwanie zawartości utworzone w kroku 2 zwraca elementy z Microsoft Teams, te elementy nie zostaną usunięte podczas przeczyszczania elementów w kroku 3. Aby wyszukać i usunąć wiadomości czatu, zobacz [Wyszukiwanie i przeczyszczanie wiadomości czatu w Teams](search-and-delete-Teams-chat-messages.md).
 
-- Aby utworzyć i uruchomić wyszukiwanie zawartości, musisz być członkiem grupy ról **menedżera zbierania elektronicznych materiałów dowodowych** lub mieć przypisaną rolę **Wyszukiwanie zgodności** w Centrum zgodności platformy Microsoft 365. Aby usunąć komunikaty, musisz być członkiem grupy ról **Zarządzanie organizacją** lub mieć przypisaną rolę **Wyszukaj i przeczyszczanie** w centrum zgodności Aby uzyskać informacje o dodawaniu użytkowników do grupy ról, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
+- Aby utworzyć i uruchomić wyszukiwanie zawartości, musisz być członkiem grupy ról **menedżera zbierania elektronicznych materiałów dowodowych** lub mieć przypisaną rolę **Wyszukiwanie zgodności** w portalu zgodności usługi Microsoft Purview. Aby usunąć komunikaty, musisz być członkiem grupy ról **Zarządzanie organizacją** lub mieć przypisaną rolę **Wyszukaj i przeczyszczanie** w centrum zgodności Aby uzyskać informacje o dodawaniu użytkowników do grupy ról, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
   > [!NOTE]
-  > Grupa ról **Zarządzanie organizacją** istnieje zarówno w Exchange Online, jak i w Centrum zgodności platformy Microsoft 365. Są to oddzielne grupy ról, które dają różne uprawnienia. Bycie członkiem **zarządzania organizacją** w Exchange Online nie udziela wymaganych uprawnień do usuwania wiadomości e-mail. Jeśli nie masz przypisanej roli **Wyszukaj i przeczyszczanie** w centrum zgodności (bezpośrednio lub za pośrednictwem grupy ról, takiej jak **Zarządzanie organizacją**), po uruchomieniu polecenia cmdlet **New-ComplianceSearchAction** w kroku 3 zostanie wyświetlony komunikat "Nie można odnaleźć parametru zgodnego z nazwą parametru "Przeczyszczanie".
+  > Grupa ról **Zarządzanie organizacją** istnieje zarówno w Exchange Online, jak i w portalu zgodności. Są to oddzielne grupy ról, które dają różne uprawnienia. Bycie członkiem **zarządzania organizacją** w Exchange Online nie udziela wymaganych uprawnień do usuwania wiadomości e-mail. Jeśli nie masz przypisanej roli **Wyszukaj i przeczyszczanie** w centrum zgodności (bezpośrednio lub za pośrednictwem grupy ról, takiej jak **Zarządzanie organizacją**), po uruchomieniu polecenia cmdlet **New-ComplianceSearchAction** w kroku 3 zostanie wyświetlony komunikat "Nie można odnaleźć parametru zgodnego z nazwą parametru "Przeczyszczanie".
 
 - Aby usunąć komunikaty, musisz użyć programu PowerShell Centrum zgodności & zabezpieczeń. Aby uzyskać instrukcje dotyczące nawiązywania połączenia, zobacz [Krok 1](#step-1-connect-to-security--compliance-center-powershell) .
 
@@ -56,7 +56,7 @@ Funkcja wyszukiwania zawartości umożliwia wyszukiwanie i usuwanie wiadomości 
 
 - Procedura opisana w tym artykule może służyć tylko do usuwania elementów w Exchange Online skrzynkach pocztowych i folderach publicznych. Nie można jej używać do usuwania zawartości z witryn SharePoint lub OneDrive dla Firm.
 
-- Nie można usunąć elementów wiadomości e-mail w zestawie przeglądów w Advanced eDiscovery przypadku przy użyciu procedur w tym artykule. Dzieje się tak dlatego, że elementy w zestawie przeglądów są przechowywane w lokalizacji Storage platformy Azure, a nie w usłudze na żywo. Oznacza to, że nie zostaną one zwrócone przez wyszukiwanie zawartości utworzone w kroku 1. Aby usunąć elementy w zestawie przeglądów, należy usunąć przypadek Advanced eDiscovery zawierający zestaw przeglądów. Aby uzyskać więcej informacji, zobacz [Zamykanie lub usuwanie Advanced eDiscovery przypadku](close-or-delete-case.md).
+- Nie można usunąć elementów wiadomości e-mail w zestawie przeglądów w przypadku zbierania elektronicznych materiałów dowodowych (Premium), korzystając z procedur opisanych w tym artykule. Dzieje się tak dlatego, że elementy w zestawie przeglądów są przechowywane w lokalizacji Storage platformy Azure, a nie w usłudze na żywo. Oznacza to, że nie zostaną one zwrócone przez wyszukiwanie zawartości utworzone w kroku 1. Aby usunąć elementy w zestawie przeglądów, należy usunąć przypadek zbierania elektronicznych materiałów dowodowych (Premium), który zawiera zestaw przeglądów. Aby uzyskać więcej informacji, zobacz [Zamykanie lub usuwanie sprawy zbierania elektronicznych materiałów dowodowych (Premium](close-or-delete-case.md)).
 
 ## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Krok 1. Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń
 
@@ -64,7 +64,7 @@ Pierwszym krokiem jest nawiązanie połączenia z programem PowerShell Centrum z
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Krok 2. Tworzenie wyszukiwania zawartości w celu znalezienia komunikatu do usunięcia
 
-Drugim krokiem jest utworzenie i uruchomienie wyszukiwania zawartości w celu znalezienia wiadomości, którą chcesz usunąć ze skrzynek pocztowych w organizacji. Wyszukiwanie można utworzyć przy użyciu Centrum zgodności platformy Microsoft 365 lub uruchamiając polecenia cmdlet **New-ComplianceSearch** i **Start-ComplianceSearch** w programie PowerShell Security & Compliance. Komunikaty zgodne z zapytaniem dla tego wyszukiwania zostaną usunięte przez uruchomienie polecenia **New-ComplianceSearchAction -Purge** w [kroku 3](#step-3-delete-the-message). Aby uzyskać informacje na temat tworzenia wyszukiwania zawartości i konfigurowania zapytań wyszukiwania, zobacz następujące tematy:
+Drugim krokiem jest utworzenie i uruchomienie wyszukiwania zawartości w celu znalezienia wiadomości, którą chcesz usunąć ze skrzynek pocztowych w organizacji. Wyszukiwanie można utworzyć przy użyciu portalu zgodności lub uruchamiając polecenia cmdlet **New-ComplianceSearch** i **Start-ComplianceSearch** w programie PowerShell Security & Compliance. Komunikaty zgodne z zapytaniem dla tego wyszukiwania zostaną usunięte przez uruchomienie polecenia **New-ComplianceSearchAction -Purge** w [kroku 3](#step-3-delete-the-message). Aby uzyskać informacje na temat tworzenia wyszukiwania zawartości i konfigurowania zapytań wyszukiwania, zobacz następujące tematy:
 
 - [Wyszukiwanie zawartości w Office 365](content-search.md)
 
@@ -89,7 +89,7 @@ Celem zapytania wyszukiwania jest zawężenie wyników wyszukiwania tylko do wia
 
 - Wyświetl podgląd wyników wyszukiwania, aby sprawdzić, czy wyszukiwanie zwróciło tylko komunikat (lub komunikaty), które chcesz usunąć.
 
-- Użyj statystyk szacowania wyszukiwania (wyświetlanych w okienku szczegółów wyszukiwania w Centrum zgodności platformy Microsoft 365 lub za pomocą polecenia cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)), aby uzyskać łączną liczbę wyników.
+- Użyj statystyk szacowania wyszukiwania (wyświetlanych w okienku szczegółów wyszukiwania w portalu zgodności lub za pomocą polecenia cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) ), aby uzyskać łączną liczbę wyników.
 
 Poniżej przedstawiono dwa przykłady zapytań w celu znalezienia podejrzanych wiadomości e-mail.
 

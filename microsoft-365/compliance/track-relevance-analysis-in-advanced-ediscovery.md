@@ -1,5 +1,5 @@
 ---
-title: Śledzenie analizy istotności w programie Advanced eDiscovery
+title: Śledzenie analizy istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,154 +16,154 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
-description: Dowiedz się, jak wyświetlić i zinterpretować stan szkolenia na temat istotności i wyniki dotyczące spraw związanych z Advanced eDiscovery.
-ms.openlocfilehash: 7a2786a727fd233b6617779bae95a26c1b62644e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak wyświetlać i interpretować stan trenowania istotności i wyniki dotyczące problemów ze sprawami zbierania elektronicznych materiałów dowodowych (Premium).
+ms.openlocfilehash: 53f1fa12849651cd01172a320eaa014614634e92
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984602"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935527"
 ---
-# <a name="track-relevance-analysis-in-advanced-ediscovery"></a>Śledzenie analizy istotności w programie Advanced eDiscovery
+# <a name="track-relevance-analysis-in-ediscovery-premium"></a>Śledzenie analizy istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
   
-Na Advanced eDiscovery na karcie Śledzenie istotności jest wyświetlana obliczona poprawność szkolenia dotyczące istotności przeprowadzonego na karcie Znacznik, a także wskazuje następny krok do podjęcia w procesie szkolenia iteracyjnych na temat istotności. 
+W usłudze Microsoft Purview eDiscovery (Premium) na karcie Śledzenie istotności jest wyświetlana obliczona ważność trenowania istotności wykonywanego na karcie Tag i wskazuje następny krok do wykonania w procesie trenowania iteracyjnego w obszarze Istotność. 
   
-## <a name="tracking-relevance-training-status"></a>Śledzenie istotności szkolenia
+## <a name="tracking-relevance-training-status"></a>Śledzenie stanu trenowania istotności
 
-1. W artykule Śledzenie istotności problemu można wyświetlić następujące szczegóły, jak pokazano w poniższym przykładzie okna **dialogowego Nazwa** problemu.
+1. Wyświetl następujące szczegóły w obszarze Śledzenie istotności problemów, jak pokazano w poniższym przykładzie okna dialogowego **Nazwa problemu** poniżej.
 
-   - **Ocena**: Wskaźnik postępu pokazuje, w jakim stopniu szkolenie dotyczące istotności przeprowadzone w tym momencie osiągnięto cel oceny pod względem marginesu błędu. Wyświetlana jest też rozbudowa wyników szkolenia na temat istotności.
+   - **Ocena**: Ten wskaźnik postępu pokazuje, w jakim stopniu szkolenie w zakresie istotności przeprowadzone do tego momentu osiągnęło cel oceny pod względem marginesu błędu. Zostanie również wyświetlone bogactwo wyników trenowania istotności.
 
-   - **Szkolenie**: Ten oznaczony kolorami wskaźnik postępu i etykietka narzędzia wskazują stabilność wyników szkolenia dotyczące istotności oraz skalę liczbową przedstawiającą liczbę próbek szkoleniowych z istotności oznaczonych dla poszczególnych problemów. Ekspert monitoruje postęp procesu szkolenia na temat istotności iteracyjnych. 
+   - **Trenowanie**: Ten wskaźnik postępu z kodem kolorowym i porada narzędzia wskazuje stabilność wyników trenowania istotności oraz skalę liczbową pokazującą liczbę próbek trenowania istotności oznaczonych dla każdego problemu. Ekspert monitoruje postęp iteracyjnego procesu trenowania istotności. 
   
-   - **Obliczanie partii**: Ten wskaźnik postępu dostarcza informacji o ukończeniu obliczania partii.
+   - **Obliczenia wsadowe**: ten wskaźnik postępu zawiera informacje o ukończeniu obliczeń usługi Batch.
   
-   - **Następny krok**: Wyświetla zalecenia dotyczące następnego kroku do wykonania. 
+   - **Następny krok**: wyświetla zalecenie dotyczące następnego kroku do wykonania. 
   
-    W tym przykładzie pomyślnie ukończono ocenę problemu, na co wskazuje wskaźnik postępu koloru i znacznik wyboru. Otagowanie jest w toku, ale mimo to sprawa jest niestabilna (stabilność jest również wyświetlana w etykietce narzędzia). Następnym krokiem jest "Szkolenie". 
+    W tym przykładzie zostanie wyświetlona pomyślnie ukończona ocena problemu, wskazana przez ukończony wskaźnik postępu koloru i znacznik wyboru. Tagowanie jest w toku, ale sprawa jest nadal uważana za niestabilną (stan stabilności jest również wyświetlany w poradzie narzędzia). Następnym krokiem jest zalecenie "Szkolenie". 
   
-    ![Śledzenie istotności śledzenia kroku 1.](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
+    ![Śledzenie istotności — krok 1.](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
-    W rozwiniętym widoku są wyświetlane dodatkowe informacje i opcje. Wyświetlanym bieżącym marginesem błędu jest margines błędu odwołania w bieżącym stanie oceny z uwagi na istniejące (już otagowane) pliki ocen.
+    Rozszerzony widok zawiera dodatkowe informacje i opcje. Wyświetlany bieżący margines błędu to margines błędu wycofania w bieżącym stanie oceny, biorąc pod uwagę istniejące (już oznaczone) pliki oceny.
   
     > [!NOTE]
-    >  Etap oceny można pominąć, czyszcząc pole **wyboru Ocena** dla każdego problemu, a następnie "wszystkie problemy". W wyniku tego nie będą dostępne żadne statystyki dotyczące tego problemu. > wyczyszczenie pola **wyboru Ocena** jest możliwe tylko przed rozpoczęciem oceniania. Jeśli w przypadku sprawy występuje wiele problemów, ocena jest pomijana tylko wtedy, gdy dla każdego problemu jest wyczyszczane pole wyboru 
+    >  Etap oceny można pominąć, usuwając pole wyboru **Ocena** dla każdego problemu, a następnie dla "wszystkich problemów". Jednak w związku z tym nie będzie żadnych statystyk dla tego problemu. > Zaznaczenie pola wyboru **Ocena** można wykonać tylko przed przeprowadzeniem oceny. Jeśli istnieje wiele problemów w danym przypadku, ocena jest pomijana tylko wtedy, gdy pole wyboru jest wyczyszczone dla każdego problemu 
   
-    W przypadku nieu ukończenia oceny z pierwszym przykładowym zestawem plików kolejnym krokiem do otagowania większej liczby plików może być ocena.
+    Jeśli ocena nie zostanie ukończona przy użyciu pierwszego przykładowego zestawu plików, ocena może być kolejnym krokiem tagowania większej liczby plików.
   
-    W **narzędziu** \> **Śledzenie istotności** wskaźnik postępu szkolenia i etykietka narzędzia wskazują szacowaną liczbę dodatkowych próbek potrzebnych do osiągnięcia stabilności. Ta oszacowanie stanowi wytyczne dotyczące potrzebnych dodatkowych szkoleń.
+    W **obszarze Śledzenie istotności** \> wskaźnik postępu trenowania i porada narzędzia wskazują szacowaną liczbę dodatkowych próbek potrzebnych do osiągnięcia stabilności. To oszacowanie zawiera wytyczne dotyczące wymaganych dodatkowych szkoleń.
   
-    ![Śledzenie istotności szkoleń.](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Trenowanie ścieżki istotności.](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
-2. Po tagize, a jeśli chcesz kontynuować szkolenie, kliknij pozycję **Szkolenie**. Na podstawie załadowanego zestawu plików jest generowany inny przykładowy zestaw plików do dodatkowego szkolenia. Powrócisz do karty Tag, aby oznaczyć i przeszkolić więcej plików.
+2. Po zakończeniu tagowania i kontynuowaniu trenowania kliknij pozycję **Szkolenie**. Inny przykładowy zestaw plików jest generowany z załadowanego zestawu plików na potrzeby dodatkowego trenowania. Następnie wrócisz do karty Tag, aby oznaczyć i wytrenować więcej plików.
 
-### <a name="reaching-stable-training-levels"></a>Osiągnięcie stabilnego poziomu szkoleń
+### <a name="reaching-stable-training-levels"></a>Osiąganie stabilnych poziomów trenowania
 
-Po osiągnięciu stabilnego poziomu szkoleń pliki Advanced eDiscovery są gotowe do obliczania wsadowego.
+Gdy pliki oceny osiągną stabilny poziom trenowania, funkcja zbierania elektronicznych materiałów dowodowych (Premium) jest gotowa do obliczeń usługi Batch.
   
 > [!NOTE]
-> Zazwyczaj po trzech stabilnych przykładach szkoleniowych następnym krokiem jest "Obliczanie wsadowe". Mogą być wyjątki, na przykład w przypadku zmian w oznakowaniu plików z wcześniejszych próbek lub w momencie dodania plików iniektowanych. 
+> Zwykle po trzech stabilnych przykładach trenowania następnym krokiem jest "Obliczenie usługi Batch". Mogą wystąpić wyjątki, na przykład gdy wprowadzono zmiany tagowania plików z wcześniejszych przykładów lub gdy pliki inicjujące zostały dodane. 
   
-### <a name="performing-batch-calculation"></a>Wykonywanie obliczeń wsadowych
+### <a name="performing-batch-calculation"></a>Wykonywanie obliczeń usługi Batch
 
-Obliczenia wsadowe są wykonywane jako następny krok po pomyślnym ukończeniu szkolenia (jeśli na pasku postępu widać stabilny stan szkolenia, znacznik wyboru i stabilny stan w etykietce narzędzia). Obliczenia wsadowe dotyczą całej populacji plików na podstawie uzyskanej wiedzy nabytej w ramach szkolenia na temat istotności, a także do oceny istotności plików i przypisania wyników z oceny istotności.
+Obliczanie usługi Batch jest wykonywane jako następny krok po pomyślnym ukończeniu trenowania (gdy stabilny stan trenowania jest wyświetlany na pasku postępu, znacznik wyboru i stabilny stan w poradzie narzędzia). Obliczenia usługi Batch stosują wiedzę uzyskaną podczas trenowania istotności do całej populacji plików, aby ocenić istotność plików i przypisać wyniki istotności.
   
-Jeśli występuje więcej niż jeden problem, obliczanie wsadowe jest wykonywane dla każdego problemu. Podczas obliczania wsadowego postęp jest monitorowany podczas przetwarzania wszystkich plików. 
+Jeśli występuje więcej niż jeden problem, obliczenie usługi Batch jest wykonywane dla każdego problemu. Podczas obliczania usługi Batch postęp jest monitorowany podczas przetwarzania wszystkich plików. 
   
-W tym miejscu zalecanym następnym krokiem jest "Brak", co oznacza, że na tym etapie nie jest wymagane dodatkowe szkolenie na temat istotności. Następnym etapem jest karta **Podjęcie decyzji o \> istotności** . 
+W tym miejscu zalecanym następnym krokiem jest "Brak", co oznacza, że w tym momencie nie jest wymagane żadne dodatkowe trenowanie iteracyjnego istotności. Następna faza to karta **Decyzja o istotności\>**. 
   
-Jeśli chcesz zaimportować nowe pliki po obliczeniu wsadu, administrator może dodać zaimportowane pliki do nowego ładowania.
+Jeśli chcesz zaimportować nowe pliki po obliczeniu usługi Batch, administrator może dodać zaimportowane pliki do nowego obciążenia.
   
 > [!NOTE]
-> Kliknięcie przycisku **Anuluj** podczas obliczania wsadowego powoduje zapisanie już wykonanej pracy. Jeśli ponownie zostanie uruchomione obliczenie wsadowe, proces będzie kontynuowany od ostatniego wykonanego punktu. 
+> Jeśli **klikniesz przycisk Anuluj** podczas obliczania usługi Batch, proces zapisze to, co zostało już wykonane. Jeśli ponownie uruchomisz obliczenia usługi Batch, proces będzie kontynuowany od ostatniego wykonanego punktu. 
   
-### <a name="assessing-tagging-consistency"></a>Ocenianie spójności otagowania
+### <a name="assessing-tagging-consistency"></a>Ocena spójności tagowania
 
-Niespójności w otagowaniu plików mogą mieć wpływ na analizę. Proces Advanced eDiscovery otagowania może być używany, gdy wyniki nie są optymalne lub istnieją wątpliwości co do spójności. Zostanie zwrócona lista możliwych niespójnie otagowanych plików, które można w razie potrzeby przeglądać i ponownie zasyłać.
+Jeśli w tagowaniu plików występują niespójności, może to mieć wpływ na analizę. Proces spójności tagowania zbierania elektronicznych materiałów dowodowych (Premium) może być używany, gdy wyniki nie są optymalne lub spójność jest wątpliwa. Zwracana jest lista możliwych niespójnie oznaczonych plików. W razie potrzeby można je przejrzeć i ponownie oznaczyć.
   
 > [!NOTE]
-> Po co najmniej siedmiu rundach  \>  \>  \> szkoleniowych po ocenach spójność znakowania można wyświetlić w widoku Śledzenie istotności Śledzenia problemu **Szczegółowe** \> wyniki **postępów szkoleń**. Ta recenzja jest wykonywana dla jednego problemu na raz.
+> Po co najmniej siedmiu rundach szkoleniowych po dokonaniu oceny spójność tagowania można wyświetlić w sekcji Postęp **trenowania** **śledzenia** \> **istotności**\>— **problem** \> **ze szczegółowymi wynikami**\>. Ta recenzja jest wykonywana dla jednego problemu naraz.
   
-1. W **śledzenie istotności \>** rozwiń wiersz problemu.
+1. W **obszarze Śledzenie istotności \>** rozwiń wiersz problemu.
   
-2. Po prawej stronie **następnego kroku** kliknij przycisk **Modyfikuj**.
+2. Po prawej stronie pozycji **Następny krok** kliknij przycisk **Modyfikuj**.
   
-3. Wybierz **pozycję Niespójności tagów** jako **opcję Następny krok** po siedmiu próbach szkoleniowych i kliknij przycisk **OK**.
+3. Wybierz opcję **Tagowanie niespójności** jako opcję **Następny krok** , po siedmiu przykładach szkoleniowych i kliknij przycisk **OK**.
   
-4. Wybierz **pozycję Niespójności tagów**. Zostanie **otwarta** karta Tag z listą niespójności do ponownego otagowania w razie potrzeby.
+4. Wybierz pozycję **Niespójności tagów**. Zostanie otwarta karta **Tag** zawierająca listę niespójności do ponownego zatagowania w razie potrzeby.
   
-5. Kliknij **przycisk Oblicz** , aby przesłać zmiany. Kolejnym krokiem po oznakowaniu niespójności jest "Szkolenie". 
+5. Kliknij pozycję **Oblicz** , aby przesłać zmiany. Następnym krokiem po otagowaniu niespójności jest "Trenowanie". 
   
 ## <a name="viewing-and-using-relevance-results"></a>Wyświetlanie i używanie wyników istotności
 
-Na karcie **Śledzenie \> istotności** rozwiń wiersz problemu i obok **przycisku Szczegółowe wyniki** kliknij pozycję **Wyświetl**. Zostaną wyświetlone okienka Wyników szczegółowych, jak pokazano i opisano poniżej.
+Na karcie **Śledzenie istotności \>** rozwiń wiersz problemu, a następnie obok pozycji **Szczegółowe wyniki** kliknij pozycję **Wyświetl**. Wyświetlane są okienka Szczegółowe wyniki, jak pokazano i opisano poniżej.
   
-![Szczegółowe wyniki szkolenia dotyczące istotności.](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Szczegółowe wyniki trenowania istotności.](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Podsumowanie tagowania
 
- W poniższym przykładzie w podsumowaniu  Otagowanie są wyświetlane sumy dla poszczególnych procesów oceny, szkolenia i znakowania plików pochwytnych.
+ W poniższym przykładzie **podsumowanie tagowania zawiera sumy** dla każdego z procesów tagowania oceny, trenowania i przechwytywania plików.
   
-![Podsumowanie śledzenia istotności tagów.](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Podsumowanie tagowania śledzenie istotności.](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
 ### <a name="keywords"></a>Słowa kluczowe
 
-Słowo kluczowe to unikatowy ciąg znaków, słowo, fraza lub sekwencja wyrazów w pliku oznaczonym Advanced eDiscovery istotnym wskaźnikiem tego, czy plik jest istotny. Na liście "Uwzględnij" kolumny są wyświetlane słowa kluczowe i wagi w plikach oznaczonych jako Odpowiednie, a w kolumnach "Wyklucz" są wyświetlane słowa kluczowe i wagi w plikach oznaczonych jako Nie istotne.
+Słowo kluczowe jest unikatowym ciągiem, słowem, frazą lub sekwencją wyrazów w pliku zidentyfikowanym przez funkcję eDiscovery (Premium) jako znaczący wskaźnik istotności pliku. Kolumny "Dołącz" zawierają słowo kluczowe i wagi w plikach oznaczonych jako Odpowiednie, a kolumny "Wyklucz" zawierają słowa kluczowe i wagi w plikach oznaczonych jako Nieistotne.
   
-Advanced eDiscovery ujemnych lub dodatnich wartości wagi słów kluczowych. Im wyższa waga, tym większe prawdopodobieństwo, że plikowi, w którym znajduje się słowo kluczowe, zostanie przypisany wyższy wynik istotności podczas obliczania partii.
+Funkcja zbierania elektronicznych materiałów dowodowych (Premium) przypisuje ujemne lub dodatnie wartości wagi słowa kluczowego. Im wyższa waga, tym większe prawdopodobieństwo, że plik, w którym pojawia się słowo kluczowe, zostanie przypisany wyższy wynik istotności podczas obliczania usługi Batch.
   
-Lista Advanced eDiscovery słów kluczowych może być używana w celu uzupełnienia listy budowaną przez eksperta lub jako pośredniego sprawdzania sanacji w dowolnym momencie procesu przeglądu pliku.
+Lista materiałów eDiscovery (Premium) słów kluczowych może służyć do uzupełniania listy utworzonej przez eksperta lub jako pośrednia kontrola poczytalności w dowolnym momencie procesu przeglądu pliku.
   
 ### <a name="training-progress"></a>Postęp szkolenia
 
-Okienko **Postęp szkolenia** zawiera wykres postępu szkolenia i wyświetlanie wskaźnika jakości, jak pokazano w poniższym przykładzie.
+Okienko **Postęp trenowania** zawiera wykres postępu trenowania i wskaźnik jakości, jak pokazano w poniższym przykładzie.
   
-![Śledzenie istotności Śledź postęp szkolenia.](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Istotność Śledź postęp trenowania.](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
-**Wskaźnik jakości szkoleń**: Wyświetla klasyfikację spójności otagowania w następujący sposób:
+**Wskaźnik jakości trenowania**: wyświetla ocenę spójności tagowania w następujący sposób:
   
-- **Dobrze**: pliki są otagowane spójnie. (Wyświetlone zielone światło)
+- **Dobra**: pliki są stale oznaczane. (Wyświetlane zielone światło)
   
-- **Średni**: Niektóre pliki mogą być otagowane niespójnie. (Wyświetlone żółte światło)
+- **Średni**: Niektóre pliki mogą być tagowane niespójnie. (Żółte światło wyświetlane)
 
-- **Ostrzeżenie**: Wiele plików może być otagowanych niespójnie. (Zostanie wyświetlone czerwone światło)
+- **Ostrzeżenie**: Wiele plików może być oznakowanych niespójnie. (Wyświetlane czerwone światło)
 
-**Wykres postępu w szkoleniach**: przedstawia stopień stabilności szkolenia według istotności po wielu cyklach szkoleniowych oceny istotności w porównaniu z wartością miary F. Gdy przechodzimy od lewej do prawej strony wykresu, przedział ufności zawęża się i jest używany razem ze miarą F przez Advanced eDiscovery Istotność w celu określenia stabilności po optymalizacji wyników szkolenia na temat istotności.
+**Wykres postępu trenowania**: pokazuje stopień stabilności trenowania istotności po wielu cyklach trenowania istotności w porównaniu z wartością F-measure. Gdy przechodzimy od lewej do prawej strony wykresu, interwał ufności zmniejsza się i jest używany wraz z miarą F przez funkcję eDiscovery (Premium) Istotność, aby określić stabilność, gdy wyniki trenowania istotności zostaną zoptymalizowane.
   
 > [!NOTE]
-> Na podstawie istotności jest używana wartość F2 — metryka miary F, w której odwołanie otrzymuje dwukrotnie większą wagę niż dokładność. W przypadku przypadków o wysokim poziomie wartości (powyżej 25%), istotność ma zastosowanie F1 (stosunek 1:1). Współczynnik miary F można skonfigurować w ustawieniach zaawansowanych Konfiguracja **istotności**\>.
+> Istotność używa F2, metryki miary F, w której funkcja Recall otrzymuje dwa razy większą wagę niż precyzja. W przypadku przypadków o wysokim bogactwie (ponad 25%), w przypadku istotności jest używana wartość F1 (stosunek 1:1). Współczynnik miarY F można skonfigurować w ustawieniach **zaawansowanych** **konfiguracji** \> istotności.
   
-### <a name="batch-calculation-results"></a>Wyniki obliczeń wsadowych
+### <a name="batch-calculation-results"></a>Wyniki obliczeń usługi Batch
 
-Okienko **Wyniki obliczania partii** zawiera liczbę plików, które zostały uzyskane pod uwagę jako istotność, w następujący sposób: 
+Okienko **wyników obliczeń usługi Batch** zawiera liczbę plików, które zostały ocenione pod kątem istotności, w następujący sposób: 
   
 - **Sukces**
   
-- **Puste**: Nie zawiera tekstu, na przykład tylko spacje/tabulatory.
+- **Puste**: nie zawiera tekstu, na przykład tylko spacje/karty
   
-- **Nie powiodło** się: Ze względu na nadmiarowy rozmiar lub nie można było go odczytać
+- **Niepowodzenie**: z powodu nadmiernego rozmiaru lub nie można go odczytać
   
-- **Ignorowane**: ze względu na nadmiarowe rozmiary
+- **Ignorowane**: Ze względu na nadmierny rozmiar
   
-- **Nieumyślne**: zawiera tekst bezsensowny lub nie zawiera funkcji istotnych dla problemu.
+- **Mglisty**: zawiera tekst bez znaczenia lub nie ma żadnych funkcji istotnych dla problemu
   
 > [!NOTE]
-> Puste, Niepowodzenie, Zignorowane lub Nieuważne otrzymają ocenę istotności -1.
+> Wartość Pusta, Nie powiodła się, Zignorowana lub Mglista otrzyma wynik istotności -1.
   
-### <a name="training-statistics"></a>Statystyki dotyczące szkoleń
+### <a name="training-statistics"></a>Statystyki trenowania
 
-W **okienku Statystyka** szkoleń są wyświetlane statystyki i schematy na podstawie wyników Advanced eDiscovery szkolenia dotyczące istotności. 
+W okienku **Statystyki trenowania** są wyświetlane statystyki i wykresy na podstawie wyników trenowania istotności zbierania elektronicznych materiałów dowodowych (Premium). 
   
-![Statystyka śledzenia istotności szkoleń.](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
+![Istotność Śledź statystyki trenowania.](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
-W tym widoku są następujące informacje:
+W tym widoku przedstawiono następujące elementy:
   
-- **Współczynnik odwołania reenzenta**: Porównanie wyników według wyników istotności w przeglądzie liniowym pod względem hipotezy. Odwołanie jest szacowane przy ustawionym rozmiarze zestawu recenzji.
+- **Współczynnik odwołania do przeglądu**: porównanie wyników zgodnie z wynikami istotności w hipotetycznie liniowym przeglądzie. Przywoływanie jest szacowane, biorąc pod uwagę zestaw rozmiarów zestawu przeglądów.
   
-- **Parametry**: Skumulowana obliczona statystyka odnoszące się do zestawu recenzji w odniesieniu do populacji pliku dla całej sprawy.
+- **Parametry**: Skumulowane statystyki obliczeniowe odnoszące się do zestawu przeglądów w odniesieniu do populacji plików dla całego przypadku.
   
-- **Recenzja**: Procent plików do przejrzenia na podstawie tego odciętych plików.
+- **Przegląd**: Procent plików do przejrzenia na podstawie tego odcięcia.
   
-- **Odwołaj**: Procent plików w zestawie recenzji. 
+- **Przypomnij sobie**: procent odpowiednich plików w zestawie przeglądów. 
   
-- **Rozkład według istotności**: Pliki na ciemnoszarym ekranie po lewej stronie znajdują się poniżej wyniku odciętych. Etykietka narzędzia wyświetla wynik istotności i powiązaną wartość procentową plików w zestawie recenzji względem łącznych plików.
+- **Rozkład według wskaźnika istotności**: Pliki na ciemnoszarym ekranie po lewej stronie znajdują się poniżej wyniku odcięcia. Porada narzędzia wyświetla wynik istotności i powiązany procent plików w pliku przeglądu ustawionym w odniesieniu do łącznej liczby plików.

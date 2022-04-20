@@ -1,11 +1,11 @@
 ---
-title: Omówienie Advanced eDiscovery w programie Microsoft 365
+title: Omówienie rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: 04/08/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,138 +18,138 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Poznaj Advanced eDiscovery w programie Microsoft 365. Ten artykuł zawiera omówienie funkcji Advanced eDiscovery w Microsoft 365, narzędziu do zarządzania badaniami wewnętrznymi i zewnętrznymi. Jest także ramą przyczyn biznesowych, z Advanced eDiscovery do zarządzania dochodzeniami  prawnej.
+description: Dowiedz się więcej o rozwiązaniu eDiscovery (Premium) w usłudze Microsoft Purview. Ten artykuł zawiera omówienie zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview— narzędzia ułatwiającego zarządzanie badaniami wewnętrznymi i zewnętrznymi. Określa również przyczyny biznesowe użycia zbierania elektronicznych materiałów dowodowych (Premium) do zarządzania dochodzeniami prawnymi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 769f88b6bd2f3348061a759655c8169e9a8310f5
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 7283adbf179f2d3dd04f45e2be808043e86ff88f
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "62988673"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932072"
 ---
-# <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Omówienie Microsoft 365 Advanced eDiscovery
+# <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Omówienie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)
 
-Rozwiązanie Advanced eDiscovery w aplikacji Microsoft 365 na istniejących możliwościach zbierania elektronicznych materiałów dowodowych i analizy firmy Microsoft. Advanced eDiscovery udostępnia szczegółowe przepływy pracy do zachowywania, zbierania, analizowania, przeglądania i eksportowania zawartości, która odpowiada wewnętrznym i zewnętrznym analizom Twojej organizacji. Umożliwia także zespołom prawnym zarządzanie całym przepływem pracy z powiadomieniem o zerowym zrzeka się w celu skomunikowania się z opiekunami zaangażowanymi w sprawę.
+Rozwiązanie Microsoft Purview eDiscovery (Premium) bazuje na istniejących możliwościach zbierania elektronicznych materiałów dowodowych i analiz firmy Microsoft. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, analizowanie, przeglądanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Umożliwia również zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę.
 
-## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery możliwości
+## <a name="ediscovery-premium-capabilities"></a>Możliwości zbierania elektronicznych materiałów dowodowych (Premium)
 
-Advanced eDiscovery organizacji w odpowiadaniu na sprawy prawne lub badania wewnętrzne, odnajdując dane w miejscu, w którym się znajduje. Możesz bezproblemowo zarządzać przepływami pracy zbierania elektronicznych materiałów dowodowych, identyfikując interesujące ich osoby i ich źródła danych, bezproblemowo stosuje się blokady w celu zachowania danych, a następnie zarządzać procesem komunikacji z zastosowaniem blokady prawnej. Zbierając dane ze źródła, można przeszukiwać live Microsoft 365 platformę, aby szybko znaleźć to, czego potrzebujesz. Inteligentne, maszynowe funkcje uczenia, takie jak indeksowanie dogłębne, wątkowanie wiadomości e-mail i wykrywanie niemal duplikatów, również ułatwiają zmniejszenie dużych ilości danych do odpowiedniego zestawu danych.
+Zbieranie elektronicznych materiałów dowodowych (Premium) może pomóc twojej organizacji w reagowaniu na sprawy prawne lub wewnętrzne dochodzenia, odkrywając dane, w których się znajdują. Przepływami pracy zbierania elektronicznych materiałów dowodowych można bezproblemowo zarządzać, identyfikując osoby zainteresowane i ich źródła danych, bezproblemowo stosuj blokady w celu zachowania danych, a następnie zarządzaj procesem komunikacji z legalną blokadą. Zbierając dane ze źródła, możesz przeszukać platformę Microsoft 365 na żywo, aby szybko znaleźć to, czego potrzebujesz. Inteligentne funkcje uczenia maszynowego, takie jak głębokie indeksowanie, wątkowość wiadomości e-mail i wykrywanie zbliżeń duplikatów, pomagają również ograniczyć duże ilości danych do odpowiedniego zestawu danych.
 
-W poniższych sekcjach opisano, w jaki Advanced eDiscovery te funkcje mogą pomóc Twojej organizacji.
+W poniższych sekcjach opisano, w jaki sposób te funkcje zbierania elektronicznych materiałów dowodowych (Premium) mogą pomóc Twojej organizacji.
 
-![Advanced eDiscovery funkcje.](../media/advanced-ediscovery-capabilities.png)
+![Możliwości zbierania elektronicznych materiałów dowodowych (Premium).](../media/advanced-ediscovery-capabilities.png)
 
-### <a name="discover-and-collect-data-in-place"></a>Odnajdowanie i zbieranie danych w miejscu
+### <a name="discover-and-collect-data-in-place"></a>Odnajdywanie i zbieranie danych w miejscu
 
-Tradycyjne organizacje, które korzystają z wielu rozwiązań zbierania elektronicznych materiałów dowodowych innych firm, wymagają kopiowania dużych ilości danych z Microsoft 365 w celu przetwarzania i hostowania zduplikowanych danych. Ta konieczność zwiększa czas na znalezienie odpowiednich danych oraz ryzyko, koszt i złożoność zarządzania wieloma rozwiązaniami.
+Tradycyjnie organizacje korzystające z wielu rozwiązań zbierania elektronicznych materiałów dowodowych innych firm wymagają kopiowania dużych ilości danych z Microsoft 365 do przetwarzania i konieczności hostowania zduplikowanych danych. Ta konieczność wydłuża czas znajdowania odpowiednich danych oraz ryzyko, koszt i złożoność zarządzania wieloma rozwiązaniami.
 
-Advanced eDiscovery w Microsoft 365 umożliwia odnajdowanie danych w źródle i pozostawanie w granicach Microsoft 365 zabezpieczeń i zgodności.  Zbierając dane w miejscu z systemu live, program Advanced eDiscovery ogranicza problemy z powrotem w źródle i zmniejsza niepotrzebną pracę z wyszukiwaniem brakującej zawartości, co często ma miejsce w przypadku zwłoki w dzienniku w tradycyjnych rozwiązaniach zbierania elektronicznych materiałów dowodowych.
+Funkcja zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365 umożliwia odnajdywanie danych w źródle i pozostawanie w granicach Microsoft 365 zabezpieczeń i zgodności.  Dzięki zbieraniu danych w miejscu z systemu na żywo zbieranie elektronicznych materiałów dowodowych (Premium) zmniejsza tarcie powrotu do źródła i zmniejsza niepotrzebną pracę polegającą na konieczności znajdowania brakujących treści, co często ma miejsce w przypadku opóźnień w dziennikach w tradycyjnych rozwiązaniach zbierania elektronicznych materiałów dowodowych.
 
-Natywne funkcje wyszukiwania i zbierania danych w usługach Teams, Yammer, SharePoint Online, OneDrive dla Firm i Exchange Online jeszcze bardziej usprawniają odnajdowanie danych. Można na przykład Advanced eDiscovery:
+Funkcje natywnego wyszukiwania i zbierania danych w Teams, Yammer, SharePoint Online, OneDrive dla Firm i Exchange Online dodatkowo zwiększają możliwości odnajdywania danych. Na przykład eDiscovery (Premium):
 
-- Odbuduje Teams konwersacji (zamiast zwracać pojedyncze wiadomości z konwersacji).
+- Rekonstruuje Teams konwersacje (zamiast zwracać pojedyncze wiadomości z konwersacji).
 
-- Zbiera zawartość opartą na chmurze udostępnianą użytkownikom, korzystając z linków lub nowoczesnych załączników w wiadomościach e-mail i Teams czatach.
+- Zbiera zawartość opartą na chmurze udostępnioną użytkownikom za pomocą linków lub nowoczesnych załączników w wiadomościach e-mail i czatach Teams.
 
-- Ma wbudowaną obsługę setek niespodziewowych Microsoft 365 typów plików.
+- Ma wbudowaną obsługę setek typów plików innych niż Microsoft 365.
 
-- Zbiera dane z źródeł innych firm (takich jak Bloomberg, Facebook, Slack i Spotkania powiększenia), które są importowane i archiwizowane w programie Microsoft 365 za pomocą [łączników danych](archiving-third-party-data.md).
+- Zbiera dane ze źródeł innych firm (takich jak Bloomberg, Facebook, Slack i Zoom Meetings), które są importowane i archiwizowane w Microsoft 365 za pomocą [łączników danych](archiving-third-party-data.md).
 
 ### <a name="manage-ediscovery-workflow-in-one-platform"></a>Zarządzanie przepływem pracy zbierania elektronicznych materiałów dowodowych na jednej platformie
 
-Advanced eDiscovery może pomóc zmniejszyć liczbę rozwiązań zbierania elektronicznych materiałów dowodowych, na których musisz polegać. Zapewnia usprawniony, końca i końca przepływ pracy, który odbywa się w obrębie Microsoft 365. Advanced eDiscovery pomaga ograniczyć problemy z identyfikowaniem i gromadzeniem potencjalnych źródeł odpowiednich informacji, automatycznie mapując unikatowe i udostępnione źródła danych na odpowiednią osobę (znaną jako wytłaczynia *),* udostępniając raportowanie i analizowanie potencjalnie istotnych danych przed ich zgromadzenium w celu analizy i sprawdzenia.
+Funkcja zbierania elektronicznych materiałów dowodowych (Premium) może pomóc w zmniejszeniu liczby rozwiązań zbierania elektronicznych materiałów dowodowych, na których należy polegać. Zapewnia ona usprawniony, kompleksowy przepływ pracy, który odbywa się w ramach Microsoft 365. Zbieranie elektronicznych materiałów dowodowych (Premium) pomaga w ograniczeniu tarć związanych z identyfikowaniem i zbieraniem potencjalnych źródeł odpowiednich informacji przez automatyczne mapowanie unikatowych i udostępnionych źródeł danych na osobę zainteresowaną (znaną jako *opiekun*) oraz przez dostarczanie raportów i analiz na temat potencjalnie istotnych danych przed zebraniem ich do analizy i przeglądu.
 
-Ponadto interfejsy API usługi Microsoft Graph mogą ułatwić automatyzowanie przepływu pracy zbierania elektronicznych materiałów dowodowych i rozszerzanie zakresu Advanced eDiscovery rozwiązania niestandardowe.
+Ponadto interfejsy API Graph firmy Microsoft mogą pomóc w zautomatyzowaniu przepływu pracy zbierania elektronicznych materiałów dowodowych i rozszerzeniu eDiscovery (Premium) dla rozwiązań niestandardowych.
 
-### <a name="cull-data-intelligently"></a>Inteligentnie zmylić dane
+### <a name="cull-data-intelligently"></a>Inteligentnie usuwaj dane
 
-Inteligentne funkcje uczenia maszynowego Advanced eDiscovery pomagają zmniejszyć ilość danych do przejrzenia. Te inteligentne funkcje pomagają zmniejszyć duże ilości danych do odpowiedniego zestawu i określić, że są one podpowiedne. Na przykład wbudowane zapytanie zestawu recenzji pomaga filtrować tylko w celu zidentyfikowania niemal duplikatów w celu filtrowania tylko w celu zidentyfikowania unikatowej zawartości. Funkcja ta może znacznie zmniejszyć ilość danych do przejrzenia.
+Inteligentne możliwości uczenia maszynowego w zakresie zbierania elektronicznych materiałów dowodowych (Premium) pomagają zmniejszyć ilość danych do przejrzenia. Te inteligentne możliwości pomagają ograniczyć i zlikwidować duże ilości danych do odpowiedniego zestawu. Na przykład wbudowane zapytanie zestawu przeglądów pomaga filtrować tylko unikatową zawartość, identyfikując zbliżona do duplikatów. Ta funkcja może znacznie zmniejszyć ilość danych do przejrzenia.
 
-Dodatkowe funkcje uczenia maszynowego mogą dodatkowo uściślić i zidentyfikować odpowiednie dane przy użyciu tagów inteligentnych i narzędzi do przeglądu, takich jak moduły oceny istotności.
+Dodatkowe możliwości uczenia maszynowego mogą dodatkowo udoskonalić i zidentyfikować odpowiednie dane przy użyciu tagów inteligentnych i narzędzi do przeglądu wspomaganych technologią, takich jak moduły istotności.
 
-## <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Advanced eDiscovery wyrównania z edytowym modelem odwołania do odnajdowania
+## <a name="ediscovery-premium-alignment-with-the-electronic-discovery-reference-model"></a>Wyrównanie zbierania elektronicznych materiałów dowodowych (Premium) do modelu referencyjnego odnajdywania elektronicznego
 
-Wbudowany przepływ pracy programu Advanced eDiscovery w programie Microsoft 365 jest dopasowany do procesu zbierania elektronicznych materiałów dowodowych opisanego w modelu EDRM (Electronic Discovery Reference Model).
+Wbudowany przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365 jest zgodny z procesem zbierania elektronicznych materiałów dowodowych opisanym przez model referencyjny odnajdywania elektronicznego (EDRM).
 
-![EDRM (Electronic Discovery Reference Model).](../media/EDRMv2.png)
+![Model referencyjny odnajdywania elektronicznego (EDRM).](../media/EDRMv2.png)
 
-(Obraz oparty na modelu usługi EDRM opartym na edrm.net)
+(Obraz oparty na modelu EDRM na edrm.net)
 
-Poniżej opisano, jak można Advanced eDiscovery przepływ pracy usługi EDRM:
+Na wysokim poziomie poniżej przedstawiono sposób, w jaki funkcja zbierania elektronicznych materiałów dowodowych (Premium) obsługuje przepływ pracy EDRM:
 
-- **Identyfikacja.** Po zidentyfikowaniu potencjalnych osób, które interesują się badaniem, można je dodać jako osoby schłodne (nazywane również elementami przechowywania *danych, ponieważ* mogą one posiadać informacje istotne dla badania) do sprawy Advanced eDiscovery przypadku. Po dodaniu użytkowników jako osób, które się w nich znajdują, można łatwo zachowywać, gromadzić i przeglądać dokumenty tego użytkownika.
+- **Identyfikacji.** Po zidentyfikowaniu potencjalnych osób zainteresowanych dochodzeniem można dodać je jako opiekunów (nazywanych również *opiekunami danych*, ponieważ mogą one posiadać informacje istotne dla dochodzenia) do sprawy zbierania elektronicznych materiałów dowodowych (Premium). Po dodaniu użytkowników jako opiekunów można łatwo zachować, zebrać i przejrzeć dokumenty opiekuna.
 
-- **Zachowywanie.** Aby zachować i chronić dane związane z prowadzonym badaniem, funkcja Advanced eDiscovery umożliwia zastosowanie prawnych zasobów danych skojarzonych z elementami przechwytcyjnymi w przypadku sprawy. Możesz także umieścić dane, dla których nie zależy od typu danych, w a także umieścić je w hold. Advanced eDiscovery ma również wbudowany przepływ pracy do komunikacji, dzięki czemu można wysyłać powiadomienia o wstrzymaniu ze stanu prawnego do osób, które się w nich znajduje, i śledzić ich potwierdzenia.
+- **Zachowania.** Aby zachować i chronić dane istotne dla dochodzenia, zbieranie elektronicznych materiałów dowodowych (Premium) umożliwia wstrzymanie prawnych źródeł danych skojarzonych z opiekunami w danym przypadku. Możesz również wstrzymać dane nienadzorowanie. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) ma również wbudowany przepływ pracy komunikacji, dzięki czemu można wysyłać powiadomienia o blokadzie prawnej do opiekunów i śledzić ich potwierdzenia.
 
-- **Kolekcja.** Po zidentyfikowaniu (i zachowaniu) źródeł danych istotnych dla badania możesz użyć wbudowanego narzędzia wyszukiwania w programie Advanced eDiscovery do wyszukiwania i zbierania danych na żywo z źródeł danych przewczyczych (oraz z źródeł danych niebędące źródłem danych, jeśli ma to zastosowanie), które mogą być istotne w danej sytuacji.
+- **Kolekcji.** Po zidentyfikowaniu (i zachowaniu) źródeł danych istotnych dla badania można użyć wbudowanego narzędzia wyszukiwania w usłudze eDiscovery (Premium) w poszukiwaniu i zbieraniu danych na żywo ze źródeł danych będących osobami nadzorującymi (i źródeł danych bez nadzoru, jeśli ma to zastosowanie), które mogą być istotne dla sprawy.
 
-- **Przetwarzanie.** Po zebraniu wszystkich danych dotyczących sprawy kolejnym krokiem jest przetwarzanie tych danych w celu ich dalszego przejrzenia i analizy. W Advanced eDiscovery danych w miejscu wskazanych w fazie kolekcji są kopiowane do lokalizacji usługi Azure Storage (nazywanej zestawem recenzji *), która* zapewnia statyczny widok danych sprawy. 
+- **Przetwarzania.** Po zebraniu wszystkich danych istotnych dla sprawy następnym krokiem jest przetworzenie ich w celu dalszego przeglądu i analizy. W obszarze eDiscovery (Premium) dane w miejscu zidentyfikowane w fazie zbierania są kopiowane do lokalizacji Storage platformy Azure (nazywanej *zestawem przeglądów*), co zapewnia statyczny widok danych sprawy. 
 
-- **Przejrzyj.** Po dodaniu danych do zestawu recenzji możesz wyświetlać określone dokumenty i uruchamiać dodatkowe zapytania, aby ograniczyć dane do tego, co jest najbardziej istotne dla danej sprawy. Ponadto można dodać adnotacje do określonych dokumentów i oznaczyć je tagiem.
+- **Który napisze recenzję.** Po dodaniu danych do zestawu przeglądów można wyświetlać określone dokumenty i uruchamiać dodatkowe zapytania, aby ograniczyć dane do tego, co jest najbardziej istotne w tym przypadku. Ponadto można adnotować i oznaczać określone dokumenty.
 
-- **Analiza.** Advanced eDiscovery udostępnia zintegrowane narzędzie analityczne, które pomaga w dalszym pomylić dane z zestawu recenzji, który ustalisz, nie jest istotny dla badania. Oprócz zmniejszenia ilości istotnych danych, advance eDiscovery pomaga również zaoszczędzić koszty przeglądu prawnego, pozwalając na organizowanie zawartości w celu ułatwienia i wydajniejszego procesu przeglądu.
+- **Analizę.** Funkcja zbierania elektronicznych materiałów dowodowych (Premium) udostępnia zintegrowane narzędzie analityczne, które pomaga w dalszym usuwaniu danych z zestawu przeglądów, który nie ma znaczenia dla badania. Oprócz zmniejszenia ilości odpowiednich danych usługa Advance eDiscovery pomaga również zaoszczędzić koszty przeglądu prawnego, umożliwiając organizowanie zawartości w celu ułatwienia i zwiększenia wydajności procesu przeglądu.
 
-- **Produkcja** i **prezentacja.** Gdy wszystko będzie gotowe, możesz wyeksportować dokumenty z zestawu recenzji do przeglądu prawnego. Możesz wyeksportować dokumenty w ich natywnym formacie lub w określonym formacie usługi EDRM, aby można je było zaimportować do aplikacji do rerecenzentów innych firm.
+- **Produkcja** i **prezentacja.** Gdy wszystko będzie gotowe, możesz wyeksportować dokumenty z zestawu przeglądów do przeglądu prawnego. Dokumenty można eksportować w formacie natywnym lub w formacie określonym przez EDRM, aby można je było zaimportować do aplikacji przeglądowych innych firm.
 
 ## <a name="subscriptions-and-licensing"></a>Subskrypcje i licencjonowanie
 
-Licencjonowanie Advanced eDiscovery wymaga odpowiedniej subskrypcji organizacji i licencjonowania na użytkownika.
+Licencjonowanie zbierania elektronicznych materiałów dowodowych (Premium) wymaga odpowiedniej subskrypcji organizacji i licencjonowania dla poszczególnych użytkowników.
 
-- **Subskrypcja organizacji:** Aby można było Advanced eDiscovery w Centrum zgodności platformy Microsoft 365, organizacja musi mieć jedną z następujących czynności:
+- **Subskrypcja organizacji:** Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Premium) w portalu zgodności usługi Microsoft Purview, organizacja musi mieć jedną z następujących funkcji:
 
   - subskrypcję platformy Microsoft 365 E5 lub pakietu Office 365 E5;
   
   - subskrypcję platformy Microsoft 365 E3 z dodatkiem E5 Compliance;
 
-  - Microsoft 365 E3 subskrypcji zbierania elektronicznych materiałów dowodowych E5 i dodatku Inspekcja
+  - Microsoft 365 E3 subskrypcji z dodatkiem E5 eDiscovery and Audit
 
-  - Microsoft 365 Education A5 lub Office 365 Education A5
+  - subskrypcja Microsoft 365 Education A5 lub Office 365 Education A5
 
-   Jeśli nie masz jeszcze planu usługi Microsoft 365 E5 i chcesz wypróbować usługę Advanced eDiscovery, możesz dodać usługę [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) do istniejącej subskrypcji lub utworzyć konto w celu wypróbowania usługi Microsoft 365 E5[](https://www.microsoft.com/microsoft-365/enterprise).
+   Jeśli nie masz istniejącego planu Microsoft 365 E5 i chcesz spróbować zbierania elektronicznych materiałów dowodowych (Premium), możesz [dodać Microsoft 365](/office365/admin/try-or-buy-microsoft-365) do istniejącej subskrypcji lub [utworzyć konto próbne](https://www.microsoft.com/microsoft-365/enterprise) Microsoft 365 E5.
 
-- **Licencjonowanie na użytkownika:** Aby dodać użytkownika jako opiekuna podczas zaawansowanej sprawy zbierania elektronicznych materiałów dowodowych, ten użytkownik musi mieć przypisaną jedną z następujących licencji, w zależności od subskrypcji twojej organizacji:
+- **Licencjonowanie na użytkownika:** Aby dodać użytkownika jako opiekuna w przypadku zbierania elektronicznych materiałów dowodowych z wyprzedzeniem, użytkownikowi musi zostać przypisana jedna z następujących licencji, w zależności od subskrypcji organizacji:
 
   - Microsoft 365: Użytkownikom należy przypisać jedną z następujących czynności:
   
-    - Microsoft 365 E5 E5, licencja na dodatek Zgodności E5 lub dodatek Zbierania elektronicznych materiałów dowodowych i inspekcji E5
+    - Microsoft 365 E5 licencji, licencji dodatku E5 Compliance lub dodatku E5 eDiscovery and Audit
 
-    - Microsoft 365 Frontline musi mieć przypisany dodatek Zgodności F5 lub F5 Security & Compliance
+    - Microsoft 365 użytkownicy linii frontu muszą mieć przypisany dodatek F5 Compliance lub F5 Security & Compliance
 
     - Microsoft 365 Education użytkownicy muszą mieć przypisaną licencję A5
 
-  - Office 365: Użytkownicy muszą mieć przypisaną licencję Office 365 E5 lub Office 365 Education A5.
+  - Office 365: użytkownicy muszą mieć przypisaną licencję Office 365 E5 lub Office 365 Education A5.
 
-Aby uzyskać informacje na temat licencjonowania, pobierz i zobacz sekcję "Zbierania elektronicznych materiałów dowodowych i inspekcji" w tabeli Microsoft 365 [porównania](https://go.microsoft.com/fwlink/?linkid=2139145).
+Aby uzyskać informacje na temat licencjonowania, pobierz i zobacz sekcję "eDiscovery and auditing" (Wykrywanie elektroniczne i inspekcja) w [tabeli porównania Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 Aby uzyskać informacje na temat przypisywania licencji, zobacz [Przypisywanie licencji do użytkowników](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 > [!NOTE]
-> Użytkownicy muszą mieć tylko licencję E5 lub A5 (lub odpowiednią licencję dodatkową) do dodania ich jako opiekunów do Advanced eDiscovery przypadku. Administratorzy IT, menedżerowie zbierania elektronicznych materiałów dowodowych, osoby słoje, prawnicy lub osoby, które używają programu Advanced eDiscovery do zarządzania sprawami i przeglądania danych spraw, nie potrzebują licencji usługi E5, A5 ani dodatku.
+> Użytkownicy potrzebują tylko licencji E5 lub A5 (lub odpowiedniej licencji dodatku), która ma zostać dodana jako opiekunowie do sprawy zbierania elektronicznych materiałów dowodowych (Premium). Administratorzy IT, menedżerowie zbierania elektronicznych materiałów dowodowych, prawnicy, paralegals lub śledczy, którzy używają eDiscovery (Premium) do zarządzania sprawami i przeglądania danych sprawy nie potrzebują licencji E5, A5 lub dodatku.
 
-## <a name="get-started-with-advanced-ediscovery"></a>Wprowadzenie do Advanced eDiscovery
+## <a name="get-started-with-ediscovery-premium"></a>Wprowadzenie zbierania elektronicznych materiałów dowodowych (Premium)
 
-Istnieją dwa szybkie i łatwe kroki rozpoczynania pracy z Advanced eDiscovery.
+Istnieją dwa szybkie i łatwe kroki, aby rozpocząć pracę zbierania elektronicznych materiałów dowodowych (Premium).
 
-![Wprowadzenie do przepływu pracy Advanced eDiscovery.](../media/get-started-AeD.png)
+![Wprowadzenie do przepływu pracy zbierania elektronicznych materiałów dowodowych (Premium).](../media/get-started-AeD.png)
 
 |Kroki  |Opis  |
 |:---------|:---------|
-|[Konfigurowanie Advanced eDiscovery](get-started-with-advanced-ediscovery.md)| Po zweryfikowaniu wymagań dotyczących subskrypcji i licencjonowania możesz przypisać uprawnienia i skonfigurować ustawienia dla całej organizacji, aby rozpocząć korzystanie z Advanced eDiscovery.|
-|[Tworzenie spraw i zarządzanie nimi](create-and-manage-advanced-ediscoveryv2-case.md) | Twórz sprawy, aby zarządzać przepływem Advanced eDiscovery wszystkich prawnych i innych rodzajów spraw prowadzonych w organizacji.|
+|[Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md)| Po zweryfikowaniu wymagań dotyczących subskrypcji i licencjonowania możesz przypisać uprawnienia i skonfigurować ustawienia dla całej organizacji, aby rozpocząć pracę zbierania elektronicznych materiałów dowodowych (Premium).|
+|[Tworzenie spraw i zarządzanie nimi](create-and-manage-advanced-ediscoveryv2-case.md) | Tworzenie spraw do zarządzania przepływem pracy zbierania elektronicznych materiałów dowodowych (Premium) dla wszystkich prawnych i innych typów dochodzeń w organizacji.|
 |||
 
-## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscovery architekturze
+## <a name="ediscovery-premium-architecture"></a>Architektura zbierania elektronicznych materiałów dowodowych (Premium)
 
-Oto diagram architektury Advanced eDiscovery, który przedstawia uniwersalny przepływ pracy w środowisku jednolokalizacji i w środowisku wieloosobowym oraz przepływ danych, który jest wyrównany do usługi [EDRM](#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model).
+Oto diagram architektury zbierania elektronicznych materiałów dowodowych (Premium), który przedstawia kompleksowy przepływ pracy w środowisku z pojedynczym obszarem geograficznym i w środowisku z wieloma lokalizacjami geograficznymi oraz kompleksowy przepływ danych zgodny z modułem [EDRM](#ediscovery-premium-alignment-with-the-electronic-discovery-reference-model).
 
-[![Plakat modelu: architektura Advanced eDiscovery w Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Plakat modelu: Architektura zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Wyświetl jako obraz](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
-[Pobierz jako plik PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+[Pobieranie jako pliku PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
-[Pobierz jako plik Visio pliku](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+[Pobierz jako plik Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
 
 ## <a name="training"></a>Szkolenia
 
-Szkolenie administratorów informatycznych, menedżerów zbierania elektronicznych materiałów dowodowych i zespołów ds. zgodności w zakresie podstaw programu Advanced eDiscovery może ułatwić organizacji szybkie rozpoczynanie korzystania z narzędzi zbierania elektronicznych materiałów dowodowych w Microsoft 365. Microsoft 365 udostępnia następujące zasoby, które pomogą tym użytkownikom w organizacji rozpocząć pracę z usługą zbierania elektronicznych materiałów dowodowych: Opis funkcji zbierania elektronicznych materiałów dowodowych i [inspekcji w programie Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Szkolenie administratorów IT, menedżerów zbierania elektronicznych materiałów dowodowych i zespołów ds. badania zgodności w podstawach zbierania elektronicznych materiałów dowodowych (Premium) może pomóc organizacji szybciej rozpocząć pracę przy użyciu Microsoft 365 narzędzi zbierania elektronicznych materiałów dowodowych. Microsoft 365 udostępnia następujący zasób, który ułatwia tym użytkownikom w organizacji rozpoczęcie pracy zbierania elektronicznych materiałów dowodowych: [Opis możliwości zbierania elektronicznych materiałów dowodowych i inspekcji Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

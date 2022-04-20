@@ -1,5 +1,5 @@
 ---
-title: Tworzenie, tworzenie raportów i usuwanie wielu przeszukiwań zawartości
+title: Tworzenie, raportowanie i usuwanie wyszukiwania zawartości
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,36 +17,36 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Dowiedz się, jak zautomatyzować zadania związane z wyszukiwaniem zawartości, takie jak tworzenie wyszukiwań i uruchamianie raportów za pomocą programu PowerShell & Centrum zabezpieczeń i zgodności.
+description: Dowiedz się, jak zautomatyzować zadania wyszukiwania zawartości, takie jak tworzenie wyszukiwań i uruchamianie raportów przy użyciu programu PowerShell Centrum zgodności & zabezpieczeń.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 602997114c46a68be13182a504d0b123e98d2be2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06ea7655348851cbd457b527a3ee36f72d78e562
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985470"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936868"
 ---
-# <a name="create-report-on-and-delete-multiple-content-searches"></a>Tworzenie, tworzenie raportów i usuwanie wielu przeszukiwań zawartości
+# <a name="create-report-on-and-delete-multiple-content-searches"></a>Tworzenie, raportowanie i usuwanie wielu wyszukiwań zawartości
 
- Szybkie tworzenie i zgłaszanie wyszukiwań odnajdowania często jest ważnym krokiem podczas zbierania elektronicznych materiałów dowodowych i badań, gdy próbujesz uzyskać informacje na temat danych źródłowych oraz bogatych i wysokiej jakości wyszukiwań. Aby to ułatwić, program PowerShell & zabezpieczeń i zgodności oferuje zestaw poleceń cmdlet do automatyzowania czasochłonnych zadań przeszukiwania zawartości. Te skrypty zapewniają szybki i łatwy sposób tworzenia wielu wyszukiwań, a następnie uruchamiania raportów dotyczących szacowanych wyników wyszukiwania, które mogą pomóc w ustaleniu ilości danych, o których mowa. Możesz również użyć skryptów, aby utworzyć różne wersje wyszukiwań w celu porównania wyników, które daje każda z nich. Te skrypty mogą ułatwić szybkie i wydajne identyfikowanie i poprawianie danych.
+ Szybkie tworzenie i raportowanie wyszukiwań odnajdywania jest często ważnym krokiem w procesie zbierania elektronicznych materiałów dowodowych i badań, gdy próbujesz dowiedzieć się więcej o danych bazowych oraz o bogactwie i jakości wyszukiwań. Aby to ułatwić, program PowerShell & Security & Compliance Center oferuje zestaw poleceń cmdlet do automatyzacji czasochłonnych zadań wyszukiwania zawartości. Te skrypty umożliwiają szybkie i łatwe tworzenie wielu wyszukiwań, a następnie uruchamianie raportów o szacowanych wynikach wyszukiwania, które mogą pomóc w określeniu danej ilości danych. Możesz również użyć skryptów, aby utworzyć różne wersje wyszukiwań, aby porównać wyniki, które każdy z nich generuje. Te skrypty mogą pomóc w szybkim i wydajnym identyfikowaniu i usuwaniu danych.
 
-## <a name="before-you-create-a-content-search"></a>Przed utworzeniem przeszukiwania zawartości
+## <a name="before-you-create-a-content-search"></a>Przed utworzeniem wyszukiwania zawartości
 
-- Aby uruchamiać skrypty opisane w tym temacie, musisz być członkiem grupy ról Menedżer zbierania elektronicznych materiałów dowodowych w grupie Centrum zgodności platformy Microsoft 365.
+- Aby uruchomić skrypty opisane w tym temacie, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview.
 
-- Aby zebrać listę adresów URL witryn usługi OneDrive dla Firm w organizacji, które można dodać do pliku CSV w kroku 1, zobacz Tworzenie listy wszystkich OneDrive lokalizacji w [organizacji](/onedrive/list-onedrive-urls).
+- Aby zebrać listę adresów URL witryn OneDrive dla Firm w organizacji, które można dodać do pliku CSV w kroku 1, zobacz [Tworzenie listy wszystkich OneDrive lokalizacji w organizacji](/onedrive/list-onedrive-urls).
 
-- Pamiętaj o zapisaniu wszystkich plików tworzyć w tym temacie w tym samym folderze. Ułatwi to uruchamianie skryptów.
+- Pamiętaj, aby zapisać wszystkie pliki utworzone w tym temacie w tym samym folderze. Ułatwi to uruchamianie skryptów.
 
-- Skrypty zawierają minimalną obsługę błędów. Ich głównym celem jest szybkie tworzenie, tworzenie raportów i usuwanie wielu przeszukiwań zawartości.
+- Skrypty obejmują minimalną obsługę błędów. Ich głównym celem jest szybkie tworzenie, raportowanie i usuwanie wielu wyszukiwań zawartości.
 
-- Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu lub usługi pomocy technicznej firmy Microsoft. Przykładowe skrypty są dostarczane W JAKIM JEST bez jakiejkolwiek gwarancji. Firma Microsoft dodatkowo nie udziela żadnych dorozumianych gwarancji, w tym, ale nie wyłącznie, żadnych dorozumianych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko związane z użyciem lub wykonaniem przykładowych skryptów i dokumentacji pozostaje tylko dla użytkownika. Firma Microsoft, jej autorzy ani nikt inny biorący udział w tworzeniu, produkcji lub dostarczaniu skryptów nie będą w żadnym wypadku ponosić odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody związane z utratą zysków, przerwami w działaniu firmy, utratą informacji biznesowych lub inne straty pieniężne) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub nieumiejętnego korzystania z tych skryptów lub dokumentacji.  nawet jeśli firma Microsoft została powiadomiona o możliwości wystąpienia takich szkód.
+- Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowe skrypty są dostarczane jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowych skryptów i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Krok 1. Tworzenie pliku CSV zawierającego informacje o wyszukiwaniach, które mają zostać uruchomione
+## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Krok 1. Tworzenie pliku CSV zawierającego informacje o wyszukiwaniach, które chcesz uruchomić
 
-Plik wartości rozdzielanych przecinkami (CSV) dzielony w tym kroku zawiera wiersz dla każdego użytkownika, którego chcesz wyszukać. Możesz przeszukać skrzynkę pocztową Exchange Online (która zawiera archiwalne skrzynki pocztowe, jeśli jest włączona) i witrynę OneDrive dla Firm pocztowej. Możesz również przeszukać tylko skrzynkę pocztową lub witrynę OneDrive dla Firm. Możesz również przeszukać dowolną witrynę w organizacji usługi SharePoint online. Skrypt uruchomiony w kroku 3 spowoduje utworzenie oddzielnego wyszukiwania dla każdego wiersza w pliku CSV.
+Plik wartości rozdzielanej przecinkami (CSV) utworzony w tym kroku zawiera wiersz dla każdego użytkownika, który chce wyszukać. Możesz przeszukać Exchange Online skrzynkę pocztową użytkownika (w tym skrzynkę pocztową archiwum, jeśli jest włączona) i jego OneDrive dla Firm witrynę. Możesz też wyszukać tylko skrzynkę pocztową lub witrynę OneDrive dla Firm. Możesz również wyszukać dowolną witrynę w organizacji usługi SharePoint Online. Skrypt uruchamiany w kroku 3 utworzy oddzielne wyszukiwanie każdego wiersza w pliku CSV.
 
-1. Skopiuj poniższy tekst i wklej go do pliku .txt notatnika. Zapisz ten plik w folderze na komputerze lokalnym. Zapiszesz również pozostałe skrypty w tym folderze.
+1. Skopiuj i wklej następujący tekst do pliku .txt przy użyciu Notatnika. Zapisz ten plik w folderze na komputerze lokalnym. Zapiszesz również inne skrypty w tym folderze.
 
    ```text
    ExchangeLocation,SharePointLocation,ContentMatchQuery,StartDate,EndDate
@@ -58,38 +58,38 @@ Plik wartości rozdzielanych przecinkami (CSV) dzielony w tym kroku zawiera wier
    ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
    ```
 
-   Pierwszy wiersz w pliku, czyli wiersz nagłówka, zawiera parametry używane przez polecenie cmdlet **New-ComplianceSearch** (w skrypcie w kroku 3) do tworzenia nowych wyszukiwań zawartości. Poszczególne nazwy parametrów są rozdzielone przecinkami. Upewnij się, że w wierszu nagłówka nie ma spacji. Każdy wiersz poniżej wiersza nagłówka reprezentuje wartości parametrów dla każdego wyszukiwania. Pamiętaj, aby zamienić dane zastępcze w pliku CSV na rzeczywiste dane.
+   Pierwszy wiersz pliku lub wiersz nagłówka zawiera listę parametrów, które będą używane przez polecenie cmdlet **New-ComplianceSearch** (w skrypcie w kroku 3) w celu utworzenia nowego wyszukiwania zawartości. Każda nazwa parametru jest oddzielona przecinkiem. Upewnij się, że w wierszu nagłówka nie ma żadnych spacji. Każdy wiersz w wierszu nagłówka reprezentuje wartości parametrów dla każdego wyszukiwania. Pamiętaj, aby zastąpić dane zastępcze w pliku CSV rzeczywistymi danymi.
 
-2. Otwórz .txt pliku w programie Excel, a następnie użyj informacji z poniższej tabeli, aby edytować plik z informacjami dla każdego wyszukiwania.
+2. Otwórz plik .txt w Excel, a następnie użyj informacji w poniższej tabeli, aby edytować plik z informacjami dla każdego wyszukiwania.
 
    ****
 
    |Parametr|Opis|
    |---|---|
    |`ExchangeLocation`|Adres SMTP skrzynki pocztowej użytkownika.|
-   |`SharePointLocation`|Adres URL witryny OneDrive dla Firm lub adres URL dowolnej witryny w organizacji. Aby uzyskać adres URL OneDrive dla Firm witryn, użyj tego formatu: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Na przykład . `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`|
-   |`ContentMatchQuery`|Zapytanie wyszukiwania dla tego wyszukiwania. Aby uzyskać więcej informacji na temat tworzenia zapytania wyszukiwania, zobacz Zapytania słów kluczowych [i warunki wyszukiwania dotyczące wyszukiwania zawartości](keyword-queries-and-search-conditions.md).|
-   |`StartDate`|W przypadku wiadomości e-mail jest to data, kiedy wiadomość została odebrana przez adresata lub wysłana przez nadawcę. W przypadku dokumentów SharePoint lub OneDrive dla Firm internetowych data ostatniej modyfikacji dokumentu lub późniejsza.|
-   |`EndDate`|W przypadku wiadomości e-mail jest to data, do dnia lub przed wysłaniem wiadomości przez użytkownika. W przypadku dokumentów SharePoint lub OneDrive dla Firm internetowych data ostatniej modyfikacji dokumentu lub przed nim.|
+   |`SharePointLocation`|Adres URL witryny OneDrive dla Firm użytkownika lub adres URL dowolnej witryny w organizacji. Aby uzyskać adres URL witryny OneDrive dla Firm, użyj następującego formatu: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Na przykład  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
+   |`ContentMatchQuery`|Zapytanie wyszukiwania dla wyszukiwania. Aby uzyskać więcej informacji na temat tworzenia zapytania wyszukiwania, zobacz [Zapytania słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).|
+   |`StartDate`|W przypadku wiadomości e-mail data odebrania wiadomości lub po jej odebraniu przez adresata lub wysłaniu przez nadawcę. W przypadku dokumentów w witrynach SharePoint lub OneDrive dla Firm data ostatniej modyfikacji dokumentu lub po jej zakończeniu.|
+   |`EndDate`|W przypadku wiadomości e-mail data wysłania wiadomości lub przed jej wysłaniem przez użytkownika. W przypadku dokumentów w witrynach SharePoint lub OneDrive dla Firm data ostatniej modyfikacji dokumentu lub przed tym dokumentem.|
    |
 
-3. Zapisz Excel jako plik CSV w folderze na komputerze lokalnym. Skrypt, który utworzysz w kroku 3, użyje informacji z tego pliku CSV do utworzenia wyszukiwań.
+3. Zapisz plik Excel jako plik CSV w folderze na komputerze lokalnym. Skrypt utworzony w kroku 3 użyje informacji zawartych w tym pliku CSV do utworzenia wyszukiwań.
 
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Krok 2. Połączenie do programu PowerShell w & zabezpieczeń i zgodności
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Krok 2. Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń
 
-Następnym krokiem jest połączenie się z programem PowerShell & zabezpieczeń w organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell & centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+Następnym krokiem jest nawiązanie połączenia z programem PowerShell Centrum zgodności usługi Security & dla organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
-## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Krok 3. Uruchamianie skryptu w celu utworzenia i rozpoczęcia wyszukiwań
+## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Krok 3. Uruchamianie skryptu w celu utworzenia i rozpoczęcia wyszukiwania
 
-Skrypt w tym kroku utworzy osobne wyszukiwanie zawartości dla każdego wiersza w pliku CSV utworzonym w kroku 1. Po uruchomieniu tego skryptu zostanie wyświetlony monit o wartości:
+Skrypt w tym kroku utworzy oddzielne wyszukiwanie zawartości dla każdego wiersza w pliku CSV utworzonym w kroku 1. Po uruchomieniu tego skryptu zostanie wyświetlony monit o podanie dwóch wartości:
 
-- **Identyfikator grupy wyszukiwania** — ta nazwa zapewnia łatwy sposób organizowania wyszukiwań utworzonych na podstawie pliku CSV. Każde utworzone wyszukiwanie ma nazwę z identyfikatorem grupy wyszukiwania, a następnie do nazwy wyszukiwania jest dołączany numer. Jeśli na przykład dla identyfikatora grupy wyszukiwania zostanie w wprowadzeniu nazwy **ContosoCase** , wyszukiwania będą nosiły nazwy **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3** i tak dalej. Pamiętaj, że w wpisanych nazwach jest wana wielkość liter. Jeśli używasz identyfikatora grupy wyszukiwania w krokach 4 i 5, musisz użyć tej samej sprawy, co podczas tworzenia.
+- **Identyfikator grupy wyszukiwania** — ta nazwa umożliwia łatwe organizowanie wyszukiwań utworzonych na podstawie pliku CSV. Każde utworzone wyszukiwanie ma nazwę z identyfikatorem grupy wyszukiwania, a następnie do nazwy wyszukiwania jest dołączana liczba. Jeśli na przykład wprowadzisz ciąg **ContosoCase** dla identyfikatora grupy wyszukiwania, wyszukiwania będą nazywane **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3** itd. Należy pamiętać, że wpisana nazwa uwzględnia wielkość liter. Jeśli używasz identyfikatora grupy wyszukiwania w krokach 4 i 5, musisz użyć tego samego przypadku, co podczas jego tworzenia.
 
-- **Plik CSV** — nazwa pliku CSV utworzonego w kroku 1. Pamiętaj, aby dołączyć pełną nazwę pliku, dołączyć rozszerzenie .csv pliku; na przykład  `ContosoCase.csv`.
+- **Plik CSV** — nazwa pliku CSV utworzonego w kroku 1. Pamiętaj, aby uwzględnić użycie pełnej nazwy pliku, dołącz rozszerzenie .csv pliku; na przykład  `ContosoCase.csv`.
 
 Aby uruchomić skrypt:
 
-1. Zapisz poniższy tekst w pliku skryptu Windows PowerShell, używając sufiksu nazwy pliku programu .ps1, `CreateSearches.ps1`na przykład . Zapisz plik w tym samym folderze, w którym zapisano inne pliki.
+1. Zapisz następujący tekst w pliku skryptu Windows PowerShell przy użyciu sufiksu nazwy pliku .ps1, `CreateSearches.ps1`na przykład . Zapisz plik w tym samym folderze, w którym zostały zapisane inne pliki.
 
    ```Powershell
    # Get the Search Group ID and the location of the CSV input file
@@ -166,27 +166,27 @@ Aby uruchomić skrypt:
    }
    ```
 
-2. W Windows PowerShell przejdź do folderu, w którym został zapisany skrypt w poprzednim kroku, a następnie uruchom skrypt, na przykład:
+2. W Windows PowerShell przejdź do folderu, w którym zapisano skrypt w poprzednim kroku, a następnie uruchom skrypt, na przykład:
 
    ```Powershell
    .\CreateSearches.ps1
    ```
 
-3. W **wierszu monitu Identyfikator** grupy wyszukiwania wpisz nazwę grupy wyszukiwania, a następnie naciśnij klawisz **Enter**. na przykład  `ContosoCase`. Pamiętaj, że w tej nazwie jest wróżniana wielkość liter, więc w kolejnych krokach będzie konieczne wpisanie jej w taki sam sposób.
+3. W wierszu polecenia **Identyfikator grupy wyszukiwania** wpisz nazwę grupy wyszukiwania, a następnie naciśnij **klawisz Enter**; na przykład  `ContosoCase`. Należy pamiętać, że ta nazwa uwzględnia wielkość liter, więc w kolejnych krokach należy wpisać ją w taki sam sposób.
 
-4. W **wierszu monitu** o źródłowy plik CSV wpisz nazwę pliku CSV wraz z rozszerzeniem pliku .csv pliku. na przykład  `ContosoCase.csv`.
+4. W wierszu polecenia **źródłowego pliku CSV** wpisz nazwę pliku CSV, w tym rozszerzenie pliku .csv; na przykład  `ContosoCase.csv`.
 
 5. Naciśnij **klawisz Enter** , aby kontynuować uruchamianie skryptu.
 
-   Skrypt wyświetla postęp tworzenia i uruchamiania wyszukiwań. Po ukończeniu skryptu powróci on do wiersza polecenia.
+   Skrypt wyświetla postęp tworzenia i uruchamiania wyszukiwań. Po ukończeniu skryptu wraca do wiersza polecenia.
 
-   ![Przykładowe dane wyjściowe z uruchamiania skryptu w celu utworzenia wielu wyszukiwań zgodności.](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+   ![Przykładowe dane wyjściowe uruchamiania skryptu w celu utworzenia wielu wyszukiwań zgodności.](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
 
-## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Krok 4. Uruchamianie skryptu w celu zgłoszenia oszacowania wyszukiwania
+## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Krok 4. Uruchamianie skryptu w celu raportowania szacunków wyszukiwania
 
-Kolejnym krokiem po utworzeniu wyszukiwań jest uruchomienie skryptu wyświetlacego prosty raport o liczbie trafień dla każdego wyszukiwania utworzonego w kroku 3. Raport zawiera również rozmiar wyników każdego wyszukiwania oraz łączną liczbę trafień i całkowity rozmiar wszystkich wyszukiwań. Po uruchomieniu skryptu raportowania zostanie wyświetlony monit o identyfikator grupy wyszukiwania i nazwę pliku CSV, jeśli chcesz zapisać raport w pliku CSV.
+Po utworzeniu wyszukiwań następnym krokiem jest uruchomienie skryptu, który wyświetla prosty raport o liczbie trafień wyszukiwania dla każdego wyszukiwania utworzonego w kroku 3. Raport zawiera również rozmiar wyników dla każdego wyszukiwania oraz łączną liczbę trafień i całkowity rozmiar wszystkich wyszukiwań. Po uruchomieniu skryptu raportowania zostanie wyświetlony monit o identyfikator grupy wyszukiwania i nazwę pliku CSV, jeśli chcesz zapisać raport w pliku CSV.
 
-1. Zapisz poniższy tekst w pliku skryptu Windows PowerShell, używając sufiksu nazwy pliku programu .ps1, `SearchReport.ps1`na przykład . Zapisz plik w tym samym folderze, w którym zapisano inne pliki.
+1. Zapisz następujący tekst w pliku skryptu Windows PowerShell przy użyciu sufiksu nazwy pliku .ps1, `SearchReport.ps1`na przykład . Zapisz plik w tym samym folderze, w którym zostały zapisane inne pliki.
 
    ```Powershell
    $searchGroup = Read-Host 'Search Group ID'
@@ -241,30 +241,30 @@ Kolejnym krokiem po utworzeniu wyszukiwań jest uruchomienie skryptu wyświetlac
    }
    ```
 
-2. W Windows PowerShell przejdź do folderu, w którym został zapisany skrypt w poprzednim kroku, a następnie uruchom skrypt, na przykład:
+2. W Windows PowerShell przejdź do folderu, w którym zapisano skrypt w poprzednim kroku, a następnie uruchom skrypt, na przykład:
 
    ```Powershell
    .\SearchReport.ps1
    ```
 
-3. W **wierszu monitu Identyfikator** grupy wyszukiwania wpisz nazwę grupy wyszukiwania, a następnie naciśnij klawisz **Enter**. na przykład  `ContosoCase`. Pamiętaj, że w tej nazwie jest wróżniana wielkość liter, więc będzie trzeba ją wpisać tak samo, jak w przypadku uruchamiania skryptu w kroku 3.
+3. W wierszu polecenia **Identyfikator grupy wyszukiwania** wpisz nazwę grupy wyszukiwania, a następnie naciśnij **klawisz Enter**; na przykład  `ContosoCase`. Pamiętaj, że ta nazwa uwzględnia wielkość liter, więc musisz wpisać ją w taki sam sposób, jak podczas uruchamiania skryptu w kroku 3.
 
-4. W wierszu Ścieżka pliku, aby zapisać raport w pliku **CSV (** pozostaw puste miejsce, aby tylko wyświetlić raport) wpisz nazwę pliku pełnej ścieżki nazwy pliku (wraz z rozszerzeniem pliku .csv), jeśli chcesz zapisać raport w pliku CSV. nazwę pliku CSV wraz z .csv pliku. Możesz na przykład wpisać tekst,  `ContosoCaseReport.csv` aby zapisać go w bieżącym katalogu  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` lub zapisać go w innym folderze. Możesz również pozostawić monit pusty, aby wyświetlić raport, ale nie zapisać go w pliku.
+4. W **ścieżce Plik, aby zapisać raport w pliku CSV (pozostaw pusty, aby po prostu wyświetlić raport)** wpisz nazwę pliku o pełnej ścieżce nazwy pliku (w tym rozszerzenie pliku .csv), jeśli chcesz zapisać raport w pliku CSV. nazwa pliku CSV, w tym rozszerzenie pliku .csv. Na przykład można wpisać  `ContosoCaseReport.csv` , aby zapisać go w bieżącym katalogu lub wpisać  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` , aby zapisać go w innym folderze. Możesz również pozostawić monit pusty, aby wyświetlić raport, ale nie zapisać go w pliku.
 
 5. Naciśnij **klawisz Enter**.
 
-   Skrypt wyświetla postęp tworzenia i uruchamiania wyszukiwań. Po ukończeniu skryptu zostanie wyświetlony raport.
+   Skrypt wyświetla postęp tworzenia i uruchamiania wyszukiwań. Po zakończeniu działania skryptu zostanie wyświetlony raport.
 
    ![Uruchom raport wyszukiwania, aby wyświetlić oszacowania dla grupy wyszukiwania.](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
-> Jeśli ta sama skrzynka pocztowa lub witryna jest określona jako lokalizacja zawartości w więcej niż jednym wyszukiwaniu w grupie wyszukiwania, szacowana suma wyników w raporcie (zarówno dla liczby elementów, jak i całkowitego rozmiaru) może obejmować wyniki dla tych samych elementów. Jest tak dlatego, że ta sama wiadomość e-mail lub dokument będzie liczony więcej niż raz, jeśli będzie odpowiadać zapytaniu dotyczącem różnych wyszukiwań w grupie wyszukiwania.
+> Jeśli ta sama skrzynka pocztowa lub witryna jest określona jako lokalizacja zawartości w więcej niż jednym wyszukiwaniu w grupie wyszukiwania, łączne oszacowanie wyników w raporcie (zarówno dla liczby elementów, jak i całkowitego rozmiaru) może zawierać wyniki dla tych samych elementów. Dzieje się tak, ponieważ ta sama wiadomość e-mail lub dokument będzie liczona więcej niż raz, jeśli jest zgodna z zapytaniem dla różnych wyszukiwań w grupie wyszukiwania.
 
 ## <a name="step-5-run-the-script-to-delete-the-searches"></a>Krok 5. Uruchamianie skryptu w celu usunięcia wyszukiwań
 
-Ponieważ możesz tworzyć wiele wyszukiwań, ten ostatni skrypt po prostu ułatwia szybkie usuwanie wyszukiwań utworzonych w kroku 3. Podobnie jak w przypadku innych skryptów, ten również wyświetla monit o identyfikator grupy wyszukiwania. Wszystkie wyszukiwania z identyfikatorem grupy wyszukiwania w nazwie wyszukiwania zostaną usunięte po uruchomieniu tego skryptu.
+Ponieważ możesz tworzyć wiele wyszukiwań, ten ostatni skrypt ułatwia szybkie usuwanie wyszukiwań utworzonych w kroku 3. Podobnie jak w przypadku innych skryptów, ten wyświetla również monit o identyfikator grupy wyszukiwania. Wszystkie wyszukiwania z identyfikatorem grupy wyszukiwania w nazwie wyszukiwania zostaną usunięte po uruchomieniu tego skryptu.
 
-1. Zapisz poniższy tekst w pliku skryptu Windows PowerShell, używając sufiksu nazwy pliku programu .ps1, `DeleteSearches.ps1`na przykład . Zapisz plik w tym samym folderze, w którym zapisano inne pliki.
+1. Zapisz następujący tekst w pliku skryptu Windows PowerShell przy użyciu sufiksu nazwy pliku .ps1, `DeleteSearches.ps1`na przykład . Zapisz plik w tym samym folderze, w którym zostały zapisane inne pliki.
 
    ```Powershell
    # Delete all searches in a search group
@@ -280,14 +280,14 @@ Ponieważ możesz tworzyć wiele wyszukiwań, ten ostatni skrypt po prostu ułat
    }
    ```
 
-2. W Windows PowerShell przejdź do folderu, w którym został zapisany skrypt w poprzednim kroku, a następnie uruchom skrypt, na przykład:
+2. W Windows PowerShell przejdź do folderu, w którym zapisano skrypt w poprzednim kroku, a następnie uruchom skrypt, na przykład:
 
    ```Powershell
    .\DeleteSearches.ps1
    ```
 
-3. W **wierszu monitu** Identyfikator grupy wyszukiwania wpisz nazwę grupy wyszukiwania dla wyszukiwań, które chcesz usunąć, a następnie naciśnij klawisz **Enter**. na przykład  `ContosoCase`. Pamiętaj, że w tej nazwie jest wróżniana wielkość liter, więc będzie trzeba ją wpisać tak samo, jak w przypadku uruchamiania skryptu w kroku 3.
+3. W wierszu polecenia **Identyfikator grupy wyszukiwania** wpisz nazwę grupy wyszukiwania dla wyszukiwań, które chcesz usunąć, a następnie naciśnij **klawisz Enter**; na przykład  `ContosoCase`. Pamiętaj, że ta nazwa uwzględnia wielkość liter, więc musisz wpisać ją w taki sam sposób, jak podczas uruchamiania skryptu w kroku 3.
 
-   Skrypt wyświetli nazwę każdego usuniętego wyszukiwania.
+   Skrypt wyświetla nazwę każdego usuniętego wyszukiwania.
 
-   ![Uruchom skrypt, aby usunąć wyszukiwania z grupy wyszukiwania.](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+   ![Uruchom skrypt, aby usunąć wyszukiwania w grupie wyszukiwania.](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

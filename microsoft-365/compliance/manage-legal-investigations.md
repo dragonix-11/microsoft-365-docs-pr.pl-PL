@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie dochodzeniami prawnie w Microsoft 365
+title: Zarządzanie dochodzeniami prawnymi w Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,62 +16,62 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Spraw zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365, aby zarządzać dochodzeniami prawnie organizacji.
-ms.openlocfilehash: fc4e89645ef1912c33ab89ec190c87dc9c8a8965
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Użyj przypadków zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview, aby zarządzać badaniem prawnym organizacji.
+ms.openlocfilehash: d218c7d624da837e685929d95e515687f54897ef
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985107"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932002"
 ---
-# <a name="manage-legal-investigations-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnie w Microsoft 365
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnymi w Microsoft 365
 
-Organizacje mają wiele powodów, dla których należy reagować na postępowania prawne obejmujące określonych kierowników lub innych pracowników w organizacji. Może to obejmować szybkie znajdowanie i zachowywanie dalszych informacji specyficznych dla badania w wiadomościach e-mail, dokumentach, konwersacjach za pomocą wiadomości błyskawicznych i innych lokalizacjach zawartości używanych przez osoby w ich zadaniach służbowych. Te i wiele innych podobnych czynności można wykonywać za pomocą narzędzi do zbierania elektronicznych materiałów dowodowych w Centrum zabezpieczeń i zgodności.
+Organizacje mają wiele powodów, aby odpowiedzieć na sprawę prawną z udziałem niektórych menedżerów lub innych pracowników w organizacji. Może to obejmować szybkie znajdowanie i przechowywanie dalszych informacji specyficznych dla badania w wiadomościach e-mail, dokumentach, konwersacjach wiadomości błyskawicznych i innych lokalizacjach zawartości używanych przez osoby w codziennych zadaniach służbowych. Te i wiele innych podobnych działań można wykonywać przy użyciu narzędzi do zbierania elektronicznych elektronicznych materiałów dowodowych w centrum zabezpieczeń i zgodności.
   
-**Chcesz wiedzieć, jak firma Microsoft zarządza badaniami zbierania elektronicznych materiałów dowodowych?** Oto oficjalny dokument techniczny[](https://go.microsoft.com/fwlink/?linkid=852161), który możesz pobrać, który opisuje sposób, w jaki używamy tych samych narzędzi wyszukiwania i analizy do zarządzania naszym wewnętrznym przepływem pracy zbierania elektronicznych materiałów dowodowych.
+**Chcesz wiedzieć, jak firma Microsoft zarządza badaniami zbierania elektronicznych materiałów dowodowych?** Oto [oficjalny dokument techniczny](https://go.microsoft.com/fwlink/?linkid=852161) , który można pobrać, który wyjaśnia, w jaki sposób używamy tych samych narzędzi do wyszukiwania i badania, aby zarządzać naszym wewnętrznym przepływem pracy zbierania elektronicznych materiałów dowodowych.
 
-## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Zarządzanie dochodzeniami prawnie za pomocą spraw zbierania elektronicznych materiałów dowodowych
+## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Zarządzanie dochodzeniami prawnymi w sprawach zbierania elektronicznych materiałów dowodowych
 
-Sprawy zbierania elektronicznych materiałów dowodowych pozwalają kontrolować, kto może tworzyć sprawy zbierania elektronicznych materiałów dowodowych, uzyskać do nich dostęp i zarządzać nimi w organizacji. Za pomocą spraw można dodawać członków i kontrolować, jakie typy akcji mogą wykonywać, stosować lokalizacje zawartości związane z danym sądem, a także przeszukiwać w lokalizacjach wstrzymywanych zawartość, która może odpowiadać na dane sprawy. Następnie możesz również wyeksportować i pobrać te wyniki do dalszego badania przez recenzentów zewnętrznych.
+Przypadki zbierania elektronicznych materiałów dowodowych umożliwiają kontrolowanie, kto może tworzyć i zarządzać przypadkami zbierania elektronicznych materiałów dowodowych w organizacji oraz zarządzać nimi. Przypadki użycia umożliwiają dodawanie członków i kontrolowanie typów akcji, które mogą wykonywać, umieszczanie lokalizacji zawartości istotnych dla sprawy prawnej, a także używanie narzędzia wyszukiwania zawartości do wyszukiwania lokalizacji w miejscu wstrzymania pod kątem zawartości, która może odpowiadać twojej sprawie. Następnie możesz również wyeksportować i pobrać te wyniki w celu dalszego zbadania przez zewnętrznych recenzentów.
   
-- [Zarządzaj przepływem pracy zbierania](./get-started-core-ediscovery.md) elektronicznych materiałów dowodowych, tworząc i używając spraw zbierania elektronicznych materiałów dowodowych dla każdego dochodzenia prawnego, które musi podjąć Twoja organizacja.
+- [Zarządzaj przepływem pracy zbierania elektronicznych elektronicznych](./get-started-core-ediscovery.md) materiałów dowodowych, tworząc i używając spraw zbierania elektronicznych materiałów dowodowych dla każdego badania prawnego, które musi przeprowadzić organizacja.
 
-- [Przypisywanie uprawnień zbierania elektronicznych](assign-ediscovery-permissions.md) materiałów dowodowych w celu kontrolowania, kto może tworzyć sprawy zbierania elektronicznych materiałów dowodowych i zarządzać nimi w Organizacji.
+- [Przypisz uprawnienia zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md) , aby kontrolować, kto może tworzyć przypadki zbierania elektronicznych materiałów dowodowych i zarządzać nimi w organizacji.
 
-- [Skonfiguruj granice zgodności w celu](set-up-compliance-boundaries.md) kontrolowania lokalizacji zawartości użytkowników, które mogą wyszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych.
+- [Skonfiguruj granice zgodności](set-up-compliance-boundaries.md) , aby kontrolować lokalizacje zawartości użytkownika, które mogą przeszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych.
 
-- [Wyszukaj zawartość w](search-for-content.md) swojej organizacji.
+- [Wyszukaj zawartość](search-for-content.md) w organizacji.
 
-### <a name="use-scripts-for-advanced-scenarios"></a>Używanie skryptów w zaawansowanych scenariuszach
+### <a name="use-scripts-for-advanced-scenarios"></a>Używanie skryptów w scenariuszach zaawansowanych
 
-Podobnie jak w poprzedniej sekcji, która zawierała listę skryptów dla scenariuszy wyszukiwania zawartości, utworzono również kilka skryptów programu PowerShell centrum zabezpieczeń i zgodności usługi &, które ułatwiają zarządzanie sprawami zbierania elektronicznych materiałów dowodowych.
+Podobnie jak w poprzedniej sekcji zawierającej skrypty dla scenariuszy wyszukiwania zawartości, utworzyliśmy również niektóre skrypty programu PowerShell Centrum zgodności & zabezpieczeń, aby ułatwić zarządzanie przypadkami zbierania elektronicznych materiałów dowodowych.
   
-- [Utwórz raport zbierania elektronicznych materiałów](create-a-report-on-holds-in-ediscovery-cases.md) dowodowych zawierający informacje o wszystkich zbieraniach elektronicznych materiałów dowodowych skojarzonych ze sprawami zbierania elektronicznych materiałów dowodowych w organizacji.
+- [Utwórz raport zbierania elektronicznych](create-a-report-on-holds-in-ediscovery-cases.md) materiałów dowodowych zawierający informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych w organizacji.
 
-- [Dodaj skrzynki pocztowe i OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) lokalizacji na listę użytkowników do przechowywania zbierania elektronicznych materiałów dowodowych.
+- [Dodaj skrzynki pocztowe i lokalizacje OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) dla listy użytkowników do blokady zbierania elektronicznych materiałów dowodowych.
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnie za pomocą Advanced eDiscovery w programie Microsoft 365
+## <a name="manage-legal-investigations-with-the-ediscovery-premium-solution-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnymi za pomocą rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365
 
-Rozwiązanie Advanced eDiscovery w programie Microsoft 365 na podstawie istniejących funkcji zbierania elektronicznych materiałów dowodowych i analizy w Office 365. To nowe rozwiązanie, nazywane *Advanced eDiscovery*, zapewnia szczegółowe przepływy pracy do zachowywania, zbierania, przeglądania, analizowania i eksportowania zawartości, która odpowiada wewnętrznym i zewnętrznym analizom Twojej organizacji. Umożliwia także zespołom prawnym zarządzanie całym przepływem pracy z powiadomieniem o zerowym zrzeka się w celu skomunikowania się z opiekunami zaangażowanymi w sprawę.
+Rozwiązanie Microsoft Purview eDiscovery (Premium) w Microsoft 365 bazuje na istniejących funkcjach zbierania elektronicznych materiałów dowodowych i analiz w Office 365. To nowe rozwiązanie o nazwie *eDiscovery (Premium) zapewnia kompleksowy* przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Umożliwia również zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę.
 
-Advanced eDiscovery subskrypcji E5 dla Twojej organizacji Microsoft 365 lub Office 365 E5. Aby uzyskać więcej informacji na temat licencjonowania, [zobacz Konfigurowanie Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+Funkcja zbierania elektronicznych materiałów dowodowych (Premium) wymaga subskrypcji E5 dla organizacji Microsoft 365 lub Office 365. Aby uzyskać więcej informacji na temat licencjonowania, zobacz [Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Oto krótki przegląd wbudowanego przepływu pracy w aplikacji Advanced eDiscovery. Aby uzyskać więcej informacji, zobacz [Zarządzanie przepływem Advanced eDiscovery przepływu pracy](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
+Oto krótkie omówienie wbudowanego przepływu pracy w usłudze eDiscovery (Premium). Aby uzyskać więcej informacji, zobacz [Zarządzanie przepływem pracy zbierania elektronicznych materiałów dowodowych (Premium).](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)
 
-- [Utwórz sprawę,](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) aby rozpocząć.
+- [Utwórz przypadek,](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) aby rozpocząć pracę.
 
-- [Zarządzaj przechowywaniami](managing-custodians.md) przez dodanie ich do sprawy i umieszczenie zawartości w ich skrzynkach pocztowych, OneDrive Microsoft Teams kontach i dodawanie do nich elementów, do których są członkami.
+- [Zarządzaj opiekunami](managing-custodians.md), dodając ich do sprawy i wstrzymując zawartość w skrzynce pocztowej, OneDrive koncie i Microsoft Teams są członkami.
 
-- [Zarządzaj komunikacją](managing-custodian-communications.md) z użytkownikami, automatyzując proces powiadamiania o zmowie prawnej.
+- [Zarządzaj komunikacją](managing-custodian-communications.md) z opiekunami, automatyzując proces powiadamiania o blokadzie prawnej.
 
-- [Indeksowanie danych adresowanych](processing-data-for-case.md) i naprawianie błędów indeksowania w celu efektywnego zbierania danych na własne badania.
+- [Indeksowanie danych opiekuna](processing-data-for-case.md) i naprawianie błędów indeksowania, dzięki czemu można skutecznie zbierać dane na potrzeby badań.
 
-- [Zbierz dane](collecting-data-for-ediscovery.md) dotyczące sprawy i dodaj je do [zestawu recenzji do](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) dalszego badania.
+- [Zbierz dane](collecting-data-for-ediscovery.md) dla sprawy i [dodaj je do zestawu przeglądów w celu dalszego](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) zbadania.
 
-- [Wyświetlanie](view-documents-in-review-set.md) dokumentów, [danych](review-set-search.md) zapytań i [tagowanie](tagging-documents.md) elementów w zestawie recenzji.
+- [Wyświetlanie](view-documents-in-review-set.md) dokumentów, [danych zapytań](review-set-search.md) i [elementów tagów](tagging-documents.md) w zestawie przeglądów.
 
-- [Analizowanie danych dotyczących sprawy](analyzing-data-in-review-set.md) za pomocą zaawansowanych narzędzi do analizy.
+- [Analizowanie danych przypadków](analyzing-data-in-review-set.md) przy użyciu zaawansowanych narzędzi analitycznych.
 
-- [Eksportuj dane sprawy do](exporting-data-ediscover20.md) przejrzenia przez doradcę zewnętrznego.
+- [Eksportowanie danych sprawy](exporting-data-ediscover20.md) do przeglądu przez zewnętrznego doradcę.
 
-- [Zarządzanie długo działających zadań w](managing-jobs-ediscovery20.md) programie Advanced eDiscovery.
+- [Zarządzanie długotrwałymi zadaniami](managing-jobs-ediscovery20.md) w usłudze eDiscovery (Premium).

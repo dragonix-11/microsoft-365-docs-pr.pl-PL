@@ -1,5 +1,5 @@
 ---
-title: Typy plików obsługiwane w programie Advanced eDiscovery
+title: Obsługiwane typy plików zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,47 +14,47 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Lista obsługiwanych typów plików w p Microsoft 365 Advanced eDiscovery, w tym typy plików obrazów obsługiwane przez funkcję OCR w Advanced eDiscovery.
+description: Lista obsługiwanych typów plików w Microsoft 365 eDiscovery (Premium), w tym typy plików obrazów obsługiwane przez funkcję OCR w funkcji eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 96d469d861be3392108b53811478f94d0e59f40b
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: ce0d44a2d3e887c6278af1ed9a35039c74d6a0a9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63015957"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934582"
 ---
-# <a name="supported-file-types-in-advanced-ediscovery"></a>Typy plików obsługiwane w programie Advanced eDiscovery
+# <a name="supported-file-types-in-ediscovery-premium"></a>Obsługiwane typy plików zbierania elektronicznych materiałów dowodowych (Premium)
 
-Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach. Typy plików pomocy technicznej są opisane w poniższych tabelach w tym artykule. Ta lista nie jest sfinalizowana i dodamy nowe typy plików w ramach kontynuowania testów sprawdzania poprawności. Te tabele wskazują, czy obsługiwany jest typ pliku wyodrębniania tekstu (oraz optyczne rozpoznawanie znaków lub wyodrębnianie tekstu OCR w przypadku plików obrazów), który można przeglądać w natywnej przeglądarce, a także obsługuje przeglądarkę adnotacji w programie Advanced eDiscovery.
+Usługa Microsoft Purview eDiscovery (Premium) obsługuje wiele typów plików na wielu różnych poziomach. Typy plików pomocy technicznej zostały opisane w poniższych tabelach w tym artykule. Ta lista nie jest finalizowana i dodamy nowe typy plików w miarę kontynuowania testowania walidacji. Te tabele wskazują, czy typ pliku jest obsługiwany w przypadku wyodrębniania tekstu (i optycznego rozpoznawania znaków lub wyodrębniania tekstu OCR dla plików obrazów), który można wyświetlać w natywnej przeglądarce, a także obsługiwać w podglądzie adnotacji w usłudze eDiscovery (Premium).
 
-## <a name="archive--container"></a>Archiwum / kontener
+## <a name="archive--container"></a>Archiwum/kontener
 
 <br>
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie kontenerów|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie kontenerów|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|
-|application/x-7z-compressed|Tak|Tak|Tak|0,7z|
+|application/x-7z-compressed|Tak|Tak|Tak|.7z|
 |application/x-rar-compressed|Tak|Tak|Tak|.rar|
-|application/x-tar|Tak|Tak|Tak|tar|
+|application/x-tar|Tak|Tak|Tak|.tar|
 |application/zip|Tak|Tak|Tak|.zip|
 |
 
-## <a name="audio--video"></a>Audio/wideo
+## <a name="audio--video"></a>Dźwięk / wideo
 
 <br>
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/mp4|Tak|Tak|Nie|Tak|Nie|f4v; m4a; m4v; .mp4; mp4v; .mpeg; mpeg4|
+|application/mp4|Tak|Tak|Nie|Tak|Nie|.f4v; .m4a; .m4v; .mp4; .mp4v; .mpeg; .mpeg4|
 |audio/mpeg|Tak|Tak|Nie|Tak|Nie|.mpeg|
-|video/3gpp|Tak|Tak|Nie|Tak|Nie|3gp|
-|video/3gpp2|Tak|Tak|Nie|Tak|Nie|3g2; 3gp2|
-|wideo/quicktime|Tak|Tak|Nie|Tak|Nie|moov; mov; qt|
-|video/x-m4v|Tak|Tak|Nie|Tak|Nie|m4v|
+|wideo/3gpp|Tak|Tak|Nie|Tak|Nie|.3gp|
+|wideo/3gpp2|Tak|Tak|Nie|Tak|Nie|.3g2; .3gp2|
+|wideo/szybki czas|Tak|Tak|Nie|Tak|Nie|.moov; .mov; .qt|
+|wideo/x-m4v|Tak|Tak|Nie|Tak|Nie|.m4v|
 |
 
 ## <a name="database"></a>Database
@@ -63,9 +63,9 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/x-msaccess|Tak|Tak|Tak|Nie|Nie|mdb|
+|application/x-msaccess|Tak|Tak|Tak|Nie|Nie|.mdb|
 |
 
 ## <a name="email"></a>Poczta e-mail
@@ -74,11 +74,11 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.ms-outlook|Tak|Tak|Tak|Tak|Tak|msg|
-|message/rfc822|Tak|Tak|Tak|Tak|Tak|eml|
-|text/vcard-contact|Tak|Tak|Tak|Tak|Tak|vcf|
+|application/vnd.ms-outlook|Tak|Tak|Tak|Tak|Tak|.msg|
+|message/rfc822|Tak|Tak|Tak|Tak|Tak|.eml|
+|text/vcard-contact|Tak|Tak|Tak|Tak|Tak|.vcf|
 |
 
 ## <a name="email-container"></a>Kontener poczty e-mail
@@ -87,10 +87,10 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie kontenerów|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie kontenerów|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|
-|application/mbox|Tak|Tak|Tak|mbox|
-|application/vnd.ms-outlook-pst|Tak|Tak|Tak|pst|
+|application/mbox|Tak|Tak|Tak|.mbox|
+|application/vnd.ms-outlook-pst|Tak|Tak|Tak|Pst|
 |
 
 ## <a name="html"></a>HTML
@@ -99,30 +99,30 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/xhtml+xml|Tak|Tak|Tak|Tak|Tak|xhtml|
+|application/xhtml+xml|Tak|Tak|Tak|Tak|Tak|.xhtml|
 |application/xml|Tak|Tak|Tak|Tak|Tak|.xml|
-|text/html|Tak|Tak|Tak|Tak|Tak|.htm; .html; shtml|
+|text/html|Tak|Tak|Tak|Tak|Tak|.htm; .html; .shtml|
 |
 
-## <a name="image"></a>Obraz
+## <a name="image"></a>Obrazu
 
 <br>
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu przez OCR|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu OCR|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |image/bmp|Tak|Tak|Tak|Tak|Tak|.bmp|
-|image/emf|Tak|Tak|Tak|Tak|Tak|emf|
-|image/gif|Tak|Tak|Tak|Tak|Tak|.gif|
-|image/jpeg|Tak|Tak|Tak|Tak|Tak|jpeg; .jpg|
-|obraz/png|Tak|Tak|Tak|Tak|Tak|.png|
-|image/svg+xml|Tak|Tak|Tak|Tak|Nie|svg|
-|image/tiff|Tak|Tak|Tak|Tak|Tak|tif|
-|image/vnd.dwg|Tak|Tak|Tak|Tak|Tak|dwg; dxf|
-|image/wmf|Tak|Tak|Tak|Tak|Tak|wmf|
+|obraz/emf|Tak|Tak|Tak|Tak|Tak|.emf|
+|obraz/gif|Tak|Tak|Tak|Tak|Tak|.gif|
+|obraz/jpeg|Tak|Tak|Tak|Tak|Tak|.jpeg; .jpg|
+|image/png|Tak|Tak|Tak|Tak|Tak|.png|
+|image/svg+xml|Tak|Tak|Tak|Tak|Nie|.svg|
+|obraz/tiff|Tak|Tak|Tak|Tak|Tak|.tif|
+|image/vnd.dwg|Tak|Tak|Tak|Tak|Tak|.dwg; .dxf|
+|image/wmf|Tak|Tak|Tak|Tak|Tak|.wmf|
 |
 
 ## <a name="microsoft-excel"></a>Microsoft Excel
@@ -131,14 +131,14 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.ms-excel|Tak|Tak|Tak|Tak|Tak|dat; .xls|
-|application/vnd.ms-excel.sheet.binary.macroenabled.12|Tak|Tak|Tak|Tak|Nie|xlsb|
-|application/vnd.ms-excel.sheet.macroenabled.12|Tak|Tak|Tak|Tak|Tak|xlsm|
-|application/vnd.ms-excel.template.macroenabled.12|Tak|Tak|Tak|Nie|Nie|xltm|
+|application/vnd.ms-excel|Tak|Tak|Tak|Tak|Tak|.dat; .xls|
+|application/vnd.ms-excel.sheet.binary.macroenabled.12|Tak|Tak|Tak|Tak|Nie|Xlsb|
+|application/vnd.ms-excel.sheet.macroenabled.12|Tak|Tak|Tak|Tak|Tak|.xlsm|
+|application/vnd.ms-excel.template.macroenabled.12|Tak|Tak|Tak|Nie|Nie|Xltm|
 |application/vnd.openxmlformats-officedocument.spreadsheetml.sheet|Tak|Tak|Tak|Tak|Tak|.xlsx|
-|application/vnd.openxmlformats-officedocument.spreadsheetml.template|Tak|Tak|Tak|Tak|Tak|xltx|
+|application/vnd.openxmlformats-officedocument.spreadsheetml.template|Tak|Tak|Tak|Tak|Tak|Xltx|
 |
 
 ## <a name="microsoft-onenote"></a>Microsoft OneNote
@@ -147,9 +147,9 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/onenote|Tak|Tak|Tak|Nie|Nie|one|
+|application/onenote|Tak|Tak|Tak|Nie|Nie|.one|
 |
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
@@ -158,12 +158,12 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.ms-powerpoint|Tak|Tak|Tak|Tak|Tak|pot; pps; .ppt|
+|application/vnd.ms-powerpoint|Tak|Tak|Tak|Tak|Tak|.pot; pps; .ppt|
 |application/vnd.openxmlformats-officedocument.presentationml.presentation|Tak|Tak|Tak|Tak|Tak|.pptx|
-|application/vnd.openxmlformats-officedocument.presentationml.slideshow|Tak|Tak|Tak|Tak|Tak|ppsx|
-|application/vnd.openxmlformats-officedocument.presentationml.template|Tak|Tak|Tak|Tak|Tak|potx|
+|application/vnd.openxmlformats-officedocument.presentationml.slideshow|Tak|Tak|Tak|Tak|Tak|.ppsx|
+|application/vnd.openxmlformats-officedocument.presentationml.template|Tak|Tak|Tak|Tak|Tak|Potx|
 |
 
 ## <a name="microsoft-project"></a>Microsoft Project
@@ -172,9 +172,9 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.ms-project|Tak|Tak|Tak|Nie|Tak|mpp|
+|application/vnd.ms-project|Tak|Tak|Tak|Nie|Tak|.mpp|
 |
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher
@@ -183,9 +183,9 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/x-mspublisher|Tak|Tak|Tak|Tak|Tak|pub|
+|application/x-mspublisher|Tak|Tak|Tak|Tak|Tak|.pub|
 |
 
 ## <a name="microsoft-visio"></a>Microsoft Visio
@@ -194,10 +194,10 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.ms-visio.drawing|Tak|Tak|Tak|Tak|Nie||
-|application/vnd.visio|Tak|Tak|Tak|Tak|Tak|vsd|
+|application/vnd.visio|Tak|Tak|Tak|Tak|Tak|.vsd|
 |
 
 ## <a name="microsoft-word"></a>Microsoft Word
@@ -206,14 +206,14 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/msword|Tak|Tak|Tak|Tak|Tak|dat; .doc|
+|application/msword|Tak|Tak|Tak|Tak|Tak|.dat; .doc|
 |application/rtf|Tak|Tak|Tak|Tak|Tak|.doc; rtf|
-|application/vnd.ms-word.document.macroenabled.12|Tak|Tak|Tak|Tak|Tak|docm|
-|application/vnd.ms-word.template.macroenabled.12|Tak|Tak|Tak|Tak|Tak|dotm|
+|application/vnd.ms-word.document.macroenabled.12|Tak|Tak|Tak|Tak|Tak|Docm|
+|application/vnd.ms-word.template.macroenabled.12|Tak|Tak|Tak|Tak|Tak|Dotm|
 |application/vnd.openxmlformats-officedocument.wordprocessingml.document|Tak|Tak|Tak|Tak|Tak|.docx|
-|application/vnd.openxmlformats-officedocument.wordprocessingml.template|Tak|Tak|Tak|Tak|Tak|dotx|
+|application/vnd.openxmlformats-officedocument.wordprocessingml.template|Tak|Tak|Tak|Tak|Tak|.dotx|
 |
 
 ## <a name="microsoft-works"></a>Microsoft Works
@@ -222,10 +222,10 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.ms-works-ss|Tak|Tak|Nie|Nie|Nie|wps|
-|application/vnd.ms-works-wp|Tak|Tak|Nie|Nie|Nie|wps|
+|application/vnd.ms-works-ss|Tak|Tak|Nie|Nie|Nie|.wps|
+|application/vnd.ms-works-wp|Tak|Tak|Nie|Nie|Nie|.wps|
 |
 
 ## <a name="open-document-format"></a>Otwórz format dokumentu
@@ -234,9 +234,9 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.oasis.opendocument.text|Tak|Tak|Tak|Tak|Tak|odt|
+|application/vnd.oasis.opendocument.text|Tak|Tak|Tak|Tak|Tak|.odt|
 |
 
 ## <a name="other"></a>Inne
@@ -245,12 +245,12 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/json|Tak|Tak|Tak|Tak|Tak|n/a|
-|application/octet-stream|Tak|Nie|Nie|Nie|Nie|fluid|
+|application/json|Tak|Tak|Tak|Tak|Tak|nie dotyczy|
+|application/octet-stream|Tak|Nie|Nie|Nie|Nie|.fluid|
 |application/vnd.ms-graph|Tak|Tak|Nie|Nie|Nie||
-|application/winhlp|Tak|Tak|Nie|Nie|Nie|hlp|
+|application/winhlp|Tak|Tak|Nie|Nie|Nie|Hlp|
 |application/x-tnef|Tak|Tak|Nie|Nie|Nie||
 |
 
@@ -260,19 +260,19 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|tekst/csv|Tak|Tak|Tak|Tak|Tak|.csv|
-|tekst/zwykły|Tak|Tak|Tak|Tak|Tak|con; .css; .csv; dat; .pl; .txt|
+|text/csv|Tak|Tak|Tak|Tak|Tak|.csv|
+|tekst/zwykły|Tak|Tak|Tak|Tak|Tak|.con; .css; .csv; .dat; .pl; .txt|
 |
 
-## <a name="portable-document-format"></a>Portable Document Format
+## <a name="portable-document-format"></a>Format dokumentu przenośnego
 
 <br>
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/pdf|Tak|Tak|Tak|Tak|Tak|.pdf|
 |
@@ -283,20 +283,20 @@ Advanced eDiscovery obsługuje wiele typów plików na wielu różnych poziomach
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.wordperfect; version=5,0|Tak|Tak|Tak|Nie|Nie|wpd|
-|application/vnd.wordperfect; version=5,1|Tak|Tak|Tak|Nie|Nie|wpd|
-|application/vnd.wordperfect; version=6.x|Tak|Tak|Tak|Nie|Nie|wpd|
+|application/vnd.wordperfect; version=5.0|Tak|Tak|Tak|Nie|Nie|.wpd|
+|application/vnd.wordperfect; version=5.1|Tak|Tak|Tak|Nie|Nie|.wpd|
+|application/vnd.wordperfect; version=6.x|Tak|Tak|Tak|Nie|Nie|.wpd|
 |
 
-## <a name="word-pro"></a>Word Pro
+## <a name="word-pro"></a>Pro programu Word
 
 <br>
 
 ****
 
-|Typ mime|Identyfikacja plików|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Przeglądarka adnotacji|Możliwe rozszerzenia|
+|Typ mime|Identyfikacja pliku|Wyodrębnianie metadanych|Wyodrębnianie tekstu|Przeglądarka natywna|Podgląd adnotacji|Możliwe rozszerzenia|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.lotus-wordpro|Tak|Tak|Nie|Nie|Nie|doc|
+|application/vnd.lotus-wordpro|Tak|Tak|Nie|Nie|Nie|.lwp|
 |

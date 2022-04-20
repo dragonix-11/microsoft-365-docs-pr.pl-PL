@@ -16,12 +16,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak stosować standardowe i ścisłe ustawienia zasad w funkcjach ochrony Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a74fce0242f0206218d6f7f2f13e61d9f0a3b6f
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 01fd969461b47b0208dcfd20ff608e829b6a3336
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847120"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915978"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Wstępne ustawienie zasad zabezpieczeń w usłudze EOP i ochronie usługi Office 365 w usłudze Microsoft Defender
 
@@ -80,6 +80,9 @@ Wstępnie ustawione zasady zabezpieczeń używają odpowiednich zasad z różnyc
   - [Zasady ochrony przed spamem](configure-your-spam-filter-policies.md) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **Ścisłe wstępnie ustawione zasady zabezpieczeń**.
   - [Zasady ochrony przed złośliwym oprogramowaniem](configure-anti-malware-policies.md) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **Ścisłe wstępnie ustawione zasady zabezpieczeń**.
   - [Zasady ochrony przed wyłudzaniem informacji EOP](set-up-anti-phishing-policies.md#spoof-settings) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **Rygorystyczne ustawienia zabezpieczeń** (ustawienia fałszowania).
+
+  > [!NOTE]
+  > Zasady dotyczące wychodzącego spamu nie są częścią wstępnie ustawionych zasad zabezpieczeń. Domyślne zasady spamu wychodzącego automatycznie chronią elementy członkowskie wstępnie ustawionych zasad zabezpieczeń. Możesz też utworzyć niestandardowe zasady spamu wychodzącego, aby dostosować ochronę dla członków wstępnie ustawionych zasad zabezpieczeń. Aby uzyskać więcej informacji, zobacz [Konfigurowanie filtrowania spamu wychodzącego w ramach operacji EOP](configure-the-outbound-spam-policy.md).
 
 - **zasady Ochrona usługi Office 365 w usłudze Microsoft Defender**: obejmuje to organizacje z subskrypcjami dodatków Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Defender:
   - Zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **ścisłe zasady zabezpieczeń wstępnie ustawione**, które obejmują:
