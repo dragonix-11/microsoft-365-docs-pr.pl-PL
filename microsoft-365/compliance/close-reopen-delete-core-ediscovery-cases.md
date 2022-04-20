@@ -1,5 +1,5 @@
 ---
-title: Zamykanie, ponowne otwieranie i usuwanie podstawowych spraw zbierania elektronicznych materiałów dowodowych
+title: Zamykanie, ponowne otwieranie i usuwanie przypadków zbierania elektronicznych materiałów dowodowych (standardowa)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,98 +16,98 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: W tym artykule opisano, jak zarządzać podstawowymi sprawami zbierania elektronicznych materiałów dowodowych. Obejmuje to zamknięcie sprawy, ponowne otwarcie zamkniętej sprawy i usunięcie sprawy.
-ms.openlocfilehash: a210a06da2effb0b17d526a09499a65fa59bfeb4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: W tym artykule opisano sposób zarządzania przypadkami zbierania elektronicznych materiałów dowodowych (standardowa). Obejmuje to zamknięcie sprawy, ponowne otwarcie zamkniętej sprawy i usunięcie sprawy.
+ms.openlocfilehash: 3ceb23f3ec215f3e9a7e5db036e71e5fe2842191
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983558"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64940362"
 ---
-# <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Zamykanie, ponowne otwieranie i usuwanie podstawowej sprawy zbierania elektronicznych materiałów dowodowych
+# <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>Zamykanie, ponowne otwieranie i usuwanie sprawy zbierania elektronicznych materiałów dowodowych (standardowa)
 
-W tym artykule opisano, jak zamykać, ponownie otwierać i usuwać podstawowe sprawy zbierania elektronicznych materiałów dowodowych w Microsoft 365.
+W tym artykule opisano sposób zamykania, ponownego otwierania i usuwania przypadków zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (standard) w Microsoft 365.
 
 ## <a name="close-a-case"></a>Zamykanie sprawy
 
-Po zakończeniu postępowania sądowego lub dochodzenia obsługiwanego przez podstawową sprawę zbierania elektronicznych materiałów dowodowych możesz ją zamknąć. Oto co się dzieje po zamknięciu sprawy:
+Po zakończeniu sprawy prawnej lub dochodzenia obsługiwanego przez sprawę zbierania elektronicznych materiałów dowodowych (Standardowa) możesz zamknąć sprawę. Oto, co się stanie po zamknięciu sprawy:
   
-- Jeśli sprawa zawiera jakiekolwiek zbierania elektronicznych materiałów dowodowych, zostaną one wyłączone. Po zakończeniu stosowania blokowania do lokalizacji zawartości, które były wstrzymywane, jest stosowany 30-dniowy okres prolongaty (nazywany opóźnieniem). Pomaga to zapobiec natychmiastowemu usunięciu zawartości i daje administratorom możliwość wyszukania i przywrócenia zawartości przed jej trwałym usunięciem po wygaśnięciu okresu opóźnienia. Aby uzyskać więcej informacji, [zobacz Usuwanie lokalizacji zawartości z zawieszonego zbierania elektronicznych materiałów dowodowych](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
+- Jeśli sprawa zawiera jakiekolwiek blokady zbierania elektronicznych materiałów dowodowych, zostaną wyłączone. Po wyłączeniu blokady 30-dniowy okres prolongaty (nazywany *blokadą opóźnienia*) jest stosowany do lokalizacji zawartości, które zostały wstrzymane. Pomaga to zapobiec natychmiastowemu usunięciu zawartości i zapewnia administratorom możliwość wyszukiwania i przywracania zawartości przed jej trwałym usunięciem po upływie okresu wstrzymania opóźnienia. Aby uzyskać więcej informacji, zobacz [Usuwanie lokalizacji zawartości z blokady zbierania elektronicznych materiałów dowodowych](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
-- Zamknięcie sprawy powoduje tylko wyłączenie zarchiwów, które są skojarzone z tą sprawą. Jeśli w lokalizacji zawartości są umieszczone inne blokady (na przykład w związku z postępowaniem sądowym, zasady przechowywania lub blokady z innej podstawowej sprawy zbierania elektronicznych materiałów dowodowych), te blokady nadal będą zachowywane.
+- Zamknięcie sprawy powoduje wyłączenie tylko blokad skojarzonych z tą sprawą. Jeśli inne blokady zostaną umieszczone w lokalizacji zawartości (takiej jak blokada postępowania sądowego, zasady przechowywania lub blokada z innego przypadku zbierania elektronicznych materiałów dowodowych (standardowa) te blokady będą nadal utrzymywane.
 
-- Sprawa nadal będzie wymieniona na stronie Podstawowe zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Szczegóły, blokady, wyszukiwania i członkowie zamkniętej sprawy zostaną zachowane.
+- Sprawa jest nadal wyświetlana na stronie eDiscovery (Standard) w portalu zgodności usługi Microsoft Purview. Szczegóły, blokady, wyszukiwania i członkowie zamkniętej sprawy są zachowywane.
 
-- Możesz edytować sprawę po jej zamknięciu. Możesz na przykład dodawać lub usuwać członków, tworzyć wyszukiwania i eksportować wyniki wyszukiwania. Podstawową różnicą między aktywnymi a zamkniętymi sprawami jest wyłączenie zbierania elektronicznych materiałów dowodowych po zamknięciu sprawy.
+- Sprawę można edytować po jej zamknięciu. Możesz na przykład dodawać lub usuwać członków, tworzyć wyszukiwania i eksportować wyniki wyszukiwania. Podstawowa różnica między aktywnymi i zamkniętymi przypadkami polega na tym, że blokady zbierania elektronicznych materiałów dowodowych są wyłączone po zamknięciu sprawy.
 
-Aby zamknąć sprawę:
+Aby zamknąć przypadek:
   
-1. W Centrum zgodności platformy Microsoft 365 **eDiscoveryCore** > , aby wyświetlić listę podstawowych spraw zbierania elektronicznych materiałów dowodowych w organizacji.
+1. W portalu zgodności kliknij pozycję **eDiscoveryCore** > , aby wyświetlić listę przypadków zbierania elektronicznych materiałów dowodowych (Standard) w organizacji.
 
 2. Kliknij nazwę sprawy, którą chcesz zamknąć.
 
-   ![Zamknięcie sprawy na stronie głównej sprawy.](../media/eDiscoveryCaseHomePage.png)
+   ![Zamknij przypadek na stronie głównej sprawy.](../media/eDiscoveryCaseHomePage.png)
 
-3. Na stronie głównej w obszarze **Stan** kliknij pozycję **Zamknij sprawę**.
+3. Na stronie głównej w obszarze **Stan** kliknij pozycję **Zamknij przypadek**.
 
-    Zostanie wyświetlone ostrzeżenie z informacją, że blokady skojarzone ze sprawą zostaną wyłączone.
+    Zostanie wyświetlone ostrzeżenie informujące, że blokady skojarzone ze sprawą zostaną wyłączone.
 
-4. Kliknij **przycisk Tak,** aby zamknąć sprawę.
+4. Kliknij przycisk **Tak** , aby zamknąć sprawę.
 
-    Stan na stronie głównej sprawy zmienia się z Aktywny na  **Zamykający**.
+    Stan na stronie głównej sprawy został zmieniony z **Aktywny** na **Zamykający**.
 
-5. Na stronie **Podstawowe zbierania elektronicznych materiałów dowodowych** **kliknij pozycję Odśwież** , aby zaktualizować stan zamkniętej sprawy. Ukończenie procesu zamykania może potrwać do 60 minut.
+5. Na stronie **eDiscovery (Standard)** kliknij pozycję **Odśwież** , aby zaktualizować stan zamkniętego przypadku. Ukończenie procesu zamykania może potrwać do 60 minut.
 
-    Po zakończeniu procesu stan sprawy zmienia się na **Zamknięty na stronie** Podstawowe **zbierania** elektronicznych materiałów dowodowych.
+    Po zakończeniu procesu stan sprawy zostanie zmieniony na **Zamknięty** na stronie **Zbierania elektronicznych materiałów dowodowych (Standardowa).**
 
 ## <a name="reopen-a-closed-case"></a>Ponowne otwieranie zamkniętej sprawy
 
-Po ponownym otwarciu sprawy wszelkie blokady zbierania elektronicznych materiałów dowodowych, które miały miejsce po zamknięciu sprawy, nie zostaną automatycznie przywrócone. Po ponownym otwarciu sprawy musisz przejść na stronę Z **blokady i** włączyć poprzednie blokady. Aby włączyć wstrzymaj, wybierz ją, aby wyświetlić stronę wysuwaną, a następnie ustaw przełącznik **Status** na **Wł**.
+Po ponownym otwarciu sprawy wszelkie blokady zbierania elektronicznych materiałów dowodowych, które istniały po zamknięciu sprawy, nie zostaną automatycznie przywrócone. Po ponownym otwarciu sprawy musisz przejść do strony **Blokady** i włączyć poprzednie blokady. Aby włączyć blokadę, wybierz ją, aby wyświetlić stronę wysuwaną, a następnie ustaw przełącznik **Stan** na **wartość Włączone**.
   
-1. W Centrum zgodności platformy Microsoft 365 **eDiscoveryCore** > , aby wyświetlić listę podstawowych spraw zbierania elektronicznych materiałów dowodowych w organizacji.
+1. W portalu zgodności kliknij pozycję **eDiscoveryCore** > , aby wyświetlić listę przypadków zbierania elektronicznych materiałów dowodowych (Standard) w organizacji.
 
-2. Kliknij nazwę sprawy, którą chcesz otworzyć ponownie.
+2. Kliknij nazwę sprawy, która ma zostać ponownie otwarta.
 
    ![Otwórz ponownie zamkniętą sprawę.](../media/eDiscoveryCaseHomePageReopen.png)
 
-3. Na stronie głównej w obszarze **Stan** kliknij pozycję **Otwórz ponownie sprawę**.
+3. Na stronie głównej w obszarze **Stan** kliknij pozycję **Otwórz ponownie przypadek**.
 
-    Zostanie wyświetlone ostrzeżenie z informacją, że blokady, które były skojarzone ze sprawą w momencie jej zamknięcia, nie zostaną włączone automatycznie.
+    Zostanie wyświetlone ostrzeżenie informujące, że blokady skojarzone ze sprawą po jej zamknięciu nie zostaną włączone automatycznie.
 
-4. Kliknij **przycisk Tak,** aby ponownie otworzyć sprawę.
+4. Kliknij przycisk **Tak** , aby ponownie otworzyć sprawę.
 
-    Stan strony wysuwanego strony głównej sprawy zostanie zmieniony z Zamknięte **na** **Aktywne**.
+    Stan strony wysuwanej strony głównej sprawy został zmieniony z **Zamknięty** na **Aktywny**.
 
-5. Na stronie **Podstawowe zbierania elektronicznych materiałów dowodowych** **kliknij pozycję Odśwież** , aby zaktualizować stan ponownej sprawy. Ponowne otwarcie może potrwać do 60 minut. 
+5. Na stronie **eDiscovery (Standard)** kliknij pozycję **Odśwież** , aby zaktualizować stan ponownie otwartej sprawy. Ukończenie procesu ponownego otwierania może potrwać do 60 minut. 
 
-    Po zakończeniu procesu stan sprawy zmienia się na **Aktywny na stronie** Podstawowe zbierania elektronicznych materiałów **dowodowych** .
+    Po zakończeniu procesu stan sprawy zostanie zmieniony na **Aktywny** na stronie **eDiscovery (Standard).**
 
-6. (Opcjonalnie) Aby włączyć wszelkie blokady skojarzone z ponownie otwarta sprawą, przejdź do karty  Zarchiwniaki, wybierz hold, a następnie zaznacz pole wyboru w obszarze **Stan** na wysuwanych stronie hold.
+6. (Opcjonalnie) Aby włączyć wszystkie blokady skojarzone z ponownie otwartą sprawą, przejdź do karty **Blokady** , wybierz blokadę, a następnie zaznacz pole wyboru w obszarze **Stan** na stronie wysuwanego blokady.
   
 ## <a name="delete-a-case"></a>Usuwanie sprawy
 
-Możesz również usuwać aktywne i zamknięte sprawy zbierania elektronicznych materiałów dowodowych. Usunięcie sprawy powoduje usunięcie wszystkich wyszukiwań i eksportów w tym przypadku, a sprawa zostanie usunięta z listy spraw na stronie Podstawowe sprawy zbierania elektronicznych  materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Usuniętej sprawy nie można otworzyć ponownie.
+Możesz również usunąć aktywne i zamknięte przypadki zbierania elektronicznych materiałów dowodowych (standardowa). Po usunięciu sprawy wszystkie wyszukiwania i eksporty w tym przypadku zostaną usunięte, a sprawa zostanie usunięta z listy przypadków na stronie **zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa)** w portalu zgodności. Nie można ponownie otworzyć usuniętego przypadku.
 
-Przed usunięciem sprawy (aktywnej lub zamkniętej) należy najpierw usunąć wszystkie zbierania elektronicznych materiałów  dowodowych skojarzone ze sprawą. Obejmuje to usuwanie blokady ze stanem **Wyłączone**. 
+Przed usunięciem sprawy (niezależnie od tego, czy jest ona aktywna, czy zamknięta) należy najpierw usunąć *wszystkie* blokady zbierania elektronicznych materiałów dowodowych skojarzone ze sprawą. Obejmuje to usuwanie blokad ze stanem **Wyłączone**. 
 
-Aby usunąć hold zbierania elektronicznych materiałów dowodowych:
+Aby usunąć blokadę zbierania elektronicznych materiałów dowodowych:
 
-1. Przejdź na **kartę Z blokady** w przypadku, gdy chcesz usunąć.
+1. Przejdź do karty **Blokady** w przypadku, gdy chcesz usunąć.
 
-2. Zaznacz wstrzymaj, który chcesz usunąć.
+2. Wybierz blokadę, którą chcesz usunąć.
 
-3. Na stronie wysuwu kliknij pozycję **Usuń**.
+3. Na stronie wysuwanej kliknij pozycję **Usuń**.
 
-      ![Usuwanie zbierania elektronicznych materiałów dowodowych.](../media/DeleteeDiscoveryHold.png)
+      ![Usuń blokadę zbierania elektronicznych materiałów dowodowych.](../media/DeleteeDiscoveryHold.png)
 
-Aby usunąć sprawę:
+Aby usunąć przypadek:
 
-1. W Centrum zgodności platformy Microsoft 365 **eDiscoveryCore** > , aby wyświetlić listę podstawowych spraw zbierania elektronicznych materiałów dowodowych w organizacji.
+1. W portalu zgodności kliknij pozycję **eDiscoveryCore** > , aby wyświetlić listę przypadków zbierania elektronicznych materiałów dowodowych (Standard) w organizacji.
 
 2. Kliknij nazwę sprawy, którą chcesz usunąć.
 
-3. Na stronie głównej sprawy w obszarze **Stan** kliknij pozycję **Usuń sprawę**.
+3. Na stronie głównej sprawy w obszarze **Stan** kliknij pozycję **Usuń przypadek**.
 
-      ![Usuwanie sprawy.](../media/eDiscoveryCaseHomePageDelete.png)
+      ![Usuń przypadek.](../media/eDiscoveryCaseHomePageDelete.png)
 
-Jeśli sprawa, która próbujesz usunąć, nadal zawiera blokady zbierania elektronicznych materiałów dowodowych, zostanie wyświetlony komunikat o błędzie. Musisz usunąć wszystkie blokady skojarzone ze sprawą, a następnie spróbować ponownie usunąć sprawę.
+Jeśli przypadek, który próbujesz usunąć, nadal zawiera blokadę zbierania elektronicznych materiałów dowodowych, zostanie wyświetlony komunikat o błędzie. Musisz usunąć wszystkie blokady skojarzone ze sprawą, a następnie spróbować ponownie usunąć sprawę.

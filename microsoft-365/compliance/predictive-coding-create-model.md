@@ -1,5 +1,5 @@
 ---
-title: Tworzenie modelu predykcyjnego kodowania w programie Advanced eDiscovery
+title: Tworzenie modelu kodowania predykcyjnego w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,54 +13,54 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Dowiedz się, jak utworzyć model predykcyjnego kodowania w programie Advanced eDiscovery. Jest to pierwszy krok w zakresie korzystania z funkcji uczenia maszynowego w programie Advanced eDiscovery w celu zidentyfikowania istotnej i nieistnieowej zawartości w zestawie recenzji.
-ms.openlocfilehash: 4366c5779aaca6973f5a2c0cc526086d0742d069
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak utworzyć model kodowania predykcyjnego w usłudze eDiscovery (Premium). Jest to pierwszy krok w zakresie korzystania z funkcji uczenia maszynowego w usłudze eDiscovery (Premium), aby ułatwić zidentyfikowanie odpowiedniej i nieistotnej zawartości w zestawie przeglądów.
+ms.openlocfilehash: 86fc72ae73faf25184c5b137a0e433af8125eb54
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985637"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942276"
 ---
-# <a name="create-a-predictive-coding-model-preview"></a>Tworzenie modelu predykcyjnego kodowania (podgląd)
+# <a name="create-a-predictive-coding-model-preview"></a>Tworzenie modelu kodowania predykcyjnego (wersja zapoznawcza)
 
-Pierwszym krokiem w zakresie korzystania z funkcji uczenia maszynowego w zakresie predykcyjnego Advanced eDiscovery jest utworzenie modelu predykcyjnego kodowania. Po utworzeniu modelu można go przeszkolić w celu zidentyfikowania istotnej i nieistnieowej zawartości w zestawie recenzji.
+Pierwszym krokiem w zakresie korzystania z funkcji uczenia maszynowego w kodowaniu predykcyjnym w dziedzinie zbierania elektronicznych materiałów dowodowych (Premium) jest utworzenie modelu kodowania predykcyjnego. Po utworzeniu modelu można go wytrenować, identyfikując odpowiednią i nieistotną zawartość w zestawie przeglądów.
 
-Aby zapoznać się z przepływem pracy predykcyjnego kodowania, zobacz [Informacje na temat predykcyjnego kodowania w programie Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
+Aby przejrzeć przepływ pracy kodowania predykcyjnego, zobacz [Learn about predictive coding in eDiscovery (Premium) (Informacje o kodowaniu predykcyjnym w usłudze eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## <a name="before-you-create-a-model"></a>Przed utworzeniem modelu
 
-- Aby utworzyć model predykcyjnego kodowania, w zestawie recenzji musi być co najmniej 2000 elementów.
+- Aby utworzyć model kodowania predykcyjnego, musi istnieć co najmniej 2000 elementów w zestawie przeglądów.
 
-- Pamiętaj o zatwierdzeniu wszystkich kolekcji do zestawu recenzji przed utworzeniem modelu. Elementy dodane do zestawu recenzji po utworzeniu modelu nie będą przetwarzane i nie przypisywany jest wynik prognozy wygenerowany przez model.
+- Przed utworzeniem modelu należy zatwierdzić wszystkie kolekcje w zestawie przeglądów. Elementy dodane do zestawu przeglądów po utworzeniu modelu nie zostaną przetworzone i nie zostaną przypisane do wyniku przewidywania wygenerowanego przez model.
 
-- Żaden element w zestawie recenzji, który nie zawiera tekstu, nie zostanie przetworzony przez model ani nie zostanie przypisany wynik prognozowania. Elementy z tekstem będą zawarte w zestawie kontrolek lub zestawie szkoleniowym.
+- Żaden element w zestawie przeglądów, który nie zawiera tekstu, nie zostanie przetworzony przez model ani nie zostanie przypisany do wyniku przewidywania. Elementy z tekstem zostaną uwzględnione w zestawie kontrolek lub zestawie szkoleniowym.
 
 ## <a name="create-a-model"></a>Tworzenie modelu
 
-1. W Centrum zgodności platformy Microsoft 365 otwórz sprawę Advanced eDiscovery, a następnie wybierz **kartę Zestawy** recenzji.
+1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), a następnie wybierz kartę **Zestawy przeglądów**.
 
-2. Otwórz zestaw recenzji, a następnie kliknij pozycję **AnalizaSzybki kodowanie predykcyjne (wersja zapoznawcza)**. > 
+2. Otwórz zestaw przeglądów, a następnie kliknij pozycję **AnalizaZarządzanie** >  **kodowaniem predykcyjnym (wersja zapoznawcza).**
 
-   ![Kliknij menu rozwijane Analiza w recenzji, aby przejść do strony Predykcyjne kodowanie.](..\media\ManagePredictiveCoding.png)
+   ![Kliknij menu rozwijane Analizuj w zestawie przeglądów, aby przejść do strony Kodowanie predykcyjne.](..\media\ManagePredictiveCoding.png)
 
-3. Na stronie **Predykcyjne modele kodowania (podgląd)** kliknij pozycję **Nowy model**.
+3. Na stronie **Modele kodowania predykcyjnego (wersja zapoznawcza)** kliknij pozycję **Nowy model**.
 
-4. Na stronie wysuwu wpisz nazwę modelu i opcjonalny opis.
+4. Na stronie wysuwanej wpisz nazwę modelu i opcjonalny opis.
 
-5. Opcjonalnie możesz skonfigurować ustawienia zaawansowane (klikając pozycję Opcje zaawansowane  na wysuwanych stronie) powiązane z poziomem ufności i marginesem błędu. Te ustawienia wpływają na liczbę elementów zawartych w zestawie kontrolek. Zestaw *kontrolek* jest używany w trakcie procesu szkoleniowego do oceny wyników prognozy przypisywanych przez model elementom z etykietami, które wykonuje się podczas zaokrągleń szkolenia. Jeśli organizacja ma wskazówki dotyczące poziomu ufności i marginesu błędu podczas przeglądania dokumentu, określ je w odpowiednich polach. W przeciwnym razie użyj ustawień domyślnych.
+5. Opcjonalnie można skonfigurować ustawienia zaawansowane (klikając **opcje zaawansowane** na stronie wysuwanej) związane z poziomem ufności i marginesem błędu. Te ustawienia mają wpływ na liczbę elementów uwzględnionych w zestawie kontrolek. *Zestaw sterowania* jest używany podczas procesu trenowania do oceny wyników przewidywania przypisywanych przez model do elementów z etykietami wykonywanymi podczas rund szkoleniowych. Jeśli organizacja ma wytyczne dotyczące poziomu ufności i marginesu błędu dla przeglądu dokumentu, określ je w odpowiednich polach. W przeciwnym razie użyj ustawień domyślnych.
 
-6. Kliknij **przycisk Zapisz** , aby utworzyć model.
+6. Kliknij przycisk **Zapisz** , aby utworzyć model.
 
-   Przygotowanie modelu przez system zajmie kilka minut. Gdy wszystko będzie gotowe, możesz przeprowadzić pierwszą rundę szkolenia.
+   Przygotowanie modelu przez system potrwa kilka minut. Gdy wszystko będzie gotowe, możesz wykonać pierwszą rundę trenowania.
 
-## <a name="what-happens-after-you-create-a-model"></a>Co się dzieje po utworzeniu modelu
+## <a name="what-happens-after-you-create-a-model"></a>Co się stanie po utworzeniu modelu
 
-Podczas tworzenia i przygotowywania modelu w tle występują następujące zdarzenia:
+Po utworzeniu modelu podczas tworzenia i przygotowywania modelu w tle występują następujące elementy:
 
-- System oblicza liczbę elementów dla zestawu kontrolek. Ten rozmiar zależy od liczby elementów w zestawie recenzji oraz ustawień poziomu ufności i marginesu błędu. Elementy zestawu kontrolek są losowo wybierane i wyznaczane jako elementy zestawu kontrolek. System zawiera 10 elementów z zestawu kontrolek w pierwszej turze szkolenia.
+- System oblicza liczbę elementów dla zestawu sterowania. Ten rozmiar jest oparty na liczbie elementów w zestawie przeglądów oraz ustawieniach poziomu ufności i marginesu błędu. Elementy zestawu kontrolek są wybierane losowo i wyznaczane jako elementy zestawu sterowania. System zawiera 10 elementów z zestawu sterowania w pierwszej rundzie trenowania.
 
-- System losowo wybiera 40 elementów z zestawu recenzji do dołączona do zestawu szkoleniowego dla pierwszej rundy szkolenia. Dlatego pierwsza runda szkolenia obejmuje 50 elementów do oznaczania etykietami: 40 elementów z zestawu szkoleniowego i 10 elementów z zestawu kontrolek.
+- System losowo wybiera 40 elementów z zestawu przeglądów, które mają zostać uwzględnione w zestawie szkoleniowym dla pierwszej rundy trenowania. W związku z tym pierwsza runda trenowania obejmuje 50 elementów do etykietowania: 40 elementów z zestawu treningowego i 10 elementów z zestawu sterowania.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po utworzeniu modelu do zestawu recenzji następnym krokiem jest wykonanie szkoleń, aby "nauczyć" model w celu zidentyfikowania zawartości istotnej dla Twojego badania. Aby uzyskać więcej informacji, zobacz [Szkolenie modelu predykcyjnego kodowania](predictive-coding-train-model.md).
+Po utworzeniu modelu dla zestawu przeglądów następnym krokiem jest przeprowadzenie rund szkoleniowych w celu "nauczenia" modelu identyfikowania zawartości, która jest odpowiednia dla badania. Aby uzyskać więcej informacji, zobacz [Train a predictive coding model (Trenowanie modelu kodowania predykcyjnego](predictive-coding-train-model.md)).

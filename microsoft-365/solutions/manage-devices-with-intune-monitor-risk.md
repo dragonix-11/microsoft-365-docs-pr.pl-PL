@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: af165f3565e3601ac4e8118535af3913c2cb2af8
-ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
+ms.openlocfilehash: 68ce5f263f24d4ab3271425815834870c71f2a4a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737437"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938977"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Krok 6. Monitorowanie ryzyka urządzenia i zgodności z planami bazowymi zabezpieczeń
 
@@ -39,7 +39,7 @@ Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender obejmuje doł
 Na tej ilustracji:
 - Ochrona punktu końcowego w usłudze Microsoft Defender znacznie zwiększa wyrafinowanie ochrony przed zagrożeniami dla urządzeń. 
 - Chociaż Microsoft Intune umożliwia ustawianie zasad ochrony aplikacji i zarządzanie urządzeniami (w tym zmianami konfiguracji), usługa Defender for Endpoint stale monitoruje urządzenia pod kątem zagrożeń i może podejmować zautomatyzowane działania w celu skorygowania ataków. 
-- Możesz połączyć Microsoft Intune z usługą Defender for Endpoint, aby monitorować ryzyko urządzenia i zgodność z punktami odniesienia zabezpieczeń.
+- Możesz użyć Intune, aby dołączyć urządzenia do usługi Defender for Endpoint. W takim przypadku włączasz również te urządzenia do pracy z ochroną przed utratą danych punktu końcowego (Endpoint DLP) w usłudze Microsoft Purview.
 
 Ten artykuł zawiera następujące kroki:
 - Monitorowanie ryzyka urządzenia
@@ -51,9 +51,9 @@ Jeśli usługa Defender for Endpoint nie została jeszcze skonfigurowana, skonta
 
 Dzięki Ochrona punktu końcowego w usłudze Microsoft Defender wdrożonym można korzystać z sygnałów ryzyka zagrożenia. Dzięki temu można zablokować dostęp do urządzeń na podstawie ich oceny ryzyka. Firma Microsoft zaleca zezwolenie na dostęp do urządzeń z wynikiem ryzyka średnim lub niższym.
 
-W przypadku systemów Android i iOS/iPadOS sygnały zagrożeń mogą być używane w ramach zasad ochrony aplikacji (APP). Aby uzyskać informacje na temat konfigurowania tej funkcji, zobacz [Tworzenie i przypisywanie zasad ochrony aplikacji w celu ustawienia poziomu ryzyka urządzenia](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
+W przypadku systemów Android i iOS/iPadOS sygnały zagrożeń mogą być używane w ramach zasad ochrony aplikacji (APP). Aby uzyskać informacje na temat konfigurowania tej funkcji, zobacz [Tworzenie i przypisywanie zasad ochrony aplikacji w celu ustawienia poziomu ryzyka urządzenia](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
-Dla wszystkich platform można ustawić poziom ryzyka w istniejących zasadach zgodności urządzeń. Zobacz [Tworzenie zasad dostępu warunkowego](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy). 
+Dla wszystkich platform można ustawić poziom ryzyka w istniejących zasadach zgodności urządzeń. Zobacz [Tworzenie zasad dostępu warunkowego](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>Wdrażanie punktów odniesienia zabezpieczeń i monitorowanie zgodności w tych ustawieniach
 

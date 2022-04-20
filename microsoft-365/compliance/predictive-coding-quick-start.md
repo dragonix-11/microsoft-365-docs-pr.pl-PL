@@ -1,5 +1,5 @@
 ---
-title: Predykcyjne kodowanie Advanced eDiscovery — Szybki start
+title: Kodowanie predykcyjne w usłudze eDiscovery (Premium) — szybki start
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,104 +13,104 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Dowiedz się, jak rozpocząć korzystanie z modułu predykcyjnego kodowania w programie Advanced eDiscovery. Ten artykuł zawiera omów wszystkie procedury używania predykcyjnego kodowania do identyfikowania zawartości w zestawie recenzji, który jest najbardziej odpowiedni do analizy.
-ms.openlocfilehash: 2266f44e7b95c118314d76fe019a97b2db24f07c
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+description: Dowiedz się, jak rozpocząć korzystanie z modułu kodowania predykcyjnego w temacie eDiscovery (Premium). W tym artykule przedstawiono kompleksowy proces używania kodowania predykcyjnego do identyfikowania zawartości w zestawie przeglądów, który jest najbardziej odpowiedni dla badania.
+ms.openlocfilehash: 449ef5446ee5a4da87081774037c9b5e2a8d440d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449474"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942320"
 ---
-# <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>Szybki start: predykcyjne kodowanie w Advanced eDiscovery (wersja zapoznawcza)
+# <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>Szybki start: kodowanie predykcyjne w usłudze eDiscovery (Premium) (wersja zapoznawcza)
 
-Ten artykuł zawiera informacje na temat szybkiego rozpoczynania korzystania z predykcyjnego kodowania w programie Advanced eDiscovery. Moduł predykcyjnego kodowania używa inteligentnych funkcji uczenia maszynowego, które ułatwiają oznaczanie dużych ilości zawartości sprawy, która nie jest istotny w analizie. Jest to możliwe dzięki utworzeniu i szkoleniu własnych modeli predykcyjnego kodowania, które ułatwiają określanie priorytetów elementów, które mają być przeglądane.
+W tym artykule przedstawiono szybki start dotyczący korzystania z kodowania predykcyjnego w usłudze Microsoft Purview eDiscovery (Premium). Moduł kodowania predykcyjnego korzysta z inteligentnych możliwości uczenia maszynowego, które ułatwiają wykreślenie dużych ilości zawartości przypadków, która nie jest istotna dla badania. Można to osiągnąć, tworząc i szkoląc własne modele kodowania predykcyjnego, które ułatwiają określanie priorytetów najbardziej odpowiednich elementów do przeglądu.
 
-Oto krótki przegląd procesu predykcyjnego kodowania:
+Oto krótkie omówienie procesu kodowania predykcyjnego:
 
-![Proces Szybki start podpowidania kodu.](..\media\PredictiveCodingQuickStartProcess.png)
+![Szybki start — proces kodowania przewidywania.](..\media\PredictiveCodingQuickStartProcess.png)
 
-Aby rozpocząć, utwórz model i oznacz etykietą aż 50 elementów jako odpowiednie lub nie istotne. Następnie system używa tego szkolenia do stosowania wyników prognozy dla każdego elementu w zestawie recenzji. Umożliwia to filtrowanie elementów na podstawie wyników prognozy, dzięki którym można najpierw przejrzeć najbardziej istotne (lub nieistome) elementy. Jeśli chcesz przeszkolić modele z większą dokładnością i stawkami odwołania, możesz kontynuować znakowanie elementów podczas kolejnych szkoleń do momentu stabilizacji modelu. Po stabilizacji modelu możesz zastosować końcowy filtr prognozowania, aby określić priorytety elementów do przejrzenia.
+Aby rozpocząć, należy utworzyć model, oznaczać etykietą tylko 50 elementów jako odpowiednich lub nieistotnych. Następnie system używa tego szkolenia do stosowania wyników przewidywania do każdego elementu w zestawie przeglądów. Umożliwia to filtrowanie elementów na podstawie wyniku przewidywania, co pozwala najpierw przejrzeć najbardziej odpowiednie (lub nieistotne) elementy. Jeśli chcesz trenować modele z wyższymi wskaźnikami akustyków i współczynników wycofywania, możesz kontynuować etykietowanie elementów w kolejnych rundach szkoleniowych, dopóki model się nie ustabilizuje. Po ustabilizowaniu modelu można zastosować ostateczny filtr przewidywania, aby określić priorytety elementów do przejrzenia.
 
-Aby uzyskać szczegółowe omówienie predykcyjnego kodowania, zobacz [Informacje na temat predykcyjnego kodowania w programie Advanced eDiscovery](predictive-coding-overview.md).
+Aby uzyskać szczegółowe omówienie kodowania predykcyjnego, zobacz [Learn about predictive coding in eDiscovery (Premium) (Informacje o kodowaniu predykcyjnym w Premium).](predictive-coding-overview.md).
 
-## <a name="step-1-create-a-new-predictive-coding-model"></a>Krok 1. Tworzenie nowego modelu predykcyjnego kodowania
+## <a name="step-1-create-a-new-predictive-coding-model"></a>Krok 1. Tworzenie nowego modelu kodowania predykcyjnego
 
-Pierwszym krokiem jest utworzenie nowego modelu predykcyjnego kodowania w zestawie recenzji
+Pierwszym krokiem jest utworzenie nowego modelu kodowania predykcyjnego w zestawie przeglądów
 
-1. W Centrum zgodności platformy Microsoft 365 otwórz sprawę Advanced eDiscovery, a następnie wybierz **kartę Zestawy** recenzji.
+1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), a następnie wybierz kartę **Zestawy przeglądów**.
 
-2. Otwórz zestaw recenzji, a następnie kliknij pozycję **AnalizaSzybki kodowanie predykcyjne (wersja zapoznawcza)**. > 
+2. Otwórz zestaw przeglądów, a następnie kliknij pozycję **AnalizaZarządzanie** >  **kodowaniem predykcyjnym (wersja zapoznawcza).**
 
-   ![Kliknij menu rozwijane Analiza w recenzji, aby przejść do strony Predykcyjne kodowanie.](..\media\ManagePredictiveCoding.png)
+   ![Kliknij menu rozwijane Analizuj w zestawie przeglądów, aby przejść do strony Kodowanie predykcyjne.](..\media\ManagePredictiveCoding.png)
 
-3. Na stronie **Predykcyjne modele kodowania (podgląd)** kliknij pozycję **Nowy model**.
+3. Na stronie **Modele kodowania predykcyjnego (wersja zapoznawcza)** kliknij pozycję **Nowy model**.
 
-4. Na stronie wysuwu wpisz nazwę modelu i opcjonalny opis.
+4. Na stronie wysuwanej wpisz nazwę modelu i opcjonalny opis.
 
-5. Kliknij **przycisk Zapisz** , aby utworzyć model.
+5. Kliknij przycisk **Zapisz** , aby utworzyć model.
 
-   Przygotowanie modelu przez system zajmie kilka minut. Gdy wszystko będzie gotowe, możesz przeprowadzić pierwszą rundę szkolenia.
+   Przygotowanie modelu przez system potrwa kilka minut. Gdy wszystko będzie gotowe, możesz wykonać pierwszą rundę trenowania.
 
-Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Tworzenie modelu predykcyjnego kodowania](predictive-coding-create-model.md).
+Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Tworzenie modelu kodowania predykcyjnego](predictive-coding-create-model.md).
 
-## <a name="step-2-perform-the-first-training-round"></a>Krok 2. Wykonanie pierwszego rundy szkolenia
+## <a name="step-2-perform-the-first-training-round"></a>Krok 2. Wykonanie pierwszej rundy treningowej
 
-Kolejnym krokiem po utworzeniu modelu jest ukończenie pierwszego rundy szkolenia przez oznaczenie elementów jako istotnych lub nie istotnych.
+Po utworzeniu modelu następnym krokiem jest ukończenie pierwszej rundy trenowania przez oznaczenie elementów jako odpowiednich lub nieistotnych.
 
-1. Otwórz zestaw recenzji, a następnie kliknij pozycję **AnalizaSzybki kodowanie predykcyjne (wersja zapoznawcza)**. > 
+1. Otwórz zestaw przeglądów, a następnie kliknij pozycję **AnalizaZarządzanie** >  **kodowaniem predykcyjnym (wersja zapoznawcza).**
 
-2. Na stronie **Predykcyjne modele kodowania (wersja zapoznawcza)** wybierz model, który chcesz przeszkolić.
+2. Na stronie **Modele kodowania predykcyjnego (wersja zapoznawcza)** wybierz model, który chcesz wytrenować.
 
-3. Na karcie **Omówienie** w obszarze **1. kliknij** pozycję **Rozpocznij następne szkolenie**.
+3. Na karcie **Przegląd** w obszarze **Runda 1** kliknij pozycję **Rozpocznij następną rundę treningową**.
 
-   Zostanie **wyświetlona** karta Szkolenie zawierająca 50 elementów do o etykiecie.
+   Zostanie wyświetlona karta **Trenowanie** zawierająca 50 elementów do etykiety.
 
-4. Przejrzyj każdy dokument, a następnie **wybierz przycisk Istotne** lub Nie istotne u dołu okienka odczytu, aby go o etykiecie.
+4. Przejrzyj każdy dokument, a następnie wybierz przycisk **Odpowiednie** lub **Nieprawidłowe** w dolnej części okienka do czytania, aby go oznaczyć etykietą.
 
-   ![Oznaczaj każdy dokument jako odpowiedni lub nieumiejętny.](..\media\TrainModel1.png)
+   ![Oznacz każdy dokument jako odpowiedni lub nieistotny.](..\media\TrainModel1.png)
 
-5. Po oznaczeniu etykietą wszystkich 50 elementów kliknij przycisk **Zakończ**.
+5. Po oznaczeniu wszystkich 50 elementów kliknij przycisk **Zakończ**.
 
-    "Nauka" na etykietach i zaktualizowanie modelu zajmie kilka minut. Po zakończeniu tego procesu dla modelu jest wyświetlany stan **Ready** (Gotowe) na stronie **Predykcyjne modele kodowania (podgląd** ).
+    Po kilku minutach system będzie "uczyć się" z etykietowania i aktualizować model. Po zakończeniu tego procesu stan **Gotowe** jest wyświetlany dla modelu na stronie **Predykcyjne modele kodowania (wersja zapoznawcza).**
 
-Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Szkolenie modelu predykcyjnego kodowania](predictive-coding-train-model.md).
+Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Train a predictive coding model (Trenowanie modelu kodowania predykcyjnego](predictive-coding-train-model.md)).
 
-## <a name="step-3-apply-the-prediction-score-filter-to-items-in-review-set"></a>Krok 3. Stosowanie filtru wyników prognozy do elementów w zestawie recenzji
+## <a name="step-3-apply-the-prediction-score-filter-to-items-in-review-set"></a>Krok 3. Stosowanie filtru wyniku przewidywania do elementów w zestawie przeglądów
 
-Po wydzierżawianiu jednej rundy szkolenia można zastosować filtr wyników prognozy do elementów w zestawie recenzji. Pozwala to przeglądać elementy, które model przewidział jako istotne lub nieumiejętne.   
+Po wykonaniu w dzierżawie jednej rundy treningowej można zastosować filtr wyniku przewidywania do elementów w zestawie przeglądów. Dzięki temu można przejrzeć elementy, które model przewidział jako istotne lub nieistotne.   
 
-1. Otwórz zestaw recenzji.
+1. Otwórz zestaw przeglądów.
 
    ![Kliknij pozycję Filtry, aby wyświetlić stronę wysuwaną Filtry.](..\media\PredictionScoreFilter0.png)
 
-   Wstępnie załadowane filtry domyślne są wyświetlane u góry strony zestawu recenzji. Możesz pozostawić te ustawienia ustawione jako **Dowolne**.
+   Wstępnie załadowane filtry domyślne są wyświetlane w górnej części strony zestawu przeglądów. Możesz pozostawić te ustawienia na **Dowolne**.
 
-2. Kliknij **pozycję Filtry** , aby wyświetlić **stronę wysuwaną** Filtry.
+2. Kliknij pozycję **Filtry** , aby wyświetlić stronę wysuwaną **Filtry** .
 
-3. Rozwiń **sekcję Analiza & kodu predykcyjnego** , aby wyświetlić zestaw filtrów.
+3. Rozwiń sekcję **Analiza & kodowania predykcyjnego** , aby wyświetlić zestaw filtrów.
 
-      ![Prediction score filter in the Analytics & predictive coding section.](..\media\PredictionScoreFilter1.png)
+      ![Filtr wskaźnika przewidywania w sekcji Analiza & kodowania predykcyjnego.](..\media\PredictionScoreFilter1.png)
 
-   Konwencją nazewnictwa dla filtrów wyników prognozy jest **prognozowanie wyniku (nazwa modelu)**. Na przykład nazwa filtru wyników prognozowania dla modelu o nazwie **Model A** to **Wynik prognozy (model A)**.
+   Konwencją nazewnictwa dla filtrów wyników przewidywania jest **wynik przewidywania (nazwa modelu).** Na przykład nazwa filtru wyniku przewidywania dla modelu o nazwie **Model A** to **Wynik przewidywania (Model A)**.
 
-4. Wybierz filtr wyników prognozy, którego chcesz użyć, a następnie kliknij przycisk **Gotowe**.
+4. Wybierz filtr wyniku przewidywania, którego chcesz użyć, a następnie kliknij przycisk **Gotowe**.
 
-5. Na stronie zestawu recenzji kliknij listę rozwijaną filtru wyników prognozy i wpisz wartości minimalne i maksymalne dla zakresu wyników prognozy. Poniższy zrzut ekranu przedstawia na przykład zakres wyników prognozy dla przedziału od **0,5** do **1,0**.
+5. Na stronie zestawu przeglądów kliknij listę rozwijaną filtru wyników przewidywania i wpisz wartości minimalne i maksymalne dla zakresu wyników przewidywania. Na przykład poniższy zrzut ekranu przedstawia zakres wyników przewidywania z zakresu od **.5** do **1.0**.
 
-   ![Wartości minimalne i maksymalne dla filtru wyników prognozy.](..\media\PredictionScoreFilter2.png)
+   ![Wartości minimalne i maksymalne dla filtru wyniku przewidywania.](..\media\PredictionScoreFilter2.png)
 
-6. Kliknij poza filtrem, aby automatycznie zastosować filtr do zestawu recenzji.
+6. Kliknij poza filtrem, aby automatycznie zastosować filtr do zestawu przeglądów.
 
-  Na stronie zestawu recenzji zostanie wyświetlona lista dokumentów z ocenami prognozowania w określonym zakresie.
+  Lista dokumentów z wynikiem przewidywania w określonym zakresie jest wyświetlana na stronie zestawu przeglądów.
 
-Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Stosowanie filtru prognozowania do zestawu recenzji](predictive-coding-apply-prediction-filter.md).
+Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Stosowanie filtru przewidywania do zestawu przeglądów](predictive-coding-apply-prediction-filter.md).
 
-## <a name="step-4-perform-more-training-rounds"></a>Krok 4. Wykonywanie większej liczby rund szkoleniowych
+## <a name="step-4-perform-more-training-rounds"></a>Krok 4. Wykonywanie większej liczby rund treningowych
 
-Bardziej prawdopodobne jest, że trzeba będzie wykonać więcej zaokrągleń szkoleniowych w celu przeszkolenia modułu w celu lepszego przewidzenia istotnych i nieistniejnych elementów w zestawie recenzji. Ogólnie rzecz biorąc, będziesz ćwiczyć model wystarczającą ilość czasu do momentu jego stabilizacji, aby spełnić wymagania.
+Bardziej niż prawdopodobne jest wykonanie większej liczby rund szkoleniowych w celu wytrenowania modułu w celu lepszego przewidywania odpowiednich i nieistotnych elementów w zestawie przeglądów. Ogólnie rzecz biorąc, wytrenujesz model wystarczająco dużo razy, dopóki nie ustabilizuje się na tyle, aby spełniał wymagania.
 
-Aby uzyskać więcej informacji, zobacz [Wykonywanie dodatkowych zaokrągleń szkoleń.](predictive-coding-train-model.md#perform-additional-training-rounds)
+Aby uzyskać więcej informacji, zobacz [Wykonywanie dodatkowych rund szkoleniowych](predictive-coding-train-model.md#perform-additional-training-rounds)
 
-## <a name="step-5-apply-the-final-prediction-score-filter-to-prioritize-review"></a>Krok 5. Stosowanie filtru wyników prognozy końcowej w celu priorytetyzowania recenzji
+## <a name="step-5-apply-the-final-prediction-score-filter-to-prioritize-review"></a>Krok 5. Stosowanie filtru wyniku przewidywania końcowego w celu określenia priorytetów przeglądu
 
-Powtórz instrukcje z kroku 3, aby zastosować końcowy wynik prognozowania do zestawu recenzji w celu priorytetyzowania przeglądu odpowiednich i nieistniejących elementów po zakończeniu wszystkich zaokrągleń szkolenia i stabilizacji modelu.
+Powtórz instrukcje w kroku 3, aby zastosować końcowy wynik przewidywania do zestawu przeglądów, aby ustalić priorytet przeglądu odpowiednich i nieistotnych elementów po zakończeniu wszystkich rund szkoleniowych i ustabilizowaniu modelu.

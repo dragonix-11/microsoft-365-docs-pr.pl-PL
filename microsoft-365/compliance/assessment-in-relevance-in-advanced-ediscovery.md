@@ -1,5 +1,5 @@
 ---
-title: Opis oceny według istotności w programie Advanced eDiscovery
+title: Omówienie oceny w istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,39 +15,39 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: Przegląd etapu oceny i jego roli w określaniu stopnia istotności problemów podczas szkolenia na temat istotności w programie Microsoft 365 Advanced eDiscovery.
+description: Zapoznaj się z omówieniem etapu oceny i jego roli w określaniu bogactwa problemów podczas trenowania istotności w usłudze Microsoft Purview eDiscovery (Premium).
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80ec4f0c362ff403f45123bf837e82c5d2f6ed7e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 29376b8c71947b1f09bd86de90facef6f73e0fdd
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985111"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943958"
 ---
-# <a name="assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Ocena w module Istotność w programie Advanced eDiscovery
+# <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>Ocena w module Istotność w usłudze eDiscovery (Premium)
   
-Advanced eDiscovery umożliwia wcześniejszą ocenę, na przykład zdefiniowanych problemów i danych zaimportowanych w przypadku sprawy. Advanced eDiscovery umożliwia ekspertowi podejmowanie decyzji dotyczących przyjętego podejścia oraz stosowanie tych decyzji do projektu przeglądu dokumentu.
+Usługa Microsoft Purview eDiscovery (Premium) umożliwia wczesną ocenę, na przykład w przypadku zdefiniowanych problemów i danych zaimportowanych w danym przypadku. eDiscovery (Premium) umożliwia ekspertom podejmowanie decyzji dotyczących przyjętego podejścia i stosowanie tych decyzji do projektu przeglądu dokumentu.
   
-## <a name="understanding-assessment"></a>Opis oceny
+## <a name="understanding-assessment"></a>Omówienie oceny
 
-W ramach oceny ekspert przegląda losowy zestaw co najmniej 500 plików, które są używane do określenia bogatych problemów i tworzenia statystyk, które odzwierciedlają wyniki szkoleń. Ocena jest skuteczna, gdy zostanie znaleziona wystarczająca ilość odpowiednich plików, aby osiągnąć poziom statystyczny, który pomoże ustalić Advanced eDiscovery istotności w celu zapewnienia dokładnych statystyk i skutecznego określenia punktu stabilizacji w procesie szkoleniowym. 
+W obszarze Ocena ekspert przegląda losowy zestaw co najmniej 500 plików, które służą do określania bogactwa problemów i tworzenia statystyk, które odzwierciedlają wyniki trenowania. Ocena jest pomyślna, gdy zostanie stwierdzona wystarczająca liczba odpowiednich plików, aby osiągnąć poziom statystyczny, który pomoże w zbierania elektronicznych materiałów dowodowych (Premium) Istotność w celu zapewnienia dokładnych statystyk i skutecznego określenia punktu stabilizacji w procesie trenowania. 
   
-Im większa liczba odpowiednich plików w zestawie oceniań, tym dokładniejszy jest statystyki i skuteczność algorytmu stabilności. Liczba odpowiednich plików w plikach oceniania zależy od skali problemu. Richness to szacowany procent odpowiednich plików w zestawie odpowiednim dla problemu. Problemy o wyższym poziomie bogatości dotrą do większej liczby plików szybciej niż problemy o niższym poziomie rozbudowy. Problemy o bardzo niskim poziomie (na przykład 2% lub mniej) będą wymagały bardzo dużego zestawu ocen do osiągnięcia znacznej liczby odpowiednich plików.
+Im większa liczba odpowiednich plików w zestawie oceny, tym dokładniejsze są statystyki i skuteczność algorytmu stabilności. Liczba odpowiednich plików w plikach oceny zależy od bogactwa problemu. Richness to szacowany procent odpowiednich plików w zestawie istotnych dla problemu. Problemy z wyższym bogactwem szybciej osiągną większą liczbę odpowiednich plików niż problemy z niższym bogactwem. Problemy z bardzo niskim bogactwem (na przykład 2% lub mniej) będą wymagały bardzo dużej oceny ustawionej w celu osiągnięcia znacznej liczby odpowiednich plików.
   
-Statystyki, które są prezentowane na kartach Śledź i zdecyduj podczas szkolenia i po obliczeniach wsadowych, obejmują szacunki odwołania dla różnych zestawów recenzji. W statystyce oszacowania oparte na przykładowym zestawie (w tym przypadku pliki testów) obejmują margines błędu i poziom ufności marginesu błędu. Na przykład przy szacowanym odwołaniu 80% może być margines błędu plus lub minus 5% przy poziomie ufności 95%. Oznacza to, że szacowane odwołanie w rzeczywistości wynosi 75%–85%, a to oszacowanie jest ufne na poziomie 95%. Im większy zestaw ocen, margines błędu staje się mniejszy, a statystyki są bardziej dokładne. 
+Statystyki przedstawione na kartach Śledź i Zdecyduj podczas trenowania i po obliczeniu usługi Batch obejmują szacowanie odwołania dla różnych zestawów przeglądów. W statystykach oszacowania oparte na przykładowym zestawie (w tym przypadku pliki oceny) obejmują margines błędu i poziom ufności tego marginesu błędu. Na przykład szacowane wycofanie 80% może mieć margines błędu plus lub minus 5%, przy poziomie ufności wynoszącym 95%. Oznacza to, że szacowane wycofanie wynosi w rzeczywistości 75%-85%, a to oszacowanie ma 95% ufności. Większy zestaw oceny, margines błędu staje się mniejszy, a statystyki są dokładniejsze. 
   
-Po przeglądzie przez eksperta wstępnego zestawu 500 plików oceny wstępnej istotność może ustalić bieżącą marżę błędu przy odwołaniu wartości. Istotność będzie również zalecać osiągnięcie domyślnego marginesu błędu w celu zoptymalizowania zestawu ocen. Oto kilka przykładów:
+Po przeglądzie przez eksperta wstępnego zestawu oceny 500 plików, funkcja Istotność może określić bieżący margines błędu wartości wycofania. Istotność będzie również zalecać domyślny margines błędu, aby osiągnąć, aby zoptymalizować zestaw oceny. Oto kilka przykładów:
   
-- Jeśli w zestawie ocen margines błędu wynosi plus lub minus 10%, nie zaleca się przechodzenia do szkolenia (nie jest wymagany żaden dodatkowy przegląd oceny). 
+- Jeśli zestaw oceny już przyniósł margines błędu wynoszący plus lub minus 10%, firma Relevance zaleci przejście do szkolenia (nie jest wymagany dodatkowy przegląd oceny). 
 
-- Jeśli w zestawie oceniań margines błędu wynosi plus lub minus 13%, istotność może zalecić osiągnięcie mniejszego marginesu podczas przeglądania innego zestawu plików ocen. 
+- Jeśli zestaw oceny przyniósł margines błędu wynoszący plus lub minus 13%, funkcja Istotność może zalecić przegląd innego zestawu plików oceny w celu osiągnięcia mniejszego marginesu. 
 
-- Jeśli ich poziom jest bardzo niski, istotność może zatrzymać ocenę, nawet jeśli margines błędu jest duży (co czyni statystykę niepraktyczną), ponieważ zestaw ocen niezbędny do osiągnięcia użytecznej marginesu błędu jest za duży.
+- Jeśli poziom bogactwa jest bardzo niski, istotność może zalecić zatrzymanie oceny, mimo że margines błędu jest duży (co sprawia, że statystyki są niepraktyczne), ponieważ zestaw oceny potrzebny do osiągnięcia użytecznego marginesu błędu jest zbyt duży.
 
-Każdy problem ma swój własny bogaty i aktualny margines błędu, w wyniku czego szacowana liczba dodatkowych plików oceny. Następny zestaw ocen jest tworzony zgodnie z maksymalną liczbą plików (maksymalnie 1000 w jednym zestawie).
+Każdy problem ma własne bogactwo, bieżący margines błędu i w rezultacie szacowaną liczbę dodatkowych plików oceny. Następny zestaw oceny jest tworzony zgodnie z maksymalną liczbą plików (maksymalnie 1000 w jednym zestawie).
   
-Możesz zaakceptować zalecenia dotyczące istotności lub dostosować bieżącą marżę błędu do swoich potrzeb. Domyślna bieżąca marginesu błędu jest określana do odwołania przy wartości równej lub powyżej 75%.
+Możesz zaakceptować zalecenia dotyczące istotności lub dostosować bieżący margines błędu zgodnie z potrzebami. Domyślny bieżący margines błędu jest określany dla odwołania na poziomie równym lub wyższym niż 75%.
   
 > [!NOTE]
-> Etap oceny można pominąć na **\>** karcie Śledzenie istotności w rozwiniętym widoku problemu przez wyczyszczenie pola wyboru Ocena dla każdego problemu, a  następnie w przypadku "wszystkich problemów". W efekcie nie będzie żadnych statystyk dotyczących tego problemu. Wyczyszczenie **pola wyboru** Ocena jest możliwe tylko przed rozpoczęciem oceniania. Jeśli w przypadku sprawy występuje wiele problemów, ocena jest pomijana tylko w przypadku wyczyszczenia pola wyboru dla każdego problemu.
+> Etap oceny można pominąć na karcie **Śledzenie istotności \>** w rozwiniętym widoku problemu, usuwając pole wyboru **Ocena** dla każdego problemu, a następnie dla "wszystkich problemów". W związku z tym nie będzie żadnych statystyk dla tego problemu. Wyczyszczenie pola wyboru **Ocena** można wykonać tylko przed przeprowadzeniem oceny. Jeśli istnieje wiele problemów w danym przypadku, ocena jest pomijana tylko wtedy, gdy pole wyboru jest wyczyszczone dla każdego problemu.

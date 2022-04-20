@@ -43,9 +43,9 @@
           href: manage-devices-with-intune-require-compliance.md
         - name: Krok nr 5. Wdrażanie profilów urządzeń
           href: manage-devices-with-intune-configuration-profiles.md
-        - name: Krok 6. Monitorowanie ryzyka urządzenia i zgodności z planami bazowymi zabezpieczeń
+        - name: Krok nr 6. Monitorowanie ryzyka urządzenia i zgodności z planami bazowymi zabezpieczeń
           href: manage-devices-with-intune-monitor-risk.md
-        - name: 'Krok 7. Wdrażanie funkcji ochrony przed utratą danych (DLP, data loss prevention) za pomocą funkcji ochrony informacji'
+        - name: Krok nr 7. Wdrażanie funkcji ochrony przed utratą danych (DLP) za pomocą funkcji ochrony informacji
           href: manage-devices-with-intune-dlp-mip.md
     - name: Konfigurowanie bezpiecznej współpracy za pomocą Microsoft 365
       items:
@@ -165,13 +165,13 @@
                   href: ../admin/add-users/remove-former-employee-step-2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Krok nr 3. Czyszczenie i blokowanie urządzenia przenośnego byłego pracownika.
                   href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Krok nr 4. Przesyłanie dalej wiadomości e-mail byłego pracownika do innego pracownika lub konwertowanie na udostępnioną skrzynkę pocztową
+                - name: Krok nr 4. Przesyłanie dalej skrzynki pocztowej byłego pracownika do innego pracownika lub konwertowanie na udostępnioną skrzynkę pocztową
                   href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Krok nr 5. Udzielanie innym pracownikom dostępu do danych usługi OneDrive i programu Outlook
                   href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Krok 6. Usuwanie licencji Microsoft 365 od byłego pracownika
+                - name: Krok nr 6. Usuwanie licencji platformy Microsoft 365 udzielonej byłemu pracownikowi
                   href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Krok 7. Usuwanie konta użytkownika byłego pracownika
+                - name: Krok nr 7. Usuwanie konta użytkownika byłego pracownika
                   href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Migrowanie zawartości na platformę Microsoft 365
           href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
@@ -193,9 +193,9 @@
               href: deploy-voice.md
             - name: Krok nr 1. Wybieranie rozwiązania głosowego
               href: /MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Krok nr 2. - Konfigurowanie systemu telefonicznego
+            - name: Krok nr 2. — Konfigurowanie systemu telefonicznego
               href: /MicrosoftTeams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Krok nr 3. - Konfigurowanie łączności z siecią PSTN
+            - name: Krok nr 3. — Konfigurowanie łączności z siecią PSTN
               items:
                 - name: Opcja planu połączeń
                   href: /MicrosoftTeams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
@@ -306,13 +306,13 @@
           href: /onedrive/plan-onedrive-enterprise
     - name: Zgodność
       items:
-        - name: Rozwiązania ryzyka wewnętrznego na platformie Microsoft 365
+        - name: Rozwiązania ryzyka wewnętrznego w usłudze Microsoft Purview
           href: ../compliance/insider-risk-solution-overview.md
         - name: Inspekcja rozwiązań
           href: ../compliance/auditing-solutions-overview.md
         - name: Rozwiązania zbierania elektronicznych materiałów dowodowych na platformie Microsoft 365
           href: ../compliance/ediscovery.md
-        - name: Microsoft 365 Advanced eDiscovery
+        - name: Zbieranie elektronicznych materiałów dowodowych w usłudze Microsoft Purview (warstwa Premium)
           href: ../compliance/overview-ediscovery-20.md
         - name: Plany działań dotyczących zgodności z przepisami
           items:

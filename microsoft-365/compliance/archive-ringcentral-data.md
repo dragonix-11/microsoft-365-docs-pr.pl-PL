@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych RingCentral z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po archiwizacji tych danych można używać funkcji zgodności, takich jak blokada prawna, zbieranie elektronicznych materiałów dowodowych i zasady przechowywania, do zarządzania danymi innych firm.
-ms.openlocfilehash: 241764bee0ca708adc6dd294c5b7f5e039be784b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 5b1186abdf842fcc2f66638258c20accb2b28980
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760148"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944068"
 ---
 # <a name="set-up-a-connector-to-archive-ringcentral-data"></a>Konfigurowanie łącznika do archiwizowania danych RingCentral
 
-Użyj łącznika Veritas w Centrum zgodności platformy Microsoft 365, aby zaimportować i zarchiwizować dane z platformy RingCentral do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [RingCentral](https://www.veritas.com/insights/merge1/ringcentral) skonfigurowany do przechwytywania elementów ze źródła danych innych firm i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość, taką jak czaty, załączniki, zadania, notatki i wpisy z aplikacji RingCentral, na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkownika w Microsoft 365.
+Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy RingCentral do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [RingCentral](https://www.veritas.com/insights/merge1/ringcentral) skonfigurowany do przechwytywania elementów ze źródła danych innych firm i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość, taką jak czaty, załączniki, zadania, notatki i wpisy z aplikacji RingCentral, na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkownika w Microsoft 365.
 
-Po zapisaniu danych RingCentral w skrzynkach pocztowych użytkowników można zastosować Microsoft 365 funkcje zgodności, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika RingCentral może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zapisaniu danych RingCentral w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika RingCentral może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-ringcentral-data"></a>Omówienie archiwizacji danych RingCentral
 
@@ -35,7 +35,7 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 2. Raz na 24 godziny elementy RingCentral są kopiowane do witryny Veritas Merge1. Łącznik konwertuje również elementy RingCentral na format wiadomości e-mail.
 
-3. Łącznik RingCentral, który tworzysz w Centrum zgodności platformy Microsoft 365, codziennie łączy się z witryną Veritas Merge1 i przesyła zawartość RingCentral do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
+3. Łącznik RingCentral tworzony w portalu zgodności, codziennie łączy się z witryną Veritas Merge1 i przesyła zawartość RingCentral do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
 
 4. Łącznik importuje przekonwertowane elementy do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości *Poczta e-mail* automatycznego mapowania użytkownika zgodnie z opisem w [kroku 3](#step-3-map-users-and-complete-the-connector-setup). Podfolder w folderze Skrzynka odbiorcza o nazwie **RingCentral** jest tworzony w skrzynkach pocztowych użytkownika, a elementy są importowane do tego folderu. Łącznik określa skrzynkę pocztową do zaimportowania elementów przy użyciu wartości właściwości *Poczta e-mail* . Każdy element RingCentral zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika elementu.
 
@@ -45,13 +45,13 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 - Utwórz aplikację RingCentral, aby pobrać dane z konta RingCentral. Aby uzyskać instrukcje krok po kroku dotyczące tworzenia aplikacji, zobacz [Merge1 Third-Party Connectors User Guide (Scal1 łączniki innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20RingCentral%20User%20Guide.pdf)).
 
-- Użytkownik, który tworzy łącznik RingCentral w kroku 1 (i kończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który tworzy łącznik RingCentral w kroku 1 (i kończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i w związku z tym nie są objęte zobowiązaniami dotyczącymi zgodności Microsoft 365 i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-the-ringcentral-connector"></a>Krok 1. Konfigurowanie łącznika RingCentral
 
-Pierwszym krokiem jest dostęp do strony **Łączniki danych** w Centrum zgodności platformy Microsoft 365 i utworzenie łącznika dla danych RingCentral.
+Pierwszym krokiem jest dostęp do strony **Łączniki danych** w portalu zgodności i utworzenie łącznika dla danych RingCentral.
 
 1. Przejdź do pozycji <https://compliance.microsoft.com> , a następnie kliknij pozycję **Łączniki** >  **danychRingCentral**.
 
@@ -67,11 +67,11 @@ Pierwszym krokiem jest dostęp do strony **Łączniki danych** w Centrum zgodno�
 
 Drugim krokiem jest skonfigurowanie łącznika RingCentral w lokacji Veritas Merge1. Aby uzyskać informacje o sposobie konfigurowania łącznika RingCentral, zobacz [Merge1 Third-Party Connectors User Guide (Przewodnik użytkownika łączników innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20RingCentral%20User%20Guide.pdf)).
 
-Po kliknięciu **przycisku Zapisz & Zakończ** zostanie wyświetlona strona **Mapowanie użytkownika** w kreatorze łącznika w Centrum zgodności platformy Microsoft 365.
+Po kliknięciu przycisku **Zapisz & Zakończ** zostanie wyświetlona strona **Mapowanie użytkownika** w kreatorze łącznika w portalu zgodności.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Krok 3. Mapowanie użytkowników i ukończenie konfiguracji łącznika
 
-Aby zamapować użytkowników i ukończyć konfigurację łącznika w Centrum zgodności platformy Microsoft 365, wykonaj następujące kroki:
+Aby zamapować użytkowników i ukończyć konfigurację łącznika w portalu zgodności, wykonaj następujące kroki:
 
 1. Na stronie **Mapowanie użytkowników RingCentral w celu Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników. Elementy RingCentral obejmują właściwość o nazwie *Email*, która zawiera adresy e-mail dla użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z użytkownikiem Microsoft 365, elementy zostaną zaimportowane do skrzynki pocztowej tego użytkownika.
 
@@ -79,7 +79,7 @@ Aby zamapować użytkowników i ukończyć konfigurację łącznika w Centrum zg
 
 ## <a name="step-4-monitor-the-ringcentral-connector"></a>Krok 4. Monitorowanie łącznika RingCentral
 
-Po utworzeniu łącznika RingCentral możesz wyświetlić stan łącznika w Centrum zgodności platformy Microsoft 365.
+Po utworzeniu łącznika RingCentral możesz wyświetlić stan łącznika w portalu zgodności.
 
 1. Przejdź do strony <https://compliance.microsoft.com/> i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 

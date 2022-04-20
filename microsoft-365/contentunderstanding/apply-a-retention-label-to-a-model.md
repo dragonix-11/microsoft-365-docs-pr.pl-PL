@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak zastosować etykietę przechowywania do modelu w SharePoint Syntex.
-ms.openlocfilehash: 17bfc0121d18f30b03cc42585cb214b649597ff6
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 281ff940377f033690f1ed1e7146c8aefe645bf1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882511"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941814"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Stosowanie etykiety przechowywania do modelu w SharePoint Syntex
 
@@ -36,7 +36,7 @@ Etykiety przechowywania umożliwiają stosowanie ustawień przechowywania do dok
 Istniejącą etykietę przechowywania można zastosować do modelu za pomocą ustawień modelu na stronie głównej modelu. 
 
 > [!Important]
-> Aby etykiety przechowywania były dostępne do zastosowania w modelach interpretacji dokumentów, należy [je utworzyć](../compliance/file-plan-manager.md#create-retention-labels) i [opublikować](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) w Centrum zgodności platformy Microsoft 365.
+> Aby etykiety przechowywania były dostępne do zastosowania do modeli interpretacji dokumentów, należy [je utworzyć](../compliance/file-plan-manager.md#create-retention-labels) i [opublikować](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) w portalu zgodności usługi Microsoft Purview.
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Aby dodać etykietę przechowywania do modelu zrozumienia dokumentu
 
@@ -74,7 +74,7 @@ Na przykład wszystkie dokumenty *z powiadomieniem o ubezpieczeniach* , które i
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Aby dodać etykietę przechowywania do modelu przetwarzania formularzy
 
 > [!Important]
-> Aby etykiety przechowywania były dostępne do zastosowania do modelu przetwarzania formularzy, należy [je utworzyć](../compliance/file-plan-manager.md#create-retention-labels) i [opublikować](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) w Centrum zgodności platformy Microsoft 365.
+> Aby etykiety przechowywania były dostępne do zastosowania do modelu przetwarzania formularzy, należy [je utworzyć](../compliance/file-plan-manager.md#create-retention-labels) i [opublikować](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) w portalu zgodności usługi Microsoft Purview.
 
 Podczas tworzenia modelu można zastosować etykietę przechowywania do modelu przetwarzania formularzy lub zastosować ją do istniejącego modelu.
 

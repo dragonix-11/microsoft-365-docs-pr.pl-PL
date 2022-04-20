@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie rekordami w Advanced eDiscovery
+title: Zarządzanie blokadami zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,120 +17,120 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak ująć w treści treści i ich źródła danych, aby zachować odpowiednią zawartość Advanced eDiscovery przypadku.
+description: Dowiedz się, jak umieszczać blokady na opiekunach i ich źródłach danych, aby zachować odpowiednią zawartość w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: d731c0cda31f96f5274ca0c2fd56d5e14901f3a9
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: 16a4932993a652d8d7d71be78fd23a238fc90759
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406161"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939658"
 ---
-# <a name="manage-holds-in-advanced-ediscovery"></a>Zarządzanie rekordami w Advanced eDiscovery
+# <a name="manage-holds-in-ediscovery-premium"></a>Zarządzanie blokadami zbierania elektronicznych materiałów dowodowych (Premium)
 
-Przy użyciu sprawy Advanced eDiscovery można utworzyć blokady w celu zachowania zawartości, która może być istotny dla danej sprawy. Przy użyciu Advanced eDiscovery przechowywania można umieścić blokady na przechwytników i ich źródłach danych. Ponadto możesz umieścić w skrzynkach pocztowych i witrynach internetowych niezabędące grupy OneDrive dla Firm. Możesz także umieścić wstrzymaj skrzynkę pocztową grupy, witrynę SharePoint, a OneDrive dla Firm witrynie grupy Microsoft 365 grupy. Podobnie możesz umieścić wstrzymaj skrzynkę pocztową i witrynę skojarzoną z Microsoft Teams. Po umieszczenie lokalizacji zawartości w miejscu przechowywania zawartość jest umieszczana do czasu zwolnienia przechowywania, usunięcia określonej lokalizacji danych lub usunięcia całkowicie zasad przechowywania.
+Możesz użyć sprawy zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), aby utworzyć blokady w celu zachowania zawartości, która może być istotna dla Twojej sprawy. Korzystając z funkcji archiwizacji zbierania elektronicznych materiałów dowodowych (Premium), można umieścić blokady na opiekunach i ich źródłach danych. Ponadto możesz wstrzymać skrzynki pocztowe i witryny OneDrive dla Firm. Możesz również umieścić blokadę w skrzynce pocztowej grupy, SharePoint lokacji i witrynie OneDrive dla Firm dla grupy Microsoft 365. Podobnie możesz umieścić blokadę w skrzynce pocztowej i witrynie skojarzonej z Microsoft Teams. W przypadku wstrzymania lokalizacji zawartości zawartość jest przechowywana do momentu zwolnienia opiekuna, usunięcia określonej lokalizacji danych lub całkowitego usunięcia zasad blokady.
 
-## <a name="manage-custodian-based-holds"></a>Zarządzanie blokadymi opartymi na u użytkownikach
+## <a name="manage-custodian-based-holds"></a>Zarządzanie blokadami opartymi na opiekunach
 
-W niektórych przypadkach może zostać wskazany zestaw opiekunów i zdecydowano się na zachowanie danych podczas tej sprawy. Po Advanced eDiscovery przechowywania tych elementy uruchamiacze są automatycznie dodawane do zasad przechowywania w czacie użytkownika i wybranych przez nich źródeł danych.
+W niektórych przypadkach możesz mieć zestaw opiekunów, których zidentyfikowano i którzy zdecydowali się zachować swoje dane w trakcie sprawy. W przypadku zbierania elektronicznych materiałów dowodowych (Premium), gdy opiekunowie zostaną zatrzymani, użytkownik i wybrane źródła danych zostaną automatycznie dodane do zasad blokady opiekuna.
 
-Aby wyświetlić zasady przechowywania dla osób, które nie mają prawa do przechowywania:
+Aby wyświetlić zasady blokady opiekuna:
 
-1. W Centrum zgodności platformy Microsoft 365 wiadomości kliknij pozycję **zbierania elektronicznych** materiałów dowodowych > Zaawansowane, aby wyświetlić listę spraw w Twojej organizacji.
+1. W portalu zgodności usługi Microsoft Purview kliknij pozycję **eDiscovery > Advanced** , aby wyświetlić listę przypadków w organizacji.
 
-2. Przejdź do karty **Źródła** , aby dodać opiekunów w obrębie sprawy. Aby dowiedzieć się, jak dodawać i umieszczać przechowywać przechowywać w Advanced eDiscovery przypadku, zobacz Dodawanie osób do [sprawy](add-custodians-to-case.md). Jeśli zostały już dodane i umieszczone w agorze, przejdź do kroku 3.
+2. Przejdź do karty **Źródła** , aby dodać opiekunów w twojej sprawie. Aby dowiedzieć się, jak dodać i umieścić opiekunów w zawieszeniu w sprawie zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Dodawanie opiekunów do sprawy](add-custodians-to-case.md). Jeśli dodano już opiekunów i zawiesiliśmy ich, przejdź do kroku 3.
 
-3. Przejdź na kartę **Zachowaje** i kliknij **pozycjęHoldianHold\<HoldId>** ..
+3. Przejdź do karty **Blokady** i kliknij pozycję **KustoszHold\<HoldId>**.
 
-4. Na wysuwanych stronie możesz zobaczyć statystykę blokowania dla zasad. Można również wykonywać akcje, takie jak zastosowanie zapytania do holdsu opartego na danych do przechowywania. Aby uzyskać więcej informacji na temat tworzenia zapytania wstrzymywania i używania warunków, zobacz Zapytania słów kluczowych [i warunki wyszukiwania dotyczące wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
+4. Na stronie wysuwanej możesz zobaczyć statystyki blokady dla zasad. Możesz również wykonywać akcje, takie jak stosowanie zapytania do blokady opartej na opiekunie. Aby uzyskać więcej informacji na temat tworzenia zapytania blokady i używania [warunków, zobacz Zapytania słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
 
-## <a name="manage-non-custodial-holds"></a>Zarządzanie blokadym typu non-ialial holdsial
+## <a name="manage-non-custodial-holds"></a>Zarządzanie blokadami bez opieki
 
-Po utworzeniu wstrzymywania dostępne są następujące opcje zakresu zawartości przechowywanej w określonych lokalizacjach zawartości:
+Podczas tworzenia blokady dostępne są następujące opcje określania zakresu zawartości przechowywanej w określonych lokalizacjach zawartości:
 
-- Tworzysz nieskończoną liczbę miejsc, w których cała zawartość jest umieszczana w hold. Można również utworzyć hold oparty na kwerendzie, w którym wstrzymywana jest tylko zawartość, która jest dosyć do kwerendy wyszukiwania.
+- Tworzysz nieskończoną blokadę, w której cała zawartość jest wstrzymana. Alternatywnie można utworzyć blokadę opartą na zapytaniach, w której wstrzymana jest tylko zawartość zgodna z zapytaniem wyszukiwania.
   
-- Zakres dat można określić, aby była w tym zakresie tylko ta zawartość, która została wysłana, odebrana lub utworzona w tym zakresie. Ewentualnie możesz przechowywać całą zawartość niezależnie od tego, kiedy została wysłana, odebrana lub utworzona.
+- Można określić zakres dat do przechowywania tylko zawartości, która została wysłana, odebrana lub utworzona w tym zakresie dat. Alternatywnie możesz przechowywać całą zawartość niezależnie od tego, kiedy została wysłana, odebrana lub utworzona.
 
-Aby utworzyć zbędną przechowywania danych dla sprawy Advanced eDiscovery przypadku:
+Aby utworzyć blokadę bez nadzoru dla sprawy zbierania elektronicznych materiałów dowodowych (Premium):
 
-1. Na liście <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> pozycję Zbierania elektronicznych materiałów dowodowych **> zaawansowane**, aby wyświetlić listę spraw w Organizacji.
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a> kliknij pozycję **eDiscovery > Advanced** , aby wyświetlić listę przypadków w organizacji.
   
-2. Kliknij **przycisk** Otwórz obok sprawy, w której chcesz utworzyć blokady.
+2. Kliknij przycisk **Otwórz** obok przypadku, w którym chcesz utworzyć blokady.
   
-3. Na stronie głównej sprawy kliknij kartę **Z blokady** .
+3. Na stronie głównej sprawy kliknij kartę **Blokady** .
   
 4. Na karcie **Blokady** kliknij pozycję **Utwórz**.
   
-5. Na stronie **Nadaj nazwę** hold (Nadaj nazwę holdowi). Nazwa hold musi być unikatowa w Twojej organizacji.
+5. Na stronie **Nazwa blokady podaj** nazwę blokady. Nazwa blokady musi być unikatowa w organizacji.
 
-6. (Opcjonalnie) W **polu** Opis dodaj opis hold.
+6. (Opcjonalnie) W polu **Opis** dodaj opis blokady.
   
 7. Kliknij **Dalej**.
   
-8. Wybierz lokalizacje zawartości, które mają zostać zawieszone. Możesz umieścić skrzynki pocztowe, witryny i foldery publiczne w miejscu przechowywania.
+8. Wybierz lokalizacje zawartości, które chcesz umieścić w blokadzie. Skrzynki pocztowe, witryny i foldery publiczne można wstrzymać.
 
-   1. **Exchange-mail** — kliknij pozycję Wybierz użytkowników, grupy lub zespoły **,** a następnie ponownie kliknij pozycję Wybierz użytkowników, grupy lub **zespoły,** aby określić skrzynki pocztowe do przechowywania. Użyj pola wyszukiwania, aby znaleźć skrzynki pocztowe użytkowników i grupy dystrybucyjne (aby umieścić je w miejscu przechowywania w skrzynkach pocztowych członków grupy), aby umieścić je w a hold. Możesz także umieścić wstrzymaj skojarzoną skrzynkę pocztową dla grupy Microsoft 365 lub zespołu Microsoft. Zaznacz pole wyboru użytkownik, grupa, zespół, kliknij pozycję **Wybierz**, a następnie kliknij pozycję **Gotowe**.
-
-      > [!NOTE]
-      > Po kliknięciu **przycisku Wybierz użytkowników, grupy lub zespoły** w celu określenia skrzynek pocztowych, które mają być zawieszone, wyświetlany s picker skrzynki pocztowej jest pusty. Jest to zaprojektowany w celu zwiększenia wydajności. Aby dodać osoby do tej listy, wpisz nazwę (co najmniej 3 znaki) w polu wyszukiwania.
-
-   1. **SharePoint witryny —** kliknij pozycję Wybierz witryny, a następnie ponownie kliknij  pozycję Wybierz witryny, aby określić SharePoint, OneDrive dla Firm, które mają być zawieszone. Wpisz adres URL każdej witryny, którą chcesz umieścić w miejscu przechowywania. Możesz również dodać adres URL witryny SharePoint grupy Microsoft 365 lub zespołu Microsoft. Kliknij **pozycję** Wybierz, a następnie kliknij pozycję **Gotowe**.
+   1. **Exchange wiadomości e-mail** — kliknij pozycję **Wybierz użytkowników, grupy lub zespoły,** a następnie kliknij ponownie pozycję **Wybierz użytkowników, grupy lub zespoły,** aby określić skrzynki pocztowe do wstrzymania. Użyj pola wyszukiwania, aby znaleźć skrzynki pocztowe użytkowników i grupy dystrybucyjne (aby zatrzymać skrzynki pocztowe członków grupy), aby zostać wstrzymane. Możesz również umieścić blokadę w skojarzonej skrzynce pocztowej dla grupy Microsoft 365 lub zespołu firmy Microsoft. Zaznacz pole wyboru użytkownik, grupa, zespół, kliknij pozycję **Wybierz**, a następnie kliknij pozycję **Gotowe**.
 
       > [!NOTE]
-      > Adres URL konta użytkownika OneDrive zawiera jego główną nazwę użytkownika (GŁÓWNĄ nazwę użytkownika), na przykład `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`). W rzadkich przypadkach, w której głównej nazwa sieci OneDrive głównej osoby, adres URL tej osoby również zostanie zmieniony, aby włączyć nową nazwę UPN. Jeśli konto użytkownika OneDrive jest częścią niebędące przechowywania danych i jego głównej nazwy użytkownika zostanie zmieniona, należy zaktualizować to hold i wskazać nowy adres URL OneDrive URL. Aby uzyskać więcej informacji, zobacz [Jak zmiany głównej sieci użytkowników wpływają na OneDrive URL](/onedrive/upn-changes).
+      > Po kliknięciu **przycisku Wybierz użytkowników, grupy lub zespoły w** celu określenia skrzynek pocztowych, które mają zostać wstrzymane, wyświetlany selektor skrzynki pocztowej jest pusty. Jest to z założenia w celu zwiększenia wydajności. Aby dodać osoby do tej listy, wpisz nazwę (co najmniej 3 znaki) w polu wyszukiwania.
 
-   1. **Exchange foldery** publiczne — przesuń przełącznik do pozycji Wszystkie, aby umieścić wszystkie foldery publiczne w Exchange Online wstrzymaj. Nie można wybrać konkretnych folderów publicznych, które mają zostać zawieszone. Jeśli nie chcesz przechowywać folderów publicznych, pozostaw przełącznik ustawiony jako Brak.
+   1. **SharePoint witryn** — kliknij pozycję **Wybierz witryny,** a następnie kliknij ponownie pozycję **Wybierz witryny**, aby określić witryny SharePoint i OneDrive dla Firm, które mają zostać wstrzymane. Wpisz adres URL każdej witryny, która ma zostać wstrzymana. Możesz również dodać adres URL witryny SharePoint dla grupy Microsoft 365 lub zespołu firmy Microsoft. Kliknij **pozycję Wybierz**, a następnie kliknij pozycję **Gotowe**.
 
-9. Po dodaniu lokalizacji zawartości do hold kliknij przycisk **Dalej**.
+      > [!NOTE]
+      > Adres URL konta OneDrive użytkownika zawiera jego główną nazwę użytkownika (UPN) (na przykład `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`). W rzadkich przypadkach, gdy nazwa UPN danej osoby zostanie zmieniona, jej adres URL OneDrive również zmieni się, aby włączyć nową nazwę UPN. Jeśli konto OneDrive użytkownika jest częścią blokady bez nadzoru, a jego nazwa UPN została zmieniona, musisz zaktualizować blokadę i wskazać nowy adres URL OneDrive. Aby uzyskać więcej informacji, zobacz [Jak zmiany nazwy UPN wpływają na adres URL OneDrive](/onedrive/upn-changes).
+
+   1. **Exchange folderów publicznych** — przenieś przełącznik do pozycji Wszystkie, aby wstrzymać wszystkie foldery publiczne w organizacji Exchange Online. Nie można wybrać określonych folderów publicznych do wstrzymania. Pozostaw przełącznik ustawiony na **Brak** , jeśli nie chcesz zatrzymywać folderów publicznych.
+
+9. Po zakończeniu dodawania lokalizacji zawartości do blokady kliknij przycisk **Dalej**.
   
-10. Aby utworzyć hold oparty na kwerendzie z warunkami, wykonaj następujące czynności. W przeciwnym razie po prostu kliknij **przycisk Dalej**.
+10. Aby utworzyć blokadę opartą na zapytaniach z warunkami, wykonaj następujące czynności. W przeciwnym razie po prostu kliknij przycisk **Dalej**.
 
-    - W polu w obszarze **Słowa** kluczowe wpisz w polu zapytanie wyszukiwania, aby wstrzymywać tylko zawartość spełniająca kryteria wyszukiwania. Możesz określić słowa kluczowe, właściwości wiadomości lub właściwości dokumentu, takie jak nazwy plików. Można także używać bardziej złożonych zapytań, które używają operatora logicznych, takiego jak AND, OR lub NOT. Jeśli pozostawisz pole słowa kluczowego puste, cała zawartość znajdująca się w określonych lokalizacjach zawartości zostanie umieszczona w wstrzymaniu.
+    - W polu **Słowa kluczowe** wpisz zapytanie wyszukiwania w polu, aby tylko zawartość spełniająca kryteria wyszukiwania została wstrzymana. Można określić słowa kluczowe, właściwości komunikatu lub właściwości dokumentu, takie jak nazwy plików. Można również użyć bardziej złożonych zapytań, które używają operatora logicznego, takiego jak AND, OR lub NOT. Jeśli pole słowa kluczowego pozostanie puste, cała zawartość znajdująca się w określonych lokalizacjach zawartości zostanie wstrzymana.
 
-    - Kliknij  **pozycję** Dodaj warunki, aby dodać jeden lub więcej warunków, aby zawęzić kwerendę wyszukiwania dla wstrzymywania. Każdy warunek powoduje dodanie klauzuli do zapytania wyszukiwania WKQL, które jest tworzone i uruchamiane podczas tworzenia holdu. Można na przykład określić zakres dat, aby wiadomości e-mail lub dokumenty witryny utworzone w zakresie dat umieszczać w miejscu wstrzymywania. Warunek jest logicznie połączony z zapytaniem słowa kluczowego (określonym w polu słowa kluczowego) przez operator AND. Oznacza to, że elementy muszą spełniać zarówno zapytanie słów kluczowych, jak i warunek, który ma zostać umieszczony w hold.
+    - Kliknij  **pozycję Dodaj** warunki, aby dodać co najmniej jeden warunk, aby zawęzić zapytanie wyszukiwania dla blokady. Każdy warunek dodaje klauzulę do zapytania wyszukiwania KQL, które jest tworzone i uruchamiane podczas tworzenia blokady. Można na przykład określić zakres dat, aby dokumenty poczty e-mail lub witryny utworzone w zakresie dat zostały wstrzymane. Warunek jest logicznie połączony z zapytaniem słowa kluczowego (określonym w polu słowa kluczowego) przez operatora AND. Oznacza to, że elementy muszą spełniać zarówno zapytanie słowa kluczowego, jak i warunek, który ma zostać wstrzymany.
 
-     Aby uzyskać więcej informacji na temat tworzenia zapytania wyszukiwania i używania warunków, zobacz Zapytania [słów kluczowych i warunki wyszukiwania dotyczące wyszukiwania zawartości](/office365/SecurityCompliance/keyword-queries-and-search-conditions).
+     Aby uzyskać więcej informacji na temat tworzenia zapytania wyszukiwania i używania warunków, zobacz [Zapytania słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 
-11. Po skonfigurowaniu hold'a opartego na kwerendzie kliknij przycisk **Dalej**.
+11. Po skonfigurowaniu blokady opartej na zapytaniach kliknij przycisk **Dalej**.
 
-12. Przejrzyj ustawienia, a następnie kliknij pozycję **Utwórz to hold**.
+12. Przejrzyj ustawienia, a następnie kliknij pozycję **Utwórz tę blokadę**.
 
 > [!NOTE]
-> Po utworzeniu hold'a opartego na kwerendzie cała zawartość z wybranych lokalizacji jest początkowo umieszczana w miejscu przechowywania. Następnie każda zawartość, która nie jest dopasowana do określonego zapytania, jest czyszowana z trzymania co siedem do 14 dni. Jednak zastosowanie blokady opartej na kwerendzie nie spowoduje wyczyszczenia zawartości, jeśli do lokalizacji zawartości zastosowano więcej niż pięć blokady dowolnego typu lub jeśli w przypadku dowolnego elementu wystąpiły problemy z indeksowaniem.
+> Podczas tworzenia blokady opartej na zapytaniach cała zawartość z wybranych lokalizacji jest początkowo wstrzymana. Następnie każda zawartość, która nie jest zgodna z określonym zapytaniem, jest usuwana z blokady co siedem do 14 dni. Jednak blokada oparta na zapytaniach nie wyczyści zawartości, jeśli do lokalizacji zawartości zostanie zastosowanych więcej niż pięć blokad dowolnego typu lub jeśli jakikolwiek element ma problemy z indeksowaniem.
 
 > [!NOTE]
-> Jeśli adres SMTP użytkownika zmieni się po zatrzymaniu skrzynki pocztowej użytkownika, pozostanie ona w tym miejscu. Aby użyć nowego adresu SMTP do stosowania wstrzymywania, utwórz nowe hold.
+> Jeśli adres SMTP użytkownika zmieni się po wstrzymaniu skrzynki pocztowej użytkownika, skrzynka pocztowa pozostanie wstrzymana. Aby użyć nowego adresu SMTP do przechowywania, utwórz nowe blokady.
 
-## <a name="view-hold-statistics"></a>Wyświetl statystykę zawieszonego widoku
+## <a name="view-hold-statistics"></a>Wyświetlanie statystyk archiwum
 
-Po pewnym czasie informacje o nowym ztrzymaniu zostaną wyświetlone w okienku szczegółów na karcie  Blokady dla wybranego blokady. Te informacje obejmują liczbę skrzynek pocztowych i witryn umieszczonych w hold' oraz statystyki dotyczące zawartości, która została umieszczona w hold, na przykład całkowita liczba i rozmiar elementów umieszczonych w a holdie oraz czas ostatniego obliczania statystyki dotyczącej blokowania. Statystyki te ułatwiają ustalenie, ile zawartości związanej ze sprawą zbierania elektronicznych materiałów dowodowych jest przechowywane.
+Po pewnym czasie informacje o nowym blokadzie są wyświetlane w okienku szczegółów na karcie **Blokady** dla wybranego blokady. Informacje te obejmują liczbę skrzynek pocztowych i witryn, które zostały wstrzymane, oraz statystyki dotyczące zawartości, która została wstrzymana, takie jak całkowita liczba i rozmiar elementów umieszczonych w blokadzie oraz czas ostatniego obliczenia statystyk blokady. Te statystyki przechowywania pomagają określić, ile zawartości jest związanych ze sprawą zbierania elektronicznych materiałów dowodowych.
 
-W statystyce dotyczącej zawieszonego przechowywania należy pamiętać o następujących kwestiach:
+Należy pamiętać o następujących kwestiach dotyczących statystyk archiwum:
 
-- Całkowita liczba elementów wstrzymywanych wskazuje liczbę elementów ze wszystkich źródeł zawartości, które są umieszczone w hold. Jeśli utworzono hold oparte na kwerendzie, ta statystyka wskazuje liczbę elementów, które pasują do zapytania.
+- Całkowita liczba wstrzymanych elementów wskazuje liczbę elementów ze wszystkich źródeł zawartości, które są wstrzymane. Jeśli utworzono blokadę opartą na zapytaniach, ta statystyka wskazuje liczbę elementów zgodnych z zapytaniem.
   
-- Liczba elementów w hold obejmuje również elementy nieindeksowane odnalezione w lokalizacjach zawartości. Jeśli utworzysz hold oparte na kwerendzie, wszystkie elementy nieindeksowane w lokalizacjach zawartości zostaną umieszczone w hold. Dotyczy to elementów nieindeksowanych, które nie są zgodne z kryteriami wyszukiwania opartymi na kwerendzie i elementów nieindeksowanych, które mogą być spoza warunku zakresu dat. Jest to inne niż to, co dzieje się po uruchomieniu wyszukiwania zawartości, w którym elementy nieindeksowane, które nie są zgodne z zapytaniem wyszukiwania lub są wykluczane przez warunek zakresu dat, nie są uwzględniane w wynikach wyszukiwania. Aby uzyskać więcej informacji na temat elementów nieindeksowanych, zobacz [Częściowo indeksowane elementy w przeszukiwaniu zawartości w programie Office 365](partially-indexed-items-in-content-search.md).
+- Liczba wstrzymanych elementów obejmuje również elementy bez certyfikatu znalezione w lokalizacjach zawartości. Jeśli utworzysz blokadę opartą na zapytaniach, wszystkie elementy niezawłaszczone w lokalizacjach zawartości zostaną wstrzymane. Obejmuje to elementy niezainicjowane, które nie spełniają kryteriów wyszukiwania blokady opartej na zapytaniach i elementów niewyświetlonych, które mogą wykraczać poza warunek zakresu dat. Różni się to od tego, co dzieje się po uruchomieniu wyszukiwania zawartości, w którym niezainicjowane elementy, które nie są zgodne z zapytaniem wyszukiwania lub są wykluczone przez warunek zakresu dat, nie są uwzględniane w wynikach wyszukiwania. Aby uzyskać więcej informacji na temat elementów niezaindeksowanych, zobacz [Częściowo zaindeksowane elementy w wyszukiwaniu zawartości w Office 365](partially-indexed-items-in-content-search.md).
 
-- Możesz uzyskać najnowsze statystyki dotyczące blokowania, klikając pozycję Aktualizuj statystykę, aby ponownie uruchomić oszacowanie wyszukiwania, które oblicza bieżącą liczbę elementów w wstrzymaniu.
+- Najnowsze statystyki blokady można uzyskać, klikając pozycję Aktualizuj statystyki, aby ponownie uruchomić oszacowanie wyszukiwania, które oblicza bieżącą liczbę wstrzymanych elementów.
 
-- W razie potrzeby kliknij pozycję Odśwież na pasku narzędzi, aby zaktualizować statystykę blokowania w okienku szczegółów.
+- W razie potrzeby kliknij przycisk Odśwież na pasku narzędzi, aby zaktualizować statystyki blokady w okienku szczegółów.
 
-- Zazwyczaj liczba wstrzymanych elementów zwiększa się w czasie, ponieważ użytkownicy, których skrzynka pocztowa lub witryna znajdują się w miejscu, zazwyczaj wysyłają lub otrzymują nową wiadomość e-mail oraz tworzą nowe dokumenty SharePoint i OneDrive dla Firm e-mail.
+- Jest to normalne, że liczba wstrzymanych elementów rośnie wraz z upływem czasu, ponieważ użytkownicy, których skrzynka pocztowa lub witryna jest wstrzymana, zazwyczaj wysyłają lub odbierają nową wiadomość e-mail oraz tworzą nowe SharePoint i OneDrive dla Firm dokumentów.
 
-- Jeśli konto SharePoint lub konta OneDrive zostanie przeniesione do innego regionu w środowisku wielolokalowym, statystyki dotyczące tej witryny nie będą uwzględniane w statystykach dotyczących blokowania. Zawartość witryny będzie jednak nadal wstrzymywana. Ponadto, jeśli witryna zostanie przeniesiona do innego regionu, adres URL wyświetlany w witrynie nie zostanie zaktualizowany. Musisz edytować wstrzymywanie i zaktualizować adres URL.
+- Jeśli witryna SharePoint lub konto OneDrive zostaną przeniesione do innego regionu w środowisku z wieloma obszarami geograficznymi, statystyki dla tej witryny nie zostaną uwzględnione w statystykach blokady. Jednak zawartość witryny nadal będzie wstrzymana. Ponadto jeśli witryna zostanie przeniesiona do innego regionu, adres URL wyświetlany w blokadzie nie zostanie zaktualizowany. Musisz edytować blokadę i zaktualizować adres URL.
 
-## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Hold on Microsoft Teams and Office 365 Groups
+## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Umieszczanie blokady w grupach Microsoft Teams i Office 365
 
-Microsoft Teams jest wbudowana w Office 365 grupy. Dlatego umieszczenie ich w Advanced eDiscovery jest podobne.
+Microsoft Teams jest oparta na grupach Office 365. W związku z tym umieszczenie ich w zakładzie zbierania elektronicznych materiałów dowodowych (Premium) jest podobne.
 
-- **Jak zamapować dodatkową witrynę sieci Microsoft 365 lub witryny Microsoft Teams na witrynę iniekcyjną? A co z umieszczaniem w grupach danych i Microsoft 365 grupach danych bez Microsoft Teams?** Microsoft Teams jest wbudowana w Microsoft 365 grupy. Dlatego umieszczenie ich w posiadaniu sprawy zbierania elektronicznych materiałów dowodowych jest podobne. Podczas umieszczania grup Microsoft 365 i umieszczania ich w Microsoft Teams należy pamiętać o następujących kwestiach.
+- **Jak mogę mapować dodatkową witrynę Grupy Microsoft 365 lub Microsoft Teams na opiekuna? A co z umieszczeniem niestosownie blokady na Grupy Microsoft 365 i Microsoft Teams?** Microsoft Teams jest oparta na Grupy Microsoft 365. W związku z tym umieszczenie ich w zawieszeniu w przypadku zbierania elektronicznych materiałów dowodowych jest podobne. Podczas umieszczania Grupy Microsoft 365 i Microsoft Teams wstrzymania należy pamiętać o następujących kwestiach.
 
-  - Aby umieścić zawartość w grupach Microsoft 365 i umieścić Microsoft Teams w stanie przechowywania, musisz określić skrzynkę pocztową i SharePoint skojarzoną z grupą lub zespołem.
+  - Aby umieścić zawartość znajdującą się w Grupy Microsoft 365 i Microsoft Teams wstrzymana, należy określić skrzynkę pocztową i witrynę SharePoint skojarzoną z grupą lub zespołem.
   
-  - Uruchom polecenie **cmdlet Get-UnifiedGroup** w programie Exchange Online, aby wyświetlić właściwości grupy Microsoft 365 lub zespołu Microsoft. Jest to dobry sposób na uzyskania adresu URL witryny skojarzonej z grupą Microsoft 365 lub zespołem Microsoft. Na przykład następujące polecenie wyświetla wybrane właściwości grupy kierownictwa Microsoft 365 o nazwie Starszy zespół kierownictwa:
+  - Uruchom polecenie cmdlet **Get-UnifiedGroup** w Exchange Online, aby wyświetlić właściwości grupy Microsoft 365 lub zespołu firmy Microsoft. Jest to dobry sposób na uzyskanie adresu URL witryny skojarzonej z grupą Microsoft 365 lub zespołem firmy Microsoft. Na przykład następujące polecenie wyświetla wybrane właściwości grupy Microsoft 365 o nazwie Senior Leadership Team:
 
     ```console
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -141,23 +141,23 @@ Microsoft Teams jest wbudowana w Office 365 grupy. Dlatego umieszczenie ich w Ad
     ```
 
     > [!NOTE]
-    > Aby uruchomić polecenie cmdlet Get-UnifiedGroup, musisz mieć przypisaną rolę adresatów View-Only w programie Exchange Online lub być członkiem grupy ról z przypisaną rolą adresatów View-Only adresatów.
+    > Aby uruchomić polecenie cmdlet Get-UnifiedGroup, musisz mieć przypisaną rolę adresatów View-Only w Exchange Online lub być członkiem grupy ról z przypisaną rolą adresatów View-Only.
 
-  - Podczas przeszukiwania skrzynki pocztowej użytkownika nie będą Microsoft 365 grupy ani zespołu Microsoft, do których należy użytkownik. Podobnie po umieszczeniu grupy Microsoft 365 lub witryny zespołu firmy Microsoft wstrzymywana jest tylko skrzynka pocztowa grupy i witryna grupy; skrzynki pocztowe i witryny grupy OneDrive dla Firm nie są umieszczane w a holdie, chyba że jawnie dodasz je jako osoby przechwycące lub umieścisz ich źródła danych. Jeśli w związku z tym musisz umieścić grupę Microsoft 365 lub zespół Microsoft Team w miejscu określonego adresata, rozważ zamapowanie witryny grupy i skrzynki pocztowej grupy na skrzynkę odbiorczy (zobacz Zarządzanie odbiorcami w systemie Advanced eDiscovery). Jeśli grupa Microsoft 365 lub zespół Firmy Microsoft nie zostanie przypisana do jednego opiekuna, rozważ dodanie źródła do aresztu niebędącego plikiem źródłowym.
-  - Aby uzyskać listę członków grupy Microsoft 365 lub zespołu Microsoft,  >  można wyświetlić właściwości na stronie Grupy domowe w centrum administracyjne platformy Microsoft 365.[](https://go.microsoft.com/fwlink/p/?linkid=2052855) Możesz również uruchomić następujące polecenie w programie Exchange Online PowerShell:
+  - Po przeszukaniu skrzynki pocztowej użytkownika nie będą wyszukiwane żadne Microsoft 365 Group lub Microsoft Team, do których należy użytkownik. Podobnie w przypadku umieszczenia blokady grupy Microsoft 365 lub zespołu firmy Microsoft tylko skrzynka pocztowa grupy i witryna grupy są zawieszone; skrzynki pocztowe i witryny OneDrive dla Firm członków grupy nie są wstrzymane, chyba że jawnie dodasz ich jako opiekunów lub umieścisz ich źródła danych. W związku z tym, jeśli konieczne jest wstrzymanie grupy Microsoft 365 lub zespołu firmy Microsoft dla określonego opiekuna, rozważ mapowanie witryny grupy i skrzynki pocztowej grupy na opiekuna (zobacz Managing Custodians in eDiscovery (Premium)). Jeśli grupa Microsoft 365 lub zespół firmy Microsoft nie można przypisać jednemu opiekunowi, rozważ dodanie źródła do blokady bez nadzoru.
+  - Aby uzyskać listę członków grupy Microsoft 365 lub zespołu firmy Microsoft, możesz wyświetlić właściwości na stronie **Grupy główne** >  w Centrum administracyjne platformy Microsoft 365.[](https://go.microsoft.com/fwlink/p/?linkid=2052855) Alternatywnie możesz uruchomić następujące polecenie w programie Exchange Online programu PowerShell:
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
     ```
 
     > [!NOTE]
-    > Aby uruchomić polecenie **cmdlet Get-UnifiedGroupLinks**, musisz mieć przypisaną rolę adresatów View-Only w programie Exchange Online lub być członkiem grupy ról z przypisaną rolą adresatów View-Only.
+    > Aby uruchomić polecenie cmdlet **Get-UnifiedGroupLinks**, musisz mieć przypisaną rolę adresatów View-Only w Exchange Online lub być członkiem grupy ról przypisanej do roli adresatów View-Only.
 
-  - Konwersacje w kanale, które są częścią Microsoft Teams są przechowywane w skrzynce pocztowej skojarzonej z zespołem. Podobnie pliki, które członkowie zespołu mają udział w kanale, są przechowywane w SharePoint zespołu. Dlatego, aby zachować konwersacje i pliki w kanale, SharePoint przechowywać konwersacje i pliki w kanale, należy umieścić skrzynkę pocztową usługi Microsoft Team i umieścić witrynę w awitrynie.
+  - Konwersacje kanału będące częścią kanału Microsoft Teams są przechowywane w skrzynce pocztowej skojarzonej z zespołem. Podobnie pliki udostępniane przez członków zespołu w kanale są przechowywane w SharePoint lokacji zespołu. W związku z tym należy wstrzymać skrzynkę pocztową zespołu firmy Microsoft i witrynę SharePoint, aby zachować konwersacje i pliki w kanale.
   
-  - Konwersacje, które są częścią listy czatów w programie Microsoft Teams są przechowywane w skrzynce pocztowej użytkownika, który uczestniczy w czacie.  Pliki, które użytkownik udostępnia w konwersacjach na czacie, są przechowywane OneDrive dla Firm witryny użytkownika, który udostępnia plik. Dlatego, aby zachować konwersacje i pliki na liście czatów, należy umieścić skrzynki pocztowe poszczególnych użytkowników i OneDrive dla Firm witryn.
+  - Alternatywnie konwersacje, które są częścią listy czatów w Microsoft Teams, są przechowywane w skrzynce pocztowej użytkownika, który uczestniczy w czacie.  Pliki, które użytkownik udostępnia w konwersacjach czatu, są przechowywane w witrynie OneDrive dla Firm użytkownika, który udostępnia plik. W związku z tym należy umieścić skrzynki pocztowe poszczególnych użytkowników i witryny OneDrive dla Firm wstrzymane, aby zachować konwersacje i pliki na liście czatów.
   
-  - Każdy kanał zespołu lub zespołu firmy Microsoft zawiera stronę typu wiki do sporządzania notacji i współpracy. Zawartość typu wiki jest automatycznie zapisywana w pliku w formacie mht. Ten plik jest przechowywany w bibliotece Teams danych typu wiki w witrynie zespołu SharePoint wiki. Zawartość witryny typu wiki można umieścić w a hold, umieszczając witrynę zespołu w SharePoint wstrzymywanie.
+  - Każdy kanał zespołu lub zespołu firmy Microsoft zawiera witrynę typu wiki do tworzenia notatek i współpracy. Zawartość witryny typu wiki jest automatycznie zapisywana w pliku w formacie mht. Ten plik jest przechowywany w bibliotece dokumentów Teams Wiki Data w witrynie SharePoint zespołu. Zawartość witryny typu wiki można wstrzymać, umieszczając witrynę SharePoint zespołu.
 
     > [!NOTE]
-    > 22 czerwca 2017 r. opublikowano funkcję przechowywania zawartości typu wiki dla zespołu lub kanału zespołu (po SharePoint zespołu w witrynie zespołu). Jeśli witryna zespołu znajduje się w wstrzymaniu, jej zawartość będzie zachowywana od tego dnia. Jednak jeśli witryna zespołu znajduje się w miejscu, a zawartość typu wiki została usunięta przed 22 czerwca 2017 r., zawartość witryny typu wiki nie została zachowana.
+    > 22 czerwca 2017 r. wydano możliwość przechowywania zawartości witryny typu wiki dla zespołu firmy Microsoft lub kanału zespołu (gdy witryna SharePoint zespołu została wstrzymana). Jeśli witryna zespołu jest wstrzymana, zawartość witryny typu wiki zostanie zachowana począwszy od tego dnia. Jeśli jednak witryna zespołu jest wstrzymana, a zawartość witryny typu wiki została usunięta przed 22 czerwca 2017 r., zawartość witryny typu wiki nie została zachowana.

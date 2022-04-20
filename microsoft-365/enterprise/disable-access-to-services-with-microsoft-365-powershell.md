@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: W tym artykule dowiesz się, jak wyłączyć dostęp do usług Microsoft 365 dla użytkowników za pomocą programu PowerShell.
-ms.openlocfilehash: eeb3c8dc0057318550a956d0d0f4f916f4515fd4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: d6754cc2de6208b9dc4bce03ef6477939f8d530a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915868"
+ms.locfileid: "64939438"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Wyłączanie dostępu do usług Microsoft 365 przy użyciu programu PowerShell
 
@@ -118,7 +118,7 @@ User      Success            efb87545-963c-4e0d-99df-69c6916d9eb0 EXCHANGE_S_ENT
 
 Aby uzyskać pełną listę planów licencji (znanych również jako nazwy produktów), ich dołączone plany usług i odpowiadające im przyjazne nazwy, zobacz [Nazwy produktów i identyfikatory planów usług na potrzeby licencjonowania](/azure/active-directory/users-groups-roles/licensing-service-plan-reference). (Wyszukaj przy użyciu identyfikatora ServicePlanId, aby wyszukać odpowiednią przyjazną nazwę planu usługi wyszukiwania).
 
-Poniższy przykład przypisuje **SPE_E5** (Microsoft 365 E5) z wyłączonymi usługami **MICROSOFTBOOKINGS** (Microsoft Bookings) i **LOCKBOX_ENTERPRISE** (Customer LockBox):
+Poniższy przykład przypisuje **SPE_E5** (Microsoft 365 E5) z wyłączonymi usługami **MICROSOFTBOOKINGS** (Microsoft Bookings) i **LOCKBOX_ENTERPRISE** (Customer Lockbox):
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'

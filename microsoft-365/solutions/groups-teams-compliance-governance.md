@@ -1,5 +1,5 @@
 ---
-title: Opcje zgodności dla grup Microsoft 365, grup Teams i SharePoint współpracy
+title: Opcje zgodności dla grup Microsoft 365, Teams i współpracy SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -15,77 +15,77 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Dowiedz się więcej o opcjach zgodności Microsoft 365 grup, Teams i SharePoint współpracy.
-ms.openlocfilehash: ab840ea5652a13087ecc8d505391bac152ca1052
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+description: Dowiedz się więcej o opcjach zgodności dla grup Microsoft 365, Teams i współpracy SharePoint.
+ms.openlocfilehash: afbbc6e507d613e028f65dbc157ec2222414af8c
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63004956"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939131"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opcje zgodności dla grup Microsoft 365, grup Teams i SharePoint współpracy
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opcje zgodności dla grup Microsoft 365, Teams i współpracy SharePoint
 
-Microsoft 365 oferuje pełny zestaw narzędzi do zachowania zgodności podczas współpracy z innymi użytkownikami. Przejrzyj te opcje i rozważ ich mapowanie na potrzeby Twojej firmy, czułość danych i zakres osób, z którymi twoi użytkownicy muszą współpracować.
+Microsoft 365 oferuje pełny zestaw narzędzi do utrzymania zgodności w miarę współpracy użytkowników. Przejrzyj te opcje i zastanów się, w jaki sposób są one mapowane na potrzeby biznesowe, poufność danych i zakres osób, z którymi użytkownicy muszą współpracować.
 
-W poniższej tabeli przedstawiono podręczną informacje na temat kontrolek zgodności dostępnych w programie Microsoft 365. Dalsze informacje podano w poniższych sekcjach.
+Poniższa tabela zawiera krótkie informacje dotyczące mechanizmów kontroli zgodności dostępnych w Microsoft 365. Dalsze informacje znajdują się w poniższych sekcjach.
 
 |Kategoria|Opis|Odwołanie|
 |:-------|:----------|:--------|
 |Przechowywanie informacji|||
-||Zachowywanie poczty grupy i SharePoint zawartości|[Informacje o zasadach przechowywania dla SharePoint i OneDrive](../compliance/retention-policies-sharepoint.md)|
-||Zachowywanie czatu i wiadomości|[Informacje o zasadach przechowywania dla Microsoft Teams](../compliance/retention-policies-teams.md)|
+||Zachowywanie zawartości poczty i SharePoint grup|[Dowiedz się więcej o zasadach przechowywania dla SharePoint i OneDrive](../compliance/retention-policies-sharepoint.md)|
+||Zachowywanie czatu i wiadomości|[Dowiedz się więcej o zasadach przechowywania dla Microsoft Teams](../compliance/retention-policies-teams.md)|
 |Klasyfikacja informacji|||
-||Klasyfikowanie grup i zespołów|[Używanie etykiet wrażliwości w celu ochrony zawartości Microsoft Teams, grup Microsoft 365 i SharePoint internetowych](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Automatyczne klasyfikowanie poufnej zawartości|[Automatyczne stosowanie etykiet wrażliwości do zawartości](../compliance/apply-sensitivity-label-automatically.md)|
-||Szyfrowanie zawartości poufnej|[Ograniczanie dostępu do zawartości przy użyciu etykiet wrażliwości w celu zastosowania szyfrowania](../compliance/encryption-sensitivity-labels.md)|
+||Klasyfikowanie grup i zespołów|[Używanie etykiet poufności do ochrony zawartości w witrynach Microsoft Teams, Microsoft 365 i SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Automatyczne klasyfikowanie poufnej zawartości|[Automatyczne stosowanie etykiety poufności do zawartości](../compliance/apply-sensitivity-label-automatically.md)|
+||Szyfrowanie poufnej zawartości|[Ogranicz dostęp do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania](../compliance/encryption-sensitivity-labels.md)|
 |Ochrona informacji|||
-||Zapobieganie utracie informacji poufnych|[Informacje na temat ochrony przed utratą danych](../compliance/dlp-learn-about-dlp.md)|
-||Ochrona poufnych informacji na czacie.|[Ochrona przed utratą danych i Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
-||Definiowanie informacji poufnych organizacji|[Niestandardowe typy informacji poufnych](../compliance/sensitive-information-type-learn-about.md)|
+||Zapobieganie utracie informacji poufnych|[Dowiedz się więcej o zapobieganiu utracie danych w usłudze Microsoft Purview](../compliance/dlp-learn-about-dlp.md)|
+||Ochrona poufnych informacji na czacie.|[Zapobieganie utracie danych i Microsoft Teams w usłudze Microsoft Purview](../compliance/dlp-microsoft-teams.md)|
+||Definiowanie poufnych informacji organizacji|[Niestandardowe typy informacji poufnych](../compliance/sensitive-information-type-learn-about.md)|
 |Segmentacja użytkowników|||
 ||Ograniczanie komunikacji między segmentami użytkowników|[Bariery informacyjne](../compliance/information-barriers.md)|
-|Data residency|||
-||Przechowywanie danych w określonych lokalizacjach geograficznych|[Microsoft 365 multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
+|Miejsce przechowywania danych|||
+||Przechowywanie danych w określonych lokalizacjach geograficznych|[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## <a name="information-retention"></a>Przechowywanie informacji
 
-Dostępne są zasady przechowywania w celu przechowywania lub usuwania elementów używanych do współpracy w grupach i zespołach, w tym plików, wiadomości i poczty. Zasady można skonfigurować w celu zachowania i usunięcia, zachowania tylko tych zasad, a także ich usuwania. Informacje objęte zasadami przechowywania są chronione na wypadek, gdyby grupa lub zespół wygasły lub zostały usunięte w inny sposób.
+Zasady przechowywania są dostępne do przechowywania lub usuwania elementów używanych do współpracy w grupach i zespołach, w tym plików, wiadomości i poczty. Zasady można ustawić tak, aby były zachowywane i usuwane, tylko do zachowania lub usuwania. Informacje objęte zasadami przechowywania są chronione w przypadku wygaśnięcia lub usunięcia grupy lub zespołu.
 
-Konfigurowanie zasad przechowywania dla grup Microsoft 365 obejmuje skrzynkę pocztową grupy oraz SharePoint i pliki grupy.
+Konfigurowanie zasad przechowywania dla Grupy Microsoft 365 obejmuje skrzynkę pocztową grupy oraz skojarzoną SharePoint witrynę i pliki.
 
-- [Informacje o zasadach przechowywania dla SharePoint i OneDrive](../compliance/retention-policies-sharepoint.md)
+- [Dowiedz się więcej o zasadach przechowywania dla SharePoint i OneDrive](../compliance/retention-policies-sharepoint.md)
 
-Zasady przechowywania dla Teams wiadomości czatu i kanałów. Wiadomości na czacie i kanałach są przechowywane Exchange skrzynkach pocztowych, jednak nie mają one wpływu Exchange przechowywania. Musisz skonfigurować zasady przechowywania, aby stosowane Teams czatach i Teams wiadomościach w kanałach. 
+Zasady przechowywania dla Teams zachować wiadomości czatu i kanału. Wiadomości czatu i kanału są przechowywane w Exchange skrzynkach pocztowych, ale zasady przechowywania Exchange nie mają na nie wpływu. Należy ustawić zasady przechowywania, aby były stosowane do czatów Teams i wiadomości kanałów Teams. 
 
-Czaty użytkowników są zachowywane przez czas nieograniczony, nawet po usunięciu konta użytkownika. Jeśli nie chcesz zachować tych danych przez czas nieograniczony, rozważ usunięcie czatów użytkowników po upływie określonego czasu przy użyciu zasad przechowywania lub dołączenie tego usunięcia do procesu usuwania użytkownika.
+Czaty użytkowników są zachowywane przez czas nieokreślony, nawet jeśli konto użytkownika zostało usunięte. Jeśli nie chcesz przechowywać tych danych przez czas nieokreślony, rozważ użycie zasad przechowywania, aby usunąć czaty użytkowników po określonym czasie lub uwzględnić to usunięcie w procesie usuwania użytkownika.
 
-- [Informacje o zasadach przechowywania dla Microsoft Teams](../compliance/retention-policies-teams.md)
+- [Dowiedz się więcej o zasadach przechowywania dla Microsoft Teams](../compliance/retention-policies-teams.md)
 
-- [Zasady przechowywania w programie Microsoft Teams](/microsoftteams/retention-policies)
+- [Zasady przechowywania w Microsoft Teams](/microsoftteams/retention-policies)
 
-Można skonfigurować pojedyncze zasady przechowywania, które będą stosowane do czatu Teams i wiadomości Teams kanałach. 
+Pojedyncze zasady przechowywania można ustawić tak, aby były stosowane do wiadomości Teams czatu i kanału Teams. 
 
 Dodatkowe zasoby:
 
-- [Informacje o zasadach przechowywania](../compliance/retention.md)
+- [Dowiedz się więcej o zasadach przechowywania](../compliance/retention.md)
 
-- [Tagi przechowywania i zasady przechowywania w](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) aplikacji Exchange
+- [Tagi przechowywania i zasady przechowywania](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) w Exchange
 
 ## <a name="information-classification"></a>Klasyfikacja informacji
 
-Etykiety wrażliwości mogą określać zasady dostępu gości, prywatności grupy i zespołu, a także dostęp do nich za pomocą urządzeń niezawiązywanych dla grup i zespołów. Stosując etykietę, te ustawienia są automatycznie konfigurowane zgodnie z ustawieniami etykiet.
+Etykiet poufności można używać do zarządzania dostępem gościa, prywatnością grupy i zespołu oraz dostępem przez niezarządzane urządzenia dla grup i zespołów. Stosując etykietę, te ustawienia są automatycznie konfigurowane zgodnie z ustawieniami etykiety.
 
-- [Używanie etykiet wrażliwości w celu ochrony zawartości Microsoft Teams, grup Microsoft 365 i SharePoint internetowych](../compliance/sensitivity-labels-teams-groups-sites.md)
+- [Używanie etykiet poufności do ochrony zawartości w witrynach Microsoft Teams, Microsoft 365 i SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
 
-Możesz skonfigurować Microsoft 365 automatycznego stosowania etykiet wrażliwości do plików i wiadomości e-mail na podstawie określonych kryteriów, na przykład wykrywania typów informacji poufnych lub dopasowywania wzorców do klasyfikatorów przeszkolnych.
+Można skonfigurować Microsoft 365 do automatycznego stosowania etykiet poufności do plików i wiadomości e-mail na podstawie określonych kryteriów, w tym wykrywania typów informacji poufnych lub dopasowywania wzorców do klasyfikatorów z możliwością trenowania.
 
-- [Automatyczne stosowanie etykiet wrażliwości do zawartości](../compliance/apply-sensitivity-label-automatically.md)
+- [Automatyczne stosowanie etykiety poufności do zawartości](../compliance/apply-sensitivity-label-automatically.md)
 
-Za pomocą etykiet wrażliwości możesz szyfrować pliki, zezwalając tylko osobom z uprawnieniami do odszyfrowywania i odczytywania ich.
+Etykiet poufności można używać do szyfrowania plików, umożliwiając odszyfrowywanie i odczytywanie tylko tych, którzy mają uprawnienia.
 
-- [Ograniczanie dostępu do zawartości przy użyciu etykiet wrażliwości w celu zastosowania szyfrowania](../compliance/encryption-sensitivity-labels.md)
+- [Ogranicz dostęp do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania](../compliance/encryption-sensitivity-labels.md)
 
-- [Konfigurowanie zespołu z izolacji zabezpieczeń](./secure-teams-security-isolation.md)
+- [Konfigurowanie zespołu z izolacją zabezpieczeń](./secure-teams-security-isolation.md)
 
 Dodatkowe zasoby:
 
@@ -94,35 +94,35 @@ Dodatkowe zasoby:
 
 ## <a name="information-protection"></a>Ochrona informacji
 
-Zasady DLP mogą zapobiegać przypadkowemu udostępnianiu poufnych informacji w SharePoint, Exchange i Teams. Możesz utworzyć zasady określające akcje do podjęcia (takie jak blokowanie dostępu) na podstawie zestawu reguł.
+Zasady DLP mogą zapobiegać przypadkowemu udostępnianiu poufnych informacji w SharePoint, Exchange i Teams. Można utworzyć zasady określające akcje do wykonania (takie jak blokowanie dostępu) na podstawie zestawu reguł.
 
-- [Informacje na temat ochrony przed utratą danych](../compliance/dlp-learn-about-dlp.md)
+- [Dowiedz się więcej o ochronie przed utratą danych](../compliance/dlp-learn-about-dlp.md)
 
-Ochrona przed Teams w czacie i wiadomościach kanałowych Teams, usuwając wiadomości zawierające informacje poufne.
+Protokół DLP w Teams może pomóc w ochronie poufnych informacji w Teams wiadomościach czatu i kanału przez usunięcie wiadomości zawierających poufne informacje.
 
-- [Ochrona przed utratą danych i Microsoft Teams](../compliance/dlp-microsoft-teams.md)
+- [Zapobieganie utracie danych i Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
-Jeśli masz informacje poufne, które są unikatowe dla Twojej organizacji, takie jak nazwy kodów projektów, możesz utworzyć własne typy informacji poufnych i zastosować je do zasad DLP w celu ochrony zawartości w grupach, zespołach i SharePoint.
+Jeśli masz poufne informacje unikatowe dla organizacji, takie jak nazwy kodu projektu, możesz utworzyć własne typy informacji poufnych i zastosować je do zasad DLP, aby chronić zawartość w grupach, zespołach i SharePoint.
 
 - [Niestandardowe typy informacji poufnych](../compliance/sensitive-information-type-learn-about.md)
 
 ## <a name="user-segmentation"></a>Segmentacja użytkowników
 
-Dzięki barierom informacyjnym możesz segmentować dane i użytkowników, aby ograniczyć niechcianą komunikację i współpracę między grupami oraz uniknąć konfliktów zainteresowania w organizacji. Bariery informacyjne pozwalają tworzyć zasady uniemożliwiające współpracę nad plikami, czatowanie, rozmowy telefoniczne lub zaproszenia na spotkania między grupami osób w organizacji.
+Dzięki barierom informacyjnym możesz podzielić dane i użytkowników na segmenty, aby ograniczyć niepożądaną komunikację i współpracę między grupami oraz uniknąć konfliktów interesów w organizacji. Bariery informacyjne umożliwiają tworzenie zasad umożliwiających współpracę plików, rozmowy, rozmowy lub zaproszenia na spotkania między grupami osób w organizacji lub uniemożliwiają ich współpracę.
 
 - [Bariery informacyjne](../compliance/information-barriers.md)
 
-- [Bariery informacyjne w programie Microsoft Teams](/microsoftteams/information-barriers-in-teams)
+- [Bariery informacyjne w Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 
-- [Korzystanie z barier informacyjnych dzięki SharePoint](/sharepoint/information-barriers)
+- [Używanie barier informacyjnych z SharePoint](/sharepoint/information-barriers)
 
-## <a name="data-residency"></a>Data residency
+## <a name="data-residency"></a>Miejsce przechowywania danych
 
-Dzięki Microsoft 365 multi-Geo możesz zapewniać i przechowywać dane w spoczynku w lokalizacjach geograficznych wybranych do spełnienia wymagań dotyczących przechowywania danych. W środowisku z wieloma lokalizacjami geograficznymi dzierżawa usługi Microsoft 365 składa się z lokalizacji centralnej (w której pierwotnie aprowizowana była subskrypcja usługi Microsoft 365) oraz co najmniej jednej lokalizacji satelitarnej, w której można przechowywać dane.
+Dzięki Microsoft 365 Multi-Geo można aprowizować i przechowywać dane magazynowane w lokalizacjach geograficznych wybranych w celu spełnienia wymagań dotyczących przechowywania danych. W środowisku z wieloma lokalizacjami geograficznymi dzierżawa Microsoft 365 składa się z centralnej lokalizacji (w której pierwotnie aprowizowano subskrypcję Microsoft 365) oraz co najmniej jednej lokalizacji satelitarnej, w której można przechowywać dane.
 
-- [Microsoft 365 multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)
+- [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)
 
-- [Planowanie pod Microsoft 365 wielolokalizacji](/microsoft-365/enterprise/plan-for-multi-geo)
+- [Planowanie Microsoft 365 multi-geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
@@ -130,6 +130,6 @@ Dzięki Microsoft 365 multi-Geo możesz zapewniać i przechowywać dane w spoczy
 
 [Tworzenie planu zarządzania współpracą](collaboration-governance-first.md)
 
-[Zabezpieczenia i zgodność z przepisami dla Exchange Online](/exchange/security-and-compliance/security-and-compliance)
+[Zabezpieczenia i zgodność dla Exchange Online](/exchange/security-and-compliance/security-and-compliance)
 
 [Ochrona informacji](../compliance/information-protection.md)

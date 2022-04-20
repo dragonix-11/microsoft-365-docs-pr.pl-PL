@@ -1,5 +1,5 @@
 ---
-title: Advanced Audit in Microsoft 365
+title: Inspekcja (Premium) w Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,49 +17,49 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Zaawansowana inspekcja Microsoft 365 zapewnia nowe funkcje inspekcji, które pomagają organizacji w badaniach prawnych i zgodności.
-ms.openlocfilehash: 4a378071a59d2462cff1af5b87f9ab99d1e1337f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Usługa Microsoft Purview Audit (Premium) udostępnia nowe funkcje inspekcji, które ułatwiają organizacji przeprowadzanie badań kryminalistycznych i zgodności.
+ms.openlocfilehash: 5e224d4d7073f96f4dc17d48f6caf19840905d06
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032119"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941066"
 ---
-# <a name="advanced-audit-in-microsoft-365"></a>Advanced Audit in Microsoft 365
+# <a name="microsoft-purview-audit-premium"></a>Microsoft Purview Audit (Premium)
 
-Funkcja [inspekcji w programie](search-the-audit-log-in-security-and-compliance.md) Microsoft 365 zapewnia organizacjom wgląd w wiele typów działań pod kontrolą w wielu różnych usługach w różnych Microsoft 365. Zaawansowana inspekcja ułatwia organizacjom przeprowadzanie analiz prawnych i zgodności, zwiększając liczbę działań w dzienniku inspekcji wymaganym do przeprowadzenia badania, zapewniając dostęp do ważnych zdarzeń (za pomocą przeszukiwania dziennika inspekcji w p programie Centrum zgodności platformy Microsoft 365 i interfejsu API działań zarządzania programu Office 365), które pomagają w określeniu zakresu naruszenia bezpieczeństwa i szybszego dostępu aby Office 365 interfejs API działań zarządzania.
+[Funkcja Inspekcja](search-the-audit-log-in-security-and-compliance.md) w usłudze Microsoft Purview zapewnia organizacjom wgląd w wiele typów inspekcji działań w wielu różnych usługach w Microsoft 365. Inspekcja usługi Microsoft Purview (Premium) pomaga organizacjom w prowadzeniu badań kryminalistycznych i zgodności poprzez zwiększenie przechowywania dzienników inspekcji wymaganych do przeprowadzenia badania, zapewnienie dostępu do kluczowych zdarzeń (przy użyciu wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview i interfejsie API działania zarządzania Office 365), które pomagają określić zakres naruszenia zabezpieczeń i szybszy dostęp do interfejs API działań zarządzania Office 365.
 
 > [!NOTE]
-> Inspekcja zaawansowana jest dostępna dla organizacji z subskrypcją usługi Office 365 E5/A5/G5 lub Microsoft 365 Enterprise E5/A5/G5. Użytkownikom należy przypisać licencje na funkcje zgodności Microsoft 365 E5/A5/G5 lub Zbierania elektronicznych materiałów dowodowych E5/A5/G5 i dodatki inspekcji na funkcje zaawansowanej inspekcji, takie jak długoterminowe przechowywanie dzienników inspekcji i generowanie zdarzeń inspekcji zaawansowanej w przypadku badań. Aby uzyskać więcej informacji na temat licencjonowania, zobacz:<br/>- [Zaawansowane wymagania dotyczące licencjonowania inspekcji](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Inspekcja (Premium) jest dostępna dla organizacji z subskrypcją Office 365 E5/A5/G5 lub Microsoft 365 Enterprise E5/A5/G5. Licencja dodatku Microsoft 365 E5/A5/G5 Compliance lub E5/A5/G5 eDiscovery and Audit powinna być przypisana do użytkowników funkcji inspekcji (Premium), takich jak długoterminowe przechowywanie dzienników inspekcji i generowanie zdarzeń inspekcji (Premium) na potrzeby badań. Aby uzyskać więcej informacji na temat licencjonowania, zobacz:<br/>- [Wymagania dotyczące licencjonowania inspekcji (Premium)](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
-W tym artykule opisano funkcje zaawansowanej inspekcji i przedstawiono sposób skonfigurowania użytkowników do inspekcji zaawansowanej.
+W tym artykule przedstawiono omówienie funkcji inspekcji (Premium) i pokazano, jak skonfigurować użytkowników na potrzeby inspekcji (Premium).
 
 ## <a name="long-term-retention-of-audit-logs"></a>Długoterminowe przechowywanie dzienników inspekcji
 
-W ramach inspekcji zaawansowanej Exchange, SharePoint i Azure Active Directory rekordy inspekcji przez jeden rok. Jest **Exchange**, **SharePoint** lub **AzureActiveDirectory** dla właściwości **Workload** (co wskazuje usługę, w której wystąpiło działanie) przez jeden rok, przy użyciu domyślnych zasad przechowywania dziennika inspekcji. Zachowywanie rekordów inspekcji przez dłuższy czas może być pomocne w przypadku toczyjących się dochodzeniach prawnych lub dotyczących zgodności. Aby uzyskać więcej informacji, zobacz sekcję "Domyślne zasady przechowywania dziennika inspekcji" w tece [Zarządzanie zasadami przechowywania dziennika inspekcji](audit-log-retention-policies.md#default-audit-log-retention-policy).
+Inspekcja (Premium) zachowuje wszystkie rekordy inspekcji Exchange, SharePoint i Azure Active Directory przez jeden rok. Jest to realizowane przez domyślne zasady przechowywania dziennika inspekcji, które zachowują dowolny rekord inspekcji zawierający wartość **Exchange**, **SharePoint** lub **AzureActiveDirectory** dla właściwości **Obciążenie** (co wskazuje usługę, w której wystąpiło działanie) przez jeden rok. Przechowywanie rekordów inspekcji przez dłuższy czas może pomóc w prowadzenia dalszych dochodzeń kryminalistycznych lub dotyczących zgodności. Aby uzyskać więcej informacji, zobacz sekcję "Domyślne zasady przechowywania dziennika inspekcji" w [temacie Zarządzanie zasadami przechowywania dzienników inspekcji](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
-Poza możliwościami przechowywania w ramach jednego roku w ramach inspekcji zaawansowanej opublikowano również możliwość przechowywania dzienników inspekcji przez 10 lat. 10-letnia przechowywanie dzienników inspekcji ułatwia obsługę długo prowadzonych badań oraz reagowanie na zobowiązania prawne, prawne i wewnętrzne.
+Oprócz możliwości rocznego przechowywania funkcji Inspekcja (Premium) opublikowaliśmy również możliwość przechowywania dzienników inspekcji przez 10 lat. 10-letnie przechowywanie dzienników inspekcji pomaga wspierać długotrwałe dochodzenia i reagować na zobowiązania regulacyjne, prawne i wewnętrzne.
 
 > [!NOTE]
-> Zachowywanie dzienników inspekcji przez 10 lat będzie wymagać dodatkowej licencji na użytkownika. Po przypisaniu tej licencji do użytkownika i skonfigurowaniu dla tego użytkownika odpowiednich 10-letniego zasad przechowywania dziennika inspekcji dzienniki inspekcji objęte tym zasadami zaczną być zachowywane przez 10-letni okres. Te zasady nie są wstecz aktywowane i nie mogą zachowywać dzienników inspekcji wygenerowanych przed utworzeniami 10-letniego dziennika inspekcji. Aby uzyskać więcej informacji, zobacz sekcję [Często zadawane pytania dotyczące inspekcji](#faqs-for-advanced-audit) zaawansowanej w tym artykule.
+> Przechowywanie dzienników inspekcji przez 10 lat będzie wymagało dodatkowej licencji dodatku dla poszczególnych użytkowników. Po przypisaniu tej licencji do użytkownika i ustawieniu odpowiednich 10-letnich zasad przechowywania dzienników inspekcji dla tego użytkownika dzienniki inspekcji objęte tymi zasadami zaczną być przechowywane przez okres 10 lat. Te zasady nie są wsteczne i nie mogą zachowywać dzienników inspekcji, które zostały wygenerowane przed utworzeniem 10-letnich zasad przechowywania dzienników inspekcji. Aby uzyskać więcej informacji, zobacz sekcję [Często zadawane pytania dotyczące inspekcji (Premium)](#faqs-for-audit-premium) w tym artykule.
 
-### <a name="audit-log-retention-policies"></a>Zasady przechowywania dziennika inspekcji
+### <a name="audit-log-retention-policies"></a>Zasady przechowywania dzienników inspekcji
 
-Wszystkie rekordy inspekcji wygenerowane w innych usługach, które nie są objęte domyślnymi zasadami przechowywania dziennika inspekcji (opisanymi w poprzedniej sekcji), są zachowywane przez 90 dni. Można jednak utworzyć niestandardowe zasady przechowywania dziennika inspekcji, aby przechowywać inne rekordy inspekcji przez dłuższy czas do 10 lat. Można utworzyć zasady zachowywania rekordów inspekcji na podstawie co najmniej jednego z następujących kryteriów:
+Wszystkie rekordy inspekcji wygenerowane w innych usługach, które nie są objęte domyślnymi zasadami przechowywania dzienników inspekcji (opisanymi w poprzedniej sekcji) są przechowywane przez 90 dni. Można jednak utworzyć niestandardowe zasady przechowywania dzienników inspekcji, aby zachować inne rekordy inspekcji przez dłuższy czas do 10 lat. Można utworzyć zasady do przechowywania rekordów inspekcji na podstawie co najmniej jednego z następujących kryteriów:
 
-- Usługa Microsoft 365, w której mają miejsce działania pod kontrolą.
+- Usługa Microsoft 365, w której są wykonywane inspekcje działań.
 
-- Określone działania pod kontrolą.
+- Konkretne działania poddane inspekcji.
 
-- Użytkownik, który wykonuje działania inspekcji.
+- Użytkownik, który wykonuje inspekcję działania.
 
-Możesz także określić, jak długo mają być zachowywane rekordy inspekcji zgodne z zasadami i poziom priorytetu, dzięki czemu określone zasady będą mieć priorytet nad innymi zasadami. Należy również pamiętać Azure Active Directory, że wszelkie niestandardowe zasady przechowywania dziennika inspekcji mają pierwszeństwo przed domyślnymi zasadami przechowywania inspekcji, jeśli trzeba zachować rekordy inspekcji przez okres krótszy niż rok (lub przez 10 lat) dla niektórych lub wszystkich użytkowników w organizacji. SharePoint Exchange Aby uzyskać więcej informacji, zobacz [Zarządzanie zasadami przechowywania dziennika inspekcji](audit-log-retention-policies.md).
+Można również określić, jak długo mają być przechowywane rekordy inspekcji zgodne z zasadami i poziomem priorytetu, dzięki czemu określone zasady będą mieć pierwszeństwo przed innymi zasadami. Należy również pamiętać, że wszelkie niestandardowe zasady przechowywania dzienników inspekcji będą mieć pierwszeństwo przed domyślnymi zasadami przechowywania inspekcji w przypadku konieczności zachowania Exchange, SharePoint lub Azure Active Directory rekordów inspekcji przez mniej niż rok (lub przez 10 lat) dla niektórych lub wszystkich użytkowników w organizacji. Aby uzyskać więcej informacji, zobacz [Zarządzanie zasadami przechowywania dzienników inspekcji](audit-log-retention-policies.md).
 
-## <a name="advanced-audit-events"></a>Zaawansowane zdarzenia inspekcji
+## <a name="audit-premium-events"></a>Inspekcja (Premium) zdarzeń
 
-Zaawansowana inspekcja ułatwia organizacjom prowadzenie analiz prawnych i zgodności przez zapewnianie dostępu do ważnych zdarzeń, takich jak uzyskiwanie dostępu do elementów poczty, odpowiadanie na elementy poczty i przesyłanie ich dalej oraz kiedy i co użytkownik wyszukiwał w usługach Exchange Online i SharePoint Online. Zdarzenia te mogą pomóc w zbadaniu możliwych naruszeń zabezpieczeń i określeniu zakresu naruszenia. Oprócz tych zdarzeń w usługach Exchange i SharePoint istnieją zdarzenia w innych usługach Microsoft 365, które są uznawane za ważne zdarzenia i wymagają przypisania użytkownikom odpowiedniej licencji inspekcji [zaawansowanej](auditing-solutions-overview.md#licensing-requirements). Użytkownicy muszą mieć przypisaną licencję zaawansowanej inspekcji, aby dzienniki inspekcji były generowane podczas wykonywania tych zdarzeń.
+Inspekcja (Premium) pomaga organizacjom w prowadzeniu badań kryminalistycznych i zgodności, zapewniając dostęp do ważnych zdarzeń, takich jak czas uzyskiwania dostępu do elementów poczty, kiedy elementy poczty zostały przekazane i przekazane, oraz kiedy i co użytkownik szukał w Exchange Online i SharePoint Online. Te zdarzenia mogą pomóc w zbadaniu możliwych naruszeń i określeniu zakresu naruszenia zabezpieczeń. Oprócz tych zdarzeń w Exchange i SharePoint istnieją zdarzenia w innych usługach Microsoft 365, które są uważane za ważne zdarzenia i wymagają, aby użytkownikom przypisano [odpowiednią licencję inspekcji (Premium](auditing-solutions-overview.md#licensing-requirements)). Użytkownicy muszą mieć przypisaną licencję Inspekcja (Premium), aby dzienniki inspekcji były generowane podczas wykonywania tych zdarzeń przez użytkowników.
 
-W ramach inspekcji zaawansowanej są następujące zdarzenia:
+Inspekcja (Premium) zawiera następujące zdarzenia:
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -69,49 +69,49 @@ W ramach inspekcji zaawansowanej są następujące zdarzenia:
 
 - [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
 
-- [Inne zdarzenia inspekcji zaawansowanej w programie Microsoft 365](#other-advanced-audit-events-in-microsoft-365)
+- [Inne zdarzenia inspekcji (Premium) w Microsoft 365](#other-audit-premium-events-in-microsoft-365)
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
-Zdarzenie MailItemsAccessed jest akcją inspekcji skrzynki pocztowej i jest wyzwalane, gdy dane poczty są uzyskiwane przez protokoły poczty i klientów poczty. To zdarzenie może pomóc w zidentyfikowaniu naruszeń danych i określeniu zakresu wiadomości, które mogą być naruszone. Jeśli atakujący uzyskał dostęp do wiadomości e-mail, zostanie wyzwolona akcja MailItemsAccessed, nawet jeśli nie ma jawnego sygnału, że wiadomości zostały odczytane (to oznacza, że w rekordzie inspekcji jest rejestrowany typ dostępu, taki jak powiązanie lub synchronizacja).
+Zdarzenie MailItemsAccessed jest akcją inspekcji skrzynki pocztowej i jest wyzwalane, gdy dostęp do danych poczty jest uzyskiwany przez protokoły poczty i klientów poczty. To zdarzenie może pomóc śledczym zidentyfikować naruszenia danych i określić zakres komunikatów, które mogły zostać naruszone. Jeśli osoba atakująca uzyska dostęp do wiadomości e-mail, akcja MailItemsAccessed zostanie wyzwolona, nawet jeśli nie będzie jawnego sygnału, że komunikaty zostały faktycznie odczytane (innymi słowy, typ dostępu, taki jak powiązanie lub synchronizacja, jest rejestrowany w rekordzie inspekcji).
 
-Zdarzenie MailItemsAccessed zastępuje zdarzenie MessageBind w rejestrowaniu inspekcji skrzynki pocztowej w programie Exchange Online i udostępnia następujące ulepszenia:
+Zdarzenie MailItemsAccessed zastępuje element MessageBind w logowaniu inspekcji skrzynki pocztowej w Exchange Online i zapewnia następujące ulepszenia:
 
-- Ustawienie MessageBind można konfigurować tylko dla typu logowania użytkownika AuditAdmin. nie dotyczyło działań pełnomocnika ani właściciela. MailItemsAccessed dotyczy wszystkich typów logowania.
+- Element MessageBind można było skonfigurować tylko dla typu logowania użytkownika AuditAdmin; nie dotyczy akcji pełnomocnika ani właściciela. Funkcja MailItemsAccessed ma zastosowanie do wszystkich typów logowania.
 
-- Tekst MessageBind obejmuje tylko dostęp klienta poczty. Nie dotyczyło to działań synchronizacji. Zdarzenia MailItemsAccessed są wyzwalane przez zarówno powiązanie, jak i synchronizowanie typów dostępu.
+- Element MessageBind obejmował dostęp tylko przez klienta poczty. Nie dotyczy działań synchronizacji. Zdarzenia MailItemsAccessed są wyzwalane zarówno przez typy dostępu powiązania, jak i synchronizacji.
 
-- Działania funkcji MessageBind wyzwoliły tworzenie wielu rekordów inspekcji, gdy uzyskano dostęp do tej samej wiadomości e-mail, w wyniku czego inspekcja spowodowała "szum". Natomiast zdarzenia MailItemsAccessed są agregowane w mniej rekordów inspekcji.
+- Akcje MessageBind wyzwalałyby tworzenie wielu rekordów inspekcji po uzyskaniu dostępu do tej samej wiadomości e-mail, co spowodowało inspekcję "szumu". Natomiast zdarzenia MailItemsAccessed są agregowane w mniejszej liczbie rekordów inspekcji.
 
-Aby uzyskać informacje na temat rekordów inspekcji dla działań w programie MailItemsAccessed, zobacz Badanie naruszonych kont za pomocą inspekcji [zaawansowanej](mailitemsaccessed-forensics-investigations.md).
+Aby uzyskać informacje o rekordach inspekcji dla działań MailItemsAccessed, zobacz [Używanie inspekcji (Premium) do badania kont, których zabezpieczenia zostały naruszone](mailitemsaccessed-forensics-investigations.md).
 
-Aby wyszukać rekordy inspekcji typu MailItemsAccessed, możesz wyszukać działanie Dostępne elementy  skrzynki pocztowej na liście rozwijanej działań skrzynki pocztowej programu **Exchange** w narzędziu do przeszukiwania dziennika inspekcji w Centrum zgodności platformy Microsoft 365.[](search-the-audit-log-in-security-and-compliance.md)
+Aby wyszukać rekordy inspekcji MailItemsAccessed, możesz wyszukać działanie **Elementy dostępu do skrzynki pocztowej** na liście rozwijanej **działań Exchange skrzynki pocztowej** w [narzędziu do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portalu zgodności.
 
-![Wyszukiwanie akcji MailItemsAccessed w narzędziu do przeszukiwania dziennika inspekcji.](../media/AdvAudit_MailItemsAccessed.png)
+![Wyszukiwanie akcji MailItemsAccessed w narzędziu do wyszukiwania dzienników inspekcji.](../media/AdvAudit_MailItemsAccessed.png)
 
-W programie Exchange Online PowerShell można także uruchomić polecenia [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) lub [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog).
+Możesz również uruchomić polecenia [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) lub [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) w programie Exchange Online programu PowerShell.
 
 ### <a name="send"></a>Wyślij
 
-Zdarzenie Send jest również akcją inspekcji skrzynki pocztowej i jest wyzwalane, gdy użytkownik wykonuje jedną z następujących akcji:
+Zdarzenie Wyślij jest również akcją inspekcji skrzynki pocztowej i jest wyzwalane, gdy użytkownik wykonuje jedną z następujących akcji:
 
 - Wysyła wiadomość e-mail
 
 - Odpowiedzi na wiadomość e-mail
 
-- Przesyłanie dalej wiadomości e-mail
+- Przekazuje wiadomość e-mail
 
-Wsady mogą używać zdarzenia Wyślij do identyfikowania wiadomości e-mail wysłanych z naruszonego konta. Rekord inspekcji dla zdarzenia Send zawiera informacje o wiadomości, takie jak czas wysłania wiadomości, identyfikator InternetMessage, wiersz tematu i czy wiadomość zawierała załączniki. Te informacje inspekcji mogą ułatwić współpracownikom zidentyfikowanie informacji o wiadomościach e-mail wysyłanych z naruszonego konta lub wysyłanych przez atakującego. Ponadto słowy mogą używać narzędzia zbierania elektronicznych materiałów dowodowych usługi Microsoft 365 do wyszukiwania wiadomości (za pomocą wiersza tematu lub identyfikatora wiadomości) w celu zidentyfikowania adresatów, do których wysłano wiadomość, oraz rzeczywistej zawartości wysłanej wiadomości.
+Śledczy mogą użyć zdarzenia Wyślij, aby zidentyfikować wiadomość e-mail wysłaną z konta, którego zabezpieczenia zostały naruszone. Rekord inspekcji dla zdarzenia Wyślij zawiera informacje o wiadomości, na przykład o tym, kiedy wiadomość została wysłana, identyfikator InternetMessage, wiersz tematu i czy wiadomość zawierała załączniki. Te informacje inspekcji mogą pomóc śledczym zidentyfikować informacje o wiadomościach e-mail wysyłanych z konta z naruszeniem zabezpieczeń lub wysyłanych przez osobę atakującą. Ponadto badacze mogą użyć narzędzia do zbierania elektronicznych materiałów dowodowych Microsoft 365 w celu wyszukania wiadomości (przy użyciu wiersza tematu lub identyfikatora wiadomości) w celu zidentyfikowania adresatów, do których wysłano wiadomość, oraz rzeczywistej zawartości wysłanej wiadomości.
 
-Aby wyszukać pole Wyślij rekordy inspekcji, możesz wyszukać działanie Wysłano  wiadomość na liście rozwijanej działania skrzynki pocztowej programu **Exchange** w narzędziu przeszukiwania [](search-the-audit-log-in-security-and-compliance.md) dziennika inspekcji w Centrum zgodności platformy Microsoft 365.
+Aby wyszukać pozycję Wyślij rekordy inspekcji, możesz wyszukać działanie **Wysłane wiadomości** na liście rozwijanej **działań skrzynki pocztowej Exchange** w [narzędziu do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portalu zgodności.
 
-![Wyszukiwanie akcji wysłanych wiadomości w narzędziu do przeszukiwania dziennika inspekcji.](../media/AdvAudit_SentMessage.png)
+![Wyszukiwanie akcji wysłanych komunikatów w narzędziu do wyszukiwania dzienników inspekcji.](../media/AdvAudit_SentMessage.png)
 
-W programie Exchange Online PowerShell można również uruchomić polecenia [wysyłania -Operations search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) lub [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog).
+Możesz również uruchomić polecenia [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) lub [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) w programie Exchange Online programu PowerShell.
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-Zdarzenie SearchQueryInitiatedExchange jest wyzwalane, gdy osoba Outlook wyszukuje elementy w skrzynce pocztowej. Zdarzenia są wyzwalane podczas wyszukiwania w następujących Outlook środowiskach:
+Zdarzenie SearchQueryInitiatedExchange jest wyzwalane, gdy dana osoba używa Outlook do wyszukiwania elementów w skrzynce pocztowej. Zdarzenia są wyzwalane, gdy wyszukiwania są wykonywane w następujących środowiskach Outlook:
 
 - Outlook (klient klasyczny)
 
@@ -121,45 +121,45 @@ Zdarzenie SearchQueryInitiatedExchange jest wyzwalane, gdy osoba Outlook wyszuku
 
 - Outlook dla systemu Android
 
-- Aplikacja Poczta dla Windows 10
+- Aplikacja poczty dla Windows 10
 
-W celu ustalenia, czy atakujący, który mógł naruszyć konto w skrzynce pocztowej lub próbował uzyskać dostęp do poufnych informacji, może użyć zdarzenia SearchQueryInitiatedExchange. Rekord inspekcji zdarzenia SearchQueryInitiatedExchange zawiera informacje, takie jak rzeczywisty tekst zapytania wyszukiwania. Rekord inspekcji wskazuje również środowisko Outlook, w którym zostało przeprowadzone wyszukiwanie. Patrząc na zapytania wyszukiwania przeprowadzone przez atakującego, może on lepiej zrozumieć cel wyszukiwanych danych e-mail.
+Śledczy mogą użyć zdarzenia SearchQueryInitiatedExchange, aby ustalić, czy osoba atakująca, która mogła naruszyć bezpieczeństwo konta, szukała lub próbowała uzyskać dostęp do poufnych informacji w skrzynce pocztowej. Rekord inspekcji zdarzenia SearchQueryInitiatedExchange zawiera informacje, takie jak rzeczywisty tekst zapytania wyszukiwania. Rekord inspekcji wskazuje również środowisko Outlook, w których przeprowadzono wyszukiwanie. Analizując zapytania wyszukiwania, które mogła wykonać osoba atakująca, badacz może lepiej zrozumieć intencję wyszukiwanych danych poczty e-mail.
 
-Aby wyszukać rekordy inspekcji SearchQueryInitiatedExchange, możesz wyszukać działanie wyszukiwania wykonanej  poczty e-mail na liście  rozwijanej Działania wyszukiwania w narzędziu przeszukiwania dziennika inspekcji w Centrum zgodności.[](search-the-audit-log-in-security-and-compliance.md)
+Aby wyszukać rekordy inspekcji SearchQueryInitiatedExchange, możesz wyszukać działanie **Wykonywane wyszukiwanie poczty e-mail** na liście rozwijanej **Działania wyszukiwania** w [narzędziu do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w centrum zgodności.
 
-![Wyszukiwanie działań wyszukiwania wykonanej poczty e-mail w narzędziu do przeszukiwania dziennika inspekcji.](../media/AdvAudit_SearchExchange.png)
+![Wyszukiwanie wykonanych akcji wyszukiwania poczty e-mail w narzędziu do wyszukiwania dzienników inspekcji.](../media/AdvAudit_SearchExchange.png)
 
-Można również uruchomić zapytanie [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online PowerShell.
+Możesz również uruchomić polecenie [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online programu PowerShell.
 
 > [!NOTE]
-> Aby wyszukać to zdarzenie w dzienniku inspekcji, należy włączyć funkcję SearchQueryInitiatedExchange. Aby uzyskać instrukcje, [zobacz Konfigurowanie inspekcji zaawansowanej](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+> Aby można było wyszukać to zdarzenie w dzienniku inspekcji, należy włączyć funkcję SearchQueryInitiatedExchange. Aby uzyskać instrukcje, zobacz [Konfigurowanie inspekcji (Premium)](set-up-advanced-audit.md#step-2-enable-audit-premium-events).
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-Podobnie jak w przypadku wyszukiwania elementów skrzynki pocztowej zdarzenie SearchQueryInitiatedSharePoint jest wyzwalane, gdy osoba wyszukuje elementy w SharePoint. Zdarzenia są wyzwalane podczas wyszukiwania na stronie głównej lub domyślnej następujących typów witryn SharePoint witryny:
+Podobnie jak w przypadku wyszukiwania elementów skrzynki pocztowej, zdarzenie SearchQueryInitiatedSharePoint jest wyzwalane, gdy osoba wyszukuje elementy w SharePoint. Zdarzenia są wyzwalane, gdy wyszukiwania są wykonywane na stronie głównej lub domyślnej następujących typów witryn SharePoint:
 
-- Witryny domowe
+- Strony główne
 
-- Witryny do komunikacji
+- Witryny komunikacyjne
 
-- Witryny centrum
+- Lokacje piasty
 
-- Witryny skojarzone z witrynami Microsoft Teams
+- Witryny skojarzone z Microsoft Teams
 
-Wsady mogą użyć zdarzenia SearchQueryInitiatedSharePoint w celu określenia, czy atakujący próbował znaleźć (i być może uzyskał dostęp) informacje poufne w SharePoint. Rekord inspekcji dla zdarzenia SearchQueryInitiatedSharePoint zawiera również rzeczywisty tekst zapytania wyszukiwania. Rekord inspekcji wskazuje również typ przeszukanej SharePoint witryny. Patrząc na zapytania wyszukiwania przeprowadzone przez atakującego, może on lepiej zrozumieć cel i zakres wyszukiwanych danych.
+Śledczy mogą użyć zdarzenia SearchQueryInitiatedSharePoint, aby ustalić, czy osoba atakująca próbowała znaleźć (i ewentualnie uzyskać dostęp) do poufnych informacji w SharePoint. Rekord inspekcji dla zdarzenia SearchQueryInitiatedSharePoint zawiera również rzeczywisty tekst zapytania wyszukiwania. Rekord inspekcji wskazuje również typ przeszukiwanej witryny SharePoint. Analizując zapytania wyszukiwania, które mogła wykonać osoba atakująca, badacz może lepiej zrozumieć intencję i zakres wyszukiwanych danych pliku.
 
-Aby wyszukać rekordy inspekcji searchQueryInitiatedSharePoint, możesz **wyszukać** działanie wyszukiwania Wykonane SharePoint na liście rozwijanej Działania wyszukiwania w narzędziu  przeszukiwania dziennika inspekcji w Centrum zgodności.[](search-the-audit-log-in-security-and-compliance.md)
+Aby wyszukać rekordy inspekcji SearchQueryInitiatedSharePoint, możesz wyszukać działanie **wykonywane SharePoint wyszukiwania** na liście rozwijanej **Działania wyszukiwania** w [narzędziu do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w centrum zgodności.
 
-![Wyszukiwanie wykonane SharePoint w narzędziu do przeszukiwania dziennika inspekcji.](../media/AdvAudit_SearchSharePoint.png)
+![Wyszukiwanie wykonanych SharePoint akcji wyszukiwania w narzędziu do wyszukiwania dzienników inspekcji.](../media/AdvAudit_SearchSharePoint.png)
 
-Możesz również uruchomić zapytanie [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online PowerShell.
+Możesz również uruchomić program [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online programu PowerShell.
 
 > [!NOTE]
-> Aby wyszukać to zdarzenie w dzienniku inspekcji, należy włączyć rejestrowanie dla zapytania SearchQueryInitiatedSharePoint. Aby uzyskać instrukcje, [zobacz Konfigurowanie inspekcji zaawansowanej](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+> Aby można było wyszukać to zdarzenie w dzienniku inspekcji, należy włączyć rejestrowanie programu SearchQueryInitiatedSharePoint. Aby uzyskać instrukcje, zobacz [Konfigurowanie inspekcji (Premium)](set-up-advanced-audit.md#step-2-enable-audit-premium-events).
 
-### <a name="other-advanced-audit-events-in-microsoft-365"></a>Inne zdarzenia inspekcji zaawansowanej w programie Microsoft 365
+### <a name="other-audit-premium-events-in-microsoft-365"></a>Inne zdarzenia inspekcji (Premium) w Microsoft 365
 
-Oprócz zdarzeń w usługach Exchange Online i SharePoint Online istnieją zdarzenia w innych usługach Microsoft 365, które są rejestrowane, gdy użytkownikom zostanie przypisane odpowiednie licencjonowanie zaawansowanej inspekcji. Poniższe Microsoft 365 zapewniają zdarzenia inspekcji zaawansowanej. Wybierz odpowiedni link, aby przejść do artykułu, który identyfikuje i opisuje te zdarzenia.
+Oprócz zdarzeń w Exchange Online i SharePoint Online istnieją zdarzenia w innych usługach Microsoft 365, które są rejestrowane, gdy użytkownikom przypisano odpowiednie licencjonowanie inspekcji (Premium). Następujące usługi Microsoft 365 zapewniają zdarzenia inspekcji (Premium). Wybierz odpowiedni link, aby przejść do artykułu, który identyfikuje i opisuje te zdarzenia.
 
 - [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
 
@@ -169,30 +169,30 @@ Oprócz zdarzeń w usługach Exchange Online i SharePoint Online istnieją zdarz
 
 - [Yammer](search-the-audit-log-in-security-and-compliance.md#yammer-activities)
 
-## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Dostęp o wysokiej przepustowości do interfejsu API Office 365 zarządzania
+## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Dostęp o wysokiej przepustowości do interfejsu API działania zarządzania Office 365
 
-Organizacje, które mają dostęp do dzienników inspekcji za pośrednictwem interfejsu API działań zarządzania Office 365 zarządzania zostały ograniczone przez ograniczenie limitów na poziomie wydawcy. Oznacza to, że w przypadku wydawcy, który wyciąga dane w imieniu wielu klientów, limit ten został udostępniony przez wszystkich tych klientów.
+Organizacje uzyskujące dostęp do dzienników inspekcji za pośrednictwem interfejsu API działania zarządzania Office 365 zostały ograniczone przez ograniczenia przepustowości na poziomie wydawcy. Oznacza to, że w przypadku wydawcy ściągającego dane w imieniu wielu klientów limit został udostępniony przez wszystkich tych klientów.
 
-Wraz z wydaniem inspekcji zaawansowanej przenosimy się z limitu na poziomie wydawcy do limitu na poziomie dzierżawy. W efekcie każda organizacja otrzyma swój własny, w pełni przydzielony przydział przepustowości na dostęp do danych inspekcji. Przepustowość nie jest statycznym, wstępnie zdefiniowanym limitem, ale jest modelowana na kombinacji czynników, takich jak liczba stanowisk w organizacji i że organizacje E5/A5/G5 uzyskają więcej przepustowości niż organizacje inne niż E5/A5/G5.
+Wraz z wydaniem funkcji Inspekcja (Premium) przechodzimy z limitu na poziomie wydawcy do limitu na poziomie dzierżawy. W rezultacie każda organizacja uzyska własny w pełni przydzielony limit przydziału przepustowości w celu uzyskania dostępu do danych inspekcji. Przepustowość nie jest statycznym, wstępnie zdefiniowanym limitem, ale jest modelowana na podstawie kombinacji czynników, w tym liczby miejsc w organizacji i że organizacje E5/A5/G5 uzyskają większą przepustowość niż organizacje spoza E5/A5/G5.
 
-Wszystkie organizacje wstępnie mają przypisany plan bazowy 2000 wniosków na minutę. Ten limit zostanie dynamicznie zwiększany w zależności od liczby miejsc w organizacji i subskrypcji licencjonowania. Organizacje E5/A5/G5 uzyskają przepustowość o około dwa razy większą przepustowość niż organizacje inne niż E5/A5/G5. Zostaną także limity maksymalnej przepustowości w celu ochrony kondycji usługi.
+Wszystkie organizacje są początkowo przydzielane punkt odniesienia 2000 żądań na minutę. Ten limit będzie dynamicznie zwiększany w zależności od liczby miejsc w organizacji i subskrypcji licencjonowania. Organizacje E5/A5/G5 otrzymają około dwa razy większą przepustowość niż organizacje spoza E5/A5/G5. Zostanie również określony limit maksymalnej przepustowości w celu ochrony kondycji usługi.
 
-Aby uzyskać więcej informacji, zobacz sekcję "Ograniczanie interfejsu API" w te [Office 365 informacji dotyczących interfejsu API działań zarządzania](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+Aby uzyskać więcej informacji, zobacz sekcję "Ograniczanie przepustowości interfejsu API" w [dokumentacji interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
-## <a name="faqs-for-advanced-audit"></a>Często zadawane pytania dotyczące inspekcji zaawansowanej
+## <a name="faqs-for-audit-premium"></a>Często zadawane pytania dotyczące inspekcji (Premium)
 
-**Czy każdy użytkownik potrzebuje licencji E5/A5/G5, aby korzystać z zalet inspekcji zaawansowanej?**
+**Czy każdy użytkownik potrzebuje licencji E5/A5/G5, aby skorzystać z inspekcji (Premium)?**
 
-Aby można było korzystać z zaawansowanych funkcji inspekcji na poziomie użytkownika, należy przypisać użytkownikowi licencję E5/A5/G5. Istnieją pewne funkcje, które będą sprawdzać, czy jest dostępna odpowiednia licencja w celu udostępnienia funkcji dla użytkownika. Jeśli na przykład próbujesz zachować rekordy inspekcji dla użytkownika, który nie przypisał odpowiedniej licencji dłużej niż 90 dni, system zwróci komunikat o błędzie.
+Aby korzystać z możliwości inspekcji na poziomie użytkownika (Premium), użytkownik musi mieć przypisaną licencję E5/A5/G5. Istnieją pewne możliwości, które będą sprawdzać, czy odpowiednia licencja ma uwidoczniać funkcję dla użytkownika. Jeśli na przykład próbujesz zachować rekordy inspekcji dla użytkownika, któremu nie przypisano odpowiedniej licencji dłużej niż 90 dni, system zwróci komunikat o błędzie.
 
-**Moja organizacja ma subskrypcję E5/A5/G5. Czy muszę cokolwiek robić, aby uzyskać dostęp do rekordów inspekcji w przypadku zdarzeń zaawansowanej inspekcji?**
+**Moja organizacja ma subskrypcję E5/A5/G5, czy muszę zrobić wszystko, aby uzyskać dostęp do rekordów inspekcji zdarzeń inspekcji (Premium)?**
 
-W przypadku kwalifikujących się klientów i użytkowników, którzy mają przypisaną odpowiednią licencję E5/A5/G5, nie trzeba nic zrobić, aby uzyskać dostęp do zdarzeń zaawansowanej inspekcji, z wyjątkiem zdarzeń SearchQueryInitiatedExchange i SearchQueryInitiatedSharePoint (jak opisano wcześniej w tym artykule). Po przypisaniu tych licencji zdarzenia inspekcji zaawansowanej będą generowane tylko dla użytkowników z licencjami E5/A5/G5.
+W przypadku uprawnionych klientów i użytkowników, do których przypisano odpowiednią licencję E5/A5/G5, nie trzeba wykonywać żadnych działań w celu uzyskania dostępu do zdarzeń inspekcji (Premium), z wyjątkiem włączenia zdarzeń SearchQueryInitiatedExchange i SearchQueryInitiatedSharePoint (zgodnie z wcześniejszym opisem w tym artykule). Zdarzenia inspekcji (Premium) będą generowane tylko dla użytkowników z licencjami E5/A5/G5 po przypisaniu tych licencji.
 
-**Czy nowe zdarzenia w ramach inspekcji zaawansowanej są dostępne w interfejsie API Office 365 zarządzania?**
+**Czy nowe zdarzenia w obszarze Inspekcja (Premium) są dostępne w interfejsie API działania zarządzania Office 365?**
 
-Tak. Dopóki rekordy inspekcji zostaną wygenerowane dla użytkowników z odpowiednią licencją, będzie można uzyskać do nich dostęp za pomocą interfejsu API działań zarządzania Office 365 zarządzaniem.
+Tak. Dopóki rekordy inspekcji są generowane dla użytkowników z odpowiednią licencją, będziesz mieć dostęp do tych rekordów za pośrednictwem interfejsu API działania zarządzania Office 365.
 
-**Co stanie się z danymi dziennika inspekcji mojej organizacji, jeśli utworzyę 10-latowe zasady przechowywania dziennika inspekcji, gdy funkcja zostanie opublikowana w ogólno dostępnej wersji, ale przed dostępnością wymaganej licencji dodatku?**
+**Co się stanie z danymi dziennika inspekcji mojej organizacji, jeśli utworzę 10-letnie zasady przechowywania dzienników inspekcji, gdy funkcja została wydana do ogólnej dostępności, ale przed udostępnieniem wymaganej licencji dodatku?**
 
-Wszelkie dane dziennika inspekcji objęte 10-rokiem zasady przechowywania dziennika inspekcji utworzone po zwolnieniu funkcji w ogólną dostępność w ostatnim kwartale 2020 r. będą przechowywane przez 10 lat. Obejmuje to 10-latowe zasady przechowywania dziennika inspekcji, które utworzono przed wydano wymaganą licencją dodatku w celu zakupu w marcu 2021 r. Jednak ponieważ jest teraz dostępna 10-letnia licencja przechowywania dziennika inspekcji — Dodaj, musisz kupić i przypisać te licencje dodatków wszystkim użytkownikom, których dane inspekcji są objęte 10-letnią zasadą przechowywania inspekcji.
+Wszystkie dane dziennika inspekcji objęte 10-letnimi zasadami przechowywania dzienników inspekcji utworzonymi po udostępnieniu funkcji do ogólnej dostępności w ostatnim kwartale 2020 r. zostaną zachowane przez 10 lat. Obejmuje to 10-letnie zasady przechowywania dzienników inspekcji, które zostały utworzone przed wydaniem wymaganej licencji dodatku do zakupu w marcu 2021 r. Jednak ponieważ 10-letnia licencja dodatku Przechowywania dzienników inspekcji jest teraz dostępna, należy zakupić i przypisać te licencje dodatków dla wszystkich użytkowników, których dane inspekcji są objęte 10-letnimi zasadami przechowywania inspekcji.

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 879cbe33393158ee9e24107bbe042adc2f727ac6
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3b943569485ffaa96b33208c1c4bf0a491c23a95
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667213"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939482"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan wdrożenia platformy Microsoft 365 Zero Trust
 
@@ -115,18 +115,18 @@ Przejdź do [**_tematu Evaluate and pilot Microsoft 365 Defender (Ocena i pilota
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>Krok nr 5. Ochrona poufnych danych i zarządzanie nimi
 
-Zaimplementuj Microsoft Information Protection (MIP), aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych informacji wszędzie tam, gdzie się znajdują lub podróżują.
+Zaimplementuj Information Protection Microsoft Purview, aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych informacji wszędzie tam, gdzie się znajdują lub podróżują.
 
-Funkcje mip są dołączone do Microsoft 365 Compliance i zapewniają narzędzia do poznania danych, ochrony danych i zapobiegania utracie danych.
+Funkcje Information Protection usługi Microsoft Purview są dołączone do usługi Microsoft Purview i udostępniają narzędzia do poznania danych, ochrony danych i zapobiegania utracie danych.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Funkcje ochrony informacji chroniące dane poprzez wymuszanie zasad" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 Chociaż ta praca jest reprezentowana w górnej części stosu wdrażania zilustrowanego wcześniej w tym artykule, możesz rozpocząć tę pracę w dowolnym momencie.
 
-Microsoft Information Protection zapewnia strukturę, proces i możliwości, których można użyć do realizacji określonych celów biznesowych.
+Usługa Microsoft Purview Information Protection zapewnia strukturę, proces i możliwości, których można użyć do realizacji określonych celów biznesowych.
 
-:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="Struktura Microsoft Information Protection (MIP)" lightbox="../media/zero-trust/mip-solution-overview.png":::
+![Microsoft Purview Information Protection](../media/zero-trust/mip-solution-overview.png)
 
-Aby uzyskać więcej informacji na temat planowania i wdrażania ochrony informacji, zobacz [**_Wdrażanie rozwiązania Microsoft Information Protection_**](../compliance/information-protection-solution.md).
+Aby uzyskać więcej informacji na temat planowania i wdrażania ochrony informacji, zobacz [**_Deploy a Microsoft Purview Information Protection solution (Wdrażanie rozwiązania microsoft Purview Information Protection_**](../compliance/information-protection-solution.md)). 
 
 Jeśli wdrażasz ochronę informacji dla przepisów dotyczących prywatności danych, ten przewodnik po rozwiązaniach zawiera zalecaną strukturę dla całego procesu: [**_Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych za pomocą Microsoft 365_**](../solutions/information-protection-deploy.md).

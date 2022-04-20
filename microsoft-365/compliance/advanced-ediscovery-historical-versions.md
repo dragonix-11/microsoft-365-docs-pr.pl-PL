@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie wersji historycznych w programie Advanced eDiscovery
+title: Konfigurowanie wersji historycznych w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,102 +15,102 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Używaj wersji historycznych w programie Advanced eDiscovery do zbierania zawartości ze wszystkich wersji dokumentów przechowywanych w SharePoint i OneDrive.
-ms.openlocfilehash: 5ecbb9c9216482223ce756aed5742e25a3b851a1
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Użyj wersji historycznych w usłudze eDiscovery (Premium), aby zbierać zawartość ze wszystkich wersji dokumentów przechowywanych w SharePoint i OneDrive.
+ms.openlocfilehash: e73429744958698f275d33b52cc50805c274ef13
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63028085"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943090"
 ---
-# <a name="set-up-historical-versions-in-advanced-ediscovery-preview"></a>Konfigurowanie wersji historycznych w Advanced eDiscovery (wersja Preview)
+# <a name="set-up-historical-versions-in-ediscovery-premium-preview"></a>Konfigurowanie wersji historycznych w usłudze eDiscovery (Premium) (wersja zapoznawcza)
 
-Funkcja wersji historycznych w programie Advanced eDiscovery umożliwia menedżerom zbierania elektronicznych materiałów dowodowych w organizacji wyszukiwanie i zbieranie zawartości ze wszystkich wersji dokumentów przechowywanych w usługach SharePoint Online i OneDrive dla Firm. Następnie możesz dodać ją do zestawu recenzji do analizy i recenzji. Ułatwia to znajdowanie i przeglądanie zawartości z określonej wersji dokumentu, która może być istotny w przypadku sprawy lub śledztwa, nawet jeśli najnowsza wersja tego samego dokumentu nie zawiera odpowiednich informacji.
+Funkcja wersji historycznych w usłudze eDiscovery (Premium) umożliwia menedżerom zbierania elektronicznych materiałów dowodowych w organizacji wyszukiwanie i zbieranie zawartości ze wszystkich wersji dokumentów przechowywanych w SharePoint Online i OneDrive dla Firm. Następnie możesz dodać tę zawartość do zestawu przeglądów do analizy i przeglądu. Ułatwia to znajdowanie i przeglądanie zawartości z określonej wersji dokumentu, która może być istotna dla sprawy lub badania, nawet jeśli najnowsza wersja tego samego dokumentu nie zawiera odpowiednich informacji.
 
-Aby obsługiwać funkcje wersji historycznych w programie Advanced eDiscovery, administratorzy SharePoint muszą włączyć obsługę wersji dla witryn w organizacji. Następnie, gdy użytkownicy modyfikują dokumenty w programie SharePoint lub OneDrive, niejawne wersje zwykłe są tworzone podczas zapisywania dokumentu (lub zapisywane automatycznie). SharePoint umożliwia śledzenie działań wykonywanych na elementach SharePoint (w tym dokumentach, zdarzeniach i zadaniach). Ta funkcja obsługi wersji pozostawia dziennik inspekcji, który może dostarczyć dowodów w ramach dochodzenia prawnego. Te starsze wersje dokumentu są dostępne dla organizacji, od których może być wymagane udostępnianie takich wersji, które mają poufne lub istotne treści podczas odnajdowania sądu w sądzie.
+Aby obsługiwać możliwość obsługi wersji historycznych w usłudze eDiscovery (Premium), administratorzy SharePoint muszą włączyć przechowywanie wersji witryn w organizacji. Następnie, gdy użytkownicy modyfikują dokumenty w SharePoint lub OneDrive, niejawne regularne wersje są tworzone podczas zapisywania dokumentu (lub automatycznego zapisywania). SharePoint przechowywanie wersji umożliwia śledzenie działania wykonywanego na SharePoint elementach (w tym dokumentach, zdarzeniach i zadaniach). Ta możliwość przechowywania wersji pozostawia ślad inspekcji, który może dostarczyć dowodów w dochodzeniach prawnych. Te starsze wersje dokumentu są dostępne dla organizacji, która może być zobowiązana do udostępniania takich wersji, które mają poufną lub istotną zawartość podczas odnajdywania przez sąd w sprawach prawnych.
 
-Gdy administrator zbierania elektronicznych materiałów dowodowych włączy wersje historyczne dla organizacji, a następnie aktywuje je dla określonych witryn usługi SharePoint, usługa wypychania zawartości SharePoint przeszukuje wszystkie wersje główne i pomocnicze dokumentów w aktywowanych witrynach, a następnie wysyła te wersje do indeksowania. Po zakończeniu procesu przeszukiwania i indeksowania dokumenty i ich wersje są dostępne do wyszukiwania zbierania elektronicznych materiałów dowodowych. Tak długo, jak konkretną wersję można uzyskać dostęp (na przykład za pomocą historii wersji), ta wersja będzie wykrywalna w Advanced eDiscovery kolekcji.
+Gdy administrator zbierania elektronicznych materiałów dowodowych włącza wersje historyczne dla organizacji, a następnie aktywuje je dla określonych witryn SharePoint, usługa wypychania zawartości SharePoint przeszukiwa wszystkie główne i pomocnicze wersje dokumentów w uaktywnionych witrynach, a następnie wysyła te wersje do indeksowania. Po zakończeniu procesu przeszukiwania i indeksowania dokumenty i ich wersje są dostępne do wyszukiwania zbierania elektronicznych materiałów dowodowych. Jeśli dostęp do określonej wersji będzie możliwy (według historii wersji), ta wersja będzie odnajdywalna w wyszukiwaniu kolekcji zbierania elektronicznych materiałów dowodowych (Premium).
 
-## <a name="set-up-historical-versions"></a>Konfigurowanie wersji historycznych
+## <a name="set-up-historical-versions"></a>Konfiguruj wersje historyczne
 
-Aby włączyć wersje historyczne Advanced eDiscovery w programie Advanced eDiscovery, organizacja musi je włączyć, a następnie aktywować określone witryny tak, aby wszystkie wersje dokumentów przechowywanych w tych witrynach były indeksowane w celu wyszukiwania. Przed skonfigurowaniem Advanced eDiscovery dla wersji historycznych należy włączyć obsługę wersji w SharePoint.
+Aby włączyć wersje historyczne w usłudze eDiscovery (Premium), organizacja musi ją włączyć, a następnie aktywować określone witryny, aby wszystkie wersje dokumentów przechowywanych w tych witrynach były indeksowane do wyszukiwania. Przed skonfigurowanie funkcji eDiscovery (Premium) dla wersji historycznych należy włączyć obsługę wersji w SharePoint.
 
-### <a name="step-1-turn-on-versioning-in-sharepoint"></a>Krok 1. Włączanie wersji w aplikacji SharePoint
+### <a name="step-1-turn-on-versioning-in-sharepoint"></a>Krok 1. Włączanie obsługi wersji w SharePoint
 
-Pierwszym krokiem jest włączenie sporządzania wersji w aplikacji SharePoint Online w celu zachowywania wszystkich wersji dokumentu. Aby uzyskać instrukcje, [zobacz Versioning in SharePoint](/microsoft-365/community/versioning-basics-best-practices).
+Pierwszym krokiem jest włączenie obsługi wersji w usłudze SharePoint Online, aby wszystkie wersje dokumentu zostały zachowane. Aby uzyskać instrukcje, zobacz [Versioning in SharePoint (Przechowywanie wersji w SharePoint](/microsoft-365/community/versioning-basics-best-practices)).
 
 ### <a name="step-2-turn-on-historical-versions"></a>Krok 2. Włączanie wersji historycznych
 
-Następnym krokiem jest włączenie wersji historycznych w programie Advanced eDiscovery. Aby włączyć wersje historyczne dla organizacji, osoba musi być administratorem globalnym lub administratorem zbierania elektronicznych materiałów dowodowych (członkiem podgrupy Administrator zbierania elektronicznych materiałów dowodowych w grupie ról Menedżer zbierania elektronicznych materiałów dowodowych). Po włączeniu wersji historycznych zostaną one stosowane do całej organizacji.
+Następnym krokiem jest włączenie wersji historycznych w usłudze eDiscovery (Premium). Aby włączyć wersje historyczne dla organizacji, osoba musi być administratorem globalnym lub administratorem zbierania elektronicznych materiałów dowodowych (członkiem podgrupy administratora zbierania elektronicznych materiałów dowodowych w grupie ról Menedżera zbierania elektronicznych materiałów dowodowych). Po włączeniu wersji historycznych będą one stosowane do całej organizacji.
 
 > [!IMPORTANT]
-> Po włączeniu wersji historycznych nie będzie można wyłączyć tej opcji podczas publicznej wersji zapoznawczej. Będzie można wyłączyć to wyłączenie po ogólnym zwolnieniu wersji historycznych.
+> Po włączeniu wersji historycznych nie będzie można wyłączyć ich w publicznej wersji zapoznawczej. Będzie można go wyłączyć po wydaniu wersji historycznych w celu zapewnienia ogólnej dostępności.
 
-1. W Centrum zgodności platformy Microsoft 365 przejdź do strony [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), a następnie kliknij pozycję **Advanced eDiscovery ustawienia**.
+1. W portalu zgodności usługi Microsoft Purview przejdź do obszaru [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764)a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium**).
 
-   ![Wybierz Advanced eDiscovery ustawienia](..\media\HistoricalVersions1.png)
+   ![Wybierz ustawienia zbierania elektronicznych materiałów dowodowych (Premium)](..\media\HistoricalVersions1.png)
 
-2. Na stronie **Ustawienia** wybierz kartę Historyczne wersje (wersja **zapoznawcza**), a następnie włącz przełącznik Kontrolka Historycznych **wersji dzierżawy**.
+2. Na stronie **Ustawienia** wybierz kartę **Wersje historyczne (wersja zapoznawcza**), a następnie przełącz przełącznik **Dzierżawa wersji historycznych** na włączony.
 
-   ![Włączanie przełącznika w celu włączenia wersji historycznych](..\media\HistoricalVersions2.png)
+   ![Włącz przełącznik, aby włączyć wersje historyczne](..\media\HistoricalVersions2.png)
 
-   Zostanie wyświetlone ostrzeżenie z ostrzeżeniem, że nie będzie można wyłączyć wersji historycznych. Jak wspomniano wcześniej, nie będzie można wyłączyć wersji historycznych, dopóki funkcja nie zostanie wydana dla ogólno dostępnej wersji.
+   Zostanie wyświetlone ostrzeżenie informujące o tym, że nie będzie można wyłączyć wersji historycznych. Jak wspomniano wcześniej, nie będzie można wyłączyć wersji historycznych, dopóki funkcja nie zostanie wydana w celu zapewnienia ogólnej dostępności.
 
-3. Kliknij **przycisk Tak** , aby włączyć wersje historyczne.
+3. Kliknij przycisk **Tak** , aby włączyć wersje historyczne.
 
-### <a name="step-3-activate-sharepoint-sites"></a>Krok 3. Aktywowanie SharePoint internetowych
+### <a name="step-3-activate-sharepoint-sites"></a>Krok 3. Aktywowanie witryn SharePoint
 
-Po włączeniu wersji historycznych dla organizacji ostatnim krokiem jest aktywowanie witryn SharePoint w celu obsługi wersji historycznych. Po aktywowaniu witryny (przez dodanie jej do listy witryn na karcie Wersje historyczne)  witryna jest recrowowana, a wszystkie wersje dokumentów przechowywanych w tej witrynie są indeksowane w celu wyszukiwania.
+Po włączeniu wersji historycznych dla organizacji ostatnim krokiem jest aktywowanie SharePoint witryn do obsługi wersji historycznych. Po aktywowaniu witryny (przez dodanie jej do listy witryn na **karcie Wersje historyczne** ) witryna jest ponownie przeszukowana, a wszystkie wersje dokumentów przechowywanych w tej witrynie są indeksowane do wyszukiwania.
 
 > [!NOTE]
-> W trakcie publicznej wersji zapoznawczej wersji historycznych na organizację jest  limit 100 aktywacji witryn. W przypadku włączenia lub wyłączenia witryny dla wersji historycznych jest wliczane do tego limitu aktywacji. W przypadku włączenia wielu witryn każda witryna jest liczona jako jedna aktywacja. Całkowita liczba aktywacji jest wyświetlana na karcie **Wersje historyczne** .
+> Istnieje limit 100 aktywacji witryn na organizację podczas publicznej wersji zapoznawczej wersji historycznych. Aktywacja jest liczona do tego limitu za każdym razem, gdy włączasz lub wyłączasz witrynę dla wersji historycznych. Jeśli włączysz wiele witryn, każda witryna zostanie zliczona jako pojedyncza aktywacja. Łączna liczba aktywacji jest wyświetlana na **karcie Wersje historyczne** .
 
-1. Na karcie **Wersje historyczne** na stronie Advanced eDiscovery **Ustawienia** kliknij pozycję Włącz, aby aktywować witryny dla  wersji historycznych.
+1. Na karcie **Wersje historyczne** na stronie **Ustawienia** eDiscovery (Premium) kliknij przycisk **Włącz**, aby aktywować witryny dla wersji historycznych.
 
-   ![Kliknij pozycję Włącz, aby aktywować witryny dla wersji historycznych](..\media\HistoricalVersions3.png)  
+   ![Kliknij przycisk Włącz, aby aktywować witryny dla wersji historycznych](..\media\HistoricalVersions3.png)  
 
-   Zostanie wyświetlona wysuuwana strona zawierająca listę wszystkich SharePoint witryny w organizacji.
+   Zostanie wyświetlona strona wysuwana zawierająca listę wszystkich witryn SharePoint w organizacji.
 
-2. Wybierz witrynę do aktywowania, a następnie kliknij pozycję **Włącz** , aby aktywować ją dla wersji historycznych. Za pomocą pola wyszukiwania można wyszukać określoną witrynę.
+2. Wybierz witrynę do aktywowania, a następnie kliknij przycisk **Włącz** , aby aktywować ją dla wersji historycznych. Możesz użyć pola wyszukiwania, aby wyszukać określoną witrynę.
 
-   Zostanie wyświetlone ostrzeżenie z ostrzeżeniem, że wersje dokumentów w witrynie zostaną zindeksowane, a ten proces indeksowania będzie trwać jakiś czas, zanim wersje będą gotowe do przeszukania. Ostrzeżenie zawiera również informacje o tym, że nie będzie można wyłączyć wersji historycznych dla wybranej witryny przez 30 dni.
+   Zostanie wyświetlone ostrzeżenie informujące, że wersje dokumentów w witrynie zostaną zindeksowane, a ten proces indeksowania zajmie trochę czasu, zanim wersje będą gotowe do wyszukiwania. Ostrzeżenie oznacza również, że nie będzie można wyłączyć wersji historycznych dla wybranej witryny przez 30 dni.
 
-3. Kliknij **przycisk Tak** , aby aktywować witrynę dla wersji historycznych.
+3. Kliknij przycisk **Tak** , aby aktywować witrynę dla wersji historycznych.
 
-   ![Aktywowana witryna i liczba aktywacji witryn są wyświetlane](..\media\HistoricalVersions4.png)  
+   ![Zostanie wyświetlona aktywowana witryna i liczba aktywacji witryny](..\media\HistoricalVersions4.png)  
 
-   Witryna zostanie dodana do listy aktywowanych witryn. Dane licznika pokazujące liczbę aktywacji witryn również zostaną zaktualizowane.
+   Witryna zostanie dodana do listy aktywowanych witryn. Aktualizowany jest również licznik pokazujący liczbę aktywacji witryny.
 
 4. Powtórz poprzednie kroki dla każdej witryny, którą chcesz aktywować dla wersji historycznych.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-**Czym różnią się wersje historyczne od opcji "zbierz wszystkie wersje" po zatwierdzeniu kolekcji roboczej do zestawu recenzji?**
+**Czym różnią się wersje historyczne od opcji "zbieranie wszystkich wersji" podczas zatwierdzania kolekcji roboczej w zestawie przeglądów?**
 
-Obecnie tylko najnowsza wersja dokumentów jest indeksowana w celu wyszukiwania. Oznacza to, że po uruchomieniu kolekcji roboczej są przeszukiwane tylko najnowsze wersje dokumentów. Jeśli dokument pasuje do zapytania słów kluczowych dla kolekcji, jest zwracany w wynikach kolekcji. Jeśli jednak najnowsza wersja dokumentu nie pasuje do zapytania wyszukiwania, dokument nie zostanie zwrócony, jeśli starsze wersje dokumentu zawierają słowo kluczowe. Aby zminimalizować tę sytuację, Advanced eDiscovery umożliwia zbieranie wszystkich wersji dokumentu po zatwierdzeniu kolekcji [do zestawu recenzji](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set). Oznacza to, że każda starsza wersja, która może zawierać słowo kluczowe, zostanie dodana do zestawu recenzji.
+Obecnie tylko najnowsza wersja dokumentów jest indeksowana do wyszukiwania. Oznacza to, że po uruchomieniu kolekcji roboczej przeszukiwane są tylko najnowsze wersje dokumentów. Jeśli dokument jest zgodny z zapytaniem słowa kluczowego dla kolekcji, jest zwracany w wynikach kolekcji. Jeśli jednak najnowsza wersja dokumentu nie jest zgodna z zapytaniem wyszukiwania, dokument nie zostanie zwrócony, jeśli starsze wersje dokumentu zawierają słowo kluczowe. Aby rozwiązać tę sytuację, funkcja zbierania elektronicznych materiałów dowodowych (Premium) umożliwia zbieranie wszystkich wersji dokumentu podczas [zatwierdzania kolekcji w zestawie przeglądów](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set). Oznacza to, że każda starsza wersja, która może zawierać słowo kluczowe, zostanie dodana do zestawu przeglądów.
 
-Wersje historyczne różnią się i są bardziej efektywne niż "gromadzenie wszystkich wersji", ponieważ po aktywowaniu witryny wszystkie wersje dokumentu (a nie tylko ostatnia wersja) są indeksowane w celu wyszukania. Jeśli starsza wersja dokumentu zawiera słowo kluczowe dopasowania do zapytania wyszukiwania, zostanie zwrócone przez kolekcję.
+Wersje historyczne są inne i bardziej wydajne niż "zbieranie wszystkich wersji", ponieważ po aktywowaniu witryny wszystkie wersje dokumentu (a nie tylko ostatnia wersja) są indeksowane do wyszukiwania. W rezultacie, jeśli starsza wersja dokumentu zawiera słowo kluczowe pasujące do zapytania wyszukiwania, zostanie zwrócone przez kolekcję.
 
-**Czy jeśli dla witryny włączono wersje historyczne, to czy ma to wpływ na jej wydajność?**
+**Czy włączenie wersji historycznych witryny ma wpływ na wydajność witryny?**
 
-L.p. Po włączeniu wersji historycznych dla witryny jej wydajność będzie taka sama jak przed jej obsługą. Procesy przeszukiwania i indeksowania, które są wykonywane w witrynie po jej włączeniu, będą wykonywane w wolniejszym tempie i będą wykonywane poza szczytem. Włączenie wersji historycznych witryny rozpocznie proces wypełniania wstecz, który znajduje wszystkie wersje dokumentów w witrynie, a następnie wysyła te wersje do indeksu. W zależności od liczby wersji dokumentu dla witryny ten proces wypełniania automatycznego może mieć wpływ na kondycję usługi. Ten potencjalny wpływ został zminimalizowany w następujący sposób:
+L.p. Po włączeniu wersji historycznych dla lokacji wydajność witryny będzie taka sama jak przed włączeniem lokacji. Procesy przeszukiwania i indeksowania wykonywane w lokacji po jej włączeniu będą wykonywane wolniej i będą wykonywane poza godzinami szczytu. Włączenie wersji historycznych witryny spowoduje rozpoczęcie procesu wypełniania, który znajduje wszystkie wersje dokumentów w witrynie, a następnie wysyła te wersje do indeksu. W zależności od liczby wersji dokumentów dla witryny ten proces wypełniania może mieć wpływ na kondycję usługi. Ten potencjalny wpływ został złagodzony w następujący sposób:
 
-- Staramy się, aby te wersje były przetwarzane w godzinach poza szczytem.
+- Dokładamy wszelkich starań, aby przetworzyć te wersje poza godzinami szczytu.
 
 - Przetwarzamy wersje dokumentów w kolejkach o najniższym priorytecie, co umożliwia delegowanie większości zasobów usługi do zmian użytkowników.
 
-**Jak długo muszę czekać na aktywowanie witryny, aż wszystkie historyczne wersje dokumentów w tej witrynie zostaną zindeksowane i będą dostępne do wyszukiwania zbierania elektronicznych materiałów dowodowych?**
+**Jak długo muszę czekać po aktywowaniu witryny, aż wszystkie historyczne wersje dokumentów w tej witrynie zostaną zindeksowane i będą dostępne do wyszukiwania zbierania elektronicznych materiałów dowodowych?**
 
-Na podstawie liczby dokumentów w witrynie i średniej liczby wersji każdego dokumentu próbujemy oszacować łączną liczbę plików w witrynie. Na jej podstawie szacowany czas indeksowania może być następujący:
+Na podstawie liczby dokumentów dla witryny i średniej liczby wersji na dokument próbujemy oszacować całkowitą liczbę plików na witrynę. Na tej podstawie oszacowanie, jak długo może potrwać indeksowanie, jest następujące:
 
 `Number of versions / (Processing rate of 100,000 files per day ) + .5 days = Total number of days to process a site`
 
-Pół dnia jest dodawane jako bufor, ponieważ indeksowanie wersji w witrynie jest zoptymalizowane pod kątem pracy poza godzinami szczytu.
+Pół dnia jest dodawany jako bufor, ponieważ indeksowanie wersji w lokacji jest zoptymalizowane pod kątem uruchamiania poza godzinami szczytu.
 
-Jeśli na przykład łączna liczba dokumentów i wszystkich wersji witryny wynosi 150 000, przetwarzanie witryny dla wersji historycznych zajmie co najmniej dwa dni:
+Jeśli na przykład łączna liczba dokumentów i wszystkie wersje witryny to 150 000, przetworzenie witryny pod kątem wersji historycznych potrwa co najmniej dwa dni:
 
 `150,000 files/100,000 files per day + .5 days = 2 days`
 
 **Dlaczego nie zaleca się częstego aktywowania lub dezaktywowania witryn dla wersji historycznych?**
 
-Po dezaktywowaniu wcześniej aktywowanej witryny jest wyzwalany proces oczyszczania. Ten proces może zająć trochę czasu. Jeśli ta sama witryna zostanie ponownie aktywowana, należy ponownie uruchomić proces ponownego wypełniania w celu ponownego wypełnienia witryny. Zarówno procesy oczyszczania, jak i wypełniania pracą z powrotem są procesami wymagania czasu i ilości zasobów. Dlatego zalecamy dokładne rozważenie i zaplanowanie witryn, które mają zostać aktywowane dla wersji historycznej, aby uniknąć wielokrotnego aktywowania i dezaktywowania wersji historycznych witryny.
+Po dezaktywowaniu wcześniej aktywowanej witryny zostanie wyzwolony proces oczyszczania. Ukończenie tego procesu zajmie trochę czasu. Jeśli ta sama lokacja zostanie ponownie aktywowana, należy ponownie uruchomić proces ponownego wypełniania lokacji. Zarówno procesy oczyszczania, jak i wypełniania kopii zapasowych są czasochłonne i intensywnie obciążają zasoby. Dlatego zalecamy dokładne rozważenie i zaplanowanie witryn, które chcesz aktywować dla wersji historycznej, aby uniknąć wielokrotnego aktywowania i dezaktywowania wersji historycznych witryny.

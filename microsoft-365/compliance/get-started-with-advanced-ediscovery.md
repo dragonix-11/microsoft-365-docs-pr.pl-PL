@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie Advanced eDiscovery w programie Microsoft 365
+title: Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,75 +19,75 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: W tym artykule opisano, jak skonfigurować Advanced eDiscovery, aby można było rozpocząć tworzenie spraw i zarządzać nimi. Opisano w nim również wymagane subskrypcje i licencje firmy Microsoft. Po ukończeniu kilku szybkich kroków narzędzie do Advanced eDiscovery jest gotowe do użycia.
-ms.openlocfilehash: cf2d7c6bc770dd6125777c895771b3b61c8ee593
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+description: W tym artykule opisano sposób konfigurowania zbierania elektronicznych materiałów dowodowych (Premium), aby można było rozpocząć tworzenie spraw i zarządzanie nimi. Opisano w nim również wymagane subskrypcje i licencjonowanie firmy Microsoft. Po wykonaniu kilku szybkich kroków narzędzie eDiscovery (Premium) jest gotowe do użycia.
+ms.openlocfilehash: 29805066c2db26aca6992dc34ad8bf8c0966ceb7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990509"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939922"
 ---
-# <a name="set-up-microsoft-365-advanced-ediscovery"></a>Konfigurowanie Microsoft 365 Advanced eDiscovery
+# <a name="set-up-microsoft-purview-ediscovery-premium"></a>Konfigurowanie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)
 
-Advanced eDiscovery w programie Microsoft 365 zapewnia szczegółowe przepływy pracy do zachowywania, zbierania, przeglądania, analizowania i eksportowania danych, które reagują na wewnętrzne i zewnętrzne badania Twojej organizacji. Do wdrożenia usługi Advanced eDiscovery nie jest wymagane nic, ale istnieją pewne wstępnie wymagane zadania, które musi wykonać administrator IT i menedżer zbierania elektronicznych materiałów dowodowych, zanim Twoja organizacja będzie w stanie zacząć tworzyć sprawy Advanced eDiscovery i używać ich do zarządzania badaniami.
+Usługa Microsoft Purview eDiscovery (Premium) udostępnia kompleksowy przepływ pracy umożliwiający przechowywanie, zbieranie, przeglądanie, analizowanie i eksportowanie danych, które reagują na wewnętrzne i zewnętrzne badania organizacji. Do wdrożenia zbierania elektronicznych materiałów dowodowych (Premium) nie jest potrzebne żadne zadanie, ale istnieją pewne zadania wstępne, które musi wykonać administrator IT i menedżer zbierania elektronicznych materiałów dowodowych, zanim organizacja będzie mogła rozpocząć tworzenie i używanie spraw zbierania elektronicznych materiałów dowodowych (Premium) do zarządzania badaniami.
 
-W tym artykule omówiono następujące kroki niezbędne do skonfigurowania Advanced eDiscovery.
+W tym artykule omówiono następujące kroki niezbędne do skonfigurowania zbierania elektronicznych materiałów dowodowych (Premium).
 
-![Kroki procedury Advanced eDiscovery.](../media/set-up-advanced-ediscovery.png)
+![Kroki konfigurowania zbierania elektronicznych materiałów dowodowych (Premium).](../media/set-up-advanced-ediscovery.png)
 
-Obejmuje to zapewnienie odpowiedniego licencjonowania wymaganego do uzyskiwania dostępu do Advanced eDiscovery i dodawanie osób do spraw oraz przypisywanie uprawnień do zespołu prawnego i sądowego, aby ten zespół był w stanie uzyskać dostęp do spraw i zarządzać nimi.
+Obejmuje to zapewnienie odpowiedniego licencjonowania wymaganego do uzyskania dostępu do zbierania elektronicznych materiałów dowodowych (Premium) oraz dodawanie opiekunów do spraw oraz przypisywanie uprawnień zespołowi prawnemu i dochodzeniowemu, aby mogli oni uzyskiwać dostęp do spraw i zarządzać nimi.
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>Krok 1. Weryfikowanie i przypisywanie odpowiednich licencji
 
-Licencjonowanie Advanced eDiscovery wymaga odpowiedniej subskrypcji organizacji i licencjonowania na użytkownika. Aby uzyskać listę wymagań licencjonowania dla Advanced eDiscovery, zobacz [Subskrypcje i licencjonowanie](overview-ediscovery-20.md#subscriptions-and-licensing).
+Licencjonowanie zbierania elektronicznych materiałów dowodowych (Premium) wymaga odpowiedniej subskrypcji organizacji i licencjonowania dla poszczególnych użytkowników. Aby uzyskać listę wymagań licencyjnych dotyczących zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Subskrypcje i licencjonowanie](overview-ediscovery-20.md#subscriptions-and-licensing).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Krok 2. Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych
 
-Aby uzyskać Advanced eDiscovery lub dodać go jako członka do sprawy Advanced eDiscovery, użytkownikowi muszą zostać przypisane odpowiednie uprawnienia. W szczególności należy dodać użytkownika jako członka grupy ról Menedżer zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Członkowie tej grupy ról mogą tworzyć sprawy Advanced eDiscovery i zarządzać nimi. Mogą dodawać i usuwać członków, umieszczać pliki przechowywania i lokalizacje zawartości w czeku, zarządzać powiadomieniami o zawartości, tworzyć i edytować wyszukiwania skojarzone ze sprawą, dodawać wyniki wyszukiwania do zestawu recenzji, analizować dane w zestawie recenzji oraz eksportować i pobierać dane ze Advanced eDiscovery przypadku.
+Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Premium) lub dodać go jako członka sprawy zbierania elektronicznych materiałów dowodowych (Premium), użytkownikowi muszą zostać przypisane odpowiednie uprawnienia. W szczególności użytkownik musi zostać dodany jako członek grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview. Członkowie tej grupy ról mogą tworzyć przypadki zbierania elektronicznych materiałów dowodowych (Premium) i zarządzać nimi. Mogą dodawać i usuwać członków, umieszczać opiekunów i lokalizacje zawartości, zarządzać powiadomieniami o blokadzie prawnej, tworzyć i edytować wyszukiwania skojarzone w danym przypadku, dodawać wyniki wyszukiwania do zestawu przeglądów, analizować dane w zestawie przeglądów oraz eksportować i pobierać ze sprawy zbierania elektronicznych materiałów dowodowych (Premium).
 
-Wykonaj następujące czynności, aby dodać użytkowników do grupy ról Menedżer zbierania elektronicznych materiałów dowodowych:
+Wykonaj następujące kroki, aby dodać użytkowników do grupy ról menedżera zbierania elektronicznych materiałów dowodowych:
 
-1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centrum zgodności platformy Microsoft 365</a> i zaloguj się przy użyciu poświadczeń administratora konta administratora w Twojej Microsoft 365 organizacji.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">portalu zgodności</a> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
 
-2. Na stronie **Uprawnienia** wybierz grupę ról **Menedżer zbierania** elektronicznych materiałów dowodowych.
+2. Na stronie **Uprawnienia** wybierz grupę ról **Menedżera zbierania elektronicznych materiałów dowodowych** .
 
-3. Na stronie wysuwu Menedżera zbierania elektronicznych materiałów dowodowych kliknij pozycję **Edytuj** obok sekcji **Menedżer zbierania** elektronicznych materiałów dowodowych.
+3. Na stronie wysuwanego Menedżera zbierania elektronicznych materiałów dowodowych kliknij pozycję **Edytuj** obok sekcji **Menedżer zbierania elektronicznych** materiałów dowodowych.
 
-4. Na stronie **Wybieranie menedżera zbierania elektronicznych materiałów** dowodowych w kreatorze edytowania grupy ról kliknij pozycję **Wybierz menedżera zbierania elektronicznych materiałów dowodowych**.
+4. Na stronie **Wybieranie menedżera zbierania elektronicznych** materiałów dowodowych w kreatorze edytowania grupy ról kliknij pozycję **Wybierz menedżera zbierania elektronicznych materiałów dowodowych**.
 
-5. Kliknij **pozycję** Dodaj, a następnie zaznacz pole wyboru dla wszystkich użytkowników, których chcesz dodać do grupy ról.
+5. Kliknij przycisk **Dodaj** , a następnie zaznacz pole wyboru dla wszystkich użytkowników, którzy chcesz dodać do grupy ról.
 
-6. Kliknij **pozycję Dodaj** , aby dodać wybranych użytkowników, a następnie kliknij pozycję **Gotowe**.
+6. Kliknij **przycisk Dodaj** , aby dodać wybranych użytkowników, a następnie kliknij przycisk **Gotowe**.
 
-7. Kliknij **pozycję** Zapisz, aby dodać użytkowników do grupy ról, a następnie kliknij przycisk **Zamknij** , aby ukończyć ten krok.
+7. Kliknij przycisk **Zapisz** , aby dodać użytkowników do grupy ról, a następnie kliknij przycisk **Zamknij** , aby ukończyć ten krok.
 
-### <a name="more-information-about-the-ediscovery-manager-role-group"></a>Więcej informacji na temat grupy ról Menedżer zbierania elektronicznych materiałów dowodowych
+### <a name="more-information-about-the-ediscovery-manager-role-group"></a>Więcej informacji o grupie ról menedżera zbierania elektronicznych materiałów dowodowych
 
-W grupie ról Menedżer zbierania elektronicznych materiałów dowodowych są dwie podgrupy. Różnica między tymi podgrupami zależy od zakresu.
+W grupie ról Menedżera zbierania elektronicznych materiałów dowodowych znajdują się dwie podgrupy. Różnica między tymi podgrupami zależy od zakresu.
 
-- **Menedżer zbierania elektronicznych materiałów dowodowych**: Może wyświetlać i Advanced eDiscovery spraw, które tworzyć lub do których należy. Jeśli inny menedżer zbierania elektronicznych materiałów dowodowych utworzy sprawę, ale nie doda drugiego menedżera zbierania elektronicznych materiałów dowodowych jako członka tej sprawy, drugi menedżer zbierania elektronicznych materiałów dowodowych nie będzie mógł wyświetlić ani otworzyć sprawy na stronie programu Advanced eDiscovery w Centrum zgodności. Na ogół większość osób w organizacji może zostać dodana do podgrupy Menedżer zbierania elektronicznych materiałów dowodowych.
+- **Menedżer zbierania elektronicznych** materiałów dowodowych: może wyświetlać przypadki zbierania elektronicznych materiałów dowodowych (Premium) lub zarządzać nimi. Jeśli inny menedżer zbierania elektronicznych materiałów dowodowych tworzy przypadek, ale nie dodaje drugiego menedżera zbierania elektronicznych materiałów dowodowych jako członka tej sprawy, drugi menedżer zbierania elektronicznych materiałów dowodowych nie będzie mógł wyświetlić ani otworzyć sprawy na stronie zbierania elektronicznych materiałów dowodowych (Premium) w centrum zgodności. Ogólnie rzecz biorąc, większość osób w organizacji może zostać dodana do podgrupy Menedżera zbierania elektronicznych materiałów dowodowych.
 
-- **Administrator zbierania elektronicznych materiałów** dowodowych: może wykonywać wszystkie zadania związane z zarządzaniem sprawymi, które może wykonywać Menedżer zbierania elektronicznych materiałów dowodowych. Ponadto administrator zbierania elektronicznych materiałów dowodowych może:
+- **Administrator zbierania elektronicznych materiałów dowodowych**: może wykonywać wszystkie zadania zarządzania przypadkami, które może wykonać menedżer zbierania elektronicznych materiałów dowodowych. Ponadto administrator zbierania elektronicznych materiałów dowodowych może:
 
-  - Wyświetlanie wszystkich spraw wymienionych na Advanced eDiscovery głównej.
+  - Wyświetl wszystkie przypadki wymienione na stronie zbierania elektronicznych materiałów dowodowych (Premium).
   
-  - Zarządzanie wszystkimi sprawymi w organizacji po dodaniu siebie jako członka do sprawy.
+  - Zarządzaj dowolnym przypadkiem w organizacji po dodaniu się jako członek sprawy.
 
-  - Uzyskiwanie dostępu do danych sprawy i eksportowanie ich dla dowolnej sprawy w organizacji.
+  - Uzyskiwanie dostępu do danych przypadków i eksportowanie ich w dowolnym przypadku w organizacji.
 
-  Ze względu na szeroki zakres dostępu organizacja powinna mieć tylko kilku administratorów, którzy są członkami podgrupy Administratorzy zbierania elektronicznych materiałów dowodowych.
+  Ze względu na szeroki zakres dostępu organizacja powinna mieć tylko kilku administratorów, którzy są członkami podgrupy administratorzy zbierania elektronicznych materiałów dowodowych.
 
-Aby uzyskać więcej informacji o uprawnieniach zbierania elektronicznych materiałów dowodowych i opis każdej roli przypisanej do grupy ról Menedżer zbierania elektronicznych materiałów dowodowych, zobacz Przypisywanie uprawnień [zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
+Aby uzyskać więcej informacji o uprawnieniach do zbierania elektronicznych materiałów dowodowych i opis każdej roli przypisanej do grupy ról menedżera zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
-## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>Krok 3. Konfigurowanie ustawień globalnych dla Advanced eDiscovery
+## <a name="step-3-configure-global-settings-for-ediscovery-premium"></a>Krok 3. Konfigurowanie ustawień globalnych dla zbierania elektronicznych materiałów dowodowych (Premium)
 
-Ostatnim krokiem do wykonania przed rozpoczęciem tworzenia i używania spraw przez osoby w organizacji jest skonfigurowanie ustawień globalnych dotyczących wszystkich spraw w organizacji. Obecnie jedynym ustawieniem globalnym jest wykrywanie uprawnień klienta-klienta *(w* przyszłości będzie dostępnych więcej ustawień globalnych). To ustawienie umożliwia uruchomienie modelu uprawnień klienta obsługi klienta podczas analizowania danych w zestawie recenzji. W modelu jest używane uczenie maszynowe w celu określenia prawdopodobieństwa, że dokument zawiera zawartość z natury prawnej. Porównuje także uczestników dokumentów z listą prawniczych (przesłaną przez Ciebie podczas konfigurowania modelu) w celu ustalenia, czy w dokumencie co najmniej jednego uczestnika jest pełnomocnik.
+Ostatnim krokiem, który należy wykonać przed rozpoczęciem tworzenia i używania przypadków użycia przez osoby w organizacji, jest skonfigurowanie ustawień globalnych, które mają zastosowanie do wszystkich przypadków w organizacji. Obecnie jedynym ustawieniem globalnym jest *wykrywanie uprawnień klienta-adwokata* (więcej ustawień globalnych będzie dostępnych w przyszłości). To ustawienie umożliwia uruchamianie modelu uprawnień adwokackiego klienta podczas analizowania danych w zestawie przeglądów. Model używa uczenia maszynowego do określenia prawdopodobieństwa, że dokument zawiera zawartość o charakterze prawnym. Porównuje również uczestników dokumentów z listą adwokatów (którą przesyłasz podczas konfigurowania modelu), aby ustalić, czy dokument ma co najmniej jednego uczestnika, który jest adwokatem.
 
-Aby uzyskać więcej informacji na temat konfigurowania i używania modelu wykrywania uprawnień prawni-klienta, zobacz Konfigurowanie wykrywania prawa do obsługi klienta w [programie Advanced eDiscovery](attorney-privilege-detection.md).
+Aby uzyskać więcej informacji na temat konfigurowania i używania modelu wykrywania uprawnień klienta-adwokata, zobacz [Konfigurowanie wykrywania uprawnień klienta-adwokata w usłudze eDiscovery (Premium)](attorney-privilege-detection.md).
 
 > [!NOTE]
-> Jest to krok opcjonalny, który można wykonać w dowolnym momencie. Nie zaimplementowanie modelu wykrywania uprawnień klienta obsługi klienta nie uniemożliwia tworzenia i używania innych Advanced eDiscovery przypadkach.
+> Jest to opcjonalny krok, który można wykonać w dowolnym momencie. Nie implementowanie modelu wykrywania uprawnień klienta-adwokata nie uniemożliwia tworzenia i używania przypadków zbierania elektronicznych materiałów dowodowych (Premium).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po skonfigurowaniu Advanced eDiscovery można utworzyć [sprawę](create-and-manage-advanced-ediscoveryv2-case.md).
+Po skonfigurowaniu funkcji zbierania elektronicznych materiałów dowodowych (Premium) możesz utworzyć [przypadek](create-and-manage-advanced-ediscoveryv2-case.md).

@@ -1,5 +1,5 @@
 ---
-title: Dodawanie wyników wyszukiwania do zestawu recenzji
+title: Dodawanie wyników wyszukiwania do zestawu przeglądów
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,60 +17,60 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak dodać wyniki wyszukiwania lub przykłady tych wyników do zestawu Advanced eDiscovery przypadków.
-ms.openlocfilehash: bce0301e7045eeb0dd5c42f8a119d56649120a11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak dodać wyniki wyszukiwania lub przykłady tych wyników wyszukiwania do zestawu przeglądu przypadków zbierania elektronicznych materiałów dowodowych (Premium).
+ms.openlocfilehash: 1649b766c0e7f39122505d3a73574e478373f5b2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973790"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941132"
 ---
-# <a name="add-search-results-to-a-review-set"></a>Dodawanie wyników wyszukiwania do zestawu recenzji
+# <a name="add-search-results-to-a-review-set"></a>Dodawanie wyników wyszukiwania do zestawu przeglądów
 
-Jeśli wyniki wyszukiwania są zadowalace i możesz je przeglądać i analizować, możesz dodać je do zestawu recenzji w przypadku. Skopiowanie oryginalnych danych do zestawu recenzji ułatwia również proces przeglądania i analizy, udostępniając zaawansowane narzędzia do analizy, takie jak wykrywanie motywów, wykrywanie niemal duplikatów oraz rozpoznawanie wątku wiadomości e-mail. Do zestawu recenzji można również dodawać dane Microsoft 365 źródeł danych innych niż te, co umożliwia ich przeglądanie oprócz danych zebranych z Microsoft 365.
+Gdy wyniki wyszukiwania są zadowalające i możesz je przejrzeć i przeanalizować, możesz dodać je do zestawu przeglądów w tym przypadku. Kopiowanie oryginalnych danych do zestawu przeglądów ułatwia również proces przeglądania i analizy, udostępniając zaawansowane narzędzia analityczne, takie jak wykrywanie motywów, wykrywanie niemal duplikatów i identyfikacja wątków poczty e-mail. Możesz również dodać dane ze źródeł danych innych niż Microsoft 365 do zestawu przeglądów, aby można było przeglądać te dane oprócz danych zbieranych z Microsoft 365.
 
-Po dodaniu wyników wyszukiwania do zestawu recenzji (zestawy recenzji w przypadku sprawy są wymienione na karcie Zestawy recenzji) występują następujące zdarzenia:
+Po dodaniu wyników wyszukiwania do zestawu przeglądów (zestawy przeglądów w przypadku są wymienione na karcie **Zestawy przeglądów** ) występują następujące rzeczy:
 
-- Wyszukiwanie zostanie ponownie uruchomione. Oznacza to, że rzeczywiste wyniki wyszukiwania skopiowane do zestawu recenzji mogą być inne niż szacowane wyniki, które zostały zwrócone podczas ostatniego uruchomienia wyszukiwania.
+- Wyszukiwanie zostanie uruchomione ponownie. Oznacza to, że rzeczywiste wyniki wyszukiwania skopiowane do zestawu przeglądów mogą być inne niż szacowane wyniki, które zostały zwrócone podczas ostatniego uruchomienia wyszukiwania.
 
-- Wszystkie elementy w wynikach wyszukiwania są kopiowane z pierwotnego źródła danych w usługach na żywo i kopiowane do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
+- Wszystkie elementy w wynikach wyszukiwania są kopiowane z oryginalnego źródła danych w usługach na żywo i kopiowane do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
 
-- Wszystkie elementy (w tym zawartość i metadane) są ponownie indeksowane, dzięki czemu można w pełni wyszukiwać wszystkie dane w zestawie recenzji podczas przeglądania danych sprawy. Ponowne indeksowanie wyników umożliwia dokładne i szybkie wyszukiwanie podczas przeszukiwania danych w zestawie recenzji podczas analizy przypadku.
+- Wszystkie elementy (w tym zawartość i metadane) są ponownie indeksowane, aby wszystkie dane w zestawie przeglądów były w pełni przeszukiwane podczas przeglądania danych sprawy. Ponowne indeksowanie danych powoduje dokładne i szybkie wyszukiwanie podczas przeszukiwania danych w zestawie przeglądów podczas badania sprawy.
 
-- Plik zaszyfrowany przy użyciu technologii [szyfrowania firmy Microsoft](encryption.md) i dołączony do wiadomości e-mail zwróconej w wynikach wyszukiwania jest odszyfrowywany po dodaniu wiadomości e-mail i dołączonego pliku do zestawu recenzji. W zestawie recenzji możesz przeglądać odszyfrowany plik i odszyfrowywać go. Aby dodać odszyfrowane załączniki wiadomości e-mail do zestawu recenzji, musisz mieć przypisaną rolę odszyfrowywania usługi RMS. Aby uzyskać więcej informacji, zobacz [Odszyfrowywanie w narzędziu Microsoft 365 eDiscovery](ediscovery-decryption.md).
+- Plik zaszyfrowany za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączony do wiadomości e-mail zwracanej w wynikach wyszukiwania jest odszyfrowywany po dodaniu wiadomości e-mail i dołączonego pliku do zestawu przeglądów. Odszyfrowany plik można przeglądać i wykonywać zapytania w zestawie przeglądów. Musisz mieć przypisaną rolę odszyfrowywania usługi RMS, aby dodać odszyfrowane załączniki wiadomości e-mail do zestawu przeglądów. Aby uzyskać więcej informacji, zobacz [Odszyfrowywanie w narzędziach Microsoft 365 eDiscovery](ediscovery-decryption.md).
 
-Aby dodać dane do zestawu recenzji, kliknij wyszukiwanie na karcie  Wyszukiwania, a następnie kliknij pozycję Dodaj wyniki do przejrzenia **ustawionego na** wysuwanych stronie.
+Aby dodać dane do zestawu przeglądów, kliknij wyszukiwanie na karcie **Wyszukiwania** , a następnie kliknij pozycję **Dodaj wyniki, aby przejrzeć zestaw** na stronie wysuwanej.
 
-Możesz dodać go do istniejącego zestawu recenzji lub utworzyć nowy zestaw recenzji.  Jeśli dodajesz do nowego zestawu recenzji, określ jego nazwę, a następnie kliknij przycisk **Dodaj** , aby wyświetlić stronę wysuwaną.
+Możesz dodać do istniejącego zestawu przeglądów lub utworzyć nowy zestaw przeglądów.  W przypadku dodawania do nowego zestawu przeglądów określ nazwę, a następnie kliknij przycisk **Dodaj** , aby wyświetlić stronę wysuwaną.
 
-![Wybierz zestaw recenzji i skonfiguruj opcje kolekcji.](../media/AeD_AddToReviewSet.png)
+![Wybierz zestaw przeglądów i skonfiguruj opcje kolekcji.](../media/AeD_AddToReviewSet.png)
 
-Dodawanie danych do zestawu recenzji jest długim procesem. Ten proces obejmuje zbieranie elementów z oryginalnych źródeł danych w usłudze Microsoft 365 (na przykład ze skrzynek pocztowych i witryn), kopiowanie ich do lokalizacji usługi Azure Storage (ten proces kopiowania jest również nazywany wprowadzaniem *), a* następnie ponowne indeksowanie elementów. Możesz śledzić postęp na karcie Zadania lub  na karcie Wyszukiwania, monitorując stan w kolumnie Dodano dane **do przejrzenia zestawu**. Po zakończeniu przetwarzania zestawu recenzji kliknij  kartę Zestawy recenzji w przypadku, a następnie kliknij zestaw recenzji, aby rozpocząć proces filtrowania, reenzowania, znakowania i eksportowania danych w zestawie recenzji.
+Dodawanie danych do zestawu przeglądów jest długotrwałym procesem. Ten proces obejmuje zbieranie elementów z oryginalnych źródeł danych w Microsoft 365 (na przykład ze skrzynek pocztowych i witryn), kopiowanie ich do lokalizacji Storage platformy Azure (ten proces kopiowania jest również nazywany *pozyskiwaniem*), a następnie ponowne indeksowanie elementów. Postęp można śledzić na karcie **Zadania** lub na karcie **Wyszukiwania** , monitorując stan w kolumnie **Dodano dane, aby przejrzeć ustawioną** kolumnę. Po zakończeniu przetwarzania zestawu przeglądów kliknij kartę **Zestawy przeglądów** w tym przypadku, a następnie kliknij zestaw przeglądów, aby rozpocząć proces filtrowania, przeglądania, tagowania i eksportowania danych w zestawie przeglądów.
 
-## <a name="define-options-to-scope-your-collection-for-review"></a>Definiowanie opcji w celu określenia zakresu kolekcji do recenzji
+## <a name="define-options-to-scope-your-collection-for-review"></a>Definiowanie opcji zakresu kolekcji do przeglądu
 
-Po dodaniu zawartości wyszukiwania do istniejącego lub nowego zestawu recenzji dostępne są następujące opcje zbierania zawartości do przejrzenia:
+Po dodaniu zawartości wyszukiwania do istniejącego lub nowego zestawu przeglądów dostępne są następujące opcje zbierania zawartości do przeglądu:
 
-- **Uwzględnij wersje z SharePoint (beta)**: Użyj tej opcji, aby włączyć kolekcję wszystkich wersji dokumentu pakietu SharePoint według limitów wersji i parametrów wyszukiwania kolekcji. Zaznaczenie tej opcji znacząco zwiększy rozmiar elementów dodawanych do zestawu recenzji.
+- **Dołącz wersje z SharePoint (beta)**: użyj tej opcji, aby włączyć kolekcję wszystkich wersji dokumentu SharePoint zgodnie z limitami wersji i parametrami wyszukiwania kolekcji. Wybranie tej opcji znacznie zwiększy rozmiar elementów dodanych do zestawu przeglądów.
 
-- **Opcje pobierania konwersacji**: Elementy dodawane do zestawu recenzji są włączone dla konwersacji z wątkami, co pomaga przeglądać zawartość w kontekście konwersacji w tę i z powrotem. Aby uzyskać więcej informacji, [zobacz Przeglądanie konwersacji w programie Advanced eDiscovery](conversation-review-sets.md).
+- **Opcje pobierania konwersacji**: elementy dodane do zestawu przeglądów są włączone dla konwersacji wątkowych, aby ułatwić przeglądanie zawartości w kontekście konwersacji tam iz powrotem. Aby uzyskać więcej informacji, zobacz [Przeglądanie konwersacji w usłudze eDiscovery (Premium)](conversation-review-sets.md).
 
-- **Włącz pobieranie dla nowoczesnych załączników**. Użyj tej opcji, aby dołączyć do kolekcji nowoczesne załączniki lub pliki połączone w celu dalszego przejrzenia. Aby uzyskać więcej informacji na temat właściwości, które można wyszukiwać w przypadku nowoczesnych załączników, zobacz Pola [metadanych dokumentu w programie Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+- **Włącz pobieranie dla nowoczesnych załączników**: użyj tej opcji, aby uwzględnić nowoczesne załączniki lub połączone pliki w kolekcji w celu dalszego przeglądu. Aby uzyskać więcej informacji na temat właściwości z możliwością wyszukiwania związanych z nowoczesnymi załącznikami, zobacz [Pola metadanych dokumentu w obszarze eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
 
-## <a name="add-a-sample-to-a-review-set"></a>Dodawanie próbki do zestawu recenzji
+## <a name="add-a-sample-to-a-review-set"></a>Dodawanie przykładu do zestawu przeglądów
 
-Jeśli chcesz dokładniej sprawdzić wyniki wyszukiwania przed dodaniem ich wszystkich do zestawu recenzji, możesz dodać przykładowe wyniki wyszukiwania do zestawu recenzji, zamiast dodawać wszystko.
+Jeśli chcesz dokładniej zweryfikować wyniki wyszukiwania przed dodaniem ich wszystkich do zestawu przeglądów, możesz dodać próbkę wyników wyszukiwania do zestawu przeglądów zamiast dodawać wszystko.
 
-Aby dodać przykład do zestawu recenzji, kliknij wyszukiwanie na karcie Wyszukiwania, a następnie **kliknij pozycję Przykład** na wysuwana stronie. Na stronie **Parametry próbkowania** wybierz jedną z następujących opcji:
+Aby dodać przykład do zestawu przeglądów, kliknij wyszukiwanie na karcie **Wyszukiwania** i kliknij pozycję **Przykład** na stronie wysuwanej. Na stronie **Parametry próbkowania** wybierz jedną z następujących opcji:
 
-- **Poziom ufności %** i Przedział ufności **%** — elementy dodane do zestawu recenzji będą określane przez ustawione parametry statystyczne. Jeśli zazwyczaj podczas próbkowania wyników używasz poziomu ufności i interwału, określ je w polach rozwijanych. W przeciwnym razie użyj ustawień domyślnych.
+- **Procent poziomu ufności** i **procent interwału ufności** — elementy dodane do zestawu przeglądów będą określane przez ustawione parametry statystyczne. Jeśli zwykle używasz poziomu ufności i interwału podczas próbkowania wyników, określ je w polach listy rozwijanej. W przeciwnym razie użyj ustawień domyślnych.
 
-- **Losowe próbki %** — elementy dodane do zestawu recenzji są oparte na losowym zaznaczeniu określonej wartości procentowej całkowitej liczby elementów zwróconych przez wyszukiwanie.
+- **Procent próbki losowej** — elementy dodane do zestawu przeglądów są oparte na losowym wyborze określonej wartości procentowej całkowitej liczby elementów zwróconych przez wyszukiwanie.
 
-Po wybraniu i skonfigurowaniu jednej z poprzednich opcji wybierz zestaw recenzji, do których chcesz dodać przykład, a następnie kliknij przycisk **Wyślij**. Ponownie możesz śledzić postęp na karcie Zadania lub na  karcie Wyszukiwania, monitorując  stan w kolumnie Dodano dane **do przejrzenia zestawu**.
+Po wybraniu i skonfigurowaniu jednej z poprzednich opcji wybierz zestaw przeglądów, aby dodać przykład, a następnie kliknij pozycję **Wyślij**. Ponownie możesz śledzić postęp na karcie **Zadania** lub na karcie **Wyszukiwania** , monitorując stan w kolumnie **Dodano dane, aby przejrzeć ustawioną** kolumnę.
 
 ## <a name="optical-character-recognition"></a>Optyczne rozpoznawanie znaków
 
-Po dodaniu wyników wyszukiwania do zestawu recenzji funkcja optycznego rozpoznawania znaków (OCR) w programie Advanced eDiscovery automatycznie wyodrębnia tekst z obrazów i dodaje tekst obrazu do danych dodanych do zestawu recenzji. Wyodrębniony tekst można wyświetlić w przeglądarce tekstu wybranego pliku obrazu w zestawie recenzji. Umożliwia to dalsze przeglądanie i analizowanie tekstu na obrazach. Funkcja OCR jest obsługiwana w przypadku luźnych plików, załączników wiadomości e-mail i obrazów osadzonych. Aby uzyskać listę formatów plików obrazów, które są obsługiwane przez OCR, zobacz [Obsługiwane typy](supported-filetypes-ediscovery20.md#image) plików w Advanced eDiscovery.
+Po dodaniu wyników wyszukiwania do zestawu przeglądów funkcja optycznego rozpoznawania znaków (OCR) w funkcji eDiscovery (Premium) automatycznie wyodrębnia tekst z obrazów i zawiera tekst obrazu z danymi dodanymi do zestawu przeglądów. Wyodrębniony tekst można wyświetlić w przeglądarce Tekst wybranego pliku obrazu w zestawie przeglądów. Dzięki temu można przeprowadzać dalsze przeglądy i analizy tekstu na obrazach. Funkcja OCR jest obsługiwana w przypadku luźnych plików, załączników wiadomości e-mail i obrazów osadzonych. Aby uzyskać listę formatów plików obrazów obsługiwanych w usłudze OCR, zobacz [Obsługiwane typy plików w funkcji zbierania elektronicznych materiałów dowodowych (Premium)](supported-filetypes-ediscovery20.md#image).
 
-Musisz włączyć funkcję OCR dla każdej sprawy, która jest tworzyć w Advanced eDiscovery. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wyszukiwania i analizy](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).
+Musisz włączyć funkcję OCR dla każdego przypadku utworzonego w środowisku eDiscovery (Premium). Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wyszukiwania i analizy](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

@@ -15,101 +15,101 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Użyj narzędzia Advanced eDiscovery do zarządzania pobłędniami, aby łatwo uzyskać dostęp do aktywności i wyszukać je w ramach sprawy.
+description: Użyj narzędzia do zarządzania opiekunami zbierania elektronicznych materiałów dowodowych (Premium), aby łatwo uzyskać dostęp do działania i wyszukać opiekunów w Twoim przypadku.
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: d0ea6e94bd48c055cac23d8a96477e036369dd5c
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 35b622e00caeeca78c85849f03b3a21f8a28b443
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017786"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943518"
 ---
 # <a name="view-custodian-audit-activity"></a>Wyświetlaj aktywność inspekcji opiekuna
 
-Chcesz sprawdzić, czy użytkownik przeglądał określony dokument lub czyszczył określony element ze skrzynki pocztowej? Advanced eDiscovery jest teraz zintegrowana z istniejącym narzędziem do przeszukiwania dziennika inspekcji w Centrum zgodności platformy Microsoft 365. Za pomocą tego osadzonego środowisko można użyć narzędzia do zarządzania Advanced eDiscovery w celu ułatwienia badania przez łatwe uzyskiwanie dostępu do aktywności osób zarządzających sprawą i wyszukiwanie w nich osób, które się w tym przypadku znajduje.
+Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Usługa Microsoft Purview eDiscovery (Premium) jest teraz zintegrowana z istniejącym narzędziem do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview. Korzystając z tego osadzonego środowiska, możesz użyć narzędzia do zarządzania opiekunami zbierania elektronicznych materiałów dowodowych (Premium), aby ułatwić badanie, łatwo uzyskując dostęp do działań i przeszukując działania opiekunów w Twojej sprawie.
 
 ## <a name="get-permissions"></a>Uzyskiwanie uprawnień
 
-Do przeszukiwania dziennika inspekcji View-Only musi być przypisana rola Dzienniki inspekcji Exchange Online Dzienniki inspekcji. Domyślnie te role są przypisane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie Uprawnienia Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administracyjnego</a>. Aby dać użytkownikowi możliwość przeszukiwania dziennika inspekcji usługi Advanced eDiscovery z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w programie Exchange Online, dodać rolę Dzienniki inspekcji lub Dzienniki inspekcji usługi View-Only, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz Zarządzanie grupami ról w Exchange Online.
+Aby przeszukać dziennik inspekcji, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie Uprawnienia w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. Aby umożliwić użytkownikowi przeszukiwanie dziennika inspekcji zbierania elektronicznych materiałów dowodowych (Premium) z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w Exchange Online, dodać rolę dzienników inspekcji View-Only lub dzienników inspekcji, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz Zarządzanie grupami ról w Exchange Online.
 
 > [!IMPORTANT]
-> Jeśli przypiszesz użytkownikowi rolę dzienniki inspekcji View-Only lub Dzienniki inspekcji na stronie Uprawnienia w Centrum zgodności platformy Microsoft 365, ten użytkownik nie będzie mógł przeszukiwać dziennika inspekcji. Musisz przypisać uprawnienia w programie Exchange Online. Jest to spowodowane tym, że polecenie cmdlet służące do przeszukiwania dziennika inspekcji jest poleceniem cmdlet Exchange Online cmdlet.
+> Jeśli przypiszesz użytkownikowi rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji na stronie Uprawnienia w portalu zgodności, nie będzie mógł przeszukiwać dziennika inspekcji. Musisz przypisać uprawnienia w Exchange Online. Dzieje się tak, ponieważ podstawowe polecenie cmdlet używane do przeszukiwania dziennika inspekcji jest Exchange Online poleceniem cmdlet.
 
-## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Krok 1. Wyszukiwanie w dzienniku inspekcji działań wykonywanych przez opiekuna
+## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Krok 1. Wyszukaj w dzienniku inspekcji działania wykonywane przez opiekuna
 
-1. Przejdź do **okna zbierania elektronicznych > Advanced eDiscovery** i otwórz sprawę.
+1. Przejdź do **obszaru eDiscovery > eDiscovery (Premium)** i otwórz sprawę.
   
-2. Kliknij **kartę Źródła** .
+2. Kliknij kartę **Źródła** .
   
-3. Na stronie **Pojedyrze** wybierz z listy opiekuna, a następnie kliknij pozycję **Wyświetl** aktywność karteczek w wysuwanych wiadomościach.
+3. Na stronie **Opiekunowie** wybierz z listy opiekuna, a następnie kliknij pozycję **Wyświetl aktywność opiekuna** na stronie wysuwanej.
 
-    Zostanie wyświetlona strona wyszukiwania Działania w szybkich działaniach. Zwróć uwagę, że w polu listy rozwijanej Wiad. W polu listy rozwijanej można wybrać różne typy treści, ale w każdej chwili można wyszukiwać tylko działania tylko dla jednego opiekuna.
+    Zostanie wyświetlona strona wyszukiwania działań opiekuna. Zwróć uwagę, że opiekun wybrany w poprzednim kroku jest wyświetlany w polu listy rozwijanej **Kustosz** . W polu listy rozwijanej możesz wybrać różnych opiekunów, ale możesz wyszukiwać tylko jednego opiekuna naraz.
 
-    ![Strona wyszukiwania działań chłonnych.](../media/AeDCustodianActivities1.png)
+    ![Strona wyszukiwania działań opiekuna.](../media/AeDCustodianActivities1.png)
    
 4. Skonfiguruj następujące kryteria wyszukiwania:
       
-   1. **Działania** — kliknij listę rozwijaną, aby wyświetlić działania, które można wyszukać. Po uruchomieniu wyszukiwania są wyświetlane tylko rekordy inspekcji dotyczące wybranych działań. Zaznaczenie **opcji Pokaż wyniki dla wszystkich działań** spowoduje wyświetlenie wyników dotyczących wszystkich działań wykonywanych przez opiekuna, które spełniają inne kryteria wyszukiwania.
+   1. **Działania** — kliknij listę rozwijaną, aby wyświetlić działania, których można wyszukać. Po uruchomieniu wyszukiwania zostaną wyświetlone tylko rekordy inspekcji dla wybranych działań. Wybranie pozycji **Pokaż wyniki dla wszystkich działań** spowoduje wyświetlenie wyników dla wszystkich działań wykonywanych przez opiekuna zgodnych z innymi kryteriami wyszukiwania.
 
       ![Lista działań.](../media/CustodianActivityAudit.PNG)
       
-   1. **Data rozpoczęcia i Data zakończenia** — wybierz zakres dat i godzin, aby wyświetlić zdarzenia, które wystąpiły w tym okresie. Domyślnie jest zaznaczonych ostatnich siedem dni. Data i godzina są przedstawiane w formacie uniwersalnego czasu koordynowaowego (UTC). Maksymalny zakres dat, który można określić, to jeden rok.
+   1. **Data rozpoczęcia i data zakończenia** — wybierz zakres dat i godzin, aby wyświetlić zdarzenia, które wystąpiły w tym okresie. Domyślnie wybierane są ostatnie siedem dni. Data i godzina są prezentowane w formacie Uniwersalny czas koordynowany (UTC). Maksymalny zakres dat, który można określić, to jeden rok.
       
-   1. **Fortysy** — kliknij w tym polu, a następnie wybierz konkretny, który ma być wyświetlany w wynikach wyszukiwania. Na liście wyników zostaną wyświetlone rekordy inspekcji wybranych działań wykonanych przez użytkowników wybranych w tym polu.
+   1. **Opiekunowie** — kliknij to pole, a następnie wybierz określonego opiekuna, aby wyświetlić wyniki wyszukiwania. Rekordy inspekcji dla wybranego działania wykonane przez użytkowników wybranych w tym polu są wyświetlane na liście wyników.
       
-5. Kliknij pozycję ![Przycisk Wyszukaj.](../media/SearchButton.PNG)  , aby uruchomić wyszukiwanie przy użyciu kryteriów wyszukiwania. Wyniki wyszukiwania zostaną załadowane i po chwili wyświetlone w obszarze Wyniki na stronie wyszukiwania Działania użytkownika. 
+5. Kliknij ![Przycisk wyszukiwania.](../media/SearchButton.PNG)  , aby uruchomić wyszukiwanie przy użyciu kryteriów wyszukiwania. Wyniki wyszukiwania są ładowane i po kilku chwilach są wyświetlane w obszarze Wyniki na stronie wyszukiwania Działania opiekuna. 
 
-## <a name="step-2-view-the-audit-log-search-results"></a>Krok 2. Wyświetlanie wyników przeszukiwania dziennika inspekcji
+## <a name="step-2-view-the-audit-log-search-results"></a>Krok 2. Wyświetlanie wyników wyszukiwania dziennika inspekcji
 
-Wyniki przeszukiwania dziennika inspekcji są wyświetlane w obszarze Wyniki na stronie Dziennik inspekcji w sz. Maksymalnie jest wyświetlanych 5000 (najnowszych) zdarzeń w przyrostach co 150 zdarzeń. Aby wyświetlić więcej zdarzeń, możesz użyć paska przewijania w okienku Wyniki lub nacisnąć klawisze Shift + End, aby wyświetlić 150 kolejnych zdarzeń.
+Wyniki wyszukiwania dziennika inspekcji są wyświetlane w obszarze Wyniki na stronie dziennika inspekcji opiekuna. Maksymalnie 5000 (najnowszych) zdarzeń jest wyświetlanych w przyrostach 150 zdarzeń. Aby wyświetlić więcej zdarzeń, możesz użyć paska przewijania w okienku Wyniki lub nacisnąć klawisze Shift + End, aby wyświetlić następne 150 zdarzeń.
 
-Wyniki zawierają następujące informacje na temat poszczególnych zdarzeń zwróconych przez wyszukiwanie.
-- **Data**: data i godzina wystąpienia zdarzenia (w formacie UTC).
+Wyniki zawierają następujące informacje o każdym zdarzeniu zwracanym przez wyszukiwanie.
+- **Data**: data i godzina (w formacie UTC), kiedy wystąpiło zdarzenie.
 
-- **Adres IP**: adres IP urządzenia używanego w czasie rejestrowanego działania. Adres IP jest wyświetlany w formacie adresu IPv4 lub IPv6.
+- **Adres IP**: adres IP urządzenia, które było używane podczas rejestrowania działania. Adres IP jest wyświetlany w formacie adresu IPv4 lub IPv6.
 
-- **Użytkownik**: Użytkownik (lub konto usługi), który wykonał akcję, która wyzwoliła zdarzenie.
+- **Użytkownik**: użytkownik (lub konto usługi), który wykonał akcję, która wyzwoliła zdarzenie.
 
-- **Działanie**: Działanie wykonane przez użytkownika. Ta wartość odpowiada czynnościom zaznaczonym na liście rozwijanej Działania. W przypadku zdarzenia z dziennika inspekcji Exchange wartość w tej kolumnie jest poleceniem cmdlet Exchange cmdlet.
+- **Działanie**: działanie wykonywane przez użytkownika. Ta wartość odpowiada działaniom wybranym na liście rozwijanej Działania. W przypadku zdarzenia z dziennika inspekcji administratora Exchange wartość w tej kolumnie jest Exchange polecenia cmdlet.
 
-- **Element**: obiekt utworzony lub zmodyfikowany w wyniku odpowiedniego działania. Może to być na przykład plik, który został przeglądany lub zmodyfikowany, albo zaktualizowane konto użytkownika. Nie wszystkie działania mają wartość w tej kolumnie.
+- **Element**: obiekt, który został utworzony lub zmodyfikowany w wyniku odpowiedniego działania. Na przykład plik, który został wyświetlony lub zmodyfikowany, lub zaktualizowane konto użytkownika. Nie wszystkie działania mają wartość w tej kolumnie.
 
-- **Szczegóły**: Dodatkowe szczegóły dotyczące działania. Również nie wszystkie działania będą mieć wartość.
+- **Szczegóły**: dodatkowe szczegóły dotyczące działania. Ponownie nie wszystkie działania będą miały wartość.
 
 ## <a name="step-3-filter-the-search-results"></a>Krok 3. Filtrowanie wyników wyszukiwania
 
-Można nie tylko sortować, ale również filtrować wyniki przeszukiwania dziennika inspekcji. Może to ułatwić szybkie filtrowanie wyników dla określonego użytkownika lub działania. 
+Oprócz sortowania można również filtrować wyniki wyszukiwania w dzienniku inspekcji. Może to pomóc w szybkim filtrowaniu wyników dla określonego użytkownika lub działania. 
 
 Aby filtrować wyniki:
 
- 1. Tworzenie i uruchamianie wyszukiwania w dzienniku inspekcji.
+ 1. Tworzenie i uruchamianie wyszukiwania dzienników inspekcji.
   
-2. Po wyświetlaniu wyników kliknij pozycję **Filtruj wyniki**.
+2. Po wyświetleniu wyników kliknij pozycję **Filtruj wyniki**.
  
-3. Poniżej nagłówków kolumn zostaną wyświetlone pola słów kluczowych.
+3. Pola słów kluczowych są wyświetlane pod każdym nagłówkiem kolumny.
   
-4. Kliknij jedno z pól poniżej nagłówka kolumny i wpisz słowo lub frazę, w zależności od kolumny, według których chcesz filtrować. Wyniki zostaną dynamicznie dopasowane, aby wyświetlić zdarzenia zgodne z filtrem.
+4. Kliknij jedno z pól pod nagłówkiem kolumny i wpisz wyraz lub frazę, w zależności od kolumny, na której filtrujesz. Wyniki zostaną dynamicznie dostosowane do wyświetlania zdarzeń zgodnych z filtrem.
   
-5. Aby wyczyścić filtr, kliknij **znak X** w polu filtru lub po prostu kliknij pozycję **Ukryj filtrowanie**.
+5. Aby wyczyścić filtr, kliknij przycisk **X** w polu filtru lub po prostu kliknij pozycję **Ukryj filtrowanie**.
 
 ## <a name="export-the-search-results-to-a-file"></a>Eksportowanie wyników wyszukiwania do pliku
 
-Wyniki przeszukiwania dziennika inspekcji można wyeksportować do pliku w formacie wartości rozdzielonych przecinkami (CSV) na komputerze lokalnym. Możesz otworzyć ten plik w programie Microsoft Excel i użyć funkcji, takich jak wyszukiwanie, sortowanie, filtrowanie i dzielenie jednej kolumny (zawierającej komórki wielowymiarowe) na wiele kolumn.
+Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości rozdzielanej przecinkami (CSV) na komputerze lokalnym. Możesz otworzyć ten plik w Microsoft Excel i użyć funkcji, takich jak wyszukiwanie, sortowanie, filtrowanie i dzielenie pojedynczej kolumny (zawierającej komórki wielowartościowe) na wiele kolumn.
 
-1. Uruchom przeszukiwanie dziennika inspekcji, a następnie poprawiaj kryteria wyszukiwania, aż zostaną uzyskane odpowiednie wyniki.
+1. Uruchom wyszukiwanie w dzienniku inspekcji, a następnie popraw kryteria wyszukiwania do momentu uzyskania żądanych wyników.
   
 2. Kliknij pozycję Eksportuj wyniki i wybierz jedną z następujących opcji:
 
-    - **Zapisz załadowane wyniki:** Wybierz tę opcję, aby wyeksportować tylko wpisy wyświetlane **w obszarze Wyniki** na **stronie Przeszukiwanie dziennika** inspekcji. Pobrany plik CSV zawiera te same kolumny (i dane), które są wyświetlane na stronie (Data, Użytkownik, Działanie, Element i Szczegóły). W pliku CSV **zostanie dołączona** dodatkowa kolumna (o tytule Więcej), zawierająca więcej informacji z wpisu dziennika inspekcji. Ponieważ eksportujesz te same wyniki, które zostały załadowane (i można wyświetlić) na stronie Przeszukiwanie dziennika inspekcji, eksportowanych jest maksymalnie 5000 wpisów.
+    - **Zapisz załadowane wyniki:** Wybierz tę opcję, aby wyeksportować tylko wpisy wyświetlane w obszarze **Wyniki** na stronie **wyszukiwania dziennika inspekcji opiekuna** . Pobrany plik CSV zawiera te same kolumny (i dane) wyświetlane na stronie (Data, Użytkownik, Działanie, Element i Szczegóły). W pliku CSV znajduje się dodatkowa kolumna (zatytułowana **Więcej**), która zawiera więcej informacji z wpisu dziennika inspekcji. Ponieważ eksportujesz te same wyniki, które są ładowane (i widoczne) na stronie wyszukiwania dziennika inspekcji, eksportowane jest maksymalnie 5000 wpisów.
         
-    - **Pobierz wszystkie wyniki:** Wybierz tę opcję, aby wyeksportować wszystkie wpisy z dziennika inspekcji, które spełniają kryteria wyszukiwania. W przypadku dużego zestawu wyników wyszukiwania wybierz tę opcję, aby pobrać wszystkie wpisy z dziennika inspekcji, a nie tylko 5000 wyników, które mogą być wyświetlane na stronie Przeszukiwanie dziennika  inspekcji w związku z inspekcją. Ta opcja spowoduje pobranie do pliku CSV nieprzetworzonych danych z dziennika inspekcji oraz dodatkowe informacje z wpisu dziennika inspekcji w kolumnie o nazwie Dane inspekcji. W przypadku wybrania tej opcji eksportowania pobieranie pliku może potrwać dłużej, ponieważ plik może być znacznie większy niż plik pobierany w przypadku wybrania drugiej opcji.
+    - **Pobierz wszystkie wyniki:** Wybierz tę opcję, aby wyeksportować wszystkie wpisy z dziennika inspekcji, które spełniają kryteria wyszukiwania. W przypadku dużego zestawu wyników wyszukiwania wybierz tę opcję, aby pobrać wszystkie wpisy z dziennika inspekcji oprócz 5000 wyników, które mogą być wyświetlane na stronie wyszukiwania **dziennika inspekcji opiekuna** . Ta opcja spowoduje pobranie nieprzetworzonych danych z dziennika inspekcji do pliku CSV i zawiera dodatkowe informacje z wpisu dziennika inspekcji w kolumnie o nazwie AuditData. Pobranie pliku może potrwać dłużej, jeśli wybierzesz tę opcję eksportu, ponieważ plik może być znacznie większy niż pobrany, jeśli wybierzesz inną opcję.
     
       > [!IMPORTANT]
-      > Z jednego przeszukiwania dziennika inspekcji do pliku CSV można pobrać maksymalnie 50 000 wpisów. Jeśli do pliku CSV zostanie pobranych 50 000 wpisów, można z pewnością założyć, że istnieje ponad 50 000 zdarzeń, które spełniają kryteria wyszukiwania. Aby wyeksportować dane powyżej tego limitu, spróbuj użyć zakresu dat w celu zmniejszenia liczby wpisów dziennika inspekcji. W celu wyeksportowania ponad 50 000 wpisów może być konieczne uruchomienie wielu wyszukiwań z mniejszymi zakresami dat.
+      > Możesz pobrać maksymalnie 50 000 wpisów do pliku CSV z pojedynczego przeszukiwania dziennika inspekcji. Jeśli do pliku CSV zostanie pobranych 50 000 wpisów, można założyć, że istnieje ponad 50 000 zdarzeń spełniających kryteria wyszukiwania. Aby wyeksportować więcej niż ten limit, spróbuj użyć zakresu dat, aby zmniejszyć liczbę wpisów dziennika inspekcji. Może być konieczne uruchomienie wielu wyszukiwań z mniejszymi zakresami dat, aby wyeksportować ponad 50 000 wpisów.
         
 
-3. Po wybraniu opcji eksportu u dołu okna zostanie wyświetlony komunikat z monitem o otwarcie pliku CSV, zapisanie go w folderze Pobrane lub zapisanie go w określonym folderze.
+3. Po wybraniu opcji eksportu w dolnej części okna zostanie wyświetlony komunikat z monitem o otwarcie pliku CSV, zapisanie go w folderze Pobrane lub zapisanie go w określonym folderze
 
-Aby uzyskać więcej informacji na temat wyświetlania, filtrowania i eksportowania wyników przeszukiwania dziennika inspekcji, zobacz [Przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md).
+Aby uzyskać więcej informacji na temat wyświetlania, filtrowania lub eksportowania wyników wyszukiwania dziennika inspekcji, zobacz [Przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md).

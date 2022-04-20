@@ -1,5 +1,5 @@
 ---
-title: Ochrona informacji podlegających rozporządzeniem o ochronie prywatności danych
+title: Ochrona informacji podlegających przepisom dotyczącym prywatności danych
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,325 +16,325 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Wdrażaj Microsoft 365 zabezpieczeń i zgodności oraz chroń swoje informacje osobiste.
-ms.openlocfilehash: 2739da0b5e9c4896b65751c63d9b2e5f3b026a2e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Wdrażanie Microsoft 365 funkcji zabezpieczeń i zgodności oraz ochrona danych osobowych.
+ms.openlocfilehash: 0876cc1ff51b133e22d13b4c7fbc9a575db32d26
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63012468"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943288"
 ---
-# <a name="protect-information-subject-to-data-privacy-regulation"></a>Ochrona informacji podlegających rozporządzeniem o ochronie prywatności danych
+# <a name="protect-information-subject-to-data-privacy-regulation"></a>Ochrona informacji podlegających przepisom dotyczącym prywatności danych
 
-W ramach subskrypcji można stosować szereg kontroli ochrony informacji, aby pomóc w spełnianiu wymagań i przepisów dotyczących zgodności z przepisami dotyczącymi prywatności danych. Należą do nich: Ogólne Rozporządzenie o Ochronie Danych (RODO), HIPAA-HITECH (amerykańskiej ustawy o ochronie prywatności w zakresie opieki zdrowotnej), california Consumer Protection Act (HIPA) i brazylijskiej ustawy o ochronie danych (LGPD).
+W ramach subskrypcji można zastosować szereg mechanizmów kontroli ochrony informacji, które ułatwiają spełnianie wymagań i przepisów dotyczących zgodności z prywatnością danych. Należą do nich ogólne rozporządzenie o ochronie danych (RODO), HIPAA-HITECH (ustawa o ochronie prywatności Stany Zjednoczone służbie zdrowia), California Consumer Protection Act (CCPA) i Brazil Data Protection Act (LGPD).
 
 Te kontrolki znajdują się w następujących obszarach rozwiązania:
 
 - Etykiety wrażliwości
-- Ochrona przed utratą danych (DLP)
-- Office szyfrowania wiadomości (OME)
-- Teams dostępu do witryn i witryn
+- Ochrona przed utratą danych (DLP) w usłudze Microsoft Purview
+- Szyfrowanie komunikatów usługi Microsoft Purview
+- kontrola dostępu Teams i lokacji
 
-![Kluczowe usługi w celu ochrony informacji osobistych, których dane podlegają rozporządzeniem o ochronie prywatności danych.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
+![Kluczowe usługi ochrony danych osobowych podlegających przepisom dotyczącym prywatności danych.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 > [!NOTE]
-> W tym rozwiązaniu opisano funkcje zabezpieczeń i zgodności w celu ochrony informacji podlegających regulacjom dotyczącym prywatności danych. Aby uzyskać pełną listę funkcji zabezpieczeń dostępnych w Microsoft 365, zobacz Microsoft 365 [zabezpieczeń](../security/index.yml). Aby uzyskać pełną listę funkcji zgodności w p Microsoft 365, [zobacz Microsoft 365 zgodności](../compliance/index.yml).
+> To rozwiązanie zawiera opis funkcji zabezpieczeń i zgodności w celu ochrony informacji podlegających przepisom dotyczącym prywatności danych. Aby uzyskać pełną listę funkcji zabezpieczeń w Microsoft 365, zobacz [Microsoft 365 dokumentację zabezpieczeń](../security/index.yml). Aby uzyskać pełną listę funkcji zgodności w Microsoft 365, zobacz [dokumentację usługi Microsoft Purview](../compliance/index.yml).
 
-## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Przepisy dotyczące ochrony prywatności danych, które mają wpływ na mechanizmy kontroli ochrony informacji
+## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Przepisy dotyczące prywatności danych, które mają wpływ na mechanizmy kontroli ochrony informacji
 
-Oto przykładowa lista przepisów dotyczących ochrony prywatności danych, które mogą dotyczyć kontroli ochrony informacji:
+Oto przykładowa lista przepisów dotyczących prywatności danych, które mogą odnosić się do mechanizmów kontroli ochrony informacji:
 
-- Artykuł 5(1)(f)) RODO
-- Artykuł RODO (32)(1)(a)
-- LGPD, artykuł 46
+- RODO art.
+- RODO art.
+- ARTYKUŁ LGPD 46
 - HIPAA-HITECH (45 CFR 164.312(e)(1))
 - HIPAA-HITECH (45 C.F.R. 164.312(e)(2)(ii))
 
-Aby uzyskać [więcej informacji na](information-protection-deploy-assess.md) temat każdego z powyższych, zobacz ocenianie ryzyka związanego z prywatnością danych i identyfikowanie elementów poufnych.
+Aby uzyskać więcej informacji na temat każdego z [powyższych elementów, zapoznaj się z artykułem Dotyczącym oceny ryzyka związanego z prywatnością danych i identyfikowania elementów poufnych](information-protection-deploy-assess.md) .
 
-Przepisy dotyczące ochrony prywatności danych w zakresie ochrony informacji zalecają:
+Przepisy dotyczące ochrony danych w zakresie ochrony informacji zalecają:
 
 - Ochrona przed utratą lub nieautoryzowanym dostępem, użyciem i/lub transmisją.
-- Stosowanie mechanizmów zabezpieczających w oparciu o ryzyko.
-- Korzystanie z szyfrowania, jeśli to konieczne.
+- Oparte na ryzyku stosowanie mechanizmów ochronnych.
+- Użycie szyfrowania w stosownych przypadkach.
 
-Twoja organizacja może również chcieć chronić Microsoft 365 do innych celów, takich jak potrzeby w zakresie zgodności z przepisami lub ze względów biznesowych. Ustanawianie schematu ochrony informacji w celu ochrony prywatności danych należy stosować w ramach ogólnego planowania, wdrażania i zarządzania informacjami.
+Organizacja może również chcieć chronić zawartość Microsoft 365 do innych celów, takich jak inne potrzeby w zakresie zgodności lub ze względów biznesowych. Ustanowienie systemu ochrony informacji w zakresie prywatności danych powinno odbywać się w ramach ogólnego planowania, wdrażania i zarządzania ochroną informacji.
 
-Aby ułatwić ci wprowadzenie do schematu ochrony informacji w programie Microsoft 365, w poniższej sekcji przedstawiono krótką listę powiązanych funkcji i działań udoskonalania w zakresie Microsoft 365. Ta lista zawiera funkcje i działania usprawnień, które mają zastosowanie do przepisów dotyczących prywatności danych. Lista nie zawiera jednak starszych technologii, jeśli istnieje nowsza funkcja, która w dużym stopniu zasypuje starszą. Na przykład zarządzanie prawami do informacji (IRM, Information Rights Management) dla systemów SharePoint i OneDrive nie jest uwzględniane na liście, ale są uwzględniane etykiety wrażliwości.
+Aby ułatwić rozpoczęcie pracy ze schematem ochrony informacji w Microsoft 365, poniższa sekcja zawiera krótką listę powiązanych możliwości i akcji ulepszeń dla Microsoft 365. Lista zawiera możliwości i akcje poprawy, które mają zastosowanie do przepisów dotyczących prywatności danych. Jednak lista nie zawiera starszych technologii, jeśli istnieje nowsza funkcja, która w dużej mierze zastępuje starszą. Na przykład usługa Zarządzanie prawami do informacji (IRM) dla SharePoint i OneDrive nie jest uwzględniona na liście, ale są uwzględniane etykiety poufności.
 
-## <a name="managing-information-protection-in-microsoft-365"></a>Zarządzanie ochroną informacji w programie Microsoft 365
+## <a name="managing-information-protection-in-microsoft-365"></a>Zarządzanie ochroną informacji w Microsoft 365
 
-Rozwiązania [firmy Microsoft do ochrony](../compliance/information-protection.md) informacji obejmują szereg zintegrowanych funkcji dla systemów Microsoft 365, Microsoft Azure i Microsoft Windows. W Microsoft 365 rozwiązania do ochrony informacji obejmują:
+[Rozwiązania do ochrony informacji](../compliance/information-protection.md) firmy Microsoft obejmują szereg zintegrowanych funkcji w Microsoft 365, Microsoft Azure i microsoft Windows. W Microsoft 365 rozwiązania do ochrony informacji obejmują:
 
-- [Typy informacji poufnych](../compliance/sensitive-information-type-entity-definitions.md) (opisane w [artykule Ocenianie ryzyka związanego z prywatnością danych i identyfikowanie elementów poufnych)](information-protection-deploy-assess.md)
+- [Typy informacji poufnych](../compliance/sensitive-information-type-entity-definitions.md) (opisane w [artykule dotyczącym oceny ryzyka związanego z prywatnością danych i identyfikowania elementów poufnych](information-protection-deploy-assess.md)
 - [Etykiety wrażliwości](../compliance/sensitivity-labels.md)
-  - Service/container-level
+  - Poziom usługi/kontenera
   - Po stronie klienta/na poziomie zawartości
-  - Zautomatyzowane w celu przechowywania danych w SharePoint i OneDrive
+  - Zautomatyzowane do przechowywania danych w SharePoint i OneDrive
 - Ochrona przed utratą danych (DLP)
-- [Microsoft 365 punktu końcowego ochrony przed utratą danych](../compliance/endpoint-dlp-learn-about.md)
-- [Szyfrowanie wiadomości usługi Office 365 nowych funkcji (OME)](../compliance/ome.md) i zaawansowanego szyfrowania [wiadomości](../compliance/ome-advanced-message-encryption.md) OME
+- [Zapobieganie utracie danych punktu końcowego](../compliance/endpoint-dlp-learn-about.md)
+- [Office 365 nowych możliwości szyfrowania komunikatów (OME)](../compliance/ome.md) i [zaawansowanego szyfrowania komunikatów](../compliance/ome-advanced-message-encryption.md) OME
 
-Ponadto ochrona na poziomie witryny i biblioteki to ważne mechanizmy dołączane do każdego schematu ochrony.
+Ponadto ochrona na poziomie lokacji i biblioteki to ważne mechanizmy, które należy uwzględnić w dowolnym schemacie ochrony.
 
 Aby uzyskać informacje na temat innych funkcji ochrony informacji poza Microsoft 365, zobacz:
 
-- [Usługa Microsoft Defender dla aplikacji w chmurze](/cloud-app-security/)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
-- [Windows informacji](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+- [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 ## <a name="sensitivity-labels"></a>Etykiety wrażliwości
 
-Etykiety wrażliwości Microsoft Information Protection umożliwiają klasyfikowanie i chronienie danych organizacji bez utrudniania pracy użytkowników i możliwości współpracy.
+Etykiety poufności z usługi Microsoft Purview Information Protection umożliwiają klasyfikowanie i ochronę danych organizacji bez ograniczania produktywności użytkowników i możliwości współpracy.
 
 > [!div class="mx-imgBorder"]
-> ![Etykiety wrażliwości w Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> ![Etykiety poufności w Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
-### <a name="prerequisites-for-sensitivity-labels"></a>Wymagania wstępne dotyczące etykiet wrażliwości
+### <a name="prerequisites-for-sensitivity-labels"></a>Wymagania wstępne dotyczące etykiet poufności
 
-Wykonaj te czynności przed zaimplementowaniem dowolnego z poniższych funkcji opartych na etykietach wrażliwości:
+Wykonaj następujące działania przed zaimplementowaniem dowolnej z możliwości opartych na etykietach poufności wyróżnionych poniżej:
 
-1. Opis:
-   - **Wymagania biznesowe.** Ustal powody biznesowe do stosowania etykiet wrażliwości w przedsiębiorstwie. Mogą to być na przykład wymagania dotyczące ochrony prywatności danych użytkownika dotyczące ochrony informacji.
-   - **Możliwości etykiet wrażliwości.** Etykiety wrażliwości mogą być złożone, dlatego przed rozpoczęciem koniecznie przeczytaj dokumentację [etykiet](../compliance/sensitivity-labels.md) wrażliwości.
-   - **Najważniejsze rzeczy do zapamiętania** Etykietami wrażliwości zarządza się w centrum administracyjnym zgodności firmy Microsoft, ale opcje określania docelowych wartości docelowych i aplikacji znacznie się różnią.
-      - Na poziomie kontenera znajdują się etykiety wrażliwości Teams, grup i witryn (ustawienia nie dotyczą zawartości wewnątrz kontenera). Są one publikowane dla użytkowników i grup, które zastosują je po inicjowaniu obsługi administracyjnej witryny, grupy lub zespołu.
-      - Istnieją etykiety wrażliwości dla zawartości aktywnej. Są one również publikowane dla użytkowników lub grup, które mają zastosowanie ręcznie lub są stosowane automatycznie w następującej sytuacji:
-        - Plik zostanie otwarty/edytowany/zapisany na pulpicie użytkownika lub w SharePoint sieci Web.
-        - Wiadomość e-mail jest edytowana i wysyłana.
-      - Istnieją etykiety wrażliwości automatycznych aplikacji dla plików w stanie spoczynku SharePoint i OneDrive, oprócz wiadomości e-mail wysyłanych przez Exchange. Są one kierowane do wszystkich witryn lub określonych witryn i automatycznie dotyczą plików w spoczynku w tych środowiskach.
+1. Zapoznaj się z następującymi kwestiami:
+   - **Wymagania biznesowe.** Ustal przyczyny biznesowe stosowania etykiet poufności w przedsiębiorstwie. Na przykład wymagania dotyczące prywatności danych na potrzeby ochrony informacji.
+   - **Możliwości etykiet poufności.** Etykietowanie poufności może stać się złożone, dlatego przed rozpoczęciem zapoznaj się z [dokumentacją etykiet poufności](../compliance/sensitivity-labels.md) .
+   - **Najważniejsze kwestie do zapamiętania** Etykiety poufności są zarządzane w portalu zgodności usługi Microsoft Purview, ale opcje określania wartości docelowej i aplikacji różnią się znacznie.
+      - Istnieją etykiety poufności witryn, grup i Teams na poziomie kontenera (ustawienia nie mają zastosowania do zawartości wewnątrz kontenera). Są one publikowane dla użytkowników i grup, którzy stosują je podczas aprowizacji witryny, grupy lub zespołu.
+      - Istnieją etykiety poufności dla aktywnej zawartości. Są one również publikowane dla użytkowników lub grup, którzy stosują je ręcznie lub są automatycznie stosowane w następujących przypadkach:
+        - Plik jest otwierany/edytowany/zapisywany na pulpicie użytkownika lub w witrynie SharePoint.
+        - Wiadomość e-mail została sporządzona i wysłana.
+      - Oprócz wiadomości e-mail przesyłanych za pośrednictwem Exchange istnieją etykiety poufności automatycznego stosowania plików magazynowanych w SharePoint i OneDrive. Są one przeznaczone dla wszystkich witryn lub określonych lokacji i są automatycznie stosowane do plików magazynowanych w tych środowiskach.
 
-2. Wymiernie etykiety wrażliwości bieżącej za pomocą wcześniejszych lub alternatywnych metod
+2. Racjonalizowanie bieżącego etykietowania poufności przy użyciu metod przeszłych lub alternatywnych
 
    - Azure Information Protection
 
-      Może być konieczne uzgadnianie obecnego schematu etykiet wrażliwości z dowolną istniejącą implementacją usługi [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) z etykietami.
+      Bieżący schemat etykietowania poufności może wymagać uzgodnienia z istniejącą implementacją etykietowania [Information Protection platformy Azure](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection).
    - OME
 
-      Jeśli planujesz korzystanie z nowoczesnych etykiet wrażliwości w celu ochrony poczty e-mail i istniejących metod szyfrowania poczty e-mail, takich jak OME, mogą one istnieć we współpracy, ale musisz zrozumieć scenariusze, w których należy zastosować tę usługę. Zobacz [Szyfrowanie wiadomości usługi Office 365 o nowych możliwościach (OME),](#office-365-message-encryption-ome-new-capabilities) która zawiera tabelę porównującą nowoczesną ochronę typu etykiety za pomocą ochrony opartej na OME.
+      Jeśli planujesz użycie nowoczesnego etykietowania poufności na potrzeby ochrony poczty e-mail i istniejących metod szyfrowania poczty e-mail, takich jak OME, mogą one współistnieć, ale należy zrozumieć scenariusze, w których należy zastosować dowolną z tych metod. Zobacz [Office 365 nowe funkcje szyfrowania komunikatów (OME),](#office-365-message-encryption-ome-new-capabilities) które zawierają tabelę porównującą nowoczesną ochronę typu etykiet poufności z ochroną opartą na protokole OME.
 
-3. Zaplanuj integrację z szerszym schematem ochrony informacji. Oprócz współistnienia z usługą OME etykiety wrażliwości mogą być używane wraz z możliwościami, Microsoft 365 ochrony przed utratą danych (DLP) i programu Microsoft Defender dla aplikacji w chmurze. Zobacz [Microsoft Information Protection w Microsoft 365](../compliance/information-protection.md), aby zrealizować cele związane z ochroną informacji związane z ochroną danych.
+3. Planowanie integracji z szerszym systemem ochrony informacji. Oprócz współistnienia z OME etykiety poufności mogą być używane wraz z możliwościami, takimi jak Microsoft Purview Data Loss Prevention (DLP) i Microsoft Defender for Cloud Apps. Zobacz [Ochrona danych za pomocą usługi Microsoft Purview](../compliance/information-protection.md) , aby osiągnąć cele związane z ochroną informacji związane z prywatnością danych.
 
-4. Opracuj klasyfikację wrażliwości i schemat kontroli etykiet wrażliwości. Zobacz [Klasyfikacja danych i taksonomia etykiet wrażliwości](https://aka.ms/dataclassificationwhitepaper).
+4. Opracowywanie schematu klasyfikacji i kontroli etykiet poufności. Zobacz [Klasyfikacja danych i taksonomia etykiet poufności](https://aka.ms/dataclassificationwhitepaper).
 
 ### <a name="general-guidance"></a>Ogólne wskazówki
 
-1. **Definicja schematu.** Zanim zastosuj etykiety i ochronę za pomocą funkcji technicznych w całej organizacji zdefiniuj schemat klasyfikacji. Być może masz już schemat klasyfikacji, co ułatwia dodawanie danych osobistych.
-2. **Wprowadzenie.** Zacznij od podjęcia decyzji o liczbie i nazwach etykiet do wdrożenia. Możesz wykonać tę czynność, nie martwiąc się o to, której technologii użyć i jak zostaną zastosowane etykiety. Ten schemat można stosować uniwersalne w całej organizacji, łącznie z danymi, które znajdują się lokalnie i w innych usługach w chmurze.
-3. **Dodatkowe zalecenia** Projektując i implementując zasady, etykiety i warunki, rozważ następujące zalecenia:
+1. **Definicja schematu.** Przed użyciem możliwości technicznych do stosowania etykiet i ochrony należy pracować w całej organizacji, aby zdefiniować schemat klasyfikacji. Być może masz już schemat klasyfikacji, co ułatwia dodawanie danych osobowych.
+2. **Wprowadzenie.** Rozpocznij od podjęcia decyzji o liczbie i nazwach etykiet do zaimplementowania. Wykonaj tę czynność, nie martwiąc się o to, której technologii używać i jak będą stosowane etykiety. Zastosuj ten schemat uniwersalnie w całej organizacji, w tym dane, które znajdują się w środowisku lokalnym i w innych usługach w chmurze.
+3. **Dodatkowe zalecenia** Podczas projektowania i implementowania zasad, etykiet i warunków należy wziąć pod uwagę następujące zalecenia:
 
-   - **Użyj istniejącego schematu klasyfikacji (jeśli jest).** Wiele organizacji już używa klasyfikacji danych w pewnych postaciach. Starannie oceń istniejący schemat etykiet i, jeśli to możliwe, użyj go bez zmian. Używanie znanych etykiet, które są rozpoznawalne dla użytkowników końcowych, będzie dysków przyjęcia.
-   - **Zacznij mały.** Liczba etykiet, które można utworzyć, jest praktycznie nieograniczona. Jednak duża liczba etykiet i pod etykiet może spowolnić ich przyjęcia.
-   - **Używanie scenariuszy i przypadków użycia.** Zidentyfikuj typowe przypadki użycia w organizacji i korzystaj ze scenariuszy wynikających z przepisów dotyczących prywatności danych, których podlegasz. Sprawdź, czy konfiguracja etykiety i klasyfikacji, która jest przewiduje, będzie działać w praktyce.
-   - **Pytaj wszystkie prośby o nową etykietę.** Czy każdy scenariusz lub przypadek użycia rzeczywiście wymaga nowej etykiety, czy można użyć już posiadanych etykiet? Zapewnienie minimalnej liczby etykiet zwiększa ich wdrożenie.
-   - **Stosowanie etykiet podrzędnych dla kluczowych działów.** Niektóre działy będą mieć określone potrzeby, które wymagają określonych etykiet. Zdefiniuj te etykiety jako etykiety podrzędne do istniejącej etykiety i rozważ użycie zasad o zakresach, które są przypisywane do grup użytkowników zamiast globalnie.
-   - **Rozważenie zasad o zakresach.** Zasady kierowane do podzbiorów użytkowników zapobiegają przeciążeniu etykietami. Zasady zakresowe umożliwiają przypisywanie etykiet lub podkategorie roli lub działu tylko do pracowników, którzy pracują w danym dziale.
-   - **Używaj zrozumiałych nazw etykiet.** Nie używaj żargonu, standardów ani akronimów jako nazw etykiet. Spróbuj użyć nazw, które są ponownie odwłaszniane dla użytkownika końcowego, aby poprawić wdrożenie. Zamiast etykiet, takich jak PII, PCI, HIPAA, LBI, MBI i LBI, rozważ nazwy niekomercyjne, publiczne, ogólne, poufne i wysoce poufne.
+   - **Użyj istniejącego schematu klasyfikacji (jeśli istnieje).** Wiele organizacji korzysta już z klasyfikacji danych w jakiejś formie. Dokładnie oceń istniejący schemat etykiety i jeśli to możliwe, użyj go w następujący sposób. Użycie znanych etykiet, które są rozpoznawalne dla użytkowników końcowych, będzie prowadzić do wdrożenia.
+   - **Rozpocznij od małego.** Nie ma praktycznie żadnego limitu liczby etykiet, które można utworzyć. Jednak duża liczba etykiet i etykiet podrzędnych może spowolnić wdrażanie.
+   - **Używanie scenariuszy i przypadków użycia.** Identyfikowanie typowych przypadków użycia w organizacji i używanie scenariuszy wynikających z przepisów dotyczących prywatności danych, którym podlegasz. Sprawdź, czy przewidywana konfiguracja etykiet i klasyfikacji będzie działać w praktyce.
+   - **Prześlij każde żądanie nowej etykiety.** Czy każdy scenariusz lub przypadek użycia naprawdę wymaga nowej etykiety, czy możesz użyć tego, co już masz? Utrzymanie minimalnej liczby etykiet poprawia wdrożenie.
+   - **Użyj etykiet podrzędnych dla kluczowych działów.** Niektóre działy będą miały określone potrzeby, które wymagają określonych etykiet. Zdefiniuj te etykiety jako etykiety podrzędne istniejącej etykiety i rozważ użycie zasad o określonym zakresie, które są przypisane do grup użytkowników, a nie globalnie.
+   - **Rozważ zasady o określonym zakresie.** Zasady przeznaczone dla podzbiorów użytkowników uniemożliwią przeciążenie etykiet. Zasady o określonym zakresie umożliwiają przypisywanie etykiet lub etykiet specyficznych dla działu lub działu tylko do pracowników, którzy pracują dla danego działu.
+   - **Użyj znaczących nazw etykiet.** Staraj się nie używać żargonu, standardów ani akronimów jako nazw etykiet. Spróbuj użyć nazw, które rezonują z użytkownikiem końcowym, aby poprawić wdrożenie. Zamiast używać etykiet takich jak PII, PCI, HIPAA, LBI, MBI i HBI, należy wziąć pod uwagę takie nazwy jak Inne firmy, Publiczne, Ogólne, Poufne i Wysoce poufne.
 
-### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Tworzenie i wdrażanie etykiet wrażliwości dla witryn, grup i zespołów
+### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Tworzenie i wdrażanie etykiet poufności dla witryn, grup i zespołów
 
-Etykiety wrażliwości [w skoroszycie](../compliance/sensitivity-labels-teams-groups-sites.md) <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">można Centrum zgodności platformy Microsoft 365</a> zastosować do tych kontenerów:
+Podczas tworzenia [etykiet poufności](../compliance/sensitivity-labels-teams-groups-sites.md) w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> można teraz zastosować je do tych kontenerów:
 
-- Microsoft Teams witryn
-- Microsoft 365 grupy (wcześniej Office 365 grupy)
-- SharePoint witryn
+- witryny Microsoft Teams
+- grupy Microsoft 365 (dawniej grupy Office 365)
+- witryny SharePoint
 
-Aby chronić zawartość w tych kontenerach, użyj następujących ustawień etykiet:
+Użyj następujących ustawień etykiety, aby chronić zawartość w tych kontenerach:
 
-- Prywatność (publiczna lub prywatna) Microsoft 365 powiązanych z Teams sieci web
+- Prywatność (publiczna lub prywatna) witryn Teams połączonych z grupą Microsoft 365
 - Dostęp użytkowników zewnętrznych
-- Dostęp z urządzeń niezamanektowych
+- Dostęp z urządzeń niezarządzanych
 
-W celu ochrony prywatności danych, aby zapobiec udostępnianiu zewnętrznemu kontenerów, które będą używane do przechowywania zawartości z poufnymi danymi osobistymi, oznaczania plików zawierających dane jako prywatne i wymagania urządzeń zarządzanych.
+Aby zapewnić prywatność danych, aby zapobiec zewnętrznemu udostępnianiu kontenerów, które będą używane do przechowywania zawartości z poufnymi danymi osobowymi, oznacz pliki zawierające dane jako prywatne i wymagaj urządzeń zarządzanych.
 
-### <a name="create-and-deploy-sensitivity-labels-for-content"></a>Tworzenie i wdrażanie etykiet wrażliwości dla zawartości
+### <a name="create-and-deploy-sensitivity-labels-for-content"></a>Tworzenie i wdrażanie etykiet poufności dla zawartości
 
-Etykiety wrażliwości zastosowane do plików umożliwiają szyfrowanie ich zawartości, znakowanie zawartości znakiem wodnym oraz definiowanie innych kontrolek dla zawartości aplikacji Office, w tym Outlook i Office w sieci Web.
+Etykiety poufności stosowane do plików umożliwiają szyfrowanie ich zawartości, oznaczanie zawartości znakiem wodnym i definiowanie innych kontrolek zawartości Office aplikacji, w tym Outlook i Office w sieci Web.
 
-Gdy wszystko będzie gotowe do rozpoczęcia ochrony danych organizacji za pomocą etykiet wrażliwości:
+Gdy wszystko będzie gotowe do rozpoczęcia ochrony danych organizacji przy użyciu etykiet poufności:
 
-1. **Utwórz etykiety.** Utwórz etykiety wrażliwości i nadaj ich nazwy zgodnie z taksonomią klasyfikacji organizacji dla różnych poziomów wrażliwości zawartości. Aby uzyskać więcej informacji na temat opracowywania taksonomii klasyfikacji, zobacz oficjalny dokument Klasyfikacja i [taksonomia etykiet wrażliwości](https://aka.ms/dataclassificationwhitepaper).
-2. **Zdefiniuj zakres, jaki może mieć każda etykieta.** Skonfiguruj ustawienia ochrony, które chcesz skojarzyć z każdą etykietą. Na przykład możesz chcieć, aby zawartość wrażliwości (na przykład etykieta "Ogólne" zawierała tylko nagłówek lub stopkę), a wyższa zawartość wrażliwości (na przykład etykieta "Poufne") powinna zawierać znak wodny z włączonym szyfrowaniem.
-3. **Publikowanie etykiet.** Po skonfigurowaniu etykiet wrażliwości opublikuj je przy użyciu zasad etykiet. Zdecyduj, którzy użytkownicy i grupy powinni mieć etykiety i jakich ustawień zasad należy użyć. Pojedyncza etykieta może być wielokrotnego użytku. Zdefiniowano ją raz, a następnie można dołączyć do kilku etykiet zasad przypisanych do różnych użytkowników.
+1. **Utwórz etykiety.** Utwórz etykiety poufności i nadaj im nazwę zgodnie z taksonomią klasyfikacji organizacji dla różnych poziomów poufności zawartości. Aby uzyskać więcej informacji na temat opracowywania taksonomii klasyfikacji, zobacz [oficjalny dokument Dotyczący klasyfikacji danych i taksonomii etykiet poufności](https://aka.ms/dataclassificationwhitepaper).
+2. **Zdefiniuj, co może zrobić każda etykieta.** Skonfiguruj ustawienia ochrony, które mają być skojarzone z każdą etykietą. Na przykład możesz chcieć, aby zawartość o niższej poufności (na przykład etykieta "Ogólne" miała tylko nagłówek lub stopkę, podczas gdy zawartość o większej poufności (np. etykieta "Poufne") powinna mieć znak wodny i mieć włączone szyfrowanie.
+3. **Opublikuj etykiety.** Po skonfigurowaniu etykiet poufności opublikuj je przy użyciu zasad etykiety. Zdecyduj, którzy użytkownicy i grupy mają mieć etykiety i jakie ustawienia zasad mają być używane. Pojedyncza etykieta jest wielokrotnego użytku. Zdefiniuj ją raz, a następnie możesz ją uwzględnić w kilku zasadach etykiet przypisanych do różnych użytkowników.
 
-Po opublikowaniu etykiet wrażliwości z poziomu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>Centrum zgodności platformy Microsoft 365 są one wyświetlane w aplikacjach pakietu [Office](../compliance/sensitivity-labels-office-apps.md), aby użytkownicy klasyfikowali i chronili zawartość podczas jej tworzenia lub edytowania.
+Po opublikowaniu etykiet poufności w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> zaczynają one pojawiać się w [aplikacjach Office](../compliance/sensitivity-labels-office-apps.md), aby użytkownicy mogli klasyfikować i chronić zawartość podczas jej tworzenia lub edytowania.
 
-![Przepływ wdrażania etykiet wrażliwości w Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
+![Przepływ wdrażania etykiet poufności w Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
-W celu ochrony prywatności danych do wiadomości e-mail lub zawartości zawierającej poufne informacje osobiste ręcznie stosuje się etykietę poufności z szyfrowaniem i innymi regułami.
+W celu zachowania poufności danych należy ręcznie zastosować etykietę poufności z szyfrowaniem i innymi regułami do wiadomości e-mail lub zawartości zawierającej poufne dane osobowe.
 
 > [!NOTE]
-> Etykiety wrażliwości z włączonym szyfrowaniem stosowane do wiadomości e-mail mogą nakładać się na siebie w OME. Zobacz [Zabezpieczanie scenariuszy wiadomości e-mail z OME i etykietami wrażliwości](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels).
+> Etykiety poufności z włączonym szyfrowaniem stosowane do poczty e-mail mają pewne nakładające się funkcje z OME. Zobacz [Porównanie scenariuszy bezpiecznej poczty e-mail z etykietami OME i poufności](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels).
 
-### <a name="client-side-auto-labeling-when-users-edit-documents-or-compose-emails"></a>Automatyczne oznaczanie po stronie klienta podczas edytowania dokumentów lub redagowania wiadomości e-mail
+### <a name="client-side-auto-labeling-when-users-edit-documents-or-compose-emails"></a>Automatyczne etykietowanie po stronie klienta, gdy użytkownicy edytują dokumenty lub tworzą wiadomości e-mail
 
-Po utworzeniu etykiety wrażliwości możesz automatycznie przypisać [](../compliance/apply-sensitivity-label-automatically.md) ją do zawartości, w tym do wiadomości e-mail, jeśli jest ona taka, jaka jest taka, jaka jest podana przez Ciebie.
+Podczas tworzenia etykiety poufności można [automatycznie przypisać tę etykietę](../compliance/apply-sensitivity-label-automatically.md) do zawartości, w tym wiadomości e-mail, gdy jest ona zgodna z określonymi warunkami.
 
-Możliwość automatycznego stosowania etykiet wrażliwości do zawartości jest ważna, ponieważ:
+Możliwość automatycznego stosowania etykiet poufności do zawartości jest ważna, ponieważ:
 
-- Nie musisz szkolenie użytkowników, kiedy należy używać każdej z klasyfikacji.
-- Nie musisz polegać na użytkownikach, aby prawidłowo klasyfikować całą zawartość.
-- Użytkownicy nie muszą już znać twoich zasad — zamiast tego mogą skoncentrować się na swojej pracy.
+- Nie musisz szkolić użytkowników, kiedy używać każdej klasyfikacji.
+- Nie musisz polegać na użytkownikach, aby poprawnie klasyfikować całą zawartość.
+- Użytkownicy nie muszą już znać twoich zasad — zamiast tego mogą skupić się na swojej pracy.
 
-Automatyczne etykiety obsługują polecanie etykiet użytkownikom, a także automatyczne stosowanie etykiet. Jednak w obu przypadkach użytkownik decyduje, czy zaakceptować, czy odrzucić tę etykietę w celu zapewnienia prawidłowego oznaczania zawartości.
+Automatyczne etykietowanie obsługuje zalecanie etykiety użytkownikom, a także automatyczne stosowanie etykiety. Jednak w obu przypadkach użytkownik decyduje, czy zaakceptować lub odrzucić etykietę, aby zapewnić poprawne etykietowanie zawartości.
 
-To etykiety po stronie klienta mają minimalne opóźnienia w przypadku dokumentów, ponieważ tę etykietę można zastosować nawet przed zapisaniem dokumentu. Jednak nie wszystkie aplikacje klienckie obsługują automatyczne oznaczanie etykiet. Ta funkcja jest obsługiwana przez klienta ujednoliconego etykiet usługi Azure Information Protection, a niektóre [wersje Office etykiet](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+To etykietowanie po stronie klienta ma minimalne opóźnienie dla dokumentów, ponieważ etykietę można zastosować jeszcze przed zapisaniem dokumentu. Jednak nie wszystkie aplikacje klienckie obsługują automatyczne etykietowanie. Ta funkcja jest obsługiwana przez klienta ujednoliconego etykietowania usługi Azure Information Protection oraz [niektóre wersje aplikacji Office](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Aby uzyskać instrukcje dotyczące konfiguracji, zobacz Jak [skonfigurować automatyczne oznaczanie etykiet dla Office aplikacji](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+Aby uzyskać instrukcje dotyczące konfiguracji, zobacz [How to configure auto-labeling for Office apps (Jak skonfigurować automatyczne etykietowanie dla aplikacji Office](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)).
 
-W celu zachowania poufności danych etykiety wrażliwości są stosowane automatycznie do zawartości zawierającej poufne informacje osobiste.
+Aby uzyskać prywatność danych, automatycznie stosujesz etykiety poufności dla zawartości zawierającej poufne dane osobowe.
 
-### <a name="service-side-auto-labeling-when-content-is-already-saved"></a>Automatyczne oznaczanie po stronie usługi, gdy zawartość jest już zapisana
+### <a name="service-side-auto-labeling-when-content-is-already-saved"></a>Automatyczne etykietowanie po stronie usługi, gdy zawartość jest już zapisana
 
-Ta metoda jest nazywana automatyczną klasyfikacją z etykietami wrażliwości. Możesz również usłyszeć informacje o nim nazywane automatycznym oznaczaniem danych w spoczynku (w przypadku dokumentów w usługach SharePoint i OneDrive) i przesyłanych danych (w przypadku wiadomości e-mail wysyłanych lub otrzymywanych przez Exchange). Na Exchange nie obejmuje ono wiadomości e-mail w skrzynkach pocztowych w spoczynku.
+Ta metoda jest określana jako automatyczna klasyfikacja z etykietami poufności. Można również usłyszeć, że jest ono nazywane automatycznym etykietowaniem danych magazynowanych (w przypadku dokumentów w SharePoint i OneDrive) oraz danych przesyłanych (w przypadku wiadomości e-mail wysyłanych lub odbieranych przez Exchange). W przypadku Exchange nie zawiera ona wiadomości e-mail w skrzynkach pocztowych magazynowanych.
 
-Ponieważ to etykiety są stosowane przez samą usługę, a nie przez aplikację użytkownika, nie musisz martwić się o to, jakie aplikacje mają użytkownicy i jaką wersję. W efekcie ta funkcja jest natychmiast dostępna w całej organizacji i nadaje się do stosowania etykiet w skali. Zasady automatycznego oznaczania etykiet nie obsługują zalecanych etykiet, ponieważ użytkownik nie wchodzi w interakcję z procesem oznaczania. Zamiast tego administrator uruchamia zasady w trybie symulowania, aby zapewnić prawidłowe etykiety zawartości przed ich zastosowaniem.
+Ponieważ to etykietowanie jest stosowane przez samą usługę, a nie przez aplikację użytkownika, nie musisz martwić się o to, jakie aplikacje mają użytkownicy i jaka wersja. W związku z tym ta funkcja jest natychmiast dostępna w całej organizacji i nadaje się do etykietowania na dużą skalę. Zasady automatycznego etykietowania nie obsługują zalecanego etykietowania, ponieważ użytkownik nie wchodzi w interakcję z procesem etykietowania. Zamiast tego administrator uruchamia zasady w trybie symulacji, aby zapewnić poprawne etykietowanie zawartości przed faktycznym zastosowaniem etykiety.
 
-Aby uzyskać instrukcje dotyczące konfiguracji, zobacz Jak [skonfigurować zasady automatycznego SharePoint, OneDrive i Exchange](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
+Aby uzyskać instrukcje dotyczące konfiguracji, zobacz [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange (Jak skonfigurować zasady automatycznego etykietowania dla SharePoint, OneDrive i Exchange](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)).
 
-Aby chronić prywatność danych w witrynach, których dotyczy problem, należy wypychać etykiety wrażliwości w celu automatycznego szyfrowania zawartości zawierającej poufne informacje osobiste.
+W celu zachowania poufności danych w witrynach, których dotyczy problem, wypychanie etykiet poufności w celu automatycznego szyfrowania zawartości zawierającej poufne dane osobowe.
 
-## <a name="data-loss-prevention"></a>Ochrona przed utratą danych
+## <a name="data-loss-prevention"></a>Zapobieganie utracie danych
 
-Za pomocą funkcji ochrony przed utratą danych [(DLP, data loss prevention)](../compliance/dlp-learn-about-dlp.md) w programie Microsoft 365 możesz wykrywać, ostrzegać i blokować ryzykowne, przypadkowe lub nieodpowiednie udostępnianie, takie jak udostępnianie danych zawierających informacje osobiste zarówno wewnętrznie, jak i zewnętrznie.
+W Microsoft 365 można użyć [ochrony przed utratą danych (DLP)](../compliance/dlp-learn-about-dlp.md) w celu wykrywania, ostrzegania i blokowania ryzykownych, niezamierzonych lub nieodpowiednich udostępniania, takich jak udostępnianie danych zawierających dane osobowe, zarówno wewnętrznie, jak i zewnętrznie.
 
-Funkcja DLP umożliwia:
+DLP umożliwia:
 
 - Identyfikowanie i monitorowanie ryzykownych działań udostępniania.
-- Informacje dla użytkowników dotyczące odpowiednich wskazówek kontekstowych w celu podejmowania właściwych decyzji.
-- Wymuszaj stosowanie zasad używania danych w przypadku zawartości bez zwiększenia produktywności.
-- Integruj z klasyfikacją i etykietami, aby wykrywać i chronić dane podczas ich udostępniania.
+- Poinformuj użytkowników, korzystając ze wskazówek w kontekście, aby podejmowali właściwe decyzje.
+- Wymuszanie zasad użycia danych dla zawartości bez ograniczania produktywności.
+- Integracja z klasyfikacją i etykietowaniem w celu wykrywania i ochrony danych po ich udostępnieniu.
 
-### <a name="supported-workloads-for-dlp"></a>Obsługiwane obciążenia pracą DLP
+### <a name="supported-workloads-for-dlp"></a>Obsługiwane obciążenia dla DLP
 
-Dzięki zasadom DLP w centrum <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>Centrum zgodności platformy Microsoft 365 możesz identyfikować, monitorować i automatycznie chronić poufne elementy w wielu lokalizacjach w Microsoft 365, takich jak Exchange Online, SharePoint OneDrive i Microsoft Teams.
+Dzięki zasadom DLP w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> można identyfikować, monitorować i automatycznie chronić poufne elementy w wielu lokalizacjach w Microsoft 365, takich jak Exchange Online, SharePoint, OneDrive i Microsoft Teams.
 
-Można na przykład zidentyfikować dowolny dokument zawierający numer karty kredytowej przechowywany w dowolnej witrynie usługi OneDrive lub monitorować tylko OneDrive witryn określonych osób.
+Można na przykład zidentyfikować dowolny dokument zawierający numer karty kredytowej przechowywany w dowolnej witrynie OneDrive lub monitorować tylko OneDrive witryn określonych osób.
 
-Możesz również monitorować i chronić poufne elementy w lokalnie zainstalowanych wersjach produktów Excel, PowerPoint i Word, które obejmują możliwość identyfikowania elementów poufnych i stosowania zasad DLP. Zasady DLP zapewniają ciągłe monitorowanie w sytuacji, gdy osoby udostępniają zawartość z tych Office aplikacji.
-
-> [!div class="mx-imgBorder"]
-> ![Obsługiwane obciążenia pracą DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
-
-Na tej ilustracji przedstawiono przykład ochrony danych osobowych przez ochrona danych osobowych przez ochronę danych.
+Możesz również monitorować i chronić poufne elementy w lokalnie zainstalowanych wersjach Excel, PowerPoint i Word, które obejmują możliwość identyfikowania poufnych elementów i stosowania zasad DLP. DLP zapewnia ciągłe monitorowanie, gdy użytkownicy udostępniają zawartość z tych Office aplikacji.
 
 > [!div class="mx-imgBorder"]
-> ![Przykład ochrony danych osobowych za pomocą funkcji DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> ![Obsługiwane obciążenia dla DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
-Ochrona przed zagrożeniami (DLP) służy do identyfikowania dokumentu lub wiadomości e-mail zawierającego rekord kondycji, a następnie automatycznie blokuje dostęp do tego dokumentu lub blokuje wysyłanie wiadomości e-mail. Dzięki zasadom DLP adresat otrzymuje powiadomienie z poradą o zasadach i wysyła alert do użytkownika końcowego i administratora.
+Na tej ilustracji przedstawiono przykład ochrony danych osobowych przez DLP.
 
-### <a name="planning-for-dlp"></a>Planowanie w przypadku zasad DLP
+> [!div class="mx-imgBorder"]
+> ![Przykład ochrony danych osobowych przy użyciu DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
-Zaplanuj zasady ochrony przed zasadami ochrony przed prywatnością pod:
+DLP służy do identyfikowania dokumentu lub wiadomości e-mail zawierającej rekord kondycji, a następnie automatycznie blokuje dostęp do tego dokumentu lub blokuje wysyłanie wiadomości e-mail. Następnie DLP powiadamia adresata za pomocą porady dotyczącej zasad i wysyła alert do użytkownika końcowego i administratora.
+
+### <a name="planning-for-dlp"></a>Planowanie DLP
+
+Zaplanuj zasady DLP dla:
 
 - Wymagania biznesowe.
 
-- Ocena organizacji oparta na czynniku ryzyka zgodnie z opisem w artykule Ocena ryzyka związanego z prywatnością danych i [identyfikowanie elementów poufnych](information-protection-deploy-assess.md).
+- Ocena organizacji oparta na ryzyku zgodnie z opisem w [artykule Dotyczącym oceny ryzyka związanego z prywatnością danych i identyfikowania elementów poufnych](information-protection-deploy-assess.md).
 
-- Inne mechanizmy ochrony informacji i zarządzania w miejscu lub w planowaniu ochrony prywatności danych.
+- Inne mechanizmy ochrony informacji i ładu w miejscu lub w planowaniu prywatności danych.
 
-- Typy informacji poufnych określone dla danych osobowych na podstawie prac oceniania zgodnie z opisem w artykule Ocenianie ryzyka związanego z prywatnością [danych i identyfikowanie elementów poufnych](information-protection-deploy-assess.md). Warunki zasad DLP mogą być oparte zarówno na typach informacji poufnych, jak i na etykietach przechowywania.
+- Typy informacji poufnych, które zostały zidentyfikowane dla danych osobowych na podstawie oceny, zgodnie z opisem w [artykule dotyczącym oceny zagrożeń dla prywatności danych i identyfikowania elementów poufnych](information-protection-deploy-assess.md). Warunki zasad DLP mogą być oparte zarówno na typach informacji poufnych, jak i etykietach przechowywania.
 
-- Etykiety przechowywania musisz określić warunki dotyczące zasad DLP. Aby uzyskać [więcej informacji, zobacz](information-protection-deploy-govern.md) artykuł organizacji, którym podlega rozporządzenie o ochronie prywatności danych.
+- Etykiety przechowywania należy określić warunki DLP. Aby uzyskać więcej informacji, zapoznaj [się z informacjami podlegającymi przepisom dotyczącym prywatności danych w organizacji](information-protection-deploy-govern.md) .
 
-- Bieżące zarządzanie zasadami DLP, które wymaga, aby inna osoba w organizacji operuje i dostrajała zasady dotyczące zmian typów informacji poufnych, etykiet przechowywania, przepisów i zasad zgodności.
+- Bieżące zarządzanie zasadami DLP, które wymaga, aby ktoś w organizacji obsługiwał i dostrajał zasady zmian w typach informacji poufnych, etykietach przechowywania, przepisach i zasadach zgodności.
 
-Etykiet wrażliwości nie można używać w warunkach zasad DLP, jednak niektórych scenariuszy ochrony w celu uniemożliwienia dostępu można używać tylko w przypadku etykiet wrażliwości, które można stosować automatycznie na podstawie typów informacji poufnych. Jeśli stosowane jest wydajne etykiety wrażliwości, rozważ, czy ochrony przed zabezpieczeniami DLP należy używać do rozszerzenia ochrony, ponieważ:
+Mimo że etykiet poufności nie można używać w warunkach zasad DLP, niektóre scenariusze ochrony w celu zapobiegania dostępowi mogą być osiągalne z etykietami poufności, które mogą być automatycznie stosowane na podstawie poufnych typów informacji. Jeśli istnieje niezawodne etykietowanie poufności, zastanów się, czy należy użyć DLP do zwiększenia ochrony, ponieważ:
 
-  - Zapobieganie utracie danych może uniemożliwiać udostępnianie plików. Etykiety wrażliwości mogą po prostu uniemożliwiać dostęp.
+  - DLP może uniemożliwić udostępnianie plików. Etykiety poufności mogą po prostu uniemożliwić dostęp.
 
-  - Zasady DLP mają bardziej szczegółowe poziomy kontroli pod względem reguł, warunków i akcji.
+  - DLP ma bardziej szczegółowe poziomy kontroli pod względem reguł, warunków i akcji.
 
-  - Zasady DLP można stosować do wiadomości Teams wiadomości na czacie i w kanałach. Etykiety wrażliwości można stosować tylko do dokumentów i wiadomości e-mail.
+  - Zasady DLP mogą być stosowane do Teams wiadomości czatu i kanału. Etykiety poufności mogą być stosowane tylko do dokumentów i wiadomości e-mail.
 
 
 ### <a name="dlp-policies"></a>Zasady DLP
 
-Zasady DLP są konfigurowane w Centrum administracyjnym zgodności firmy Microsoft i określają poziom ochrony, typ informacji poufnych, których szukają zasady, oraz docelowe obciążenia pracą. Ich podstawowe składniki składają się na identyfikowanie ochrony i typów danych.
+Zasady DLP są konfigurowane w portalu zgodności usługi Microsoft Purview i określają poziom ochrony, typ informacji poufnych, których szukają zasady, oraz docelowe obciążenia. Ich podstawowe składniki składają się z identyfikowania ochrony i typów danych.
 
 > [!div class="mx-imgBorder"]
-> ![Konfiguracja zasad DLP w aplikacji Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![Konfiguracja zasad DLP w Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
-Oto przykładowa zasada ochrony przed zasadami DLP mająca na celu świadomość RODO.
+Oto przykładowe zasady DLP dotyczące świadomości RODO.
 
-![Przykład zasad DLP na temat ochrony przed RODO.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Przykładowe zasady DLP dotyczące świadomości RODO.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-Zobacz [ten artykuł,](../compliance/create-test-tune-dlp-policy.md) aby uzyskać więcej informacji na temat tworzenia i stosowania zasad DLP.
+Zobacz [ten artykuł](../compliance/create-test-tune-dlp-policy.md) , aby uzyskać więcej informacji na temat tworzenia i stosowania zasad DLP.
 
 ### <a name="protection-levels-for-data-privacy"></a>Poziomy ochrony prywatności danych
 
-W poniższej tabeli wymieniono trzy konfiguracje zwiększające ochronę za pomocą funkcji DLP.
+W poniższej tabeli wymieniono trzy konfiguracje zwiększania ochrony przy użyciu protokołu DLP.
 
-![Poziomy ochrony prywatności dzięki zasadom DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
+![Poziomy ochrony prywatności danych za pomocą usługi DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
-Pierwszą konfigurację, "Świadomość", można wykorzystać jako punkt wyjścia i minimalny poziom ochrony w celu spełniania wymagań w zakresie zgodności z przepisami dotyczącymi prywatności danych.
+Pierwsza konfiguracja, Awareness, może służyć jako punkt początkowy i minimalny poziom ochrony w celu spełnienia wymagań dotyczących zgodności z przepisami dotyczącymi prywatności danych.
 
 > [!NOTE]
-> Wraz ze zwiększającym się poziomem ochrony możliwość udostępniania informacji i uzyskiwania do nich dostępu przez użytkowników w niektórych przypadkach zmniejszy się, co mogłoby potencjalnie wpłynąć na ich produktywność lub możliwość wykonywania codziennych zadań.
+> Wraz ze wzrostem poziomu ochrony w niektórych przypadkach zmniejszy się możliwość udostępniania i uzyskiwania dostępu do informacji przez użytkowników i może to potencjalnie wpłynąć na ich produktywność lub możliwość wykonywania codziennych zadań.
 
-Aby ułatwić pracownikom wydajną pracę w bezpieczniejszym środowisku, gdy poziom ochrony jest coraz większy, należy czasem ćwicować tych pracowników w zakresie nowych zasad i procedur zabezpieczeń oraz kształcić ich.
+Aby pomóc pracownikom w dalszej produktywności w bezpieczniejszym środowisku przy zwiększaniu poziomu ochrony, poświęć czas na szkolenie i edukowanie ich w zakresie nowych zasad i procedur zabezpieczeń.
 
-### <a name="example-of-using-sensitivity-labels-with-dlp"></a>Przykład korzystania z etykiet wrażliwości w funkcji DLP
+### <a name="example-of-using-sensitivity-labels-with-dlp"></a>Przykład używania etykiet poufności z DLP
 
-Etykiety wrażliwości mogą współpracować z usługą DLP, aby zapewnić prywatność danych w środowisku ściśle uregulowanym. Oto najważniejsze kroki wdrożenia zintegrowanego:
+Etykiety poufności mogą współpracować z DLP, aby zapewnić prywatność danych w wysoce regulowanym środowisku. Poniżej przedstawiono kluczowe kroki wdrożenia zintegrowanego:
 
-1. Udokumentowano tu wymagania prawne i inne wymagania biznesowe dotyczące ochrony prywatności danych.
-2. Docelowe źródła danych, typy i własność są względnie względnie związane z problemami dotyczącymi prywatności danych.
-3. Ogólną strategię w zakresie spełniania wymagań oraz ochrony i zarządzania hotspotami prywatności danych.
-4. Jest on etapowy plan działań w zakresie realizacji strategii kontroli prywatności danych.
+1. Udokumentowano wymagania prawne i inne wymagania biznesowe dotyczące prywatności danych.
+2. Docelowe źródła danych, typy i własność charakteryzują się względami prywatności danych.
+3. Ustanawia się ogólną strategię spełniania wymagań oraz ochrony hotspotów prywatności danych i zarządzania nimi.
+4. Wprowadzany jest etapowy plan działania w celu rozwiązania strategii kontroli prywatności danych.
 
-Po  ustaliniu tych elementów możesz używać do tego celu typów informacji poufnych, taksonomii wrażliwych i zasad DLP. Na poniższym rysunku pokazano przykład.
+Po określeniu tych elementów można użyć typów informacji poufnych, taksonomii etykietowania poufności i zasad DLP. Na tej ilustracji przedstawiono przykład.
 
 > [!div class="mx-imgBorder"]
-> ![Przykład etykiet wrażliwości w przypadku działania zasad DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> ![Przykład etykiet poufności pracujących z DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [Zobacz większą wersję tego obrazu](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-Poniżej przedstawiono kilka scenariuszy ochrony danych korzystających z funkcji DLP i etykiet wrażliwości, jak pokazano na ilustracji.
+Poniżej przedstawiono kilka scenariuszy ochrony danych korzystających z etykiet DLP i poufności, jak pokazano na rysunku.
 
 | Scenariusz | Proces |
 |:-------|:-----|
-| A | <ol><li>Etykiety wrażliwości zawartości są publikowane przez administratora użytkownikom i grupom w celu ręcznego lub automatycznego zastosowania do zawartości i wiadomości e-mail. </li><li>Użytkownik A stosuje etykiety ręcznie lub automatycznie podczas interakcji z zawartością, korzystając z szyfrowania lub innych zastosowanych ustawień. </li><li>Użytkownik A wysyła chronioną wiadomość e-mail lub plik do użytkownika B, gościa. </li></ol> |
-| B | Zasady DLP opublikowane przez administratora w celu użytkownika A blokuje użytkownikowi A wysyłanie wiadomości e-mail i/lub pliku do użytkownika B. |
-| C |  Etykieta wrażliwości z ustawieniem "właściciel nie może zapraszać gości" jest publikowana dla użytkownika A, który iniekuje witrynę Teams lub witrynę sieci SharePoint sieci Web. Inny użytkownik witryny próbuje selektywnie udostępnić plik użytkownikowi B, ale działanie funkcji DLP blokuje ten plik. |
-| D | Etykieta wrażliwości autoplikowania zawartości witryny jest publikowana w co najmniej jednej witrynie, zapewniając kolejną warstwę ochrony, co spowoduje, że witryna chroniona. |
+| A | <ol><li>Etykiety poufności zawartości są publikowane przez administratora dla użytkowników i grup na potrzeby ręcznej lub automatycznej aplikacji do zawartości i poczty e-mail. </li><li>Użytkownik A stosuje etykiety ręcznie lub automatycznie podczas interakcji z zawartością, z zastosowaniem szyfrowania lub innych ustawień. </li><li>Użytkownik A wysyła chronioną wiadomość e-mail lub plik do użytkownika B, użytkownika-gościa. </li></ol> |
+| B | Zasady DLP opublikowane przez administratora użytkownika A uniemożliwiają użytkownikowi A wysyłanie wiadomości e-mail i/lub pliku do użytkownika B. |
+| C |  Etykieta poufności z ustawieniem "właściciel nie może zapraszać gości" jest publikowana dla użytkownika A, który aprowizuje zespół Teams lub witrynę SharePoint. Inny użytkownik witryny selektywnie próbuje udostępnić plik użytkownikowi B, ale DLP go blokuje. |
+| D | Etykieta poufności dla zawartości automatycznej aplikacji do witryny jest publikowana w co najmniej jednej lokacji, zapewniając kolejną warstwę ochrony, co skutkuje ochroną witryny. |
 |||
 
-## <a name="office-365-message-encryption-ome-new-capabilities"></a>Szyfrowanie wiadomości usługi Office 365 (OME) nowe funkcje
+## <a name="office-365-message-encryption-ome-new-capabilities"></a>Office 365 nowych możliwości szyfrowania komunikatów (OME)
 
-Wiadomości e-mail często są używane do wymiany poufnych elementów, takich jak dane dotyczące zdrowia pacjentów lub dane klientów i pracowników. Szyfrowanie wiadomości e-mail pozwala zagwarantować, że tylko zamierzony adresaci mogą wyświetlać zawartość wiadomości.
+Osoby często używają poczty e-mail do wymiany poufnych elementów, takich jak informacje o stanie zdrowia pacjenta lub informacje o klientach i pracownikach. Szyfrowanie wiadomości e-mail pomaga zapewnić, że tylko zamierzoni adresaci mogą wyświetlać zawartość wiadomości.
 
-Za [pomocą OME](../compliance/ome.md) możesz wysyłać i odbierać zaszyfrowane wiadomości między osobami w organizacji i poza nią. OME współpracuje z usługami Outlook.com, Yahoo!, Gmail i innymi usługami poczty e-mail. Dzięki OME tylko zamierzony adresaci mogą wyświetlać zawartość wiadomości.
+Za pomocą [protokołu OME](../compliance/ome.md) można wysyłać i odbierać zaszyfrowane komunikaty między osobami w organizacji i poza nią. OME współpracuje z Outlook.com, Yahoo!, Gmail i innymi usługami poczty e-mail. Protokół OME pomaga zapewnić, że tylko zamierzoni adresaci mogą wyświetlać zawartość wiadomości.
 
-W celu ochrony prywatności danych należy używać OME do ochrony wiadomości wewnętrznych zawierających poufne elementy. Szyfrowanie wiadomości usługi Office 365 to usługa online wbudowana w usługę Microsoft Azure rights Management (Azure RMS), która jest częścią usługi Azure Information Protection. Obejmuje to zasady szyfrowania, tożsamości i autoryzacji, które ułatwiają zabezpieczanie poczty e-mail. Wiadomości można szyfrować przy użyciu szablonów zarządzania prawami dostępu, opcji Nie przesyłaj dalej i opcji tylko do szyfrowania.
+Aby zapewnić prywatność danych, używasz protokołu OME do ochrony wewnętrznych komunikatów zawierających poufne elementy. Office 365 Message Encryption to usługa online oparta na usłudze Microsoft Azure Rights Management (Azure RMS), która jest częścią usługi Azure Information Protection. Obejmuje to zasady szyfrowania, tożsamości i autoryzacji ułatwiające zabezpieczanie poczty e-mail. Komunikaty można szyfrować przy użyciu szablonów zarządzania prawami, opcji Nie przesyłaj dalej i opcji tylko do szyfrowania.
 
-Możesz również zdefiniować reguły przepływu poczty, aby zastosować tę ochronę. Można na przykład utworzyć regułę wymaganą szyfrowania wszystkich wiadomości zaadresowanych do określonego adresata lub zawierającej określone słowa kluczowe w wierszu tematu, a także określić, że adresaci nie mogą kopiować ani drukować zawartości wiadomości.
+Możesz również zdefiniować reguły przepływu poczty, aby zastosować tę ochronę. Można na przykład utworzyć regułę, która wymaga szyfrowania wszystkich komunikatów skierowanych do określonego adresata lub zawierającej określone słowa kluczowe w wierszu tematu, a także określić, że adresaci nie mogą kopiować ani drukować zawartości wiadomości.
 
-Ponadto zaawansowane szyfrowanie wiadomości [OME ułatwia](../compliance/ome-advanced-message-encryption.md) spełnienie wymagań dotyczących zgodności, które wymagają bardziej elastycznej kontroli nad adresatami zewnętrznymi i ich dostępu do zaszyfrowanych wiadomości e-mail. Dzięki zaawansowanemu szyfrowaniu wiadomości OME w aplikacji Microsoft 365 możesz kontrolować poufne wiadomości e-mail udostępniane poza organizacją przy użyciu automatycznych zasad wykrywania typów informacji poufnych.
+Ponadto [zaawansowane szyfrowanie komunikatów](../compliance/ome-advanced-message-encryption.md) OME pomaga spełnić wymagania dotyczące zgodności, które wymagają bardziej elastycznej kontroli nad adresatami zewnętrznymi i ich dostępu do zaszyfrowanych wiadomości e-mail. Zaawansowane szyfrowanie komunikatów OME w Microsoft 365 umożliwia kontrolowanie poufnych wiadomości e-mail udostępnianych poza organizacją przy użyciu automatycznych zasad, które wykrywają typy informacji poufnych.
 
-W celu ochrony prywatności danych, jeśli chcesz udostępnić wiadomość e-mail stronie zewnętrznej, możesz określić datę wygaśnięcia i odwołać wiadomości. Datę wygaśnięcia można odwołać i ustawić tylko dla wiadomości wysyłanych do adresatów zewnętrznych.
+Jeśli chcesz udostępnić wiadomość e-mail podmiotowi zewnętrznemu, możesz określić datę wygaśnięcia i odwołać wiadomości. Możesz odwołać i ustawić tylko datę wygaśnięcia komunikatów wysyłanych do adresatów zewnętrznych.
 
-### <a name="secure-email-scenarios-comparison-with-ome-and-sensitivity-labels"></a>Zabezpieczanie porównania scenariuszy wiadomości e-mail z OME i etykietami wrażliwości
+### <a name="secure-email-scenarios-comparison-with-ome-and-sensitivity-labels"></a>Porównanie bezpiecznych scenariuszy poczty e-mail z etykietami OME i poufności
 
-Etykiety OME i wrażliwości stosowane do wiadomości e-mail z szyfrowaniem nakładają się, dlatego ważne jest zrozumienie scenariuszy, których może dotyczyć szyfrowanie, jak pokazano w poniższej tabeli.
+Etykiety OME i poufności stosowane do poczty e-mail z szyfrowaniem nakładają się na siebie, dlatego ważne jest, aby zrozumieć, które scenariusze mogą mieć zastosowanie, jak pokazano w tej tabeli.
 
-| Scenariusz | Etykiety wrażliwości | OME |
+| Scenariusz | Etykiety poufności | OME |
 |:-------|:-----|:-------|
-| Wewnętrzni + partnerzy <br> Bezpieczna komunikacja i współpraca między użytkownikami wewnętrznymi i zaufanymi partnerami | Zalecane — etykiety z w pełni dostosowaną klasyfikacją i ochroną | Tak — tylko szyfrowanie lub nie przesyłaj dalej ochrony bez klasyfikacji |
-| Strony zewnętrzne <br> Bezpieczna komunikacja i współpraca z dowolnymi użytkownikami zewnętrznymi/konsumenckimi | Tak — wstępnie zdefiniowany adresaci w etykiecie | Zalecane — ochrona przed just-in-time na podstawie adresatów |
-| Wewnętrzni + partnerzy z wygasaniem/odwołaniami <br> Kontrolowanie dostępu do poczty i zawartości za pomocą wygasania i odwołań w przypadku użytkowników wewnętrznych i zaufanych partnerów | Zalecane — w pełni dostosowana ochrona z czasem trwania dostępu, użytkownik może ręcznie śledzić i cofać pliki | Nie — brak odwołania lub wygaśnięcia dla poczty wewnętrznej |
-| Strony zewnętrzne z wygasaniem/odwołaniami <br> Kontrolowanie dostępu do poczty i zawartości z użytkownikami zewnętrznymi/konsumenckimi za pomocą wygasania i odwołania | Tak — użytkownik może ręcznie śledzić pliki | Zalecane (E5) — administrator może odwołać pocztę z Centrum zabezpieczeń & zgodności |
-| Automatyczne oznaczanie etykiet <br> Organizacja chce automatycznie chronić wiadomości/załączniki za pomocą konkretnej poufnej zawartości i/lub określonych adresatów | Zalecane (E5) — automatyczne oznaczanie etykiet w klientach Exchange i Outlook, ulepsza reguły przepływu poczty i zasady DLP | Tak — reguły przepływu poczty i zasady DLP z tylko szyfrowaniem lub ochroną Nie przesyłaj dalej |
+| Wewnętrzni i partnerzy <br> Bezpieczna komunikacja i współpraca między użytkownikami wewnętrznymi i zaufanymi partnerami | Zalecane — etykiety z w pełni dostosowaną klasyfikacją i ochroną | Tak — szyfrowanie tylko lub nie przesyłaj dalej ochrony bez klasyfikacji |
+| Strony zewnętrzne <br> Bezpieczna komunikacja i współpraca z dowolnymi użytkownikami zewnętrznymi/użytkownikami | Tak — adresaci wstępnie zdefiniowani w etykiecie | Zalecane — ochrona just in time oparta na adresatach |
+| Wewnętrzni i partnerzy z wygaśnięciem/odwołaniem <br> Kontrolowanie dostępu do poczty i zawartości przez użytkowników wewnętrznych i zaufanych partnerów z wygaśnięciem i odwołaniem | Zalecane — w pełni dostosowana ochrona z czasem trwania dostępu, użytkownik może ręcznie śledzić i odwoływać pliki | Nie — brak odwołania lub wygaśnięcia dla poczty wewnętrznej |
+| Strony zewnętrzne z wygaśnięciem/odwołaniem <br> Kontrolowanie dostępu do poczty i zawartości za pomocą użytkowników zewnętrznych/konsumenckich z wygaśnięciem i odwołaniem | Tak — użytkownik może ręcznie śledzić pliki | Zalecane (E5) — administrator może odwołać pocztę z Centrum zgodności & zabezpieczeń |
+| Automatyczne etykietowanie <br> Organizacja chce automatycznie chronić pocztę/załączniki przy użyciu określonej poufnej zawartości i/lub określonych adresatów | Zalecane (E5) — automatyczne etykietowanie w klientach Exchange i Outlook, rozszerza reguły przepływu poczty i zasady DLP | Tak — reguły przepływu poczty i zasady DLP z ochroną tylko zaszyfruj lub Nie przesyłaj dalej |
 ||||
 
-Między tymi dwiema metodami wystąpią również różnice w działaniach użytkowników końcowych i administratorów.
+Między tymi dwiema metodami wystąpią również różnice w środowiskach użytkowników końcowych i administratorów.
 
-## <a name="teams-with-protection-for-highly-sensitive-data"></a>Teams z ochroną bardzo poufnych danych
+## <a name="teams-with-protection-for-highly-sensitive-data"></a>Teams z ochroną danych wysoce poufnych
 
-W przypadku organizacji, które planują przechowywać dane osobowe objęte przepisami dotyczącymi prywatności danych w programie Teams, zobacz Konfigurowanie zespołu izolacji [zabezpieczeń, który](secure-teams-security-isolation.md) zawiera szczegółowe wskazówki i kroki konfiguracyjne dla:
+W przypadku organizacji, które planują przechowywanie danych osobowych podlegających przepisom dotyczącym prywatności danych w Teams, zobacz [Konfigurowanie zespołu z izolacją zabezpieczeń](secure-teams-security-isolation.md), która zawiera szczegółowe wskazówki i kroki konfiguracji dotyczące:
 
-- Tożsamość i dostęp do urządzeń
+- Dostęp do tożsamość i urządzeń
 - Tworzenie zespołu prywatnego
-- Blokowanie podstawowych uprawnień witryny zespołu
-- Etykieta wrażliwości grupowej z szyfrowaniem
+- Blokada podstawowych uprawnień witryny zespołu
+- Etykieta poufności oparta na grupach z szyfrowaniem

@@ -1,6 +1,6 @@
 ---
-title: Wprowadzenie wdrożenia aplikacji Microsoft SharePoint Syntex
-description: Dowiedz się, jak używać i wdrażać SharePoint Syntex w organizacji, aby ułatwić usprawnianie procesów biznesowych.
+title: Wprowadzenie wdrażania SharePoint Syntex firmy Microsoft
+description: Dowiedz się, jak używać i implementować SharePoint Syntex w organizacji, aby usprawnić procesy biznesowe.
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,86 +14,86 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 40af6061029785705d262f3b8c5134531e76885f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9b11c5077551aad666d565b0f3c077b3e43dc78e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467648"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937834"
 ---
-# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Wprowadzenie wdrożenia aplikacji Microsoft SharePoint Syntex
+# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Wprowadzenie wdrażania SharePoint Syntex firmy Microsoft
 
-Inteligentne usługi zawartości dostępne w programie SharePoint Syntex się z trzema częściami:
+Inteligentne usługi zawartości dostępne w SharePoint Syntex mają trzy części:
 
-- **Zrozumienie zawartości:** Twórz modele bez użycia kodu AI, aby klasyfikować i wyodrębniać informacje z zawartości w celu automatycznego stosowania metadanych w celu odnajdowania wiedzy i ponownego użycia. Dowiedz się więcej o [zrozumieniu zawartości](document-understanding-overview.md).
-- **Przetwarzanie zawartości:** Automatyzuj przechwytywanie, wprowadzanie i kategoryzowanie zawartości, aby usprawnić procesy związane z zawartością przy użyciu Power Automate. Dowiedz się więcej o [przetwarzaniu zawartości](form-processing-overview.md).
-- **Zgodność zawartości:** Kontrolowanie zawartości i zarządzanie zawartością w celu zwiększenia bezpieczeństwa i zarządzania dzięki integracji z Microsoft Information Protection.
+- **Opis zawartości:** Tworzenie modeli sztucznej inteligencji bez kodu w celu klasyfikowania i wyodrębniania informacji z zawartości w celu automatycznego stosowania metadanych do odnajdywania i ponownego używania wiedzy. Dowiedz się więcej o [zrozumieniu zawartości](document-understanding-overview.md).
+- **Przetwarzanie zawartości:** Automatyzuj przechwytywanie, pozyskiwanie i kategoryzowanie zawartości oraz usprawnij procesy zorientowane na zawartość przy użyciu Power Automate. Dowiedz się więcej o [przetwarzaniu zawartości](form-processing-overview.md).
+- **Zgodność zawartości:** Kontrolowanie zawartości i zarządzanie nią w celu poprawy zabezpieczeń i ładu dzięki integracji z usługą Microsoft Purview Information Protection.
 
-Dzięki nowym usługom i możliwościom AI możesz tworzyć aplikacje do zrozumienia zawartości i klasyfikacji bezpośrednio do przepływu zarządzania zawartością przy użyciu SharePoint Syntex. Istnieją dwa różne sposoby zrozumienia zawartości. Używany typ modelu jest oparty na formacie pliku i przypadku użycia.
+Nowe usługi i możliwości sztucznej inteligencji umożliwiają tworzenie aplikacji do analizy zawartości i klasyfikacji bezpośrednio w przepływie zarządzania zawartością przy użyciu SharePoint Syntex. Istnieją dwa różne sposoby zrozumienia zawartości. Używany typ modelu jest oparty na formacie pliku i przypadku użycia.
 
-| Przetwarzanie formularza | Opis dokumentu |
+| Przetwarzanie formularzy | Omówienie dokumentu |
 |:-------|:-------|
-| Utworzono z biblioteki dokumentów. | Utworzony w centrum zawartości, część SharePoint Syntex. |
-| Model utworzony w konstruktorze AI. | Model utworzony w interfejsie natywnym. |
-| Formaty plików pół strukturalne. | Formaty plików bez struktury. |
-| Ustawiany klasyfikator tabeli. | Przeszkolny klasyfikator z opcjonalnymi wyodrębniaczami. |
-| Ograniczone do jednej biblioteki. | Można stosować je do wielu bibliotek. |
-| Szkolenie dotyczące formatu PDF, JPG i PNG o łącznej wartości 50 MB/500 pp. | Szkolenie dotyczące 5–10 plików PDF, Office e-mail, w tym przykładów ujemnych. |
+| Utworzono na podstawie biblioteki dokumentów. | Utworzona w centrum zawartości, część SharePoint Syntex. |
+| Model utworzony w konstruktorze sztucznej inteligencji. | Model utworzony w interfejsie natywnym. |
+| Służy do częściowo ustrukturyzowanych formatów plików. | Służy do formatów plików bez struktury. |
+| Klasyfikator settable. | Klasyfikator trainable z opcjonalnymi wyodrębniaczami. |
+| Ograniczone do jednej biblioteki. | Można zastosować do wielu bibliotek. |
+| Trenuj w formacie PDF, JPG, PNG, łącznie 50 MB/500 pp. | Wytrenuj pliki PDF, Office lub e-mail 5–10, w tym negatywne przykłady. |
 
-Aby uzyskać pełniejszą porównanie możliwości, zobacz [Różnica między zrozumieniem dokumentu a modelami przetwarzania formularzy](difference-between-document-understanding-and-form-processing-model.md).
+Aby uzyskać bardziej kompletne porównanie możliwości, zobacz [Różnice między interpretacją dokumentów a modelami przetwarzania formularzy](difference-between-document-understanding-and-form-processing-model.md).
 
-## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identyfikowanie pilotażowych scenariuszy biznesowych w celu optymalizacji
+## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identyfikowanie pilotażowych scenariuszy biznesowych do optymalizacji
 
-Aby przygotować się do korzystania SharePoint Syntex w organizacji, musisz najpierw zrozumieć scenariusze, w których będą one przydatne. Ten "why" pomaga określić, jaki model będzie potrzebny, oraz jak określić strukturę organizacji na podstawie tego, gdzie zostanie zastosowany model. Oto kilka scenariuszy, w których opis dokumentu może pomóc Twojej organizacji:
+Aby przygotować się do korzystania z SharePoint Syntex w organizacji, musisz najpierw zrozumieć scenariusze, w których będzie ona przydatna. Element "why" pomaga określić, jaki model będzie potrzebny i jak utworzyć strukturę organizacji w zależności od tego, gdzie model zostanie zastosowany. Oto kilka scenariuszy, w których zrozumienie dokumentów może pomóc twojej organizacji:
 
-- **Przetwarzanie zawartości:** Przetwarzaj umowy, zestawienia pracy i inne dokumenty podobne do formularzy. Wywłasz formularze, przeszkolij model w zakresie zrozumienia i mapowania pól, a następnie uruchom formularze w celu automatycznego zbierania danych. Aby uzyskać więcej informacji, zobacz [Omówienie przetwarzania formularzy](form-processing-overview.md).
-- **Analiza faktury:** Wyciągaj odpowiednie dane z faktur i upewnij się, że są one zgodne z zasadami lub są odpowiednio przetwarzane.
+- **Przetwarzanie zawartości:** Przetwarzaj kontrakty, instrukcje pracy i inne dokumenty podobne do formularza. Wprowadź formularze, wytrenuj model, aby zrozumieć i zamapować pola, a następnie uruchom formularze, aby automatycznie zbierać dane. Aby uzyskać więcej informacji, zobacz [Omówienie przetwarzania formularzy](form-processing-overview.md).
+- **Analiza faktur:** Wyjmij odpowiednie szczegóły z faktur i upewnij się, że są one zgodne z zasadami lub są odpowiednio przetwarzane.
 
-Zastanów się nad sposobami, które SharePoint Syntex twojej organizacji:
+Zastanów się, w jaki sposób SharePoint Syntex może pomóc Twojej organizacji:
 
 - Automatyzowanie procesów biznesowych
-- Poprawa dokładności wyszukiwania
+- Zwiększanie dokładności wyszukiwania
 - Zarządzanie ryzykiem zgodności
 
-Zastanawiając się nad scenariuszami biznesowymi do rozważenia, zadaj sobie następujące pytania:
+Podczas myślenia o tym, które scenariusze biznesowe należy wziąć pod uwagę, zadaj sobie następujące pytania:
 
-- Czy to rozwiąże rzeczywisty problem?
-- Czy będzie on powszechnie używany, czy będzie miał szeroki wpływ?
-- Czy można go uzyskać?
-- Czy możesz mierzyć sukces?
+- Czy rozwiązuje prawdziwy problem?
+- Czy będzie szeroko stosowany, czy będzie miał szeroki wpływ?
+- Czy jest to możliwe do uzyskania?
+- Czy można zmierzyć sukces?
 
-Określanie priorytetów scenariuszy na podstawie wpływu i łatwości wdrożenia. Nadaj obszarowi początkowej koncentracji scenariusze o wyższym wpływie, które można również łatwo zaimplementować. Określanie priorytetów scenariuszy o niższym wpływie, które trudno wdrożyć.
+Określanie priorytetów scenariuszy na podstawie wpływu i łatwości implementacji. Oceń początkowy obszar koncentracji uwagi na scenariuszach o większym wpływie, które można również łatwo zaimplementować. Usuwanie priorytetów scenariuszy o niższym wpływie, które są trudne do zaimplementowania.
 
-Skorzystaj z [przykładowych scenariuszy i używaj przypadków,](adoption-scenarios.md) aby wyświetlać pomysły dotyczące sposobu SharePoint Syntex w organizacji.
+Skorzystaj z [przykładowych scenariuszy i przypadków użycia](adoption-scenarios.md), aby wyświetlić pomysły dotyczące sposobu używania SharePoint Syntex w organizacji.
 
-## <a name="identify-roles--responsibilities"></a>Określanie ról & obowiązków
+## <a name="identify-roles--responsibilities"></a>Identyfikowanie ról & obowiązków
 
-Określ, kto w Twojej organizacji będzie tworzyć modele i zarządzać nimi. Mogą w to uczestniczyć następujące role.
+Określ, kto w organizacji będzie kompilować modele i zarządzać nimi. Mogą być zaangażowane następujące role.
 
-| SharePoint/Administrator wiedzy | Administrator platformy Power | Menedżer wiedzy | Właściciel modelu |
+| SharePoint/administrator wiedzy | Administrator platformy Power | Menedżer wiedzy | Właściciel modelu |
 |:-------|:-------|:-------|:-------|
-| AAD rola| AAD rola | AAD rola | Mistrzowie |
-| Konfigurowanie przetwarzania formularza | Konfigurowanie środowiska dataverse do przetwarzania formularzy | Zbieranie przypadków użycia | Zbieranie spraw użycia biznesowego |
+| rola AAD| rola AAD | rola AAD | Mistrzów |
+| Konfigurowanie przetwarzania formularzy | Konfigurowanie środowiska Dataverse na potrzeby przetwarzania formularzy | Zbieranie przypadków użycia | Zbieranie przypadków użycia biznesowego |
 | Zarządzanie centrami zawartości i uprawnieniami| Kupowanie i przydzielanie środków AIB | Ustanawianie najlepszych rozwiązań i przeglądanie analizy modelu | Tworzenie i stosowanie modeli |
 
-Menedżer wiedzy, właściciel procesu biznesowego i właściciel modelu zawartości tworzą przykładowe modele i wdrożenie mistrza w organizacji.
-Inni, którzy mogą być zaangażowani: administrator zgodności, menedżerowie taksonomii.
+Menedżer wiedzy, właściciel procesu biznesowego i właściciel modelu zawartości tworzą przykładowe modeleiee w organizacji.
+Inne osoby, które mogą być zaangażowane: administrator zgodności, menedżerowie taksonomii.
 
-Gdzie będą tworzyć i stosować modele? Czy istnieją istniejące procesy lub repozytoria, które można by usprawnić?
+Gdzie będą kompilować i stosować modele? Czy istnieją istniejące procesy lub repozytoria, które można ulepszyć?
 
-- Przetwarzanie formularza: Zdecyduj, które witryny otrzymają akcję przetwarzania formularza.
-- Opis dokumentu: Możesz utworzyć wiele centrów zawartości dla różnych obszarów biznesowych.
+- Przetwarzanie formularzy: zdecyduj, które lokacje otrzymają akcję przetwarzania formularzy.
+- Omówienie dokumentów: możesz utworzyć wiele centrów zawartości dla różnych obszarów biznesowych.
 
 ## <a name="strategic-positioning"></a>Pozycjonowanie strategiczne
 
-We współpracy z uczestnikami projektu upewnij się, że są one zgodne ze strategią korzystania z programu SharePoint Syntex. Zbadaj tę pozycję i udostępnij następujące zasoby pomocne w tym zakresie:
+Współpracuj z osobami biorącymi udział w projekcie, aby upewnić się, że są one zgodne ze strategią używania SharePoint Syntex. Przeprowadź badania i podaj następujące zasoby, które pomogą w tym pozycjonowaniu:
 
 - Wyniki biznesowe:
-  - Potencjalne wyniki obrachunkowe
-  - Potencjalnie elastyczna możliwość zwrotu z projektu
+  - Potencjalne wyniki fiskalne
+  - Potencjalne wyniki elastyczności
   - Szablon wyników biznesowych
-- Uczestników projektu/sponsora Exec, buy-in/alignment
-  - Business case decks
+- Udziałowcy/Exec sponsor buy-in/alignment
+  - Prezentacje przypadków biznesowych
   - Modele finansowe
   - Gotowość firmy — kultura
 
@@ -103,49 +103,49 @@ Zidentyfikuj uczestników projektu.
 
 |Rola |Obowiązki |Department |
 |:-------|:-------|:--------|
-| Sponsorzy z kierownictwa   | Komunikowanie firmy z wartościami i wizją wysokiego poziomu   |  Kierownictwo   |
-| Project potencjalnych klienta | Nadzór nad całym procesem uruchamiania i realizacji | Project zarządzania danymi |
-| Administratorzy wiedzy| Tworzenie centrów zawartości i zarządzanie nimi | Dział IT lub inny dział|
-| Menedżerowie zawartości i właściciele modeli| Zbieranie przypadków użycia oraz tworzenie i stosowanie modeli | Dowolny dział|
-| Mistrzowie | Pomoc w pomoc w zarządzaniu niechętną obsługą niechęć | Dowolny dział (personel) |
+| Sponsorzy wykonawczy   | Przekazywanie firmie wizji i wartości wysokiego poziomu   |  Kierownictwo kadry kierowniczej   |
+| Project potencjalnych klientach | Nadzorowanie całego procesu uruchamiania i wdrażania | zarządzanie Project |
+| Administratorzy wiedzy| Tworzenie centrów zawartości i zarządzanie nimi | DZIAŁ IT lub inny dział|
+| Menedżerowie zawartości i właściciele modeli| Zbieranie przypadków użycia i tworzenie i stosowanie modeli | Dowolny dział|
+| Mistrzów | Pomoc w ewangelizacji i zarządzaniu obsługą zastrzeżeń | Dowolny dział (personel) |
 | Administrator dzierżawy | Konfigurowanie ustawień na poziomie dzierżawy | Dział IT|
-| Administrator platformy Power Platform| Konfigurowanie środowiska dataverse | Dział IT|
+| Administrator platformy Power Platform| Konfigurowanie środowiska Dataverse | Dział IT|
 
 > [!NOTE]
-> Mimo że zalecamy, aby wszystkie te role zostały spełnione w trakcie Twojego realizacji, może się okazać, że nie wymagasz od nich wszystkich, aby rozpocząć pracę nad wskazanym rozwiązaniem.
+> Mimo że zalecamy spełnienie każdej z tych ról w całym wdrożeniu, może się okazać, że nie wymagasz od nich wszystkich rozpoczęcia pracy z zidentyfikowanym rozwiązaniem.
 
 ## <a name="readiness-checklist"></a>Lista kontrolna gotowości
 
-Aby przygotować się do wdrożenia SharePoint Syntex, musisz:
+Aby przygotować się do zaimplementowania SharePoint Syntex, należy wykonać następujące czynności:
 
 ![Gotowość do zrozumienia zawartości.](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. Planowanie stanu końcowego
-    - Opis modeli dokumentów to znaczenie, a nie koniec.
-    - Zaplanuj wykorzystanie wartości wyodrębniowanych metadanych za pomocą:
-      - Wyszukiwanie
-      - Filtrowanie i wyświetlanie formatowania
+    - Modele rozumienia dokumentów to środki, a nie koniec.
+    - Zaplanuj wykorzystanie wartości wyodrębnionych metadanych za pomocą:
+      - Szukaj
+      - Filtrowanie i formatowanie widoku
       - Zgodność
-      - Automatyzacja
-2. Identyfikowanie
-    - Zrozumienie istniejącej architektury informacji i używania funkcji zarządzania zawartością.
-    - Czy jakieś istniejące typy zawartości dobrze się kandydują do modeli?
-    - Jakie istniejące procesy można ulepszyć za pomocą metadanych?
+      - Automatyzacji
+2. Identyfikacji
+    - Omówienie istniejącej architektury informacji i użycia funkcji zarządzania zawartością.
+    - Czy istniejące typy zawartości są dobrymi kandydatami do modeli?
+    - Jakie istniejące procesy zostałyby ulepszone przez metadane?
 3. Design
-    - Zaprojektuj swoje podejście do architektury informacji, zarządzanych metadanych i typów zawartości.
-    - Zaprojektuj proces definiowania, tworzenia i zarządzania.
+    - Projektowanie podejścia do architektury informacji, zarządzanych metadanych i typów zawartości.
+    - Projektowanie procesu definicji, tworzenia i zarządzania.
 
 ## <a name="engage-your-organization"></a>Angażowanie organizacji
 
-1. Zidentyfikuj schoweki, potwierdź scenariusze i opracuj plan projektu.
-1. Konfigurowanie ustawień i stosowanie licencji.
-1. Rozpocznij świadomość i szkolenia — Zwerybuj mistrzów.
-1. Rozsyłaj je etapami.  
-1. Zbierz opinie i iteracyjnie.
-1. Wraz ze wzrostem użycia planu dla wszystkich środków na korzystanie z aplikacji AI Builder w razie potrzeby.
+1. Identyfikowanie posiadaczy udziałów, potwierdzanie scenariuszy i opracowywanie planu projektu.
+1. Skonfiguruj ustawienia i zastosuj licencje.
+1. Rozpocznij świadomość i szkolenie — Rekrutuj mistrzów.
+1. Wdrażanie etapami.  
+1. Zbierz opinie i iteruj.
+1. Wraz ze wzrostem użycia planowanie wszelkich środków narzędzia AI Builder w razie potrzeby.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Scenariusze i przypadki użycia na SharePoint Syntex](adoption-scenarios.md)
+[Scenariusze i przypadki użycia dla SharePoint Syntex](adoption-scenarios.md)
 
-[Zarządzanie umowami przy użyciu Microsoft 365 rozwiązania](solution-manage-contracts-in-microsoft-365.md)
+[Zarządzanie kontraktami przy użyciu rozwiązania Microsoft 365](solution-manage-contracts-in-microsoft-365.md)

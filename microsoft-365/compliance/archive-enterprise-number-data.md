@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika do archiwizowania danych z archiwum liczb Enterprise TeleMessage
+title: Konfigurowanie łącznika do archiwizowania danych z archiwizatora Enterprise numerów telemessage
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,70 +11,70 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych SMS-ów i MMS z Enterprise archiwum liczb telemessage. Dzięki temu można archiwizować dane ze źródeł danych innych firm w programie Microsoft 365, aby zarządzać danymi innych firm przy użyciu funkcji zgodności, takich jak archiwizacja ze względu na przepisy prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 58450875c418c0ea2327d78c7dcadd3c4992fb77
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych programu SMS i MMS z usługi TeleMessage Enterprise Number Archiver. Dzięki temu można archiwizować dane ze źródeł danych innych firm w usłudze Microsoft Purview, aby można było zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania.
+ms.openlocfilehash: f1353e0140e1411d2cac79fc4d59043046df302d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322159"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944112"
 ---
-# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Konfigurowanie łącznika do archiwizowania Enterprise danych liczbowych
+# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Konfigurowanie łącznika do archiwizowania danych Enterprise Number
 
-Za pomocą łącznika TeleMessage w programie Centrum zgodności platformy Microsoft 365 można importować i archiwizować wiadomości SMS i MMS (Short Messaging Service), wiadomości czatu, nagrania połączeń głosowych i dzienniki połączeń głosowych z archiwum numeru Enterprise. Po skonfigurowaniu i skonfigurowaniu łącznika połączy się on z kontem TeleMessage Twojej organizacji raz dziennie i zaim importuje dane komunikacji mobilnej pracowników za pomocą archiwum liczb TeleMessage Enterprise do skrzynek pocztowych w usłudze Microsoft 365.
+Łącznik TeleMessage w portalu zgodności usługi Microsoft Purview umożliwia importowanie i archiwizowanie wiadomości SMS i wiadomości MMS (Multimedia Messaging Service), wiadomości czatu, nagrań połączeń głosowych i dzienników połączeń głosowych z archiwum numerów Enterprise. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z kontem telemessage organizacji raz dziennie i importuje dane komunikacji mobilnej pracowników przy użyciu archiwum telemessage Enterprise number do skrzynek pocztowych w Microsoft 365.
 
-Po zapisaniu danych łącznika funkcji TeleMessage Enterprise Number Archiver w skrzynkach pocztowych użytkowników możesz zastosować funkcje zgodności usługi Microsoft 365, takie jak archiwizacja w związku z postępowaniem sądowym, wyszukiwanie zawartości In-Place, archiwizowanie, inspekcja, zgodność z komunikacją i zasady przechowywania usługi Microsoft 365 do danych archiwum liczb usługi Enterprise. Możesz na przykład przeszukać wiadomości TELEMessage Enterprise Number Archiver SMS, MMS i Voice Call przy użyciu wyszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane łącznika archiwum liczb Enterprise z folderem folderowym w Advanced eDiscovery przypadku. Importowanie Enterprise archiwizowanie danych w programie Microsoft 365 za pomocą łącznika archiwum liczb w programie Microsoft 365 może ułatwić organizacji zachowania zgodności z zasadami rządowymi i przepisami regulowymi.
+Po zapisaniu danych łącznika TeleMessage Enterprise Number Archiver w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, wyszukiwanie zawartości, archiwizowanie In-Place, inspekcja, zgodność z komunikacją i zasady przechowywania Microsoft 365 w celu Enterprise danych archiwizatora numerów. Możesz na przykład wyszukać Enterprise TeleMessage Number Archiver SMS, MMS i Voice Call przy użyciu wyszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane łącznika Enterprise Number Archiver z opiekunem w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Użycie łącznika Enterprise Number Archiver do importowania i archiwizowania danych w Microsoft 365 może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
-## <a name="overview-of-archiving-enterprise-number-data"></a>Omówienie archiwizowania Enterprise danych liczbowych
+## <a name="overview-of-archiving-enterprise-number-data"></a>Omówienie archiwizacji danych Enterprise Number
 
-W poniższym o omówieniem wyjaśniono proces używania łącznika do Enterprise danych sieciowych w Microsoft 365.
+W poniższym omówieniu wyjaśniono proces korzystania z łącznika do archiwizowania danych sieci Enterprise w Microsoft 365.
 
-![Enterprise zarchiwizowanie liczb.](../media/EnterpriseNumberConnectorWorkflow.png)
+![Enterprise przepływu pracy archiwizacji numerów.](../media/EnterpriseNumberConnectorWorkflow.png)
 
-1. Twoja organizacja współpracuje z usługą TeleMessage w celu skonfigurowania łącznika Enterprise Archiwum liczb. Aby uzyskać więcej informacji, zobacz [tutaj](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/).
+1. Twoja organizacja współpracuje z usługą TeleMessage w celu skonfigurowania łącznika Enterprise Number Archiver. Aby uzyskać więcej informacji, zobacz [tutaj](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/).
 
-2. Łącznik archiwum liczb Enterprise, który tworzysz w usłudze Centrum zgodności platformy Microsoft 365, łączy się z witryną TeleMessage każdego dnia i przenosi wiadomości e-mail z poprzednich 24 godzin do bezpiecznego obszaru usługi Azure Storage w chmurze firmy Microsoft.
+2. Łącznik Enterprise Number Archiver tworzony w portalu zgodności codziennie łączy się z witryną TeleMessage i przesyła wiadomości e-mail z poprzednich 24 godzin do bezpiecznego obszaru usługi Azure Storage w chmurze firmy Microsoft.
 
-3. Łącznik importuje elementy komunikacji mobilnej do skrzynki pocztowej określonego użytkownika. W skrzynce pocztowej określonego Enterprise jest tworzony nowy folder o nazwie Archiwum liczb, do których elementy są importowane. Łącznik mapuje dane przy użyciu wartości *właściwości Adres e-mail* użytkownika. Każda wiadomość e-mail zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika wiadomości e-mail. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości Adres e-mail użytkownika możesz również zdefiniować mapowanie niestandardowe, przesyłając plik mapowania plików CSV. Ten plik mapowania powinien zawierać numer telefonu komórkowego użytkownika i odpowiadający mu adres Microsoft 365 pocztowej dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu poczty e-mail łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli użytkownik nie znajdzie prawidłowego Microsoft 365 odpowiadającego numerowi telefonu komórkowego użytkownika, łącznik użyje właściwości adres e-mail użytkownika elementu poczty e-mail. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w pliku mapowania niestandardowego lub właściwości adresu e-mail użytkownika elementu poczty  e-mail, element nie zostanie zaimportowany.
+3. Łącznik importuje elementy komunikacji mobilnej do skrzynki pocztowej określonego użytkownika. Nowy folder o nazwie Enterprise Number Archiver jest tworzony w skrzynce pocztowej określonego użytkownika, a elementy są do niego importowane. Łącznik wykonuje mapowanie przy użyciu wartości właściwości *Adres e-mail użytkownika* . Każda wiadomość e-mail zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika wiadomości e-mail. Oprócz automatycznego mapowania użytkownika przy użyciu wartości właściwości *Adres e-mail użytkownika* można również zdefiniować mapowanie niestandardowe, przekazując plik mapowania CSV. Ten plik mapowania powinien zawierać numer telefonu komórkowego użytkownika i odpowiedni adres skrzynki pocztowej Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkownika i udostępnisz mapowanie niestandardowe, dla każdego elementu wiadomości e-mail łącznik najpierw przyjrzy się niestandardowemu plikowi mapowania. Jeśli nie znajdzie prawidłowego Microsoft 365 użytkownika odpowiadającego numerowi telefonu komórkowego użytkownika, łącznik użyje właściwości adres e-mail użytkownika elementu wiadomości e-mail. Jeśli łącznik nie znajdzie prawidłowego Microsoft 365 użytkownika w niestandardowym pliku mapowania lub we właściwości *adresu e-mail użytkownika* elementu wiadomości e-mail, element nie zostanie zaimportowany.
 
 ## <a name="before-you-set-up-a-connector"></a>Przed skonfigurowaniem łącznika
 
-Niektóre kroki implementacji wymagane do zarchiwizować Enterprise archiwum liczb są zewnętrzne Microsoft 365 i muszą zostać ukończone, zanim będzie można utworzyć łącznik w centrum zgodności.
+Niektóre kroki implementacji wymagane do zarchiwizowania danych Enterprise Archiwum numerów są zewnętrzne dla Microsoft 365 i muszą zostać ukończone przed utworzeniem łącznika w centrum zgodności.
 
-- [Zamów Enterprise Archiwum liczb w TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) i uzyskaj prawidłowe konto administracyjne dla twojej organizacji. Podczas tworzenia łącznika w centrum zgodności musisz zalogować się do tego konta.
+- [Zamów usługę Enterprise Number Archiver z usługi TeleMessage i uzyskaj prawidłowe](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) konto administracyjne dla swojej organizacji. Musisz zalogować się do tego konta podczas tworzenia łącznika w Centrum zgodności.
 
-- Zarejestruj wszystkich użytkowników wymagających archiwizacji Enterprise wiadomości SMS/MMS w sieci TeleMessage. Podczas rejestrowania użytkowników pamiętaj, aby używać tego samego adresu e-mail, który jest używany na ich Microsoft 365 kontach.
+- Zarejestruj wszystkich użytkowników, którzy wymagają archiwizacji sieci Enterprise Numer SMS/MMS na koncie TeleMessage. Podczas rejestrowania użytkowników należy użyć tego samego adresu e-mail, który jest używany dla ich konta Microsoft 365.
 
 - Zainstaluj i aktywuj aplikację TeleMessage Enterprise Number Archiver na telefonach komórkowych pracowników.
 
-- Użytkownik, który tworzy łącznik Enterprise archiwum liczb, musi mieć przypisaną rolę Administrator łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który tworzy łącznik Enterprise Number Archiver, musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych TeleMessage jest dostępny w GCC w chmurze dla instytucji rządowych Microsoft 365 USA. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Organizacji w systemach innych firm, które znajdują się poza infrastrukturą firmy Microsoft 365 i dlatego nie są objęte zobowiązaniami firmy Microsoft 365 w zakresie zgodności z przepisami i ochrony danych. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
+- Ten łącznik danych TeleMessage jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
-## <a name="create-an-enterprise-number-archiver-connector"></a>Tworzenie łącznika Enterprise archiwum liczb
+## <a name="create-an-enterprise-number-archiver-connector"></a>Tworzenie łącznika Enterprise Number Archiver
 
-Po zakończeniu wymagań wstępnych opisanych w poprzedniej sekcji możesz utworzyć łącznik Enterprise archiwum liczb w Centrum zgodności platformy Microsoft 365. Łącznik używa podanej informacji do nawiązania połączenia z witryną TeleMessage i przesłania wiadomości SMS, MMS oraz wiadomości połączeń głosowych do odpowiednich skrzynek pocztowych użytkowników w Microsoft 365.
+Po ukończeniu wymagań wstępnych opisanych w poprzedniej sekcji możesz utworzyć łącznik Enterprise Number Archiver w portalu zgodności. Łącznik używa podanych informacji w celu nawiązania połączenia z witryną TeleMessage i przeniesienia wiadomości SMS, MMS i połączeń głosowych do odpowiednich skrzynek pocztowych użytkownika w Microsoft 365.
 
-1. Przejdź do łączników [https://compliance.microsoft.com](https://compliance.microsoft.com/) danych, a **następnie** \> **Enterprise archiwum liczb**.
+1. Przejdź do obszaru [https://compliance.microsoft.com](https://compliance.microsoft.com/) , a następnie kliknij pozycję **Łączniki danych** **Enterprise Archiwum numerów**\>.
 
-2. Na stronie **Enterprise opis produktu Archiwum** liczb kliknij pozycję **Dodaj łącznik**
+2. Na stronie **opisu produktu Enterprise Number Archiver** kliknij pozycję **Dodaj łącznik**
 
-3. Na stronie **Warunki użytkowania usługi** kliknij pozycję **Zaakceptuj**.
+3. Na stronie **Warunki korzystania z usługi** kliknij pozycję **Akceptuj**.
 
-4. Na stronie **Login to TeleMessage** (Logowanie do telemessage) w obszarze Krok 3 wprowadź wymagane informacje w następujących polach, a następnie kliknij przycisk **Dalej**.
+4. Na stronie **Logowanie do usługi TeleMessage** w obszarze Krok 3 wprowadź wymagane informacje w poniższych polach, a następnie kliknij przycisk **Dalej**.
 
-   - **Nazwa użytkownika:** Twoja nazwa użytkownika aplikacji TeleMessage.
+   - **Nazwę użytkownika:** Nazwa użytkownika usługi TeleMessage.
 
-   - **Hasło:** Hasło aplikacji TeleMessage.
+   - **Hasło:** Twoje hasło telemessage.
 
 5. Po utworzeniu łącznika możesz zamknąć okno podręczne i przejść do następnej strony.
 
-6. Na stronie **Mapowanie użytkowników** włącz automatyczne mapowanie użytkowników. Aby włączyć mapowanie niestandardowe, przekaż plik CSV zawierający informacje o mapowaniu użytkowników, a następnie kliknij przycisk **Dalej**.
+6. Na stronie **Mapowanie użytkownika** włącz automatyczne mapowanie użytkowników. Aby włączyć mapowanie niestandardowe, przekaż plik CSV zawierający informacje o mapowaniu użytkownika, a następnie kliknij przycisk **Dalej**.
 
-7. Przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+7. Przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ** , aby utworzyć łącznik.
 
-8. Przejdź do karty Łączniki na **stronie Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika.
+8. Przejdź do karty Łączniki na stronie **Łączniki danych** , aby zobaczyć postęp procesu importowania nowego łącznika.
 
 ## <a name="known-issues"></a>Znane problemy
 
-- Obecnie importowanie załączników ani elementów większych niż 10 MB nie jest obsługuje. Obsługa większych elementów będzie dostępna w późniejszym terminie.
+- Obecnie nie obsługujemy importowania załączników ani elementów o rozmiarze większym niż 10 MB. Obsługa większych elementów będzie dostępna w późniejszym terminie.

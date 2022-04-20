@@ -1,5 +1,5 @@
 ---
-title: Pola metadanych dokumentu w Advanced eDiscovery
+title: Pola metadanych dokumentu w dziedzinie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,175 +15,175 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: W tym artykule zdefiniowano pola metadanych dla dokumentów w zestawie recenzji w przypadku Advanced eDiscovery w Microsoft 365.
-ms.openlocfilehash: e07afbcfff0c6cae748ac6104879ec25f046cbf5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: W tym artykule zdefiniowano pola metadanych dla dokumentów w zestawie przeglądów w przypadku w usłudze Microsoft Purview eDiscovery (Premium) w Microsoft 365.
+ms.openlocfilehash: bd52107a2cbefedcf30c47e897ff12e5ce0c8bd7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680736"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938098"
 ---
-# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Pola metadanych dokumentu w Advanced eDiscovery
+# <a name="document-metadata-fields-in-ediscovery-premium"></a>Pola metadanych dokumentu w dziedzinie zbierania elektronicznych materiałów dowodowych (Premium)
 
-W poniższej tabeli wymieniono pola metadanych dla dokumentów w zestawie recenzji w przypadku Advanced eDiscovery. W tabeli przedstawiono następujące informacje:
+W poniższej tabeli wymieniono pola metadanych dla dokumentów w zestawie przeglądów w przypadku w usłudze Microsoft Purview eDiscovery (Premium). Tabela zawiera następujące informacje:
 
-- **Nazwa pola** i nazwa pola wyświetlanego **:** nazwa pola metadanych i nazwa pola wyświetlanego podczas wyświetlania metadanych pliku wybranego dokumentu w zestawie recenzji. Podczas wyświetlania metadanych dokumentu niektóre pola metadanych nie są uwzględniane. Te pola są wyróżnione gwiazdką (*).
+- **Nazwa pola** i **nazwa pola wyświetlanego:** nazwa pola metadanych i nazwa pola wyświetlanego podczas wyświetlania metadanych pliku wybranego dokumentu w zestawie przeglądów. Niektóre pola metadanych nie są uwzględniane podczas wyświetlania metadanych pliku dokumentu. Te pola są wyróżnione gwiazdką (*).
 
-- **Nazwa pola, które można wyszukiwać:** Nazwa właściwości, która może być wyszukiwana podczas uruchamiania zapytania [zestawu recenzji](review-set-search.md). Pusta komórka oznacza, że nie można wyszukać pola w zapytaniu zestawu recenzji.
+- **Nazwa pola z możliwością wyszukiwania:** Nazwa właściwości, którą można wyszukać podczas uruchamiania [zapytania zestawu przeglądów](review-set-search.md). Pusta komórka oznacza, że nie można wyszukać pola w zapytaniu zestawu przeglądów.
 
-- **Wyeksportowano nazwę pola:** Nazwa pola metadanych uwzględnionego podczas eksportowania dokumentów.  Pusta komórka oznacza, że pole nie jest uwzględnione w eksportowanych metadanych.
+- **Wyeksportowana nazwa pola:** Nazwa pola metadanych, które jest uwzględniane podczas eksportowania dokumentów.  Pusta komórka oznacza, że pole nie jest dołączone do wyeksportowanych metadanych.
 
 - **Opis:** Opis pola metadanych.
 
 > [!NOTE]
-> Pole **Słowa kluczowe** w [wyszukiwaniu zestawu recenzji](./review-set-search.md) używa języka Keyword Query Language (KQL). Pól wymienionych w kolumnie Nazwa  pola, które można przeszukiwać, można użyć w  polu Słowa kluczowe w zestawie recenzji wyszukiwania w celu tworzenia złożonych zapytań bez konieczności korzystania z konstruktora zapytań. Aby uzyskać więcej informacji na temat języka KQL, zobacz Informacje dotyczące składni języka kwerend [słów kluczowych](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+> Pole **Słowa kluczowe** w [wyszukiwaniu zestawu przeglądów](./review-set-search.md) używa języka zapytań słów kluczowych (KQL). Pól wymienionych w kolumnie **Nazwa pola z możliwością wyszukiwania** można użyć w polu Słowa kluczowe w wyszukiwaniu zestawu przeglądów w celu utworzenia złożonych zapytań bez konieczności używania **konstruktora** zapytań. Aby uzyskać więcej informacji na temat KQL, zobacz [Dokumentacja składni języka zapytań słów kluczowych](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 <br>
 
 ****
 
-|Nazwa pola i nazwa pola wyświetlanego|Nazwa pola z polem, które można wyszukiwać|Wyeksportowano nazwę pola|Opis|
+|Nazwa pola i nazwa pola wyświetlanego|Nazwa pola z możliwością wyszukiwania|Wyeksportowana nazwa pola|Opis|
 |---|---|---|---|
 |Identyfikator zawartości załącznika|AttachmentContentId||Identyfikator zawartości załącznika elementu.|
-|Wynik uprawnień klienta obsługi klienta|AttorneyClientPrivilegeScore||Wynik zawartości modelu uprawnień klienta obsługi klienta.|
-|Autor|Autor|Doc_authors|Autor z metadanych dokumentu.|
-|UDW|UDW|Email_bcc|Pole UDW dla typów wiadomości. Format to **DisplayName \<SMTPAddress\>**.|
-|CC|DW|Email_cc|Pole DW dla typów wiadomości. Format to **DisplayName \<SMTPAddress\>**.|
-|Etykiety zgodności|Etykiety zgodności|Compliance_labels|[Etykiety przechowywania](retention.md) stosowane do zawartości w Office 365.|
-|Ścieżka złożona|CompoundPath|Compound_path|Czytelna ścieżka dla człowieka, która opisuje źródło elementu.|
-|Zawartość*|Content (Zawartość)||Wyodrębniony tekst elementu.|
+|Ocena uprawnień klienta adwokackiego|AttorneyClientPrivilegeScore||Ocena zawartości modelu uprawnień klienta-adwokata.|
+|Autor|Autor|Doc_authors|Tworzenie z metadanych dokumentu.|
+|UDW|Udw|Email_bcc|Pole Bcc dla typów komunikatów. Format to **DisplayName \<SMTPAddress\>**.|
+|CC|Cc|Email_cc|Pole DW dla typów komunikatów. Format to **DisplayName \<SMTPAddress\>**.|
+|Etykiety zgodności|ComplianceLabels|Compliance_labels|[Etykiety przechowywania](retention.md) stosowane do zawartości w Office 365.|
+|Ścieżka złożona|CompoundPath|Compound_path|Ścieżka czytelna dla człowieka opisująca źródło elementu.|
+|Zawartość*|Content (Zawartość)||Wyodrębniono tekst elementu.|
 |Treść konwersacji|KonwersacjaBody||Treść konwersacji elementu.|
-|Identyfikator konwersacji|ConversationId|Conversation_ID|Identyfikator konwersacji z wiadomości. W Teams czatach grupowych i 1:1 wszystkie pliki transkrypcji oraz elementy ich rodziny w tej samej konwersacji mają ten sam identyfikator konwersacji. Aby uzyskać więcej informacji, [zobacz Advanced eDiscovery przepływu pracy dla zawartości w programie Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
-|Identyfikator rodziny konwersacji|ConversationFamilyID|ConversationFamilyID|Identyfikator identyfikujący poszczególne elementy konwersacji oraz powiązane z nią elementy.|
+|Identyfikator konwersacji|ConversationId|Conversation_ID|Identyfikator konwersacji z wiadomości. W przypadku Teams 1:1 i czatów grupowych wszystkie pliki transkrypcji i ich elementy rodzinne w ramach tej samej konwersacji mają ten sam identyfikator konwersacji. Aby uzyskać więcej informacji, zobacz [przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Identyfikator rodziny konwersacji|ConversationFamilyID|ConversationFamilyID|Identyfikator identyfikujący poszczególne elementy konwersacji, a także powiązane elementy w konwersacji.|
 |Indeks konwersacji||Conversation_index|Indeks konwersacji z wiadomości.|
-|Nazwa konwersacji||ConversationName|To pole zależy od typu zawartości.<br>**Teams czacie 1:1:** pierwsze 40 znaków pierwszej wiadomości.<br>**Teams czacie 1:N:** Nazwa czatu grupowego; jeśli nie jest dostępna, pierwsze 40 znaków pierwszej wiadomości.<br>**Teams w kanale:** Stanowisko lub podgłówek ogłoszenia; jeśli nie jest dostępny, pierwszych 40 znaków pierwszej wiadomości.|
-|Konwersacja (czas w formacie PDF)|ConversationPdfTime||Data utworzenia konwersacji w wersji PDF.|
-|Ponowne redaction konwersacji w czasie nagrywania|ConversationRedactionBurnTime||Data utworzenia wersji PDF konwersacji na czat.|
-|Temat konwersacji|ConversationTopic||Temat konwersacji elementu.|
-|Typ konwersacji|ConversationType|ConversationType|Typ konwersacji na czacie. Dopuszczalne wartości: <br>**Teams czatach 1:1 i grupowych oraz wszystkich Yammer konwersacjach:** Grupowe<br>**Teams kanały i kanały prywatne:** Kanał|
+|Nazwa konwersacji||ConversationName|To pole zależy od typu zawartości.<br>**Teams czat 1:1:** pierwsze 40 znaków pierwszej wiadomości.<br>**Teams 1:N czatu:** nazwa czatu grupowego; jeśli nie jest dostępna, pierwsze 40 znaków pierwszej wiadomości.<br>**Teams Channel Post:** opublikuj tytuł lub podnagłówek anonsu; jeśli nie jest dostępny, pierwsze 40 znaków pierwszej wiadomości.|
+|Czas pliku PDF konwersacji|ConversationPdfTime||Data utworzenia wersji konwersacji w formacie PDF.|
+|Czas nagrywania ponownej akcji konwersacji|ConversationRedactionBurnTime||Data utworzenia wersji konwersacji w formacie PDF dla czatu.|
+|Temat konwersacji|KonwersacjaTopic||Temat konwersacji elementu.|
+|Typ konwersacji|Typ konwersacji|Typ konwersacji|Typ konwersacji na czacie. Wartości to: <br>**Teams 1:1 i czaty grupowe oraz wszystkie Yammer konwersacje:** Grupuj<br>**kanały Teams i kanały prywatne:** Kanał|
 |Zawiera usuniętą wiadomość|ContainsDeletedMessage|ContainsDeletedMessage|Wskazuje, czy transkrypcja czatu zawiera usuniętą wiadomość|
-|Zawiera edytowaną wiadomość|ContainsEditedMessage|ContainsEditedMessage|Wskazuje, czy transkrypcja czatu zawiera edytowaną wiadomość|
-|Teams tytuł ogłoszenia|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Tytuł z ogłoszenia [zespołu](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
+|Zawiera edytowany komunikat|ContainsEditedMessage|ContainsEditedMessage|Wskazuje, czy transkrypcja czatu zawiera edytowaną wiadomość|
+|tytuł ogłoszenia Teams|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Tytuł z [ogłoszenia zespołu](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|Ścieżka przekonwertowanego pliku eksportu. Tylko do użytku wewnętrznego firmy Microsoft.|
-|Szybki|Szybki|Szybki|Nazwa elementu-pogotowa, z który był skojarzony element.|
-|Data|Data|Data|Data to pole obliczeniowe zależne od typu pliku.<p>**Wiadomość e-mail**: Data wysłania<br>**Załączniki wiadomości** e-mail: data ostatniej modyfikacji dokumentu; Jeśli nie jest dostępna, data wysłania rodzica<br>**Dokumenty osadzone**: data ostatniej modyfikacji dokumentu; Jeśli nie jest dostępna, data ostatniej modyfikacji elementu nadrzędnego<br>**dokumenty w użyt. (zawiera nowoczesne załączniki)**: data ostatniej modyfikacji dokumentu; jeśli nie jest dostępny, SharePoint datę ostatniej modyfikacji<br>**Dokumenty Office 365 inne niż**: Data ostatniej modyfikacji<br>**Spotkania**: data rozpoczęcia spotkania<br>**Poczta głosowa**: Data wysłania<br>**Wiadomości błyskawiczne**: Data wysłania<br>**Teams**: Data wysłania|
-|Komentarze dokumentu|DocComments|Doc_comments|Komentarze z metadanych dokumentu.|
-|Firma dokumentów||Doc_company|Firma z metadanych dokumentu.|
-|Data utworzenia dokumentu|CreatedTime|Doc_date_created|Utwórz datę na stronie metadane dokumentu.|
-|DocIndex*|||Indeks w rodzinie. **-1** lub **0** oznacza, że jest katalogem głównym.|
+|Opiekun|Opiekun|Opiekun|Nazwa opiekuna, z którego element został skojarzony.|
+|Data|Data|Data|Data jest polem obliczanym, które zależy od typu pliku.<p>**Wiadomość e-mail**: data wysłania<br>**Załączniki wiadomości e-mail**: data ostatniej modyfikacji dokumentu; jeśli nie jest dostępna, data wysłania elementu nadrzędnego<br>**Dokumenty osadzone**: data ostatniej modyfikacji dokumentu; jeśli nie jest dostępna, data ostatniej modyfikacji elementu nadrzędnego<br>**Dokumenty SPO (w tym nowoczesne załączniki)**: data ostatniej modyfikacji dokumentu; jeśli nie jest dostępna, SharePoint data ostatniej modyfikacji<br>**Dokumenty inne niż Office 365: data ostatniej** modyfikacji<br>**Spotkania**: data rozpoczęcia spotkania<br>**Poczta głosowa**: data wysłania<br>**Wiadomości błyskawiczne**: data wysłania<br>**Teams**: Data wysłania|
+|Komentarze do dokumentu|DocComments|Doc_comments|Komentarze z metadanych dokumentu.|
+|Firma zajmująca się dokumentami||Doc_company|Firma z metadanych dokumentu.|
+|Data utworzenia dokumentu|CreatedTime|Doc_date_created|Utwórz datę na podstawie metadanych dokumentu.|
+|DocIndex*|||Indeks w rodzinie. **-1** lub **0** oznacza, że jest to katalog główny.|
 |Słowa kluczowe dokumentu||Doc_keywords|Słowa kluczowe z metadanych dokumentu.|
-|Dokument zmodyfikowany przez||Doc_modified_by|Użytkownik, który jako ostatni zmodyfikował dokument z metadanych dokumentu.|
+|Dokument zmodyfikowany przez||Doc_modified_by|Użytkownik, który ostatnio zmodyfikował dokument z metadanych dokumentu.|
 |Poprawka dokumentu|Doc_Version|Doc_Version|Poprawka z metadanych dokumentu.|
 |Temat dokumentu||Doc_subject|Temat z metadanych dokumentu.|
 |Szablon dokumentu||Doc_template|Szablon z metadanych dokumentu.|
-|DocLastSavedBy||Doc_last_saved_by|Nazwa użytkownika, który ostatnio zapisował dokument.|
-|Motyw dominanty|DominantTheme|Dominant_theme|Motyw dominanty obliczony na podstawie analizy.|
-|Zduplikowany podzbiór||Duplicate_subset|Identyfikator grupy, aby dokładnie zduplikować dane.|
-|EmailAction*||Email_action|Dostępne wartości to **Brak**, **Odpowiedz** lub **Przekaż**. na podstawie wiersza tematu wiadomości.|
-|Zażądano potwierdzenia dostarczenia wiadomości e-mail||Email_delivery_receipt|Adres e-mail podany w nagłówkach internetowych dla potwierdzenia dostarczenia.|
-|Ważność|EmailImportance|Email_importance|Ważność wiadomości: **0** — niska; **1** — Normalny; **2** – Wysoka|
-|Ignorowane błędy przetwarzania|ErrorIgnored|Error_Ignored|Błąd został zignorowany i nie rozwiązano problemów.|
+|DocLastSavedBy||Doc_last_saved_by|Nazwa użytkownika, który ostatnio zapisał dokument.|
+|Motyw dominujący|DominantTheme|Dominant_theme|Motyw dominujący obliczony na potrzeby analizy.|
+|Zduplikowany podzestaw||Duplicate_subset|Identyfikator grupy dla dokładnych duplikatów.|
+|EmailAction*||Email_action|Wartości to **Brak**, **Odpowiedź** lub **Dalej**; na podstawie wiersza tematu komunikatu.|
+|Zażądano potwierdzenia dostarczenia wiadomości e-mail||Email_delivery_receipt|Adres e-mail podany w nagłówkach internetowych na potrzeby potwierdzenia dostawy.|
+|Znaczenie|EmailImportance|Email_importance|Ważność komunikatu: **0** — niska; **1** — normalny; **2** — wysoki|
+|Ignorowane błędy przetwarzania|ErrorIgnored|Error_Ignored|Błąd został zignorowany i nie został skorygowany.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Pełny zestaw nagłówków wiadomości e-mail z wiadomości e-mail|
-|EmailLevel*||Email_level|Oznacza poziom wiadomości w obrębie wątku wiadomości e-mail, do którego należy; Załączniki dziedziczą wartość wiadomości nadrzędnej.|
+|EmailLevel*||Email_level|Wskazuje poziom wiadomości w wątku wiadomości e-mail, do którego należy; załączniki dziedziczą wartość komunikatu nadrzędnego.|
 |Identyfikator wiadomości e-mail||Email_message_ID|Identyfikator wiadomości internetowej z wiadomości.|
-|EmailReadReceiptRequested||Email_read_receipt|Adres e-mail podany w nagłówkach internetowych dla potwierdzenia przeczytania.|
-|Zabezpieczenia poczty e-mail|EmailSecurity|Email_security|Ustawienie zabezpieczeń wiadomości: **0** — Brak; **1** — Podpisane; **2** - Encrypted; **3** . Szyfrowane i podpisane.|
-|Charakter wiadomości e-mail|EmailSensitivity|email_sensitivity|Ustawienie wrażliwości wiadomości: **0** - Brak; **1** Osobiste; **2** — Prywatne; **3** . FirmaConfidential.|
-|Zestaw wiadomości e-mail|EmailSet|Email_set|Identyfikator grupy dla wszystkich wiadomości w tym samym zestawie wiadomości e-mail.|
-|EmailThread*||Email_thread|Położenie wiadomości w zestawie wiadomości e-mail; składa się z identyfikatorów węzła od katalogu głównego do bieżącej wiadomości i są rozdzielone kropkami (.).|
+|EmailReadReceiptRequested||Email_read_receipt|Adres e-mail podany w nagłówkach internetowych na potrzeby potwierdzenia odczytu.|
+|Zabezpieczenia poczty e-mail|EmailSecurity|Email_security|Ustawienie zabezpieczeń komunikatu: **0** — brak; **1** — podpisane; **2** — Szyfrowane; **3** — Zaszyfrowane i podpisane.|
+|Ważność poczty e-mail|EmailSensitivity|email_sensitivity|Ustawienie poufności komunikatu: **0** — brak; **1** Osobiste; **2** — prywatny; **3** — CompanyConfidential.|
+|Zestaw poczty e-mail|Zestaw poczty e-mail|Email_set|Identyfikator grupy dla wszystkich wiadomości w tym samym zestawie poczty e-mail.|
+|EmailThread*||Email_thread|Położenie wiadomości w zestawie poczty e-mail; składa się z identyfikatorów węzłów z katalogu głównego do bieżącego komunikatu i są oddzielone kropkami (.).|
 |||Export_native_path|Ścieżka wyeksportowanego pliku.|
-|Wyodrębniony typ zawartości||Native_type|Wyodrębniony typ zawartości w formie typu mime; na przykład image **/jpeg**|
-|||Extracted_text_path|Ścieżka wyodrębninego pliku tekstowego w eksporcie.|
+|Wyodrębniony typ zawartości||Native_type|Wyodrębniony typ zawartości w postaci typu mime; na przykład **obraz/jpeg**|
+|||Extracted_text_path|Ścieżka do wyodrębniony plik tekstowy w eksporcie.|
 |ExtractedTextLength*||Extracted_text_length|Liczba znaków w wyodrębnionym tekście.|
-|FamilyDuplicateSet*||Family_duplicate_set|Identyfikator liczbowy rodziny, które są ze sobą identyczne (ta sama zawartość i wszystkie te same załączniki).|
-|Identyfikator rodziny|FamilyId|Family_ID|Grupuje razem załączniki i wyodrębnione elementy z wiadomości e-mail i czatów z jego elementem nadrzędnym. Obejmuje to czat lub pocztę e-mail oraz wszystkie załączniki i wyodrębnione elementy.|
-|Rozmiar rodzinny||Family_size|Liczba dokumentów w rodzinie.|
-|Klasa pliku|FileClass|File_class|W przypadku zawartości z SharePoint i OneDrive: **Dokument**. <br>W przypadku zawartości z Exchange: Wiadomość **e-mail** lub **załącznik**. <br>W przypadku zawartości z Teams lub Yammer: **Konwersacje**.|
-|Identyfikator pliku|FileId|File_ID|Unikatowy identyfikator dokumentu w ramach sprawy.|
-|Data utworzenia systemu plików||File_system_date_created|Data utworzenia w systemie plików (dotyczy tylko danych Office 365 danych).|
-|Data modyfikacji systemu plików||File_system_date_modified|Data modyfikacji w systemie plików (dotyczy tylko danych Office 365 danych).|
-|Typ pliku|FileType (Typ pliku)||Typ pliku elementu na podstawie rozszerzenia pliku.|
-|Identyfikator grupy|GroupId|Group_ID|Grupuje razem wszystkie elementy na wiadomości e-mail i dokumenty. W przypadku wiadomości e-mail obejmuje to wiadomość oraz wszystkie załączniki i wyodrębnione elementy. W przypadku dokumentów obejmuje to dokument i wszystkie elementy osadzone.|
-|Ma załącznik|EmailHasAttachment|Email_has_attachment|Wskazuje, czy wiadomość ma załączniki.|
-|Ma  to jęz.|HasAttortory||**Ma** wartość True (Prawda), jeśli co najmniej jeden z uczestników znajduje się na liście pełnomocników; w przeciwnym razie ta wartość to **Fałsz**.|
-|HasText*||Has_text|Wskazuje, czy element zawiera tekst. dopuszczalne wartości to **Prawda i** **Fałsz**.|
-|Niezmienialny identyfikator||Immutable_ID|Ten identyfikator służy do unikatowego identyfikowania dokumentu w zestawie recenzji. Tego pola nie można używać podczas wyszukiwania w zestawie recenzji i identyfikatora nie można używać do uzyskiwania dostępu do dokumentu w jego natywnej lokalizacji.|
-|Typ inkluzywny|InclusiveType|Inclusive_type|Typ inkluzywny obliczany dla analiz: **0** – nie inkluzywny; **1** — włącznie; **2** — minus włącznie; **3** — kopie włącznie.|
-|W  id. odpowiedzi||In_reply_to_ID|W odpowiedzi na identyfikator wiadomości.|
-|InputFileExtension (Extension)||Original_file_extension|Oryginalne rozszerzenie pliku.|
-|InputFileID||Input_file_ID|Identyfikator pliku elementu najwyższego poziomu w zestawie recenzji. W przypadku załącznika ten identyfikator będzie identyfikatorem elementu nadrzędnego. Można go używać do grupowania rodzin.|
-|Czy nowoczesny załącznik|IsModernAttachment||Ten plik to nowoczesny załącznik lub plik połączony.|
+|FamilyDuplicateSet*||Family_duplicate_set|Identyfikator liczbowy dla rodzin, które są dokładnymi duplikatami siebie nawzajem (ta sama zawartość i wszystkie te same załączniki).|
+|Identyfikator rodziny|Identyfikator rodziny|Family_ID|Grupuje załączniki i wyodrębnione elementy z poczty e-mail i czatów z elementem nadrzędnym. Obejmuje to czat lub wiadomość e-mail oraz wszystkie załączniki i wyodrębnione elementy.|
+|Rozmiar rodziny||Family_size|Liczba dokumentów w rodzinie.|
+|Klasa plików|FileClass|File_class|Zawartość z SharePoint i OneDrive: **Dokument**. <br>Zawartość z Exchange: **wiadomość e-mail** lub **załącznik**. <br>W przypadku zawartości z Teams lub Yammer: **Konwersacje**.|
+|Identyfikator pliku|Identyfikator pliku|File_id|Identyfikator dokumentu jest unikatowy w przypadku.|
+|Data utworzenia systemu plików||File_system_date_created|Data utworzenia z systemu plików (dotyczy tylko danych innych niż Office 365).|
+|Data modyfikacji systemu plików||File_system_date_modified|Data modyfikacji z systemu plików (dotyczy tylko danych innych niż Office 365).|
+|Typ pliku|Filetype||Typ pliku elementu na podstawie rozszerzenia pliku.|
+|Identyfikator grupy|Groupid|Group_ID|Grupuje wszystkie elementy dla poczty e-mail i dokumentów. W przypadku wiadomości e-mail obejmuje to wiadomość oraz wszystkie załączniki i wyodrębnione elementy. W przypadku dokumentów obejmuje to dokument i wszystkie elementy osadzone.|
+|Ma załącznik|EmailHasAttachment|Email_has_attachment|Wskazuje, czy komunikat zawiera załączniki.|
+|Ma adwokata|HasAttorney||**Prawda** , gdy na liście adwokatów znajduje się co najmniej jeden z uczestników; W przeciwnym razie wartość to **False**.|
+|HasText*||Has_text|Wskazuje, czy element ma tekst. możliwe wartości to **True** i **False**.|
+|Niezmienny identyfikator||Immutable_ID|Ten identyfikator służy do unikatowego identyfikowania dokumentu w zestawie przeglądów. Tego pola nie można użyć w wyszukiwaniu zestawu przeglądów, a identyfikatora nie można użyć do uzyskania dostępu do dokumentu w jego lokalizacji natywnej.|
+|Typ inkluzywny|Typ inkluzywny|Inclusive_type|Typ inkluzywny obliczany na potrzeby analizy: **0** — nie inkluzywny; **1** — inkluzywne; **2** — włącznie minus; **3** — kopiowanie inkluzywne.|
+|W polu Odpowiedz na identyfikator||In_reply_to_ID|W odpowiedzi na identyfikator z wiadomości.|
+|InputFileExtension||Original_file_extension|Oryginalne rozszerzenie pliku.|
+|InputFileID||Input_file_ID|Identyfikator pliku elementu najwyższego poziomu w zestawie przeglądów. W przypadku załącznika ten identyfikator będzie identyfikatorem elementu nadrzędnego. Może służyć do grupowania rodzin razem.|
+|Jest nowoczesnym załącznikem|IsModernAttachment||Ten plik jest nowoczesnym załącznikiem lub połączonym plikiem.|
 |Pochodzi z wersji dokumentu|IsFromDocumentVersion||Bieżący dokument pochodzi z innej wersji innego dokumentu.|
-|Załącznik wiadomości e-mail|IsEmailAttachment||Ten element pochodzi z załącznika wiadomości e-mail, który jest wyświetlany jako element dołączony do wiadomości.|
-|Znajduje się w tekście załącznika|IsInlineAttachment||Został on dołączony w tekście i pojawi się w treści wiadomości.|
-|Jest przedstawicielem|IsRepresentative|Is_representative|Jeden dokument w każdym zestawie duplikatów jest oznaczony jako reprezentatywny.|
-|Klasa elementu|ItemClass|Item_class|klasa elementu dostarczana przez serwer Exchange; na przykład **IPM. Uwaga**|
+|Jest załącznik wiadomości e-mail|IsEmailAttachment||Ten element pochodzi z załącznika wiadomości e-mail, który jest wyświetlany jako dołączony element do wiadomości.|
+|Jest załącznik w tekście|IsInlineAttachment||Ten element został dołączony w tekście i jest wyświetlany w treści wiadomości.|
+|Jest reprezentatywny|IsRepresentative|Is_representative|Jeden dokument w każdym zestawie dokładnych duplikatów jest oznaczony jako reprezentatywny.|
+|Klasa elementu|ItemClass|Item_class|Klasa elementów dostarczana przez serwer exchange; na przykład **IPM. Uwaga**|
 |Data ostatniej modyfikacji|LastModifiedDate|Doc_date_modified|Data ostatniej modyfikacji z metadanych dokumentu.|
-|Identyfikator ładowania|LoadId|Load_ID|Identyfikator zestawu ładowania, w którym element został dodany do zestawu recenzji.|
-|Lokalizacja|Lokalizacja|Lokalizacja|Ciąg wskazujący typ lokalizacji, z których pochodzą dokumenty.<p>**Zaimportowane dane** — dane Office 365 danych<br>**Teams** — Microsoft Teams<br>**Exchange** — Exchange pocztowe<br>**SharePoint** — SharePoint witryn<br>**OneDrive** — OneDrive konta|
-|Nazwa lokalizacji|LocationName|Location_name|Ciąg identyfikujący źródło elementu. W przypadku wymiany będzie to adres SMTP skrzynki pocztowej. w SharePoint i OneDrive adres URL zbioru witryn.|
-|||Marked_as_pivot|Ten plik to tabela przestawna w niemal zduplikowanych zestawach.|
-|Oznaczone jako reprezentatywne|MarkAsRepresentative||Jeden dokument z każdego zestawu dokładnych duplikatów jest oznaczony jako przedstawicieli.|
-|Data zakończenia spotkania|MeetingEndDate|Meeting_end_date|Data zakończenia spotkania.|
-|Data rozpoczęcia spotkania|MeetingStartDate|Meeting_start_date|Data rozpoczęcia spotkania.|
-|Typ wiadomości|MessageKind|Message_kind|Typ wiadomości do wyszukania. Możliwe wartości: kontakty **<p><br>docs <br><br><br><br><br><br><br>** wysyłają wiadomości e-mail do zewnętrznychdane faksów wiadomości błyskawicznych, dzienników spotkań usługi microsoftteams (zwraca elementy z czatów, spotkań i połączeń w aplikacji Microsoft Teams) **<br><br><br>— wpisy notatek rssfeeds <br><br>** wiadomości głosowych|
-|Nowoczesny identyfikator nadrzędny załącznika||ModernAttachment_ParentId|Niezmienialny identyfikator elementu nadrzędnego dokumentu.|
-|Rozszerzenie natywne|NativeExtension (Natywneextension)|Native_extension|Natywne rozszerzenie elementu.|
-|Natywna nazwa pliku|NativeFileName|Native_file_name|Natywna nazwa pliku elementu.|
-|NativeMD5||Native_MD5|Skrót MD5 (128-bitowa wartość skrótu) strumienia pliku.|
-|NativeSHA256||Native_SHA_256|Skrót SHA256 (256-bitowa wartość skrótu) strumienia pliku.|
-|Sortowanie ND/ET: Wykluczanie załączników|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenation of the email thread (ET) set and Near-duplicate (ND) set. To pole służy do wydajnego sortowania podczas przeglądania. Kod **D** jest poprzedzony zestawami ND, a **E** jest poprzedzone zestawami ET.|
-|Sortowanie ND/ET: W tym załączniki|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenation of an email thread (ET) set and near-duplicate (ND) set. To pole służy do wydajnego sortowania podczas przeglądania. Kod **D** jest poprzedzony zestawami ND, a **E** jest poprzedzone zestawami ET. Po każdym elementze wiadomości e-mail w zestawie et następuje odpowiedni załącznik.|
-|Near Duplicate Set||ND_set|Elementy podobne do dokumentu przestawnego współużytkują ten sam ND_set.|
-|Autorzy o365||O365_authors|Tworzenie z SharePoint.|
-|O365 utworzona przez||O365_created_by|Utworzone przez z SharePoint.|
-|Data utworzenia o365||O365_date_created|Data utworzenia z SharePoint.|
-|O365ModifiedDate||O365_date_modified|Data modyfikacji dokumentu (lub wersji dokumentu) SharePoint lub OneDrive dla Firm dokumentu. Jest to ta sama data modyfikacji co data wyświetlana w historii wersji w p SharePoint i OneDrive użytkownika.|
-|O365 zmodyfikowana przez||O365_modified_by|Zmodyfikowane przez z SharePoint lub OneDrive.|
-|Inne schłody|DedupedCustodians|Deduped_custodians|Lista elementów składowych dokumentów, które są dokładnymi duplikatami (w przypadku wiadomości e-mail na podstawie zawartości; dla dokumentów na podstawie skrótu).|
-|Inne identyfikatory plików|DedupedFileIds|Deduped_file_IDs|Lista identyfikatorów plików dokumentów, które są dokładnymi duplikatami (w przypadku wiadomości e-mail na podstawie zawartości; w przypadku dokumentów na podstawie skrótu).|
-|Inne ścieżki|Dedupedcompoundpath|Deduped_compound_path|Lista złożonych ścieżek dokumentów, które są dokładnie duplikatami (poczta e-mail: na podstawie zawartości, dokumenty: na podstawie skrótu).|
-|Identyfikator nadrzędny|ParentId|Parent_ID|Identyfikator elementu nadrzędnego.|
-|Nawias||Parent_node|Najbliższa wcześniejsza wiadomość e-mail w wątku wiadomości e-mail.|
-|Domeny uczestników|ParticipantDomains|Email_participant_domains|Lista wszystkich domen uczestników wiadomości.|
-|Uczestnicy|Uczestnicy|Email_participants|Lista wszystkich uczestników wiadomości; Na przykład Nadawca, Do, DW, UDW.|
-|Identyfikator przestawny|PivotId|Pivot_ID|Identyfikator tabeli przestawnej.|
-|Potencjalnie uprzywilejowany|PotencjalniePrivileged|Potentially_privileged|Ma wartość True (Prawda), jeśli model wykrywania uprawnień obsługi klienta uzna dokument za potencjalnie uprzywilejowany|
-|Stan przetwarzania|ProcessingStatus|Error_code|Stan przetwarzania po dodaniu elementu do zestawu recenzji.|
-|Odczyt percentylu|ReadPercentile||Odczytaj percentyl dokumentu na podstawie istotności.|
-|Odebrano|Odebrano|Email_date_received|Data i godzina otrzymania wiadomości e-mail w czasie UTC.|
+|Identyfikator obciążenia|LoadId|Load_ID|Identyfikator zestawu obciążenia, w którym element został dodany do zestawu przeglądów.|
+|Lokalizacja|Lokalizacja|Lokalizacja|Ciąg wskazujący typ lokalizacji, z której pochodzą dokumenty.<p>**Zaimportowane dane** — dane inne niż Office 365<br>**Teams** — Microsoft Teams<br>**Exchange** — skrzynki pocztowe Exchange<br>**SharePoint** — witryny SharePoint<br>**OneDrive** — konta OneDrive|
+|Nazwa lokalizacji|Nazwa lokalizacji|Location_name|Ciąg identyfikujący źródło elementu. W przypadku wymiany będzie to adres SMTP skrzynki pocztowej. dla SharePoint i OneDrive adres URL zbioru witryn.|
+|||Marked_as_pivot|Ten plik jest elementem przestawnym w niemal zduplikowanym zestawie.|
+|Oznaczony jako reprezentatywny|MarkAsRepresentative||Jeden dokument z każdego zestawu dokładnych duplikatów jest oznaczony jako przedstawiciele.|
+|Data zakończenia spotkania|Data_spotkaniaa|Meeting_end_date|Data zakończenia spotkania.|
+|Data rozpoczęcia spotkania|Data rozpoczęcia spotkania|Meeting_start_date|Data rozpoczęcia spotkania.|
+|Rodzaj komunikatu|MessageKind|Message_kind|Typ wiadomości do wyszukania. Możliwe wartości: **<p>kontakty <br>docs <br>email <br>externaldata <br>faxes <br>im <br>journals <br>meetings <br>microsoftteams** (zwraca elementy z czatów, spotkań i połączeń w Microsoft Teams) **<br>notatki <br>posty <br>rssfeeds <br>zadania <br>poczty głosowej**|
+|Identyfikator nadrzędny nowoczesnego załącznika||ModernAttachment_ParentId|Niezmienny identyfikator obiektu nadrzędnego dokumentu.|
+|Rozszerzenie natywne|NativeExtension|Native_extension|Natywne rozszerzenie elementu.|
+|Nazwa pliku natywnego|NativeFileName|Native_file_name|Natywna nazwa pliku elementu.|
+|NativeMD5||Native_MD5|Skrót MD5 (wartość skrótu 128-bitowego) strumienia plików.|
+|NativeSHA256||Native_SHA_256|Skrót SHA256 (256-bitowa wartość skrótu) strumienia plików.|
+|Sortowanie ND/ET: wykluczanie załączników|NdEtSortExclAttach|ND_ET_sort_excl_attach|Łączenie zestawu wątku poczty e-mail (ET) i zestawu prawie zduplikowanych (ND). To pole służy do wydajnego sortowania w czasie przeglądu. **D jest** prefiksem do zestawów ND i **E** jest prefiksem do zestawów ET.|
+|Sortowanie ND/ET: dołączanie załączników|NdEtSortInclAttach|ND_ET_sort_incl_attach|Łączenie zestawu wątku poczty e-mail (ET) i zestawu niemal zduplikowanego (ND). To pole służy do wydajnego sortowania w czasie przeglądu. **D jest** prefiksem do zestawów ND i **E** jest prefiksem do zestawów ET. Po każdym elemencie wiadomości e-mail w zestawie ET następuje jego odpowiednie załączniki.|
+|Zduplikowany zestaw zbliżeniu||ND_set|Elementy podobne do dokumentu przestawnego współużytkują ten sam ND_set.|
+|Autorzy usługi O365||O365_authors|Autor z SharePoint.|
+|O365 utworzony przez||O365_created_by|Utworzony przez z SharePoint.|
+|Data utworzenia usługi O365||O365_date_created|Data utworzenia z SharePoint.|
+|O365ModifiedDate||O365_date_modified|Data modyfikacji dokumentu (lub wersji dokumentu) pobranego z SharePoint lub OneDrive dla Firm. Jest to ta sama data modyfikacji co data wyświetlana w historii wersji w środowisku SharePoint i OneDrive użytkownika.|
+|O365 zmodyfikowany przez||O365_modified_by|Zmodyfikowane przez z SharePoint lub OneDrive.|
+|Inni opiekunowie|DedupedCustodians|Deduped_custodians|Lista opiekunów dokumentów, które są dokładne duplikaty (dla poczty e-mail, na podstawie zawartości; dla dokumentów, na podstawie skrótu).|
+|Inne identyfikatory plików|DedupedFileIds|Deduped_file_IDs|Lista identyfikatorów plików dokumentów, które są dokładnymi duplikatami (dla poczty e-mail, na podstawie zawartości; dla dokumentów na podstawie skrótu).|
+|Inne ścieżki|Dedupedcompoundpath|Deduped_compound_path|Lista złożonych ścieżek dokumentów, które są dokładnymi duplikatami (adres e-mail: na podstawie zawartości, dokumentów: na podstawie skrótu).|
+|Identyfikator nadrzędny|Parentid|Parent_ID|Identyfikator elementu nadrzędnego.|
+|Parentnode||Parent_node|Najbliższa poprzednia wiadomość e-mail w wątku wiadomości e-mail.|
+|Domeny uczestników|Domeny uczestników|Email_participant_domains|Lista wszystkich domen uczestników wiadomości.|
+|Uczestników|Uczestników|Email_participants|Lista wszystkich uczestników wiadomości; na przykład Sender, To, Cc, Bcc.|
+|Identyfikator tabeli przestawnej|Identyfikator przestawny|Pivot_ID|Identyfikator tabeli przestawnej.|
+|Potencjalnie uprzywilejowane|PotencjalniePrivileged|Potentially_privileged|Prawda, jeśli model wykrywania uprawnień adwokackiego klienta uwzględnia dokument potencjalnie uprzywilejowany|
+|Stan przetwarzania|ProcessingStatus|Error_code|Stan przetwarzania po dodaniu elementu do zestawu przeglądów.|
+|Odczyt percentylu|ReadPercentile||Odczyt percentyla dokumentu na podstawie istotności.|
+|Otrzymał|Otrzymał|Email_date_received|Data i godzina odebrania wiadomości e-mail w formacie UTC.|
 |Liczba adresatów||Recipient_count|Liczba adresatów w wiadomości.|
-|Domeny adresatów|RecipientDomains (Domeny adresatów)|Email_recipient_domains|Lista wszystkich domen adresatów wiadomości.|
-|Adresaci|Adresaci|Email_recipients|Lista wszystkich adresatów wiadomości (Do, DW, UDW).|
-|||Redacted_file_path|Ścieżka pliku zastępczego w eksporcie( redacted replacement file).|
-|||Redacted_text_path|Ścieżka wymiany redacted pliku tekstowego w eksporcie. Tylko do użytku wewnętrznego firmy Microsoft.|
-|Problem 1 tagu istotności||Relevance_tag_case_issue_1|Istotność tagu Problem 1 ze istotnością.|
-|Wskaźnik istotności|IstotnośćScore||Wskaźnik istotności dokumentu na podstawie istotności.|
-|Tag istotności|Tag istotności||Wskaźnik istotności dokumentu na podstawie istotności.|
-|Identyfikator przedstawiciela|RepresentativeId||Identyfikator numeryczny każdego zestawu dokładnych duplikatów.|
+|Domeny adresatów|Domeny adresatów|Email_recipient_domains|Lista wszystkich domen adresatów wiadomości.|
+|Adresatów|Adresatów|Email_recipients|Lista wszystkich adresatów wiadomości (Do, DW, Bcc).|
+|||Redacted_file_path|Ścieżka zredagowanego pliku zastępczego w eksporcie.|
+|||Redacted_text_path|Ścieżka zamiany zredagowanego pliku tekstowego w eksporcie. Tylko do użytku wewnętrznego firmy Microsoft.|
+|Problem z przypadkiem tagu istotności 1||Relevance_tag_case_issue_1|Problem z wielkością liter tagu istotności 1 od istotności.|
+|Wynik istotności|RelevanceScore||Wynik istotności dokumentu na podstawie istotności.|
+|Tag istotności|Znacznik istotności||Wynik istotności dokumentu na podstawie istotności.|
+|Identyfikator przedstawiciela|Identyfikator przedstawiciela||Identyfikator liczbowy każdego zestawu dokładnych duplikatów.|
 |||Row_number|Numer wiersza elementu w pliku ładowania.|
-|Nadawca|Nadawca|Email_sender|Pole Nadawca (Od) dla typów wiadomości. Format to **DisplayName \<SmtpAddress>**.|
-|Nadawca/Autor|SenderAuthor||Pole obliczeniowe złożone z nadawcy lub autora elementu.|
-|Domena nadawcy|SenderDomain|Email_sender_domain|Domena nadawcy.|
-|Wysłano|Wysłano|Email_date_sent|Data wysłania wiadomości.<br>Czaty: data rozpoczęcia od transkrypcji|
-|Ustaw kolejność: Pierwsze włącznie|SetOrderInclusivesFirst|Set_order_inclusives_first|Pole sortowania — wiadomości e-mail i załączniki: counter-chronological; documents: pivot first then by descending similarity score.|
-|Ustaw identyfikator||Set_ID|Dokumenty o podobnej zawartości (ND_set) lub wiadomości e-mail w tym samym wątku wiadomości e-mail (Email_set) mają ten sam Set_ID.|
-|SimilarityPercent||Similarity_percent|Wskazuje, jak podobny dokument jest do tabeli przestawnej najbliższego zduplikowanego zestawu.|
+|Nadawcy|Nadawcy|Email_sender|Pole nadawcy (od) dla typów komunikatów. Format to **DisplayName \<SmtpAddress>**.|
+|Nadawca/autor|SenderAuthor||Pole obliczeniowe składające się z nadawcy lub autora elementu.|
+|Domena nadawcy|Domena nadawcy|Email_sender_domain|Domena nadawcy.|
+|Wysłane|Wysłane|Email_date_sent|Data wysłania wiadomości.<br>Czaty: data rozpoczęcia od transkrypcji|
+|Ustaw kolejność: Najpierw inkluzywne|SetOrderInclusivesFirst|Set_order_inclusives_first|Pole sortowania — adres e-mail i załączniki: counter-chronologiczne; dokumenty: najpierw przestawny, a następnie przez malejący wynik podobieństwa.|
+|Ustaw identyfikator||Set_ID|Dokumenty o podobnej zawartości (ND_set) lub wiadomości e-mail w tym samym wątku wiadomości e-mail (Email_set) współużytkuje te same Set_ID.|
+|PodobieństwoPercent||Similarity_percent|Wskazuje, jak podobny jest dokument do tabeli przestawnej niemal duplikatu zestawu.|
 |Natywny rozmiar pliku|Rozmiar|Native_size|Liczba bajtów elementu natywnego.|
 |Temat|Temat|Email_subject|Temat wiadomości.|
-|Temat/tytuł|SubjectTitle||Pole obliczeniowe złożone z tematu lub tytułu elementu.|
-|Tagi|Tagi|Tagi|Znaczniki zastosowane w zestawie recenzji.|
-|Nazwa kanału|Kanał|ChannelName|To jest nazwa Teams kanału. Dotyczy tylko Microsoft Teams zawartości.|
-|Nazwa zespołu|TeamName|TeamName|**Teams:** Nazwa zespołu<br>**Yammer:** Community nazwy użytkownika|
-|Lista motywów|ThemesList|Themes_list|Lista motywy obliczona na podstawie analizy.|
-|Tytuł|Tytuł|Doc_title|Tytuł z metadanych dokumentu. Tytuł z metadanych dokumentu. W Teams zawartości Yammer konwersacji jest to wartość z właściwości ConversationName.|
-|Do|Do|Email_to|Pole Do dla typów wiadomości. Format to **DisplayName (Nazwa wyświetlana)\<SmtpAddress>**|
-|Unikatowe w zestawie wiadomości e-mail|UniqueInEmailSet||**Fałsz** , jeśli w zestawie wiadomości e-mail znajduje się duplikat załącznika.|
-|Identyfikator grupy wersji||Version_Group_Id|Grupuje razem różne wersje tego samego dokumentu.|
-|VersionNumber||Version_Number|Numer wersji dokumentu zebranego z programu SharePoint lub OneDrive dla Firm. Jest to ten sam numer wersji co numer wyświetlany w historii wersji w p SharePoint i OneDrive użytkownika.|
-|Usunięto środki zaradcze|WasRemediated|Was_Remediated|**Ma wartość True** (Prawda), jeśli usunięto działania naprawcze, a w przeciwnym razie wartość **False (Fałsz**).|
-|Liczba wyrazów|WordCount|Word_count|Liczba wyrazów w pozycji.|
+|Temat/tytuł|SubjectTitle||Pole obliczeniowe składające się z tematu lub tytułu elementu.|
+|Tagi|Tagi|Tagi|Tagi zastosowane w zestawie przeglądów.|
+|Nazwa kanału|Kanał|Channelname|Jest to nazwa kanału Teams. Dotyczy tylko zawartości Microsoft Teams.|
+|Nazwa zespołu|Teamname|Teamname|**Teams:** nazwa zespołu<br>**Yammer:** nazwa Community|
+|Lista motywów|Lista motywów|Themes_list|Lista motywów obliczana na potrzeby analizy.|
+|Tytuł|Tytuł|Doc_title|Tytuł z metadanych dokumentu. Tytuł z metadanych dokumentu. W przypadku zawartości Teams i Yammer jest to wartość z właściwości ConversationName.|
+|Do|Do|Email_to|Do pola dla typów komunikatów. Format to **DisplayName\<SmtpAddress>**|
+|Unikatowy w zestawie poczty e-mail|UniqueInEmailSet||**Fałsz** , jeśli w zestawie poczty e-mail znajduje się duplikat załącznika.|
+|Identyfikator grupy wersji||Version_Group_Id|Grupuje różne wersje tego samego dokumentu.|
+|Versionnumber||Version_Number|Numer wersji dokumentu zebranego z SharePoint lub OneDrive dla Firm. Jest to ten sam numer wersji co ten wyświetlany w historii wersji w środowisku SharePoint i OneDrive użytkownika.|
+|Została skorygowana|WasRemediated|Was_Remediated|**Prawda** , jeśli element został skorygowany, w przeciwnym razie **false**.|
+|Liczba wyrazów|Wordcount|Word_count|Liczba wyrazów w elemencie.|
 |||||
 
 > [!NOTE]
-> Aby uzyskać więcej informacji na temat właściwości, które można przeszukiwać podczas Office 365 lokalizacji zawartości podczas zbierania danych dotyczących sprawy Advanced eDiscovery, zobacz Zapytania słów kluczowych i warunki wyszukiwania dotyczące wyszukiwania [zawartości](keyword-queries-and-search-conditions.md).
+> Aby uzyskać więcej informacji na temat właściwości możliwych do wyszukiwania podczas wyszukiwania Office 365 lokalizacji zawartości podczas zbierania danych dla przypadku zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Zapytania słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usługa Basic Mobility and Security może pomóc w zabezpieczeniu urządzeń przenośnych i zarządzaniu nimi.
-ms.openlocfilehash: 78cfa4582aa2e25a3b47a12d2e067082e8b41d07
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781232"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937768"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Możliwości funkcji Podstawowa mobilność i zabezpieczenia
 
@@ -230,7 +230,7 @@ Te dodatkowe ustawienia zasad można ustawić przy użyciu poleceń cmdlet progr
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Zdalne czyszczenie urządzenia przenośnego
 
-Jeśli urządzenie zostanie utracone lub skradzione, możesz usunąć poufne dane organizacyjne i zapobiec dostępowi do zasobów organizacji Microsoft 365, wykonując czyszczenie z centrum zgodności usługi Security & > **Ochrona przed** >  utratą **danychZarządzanie urządzeniami**. Można przeprowadzić selektywne czyszczenie, aby usunąć tylko dane organizacyjne lub pełne czyszczenie, aby usunąć wszystkie informacje z urządzenia i przywrócić je do ustawień fabrycznych.
+W przypadku utraty lub kradzieży urządzenia można usunąć poufne dane **organizacyjne** i zapobiec dostępowi do zasobów organizacji Microsoft 365 przez wyczyszczenie danych z **portalu** >  zgodności usługi Microsoft PurviewZarządzanie  > **utratą** urządzeń. Można przeprowadzić selektywne czyszczenie, aby usunąć tylko dane organizacyjne lub pełne czyszczenie, aby usunąć wszystkie informacje z urządzenia i przywrócić je do ustawień fabrycznych.
 
 Aby uzyskać więcej informacji, zobacz [Czyszczenie urządzenia przenośnego w usłudze Basic Mobility and Security](wipe-mobile-device.md).
 

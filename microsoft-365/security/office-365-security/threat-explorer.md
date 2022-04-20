@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 56d666f1deff43f872ad265c625302980669ecd9
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 8a5029ad6de3de33eacdf814729ed2eafcd2cf89
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862109"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941682"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Wykrywanie zagrożeń i Eksploratora zagrożeń w czasie rzeczywistym
 

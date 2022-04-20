@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c97338121d38650116540564441f3b37051bf05f
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 99549ba8077d966c4d5649e144fa0259f9178629
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731190"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944354"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -176,7 +176,7 @@ Typowe kontrolki i zawartość są wyświetlane w tym samym miejscu lub są skon
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="Role punktów końcowych & grupy wyświetlane na stronie Uprawnienia & role" lightbox="../../media/converged-roles-5.png":::
 
-Dostęp do Microsoft 365 Defender jest konfigurowany przy użyciu ról globalnych usługi Azure AD lub ról niestandardowych. W przypadku usługi Defender for Endpoint zobacz [Przypisywanie dostępu użytkownika do portalu Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). Aby uzyskać Ochrona usługi Office 365 w usłudze Defender, zobacz [Uprawnienia w Centrum zgodności platformy Microsoft 365 i Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
+Dostęp do Microsoft 365 Defender jest konfigurowany przy użyciu ról globalnych usługi Azure AD lub ról niestandardowych. W przypadku usługi Defender for Endpoint zobacz [Przypisywanie dostępu użytkownika do portalu Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). Aby uzyskać Ochrona usługi Office 365 w usłudze Defender, zobacz [Uprawnienia w portalu zgodności usługi Microsoft Purview i Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
 - Dowiedz się więcej na temat [zarządzania dostępem do Microsoft 365 Defender](m365d-permissions.md)
 - Dowiedz się więcej o [sposobie tworzenia ról niestandardowych](custom-roles.md) w Microsoft 365 Defender

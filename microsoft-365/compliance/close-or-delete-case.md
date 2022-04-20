@@ -1,5 +1,5 @@
 ---
-title: Zamykanie lub usuwanie sprawy
+title: Zamknij lub usuń sprawę
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,79 +15,79 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, co się stanie, gdy śledztwo lub sprawa prawna obsługiwana przez Advanced eDiscovery zostanie zamknięta lub usunięta.
+description: Dowiedz się, co się stanie, gdy dochodzenie lub sprawa prawna obsługiwana przez sprawę zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) zostanie zamknięta lub usunięta.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 88e0892bec3f220d9c405f3886c37fa89ad2c647
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c3ea769fe6c1e01a14e6a552170da8421a03cf07
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983559"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64940428"
 ---
-# <a name="close-or-delete-an-advanced-ediscovery-case"></a>Zamykanie lub usuwanie Advanced eDiscovery przypadku
+# <a name="close-or-delete-an-ediscovery-premium-case"></a>Zamykanie lub usuwanie sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 
-Po zakończeniu postępowania sądowego lub dochodzenia obsługiwanego przez Advanced eDiscovery postępowaniu sądowego można zamknąć lub usunąć sprawę. Możesz także ponownie otworzyć zamkniętą sprawę.
+Gdy sprawa prawna lub dochodzenie obsługiwane przez sprawę zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) zostaną zakończone, możesz zamknąć lub usunąć sprawę. Możesz również ponownie otworzyć zamkniętą sprawę.
 
 ## <a name="close-a-case"></a>Zamykanie sprawy
 
-Oto co się dzieje po zamknięciu sprawy Advanced eDiscovery przypadku:
+Oto, co się stanie po zamknięciu sprawy zbierania elektronicznych materiałów dowodowych (Premium):
 
-- Jeśli sprawa zawiera jakiekolwiek lokalizacje zawartości w wstrzymaniu, blokady te zostaną wyłączone. Po zakończeniu stosowania blokowania do lokalizacji zawartości, które były wstrzymywane, jest stosowany 30-dniowy okres prolongaty (nazywany opóźnieniem). Pomaga to zapobiec natychmiastowemu usunięciu zawartości i daje administratorom możliwość wyszukania lub odzyskania zawartości, która zostanie trwale usunięta po wygaśnięciu okresu opóźnienia. Aby uzyskać więcej informacji, [zobacz Usuwanie lokalizacji zawartości z zawieszonego zbierania elektronicznych materiałów dowodowych](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
+- Jeśli przypadek zawiera jakiekolwiek lokalizacje zawartości wstrzymane, te blokady zostaną wyłączone. Po wyłączeniu blokady 30-dniowy okres prolongaty (nazywany *blokadą opóźnienia*) jest stosowany do lokalizacji zawartości, które zostały wstrzymane. Zapobiega to natychmiastowemu usuwaniu zawartości i daje administratorom możliwość wyszukiwania lub odzyskiwania zawartości, która zostanie trwale usunięta po upływie okresu wstrzymania opóźnienia. Aby uzyskać więcej informacji, zobacz [Usuwanie lokalizacji zawartości z blokady zbierania elektronicznych materiałów dowodowych](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
-- Zamknięcie sprawy powoduje tylko wyłączenie zarchiwów, które są skojarzone z tą sprawą. Jeśli w lokalizacji zawartości znajdują się inne blokady (na przykład w związku z postępowaniem sądowym, podstawowe zbierania elektronicznych materiałów dowodowych lub blokady z innego Advanced eDiscovery przypadku), te blokady nadal będą zachowywane.
+- Zamknięcie sprawy powoduje wyłączenie tylko blokad skojarzonych z tą sprawą. Jeśli inne blokady znajdują się w lokalizacji zawartości (takiej jak blokada postępowania sądowego, blokada zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) lub blokada z innego przypadku zbierania elektronicznych materiałów dowodowych (Premium), te blokady będą nadal utrzymywane.
 
-- Sprawa nadal znajduje się na stronie zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Szczegóły, blokady, wyszukiwania i członkowie zamkniętej sprawy zostaną zachowane.
+- Sprawa jest nadal wyświetlana na stronie zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview. Szczegóły, blokady, wyszukiwania i członkowie zamkniętej sprawy są zachowywane.
 
-- Możesz edytować sprawę po jej zamknięciu. Na przykład możesz dodawać lub usuwać członków, tworzyć wyszukiwania, eksportować wyniki wyszukiwania i przygotowywać wyniki wyszukiwania do analizy w programie Advanced eDiscovery. Podstawową różnicą między sprawami aktywnymi i zamkniętymi jest wyłączenie blokady w przypadku zamknięcia sprawy.
+- Sprawę można edytować po jej zamknięciu. Możesz na przykład dodawać lub usuwać członków, tworzyć wyszukiwania, eksportować wyniki wyszukiwania i przygotowywać wyniki wyszukiwania do analizy w środowisku zbierania elektronicznych materiałów dowodowych (Premium). Podstawowa różnica między aktywnymi i zamkniętymi sprawami polega na tym, że blokady są wyłączone po zamknięciu sprawy.
 
-Aby zamknąć sprawę:
+Aby zamknąć przypadek:
 
-1. Na **Advanced eDiscovery** głównej wybierz sprawę, którą chcesz zamknąć.
+1. Na stronie **eDiscovery (Premium)** wybierz przypadek, który chcesz zamknąć.
 
 2. Na karcie **Ustawienia** w obszarze **Informacje o przypadku** kliknij pozycję **Wybierz**.
 
-   ![Uzyskiwanie dostępu do wysuwanych stron informacji o przypadku Advanced eDiscovery przypadku.](..\media\AeDSelectCaseInformation.png) 
+   ![Uzyskaj dostęp do strony wysuwanej informacji o przypadku w przypadku zbierania elektronicznych materiałów dowodowych (Premium).](..\media\AeDSelectCaseInformation.png) 
 
-3. U dołu strony **wysuwu informacje o przypadku** **kliknij pozycję Akcje**, a następnie kliknij **pozycję Zamknij sprawę**.
+3. W dolnej części strony wysuwanej **Informacje o przypadku** kliknij pozycję **Akcje**, a następnie kliknij pozycję **Zamknij przypadek**.
 
    Ukończenie procesu zamykania może potrwać do 60 minut.
 
 ## <a name="reopen-a-closed-case"></a>Ponowne otwieranie zamkniętej sprawy
 
-Po ponownym otwarciu sprawy Advanced eDiscovery, wszelkie blokady, które miały miejsce w chwili zamknięcia sprawy, nie zostaną automatycznie przywrócone. Po ponownym otwarciu sprawy musisz przejść do karty Z blokady i włączyć poprzednie  blokady. Aby włączyć wstrzymaj, wybierz ją, aby wyświetlić stronę wysuwaną, a następnie ustaw przełącznik **Status** na **Wł**.
+Po ponownym otwarciu sprawy zbierania elektronicznych materiałów dowodowych (Premium) wszelkie blokady, które istniały po zamknięciu sprawy, nie zostaną automatycznie przywrócone. Po ponownym otwarciu sprawy musisz przejść do karty **Blokady** i włączyć poprzednie blokady. Aby włączyć blokadę, wybierz ją, aby wyświetlić stronę wysuwaną, a następnie ustaw przełącznik **Stan** na **wartość Włączone**.
 
 Aby ponownie otworzyć zamkniętą sprawę:
 
-1. Na **Advanced eDiscovery wybierz** sprawę, którą chcesz otworzyć ponownie.
+1. Na stronie **eDiscovery (Premium)** wybierz przypadek, który chcesz ponownie otworzyć.
 
 2. Na karcie **Ustawienia** w obszarze **Informacje o przypadku** kliknij pozycję **Wybierz**.
 
-3. U dołu strony **wysuwu informacje o sprawie** **kliknij pozycję Akcje**, a następnie kliknij pozycję **Otwórz ponownie sprawę**.
+3. W dolnej części strony wysuwanej **Informacje o przypadku** kliknij pozycję **Akcje**, a następnie kliknij pozycję **Otwórz ponownie przypadek**.
 
-   Ponowne otwarcie może potrwać do 60 minut.
+   Ukończenie procesu ponownego otwierania może potrwać do 60 minut.
 
 ## <a name="delete-a-case"></a>Usuwanie sprawy
 
-Możesz usunąć zarówno aktywne, jak i zamknięte Advanced eDiscovery przypadku. Usunięcie sprawy powoduje usunięcie wszystkich składników skojarzonych ze sprawą, takich jak lista elementów składowych, korespondencja, wyszukiwania, zestawy recenzji i zadanie eksportu. Sprawa zostanie usunięta z listy spraw **na stronie Advanced eDiscovery** w Centrum zgodności platformy Microsoft 365. Usuniętej sprawy nie można odzyskać ani ponownie otworzyć.
+Możesz usunąć zarówno aktywne, jak i zamknięte przypadki zbierania elektronicznych materiałów dowodowych (Premium). Po usunięciu sprawy wszystkie składniki skojarzone ze sprawą, takie jak lista opiekunów, komunikacja, wyszukiwania, zestawy przeglądów i zadanie eksportu, zostaną usunięte. Sprawa jest usuwana z listy przypadków na stronie **zbierania elektronicznych materiałów dowodowych (Premium)** w portalu zgodności usługi Microsoft Purview. Nie można odzyskać ani ponownie otworzyć usuniętego przypadku.
 
 > [!NOTE]
-> W scenariuszach z rozlaniem danych jedynym sposobem na usunięcie elementów w zestawie recenzji jest usunięcie Advanced eDiscovery przypadku. Inne metody wyszukiwania i przeczyszczania nie usuwają elementów z zestawu recenzji.
+> W scenariuszach rozlania danych jedynym sposobem usunięcia elementów w zestawie przeglądów jest usunięcie przypadku zbierania elektronicznych materiałów dowodowych (Premium). Inne metody "wyszukiwania i przeczyszczania" nie usuwają elementów z zestawu przeglądów.
 
-Przed usunięciem sprawy (aktywnej lub zamkniętej) należy najpierw usunąć wszystkie blokady skojarzone ze sprawą. Obejmuje to usuwanie blokady ze stanem **Wyłączone**.
+Przed usunięciem sprawy (niezależnie od tego, czy jest ona aktywna, czy zamknięta) należy najpierw usunąć *wszystkie* blokady skojarzone ze sprawą. Obejmuje to usuwanie blokad ze stanem **Wyłączone**.
 
 Aby usunąć blokady skojarzone ze sprawą:
 
-1. Przejdź na **kartę Odchyłki** w Advanced eDiscovery przypadku, który chcesz usunąć.
+1. Przejdź do karty **Blokady** w przypadku zbierania elektronicznych materiałów dowodowych (Premium), które chcesz usunąć.
 
-2. Kliknij wstrzymaj, który chcesz usunąć.
+2. Kliknij blokadę, którą chcesz usunąć.
 
-3. Na wysuwanych stronie kliknij pozycję **Usuń przytrzymaj**.
+3. Na stronie wysuwanej kliknij pozycję **Usuń blokadę**.
 
-Aby usunąć sprawę:
+Aby usunąć przypadek:
 
-1. Na **Advanced eDiscovery** głównej zaznacz sprawę, którą chcesz usunąć.
+1. Na stronie **eDiscovery (Premium)** wybierz przypadek, który chcesz usunąć.
 
 2. Na karcie **Ustawienia** w obszarze **Informacje o przypadku** kliknij pozycję **Wybierz**.
 
-3. U dołu strony **wysuwu informacji o sprawie** **kliknij pozycję Akcje**, a następnie kliknij pozycję **Usuń sprawę**.
+3. W dolnej części strony wysuwanej **Informacje o przypadku** kliknij pozycję **Akcje**, a następnie kliknij pozycję **Usuń przypadek**.
 

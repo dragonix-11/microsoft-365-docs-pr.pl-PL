@@ -1,5 +1,5 @@
 ---
-title: Struktura zarządzania współpracą dla Microsoft 365
+title: Struktura ładu współpracy dla Microsoft 365
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -16,239 +16,239 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Poznaj najlepsze rozwiązania dotyczące zarządzania Microsoft 365 narzędzi do współpracy, w tym grup Microsoft 365, grup Teams, SharePoint i Yammer.
-ms.openlocfilehash: 62030dcb9b89105f87a0cf50f1b950b816727015
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+description: Poznaj najlepsze rozwiązania dotyczące ładu dla narzędzi do współpracy Microsoft 365, w tym Grupy Microsoft 365, Teams, SharePoint i Yammer.
+ms.openlocfilehash: 130342725e8c43b4aeaac116b94704db3046e059
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63005214"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941396"
 ---
 # <a name="what-is-collaboration-governance"></a>Co to jest zarządzanie współpracą?
 
-Zarządzanie współpracą to sposób zarządzania dostępem użytkowników do zasobów, zgodności ze standardami biznesowymi oraz zapewnienia bezpieczeństwa danych.
+Ład współpracy to sposób zarządzania dostępem użytkowników do zasobów, zgodnością ze standardami biznesowymi i zapewnieniem bezpieczeństwa danych.
 
-Obecnie organizacje korzystające ze zróżnicowanego zestawu narzędzi. Zespół deweloperów korzystających z czatu zespołowego,  kierownictwo wysyłających wiadomości e-mail i cała organizacja łączy się za pośrednictwem sieci społecznościowej w przedsiębiorstwie. Wiele narzędzi do współpracy jest dostępnych, ponieważ każda grupa jest unikatowa i ma własne potrzeby funkcjonalne oraz styl pracy. Niektóre będą używać tylko poczty e-mail, a inne będą przede wszystkim korzystać z czatu. 
+Obecnie organizacje korzystają z zróżnicowanego zestawu narzędzi. Istnieje zespół deweloperów korzystających z czatu zespołowego, kierownictwo wysyłające wiadomości e-mail i cała organizacja łącząca się za pośrednictwem społeczności przedsiębiorstwa. Wiele narzędzi do współpracy jest używanych, ponieważ każda grupa jest unikatowa i ma własne potrzeby funkcjonalne i styl pracy. Niektórzy będą używać tylko poczty e-mail, podczas gdy inni będą żyć głównie na czacie. 
 
-Jeśli użytkownicy będą uważać, że narzędzia dostarczone przez it nie są odpowiednie, prawdopodobnie pobierzą ulubione aplikacje dla klientów indywidualnych, które obsługują scenariusze. Ten proces pozwala użytkownikom na szybkie rozpoczynanie pracy, ale prowadzi do frustrowania użytkowników w całej organizacji z wieloma logowaniami, trudnościami z udostępnianiem i wyświetlaniem zawartości w jednym miejscu. To pojęcie jest nazywane "cieniem IT" i stanowi istotne ryzyko dla organizacji. Ogranicza ono możliwość jednolitego zarządzania dostępem użytkowników, zapewnienia zabezpieczeń i zgodności usług.
+Jeśli użytkownicy uważają, że narzędzia informatyczne nie odpowiadają ich potrzebom, prawdopodobnie pobierzą swoją ulubioną aplikację dla konsumentów, która obsługuje ich scenariusze. Chociaż ten proces umożliwia użytkownikom szybkie rozpoczęcie pracy, prowadzi do frustrującej pracy użytkownika w całej organizacji z wieloma identyfikatorami logowania, trudnościami w udostępnianiu i brakiem jednego miejsca do wyświetlania zawartości. Ta koncepcja jest określana jako "Shadow IT" i stanowi znaczące zagrożenie dla organizacji. Zmniejsza to możliwość jednolitego zarządzania dostępem użytkowników, zapewniania bezpieczeństwa i zgodności usług.
 
-Usługi takie jak Microsoft 365, Teams i Yammer, zapewniają użytkownikom większe ryzyko cienia, udostępniając narzędzia potrzebne do współpracy. Microsoft 365 rozbudowany zestaw narzędzi do wdrażania wszelkich funkcji zarządzania wymaganych przez organizację. 
+Usługi, takie jak grupy Microsoft 365, Teams i Yammer wzmacniają możliwości użytkowników i zmniejszają ryzyko tworzenia w tle zasobów informatycznych, udostępniając narzędzia potrzebne do współpracy. Microsoft 365 ma bogaty zestaw narzędzi do implementowania wszelkich funkcji ładu, których organizacja może wymagać. 
 
-![Wykres przedstawiający opcje zarządzania współpracą w programie Microsoft 365.](../media/collaboration-governance-overview.png)
+![Wykres przedstawiający opcje ładu współpracy w Microsoft 365.](../media/collaboration-governance-overview.png)
 
-W tej serii artykułów opisano interakcje grup, zespołów i SharePoint, dostępne funkcje zarządzania oraz sposób tworzenia i wdrażania struktury zarządzania funkcjami współpracy w ramach Microsoft 365.
+Ta seria artykułów pomoże Ci zrozumieć, w jaki sposób grupy, zespoły i ustawienia SharePoint współdziałają, jakie możliwości ładu są dostępne, oraz jak utworzyć i zaimplementować strukturę ładu dla funkcji współpracy w Microsoft 365.
 
-### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>Konfigurowanie bezpiecznej współpracy za pomocą Microsoft 365
+### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>Konfigurowanie bezpiecznej współpracy z Microsoft 365
 
-Dostępnych jest wiele opcji wdrażania grup Microsoft 365 i Teams w celu zapewnienia bezpiecznej współpracy w organizacji. Zalecamy używanie tej zawartości związanej z zarządzaniem [](setup-secure-collaboration-with-teams.md) oraz konfigurowanie bezpiecznego udostępniania plików i współpracy z innymi Microsoft Teams i skojarzonymi z nimi artykułami w celu utworzenia najlepszego rozwiązania do współpracy dla organizacji.
+Istnieje wiele opcji wdrażania Grupy Microsoft 365 i Teams na potrzeby bezpiecznej współpracy w organizacji. Zalecamy używanie tej zawartości ładu wraz z [konfigurowaniem bezpiecznego udostępniania plików i współpracy z Microsoft Teams](setup-secure-collaboration-with-teams.md) i skojarzonymi z nimi artykułami w celu utworzenia najlepszego rozwiązania do współpracy dla organizacji.
 
-### <a name="data-residency-governance"></a>Zarządzanie przechowywania danych
+### <a name="data-residency-governance"></a>Ład dotyczący rezydencji danych
 
-Jeśli Twoja organizacja jest wielonarodowa i masz wymagania dotyczące przechowywania danych dla różnych lokalizacji geograficznych, uwzględnij Microsoft 365 [Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) w ramach planu zarządzania współpracą.
+Jeśli Twoja organizacja jest wielonarodowa i masz wymagania dotyczące przechowywania danych dla różnych lokalizacji geograficznych, uwzględnij [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) w ramach planu ładu współpracy.
 
-## <a name="why-microsoft-365-groups-are-important-in-collaboration-governance"></a>Dlaczego Microsoft 365 grupy są ważne w zarządzaniu współpracą
+## <a name="why-microsoft-365-groups-are-important-in-collaboration-governance"></a>Dlaczego grupy Microsoft 365 są ważne w zakresie zarządzania współpracą
 
-Microsoft 365 grupy pozwalają wybrać zestaw osób, z którymi chcesz współpracować, i łatwo skonfigurować kolekcję zasobów dostępnych dla tych osób do udostępnienia. Dodanie członków do grupy automatycznie udziela wymaganych uprawnień do wszystkich zasobów zapewnianych przez grupę. Zarówno Teams, jak i Yammer zarządzają członkostwem Microsoft 365 grup.
+Microsoft 365 grup pozwala wybrać zestaw osób, którym chcesz współpracować, i łatwo skonfigurować kolekcję zasobów do udostępnienia tym osobom. Dodanie członków do grupy automatycznie przyznaje wymagane uprawnienia do wszystkich zasobów dostarczonych przez grupę. Zarówno Teams, jak i Yammer używają grup Microsoft 365 do zarządzania członkostwem.
 
-Microsoft 365 grupy zawierają pakiet połączonych zasobów, których użytkownicy mogą używać do komunikacji i współpracy. Grupy zawsze zawierają witrynę SharePoint, program Planner, obszar Power BI, skrzynkę pocztową i kalendarz oraz witrynę Stream. W zależności od sposobu utworzenia grupy możesz opcjonalnie dodać inne usługi, takie jak Teams, Yammer i Project.
+Microsoft 365 grupy obejmują zestaw połączonych zasobów, których użytkownicy mogą używać do komunikacji i współpracy. Grupy zawsze obejmują witrynę SharePoint, planistę, obszar roboczy Power BI, skrzynkę pocztową i kalendarz oraz usługę Stream. W zależności od sposobu tworzenia grupy możesz opcjonalnie dodać inne usługi, takie jak Teams, Yammer i Project.
 
-![Diagram przedstawiający Microsoft 365 grup i powiązanych usług.](../media/microsoft-365-groups-hub-spoke.png)
+![Diagram przedstawiający Grupy Microsoft 365 i powiązane usługi.](../media/microsoft-365-groups-hub-spoke.png)
 
 |Zasób|Opis|
 |:------|:----------|
-|[Kalendarz](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|Na temat planowania wydarzeń związanych z grupą.|
-|[Skrzynka odbiorcza](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|W przypadku konwersacji e-mail między członkami grupy. Ta skrzynka odbiorcza ma adres e-mail i można ją skonfigurować tak, aby akceptowała wiadomości od osób spoza grupy, a nawet spoza organizacji, podobnie jak tradycyjna lista dystrybucyjna.|
-|[Notes programu OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Do gromadzenia pomysłów, badań i informacji|
-|[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Na temat przypisywania zadań projektu do członków grupy i zarządzania nimi|
-|[Power BI workspace](/power-bi/collaborate-share/service-new-workspaces)|Obszar współpracy nad danymi z pulpitami nawigacyjnymi i raportami|
-|[Project i przewodnik](https://support.microsoft.com/project)|Narzędzia do zarządzania projektami oparte na sieci Web|
-|[SharePoint witryny zespołu](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|Centralne repozytorium informacji, linków i zawartości związanej z grupą.|
-|[Stream](https://support.microsoft.com/microsoft-stream)|Usługa strumieniowego przesyłania wideo|
+|[Kalendarz](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|Planowanie zdarzeń związanych z grupą|
+|[Skrzynki odbiorczej](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|W przypadku konwersacji e-mail między członkami grupy. Ta skrzynka odbiorcza ma adres e-mail i można ją ustawić tak, aby akceptowała wiadomości od osób spoza grupy, a nawet spoza organizacji, podobnie jak tradycyjna lista dystrybucyjna.|
+|[Notes programu OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Do zbierania pomysłów, badań i informacji|
+|[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Przypisywanie zadań projektu i zarządzanie nimi między członkami grupy|
+|[Power BI obszar roboczy](/power-bi/collaborate-share/service-new-workspaces)|Przestrzeń współpracy danych z pulpitami nawigacyjnymi i raportami|
+|[Project i plan działania](https://support.microsoft.com/project)|Narzędzia do zarządzania projektami opartymi na sieci Web|
+|[witryna zespołu SharePoint](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|Centralne repozytorium informacji, linków i zawartości związanych z twoją grupą|
+|[Stream](https://support.microsoft.com/microsoft-stream)|Usługa przesyłania strumieniowego wideo|
 |[Teams](https://support.microsoft.com/teams)|Obszar roboczy oparty na czacie w Microsoft 365|
-|[Yammer grupy](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|Wspólne miejsce do konwersacji i udostępniania informacji|
+|[grupa Yammer](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|Wspólne miejsce do konwersacji i udostępniania informacji|
 
-Microsoft 365 grupy obejmują różne mechanizmy kontroli zarządzania, w tym zasady wygasania, konwencje nazewnictwa i zasady dotyczące blokowanych wyrazów, które ułatwiają zarządzanie grupami w organizacji. Grupy kontrolują członkostwo i dostęp do tego pakietu zasobów, dlatego zarządzanie grupami jest kluczowym elementem współpracy w Microsoft 365.
+Grupy Microsoft 365 obejmuje różne mechanizmy kontroli ładu, w tym zasady wygasania, konwencje nazewnictwa i zasady zablokowanych słów, które ułatwiają zarządzanie grupami w organizacji. Ponieważ grupy kontrolują członkostwo i dostęp do tego zestawu zasobów, zarządzanie grupami jest kluczowym elementem zarządzania współpracą w Microsoft 365.
 
-## <a name="define-collaboration-governance-best-practices-for-your-organization"></a>Definiowanie najlepszych rozwiązań w zakresie zarządzania współpracą dla organizacji
+## <a name="define-collaboration-governance-best-practices-for-your-organization"></a>Definiowanie najlepszych rozwiązań dotyczących ładu współpracy dla organizacji
 
-Istnieje wiele miejsc do współpracy i konwersacji w Microsoft 365. Zrozumienie, gdzie użytkownicy mogą rozpoczynać konwersacje, może ułatwić zdefiniowanie strategii komunikacji.
+Istnieje wiele miejsc do współpracy i konwersacji w Microsoft 365. Zrozumienie, gdzie użytkownicy mogą rozpoczynać konwersacje, może pomóc w zdefiniowaniu strategii komunikacji.
 
 Istnieją trzy główne metody komunikacji obsługiwane przez Microsoft 365:
 
-- Outlook: współpraca za pośrednictwem poczty e-mail za pomocą udostępnionej skrzynki odbiorczej grupy i kalendarza
-- Microsoft Teams: oparty na trwałych rozmowach obszar roboczy, w którym można prowadzi nieformalne konwersacje w czasie rzeczywistym związane z różnymi tematami uporządkowane według określonych podgrup
-- Yammer: funkcje społecznościowe w przedsiębiorstwie do współpracy
+- Outlook: współpraca za pośrednictwem poczty e-mail z udostępnioną skrzynką odbiorczą grupy i kalendarzem
+- Microsoft Teams: obszar roboczy oparty na czatach trwałych, w którym można prowadzić nieformalne, w czasie rzeczywistym konwersacje dotyczące różnych tematów organizowanych przez określone grupy podrzędne
+- Yammer: środowisko społecznościowe przedsiębiorstwa na potrzeby współpracy
 
 ![Diagram przedstawiający, kiedy używać Teams, Yammer i Outlook.](../media/inner-loop-outer-loop.png)
 
-- Teams: oparty na czacie obszar roboczy (wysoka prędkość współpracy) — pętla wewnętrzna
-  - Stworzony do współpracy z osobami, z których użytkownicy pracują na co dzień
-  - Umieszcza informacje w zasięgu ręki użytkowników w jednym miejscu
+- Teams: obszar roboczy oparty na czatach (współpraca z dużą szybkością) — pętla wewnętrzna
+  - Stworzona na potrzeby współpracy z osobami, z którymi użytkownicy pracują na co dzień
+  - Umieszcza informacje w zasięgu ręki użytkowników w jednym środowisku
   - Dodawanie kart, łączników i botów
-  - Czat na żywo, konferencje audio/wideo, nagrywane spotkania
+  - Czat na żywo, konferencje audio/wideo, nagrane spotkania
 
-- Yammer: łączenie się w organizacji (sieć społecznościowa przedsiębiorstwa) — pętla zewnętrzna
-  - Społeczności praktyczne — grupy osób o wspólnych funkcjach, które mają wspólne zainteresowania lub wiedzę, ale niekoniecznie współpracują z nimi w codziennie
-  - Połączenie kierownictwa, społeczności edukacyjne, społeczności oparte na rolach
+- Yammer: nawiązywanie połączenia między organizacją (enterprise social) — pętla zewnętrzna
+  - Społeczności praktyk — grupy funkcjonalne osób, które podzielają wspólny interes lub wiedzę, ale niekoniecznie współpracują ze sobą na co dzień
+  - Połączenie przywództwa, społeczności edukacyjne, społeczności oparte na rolach
 
 - Skrzynka pocztowa i kalendarz (współpraca oparta na wiadomościach e-mail)
-  - Służy do komunikacji kierowanej z grupą osób
-  - Kalendarz udostępniony dla spotkań z innymi członkami grupy
+  - Służy do ukierunkowanej komunikacji z grupą osób
+  - Kalendarz udostępniony na spotkania z innymi członkami grupy
  
-Podczas określania sposobu używania funkcji współpracy w programie Microsoft 365 należy rozważyć te metody komunikacji i ich użytkowników w różnych scenariuszach.
+Podczas określania sposobu używania funkcji współpracy w Microsoft 365 należy wziąć pod uwagę te metody komunikacji i które użytkownicy mogą używać w różnych scenariuszach.
 
 > [!NOTE]
-> Po utworzeniu nowej grupy usługi Office 365 za pośrednictwem systemu Yammer lub Teams grupa nie jest widoczna w programie Outlook ani w książce adresowej, ponieważ podstawowa komunikacja między tymi użytkownikami odbywa się w ich klientach. Yammer nie można połączyć grup z Teams.
+> Po utworzeniu nowej grupy Office 365 za pośrednictwem Yammer lub Teams grupa nie jest widoczna w Outlook ani w książce adresowej, ponieważ podstawowa komunikacja między tymi użytkownikami odbywa się u ich odpowiednich klientów. Yammer grup nie można połączyć z Teams.
 
-## <a name="collaboration-governance-best-practices-checklist"></a>Lista kontrolna najlepszych rozwiązań dotyczących zarządzania współpracą
+## <a name="collaboration-governance-best-practices-checklist"></a>Lista kontrolna najlepszych rozwiązań dotyczących ładu w zakresie współpracy
 
-Podczas rozpoczynania procesu planowania zarządzania należy pamiętać o tych najlepszych rozwiązaniach:
+Podczas rozpoczynania procesu planowania ładu należy pamiętać o następujących najlepszych rozwiązaniach:
 
-- **Porozmawiaj z użytkownikami —** zidentyfikuj największych użytkowników funkcji współpracy i spotkaj się z nimi, aby zrozumieć ich podstawowe wymagania biznesowe i skorzystać ze scenariuszy przypadków.
+- **Porozmawiaj ze swoimi użytkownikami** — zidentyfikuj swoich największych użytkowników funkcji współpracy i spotkaj się z nimi, aby zrozumieć ich podstawowe wymagania biznesowe i scenariusze przypadków użycia.
 
-- **Równoważenie ryzyka i korzyści** — przegląd potrzeb biznesowych, prawnych i związanych ze zgodnością oraz planowanie rozwiązania zoptymalizowanego pod kątem wszystkich wyników.
+- **Równoważenie ryzyka i korzyści** — przejrzyj potrzeby biznesowe, prawne, prawne i zgodności oraz zaplanuj rozwiązanie, które optymalizuje pod kątem wszystkich wyników.
 
-- **Dostosowywanie się** do różnych organizacji i różnych typów zawartości i scenariuszy — rozważ różne potrzeby różnych grup lub działów oraz różne typy zawartości, na przykład zawartości intranetowej, a zawartości OneDrive zawartości użytkownika.
+- **Dostosuj się do różnych organizacji i różnych typów zawartości i scenariuszy** — weź pod uwagę różne potrzeby różnych grup lub działów oraz różne typy zawartości, takie jak zawartość intranetowa, a nie zawartość OneDrive użytkownika.
 
-- **Dostosowanie do priorytetów biznesowych** — cele biznesowe pomogą w zdefiniowaniu czasu i energii potrzebnej do inwestycji w zarządzanie.
+- **Dopasowanie do priorytetów biznesowych** — cele biznesowe pomogą Ci określić, ile czasu i energii potrzebujesz do inwestowania w ład.
 
-- **Osadź decyzje dotyczące** zarządzania bezpośrednio w tworzyć rozwiązania — wiele decyzji dotyczących zarządzania można zaimplementować, włączając lub wyłączając funkcje w Microsoft 365.
+- **Osadzanie decyzji dotyczących ładu bezpośrednio w utworzonych rozwiązaniach** — wiele decyzji dotyczących ładu można zaimplementować, włączając lub wyłączając funkcje w Microsoft 365.
 
 
-- **Podejście etapowe —** najpierw wdaj funkcje współpracy w małej grupie użytkowników. Uzyskaj od nich opinie, obserwuj bilety pomocy technicznej i zaktualizuj wszelkie wymagane ustawienia lub procesy przed przystąpieniem do większej grupy.
+- **Użyj podejścia etapowego** — najpierw wprowadź funkcje współpracy dla niewielkiej grupy użytkowników. Uzyskaj od nich opinię, obejrzyj bilety pomocy technicznej i zaktualizuj wszelkie wymagane ustawienia lub procesy przed przejściem do większej grupy.
 
-- **Utrwalanie przy użyciu szkoleń** — dostosowuj rozwiązania Microsoft 365 takie jak ścieżki edukacyjne, aby zagwarantować, że oczekiwania twojej organizacji będą nasycać szkoleniami dostarczonymi przez firmę Microsoft.[](/office365/customlearning)
+- **Wzmacnianie dzięki szkoleniu** — dostosuj rozwiązania, takie jak [Microsoft 365 ścieżki szkoleniowe](/office365/customlearning), aby zapewnić, że oczekiwania specyficzne dla organizacji zostaną wzmocnione dzięki szkoleniom zapewnianym przez firmę Microsoft.
 
-- **Utworzenie strategii komunikacji dotyczącej** zasad i wskazówek dotyczących zarządzania w organizacji — utworzenie centrum Microsoft 365 przyjęcia w witrynie SharePoint do przekazywania zasad i procedur.
+- **Masz strategię przekazywania zasad i wytycznych dotyczących ładu w organizacji** — utwórz centrum wdrażania Microsoft 365 w witrynie komunikacji SharePoint, aby komunikować się z zasadami i procedurami.
 
-- **Definiowanie ról i** obowiązków — identyfikowanie podstawowego zespołu zarządzania i praca nad kluczowymi decyzjami dotyczącymi zarządzania w zakresie inicjowania obsługi administracyjnej, nazewnictwa i dostępu zewnętrznego, a następnie pracowanie nad pozostałymi decyzjami.
+- **Definiowanie ról i obowiązków** — najpierw zidentyfikuj swój podstawowy zespół ds. ładu i pracuj nad kluczowymi decyzjami dotyczącymi ładu dotyczącymi aprowizacji i nazewnictwa oraz dostępu zewnętrznego, a następnie pracuj nad pozostałymi decyzjami.
 
-- **Ponownie oceniaj decyzje w przypadku** zmian biznesowych i technologii — okresowo przeprowadzaj spotkania, aby przeglądać nowe funkcje i nowe oczekiwania biznesowe.
+- **Ponawiaj decyzje w miarę zmian biznesowych i technologicznych** — okresowo wywiązywać się z nowych możliwości i nowych oczekiwań biznesowych.
 
-Aby dokładniej przyjrzeć się tym praktykom, zobacz [Tworzenie planu zarządzania współpracą](collaboration-governance-first.md).
+Aby bliżej przyjrzeć się tym praktykom, przeczytaj [Tworzenie planu ładu współpracy](collaboration-governance-first.md).
 
-## <a name="end-user-impact-and-change-management"></a>Wpływ na użytkowników końcowych i zarządzanie zmianami
+## <a name="end-user-impact-and-change-management"></a>Zarządzanie wpływem i zmianami użytkowników końcowych
 
-Ponieważ grupy i zespoły można tworzyć na kilka sposobów, zalecamy szkolenie użytkowników w celu korzystania z metody najlepiej dopasowanej do potrzeb organizacji:
+Ponieważ grupy i zespoły można tworzyć na kilka sposobów, zalecamy szkolenie użytkowników w celu korzystania z metody, która najlepiej pasuje do Twojej organizacji:
 
-- Jeśli organizacja obsługuje większość komunikacji za pomocą poczty e-mail, poinstruuj użytkowników, aby tworzyli grupy w Outlook.
-- Jeśli Twoja organizacja intensywnie SharePoint lub migruje z usługi SharePoint lokalnego, poinstruuj użytkowników, aby tworzyli witryny SharePoint do współpracy.
-- Jeśli organizacja wdrożyła już Teams, poinstruuj użytkowników, aby utworzyli zespół, gdy będą potrzebli obszaru współpracy.
+- Jeśli twoja organizacja wykonuje większość komunikacji za pomocą poczty e-mail, poproś użytkowników o utworzenie grup w Outlook.
+- Jeśli Organizacja intensywnie korzysta z SharePoint lub migruje z SharePoint lokalnie, poproś użytkowników o utworzenie SharePoint witryn zespołowych na potrzeby współpracy.
+- Jeśli twoja organizacja wdrożyła Teams, poproś użytkowników, aby utworzyli zespół, gdy potrzebują miejsca do współpracy.
 
-Pomaga to uniknąć zamieszania, jeśli użytkownicy nie mają wątpliwości co do relacji grup z powiązanymi usługami. Aby uzyskać więcej informacji o tym, jak rozmawiać z użytkownikami o grupach, zobacz [Objaśnianie Microsoft 365 grup użytkownikom](../admin/create-groups/explain-groups-knowledge-worker.md).
+Pomaga to uniknąć nieporozumień, jeśli użytkownicy nie znają sposobu, w jaki grupy odnoszą się do powiązanych usług. Aby uzyskać więcej informacji na temat sposobu mówienia użytkownikom o grupach, zobacz [Objaśnienie Grupy Microsoft 365 dla użytkowników](../admin/create-groups/explain-groups-knowledge-worker.md).
 
-## <a name="key-collaboration-governance-capabilities-and-licensing-requirements"></a>Najważniejsze funkcje zarządzania współpracą i wymagania dotyczące licencjonowania
+## <a name="key-collaboration-governance-capabilities-and-licensing-requirements"></a>Kluczowe możliwości zarządzania współpracą i wymagania dotyczące licencjonowania
 
-Funkcje zarządzania dotyczące współpracy w Microsoft 365 obejmują funkcje Microsoft 365, Teams, SharePoint i Azure Active Directory.
+Funkcje ładu do współpracy w Microsoft 365 obejmują funkcje Microsoft 365, Teams, SharePoint i Azure Active Directory.
 
-| Funkcja lub funkcja | Opis | Licencjonowanie |
+| Możliwość lub funkcja | Opis | Licencjonowanie |
 |:----------------------|:------------|:----------|
-|Udostępnianie witryn i  zespołowi|Możesz kontrolować, czy zespoły, grupy i witryny mogą być udostępniane osobom spoza organizacji.|Microsoft 365 E5 lub E3|
-|Zezwalanie/blokowanie domeny|Ograniczanie udostępniania osobom spoza organizacji do osób z określonych domen.|Microsoft 365 E5 lub E3|
-|Samoobsługowe tworzenie witryn|Zezwalanie użytkownikom na tworzenie własnych witryn sieci SharePoint lub uniemożliwianie im tworzenia.|Microsoft 365 E5 lub E3|
-|Ograniczone udostępnianie plików i witryn|Ograniczanie udostępniania witryn, plików i folderów do członków określonej grupy zabezpieczeń.|Microsoft 365 E5 lub E3|
-|Ograniczone tworzenie grup|Ograniczanie możliwości tworzenia poszczególnych grupę zabezpieczeń do członków określonej grupy zabezpieczeń.|Microsoft 365 E5 lub E3 z licencjami Azure AD — wersja Premium usługi Azure AD Basic EDU|
-|Zasady nazewnictwa grup|Wymuszanie prefiksów lub sufiksów w nazwach grup i  zespołów.|Microsoft 365 E5 lub E3 z licencjami Azure AD — wersja Premium usługi Azure AD Basic EDU|
-|Zasady wygasania grupy|Ustaw nieaktywne grupy i zespoły tak, aby wygasały i usuwane po określonym czasie.|Microsoft 365 E5 lub E3 z Azure AD — wersja Premium licencji|
-|Dostęp gościa dla grupy|Zezwalaj na udostępnianie zespołowi i grupom osób spoza organizacji lub zapobiegaj ich udostępnianiu w zależności od grupy.|Microsoft 365 E5 lub E3|
+|Udostępnianie zespołu i witryny|Oceń, czy zespoły, grupy i witryny mogą być udostępniane osobom spoza organizacji.|Microsoft 365 E5 lub E3|
+|Zezwalaj/blokuj domenę|Ogranicz udostępnianie osobom spoza organizacji do osób z określonych domen.|Microsoft 365 E5 lub E3|
+|Samoobsługowe tworzenie witryny|Zezwalaj użytkownikom na tworzenie własnych witryn SharePoint lub uniemożliwiaj ich tworzenie.|Microsoft 365 E5 lub E3|
+|Ograniczone udostępnianie witryn i plików|Ogranicz udostępnianie witryn, plików i folderów do członków określonej grupy zabezpieczeń.|Microsoft 365 E5 lub E3|
+|Tworzenie grupy z ograniczeniami|Ogranicz tworzenie zespołu i grupy do członków określonej grupy zabezpieczeń.|Microsoft 365 E5 lub E3 z licencjami Azure AD — wersja Premium lub Azure AD Basic EDU|
+|Zasady nazewnictwa grup|Wymuszanie prefiksów lub sufiksów w nazwach grup i zespołów.|Microsoft 365 E5 lub E3 z licencjami Azure AD — wersja Premium lub Azure AD Basic EDU|
+|Zasady wygasania grupy|Ustaw nieaktywne grupy i zespoły, aby wygasły i zostały usunięte po określonym czasie.|Microsoft 365 E5 lub E3 z licencjami Azure AD — wersja Premium|
+|Dostęp gościa dla grupy|Zezwalaj na udostępnianie zespołów i grup osobom spoza organizacji lub zapobiegaj ich udostępnianiu w oparciu o grupę.|Microsoft 365 E5 lub E3|
 
 ## <a name="collaboration-governance-planning-recommendations"></a>Zalecenia dotyczące planowania zarządzania współpracą
 
-Wykonaj poniższe podstawowe czynności, aby utworzyć plan zarządzania:
+Wykonaj następujące podstawowe kroki, aby utworzyć plan utrzymania ładu:
 
-1. Przejmij pod uwagę kluczowe procesy i cele biznesowe [— utwórz plan zarządzania](collaboration-governance-first.md) spełniających potrzeby Twojej firmy.
-2. Opis ustawień w usługach — ustawień w grupach i [SharePoint](groups-sharepoint-governance.md) między sobą, jak również ustawień w grupach, grupach [SharePoint,](groups-sharepoint-teams-governance.md) grupach i Teams oraz innych [usługach](groups-services-interactions.md). Należy pamiętać o zrozumieniu tych interakcji podczas planowania strategii zarządzania.
-3. Planowanie zarządzania dostępem użytkowników — zaplanuj poziom dostępu, który chcesz przyznać użytkownikom w grupach, grupach[, SharePoint i Teams](groups-teams-access-governance.md).
-4. Planowanie zarządzania ustawieniami zgodności — przejrzyj dostępne opcje zgodności dla grup Microsoft 365[, Teams i SharePoint zgodności](groups-teams-compliance-governance.md).
-5. Planowanie zarządzania komunikacją — przegląd dostępnych opcji [zarządzania komunikacją w scenariuszach współpracy](groups-teams-communication-governance.md).
-6. Planowanie zarządzania organizacją i cyklem życia — wybieranie zasad, których chcesz używać do tworzenia grup i [zespołów, nazewnictwa, wygasania i archiwizowania](plan-organization-lifecycle-governance.md). Należy również poznać zakończenie [opcji cyklu życia grup, zespołów i Yammer](end-life-cycle-groups-teams-sites-yammer.md)
+1. Rozważ kluczowe cele biznesowe i procesy — [utwórz plan utrzymania ładu](collaboration-governance-first.md) , aby zaspokoić potrzeby twojej firmy.
+2. Informacje o ustawieniach usług — [ustawienia w grupach i SharePoint](groups-sharepoint-governance.md) współdziałają ze sobą, podobnie jak [ustawienia w grupach, SharePoint i Teams](groups-sharepoint-teams-governance.md) i [innych usługach](groups-services-interactions.md). Pamiętaj, aby zrozumieć te interakcje podczas planowania strategii ładu.
+3. Planowanie zarządzania dostępem użytkowników — [zaplanuj poziom dostępu, który chcesz przyznać użytkownikom w grupach, SharePoint i Teams](groups-teams-access-governance.md).
+4. Planowanie zarządzania ustawieniami zgodności — przejrzyj dostępne [opcje zgodności dla grup Microsoft 365, Teams i współpracy SharePoint](groups-teams-compliance-governance.md).
+5. Planowanie zarządzania komunikacją — zapoznaj się z [dostępnymi opcjami zarządzania komunikacją w scenariuszach współpracy](groups-teams-communication-governance.md).
+6. Planowanie ładu w organizacji i cyklu życia — wybierz [zasady, których chcesz użyć do tworzenia grup i zespołów, nazewnictwa, wygasania i archiwizacji](plan-organization-lifecycle-governance.md). Ponadto zapoznaj się [z opcjami zakończenia cyklu życia grup, zespołów i Yammer](end-life-cycle-groups-teams-sites-yammer.md)
 
-![Ilustracja zalecanych kroków zarządzania.](../media/collaboration-governance-steps.png)
+![Ilustracja zalecanych kroków nadzoru.](../media/collaboration-governance-steps.png)
 
-## <a name="training-for-administrators"></a>Szkolenia dla administratorów
+## <a name="training-for-administrators"></a>Szkolenie dla administratorów
 
-Te moduły szkoleniowe w witrynie Microsoft Learn mogą ułatwić naukę funkcji zarządzania w programie Microsoft 365.
+Te moduły szkoleniowe z usługi Microsoft Learn mogą pomóc w poznaniu funkcji ładu w Microsoft 365.
 
 #### <a name="information-protection"></a>Ochrona informacji
 
-|Szkolenie:|Zarządzanie ochroną i zarządzaniem informacjami|
+|Szkolenia:|Zarządzanie ochroną informacji i ładem|
 |:---|:---|
-|![Ikona szkolenia na temat ochrony informacji.](../media/information-protection-governance.svg)|Ilość generowanych obecnie danych rośnie szybciej niż kiedykolwiek wcześniej, pracownicy chcą pracować wszędzie, a przepisy stale się zmieniają. Rozwiązania firmy Microsoft na temat ochrony informacji i zarządzania pomagają organizacjom w zachowaniu odpowiedniej równowagi między ochroną danych a wydajnością pracowników. Ta ścieżka nauki może ułatwić Ci przygotowanie się do Microsoft 365 certyfikatu: skojarzeń administratora zabezpieczeń i Microsoft 365 certyfikowanych: Enterprise certyfikacji eksperta administracji.<br><br>5 godz. 13 min - ścieżka Edukacja - 7 modułów|
+|![Ikona trenowania ochrony informacji.](../media/information-protection-governance.svg)|Ilość generowanych obecnie danych rośnie szybciej niż kiedykolwiek wcześniej, pracownicy chcą pracować wszędzie, a otoczenie regulacyjne stale się zmienia. Rozwiązania firmy Microsoft do ochrony informacji i ładu pomagają organizacjom osiągnąć właściwą równowagę między ochroną danych a produktywnością pracowników. Ta ścieżka szkoleniowa może pomóc w przygotowaniu się do certyfikacji Microsoft 365 Certified: Security Administrator Associate i Microsoft 365 Certified: Enterprise Administration Expert.<br><br>5 godz. 13 min — ścieżka Edukacja — 7 modułów|
 
 > [!div class="nextstepaction"]
-> [Rozpoczynanie >](/learn/modules/m365-compliance-information-governance/introduction/)
+> [Rozpocznij >](/learn/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
-|Szkolenie:|Ochrona informacji przedsiębiorstwa za pomocą Microsoft 365|
+|Szkolenia:|Ochrona informacji o przedsiębiorstwie za pomocą Microsoft 365|
 |:---|:---|
-|![Teams szkoleniowej.](../media/protect-enterprise-information-microsoft-365.svg)|Ochrona i zabezpieczanie informacji organizacji jest trudnym zadaniem niż kiedykolwiek wcześniej. W ścieżce nauki Ochrona informacji przedsiębiorstwa za pomocą etykiet Microsoft 365 omówiono, jak chronić poufne informacje przed przypadkowym usunięciem lub błędem, odnajdować i klasyfikować dane, jak je chronić etykietami wrażliwości, jak monitorować i analizować informacje poufne, aby chronić je przed ich utratą. Ta ścieżka nauki może ułatwić Ci przygotowanie się do Microsoft 365 certyfikatu: skojarzeń administratora zabezpieczeń i Microsoft 365 certyfikowanych: Enterprise certyfikacji dla specjalistów administracji.<br><br>1 godz. — ścieżka Edukacja - 5 modułów|
+|![Teams ikona trenowania.](../media/protect-enterprise-information-microsoft-365.svg)|Ochrona i zabezpieczanie informacji organizacji jest trudniejsze niż kiedykolwiek wcześniej. W ścieżce szkoleniowej Ochrona informacji o przedsiębiorstwie za pomocą Microsoft 365 omówiono sposób ochrony poufnych informacji przed przypadkowym nadmiernym udostępnianiem lub niewłaściwym użyciem, sposobu odnajdywania i klasyfikowania danych, sposobu ich ochrony za pomocą etykiet poufności oraz sposobu monitorowania i analizowania poufnych informacji w celu ochrony przed ich utratą. Ta ścieżka szkoleniowa może pomóc w przygotowaniu się do certyfikacji Microsoft 365 Certified: Security Administrator Associate i Microsoft 365 Certified: Enterprise Administration Expert..<br><br>1 godz. ścieżka Edukacja — 5 modułów|
 
 > [!div class="nextstepaction"]
-> [Rozpoczynanie >](/learn/modules/m365-security-info-overview/introduction/)
+> [Rozpocznij >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>Zabezpieczenia i zgodność
 
-|Szkolenie:|Przedstawianie podstawowej wiedzy na Microsoft 365 funkcji zabezpieczeń i zgodności|
+|Szkolenia:|Prezentacja podstawowej wiedzy na temat Microsoft 365 możliwości zabezpieczeń i zgodności|
 |:---|:---|
-|![Ikona szkoleń dotyczących zabezpieczeń i zgodności.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Zapoznaj się z obszarami Microsoft 365 rozwiązaniami zabezpieczeń i zgodności oraz dostępnymi możliwościami, aby ułatwić przedsiębiorstwom zabezpieczenie przedsiębiorstwa i spełnienie wymagań prawnych. Jeśli nie wiesz, jaka jest Podstawowa koncepcja przetwarzania danych w chmurze, zalecamy korzystanie z pojęć chmury [— zasad związanych z przetwarzaniem danych w chmurze](/learn/modules/principles-cloud-computing/index).<br><br>3 godz. 11 min - ścieżka Edukacja - 8 modułów|
+|![Ikona trenowania zabezpieczeń i zgodności.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Dowiedz się więcej o obszarach rozwiązań w zakresie zabezpieczeń i zgodności Microsoft 365 oraz dostępnych możliwościach, które ułatwiają przedsiębiorstwom zabezpieczanie przedsiębiorstwa i spełnianie wymagań prawnych. Jeśli nie znasz podstawowych pojęć dotyczących przetwarzania w chmurze, zalecamy skorzystanie z [pojęć dotyczących chmury — zasad przetwarzania w chmurze](/learn/modules/principles-cloud-computing/index).<br><br>3 godz. 11 min — ścieżka Edukacja — 8 modułów|
 
 > [!div class="nextstepaction"]
-> [Rozpoczynanie >](/learn/modules/what-is-m365/1-introduction/)
+> [Rozpocznij >](/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>Ilustracje
 
-Ilustracje te pomogą Zrozumieć, jak grupy i zespoły współdziałają z innymi usługami firmy Microsoft 365 oraz jakie funkcje zarządzania i zgodności są dostępne, aby ułatwić zarządzanie tymi usługami w organizacji.
+Te ilustracje pomogą Ci zrozumieć, w jaki sposób grupy i zespoły współdziałają z innymi usługami w Microsoft 365 oraz jakie funkcje zapewniania ładu i zgodności ułatwiają zarządzanie tymi usługami w organizacji.
 
-### <a name="groups-in-microsoft-365-for-it-architects"></a>Grupy dla Microsoft 365 it
-Co indyjscy indyjscy muszą wiedzieć o grupach w Microsoft 365
-
-|**Element**|**Opis**|
-|:-----|:-----|
-|[![Obraz kciuka dla infografiki na temat grup.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Zaktualizowano w czerwcu 2019 r.|Na tych ilustracjach opisano różne typy grup, sposób ich tworzenia i zarządzania oraz kilka zaleceń dotyczących zarządzania.|
-
-### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams i pokrewne usługi zwiększające produktywność Microsoft 365 dla architektów IT
-Logiczna architektura usług biurowych w Microsoft 365, prowadząca z Microsoft Teams.
+### <a name="groups-in-microsoft-365-for-it-architects"></a>Grupy w Microsoft 365 dla architektów IT
+Co architekci IT muszą wiedzieć o grupach w Microsoft 365
 
 |**Element**|**Opis**|
 |:-----|:-----|
-|[![Obraz kciuka Teams plakatu architektury logicznej.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Zaktualizowano w kwietniu 2019 r.   |Firma Microsoft oferuje pakiet usług biurowych, które współpracują ze sobą, aby zapewnić środowisko współpracy z możliwościami zarządzania danymi, zabezpieczeniami i zgodnością. <br/> <br/>Ta seria ilustracji przedstawia logiczną architekturę usług biurowych dla architektów przedsiębiorstwa, prowadzącą do Microsoft Teams.|
+|[![Obraz kciuka dla infografiki grup.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Zaktualizowano czerwiec 2019 r.|Na tych ilustracjach przedstawiono różne typy grup, sposób ich tworzenia i zarządzania oraz kilka zaleceń dotyczących ładu.|
 
-### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 funkcji ochrony informacji i zgodności
+### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams i powiązanych usług produktywności w Microsoft 365 dla architektów IT
+Architektura logiczna usług produktywności w Microsoft 365, wiodąca z Microsoft Teams.
 
-Microsoft 365 obejmuje szeroki zestaw funkcji ochrony informacji i zgodności. Te funkcje, razem z narzędziami firmy Microsoft dotyczącymi produktywności, zostały zaprojektowane tak, aby ułatwić organizacjom współpracę w czasie rzeczywistym z zachowaniem rygorystycznych ram zgodności z przepisami. 
+|**Element**|**Opis**|
+|:-----|:-----|
+|[![Obraz kciuka dla Teams plakatu architektury logicznej.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Zaktualizowano kwiecień 2019 r.   |Firma Microsoft oferuje zestaw usług zwiększających produktywność, które współpracują ze sobą w celu zapewnienia współpracy z funkcjami zapewniania ładu, zabezpieczeń i zgodności danych. <br/> <br/>Ta seria ilustracji przedstawia logiczną architekturę usług produktywności dla architektów przedsiębiorstw, prowadzących z Microsoft Teams.|
 
-W tym zestawie ilustracji użyto jednego z najbardziej uregulowanych branż, usług finansowych, aby pokazać, w jaki sposób można zastosować te funkcje w celu rozwiązania typowych wymogów prawnych. Zachęcamy do dostosowywania tych ilustracji do własnego użytku. 
+### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 możliwości ochrony informacji i zgodności
+
+Microsoft 365 obejmuje szeroki zestaw funkcji ochrony informacji i zgodności. Wraz z narzędziami zwiększającymi produktywność firmy Microsoft te funkcje mają na celu ułatwienie organizacjom współpracy w czasie rzeczywistym przy jednoczesnym przestrzeganiu rygorystycznych ram zgodności z przepisami. 
+
+Ten zestaw ilustracji korzysta z jednej z najbardziej regulowanych branż, usług finansowych, aby zademonstrować, w jaki sposób te możliwości mogą być stosowane w celu spełnienia typowych wymagań prawnych. Możesz dostosować te ilustracje do własnych potrzeb. 
 
 
 | Element | Opis |
 |:-----|:-----|
-|[![Plakat modelu: Microsoft 365 funkcji ochrony informacji i zgodności.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Angielski: [Pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Pobierz jako plik Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japoński: [Pobierz jako plik PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [Pobierz jako plik Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano w listopadzie 2020 r.|Zawiera: <ul><li>  ochrona informacji firmy Microsoft i ochrona przed utratą danych</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność komunikacji</li><li>Ryzyko niejawnego programu testów</li><li>Ingestion danych innych firm</li>|
+|[![Plakat modelu: Funkcje ochrony informacji i zgodności w usłudze Microsoft Purview.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Angielski: [pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japoński: [pobierz jako plik PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano listopad 2020 r.|Zawiera: <ul><li>  Microsoft Purview Information Protection i Microsoft Purview — zapobieganie utracie danych</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność w komunikacji</li><li>Ryzyko związane z wewnętrznymi testerami</li><li>Pozyskiwanie danych innych firm</li>|
 
 ## <a name="conference-sessions"></a>Sesje konferencyjne
 
-Obejrzyj te sesje konferencyjne, aby dowiedzieć się więcej na temat zarządzania Microsoft 365 grupami i Teams.
+Obejrzyj te sesje konferencyjne, aby dowiedzieć się więcej na temat ładu dla Grupy Microsoft 365 i Teams.
 
 **Podstawy**
 
-Poznaj podstawy i nowe innowacje w grupach Microsoft 365, w tym zarządzanie i zarządzanie na skalę, najlepsze rozwiązania dotyczące korzystania z rozwiązań i korzystania z nich oraz samoobsługi.
+Poznaj podstawy i nowe innowacje w Grupy Microsoft 365, w tym zarządzanie i zarządzanie na dużą skalę, najlepsze rozwiązania dotyczące używania i wdrażania oraz samoobsługi.
 
-- [Szyb Microsoft 365 grupy](https://www.youtube.com/watch?v=dAamBF1gb7M)
+- [Ogarnij Grupy Microsoft 365](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **Nadzór**
 
-Dowiedz się, jak skonfigurować cykl życia wygasania grup, zasady nazewnictwa, etykiety klasyfikacji, współpracę z gośćmi zewnętrznymi oraz zarządzać uprawnieniami do tworzenia grup.
+Dowiedz się, jak skonfigurować cykl życia wygaśnięcia grup, zasady nazewnictwa, etykiety klasyfikacji, współpracę z gośćmi zewnętrznymi i zarządzać uprawnieniami do tworzenia grup.
 
-- [Transformacja współpracy i współpraca w cieniu dzięki Office 365 grupom](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
+- [Przekształcanie współpracy i walka z mroczną it za pomocą grup Office 365](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **Przykład klienta**
 
-Zobacz za kulisy przykład współpracy grup Microsoft 365, SharePoint, Teams i Yammer, aby zapewnić globalną platformę współpracy.
+Zobacz zakulisowy przykład współpracy Grupy Microsoft 365, SharePoint, Teams i Yammer w celu zapewnienia globalnej platformy współpracy.
 
-- [Znajdowanie ciesłych miejsc do Office 365 grup, SharePoint, Teams i Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [Znajdowanie słodkiego miejsca współpracy za pomocą grup Office 365, SharePoint, Teams i Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
 ## <a name="see-also"></a>Zobacz też
 
-[Microsoft 365 dokumentacji zabezpieczeń](../security/index.yml)
+[Dokumentacja zabezpieczeń platformy Microsoft 365](../security/index.yml)
 
-[Microsoft 365 zgodności](../compliance/index.yml)
+[Dokumentacja usługi Microsoft Purview](../compliance/index.yml)

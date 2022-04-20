@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Uzyskaj okresowy raport o tym, jak osoby w Twojej organizacji korzystają z usług platformy Microsoft 365, i przejdź do szczegółów każdego wykresu, aby uzyskać więcej szczegółowych informacji.
-ms.openlocfilehash: 224ed6ffb0fa44280f1b83d3a0f440d1a8571557
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 63684384f8f9d496767ef66ee6628653945ad8c9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738320"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935944"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Raporty platformy Microsoft 365 w centrum administracyjnym
 
@@ -152,7 +152,7 @@ Administratorzy globalni mogą cofnąć tę zmianę dla swojej dzierżawy i wyś
   
 3. Usuń zaznaczenie opcji **Wyświetl ukryte nazwy użytkowników, grup i witryn we wszystkich raportach**, a następnie zapisz zmiany.  
   
-Wprowadzanie tych zmian w raportach na pulpicie nawigacyjnym Raporty potrwa kilka minut. To ustawienie dotyczy również raportów użycia platformy Microsoft 365 w programie [Microsoft Graph](/graph/api/resources/report) i usłudze [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) oraz [raportów użycia w Centrum administracyjnym usługi Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Wyświetlanie identyfikowalnych informacji o użytkowniku jest zarejestrowanym zdarzeniem w dzienniku inspekcji Centrum zgodności platformy Microsoft 365.   
+Wprowadzanie tych zmian w raportach na pulpicie nawigacyjnym Raporty potrwa kilka minut. To ustawienie dotyczy również raportów użycia platformy Microsoft 365 w programie [Microsoft Graph](/graph/api/resources/report) i usłudze [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) oraz [raportów użycia w Centrum administracyjnym usługi Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Wyświetlanie identyfikowalnych informacji o użytkowniku jest zarejestrowanym zdarzeniem w dzienniku inspekcji portalu zgodności usługi Microsoft Purview.   
 
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Co się stanie z danymi użycia po zamknięciu konta użytkownika?

@@ -1,5 +1,5 @@
 ---
-title: Szkolenie modelu predykcyjnego kodowania w programie Advanced eDiscovery
+title: Trenowanie modelu kodowania predykcyjnego w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,83 +14,83 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: b5f1a958696dad84ac2bedec8f1ab7d23dfa6428
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 37c0ae081223f321c87cafa18d0acbbbc6adb511
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988049"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942144"
 ---
-# <a name="train-a-predictive-coding-model-preview"></a>Szkolenie modelu predykcyjnego kodowania (podgląd)
+# <a name="train-a-predictive-coding-model-preview"></a>Trenowanie modelu kodowania predykcyjnego (wersja zapoznawcza)
 
-Kolejnym krokiem po utworzeniu modelu predykcyjnego kodowania w programie Advanced eDiscovery jest wykonanie pierwszego rundy szkolenia w celu przeszkolenia modelu w zakresie tego, co jest istotne i nieistniejący zawartości w zestawie recenzji. Po ukończeniu pierwszej rundy szkolenia można przeprowadzić kolejne rundy szkoleniowe, aby ulepszyć możliwości modelu przewidywania istotnej i nieistnieowej zawartości.
+Po utworzeniu modelu kodowania predykcyjnego w usłudze Microsoft Purview eDiscovery (Premium) następnym krokiem jest przeprowadzenie pierwszej rundy trenowania w celu wytrenowania modelu na temat istotnej i nieistotnej zawartości w zestawie przeglądów. Po zakończeniu pierwszej rundy trenowania możesz wykonać kolejne rundy szkoleniowe, aby zwiększyć zdolność modelu do przewidywania odpowiedniej i nieistotnej zawartości.
 
-Aby zapoznać się z przepływem pracy predykcyjnego kodowania, zobacz [Informacje na temat predykcyjnego kodowania w programie Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
+Aby przejrzeć przepływ pracy kodowania predykcyjnego, zobacz [Learn about predictive coding in eDiscovery (Premium) (Informacje o kodowaniu predykcyjnym w usłudze eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
-## <a name="before-you-train-a-model"></a>Zanim wyszkolisz model
+## <a name="before-you-train-a-model"></a>Przed wytrenowania modelu
 
-- W trakcie rundy szkolenia oznacz elementy jako **istotne lub nieo** znaczenia na podstawie istotności zawartości dokumentu. Nie należy opierać się na wartościach w polach metadanych. Na przykład w przypadku wiadomości e-mail Teams konwersacji nie należy opierać się na decyzji dotyczącej etykiet dla uczestników wiadomości.
+- Podczas rundy szkoleniowej oznacz elementy jako **istotne** lub **nieistotne** na podstawie istotności zawartości w dokumencie. Nie opieraj decyzji na wartościach w polach metadanych. Na przykład w przypadku wiadomości e-mail lub Teams konwersacji nie należy opierać decyzji o etykietowaniu na uczestnikach wiadomości.
 
-## <a name="train-a-model-for-the-first-time"></a>Szkolenie modelu po raz pierwszy
+## <a name="train-a-model-for-the-first-time"></a>Trenowanie modelu po raz pierwszy
 
-1. W Centrum zgodności platformy Microsoft 365 otwórz sprawę Advanced eDiscovery, a następnie wybierz **kartę Zestawy** recenzji.
+1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), a następnie wybierz kartę **Zestawy przeglądów**.
 
-2. Otwórz zestaw recenzji, a następnie kliknij pozycję **AnalizaSzybki kodowanie predykcyjne (wersja zapoznawcza)**. > 
+2. Otwórz zestaw przeglądów, a następnie kliknij pozycję **AnalizaZarządzanie** >  **kodowaniem predykcyjnym (wersja zapoznawcza).**
 
-3. Na stronie **Predykcyjne modele kodowania (wersja zapoznawcza)** wybierz model, który chcesz przeszkolić.
+3. Na stronie **Modele kodowania predykcyjnego (wersja zapoznawcza)** wybierz model, który chcesz wytrenować.
 
-4. Na karcie **Omówienie** w obszarze **1. kliknij** pozycję **Rozpocznij następne szkolenie**.
+4. Na karcie **Przegląd** w obszarze **Runda 1** kliknij pozycję **Rozpocznij następną rundę treningową**.
 
-   Zostanie **wyświetlona** karta Szkolenie zawierająca 50 elementów do o etykiecie.
+   Zostanie wyświetlona karta **Trenowanie** zawierająca 50 elementów do etykiety.
 
-5. Przejrzyj każdy dokument, a następnie **wybierz przycisk Istotne** lub Nie istotne u dołu okienka odczytu, aby go o etykiecie.
+5. Przejrzyj każdy dokument, a następnie wybierz przycisk **Odpowiednie** lub **Nieprawidłowe** w dolnej części okienka do czytania, aby go oznaczyć etykietą.
 
-   ![Oznaczaj każdy dokument jako odpowiedni lub nieumiejętny.](..\media\TrainModel1.png)
+   ![Oznacz każdy dokument jako odpowiedni lub nieistotny.](..\media\TrainModel1.png)
 
-6. Po oznaczeniu etykietą wszystkich 50 elementów kliknij przycisk **Zakończ**.
+6. Po oznaczeniu wszystkich 50 elementów kliknij przycisk **Zakończ**.
 
-    "Nauka" na etykietach i zaktualizowanie modelu zajmie kilka minut. Po zakończeniu tego procesu dla modelu jest wyświetlany stan **Ready** (Gotowe) na stronie **Predykcyjne modele kodowania (podgląd** ).
+    Po kilku minutach system będzie "uczyć się" z etykietowania i aktualizować model. Po zakończeniu tego procesu stan **Gotowe** jest wyświetlany dla modelu na stronie **Predykcyjne modele kodowania (wersja zapoznawcza).**
 
-## <a name="perform-additional-training-rounds"></a>Wykonywanie dodatkowych zaokrągleń szkoleń
+## <a name="perform-additional-training-rounds"></a>Wykonywanie dodatkowych rund szkoleniowych
 
-Po zakończeniu pierwszej rundy szkolenia można wykonać kolejne zaokrągli szkoleniowe, korzystając z procedury opisanej w poprzedniej sekcji. Jedyna różnica polega na tym, że na karcie Przegląd modelu zostanie zaktualizowana liczba  rundy szkolenia. Na przykład po przeprowadzeniu pierwszej rundy szkolenia możesz kliknąć pozycję Rozpocznij następne  szkolenie, aby rozpocząć drugą rundę szkolenia. I tak dalej.
+Po wykonaniu pierwszej rundy trenowania możesz wykonać kolejne rundy treningowe, wykonując kroki opisane w poprzedniej sekcji. Jedyną różnicą jest to, że liczba rundy trenowania zostanie zaktualizowana na karcie **Przegląd** modelu. Na przykład po wykonaniu pierwszej rundy treningowej możesz kliknąć przycisk **Rozpocznij następną rundę treningową** , aby rozpocząć drugą rundę trenowania. I tak dalej.
 
-Każda runda szkolenia (zarówno w toku, jak i ukończone) jest wyświetlana na **karcie Szkolenie dla** modelu. Po wybraniu rundy szkolenia zostanie wyświetlona wysuuwana strona z informacjami i metrykami dla rundy.
+Każda runda trenowania (zarówno tych w toku, jak i tych, które są ukończone) jest wyświetlana na karcie **Trenowanie** dla modelu. Po wybraniu rundy szkoleniowej zostanie wyświetlona strona wysuwana z informacjami i metrykami dla rundy.
 
-## <a name="what-happens-after-you-perform-a-training-round"></a>Co się dzieje po zakończeniu rundy szkolenia
+## <a name="what-happens-after-you-perform-a-training-round"></a>Co się stanie po zakończeniu rundy treningowej
 
-Po pierwszym zaokrągleniu szkolenia jest rozpoczynane zadanie, które wykonuje następujące czynności:
+Po wykonaniu pierwszej rundy trenowania uruchamiane jest zadanie, które wykonuje następujące czynności:
 
-- Na podstawie sposobu, w jaki oznaczono 40 elementów w zestawie szkoleniowym, sam model uczy się na podstawie etykiet i aktualizacji, aby uzyskać większą dokładność.
+- W oparciu o sposób etykietowania 40 elementów w zestawie szkoleniowym model uczy się z etykietowania i samych aktualizacji, aby stać się bardziej dokładnym.
 
-- Następnie model przetwarza każdy element w całym zestawie recenzji i przypisuje wynik prognozy między **0** (nie istotne) a **1** (odpowiedni).
+- Następnie model przetwarza każdy element w całym zestawie przeglądów i przypisuje wynik przewidywania z zakresu **od 0** (nieistotny) do **1** (odpowiedni).
 
-- Model przypisuje wynik prognozy dla 10 elementów w zestawie kontrolek oznaczonych podczas rundy szkolenia. Ten model porównuje wynik prognozowania tych 10 elementów z rzeczywistą etykietą przypisaną do elementu podczas rundy szkolenia. Na podstawie tego porównania model identyfikuje następującą klasyfikację (nazywaną macierzą nieporozumień zestawu kontrolek *) do* oceny wydajności prognozowania modelu:
+- Model przypisuje wynik przewidywania do 10 elementów w zestawie sterowania oznaczonym podczas rundy trenowania. Model porównuje wynik przewidywania tych 10 elementów z rzeczywistą etykietą przypisaną do elementu podczas rundy szkoleniowej. Na podstawie tego porównania model identyfikuje następującą klasyfikację (nazywaną *macierzą pomyłek zestawu kontroli*), aby ocenić wydajność przewidywania modelu:
 
   <br>
 
   ****
 
-  |Etykieta|Model przewiduje, że element jest istotny|Model przewiduje element nie jest odpowiedni|
+  |Etykiety|Model przewiduje, że element jest odpowiedni|Model przewiduje, że element nie ma znaczenia|
   |---|---|---|
-  |**Recenzent etykietuje element jako odpowiedni**|True positive|Wynik fałszywie dodatni|
-  |**Recenzent etykietuje element jako nieucztowy**|Wynik fałszywie ujemny|True negative|
+  |**Element etykiet recenzenta jako odpowiedni**|Prawdziwie dodatnie|Wynik fałszywie dodatni|
+  |**Element etykiet recenzenta jako nieistotny**|Fałszywie ujemny|Wartość prawdziwie ujemna|
   |
 
-  Na podstawie tych porównań model pozysł wartości dla wyników F-score, dokładności i odwołania oraz marginesu błędu dla każdej z nich. Wyniki dla tych metryk wydajności modelu są wyświetlane na wysuwanych stronie rundy szkolenia. Aby uzyskać opis tych metryk, zobacz [Predykcyjne wskazówki dotyczące kodowania](predictive-coding-reference.md).
+  Na podstawie tych porównań model uzyskuje wartości dla metryk F-score, precision i recall oraz margines błędu dla każdego z nich. Wyniki dla tych metryk wydajności modelu są wyświetlane na stronie wysuwanej dla rundy trenowania. Opis tych metryk można znaleźć w temacie [Predictive coding reference (Dokumentacja kodowania predykcyjnego](predictive-coding-reference.md)).
 
-- Na koniec model określa kolejne 50 elementów, które zostaną użyte w następnym szkoleniu. Tym razem model może wybrać 20 elementów z zestawu kontrolek i 30 nowych elementów z zestawu recenzji i wyznaczyć je jako zestaw szkoleniowy na następną rundę. Próbkowanie do następnego rundy nie jest próbkowane równomiernie. Model optymalizuje wybór próbkowania elementów z zestawu recenzji w celu wybrania elementów, dla których prognoza jest niejednoznaczna, co oznacza, że wynik prognozowania należy do zakresu 0,5. Ten proces jest nazywany *wybórm zniechęceniem*.
+- Na koniec model określa kolejne 50 elementów, które zostaną użyte do następnej rundy trenowania. Tym razem model może wybrać 20 elementów z zestawu kontrolek i 30 nowych elementów z zestawu przeglądów i wyznaczyć je jako zestaw szkoleniowy dla następnej rundy. Próbkowanie dla następnej rundy treningowej nie jest jednolicie próbki. Model zoptymalizuje wybór próbkowania elementów z zestawu przeglądów, aby wybrać elementy, w których przewidywanie jest niejednoznaczne, co oznacza, że wynik przewidywania znajduje się w zakresie 0,5. Ten proces jest nazywany *zaznaczeniem tendencyjnym*.
 
-### <a name="what-happens-after-you-perform-subsequent-training-rounds"></a>Co się stanie po kolejnych rundach szkolenia
+### <a name="what-happens-after-you-perform-subsequent-training-rounds"></a>Co się stanie po wykonaniu kolejnych rund treningowych
 
-Po zakończeniu kolejnych zaokrągleń szkoleniowych (po pierwszym zaokrągleniu szkolenia) model wykonuje następujące czynności:
+Po wykonaniu kolejnych rund treningowych (po pierwszej rundzie trenowania) model wykonuje następujące czynności:
 
-- Model zostanie zaktualizowany na podstawie etykiet zastosowanych do zestawu szkoleniowego w tej rundy szkolenia.
+- Model jest aktualizowany na podstawie etykiet zastosowanych do zestawu trenowania w tej rundzie trenowania.
 
-- System ocenia wynik prognozowania modelu dla elementów w zestawie kontrolek i sprawdza, czy wynik jest wyrównany do sposobu, w jaki oznaczono elementy w zestawie kontrolek. Ocena jest wykonywana na wszystkich elementach oznaczonych etykietą z zestawu kontrolek dla wszystkich zaokrągleń szkoleniowych. Wyniki tej oceny są uwzględnione na pulpicie nawigacyjnym na karcie **Przegląd** modelu.
+- System ocenia wynik przewidywania modelu dla elementów w zestawie sterowania i sprawdza, czy wynik jest zgodny ze sposobem etykietowania elementów w zestawie kontrolek. Ocena jest wykonywana dla wszystkich elementów oznaczonych etykietami z zestawu sterowania dla wszystkich rund szkoleniowych. Wyniki tej oceny są uwzględniane na pulpicie nawigacyjnym na karcie **Przegląd** modelu.
 
-- Zaktualizowany model ponownie przetwarza każdy element w zestawie recenzji i przypisuje każdemu elementowi zaktualizowany wynik prognozowania.
+- Zaktualizowany model ponownie przetwarza każdy element w zestawie przeglądów i przypisuje każdemu elementowi zaktualizowany wynik przewidywania.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po zakończeniu pierwszej rundy szkoleniowej możesz wykonać więcej zaokrągleń szkoleniowych lub zastosować filtr wyników prognozy modelu do zestawu recenzji, aby wyświetlić elementy, które model przewidział, jako odpowiednie lub nieocene. Aby uzyskać więcej informacji, zobacz [Stosowanie filtru wyników prognozy do zestawu recenzji](predictive-coding-apply-prediction-filter.md).
+Po wykonaniu pierwszej rundy trenowania możesz wykonać więcej rund treningowych lub zastosować filtr wyników przewidywania modelu do zestawu przeglądów, aby wyświetlić elementy, które model przewidział jako odpowiednie lub nieistotne. Aby uzyskać więcej informacji, zobacz [Apply a prediction score filter to a review set (Stosowanie filtru wyniku przewidywania do zestawu przeglądów](predictive-coding-apply-prediction-filter.md)).

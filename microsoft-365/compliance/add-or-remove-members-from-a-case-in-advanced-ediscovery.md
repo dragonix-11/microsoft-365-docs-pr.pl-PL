@@ -1,5 +1,5 @@
 ---
-title: Dodawanie lub usuwanie członków w sprawie
+title: Dodaj członków do sprawy lub ich usuń
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,37 +15,37 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak dodawać i usuwać członków, którzy mogą uzyskać dostęp do sprawy, podczas zarządzania Advanced eDiscovery przypadku.
+description: Dowiedz się, jak dodać lub usunąć członków, którzy mogą uzyskać dostęp do sprawy podczas zarządzania przypadkiem zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8e239622add6965a280e9c2b01bc00d9f2b9b0d5
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 9586fd0f606c3f95cda19ca9d6ae036bc23763dc
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "62988659"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943200"
 ---
-# <a name="add-or-remove-members-from-a-case"></a>Dodawanie lub usuwanie członków w sprawie
+# <a name="add-or-remove-members-from-a-case"></a>Dodaj członków do sprawy lub ich usuń
 
-Możesz dodawać lub usuwać członków, aby zarządzać tym, kto może mieć dostęp do sprawy. Jednak aby członek może uzyskać dostęp do sprawy Advanced eDiscovery (i wykonywać zadania w tym przypadku), musisz dodać użytkownika do grupy ról Menedżer zbierania elektronicznych materiałów dowodowych na stronie Uprawnienia w Centrum zgodności platformy Microsoft 365. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](./assign-ediscovery-permissions.md).
+Możesz dodać lub usunąć członków, aby zarządzać tym, kto może uzyskać dostęp do sprawy. Zanim jednak członek będzie mógł uzyskać dostęp do sprawy zbierania elektronicznych materiałów dowodowych (Premium) (i wykonywać zadania w tym przypadku), musisz dodać użytkownika do grupy ról Menedżera zbierania elektronicznych materiałów dowodowych na stronie **Uprawnienia** w portalu zgodności usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](./assign-ediscovery-permissions.md).
 
-1. Na **Advanced eDiscovery** głównej przejdź do sprawy, do której chcesz dodać członka.
+1. Na stronie **eDiscovery (Premium)** przejdź do sprawy, do którą chcesz dodać członka.
 
-2. Kliknij **kartę Ustawienia**, a następnie kliknij pozycję **Wybierz** na kafelku & **dostępu**.
+2. Kliknij kartę **Ustawienia**, a następnie kliknij pozycję **Wybierz** na kafelku **Uprawnienia & dostępu**.
 
-3. W **obszarze Zarządzanie członkami** kliknij pozycję **Dodaj** , aby dodać członków do sprawy. Możesz również dodać grupę ról do sprawy, klikając pozycję  **Dodaj** w obszarze **Zarządzanie grupami ról**.
+3. W obszarze **Zarządzanie członkami** kliknij pozycję **Dodaj** , aby dodać członków do sprawy. Możesz również dodać grupę ról do sprawy, klikając pozycję  **Dodaj** w obszarze **Zarządzanie grupami ról**.
 
-4. Na liście osób lub grup ról, które mogą być dodawane jako członkowie sprawy, zaznacz pole wyboru obok nazw osób lub grup ról, które chcesz dodać.
+4. Na liście osób lub grup ról, które można dodać jako członków sprawy, zaznacz pole wyboru obok nazw osób lub grup ról, które chcesz dodać.
 
    > [!NOTE]
-   > Podczas dodawania grupy ról do sprawy możesz dodawać tylko te grupy ról, których jesteś członkiem.
+   > Podczas dodawania grupy ról do sprawy można dodać tylko grupy ról, do których należysz.
 
-5. Po wybraniu osób lub grup ról w celu dodania ich jako członków sprawy kliknij pozycję **Dodaj**.
+5. Po wybraniu osób lub grup ról, które mają zostać dodane jako członkowie sprawy, kliknij przycisk **Dodaj**.
 
-6. Na stronie **wysuwana Zarządzanie tą sprawą** kliknij pozycję **Zapisz** , aby zapisać nową listę członków sprawy.
+6. Na stronie **Manage this case flyout (Zarządzanie tym przypadkiem** ) kliknij pozycję **Zapisz** , aby zapisać nową listę członków sprawy.
 
 > [!IMPORTANT]
-> Jeśli rola zostanie dodana lub usunięta z grupy ról dodanej jako członek sprawy, grupa ról zostanie automatycznie usunięta jako członek sprawy (lub w dowolnym przypadku, do których należy grupa ról). Przyczyną tego jest ochrona organizacji przed nieumyślnie udostępnieniem dodatkowych uprawnień członkom sprawy. Podobnie, jeśli grupa ról zostanie usunięta, zostanie usunięta ze wszystkich spraw, do których była członkiem. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases).
+> Jeśli rola zostanie dodana lub usunięta z grupy ról, która została dodana jako członek sprawy, grupa ról zostanie automatycznie usunięta jako członek sprawy (lub w każdym przypadku grupa ról jest członkiem). Powodem jest ochrona organizacji przed nieumyślnym udzieleniem dodatkowych uprawnień członkom sprawy. Podobnie, jeśli grupa ról zostanie usunięta, zostanie usunięta ze wszystkich przypadków, do które należała. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases).
 
-## <a name="removing-members-from-a-case"></a>Usuwanie członków ze sprawy
+## <a name="removing-members-from-a-case"></a>Usuwanie elementów członkowskich ze sprawy
 
-Tylko administrator [zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md) może usuwać członków ze sprawy. Nawet jeśli przypisano Cię do grupy ról Menedżer zbierania elektronicznych materiałów dowodowych lub początkowo utworzono sprawę, nie możesz usunąć siebie lub innych członków ze sprawy, chyba że jesteś także administratorem zbierania elektronicznych materiałów dowodowych. Aby usunąć siebie lub innych członków ze sprawy, skontaktuj się z administratorem zbierania elektronicznych materiałów dowodowych w Twojej organizacji.
+Tylko [administrator zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md) może usunąć członków ze sprawy. Nawet jeśli przypisano Cię do grupy ról menedżera zbierania elektronicznych materiałów dowodowych lub początkowo utworzono przypadek, nie będzie można usunąć siebie ani innych członków ze sprawy, chyba że jesteś również administratorem zbierania elektronicznych materiałów dowodowych. Aby usunąć siebie lub innych członków ze sprawy, skontaktuj się z administratorem zbierania elektronicznych materiałów dowodowych w organizacji.

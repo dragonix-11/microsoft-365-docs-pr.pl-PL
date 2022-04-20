@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Dowiedz się więcej o Office 365 obsługiwanych przez firmę 21Vianet, która została zaprojektowana w celu spełnienia wymagań dotyczących bezpiecznych, niezawodnych i skalowalnych usług w chmurze w Chinach.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7608be301accfb99e03683240108be5eaa7529a6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 16b40c0cb03d14915ccb89f7d34be5110b4c0849
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782638"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938933"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Usługa Office 365 obsługiwana przez firmę 21Vianet
 
@@ -174,7 +174,7 @@ Aby dowiedzieć się więcej na temat konfigurowania wdrożenia hybrydowego z dz
 |Udostępnianie kalendarza|Exchange 2013 z dodatkiem SP1 i nowszym obsługuje ręczne konfigurowanie udostępniania kalendarzy internetowych innym lokalnym organizacjom Exchange lub Exchange Online. Aby uzyskać więcej informacji na temat ręcznego konfigurowania tej funkcji, zobacz [Włączanie publikowania kalendarza internetowego](/exchange/enable-internet-calendar-publishing-exchange-2013-help).|
 Udostępnianie Exchange danych kontaktowych na urządzeniach przenośnych firmy Apple w usłudze Apple iCloud.|To ustawienie/funkcja jest domyślnie włączona. Administratorzy powinni wyłączyć tę funkcję, aby uniemożliwić użytkownikom udostępnianie Exchange danych spoza organizacji.|
 |szyfrowanie hostowanej poczty e-mail Exchange|Niedostępne.|
-|szyfrowanie komunikatów Office 365|Wkrótce.|
+|Szyfrowanie komunikatów usługi Microsoft Purview|Wkrótce.|
 
 ## <a name="office"></a>Pakiet Office
 

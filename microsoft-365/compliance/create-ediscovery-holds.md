@@ -1,5 +1,5 @@
 ---
-title: Tworzenie blokad zbierania elektronicznych materiałów dowodowych w przypadku podstawowego zbierania elektronicznych materiałów dowodowych
+title: Tworzenie blokad zbierania elektronicznych materiałów dowodowych w przypadku zbierania elektronicznych materiałów dowodowych (standardowa)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,17 +17,17 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: W Microsoft 365 można utworzyć blokadę skojarzoną z podstawowym przypadkiem zbierania elektronicznych materiałów dowodowych, aby zachować zawartość istotną dla dochodzenia lub sprawy prawnej.
-ms.openlocfilehash: f732bf1c9b85804a8a3814bf578a719d854725e5
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: W Microsoft 365 można utworzyć blokadę skojarzoną ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa), aby zachować zawartość istotną dla dochodzenia lub sprawy prawnej.
+ms.openlocfilehash: 4448c9b8a55466c0cf626deff6e69acd247a5814
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824909"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938274"
 ---
 # <a name="create-an-ediscovery-hold"></a>Tworzenie blokady zbierania elektronicznych materiałów dowodowych
 
-Możesz użyć przypadku zbierania elektronicznych materiałów dowodowych Core, aby utworzyć blokady w celu zachowania zawartości, która może być istotna dla danego przypadku. Możesz wstrzymać skrzynki pocztowe Exchange i OneDrive dla Firm konta osób, które badasz w tej sprawie. Możesz również wstrzymać skrzynki pocztowe i witryny skojarzone z Microsoft Teams, grupami Office 365 i grupami Yammer. Po wstrzymaniu lokalizacji zawartości zawartość jest zachowywana do momentu usunięcia lokalizacji zawartości z blokady lub do momentu usunięcia blokady.
+Możesz użyć przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa), aby utworzyć blokady w celu zachowania zawartości, która może być istotna dla danego przypadku. Możesz wstrzymać skrzynki pocztowe Exchange i OneDrive dla Firm konta osób, które badasz w tej sprawie. Możesz również wstrzymać skrzynki pocztowe i witryny skojarzone z Microsoft Teams, grupami Office 365 i grupami Yammer. Po wstrzymaniu lokalizacji zawartości zawartość jest zachowywana do momentu usunięcia lokalizacji zawartości z blokady lub do momentu usunięcia blokady.
 
 Po utworzeniu blokady zbierania elektronicznych materiałów dowodowych może upłynąć do 24 godzin, aż blokada zostanie wprowadzona w życie.
 
@@ -39,13 +39,13 @@ Podczas tworzenia blokady dostępne są następujące opcje określania zakresu 
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Jak utworzyć blokadę zbierania elektronicznych materiałów dowodowych
 
-Aby utworzyć blokadę zbierania elektronicznych materiałów dowodowych skojarzoną z przypadkiem zbierania elektronicznych materiałów dowodowych Core:
+Aby utworzyć blokadę zbierania elektronicznych materiałów dowodowych skojarzoną z przypadkiem zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa):
   
-1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> i zaloguj się przy użyciu poświadczeń konta użytkownika, do których przypisano odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> i zaloguj się przy użyciu poświadczeń konta użytkownika, do których przypisano odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych.
 
 2. W okienku nawigacji po lewej stronie kliknij pozycję **Pokaż wszystko**, a następnie kliknij pozycję **eDiscovery > Core**.
 
-3. Na stronie **Core eDiscovery** kliknij nazwę przypadku, w ramach którego chcesz utworzyć blokadę.
+3. Na stronie **eDiscovery (Standard)** kliknij nazwę przypadku, w ramach którego chcesz utworzyć blokadę.
 
 4. Na stronie **głównej** sprawy kliknij kartę **Przytrzymaj** .
   
@@ -113,7 +113,7 @@ Należy pamiętać o następujących kwestiach dotyczących statystyk zbierania 
 
 ## <a name="search-locations-on-ediscovery-hold"></a>Wyszukiwanie lokalizacji w blokadzie zbierania elektronicznych materiałów dowodowych
 
-[Podczas wyszukiwania zawartości](search-for-content-in-core-ediscovery.md) w przypadku podstawowego zbierania elektronicznych materiałów dowodowych można szybko skonfigurować wyszukiwanie tak, aby przeszukiwało tylko lokalizacje zawartości umieszczone w blokadzie skojarzonej ze sprawą.
+[Podczas wyszukiwania zawartości](search-for-content-in-core-ediscovery.md) w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa) można szybko skonfigurować wyszukiwanie tak, aby przeszukiwało tylko lokalizacje zawartości umieszczone w blokadzie skojarzonej ze sprawą.
 
 Wybierz opcję **Lokalizacje wstrzymane** , aby przeszukać wszystkie lokalizacje zawartości, które zostały wstrzymane. Jeśli przypadek zawiera wiele blokad zbierania elektronicznych materiałów dowodowych, lokalizacje zawartości ze wszystkich blokad zostaną przeszukane po wybraniu tej opcji. Ponadto jeśli lokalizacja zawartości została umieszczona w blokadzie opartej na zapytaniach, podczas uruchamiania wyszukiwania będą przeszukiwane tylko elementy zgodne z zapytaniem blokady. Innymi słowy, tylko zawartość zgodna z kryteriami blokady i kryteriami wyszukiwania jest zwracana z wynikami wyszukiwania. Jeśli na przykład użytkownik został umieszczony w blokadzie sprawy opartej na zapytaniach, która zachowuje elementy, które zostały wysłane lub utworzone przed określoną datą, przeszukiwane byłyby tylko te elementy. Jest to realizowane przez połączenie zapytania dotyczącego blokady sprawy i zapytania wyszukiwania przez operatora **AND** .
 
@@ -215,7 +215,7 @@ Po usunięciu skrzynki pocztowej, witryny SharePoint lub konta OneDrive z blokad
 
    Aby uzyskać więcej informacji, zobacz [Wydawanie zasad przechowywania](retention.md#releasing-a-policy-for-retention).
 
-Blokada opóźnienia jest również stosowana do lokalizacji zawartości wstrzymanych po zamknięciu sprawy zbierania elektronicznych elektronicznych materiałów dowodowych, ponieważ blokady są wyłączone po zamknięciu sprawy. Aby uzyskać więcej informacji na temat zamykania sprawy, zobacz [Zamykanie, ponowne otwieranie i usuwanie przypadku zbierania elektronicznych materiałów dowodowych Core](close-reopen-delete-core-ediscovery-cases.md).
+Blokada opóźnienia jest również stosowana do lokalizacji zawartości wstrzymanych po zamknięciu sprawy zbierania elektronicznych materiałów dowodowych (Standardowa), ponieważ blokady są wyłączone po zamknięciu sprawy. Aby uzyskać więcej informacji na temat zamykania sprawy, zobacz [Zamykanie, ponowne otwieranie i usuwanie sprawy zbierania elektronicznych materiałów dowodowych (Standardowa](close-reopen-delete-core-ediscovery-cases.md)).
 
 ## <a name="ediscovery-hold-limits"></a>Limity blokad zbierania elektronicznych materiałów dowodowych
 
@@ -224,7 +224,7 @@ W poniższej tabeli wymieniono limity dotyczące spraw zbierania elektronicznych
   | Opis limitu | Limit |
   |:-----|:-----|
   |Maksymalna liczba przypadków dla organizacji.  <br/> |Brak limitu  <br/> |
-  |Maksymalna liczba zasad przechowywania zbierania elektronicznych materiałów dowodowych dla organizacji. Ten limit obejmuje łączną sumę zasad blokady w podstawowych przypadkach zbierania elektronicznych materiałów dowodowych i Advanced eDiscovery.  <br/> |10,000  <br/> |
+  |Maksymalna liczba zasad przechowywania zbierania elektronicznych materiałów dowodowych dla organizacji. Ten limit obejmuje łączną sumę zasad blokady w przypadkach zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium).  <br/> |10 <sup>0001</sup>  <br/> |
   |Maksymalna liczba skrzynek pocztowych w jednym archiwum zbierania elektronicznych materiałów dowodowych. Ten limit obejmuje łączną sumę skrzynek pocztowych użytkowników oraz skrzynki pocztowe skojarzone z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.  <br/> |1,000  <br/> |
   |Maksymalna liczba witryn w jednym archiwum zbierania elektronicznych materiałów dowodowych. Ten limit obejmuje łączną sumę witryn OneDrive dla Firm, witryn SharePoint oraz witryn skojarzonych z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.  <br/> |100  <br/> |
   |Maksymalna liczba przypadków wyświetlanych na stronie głównej zbierania elektronicznych materiałów dowodowych oraz maksymalna liczba elementów wyświetlanych na kartach Blokady, Wyszukiwania i Eksport w danym przypadku.  |10001<sup></sup>|

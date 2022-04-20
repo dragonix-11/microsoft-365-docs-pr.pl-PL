@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Role administratora, takie jak administrator usługi, są powiązane z funkcjami biznesowymi i zapewniają uprawnienia do wykonywania określonych zadań w centrum administracyjnym.
-ms.openlocfilehash: 5bea496ca24f3aef97a780d48c74b84aaa46176b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8a1df118b5dfe1ad484f3a8048cce9cf748ab54b
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62973824"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937672"
 ---
 # <a name="about-admin-roles"></a>Role administratora — informacje
 
@@ -89,7 +89,7 @@ Prawdopodobnie w Twojej organizacji potrzebne będzie przypisanie jedynie nastę
 |Administrator aplikacji pakietu Office    |   Rolę administratora aplikacji pakietu Office należy przypisywać użytkownikom, którzy muszą mieć możliwość: <br> - Korzystania z usługi zasad w chmurze pakietu Office do tworzenia zasad opartych na chmurze dla pakietu Office i zarządzania nimi <br> - Tworzenia żądań obsługi i zarządzania nimi <br> - Zarządzania zawartością Co nowego w aplikacjach pakietu Office, która jest widoczna dla użytkowników   <br> - Monitorowanie kondycji usługi  |
 |Administrator haseł  |   Przypisz rolę administratora haseł do użytkownika, który musi resetować hasła dla osób niebędących administratorami oraz dla administratorów haseł.   |
 |Czytelnik Centrum wiadomości |   Rolę czytelnika Centrum wiadomości należy przypisywać użytkownikom, którzy muszą mieć możliwość: <br> - Monitorowania powiadomień w centrum wiadomości <br> - Uzyskiwania cotygodniowego podsumowania wiadomości e-mail z wpisów i aktualizacji w Centrum wiadomości <br> - Udostępniania wpisów w Centrum wiadomości <br> - Dostępu tylko do odczytu do usług Azure AD, takich jak użytkownicy i grupy|
-|Administrator platformy Power |   Rolę administratora platformy Power należy przypisywać użytkownikom, którzy muszą mieć możliwość: <br> - Zarządzania wszystkimi funkcjami administratora w usługach Power Apps, Power Automate i ochroną przed utratą danych <br> - Tworzenia żądań obsługi i zarządzania nimi <br> - Monitorowanie kondycji usługi  |
+|Administrator platformy Power |   Rolę administratora platformy Power należy przypisywać użytkownikom, którzy muszą mieć możliwość: <br> - Zarządzania wszystkimi funkcjami administratora w usługach Power Apps, Power Automate i ochroną przed utratą danych w Microsoft Purview <br> - Tworzenia żądań obsługi i zarządzania nimi <br> - Monitorowanie kondycji usługi  |
 |Czytelnik raportów |   Rolę czytelnika raportów należy przypisywać użytkownikom, którzy muszą mieć możliwość: <br> — Wyświetlania dane użycia i raportów aktywności w centrum administracyjnym platformy Microsoft 365 <br> — Uzyskiwania dostępu do pakietu zawartości wrażania usługi Power BI <br> - Uzyskiwania dostępu do raportów logowania i aktywności w usłudze Azure AD <br> - Wyświetlania danych zwróconych przez interfejs API raportowania usługi Microsoft Graph|
 |Administrator pomocy technicznej usługi   |   Przypisz rolę administratora pomocy technicznej usługi jako dodatkową rolę administratorom lub użytkownikom, którzy muszą wykonywać następujące czynności oprócz zwykłej roli administratora: <br> - Otwieranie żądań obsługi i zarządzanie nimi <br> - Wyświetlanie i udostępnianie wpisów w centrum wiadomości <br> - Monitorowanie kondycji usługi   |
 |Administrator programu SharePoint    |   Rolę administratora programu SharePoint należy przypisywać użytkownikom, którzy potrzebują dostępu do centrum administratora usługi SharePoint Online oraz możliwości zarządzania. <br><br>Administratorzy programu SharePoint mogą również: <br> - Tworzyć i usuwać witryny <br> - Zarządzać zbiorami witryn oraz ustawieniami globalnymi programu SharePoint   |

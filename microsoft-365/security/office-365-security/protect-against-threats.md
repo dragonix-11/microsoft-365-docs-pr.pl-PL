@@ -1,5 +1,5 @@
 ---
-title: Ochrona przed zagrożeniami w programach Ochrona usługi Office 365 w usłudze Microsoft Defender, anti-malware, anti-phishing, anti-spam, linki Sejf, załączniki Sejf, automatyczne przeczyszczanie zerowej godziny (ZAP), konfiguracja zabezpieczeń MDO
+title: Ochrona przed zagrożeniami w Ochrona usługi Office 365 w usłudze Microsoft Defender, ochrona przed złośliwym oprogramowaniem, ochrona przed wyłudzaniem informacji, ochrona przed spamem, linki Sejf, załączniki Sejf, automatyczne przeczyszczanie (ZAP), konfiguracja zabezpieczeń MDO
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,16 +16,16 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratorzy mogą dowiedzieć się więcej o ochronie przed Microsoft 365 i skonfigurować sposób używania jej w organizacji.
+description: Administratorzy mogą dowiedzieć się więcej o ochronie przed zagrożeniami w Microsoft 365 i skonfigurować sposób jej używania w organizacji.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5a0be5171a2de07792cd259dc6547046d7c1630
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: d067035d5eaf3c7a4febac6feeab0c56cd707728
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507192"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941440"
 ---
 # <a name="protect-against-threats"></a>Ochrona przed zagrożeniami
 
@@ -33,299 +33,299 @@ ms.locfileid: "64507192"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Oto przewodnik Szybki start, który dzieli konfigurację Ochrona usługi Office 365 w usłudze Defender na fragmenty. Jeśli dopiero zaczynasz korzystać z funkcji ochrony przed zagrożeniami w programie Office 365, nie wiesz, od czego zacząć, lub jeśli najlepiej się *uczysz, użyj* tych wskazówek jako listy kontrolnej i punktu wyjścia.
+Oto przewodnik szybkiego startu, który dzieli konfigurację Ochrona usługi Office 365 w usłudze Defender na fragmenty. Jeśli dopiero zaczynasz korzystać z funkcji ochrony przed zagrożeniami w Office 365, nie wiesz, od czego zacząć lub jeśli najlepiej się z *tego* nauczysz, skorzystaj z tych wskazówek jako listy kontrolnej i punktu początkowego.
 
 > [!IMPORTANT]
-> **Początkowe zalecane ustawienia są dostępne dla** każdego rodzaju zasad, jednak dostępnych jest wiele opcji i możesz dostosować je do potrzeb konkretnej organizacji. Zezwalaj około 30 minut na sposób pracy zasad lub zmian przez centrum danych.
+> **Początkowe zalecane ustawienia są uwzględniane dla każdego rodzaju zasad, jednak dostępnych jest wiele opcji i można dostosować ustawienia zgodnie z potrzebami określonej organizacji**. Zaczekaj około 30 minut na pracę zasad lub zmian w centrum danych.
 >
-> Aby pominąć ręczną konfigurację większości zasad w programie Ochrona usługi Office 365 w usłudze Defender, można użyć wstępnie ustawionych zasad zabezpieczeń na poziomie Standardowy lub Ścisłe. Aby uzyskać więcej informacji, zobacz [Wstępnie ustawione zasady zabezpieczeń w uchcie eOP i programie Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md).
+> Aby pominąć ręczną konfigurację większości zasad w Ochrona usługi Office 365 w usłudze Defender, możesz użyć wstępnie ustawionych zasad zabezpieczeń na poziomie standardowym lub ścisłym. Aby uzyskać więcej informacji, zobacz [Preset security policies in EOP and Ochrona usługi Office 365 w usłudze Microsoft Defender (Ustawienia wstępne zasad zabezpieczeń w usłudze EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)).
 
 ## <a name="requirements"></a>Wymagania
 
-### <a name="subscriptions"></a>Subskrypcje
+### <a name="subscriptions"></a>Subskrypcji
 
-Funkcje ochrony przed zagrożeniami *są zawarte we* wszystkich subskrypcjach produktów firmy Microsoft Office 365, jednak niektóre subskrypcje mają zaawansowane funkcje. W poniższej tabeli wymieniono funkcje ochrony zawarte w tym artykule oraz minimalne wymagania dotyczące subskrypcji.
+Funkcje ochrony przed zagrożeniami są dostępne we *wszystkich* subskrypcjach firmy Microsoft lub Office 365; jednak niektóre subskrypcje mają zaawansowane funkcje. W poniższej tabeli wymieniono funkcje ochrony zawarte w tym artykule wraz z minimalnymi wymaganiami dotyczącymi subskrypcji.
 
 > [!TIP]
-> Zwróć uwagę, że oprócz wskazówek, jak włączyć *inspekcję, wykonać* kroki w celu uruchomienia ochrony przed złośliwym oprogramowaniem, ochrony przed wyłudzaniem informacji i ochrony przed spamem, które są oznaczone jako część Office 365 Exchange Online Protection (**EOP**). Może to wydawać się nieparzyste Ochrona usługi Office 365 w usłudze Defender artykułu, dopóki nie pamiętasz (**Ochrona usługi Office 365 w usłudze Defender**) zawiera i tworzysz program EOP.
+> Zwróć uwagę, że poza kierunkami włączania inspekcji należy rozpocząć *działania* chroniące przed złośliwym oprogramowaniem, wyłudzaniem informacji i antyspamowe, które są oznaczone jako część Office 365 Exchange Online Protection (**EOP**). To może wydawać się dziwne w artykule Ochrona usługi Office 365 w usłudze Defender, dopóki nie pamiętasz (**Ochrona usługi Office 365 w usłudze Defender**) zawiera i opiera się na EOP.
 
 |Typ ochrony|Wymaganie subskrypcji|
 |---|---|
-|Rejestrowanie inspekcji (na potrzeby raportowania)|[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
+|Rejestrowanie inspekcji (do celów raportowania)|[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
 |Ochrona przed złośliwym oprogramowaniem|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Ochrona przed wyłudzaniem informacji|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Ochrona przed spamem|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Ochrona przed złośliwymi adresami URL i plikami w wiadomościach e-mail Office dokumentach (linki Sejf i załączniki Sejf wiadomości)|[Ochrona usługi Office 365 w usłudze Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Ochrona przed złośliwymi adresami URL i plikami w wiadomościach e-mail i dokumentach Office (linki Sejf i załączniki Sejf)|[Ochrona usługi Office 365 w usłudze Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Role i uprawnienia
 
-Aby skonfigurować Ochrona usługi Office 365 w usłudze Defender, musisz mieć przypisaną odpowiednią rolę. W poniższej tabeli znajdziesz role, które mogą wykonać te czynności.
+Aby skonfigurować zasady Ochrona usługi Office 365 w usłudze Defender, musisz mieć przypisaną odpowiednią rolę. Zapoznaj się z poniższą tabelą, aby zapoznać się z rolami, które mogą wykonywać te akcje.
 
-|Rola lub grupa ról|Gdzie można dowiedzieć się więcej|
+|Rola lub grupa ról|Gdzie dowiedzieć się więcej|
 |---|---|
-|administrator globalny|[Informacje Microsoft 365 administratorów](../../admin/add-users/about-admin-roles.md)|
-|Administrator zabezpieczeń|[Wbudowane role w usłudze Azure AD](/azure/active-directory/roles/permissions-reference#security-administrator)
-|Exchange Online zarządzanie organizacją|[Uprawnienia w aplikacji Exchange Online](/exchange/permissions-exo/permissions-exo)|
+|administrator globalny|[Informacje o rolach administratora Microsoft 365](../../admin/add-users/about-admin-roles.md)|
+|Administrator zabezpieczeń|[Wbudowane role usługi Azure AD](/azure/active-directory/roles/permissions-reference#security-administrator)
+|zarządzanie organizacją Exchange Online|[Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
-Aby dowiedzieć się więcej, zobacz [Uprawnienia w portalu Microsoft 365 Defender witryny](permissions-microsoft-365-security-center.md).
+Aby dowiedzieć się więcej, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Włączanie rejestrowania inspekcji dla raportowania i badania
+### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Włączanie rejestrowania inspekcji na potrzeby raportowania i badania
 
-- Rozpocznij rejestrowanie inspekcji wcześniej. Aby można było wykonać niektóre z poniższych **czynności,** inspekcja musi być wł. Rejestrowanie inspekcji jest dostępne w subskrypcjach, które zawierają [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Aby można było wyświetlać dane w raportach ochrony przed zagrożeniami [,](view-email-security-reports.md) raportach zabezpieczeń poczty e-mail i Eksploratorze [, rejestrowanie](threat-explorer.md) inspekcji musi być *włączone*. Aby dowiedzieć się więcej, zobacz [Włączanie lub wyłączanie wyszukiwania w dzienniku inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
+- Rozpocznij rejestrowanie inspekcji wcześnie. Inspekcja musi być **włączona** , aby wykonać niektóre z poniższych kroków. Rejestrowanie inspekcji jest dostępne w subskrypcjach, które obejmują [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Aby można było wyświetlać dane w raportach ochrony przed zagrożeniami, [raportach zabezpieczeń poczty e-mail](view-email-security-reports.md) i [Eksploratorze](threat-explorer.md), rejestrowanie inspekcji musi być *włączone*. Aby dowiedzieć się więcej, zobacz [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
 
-## <a name="part-1---anti-malware-protection-in-eop"></a>Część 1. Ochrona przed złośliwym oprogramowaniem w uterjomej eOP
+## <a name="part-1---anti-malware-protection-in-eop"></a>Część 1 — Ochrona przed złośliwym oprogramowaniem w ramach EOP
 
-Aby uzyskać więcej informacji na temat zalecanych ustawień ochrony przed złośliwym oprogramowaniem, zobacz Ustawienia zasad ochrony przed złośliwym oprogramowaniem [eOP](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
+Aby uzyskać więcej informacji na temat zalecanych ustawień ochrony przed złośliwym oprogramowaniem, zobacz [Ustawienia zasad ochrony przed złośliwym oprogramowaniem EOP](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
 
-1. Otwórz stronę **ochrony przed złośliwym oprogramowaniem** w portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com/antimalwarev2>.
+1. Otwórz stronę **Ochrona przed złośliwym oprogramowaniem** w portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com/antimalwarev2>.
 
-2. Na stronie **ochrona przed złośliwym oprogramowaniem** wybierz zasady o nazwie **Domyślne (domyślne),** klikając nazwę.
+2. Na stronie **Ochrona przed złośliwym oprogramowaniem** wybierz zasady o nazwie **Domyślne (domyślne),** klikając nazwę.
 
-3. W oknie wysuwu szczegółów zasad, które zostanie otwarte, kliknij pozycję **Edytuj ustawienia ochrony**, a następnie skonfiguruj następujące ustawienia:
-   - **Sekcja Ustawienia** ochrony:
-     - **Włącz wspólny filtr załączników**: Wybierz (włącz). Kliknij **pozycję Dostosuj typy plików,** aby dodać więcej typów plików.
-     - **Włączanie automatycznego przeczyszczania w godzinach pracy w poszukiwaniu złośliwego** oprogramowania: sprawdź, czy to ustawienie jest zaznaczone. Aby uzyskać więcej informacji na temat programu ZAP w przypadku złośliwego oprogramowania, zobacz [Automatyczne przeczyszczanie bezgodzinne (ZAP) w przypadku złośliwego oprogramowania](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
-   - **Zasady kwarantanny**: pozostaw zaznaczoną wartość domyślną AdminOnlyAccessPolicy. Zasady kwarantanny określają, co użytkownicy mogą robić w kwarantannie wiadomości i czy użytkownicy otrzymują powiadomienia kwarantanny. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
-   - **Sekcja** powiadomień: Upewnij się, że żadne z ustawień powiadomień nie jest zaznaczone.
+3. W wyświetlonym wysuwu szczegółów zasad kliknij pozycję **Edytuj ustawienia ochrony**, a następnie skonfiguruj następujące ustawienia:
+   - Sekcja **Ustawień ochrony**:
+     - **Włącz filtr typowych załączników**: Wybierz (włącz). Kliknij **pozycję Dostosuj typy plików** , aby dodać więcej typów plików.
+     - **Włącz automatyczne przeczyszczanie bez godziny dla złośliwego oprogramowania**: sprawdź, czy to ustawienie jest zaznaczone. Aby uzyskać więcej informacji na temat zap dla złośliwego oprogramowania, zobacz [Zero godzin auto przeczyszczania (ZAP) dla złośliwego oprogramowania](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
+   - **Zasady kwarantanny**: pozostaw wybraną wartość domyślną AdminOnlyAccessPolicy. Zasady kwarantanny określają, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie oraz czy użytkownicy otrzymują powiadomienia o kwarantannie. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+   - Sekcja **powiadomień**: sprawdź, czy nie wybrano żadnych ustawień powiadomień.
 
    Po zakończeniu kliknij przycisk **Zapisz**.
 
-4. Na wysuwanych szczegółach zasad kliknij pozycję **Zamknij**.
+4. Po powrocie do wysuwanego szczegółów zasad kliknij przycisk **Zamknij**.
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed złośliwym oprogramowaniem, zobacz Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem [w uciekaniu usługi EOP](configure-anti-malware-policies.md).
+Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed złośliwym oprogramowaniem, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w usłudze EOP](configure-anti-malware-policies.md).
 
-## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>Część 2. Ochrona przed wyłudzaniem informacji w UOS i Ochrona usługi Office 365 w usłudze Defender
+## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>Część 2 — Ochrona przed wyłudzaniem informacji w ramach EOP i Ochrona usługi Office 365 w usłudze Defender
 
-[Ochrona przed wyłudzaniem informacji](anti-phishing-protection.md) jest dostępna w subskrypcjach, które zawierają [usługę EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Zaawansowana ochrona przed wyłudzaniem informacji jest [dostępna w Ochrona usługi Office 365 w usłudze Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+[Ochrona przed wyłudzaniem informacji](anti-phishing-protection.md) jest dostępna w subskrypcjach obejmujących [operacje EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Zaawansowana ochrona przed wyłudzaniem informacji jest dostępna w [Ochrona usługi Office 365 w usłudze Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-Aby uzyskać więcej informacji na temat zalecanych ustawień zasad ochrony przed wyłudzaniem informacji, zobacz Ustawienia zasad ochrony przed wyłudzaniem informacji [eOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) i Ustawienia zasad ochrony przed wyłudzaniem informacji w [programie Ochrona usługi Office 365 w usłudze Microsoft Defender](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
+Aby uzyskać więcej informacji na temat zalecanych ustawień zasad ochrony przed wyłudzaniem informacji, zobacz [Ustawienia zasad ochrony przed wyłudzaniem informacji](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) i [Ustawienia zasad ochrony przed wyłudzaniem informacji w usłudze Ochrona usługi Office 365 w usłudze Microsoft Defender](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-Poniżej opisano procedurę konfigurowania domyślnych zasad ochrony przed wyłudzaniem informacji. Ustawienia, które są dostępne tylko w Ochrona usługi Office 365 w usłudze Defender są wyraźnie oznaczone.
+W poniższej procedurze opisano sposób konfigurowania domyślnych zasad ochrony przed wyłudzaniem informacji. Ustawienia dostępne tylko w Ochrona usługi Office 365 w usłudze Defender są wyraźnie oznaczone.
 
-1. Otwórz stronę **ochrony przed wyłudzaniem** informacji w portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com/antiphishing>.
+1. Otwórz stronę **Ochrona przed wyłudzaniem informacji** w portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com/antiphishing>.
 
-2. Na stronie **Ochrona przed wyłudzaniem** informacji wybierz zasady o nazwie **Office365 AntiPhish Default (domyślne** ), klikając nazwę.
+2. Na stronie **Ochrona przed wyłudzaniem informacji** wybierz zasady o nazwie **Office365 AntiPhish Default (domyślnie),** klikając nazwę.
 
-3. W wyświetlonym wysuwanych szczegółach zasad skonfiguruj następujące ustawienia:
-   - **Próg wyłudzania & ochrony** : Kliknij **pozycję Edytuj ustawienia ochrony** i skonfiguruj następujące ustawienia w otwieranych wysuwanych menu:
-     - **Próg wiadomości e-mail**<sup>\*</sup> wyłudzających informacje: Wybierz **wartość 2 — Agresywna** (standardowa) lub **3 – Bardziej** rygorystyczna (rygorystyczna).
-     - **Sekcja Personifikacja**<sup>\*</sup>: Skonfiguruj następujące wartości:
-       - Wybierz pozycję Włącz ochronę **użytkowników, kliknij** wyświetlony link Zarządzaj **(nn** ), a następnie dodaj wewnętrznych i zewnętrznych nadawców w celu ochrony przed personifikacji, na przykład członków zarządu organizacji, dyrektora generalnego, dyrektora generalnego i innych wyższego kierownictwa.
-       - Wybierz **pozycję Włącz ochronę domen**, a następnie skonfiguruj wyświetlone następujące ustawienia:
-         - Wybierz **pozycję Uwzględnij domeny, których jestem** właścicielem, aby chronić wewnętrznych nadawców w zaakceptowanych domenach (widoczne po kliknięciu pozycji **Wyświetl moje** domeny) przed personifikacji.
-         - Aby chronić nadawców w innych domenach **, wybierz** pozycję Uwzględnij domeny niestandardowe, kliknij link Zarządzaj **domenami niestandardowymi (nn** ), który zostanie wyświetlony, a następnie dodaj inne domeny w celu ochrony przed personifikacji.
-     - **Dodawanie sekcji zaufanych**<sup>\*</sup> nadawców i domen: Kliknij pozycję Zarządzaj **(nn)** zaufanymi nadawcami i domenami, aby w razie potrzeby skonfigurować wyjątki nadawcy i domeny nadawcy na potrzeby ochrony personifikacji.
-     - Ustawienia analizy skrzynki pocztowej <sup>\*</sup>: Upewnij się **, że** zaznaczono opcję Włącz analizę skrzynek pocztowych i **Włącz analizę dla ochrony personifikacji** .
-     - **Sekcja Fałsz** : Sprawdź, czy **jest zaznaczona opcja Włącz analizę fałszowania** .
+3. W wyświetlonym oknie wysuwowym szczegółów zasad skonfiguruj następujące ustawienia:
+   - **Próg wyłudzania informacji & sekcji ochrony** : Kliknij pozycję **Edytuj ustawienia ochrony** i skonfiguruj następujące ustawienia w otwierającym się wysuwie:
+     - **Próg wiadomości e-mail wyłudzającej informacje**: wybierz **pozycję 2 — agresywne** (standardowe) lub **3 — bardziej agresywne** (ścisłe).<sup>\*</sup>
+     - Sekcja <sup>\*</sup> **personifikacji**: Skonfiguruj następujące wartości:
+       - Wybierz pozycję **Włącz użytkowników do ochrony**, kliknij wyświetlony link **Zarządzaj nadawcami (nn** ), a następnie dodaj wewnętrznych i zewnętrznych nadawców w celu ochrony przed personifikacją, takimi jak członkowie zarządu organizacji, dyrektor generalny, dyrektor finansowy i inni starsi liderzy.
+       - Wybierz pozycję **Włącz domeny do ochrony**, a następnie skonfiguruj następujące wyświetlane ustawienia:
+         - Wybierz **pozycję Dołącz domeny, których jestem właścicielem** , aby chronić wewnętrznych nadawców w zaakceptowanych domenach (widocznych przez kliknięcie pozycji **Wyświetl moje domeny**) przed personifikacją.
+         - Aby chronić nadawców w innych domenach, wybierz pozycję **Dołącz domeny niestandardowe**, kliknij wyświetlony link **Zarządzaj domenami niestandardowymi (nn** ), a następnie dodaj inne domeny w celu ochrony przed personifikacją.
+     - Sekcja <sup>\*</sup> **Dodawanie zaufanych nadawców i domen**: kliknij pozycję **Zarządzaj (nn) zaufanymi nadawcami i domenami**, aby skonfigurować wyjątki domeny nadawcy i nadawcy do ochrony przed personifikacją w razie potrzeby.
+     - Ustawienia <sup>\*</sup> analizy skrzynki pocztowej: sprawdź, czy **wybrano opcje Włącz analizę skrzynki pocztowej** i **Włącz analizę pod kątem ochrony przed personifikacją** .
+     - Sekcja **Fałszowanie**: sprawdź, czy **wybrano opcję Włącz analizę fałszowania**.
 
      Po zakończeniu kliknij przycisk **Zapisz**.
 
-   - **Sekcja** Akcje: Kliknij **pozycję Edytuj akcje** i skonfiguruj następujące ustawienia w oknie wysuwu, które zostanie otwarte:
-     - **Sekcja Akcje** wiadomości: Konfigurowanie następujących ustawień:
-       - **Jeśli wiadomość zostanie wykryta jako personifikowany użytkownik**<sup>\*</sup>: Wybierz **pozycję Poddaj wiadomość kwarantannie**. W **miejscu, w którym wybierzesz** zasady kwarantanny [](quarantine-policies.md) dotyczące wiadomości poddanych kwarantannie przez ochronę personifikacji użytkownika, zostanie wyświetlone okno Zastosuj zasady kwarantanny.
-       - **Jeśli wiadomość zostanie wykryta jako spersonifikowana domena**<sup>\*</sup>: Wybierz **pozycję Poddaj wiadomość kwarantannie**. Zostanie **wyświetlone okno Zastosuj zasady kwarantanny**, w którym [](quarantine-policies.md) wybierzesz zasady kwarantanny dotyczące wiadomości poddanych kwarantannie przez ochronę personifikacji domeny.
-       - **Jeśli w analizie**<sup>\*</sup> skrzynki pocztowej zostanie wykryty personifikowany użytkownik: wybierz pozycję Przenieś wiadomość do folderów wiadomości-śmieci **adresatów** (standardowe) lub Poddaj ją kwarantannie **(Ścisłe** ). Jeśli wybierzesz pozycję  **Poddaj** wiadomość kwarantannie, pojawi się pole Zastosuj zasady [](quarantine-policies.md) kwarantanny w miejscu, w którym wybierzesz zasady kwarantanny dotyczące wiadomości poddanych kwarantannie przez ochronę skrzynki pocztowej.
-       - **Jeśli wiadomość zostanie wykryta jako** fałszywa: Wybierz pozycję Przenieś wiadomość do folderów wiadomości-śmieci **adresatów** (standardowe) lub Poddaj ją kwarantannie **(ścisłe** ).  Jeśli wybierzesz pozycję  **Poddaj** kwarantannie wiadomość, zostanie wyświetlone okno Zastosuj zasady [](quarantine-policies.md) kwarantanny w miejscu, w którym wybierzesz zasady kwarantanny dotyczące wiadomości poddanych kwarantannie przez ochronę przed fałszerami.
-     - **Porady dotyczące & wskaźników** : Konfigurowanie następujących ustawień:
+   - Sekcja **Akcje**: Kliknij pozycję **Edytuj akcje** i skonfiguruj następujące ustawienia w wyświetlonym wysuwie:
+     - Sekcja **Akcje komunikatu**: Skonfiguruj następujące ustawienia:
+       - **Jeśli komunikat zostanie wykryty jako personifikowany użytkownik**<sup>\*</sup>: wybierz pozycję **Kwarantanna komunikatu**. Zostanie **wyświetlone pole Zastosuj zasady kwarantanny** , w którym [wybierzesz zasady kwarantanny](quarantine-policies.md) , które mają zastosowanie do komunikatów poddawanych kwarantannie przez ochronę przed personifikacją użytkowników.
+       - **Jeśli komunikat zostanie wykryty jako domena personifikowana**: wybierz pozycję **Kwarantanna komunikatu**.<sup>\*</sup> Zostanie **wyświetlone pole Zastosuj zasady kwarantanny** , w którym [wybierzesz zasady kwarantanny](quarantine-policies.md) , które mają zastosowanie do komunikatów poddawanych kwarantannie przez ochronę przed personifikacją domeny.
+       - **Jeśli analiza skrzynki pocztowej wykryje personifikowanego użytkownika**<sup>\*</sup>: wybierz pozycję **Przenieś wiadomość do folderów Wiadomości-śmieci adresatów** (Standardowa) lub **Kwarantanna wiadomości** (ścisła). Jeśli **wybierzesz pozycję Kwarantanna wiadomości**, zostanie **wyświetlone pole Zastosuj zasady kwarantanny** , w którym wybierzesz [zasady kwarantanny](quarantine-policies.md) , które mają zastosowanie do wiadomości, które zostały poddane kwarantannie przez ochronę przed analizą skrzynki pocztowej.
+       - **Jeśli wiadomość zostanie wykryta jako sfałszowana**: wybierz pozycję **Przenieś wiadomość do folderów wiadomości-śmieci adresatów** (Standardowa) lub **Kwarantanna wiadomości** (ścisła).  Jeśli **wybierzesz pozycję Kwarantanna komunikatu**, zostanie **wyświetlone pole Zastosuj zasady kwarantanny** , w którym wybierzesz [zasady kwarantanny](quarantine-policies.md) , które mają zastosowanie do komunikatów poddawanych kwarantannie przez ochronę przed fałszowaniem danych wywiadowczych.
+     - **Wskazówki dotyczące bezpieczeństwa & sekcji wskaźników** : Skonfiguruj następujące ustawienia:
        - **Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa**: Wybierz (włącz).
-       - **Pokaż identyfikator personifikacji porada dotycząca bezpieczeństwa**<sup>\*</sup>: Wybierz (włącz).
-       - **Pokaż domenę personifikacji porada dotycząca bezpieczeństwa**<sup>\*</sup>: Wybierz (włącz).
+       - Pokaż porada dotycząca bezpieczeństwa <sup>\*</sup>**personifikacji użytkownika**: Wybierz (włącz).
+       - Pokaż porada dotycząca bezpieczeństwa <sup>\*</sup>**personifikacji domeny**: Wybierz (włącz).
        - **Pokaż nietypowe znaki personifikacji użytkownika porada dotycząca bezpieczeństwa**<sup>\*</sup>: Wybierz (włącz).
-       - **Pokaż (?) dla nieuwierzytanych nadawców w celu fałszowania**: Wybierz (włącz).
-       - **Pokaż tag "za pośrednictwem"**: Wybierz (włącz).
+       - **Pokaż (?) dla nieuwierzytelnionych nadawców pod kątem fałszowania**: Wybierz (włącz).
+       - **Pokaż tag "via"**: wybierz pozycję (włącz).
 
      Po zakończeniu kliknij przycisk **Zapisz**.
 
-   <sup>\*</sup>To ustawienie jest dostępne tylko w programie Ochrona usługi Office 365 w usłudze Defender.
+   <sup>\*</sup>To ustawienie jest dostępne tylko w Ochrona usługi Office 365 w usłudze Defender.
 
-4. Kliknij **przycisk Zapisz,** a następnie kliknij przycisk **Zamknij.**
+4. Kliknij **przycisk Zapisz** , a następnie kliknij przycisk **Zamknij**
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed wyłudzaniem informacji, zobacz Konfigurowanie zasad ochrony przed wyłudzaniem informacji w u usługi [EOP](configure-anti-phishing-policies-eop.md) i Konfigurowanie zasad ochrony przed wyłudzaniem informacji w [programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
+Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed wyłudzaniem informacji, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w usłudze EOP](configure-anti-phishing-policies-eop.md) i [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
 
-## <a name="part-3---anti-spam-protection-in-eop"></a>Część 3. Ochrona przed spamem w uciekaniu poczty eop
+## <a name="part-3---anti-spam-protection-in-eop"></a>Część 3 — Ochrona przed spamem w ramach EOP
 
-Aby uzyskać więcej informacji na temat zalecanych ustawień ochrony przed spamem, zobacz Ustawienia zasad ochrony [przed spamem W UA.](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
+Aby uzyskać więcej informacji na temat zalecanych ustawień ochrony przed spamem, zobacz [Ustawienia zasad ochrony przed spamem w usłudze EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-1. Otwórz stronę **Zasady ochrony przed spamem** w portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com/antispam>.
+1. Otwórz stronę **Zasady ochrony przed spamem** w portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com/antispam>.
 
-2. Na stronie **Zasady ochrony przed spamem** wybierz z listy zasady o nazwie Zasady przychodzące ochrony przed **spamem (** domyślne), klikając nazwę.
+2. Na stronie **Zasady ochrony przed spamem** wybierz z listy zasady o nazwie **Zasady ruchu przychodzącego ochrony przed spamem (domyślne),** klikając nazwę.
 
-3. W wyświetlonym wysuwanych szczegółach zasad skonfiguruj następujące ustawienia:
-   - **Próg masowej & właściwości spamu** : Kliknij **pozycję Edytuj próg i właściwości spamu**. W wyświetlonym wysuwu skonfiguruj następujące ustawienia:
-     - **Próg masowej poczty** e-mail: Ustaw tę wartość na 5 (Ścisłe) lub 6 (Standardowe).
-     - Pozostaw inne ustawienia na ich wartościach domyślnych (**Wyłączone** lub **Brak**).
-
-     Po zakończeniu kliknij przycisk **Zapisz**.
-
-   - **Sekcja** Akcje: Kliknij **pozycję Edytuj akcje**. W wyświetlonym wysuwu skonfiguruj następujące ustawienia:
-     - **Sekcja Akcje** wiadomości:
-       - **Spam**: sprawdź, **czy jest zaznaczona opcja Przenieś wiadomość do folderu Wiadomości-śmieci** (standardowy) lub wybierz pozycję **Poddaj wiadomość kwarantannie** (ścisłe).
-       - **Duża pewność, że spam**: Wybierz pozycję **Poddaj wiadomość kwarantannie**.
-       - **Wyłudzanie** informacji: Wybierz **pozycję Poddaj wiadomość kwarantannie**.
-       - **Wyłudzanie dużej pewności**: sprawdź **, czy jest zaznaczona opcja Sprawdź, czy jest zaznaczona opcja Poddaj** wiadomości kwarantannie.
-       - **Zbiorcze**: sprawdź, **czy jest zaznaczona opcja Przenieś wiadomość do folderu Wiadomości-śmieci** (standardowy) lub wybierz pozycję **Kwarantanna wiadomości** (ścisłe).
-
-       W przypadku każdej akcji, w której wybierzesz pozycję  Poddaj wiadomość kwarantannie **, pojawi** się pole Wybierz zasady kwarantanny w miejscu, w którym wybierzesz zasady kwarantanny dotyczące wiadomości poddanych kwarantannie przez ochronę przed spamem.[](quarantine-policies.md)
-
-     - **Zachowywanie spamu w kwarantannie przez tę wiele dni**: Sprawdź wartość **30** dni.
-     - **Włącz porady dotyczące bezpieczeństwa przed** spamem: sprawdź, czy to ustawienie jest zaznaczone (włączone).
-     - **Włączanie automatycznego przeczyszczania bez godzin:** sprawdź, czy to ustawienie jest zaznaczone (włączone).
-       - **Włącz dla wiadomości wyłudzających informacje**: sprawdź, czy to ustawienie jest zaznaczone (włączone). Aby uzyskać więcej informacji, zobacz [Automatyczne przeczyszczanie bez godzin (ZAP) w celu wyłudzania informacji](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing).
-       - **Włącz dla wiadomości-śmieci**: sprawdź, czy to ustawienie jest zaznaczone (włączone). Aby uzyskać więcej informacji, zobacz [Automatyczne przeczyszczanie bez godzin (ZAP) w przypadku spamu](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam).
+3. W wyświetlonym oknie wysuwowym szczegółów zasad skonfiguruj następujące ustawienia:
+   - **Próg zbiorczej poczty e-mail & sekcji właściwości spamu** : kliknij pozycję **Edytuj próg spamu i właściwości**. W wyświetlonym wysuwie skonfiguruj następujące ustawienia:
+     - **Próg zbiorczej poczty e-mail**: ustaw tę wartość na wartość 5 (ścisła) lub 6 (standardowa).
+     - Pozostaw inne ustawienia na wartościach domyślnych (**Wyłączone** lub **Brak**).
 
      Po zakończeniu kliknij przycisk **Zapisz**.
 
-   - **Sekcja dozwolonych i zablokowanych** nadawców i domen: Przejrzyj lub edytuj dozwolonych nadawców i dozwolone domeny zgodnie z opisem w artykule Tworzenie list zablokowanych nadawców w uchęcie [EOP](create-block-sender-lists-in-office-365.md) lub Tworzenie list bezpiecznych nadawców w [uchcie usługi EOP](create-safe-sender-lists-in-office-365.md).
+   - **Sekcja Akcje** : kliknij pozycję **Edytuj akcje**. W wyświetlonym wysuwie skonfiguruj następujące ustawienia:
+     - Sekcja **akcji komunikatu**:
+       - **Spam**: sprawdź, czy wybrano **opcję Przenieś wiadomość do folderu Wiadomości-śmieci** (Standardowa) lub wybierz **pozycję Wiadomość kwarantanny** (ścisła).
+       - **Spam o wysokim poziomie ufności**: wybierz **pozycję Wiadomość kwarantanny**.
+       - **Wyłudzanie informacji**: wybierz **pozycję Komunikat kwarantanny**.
+       - **Wyłudzanie informacji o wysokim poziomie ufności**: sprawdź, czy **wybrano komunikaty kwarantanny** .
+       - **Zbiorczo**: sprawdź, czy wybrano **opcję Przenieś wiadomość do folderu Wiadomości-śmieci** (Standardowa) lub wybierz **pozycję Komunikat kwarantanny** (ścisły).
+
+       Dla każdej akcji, w której **wybrano komunikat kwarantanny**, zostanie wyświetlone pole **Wyboru zasad kwarantanny** , w którym [wybierzesz zasady kwarantanny](quarantine-policies.md) , które mają zastosowanie do komunikatów poddawanych kwarantannie przez ochronę przed spamem.
+
+     - **Zachowaj spam w kwarantannie przez tyle dni**: sprawdź wartość **30** dni.
+     - **Włącz wskazówki dotyczące bezpieczeństwa spamu**: sprawdź, czy to ustawienie jest zaznaczone (włączone).
+     - **Włącz automatyczne przeczyszczanie o zerowej godzinie (ZAP)**: sprawdź, czy to ustawienie jest zaznaczone (włączone).
+       - **Włącz dla wiadomości wyłudzających informacje**: sprawdź, czy to ustawienie jest zaznaczone (włączone). Aby uzyskać więcej informacji, zobacz [Zero-hour auto przeczyszczanie (ZAP) w celu wyłudzania informacji](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing).
+       - **Włącz dla wiadomości niepożądanych**: sprawdź, czy to ustawienie jest zaznaczone (włączone). Aby uzyskać więcej informacji, zobacz [Zero-hour auto przeczyszczanie (ZAP) pod kątem spamu](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam).
+
+     Po zakończeniu kliknij przycisk **Zapisz**.
+
+   - **Sekcja Dozwolonych i zablokowanych nadawców i domen** : Przejrzyj lub edytuj dozwolonych nadawców i dozwolone domeny zgodnie z opisem w [temacie Tworzenie zablokowanych list nadawców w ramach EOP](create-block-sender-lists-in-office-365.md) lub [Tworzenie list bezpiecznych nadawców w ramach EOP](create-safe-sender-lists-in-office-365.md).
 
      Po zakończeniu kliknij przycisk **Zapisz**.
 
 4. Po wprowadzeniu wszystkich zmian kliknij przycisk **Zamknij**.
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed spamem, zobacz [Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md).
+Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed spamem, zobacz [Konfigurowanie zasad ochrony przed spamem w usłudze EOP](configure-your-spam-filter-policies.md).
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Część 4. Ochrona przed złośliwymi adresami URL i plikami (linki Sejf i załączniki Sejf w folderze Ochrona usługi Office 365 w usłudze Defender)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Część 4 — Ochrona przed złośliwymi adresami URL i plikami (linki Sejf i załączniki Sejf w Ochrona usługi Office 365 w usłudze Defender)
 
-Ochrona przed złośliwymi adresami URL i plikami po kliknięciu jest dostępna w subskrypcjach zawierających [Ochrona usługi Office 365 w usłudze Microsoft Defender.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) Te zasady są ustawiane za [pomocą Sejf załączników](safe-attachments.md) [i Sejf linków](safe-links.md).
+Ochrona przed złośliwymi adresami URL i plikami jest dostępna w subskrypcjach zawierających [Ochrona usługi Office 365 w usłudze Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Jest on konfigurowany za pomocą zasad [Sejf Załączniki](safe-attachments.md) i [linki Sejf](safe-links.md).
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Sejf załączników w aplikacji Ochrona usługi Office 365 w usłudze Microsoft Defender
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>zasady załączników Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 Aby uzyskać więcej informacji na temat zalecanych ustawień dla załączników Sejf, zobacz .[ Sejf ustawienia załączników](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
-1. Otwórz stronę **Sejf załączników** w portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com/safeattachmentv2>.
+1. Otwórz stronę **załączników Sejf** w portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com/safeattachmentv2>.
 
-2. Na stronie **Sejf Załączniki** kliknij pozycję **Ustawienia** globalne, a następnie skonfiguruj następujące ustawienia w wyświetlonym wysuwanych oknie wysuwanych:
-   - **Włącz Ochrona usługi Office 365 w usłudze Defender dla SharePoint, OneDrive i Microsoft Teams**: Włącz to ustawienie (![włącz).](../../media/scc-toggle-on.png)
+2. Na stronie **Sejf Załączniki** kliknij pozycję **Ustawienia globalne**, a następnie skonfiguruj następujące ustawienia w wyświetlonym wysuwie:
+   - **Włącz Ochrona usługi Office 365 w usłudze Defender dla SharePoint, OneDrive i Microsoft Teams**: włącz to ustawienie (![Włącz).](../../media/scc-toggle-on.png)
 
      > [!IMPORTANT]
-     > **Przed włączeniem załączników Sejf dla aplikacji SharePoint,** OneDrive i Microsoft Teams upewnij się, że rejestrowanie inspekcji jest włączone w organizacji. Ta akcja jest zazwyczaj wykonywana przez osobę, która ma rolę Dzienniki inspekcji przypisaną do Exchange Online. Aby uzyskać więcej informacji, zobacz Włączanie lub wyłączanie wyszukiwania w [dzienniku inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
+     > **Przed włączeniem Sejf Załączniki dla SharePoint, OneDrive i Microsoft Teams sprawdź, czy rejestrowanie inspekcji jest włączone w organizacji**. Ta akcja jest zwykle wykonywana przez osobę, która ma przypisaną rolę Dzienniki inspekcji w Exchange Online. Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
 
-   - **Włącz Sejf dokumenty dla Office klientów**: Włącz to ustawienie (![Włącz](../../media/scc-toggle-on.png)). Zwróć uwagę, że ta funkcja jest dostępna i znacząca tylko w przypadku wymaganych typów licencji. Aby uzyskać więcej informacji, [zobacz Sejf Dokumenty w programie Microsoft 365 E5](safe-docs.md).
-   - **Zezwalaj użytkownikom na** klikanie w widoku chronionym, Sejf plik został oznaczony jako złośliwy: Sprawdź, czy to ustawienie jest wyłączone (![przełącznik wyłączony](../../media/scc-toggle-off.png)).
+   - **Włącz Sejf Dokumenty dla klientów Office**: włącz to ustawienie (![Włącz](../../media/scc-toggle-on.png)). Należy pamiętać, że ta funkcja jest dostępna i zrozumiała tylko w przypadku wymaganych typów licencji. Aby uzyskać więcej informacji, zobacz [Sejf Documents in Microsoft 365 E5 (Dokumenty Sejf w Microsoft 365 E5](safe-docs.md)).
+   - **Zezwalaj użytkownikom na klikanie widoku chronionego, nawet jeśli Sejf Dokumenty zidentyfikowały plik jako złośliwy**: Sprawdź, czy to ustawienie jest wyłączone (![Przełącz wyłączone).](../../media/scc-toggle-off.png)
 
-   Po zakończeniu kliknij przycisk **Zapisz.**
+   Po zakończeniu kliknij pozycję **Zapisz**
 
-3. Z powrotem na **Sejf Załączniki** kliknij ikonę ![Utwórz](../../media/m365-cc-sc-create-icon.png).
+3. Po powrocie na stronę **załączników Sejf** kliknij pozycję Utwórz ikonę![.](../../media/m365-cc-sc-create-icon.png)
 
-4. W **kreatorze Sejf Załączniki** skonfiguruj następujące ustawienia:
-   - **Nadaj nazwę stronie** zasad:
-     - **Nazwa**: Wprowadź coś unikatowego i opisowego.
-     - **Opis**. Wprowadź opcjonalny opis.
-   - **Strona Użytkownicy i domeny**: ponieważ są to Twoje pierwsze zasady i prawdopodobnie chcesz zmaksymalizować zasięg, rozważ wprowadzenie zaakceptowanych [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) domen w **polu** Domeny. W przeciwnym razie możesz użyć pól **Użytkownicy** i  Grupy, aby uzyskać bardziej szczegółową kontrolę. Możesz określić wyjątki, wybierając pozycję **Wyklucz tych użytkowników, grupy i domeny i** wprowadzając wartości.
-   - **Ustawienia** stronie:
-     - **Sejf załączników odpowiedź z nieznanym złośliwym oprogramowaniem**: Wybierz **pozycję Zablokuj**.
-     - **Zasady kwarantanny**: wartość domyślna jest pusta, co oznacza, że są używane zasady AdminOnlyAccessPolicy. Zasady kwarantanny określają, co użytkownicy mogą robić w kwarantannie wiadomości i czy użytkownicy otrzymują powiadomienia kwarantanny. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
-     - **Przekieruj załączniki** **z** wykrytymi załącznikami: Włącz przekierowywanie. Włącz (wybierz) i wprowadź adres e-mail, aby otrzymywać wykryte wiadomości.
-     - **Stosowanie odpowiedzi Sejf wykrywania** załączników, jeśli skanowanie nie jest ukończone (limit czasu lub błędy): Sprawdź, czy to ustawienie jest zaznaczone.
+4. W **kreatorze tworzenia zasad tworzenia załączników Sejf**, który zostanie otwarty, skonfiguruj następujące ustawienia:
+   - **Nadaj nazwę stronie zasad** :
+     - **Nazwa**: wprowadź coś unikatowego i opisowego.
+     - **Opis**: wprowadź opcjonalny opis.
+   - **Strona Użytkownicy i domeny** : ponieważ są to pierwsze zasady i prawdopodobnie chcesz zmaksymalizować zasięg, rozważ wprowadzenie [zaakceptowanych domen](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) w polu **Domeny** . W przeciwnym razie możesz użyć pól **Użytkownicy** i **grupy** , aby uzyskać bardziej szczegółową kontrolę. Wyjątki można określić, wybierając pozycję **Wyklucz tych użytkowników, grupy i domeny** oraz wprowadzając wartości.
+   - **strona Ustawienia**:
+     - **Sejf Odpowiedzi na nieznane złośliwe oprogramowanie załączników**: wybierz pozycję **Blokuj**.
+     - **Zasady kwarantanny**: wartość domyślna jest pusta, co oznacza, że są używane zasady AdminOnlyAccessPolicy. Zasady kwarantanny określają, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie oraz czy użytkownicy otrzymują powiadomienia o kwarantannie. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+     - **Przekierowywanie załącznika z wykrytymi załącznikami** : **Włącz przekierowanie**: włącz to ustawienie (wybierz) i wprowadź adres e-mail w celu odbierania wykrytych wiadomości.
+     - **Zastosuj odpowiedź wykrywania Sejf Załączniki, jeśli skanowanie nie może zostać ukończone (przekroczenie limitu czasu lub błędy)**: Sprawdź, czy to ustawienie jest zaznaczone.
 
 5. Po zakończeniu kliknij pozycję **Prześlij**, a następnie kliknij pozycję **Gotowe**.
 
-6. (Zalecane) Jako administrator globalny lub administrator usługi SharePoint Online uruchom polecenie cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** z parametrem _DisallowInfectedFileDownload_ `$true` ustawionym w programie SharePoint Online PowerShell.
-   - `$true` blokuje wszystkie akcje (z wyjątkiem usuwania) dla wykrytych plików. Inne osoby nie mogą otwierać, przenosić, kopiować ani udostępniać wykrytych plików.
-   - `$false` blokuje wszystkie akcje z wyjątkiem przycisków Usuń i Pobierz. Inne osoby mogą zaakceptować to ryzyko i pobrać wykryty plik.
+6. (Zalecane) Jako administrator globalny lub administrator usługi SharePoint Online uruchom polecenie cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** z parametrem _DisallowInfectedFileDownload_ ustawionym na `$true` w SharePoint Online PowerShell.
+   - `$true` blokuje wszystkie akcje (z wyjątkiem usuwania) dla wykrytych plików. Użytkownicy nie mogą otwierać, przenosić, kopiować ani udostępniać wykrytych plików.
+   - `$false` blokuje wszystkie akcje z wyjątkiem usuwania i pobierania. Użytkownicy mogą zaakceptować ryzyko i pobrać wykryty plik.
 
-7. Maksymalnie 30 minut na rozpowszechnienie zmian na Microsoft 365 danych.
+7. Zaczekaj do 30 minut na rozłożenie zmian na wszystkie Microsoft 365 centrów danych.
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania Sejf zasad załączników i ustawień globalnych dotyczących załączników Sejf, zobacz następujące tematy:
+Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad załączników Sejf i ustawień globalnych dla załączników Sejf, zobacz następujące tematy:
 
-- [Konfigurowanie zasad Sejf załączników w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-attachments-policies.md)
-- [Włącz załączniki Sejf załączników wiadomości SharePoint, OneDrive i Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
+- [Konfigurowanie zasad załączników Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-attachments-policies.md)
+- [Włączanie bezpiecznych załączników dla programu SharePoint, usługi OneDrive i aplikacji Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
 - [Bezpieczne dokumenty w usłudze Microsoft 365 E5](safe-docs.md)
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Sejf linków w aplikacji Ochrona usługi Office 365 w usłudze Microsoft Defender
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>zasady linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-Aby uzyskać więcej informacji na temat zalecanych ustawień linków Sejf, zobacz Sejf [ustawienia linków](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+Aby uzyskać więcej informacji na temat zalecanych ustawień dla linków Sejf, zobacz [ustawienia linków Sejf](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
-1. Otwórz stronę **Sejf w** portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com/safelinksv2>.
+1. Otwórz stronę **łącza Sejf** w portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com/safelinksv2>.
 
-2. Na stronie **Sejf połączeń kliknij** pozycję **Ustawienia** globalne, a następnie skonfiguruj następujące ustawienia w wyświetlonym wysuwu:
-   - **Ustawienia, które dotyczą zawartości w sekcji obsługiwane Office 365 aplikacji**:
-     - **Używanie Sejf w aplikacjach Office 365:** Sprawdź, czy to ustawienie jest włączone (![włączoną](../../media/scc-toggle-on.png)).
-     - **Nie śledź, kiedy użytkownicy klikają chronione linki w Office 365 aplikacjach**: Wyłącz to ustawienie (![Wyłącz).](../../media/scc-toggle-off.png)
-     - **Nie pozwól użytkownikom na klikanie w** aplikacjach pakietu Office 365, aby przejść do pierwotnego adresu URL. Sprawdź, czy to ustawienie jest włączone (![włączoną](../../media/scc-toggle-on.png)).
+2. Na stronie **łącza Sejf** kliknij pozycję **Ustawienia globalne**, a następnie skonfiguruj następujące ustawienia w wyświetlonym wysuwie:
+   - **Ustawienia, które mają zastosowanie do zawartości w sekcji obsługiwane aplikacje Office 365**:
+     - **Użyj linków Sejf w aplikacjach Office 365**: sprawdź, czy to ustawienie jest włączone (![Włącz](../../media/scc-toggle-on.png)).
+     - **Nie śledź, kiedy użytkownicy klikają linki chronione w aplikacjach Office 365**: wyłącz to ustawienie (![Przełącz wyłączone).](../../media/scc-toggle-off.png)
+     - **Nie zezwalaj użytkownikom na klikanie oryginalnego adresu URL w aplikacjach Office 365**: Sprawdź, czy to ustawienie jest włączone (![Przełącz włączone).](../../media/scc-toggle-on.png)
 
-   Po zakończeniu kliknij przycisk **Zapisz.**
+   Po zakończeniu kliknij pozycję **Zapisz**
 
-3. Na stronie **Sejf kliknij** ikonę ![Utwórz](../../media/m365-cc-sc-create-icon.png).
+3. Po powrocie na stronę **Sejf Linki** kliknij pozycję Utwórz ikonę![.](../../media/m365-cc-sc-create-icon.png)
 
-4. W **kreatorze Sejf** tworzenie łączy konfiguruj następujące ustawienia:
-   - **Nadaj nazwę stronie** zasad:
-     - **Nazwa**: Wprowadź coś unikatowego i opisowego.
-     - **Opis**. Wprowadź opcjonalny opis.
-   - **Strona Użytkownicy i domeny**: ponieważ są to Twoje pierwsze zasady i prawdopodobnie chcesz zmaksymalizować zasięg, rozważ wprowadzenie zaakceptowanych [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) domen w **polu** Domeny. W przeciwnym razie możesz użyć pól **Użytkownicy** i  Grupy, aby uzyskać bardziej szczegółową kontrolę. Możesz określić wyjątki, wybierając pozycję **Wyklucz tych użytkowników, grupy i domeny i** wprowadzając wartości.
-   - **Adres URL & stronie ustawień ochrony** :
-     - **Akcja na potencjalnie złośliwych adresach URL w sekcji Wiadomości e-mail** :
-       - **Wł.: Sejf sprawdza** listę znanych, złośliwych linków, gdy użytkownicy klikają linki w wiadomości e-mail: Wybierz jego ustawienie (włącz).
-       - **Stosowanie Sejf do wiadomości e-mail wysyłanych** w organizacji: Wybierz to ustawienie (włącz).
-       - **Stosowanie skanowania w czasie rzeczywistym podejrzanych linków i linków, które** wskazują pliki: Wybierz to ustawienie (włącz).
-       - **Przed dostarczeniem wiadomości poczekaj**, aż skanowanie adresów URL zostanie ukończone: wybierz to ustawienie (włącz).
-       - **Nie redaguj adresów URL, sprawdzaj** tylko za pośrednictwem interfejsu API Sejf Link: Sprawdź, czy to ustawienie nie jest zaznaczone (wyłącz tę opcję).
-     - **Nie przepisuj w wiadomości e-mail** następujących adresów URL: Nie mamy konkretnych zaleceń dla tego ustawienia. Aby uzyskać więcej informacji, zobacz [listy "Nie](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) robisz ponownie następujących adresów URL" w zasadach dotyczących Sejf URL.
-     - **Akcja w przypadku potencjalnie złośliwych adresów URL w Microsoft Teams** adresach URL:
-       - ***Wł.: Sejf** sprawdza listę znanych, złośliwych linków, gdy użytkownicy klikają linki w aplikacji Microsoft Teams: Wybierz to ustawienie (włącz).
-     - **Kliknij sekcję ustawień** ochrony:
-       - **Śledź kliknięcia użytkowników**: Sprawdź, czy to ustawienie jest zaznaczone (włączone).
-       - **Pozwól użytkownikom na kliknięcie pierwotnego adresu URL**: Wyłącz to ustawienie (nie zaznaczone).
-       - Wyświetlanie **brandingu organizacji** na stronach powiadomień i ostrzeżeń: Zaznaczenie tego ustawienia (włączenie go) jest istotne dopiero po zakończeniu instrukcje w temacie [](../../admin/setup/customize-your-organization-theme.md) Dostosowywanie motywu Microsoft 365 organizacji w celu przekazania logo firmy.
-   - **Strona** powiadomienia:
-     - **Jak chcesz powiadomić użytkowników?** sekcja: Opcjonalnie możesz wybrać pozycję Użyj **niestandardowego tekstu powiadomień** , aby wprowadzić niestandardowy tekst powiadomienia. Aby przetłumaczyć niestandardowy tekst powiadomienia na język użytkownika **Microsoft Translator** użyć funkcji automatycznego tłumaczenia niestandardowego tekstu powiadomień. W przeciwnym razie **pozostaw zaznaczoną opcję Użyj domyślnego tekstu** powiadomień.
+4. W **kreatorze tworzenia zasad linków Sejf**, który zostanie otwarty, skonfiguruj następujące ustawienia:
+   - **Nadaj nazwę stronie zasad** :
+     - **Nazwa**: wprowadź coś unikatowego i opisowego.
+     - **Opis**: wprowadź opcjonalny opis.
+   - **Strona Użytkownicy i domeny** : ponieważ są to pierwsze zasady i prawdopodobnie chcesz zmaksymalizować zasięg, rozważ wprowadzenie [zaakceptowanych domen](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) w polu **Domeny** . W przeciwnym razie możesz użyć pól **Użytkownicy** i **grupy** , aby uzyskać bardziej szczegółową kontrolę. Wyjątki można określić, wybierając pozycję **Wyklucz tych użytkowników, grupy i domeny** oraz wprowadzając wartości.
+   - **Adres URL & kliknij stronę ustawień ochrony** :
+     - **Akcja dotycząca potencjalnie złośliwych adresów URL w sekcji Wiadomości e-mail** :
+       - **Włączone: Sejf Linki sprawdzają listę znanych, złośliwych linków, gdy użytkownicy klikają linki w wiadomości e-mail**: wybierz jego ustawienie (włącz).
+       - **Zastosuj Sejf Łącza do wiadomości e-mail wysyłanych w organizacji**: wybierz to ustawienie (włącz).
+       - **Zastosuj skanowanie adresów URL w czasie rzeczywistym w poszukiwaniu podejrzanych linków i linków wskazujących pliki**: wybierz to ustawienie (włącz).
+       - **Przed dostarczeniem komunikatu poczekaj na ukończenie skanowania adresu URL**: wybierz to ustawienie (włącz).
+       - **Nie należy ponownie pisać adresów URL, sprawdzaj tylko za pośrednictwem interfejsu API linków Sejf**: Sprawdź, czy to ustawienie nie jest zaznaczone (wyłącz).
+     - **Nie należy ponownie pisać następujących adresów URL w wiadomości e-mail**: Nie mamy konkretnych zaleceń dotyczących tego ustawienia. Aby uzyskać więcej informacji, zobacz [artykuł "Nie przepisuj ponownie następujących adresów URL" list w zasadach linków Sejf](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+     - **Akcja dotycząca potencjalnie złośliwych adresów URL w sekcji Microsoft Teams**:
+       - ***Włączone: Sejf Linki sprawdzają listę znanych, złośliwych linków, gdy użytkownicy klikają linki w Microsoft Teams**: wybierz to ustawienie (włącz).
+     - **Kliknij sekcję ustawień ochrony** :
+       - **Śledzenie kliknięć użytkownika**: sprawdź, czy to ustawienie jest zaznaczone (włączone).
+       - **Zezwalaj użytkownikom na klikanie oryginalnego adresu URL**: wyłącz to ustawienie (nie zaznaczono).
+       - **Wyświetlanie znakowania organizacji na stronach powiadomień i ostrzeżeń**: wybranie tego ustawienia (włączenie go) ma znaczenie dopiero po wykonaniu instrukcji w [temacie Dostosowywanie motywu Microsoft 365 dla organizacji](../../admin/setup/customize-your-organization-theme.md) w celu przekazania logo firmy.
+   - Strona **powiadomień**:
+     - **Jak chcesz powiadomić użytkowników?** sekcja: Opcjonalnie możesz wybrać pozycję **Użyj niestandardowego tekstu powiadomienia** , aby wprowadzić dostosowany tekst powiadomienia do użycia. Możesz również wybrać pozycję **Użyj Microsoft Translator do automatycznej lokalizacji**, aby przetłumaczyć niestandardowy tekst powiadomienia na język użytkownika. W przeciwnym razie pozostaw **zaznaczony domyślny tekst powiadomienia** .
 
 5. Po zakończeniu kliknij pozycję **Prześlij**, a następnie kliknij pozycję **Gotowe**.
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania Sejf linków i ustawień globalnych linków do witryn Sejf, zobacz następujące tematy:
+Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad łączy Sejf i ustawień globalnych dla linków Sejf, zobacz następujące tematy:
 
-- [Konfigurowanie zasad Sejf linków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-links-policies.md)
-- [Konfigurowanie ustawień globalnych linków Sejf w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-global-settings-for-safe-links.md)
+- [Konfigurowanie zasad linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-links-policies.md)
+- [Konfigurowanie ustawień globalnych dla linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-global-settings-for-safe-links.md)
 
-### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>Teraz możesz skonfigurować alerty dotyczące wykrytych plików w SharePoint Online lub OneDrive dla Firm
+### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>Teraz skonfiguruj alerty dla wykrytych plików w usłudze SharePoint Online lub OneDrive dla Firm
 
-Aby otrzymywać powiadomienia, gdy plik w u SharePoint Online lub OneDrive dla Firm został zidentyfikowany jako złośliwy, możesz skonfigurować alert w sposób opisany w tej sekcji.
+Aby otrzymywać powiadomienia, gdy plik w usłudze SharePoint Online lub OneDrive dla Firm został zidentyfikowany jako złośliwy, możesz skonfigurować alert zgodnie z opisem w tej sekcji.
 
-1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do tematu Zasady **&-mail** \> **i zasad & alertów**\>.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do obszaru **Zasady** & **zasad** \> & **współpracy** \> & poczty e-mail.
 
 2. Na stronie **Zasady alertów** kliknij pozycję **Nowe zasady alertów**.
 
-3. Zostanie **otwarty kreator Nowych zasad** alertów. Na **stronie Nazwa** skonfiguruj następujące ustawienia:
-   - **Nazwa**: Wprowadź unikatową i opisową nazwę. Możesz na przykład wpisać złośliwe pliki w bibliotekach.
-   - **Opis**. Wprowadź opcjonalny opis.
-   - **Ważność**: Wybierz **pozycję Niski**, **Średni** lub **Wysoki**.
-   - **Kategoria**: Wybierz **pozycję Zarządzanie zagrożeniami**.
+3. Zostanie otwarty kreator **nowych zasad alertów** . Na stronie **Nazwa** skonfiguruj następujące ustawienia:
+   - **Nazwa**: wprowadź unikatową i opisową nazwę. Na przykład można wpisać złośliwe pliki w bibliotekach.
+   - **Opis**: wprowadź opcjonalny opis.
+   - **Ważność**: wybierz pozycję **Niski**, **Średni** lub **Wysoki**.
+   - **Kategoria**: wybierz pozycję **Zarządzanie zagrożeniami**.
 
-   Po zakończeniu kliknij przycisk **Dalej.**
+   Po zakończeniu kliknij przycisk **Dalej**
 
-4. Na stronie **Tworzenie ustawień alertów** skonfiguruj następujące ustawienia:
-   - **Czego chcesz ostrzegać?** sekcja: **Aktywność jest wykrywana** \> **w pliku w złośliwym oprogramowaniu**.
-   - **Jak chcesz wyzwolić sekcję alertu** : Sprawdź **za każdym** razem, gdy działanie jest zaznaczone.
+4. Na stronie **Tworzenie ustawień alertu** skonfiguruj następujące ustawienia:
+   - **Na czym chcesz otrzymywać alerty?** sekcja: **Działanie to** \> **Wykryte złośliwe oprogramowanie w pliku**.
+   - **Jak chcesz, aby alert został wyzwolony** , sekcja: Weryfikowanie **za każdym razem, gdy działanie jest zgodne z regułą** .
 
-   Po zakończeniu kliknij przycisk **Dalej.**
+   Po zakończeniu kliknij przycisk **Dalej**
 
 5. Na stronie **Ustawianie adresatów** skonfiguruj następujące ustawienia:
-   - **Wysyłanie powiadomień e-mail**: Sprawdź, czy to ustawienie jest zaznaczone.
-   - **Adresaci wiadomości e-mail**: wybierz co najmniej jednego administratora globalnego, administratora zabezpieczeń lub czytelnika zabezpieczeń, którzy powinni otrzymać powiadomienie po wykryciu złośliwego pliku.
-   - **Dzienny limit powiadomień**: Sprawdź **, czy nie wybrano limitu** .
+   - **Wysyłanie powiadomień e-mail**: sprawdź, czy to ustawienie jest zaznaczone.
+   - **Adresaci wiadomości e-mail**: wybierz co najmniej jednego administratora globalnego, administratora zabezpieczeń lub czytelników zabezpieczeń, którzy powinni otrzymywać powiadomienia po wykryciu złośliwego pliku.
+   - **Dzienny limit powiadomień**: sprawdź, czy nie wybrano **żadnego limitu** .
 
-   Po zakończeniu kliknij przycisk **Dalej.**
+   Po zakończeniu kliknij przycisk **Dalej**
 
-6. Na **stronie Przeglądanie ustawień przejrzyj** ustawienia, sprawdź, czy jest zaznaczona opcja **Tak,** włącz ją od razu, a następnie kliknij przycisk **Zakończ.**
+6. Na stronie **Przeglądanie ustawień przejrzyj** ustawienia, sprawdź opcję **Tak, włącz ją od razu** , a następnie kliknij przycisk **Zakończ**
 
-Aby dowiedzieć się więcej o zasadach alertów, zobacz [Zasady alertów w Centrum zgodności platformy Microsoft 365](../../compliance/alert-policies.md).
+Aby dowiedzieć się więcej na temat zasad alertów, zobacz [Zasady alertów w portalu zgodności usługi Microsoft Purview](../../compliance/alert-policies.md).
 
 > [!NOTE]
-> Po zakończeniu konfigurowania możesz rozpocząć badania obciążenia pracą, korzystając z poniższych linków:
+> Po zakończeniu konfigurowania użyj tych linków, aby rozpocząć badania obciążeń:
 >
 > - [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report)
-> - [Zarządzanie plikami poddanymi kwarantannie w portalu Microsoft 365 Defender w programie Ochrona usługi Office 365 w usłudze Defender](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
-> - [Co należy zrobić w przypadku, gdy złośliwy plik zostanie znaleziony w SharePoint Online, OneDrive lub Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
-> - [Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako administrator w Microsoft 365](manage-quarantined-messages-and-files.md)
+> - [Zarządzanie plikami poddanymi kwarantannie w Ochrona usługi Office 365 w usłudze Defender za pomocą portalu Microsoft 365 Defender](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+> - [Co zrobić, gdy złośliwy plik zostanie znaleziony w usłudze SharePoint Online, OneDrive lub Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator w Microsoft 365](manage-quarantined-messages-and-files.md)
 
-## <a name="post-setup-tasks-and-next-steps"></a>Zadania po instalacji i kolejne kroki
+## <a name="post-setup-tasks-and-next-steps"></a>Zadania po instalacji i następne kroki
 
-Po skonfigurowaniu funkcji ochrony przed zagrożeniami pamiętaj o tym, aby monitorować ich działanie. Przejrzyj i zrecenzuj zasady, tak aby robisz to, czego potrzebujesz. Ponadto obserwuj nowe funkcje i aktualizacje usług, które mogą być dla nas wartością dodaną.
+Po skonfigurowaniu funkcji ochrony przed zagrożeniami należy monitorować działanie tych funkcji. Przejrzyj i zrewiduj zasady tak, aby robiły to, czego potrzebujesz. Ponadto należy zapoznać się z nowymi funkcjami i aktualizacjami usług, które mogą dodać wartość.
 
-|Co należy zrobić|Zasoby, aby dowiedzieć się więcej|
+|Co robić|Zasoby, aby dowiedzieć się więcej|
 |---|---|
-|Wyświetlanie raportów w celu wyświetlenia informacji o tym, jak działają funkcje ochrony przed zagrożeniami w organizacji|[Raporty zabezpieczeń poczty e-mail](view-email-security-reports.md) <p> [Raporty dla Ochrona usługi Office 365 w usłudze Microsoft Defender](view-reports-for-mdo.md) <p> [Eksplorator zagrożeń](threat-explorer.md)|
-|Okresowe przeglądanie i poprawianie zasad ochrony przed zagrożeniami zgodnie z potrzebami|[Secure Score](../defender/microsoft-secure-score.md) <p> [Microsoft 365 analizy zagrożeń i funkcji reakcji](./office-365-ti.md)|
-|Obserwowanie nowych funkcji i aktualizacji usługi|[Opcje wydania standardowego i kierowanego](../../admin/manage/release-options-in-office-365.md) <p> [Centrum wiadomości](../../admin/manage/message-center.md) <p> [Plan działania usługi Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Opisy usług](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|Zobacz, jak funkcje ochrony przed zagrożeniami działają w Organizacji, wyświetlając raporty|[Raporty zabezpieczeń poczty e-mail](view-email-security-reports.md) <p> [Raporty dla Ochrona usługi Office 365 w usłudze Microsoft Defender](view-reports-for-mdo.md) <p> [Eksplorator zagrożeń](threat-explorer.md)|
+|Okresowe przeglądanie i poprawianie zasad ochrony przed zagrożeniami w razie potrzeby|[Wskaźnik bezpieczeństwa](../defender/microsoft-secure-score.md) <p> [Microsoft 365 funkcje badania zagrożeń i reagowania na nie](./office-365-ti.md)|
+|Obejrzyj nowe funkcje i aktualizacje usługi|[Opcje wersji standardowej i docelowej](../../admin/manage/release-options-in-office-365.md) <p> [Centrum wiadomości](../../admin/manage/message-center.md) <p> [Plan działania usługi Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Opisy usług](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

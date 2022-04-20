@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Często zadawane pytania na temat importowania plików PST
+  title: Importowanie plików PST — często zadawane pytania
   f1.keywords:
   - NOCSH
   ms.author: markjjo
@@ -17,237 +17,237 @@ metadata:
   - MET150
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
-  description: Ten artykuł zawiera odpowiedzi na niektóre często zadawane pytania dla administratorów dotyczące importowania plików PST do Microsoft 365 przy użyciu usługi importowania Office 365 importowania.
-  ms.openlocfilehash: dafa5b5e0b95fe2ff1aac345093f2ebb84106d26
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  description: Ten artykuł zawiera odpowiedzi na kilka często zadawanych pytań dla administratorów dotyczących importowania plików PST do Microsoft 365 przy użyciu usługi Office 365 Import.
+  ms.openlocfilehash: c7f2e11120fbac275104f30b57d98c937e17886e
+  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63680437"
-title: Często zadawane pytania na temat importowania plików PST
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64939856"
+title: Często zadawane pytania dotyczące importowania plików PST
 summary: >
-  **Ten artykuł jest dla administratorów. Chcesz zaimportować pliki PST do swojej własnej skrzynki pocztowej? Zobacz [Importowanie wiadomości e-mail, kontaktów i kalendarza Outlook pliku pst.](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+  **Ten artykuł jest przeznaczony dla administratorów. Czy chcesz zaimportować pliki PST do własnej skrzynki pocztowej? Zobacz [Importowanie wiadomości e-mail, kontaktów i kalendarza z pliku pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
 
 
-  Oto niektóre często zadawane pytania dotyczące używania usługi importowania Office 365 do zbiorczego importowania plików PST do Microsoft 365 pocztowych. Aby uzyskać więcej informacji na temat importowania plików PST, zobacz Informacje [na temat importowania plików PST do Office 365](./importing-pst-files-to-office-365.md).
+  Poniżej przedstawiono kilka często zadawanych pytań dotyczących używania usługi Office 365 Import do zbiorczego importowania plików PST do Microsoft 365 skrzynek pocztowych. Aby uzyskać więcej informacji na temat importowania plików PST, zobacz [Temat importowania plików PST do Office 365](./importing-pst-files-to-office-365.md).
 
 
-  ## <a name="using-network-upload-to-import-pst-files"></a>Importowanie plików PST za pomocą przekazywania sieciowego
+  ## <a name="using-network-upload-to-import-pst-files"></a>Importowanie plików PST przy użyciu przekazywania sieci
 
 
-  Aby uzyskać instrukcje krok po kroku, zobacz Importowanie plików PST do plików [PST za pomocą przekazywania sieciowego Office 365](use-network-upload-to-import-pst-files.md).
+  Aby uzyskać instrukcje krok po kroku, zobacz [Używanie przekazywania sieci do importowania plików PST do Office 365](use-network-upload-to-import-pst-files.md).
 sections:
 - name: Ogólne
   questions:
   - question: >
-      Jakie uprawnienia są wymagane do tworzenia zadań importu w usłudze Office 365 importowania?
+      Jakie uprawnienia są wymagane do tworzenia zadań importu w usłudze Office 365 Import?
     answer: >
-      Aby tworzyć zadania importowania w Exchange Online i importować pliki PST do skrzynek pocztowych użytkowników, musisz mieć przypisaną rolę importowania i eksportowania skrzynek Exchange Online Centrum zgodności platformy Microsoft 365 skrzynek pocztowych użytkowników. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać siebie lub innych użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje "Dodawanie roli do grupy ról" lub "Tworzenie grupy ról" w tece Zarządzanie grupami ról w [Exchange Online.](/Exchange/permissions-exo/role-groups)
+      Musisz mieć przypisaną rolę eksportu importu skrzynki pocztowej w Exchange Online, aby utworzyć zadania importu w portalu zgodności usługi Microsoft Purview i zaimportować pliki PST do skrzynek pocztowych użytkowników. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę Import eksportu skrzynki pocztowej można dodać do grupy ról Zarządzanie organizacją. Możesz też utworzyć nową grupę ról, przypisać rolę Importuj eksport skrzynki pocztowej, a następnie dodać siebie lub innych użytkowników jako członka. Aby uzyskać więcej informacji, zobacz sekcje "Dodawanie roli do grupy ról" lub "Tworzenie grupy ról" w [temacie Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
 
 
-      Oprócz roli importowania i eksportowania skrzynek pocztowych należy również przypisać rolę adresatów poczty w programie Exchange Online. Domyślnie ta rola jest przypisana do grup ról Zarządzanie organizacją i Zarządzanie adresatami w programie Exchange Online.
+      Oprócz roli Importuj eksport skrzynki pocztowej musisz również mieć przypisaną rolę Adresaci poczty w Exchange Online. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie organizacjami i Zarządzanie adresatami w Exchange Online.
 
 
       > [!TIP]
 
-      > Rozważ utworzenie w programie Exchange Online grupy ról przeznaczonej specjalnie do importowania plików PST do Office 365. Aby uzyskać minimalny poziom uprawnień wymaganych do importowania plików PST, przypisz role importowania i eksportowania skrzynek pocztowych oraz adresatów poczty do nowej grupy ról, a następnie dodaj do nich członków.
+      > Rozważ utworzenie nowej grupy ról w Exchange Online, która jest przeznaczona specjalnie do importowania plików PST do Office 365. Aby uzyskać minimalny poziom uprawnień wymaganych do importowania plików PST, przypisz role Eksportuj i Adresaci poczty skrzynki pocztowej do nowej grupy ról, a następnie dodaj członków.
   - question: >
-      Gdzie jest dostępne przekazywanie sieciowe?
+      Gdzie jest dostępne przekazywanie sieci?
     answer: >
-      Przekazywanie sieciowe jest obecnie dostępne w tych regionach: Stany Zjednoczone, Kanada, Brazylia, Zjednoczone Królestwo, Francja, Niemcy, Szwajcaria, Norwegia, Europa, Europa, Indie, Azja Wschodnia, Azja Południowo-Wschodnia, Japonia, Republika Korei, Australia i Zjednoczone Emiraty Arabskie. Przekazywanie sieciowe będzie w przyszłości dostępne w większej liczby regionów.
+      Przekazywanie sieci jest obecnie dostępne w następujących regionach: Stany Zjednoczone, Kanada, Brazylia, Wielka Brytania, Francja, Niemcy, Szwajcaria, Norwegia, Europa, Indie, Azja Wschodnia, Azja Południowo-Wschodnia, Japonia, Republika Korei, Australia i Zjednoczone Emiraty Arabskie (ZEA). Przekazywanie sieci będzie dostępne w kolejnych regionach w przyszłości.
   - question: >
-      Jaka jest cena za importowanie plików PST przy użyciu przekazywania sieciowego?
+      Jakie są ceny importowania plików PST przy użyciu przekazywania sieci?
     answer: >
-      Importowanie plików PST za pomocą przekazywania sieciowego jest bezpłatne.
+      Importowanie plików PST za pomocą przekazywania sieci jest bezpłatne.
 
 
-      Oznacza to również, że po usunięciu plików PST z obszaru usługi Azure Storage nie są one już wyświetlane na liście plików dla ukończonego zadania importu w centrum centrum administracyjne platformy Microsoft 365. Mimo że zadanie importu może być nadal wyświetlane na stronie **Importowanie** danych do Office 365, lista plików PST może być pusta, gdy wyświetlasz szczegóły starszych zadań importu.
+      Oznacza to również, że po usunięciu plików PST z obszaru usługi Azure Storage nie będą one już wyświetlane na liście plików dla ukończonego zadania importowania w Centrum administracyjne platformy Microsoft 365. Mimo że zadanie importu może nadal znajdować się na stronie **Importuj dane do Office 365**, lista plików PST może być pusta podczas wyświetlania szczegółów starszych zadań importu.
   - question: >
-      Która wersja formatu pliku PST jest obsługiwana na przykład podczas importowania danych do programu Office 365?
+      Jaka wersja formatu pliku PST jest obsługiwana w przypadku importowania do Office 365?
     answer: >
-      Format pliku PST ma dwie wersje: ANSI i Unicode. Zalecamy importowanie plików w formacie PST Unicode. Jednak pliki w formacie PST ANSI, na przykład dla języków, które używają zestawu znaków dwu bajtowych (DBCS), można również importować do Office 365. Aby uzyskać więcej informacji na temat importowania plików PST ANSI, zobacz krok 4 w tece Importowanie plików PST organizacji do importowania ich do plików [PST Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file).
+      Istnieją dwie wersje formatu pliku PST: ANSI i Unicode. Zalecamy importowanie plików korzystających z formatu pliku PST unicode. Jednak pliki korzystające z formatu pliku ANSI PST, takie jak te dla języków używających zestawu znaków dwubajtowych (DBCS), można również zaimportować do Office 365. Aby uzyskać więcej informacji na temat importowania plików ANSI PST, zobacz Krok 4 w temacie [Używanie przekazywania sieci do importowania plików PST organizacji do Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file).
 
 
-      Ponadto pliki PST z programu Outlook 2007 i nowszych wersji można importować do Office 365.
+      Ponadto pliki PST z Outlook 2007 r. i nowszych wersji można zaimportować do Office 365.
   - question: >
-      Po przesłaniu plików PST do obszaru Storage Azure, jak długo są one przechowywane w usłudze Azure, zanim zostaną usunięte?
+      Jak długo są przechowywane na platformie Azure przed ich usunięciem po przekazaniu plików PST do obszaru usługi Azure Storage?
     answer: >
-      Gdy importujesz pliki PST przy użyciu metody przekazywania sieciowego, przekaż je do kontenera obiektów blob platformy Azure o nazwie `ingestiondata`. Jeśli na stronie Importowanie plików **PST** w aplikacji Centrum zgodności platformy Microsoft 365 nie ma zadań importu, wszystkie pliki PST `ingestiondata` w kontenerze na platformie Azure są usuwane 30 dni po utworzeniu ostatniego zadania importu w Centrum zgodności platformy Microsoft 365. Oznacza to również, że musisz utworzyć nowe zadanie importu w usłudze Centrum zgodności platformy Microsoft 365 (opisane w kroku 5 w instrukcjach dotyczących przekazywania sieci) w ciągu 30 dni od przekazania plików PST do platformy Azure.
+      W przypadku importowania plików PST za pomocą metody przekazywania sieci należy przekazać je do kontenera obiektów blob platformy Azure o nazwie `ingestiondata`. Jeśli na stronie **Importowanie plików PST** w portalu zgodności nie są w toku żadne zadania importu, wszystkie pliki PST w `ingestiondata` kontenerze na platformie Azure zostaną usunięte 30 dni po utworzeniu ostatniego zadania importu w portalu zgodności. Oznacza to również, że musisz utworzyć nowe zadanie importu w portalu zgodności (opisanym w kroku 5 w instrukcjach przekazywania sieci) w ciągu 30 dni od przekazania plików PST na platformę Azure.
 
 
-      Oznacza to również, że po usunięciu plików PST z obszaru usługi Azure Storage nie są one już wyświetlane na liście plików dla ukończonego zadania importu w centrum Centrum zgodności platformy Microsoft 365. Mimo że zadanie importu może być nadal wyświetlane na stronie Importowanie plików **PST** w programie Centrum zgodności platformy Microsoft 365, lista plików PST może być pusta, gdy wyświetlasz szczegóły starszych zadań importu.
+      Oznacza to również, że po usunięciu plików PST z obszaru usługi Azure Storage nie będą one już wyświetlane na liście plików dla ukończonego zadania importowania w portalu zgodności. Mimo że zadanie importu może nadal znajdować się na stronie **Importowanie plików PST** w portalu zgodności, lista plików PST może być pusta podczas wyświetlania szczegółów starszych zadań importowania.
   - question: >
       Jak długo trwa importowanie pliku PST do skrzynki pocztowej?
     answer: >
-      Zależy to od wydajności sieci, ale zwykle każdy terabajt (TB) danych jest przekazywany do obszaru usługi Azure Storage organizacji po kilku godzinach. Po skopiowaniu plików PST do obszaru usługi Azure Storage plik PST jest importowany do skrzynki pocztowej usługi Microsoft 365 z szybkością około 24 GB na dzień<sup>\*</sup>. Jeśli taka szybkość nie spełnia wymagań, warto rozważyć migrowanie danych poczty e-mail do Office 365. Aby uzyskać więcej informacji, zobacz [Sposoby migrowania wielu kont e-mail do Office 365](/Exchange/mailbox-migration/mailbox-migration).
+      Zależy to od pojemności sieci, ale przekazywanie każdego terabajtu (TB) danych do obszaru usługi Azure Storage dla organizacji trwa zwykle kilka godzin. Po skopiowaniu plików PST do obszaru usługi Azure Storage plik PST jest importowany do skrzynki pocztowej Microsoft 365 z szybkością około 24 GB dziennie<sup>\*</sup>. Jeśli ta szybkość nie spełnia Twoich potrzeb, możesz rozważyć inne metody migracji danych poczty e-mail do Office 365. Aby uzyskać więcej informacji, zobacz [Sposoby migracji wielu kont e-mail do Office 365](/Exchange/mailbox-migration/mailbox-migration).
 
 
-      <sup>\*</sup> Ta stopa nie jest gwarantowana. Obciążenie serwera i problemy przejściowych z wydajnością mogą zmniejszyć tę szybkość.
+      <sup>\*</sup> Ta stawka nie jest gwarantowana. Problemy z obciążeniem serwera i przejściową wydajnością mogą zmniejszyć tę szybkość.
 
 
-      Jeśli różne pliki PST są importowane do różnych docelowych skrzynek pocztowych, proces importowania odbywa się równolegle. Innymi słowy, każda para PLIK PST/skrzynka pocztowa jest importowana jednocześnie. Jeśli wiele plików PST zostanie zaimportowanych do tej samej skrzynki pocztowej, zostaną one zaimportowane sekwencyjnie (po kolei), nie jednocześnie.
+      Jeśli różne pliki PST są importowane do różnych docelowych skrzynek pocztowych, proces importowania odbywa się równolegle; Innymi słowy, każda para PST/skrzynka pocztowa jest importowana jednocześnie. Jeśli wiele plików PST zostanie zaimportowanych do tej samej skrzynki pocztowej, zostaną one zaimportowane sekwencyjnie (pojedynczo), a nie jednocześnie.
   - question: >
-      Jak proces importowania pliku PST obsługuje zduplikowane elementy poczty e-mail?
+      Jak proces importowania PST obsługuje zduplikowane elementy poczty e-mail?
     answer: >
-      Proces importowania pliku PST sprawdza zduplikowane elementy i nie kopiuje elementów z pliku PST do skrzynki pocztowej lub archiwum, jeśli w folderze docelowym w docelowej skrzynce pocztowej lub archiwum docelowym istnieje pasujący element. Jeśli ponownie zaimportowano ten sam plik PST i określono inny folder docelowy (przy użyciu właściwości TargetRootFolder w pliku mapowania importu pliku PST) niż ten określony w poprzednim zadaniu importu, wszystkie elementy w pliku PST zostaną ponownie zaimportowane.
+      Proces importowania PST sprawdza zduplikowane elementy i nie kopiuje elementów z pliku PST do skrzynki pocztowej lub archiwum, jeśli w folderze docelowym w docelowej skrzynce pocztowej lub archiwum docelowym istnieje zgodny element. Jeśli ponownie zaimportujesz ten sam plik PST i określisz inny folder docelowy (przy użyciu właściwości TargetRootFolder w pliku mapowania importu PST) niż ten określony w poprzednim zadaniu importowania, wszystkie elementy w pliku PST zostaną ponownie zaimportowane.
   - question: >
-      Czy istnieje limit rozmiaru wiadomości podczas importowania plików PST?
+      Czy istnieje limit rozmiaru komunikatu podczas importowania plików PST?
     answer: >
-      Tak. Jeśli plik PST zawiera element skrzynki pocztowej o rozmiarze ponad 150 MB, ten element zostanie pominięty i nie zostanie zaimportowany w trakcie procesu importowania. Elementy o rozmiarze większym niż 150 MB nie są importowane, ponieważ 150 MB to limit rozmiaru wiadomości w Exchange Online. Aby uzyskać więcej informacji, zobacz [Limity wiadomości w Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
+      Tak. Jeśli plik PST zawiera element skrzynki pocztowej o rozmiarze większym niż 150 MB, element zostanie pominięty i nie zostanie zaimportowany podczas procesu importowania. Elementy większe niż 150 MB nie są importowane, ponieważ 150 MB to limit rozmiaru komunikatu w Exchange Online. Aby uzyskać więcej informacji, zobacz [Limity komunikatów w Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   - question: >
-      Czy właściwości wiadomości, takie jak kiedy wiadomość została wysłana lub odebrana, lista adresatów i inne właściwości, są zachowywane podczas importowania plików PST do skrzynki Microsoft 365 pocztowej?
+      Czy właściwości wiadomości, takie jak wysłanie lub odebranie wiadomości, lista adresatów i inne właściwości, są zachowywane, gdy pliki PST są importowane do Microsoft 365 skrzynki pocztowej?
     answer: >
-      Tak. Oryginalne metadane wiadomości nie są zmieniane w trakcie procesu importowania.
+      Tak. Oryginalne metadane komunikatu nie są zmieniane podczas procesu importowania.
   - question: >
-      Czy istnieje limit liczby poziomów w hierarchii folderów dla pliku PST, który chcę zaimportować do skrzynki pocztowej?
+      Czy istnieje ograniczenie liczby poziomów w hierarchii folderów dla pliku PST, który chcę zaimportować do skrzynki pocztowej?
     answer: >
-      Tak. Nie można zaimportować pliku PST, który ma co najmniej 300 poziomów folderów zagnieżdżonych.
+      Tak. Nie można zaimportować pliku PST zawierającego co najmniej 300 poziomów zagnieżdżonych folderów.
   - question: >
-      Czy mogę używać przekazywania sieciowego do importowania plików PST do nieaktywnej skrzynki pocztowej w aplikacji Office 365?
+      Czy można użyć przekazywania sieci do zaimportowania plików PST do nieaktywnej skrzynki pocztowej w Office 365?
     answer: >
       Tak, ta funkcja jest teraz dostępna.
   - question: >
-      Czy mogę używać przekazywania sieciowego do importowania plików PST do skrzynki pocztowej archiwum online w Exchange hybrydowym?
+      Czy można użyć przekazywania sieci do zaimportowania plików PST do skrzynki pocztowej archiwum online w Exchange wdrożenia hybrydowego?
     answer: >
       Tak, ta funkcja jest teraz dostępna.
   - question: >
-      Czy mogę używać przekazywania sieciowego do importowania plików PST do folderów publicznych w programie Exchange Online?
+      Czy można zaimportować pliki PST do folderów publicznych w Exchange Online za pomocą przekazywania sieci?
     answer: >
       Nie, nie można importować plików PST do folderów publicznych.
   - question: >
-      Czy podczas tworzenia zadania importu przekazywania sieciowego istnieją jakiekolwiek wymagania dotyczące rozdzielczości ekranu?
+      Czy podczas tworzenia zadania importowania przekazywania sieci są spełnione jakiekolwiek wymagania dotyczące rozpoznawania ekranu?
     answer: >
-      Jeśli rozdzielczość ekranu na komputerze lokalnym jest ustawiona na 1366 x 768, mogą wystąpić problemy podczas tworzenia zadania importu. W takim przypadku zalecamy zmianę rozdzielczości ekranu na inne ustawienie, a następnie utworzenie nowego zadania importu. Pracujemy nad tym, aby rozwiązać ten problem.
+      Jeśli rozdzielczość ekranu na komputerze lokalnym jest ustawiona na 1366 x 768, mogą wystąpić problemy z tworzeniem zadania importu. W takim przypadku zalecamy zmianę rozdzielczości ekranu na inne ustawienie, a następnie utworzenie nowego zadania importu. Pracujemy nad rozwiązaniem tego problemu.
 
 
-      ## <a name="using-drive-shipping-to-import-pst-files"></a>Importowanie plików PST za pomocą wysyłki dysków
+      ## <a name="using-drive-shipping-to-import-pst-files"></a>Importowanie plików PST przy użyciu wysyłki dysku
 
 
-      Aby uzyskać instrukcje krok po kroku, zobacz [Importowanie plików PST do plików PST za pomocą wysyłki dysków Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md).
+      Aby uzyskać instrukcje krok po kroku, zobacz [Importowanie plików PST do Office 365 za pomocą wysyłki dysku](use-drive-shipping-to-import-pst-files-to-office-365.md).
   - question: >
-      Jakie uprawnienia są wymagane do tworzenia zadań importu w usłudze Office 365 importowania?
+      Jakie uprawnienia są wymagane do tworzenia zadań importu w usłudze Office 365 Import?
     answer: >
-      Aby tworzyć zadania importowania w Exchange Online i importować pliki PST do skrzynek pocztowych użytkowników, musisz mieć przypisaną rolę importowania i eksportowania skrzynek Exchange Online Centrum zgodności platformy Microsoft 365 skrzynek pocztowych użytkowników. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać siebie lub innych użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje "Dodawanie roli do grupy ról" lub "Tworzenie grupy ról" w tece Zarządzanie grupami ról w [Exchange Online.](/Exchange/permissions-exo/role-groups)
+      Musisz mieć przypisaną rolę Importuj eksport skrzynki pocztowej w Exchange Online, aby utworzyć zadania importu w portalu zgodności i zaimportować pliki PST do skrzynek pocztowych użytkowników. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę Import eksportu skrzynki pocztowej można dodać do grupy ról Zarządzanie organizacją. Możesz też utworzyć nową grupę ról, przypisać rolę Importuj eksport skrzynki pocztowej, a następnie dodać siebie lub innych użytkowników jako członka. Aby uzyskać więcej informacji, zobacz sekcje "Dodawanie roli do grupy ról" lub "Tworzenie grupy ról" w [temacie Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
 
-       Oprócz roli importowania i eksportowania skrzynek pocztowych należy również przypisać rolę adresatów poczty w programie Exchange Online. Domyślnie ta rola jest przypisana do grup ról Zarządzanie organizacją i Zarządzanie adresatami w programie Exchange Online.
+       Oprócz roli Importuj eksport skrzynki pocztowej musisz również mieć przypisaną rolę Adresaci poczty w Exchange Online. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie organizacjami i Zarządzanie adresatami w Exchange Online.
 
       > [!TIP]
 
-      > Rozważ utworzenie w programie Exchange Online grupy ról przeznaczonej specjalnie do importowania plików PST do Office 365. Aby uzyskać minimalny poziom uprawnień wymaganych do importowania plików PST, przypisz role importowania i eksportowania skrzynek pocztowych oraz adresatów poczty do nowej grupy ról, a następnie dodaj do nich członków.
+      > Rozważ utworzenie nowej grupy ról w Exchange Online, która jest przeznaczona specjalnie do importowania plików PST do Office 365. Aby uzyskać minimalny poziom uprawnień wymaganych do importowania plików PST, przypisz role Eksportuj i Adresaci poczty skrzynki pocztowej do nowej grupy ról, a następnie dodaj członków.
   - question: >
-      Gdzie jest dostępna wysyłka dysków?
+      Gdzie jest dostępna wysyłka dysku?
     answer: >
-      Wysyłka dysków jest obecnie dostępna w Stanach Zjednoczonych, Kanadzie, Brazylii, Zjednoczonym Królestwie, Europie, Indiach, Azji Wschodniej, Azji Południowo-Wschodniej, Japonii, Republice Korei i Australii. Wysyłka dysków będzie dostępna w większej liczby regionów w przyszłości.
+      Wysyłka dysków jest obecnie dostępna w Stany Zjednoczone, Kanadzie, Brazylii, Wielkiej Brytanii, Europie, Indiach, Azji Wschodniej, Azji Południowo-Wschodniej, Japonii, Republice Korei i Australii. Wysyłka dysku będzie dostępna w kolejnych regionach w przyszłości.
 
 
       > [!NOTE]
 
-      > Obecnie wysyłka dysków w celu importowania plików PST nie jest dostępna w Niemczech i Szwajcarii. Te odpowiedzi na często zadawane pytania zostaną zaktualizowane, gdy wysyłka dysków będzie dostępna w tych krajach.
+      > W tej chwili wysyłka dysku w celu zaimportowania plików PST nie jest dostępna w Niemczech i Szwajcarii. To często zadawane pytania zostaną zaktualizowane, gdy wysyłka dysku będzie dostępna w tych krajach.
   - question: >
-      Jakie komercyjne umowy licencjonowania obsługują wysyłkę dysków?
+      Jakie komercyjne umowy licencyjne obsługują wysyłkę?
     answer: >
-      Wysyłka dysków w celu zaimportowania plików PST Microsoft 365 jest dostępna za pośrednictwem Enterprise Agreement Microsoft (EA). Wysyłka dysków nie jest dostępna w ramach umowy Microsoft Products and Services Agreement (MPSA).
+      Wysyłanie dysków w celu zaimportowania plików PST do Microsoft 365 jest dostępne za pośrednictwem usługi Microsoft Enterprise Agreement (EA). Wysyłka dysku nie jest dostępna za pośrednictwem umowy Microsoft Products and Services Agreement (MPSA).
   - question: >
-      Jaka jest cena za używanie wysyłki dysków do importowania plików PST do Microsoft 365?
+      Jakie są ceny za korzystanie z wysyłania dysków do importowania plików PST do Microsoft 365?
     answer: >
-      Koszt korzystania z wysyłki dysków do importowania plików PST do Microsoft 365 pocztowych wynosi 2 USD za jeden GB danych. Jeśli na przykład wysyłasz dysk twardy zawierający 1000 GB (1 TB) plików PST, koszt wynosi 2000 USD. Opłatę za importowanie możesz zapłacić we współpracy z partnerem. Aby uzyskać informacje na temat znajdowania partnera, [zobacz Znajdowanie partnera lub odsprzedawcy firmy Microsoft](../admin/manage/find-your-partner-or-reseller.md).
+      Koszt użycia wysyłki dysku do importowania plików PST do Microsoft 365 skrzynek pocztowych wynosi 2 USD za GB danych. Jeśli na przykład zostanie dostarczony dysk twardy zawierający 1000 GB (1 TB) plików PST, koszt to 2000 USD. Możesz współpracować z partnerem w celu uiszczenia opłaty importowej. Aby uzyskać informacje na temat znajdowania partnera, zobacz [Znajdowanie partnera lub odsprzedawcy firmy Microsoft](../admin/manage/find-your-partner-or-reseller.md).
   - question: >
-      Jakiego rodzaju dyski twarde są obsługiwane na wysyłkę dysków?
+      Jakiego rodzaju dyski twarde są obsługiwane w przypadku wysyłki dysków?
     answer: >
-      Wewnętrzne dyski twarde SATA II/III 2,5 cala albo wewnętrzne dyski twarde SATA II/III 2,5 cala lub 2,5 cala są obsługiwane przez usługę importowania Office 365. Możesz korzystać z dysków twardych o pojemności do 10 TB. W przypadku zadań importu zostanie przetworzony tylko pierwszy wolumin danych na dysku twardym. Wolumin danych musi być sformatowany w systemie plików NTFS. Podczas kopiowania danych na dysk twardy możesz podłączyć go bezpośrednio za pomocą łącznika dysku SSD 2,5 cala albo SATA II/III 2,5 cala lub 3,5 cala. Możesz też podłączyć go zewnętrznie za pomocą zewnętrznego łącznika USB dysku SSD 2,5 cala albo SATA II/III 2,5 cala lub 3,5 cala.
+      Tylko 2,5-calowe dyski półprzewodnikowe (SSD) lub 2,5 cala lub 3,5-calowe wewnętrzne dyski twarde SATA II/III są obsługiwane do użytku z usługą importu Office 365. Dysków twardych można używać do 10 TB. W przypadku zadań importowania będzie przetwarzany tylko pierwszy wolumin danych na dysku twardym. Wolumin danych musi być sformatowany przy użyciu systemu PLIKÓW NTFS. Podczas kopiowania danych na dysk twardy można dołączyć je bezpośrednio przy użyciu 2,5-calowego dysku SSD lub 2,5-calowego lub 3,5-calowego łącznika SATA II/III lub można dołączyć je zewnętrznie przy użyciu zewnętrznego adaptera USB SATA II/III o przekątnej 2,5 cala lub 3,5 cala.
 
 
       > [!IMPORTANT]
 
-      > Zewnętrzne dyski twarde z wbudowanym adapterem USB nie są obsługiwane przez usługę importowania danych Office 365 usb. Ponadto nie można używać dysku wewnątrz obudowy zewnętrznego dysku twardego. Prosimy nie wysyłać zewnętrznych dysków twardych.
+      > Zewnętrzne dyski twarde z wbudowanym adapterem USB nie są obsługiwane przez usługę Office 365 Import. Ponadto nie można użyć dysku wewnątrz obudowy zewnętrznego dysku twardego. Nie wysyłaj zewnętrznych dysków twardych.
   - question: >
-      Ile dysków twardych można wysłać w ramach jednego zadania importu?
+      Ile dysków twardych można dostarczyć do jednego zadania importu?
     answer: >
-      Dla jednego zadania importu można wysłać maksymalnie 10 dysków twardych.
+      Można wysłać maksymalnie 10 dysków twardych dla jednego zadania importu.
   - question: >
-      Ile czasu trwa wysyłka dysku twardego do centrum danych firmy Microsoft?
+      Jak długo trwa dostarczenie dysku twardego do centrum danych firmy Microsoft?
     answer: >
-      Zależy to od kilku czynników, takich jak odległość od centrum danych firmy Microsoft i rodzaj opcji wysyłki użytej do wysłania dysku twardego (na przykład dostawa w następnym dniu, dostawa w ciągu dwóch dni lub dostawa lądowa). W przypadku większości spedytorów do śledzenia stanu dostawy można użyć numeru śledzenia.
+      Zależy to od kilku rzeczy, takich jak bliskość centrum danych firmy Microsoft i rodzaj opcji wysyłki użytej do wysłania dysku twardego (na przykład dostawa następnego dnia, dostawa dwudniowa lub dostawa naziemna). W przypadku większości nadawców możesz użyć numeru śledzenia, aby śledzić stan dostawy.
   - question: >
-      Ile czasu trwa przekazanie plików PST do platformy Azure, gdy dysk twardy pojawi się w centrum danych firmy Microsoft?
+      Jak długo trwa przekazywanie plików PST na platformę Azure po dotarciu mojego dysku twardego do centrum danych firmy Microsoft?
     answer: >
-      Po otrzymaniu dysku twardego w centrum danych firmy Microsoft przekazanie plików PST do usługi Azure Storage dla organizacji może potrwać od 7 do 10 dni roboczych. Pliki PST zostaną przekazane do kontenera obiektów blob platformy Azure o nazwie `ingestiondata`.
+      Po odebraniu dysku twardego w centrum danych firmy Microsoft przekazanie plików PST do obszaru usługi Azure Storage w organizacji potrwa od 7 do 10 dni roboczych. Pliki PST zostaną przekazane do kontenera obiektów blob platformy Azure o nazwie `ingestiondata`.
   - question: >
       Jak długo trwa importowanie pliku PST do skrzynki pocztowej?
     answer: >
-      Po przekazeniu plików PST do obszaru usługi Azure Storage program Microsoft 365 analizuje dane w plikach PST (w bezpieczny sposób) w celu zidentyfikowania wieku elementów i różnych typów wiadomości zawartych w plikach PST. Po zakończeniu tej analizy będziesz mieć możliwość zaimportowania wszystkich danych z plików PST lub ustawienia filtrów w celu kontrolowania tego, jakie dane są importowane. Po uruchomieniu zadania importu plik PST jest importowany do skrzynki Microsoft 365 pocztowej z około 24 GB na dzień.<sup>\*</sup> Jeśli taka szybkość nie spełnia wymagań, rozważ zaimportowanie danych poczty e-mail do Office 365. Aby uzyskać więcej informacji, zobacz [Sposoby migrowania wielu kont e-mail do Office 365](/Exchange/mailbox-migration/mailbox-migration).
+      Po przekazaniu plików PST do obszaru usługi Azure Storage Microsoft 365 analizuje dane w plikach PST (w bezpieczny i bezpieczny sposób), aby zidentyfikować wiek elementów i różne typy komunikatów zawarte w plikach PST. Po zakończeniu tej analizy będziesz mieć możliwość zaimportowania wszystkich danych w plikach PST lub ustawienia filtrów, które kontrolują, jakie dane są importowane. Po rozpoczęciu zadania importowania plik PST jest importowany do skrzynki pocztowej Microsoft 365 z szybkością około 24 GB dziennie.<sup>\*</sup> Jeśli ta stawka nie spełnia Twoich potrzeb, możesz rozważyć inne metody importowania danych poczty e-mail do Office 365. Aby uzyskać więcej informacji, zobacz [Sposoby migracji wielu kont e-mail do Office 365](/Exchange/mailbox-migration/mailbox-migration).
 
 
-      <sup>\*</sup> Ta stopa nie jest gwarantowana. Obciążenie serwera i problemy przejściowych z wydajnością mogą zmniejszyć tę szybkość.
+      <sup>\*</sup> Ta stawka nie jest gwarantowana. Problemy z obciążeniem serwera i przejściową wydajnością mogą zmniejszyć tę szybkość.
 
 
-      Jeśli różne pliki PST są importowane do różnych docelowych skrzynek pocztowych, proces importowania odbywa się równolegle. Innymi słowy, każda para PLIK PST/skrzynka pocztowa jest importowana jednocześnie. Jeśli wiele plików PST zostanie zaimportowanych do tej samej skrzynki pocztowej, zostaną one zaimportowane sekwencyjnie (po kolei), nie jednocześnie.
+      Jeśli różne pliki PST są importowane do różnych docelowych skrzynek pocztowych, proces importowania odbywa się równolegle; Innymi słowy, każda para PST/skrzynka pocztowa jest importowana jednocześnie. Jeśli wiele plików PST zostanie zaimportowanych do tej samej skrzynki pocztowej, zostaną one zaimportowane sekwencyjnie (pojedynczo), a nie jednocześnie.
   - question: >
-      Kiedy firma Microsoft przekaże moje pliki PST do platformy Azure, jak długo są one przechowywane na platformie Azure, zanim zostaną usunięte?
+      Jak długo są przechowywane na platformie Azure przed ich usunięciem po przekazaniu przez firmę Microsoft plików PST na platformę Azure?
     answer: >
-      Wszystkie pliki PST w lokalizacji usługi Azure Storage organizacji (w kontenerze obiektów blob `ingestiondata`o nazwie ), są usuwane 30 dni po utworzeniu najnowszego zadania importu na stronie Importowanie plików **PST** w Centrum zgodności platformy Microsoft 365.
+      Wszystkie pliki PST w lokalizacji usługi Azure Storage dla organizacji (w kontenerze obiektów blob o nazwie `ingestiondata`), zostaną usunięte 30 dni po utworzeniu ostatniego zadania importu na stronie **Importowanie plików PST** w portalu zgodności.
 
 
-      Oznacza to również, że po usunięciu plików PST z obszaru usługi Azure Storage nie są one już wyświetlane na liście plików dla ukończonego zadania importu w centrum Centrum zgodności platformy Microsoft 365. Mimo że zadanie importu może być nadal wyświetlane na stronie Importowanie plików **PST** w programie Centrum zgodności platformy Microsoft 365, lista plików PST może być pusta, gdy wyświetlasz szczegóły starszych zadań importu.
+      Oznacza to również, że po usunięciu plików PST z obszaru usługi Azure Storage nie będą one już wyświetlane na liście plików dla ukończonego zadania importowania w portalu zgodności. Mimo że zadanie importu może nadal znajdować się na stronie **Importowanie plików PST** w portalu zgodności, lista plików PST może być pusta podczas wyświetlania szczegółów starszych zadań importowania.
   - question: >
-      Która wersja formatu pliku PST jest obsługiwana na przykład w przypadku importowania do Microsoft 365?
+      Jaka wersja formatu pliku PST jest obsługiwana w przypadku importowania do Microsoft 365?
     answer: >
-      Format pliku PST ma dwie wersje: ANSI i Unicode. Zalecamy importowanie plików w formacie PST Unicode. Jednak pliki w formacie PST ANSI, na przykład w przypadku języków o zestawach znaków dwu bajtowych (DBCS), również można importować do Microsoft 365. Aby uzyskać więcej informacji na temat importowania plików PST ANSI, zobacz krok 3 w tece Importowanie plików PST do plików PST za pomocą wysyłki dysków [Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).
+      Istnieją dwie wersje formatu pliku PST: ANSI i Unicode. Zalecamy importowanie plików korzystających z formatu pliku PST unicode. Jednak pliki korzystające z formatu pliku ANSI PST, takie jak te dla języków używających zestawu znaków dwubajtowych (DBCS), można również zaimportować do Microsoft 365. Aby uzyskać więcej informacji na temat importowania plików ANSI PST, zobacz Krok 3 w [temacie Używanie wysyłki dysku do importowania plików PST do Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).
 
 
-      Ponadto pliki PST z programu Outlook 2007 i nowszych wersji można importować do Office 365.
+      Ponadto pliki PST z Outlook 2007 r. i nowszych wersji można zaimportować do Office 365.
   - question: >
-      Czy istnieje limit rozmiaru wiadomości podczas importowania plików PST?
+      Czy istnieje limit rozmiaru komunikatu podczas importowania plików PST?
     answer: >
-      Tak. Jeśli plik PST zawiera element skrzynki pocztowej o rozmiarze ponad 150 MB, ten element zostanie pominięty i nie zostanie zaimportowany w trakcie procesu importowania. Elementy o rozmiarze większym niż 150 MB nie są importowane, ponieważ 150 MB to limit rozmiaru wiadomości w Exchange Online. Aby uzyskać więcej informacji, zobacz [Limity wiadomości w Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
+      Tak. Jeśli plik PST zawiera element skrzynki pocztowej o rozmiarze większym niż 150 MB, element zostanie pominięty i nie zostanie zaimportowany podczas procesu importowania. Elementy większe niż 150 MB nie są importowane, ponieważ 150 MB to limit rozmiaru komunikatu w Exchange Online. Aby uzyskać więcej informacji, zobacz [Limity komunikatów w Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   - question: >
-      Jak proces importowania pliku PST obsługuje zduplikowane elementy poczty e-mail?
+      Jak proces importowania PST obsługuje zduplikowane elementy poczty e-mail?
     answer: >
-      Proces importowania pliku PST sprawdza zduplikowane elementy i nie kopiuje elementów z pliku PST do skrzynki pocztowej lub archiwum, jeśli w folderze docelowym w docelowej skrzynce pocztowej lub archiwum docelowym istnieje pasujący element. Jeśli ponownie zaimportowano ten sam plik PST i określono inny folder docelowy (przy użyciu właściwości TargetRootFolder w pliku mapowania importu pliku PST) niż ten określony w poprzednim zadaniu importu, wszystkie elementy w pliku PST zostaną ponownie zaimportowane.
+      Proces importowania PST sprawdza zduplikowane elementy i nie kopiuje elementów z pliku PST do skrzynki pocztowej lub archiwum, jeśli w folderze docelowym w docelowej skrzynce pocztowej lub archiwum docelowym istnieje zgodny element. Jeśli ponownie zaimportujesz ten sam plik PST i określisz inny folder docelowy (przy użyciu właściwości TargetRootFolder w pliku mapowania importu PST) niż ten określony w poprzednim zadaniu importowania, wszystkie elementy w pliku PST zostaną ponownie zaimportowane.
   - question: >
-      Czy właściwości wiadomości, takie jak kiedy wiadomość została wysłana lub odebrana, lista adresatów i inne właściwości, są zachowywane podczas importowania plików PST do skrzynki Microsoft 365 pocztowej?
+      Czy właściwości wiadomości, takie jak wysłanie lub odebranie wiadomości, lista adresatów i inne właściwości, są zachowywane, gdy pliki PST są importowane do Microsoft 365 skrzynki pocztowej?
     answer: >
-      Tak. Oryginalne metadane wiadomości nie są zmieniane w trakcie procesu importowania
+      Tak. Oryginalne metadane komunikatu nie są zmieniane podczas procesu importowania
   - question: >
-      Czy istnieje limit liczby poziomów w hierarchii folderów dla pliku PST, który chcę zaimportować do skrzynki pocztowej?
+      Czy istnieje ograniczenie liczby poziomów w hierarchii folderów dla pliku PST, który chcę zaimportować do skrzynki pocztowej?
     answer: >
-      Tak. Nie można zaimportować pliku PST, który ma co najmniej 300 poziomów folderów zagnieżdżonych.
+      Tak. Nie można zaimportować pliku PST zawierającego co najmniej 300 poziomów zagnieżdżonych folderów.
   - question: >
-      Czy mogę używać wysyłki dysków do importowania plików PST do nieaktywnej skrzynki pocztowej w Microsoft 365?
-    answer: >
-      Tak, ta funkcja jest teraz dostępna.
-  - question: >
-      Czy mogę używać wysyłki dysków do importowania plików PST do skrzynki pocztowej archiwum online w Exchange hybrydowym?
+      Czy mogę zaimportować pliki PST do nieaktywnej skrzynki pocztowej w Microsoft 365 za pomocą wysyłki dysku?
     answer: >
       Tak, ta funkcja jest teraz dostępna.
   - question: >
-      Czy mogę używać wysyłki dysków do importowania plików PST do folderów publicznych w Exchange Online?
+      Czy można użyć wysyłania dysków do importowania plików PST do skrzynki pocztowej archiwum online w Exchange wdrożenia hybrydowego?
+    answer: >
+      Tak, ta funkcja jest teraz dostępna.
+  - question: >
+      Czy można użyć wysyłania dysków do importowania plików PST do folderów publicznych w Exchange Online?
     answer: >
       Nie, nie można importować plików PST do folderów publicznych.
   - question: >
-      Czy firma Microsoft może wyczyścić mój dysk twardy przed wysyłką z powrotem do mnie?
+      Czy firma Microsoft może wyczyścić mój dysk twardy przed wysłaniem go z powrotem do mnie?
     answer: >
-      Nie, firma Microsoft nie może wyczyścić dysków twardych przed wysyłką ich z powrotem do klientów. Dyski twarde są zwracane w tym samym stanie, w którym zostały otrzymane przez firmę Microsoft.
+      Nie, firma Microsoft nie może wyczyścić dysków twardych przed wysłaniem ich z powrotem do klientów. Dyski twarde są zwracane w tym samym stanie, w jakiej znajdowały się, gdy zostały odebrane przez firmę Microsoft.
   - question: >
-      Czy firma Microsoft może wyniszczać mój dysk twardy zamiast wysyłać go z powrotem do mnie?
+      Czy firma Microsoft może zniszczyć mój dysk twardy zamiast wysyłać go z powrotem do mnie?
     answer: >
-      Nie, firma Microsoft nie może zniszczyć Twojego dysku twardego. Dyski twarde są zwracane w tym samym stanie, w którym zostały otrzymane przez firmę Microsoft.
+      Nie, firma Microsoft nie może zniszczyć twojego dysku twardego. Dyski twarde są zwracane w tym samym stanie, w jakiej znajdowały się, gdy zostały odebrane przez firmę Microsoft.
   - question: >
-      Jakie usługi kurierskie są obsługiwane w przypadku wysyłki zwrotów?
+      Jakie usługi kurierskie są obsługiwane w przypadku wysyłki zwrotnej?
     answer: >
-      Jeśli jesteś klientem w Stanach Zjednoczonych lub w Europie, firma Microsoft korzysta z usług firmy FedEx do zwracania dysków twardych. We wszystkich innych regionach firma Microsoft korzysta z usług firmy DHL.
+      Jeśli jesteś klientem w Stany Zjednoczone lub Europie, firma Microsoft zwraca twój dysk twardy za pomocą programu FedEx. W przypadku wszystkich innych regionów firma Microsoft używa protokołu DHL.
   - question: >
-      Jakie są koszty wysyłki zwrotu?
+      Jakie są koszty wysyłki zwrotnej?
     answer: >
-      Koszty wysyłki zwrotu różnią się w zależności od Twojej odległości od centrum danych firmy Microsoft, do których wysłano dysk twardy. Firma Microsoft nalicza rachunek za zwrot dysku twardego twoje konto w firmie FedEx lub DHL. Ty ponosisz koszt wysyłki zwrotu.
+      Koszty wysyłki zwrotnej różnią się w zależności od bliskości centrum danych firmy Microsoft, do których wysłano dysk twardy. Firma Microsoft rozliczy Twoje konto FedEx lub DHL w celu zwrócenia dysku twardego. Koszt wysyłki zwrotnej jest twoim obowiązkiem.
   - question: >
       Czy mogę wysłać dysk twardy do firmy Microsoft za pomocą niestandardowej usługi wysyłki kurierskiej, takiej jak FedEx Custom Shipping?
     answer: >
       Tak.
   - question: >
-      Jeśli muszę wysłać dysk twardy do innego kraju, czy muszę coś zrobić?
+      Jeśli muszę wysłać dysk twardy do innego kraju, czy jest coś, co muszę zrobić?
     answer: >
-      Dysk twardy, który wysyłasz do firmy Microsoft, może być konieczne przekroowanie granic międzynarodowych. Jeśli tak, ponosisz odpowiedzialność za zapewnienie, że dysk twardy i jego dane są importowane i/lub eksportowane zgodnie z obowiązującymi przepisami prawa. Przed wysyłką dysku twardego skontaktuj się z doradcami, aby upewnić się, że dysk i dane można legalnie wysłać do określonego centrum danych firmy Microsoft. Pozwoli to zapewnić terminowe dotarcie do firmy Microsoft.
+      Dysk twardy dostarczany firmie Microsoft może wymagać przekroczenia granic międzynarodowych. Jeśli tak, jesteś odpowiedzialny za zapewnienie, że dysk twardy i jego dane zostaną zaimportowane i/lub wyeksportowane zgodnie z obowiązującymi przepisami. Przed wysłaniem dysku twardego skontaktuj się z doradcami, aby sprawdzić, czy dysk i dane mogą być legalnie dostarczane do określonego centrum danych firmy Microsoft. Pomoże to zapewnić, że dotrze ona do firmy Microsoft w odpowiednim czasie.
   - question: >
-      Czy istnieją wymagania dotyczące rozdzielczości ekranu podczas tworzenia zadania importu na potrzeby wysyłki dysków?
-    answer: Jeśli rozdzielczość ekranu na komputerze lokalnym jest ustawiona na 1366 x 768, mogą wystąpić problemy podczas tworzenia zadania importu. W takim przypadku zalecamy zmianę rozdzielczości ekranu na inne ustawienie, a następnie utworzenie nowego zadania importu. Pracujemy nad tym, aby rozwiązać ten problem.
+      Czy podczas tworzenia zadania importu dla wysyłki dysku są spełnione jakiekolwiek wymagania dotyczące rozdzielczości ekranu?
+    answer: Jeśli rozdzielczość ekranu na komputerze lokalnym jest ustawiona na 1366 x 768, mogą wystąpić problemy z tworzeniem zadania importu. W takim przypadku zalecamy zmianę rozdzielczości ekranu na inne ustawienie, a następnie utworzenie nowego zadania importu. Pracujemy nad rozwiązaniem tego problemu.

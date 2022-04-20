@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: 68315c6cf7947c2d42e58e34b4496e0ef790c8b0
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d332cbf32f5423fb16abb158f9a30a18c2391a22
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665497"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939350"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Wprowadzenie z planem Ochrona punktu końcowego w usłudze Microsoft Defender 1
 
@@ -81,7 +81,7 @@ Pasek nawigacyjny po lewej stronie ekranu umożliwia łatwe przechodzenie międz
 | **Zdrowia** >  **Centrum komunikatów** | Przechodzi do centrum komunikatów w Centrum administracyjne platformy Microsoft 365. Centrum komunikatów zawiera informacje o planowanych zmianach. Każdy komunikat zawiera opis nadchodzących zmian, wpływu na użytkowników i sposobu zarządzania zmianami. |  
 | **Uprawnienia & ról** | Umożliwia udzielanie uprawnień do korzystania z portalu Microsoft 365 Defender. Uprawnienia są przyznawane za pośrednictwem ról w Azure Active Directory (Azure AD). Wybierz rolę i zostanie wyświetlone okienko wysuwane. Wysuwane okno zawiera link do usługi Azure AD, w którym można dodawać lub usuwać członków w grupie ról. <br/><br/> Aby dowiedzieć się więcej, zobacz [Zarządzanie dostępem do portalu przy użyciu kontroli dostępu opartej na rolach](rbac.md).  |
 | **Ustawienia** | Przechodzi do ogólnych ustawień portalu Microsoft 365 Defender (wymienionego jako **Centrum zabezpieczeń**) i usługi Defender dla punktu końcowego (wymienionego jako **punkty końcowe**). <br/><br/> Aby dowiedzieć się więcej, zobacz [Ustawienia](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
-| **Więcej zasobów** | Wyświetla listę kolejnych portali i centrów, takich jak Azure Active Directory i Centrum zgodności platformy Microsoft 365. <br/><br/> Aby dowiedzieć się więcej, zobacz [Portale zabezpieczeń firmy Microsoft i centra administracyjne](../defender/portals.md). |
+| **Więcej zasobów** | Wyświetla listę kolejnych portali i centrów, takich jak Azure Active Directory i portal zgodności usługi Microsoft Purview. <br/><br/> Aby dowiedzieć się więcej, zobacz [Portale zabezpieczeń firmy Microsoft i centra administracyjne](../defender/portals.md). |
 
 > [!TIP]
 > Aby dowiedzieć się więcej, zobacz [omówienie portalu Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).

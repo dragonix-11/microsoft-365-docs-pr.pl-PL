@@ -1,5 +1,5 @@
 ---
-title: Predykcyjne informacje o kodowaniu
+title: Dokumentacja dotycząca kodowania predykcyjnego
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,81 +14,81 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ff681793a86d9953088c2c4da65553e1d2c54d22
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2f70039d3e55c429bf175d850db907eb7dc5b598
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985635"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942166"
 ---
-# <a name="predictive-coding-reference-preview"></a>Predykcyjne wskazówki kodowania (podgląd)
+# <a name="predictive-coding-reference-preview"></a>Dokumentacja kodowania predykcyjnego (wersja zapoznawcza)
 
-W tym artykule opisano kluczowe pojęcia i metryki narzędzia do predykcyjnego kodowania w programie Advanced eDiscovery. Sekcje w artykule są wyświetlane w kolejności alfabetycznej.
+W tym artykule opisano kluczowe pojęcia i metryki narzędzia do kodowania predykcyjnego w usłudze Microsoft Purview eDiscovery (Premium). Sekcje w artykule są wymienione w kolejności alfabetycznej.
 
 ## <a name="confidence-level"></a>Poziom ufności
 
-Poziom ufności jest zaawansowanym ustawieniem podczas tworzenia modelu predykcyjnego kodowania. Zdefiniowano w nim, że metryki wydajności modelu (na przykład rozbudowa, dokładność i odwołanie) należą do określonego zakresu (określonego dla modelu jako marginesu błędu), który jest reprezentatywny dla prawdziwych wartości wyników prognozy przypisywanych przez model elementom w zestawie recenzji. Wartości poziomu ufności i marginesu błędu ułatwiają również określenie, ile elementów znajduje się w zestawie kontrolek. Wartość domyślna poziomu ufności to 0,95 czyli 95%.
+Poziom ufności jest ustawieniem zaawansowanym podczas tworzenia modelu kodowania predykcyjnego. Definiuje ona, że metryki wydajności modelu (na przykład sformatowanie, precyzja i wycofanie) należą do określonego zakresu (który jest określany jako margines błędu zdefiniowany dla modelu), który jest reprezentatywny dla prawdziwych wartości wyników przewidywania przypisywanych przez model do elementów w zestawie przeglądów. Wartości poziomu ufności i marginesu błędu pomagają również określić, ile elementów jest uwzględnionych w zestawie kontrolek. Wartość domyślna poziomu ufności to 0,95 lub 95%.
 
-## <a name="control-set"></a>Zestaw kontrolek
+## <a name="control-set"></a>Zestaw sterowania
 
-Zestaw kontrolek jest używany w procesie szkolenia modelu predykcyjnego kodowania. Zestaw kontrolek umożliwia ocenę wyników prognozy przypisywanych przez model elementom z etykietami, które wykonuje się podczas zaokrągleń szkoleniowych. Rozmiar zestawu kontrolek jest oparty na liczbie elementów w zestawie recenzji oraz poziomie ufności i marginesie wartości błędów ustawianych podczas tworzenia modelu. Elementy w zestawie kontrolek nigdy się nie zmieniają i nie są identyfikowalne do zidentyfikowania dla użytkowników. Łączna liczba elementów w zestawie kontrolek jest wyświetlana na stronie wysuwana w celu zaokrąglenia szkolenia.
+Zestaw sterowania jest używany podczas procesu trenowania modelu kodowania predykcyjnego. Zestaw kontrolek ma na celu ocenę wyników przewidywania przypisywanych przez model do elementów z etykietami wykonywanymi podczas rund szkoleniowych. Rozmiar zestawu kontrolek jest oparty na liczbie elementów w zestawie przeglądów oraz poziomie ufności i marginesie wartości błędów ustawionych podczas tworzenia modelu. Elementy w zestawie kontrolek nigdy się nie zmieniają i nie są identyfikowalne dla użytkowników. Całkowita liczba elementów w zestawie sterowania jest wyświetlana na stronie wysuwanej dla rundy szkoleniowej.
 
-## <a name="control-set-confusion-matrix"></a>Macierz nieporozumień zestawu kontrolek
+## <a name="control-set-confusion-matrix"></a>Macierz pomyłek zestawu sterowania
 
-Po zakończeniu rundy szkolenia model przypisuje wynik prognozowania do 10 elementów w zestawie kontrolek oznaczonych podczas rundy szkolenia. Ten model porównuje wynik prognozowania tych 10 elementów z rzeczywistą etykietą przypisaną do elementu podczas rundy szkolenia. Na podstawie tego porównania w modelu są identyfikowane następujące klasyfikacje do oceny wydajności prognozowania modelu:
+Po zakończeniu rundy szkoleniowej model przypisuje wynik przewidywania do 10 elementów w zestawie sterowania oznaczonym podczas rundy szkoleniowej. Model porównuje wynik przewidywania tych 10 elementów z rzeczywistą etykietą przypisaną do elementu podczas rundy szkoleniowej. Na podstawie tego porównania model identyfikuje następujące klasyfikacje w celu oceny wydajności przewidywania modelu:
 
 <br>
 
 ****
 
-|Etykieta|Model przewiduje, że element jest istotny|Model przewiduje element nie jest odpowiedni|
+|Etykiety|Model przewiduje, że element jest odpowiedni|Model przewiduje, że element nie ma znaczenia|
 |---|---|---|
-|**Recenzent etykietuje element jako odpowiedni**|True positive|Wynik fałszywie dodatni|
-|**Recenzent etykietuje element jako nieucztowy**|Wynik fałszywie ujemny|True negative|
+|**Element etykiet recenzenta jako odpowiedni**|Prawdziwie dodatnie|Wynik fałszywie dodatni|
+|**Element etykiet recenzenta jako nieistotny**|Fałszywie ujemny|Wartość prawdziwie ujemna|
 |
 
-Na podstawie tych porównań model pozysł wartości dla wyników F-score, dokładności i odwołania oraz marginesu błędu dla każdej z nich. Liczba typów nieporozumień w macierzy jest wyświetlana na stronie wysuwu w celu zaokrąglenia szkolenia.
+Na podstawie tych porównań model uzyskuje wartości dla metryk F-score, precision i recall oraz margines błędu dla każdego z nich. Liczba typów pomyłek z macierzy jest wyświetlana na stronie wysuwanej dla rundy szkoleniowej.
 
 ## <a name="f-score"></a>Wynik F
 
-Wynik F jest średnią ważoną wyników dla metryk dokładności i odwołania.  Zakres wyników dla tej metryki wynosi od **0** do **1**. Wynik bliższy **1** oznacza, że model dokładniej wykrywa odpowiednie elementy. Metryka wyniku F jest wyświetlana na pulpicie nawigacyjnym modelu oraz na wysuwanych stronie dla każdego rundy szkolenia.
+Wynik F jest średnią ważoną wyników dla metryk precyzji i odwołania.  Zakres wyników dla tej metryki wynosi od **0** do **1**. Wynik bliżej **1** wskazuje, że model dokładniej wykrywa odpowiednie elementy. Metryka F-score jest wyświetlana na pulpicie nawigacyjnym modelu i na stronie wysuwanej dla każdej rundy trenowania.
 
 ## <a name="margin-of-error"></a>Margines błędu
 
-Margines błędu jest zaawansowanym ustawieniem podczas tworzenia trybu predykcyjnego kodowania. Określa stopień błędu w metrykach wydajności (na przykład dokładność, dokładność i odwołanie) wynikających z losowej próbki elementów w zestawie kontrolek. Dolna marża błędu wymaga większego zestawu kontrolek w celu zapewnienia, że metryki wydajności modelu będą wchodzić w zakres mniejszego zakresu. Wartości marginesu błędu i poziomu ufności pomagają także określić, ile elementów jest zawartych w zestawie kontrolek. Wartość domyślna marginesu błędu wynosi 0,05 lub 5%.
+Margines błędu jest ustawieniem zaawansowanym podczas tworzenia trybu kodowania predykcyjnego. Określa stopień błędu w metrykach wydajności (na przykład sformatowanie, precyzja i wycofanie), który jest uzyskiwany z losowego próbkowania elementów w zestawie sterowania. Niższy margines błędu wymaga większego zestawu kontroli, aby zapewnić, że metryki wydajności modelu mieszczą się w mniejszym zakresie. Wartości marginesu błędu i poziomu ufności pomagają również określić, ile elementów jest uwzględnionych w zestawie kontrolek. Wartość domyślna marginesu błędu to 0,05 lub 5%.
 
 ## <a name="model-stability"></a>Stabilność modelu
 
-Stabilność modelu wskazuje możliwość dokładnego przewidzenia, czy dokument w zestawie recenzji jest istotny, czy nie. Gdy model jest niestabilny, może być konieczne więcej rund szkoleniowych, aby uwzględnić stabilność modelu. Gdy model jest stabilny, może nie być konieczne więcej zaokrągleń szkoleniowych. Pulpit nawigacyjny modelu wskazuje bieżący stan stabilności modelu. Gdy model jest stabilny, metryki wydajności osiągną poziom, który odpowiada poziomowi ufności i marginesowi błędu.
+Stabilność modelu wskazuje zdolność modelu do dokładnego przewidywania, czy dokument w zestawie przeglądów jest istotny, czy nie. Jeśli model jest niestabilny, może być konieczne wykonanie większej liczby rund szkoleniowych w celu uwzględnienia stabilności modelu. Gdy model jest stabilny, nie trzeba będzie wykonywać więcej rund szkoleniowych. Pulpit nawigacyjny modelu wskazuje bieżący stan stabilności modelu. Gdy model jest stabilny, metryki wydajności osiągnęły poziom zgodny z ustawieniami poziomu ufności i marginesu błędu.
 
-## <a name="overturn-rate"></a>Szybkość przewrócenia
+## <a name="overturn-rate"></a>Współczynnik przewrócenia
 
-Stopa przewrócenia to procent pozycji w zestawie recenzji, w którym wynik prognozowania zmienia się między zaokrągleniami szkolenia. Model jest stabilny, gdy szybkość przekręcenia wynosi poniżej 5%. Metryka szybkości przewrócenia jest wyświetlana na pulpicie nawigacyjnym modelu oraz na wysuwanych stronie dla każdego rundy szkolenia. Szybkość przewrócenia w pierwszej zaokrąglonym szkoleniu wynosi zero, ponieważ nie ma poprzedniego wyniku prognozy przewracenia.
+Współczynnik przewrócenia to procent elementów w zestawie przeglądów, w którym wynik przewidywania zmienia się między rundami szkoleniowymi. Model jest uznawany za stabilny, gdy współczynnik wywrócenia jest mniejszy niż 5%. Metryka współczynnika przewrócenia jest wyświetlana na pulpicie nawigacyjnym modelu i na stronie wysuwanej dla każdej rundy trenowania. Współczynnik przewrócenia dla pierwszej rundy treningowej wynosi zero, ponieważ nie ma poprzedniego wyniku przewidywania do przewrócenia.
 
 ## <a name="precision"></a>Dokładność
 
-Metryka precyzji mierzy proporcje elementów, które w rzeczywistości są istotne między elementami prognozowany model, były istotne. Oznacza to, że elementy w kontrolce, w których etykieta będzie odpowiedni dla recenzenta i przewidywana jako mająca znaczenie dla modelu. Zakres wyników dla tej metryki wynosi od **0** do **1**. Wynik bliższy **1** oznacza, że model zidentyfikuje mniej elementów nieistnieżnych. Metryka dokładności jest wyświetlana na pulpicie nawigacyjnym modelu oraz na wysuwanych stronie dla każdego rundy szkolenia.
+Metryka precyzji mierzy proporcję elementów, które są faktycznie istotne wśród elementów przewidywanych przez model. Oznacza to, że elementy w zestawie kontrolek, w których etykieta jest odpowiednia dla recenzenta i przewidywane jako odpowiednie dla modelu. Zakres wyników dla tej metryki wynosi od **0** do **1**. Wynik bliżej **1** wskazuje, że model zidentyfikuje mniej nieistotnych elementów. Metryka precyzji jest wyświetlana na pulpicie nawigacyjnym modelu i na stronie wysuwanej dla każdej rundy trenowania.
 
-## <a name="prediction-score"></a>Wynik prognozowania
+## <a name="prediction-score"></a>Wynik przewidywania
 
-Jest to wynik przypisywany przez model każdemu dokumentowi w zestawie recenzji. Wynik jest oparty na istotności dokumentu w porównaniu z wynikami rundy szkoleń opartymi na modelu. Ogólnie rzecz biorąc, elementy z wynikami prognozy między **0** a **0,5** są traktowane jako nie istotne, a elementy z wynikami prognozy między **0,5** a **1** są uznawane za istotne. Wynik prognozy znajduje się w polu metadanych dokumentu. Możesz użyć filtru podpowiedniowego, aby wyświetlić elementy w zestawie recenzji, które należą do określonego zakresu podpowiedni.
+Jest to wynik przypisywany przez model do każdego dokumentu w zestawie przeglądów. Wynik jest oparty na istotności dokumentu w porównaniu z uczeniem się modelu z rund szkoleniowych. Ogólnie rzecz biorąc, elementy z wynikami przewidywania z zakresu od **0** do **0,5** są uważane za nieistotne, a elementy z wynikami przewidywania z zakresu **od 0,5** do **1** są uważane za istotne. Wynik przewidywania jest zawarty w polu metadanych dokumentu. Możesz użyć filtru przewidywania, aby wyświetlić elementy w zestawie przeglądów, które mieszczą się w określonym zakresie przewidywania.
 
-## <a name="recall"></a>Odwołaj
+## <a name="recall"></a>Przypomnieć
 
-Metryka odwołania mierzy proporcje przewidywanego modelu między faktycznie odpowiednimi elementami. Oznacza to, że elementy w zestawie kontrolek, w przypadku których przewidywano zastosowanie modelu, były również oznaczone jako istotne przez recenzenta. Zakres wyników dla tej metryki wynosi od **0** do **1**. Wynik bliższy **1** oznacza, że model zidentyfikuje większą część odpowiednich elementów. Metryka odwołania jest wyświetlana na pulpicie nawigacyjnym modelu oraz na wysuwanej stronie dla każdego rundy szkolenia.
+Metryka wycofania mierzy proporcję elementów, które przewidywany model miał znaczenie wśród elementów, które są faktycznie istotne. Oznacza to, że elementy w zestawie kontrolek, które były odpowiednie dla przewidywanego modelu, również zostały oznaczone jako istotne przez recenzenta. Zakres wyników dla tej metryki wynosi od **0** do **1**. Wynik bliżej **1** wskazuje, że model zidentyfikuje większą część odpowiednich elementów. Metryka odwołania jest wyświetlana na pulpicie nawigacyjnym modelu i na stronie wysuwanej dla każdej rundy trenowania.
 
-## <a name="review-set"></a>Zestaw recenzji
+## <a name="review-set"></a>Zestaw przeglądów
 
-Zestaw recenzji zawiera zakres modelu predykcyjnego kodowania. Podczas tworzenia nowego modelu dla zestawu recenzji elementy zestawu kontrolek i zestawów szkoleniowych są wybierane z zestawu recenzji. Gdy model przypisuje wyniki prognozowania, przypisuje te wyniki elementom w recenzji. Przed utworzeniem modelu predykcyjnego kodowania należy dodać wszystkie elementy do zestawu recenzji. W przypadku dodania elementów po utworzeniu modelu nie zostaną one przypisane do wyników prognozy.
+Zestaw przeglądów zapewnia zakres modelu kodowania predykcyjnego. Podczas tworzenia nowego modelu dla zestawu przeglądów wybierane są elementy zestawu kontroli i zestawy szkoleniowe z zestawu przeglądów. Gdy model przypisuje wyniki przewidywania, przypisuje te wyniki do elementów w przeglądzie. Przed utworzeniem modelu kodowania predykcyjnego należy dodać wszystkie elementy do zestawu przeglądów. Jeśli dodasz elementy po utworzeniu modelu, te elementy nie zostaną przypisane do wyniku przewidywania.
 
-## <a name="richness"></a>Rwęczność
+## <a name="richness"></a>Bogactwo
 
-Metryka rozbudowy mierzy procent przeglądanych elementów zestawu elementów, które model przewiduje jako istotne. Zakres wyników dla tej metryki wynosi od **0** do **1**. Metryka rozbudowy jest wyświetlana na pulpicie nawigacyjnym modelu.
+Metryka bogactwa mierzy procent elementów zestawu przeglądów, które model przewiduje jako odpowiednie. Zakres wyników dla tej metryki wynosi od **0** do **1**. Metryka bogactwa jest wyświetlana na pulpicie nawigacyjnym modelu.
 
 ## <a name="sampled-items"></a>Przykładowe elementy
 
-Termin " *próbkowane* elementy" jest odwołaniem do losowych próbek elementów w zestawie recenzji (zawierających tekst), które są wybrane i skojarzone z zestawem kontrolek podczas tworzenia modelu predykcyjnego kodowania. Dla każdego rundy szkolenia jest również wybrana losowa próbka elementów. Elementy wybrane dla zestawu kontrolek modelu nie są uwzględniane w zestawie szkoleniowym dla tego samego modelu. Jest też odwrotnie: elementy zestawu szkoleń nie są nigdy uwzględniane w zestawie kontrolek.
+Termin *sampled items* to odwołanie do losowej próbki elementów w zestawie przeglądów (zawierającym tekst), które są zaznaczone i skojarzone z zestawem kontrolek podczas tworzenia modelu kodowania predykcyjnego. Losowa próbka elementów jest również wybrana dla każdej rundy trenowania. Elementy wybrane dla zestawu sterowania modelu nigdy nie są uwzględniane w zestawie szkoleniowym dla tego samego modelu. Odwrotna jest również prawda: elementy zestawu szkoleniowego nigdy nie są uwzględniane w zestawie kontrolek.
 
-## <a name="training-set"></a>Zestaw szkoleniowy
+## <a name="training-set"></a>Zestaw treningowy
 
-Model losowo wybiera elementy z zestawu recenzji i dodaje je do zestawu szkoleniowego. Podczas rundy szkolenia przedstawiane są elementy z zestawu szkoleniowego (oprócz elementów z zestawu kontrolek), dzięki czemu można oznaczać każdy z nich jako "odpowiedni" lub "nie istotny". Ten proces oznaczania etykietami lub "szkolenia" ułatwia modelowi sprawdzenie, jak można przewidywać, które elementy recenzji są istotne, czy nie. Za każdym razem, gdy przeprowadzasz rundę szkolenia, model wybiera więcej elementów z recenzji i dodaje je do zestawu szkoleniowego dla tego rundy. Elementy z zestawu kontrolek nie są nigdy wybierane dla zestawu szkoleniowego.
+Model losowo wybiera elementy z zestawu przeglądów i dodaje je do zestawu treningowego. Podczas rundy szkoleniowej elementy z zestawu szkoleniowego (oprócz elementów z zestawu sterowania) są prezentowane, aby można było oznaczyć każdy z nich jako "odpowiedni" lub "nieistotny". Ten proces etykietowania lub "trenowania" pomaga modelowi dowiedzieć się, jak przewidzieć, które elementy w przeglądzie są istotne lub nieistotne. Za każdym razem, gdy przeprowadzasz rundę treningową, model wybiera więcej elementów z przeglądu i dodaje je do zestawu treningowego dla tej rundy szkoleniowej. Elementy z zestawu kontrolek nigdy nie są wybierane dla zestawu szkoleniowego.

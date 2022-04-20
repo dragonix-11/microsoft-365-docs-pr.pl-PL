@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika w celu importowania danych z fizycznymi zabezpieczeniami badgingu
+title: Konfigurowanie łącznika w celu importowania fizycznych danych powodujących błędy
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,71 +14,71 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych z fizycznego systemu zarządzania zabezpieczeniami w organizacji w celu Microsoft 365. Dzięki temu można używać tych danych w zasadach zarządzania ryzykiem w niejawnym programie testów w celu wykrywania dostępu konkretnych użytkowników do budynków fizycznych, które mogą wskazywać na możliwe zagrożenia wewnętrzne organizacji.
-ms.openlocfilehash: e70217fa98e283883ab70bbe924d6f01f27613b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Administratorzy mogą skonfigurować łącznik danych do importowania danych z fizycznego systemu rozwiązywania problemów organizacji w celu Microsoft 365. Dzięki temu można użyć tych danych w zasadach zarządzania ryzykiem wewnętrznym, aby ułatwić wykrywanie dostępu do budynków fizycznych przez określonych użytkowników, które mogą wskazywać na możliwe wewnętrzne zagrożenie dla organizacji.
+ms.openlocfilehash: 7b6161cfc8f712082303641f9da7345edf5e24df
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312225"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937944"
 ---
-# <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Konfigurowanie łącznika w celu importowania danych z fizycznymi funkcjami badgingu (wersja zapoznawcza)
+# <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Konfigurowanie łącznika w celu importowania fizycznych danych powodujących błędy (wersja zapoznawcza)
 
-Możesz skonfigurować łącznik danych w aplikacji Centrum zgodności platformy Microsoft 365 w celu importowania danych zabezpieczających fizycznej, takich jak zdarzenia dostępu fizycznego pracownika lub dowolne alarmy dostępu fizycznego generowane przez system zarządzania zabezpieczeniami w organizacji. Przykładami fizycznych punktów dostępu są dane wejścia do budynku lub do serwera albo centrum danych. Dane do oceny fizycznej mogą być używane przez rozwiązanie firmy Microsoft 365 do [](insider-risk-management.md) zarządzania ryzykiem w niejawnym programie testów w celu ochrony organizacji przed złośliwymi działaniami i kradzieżą danych w organizacji.
+Łącznik danych można skonfigurować w portalu zgodności usługi Microsoft Purview w celu zaimportowania fizycznych danych powodujących awarie, takich jak nieprzetworzone fizyczne zdarzenia dostępu pracownika lub wszelkie alarmy dostępu fizycznego generowane przez zły system organizacji. Przykładami fizycznych punktów dostępu jest wejście do budynku lub wejście do serwerowni lub centrum danych. Dane fizyczne mogą być używane przez [rozwiązanie Microsoft 365 zarządzania ryzykiem wewnętrznym](insider-risk-management.md), aby chronić organizację przed złośliwą aktywnością lub kradzieżą danych w organizacji.
 
-Konfigurowanie fizycznego łącznika badgingu składa się z następujących zadań:
+Konfigurowanie fizycznego łącznika powodującego błędy składa się z następujących zadań:
 
-- Tworzenie aplikacji w usłudze Azure Active Directory (Azure AD) w celu uzyskania dostępu do punktu końcowego interfejsu API akceptującego ład JSON, który zawiera dane fizycznego oceniania.
+- Tworzenie aplikacji w usłudze Azure Active Directory (Azure AD) w celu uzyskania dostępu do punktu końcowego interfejsu API, który akceptuje ładunek JSON zawierający fizyczne dane powodujące błędy.
 
-- Creating the JSON payload with a schema defined by physical badging data connector.
+- Tworzenie ładunku JSON przy użyciu schematu zdefiniowanego przez fizyczny łącznik danych nieprawidłowego tworzenia.
 
-- Tworzenie fizycznego łącznika danych w Centrum zgodności platformy Microsoft 365.
+- Tworzenie fizycznego łącznika danych powodującego niezgodność w portalu zgodności.
 
-- Uruchamianie skryptu w celu wypychania danych fizycznych do punktu końcowego interfejsu API.
+- Uruchamianie skryptu w celu wypchnięcia fizycznych danych powodujących nieprawidłowe działanie do punktu końcowego interfejsu API.
 
-- Opcjonalnie możesz zaplanować automatyczne uruchamianie skryptu w celu zaimportowania aktualnie wybieranych danych.
+- Opcjonalnie zaplanowanie automatycznego uruchomienia skryptu w celu zaimportowania obecnie fizycznych danych powodujących nieprawidłowe działanie.
 
 ## <a name="before-you-set-up-the-connector"></a>Przed skonfigurowaniem łącznika
 
-- Użytkownik, który tworzy fizyczny łącznik z obrazami w kroku 3, musi mieć przypisaną rolę Administrator łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi, który tworzy fizyczny łącznik powodujący awarie w kroku 3, należy przypisać rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
    > [!NOTE]
-   > Rola Administrator łącznika danych nie jest obecnie obsługiwana w środowiskach us Government GCC High i DoD. Dlatego użytkownik, który tworzy łącznik KADR w środowiskach GCC Wysokie i DoD, musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+   > Rola administratora łącznika danych nie jest obecnie obsługiwana w środowiskach US Government GCC High i DoD. W związku z tym użytkownik, który tworzy łącznik hr w środowiskach GCC High i DoD, musi mieć przypisaną rolę eksportu importu skrzynki pocztowej w Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę Import eksportu skrzynki pocztowej można dodać do grupy ról Zarządzanie organizacją w Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę Importuj eksport skrzynki pocztowej, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) lub [Modyfikowanie grup ról](/Exchange/permissions-exo/role-groups#modify-role-groups) w artykule "Zarządzanie grupami ról w Exchange Online".
 
-- Należy określić, jak pobrać lub wyeksportować dane z fizycznego systemu taki jak system taki organizacji (który jest pobierany codziennie) i utworzyć plik JSON opisany w kroku 2. Skrypt uruchomiony w kroku 4 wypchnie dane z pliku JSON do punktu końcowego interfejsu API.
+- Musisz określić sposób pobierania lub eksportowania danych z fizycznego systemu złego działania organizacji (codziennie) i utworzyć plik JSON opisany w kroku 2. Skrypt uruchamiany w kroku 4 spowoduje wypchnięcie danych w pliku JSON do punktu końcowego interfejsu API.
 
-- Przykładowy skrypt uruchomiony w kroku 4 wypycha fizyczne dane z pliku JSON do interfejsu API łącznika, dzięki czemu może być używany przez rozwiązanie do zarządzania ryzykiem w niejawnym programie testów. Ten przykładowy skrypt nie jest obsługiwany w żadnym standardowym programie lub usłudze pomocy technicznej firmy Microsoft. Przykładowy skrypt jest dostarczany W JAKIM JEST bez jakiejkolwiek gwarancji. Firma Microsoft dodatkowo nie udziela żadnych dorozumianych gwarancji, w tym, ale nie wyłącznie, żadnych dorozumianych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko związane z użyciem lub wykonaniem przykładowego skryptu i dokumentacji pozostaje tylko dla użytkownika. Firma Microsoft, jej autorzy ani nikt inny biorący udział w tworzeniu, produkcji lub dostarczaniu skryptów nie będą w żadnym wypadku ponosić odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody związane z utratą zysków, przerwami w działaniu firmy, utratą informacji biznesowych lub inne straty pieniężne) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub nieumiejętnego korzystania z tych skryptów lub dokumentacji.  nawet jeśli firma Microsoft została powiadomiona o możliwości wystąpienia takich szkód.
+- Przykładowy skrypt uruchamiany w kroku 4 wypycha fizyczne nieprawidłowe dane z pliku JSON do interfejsu API łącznika, dzięki czemu mogą być używane przez rozwiązanie do zarządzania ryzykiem wewnętrznym. Ten przykładowy skrypt nie jest obsługiwany w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowy skrypt jest dostarczany jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowego skryptu i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-- Ten łącznik jest dostępny w GCC w chmurze dla instytucji rządowych Microsoft 365 Usa. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Organizacji w systemach innych firm, które znajdują się poza infrastrukturą firmy Microsoft 365 i dlatego nie są objęte zobowiązaniami firmy Microsoft 365 w zakresie zgodności z przepisami i ochrony danych. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
+- Ten łącznik jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w aplikacji Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w Azure Active Directory
 
-Pierwszym krokiem jest utworzenie i zarejestrowanie nowej aplikacji w usłudze Azure Active Directory (Azure AD). Aplikacja będzie odpowiadać fizycznemu łącznikowi do oznaczania, który został przez Ciebie utworzeniu w kroku 3. Utworzenie tej aplikacji umożliwi usłudze Azure AD uwierzytelnienie żądania wypychania dla obciążenia JSON zawierającego dane fizycznego oceniania. Podczas tworzenia tej aplikacji Azure AD pamiętaj o zapisaniu poniższych informacji. Te wartości zostaną użyte w kolejnych krokach.
+Pierwszym krokiem jest utworzenie i zarejestrowanie nowej aplikacji w usłudze Azure Active Directory (Azure AD). Aplikacja będzie odpowiadać fizycznemu łącznikowi, który zostanie utworzony w kroku 3. Utworzenie tej aplikacji umożliwi usłudze Azure AD uwierzytelnienie żądania wypychania ładunku JSON zawierającego fizyczne dane powodujące nieprawidłowe zabezpieczenia. Podczas tworzenia tej aplikacji usługi Azure AD zapisz następujące informacje. Te wartości będą używane w kolejnych krokach.
 
 - Identyfikator aplikacji usługi Azure AD (nazywany również *identyfikatorem aplikacji* lub *identyfikatorem klienta*)
 
-- Klucz tajny aplikacji usługi Azure AD (nazywany także *kluczem tajnym klienta*)
+- Wpis tajny aplikacji usługi Azure AD (nazywany również *kluczem tajnym klienta*)
 
 - Identyfikator dzierżawy (nazywany również *identyfikatorem katalogu*)
 
-Aby uzyskać instrukcje krok po kroku dotyczące tworzenia aplikacji w usłudze Azure AD, zobacz [Rejestrowanie](/azure/active-directory/develop/quickstart-register-app) aplikacji w Platforma tożsamości Microsoft.
+Aby uzyskać instrukcje krok po kroku dotyczące tworzenia aplikacji w usłudze Azure AD, zobacz [Rejestrowanie aplikacji przy użyciu Platforma tożsamości Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
-## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>Krok 2. Przygotowywanie pliku JSON z danymi fizycznymi do oszytowania
+## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>Krok 2. Przygotowywanie pliku JSON z fizycznymi danymi powodującymi błędy
 
-Następnym krokiem jest utworzenie pliku JSON zawierającego informacje o danych fizycznego dostępu pracowników. Zgodnie z wyjaśnieniami w sekcji przed rozpoczęciem musisz ustalić, jak wygenerować ten plik JSON na podstawie fizycznego systemu taki jak w Twojej organizacji.
+Następnym krokiem jest utworzenie pliku JSON zawierającego informacje o danych dostępu fizycznego pracowników. Jak wyjaśniono w sekcji przed rozpoczęciem, należy określić sposób generowania tego pliku JSON z fizycznego systemu rozwiązywania problemów w organizacji.
 
-Plik JSON musi być zgodny z definicją schematu wymaganą przez łącznik. Poniżej znajdują się opisy wymaganych właściwości schematu dla pliku JSON:
+Plik JSON musi być zgodny z definicją schematu wymaganą przez łącznik. Poniżej przedstawiono opisy wymaganych właściwości schematu dla pliku JSON:
 
 |Właściwość|Opis|Typ danych|
 |---|---|---|
-|UserId|Pracownik może mieć wiele tożsamości cyfrowych w systemach. Dane wejściowe muszą mieć już identyfikator Azure AD rozpoznany przez system źródłowy.|UpN lub adres e-mail|
-|AssetId|Identyfikator odwołania zasobu fizycznego lub punktu dostępu fizycznego.|Ciąg alfanumeryczny|
-|AssetName|Przyjazna nazwa zasobu fizycznego lub punktu dostępu fizycznego.|Ciąg alfanumeryczny|
-|EventTime|Sygnatura czasowa dostępu.|Data i godzina w formacie UTC|
+|Userid|Pracownik może mieć wiele tożsamości cyfrowych w różnych systemach. Dane wejściowe muszą mieć identyfikator usługi Azure AD już rozpoznany przez system źródłowy.|Nazwa UPN lub adres e-mail|
+|Identyfikator zasobu|Identyfikator referencyjny zasobu fizycznego lub fizycznego punktu dostępu.|Ciąg alfanumeryczny|
+|AssetName|Przyjazna nazwa zasobu fizycznego lub fizycznego punktu dostępu.|Ciąg alfanumeryczny|
+|Eventtime|Sygnatura czasowa dostępu.|Data i godzina w formacie UTC|
 |AccessStatus|Wartość lub `Success``Failed`|Ciąg|
 |||
 
-Oto przykładowy plik JSON zgodny z wymaganym schematem:
+Oto przykład pliku JSON, który jest zgodny z wymaganym schematem:
 
 ```json
 [
@@ -99,7 +99,7 @@ Oto przykładowy plik JSON zgodny z wymaganym schematem:
 ]
 ```
 
-Możesz również pobrać następującą definicję schematu dla pliku JSON z kreatora podczas tworzenia fizycznego łącznika wybierającego w kroku 3.
+Możesz również pobrać następującą definicję schematu pliku JSON z kreatora podczas tworzenia fizycznego łącznika rozwiązywania problemów w kroku 3.
 
 ```text
 {
@@ -136,153 +136,153 @@ Możesz również pobrać następującą definicję schematu dla pliku JSON z kr
 }
 ```
 
-## <a name="step-3-create-the-physical-badging-connector"></a>Krok 3. Tworzenie łącznika z fizycznymi zabezpieczeniami
+## <a name="step-3-create-the-physical-badging-connector"></a>Krok 3. Tworzenie fizycznego łącznika powodującego błędy
 
-Następnym krokiem jest utworzenie fizycznego łącznika w Centrum zgodności platformy Microsoft 365. Po uruchomieniu skryptu w kroku 4 plik JSON utworzony w kroku 3 zostanie przetworzony i wypychany do punktu końcowego interfejsu API skonfigurowanego w kroku 1. W tym kroku pamiętaj o skopiowaniu dokumentu JobId wygenerowanego podczas tworzenia łącznika. Po uruchomieniu skryptu użyjesz polecenia JobId.
+Następnym krokiem jest utworzenie fizycznego łącznika powodującego niezgodność w portalu zgodności. Po uruchomieniu skryptu w kroku 4 plik JSON utworzony w kroku 3 zostanie przetworzony i wypchnięty do punktu końcowego interfejsu API skonfigurowanego w kroku 1. W tym kroku skopiuj identyfikator JobId wygenerowany podczas tworzenia łącznika. Użyjesz identyfikatora JobId podczas uruchamiania skryptu.
 
-1. Przejdź do Centrum zgodności platformy Microsoft 365 i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a>.
+1. Przejdź do portalu zgodności i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a>.
 
-2. Na stronie **Łączniki danych** w obszarze **Fizyczne krawędzie** kliknij pozycję **Widok**.
+2. Na stronie **Łączniki danych** w obszarze **Fizyczne błędy** kliknij pozycję **Wyświetl**.
 
-3. Na stronie **Fizyczne dodawanie podziałów stron** kliknij pozycję **Dodaj łącznik**.
+3. Na stronie **Fizyczne błędy** kliknij pozycję **Dodaj łącznik**.
 
 4. Na stronie **Poświadczenia uwierzytelniania** wykonaj następujące czynności, a następnie kliknij przycisk **Dalej**:
 
-   1. Wpisz lub wklej identyfikator aplikacji usługi Azure AD dla aplikacji Azure utworzonej w kroku 1.
+   1. Wpisz lub wklej identyfikator aplikacji usługi Azure AD dla aplikacji platformy Azure utworzonej w kroku 1.
 
-   2. Pobierz przykładowy schemat referencyjny, aby utworzyć plik JSON.
+   2. Pobierz przykładowy schemat dla odwołania, aby utworzyć plik JSON.
 
-   3. Wpisz unikatową nazwę łącznika z fizycznymi zabezpieczeniami.
+   3. Wpisz unikatową nazwę fizycznego łącznika powodującego błędy.
 
-5. Na stronie **Recenzja** przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+5. Na stronie **Przegląd** przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ** , aby utworzyć łącznik.
 
-6. Zostanie wyświetlona strona stanu z potwierdzeniem utworzenia łącznika. Ta strona zawiera również identyfikator zadania. Możesz skopiować identyfikator zadania z tej strony lub ze strony wysuwanych łącznika. Ten identyfikator zadania jest potrzebny podczas uruchamiania skryptu.
+6. Zostanie wyświetlona strona stanu, która potwierdza, że łącznik został utworzony. Ta strona zawiera również identyfikator zadania. Identyfikator zadania można skopiować z tej strony lub ze strony wysuwanej łącznika. Ten identyfikator zadania jest potrzebny podczas uruchamiania skryptu.
 
-   Strona stanu zawiera również link do skryptu. Skorzystaj z tego skryptu, aby dowiedzieć się, jak opublikować plik JSON w punkcie końcowym interfejsu API.
+   Strona stanu zawiera również link do skryptu. Zapoznaj się z tym skryptem, aby dowiedzieć się, jak opublikować plik JSON w punkcie końcowym interfejsu API.
 
-7. Kliknij **przycisk Gotowe**.
+7. Kliknij pozycję **Gotowe**.
 
-   Nowy łącznik zostanie wyświetlony na liście na karcie **Łączniki** .
+   Nowy łącznik jest wyświetlany na liście na **karcie Łączniki** .
 
-8. Kliknij utworzony fizycznie łącznik z informacjami, aby wyświetlić stronę wysuwu zawierającą właściwości i inne informacje o łączniku.
+8. Kliknij utworzony właśnie łącznik fizycznego rozwiązywania problemów, aby wyświetlić stronę wysuwaną zawierającą właściwości i inne informacje o łączniku.
 
-## <a name="step-4-run-the-script-to-post-your-json-file-containing-physical-badging-data"></a>Krok 4. Uruchom skrypt, aby opublikować plik JSON zawierający dane fizycznego oceniania
+## <a name="step-4-run-the-script-to-post-your-json-file-containing-physical-badging-data"></a>Krok 4. Uruchamianie skryptu w celu opublikowania pliku JSON zawierającego fizyczne nieprawidłowe dane
 
-Następnym krokiem podczas konfigurowania łącznika z fizycznymi zabezpieczeniami jest uruchomienie skryptu, który wypchnie fizyczne dane z pliku JSON (utworzonego w kroku 2) do punktu końcowego interfejsu API utworzonego w kroku 1. Zapewniamy przykładowy skrypt dla Twojego odwołania i możesz go użyć lub utworzyć własny skrypt w celu opublikować plik JSON w punkcie końcowym interfejsu API.
+Następnym krokiem konfigurowania fizycznego łącznika do rozwiązywania problemów jest uruchomienie skryptu, który wypchnie fizyczne dane powodujące nieprawidłowe działanie w pliku JSON (utworzonym w kroku 2) do punktu końcowego interfejsu API utworzonego w kroku 1. Udostępniamy przykładowy skrypt dla Twojego odwołania i możesz go użyć lub utworzyć własny skrypt do publikowania pliku JSON w punkcie końcowym interfejsu API.
 
-Po uruchomieniu skryptu plik JSON zawierający fizyczne dane oceny jest wypychany do Twojej organizacji Microsoft 365, gdzie może uzyskać do niego dostęp rozwiązanie do zarządzania ryzykiem w niejawnym programie testów. Zalecamy, aby codziennie publikować dane z fizycznymi listami. Możesz to zrobić, automatyzując proces generowania pliku JSON każdego dnia na podstawie fizycznego systemu oceny, a następnie planując skrypt w celu wypchania danych.
+Po uruchomieniu skryptu plik JSON zawierający fizyczne dane powodujące nieprawidłowe działanie zostanie wypchnięty do organizacji Microsoft 365, do której można uzyskać dostęp za pomocą rozwiązania do zarządzania ryzykiem wewnętrznym. Zalecamy codzienne publikowanie fizycznych danych powodujących złe kondycje. Można to zrobić, automatyzując proces generowania pliku JSON codziennie z fizycznego systemu badging, a następnie planując skrypt do wypychania danych.
 
 > [!NOTE]
 > Maksymalna liczba rekordów w pliku JSON, które mogą być przetwarzane przez interfejs API, wynosi 50 000 rekordów.
 
-1. Przejdź do [tej GitHub, aby](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) uzyskać dostęp do przykładowego skryptu.
+1. Przejdź do [tej witryny GitHub](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1), aby uzyskać dostęp do przykładowego skryptu.
 
-2. Kliknij przycisk **Nieprzetworzone** , aby wyświetlić skrypt w widoku tekstu
+2. Kliknij przycisk **Nieprzetworzone** , aby wyświetlić skrypt w widoku tekstowym
 
-3. Skopiuj wszystkie wiersze w przykładowym skrypcie, a następnie zapisz je w pliku tekstowym.
+3. Skopiuj wszystkie wiersze w przykładowym skryptycie, a następnie zapisz je w pliku tekstowym.
 
 4. W razie potrzeby zmodyfikuj przykładowy skrypt dla organizacji.
 
-5. Zapisz plik tekstowy jako plik Windows PowerShell, używając sufiksu nazwy pliku programu .ps1, na przykład PhysicalBadging.ps1.
+5. Zapisz plik tekstowy jako plik skryptu Windows PowerShell przy użyciu sufiksu nazwy pliku .ps1, na przykład PhysicalBadging.ps1.
 
-6. Otwórz wiersz polecenia na komputerze lokalnym i przejdź do katalogu, w którym został zapisany skrypt.
+6. Otwórz wiersz polecenia na komputerze lokalnym i przejdź do katalogu, w którym zapisano skrypt.
 
-7. Uruchom następujące polecenie, aby wypchnąć dane fizycznego zabezpieczenia w pliku JSON do chmury firmy Microsoft. na przykład:
+7. Uruchom następujące polecenie, aby wypchnąć dane fizyczne w pliku JSON do chmury firmy Microsoft; na przykład:
 
    ```powershell
    .\PhysicalBadging.ps1 -tenantId "<Tenant Id>" -appId "<Azure AD App Id>" -appSecret "<Azure AD App Secret>" -jobId "Job Id" -jsonFilePath "<records file path>"
    ```
 
-   W poniższej tabeli opisano parametry, których należy użyć w tym skrypcie, oraz ich wymagane wartości. Informacje uzyskane w poprzednich krokach są używane w wartościach tych parametrów.
+   W poniższej tabeli opisano parametry do użycia z tym skryptem i ich wymagane wartości. Informacje uzyskane w poprzednich krokach są używane w wartościach tych parametrów.
 
    |Parametr|Opis|
    |---|---|
-   |tenantId|Jest to identyfikator organizacji, Microsoft 365 uzyskany w kroku 1. Możesz również uzyskać adres dzierżawy organizacji na stronie **Omówienie** w centrum administracyjnym usługi Azure AD. Służy on do identyfikowania Twojej organizacji.|
-   |appId|Jest to identyfikator aplikacji usługi Azure AD dla aplikacji utworzonej w usłudze Azure AD w kroku 1. Jest to używane przez usługę Azure AD do uwierzytelniania, gdy skrypt próbuje uzyskać dostęp do Twojej Microsoft 365 organizacji.|
-   |appSecret|Jest to tajny kod aplikacji usługi Azure AD dla aplikacji utworzonej w usłudze Azure AD w kroku 1. Ta metoda jest również używana do uwierzytelniania.|
-   |jobId|Jest to identyfikator zadania łącznika fizycznego, który został utworzony w kroku 3. Służy to do kojarzenia fizycznych danych zabezpieczających, które są wypychane do chmury firmy Microsoft, z fizycznym łącznikiem stosowanym do oznaczania tej właściwości.|
-   |JsonFilePath|Jest to ścieżka do pliku utworzonego w kroku 2 na komputerze lokalnym (na komputerze, za pomocą których uruchamiasz skrypt) do pliku JSON. Ten plik musi być postępować zgodnie z przykładowym schematem opisanym w kroku 3.|
+   |tenantId|Jest to identyfikator organizacji Microsoft 365 uzyskany w kroku 1. Identyfikator tenantId organizacji można również uzyskać w bloku **Przegląd** w centrum administracyjnym usługi Azure AD. Służy to do identyfikowania organizacji.|
+   |Appid|Jest to identyfikator aplikacji usługi Azure AD dla aplikacji utworzonej w usłudze Azure AD w kroku 1. Jest ona używana przez usługę Azure AD do uwierzytelniania, gdy skrypt próbuje uzyskać dostęp do organizacji Microsoft 365.|
+   |appSecret|Jest to wpis tajny aplikacji usługi Azure AD dla aplikacji utworzonej w usłudze Azure AD w kroku 1. Jest to również używane do uwierzytelniania.|
+   |Jobid|Jest to identyfikator zadania fizycznego łącznika powodującego błędy, który został utworzony w kroku 3. Służy to do kojarzenia fizycznych danych, które są wypychane do chmury firmy Microsoft, z fizycznym łącznikiem powodującym błędy.|
+   |JsonFilePath|Jest to ścieżka pliku na komputerze lokalnym (ta, której używasz do uruchamiania skryptu) dla pliku JSON utworzonego w kroku 2. Ten plik musi być zgodny ze schematem przykładowym opisanym w kroku 3.|
    |||
 
-   Oto przykład składni skryptu łącznika z wartościami rzeczywistymi dla każdego parametru:
+   Oto przykład składni fizycznego skryptu łącznika badging przy użyciu rzeczywistych wartości dla każdego parametru:
 
    ```powershell
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -jsonFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   Jeśli przekazywanie się powiedzie, skrypt wyświetli komunikat o **błędzie Upload pomyślny**.
+   Jeśli przekazywanie zakończy się pomyślnie, skrypt wyświetli **komunikat Upload Pomyślne**.
 
    Jeśli masz wiele plików JSON, musisz uruchomić skrypt dla każdego pliku.
 
 > [!NOTE]
-> Możesz również wypchnąć fizyczne dane wybierane na stronie klienta do punktu końcowego interfejsu API przy użyciu metod innych niż uruchamianie poprzedniego skryptu. Oto przykładowy przykład użycia usługi Postman do wypychania danych do punktu końcowego interfejsu API.
+> Możesz również wypchnąć dane fizyczne do punktu końcowego interfejsu API za pomocą metod innych niż uruchamianie poprzedniego skryptu. Oto przykład użycia narzędzia Postman do wypychania danych do punktu końcowego interfejsu API.
 
-## <a name="step-5-monitor-the-physical-badging-connector"></a>Krok 5. Monitorowanie fizycznego łącznika badgingu
+## <a name="step-5-monitor-the-physical-badging-connector"></a>Krok 5. Monitorowanie fizycznego łącznika rozwiązywania problemów
 
-Po utworzeniu fizycznego łącznika badgingu i wypchnieniu danych z fizycznego zabezpieczenia, możesz wyświetlić łącznik i stan przekazywania w Centrum zgodności platformy Microsoft 365. Jeśli skrypt ma być uruchamiany automatycznie regularnie, można także wyświetlić bieżący stan po ostatnim uruchomieniu skryptu.
+Po utworzeniu fizycznego łącznika powodującego niezgodność i wypchnięciu fizycznych danych powodujących niezgodność można wyświetlić łącznik i przekazać stan w portalu zgodności. Jeśli planujesz regularne uruchamianie skryptu automatycznie, możesz również wyświetlić bieżący stan po ostatnim uruchomieniu skryptu.
 
-1. Przejdź do Centrum zgodności platformy Microsoft 365 i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a>.
+1. Przejdź do portalu zgodności i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a>.
 
-2. Kliknij **kartę Łączniki** , a następnie wybierz fizyczny łącznik, aby wyświetlić stronę wysuwu. Ta strona zawiera właściwości i informacje o łączniku.
+2. Kliknij kartę **Łączniki,** a następnie wybierz fizyczny łącznik rozwiązywania problemów, aby wyświetlić stronę wysuwaną. Ta strona zawiera właściwości i informacje o łączniku.
 
-   ![Wysuuwana strona stanu dla łącznika z fizycznymi zabezpieczeniami.](..\media\PhysicalBadgingStatusFlyout.png)
+   ![Strona wysuwanego stanu dla fizycznego łącznika powodującego błędy.](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. W **obszarze Ostatni import** **kliknij link Pobierz** dziennik, aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera informacje o każdym uruchamianiu skryptu i przekazywaniu danych z pliku JSON do chmury firmy Microsoft.
+3. W obszarze **Ostatni import** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera informacje o każdym uruchomieniu skryptu i przekazaniu danych z pliku JSON do chmury firmy Microsoft.
 
-   ![W pliku dziennika łączników z listą właściwości fizycznych jest wyświetlana liczba obiektów z przekazanego pliku JSON.](..\media\PhysicalBadgingConnectorLogFile.png)
+   ![Plik dziennika łącznika błędów fizycznych wyświetla liczbę obiektów z przekazanego pliku JSON.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   Pole **RecordsSaved** wskazuje liczbę obiektów w przekazanym pliku JSON. Jeśli na przykład plik JSON zawiera cztery obiekty, wartość pól **RecordsSaved** wynosi 4, jeśli skrypt pomyślnie przesłał wszystkie obiekty w pliku JSON.
+   Pole **RecordsSaved** wskazuje liczbę obiektów w przekazanym pliku JSON. Jeśli na przykład plik JSON zawiera cztery obiekty, wartość pól **RecordsSaved** wynosi 4, jeśli skrypt pomyślnie przekazał wszystkie obiekty w pliku JSON.
 
-Jeśli nie został uruchomiony skrypt w kroku 4, w obszarze Ostatni import jest wyświetlany link do pobierania **skryptu**. Możesz pobrać skrypt, a następnie wykonać czynności opisane w kroku 4, aby go uruchomić.
+Jeśli skrypt nie został uruchomiony w kroku 4, w obszarze **Ostatni import** zostanie wyświetlony link umożliwiający pobranie skryptu. Możesz pobrać skrypt, a następnie wykonać kroki opisane w kroku 4, aby go uruchomić.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>(Opcjonalnie) Krok 6. Planowanie automatycznego uruchamiania skryptu
 
-Aby upewnić się, że najnowsze fizyczne dane dotyczące umówiania są dostępne dla narzędzi, takich jak rozwiązanie do zarządzania ryzykiem w niejawnym programie testów, zaleca się cykliczne uruchamianie skryptu, na przykład raz dziennie. Wymaga to również zaktualizowania danych fizycznych do pliku JSON zgodnie z podobnym (jeśli nie tym samym) harmonogramem, tak aby zawierał najnowsze informacje o pracownikach, którzy opuszczają Twoją organizację. Celem tego jest przekazanie najbardziej aktualnych danych dotyczących fizycznego zabezpieczenia, tak aby łącznik taki był dostępny dla rozwiązania do zarządzania ryzykiem w niejawnym programie testów.
+Aby upewnić się, że najnowsze fizyczne dane z organizacji są dostępne dla narzędzi takich jak rozwiązanie do zarządzania ryzykiem wewnętrznym, zalecamy zaplanowanie automatycznego uruchamiania skryptu cyklicznie, na przykład raz dziennie. Wymaga to również zaktualizowania fizycznych danych błędnych do pliku JSON zgodnie z podobnym (jeśli nie tym samym) harmonogramem, tak aby zawierała najnowsze informacje o pracownikach opuszczających organizację. Celem jest przekazanie najbardziej aktualnych fizycznych danych powodujących błędy w zabezpieczeniach, aby fizyczny łącznik do rozwiązywania problemów mógł udostępnić je rozwiązaniu do zarządzania ryzykiem wewnętrznym.
 
-Za pomocą aplikacji Harmonogram zadań w programie Windows uruchamiać skrypt automatycznie każdego dnia.
+Możesz użyć aplikacji Harmonogram zadań w Windows, aby codziennie automatycznie uruchamiać skrypt.
 
-1. Na komputerze lokalnym kliknij przycisk Windows **Start**, a następnie wpisz **Harmonogram zadań**.
+1. Na komputerze lokalnym kliknij przycisk **Windows Start**, a następnie wpisz **Harmonogram zadań**.
 
 2. Kliknij aplikację **Harmonogram zadań** , aby ją otworzyć.
 
 3. W sekcji **Akcje** kliknij pozycję **Utwórz zadanie**.
 
-4. Na **karcie** Ogólne wpisz opisową nazwę zaplanowanego zadania. Na przykład skrypt **łącznika z fizycznymi zabezpieczeniami.** Możesz również dodać opcjonalny opis.
+4. Na karcie **Ogólne** wpisz opisową nazwę zaplanowanego zadania; na przykład **fizyczny skrypt łącznika badging**. Możesz również dodać opcjonalny opis.
 
-5. W **obszarze Opcje zabezpieczeń** wykonaj następujące czynności:
+5. W obszarze **Opcje zabezpieczeń** wykonaj następujące czynności:
 
-   1. Określ, czy skrypt ma być uruchamiany tylko po zalogowaniu się na komputerze, czy po zalogowaniu się.
+   1. Określ, czy skrypt ma być uruchamiany tylko wtedy, gdy użytkownik jest zalogowany na komputerze, czy uruchamiany po zalogowaniu.
 
-   2. Upewnij się, że **jest zaznaczone pole** wyboru Uruchom z najwyższymi uprawnieniami.
+   2. Upewnij się, że zaznaczono pole wyboru **Uruchom z najwyższymi uprawnieniami** .
 
-6. Wybierz **kartę Wyzwalacze** , kliknij pozycję **Nowy**, a następnie wykonaj następujące czynności:
+6. Wybierz kartę **Wyzwalacze** , kliknij pozycję **Nowy**, a następnie wykonaj następujące czynności:
 
-   1. W **Ustawienia** **kliknij opcję Dzienny**, a następnie wybierz datę i czas do uruchomienia skryptu po raz pierwszy. Skrypt będzie uruchamiany każdego dnia o tej samej określonej godzinie.
+   1. W **obszarze Ustawienia** wybierz opcję **Codziennie**, a następnie wybierz datę i godzinę, aby uruchomić skrypt po raz pierwszy. Skrypt będzie uruchamiany codziennie o tej samej określonej godzinie.
 
-   2. Upewnij **się, że** w obszarze Ustawienia zaawansowane jest **zaznaczone** pole wyboru Włączone.
+   2. W obszarze **Ustawienia zaawansowane** upewnij się, że **zaznaczono** pole wyboru Włączone.
 
-   3. Kliknij **przycisk OK**.
+   3. Kliknij przycisk **OK**.
 
-7. Wybierz **kartę Akcje** , kliknij **pozycję Nowy**, a następnie wykonaj następujące czynności:
+7. Wybierz kartę **Akcje** , kliknij pozycję **Nowy**, a następnie wykonaj następujące czynności:
 
-   ![Ustawienia akcji służące do tworzenia nowego zaplanowanego zadania dla fizycznego skryptu łącznika, który zawiera już zabezpieczenia.](..\media\SchedulePhysicalBadgingScript1.png)
+   ![Ustawienia akcji umożliwiające utworzenie nowego zaplanowanego zadania dla skryptu łącznika fizycznego.](..\media\SchedulePhysicalBadgingScript1.png)
 
-   1. Na liście **rozwijanej** Akcja upewnij się, że jest **wybrana opcja Uruchom** program.
+   1. Na liście rozwijanej **Akcja** upewnij się, że **wybrano pozycję Uruchom program** .
 
-   2. W **polu Program/skrypt** kliknij przycisk **Przeglądaj, przejdź** do następującej lokalizacji i wybierz ją, aby ścieżka była wyświetlana w polu: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
+   2. W polu **Program/skrypt** kliknij pozycję **Przeglądaj**, a następnie przejdź do następującej lokalizacji i wybierz ją, aby ścieżka była wyświetlana w polu: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
-   3. W **polu Dodaj argumenty (opcjonalnie)** wklej to samo polecenie skryptu, które było uruchomiono w kroku 4. Na przykład: \PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json"
+   3. W polu **Dodawanie argumentów (opcjonalnie)** wklej to samo polecenie skryptu, które zostało uruchomione w kroku 4. Na przykład: .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json"
 
-   4. W polu **Rozpocznij w (opcjonalnie)** wklej lokalizację folderu skryptu, który został uruchomiony w kroku 4. Na przykład C:\Użytkownicy\contosoadmin\Pulpit\Skrypty.
+   4. W polu **Start in (opcjonalnie) wklej** lokalizację folderu skryptu uruchomionego w kroku 4. Na przykład C:\Users\contosoadmin\Desktop\Scripts.
 
    5. Kliknij **przycisk OK** , aby zapisać ustawienia nowej akcji.
 
-8. W **oknie Tworzenie** zadania kliknij przycisk **OK** , aby zapisać zaplanowane zadanie. Może zostać wyświetlony monit o wprowadzenie poświadczeń konta użytkownika.
+8. W oknie **Tworzenie zadania** kliknij przycisk **OK** , aby zapisać zaplanowane zadanie. Może zostać wyświetlony monit o wprowadzenie poświadczeń konta użytkownika.
 
    Nowe zadanie zostanie wyświetlone w bibliotece harmonogramu zadań.
 
    ![Nowe zadanie zostanie wyświetlone w bibliotece harmonogramu zadań.](..\media\SchedulePhysicalBadgingScript2.png)
 
-Zostanie wyświetlony czas ostatniego uruchomienia skryptu i następnego uruchomienia tego skryptu. Możesz kliknąć dwukrotnie zadanie, aby je edytować.
+Zostanie wyświetlony czas ostatniego uruchomienia skryptu i następnego zaplanowanego uruchomienia. Możesz kliknąć dwukrotnie zadanie, aby je edytować.
 
-Możesz także sprawdzić czas ostatniego uruchamiania skryptu na stronie wysuwanych odpowiednich fizycznych łączników sprawdzanych w Centrum zgodności.
+Możesz również sprawdzić, kiedy ostatni raz skrypt był uruchamiany na stronie wysuwanej odpowiedniego fizycznego łącznika powodującego błędy w centrum zgodności.

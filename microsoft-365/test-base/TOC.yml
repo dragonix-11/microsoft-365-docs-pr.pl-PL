@@ -1,34 +1,42 @@
-- name: Dokumentacja bazy testowej
+- name: Dokumentacja usługi Test Base
   href: index.yml
 - name: Omówienie
   items:
-    - name: Co to jest baza testowa?
+    - name: Co to jest usługa Test Base?
       href: overview.md
-- name: Szybkie starty
+- name: Przewodniki Szybki start
   items:
-    - name: Utwórz konto podstawowe testowe
+    - name: Utwórz konto usługi Test Base
       href: createAccount.md
+    - name: Testowanie aplikacji w usłudze Test Base
+      items:
+        - name: Omówienie
+          href: testoverview.md
+        - name: Testowanie pakietu plików binarnych w usłudze Test Base
+          href: testapplication.md
+        - name: Testowanie aplikacji usługi Intune w usłudze Test Base
+          href: testintuneapplication.md
+        - name: Przekaż pakiet usługi Test Base (zip)
+          href: uploadApplication.md
     - name: Tworzenie pakietu
       href: buildpackage.md
-    - name: Przekazywanie pakietu
-      href: uploadApplication.md
-    - name: Upload zależności & binaries
+    - name: Przekazywanie plików binarnych i zależności
       href: binaries.md
-    - name: Ustawianie zadań testowych
+    - name: Ustaw zadania testowe
       href: testtask.md
-    - name: Ustawianie opcji testowania
+    - name: Ustawianie opcji testu
       href: testoptions.md
-    - name: Recenzja
+    - name: Przegląd
       href: review.md
-    - name: Wytyczne pakietu
+    - name: Wytyczne dotyczące pakietu
       href: contentguideline.md
     - name: Reguły aplikacji/testu
       href: rules.md
-- name: Przewodniki po instrukcje
+- name: Instrukcje
   items:
-    - name: Testowanie aplikacji na serwerze
+    - name: Testowanie aplikacji serwera
       href: server.md
-    - name: Testy funkcjonalności
+    - name: Testowanie funkcjonalne
       href: functional.md
     - name: Sprawdzanie poprawności aktualizacji funkcji
       href: feature.md
@@ -36,7 +44,7 @@
       href: memory.md
     - name: Analiza regresji procesora
       href: cpu.md
-    - name: SDK & API
+    - name: ZESTAW SDK I INTERFEJS API
       href: sdkapi.md
 - name: Odwołanie
   items:

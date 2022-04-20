@@ -1,5 +1,5 @@
 ---
-title: Limity zaawansowanego zbierania elektronicznych materiałów dowodowych
+title: Limity zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,21 +15,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się więcej o limitach przypadków, limitach indeksowania i limitach wyszukiwania dla rozwiązania Advanced eDiscovery w Microsoft 365.
-ms.openlocfilehash: 93f0a988cb5a5321c8a725a1d678079174eba923
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+description: Dowiedz się więcej o limitach przypadków, limitach indeksowania i limitach wyszukiwania dla rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365.
+ms.openlocfilehash: 599f57ab863ab6d82140fa473624916bd2f26ac1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861317"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942518"
 ---
-# <a name="limits-in-advanced-ediscovery"></a>Limity w Advanced eDiscovery
+# <a name="limits-in-ediscovery-premium"></a>Limity w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 
-W tym artykule opisano limity w rozwiązaniu Advanced eDiscovery w Microsoft 365.
+W tym artykule opisano limity w rozwiązaniu Microsoft Purview eDiscovery (Premium) w Microsoft 365.
 
 ## <a name="case-and-review-set-limits"></a>Limity zestawu przypadków i przeglądów
 
-W poniższej tabeli wymieniono limity dotyczące przypadków i zestawów przeglądów w Advanced eDiscovery.
+W poniższej tabeli wymieniono limity dotyczące przypadków i zestawów przeglądów w obszarze eDiscovery (Premium).
 
 |Opis limitu|Limit|
 |---|---|
@@ -45,17 +45,17 @@ W poniższej tabeli wymieniono limity dotyczące przypadków i zestawów przegl�
 
 ## <a name="hold-limits"></a>Limity blokady
 
-W poniższej tabeli wymieniono limity dotyczące blokad skojarzonych z przypadkiem Advanced eDiscovery.
+W poniższej tabeli wymieniono limity dotyczące blokad skojarzonych z przypadkiem zbierania elektronicznych materiałów dowodowych (Premium).
 
-|Opis limitu|Limit|
-|---|---|
-|Maksymalna liczba zasad blokady dla organizacji. Ten limit obejmuje łączną sumę zasad blokady w podstawowych przypadkach zbierania elektronicznych materiałów dowodowych i Advanced eDiscovery.|10,000|
-|Maksymalna liczba skrzynek pocztowych w jednym przypadku blokady. Ten limit obejmuje łączną sumę skrzynek pocztowych użytkowników oraz skrzynki pocztowe skojarzone z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.|10003<sup></sup>|
-|Maksymalna liczba witryn w jednym przypadku blokady. Ten limit obejmuje łączną sumę witryn OneDrive dla Firm, witryn SharePoint oraz witryn skojarzonych z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.|1003<sup></sup>|
+| Opis limitu | Limit |
+|:-----|:-----|
+|Maksymalna liczba zasad blokady dla organizacji. Ten limit obejmuje łączną sumę zasad blokady w przypadkach zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i Microsoft Purview eDiscovery (Premium). <br/> |10.000<sup>3</sup>  <br/> |
+|Maksymalna liczba skrzynek pocztowych w jednym przypadku blokady. Ten limit obejmuje łączną sumę skrzynek pocztowych użytkowników oraz skrzynki pocztowe skojarzone z grupami Grupy Microsoft 365, Microsoft Teams i Yammer. <br/> |1,000  <br/> |
+|Maksymalna liczba witryn w jednym przypadku blokady. Ten limit obejmuje łączną sumę witryn OneDrive dla Firm, witryn SharePoint oraz witryn skojarzonych z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Limity indeksowania
 
-W poniższej tabeli wymieniono limity indeksowania w Advanced eDiscovery.
+W poniższej tabeli wymieniono limity indeksowania w obszarze eDiscovery (Premium).
 
 |Opis limitu|Limit|
 |---|---|
@@ -66,7 +66,7 @@ W poniższej tabeli wymieniono limity indeksowania w Advanced eDiscovery.
 
 ## <a name="search-limits"></a>Limity wyszukiwania
 
-Limity opisane w tej sekcji są związane z używaniem narzędzia wyszukiwania na karcie **Wyszukiwania** w celu zbierania danych dla danego przypadku. Aby uzyskać więcej informacji, zobacz [Zbieranie danych dla przypadku w Advanced eDiscovery](collecting-data-for-ediscovery.md).
+Limity opisane w tej sekcji są związane z używaniem narzędzia wyszukiwania na karcie **Wyszukiwania** w celu zbierania danych dla danego przypadku. Aby uzyskać więcej informacji, zobacz [Zbieranie danych w przypadku zbierania elektronicznych materiałów dowodowych (Premium)](collecting-data-for-ediscovery.md).
 
 |Opis limitu|Limit|
 |---|---|
@@ -126,7 +126,7 @@ Limity opisane w tej sekcji są związane z eksportowaniem dokumentów z zestawu
 > [!NOTE]
 > <sup>1</sup> Jest to maksymalna liczba tagów, które można utworzyć w danym przypadku. Ten limit nie jest związany z liczbą dokumentów, które można otagować.
 >
-> <sup>2</sup> Ten limit jest współużytkowany z eksportowaniem zawartości w innych narzędziach zbierania elektronicznych materiałów dowodowych. Oznacza to, że względem tego limitu są stosowane współbieżne eksporty w wyszukiwaniu zawartości i podstawowym zbierania elektronicznych materiałów dowodowych (oraz dodawanie zawartości do przeglądania zestawów w Advanced eDiscovery).
+> <sup>2</sup> Ten limit jest współużytkowany z eksportowaniem zawartości w innych narzędziach zbierania elektronicznych materiałów dowodowych. Oznacza to, że względem tego limitu są stosowane współbieżne eksporty w wyszukiwaniu zawartości i zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) (oraz dodawanie zawartości do przeglądania zestawów zbierania elektronicznych materiałów dowodowych (Premium)).
 >
 > <sup>3</sup> Po wstrzymaniu ponad 1000 skrzynek pocztowych lub 100 witryn w zasadach jednego wstrzymania system automatycznie skaluje blokadę zgodnie z potrzebami. Oznacza to, że system automatycznie doda lokalizacje danych do wielu zasad przechowywania, zamiast dodawać je do jednej zasady blokady. Jednak limit 10 000 zasad przechowywania spraw na organizację nadal ma zastosowanie.
 >
@@ -141,4 +141,4 @@ Limity opisane w tej sekcji są związane z eksportowaniem dokumentów z zestawu
 >
 > <sup>6</sup> W przypadku zapytań innych niż frazy (wartość słowa kluczowego, która nie używa podwójnego cudzysłowu) używamy specjalnego indeksu prefiksu. Informuje nas to, że słowo występuje w dokumencie, ale nie w miejscu, w którym występuje w dokumencie. Aby wykonać zapytanie frazy (wartość słowa kluczowego z podwójnym cudzysłowem), musimy porównać pozycję w dokumencie dla wyrazów w frazie. Oznacza to, że nie możemy używać indeksu prefiksu dla zapytań fraz. W takim przypadku wewnętrznie rozwiniemy zapytanie o wszystkie możliwe wyrazy, do których rozwija się prefiks; na przykład  **time\**_ może rozwinąć się do _*"czasomierza LUB czasomierza LUB czasu LUB czasu lub czasomierza lub przedziału czasowego LUB ..."**. Limit 10 000 to maksymalna liczba wariantów, do których wyraz może się rozwinąć, a nie liczba dokumentów pasujących do zapytania. Nie ma górnego limitu terminów innych niż frazy.
 >
-> <sup>7</sup> Ten limit dotyczy pobierania wybranych dokumentów z zestawu przeglądów. Nie dotyczy eksportowania dokumentów z zestawu przeglądów. Aby uzyskać więcej informacji na temat pobierania i eksportowania dokumentów, zobacz [Eksportowanie danych przypadków w Advanced eDiscovery](exporting-data-ediscover20.md).
+> <sup>7</sup> Ten limit dotyczy pobierania wybranych dokumentów z zestawu przeglądów. Nie dotyczy eksportowania dokumentów z zestawu przeglądów. Aby uzyskać więcej informacji na temat pobierania i eksportowania dokumentów, zobacz [Export case data in eDiscovery (Premium) (Eksportowanie danych przypadków w usłudze eDiscovery (Premium)).](exporting-data-ediscover20.md)

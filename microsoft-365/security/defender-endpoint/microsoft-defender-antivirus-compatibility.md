@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/14/2022
+ms.date: 04/19/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6d0e9b00e7044145f7ca03d492a5bd32e726c38d
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 08f9f3e127246b361cd76000967ae22991335338
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911473"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943453"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi
 
@@ -176,7 +176,7 @@ Tabela w tej sekcji zawiera podsumowanie funkcji i możliwości, które aktywnie
 (<a id="fn8">8</a>) Gdy Program antywirusowy Microsoft Defender jest w trybie pasywnym, filtrowanie zawartości internetowej działa tylko z przeglądarką Microsoft Edge. 
 
 > [!NOTE]
-> [Microsoft 365 ochrona przed utratą danych punktu końcowego](/microsoft-365/compliance/endpoint-dlp-learn-about) nadal działa normalnie, gdy Program antywirusowy Microsoft Defender jest w trybie aktywnym lub pasywnym.
+> [Ochrona przed utratą danych punktu końcowego](/microsoft-365/compliance/endpoint-dlp-learn-about) nadal działa normalnie, gdy Program antywirusowy Microsoft Defender jest w trybie aktywnym lub pasywnym.
 
 ## <a name="important-notes"></a>Ważne uwagi
 
@@ -194,7 +194,6 @@ Aby potwierdzić stan Program antywirusowy Microsoft Defender, można użyć jed
  | Menedżer zadań |  1. Na urządzeniu Windows otwórz aplikację Menedżer zadań.<br/>2. Wybierz kartę **Szczegóły** .<br/>3. Wyszukaj **MsMpEng.exe** na liście. | 
  | Windows PowerShell <br/> (Aby potwierdzić, że Program antywirusowy Microsoft Defender jest uruchomiona) |  1. Na urządzeniu Windows otwórz Windows PowerShell. <br/>2. Uruchom następujące polecenie cmdlet programu PowerShell: `Get-Process`.<br/>3. Przejrzyj wyniki. Jeśli Program antywirusowy Microsoft Defender jest włączona, powinna zostać wyświetlona **MsMpEng.exe**. | 
  | Windows PowerShell <br/>(Aby potwierdzić, że ochrona antywirusowa jest w miejscu) |  Możesz użyć [polecenia cmdlet Get-MpComputerStatus programu PowerShell](/powershell/module/defender/get-mpcomputerstatus).<br/>1. Na urządzeniu Windows otwórz Windows PowerShell.<br/>2. Uruchom następujące polecenie cmdlet programu PowerShell:<br/> \|Get-MpComputerStatus wybierz pozycję AMRunningMode <br/>3. Przejrzyj wyniki. Jeśli Program antywirusowy Microsoft Defender jest włączony w punkcie końcowym, powinien zostać wyświetlony tryb **normalny**, **pasywny** lub **EDR bloku**.  | 
- | Wiersz polecenia |  1. Na urządzeniu Windows otwórz wiersz polecenia.<br/>2. Wpisz `sc query windefend`, a następnie naciśnij klawisz Enter.<br/>3. Przejrzyj wyniki, aby potwierdzić, że Program antywirusowy Microsoft Defender działa w trybie pasywnym.  | 
 
 ## <a name="more-details-about-microsoft-defender-antivirus-states"></a>Więcej szczegółów na temat stanów Program antywirusowy Microsoft Defender
 
@@ -221,4 +220,4 @@ W tabeli w tej sekcji opisano różne stany, które mogą być widoczne w Progra
 - [Program antywirusowy Microsoft Defender na klientach Windows](microsoft-defender-antivirus-in-windows-10.md)
 - [Program antywirusowy Microsoft Defender na serwerze Windows](microsoft-defender-antivirus-on-windows-server.md)
 - [Funkcja EDR w trybie blokowania](edr-in-block-mode.md)
-- [Dowiedz się więcej o zapobieganiu utracie danych punktu końcowego Microsoft 365](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Dowiedz się więcej o ochronie przed utratą danych punktu końcowego](/microsoft-365/compliance/endpoint-dlp-learn-about)

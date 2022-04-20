@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie granic zgodności dla badań zbierania elektronicznych materiałów dowodowych
+title: Konfigurowanie granic zgodności na potrzeby badań zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,66 +17,66 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: Dowiedz się, jak za pomocą granic zgodności tworzyć granice logiczne sterujące lokalizacjami zawartości użytkowników, które menedżer zbierania elektronicznych materiałów dowodowych może wyszukiwać w Microsoft 365.
+description: Dowiedz się, jak używać granic zgodności do tworzenia granic logicznych, które kontrolują lokalizacje zawartości użytkownika, które menedżer zbierania elektronicznych materiałów dowodowych może przeszukiwać w Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5fe023391823abbde2cb289926863bbcbb98dfb2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6eab4528cb399f880d40c8edcea16814ad9b7ade
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021332"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941880"
 ---
-# <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Konfigurowanie granic zgodności dla badań zbierania elektronicznych materiałów dowodowych
+# <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Konfigurowanie granic zgodności na potrzeby badań zbierania elektronicznych materiałów dowodowych
 
-Wskazówki w tym artykule można stosować podczas korzystania z podstawowych funkcji zbierania elektronicznych materiałów dowodowych lub Advanced eDiscovery do zarządzania badaniami.
+Wskazówki zawarte w tym artykule można zastosować w przypadku korzystania z materiałów dowodowych usługi Microsoft Purview (Standard) lub Microsoft Purview eDiscovery (Premium) do zarządzania badaniami.
 
-Granice zgodności tworzą logiczne granice w organizacji, które kontrolują lokalizacje zawartości użytkowników (takie jak skrzynki pocztowe, konta OneDrive i witryny SharePoint), które menedżerowie zbierania elektronicznych materiałów dowodowych mogą wyszukiwać. Ponadto granice zgodności kontrolują, kto może mieć dostęp do spraw zbierania elektronicznych materiałów dowodowych używanych do zarządzania sprawami prawnie, zasobami kadrami lub innymi badaniami w organizacji. Zgodność z przepisami jest często potrzebna w przypadku wielonarodowych firm, które muszą przestrzegać przepisów i zarządców geograficznych, a także dla instytucji rządowych, które często są podzielone na różne instytucje. W Microsoft 365 zgodności pomagają spełnić te wymagania podczas przeszukiwania zawartości i zarządzania badaniami za pomocą spraw zbierania elektronicznych materiałów dowodowych.
+Granice zgodności tworzą granice logiczne w organizacji kontrolujące lokalizacje zawartości użytkownika (takie jak skrzynki pocztowe, konta OneDrive i witryny SharePoint), które mogą wyszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. Ponadto granice zgodności kontrolują, kto może uzyskiwać dostęp do przypadków zbierania elektronicznych materiałów dowodowych używanych do zarządzania badaniami prawnymi, ludzkimi lub innymi badaniami w organizacji. Potrzeba granic zgodności jest często niezbędna dla korporacji wielonarodowych, które muszą przestrzegać zarządców geograficznych i przepisów oraz dla rządów, które często są podzielone na różne agencje. W Microsoft 365 granice zgodności ułatwiają spełnienie tych wymagań podczas wyszukiwania zawartości i zarządzania badaniami w przypadkach zbierania elektronicznych materiałów dowodowych.
   
-W przykładzie na poniższej ilustracji wyjaśniono, jak działają granice zgodności.
+Użyjemy przykładu na poniższej ilustracji, aby wyjaśnić, jak działają granice zgodności.
   
-![Granice zgodności składają się z filtrów uprawnień wyszukiwania, które sterują dostępem do instytucji i grup ról administratorów, które kontrolują dostęp do spraw zbierania elektronicznych materiałów dowodowych.](../media/M365_ComplianceBoundary_OrgChart_v2.png)
+![Granice zgodności składają się z filtrów uprawnień wyszukiwania, które kontrolują dostęp do agencji i grup ról administratora, które kontrolują dostęp do przypadków zbierania elektronicznych materiałów dowodowych.](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
-W tym przykładzie Contoso LTD to organizacja, która składa się z dwóch przedstawicielsze: Fourth Coffee i Coho Winery. Firma wymaga, aby menedżerowie zbierania elektronicznych materiałów dowodowych i osoby schłodne mogą przeszukiwać tylko skrzynki pocztowe usługi Exchange, konta OneDrive oraz witryny SharePoint w ich agencji. Ponadto menedżerowie zbierania elektronicznych materiałów dowodowych i jego kierownicy mogą widzieć tylko sprawy zbierania elektronicznych materiałów dowodowych w swoich agencji i mogą uzyskać dostęp tylko do spraw, których są członkami. Ponadto w tym scenariuszu chętni nie mogą umieszczać lokalizacji zawartości w hold czy eksportować zawartości ze sprawy. Poniżej opisano, w jaki sposób granice zgodności spełniają te wymagania.
+W tym przykładzie firma Contoso LTD to organizacja składająca się z dwóch spółek zależnych: Fourth Coffee i Coho Winery. Firma wymaga, aby menedżerowie zbierania elektronicznych materiałów dowodowych i śledczy mogli przeszukiwać tylko skrzynki pocztowe Exchange, konta OneDrive i SharePoint witryny w swojej agencji. Ponadto menedżerowie i śledczy zbierania elektronicznych materiałów dowodowych mogą widzieć tylko przypadki zbierania elektronicznych materiałów dowodowych w swojej agencji i mogą uzyskiwać dostęp tylko do spraw, do których są członkami. Ponadto w tym scenariuszu badacze nie mogą wstrzymać lokalizacji zawartości ani wyeksportować zawartości ze sprawy. Poniżej przedstawiono sposób, w jaki granice zgodności spełniają te wymagania.
   
-- Funkcja filtrowania uprawnień wyszukiwania dla zbierania elektronicznych materiałów dowodowych steruje lokalizacjami zawartości, które mogą wyszukiwać menedżerowie i osoby zbierania elektronicznych materiałów dowodowych. Oznacza to, że menedżerowie zbierania elektronicznych materiałów dowodowych i kierownicy z przedstawicielstw Fourth Coffee mogą przeszukiwać tylko lokalizacje zawartości w przedstawicielstwie Fourth Coffee. To samo ograniczenie dotyczy przedstawicielstwo Coho Winery.
+- Funkcja filtrowania uprawnień wyszukiwania dla zbierania elektronicznych materiałów dowodowych kontroluje lokalizacje zawartości, które mogą przeszukiwać menedżerowie i badacze zbierania elektronicznych materiałów dowodowych. Oznacza to, że menedżerowie zbierania elektronicznych materiałów dowodowych i śledczy w agencji Fourth Coffee mogą przeszukiwać tylko lokalizacje treści w filii Fourth Coffee. To samo ograniczenie dotyczy spółki zależnej Coho Winery.
 
-- [Grupy ról](assign-ediscovery-permissions.md#rbac-roles-related-to-ediscovery) zawierają następujące funkcje do zachowania zgodności:
+- [Grupy ról](assign-ediscovery-permissions.md#rbac-roles-related-to-ediscovery) udostępniają następujące funkcje dla granic zgodności:
 
-  - Kontrolowanie, kto może widzieć sprawy zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Oznacza to, że kierownicy i słoje zbierania elektronicznych materiałów dowodowych mogą zobaczyć tylko sprawy zbierania elektronicznych materiałów dowodowych w ich agencji.
+  - Kontrolowanie, kto może wyświetlać przypadki zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview. Oznacza to, że menedżerowie zbierania elektronicznych materiałów dowodowych i śledczy mogą widzieć tylko przypadki zbierania elektronicznych materiałów dowodowych w swojej agencji.
 
-  - Kontrolowanie, kto może przypisywać członków do sprawy zbierania elektronicznych materiałów dowodowych. Oznacza to, że menedżerowie zbierania elektronicznych materiałów dowodowych i jego członkowie mogą przypisywać członków tylko do spraw, do których sami są członkami.
+  - Kontrolowanie, kto może przypisywać członków do sprawy zbierania elektronicznych materiałów dowodowych. Oznacza to, że menedżerowie zbierania elektronicznych materiałów dowodowych i śledczy mogą przypisywać członków tylko do spraw, do których sami należą.
 
-  - Kontroluj zadania związane z zbierania elektronicznych materiałów dowodowych, które mogą wykonywać członkowie, dodając lub usuwając role, które przypisują określone uprawnienia.
+  - Kontroluj zadania związane zbierania elektronicznych materiałów dowodowych, które członkowie mogą wykonywać, dodając lub usuwając role, które przypisują określone uprawnienia.
 
-- Po zastosowaniu filtru uprawnień wyszukiwania do grupy ról członkowie tej grupy ról mogą wykonywać następujące akcje związane z wyszukiwaniem, o ile do grupy ról przypisano uprawnienia do wykonywania akcji:
+- Gdy filtr uprawnień wyszukiwania jest stosowany do grupy ról, członkowie grupy ról mogą wykonywać następujące akcje związane z wyszukiwaniem, o ile uprawnienia do wykonania akcji są przypisane do grupy ról:
 
-  - Wyszukiwanie zawartości
+  - Szukaj zawartości
 
   - Podgląd wyników wyszukiwania
 
-  - Eksportowanie wyników wyszukiwania
+  - Eksportuj wyniki wyszukiwania
 
-  - Przeczyszczanie elementów zwróconych przez wyszukiwanie
+  - Przeczyszczanie elementów zwracanych przez wyszukiwanie
 
 Oto proces konfigurowania granic zgodności:
   
-[Krok 1. Identyfikowanie atrybutu użytkownika w celu zdefiniowania agencji](#step-1-identify-a-user-attribute-to-define-your-agencies)
+[Krok 1. Identyfikowanie atrybutu użytkownika do definiowania agencji](#step-1-identify-a-user-attribute-to-define-your-agencies)
 
 [Krok 2. Tworzenie grupy ról dla każdej agencji](#step-2-create-a-role-group-for-each-agency)
 
 [Krok 3. Tworzenie filtru uprawnień wyszukiwania w celu wymuszenia granicy zgodności](#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
-[Krok 4. Tworzenie sprawy zbierania elektronicznych materiałów dowodowych dla badań wewnętrznej agencji](#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
+[Krok 4. Tworzenie sprawy zbierania elektronicznych materiałów dowodowych na potrzeby dochodzenia wewnątrzagencyjnego](#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
-## <a name="before-you-set-up-compliance-boundaries"></a>Przed skonfigurowaniem granic zgodności
+## <a name="before-you-set-up-compliance-boundaries"></a>Przed skonfigurowanie granic zgodności
 
-- Użytkownicy muszą mieć przypisaną licencję Exchange Online użytkowników. Aby to sprawdzić, użyj polecenia cmdlet [Get-User](/powershell/module/exchange/get-user) w programie Exchange Online PowerShell.
+- Użytkownikom należy przypisać licencję Exchange Online. Aby to sprawdzić, użyj polecenia cmdlet [Get-User](/powershell/module/exchange/get-user) w Exchange Online programu PowerShell.
 
-## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Krok 1. Identyfikowanie atrybutu użytkownika w celu zdefiniowania agencji
+## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Krok 1. Identyfikowanie atrybutu użytkownika do definiowania agencji
 
-Pierwszym krokiem jest wybranie atrybutu definiującego agencje. Ten atrybut służy do tworzenia filtru uprawnień wyszukiwania, który ogranicza menedżera zbierania elektronicznych materiałów dowodowych w celu wyszukiwania tylko lokalizacji zawartości użytkowników, którym przypisano określoną wartość tego atrybutu. Załóżmy na przykład, że contoso decyduje się na użycie **atrybutu Department** (Dział). Wartość tego atrybutu dla użytkowników w przedstawicielscy firmy Fourth Coffee `FourthCoffee` byłaby, a wartość dla użytkowników w przedstawicielsce Coho Winery byłaby .`CohoWinery` W kroku 3 tej pary (na przykład *Department:FourthCoffee*) możesz ograniczyć lokalizacje zawartości użytkowników, `attribute:value` które menedżerowie zbierania elektronicznych materiałów dowodowych mogą wyszukiwać. 
+Pierwszym krokiem jest wybranie atrybutu do użycia, który zdefiniuje agencje. Ten atrybut służy do tworzenia filtru uprawnień wyszukiwania, który ogranicza menedżera zbierania elektronicznych materiałów dowodowych do wyszukiwania tylko lokalizacji zawartości użytkowników, którzy mają przypisaną określoną wartość dla tego atrybutu. Załóżmy na przykład, że firma Contoso decyduje się na użycie atrybutu **Dział** . Wartość tego atrybutu dla użytkowników w jednostce zależnej Czwarta kawa będzie  `FourthCoffee`  i wartość dla użytkowników w coho winery spółki zależnej będzie `CohoWinery`. W kroku 3 użyjesz tej  `attribute:value`  pary (na przykład *Department:FourthCoffee*), aby ograniczyć lokalizacje zawartości użytkownika, które mogą przeszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. 
   
-Oto kilka przykładów atrybutów użytkownika, których można używać do granic zgodności:
+Oto kilka przykładów atrybutów użytkownika, których można użyć na potrzeby granic zgodności:
   
 - Company
 
@@ -86,36 +86,36 @@ Oto kilka przykładów atrybutów użytkownika, których można używać do gran
 
 - Pakiet Office
 
-- KrajOrRegion (dwulitowy kod kraju)
+- CountryOrRegion (dwuliterowy kod kraju)
 
-Aby uzyskać pełną listę, zobacz pełną listę obsługiwanych filtrów [skrzynek pocztowych](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties).
+Aby uzyskać pełną listę, zobacz pełną listę obsługiwanych [filtrów skrzynki pocztowej](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties).
 
 ## <a name="step-2-create-a-role-group-for-each-agency"></a>Krok 2. Tworzenie grupy ról dla każdej agencji
 
-Następnym krokiem jest utworzenie grup ról w grupie Centrum zgodności platformy Microsoft 365 z agencjami. Zalecamy utworzenie grupy ról przez skopiowanie wbudowanej grupy menedżerów zbierania elektronicznych materiałów dowodowych, dodanie odpowiednich członków i usunięcie ról, które mogą nie mieć zastosowania do Twoich potrzeb. Aby uzyskać więcej informacji na temat ról związanych z zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
+Następnym krokiem jest utworzenie grup ról w portalu zgodności, które będą zgodne z agencjami. Zalecamy utworzenie grupy ról przez skopiowanie wbudowanej grupy menedżerów zbierania elektronicznych materiałów dowodowych, dodanie odpowiednich członków i usunięcie ról, które mogą nie mieć zastosowania do Twoich potrzeb. Aby uzyskać więcej informacji na temat ról związanych zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
   
-Aby utworzyć grupy ról, przejdź do strony Uprawnienia  w programie Centrum zgodności platformy Microsoft 365 i utwórz grupę ról dla każdego zespołu w każdej agencji, która będzie zarządzać badaniami za pomocą granic zgodności i spraw zbierania elektronicznych materiałów dowodowych.
+Aby utworzyć grupy ról, przejdź do strony **Uprawnienia** w portalu zgodności i utwórz grupę ról dla każdego zespołu w każdej agencji, który będzie używać granic zgodności i przypadków zbierania elektronicznych materiałów dowodowych do zarządzania badaniami.
   
-W scenariuszu z granicami zgodności firmy Contoso należy utworzyć cztery grupy ról i dodać odpowiednich członków do każdej z nich.
+W scenariuszu granic zgodności firmy Contoso należy utworzyć cztery grupy ról i dodać do nich odpowiednie elementy członkowskie.
   
-- Menedżerowie zbierania elektronicznych materiałów dowodowych Fourth Coffee
+- Czwarta kawa eDiscovery Managers
 
-- Fourth Coffee Nasadki
+- Czwarta kawa śledczych
 
-- Menedżerowie zbierania elektronicznych materiałów dowodowych w Coho Winery
+- Coho Winery eDiscovery Managers
 
-- Słoje Coho Winery
+- Badacze winiarni coho
   
-Aby spełnić wymagania scenariusza zgodności firmy Contoso, należy również usunąć role Wstrzymaj i  Eksportuj  z grupy ról, aby zapobiec umieszczaniu blokady w lokalizacjach zawartości i eksportowaniu zawartości ze sprawy.
+Aby spełnić wymagania scenariusza granic zgodności firmy Contoso, należy również usunąć role **Blokada** i **eksportowanie** z grup ról badaczy, aby uniemożliwić śledczym umieszczanie blokad w lokalizacjach zawartości i eksportowanie zawartości ze sprawy.
 
 > [!IMPORTANT]
-> Jeśli rola zostanie dodana lub usunięta z grupy ról dodanej jako członek sprawy, grupa ról zostanie automatycznie usunięta jako członek sprawy (lub w dowolnym przypadku, do których należy grupa ról). Przyczyną tego jest ochrona organizacji przed nieumyślnie udostępnieniem dodatkowych uprawnień członkom sprawy. Podobnie, jeśli grupa ról zostanie usunięta, zostanie usunięta ze wszystkich spraw, do których była członkiem.
+> Jeśli rola zostanie dodana lub usunięta z grupy ról, która została dodana jako członek sprawy, grupa ról zostanie automatycznie usunięta jako członek sprawy (lub w każdym przypadku grupa ról jest członkiem). Powodem jest ochrona organizacji przed nieumyślnym udzieleniem dodatkowych uprawnień członkom sprawy. Podobnie, jeśli grupa ról zostanie usunięta, zostanie usunięta ze wszystkich przypadków, do które należała.
 
 ## <a name="step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Krok 3. Tworzenie filtru uprawnień wyszukiwania w celu wymuszenia granicy zgodności
 
-Kolejnym krokiem po utworzeniu grup ról dla każdej agencji jest utworzenie filtrów uprawnień wyszukiwania, które skojarzą każdą grupę ról z jej określoną agencją i definiują samą granicę zgodności. Musisz utworzyć jeden filtr uprawnień wyszukiwania dla każdej agencji. Aby uzyskać więcej informacji na temat tworzenia filtrów uprawnień zabezpieczeń, zobacz [Konfigurowanie filtrowania uprawnień dla wyszukiwania zawartości](permissions-filtering-for-content-search.md).
+Po utworzeniu grup ról dla każdej agencji następnym krokiem jest utworzenie filtrów uprawnień wyszukiwania, które kojarzą każdą grupę ról z określoną agencją i definiują samą granicę zgodności. Musisz utworzyć jeden filtr uprawnień wyszukiwania dla każdej agencji. Aby uzyskać więcej informacji na temat tworzenia filtrów uprawnień zabezpieczeń, zobacz [Konfigurowanie filtrowania uprawnień dla wyszukiwania zawartości](permissions-filtering-for-content-search.md).
   
-Oto składnia używana do tworzenia filtru uprawnień wyszukiwania używanego do tworzenia granic zgodności dla scenariusza w tym artykule.
+Poniżej przedstawiono składnię używaną do tworzenia filtru uprawnień wyszukiwania używanego dla granic zgodności dla scenariusza w tym artykule.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "SiteContent_Path -like '<SharePointURL>' -or SiteContent_Path -like '<OneDriveURL>'"
@@ -123,22 +123,22 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
 
 Oto opis każdego parametru w poleceniu:
   
-- `FilterName`: określa nazwę filtru. Użyj nazwy opisowej lub identyfikującej agencję, w których został użyty filtr.
+- `FilterName`: określa nazwę filtru. Użyj nazwy opisującej lub identyfikującej agencję, w której jest używany filtr.
 
-- `Users`— określa użytkowników lub grupy, dla których ten filtr jest stosowany do akcji wyszukiwania, które wykonują. W przypadku granic zgodności ten parametr określa grupy ról (utworzone w kroku 3) w agencji, dla których jest tworzony filtr. Ten parametr ma wiele wartości, więc można dołączyć jedną lub więcej grup ról oddzielonych przecinkami.
+- `Users`: określa użytkowników lub grupy, którzy uzyskują ten filtr zastosowany do wykonywanych akcji wyszukiwania. W przypadku granic zgodności ten parametr określa grupy ról (utworzone w kroku 3) w agencji, dla której tworzysz filtr. Należy pamiętać, że jest to parametr wielowartościowy, dzięki czemu można dołączyć co najmniej jedną grupę ról oddzieloną przecinkami.
 
-- `Filters`— określa kryteria wyszukiwania filtru. W przypadku granic zgodności należy zdefiniować następujące filtry. Każda z nich ma zastosowanie do różnych lokalizacji zawartości.
+- `Filters`: określa kryteria wyszukiwania dla filtru. W przypadku granic zgodności należy zdefiniować następujące filtry. Każdy z nich ma zastosowanie do różnych lokalizacji zawartości.
 
-  - `Mailbox`— określa skrzynki pocztowe lub OneDrive, które mogą wyszukiwać grupy ról zdefiniowane w `Users` parametrze. Ten filtr umożliwia członkom grupy ról przeszukiwanie tylko skrzynek pocztowych lub OneDrive w określonej agencji, na `"Mailbox_Department -eq 'FourthCoffee'"`przykład.
+  - `Mailbox`: określa skrzynki pocztowe lub konta OneDrive, które mogą wyszukiwać grupy ról zdefiniowane w parametrze`Users`. Ten filtr umożliwia członkom grupy ról wyszukiwanie tylko skrzynek pocztowych lub kont OneDrive w określonej agencji, na przykład `"Mailbox_Department -eq 'FourthCoffee'"`.
 
-  - `SiteContent`: Ten filtr zawiera dwa oddzielne filtry. Pierwszy określa `SiteContent_Path` witrynę SharePoint w agencji, które grupy ról zdefiniowane `Users` w parametrze mogą wyszukiwać. Na przykład `SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'`. Drugi filtr `SiteContent_Path` (połączony z `SiteContent_Path` `or` pierwszym filtrem przez operatora) określa domenę sieciową OneDrive agencji (nazywaną również domeną *Mojej* domeny). Na przykład `SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`. Możesz także użyć filtru `Site_Path` w miejscu filtru `SiteContent` . Filtry `Site` i `SiteContent` filtry są zamiennie i nie mają wpływu na filtry uprawnień wyszukiwania opisane w tym artykule.
+  - `SiteContent`: Ten filtr zawiera dwa oddzielne filtry. Pierwszy `SiteContent_Path` określa lokacje SharePoint w agencji, które mogą wyszukiwać grupy ról zdefiniowane w parametrze`Users`. Na przykład `SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'`. Drugi `SiteContent_Path` filtr (połączony z pierwszym `SiteContent_Path` filtrem `or` przez operatora) określa domenę OneDrive agencji (nazywaną również domeną *MySite*). Na przykład `SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`. Możesz również użyć filtru `Site_Path` zamiast filtru `SiteContent` . Filtry `Site` i `SiteContent` są wymienne i nie mają wpływu na filtry uprawnień wyszukiwania opisane w tym artykule.
 
     > [!IMPORTANT]
-    > Dlaczego filtr filtru `SiteContent` OneDrive został uwzględniony w poprzednim filtrze uprawnień wyszukiwania? Filtr dotyczy `Mailbox` zarówno skrzynek  pocztowych, jak i kont usługi OneDrive, jednak dołączenie filtru SharePoint `Site` wykluczałoby OneDrive kont, jeśli nie uwzględnisz filtru OneDrive. Jeśli filtr uprawnień wyszukiwania nie zawierał filtru SharePoint, nie trzeba uwzględniać oddzielnego filtru OneDrive, ponieważ filtr Skrzynka pocztowa uwzględniał konta programu OneDrive w zakresie granicy zgodności. Innymi słowy, filtr uprawnień wyszukiwania tylko z `Mailbox` filtrem uwzględnia zarówno skrzynki pocztowe, jak i OneDrive konta.
+    > `SiteContent` Dlaczego filtr OneDrive jest uwzględniony w poprzednim filtrze uprawnień wyszukiwania? `Mailbox` Mimo że filtr ma zastosowanie *zarówno* do skrzynek pocztowych, jak i kont OneDrive, dołączenie filtru SharePoint wykluczałoby konta OneDrive, jeśli filtr OneDrive `Site` również nie został dołączny. Jeśli filtr uprawnień wyszukiwania nie zawiera filtru SharePoint, nie trzeba będzie dołączać oddzielnego filtru OneDrive, ponieważ filtr Skrzynka pocztowa będzie zawierać konta OneDrive w zakresie granicy zgodności. Innymi słowy filtr uprawnień wyszukiwania z tylko filtrem `Mailbox` obejmowałby zarówno skrzynki pocztowe, jak i konta OneDrive.
 
-Poniżej przedstawiono przykłady dwóch filtrów uprawnień wyszukiwania, które zostałyby utworzone w celu obsługi scenariusza zgodności firmy Contoso. Oba te przykłady obejmują listę filtrów rozdzielanych przecinkami, na której filtry skrzynki pocztowej i witryny są uwzględnione w tym samym filtrze uprawnień wyszukiwania i są rozdzielone przecinkami.
+Poniżej przedstawiono przykłady dwóch filtrów uprawnień wyszukiwania, które zostałyby utworzone w celu obsługi scenariusza granic zgodności firmy Contoso. Oba te przykłady obejmują listę filtrów rozdzielanych przecinkami, w której filtry skrzynki pocztowej i witryny są uwzględniane w tym samym filtrze uprawnień wyszukiwania i są oddzielone przecinkami.
   
-### <a name="fourth-coffee"></a>Fourth Coffee
+### <a name="fourth-coffee"></a>Czwarta kawa
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee' -or SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'"
@@ -151,88 +151,88 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 ```
 
 > [!NOTE]
-> Składnia parametrów z `Filters` poprzednich przykładów obejmuje listę *filtrów*. Lista filtrów to filtr, który zawiera filtr skrzynki pocztowej i filtr ścieżki witryny oddzielony przecinkami. W poprzednim przykładzie przecinek oddziela i `Mailbox` filtruje `SiteContent` : `-Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "SiteContent_Path -like '<SharePointURL>' -or SiteContent_Path -like '<OneDriveURL>'"`. Podczas przetwarzania tego filtru podczas uruchamiania wyszukiwania zbierania elektronicznych materiałów dowodowych na liście filtrów są tworzone dwa filtry uprawnień wyszukiwania: jeden filtr skrzynki pocztowej i jeden filtr SharePoint/OneDrive filtr. Alternatywą dla używania listy filtrów jest utworzenie dwóch oddzielnych filtrów uprawnień wyszukiwania dla każdej agencji: jednego filtru uprawnień wyszukiwania dla atrybutu skrzynki pocztowej i jednego filtru dla atrybutów witryny usługi SharePoint i OneDrive witryny. W obu przypadkach wyniki będą takie same. Korzystanie z listy filtrów lub tworzenie oddzielnych filtrów uprawnień wyszukiwania wymaga preferencji.
+> Składnia `Filters` parametrów w poprzednich przykładach zawiera *listę filtrów*. Lista filtrów to filtr zawierający filtr skrzynki pocztowej i filtr ścieżki witryny oddzielony przecinkami. W poprzednim przykładzie zwróć uwagę, że przecinek oddziela i `SiteContent` filtruje`Mailbox`: `-Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "SiteContent_Path -like '<SharePointURL>' -or SiteContent_Path -like '<OneDriveURL>'"`. Gdy ten filtr jest przetwarzany podczas uruchamiania wyszukiwania zbierania elektronicznych materiałów dowodowych, z listy filtrów są tworzone dwa filtry uprawnień wyszukiwania: jeden filtr skrzynki pocztowej i jeden filtr SharePoint/OneDrive. Alternatywą dla korzystania z listy filtrów byłoby utworzenie dwóch oddzielnych filtrów uprawnień wyszukiwania dla każdej agencji: jeden filtr uprawnień wyszukiwania dla atrybutu skrzynki pocztowej i jeden filtr atrybutów SharePoint i OneDrive lokacji. W obu przypadkach wyniki będą takie same. Korzystanie z listy filtrów lub tworzenie oddzielnych filtrów uprawnień wyszukiwania jest kwestią preferencji.
 
-### <a name="how-do-the-search-permissions-filters-work-in-this-scenario"></a>Jak działają w tym scenariuszu filtry uprawnień wyszukiwania?
+### <a name="how-do-the-search-permissions-filters-work-in-this-scenario"></a>Jak działają filtry uprawnień wyszukiwania w tym scenariuszu?
 
-Poniżej opisano, jak w tym scenariuszu zastosowano filtry uprawnień wyszukiwania dla każdej agencji.
+Poniżej przedstawiono sposób stosowania filtrów uprawnień wyszukiwania dla każdej agencji w tym scenariuszu.
 
-1. Filtr `Mailbox` jest stosowany najpierw do definiowania lokalizacji zawartości, które mogą przeszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. W tym przypadku menedżerowie zbierania elektronicznych materiałów dowodowych Coho Winery mogą przeszukiwać tylko skrzynki pocztowe i OneDrive użytkowników, których właściwość *skrzynki* pocztowej Department ma wartość **FourthCoffee**. Menedżerowie zbierania elektronicznych materiałów dowodowych Coho Winery mogą przeszukiwać tylko skrzynki pocztowe i konta OneDrive użytkowników, których właściwość *skrzynki* pocztowej Department ma wartość **CohoWinery**. Filtr `Mailbox` jest *filtrem lokalizacji zawartości*, ponieważ określa lokalizacje zawartości, które mogą przeszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. W obu filtrach menedżerowie zbierania elektronicznych materiałów dowodowych mogą przeszukiwać tylko lokalizacje zawartości o określonej wartości właściwości skrzynki pocztowej.
+1. Filtr `Mailbox` jest najpierw stosowany w celu zdefiniowania lokalizacji zawartości, które mogą przeszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. W takim przypadku menedżerowie zbierania elektronicznych materiałów dowodowych coho Winery mogą przeszukiwać tylko skrzynki pocztowe i OneDrive konta użytkowników, których właściwość Skrzynka pocztowa *działu* ma wartość **FourthCoffee**; Menedżerowie zbierania elektronicznych materiałów dowodowych coho Winery mogą przeszukiwać tylko skrzynki pocztowe i OneDrive konta użytkowników, których właściwość skrzynki pocztowej *działu* ma wartość **CohoWinery**. Filtr `Mailbox` jest *filtrem lokalizacji zawartości*, ponieważ określa lokalizacje zawartości, które mogą przeszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. W obu filtrach menedżerowie zbierania elektronicznych materiałów dowodowych mogą przeszukiwać tylko lokalizacje zawartości z określoną wartością właściwości skrzynki pocztowej.
 
-2. Po zdefiniowaniu lokalizacji zawartości, które mogą być przeszukiwane, następna część filtru definiuje zawartość, która może być przeszukiwana przez menedżerów zbierania elektronicznych materiałów dowodowych. Pierwszy filtr `SiteContent` umożliwia menedżerom zbierania elektronicznych materiałów dowodowych Fourth Coffee wyszukiwanie tylko dokumentów, które mają właściwość ścieżki witryny, która zawiera (lub zaczyna się od) `https://contoso.sharepoint.com/sites/FourthCoffee`; Menedżerowie zbierania elektronicznych materiałów dowodowych Coho Winery mogą przeszukiwać tylko dokumenty, które mają właściwość ścieżki witryny, która zawiera (lub zaczyna się od) `https://contoso.sharepoint.com/sites/CohoWinery`. Dlatego oba filtry są `SiteContent` filtrami *zawartości* , ponieważ definiują one zawartość, która może być wyszukiwana. W obu filtrach menedżerowie zbierania elektronicznych materiałów dowodowych mogą wyszukiwać tylko dokumenty o określonej wartości właściwości dokumentu. Wszystkie SharePoint są filtrami zawartości, ponieważ właściwości witryny, które można przeszukiwać, są stemplowane we wszystkich dokumentach. Aby uzyskać więcej informacji, zobacz [Konfigurowanie filtrowania uprawnień dla zbierania elektronicznych materiałów dowodowych](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
+2. Po zdefiniowaniu lokalizacji zawartości, które można przeszukiwać, następna część filtru definiuje zawartość, którą mogą wyszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. Pierwszy `SiteContent` filtr umożliwia menedżerom fourth coffee eDiscovery wyszukiwanie tylko dokumentów, które mają właściwość ścieżki witryny, która zawiera (lub zaczyna się od) `https://contoso.sharepoint.com/sites/FourthCoffee`; Menedżerowie zbierania elektronicznych materiałów dowodowych coho Winery mogą wyszukiwać tylko dokumenty, które mają właściwość ścieżki witryny zawierającą (lub zaczyna się od) `https://contoso.sharepoint.com/sites/CohoWinery`. W związku z tym dwa `SiteContent` filtry są *filtrami zawartości* , ponieważ definiują zawartość, która może być wyszukiwana. W obu filtrach menedżerowie zbierania elektronicznych materiałów dowodowych mogą wyszukiwać tylko dokumenty z określoną wartością właściwości dokumentu. Wszystkie filtry związane z SharePoint są filtrami zawartości, ponieważ właściwości witryny z możliwością wyszukiwania są ostemplowane we wszystkich dokumentach. Aby uzyskać więcej informacji, zobacz [Konfigurowanie filtrowania uprawnień pod kątem zbierania elektronicznych materiałów dowodowych](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
 
    > [!NOTE]
-   > Chociaż scenariusze w tym artykule ich nie używają, możesz również użyć filtrów zawartości skrzynki pocztowej, aby określić zawartość, która może być wyszukiwana przez menedżerów zbierania elektronicznych materiałów dowodowych. Składnia filtrów zawartości skrzynki pocztowej to `"MailboxContent_<property> -<comparison operator> '<value>'"`. Filtry zawartości można tworzyć na podstawie zakresów dat, adresatów i domen lub dowolnej właściwości poczty e-mail z możliwością wyszukiwania. Na przykład ten filtr umożliwia menedżerom zbierania elektronicznych materiałów dowodowych tylko wyszukiwanie elementów poczty wysłanych lub otrzymywanych przez użytkowników w domenie usługi contoso.com e: `"MailboxContent_Participants -like 'contoso.com'"`. Aby uzyskać więcej informacji o filtrach zawartości skrzynki pocztowej, zobacz [Konfigurowanie filtrowania uprawnień wyszukiwania](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
+   > Chociaż scenariusz w tym artykule nie używa ich, możesz również użyć filtrów zawartości skrzynki pocztowej, aby określić zawartość, którą mogą wyszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. Składnia filtrów zawartości skrzynki pocztowej to `"MailboxContent_<property> -<comparison operator> '<value>'"`. Filtry zawartości można tworzyć na podstawie zakresów dat, adresatów i domen lub dowolnej właściwości poczty e-mail z możliwością wyszukiwania. Na przykład ten filtr umożliwia menedżerom zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko elementów poczty wysłanych lub odebranych przez użytkowników w domenie contoso.com: `"MailboxContent_Participants -like 'contoso.com'"`. Aby uzyskać więcej informacji na temat filtrów zawartości skrzynki pocztowej, zobacz [Konfigurowanie filtrowania uprawnień wyszukiwania](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
 
-3. Filtr uprawnień wyszukiwania jest dołączany do zapytania wyszukiwania przez **operator AND** Boolean (AND). Oznacza to, że gdy menedżer zbierania elektronicznych materiałów dowodowych w jednej z agencji prowadzi wyszukiwanie zbierania elektronicznych materiałów dowodowych, elementy zwracane przez to wyszukiwanie muszą być zgodne z zapytaniem wyszukiwania i warunkami zdefiniowanymi w filtrze uprawnień wyszukiwania.
+3. Filtr uprawnień wyszukiwania jest przyłączony do zapytania wyszukiwania przez operator logiczny **AND** . Oznacza to, że gdy menedżer zbierania elektronicznych materiałów dowodowych w jednej z agencji uruchamia wyszukiwanie zbierania elektronicznych materiałów dowodowych, elementy zwracane przez wyszukiwanie muszą być zgodne z zapytaniem wyszukiwania i warunkami zdefiniowanymi w filtrze uprawnień wyszukiwania.
 
-## <a name="step-4-create-an-ediscovery-case-for-intra-agency-investigations"></a>Krok 4. Tworzenie sprawy zbierania elektronicznych materiałów dowodowych dla dochodzenia wewnątrz agencji
+## <a name="step-4-create-an-ediscovery-case-for-intra-agency-investigations"></a>Krok 4. Tworzenie sprawy zbierania elektronicznych materiałów dowodowych dla dochodzeń wewnątrzagencyjnych
 
-Ostatnim krokiem jest utworzenie podstawowej sprawy zbierania elektronicznych materiałów dowodowych lub Advanced eDiscovery sprawy w Centrum zgodności platformy Microsoft 365 a następnie dodanie grupy ról utworzonej w kroku 2 jako członka tej sprawy. Powoduje to dwie ważne cechy korzystania z granic zgodności:
+Ostatnim krokiem jest utworzenie sprawy zbierania elektronicznych materiałów dowodowych (standardowa) lub sprawy zbierania elektronicznych materiałów dowodowych (Premium) w portalu zgodności, a następnie dodanie grupy ról utworzonej w kroku 2 jako element członkowski sprawy. Skutkuje to dwoma ważnymi cechami używania granic zgodności:
   
-- Tylko członkowie grupy ról dodani do sprawy będą mogli wyświetlić i uzyskać dostęp do sprawy w Centrum zgodności platformy Microsoft 365. Jeśli na przykład grupa ról "Fourth Coffee Nasyć" jest jedynym członkiem sprawy, członkowie grupy ról Fourth Coffee eDiscovery Managers (lub członkowie jakiejkolwiek innej grupy ról) nie będą mogli zobaczyć sprawy ani uzyskać do niego dostępu.
+- Tylko członkowie grupy ról dodana do sprawy będą mogli wyświetlać przypadek i uzyskiwać do nich dostęp w portalu zgodności. Jeśli na przykład grupa ról Fourth Coffee Investigators jest jedynym członkiem sprawy, członkowie grupy ról Fourth Coffee eDiscovery Managers (lub członkowie jakiejkolwiek innej grupy ról) nie będą mogli zobaczyć sprawy ani uzyskać do niej dostępu.
 
-- Gdy członek grupy ról przypisanej do sprawy uruchomi wyszukiwanie skojarzone ze sprawą, będzie mógł przeszukiwać tylko lokalizacje zawartości w obrębie swojej agencji (która jest zdefiniowana przez filtr uprawnień wyszukiwania utworzony w kroku 3).
+- Gdy członek grupy ról przypisanej do sprawy uruchamia wyszukiwanie skojarzone ze sprawą, będzie mógł przeszukiwać tylko lokalizacje zawartości w ramach swojej agencji (która jest definiowana przez filtr uprawnień wyszukiwania utworzony w kroku 3).
 
-Aby utworzyć sprawę i przydzielić członków:
+Aby utworzyć przypadek i przypisać członków:
 
-1. Przejdź do **strony Core eDiscovery** **lub Advanced eDiscovery** w Centrum zgodności platformy Microsoft 365 i utwórz sprawę.
+1. Przejdź do strony **eDiscovery (Standard)** lub **eDiscovery (Premium)** w portalu zgodności i utwórz przypadek.
 
-2. Na liście spraw kliknij nazwę utworzonej sprawy.
+2. Na liście przypadków kliknij nazwę utworzonego przypadku.
 
-3. Dodaj grupy ról jako członków do sprawy. Aby uzyskać instrukcje, zobacz jeden z następujących artykułów:
+3. Dodaj grupy ról jako elementy członkowskie do sprawy. Aby uzyskać instrukcje, zobacz jeden z następujących artykułów:
 
-   - [Dodawanie członków do podstawowej sprawy zbierania elektronicznych materiałów dowodowych](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
+   - [Dodawanie członków do sprawy zbierania elektronicznych materiałów dowodowych (standardowa)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
-   - [Dodawanie członków do sprawy Advanced eDiscovery sprawy](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+   - [Dodawanie członków do sprawy zbierania elektronicznych materiałów dowodowych (Premium)](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 > [!NOTE]
-> Podczas dodawania grupy ról do sprawy możesz dodawać tylko te grupy ról, których jesteś członkiem.
+> Podczas dodawania grupy ról do sprawy można dodać tylko grupy ról, do których należysz.
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Wyszukiwanie i eksportowanie zawartości w środowiskach z wieloma lokalizacjami geograficznymi
 
-Filtry uprawnień wyszukiwania umożliwiają również kontrolowanie, gdzie zawartość jest rozsyłana w celu eksportu i które centrum danych można przeszukiwać podczas wyszukiwania w lokalizacjach zawartości w [SharePoint Multi-Geo środowisku.](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)
+Filtry uprawnień wyszukiwania umożliwiają również kontrolowanie, gdzie zawartość jest kierowana do eksportu i które centrum danych można przeszukiwać podczas wyszukiwania lokalizacji zawartości w [środowisku SharePoint Multi-Geo](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).
   
-- **Eksportowanie wyników wyszukiwania:** Możesz wyeksportować wyniki wyszukiwania ze skrzynek Exchange, witryn SharePoint i OneDrive z określonego centrum danych. Oznacza to, że możesz określić lokalizację centrum danych, z których będą eksportowane wyniki wyszukiwania.
+- **Eksportuj wyniki wyszukiwania:** Wyniki wyszukiwania można wyeksportować ze skrzynek pocztowych Exchange, SharePoint witryn i kont OneDrive z określonego centrum danych. Oznacza to, że można określić lokalizację centrum danych, z których zostaną wyeksportowane wyniki wyszukiwania.
 
-    Użyj *parametru Region* dla **polecenia cmdlet New-ComplianceSecurityFilter** lub **Set-ComplianceSecurityFilter** , aby utworzyć lub zmienić centrum danych, za pośrednictwem którego eksport zostanie rozsyłany.
+    Użyj parametru *Region* dla poleceń cmdlet **New-ComplianceSecurityFilter** lub **Set-ComplianceSecurityFilter** , aby utworzyć lub zmienić centrum danych, przez które eksport będzie kierowany.
   
     |**Wartość parametru**|**Lokalizacja centrum danych**|
     |:-----|:-----|
-    |NAM  <br/> |Ameryka Północna (centra danych znajdują się w USA)  <br/> |
-    |EUR  <br/> |Europa  <br/> |
+    |NAM  <br/> |Ameryka Północna (centra danych znajdują się w Stanach Zjednoczonych)  <br/> |
+    |EUR  <br/> |Europie  <br/> |
     |APC  <br/> |Azja i Pacyfik  <br/> |
-    |CAN <br/> |Kanada|
+    |CNA <br/> |Kanada|
     |||
 
-- **Rozsyłanie przeszukiwań zawartości:** Możesz rozsyłać wyszukiwania zawartości witryn SharePoint i OneDrive do satelitarnego centrum danych. Oznacza to, że możesz określić lokalizację centrum danych, w którym mają być uruchamiane wyszukiwania.
+- **Kierowanie wyszukiwania zawartości:** Wyszukiwanie zawartości witryn SharePoint i kont OneDrive można kierować do satelitarnego centrum danych. Oznacza to, że można określić lokalizację centrum danych, w którym będą uruchamiane wyszukiwania.
 
-    Użyj jednej z następujących wartości dla parametru *Region*, aby sterować lokalizacją centrum danych, w którym będą uruchamiane wyszukiwania podczas wyszukiwania SharePoint witryn i OneDrive kont.
+    Użyj jednej z następujących wartości parametru *Region*, aby kontrolować lokalizację centrum danych, w ramach którego będą uruchamiane wyszukiwania podczas wyszukiwania SharePoint lokacji i kont OneDrive.
   
-    |**Wartość parametru**|**Lokalizacje routingu w centrum danych dla SharePoint**|
+    |**Wartość parametru**|**Lokalizacje routingu centrum danych dla SharePoint**|
     |:-----|:-----|
-    |NAM  <br/> |USA  <br/> |
-    |EUR  <br/> |Europa  <br/> |
+    |NAM  <br/> |NAS  <br/> |
+    |EUR  <br/> |Europie  <br/> |
     |APC  <br/> |Azja i Pacyfik  <br/> |
-    |CAN  <br/> |USA  <br/> |
+    |CNA  <br/> |NAS  <br/> |
     |AUS  <br/> |Azja i Pacyfik  <br/> |
     |KOR  <br/> |Domyślne centrum danych organizacji  <br/> |
-    |GBR  <br/> |Europa  <br/> |
+    |GBR  <br/> |Europie  <br/> |
     |JPN  <br/> |Azja i Pacyfik  <br/> |
-    |IND  <br/> |Azja i Pacyfik  <br/> |
-    |LAM  <br/> |USA  <br/> |
-    |NOR  <br/> |Europa |
-    |BRA  <br/> |Centra danych w Ameryce Północnej |
+    |KOMERCYJNY  <br/> |Azja i Pacyfik  <br/> |
+    |LAM  <br/> |NAS  <br/> |
+    |ANI  <br/> |Europie |
+    |BIUSTONOSZ  <br/> |Północnoamerykańskie centra danych |
     |||
 
-   Jeśli nie określisz *parametru Region* dla filtru uprawnień wyszukiwania, będzie przeszukiwany podstawowy region SharePoint organizacji. Wyniki wyszukiwania są eksportowane do najbliższego centrum danych.
+   Jeśli nie określisz parametru *Region* dla filtru uprawnień wyszukiwania, zostanie przeszukany podstawowy region SharePoint organizacji. Wyniki wyszukiwania są eksportowane do najbliższego centrum danych.
 
-   Aby uprościć to pojęcie, *parametr Region* steruje centrum danych używanym do wyszukiwania zawartości w programie SharePoint i OneDrive. Nie dotyczy to wyszukiwania zawartości w programie Exchange ponieważ Exchange zawartości nie są powiązane z lokalizacją geograficzną centrów danych. Ponadto ta sama wartość *parametru Region* może również dyktować centrum danych, przez które są eksportowane eksportowane dane. Jest to często konieczne w celu kontrolowania ruchu danych między tablicami geograficznymi.
+   Aby uprościć tę koncepcję, parametr *Region* steruje centrum danych używanym do wyszukiwania zawartości w SharePoint i OneDrive. Nie dotyczy to wyszukiwania zawartości w Exchange, ponieważ Exchange wyszukiwania zawartości nie są powiązane lokalizacją geograficzną centrów danych. Ponadto ta sama wartość parametru *Region* może również dyktować centrum danych, przez które eksporty są kierowane. Jest to często konieczne do kontrolowania przenoszenia danych między zarządcami geograficznym.
 
 > [!NOTE]
-> Jeśli używasz programu Advanced eDiscovery, *parametr Region* nie kontroluje regionu, z który są eksportowane dane. Dane są eksportowane z centralnej lokalizacji organizacji. Ponadto wyszukiwanie zawartości w SharePoint i OneDrive nie jest związane z lokalizacją geograficzną centrów danych. Przeszukiwane są wszystkie centra danych. Aby uzyskać więcej informacji Advanced eDiscovery na ten temat, zobacz Omówienie [Advanced eDiscovery rozwiązania w programie Microsoft 365](overview-ediscovery-20.md).
+> Jeśli używasz zbierania elektronicznych materiałów dowodowych (Premium), parametr *Region* nie kontroluje regionu, z którym są eksportowane dane. Dane są eksportowane z centralnej lokalizacji organizacji. Ponadto wyszukiwanie zawartości w SharePoint i OneDrive nie jest powiązane lokalizacją geograficzną centrów danych. Przeszukiwane są wszystkie centra danych. Aby uzyskać więcej informacji na temat zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365](overview-ediscovery-20.md).
 
-Oto przykłady użycia *parametru Region* podczas tworzenia filtrów uprawnień wyszukiwania dla granic zgodności. Założono, że przedstawicielstwo Fourth Coffee znajduje się w Ameryce Północnej, a coho Winery znajduje się w Europie.
+Poniżej przedstawiono przykłady używania parametru *Region* podczas tworzenia filtrów uprawnień wyszukiwania dla granic zgodności. Zakłada to, że spółka zależna Fourth Coffee znajduje się w Ameryka Północna i że coho Winery znajduje się w Europie.
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee' -or SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'" -Region NAM
@@ -242,17 +242,17 @@ New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users 
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "SiteContent_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery' -or SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'" -Region EUR
 ```
 
-Podczas wyszukiwania i eksportowania zawartości w środowiskach wielowymiarowych należy pamiętać o następujących kwestiach.
+Podczas wyszukiwania i eksportowania zawartości w środowiskach z wieloma lokalizacjami geograficznymi należy pamiętać o następujących kwestiach.
   
-- Parametr *Region* nie kontroluje przeszukiwania skrzynek Exchange pocztowych. Podczas przeszukiwania skrzynek pocztowych będą przeszukiwane wszystkie centra danych. Aby ograniczyć zakres przeszukiwanych skrzynek Exchange, podczas tworzenia lub zmieniania filtru uprawnień wyszukiwania użyj parametru *Filters*.
+- Parametr *Region* nie kontroluje wyszukiwań Exchange skrzynek pocztowych. Wszystkie centra danych będą przeszukiwane podczas wyszukiwania skrzynek pocztowych. Aby ograniczyć zakres wyszukiwania Exchange skrzynek pocztowych, użyj parametru *Filtry* podczas tworzenia lub zmieniania filtru uprawnień wyszukiwania.
 
-- Jeśli menedżer zbierania elektronicznych materiałów dowodowych musi przeszukiwać wiele regionów usługi SharePoint, musisz utworzyć dla tego menedżera zbierania elektronicznych materiałów dowodowych inne konto użytkownika do użycia w filtrze uprawnień wyszukiwania w celu określenia regionu, w którym znajdują się witryny programu SharePoint lub konta programu OneDrive. Aby uzyskać więcej informacji na temat konfigurowania tej funkcji, zobacz sekcję "Wyszukiwanie zawartości w środowisku SharePoint Multi-Geo" w [przeszukiwaniu zawartości](content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
+- Jeśli menedżer zbierania elektronicznych materiałów dowodowych musi wyszukiwać w wielu regionach SharePoint, musisz utworzyć inne konto użytkownika dla tego menedżera zbierania elektronicznych materiałów dowodowych do użycia w filtrze uprawnień wyszukiwania w celu określenia regionu, w którym znajdują się witryny SharePoint lub konta OneDrive. Aby uzyskać więcej informacji na temat konfigurowania tej opcji, zobacz sekcję "Wyszukiwanie zawartości w środowisku SharePoint Multi-Geo" w [sekcji Wyszukiwanie zawartości](content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
 
-- Podczas wyszukiwania zawartości w programach SharePoint i OneDrive parametr *Region* kieruje wyszukiwania do lokalizacji podstawowej lub satelitarnej, w której menedżer zbierania elektronicznych materiałów dowodowych będzie przeprowadzać badania dotyczące zbierania elektronicznych materiałów dowodowych. Jeśli menedżer zbierania elektronicznych materiałów dowodowych przeszukuje witryny SharePoint i OneDrive poza regionem określonym w filtrze uprawnień wyszukiwania, nie są zwracane żadne wyniki wyszukiwania.
+- Podczas wyszukiwania zawartości w SharePoint i OneDrive parametr *Region* kieruje wyszukiwania do lokalizacji podstawowej lub satelitarnej, w której menedżer zbierania elektronicznych materiałów dowodowych przeprowadzi badania zbierania elektronicznych materiałów dowodowych. Jeśli menedżer zbierania elektronicznych materiałów dowodowych wyszukuje witryny SharePoint i OneDrive poza regionem określonym w filtrze uprawnień wyszukiwania, wyniki wyszukiwania nie zostaną zwrócone.
 
-- Podczas eksportowania wyników wyszukiwania z podstawowego zbierania elektronicznych materiałów dowodowych zawartość ze wszystkich lokalizacji zawartości (w tym Exchange, Skype dla firm, SharePoint, OneDrive i innych usług, które można wyszukiwać za pomocą narzędzia Wyszukiwanie zawartości) jest przekazywany do lokalizacji usługi Azure Storage *w centrum danych określonym przez Parametr* regionu. Ułatwia to organizacjom zachowanie zgodności, nie zezwalając na eksportowanie zawartości za pomocą kontrolowanych obramowań. Jeśli w filtrze uprawnień wyszukiwania nie określono żadnego regionu, zawartość jest przesyłana do podstawowego centrum danych organizacji.
+- Podczas eksportowania wyników wyszukiwania z eDiscovery (Standard) zawartość ze wszystkich lokalizacji zawartości (w tym Exchange, Skype dla firm, SharePoint, OneDrive i innych usług, które można wyszukiwać za pomocą narzędzia wyszukiwania zawartości) jest przekazywana do lokalizacji usługi Azure Storage w centrum danych określonym przez *narzędzie wyszukiwania zawartości Parametr regionu*. Pomaga to organizacjom zachować zgodność, nie zezwalając na eksportowanie zawartości przez kontrolowane granice. Jeśli w filtrze uprawnień wyszukiwania nie określono żadnego regionu, zawartość jest przekazywana do podstawowego centrum danych organizacji.
 
-  Podczas eksportowania zawartości Advanced eDiscovery nie można kontrolować, dokąd jest przesyłana zawartość, używając *parametru Region*. Zawartość jest przesyłana do centrum Storage Azure w centrum danych w centralnej lokalizacji organizacji. Aby uzyskać listę lokalizacji geograficznych opartych na Twojej lokalizacji centralnej, zobacz Microsoft 365 Konfiguracja zbierania elektronicznych materiałów dowodowych z wieloma [lokalizacjami geograficznymi](../enterprise/multi-geo-ediscovery-configuration.md).
+  Podczas eksportowania zawartości z funkcji zbierania elektronicznych materiałów dowodowych (Premium) nie można kontrolować, gdzie zawartość jest przekazywana przy użyciu parametru *Region*. Zawartość jest przekazywana do lokalizacji usługi Azure Storage w centrum danych w centralnej lokalizacji organizacji. Aby uzyskać listę lokalizacji geograficznych opartych na centralnej lokalizacji, zobacz [Microsoft 365 Konfiguracja zbierania elektronicznych elektronicznych materiałów dowodowych w wielu obszarach geograficznych](../enterprise/multi-geo-ediscovery-configuration.md).
 
 - Aby dodać lub zmienić region, możesz edytować istniejący filtr uprawnień wyszukiwania, uruchamiając następujące polecenie:
 
@@ -260,11 +260,11 @@ Podczas wyszukiwania i eksportowania zawartości w środowiskach wielowymiarowyc
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
 
-## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>Używanie granic zgodności dla witryn SharePoint centrum
+## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>Używanie granic zgodności dla lokacji centrum SharePoint
 
-[SharePoint witryn centrum często](/sharepoint/dev/features/hub-site/hub-site-overview) są zgodne z tym samymi granicami geograficznymi lub agencji, które są zgodne z ograniczeniami zgodności zbierania elektronicznych materiałów dowodowych. Oznacza to, że można utworzyć granicę zgodności za pomocą właściwości identyfikatora witryny centrum. W tym celu użyj polecenia cmdlet [Get-SPOHubSite](/powershell/module/sharepoint-online/get-spohubsite#examples) w programie PowerShell dla usługi SharePoint Online w celu uzyskania identyfikatora witryny centrum, a następnie użyj tej wartości dla właściwości identyfikatora działu w celu utworzenia filtru uprawnień wyszukiwania.
+[SharePoint lokacje piasty](/sharepoint/dev/features/hub-site/hub-site-overview) często są zgodne z tymi samymi granicami geograficznymi lub granicami agencji, które są zgodne ze zgodnością zbierania elektronicznych materiałów dowodowych. Oznacza to, że możesz użyć właściwości identyfikatora lokacji centrum, aby utworzyć granicę zgodności. W tym celu użyj polecenia cmdlet [Get-SPOHubSite](/powershell/module/sharepoint-online/get-spohubsite#examples) w programie SharePoint Online PowerShell, aby uzyskać identyfikator SiteId dla lokacji centrum, a następnie użyj tej wartości dla właściwości identyfikatora działu, aby utworzyć filtr uprawnień wyszukiwania.
 
-Użyj następującej składni, aby utworzyć filtr uprawnień wyszukiwania dla witryny centrum SharePoint centrum:
+Użyj następującej składni, aby utworzyć filtr uprawnień wyszukiwania dla witryny centrum SharePoint:
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName <Filter Name> -Users <User or Group> -Filters "Site_Departmentid -eq '{SiteId of hub site}'"
@@ -276,78 +276,78 @@ Oto przykład tworzenia filtru uprawnień wyszukiwania dla witryny centrum dla a
 New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Site_Departmentid -eq '44252d09-62c4-4913-9eb0-a2a8b8d7f863'"
 ```
 
-## <a name="compliance-boundary-limitations"></a>Ograniczenia związane z zgodnością
+## <a name="compliance-boundary-limitations"></a>Ograniczenia granic zgodności
 
-Podczas zarządzania sprawami zbierania elektronicznych materiałów dowodowych i badaniami, które korzystają z ograniczeń zgodności, należy pamiętać o następujących ograniczeniach.
+Podczas zarządzania przypadkami zbierania elektronicznych materiałów dowodowych i badaniami, które korzystają z granic zgodności, należy pamiętać o następujących ograniczeniach.
   
-- Podczas tworzenia i uruchamiania wyszukiwania można wybrać lokalizacje zawartości spoza agencji. Jednak z powodu filtru uprawnień wyszukiwania zawartość z tych lokalizacji nie jest uwzględniana w wynikach wyszukiwania.
+- Podczas tworzenia i uruchamiania wyszukiwania można wybrać lokalizacje zawartości spoza agencji. Jednak ze względu na filtr uprawnień wyszukiwania zawartość z tych lokalizacji nie jest uwzględniana w wynikach wyszukiwania.
 
-- Granice zgodności nie dotyczą blokady w przypadku zbierania elektronicznych materiałów dowodowych. Oznacza to, że menedżer zbierania elektronicznych materiałów dowodowych w jednej agencji może umieścić użytkownika w chmurze dla innego agencji. Jednak granica zgodności będzie wymuszana, jeśli menedżer zbierania elektronicznych materiałów dowodowych przeszukuje lokalizacje zawartości użytkownika, który został umieszczony w a holdie. Oznacza to, że menedżer zbierania elektronicznych materiałów dowodowych nie będzie mógł przeszukiwać lokalizacji zawartości użytkownika, mimo że mógł umieścić użytkownika w a holdie.
+- Granice zgodności nie mają zastosowania do blokad w przypadkach zbierania elektronicznych materiałów dowodowych. Oznacza to, że menedżer zbierania elektronicznych materiałów dowodowych w jednej agencji może zawiesić użytkownika w innej agencji. Jednak granica zgodności zostanie wymuszona, jeśli menedżer zbierania elektronicznych materiałów dowodowych przeszukuje lokalizacje zawartości użytkownika, który został wstrzymany. Oznacza to, że menedżer zbierania elektronicznych elektronicznych materiałów dowodowych nie będzie mógł przeszukiwać lokalizacji zawartości użytkownika, nawet jeśli użytkownik mógł zostać wstrzymany.
 
-    Ponadto statystyki dotyczące blokowania będą stosowane tylko do lokalizacji zawartości w agencji.
+    Ponadto statystyki dotyczące przechowywania będą miały zastosowanie tylko do lokalizacji zawartości w agencji.
 
-- Jeśli masz przypisany filtr uprawnień wyszukiwania (skrzynkę pocztową lub filtr witryny) i spróbujesz wyeksportować elementy nieindeksowane do wyszukiwania, które obejmuje wszystkie witryny usługi SharePoint w organizacji, zostanie wyświetlony następujący komunikat o błędzie: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied`. Jeśli masz przypisany filtr uprawnień wyszukiwania i chcesz wyeksportować elementy nieindeksowane z usługi SharePoint, musisz ponownie uruchomić wyszukiwanie i dołączyć określone witryny SharePoint do przeszukania. W przeciwnym razie będzie można eksportować tylko elementy indeksowane z wyszukiwania, które obejmuje wszystkie SharePoint witryny. Aby uzyskać więcej informacji na temat opcji eksportowania wyników wyszukiwania, zobacz [Eksportowanie wyników wyszukiwania zawartości](export-search-results.md#step-1-prepare-search-results-for-export).
+- Jeśli masz przypisany filtr uprawnień wyszukiwania (skrzynkę pocztową lub filtr witryny) i spróbujesz wyeksportować niezainicjowane elementy do wyszukiwania obejmującego wszystkie witryny SharePoint w organizacji, zostanie wyświetlony następujący komunikat o błędzie: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied`. Jeśli masz przypisany filtr uprawnień wyszukiwania i chcesz wyeksportować niezaindeksowane elementy z SharePoint, musisz ponownie uruchomić wyszukiwanie i uwzględnić określone witryny SharePoint do wyszukiwania. W przeciwnym razie będzie można eksportować tylko indeksowane elementy z wyszukiwania obejmującego wszystkie SharePoint witryn. Aby uzyskać więcej informacji na temat opcji podczas eksportowania wyników wyszukiwania, zobacz [Eksportowanie wyników wyszukiwania zawartości](export-search-results.md#step-1-prepare-search-results-for-export).
 
-- Filtry uprawnień wyszukiwania nie są stosowane do Exchange publicznych.
+- Filtry uprawnień wyszukiwania nie są stosowane do Exchange folderów publicznych.
 
 ## <a name="more-information"></a>Więcej informacji
 
-- Jeśli skrzynka pocztowa nie jest licencjonowana lub usunięta "miękko", użytkownik nie będzie już rozważany w granicach zgodności. Jeśli w momencie usunięcia skrzynki pocztowej został umieszczony w tym miejscu, zawartość zachowana w skrzynce pocztowej nadal podlega granicy zgodności lub filtrowi uprawnień wyszukiwania.
+- Jeśli skrzynka pocztowa zostanie anulowana lub usunięta nietrwale, użytkownik nie będzie już brany pod uwagę w granicach zgodności. Jeśli blokada została umieszczona w skrzynce pocztowej po jej usunięciu, zawartość zachowana w skrzynce pocztowej nadal podlega filtrowi uprawnień zgodności lub uprawnień wyszukiwania.
 
-- Jeśli dla użytkownika zaimplementowano granice zgodności i filtry uprawnień wyszukiwania, zalecamy, aby nie usuwać skrzynki pocztowej użytkownika, a nie jego OneDrive konta. Innymi słowy, jeśli usuniesz skrzynkę pocztową użytkownika, należy również usunąć jego konto programu OneDrive, ponieważ filtr mailbox_RecipientFilter służy do wymuszania filtrowania uprawnień wyszukiwania dla OneDrive.
+- Jeśli dla użytkownika zostaną zaimplementowane filtry granic zgodności i uprawnień wyszukiwania, zalecamy, aby nie usuwać skrzynki pocztowej użytkownika, a nie jego konta OneDrive. Innymi słowy, jeśli usuniesz skrzynkę pocztową użytkownika, należy również usunąć konto OneDrive użytkownika, ponieważ mailbox_RecipientFilter służy do wymuszania filtru uprawnień wyszukiwania dla OneDrive.
 
-- Granice zgodności i filtry uprawnień wyszukiwania zależą od atrybutów, które są oznaczane sygnaturami zawartości w programach Exchange, OneDrive i SharePoint oraz od późniejszego indeksowania tej sygnatury zawartości.
+- Filtry granic zgodności i uprawnień wyszukiwania zależą od atrybutów ostemplowanych na zawartości w Exchange, OneDrive i SharePoint oraz od późniejszego indeksowania tej sygnatury zawartości.
 
-- Nie zaleca się używania filtrów wykluczeń ( `-not()` takich jak używanie w filtrze uprawnień wyszukiwania) w celu zapewnienia granicy zgodności opartej na zawartości. Użycie filtru wykluczeń może mieć nieoczekiwane wyniki, jeśli zawartość z ostatnio zaktualizowanymi atrybutami nie została zaindeksowana.
+- Nie zalecamy używania filtrów wykluczeń (na przykład użycia `-not()` w filtrze uprawnień wyszukiwania) dla granicy zgodności opartej na zawartości. Użycie filtru wykluczeń może mieć nieoczekiwane wyniki, jeśli zawartość z ostatnio zaktualizowanymi atrybutami nie została zindeksowana.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-**KtoTo tworzyć filtry uprawnień wyszukiwania i zarządzać nimi (za pomocą New-ComplianceSecurityFilter i Set-ComplianceSecurityFilter cmdlet)?**
+**KtoTo można tworzyć filtry uprawnień wyszukiwania i zarządzać nimi (przy użyciu poleceń cmdlet New-ComplianceSecurityFilter i Set-ComplianceSecurityFilter)?**
   
-Aby tworzyć, wyświetlać i modyfikować filtry uprawnień wyszukiwania, musisz być członkiem grupy ról Zarządzanie organizacją w grupie Centrum zgodności platformy Microsoft 365.
+Aby tworzyć, wyświetlać i modyfikować filtry uprawnień wyszukiwania, musisz być członkiem grupy ról Zarządzanie organizacją w portalu zgodności.
   
 **Jeśli menedżer zbierania elektronicznych materiałów dowodowych jest przypisany do więcej niż jednej grupy ról obejmującej wiele agencji, jak wyszukiwać zawartość w jednej lub drugiej agencji?**
   
-Menedżer zbierania elektronicznych materiałów dowodowych może dodawać do zapytania wyszukiwania parametry ograniczające wyszukiwanie do określonej agencji. Jeśli na przykład organizacja przypisała właściwość **CustomAttribute10** do odróżnienia instytucji, może ona dołączyć do zapytania wyszukiwania poniższe zapytanie w celu przeszukania skrzynek pocztowych i kont usługi OneDrive w określonej agencji: `CustomAttribute10:<value>`
+Menedżer zbierania elektronicznych materiałów dowodowych może dodać parametry do zapytania wyszukiwania, które ograniczają wyszukiwanie do określonej agencji. Jeśli na przykład organizacja określiła właściwość **CustomAttribute10** w celu odróżnienia agencji, może dołączyć następujące informacje do zapytania wyszukiwania, aby wyszukać skrzynki pocztowe i OneDrive konta w określonej agencji: `CustomAttribute10:<value>`.
   
 **Co się stanie, jeśli wartość atrybutu używanego jako atrybut zgodności w filtrze uprawnień wyszukiwania zostanie zmieniona?**
   
-W przypadku zmiany wartości atrybutu używanego w filtrze wymuszanie granicy zgodności przez filtr uprawnień wyszukiwania może potrwać do trzech dni. Na przykład w scenariuszu Contoso załóżmy, że użytkownik z agencji Fourth Coffee jest przenoszony do agencji Coho Winery. W wyniku tego wartość atrybutu **Department** w obiekcie użytkownika zostanie zmieniona z *FourthCoffee* na *CohoWinery*. W takiej sytuacji eDiscovery Fourth Coffee i inwestorzy otrzymają wyniki wyszukiwania dla tego użytkownika w ciągu trzech dni od zmiany atrybutu. Podobnie menedżerowie zbierania elektronicznych materiałów dowodowych Coho Winery i jego współpracownikami otrzymają wyniki wyszukiwania dla użytkownika.
+Wymuszanie granicy zgodności przez filtr uprawnień wyszukiwania trwa do trzech dni, jeśli wartość atrybutu używanego w filtrze zostanie zmieniona. Na przykład w scenariuszu firmy Contoso załóżmy, że użytkownik w agencji Fourth Coffee jest przenoszony do agencji Coho Winery. W związku z tym wartość atrybutu **Department** obiektu użytkownika została zmieniona z *FourthCoffee* na *CohoWinery*. W tej sytuacji fourth coffee eDiscovery i inwestorzy otrzymają wyniki wyszukiwania dla tego użytkownika przez maksymalnie trzy dni po zmianie atrybutu. Podobnie, to trwa do trzech dni, zanim Coho Winery eDiscovery menedżerów i śledczych uzyskać wyniki wyszukiwania dla użytkownika.
   
-**Czy menedżer zbierania elektronicznych materiałów dowodowych może zobaczyć zawartość z dwóch osobnych granic zgodności?**
+**Czy menedżer zbierania elektronicznych materiałów dowodowych może wyświetlać zawartość z dwóch oddzielnych granic zgodności?**
   
-Tak, można to zrobić podczas wyszukiwania w Exchange, dodając menedżera zbierania elektronicznych materiałów dowodowych do grup ról widocznych dla obu instytucji. Jednak podczas wyszukiwania witryn SharePoint i kont usługi OneDrive menedżer zbierania elektronicznych materiałów dowodowych może wyszukiwać zawartość w różnych granicach zgodności tylko wtedy, gdy agencje znajdują się w tym samym regionie lub lokalizacji geograficznej. **Uwaga:** To ograniczenie dotyczące witryn nie ma zastosowania w Advanced eDiscovery, ponieważ wyszukiwanie zawartości w SharePoint i OneDrive jest powiązane z lokalizacją geograficzną.
+Tak, można to zrobić podczas wyszukiwania Exchange skrzynek pocztowych przez dodanie menedżera zbierania elektronicznych materiałów dowodowych do grup ról, które mają wgląd w obie agencje. Jednak podczas wyszukiwania SharePoint witryn i kont OneDrive menedżer zbierania elektronicznych materiałów dowodowych może wyszukiwać zawartość w różnych granicach zgodności tylko wtedy, gdy agencje znajdują się w tym samym regionie lub lokalizacji geograficznej. **Uwaga:** To ograniczenie dla witryn nie ma zastosowania w przypadku zbierania elektronicznych materiałów dowodowych (Premium), ponieważ wyszukiwanie zawartości w SharePoint i OneDrive nie jest powiązane lokalizacją geograficzną.
   
-**Czy filtry uprawnień wyszukiwania działają w przypadku zbierania elektronicznych materiałów dowodowych, Microsoft 365 przechowywania lub zasad DLP?**
+**Czy filtry uprawnień wyszukiwania działają w przypadku blokad zbierania elektronicznych materiałów dowodowych, zasad przechowywania Microsoft 365 lub DLP?**
   
 Nie, w tej chwili nie ma takiej wersji.
   
-**Jeśli określę region, aby kontrolować, gdzie jest eksportowana zawartość, ale nie mam organizacji w SharePoint, czy mimo to mogę wyszukiwać w SharePoint?**
+**Czy mogę nadal wyszukiwać SharePoint, jeśli określę region, w którym ma zostać wyeksportowana zawartość, ale nie mam organizacji SharePoint w tym regionie?**
   
-Jeśli region określony w filtrze uprawnień wyszukiwania nie istnieje w organizacji, będzie przeszukiwany region domyślny.
+Jeśli region określony w filtrze uprawnień wyszukiwania nie istnieje w organizacji, zostanie przeszukany region domyślny.
   
 **Jaka jest maksymalna liczba filtrów uprawnień wyszukiwania, które można utworzyć w organizacji?**
   
-Nie ma ograniczenia liczby filtrów uprawnień wyszukiwania, które można utworzyć w organizacji. Jednak zapytanie wyszukiwania może mieć maksymalnie 100 warunków. W tym przypadku warunek jest zdefiniowany jako wartość połączona z zapytaniem przez operator logiczny (taki jak **AND**, **OR** i **NEAR**). Limit liczby warunków obejmuje samo zapytanie wyszukiwania oraz wszystkie filtry uprawnień wyszukiwania stosowane do użytkownika, który uruchamia wyszukiwanie. Dlatego im więcej filtrów uprawnień wyszukiwania masz (zwłaszcza jeśli te filtry zostały zastosowane do tego samego użytkownika lub grupy użytkowników), tym większa jest prawdopodobieństwo przekroczenia maksymalnej liczby warunków wyszukiwania.
+Nie ma limitu liczby filtrów uprawnień wyszukiwania, które można utworzyć w organizacji. Jednak zapytanie wyszukiwania może mieć maksymalnie 100 warunków. W takim przypadku warunek jest definiowany jako coś, co jest połączone z zapytaniem przez operator logiczny (na przykład **AND**, **OR** i **NEAR**). Limit liczby warunków obejmuje samo zapytanie wyszukiwania oraz wszystkie filtry uprawnień wyszukiwania, które są stosowane do użytkownika, który uruchamia wyszukiwanie. W związku z tym, tym więcej filtrów uprawnień wyszukiwania masz (zwłaszcza jeśli te filtry są stosowane do tego samego użytkownika lub grupy użytkowników), tym większe prawdopodobieństwo przekroczenia maksymalnej liczby warunków wyszukiwania.
 
-Aby zrozumieć, jak działa ten limit, musisz zrozumieć, że po uruchomieniu wyszukiwania do zapytania wyszukiwania jest dołączany filtr uprawnień wyszukiwania. Filtr uprawnień wyszukiwania jest dołączany do zapytania wyszukiwania przez **operator AND** Boolean (AND). Logika kwerendy dla zapytania wyszukiwania i pojedynczy filtr uprawnień wyszukiwania będą wyglądać tak:
+Aby zrozumieć, jak działa ten limit, musisz zrozumieć, że filtr uprawnień wyszukiwania jest dołączany do zapytania wyszukiwania po uruchomieniu wyszukiwania. Filtr uprawnień wyszukiwania jest przyłączony do zapytania wyszukiwania przez operator logiczny **AND** . Logika zapytania dla zapytania wyszukiwania i pojedynczy filtr uprawnień wyszukiwania będą wyglądać następująco:
 
 ```text
 <SearchQuery> AND <PermissionsFilter>
 ```
 
-Operator OR boolean (LUB) łączy  wiele filtrów uprawnień wyszukiwania, a następnie te warunki są połączone z zapytaniem wyszukiwania przez **operator AND**.
+Wiele filtrów uprawnień wyszukiwania jest łączonych ze sobą przez operator logiczny **OR** , a następnie te warunki są połączone z zapytaniem wyszukiwania przez operatora **AND** .
 
-Logika kwerendy dla zapytania wyszukiwania i wielu filtrów uprawnień wyszukiwania będzie wyglądać tak:
+Logika zapytania dla zapytania wyszukiwania i wiele filtrów uprawnień wyszukiwania będzie wyglądać następująco:
 
 ```text
 <SearchQuery> AND (<PermissionsFilter1> OR <PermissionsFilter2> OR <PermissionsFilter3>...)
 ```
 
-Być może samo zapytanie wyszukiwania może zawierać wiele warunków połączonych operatorami Boolean. Każdy warunek w zapytaniu wyszukiwania będzie również wliczał się w limit 100-warunków.
+Możliwe, że samo zapytanie wyszukiwania może składać się z wielu warunków połączonych przez operatory logiczne. Każdy warunek w zapytaniu wyszukiwania będzie również liczone względem limitu 100 warunków.
 
-Ponadto liczba filtrów uprawnień wyszukiwania dołączonych do zapytania zależy od użytkownika, który uruchamia wyszukiwanie. Gdy wyszukiwanie jest uruchamiane przez określonego użytkownika, do zapytania są dołączane filtry uprawnień wyszukiwania stosowane do użytkownika (zdefiniowane przez parametr *Użytkownicy* w filtrze). Organizacja może mieć setki filtrów uprawnień wyszukiwania, ale jeśli do tych samych użytkowników zastosowano więcej niż 100 filtrów, prawdopodobnie limit 100 warunków zostanie przekroczony, gdy użytkownicy będą uruchamiać wyszukiwanie.
+Ponadto liczba filtrów uprawnień wyszukiwania dołączonych do zapytania zależy od użytkownika, który uruchamia wyszukiwanie. Gdy określony użytkownik uruchamia wyszukiwanie, filtry uprawnień wyszukiwania, które są stosowane do użytkownika (który jest zdefiniowany przez parametr *Użytkownicy* w filtrze) są dołączane do zapytania. Organizacja może mieć setki filtrów uprawnień wyszukiwania, ale jeśli do tych samych użytkowników zostanie zastosowanych więcej niż 100 filtrów, prawdopodobnie limit 100 warunków zostanie przekroczony, gdy ci użytkownicy będą uruchamiać wyszukiwania.
 
-Należy pamiętać o limitie warunków. Ten limit jest też uwzględniany w SharePoint witryn internetowych uwzględnionych w filtrach uprawnień wyszukiwania lub zapytania wyszukiwania. 
+Jest jeszcze jedna rzecz, o której należy pamiętać o limicie warunku. Liczba określonych witryn SharePoint uwzględnionych w filtrach zapytań wyszukiwania lub uprawnień wyszukiwania również jest liczona względem tego limitu. 
 
-Aby twoja organizacja nie dopuścić do osiągnięcia limitu warunków, ogranicz liczbę filtrów uprawnień wyszukiwania w organizacji do jak najbędszej liczby osób spełniających wymagania biznesowe.
+Aby uniemożliwić organizacji osiągnięcie limitu warunków, zachowaj maksymalną liczbę filtrów uprawnień do wyszukiwania w organizacji, aby spełnić wymagania biznesowe.

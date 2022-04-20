@@ -12,23 +12,23 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: zasady przechowywania In-Place Hold, Litigation Hold i Microsoft 365 umożliwiają zachowanie zawartości skrzynki pocztowej w celu spełnienia wymagań dotyczących zgodności z przepisami i zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 1477fbb2425138dc428fe348fbe85cac1f12183b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a088407277f7ebced3aa69ee9ff807913f9b0c85
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758561"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942122"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Zachowywanie adresatów Bcc i rozszerzonych grup dystrybucyjnych na potrzeby zbierania elektronicznych materiałów dowodowych
-
-Spory sądowe, blokady zbierania elektronicznych materiałów dowodowych i [zasady przechowywania Microsoft 365](./retention.md) (utworzone w Centrum zgodności platformy Microsoft 365) umożliwiają zachowanie zawartości skrzynki pocztowej w celu spełnienia wymagań dotyczących zgodności z przepisami i zbierania elektronicznych materiałów dowodowych. Informacje o adresatach bezpośrednio adresowanych w polach Do i DW wiadomości są domyślnie uwzględniane we wszystkich komunikatach. Organizacja może jednak wymagać możliwości wyszukiwania i odtwarzania szczegółów dotyczących wszystkich adresatów wiadomości. Obejmuje to:
-
-- **Adresaci adresaci adresaci za pomocą pola Bcc wiadomości:** Adresaci usługi Bcc są przechowywane w wiadomości w skrzynce pocztowej nadawcy, ale nie są uwzględniane w nagłówkach wiadomości dostarczonej do adresatów.
-
-- **Rozszerzoni adresaci grupy dystrybucyjnej:** Adresaci, którzy otrzymają wiadomość, ponieważ są członkami grupy dystrybucyjnej, do której adresowano wiadomość, w polach Do, DW lub BCC.
-
-Exchange Online i Exchange Server 2013 r. (aktualizacja zbiorcza 7 i nowsze wersje) przechowują informacje o adresatach Bcc i rozszerzonych grup dystrybucyjnych. Te informacje można wyszukać przy użyciu narzędzia zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.
-
+  
+Spory sądowe, blokady zbierania elektronicznych materiałów dowodowych i [zasady przechowywania Microsoft 365](./retention.md) (utworzone w portalu zgodności usługi Microsoft Purview) umożliwiają zachowanie zawartości skrzynki pocztowej w celu spełnienia wymagań dotyczących zgodności z przepisami i zbierania elektronicznych materiałów dowodowych. Informacje o adresatach bezpośrednio adresowanych w polach Do i DW wiadomości są domyślnie uwzględniane we wszystkich komunikatach. Organizacja może jednak wymagać możliwości wyszukiwania i odtwarzania szczegółów dotyczących wszystkich adresatów wiadomości. Obejmuje to:
+  
+- **Adresaci adresaci adresaci za pomocą pola Bcc wiadomości:** Adresaci usługi Bcc są przechowywane w wiadomości w skrzynce pocztowej nadawcy, ale nie są uwzględniane w nagłówkach wiadomości dostarczonej do adresatów. 
+    
+- **Rozszerzoni adresaci grupy dystrybucyjnej:** Adresaci, którzy otrzymają wiadomość, ponieważ są członkami grupy dystrybucyjnej, do której adresowano wiadomość, w polach Do, DW lub BCC. 
+    
+Exchange Online i Exchange Server 2013 r. (aktualizacja zbiorcza 7 i nowsze wersje) przechowują informacje o adresatach Bcc i rozszerzonych grup dystrybucyjnych. Te informacje można wyszukać za pomocą narzędzia zbierania elektronicznych materiałów dowodowych w portalu zgodności.
+  
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Jak są zachowywane adresaci usługi Bcc i adresaci rozszerzonej grupy dystrybucyjnej
 
 Jak wspomniano wcześniej, informacje o adresatach Bcc'ed są przechowywane z wiadomością w skrzynce pocztowej nadawcy. Te informacje są indeksowane i dostępne dla wyszukiwań i blokad zbierania elektronicznych materiałów dowodowych.

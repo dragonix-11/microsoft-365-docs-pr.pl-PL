@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik danych CellTrust SL2 i użyć go do importowania i archiwizowania danych komunikacji mobilnej.
-ms.openlocfilehash: e5e07e4138445e46cdd21edc0cfb01d871dd3b6e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 286546950c29732e1d33738ffbe7a74f2f6dcca2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761158"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64940692"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiwizowanie danych z celltrust sl2 do Microsoft 365
 
 CellTrust SL2 przechwytuje dane komunikacji mobilnej i integruje się z wiodącymi technologiami archiwizacji, aby spełnić wymagania dotyczące elektronicznego odnajdywania dla przepisów takich jak FINRA, HIPAA, FOIA i TCPA. Łącznik danych SL2 importuje elementy komunikacji mobilnej do Microsoft 365. W tym artykule opisano proces integracji protokołu SL2 z Microsoft 365 przy użyciu łącznika danych CellTrust SL2 do archiwizacji. Ukończenie tego procesu zakłada, że subskrybowano usługę CellTrust SL2 i znasz architekturę SL2. Aby uzyskać informacje o celltrust SL2, zobacz <https://www.celltrust.com>.
 
-Po zaimportowaniu danych do skrzynek pocztowych użytkowników w Microsoft 365 można zastosować funkcje zgodności Microsoft 365, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania Microsoft 365 i zgodność z komunikacją. Za pomocą łącznika danych CellTrust SL2 do importowania i archiwizowania danych w Microsoft 365 może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zaimportowaniu danych do skrzynek pocztowych użytkowników w Microsoft 365 można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania Microsoft 365 i zgodność z komunikacją. Za pomocą łącznika danych CellTrust SL2 do importowania i archiwizowania danych w Microsoft 365 może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-with-the-celltrust-sl2-data-connector"></a>Omówienie archiwizacji za pomocą łącznika danych CellTrust SL2
 
@@ -45,13 +45,13 @@ Platforma SL2 usługi CellTrust przechwytuje dane komunikacyjne z wielu źróde�
 
 - Uzyskaj poświadczenia, aby uzyskać dostęp do konta administratora domeny SL2.
 
-- Użytkownik, który utworzy łącznik danych CellTrust SL2 w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który utworzy łącznik danych CellTrust SL2 w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności usługi Microsoft Purview. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych CellTrust jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i w związku z tym nie są objęte zobowiązaniami dotyczącymi zgodności Microsoft 365 i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych CellTrust jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-create-a-celltrust-sl2-connector"></a>Krok 1. Tworzenie łącznika CellTrust SL2
 
-Pierwszym krokiem jest utworzenie łącznika danych w Centrum zgodności platformy Microsoft 365.
+Pierwszym krokiem jest utworzenie łącznika danych w portalu zgodności.
 
 1. Przejdź do <https://compliance.microsoft.com> obszaru i kliknij pozycję **Łączniki danych** w okienku nawigacji po lewej stronie.
 
@@ -85,11 +85,11 @@ Następnym krokiem jest zalogowanie się do konta administratora domeny CellTrus
 
    ![Włącz archiwizowanie jednostek organizacyjnych.](../media/EnableCellTrustOUs.png)
 
-4. Po zakończeniu wyboru zamknij okno przeglądarki i wróć do strony kreatora w Centrum zgodności platformy Microsoft 365. Po kilku sekundach kreator automatycznie przechodzi do następnego kroku mapowania użytkowników.
+4. Po zakończeniu wyboru zamknij okno przeglądarki i wróć do strony kreatora w portalu zgodności. Po kilku sekundach kreator automatycznie przechodzi do następnego kroku mapowania użytkowników.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Krok 3. Mapowanie użytkowników i ukończenie konfiguracji łącznika
 
-Ostatnim krokiem jest mapowanie użytkowników i ukończenie konfiguracji łącznika w Centrum zgodności platformy Microsoft 365.
+Ostatnim krokiem jest mapowanie użytkowników i ukończenie konfiguracji łącznika w portalu zgodności.
 
 1. Na stronie **Mapowanie użytkownika** wybierz pozycję **Włącz automatyczne mapowanie użytkowników**, jeśli adres e-mail dla użytkowników jest taki sam zarówno w Microsoft 365, jak i SL2. W przeciwnym razie należy ręcznie przekazać adresy e-mail użytkowników, przekazując plik CSV, który mapuje adres SL2 użytkowników na ich adres Microsoft 365.
 

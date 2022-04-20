@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Udostępniamy nowe zasady alertów dla Ochrona usługi Office 365 w usłudze Microsoft Defender. Wycofujemy również dwie istniejące zasady alertów, które zostały zastąpione przez nowe.
-ms.openlocfilehash: afdc547fc658b40c2eee7a92ef2043326e159b32
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 339d16f7cd4e481d408a13d2e738cdef9fc991bf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759484"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939636"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nowe zasady alertów w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -97,7 +97,7 @@ Nowe alerty rozpoczną wyzwalanie i wyzwalanie badań AIR w organizacji w termin
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Co należy zrobić, aby przygotować się na te zmiany
 
-Sposób, w jaki organizacja korzysta z tych alertów, określi, co należy zrobić, aby się przygotować. Jeśli alerty zostały zoperatywowane i są używane lub używane za pośrednictwem interfejsu API, powiadomienia e-mail z alertem lub w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>, musisz zmodyfikować przepływy pracy.
+Sposób, w jaki organizacja korzysta z tych alertów, określi, co należy zrobić, aby się przygotować. Jeśli alerty zostały zoperatyzowane i są używane lub używane za pośrednictwem interfejsu API, powiadomienia e-mail z alertem lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>, musisz zmodyfikować przepływy pracy.
 
 **Jeśli te alerty nie zostały zoperatyzowane, możesz wykonać jedną z następujących czynności:**
 

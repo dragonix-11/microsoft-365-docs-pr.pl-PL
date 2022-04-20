@@ -1,5 +1,5 @@
 ---
-title: Różnice między szacowanymi i rzeczywistymi wynikami wyszukiwania zbierania elektronicznych materiałów dowodowych
+title: Szacowane i rzeczywiste wyniki wyszukiwania zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Dowiedz się, dlaczego szacowane i rzeczywiste wyniki wyszukiwania mogą się różnić w przypadku wyszukiwań uruchamianych za pomocą narzędzi zbierania elektronicznych materiałów dowodowych w Office 365.
-ms.openlocfilehash: 5ec234ed698e621a629aecf7adf34fb675b29034
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b1e4ba4938e418d8364dfb06b24b6f7a58d6a463
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783848"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938164"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Różnice między szacowanymi i rzeczywistymi wynikami wyszukiwania zbierania elektronicznych materiałów dowodowych
 
 Ten artykuł dotyczy wyszukiwań, które można uruchomić przy użyciu jednego z następujących Microsoft 365 narzędzi zbierania elektronicznych materiałów dowodowych: 
 
 - Wyszukiwanie zawartości
-- Podstawowe zbieranie elektronicznych materiałów dowodowych
+- eDiscovery (Standardowa)
 
-Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych używane narzędzie zwróci oszacowanie liczby elementów (i ich całkowitego rozmiaru) zgodnych z kryteriami wyszukiwania. Na przykład po uruchomieniu wyszukiwania w Centrum zgodności platformy Microsoft 365 szacowane wyniki wyszukiwania są wyświetlane na stronie wysuwanej dla wybranego wyszukiwania.
+Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych używane narzędzie zwróci oszacowanie liczby elementów (i ich całkowitego rozmiaru) zgodnych z kryteriami wyszukiwania. Na przykład po uruchomieniu wyszukiwania w portalu zgodności usługi Microsoft Purview szacowane wyniki wyszukiwania są wyświetlane na stronie wysuwanej dla wybranego wyszukiwania.
   
 ![Szacowanie wyników wyświetlanych na stronie wysuwanego wyszukiwania.](../media/EstimatedSearchResults1.png)
   

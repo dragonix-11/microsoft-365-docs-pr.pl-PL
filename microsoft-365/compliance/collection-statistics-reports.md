@@ -1,12 +1,12 @@
 ---
-title: Statystyki i raporty dotyczące kolekcji
+title: Statystyki i raporty kolekcji
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: ''
+ms.date: 04/08/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,129 +15,129 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak uzyskać dostęp do statystyk i raportów dotyczących wersji roboczych kolekcji i kolekcji, dla których zapisano recenzję ustawioną w Advanced eDiscovery.
-ms.openlocfilehash: 4b5cf37639d497d615a0772e084507018cb829cf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak uzyskiwać dostęp do statystyk i raportów dla kolekcji roboczych i kolekcji, które zostały zatwierdzone do zestawu przeglądów w usłudze Microsoft Purview eDiscovery (Premium).
+ms.openlocfilehash: 12152e0b81df6c61732fda068c593a91578861ee
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325155"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64940318"
 ---
-# <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Statystyki i raporty dotyczące kolekcji w programie Advanced eDiscovery
+# <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Zbieranie statystyk i raportów w usłudze Microsoft Purview eDiscovery (Premium)
 
-Po utworzeniu kolekcji roboczej można wyświetlać statystyki dotyczące pobranych elementów, takie jak lokalizacje zawartości zawierające najwięcej elementów, które pasują do kryteriów wyszukiwania, oraz liczba elementów zwróconych przez zapytanie wyszukiwania. Możesz także wyświetlić podgląd podzestawu wyników.
+Po utworzeniu kolekcji roboczej możesz wyświetlić statystyki dotyczące pobranych elementów, takich jak lokalizacje zawartości zawierające najwięcej elementów spełniających kryteria wyszukiwania i liczbę elementów zwróconych przez zapytanie wyszukiwania. Możesz również wyświetlić podgląd podzestawu wyników.
 
-Po zidentyfikowaniu zestawu dokumentów, które chcesz dokładniej zbadać, możesz dodać wyniki wyszukiwania do zestawu recenzji, który będzie zbierany i przetwarzany.
+Po zidentyfikowaniu zestawu dokumentów, które chcesz dokładniej zbadać, możesz dodać wyniki wyszukiwania do zestawu przeglądów w celu zbierania i przetwarzania.
 
-## <a name="statistics-and-reports-for-draft-collections"></a>Statystyki i raporty dla kolekcji wersji roboczych
+## <a name="statistics-and-reports-for-draft-collections"></a>Statystyki i raporty dla kolekcji roboczych
 
-W tej sekcji opisano statystyki dostępne dla kolekcji wersji roboczych. Statystyki te są dostępne na **karcie Statystyki** wyszukiwania na wysuwanych stronie zbioru roboczego.
+W tej sekcji opisano statystyki dostępne dla kolekcji roboczych. Te statystyki są dostępne na **karcie Statystyki wyszukiwania** na stronie wysuwanej kolekcji roboczej.
 
-### <a name="collection-estimates"></a>Oszacowania kolekcji
+### <a name="collection-estimates"></a>Szacowanie kolekcji
 
-Ta sekcja zawiera graficzne podsumowanie szacowanych elementów zwróconych przez kolekcję. Wskazuje liczbę elementów, które spełniają kryteria wyszukiwania kolekcji. Te informacje dają wyobrażenie o szacowanej liczbie elementów zwróconych przez kolekcję.
+W tej sekcji przedstawiono graficzne podsumowanie szacowanych elementów zwróconych przez kolekcję. Wskazuje to liczbę elementów zgodnych z kryteriami wyszukiwania kolekcji. Te informacje zawierają informacje o szacowanej liczbie elementów zwracanych przez kolekcję.
 
-![Oszacowania kolekcji dla kolekcji roboczej.](../media/AeDCollectionEstimates.png)
+![Szacowanie kolekcji dla kolekcji roboczej.](../media/AeDCollectionEstimates.png)
 
-- **Szacowane elementy według lokalizacji**: łączna liczba szacowanych elementów zwróconych przez kolekcję. Wyświetlana jest również konkretną liczba elementów znajdujących się w skrzynkach pocztowych i znajdujących się w witrynach.
+- **Szacowane elementy według lokalizacji**: całkowita liczba szacowanych elementów zwróconych przez kolekcję. Wyświetlana jest również określona liczba elementów znajdujących się w skrzynkach pocztowych i znajdujących się w witrynach.
 
-- **Szacowane lokalizacje z trafieniami**: całkowita liczba lokalizacji zawartości, które zawierają elementy zwrócone przez kolekcję. Wyświetlana jest również konkretną liczba lokalizacji skrzynek pocztowych i witryn.
+- **Szacowane lokalizacje z trafieniami**: całkowita liczba lokalizacji zawartości zawierających elementy zwrócone przez kolekcję. Zostanie również wyświetlona określona liczba lokalizacji skrzynki pocztowej i lokacji.
 
-- **Wielkość danych według lokalizacji (w MB)**: całkowity rozmiar wszystkich szacowanych elementów zwracanych przez kolekcję. Wyświetlany jest również określony rozmiar elementów skrzynki pocztowej i elementów witryny.
+- **Wolumin danych według lokalizacji (w MB)**: całkowity rozmiar wszystkich szacowanych elementów zwróconych przez kolekcję. Zostanie również wyświetlony określony rozmiar elementów skrzynki pocztowej i elementów witryny.
 
-### <a name="condition-report"></a>Raport warunków
+### <a name="condition-report"></a>Raport warunku
 
-W tej sekcji są wyświetlane statystyki dotyczące zapytania wyszukiwania kolekcji oraz liczby szacowanych elementów, które pasują do różnych części zapytania wyszukiwania. Za pomocą tych statystyk można przeanalizować liczbę elementów, które pasują do każdego składnika zapytania wyszukiwania. Może to ułatwić uściślić kryteria wyszukiwania kolekcji i w razie potrzeby zawęzić zakres kolekcji.
+W tej sekcji przedstawiono statystyki dotyczące zapytania wyszukiwania kolekcji oraz liczbę szacowanych elementów, które pasowały do różnych części zapytania wyszukiwania. Te statystyki umożliwiają analizowanie liczby elementów odpowiadających poszczególnym składnikom zapytania wyszukiwania. Może to pomóc uściślić kryteria wyszukiwania dla kolekcji i w razie potrzeby zawęzić zakres kolekcji.
 
-- **Typ lokalizacji**: typ lokalizacji zawartości, do których ma zastosowanie statystyka kwerendy. Wartość **Exchange wskazuje** lokalizację skrzynki pocztowej, a wartość **SharePoint lokalizacji witryny**.
+- **Typ lokalizacji**: typ lokalizacji zawartości, do których mają zastosowanie statystyki zapytania. Wartość **Exchange** wskazuje lokalizację skrzynki pocztowej; wartość **SharePoint** wskazuje lokalizację witryny.
 
-- **Część**: do części zapytania wyszukiwania mają zastosowanie statystyki. **Pole Podstawowe** wskazuje całe zapytanie wyszukiwania. **Słowo** kluczowe wskazuje statystykę w wierszu dla określonego słowa kluczowego. Jeśli użyjemy listy słów kluczowych, gdy dla zapytania wyszukiwania w kolekcji zostaną uwzględnione statystyki dla każdego składnika zapytania.
+- **Część**: część zapytania wyszukiwania, do których mają zastosowanie statystyki. **Podstawowa** wskazuje całe zapytanie wyszukiwania. **Słowo kluczowe** wskazuje, że statystyki w wierszu dotyczą określonego słowa kluczowego. Jeśli używasz listy słów kluczowych w przypadku zapytania wyszukiwania w kolekcji, statystyki dla każdego składnika zapytania są uwzględniane w tej tabeli.
 
-- **Warunek**: rzeczywisty składnik (słowo kluczowe lub warunek) zapytania wyszukiwania, które zostało uruchomione dla zbioru roboczego, która zwróciła statystykę wyświetlaną w odpowiednim wierszu.
+- **Warunek**: rzeczywisty składnik (słowo kluczowe lub warunek) zapytania wyszukiwania, które zostało uruchomione dla kolekcji roboczej, która zwróciła statystyki wyświetlane w odpowiednim wierszu.
 
-- **Lokalizacje z trafieniami**: liczba lokalizacji zawartości (określonych w kolumnie Typ lokalizacji), które zawierają elementy zgodne z podstawowym lub kluczowym zapytaniem wymienionym w **kolumnie Warunek**.
+- **Lokalizacje z trafieniami**: liczba lokalizacji zawartości (określonych w kolumnie **Typ lokalizacji** ), które zawierają elementy zgodne z zapytaniem podstawowym lub kluczowym wymienionym w kolumnie **Warunek** .
 
-- **Elementy**: liczba elementów (z określonej lokalizacji zawartości), które są zgodne z zapytaniem wymienionym w **kolumnie** Warunek. Jak wyjaśniono wcześniej, jeśli element zawiera wiele wystąpień słowa kluczowego, które jest przeszukiwane, jest on liczony tylko raz w tej kolumnie.
+- **Elementy**: liczba elementów (z określonej lokalizacji zawartości), które są zgodne z zapytaniem wymienionym w kolumnie **Warunek** . Jak wyjaśniono wcześniej, jeśli element zawiera wiele wystąpień słowa kluczowego, które jest wyszukiwane, jest on liczony tylko raz w tej kolumnie.
 
-- **Rozmiar (MB)**: Całkowity rozmiar wszystkich elementów, które zostały znalezione (w określonej lokalizacji zawartości), które pasują do zapytania wyszukiwania w **kolumnie Warunek** .
+- **Rozmiar (MB)**: całkowity rozmiar wszystkich znalezionych elementów (w określonej lokalizacji zawartości), które są zgodne z zapytaniem wyszukiwania w kolumnie **Warunek** .
 
-### <a name="top-locations"></a>Najlepsze lokalizacje
+### <a name="top-locations"></a>Najważniejsze lokalizacje
 
-W tej sekcji są wyświetlane statystyki dotyczące poszczególnych lokalizacji zawartości, z których najwięcej elementów jest zwracanych przez kolekcję.
+W tej sekcji przedstawiono statystyki dotyczące określonych lokalizacji zawartości z największą większością elementów zwracanych przez kolekcję.
 
 - Nazwa lokalizacji (adres e-mail skrzynek pocztowych i adres URL witryn).
 
 - Typ lokalizacji (skrzynka pocztowa lub witryna).
 
-- Szacowana liczba elementów w lokalizacji zawartości zwróconej przez kolekcję.
+- Szacowana liczba elementów w lokalizacji zawartości zwracanych przez kolekcję.
 
-- Całkowity rozmiar szacowanych elementów w poszczególnych lokalizacjach zawartości.
+- Całkowity rozmiar szacowanych elementów w każdej lokalizacji zawartości.
 
-## <a name="statistics-and-reports-for-committed-collections"></a>Statystyki i raporty dla kolekcji zatwierdzonej
+## <a name="statistics-and-reports-for-committed-collections"></a>Statystyki i raporty dotyczące zatwierdzonych kolekcji
 
-W tej sekcji opisano statystyki dostępne po zatwierdzeniu kolekcji do zestawu recenzji, w tym rzeczywistą liczbę elementów dodanych do zestawu recenzji. Statystyki te (oprócz informacji o zestawach ładowania) zawierają informacje historyczne dotyczące zawartości dodanej do sprawy.
+W tej sekcji opisano statystyki dostępne po zatwierdzeniu kolekcji w zestawie przeglądów, w tym rzeczywistą liczbę elementów dodanych do zestawu przeglądów. Te statystyki (oprócz ładowania informacji zestawu) zawierają historyczne informacje o zawartości dodanej do sprawy.
 
-Po zatwierdzeniu kolekcji do zestawu recenzji na wysuwanych stronie dla zatwierdzonego połączenia są wyświetlane następujące karty. Każda z tych kart zawiera różne typy informacji o kolekcji.
+Po zatwierdzeniu kolekcji w zestawie przeglądów na stronie wysuwanej zatwierdzonego połączenia są wyświetlane następujące karty. Każda z tych kart zawiera różne typy informacji o kolekcji.
 
-![Karty na wysuwanych stronie zatwierdzonej kolekcji.](../media/CommittedCollectionFlyoutPage.png)
+![Karty na stronie wysuwanej zatwierdzonej kolekcji.](../media/CommittedCollectionFlyoutPage.png)
 
 ### <a name="collection-contents"></a>Zawartość kolekcji
 
-Ta sekcja karty **Podsumowanie** zawiera statystyki i inne informacje o elementach, które zostały zebrane ze źródeł danych w zbiorze i dodane do zestawu recenzji.
+Ta sekcja karty **Podsumowanie** zawiera statystyki i inne informacje o elementach, które zostały zebrane ze źródeł danych w kolekcji i dodane do zestawu przeglądów.
 
-- **Łączna liczba wyodrębniowanych elementów**. Całkowita liczba elementów dodanych do zestawu recenzji. Ta liczba wskazuje sumę elementów nadrzędnych i elementów podrzędnych dodanych do zestawu recenzji.
+- **Łączna liczba wyodrębnionych elementów**. Całkowita liczba elementów dodanych do zestawu przeglądów. Ta liczba wskazuje sumę elementów nadrzędnych i elementów podrzędnych dodanych do zestawu przeglądów.
 
   > [!TIP]
-  > Umieść kursor na słupkach elementów nadrzędnych lub podrzędnych, aby wyświetlić łączną liczbę elementów nadrzędnych lub podrzędnych.
+  > Umieść kursor na paskach elementów nadrzędnych lub podrzędnych, aby wyświetlić całkowitą liczbę elementów nadrzędnych lub podrzędnych.
 
-- **Elementy nadrzędne**. Liczba elementów zwróconych przez kolekcję, która została użyta do zebrania elementów dodanych do zestawu recenzji. Ta liczba odpowiada szacowanej liczbie elementów wyświetlanej w sekcji **Parametry kolekcji** (i jest równa). Liczba elementów nadrzędnych, które zostały użyte do zbierania elementów dodanych do zestawu recenzji.
+- **Elementy nadrzędne**. Liczba elementów zwróconych przez kolekcję, która została użyta do zbierania elementów, które zostały dodane do zestawu przeglądów. Ta liczba odpowiada (i jest równa) szacowanej liczbie elementów wyświetlanych w sekcji **Parametry kolekcji** . Liczba elementów nadrzędnych, które zbiera informacje, które zostały użyte do zbierania elementów, które zostały dodane do zestawu przeglądów.
  
-   Element nadrzędny może zawierać wiele elementów podrzędnych. Na przykład wiadomość e-mail jest elementem nadrzędnym, jeśli zawiera dołączony plik lub ma załącznik w chmurze. W tym przypadku dołączony plik lub plik docelowy załącznika w chmurze jest uznawany za element podrzędny. Po zatwierdzeniu kolekcji elementy nadrzędne i wszystkie odpowiadające im elementy podrzędne (takie jak dołączone pliki i załączniki w chmurze) są dodawane do zestawu recenzji jako pojedyncze elementy lub pliki.
+   Element nadrzędny może zawierać wiele elementów podrzędnych. Na przykład wiadomość e-mail jest elementem nadrzędnym, jeśli zawiera dołączony plik lub załącznik w chmurze. W takim przypadku dołączony plik lub plik docelowy załącznika w chmurze jest uważany za element podrzędny. Po zatwierdzeniu kolekcji elementy nadrzędne i wszystkie odpowiednie elementy podrzędne (takie jak dołączone pliki i załączniki w chmurze) są dodawane do zestawu przeglądów jako pojedyncze elementy lub pliki.
 
-- **Elementy podrzędne**. Liczba elementów podrzędnych dodanych do zestawu recenzji. Do zestawu recenzji są dodawane tylko elementy podrzędne, które są plikami załączników i załącznikami w chmurze, jako pojedyncze pliki. Inne typy elementów podrzędnych, takie jak podpisy wiadomości e-mail i obrazy, są wyodrębnione z elementu nadrzędnego, a następnie przetwarzane przez optyczne rozpoznawanie znaków (OCR) w celu wyodrębnienia dowolnego tekstu z elementu podrzędnego. Tekst wyodrębniony z tych typów elementów nadrzędnych jest następnie dodawany do jego elementu nadrzędnego, aby można go było wyświetlić w zestawie recenzji. Dzięki nie dodaniu elementów podrzędnych do zestawu recenzji jako oddzielnego pliku Advanced eDiscovery usprawnia proces rerecenzowania przez ograniczenie liczby potencjalnie nieistotnych elementów w zestawie recenzji.
+- **Elementy podrzędne**. Liczba elementów podrzędnych dodanych do zestawu przeglądów. Tylko elementy podrzędne, które są załącznikami plików i załącznikami w chmurze, są dodawane do zestawu przeglądów jako pojedyncze pliki. Inne typy elementów podrzędnych, takie jak podpisy poczty e-mail i obrazy, są wyodrębniane z elementu nadrzędnego, a następnie przetwarzane przez optyczne rozpoznawanie znaków (OCR) w celu wyodrębnienia dowolnego tekstu z elementu podrzędnego. Tekst wyodrębniony z tych typów elementów podrzędnych jest następnie dodawany do elementu nadrzędnego, dzięki czemu można go wyświetlić w zestawie przeglądów. Nie dodając elementów podrzędnych do zestawu przeglądów jako oddzielnego pliku, funkcja zbierania elektronicznych materiałów dowodowych (Premium) pomaga usprawnić proces przeglądu, ograniczając liczbę potencjalnie nieistotnych elementów w zestawie przeglądów.
 
-- **Elementy unikatowe**. Liczba unikatowych elementów dodanych do zestawu recenzji. Unikatowe elementy są unikatowe w zestawie recenzji. Wszystkie elementy są unikatowe po dodaniu pierwszej kolekcji do nowego zestawu recenzji, ponieważ w zestawie recenzji nie było żadnych poprzednich elementów.
+- **Unikatowe elementy**. Liczba unikatowych elementów dodanych do zestawu przeglądów. Unikatowe elementy są unikatowe dla zestawu przeglądów. Wszystkie elementy są unikatowe, gdy pierwsza kolekcja zostanie dodana do nowego zestawu przeglądów, ponieważ w zestawie przeglądów nie było żadnych poprzednich elementów.
 
-- **Zidentyfikowane zduplikowane elementy**. Liczba elementów z kolekcji, które nie zostały dodane do zestawu recenzji, ponieważ ten sam element już istnieje w zestawie recenzji. Statystyki dotyczące zduplikowanych elementów mogą ułatwić wyjaśnienie różnic między liczbą szacowanych elementów z kolekcji roboczej a rzeczywistą liczbą elementów dodanych do zestawu recenzji.
+- **Zidentyfikowane zduplikowane elementy**. Liczba elementów z kolekcji, które nie zostały dodane do zestawu przeglądów, ponieważ ten sam element już istnieje w zestawie przeglądów. Statystyki dotyczące zduplikowanych elementów mogą pomóc w wyjaśnieniu różnic między liczbą szacowanych elementów z kolekcji roboczej a rzeczywistą liczbą elementów dodanych do zestawu przeglądów.
 
-### <a name="indexing"></a>Indeksowanie
+### <a name="indexing"></a>Indeksowania
 
-Sekcja **Indeksowanie** na karcie **Podsumowanie** zatwierdzonego zestawu recenzji zawiera informacje indeksowania dotyczące elementów dodanych do zestawu recenzji.
+Sekcja **Indeksowanie** na karcie **Podsumowanie** zatwierdzonego zestawu przeglądów zawiera informacje indeksowania dotyczące elementów dodanych do zestawu przeglądów.
 
-**Nowe elementy indeksowane**. Liczba elementów, które zostały nowo zindeksowane przed dodaniem ich do zestawu recenzji. Przykładami nowo indeksowanego elementu są elementy podrzędne wyodrębnione z elementu nadrzędnego, a następnie indeksowane przed dodaniem ich do zestawu recenzji. Ponadto elementy, które nie znajdują się w niedobczasowych źródłach danych i lokalizacjach zawartości bez elementów niedobłędnych wymienionych w tym przypadku na karcie Źródła danych, są indeksowane przed dodaniem ich do recenzji. Na przykład nowo indeksowane elementy będą zawierać elementy zebrane z dodatkowych lokalizacji.
+**Nowe indeksowane elementy**. Liczba elementów, które zostały nowo zindeksowane przed dodaniem ich do zestawu przeglądów. Przykładami nowo indeksowanego elementu są elementy podrzędne wyodrębnione z elementu nadrzędnego, a następnie indeksowane przed dodaniem ich do zestawu przeglądów. Ponadto elementy, które nie znajdują się w źródłach danych będących osobami nadzoru i nienadzorowanych lokalizacjach zawartości wymienionych na karcie **Źródła danych** w przypadku, są indeksowane przed dodaniem ich do przeglądu. Na przykład nowo indeksowane elementy będą zawierać elementy zebrane z dodatkowych lokalizacji.
 
-**Zaktualizowano elementy indeksowane**. Liczba częściowo indeksowanych elementów, które zostały pomyślnie zindeksowane i dodane do zestawu recenzji. Ta statystyka wskazuje częściowo indeksowane elementy z lokalizacji zawartości, które nie są zindeksowane z lokalizacji  zawartości, z których wynikało tylko częściowe wykorzystanie danych, które zostały pomyślnie zindeksowane podczas zatwierdzonego zbioru recenzji.
+**Zaktualizowano indeksowane elementy**. Liczba częściowo indeksowanych elementów, które zostały pomyślnie zindeksowane i dodane do zestawu przeglądów. Ta statystyka wskazuje częściowo zaindeksowane elementy z lokalizacjizawartościej i nienadzorowanych lokalizacji zawartości Karta **Źródła danych** , które zostały pomyślnie zindeksowane, gdy kolekcja została zatwierdzona do zestawu przeglądów.
 
-**Indeksowanie błędów**. Liczba elementów częściowo indeksowanych, których nie można było zindeksować przed dodaniem ich do zestawu recenzji. Te elementy mogą wymagać rozwiązania problemów z błędami.
+**Błędy indeksowania**. Liczba częściowo indeksowanych elementów, których nie można było zindeksować przed dodaniem ich do zestawu przeglądów. Te elementy mogą wymagać korygowania błędów.
 
 ### <a name="collection-parameters"></a>Parametry kolekcji
 
-W tej sekcji są wyświetlane informacje o kolekcjach, które zostały użyte do zbierania elementów dodanych do zestawu recenzji. Ta karta zawiera informacje podobne do informacji na karcie **Statystyka** wyszukiwania. Ta sekcja udostępnia szybkie przyciąganie zapytania wyszukiwania używanego przez kolekcję, lokalizacji zawartości, które były przeszukiwane, oraz szacowanych wyników zbierania. Jak wyjaśniono wcześniej, liczba szacowanych elementów w tej sekcji będzie równa liczbie elementów nadrzędnych widocznych w sekcji **Zawartość kolekcji** .
+W tej sekcji są wyświetlane informacje o kolekcji, które zostały użyte do zbierania elementów, które zostały dodane do zestawu przeglądów. Na tej karcie są wyświetlane informacje podobne do informacji na **karcie Statystyki wyszukiwania** . Ta sekcja zawiera szybkie ujęcie zapytania wyszukiwania używanego przez kolekcję, wyszukiwane lokalizacje zawartości i szacowane wyniki kolekcji. Jak wyjaśniono wcześniej, liczba szacowanych elementów w tej sekcji będzie równa liczbie elementów nadrzędnych wyświetlanych w sekcji **Zawartość kolekcji** .
 
-### <a name="search-statistics-tab"></a>Karta Statystyka wyszukiwania
+### <a name="search-statistics-tab"></a>Karta Statystyki wyszukiwania
 
-Statystyki wyświetlane na karcie **Statystyka** wyszukiwania są statystykami z ostatniego uruchomienia zbioru roboczego. Obejmuje to oszacowania kolekcji, raporty warunków i najlepsze lokalizacje. Te informacje są zachowywane w kolekcji roboczej do celów informacyjnych i można je porównać z rzeczywistą kolekcją, która została zadedytowana w zestawie recenzji.
+Statystyki wyświetlane na karcie **Statystyki wyszukiwania** to te same statystyki z ostatniego uruchomienia kolekcji roboczej. Obejmuje to szacowanie kolekcji, raport warunków i najważniejsze lokalizacje. Te informacje są zachowywane z kolekcji roboczej na potrzeby odwołania historycznego i można je porównać z rzeczywistą kolekcją, która została zatwierdzona w zestawie przeglądów.
 
-## <a name="differences-between-draft-collection-estimates-and-the-actual-committed-collection"></a>Różnice między wersjami roboczą szacowania kolekcji a rzeczywistą zatwierdzona kolekcją
+## <a name="differences-between-draft-collection-estimates-and-the-actual-committed-collection"></a>Różnice między szacowanymi wersjami roboczymi kolekcji a rzeczywistą zatwierdzoną kolekcją
 
-Po uruchomieniu kolekcji roboczej na karcie Podsumowanie i w sekcji Oszacowania kolekcji karty Statystyka wyszukiwania jest wyświetlana szacowana liczba elementów (i  ich całkowity rozmiar)  spełniających **kryteria kolekcji**. Po zatwierdzeniu wersji roboczej kolekcji do zestawu recenzji rzeczywista liczba elementów dodanych do zestawu recenzji (i ich całkowity rozmiar) często różni się od danych szacunkowych. W większości przypadków do zestawu recenzji jest dodawanych więcej elementów, niż oszacowano w kolekcji roboczej. Na poniższej liście opisano najczęstsze przyczyny tych różnic i porady dotyczące ich identyfikowania:
+Po uruchomieniu kolekcji roboczej oszacowanie liczby elementów (i ich całkowitego rozmiaru) spełniających kryteria kolekcji jest wyświetlane na karcie **Podsumowanie** i w sekcji **Szacowane kolekcje** na **karcie Statystyki wyszukiwania** . Po zatwierdzeniu kolekcji roboczej do zestawu przeglądów rzeczywista liczba elementów (i ich całkowity rozmiar) dodano zestaw przeglądów, które często różnią się od szacowanych. W większości przypadków do zestawu przeglądów jest dodawanych więcej elementów niż oszacowano w wersji roboczej kolekcji. Na poniższej liście opisano najczęstsze przyczyny tych różnic i wskazówki dotyczące ich identyfikacji:
 
-- **Elementy podrzędne**. Elementy podrzędne (takie jak pliki załączników i załączniki w chmurze), które są wyodrębnione z ich elementów nadrzędnych i dodawane jako pojedyncze pliki. Liczba elementów podrzędnych może zwiększyć liczbę elementów faktycznie dodawanych do zestawu recenzji. Na ogół liczba elementów nadrzędnych zidentyfikowanych w sekcji Zawartość  kolekcji na karcie Podsumowanie  w zatwierdzonej kolekcji powinna być równa liczbie szacowanych elementów z kolekcji roboczej.
+- **Elementy podrzędne**. Elementy podrzędne (takie jak załączniki plików i załączniki w chmurze), które są wyodrębniane z elementów nadrzędnych i dodawane jako pojedyncze pliki. Liczba elementów podrzędnych może zwiększyć liczbę elementów faktycznie dodanych do zestawu przeglądów. Ogólnie rzecz biorąc, liczba elementów nadrzędnych zidentyfikowanych w sekcji **Zawartość kolekcji** na karcie **Podsumowanie** zatwierdzonej kolekcji powinna być równa liczbie szacowanych elementów z kolekcji roboczej.
 
-- **Duplikowanie elementów**. Elementy z kolekcji roboczej, które już zostały dodane do zestawu recenzji w poprzedniej kolekcji, nie zostaną dodane. Jak wyjaśniono wcześniej, liczba zduplikowanych elementów w kolekcji jest wyświetlana w sekcji **Zawartość** kolekcji na **karcie Podsumowanie** .
+- **Zduplikowane elementy**. Elementy z kolekcji roboczej, które zostały już dodane do zestawu przeglądów w poprzedniej kolekcji, nie zostaną dodane. Jak wyjaśniono wcześniej, liczba zduplikowanych elementów w kolekcji jest wyświetlana w sekcji **Zawartość kolekcji** na karcie **Podsumowanie** .
 
-- **Opcje konfiguracji kolekcji**. Po zatwierdzeniu kolekcji roboczej do zestawu recenzji możesz dołączyć wątki konwersacji, załączniki w chmurze i wersje dokumentów. Żadne z tych elementów, które zostały dodane do zestawu recenzji, nie są uwzględniane w szacowanych wersjach roboczych kolekcji. Są one identyfikowane i zbierane tylko po zatwierdzeniu kolekcji. Wybranie tych opcji najprawdopodobniej spowoduje zwiększenie liczby elementów dodanych do zestawu recenzji. 
+- **Opcje konfiguracji kolekcji**. Po zatwierdzeniu kolekcji roboczej do zestawu przeglądów należy uwzględnić wątki konwersacji, załączniki w chmurze i wersje dokumentów. Żaden z tych elementów dodanych do zestawu przeglądów nie jest uwzględniony w oszacowaniach kolekcji roboczej. Są one identyfikowane i zbierane tylko podczas zatwierdzania kolekcji. Wybranie tych opcji najprawdopodobniej zwiększy liczbę elementów dodanych do zestawu przeglądów. 
 
-    Na przykład wiele wersji dokumentów SharePoint nie jest uwzględnianych w oszacowaniu dla wersji roboczej kolekcji. Jeśli jednak wybierzesz opcję dołączania wszystkich wersji dokumentu po zatwierdzeniu wersji roboczej kolekcji, rzeczywista liczba (i całkowity rozmiar) elementów dodanych do zestawu recenzji zwiększy się.
+    Na przykład wiele wersji dokumentów SharePoint nie jest uwzględnionych w szacowaniu dla kolekcji roboczej. Jeśli jednak wybierzesz opcję uwzględnienia wszystkich wersji dokumentu podczas zatwierdzania kolekcji roboczej, rzeczywista liczba (i całkowity rozmiar) elementów dodanych do zestawu przeglądów wzrośnie.
 
-    Aby uzyskać więcej informacji o tych opcjach, zobacz [Zatwierdzanie wersji roboczej kolekcji do zestawu recenzji](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery). 
+    Aby uzyskać więcej informacji na temat tych opcji, zobacz [Commit a draft collection to a review set (Zatwierdzanie kolekcji roboczej do zestawu przeglądów](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-ediscovery-premium)).
 
-Oto inne przyczyny, dla których szacowane wyniki z wersji roboczej kolekcji mogą różnić się od rzeczywistych wyników zatwierdzonego.
+Poniżej przedstawiono inne powody, dla których szacowane wyniki kolekcji roboczej mogą różnić się od rzeczywistych zatwierdzonych wyników.
 
-- **Sposób szacowania wyników dla kolekcji wersji roboczych**. Szacowana wartość wyników wyszukiwania zwróconych przez kolekcję roboczą to tylko szacowana (a nie rzeczywista liczba) elementów spełniających kryteria zapytania kolekcji. W celu skompilowania szacowanych elementów poczty e-mail w bazie danych jest wymagana Exchange e-mail lista identyfikatorów wiadomości spełniających kryteria wyszukiwania. Jednak po zatwierdzeniu kolekcji do zestawu recenzji jest ona ponownie uruchomić i rzeczywiste komunikaty są pobierane z bazy danych programu Exchange danych. Dlatego różnice mogą wynikać z tego, jak jest określana szacowana liczba elementów i rzeczywista liczba elementów.
+- **Sposób szacowania wyników dla kolekcji roboczych**. Oszacowanie wyników wyszukiwania zwracanych przez kolekcję roboczą to tylko oszacowanie (a nie rzeczywista liczba) elementów spełniających kryteria zapytania kolekcji. Aby skompilować oszacowanie elementów wiadomości e-mail, z bazy danych Exchange jest wymagana lista identyfikatorów wiadomości spełniających kryteria wyszukiwania. Jednak po zatwierdzeniu kolekcji do zestawu przeglądów kolekcja jest uruchamiana ponownie, a rzeczywiste komunikaty są pobierane z bazy danych Exchange. Różnice mogą więc wynikać ze sposobu określania szacowanej liczby elementów i rzeczywistej liczby elementów.
 
-- **Zmiany, które się zdarzają między szacowaniem i zatwierdzaniem wersji roboczych kolekcji**. Po zatwierdzeniu wersji roboczej kolekcji do zestawu recenzji jest ponownie uruchomić wyszukiwanie w celu zebrania najnowszych elementów w indeksie wyszukiwania, które spełniają kryteria wyszukiwania. Być może utworzono, wysłano lub usunięto dodatkowe elementy spełniające kryteria wyszukiwania w czasie między ostatnim uruchomieniem kolekcji roboczej a zatwierdzona zestawem recenzji dla kolekcji roboczej. Ponadto elementy, które były w indeksie wyszukiwania, gdy oszacowano wyniki zbioru roboczego, nie są już dostępne, ponieważ zostały wyczyszone ze źródła danych przed zatwierdzeniem kolekcji. Jednym ze sposobów na ograniczenie tego problemu jest określenie zakresu dat dla kolekcji. Innym sposobem jest umieszczenie w miejscu zawartości lokalizacji zawartości, aby elementy zostały zachowane i nie można ich przeczyścić.
+- **Zmiany zachodzą między godziną szacowania i zatwierdzania kolekcji roboczych**. Po zatwierdzeniu kolekcji roboczej do zestawu przeglądów wyszukiwanie jest uruchamiane ponownie w celu zebrania najnowszych elementów w indeksie wyszukiwania spełniających kryteria wyszukiwania. Możliwe, że dodatkowe elementy zostały utworzone, wysłane lub usunięte, które spełniają kryteria wyszukiwania w czasie między ostatnim uruchomieniem kolekcji roboczej a zobowiązaniem kolekcji roboczej do zestawu przeglądów. Istnieje również możliwość, że elementy, które znajdowały się w indeksie wyszukiwania podczas szacowania wyników kolekcji roboczej, nie są już dostępne, ponieważ zostały usunięte ze źródła danych przed zatwierdzeniem kolekcji. Jednym ze sposobów rozwiązania tego problemu jest określenie zakresu dat dla kolekcji. Innym sposobem jest wstrzymanie lokalizacji zawartości, aby elementy były zachowywane i nie mogły być czyszczone.
 
-- **Elementy nieindeksowane**. Jeśli wersja robocza kolekcji uwzględniała wyszukiwanie we wszystkich skrzynkach pocztowych usługi Exchange lub wszystkich witrynach SharePoint, do zestawu recenzji będą dodawane tylko elementy nieindeksowane z lokalizacji zawartości zawierających elementy zgodne z kryteriami kolekcji. Innymi słowy, jeśli w skrzynce pocztowej lub witrynie nie zostaną znalezione żadne wyniki, elementy nieindeksowane w tej skrzynce pocztowej lub witrynie nie zostaną dodane do zestawu recenzji. Jednak elementy nieindeksowane ze wszystkich lokalizacji zawartości (nawet tych, które nie zawierają elementów, które pasują do zapytania kolekcji) zostaną uwzględnione w szacowanych wynikach kolekcji.
+- **Elementy bez certyfikatu**. Jeśli kolekcja robocza zawierała przeszukiwanie wszystkich Exchange skrzynek pocztowych lub wszystkich witryn SharePoint, do zestawu przeglądów zostaną dodane tylko niezadeksowane elementy z lokalizacji zawartości, które zawierają elementy zgodne z kryteriami kolekcji. Innymi słowy, jeśli w skrzynce pocztowej lub witrynie nie zostaną znalezione żadne wyniki, żadne niezainicjowane elementy w tej skrzynce pocztowej lub witrynie nie zostaną dodane do zestawu przeglądów. Jednak niezainicjowane elementy ze wszystkich lokalizacji zawartości (nawet te, które nie zawierają elementów zgodnych z zapytaniem kolekcji) zostaną uwzględnione w szacowanych wynikach kolekcji.
 
-    Jeśli także wersja robocza zbioru zawierała określone lokalizacje zawartości (co oznacza, że określone skrzynki pocztowe lub witryny określone na  stronie Dodatkowe lokalizacje w Kreatorze wersji roboczych kolekcji), elementy nieindeksowane (które nie są wykluczone przez kryteria kolekcji) z lokalizacji zawartości określonych w wyszukiwaniu będą eksportowane. W tym przypadku szacowana liczba elementów nieindeksowanych i liczba elementów nieindeksowanych dodanych do zestawu recenzji powinna być taka sama.
+    Alternatywnie, jeśli wersja robocza kolekcji zawierała określone lokalizacje zawartości (co oznacza, że określone skrzynki pocztowe lub witryny określone na stronie **Dodatkowe lokalizacje** w kreatorze kolekcji roboczej), nieweksportowane elementy (które nie są wykluczone przez kryteria zbierania) z lokalizacji zawartości określonych w wyszukiwaniu zostaną wyeksportowane. W tym przypadku szacowana liczba nieweksportowanych elementów i liczba nieweksportowanych elementów dodawanych do zestawu przeglądów powinna być taka sama.
