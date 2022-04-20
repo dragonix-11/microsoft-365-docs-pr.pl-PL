@@ -1,5 +1,5 @@
 ---
-title: Stosowanie etykiet wrażliwości do modelu w aplikacji Microsoft SharePoint Syntex
+title: Stosowanie etykiety poufności do modelu w usłudze Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,71 +12,71 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Dowiedz się, jak zastosować etykietę wrażliwości do modelu w SharePoint Syntex.
-ms.openlocfilehash: a7e6ea878fd7fceb6b7496dbcfb90a50f3e8ce1e
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Dowiedz się, jak zastosować etykietę poufności do modelu w SharePoint Syntex.
+ms.openlocfilehash: 4ab530fbd4a187f03617b01b6b9661332ad1a7d9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635092"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945610"
 ---
-# <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Stosowanie etykiet wrażliwości do modelu w aplikacji Microsoft SharePoint Syntex
+# <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Stosowanie etykiety poufności do modelu w usłudze Microsoft SharePoint Syntex
 
-Możesz łatwo zastosować etykietę [wrażliwości, aby zrozumieć](../compliance/sensitivity-labels.md) modele w aplikacji Microsoft SharePoint Syntex. Ta funkcja nie jest jeszcze dostępna w przypadku modeli przetwarzania formularzy.
+Etykietę [poufności](../compliance/sensitivity-labels.md) można łatwo zastosować do dokumentów zawierających informacje o modelach w usłudze Microsoft SharePoint Syntex. Ta funkcja nie jest jeszcze dostępna dla modeli przetwarzania formularzy.
 
-Etykiety wrażliwości umożliwiają zastosowanie szyfrowania do dokumentów identyfikowanych przez modele. Model ma na przykład zawierać nie tylko dokumenty finansowe zawierające numery kont bankowych lub numery kart kredytowych, które są przekazywane do biblioteki dokumentów, ale również etykietę wrażliwości skonfigurowanej przy użyciu ustawień szyfrowania w celu ograniczenia dostępu do tej zawartości i sposobu jej stosowania. SharePoint Syntex modelach są stosowane [reguły](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) kolejności etykiet, a także nie zastępują istniejącej etykiety, która została ręcznie zastosowana przez użytkownika do pliku. 
+Etykiety poufności umożliwiają stosowanie szyfrowania do dokumentów, które identyfikują modele. Na przykład chcesz, aby model nie tylko identyfikował wszelkie dokumenty finansowe zawierające numery kont bankowych lub numery kart kredytowych przekazywane do biblioteki dokumentów, ale także stosował etykietę poufności skonfigurowaną przy użyciu ustawień szyfrowania, aby ograniczyć, kto może uzyskiwać dostęp do tej zawartości i jak można jej używać. SharePoint Syntex modele przestrzegają reguł [kolejności etykiet](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label), a także nie zastępują istniejącej etykiety, która została ręcznie zastosowana przez użytkownika do pliku. 
 
-W ustawieniach modelu na stronie głównej modelu możesz zastosować istniejącą etykietę wrażliwości do modelu. Etykieta musi już zostać opublikowana, aby była dostępna do wyboru w ustawieniach modelu. Etykiety dotyczą Office plików programu Word (.docx), PowerPoint (.pptx) i Excel (.xlsx). 
+Istniejącą etykietę poufności można zastosować do modelu za pomocą ustawień modelu na stronie głównej modelu. Etykieta musi być już opublikowana, aby była dostępna do wyboru z ustawień modelu. Etykiety dotyczą plików Office programu Word (.docx), PowerPoint (.pptx) i Excel (.xlsx). 
 
 > [!Important]
-> Aby etykiety wrażliwości były dostępne do zastosowania w dokumencie w celu zrozumienia modeli, należy je utworzyć i opublikować w Centrum zgodności Microsoft 365 [zgodności](../compliance/microsoft-365-compliance-center.md).
+> Aby etykiety poufności były dostępne do zastosowania do modeli interpretacji dokumentów, należy [je utworzyć i opublikować w portalu zgodności usługi Microsoft Purview](../admin/security-and-compliance/set-up-compliance.md).
 
-## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>Dodawanie etykiety wrażliwości do modelu opisowego dokumentu
+## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>Dodawanie etykiety poufności do modelu zrozumienia dokumentu
 
-1. Na stronie głównej modelu wybierz **pozycję Ustawienia modelu**.
+1. Na stronie głównej modelu wybierz pozycję **Ustawienia modelu**.
 
-   ![Zrzut ekranu przedstawiający stronę Modele z wyróżniona opcją Ustawienia modelu.](../media/content-understanding/sensitivity-model-settings.png)
+   ![Zrzut ekranu przedstawiający stronę Modele z wyróżnioną opcją Ustawienia modelu.](../media/content-understanding/sensitivity-model-settings.png)
 
-2. W **okienku Ustawienia** modelu w sekcji  Zgodność **wybierz menu** Etykieta wrażliwości, aby wyświetlić listę dostępnych etykiet wrażliwości, które możesz zastosować do modelu.
+2. W okienku **Ustawienia modelu** w sekcji **Zgodność** wybierz menu **Etykieta poufności** , aby wyświetlić listę etykiet poufności, które są dostępne do zastosowania do modelu.
 
-   ![Zrzut ekranu przedstawiający okienko Ustawienia modelu z menu etykiet wrażliwości.](../media/content-understanding/sensitivity-model-settings-pane.png) 
+   ![Zrzut ekranu przedstawiający okienko Ustawienia modelu z menu etykiet poufności.](../media/content-understanding/sensitivity-model-settings-pane.png) 
 
-3. Wybierz etykietę wrażliwości, którą chcesz zastosować do modelu, a następnie wybierz pozycję **Zapisz**.
+3. Wybierz etykietę poufności, którą chcesz zastosować do modelu, a następnie wybierz pozycję **Zapisz**.
 
-Po zastosowaniu etykiety wrażliwości do modelu możesz zastosować ją do:
+Po zastosowaniu etykiety poufności do modelu można zastosować ją do:
 
 - Nowa biblioteka dokumentów
-- Biblioteka dokumentów, do której został już zastosowany model
+- Biblioteka dokumentów, do której model jest już zastosowany
  
-### <a name="apply-the-sensitivity-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Stosowanie etykiety wrażliwości do biblioteki dokumentów, do której został już zastosowany model
+### <a name="apply-the-sensitivity-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Stosowanie etykiety poufności do biblioteki dokumentów, do której model jest już zastosowany
 
-Jeśli model rozumienia dokumentu został już zastosowany do biblioteki dokumentów, możesz wykonać następujące czynności w celu zsynchronizowania aktualizacji etykiet wrażliwości w celu zastosowania go do biblioteki dokumentów:
+Jeśli model interpretacji dokumentów został już zastosowany do biblioteki dokumentów, możesz wykonać następujące czynności, aby zsynchronizować aktualizację etykiety poufności, aby zastosować ją do biblioteki dokumentów:
 
-1. Na stronie głównej modelu w sekcji **Biblioteki z tym modelem** wybierz bibliotekę dokumentów, do której chcesz zastosować aktualizację etykiety wrażliwości.
+1. Na stronie głównej modelu w sekcji **Biblioteki z tym modelem** wybierz bibliotekę dokumentów, do której chcesz zastosować aktualizację etykiet poufności.
 
-2. Wybierz **pozycję Synchronizuj**.
+2. Wybierz pozycję **Synchronizuj**.
 
-   ![Zrzut ekranu przedstawiający biblioteki z sekcją tego modelu z wyróżniona synchronizować.](../media/content-understanding/sensitivity-libraries-sync.png)
+   ![Zrzut ekranu przedstawiający biblioteki z tą sekcją modelu z wyróżnioną pozycją Synchronizuj.](../media/content-understanding/sensitivity-libraries-sync.png)
 
-Po zastosowaniu aktualizacji i zsynchronizowaniu jej z modelem możesz potwierdzić jej zastosowanie, wykonując następujące czynności:
+Po zastosowaniu aktualizacji i zsynchronizowania jej z modelem możesz potwierdzić, że została ona zastosowana, wykonując następujące kroki:
 
-1. W centrum zawartości w sekcji **Biblioteki z tym modelem** wybierz bibliotekę, do której zastosowano zaktualizowany model. 
+1. W centrum zawartości w sekcji **Biblioteki z tym modelem** wybierz bibliotekę, do której został zastosowany zaktualizowany model. 
 
 2. W widoku biblioteki dokumentów wybierz ikonę informacji, aby sprawdzić właściwości modelu.
 
-3. Na liście **Aktywne** modele wybierz zaktualizowany model.
+3. Na liście **Aktywne modele** wybierz zaktualizowany model.
 
-4. W **sekcji Etykieta** wrażliwości zobaczysz nazwę zastosowanej etykiety wrażliwości.
+4. W sekcji **Etykieta poufności** zobaczysz nazwę zastosowanej etykiety poufności.
 
-Na stronie widoku modelu w bibliotece dokumentów zostanie wyświetlana **nowa kolumna** etykiety wrażliwości. Gdy model klasyfikuje pliki jako należące do swojego typu zawartości i wyświetla je w widoku biblioteki, w kolumnie Etykieta wrażliwości  będzie również wyświetlana nazwa etykiety wrażliwości, która została do niej zastosowana za pośrednictwem modelu.
+Na stronie widoku modelu w bibliotece dokumentów zostanie wyświetlona nowa kolumna **etykiety poufności** . Ponieważ model klasyfikuje pliki, które identyfikuje jako należące do jego typu zawartości, i wyświetla je w widoku biblioteki, kolumna **Etykieta poufności** będzie również wyświetlać nazwę etykiety poufności, która została do niej zastosowana za pośrednictwem modelu.
 
-Na przykład do wszystkich dokumentów finansowych, które identyfikuje Twój model, zastosowano do nich  etykietę wrażliwości Encryption, aby uniemożliwić dostęp do nich nieautoryzowanym osobom. Jeśli próbowano uzyskać dostęp do pliku z biblioteki dokumentów przez nieautoryzowaną osobę, zostanie wyświetlany komunikat o błędzie z informacją, że nie jest on dozwolony z powodu zastosowanej etykiety wrażliwości.
+Na przykład wszystkie dokumenty finansowe, które identyfikuje model, również będą miały zastosowaną etykietę poufności *szyfrowania* , co uniemożliwi dostęp do nich osobom nieupoważnionym. Jeśli zostanie podjęta próba uzyskania dostępu do pliku z biblioteki dokumentów przez nieautoryzowaną osobę, zostanie wyświetlony błąd informujący, że jest on niedozwolony ze względu na zastosowaną etykietę poufności.
 
 <!---
 ## Add a sensitivity label to a form processing model
 
 > [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../business-premium/m365bp-set-up-compliance.md).
+> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
 
 You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
 
@@ -123,6 +123,6 @@ You can add a sensitivity label to an existing form processing model that you ow
 
 [Tworzenie klasyfikatora](create-a-classifier.md)
 
-[Tworzenie wyodrębnianego](create-an-extractor.md)
+[Tworzenie wyodrębniacza](create-an-extractor.md)
 
-[Omówienie opisów dokumentów](document-understanding-overview.md)
+[Omówienie usługi Document Understanding](document-understanding-overview.md)

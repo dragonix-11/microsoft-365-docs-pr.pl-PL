@@ -1,5 +1,5 @@
 ---
-title: Ładowanie danych nie Microsoft 365 do zestawu recenzji
+title: Ładowanie danych innych niż Microsoft 365 do zestawu przeglądów
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,32 +14,32 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak zaimportować dane Microsoft 365 do zestawu recenzji do analizy w przypadku Advanced eDiscovery przypadku.
+description: Dowiedz się, jak zaimportować dane inne niż Microsoft 365 do zestawu przeglądów do analizy w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39f91846e42bb2403c2b1faf7fd98ff3e7759182
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: b9d27e2d1e306c189aa28a2c331a60c5b4d0c5dc
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010413"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944750"
 ---
-# <a name="load-non-microsoft-365-data-into-a-review-set"></a>Ładowanie danych nie Microsoft 365 do zestawu recenzji
+# <a name="load-non-microsoft-365-data-into-a-review-set"></a>Ładowanie danych innych niż Microsoft 365 do zestawu przeglądów
 
-Nie wszystkie dokumenty, które należy analizować w programie Advanced eDiscovery znajdują się w Microsoft 365. Dzięki funkcji importowania Microsoft 365 danych w programie Advanced eDiscovery możesz przekazywać dokumenty, które nie znajdują się w tym Microsoft 365 do zestawu recenzji. W tym artykule pokazano, jak wprowadzić dokumenty niezwiązy Microsoft 365 do Advanced eDiscovery analizy.
+Nie wszystkie dokumenty, które należy przeanalizować w usłudze Microsoft Purview eDiscovery (Premium), znajdują się w Microsoft 365. Dzięki funkcji importowania danych innych niż Microsoft 365 w funkcji zbierania elektronicznych materiałów dowodowych (Premium) można przekazać dokumenty, które nie znajdują się w Microsoft 365, do zestawu przeglądów. W tym artykule przedstawiono sposób przenoszenia dokumentów innych niż Microsoft 365 do zbierania elektronicznych materiałów dowodowych (Premium) na potrzeby analizy.
 
-## <a name="requirements-to-upload-non-office-365-content"></a>Wymagania dotyczące przekazywania zawartości Office 365 zawartości
+## <a name="requirements-to-upload-non-office-365-content"></a>Wymagania dotyczące przekazywania zawartości innej niż Office 365
 
-Aby korzystać z funkcji przekazywania niezwiązywistej Microsoft 365 opisanej w tym artykule, wymagane są następujące elementy:
+Użycie funkcji przekazywania Microsoft 365 opisanej w tym artykule wymaga posiadania następujących elementów:
 
-- Wszystkim opiekunom, którym chcesz skojarzyć zawartość niezwiązywoną Microsoft 365, należy przypisać odpowiednią licencję. Aby uzyskać więcej informacji, zobacz [Wprowadzenie do Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+- Wszystkim opiekunom, do których chcesz skojarzyć zawartość inną niż Microsoft 365, musi zostać przypisana odpowiednia licencja. Aby uzyskać więcej informacji, zobacz [Wprowadzenie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-- Istniejąca Advanced eDiscovery przypadku.
+- Istniejący przypadek zbierania elektronicznych materiałów dowodowych (Premium).
 
-- Aby można było przekazywać i skojarzyć dane, które nie Microsoft 365 do sprawy, należy je dodać do sprawy.
+- Opiekunowie muszą zostać dodani do sprawy, aby można było przekazać i skojarzyć z nimi dane inne niż Microsoft 365.
 
-- Dane inne Microsoft 365 muszą być typami plików obsługiwanymi przez Advanced eDiscovery. Aby uzyskać więcej informacji, zobacz [Obsługiwane typy plików Advanced eDiscovery](supported-filetypes-ediscovery20.md).
+- Dane inne niż Microsoft 365 muszą być typem pliku obsługiwanym przez funkcję zbierania elektronicznych materiałów dowodowych (Premium). Aby uzyskać więcej informacji, zobacz [Obsługiwane typy plików w usłudze eDiscovery (Premium)](supported-filetypes-ediscovery20.md).
 
-- Wszystkie pliki przekazane do zestawu recenzji muszą znajdować się w folderach, w których każdy folder jest skojarzony z określoną skojarzoną skojarzoną z nim skojarzoną z określoną folderem. Nazwy tych folderów muszą mieć następujący format nazewnictwa: nazwa *alias@domainname*. Ta alias@domainname musi być aliasem Microsoft 365 domeny i aliasem użytkownika. Możesz zebrać wszystkie foldery alias@domainname w folderze głównym. Folder główny może zawierać tylko foldery alias@domainname foldery. Luźne pliki w folderze głównym nie są obsługiwane.
+- Wszystkie pliki przekazane do zestawu przeglądów muszą znajdować się w folderach, w których każdy folder jest skojarzony z określonym opiekunem. Nazwy tych folderów muszą używać następującego formatu nazewnictwa: *alias@domainname*. Alias@domainname musi być aliasem i domeną Microsoft 365 użytkownika. Możesz zebrać wszystkie foldery alias@domainname w folderze głównym. Folder główny może zawierać tylko foldery alias@domainname. Luźne pliki w folderze głównym nie są obsługiwane.
 
    Struktura folderów dla danych innych niż Microsoft 365, które chcesz przekazać, będzie podobna do poniższego przykładu:
 
@@ -47,54 +47,54 @@ Aby korzystać z funkcji przekazywania niezwiązywistej Microsoft 365 opisanej w
    - c:\nonO365\jewell.gordon@contoso.com
    - c:\nonO365\staci.gonzalez@contoso.com
 
-   Jeśli abraham.mcmahon@contoso.com, jewell.gordon@contoso.com i staci.gonzalez@contoso.com to adresy SMTP adresatów w tym przypadku.
+   Gdzie abraham.mcmahon@contoso.com, jewell.gordon@contoso.com i staci.gonzalez@contoso.com są adresami SMTP opiekunów w tej sprawie.
 
-   ![Nie Microsoft 365 struktury folderów przekazywania danych.](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+   ![Struktura folderów przekazywania danych innych niż Microsoft 365.](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
-- Konto przypisane do grupy ról Menedżer zbierania elektronicznych materiałów dowodowych (i dodane jako administrator zbierania elektronicznych materiałów dowodowych).
+- Konto przypisane do grupy ról menedżera zbierania elektronicznych materiałów dowodowych (i dodane jako administrator zbierania elektronicznych materiałów dowodowych).
 
-- Narzędzie AzCopy w wersji 8.1 zainstalowane na komputerze, który ma dostęp do struktury Microsoft 365 zawartości. Aby zainstalować aplikację AzCopy, zobacz [Przenoszenie danych za pomocą programu AzCopy w wersji 8.1 na Windows](/previous-versions/azure/storage/storage-use-azcopy). Pamiętaj, aby zainstalować narzędzie AzCopy w lokalizacji domyślnej **: %ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. Należy użyć programu AzCopy w wersji 8.1. Inne wersje programu AzCopy mogą nie działać podczas ładowania danych innych niż Microsoft 365 w programie Advanced eDiscovery.
+- Narzędzie AzCopy v8.1 zainstalowane na komputerze, który ma dostęp do struktury folderów zawartości innych niż Microsoft 365. Aby zainstalować narzędzie AzCopy, zobacz [Transfer data with the AzCopy v8.1 on Windows (Transferowanie danych za pomocą narzędzia AzCopy w wersji 8.1 na Windows](/previous-versions/azure/storage/storage-use-azcopy)). Pamiętaj, aby zainstalować narzędzie AzCopy w lokalizacji domyślnej, czyli **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. Należy użyć narzędzia AzCopy w wersji 8.1. Inne wersje narzędzia AzCopy mogą nie działać podczas ładowania danych innych niż Microsoft 365 w usłudze eDiscovery (Premium).
 
 
-## <a name="upload-non-microsoft-365-content-into-advanced-ediscovery"></a>Upload zawartości, która nie Microsoft 365, do Advanced eDiscovery
+## <a name="upload-non-microsoft-365-content-into-ediscovery-premium"></a>Upload zawartość bez Microsoft 365 do zbierania elektronicznych materiałów dowodowych (Premium)
 
-1. Jako administrator zbierania elektronicznych materiałów dowodowych lub menedżer zbierania elektronicznych materiałów dowodowych otwórz Advanced eDiscovery i przejdź do sprawy, do Microsoft 365 dane, które nie zostaną przekazane.  
+1. Jako menedżer zbierania elektronicznych materiałów dowodowych lub administrator zbierania elektronicznych materiałów dowodowych otwórz narzędzie eDiscovery (Premium) i przejdź do sytuacji, w których dane inne niż Microsoft 365 zostaną przekazane.  
 
-2. Kliknij **pozycję Zestawy** recenzji, a następnie wybierz zestaw recenzji, aby przekazać do Microsoft 365 dane bez recenzji.  Jeśli nie masz zestawu recenzji, możesz go utworzyć. 
+2. Kliknij **pozycję Przejrzyj zestawy**, a następnie wybierz zestaw przeglądów, do który chcesz przekazać dane inne niż Microsoft 365.  Jeśli nie masz zestawu przeglądów, możesz go utworzyć. 
  
-3. Otwórz zestaw recenzji, klikając go lub zaznaczając i klikając pozycję **Otwórz zestaw recenzji**.
+3. Otwórz zestaw przeglądów, klikając go lub wybierając go i klikając pozycję **Otwórz zestaw recenzji**.
 
-4. W zestawie recenzji **kliknij pozycję Zarządzaj** zestawem recenzji (strzałka w dół zaraz  za opcją Akcje), a następnie kliknij opcję Dane Office 365 **inne**.
+4. W zestawie przeglądów kliknij pozycję **Zarządzaj zestawem przeglądów** (strzałka w dół tuż po opcji **Akcje**), a następnie kliknij opcję **Dane inne niż Office 365**.
 
-5. Kliknij **Upload,** aby uruchomić kreatora importu danych.
+5. Kliknij **Upload plików**, aby uruchomić kreatora importu danych.
 
    ![Upload plików.](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-   Pierwszy krok kreatora tworzy bezpieczną lokalizację przekazywania plików Storage platformy Azure podaną przez firmę Microsoft.  Po zakończeniu przygotowywania przycisk Następne **: Upload pliki** stanie się aktywny.
+   Pierwszy krok w kreatorze przygotowuje bezpieczną lokalizację Storage platformy Azure dostarczoną przez firmę Microsoft do przekazania plików.  Po zakończeniu przygotowywania przycisk **Dalej: Upload plików** staje się aktywny.
 
-   ![Inne niż Microsoft 365 Importowanie: Przygotowywanie.](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![Importowanie bez Microsoft 365: Przygotowanie.](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 5. Kliknij **przycisk Dalej: Upload pliki**.
 
-6. Na **stronie Upload plików** wykonaj następujące czynności:
+6. Na stronie **plików Upload** wykonaj następujące czynności:
 
-   ![Inne niż Microsoft 365 Importowanie: Upload pliki.](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![Niezaimportuj Microsoft 365: pliki Upload.](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   a. W **polu Ścieżka do lokalizacji** plików sprawdź lub wpisz lokalizację folderu głównego, w którym są przechowywane dane, które nie Microsoft 365 przekazać. Na przykład dla lokalizacji plików przykładowych pokazanych w sekcji Przed rozpoczęciem wpisz **%USERPROFILE\Downloads\no365**. Podanie odpowiedniej lokalizacji zapewnia, że polecenie AzCopy wyświetlane w polu pod ścieżką jest poprawnie aktualizowane.
+   a. W polu **Ścieżka do lokalizacji plików** sprawdź lub wpisz lokalizację folderu głównego, w którym przechowywane są dane inne niż Microsoft 365, które chcesz przekazać. Na przykład dla lokalizacji przykładowych plików pokazanych w **sekcji Przed rozpoczęciem** wpisz **%USERPROFILE\Downloads\nonO365**. Podanie prawidłowej lokalizacji zapewnia poprawną aktualizację polecenia AzCopy wyświetlanego w polu pod ścieżką.
 
-   b. Kliknij **pozycję Kopiuj do schowka** , aby skopiować polecenie wyświetlane w polu.
+   b. Kliknij **pozycję Kopiuj do schowka** , aby skopiować polecenie wyświetlane w polu .
 
-7. Uruchom wiersz Windows polecenia, wklej polecenie skopiowane w poprzednim kroku, a następnie naciśnij klawisz **Enter**, aby uruchomić polecenie AzCopy.  Po uruchomieniu polecenia pliki, które nie Microsoft 365, zostaną przekazane do lokalizacji usługi Azure Storage przygotowanej w kroku 4.
+7. Uruchom wiersz polecenia Windows, wklej polecenie skopiowane w poprzednim kroku, a następnie naciśnij **klawisz Enter**, aby uruchomić polecenie AzCopy.  Po uruchomieniu polecenia pliki inne niż Microsoft 365 zostaną przekazane do lokalizacji Storage platformy Azure przygotowanej w kroku 4.
 
-   ![Inne niż Microsoft 365 import: AzCopy.](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   ![Importowanie bez Microsoft 365: AzCopy.](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > Jak wspomniano wcześniej, należy użyć programu AzCopy w wersji 8.1, aby pomyślnie użyć polecenia podanego na Upload **plikach**. Jeśli podane polecenie AzCopy nie powiedzie się, zobacz Rozwiązywanie [problemów z azCopy w programie Advanced eDiscovery](troubleshooting-azcopy.md).
+   > Jak wspomniano wcześniej, należy użyć narzędzia AzCopy w wersji 8.1, aby pomyślnie użyć polecenia udostępnionego na stronie **Upload plików**. Jeśli podane polecenie narzędzia AzCopy nie powiedzie się, zobacz [Rozwiązywanie problemów z narzędziem AzCopy w sekcji eDiscovery (Premium)](troubleshooting-azcopy.md).
 
-8. Wróć do menu Centrum zgodności platformy Microsoft 365 i kliknij przycisk **Dalej: Przetwarzaj pliki** w kreatorze.  Inicjuje to przetwarzanie, wyodrębnianie tekstu i indeksowanie plików innych niż Microsoft 365, które zostały przekazane do lokalizacji usługi Azure Storage danych.  
+8. Wstecz do portalu zgodności usługi Microsoft Purview, a następnie kliknij przycisk **Dalej: Przetwarzanie plików** w kreatorze.  Inicjuje to przetwarzanie, wyodrębnianie tekstu i indeksowanie plików innych niż Microsoft 365, które zostały przekazane do lokalizacji usługi Azure Storage.  
 
-9. Śledź postęp przetwarzania plików na stronie Proces plików  lub na karcie Zadania, wyświetlając zadanie o nazwie Dodawanie danych innych niż Microsoft 365 do **zestawu recenzji**.  Po zakończeniu zadania nowe pliki będą dostępne w zestawie recenzji.
+9. Śledź postęp przetwarzania plików na stronie **Przetwarzanie plików** lub na karcie **Zadania**, wyświetlając zadanie o nazwie **Dodawanie danych innych niż Microsoft 365 do zestawu przeglądów**.  Po zakończeniu zadania nowe pliki będą dostępne w zestawie przeglądów.
 
-   ![Inne niż Microsoft 365 Importowanie: przetwarzaj pliki.](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+   ![Importowanie bez Microsoft 365: przetwarzanie plików.](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
 10. Po zakończeniu przetwarzania możesz zamknąć kreatora.

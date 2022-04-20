@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie działaniami udoskonalania za pomocą Menedżera zgodności
+title: Zarządzanie akcjami poprawy za pomocą Menedżera zgodności
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
@@ -16,87 +16,87 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: admindeeplinkCOMPLIANCE
-description: Dowiedz się, jak korzystać z wyników zgodności i Menedżera zgodności w celu poprawy poziomu ochrony danych osobowych.
-ms.openlocfilehash: 5a655d504551e42398cdabbcf7a3f651d788c0ad
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+description: Dowiedz się, jak zwiększyć poziom ochrony danych osobowych za pomocą Menedżera oceny zgodności i zgodności.
+ms.openlocfilehash: 469584abbf784fe6c556aab14a49a5ed44280a69
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990497"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947456"
 ---
-# <a name="use-compliance-manager-to-manage-improvement-actions"></a>Zarządzanie działaniami udoskonalania za pomocą Menedżera zgodności
+# <a name="use-compliance-manager-to-manage-improvement-actions"></a>Zarządzanie akcjami poprawy za pomocą Menedżera zgodności
 
-Menedżer zgodności firmy Microsoft może ułatwić zarządzanie ulepszeniami dotyczącymi przepisów o ochronie prywatności danych, takich jak Ogólne Rozporządzenie o Ochronie Danych [(](/compliance/regulatory/gdpr)RODO) Unii Europejskiej, california [Consumer Protection Act HIPAA),](/compliance/regulatory/ccpa-faq) HIPAA-HITECH (us health care privacy act) oraz brazylijskiej ustawy o ochronie danych (LGPD).
+Menedżer zgodności usługi Microsoft Purview może pomóc w zarządzaniu ulepszeniami związanymi z przepisami dotyczącymi prywatności danych, takimi jak [ogólne rozporządzenie o ochronie danych w Unii Europejskiej (RODO),](/compliance/regulatory/gdpr) [california consumer protection act CCPA),](/compliance/regulatory/ccpa-faq) HIPAA-HITECH (us health care privacy act) i Brazil Data Protection Act (LGPD).
 
-Ten artykuł zawiera wskazówki dotyczące używania tego narzędzia w celu ochrony prywatności danych.
+Ten artykuł zawiera wskazówki dotyczące korzystania z tego narzędzia do celów ochrony prywatności danych.
 
 > [!NOTE]
-> Rekomendacje Menedżera zgodności nie należy interpretować jako gwarancji zgodności. Ocena i weryfikacja skuteczności kontroli klienta w środowisku wymogów prawnych należy do Użytkownika. Te usługi podlegają regulaminom i regulaminom usług [online](https://go.microsoft.com/fwlink/?linkid=2108910). Zobacz też [Microsoft 365 licencjonowania w zakresie zabezpieczeń i zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+> Rekomendacje programu Compliance Manager nie powinny być interpretowane jako gwarancja zgodności. Do Ciebie należy ocena i weryfikowanie skuteczności kontroli klientów w danym środowisku regulacyjnym. Te usługi podlegają warunkom i postanowień [w Warunkach świadczenia usług online](https://go.microsoft.com/fwlink/?linkid=2108910). Zobacz również [Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zabezpieczeń i zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
-## <a name="getting-started-with-compliance-manager"></a>Wprowadzenie do Menedżera zgodności
+## <a name="getting-started-with-compliance-manager"></a>Wprowadzenie do programu Compliance Manager
 
 #### <a name="what-is-compliance-manager"></a>Co to jest Menedżer zgodności
 
-[Menedżer zgodności to](../compliance/compliance-manager.md) narzędzie do oceny ryzyka oparte na przepływie pracy w usłudze Centrum zgodności platformy Microsoft 365 zarządzania działaniami związanymi ze zgodnością z przepisami związanymi z usługami firmy Microsoft w chmurze. W ramach subskrypcji usługi Microsoft 365 lub Azure Active Directory (Azure AD) Menedżer zgodności ułatwia zarządzanie zgodnością z przepisami w modelu współodpowiedzialność za usługi w chmurze firmy Microsoft.
+[Menedżer zgodności](../compliance/compliance-manager.md) to oparte na przepływie pracy narzędzie do oceny ryzyka w portalu zgodności usługi Microsoft Purview do zarządzania działaniami zgodności z przepisami związanymi z usługami firmy Microsoft w chmurze. W ramach subskrypcji Microsoft 365 lub Azure Active Directory (Azure AD) menedżer zgodności ułatwia zarządzanie zgodnością z przepisami w ramach modelu wspólnej odpowiedzialności za usługi w chmurze firmy Microsoft.
 
-**Gotowe do użycia ocen**
+**Gotowe do użycia oceny**
 
-Menedżer zgodności udostępnia wstępnie zbudowane szablony do tworzenia [](../compliance/compliance-manager-assessments.md) ocen zgodnych z przepisami związanymi z prywatnością danych, takimi jak RODO i HIPAA/HITECH. Szablony mają wbudowane mapowanie kontrolek, które ułatwiają działania usprawnianie w zakresie spełniania wymagań przepisów. Każda ocena zawiera informacje na temat kontroli, za pomocą których poszczególne przepisy określa się w poszczególnych usługach docelowych, podzielone na kontrolki, które zarządzasz i kontrolami zarządza firma Microsoft.
+Menedżer zgodności udostępnia wstępnie utworzone szablony do [kompilowania ocen](../compliance/compliance-manager-assessments.md) , które są dostosowane do przepisów dotyczących prywatności danych, takich jak RODO i HIPAA/HITECH. Szablony mają wbudowane mapowanie kontroli, które ułatwiają podjęcie działań ulepszeń w celu spełnienia wymagań rozporządzenia. Każda ocena zawiera informacje na temat mechanizmów kontroli, które każde rozporządzenie wywołuje dla konkretnej usługi docelowej, wydzierżawane przez mechanizmy kontroli zarządzane przez firmę Microsoft i zarządza nimi.
 
-Używanie wbudowanego szablonu ułatwia szybkie rozpoczynanie oceny ryzyka. Gdy stajesz się bardziej ekspertem w zakresie korzystania z Menedżera zgodności, możesz dostosować wstępnie wbudowany szablon, dodając własne kontrolki i akcje udoskonalania lub tworzyć własne niestandardowe oceny dopasowane do potrzeb organizacji.
+Użycie wstępnie utworzonego szablonu ułatwia szybkie rozpoczęcie oceny ryzyka. W miarę jak stajesz się bardziej biegły w korzystaniu z Menedżera zgodności, możesz dostosować wstępnie utworzony szablon, dodając własne kontrolki i akcje ulepszania lub możesz tworzyć własne niestandardowe oceny zgodnie z potrzebami organizacji.
 
-Wyświetl pełną [listę szablonów oceniań dostarczonych](../compliance/compliance-manager-templates-list.md) przez Menedżera zgodności.
+Wyświetl [pełną listę szablonów oceny dostarczonych](../compliance/compliance-manager-templates-list.md) przez menedżera zgodności.
 
-**Wynik zgodności w czasie rzeczywistym**
+**Ocena zgodności w czasie rzeczywistym**
 
-Menedżer zgodności udostępnia również ocenę zgodności, która mierzy postęp wykonywania zalecanych działań udoskonalania w ramach kontrolek. Na podstawie tej oceny można monitorować postęp i priorytetyzować akcje na podstawie ich możliwości zmniejszenia ryzyka.
+Menedżer zgodności zapewnia również ocenę zgodności, która mierzy postęp w wykonywaniu zalecanych akcji poprawy w ramach kontrolek. Możesz użyć tego wyniku, aby pomóc w monitorowaniu postępu i określaniu priorytetów akcji na podstawie ich potencjału w celu zmniejszenia ryzyka.
 
-#### <a name="use-the-compliance-manager-quickstart-guide"></a>Korzystanie z przewodnika Szybki start dla menedżera zgodności
+#### <a name="use-the-compliance-manager-quickstart-guide"></a>Korzystanie z przewodnika Szybki start dotyczącego menedżera zgodności
 
-Przewodnik [Szybki start menedżera zgodności udostępnia](../compliance/compliance-manager-quickstart.md) stopniowe etapy oraz linki do kluczowych zasobów, które ułatwiają pracę z Menedżerem zgodności:
+Przewodnik [Szybki start dotyczący menedżera zgodności](../compliance/compliance-manager-quickstart.md) zawiera stopniowane kroki i linki do kluczowych zasobów ułatwiających pracę z Menedżerem zgodności:
 
-- [Pierwsza wizyta: zapoznanie się z Menedżerem zgodności](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
-    - Praca z pulpitem nawigacyjnym Menedżera zgodności
-    - Opis wyniku w zakresie zgodności
-    - Edukacja o działaniach udoskonalania
-    - Opis formularzy oceniania i szablonów
-- [Rozszerz: konfigurowanie Menedżera zgodności w celu zarządzania działaniami zgodności](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
+- [Pierwsza wizyta: zapoznanie się z menedżerem zgodności](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
+    - Praca z pulpitem nawigacyjnym programu Compliance Manager
+    - Omówienie oceny zgodności
+    - Edukacja o akcjach ulepszania
+    - Omówienie ocen i szablonów
+- [Zwiększanie poziomu: konfigurowanie menedżera zgodności w celu zarządzania działaniami dotyczącymi zgodności](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - Tworzenie pierwszej oceny i zarządzanie nimi
-    - Wykonywanie prac implementacji i testów nad działaniami udoskonalania w celu ukończenia kontroli w testach
+    - Wykonywanie prac związanych z implementacją i testowaniem akcji poprawy w celu ukończenia kontroli w ocenach
     - Opis wpływu różnych akcji na wynik zgodności
-- [Skalowanie: korzystanie z zaawansowanych funkcji w celu zaspokojenia potrzeb niestandardowych](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Tworzenie niestandardowych formularzy oceniania w celu śledzenia Microsoft 365 produktów
-    - Modyfikowanie istniejących szablonów w celu dodania lub usunięcia kontrolek
-    - Konfigurowanie automatycznego testowania działań udoskonalania
+- [Skalowanie w górę: korzystanie z zaawansowanych funkcji w celu spełnienia niestandardowych potrzeb](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
+    - Tworzenie niestandardowych ocen w celu śledzenia produktów innych niż Microsoft 365
+    - Modyfikowanie istniejących szablonów w celu dodawania lub usuwania kontrolek
+    - Konfigurowanie zautomatyzowanego testowania akcji poprawy
 
-## <a name="how-your-compliance-score-is-calculated"></a>Sposób obliczania wyniku zgodności
+## <a name="how-your-compliance-score-is-calculated"></a>Dowiedz się, jak jest obliczany wskaźnik zgodności
 
-Twój wynik zgodności jest obliczany na podstawie kombinacji implementacji firmy Microsoft i implementacji kontroli zarządzanej przez klienta. Zobacz [obliczanie wyników zgodności,](../compliance/compliance-score-calculation.md) aby uzyskać szczegółowe objaśnienie.
+Wynik zgodności jest obliczany na podstawie kombinacji implementacji kontroli zarządzanej przez firmę Microsoft i klienta. Aby uzyskać szczegółowe objaśnienie, zobacz [obliczanie wskaźnika zgodności](../compliance/compliance-score-calculation.md) .
 
-Kontrolkom przypisywana jest wartość wyniku na podstawie tego, czy są one obowiązkowe, czy dyskrecjonalne, oraz od tego, czy mają one charakter uniemożliwiający, deklarowany lub korygający. Stanowią one zbiorczo ryzyko, że nie zostanie ono zaimplementowane względem innych kontrolek.
+Kontrolki są przypisywane do wartości oceny na podstawie tego, czy są one obowiązkowe, czy uznaniowe, oraz czy są prewencyjne, detektywistyczne czy naprawcze. Łącznie stanowią one ryzyko niewdrożeń go w stosunku do innych mechanizmów kontroli.
 
-Jak przedstawiono w artykule obliczania wyników zgodności, kontrolki zapobiegające uzyskać wyższą ocenę niż kontrolki wykrywające i poprawiające, a kontrolki obowiązkowe mają wyższą ocenę niż kontrolki dyskrecjonalne.
+Jak przedstawiono w artykule obliczania oceny zgodności, kontrole zapobiegawcze otrzymują wyższy wynik niż kontrole detektywistyczne i naprawcze, a obowiązkowe mechanizmy kontroli otrzymują wyższą ocenę niż kontrole uznaniowe.
 
-Interfejs użytkownika administratora wyników zgodności nie zawiera listy tych parametrów ani nie umożliwia filtrowania według nich. Jednak w przypadku pobrania skojarzonego szablonu z Menedżera zgodności zestaw danych wynikowy zawiera listę tych parametrów dla większości przepisów.
+Interfejs użytkownika administratora wyniku zgodności nie zawiera listy tych parametrów ani nie zapewnia możliwości filtrowania według nich. Jeśli jednak pobierzesz skojarzony szablon z Menedżera zgodności, wynikowe zestawy danych będą wyświetlać te parametry dla większości przepisów.
 
-W przypadku kontroli technicznej Menedżer zgodności automatycznie aktualizuje wynik działania udoskonalania po pomyślnym wdrożeniu i przetestowaniu akcji. Inne działania niezwiązyane&mdash;&mdash; z kontrolą techniczną, takie jak działania operacyjne lub związane z dokumentacją, które muszą być rejestrowane ręcznie jako zaimplementowane, zanim punkty będą liczone w wyniku.
+W przypadku kontroli technicznych menedżer zgodności automatycznie aktualizuje wynik akcji poprawy po pomyślnym zaimplementowaniu i przetestowaniu akcji. Inne, nietechnologiczne akcje&mdash; kontroliuj jako te, które są operacyjne lub związane z dokumentacją&mdash;, które mają być rejestrowane ręcznie zgodnie z implementacją, zanim punkty będą wliczane do wyniku.
 
-Wiele osób&mdash;&mdash; wdraża również pewne działania udoskonalania do innych celów, na przykład za pomocą etykiet przechowywania w celach innych niż zgodność z przepisami dotyczącymi prywatności danych. Użytkownik otrzyma środki za korzystanie z takiej funkcji nawet w przypadku, gdy jest ona używana do innych celów, a nie w ramach rozmyślnej akcji zgodności.
+Wiele z nich implementuje również pewne akcje poprawy do innych celów&mdash;, na przykład przy użyciu etykiet przechowywania z powodów innych niż zgodność&mdash; z przepisami dotyczącymi prywatności danych, dzięki czemu można uzyskać środki za korzystanie z takiej funkcji, nawet jeśli jest ona używana do innych celów, a nie część celowej akcji zgodności.
 
-Twój wynik zgodności powinien być uznawany za miarę względną w celu śledzenia poprawy na szeroką skalę. Nie należy podysyłać idealnego wyniku.
+Wskaźnik zgodności należy uznać za miarę względną w celu śledzenia poprawy na szeroką skalę. Nie należy dążyć do doskonałego wyniku.
 
 ## <a name="additional-guidance"></a>Dodatkowe wskazówki
 
-Oto kilka ważnych porad dotyczących korzystania z Menedżera zgodności w celu zapewnienia zgodności z przepisami dotyczącymi prywatności danych:
+Poniżej przedstawiono kilka ważnych wskazówek dotyczących korzystania z Menedżera zgodności, które ułatwiają osiągnięcie zgodności z przepisami dotyczącymi prywatności danych:
 
-- Każde rozporządzenie o ochronie prywatności danych ma połączenie kontroli technicznej, specyfikacji dokumentacji oraz wymagań operacyjnych, procesów i raportowania. Wszystkie te działania są wyświetlane w działaniach udoskonalania.
+- Każda regulacja dotycząca prywatności danych ma kombinację mechanizmów kontroli technicznych, specyfikacji dokumentacji oraz wymagań operacyjnych, procesowych i raportowania. Wszystkie te elementy są wyświetlane w akcjach poprawy.
 
-- Aby skoncentrować się na działaniach udoskonalania w określonym obszarze, możesz filtrować według typu akcji na karcie Rozwiązania  w administracyjnym Menedżera zgodności. Dowiedz się więcej o [filtrowaniu widoku pulpitu nawigacyjnego Menedżera zgodności](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view).
+- Aby skoncentrować widok akcji ulepszania na obszar zainteresowania, możesz filtrować według typu akcji na karcie **Rozwiązania w administratorze** programu Compliance Manager. Dowiedz się więcej na temat [filtrowania widoku pulpitu nawigacyjnego programu Compliance Manager](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view).
 
-- Względna ważność i priorytet działań udoskonalania zidentyfikowanych w Menedżerze zgodności należy traktować jako część szerszego przeglądu ryzyka oraz ryzyka związanego z prywatnością danych, które musi zarządzać Twoja organizacja.
+- Względne znaczenie i priorytet akcji poprawy zidentyfikowanych w Menedżerze zgodności należy traktować jako część szerszego przeglądu ryzyka wraz z ryzykiem prywatności danych, którym organizacja musi zarządzać.
 
-- Nawet w przypadku doskonalenia agregacji działań w wielu wymaganiach prawnych, jeśli na przykład zaznaczono szablony oceny przepisów dotyczące RODO, LGPD, HIPAA i HIPAA-HITECH, w Menedżerze zgodności zostanie wymienionych niemal 400 działań usprawnień. Aby lepiej zająć się tą długą listą, użyj filtru akcji udoskonalania, aby zmniejszyć zestaw wyników do listy, która będzie lepiej zarządzana.
+- Nawet w przypadku agregacji akcji poprawy w wielu wymaganiach prawnych, jeśli zostaną wybrane szablony oceny przepisów dla RODO, LGPD, CCPA i HIPAA-HITECH, na przykład w Menedżerze zgodności zostanie wyświetlonych prawie 400 działań ulepszeń. Aby lepiej poradzić sobie z tą długą listą, użyj filtru akcji poprawy, aby zmniejszyć zestaw wyników do listy bardziej zarządzalnej.
 
-- Filtr Kategorie umożliwia filtrowanie akcji udoskonalania według grupowania logicznego, do którego są dostosowane artykuły Śledź, Chroń, Zachowaj i Badanie w ramach tego ogólnego rozwiązania.
+- Filtr Kategorie zapewnia sposób filtrowania akcji poprawy według grupowania logicznego, do którego pasują artykuły Śledź, Zapobiegaj, Chroń, Zachowaj i Zbadaj w tym ogólnym rozwiązaniu.
 
-- Niektóre kontrolki wymienione w działaniach udoskonalania można uznać za bardziej bezpośrednio powiązane z określonym artykułem regulacyjną, natomiast inne mechanizmy kontroli mogą być pośrednio związane z działaniem przepisów, a wielokrotnie są po prostu zalecanymi działaniami lub najlepszymi rozwiązaniami.
+- Niektóre z mechanizmów kontroli wymienionych w działaniach ulepszania można uznać za bardziej bezpośrednio powiązane z określonym artykułem regulacyjnym, podczas gdy inne mechanizmy kontroli mogą być bardziej pośrednio związane z duchem regulacji i wiele razy są po prostu zalecanymi działaniami lub najlepszymi rozwiązaniami.

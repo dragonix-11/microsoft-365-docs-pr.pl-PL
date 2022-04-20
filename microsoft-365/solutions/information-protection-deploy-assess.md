@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Określ przepisy dotyczące prywatności danych, odpowiednie scenariusze, gotowość i typy informacji poufnych, które znajdują się w środowisku Microsoft 365.
-ms.openlocfilehash: ea151577f31ad8ea9454addf171c1079f334d377
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 967c64dee2d99f41b3c2a1b6a193730dcd75811a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822699"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947522"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Ocena ryzyka związanego z prywatnością danych i identyfikowanie poufnych elementów przy użyciu Microsoft 365
 
@@ -192,11 +192,11 @@ Ten krok obejmuje identyfikację konkretnych typów informacji poufnych, które 
 
 Znajdowanie zawartości w środowisku zawierającym dane osobiste może być ogromnym zadaniem, które wcześniej wiąże się z połączeniem wyszukiwania zgodności, zbierania elektronicznych materiałów dowodowych, Advanced eDiscovery, DLP i inspekcji.
 
-Dzięki nowemu rozwiązaniu **do klasyfikacji danych** w centrum administracyjnym zgodności firmy Microsoft stało się to znacznie łatwiejsze dzięki funkcji [Eksploratora zawartości](../compliance/data-classification-content-explorer.md) , która współpracuje z wbudowanymi lub niestandardowymi typami informacji poufnych, w tym tymi dotyczącymi danych osobowych.
+Dzięki nowemu rozwiązaniu **do klasyfikacji danych** w portalu zgodności usługi Microsoft Purview stało się to znacznie łatwiejsze dzięki funkcji [Eksploratora zawartości](../compliance/data-classification-content-explorer.md) , która współpracuje z wbudowanymi lub niestandardowymi typami informacji poufnych, w tym tymi dotyczącymi danych osobowych.
 
 ### <a name="sensitive-information-types"></a>Typy informacji poufnych
 
-Centrum administracyjne zgodności firmy Microsoft zawiera wstępnie załadowanych ponad 100 typów informacji poufnych, z większością z nich związanych z identyfikowaniem i lokalizowaniem danych osobowych. Te wbudowane typy informacji poufnych mogą pomóc w identyfikowaniu i ochronie numerów kart kredytowych, numerów kont bankowych, numerów paszportów i innych, na podstawie wzorców zdefiniowanych przez wyrażenie regularne (regex) lub funkcję. Aby dowiedzieć się więcej, zobacz [Wyszukiwanie typów informacji poufnych](../compliance/sensitive-information-type-entity-definitions.md).
+Portal zgodności usługi Microsoft Purview zawiera wstępnie załadowanych ponad 100 poufnych typów informacji, z większością z nich związanych z identyfikowaniem i lokalizowaniem danych osobowych. Te wbudowane typy informacji poufnych mogą pomóc w identyfikowaniu i ochronie numerów kart kredytowych, numerów kont bankowych, numerów paszportów i innych, na podstawie wzorców zdefiniowanych przez wyrażenie regularne (regex) lub funkcję. Aby dowiedzieć się więcej, zobacz [Wyszukiwanie typów informacji poufnych](../compliance/sensitive-information-type-entity-definitions.md).
 
 Jeśli musisz zidentyfikować i chronić specyficzny dla organizacji lub regionalny typ poufnych elementów, na przykład niestandardowy format identyfikatorów pracowników lub inne dane osobowe, które nie są jeszcze objęte wbudowanym typem informacji poufnych, możesz utworzyć niestandardowy typ informacji poufnych przy użyciu następujących metod:
 
@@ -216,7 +216,7 @@ Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
 ### <a name="content-explorer"></a>Eksplorator zawartości
 
-Ważnym narzędziem do określania wystąpienia poufnych elementów w środowisku jest nowy [Eksplorator zawartości](../compliance/data-classification-content-explorer.md) w centrum administracyjnym zgodności Microsoft 365. Jest to zautomatyzowane narzędzie do początkowego i ciągłego skanowania całej subskrypcji Microsoft 365 pod kątem występowania typów informacji poufnych i wyświetlania wyników.
+Ważnym narzędziem do określania wystąpienia poufnych elementów w środowisku jest nowy [Eksplorator zawartości](../compliance/data-classification-content-explorer.md) w centrum administracyjnym usługi Microsoft Purview. Jest to zautomatyzowane narzędzie do początkowego i ciągłego skanowania całej subskrypcji Microsoft 365 pod kątem występowania typów informacji poufnych i wyświetlania wyników.
 
 Nowe narzędzie Eksploratora zawartości umożliwia szybkie identyfikowanie lokalizacji poufnych elementów w środowisku przy użyciu wbudowanych typów informacji poufnych lub niestandardowych. Może to obejmować ustanowienie procesu i przypisaną odpowiedzialność za regularne badanie obecności i lokalizacji poufnych elementów.
 

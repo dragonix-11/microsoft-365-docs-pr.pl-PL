@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika do archiwizowania danych z czerwonego Microsoft 365
+title: Konfigurowanie łącznika do archiwizowania danych Red tail Speak w Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,82 +11,82 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Administratorzy mogą skonfigurować łącznik w celu importowania i archiwizowania danych z wersji Veritas na Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizować te dane możesz zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak archiwizacja ze względu na przepisy prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 8c0e3c444bf285f951911a9de6e5ef3480eb6468
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych Red tail Speak z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
+ms.openlocfilehash: af568495cd7ee8b1bf003da71a4582462fbd5c4c
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321057"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950638"
 ---
-# <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Konfigurowanie łącznika do archiwizowania danych redtail Speak
+# <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Konfigurowanie łącznika do archiwizowania danych Redtail Speak
 
-Za pomocą łącznika veritas w skoroszycie Centrum zgodności platformy Microsoft 365 i zarchiwizować dane ze strony Redtail Speak do skrzynek pocztowych użytkowników w Microsoft 365 organizacji. Veritas zapewnia łącznik [Redtail Speak](https://globanet.com/redtail/) skonfigurowany do przechwytywania elementów z serwera SFTP organizacji, na którym elementy są odbierane z usługi Redtail. Łącznik konwertuje zawartość ze strony Redtail Speak na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w programie Microsoft 365.
+Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze skrzynek pocztowych Redtail Speak to user w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Redtail Speak](https://globanet.com/redtail/) skonfigurowany do przechwytywania elementów z serwera SFTP w organizacji, na którym elementy są odbierane z usługi Redtail. Łącznik konwertuje zawartość z funkcji Redtail Speak na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 
-Po zapisaniu danych funkcji Redtail Speak w skrzynkach pocztowych użytkowników można stosować funkcje zgodności Microsoft 365, takie jak zawieszenie w związku z postępowaniem sądowym, zbierania elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w programie Microsoft 365 za pomocą łącznika Redtail Speak może ułatwić organizacji zachowania zgodności z zasadami rządowymi i przepisami regulacyjną.
+Po zapisaniu danych Redtail Speak w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Za pomocą łącznika Redtail Speak do importowania i archiwizowania danych w Microsoft 365 może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
-## <a name="overview-of-archiving-the-redtail-speak-data"></a>Omówienie archiwizowania danych funkcji Redtail Speak
+## <a name="overview-of-archiving-the-redtail-speak-data"></a>Omówienie archiwizacji danych Redtail Speak
 
-W poniższym omówienia wyjaśniono proces używania łącznika do archiwizowania danych Funkcji Redtail Speak w programie Microsoft 365.
+W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania danych Redtail Speak w Microsoft 365.
 
-![Archiwizowanie przepływu pracy dla danych typu Szczegóły szczegóły.](../media/RedtailSpeakConnectorWorkflow.png)
+![Przepływ pracy archiwizacji danych Redtail Speak.](../media/RedtailSpeakConnectorWorkflow.png)
 
-1. Twoja organizacja współpracuje z programem Redtail Speak, aby skonfigurować bramę SMTP, w której wiadomości są codziennie przekazywane z programu Redtail Speak do serwera SFTP organizacji.
+1. Twoja organizacja współpracuje z firmą Redtail Speak w celu skonfigurowania i skonfigurowania bramy SMTP, w której codziennie komunikaty są przekazywane z aplikacji Redtail Speak do serwera SFTP w organizacji.
 
-2. Co 24 godziny elementy typu Redtail Speak są kopiowane do witryny Veritas Merge1. Łącznik konwertuje również elementy Redtail Speak na format wiadomości e-mail.
+2. Raz na 24 godziny elementy Redtail Speak są kopiowane do witryny Veritas Merge1. Łącznik konwertuje również elementy Redtail Speak na format wiadomości e-mail.
 
-3. Łącznik Redtail Speak tworzyć w usłudze Centrum zgodności platformy Microsoft 365 łączy się z witryną veritas merge1 każdego dnia i przesyła wiadomości do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
+3. Łącznik Redtail Speak tworzony w portalu zgodności codziennie łączy się z witryną Veritas Merge1 i przesyła komunikaty do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
 
-4. Łącznik zaim importuje przekonwertowane elementy Redtail Speak do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości *Email* automatycznego mapowania użytkowników zgodnie z opisem w [kroku 3](#step-3-map-users-and-complete-the-connector-setup). W skrzynkach pocztowych użytkowników zostanie utworzony podfolder w folderze Skrzynka odbiorcza o nazwie **Redtail Speak** , a elementy zostaną zaimportowane do tego folderu. Łącznik określa skrzynkę pocztową, do której mają być importowane elementy, przy użyciu wartości właściwości *Email* . Każdy element Redtail Speak zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika elementu.
+4. Łącznik importuje przekonwertowane elementy Redtail Speak do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości *Email* automatycznego mapowania użytkownika zgodnie z opisem w [kroku 3](#step-3-map-users-and-complete-the-connector-setup). Podfolder w folderze Skrzynka odbiorcza o nazwie **Redtail Speak** jest tworzony w skrzynkach pocztowych użytkownika, a elementy są importowane do tego folderu. Łącznik określa skrzynkę pocztową do zaimportowania elementów przy użyciu wartości właściwości *Poczta e-mail* . Każdy element Redtail Speak zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika elementu.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Utwórz konto korespondencji seryjnej Veritas merge1 dla łączników firmy Microsoft. Aby utworzyć konto, skontaktuj się z działem [obsługi klienta firmy Veritas](https://www.veritas.com/content/support/). Podczas tworzenia łącznika w kroku 1 należy zalogować się do tego konta.
+- Utwórz konto veritas merge1 dla łączników firmy Microsoft. Aby utworzyć konto, skontaktuj się z [pomocą techniczną veritas](https://www.veritas.com/content/support/). Musisz zalogować się do tego konta podczas tworzenia łącznika w kroku 1.
 
-- W kroku 2 należy określić serwer SFTP organizacji. Ten krok jest niezbędny, aby firma Veritas Merge1 była w stanie skontaktować się z tą usługą w celu zebrania danych o stronie Redtail Speak za pośrednictwem portalu SFTP.
+- W kroku 2 należy określić serwer SFTP organizacji. Ten krok jest niezbędny, aby veritas merge1 mógł skontaktować się z nim w celu zebrania danych Redtail Speak za pośrednictwem protokołu SFTP.
 
-- Użytkownik, który utworzy łącznik Redtail Speak Importer w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który tworzy łącznik redtail speak importera w kroku 1 (i kończy go w kroku 3) musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych usługi Veritas jest w publicznej wersji zapoznawczej GCC w środowisku danych Microsoft 365 chmurze dla instytucji rządowych Stanów Zjednoczonych. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Organizacji w systemach innych firm, które znajdują się poza infrastrukturą firmy Microsoft 365 i dlatego nie są objęte zobowiązaniami firmy Microsoft 365 w zakresie zgodności z przepisami i ochrony danych. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-the-redtail-speak-connector"></a>Krok 1. Konfigurowanie łącznika Redtail Speak
 
-Pierwszym krokiem jest uzyskanie dostępu do strony  Łączniki danych w Centrum zgodności platformy Microsoft 365 i utworzenie łącznika dla danych Redtail Speak.
+Pierwszym krokiem jest dostęp do strony **Łączniki danych** w portalu zgodności i utworzenie łącznika dla danych Redtail Speak.
 
-1. Przejdź do i [https://compliance.microsoft.com](https://compliance.microsoft.com/) wybierz pozycję **Redtail Speak łączników** &gt; danych.
+1. Przejdź do obszaru [https://compliance.microsoft.com](https://compliance.microsoft.com/) i wybierz pozycję **Łączniki** &gt; danych **Redtail Speak**.
 
-2. Na stronie **Opis produktu Redtail Speak** wybierz pozycję **Dodaj nowy łącznik**.
+2. Na stronie Opis produktu **Redtail Speak** wybierz pozycję **Dodaj nowy łącznik**.
 
-3. Na stronie **Warunki użytkowania usługi** wybierz pozycję **Zaakceptuj**.
+3. Na stronie **Warunki użytkowania** wybierz pozycję **Akceptuj**.
 
 4. Wprowadź unikatową nazwę identyfikującą łącznik, a następnie wybierz pozycję **Dalej**.
 
-5. Zaloguj się do konta korespondencji seryjnej1, aby skonfigurować łącznik.
+5. Zaloguj się do konta merge1, aby skonfigurować łącznik.
 
 ## <a name="step-2-configure-the-redtail-speak-connector-on-the-veritas-merge1-site"></a>Krok 2. Konfigurowanie łącznika Redtail Speak w witrynie Veritas Merge1
 
-Drugim krokiem jest skonfigurowanie łącznika Redtail Speak w witrynie Merge1. Aby uzyskać informacje na temat konfigurowania łącznika Redtail Speak, zobacz Przewodnik użytkownika dotyczący [scalania1 łączników innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Redtail%20Speak%20User%20Guide%20.pdf).
+Drugim krokiem jest skonfigurowanie łącznika Redtail Speak w witrynie Merge1. Aby uzyskać informacje na temat konfigurowania łącznika Redtail Speak, zobacz [Merge1 Third-Party Connectors User Guide (Scal1 łączniki innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Redtail%20Speak%20User%20Guide%20.pdf)).
 
-Po wybraniu **przycisku Zapisz & Zakończ** zostanie **wyświetlona** strona Mapowanie użytkowników w kreatorze łączników Centrum zgodności platformy Microsoft 365 stronie.
+Po wybraniu pozycji **Zapisz & Zakończ** zostanie wyświetlona strona **Mapowanie użytkownika** w kreatorze łącznika w portalu zgodności.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Krok 3. Mapowanie użytkowników i ukończenie konfiguracji łącznika
 
-Aby zamapować użytkowników i ukończyć konfigurację łącznika, wykonaj następujące czynności:
+Aby zamapować użytkowników i ukończyć konfigurację łącznika, wykonaj następujące kroki:
 
-1. Na stronie **Mapowanie użytkowników redtail Speak to Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników. Elementy Redtail Speak obejmują właściwość o nazwie *Poczta* e-mail, która zawiera adresy e-mail użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z Microsoft 365, elementy są importowane do skrzynki pocztowej tego użytkownika.
+1. Na stronie **Map Redtail Speak users to Microsoft 365 users (Mapuj użytkowników do Microsoft 365 użytkowników**) włącz automatyczne mapowanie użytkowników. Elementy Redtail Speak obejmują właściwość o nazwie *Email*, która zawiera adresy e-mail dla użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z użytkownikiem Microsoft 365, elementy zostaną zaimportowane do skrzynki pocztowej tego użytkownika.
 
-2. Wybierz **pozycję** Dalej, przejrzyj ustawienia i przejdź **do strony** Łączniki danych, aby wyświetlić postęp procesu importowania nowego łącznika.
+2. Wybierz pozycję **Dalej**, przejrzyj ustawienia i przejdź do strony **Łączniki danych** , aby zobaczyć postęp procesu importowania nowego łącznika.
 
 ## <a name="step-4-monitor-the-redtail-speak-connector"></a>Krok 4. Monitorowanie łącznika Redtail Speak
 
-Po utworzeniu łącznika Redtail Speak można sprawdzić stan łącznika w Centrum zgodności platformy Microsoft 365.
+Po utworzeniu łącznika Redtail Speak możesz wyświetlić stan łącznika w portalu zgodności.
 
-1. Przejdź do łączników [https://compliance.microsoft.com](https://compliance.microsoft.com/) **danych w lewym okienku naw i** zaznacz je.
+1. Przejdź do obszaru [https://compliance.microsoft.com](https://compliance.microsoft.com/) i wybierz pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 
-2. Wybierz **kartę Łączniki** , a następnie wybierz **łącznik Redtail Speak,** aby wyświetlić stronę wysuwu. Na tej stronie są wyświetlane właściwości i informacje o łączniku.
+2. Wybierz kartę **Łączniki,** a następnie wybierz łącznik **Redtail Speak** , aby wyświetlić stronę wysuwaną. Na tej stronie są wyświetlane właściwości i informacje o łączniku.
 
-3. W **obszarze Stan łącznika ze źródłem** **wybierz link Pobierz** dziennik, aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera dane, które zostały zaimportowane do chmury firmy Microsoft.
+3. W obszarze **Stan łącznika ze źródłem** wybierz link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera dane zaimportowane do chmury firmy Microsoft.
 
 ## <a name="known-issues"></a>Znane problemy
 
-- Obecnie importowanie załączników ani elementów większych niż 10 MB nie jest obsługuje. Obsługa większych elementów będzie dostępna w późniejszym terminie.
+- Obecnie nie obsługujemy importowania załączników ani elementów o rozmiarze większym niż 10 MB. Obsługa większych elementów będzie dostępna w późniejszym terminie.

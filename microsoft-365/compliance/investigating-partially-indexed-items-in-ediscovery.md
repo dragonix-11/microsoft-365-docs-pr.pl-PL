@@ -1,5 +1,5 @@
 ---
-title: Badanie elementów częściowo indeksowanych w zbierania elektronicznych materiałów dowodowych
+title: Badanie częściowo zaindeksowanych elementów w środowisku zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,109 +17,109 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak zarządzać elementami częściowo indeksowanych (nazywanymi również elementami nieindeksowanych) z Exchange, SharePoint i OneDrive dla Firm w organizacji.
-ms.openlocfilehash: 308b99b8bcb8d11c53759700d43651e521987948
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Dowiedz się, jak zarządzać częściowo indeksowanymi elementami (nazywanymi również elementami niezaindeksowanymi) z Exchange, SharePoint i OneDrive dla Firm w organizacji.
+ms.openlocfilehash: 8dd5235027a4563ad868d8ebe28c8dab50fb6376
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033007"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944772"
 ---
-# <a name="investigating-partially-indexed-items-in-ediscovery"></a>Badanie elementów częściowo indeksowanych w zbierania elektronicznych materiałów dowodowych
+# <a name="investigating-partially-indexed-items-in-ediscovery"></a>Badanie częściowo zaindeksowanych elementów w środowisku zbierania elektronicznych materiałów dowodowych
 
-Podczas wyszukiwania zbierania elektronicznych materiałów dowodowych elementy Centrum zgodności platformy Microsoft 365 są automatycznie uwzględniane częściowo indeksowane elementy w szacowanych wynikach wyszukiwania. Elementy częściowo indeksowane to elementy Exchange i dokumenty skrzynek pocztowych w witrynach SharePoint i OneDrive dla Firm, które z jakiegoś powodu nie zostały całkowicie zindeksowane w celu wyszukiwania. Większość wiadomości e-mail i dokumentów witryny jest pomyślnie indeksowanych, ponieważ są one w granicach limitów indeksowania [wiadomości e-mail](limits-for-content-search.md#indexing-limits-for-email-messages). Jednak niektóre elementy mogą przekraczać te limity indeksowania i będą częściowo indeksowane. Oto inne przyczyny, dla których elementów nie można indeksować w celu wyszukiwania i są zwracane jako elementy częściowo indeksowane po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych:
+Wyszukiwanie zbierania elektronicznych materiałów dowodowych uruchamiane w portalu zgodności usługi Microsoft Purview automatycznie uwzględnia częściowo zaindeksowane elementy w szacowanych wynikach wyszukiwania podczas uruchamiania wyszukiwania. Częściowo indeksowane elementy są Exchange elementów skrzynki pocztowej i dokumentów w witrynach SharePoint i OneDrive dla Firm, które z jakiegoś powodu nie zostały całkowicie zindeksowane do wyszukiwania. Większość wiadomości e-mail i dokumentów witryny jest pomyślnie indeksowana, ponieważ mieszczą się one w [limitach indeksowania dla wiadomości e-mail](limits-for-content-search.md#indexing-limits-for-email-messages). Jednak niektóre elementy mogą przekroczyć te limity indeksowania i zostaną częściowo zindeksowane. Poniżej przedstawiono inne powody, dla których nie można indeksować elementów do wyszukiwania i są zwracane jako częściowo indeksowane elementy podczas uruchamiania wyszukiwania zbierania elektronicznych materiałów dowodowych:
   
-- Wiadomości e-mail mają dołączony plik, których nie można otworzyć, na przykład pliki obrazów. jest to najczęstsza przyczyna częściowo indeksowanych elementów poczty e-mail.
+- Wiadomości e-mail mają dołączony plik, który nie może być otwarty, na przykład pliki obrazów; Jest to najczęstsza przyczyna częściowo indeksowanych elementów wiadomości e-mail.
 
 - Zbyt wiele plików dołączonych do wiadomości e-mail.
 
-- Plik dołączony do wiadomości e-mail jest za duży.
+- Plik dołączony do wiadomości e-mail jest zbyt duży.
 
-- Typ pliku jest obsługiwany w przypadku indeksowania, ale wystąpił błąd indeksowania w przypadku określonego pliku.
+- Typ pliku jest obsługiwany w przypadku indeksowania, ale wystąpił błąd indeksowania dla określonego pliku.
 
-Mimo że ten problem się różni, większość organizacji ma mniej niż 1% zawartości według woluminu i mniej niż 12% zawartości według rozmiaru, który jest częściowo indeksowany. Przyczyną różnicy między wielkością a wielkością woluminu jest wyższe prawdopodobieństwo, że większe pliki będą zawierały zawartość, która nie może zostać całkowicie zindeksowana.
+Mimo że jest ona różna, większość klientów organizacji ma mniej niż 1% zawartości według woluminu i mniej niż 12% zawartości według rozmiaru, który jest częściowo indeksowany. Przyczyną różnicy między woluminem a rozmiarem jest to, że większe pliki mają większe prawdopodobieństwo, że zawierają zawartość, która nie może być całkowicie zindeksowana.
   
-## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Dlaczego częściowo indeksowana liczba elementów zmienia się w wyszukiwaniu?
+## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Dlaczego liczba częściowo indeksowanych elementów zmienia się dla wyszukiwania?
 
-Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych w statystykach wyników wyszukiwania jest wyświetlana całkowita liczba i rozmiar częściowo indeksowanych elementów w lokalizacjach, które były przeszukiwane. Zauważ, że są to  *elementy nieindeksowane*  w statystyce wyszukiwania. Oto kilka elementów, które wpływają na liczbę częściowo indeksowanych elementów zwracanych w wynikach wyszukiwania:
+Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych całkowita liczba i rozmiar częściowo indeksowanych elementów w wyszukiwanych lokalizacjach są wyświetlane w statystykach wyników wyszukiwania, które są wyświetlane w szczegółowych statystykach wyszukiwania. Należy pamiętać, że w statystykach wyszukiwania są one  *nazywane elementami niezawłaszczonymi*  . Oto kilka elementów, które będą miały wpływ na liczbę częściowo indeksowanych elementów zwracanych w wynikach wyszukiwania:
   
-- Jeśli element jest częściowo indeksowany i odpowiada zapytaniu wyszukiwania, jest uwzględniany zarówno w zlicie (i rozmiarze) elementów wyników wyszukiwania, jak i elementach częściowo indeksowanych. Jednak w przypadku eksportowania wyników tego samego wyszukiwania element jest uwzględniany tylko w zestawie wyników wyszukiwania. nie jest uwzględniany jako element częściowo indeksowany.
+- Jeśli element jest częściowo indeksowany i jest zgodny z zapytaniem wyszukiwania, jest on uwzględniony zarówno w liczbie (i rozmiarze) elementów wyników wyszukiwania, jak i częściowo indeksowanych elementów. Jednak po wyeksportowaniu wyników tego samego wyszukiwania element jest dołączany tylko do zestawu wyników wyszukiwania; nie jest uwzględniony jako częściowo zaindeksowany element.
 
-- Elementy częściowo indeksowane znajdujące się w witrynach SharePoint i OneDrive nie są uwzględniane w oszacowaniu częściowo indeksowanych elementów wyświetlanych w szczegółowych statystykach wyszukiwania. Jednak elementy częściowo indeksowane mogą być eksportowane podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych. Jeśli na przykład będziesz przeszukiwać tylko witryny, szacowana liczba częściowo indeksowanych elementów będzie równa zero.
+- Częściowo indeksowane elementy znajdujące się w witrynach SharePoint i OneDrive *nie są* uwzględniane w szacowaniu częściowo indeksowanych elementów wyświetlanych w szczegółowych statystykach wyszukiwania. Jednak częściowo indeksowane elementy można eksportować podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych. Jeśli na przykład wyszukasz tylko witryny, szacowana liczba częściowo zaindeksowanych elementów będzie równa zero.
   
-## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Obliczanie stosunku elementów częściowo indeksowanych w organizacji
+## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Obliczanie stosunku częściowo indeksowanych elementów w organizacji
 
-Aby zrozumieć, czy Organizacja korzysta z elementów częściowo indeksowanych, możesz wyszukać całą zawartość wszystkich skrzynek pocztowych (za pomocą pustego zapytania słów kluczowych). W poniższym przykładzie jest 1 629 904 (146,46 GB) w pełni indeksowanych elementów i 10 025 (10,27 GB) elementów częściowo indeksowanych.
+Aby zrozumieć narażenie organizacji na częściowo indeksowane elementy, możesz uruchomić wyszukiwanie całej zawartości we wszystkich skrzynkach pocztowych (przy użyciu pustego zapytania kluczowego). W poniższym przykładzie istnieje 1 629 904 (146,46 GB) w pełni zaindeksowanych elementów i 10 025 (10,27 GB) częściowo indeksowanych elementów.
   
-![Przykładowa statystyka wyszukiwania pokazująca elementy częściowo indeksowane.](../media/PartiallyIndexedItemsTest.png)
+![Przykład statystyk wyszukiwania przedstawiający częściowo zaindeksowane elementy.](../media/PartiallyIndexedItemsTest.png)
   
-Wartość procentową elementów częściowo indeksowanych można ustalić, korzystając z następujących obliczeń.
+Procent częściowo indeksowanych elementów można określić, korzystając z poniższych obliczeń.
   
- **Aby obliczyć współczynnik częściowo indeksowanych elementów w organizacji:**
+ **Aby obliczyć stosunek częściowo indeksowanych elementów w organizacji:**
 
 `(Total number of partially indexed items/Total number of items) x 100`
 
 `(10025/1629904) x 100 = 0.62%`
 
-W wynikach wyszukiwania z poprzedniego przykładu 0,62% wszystkich elementów skrzynek pocztowych jest częściowo indeksowanych.
+Korzystając z wyników wyszukiwania z poprzedniego przykładu, 0,62% wszystkich elementów skrzynek pocztowych jest częściowo indeksowanych.
   
- **Aby obliczyć procent rozmiaru elementów częściowo indeksowanych w organizacji:**
+ **Aby obliczyć procent rozmiaru częściowo indeksowanych elementów w organizacji:**
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
 `(10.27 GB/146.46 GB) x 100 = 7.0%`
 
-W poprzednim przykładzie 7% całkowitego rozmiaru elementów skrzynki pocztowej pochodzi z elementów częściowo indeksowanych. Jak wspomniano wcześniej, większość organizacji klientów ma mniej niż 1% zawartości według woluminu i mniej niż 12% zawartości według rozmiaru, który jest częściowo indeksowany.
+W poprzednim przykładzie 7% całkowitego rozmiaru elementów skrzynki pocztowej pochodzi z częściowo indeksowanych elementów. Jak wspomniano wcześniej, większość klientów organizacji ma mniej niż 1% zawartości według woluminu i mniej niż 12% zawartości według rozmiaru, który jest częściowo indeksowany.
 
-## <a name="working-with-partially-indexed-items"></a>Praca z elementami częściowo indeksowanych
+## <a name="working-with-partially-indexed-items"></a>Praca z częściowo indeksowanymi elementami
 
-W przypadkach, gdy trzeba zbadać elementy częściowo indeksowane w celu zweryfikowania, że nie zawierają one istotnych informacji, możesz wyeksportować raport przeszukiwania zawartości zawierający informacje o elementach częściowo indeksowanych.[](export-a-content-search-report.md) Podczas eksportowania raportu przeszukiwania zawartości należy wybrać jedną z opcji eksportu, która zawiera częściowo indeksowane elementy.
+W przypadkach, gdy trzeba zbadać częściowo zaindeksowane elementy, aby sprawdzić, czy nie zawierają one odpowiednich informacji, można [wyeksportować raport wyszukiwania zawartości](export-a-content-search-report.md) zawierający informacje o częściowo indeksowanych elementach. Podczas eksportowania raportu wyszukiwania zawartości należy wybrać jedną z opcji eksportu, która zawiera częściowo indeksowane elementy.
   
-![Wybierz drugą lub trzecią opcję eksportowania elementów częściowo indeksowanych.](../media/PartiallyIndexedItemsExportOptions.png)
+![Wybierz drugą lub trzecią opcję, aby wyeksportować częściowo indeksowane elementy.](../media/PartiallyIndexedItemsExportOptions.png)
   
-W przypadku eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych lub raportu wyszukiwania przy użyciu jednej z tych opcji eksport obejmuje raport o nazwie Nieindeksowane Items.csv. Ten raport zawiera większość tych samych informacji, co plik ResultsLog.csv pliku; Plik nieindeksowany zawiera Items.csv także dwa pola powiązane z elementami częściowo indeksowanych **: Tagi** błędów i **Właściwości błędów**. Te pola zawierają informacje o błędzie indeksowania dla każdego częściowo indeksowanego elementu. Dzięki informacjom w tych dwóch polach można ustalić, czy błąd indeksowania dla określonego badania ma wpływ na dane badanie. 
+Podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych lub raportu wyszukiwania przy użyciu jednej z tych opcji eksport obejmuje raport o nazwie Unindexed Items.csv. Ten raport zawiera większość tych samych informacji co plik ResultsLog.csv; Jednak plik Items.csv Unindexed zawiera również dwa pola związane z częściowo indeksowanymi elementami: **Tagi błędów** i **Właściwości błędu**. Te pola zawierają informacje o błędzie indeksowania dla każdego częściowo zaindeksowanego elementu. Użycie informacji w tych dwóch polach może pomóc w określeniu, czy błąd indeksowania dla konkretnego wpływu na badanie. 
 
 > [!NOTE]
-> Plik nieindeksowany Items.csv również pola o nazwach **Typ błędu** i **Komunikat o błędzie**. Są to starsze pola zawierające informacje podobne do informacji w polach Tagi błędów i Właściwości  błędów, ale  zawierające mniej szczegółowych informacji. Te starsze pola można bezpiecznie zignorować.
+> Plik Items.csv Unindexed zawiera również pola o nazwach **Error Type (Typ błędu** ) i **Error Message (Komunikat o błędzie**). Są to starsze pola zawierające informacje podobne do informacji w polach **Tagi błędów** i **Właściwości błędu** , ale z mniej szczegółowymi informacjami. Możesz bezpiecznie zignorować te starsze pola.
   
-## <a name="errors-related-to-partially-indexed-items"></a>Błędy dotyczące elementów częściowo indeksowanych
+## <a name="errors-related-to-partially-indexed-items"></a>Błędy związane z częściowo indeksowanymi elementami
 
-Tagi błędów zawierają dwie informacje: błąd i typ pliku. Na przykład w tej pari błędu/typu pliku:
+Tagi błędów składają się z dwóch informacji: błędu i typu pliku. Na przykład w tej parze błąd/typ pliku:
 
 ```text
  parseroutputsize_xls
 ```
 
- `parseroutputsize` jest błędem `xls` i jest typem pliku, w przypadku którego wystąpił błąd. W przypadkach, gdy typ pliku nie został rozpoznany lub typ pliku nie został zastosowania do błędu, `noformat` zobaczysz wartość w miejscu typu pliku.
+ `parseroutputsize` to błąd i `xls` jest typem pliku, w przypadku którego wystąpił błąd. W przypadkach, gdy typ pliku nie został rozpoznany lub typ pliku nie został zastosowany do błędu, zostanie wyświetlona wartość `noformat` zamiast typu pliku.
   
-Poniżej przedstawiono listę błędów indeksowania oraz opis możliwej przyczyny błędu.
+Poniżej znajduje się lista błędów indeksowania i opis możliwej przyczyny błędu.
   
 | Tag błędu | Opis |
 |:-----|:-----|
-| `attachmentcount` <br/> |Wiadomość e-mail miała zbyt wiele załączników, a niektóre z tych załączników nie były przetwarzane.  <br/> |
-| `attachmentdepth` <br/> |Pobieracz zawartości i parser dokumentów znalazły zbyt wiele poziomów załączników zagnieżdżonych wewnątrz innych załączników. Niektóre z tych załączników nie zostały przetworzone.  <br/> |
-| `attachmentrms` <br/> |Dekodowanie załącznika nie powiodło się, ponieważ był chroniony usługą RMS.  <br/> |
-| `attachmentsize` <br/> |Plik dołączony do wiadomości e-mail był za duży i nie można go było przetworzyć.  <br/> |
-| `indexingtruncated` <br/> |Podczas pisania przetwarzanej wiadomości e-mail w indeksie jedna z właściwości indeksowanych była za duża i została obcięta. Właściwości obcięte są wyświetlane w polu Właściwości błędu.  <br/> |
-| `invalidunicode` <br/> |Wiadomość e-mail zawierała tekst, który nie może zostać przetworzony jako prawidłowy standard Unicode. Indeksowanie tego elementu może być niekompletne.  <br/> |
-| `parserencrypted` <br/> |Zawartość załącznika lub wiadomości e-mail jest szyfrowana i Microsoft 365 jej nie można odkodować.  <br/> |
-| `parsererror` <br/> |Podczas analizowania wystąpił nieznany błąd. Zazwyczaj jest to skutkiem błędu oprogramowania lub awarii usługi.  <br/> |
-| `parserinputsize` <br/> |Załącznik był za duży do obsługi przez parera, a analizowanie tego załącznika nie zostało wykonane lub nie zostało ukończone.  <br/> |
-| `parsermalformed` <br/> |Załącznik został zniekształcony i nie mógł zostać obsługiwany przez analizowanie. Może to być spowodowane starymi formatami plików, plikami utworzonymi przez niezgodne oprogramowanie lub wirusami, które mogą być czymś innym niż roszczenia.  <br/> |
-| `parseroutputsize` <br/> |Dane wyjściowe z analizy załącznika były za duże i trzeba było je obcięte.  <br/> |
+| `attachmentcount` <br/> |Wiadomość e-mail miała zbyt wiele załączników, a niektóre z tych załączników nie zostały przetworzone.  <br/> |
+| `attachmentdepth` <br/> |Podczas pobierania zawartości i analizatora dokumentów znaleziono zbyt wiele poziomów załączników zagnieżdżonych wewnątrz innych załączników. Niektóre z tych załączników nie zostały przetworzone.  <br/> |
+| `attachmentrms` <br/> |Dekodowanie załącznika nie powiodło się, ponieważ był chroniony przez usługę RMS.  <br/> |
+| `attachmentsize` <br/> |Plik dołączony do wiadomości e-mail był zbyt duży i nie można go przetworzyć.  <br/> |
+| `indexingtruncated` <br/> |Podczas pisania przetworzonej wiadomości e-mail do indeksu jedna z właściwości indeksowalnych była zbyt duża i została obcięta. Obcięte właściwości są wymienione w polu Właściwości błędu.  <br/> |
+| `invalidunicode` <br/> |Wiadomość e-mail zawierała tekst, którego nie można przetworzyć jako prawidłowego unicode. Indeksowanie dla tego elementu może być niekompletne.  <br/> |
+| `parserencrypted` <br/> |Zawartość załącznika lub wiadomości e-mail jest szyfrowana i Microsoft 365 nie może odkodować zawartości.  <br/> |
+| `parsererror` <br/> |Wystąpił nieznany błąd podczas analizowania. Zazwyczaj wynika to z usterki oprogramowania lub awarii usługi.  <br/> |
+| `parserinputsize` <br/> |Załącznik był zbyt duży, aby można było obsłużyć analizator, a analizowanie tego załącznika nie nastąpiło lub nie zostało ukończone.  <br/> |
+| `parsermalformed` <br/> |Załącznik został źle sformułowany i nie może być obsługiwany przez analizator. Ten wynik może być spowodowany starymi formatami plików, plikami utworzonymi przez niezgodne oprogramowanie lub wirusami udającymi coś innego niż deklarowane.  <br/> |
+| `parseroutputsize` <br/> |Dane wyjściowe analizy załącznika były zbyt duże i musiały zostać obcięte.  <br/> |
 | `parserunknowntype` <br/> |Załącznik miał typ pliku, który Microsoft 365 nie mógł wykryć.  <br/> |
-| `parserunsupportedtype` <br/> |Załącznik miał typ pliku, który Office 365 wykryć, ale analizowanie tego typu pliku nie jest obsługiwane.  <br/> |
-| `propertytoobig` <br/> |Wartość właściwości poczty e-mail w sklepie Exchange była za duża do pobrania i nie można było przetworzyć wiadomości. Zazwyczaj dzieje się tak tylko w przypadku właściwości treści wiadomości e-mail.  <br/> |
-| `retrieverrms` <br/> |Pobieranie zawartości nie powiodło się, aby odkodować wiadomość chronioną przez usługę RMS.  <br/> |
-| `wordbreakertruncated` <br/> |Podczas indeksowania w dokumencie zidentyfikowano zbyt wiele wyrazów. Przetwarzanie właściwości zostało zatrzymane po osiągnięciu limitu i ta właściwość jest obcinana.  <br/> |
+| `parserunsupportedtype` <br/> |Załącznik miał typ pliku, który Office 365 mógł wykryć, ale analizowanie tego typu pliku nie jest obsługiwane.  <br/> |
+| `propertytoobig` <br/> |Wartość właściwości poczty e-mail w Exchange Store była zbyt duża, aby można było ją pobrać i nie można było przetworzyć wiadomości. Zwykle dotyczy to tylko właściwości treści wiadomości e-mail.  <br/> |
+| `retrieverrms` <br/> |Pobieranie zawartości nie może odkodować wiadomości chronionej przez usługę RMS.  <br/> |
+| `wordbreakertruncated` <br/> |Podczas indeksowania zidentyfikowano zbyt wiele słów w dokumencie. Przetwarzanie właściwości zostało zatrzymane po osiągnięciu limitu, a właściwość jest obcinana.  <br/> |
 
-Pola błędów określają, których pól dotyczy błąd przetwarzania wymieniony w polu Tagi błędów. Jeśli przeszukujesz właściwość  `subject` , taką jak lub  `participants`, błędy w treści wiadomości, nie mają wpływu na wyniki wyszukiwania. Może to być przydatne podczas ustalania dokładnie, które elementy częściowo indeksowane mogą wymagać dalszego zbadania.
+Pola błędów opisują pola, na które ma wpływ błąd przetwarzania wymieniony w polu Tagi błędów. Jeśli wyszukujesz właściwość, taką jak  `subject` lub  `participants`, błędy w treści wiadomości nie będą miały wpływu na wyniki wyszukiwania. Może to być przydatne podczas określania dokładnie, które częściowo indeksowane elementy mogą być konieczne do dalszego zbadania.
   
-## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Używanie skryptu programu PowerShell w celu określenia ekspozycji Twojej organizacji na częściowo zindeksowane elementy poczty e-mail
+## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Używanie skryptu programu PowerShell do określania narażenia organizacji na częściowo indeksowane elementy wiadomości e-mail
 
-Poniższe kroki pokazują, jak uruchomić skrypt programu PowerShell, który wyszukuje wszystkie elementy we wszystkich skrzynkach pocztowych programu Exchange, a następnie generuje raport o współczynniku częściowo indeksowanych elementów poczty e-mail organizacji (według liczby i rozmiaru) oraz wyświetla liczbę elementów (i ich typ pliku) dla każdego wystąpienia błędu indeksowania. Do identyfikowania błędu indeksowania należy używać opisów tagów błędów w poprzedniej sekcji.
+Poniższe kroki pokazują, jak uruchomić skrypt programu PowerShell, który wyszukuje wszystkie elementy we wszystkich Exchange skrzynkach pocztowych, a następnie generuje raport o współczynniku częściowo indeksowanych elementów wiadomości e-mail organizacji (według liczby i rozmiaru) oraz wyświetla liczbę elementów (i ich typ pliku) dla każdego błędu indeksowania, który występuje. Użyj opisów tagów błędów w poprzedniej sekcji, aby zidentyfikować błąd indeksowania.
   
-1. Zapisz poniższy tekst w pliku skryptu Windows PowerShell, używając sufiksu nazwy pliku programu .ps1, `PartiallyIndexedItems.ps1`na przykład .
+1. Zapisz następujący tekst w pliku skryptu Windows PowerShell przy użyciu sufiksu nazwy pliku .ps1, `PartiallyIndexedItems.ps1`na przykład .
 
    ```powershell
      write-host "**************************************************"
@@ -164,25 +164,25 @@ Poniższe kroki pokazują, jak uruchomić skrypt programu PowerShell, który wys
      }
    ```
 
-2. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/exchange-online-powershell).
+2. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/exchange-online-powershell).
 
-3. W centrum & zabezpieczeń w programie PowerShell przejdź do folderu, w którym został zapisany skrypt w kroku 1, a następnie uruchom skrypt. na przykład:
+3. W programie PowerShell Usługi Security & Compliance Center przejdź do folderu, w którym zapisano skrypt w kroku 1, a następnie uruchom skrypt. na przykład:
 
    ```powershell
    .\PartiallyIndexedItems.ps1
    ```
 
-Oto przykład danych wyjściowych zwróconych przez skrypt.
+Oto przykład danych wyjściowych zwracanych przez skrypt.
   
-![Przykład danych wyjściowych ze skryptu generującego raport o ekspozycji Twojej organizacji na częściowo zindeksowane elementy poczty e-mail.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Przykład danych wyjściowych skryptu, który generuje raport dotyczący narażenia organizacji na częściowo indeksowane elementy wiadomości e-mail.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
 > Zwróć uwagę na następujące kwestie:
 >  
-> - Całkowita liczba i rozmiar elementów poczty e-mail oraz współczynnik częściowego indeksowania elementów poczty e-mail w organizacji (według liczby i rozmiaru).
+> - Całkowita liczba i rozmiar elementów wiadomości e-mail oraz stosunek częściowych indeksowanych elementów wiadomości e-mail w organizacji (według liczby i rozmiaru).
 > 
-> - Tagi błędów listy i odpowiadające im typy plików, dla których wystąpił błąd.
+> - Tagi błędów listy i odpowiednie typy plików, dla których wystąpił błąd.
   
 ## <a name="see-also"></a>Zobacz też
 
-[Częściowo indeksowane elementy na zbierania elektronicznych materiałów dowodowych](partially-indexed-items-in-content-search.md)
+[Częściowo zaindeksowane elementy w środowisku zbierania elektronicznych materiałów dowodowych](partially-indexed-items-in-content-search.md)

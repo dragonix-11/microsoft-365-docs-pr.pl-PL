@@ -14,28 +14,28 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
-description: Możesz zmienić domyślny rozmiar plików PST pobieranych na komputer podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: b0376a423827df855af83375ddfae0e9803fd933
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Możesz zmienić domyślny rozmiar plików PST pobranych na komputer podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych.
+ms.openlocfilehash: 7ba11dbb24af46c72321f2f0f514aa4a40616e4b
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983561"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950296"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Zmienianie rozmiaru plików PST podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
 
-W przypadku korzystania z narzędzia eDiscovery Export w celu wyeksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych z różnych narzędzi zbierania elektronicznych materiałów dowodowych firmy Microsoft domyślny rozmiar pliku PST, który można wyeksportować, wynosi 10 GB. Jeśli chcesz zmienić ten rozmiar domyślny, możesz edytować rejestr Windows na komputerze, którego używasz do eksportowania wyników wyszukiwania. Jednym z powodów jest to, że plik PST może zmieścić się na nośniku wymiennym, takim jak dysk DVD, dysk CD lub dysk USB. 
+W przypadku korzystania z narzędzia eDiscovery Export do eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych z różnych narzędzi microsoft eDiscovery domyślny rozmiar pliku PST, który można wyeksportować, wynosi 10 GB. Jeśli chcesz zmienić ten rozmiar domyślny, możesz edytować rejestr Windows na komputerze używanym do eksportowania wyników wyszukiwania. Jednym z powodów, aby to zrobić, jest to, aby plik PST mógł zmieścić się na nośniku wymiennym, takim dvd, dysk kompaktowy lub dysk USB. 
   
 > [!NOTE]
-> Narzędzie Eksport zbierania elektronicznych materiałów dowodowych służy do eksportowania wyników wyszukiwania podczas korzystania z narzędzia Przeszukiwanie zawartości w aplikacji Centrum zgodności platformy Microsoft 365.
+> Narzędzie eksportu zbierania elektronicznych materiałów dowodowych służy do eksportowania wyników wyszukiwania w przypadku korzystania z narzędzia do wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Tworzenie ustawienia rejestru w celu zmiany rozmiaru plików PST podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
 
-Wykonaj następującą procedurę na komputerze, na który chcesz wyeksportować wyniki wyszukiwania zbierania elektronicznych materiałów dowodowych.
+Wykonaj poniższą procedurę na komputerze, którego użyjesz do wyeksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych.
   
-1. Zamknij narzędzie eDiscovery Export tool, jeśli jest otwarte. 
+1. Zamknij narzędzie eksportu zbierania elektronicznych materiałów dowodowych, jeśli jest otwarte. 
     
-2. Zapisz poniższy tekst w pliku rejestru Window, używając sufiksu nazwy pliku reg. Na przykład PstExportSize.reg. 
+2. Zapisz następujący tekst w pliku rejestru okna przy użyciu sufiksu nazwy pliku reg; na przykład PstExportSize.reg. 
     
     ```text
     Windows Registry Editor Version 5.00
@@ -43,45 +43,45 @@ Wykonaj następującą procedurę na komputerze, na który chcesz wyeksportować
     "PstSizeLimitInBytes"="1073741824"
     ```
 
-    W powyższym przykładzie  `PstSizeLimitInBytes` ustawiono wartość 1 073 741 824 bajtów lub około 1 GB. Oto inne przykładowe wartości tego  `PstSizeLimitInBytes` ustawienia. 
+    W powyższym przykładzie  `PstSizeLimitInBytes` wartość jest ustawiona na 1 073 741 824 bajtów lub około 1 GB. Poniżej przedstawiono kilka innych przykładowych wartości dla  `PstSizeLimitInBytes` tego ustawienia. 
     
-    |**Rozmiar w GB (przybliżony)**|**Rozmiar w bajtach**|
+    |**Rozmiar w GB (ok.)**|**Rozmiar w bajtach**|
     |:-----|:-----|
     |0,7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
    
-3. Podczas eksportowania `PstSizeLimitInBytes` wyników wyszukiwania zmień żądany maksymalny rozmiar pliku PST, a następnie zapisz ten plik. 
+3. `PstSizeLimitInBytes` Zmień wartość na żądany maksymalny rozmiar pliku PST podczas eksportowania wyników wyszukiwania, a następnie zapisz plik. 
     
-4. W Windows kliknij lub kliknij dwukrotnie plik reg utworzony w poprzednich krokach.
+4. W Eksploratorze Windows kliknij lub kliknij dwukrotnie plik reg utworzony w poprzednich krokach.
     
-5. W oknie Kontrola dostępu użytkownika kliknij przycisk **Tak** , aby edytor rejestru wprowadzić zmiany. 
+5. W oknie Użytkownik Access Control kliknij przycisk **Tak**, aby zezwolić Edytorowi rejestru na wprowadzenie zmian. 
     
 6. Po wyświetleniu monitu o kontynuowanie kliknij przycisk **Tak**.
     
-    Edytor rejestru wyświetla komunikat informujący, że ustawienie zostało pomyślnie dodane do rejestru.
+    Edytor rejestru wyświetla komunikat informujący o pomyślnym dodaniu ustawienia do rejestru.
     
-7. Możesz powtórzyć kroki od 3 do 6, aby zmienić wartość  `PstSizeLimitInBytes` ustawienia rejestru. 
+7. Możesz powtórzyć kroki 3–6, aby zmienić wartość  `PstSizeLimitInBytes` ustawienia rejestru. 
   
-## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Często zadawane pytania dotyczące zmieniania domyślnego rozmiaru plików PST podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
+## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Często zadawane pytania dotyczące zmiany domyślnego rozmiaru plików PST podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
 
- **Dlaczego jest domyślny rozmiar 10 GB?**
+ **Dlaczego domyślny rozmiar to 10 GB?**
   
-Domyślny rozmiar 10 GB był oparty na opiniach klientów. 10 GB to dobre saldo między optymalną ilością zawartości w pojedynczym pliku PST a minimalną możliwością uszkodzenia pliku.
+Domyślny rozmiar 10 GB był oparty na opiniach klientów; 10 GB to dobra równowaga między optymalną ilością zawartości w jednym PST i minimalną szansą na uszkodzenie pliku.
   
  **Czy należy zwiększyć lub zmniejszyć domyślny rozmiar plików PST?**
   
-Klienci zwykle zmniejszają limit rozmiaru tak, aby wyniki wyszukiwania zmieściły się na nośniku wymiennym, który mogą fizycznie wysłać do innych lokalizacji w organizacji. Nie zalecamy zwiększania domyślnego rozmiaru plików, ponieważ mogą wystąpić problemy z uszkodzeniami plików PST o rozmiarze ponad 10 GB.
+Klienci zwykle zmniejszają limit rozmiaru, dzięki czemu wyniki wyszukiwania będą pasować do nośników wymiennych, które mogą fizycznie wysyłać do innych lokalizacji w organizacji. Nie zalecamy zwiększania rozmiaru domyślnego, ponieważ pliki PST większe niż 10 GB mogą mieć problemy z uszkodzeniem.
   
  **Na jakim komputerze muszę to zrobić?**
   
-Należy zmienić ustawienie rejestru na dowolnym komputerze lokalnym, na których jest uruchamiane narzędzie eDiscovery Export Tool.
+Należy zmienić ustawienie rejestru na dowolnym komputerze lokalnym, na którego uruchomiono narzędzie eksportu elektronicznego zbierania elektronicznych materiałów dowodowych.
   
- **Czy po zmianie tego ustawienia muszę ponownie uruchomić komputer?**
+ **Czy po zmianie tego ustawienia należy ponownie uruchomić komputer?**
   
-Nie, nie musisz ponownie uruchamiać komputera. Jeśli jednak narzędzie eDiscovery Export tool jest uruchomione, po zmianie tego ustawienia musisz je zamknąć i ponownie uruchomić.
+Nie, nie musisz ponownie uruchamiać komputera. Jeśli jednak narzędzie eksportu elektronicznego zbierania elektronicznych materiałów dowodowych jest uruchomione, musisz je zamknąć i ponownie uruchomić po zmianie tego ustawienia.
   
- **Czy istniejący klucz rejestru jest edytowany, czy też jest tworzony nowy klucz?**
+ **Czy istniejący klucz rejestru jest edytowany, czy jest tworzony nowy klucz?**
   
-Nowy klucz rejestru jest tworzony po pierwszym uruchomieniu pliku reg utworzonego w tej procedurze. Ustawienie jest wówczas edytowane po każdej zmianie i ponownej edycji pliku reg.
+Nowy klucz rejestru jest tworzony przy pierwszym uruchomieniu pliku reg utworzonego w tej procedurze. Następnie ustawienie jest edytowane przy każdej zmianie i ponownym uruchomieniu pliku edycji reg.

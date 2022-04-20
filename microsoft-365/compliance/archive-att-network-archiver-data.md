@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika do archiwizowania danych sieciowych AT&T SMS/MMS
+title: Konfigurowanie łącznika do archiwizowania danych sieciowych usługi AT&T SMS/MMS
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,76 +11,76 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Administratorzy mogą skonfigurować łącznik TeleMessage w celu importowania i archiwizowania danych SMS-ów i MMS z sieci AT&T Mobile. Dzięki temu można archiwizować dane ze źródeł danych innych firm w programie Microsoft 365, aby zarządzać danymi innych firm przy użyciu funkcji zgodności, takich jak archiwizacja ze względu na przepisy prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 2b1e03c4d434b08c3dce21ed42c24e4573513c24
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Administratorzy mogą skonfigurować łącznik TeleMessage w celu importowania i archiwizowania danych programu SMS i MMS z usługi AT&T Mobile Network. Dzięki temu można archiwizować dane ze źródeł danych innych firm w usłudze Microsoft Purview, aby można było zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania.
+ms.openlocfilehash: 8c038769ef7330788badfaa8a0a40a00c0730a13
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322215"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950726"
 ---
-# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Konfigurowanie łącznika do archiwizowania danych AT&T SMS/MMS
+# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Konfigurowanie łącznika do archiwizowania danych usługi AT&T SMS/MMS
 
-Użyj łącznika TeleMessage w aplikacji Centrum zgodności platformy Microsoft 365 i archiwizuj dane SMS-ów i MMS z usługi AT&T Mobile Network. Po skonfigurowaniu i skonfigurowaniu łącznika połączy się on z siecią AT&T Network organizacji raz dziennie i zaim importuje dane wiadomości SMS i MMS do skrzynek pocztowych w Microsoft 365.
+Użyj łącznika TeleMessage w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane programu SMS i MMS z usługi AT&T Mobile Network. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z siecią AT&T w organizacji raz dziennie i importuje dane SMS i MMS do skrzynek pocztowych w usłudze Microsoft Purview.
 
-Po przechowywaniu wiadomości SMS i MMS w skrzynkach pocztowych użytkowników możesz zastosować funkcje zgodności usługi Microsoft 365, takie jak zastosowanie stosowania sporów sądowych, przeszukiwanie zawartości i zasady przechowywania Microsoft 365 do danych sieciowych AT&T. Można na przykład wyszukać dane z sieci AT&T przy użyciu funkcji przeszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane łącznika sieci AT&T ze współpracownikiem w Advanced eDiscovery przypadku. Importowanie i archiwizowanie danych w programie Microsoft 365 za pomocą łącznika sieci AT&T Network może ułatwić organizacji zachowania zgodności z zasadami rządowymi i przepisami prawa.
+Po zapisaniu wiadomości SMS i MMS w skrzynkach pocztowych użytkowników można zastosować Microsoft 365 funkcji usługi Purview, takich jak blokada postępowania sądowego, wyszukiwanie zawartości i zasady przechowywania Microsoft 365 do danych usługi AT&T Network. Możesz na przykład wyszukać dane usługi AT&T Network przy użyciu funkcji wyszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane łącznika usługi AT&T Network z opiekunem w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika usługi AT&T Network może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
-## <a name="overview-of-archiving-att-network-data"></a>Omówienie archiwizowania danych w&T Network
+## <a name="overview-of-archiving-att-network-data"></a>Omówienie archiwizacji danych usługi AT&T Network
 
-W poniższym o omówieniem wyjaśniono proces używania łącznika do archiwizowania danych sieciowych at&T w programie Microsoft 365.
+W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania danych usługi AT&T Network w Microsoft 365.
 
-![Przepływ pracy ATT Network archiwum.](../media/ATTNetworkConnectorWorkflow.png)
+![Przepływ pracy archiwizacji sieci ATT.](../media/ATTNetworkConnectorWorkflow.png)
 
-1. Twoja organizacja współpracuje z usługą TeleMessage w celu skonfigurowania łącznika AT&T Network. Aby uzyskać informacje, [zobacz AT&T Network Archiver](https://www.telemessage.com/office365-activation-for-atnt-network-archiver/).
+1. Twoja organizacja współpracuje z usługą TeleMessage w celu skonfigurowania łącznika usługi AT&T Network. Aby uzyskać informacje, zobacz [AT&T Network Archiver](https://www.telemessage.com/office365-activation-for-atnt-network-archiver/).
 
-2. W czasie rzeczywistym wiadomości SMS i MMS z sieci AT&T Są kopiowane do witryny TeleMessage.
+2. W czasie rzeczywistym wiadomości SMS i MMS z sieci AT&T Organizacji są kopiowane do witryny TeleMessage.
 
-3. Łącznik AT&T Network, który tworzysz w usłudze Centrum zgodności platformy Microsoft 365, łączy się z witryną TeleMessage każdego dnia i przesyła wiadomości SMS i MMS z poprzednich 24 godzin do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft. Łącznik konwertuje także treść wiadomości SMS i MMS na format wiadomości e-mail.
+3. Łącznik usługi AT&T Network tworzony w portalu zgodności codziennie łączy się z witryną TeleMessage i przesyła wiadomości SMS i MMS z poprzednich 24 godzin do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft. Łącznik konwertuje również zawartość wiadomości SMS i MMS na format wiadomości e-mail.
 
-4. Łącznik zaim importuje elementy komunikacji mobilnej do skrzynki pocztowej określonych użytkowników. W skrzynce pocztowej użytkownika jest tworzony nowy folder o **nazwie AT&T SMS/MMS Network Archiver** , a elementy są do niego importowane. Łącznik obsługuje to mapowanie przy użyciu wartości *właściwości Adres e-mail* użytkownika. Każda wiadomość SMS i MMS zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika wiadomości.
+4. Łącznik importuje elementy komunikacji mobilnej do skrzynki pocztowej określonych użytkowników. W skrzynce pocztowej użytkownika zostanie utworzony nowy folder o nazwie **AT&T SMS/MMS Network Archiver** , a elementy zostaną do niego zaimportowane. Łącznik wykonuje to mapowanie przy użyciu wartości właściwości *Adres e-mail użytkownika* . Każda wiadomość SMS i MMS zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika wiadomości.
  
-   Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości Adres e-mail użytkownika możesz również zdefiniować mapowanie niestandardowe, przesyłając plik mapowania plików CSV. Ten plik mapowania zawiera numer telefonu komórkowego i Microsoft 365 e-mail dla użytkowników w organizacji. Jeśli włączysz zarówno automatyczne mapowanie użytkowników, jak i mapowanie niestandardowe, dla każdego elementu poczty e-mail łącznik najpierw przejmie plik mapowania niestandardowego. Jeśli użytkownik nie znajdzie prawidłowego Microsoft 365 odpowiadającego numerowi telefonu komórkowego, łącznik użyje wartości z właściwości adresu e-mail elementu, który próbuje zaimportować. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w pliku mapowania niestandardowego lub we właściwości adresu e-mail elementu poczty e-mail, element nie zostanie zaimportowany.
+   Oprócz automatycznego mapowania użytkownika przy użyciu wartości właściwości *Adres e-mail użytkownika* można również zdefiniować mapowanie niestandardowe, przekazując plik mapowania CSV. Ten plik mapowania zawiera numer telefonu komórkowego i odpowiadający Microsoft 365 adres e-mail dla użytkowników w organizacji. Jeśli włączysz automatyczne mapowanie użytkowników i mapowanie niestandardowe, dla każdego elementu wiadomości e-mail łącznik najpierw przyjrzy się niestandardowemu plikowi mapowania. Jeśli nie znajdzie prawidłowego użytkownika Microsoft 365, który odpowiada numerowi telefonu komórkowego, łącznik używa wartości we właściwości adresu e-mail elementu, który próbuje zaimportować. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w niestandardowym pliku mapowania lub we właściwości adresu e-mail elementu wiadomości e-mail, element nie zostanie zaimportowany.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Niektóre kroki implementacji wymagane do archiwizowania danych sieci AT&T są zewnętrzne Microsoft 365 i muszą zostać ukończone, aby można było utworzyć łącznik w centrum zgodności.
+Niektóre kroki implementacji wymagane do zarchiwizowania danych usługi AT&T Network są zewnętrzne dla Microsoft 365 i muszą zostać ukończone przed utworzeniem łącznika w centrum zgodności.
 
-- [Zamów usługę archiwum mobilnego w usłudze TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) i uzyskaj prawidłowe konto administracyjne dla swojej organizacji. Podczas tworzenia łącznika w centrum zgodności musisz zalogować się do tego konta.
+- [Zamów usługę archiwizacji urządzeń przenośnych z usługi TeleMessage i uzyskaj prawidłowe](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) konto administracyjne dla swojej organizacji. Musisz zalogować się do tego konta podczas tworzenia łącznika w Centrum zgodności.
 
-- Uzyskaj swoje konto AT&T i dane kontaktowe do rozliczeń, aby móc wypełnić formularze dołączania telemessage i zamówić usługę archiwizowania wiadomości w usłudze AT&T.
+- Uzyskaj konto usługi AT&T i dane kontaktowe dotyczące rozliczeń, aby można było wypełnić formularze dołączania usługi TeleMessage i zamówić usługę archiwizacji komunikatów w usłudze AT&T.
 
-- Zarejestruj wszystkich użytkowników wymagających archiwizacji w usłudze AT&SMS/MMS Network na koncie telemessage. Podczas rejestrowania użytkowników pamiętaj, aby używać tego samego adresu e-mail, który jest używany na ich Microsoft 365 kontach.
+- Zarejestruj wszystkich użytkowników, którzy wymagają archiwizacji sieci usługi AT&T SMS/MMS na koncie TeleMessage. Podczas rejestrowania użytkowników należy użyć tego samego adresu e-mail, który jest używany dla ich konta Microsoft 365.
 
-- Pracownicy muszą posiadać firmowe i firmowe telefony komórkowe w sieci komórkowej AT&T. Archiwizowanie wiadomości w Microsoft 365 jest niedostępne w przypadku urządzeń należących do pracownika lub "Przynieź własne urządzenia (BYOD).
+- Pracownicy muszą mieć firmowe i firmowe telefony komórkowe w sieci komórkowej AT&T. Archiwizowanie komunikatów w Microsoft 365 nie jest dostępne dla urządzeń należących do pracowników lub "Przynieś własne urządzenia (BYOD).
 
-- Użytkownik, który tworzy łącznik at&T Network, musi mieć przypisaną rolę Administrator łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi tworzącemu łącznik usługi AT&T Network musi zostać przypisana rola administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych TeleMessage jest dostępny w GCC w chmurze dla instytucji rządowych Microsoft 365 USA. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Organizacji w systemach innych firm, które znajdują się poza infrastrukturą firmy Microsoft 365 i dlatego nie są objęte zobowiązaniami firmy Microsoft 365 w zakresie zgodności z przepisami i ochrony danych. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
+- Ten łącznik danych TeleMessage jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
-## <a name="create-a-att-network-connector"></a>Tworzenie łącznika AT&T Network
+## <a name="create-a-att-network-connector"></a>Tworzenie łącznika sieci at&T
 
-Po zakończeniu wymagań wstępnych opisanych w poprzedniej sekcji możesz utworzyć łącznik AT&T Network w Centrum zgodności platformy Microsoft 365. Łącznik używa podanej informacji do nawiązania połączenia z witryną TeleMessage i przesłania wiadomości SMS i MMS do odpowiednich skrzynek pocztowych użytkowników w Microsoft 365.
+Po ukończeniu wymagań wstępnych opisanych w poprzedniej sekcji możesz utworzyć łącznik usługi AT&T Network w portalu zgodności. Łącznik używa podanych informacji, aby nawiązać połączenie z witryną TeleMessage i przenieść wiadomości SMS i MMS do odpowiednich skrzynek pocztowych użytkownika w Microsoft 365.
 
-1. Przejdź do, [https://compliance.microsoft.com](https://compliance.microsoft.com/) a następnie kliknij pozycję **Łączniki danychAT** \  **&T Network**.
+1. Przejdź do obszaru [https://compliance.microsoft.com](https://compliance.microsoft.com/) , a następnie kliknij pozycję **Łączniki** \  **danychAt&T Network**.
 
-2. Na stronie **AT&T Network product** description (Opis produktu sieci AT&) kliknij **pozycję Add connector (Dodaj łącznik)**
+2. Na stronie Opis **produktu AT&T Network** kliknij pozycję **Dodaj łącznik**
 
-3. Na stronie **Warunki użytkowania usługi** kliknij pozycję **Zaakceptuj**.
+3. Na stronie **Warunki korzystania z usługi** kliknij pozycję **Akceptuj**.
 
-4. Na stronie **Login to TeleMessage** (Logowanie do telemessage) w obszarze Krok 3 wprowadź wymagane informacje w następujących polach, a następnie kliknij przycisk **Dalej**.
+4. Na stronie **Logowanie do usługi TeleMessage** w obszarze Krok 3 wprowadź wymagane informacje w poniższych polach, a następnie kliknij przycisk **Dalej**.
 
-   - **Nazwa użytkownika:** Twoja nazwa użytkownika aplikacji TeleMessage.
+   - **Nazwę użytkownika:** Nazwa użytkownika usługi TeleMessage.
 
-   - **Hasło:** Hasło aplikacji TeleMessage.
+   - **Hasło:** Twoje hasło telemessage.
 
 5. Po utworzeniu łącznika możesz zamknąć okno podręczne i przejść do następnej strony.
 
-6. Na stronie **Mapowanie użytkowników** włącz automatyczne mapowanie użytkowników. Aby włączyć mapowanie niestandardowe, przekaż plik CSV zawierający informacje o mapowaniu użytkowników, a następnie kliknij przycisk **Dalej**.
+6. Na stronie **Mapowanie użytkownika** włącz automatyczne mapowanie użytkowników. Aby włączyć mapowanie niestandardowe, przekaż plik CSV zawierający informacje o mapowaniu użytkownika, a następnie kliknij przycisk **Dalej**.
 
-7. Przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+7. Przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ** , aby utworzyć łącznik.
 
-8. Przejdź do karty **Łączniki** na stronie **Łączniki** danych w centrum zgodności, aby wyświetlić postęp procesu importowania nowego łącznika.
+8. Przejdź do karty **Łączniki** na stronie **Łączniki danych** w centrum zgodności, aby zobaczyć postęp procesu importowania nowego łącznika.
 
 ## <a name="known-issues"></a>Znane problemy
 
-- Obecnie importowanie załączników ani elementów większych niż 10 MB nie jest obsługuje. Obsługa większych elementów będzie dostępna w późniejszym terminie.
+- Obecnie nie obsługujemy importowania załączników ani elementów o rozmiarze większym niż 10 MB. Obsługa większych elementów będzie dostępna w późniejszym terminie.

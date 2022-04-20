@@ -1,11 +1,11 @@
 ---
-title: Tworzenie spraw Advanced eDiscovery w Microsoft 365 i zarządzanie nimi
+title: Tworzenie przypadków zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nimi w Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: 04/08/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -19,102 +19,102 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: W tym artykule opisano, jak tworzyć sprawy Advanced eDiscovery i zarządzać nimi. Pierwszym krokiem jest utworzenie sprawy i rozpoczęcie korzystania Advanced eDiscovery funkcji.
-ms.openlocfilehash: f647421dcaba3d50f1cb8b7a6b1e58a792f23403
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: W tym artykule opisano sposób tworzenia przypadków zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) i zarządzania nimi. Pierwszym krokiem jest utworzenie sprawy i rozpoczęcie korzystania z funkcji i funkcji zbierania elektronicznych materiałów dowodowych (Premium).
+ms.openlocfilehash: fb14c5ce7f1ffca6216e8d592c5cc1c7ff2802ce
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62998911"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946424"
 ---
-# <a name="create-and-manage-an-advanced-ediscovery-case"></a>Tworzenie sprawy Advanced eDiscovery i zarządzanie nimi
+# <a name="create-and-manage-an-ediscovery-premium-case"></a>Tworzenie sprawy zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nią
 
-Po skonfigurowaniu Advanced eDiscovery i przypisaniu uprawnień [](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) menedżerom zbierania elektronicznych materiałów dowodowych w Twojej organizacji, które będą zarządzać sprawami, następnym krokiem jest utworzenie sprawy i zarządzanie nią.
+Po skonfigurowaniu usługi Microsoft Purview eDiscovery (Premium) i [przypisaniu uprawnień do menedżerów zbierania elektronicznych materiałów](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) dowodowych w organizacji, którzy będą zarządzać sprawami, następnym krokiem jest utworzenie sprawy i zarządzanie nią.
 
-Ten artykuł zawiera również ogólne omówienie korzystania ze spraw do zarządzania przepływem pracy Advanced eDiscovery w przypadku postępowania sądowego lub innego rodzaju dochodzenia.
+Ten artykuł zawiera również ogólne omówienie przypadków użycia do zarządzania przepływem pracy zbierania elektronicznych materiałów dowodowych (Premium) w przypadku sprawy prawnej lub innych typów dochodzeń.
 
 ## <a name="create-a-case"></a>Tworzenie sprawy
 
-Wykonaj poniższe czynności, aby utworzyć sprawę i dodać członków. Użytkownik, który tworzy sprawę, jest automatycznie dodawany jako członek. Członkowie sprawy mogą uzyskać dostęp do sprawy w Centrum zgodności platformy Microsoft 365 i wykonywać Advanced eDiscovery zadania.
+Wykonaj poniższe kroki, aby utworzyć przypadek i dodać członków. Użytkownik tworzący sprawę jest automatycznie dodawany jako członek. Członkowie sprawy mogą uzyskać dostęp do sprawy w portalu zgodności usługi Microsoft Purview i wykonywać zadania zbierania elektronicznych materiałów dowodowych (Premium).
 
-1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> i zaloguj się przy użyciu poświadczeń dla konta użytkownika, do których przypisano uprawnienia zbierania elektronicznych materiałów dowodowych. Członkowie grupy ról Zarządzanie organizacją mogą również tworzyć Advanced eDiscovery spraw.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a> i zaloguj się przy użyciu poświadczeń konta użytkownika, do których przypisano uprawnienia zbierania elektronicznych materiałów dowodowych. Członkowie grupy ról Zarządzanie organizacją mogą również tworzyć przypadki zbierania elektronicznych materiałów dowodowych (Premium).
 
-2. W lewym okienku nawigacji okna Centrum zgodności platformy Microsoft 365 kliknij pozycję Pokaż **wszystko, a** następnie wybierz **pozycję zbierania elektronicznych** >  materiałów dowodowychAdvanced, a następnie wybierz <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**kartę** Sprawy</a>.
+2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Pokaż wszystko**, a następnie wybierz pozycję **eDiscoveryAdvanced** > , a następnie wybierz <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">kartę **Sprawy**</a>.
 
-3. Wybierz **pozycję Utwórz sprawę**.
+3. Wybierz **pozycję Utwórz przypadek**.
 
-4. Na stronie **wysuwana nowa sprawa zbierania** elektronicznych materiałów dowodowych nadaj sprawę nazwę (wymagane), a następnie wpisz opcjonalny numer sprawy i opis. Nazwa sprawy musi być unikatowa w Twojej organizacji.
+4. Na stronie wysuwanej **Nowy przypadek zbierania elektronicznych** materiałów dowodowych podaj nazwę sprawy (wymagane), a następnie wpisz opcjonalny numer i opis sprawy. Nazwa sprawy musi być unikatowa w organizacji.
 
-5. Kliknij **przycisk Zapisz** , aby utworzyć sprawę.
+5. Kliknij przycisk **Zapisz** , aby utworzyć przypadek.
 
-   Zostanie utworzona nowa sprawa **i Ustawienia w** nowej sprawie.
+   Zostanie utworzony nowy przypadek i zostanie wyświetlona karta **Ustawienia** w nowym przypadku.
 
-6. Na **kafelku & uprawnień** dostępu na **karcie** Ustawienia kliknij pozycję **Wybierz**.
+6. Na kafelku **Uprawnienia & dostępu** na karcie **Ustawienia** kliknij pozycję **Wybierz**.
 
-7. Na stronie **wysuwana Zarządzanie tą sprawą** w obszarze **Zarządzanie** członkami kliknij pozycję **Dodaj** , aby dodać członków do sprawy.
+7. Na **zarządzać tym przypadku** wysuwany w obszarze **Zarządzanie członkami**, kliknij przycisk **Dodaj** , aby dodać członków do sprawy.
 
-8. Na liście osób zaznacz pole wyboru obok nazwisk osób, które chcesz dodać do sprawy. Jak wyjaśniono wcześniej, upewnij się, że osobom, które dodasz do sprawy, zostały przypisane odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych.
+8. Na liście osób zaznacz pole wyboru obok nazw osób, które chcesz dodać do sprawy. Jak wyjaśniono wcześniej, upewnij się, że osobom dodanym do sprawy przypisano odpowiednie uprawnienia do zbierania elektronicznych materiałów dowodowych.
 
-9. Po wybraniu osób, które mają być dodawać jako członków sprawy, kliknij pozycję **Dodaj**.
+9. Po wybraniu osób, które mają zostać dodane jako członkowie sprawy, kliknij przycisk **Dodaj**.
 
-10. Na stronie **wysuwana Zarządzanie tą sprawą** kliknij pozycję **Zapisz** , aby zapisać nową listę członków sprawy.
+10. Na stronie **Manage this case flyout (Zarządzanie tym przypadkiem** ) kliknij pozycję **Zapisz** , aby zapisać nową listę członków sprawy.
 
-11. Kliknij **kartę Narzędzia** główne, aby przejść do strony głównej sprawy.
+11. Kliknij kartę **Narzędzia** główne, aby przejść do strony głównej sprawy.
 
 ## <a name="manage-the-workflow"></a>Zarządzanie przepływem pracy
 
-Aby rozpocząć korzystanie z Advanced eDiscovery, oto podstawowy przepływ pracy, który jest dostosowany do typowych praktyk zbierania [elektronicznych materiałów dowodowych](advanced-ediscovery-edrm.md). W każdej z tych czynności wyróżnimy też niektóre rozszerzone funkcje Advanced eDiscovery, które można eksplorować.
+Aby rozpocząć korzystanie z eDiscovery (Premium), oto podstawowy przepływ pracy, który jest zgodny z [typowymi praktykami zbierania elektronicznych materiałów dowodowych](advanced-ediscovery-edrm.md). W każdym z tych kroków wyróżnimy również niektóre rozszerzone funkcje zbierania elektronicznych materiałów dowodowych (Premium), które można eksplorować.
 
-![Advanced eDiscovery przepływu pracy.](../media/AeDWorkflow.png)
+![Przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium).](../media/AeDWorkflow.png)
 
-1. **[Dodaj do sprawy także](add-custodians-to-case.md) źródła danych, [które nie są](non-custodial-data-sources.md) odimowywne**. Pierwszym krokiem po utworzeniu sprawy jest dodanie osób- opiekunów. Jest *to osoba* , która ma kontrolę administracyjną nad dokumentem lub plikiem elektronicznym, która może być istotny w danej sprawie. Ponadto można dodawać źródła danych, które nie są skojarzone z określonym użytkownikiem, ale mogą być istotne dla danej sprawy.
+1. **[Dodaj opiekunów](add-custodians-to-case.md) i [źródła danych bez opieki](non-custodial-data-sources.md) do sprawy**. Pierwszym krokiem po utworzeniu sprawy jest dodanie opiekunów. *Opiekun to* osoba mająca kontrolę administracyjną nad dokumentem lub elektroniczną dokumentacją, która może być istotna dla sprawy. Ponadto można dodawać źródła danych, które nie są skojarzone z określonym użytkownikiem, ale mogą być istotne dla danego przypadku.
 
-   Oto niektóre zdarzenia, które mogą się zdarzyć (lub które można wykonać) podczas dodawania osób do sprawy:
+   Oto kilka rzeczy, które się zdarzają (lub które można zrobić) po dodaniu opiekunów do sprawy:
 
-   - Dane w skrzynce pocztowej usługi Exchange użytkownika, koncie programu OneDrive i wszystkich grupach Microsoft Teams lub Yammer, których jest członkiem, mogą zostać "oznaczone" jako dane częściowe w tym przypadku.
+   - Dane w skrzynce pocztowej Exchange opiekuna, koncie OneDrive oraz wszelkich grupach Microsoft Teams lub Yammer, do których należy opiekun, mogą być w tym przypadku "oznaczone" jako dane powiernicze.
   
-   - Dane pochłoną się ponownie (przez proces o nazwie *Indeksowanie zaawansowane*). Ułatwia to optymalizację wyszukiwania w następnym kroku.
+   - Dane opiekuna są ponownie indeksowane (przez proces o nazwie *Zaawansowane indeksowanie*). Pomaga to zoptymalizować wyszukiwanie w następnym kroku.
   
-   - Możesz umieścić w tym miejscu dane, które nie są już odłogiem. Zachowuje to dane, które mogą być istotne dla danej sprawy w trakcie badania.
+   - Możesz wstrzymać dane opiekuna. Pozwala to zachować dane, które mogą być istotne dla sprawy podczas badania.
   
-   - Z innymi źródłami danych można skojarzyć opiekuna (na przykład witrynę programu SharePoint lub grupę programu Microsoft 365 z opiekunem), aby można było ponownie zindeksowane dane, umieścić je w posiadaniu i wyszukiwać, podobnie jak dane w skrzynce pocztowej użytkownika lub koncie OneDrive.
+   - Inne źródła danych można skojarzyć z opiekunem (na przykład można skojarzyć witrynę SharePoint lub grupę Microsoft 365 z opiekunem), aby te dane mogły zostać ponownie wyeksportowane, wstrzymane i przeszukane, podobnie jak dane w skrzynce pocztowej opiekuna lub koncie OneDrive.
 
-   - Przepływ pracy [komunikacji w](managing-custodian-communications.md) programie Advanced eDiscovery do wysyłania powiadomień o wstrzymaniu ze względu na prawo do osób odbieranych.
+   - Przepływ [pracy komunikacji](managing-custodian-communications.md) w usłudze eDiscovery (Premium) umożliwia wysłanie powiadomienia o blokadzie prawnej do opiekunów.
 
-2. **[Zbierz odpowiednią zawartość ze źródeł danych](create-draft-collection.md)**. Po dodaniu do sprawy materiałów do przechowywania danych i źródeł danych, które nie są zbędne, użyj wbudowanego narzędzia do zbierania danych, aby wyszukać w tych źródłach danych zawartość, która może być istotny w danej sytuacji. Za pomocą słów kluczowych, właściwości i warunków można [](building-search-queries.md) tworzyć zapytania wyszukiwania zwracające wyniki wyszukiwania z danymi, które najprawdopodobniej są istotne dla danej sprawy. Możesz również:
+2. **[Zbierz odpowiednią zawartość ze źródeł danych](create-draft-collection.md)**. Po dodaniu opiekunów i źródeł danych bez nadzoru do sprawy użyj wbudowanego narzędzia kolekcji, aby wyszukać w tych źródłach danych zawartość, która może być istotna dla danego przypadku. Słowa kluczowe, właściwości i warunki umożliwiają [tworzenie zapytań wyszukiwania zwracających](building-search-queries.md) wyniki wyszukiwania z danymi, które najprawdopodobniej są istotne dla danego przypadku. Możesz również:
 
-   - Wyświetl [statystyki kolekcji](collection-statistics-reports.md) , które mogą pomóc uściślić kolekcję w celu zawężenia wyników.
+   - Wyświetl [statystyki kolekcji](collection-statistics-reports.md) , które mogą ułatwić uściślanie kolekcji w celu zawężenia wyników.
 
-   - Wyświetl podgląd próbki kolekcji, aby szybko sprawdzić, czy odpowiednie dane są znalezione.
+   - Wyświetl podgląd przykładu kolekcji, aby szybko sprawdzić, czy znaleziono odpowiednie dane.
 
-   - Popraw zapytanie i ponownie uruchomić kolekcję.
+   - Popraw zapytanie i uruchom ponownie kolekcję.
 
-3. **[Zatwierdzanie kolekcji do zestawu recenzji](commit-draft-collection.md)**. Po skonfigurowaniu i zweryfikowaniu, że wyszukiwanie zwraca żądane dane, następnym krokiem jest dodanie wyników wyszukiwania do zestawu recenzji. Podczas dodawania danych do zestawu recenzji elementy są kopiowane z ich oryginalnej lokalizacji do bezpiecznej lokalizacji Storage Azure. Ponowne indeksowanie danych zapewnia dokładne i szybkie wyszukiwanie podczas przeglądania i analizowania elementów w zestawie recenzji. Do zestawu recenzji można również dodawać Office 365 [inne niż dane](load-non-office-365-data-into-a-review-set.md).
+3. **[Zatwierdzanie kolekcji do zestawu przeglądów](commit-draft-collection.md)**. Po skonfigurowaniu i zweryfikowaniu, że wyszukiwanie zwraca żądane dane, następnym krokiem jest dodanie wyników wyszukiwania do zestawu przeglądów. Po dodaniu danych do zestawu przeglądów elementy są kopiowane z ich oryginalnej lokalizacji do bezpiecznej lokalizacji Storage platformy Azure. Dane są ponownie analizowane, aby zoptymalizować je pod kątem dokładnych i szybkich wyszukiwań podczas przeglądania i analizowania elementów w zestawie przeglądów. Ponadto możesz również [dodać dane inne niż Office 365 do zestawu przeglądów](load-non-office-365-data-into-a-review-set.md).
 
-   Istnieje również specjalny rodzaj zestawu recenzji, do który możesz dodawać dane, nazywany *zestawem recenzji konwersacji*. Te typy zestawów recenzji zapewniają możliwości rekonstruowania, przeglądania i eksportowania konwersacji z wątkami, takich jak konwersacje Microsoft Teams. Aby uzyskać więcej informacji, zobacz [Przeglądanie konwersacji w Advanced eDiscovery](conversation-review-sets.md).
+   Istnieje również specjalny rodzaj zestawu przeglądów, do których można dodawać dane, nazywany *zestawem przeglądów konwersacji*. Te typy zestawów przeglądów zapewniają możliwości rekonstrukcji konwersacji do rekonstruowania, przeglądania i eksportowania konwersacji wątkowych, takich jak te w Microsoft Teams. Aby uzyskać więcej informacji, zobacz [Przeglądanie konwersacji w usłudze eDiscovery (Premium)](conversation-review-sets.md).
 
-4. **Przeglądanie i analizowanie danych w zestawie recenzji**. Teraz, gdy dane są w zestawie recenzji, możesz użyć wielu różnych narzędzi i możliwości do wyświetlania i analizowania danych sprawy w celu ograniczenia zestawu danych do tego, co jest najbardziej istotne dla sprawy, której badasz. Poniżej znajdziesz listę niektórych narzędzi i możliwości, których można używać w ramach tego procesu.
+4. **Przeglądanie i analizowanie danych w zestawie przeglądów**. Teraz, gdy dane są w zestawie przeglądów, możesz użyć szerokiej gamy narzędzi i możliwości, aby wyświetlać i analizować dane przypadków w celu zmniejszenia zestawu danych do tego, co jest najbardziej istotne dla badanego przypadku. Poniżej przedstawiono listę niektórych narzędzi i możliwości, których można użyć podczas tego procesu.
 
-   - [Wyświetlanie dokumentów](view-documents-in-review-set.md). Obejmuje to wyświetlanie metadanych dla każdego dokumentu w zestawie recenzji oraz wyświetlanie dokumentu w jego natywnej wersji lub w wersji tekstowej.
+   - [Wyświetlanie dokumentów](view-documents-in-review-set.md). Obejmuje to wyświetlanie metadanych dla każdego dokumentu w zestawie przeglądów i wyświetlanie dokumentu w jego natywnej wersji lub wersji tekstowej.
 
-   - [Tworzenie zapytań i filtrów](review-set-search.md). Zapytania wyszukiwania tworzy się przy użyciu różnych kryteriów wyszukiwania (w tym możliwości przeszukiwania [](document-metadata-fields-in-advanced-ediscovery.md) wszystkich właściwości metadanych pliku w celu uściślenia i zwątowania danych dotyczących sprawy do tego, co jest najważniejsze. Możesz również użyć filtrów zestawu recenzji, aby szybko zastosować inne warunki do wyników zapytania wyszukiwania, aby jeszcze bardziej uściślić te wyniki. 
+   - [Tworzenie zapytań i filtrów](review-set-search.md). Zapytania wyszukiwania można tworzyć przy użyciu różnych kryteriów wyszukiwania (w tym możliwości przeszukiwania wszystkich [właściwości metadanych pliku](document-metadata-fields-in-advanced-ediscovery.md) w celu dalszego uściślenia i usunięcia danych sprawy do tego, co jest najbardziej istotne dla danego przypadku. Możesz również użyć filtrów zestawu przeglądów, aby szybko zastosować inne warunki do wyników zapytania wyszukiwania w celu dalszego uściślenia tych wyników. 
 
-   - [Tworzenie i używanie tagów](tagging-documents.md). Tagi można stosować do dokumentów w zestawie recenzji, aby określić, które z nich są reagują (lub nie reagują na nie), a następnie używać tych tagów podczas tworzenia zapytań wyszukiwania, aby uwzględnić lub wykluczyć oznakowane dokumenty. Możesz również otagować dokumenty, aby określić, które dokumenty mają zostać wyeksportowane.
+   - [Tworzenie tagów i korzystanie z nich](tagging-documents.md). Tagi można zastosować do dokumentów w zestawie przeglądów, aby określić, które elementy reagują (lub nie reagują na przypadek), a następnie używać tych tagów podczas tworzenia zapytań wyszukiwania w celu uwzględnienia lub wykluczenia otagowanych dokumentów. Możesz również otagować, aby określić, które dokumenty mają zostać wyeksportowane.
 
-   - [Donosz adnotacje do dokumentów i redaguj je](view-documents-in-review-set.md#annotate-view). Do dodawania adnotacji do dokumentów i redagowania zawartości w dokumentach jako produktu służbowego można używać narzędzia adnotacji w recenzji. Podczas przeglądania jest generowana wersja PDF dokumentu z adnotacjami lub redagowana, aby zmniejszyć ryzyko eksportowania nieoznaczonej natywnej wersji dokumentu.
+   - [Adnotowanie i redagowanie dokumentów](view-documents-in-review-set.md#annotate-view). Narzędzie adnotacji w recenzji umożliwia dodawanie adnotacji do dokumentów i redagowanie zawartości w dokumentach jako produktu roboczego. Podczas przeglądu generujemy wersję dokumentu z adnotowanymi lub zredagowanymi dokumentami w formacie PDF, aby zmniejszyć ryzyko eksportowania niezredagowanej wersji natywnej dokumentu.
 
-   - [Analizowanie danych dotyczących sprawy](analyzing-data-in-review-set.md). Funkcje analizy w p Advanced eDiscovery są bardzo zaawansowane. Po uruchomieniu analizy danych w zestawie recenzji przeprowadzamy analizę, taką jak niemal zduplikowane wykrywanie, wątkowanie wiadomości e-mail i motywy, które mogą zmniejszyć liczbę dokumentów do przejrzenia. Generujemy również raporty analizy, które podsumowują wyniki uruchomionej analizy. Jak wyjaśniono wcześniej, uruchomienie analizy uruchamia również [model wykrywania uprawnień klienta-obsługi klienta](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
+   - [Analizowanie danych przypadków](analyzing-data-in-review-set.md). Funkcja analizy w usłudze eDiscovery (Premium) jest zaawansowana. Po uruchomieniu analizy danych w zestawie przeglądów przeprowadzamy analizy, takie jak wykrywanie niemal duplikatów, wątki wiadomości e-mail i motywy, które mogą pomóc zmniejszyć liczbę dokumentów, które należy przejrzeć. Generujemy również raporty analizy, które podsumowują wynik uruchamiania analizy. Jak wcześniej wyjaśniono, uruchomienie analizy uruchamia również [model wykrywania uprawnień klienta-adwokata](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
-5. **Eksportowanie i pobieranie danych sprawy**. Ostatnim krokiem po zgromadzeniu, przejrzeniu i przeanalizowaniu danych sprawy jest wyeksportowanie ich z usługi Advanced eDiscovery do przeglądu zewnętrznego lub do przeglądu przez osoby spoza zespołu badania. Eksportowanie danych jest procesem dwuetapowym. Pierwszym krokiem jest [wyeksportowanie](export-documents-from-review-set.md) danych z zestawu recenzji i skopiowanie ich do innej lokalizacji usługi Azure Storage (udostępnianej przez firmę Microsoft lub zarządzanej przez Twoją organizację). Następnie za pomocą Eksplorator usługi Azure Storage [pobrać](download-export-jobs.md) dane na komputer lokalny. Oprócz wyeksportowanych plików danych pakiet eksportu zawiera również raport eksportu, raport podsumowujący i raport o błędach.
+5. **Eksportowanie i pobieranie danych przypadków**. Ostatnim krokiem po zebraniu, przejrzeniu i przeanalizowaniu danych przypadków jest wyeksportowanie ich z zbierania elektronicznych materiałów dowodowych (Premium) do przeglądu zewnętrznego lub do przeglądu przez osoby spoza zespołu dochodzeniowego. Eksportowanie danych jest procesem dwuetapowym. Pierwszym krokiem jest [wyeksportowanie](export-documents-from-review-set.md) danych z zestawu przeglądów i skopiowanie ich do innej lokalizacji Storage platformy Azure (udostępnionej przez firmę Microsoft lub jednej zarządzanej przez organizację). Następnie użyjesz Eksplorator usługi Azure Storage, aby [pobrać](download-export-jobs.md) dane na komputer lokalny. Oprócz wyeksportowanych plików danych zawiera on również raport eksportu, raport podsumowania i raport o błędach.
 
-## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscovery architekturze
+## <a name="ediscovery-premium-architecture"></a>Architektura zbierania elektronicznych materiałów dowodowych (Premium)
 
-Oto diagram architektury przedstawiający uniwersalny przepływ pracy programu Advanced eDiscovery w środowisku jednolokalowym i w środowisku wielolokalowym oraz przepływ danych, który jest wyrównany do modelu EDT ([Electronic Discovery Reference Model](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)).
+Oto diagram architektury przedstawiający kompleksowy przepływ pracy zbierania elektronicznych elektronicznych materiałów dowodowych (Premium) w środowisku z jednym obszarem geograficznym i w środowisku z wieloma lokalizacjami geograficznymi oraz kompleksowy przepływ danych zgodny z [modelem referencyjnym odnajdywania elektronicznego](overview-ediscovery-20.md#ediscovery-premium-alignment-with-the-electronic-discovery-reference-model).
 
-[![Plakat modelu: architektura Advanced eDiscovery w Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Plakat modelu: Architektura zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Wyświetl jako obraz](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
-[Pobierz jako plik PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+[Pobieranie jako pliku PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
-[Pobierz jako plik Visio pliku](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+[Pobierz jako plik Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

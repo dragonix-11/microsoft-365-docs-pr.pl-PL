@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie konfiguracją istotności w programie Advanced eDiscovery
+title: Zarządzanie konfiguracją istotności w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,59 +15,59 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
-description: Zapoznaj się z zaleceniami w zakresie konfigurowania szkolenia z tematu istotności Advanced eDiscovery oceny plików na podstawie ich istotności i wygenerowania wyników analitycznych.
-ms.openlocfilehash: bed912c0631511e9d3d4839e5d6925de79554163
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Zapoznaj się z zaleceniami dotyczącymi konfigurowania trenowania istotności w usłudze eDiscovery (Premium), aby oceniać pliki według ich istotności i generować wyniki analityczne.
+ms.openlocfilehash: 66afbb3b8e7d8c2a4e266aa7fb63dc8434f9c8a6
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987765"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946028"
 ---
-# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Zarządzanie konfiguracją istotności w Advanced eDiscovery (klasyczne)
+# <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>Zarządzanie konfiguracją istotności w usłudze eDiscovery (Premium) (wersja klasyczna)
 
 > [!NOTE]
-> Advanced eDiscovery organizacji wymaga Office 365 E3 z dodatku Advanced Compliance lub subskrypcji E5. Jeśli nie masz tego planu i chcesz wypróbować go Advanced eDiscovery, możesz utworzyć konta w celu wypróbowania Office 365 Enterprise [E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Usługa Microsoft Purview eDiscovery (Premium) wymaga Office 365 E3 z dodatkiem Zaawansowana zgodność lub subskrypcją E5 dla organizacji. Jeśli nie masz tego planu i chcesz spróbować zbierania elektronicznych materiałów dowodowych (Premium), możesz [utworzyć konto próbne Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- Advanced eDiscovery technologii Istotność wykorzystuje oprogramowanie do oceny z przewodnikiem ekspertów do oceniania wyników na jego istotność. Advanced eDiscovery oceny istotności można użyć do oceny wczesnego przypadku, cullinga i przeglądu próbki plików. 
+ Technologia eDiscovery (Premium) Relevance wykorzystuje specjalistyczne oprogramowanie do oceniania plików według ich istotności. Istotność zbierania elektronicznych materiałów dowodowych (Premium) może być używana do wczesnej oceny przypadków (ECA), uboju i przeglądu przykładów plików. 
   
- Advanced eDiscovery do szkolenia na temat istotności oraz do znakowania plików poszczególnych przypadków. Advanced eDiscovery się z przeszkolonych próbek odpowiednich i nieuczonych plików w celu zapewnienia wyników istotności dla każdego pliku i generuje wyniki analityczne, których można użyć w trakcie procesu przeglądu pliku i po jego zakończeniu. 
+ Funkcja zbierania elektronicznych materiałów dowodowych (Premium) obejmuje składniki do trenowania istotności i tagowania plików istotnych dla danego przypadku. Funkcja eDiscovery (Premium) uczy się z wytrenowanych przykładów odpowiednich i nieistotnych plików w celu zapewnienia wyników istotności dla każdego pliku i generuje wyniki analityczne, które mogą być używane podczas procesu przeglądu plików i po nich. 
   
-## <a name="guidelines-for-setting-up-relevance-training"></a>Wskazówki dotyczące konfigurowania szkolenia na temat istotności
+## <a name="guidelines-for-setting-up-relevance-training"></a>Wytyczne dotyczące konfigurowania trenowania istotności
 
- W oknie Sprawy zbierania elektronicznych materiałów dowodowych  z wyprzedzeniem zaznacz sprawę i kliknij pozycję **Przejdź do sprawy**. Kliknij **pozycję Konfiguracja** \> **istotności.** Postępuj zgodnie z tymi zalecanymi wskazówkami, aby skonfigurować istotność. 
+ W obszarze Z wyprzedzeniem zbierania elektronicznych materiałów dowodowych w oknie **Sprawy** wybierz przypadek i kliknij pozycję **Przejdź do sprawy**. Kliknij **pozycję Konfiguracja istotności**\>. Postępuj zgodnie z tymi zalecanymi wytycznymi, aby skonfigurować istotność. 
   
-- **Otagowanie**: Skuteczność procesu szkolenia dotyczącej iteracyjnych istotności zależy od możliwości eksperta w zakresie precyzyjnego i spójnego otagowania próbek plików.
+- **Tagowanie**: skuteczność iteracyjnego procesu trenowania istotności zależy od możliwości otagowania przykładów plików przez eksperta z dokładnością i spójnością.
 
-- **Problemy dotyczące sprawy**:
+- **Problemy ze sprawami**:
   
-  - W przypadku każdego problemu należy korzystać z tego samego eksperta w całym procesie szkolenia dotyczącej istotności. Jednoczesne znakowanie tego samego problemu przez wielu ekspertów nie jest dozwolone.
+  - W przypadku każdego problemu należy użyć tego samego eksperta w całym procesie trenowania istotności. Jednoczesne tagowanie tego samego problemu przez wielu ekspertów jest niedozwolone.
   
-  - Ustal, czy każda grupa plików dotyczy tylko konkretnego problemu.
+  - Określ, czy każda grupa plików jest istotna tylko dla określonego problemu.
 
-  - Jeśli problem jest zbyt ogólnie zdefiniowany, może Advanced eDiscovery zbyt wiele plików, które nie są istotne. Jeśli problem zostanie zdefiniowany zbyt wąsko, proces szkolenia z tematem Istotność może potrwać dłużej. 
+  - Jeśli problem jest zdefiniowany zbyt ogólnie, zbierania elektronicznych materiałów dowodowych (Premium) może przynieść zbyt wiele plików, które nie są istotne. Jeśli problem jest zdefiniowany zbyt wąsko, proces trenowania istotności może zająć więcej czasu. 
 
-  - W trakcie każdego cyklu szkoleń dotyczące istotności program Advanced eDiscovery się na jednym aktywnym problemie, a następnie odpowiednio wyświetlane są pośrednie wyniki próbki.
+  - Podczas każdego cyklu trenowania istotności funkcja eDiscovery (Premium) koncentruje się na pojedynczym aktywnym problemie, a wyniki przykładu pośredniego są odpowiednio wyświetlane.
 
-  - W scenariuszu wielu problemów tryb próbkowania umożliwia uwzględnianie wyboru problemów w przetwarzaniu. Problemy zdefiniowane jako "wyłączone" nie są obsługiwane, dopóki tryb próbkowania nie zostanie zmieniony. Problem może być "bezczynny" lub "wł" tylko dla jednego eksperta.
+  - W scenariuszu z wieloma problemami tryb próbkowania umożliwia uwzględnienie wyboru problemów w przetwarzaniu. Problemy zdefiniowane jako "wyłączone" nie są obsługiwane, dopóki ich tryb próbkowania nie zostanie zmieniony. Problem może być "bezczynny" lub "włączony" tylko dla jednego eksperta.
 
-  - Advanced eDiscovery można użyć do wygenerowania plików uprawnień kandydata. Skonfiguruj osobny problem z uprawnieniami. Jeśli to możliwe, najpierw przeszkolij i zwądek w celu oceny jego istotności, a następnie przeszkolij jedynie w celu przeszkolić w celu przeszkolinia wyłącznie na tym zestawie (ponowne załadowanie zestawu jako oddzielnej sprawy). 
+  - eDiscovery (Premium) może służyć do generowania plików uprawnień kandydata. Skonfiguruj osobny problem dla uprawnień. Jeśli to możliwe, najpierw wytrenuj i ubite, aby uzyskać istotność, a następnie wytrenuj tylko dla zestawu ubitego (przeładuj zestaw ubity jako osobny przypadek). 
 
-  - Obliczenia wsadowe można wykonywać tylko wtedy, gdy nie ma otwartych próbek (po kliknięciu pozycji Obliczenie wsadu zostanie wyświetlona lista użytkowników z otwartymi próbkami). Aby "zamknąć" próbki innych użytkowników (należy to zrobić tylko wtedy, gdy ci użytkownicy nie otagują tych przykładów), administrator może użyć narzędzia "Modyfikowanie istotności" z opcją "Wszyscy użytkownicy, przykład".
+  - Obliczenia usługi Batch można wykonać tylko wtedy, gdy nie ma otwartych przykładów (po kliknięciu pozycji Obliczenia usługi Batch zostanie wyświetlona lista użytkowników z otwartymi przykładami). Aby "zamknąć" przykłady innych użytkowników (powinno to być wykonywane tylko wtedy, gdy ci użytkownicy nie tagują tych przykładów), administrator może użyć narzędzia "Modyfikuj istotność" z opcją "Przykład wszyscy użytkownicy".
 
-- **Metadane**: Advanced eDiscovery się na zawartości. W ramach kryteriów istotności nie są rozważane metadane.
+- **Metadane**: wykrywanie elektroniczne (Premium) koncentruje się na zawartości. Nie uwzględnia metadanych jako części kryteriów istotności.
 
-- **Bogatyość**: Jeśli po zakończeniu oceny richness danego problemu wynosi mniej niż 3%, rozważ iniekowanie szkolenia dotyczące istotności przy użyciu znanych i nie istotnych plików.
+- **Bogactwo**: jeśli wartość richness dla problemu jest mniejsza niż 3% po ocenie, rozważ rozstawienie szkolenia istotności ze znanymi odpowiednimi i nieistotnymi plikami.
 
-- **Rozmiar pliku**: Duże pliki (ponad 5 242 880 znaków wyodrębninego tekstu) są ignorowane w istotności. Pliki nie uczestniczą w procesie szkoleniowym nad istotnością i po obliczeniu partii nie otrzymuje się wyników oceny istotności. Do zestawu oceniania można dodać pliki o rozmiarze ponad 5 MB.
+- **Rozmiar pliku**: Duże pliki (ponad 5 242 880 znaków wyodrębnianego tekstu) są ignorowane w polu Istotność. Pliki nie uczestniczą w procesie trenowania istotności i nie otrzymują oceny istotności po obliczeniu usługi Batch. Pliki o rozmiarze powyżej 5 MB można uwzględnić w zestawie oceny.
 
 ## <a name="setting-up-case-issues"></a>Konfigurowanie problemów ze sprawami
 
-Parametry opisane w tej sekcji są dostępne w sekcji Advanced eDiscovery **Istotność** \> **.**
+Parametry opisane w tej sekcji są dostępne w **konfiguracji istotności** \> zbierania elektronicznych materiałów dowodowych (Premium).
   
-- Problemy trzeba przypisać do użytkownika, który przeszkoli pliki.
+- Problemy muszą być przypisane do użytkownika, który będzie szkolił pliki.
 
-- Zaimportowane pliki należy następnie dodać do przetwarzanego ładowania.
+- Następnie zaimportowane pliki muszą zostać dodane do przetworzonego obciążenia.
 
-- Starannie zdefiniuj i organizuj problemy, ponieważ może to mieć wpływ na wyniki szkolenia dotyczące istotności.
+- Dokładnie zdefiniuj i organizuj problemy, ponieważ może to mieć wpływ na wyniki trenowania istotności.
 
-Po skonfigurowaniu parametrów recenzent/ekspert może rozpocząć szkolenie plików na **karcie Istotność** .
+Po ustawieniu parametrów recenzent/ekspert może rozpocząć trenowanie plików na karcie **Istotność** .

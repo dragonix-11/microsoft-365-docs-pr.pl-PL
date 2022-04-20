@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować i użyć łącznika danych zbierania elektronicznych materiałów dowodowych usługi Slack dostarczonego przez firmę Microsoft w celu importowania i archiwizowania danych wiadomości błyskawicznych.
-ms.openlocfilehash: 7ff8140ee75c146f79f14fbd474ab4e6780156ad
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 902a42e78dc92424c2143ffce548a9c8791609ea
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760894"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950682"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Konfigurowanie łącznika do archiwizowania danych zbierania elektronicznych materiałów dowodowych usługi Slack (wersja zapoznawcza)
 
-Łącznik danych usługi Slack eDiscovery udostępniany przez firmę Microsoft ułatwia importowanie i archiwizowanie danych wiadomości błyskawicznych (takich jak wiadomości, załączniki, linki i poprawki) z obszarów roboczych usługi Slack w organizacji w celu Microsoft 365. Łącznik danych pobiera dane z interfejsu API usługi Slack, konwertuje je na format wiadomości e-mail, a następnie importuje je do skrzynek pocztowych użytkowników w Microsoft 365. Po zaimportowaniu danych usługi Slack możesz zastosować rozwiązania zgodności, takie jak blokada postępowania sądowego, Advanced eDiscovery, zgodność z komunikacją i ustawienia przechowywania do zawartości usługi Slack. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika danych zbierania elektronicznych materiałów dowodowych usługi Slack może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Łącznik danych usługi Slack eDiscovery udostępniany przez firmę Microsoft ułatwia importowanie i archiwizowanie danych wiadomości błyskawicznych (takich jak wiadomości, załączniki, linki i poprawki) z obszarów roboczych usługi Slack w organizacji w celu Microsoft 365. Łącznik danych pobiera dane z interfejsu API usługi Slack, konwertuje je na format wiadomości e-mail, a następnie importuje je do skrzynek pocztowych użytkowników w Microsoft 365. Po zaimportowaniu danych usługi Slack można zastosować rozwiązania zgodności, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), zgodność z komunikacją i ustawienia przechowywania do zawartości usługi Slack. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika danych zbierania elektronicznych materiałów dowodowych usługi Slack może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Omówienie archiwizacji danych zbierania elektronicznych materiałów dowodowych usługi Slack
 
@@ -43,7 +43,7 @@ W poniższym omówieniu wyjaśniono proces korzystania z łącznika danych firmy
 
 - Uzyskaj nazwę użytkownika i hasło dla konta usługi Slack enterprise w organizacji. Te poświadczenia są używane do logowania się do tego konta podczas tworzenia łącznika danych. Zaleca się również automatyczne aprowizowanie użytkowników w organizacji usługi Slack skonfigurowane do korzystania z logowania jednokrotnego. [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Użytkownikowi, który tworzy łącznik usługi Slack eDiscovery, należy przypisać rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi, który tworzy łącznik usługi Slack eDiscovery, należy przypisać rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności usługi Microsoft Purview. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>Krok 1. Tworzenie łącznika zbierania elektronicznych materiałów dowodowych usługi Slack
 
@@ -113,7 +113,7 @@ Wybierz jedną z następujących opcji, aby określić użytkowników, których 
 
 ## <a name="step-5-monitor-the-slack-ediscovery-connector"></a>Krok 5. Monitorowanie łącznika zbierania elektronicznych materiałów dowodowych usługi Slack
 
-Po utworzeniu łącznika usługi Slack eDiscovery możesz wyświetlić stan łącznika w Centrum zgodności platformy Microsoft 365.
+Po utworzeniu łącznika usługi Slack eDiscovery możesz wyświetlić stan łącznika w portalu zgodności.
 
 1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com/) i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 

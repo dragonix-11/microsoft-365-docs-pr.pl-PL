@@ -15,21 +15,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych pracowników z systemu zasobów ludzkich (HR) organizacji w celu Microsoft 365. Dzięki temu dane kadrowe w zasadach zarządzania ryzykiem wewnętrznym ułatwiają wykrywanie działań określonych użytkowników, które mogą stanowić wewnętrzne zagrożenie dla organizacji.
-ms.openlocfilehash: af7af189e97f4e56f8a8a96d2ff2ebfb5788a0c3
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: e1539661c987de8642639df777602fbcf05bdcc4
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762040"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944816"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Konfigurowanie łącznika w celu importowania danych kadr
 
-Łącznik danych można skonfigurować w Centrum zgodności platformy Microsoft 365 w celu zaimportowania danych zasobów ludzkich związanych ze zdarzeniami, takimi jak rezygnacja użytkownika lub zmiana poziomu zadania użytkownika. Dane kadrowe mogą być następnie używane przez [rozwiązanie do zarządzania ryzykiem wewnętrznym](insider-risk-management.md) w celu generowania wskaźników ryzyka, które mogą ułatwić tożsamość możliwej złośliwej aktywności lub kradzieży danych przez użytkowników w organizacji.
+Łącznik danych można skonfigurować w portalu zgodności usługi Microsoft Purview, aby zaimportować dane dotyczące zasobów ludzkich związane ze zdarzeniami, takimi jak rezygnacja użytkownika lub zmiana poziomu zadania użytkownika. Dane kadrowe mogą być następnie używane przez [rozwiązanie do zarządzania ryzykiem wewnętrznym](insider-risk-management.md) w celu generowania wskaźników ryzyka, które mogą ułatwić tożsamość możliwej złośliwej aktywności lub kradzieży danych przez użytkowników w organizacji.
 
-Konfigurowanie łącznika dla danych kadr, których zasady zarządzania ryzykiem wewnętrznym mogą używać do generowania wskaźników ryzyka, polega na utworzeniu pliku CSV zawierającego dane kadr, utworzeniu aplikacji w Azure Active Directory używanej do uwierzytelniania, utworzeniu łącznika danych kadr w Centrum zgodności platformy Microsoft 365 , a następnie uruchomienie skryptu (zgodnie z harmonogramem), który pozyskuje dane kadr w plikach CSV do chmury firmy Microsoft, aby były dostępne dla rozwiązania do zarządzania ryzykiem wewnętrznym.
+Konfigurowanie łącznika dla danych kadr, których mogą używać zasady zarządzania ryzykiem wewnętrznym do generowania wskaźników ryzyka, polega na utworzeniu pliku CSV zawierającego dane hr, utworzeniu aplikacji w Azure Active Directory, która jest używana do uwierzytelniania, utworzeniu łącznika danych kadr w portalu zgodności, a następnie uruchomieniu skryptu (zgodnie z harmonogramem), który pozyskuje dane kadr w plikach CSV do chmury firmy Microsoft, aby były dostępne  rozwiązania do zarządzania ryzykiem wewnętrznym.
 
 > [!IMPORTANT]
-> Nowa wersja łącznika hr jest teraz dostępna w publicznej wersji zapoznawczej. Aby utworzyć nowy łącznik hr lub zaimportować dane dla [nowego scenariusza profilu pracownika](#csv-file-for-employee-profile-data-preview) dla scenariusza zasad opieki zdrowotnej na potrzeby zarządzania ryzykiem wewnętrznym, przejdź do strony **Łączniki danych** w Centrum zgodności platformy Microsoft 365, wybierz kartę **Łączniki**, a następnie kliknij **pozycję Dodaj łącznik > HR (wersja zapoznawcza),** aby rozpocząć konfigurowanie. Istniejące łączniki hr będą nadal działać bez żadnych zakłóceń.
+> Nowa wersja łącznika hr jest teraz dostępna w publicznej wersji zapoznawczej. Aby utworzyć nowy łącznik hr lub zaimportować dane dla [nowego scenariusza profilu pracownika](#csv-file-for-employee-profile-data-preview) dla scenariusza zasad opieki zdrowotnej na potrzeby zarządzania ryzykiem wewnętrznym, przejdź do strony **Łączniki danych** w portalu zgodności, wybierz kartę **Łączniki** , a następnie kliknij **pozycję Dodaj łącznik > HR (wersja zapoznawcza),** aby rozpocząć konfigurowanie. Istniejące łączniki hr będą nadal działać bez żadnych zakłóceń.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -37,11 +37,11 @@ Konfigurowanie łącznika dla danych kadr, których zasady zarządzania ryzykiem
 
 - Określ sposób pobierania lub eksportowania danych z systemu kadr organizacji (i regularnie) i dodaj je do plików CSV utworzonych w kroku 1. Skrypt uruchamiany w kroku 4 przekaże dane hr w plikach CSV do chmury firmy Microsoft.
 
-- Użytkownik, który tworzy łącznik hr w kroku 3, musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który tworzy łącznik hr w kroku 3, musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Przykładowy skrypt uruchomiony w kroku 4 przekaże dane kadr do chmury firmy Microsoft, aby można było ich używać w rozwiązaniu do zarządzania ryzykiem wewnętrznym. Ten przykładowy skrypt nie jest obsługiwany w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowy skrypt jest dostarczany jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowego skryptu i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-- Ten łącznik jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i w związku z tym nie są objęte zobowiązaniami dotyczącymi zgodności Microsoft 365 i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem. Aby uzyskać instrukcje krok po kroku dotyczące konfigurowania łącznika hr w środowisku GCC, zobacz [Konfigurowanie łącznika w celu importowania danych kadr w us government](import-hr-data-US-government.md).
+- Ten łącznik jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem. Aby uzyskać instrukcje krok po kroku dotyczące konfigurowania łącznika hr w środowisku GCC, zobacz [Konfigurowanie łącznika w celu importowania danych kadr w us government](import-hr-data-US-government.md).
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Krok 1. Przygotowywanie pliku CSV z danymi hr
 
@@ -167,7 +167,7 @@ W poniższej tabeli opisano każdą kolumnę w pliku CSV na potrzeby danych prze
 ### <a name="csv-file-for-employee-profile-data-preview"></a>Plik CSV dla danych profilu pracownika (wersja zapoznawcza)
 
 > [!NOTE]
-> Możliwość utworzenia łącznika hr dla danych profilu pracownika jest dostępna w publicznej wersji zapoznawczej. Aby utworzyć łącznik hr, który obsługuje dane profilu pracownika, przejdź do strony **Łączniki danych** w Centrum zgodności platformy Microsoft 365, wybierz kartę **Łączniki**, a następnie kliknij **pozycję Dodaj łącznikHR** >  **(wersja zapoznawcza)**. Wykonaj kroki, aby utworzyć łącznik w [kroku 3. Tworzenie łącznika hr](#step-3-create-the-hr-connector).
+> Możliwość utworzenia łącznika hr dla danych profilu pracownika jest dostępna w publicznej wersji zapoznawczej. Aby utworzyć łącznik hr, który obsługuje dane profilu pracownika, przejdź do strony **Łączniki danych** w portalu zgodności, wybierz kartę **Łączniki**, a następnie kliknij **pozycję Dodaj łącznikHR** >  **(wersja zapoznawcza).** Wykonaj kroki, aby utworzyć łącznik w [kroku 3. Tworzenie łącznika hr](#step-3-create-the-hr-connector).
 
 Oto przykład pliku CSV dla danych dla danych profilu pracownika.
 
@@ -256,11 +256,11 @@ Aby uzyskać instrukcje krok po kroku dotyczące tworzenia aplikacji w usłudze 
 
 ## <a name="step-3-create-the-hr-connector"></a>Krok 3. Tworzenie łącznika hr
 
-Następnym krokiem jest utworzenie łącznika hr w Centrum zgodności platformy Microsoft 365. Po uruchomieniu skryptu w kroku 4 utworzony łącznik hr pozyskuje dane kadr z pliku CSV do organizacji Microsoft 365. Przed utworzeniem łącznika upewnij się, że masz listę scenariuszy kadr i odpowiednie nazwy kolumn CSV dla każdego z nich. Podczas konfigurowania łącznika należy mapować dane wymagane dla każdego scenariusza na rzeczywiste nazwy kolumn w pliku CSV. Alternatywnie możesz przekazać przykładowy plik CSV podczas konfigurowania łącznika, a kreator pomoże zamapować nazwę kolumn na wymagane typy danych.
+Następnym krokiem jest utworzenie łącznika hr w portalu zgodności. Po uruchomieniu skryptu w kroku 4 utworzony łącznik hr pozyskuje dane kadr z pliku CSV do organizacji Microsoft 365. Przed utworzeniem łącznika upewnij się, że masz listę scenariuszy kadr i odpowiednie nazwy kolumn CSV dla każdego z nich. Podczas konfigurowania łącznika należy mapować dane wymagane dla każdego scenariusza na rzeczywiste nazwy kolumn w pliku CSV. Alternatywnie możesz przekazać przykładowy plik CSV podczas konfigurowania łącznika, a kreator pomoże zamapować nazwę kolumn na wymagane typy danych.
 
 Po wykonaniu tego kroku skopiuj identyfikator zadania wygenerowany podczas tworzenia łącznika. Identyfikator zadania będzie używany podczas uruchamiania skryptu.
 
-1. Przejdź do Centrum zgodności platformy Microsoft 365 i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a>.
+1. Przejdź do portalu zgodności i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a>.
 
 2. Na stronie **Łączniki danych** kliknij pozycję **HR (wersja zapoznawcza)**.
 
@@ -358,9 +358,9 @@ Ostatnim krokiem konfigurowania łącznika hr jest uruchomienie przykładowego s
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Krok 5. Monitorowanie łącznika hr
 
-Po utworzeniu łącznika hr i uruchomieniu skryptu w celu przekazania danych kadr można wyświetlić łącznik i przekazać stan w Centrum zgodności platformy Microsoft 365. Jeśli planujesz regularne uruchamianie skryptu automatycznie, możesz również wyświetlić bieżący stan po ostatnim uruchomieniu skryptu.
+Po utworzeniu łącznika hr i uruchomieniu skryptu w celu przekazania danych kadr można wyświetlić łącznik i przekazać stan w portalu zgodności. Jeśli planujesz regularne uruchamianie skryptu automatycznie, możesz również wyświetlić bieżący stan po ostatnim uruchomieniu skryptu.
 
-1. Przejdź do Centrum zgodności platformy Microsoft 365 i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a>.
+1. Przejdź do portalu zgodności i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a>.
 
 2. Kliknij kartę **Łączniki** , a następnie wybierz łącznik HR, aby wyświetlić stronę wysuwaną. Ta strona zawiera właściwości i informacje o łączniku.
 

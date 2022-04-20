@@ -1,5 +1,5 @@
 ---
-title: Usuwanie elementów z folderu Elementy odzyskiwalne w chmurze skrzynki pocztowej w chmurze
+title: Usuwanie elementów w folderze Elementy możliwe do odzyskania
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,86 +16,86 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: Dowiedz się, jak administratorzy mogą usuwać elementy z folderu Elementy do odzyskania użytkownika Exchange Online skrzynki pocztowej użytkownika, nawet jeśli ta skrzynka pocztowa została umieszczona w prawnych skrzynkach pocztowych.
+description: Dowiedz się, jak administratorzy mogą usuwać elementy w folderze elementów możliwych do odzyskania użytkownika dla skrzynki pocztowej Exchange Online, nawet jeśli ta skrzynka pocztowa została wstrzymana ze względów prawnych.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: c349166477b610e48fd3a1b63c27d4dd4188012c
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 29519b61d4a32b03772cfddba9183d3568afc209
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "63015758"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950252"
 ---
-# <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Usuwanie elementów z folderu Elementy odzyskiwalne w chmurze skrzynek pocztowych w chmurze
+# <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Usuwanie elementów w folderze Elementy możliwe do odzyskania w magazynach chmurowych skrzynek pocztowych
 
-Folder Elementy odzyskiwalne dla skrzynki Exchange Online pocztowej istnieje, aby chronić się przed przypadkowym lub złośliwym usunięciem. Ponadto służy do przechowywania elementów, które są zachowywane i dostępne przez funkcje zgodności, takie jak blokady i wyszukiwania zbierania elektronicznych materiałów dowodowych. Jednak w niektórych sytuacjach organizacje mogą mieć dane, które zostały nieumyślnie zachowane w folderze Elementy do odzyskania, które muszą usunąć. Na przykład użytkownik może nieświadomie wysłać lub przesłać dalej wiadomość e-mail zawierającą informacje poufne lub informacje, które mogą mieć poważne konsekwencje biznesowe. Nawet jeśli wiadomość zostanie trwale usunięta, może być przez nieograniczony czas zachowywana z powodu umieszczenia w skrzynce pocztowej statusu prawnych. Ten scenariusz jest nazywany *rozlaniem* danych, ponieważ dane zostały nieumyślnie rozlane *Office 365.* W takich sytuacjach możesz usunąć elementy ze skrzynki pocztowej programu Exchange Online użytkownika w folderze Elementy do odzyskania, nawet jeśli ta skrzynka pocztowa została umieszczona w posiadaniu jednej z funkcji przechowywania w programie Office 365. Do tych typów blokady należą blokady w związku z postępowaniem sądowym, In-Place, zbierania elektronicznych materiałów dowodowych i zasady przechowywania utworzone w centrum zabezpieczeń i zgodności w programie Office 365 lub Microsoft 365.
+Folder Elementy do odzyskania dla skrzynki pocztowej Exchange Online istnieje w celu ochrony przed przypadkowymi lub złośliwymi usunięciami. Jest ona również używana do przechowywania elementów przechowywanych i uzyskiwanych przez funkcje zgodności, takie jak blokady i wyszukiwania zbierania elektronicznych materiałów dowodowych. Jednak w niektórych sytuacjach organizacje mogą mieć dane, które zostały przypadkowo zachowane w folderze Elementy możliwe do odzyskania, które muszą usunąć. Na przykład użytkownik może nieświadomie wysłać lub przesłać wiadomość e-mail zawierającą poufne informacje lub informacje, które mogą mieć poważne konsekwencje biznesowe. Nawet jeśli wiadomość zostanie trwale usunięta, może ona zostać zachowana przez czas nieokreślony, ponieważ w skrzynce pocztowej została umieszczona blokada prawna. Ten scenariusz jest znany jako *wyciek danych,* ponieważ dane zostały przypadkowo *rozlane* na Office 365. W takich sytuacjach można usunąć elementy w folderze Elementy do odzyskania użytkownika dla Exchange Online skrzynki pocztowej, nawet jeśli ta skrzynka pocztowa jest wstrzymana z jedną z różnych funkcji blokady w Office 365. Te typy blokad obejmują blokady sporów, blokady In-Place, blokady zbierania elektronicznych materiałów dowodowych i zasady przechowywania utworzone w centrum zabezpieczeń i zgodności w Office 365 lub Microsoft 365.
 
-W tym artykule wyjaśniono, jak administratorzy mogą usuwać elementy z folderu Elementy do odzyskania dla chmurowych skrzynek pocztowych, które znajdują się w hold. Ta procedura obejmuje wyłączenie dostępu do skrzynki pocztowej, wyłączenie odzyskiwania jednego elementu, wyłączenie asystenta folderów zarządzanych z przetwarzania skrzynki pocztowej, tymczasowe usunięcie zawieszonych elementów, usunięcie elementów z folderu Elementy do odzyskania, a następnie przywrócenie poprzedniej konfiguracji skrzynki pocztowej. Oto ten proces:
+W tym artykule wyjaśniono, jak administratorzy mogą usuwać elementy z folderu Elementy do odzyskania dla przechowywanych w chmurze skrzynek pocztowych. Ta procedura obejmuje wyłączenie dostępu do skrzynki pocztowej i wyłączenie odzyskiwania pojedynczego elementu, wyłączenie asystenta folderu zarządzanego z przetwarzania skrzynki pocztowej, tymczasowe usunięcie blokady, usunięcie elementów z folderu Elementy możliwe do odzyskania, a następnie przywrócenie skrzynki pocztowej do poprzedniej konfiguracji. Oto proces:
   
 [Krok 1. Zbieranie informacji o skrzynce pocztowej](#step-1-collect-information-about-the-mailbox)
 
-[Krok 2. Przygotowywanie skrzynki pocztowej](#step-2-prepare-the-mailbox)
+[Krok 2. Przygotowanie skrzynki pocztowej](#step-2-prepare-the-mailbox)
 
-[Krok 3. Usuwanie wszystkich blokady ze skrzynki pocztowej](#step-3-remove-all-holds-from-the-mailbox)
+[Krok 3. Usuwanie wszystkich blokad ze skrzynki pocztowej](#step-3-remove-all-holds-from-the-mailbox)
 
-[Krok 4. Usunięcie opóźnienia ze skrzynki pocztowej](#step-4-remove-the-delay-hold-from-the-mailbox)
+[Krok 4. Usuwanie blokady opóźnienia ze skrzynki pocztowej](#step-4-remove-the-delay-hold-from-the-mailbox)
 
-[Krok 5. Usuwanie elementów z folderu Elementy do odzyskania](#step-5-delete-items-in-the-recoverable-items-folder)
+[Krok 5. Usuwanie elementów w folderze Elementy możliwe do odzyskania](#step-5-delete-items-in-the-recoverable-items-folder)
 
-[Krok 6. Przywracanie skrzynki pocztowej do poprzedniego stanu](#step-6-revert-the-mailbox-to-its-previous-state)
+[Krok 6. Przywrócenie poprzedniego stanu skrzynki pocztowej](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
-> Opisane w tym artykule procedury spowoduje trwałe usunięcie (usunięcie) danych ze skrzynki Exchange Online pocztowej. Oznacza to, że wiadomości usunięte z folderu Elementy do odzyskania nie mogą zostać odzyskane i nie będą dostępne na potrzeby odnajdowania prawnego lub innych celów dotyczących zgodności. Jeśli chcesz usunąć wiadomości ze skrzynki pocztowej, która jest umieszczana w stanie kontroli w związku z postępowaniem sądowym, In-Place Hold, Hold, eDiscovery hold lub zasady przechowywania utworzone w aplikacji Centrum zgodności platformy Microsoft 365, skontaktuj się z zarządzaniem rekordami lub działami prawnymi przed usunięciem umieszczenia w tym miejscu. Twoja organizacja może mieć zasady definiujące, czy skrzynka pocztowa w miejscu przechowywania lub zdarzenie rozlanie danych ma pierwszeństwo.
+> Procedury opisane w tym artykule spowodują trwałe usunięcie danych (przeczyszczanie) ze skrzynki pocztowej Exchange Online. Oznacza to, że nie można odzyskać komunikatów usuniętych z folderu Elementy możliwe do odzyskania i nie będą dostępne do celów legalnego odnajdywania lub innych celów zgodności. Jeśli chcesz usunąć wiadomości ze skrzynki pocztowej, która została wstrzymana w ramach blokady postępowania sądowego, In-Place blokady, blokady zbierania elektronicznych materiałów dowodowych lub zasad przechowywania utworzonych w portalu zgodności usługi Microsoft Purview, przed usunięciem blokady skontaktuj się z działami zarządzania rekordami lub działami prawnymi. Organizacja może mieć zasady określające, czy skrzynka pocztowa jest wstrzymana, czy zdarzenie wycieku danych ma priorytet.
   
 ## <a name="before-you-delete-items"></a>Przed usunięciem elementów
 
-- Aby utworzyć i uruchomić wyszukiwanie zawartości, musisz być członkiem grupy ról Menedżer zbierania elektronicznych materiałów dowodowych lub mieć przypisaną rolę zarządzania wyszukiwaniem zgodności. Aby usuwać wiadomości, musisz być członkiem grupy ról Zarządzanie organizacją lub mieć przypisaną rolę zarządzania Wyszukiwaniem i przeczyszczanie. Aby uzyskać informacje na temat dodawania użytkowników do grupy ról, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](./assign-ediscovery-permissions.md).
+- Aby utworzyć i uruchomić wyszukiwanie zawartości, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych lub mieć przypisaną rolę zarządzania wyszukiwaniem zgodności. Aby usunąć komunikaty, musisz być członkiem grupy ról Zarządzanie organizacją lub mieć przypisaną rolę zarządzania wyszukiwaniem i przeczyszczaniem. Aby uzyskać informacje na temat dodawania użytkowników do grupy ról, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](./assign-ediscovery-permissions.md).
 
-- Jeśli skrzynka pocztowa jest przypisana do zasad przechowywania w całej organizacji, musisz ją wykluczyć z zasad, zanim będzie można usunąć elementy z folderu Elementy do odzyskania. Synchronizowanie zmiany zasad i usuwanie skrzynki pocztowej z zasad może potrwać do 24 godzin. Aby uzyskać więcej informacji, zobacz sekcję "Zasady przechowywania dla całej [](#organization-wide-retention-policies) organizacji" w sekcji Usuwanie wszystkich blokady ze skrzynki pocztowej w tym artykule.
+- Jeśli skrzynka pocztowa jest przypisana do zasad przechowywania w całej organizacji, przed usunięciem elementów z folderu Elementy możliwe do odzyskania należy wykluczyć skrzynkę pocztową z zasad. Synchronizowanie zmiany zasad i usunięcie skrzynki pocztowej z zasad może potrwać do 24 godzin. Aby uzyskać więcej informacji, zobacz "Zasady przechowywania w całej organizacji" w sekcji [Usuwanie wszystkich blokad ze skrzynki pocztowej](#organization-wide-retention-policies) w tym artykule.
 
-- Tej procedury nie można wykonać dla skrzynki pocztowej, do których przypisano ustawienia przechowywania przy użyciu zasad przechowywania zablokowanych przy użyciu blokady zachowywania. Jest tak, ponieważ ten kłódka uniemożliwia usunięcie lub wykluczenie skrzynki pocztowej z zasad i wyłączenie asystenta folderów zarządzanych w skrzynce pocztowej. Aby uzyskać więcej informacji na temat blokowania zasad przechowywania, zobacz Ograniczanie zmian zasad przechowywania i zasad etykiet przechowywania za pomocą blokady [zachowywania](retention-preservation-lock.md).
+- Nie można wykonać tej procedury dla skrzynki pocztowej, która została przypisana do ustawień przechowywania z zasadami przechowywania zablokowanymi przy użyciu blokady zachowania. Dzieje się tak, ponieważ ta blokada uniemożliwia usunięcie lub wykluczenie skrzynki pocztowej z zasad oraz wyłączenie asystenta folderów zarządzanych w skrzynce pocztowej. Aby uzyskać więcej informacji na temat zasad blokowania na potrzeby przechowywania, zobacz [Używanie blokady zachowania w celu ograniczenia zmian zasad przechowywania i zasad etykiet przechowywania](retention-preservation-lock.md).
 
-- Procedura opisana w tym artykule nie jest obsługiwana w przypadku nieaktywnych skrzynek pocztowych. Wynika to z tego, że po usunięciu nieaktywnej skrzynki pocztowej nie można jej ponownie przechowywać (czyli zasad przechowywania). Po usunięciu blokowania z nieaktywnej skrzynki pocztowej jest ona zmieniana w normalną, niechwytną skrzynkę pocztową i zostanie trwale usunięta z organizacji po przetworzeniu jej przez asystenta folderów zarządzanych.
+- Procedura opisana w tym artykule nie jest obsługiwana w przypadku nieaktywnych skrzynek pocztowych. Dzieje się tak, ponieważ nie można ponownie zastosować blokady (lub zasad przechowywania) do nieaktywnej skrzynki pocztowej po jej usunięciu. Po usunięciu blokady z nieaktywnej skrzynki pocztowej zostanie ona zmieniona na normalną nietrwałą skrzynkę pocztową i zostanie trwale usunięta z organizacji po przetworzeniu jej przez Asystenta folderów zarządzanych.
 
-- Jeśli skrzynka pocztowa nie została umieszczona w stanie przechowywania (lub nie włączono odzyskiwania pojedynczych elementów), możesz usunąć elementy z folderu Elementy do odzyskania. Aby uzyskać więcej informacji na ten temat, zobacz [Wyszukiwanie i usuwanie wiadomości e-mail w organizacji](./search-for-and-delete-messages-in-your-organization.md).
+- Jeśli skrzynka pocztowa nie jest wstrzymana (lub nie ma włączonego odzyskiwania pojedynczego elementu), możesz usunąć elementy z folderu Elementy możliwe do odzyskania. Aby uzyskać więcej informacji o tym, jak to zrobić, zobacz [Wyszukiwanie i usuwanie wiadomości e-mail w organizacji](./search-for-and-delete-messages-in-your-organization.md).
 
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Krok 1. Zbieranie informacji o skrzynce pocztowej
 
-Pierwszym krokiem jest zebranie wybranych właściwości z docelowej skrzynki pocztowej, które wpłyną na tę procedurę. Zapisz te ustawienia lub zapisz je w pliku tekstowym, ponieważ spowoduje to zmianę niektórych z tych właściwości, a następnie przywrócenie oryginalnych wartości w kroku 6 po usunięciu elementów z folderu Elementy do odzyskania. Oto lista właściwości skrzynki pocztowej, które należy zebrać.
+Pierwszym krokiem jest zebranie wybranych właściwości z docelowej skrzynki pocztowej, która będzie miała wpływ na tę procedurę. Pamiętaj, aby zapisać te ustawienia lub zapisać je w pliku tekstowym, ponieważ niektóre z tych właściwości zostaną zmienione, a następnie przywrócisz oryginalne wartości w kroku 6 po usunięciu elementów z folderu Elementy możliwe do odzyskania. Oto lista właściwości skrzynki pocztowej, które należy zebrać.
   
-- *SingleItemRecoveryEnabled*  *i RetainDeletedItemsFor*. W razie potrzeby wyłączysz funkcję pojedynczego odzyskiwania i zwiększysz okres przechowywania elementów usuniętych w kroku 3.
+- *SingleItemRecoveryEnabled*  i  *RetainDeletedItemsFor*. W razie potrzeby wyłączysz pojedyncze odzyskiwanie i zwiększ okres przechowywania usuniętych elementów w kroku 3.
 
-- *LitigationHoldEnabled*  *i InPlaceHolds*. Musisz zidentyfikować wszystkie blokady umieszczone w skrzynce pocztowej, aby można je było tymczasowo usunąć w kroku 3. Zobacz [sekcję Więcej informacji](#more-information) , aby uzyskać porady dotyczące identyfikowania hold typu, które mogą być umieszczane w skrzynce pocztowej.
+- *LitigationHoldEnabled*  i  *InPlaceHolds*. Musisz zidentyfikować wszystkie blokady umieszczone w skrzynce pocztowej, aby można było je tymczasowo usunąć w kroku 3. Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać wskazówki dotyczące identyfikowania blokady typów, która może zostać umieszczona w skrzynce pocztowej.
 
-Ponadto musisz uzyskać ustawienia dostępu klienta skrzynki pocztowej, aby można było tymczasowo je wyłączyć, aby właściciel (lub inni użytkownicy) nie mogą uzyskać dostępu do skrzynki pocztowej w ramach tej procedury. Na koniec możesz uzyskać bieżący rozmiar i liczbę elementów w folderze Elementy do odzyskania. Po usunięciu elementów z folderu Elementy do odzyskania w kroku 5 użyjesz tych informacji, aby sprawdzić, czy elementy zostały usunięte.
+Ponadto należy uzyskać ustawienia dostępu klienta skrzynki pocztowej, aby można było je tymczasowo wyłączyć, aby właściciel (lub inni użytkownicy) nie mogli uzyskać dostępu do skrzynki pocztowej podczas tej procedury. Na koniec możesz uzyskać bieżący rozmiar i liczbę elementów w folderze Elementy do odzyskania. Po usunięciu elementów w folderze Elementy możliwe do odzyskania w kroku 5 użyjesz tych informacji, aby sprawdzić, czy elementy zostały usunięte.
   
-1. [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pamiętaj, aby użyć nazwy użytkownika i hasła dla konta administratora, do których przypisano odpowiednie role zarządzania w programie Exchange Online.
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pamiętaj, aby użyć nazwy użytkownika i hasła dla konta administratora, do którego przypisano odpowiednie role zarządzania w Exchange Online.
 
-2. Uruchom następujące polecenie, aby uzyskać informacje na temat odzyskiwania pojedynczych elementów i okresu przechowywania elementów usuniętych.
+2. Uruchom następujące polecenie, aby uzyskać informacje o odzyskiwaniu pojedynczego elementu i okresie przechowywania usuniętego elementu.
 
     ```powershell
     Get-Mailbox <username> | FL SingleItemRecoveryEnabled,RetainDeletedItemsFor
     ```
 
-   Jeśli funkcja odzyskiwania pojedynczych elementów jest włączona, musisz ją wyłączyć w kroku 2. Jeśli okres przechowywania elementów usuniętych nie jest ustawiony na 30 dni (wartość maksymalna w programie Exchange Online), możesz go zwiększyć w kroku 2.
+   Jeśli odzyskiwanie pojedynczego elementu jest włączone, musisz go wyłączyć w kroku 2. Jeśli okres przechowywania usuniętego elementu nie jest ustawiony na 30 dni (maksymalna wartość w Exchange Online), możesz go zwiększyć w kroku 2.
 
-3. Uruchom następujące polecenie, aby uzyskać ustawienia dostępu do skrzynki pocztowej.
+3. Uruchom następujące polecenie, aby uzyskać ustawienia dostępu do skrzynki pocztowej dla skrzynki pocztowej.
 
     ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-   Wszystkie te metody dostępu wyłączysz w kroku 2.
+   Wszystkie te metody dostępu zostaną wyłączone w kroku 2.
 
-4. Uruchom następujące polecenie, aby uzyskać informacje o blokady i zasadach przechowywania zastosowanych do skrzynki pocztowej.
+4. Uruchom następujące polecenie, aby uzyskać informacje o zasadach przechowywania i przechowywania stosowanych do skrzynki pocztowej.
 
     ```powershell
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
     > [!TIP]
-    > Jeśli właściwość  *InPlaceHolds*  ma zbyt wiele wartości i nie są wyświetlane wszystkie wartości,  `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` można uruchomić polecenie w celu wyświetlenia każdej wartości w osobnym wierszu.
+    > Jeśli we właściwości  *InPlaceHolds*  jest zbyt wiele wartości, a nie wszystkie są wyświetlane, możesz uruchomić  `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` polecenie , aby wyświetlić każdą wartość w osobnym wierszu.
   
 5. Uruchom następujące polecenie, aby uzyskać informacje o zasadach przechowywania w całej organizacji. 
 
@@ -103,151 +103,151 @@ Ponadto musisz uzyskać ustawienia dostępu klienta skrzynki pocztowej, aby moż
     Get-OrganizationConfig | FL InPlaceHolds
     ```
 
-   Jeśli twoja organizacja ma zasady przechowywania dla całej organizacji, musisz wykluczyć skrzynkę pocztową z tych zasad w kroku 3. Replikowanie zmiany może potrwać do 24 godzin.
+   Jeśli Twoja organizacja ma jakiekolwiek zasady przechowywania w całej organizacji, musisz wykluczyć skrzynkę pocztową z tych zasad w kroku 3. Replikowanie zmiany może potrwać do 24 godzin.
 
     > [!TIP]
-    > Jeśli właściwość  *InPlaceHolds*  ma zbyt wiele wartości i nie są wyświetlane wszystkie wartości,  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` można uruchomić polecenie w celu wyświetlenia każdej wartości w osobnym wierszu. 
+    > Jeśli we właściwości  *InPlaceHolds*  jest zbyt wiele wartości, a nie wszystkie są wyświetlane, możesz uruchomić  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` polecenie , aby wyświetlić każdą wartość w osobnym wierszu. 
   
-6. Uruchom następujące polecenie, aby sprawdzić, czy do skrzynki pocztowej zastosowano opóźnienie.
+6. Uruchom następujące polecenie, aby ustalić, czy do skrzynki pocztowej zastosowano blokadę opóźnienia.
 
    ```powershell
    Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
    ```
 
-   Jeśli wartość właściwości *DelayHoldApplied* lub *DelayReleaseHoldApplied* jest ustawiona na **True**, do skrzynki pocztowej jest stosowane opóźnienie i należy je usunąć. Aby uzyskać więcej informacji na temat opóźnień, zobacz [Krok 4. Usuwanie blokady opóźnienia ze skrzynki pocztowej](#step-4-remove-the-delay-hold-from-the-mailbox).
+   Jeśli wartość właściwości *DelayHoldApplied* lub *DelayReleaseHoldApplied jest ustawiona* na **wartość True**, do skrzynki pocztowej jest stosowane wstrzymanie opóźnienia i należy je usunąć. Aby uzyskać więcej informacji na temat blokad opóźnień, zobacz [Krok 4: Usuwanie blokady opóźnienia ze skrzynki pocztowej](#step-4-remove-the-delay-hold-from-the-mailbox).
 
-   Jeśli wartość jednej z tych właściwości jest ustawiona na **Fałsz**, do skrzynki pocztowej nie zostanie zastosowane opóźnienie i możesz pominąć krok 4.
+   Jeśli wartość dowolnej właściwości jest ustawiona na **wartość False**, do skrzynki pocztowej nie jest stosowane blokada opóźnienia i możesz pominąć krok 4.
 
-7. Uruchom następujące polecenie, aby uzyskać bieżący rozmiar i łączną liczbę elementów w folderach i podfolderach w folderze Elementy do odzyskania w podstawowej skrzynce pocztowej użytkownika.
+7. Uruchom następujące polecenie, aby uzyskać bieżący rozmiar i łączną liczbę elementów w folderach i podfolderach w folderze Elementy możliwe do odzyskania w podstawowej skrzynce pocztowej użytkownika.
 
     ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
-   Jeśli archiwalna skrzynka pocztowa użytkownika jest włączona, uruchom następujące polecenie, aby uzyskać rozmiar i łączną liczbę elementów w folderach i podfolderach w folderze Elementy do odzyskania w jego archiwanej skrzynce pocztowej. 
+   Jeśli skrzynka pocztowa archiwum użytkownika jest włączona, uruchom następujące polecenie, aby uzyskać rozmiar i łączną liczbę elementów w folderach i podfolderach w folderze Elementy możliwe do odzyskania w skrzynce pocztowej archiwum. 
 
     ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
-   Podczas usuwania elementów w kroku 5 możesz zdecydować się na usunięcie elementów z folderu Elementy do odzyskania w podstawowej archiwaowej skrzynce pocztowej użytkownika. Jeśli dla skrzynki pocztowej włączono automatyczne rozszerzanie archiwizacji, elementy w archiwalnej skrzynce pocztowej nie zostaną usunięte.
+   Po usunięciu elementów w kroku 5 można usunąć lub nie usuwać elementów w folderze Elementy możliwe do odzyskania w podstawowej skrzynce pocztowej archiwum użytkownika. Jeśli automatyczne rozszerzanie archiwizacji jest włączone dla skrzynki pocztowej, elementy w pomocniczej skrzynce pocztowej archiwum nie zostaną usunięte.
   
-## <a name="step-2-prepare-the-mailbox"></a>Krok 2. Przygotowywanie skrzynki pocztowej
+## <a name="step-2-prepare-the-mailbox"></a>Krok 2. Przygotowanie skrzynki pocztowej
 
-Następnym krokiem po zgromadzeniu i zapisaniu informacji dotyczących skrzynki pocztowej jest przygotowanie skrzynki pocztowej przez wykonanie następujących zadań:
+Po zebraniu i zapisaniu informacji o skrzynce pocztowej następnym krokiem jest przygotowanie skrzynki pocztowej przez wykonanie następujących zadań:
   
-- **Wyłącz dostęp klienta do** skrzynki pocztowej, aby właściciel skrzynki pocztowej nie był w stanie uzyskać dostępu do swojej skrzynki pocztowej i nie wprowadzał żadnych zmian w danych skrzynki pocztowej w ramach tej procedury.
+- **Wyłącz dostęp klienta do skrzynki pocztowej, aby** właściciel skrzynki pocztowej nie mógł uzyskać dostępu do swojej skrzynki pocztowej i wprowadzić żadnych zmian w danych skrzynki pocztowej podczas tej procedury.
 
-- **Zwiększ okres przechowywania** elementów usuniętych do 30 dni (wartość maksymalna w programie Exchange Online), aby elementy nie zostały usunięte z folderu Elementy do odzyskania, zanim będzie można je usunąć w kroku 5.
+- **Zwiększ okres przechowywania usuniętych elementów** do 30 dni (maksymalna wartość w Exchange Online), aby nie usuwać elementów z folderu Elementy możliwe do odzyskania przed usunięciem ich w kroku 5.
 
-- **Wyłącz odzyskiwanie pojedynczych** elementów, aby elementy nie zostały zachowane (przez czas przechowywania elementów usuniętych) po ich usunięciu z folderu Elementy do odzyskania w kroku 5.
+- **Wyłącz odzyskiwanie pojedynczego elementu** , aby elementy nie były zachowywane (na czas trwania okresu przechowywania usuniętego elementu) po usunięciu ich z folderu Elementy możliwe do odzyskania w kroku 5.
 
-- **Wyłącz Asystenta folderów zarządzanych** , aby nie przetwarzał skrzynki pocztowej i zachowywał elementy usunięte w kroku 5.
+- **Wyłącz Asystenta folderów zarządzanych** , aby nie przetwarzał skrzynki pocztowej i nie zachował elementów usuniętych w kroku 5.
 
-Wykonaj poniższe czynności w programie Exchange Online PowerShell.
+Wykonaj następujące kroki w programie Exchange Online programu PowerShell.
   
-1. Uruchom następujące polecenie, aby wyłączyć wszystkim dostęp klienta do skrzynki pocztowej. W składni polecenia przyjęto założenie, że w skrzynce pocztowej włączono wszystkie metody dostępu klienta.
+1. Uruchom następujące polecenie, aby wyłączyć cały dostęp klienta do skrzynki pocztowej. W składni polecenia przyjęto założenie, że wszystkie metody dostępu klienta zostały włączone w skrzynce pocztowej.
 
     ```powershell
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
 
     > [!NOTE]
-    > Wyłączenie wszystkich metod dostępu klienta do skrzynki pocztowej może potrwać do 60 minut. Pamiętaj, że wyłączenie tych metod dostępu nie spowoduje rozłączenia właściciela skrzynki pocztowej, jeśli jest on obecnie zalogowany. Jeśli właściciel nie jest zalogowany, nie będzie mógł uzyskać dostępu do swojej skrzynki pocztowej po wyłączeniu tych metod dostępu.
+    > Wyłączenie wszystkich metod dostępu klienta do skrzynki pocztowej może potrwać do 60 minut. Należy pamiętać, że wyłączenie tych metod dostępu nie spowoduje rozłączenia właściciela skrzynki pocztowej, jeśli są one obecnie zalogowane. Jeśli właściciel nie jest zalogowany, nie będzie mógł uzyskać dostępu do swojej skrzynki pocztowej po wyłączeniu tych metod dostępu.
   
-2. Uruchom następujące polecenie, aby zwiększyć okres przechowywania elementów usuniętych maksymalnie o 30 dni. Założono, że bieżące ustawienie jest mniejsze niż 30 dni.
+2. Uruchom następujące polecenie, aby zwiększyć okres przechowywania usuniętego elementu maksymalnie o 30 dni. Przyjęto założenie, że bieżące ustawienie jest mniejsze niż 30 dni.
 
     ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 30
     ```
 
-3. Uruchom następujące polecenie, aby wyłączyć odzyskiwanie pojedynczych elementów.
+3. Uruchom następujące polecenie, aby wyłączyć odzyskiwanie pojedynczego elementu.
 
     ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
 
     > [!NOTE]
-    > Wyłączenie odzyskiwania jednego elementu może potrwać do 240 minut. Nie usuwaj elementów z folderu Elementy do odzyskania, dopóki nie upłynie ten okres.
+    > Wyłączenie odzyskiwania pojedynczego elementu może potrwać do 240 minut. Nie usuwaj elementów w folderze Elementy możliwe do odzyskania, dopóki ten okres nie upłynął.
   
-4. Uruchom następujące polecenie, aby zapobiec przetwarzaniu skrzynki pocztowej przez asystenta folderów zarządzanych. Jak wyjaśniono wcześniej, asystenta folderów zarządzanych można wyłączyć tylko wtedy, gdy do skrzynki pocztowej nie zastosowano zasad przechowywania z blokadą zachowywania.
+4. Uruchom następujące polecenie, aby uniemożliwić asystentowi folderów zarządzanych przetwarzanie skrzynki pocztowej. Jak wyjaśniono wcześniej, asystenta folderów zarządzanych można wyłączyć tylko wtedy, gdy zasady przechowywania z blokadą zachowania nie zostaną zastosowane do skrzynki pocztowej.
 
     ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
     ```
 
-## <a name="step-3-remove-all-holds-from-the-mailbox"></a>Krok 3. Usuwanie wszystkich blokady ze skrzynki pocztowej
+## <a name="step-3-remove-all-holds-from-the-mailbox"></a>Krok 3. Usuwanie wszystkich blokad ze skrzynki pocztowej
 
-Ostatnim krokiem przed usunięciem elementów z folderu Elementy do odzyskania jest usunięcie wszystkich blokady (określonych w kroku 1) umieszczonych w skrzynce pocztowej. Wszystkie blokady muszą zostać usunięte, aby elementy nie zostały zachowane po usunięciu ich z folderu Elementy do odzyskania. Poniższe sekcje zawierają informacje na temat usuwania różnych typów blokady skrzynki pocztowej. Zobacz [sekcję Więcej informacji](#more-information) , aby uzyskać porady dotyczące identyfikowania hold typu, które mogą być umieszczane w skrzynce pocztowej. Aby uzyskać więcej informacji, [zobacz Jak zidentyfikować typy blokowania umieszczonego w skrzynce Exchange Online pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md).
+Ostatnim krokiem przed usunięciem elementów z folderu Elementy do odzyskania jest usunięcie wszystkich blokad (zidentyfikowanych w kroku 1) umieszczonych w skrzynce pocztowej. Wszystkie blokady muszą zostać usunięte, aby elementy nie były zachowywane po usunięciu ich z folderu Elementy możliwe do odzyskania. Poniższe sekcje zawierają informacje o usuwaniu różnych typów blokad w skrzynce pocztowej. Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać wskazówki dotyczące identyfikowania blokady typów, która może zostać umieszczona w skrzynce pocztowej. Aby uzyskać więcej informacji, zobacz [How to identify the type of hold placed on an Exchange Online mailbox (Jak zidentyfikować typ blokady umieszczonej w skrzynce pocztowej Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)).
   
 > [!CAUTION]
-> Jak wspomniano wcześniej, przed usunięciem z skrzynki pocztowej należy sprawdzić to, czy rekordy są zarządzania rekordami lub działami prawnie.
+> Jak wspomniano wcześniej, przed usunięciem blokady ze skrzynki pocztowej skontaktuj się z działami zarządzania rekordami lub działami prawnymi.
   
-### <a name="litigation-hold"></a>Zawieszenie w  postępowaniach sądowych
+### <a name="litigation-hold"></a>Wstrzymanie postępowania sądowego
   
-Uruchom następujące polecenie w programie Exchange Online PowerShell, aby usunąć ze skrzynki pocztowej zawieszenie w związku z postępowaniem sądowym.
+Uruchom następujące polecenie w programie Exchange Online Programu PowerShell, aby usunąć blokadę postępowania sądowego ze skrzynki pocztowej.
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
 > [!NOTE]
-> Podobnie jak w przypadku wyłączania odzyskiwania pojedynczych elementów usunięcie funkcji Zawieszenie w związku z postępowaniem sądowym może potrwać do 240 minut. Nie usuwaj elementów z folderu Elementy do odzyskania, dopóki nie upłynie ten okres.
+> Podobnie jak w przypadku wyłączania odzyskiwania pojedynczego elementu usunięcie blokady postępowania sądowego może potrwać do 240 minut. Nie usuwaj elementów z folderu Elementy możliwe do odzyskania, dopóki ten okres nie upłynął.
   
-### <a name="in-place-hold"></a>In-Place hold
+### <a name="in-place-hold"></a>blokada In-Place
   
-Uruchom następujące polecenie w programie Exchange Online PowerShell, aby zidentyfikować In-Place, które jest umieszczone w skrzynce pocztowej. Użyj identyfikatora GUID dla In-Place, który został zidentyfikowany w kroku 1.
+Uruchom następujące polecenie w programie Exchange Online programu PowerShell, aby zidentyfikować In-Place Blokada umieszczoną w skrzynce pocztowej. Użyj identyfikatora GUID dla In-Place Hold, który został zidentyfikowany w kroku 1.
 
 ```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
 
-Po zidentyfikowaniu In-Place skrzynki pocztowej możesz usunąć skrzynkę pocztową z Exchange Centrum administracyjnego programu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> lub programu Exchange Online PowerShell. Aby uzyskać więcej informacji, [zobacz Tworzenie lub usuwanie In-Place hold](/exchange/security-and-compliance/create-or-remove-in-place-holds).
+Po zidentyfikowaniu blokady In-Place można usunąć skrzynkę pocztową z blokady za pomocą <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange (EAC)</a> lub Exchange Online programu PowerShell. Aby uzyskać więcej informacji, zobacz [Tworzenie lub usuwanie blokady In-Place](/exchange/security-and-compliance/create-or-remove-in-place-holds).
   
 ### <a name="retention-policies-applied-to-specific-mailboxes"></a>Zasady przechowywania stosowane do określonych skrzynek pocztowych
   
-Uruchom następujące polecenie w [programie PowerShell & zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell) , aby zidentyfikować zasady przechowywania stosowane do skrzynki pocztowej. To polecenie zwróci również wszystkie zasady przechowywania Teams konwersacji zastosowane do skrzynki pocztowej. Identyfikator GUID (bez poprzedzania `mbx` lub prefiksu `skp` ) należy stosować do zasad przechowywania zidentyfikowanych w kroku 1.
+Uruchom następujące polecenie w programie [PowerShell Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell) , aby zidentyfikować zasady przechowywania stosowane do skrzynki pocztowej. To polecenie zwróci również wszelkie zasady przechowywania konwersacji Teams stosowane do skrzynki pocztowej. Użyj identyfikatora GUID (bez prefiksu `mbx` lub `skp` ) dla zasad przechowywania zidentyfikowanych w kroku 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Po zidentyfikowaniu  >  zasad przechowywania przejdź do strony Zarządzanie informacjami W programie Centrum zgodności platformy Microsoft 365, edytuj zasady przechowywania wskazane w poprzednim kroku i usuń skrzynkę pocztową z listy adresatów uwzględnionych w zasadach przechowywania.
+Po zidentyfikowaniu zasad przechowywania przejdź do strony **Zarządzanie** >  **informacjamiRetention** w portalu zgodności, edytuj zasady przechowywania zidentyfikowane w poprzednim kroku i usuń skrzynkę pocztową z listy adresatów uwzględnionych w zasadach przechowywania.
   
-### <a name="organization-wide-retention-policies"></a>Zasady przechowywania dla całej organizacji
+### <a name="organization-wide-retention-policies"></a>Zasady przechowywania w całej organizacji
   
-Zasady przechowywania dotyczące całej Exchange, organizacji i Teams są stosowane do wszystkich skrzynek pocztowych w organizacji. Są one stosowane na poziomie organizacji (nie na poziomie skrzynki pocztowej) i są zwracane po uruchomieniu polecenia cmdlet **Get-OrganizationConfig** w kroku 1. Uruchom następujące polecenie w [programie PowerShell & w Centrum zabezpieczeń i](/powershell/exchange/exchange-online-powershell) zgodności, aby zidentyfikować zasady przechowywania dla całej organizacji. Identyfikator GUID (bez prefiksu  `mbx` ) należy stosować do zasad przechowywania dla całej organizacji, które zostały określone w kroku 1.
+Zasady przechowywania dla całej organizacji, Exchange i Teams są stosowane do każdej skrzynki pocztowej w organizacji. Są one stosowane na poziomie organizacji (nie na poziomie skrzynki pocztowej) i są zwracane po uruchomieniu polecenia cmdlet **Get-OrganizationConfig** w kroku 1. Uruchom następujące polecenie w programie [PowerShell Security & Compliance Center](/powershell/exchange/exchange-online-powershell) , aby zidentyfikować zasady przechowywania w całej organizacji. Użyj identyfikatora GUID (bez prefiksu  `mbx` ) dla zasad przechowywania dla całej organizacji, które zostały zidentyfikowane w kroku 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Po zidentyfikowaniu  >  zasad przechowywania dla całej organizacji przejdź do strony Zarządzanie informacjami W programie Centrum zgodności platformy Microsoft 365, edytuj poszczególne zasady przechowywania określone w poprzednim kroku dla całej organizacji i dodaj skrzynkę pocztową do listy wykluczonych adresatów. Spowoduje to usunięcie skrzynki pocztowej użytkownika z zasad przechowywania.
+Po zidentyfikowaniu zasad przechowywania w całej organizacji przejdź do strony **Zarządzanie** >  **informacjamiRetention** w portalu zgodności, edytuj wszystkie zasady przechowywania w całej organizacji zidentyfikowane w poprzednim kroku i dodaj skrzynkę pocztową do listy wykluczonych adresatów. Spowoduje to usunięcie skrzynki pocztowej użytkownika z zasad przechowywania.
 
 > [!IMPORTANT]
-> Po wykluczeniu skrzynki pocztowej z zasad przechowywania dla całej organizacji zsynchronizowanie tej zmiany i usunięcie skrzynki pocztowej z zasad może potrwać do 24 godzin.
+> Po wykluczeniu skrzynki pocztowej z zasad przechowywania w całej organizacji synchronizacja tej zmiany i usunięcie skrzynki pocztowej z zasad może potrwać do 24 godzin.
 
 ### <a name="retention-labels"></a>Etykiety przechowywania
 
-Ilekroć użytkownik stosuje etykietę, która skonfigurowano tak, aby zachowywać lub zachowywać zawartość, a następnie usuwać ją do dowolnego folderu lub elementu w swojej skrzynce pocztowej, właściwość *ComplianceTagHoldApplied* skrzynki pocztowej ma ustawioną wartość **True**. W takim przypadku skrzynka pocztowa jest uznawana za wstrzymaną, tak jakby została umieszczona w związku z postępowaniem sądowym lub przypisana do zasad przechowywania.
+Za każdym razem, gdy użytkownik stosuje etykietę skonfigurowaną do przechowywania zawartości lub przechowywania, a następnie usuwania zawartości do dowolnego folderu lub elementu w skrzynce pocztowej, właściwość *ComplianceTagHoldApplied* jest ustawiona na **wartość True**. W takim przypadku skrzynka pocztowa jest uznawana za wstrzymaną, tak jakby została umieszczona w blokadzie postępowania sądowego lub przypisana do zasad przechowywania.
 
-Aby wyświetlić wartość właściwości *ComplianceTagHoldApplied*, uruchom następujące polecenie w programie Exchange Online PowerShell:
+Aby wyświetlić wartość właściwości *ComplianceTagHoldApplied*, uruchom następujące polecenie w programie Exchange Online programu PowerShell:
 
 ```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Po zidentyfikowaniu, że skrzynka pocztowa znajduje się w stanie przechowywania, ponieważ etykieta przechowywania jest stosowana do folderu lub elementu, możesz użyć narzędzia Przeszukiwanie zawartości w programie Centrum zgodności platformy Microsoft 365, aby wyszukać elementy oznaczone etykietą przy użyciu warunku Etykieta **przechowywania.** Więcej informacji można znaleźć w następujących artykułach:
+Po zidentyfikowaniu, że skrzynka pocztowa jest wstrzymana, ponieważ etykieta przechowywania jest stosowana do folderu lub elementu, możesz użyć narzędzia do wyszukiwania zawartości w portalu zgodności, aby wyszukać elementy oznaczone etykietami przy użyciu warunku **etykiety Przechowywania** . Więcej informacji można znaleźć w następujących artykułach:
 
-- Sekcja "Korzystanie z wyszukiwania zawartości w celu znalezienia całej zawartości z określoną etykietą przechowywania" w sekcji Informacje o zasadach przechowywania [i etykietach przechowywania](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- Sekcja "Używanie wyszukiwania zawartości do znajdowania całej zawartości z określoną etykietą przechowywania" w temacie [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 
-- Sekcja "Warunki wyszukiwania" w sekcji [Zapytania słów kluczowych i warunki wyszukiwania dotyczące wyszukiwania zawartości](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
+- Sekcja "Warunki wyszukiwania" w [zapytaniach słów kluczowych i warunkach wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
 
 Aby uzyskać więcej informacji na temat etykiet, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
 
-### <a name="ediscovery-holds"></a>Zbierania elektronicznych materiałów dowodowych
+### <a name="ediscovery-holds"></a>Blokady zbierania elektronicznych materiałów dowodowych
   
-Uruchom następujące polecenia w programie [PowerShell](/powershell/exchange/connect-to-scc-powershell) centrum zabezpieczeń & zgodności, aby zidentyfikować blokady skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych (nazywaną blokadymi zbierania elektronicznych materiałów dowodowych *), która* została zastosowana do skrzynki pocztowej. Użyj identyfikatora GUID (bez prefiksu  `UniH` ) dla zbierania elektronicznych materiałów dowodowych wskazanego w kroku 1. Drugie polecenie wyświetla nazwę sprawy zbierania elektronicznych materiałów dowodowych, z którym jest skojarzone hold. Trzecie polecenie wyświetla nazwę wstrzymywania.
+Uruchom następujące polecenia w programie [PowerShell Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell) , aby zidentyfikować blokadę skojarzoną ze sprawą zbierania elektronicznych materiałów dowodowych (o nazwie *eDiscovery holds*), która jest stosowana do skrzynki pocztowej. Użyj identyfikatora GUID (bez prefiksu  `UniH` ) dla blokady zbierania elektronicznych materiałów dowodowych, która została zidentyfikowana w kroku 1. Drugie polecenie wyświetla nazwę przypadku zbierania elektronicznych materiałów dowodowych, z którego jest skojarzona blokada; w trzecim poleceniu jest wyświetlana nazwa blokady.
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -261,13 +261,13 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-Po zidentyfikowaniu nazwy sprawy zbierania elektronicznych materiałów dowodowych i jej zbierania elektronicznych materiałów dowodowych przejdź do strony zbierania elektronicznych materiałów dowodowych w Centrum zgodności, otwórz sprawę i usuń skrzynkę pocztową z hold.  \> Aby uzyskać więcej informacji na temat identyfikowania zbierania elektronicznych materiałów dowodowych, zobacz sekcję "Zbierania elektronicznych materiałów dowodowych" w sekcji Jak zidentyfikować typ blokady umieszczonej w skrzynce [Exchange Online pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
+Po zidentyfikowaniu nazwy sprawy zbierania elektronicznych materiałów dowodowych i blokady przejdź do strony **eDiscovery** \> **eDiscovery** w centrum zgodności, otwórz sprawę i usuń skrzynkę pocztową z blokady. Aby uzyskać więcej informacji na temat identyfikowania blokad zbierania elektronicznych materiałów dowodowych, zobacz sekcję "Blokady zbierania elektronicznych materiałów dowodowych" w temacie [How to identify the type of hold placed on an Exchange Online mailbox (Jak zidentyfikować typ blokady umieszczonej w skrzynce pocztowej Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)).
   
-## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Krok 4. Usunięcie opóźnienia ze skrzynki pocztowej
+## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Krok 4. Usuwanie blokady opóźnienia ze skrzynki pocztowej
 
-Po usunięciu dowolnego typu blokowania ze skrzynki pocztowej wartość właściwości *skrzynki pocztowej DelayHoldApplied* lub *DelayReleaseHoldApplied* jest ustawiana na **wartość True**. Dzieje się tak, gdy asystent folderów zarządzanych następnym razem przetwarza skrzynkę pocztową i wykrywa usunięcie awarii. Jest to nazywane opóźnieniem *i* oznacza, że rzeczywiste usunięcie opóźnienia jest opóźnione o 30 dni, aby zapobiec trwałemu usunięciu danych ze skrzynki pocztowej. Zadaniem opóźnienia jest nadanie administratorom możliwości wyszukania lub odzyskania elementów skrzynki pocztowej, które zostaną usunięte po usunięciu opóźnienia.  Po umieszczeniu opóźnienia w skrzynce pocztowej skrzynka pocztowa nadal jest uznawana za wstrzymaną przez nieograniczony czas, tak jakby skrzynka pocztowa była w związku z postępowaniem sądowym. Po 30 dniach opóźnienie wygasa i program Microsoft 365 automatycznie podejmie próbę usunięcia opóźnienia (ustawiając właściwość *DelayHoldApplied* lub *DelayReleaseHoldApplied* na **False**) w celu usunięcia opóźnienia. Aby uzyskać więcej informacji o opóźnieniu, zobacz sekcję "Zarządzanie skrzynkami pocztowymi podczas opóźnienia" w tece Jak zidentyfikować typ opóźnienia umieszczany w Exchange Online [pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+Po usunięciu dowolnego typu blokady ze skrzynki pocztowej wartość właściwości *DelayHoldApplied* lub *DelayReleaseHoldApplied jest ustawiona* na **wartość True**. Dzieje się tak przy następnym procesie, gdy Asystent folderów zarządzanych przetworzy skrzynkę pocztową i wykryje, że blokada została usunięta. Jest to nazywane *wstrzymaniem opóźnienia* i oznacza, że rzeczywiste usunięcie blokady jest opóźnione o 30 dni, aby zapobiec trwałemu usunięciu danych ze skrzynki pocztowej. (Celem blokady opóźnienia jest zapewnienie administratorom możliwości wyszukiwania lub odzyskiwania elementów skrzynki pocztowej, które zostaną usunięte po usunięciu blokady).  Po umieszczeniu blokady opóźnienia na skrzynce pocztowej skrzynka pocztowa jest nadal uważana za wstrzymaną przez nieograniczony czas, tak jakby skrzynka pocztowa znajdowała się w blokadzie postępowania sądowego. Po upływie 30 dni wstrzymanie opóźnienia wygaśnie, a Microsoft 365 automatycznie spróbuje usunąć blokadę opóźnienia (ustawiając właściwość *DelayHoldApplied* lub *DelayReleaseHoldApplied* na **wartość False**), aby blokada została usunięta. Aby uzyskać więcej informacji na temat blokady opóźnienia, zobacz sekcję "Zarządzanie skrzynkami pocztowymi z opóźnieniem" w temacie [How to identify the type of hold placed on an Exchange Online mailbox (Jak zidentyfikować typ blokady umieszczonej w skrzynce pocztowej Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)).
 
-Jeśli wartość właściwości *DelayHoldApplied* lub *DelayReleaseHoldApplied* jest ustawiona na **True**, uruchom jedno z następujących poleceń w celu usunięcia opóźnienia:
+Jeśli wartość właściwości *DelayHoldApplied* lub *DelayReleaseHoldApplied* ma wartość **True**, uruchom jedno z następujących poleceń, aby usunąć blokadę opóźnienia:
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
@@ -279,97 +279,97 @@ Lub
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 ```
 
-Do używania parametru *RemoveDelayHoldApplied* lub *RemoveDelayReleaseHoldApplied* w programie Exchange Online musi być przypisana rola funkcji Hold Prawne.
+Musisz mieć przypisaną rolę Archiwum prawne w Exchange Online, aby użyć parametru *RemoveDelayHoldApplied* lub *RemoveDelayReleaseHoldApplied*.
 
-## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Krok 5. Usuwanie elementów z folderu Elementy do odzyskania
+## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Krok 5. Usuwanie elementów w folderze Elementy możliwe do odzyskania
 
-Teraz możesz faktycznie usuwać elementy z folderu Elementy do odzyskania przy użyciu poleceń cmdlet [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) i [New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) w programie PowerShell w centrum zabezpieczeń & zgodności.
+Teraz możesz przystąpić do faktycznego usuwania elementów w folderze Elementy do odzyskania przy użyciu poleceń cmdlet [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) i [New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) w programie PowerShell Security & Compliance Center.
 
-Aby wyszukać elementy, które znajdują się w folderze Elementy do odzyskania, zalecamy wykonanie docelowej *kolekcji*. Oznacza to, że zawęzisz zakres wyszukiwania tylko do elementów znajdujących się w folderze Elementy do odzyskania. Możesz to zrobić, uruchamiając skrypt z artykułu [Używanie wyszukiwania zawartości dla](use-content-search-for-targeted-collections.md) kolekcji docelowej. Ten skrypt zwraca wartość właściwości Identyfikator folderu dla wszystkich podfolderów w docelowym folderze Elementy do odzyskania. Następnie możesz użyć identyfikatora folderu w zapytaniu wyszukiwania, aby zwrócić elementy znajdujące się w tym folderze.
+Aby wyszukać elementy znajdujące się w folderze Elementy możliwe do odzyskania, zalecamy wykonanie *kolekcji docelowej*. Oznacza to, że zakres wyszukiwania można zawęzić tylko do elementów znajdujących się w folderze Elementy możliwe do odzyskania. Możesz to zrobić, uruchamiając skrypt w artykule [Use Content Search for targeted collections (Używanie wyszukiwania zawartości dla kolekcji docelowych](use-content-search-for-targeted-collections.md) ). Ten skrypt zwraca wartość właściwości identyfikatora folderu dla wszystkich podfolderów w docelowym folderze Elementy możliwe do odzyskania. Następnie użyjesz identyfikatora folderu w zapytaniu wyszukiwania, aby zwrócić elementy znajdujące się w tym folderze.
 
-Oto omówienie procesu wyszukiwania i usuwania elementów w folderze Elementy do odzyskania użytkownika:
+Oto omówienie procesu wyszukiwania i usuwania elementów w folderze Elementy możliwe do odzyskania użytkownika:
 
-1. Uruchom skrypt docelowej kolekcji, który zwraca identyfikatory folderów dla wszystkich folderów w skrzynce pocztowej użytkownika docelowego. Skrypt łączy się z programem PowerShell Exchange Online i zabezpieczeniami programu PowerShell & w tej samej sesji programu PowerShell. Aby uzyskać więcej informacji, [zobacz Uruchamianie skryptu w celu uzyskania listy folderów skrzynki pocztowej](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site).
+1. Uruchom skrypt kolekcji docelowej, który zwraca identyfikatory folderów dla wszystkich folderów w skrzynce pocztowej użytkownika docelowego. Skrypt nawiązuje połączenie z programem Exchange Online programu PowerShell i programem PowerShell & Zgodności zabezpieczeń w tej samej sesji programu PowerShell. Aby uzyskać więcej informacji, zobacz [Uruchamianie skryptu w celu uzyskania listy folderów dla skrzynki pocztowej](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site).
 
-2. Skopiuj identyfikatory folderów wszystkich podfolderów w folderze Elementy do odzyskania. Możesz również przekierować dane wyjściowe skryptu do pliku tekstowego.
+2. Skopiuj identyfikatory folderów dla wszystkich podfolderów w folderze Elementy możliwe do odzyskania. Alternatywnie można przekierować dane wyjściowe skryptu do pliku tekstowego.
 
-   Oto lista i opis podfolderów w folderze Elementy do odzyskania, z których można wyszukiwać i usuwać elementy:
+   Oto lista i opis podfolderów w folderze Elementy możliwe do odzyskania, z których można wyszukiwać i usuwać elementy:
 
-   - **Usunięcia**: zawiera elementy wygasnąć w przypadku elementów usuniętych, których okres przechowywania elementów usuniętych nie wygasł. Użytkownicy mogą odzyskać elementy programowo usunięte z tego podfolderu przy użyciu narzędzia Odzyskiwanie elementów usuniętych w programie Outlook.
+   - **Usunięcia**: zawiera nietrwale usunięte elementy, których okres przechowywania usuniętych elementów nie wygasł. Użytkownicy mogą odzyskać elementy usunięte nietrwale z tego podfolderu przy użyciu narzędzia Odzyskaj usunięte elementy w Outlook.
 
-   - **DiscoveryHolds**: Zawiera elementy trwale usunięte, które zostały zachowane przez przechowywanie zbierania elektronicznych materiałów dowodowych lub przez zasady przechowywania. Ten podfolder nie jest widoczny dla użytkowników końcowych.
+   - **DiscoveryHolds**: zawiera mocno usunięte elementy, które zostały zachowane przez blokadę zbierania elektronicznych materiałów dowodowych lub zasady przechowywania. Ten podfolder nie jest widoczny dla użytkowników końcowych.
 
-   - **Holds**: Zawiera elementy usunięte z pliku Teams i innych aplikacji w chmurze, które zostały zachowane przez zasady przechowywania lub inny typ hold. Ten podfolder nie jest widoczny dla użytkowników końcowych.
+   - **SubstrateHolds**: zawiera usunięte elementy z Teams i innych aplikacji opartych na chmurze, które zostały zachowane przez zasady przechowywania lub inny typ blokady. Ten podfolder nie jest widoczny dla użytkowników końcowych.
 
-3. Użyj polecenia cmdlet **New-ComplianceSearch** (w programie PowerShell w Centrum zgodności usługi Security &) lub utwórz wyszukiwanie zawartości za pomocą narzędzia przeszukiwania zawartości w Centrum zgodności, które zwraca elementy z folderu Elementy do odzyskania użytkownika docelowego. Możesz to zrobić, uwzględniając pole FolderId w zapytaniu wyszukiwania dla wszystkich podfolderów, które chcesz przeszukać. Na przykład poniższe zapytanie zwraca wszystkie wiadomości z podfolderów Deletions i eDiscoveryHolds:
+3. Użyj polecenia cmdlet **New-ComplianceSearch** (w programie PowerShell Security & Compliance Center) lub użyj narzędzia wyszukiwania zawartości w centrum zgodności, aby utworzyć wyszukiwanie zawartości, które zwraca elementy z folderu Elementy możliwe do odzyskania użytkownika docelowego. Można to zrobić, dołączając identyfikator FolderId w zapytaniu wyszukiwania dla wszystkich podfolderów, które chcesz wyszukać. Na przykład następujące zapytanie zwraca wszystkie komunikaty w podfolderach Deletions i eDiscoveryHolds:
 
    ```text
    folderid:<folder ID of Deletions subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
-   Aby uzyskać więcej informacji i przykładów dotyczących uruchamiania przeszukiwań zawartości, które używają właściwości Identyfikator folderu, zobacz Używanie identyfikatora folderu lub [wykonywanie docelowej kolekcji](use-content-search-for-targeted-collections.md#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
+   Aby uzyskać więcej informacji i przykładów dotyczących uruchamiania wyszukiwań zawartości korzystających z właściwości identyfikatora folderu, zobacz [Używanie identyfikatora folderu lub wykonywanie kolekcji docelowej](use-content-search-for-targeted-collections.md#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
 
    > [!NOTE]
-   > Jeśli używasz polecenia cmdlet **New-ComplianceSearch** do wyszukiwania w folderze Elementy do odzyskania, użyj polecenia cmdlet **Start-ComplianceSearch** , aby uruchomić wyszukiwanie.
+   > Jeśli używasz polecenia cmdlet **New-ComplianceSearch** do przeszukiwania folderu Elementy możliwe do odzyskania, użyj polecenia cmdlet **Start-ComplianceSearch** , aby uruchomić wyszukiwanie.
 
-4. Po utworzeniu wyszukiwania zawartości i walidacji, czy zwraca ona elementy, które mają zostać usunięte, `New-ComplianceSearchAction -Purge -PurgeType HardDelete` użyj polecenia (w programie PowerShell w Centrum zabezpieczeń & zgodności), aby trwale usunąć elementy zwrócone przez wyszukiwanie zawartości utworzone w poprzednim kroku. Na przykład można uruchomić polecenie podobne do następującego:
+4. Po utworzeniu wyszukiwania zawartości i sprawdzeniu, czy zwraca ono elementy, które chcesz usunąć, użyj `New-ComplianceSearchAction -Purge -PurgeType HardDelete` polecenia (w programie PowerShell Security & Compliance Center), aby trwale usunąć elementy zwrócone przez wyszukiwanie zawartości utworzone w poprzednim kroku. Na przykład można uruchomić polecenie podobne do następującego polecenia:
 
    ```powershell
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-5. Po uruchomieniu poprzedniego polecenia usuwanych jest maksymalnie 10 elementów na skrzynkę pocztową. Oznacza to, że `New-ComplianceSearchAction -Purge` być może trzeba będzie wielokrotnie uruchomić to polecenie, aby usunąć wszystkie elementy, które mają zostać usunięte w folderze Elementy do odzyskania. Aby usunąć dodatkowe elementy, najpierw musisz usunąć poprzednią akcję przeczyszczania wyszukiwania zgodności. Możesz to zrobić, uruchamiając `Remove-ComplianceSearchAction` polecenie cmdlet. Aby na przykład usunąć akcję przeczyszczania, która została uruchomione w poprzednim kroku, uruchom następujące polecenie:
+5. Po uruchomieniu poprzedniego polecenia zostanie usuniętych maksymalnie 10 elementów na skrzynkę pocztową. Oznacza to, że może być konieczne wielokrotne uruchomienie `New-ComplianceSearchAction -Purge` polecenia, aby usunąć wszystkie elementy, które chcesz usunąć w folderze Elementy możliwe do odzyskania. Aby usunąć dodatkowe elementy, należy najpierw usunąć poprzednią akcję przeczyszczania wyszukiwania zgodności. Można to zrobić, uruchamiając `Remove-ComplianceSearchAction` polecenie cmdlet. Aby na przykład usunąć akcję przeczyszczania, która została uruchomiona w poprzednim kroku, uruchom następujące polecenie:
 
    ```powershell
    Remove-ComplianceSearchAction "RecoverableItems_Purge"
    ```
 
-   Gdy to zrobisz, możesz utworzyć nową akcję przeczyszczania wyszukiwania zgodności, aby usunąć więcej elementów. Przed utworzeniem nowej akcji należy usunąć każdą akcję przeczyszczania.
+   Po wykonaniu tej czynności możesz utworzyć nową akcję przeczyszczania w celu usunięcia większej liczby elementów. Przed utworzeniem nowej akcji przeczyszczania musisz usunąć każdą akcję przeczyszczania.
 
-   Aby uzyskać listę akcji wyszukiwania dotyczących zgodności, możesz uruchomić `Get-ComplianceSearchAction` polecenie cmdlet. Akcje przeczyszczania są identyfikowane `_Purge` przez dołączenie ich do nazwy wyszukiwania.
+   Aby uzyskać listę akcji wyszukiwania zgodności, można uruchomić `Get-ComplianceSearchAction` polecenie cmdlet. Akcje przeczyszczania są identyfikowane przez `_Purge` dołączenie do nazwy wyszukiwania.
 
-### <a name="verify-that-items-were-deleted"></a>Sprawdzanie, czy elementy zostały usunięte
+### <a name="verify-that-items-were-deleted"></a>Sprawdź, czy elementy zostały usunięte
 
-Aby sprawdzić, czy pomyślnie usunięto elementy z folderu Elementy do odzyskania w skrzynce pocztowej, użyj polecenia cmdlet **Get-MailboxFolderStatistics** w programie Exchange Online PowerShell, aby sprawdzić rozmiar i liczbę elementów w folderze Elementy do odzyskania. Możesz porównać te statystyki z tymi, które zostały zebrane w kroku 1.
+Aby sprawdzić, czy elementy z folderu Elementy możliwe do odzyskania zostały pomyślnie usunięte ze skrzynki pocztowej, użyj polecenia cmdlet **Get-MailboxFolderStatistics** w programie Exchange Online programu PowerShell, aby sprawdzić rozmiar i liczbę elementów w folderze Elementy do odzyskania. Możesz porównać te statystyki z tymi, które zostały zebrane w kroku 1.
   
-Uruchom następujące polecenie, aby uzyskać bieżący rozmiar i łączną liczbę elementów w folderach i podfolderach w folderze Elementy do odzyskania w podstawowej skrzynce pocztowej użytkownika.
+Uruchom następujące polecenie w programie , aby uzyskać bieżący rozmiar i łączną liczbę elementów w folderach i podfolderach w folderze Elementy możliwe do odzyskania w podstawowej skrzynce pocztowej użytkownika.
   
 ```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
 
-Uruchom następujące polecenie, aby uzyskać rozmiar i łączną liczbę elementów w folderach i podfolderach w folderze Elementy do odzyskania w archiwanej skrzynce pocztowej użytkownika.
+Uruchom następujące polecenie, aby uzyskać rozmiar i łączną liczbę elementów w folderach i podfolderach w folderze Elementy możliwe do odzyskania w skrzynce pocztowej archiwum użytkownika.
 
 ```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
 
-## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Krok 6. Przywracanie skrzynki pocztowej do poprzedniego stanu
+## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Krok 6. Przywrócenie poprzedniego stanu skrzynki pocztowej
 
-Ostatnim krokiem jest przywrócenie poprzedniej konfiguracji skrzynki pocztowej. Oznacza to zresetowanie właściwości zmienionych w kroku 2 i ponownestosowanie blokady usuniętej w kroku 3. Obejmuje to:
+Ostatnim krokiem jest przywrócenie poprzedniej konfiguracji skrzynki pocztowej. Oznacza to zresetowanie właściwości zmienionych w kroku 2 i ponowne zastosowane blokady usunięte w kroku 3. Obejmuje to:
   
-- Okres przechowywania elementów usuniętych można zmienić z powrotem na poprzednią wartość. Alternatywnie możesz pozostawić ten zestaw na 30 dni, czyli maksymalną wartość w Exchange Online.
+- Zmiana okresu przechowywania usuniętego elementu z powrotem na poprzednią wartość. Alternatywnie możesz pozostawić ten zestaw na 30 dni, czyli maksymalną wartość w Exchange Online.
 
 - Ponowne włączanie odzyskiwania pojedynczego elementu.
 
-- Ponowne włączenie metod dostępu klienta w celu umożliwienia właścicielowi dostępu do jego skrzynki pocztowej.
+- Ponowne włączenie metod dostępu klienta, aby właściciel mógł uzyskać dostęp do swojej skrzynki pocztowej.
 
-- Ponownestosowanie usuniętych blokady i zasad przechowywania.
+- Ponowne aplikowanie usuniętych zasad przechowywania i przechowywania.
 
-- Ponowne włączanie asystenta folderów zarządzanych w celu przetwarzania skrzynki pocztowej.
+- Ponowne włączenie asystenta folderów zarządzanych w celu przetworzenia skrzynki pocztowej.
 
 > [!IMPORTANT]
-> Zalecamy odczekanie 24 godzin od ponownego zastosowania zasad przechowywania lub blokowania (i zweryfikowania ich stosowania) przed ponownego włączenia asystenta folderów zarządzanych w celu przetwarzania skrzynki pocztowej.
+> Zalecamy odczekanie 24 godzin od ponownego zastosowania zasad przechowywania lub przechowywania (i sprawdzenie, czy zostały one wprowadzone) przed ponownym włączeniem asystenta folderów zarządzanych w celu przetworzenia skrzynki pocztowej.
   
-Wykonaj następujące czynności (w określonej kolejności) w programie Exchange Online PowerShell.
+Wykonaj następujące kroki (w określonej sekwencji) w programie Exchange Online programu PowerShell.
   
-1. Uruchom następujące polecenie, aby zmienić okres przechowywania elementów usuniętych z powrotem na jego pierwotną wartość. Założono, że poprzednie ustawienie jest mniejsze niż 30 dni. na przykład 14 dni.
+1. Uruchom następujące polecenie, aby zmienić okres przechowywania usuniętego elementu z powrotem na jego oryginalną wartość. Zakłada to, że poprzednie ustawienie jest mniejsze niż 30 dni; na przykład 14 dni.
 
     ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 14
     ```
 
-2. Uruchom następujące polecenie, aby ponownie włączyć odzyskiwanie pojedynczych elementów.
+2. Uruchom następujące polecenie, aby ponownie włączyć odzyskiwanie pojedynczego elementu.
 
     ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $true
@@ -381,33 +381,33 @@ Wykonaj następujące czynności (w określonej kolejności) w programie Exchang
     Set-CASMailbox <username> -EwsEnabled $true -ActiveSyncEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
     ```
 
-4. Ponowniestosuj blokady usunięte w kroku 3. W zależności od typu hold'a skorzystaj z jednej z poniższych procedur.
+4. Ponownie zastosować blokady usunięte w kroku 3. W zależności od typu blokady użyj jednej z poniższych procedur.
 
-    **Zawieszenie w  postępowaniach sądowych**
+    **Wstrzymanie postępowania sądowego**
 
-    Uruchom następujące polecenie, aby ponownie włączyć dla skrzynki pocztowej funkcję postępowania w związku z postępowaniem sądowym.
+    Uruchom następujące polecenie, aby ponownie włączyć blokadę postępowania sądowego dla skrzynki pocztowej.
 
     ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
     ```
 
-    **In-Place Hold**
+    **Blokada miejscowa**
 
-    Aby ponownie dodać skrzynkę pocztową do Exchange Online PowerShell, użyj SAC (lub programu Power In-Place Shell).
+    Użyj eac (lub Exchange Online programu PowerShell), aby dodać skrzynkę pocztową z powrotem do In-Place Hold.
 
     **Zasady przechowywania stosowane do określonych skrzynek pocztowych**
 
-    Użyj Centrum zgodności platformy Microsoft 365, aby ponownie dodać skrzynkę pocztową do zasad przechowywania. Przejdź do strony **Zarządzanie** informacjamiWczytanie  >  w Centrum zgodności, edytuj zasady przechowywania i dodaj skrzynkę pocztową z powrotem do listy adresatów, do których zastosowano zasady przechowywania.
+    Użyj portalu zgodności, aby dodać skrzynkę pocztową z powrotem do zasad przechowywania. Przejdź do strony **Zarządzanie** >  **informacjamiRetention** w centrum zgodności, edytuj zasady przechowywania i dodaj skrzynkę pocztową z powrotem do listy adresatów, do których są stosowane zasady przechowywania.
 
-    **Zasady przechowywania dla całej organizacji**
+    **Zasady przechowywania w całej organizacji**
 
-    Jeśli zasady przechowywania dla całej organizacji lub Exchange zostały usunięte przez ich wykluczenie z zasad, użyj przycisku Centrum zgodności platformy Microsoft 365, aby usunąć skrzynkę pocztową z listy wykluczonych użytkowników. Przejdź do strony **Zarządzanie** informacjamiWczytanie  >  w Centrum zgodności, edytuj zasady przechowywania dla całej organizacji i usuń skrzynkę pocztową z listy wykluczonych adresatów. Spowoduje to ponownestosowanie zasad przechowywania do skrzynki pocztowej użytkownika.
+    Jeśli usunięto zasady przechowywania w całej organizacji lub w całej Exchange, wykluczając je z zasad, użyj portalu zgodności, aby usunąć skrzynkę pocztową z listy wykluczonych użytkowników. Przejdź do strony **Zarządzanie** >  **informacjamiRetention** w centrum zgodności, edytuj zasady przechowywania w całej organizacji i usuń skrzynkę pocztową z listy wykluczonych adresatów. Spowoduje to ponowne zastosowanie zasad przechowywania do skrzynki pocztowej użytkownika.
 
-    **Zbierania elektronicznych materiałów dowodowych**
+    **Sprawa zbierania elektronicznych materiałów dowodowych jest przechowywana**
 
-    Użyj Centrum zgodności platformy Microsoft 365, aby ponownie dodać skrzynkę pocztową do hold, która jest skojarzona ze sprawą zbierania elektronicznych materiałów dowodowych. Przejdź do strony **zbierania elektronicznych materiałów dowodowych** > , otwórz sprawę i dodaj skrzynkę pocztową z powrotem do hold. 
+    Użyj portalu zgodności, aby dodać skrzynkę pocztową z powrotem do blokady skojarzonej ze sprawą zbierania elektronicznych materiałów dowodowych. Przejdź do strony **eDiscoveryCore** > , otwórz sprawę i dodaj skrzynkę pocztową z powrotem do blokady. 
 
-5. Uruchom następujące polecenie, aby umożliwić asystentowi folderów zarządzanych powtórz przetwarzanie skrzynki pocztowej. Jak wspomniano wcześniej, przed włączeniem asystenta folderów zarządzanych zalecamy odczekanie 24 godzin od ponownego włączenia asystenta folderów zarządzanych (i zweryfikowanie, że są one takie).
+5. Uruchom następujące polecenie, aby umożliwić asystentowi folderów zarządzanych ponowne przetworzenie skrzynki pocztowej. Zgodnie z wcześniejszymi instrukcjami zalecamy odczekanie 24 godzin od ponownego zastosowania zasad wstrzymania lub przechowywania (i sprawdzenie, czy zostały one wprowadzone) przed ponownym włączeniem Asystenta folderów zarządzanych.
 
     ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $false
@@ -425,14 +425,14 @@ Wykonaj następujące czynności (w określonej kolejności) w programie Exchang
 
 ## <a name="more-information"></a>Więcej informacji
 
-W poniższej tabeli opisano sposób identyfikowania różnych typów blokady na podstawie wartości właściwości  *InPlaceHolds*  podczas uruchamiania polecenia cmdlet **Get-Mailbox** lub **Get-OrganizationConfig** . Aby uzyskać bardziej szczegółowe informacje, zobacz [Jak zidentyfikować typ blokowania umieszczany w skrzynce Exchange Online pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md).
+Poniżej przedstawiono tabelę opisującą sposób identyfikowania różnych typów blokad na podstawie wartości we właściwości  *InPlaceHolds podczas uruchamiania*  poleceń cmdlet **Get-Mailbox** lub **Get-OrganizationConfig** . Aby uzyskać bardziej szczegółowe informacje, zobacz [How to identify the type of hold placed on an Exchange Online mailbox (Jak zidentyfikować typ blokady umieszczonej w Exchange Online skrzynce pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md)).
 
-Jak wyjaśniono wcześniej, przed pomyślnym usunięciem elementów z folderu Elementy do odzyskania należy usunąć wszystkie zasady przechowywania i blokady ze skrzynki pocztowej.
+Jak wyjaśniono wcześniej, przed pomyślnym usunięciem elementów w folderze Elementy możliwe do odzyskania należy usunąć wszystkie zasady przechowywania i przechowywania ze skrzynki pocztowej.
   
-| Typ wstrzymywania | Wartość przykładowa | Jak zidentyfikować hold |
+| Typ blokady | Przykładowa wartość | Jak zidentyfikować blokadę |
 |:-----|:-----|:-----|
-|Zawieszenie w  postępowaniach sądowych  <br/> | `True` <br/> |Właściwość  *LitigationHoldEnabled*  jest ustawiona na  `True`wartość .  <br/> |
-|In-Place hold  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |Właściwość  *InPlaceHolds*  zawiera identyfikator GUID In-Place, który jest umieszczany w skrzynce pocztowej. Można stwierdzić, że jest In-Place, ponieważ identyfikator GUID nie zaczyna się od prefiksu.  <br/> Za pomocą polecenia w programie `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Exchange Online PowerShell możesz uzyskać informacje o tym, In-Place wstrzymaj skrzynkę pocztową.  <br/> |
-| Zasady przechowywania w p Centrum zgodności platformy Microsoft 365 do określonych skrzynek pocztowych  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> lub  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Po uruchomieniu polecenia cmdlet **Get-Mailbox** właściwość  *InPlaceHolds*  zawiera również identyfikatory GUID zasad przechowywania zastosowanych do skrzynki pocztowej. Zasady przechowywania można określić, ponieważ identyfikator GUID zaczyna się od prefiksu  `mbx` . Jeśli identyfikator GUID zasad przechowywania zaczyna się od `skp` prefiksu, który wskazuje, że zasady przechowywania są stosowane do Skype dla firm konwersacji.  <br/> Aby tożsamości zasad przechowywania zastosowanych do skrzynki pocztowej, uruchom następujące polecenie w programie PowerShell centrum zabezpieczeń & zgodności: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Pamiętaj o usunięciu prefiksu  `mbx` lub  `skp` po uruchomieniu tego polecenia.  <br/> |
-|Zasady przechowywania dla całej organizacji w Centrum zgodności platformy Microsoft 365  <br/> |Brak wartości  <br/> lub  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696` (wskazuje, że skrzynka pocztowa jest wykluczona z zasad dla całej organizacji)  <br/> |Nawet jeśli właściwość  *InPlaceHolds*  jest pusta po uruchomieniu polecenia cmdlet **Get-Mailbox** , do skrzynki pocztowej nadal może być stosowana jedna lub więcej zasad przechowywania dla całej organizacji.  <br/> Aby to sprawdzić, możesz `Get-OrganizationConfig | FL InPlaceHolds` uruchomić polecenie w programie Exchange Online PowerShell, aby uzyskać listę identyfikatorów GUID dla zasad przechowywania dla całej organizacji. Identyfikator GUID zasad przechowywania stosowanych do skrzynek pocztowych Exchange organizacji zaczyna `mbx` się od prefiksu, na przykład `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> Aby tożsamość zasad przechowywania stosowanych do skrzynki pocztowej w całej organizacji było tożsamości, uruchom następujące polecenie w programie PowerShell w centrum zabezpieczeń & zgodności: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Jeśli skrzynka pocztowa jest wykluczona z zasad przechowywania dla całej organizacji, po uruchomieniu polecenia cmdlet **Get-Mailbox** identyfikator GUID zasad przechowywania jest wyświetlany we właściwości *InPlaceHolds* skrzynki pocztowej użytkownika. jest identyfikowany za pomocą prefiksu `-mbx`, na przykład`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|Wstrzymywanie sprawy zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |Właściwość *InPlaceHolds* zawiera również identyfikator GUID dowolnego miejsca przechowywania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365, które mogą zostać umieszczone w skrzynce pocztowej. Jak widać, jest to hold sprawy zbierania elektronicznych materiałów dowodowych, ponieważ identyfikator GUID zaczyna się od prefiksu  `UniH` .  <br/> Możesz użyć polecenia  `Get-CaseHoldPolicy` cmdlet w centrum zabezpieczeń & zgodności programu PowerShell, aby uzyskać informacje na temat sprawy zbierania elektronicznych materiałów dowodowych, z które jest skojarzone wstrzymanie skrzynki pocztowej. Można na przykład uruchomić  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` polecenie w celu wyświetlenia nazwy przechowywania sprawy w skrzynce pocztowej. Pamiętaj, aby po uruchomieniu  `UniH` tego polecenia usunąć prefiks.  <br/><br/> Aby tożsamości sprawy zbierania elektronicznych materiałów dowodowych, z tą skrzynką pocztową jest skojarzone, uruchom następujące polecenia:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
+|Wstrzymanie postępowania sądowego  <br/> | `True` <br/> |*Właściwość LitigationHoldEnabled* jest ustawiona na `True`.  <br/> |
+|blokada In-Place  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |Właściwość  *InPlaceHolds*  zawiera identyfikator GUID In-Place Hold umieszczony w skrzynce pocztowej. Możesz powiedzieć, że jest to In-Place Hold, ponieważ identyfikator GUID nie zaczyna się od prefiksu.  <br/> Możesz użyć polecenia w programie `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Exchange Online Programu PowerShell, aby uzyskać informacje o In-Place Wstrzymaj w skrzynce pocztowej.  <br/> |
+| Zasady przechowywania w portalu zgodności stosowane do określonych skrzynek pocztowych  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> lub  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Po uruchomieniu polecenia cmdlet **Get-Mailbox** właściwość  *InPlaceHolds*  zawiera również identyfikatory GUID zasad przechowywania stosowane do skrzynki pocztowej. Można zidentyfikować zasady przechowywania, ponieważ identyfikator GUID rozpoczyna się od prefiksu  `mbx` . Jeśli identyfikator GUID zasad przechowywania rozpoczyna się od prefiksu`skp`, oznacza to, że zasady przechowywania są stosowane do Skype dla firm konwersacji.  <br/> Aby tożsamości zasad przechowywania, które są stosowane do skrzynki pocztowej, uruchom następujące polecenie w Security & Compliance Center PowerShell: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Pamiętaj, aby usunąć  `mbx` prefiks lub  `skp` podczas uruchamiania tego polecenia.  <br/> |
+|Zasady przechowywania w całej organizacji w portalu zgodności  <br/> |Brak wartości  <br/> lub  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696` (wskazuje, że skrzynka pocztowa jest wykluczona z zasad dla całej organizacji)  <br/> |Nawet jeśli właściwość  *InPlaceHolds jest pusta podczas uruchamiania*  polecenia cmdlet **Get-Mailbox** , do skrzynki pocztowej nadal mogą być stosowane co najmniej jedna zasady przechowywania w całej organizacji.  <br/> Aby to sprawdzić, możesz uruchomić `Get-OrganizationConfig | FL InPlaceHolds` polecenie w programie Exchange Online programie PowerShell, aby uzyskać listę identyfikatorów GUID dla zasad przechowywania w całej organizacji. Identyfikator GUID dla zasad przechowywania w całej organizacji stosowany do Exchange skrzynek pocztowych zaczyna się od prefiksu`mbx`, `mbxa3056bb15562480fadb46ce523ff7b02`na przykład .  <br/> Aby utworzyć tożsamość zasad przechowywania w całej organizacji, które są stosowane do skrzynki pocztowej, uruchom następujące polecenie w programie PowerShell Security & Compliance Center: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Jeśli skrzynka pocztowa jest wykluczona z zasad przechowywania w całej organizacji, identyfikator GUID zasad przechowywania jest wyświetlany we właściwości  *InPlaceHolds*  skrzynki pocztowej użytkownika podczas uruchamiania polecenia cmdlet **Get-Mailbox** ; jest on identyfikowany przez prefiks  `-mbx`; na przykład  `-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|Blokada sprawy zbierania elektronicznych materiałów dowodowych w portalu zgodności  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |Właściwość  *InPlaceHolds*  zawiera również identyfikator GUID dowolnego blokady skojarzonego z przypadkiem zbierania elektronicznych materiałów dowodowych w portalu zgodności, który może zostać umieszczony w skrzynce pocztowej. Możesz powiedzieć, że jest to blokada sprawy zbierania elektronicznych materiałów dowodowych, ponieważ identyfikator GUID rozpoczyna się od prefiksu  `UniH` .  <br/> Możesz użyć  `Get-CaseHoldPolicy` polecenia cmdlet w programie PowerShell Security & Compliance Center, aby uzyskać informacje o przypadku zbierania elektronicznych materiałów dowodowych, z którą jest skojarzona blokada w skrzynce pocztowej. Na przykład możesz uruchomić polecenie  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` , aby wyświetlić nazwę blokady sprawy, która jest w skrzynce pocztowej. Pamiętaj, aby usunąć  `UniH` prefiks podczas uruchamiania tego polecenia.  <br/><br/> Aby tożsamość przypadku zbierania elektronicznych materiałów dowodowych, z którą jest skojarzona blokada skrzynki pocztowej, uruchom następujące polecenia:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`

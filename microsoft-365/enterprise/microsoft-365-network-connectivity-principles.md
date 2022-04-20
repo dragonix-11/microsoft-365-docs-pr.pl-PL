@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 dotyczących łączności sieciowej
+title: Zasady dotyczące łączności sieciowej na platformie Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -15,260 +15,260 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 f1.keywords:
 - NOCSH
-description: Ten artykuł zawiera najnowsze wskazówki dotyczące bezpiecznego optymalizowania Microsoft 365 sieci.
+description: Ten artykuł zawiera najnowsze wskazówki dotyczące bezpiecznej optymalizacji Microsoft 365 łączności sieciowej.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cea07745295f945f472dfeaa7042d3b027eea85
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e92f30c356ae782ba7d4d3bb779b744bccebf320
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63006541"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944486"
 ---
-# <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 dotyczących łączności sieciowej
+# <a name="microsoft-365-network-connectivity-principles"></a>Zasady dotyczące łączności sieciowej na platformie Microsoft 365
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Przed rozpoczęciem planowania sieci pod Microsoft 365 sieci ważne jest zrozumienie zasad łączności w celu bezpiecznego zarządzania ruchem sieciowym Microsoft 365 i uzyskiwania najlepszej możliwej wydajności. Ten artykuł pomoże Ci zrozumieć najnowsze wskazówki dotyczące bezpiecznego optymalizowania Microsoft 365 sieci.
+Przed rozpoczęciem planowania sieci na potrzeby Microsoft 365 łączności sieciowej ważne jest zrozumienie zasad łączności w celu bezpiecznego zarządzania ruchem Microsoft 365 i uzyskania najlepszej możliwej wydajności. Ten artykuł pomoże Ci zrozumieć najnowsze wskazówki dotyczące bezpiecznej optymalizacji Microsoft 365 łączności sieciowej.
   
-Tradycyjne sieci przedsiębiorstwa zaprojektowano przede wszystkim w celu zapewnienia użytkownikom dostępu do aplikacji i danych hostowanych w firmowych centrach danych z silnymi zabezpieczeniami obwodu. W tradycyjnym modelu założono, że użytkownicy będą mieć dostęp do aplikacji i danych z obwodu sieci firmowej, za pośrednictwem łączy WAN z oddziałów firmy lub zdalnie za pośrednictwem połączeń VPN.
+Tradycyjne sieci przedsiębiorstwa są przeznaczone przede wszystkim w celu zapewnienia użytkownikom dostępu do aplikacji i danych hostowanych w obsługiwanych przez firmę centrach danych z silnymi zabezpieczeniami obwodowymi. Tradycyjny model zakłada, że użytkownicy będą uzyskiwać dostęp do aplikacji i danych z wewnątrz obwodu sieci firmowej, za pośrednictwem linków sieci WAN z oddziałów lub zdalnie za pośrednictwem połączeń sieci VPN.
   
-Wdrożenie aplikacji SaaS, takich Microsoft 365, przenosi niektóre kombinacje usług i danych poza obwód sieci. Bez optymalizacji ruch między użytkownikami a aplikacjami SaaS podlega opóźnieniu wprowadzonemu przez inspekcję pakietów, spinki sieci, niezamierzone połączenia z geograficznymi punktami końcowymi i innymi czynnikami. Opis i wdrożenie wytycznych dotyczących optymalizacji klucza Microsoft 365 zapewnić najlepszą wydajność i niezawodność.
+Wdrożenie aplikacji SaaS, takich jak Microsoft 365, przenosi pewną kombinację usług i danych poza obwód sieci. Bez optymalizacji ruch między użytkownikami a aplikacjami SaaS podlega opóźnieniom wprowadzonym przez inspekcję pakietów, spinki do włosów sieci, przypadkowe połączenia z geograficznie odległymi punktami końcowymi i inne czynniki. Aby zapewnić najlepszą Microsoft 365 wydajność i niezawodność, możesz zrozumieć i zaimplementować wytyczne dotyczące optymalizacji kluczy.
   
-W tym artykule znajdziesz informacje na temat:
+W tym artykule dowiesz się więcej na temat:
   
-- [Microsoft 365 w](microsoft-365-network-connectivity-principles.md#BKMK_Architecture) zakresie łączności klienta z chmurą
-- Zaktualizowane [Microsoft 365 i strategii dotyczące](microsoft-365-network-connectivity-principles.md#BKMK_Principles) łączności w celu optymalizacji ruchu sieciowego i działania użytkownika końcowego
-- Usługa [Office 365 punktów](microsoft-365-network-connectivity-principles.md#BKMK_WebSvc) końcowych, która umożliwia administratorom sieci korzystanie z strukturalnej listy punktów końcowych do użycia w optymalizacji sieci
-- [Nowe Office 365 kategorii punktów końcowych i](microsoft-365-network-connectivity-principles.md#BKMK_Categories) wskazówki dotyczące optymalizacji
-- [Porównanie zabezpieczeń obwodu sieci z zabezpieczeniami punktów końcowych](microsoft-365-network-connectivity-principles.md#BKMK_SecurityComparison)
-- [Opcje optymalizacji](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) przyrostowej dla Microsoft 365 ruchu
-- Test [Microsoft 365 to](https://aka.ms/netonboard) nowe narzędzie do testowania podstawowej łączności z siecią Microsoft 365
+- [Microsoft 365 architektury](microsoft-365-network-connectivity-principles.md#BKMK_Architecture), która ma zastosowanie do łączności klienta z chmurą
+- Zaktualizowano [Microsoft 365 zasad łączności](microsoft-365-network-connectivity-principles.md#BKMK_Principles) i strategii optymalizacji ruchu sieciowego i środowiska użytkownika końcowego
+- [Usługa internetowa Office 365 Endpoints](microsoft-365-network-connectivity-principles.md#BKMK_WebSvc), która umożliwia administratorom sieci korzystanie ze strukturalnej listy punktów końcowych do użycia w optymalizacji sieci
+- [Nowe kategorie punktów końcowych Office 365](microsoft-365-network-connectivity-principles.md#BKMK_Categories) i wskazówki dotyczące optymalizacji
+- [Porównanie zabezpieczeń obwodowych sieci z zabezpieczeniami punktu końcowego](microsoft-365-network-connectivity-principles.md#BKMK_SecurityComparison)
+- [Opcje optymalizacji przyrostowej](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) dla ruchu Microsoft 365
+- [Test łączności Microsoft 365](https://aka.ms/netonboard), nowe narzędzie do testowania podstawowej łączności z Microsoft 365
 
-## <a name="microsoft-365-architecture"></a>Microsoft 365 architekturze
+## <a name="microsoft-365-architecture"></a>architektura Microsoft 365
 <a name="BKMK_Architecture"> </a>
 
-Microsoft 365 to rozłożona chmura typu "oprogramowanie jako usługa" (Software-as-a-Service, SaaS), która zapewnia scenariusze zwiększające produktywność i współpracę za pośrednictwem zróżnicowanego zestawu usług i aplikacji, takich jak Exchange Online, SharePoint Online, Skype dla firm Online, Microsoft Teams, Exchange Online Protection, Office w przeglądarce i wiele innych. Określone aplikacje Microsoft 365 mogą mieć swoje unikatowe funkcje, ponieważ mają zastosowanie do sieci i łączności klienta z chmurą, jednak wszystkie te aplikacje mają pewne kluczowe podmioty główne, cele i wzorce architektury. Te zasady i wzorce architektury łączności są typowe dla wielu innych chmur SaaS, a jednocześnie różnią się od typowych modeli wdrażania chmur Platform-as-a-Service i Infrastructure-as-a-Service, takich jak Microsoft Azure.
+Microsoft 365 jest rozproszoną chmurą typu oprogramowanie jako usługa (SaaS), która zapewnia scenariusze produktywności i współpracy za pośrednictwem zróżnicowanego zestawu mikrousługow i aplikacji, takich jak Exchange Online, SharePoint Online, Skype dla firm Online, Microsoft Teams, Exchange Online Protection, Office w przeglądarce i wielu innych. Chociaż określone aplikacje Microsoft 365 mogą mieć swoje unikatowe funkcje, ponieważ mają zastosowanie do sieci klienta i łączności z chmurą, wszystkie mają pewne kluczowe podmioty zabezpieczeń, cele i wzorce architektury. Te zasady i wzorce architektury dotyczące łączności są typowe dla wielu innych chmur SaaS, a jednocześnie różnią się od typowych modeli wdrażania chmur typu "platforma jako usługa" i "infrastruktura jako usługa", takich jak Microsoft Azure.
   
-Jedną z najbardziej istotnych funkcji architektonicznych aplikacji Microsoft 365 (często nieodebranych lub mylonych przez architektów sieci) jest to, że jest to usługa o prawdziwie rozpowszechnianej globalnej dystrybucji w kontekście sposobu łączenia się użytkowników z usługą. Położenie docelowej dzierżawy usługi Microsoft 365 jest ważne, aby zrozumieć lokalizację przechowywania danych klientów w chmurze, ale środowisko użytkownika w usłudze Microsoft 365 nie wymaga bezpośredniego połączenia z dyskami zawierającymi dane. Środowisko użytkownika z Microsoft 365 (w tym z wydajnością, niezawodnością i innymi ważnymi cechami jakości) obejmuje łączność za pośrednictwem wysoce rozproszonego frontu drzwi usługi, które są skalowane w setki lokalizacji firmy Microsoft na całym świecie. W większości przypadków najlepsze środowisko użytkownika uzyskuje się, zezwalając sieci klienta na rozsyłanie żądań użytkowników do najbliższego punktu wejścia usługi Microsoft 365 zamiast łączenia się z usługą Microsoft 365 przez punkt ruchu wychodzącego w centralnym miejscu lub regionie.
+Jedną z najważniejszych cech architektury Microsoft 365 (która jest często pomijana lub błędnie interpretowana przez architektów sieci) jest to, że jest to naprawdę globalna usługa rozproszona w kontekście sposobu łączenia się z nią przez użytkowników. Lokalizacja docelowej dzierżawy Microsoft 365 jest ważna, aby zrozumieć lokalizację, w której dane klientów są przechowywane w chmurze, ale środowisko użytkownika z Microsoft 365 nie obejmuje bezpośredniego łączenia się z dyskami zawierającymi dane. Środowisko użytkownika z Microsoft 365 (w tym wydajnością, niezawodnością i innymi ważnymi cechami jakości) obejmuje łączność za pośrednictwem wysoce rozproszonych drzwi frontowych usługi, które są skalowane w poziomie w setkach lokalizacji firmy Microsoft na całym świecie. W większości przypadków najlepsze środowisko użytkownika jest osiągane przez umożliwienie sieci klienta kierowania żądań użytkowników do najbliższego punktu wejścia usługi Microsoft 365 zamiast nawiązywania połączenia z Microsoft 365 za pośrednictwem punktu ruchu wychodzącego w centralnej lokalizacji lub regionie.
   
-W przypadku większości klientów użytkownicy Microsoft 365 się w wielu lokalizacjach. Aby osiągnąć najlepsze wyniki, należy przyjrzeć się zasadom opisanym w tym dokumencie z punktu widzenia skali (nie skalowania), skupiając się na optymalizacji łączności z najbliższym punktem obecności w sieci globalnej firmy Microsoft, a nie do lokalizacji geograficznej dzierżawy usługi Microsoft 365. W zasadzie oznacza Microsoft 365, że mimo że dane dzierżawy mogą być przechowywane w określonej lokalizacji geograficznej, środowisko obsługi dzierżawy Microsoft 365 pozostaje rozproszone i może być obecne w bardzo blisko (sieci) odległości od każdej lokalizacji użytkownika końcowego, która ma dzierżawę.
+W przypadku większości klientów Microsoft 365 użytkownicy są dystrybuowane w wielu lokalizacjach. Aby osiągnąć najlepsze wyniki, zasady opisane w tym dokumencie powinny być sprawdzane z punktu widzenia skalowania w poziomie (nie skalowania w górę), koncentrując się na optymalizacji łączności z najbliższym punktem obecności w globalnej sieci firmy Microsoft, a nie lokalizacji geograficznej dzierżawy Microsoft 365. Zasadniczo oznacza to, że nawet jeśli Microsoft 365 dane dzierżawy mogą być przechowywane w określonej lokalizacji geograficznej, środowisko Microsoft 365 dla tej dzierżawy pozostaje rozproszone i może znajdować się w bardzo bliskiej (sieci) blisko każdej lokalizacji użytkownika końcowego, którą ma dzierżawa.
   
-## <a name="microsoft-365-connectivity-principles"></a>Microsoft 365 dotyczących łączności
+## <a name="microsoft-365-connectivity-principles"></a>zasady łączności Microsoft 365
 <a name="BKMK_Principles"> </a>
 
-Firma Microsoft zaleca stosowanie poniższych zasad w celu zapewnienia optymalnej Microsoft 365 i wydajności. Za pomocą tych Microsoft 365 łączności możesz zarządzać ruchem i uzyskać najlepszą wydajność podczas łączenia się z siecią Microsoft 365.
+Firma Microsoft zaleca następujące zasady, aby osiągnąć optymalną Microsoft 365 łączności i wydajności. Użyj tych Microsoft 365 zasad łączności, aby zarządzać ruchem i uzyskać najlepszą wydajność podczas nawiązywania połączenia z Microsoft 365.
   
-Podstawowym celem projektu sieci powinno być zminimalizowanie opóźnień przez skrócenie czasu rundy (RTT, Round-trip Time) z Twojej sieci do globalnej sieci firmy Microsoft — podstawowej sieci publicznej firmy Microsoft, która łączy wszystkie centra danych firmy Microsoft z małymi opóźnieniami i punktami wejścia aplikacji w chmurze na całym świecie. Więcej informacji o globalnej sieci firmy Microsoft można znaleźć w te sposób, w jaki firma [Microsoft tworzy swoją szybką i niezawodną sieć globalną](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+Głównym celem projektu sieci powinno być zminimalizowanie opóźnienia przez skrócenie czasu rundy (RTT) z sieci do sieci globalnej firmy Microsoft, sieci publicznej sieci szkieletowej firmy Microsoft, która łączy wszystkie centra danych firmy Microsoft z małymi opóźnieniami i punktami wejścia aplikacji w chmurze rozłożonymi na całym świecie. Więcej informacji na temat globalnej sieci firmy Microsoft można znaleźć w artykułach [How Microsoft builds its fast and reliable global network (Jak firma Microsoft tworzy swoją szybką i niezawodną sieć globalną](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)).
   
 <a name="BKMK_P1"> </a>
-### <a name="identify-and-differentiate-microsoft-365-traffic"></a>Identyfikowanie i rozróżnianie Microsoft 365 ruchu
+### <a name="identify-and-differentiate-microsoft-365-traffic"></a>Identyfikowanie i rozróżnianie ruchu Microsoft 365
 
-![Identyfikowanie Microsoft 365 ruchu.](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
+![Identyfikowanie ruchu Microsoft 365.](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
-Identyfikowanie Microsoft 365 sieciowego jest pierwszym krokiem odróżniania tego ruchu od ogólnego ruchu sieciowego powiązanego z Internetem. Microsoft 365 można zoptymalizować łączność, implementując różne metody, takie jak optymalizacja tras sieciowych, reguły zapory, ustawienia serwera proxy przeglądarki i pomijanie urządzeń do inspekcji sieci w przypadku niektórych punktów końcowych.
+Identyfikowanie ruchu sieciowego Microsoft 365 jest pierwszym krokiem do odróżnienia tego ruchu od ogólnego ruchu sieciowego powiązanego z Internetem. Microsoft 365 łączność można zoptymalizować, implementując kombinację metod, takich jak optymalizacja tras sieciowych, reguły zapory, ustawienia serwera proxy przeglądarki i obejście urządzeń inspekcji sieci dla niektórych punktów końcowych.
   
-Poprzednie Microsoft 365 optymalizacji po podzielonej Microsoft 365 na dwie kategorie: **Wymagane** i **Opcjonalne**. W związku z tym, że dodano punkty końcowe do obsługi nowych usług i funkcji usługi Microsoft 365, przeorganizowaliśmy Microsoft 365 punkty końcowe w trzy **kategorie: Optymalizuj****,** Zezwalaj i **Domyślne**. Wskazówki dla każdej kategorii dotyczą wszystkich punktów końcowych w kategorii, co ułatwia zrozumienie i zaimplementowanie optymalizacji.
+Poprzednie wskazówki dotyczące optymalizacji Microsoft 365 podzieliły punkty końcowe Microsoft 365 na dwie kategorie: **Wymagane** i **Opcjonalne**. Po dodaniu punktów końcowych do obsługi nowych usług i funkcji Microsoft 365 zreorganizowaliśmy Microsoft 365 punktów końcowych na trzy **kategorie: Optymalizuj**, **Zezwalaj** i **Domyślne**. Wytyczne dla każdej kategorii dotyczą wszystkich punktów końcowych w kategorii, co ułatwia zrozumienie i zaimplementowanie optymalizacji.
   
-Aby uzyskać więcej informacji Microsoft 365 kategoriach punktów końcowych i metodach optymalizacji, zobacz sekcję Office 365 [kategorii punktów końcowych](microsoft-365-network-connectivity-principles.md#BKMK_Categories).
+Aby uzyskać więcej informacji na temat Microsoft 365 kategorii punktów końcowych i metod optymalizacji, zobacz sekcję [New Office 365 endpoint categories (Nowe Office 365 kategorie punktów końcowych](microsoft-365-network-connectivity-principles.md#BKMK_Categories)).
   
-Firma Microsoft publikuje teraz wszystkie Microsoft 365 punkty końcowe jako usługę sieci Web i udostępnia wskazówki dotyczące najlepszego wykorzystania tych danych. Aby uzyskać więcej informacji na temat zdalnego dostępu do punktów Microsoft 365 i pracy z ich punktami końcowymi, zobacz artykuł Office 365 [adresy URL i zakresy adresów IP](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Firma Microsoft publikuje teraz wszystkie punkty końcowe Microsoft 365 jako usługę internetową i zawiera wskazówki dotyczące najlepszego wykorzystania tych danych. Aby uzyskać więcej informacji na temat pobierania i pracy z punktami końcowymi Microsoft 365, zobacz artykuł [Office 365 adresów URL i zakresów adresów IP](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 <a name="BKMK_P2"> </a>
 ### <a name="egress-network-connections-locally"></a>Egress połączeń sieciowych lokalnie
 
-![Egress połączenia sieciowe lokalnie.](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![Egress połączeń sieciowych lokalnie.](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
-Lokalny ruch wychodzący do systemu DNS i Internetu ma kluczowe znaczenie dla zmniejszania opóźnień połączeń i zapewniania, że połączenia użytkowników są dokonywane w najbliższym punkcie wejścia do Microsoft 365 sieciowych. W złożonej topologii sieci ważne jest wdrożenie razem zarówno lokalnego serwera DNS, jak i lokalnego internetowego ruchu wychodzącego. Aby uzyskać więcej informacji na Microsoft 365 przekierowywuje połączenia klienta do najbliższego punktu wprowadzania, zobacz artykuł [Łączność z klientem](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
+Lokalny ruch wychodzący DNS i Internet ma kluczowe znaczenie dla zmniejszenia opóźnienia połączenia i zapewnienia, że połączenia użytkowników są nawiązywane do najbliższego punktu wejścia do usług Microsoft 365. W złożonej topologii sieci ważne jest, aby razem zaimplementować zarówno lokalny system DNS, jak i lokalny internetowy ruch wychodzący. Aby uzyskać więcej informacji na temat sposobu, w jaki Microsoft 365 kieruje połączenia klienta do najbliższego punktu wejścia, zobacz artykuł [Łączność klienta](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
-Przed nadejściem usług w chmurze, takich Microsoft 365, łączność internetowa użytkowników końcowych jako czynnik projektu w architekturze sieci była stosunkowo prosta. Gdy usługi internetowe i witryny sieci Web są rozproszone po świecie, opóźnienie między firmowym punktem docelowym a dowolnym punktem końcowym miejsca docelowego w dużym stopniu jest funkcją odległości geograficznej.
+Przed pojawieniem się usług w chmurze, takich jak Microsoft 365, łączność internetowa użytkownika końcowego jako czynnik projektowy architektury sieci była stosunkowo prosta. Gdy usługi internetowe i witryny internetowe są dystrybuowane na całym świecie, opóźnienie między firmowymi punktami ruchu wychodzącego i dowolnym docelowym punktem końcowym jest w dużej mierze funkcją odległości geograficznej.
   
-W tradycyjnej architekturze sieci wszystkie wychodzące połączenia internetowe przechodzenie przez sieć firmową i ruch wychodzący z lokalizacji centralnej. W związku z tym, że oferty firmy Microsoft w chmurze doły, architektura sieci o rozproszonej stronie Internetu ma kluczowe znaczenie dla obsługi usług w chmurze, które są wrażliwe na opóźnienia. Globalna sieć firmy Microsoft została zaprojektowana tak, aby spełniała wymagania dotyczące opóźnień dzięki infrastrukturze drzwi frontowych usługi rozłożonej (Distributed Service Front Door), dynamicznej tkaninie punktów wejścia globalnego, które rozsyła połączenia przychodzącej usługi w chmurze do najbliższego punktu wejścia. Ma to na celu zmniejszenie długości ostatniej mili dla klientów chmury firmy Microsoft przez efektywne skrócenie trasy między klientem a chmurą.
+W tradycyjnej architekturze sieci wszystkie wychodzące połączenia internetowe przechodzą przez sieć firmową i wychodzące z centralnej lokalizacji. W miarę dojrzewania ofert firmy Microsoft w chmurze rozproszona architektura sieci dostępna z Internetu stała się kluczowa dla obsługi usług w chmurze wrażliwych na opóźnienia. Globalna sieć firmy Microsoft została zaprojektowana w celu spełnienia wymagań dotyczących opóźnień dzięki infrastrukturze usługi Distributed Service Front Door, dynamicznej sieci szkieletowej globalnych punktów wejścia, która kieruje przychodzące połączenia usługi w chmurze do najbliższego punktu wejścia. Ma to na celu zmniejszenie długości "ostatniej mili" dla klientów chmury firmy Microsoft przez efektywne skrócenie trasy między klientem a chmurą.
   
-Enterprise sieci WAN są często zaprojektowane do blokowania ruchu sieciowego do centralnej firmy w celu inspekcji przed rozpoczęciem ruchu wychodzącego do Internetu, zazwyczaj za pośrednictwem jednego lub większej liczby serwerów proxy. Poniższy diagram przedstawia taką topologię sieci.
+Enterprise sieci WAN są często przeznaczone do obsługi ruchu sieciowego do centrali firmy w celu przeprowadzenia inspekcji przed wyjściem do Internetu, zwykle za pośrednictwem co najmniej jednego serwera proxy. Na poniższym diagramie przedstawiono taką topologię sieci.
   
 ![Tradycyjny model sieci przedsiębiorstwa.](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
   
-Ponieważ Microsoft 365 działa w globalnej sieci firmy Microsoft, która obejmuje serwery frontoronowe na całym świecie, serwer front end często znajduje się blisko lokalizacji użytkownika. Dzięki udostępniniu lokalnego punktu ruchu wychodzącego do Internetu i skonfigurowaniu wewnętrznych serwerów DNS w celu zapewnienia lokalnej rozpoznawania nazw dla punktów końcowych usługi Microsoft 365 ruch sieciowy przeznaczony dla usługi Microsoft 365 może połączyć się z serwerami front-end programu Microsoft 365 tak blisko, jak to tylko możliwe, z użytkownikami. Na poniższym diagramie przedstawiono przykład topologii sieci, która umożliwia użytkownikom łączącym się z głównej biura, oddziału firmy i lokalizacji zdalnej obserwowanie najkrótszej trasy do najbliższego Microsoft 365 punktu wejścia.
+Ponieważ Microsoft 365 działa w globalnej sieci firmy Microsoft, która obejmuje serwery frontonu na całym świecie, serwer frontonu często znajduje się w pobliżu lokalizacji użytkownika. Dzięki zapewnieniu lokalnego ruchu wychodzącego z Internetu i skonfigurowaniu wewnętrznych serwerów DNS w celu zapewnienia lokalnego rozpoznawania nazw dla Microsoft 365 punktów końcowych ruch sieciowy przeznaczony dla Microsoft 365 może łączyć się z serwerami frontonu Microsoft 365 jak najbliżej użytkownika. Na poniższym diagramie przedstawiono przykład topologii sieci, która umożliwia użytkownikom nawiązywanie połączeń z głównego biura, oddziału i lokalizacji zdalnych na podążanie najkrótszą trasą do najbliższego punktu wejścia Microsoft 365.
   
 ![Model sieci WAN z regionalnymi punktami ruchu wychodzącego.](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
   
-Skrócenie ścieżki sieciowej do punktów wejścia w ten sposób może poprawić wydajność łączności i środowisko użytkownika końcowego w programie Microsoft 365, Microsoft 365 także zmniejszyć wpływ przyszłych zmian architektury sieci na wydajność i niezawodność usługi Microsoft 365.
+Skrócenie ścieżki sieciowej do Microsoft 365 punktów wejścia w ten sposób może zwiększyć wydajność łączności i środowisko użytkownika końcowego w Microsoft 365, a także może pomóc zmniejszyć wpływ przyszłych zmian architektury sieci na wydajność i niezawodność Microsoft 365.
   
-Ponadto żądania DNS mogą wprowadzać opóźnienia, jeśli serwer DNS, który odpowiada, jest odległy lub zajęty. Opóźnienie rozpoznawania nazw można zminimalizować, inicjowanie obsługi lokalnych serwerów DNS w lokalizacjach gałęzi i upewnianie się, że rekordy DNS zostały odpowiednio skonfigurowane w celu ich odpowiedniego buforowania.
+Ponadto żądania DNS mogą wprowadzać opóźnienie, jeśli odpowiadający serwer DNS jest odległy lub zajęty. Opóźnienie rozpoznawania nazw można zminimalizować, aprowizując lokalne serwery DNS w lokalizacjach gałęzi i upewniając się, że są one odpowiednio skonfigurowane do buforowania rekordów DNS.
   
-Mimo że regionalny ruch wychodzący może dobrze działać w przypadku usługi Microsoft 365, optymalnym modelem łączności będzie zawsze zapewnienie ruchu wychodzącego z sieci w lokalizacji użytkownika, niezależnie od tego, czy znajduje się on w sieci firmowej, czy w lokalizacji zdalnej, takiej jak dom, hotel, kawiarnie czy lotniska. Ten lokalny model bezpośredniego ruchu wychodzącego przedstawiono na poniższym diagramie.
+Chociaż regionalny ruch wychodzący może działać dobrze dla Microsoft 365, optymalnym modelem łączności byłoby zawsze zapewnienie ruchu wychodzącego sieci w lokalizacji użytkownika, niezależnie od tego, czy jest to sieć firmowa, czy zdalne lokalizacje, takie jak domy, hotele, kawiarnie i lotniska. Ten lokalny model bezpośredniego ruchu wychodzącego jest reprezentowany na poniższym diagramie.
   
-![Lokalna architektura sieci ruchu wychodzącego.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Architektura lokalnej sieci wychodzącej.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
-Przedsiębiorstwa, które przyjęły Microsoft 365 mogą korzystać z architektury Microsoft Global Network Front Door usługi distributed przez zapewnienie, że połączenia użytkowników z siecią Microsoft 365 przejdą najkrótszą możliwą trasą do najbliższego punktu wejścia Microsoft Global Network. W tym celu lokalna architektura sieci ruchu wychodzącego umożliwia Microsoft 365 ruchu wychodzącego przez najbliższy ruch wychodzący, niezależnie od lokalizacji użytkownika.
+Przedsiębiorstwa, które przyjęły Microsoft 365, mogą skorzystać z architektury usługi Front Door usługi rozproszonej firmy Microsoft, zapewniając, że połączenia użytkowników z Microsoft 365 najkrótszą możliwą trasą do najbliższego punktu wejścia do sieci globalnej firmy Microsoft. Lokalna architektura sieci wychodzącej umożliwia kierowanie ruchu Microsoft 365 przez najbliższy ruch wychodzący, niezależnie od lokalizacji użytkownika.
   
-Lokalna architektura ruchów wychodzącej oferuje następujące korzyści w  przeciwieństwie do tradycyjnego modelu:
+Architektura ruchu wychodzącego lokalnego zapewnia następujące korzyści w stosunku do tradycyjnego modelu:
   
-- Zapewnia optymalną Microsoft 365 przez optymalizację długości trasy. Połączenia użytkowników końcowych są dynamicznie kierowane do najbliższego punktu Microsoft 365 przez infrastrukturę drzwi frontowych usługi rozproszonej.
-- Zmniejsza obciążenie firmowej infrastruktury sieciowej, umożliwiając lokalny ruch wychodzący.
-- Zabezpiecza połączenia po obu stronach, korzystając z funkcji zabezpieczeń punktów końcowych klienta i zabezpieczeń chmury.
+- Zapewnia optymalną wydajność Microsoft 365 przez optymalizowanie długości trasy. Połączenia użytkowników końcowych są dynamicznie kierowane do najbliższego punktu wejścia Microsoft 365 przez infrastrukturę usługi Rozproszona usługa Front Door.
+- Zmniejsza obciążenie infrastruktury sieci firmowej, zezwalając na ruch wychodzący lokalny.
+- Zabezpiecza połączenia na obu końcach dzięki wykorzystaniu zabezpieczeń punktów końcowych klienta i funkcji zabezpieczeń w chmurze.
 
 <a name="BKMK_P3"> </a>
-### <a name="avoid-network-hairpins"></a>Unikaj spinek sieciowych
+### <a name="avoid-network-hairpins"></a>Unikanie sieciowych spinek do włosów
 
-![Unikaj spinek.](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
+![Unikaj spinek do włosów.](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
-Z zasady najkrótsza, najbardziej bezpośrednia trasa między użytkownikiem a najbliższym Microsoft 365 końcowym oferuje najlepszą wydajność. Spinka sieciowa występuje, gdy ruch sieci WAN lub VPN powiązany z określonym miejscem docelowym jest najpierw przekierowywany do innej lokalizacji pośredniej (takiej jak stos zabezpieczeń, broker dostępu w chmurze lub oparta na chmurze brama sieci Web), wprowadzając opóźnienia i potencjalne przekierowywanie do geograficznie odległego punktu końcowego. Ponadto spinki sieci mogą być spowodowane nieefektywne routingu/komunikacji równorzędnej lub suboptimalnym (zdalnym) odnośnikami DNS.
+Ogólnie rzecz biorąc, najkrótsza, najbardziej bezpośrednia trasa między użytkownikiem a najbliższym punktem końcowym Microsoft 365 zapewni najlepszą wydajność. Spin sieciowy występuje, gdy ruch sieci WAN lub sieci VPN powiązany z określonym miejscem docelowym jest najpierw kierowany do innej lokalizacji pośredniej (takiej jak stos zabezpieczeń, broker dostępu do chmury lub brama internetowa oparta na chmurze), wprowadzając opóźnienia i potencjalne przekierowanie do geograficznie odległego punktu końcowego. Spinki do włosów sieci mogą być również spowodowane przez nieefektywność routingu/komunikacji równorzędnej lub nieoptymalne (zdalne) odnośniki DNS.
   
-Aby mieć pewność, że łączność z usługą Microsoft 365 nie podlega spince sieci nawet w przypadku lokalnego ruchu wychodzącego, sprawdź, czy używany u dostawcy usług internetowych ruch wychodzący dla lokalizacji użytkownika ma bezpośrednią relację komunikacji równorzędnej z siecią globalną firmy Microsoft w pobliżu tej lokalizacji. Możesz również skonfigurować routing ruchu wychodzącego w celu bezpośredniego wysyłania zaufanego ruchu Microsoft 365, w odróżnieniu od serwera proxy lub katalogowania przez innego dostawcę zabezpieczeń sieciowych lub chmurowego, który przetwarza Twój ruch internetowy. Lokalne rozpoznawanie nazw DNS dla punktów końcowych Microsoft 365 pomaga zapewnić, że oprócz routingu bezpośredniego dla połączeń użytkowników używane są najbliższe Microsoft 365 wejścia.
+Aby upewnić się, że łączność Microsoft 365 nie jest objęta siecią nawet w przypadku ruchu wychodzącego lokalnego, sprawdź, czy usługodawca internetowy, który jest używany do zapewnienia ruchu wychodzącego z Internetu dla lokalizacji użytkownika, ma bezpośrednią relację komunikacji równorzędnej z globalną siecią microsoft w pobliżu tej lokalizacji. Możesz również skonfigurować routing ruchu wychodzącego w celu bezpośredniego wysyłania zaufanego ruchu Microsoft 365, w przeciwieństwie do serwera proxy lub tunelowania przez dostawcę zabezpieczeń sieci w chmurze lub w chmurze, który przetwarza ruch związany z Internetem. Lokalne rozpoznawanie nazw DNS Microsoft 365 punktów końcowych pomaga zapewnić, że oprócz routingu bezpośredniego najbliższe punkty wejścia Microsoft 365 są używane na potrzeby połączeń użytkowników.
   
-Jeśli używasz sieci lub zabezpieczeń opartych na chmurze na Microsoft 365, upewnij się, że wynik spinki jest oceniany i ich wpływ Microsoft 365 jest zrozumiały. Można to zrobić, analizując liczbę i lokalizacje lokalizacji, za pośrednictwem których ruch jest przesyłany dalej w relacji do różnych oddziałów firmy i punktów komunikacji równorzędnej globalnej firmy Microsoft, jakość relacji komunikacji równorzędnej sieci usługodawca z usługą usługodawca z usługą sieciową i firmą Microsoft, a także wpływ powrotu do infrastruktury firmy usługodawca na wydajność. usługodawca
+Jeśli używasz sieci opartej na chmurze lub usług zabezpieczeń dla ruchu Microsoft 365, upewnij się, że wynik spinki do włosów jest oceniany, a jego wpływ na wydajność Microsoft 365 jest zrozumiały. Można to zrobić, sprawdzając liczbę i lokalizacje lokalizacji dostawców usług, za pośrednictwem których ruch jest przekazywany w związku z liczbą oddziałów i punktów komunikacji równorzędnej usługi Microsoft Global Network, jakością relacji komunikacji równorzędnej sieci dostawcy usług z usługodawcą isp i firmą Microsoft oraz wpływem na wydajność komunikacji równorzędnej w infrastrukturze dostawcy usług.
   
-Ze względu na dużą liczbę lokalizacji rozłożonych z punktami wejścia do usługi Microsoft 365 i ich odległością od użytkowników końcowych ruch routingu Microsoft 365 do sieci lub dostawcy zabezpieczeń innej firmy może mieć negatywny wpływ na połączenia Microsoft 365, jeśli sieć dostawcy nie jest skonfigurowana pod celu zapewnienia optymalnego Microsoft 365 komunikacji równorzędnej.
+Ze względu na dużą liczbę rozproszonych lokalizacji z punktami wejścia Microsoft 365 i ich bliskość do użytkowników końcowych, routing ruchu Microsoft 365 do dowolnej sieci innej firmy lub dostawcy zabezpieczeń może mieć negatywny wpływ na połączenia Microsoft 365, jeśli sieć dostawcy nie jest skonfigurowana pod kątem optymalnego Microsoft 365 Wpatrując się.
   
 <a name="BKMK_P4"> </a>
-### <a name="assess-bypassing-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Ocenianie obejść serwerów proxy, urządzeń do inspekcji ruchu i zduplikowanych technologii zabezpieczeń
+### <a name="assess-bypassing-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Ocena pomijania serwerów proxy, urządzeń inspekcji ruchu i zduplikowanych technologii zabezpieczeń
 
-![Pomijaj serwerów proxy, urządzenia do inspekcji ruchu i zduplikowane technologie zabezpieczeń.](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
+![Pomijaj serwery proxy, urządzenia inspekcji ruchu i zduplikowane technologie zabezpieczeń.](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
-Enterprise klienci powinni zapoznać się z metodami zmniejszenia ryzyka i zabezpieczeń sieci w szczególności dla ruchu powiązanego z usługą Microsoft 365 i używać funkcji zabezpieczeń programu Microsoft 365, aby ograniczyć zależność od uwierzytelniania, wpływania na wydajność i kosztownych technologii zabezpieczeń sieciowych dla ruchu sieciowego firmy Microsoft 365.
+Enterprise klienci powinni zapoznać się ze swoimi metodami bezpieczeństwa sieci i ograniczania ryzyka w szczególności w przypadku ruchu powiązanego Microsoft 365 i korzystać z Microsoft 365 funkcji zabezpieczeń, aby zmniejszyć zależność od natrętnych, wpływających na wydajność i kosztownych technologii zabezpieczeń sieciowych dla ruchu sieciowego Microsoft 365.
   
-Większość sieci przedsiębiorstw wymusza bezpieczeństwo sieci dla ruchu internetowego przy użyciu technologii, takich jak proxy, inspekcja SSL, inspekcja pakietów i systemy ochrony przed utratą danych. Te technologie zapewniają istotne środki zaradcze dla ogólnych żądań internetowych, ale mogą znacznie zmniejszyć wydajność, skalowalność i jakość środowiska użytkownika końcowego stosowanego do Microsoft 365 końcowych.
+Większość sieci przedsiębiorstwa wymusza zabezpieczenia sieci dla ruchu internetowego przy użyciu technologii, takich jak serwery proxy, inspekcja protokołu SSL, inspekcja pakietów i systemy zapobiegania utracie danych. Technologie te zapewniają istotne ograniczenie ryzyka dla ogólnych żądań internetowych, ale mogą znacznie zmniejszyć wydajność, skalowalność i jakość środowiska użytkownika końcowego, gdy są stosowane do Microsoft 365 punktów końcowych.
   
 <a name="BKMK_WebSvc"> </a>
-#### <a name="office-365-endpoints-web-service"></a>Office 365 sieci Web Punkty końcowe
+#### <a name="office-365-endpoints-web-service"></a>usługa sieci Web punktów końcowych Office 365
 
-Microsoft 365 administratorzy mogą używać skryptu lub wywołania REST do używania strukturalnej listy punktów końcowych z usługi sieci Web Punkty końcowe usługi Office 365 i aktualizować konfiguracje zapór obwodowych i innych urządzeń sieciowych. Dzięki temu ruch powiązany z siecią Microsoft 365 jest identyfikowany, traktowany odpowiednio i zarządzany inaczej niż ruch sieciowy powiązany dla ogólnych i często nieznanych witryn internetowych. Aby uzyskać więcej informacji na temat korzystania z usługi sieci Web Office 365 endpoints, zobacz artykuł Office 365 [URL i zakresów adresów IP](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Microsoft 365 administratorzy mogą używać skryptu lub wywołania REST, aby korzystać ze strukturalnej listy punktów końcowych z usługi sieci Web punktów końcowych Office 365 i aktualizować konfiguracje zapór obwodowych i innych urządzeń sieciowych. Zapewni to, że ruch związany z Microsoft 365 zostanie zidentyfikowany, odpowiednio potraktowany i zarządzany inaczej niż ruch sieciowy powiązany z ogólnymi i często nieznanymi internetowymi witrynami internetowymi. Aby uzyskać więcej informacji na temat korzystania z usługi internetowej Office 365 Endpoints, zobacz artykuł [Office 365 adresów URL i zakresów adresów IP](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 #### <a name="pac-proxy-automatic-configuration-scripts"></a>Skrypty PAC (automatyczna konfiguracja serwera proxy)
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft 365 mogą tworzyć skrypty PAC (konfiguracja automatyczna serwera proxy), które mogą być dostarczane na komputery użytkowników za pośrednictwem tabletu WPAD lub obiektu zasad grupy. Skrypty PAC mogą być używane do pomijania serwerów proxy dla żądań sieci Microsoft 365 od użytkowników sieci WAN lub VPN, dzięki czemu ruch sieci Microsoft 365 może korzystać z bezpośrednich połączeń internetowych zamiast przechodzenia do sieci firmowej.
+Microsoft 365 administratorzy mogą tworzyć skrypty PAC (automatyczna konfiguracja serwera proxy), które mogą być dostarczane do komputerów użytkowników za pośrednictwem urządzenia WPAD lub obiektu zasad grupy. Skrypty PAC mogą służyć do obejścia serwerów proxy dla żądań Microsoft 365 od użytkowników sieci WAN lub sieci VPN, dzięki czemu ruch Microsoft 365 może korzystać z bezpośrednich połączeń internetowych zamiast przechodzić przez sieć firmową.
   
-#### <a name="microsoft-365-security-features"></a>Microsoft 365 funkcje zabezpieczeń
+#### <a name="microsoft-365-security-features"></a>funkcje zabezpieczeń Microsoft 365
 <a name="BKMK_WebSvc"> </a>
 
-Firma Microsoft jest przejrzysta w zakresie bezpieczeństwa, zabezpieczeń operacyjnych i zmniejszenia ryzyka związanego z Microsoft 365 i punktami końcowymi sieci, które reprezentują. Microsoft 365 wbudowane funkcje zabezpieczeń są dostępne w celu zmniejszenia ryzyka związanego z zabezpieczeniami sieci, takich jak ochrona przed utratą danych, ochrona przed wirusami, uwierzytelnianie wieloskładnikowe, skrytka klienta, program Defender for Office 365, analizy zagrożeń Microsoft 365, Microsoft 365 bezpieczny wynik, Exchange Online Protection i Network DDOS Security.
+Firma Microsoft jest przejrzysta w zakresie zabezpieczeń centrum danych, zabezpieczeń operacyjnych i zmniejszania ryzyka związanego z serwerami Microsoft 365 i punktami końcowymi sieci, które reprezentują. Microsoft 365 dostępne są wbudowane funkcje zabezpieczeń w celu zmniejszenia ryzyka bezpieczeństwa sieci, takie jak ochrona przed utratą danych w usłudze Microsoft Purview, ochrona przed wirusami, uwierzytelnianie wieloskładnikowe, pole blokady klienta, Ochrona usługi Office 365 w usłudze Defender, Microsoft 365 analiza zagrożeń, Microsoft 365 wskaźnika bezpieczeństwa, Exchange Online Protection i zabezpieczeń DDOS sieci.
   
-Aby uzyskać więcej informacji na temat centrum danych firmy Microsoft i zabezpieczeń globalnej sieci, zobacz [Centrum zaufania firmy Microsoft](https://www.microsoft.com/trustcenter/security).
+Aby uzyskać więcej informacji na temat zabezpieczeń centrum danych firmy Microsoft i sieci globalnej, zobacz [Centrum zaufania firmy Microsoft](https://www.microsoft.com/trustcenter/security).
   
-## <a name="new-office-365-endpoint-categories"></a>Nowe Office 365 kategorii punktów końcowych
+## <a name="new-office-365-endpoint-categories"></a>Nowe kategorie punktów końcowych Office 365
 <a name="BKMK_Categories"> </a>
 
-Office 365 punkty końcowe reprezentują zróżnicowany zestaw adresów sieciowych i podsieci. Punktami końcowymi mogą być adresy URL, adresy IP lub zakresy adresów IP, a niektóre punkty końcowe są wymienione z określonymi portami TCP/UDP. Adresy URL mogą być nazwami FQDN, *account.office.net* adresami URL symboli wieloznacznych *\*, na przykład office365.com*.
+Office 365 punkty końcowe reprezentują zróżnicowany zestaw adresów sieciowych i podsieci. Punkty końcowe mogą być adresami URL, adresami IP lub zakresami adresów IP, a niektóre punkty końcowe są wymienione z określonymi portami TCP/UDP. Adresy URL mogą być nazwą FQDN, taką jak *account.office.net*, lub adresem URL symbolu wieloznacznego, takim jak *\*.office365.com*.
   
 > [!NOTE]
-> Lokalizacje Office 365 końcowych w sieci nie są bezpośrednio związane z lokalizacją danych Microsoft 365 dzierżawy. Z tego powodu klienci powinni spojrzeć na Microsoft 365 jako usługę globalną i nie powinni próbować blokować połączeń sieciowych do Office 365 na podstawie kryteriów geograficznych.
+> Lokalizacje Office 365 punktów końcowych w sieci nie są bezpośrednio powiązane z lokalizacją danych dzierżawy Microsoft 365. Z tego powodu klienci powinni patrzeć na Microsoft 365 jako usługę rozproszoną i globalną i nie powinni próbować blokować połączeń sieciowych z punktami końcowymi Office 365 na podstawie kryteriów geograficznych.
   
-W naszych poprzednich wskazówkach dotyczących zarządzania Microsoft 365, punkty końcowe zostały zorganizowane w dwie kategorie: **Wymagane** i **Opcjonalne**. Punkty końcowe w poszczególnych kategoriach wymagały innej optymalizacji w zależności od krytycznego poziomu usługi, a wielu klientów napotykało trudności w justowania stosowania tych samych optymalizacji sieciowych do pełnej listy adresów URL i IP usługi Office 365.
+W naszych poprzednich wskazówkach dotyczących zarządzania ruchem Microsoft 365 punkty końcowe zostały podzielone na dwie kategorie: **Wymagane** i **Opcjonalne**. Punkty końcowe w każdej kategorii wymagały różnych optymalizacji w zależności od krytyczności usługi, a wielu klientów napotkało wyzwania związane z uzasadnieniem zastosowania tych samych optymalizacji sieci do pełnej listy adresów URL i adresów IP Office 365.
   
-W nowym modelu punkty końcowe są podzielone na trzy **kategorie: Optimize** (Optymalizuj), **Allow** (Zezwalaj) i **Default** (Domyślne), co zapewnia opartą na priorytecie tabelę przestawną opartą na tym, gdzie mają być koncentrowane działania optymalizacji sieci w celu realizacji najlepszych ulepszeń wydajności i zwrotu z inwestycji. Punkty końcowe są konsolidowane w powyższych kategoriach w zależności od wrażliwości efektywnego interfejsu użytkownika na jakość sieci, głośność i wydajność koperty scenariuszy i łatwości implementacji. Zalecane optymalizacje można stosować w ten sam sposób do wszystkich punktów końcowych w danej kategorii.
+W nowym modelu punkty końcowe są podzielone na trzy **kategorie: Optymalizuj**, **Zezwalaj** i **Domyślne**, zapewniając oparty na priorytecie punkt przestawny, w którym należy skoncentrować działania optymalizacji sieci w celu osiągnięcia najlepszych ulepszeń wydajności i zwrotu z inwestycji. Punkty końcowe są konsolidowane w powyższych kategoriach w oparciu o wrażliwość efektywnego środowiska użytkownika na jakość sieci, wolumin i wydajność scenariuszy oraz łatwość implementacji. Zalecane optymalizacje można zastosować w ten sam sposób do wszystkich punktów końcowych w danej kategorii.
   
-- **Do** łączności z każdą usługą sieci Office 365 są wymagane punkty końcowe optymalizowania i reprezentują ponad 75% Office 365, połączeń i ilości danych. Te punkty końcowe reprezentują Office 365, które są najbardziej poufne dla wydajności, opóźnień i dostępności sieci. Wszystkie punkty końcowe są hostowane w centrach danych firmy Microsoft. Stopa zmiany punktów końcowych w tej kategorii będzie znacznie mniejsza niż w przypadku punktów końcowych w pozostałych dwóch kategoriach. Ta kategoria zawiera niewielki (uporządkowany z ~10) zestaw adresów URL kluczy i zdefiniowany zestaw podsieci IP przeznaczonych dla podstawowych obciążeń pracą usługi Office 365, takich jak Exchange Online, SharePoint Online, Skype dla firm Online i Microsoft Teams.
+- **Optymalizacja** punktów końcowych jest wymagana do łączności z każdą usługą Office 365 i stanowi ponad 75% przepustowości Office 365, połączeń i ilości danych. Te punkty końcowe reprezentują Office 365 scenariuszy, które są najbardziej wrażliwe na wydajność, opóźnienie i dostępność sieci. Wszystkie punkty końcowe są hostowane w centrach danych firmy Microsoft. Oczekuje się, że szybkość zmiany punktów końcowych w tej kategorii będzie znacznie niższa niż w przypadku punktów końcowych w dwóch pozostałych kategoriach. Ta kategoria obejmuje niewielki zestaw adresów URL kluczy (rzędu ok. 10) oraz zdefiniowany zestaw podsieci IP przeznaczonych dla podstawowych obciążeń Office 365, takich jak Exchange Online, SharePoint Online, Skype dla firm Online i Microsoft Teams.
 
-    Skondensowana lista dobrze zdefiniowanych punktów końcowych o krytycznym znaczeniu powinna ułatwić szybsze i łatwiejsze planowanie i implementowanie optymalizacji sieci o wysokiej wartości dla tych miejsc docelowych.
+    Skrócona lista dobrze zdefiniowanych krytycznych punktów końcowych powinna pomóc w szybszym i łatwiejszym planowaniu i implementowaniu optymalizacji sieci o wysokiej wartości dla tych miejsc docelowych.
 
-    Do punktów  *końcowych optymalizowania*  należą *https://outlook.office365.com*: *, https://\<tenant\>.sharepoint.com* i *https://\<tenant\>-my.sharepoint.com*.
+    Przykłady punktów końcowych  *optymalizacji*  to *https://outlook.office365.com*, *https://\<tenant\>.sharepoint.com* i *https://\<tenant\>-my.sharepoint.com*.
 
     Metody optymalizacji obejmują:
 
-  - *Pomijanie punktów* końcowych optymalizowania na urządzeniach sieciowych i usługach, które wykonują przechwytywanie ruchu, odszyfrowywanie protokołu SSL, dogłębną inspekcję pakietów i filtrowanie zawartości.
-  - Pomijaj lokalne urządzenia proxy i oparte na chmurze usługi proxy często używane do ogólnego przeglądania Internetu.
-  - Określanie priorytetu oceny tych punktów końcowych jako w pełni zaufanych przez infrastrukturę sieciową i systemy obwodowe.
-  - Określanie priorytetów ograniczania lub eliminowania kierowania kierowania sieci WAN do punktów końcowych opartych na Internecie oraz ułatwienia bezpośredniego dystrybucji ruchu wychodzącego dla tych punktów końcowych, jak to tylko możliwe, w pobliżu lokalizacji użytkowników/gałęzi.
-  - Usprawnij bezpośrednią łączność z tymi punktami końcowymi w chmurze dla użytkowników sieci VPN, implementując rozdzielanie na wc.
-  - Upewnij się, że adresy IP zwracane przez rozpoznawanie nazw DNS są zgodne ze ścieżką routingu ruchu wychodzącego dla tych punktów końcowych.
-  - Priorytetyzowanie tych punktów końcowych na poziomie integracji SD-WAN w celu bezpośredniego routingu z minimalnymi opóźnieniami do najbliższego internetowego punktu komunikacji równorzędnej globalnej firmy Microsoft.
+  - *Pomiń optymalizowanie* punktów końcowych na urządzeniach sieciowych i usługach, które wykonują przechwytywanie ruchu, odszyfrowywanie SSL, głęboką inspekcję pakietów i filtrowanie zawartości.
+  - Pomijaj lokalne urządzenia proxy i usługi serwera proxy oparte na chmurze, które są często używane do ogólnego przeglądania Internetu.
+  - Określanie priorytetów oceny tych punktów końcowych jako w pełni zaufanych przez infrastrukturę sieci i systemy obwodowe.
+  - Priorytetyzowanie redukcji lub eliminacji zaplecza sieci WAN i ułatwienie bezpośredniego rozproszonego ruchu wychodzącego opartego na Internecie dla tych punktów końcowych tak blisko lokalizacji użytkowników/oddziałów, jak to możliwe.
+  - Ułatwianie bezpośredniej łączności z tymi punktami końcowymi w chmurze dla użytkowników sieci VPN przez zaimplementowanie tunelowania podzielonego.
+  - Upewnij się, że adresy IP zwracane przez rozpoznawanie nazw DNS są zgodne ze ścieżką ruchu wychodzącego routingu dla tych punktów końcowych.
+  - Nadaj priorytet tym punktom końcowym integracji SD-WAN w przypadku bezpośredniego, minimalnego routingu opóźnień do najbliższego internetowego punktu komunikacji równorzędnej sieci globalnej firmy Microsoft.
 
-- **Zezwalaj** na punkty końcowe są wymagane na potrzeby łączności z określonymi Office 365 i funkcjami, ale nie są tak poufne, jak w przypadku wydajności i opóźnień sieciowych, jak w kategorii *Optymalizowanie*. Ogólne wykorzystanie miejsca zajmowanego przez te punkty końcowe w sieci w kontekście przepustowości i liczby połączeń również jest mniejsze. Te punkty końcowe są dedykowane dla Office 365 i są hostowane w centrach danych firmy Microsoft. Reprezentują one szeroki zestaw usług Office 365 oraz ich zależności (według kolejności ~100 adresów URL) i powinny ulec zmianie z większą szybkością niż w kategorii *Optymalizowanie.* Nie wszystkie punkty końcowe w tej kategorii są skojarzone ze zdefiniowanymi dedykowanymi podsieciami IP.
+- **Zezwalaj na** punkty końcowe są wymagane do łączności z określonymi usługami i funkcjami Office 365, ale nie są tak wrażliwe na wydajność i opóźnienie sieci, jak w kategorii *Optymalizacja*. Ogólny ślad sieciowy tych punktów końcowych z punktu widzenia przepustowości i liczby połączeń jest również mniejszy. Te punkty końcowe są przeznaczone dla Office 365 i są hostowane w centrach danych firmy Microsoft. Reprezentują one szeroki zestaw Office 365 mikrousług i ich zależności (w kolejności ok. 100 adresów URL) i oczekuje się, że zmienią się z większą szybkością niż w kategorii *Optymalizacja*. Nie wszystkie punkty końcowe w tej kategorii są skojarzone ze zdefiniowanymi dedykowanymi podsieciami IP.
 
-    Optymalizacja sieci dla  punktów końcowych zezwalania może poprawić Office 365 użytkownika, ale niektórzy klienci mogą zdecydować się na bardziej zawężenie zakresu tych optymalizacji, aby zminimalizować zmiany w ich sieci.
+    Optymalizacje *sieci dla* zezwalających punktów końcowych mogą poprawić środowisko Office 365 użytkownika, ale niektórzy klienci mogą zdecydować się na bardziej wąski zakres tych optymalizacji, aby zminimalizować zmiany w sieci.
 
-    Przykładami *punktów końcowych Allow* (Zezwalaj *) są https://\*.protection.outlook.com* i *https://accounts.accesscontrol.windows.net*.
+    Przykłady *zezwalania na* punkty końcowe obejmują *https://\*.protection.outlook.com* i *https://accounts.accesscontrol.windows.net*.
 
     Metody optymalizacji obejmują:
 
-  - *Obejście Zezwalaj* na punkty końcowe na urządzeniach sieciowych i usługach, które wykonują przechwytywanie ruchu, odszyfrowywanie protokołu SSL, dogłębną inspekcję pakietów i filtrowanie zawartości.
-  - Określanie priorytetu oceny tych punktów końcowych jako w pełni zaufanych przez infrastrukturę sieciową i systemy obwodowe.
-  - Określanie priorytetów ograniczania lub eliminowania kierowania kierowania sieci WAN do punktów końcowych opartych na Internecie oraz ułatwienia bezpośredniego dystrybucji ruchu wychodzącego dla tych punktów końcowych, jak to tylko możliwe, w pobliżu lokalizacji użytkowników/gałęzi.
-  - Upewnij się, że adresy IP zwracane przez rozpoznawanie nazw DNS są zgodne ze ścieżką routingu ruchu wychodzącego dla tych punktów końcowych.
-  - Priorytetyzowanie tych punktów końcowych na poziomie integracji SD-WAN w celu bezpośredniego routingu z minimalnymi opóźnieniami do najbliższego internetowego punktu komunikacji równorzędnej globalnej firmy Microsoft.
+  - *Pomiń pozycję Zezwalaj* na punkty końcowe na urządzeniach sieciowych i usługach, które wykonują przechwytywanie ruchu, odszyfrowywanie SSL, głęboką inspekcję pakietów i filtrowanie zawartości.
+  - Określanie priorytetów oceny tych punktów końcowych jako w pełni zaufanych przez infrastrukturę sieci i systemy obwodowe.
+  - Priorytetyzowanie redukcji lub eliminacji zaplecza sieci WAN i ułatwienie bezpośredniego rozproszonego ruchu wychodzącego opartego na Internecie dla tych punktów końcowych tak blisko lokalizacji użytkowników/oddziałów, jak to możliwe.
+  - Upewnij się, że adresy IP zwracane przez rozpoznawanie nazw DNS są zgodne ze ścieżką ruchu wychodzącego routingu dla tych punktów końcowych.
+  - Nadaj priorytet tym punktom końcowym integracji SD-WAN w przypadku bezpośredniego, minimalnego routingu opóźnień do najbliższego internetowego punktu komunikacji równorzędnej sieci globalnej firmy Microsoft.
 
-- **Domyślne** punkty końcowe reprezentują Office 365 i zależności, które nie wymagają żadnej optymalizacji, i mogą być traktowane przez sieci klientów jako normalny ruch powiązany z Internetem. Niektóre punkty końcowe w tej kategorii mogą nie być hostowane w centrach danych firmy Microsoft. Przykłady:  *https://odc.officeapps.live.com*  i  *https://appexsin.stb.s-msn.com*.
+- **Domyślne** punkty końcowe reprezentują usługi i zależności Office 365, które nie wymagają żadnej optymalizacji i mogą być traktowane przez sieci klientów jako normalny ruch związany z Internetem. Niektóre punkty końcowe w tej kategorii mogą nie być hostowane w centrach danych firmy Microsoft. Przykłady obejmują  *https://odc.officeapps.live.com*  i  *https://appexsin.stb.s-msn.com*.
 
-Aby uzyskać więcej informacji Office 365 na temat technik optymalizacji sieci, zobacz artykuł Zarządzanie Office 365 [punktami końcowymi](managing-office-365-endpoints.md).
+Aby uzyskać więcej informacji na temat Office 365 technik optymalizacji sieci, zobacz artykuł [Zarządzanie punktami końcowymi Office 365](managing-office-365-endpoints.md).
   
-## <a name="comparing-network-perimeter-security-with-endpoint-security"></a>Porównanie zabezpieczeń obwodu sieci z zabezpieczeniami punktów końcowych
+## <a name="comparing-network-perimeter-security-with-endpoint-security"></a>Porównanie zabezpieczeń obwodowych sieci z zabezpieczeniami punktu końcowego
 <a name="BKMK_SecurityComparison"> </a>
 
-Celem tradycyjnych zabezpieczeń sieci jest ochrona obwodu sieci firmowej przed dostępem osób do sieci i złośliwymi wykorzystywaniami. W związku z Microsoft 365 niektórych usług sieciowych i danych są częściowo lub całkowicie migrowane do chmury w organizacji. Podobnie jak w przypadku wszelkich podstawowych zmian architektury sieci ten proces wymaga ponownej oceny zabezpieczeń sieci, uwzględniającej wyłaniające się czynniki:
+Celem tradycyjnych zabezpieczeń sieci jest wzmocnienie obwodu sieci firmowej przed nieautoryzowanym dostępem i złośliwymi lukami w zabezpieczeniach. W miarę jak organizacje przyjmują Microsoft 365, niektóre usługi sieciowe i dane są częściowo lub całkowicie migrowane do chmury. Jeśli chodzi o wszelkie fundamentalne zmiany w architekturze sieci, ten proces wymaga ponownej ewaluacji zabezpieczeń sieci, która uwzględnia nowe czynniki:
   
-- W związku z tym, że są przyjęte usługi w chmurze, usługi sieciowe i dane są rozpowszechniane między lokalnymi centrami danych a chmurą, a zabezpieczenia obwodu nie są już odpowiednie samodzielnie.
-- Użytkownicy zdalni łączą się z zasobami firmowymi zarówno w lokalnych centrach danych, jak i w chmurze z lokalizacji niepodległych, takich jak domy, hotele i kawiarnie.
-- Funkcje zabezpieczeń oparte na celach są coraz częściej wbudowane w usługi w chmurze i mogą potencjalnie uzupełniać lub zamieniać istniejące systemy zabezpieczeń.
+- W miarę wdrażania usług w chmurze usługi sieciowe i dane są dystrybuowane między lokalnymi centrami danych i chmurą, a zabezpieczenia obwodowe nie są już odpowiednie samodzielnie.
+- Użytkownicy zdalni łączą się z zasobami firmy zarówno w lokalnych centrach danych, jak i w chmurze z niekontrolowanych lokalizacji, takich jak domy, hotele i kawiarnie.
+- Specjalnie utworzone funkcje zabezpieczeń są coraz bardziej wbudowane w usługi w chmurze i mogą potencjalnie uzupełniać lub zastępować istniejące systemy zabezpieczeń.
 
-Firma Microsoft oferuje szeroką gamę funkcji zabezpieczeń Microsoft 365 oraz udostępnia wskazówki preskrybujące najlepsze rozwiązania dotyczące zabezpieczeń, które mogą pomóc w zapewnianiu bezpieczeństwa danych i sieci na Microsoft 365. Oto zalecane najlepsze rozwiązania:
+Firma Microsoft oferuje szeroką gamę funkcji zabezpieczeń Microsoft 365 i zapewnia nakazowe wskazówki dotyczące stosowania najlepszych rozwiązań w zakresie zabezpieczeń, które mogą pomóc w zapewnieniu bezpieczeństwa danych i sieci dla Microsoft 365. Zalecane najlepsze rozwiązania obejmują następujące kwestie:
   
-- **Korzystanie z uwierzytelniania wieloskładnikowego** Uwierzytelniania wieloskładnikowego dodaje dodatkową warstwę ochrony do silnej strategii dotyczącej haseł, wymagając od użytkowników potwierdzenia połączenia telefonicznego, wiadomości SMS lub powiadomienia aplikacji na smartfonie po prawidłowym wprowadzeniu hasła.
+- **Korzystanie z uwierzytelniania wieloskładnikowego (MFA)** Uwierzytelnianie wieloskładnikowe dodaje dodatkową warstwę ochrony do silnej strategii haseł, wymagając od użytkowników potwierdzenia połączenia telefonicznego, wiadomości SMS lub powiadomienia aplikacji na smartfonie po poprawnym wprowadzeniu hasła.
 
-- **Korzystanie z programu Microsoft Defender dla aplikacji w chmurze** Skonfiguruj zasady w celu śledzenia nieomytnych działań i działania na ich podstawie. Skonfiguruj alerty za pomocą usługi Microsoft Defender dla aplikacji w chmurze, aby administratorzy mogą przeglądać nietypowe lub ryzykowne działania użytkowników, takie jak pobieranie dużych ilości danych, wiele nieudanych prób logowania lub połączenia z nieznanych lub niebezpiecznych adresów IP.
+- **Użyj Microsoft Defender for Cloud Apps** Konfigurowanie zasad, aby śledzić nietypowe działania i działać na nich. Skonfiguruj alerty za pomocą Microsoft Defender for Cloud Apps, aby administratorzy mogli przeglądać nietypowe lub ryzykowne działania użytkowników, takie jak pobieranie dużych ilości danych, wiele nieudanych prób logowania lub połączenia z nieznanych lub niebezpiecznych adresów IP.
 
-- **Konfigurowanie ochrony przed utratą danych (DLP)** Zasady DLP pozwalają identyfikować poufne dane i tworzyć zasady zapobiegające przypadkowemu lub celowemu udostępnieniu danych przez użytkowników. Usługi DLP działa w Microsoft 365 sieciach Exchange Online, SharePoint Online i OneDrive, dzięki czemu użytkownicy mogą zachować zgodność bez przerywania przepływu pracy.
+- **Konfigurowanie ochrony przed utratą danych (DLP)** DLP umożliwia identyfikowanie poufnych danych i tworzenie zasad, które uniemożliwiają użytkownikom przypadkowe lub celowe udostępnianie danych. DLP działa w różnych Microsoft 365, w tym Exchange Online, SharePoint Online i OneDrive, aby użytkownicy mogli zachować zgodność bez przerywania przepływu pracy.
 
-- **Korzystanie z skrytki klienta** Jako administrator Microsoft 365 klienta możesz sterować dostępem inżyniera pomocy technicznej firmy Microsoft do Twoich danych podczas sesji pomocy. W przypadkach, gdy inżynier wymaga dostępu do Twoich danych, aby rozwiązać problem, skrytka klienta umożliwia zatwierdzenie lub odrzucenie żądania dostępu.
+- **Używanie skrytki klienta** Jako administrator Microsoft 365 możesz użyć skrytki klienta, aby kontrolować, w jaki sposób inżynier pomocy technicznej firmy Microsoft uzyskuje dostęp do twoich danych podczas sesji pomocy. W przypadkach, gdy inżynier wymaga dostępu do danych w celu rozwiązania i rozwiązania problemu, skrytka klienta umożliwia zatwierdzenie lub odrzucenie żądania dostępu.
 
-- **Użyj Office 365 bezpiecznego** wyniku Narzędzie do analizy zabezpieczeń, które zaleca, co można zrobić, aby dodatkowo zmniejszyć ryzyko. Bezpieczny wynik przeszukuje ustawienia Microsoft 365 i działania oraz porównuje je z planem bazowym ustalonym przez firmę Microsoft. Wyniki są zgodne z najlepszymi rozwiązaniami w zakresie zabezpieczeń.
+- **Użyj Office 365 Wskaźnik** bezpieczeństwa Narzędzie do analizy zabezpieczeń, które zaleca, co można zrobić, aby jeszcze bardziej zmniejszyć ryzyko. Wskaźnik bezpieczeństwa analizuje ustawienia i działania Microsoft 365 i porównuje je z punktem odniesienia ustanowionym przez firmę Microsoft. Uzyskasz ocenę na podstawie tego, jak dobrze jesteś zgodny z najlepszymi rozwiązaniami w zakresie zabezpieczeń.
 
-Należy zwrócić uwagę na następujące zagadnienia związane z udoskonalonym zabezpieczeniami:
+Całościowe podejście do zwiększonych zabezpieczeń powinno obejmować następujące kwestie:
   
-- Przeniesienie wyróżnienia z zabezpieczeń obwodu na zabezpieczenia punktów końcowych przez stosowanie funkcji zabezpieczeń Office klienta w chmurze.
+- Przesuń nacisk z zabezpieczeń obwodowych na zabezpieczenia punktów końcowych, stosując funkcje zabezpieczeń klienta oparte na chmurze i Office.
   - Zmniejszanie obwodu zabezpieczeń do centrum danych
   - Włączanie równoważnego zaufania dla urządzeń użytkowników w biurze lub w lokalizacjach zdalnych
-  - Skup się na zabezpieczaniu lokalizacji danych i lokalizacji użytkownika
-  - Zarządzane komputery użytkowników mają wyższy poziom zaufania dzięki zabezpieczeń punktom końcowym
-- Zarządzanie wszystkimi zabezpieczeniami informacji bez skupiania się wyłącznie na obwodzie
-  - Ponowne definiowanie sieci WAN i tworzenie zabezpieczeń sieci obwodowej przez umożliwienie zaufanego ruchu na ominięcie urządzeń zabezpieczających i rozdzielenie urządzeń niezawiązanych z sieciami gościa Wi-Fi sieci
-  - Zmniejszanie wymagań dotyczących zabezpieczeń sieci firmowej sieci WAN
-  - Niektóre urządzenia zabezpieczeń sieci obwodowej, takie jak zapory, są nadal wymagane, ale zmniejsza się obciążenie
-  - Zapewnia lokalny ruch wychodzący dla Microsoft 365 ruchu
-- Poprawki można poprawić stopniowo, zgodnie z opisem w sekcji [Optymalizacja przyrostowa](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) . Niektóre techniki optymalizacji mogą oferować lepsze współczynniki kosztów i korzyści w zależności od architektury sieci i należy wybrać optymalizacje najbardziej sensowne dla organizacji.
+  - Skoncentruj się na zabezpieczaniu lokalizacji danych i lokalizacji użytkownika
+  - Zarządzane maszyny użytkowników mają większe zaufanie do zabezpieczeń punktu końcowego
+- Całościowe zarządzanie wszystkimi zabezpieczeniami informacji, nie skupiając się wyłącznie na obwodzie
+  - Ponowne definiowanie sieci WAN i tworzenie zabezpieczeń sieci obwodowej dzięki umożliwieniu zaufanemu ruchowi obejścia urządzeń zabezpieczeń i oddzielenia urządzeń niezarządzanych od sieci Wi-Fi gościa
+  - Zmniejszanie wymagań dotyczących zabezpieczeń sieci w korporacyjnej przeglądarce sieci WAN
+  - Niektóre urządzenia zabezpieczeń obwodowych sieci, takie jak zapory, są nadal wymagane, ale obciążenie jest zmniejszane
+  - Zapewnia lokalny ruch wychodzący dla ruchu Microsoft 365
+- Ulepszenia można rozwiązywać przyrostowo zgodnie z opisem w sekcji [Optymalizacja przyrostowa](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) . Niektóre techniki optymalizacji mogą oferować lepsze współczynniki kosztów i korzyści w zależności od architektury sieci i należy wybrać optymalizacje, które mają największy sens w organizacji.
 
-Aby uzyskać więcej informacji Microsoft 365 na temat zabezpieczeń i zgodności, zobacz artykuły Microsoft 365 [na](../security/index.yml) temat zabezpieczeń [i Microsoft 365 zgodności](../compliance/index.yml).
+Aby uzyskać więcej informacji na temat Microsoft 365 zabezpieczeń i zgodności, zobacz artykuły [Microsoft 365 security](../security/index.yml) i [Microsoft Purview](../compliance/index.yml).
   
 ## <a name="incremental-optimization"></a>Optymalizacja przyrostowa
 <a name="BKMK_IncOpt"> </a>
 
-Wcześniej w tym artykule reprezentowaliśmy doskonały model łączności sieciowej dla oprogramowania SaaS, ale w przypadku wielu dużych organizacji o historycznych złożonych architekturach sieciowych bezpośrednie bezpośrednie zmiany nie będą praktyczne. W tej sekcji omówiono kilka zmian przyrostowych, które mogą pomóc w Microsoft 365 wydajności i niezawodności.
+Przedstawiliśmy idealny model łączności sieciowej dla usługi SaaS we wcześniejszej części tego artykułu, ale w przypadku wielu dużych organizacji z historycznie złożonymi architekturami sieci nie będzie praktyczne bezpośrednie wprowadzanie wszystkich tych zmian. W tej sekcji omówimy szereg zmian przyrostowych, które mogą pomóc zwiększyć wydajność i niezawodność Microsoft 365.
   
-Metody, które będą stosowane do optymalizowania Microsoft 365 będzie się różnić w zależności od topologii sieci i urządzeń sieciowych, które zaimplementowano. Duże przedsiębiorstwa z wieloma lokalizacjami i złożonymi praktykami w zakresie zabezpieczeń sieci muszą opracować strategię uwzględniającą większość lub wszystkie zasady wymienione w sekcji zasady łączności Microsoft 365, [natomiast](microsoft-365-network-connectivity-principles.md#BKMK_Principles) mniejsze organizacje muszą rozważyć tylko jedną lub dwie.
+Metody optymalizacji ruchu Microsoft 365 będą się różnić w zależności od topologii sieci i zaimplementowanych urządzeń sieciowych. Duże przedsiębiorstwa z wieloma lokalizacjami i złożonymi rozwiązaniami w zakresie zabezpieczeń sieci będą musiały opracować strategię obejmującą większość lub wszystkie zasady wymienione w sekcji [zasad łączności Microsoft 365](microsoft-365-network-connectivity-principles.md#BKMK_Principles), podczas gdy mniejsze organizacje mogą wymagać uwzględnienia tylko jednej lub dwóch.
   
-Możesz podchodzić do optymalizacji jako proces przyrostowy, stosując każdą metodę kolejno. W poniższej tabeli wymieniono metody optymalizacji klucza w celu ich wpływu na opóźnienie i niezawodność dla największej liczby użytkowników.
+Optymalizację można podejść jako proces przyrostowy, stosując każdą metodę kolejno. Poniższa tabela zawiera listę metod optymalizacji kluczy w kolejności ich wpływu na opóźnienia i niezawodność dla największej liczby użytkowników.
   
 |**Metoda optymalizacji**|**Opis**|**Wpływ**|
 |:-----|:-----|:-----|
-|Lokalne rozpoznawanie nazw DNS i internetowy ruch wychodzący  <br/> |Inicjowanie obsługi lokalnych serwerów DNS w poszczególnych lokalizacjach i Microsoft 365 połączeń wychodzących do Internetu tak blisko lokalizacji użytkownika, jak to tylko możliwe.  <br/> | Minimalizowanie opóźnienia  <br/>  Ulepsz niezawodną łączność z najbliższym Microsoft 365 wejścia  <br/> |
-|Dodawanie regionalnych punktów wychodzącej  <br/> |Jeśli Twoja sieć firmowa ma wiele lokalizacji, ale tylko jeden punkt ruchu wychodzącego, dodaj regionalne punkty ruchu wychodzącego, aby umożliwić użytkownikom nawiązywanie połączeń z najbliższym Microsoft 365 punktem wejścia.  <br/> | Minimalizowanie opóźnienia  <br/>  Ulepsz niezawodną łączność z najbliższym Microsoft 365 wejścia  <br/> |
-|Pomijanie serwerów proxy i urządzeń do inspekcji  <br/> |Skonfiguruj przeglądarki za pomocą plików PAC, które wysyłają Microsoft 365 bezpośrednio do punktów wychodzących.  <br/> Skonfiguruj routery brzegowe i zapory, aby zezwalały Microsoft 365 ruchu bez inspekcji.  <br/> | Minimalizowanie opóźnienia  <br/>  Zmniejszanie obciążenia urządzeń sieciowych  <br/> |
-|Włączanie połączenia bezpośredniego dla użytkowników sieci VPN  <br/> |W przypadku użytkowników sieci VPN Microsoft 365 połączenia bezpośrednie z sieci użytkownika, a nie przez interfejs VPN, dzięki zaimplementowaniu rozdzielania rozdzielania.  <br/> | Minimalizowanie opóźnienia  <br/>  Ulepsz niezawodną łączność z najbliższym Microsoft 365 wejścia  <br/> |
-|Migrowanie z tradycyjnej sieci WAN do sieci SD-WAN  <br/> |SD-WANs (software defined wide area networks) upraszczają zarządzanie siecią WAN i poprawiają wydajność, zastępując tradycyjne routery WAN urządzeniami wirtualnymi, podobnie jak wirtualizacja zasobów obliczeniowych przy użyciu maszyn wirtualnych.  <br/> | Poprawa wydajności i możliwości zarządzania ruchem WAN  <br/>  Zmniejszanie obciążenia urządzeń sieciowych  <br/> |
+|Lokalne rozpoznawanie nazw DNS i ruch wychodzący z Internetu  <br/> |Aprowizuj lokalne serwery DNS w każdej lokalizacji i upewnij się, że Microsoft 365 połączenia wychodzące do Internetu jak najbliżej lokalizacji użytkownika.  <br/> | Minimalizowanie opóźnienia  <br/>  Ulepszanie niezawodnej łączności z najbliższym punktem wejścia Microsoft 365  <br/> |
+|Dodawanie regionalnych punktów ruchu wychodzącego  <br/> |Jeśli sieć firmowa ma wiele lokalizacji, ale tylko jeden punkt ruchu wychodzącego, dodaj regionalne punkty ruchu wychodzącego, aby umożliwić użytkownikom nawiązywanie połączenia z najbliższym punktem wejścia Microsoft 365.  <br/> | Minimalizowanie opóźnienia  <br/>  Ulepszanie niezawodnej łączności z najbliższym punktem wejścia Microsoft 365  <br/> |
+|Pomijanie serwerów proxy i urządzeń inspekcji  <br/> |Skonfiguruj przeglądarki przy użyciu plików PAC, które wysyłają żądania Microsoft 365 bezpośrednio do punktów ruchu wychodzącego.  <br/> Skonfiguruj routery brzegowe i zapory, aby zezwalać na ruch Microsoft 365 bez inspekcji.  <br/> | Minimalizowanie opóźnienia  <br/>  Zmniejszenie obciążenia urządzeń sieciowych  <br/> |
+|Włączanie bezpośredniego połączenia dla użytkowników sieci VPN  <br/> |W przypadku użytkowników sieci VPN włącz Microsoft 365 połączenia, aby nawiązywać połączenia bezpośrednio z sieci użytkownika, a nie za pośrednictwem tunelu VPN, implementując tunelowanie podzielone.  <br/> | Minimalizowanie opóźnienia  <br/>  Ulepszanie niezawodnej łączności z najbliższym punktem wejścia Microsoft 365  <br/> |
+|Migrowanie z tradycyjnej sieci WAN do sieci SD-WAN  <br/> |SD-WANs (Software Defined Wide Area Networks) upraszcza zarządzanie siecią WAN i poprawia wydajność, zastępując tradycyjne routery sieci WAN urządzeniami wirtualnymi, podobnie jak wirtualizacja zasobów obliczeniowych przy użyciu maszyn wirtualnych.  <br/> | Zwiększanie wydajności i możliwości zarządzania ruchem sieci WAN  <br/>  Zmniejszenie obciążenia urządzeń sieciowych  <br/> |
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Microsoft 365 na temat łączności sieciowej](microsoft-365-networking-overview.md)
+[Omówienie łączności sieciowej Microsoft 365](microsoft-365-networking-overview.md)
 
-[Zarządzanie Office 365 punktami końcowymi](managing-office-365-endpoints.md)
+[Zarządzanie punktami końcowymi usługi Office 365](managing-office-365-endpoints.md)
 
 [Adresy URL i zakresy adresów IP usługi Office 365](urls-and-ip-address-ranges.md)
 
-[Office 365 adresu IP i usługi sieci Web adresu URL](microsoft-365-ip-web-service.md)
+[Usługa Office 365 — usługa sieci Web adresów IP i adresów URL](microsoft-365-ip-web-service.md)
 
-[Ocenianie Microsoft 365 sieciowej](assessing-network-connectivity.md)
+[Ocena łączności sieciowej na platformie Microsoft 365](assessing-network-connectivity.md)
 
-[Planowanie sieci i dostosowywanie wydajności dla Microsoft 365](network-planning-and-performance.md)
+[Planowanie sieci i dostrajanie wydajności dla Microsoft 365](network-planning-and-performance.md)
 
-[Office 365 wydajności przy użyciu planu bazowego i historii wydajności](performance-tuning-using-baselines-and-history.md)
+[Office 365 dostrajanie wydajności przy użyciu punktów odniesienia i historii wydajności](performance-tuning-using-baselines-and-history.md)
 
-[Plan rozwiązywania problemów z wydajnością Office 365](performance-troubleshooting-plan.md)
+[Plan rozwiązywania problemów z wydajnością dla Office 365](performance-troubleshooting-plan.md)
 
 [Sieci dostarczania zawartości](content-delivery-networks.md)
 
-[Microsoft 365 test łączności](https://aka.ms/netonboard)
+[test łączności Microsoft 365](https://aka.ms/netonboard)
 
 [Jak firma Microsoft tworzy swoją szybką i niezawodną sieć globalną](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
-[Office 365 blog sieciowy](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
+[blog sieci Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

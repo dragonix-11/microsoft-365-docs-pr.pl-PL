@@ -1,11 +1,11 @@
 ---
-title: Potwierdzanie powiadomienia o wstrzymaniu
+title: Potwierdź powiadomienie o archiwum
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: 04/05/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,41 +17,41 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak za Advanced eDiscovery wysyłać powiadomienia o zobowiązaniach prawnych i postępować w ich związku pocztą e-mail, a także monitorować stan zobowiązań.
-ms.openlocfilehash: 57cda6e88968fc90845965a8554f55d80bd3ded0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak używać funkcji zbierania elektronicznych materiałów dowodowych (Premium) do wysyłania powiadomień o wstrzymaniu ze względów prawnych za pośrednictwem poczty e-mail oraz monitorowania stanu obowiązków.
+ms.openlocfilehash: 4be0781a273f842c043276a19688f36b96cfdb28
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973789"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947412"
 ---
-# <a name="acknowledge-a-hold-notification"></a>Potwierdzanie powiadomienia o wstrzymaniu
+# <a name="acknowledge-a-hold-notification"></a>Potwierdź powiadomienie o archiwum
 
-W odpowiedzi na żądanie lub badanie prawne może być wymagane poinformowanie osób składowych o zobowiązaniach do zachowania informacji przechowywanych elektronicznie (ESI) oraz o wszelkich materiałach, które mogą być istotne dla aktywnego lub bliskich kwestii prawnych. Po wysłaniu zespoły prawne muszą wiedzieć, że każdy odbierany, odczytywany, zrozumiały i wyrażany zgodę na postępuj zgodnie z podanymi instrukcjami.
+W odpowiedzi na wniosek regulacyjny lub dochodzenie może być wymagane poinformowanie opiekunów o obowiązku zachowania elektronicznie przechowywanych informacji (ESI) oraz wszelkich materiałów, które mogą być istotne dla aktywnej lub rychłej sprawy prawnej. Po wysłaniu zespoły prawne muszą wiedzieć, że każdy opiekun otrzymał, przeczytał, zrozumiał i zgodził się postępować zgodnie z podanymi instrukcjami.
 
-Aby skrócić czas, koszt i nakład pracy w związku z rzeczami przechowywania, funkcja Advanced eDiscovery umożliwia wysyłanie pocztą e-mail powiadomień o wstrzymaniu się z prawem i obserwowanie tych powiadomień. Oprócz powiadomień e-mail każdy opiekun będzie miał dostęp do indywidualnego Portalu zgodności, dzięki czemu osoby przechowane będą informowane o zmianach stanu ich zobowiązania.
+Aby skrócić czas, koszty i nakład pracy związane z obserwowaniem opiekunów, funkcja zbierania elektronicznych materiałów dowodowych (Premium) umożliwia wysyłanie i śledzenie powiadomień o blokadzie prawnej za pośrednictwem poczty e-mail. Oprócz powiadomień e-mail, każdy opiekun będzie miał dostęp do zindywidualizowanego Portalu zgodności, dzięki czemu opiekunowie będą informowani o zmianach ich statusu obowiązku.
 
 ## <a name="email-notifications"></a>Powiadomienia e-mail
 
-Po otrzymaniu powiadomienia o wstrzymaniu obsługi prawnej każdy opiekun otrzyma unikatową i spersonalizowaną wiadomość e-mail zawierającą powiadomienie o wstrzymaniu jej użytkowania i dodane instrukcje. 
+Po wydaniu powiadomienia o blokadzie prawnej każdy opiekun otrzyma unikatową i spersonalizowaną wiadomość e-mail zawierającą zdefiniowane powiadomienie o wstrzymaniu ze względów prawnych i dodane instrukcje. 
 
 > [!TIP]
-> Zobacz, jak można używać wbudowanego Edytora [](using-communications-editor.md) komunikacji, aby umożliwić twoim opiekunom potwierdzenie ich powiadomienia lub uzyskanie dostępu do Portalu zgodności bezpośrednio z ich wiadomości e-mail.
+> Zobacz, jak za pomocą wbudowanego  [Edytora komunikacji](using-communications-editor.md) zezwolić opiekunom na potwierdzenie powiadomienia lub dostęp do portalu zgodności bezpośrednio z poczty e-mail.
 
-Na podstawie konfiguracji powiadomienia o wstrzymaniu ze względu na to, że osoby przechwytują dane osobowe, mogą otrzymać następujące powiadomienia: 
+Na podstawie konfiguracji powiadomienia o blokadzie prawnej opiekunowie mogą otrzymać następujące powiadomienia: 
 
-- **Powiadomienie o wydaniu:** Pierwsze powiadomienie wysłane do użytkownika, który się odzywuje. To powiadomienie będzie zawierać instrukcje dotyczące wydawania informacji oraz powiadomienie o wstrzymaniu, dołączone na końcu wiadomości.
+- **Powiadomienie o wystawienie:** Pierwsze powiadomienie wysłane do opiekuna. To powiadomienie będzie zawierać instrukcje wystawiania i powiadomienie o wstrzymaniu dołączone na końcu wiadomości.
 
-- **Przypomnienie:** Jeśli funkcja jest włączona, do osób, które włączyły funkcję, zostanie wysłane powiadomienie z przypomnieniem na podstawie określonej częstotliwości i interwału. Przypomnienia będą nadal wysyłane do momentu potwierdzenia przez opiekuna powiadomienia lub do czasu wyczerpania liczby przypomnień.
+- **Powiadomienie o przypomnieniach:** Jeśli ta opcja jest włączona, powiadomienie o przypomnieniu zostanie wysłane do opiekunów na podstawie określonej częstotliwości i interwału. Przypomnienia będą nadal wysyłane do czasu potwierdzenia powiadomienia przez opiekuna lub do momentu wyczerpania liczby przypomnień.
 
-- **Powiadomienie o eskalacji:** Jeśli ta funkcja jest włączona, po wyczerpaniu przypomnień do użytkownika i jego kierownika zostanie wysłane powiadomienie o eskalacji. System będzie automatycznie wysyłał powiadomienia o eskalacji do momentu ukończenia określonej liczby eskalacji lub do czasu potwierdzenia przez użytkownika powiadomień o wstrzymaniu.
+- **Powiadomienie o eskalacji:** Jeśli zostanie włączone, powiadomienie o eskalacji zostanie wysłane do opiekuna i jego kierownika po wyczerpaniu powiadomień o przypomnieniu. System automatycznie wysyła powiadomienia o eskalacji do momentu ukończenia określonej liczby eskalacji lub do momentu potwierdzenia powiadomienia o blokadzie przez opiekuna.
 
-- **Powiadomienie o ponownej rezygnacji:** W trakcie badania, jeśli zawartość powiadomienia o wstrzymaniu zostanie zaktualizowana, powiadomienie zostanie automatycznie wysłane do osoby dojechaczej.
+- **Powiadomienie o ponownym zakończeniu:** W trakcie dochodzenia, jeśli treść powiadomienia o wstrzymaniu zostanie zaktualizowana, zaktualizowane powiadomienie zostanie automatycznie wysłane do opiekuna.
 
-- **Informacje o wersji:** Po wydaniu przez opiekuna informacji z tej sprawy zostanie do nich wysłane powiadomienie o wersji. 
+- **Powiadomienie o wersji:** Gdy opiekun zostanie zwolniony ze sprawy, otrzyma powiadomienie o zwolnieniu. 
 
 ## <a name="compliance-portal"></a>Portal zgodności
 
-Oprócz powiadomień e-mail każdy opiekun będzie miał dostęp do unikatowego Portalu zgodności. Za pośrednictwem portalu każdy wołomiański może wyświetlać i potwierdzać aktywne powiadomienia o swoich wstrzymywaniach, a także dostęp do nich.
+Oprócz powiadomień e-mail każdy opiekun będzie miał dostęp do unikatowego portalu zgodności. Za pośrednictwem portalu każdy opiekun może wyświetlać i potwierdzać aktywne powiadomienia o blokadzie oraz uzyskiwać do nich dostęp.
 
 ![Portal zgodności dla opiekuna.](../media/CustodianPortal.jpg)

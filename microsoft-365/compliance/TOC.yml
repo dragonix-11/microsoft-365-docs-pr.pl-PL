@@ -1,24 +1,24 @@
-- name: Zgodność platformy Microsoft 365
+- name: Microsoft Purview
   href: index.yml
-- name: 'Dowiedz się, co nowego w zgodności platformy Microsoft 365'
+- name: Co nowego w usłudze Microsoft Purview
   href: whats-new.md
 - name: Wersje próbne zgodności
   items:
-    - name: Informacje o bezpłatnej wersji próbnej zgodności platformy Microsoft 365
+    - name: Informacje o bezpłatnej wersji próbnej usługi Microsoft Purview
       href: compliance-easy-trials.md
-    - name: Informacje o bezpłatnej wersji próbnej ocen premium menedżera zgodności Microsoft
+    - name: Informacje o bezpłatnej wersji próbnej ocen premium menedżera zgodności usługi Microsoft Purview
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Wprowadzenie
   items:
-    - name: Szybkie zadania umożliwiające rozpoczęcie pracy ze zgodnością
+    - name: Szybkie zadania umożliwiające rozpoczęcie pracy z usługą Microsoft Purview
       href: compliance-quick-tasks.md
-    - name: Katalog rozwiązań platformy Microsoft 365
+    - name: Katalog rozwiązania usługi Microsoft Purview
       href: microsoft-365-solution-catalog.md
-    - name: Centrum zgodności platformy Microsoft 365
+    - name: Portal zgodności usługi Microsoft Purview
       href: microsoft-365-compliance-center.md
-    - name: Uprawnienia w centrum zgodności platformy Microsoft 365
+    - name: "Uprawnienia w\_portalu zgodności usługi Microsoft Purview"
       href: microsoft-365-compliance-center-permissions.md
-    - name: Przekierowywanie użytkowników do centrum zgodności platformy Microsoft 365
+    - name: Przekierowywanie użytkowników do portalu zgodności usługi Microsoft Purview
       href: microsoft-365-compliance-center-redirection.md
     - name: Użyj bezpłatnej subskrypcji usługi Azure Active Directory
       href: use-your-free-azure-ad-subscription-in-office-365.md
@@ -216,7 +216,7 @@
       href: use-content-search-to-search-third-party-data-that-was-imported.md
 - name: Zarządzaj ryzykiem wewnętrznym
   items:
-    - name: Rozwiązania dotyczące ryzyka wewnętrznego platformy Microsoft 365
+    - name: Rozwiązania dotyczące ryzyka wewnętrznego usługi Microsoft Purview
       href: insider-risk-solution-overview.md
     - name: Zgodność w komunikacji
       items:
@@ -304,9 +304,9 @@
   items:
     - name: 'Poznaj swoje dane, chroń swoje dane, zapobiegaj utracie danych'
       href: information-protection.md
-    - name: Wdrażanie rozwiązania MIP
+    - name: Wdrażanie rozwiązania do ochrony informacji
       href: information-protection-solution.md
-    - name: Domyślne etykiety i zasady usługi Microsoft Information Protection
+    - name: Domyślne etykiety i zasady do ochrony danych
       href: mip-easy-trials.md
     - name: Typy informacji poufnych
       items:
@@ -396,7 +396,7 @@
       items:
         - name: Dowiedz się więcej o etykietach poufności
           href: sensitivity-labels.md
-        - name: Dlaczego warto wybrać wbudowane etykietowanie MIP dla aplikacji pakietu Office
+        - name: Dlaczego warto wybrać wbudowane etykietowanie dla aplikacji pakietu Office
           href: sensitivity-labels-aip.md
         - name: Wprowadzenie do etykiet poufności
           href: get-started-with-sensitivity-labels.md
@@ -428,7 +428,7 @@
           href: office-365-service-encryption.md
         - name: Klucz klienta
           items:
-            - name: Klucz klienta na platformie Microsoft 365
+            - name: Szyfrowanie usługi przy użyciu klucza klienta usługi Microsoft Purview
               href: customer-key-overview.md
             - name: Konfiguruj klucz klienta dla platformy Microsoft 365
               href: customer-key-set-up.md
@@ -441,27 +441,27 @@
         - name: Szyfrowanie wiadomości e-mail
           href: email-encryption.md
           items:
-            - name: Szyfrowanie wiadomości usługi Office 365 (OME)
+            - name: 'Szyfrowanie wiadomości '
               href: ome.md
-            - name: Ustaw nowe możliwości szyfrowania wiadomości usługi Office 365
+            - name: Konfigurowanie szyfrowania wiadomości w usłudze Microsoft Purview
               href: set-up-new-message-encryption-capabilities.md
-            - name: Zdefiniuj reguły przepływu poczty e-mail do szyfrowania wiadomości e-mail w usłudze Office 365
+            - name: Zdefiniuj reguły przepływu poczty e-mail do szyfrowania wiadomości e-mail
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: Dodaj markę organizacji do zaszyfrowanych wiadomości
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: Twórz zasady typu informacji poufnych dla organizacji przy użyciu szyfrowania wiadomości usługi Office 365
+            - name: Twórz zasady typu informacji poufnych dla organizacji przy użyciu szyfrowania wiadomości usługi Microsoft Purview
               href: ome-sensitive-info-types.md
-            - name: Zarządzaj szyfrowaniem wiadomości usługi Office 365
+            - name: Zarządzanie szyfrowaniem wiadomości
               href: manage-office-365-message-encryption.md
-            - name: Zaawansowane szyfrowanie wiadomości usługi Office 365
+            - name: Zaawansowane szyfrowanie wiadomości
               href: ome-advanced-message-encryption.md
-            - name: Ustaw datę wygaśnięcia wiadomości e-mail zaszyfrowanych przy użyciu zaawansowanego szyfrowania wiadomości usługi Office 365
+            - name: Ustaw datę wygaśnięcia wiadomości e-mail zaszyfrowanych przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
               href: ome-advanced-expiration.md
-            - name: Cofnij wiadomości e-mail zaszyfrowane przy użyciu zaawansowanego szyfrowania wiadomości usługi Office 365
+            - name: Odwołaj wiadomość e-mail zaszyfrowaną przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
               href: revoke-ome-encrypted-mail.md
-            - name: Porównanie wersji OME
+            - name: Porównanie wersji szyfrowania wiadomości
               href: ome-version-comparison.md
-            - name: Szyfrowanie wiadomości usługi Office 365 — często zadawane pytania
+            - name: Szyfrowanie wiadomości — często zadawane pytania
               href: ome-faq.yml
             - name: Jak usługa Exchange Online zabezpiecza Twoje tajne wpisy poczty e-mail
               href: exchange-online-secures-email-secrets.md
@@ -501,7 +501,7 @@
               href: endpoint-dlp-learn-about.md
             - name: Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams (wersja zapoznawcza)
               href: dlp-teams-default-policy.md
-            - name: Dowiedz się więcej na temat lokalnego skanera ochrony przed utratą danych na platformie Microsoft 365
+            - name: Dowiedz się więcej na temat lokalnego skanera ochrony przed utratą danych
               href: dlp-on-premises-scanner-learn.md
             - name: Dowiedz się więcej o rozszerzeniu zgodności firmy Microsoft
               href: dlp-chrome-learn-about.md
@@ -525,7 +525,7 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 'Twórz, testuj i dostrajaj zasady DLP'
               href: create-test-tune-dlp-policy.md
-            - name: Wprowadzenie do lokalnego skanera ochrony przed utratą danych na platformie Microsoft 365
+            - name: Wprowadzenie do lokalnego skanera ochrony przed utratą danych
               href: dlp-on-premises-scanner-get-started.md
             - name: Wprowadzenie do ochrony przed utratą danych punktu końcowego
               href: endpoint-dlp-getting-started.md
@@ -543,7 +543,7 @@
               href: dlp-microsoft-teams.md
             - name: Korzystanie z ochrony przed utratą danych punktu końcowego
               href: endpoint-dlp-using.md
-            - name: Korzystaj ze skanera lokalnego w celu ochrony przed utratą danych na platformie Microsoft 365
+            - name: Korzystanie z lokalnego skanera ochrony przed utratą danych
               href: dlp-on-premises-scanner-use.md
             - name: Korzystaj z powiadomień i porad dotyczących zasad w zasadach DLP
               href: use-notifications-and-policy-tips.md
@@ -569,10 +569,10 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Dokumentacja dotycząca porad dotyczących zasad ochrony przed utratą danych
               href: dlp-policy-tips-reference.md
-- name: Zarządzaj usługą Information Governance i rekordami
+- name: Zarządzanie cyklem życia danych i rekordami
   items:
     - name: Zarządzaj swoimi danymi
-      href: manage-information-governance.md
+      href: manage-data-governance.md
     - name: Omówienie zachowywania i usuwania danych
       items:
         - name: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
@@ -593,16 +593,16 @@
           href: retention-settings.md
         - name: Limity przechowywania i usuwania
           href: retention-limits.md
-    - name: Zarządzanie informacjami
+    - name: Zarządzanie cyklem życia danych
       items:
-        - name: Dowiedz się więcej o zarządzaniu informacjami
-          href: information-governance.md
-        - name: Wprowadzenie do zarządzania informacjami
-          href: get-started-with-information-governance.md
+        - name: Dowiedz się więcej o zarządzaniu cyklem życia danych
+          href: data-lifecycle-management.md
+        - name: Wprowadzenie do zarządzania cyklem życia danych
+          href: get-started-with-data-lifecycle-management.md
         - name: Utwórz zasady przechowywania
           href: create-retention-policies.md
         - name: Używaj etykiet przechowywania dla wyjątków
-          href: create-retention-labels-information-governance.md
+          href: create-retention-labels-data-lifecycle-management.md
         - name: Archiwizuj dane skrzynki pocztowej
           items:
             - name: Dowiedz się więcej o archiwalnych skrzynkach pocztowych
@@ -673,7 +673,7 @@
           href: disposition.md
 - name: Zarządzaj zbieraniem elektronicznych materiałów dowodowych
   items:
-    - name: Rozwiązania zbierania elektronicznych materiałów dowodowych na platformie Microsoft 365
+    - name: Rozwiązania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview
       href: ediscovery.md
     - name: Wyszukiwanie zawartości
       items:
@@ -742,9 +742,9 @@
               href: create-report-on-and-delete-multiple-content-searches.md
             - name: Klonowanie wyszukiwania
               href: clone-a-content-search.md
-    - name: Podstawowe zbieranie elektronicznych materiałów dowodowych
+    - name: Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa
       items:
-        - name: Wprowadzenie do podstawowego zbierania elektronicznych materiałów dowodowych
+        - name: Zacznij od zbierania elektronicznych materiałów dowodowych (Standardowa)
           href: get-started-core-ediscovery.md
         - name: Twórz archiwa zbierania elektronicznych materiałów dowodowych
           href: create-ediscovery-holds.md
@@ -754,7 +754,7 @@
           href: export-content-in-core-ediscovery.md
         - name: 'Zamykaj, ponowne otwieraj i usuwaj sprawy'
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: Dokumentacja dotycząca podstawowego zbierania elektronicznych materiałów dowodowych
+        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych (Standardowa)
           items:
             - name: Limity wyszukiwania zbierania elektronicznych materiałów dowodowych
               href: limits-for-content-search.md
@@ -800,19 +800,19 @@
               href: configure-edge-to-export-search-results.md
             - name: Wyszukaj działania zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji
               href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Advanced eDiscovery
+    - name: Zbieranie elektronicznych materiałów dowodowych (Premium)
       items:
         - name: Omówienie
           href: overview-ediscovery-20.md
-        - name: Konfiguruj zaawansowane zbieranie elektronicznych materiałów dowodowych
+        - name: Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium)
           href: get-started-with-advanced-ediscovery.md
-        - name: Twórz spraw zaawansowanego zbierania elektronicznych materiałów dowodowych
+        - name: Tworzenie spraw dotyczących zbierania elektronicznych materiałów dowodowych (Premium).
           items:
             - name: Twórz sprawę i zarządzaj nią
               href: create-and-manage-advanced-ediscoveryv2-case.md
             - name: Użyj nowego formatu sprawy
               href: advanced-ediscovery-new-case-format.md
-        - name: Przepływ pracy zaawansowanego zbierania elektronicznych materiałów dowodowych dla zawartości aplikacji Teams
+        - name: Przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości aplikacji Teams
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Zarządzaj opiekunami i źródłami danych bez opiekunów
           href: managing-custodians.md
@@ -933,9 +933,9 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: Konfiguruj ustawienia wyszukiwania i analizy
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: Dokumentacja dotycząca zaawansowanego zbierania elektronicznych materiałów dowodowych
+        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych (Premium)
           items:
-            - name: Limity zaawansowanego zbierania elektronicznych materiałów dowodowych
+            - name: Limity zbierania elektronicznych materiałów dowodowych (Premium)
               href: limits-ediscovery20.md
             - name: Obsługiwane typy plików
               href: supported-filetypes-ediscovery20.md

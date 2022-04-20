@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie powiadomieniami o wstrzymaniu
+title: Zarządzaj powiadomieniami o archiwum
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,75 +15,75 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Przepływ pracy komunikacji w programie Advanced eDiscovery do śledzenia stanu powiadomień o wstrzymaniu ze względu na prawo, a w razie potrzeby aktualizacji i ponownego ich wyślij.
-ms.openlocfilehash: 276771b2a22f6db3e3d0620ee429a16626107bcc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Użyj przepływu pracy komunikacji w usłudze eDiscovery (Premium), aby śledzić stan powiadomień o blokadzie prawnej oraz w razie potrzeby aktualizować je i ponownie je przesyłać.
+ms.openlocfilehash: 3e0ab93b469d2ae80d9416137425b7f2876442c1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987773"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946138"
 ---
-# <a name="manage-hold-notifications"></a>Zarządzanie powiadomieniami o wstrzymaniu
+# <a name="manage-hold-notifications"></a>Zarządzaj powiadomieniami o archiwum
 
-Po zainicjowaniu przepływu pracy z powiadomieniem o wstrzymaniu ze względu na prawo możesz go użyć w programie Advanced eDiscovery do śledzenia stanu komunikacji. Karta Komunikacja zawiera listę wszystkich powiadomień w ramach Advanced eDiscovery przypadku. Można wyświetlić szczegółowe informacje, takie jak liczba przypisanych lub zaakceptowanych informacji.
+Po zainicjowaniu przepływu pracy powiadomień o blokadzie prawnej możesz użyć przepływu pracy komunikacji w usłudze Microsoft Purview eDiscovery (Premium) do śledzenia stanu komunikacji. Karta Komunikacja zawiera listę wszystkich powiadomień w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Możesz zobaczyć szczegóły, takie jak liczba opiekunów, którzy zostali przypisani lub potwierdzili powiadomienie.
 
-## <a name="monitor-acknowledgments"></a>Monitoruj potwierdzanie
+## <a name="monitor-acknowledgments"></a>Monitorowanie potwierdzenia
 
-Po wybraniu komunikacji **na karcie Komunikacja** można wyświetlić listę elementów przechowywania, które potwierdziły powiadomienie o wstrzymaniu. 
+Po wybraniu komunikacji na **karcie Komunikacja** możesz wyświetlić listę opiekunów, którzy potwierdzili wstrzymanie. 
 
-1. W centrum zgodności przejdź do **tematu Zbierania elektronicznych materiałów dowodowych > Advanced eDiscovery**.
+1. W centrum zgodności przejdź do obszaru **eDiscovery > eDiscovery (Premium)**.
 
-2. Zaznacz sprawę, a następnie kliknij **kartę** Komunikacja.
+2. Wybierz przypadek, a następnie kliknij kartę **Komunikacja** .
 
-3. Wybierz komunikację, aby wyświetlić stronę **wysuwu komunikacji Pochłoń** .
+3. Wybierz komunikację, aby wyświetlić stronę wysuwaną **komunikację opiekuna** .
 
-Na wysuwanych stronie komunikacji zostanie wyświetlona lista elementów przechoczy skojarzonych z wybraną komunikacją. Na tej stronie są również wyświetlane szczegółowe informacje o tym, ile potwierdzeń odebrano i ile jest zaległych. Na stronie pokazano także, które programy przechowywania wysłały potwierdzenie, że otrzymały powiadomienie o wstrzymaniu.
+Lista opiekunów skojarzonych z wybraną komunikacją jest wyświetlana na stronie wysuwanej komunikacji. Na tej stronie są również wyświetlane szczegółowe informacje oraz informacje o liczbie odebranych potwierdzeniach i liczbie zaległych. Na stronie pokazano również, którzy opiekunowie wysłali potwierdzenie, że otrzymali powiadomienie o blokadzie.
 
-## <a name="re-send-a-hold-notice"></a>Ponowne wysyłanie powiadomienia o wstrzymaniu
+## <a name="re-send-a-hold-notice"></a>Ponowne wysyłanie powiadomienia o blokadzie
 
-Czasami zdarza się, że schowek przechowywają wiadomości e-mail w swoich dniach pracy. W przypadku długiego sporu sądowego osoba, która od dawna jest w związku ze sporem sądowym, może skontaktować się z Tobą lub innymi osobami i poprosić o ponowne wysłanie powiadomienia. Gdy zarządzasz przepływem pracy komunikacji na potrzeby otrzymywania informacji prawnych, może być konieczne ponowne wysłanie powiadomienia w celu ponownego ustawienia go na "początku skrzynki pocztowej użytkownika".
+Czasami opiekunowie tracą śledzenie wiadomości e-mail w codziennej pracy. W przypadku długotrwałej sprawy sądowej opiekun może skontaktować się z Tobą lub innymi osobami i poprosić o ponowne wysłanie powiadomienia. Podczas zarządzania przepływem pracy komunikacji dla prawnych powiadomień o wstrzymaniu może być konieczne ponowne wysłanie powiadomienia w celu przywrócenia go do "górnej części skrzynki pocztowej użytkownika".
 
-Aby ponownie wysłać powiadomienie o wstrzymaniu do opiekuna:
+Aby ponownie wysłać powiadomienie o blokadzie do opiekuna:
 
-1. W Advanced eDiscovery wybierz sprawę, a następnie kliknij **kartę Komunikacja**.
+1. W obszarze eDiscovery (Premium) wybierz przypadek, a następnie kliknij kartę **Komunikacja**.
 
-2. Wybierz komunikację, aby wyświetlić stronę **wysuwu komunikacji Pochłoń** .
+2. Wybierz komunikację, aby wyświetlić stronę wysuwaną **komunikację opiekuna** .
 
-3. Kliknij **przycisk Więcej > powiadomienie o ponownej wysłaniu.**
+3. Kliknij pozycję **Więcej > Wyślij powiadomienie o ponownym wysłaniu blokady**.
 
-4. Na stronie **wysuwana informacja** o zleceniu ponownego wysłania wybierz opiekunów, dla których chcesz ponownie wysłać powiadomienie, i wpisz opcjonalną przyczynę.
+4. Na stronie **wysuwanej Powiadomienie o ponownym wysłaniu powiadomienia o wstrzymaniu** wybierz opiekunów, których chcesz ponownie wysłać, i wpisz opcjonalną przyczynę.
 
-5. Kliknij **pozycję Wyślij ponownie,** aby wysłać powiadomienie do wybranych osób- opiekunów.
+5. Kliknij przycisk **Wyślij ponownie** , aby wysłać powiadomienie do wybranych opiekunów.
 
-Jeśli wołodniacy nie potwierdzili powiadomienia o wstrzymaniu, zostanie uruchomiony ponownie przepływ pracy przypomnienie i eskalacja. Jeśli informacje o wstrzymaniu zostały zaakceptowane przez opiekuna, otrzyma on kopię oryginalnego powiadomienia o wstrzymaniu.
+Jeśli opiekun nie potwierdził powiadomienia o blokadzie, przepływ pracy przypomnienia i eskalacji zostanie uruchomiony ponownie. Jeśli opiekun potwierdzi wstrzymanie, opiekun otrzyma kopię pierwotnego zawiadomienia o wstrzymaniu.
 
 > [!NOTE]
-> Powiadomienie o wstrzymaniu ze względu na prawo można wysłać ponownie tylko do osób, które zostały przypisane do komunikacji. 
+> Powiadomienie o wstrzymaniu ze względów prawnych można wysyłać tylko do opiekunów, którzy są przypisani do komunikacji. 
 
-## <a name="update-preservation-requirements"></a>Aktualizowanie wymagań dotyczących zachowywania
+## <a name="update-preservation-requirements"></a>Aktualizowanie wymagań dotyczących zachowania
   
-W związku z postępem tej sytuacji może być wymagane zachowanie dodatkowych lub mniejszej niezbędnej do tego danych, niż zostało to wcześniej instrukcje. W przypadku zbierania elektronicznych materiałów dowodowych należy ponownie wydaje powiadomienie o wstrzymaniu ze zaktualizowaną zawartością.
+W miarę postępów sprawy opiekunowie mogą być zobowiązani do zachowania dodatkowych lub mniejszych danych, niż zostało to wcześniej poinstruowane. W kategoriach zbierania elektronicznych materiałów dowodowych należy ponownie wydać powiadomienie o blokadzie ze zaktualizowaną zawartością.
 
-Aby zaktualizować zawartość powiadomienia o początkowym wstrzymaniu:
+Aby zaktualizować zawartość początkowego powiadomienia o wstrzymaniu:
 
-1. W Advanced eDiscovery wybierz sprawę, a następnie kliknij **kartę Komunikacja**.
+1. W obszarze eDiscovery (Premium) wybierz przypadek, a następnie kliknij kartę **Komunikacja**.
 
-2. Zaznacz powiadomienie o wstrzymaniu, które chcesz zaktualizować, a następnie kliknij pozycję **Edytuj na** stronie **wysuwana** komunikacja Wi-Wi-Pan.
+2. Wybierz powiadomienie o blokadzie, które chcesz zaktualizować, a następnie kliknij pozycję **Edytuj** na stronie **wysuwanej komunikacji kustosz** .
 
-3. W **kreatorze Edytowanie komunikacji** kliknij pozycję **Definiuj** zawartość portalu w lewym okienku kreatora i zaktualizuj zawartość powiadomienia.
+3. W kreatorze **edytowania komunikacji** kliknij pozycję **Zdefiniuj zawartość portalu** w lewym okienku kreatora i zaktualizuj zawartość powiadomienia.
 
 4. Kliknij **Zapisz**.
 
-Powiadomienie o ponownym wydawaniu zostanie wysłane do wszystkich osób przechowywania przypisanych do powiadomienia o wstrzymaniu ich ze względu na przepisy prawne. Ponadto, jeśli jest włączone powiadomienie Przypomnienie lub Eskalacja, przepływy pracy dla tych typów zawiadomień zostaną uruchomione ponownie.
+Powiadomienie o ponownym wydaniu zostanie wysłane do wszystkich opiekunów przypisanych do powiadomienia o blokadzie prawnej. Ponadto, jeśli powiadomienie o przypomnieniu lub eskalacji jest włączone, przepływy pracy dla tych typów powiadomień zostaną ponownie uruchomione.
 
-## <a name="update-legal-hold-notifications-and-settings"></a>Aktualizowanie powiadomień o wstrzymaniu ze strony prawnej i ustawień
+## <a name="update-legal-hold-notifications-and-settings"></a>Aktualizowanie legalnych powiadomień i ustawień blokady
 
-Po zaktualizowaniu zawartości lub ustawień powiadomienia O wydaniu, wydaniu, ponownej aktualizacji, przypomnieniu lub eskalacji te zmiany będą stosowane do wszystkich przyszłych komunikatów generowanych przez przepływ pracy.
+Po zaktualizowaniu zawartości lub ustawień powiadomienia o wystawianiu, wydaniu, ponownym wydaniu, przypomnieniu lub eskalacji te zmiany będą miały zastosowanie do wszystkich przyszłych komunikatów generowanych przez przepływ pracy.
 
 ## <a name="more-information"></a>Więcej informacji
 
-- [Dodawanie osób do sprawy](add-custodians-to-case.md)
+- [Dodaj opiekunów do sprawy](add-custodians-to-case.md)
 
-- [Tworzenie informacji prawnych o wstrzymaniu ich od zesłania](create-hold-notification.md)
+- [Tworzenie powiadomienia o blokadzie prawnej](create-hold-notification.md)
 
-- [Potwierdzanie powiadomienia o wstrzymaniu](acknowledge-hold-notification.md)
+- [Potwierdź powiadomienie o archiwum](acknowledge-hold-notification.md)

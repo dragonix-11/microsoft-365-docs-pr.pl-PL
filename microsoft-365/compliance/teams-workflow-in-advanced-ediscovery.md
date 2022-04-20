@@ -1,5 +1,5 @@
 ---
-title: przepływ pracy Teams w Advanced eDiscovery
+title: przepływ pracy Teams w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,19 +13,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z Microsoft Teams w Advanced eDiscovery.
-ms.openlocfilehash: 90c3ece3f6e8218771da9dbbb88fe5c32d9d7d94
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z Microsoft Teams w usłudze eDiscovery (Premium).
+ms.openlocfilehash: 21f6149d8a1c1114ab0d2d293af710690f74c6e5
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847020"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948402"
 ---
-# <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>przepływ pracy Advanced eDiscovery zawartości w Microsoft Teams
+# <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams
 
-Ten artykuł zawiera kompleksowy zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania Advanced eDiscovery do przechowywania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams. Celem tego artykułu jest pomoc w optymalizacji przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem zawartości Teams.
+Ten artykuł zawiera kompleksowy zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) w celu zachowania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams. Celem tego artykułu jest pomoc w optymalizacji przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem zawartości Teams.
 
-Istnieje pięć kategorii zawartości Teams, które można zbierać i przetwarzać przy użyciu Advanced eDiscovery:
+Istnieje pięć kategorii zawartości Teams, które można zbierać i przetwarzać przy użyciu zbierania elektronicznych materiałów dowodowych (Premium):
 
 - **Teams czaty 1:1**. Wiadomości czatu, wpisy i załączniki udostępnione w Teams konwersacji między dwiema osobami.  Teams 1:1 czaty są również *nazywane konwersacjami*.
 
@@ -39,7 +39,7 @@ Istnieje pięć kategorii zawartości Teams, które można zbierać i przetwarza
 
 ## <a name="where-teams-content-is-stored"></a>Gdzie jest przechowywana zawartość Teams
 
-Warunkiem wstępnym zarządzania zawartością Teams w Advanced eDiscovery jest zrozumienie typu zawartości Teams, którą można zbierać, przetwarzać i przeglądać w Advanced eDiscovery oraz gdzie ta zawartość jest przechowywana w Microsoft 365. W poniższej tabeli wymieniono Teams typ zawartości i miejsce przechowywania poszczególnych elementów.
+Wymaganie wstępne do zarządzania zawartością Teams w ramach zbierania elektronicznych materiałów dowodowych (Premium) polega na zrozumieniu typu zawartości Teams, którą można zbierać, przetwarzać i przeglądać w ramach zbierania elektronicznych materiałów dowodowych (Premium) oraz miejsca przechowywania tej zawartości w Microsoft 365. W poniższej tabeli wymieniono Teams typ zawartości i miejsce przechowywania poszczególnych elementów.
 
 |&nbsp;|Lokalizacja wiadomości i wpisów czatu|Lokalizacja plików i załączników|
 |---|---|---|
@@ -54,7 +54,7 @@ Warunkiem wstępnym zarządzania zawartością Teams w Advanced eDiscovery jest 
 
 ## <a name="create-a-case-for-teams-content"></a>Tworzenie przypadku zawartości Teams
 
-Pierwszym krokiem do zarządzania zawartością Teams w Advanced eDiscovery jest utworzenie sprawy przy użyciu nowego formatu przypadku zoptymalizowanego pod kątem zarządzania zawartością Teams. Oto zalety używania nowego formatu wielkości liter dla Teams zawartości:
+Pierwszym krokiem do zarządzania zawartością Teams w usłudze eDiscovery (Premium) jest utworzenie sprawy przy użyciu nowego formatu przypadku zoptymalizowanego pod kątem zarządzania zawartością Teams. Oto zalety używania nowego formatu wielkości liter dla Teams zawartości:
 
 - Obsługa wątków konwersacji, w których dodatkowe komunikaty w tej samej konwersacji, które zawierają elementy dynamiczne, są automatycznie zbierane i dodawane do zestawów przeglądów.
 
@@ -62,15 +62,15 @@ Pierwszym krokiem do zarządzania zawartością Teams w Advanced eDiscovery jest
 
 - Kolekcje o rozmiarze do 1 TB można dodać do zestawów przeglądów, które umożliwiają zbieranie i pobieranie dużych ilości Teams zawartości w jednym przypadku.
 
-Aby uzyskać więcej informacji na temat zwiększonych limitów przypadków, zobacz [Używanie nowego formatu przypadku w Advanced eDiscovery](advanced-ediscovery-new-case-format.md).
+Aby uzyskać więcej informacji na temat zwiększonych limitów przypadków, zobacz [Używanie nowego formatu przypadku w funkcji zbierania elektronicznych materiałów dowodowych (Premium)](advanced-ediscovery-new-case-format.md).
 
 Aby utworzyć przypadek:
 
 1. Przejdź do i <https://compliance.microsoft.com> zaloguj się.
 
-2. W okienku nawigacji po lewej stronie Centrum zgodności platformy Microsoft 365 kliknij pozycję **eDiscovery > Advanced**.
+2. W okienku nawigacji po lewej stronie portalu zgodności usługi Microsoft Purview kliknij pozycję **eDiscovery > Advanced**.
 
-3. Na stronie **Advanced eDiscovery** kliknij kartę **Przypadki**, a następnie kliknij **pozycję Utwórz przypadek**.
+3. Na stronie **eDiscovery (Premium)** kliknij kartę **Przypadki**, a następnie kliknij **pozycję Utwórz przypadek**.
 
    Zostanie wyświetlona strona Wysuwane **nowe przypadki zbierania elektronicznych** materiałów dowodowych. Sekcja **Format przypadku** zawiera opcję utworzenia sprawy przy użyciu nowego formatu wielkości liter.
 
@@ -84,7 +84,7 @@ Następnym krokiem jest zidentyfikowanie użytkowników, którzy są opiekunami 
 
 Aby dodać opiekunów do sprawy i zachować źródła danych opieki:
 
-1. Przejdź do Advanced eDiscovery przypadku utworzonego w poprzedniej sekcji, a następnie kliknij pozycję **Źródła danych**.
+1. Przejdź do przypadku zbierania elektronicznych materiałów dowodowych (Premium) utworzonego w poprzedniej sekcji, a następnie kliknij pozycję **Źródła danych**.
 
 2. Na stronie **Źródła danych** kliknij pozycję **Dodaj źródło** >  **danychDodaj nowych opiekunów**.
 
@@ -113,11 +113,11 @@ Aby dodać opiekunów do sprawy i zachować źródła danych opieki:
 
 7. Na stronie **Ustawienia blokady** kliknij przycisk **Dalej** , aby przejrzeć ustawienia opiekunów. Kliknij pozycję **Prześlij** , aby dodać opiekunów do sprawy.
 
-Aby uzyskać więcej informacji na temat dodawania i zachowywania źródeł danych w Advanced eDiscovery przypadku, zobacz:
+Aby uzyskać więcej informacji na temat dodawania i zachowywania źródeł danych w przypadku zbierania elektronicznych materiałów dowodowych (Premium), zobacz:
 
-- [Dodawanie opiekunów do sprawy Advanced eDiscovery](add-custodians-to-case.md)
+- [Dodawanie opiekunów do sprawy zbierania elektronicznych materiałów dowodowych (Premium)](add-custodians-to-case.md)
 
-- [Dodawanie źródeł danych bez opieki do sprawy Advanced eDiscovery](non-custodial-data-sources.md)
+- [Dodawanie źródeł danych bez nadzoru do sprawy zbierania elektronicznych materiałów dowodowych (Premium)](non-custodial-data-sources.md)
 
 ## <a name="collect-teams-content-and-add-to-review-set"></a>Zbieranie zawartości Teams i dodawanie do zestawu przeglądów
 
@@ -133,7 +133,7 @@ Istnieje również możliwość nie uruchamiania kolekcji roboczej i dodawania w
 
 Aby utworzyć kolekcję zawartości Teams:
 
-1. Przejdź do Advanced eDiscovery przypadku, do których dodano opiekunów w poprzedniej sekcji, a następnie kliknij pozycję **Kolekcje**.
+1. Przejdź do sprawy zbierania elektronicznych materiałów dowodowych (Premium), do których dodano opiekunów w poprzedniej sekcji, a następnie kliknij pozycję **Kolekcje**.
 
 2. Na stronie **Kolekcje** wybierz pozycję **Nowa** **kolekcjaStandard** >  kolekcja.
 
@@ -177,15 +177,15 @@ Aby utworzyć kolekcję zawartości Teams:
 
 ## <a name="review-teams-content-in-a-review-set"></a>Przeglądanie zawartości Teams w zestawie przeglądów
 
-Po dodaniu kolekcji zawartości Teams do zestawu przeglądów następnym krokiem jest przejrzenie zawartości pod kątem jej istotności dla badania i usunięcie jej w razie potrzeby. Ważnym wymaganiem wstępnym przeglądania zawartości Teams jest zrozumienie, w jaki sposób Advanced eDiscovery przetwarza Teams konwersacje i załączniki rozmów podczas dodawania ich do zestawu przeglądów. To przetwarzanie zawartości Teams powoduje wykonanie następujących trzech czynności:
+Po dodaniu kolekcji zawartości Teams do zestawu przeglądów następnym krokiem jest przejrzenie zawartości pod kątem jej istotności dla badania i usunięcie jej w razie potrzeby. Ważnym wymaganiem wstępnym przeglądania Teams zawartości jest zrozumienie sposobu, w jaki funkcja zbierania elektronicznych materiałów dowodowych (Premium) przetwarza Teams konwersacji i załączników czatu podczas dodawania ich do zestawu przeglądów. To przetwarzanie zawartości Teams powoduje wykonanie następujących trzech czynności:
 
 - **[Grupowanie](#grouping)**. Sposób grupowania wiadomości, wpisów i odpowiedzi Teams konwersacji i prezentowania ich w zestawie przeglądów. Obejmuje to również załączniki w konwersacjach rozmów są wyodrębniane i grupowane w konwersacji.
 
-- **[Transkrypcja wątków konwersacji](#transcript-conversation-threading)**. Jak Advanced eDiscovery określa, jaka dodatkowa zawartość konwersacji ma być zbierana w celu zapewnienia kontekstu wokół elementów zgodnych z kryteriami kolekcji.
+- **[Transkrypcja wątków konwersacji](#transcript-conversation-threading)**. Sposób, w jaki funkcja zbierania elektronicznych materiałów dowodowych (Premium) określa, jaką dodatkową zawartość z konwersacji zebrać w celu zapewnienia kontekstu wokół elementów spełniających kryteria kolekcji.
 
-- **[Deduplikacja](#deduplication-of-teams-content)**. Jak Advanced eDiscovery obsługuje zduplikowaną zawartość Teams.
+- **[Deduplikacja](#deduplication-of-teams-content)**. Jak usługa eDiscovery (Premium) obsługuje zduplikowaną zawartość Teams.
 
-- **[Metadane](#metadata-for-teams-content)**. Właściwości metadanych, które Advanced eDiscovery dodawane do zawartości Teams po jej zebraniu i dodaniu do zestawu przeglądów.
+- **[Metadane](#metadata-for-teams-content)**. Właściwości metadanych, które eDiscovery (Premium) dodaje do zawartości Teams po jej zebraniu i dodaniu do zestawu przeglądów.
 
 Omówienie grupowania, wątków konwersacji, deduplikacji i metadanych Teams pomoże zoptymalizować przegląd i analizę zawartości Teams. Ta sekcja zawiera również [wskazówki dotyczące wyświetlania zawartości Teams w zestawie przeglądów](#tips-for-viewing-teams-content-in-a-review-set).
 
@@ -227,9 +227,9 @@ Poniższe zrzuty ekranu przedstawiają przykład konwersacji w kliencie Teams i 
 
 ### <a name="transcript-conversation-threading"></a>Transkrypcja wątków konwersacji
 
-Funkcja wątków konwersacji w nowym formacie przypadku w Advanced eDiscovery ułatwia identyfikowanie zawartości kontekstowej związanej z elementami, które mogą być istotne dla badania. Ta funkcja tworzy różne widoki konwersacji, które zawierają komunikaty czatów poprzedzające elementy i zgodne z elementami zapytania wyszukiwania podczas zbierania. Ta funkcja umożliwia wydajne i szybkie przeglądanie pełnych konwersacji na czacie (*nazywanych konwersacjami wątkowymi*) w Microsoft Teams. Jak wyjaśniono wcześniej, konwersacje na czacie są rekonstruowane w plikach transkrypcji HTML, gdy Advanced eDiscovery dodaje zawartość Teams do zestawu przeglądów.
+Funkcja wątków konwersacji w nowym formacie przypadku zbierania elektronicznych materiałów dowodowych (Premium) pomaga zidentyfikować zawartość kontekstową związaną z elementami, które mogą być istotne dla badania. Ta funkcja tworzy różne widoki konwersacji, które zawierają komunikaty czatów poprzedzające elementy i zgodne z elementami zapytania wyszukiwania podczas zbierania. Ta funkcja umożliwia wydajne i szybkie przeglądanie pełnych konwersacji na czacie (*nazywanych konwersacjami wątkowymi*) w Microsoft Teams. Jak wyjaśniono wcześniej, konwersacje czatów są rekonstruowane w plikach transkrypcji HTML, gdy funkcja eDiscovery (Premium) dodaje zawartość Teams do zestawu przeglądów.
 
-Oto logika używana przez Advanced eDiscovery do dołączania dodatkowych komunikatów i plików transkrypcji odpowiedzi, które zapewniają kontekst wokół elementów zgodnych z zapytaniem kolekcji (nazywanymi *elementami responsywnymi*) używanymi podczas zbierania Teams zawartości. Różne zachowania wątków są oparte na typach czatów i zapytaniu wyszukiwania używanym do zbierania elementów dynamicznych. Istnieją dwa typowe scenariusze zbierania danych:
+Oto logika używana przez funkcję eDiscovery (Premium) do dołączania dodatkowych komunikatów i plików transkrypcji odpowiedzi, które zapewniają kontekst wokół elementów zgodnych z zapytaniem kolekcji (nazywanym *elementami dynamicznym*) używanymi podczas zbierania Teams zawartości. Różne zachowania wątków są oparte na typach czatów i zapytaniu wyszukiwania używanym do zbierania elementów dynamicznych. Istnieją dwa typowe scenariusze zbierania danych:
 
 - Zapytania używające parametrów wyszukiwania, takich jak słowa kluczowe i pary property:value
 
@@ -244,7 +244,7 @@ Oto logika używana przez Advanced eDiscovery do dołączania dodatkowych komuni
 
 Na poniższej liście opisano zachowanie deduplikacji (i duplikowania) podczas zbierania zawartości Teams do zestawu przeglądów.
 
-- Każdy plik transkrypcji dodany do zestawu przeglądów powinien być mapowaniem jeden do jednego na zawartość przechowywaną w lokalizacjach danych. Oznacza to, że Advanced eDiscovery nie zbiera żadnych Teams zawartości, która została już dodana do zestawu przeglądów. Jeśli wiadomość czatu jest już zbierana w zestawie przeglądów, Advanced eDiscovery nie dodaje tego samego komunikatu z tej samej lokalizacji danych do zestawu przeglądów w kolejnych kolekcjach.
+- Każdy plik transkrypcji dodany do zestawu przeglądów powinien być mapowaniem jeden do jednego na zawartość przechowywaną w lokalizacjach danych. Oznacza to, że funkcja zbierania elektronicznych materiałów dowodowych (Premium) nie zbiera żadnych Teams zawartości, która została już dodana do zestawu przeglądów. Jeśli wiadomość czatu jest już zbierana w zestawie przeglądów, funkcja eDiscovery (Premium) nie dodaje tego samego komunikatu z tej samej lokalizacji danych do zestawu przeglądów w kolejnych kolekcjach.
 
 - W przypadku czatów grupowych i 1:1 kopie wiadomości są przechowywane w skrzynce pocztowej każdego uczestnika konwersacji. Kopie tej samej konwersacji, które istnieją w skrzynkach pocztowych różnych uczestników, są zbierane z różnymi metadanymi. W rezultacie każde wystąpienie konwersacji jest traktowane jako unikatowe i wprowadzane do zestawu przeglądów w oddzielnych plikach transkrypcji. Jeśli więc wszyscy uczestnicy czatu grupowego 1:1 lub zostaną dodani jako opiekunowie w danym przypadku i uwzględnieni w zakresie kolekcji, kopie każdej transkrypcji (dla tej samej ochrony) zostaną dodane do zestawu przeglądów i zostaną zgrupowane razem z tym samym **identyfikatorem ConversationId**. Każda z tych kopii jest skojarzona z odpowiednim opiekunem. **Porada**: Kolumna **Kustosz** na liście zestawu przeglądów identyfikuje opiekuna odpowiedniego pliku transkrypcji.
 
@@ -260,7 +260,7 @@ Na poniższej liście opisano zachowanie deduplikacji (i duplikowania) podczas z
 
 ### <a name="metadata-for-teams-content"></a>Metadane zawartości Teams
 
-W dużych zestawach przeglądów z tysiącami lub milionami elementów może być trudno zawęzić zakres przeglądu, aby Teams zawartość. Aby ułatwić skoncentrowanie przeglądu na zawartości Teams, istnieją właściwości metadanych specyficzne dla Teams zawartości. Te właściwości umożliwiają organizowanie kolumn na liście [przeglądów oraz konfigurowanie filtrów i zapytań](review-set-search.md) w celu zoptymalizowania przeglądu zawartości Teams. Te właściwości metadanych są również uwzględniane podczas eksportowania zawartości Teams z Advanced eDiscovery, aby ułatwić organizowanie i wyświetlanie zawartości po wyeksportowaniu lub w narzędziach zbierania elektronicznych materiałów dowodowych innych firm.
+W dużych zestawach przeglądów z tysiącami lub milionami elementów może być trudno zawęzić zakres przeglądu, aby Teams zawartość. Aby ułatwić skoncentrowanie przeglądu na zawartości Teams, istnieją właściwości metadanych specyficzne dla Teams zawartości. Te właściwości umożliwiają organizowanie kolumn na liście [przeglądów oraz konfigurowanie filtrów i zapytań](review-set-search.md) w celu zoptymalizowania przeglądu zawartości Teams. Te właściwości metadanych są również uwzględniane podczas eksportowania zawartości Teams z eDiscovery (Premium), aby ułatwić organizowanie i wyświetlanie zawartości po wyeksportowaniu lub w narzędziach zbierania elektronicznych materiałów dowodowych innych firm.
 
 W poniższej tabeli opisano właściwości metadanych Teams zawartości.
 
@@ -277,7 +277,7 @@ W poniższej tabeli opisano właściwości metadanych Teams zawartości.
 |Adresatów|Lista wszystkich użytkowników, którzy otrzymali wiadomość w konwersacji transkrypcji.|
 |TeamsChannelName|Nazwa kanału Teams transkrypcji.|
 
-Opisy innych Advanced eDiscovery właściwości metadanych można znaleźć [w temacie Document metadata fields in Advanced eDiscovery (Pola metadanych dokumentu w Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md)).
+Opisy innych właściwości metadanych zbierania elektronicznych materiałów dowodowych (Premium) można znaleźć [w temacie Document metadata fields in eDiscovery (Premium)(Pola metadanych dokumentu w usłudze eDiscovery (Premium)).](document-metadata-fields-in-Advanced-eDiscovery.md)
 
 ## <a name="export-teams-content"></a>Eksportowanie zawartości Teams
 
@@ -305,8 +305,8 @@ Za pomocą Advanced eDiscovery i Eksploratora Graph Firmy Microsoft można reago
 
 ## <a name="reference-guide"></a>Przewodnik referencyjny
 
-Oto krótki przewodnik referencyjny dotyczący używania Advanced eDiscovery dla Microsoft Teams. Ten przewodnik zawiera podsumowanie punktów kluczy do używania Advanced eDiscovery do zachowywania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams.
+Oto krótki przewodnik referencyjny dotyczący używania zbierania elektronicznych materiałów dowodowych (Premium) dla Microsoft Teams. Ten przewodnik zawiera podsumowanie punktów kluczy dotyczących używania zbierania elektronicznych materiałów dowodowych (Premium) do zachowywania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams.
 
-![Miniatura przewodnika referencyjnego do używania Advanced eDiscovery dla Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
+![Thumbnail for reference guide for using eDiscovery (Premium) for Microsoft Teams .Thumbnail for reference guide for using eDiscovery (Premium) for Microsoft Teams .Thumbnail for reference guide for using eDiscovery (Premium) for Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
 
 [Pobieranie jako pliku PDF](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)

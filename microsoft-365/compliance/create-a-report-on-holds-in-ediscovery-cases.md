@@ -1,5 +1,5 @@
 ---
-title: Tworzenie raportu zbierania elektronicznych materiałów dowodowych za pomocą skryptu
+title: Tworzenie raportu zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,37 +19,37 @@ search.appverid:
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak wygenerować raport zawierający informacje o wszystkich rekordach, które są skojarzone ze sprawami zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 568d4fa351879d271004d0f0749881f3de4b4a49
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak wygenerować raport zawierający informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych.
+ms.openlocfilehash: b0460b725359e2953c0a27b517a362327ae504f5
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319479"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946468"
 ---
-# <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Tworzenie raportu o zbierania elektronicznych materiałów dowodowych za pomocą skryptu
+# <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Tworzenie raportu dotyczącego blokad w przypadkach zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
 
-Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych wygenerowanie raportu zawierającego informacje o wszystkich blokadych, które są skojarzone z sprawami podstawowymi i Advanced eDiscovery spraw w Centrum zgodności platformy Microsoft 365. Raport zawiera informacje, takie jak nazwa sprawy, z którym jest skojarzona sprawa, lokalizacje zawartości umieszczone w hold czy też są oparte na kwerendach. Jeśli istnieją przypadki, w których nie ma żadnych blokady, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
+Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych generowanie raportu zawierającego informacje o wszystkich blokadach skojarzonych z przypadkami core i eDiscovery (Premium) w portalu zgodności usługi Microsoft Purview. Raport zawiera informacje, takie jak nazwa przypadku, z którym jest skojarzona blokada, lokalizacje zawartości, które są wstrzymane, oraz to, czy blokada jest oparta na zapytaniach. Jeśli istnieją przypadki, które nie mają żadnych blokad, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
 
-Zobacz [sekcję Więcej](#more-information) informacji, aby uzyskać szczegółowy opis informacji zawartych w raporcie.
+Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać szczegółowy opis informacji zawartych w raporcie.
 
 ## <a name="admin-requirements-and-script-information"></a>Wymagania administratora i informacje o skryptach
 
-- Aby wygenerować raport na temat wszystkich spraw zbierania elektronicznych materiałów dowodowych w organizacji, musisz być administratorem zbierania elektronicznych materiałów dowodowych w organizacji. Jeśli jesteś menedżerem zbierania elektronicznych materiałów dowodowych, raport będzie zawierał tylko informacje o przypadkach, do których masz dostęp. Aby uzyskać więcej informacji o uprawnieniach zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
+- Aby wygenerować raport dotyczący wszystkich przypadków zbierania elektronicznych materiałów dowodowych w organizacji, musisz być administratorem zbierania elektronicznych materiałów dowodowych w organizacji. Jeśli jesteś menedżerem zbierania elektronicznych materiałów dowodowych, raport będzie zawierać tylko informacje o przypadkach, do których można uzyskać dostęp. Aby uzyskać więcej informacji na temat uprawnień zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
-- Skrypt w tym artykule ma minimalną obsługę błędów. Podstawowym celem jest szybkie utworzenie raportu o rekordach, które są skojarzone ze sprawami zbierania elektronicznych materiałów dowodowych w organizacji.
+- Skrypt w tym artykule ma minimalną obsługę błędów. Podstawowym celem jest szybkie utworzenie raportu dotyczącego blokad skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych w organizacji.
 
-- Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu lub usługi pomocy technicznej firmy Microsoft. Przykładowe skrypty są dostarczane W JAKIM JEST bez jakiejkolwiek gwarancji. Firma Microsoft dodatkowo nie udziela żadnych dorozumianych gwarancji, w tym, ale nie wyłącznie, żadnych dorozumianych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko związane z użyciem lub wykonaniem przykładowych skryptów i dokumentacji pozostaje tylko dla użytkownika. Firma Microsoft, jej autorzy ani nikt inny biorący udział w tworzeniu, produkcji lub dostarczaniu skryptów nie będą w żadnym wypadku ponosić odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody związane z utratą zysków, przerwami w działaniu firmy, utratą informacji biznesowych lub inne straty pieniężne) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub nieumiejętnego korzystania z tych skryptów lub dokumentacji.  nawet jeśli firma Microsoft została powiadomiona o możliwości wystąpienia takich szkód.
+- Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowe skrypty są dostarczane jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowych skryptów i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Krok 1. Połączenie do centrum zabezpieczeń & w programie PowerShell
+## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Krok 1. Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń
 
-Pierwszym krokiem jest połączenie się z programem PowerShell & zabezpieczeń w organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell & centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+Pierwszym krokiem jest nawiązanie połączenia z programem PowerShell Centrum zgodności usługi Security & dla Twojej organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Krok 2. Uruchamianie skryptu w celu zgłoszenia raportów o zarchiwniach skojarzonych ze sprawami zbierania elektronicznych materiałów dowodowych
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Krok 2. Uruchamianie skryptu w celu raportowania blokad skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych
 
-Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności następnym krokiem jest utworzenie i uruchomienie skryptu zbieracego informacje o sprawach zbierania elektronicznych materiałów dowodowych w organizacji.
+Po nawiązaniu połączenia z programem PowerShell Security & Compliance Center następnym krokiem jest utworzenie i uruchomienie skryptu zbierającego informacje o przypadkach zbierania elektronicznych materiałów dowodowych w organizacji.
 
-1. Zapisz poniższy tekst w pliku skryptu Windows PowerShell, używając sufiksu nazwy pliku programu .ps1, na przykład CaseHoldsReport.ps1.
+1. Zapisz następujący tekst w pliku skryptu Windows PowerShell przy użyciu sufiksu nazwy pliku .ps1, na przykład CaseHoldsReport.ps1.
 
    ```powershell
    #script begin
@@ -105,7 +105,7 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of Core eDiscovery cases and holds..."
+   write-host "Gathering a list of eDiscovery (Standard) cases and holds..."
    " "
    $edc =Get-ComplianceCase -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -136,7 +136,7 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of Advanced eDiscovery cases and holds..."
+   write-host "Gathering a list of eDiscovery (Premium) cases and holds..."
    " "
    $edc =Get-ComplianceCase -CaseType Advanced -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -172,9 +172,9 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
    #script end
    ```
 
-2. W Windows PowerShell otwartej w kroku 1 przejdź do folderu, w którym został zapisany skrypt.
+2. W sesji Windows PowerShell otwartej w kroku 1 przejdź do folderu, w którym zapisano skrypt.
 
-3. Uruchom skrypt. na przykład:
+3. Uruchom skrypt; na przykład:
 
    ```powershell
    .\CaseHoldsReport.ps1
@@ -182,41 +182,41 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
 
    Skrypt wyświetli monit o zapisanie raportu w folderze docelowym.
 
-4. Wpisz pełną nazwę folderu, w którym chcesz zapisać raport, a następnie naciśnij klawisz **Enter**.
+4. Wpisz pełną nazwę ścieżki folderu, w celu zapisania raportu, a następnie naciśnij **klawisz Enter**.
 
    > [!TIP]
-   > Aby zapisać raport w tym samym folderze, w którym znajduje się skrypt, po wyświetleniu monitu o folder docelowy wpisz okres ("."). Aby zapisać raport w podfolderze w folderze, w którym znajduje się skrypt, wystarczy wpisać jego nazwę.
+   > Aby zapisać raport w tym samym folderze, w jakim znajduje się skrypt, wpisz kropkę (".") po wyświetleniu monitu o folder docelowy. Aby zapisać raport w podfoldecie w folderze, w którym znajduje się skrypt, wystarczy wpisać nazwę podfolderu.
 
-   Skrypt zacznie zbierać informacje o wszystkich przypadkach zbierania elektronicznych materiałów dowodowych w organizacji. Nie uzyskaj dostępu do pliku raportu, gdy skrypt jest uruchomiony. Po zakończeniu skryptu w sesji wiadomości jest wyświetlany Windows PowerShell potwierdzenia. Po wyświetlaniu tego komunikatu możesz uzyskać dostęp do raportu w folderze określonym w kroku 4. Nazwa pliku raportu to `CaseHoldsReport<DateTimeStamp>.csv`.
+   Skrypt rozpoczyna zbieranie informacji o wszystkich przypadkach zbierania elektronicznych materiałów dowodowych w organizacji. Nie uzyskiwać dostępu do pliku raportu, gdy skrypt jest uruchomiony. Po ukończeniu skryptu w sesji Windows PowerShell zostanie wyświetlony komunikat z potwierdzeniem. Po wyświetleniu tej wiadomości możesz uzyskać dostęp do raportu w folderze określonym w kroku 4. Nazwa pliku raportu to `CaseHoldsReport<DateTimeStamp>.csv`.
 
-   Ponadto skrypt tworzy również raport z listą spraw, które nie mają żadnych blokady. Nazwa pliku tego raportu to `CaseswithNoHolds<DateTimeStamp>.csv`.
+   Ponadto skrypt tworzy również raport z listą przypadków, które nie mają żadnych blokad. Nazwa pliku dla tego raportu to `CaseswithNoHolds<DateTimeStamp>.csv`.
 
-   Oto przykład uruchamiania skryptu CaseHoldsReport.ps1 skryptu.
+   Oto przykład uruchamiania skryptu CaseHoldsReport.ps1.
 
-   ![Wynik po uruchomieniu skryptu CaseHoldsReport.ps1 skryptu.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![Dane wyjściowe po uruchomieniu skryptu CaseHoldsReport.ps1.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
 ## <a name="more-information"></a>Więcej informacji
 
-Raport o przypadku utworzony po uruchomieniu skryptu w tym artykule zawiera następujące informacje o poszczególnych blokadych. Jak już wyjaśniono, musisz być administratorem zbierania elektronicznych materiałów dowodowych, aby zwracać informacje o wszystkich blokadych w organizacji. Aby uzyskać więcej informacji na temat zbierania spraw, zobacz [Sprawy zbierania elektronicznych materiałów dowodowych](./get-started-core-ediscovery.md).
+Sprawa zawiera raport utworzony podczas uruchamiania skryptu w tym artykule zawiera następujące informacje o każdym blokadzie. Jak wyjaśniono wcześniej, musisz być administratorem zbierania elektronicznych materiałów dowodowych, aby zwracać informacje o wszystkich blokadach w organizacji. Aby uzyskać więcej informacji na temat spraw dotyczących blokad, zobacz [Przypadki zbierania elektronicznych materiałów dowodowych](./get-started-core-ediscovery.md).
 
-- Nazwa przechowywania i nazwa sprawy zbierania elektronicznych materiałów dowodowych, z tą sprawą jest skojarzona.
+- Nazwa blokady i nazwa sprawy zbierania elektronicznych materiałów dowodowych, z którą jest skojarzona blokada.
 
-- Czy to wstrzymywanie jest skojarzone z bazą danych, Advanced eDiscovery przypadku.
+- Czy blokada jest skojarzona z przypadkiem Core, czy eDiscovery (Premium).
 
-- Czy sprawa zbierania elektronicznych materiałów dowodowych jest aktywna, czy zamknięta.
+- Czy przypadek zbierania elektronicznych materiałów dowodowych jest aktywny, czy zamknięty.
 
-- Określa, czy to hold jest włączone, czy wyłączone.
+- Czy blokada jest włączona, czy wyłączona.
 
-- Członkowie sprawy zbierania elektronicznych materiałów dowodowych, z tą sprawą jest skojarzona ta sprawa. Członkowie sprawy mogą wyświetlać i zarządzać sprawą, zależnie od przypisanych im uprawnień zbierania elektronicznych materiałów dowodowych.
+- Członkowie sprawy zbierania elektronicznych materiałów dowodowych, z którą jest skojarzona blokada. Członkowie sprawy mogą wyświetlać przypadek lub zarządzać nimi w zależności od przypisanych im uprawnień do zbierania elektronicznych materiałów dowodowych.
 
 - Godzina i data utworzenia sprawy.
 
-- W przypadku zamknięcia sprawy osoba, która ją zamknęła, oraz godzina i data zamknięcia.
+- Jeśli sprawa zostanie zamknięta, osoba, która ją zamknęła, oraz godzina i data jej zamknięcia.
 
-- Skrzynki Exchange pocztowe i SharePoint witryn, które znajdują się w wstrzymaniu.
+- Skrzynki pocztowe Exchange i SharePoint lokalizacje witryn, które są wstrzymane.
 
-- Jeśli hold jest oparty na kwerendzie, składnia zapytania.
+- Jeśli blokada jest oparta na zapytaniach, składnia zapytania.
 
-- Godzina i data utworzenia hold'a oraz osoba, która go utworzyła.
+- Godzina i data utworzenia blokady oraz osoba, która ją utworzyła.
 
-- Godzina i data ostatniej zmiany trzymania oraz osoba, która go zmieniła.
+- Godzina i data ostatniej zmiany blokady oraz osoba, która ją zmieniła.

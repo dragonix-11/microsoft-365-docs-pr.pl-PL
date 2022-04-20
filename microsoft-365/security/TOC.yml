@@ -1,52 +1,52 @@
-- name: Microsoft 365 zabezpieczeń
+- name: Centrum zabezpieczeń platformy Microsoft 365
   href: index.yml
   expanded: true
   items:
     - name: Wprowadzenie
       items:
-        - name: Microsoft 365 plan wdrażania zerowego zaufania
+        - name: Plan wdrożenia platformy Microsoft 365 Zero Trust
           href: microsoft-365-zero-trust.md
         - name: Najważniejsze zadania do obsługi pracy z domu
           href: top-security-tasks-for-remote-work.md
-    - name: Konfiguracje zerowym zaufaniem tożsamości i dostępu do urządzeń
+    - name: Konfiguracje Zero Trust dostępu do tożsamości i urządzeń
       items:
         - name: Omówienie
           href: ./office-365-security/microsoft-365-policies-configurations.md
-        - name: Wymaganie wstępne
+        - name: Prace wymagań wstępnych
           href: ./office-365-security/identity-access-prerequisites.md
-        - name: Typowe zasady dostępu do urządzeń i tożsamości
+        - name: "Wspólne zasady tożsamości i\_dostępu do urządzeń"
           href: ./office-365-security/identity-access-policies.md
         - name: Zasady dla gości i użytkowników zewnętrznych
           href: ./office-365-security/identity-access-policies-guest-access.md
-        - name: Zalecane Teams dostępu
+        - name: Zalecane zasady dostępu do aplikacji Teams
           href: ./office-365-security/teams-access-policies.md
-        - name: Zalecane Exchange dostępu
+        - name: Zalecane zasady dostępu do programu Exchange
           href: ./office-365-security/secure-email-recommended-policies.md
-        - name: Zalecane SharePoint dostępu
+        - name: Zalecane zasady dostępu do programu SharePoint
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: Zasady zalecanych usług Defender dla aplikacji w chmurze dla aplikacji SaaS
+        - name: Zalecane zasady usługi Defender for Cloud Apps dla aplikacji SaaS
           href: ./office-365-security/mcas-saas-access-policies.md
-        - name: Ocena dostępu ciągłego
+        - name: Ciągła ocena dostępu
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
-    - name: Microsoft 365 Defender dokumentów
+    - name: Dokumentacja usługi Microsoft 365 Defender
       items:
         - name: Microsoft 365 Defender
           href: ./defender/index.yml
-        - name: Defender for Office 365
+        - name: Ochrona usługi Office 365 w usłudze Defender
           href: ./office-365-security/index.yml
-        - name: Defender for Endpoint
+        - name: Ochrona punktu końcowego w usłudze Microsoft Defender
           href: ./defender-endpoint/index.yml
         - name: Defender for Identity
           href: /defender-for-identity
         - name: Defender for Cloud Apps
           href: /cloud-app-security
-        - name: Defender for Business
+        - name: Defender dla Firm
           href: ./defender-business/index.yml
     - name: Microsoft 365 Enterprise
       href: ../enterprise/index.yml
     - name: Microsoft 365 dla firm
       href: ./index.yml
-    - name: Microsoft 365 zgodności
+    - name: Microsoft Purview
       href: ../compliance/index.yml
-    - name: Zarządzanie zawartością aktywną w Office dokumentów
+    - name: Zarządzanie aktywną zawartością w dokumentach pakietu Office
       href: active-content-in-trusted-docs.md

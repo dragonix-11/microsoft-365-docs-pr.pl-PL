@@ -1,5 +1,5 @@
 ---
-title: Tworzenie informacji prawnych o wstrzymaniu ich od zesłania
+title: Tworzenie powiadomienia o blokadzie prawnej
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,193 +15,193 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Za pomocą narzędzia do komunikacji w przypadku Advanced eDiscovery przypadku wysyłaj, zbieraj i śledź powiadomienia o obsłudze prawnych.
+description: Użyj narzędzia Communications w sprawie zbierania elektronicznych materiałów dowodowych (Premium), aby wysyłać, zbierać i śledzić powiadomienia o blokadzie prawnej.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5c0bda35ffe2547e1c30b4bbf0a6c7d0d0563b7b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f82e61b618c351f4dac05ce2559eab047f0e70a7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315665"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945070"
 ---
-# <a name="create-a-legal-hold-notice"></a>Tworzenie informacji prawnych o wstrzymaniu ich od zesłania
+# <a name="create-a-legal-hold-notice"></a>Tworzenie powiadomienia o blokadzie prawnej
 
-Przy Advanced eDiscovery informacji o użytkownikach organizacje mogą zarządzać swoim przepływem pracy, komunikując się z nimi. Za pośrednictwem narzędzia do komunikacji zespoły prawne mogą systemowo wysyłać, zbierać i śledzić powiadomienia o holdie prawnej. Elastyczny proces tworzenia umożliwia również zespołom dostosowywanie przepływu pracy powiadomień o wstrzymaniu i zawartości w powiadomieniach wysyłanych do osób przechwytczy.
+Korzystając z komunikacji z opiekunem zbierania elektronicznych materiałów dowodowych (Premium), organizacje mogą zarządzać przepływem pracy podczas komunikowania się z opiekunami. Za pośrednictwem narzędzia Do komunikacji zespoły prawne mogą systematycznie wysyłać, zbierać i śledzić powiadomienia o blokadzie prawnej. Elastyczny proces tworzenia umożliwia również zespołom dostosowywanie przepływu pracy powiadomień o blokadzie i zawartości w powiadomieniach wysyłanych do opiekunów.
 
 ![Strona komunikacji.](../media/CommunicationPage.PNG)
 
-W tym artykule przedstawiono kroki przepływu pracy z powiadomieniem o wstrzymaniu.
+W tym artykule opisano kroki w przepływie pracy powiadamiania o blokadzie.
 
 ## <a name="step-1-specify-communication-details"></a>Krok 1. Określanie szczegółów komunikacji
 
-Pierwszym krokiem jest określenie odpowiednich danych do informacji prawnych i innych informacji o wstrzymaniu się od nich.
+Pierwszym krokiem jest określenie odpowiednich szczegółów dotyczących prawnych powiadomień o wstrzymaniu lub innych komunikatów opiekunów.
 
-![Name Communication page.](../media/NameCommunication.PNG)
+![Strona komunikacji nazw.](../media/NameCommunication.PNG)
 
-1. W Centrum zgodności platformy Microsoft 365 przejdź do tematu **Zbierania elektronicznych** materiałów dowodowych > Zaawansowane, aby wyświetlić listę spraw w organizacji.
+1. W portalu zgodności usługi Microsoft Purview przejdź do obszaru **eDiscovery > Advanced** , aby wyświetlić listę przypadków w organizacji.
 
-2. Wybierz sprawę, kliknij **kartę Komunikacja** , a następnie kliknij pozycję **Nowa komunikacja**.
+2. Wybierz przypadek, kliknij kartę **Komunikacja** , a następnie kliknij pozycję **Nowa komunikacja**.
 
-3. Na stronie **Nazwa komunikacji** określ następujące ustawienia komunikacji.
+3. Na stronie **komunikacji Nazwa** określ następujące ustawienia komunikacji.
 
     - **Nazwa**: jest to nazwa komunikacji.
 
-    - **Issuing officer**: Na liście rozwijanej są wyświetlani użytkownicy w Twojej organizacji, których można wybrać jako inspektora ds. wydania komunikacji. Każda komunikacja wysyłana do osób, które je zatrzymały, zostanie wysłana w imieniu wybranego inspektora wydania. Lista użytkowników na liście rozwijanej składa się z członków sprawy oraz członków służb wydających w całej organizacji. Ci inscytatorzy zbierania elektronicznych materiałów dowodowych są dodawana przez administratora zbierania elektronicznych materiałów dowodowych i są dostępni we wszystkich Advanced eDiscovery przypadkach w Twojej organizacji. Aby uzyskać więcej informacji, zobacz [Zarządzanie organami wydającym informacje](advanced-ediscovery-issuing-officers.md).
+    - **Urzędnik wystawiający**: lista rozwijana zawiera użytkowników w organizacji, którzy mogą zostać wybrani do komunikacji jako wystawiający certyfikaty. Każda wiadomość wysłana do opiekunów zostanie wysłana w imieniu wybranego urzędnika wystawiającego. Lista użytkowników na liście rozwijanej składa się z członków sprawy i pracowników wystawiających certyfikaty w całej organizacji. Ci urzędnicy wystawiający certyfikaty są dodawani przez administratora zbierania elektronicznych materiałów dowodowych i są dostępni we wszystkich przypadkach zbierania elektronicznych materiałów dowodowych (Premium) w organizacji. Aby uzyskać więcej informacji, zobacz [Manage issuing officers (Zarządzanie urzędnikami wystawiającym certyfikaty](advanced-ediscovery-issuing-officers.md)).
 
-    - **Wybierz szablon komunikacji**: Na liście rozwijanej są wyświetlane szablony z biblioteki komunikacji na Advanced eDiscovery ustawień. Jeśli wybierzesz szablon, będzie on wyświetlany w witrynie Definiowanie  zawartości portalu jako punkt wyjścia dla tekstu powiadomienia, które tworzysz. Jeśli nie wybierzesz szablonu, musisz utworzyć powiadomienie samodzielnie od podstaw. Aby uzyskać więcej informacji na temat szablonów komunikacji, zobacz [Zarządzanie szablonami do komunikacji z użytkownikami](advanced-ediscovery-communications-library.md).
+    - **Wybierz szablon komunikacji**: na liście rozwijanej są wyświetlane szablony z biblioteki Communications na stronie ustawień zbierania elektronicznych materiałów dowodowych (Premium). Jeśli wybierzesz szablon, zostanie on wyświetlony w **zawartości Definiowanie portalu** jako punkt początkowy dla tekstu tworzonej powiadomienia. Jeśli nie wybierzesz szablonu, musisz utworzyć powiadomienie samodzielnie od podstaw. Aby uzyskać więcej informacji na temat szablonów komunikacji, zobacz [Zarządzanie szablonami komunikacji opiekuna](advanced-ediscovery-communications-library.md).
 
 4. Kliknij **Dalej**.
 
 ## <a name="step-2-define-the-portal-content"></a>Krok 2. Definiowanie zawartości portalu
 
-Następnie możesz utworzyć i dodać zawartość powiadomienia o wstrzymaniu. Na stronie **Definiowanie zawartości portalu** w kreatorze **tworzenia** komunikacji określ zawartość powiadomienia o wstrzymaniu. Ta zawartość zostanie automatycznie dołączona do zasad wydawania, ponownego wydawania, przypomnienia i eskalacji. Ponadto ta zawartość będzie wyświetlana w Portalu zgodności użytkownika- opiekuna. Jeśli wybrano szablon z biblioteki Komunikacji, będzie on wyświetlany i stanowi punkt wyjścia dla powiadomienia, które tworzysz.
+Następnie możesz utworzyć i dodać zawartość powiadomienia o blokadzie. Na stronie **Definiowanie zawartości portalu** w **kreatorze tworzenia komunikacji** określ zawartość powiadomienia o blokadzie. Ta zawartość zostanie automatycznie dołączona do powiadomień o wystawianiu, ponownym problemie, przypomnieniu i eskalacji. Ponadto ta zawartość będzie wyświetlana w portalu zgodności opiekuna. Jeśli wybierzesz szablon z biblioteki Communications, zostanie on wyświetlony i będzie stanowić punkt początkowy dla tworzonej powiadomienia.
 
-![Strona Zawartość portalu.](../media/PortalContent.PNG)
+![Strona zawartość portalu.](../media/PortalContent.PNG)
 
 Aby utworzyć zawartość portalu:
 
-1. Wpisz (lub wytnij i wklej z innego dokumentu) powiadomienie o wstrzymaniu w polu tekstowym zawartości portalu. Jeśli na poprzedniej stronie kreatora wybrano szablon komunikacji, ten szablon jest wyświetlany. W razie potrzeby możesz edytować zawartość szablonu.
+1. Wpisz (lub wytnij i wklej z innego dokumentu) powiadomienie o wstrzymaniu w polu tekstowym zawartości portalu. Jeśli na poprzedniej stronie kreatora wybrano szablon komunikacji, zostanie wyświetlony szablon. Zawartość szablonu można edytować w razie potrzeby.
 
-2. Wstaw zmienne korespondencji seryjnej do powiadomienia, aby dostosować powiadomienie i udostępnić Portal zgodności wt.
+2. Wstaw zmienne scalania do powiadomienia, aby dostosować powiadomienie i udostępnić portal zgodności opiekuna.
 
 3. Kliknij **Dalej**.
 
   > [!TIP]
-  > Aby dowiedzieć się więcej o dostosowywaniu zawartości i formatowania zawartości portalu, zobacz [Korzystanie z Edytora komunikacji](using-communications-editor.md).
+  > Aby dowiedzieć się więcej na temat dostosowywania zawartości i formatu zawartości portalu, zobacz [Korzystanie z Edytora komunikacji](using-communications-editor.md).
 
 ## <a name="step-3-set-the-required-notifications"></a>Krok 3. Ustawianie wymaganych powiadomień
 
-Po skonfigurowaniu zawartości powiadomienia o wstrzymaniu możesz skonfigurować przepływy pracy wokół wysyłania i zarządzania procesem powiadomień. Powiadomienia to wiadomości e-mail, które są wysyłane w celu powiadamiania i obserwowania osób, które odimówią. Każdy pochwała dodana do komunikacji otrzyma to samo powiadomienie.
+Po zdefiniowaniu zawartości powiadomienia o wstrzymaniu można skonfigurować przepływy pracy dotyczące wysyłania procesu powiadomień i zarządzania nim. Powiadomienia to wiadomości e-mail wysyłane w celu powiadamiania opiekunów i śledzenia ich. Każdy opiekun dodany do komunikacji otrzyma to samo powiadomienie.
 
-Aby skonfigurować i wysłać powiadomienie o wstrzymaniu, należy dołączyć powiadomienia o wydaniu, wydaniu, ponownym wydaniu i wydaniu.
+Aby skonfigurować i wysłać powiadomienie o wstrzymaniach, należy uwzględnić powiadomienia o wystawianiach, ponownych wystawiania i wydaniach.
 
-### <a name="issuance-notification"></a>Powiadomienie o wydaniu
+### <a name="issuance-notification"></a>Powiadomienie o wystawianiu
 
-Po utworzeniu komunikacji powiadomienie o **wydaniu** jest inicjowane przez określonego inspektora ds. wydania. Powiadomienie o wydaniu jest pierwszą wiadomością wysłaną do użytkownika, który go zawiera i informuje o zobowiązaniach do zachowania poufności.
+Po utworzeniu komunikacji **powiadomienie o wystawieniu** jest inicjowane przez określonego inspektora wystawiającego. Powiadomienie o wystawieniu jest pierwszym komunikatem przesłanym do opiekuna w celu poinformowania go o obowiązkach zachowania.
 
-Aby utworzyć powiadomienie o wydawaniu informacji:
+Aby utworzyć powiadomienie o wystawieniu:
 
-1. Na **kafelku Wydawanie** kliknij pozycję **Edytuj**.
+1. Na kafelku **Wystawianie** kliknij pozycję **Edytuj**.
 
-2. W razie potrzeby dodaj kolejnych członków sprawy lub pracowników do **pól DW** **i UDW** . Aby dodać wielu użytkowników do tych pól, oddziel adresy e-mail średnikami.
+2. W razie potrzeby dodaj dodatkowych członków lub pracowników spraw do pól **DW** i **Bcc** . Aby dodać wielu użytkowników do tych pól, oddziel adresy e-mail średnikami.
 
-3. Określ **temat** powiadomienia (wymagane).
+3. Określ **podmiot** powiadomienia (wymagane).
 
-4. Określ zawartość lub dodatkowe instrukcje, które chcesz udostępnić opiekunowi (wymagane). Zawartość portalu zdefiniowana w kroku 2 zostanie dodana do końca powiadomienia o wydaniu.
+4. Określ zawartość lub dodatkowe instrukcje, które chcesz przekazać opiekunowi (wymagane). Zawartość portalu zdefiniowana w kroku 2 jest dodawana na końcu powiadomienia o wystawieniu.
 
 5. Kliknij **Zapisz**.
 
-### <a name="re-issuance-notification"></a>Re-Issuance powiadomienia
+### <a name="re-issuance-notification"></a>powiadomienie Re-Issuance
 
-W związku z postępem tej sytuacji może być wymagane zachowanie dodatkowych lub mniejszej niezbędnej do tego danych, niż zostało to wcześniej instrukcje. Po zaktualizowaniu zawartości portalu zostanie wysłane powiadomienie o ponownej aktualizacji i alerty o wszelkich zmianach w ich zobowiązaniach do zachowania poufności.
+W miarę postępów sprawy opiekunowie mogą być zobowiązani do zachowania dodatkowych lub mniejszych danych, niż zostało to wcześniej poinstruowane. Po zaktualizowaniu zawartości portalu wysyłane jest powiadomienie o ponownym wydaniu i powiadamia opiekunów o wszelkich zmianach w ich obowiązkach zachowania.
 
-Aby utworzyć powiadomienie o ponownej rezygnacji:
+Aby utworzyć powiadomienie o ponownym wysłaniu:
 
-1. Na **kafelku Ponowne wyedytowanie** kliknij pozycję **Edytuj**.
+1. Na kafelku **Reissue** kliknij pozycję **Edytuj**.
 
-2. W razie potrzeby dodaj kolejnych członków sprawy lub pracowników do **pól DW** **i UDW** . Aby dodać wielu użytkowników do tych pól, oddziel adresy e-mail średnikami.
+2. W razie potrzeby dodaj dodatkowych członków lub pracowników spraw do pól **DW** i **Bcc** . Aby dodać wielu użytkowników do tych pól, oddziel adresy e-mail średnikami.
 
-3. Określ **temat** powiadomienia (wymagane).
+3. Określ **podmiot** powiadomienia (wymagane).
 
-4. Określ zawartość lub dodatkowe instrukcje, które chcesz udostępnić opiekunowi (wymagane). Zawartość portalu zdefiniowana w kroku 2 jest dodawana na końcu powiadomienia o ponownej rezygnacji.
+4. Określ zawartość lub dodatkowe instrukcje, które chcesz przekazać opiekunowi (wymagane). Zawartość portalu zdefiniowana w kroku 2 jest dodawana na końcu powiadomienia o ponownym uruchomieniu.
 
 5. Kliknij **Zapisz**.
 
 > [!NOTE]
-> W przypadku zmodyfikowania zawartości portalu (na  stronie Definiowanie zawartości portalu w  kreatorze edytowania komunikacji) powiadomienie o ponownej wydaniu zostanie automatycznie wysłane do wszystkich osób przechowywczych przypisanych do tego powiadomienia. Po wysłaniu powiadomienia poproszono opiekunów o ponowne potwierdzenie tych powiadomień. Jeśli zostały ustawione jakiekolwiek przepływy pracy z przypomnieniem lub eskalacją, zostaną one również ponownie uruchomić. Aby uzyskać więcej informacji o tym, jakie inne zdarzenia zarządzania sprawą powodują wyzwolenie komunikacji, zobacz [Zdarzenia wyzwalane przez powiadomienia](#events-that-trigger-notifications).
+> Jeśli zawartość portalu zostanie zmodyfikowana (na stronie **Definiowanie zawartości portalu** w kreatorze **komunikacji edycji** ), powiadomienie o ponownym wydaniu zostanie automatycznie wysłane do wszystkich opiekunów przypisanych do powiadomienia. Po wysłaniu powiadomienia opiekunowie zostaną poproszeni o ponowne potwierdzenie powiadomienia o wstrzymaniu. Jeśli skonfigurowano jakiekolwiek przepływy pracy przypomnienia lub eskalacji, zostaną one również ponownie uruchomione. Aby uzyskać więcej informacji na temat innych zdarzeń zarządzania przypadkami wyzwalających komunikację, zobacz [Zdarzenia wyzwalające powiadomienia](#events-that-trigger-notifications).
 
 ### <a name="release-notification"></a>Powiadomienie o wersji
 
-Po rozpoznaniu sprawy lub zachowaniu zawartości przez użytkownika, który nie zachowuje już zawartości, można go zwolnić ze sprawy. Jeśli dla włodarzy poprzednio opublikowano powiadomienie o wstrzymaniu, można użyć powiadomienia o wydaniu w celu alertów o zwolnieniu tych osób z zobowiązań.
+Po rozwiązaniu sprawy lub jeśli opiekun nie podlega już zachowaniu treści, możesz zwolnić opiekuna ze sprawy. Jeśli opiekun otrzymał wcześniej powiadomienie o wstrzymaniu, powiadomienie o zwolnieniu może służyć do powiadamiania opiekunów, że zostali zwolnieni ze swojego obowiązku.
 
 Aby utworzyć powiadomienie o wersji:
 
-1. Na **kafelku Wersja** kliknij pozycję **Edytuj**.
+1. Na kafelku **Wydanie** kliknij pozycję **Edytuj**.
 
-2. W razie potrzeby dodaj kolejnych członków sprawy lub pracowników do **pól DW** **i UDW** . Aby dodać wielu użytkowników do tych pól, oddziel adresy e-mail średnikami.
+2. W razie potrzeby dodaj dodatkowych członków lub pracowników spraw do pól **DW** i **Bcc** . Aby dodać wielu użytkowników do tych pól, oddziel adresy e-mail średnikami.
 
-3. Określ **temat** powiadomienia (wymagane).
+3. Określ **podmiot** powiadomienia (wymagane).
 
-4. Określ zawartość lub dodatkowe instrukcje, które chcesz udostępnić opiekunowi (wymagane).
+4. Określ zawartość lub dodatkowe instrukcje, które chcesz przekazać opiekunowi (wymagane).
 
-5. Kliknij **pozycję** Zapisz i przejdź do następnego kroku.
+5. Kliknij **przycisk Zapisz** i przejdź do następnego kroku.
 
 ## <a name="optional-step-4-set-the-optional-notifications"></a>(Opcjonalnie) Krok 4. Ustawianie opcjonalnych powiadomień
 
-Opcjonalnie możesz uprościć przepływ pracy, aby usprawnić pracę, tworząc i planując automatyczne powiadomienia o przypomnieniach i eskalacjich.
+Opcjonalnie możesz uprościć przepływ pracy, aby śledzić brak odpowiedzi opiekunów, tworząc i planując automatyczne powiadomienia o przypomnieniu i eskalacji.
 
-![Strona Przypomnienie/Eskalacja.](../media/ReminderEscalations.PNG)
+![Strona przypomnienie/eskalacja.](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>Przypomnienia
 
-Po wysłaniu powiadomienia o wstrzymaniu możesz utworzyć monit z mało odpowiedzialnymi użytkownikami, definiując przepływ pracy przypomnienia.
+Po wysłaniu powiadomienia o wstrzymaniu możesz śledzić brak odpowiedzi opiekunów, definiując przepływ pracy przypomnienia.
 
 Aby zaplanować przypomnienia:
 
-1. Na **kafelku Przypomnienie** kliknij pozycję **Edytuj**.
+1. Na kafelku **Przypomnienie** kliknij pozycję **Edytuj**.
 
-2. Włącz przepływ **pracy Przypomnienie** , włączając przełącznik **Stan** (wymagane).
+2. Włącz przepływ pracy **przypomnienia** , włączając przełącznik **Stan** (wymagane).
 
-3. Określ **interwał przypomnienia (w dniach)** (wymagany). Jest to liczba dni oczekiwania przed wysłaniem pierwszego powiadomienia z przypomnieniem i monitu. Jeśli na przykład ustawisz interwał przypomnienia na siedem dni, pierwsze przypomnienie zostanie wysłane siedem dni po początkowym wysłaniu powiadomienia o wstrzymaniu. Wszystkie kolejne przypomnienia będą również wysyłane co siedem dni.
+3. Określ **interwał przypomnienia (w dniach)** (wymagany). Jest to liczba dni oczekiwania przed wysłaniem pierwszego powiadomienia o przypomnieniu i monitowania. Jeśli na przykład ustawisz interwał przypomnienia na siedem dni, pierwsze przypomnienie zostanie wysłane siedem dni po początkowym wydaniu powiadomienia o blokadzie. Wszystkie kolejne przypomnienia będą również wysyłane co siedem dni.
 
-4. Określ **liczbę przypomnień** (wymagany). To pole określa liczbę przypomnień o wysłaniu do osób, które nie odpowiadają na przypomnienia. Jeśli na przykład ustawisz liczbę przypomnień na 3, wówczas osoby, które nie otrzymają przypomnień, otrzymają maksymalnie trzy przypomnienia. Po otrzymaniu przez użytkownika potwierdzenia o wstrzymaniu przypomnienia nie będą już wysyłane do tego użytkownika.
+4. Określ **liczbę przypomnień** (wymagane). To pole określa liczbę przypomnień wysyłanych do opiekunów, którzy nie odpowiadają. Jeśli na przykład ustawisz liczbę przypomnień na 3, opiekun otrzyma maksymalnie trzy przypomnienia. Gdy opiekun potwierdzi powiadomienie o blokadzie, przypomnienia nie będą już wysyłane do tego użytkownika.
 
-5. Określ **temat** powiadomienia (wymagane).
+5. Określ **podmiot** powiadomienia (wymagane).
 
-6. Określ zawartość lub dodatkowe instrukcje, które chcesz udostępnić opiekunowi (wymagane). Zawartość portalu zdefiniowana w kroku 2 zostanie dodana na końcu powiadomienia o przypomnieniu.
+6. Określ zawartość lub dodatkowe instrukcje, które chcesz przekazać opiekunowi (wymagane). Zawartość portalu zdefiniowana w kroku 2 jest dodawana na końcu powiadomienia o przypomnieniu.
 
-7. Kliknij **pozycję** Zapisz i przejdź do następnego kroku.
+7. Kliknij **przycisk Zapisz** i przejdź do następnego kroku.
 
 ### <a name="escalations"></a>Eskalacji
 
-W niektórych sytuacjach mogą być potrzebne dodatkowe sposoby śledzenia osób, które nie odpowiadają na nie. Jeśli po otrzymaniu określonej liczby przypomnień nasz opiekun nie potwierdzi powiadomienia o wstrzymaniu, zespół prawny może określić przepływ pracy w celu automatycznego wysłania powiadomienia o eskalacji do wywłaszącego użytkownika i jego kierownika.
+W niektórych sytuacjach może być konieczne dodatkowe sposoby, aby śledzić nie odpowiada opiekunów. Jeśli opiekun nie potwierdzi powiadomienia o wstrzymaniu po otrzymaniu określonej liczby przypomnień, zespół prawny może określić przepływ pracy, aby automatycznie wysłać powiadomienie o eskalacji do opiekuna i jego menedżera.
 
-Aby zaplanować eskalacji:
+Aby zaplanować eskalacje:
 
-1. Na **kafelku Eskalacji** kliknij pozycję **Edytuj**.
+1. Na kafelku **Eskalacja** kliknij pozycję **Edytuj**.
 
-2. Włącz przepływ **pracy Eskalacja** , włączając **przełącznik Stan** .
+2. Włącz przepływ pracy **eskalacji** , włączając przełącznik **Stan** .
 
-3. Określ interwał **eskalacji (w dniach)** (wymagany).
+3. Określ **interwał eskalacji (w dniach)** (wymagany).
 
-4. Określ liczbę **eskalacji** (wymagany). To pole określa liczbę eskalacji do wysłania do osób, które nie odpowiadają. Jeśli na przykład ustawisz liczbę eskalacji na 3, do kierownika i kierownika zostanie wysłane powiadomienie o eskalacji maksymalnie trzy razy. Gdy opiekun potwierdzi powiadomienie o wstrzymaniu, eskalacja nie będzie już wysyłana.
+4. Określ **liczbę eskalacji** (wymagane). To pole określa liczbę eskalacji do wysłania do opiekunów, którzy nie odpowiadają. Jeśli na przykład ustawisz liczbę eskalacji na 3, powiadomienie o eskalacji zostanie wysłane do opiekuna i jego menedżera maksymalnie trzy razy. Gdy opiekun potwierdzi powiadomienie o blokadzie, eskalacje nie będą już wysyłane.
 
-5. Określ **temat** powiadomienia (wymagane).
+5. Określ **podmiot** powiadomienia (wymagane).
 
-6. Określ zawartość lub dodatkowe instrukcje, które chcesz udostępnić opiekunowi (wymagane). Zawartość portalu zdefiniowana w kroku 2 jest dodawana na końcu powiadomienia o eskalacji.
+6. Określ zawartość lub dodatkowe instrukcje, które chcesz przekazać opiekunowi (wymagane). Zawartość portalu zdefiniowana w kroku 2 jest dodawana na końcu powiadomienia o eskalacji.
 
-7. Kliknij **pozycję** Zapisz i przejdź do następnego kroku.
+7. Kliknij **przycisk Zapisz** i przejdź do następnego kroku.
 
-## <a name="step-5-assign-custodians-to-receive-notifications"></a>Krok 5. Przypisywanie osób, które się odimówią, aby otrzymywać powiadomienia
+## <a name="step-5-assign-custodians-to-receive-notifications"></a>Krok 5. Przypisywanie opiekunów do otrzymywania powiadomień
 
-Po sfinalizowaniu zawartości powiadomień wybierz osób, do których chcesz wysłać powiadomienia.
+Po sfinalizowaniu zawartości powiadomień wybierz opiekunów, do których chcesz wysyłać powiadomienia.
 
-![Wybierz stronę Pojedyńcze.](../media/SelectCustodians.PNG)
+![Wybierz stronę Opiekunowie.](../media/SelectCustodians.PNG)
 
 Aby dodać opiekunów:
 
-1. Przypisz osoby do komunikacji, klikając pole wyboru obok ich nazwisk.
+1. Przypisz opiekunów do komunikacji, klikając pole wyboru obok ich nazwy.
 
-    Po utworzeniu komunikacji przepływ pracy powiadomień zostanie automatycznie zastosować do wybranych osób przechowywczych.
+    Po utworzeniu komunikacji przepływ pracy powiadomień zostanie automatycznie zastosowany do wybranych opiekunów.
 
-2. Kliknij **przycisk Dalej** , aby przejrzeć ustawienia i szczegóły komunikacji.
+2. Kliknij przycisk **Dalej** , aby przejrzeć ustawienia komunikacji i szczegóły.
 
 > [!NOTE]
-> Można dodawać tylko osoby zatrzymane, które zostały dodane do sprawy i nie zostały wysłane kolejnego powiadomienia w ramach sprawy.
+> Możesz dodać tylko opiekunów, którzy zostali dodani do sprawy i nie otrzymali kolejnego powiadomienia w tej sprawie.
 
 ## <a name="step-6-review-settings"></a>Krok 6. Przeglądanie ustawień
 
-Po przejrzeniu ustawień i kliknięciu przycisku **Wyślij** w celu zakończenia komunikacji system automatycznie uruchamia przepływ pracy do komunikacji, wysyłając powiadomienie o wydaniu.
+Po przejrzeniu ustawień i kliknięciu przycisku **Wyślij** , aby zakończyć komunikację, system automatycznie uruchomi przepływ pracy komunikacji, wysyłając powiadomienie o wystawieniu.
 
-## <a name="events-that-trigger-notifications"></a>Zdarzenia wyzwalane przez powiadomienia
+## <a name="events-that-trigger-notifications"></a>Zdarzenia wyzwalające powiadomienia
 
-W poniższej tabeli opisano zdarzenia w procesie zarządzania nimi, które powodują, że różne typy powiadomień są wysyłane do opiekunów.
+W poniższej tabeli opisano zdarzenia w procesie zarządzania przypadkami wyzwalane, gdy różne typy powiadomień są wysyłane do opiekunów.
 
 |Typ komunikacji|Wyzwalacz |
 |:---------|:---------|
-|Powiadomienia o wydawaniu decyzji|Początkowe utworzenie powiadomienia. Możesz także ręcznie ponownie wysłać powiadomienie o wstrzymaniu. |
-|Powiadomienia o ponownej rezygnacji|Aktualizowanie zawartości portalu na stronie **Definiowanie zawartości portalu** w **kreatorze edycji** komunikacji.|
-|Informacje o wersji|W przypadku tego przypadku tylko jego pojedyńczy projekt jest zwalniany ze sprawy.|
+|Powiadomienia o wystawianiach|Początkowe utworzenie powiadomienia. Możesz również ręcznie ponownie wyślić powiadomienie o blokadzie. |
+|Powiadomienia o ponownym wydawaniu|Aktualizowanie zawartości portalu na stronie **Definiowanie zawartości portalu** w kreatorze **edytuj komunikację** .|
+|Informacje o wersji|Opiekun zostaje zwolniony ze sprawy.|
 |Przypomnienia|Interwał i liczba przypomnień skonfigurowanych dla przypomnienia.|
 |Eskalacji|Interwał i liczba przypomnień skonfigurowanych dla eskalacji.|
 |||

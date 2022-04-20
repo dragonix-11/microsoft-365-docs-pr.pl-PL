@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 20ae5bd77b9a4a962093db1e3d92d8f765a9a9a3
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: fd043ae1ebabcb8162ed96b973c9392bae5fd2a1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664705"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944442"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Badanie alertów w Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "64664705"
 - Microsoft 365 Defender
 
 >[!Note]
->W tym artykule opisano alerty zabezpieczeń w Microsoft 365 Defender. Można jednak używać alertów aktywności do wysyłania powiadomień e-mail do siebie lub innych administratorów, gdy użytkownicy wykonują określone działania w Microsoft 365. Aby uzyskać więcej informacji, zobacz [Tworzenie alertów dotyczących działań — Microsoft 365 Compliance | Microsoft Docs](../../compliance/create-activity-alerts.md).
+>W tym artykule opisano alerty zabezpieczeń w Microsoft 365 Defender. Można jednak używać alertów aktywności do wysyłania powiadomień e-mail do siebie lub innych administratorów, gdy użytkownicy wykonują określone działania w Microsoft 365. Aby uzyskać więcej informacji, zobacz [Tworzenie alertów dotyczących działań — Microsoft Purview | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Alerty są podstawą wszystkich zdarzeń i wskazują wystąpienie złośliwych lub podejrzanych zdarzeń w środowisku. Alerty są zazwyczaj częścią szerszego ataku i dostarczają wskazówek dotyczących zdarzenia.
 

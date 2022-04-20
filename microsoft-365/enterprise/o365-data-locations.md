@@ -16,29 +16,29 @@ ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: Określanie miejsca przechowywania Microsoft 365 klientów na całym świecie
-ms.openlocfilehash: 17675917a737717c352125d23a32b432e681a77f
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Określanie miejsca przechowywania Microsoft 365 danych klientów na całym świecie
+ms.openlocfilehash: 76e1c0c4ed9a4a8b9c0971d58f26fd07d3d28ce9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634564"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947016"
 ---
-# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Miejsce przechowywania Microsoft 365 danych klienta
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Miejsce przechowywania danych klienta Microsoft 365
 
-W poniższych tabelach pokazano, gdzie dane klientów są przechowywane w miejscu dla Microsoft 365 usług we wszystkich globalnych lokalizacjach chmury firmy Microsoft. Rozwiń lokalizację swojego adresu rozliczeniowego kraju, aby dowiedzieć się, gdzie są przechowywane dane klienta dla poszczególnych usług.
+W poniższych tabelach pokazano, gdzie dane klientów są przechowywane w spoczynku dla usług Microsoft 365 we wszystkich globalnych lokalizacjach firmy Microsoft w chmurze. Rozwiń lokalizację kraju adresu rozliczeniowego, aby dowiedzieć się, gdzie będą przechowywane dane klientów dla każdej usługi.
 
-Jeśli Twoja firma znajduje się w Unii Europejskiej, zobacz Lokalizacje danych krajów Unii [Europejskiej](EU-data-storage-locations.md) , aby uzyskać więcej informacji. 
+Jeśli Twoja firma znajduje się w Unii Europejskiej, zobacz [Lokalizacje danych dla Unii Europejskiej](EU-data-storage-locations.md) , aby uzyskać więcej informacji. 
 
-Klienci powinni wyświetlać informacje o lokalizacji danych określonej dzierżawy na Centrum administracyjne platformy Microsoft 365 w **Ustawienia** >  **Org** <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**ustawieniaOrganizacja**</a> >  na karcie **ProfilOrganizacja** >  Lokalizacja danych. Jeśli [zażądano](request-your-data-move.md) przeniesienia do nowej lokalizacji geograficznej, informacje o lokalizacji danych w Centrum administracyjne platformy Microsoft 365 mogą pokazywać tylko nowe dane geolokalizacji, nawet jeśli podczas przejścia część danych może być tymczasowo przechowywana na poprzedniej lokalizacji geograficznej. 
+Klienci powinni wyświetlać informacje o lokalizacji danych specyficzne dla dzierżawy w Centrum administracyjne platformy Microsoft 365 w **obszarze ustawienia Ustawienia** >  **OrgUstawienia** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**profilu organizacji**</a> **tabUstawienia** >  danych. Jeśli [zażądano przeniesienia do nowego obszaru geograficznego](request-your-data-move.md), informacje o lokalizacji danych w Centrum administracyjne platformy Microsoft 365 mogą pokazywać tylko nowe dane geograficzne, nawet jeśli niektóre dane mogą być tymczasowo przechowywane w poprzednim obszarze geograficznym podczas przejścia. 
 
-Nowe Microsoft 365 dzierżawy są domyślnie oznaczane wartością Geo na podstawie kraju transakcji skojarzonego z pierwszą subskrypcją tej dzierżawy.
+Nowe dzierżawy Microsoft 365 są domyślnie geograficzne na podstawie kraju transakcji skojarzonej z pierwszą subskrypcją tej dzierżawy.
 
-Informacje o zobowiązaniach kontraktowych dotyczących lokalizacji przechowywania danych klientów można znaleźć w dodatku do ochrony danych produktów i usług firmy [Microsoft (DPA](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)).
+Informacje o zobowiązaniach umownych dotyczących lokalizacji przechowywania danych klientów magazynowanych znajdują się w [dodatku Microsoft Products and Services Data Protection (DPA).](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
 
-Aby Azure Active Directory danych, odwiedź stronę AAD [Mapa danych](https://go.microsoft.com/fwlink/p/?linkid=2092972).
+Aby uzyskać Azure Active Directory lokalizacji danych, odwiedź [stronę AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
-Jeśli adres rozliczeniowy klienta znajduje się poza Europą i klient ma subskrypcję usługi Office 365 Education, bez względu na sekcję "Lokalizacja danych klienta w rest for Core Online Services" ost, firma Microsoft może zapewniać obsługę dzierżawy usługi Office 365 klienta w, przenosić dane klienta do i przechowywać dane klienta w dowolnym miejscu w Europie lub Ameryka Północna.  Jeśli adres rozliczeniowy klienta znajduje się w Europie i klient ma subskrypcję usługi Office 365 Education, bez względu na sekcję "Lokalizacja danych klienta w rest for Core Online Services" ost, firma Microsoft może zapewniać obsługę dzierżawy usługi Office 365 klienta w, przenosić dane klienta do i przechowywać dane klienta w dowolnym miejscu w Unii Europejskiej.
+Jeśli adres rozliczeniowy Klienta znajduje się poza Europą, a Klient ma subskrypcję Office 365 Education, niezależnie od sekcji "Lokalizacja danych klienta w spoczynku dla podstawowych usług online" OST, firma Microsoft może aprowizować dzierżawę Office 365 Klienta, przesyłać dane klienta do i przechowywać dane klienta w spoczynku w dowolnym miejscu w Europie lub Ameryka Północna.  Jeśli adres rozliczeniowy Klienta znajduje się w Europie, a Klient ma subskrypcję Office 365 Education, niezależnie od sekcji "Lokalizacja danych klienta w spoczynku dla podstawowych usług online" OST, firma Microsoft może aprowizować dzierżawę Office 365 Klienta, przesyłać dane klienta do i przechowywać dane klienta w spoczynku w dowolnym miejscu w Unii Europejskiej.
 
 
 
@@ -47,145 +47,145 @@ Jeśli adres rozliczeniowy klienta znajduje się poza Europą i klient ma subskr
 
 ### <a name="how-does-microsoft-define-data"></a>Jak firma Microsoft definiuje dane?
 
-Zapoznaj się [z definicjami różnych typów danych w](https://go.microsoft.com/fwlink/p/?linkid=864390) Centrum zaufania firmy Microsoft. Zgodnie z [postanowieniami dotyczącymi & prywatności](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) firma Microsoft składa zobowiązania kontraktowe dotyczące danych klienta/Danych użytkownika. Jako podstawowe dane klienta używamy danych klientów, które powinny być przechowywane w miejscu wyłącznie w obrębie regionu użytkownika zgodnie z zasadami zachowania [poufności & dotyczącymi zabezpieczeń](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
+Przejrzyj nasze [definicje dla różnych typów danych](https://go.microsoft.com/fwlink/p/?linkid=864390) w Centrum zaufania firmy Microsoft. W [postanowieniach dotyczących ochrony prywatności & zabezpieczeń](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) firma Microsoft zobowiązuje się do realizacji zobowiązań umownych dotyczących danych klientów/twoich danych. Dane podstawowych klientów nazywamy danymi klienta, które są zobowiązane do przechowywania tylko w Twoim regionie zgodnie z [warunkami dotyczącymi ochrony prywatności & zabezpieczeń](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
-### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>Gdzie znajdują się dokładne adresy centrów danych?
+### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>Gdzie są dokładne adresy centrów danych?
 
-Firma Microsoft nie ujawnia dokładnych adresów swoich centrów danych. Ustaliliśmy te zasady, aby ułatwić zabezpieczanie obiektów centrów danych.  Jednak robisz listę lokalizacji miasta. Aby dowiedzieć [się więcej, zobacz Lokalizacje](o365-data-locations.md#data-center-locations) centrum danych.
+Firma Microsoft nie ujawnia dokładnych adresów swoich centrów danych. Te zasady zostały ustanowione w celu zabezpieczenia obiektów centrum danych.  Jednak robimy listę lokalizacji miasta. Aby dowiedzieć się więcej [, zobacz Lokalizacje centrum danych](o365-data-locations.md#data-center-locations) .
 
-### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>Czy lokalizacja danych klienta ma bezpośredni wpływ na środowisko użytkownika końcowego?
+### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>Czy lokalizacja danych klienta ma bezpośredni wpływ na środowisko użytkowników końcowych?
 
-Wydajność usługi Microsoft 365 jest proporcjonalna do odległości użytkownika do lokalizacji centrum danych. Stale inwestycje firmy Microsoft w swoją globalną sieć chmury, globalną infrastrukturę chmury oraz architekturę usług Microsoft 365 zapewniają użytkownikom pojedynczej, spójne środowisko niezależnie od miejsca przechowywania danych klientów w spoczynku. Jeśli u użytkowników występują problemy z wydajnością, należy je szczegółowo rozwiązać. Firma Microsoft opublikowała wskazówki dla Microsoft 365 w zakresie planowania i optymalizowania wydajności użytkowników końcowych w witrynie internetowej Office [pomocy technicznej firmy Microsoft](./network-planning-and-performance.md).
+Wydajność Microsoft 365 nie jest po prostu proporcjonalna do odległości użytkownika do lokalizacji centrum danych. Ciągłe inwestycje firmy Microsoft w globalną sieć w chmurze, globalną infrastrukturę chmury i architekturę usług Microsoft 365 pomagają zapewnić użytkownikom pojedyncze, spójne środowisko niezależnie od tego, gdzie dane klientów są przechowywane w spoczynku. Jeśli użytkownicy mają problemy z wydajnością, należy je szczegółowo rozwiązać. Firma Microsoft opublikowała wskazówki dla klientów Microsoft 365 dotyczące planowania i optymalizowania wydajności użytkowników końcowych w [witrynie internetowej pomocy technicznej Office](./network-planning-and-performance.md).
 
-### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Jak firma Microsoft pomaga mi przestrzegać przepisów krajowych, regionalnych i branżowych?
+### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>W jaki sposób firma Microsoft pomaga mi przestrzegać przepisów krajowych, regionalnych i branżowych?
 
-W celu zapewnienia zgodności z wymaganiami lokalnymi, regionalnymi i branżowymi dotyczącymi gromadzenia i używania danych poszczególnych osób usługa Microsoft 365 oferuje najbardziej kompleksowy zestaw ofert zgodności ze standardami każdego globalnego dostawcy zwiększającego produktywność w chmurze. Zapoznaj się [z naszymi ofertami zgodności](/compliance/regulatory/offering-home) i bardziej szczegółami [w Microsoft 365 zgodności](https://go.microsoft.com/fwlink/p/?linkid=862317) firmy Microsoft w Centrum zaufania firmy Microsoft. Ponadto niektóre plany Microsoft 365 oferują dodatkowe rozwiązania dotyczące zgodności, które ułatwiają zarządzanie danymi, są zgodne z wymaganiami prawnymi i prawnymi oraz monitorują działania podejmowane w związku z danymi.
+Aby pomóc Ci spełnić krajowe, regionalne i branżowe wymagania dotyczące zbierania i używania danych osób fizycznych, Microsoft 365 oferuje najbardziej kompleksowy zestaw ofert zgodności dowolnego globalnego dostawcy produktywności w chmurze. Przejrzyj [nasze oferty zgodności](/compliance/regulatory/offering-home) i więcej szczegółów w sekcji [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) w Centrum zaufania firmy Microsoft. Ponadto niektóre plany Microsoft 365 oferują dalsze rozwiązania do zapewniania zgodności, które ułatwiają zarządzanie danymi, zgodność z wymaganiami prawnymi i prawnymi oraz monitorowanie działań podejmowanych na danych.
 
-### <a name="who-can-access-your-data-and-according-to-what-rules"></a>KtoTo dostęp do danych i zgodnie z jakimi regułami?
+### <a name="who-can-access-your-data-and-according-to-what-rules"></a>KtoTo mogą uzyskiwać dostęp do danych i zgodnie z jakimi regułami?
 
- Firma Microsoft wdraża silne środki, aby chronić Twoje dane klientów przed niestosownym dostępem i użyciem przez osoby nieautoryzowane. Obejmuje to ograniczenie dostępu pracowników i podwykonawców firmy Microsoft oraz dokładne zdefiniowanie wymagań dotyczących odpowiadania na żądania rządowe dotyczące danych klientów. Jednak w dowolnym momencie i z dowolnego powodu możesz uzyskać dostęp do danych swoich klientów. Więcej szczegółowych informacji można znaleźć w [Centrum zaufania firmy Microsoft](https://go.microsoft.com/fwlink/p/?linkid=864392).
+ Firma Microsoft wdraża silne środki, aby chronić dane klientów przed niewłaściwym dostępem lub użyciem przez osoby nieupoważnione. Obejmuje to ograniczenie dostępu pracowników i podwykonawców firmy Microsoft oraz dokładne zdefiniowanie wymagań dotyczących odpowiadania na żądania instytucji rządowych dotyczące danych klientów. Możesz jednak uzyskać dostęp do własnych danych klienta w dowolnym momencie i z dowolnego powodu. Więcej szczegółów można znaleźć w [Centrum zaufania firmy Microsoft](https://go.microsoft.com/fwlink/p/?linkid=864392).
 
 ### <a name="does-microsoft-access-your-data"></a>Czy firma Microsoft uzyskuje dostęp do Twoich danych?
 
-Firma Microsoft automatyzuje większość Microsoft 365, celowo ograniczając dostęp do danych klientów. Pomaga to nam w zarządzaniu Microsoft 365 danymi oraz w zarządzaniu zagrożeniami wewnętrznymi dla danych klientów. Domyślnie inżynierowie firmy Microsoft nie mają żadnych uprawnień administracyjnych ani dostępu do danych klientów w Microsoft 365. Inżynier firmy Microsoft może mieć ograniczony i zarejestrowany dostęp do danych klienta przez ograniczony czas, ale tylko w sytuacji, gdy jest to konieczne w przypadku normalnego działania usługi i tylko po zatwierdzeniu przez członka kierownictwa wyższego szczebla w firmie Microsoft (oraz dla klientów licencjonowanych na potrzeby funkcji Skrytka klienta przez klienta).
+Firma Microsoft automatyzuje większość operacji Microsoft 365, celowo ograniczając własny dostęp do danych klientów. Pomaga to nam zarządzać Microsoft 365 na dużą skalę i rozwiązywać ryzyko wewnętrznych zagrożeń dla danych klientów. Domyślnie inżynierowie firmy Microsoft nie mają stałych uprawnień administracyjnych ani stałego dostępu do danych klientów w Microsoft 365. Inżynier firmy Microsoft może mieć ograniczony i zarejestrowany dostęp do danych klientów przez ograniczony czas, ale tylko wtedy, gdy jest to konieczne dla normalnych operacji serwisowych i tylko wtedy, gdy zostanie zatwierdzony przez członka kadry kierowniczej wyższego szczebla w firmie Microsoft (oraz dla klientów, którzy mają licencję na funkcję skrytki klienta, przez klienta).
 
-### <a name="how-does-microsoft-secure-your-data"></a>Jak firma Microsoft zabezpiecza Twoje dane?
+### <a name="how-does-microsoft-secure-your-data"></a>W jaki sposób firma Microsoft zabezpiecza Twoje dane?
 
-Firma Microsoft ma wbudowane w aplikacje zaawansowane zasady, kontrolki i systemy Microsoft 365, aby zapewnić bezpieczeństwo Twoich informacji. Aby dowiedzieć [się Microsoft 365,](https://go.microsoft.com/fwlink/p/?linkid=864393) zapoznaj się z sekcją zabezpieczeń firmy Microsoft w Centrum zaufania firmy Microsoft.
+Firma Microsoft ma niezawodne zasady, mechanizmy kontroli i systemy wbudowane w Microsoft 365, aby zapewnić bezpieczeństwo informacji. Przejrzyj [sekcję zabezpieczeń Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) w Centrum zaufania firmy Microsoft, aby dowiedzieć się więcej.
 
-### <a name="does-microsoft-365-encrypt-your-data"></a>Czy Microsoft 365 danych?
+### <a name="does-microsoft-365-encrypt-your-data"></a>Czy Microsoft 365 szyfrować dane?
 
-Microsoft 365 korzysta z technologii po stronie usługi, które szyfrują dane klienta w czasie spoczynku i podczas przesyłania. W przypadku danych klientów w spoczynku Microsoft 365 szyfrowanie na poziomie woluminu i pliku. W przypadku danych klienta podczas przesyłania program Microsoft 365 używa wielu technologii szyfrowania do komunikacji między centrami danych i między klientami i serwerami, takich jak TLS (Transport Layer Security) i Internet Protocol Security (IPsec). Microsoft 365 również funkcje szyfrowania zarządzane przez klienta.
+Microsoft 365 korzysta z technologii po stronie usługi, które szyfrują dane klientów magazynowanych i przesyłanych. W przypadku danych klientów magazynowanych Microsoft 365 używa szyfrowania na poziomie woluminu i pliku. W przypadku danych klientów przesyłanych Microsoft 365 używa wielu technologii szyfrowania do komunikacji między centrami danych oraz między klientami i serwerami, takimi jak Transport Layer Security (TLS) i Internet Protocol Security (IPsec). Microsoft 365 obejmuje również funkcje szyfrowania zarządzane przez klienta.
 
-### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Gdzie mogę znaleźć informacje o miejscu przechowywania danych Microsoft Azure?
+### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Gdzie mogę znaleźć informacje o rezydencji danych dla Microsoft Azure?
 
-Przejrzyj stronę [Produkty dostępne według regionu](https://go.microsoft.com/fwlink/p/?linkid=2093451), aby znaleźć dane dotyczące przechowywania danych na Microsoft Azure.
+Przejrzyj stronę [Produkty dostępne według regionów](https://go.microsoft.com/fwlink/p/?linkid=2093451), aby znaleźć informacje o rezydencji danych dla Microsoft Azure.
 
-### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Co to są funkcje multi-geo capabilities w Microsoft 365?
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Co to są możliwości wielu obszarów geograficznych w Microsoft 365?
 
-[Usługa Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) umożliwia klientom przydzielanie podstawowych danych klientów w spoczynku do naszych dostępnych lokalizacji w Microsoft 365 chmurze.   
+[Funkcja Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) umożliwia klientom przydzielanie podstawowych danych klientów magazynowanych do naszych dostępnych lokalizacji w chmurze Microsoft 365.   
 
-### <a name="what-services-support-multi-geo"></a>Które usługi obsługują wiele lokalizacji geograficznych?
+### <a name="what-services-support-multi-geo"></a>Jakie usługi obsługują funkcję Multi-Geo?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive dla Firm, SharePoint Online, and Teams.
+[Funkcja Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) jest dostępna dla Exchange Online, OneDrive dla Firm, SharePoint Online i Teams.
 
-### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>Dlaczego widzę moje żądania Microsoft 365 dotyczące moich danych w miejscu łączenia się z serwerami w krajach poza moim regionem?
+### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>Dlaczego moje Microsoft 365 żądania obsługi danych magazynowanych łączą się z serwerami w krajach spoza mojego regionu?
 
-Żądanie klienta może być obsługiwane przez serwery w innym regionie niż lokalizacja, w której dane są przechowywane w miejscu. Może się tak zdarzyć, gdy decyzje dotyczące routingu sieciowego wybierają inny serwer na przetwarzanie żądania, ale w takich przypadkach dane nie są przenoszone do nowej lokalizacji spoczynku.
+Czasami żądanie klienta może być obsługiwane przez serwery w innym regionie niż lokalizacja, w której dane są przechowywane. Może się tak zdarzyć, gdy decyzje dotyczące routingu sieciowego wybierają inny serwer do przetwarzania żądania, ale w takich przypadkach dane nie są przenoszone do nowej lokalizacji w spoczynku.
 
-### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Jakie są wyjątki dla Intune danych?
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Jakie są wyjątki dla Intune lokalizacji danych?
 
-Firma Microsoft nie będzie przechowywać Intune danych klientów poza wskazaną lokalizacją geograficzną. chyba że:
+Firma Microsoft nie będzie przechowywać Intune danych klientów w spoczynku poza określonym obszarem geograficznym. chyba że:
 
-- Firma Microsoft musi świadczyć pomoc techniczną, rozwiązywać problemy z usługą lub przestrzegać wymogów prawnych.
-- Klient konfiguruje konto w celu umożliwienia takiego przechowywania danych klienta, na przykład dzięki użyciu następujących funkcji:
+- Firma Microsoft musi zapewnić pomoc techniczną, rozwiązać problemy z usługą lub spełnić wymagania prawne.
+- Klient konfiguruje konto, aby umożliwić takie przechowywanie danych klientów, w tym za pomocą następujących elementów:
 
-  - Funkcje zaprojektowane pod kątem działania globalnego, takie jak Content Delivery Network (CDN), które zapewniają globalną usługę buforowania danych i przechowuje dane klientów w lokalizacjach na całym świecie.
+  - Funkcje, które są przeznaczone do globalnego działania, takie jak Content Delivery Network (CDN), która zapewnia globalną usługę buforowania i przechowuje dane klientów w lokalizacjach brzegowych na całym świecie.
 
-  - Azure Active Directory (Azure AD), która może globalnie przechowywać dane katalogowe. Nie dotyczy wdrożeń usługi Azure AD w programie Stany Zjednoczone (gdzie dane usługi Azure AD są przechowywane wyłącznie w programie Stany Zjednoczone) ani w Europie (gdzie dane usługi Azure AD są przechowywane w Europie lub w Stany Zjednoczone).
+  - Azure Active Directory (Azure AD), które mogą przechowywać dane katalogów globalnie. Nie dotyczy to wdrożeń usługi Azure AD w Stany Zjednoczone (gdzie dane usługi Azure AD są przechowywane wyłącznie w Stany Zjednoczone) lub w Europie (gdzie dane usługi Azure AD są przechowywane w Europie lub Stany Zjednoczone).
    
-  - W wersji Preview, beta lub innych usługach przedpremierowych, które zwykle przechowują dane klientów w p Stany Zjednoczone ale mogą one być przechowywane globalnie.
+  - Wersja zapoznawcza, wersja beta lub inne usługi wstępne, które zwykle przechowują dane klientów w Stany Zjednoczone, ale mogą przechowywać dane globalnie.
 
-Niezależnie od tego firma Microsoft nie kontroluje ani nie ogranicza danych geograficznych, z których klienci lub ich użytkownicy końcowi mogą uzyskać dostęp do danych klientów. Podobnie, gdy dane klienta w innych usługach zostaną następnie zintegrowane z usługą Intune, dane tego klienta będą nadal przechowywane zgodnie z zobowiązaniami geolokalizacji innych usług (jeśli są dostępne). W określonych danych geograficznych dla usługi Intune będzie przechowywana tylko kopia danych klienta zintegrowanych z usługą Intune.  
+Niezależnie od tego firma Microsoft nie kontroluje ani nie ogranicza obszaru geograficznego, z którego klienci lub ich użytkownicy końcowi mogą uzyskiwać dostęp do danych klientów. Podobnie w przypadku, gdy dane klientów w innych usługach zostaną następnie zintegrowane z Intune, pochodzące dane klienta będą nadal przechowywane z zastrzeżeniem własnych zobowiązań geo innych usług (jeśli istnieją); tylko kopia danych klienta zintegrowanych z Intune będzie przechowywana w określonym obszarze geograficznym dla Intune.  
 
-### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>Jakie są zagadnienia związane z Microsoft Viva danych?
+### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>Jakie są zagadnienia dotyczące Microsoft Viva lokalizacji danych?
 
 - Zasoby Viva
 
-  - Dane pulpitu nawigacyjnego, zasobów i aplikacji klasycznej są przechowywane w SharePoint Online. 
+  - Dane pulpitu nawigacyjnego, zasobów i aplikacji klasycznej są przechowywane w usłudze SharePoint Online. 
   
-  - Kanał informacyjny zawiera zawartość z witryny SharePoint Online (Wiadomości), Strumień (przechowywana w miejscu w SharePoint Online) i Yammer (przechowywana w miejscu w Yammer).  
+  - Kanał informacyjny zawiera zawartość z usługi SharePoint Online (wiadomości), usługi Stream (przechowywanej w usłudze SharePoint Online) i Yammer (przechowywanej w Yammer).  
   
 - Szczegółowe informacje Viva
 
-  - Miejsce przechowywania danych dla aplikacji Osobiste jest oparte na lokalizacji skrzynki pocztowej użytkownika.
+  - Miejsce przechowywania danych dla aplikacji Osobista jest oparte na lokalizacji skrzynki pocztowej użytkownika.
   
-  - Region danych dla menedżerów, kierowników i zaawansowanych jest ustalany na podstawie podstawowego regionu dzierżawy, a nie przez poszczególnych użytkowników.
+  - Region danych programu Manager/Leader i Advanced jest określany przez region podstawowy dzierżawy, a nie poszczególnych użytkowników.
 
 ## <a name="data-center-locations"></a>Lokalizacje centrum danych
 
-W poniższej tabeli określono lokalizację danych dla różnych usług. Podczas określania lokalizacji usług należy zapoznać się z tymi tabelami.
+Poniższa tabela definiuje lokalizację danych dla różnych usług. Podczas określania lokalizacji usług zapoznaj się z tymi tabelami.
 
-### <a name="data-center-geographies"></a>Geogramy centrum danych
+### <a name="data-center-geographies"></a>Lokalizacje geograficzne centrum danych
 
-Następujące globalne lokalizacje geograficzne mogą przechowywać dane w spoczynku. Lokalizacje, w których mogą być przechowywane dane klientów, mogą się zmienić. 
+Następujące globalne lokalizacje geograficzne mogą przechowywać dane magazynowane. Lokalizacje, w których mogą być przechowywane dane klienta, mogą ulec zmianie. 
 
-| Global Geographies | Lokalizacje, w których mogą być przechowywane dane klienta |
+| Globalne lokalizacje geograficzne | Lokalizacje, w których mogą być przechowywane dane klienta |
 | --- | --- |
-| Global Geography 1–EMEA (Europa, Bliski Wschód i Afryka) | Austria, Finlandia, Francja, Irlandia, Holandia, Szwecja |
-| Global Geography 2 — Azja pacyfik | Hongkong, Japonia, Malezja, Singapur, Korea Południowa |
-| Global Geography 3 — Ameryka Północna | Brazylia, Chile, Stany Zjednoczone |
+| Geografia globalna 1 – EMEA (Europa, Bliski Wschód i Afryka) | Austria, Finlandia, Francja, Irlandia, Holandia, Szwecja |
+| Geografia globalna 2 – Azja i Pacyfik | Hongkong, Japonia, Malezja, Singapur, Korea Południowa |
+| Geografia globalna 3 — Ameryka | Brazylia, Chile, Stany Zjednoczone |
 
-## <a name="countryregion-specific-data-center-city-locations"></a>Lokalizacje miasta w centrum danych specyficzne dla kraju/regionu
+## <a name="countryregion-specific-data-center-city-locations"></a>Lokalizacje miast centrum danych specyficzne dla kraju/regionu
 
-W przypadku centrów danych specyficznych dla kraju/regionu w poniższej części zdefiniowano miasta, w których dane klientów są przechowywane w miejscu.
+W przypadku centrów danych specyficznych dla kraju/regionu poniżej zdefiniowano miasta, w których dane klientów są przechowywane.
 
-| Kraj | Miasto |
+| Kraju | Miasto |
 | --- | --- |
 | Australia | Sydney, Melbourne |
 | Brazylia | Rio, Campinas |
 | Kanada | Quebec City, Toronto |
-| Unia Europejska | Austria (Austria), Finlandia (Helsinki), Francja (Paryż, Marseille), Irlandia (Dublin), Holandia (Amsterdam), Szwecja (Gävle, Sandliaen, Staffanstorp) |
-| Francja | Paryż, Marseille |
-| Niemcy | Do tej 2020 roku, Berlin |
-| Indie | Chennai, Mumbai, Pune |
+| Unia Europejska | Austria (Wiedeń), Finlandia (Helsinki), Francja (Paryż, Marsylia), Irlandia (Dublin), Holandia (Amsterdam), Szwecja (Gävle, Sandviken, Staffanstorp) |
+| Francja | Paryż, Marsylia |
+| Niemcy | Frankfurt, Berlin |
+| Indie | Chennai, Bombaj, Pune |
 | Japonia | Osaka, Tokio |
-| Korea Południowa | Busan, Seoul |
+| Korea Południowa | Busan, Seul |
 | Norwegia | Oslo, Stavanger |
-| Republika Południowej Afryki | Cape Town, Johannesburg |
-| Szwecja | Gävle, Sanddoren, Staffanstorp |
-| Szwajcaria | Nasyć, Ząbk |
-| Zjednoczone Emiraty Arabskie | Dubai, Abu Zabi |
+| Republika Południowej Afryki | Kapsztad, Johannesburg |
+| Szwecja | Gävle, Sandviken, Staffanstorp |
+| Szwajcaria | Genewa, Zurych |
+| Zjednoczone Emiraty Arabskie | Dubaj, Abu Dhabi |
 | Zjednoczone Królestwo | Durham, Londyn, Cardiff |
-| Stany Zjednoczone |  Boydton, Cheyenne, Chicago, Des Moines, Ndercy, San Antonio, Santa Clara, San Dona |
+| Stany Zjednoczone |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose |
 
-Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kraju adresu rozliczeniowego skojarzonego z pierwszą subskrypcją tej dzierżawy. Aby potwierdzić, gdzie są przechowywane dane Office 365 istniejących usług, zapoznaj się z informacjami o lokalizacji danych dzierżawcy w Centrum Office 365 Admin w Ustawienia | Ustawienia organizacji | Profil organizacji | Karta lokalizacji danych. Możesz również rozwinąć kraj, w którym znajduje się Twoja firma, z poniższej listy, aby dowiedzieć się, gdzie będą przechowywane dane klientów, jeśli chcesz już dziś zacząć korzystać z usługi Microsoft 365 Service.
+Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na podstawie kraju adresu rozliczeniowego skojarzonego z pierwszą subskrypcją tej dzierżawy. Aby potwierdzić, gdzie są przechowywane dane klientów dla istniejących usług Office 365, wyświetl informacje o lokalizacji danych dla dzierżawy w Centrum Office 365 Admin w Ustawienia | Ustawienia organizacji | | profilu organizacji Karta lokalizacja danych. Możesz też rozszerzyć kraj, w którym znajduje się Twoja firma, z poniższej listy, aby dowiedzieć się, gdzie będą przechowywane dane klientów, jeśli chcesz zacząć korzystać z usługi Microsoft 365.
 
 ## <a name="afghanistan"></a>Afganistan
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -194,26 +194,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -222,26 +222,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -250,26 +250,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -278,26 +278,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -306,26 +306,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -334,26 +334,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -366,7 +366,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -374,14 +374,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -394,7 +394,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -402,14 +402,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -422,7 +422,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -430,14 +430,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -446,26 +446,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -474,26 +474,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -506,7 +506,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -514,14 +514,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -534,7 +534,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Australia |
 | SharePoint Online | Australia |
 | Microsoft Teams | Australia |
-| Office Online &amp; Urządzenia przenośne | Australia |
+| Office Online &amp; Mobile | Australia |
 | EOP | Australia |
 | Intune | Australia |
 | Planner | Australia |
@@ -542,14 +542,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Australia |
 | Stream | Australia |
-| Tablica | Australia |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Australia |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Australia |
 | Tematy Viva | Australia |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Australia |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Australia |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -562,7 +562,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -570,14 +570,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -586,26 +586,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -618,7 +618,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -626,14 +626,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -642,26 +642,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -670,26 +670,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -702,7 +702,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -710,14 +710,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -727,26 +727,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -759,7 +759,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -767,14 +767,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -787,7 +787,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -795,14 +795,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -811,26 +811,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -843,7 +843,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -851,14 +851,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -867,26 +867,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -895,26 +895,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -923,26 +923,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -951,26 +951,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -979,26 +979,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1011,7 +1011,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -1019,14 +1019,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1039,7 +1039,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Brazylia |
 | SharePoint Online | Brazylia |
 | Microsoft Teams | Brazylia |
-| Office Online &amp; Urządzenia przenośne | Brazylia |
+| Office Online &amp; Mobile | Brazylia |
 | EOP | Brazylia |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -1047,14 +1047,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Brazylia |
 | Stream | Brazylia |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Brazylia |
 | Tematy Viva | Brazylia |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Brazylia |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Brazylia |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1063,26 +1063,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1095,7 +1095,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -1103,14 +1103,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1119,26 +1119,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1151,7 +1151,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -1159,14 +1159,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1175,26 +1175,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1203,26 +1203,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1231,26 +1231,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1259,26 +1259,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1291,7 +1291,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Kanada |
 | SharePoint Online | Kanada |
 | Microsoft Teams | Kanada |
-| Office Online &amp; Urządzenia przenośne | Kanada |
+| Office Online &amp; Mobile | Kanada |
 | EOP | Kanada |
 | Intune | Stany Zjednoczone |
 | Planner | Kanada |
@@ -1299,14 +1299,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Kanada |
 | Stream | Kanada |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Kanada |
 | Tematy Viva | Kanada |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Kanada |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Kanada |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1315,26 +1315,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1347,7 +1347,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -1355,14 +1355,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1371,26 +1371,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1399,26 +1399,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1427,26 +1427,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1455,26 +1455,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1483,26 +1483,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1511,26 +1511,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1543,7 +1543,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -1551,14 +1551,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1567,84 +1567,84 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
-## <a name="congo-brazzaville"></a>Konga (Brazzaville)
+## <a name="congo-brazzaville"></a>Kongo (Brazzaville)
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
-## <a name="congo-kinshasa"></a>Konga (Kinszasa)
+## <a name="congo-kinshasa"></a>Kongo, (Kinszasa)
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1654,26 +1654,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1686,7 +1686,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -1694,42 +1694,42 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="cote-divoire"></a>Cote D'Ivoire
+## <a name="cote-divoire"></a>Wybrzeże Kości Słoniowej
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1742,7 +1742,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -1750,14 +1750,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1766,26 +1766,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1798,7 +1798,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -1806,14 +1806,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1826,7 +1826,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -1834,14 +1834,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1854,7 +1854,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -1862,14 +1862,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1878,26 +1878,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1910,7 +1910,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -1918,14 +1918,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1938,7 +1938,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -1946,14 +1946,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1962,26 +1962,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -1990,26 +1990,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2022,7 +2022,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -2030,14 +2030,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2046,26 +2046,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2074,26 +2074,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2106,7 +2106,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -2114,14 +2114,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2130,26 +2130,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2158,26 +2158,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2186,54 +2186,54 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="federated-states-of-micronesia"></a>Federowane Stany Mikronezja
+## <a name="federated-states-of-micronesia"></a>Federacyjne stany mikronezji
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2246,7 +2246,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Australia |
 | SharePoint Online | Australia |
 | Microsoft Teams | Australia |
-| Office Online &amp; Urządzenia przenośne | Australia |
+| Office Online &amp; Mobile | Australia |
 | EOP | Australia |
 | Intune | Australia |
 | Planner | Australia |
@@ -2254,14 +2254,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Australia |
 | Stream | Australia |
-| Tablica | Australia |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Australia |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Australia |
 | Tematy Viva | Australia |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Australia |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Australia |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2274,7 +2274,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -2282,14 +2282,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2302,7 +2302,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Francja |
 | SharePoint Online | Francja |
 | Microsoft Teams | Francja |
-| Office Online &amp; Urządzenia przenośne | Francja |
+| Office Online &amp; Mobile | Francja |
 | EOP | Francja |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -2310,14 +2310,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska |
 | Usługi programu OneNote | Francja |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Francja |
 | Tematy Viva | Francja |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Francja |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Francja |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2326,26 +2326,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2354,30 +2354,30 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="french-southern-territories"></a>Francuskie Terytoria Południowe
+## <a name="french-southern-territories"></a>Francuskie terytoria południowe
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -2386,7 +2386,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -2394,14 +2394,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2410,26 +2410,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2438,26 +2438,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2466,26 +2466,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2498,7 +2498,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Niemcy |
 | SharePoint Online | Niemcy |
 | Microsoft Teams | Niemcy |
-| Office Online &amp; Urządzenia przenośne | Niemcy |
+| Office Online &amp; Mobile | Niemcy |
 | EOP | Niemcy |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -2506,14 +2506,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska |
 | Usługi programu OneNote | Niemcy |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Niemcy |
 | Tematy Viva | Niemcy |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Niemcy |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Niemcy |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2522,26 +2522,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2550,26 +2550,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2582,7 +2582,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -2590,14 +2590,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2611,7 +2611,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -2619,14 +2619,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2639,7 +2639,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -2647,14 +2647,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2667,7 +2667,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -2675,14 +2675,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2691,26 +2691,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2723,7 +2723,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -2731,14 +2731,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2747,26 +2747,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2775,26 +2775,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2803,26 +2803,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2831,26 +2831,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2863,7 +2863,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -2871,18 +2871,18 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="heard-and-mcdonald-islands"></a>Wyspy Heard i McDonalda
+## <a name="heard-and-mcdonald-islands"></a>Wyspy Heard i McDonald
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -2891,7 +2891,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -2899,14 +2899,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2915,54 +2915,54 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="holy-see-vatican-city-state"></a>Stolica Watykańska
+## <a name="holy-see-vatican-city-state"></a>Stolica Apostolska (Watykan)
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2975,7 +2975,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -2983,14 +2983,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -2999,26 +2999,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3031,7 +3031,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -3039,14 +3039,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3055,26 +3055,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3088,22 +3088,22 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Indie |
 | SharePoint Online | Indie |
 | Microsoft Teams | Indie |
-| Office Online &amp; Urządzenia przenośne | Indie |
+| Office Online &amp; Mobile | Indie |
 | EOP | Indie |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Indie |
 | Stream | Indie |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Indie |
 | Tematy Viva | Indie |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Indie |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Indie |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3112,26 +3112,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3140,26 +3140,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3172,7 +3172,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -3180,14 +3180,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3196,26 +3196,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3224,26 +3224,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3256,7 +3256,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -3264,14 +3264,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3284,7 +3284,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -3292,14 +3292,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3312,22 +3312,22 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Japonia |
 | SharePoint Online | Japonia |
 | Microsoft Teams | Japonia |
-| Office Online &amp; Urządzenia przenośne | Japonia |
+| Office Online &amp; Mobile | Japonia |
 | EOP | Japonia |
-| Intune | Global Geography 2 — Azja pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
 | Planner | Japonia |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Japonia |
 | Stream | Japonia |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Japonia |
 | Tematy Viva | Japonia |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Japonia |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Japonia |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3336,26 +3336,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3364,26 +3364,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3392,26 +3392,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3420,26 +3420,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3448,26 +3448,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3480,22 +3480,22 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Korea Południowa |
 | SharePoint Online | Korea Południowa |
 | Microsoft Teams | Korea Południowa |
-| Office Online &amp; Urządzenia przenośne | Korea Południowa |
+| Office Online &amp; Mobile | Korea Południowa |
 | EOP | Korea Południowa |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Korea Południowa |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Korea Południowa |
 | Tematy Viva | Korea Południowa |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Korea Południowa |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Korea Południowa |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3504,26 +3504,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3532,26 +3532,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3560,26 +3560,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3588,26 +3588,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3620,7 +3620,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -3628,14 +3628,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3644,26 +3644,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3673,26 +3673,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3702,26 +3702,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3730,26 +3730,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3763,7 +3763,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Szwajcaria |
 | SharePoint Online | Szwajcaria |
 | Microsoft Teams | Szwajcaria |
-| Office Online &amp; Urządzenia przenośne | Szwajcaria |
+| Office Online &amp; Mobile | Szwajcaria |
 | EOP | Szwajcaria |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -3771,14 +3771,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska |
 | Usługi programu OneNote | Szwajcaria |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Szwajcaria |
 | Tematy Viva | Szwajcaria |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Szwajcaria |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Szwajcaria |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3791,7 +3791,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -3799,14 +3799,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3819,7 +3819,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -3827,14 +3827,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3843,26 +3843,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3871,26 +3871,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3899,26 +3899,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3927,26 +3927,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3955,26 +3955,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -3987,7 +3987,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -3995,14 +3995,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4011,26 +4011,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4043,7 +4043,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -4051,14 +4051,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4067,26 +4067,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4095,26 +4095,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4123,26 +4123,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4155,7 +4155,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -4163,14 +4163,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4179,26 +4179,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4207,26 +4207,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4235,26 +4235,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4263,26 +4263,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4295,7 +4295,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -4303,14 +4303,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4319,26 +4319,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4347,26 +4347,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4375,26 +4375,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4403,26 +4403,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4431,26 +4431,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4460,26 +4460,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4493,7 +4493,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -4501,18 +4501,18 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="netherlands-antilles"></a>Antyle Holenderskie
+## <a name="netherlands-antilles"></a>Antyle
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -4521,7 +4521,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -4529,14 +4529,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4546,26 +4546,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4578,7 +4578,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Australia |
 | SharePoint Online | Australia |
 | Microsoft Teams | Australia |
-| Office Online &amp; Urządzenia przenośne | Australia |
+| Office Online &amp; Mobile | Australia |
 | EOP | Australia |
 | Intune | Australia |
 | Planner | Australia |
@@ -4586,14 +4586,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Australia |
 | Stream | Australia |
-| Tablica | Australia |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Australia |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Australia |
 | Tematy Viva | Australia |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Australia |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Australia |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4606,7 +4606,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -4614,14 +4614,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4630,26 +4630,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4658,26 +4658,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4686,26 +4686,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4714,26 +4714,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4742,26 +4742,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4774,22 +4774,22 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Norwegia |
 | SharePoint Online | Norwegia |
 | Microsoft Teams | Norwegia |
-| Office Online &amp; Urządzenia przenośne | Norwegia |
+| Office Online &amp; Mobile | Norwegia |
 | EOP | Norwegia |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
+| Yammer | Geografia globalna 1 – EMEA |
 | Usługi programu OneNote | Norwegia |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Global Geography 1–EMEA |
-| Formularze | Global Geography 1–EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Geografia globalna 1 – EMEA |
+| Formularzy | Geografia globalna 1 – EMEA |
 | Zasoby Viva | Norwegia |
 | Tematy Viva | Norwegia |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Norwegia |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Norwegia |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 
 </p></details>
@@ -4799,26 +4799,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4827,26 +4827,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4855,26 +4855,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4883,26 +4883,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4915,7 +4915,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -4923,14 +4923,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4939,26 +4939,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4967,26 +4967,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -4995,26 +4995,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5023,26 +5023,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5051,26 +5051,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5083,7 +5083,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -5091,14 +5091,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5111,7 +5111,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -5119,14 +5119,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5139,7 +5139,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -5147,14 +5147,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5163,54 +5163,54 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="republic-of-macedonia"></a>Republika Macedońskia
+## <a name="republic-of-macedonia"></a>Republika Macedonii
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5219,26 +5219,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5251,7 +5251,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -5259,14 +5259,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5276,26 +5276,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5305,26 +5305,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5334,26 +5334,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5366,7 +5366,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -5374,14 +5374,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5394,7 +5394,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -5402,14 +5402,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5421,8 +5421,8 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Exchange Online | Stany Zjednoczone |
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -5430,14 +5430,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5449,8 +5449,8 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Exchange Online | Stany Zjednoczone |
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -5458,14 +5458,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5478,7 +5478,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -5486,14 +5486,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5506,7 +5506,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -5514,14 +5514,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5530,26 +5530,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5558,26 +5558,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5586,26 +5586,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5614,26 +5614,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5642,26 +5642,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5670,26 +5670,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5698,26 +5698,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5726,26 +5726,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5754,26 +5754,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5785,8 +5785,8 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Exchange Online | Stany Zjednoczone |
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -5794,14 +5794,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5814,7 +5814,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -5822,14 +5822,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5842,7 +5842,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -5850,14 +5850,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5866,26 +5866,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5895,26 +5895,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5927,26 +5927,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Republika Południowej Afryki |
 | SharePoint Online | Republika Południowej Afryki |
 | Microsoft Teams | Republika Południowej Afryki |
-| Office Online &amp; Urządzenia przenośne | Republika Południowej Afryki |
+| Office Online &amp; Mobile | Republika Południowej Afryki |
 | EOP | Republika Południowej Afryki |
-| Intune | Global Geography 1–EMEA |
+| Intune | Geografia globalna 1 – EMEA |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
+| Yammer | Geografia globalna 1 – EMEA |
 | Usługi programu OneNote | Republika Południowej Afryki |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Republika Południowej Afryki |
 | Tematy Viva | Republika Południowej Afryki |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Republika Południowej Afryki |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Republika Południowej Afryki |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
  </p></details>
 
-## <a name="south-georgia-and-the-south-sandwich-islands"></a>Georgia Południowa i Sandwich Południowy
+## <a name="south-georgia-and-the-south-sandwich-islands"></a>Gruzja Południowa i Wyspy Kanapki Południowej
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -5955,7 +5955,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -5963,14 +5963,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -5983,7 +5983,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Unia Europejska |
 | SharePoint Online | Unia Europejska |
 | Microsoft Teams | Unia Europejska |
-| Office Online &amp; Urządzenia przenośne | Unia Europejska |
+| Office Online &amp; Mobile | Unia Europejska |
 | EOP | Unia Europejska |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -5991,14 +5991,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska  |
 | Usługi programu OneNote | Unia Europejska |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Unia Europejska |
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6007,26 +6007,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6039,7 +6039,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -6047,42 +6047,42 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="svalbard-and-jan-mayen-islands"></a>Svalbard i Jan Mayen Islands
+## <a name="svalbard-and-jan-mayen-islands"></a>Wyspy Svalbard i Jan Mayen
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6091,26 +6091,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6123,7 +6123,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Szwecja |
 | SharePoint Online | Szwecja |
 | Microsoft Teams | Szwecja |
-| Office Online &amp; Urządzenia przenośne | Szwecja |
+| Office Online &amp; Mobile | Szwecja |
 | EOP | Szwecja |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -6131,14 +6131,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska |
 | Usługi programu OneNote | Szwecja |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Szwecja |
 | Tematy Viva | Szwecja |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Szwecja |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Szwecja |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6151,7 +6151,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Szwajcaria |
 | SharePoint Online | Szwajcaria |
 | Microsoft Teams | Szwajcaria |
-| Office Online &amp; Urządzenia przenośne | Szwajcaria |
+| Office Online &amp; Mobile | Szwajcaria |
 | EOP | Szwajcaria |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -6159,14 +6159,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska |
 | Usługi programu OneNote | Szwajcaria |
 | Stream | Unia Europejska |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Szwajcaria |
 | Tematy Viva | Szwajcaria |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Szwajcaria |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Szwajcaria |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6175,26 +6175,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6203,54 +6203,54 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="united-republic-of-tanzania"></a>Zjednoczone Królestwo Tanzanii
+## <a name="united-republic-of-tanzania"></a>Wielka Republika Tanzanii
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6259,26 +6259,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6287,26 +6287,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6315,26 +6315,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6343,26 +6343,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6371,26 +6371,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6403,7 +6403,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -6411,14 +6411,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6427,26 +6427,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6455,26 +6455,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6483,26 +6483,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6515,7 +6515,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -6523,14 +6523,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6539,26 +6539,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6571,7 +6571,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -6579,14 +6579,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6595,26 +6595,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6623,26 +6623,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6655,22 +6655,22 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Zjednoczone Emiraty Arabskie |
 | SharePoint Online | Zjednoczone Emiraty Arabskie |
 | Microsoft Teams | Zjednoczone Emiraty Arabskie |
-| Office Online &amp; Urządzenia przenośne | Zjednoczone Emiraty Arabskie |
+| Office Online &amp; Mobile | Zjednoczone Emiraty Arabskie |
 | EOP | Zjednoczone Emiraty Arabskie |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
+| Yammer | Geografia globalna 1 – EMEA |
 | Usługi programu OneNote | Zjednoczone Emiraty Arabskie |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
 | Zasoby Viva | Zjednoczone Emiraty Arabskie |
 | Tematy Viva | Zjednoczone Emiraty Arabskie |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Zjednoczone Emiraty Arabskie |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Zjednoczone Emiraty Arabskie |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
  </p></details>
 
@@ -6683,7 +6683,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Zjednoczone Królestwo |
 | SharePoint Online | Zjednoczone Królestwo |
 | Microsoft Teams | Zjednoczone Królestwo |
-| Office Online &amp; Urządzenia przenośne | Zjednoczone Królestwo |
+| Office Online &amp; Mobile | Zjednoczone Królestwo |
 | EOP | Zjednoczone Królestwo |
 | Intune | Unia Europejska |
 | Planner | Unia Europejska |
@@ -6691,14 +6691,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Unia Europejska |
 | Usługi programu OneNote | Zjednoczone Królestwo |
 | Stream | Zjednoczone Królestwo |
-| Tablica | Unia Europejska |
-| Formularze | Unia Europejska |
+| Tablicy | Unia Europejska |
+| Formularzy | Unia Europejska |
 | Zasoby Viva | Zjednoczone Królestwo |
 | Tematy Viva | Zjednoczone Królestwo |
 | Nauka Viva | Unia Europejska |
-| Szczegółowe informacje Viva — Osobiste | Zjednoczone Królestwo |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Zjednoczone Królestwo |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6711,7 +6711,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -6719,14 +6719,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6735,54 +6735,54 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 3 — Ameryka Północna |
-| OneDrive dla Firm | Global Geography 3 — Ameryka Północna |
-| SharePoint Online | Global Geography 3 — Ameryka Północna |
+| Exchange Online | Geografia globalna 3 – Ameryka |
+| OneDrive dla Firm | Geografia globalna 3 – Ameryka |
+| SharePoint Online | Geografia globalna 3 – Ameryka |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Global Geography 3 — Ameryka Północna |
-| EOP | Global Geography 3 — Ameryka Północna |
+| Office Online &amp; Mobile | Geografia globalna 3 – Ameryka |
+| EOP | Geografia globalna 3 – Ameryka |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 3 — Ameryka Północna |
+| Usługi programu OneNote | Geografia globalna 3 – Ameryka |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 3 — Ameryka Północna |
-| Tematy Viva | Global Geography 3 — Ameryka Północna |
-| Nauka Viva | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 3 – Ameryka |
+| Tematy Viva | Geografia globalna 3 – Ameryka |
+| Nauka Viva | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="us-minor-outlying-islands"></a>Odląskie Mniejsze Wyspy Stanów Zjednoczonych
+## <a name="us-minor-outlying-islands"></a>US Minor Outlying Islands
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6791,26 +6791,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6819,26 +6819,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6850,7 +6850,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | OneDrive dla Firm | Stany Zjednoczone |
 | SharePoint Online | Stany Zjednoczone |
 | Microsoft Teams | Stany Zjednoczone |
-| Office Online &amp; Urządzenia przenośne | Stany Zjednoczone |
+| Office Online &amp; Mobile | Stany Zjednoczone |
 | EOP | Stany Zjednoczone |
 | Intune | Stany Zjednoczone |
 | Planner | Stany Zjednoczone |
@@ -6858,14 +6858,14 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
 | Zasoby Viva | Stany Zjednoczone |
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
-| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6875,54 +6875,54 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="wallis-and-futuna-islands"></a>Wallis i Futuna
+## <a name="wallis-and-futuna-islands"></a>Wyspy Wallis i Futuna
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 2 — Azja pacyfik |
-| OneDrive dla Firm | Global Geography 2 — Azja pacyfik |
-| SharePoint Online | Global Geography 2 — Azja pacyfik |
-| Microsoft Teams | Global Geography 2 — Azja pacyfik |
-| Office Online &amp; Urządzenia przenośne | Global Geography 2 — Azja pacyfik |
-| EOP | Global Geography 2 — Azja pacyfik |
-| Intune | Global Geography 2 — Azja pacyfik |
-| Planner | Global Geography 2 — Azja pacyfik |
+| Exchange Online | Geografia globalna 2 – Azja i Pacyfik |
+| OneDrive dla Firm | Geografia globalna 2 – Azja i Pacyfik |
+| SharePoint Online | Geografia globalna 2 – Azja i Pacyfik |
+| Microsoft Teams | Geografia globalna 2 – Azja i Pacyfik |
+| Office Online &amp; Mobile | Geografia globalna 2 – Azja i Pacyfik |
+| EOP | Geografia globalna 2 – Azja i Pacyfik |
+| Intune | Geografia globalna 2 – Azja i Pacyfik |
+| Planner | Geografia globalna 2 – Azja i Pacyfik |
 | Sway | Stany Zjednoczone |
 | Yammer | Stany Zjednoczone |
-| Usługi programu OneNote | Global Geography 2 — Azja pacyfik |
-| Stream | Global Geography 2 — Azja pacyfik |
-| Tablica | Stany Zjednoczone |
-| Formularze | Stany Zjednoczone |
-| Zasoby Viva | Global Geography 2 — Azja pacyfik |
-| Tematy Viva | Global Geography 2 — Azja pacyfik |
-| Nauka Viva | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Usługi programu OneNote | Geografia globalna 2 – Azja i Pacyfik |
+| Stream | Geografia globalna 2 – Azja i Pacyfik |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Stany Zjednoczone |
+| Zasoby Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6931,26 +6931,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6959,26 +6959,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -6987,26 +6987,26 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
@@ -7015,25 +7015,25 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 
 | Usługa | Lokalizacja |
 | --- | --- |
-| Exchange Online | Global Geography 1–EMEA |
-| OneDrive dla Firm | Global Geography 1–EMEA |
-| SharePoint Online | Global Geography 1–EMEA |
-| Microsoft Teams | Global Geography 1–EMEA |
-| Office Online &amp; Urządzenia przenośne | Global Geography 1–EMEA |
-| EOP | Global Geography 1–EMEA |
-| Intune | Global Geography 1–EMEA |
-| Planner | Global Geography 1–EMEA |
+| Exchange Online | Geografia globalna 1 – EMEA |
+| OneDrive dla Firm | Geografia globalna 1 – EMEA |
+| SharePoint Online | Geografia globalna 1 – EMEA |
+| Microsoft Teams | Geografia globalna 1 – EMEA |
+| Office Online &amp; Mobile | Geografia globalna 1 – EMEA |
+| EOP | Geografia globalna 1 – EMEA |
+| Intune | Geografia globalna 1 – EMEA |
+| Planner | Geografia globalna 1 – EMEA |
 | Sway | Stany Zjednoczone |
-| Yammer | Global Geography 1–EMEA |
-| Usługi programu OneNote | Global Geography 1–EMEA |
-| Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
-| Formularze | Global Geography 1–EMEA |
-| Zasoby Viva | Global Geography 1–EMEA |
-| Tematy Viva | Global Geography 1–EMEA |
-| Nauka Viva | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
-| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Yammer | Geografia globalna 1 – EMEA |
+| Usługi programu OneNote | Geografia globalna 1 – EMEA |
+| Stream | Geografia globalna 1 – EMEA |
+| Tablicy | Stany Zjednoczone |
+| Formularzy | Geografia globalna 1 – EMEA |
+| Zasoby Viva | Geografia globalna 1 – EMEA |
+| Tematy Viva | Geografia globalna 1 – EMEA |
+| Nauka Viva | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>

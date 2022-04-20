@@ -1,5 +1,5 @@
 ---
-title: Praca z komunikacją w programie Advanced eDiscovery
+title: Praca z komunikacją w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,46 +15,46 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Advanced eDiscovery ułatwia zarządzanie przepływem pracy z powiadomieniami o wstrzymaniu ze względu na przepisy prawne w celu powiadamiania opiekunów podczas dochodzenia prawnego.
-ms.openlocfilehash: abe501624e4bc5d0b62ce49f38aa028cd112a7f8
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: eDiscovery (Premium) ułatwia zarządzanie przepływem pracy powiadomień o blokadzie prawnej wokół powiadamiania opiekunów w dochodzeniach prawnych.
+ms.openlocfilehash: 9ee915cc9955b343d76ae1314c27a86421d37332
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019371"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944662"
 ---
-# <a name="work-with-communications-in-advanced-ediscovery"></a>Praca z komunikacją w programie Advanced eDiscovery
+# <a name="work-with-communications-in-ediscovery-premium"></a>Praca z komunikacją w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 
-Advanced eDiscovery działów prawnych upraszczają swoje procesy w celu śledzenia i rozpowszechniania powiadomień o wstrzymaniu ich ze względu na prawo. Narzędzie do komunikacji wołożnej umożliwia działom prawnym zarządzanie całym procesem prawnych, od powiadomień początkowych, po przypomnienia i eskalację, wszystko w jednym miejscu.
+Usługa Microsoft Purview eDiscovery (Premium) umożliwia działom prawnym uproszczenie procesów dotyczących śledzenia i rozpowszechniania powiadomień prawnych dotyczących blokad. Narzędzie do komunikacji opiekuna umożliwia działom prawnym zarządzanie całym procesem archiwizacji prawnej i automatyzowanie go, od początkowych powiadomień, po przypomnienia i eskalacje — wszystko w jednej lokalizacji.
 
-## <a name="what-is-a-legal-hold-notification"></a>Co to jest powiadomienie o wstrzymaniu ze postępowania prawnego?
+## <a name="what-is-a-legal-hold-notification"></a>Co to jest prawne powiadomienie o blokadzie?
 
-Powiadomienie o postępowaniem sądowym (nazywane także zawieszeniem w związku z postępowaniem sądowym *) to* powiadomienie wysyłane z działu prawnego organizacji do pracowników, opiekunów personelu lub osób przechowaczy danych, które mogą być związane z prowadzonym dochodzeniam sądowym. Powiadomienia te nakazają opiekunom zachowywanie informacji przechowywanych elektronicznie i wszelkich treści, które mogą być istotne dla aktywnego lub zbliżających się kwestii prawnych. Zespoły prawne muszą wiedzieć, że każdy odbierany, odczytywany, zrozumiały i wyrażał zgodę na przestrzeganie podanych instrukcji.
+Powiadomienie o blokadzie prawnej (znane również jako *wstrzymanie postępowania sądowego*) jest powiadomieniem wysłanym z działu prawnego organizacji do pracowników, personelu warunkowego lub opiekunów danych, które mogą być istotne dla dochodzenia prawnego. Powiadomienia te nakazują opiekunom zachowanie przechowywanych elektronicznie informacji i wszelkich treści, które mogą być istotne dla aktywnej lub zbliżającej się sprawy prawnej. Zespoły prawne muszą wiedzieć, że każdy opiekun otrzymał, przeczytał, zrozumiał i zgodził się przestrzegać podanych instrukcji.
 
-## <a name="the-legal-hold-notification-process"></a>Proces powiadamiania o wstrzymaniu ze prawnie
+## <a name="the-legal-hold-notification-process"></a>Proces powiadamiania o blokadzie prawnej
 
-Organizacja ma obowiązki w zakresie zachowywania odpowiednich informacji, gdy dowiaduje się o zbliżającym się sporze sądowym lub śledztwu sądowym. W celu zachowania zgodności z wymaganiami zachowania prowadzonych badań organizacja powinna niezwłocznie powiadomić potencjalnych użytkowników o swoich obowiązkówach w celu zachowania odpowiednich informacji.
+Organizacja ma obowiązek zachować odpowiednie informacje, gdy dowie się o zbliżającym się sporze sądowym lub dochodzeniu regulacyjnym. Aby spełnić wymagania dotyczące zachowania dochodzenia, organizacja powinna natychmiast poinformować potencjalnych opiekunów o obowiązku zachowania odpowiednich informacji.
 
-Za Advanced eDiscovery, zespoły prawne mogą tworzyć i dostosowywać swoje przepływy pracy z powiadomieniami o zerowym zeru. Narzędzie do komunikacji wołodnej umożliwia zespołom prawnim konfigurowanie następujących informacji i przepływów pracy:
+Dzięki funkcji zbierania elektronicznych materiałów dowodowych (Premium) zespoły prawne mogą tworzyć i dostosowywać przepływ pracy powiadomień o blokadzie prawnej. Narzędzie komunikacji opiekuna umożliwia zespołom prawnym konfigurowanie następujących powiadomień i przepływów pracy:
 
-1. **Powiadomienie o wydaniu:** Po otrzymaniu (lub zainicjowanych) informacjach prawnych jest wystawiana (lub inicjowana) w wiadomościach od działu prawnego do osób, które mogą mieć istotne informacje w tej sprawie. To powiadomienie nakazuje zatrzymaniom zachowywać wszelkie informacje, które mogą być potrzebne do odnajdowania.
+1. **Powiadomienie o wystawienie:** Powiadomienie z działu prawnego o wstrzymaniu jest wydawane (lub inicjowane) przez powiadomienie z działu prawnego do opiekunów, którzy mogą mieć istotne informacje na temat sprawy. To powiadomienie nakazuje opiekunom zachowanie wszelkich informacji, które mogą być potrzebne do odnajdywania.
 
-2. **Powiadomienie o ponownym wydawaniu informacji:** W trakcie  wypadku może być wymagane zachowanie większej (lub mniejszej zawartości) zawartości, niż było to wcześniej wymagane. W tym scenariuszu można zaktualizować powiadomienie o istniejącym zrzekaniu się i ponownie je isisować w celu przechowywania danych.
+2. **Powiadomienie o ponownym wydaniu:** W trakcie sprawy opiekunowie mogą być zobowiązani do zachowania większej ilości zawartości (lub mniejszej ilości zawartości) niż wcześniej żądano. W tym scenariuszu można zaktualizować istniejące powiadomienie o wstrzymaniu i ponownie go wdrożyć dla opiekunów.
 
-3. **Informacje o wersji:** Po rozstrzygnięciu sprawy i zbędeniu nie jest już wymagany zachowywanie, może zostać zwolniony z tej sprawy. Ponadto można powiadomić właściwego użytkownika o tym, że nie jest już wymagane zachowywanie zawartości, oraz podać instrukcje dotyczące wznowienia normalnego działania służbowego i danych.
+3. **Powiadomienie o wersji:** Gdy sprawa zostanie rozwiązana, a opiekun nie podlega już wymogowi zachowania, opiekun może zostać zwolniony ze sprawy. Ponadto możesz powiadomić opiekuna, że nie jest już wymagany do zachowania zawartości, i podać instrukcje dotyczące sposobu wznowienia normalnej aktywności służbowej i danych.
 
-4. **Przypomnienia i eskalacja:** W niektórych przypadkach po prostu wydanie powiadomienia nie wystarczy do spełnienia wymogów prawnych dotyczących odnajdowania. Po każdym powiadomieniu zespoły prawne mogą zaplanować zestaw przepływów pracy przypomnień i eskalacji w celu automatycznego śledzenia osób, które nie będą odpowiadać.
+4. **Przypomnienia i eskalacje:** W niektórych przypadkach wystarczy wydać powiadomienie, aby spełnić wymagania prawne dotyczące odnajdywania. Po każdym powiadomieniu zespoły prawne mogą zaplanować zestaw przepływów pracy przypomnień i eskalacji, aby automatycznie śledzić brak odpowiedzi opiekunów.
 
-   - **Przypomnienia:** Po wyświęceniu lub ponownego zastrzeżonym w związku z tym zestawie osób do przechowywania organizacja może skonfigurować przypomnienia w celu powiadamiania osób, które nie odpowiadają na wiadomości.
+   - **Przypomnienia:** Po wydaniu lub ponownym wydaniu powiadomienia o wstrzymaniu ze względów prawnych dla zestawu opiekunów organizacja może skonfigurować przypomnienia w celu powiadamiania opiekunów o braku odpowiedzi.
 
-   - **Eskalacji:** W niektórych przypadkach jeśli po upływie pewnego czasu nie odpowiada użytkownik, który nie odpowiada, zespół prawny może skonfigurować przepływ pracy eskalacji w celu powiadamiania osób, które nie odpowiadają i ich kierownika.
+   - **Eskalacji:** W niektórych przypadkach, jeśli opiekun pozostaje nie odpowiada nawet po zestawie przypomnień przez pewien czas, zespół prawny może skonfigurować przepływ pracy eskalacji, aby powiadomić nieodpowiadających opiekunów i ich menedżera.
 
-Aby uzyskać więcej informacji na temat zarządzania procesem komunikacji pochyłej, zobacz następujące informacje: 
+Aby uzyskać więcej informacji na temat zarządzania procesem komunikacji z opiekunem, zobacz następujące kwestie: 
 
-- [Tworzenie informacji prawnych o wstrzymaniu ich od zesłania](create-hold-notification.md)
+- [Tworzenie powiadomienia o blokadzie prawnej](create-hold-notification.md)
 
-- [Korzystanie z edytora komunikacji](using-communications-editor.md)
+- [Korzystaj z edytora komunikacji](using-communications-editor.md)
 
-- [Zarządzanie powiadomieniami o wstrzymaniu](manage-hold-notification.md)
+- [Zarządzaj powiadomieniami o archiwum](manage-hold-notification.md)
 
-- [Potwierdzanie powiadomienia o wstrzymaniu](acknowledge-hold-notification.md)
+- [Potwierdź powiadomienie o archiwum](acknowledge-hold-notification.md)

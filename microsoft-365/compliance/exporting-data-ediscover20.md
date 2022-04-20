@@ -1,5 +1,5 @@
 ---
-title: Eksportowanie danych sprawy w programie Advanced eDiscovery
+title: Eksportowanie danych sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak eksportować lub pobierać zawartość z zestawu recenzji prezentacji lub recenzji zewnętrznych w przypadku Advanced eDiscovery przypadku.
+description: Dowiedz się, jak eksportować lub pobierać zawartość z zestawu przeglądów dla prezentacji lub przeglądów zewnętrznych w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5d61ce10e7ff0c9a419310bef3425fefa654d0dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f94062bee378a408e1a04240b09c5ae05f53c5f8
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987792"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948644"
 ---
-# <a name="export-case-data-in-advanced-ediscovery"></a>Eksportowanie danych sprawy w programie Advanced eDiscovery
+# <a name="export-case-data-in-ediscovery-premium"></a>Eksportowanie danych sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 
-Istnieją trzy sposoby eksportowania danych z zestawu recenzji:
+Istnieją trzy sposoby eksportowania danych z zestawu przeglądów:
 
-**Pobierz:** Pobierz (przy użyciu przeglądarki) niewielki zestaw plików natywnych. Jest to najszybszy sposób eksportowania małego zestawu danych. Ta metoda zachowuje natywne nazwy plików. Aby uzyskać więcej informacji, zobacz [Pobieranie dokumentów z zestawu recenzji](download-documents-from-review-set.md).
+**Pobierz:** Pobierz (za pomocą przeglądarki) mały zestaw plików natywnych. Jest to najszybszy sposób eksportowania małego zestawu danych. Ta metoda zachowuje natywne nazwy plików. Aby uzyskać więcej informacji, zobacz [Pobieranie dokumentów z zestawu przeglądów](download-documents-from-review-set.md).
 
-**Eksportowanie:** Dostosowywanie eksportowanych danych. Obejmuje to eksportowanie metadanych, natywnych plików, plików tekstowych i dokumentów redagowanych, które zostały zapisane w pliku PDF. Gdy eksportowane dane będą przygotowane, możesz pobrać je z karty **Eksportuj** na komputer lokalny. Aby uzyskać więcej informacji, zobacz [Eksportowanie dokumentów z zestawu recenzji.](export-documents-from-review-set.md)
+**Eksportu:** Dostosuj eksportowane dane. Obejmuje to eksportowanie metadanych plików, plików natywnych, plików tekstowych i zredagowanych dokumentów, które zostały zapisane w pliku PDF. Po przygotowaniu wyeksportowanych danych możesz pobrać dane z karty **Eksportuj** na komputer lokalny. Aby uzyskać więcej informacji, zobacz [Eksportowanie dokumentów z zestawu przeglądów](export-documents-from-review-set.md)
 
-**Dodaj do innego zestawu recenzji:** Kopiowanie danych z jednego zestawu recenzji do innego zestawu recenzji. Aby uzyskać więcej informacji, [zobacz Dodawanie danych z jednego zestawu recenzji do innego zestawu recenzji](add-data-to-review-set-from-another-review-set.md).
+**Dodaj do innego zestawu przeglądów:** Skopiuj dane z jednego zestawu przeglądów do innego zestawu przeglądów. Aby uzyskać więcej informacji, zobacz [Dodawanie danych z jednego zestawu przeglądów do innego zestawu przeglądów](add-data-to-review-set-from-another-review-set.md).
 
 > [!NOTE]
-> W Microsoft 365 dane są skrótami, a te skróty są udostępniane w pliku wynikowym na potrzeby weryfikacji. Jest to uzupełniane przez dzienniki inspekcji i funkcje raportowania, takie jak statystyki zbierania, raporty zestawie ładowania i raporty eksportowania (w tym plik ładowania eksportu).
+> W Microsoft 365 dane są skrótami, a skróty te są udostępniane w pliku wyjściowym na potrzeby weryfikacji. Jest to uzupełniane dziennikami inspekcji i funkcjami raportowania, takimi jak statystyki zbierania, raporty zestawu obciążenia i raporty eksportu (w tym plik ładowania eksportu).

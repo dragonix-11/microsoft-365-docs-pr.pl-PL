@@ -11,72 +11,72 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Administratorzy mogą skonfigurować łącznik TeleMessage w celu importowania i archiwizowania wiadomości SMS, MMS i połączeń głosowych z telefonów komórkowych z systemem Android. Dzięki temu można archiwizować dane ze źródeł danych innych firm w programie Microsoft 365, aby zarządzać danymi innych firm przy użyciu funkcji zgodności, takich jak archiwizacja ze względu na przepisy prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 78eb94bb23b5b6f1b0801bcbfad4a6fc43022398
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Administratorzy mogą skonfigurować łącznik TeleMessage do importowania i archiwizowania wiadomości SMS, MMS i połączeń głosowych z telefonów komórkowych z systemem Android. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
+ms.openlocfilehash: 5edf3766b31d5d9171ff726f2c720aba36d88cae
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325393"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946797"
 ---
 # <a name="set-up-a-connector-to-archive-android-mobile-data"></a>Konfigurowanie łącznika do archiwizowania danych mobilnych systemu Android
 
-Użyj łącznika TeleMessage w aplikacji Centrum zgodności platformy Microsoft 365, aby importować i archiwizować wiadomości SMS, MMS, połączenia głosowe i dzienniki połączeń z telefonów komórkowych z systemem Android. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z kontem TeleMessage Twojej organizacji raz dziennie i importuje wiadomości mobilne pracowników za pomocą archiwum systemu Android TeleMessage do skrzynek pocztowych w usłudze Microsoft 365.
+Użyj łącznika TeleMessage w portalu zgodności usługi Microsoft Purview, aby importować i archiwizować wiadomości SMS, MMS, połączenia głosowe i dzienniki połączeń z telefonów komórkowych z systemem Android. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z kontem TeleMessage organizacji raz dziennie i importuje komunikację mobilną pracowników przy użyciu archiwum systemu Android TeleMessage do skrzynek pocztowych w Microsoft 365.
 
-Po zapisaniu danych z telefonów komórkowych z systemem Android w skrzynkach pocztowych użytkowników możesz zastosować funkcje zgodności aplikacji Microsoft 365, takie jak Archiwizacja w związku z postępowaniem sądowym, Wyszukiwanie zawartości i zasady przechowywania Microsoft 365 do danych archiwum systemu Android. Można na przykład przeszukać komunikację w urządzeniu przenośnym z archiwum systemu Android przy użyciu funkcji przeszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane łącznika funkcji Archiwum systemu Android ze współpracownikiem w Advanced eDiscovery przypadku. Importowanie i archiwizowanie danych w aplikacji Microsoft 365 za pomocą łącznika archiwum systemu Android może ułatwić organizacji zachowania zgodności z zasadami rządowymi i przepisami.
+Po zapisaniu danych z telefonów komórkowych z systemem Android w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, wyszukiwanie zawartości i zasady przechowywania Microsoft 365 do danych archiwum systemu Android. Na przykład możesz przeszukiwać komunikację mobilną z systemem Android Archiver przy użyciu wyszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane łącznika Archiwum systemu Android z opiekunem w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika Archiwum systemu Android może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
-## <a name="overview-of-archiving-android-mobile-data"></a>Omówienie archiwizowania danych mobilnych w systemie Android
+## <a name="overview-of-archiving-android-mobile-data"></a>Omówienie archiwizacji danych mobilnych systemu Android
 
-W poniższym o omówieniem wyjaśniono proces używania łącznika do archiwizowania danych mobilnych z systemu Android w Microsoft 365.
+W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania danych mobilnych systemu Android w Microsoft 365.
 
-![Przepływ pracy łącznika archiwum systemu Android.](../media/AndroidArchiverConnectorWorkflow.png)
+![Przepływ pracy łącznika Archiwum systemu Android.](../media/AndroidArchiverConnectorWorkflow.png)
 
-1. Twoja organizacja współpracuje z usługą TeleMessage w celu skonfigurowania łącznika archiwum systemu Android. Aby uzyskać więcej informacji, zobacz Archiwum [systemu Android](https://www.telemessage.com/office365-activation-for-android-archiver/).
+1. Twoja organizacja współpracuje z usługą TeleMessage w celu skonfigurowania łącznika Archiwum systemu Android. Aby uzyskać więcej informacji, zobacz [Android Archiver](https://www.telemessage.com/office365-activation-for-android-archiver/).
 
 2. W czasie rzeczywistym wiadomości SMS, MMS, połączenia głosowe i dzienniki połączeń z telefonów komórkowych z systemem Android organizacji są kopiowane do witryny TeleMessage.
 
-3. Łącznik archiwum systemu Android, który tworzysz w usłudze Centrum zgodności platformy Microsoft 365, łączy się z witryną TeleMessage codziennie i przesyła dane z systemu Android z poprzednich 24 godzin do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft. Łącznik konwertuje również dane systemu Android na format wiadomości e-mail.
+3. Łącznik Archiwum systemu Android tworzony w portalu zgodności codziennie łączy się z witryną TeleMessage i przesyła dane systemu Android z poprzednich 24 godzin do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft. Łącznik konwertuje również dane systemu Android na format wiadomości e-mail.
 
-4. Łącznik importuje elementy komunikacji mobilnej do skrzynki pocztowej określonego użytkownika. W skrzynce pocztowej określonego użytkownika jest tworzony nowy folder o nazwie Archiwum systemu Android i elementy są do niego importowane. Łącznik mapuje dane przy użyciu wartości *właściwości Adres e-mail* użytkownika. Każda wiadomość e-mail zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika wiadomości e-mail. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości Adres e-mail użytkownika możesz również zdefiniować mapowanie niestandardowe, przesyłając plik mapowania plików CSV. Ten plik mapowania powinien zawierać numer telefonu komórkowego i Microsoft 365 adres skrzynki pocztowej dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu poczty e-mail łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli użytkownik nie znajdzie prawidłowego Microsoft 365 odpowiadającego numerowi telefonu komórkowego użytkownika, łącznik użyje właściwości adresu e-mail użytkownika elementu poczty e-mail. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w pliku mapowania niestandardowego lub właściwości Adres e-mail użytkownika elementu  poczty e-mail, element nie zostanie zaimportowany.
+4. Łącznik importuje elementy komunikacji mobilnej do skrzynki pocztowej określonego użytkownika. W skrzynce pocztowej określonego użytkownika zostanie utworzony nowy folder o nazwie Android Archiver, a elementy zostaną do niego zaimportowane. Łącznik wykonuje mapowanie przy użyciu wartości właściwości *Adres e-mail użytkownika* . Każda wiadomość e-mail zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika wiadomości e-mail. Oprócz automatycznego mapowania użytkownika przy użyciu wartości właściwości *Adres e-mail użytkownika* można również zdefiniować mapowanie niestandardowe, przekazując plik mapowania CSV. Ten plik mapowania powinien zawierać numer telefonu komórkowego i odpowiedni adres skrzynki pocztowej Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkownika i udostępnisz mapowanie niestandardowe, dla każdego elementu wiadomości e-mail łącznik najpierw przyjrzy się niestandardowemu plikowi mapowania. Jeśli nie znajdzie prawidłowego użytkownika Microsoft 365, który odpowiada numerowi telefonu komórkowego użytkownika, łącznik użyje właściwości adresu e-mail użytkownika elementu wiadomości e-mail. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w niestandardowym pliku mapowania lub we właściwości *adresu e-mail użytkownika* elementu wiadomości e-mail, element nie zostanie zaimportowany.
 
 ## <a name="before-you-set-up-a-connector"></a>Przed skonfigurowaniem łącznika
 
-Niektóre kroki implementacji wymagane do archiwizowania danych komunikacyjnych systemu Android są zewnętrzne Microsoft 365 i muszą zostać ukończone, zanim będzie można utworzyć łącznik w centrum zgodności.
+Niektóre kroki implementacji wymagane do archiwizacji danych komunikacyjnych systemu Android są zewnętrzne dla Microsoft 365 i muszą zostać ukończone przed utworzeniem łącznika w centrum zgodności.
 
-- Zamów [usługę Android Archiver w serwisie TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) i uzyskaj prawidłowe konto administracyjne dla twojej organizacji. Podczas tworzenia łącznika musisz zalogować się do tego konta.
+- [Zamów usługę Archiwum systemu Android z usługi TeleMessage i uzyskaj prawidłowe](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) konto administracyjne dla swojej organizacji. Podczas tworzenia łącznika musisz zalogować się do tego konta.
 
-- Zarejestruj wszystkich użytkowników, którzy wymagają usługi Archiver systemu Android, na koncie TeleMessage. Podczas rejestrowania użytkowników pamiętaj, aby używać tego samego adresu e-mail, który jest używany na ich Microsoft 365 kontach.
+- Zarejestruj wszystkich użytkowników, którzy wymagają usługi Archiwum systemu Android na koncie TeleMessage. Podczas rejestrowania użytkowników należy użyć tego samego adresu e-mail, który jest używany dla ich konta Microsoft 365.
 
 - Zainstaluj i aktywuj aplikację TeleMessage Android Archiver na telefonach komórkowych pracowników.
 
-- Użytkownik, który tworzy łącznik funkcji Archiwum systemu Android, musi mieć przypisaną rolę Administrator łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi tworzącemu łącznik Archiwum systemu Android musi zostać przypisana rola administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych TeleMessage jest dostępny w GCC w chmurze dla instytucji rządowych Microsoft 365 USA. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Organizacji w systemach innych firm, które znajdują się poza infrastrukturą firmy Microsoft 365 i dlatego nie są objęte zobowiązaniami firmy Microsoft 365 w zakresie zgodności z przepisami i ochrony danych. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
+- Ten łącznik danych TeleMessage jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
-## <a name="create-an-android-archiver-connector"></a>Tworzenie łącznika archiwum systemu Android
+## <a name="create-an-android-archiver-connector"></a>Tworzenie łącznika Archiwum systemu Android
 
-Ostatnim krokiem jest utworzenie łącznika programu Android Archiver w Centrum zgodności platformy Microsoft 365. Łącznik używa podanej informacji do nawiązania połączenia z witryną TeleMessage i przeniesienia komunikacji z systemem Android do odpowiednich skrzynek pocztowych użytkowników w Microsoft 365.
+Ostatnim krokiem jest utworzenie łącznika Archiwum systemu Android w portalu zgodności. Łącznik używa podanych informacji, aby nawiązać połączenie z witryną TeleMessage i przenieść komunikację systemu Android do odpowiednich skrzynek pocztowych użytkownika w Microsoft 365.
 
-1. Przejdź do i [https://compliance.microsoft.com](https://compliance.microsoft.com) kliknij pozycję **Łączniki** **danychArchiwizatorandroidu** > .
+1. Przejdź do pozycji [https://compliance.microsoft.com](https://compliance.microsoft.com) i kliknij pozycję **Łączniki** >  **danychAndroid Archiver**.
 
-2. Na stronie **opis produktu archiwum systemu Android** kliknij pozycję **Dodaj łącznik**.
+2. Na stronie Opis produktu **Archiwum systemu Android** kliknij pozycję **Dodaj łącznik**.
 
-3. Na stronie **Warunki użytkowania usługi** kliknij pozycję **Zaakceptuj**.
+3. Na stronie **Warunki korzystania z usługi** kliknij pozycję **Akceptuj**.
 
-4. Na stronie **Login to TeleMessage** (Logowanie do telemessage) w obszarze Krok 3 wprowadź wymagane informacje w następujących polach, a następnie kliknij przycisk **Dalej**.
+4. Na stronie **Logowanie do usługi TeleMessage** w obszarze Krok 3 wprowadź wymagane informacje w poniższych polach, a następnie kliknij przycisk **Dalej**.
 
-   - **Nazwa użytkownika:** Twoja nazwa użytkownika aplikacji TeleMessage.
+   - **Nazwę użytkownika:** Nazwa użytkownika usługi TeleMessage.
 
-   - **Hasło:** Hasło aplikacji TeleMessage.
+   - **Hasło:** Twoje hasło telemessage.
 
 5. Po utworzeniu łącznika zamknij okno podręczne i kliknij przycisk **Dalej**.
 
-6. Na stronie **Mapowanie użytkowników** włącz automatyczne mapowanie użytkowników i kliknij przycisk **Dalej**. Jeśli potrzebujesz mapowania niestandardowego, przekaż plik CSV i kliknij przycisk **Dalej**.
+6. Na stronie **Mapowanie użytkownika** włącz automatyczne mapowanie użytkownika i kliknij przycisk **Dalej**. Jeśli potrzebujesz mapowania niestandardowego, przekaż plik CSV, a następnie kliknij przycisk **Dalej**.
 
-7. Przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+7. Przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ** , aby utworzyć łącznik.
 
-8. Przejdź do karty Łączniki na **stronie Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika.
+8. Przejdź do karty Łączniki na stronie **Łączniki danych** , aby zobaczyć postęp procesu importowania nowego łącznika.
 
 ## <a name="known-issues"></a>Znane problemy
 
-- Obecnie importowanie załączników ani elementów większych niż 10 MB nie jest obsługuje. Obsługa większych elementów będzie dostępna w późniejszym terminie.
+- Obecnie nie obsługujemy importowania załączników ani elementów o rozmiarze większym niż 10 MB. Obsługa większych elementów będzie dostępna w późniejszym terminie.

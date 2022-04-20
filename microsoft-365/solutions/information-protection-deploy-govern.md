@@ -1,5 +1,5 @@
 ---
-title: Reguluj informacje objęte rozporządzeniem o ochronie prywatności danych
+title: Zarządzanie informacjami podlegającymi przepisom dotyczącym prywatności danych
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,78 +16,78 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Etykiety Microsoft 365 zasady i etykiety przechowywania można używać do zarządzania danymi osobistymi w środowisku Microsoft 365 danych.
-ms.openlocfilehash: b131c90e83a2ce211d51af444dd570f71f3b8263
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Użyj Microsoft 365 etykiet przechowywania i zasad, aby zarządzać danymi osobowymi w środowisku Microsoft 365.
+ms.openlocfilehash: 05aad5b26f65dc66543afb29834e7cc4514e3366
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984368"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947390"
 ---
-# <a name="govern-information-subject-to-data-privacy-regulation"></a>Reguluj informacje objęte rozporządzeniem o ochronie prywatności danych
+# <a name="govern-information-subject-to-data-privacy-regulation"></a>Zarządzanie informacjami podlegającymi przepisom dotyczącym prywatności danych
 
-Mechanizmy kontroli zarządzania informacjami można stosować w danym środowisku w celu spełniania wymagań dotyczących zachowania zgodności z przepisami dotyczącymi prywatności danych, w tym liczby specyficznej dla Ogólnego Rozporządzenia o Ochronie Danych (RODO), HIPAA-HITECH (united States health care privacy act), California Consumer Protection Act (INTERNETEMA) i brazylijskiej ustawy o ochronie danych (LGPD). 
+Mechanizmy kontroli ładu informacji mogą być stosowane w twoim środowisku, aby pomóc spełnić wymagania dotyczące zgodności z prywatnością danych, w tym liczbę specyficzną dla ogólnych przepisów o ochronie danych (RODO), HIPAA-HITECH (Stany Zjednoczone ustawy o ochronie prywatności w służbie zdrowia), ustawy o ochronie konsumentów w Kalifornii (CCPA) i brazylijskiej ustawy o ochronie danych (LGPD). 
 
-Kontrolki te są przede wszystkim podzielone na następujące obszary rozwiązania:
+Te kontrolki należą przede wszystkim do następujących obszarów rozwiązania:
 
 - Zasady przechowywania
 - Etykiety przechowywania
 - Zarządzanie rekordami
 
-## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>Przepisy dotyczące ochrony prywatności danych wpływające na mechanizmy kontroli zarządzania informacjami
+## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>Przepisy dotyczące prywatności danych wpływające na mechanizmy kontroli ładu informacji
 
-Oto przykładowy wykaz przepisów dotyczących ochrony prywatności danych, które mogą dotyczyć kontroli zarządzania informacjami:
+Oto przykładowa lista przepisów dotyczących prywatności danych, które mogą odnosić się do mechanizmów kontroli ładu informacji:
 
-- Artykuł RODO (13)(2)(a)
-- Artykuł RODO (5)(1)(f)
+- RODO , art.
+- RODO , art.
 - HIPAA-HITECH (45 CFR 164.312(c)(2))
 - HIPAA-HITECH (45 CFR 164.316(b)(1)(i))
 - HIPAA-HITECH (45 CFR 164.316(b)(1)(ii))
-- LGPD, artykuł 46
+- ARTYKUŁ LGPD 46
 
-Aby uzyskać więcej informacji na temat tych przepisów, zobacz artykuł Ocenianie ryzyka związanego z prywatnością danych [i identyfikowanie informacji poufnych](information-protection-deploy-assess.md).
+Aby uzyskać więcej informacji na temat tych przepisów, zobacz [artykuł Dotyczący oceny ryzyka związanego z prywatnością danych i identyfikowania informacji poufnych](information-protection-deploy-assess.md).
 
-W przypadku zarządzania informacjami przepisy dotyczące prywatności danych najczęściej wymagają następujących czynności:
+W przypadku ładu informacyjnego przepisy dotyczące prywatności danych zwykle wymagają następujących czynności:
 
-- Należy stosować schemat techniczny przechowywania i usuwania danych osobowych przechowywanych w Microsoft 365.
-- Jeśli zamierzasz przechowywać dane osobowe, poinformuj o tym, jak długo dane będą przechowywane, co jest standardową praktyką w front-end systemach sieci Web.
+- Należy zastosować system techniczny do przechowywania i usuwania danych osobowych przechowywanych w Microsoft 365.
+- Jeśli zamierzasz przechowywać dane osobowe, poinformuj podmiot o tym, jak długo będą przechowywane dane, co jest obecnie standardową praktyką w systemach internetowych frontonu.
 - Dane osobowe powinny być chronione przed przypadkowym przetwarzaniem, utratą lub zmianą przy użyciu weryfikowalnych metod.
-- Wszelkie działania wykonywane na danych osobowych należy udokumentować, a ta dokumentacja powinna być zachowana przez określony czas.
+- Wszelkie działania wykonywane względem danych osobowych powinny być udokumentowane, a dokumentacja powinna być przechowywana przez określony czas.
 
-Ze względu na to, że przepisy dotyczące prywatności danych nie są zbyt szczegółowe w zakresie przechowywania i usuwania danych, należy wziąć pod uwagę inne czynniki, które mogą określać wytyczne dotyczące zarządzania informacjami dotyczącymi informacji osobistych przechowywanych w subskrypcji usługi Microsoft 365 firm. Oto kilka przykładów:
+Ponieważ przepisy dotyczące prywatności danych nie są bardzo specyficzne, jeśli chodzi o przechowywanie i usuwanie danych, należy wziąć pod uwagę inne czynniki, które mogą dyktować wytyczne dotyczące ładu informacji dla danych osobowych przechowywanych w subskrypcji Microsoft 365. Oto kilka przykładów:
 
-- Starzeją się konta klientów po 5 latach nieaktywności i wymagają usunięcia lub anonimizacji danych konta po tym punkcie, co wymaga ujednania między systemem przechowywania danych i przepływów pracy związanych z powiadomieniami i inną automatyzacją.
-- Konfigurowanie reguł i procedur dotyczących RODO przez trzy lata po ich przesłoniu, co jest zgodne z harmonogramem przechowywania zasad i procedur obowiązujących w organizacji.
-- Utrzymywanie osobnej subskrypcji na rzecz komunikowania się z użytkownikami za pośrednictwem organizacji pomocy technicznej. Cała komunikacja za pomocą poczty e-mail została zachowana i usunięta po dwóch tygodniach, aby ograniczyć liczbę kompilacji dotyczących prywatności w systemie.
+- Starzenie się kont konsumentów po 5 latach braku aktywności i wymaga usunięcia lub zanonimizowania danych konta po tym punkcie, co wymaga orkiestracji między systemem przechowującym dane i przepływy pracy związane z powiadomieniami i inną automatyzacją.
+- Konfigurowanie reguł przechowywania zasad i procedur związanych z RODO przez trzy lata po ich zastąpieniu, co jest zgodne z harmonogramem przechowywania zasad i procedur organizacji.
+- Utrzymywanie oddzielnej subskrypcji do komunikowania się z konsumentami za pośrednictwem organizacji pomocy technicznej. Wszystkie wiadomości e-mail zostały zachowane i usunięte po dwóch tygodniach, aby zmniejszyć wszelkie narastanie zadłużenia prywatności w systemie.
 
 Kluczowe pytanie, na które należy odpowiedzieć, to: 
 
-- Jak długo informacje zawierające dane osobowe muszą być przechowywane w prawidłowych celach biznesowych, aby uniknąć praktyk "zachowaj to na zawsze"? Musi to być równoważyć się potrzebami przechowywania, aby zapewnić ciągłość działania tej firmy.
+- Jak długo należy przechowywać informacje zawierające dane osobowe z ważnych powodów biznesowych, aby uniknąć praktyk "utrzymywania ich na zawsze"? Musi to być zrównoważone z potrzebami przechowywania w celu zapewnienia ciągłości działania.
 
-Niezależnie od celów prawnych i biznesowych przechowywania informacji osobistych lub ich usuwania firma Microsoft udostępnia szereg możliwości implementowania schematu zarządzania danymi w Microsoft 365.
+Niezależnie od przyczyn prawnych i biznesowych związanych z przechowywaniem danych osobowych lub ich usuwaniem, firma Microsoft oferuje szereg możliwości wdrażania schematu ładu danych w Microsoft 365.
 
-## <a name="managing-information-governance-in-microsoft-365"></a>Zarządzanie zarządzaniem informacjami w Microsoft 365
+## <a name="managing-information-governance-in-microsoft-365"></a>Zarządzanie zarządzaniem zarządzaniem informacjami w Microsoft 365
 
-Aby rozpocząć, zobacz [Zarządzanie informacjami oraz](../compliance/manage-information-governance.md) [Przechowywanie, usuwanie i schowek danych w Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
+Aby rozpocząć, zobacz [Zarządzanie danymi za pomocą usługi Microsoft Purview](../compliance/manage-data-governance.md) i [przechowywania danych, usuwania i niszczenia w Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
 
-### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Tworzenie harmonogramów przechowywania danych dla kontenerów, wiadomości e-mail i zawartości
+### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Opracowywanie harmonogramów przechowywania danych dla kontenerów, poczty e-mail i zawartości
 
 Należy pamiętać o następujących kwestiach:
 
-- Ustanowienie harmonogramu przechowywania danych dla zdefiniowanych typów informacji powinno być traktowane jako wymaganie wstępne w celu wdrożenia dowolnego schematu przechowywania lub usuwania.
+- Ustanowienie harmonogramu przechowywania danych dla zdefiniowanych typów informacji należy uznać za warunek wstępny wdrożenia jakiegokolwiek schematu przechowywania lub usuwania.
 
-- Biorąc pod uwagę liczbę typów informacji, które większość organizacji uznaje za ważne, oraz odpowiadające im harmonogramy przechowywania dużych rekordów, które się z nimi do nich do sobą do nich dochodają, wdrożenie strategii przechowywania danych i zarządzania rekordami wymaga planowania. 
+- Biorąc pod uwagę liczbę typów informacji, które większość organizacji uważa za ważne, oraz odpowiednie harmonogramy przechowywania dużych rekordów, które wraz z nimi istnieją, wdrożenie strategii zarządzania przechowywaniem danych i rekordami wymaga planowania. 
 
-- Kluczem do ustanawiania skutecznej strategii zarządzania danymi tego typu jest skoncentrowanie się na funkcjach biznesowych o najwyższym priorytecie i typach informacji wymagających bardziej formalnego zarządzania. Przykłady to umowy prawne, wyciągi finansowe i dokumentacja dotycząca zgodności z przepisami. Unikaj stosowania oddzielnego harmonogramu przechowywania dla każdego typu informacji. Próbuj korzystać z kategorii ogólnych w jak naj jak najbardziej ogólnym poziomie, na przykład z harmonogramami przechowywania 7 lat dla ogólnej zawartości biznesowej.
+- Kluczem do ustanowienia skutecznej strategii zarządzania danymi tego typu jest skupienie się na funkcjach biznesowych o najwyższym priorytecie i typach informacji, które wymagają bardziej formalnego zarządzania. Przykłady to kontrakty prawne, sprawozdania finansowe i dokumentacja zgodności z przepisami. Staraj się unikać posiadania oddzielnego harmonogramu przechowywania dla każdego typu informacji. Spróbuj jak najwięcej wykorzystać kategorie ogólne, na przykład z harmonogramami przechowywania wynoszącymi 7 lat dla ogólnej zawartości biznesowej.
 
-- Gdy typy informacji osobistych w środowisku będą lepiej znane, ustal harmonogramy przechowywania i usuwania dla tego typu zawartości i dostosuj architekturę informacji, aby ułatwić zarządzanie tego rodzaju informacjami. Na przykład wyodrębnij informacje osobiste w osobnych witrynach, bibliotekach lub folderach z kontrolowanym dostępem.
+- Gdy typy danych osobowych w twoim środowisku będą lepiej znane, ustal harmonogramy przechowywania i usuwania tego typu zawartości oraz dostosuj architekturę informacji, aby ułatwić zarządzanie tego rodzaju informacjami. Na przykład wyizoluj dane osobowe w oddzielnych witrynach, bibliotekach lub folderach z kontrolowanym dostępem.
 
 ### <a name="retention-policies-and-retention-labels"></a>Zasady przechowywania i etykiety przechowywania
 
-Zasady [przechowywania i etykiety przechowywania](../compliance/retention.md) zachowują lub usuwaj zawartość w Microsoft 365, która zawiera dane osobowe lub powinna ich zawierać.
+Użyj [zasad przechowywania i etykiet przechowywania](../compliance/retention.md), aby zachować lub usunąć zawartość w Microsoft 365, która zawiera lub ma zawierać dane osobowe.
 
 ### <a name="records-management"></a>Zarządzanie rekordami
 
-Skorzystaj z etykiet przechowywania, które deklarują zawartość rekordu, aby zaimplementować rozwiązanie [do](../compliance/records-management.md) zarządzania rekordami dla danych w Microsoft 365.
+Użyj etykiet przechowywania, które deklarują zawartość jako rekord, aby zaimplementować [rozwiązanie do zarządzania rekordami](../compliance/records-management.md) dla danych w Microsoft 365.
 
-W przypadku ochrony prywatności danych wnioski osób, których dane dotyczą, są deklarowane przez dział prawny jako rekord i mogą być przechowywane bezterminowo lub usunięte wraz z dowód w celu zachowania zgodności ze specyfikacjami przechowywania dotyczącymi działań prawnych.
+W przypadku ochrony prywatności danych żądania podmiotów danych otrzymane przez dział prawny są deklarowane jako rekordy i mogą być przechowywane na czas nieokreślony lub usuwane z dowodem, aby przestrzegać specyfikacji przechowywania działań regulacyjnych.

@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano limity w podstawowym przypadku zbierania elektronicznych materiałów dowodowych w Microsoft 365.
-ms.openlocfilehash: 2d920fbe5973d07b7da656d6247038ab785bbe5c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 67f15bb39ed75f40a8ef42747c0d4e2dfcb1297d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822655"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949614"
 ---
-# <a name="limits-in-core-ediscovery"></a>Limity w podstawowym zbierania elektronicznych materiałów dowodowych
+# <a name="limits-in-ediscovery-standard"></a>Limity w zakresie zbierania elektronicznych materiałów dowodowych (Standardowa)
 
-W poniższej tabeli wymieniono limity dotyczące podstawowych przypadków zbierania elektronicznych materiałów dowodowych i blokad skojarzonych z podstawowym przypadkiem zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji na temat podstawowych zbierania elektronicznych materiałów dowodowych, zobacz [Omówienie podstawowego zbierania elektronicznych materiałów dowodowych](./get-started-core-ediscovery.md).
+W poniższej tabeli wymieniono limity dotyczące podstawowych przypadków zbierania elektronicznych materiałów dowodowych i blokad skojarzonych z podstawowym przypadkiem zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji o usłudze Microsoft Purview eDiscovery (Standard), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych (Standard)](./get-started-core-ediscovery.md).
     
   | Opis limitu | Limit |
   |:-----|:-----|
@@ -44,4 +44,4 @@ W poniższej tabeli wymieniono limity dotyczące podstawowych przypadków zbiera
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-Aby uzyskać więcej informacji na temat limitów związanych z wyszukiwaniami i eksportami skojarzonymi z podstawowym przypadkiem zbierania elektronicznych materiałów dowodowych, zobacz [Limity dotyczące wyszukiwania zawartości i podstawowego zbierania elektronicznych materiałów dowodowych](limits-for-content-search.md).
+Aby uzyskać więcej informacji na temat limitów związanych z wyszukiwaniami i eksportami skojarzonymi ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa), zobacz [Limity dotyczące wyszukiwania zawartości i zbierania elektronicznych materiałów dowodowych (Standard)](limits-for-content-search.md).

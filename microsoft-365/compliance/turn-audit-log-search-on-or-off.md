@@ -1,5 +1,5 @@
 ---
-title: Włączanie i wyłączanie inspekcji
+title: Włącz lub wyłącz inspekcję
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,66 +19,66 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Informacje na temat włączania lub wyłączania funkcji przeszukiwania dziennika inspekcji w Centrum zgodności platformy Microsoft 365 w celu umożliwienia administratorom przeszukiwania dziennika inspekcji.
-ms.openlocfilehash: e36fe410ed75522b0d531f2f9f7901b78f4974eb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Jak włączyć lub wyłączyć funkcję wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, aby włączyć lub wyłączyć możliwość przeszukiwania dziennika inspekcji przez administratorów.
+ms.openlocfilehash: 587c7f98cd04eef618508e096f290d1d299ec096
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316117"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944530"
 ---
-# <a name="turn-auditing-on-or-off"></a>Włączanie i wyłączanie inspekcji
+# <a name="turn-auditing-on-or-off"></a>Włącz lub wyłącz inspekcję
 
-Rejestrowanie inspekcji będzie domyślnie włączone dla Microsoft 365 i Office 365 przedsiębiorstw. Jednak podczas konfigurowania nowej organizacji Microsoft 365 lub Office 365 należy zweryfikować stan inspekcji dla organizacji. Aby uzyskać instrukcje, [zobacz sekcję Sprawdzanie](#verify-the-auditing-status-for-your-organization) stanu inspekcji organizacji w tym artykule. 
+Rejestrowanie inspekcji zostanie domyślnie włączone dla organizacji Microsoft 365 i Office 365 przedsiębiorstw. Jednak podczas konfigurowania nowej organizacji Microsoft 365 lub Office 365 należy zweryfikować stan inspekcji organizacji. Aby uzyskać instrukcje, zobacz [sekcję Weryfikowanie stanu inspekcji organizacji](#verify-the-auditing-status-for-your-organization) w tym artykule. 
 
-W przypadku włączonej inspekcji w aplikacji usługi Centrum zgodności platformy Microsoft 365 działania użytkowników i administratorów w organizacji są rejestrowane w dzienniku inspekcji i przechowywane przez 90 dni, a w zależności od licencji przypisanej do użytkowników do nich maksymalnie rok. Twoja organizacja może jednak nie chcieć rejestrować i zachowywać danych dziennika inspekcji. W takich przypadkach administrator globalny może zadecydować o wyłączenia inspekcji w Microsoft 365.
+Gdy inspekcja w portalu zgodności usługi Microsoft Purview jest włączona, aktywność użytkownika i administratora w organizacji jest rejestrowana w dzienniku inspekcji i przechowywana przez 90 dni i do jednego roku w zależności od licencji przypisanej do użytkowników. Jednak organizacja może mieć powody, dla których nie chce rejestrować i zachowywać danych dziennika inspekcji. W takich przypadkach administrator globalny może zdecydować o wyłączeniu inspekcji w Microsoft 365.
 
 > [!IMPORTANT]
-> Jeśli wyłączysz inspekcję w programie Microsoft 365, nie możesz uzyskać dostępu do danych inspekcji dla organizacji przy użyciu interfejsu API działań zarządzania Office 365 lub programu Microsoft Sentinel. Wyłączenie inspekcji przez czynności opisane w tym artykule oznacza, że żadne wyniki nie zostaną zwrócone podczas przeszukiwania dziennika inspekcji przy użyciu programu Centrum zgodności platformy Microsoft 365 lub po uruchomieniu polecenia cmdlet **Search-UnifiedAuditLog** w programie Exchange Online PowerShell. Oznacza to również, że dzienniki inspekcji nie będą dostępne za pośrednictwem interfejsu API działań zarządzania Office 365 lub programu Microsoft Sentinel.
+> Jeśli wyłączysz inspekcję w Microsoft 365, nie możesz użyć interfejsu API działania zarządzania Office 365 ani usługi Microsoft Sentinel, aby uzyskać dostęp do danych inspekcji dla organizacji. Wyłączenie inspekcji przez wykonanie kroków opisanych w tym artykule oznacza, że żadne wyniki nie zostaną zwrócone podczas przeszukiwania dziennika inspekcji przy użyciu portalu zgodności lub po uruchomieniu polecenia cmdlet **Search-UnifiedAuditLog** w programie Exchange Online programu PowerShell. Oznacza to również, że dzienniki inspekcji nie będą dostępne za pośrednictwem interfejsu API działania zarządzania Office 365 ani usługi Microsoft Sentinel.
   
 ## <a name="before-you-turn-auditing-on-or-off"></a>Przed włączeniem lub wyłączeniem inspekcji
 
-- Aby włączyć lub wyłączyć inspekcję w organizacji Exchange Online w organizacji, musisz mieć przypisaną rolę Dzienniki inspekcji Microsoft 365 organizacji. Domyślnie ta rola jest przypisana do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie Uprawnienia w  centrum administracyjnym usługi Exchange administracyjnego. Administratorzy globalni w Microsoft 365 są członkami grupy ról Zarządzanie organizacją w programie Exchange Online.
+- Musisz mieć przypisaną rolę Dzienniki inspekcji w Exchange Online, aby włączyć lub wyłączyć inspekcję w organizacji Microsoft 365. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w centrum administracyjnym Exchange. Administratorzy globalni w Microsoft 365 są członkami grupy ról Zarządzanie organizacją w Exchange Online.
 
     > [!NOTE]
-    > Aby włączyć lub wyłączyć inspekcję Exchange Online użytkownicy muszą mieć przypisane uprawnienia w aplikacji. Jeśli przypiszesz użytkownikom rolę Dzienniki inspekcji na  stronie Uprawnienia w Centrum zgodności platformy Microsoft 365, nie będą oni mogli włączyć ani wyłączyć inspekcji. Jest to spowodowane tym, że polecenie cmdlet źródłowe jest poleceniem cmdlet programu Exchange Online programu PowerShell.
+    > Użytkownicy muszą mieć przypisane uprawnienia w Exchange Online, aby włączyć lub wyłączyć inspekcję. Jeśli przypiszesz użytkownikom rolę Dzienniki inspekcji na stronie **Uprawnienia** w portalu zgodności, nie będą oni mogli włączać ani wyłączać inspekcji. Dzieje się tak, ponieważ podstawowe polecenie cmdlet jest Exchange Online poleceniem cmdlet programu PowerShell.
 
-- Aby uzyskać instrukcje krok po kroku dotyczące przeszukiwania dziennika inspekcji, zobacz [Przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md). Aby uzyskać więcej informacji na temat interfejsu API Microsoft 365 zarządzania, zobacz [Wprowadzenie do Microsoft 365 API zarządzania](/office/office-365-management-api/get-started-with-office-365-management-apis).
+- Aby uzyskać instrukcje krok po kroku dotyczące przeszukiwania dziennika inspekcji, zobacz [Przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md). Aby uzyskać więcej informacji na temat interfejsu API działania zarządzania Microsoft 365, zobacz [Wprowadzenie z interfejsami API zarządzania Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-## <a name="verify-the-auditing-status-for-your-organization"></a>Sprawdzanie stanu inspekcji dla organizacji
+## <a name="verify-the-auditing-status-for-your-organization"></a>Weryfikowanie stanu inspekcji organizacji
 
-Aby sprawdzić, czy inspekcja jest włączona w organizacji, w programie PowerShell można uruchomić [następujące Exchange Online:](/powershell/exchange/connect-to-exchange-online-powershell)
+Aby sprawdzić, czy inspekcja jest włączona dla organizacji, możesz uruchomić następujące polecenie w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 ```
 
-Wartość właściwości `True`  _UnifiedAuditLogIngestionEnabled_ wskazuje, że inspekcja jest włączona. Wartość of oznacza `False` , że inspekcja nie jest włączona.
+Wartość `True` właściwości  _UnifiedAuditLogIngestionEnabled_ wskazuje, że inspekcja jest włączona. Wartość `False` wskazuje, że inspekcja nie jest włączona.
 
 > [!NOTE]
-> Pamiętaj o uruchomieniu poprzedniego polecenia w programie Exchange Online PowerShell. Za pomocą programu PowerShell & zabezpieczeń i zgodności nie można uruchomić tego polecenia.
+> Pamiętaj, aby uruchomić poprzednie polecenie w programie Exchange Online programu PowerShell. Do uruchomienia tego polecenia nie można użyć programu PowerShell security & Compliance.
 
 ## <a name="turn-on-auditing"></a>Włączanie inspekcji
 
-Jeśli inspekcja nie jest włączona w organizacji, możesz ją włączyć w programie Centrum zgodności platformy Microsoft 365 lub przy użyciu programu Exchange Online PowerShell. Włączenie inspekcji może potrwać kilka godzin, zanim będzie można zwrócić wyniki podczas przeszukiwania dziennika inspekcji.
+Jeśli inspekcja nie jest włączona dla organizacji, możesz ją włączyć w portalu zgodności lub przy użyciu programu Exchange Online programu PowerShell. Może upłynąć kilka godzin po włączeniu inspekcji, zanim będzie można zwrócić wyniki podczas przeszukiwania dziennika inspekcji.
   
-### <a name="use-the-compliance-center-to-turn-on-auditing"></a>Włączanie inspekcji za pomocą Centrum zgodności
+### <a name="use-the-compliance-center-to-turn-on-auditing"></a>Używanie centrum zgodności do włączania inspekcji
 
 1. Przejdź do i <https://compliance.microsoft.com> zaloguj się.
 
-2. W lewym okienku nawigacji okna Centrum zgodności platformy Microsoft 365 pozycję **Inspekcja**.
+2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Inspekcja**.
 
-   Jeśli w organizacji nie włączona jest inspekcja, zostanie wyświetlony transparent z monitem o rozpoczęcie rejestrowania aktywności użytkowników i administratorów.
+   Jeśli inspekcja nie jest włączona dla Organizacji, zostanie wyświetlony baner z monitem o rozpoczęcie rejestrowania aktywności użytkownika i administratora.
 
-   ![Transparent na stronie Inspekcja.](../media/AuditingBanner.png)
+   ![Baner na stronie Inspekcja.](../media/AuditingBanner.png)
 
-3. Kliknij baner **Rozpocznij rejestrowanie aktywności użytkowników i administratorów** .
+3. Kliknij baner **Start recording user and admin activity (Rozpocznij rejestrowanie użytkownika i działania administratora** ).
 
-   Może upłynieć do 60 minut, aby zmiana obowiązywała.
+   Zmiana może potrwać do 60 minut.
 
-### <a name="use-powershell-to-turn-on-auditing"></a>Włączanie inspekcji za pomocą programu PowerShell
+### <a name="use-powershell-to-turn-on-auditing"></a>Włączanie inspekcji przy użyciu programu PowerShell
 
-1. [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Uruchom następujące polecenie programu PowerShell, aby włączyć inspekcję.
 
@@ -86,13 +86,13 @@ Jeśli inspekcja nie jest włączona w organizacji, możesz ją włączyć w pro
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
 
-    Zostanie wyświetlony komunikat informujący, że może upłynieć do 60 minut, aby zmiana została w życie.
+    Zostanie wyświetlony komunikat informujący o tym, że może upłynąć do 60 minut, aż zmiana zostanie wprowadzona.
   
 ## <a name="turn-off-auditing"></a>Wyłączanie inspekcji
 
-Aby wyłączyć inspekcję Exchange Online należy użyć programu PowerShell.
+Aby wyłączyć inspekcję, należy użyć Exchange Online programu PowerShell.
   
-1. [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Uruchom następujące polecenie programu PowerShell, aby wyłączyć inspekcję.
 
@@ -102,40 +102,40 @@ Aby wyłączyć inspekcję Exchange Online należy użyć programu PowerShell.
 
 3. Po chwili sprawdź, czy inspekcja jest wyłączona (wyłączona). Istnieją dwa sposoby wykonywania tej czynności:
 
-    - W Exchange Online PowerShell uruchom następujące polecenie:
+    - W Exchange Online programu PowerShell uruchom następujące polecenie:
 
       ```powershell
       Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
       ```
 
-      Wartość właściwości  `False`  _UnifiedAuditLogIngestionEnabled_ wskazuje, że inspekcja jest wyłączona.
+      Wartość  `False` właściwości  _UnifiedAuditLogIngestionEnabled_ wskazuje, że inspekcja jest wyłączona.
 
-    - Przejdź do strony **Inspekcja** w Centrum zgodności platformy Microsoft 365.
+    - Przejdź do strony **Inspekcja** w portalu zgodności.
 
-      Jeśli w organizacji nie włączona jest inspekcja, zostanie wyświetlony transparent z monitem o rozpoczęcie rejestrowania aktywności użytkowników i administratorów.
+      Jeśli inspekcja nie jest włączona dla Organizacji, zostanie wyświetlony baner z monitem o rozpoczęcie rejestrowania aktywności użytkownika i administratora.
 
-## <a name="audit-records-when-auditing-status-is-changed"></a>Rekordy inspekcji w przypadku zmiany stanu inspekcji
+## <a name="audit-records-when-auditing-status-is-changed"></a>Inspekcja rekordów po zmianie stanu inspekcji
 
-Zmiany stanu inspekcji w organizacji będą podlegały inspekcji. Oznacza to, że rekordy inspekcji są rejestrowane, gdy inspekcja jest włączona lub wyłączona. Te rekordy inspekcji można Exchange przeszukiwać w dzienniku inspekcji administratora.
+Zmiany stanu inspekcji w organizacji są poddawane inspekcji. Oznacza to, że rekordy inspekcji są rejestrowane, gdy inspekcja jest włączona lub wyłączona. Możesz wyszukać te rekordy inspekcji w dzienniku inspekcji administratora Exchange.
 
-Aby przeszukać Exchange inspekcji w poszukiwaniu rekordów inspekcji generowanych podczas włączania lub wyłączania inspekcji, uruchom następujące polecenie w [programie Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+Aby przeszukać dziennik inspekcji administratora Exchange w poszukiwaniu rekordów inspekcji generowanych podczas włączania lub wyłączania inspekcji, uruchom następujące polecenie w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
 ```
 
-Rekordy inspekcji dotyczące tych zdarzeń zawierają informacje dotyczące zmiany stanu inspekcji, administratora, który go zmienił, oraz adres IP komputera użytego do wymusania tej zmiany. Na poniższych zrzutach ekranu przedstawiono rekordy inspekcji odpowiadające zmianie stanu inspekcji w organizacji.
+Rekordy inspekcji dla tych zdarzeń zawierają informacje o tym, kiedy stan inspekcji został zmieniony, administrator, który go zmienił, oraz adres IP komputera, który został użyty do wprowadzenia zmiany. Na poniższych zrzutach ekranu przedstawiono rekordy inspekcji, które odpowiadają zmianie stanu inspekcji w organizacji.
 
-### <a name="audit-record-for-turning-on-auditing"></a>Rekord inspekcji włączania inspekcji
+### <a name="audit-record-for-turning-on-auditing"></a>Rekord inspekcji dotyczący włączania inspekcji
 
-![Rekord inspekcji włączania inspekcji](../media/AuditStatusAuditingEnabled.png)
+![Rekord inspekcji dotyczący włączania inspekcji](../media/AuditStatusAuditingEnabled.png)
 
-`Confirm` Wartość właściwości *CmdletParameters* wskazuje, że ujednolicone rejestrowanie inspekcji zostało włączone w centrum zgodności lub przez uruchomienie polecenia cmdlet **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled** $true cmdlet.
+Wartość `Confirm` właściwości *CmdletParameters* wskazuje, że ujednolicone rejestrowanie inspekcji zostało włączone w centrum zgodności lub poprzez uruchomienie polecenia cmdlet **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true.**
 
-### <a name="audit-record-for-turning-off-auditing"></a>Rekord inspekcji w celu wyłączenia inspekcji
+### <a name="audit-record-for-turning-off-auditing"></a>Rekord inspekcji umożliwiający wyłączenie inspekcji
 
-![Rekord inspekcji w celu wyłączenia inspekcji](../media/AuditStatusAuditingDisabled.png)
+![Rekord inspekcji umożliwiający wyłączenie inspekcji](../media/AuditStatusAuditingDisabled.png)
 
-Wartość nie `Confirm` jest uwzględniana we właściwości *CmdletParameters* . Oznacza to, że ujednolicone rejestrowanie inspekcji zostało wyłączone przez uruchomienie polecenia polecenia $false **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled** .
+Wartość parametru `Confirm` nie jest uwzględniana we właściwości *CmdletParameters* . Oznacza to, że ujednolicone rejestrowanie inspekcji zostało wyłączone przez uruchomienie polecenia **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** .
 
-Aby uzyskać więcej informacji na temat przeszukiwania Exchange inspekcji administratora, zobacz [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
+Aby uzyskać więcej informacji na temat przeszukiwania dziennika inspekcji Exchange administratora, zobacz [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).

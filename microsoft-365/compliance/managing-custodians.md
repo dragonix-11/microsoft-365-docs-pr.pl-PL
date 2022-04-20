@@ -1,5 +1,5 @@
 ---
-title: Praca z opiekunami w Advanced eDiscovery
+title: Praca z opiekunami w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,30 +17,30 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak zarządzać danymi w przypadku postępowania sądowego za Advanced eDiscovery w narzędziu do zarządzania nimi.
-ms.openlocfilehash: d621e511f0607c77d05b27f5deae2b5f85d09eaa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak zarządzać danymi w przypadku sprawy prawnej za pomocą narzędzia do zarządzania opiekunami w usłudze eDiscovery (Premium).
+ms.openlocfilehash: 75655b48cf0061879edf5ea559712daa29ce4893
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984967"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948446"
 ---
-# <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>Pracuj z opiekunami i źródłami danych bez opiekunów w Advanced eDiscovery
+# <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>Praca z opiekunami i źródłami danych bez opieki w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 
-Gdy organizacja odpowie na badanie prawne, przepływ pracy w celu zidentyfikowania, zachowania i zbierania potencjalnie istotnej zawartości będzie oparty na osobach w organizacji, które są elementami przechowaniami odpowiednich danych. W przypadku zbierania elektronicznych materiałów dowodowych te osoby są nazywane po prostu osobami przechowywania *danych i są* określane jako "osoby mające kontrolę administracyjną nad dokumentem lub plikiem elektronicznym". Na przykład opiekunem wiadomości e-mail może być właściciel skrzynki pocztowej zawierającej odpowiednią wiadomość.
+Gdy organizacja odpowiada na badanie prawne, przepływ pracy wokół identyfikowania, zachowywania i zbierania potencjalnie odpowiednich treści zależy od osób w organizacji, które są strażnikami odpowiednich danych. W przypadku zbierania elektronicznych materiałów dowodowych osoby te są nazywane *opiekunami danych* (lub tylko *opiekunami*) i są definiowane jako "osoby mające kontrolę administracyjną nad dokumentem lub plikiem elektronicznym". Na przykład opiekun wiadomości e-mail może być właścicielem skrzynki pocztowej zawierającej odpowiednią wiadomość.
 
-Ponadto w skrzynkach pocztowych i witrynach może się znaleźć zawartość, która nie jest skojarzona z elementem dojecharczym, ale jest związana ze sprawą. Lokalizacje zawartości, w których osoby przetwarzacze sprawy nie mają kontroli administracyjnej, ale mogą być właścicielami odpowiednich danych, są nazywane źródłami danych niebędącyi *tylko jakością.*
+Ponadto może istnieć zawartość znajdująca się w skrzynkach pocztowych i witrynach, które nie są skojarzone z opiekunem, ale jest to istotne w przypadku. Lokalizacje zawartości, w których opiekunowie spraw nie mają kontroli administracyjnej, ale mogą być właścicielami odpowiednich danych, są nazywane *źródłami danych bez nadzoru*.
 
-W przypadku Advanced eDiscovery zespoły prawne mogą dodawać osoby w swojej organizacji jako osoby przechowania oraz identyfikować i zachowywać źródła danych typu chronień, takie jak skrzynki pocztowe programu Exchange, konta OneDrive oraz witryny sieci SharePoint i Teams. Mogą również identyfikować i zachowywać źródła danych, które nie są chronią. Dzięki wbudowanemu narzędziu do przechowywania i zarządzania źródłem danych w programie Advanced eDiscovery organizacje mogą zabezpieczyć informacje przechowywane elektronicznie przed przypadkowym (lub celowym) usunięciem. Pozwala to wyeliminować czasochłonny i podatne na błędy proces ręcznego wykonywania procesów prawnych.
+W przypadku zbierania elektronicznych materiałów dowodowych (Premium) zespoły prawne mogą dodawać osoby w swojej organizacji jako opiekunów oraz identyfikować i zachowywać źródła danych opieki, takie jak skrzynki pocztowe Exchange, konta OneDrive oraz witryny SharePoint i Teams. Mogą również identyfikować i zachowywać źródła danych bez nadzoru. Korzystając z wbudowanego narzędzia do zarządzania źródłami danych i opiekuna w usłudze eDiscovery (Premium), organizacje mogą zabezpieczyć przechowywane elektronicznie informacje przed niezamierzonym (lub zamierzonym) usunięciem. Pozwala to wyeliminować czasochłonny i podatny na błędy proces ręcznego wykonywania legalnych procesów przechowywania.
 
 Aby uzyskać więcej informacji na temat pracy z opiekunami, zobacz następujące artykuły:
 
-- [Dodawanie osób do sprawy](add-custodians-to-case.md)
+- [Dodaj opiekunów do sprawy](add-custodians-to-case.md)
 
-- [Zbiorcze dodawanie osób do sprawy](bulk-add-custodians.md)
+- [Zbiorcze dodawanie opiekunów do sprawy](bulk-add-custodians.md)
 
-- [Zarządzanie opiekunami w przypadku](manage-new-custodians.md)
+- [Zarządzanie opiekunami w sprawie](manage-new-custodians.md)
 
-- [Wyświetlanie aktywności w uchyłanych danych](view-custodian-activity.md)
+- [Wyświetl aktywność opiekuna](view-custodian-activity.md)
 
-- [Dodawanie do sprawy niebędące niedobczasami źródeł danych](non-custodial-data-sources.md)
+- [Dodaj źródła danych bez opiekunów do sprawy](non-custodial-data-sources.md)

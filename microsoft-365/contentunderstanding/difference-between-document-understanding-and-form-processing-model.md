@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się więcej o kluczowych różnicach między modelem zrozumienia dokumentu a modelem przetwarzania formularzy.
-ms.openlocfilehash: f6fe6e821e41b47bcce6ef157d971245fdd072b8
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 571516a7112e3f145d9e3ca392ad3488a33b4887
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882291"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947830"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Różnice między interpretacją dokumentów a modelami przetwarzania formularzy 
 
@@ -80,7 +80,7 @@ Poniższa tabela służy do zrozumienia, kiedy używać przetwarzania formularzy
 | Lokalizacje | Wytrenowane dla pojedynczej biblioteki dokumentów.| Można zastosować do wielu bibliotek.|
 | Obsługiwane typy plików| Trenuj w formacie PDF, JPG, PNG, łącznie 50 MB i 500 stron.| Wytrenuj pliki PDF, Office lub e-mail 5–10, w tym negatywne przykłady.<br>Office pliki są obcinane przy użyciu 64 tys. znaków. Pliki zeskanowane przez protokół OCR są ograniczone do 20 stron.|
 | Integracja z zarządzanymi metadanymi | Nie | Tak, przez trenowanie wyodrębniania jednostek odwołującego się do skonfigurowanego pola zarządzanych metadanych.|
-| Integracja funkcji zgodności po włączeniu Microsoft Information Protection | Ustaw opublikowane etykiety przechowywania.<br>Nadchodzą etykiety poufności. | Ustaw opublikowane etykiety przechowywania.<br>Ustaw opublikowane etykiety poufności. |
+| Integracja funkcji zgodności z usługą Microsoft Purview Information Protection | Ustaw opublikowane etykiety przechowywania.<br>Nadchodzą etykiety poufności ustawić. | Ustaw opublikowane etykiety przechowywania.<br>Ustaw opublikowane etykiety poufności. |
 | Obsługiwane regiony| Przetwarzanie formularzy opiera się na usłudze Power Platform. Aby uzyskać informacje o globalnej dostępności platformy Power Platform i narzędzia AI Builder, zobacz [Dostępność platformy Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Dostępne we wszystkich regionach.|
 | Koszt transakcyjny | Używa środków narzędzia AI Builder.<br>Środki można kupić w partiach po 1 mln.<br>Środki na korzystanie z 1 mln są uwzględniane w przypadku zakupu ponad 300 SharePoint Syntex licencji.<br>Środki w wysokości 1 mln umożliwią przetwarzanie 2000 stron plików.<br>| nd. |
 | Pojemność | Używa domyślnego środowiska platformy Power Platform (środowiska niestandardowe z obsługiwaną bazą danych Dataverse). | Nie ma ograniczeń pojemności.|

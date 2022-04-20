@@ -1,5 +1,5 @@
 ---
-title: Eksportowanie dokumentów z zestawu recenzji
+title: Eksportuj dokumenty z zestawu do przeglądu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,111 +15,111 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak zaznaczać i eksportować zawartość z zestawu Advanced eDiscovery dla prezentacji lub recenzji zewnętrznych.
+description: Dowiedz się, jak wybierać i eksportować zawartość z zestawu przeglądów zbierania elektronicznych materiałów dowodowych (Premium) dla prezentacji lub przeglądów zewnętrznych.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 61de8fed9c5bcb00daf3a8273f3ebfc86fe75a35
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: f0366843cab17092f3690992aa0cff5205414f86
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449460"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948732"
 ---
-# <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Eksportowanie dokumentów z zestawu recenzji w programie Advanced eDiscovery
+# <a name="export-documents-from-a-review-set-in-ediscovery-premium"></a>Eksportowanie dokumentów z zestawu przeglądów w usłudze eDiscovery (Premium)
 
-Eksportowanie umożliwia użytkownikom dostosowywanie zawartości zawartej w pakiecie pobierania podczas eksportowania dokumentu z zestawu recenzji w pakiecie Advanced eDiscovery.
+Eksportowanie umożliwia użytkownikom dostosowywanie zawartości dołączonej do pakietu pobierania podczas eksportowania dokumentu z zestawu przeglądów w usłudze eDiscovery (Premium).
 
-Aby wyeksportować dokumenty z zestawu recenzji:
+Aby wyeksportować dokumenty z zestawu przeglądów:
 
-1. W Centrum zgodności platformy Microsoft 365 otwórz sprawę Advanced eDiscovery, wybierz kartę Zestawy recenzji, a następnie wybierz  zestaw recenzji, który chcesz wyeksportować.
+1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), wybierz kartę **Zestawy przeglądów**, a następnie wybierz zestaw przeglądów, który chcesz wyeksportować.
 
-2. W zestawie recenzji kliknij pozycję **ActionExport** > .
+2. W zestawie przeglądów kliknij pozycję **ActionExport** > .
 
-   Narzędzie Eksportowanie wyświetli stronę wysuwu z ustawieniami, aby skonfigurować eksportowanie. Niektóre opcje są domyślnie zaznaczone, ale można je zmienić. Opisy opcji eksportu, które można skonfigurować, można znaleźć w poniższej sekcji.
+   Narzędzie Eksportuj wyświetla stronę wysuwaną z ustawieniami umożliwiającymi skonfigurowanie eksportu. Niektóre opcje są wybierane domyślnie, ale można je zmienić. Opisy opcji eksportu, które można skonfigurować, można znaleźć w poniższej sekcji.
 
-   ![Opcje konfiguracji eksportowania elementów z zestawu recenzji.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
+   ![Opcje konfiguracji eksportowania elementów z zestawu przeglądów.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-3. Po skonfigurowaniu eksportu kliknij pozycję **Eksportuj** , aby rozpocząć proces eksportowania. W zależności od opcji wybranej w sekcji  Opcje danych wyjściowych możesz uzyskać dostęp do wyeksportowanych plików, pobierając je bezpośrednio lub na koncie usługi Azure Storage Twojej organizacji.
+3. Po skonfigurowaniu eksportu kliknij pozycję **Eksportuj** , aby rozpocząć proces eksportowania. W zależności od opcji wybranej w sekcji **Opcje wyjściowe** możesz uzyskać dostęp do plików eksportu, pobierając je bezpośrednio lub na koncie usługi Azure Storage organizacji.
 
 > [!NOTE]
-> Zadania eksportowania są zachowywane przez czas życia sprawy. Jednak musisz pobrać zawartość z zadania eksportu w ciągu 30 dni od ukończenia zadania eksportowania.
+> Zadania eksportu są zachowywane przez całe życie sprawy. Należy jednak pobrać zawartość z zadania eksportu w ciągu 30 dni od zakończenia zadania eksportu.
 
-## <a name="export-options"></a>Opcje eksportowania
+## <a name="export-options"></a>Opcje eksportu
 
-Skonfiguruj eksportowanie za pomocą następujących opcji. Nie wszystkie opcje są dozwolone dla niektórych opcji wyjściowych, w szczególności w przypadku eksportowania plików tekstowych i redagowanych plików PDF nie są dozwolone podczas eksportowania do formatu PST.
+Użyj następujących opcji, aby skonfigurować eksport. Nie wszystkie opcje są dozwolone w przypadku niektórych opcji wyjściowych, w szczególności eksportowanie plików tekstowych i zredagowanych plików PDF nie jest dozwolone podczas eksportowania do formatu PST.
 
 - **Nazwa eksportu**: nazwa zadania eksportu. Zostanie on użyty do nazwania plików ZIP, które zostaną pobrane.
 
-- **Opis**: pole tekstowe bezpłatne, w przypadku których możesz dodać opis.
+- **Opis**: Pole z bezpłatnym tekstem umożliwiające dodanie opisu.
 
 - **Eksportowanie tych dokumentów**
 
-  - Tylko wybrane dokumenty: ta opcja powoduje wyeksportowanie tylko obecnie zaznaczonych dokumentów. Ta opcja jest dostępna tylko po wybraniu elementów w zestawie recenzji.
+  - Tylko wybrane dokumenty: ta opcja eksportuje tylko aktualnie wybrane dokumenty. Ta opcja jest dostępna tylko wtedy, gdy elementy są zaznaczone w zestawie przeglądów.
   
-  - Wszystkie filtrowane dokumenty: ta opcja powoduje wyeksportowanie dokumentów z aktywnego filtru. Ta opcja jest dostępna tylko po zastosowaniu filtru do zestawu recenzji.
+  - Wszystkie filtrowane dokumenty: ta opcja eksportuje dokumenty w aktywnym filtrze. Ta opcja jest dostępna tylko wtedy, gdy filtr jest stosowany do zestawu przeglądów.
   
-  - Wszystkie dokumenty w zestawie recenzji: ta opcja powoduje wyeksportowanie wszystkich dokumentów z zestawu recenzji.
+  - Wszystkie dokumenty w zestawie przeglądów: ta opcja eksportuje wszystkie dokumenty w zestawie przeglądów.
 
-- **Opcje wyjściowe**: Wyeksportowana zawartość jest dostępna do pobrania bezpośrednio za pośrednictwem przeglądarki sieci Web lub może zostać wysłana na konto usługi Azure Storage. Pierwsze dwie opcje umożliwiają pobieranie bezpośrednie.
+- **Opcje wyjściowe**: wyeksportowana zawartość jest dostępna do pobrania bezpośrednio za pośrednictwem przeglądarki internetowej lub może zostać wysłana na konto usługi Azure Storage. Dwie pierwsze opcje umożliwiają bezpośrednie pobieranie.
   
-  - Tylko raporty: Tworzony jest tylko plik podsumowania i ładowania.
+  - Tylko raporty: tworzone są tylko pliki podsumowania i ładowania.
   
-  - Pliki luźne i pliki PST (jeśli to możliwe) są dodawane do plików PST: pliki są eksportowane w formacie podobnym do oryginalnej struktury katalogów widocznej dla użytkowników w ich natywnych aplikacjach.  Aby uzyskać więcej informacji, zobacz sekcję [Luźne pliki i struktura eksportu PST](#loose-files-and-pst-export-structure) .
+  - Luźne pliki i adresy PST (wiadomość e-mail jest dodawana do pstów, gdy jest to możliwe): pliki są eksportowane w formacie podobnym do oryginalnej struktury katalogów widocznej dla użytkowników w ich aplikacjach natywnych.  Aby uzyskać więcej informacji, zobacz sekcję [Loose files and PST export structure (Luźne pliki i struktura eksportu PST](#loose-files-and-pst-export-structure) ).
   
-  - Skondensowana struktura katalogu: pliki są eksportowane i uwzględniane w pliku do pobrania.
+  - Skondensowana struktura katalogów: pliki są eksportowane i uwzględniane w pobieraniu.
   
-  - Skondensowana struktura katalogu wyeksportowana do Twojego konta usługi Azure Storage: Pliki są eksportowane do konta usługi Azure Storage Twojej organizacji. W przypadku tej opcji musisz podać adres URL kontenera na koncie usługi Azure Storage, aby wyeksportować pliki. Musisz również udostępnić token SAS (Shared Access Signature) dla swojego konta Storage Azure. Aby uzyskać więcej informacji, zobacz [Eksportowanie dokumentów w ramach zestawu recenzji do konta Storage Azure](download-export-jobs.md).
+  - Skondensowana struktura katalogów wyeksportowana do konta usługi Azure Storage: pliki są eksportowane na konto usługi Azure Storage organizacji. Aby skorzystać z tej opcji, musisz podać adres URL kontenera na koncie usługi Azure Storage w celu wyeksportowania plików. Musisz również podać token sygnatury dostępu współdzielonego dla konta usługi Azure Storage. Aby uzyskać więcej informacji, zobacz [Eksportowanie dokumentów w przeglądzie ustawionym na konto usługi Azure Storage](download-export-jobs.md).
 
-- **Uwzględnij**
+- **Obejmują**
   
-  - Tagi: Jeśli ta opcja jest zaznaczona, informacje o tagowaniu są uwzględniane w pliku ładowania.
+  - Tagi: po wybraniu tagowania informacje są uwzględniane w pliku ładowania.
   
-  - Pliki tekstowe: Ta opcja uwzględnia wyodrębnione wersje tekstowe plików natywnych w eksporcie.
+  - Pliki tekstowe: Ta opcja obejmuje wyodrębnione wersje tekstowe plików natywnych w eksporcie.
   
-  - Zastępowanie redagowanych natywnych plików przekonwertowanych plikami PDF: Jeśli podczas przeglądania zostaną wygenerowane redagowane pliki PDF, te pliki będą dostępne do wyeksportowania. Możesz wybrać eksportowanie tylko plików natywnych, które zostały redagowane (nie zaznaczając tej opcji) lub możesz wybrać tę opcję, aby wyeksportować pliki PDF zawierające rzeczywiste ponowne działania.
+  - Zastąp zredagowane elementy natywne przekonwertowanymi plikami PDF: w przypadku wygenerowania zredagowanych plików PDF podczas przeglądu te pliki są dostępne do eksportowania. Możesz wyeksportować tylko pliki natywne, które zostały zredagowane (nie wybierając tej opcji) lub wybrać tę opcję, aby wyeksportować pliki PDF zawierające rzeczywiste redakcje.
 
-  - Pliki PDF konwersacji zamiast pojedynczych wiadomości czatu: Zaznacz to pole wyboru, aby wyeksportować konwersacje na czacie w pliku PDF. Wszystkie wiadomości czatu z tej samej konwersacji są eksportowane do tego samego pliku PDF. Jeśli pozostawisz to pole wyboru niezaznaczane, każda unikatowa wiadomość w konwersacji na czacie jest eksportowana jako autonomiczny element. Plik jest eksportowany w tym samym formacie, w który został zapisany, co w skrzynce pocztowej. W przypadku określonej konwersacji otrzymujesz wiele plików msg.
+  - Pliki PDF konwersacji zamiast pojedynczych wiadomości czatu: zaznacz to pole wyboru, aby wyeksportować konwersacje na czacie w pliku PDF. Wszystkie wiadomości czatu z tej samej konwersacji są eksportowane w tym samym pliku PDF. Jeśli to pole wyboru pozostanie niezaznaczone, każdy unikatowy komunikat w konwersacji na czacie zostanie wyeksportowany jako element autonomiczny. Plik jest eksportowany w tym samym formacie, w jakim został zapisany, jak w skrzynce pocztowej. W przypadku określonej konwersacji otrzymujesz wiele plików msg.
 
-W poniższych sekcjach opisano strukturę folderów w przypadku luźnych plików oraz skondensowane opcje struktury katalogu. Eksporty są podzielone na pliki ZIP o maksymalnym rozmiarze nieskompresowanych treści 75 GB. Jeśli rozmiar eksportu jest mniejszy niż 75 GB, eksport będzie się składał z pliku podsumowania i jednego pliku ZIP. W przypadku eksportów większych niż 75 GB nieskompresowanych danych zostanie utworzonych wiele plików ZIP. Po pobraniu pliki ZIP można dekompresować w jednej lokalizacji w celu ponownego odtworzenia pełnego eksportu.
+W poniższych sekcjach opisano strukturę folderów dla luźnych plików i skondensowanych opcji struktury katalogów. Eksporty są partycjonowane do plików ZIP o maksymalnym rozmiarze nieskompresowanego zawartości 75 GB. Jeśli rozmiar eksportu jest mniejszy niż 75 GB, eksport będzie składać się z pliku podsumowania i pojedynczego pliku ZIP. W przypadku eksportów większych niż 75 GB nieskompresowanych danych zostanie utworzonych wiele plików ZIP. Po pobraniu pliki ZIP mogą zostać nieskompresowane w jednej lokalizacji, aby ponownie utworzyć pełny eksport.
 
-### <a name="loose-files-and-pst-export-structure"></a>Luźne pliki i struktura eksportu pst
+### <a name="loose-files-and-pst-export-structure"></a>Luźne pliki i struktura eksportu PST
 
-Jeśli wybierzesz tę opcję eksportu, wyeksportowana zawartość będzie zorganizowana w następującej strukturze:
+Jeśli wybierzesz tę opcję eksportu, wyeksportowana zawartość zostanie zorganizowana w następującej strukturze:
 
-- Summary.csv: Zawiera podsumowanie zawartości wyeksportowanych z zestawu recenzji
+- Summary.csv: zawiera podsumowanie zawartości wyeksportowane z zestawu przeglądów
 
-- Folder główny: ten folder o nazwie [Export Name] x z z.zip i będzie powtarzany dla każdej partycji pliku ZIP. Folder główny zawiera następujące elementy:
+- Folder główny: ten folder o nazwie [Nazwa eksportu] x z.zip i zostanie powtórzony dla każdej partycji pliku ZIP. Folder główny zawiera następujące elementy:
   
-  - Export_load_file_x pliku z.csv: plik metadanych.
+  - Export_load_file_x z.csv: plik metadanych.
   
-  - Ostrzeżenia i błędy x z.csv: Ten plik zawiera informacje o błędach napotkanych podczas próby wyeksportowania z zestawu recenzji.
+  - Ostrzeżenia i błędy x z.csv: ten plik zawiera informacje o błędach napotkanych podczas próby wyeksportowania z zestawu przeglądów.
   
-  - Exchange: Ten folder zawiera całą zawartość z plików Exchange przechowywanych w plikach PST. Tej opcji nie można dołączona do redagowanych plików PDF. Jeśli w zestawie recenzji wybrano załącznik, nadrzędna wiadomość e-mail zostanie wyeksportowana z dołączonym załącznikiem.
+  - Exchange: ten folder zawiera całą zawartość z Exchange przechowywaną w plikach PST. Zredagowanych plików PDF nie można dołączyć do tej opcji. Jeśli załącznik zostanie wybrany w zestawie przeglądów, nadrzędna wiadomość e-mail zostanie wyeksportowana z dołączonym załącznikiem.
   
-    Folder Exchange może również zawierać podfolder o nazwie mailboxname_loosefiles.zip zawierający następujące elementy:
+    Folder Exchange może również zawierać podfolder o nazwie mailboxname_loosefiles.zip, który zawiera następujące elementy:
 
-    - Wiadomości chronione za pomocą usługi Zarządzanie prawami do informacji (IRM) w dekodowanych wiadomościach.
-    - Komunikaty o błędach usunięte.
-    - Nowoczesne załączniki lub linki, do których odwołują się wiadomości.
-    - Zaszyfrowane elementy (które nie są zawarte w plikach PST w Exchange folderze).
+    - Komunikaty chronione przez usługę Information Rights Management (IRM), które zostały zdekodowane.
+    - Komunikaty korygowane przez błąd.
+    - Nowoczesne załączniki lub linki przywoływane w komunikatach.
+    - Zaszyfrowane elementy (które nie są uwzględnione w plikach PST w folderze Exchange).
   
-  - SharePoint: Ten folder zawiera całą natywną zawartość z SharePoint w natywnym formacie pliku. Tej opcji nie można dołączona do redagowanych plików PDF.
+  - SharePoint: ten folder zawiera całą zawartość natywną z SharePoint w natywnym formacie pliku. Zredagowanych plików PDF nie można dołączyć do tej opcji.
 
-### <a name="condensed-directory-structure"></a>Skondensowana struktura katalogu
+### <a name="condensed-directory-structure"></a>Skondensowana struktura katalogów
 
-- Summary.csv: Zawiera podsumowanie zawartości wyeksportowanych z zestawu recenzji
+- Summary.csv: zawiera podsumowanie zawartości wyeksportowane z zestawu przeglądów
 
-- Folder główny: ten folder o nazwie [Export Name] x z z.zip i będzie powtarzany dla każdej partycji pliku ZIP.
+- Folder główny: ten folder o nazwie [Nazwa eksportu] x z.zip i zostanie powtórzony dla każdej partycji pliku ZIP.
   
-  - Export_load_file_x z z.csv: Plik metadanych, a także lokalizację każdego pliku, który jest przechowywany w pliku ZIP.
+  - Export_load_file_x z.csv: plik metadanych, a także lokalizacja każdego pliku przechowywanego w pliku ZIP.
   
-  - Ostrzeżenia i błędy x z.csv: Ten plik zawiera informacje o błędach napotkanych podczas próby wyeksportowania z zestawu recenzji.
+  - Ostrzeżenia i błędy x z.csv: ten plik zawiera informacje o błędach napotkanych podczas próby wyeksportowania z zestawu przeglądów.
 
-  - NativeFiles: Ten folder zawiera wszystkie wyeksportowane pliki natywne. Pliki natywne są zamieniane na pliki PDF redacted, jeśli wybrano opcję Zamień *redacted natives na przekonwertowane pliki PDF* .
+  - NativeFiles: ten folder zawiera wszystkie pliki natywne, które zostały wyeksportowane. Pliki natywne są zastępowane zredagowanymi plikami PDF, jeśli *wybrano opcję Zamień zredagowane natywne na przekonwertowane pliki PDF* .
   
-  - Error_files: Ten folder zawiera pliki, w przypadku których wystąpił błąd wyodrębniania lub przetwarzania. Pliki zostaną umieszczone w osobnych folderach: ExtractionError lub ProcessingError. Te pliki są wymienione w pliku ładowania.
+  - Error_files: ten folder zawiera pliki, w których wystąpił błąd wyodrębniania lub innego przetwarzania. Pliki zostaną umieszczone w oddzielnych folderach— ExtractionError lub ProcessingError. Te pliki są wymienione w pliku ładowania.
 
   - Extracted_text_files: Ten folder zawiera wszystkie wyodrębnione pliki tekstowe, które zostały wygenerowane podczas przetwarzania.
 
-### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>Skondensowana struktura katalogu wyeksportowana do Twojego konta Storage Azure
+### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>Skondensowana struktura katalogów wyeksportowana na konto usługi Azure Storage
 
-Ta opcja ma taką samą ogólną strukturę jak struktura katalogu zagęszczanego *, jednak* zawartość nie jest zeszkowana, a dane są zapisywane na Twoim koncie usługi Azure Storage konta. Ta opcja jest zazwyczaj używana podczas pracy z innym dostawcą zbierania elektronicznych materiałów dowodowych. Aby uzyskać szczegółowe informacje na temat korzystania z tej opcji, zobacz Eksportowanie dokumentów [w zestawie recenzji do konta usługi Azure Storage konta](download-export-jobs.md).
+Ta opcja używa tej samej ogólnej struktury co *skrócona struktura katalogów*, jednak zawartość nie jest spakowana i dane są zapisywane na koncie usługi Azure Storage. Ta opcja jest zwykle używana podczas pracy z dostawcą zbierania elektronicznych materiałów dowodowych innych firm. Aby uzyskać szczegółowe informacje na temat korzystania z tej opcji, zobacz [Eksportowanie dokumentów w przeglądzie ustawionym na konto usługi Azure Storage](download-export-jobs.md).

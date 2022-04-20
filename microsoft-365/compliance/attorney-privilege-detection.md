@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie wykrywania uprawnień klienta obsługi klienta w programie Advanced eDiscovery
+title: Konfigurowanie wykrywania uprawnień klienta-adwokata w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,118 +15,118 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Korzystaj z modelu wykrywania uprawnień klienta obsługi klienta, aby podczas przeglądania zawartości w Advanced eDiscovery przypadku korzystać z wykrywania zawartości opartej na uczeniu maszynowym.
-ms.openlocfilehash: 5e8a9e1ef0cf8cd8375cd6ce9a0b4d210840e838
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Użyj modelu wykrywania uprawnień klienta-adwokata, aby użyć opartego na uczeniu maszynowym wykrywania zawartości uprzywilejowanej podczas przeglądania zawartości w przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
+ms.openlocfilehash: ce5cabad4a5487f6e18c1054f5c4d143bac4325e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021290"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947170"
 ---
-# <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Konfigurowanie wykrywania uprawnień klienta obsługi klienta w programie Advanced eDiscovery
+# <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>Konfigurowanie wykrywania uprawnień klienta-adwokata w usłudze eDiscovery (Premium)
 
-Głównym i kosztowowym aspektem etapu przeglądu każdego procesu zbierania elektronicznych materiałów dowodowych jest recenzowanie dokumentów pod względem zawartości uprzywilejowanych. Advanced eDiscovery umożliwia wykrywanie zawartości uprzywilejowanych w opartym na uczeniu maszynowym, aby ten proces był wydajniejszy. Ta funkcja jest *nazywana wykrywaniem uprawnień klienta-klienta*.
+Głównym i kosztownym aspektem fazy przeglądu każdego procesu zbierania elektronicznych materiałów dowodowych jest przeglądanie dokumentów pod kątem zawartości uprzywilejowanej. Usługa Microsoft Purview eDiscovery (Premium) zapewnia oparte na uczeniu maszynowym wykrywanie uprzywilejowanej zawartości w celu zwiększenia wydajności tego procesu. Ta funkcja jest nazywana *wykrywaniem uprawnień klienta-adwokata*.
 
 ## <a name="how-does-it-work"></a>Jak to działa?
 
-Po włączeniu wykrywania uprawnień obsługi klienta podczas analizowania danych w zestawie reenzentów wszystkie dokumenty w zestawie reenzentów będą przetwarzane przez [](analyzing-data-in-review-set.md) model wykrywania uprawnień klienta-klienta. Model wygląda na dwie rzeczy:
+Po włączeniu wykrywania uprawnień adwokata klienta wszystkie dokumenty w zestawie przeglądów zostaną przetworzone przez model wykrywania uprawnień adwokata klienta podczas [analizowania danych](analyzing-data-in-review-set.md) w zestawie przeglądów. Model szuka dwóch rzeczy:
 
-- Zawartość z uprawnieniami — w modelu jest używane uczenie maszynowe w celu określenia prawdopodobieństwa, że dokument zawiera zawartość, która ma charakter prawny.
+- Zawartość uprzywilejowana — model używa uczenia maszynowego do określenia prawdopodobieństwa, że dokument zawiera zawartość o charakterze prawnym.
 
-- Uczestnicy — w ramach konfigurowania wykrywania uprawnień klienta prawniowego należy przesłać listę pełnomocników do organizacji. Następnie w modelu porównano uczestników dokumentu z listą prawniową w celu ustalenia, czy w dokumencie jest co najmniej jeden uczestnik prawni.
+- Uczestnicy — w ramach konfigurowania wykrywania uprawnień adwokata klienta należy przesłać listę prawników dla swojej organizacji. Model następnie porównuje uczestników dokumentu z listą adwokatów, aby ustalić, czy dokument ma co najmniej jednego uczestnika adwokata.
 
 Model tworzy następujące trzy właściwości dla każdego dokumentu:
 
-- **AttorneyClientPrivilegeScore:** Prawdopodobieństwo, że dokument ma charakter prawny; Wartości wyników to między **0** a **1**.
+- **AttorneyClientPrivilegeScore:** Prawdopodobieństwo, że dokument ma charakter prawny; wartości wyniku to od **0** do **1**.
 
-- **HasAttorato:** Ta właściwość ma wartość **True (Prawda),** jeśli jeden z uczestników dokumentu znajduje się na liście pełnomocników. w przeciwnym razie wartość jest **fałszywa**. Wartość ta jest również ustawiona **na** fałsz, jeśli organizacja nie przesłała listy prawniowej.
+- **HasAttorney:** Ta właściwość jest ustawiona na **wartość true** , jeśli jeden z uczestników dokumentu jest wymieniony na liście adwokatów; w przeciwnym razie wartość jest **false**. Wartość jest również ustawiona na **wartość false** , jeśli organizacja nie przekazała listy adwokatów.
 
-- **IsPrivilege:** Ta właściwość ma wartość **True** (Prawda), jeśli wartość dla właściwości **AttorneyClientPrivilegeScore** przekracza próg  lub jeśli w dokumencie jest uczestnikiem pełnomocnictwa; w przeciwnym razie ustawiono wartość **false (fałsz**).
+- **IsPrivilege:** Ta właściwość jest ustawiona na **wartość true** , jeśli wartość **attorneyClientPrivilegeScore** jest powyżej progu *lub* jeśli dokument ma uczestnika adwokata; w przeciwnym razie wartość jest ustawiona na **wartość false**.
 
-Te właściwości (i odpowiadające im wartości) są dodawane do metadanych plików dokumentów w zestawie recenzji, jak pokazano na poniższym zrzucie ekranu:
+Te właściwości (i odpowiadające im wartości) są dodawane do metadanych pliku dokumentów w zestawie przeglądów, jak pokazano na poniższym zrzucie ekranu:
 
-![Właściwości uprawnień klienta-klienta przedstawione w metadanych pliku.](../media/AeDAttorneyClientPrivilegeMetadata.png)
+![Właściwości uprawnień adwokata klienta wyświetlane w metadanych pliku.](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
-Te trzy właściwości można również przeszukiwać w ramach zestawu recenzji. Aby uzyskać więcej informacji, zobacz [Wykonywanie zapytań dotyczących danych w zestawie recenzji](review-set-search.md).
+Te trzy właściwości można również wyszukiwać w zestawie przeglądów. Aby uzyskać więcej informacji, zobacz [Wykonywanie zapytań o dane w zestawie przeglądów](review-set-search.md).
 
-## <a name="set-up-the-attorney-client-privilege-detection-model"></a>Konfigurowanie modelu wykrywania uprawnień klienta obsługi klienta
+## <a name="set-up-the-attorney-client-privilege-detection-model"></a>Konfigurowanie modelu wykrywania uprawnień klienta-adwokata
 
-Aby włączyć model wykrywania uprawnień klienta obsługi klienta, organizacja musi włączyć tę funkcję, a następnie przesłać jej listę prawniową.
+Aby włączyć model wykrywania uprawnień klienta-adwokata, organizacja musi go włączyć, a następnie przekazać listę adwokatów.
 
-### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>Krok 1. Włączanie wykrywania uprawnień prawni-klienta
+### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>Krok 1. Włączanie wykrywania uprawnień klienta-adwokata
 
-Osoba pełniąca rolę administratora zbierania elektronicznych materiałów dowodowych w organizacji (członka podgrupy Administrator zbierania elektronicznych materiałów dowodowych w grupie ról Menedżer zbierania elektronicznych materiałów dowodowych) musi udostępnić ten model w twoich Advanced eDiscovery przypadku.
+Osoba, która jest administratorem zbierania elektronicznych materiałów dowodowych w organizacji (członkiem podgrupy administratora zbierania elektronicznych materiałów dowodowych w grupie ról Menedżera zbierania elektronicznych materiałów dowodowych) musi udostępnić model w przypadkach zbierania elektronicznych materiałów dowodowych (Premium).
 
-1. W Centrum zgodności platformy Microsoft 365 przejdź do strony [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), a następnie kliknij pozycję **Advanced eDiscovery ustawienia**.
+1. W portalu zgodności usługi Microsoft Purview przejdź do obszaru [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764)a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium**).
 
-   ![Wybierz Advanced eDiscovery ustawienia](..\media\HistoricalVersions1.png)
+   ![Wybierz ustawienia zbierania elektronicznych materiałów dowodowych (Premium)](..\media\HistoricalVersions1.png)
 
-2. Na stronie **Ustawienia** wybierz kartę Analiza, a następnie  włącz przełącznik Wykrywanie uprawnień klienta-klienta **.**
+2. Na stronie **Ustawienia** wybierz kartę **Analiza**, a następnie przełącz przełącznik **Wykrywanie uprawnień klienta-adwokata** na włączony.
 
-   ![Kliknij przełącznik, aby włączyć wykrywanie uprawnień klienta-obsługi klienta](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
+   ![Kliknij przycisk przełącz, aby włączyć wykrywanie uprawnień klienta-adwokata](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
 
-3. Kliknij **przycisk Zapisz** , aby zapisać zmianę.
+3. Kliknij przycisk **Zapisz** , aby zapisać zmianę.
 
-### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Krok 2. Upload listę pełnomocników (opcjonalnie)
+### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Krok 2. Upload listę adwokatów (opcjonalnie)
 
-Aby w pełni wykorzystać model wykrywania uprawnień klienta obsługi klienta i użyć opisanych wcześniej wyników wykrywania  funkcji Ma lub  Potencjalnie uprzywilejowany, przekaż listę adresów e-mail osób chętnych i pracowników prawnych, którzy pracują w Twojej organizacji.
+Aby w pełni wykorzystać model wykrywania uprawnień klienta-adwokata i skorzystać z wyników wcześniej opisanego wykrywania **funkcji ma adwokata** lub **potencjalnie uprzywilejowanego** , zalecamy przekazanie listy adresów e-mail dla prawników i pracowników prawnych, którzy pracują dla Twojej organizacji.
 
-Aby przekazać listę prawnią do użytku przez model wykrywania uprawnień prawni-klienta:
+Aby przekazać listę adwokatów do użycia przez model wykrywania uprawnień klienta-adwokata:
 
-1. Utwórz plik .csv (bez wiersza nagłówka) i dodaj w osobnym wierszu adresy e-mail wszystkich odpowiednich osób. Zapisz ten plik na komputerze lokalnym.
+1. Utwórz plik .csv (bez wiersza nagłówka) i dodaj adres e-mail dla każdej odpowiedniej osoby w osobnym wierszu. Zapisz ten plik na komputerze lokalnym.
 
-2. Na stronie Advanced eDiscovery **Ustawienia** wybierz **kartę** Analiza.
+2. Na stronie **Ustawienia** eDiscovery (Premium) wybierz kartę **Analiza**.
 
-   Zostanie **wyświetlona strona Uprawnienia klienta prawniczka** i przełącznik  Wykrywanie uprawnień klienta-prawniczka zostanie włączony.
+   Zostanie wyświetlona strona **Uprawnienia klienta adwokackiego** , a przełącznik **wykrywania uprawnień klienta-adwokata** jest włączony.
 
-   ![Strona wysuuwana z uprawnieniami klienta obsługi klienta](..\media\AeDUploadAttorneyList1.png)
+   ![Strona wysuwanego uprawnienia klienta-adwokata](..\media\AeDUploadAttorneyList1.png)
 
-3. Wybierz **pozycję Wybierz** plik, a następnie znajdź i .csv utworzony w kroku 1.
+3. Wybierz **pozycję Wybierz plik** , a następnie znajdź i wybierz plik .csv utworzony w kroku 1.
 
-4. Wybierz **pozycję Zapisz** , aby przekazać listę pełnomocników.
+4. Wybierz pozycję **Zapisz** , aby przekazać listę adwokatów.
 
-## <a name="use-the-attorney-client-privilege-detection-model"></a>Korzystanie z modelu wykrywania uprawnień klienta obsługi klienta
+## <a name="use-the-attorney-client-privilege-detection-model"></a>Korzystanie z modelu wykrywania uprawnień klienta-adwokata
 
-Postępuj zgodnie z instrukcjami w tej sekcji, aby użyć wykrywania uprawnień klienta prawniowego do dokumentów w zestawie recenzji.
+Wykonaj kroki opisane w tej sekcji, aby użyć funkcji wykrywania uprawnień klienta-adwokata dla dokumentów w zestawie przeglądów.
 
-### <a name="step-1-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Krok 1. Tworzenie grupy tagów inteligentnych z modelem wykrywania uprawnień klienta-obsługi klienta
+### <a name="step-1-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Krok 1. Tworzenie grupy tagów inteligentnych przy użyciu modelu wykrywania uprawnień adwokackiego klienta
 
-Jednym z podstawowych sposobów przeglądania wyników procesu sprawdzania prawa do obsługi klienta jest użycie grupy tagów inteligentnych. Grupa tagów inteligentnych wskazuje wyniki wykrywania uprawnień prawni-klienta oraz wyświetla wyniki w wierszu obok tagów w grupie tagów inteligentnych. Umożliwia to szybkie identyfikowanie potencjalnie uprzywilejowanych dokumentów podczas przeglądania dokumentu. Ponadto za pomocą tagów w grupie tagów inteligentnych można oznaczać dokumenty jako dokumenty z uprawnieniami lub bez uprawnień. Aby uzyskać więcej informacji na temat tagów inteligentnych, zobacz [Konfigurowanie tagów inteligentnych w aplikacji Advanced eDiscovery](smart-tags.md).
+Jednym z podstawowych sposobów sprawdzania wyników wykrywania uprawnień klienta-adwokata w procesie przeglądu jest użycie grupy tagów inteligentnych. Grupa tagów inteligentnych wskazuje wyniki wykrywania uprawnień klienta-adwokata i wyświetla wyniki w wierszu obok tagów w grupie tagów inteligentnych. Dzięki temu można szybko identyfikować potencjalnie uprzywilejowane dokumenty podczas przeglądania dokumentów. Ponadto można również użyć tagów w grupie tagów inteligentnych, aby oznaczyć dokumenty jako uprzywilejowane lub nieuprzywilejowany. Aby uzyskać więcej informacji na temat tagów inteligentnych, zobacz [Konfigurowanie tagów inteligentnych w usłudze eDiscovery (Premium)](smart-tags.md).
 
-1. W zestawie recenzji zawierającym dokumenty, które zostały przeanalizowane w kroku 1, wybierz pozycję Zarządzaj  zestawem recenzji, a następnie wybierz pozycję **Zarządzaj tagami**.
+1. W zestawie przeglądów zawierającym dokumenty analizowane w kroku 1 wybierz pozycję **Zarządzaj zestawem przeglądów** , a następnie wybierz pozycję **Zarządzaj tagami**.
 
-2. W **obszarze** Tagi wybierz pozycję rozwijane obok przycisku **Dodaj** grupę, a następnie wybierz pozycję **Dodaj grupę tagów inteligentnych**.
+2. W obszarze **Tagi** wybierz ciąg rozwijany obok pozycji **Dodaj grupę** , a następnie wybierz pozycję **Dodaj grupę tagów inteligentnych**.
 
    ![Wybierz pozycję "Dodaj grupę tagów inteligentnych".](../media/AeDCreateSmartTag.png)
 
-3. Na **stronie Wybierz model tagu inteligentnego** wybierz pozycję **Wybierz** obok opcji **Pełnomocnictwo-klient**.
+3. Na stronie **Wybieranie modelu tagu inteligentnego** wybierz pozycję **Wybierz** obok **pozycji Uprawnienie adwokata klienta**.
 
-   Zostanie wyświetlona grupa **tagów o nazwie Pełnomocnictwo-klient** . Zawiera ona dwa tagi podrzędne o nazwach **Dodatnia** i Ujemna **, które** odpowiadają możliwym wynikom uzyskanemu w modelu.
+   Zostanie wyświetlona grupa tagów o nazwie **Uprawnienie adwokata klienta** . Zawiera dwa tagi podrzędne o nazwie **Dodatnie** i **Ujemne**, które odpowiadają możliwym wynikom wygenerowanym przez model.
 
-   ![Grupa smart tagów prawnicza klient-klient.](../media/AeDAttorneyClientSmartTagGroup.png)
+   ![Grupa tagów inteligentnych uprawnień klienta-adwokata.](../media/AeDAttorneyClientSmartTagGroup.png)
 
-3. Zmień nazwę grupy tagów i tagów odpowiednio do potrzeb recenzji. Można na przykład zmienić nazwę Dodatni **na "** z **uprawnieniami** " i "Ujemny **"** **na "Nieuwiązytowany"**.
+3. Zmień nazwę grupy tagów i tagów odpowiednio do przeglądu. Na przykład można zmienić nazwę **Pozytywna** na **Uprzywilejowana** i **Negatywna** na **Nieusłuszona**.
 
-### <a name="step-2-analyze-a-review-set"></a>Krok 2. Analizowanie zestawu recenzji
+### <a name="step-2-analyze-a-review-set"></a>Krok 2. Analizowanie zestawu przeglądów
 
-Podczas analizowania dokumentów w zestawie recenzji zostanie również uruchomiony model wykrywania uprawnień klienta-klienta, a odpowiadające im właściwości (opisane w temacie Jak to działa [?](#how-does-it-work)) zostaną dodane do każdego dokumentu w zestawie recenzji. Aby uzyskać więcej informacji na temat analizowania danych w zestawie recenzji, zobacz [Analizowanie danych w zestawie recenzji w programie Advanced eDiscovery](analyzing-data-in-review-set.md).
+Podczas analizowania dokumentów w zestawie przeglądów zostanie również uruchomiony model wykrywania uprawnień klienta-adwokata, a odpowiednie właściwości (opisane w artykule [Jak to działa?](#how-does-it-work)) zostaną dodane do każdego dokumentu w zestawie przeglądów. Aby uzyskać więcej informacji na temat analizowania danych w zestawie przeglądów, zobacz [Analizowanie danych w zestawie przeglądów w obszarze eDiscovery (Premium)](analyzing-data-in-review-set.md).
 
-### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>Krok 3. Przeglądanie zawartości z uprawnieniami za pomocą grupy tagów inteligentnych
+### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>Krok 3. Przeglądanie zawartości uprzywilejowanej przy użyciu grupy tagów inteligentnych
 
-Kolejnym krokiem po przeanalizowaniu zestawu recenzji i skonfigurowaniu tagów inteligentnych jest przejrzenie dokumentów. Jeśli model ustali, że dokument ma potencjalnie uprawnienia, odpowiedni tag inteligentny w **panelu** Otagowanie będzie wskazywać na następujące wyniki uzyskane w wyniku wykrywania uprawnień obsługi klienta-klienta:
+Po przeanalizowaniu zestawu przeglądów i skonfigurowaniu tagów inteligentnych następnym krokiem jest przejrzenie dokumentów. Jeśli model ustalił, że dokument jest potencjalnie uprzywilejowany, odpowiedni tag inteligentny w **panelu Tagowanie** będzie wskazywać następujące wyniki wygenerowane przez wykrywanie uprawnień klienta-adwokata:
 
-- Jeśli dokument zawiera zawartość, która może mieć charakter prawny, etykieta Zawartość  prawnie jest wyświetlana obok odpowiadającego mu tagu inteligentnego (który w tym przypadku jest domyślnym **tagiem Dodatni**).
+- Jeśli dokument zawiera zawartość, która może mieć charakter prawny, obok odpowiedniego tagu inteligentnego jest wyświetlana **etykieta Zawartość prawna** (która w tym przypadku jest **domyślnym** tagiem Pozytywny).
 
-- Jeśli w dokumencie znajduje się uczestnik, który został znaleziony na liście prawnich organizacji, etykieta  Prawniczka jest wyświetlana obok odpowiadającego mu tagu inteligentnego (który w tym przypadku jest również domyślnym tagiem **Dodatni**).
+- Jeśli dokument zawiera uczestnika, który znajduje się na liście adwokatów organizacji, etykieta **Adwokat** jest wyświetlana obok odpowiedniego tagu inteligentnego (który w tym przypadku jest również domyślnym tagiem **dodatnim** ).
 
-- Jeśli dokument zawiera treści, które mogą mieć charakter prawny i zawiera uczestnika, który został znaleziony z listy pełnomocników,  wyświetlana jest  zarówno zawartość prawnie, jak i etykiety prawne. 
+- Jeśli dokument zawiera zawartość, która może mieć charakter prawny *i* zawiera uczestnika znajdującego się na liście adwokatów, wyświetlane są zarówno **treści prawne**  , jak i etykiety **adwokatów** . 
 
-Jeśli w modelu stwierdzisz, że dokument nie zawiera zawartości, która jest z natury legalna lub nie zawiera uczestnika z listy prawnej, ta etykieta nie jest wyświetlana w panelu otagowania.
+Jeśli model stwierdzi, że dokument nie zawiera zawartości, która ma charakter prawny lub nie zawiera uczestnika z listy adwokatów, żadna etykieta nie jest wyświetlana w panelu tagowania.
 
-Na przykład poniższe zrzuty ekranu pokazują dwa dokumenty. Pierwszy z nich zawiera treści, które są z natury prawnej i zawiera uczestnika, który znalazł się na liście pełnomocników. Drugi nie zawiera żadnych etykiet i dlatego nie są wyświetlane żadne etykiety.
+Na przykład na poniższych zrzutach ekranu przedstawiono dwa dokumenty. Pierwsza z nich zawiera zawartość, która ma charakter prawny i zawiera uczestnika znajdującego się na liście adwokatów. Drugi nie zawiera żadnej z nich i w związku z tym nie wyświetla żadnych etykiet.
 
-![Dokument z etykietami zawartości prawnej i prawnej.](../media/AeDTaggingPanelLegalContentAttorney.png)
+![Dokument z etykietami zawartości Prawnik i Prawne.](../media/AeDTaggingPanelLegalContentAttorney.png)
 
-![Dokument bez żadnych etykiet.](../media/AeDTaggingPanelNegative.png)
+![Dokument bez etykiet.](../media/AeDTaggingPanelNegative.png)
 
-Po przejrzeniu dokumentu w celu sprawdzenia, czy zawiera on zawartość z odpowiednimi uprawnieniami, możesz oznaczyć dokument odpowiednim tagiem.
+Po przejrzeniu dokumentu, aby sprawdzić, czy zawiera on uprzywilejowaną zawartość, możesz otagować dokument odpowiednim tagiem.

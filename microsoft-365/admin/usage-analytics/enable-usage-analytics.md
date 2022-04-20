@@ -22,58 +22,58 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: Dowiedz się, jak rozpocząć zbieranie danych dotyczących dzierżawy przy użyciu Microsoft 365 szablonu analizy użycia w programie Power BI.
-ms.openlocfilehash: b547acc5adf312458e82108a36bbd9c0cbf60f10
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+description: Dowiedz się, jak rozpocząć zbieranie danych dla dzierżawy przy użyciu aplikacji szablonu Microsoft 365 Usage Analytics w Power BI.
+ms.openlocfilehash: cc2b74696dbdab416493be1909f1781b31f201a6
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027088"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946951"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Włączanie analizy użycia platformy Microsoft 365
 
-Aby włączyć Microsoft 365 użycia w dzierżawie usługi Microsoft 365 Government Community Cloud (GCC) w Usa, zobacz Połączenie [do Microsoft 365 Government Community Cloud (GCC) za pomocą analizy użycia](connect-to-gcc-data-with-usage-analytics.md).
+Aby włączyć analizę użycia Microsoft 365 w dzierżawie Microsoft 365 us Government Community Cloud (GCC), zobacz [Połączenie, aby Microsoft 365 Government Community Cloud (GCC) danych za pomocą analizy użycia](connect-to-gcc-data-with-usage-analytics.md).
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Aby rozpocząć analizę Microsoft 365 użycia, najpierw udostępnij dane w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365, a</a> następnie zainicjuj aplikację szablonu w Power BI.
+Aby rozpocząć pracę z Microsoft 365 analizy użycia, musisz najpierw udostępnić dane w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, a następnie zainicjować aplikację szablonu w Power BI.
 
 ## <a name="get-power-bi"></a>Uzyskiwanie usługi Power BI
 
-Jeśli jeszcze tego nie masz, Power BI się w celu [Power BI Pro.](https://go.microsoft.com/fwlink/p/?linkid=845347) Wybierz **pozycję Wypróbuj bezpłatnie**, aby zapisać się na wersję próbną, lub Kup **teraz**, aby uzyskać Power BI Pro.
+Jeśli nie masz jeszcze Power BI, możesz [zarejestrować się w celu Power BI Pro](https://go.microsoft.com/fwlink/p/?linkid=845347). Wybierz pozycję **Wypróbuj bezpłatnie**, aby utworzyć konto próbne, lub **Kup teraz**, aby uzyskać Power BI Pro.
 
 
 Możesz też rozwinąć sekcję **Produkty**, aby kupić inną wersję usługi Power BI.
 
 > [!NOTE]
-> Potrzebujesz licencji Power BI Pro, aby zainstalować, dostosować i rozpowszechnić aplikację szablonów. Aby uzyskać więcej informacji, zobacz [Wymagania wstępne](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
+> Potrzebujesz licencji Power BI Pro, aby zainstalować, dostosować i rozpowszechnić aplikację szablonu. Aby uzyskać więcej informacji, zobacz [Wymagania wstępne](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
 
-Aby udostępnić dane, ty i osoby, którym udostępniasz dane, potrzebujecie licencji usługi Power BI Pro lub zawartości muszą się znaleźć w obszarze roboczym w usłudze [Power BI Premium](/power-bi/service-premium-what-is).
+Aby udostępnić dane, zarówno Ty, jak i osoby, które udostępniasz dane, potrzebujesz licencji Power BI Pro lub zawartość musi znajdować się w obszarze roboczym w [usłudze Power BI Premium](/power-bi/service-premium-what-is).
 
-## <a name="enable-the-template-app"></a>Włączanie aplikacji szablonów
+## <a name="enable-the-template-app"></a>Włączanie aplikacji szablonu
 
-Aby włączyć aplikację szablonu, musisz być **administratorem globalnym**.
+Aby włączyć aplikację szablonu, musisz być **administrator globalny**.
 
-Aby [uzyskać więcej informacji, zobacz](../add-users/about-admin-roles.md) Role administratora.
+Aby uzyskać więcej informacji, zobacz [informacje o rolach administratora](../add-users/about-admin-roles.md) .
 
-1. W centrum administracyjnym przejdź do karty Ustawienia  \> **ustawienia organizacji** \> **.**
+1. W centrum administracyjnym przejdź do karty **Usługi** **ustawień** \> **organizacji** \> Ustawienia.
 
 2. Na karcie **Usługi** wybierz pozycję  **Raporty**.
 
-3. W panelu Raporty, który zostanie otwarty, ustaw opcję Udostępnij dane raportu w **celu Microsoft 365 analizy** użycia dla Power BI **na pozycję Przy** \> **zapisywach**.
+3. Na panelu Raporty, który zostanie otwarty, ustaw pozycję **Udostępnij dane raportu, aby Microsoft 365 analizę użycia dla Power BI** **na wartość Przy zapisywaniu**\>.
 
-Proces zbierania danych zostanie ukończony w dwie do 48 godzin w zależności od rozmiaru Dzierżawy. Przycisk **Przejdź do usługi Power BI** zostanie włączony (nie będzie już szary) po zakończeniu gromadzenia danych. Po zakończeniu aplikacja udostępnia historyczne dane użycia na poziomie organizacji. 
+Proces zbierania danych zakończy się w ciągu dwóch do 48 godzin w zależności od rozmiaru dzierżawy. Przycisk **Przejdź do usługi Power BI** zostanie włączony (nie będzie już szary) po zakończeniu gromadzenia danych. Po zakończeniu aplikacja udostępnia historyczne dane użycia na poziomie organizacji. 
 
 > [!NOTE]
-> Dane dla karty **"Działania użytkowników"** są odświeżane dopiero po piętnastym dniu bieżącego miesiąca i pierwszego dnia następnego miesiąca, więc pozostaną początkowo puste do czasu ukończenia pierwszego odświeżania.
+> Dane na karcie **"Aktywność użytkownika"** są odświeżane dopiero po piętnastym dniu bieżącego miesiąca i pierwszym dniu następnego miesiąca, więc początkowo pozostaną puste do momentu ukończenia pierwszego odświeżania.
 
-## <a name="start-the-template-app"></a>Uruchamianie aplikacji szablonów
+## <a name="start-the-template-app"></a>Uruchamianie aplikacji szablonu
 
-Aby uruchomić aplikację szablonu, musisz być **administratorem** **globalnym,** czytelnikiem **raportów,** administratorem Exchange, administratorem Skype dla firm **administratorem** lub **SharePoint administratorem**.
+Aby uruchomić aplikację szablonu, musisz być **administratorem globalnym**, **czytelnikiem raportów**, **administratorem Exchange**, **administratorem Skype dla firm** lub **administratorem SharePoint**.
 
-1. Skopiuj identyfikator dzierżawy i wybierz **pozycję Przejdź do Power BI**.
+1. Skopiuj identyfikator dzierżawy i wybierz pozycję **Przejdź do Power BI**.
 
-2. Po przejściu do usługi Power BI zaloguj się. Następnie **wybierz pozycję** **AplikacjeUzyskaj**-> aplikacje z menu nawigacji.
+2. Po przejściu do usługi Power BI zaloguj się. Następnie **wybierz pozycję** **AplikacjePobierz**-> aplikacje z menu nawigacji.
 
 3. Na karcie **Aplikacje** w polu wyszukiwania wpisz „Microsoft 365" i wybierz pozycję **analiza użycia platformy Microsoft 365** \> **Pobierz teraz**.
 
@@ -81,34 +81,34 @@ Aby uruchomić aplikację szablonu, musisz być **administratorem** **globalnym,
 
 4. Po zainstalowaniu aplikacji. Wybierz kafelek, aby go otworzyć.
 
-5. Wybierz **pozycję Eksploruj** aplikację, aby wyświetlić aplikację z przykładami danych. Wybierz **Połączenie**, aby połączyć aplikację z danymi Twojej organizacji.
+5. Wybierz pozycję **Eksploruj aplikację** , aby wyświetlić aplikację z przykładowymi danymi. Wybierz **Połączenie**, aby połączyć aplikację z danymi organizacji.
 
-6. Wybierz **Połączenie**, na ekranie Połączenie do analizy użycia Microsoft 365 następnie wpisz identyfikator dzierżawy (bez kresek) skopiowany w kroku (1), **a** następnie wybierz pozycję **Dalej**.
+6. Wybierz **pozycję Połączenie** na **ekranie Połączenie, aby Microsoft 365 analizy użycia**, a następnie wpisz identyfikator dzierżawy (bez kresek) skopiowany w kroku (1), a następnie wybierz pozycję **Dalej**.
 
-7. Na następnym ekranie wybierz pozycję **OAuth2** jako metodę **logowania** \> **uwierzytelniania**. W przypadku wybrania innej metody uwierzytelniania połączenie z aplikacją szablonu nie powiedzie się.
+7. Na następnym ekranie wybierz pozycję **OAuth2** jako **metodę** \> uwierzytelniania **Zaloguj**. Jeśli wybierzesz inną metodę uwierzytelniania, połączenie z aplikacją szablonu zakończy się niepowodzeniem.
 
     ![Wybierz konto Microsoft jako metodę uwierzytelniania.](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
-8. Po wystąpienia aplikacji szablonu pulpit nawigacyjny analizy Microsoft 365 będzie dostępny w Power BI w sieci Web. Pierwsze ładowanie pulpitu nawigacyjnego może potrwać od 2 do 30 minut.
+8. Po utworzeniu wystąpienia aplikacji szablonu pulpit nawigacyjny analizy użycia Microsoft 365 będzie dostępny w Power BI w Internecie. Pierwsze ładowanie pulpitu nawigacyjnego może potrwać od 2 do 30 minut.
 
-Wartości zagregowane na poziomie dzierżawy będą dostępne we wszystkich raportach po ich wybraniu. **Szczegóły na poziomie użytkownika będą dostępne tylko w ciągu 5. dnia następnego miesiąca kalendarzowego po ich wybraniu**. Ma to wpływ na wszystkie raporty w obszarze Aktywność użytkowników (zobacz Nawigowanie po raportach i korzystanie z nich w p Microsoft 365 [analizy](navigate-and-utilize-reports.md) użycia, aby uzyskać porady dotyczące wyświetlania i używania tych raportów).
+Agregacje na poziomie dzierżawy będą dostępne we wszystkich raportach po zalogowaniu się. **Szczegóły na poziomie użytkownika będą dostępne dopiero po 5. dniu następnego miesiąca kalendarzowego po wybraniu** opcji. Będzie to miało wpływ na wszystkie raporty w obszarze Aktywność użytkownika (zobacz [Nawigacja i używanie raportów w Microsoft 365 analizy użycia](navigate-and-utilize-reports.md), aby uzyskać wskazówki dotyczące wyświetlania tych raportów i korzystania z nich.
 
 ## <a name="make-the-collected-data-anonymous"></a>Ustawianie zbieranych danych jako anonimowych
 
-Raporty zawierają informacje na temat danych dotyczących użycia w organizacji. Domyślnie w raportach są wyświetlane informacje umożliwiające identyfikację nazw użytkowników, grup i witryn. Począwszy od 1 września 2021 r., wszystkie raporty domyślnie ukrywają informacje o użytkownikach w ramach naszego bieżącego zobowiązania do pomagania firmom w ochronie prywatności w ich lokalnych działaniach.
+Raporty zawierają informacje o danych użycia organizacji. Domyślnie raporty wyświetlają informacje o identyfikowalnych nazwach użytkowników, grup i witryn. Od 1 września 2021 r. domyślnie ukrywamy informacje o użytkownikach dla wszystkich raportów w ramach naszego stałego zobowiązania, aby pomóc firmom w obsłudze lokalnych przepisów dotyczących prywatności.
   
-Administratorzy globalni mogą przywrócić tę zmianę w dzierżawie i pokazać identyfikowalne dane użytkowników, jeśli pozwalają na to zasady zachowania poufności informacji ich organizacji. Można to osiągnąć w centrum administracyjne platformy Microsoft 365, korzystając z następujących kroków:
+Administratorzy globalni mogą cofnąć tę zmianę dla swojej dzierżawy i wyświetlać identyfikowalne informacje o użytkownikach, jeśli zezwalają na to ich praktyki ochrony prywatności w organizacji. Można to osiągnąć w centrum administracyjnym platformy Microsoft 365, wykonując następujące kroki:
   
-1. W centrum administracyjnym przejdź do strony centrum **Ustawienia** \> **organizacji Ustawienia** \> **usługi.**
+1. W centrum administracyjnym przejdź do strony **Ustawienia** \> **Ustawienia organizacji** \> **Usługi**.
 
 2. Wybierz pozycję **Raporty**. 
   
-3. Usuń zaznaczenie instrukcji **We wszystkich raportach wyświetl odznaczone nazwy użytkowników, grup** i witryn, a następnie zapisz zmiany.  
+3. Usuń zaznaczenie instrukcji **We wszystkich raportach wyświetl zdeidentyfikowane nazwy użytkowników, grup i witryn,** a następnie zapisz zmiany.  
   
-Może potrwać kilka minut, aby te zmiany obowiązywały. Pokazywanie identyfikowalnych informacji użytkownika to zarejestrowane zdarzenie w Centrum zgodności platformy Microsoft 365 inspekcji.   
+Wprowadzenie tych zmian zajmie kilka minut. Wyświetlanie identyfikowalnych informacji o użytkowniku jest zarejestrowanym zdarzeniem w dzienniku inspekcji portalu zgodności usługi Microsoft Purview.   
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Analiza użycia (](usage-analytics.md) artykuł)\
-[Uzyskiwanie najnowszej wersji analizy użycia](get-the-latest-version-of-usage-analytics.md) (artykuł)\
-[Nawigowanie po raportach i korzystanie Microsoft 365 analizy](navigate-and-utilize-reports.md) użycia (artykuł)
+[Informacje o analizie użycia](usage-analytics.md) (artykuł)\
+[Pobierz najnowszą wersję analizy użycia](get-the-latest-version-of-usage-analytics.md) (artykuł)\
+[Nawigowanie po raportach i korzystanie z nich w Microsoft 365 analizy użycia](navigate-and-utilize-reports.md) (artykuł)

@@ -1,5 +1,5 @@
 ---
-title: Migrowanie starszych wyszukiwań i funkcji zbierania elektronicznych materiałów dowodowych do Centrum zgodności platformy Microsoft 365
+title: Migrowanie starszych wyszukiwań zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności usługi Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,31 +15,31 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: fe3f65e2545b71f8cfbaea76dfd34fd2720a790f
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 5de25b0b1385e709a818b1ff797910ec4ee4ddfc
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017778"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949636"
 ---
-# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrowanie starszych wyszukiwań i funkcji zbierania elektronicznych materiałów dowodowych do Centrum zgodności platformy Microsoft 365
+# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migrowanie starszych wyszukiwań zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności
 
-Program Centrum zgodności platformy Microsoft 365 zapewnia ulepszone środowisko zbierania elektronicznych materiałów dowodowych, w tym: większą niezawodność, lepszą wydajność i wiele funkcji dostosowanych do przepływów pracy zbierania elektronicznych materiałów dowodowych, w tym sprawy porządkowania zawartości według sprawy, przeglądanie zestawów w celu przejrzenia zawartości i analizy, aby pomóc w przejrzeniu danych, takich jak niemal zduplikowane grupowanie, wątkowanie wiadomości e-mail, analiza motywów i podpowidanie  kodowanie.
+Portal zgodności usługi Microsoft Purview zapewnia ulepszone środowisko użycia zbierania elektronicznych elektronicznych materiałów dowodowych, w tym: wyższą niezawodność, lepszą wydajność i wiele funkcji dostosowanych do przepływów pracy zbierania elektronicznych materiałów dowodowych, w tym przypadki organizowania zawartości według materii, zestawy przeglądów w celu przeglądania zawartości i analizy, aby pomóc w usuwaniu danych w celu przeglądu, takiego jak zduplikowane grupowanie, wątki wiadomości e-mail, analiza motywów i kodowanie predykcyjne.
 
-Aby ułatwić klientom skorzystanie z nowych i ulepszonych funkcji, w tym artykule przedstawiono podstawowe wskazówki dotyczące migrowania wyszukiwań i blokady zbierania elektronicznych materiałów dowodowych usługi In-Place z centrum administracyjnego programu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> do centrum Centrum zgodności platformy Microsoft 365.
+Aby ułatwić klientom korzystanie z nowych i ulepszonych funkcji, ten artykuł zawiera podstawowe wskazówki dotyczące migracji In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych i archiwizacji z <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a> do portalu zgodności.
 
 > [!NOTE]
-> Ponieważ istnieje wiele różnych scenariuszy, ten artykuł zawiera ogólne wskazówki dotyczące przechodzenia wyszukiwania i blokady do podstawowej sprawy zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Korzystanie ze spraw zbierania elektronicznych materiałów dowodowych nie zawsze jest wymagane, ale dodają one dodatkową warstwę zabezpieczeń, pozwalając na przypisywanie uprawnień do kontrolowania, kto ma dostęp do spraw zbierania elektronicznych materiałów dowodowych w organizacji.
+> Ponieważ istnieje wiele różnych scenariuszy, ten artykuł zawiera ogólne wskazówki dotyczące przenoszenia wyszukiwań i archiwizacji do podstawowego przypadku zbierania elektronicznych materiałów dowodowych w portalu zgodności. Przypadki zbierania elektronicznych materiałów dowodowych nie zawsze są wymagane, ale dodają dodatkową warstwę zabezpieczeń, umożliwiając przypisanie uprawnień do kontrolowania, kto ma dostęp do przypadków zbierania elektronicznych materiałów dowodowych w organizacji.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Aby uruchomić polecenia programu PowerShell opisane w tym artykule, musisz być członkiem grupy ról Menedżera zbierania elektronicznych materiałów dowodowych w grupie Centrum zgodności platformy Microsoft 365. Musisz również być członkiem grupy ról Zarządzanie odnajdowaniami w centrum administracyjnym usługi <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administracyjnego</a>.
+- Aby uruchomić polecenia programu PowerShell opisane w tym artykule, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności. Musisz również być członkiem grupy ról Zarządzanie odnajdywaniem w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>.
 
-- Ten artykuł zawiera wskazówki dotyczące tworzenia zbierania elektronicznych materiałów dowodowych. Zasady przechowywania będą stosowane do skrzynek pocztowych za pośrednictwem asynchronicznego procesu. Podczas tworzenia zbierania elektronicznych materiałów dowodowych należy utworzyć zarówno element CaseHoldPolicy, jak i caseHoldRule. W przeciwnym razie nie zostanie utworzone hold i lokalizacje zawartości nie zostaną umieszczone w a hold.
+- Ten artykuł zawiera wskazówki dotyczące tworzenia blokady zbierania elektronicznych materiałów dowodowych. Zasady przechowywania zostaną zastosowane do skrzynek pocztowych w procesie asynchronicznym. Podczas tworzenia blokady zbierania elektronicznych materiałów dowodowych należy utworzyć zarówno caseHoldPolicy, jak i CaseHoldRule, w przeciwnym razie blokada nie zostanie utworzona, a lokalizacje zawartości nie zostaną wstrzymane.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Krok 1. Połączenie do Exchange Online programu PowerShell i centrum & zgodności programu PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Krok 1. Połączenie do Exchange Online programu PowerShell i programu PowerShell & Security & Compliance Center
 
-Pierwszym krokiem jest połączenie się z programem PowerShell Exchange Online i centrum zabezpieczeń & w programie PowerShell. Możesz skopiować poniższy skrypt, wkleić go do okna programu PowerShell, a następnie go uruchomić. Zostanie wyświetlony monit o poświadczenia dla organizacji, z którą chcesz nawiązać połączenie. 
+Pierwszym krokiem jest nawiązanie połączenia z programem Exchange Online programu PowerShell i programu PowerShell & Security & Compliance Center programu PowerShell. Możesz skopiować następujący skrypt, wkleić go do okna programu PowerShell, a następnie uruchomić go. Zostanie wyświetlony monit o podanie poświadczeń dla organizacji, z którą chcesz nawiązać połączenie. 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -49,23 +49,23 @@ $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
 
-Należy uruchomić polecenia w poniższych krokach tej sesji programu PowerShell.
+Polecenia należy uruchomić w poniższych krokach w tej sesji programu PowerShell.
 
-## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>Krok 2. Uzyskiwanie listy przeszukiwań zbierania In-Place eDiscovery przy użyciu funkcji Get-MailboxSearch
+## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>Krok 2. Pobieranie listy In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych przy użyciu Get-MailboxSearch
 
-Po uwierzytelnieniu możesz uzyskać listę wyszukiwań zbierania elektronicznych materiałów dowodowych In-Place, uruchamiając polecenie cmdlet **Get-MailboxSearch** . Skopiuj i wklej następujące polecenie do programu PowerShell, a następnie uruchom go. Zostanie wyświetlona lista wyszukiwań wraz z ich nazwiskami i stanami wszystkich In-Place blokady.
+Po uwierzytelnieniu możesz uzyskać listę In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych, uruchamiając polecenie cmdlet **Get-MailboxSearch** . Skopiuj i wklej następujące polecenie do programu PowerShell, a następnie uruchom je. Lista wyszukiwań zostanie wyświetlona z ich nazwami i stanem dowolnego In-Place Blokady.
 
 ```powershell
 Get-MailboxSearch
 ```
 
-Wynik polecenia cmdlet będzie podobny do następującego:
+Dane wyjściowe polecenia cmdlet będą podobne do następujących:
 
-![Przykład programu PowerShell: Get-MailboxSearch.](../media/MigrateLegacyeDiscovery1.png)
+![Przykład programu PowerShell Get-MailboxSearch.](../media/MigrateLegacyeDiscovery1.png)
 
-## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>Krok 3. Uzyskiwanie informacji na temat In-Place zbierania elektronicznych materiałów dowodowych i In-Place zbierania elektronicznych materiałów dowodowych, które chcesz zmigrować
+## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>Krok 3. Uzyskiwanie informacji o In-Place wyszukiwaniach zbierania elektronicznych materiałów dowodowych i archiwach In-Place, które chcesz migrować
 
-Ponownie użyjsz polecenia cmdlet **Get-MailboxSearch** , ale tym razem do uzyskania właściwości wyszukiwania. Te właściwości można przechowywać w zmiennej do późniejszego użycia. W poniższym przykładzie wyniki polecenia cmdlet **Get-MailboxSearch są** przechowywane w zmiennej, a następnie są wyświetlane właściwości wyszukiwania.
+Ponownie użyjesz polecenia cmdlet **Get-MailboxSearch** , ale tym razem pobierzesz właściwości wyszukiwania. Te właściwości można przechowywać w zmiennej do późniejszego użycia. Poniższy przykład przechowuje wyniki polecenia cmdlet **Get-MailboxSearch** w zmiennej, a następnie wyświetla właściwości wyszukiwania.
 
 ```powershell
 $search = Get-MailboxSearch -Identity "Search 1"
@@ -75,27 +75,27 @@ $search = Get-MailboxSearch -Identity "Search 1"
 $search | FL
 ```
 
-Wynik tych dwóch poleceń będzie podobny do następującego:
+Dane wyjściowe tych dwóch poleceń będą podobne do następujących:
 
-![Przykład danych wyjściowych programu PowerShell z Get-MailboxSearch wyszukiwania indywidualnego.](../media/MigrateLegacyeDiscovery2.png)
+![Przykład danych wyjściowych programu PowerShell z używania Get-MailboxSearch dla pojedynczego wyszukiwania.](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> Czas trwania zawieszania In-Place w tym przykładzie jest nieograniczony (*ItemHoldPeriod: Unlimited*). Jest to typowe w przypadku zbierania elektronicznych materiałów dowodowych i dochodzenia prawnego. Jeśli czas trwania zawieszania jest inny niż czas nieograniczony, przyczyną jest prawdopodobnie przechowywanie zawartości w scenariuszu przechowywania. Zamiast korzystać z poleceń cmdlet zbierania elektronicznych materiałów dowodowych w programie PowerShell centrum zgodności & w celu przechowywania scenariuszy przechowywania, zalecamy zachowanie zawartości za pomocą poleceń [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) i [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) . Wynik korzystania z tych polecenia cmdlet będzie podobny do używania funkcji **New-CaseHoldPolicy** i **New-CaseHoldRule**, ale możesz określić okres przechowywania i akcję przechowywania, na przykład usunąć zawartość po wygaśnięciu okresu przechowywania. Ponadto korzystanie z polecenia cmdlet przechowywania nie wymaga kojarzenia przechowywania ze sprawą zbierania elektronicznych materiałów dowodowych.
+> Czas trwania blokady In-Place w tym przykładzie jest nieokreślony (*ItemHoldPeriod: Nieograniczony*). Jest to typowe w przypadku scenariuszy zbierania elektronicznych materiałów dowodowych i badań prawnych. Jeśli czas trwania blokady jest inny niż nieokreślony, przyczyna jest prawdopodobna, ponieważ blokada jest używana do przechowywania zawartości w scenariuszu przechowywania. Zamiast używać poleceń cmdlet zbierania elektronicznych materiałów dowodowych w programie PowerShell Centrum zgodności & zabezpieczeń na potrzeby scenariuszy przechowywania, zalecamy zachowanie zawartości za pomocą poleceń [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) i [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) . Wynik użycia tych poleceń cmdlet będzie podobny do użycia poleceń **New-CaseHoldPolicy** i **New-CaseHoldRule**, ale będzie można określić okres przechowywania i akcję przechowywania, na przykład usunięcie zawartości po upływie okresu przechowywania. Ponadto użycie poleceń cmdlet przechowywania nie wymaga skojarzenia blokad przechowywania z przypadkiem zbierania elektronicznych materiałów dowodowych.
 
-## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Krok 4. Tworzenie sprawy w centrum zgodności Microsoft 365 zgodności
+## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>Krok 4. Tworzenie sprawy w portalu zgodności usługi Microsoft Purview
 
-Aby utworzyć hold zbierania elektronicznych materiałów dowodowych, musisz utworzyć sprawę zbierania elektronicznych materiałów dowodowych w celu skojarzenia jej z. Poniższy przykład tworzy sprawę zbierania elektronicznych materiałów dowodowych przy użyciu wybranej nazwy. Właściwości nowej sprawy będą przechowywane w zmiennej do późniejszego użycia. Te właściwości można wyświetlić, uruchamiając polecenie `$case | FL` po utworzeniu sprawy.
+Aby utworzyć blokadę zbierania elektronicznych materiałów dowodowych, należy utworzyć przypadek zbierania elektronicznych materiałów dowodowych w celu skojarzenia blokady z. Poniższy przykład tworzy przypadek zbierania elektronicznych materiałów dowodowych przy użyciu wybranej nazwy. Właściwości nowego przypadku będą przechowywane w zmiennej do późniejszego użycia. Te właściwości można wyświetlić, `$case | FL` uruchamiając polecenie po utworzeniu sprawy.
 
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
-![Przykład uruchamiania New-ComplianceCase wiersza.](../media/MigrateLegacyeDiscovery3.png)
+![Przykład uruchamiania polecenia New-ComplianceCase.](../media/MigrateLegacyeDiscovery3.png)
 
-## <a name="step-5-create-the-ediscovery-hold"></a>Krok 5. Tworzenie zbierania elektronicznych materiałów dowodowych
+## <a name="step-5-create-the-ediscovery-hold"></a>Krok 5. Tworzenie blokady zbierania elektronicznych materiałów dowodowych
 
-Po utworzeniu sprawy możesz ją utworzyć i skojarzyć ze sprawą utworzoną w poprzednim kroku. Należy pamiętać, że należy utworzyć zarówno zasady dotyczące przechowywania liter, jak i regułę blokowania przypadków. Jeśli reguła przechowywania sprawy nie została utworzona po utworzeniu zasad przechowywania sprawy, nie zostanie utworzone hold zbierania elektronicznych materiałów dowodowych i nie zostanie umieszczona w tym miejscu.
+Po utworzeniu sprawy możesz utworzyć blokadę i skojarzyć ją ze sprawą utworzoną w poprzednim kroku. Należy pamiętać, że należy utworzyć zarówno zasady przechowywania spraw, jak i regułę blokady sprawy. Jeśli reguła blokady sprawy nie zostanie utworzona po utworzeniu zasad przechowywania sprawy, blokada zbierania elektronicznych materiałów dowodowych nie zostanie utworzona i żadna zawartość nie zostanie wstrzymana.
 
-Uruchom następujące polecenia, aby ponownie utworzyć hold zbierania elektronicznych materiałów dowodowych, który chcesz poddać migracji. W tych przykładach są In-Place właściwości z In-Place, które mają zostać zmigrowane z kroku 3. Pierwsze polecenie tworzy nowe zasady przechowywania przypadków i zapisuje właściwości zmiennej. Drugie polecenie tworzy odpowiednią regułę wstrzymywania liter.
+Uruchom następujące polecenia, aby ponownie utworzyć blokadę zbierania elektronicznych materiałów dowodowych, którą chcesz zmigrować. W tych przykładach są używane właściwości z In-Place Hold z kroku 3, które chcesz przeprowadzić migrację. Pierwsze polecenie tworzy nowe zasady przechowywania przypadku i zapisuje właściwości w zmiennej. Drugie polecenie tworzy odpowiednią regułę przechowywania przypadku.
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
@@ -105,55 +105,55 @@ $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLo
 New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
 
-![Przykład użycia polecenia cmdlet NewCaseHoldPolicy i NewCaseHoldRule.](../media/MigrateLegacyeDiscovery4.png)
+![Przykład użycia poleceń cmdlet NewCaseHoldPolicy i NewCaseHoldRule.](../media/MigrateLegacyeDiscovery4.png)
 
-## <a name="step-6-verify-the-ediscovery-hold"></a>Krok 6. Sprawdzanie zbierania elektronicznych materiałów dowodowych
+## <a name="step-6-verify-the-ediscovery-hold"></a>Krok 6. Weryfikowanie blokady zbierania elektronicznych materiałów dowodowych
 
-Aby upewnić się, że nie było problemów z utworzeniem wstrzymywania, warto sprawdzić, czy stan dystrybucji wstrzymania został pomyślnie zweryfikowany. Rozkład oznacza, że hold został zastosowany do wszystkich lokalizacji zawartości określonych w parametrze *ExchangeLocation* w poprzednim kroku. W tym celu możesz uruchomić polecenie cmdlet **Get-CaseHoldPolicy** . Ponieważ właściwości zapisane w zmiennej *$policy* utworzonej w poprzednim kroku nie są automatycznie aktualizowane w tej zmiennej, należy ponownie uruchomić polecenie cmdlet, aby sprawdzić, czy rozkład się powiodło. Pomyślne rozpowszechnianie zasad przechowywania sprawy może potrwać od 5 minut do 24 godzin.
+Aby upewnić się, że nie ma problemów z tworzeniem blokady, warto sprawdzić, czy stan dystrybucji blokady zakończył się pomyślnie. Dystrybucja oznacza, że blokada została zastosowana do wszystkich lokalizacji zawartości określonych w parametrze *ExchangeLocation* w poprzednim kroku. W tym celu można uruchomić polecenie cmdlet **Get-CaseHoldPolicy** . Ponieważ właściwości zapisane w *zmiennej $policy* utworzonej w poprzednim kroku nie są automatycznie aktualizowane w zmiennej, należy ponownie uruchomić polecenie cmdlet, aby sprawdzić, czy dystrybucja zakończyła się pomyślnie. Pomyślne rozpowszechnianie zasad przechowywania spraw może potrwać od 5 minut do 24 godzin.
 
-Uruchom następujące polecenie, aby sprawdzić, czy pomyślnie rozpowszechniono hold zbierania elektronicznych materiałów dowodowych.
+Uruchom następujące polecenie, aby sprawdzić, czy blokada zbierania elektronicznych materiałów dowodowych została pomyślnie rozproszona.
 
 ```powershell
 Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 ```
 
-Wartość **sukcesu dla** właściwości *DistributionStatus* wskazuje, że hold został pomyślnie umieszczony w lokalizacjach zawartości. Jeśli rozkład jeszcze nie został ukończony, zostanie wyświetlona wartość **Oczekiwanie** .
+Wartość **success** właściwości *DistributionStatus* wskazuje, że blokada została pomyślnie umieszczona w lokalizacjach zawartości. Jeśli dystrybucja nie została jeszcze ukończona, zostanie wyświetlona wartość **Oczekujące** .
 
-![Przykład Get-CaseHoldPolicy PowerShell.](../media/MigrateLegacyeDiscovery5.png)
+![Przykład Get-CaseHoldPolicy programu PowerShell.](../media/MigrateLegacyeDiscovery5.png)
 
 ## <a name="step-7-create-the-search"></a>Krok 7. Tworzenie wyszukiwania
 
-Ostatnim krokiem jest ponowne utworzenie wyszukiwania wskazanego w kroku 3 i skojarzenie go ze sprawą. Po utworzeniu wyszukiwania można je uruchomić za pomocą polecenia **cmdlet Start-ComplianceSearch** lub uruchomić w późniejszym czasie.
+Ostatnim krokiem jest ponowne utworzenie wyszukiwania zidentyfikowanego w kroku 3 i skojarzenie go ze sprawą. Po utworzeniu wyszukiwania można uruchomić je przy użyciu polecenia cmdlet **Start-ComplianceSearch** lub uruchomić je później.
 
 ```powershell
 New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxes -ContentMatchQuery $search.SearchQuery -Case $case.name
 ```
 
-![Przykład New-ComplianceSearch PowerShell.](../media/MigrateLegacyeDiscovery6.png)
+![Przykład New-ComplianceSearch programu PowerShell.](../media/MigrateLegacyeDiscovery6.png)
 
-## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Krok 8. Sprawdź sprawę, przytrzymaj i wyszukaj w Centrum zgodności platformy Microsoft 365
+## <a name="step-8-verify-the-case-hold-and-search-in-the-compliance-portal"></a>Krok 8. Weryfikowanie sprawy, archiwizowanie i wyszukiwanie w portalu zgodności
 
-Aby upewnić się, że wszystko jest poprawnie skonfigurowane, [https://compliance.microsoft.com](https://compliance.microsoft.com)przejdź do Centrum zgodności platformy Microsoft 365 i kliknij pozycję zbierania elektronicznych materiałów dowodowych **> Core**.
+Aby upewnić się, że wszystko jest poprawnie skonfigurowane, przejdź do portalu zgodności pod adresem [https://compliance.microsoft.com](https://compliance.microsoft.com)i kliknij pozycję **eDiscovery > Core**.
 
-![Microsoft 365 zbierania elektronicznych materiałów dowodowych w Centrum zgodności.](../media/MigrateLegacyeDiscovery7.png)
+![Microsoft Purview compliance portal eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
 
-Sprawa utworzona w kroku 3 jest wymieniona na stronie **Podstawowe zbierania elektronicznych materiałów dowodowych** . Otwórz sprawę, a następnie zwróć uwagę na utworzoną w kroku 4 listę na karcie **Wstrzymaj** . Możesz wybrać pozycję wstrzymywania, aby wyświetlić szczegółowe informacje na stronie wysuwu, takie jak liczba skrzynek pocztowych, do których zastosowano hold, i stan dystrybucji.
+Przypadek utworzony w kroku 3 znajduje się na stronie **eDiscovery (Standard** ). Otwórz sprawę, a następnie zwróć uwagę na blokadę utworzoną w kroku 4 na liście na karcie **Przytrzymaj** . Możesz wybrać blokadę, aby wyświetlić szczegóły na stronie wysuwanej, w tym liczbę skrzynek pocztowych, do których zastosowano blokadę, oraz stan dystrybucji.
 
-![Zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.](../media/MigrateLegacyeDiscovery8.png)
+![Funkcja zbierania elektronicznych materiałów dowodowych jest przechowywana w portalu zgodności.](../media/MigrateLegacyeDiscovery8.png)
 
-Wyszukiwanie utworzone w kroku 7 zostanie wyświetlone na karcie Wyszukiwania w przypadku.
+Wyszukiwanie utworzone w kroku 7 jest wyświetlane na karcie **Wyszukiwania** w przypadku.
 
-![Przeszukiwanie sprawy zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.](../media/MigrateLegacyeDiscovery9.png)
+![Wyszukiwanie przypadków zbierania elektronicznych materiałów dowodowych w portalu zgodności.](../media/MigrateLegacyeDiscovery9.png)
 
-Jeśli przeprowadzasz migrację wyszukiwania zbierania elektronicznych materiałów dowodowych In-Place, ale nie skojarzysz jej ze sprawą zbierania elektronicznych materiałów dowodowych, będzie ona wymieniona na stronie Przeszukiwanie zawartości w Centrum zgodności platformy Microsoft 365.
+Jeśli zmigrujesz In-Place wyszukiwanie zbierania elektronicznych materiałów dowodowych, ale nie skojarzysz go ze sprawą zbierania elektronicznych materiałów dowodowych, zostanie on wyświetlony na stronie wyszukiwania zawartości w portalu zgodności.
 
 ## <a name="more-information"></a>Więcej informacji
 
-- Aby uzyskać więcej informacji na In-Place zbierania elektronicznych materiałów dowodowych & <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">w centrum administracyjnym</a> usługi Exchange, zobacz:
+- Aby uzyskać więcej informacji na temat In-Place eDiscovery & Holds w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>, zobacz:
   
-  - [Zbierania elektronicznych materiałów dowodowych w miejscu](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+  - [Wykrywanie elektroniczne w miejscu](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [Zawieszenie w miejscu i zawieszenie w  postępowaniem sądowym](/exchange/security-and-compliance/in-place-and-litigation-holds)
+  - [Blokada miejscowa i blokada postępowania sądowego](/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 - Aby uzyskać więcej informacji na temat poleceń cmdlet programu PowerShell używanych w tym artykule, zobacz:
 
@@ -167,8 +167,8 @@ Jeśli przeprowadzasz migrację wyszukiwania zbierania elektronicznych materiał
 
   - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
   
-  - [Wyszukiwanie nowych zgodności](/powershell/module/exchange/new-compliancesearch)
+  - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- Aby uzyskać więcej informacji na Centrum zgodności platformy Microsoft 365, zobacz [Omówienie](microsoft-365-compliance-center.md) Centrum zgodności platformy Microsoft 365.
+- Aby uzyskać więcej informacji na temat portalu zgodności, zobacz [Omówienie portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center.md).

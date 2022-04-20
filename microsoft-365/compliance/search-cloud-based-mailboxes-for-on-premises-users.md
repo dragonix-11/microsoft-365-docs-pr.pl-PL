@@ -1,5 +1,5 @@
 ---
-title: Wyszukiwanie Teams czatów dla użytkowników lokalnych
+title: Wyszukaj dane czatu aplikacji Teams dla użytkowników lokalnych
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,77 +16,77 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: Administratorzy mogą używać narzędzi zbierania elektronicznych materiałów dowodowych Microsoft 365 w celu wyszukiwania i eksportowania danych Teams czatów dla użytkowników lokalnych w Exchange hybrydowym.
+description: Administratorzy mogą używać narzędzi zbierania elektronicznych materiałów dowodowych w Microsoft 365 do wyszukiwania i eksportowania Teams danych czatu dla użytkowników lokalnych w ramach wdrożenia hybrydowego Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fdd142783313418c8c65c04f9b5e344ff325ec2c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7b77a5178237e7ae25f710c8cc9574449f67a4f2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021165"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945874"
 ---
-# <a name="search-for-teams-chat-data-for-on-premises-users"></a>Wyszukiwanie Teams czatów dla użytkowników lokalnych
+# <a name="search-for-teams-chat-data-for-on-premises-users"></a>Wyszukaj dane czatu aplikacji Teams dla użytkowników lokalnych
 
-Jeśli Organizacja ma wdrożenie hybrydowe programu Exchange (lub organizacja synchronizuje lokalną organizację programu Exchange z programem Office 365) i włączyła usługę Microsoft Teams, użytkownicy lokalni mogą używać aplikacji czatu Teams do obsługi wiadomości błyskawicznych. W przypadku użytkownika opartego na chmurze Teams danych czatu (nazywanych również czatami *1x1 lub 1xN*) są zapisywane w ich podstawowej skrzynce pocztowej w chmurze. Gdy użytkownik korzysta z aplikacji czatu Teams czatów, jego wiadomości na czacie nie mogą być przechowywane w podstawowej skrzynce pocztowej, która znajduje się lokalnie. W celu rozwiązania tego ograniczenia firma Microsoft wydała nową funkcję, w której jest tworzony obszar magazynu w chmurze, za pomocą narzędzi zbierania elektronicznych materiałów dowodowych do wyszukiwania i eksportowania danych Teams czatów dla użytkowników lokalnych.
+Jeśli Twoja organizacja ma Exchange wdrożenie hybrydowe (lub organizacja synchronizuje lokalną organizację Exchange z Office 365) i włączyła Microsoft Teams, użytkownicy lokalni mogą używać aplikacji Teams czatu do obsługi wiadomości błyskawicznych. W przypadku użytkownika opartego na chmurze Teams dane czatu (*nazywane również czatami 1x1 lub 1xN*) są zapisywane w podstawowej skrzynce pocztowej opartej na chmurze. Gdy użytkownik lokalny korzysta z aplikacji czatu Teams, wiadomości czatu nie mogą być przechowywane w podstawowej skrzynce pocztowej, która znajduje się lokalnie. Aby obejść to ograniczenie, firma Microsoft wydała nową funkcję, w której utworzono chmurowy obszar magazynowania, dzięki czemu używasz narzędzi zbierania elektronicznych materiałów dowodowych do wyszukiwania i eksportowania Teams danych czatu dla użytkowników lokalnych.
   
-Oto wymagania i ograniczenia dotyczące włączania magazynu lokalnego w chmurze:
+Poniżej przedstawiono wymagania i ograniczenia dotyczące włączania magazynu w chmurze dla użytkowników lokalnych:
   
-- Konta użytkowników w lokalnej usłudze katalogowej (na przykład Active Directory) muszą być zsynchronizowane z usługą Azure Active Directory, usługą katalogową w usłudze Microsoft 365. Oznacza to, że w programie Microsoft 365 utworzono konto użytkownika poczty i jest skojarzone z użytkownikiem, którego podstawowa skrzynka pocztowa znajduje się w organizacji lokalnej.
+- Konta użytkowników w lokalnej usłudze katalogowej (np. Active Directory) muszą być synchronizowane z usługą Azure Active Directory, usługą katalogową w Microsoft 365. Oznacza to, że konto użytkownika poczty jest tworzone w Microsoft 365 i jest skojarzone z użytkownikiem, którego podstawowa skrzynka pocztowa znajduje się w organizacji lokalnej.
 
-- Użytkownik, którego podstawowa skrzynka pocztowa znajduje się w organizacji lokalnej, musi mieć przypisaną licencję usługi Microsoft Teams oraz co najmniej licencję Exchange Online Plan 1.
+- Użytkownikowi, którego podstawowa skrzynka pocztowa znajduje się w organizacji lokalnej, musi mieć przypisaną licencję Microsoft Teams i co najmniej licencję Exchange Online plan 1.
 
-- Jeśli Twoja organizacja nie ma hybrydowego Exchange hybrydowego, musisz zsynchronizować lokalną Exchange schemat, aby Azure Active Directory. Jeśli tego nie zrobisz, istnieje ryzyko utworzenia zduplikowanych chmurowych skrzynek pocztowych w programie Exchange Online dla użytkowników, którzy mają skrzynkę pocztową w lokalnej Exchange organizacji.
+- Jeśli twoja organizacja nie ma wdrożenia hybrydowego Exchange, musisz zsynchronizować schemat Exchange lokalnego w celu Azure Active Directory. Jeśli tego nie zrobisz, możesz ryzykować utworzenie zduplikowanych chmurowych skrzynek pocztowych w Exchange Online dla użytkowników, którzy mają skrzynkę pocztową w lokalnej organizacji Exchange.
 
-- Tylko Teams czatów skojarzone z lokalnym użytkownikiem są przechowywane w opartym na chmurze obszarze przechowywania. Użytkownik lokalnie nie może w żaden sposób uzyskać dostępu do tego obszaru magazynu.
+- W obszarze magazynu opartym na chmurze są przechowywane tylko dane rozmów Teams skojarzone z użytkownikiem lokalnym. Użytkownik lokalny nie może w żaden sposób uzyskać dostępu do tego obszaru magazynowania.
 
 > [!NOTE]
-> Teams konwersacji w kanale są zawsze przechowywane w chmurowej skrzynce pocztowej skojarzonej z zespołem, co oznacza, że możesz wyszukiwać konwersacje w kanale. Aby uzyskać więcej informacji na temat Teams konwersacji w kanale, zobacz Wyszukiwanie Microsoft Teams [i Microsoft 365 grup](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Teams konwersacje kanału są zawsze przechowywane w chmurowej skrzynce pocztowej skojarzonej z zespołem, co oznacza, że możesz wyszukiwać konwersacje na kanale. Aby uzyskać więcej informacji na temat wyszukiwania konwersacji w kanale Teams, zobacz [Wyszukiwanie Microsoft Teams i Grupy Microsoft 365](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Jak to działa
 
-Jeśli użytkownik z włączoną obsługą usługi Microsoft Teams ma lokalną skrzynkę pocztową, a jego konto/tożsamość użytkownika zostało zsynchronizowane z chmurą, firma Microsoft tworzy magazyn w chmurze w celu skojarzenia danych czatu z 1xN użytkownika lokalnego Teams z. Teams czatów dla użytkowników lokalnych są indeksowane w celu wyszukiwania. Dzięki temu możesz wyszukiwać i eksportować dane Teams użytkowników lokalnych przy użyciu wyszukiwania zawartości (i Advanced eDiscovery powiązanych z podstawowymi sprawami zbierania elektronicznych materiałów dowodowych i zbierania elektronicznych materiałów dowodowych). Możesz również użyć poleceń **\*cmdlet funkcji ComplianceSearch** w centrum zabezpieczeń & zgodności programu PowerShell, aby Teams danych czatu dla użytkowników lokalnych.
+Jeśli użytkownik z obsługą Microsoft Teams ma lokalną skrzynkę pocztową, a jego konto/tożsamość użytkownika zostały zsynchronizowane z chmurą, firma Microsoft tworzy magazyn oparty na chmurze, aby skojarzyć dane rozmów 1xN użytkownika lokalnego Teams. Teams dane czatu dla użytkowników lokalnych są indeksowane do wyszukiwania. Umożliwia to wyszukiwanie zawartości (i wyszukiwania skojarzone z przypadkami zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i Microsoft Purview (Premium) w celu wyszukiwania, podglądu i eksportowania Teams danych czatu dla użytkowników lokalnych. Możesz również użyć poleceń **\*cmdlet ComplianceSearch** w programie PowerShell Security & Compliance Center, aby wyszukać Teams danych czatu dla użytkowników lokalnych.
   
-Na poniższej ilustracji przedstawiono przepływ pracy, w jaki Teams wiadomości czatu dla użytkowników lokalnych są dostępne do wyszukiwania i wyświetlania podglądu oraz eksportowania.
+Na poniższej ilustracji przedstawiono przepływ pracy, w jaki sposób Teams dane czatu dla użytkowników lokalnych są dostępne do wyszukiwania, wyświetlania podglądu i eksportowania.
   
-![Przechowywanie danych w chmurze dla użytkowników lokalnych w Microsoft Teams.](../media/EHAMShard1.png)
+![Magazyn oparty na chmurze dla użytkowników lokalnych w Microsoft Teams.](../media/EHAMShard1.png)
   
-Oprócz tej funkcji możesz również używać narzędzi zbierania elektronicznych materiałów dowodowych w celu przeszukiwania i wyświetlania podglądu zawartości programu Teams oraz eksportowania jej w chmurze w witrynie programu SharePoint i skrzynce pocztowej usługi Exchange skojarzonej z każdym zespołem Microsoft Team oraz danymi rozmów 1xN Teams w skrzynce pocztowej usługi Exchange Online dla użytkowników korzystających z chmury.
+Oprócz tej możliwości można również używać narzędzi zbierania elektronicznych materiałów dowodowych do wyszukiwania, podglądu i eksportowania zawartości Teams w witrynie SharePoint opartej na chmurze oraz skrzynki pocztowej Exchange skojarzonej z każdym zespołem firmy Microsoft i 1xN Teams danych czatu w skrzynce pocztowej Exchange Online dla użytkowników w chmurze.
 
-## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Wyszukiwanie Teams czatu dla użytkowników lokalnych
+## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Wyszukiwanie zawartości czatu Teams dla użytkowników lokalnych
 
-Poniżej opisano, jak za pomocą funkcji wyszukiwanie zawartości Centrum zgodności platformy Microsoft 365 wyszukiwania Teams czatów dla użytkowników lokalnych. Możesz również użyć narzędzia wyszukiwania w core eDiscovery, aby wyszukać dane czatu dla użytkowników lokalnych.
+Poniżej przedstawiono sposób wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview w celu wyszukiwania Teams danych czatu dla użytkowników lokalnych. Możesz również użyć narzędzia wyszukiwania w usłudze eDiscovery (Standard), aby wyszukać dane czatu dla użytkowników lokalnych.
   
-1. W Centrum zgodności platformy Microsoft 365 przejdź do **pola Wyszukiwanie zawartości**.
+1. W portalu zgodności przejdź do **pozycji Wyszukiwanie zawartości**.
 
-2. Na **karcie Wyszukiwania** kliknij pozycję **Nowe wyszukiwanie** i nadaj nazwę nowem wyszukiwaniu.
+2. Na karcie **Wyszukiwania** kliknij pozycję **Nowe wyszukiwanie** i nadaj nowemu wyszukiwaniu nazwę.
 
-3. Na **stronie Lokalizacje** ustaw przełącznik w pozycji Wł **. dla Exchange** pocztowych.
+3. Na stronie **Lokalizacje** ustaw przełącznik **w pozycji Włączone** dla Exchange skrzynek pocztowych.
 
-4. Aby wyszukać Teams zawartości dla określonych użytkowników (w tym użytkowników lokalnych), wybierz pozycję Wybierz użytkownika **,** grupy lub zespoły i wybierz konkretnych użytkowników do uwzględnienia w wyszukiwaniu. Jeśli nie zostanie wyświetlona lista konkretnych użytkowników, wyszukiwanie obejmie wszystkich użytkowników, w tym użytkowników lokalnych.
+4. Aby wyszukać zawartość Teams dla określonych użytkowników (w tym użytkowników lokalnych), wybierz pozycję **Wybierz użytkownika, grupy lub zespoły** i wybierz określonych użytkowników do uwzględnienia w wyszukiwaniu. Jeśli nie wyświetlisz listy określonych użytkowników, wyszukiwanie będzie obejmować wszystkich użytkowników, w tym użytkowników lokalnych.
 
-5. Upewnij się **, że** jest zaznaczone pole wyboru Dodaj zawartość aplikacji dla użytkowników lokalnych. Dzięki temu będzie przeszukiwane magazyn w bazie danych w chmurze dla użytkowników lokalnych.
+5. Upewnij się, że zaznaczono pole wyboru **Dodaj zawartość aplikacji dla użytkowników lokalnych** . Dzięki temu magazyn baz danych w chmurze dla użytkowników lokalnych zostanie przeszukany.
 
-    ![Zaznacz pole wyboru "Aplikacja pakietu Office zawartości dla użytkowników lokalnych" na stronie kreatora Lokalizacje.](../media/EHAMShardCheckBox.png)
+    ![Zaznacz pole wyboru "Dodaj zawartość aplikacja pakietu Office dla użytkowników lokalnych" na stronie Kreator lokalizacji.](../media/EHAMShardCheckBox.png)
 
-6. Na stronie **Definiowanie warunków wyszukiwania** utwórz zapytanie słów kluczowych i w razie potrzeby dodaj warunki do zapytania wyszukiwania. Aby wyszukać tylko dane czatów zespołu, możesz dodać następujące zapytanie w polu **Słowa kluczowe** :
+6. Na stronie **Definiowanie warunków wyszukiwania** utwórz zapytanie słowa kluczowego i w razie potrzeby dodaj warunki do zapytania wyszukiwania. Aby wyszukać tylko dane czatów zespołowych, możesz dodać następujące zapytanie w polu **Słowa kluczowe** :
 
     ```text
     kind:im AND kind:microsoftteams
     ```
 
-6. Prześlij i uruchom wyszukiwanie. Wszelkie wyniki wyszukiwania użytkowników lokalnych można wyświetlać w podglądzie tak samo jak inne wyniki wyszukiwania. Możesz również wyeksportować wyniki wyszukiwania (w tym Teams danych czatu) do pliku PST. Więcej informacji można znaleźć w następujących artykułach:
+6. Prześlij i uruchom wyszukiwanie. Wszystkie wyniki wyszukiwania dla użytkowników lokalnych można wyświetlić w wersji zapoznawczej, podobnie jak w przypadku innych wyników wyszukiwania. Możesz również wyeksportować wyniki wyszukiwania (w tym wszystkie Teams dane czatu) do pliku PST. Więcej informacji można znaleźć w następujących artykułach:
 
     - [Tworzenie wyszukiwania](content-search.md)
 
     - [Podgląd wyników wyszukiwania](preview-ediscovery-search-results.md)
 
-    - [Eksportowanie wyników wyszukiwania](export-search-results.md)
+    - [Eksportuj wyniki wyszukiwania](export-search-results.md)
 
-## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>Wyszukiwanie danych czatu Teams użytkowników lokalnych za pomocą programu PowerShell
+## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>Wyszukiwanie Teams danych czatu dla użytkowników lokalnych przy użyciu programu PowerShell
 
-Za pomocą poleceń cmdlet **New-ComplianceSearch** w Centrum & zgodności w programie PowerShell możesz Teams danych czatu dla użytkowników lokalnych. Jak wyjaśniono wcześniej, nie musisz przesyłać wniosku o pomoc techniczną, aby użyć programu PowerShell do wyszukiwania Teams danych czatu dla użytkowników lokalnych.
+Polecenia cmdlet **New-ComplianceSearch** w programie PowerShell Centrum zgodności & zabezpieczeń umożliwiają wyszukiwanie Teams danych czatu dla użytkowników lokalnych. Jak wyjaśniono wcześniej, nie trzeba przesyłać wniosku o pomoc techniczną, aby użyć programu PowerShell do wyszukiwania Teams danych czatu dla użytkowników lokalnych.
   
-1. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Uruchom następujące polecenie programu PowerShell, aby utworzyć wyszukiwanie zawartości, które wyszukuje Teams danych czatu dla użytkowników lokalnych.
 
@@ -94,48 +94,48 @@ Za pomocą poleceń cmdlet **New-ComplianceSearch** w Centrum & zgodności w pro
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-    Parametr *IncludeUserAppContent*  służy do określania opartego na chmurze magazynu dla użytkownika lub użytkowników określonych przez  *parametr ExchangeLocation*  . Funkcja *AllowNotFoundExchangeLocationsEnabled*  umożliwia wyszukiwanie użytkowników lokalnych w magazynie opartym na chmurze. W przypadku użycia wartości `$true` dla tego parametru wyszukiwanie nie próbuje sprawdzić, czy skrzynka pocztowa istnieje przed jej rozpoczęciem. Jest to wymagane do przeszukiwania magazynu lokalnego w chmurze dla użytkowników, ponieważ ten magazyn oparty na chmurze nie jest rozpoznawalny jako zwykła skrzynka pocztowa w chmurze.
+    Parametr *IncludeUserAppContent*  służy do określania magazynu opartego na chmurze dla użytkownika lub użytkowników określonych przez parametr  *ExchangeLocation*  . *Obiekt AllowNotFoundExchangeLocationsEnabled* umożliwia przeszukiwanie magazynu opartego na chmurze dla użytkowników lokalnych. Jeśli używasz `$true` wartości dla tego parametru, wyszukiwanie nie próbuje zweryfikować istnienia skrzynki pocztowej przed jej uruchomieniem. Jest to wymagane do wyszukiwania magazynu w chmurze dla użytkowników lokalnych, ponieważ ten magazyn oparty na chmurze nie jest rozpoznawany jako zwykła skrzynka pocztowa oparta na chmurze.
 
-    Poniższy przykład wyszukuje Teams, które zawierają słowo kluczowe "redstone" w opartym na chmurze magazynie dla Anny Ciesomej, która jest użytkownikiem lokalnym w organizacji Contoso.
+    Poniższy przykład wyszukuje Teams czatów zawierających słowo kluczowe "redstone" w magazynie opartym na chmurze dla Sary Davis, która jest użytkownikiem lokalnym w organizacji firmy Contoso.
   
     ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND (kind:im AND kind:microsoftteams)" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   Po utworzeniu wyszukiwania użyj polecenia cmdlet **Start-ComplianceSearch** , aby uruchomić wyszukiwanie.
+   Po utworzeniu wyszukiwania należy użyć polecenia cmdlet **Start-ComplianceSearch** do uruchomienia wyszukiwania.
   
-Aby uzyskać więcej informacji dotyczących korzystania z tych funkcji cmdlet, zobacz:
+Aby uzyskać więcej informacji na temat korzystania z tych poleceń cmdlet, zobacz:
   
-- [Wyszukiwanie nowych zgodności](/powershell/module/exchange/new-compliancesearch)
+- [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
 - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
 ## <a name="known-issues"></a>Znane problemy
 
-- Obecnie możesz wyszukiwać, wyświetlać podgląd i eksportować Teams czatów dla użytkowników lokalnych. Możesz także umieścić dane czatu Teams użytkownika lokalnego w czacie skojarzonym ze sprawą podstawową lub Advanced eDiscovery i zastosować zasady przechowywania dla czatów Teams lub wiadomości kanałów dla użytkowników lokalnych. Jednak obecnie nie można stosować zasad przechowywania dla innych lokalizacji zawartości (takich jak skrzynki pocztowe Exchange i witryny SharePoint) dla użytkowników lokalnych.
+- Obecnie można wyszukiwać, wyświetlać podgląd i eksportować Teams danych czatu dla użytkowników lokalnych. Możesz również umieścić Teams dane czatu dla użytkownika lokalnego w blokadzie skojarzonej ze sprawą dotyczącą platformy Core lub eDiscovery (Premium) i zastosować zasady przechowywania dla Teams czatów lub komunikatów kanału dla użytkowników lokalnych. Jednak w tej chwili nie można zastosować zasad przechowywania dla innych lokalizacji zawartości (takich jak skrzynki pocztowe Exchange i witryny SharePoint) dla użytkowników lokalnych.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-**Czy muszę wysyłać wnioski o pomoc techniczną w celu wyszukania wiadomości czatu dla użytkowników lokalnych?**
+**Czy muszę przesłać wniosek o pomoc techniczną, aby wyszukać wiadomości czatu dla użytkowników lokalnych?**
 
-L.p. Ta funkcja jest domyślnie włączona dla wszystkich organizacji. W pewnym momencie trzeba było skontaktować się z pomocą techniczną firmy Microsoft, ale już nie tak jest.
+L.p. Ta funkcja jest domyślnie włączona dla wszystkich organizacji. W pewnym momencie trzeba było skontaktować się z pomoc techniczna firmy Microsoft ale tak już nie jest.
   
- **Czy narzędzia zbierania elektronicznych materiałów dowodowych mogą znaleźć starsze dane Teams czatów dla użytkowników lokalnych przed czasem, w jaki ta funkcja była domyślnie włączona dla wszystkich organizacji?**
+ **Czy narzędzia zbierania elektronicznych materiałów dowodowych mogą znaleźć starsze Teams danych czatu dla użytkowników lokalnych przed włączeniem tej funkcji domyślnie dla wszystkich organizacji?**
   
-Firma Microsoft rozpoczęła przechowywanie Teams danych czatu dla użytkowników lokalnych 31 stycznia 2018 r. Jeśli od tej daty tożsamość użytkownika lokalnego programu Teams została zsynchronizowana między lokalną usługą Active Directory i usługą Azure Active Directory w usłudze Microsoft 365, dane rozmów Teams są przechowywane w chmurze i można je przeszukiwać przy użyciu narzędzi zbierania elektronicznych materiałów dowodowych.
+31 stycznia 2018 r. firma Microsoft rozpoczęła przechowywanie danych czatu Teams dla użytkowników lokalnych. Jeśli więc tożsamość lokalnego użytkownika Teams została zsynchronizowana między Tobą lokalna usługa Active Directory i Azure Active Directory w Microsoft 365 od tej daty, Teams dane czatu są przechowywane w chmurze i można je przeszukiwać przy użyciu Narzędzia zbierania elektronicznych materiałów dowodowych.
 
- **Czy użytkownicy lokalni muszą mieć licencję, aby przechowywać swoje Teams czatów w chmurze?**
+ **Czy użytkownicy lokalni potrzebują licencji na przechowywanie Teams danych czatu w chmurze?**
   
-Tak. Aby przechowywać Teams czatu dla użytkownika lokalnego w magazynie w chmurze, musi on mieć przypisaną licencję Microsoft Teams i licencję planu usługi Exchange Online w systemie Office 365 (lub Microsoft 365).
+Tak. Aby przechowywać Teams dane rozmów dla użytkownika lokalnego w magazynie w chmurze, użytkownikowi musi zostać przypisana licencja Microsoft Teams i licencja planu Exchange Online w Office 365 (lub Microsoft 365).
 
-**Gdzie znajduje się magazyn w chmurze dla użytkowników lokalnych?**
+**Gdzie znajduje się magazyn oparty na chmurze dla użytkowników lokalnych?**
   
-Teams czatów są przechowywane w preferowanej lokalizacji danych (PDL) dla użytkownika lokalnego. Plik PDL jest honorowany zarówno w środowisku Single-Geo jak i w środowisku wielolokalowym. Aby uzyskać więcej informacji, zobacz [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
+Teams dane rozmów są przechowywane w preferowanej lokalizacji danych (PDL) dla użytkownika lokalnego. Biblioteka PDL jest honorowana zarówno w środowiskach Single-Geo, jak i Multi-Geo. Aby uzyskać więcej informacji, zobacz [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
 
-**Czy istnieje ryzyko utraty danych Teams czatu, jeśli lokalna skrzynka pocztowa użytkownika jest migrowana do chmury?**
+**Czy istnieje ryzyko utraty Teams danych czatu, jeśli lokalna skrzynka pocztowa użytkownika zostanie zmigrowana do chmury?**
   
-L.p. Podczas migracji podstawowej skrzynki pocztowej użytkownika lokalnego do chmury dane rozmów Teams tego użytkownika zostaną zmigrowane do jego nowej podstawowej skrzynki pocztowej w chmurze.
+L.p. Podczas migracji podstawowej skrzynki pocztowej użytkownika lokalnego do chmury Teams dane rozmów dla tego użytkownika zostaną zmigrowane do nowej podstawowej skrzynki pocztowej opartej na chmurze.
   
- **Czy można zastosować zasady przechowywania lub zbierania elektronicznych materiałów dowodowych do użytkowników lokalnych?**
+ **Czy mogę zastosować zasady przechowywania lub przechowywania zbierania elektronicznych materiałów dowodowych do użytkowników lokalnych?**
   
-Tak. Możesz stosować blokady zbierania elektronicznych materiałów dowodowych lub zasady przechowywania Teams czatach i wiadomościach kanałów użytkowników lokalnych. Jednak w celu zachowania Teams zawartości dla użytkowników lokalnych użytkownikowi lokalnego należy przypisać licencję Exchange Online Plan 2.
+Tak. Zasady zbierania elektronicznych materiałów dowodowych lub przechowywania można stosować w przypadku Teams czatów i komunikatów kanałów użytkowników lokalnych. Jednak aby zachować lub zachować zawartość Teams dla użytkowników lokalnych, użytkownikowi lokalnemu należy przypisać licencję Exchange Online plan 2.

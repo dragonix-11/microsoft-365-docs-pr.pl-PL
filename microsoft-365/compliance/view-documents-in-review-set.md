@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie dokumentów w zestawie recenzji w programie Advanced eDiscovery
+title: Wyświetlanie dokumentów w zestawie przeglądów w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,67 +13,67 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Wybierz sposób wyświetlania zawartości w Advanced eDiscovery, na przykład tekst, adnotacje, widok przekonwertowany lub widok natywny.
+description: Wybierz sposób wyświetlania zawartości w środowisku zbierania elektronicznych materiałów dowodowych (Premium), takich jak tekst, adnotaty, konwertowanie lub widok natywny.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4086d79b611596b8a32a15f994174a0f8f58b0bc
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 775804bd8e69e11bdacd1fee141234b07462dbef
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63028111"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945808"
 ---
-# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Wyświetlanie dokumentów w zestawie recenzji w programie Advanced eDiscovery
+# <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>Wyświetlanie dokumentów w zestawie przeglądów w usłudze eDiscovery (Premium)
 
-Advanced eDiscovery wyświetla zawartość za pośrednictwem kilku osób przeglądających każdy o różnych celach. Różnych osób przeglądających można używać przez klikanie dowolnego dokumentu w zestawie recenzji. Aktualnie udostępniane przeglądarki to:
+eDiscovery (Premium) wyświetla zawartość za pośrednictwem kilku osób przeglądających, z których każdy ma różne cele. Różnych osób przeglądających można użyć, klikając dowolny dokument w zestawie przeglądów. Obecnie dostępne są następujące osoby przeglądające:
 
 - Metadane pliku
 - Widok natywny
-- Widok tekstu
+- Widok tekstowy
 - Widok adnotacji
 
 ## <a name="file-metadata"></a>Metadane pliku
 
-Ten panel można włączać i wyłączać, aby wyświetlać różne metadane skojarzone z dokumentem. Siatkę wyników wyszukiwania można dostosować tak, aby wyświetlała określone metadane, jednak istnieją sytuacje, w których przewijanie w poziomie może być trudne podczas przeglądania danych. Panel metadanych Plik umożliwia użytkownikowi przełączenie się do widoku w przeglądarce.
+Ten panel można włączyć/wyłączyć, aby wyświetlić różne metadane skojarzone z dokumentem. Mimo że siatkę wyników wyszukiwania można dostosować do wyświetlania określonych metadanych, istnieją wystąpienia, w których przewijanie w poziomie może być trudne podczas przeglądania danych. Panel Metadane pliku umożliwia użytkownikowi przełączanie widoku w przeglądarce.
 
 ![Panel metadanych pliku
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Widok natywny
 
-W przeglądarce natywnej jest wyświetlany najbogatszy widok dokumentu. Obsługuje ona setki typów plików i ma na celu wyświetlanie natywnych możliwości. W Microsoft Office plików przeglądarka używa wersji internetowej aplikacji Office do wyświetlania zawartości, takiej jak komentarze do dokumentu, formuły Excel, ukryte wiersze/kolumny i notatki PowerPoint notatki.
+Przeglądarka natywna wyświetla najbogatszy widok dokumentu. Obsługuje setki typów plików i ma na celu wyświetlenie możliwie najprawdziwszego środowiska natywnego. W przypadku Microsoft Office plików przeglądarka używa internetowej wersji aplikacji Office do wyświetlania zawartości, takiej jak komentarze do dokumentów, formuły Excel, ukryte wiersze/kolumny i notatki PowerPoint.
 
 ![Widok natywny
 ](../media/Reviewimage3.png)
 
-## <a name="text-view"></a>Widok tekstu
+## <a name="text-view"></a>Widok tekstowy
 
-Przeglądarka tekstu wyświetla wyodrębniony tekst pliku. Ignoruje ona wszystkie osadzone obrazy i formatowanie, ale jest bardzo skuteczna, jeśli próbujesz szybko zrozumieć zawartość. Widok tekstu zawiera również następujące funkcje:
+Przeglądarka tekstów udostępnia widok wyodrębnianego tekstu pliku. Ignoruje ona wszystkie osadzone obrazy i formatowanie, ale jest bardzo skuteczna, jeśli próbujesz szybko zrozumieć zawartość. Widok tekstowy zawiera również następujące funkcje:
 
-- Licznik linii ułatwia odwołanie do określonych części dokumentu
-- Wyróżnienia po trafieniu wyszukiwania, które będą wyróżniać terminy w dokumencie, a także pasek przewijania
-- Widok różnic udostępnia widok porównania, w którym wyróżniane są różnice w tekście podczas wyświetlania dokumentów w pobliżu zduplikowanych dokumentów
+- Licznik wierszy ułatwia odwoływanie się do określonych części dokumentu
+- Wyróżnianie trafień wyszukiwania, które będzie wyróżniać terminy w dokumencie, a także pasek przewijania
+- Widok różnic udostępnia widok porównania, który wyróżnia różnice tekstowe podczas wyświetlania dokumentów w pobliżu duplikatów
 
-![Widok tekstu.](../media/Reviewimage4.png)
+![Widok tekstowy.](../media/Reviewimage4.png)
 
-![Widok różnicy.](../media/Reviewimage5.png)
+![Widok różnic.](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Widok adnotacji
 
-Widok Adnotacje zawiera funkcje umożliwiające użytkownikom stosowanie znaczników do dokumentu, takie jak:
+Widok Adnotacja zawiera funkcje, które umożliwiają użytkownikom stosowanie znaczników w dokumencie, w tym:
 
-- Redactions (Redactions) obszaru — użytkownicy mogą narysować pole w dokumencie w celu ukrycia poufnej zawartości
-- Ołówek — użytkownicy mogą ręcznie rysować na dokumencie, aby zwrócić uwagę na niektóre fragmenty dokumentu
-- Zaznaczanie adnotacji — użytkownicy mogą wybrać adnotacje w dokumencie w celu usunięcia
-- Przełączanie przezroczystości adnotacji — sprawia, że adnotacje są półprzezroczyste, aby wyświetlić zawartość pod adnotacją
-- Poprzednia strona — przejście do poprzedniej strony
-- Następna strona — przejście do następnej strony
-- Przejdź do strony — użytkownik może wprowadzić określony numer strony, aby przejść do
+- Redakcja obszaru — użytkownicy mogą narysować pole w dokumencie, aby ukryć poufną zawartość
+- Ołówek — użytkownicy mogą swobodnie rysować na dokumencie, aby zwrócić uwagę na niektóre fragmenty dokumentu
+- Wybieranie adnotacji — użytkownicy mogą wybierać adnotacje w dokumencie w celu usunięcia
+- Przełączanie przezroczystości adnotacji — sprawia, że adnotacje są półprzezroczyste, aby wyświetlić zawartość za adnotacją
+- Poprzednia strona — przechodzi do poprzedniej strony
+- Następna strona — przechodzi do następnej strony
+- Przejdź do strony — użytkownik może wprowadzić określony numer strony, do których chcesz przejść
 - Powiększenie — ustawianie poziomu powiększenia dla widoku adnotacji
-- Obracanie — użytkownik może obracać dokument zgodnie z ruchem wskazówek zegara
-- Wyszukiwanie — użytkownik może przeszukiwać dokument i przechodzić do różnych trafień w dokumencie
+- Rotate — użytkownik może obracać dokument zgodnie z ruchem wskazówek zegara
+- Wyszukiwanie — użytkownik może wyszukiwać w dokumencie i przechodzić do różnych trafień w dokumencie
 
-  ![Widok adnotacji.](../media/Reviewimage1.png)
+  ![Wyświetlanie adnotacji.](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Widok pulpitu nawigacyjnego
 
-Widok pulpitu nawigacyjnego umożliwia wizualizowanie i podsumowywane dane w siatce wyników wyszukiwania. W tym widoku możesz tworzyć niestandardowe widżety ułatwiające i intuicyjne analizowanie oraz raportowanie w zestawie recenzji. Po utworzeniu widżetów możesz z nimi korzystać w celu uzyskania liczby elementów lub utworzenia wyszukiwania.
+Widok pulpitu nawigacyjnego umożliwia wizualizację i podsumowanie danych w siatce wyników wyszukiwania. W tym widoku można tworzyć niestandardowe widżety, aby umożliwić intuicyjne i łatwe analizowanie i raportowanie zestawu przeglądów. Po utworzeniu widżetów możesz z nimi korzystać, aby uzyskać liczbę elementów lub utworzyć wyszukiwanie.

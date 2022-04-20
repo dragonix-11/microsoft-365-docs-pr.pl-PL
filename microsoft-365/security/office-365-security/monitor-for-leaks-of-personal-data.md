@@ -1,5 +1,5 @@
 ---
-title: Monitorowanie wycieków danych osobistych
+title: Monitorowanie pod kątem wycieków danych osobowych
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -16,158 +16,158 @@ ms.collection:
 ms.localizationpriority: high
 search.appverid:
 - MET150
-description: Dowiedz się więcej o trzech narzędziach, których można używać do monitorowania wycieków danych osobistych.
+description: Dowiedz się więcej o trzech narzędziach, których można użyć do monitorowania wycieków danych osobowych.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4024640173d6cbbf6817d3fa2b1c24cb7264833c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3b16e96e85d6ee154912535ecf0bac4ac5ba6fac
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470862"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947764"
 ---
-# <a name="monitor-for-leaks-of-personal-data"></a>Monitorowanie wycieków danych osobistych
+# <a name="monitor-for-leaks-of-personal-data"></a>Monitorowanie pod kątem wycieków danych osobowych
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Istnieje wiele narzędzi, których można używać do monitorowania używania i transportu danych osobowych. W tym temacie opisano trzy dobrze dobrane narzędzia.
+Istnieje wiele narzędzi, których można użyć do monitorowania wykorzystania i transportu danych osobowych. W tym temacie opisano trzy narzędzia, które działają dobrze.
 
-:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="Narzędzia do monitorowania wykorzystania i transportu danych osobistych" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="Narzędzia do monitorowania wykorzystania i transportu danych osobowych" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 Na ilustracji:
 
-- Zacznij od raportów Microsoft 365 ochrony przed utratą danych w celu monitorowania danych osobowych w sieciach SharePoint Online, OneDrive dla Firm i wiadomościach e-mail podczas przesyłania. Raporty te zawierają najwyższy poziom szczegółów monitorowania danych osobowych. Raporty te nie zawierają jednak wszystkich usług w programie Office 365.
+- Zacznij od raportów ochrony przed utratą danych w usłudze Microsoft Purview na potrzeby monitorowania danych osobowych w usłudze SharePoint Online, OneDrive dla Firm i wiadomości e-mail przesyłane. Raporty te zapewniają najwyższy poziom szczegółowości monitorowania danych osobowych. Jednak te raporty nie obejmują wszystkich usług w Office 365.
 
-- Następnie użyj zasad alertów i dziennika inspekcji, aby monitorować aktywność w różnych usługach. Skonfiguruj monitorowanie bieżące lub przeszukaj dziennik inspekcji w celu zbadania zdarzenia. Dziennik inspekcji działa w różnych usługach — Sway, Power BI, zbierania elektronicznych materiałów dowodowych, Dynamics 365, Power Automate, Microsoft Teams, Działania administratorów, OneDrive dla Firm, SharePoint Online, poczta w trakcie przesyłania i skrzynki pocztowe w miejscu spoczynku. Skype konwersacji są uwzględniane w skrzynkach pocztowych w spoczynku.
+- Następnie użyj zasad alertów i dziennika inspekcji, aby monitorować aktywność między usługami. Skonfiguruj bieżące monitorowanie lub przeszukaj dziennik inspekcji w celu zbadania zdarzenia. Dziennik inspekcji działa w usługach — Sway, Power BI, eDiscovery, Dynamics 365, Power Automate, Microsoft Teams, Aktywność administratora, OneDrive dla Firm, SharePoint Online, poczta przesyłana i skrzynki pocztowe magazynowane. Skype konwersacje są uwzględniane w skrzynkach pocztowych magazynowanych.
 
-- Ponadto używaj oprogramowania Microsoft Defender for Cloud Apps do monitorowania plików z poufnymi danymi w innych dostawcach SaaS. Wkrótce będzie można używać typów informacji poufnych i ujednoliconych etykiet na platformie Azure Information Protection i Office z Defender dla Chmury Apps. Możesz skonfigurować zasady, które będą stosowane do wszystkich Twoich aplikacji SaaS lub określonych aplikacji (takich jak Box). Defender dla Chmury aplikacje nie wykrywają plików w aplikacji Exchange Online, w tym plików dołączonych do wiadomości e-mail.
+- Na koniec użyj Microsoft Defender for Cloud Apps do monitorowania plików z poufnymi danymi u innych dostawców SaaS. Wkrótce będzie można korzystać z poufnych typów informacji i ujednoliconych etykiet w usłudze Azure Information Protection i Office za pomocą usługi Defender dla Chmury Apps. Możesz skonfigurować zasady, które mają zastosowanie do wszystkich aplikacji SaaS lub określonych aplikacji (takich jak Box). Defender dla Chmury Apps nie odnajduje plików w Exchange Online, w tym plików dołączonych do poczty e-mail.
 
-## <a name="data-loss-prevention-reports"></a>Raporty dotyczące ochrony przed utratą danych
+## <a name="data-loss-prevention-reports"></a>Raporty dotyczące zapobiegania utracie danych
 
-Po utworzeniu zasad ochrony przed utratą danych (DLP, Data Loss Prevention), musisz upewnić się, że działają one zgodnie z twoimi zamiarami, i pomóc Ci w zachowania zgodności. Dzięki raportom ochrony przed zasadami DLP w programie Office 365 możesz szybko wyświetlać liczbę spotkań zasad DLP, zastępować lub wyników fałszywie dodatnich; sprawdzać, czy są one trendowane w górę, czy w dół w czasie; filtrować raport na różne sposoby i wyświetlać więcej szczegółów, wybierając punkt na wykresie.
+Po utworzeniu zasad ochrony przed utratą danych (DLP) należy sprawdzić, czy działają one zgodnie z oczekiwaniami i pomagają zachować zgodność. Dzięki raportom DLP w Office 365 można szybko wyświetlić liczbę dopasowań, przesłoń lub wyników fałszywie dodatnich zasad DLP; sprawdzić, czy są one trendy w górę lub w dół w czasie; filtrować raport na różne sposoby i wyświetlać więcej szczegółów, wybierając punkt w wierszu na grafie.
 
-Raporty funkcji DLP mogą być w ten sposób:
+Raporty DLP umożliwiają:
 
-- Skoncentruj się na określonych okresach czasu i poznaj przyczyny kolekcji i trendów.
-- Odnajdowanie procesów biznesowych naruszających zasady ochrony przed firmami.
-- Zrozumienie jakiegokolwiek wpływu biznesowego zasad DLP.
-- Wyświetl justowanie przesłane przez użytkowników, gdy rozpoznają poradę o zasadach, zastępując zasady lub zgłaszając wynik fałszywie dodatni.
+- Skoncentruj się na określonych okresach i poznaj przyczyny wzrostów i trendów.
+- Odnajdywanie procesów biznesowych naruszających zasady DLP organizacji.
+- Informacje o wpływie zasad DLP na działalność biznesową.
+- Wyświetl uzasadnienia przesłane przez użytkowników, gdy rozwiążą poradę dotyczącą zasad, przesłaniając zasady lub zgłaszając wynik fałszywie dodatni.
 - Sprawdź zgodność z określonymi zasadami DLP, wyświetlając wszystkie dopasowania dla tych zasad.
-- W okienku szczegółów można wyświetlić listę plików z danymi poufnymi, które są zgodnie z zasadami ochrony przed dlp.
+- Wyświetl listę plików z poufnymi danymi zgodnymi z zasadami DLP w okienku szczegółów.
 
-Ponadto przy użyciu raportów funkcji DLP można precyzyjnie dostosować zasady DLP podczas uruchamiania ich w trybie testowania.
+Ponadto możesz użyć raportów DLP, aby dostosować zasady DLP podczas uruchamiania ich w trybie testowym.
 
-Raporty DLP znajdują się w Centrum zgodności platformy Microsoft 365. Przejdź do **sekcji Raporty** \> **Danych organizacyjnych**, aby znaleźć dopasowania zasad DLP, zdarzenia **DLP** oraz raporty o wynikach fałszywie dodatnich i zastępować zasad **DLP**.
+Raporty DLP znajdują się w portalu zgodności usługi Microsoft Purview. Przejdź do sekcji **Raporty** \> **dotyczące danych organizacji** , aby znaleźć **dopasowania zasad DLP**, **zdarzenia DLP** i **raporty fałszywie dodatnie DLP i przesłaniają raporty** .
 
-Aby uzyskać więcej informacji, [zobacz Wyświetlanie raportów w celu ochrony przed utratą danych](../../compliance/view-the-dlp-reports.md).
+Aby uzyskać więcej informacji, zobacz [Wyświetlanie raportów dotyczących zapobiegania utracie danych](../../compliance/view-the-dlp-reports.md).
 
 :::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image2.png" alt-text="Raport przedstawiający dopasowania zasad DLP" lightbox="../../media/Monitor-for-leaks-of-personal-data-image2.png":::
 
 ## <a name="audit-log-and-alert-policies"></a>Dziennik inspekcji i zasady alertów
 
-Dziennik inspekcji zawiera zdarzenia z usług Exchange Online, SharePoint Online, OneDrive dla Firm, Azure Active Directory, Microsoft Teams, Power BI, Sway i innych usługi.
+Dziennik inspekcji zawiera zdarzenia z Exchange Online, SharePoint Online, OneDrive dla Firm, Azure Active Directory, Microsoft Teams, Power BI, Sway i innych Usług.
 
-Portal Microsoft 365 Defender i raporty Centrum zgodności platformy Microsoft 365 dwa sposoby monitorowania i tworzenia raportów w dzienniku inspekcji:
+Portal Microsoft 365 Defender i portal zgodności usługi Microsoft Purview udostępniają dwa sposoby monitorowania i raportowania w dzienniku inspekcji:
 
-- Konfigurowanie zasad alertów, wyświetlanie alertów i monitorowanie trendów — korzystanie z zasad alertów i narzędzi pulpitu nawigacyjnego alertów w portalu alertów Microsoft 365 Defender sieci Centrum zgodności platformy Microsoft 365.
-- Przeszukiwanie dziennika inspekcji bezpośrednio: Wyszukaj wszystkie zdarzenia w określonym przedziale dat. Możesz również filtrować wyniki według określonych kryteriów, takich jak użytkownik, który wykonał akcję, akcję lub obiekt docelowy.
+- Konfigurowanie zasad alertów, wyświetlanie alertów i monitorowanie trendów — użyj zasad alertów i narzędzi pulpitu nawigacyjnego alertów w portalu Microsoft 365 Defender lub portalu zgodności usługi Microsoft Purview.
+- Przeszukaj dziennik inspekcji bezpośrednio: wyszukaj wszystkie zdarzenia w określonej dacie. Możesz też filtrować wyniki na podstawie określonych kryteriów, takich jak użytkownik, który wykonał akcję, akcja lub obiekt docelowy.
 
-Dzięki tym narzędziom zespoły ds. zgodności z informacjami i zabezpieczeń mogą aktywnie przeglądać działania wykonywane przez użytkowników końcowych i administratorów w różnych usługach. Automatyczne alerty można skonfigurować tak, aby wysyłać powiadomienia e-mail, gdy w określonych zbiorach witryn wystąpią określone działania — na przykład gdy zawartość jest udostępniana z witryn nazywanych informacjami związanymi z RODO. Umożliwia to tym zespołom obserwowanie użytkowników w celu zapewnienia, że są stosowane firmowe zasady zabezpieczeń, lub zapewnienie dodatkowego szkolenia.
+Zespoły ds. zgodności z informacjami i zabezpieczeń mogą używać tych narzędzi do proaktywnego przeglądania działań wykonywanych zarówno przez użytkowników końcowych, jak i administratorów w różnych usługach. Alerty automatyczne można skonfigurować do wysyłania powiadomień e-mail w przypadku niektórych działań wykonywanych w określonych zbiorach witryn — na przykład gdy zawartość jest udostępniana z witryn, o których wiadomo, że zawierają informacje związane z RODO. Dzięki temu zespoły mogą śledzić użytkowników, aby zapewnić przestrzeganie firmowych zasad zabezpieczeń lub zapewnić dodatkowe szkolenia.
 
-Zespoły ds. zabezpieczeń informacji mogą również przeszukiwać dziennik inspekcji w celu zbadania podejrzewanych naruszeń danych i określenia zarówno głównej przyczyny, jak i zakresu naruszenia. Ta wbudowana funkcja ułatwia zachowanie zgodności z artykułem 33 i 34 RODO, który wymaga powiadomienia urzędu nadzorczygo RODO i podmiotom danych o naruszeniu danych w danym okresie. Wpisy dziennika inspekcji są przechowywane tylko przez 90 dni w ramach usługi — jest to często zalecane i wiele organizacji wymaga, aby te dzienniki były przechowywane przez dłuższy czas.
+Zespoły ds. zabezpieczeń informacji mogą również przeszukiwać dziennik inspekcji w celu zbadania podejrzanych naruszeń danych i określenia zarówno głównej przyczyny, jak i zakresu naruszenia. Ta wbudowana funkcja ułatwia zgodność z art. Wpisy dziennika inspekcji są przechowywane tylko przez 90 dni w usłudze — jest to często zalecane, a wiele organizacji wymaga przechowywania tych dzienników przez dłuższy czas.
 
-Dostępne są rozwiązania, które subskrybują ujednolicone dzienniki inspekcji za pomocą interfejsu API działań zarządzania firmy Microsoft i mogą w razie potrzeby przechowywać wpisy dziennika oraz zapewniać zaawansowane pulpity nawigacyjne i alerty. Przykładem jest pakiet [Microsoft Operations Management Suite (OMS).](/azure/operations-management-suite/oms-solution-office-365)
+Dostępne są rozwiązania, które subskrybują ujednolicone dzienniki inspekcji za pośrednictwem interfejsu API działania zarządzania firmy Microsoft i mogą przechowywać wpisy dziennika w razie potrzeby oraz udostępniać zaawansowane pulpity nawigacyjne i alerty. Jednym z przykładów jest [pakiet Microsoft Operations Management Suite (OMS).](/azure/operations-management-suite/oms-solution-office-365)
 
-Więcej informacji na temat zasad alertów i przeszukiwania dziennika inspekcji:
+Więcej informacji o zasadach alertów i przeszukiwaniu dziennika inspekcji:
 
-- [Zasady alertów w programie Microsoft 365](../../compliance/alert-policies.md)
-- [Wyszukiwanie działań użytkowników i administratorów w dzienniku inspekcji w programie Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (wprowadzenie)
-- [Włączanie lub wyłączanie przeszukiwania dziennika inspekcji](../../compliance/turn-audit-log-search-on-or-off.md)
+- [Zasady alertów w Microsoft 365](../../compliance/alert-policies.md)
+- [Wyszukaj w dzienniku inspekcji aktywność użytkownika i administratora w Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (wprowadzenie)
+- [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](../../compliance/turn-audit-log-search-on-or-off.md)
 - [Przeszukaj dziennik inspekcji](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (polecenie cmdlet)
 - [Szczegółowe właściwości w dzienniku inspekcji](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Microsoft Defender for Cloud Apps pomaga w odnajdywaniu innych aplikacji SaaS w użytku w twoich sieciach oraz danych poufnych wysyłanych do i z tych aplikacji.
+Microsoft Defender for Cloud Apps ułatwia odnajdywanie innych aplikacji SaaS używanych w sieciach oraz poufnych danych wysyłanych do i z tych aplikacji.
 
-Microsoft Defender for Cloud Apps to kompleksowy program zapewniający szczegółową widoczność, szczegółową kontrolę i ulepszoną ochronę przed zagrożeniami dla aplikacji w chmurze. Identyfikuje ona ponad 15 000 aplikacji w chmurze w Twojej sieci ze wszystkich urządzeń i udostępnia ocenianie ryzyka oraz bieżącą ocenę ryzyka i analizy. Nie są wymagani żadni agenci: z Twoich zapór i serwerów proxy są zbierane informacje, aby zapewnić Ci pełną widoczność i kontekst użycia chmury i cienia IT.
+Microsoft Defender for Cloud Apps to kompleksowa usługa zapewniająca głęboką widoczność, szczegółowe mechanizmy kontroli i rozszerzoną ochronę przed zagrożeniami dla aplikacji w chmurze. Identyfikuje ponad 15 000 aplikacji w chmurze w sieci ze wszystkich urządzeń i zapewnia ocenę ryzyka oraz bieżącą ocenę ryzyka i analizę. Brak wymaganych agentów: informacje są zbierane z zapór i serwerów proxy w celu uzyskania pełnego wglądu i kontekstu dla użycia chmury i w tle it.
 
-Aby lepiej zrozumieć środowisko chmury, funkcja Defender dla Chmury aplikacje bada szczegółowe informacje na temat wszystkich działań, plików i kont dla aplikacji zarządzanych i zweryfikowanych. Możesz uzyskać szczegółowe informacje na poziomie pliku i dowiedzieć się, gdzie są przemieszczane dane w aplikacjach w chmurze.
+Aby lepiej zrozumieć środowisko chmury, funkcja badania aplikacji Defender dla Chmury zapewnia szczegółowy wgląd we wszystkie działania, pliki i konta dla zaakceptowanych i zarządzanych aplikacji. Możesz uzyskać szczegółowe informacje na temat poziomu plików i dowiedzieć się, gdzie dane przemieszczają się w aplikacjach w chmurze.
 
-Na przykład na poniższej ilustracji przedstawiono dwie zasady dotyczące aplikacji Defender dla Chmury, które mogą pomóc w zakresie RODO.
+Na przykład poniższa ilustracja przedstawia dwie zasady Defender dla Chmury Aplikacje, które mogą pomóc w rodorze.
 
-:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="Zasady Defender dla Chmury aplikacji" lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="Zasady aplikacji Defender dla Chmury" lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
 
-Pierwsze alerty zasad są alertowane, gdy pliki z wstępnie zdefiniowanym atrybutem PII lub wyrażeniem niestandardowym są udostępniane poza organizacją z określonych aplikacji SaaS.
+Pierwsze alerty zasad, gdy pliki ze wstępnie zdefiniowanym atrybutem pii lub wyrażeniem niestandardowym, które wybierzesz, są udostępniane poza organizacją z wybranych aplikacji SaaS.
 
-Druga zasada blokuje pobieranie plików na dowolne urządzenie niezakierowane. Wybierasz atrybuty w plikach do wyszukiwania i aplikacje SaaS, których mają dotyczyć zasady.
+Drugie zasady blokują pobieranie plików na dowolne urządzenie niezarządzane. Wybierasz atrybuty w plikach do wyszukania oraz aplikacje SaaS, do których mają być stosowane zasady.
 
-Te typy atrybutów zostaną wkrótce Defender dla Chmury aplikacje:
+Te typy atrybutów wkrótce zostaną Defender dla Chmury Apps:
 
 - Typy informacji poufnych
-- Ujednolicone etykiety w usługach Microsoft 365 i Azure Information Protection
+- Ujednolicone etykiety w Microsoft 365 i usłudze Azure Information Protection
 
-### <a name="defender-for-cloud-apps-dashboard"></a>Defender dla Chmury pulpit nawigacyjny aplikacji
+### <a name="defender-for-cloud-apps-dashboard"></a>pulpit nawigacyjny aplikacji Defender dla Chmury
 
-Jeśli korzystanie z aplikacji Pakietu Office nie zostało jeszcze przez Ciebie Defender dla Chmury, zacznij od jego uruchamiania. Aby uzyskać dostęp Defender dla Chmury aplikacji: <https://portal.cloudappsecurity.com>.
+Jeśli jeszcze nie rozpoczęto korzystania z usługi Defender dla Chmury Apps, rozpocznij od jej uruchomienia. Aby uzyskać dostęp do aplikacji Defender dla Chmury: <https://portal.cloudappsecurity.com>.
 
 > [!NOTE]
-> Pamiętaj o włączeniu ustawienia "Automatycznie skanuj pliki pod Information Protection klasyfikacji usługi Azure" (w ustawieniach ogólnych) podczas rozpoczynania pracy z aplikacjami pakietu Defender dla Chmury lub przed przypisaniem etykiet. Po zakończeniu konfiguracji Defender dla Chmury ponownie skanuje istniejące pliki, dopóki nie zostaną zmodyfikowane.
+> Pamiętaj, aby włączyć opcję "Automatycznie skanuj pliki pod kątem etykiet klasyfikacji Information Protection platformy Azure" (w ustawieniach ogólnych) podczas rozpoczynania pracy z aplikacjami Defender dla Chmury lub przed przypisaniem etykiet. Po skonfigurowaniu usługa Defender dla Chmury Apps nie skanuje ponownie istniejących plików, dopóki nie zostaną zmodyfikowane.
 
-:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="Pulpit nawigacyjny z informacjami o alertach" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="Pulpit nawigacyjny przedstawiający informacje o alertach" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 
 Więcej informacji:
 
-- [Wdrażanie Defender dla Chmury aplikacji](/cloud-app-security/getting-started-with-cloud-app-security)
-- [Więcej informacji na temat Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
-- [Blokowanie pobierania poufnych informacji przy użyciu Microsoft Defender for Cloud Apps proxy](/cloud-app-security/use-case-proxy-block-session-aad)
+- [Wdrażanie aplikacji Defender dla Chmury](/cloud-app-security/getting-started-with-cloud-app-security)
+- [Więcej informacji o Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Blokuj pobieranie poufnych informacji przy użyciu serwera proxy Microsoft Defender for Cloud Apps](/cloud-app-security/use-case-proxy-block-session-aad)
 
-## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Przykładowe zasady dotyczące plików i aktywności w celu wykrywania udostępniania danych osobistych
+## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Przykładowe zasady dotyczące plików i działań do wykrywania udostępniania danych osobowych
 
-### <a name="detect-sharing-of-files-containing-pii--credit-card-number"></a>Wykrywanie udostępniania plików zawierających dane pii — numer karty kredytowej
+### <a name="detect-sharing-of-files-containing-pii--credit-card-number"></a>Wykrywanie udostępniania plików zawierających dane osobowe — numer karty kredytowej
 
-Alert, gdy plik zawierający numer karty kredytowej jest udostępniany za pomocą zatwierdzonej aplikacji w chmurze.
+Alert, gdy plik zawierający numer karty kredytowej jest udostępniany z zatwierdzonej aplikacji w chmurze.
 
-|Kontrolka|Ustawienia|
+|Kontroli|Ustawienia|
 |---|---|
-|Typ zasad|Zasady dotyczące plików|
+|Typ zasad|Zasady plików|
 |Szablon zasad|Brak szablonu|
 |Ważność zasad|High (Wysoki)|
 |Kategoria|DLP|
 |Ustawienia filtru|Poziom dostępu = Publiczny (Internet), Publiczny, Zewnętrzny <p> App = \<select apps\> (użyj tego ustawienia, jeśli chcesz ograniczyć monitorowanie do określonych aplikacji SaaS)|
 |Zastosuj do|Wszystkie pliki, wszyscy właściciele|
-|Inspekcja zawartości|Pliki zgodne z wyrażeniem w prezentacji: Wszystkie kraje: Finanse: numer karty kredytowej <p> Nie wymagaj istotnego kontekstu: niezaznaczone (to ustawienie będzie zgodne ze słowami kluczowymi, jak również regex) <p> Zawiera pliki o co najmniej 1 dopasowaniach <p> Unmask the last 4 characters of the violation: checked|
-|Alerty|Tworzenie alertu dla każdego pasującego pliku: zaznaczone <p> Dzienny limit alertów: 1000 <p> Wybierz alert jako wiadomość e-mail: zaznaczone <p> Do: infosec@contoso.com|
-|Nadzór|Microsoft OneDrive dla Firm <p> Zamieć prywatne: zaznacz pole wyboru Usuń użytkowników zewnętrznych <p> Wszystkie inne ustawienia: niezaznaczone <p> Microsoft Office SharePoint Online <p> Zamieć prywatne: zaznacz pole wyboru Usuń użytkowników zewnętrznych <p> Wszystkie inne ustawienia: niezaznaczone|
+|Inspekcja zawartości|Zawiera pliki zgodne z obecnym wyrażeniem: Wszystkie kraje: Finanse: Numer karty kredytowej <p> Nie wymagaj odpowiedniego kontekstu: niezaznaczone (to ustawienie będzie zgodne ze słowami kluczowymi i wyrażeniami regularnymi) <p> Zawiera pliki z co najmniej 1 dopasowaniem <p> Usuń maskowanie ostatnich 4 znaków naruszenia: zaznaczone|
+|Alerty|Utwórz alert dla każdego pasującego pliku: zaznaczone <p> Dzienny limit alertów: 1000 <p> Wybierz alert jako wiadomość e-mail: zaznaczone <p> Do: infosec@contoso.com|
+|Nadzór|Microsoft OneDrive dla Firm <p> Ustaw jako prywatny: zaznacz opcję Usuń użytkowników zewnętrznych <p> Wszystkie inne ustawienia: niezaznaczone <p> Microsoft Office SharePoint Online <p> Ustaw jako prywatny: zaznacz opcję Usuń użytkowników zewnętrznych <p> Wszystkie inne ustawienia: niezaznaczone|
 
 Podobne zasady:
 
-- Wykrywanie udostępniania plików zawierających dane PII — adres e-mail
-- Wykrywanie udostępniania plików zawierających dane PII — numer paszportu
+- Wykrywanie udostępniania plików zawierających identyfikator PII — adres e-mail
+- Wykrywanie udostępniania plików zawierających identyfikator PII — numer paszportu
 
-### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Wykrywanie danych klienta lub kadr w uścisce lub OneDrive dla Firm
+### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Wykrywanie danych klienta lub działu kadr w usłudze Box lub OneDrive dla Firm
 
-Alert, gdy plik oznaczony jako Dane klienta lub Dane HR zostanie przekazany do OneDrive dla Firm lub Box.
+Alert po przekazaniu pliku z etykietą Dane klienta lub Dane działu kadr do OneDrive dla Firm lub Box.
 
 Uwagi:
 
-- Monitorowanie pola wymaga skonfigurowania łącznika przy użyciu zestawu SDK łącznika interfejsu API.
-- Te zasady wymagają funkcji, które są obecnie w prywatnej wersji Preview.
+- Monitorowanie urządzenia Box wymaga skonfigurowania łącznika przy użyciu zestawu SDK łącznika interfejsu API.
+- Te zasady wymagają możliwości, które są obecnie dostępne w prywatnej wersji zapoznawczej.
 
-|Kontrolka|Ustawienia|
+|Kontroli|Ustawienia|
 |---|---|
-|Typ zasad|Zasady aktywności|
+|Typ zasad|Zasady działania|
 |Szablon zasad|Brak szablonu|
 |Ważność zasad|High (Wysoki)|
-|Kategoria|Udostępnianie kontroli|
-|Działanie w dniu|Pojedyncza aktywność|
-|Ustawienia filtru|Typ działania = Upload pliku <p> App = Microsoft OneDrive dla Firm i Box <p> Etykieta klasyfikacji (obecnie w prywatnej wersji zapoznawczej): usługa Azure Information Protection = Dane klienta, Dział kadr — Dane płac, Kadry — Dane pracowników|
+|Kategoria|Kontrola udostępniania|
+|Działaj zgodnie z|Pojedyncze działanie|
+|Ustawienia filtru|Typ działania = plik Upload <p> App = Microsoft OneDrive dla Firm i Box <p> Etykieta klasyfikacji (obecnie w prywatnej wersji zapoznawczej): azure Information Protection = dane klienta, zasoby ludzkie — dane wynagrodzeń, zasoby ludzkie — dane pracowników|
 |Alerty|Tworzenie alertu: zaznaczone <p> Dzienny limit alertów: 1000 <p> Wybierz alert jako wiadomość e-mail: zaznaczone <p> Do: infosec@contoso.com|
 |Nadzór|Wszystkie aplikacje <p> Umieść użytkownika w kwarantannie: sprawdź <p> Wszystkie inne ustawienia: niezaznaczone <p> Usługa Office 365 <p> Umieść użytkownika w kwarantannie: sprawdź <p> Wszystkie inne ustawienia: niezaznaczone|
 
 Podobne zasady:
 
-- Wykrywanie dużych ilości pobieranych danych klienta lub danych HR — ostrzegaj, gdy jeden użytkownik wykryje, że duża liczba plików zawierających dane klienta lub dane HR zostanie pobrana przez jednego użytkownika w krótkim czasie.
-- Wykrywanie udostępniania danych klientów i kadr — alerty w przypadku udostępniania plików zawierających dane klienta lub kadr.
+- Wykrywanie dużych pobrań danych klienta lub danych kadr — alert, gdy w krótkim czasie zostanie wykryta duża liczba plików zawierających dane klienta lub dane kadrowe pobieranych przez jednego użytkownika.
+- Wykrywanie udostępniania danych klienta i działu kadr — alert, gdy pliki zawierające dane klienta lub działu kadr są udostępniane.

@@ -1,5 +1,5 @@
 ---
-title: Monitorowanie zdarzeń dotyczących prywatności danych w organizacji i odpowiadanie na nie
+title: Monitorowanie i reagowanie na zdarzenia związane z prywatnością danych w organizacji
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,68 +16,68 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Monitorowanie zdarzeń dotyczących danych osobowych i odpowiadanie na nie za pomocą zasad inspekcji i alertów oraz próśb osób, których dane dotyczą.
-ms.openlocfilehash: 74efff60bb8e0ad6f170b57c86e384d3b689eee1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Użyj zasad inspekcji i alertów oraz żądań podmiotów danych, aby monitorować zdarzenia dotyczące danych osobowych i reagować na nie.
+ms.openlocfilehash: 5f4dd6a59ae361cbef042bfc3587203b34620746
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988327"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945346"
 ---
-# <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Monitorowanie zdarzeń dotyczących prywatności danych w organizacji i odpowiadanie na nie
+# <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Monitorowanie i reagowanie na zdarzenia związane z prywatnością danych w organizacji
 
-Microsoft 365 funkcje pomagają monitorować i badać zdarzenia związane z prywatnością danych w organizacji oraz reagować na nie w ramach operacyjnych funkcji pokrewnych. Posiadanie procesów, procedur i innej dokumentacji dla każdego z nich może być również ważne w celu zademonstrowania zgodności z przepisami przed organami regulacyjną.
+Microsoft 365 funkcje ułatwiają monitorowanie, badanie i reagowanie na zdarzenia związane z prywatnością danych w organizacji podczas operacji związanych z nimi możliwości. Posiadanie procesów, procedur i innej dokumentacji dla każdego z nich może być również ważne, aby zademonstrować zgodność z organami regulacyjnymi.
 
 Obejmują one: 
 
 - Zasady inspekcji i alertów
-- Żądania osób, których dane dotyczą (w tym przeszukiwanie zawartości i zbierania elektronicznych materiałów dowodowych)
-- Dodatkowe narzędzia do badania i raportowanie
+- Żądania podmiotów danych (w tym wyszukiwanie zawartości i zbieranie elektronicznych materiałów dowodowych)
+- Dodatkowe narzędzia śledcze i raportowanie
 
-## <a name="data-privacy-regulations-impacting-the-use-of-monitoring-and-response-tools"></a>Przepisy dotyczące ochrony prywatności danych wpływające na korzystanie z narzędzi do monitorowania i reagowania
+## <a name="data-privacy-regulations-impacting-the-use-of-monitoring-and-response-tools"></a>Przepisy dotyczące prywatności danych wpływające na korzystanie z narzędzi do monitorowania i reagowania
 
-Oto przykładowy wykaz przepisów dotyczących ochrony prywatności danych, które mogą dotyczyć kontroli zarządzania informacjami:
+Oto przykładowa lista przepisów dotyczących prywatności danych, które mogą odnosić się do mechanizmów kontroli ładu informacji:
 
-- LGPD, artykuł 46
-- LGPD, artykuł 48
-- Artykuł RODO (5)(1)(f)
-- Artykuł RODO (15)(1)(e)
+- ARTYKUŁ LGPD 46
+- Artykuł 48 LGPD
+- RODO , art.
+- RODO , art.
 - HIPAA-HITECH (45 C.F.R. 164.308(a)(1)(ii)(D))
 - HIPAA-HITECH (45 C.F.R. 164.308(a)(6)(ii)
-- HIPAA-HITECH (45 C.F.R. 164,312(b))
-- RÓWNIEŻ (1798.105(c))
+- HIPAA-HITECH (45 C.F.R. 164.312(b))
+- CCPA (1798.105(c))
 
-Aby uzyskać więcej informacji, zobacz [Ocenianie zagrożeń związanych z prywatnością danych i identyfikowanie informacji poufnych](information-protection-deploy-assess.md).
+Aby uzyskać więcej informacji, zobacz [Ocena ryzyka związanego z prywatnością danych i identyfikowanie informacji poufnych](information-protection-deploy-assess.md).
 
-Przepisy dotyczące ochrony prywatności danych na ogół wywołują następujące zasady monitorowania i reagowania:
+Przepisy dotyczące prywatności danych zwykle wymagają następujących celów monitorowania i reagowania:
 
-- Inspekcja, alertowanie i raportowanie działań związanych z przechowywaniem, udostępnianiem i przetwarzaniem danych osobowych
-- Możliwość odpowiadania na żądanie podmiotu danych oraz, w niektórych przypadkach, wykonywania działań naprawczych i innych środków administracyjnych w celu spełnienia tych żądań.
+- Inspekcja, alerty i raportowanie działań związanych z przechowywaniem, udostępnianiem i przetwarzaniem danych osobowych
+- Możliwość reagowania na żądanie podmiotu danych (DSR), a w niektórych przypadkach wykonywania czynności dochodzeniowych i innych środków administracyjnych w celu spełnienia takich żądań.
 
-Twoja organizacja może także chcieć wykonywać działania monitorujące i reagowanie w innych celach, takich jak potrzeby w zakresie zgodności z przepisami lub ze względów biznesowych. Ustanawianie schematu monitorowania i reakcji w zakresie ochrony prywatności danych należy stosować w ramach ogólnego planowania monitorowania i reagowania, wdrażania i zarządzania.
+Organizacja może również chcieć wykonywać działania monitorowania i reagowania na nie do innych celów, takich jak inne potrzeby w zakresie zgodności lub ze względów biznesowych. Ustanowienie schematu monitorowania i reagowania na prywatność danych powinno odbywać się w ramach ogólnego planowania monitorowania i reagowania, wdrażania i zarządzania nimi.
 
-Aby ułatwić rozpoczynanie pracy ze schematem monitorowania i reagowania w programie Microsoft 365 ochrony prywatności danych, ten artykuł zawiera listę przydatnych funkcji w zakresie Microsoft 365 odpowiedzi na pytania takie jak: 
+Aby ułatwić rozpoczęcie pracy ze schematem monitorowania i reagowania w Microsoft 365 dla przepisów dotyczących prywatności danych, w tym artykule wymieniono przydatne funkcje w Microsoft 365 odpowiedzi na pytania, takie jak: 
 
-- Jakie rodzaje technik monitorowania, badania i raportowania są dostępne w przypadku różnych typów danych i źródeł?
-- Jakie mechanizmy będą potrzebne do obsługi żądań osób, których dane dotyczą, i wszelkich działań naprawczych, takich jak anonimizacja, ponowne działanie i usuwanie.
+- Jakiego rodzaju codzienne techniki monitorowania, analizy i raportowania są dostępne dla różnych typów danych i źródeł?
+- Jakie mechanizmy będą potrzebne do obsługi żądań podmiotów danych (DSR) i wszelkich akcji korygowania, takich jak anonimizacja, ponowna akcja i usuwanie.
 
 ## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>Zasady inspekcji i alertów w Centrum zabezpieczeń i zgodności
 
-Zobacz następujące artykuły dotyczące konfigurowania inspekcji, zaawansowanej inspekcji i zasad alertów:
+Zobacz następujące artykuły dotyczące konfigurowania zasad inspekcji, zaawansowanej inspekcji i alertów:
 
 - [Ujednolicona inspekcja](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Inspekcja skrzynki pocztowej](../compliance/enable-mailbox-auditing.md)
-- [Zaawansowana inspekcja](../compliance/advanced-audit.md)
+- [Zaawansowany inspekcja](../compliance/advanced-audit.md)
 - [Zasady alertów](../compliance/alert-policies.md)
 
-## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Wnioski osób, których dane dotyczą, w związku z RODO i ZESZYT
+## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Żądania podmiotów danych dotyczące RODO i CCPA
 
-Zobacz [Żądania osób, których dane dotyczą, w związku z RODO i ZEA](/compliance/regulatory/gdpr-dsr-Office365), aby uzyskać informacje na temat odpowiadania na dane DSR w Microsoft 365.
+Aby uzyskać informacje na temat reagowania na DSR w Microsoft 365, zobacz [Żądania podmiotów danych dotyczące RODO i CCPA](/compliance/regulatory/gdpr-dsr-Office365).
 
-## <a name="manage-deleted-users-in-microsoft-stream"></a>Zarządzanie usuniętymi użytkownikami w uwitrynie Microsoft Stream
+## <a name="manage-deleted-users-in-microsoft-stream"></a>Zarządzanie usuniętymi użytkownikami w Microsoft Stream
 
-W przypadku usługi Microsoft Stream po usunięciu użytkownika z usługi Azure Active Directory (Azure AD), jeśli jego nazwa była wcześniej skojarzona z opublikowanym klipem wideo usługi Stream, jego adres e-mail pozostaje skojarzony z klipem wideo. Zobacz [Zarządzanie usuniętymi użytkownikami z usługi Microsoft Stream](/stream/managing-deleted-users) , aby go usunąć.
+W przypadku Microsoft Stream, gdy użytkownik zostanie usunięty z Azure Active Directory (Azure AD), jeśli jego nazwa została skojarzona z opublikowanym filmem wideo usługi Stream przed tym punktem, jego adres e-mail pozostaje skojarzony z filmem wideo. Zobacz [Zarządzanie usuniętymi użytkownikami z Microsoft Stream](/stream/managing-deleted-users), aby go usunąć.
 
-## <a name="insider-risk-management-as-an-investigative-tool"></a>Zarządzanie ryzykiem niejawnego programu testów jako narzędzie do badania
+## <a name="insider-risk-management-as-an-investigative-tool"></a>Zarządzanie ryzykiem wewnętrznym jako narzędzie śledcze
 
-[Zarządzanie ryzykiem](../compliance/insider-risk-management.md) niejawnego programu testów w programie Microsoft 365 to funkcja centrum administracyjnego zgodności firmy Microsoft ułatwiająca minimalizowanie ryzyka wewnętrznego przez wykrywanie, badanie i działanie w przypadku ryzykownych działań w organizacji.
+[Zarządzanie ryzykiem wewnętrznym](../compliance/insider-risk-management.md) to funkcja portalu zgodności usługi Microsoft Purview, która pomaga zminimalizować ryzyko wewnętrzne, umożliwiając wykrywanie, badanie i podjęcie działań dotyczących ryzykownych działań w organizacji.

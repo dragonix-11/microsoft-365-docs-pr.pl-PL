@@ -1,5 +1,5 @@
 ---
-title: Nowy format liter w programie Advanced eDiscovery
+title: Nowy format przypadku w funkcji zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,62 +15,62 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Nowy format przypadków można stosować w programie Advanced eDiscovery, aby można było przeglądać zestawy i korzystać z innych podwyższonych limitów oraz nowych funkcji.
-ms.openlocfilehash: 9b0e87e7d24565bb89444fe5b1e5cbf43d915e42
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+description: Użyj nowego formatu przypadku zbierania elektronicznych materiałów dowodowych (Premium), aby dodać więcej elementów do przeglądania zestawów i korzystać z innych zwiększonych limitów i nowych funkcji.
+ms.openlocfilehash: 36650a369d2bac2742eb7f0d5ea76b3a530a1a03
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "63007492"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947434"
 ---
-# <a name="use-the-new-case-format-in-advanced-ediscovery"></a>Nowy format liter w programie Advanced eDiscovery
+# <a name="use-the-new-case-format-in-ediscovery-premium"></a>Użyj nowego formatu przypadku w funkcji zbierania elektronicznych materiałów dowodowych (Premium)
 
-Więcej organizacji korzysta z Advanced eDiscovery w programie Microsoft 365 w krytycznych procesach zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania prawne, dochodzenia i procesy. Wraz ze Advanced eDiscovery coraz częstym wymaganiem klienta jest rozszerzenie całkowitej ilości zawartości, która może być zarządzana w jednym przypadku Advanced eDiscovery przypadku. Aby uwzględnić znaczące wzrosty wielkości liter zarówno w przypadku całkowitego obrotu danych, jak i łącznej liczby elementów, możesz teraz wybrać nowy format wielkości liter podczas tworzenia Advanced eDiscovery przypadku.  
+Więcej organizacji korzysta z rozwiązania eDiscovery (Premium) w Microsoft 365 w przypadku krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe. W miarę wzrostu użycia zbierania elektronicznych materiałów dowodowych (Premium) typowym wymaganiem klienta jest zwiększenie łącznej ilości zawartości, którą można zarządzać w jednym przypadku zbierania elektronicznych materiałów dowodowych (Premium). Aby ułatwić uwzględnienie znacznego wzrostu rozmiaru przypadku, zarówno w przypadku całkowitego woluminu danych, jak i całkowitej liczby elementów, możesz teraz wybrać nowy format przypadku podczas tworzenia sprawy zbierania elektronicznych materiałów dowodowych (Premium).  
 
 ## <a name="create-a-case"></a>Tworzenie sprawy
 
-Aby utworzyć nową Advanced eDiscovery sprawy przy użyciu nowego formatu sprawy:
+Aby utworzyć przypadek zbierania elektronicznych materiałów dowodowych (Premium) przy użyciu nowego formatu przypadku:
 
 1. Przejdź do i <https://compliance.microsoft.com> zaloguj się.
 
-2. W okienku nawigacji po lewej stronie okna Centrum zgodności platformy Microsoft 365 pozycję **zbierania elektronicznych materiałów** dowodowych > zaawansowane.
+2. W okienku nawigacji po lewej stronie portalu zgodności usługi Microsoft Purview kliknij pozycję **eDiscovery > Advanced**.
 
-3. Na stronie **Advanced eDiscovery** kliknij kartę **Sprawy**, a następnie kliknij pozycję **Utwórz sprawę**.
+3. Na stronie **eDiscovery (Premium)** kliknij kartę **Przypadki**, a następnie kliknij **pozycję Utwórz przypadek**.
 
-   Zostanie **wyświetlona strona wysuwana** Nowa sprawa zbierania elektronicznych materiałów dowodowych. Sekcja **Format sprawy** udostępnia opcję utworzenia sprawy przy użyciu nowego formatu.
+   Zostanie wyświetlona strona Wysuwane **nowe przypadki zbierania elektronicznych** materiałów dowodowych. Sekcja **Format przypadku** zawiera opcję utworzenia sprawy przy użyciu nowego formatu.
 
-   ![Opcja nowego formatu sprawy na stronie Nowa sprawa zbierania elektronicznych materiałów dowodowych.](..\media\AeDNewCaseFormat1.png)
+   ![Nowa opcja formatu przypadku na stronie Nowy przypadek zbierania elektronicznych materiałów dowodowych.](..\media\AeDNewCaseFormat1.png)
 
-4. Po nazewnictwie sprawy wybierz opcję **Nowy** , a następnie kliknij przycisk **Zapisz** , aby utworzyć sprawę przy użyciu nowego formatu.
+4. Po nazewnictwie sprawy wybierz opcję **Nowy** , a następnie kliknij przycisk **Zapisz** , aby utworzyć przypadek przy użyciu nowego formatu.
 
-## <a name="benefits-of-the-new-case-format"></a>Zalety nowego formatu sprawy
+## <a name="benefits-of-the-new-case-format"></a>Zalety nowego formatu przypadku
 
-Nowy format sprawy umożliwia zarządzanie sprawami, które zawierają ponad 40 milionów elementów. Ta funkcja ułatwia efektywne zarządzanie dużymi ilościami danych sprawy w całym przepływie pracy zbierania elektronicznych materiałów dowodowych.
+Nowy format przypadku umożliwia zarządzanie przypadkami zawierającymi ponad 40 milionów elementów. Ta funkcja ułatwia efektywne zarządzanie dużymi ilościami danych przypadków za pośrednictwem całego przepływu pracy zbierania elektronicznych materiałów dowodowych.
 
-Oto lista innych korzyści związanych z dużymi sprawami w Advanced eDiscovery przepływu pracy.
+Oto lista innych korzyści z dużych przypadków w przepływie pracy zbierania elektronicznych materiałów dowodowych (Premium).
 
-- **Kolekcja**: W nowym formacie sprawy możesz zebrać maksymalnie 1 TB danych dla jednej kolekcji.
+- **Kolekcja**: w nowym formacie przypadku można zebrać maksymalnie 1 TB danych dla jednej kolekcji.
 
-   W przypadku poszczególnych przypadków ustawienia kolekcji będą domyślnie gromadzić załączniki w chmurze oraz załączniki i zawartość Teams i Yammer kontekstowe. Te ustawienia ułatwiają zbieranie pełnego obrazu komunikacji cyfrowej w ramach badania. W przypadku konwersacji kontekstowych Teams i Yammer nowy format sprawy konwertuje migawki czasu (1:1, 1: N i Channel) na transkrypcje HTML, aby zapewnić kontekst konwersacji i zmniejszyć łączną liczbę elementów powiązanych przez zawartość opartą na czacie.  
+   W każdym przypadku ustawienia kolekcji domyślnie będą zbierać załączniki w chmurze oraz kontekstowe Teams i zawartość Yammer. Te ustawienia pomagają zebrać pełny obraz komunikacji cyfrowej w ramach badania. W przypadku konwersacji kontekstowych Teams i Yammer nowy format przypadku konwertuje migawki oparte na czasie 1:1, 1: N i Konwersacje kanału na transkrypcje HTML, aby ułatwić zapewnienie kontekstu konwersacji i zmniejszenie całkowitej liczby elementów generowanych przez zawartość opartą na czatach.  
 
-- **Recenzja**: Każdy zestaw recenzji będzie obsługiwać do 1 TB zawartości przed rozszerzeniami. Dla filtrów i zapytań będą dostępne dodatkowe metadane, w tym nazwa zespołu, nazwa kanału i nazwa konwersacji dla Teams zawartości. Każda transkrypcja będzie zawierać zawartość opartą na czasie dla elementu przed i po nim. W przypadku konwersacji w kanale będzie zbierany wpis główny i wszystkie odpowiedzi na zawartość reakcji. Aby uzyskać więcej informacji, [Advanced eDiscovery przepływu pracy dla zawartości w programie Microsoft Teams (wersja zapoznawcza)](teams-workflow-in-advanced-ediscovery.md)
+- **Przegląd**: Każdy zestaw przeglądów będzie obsługiwać do 1 TB zawartości przed rozszerzeniem. Dodatkowe metadane będą dostępne dla filtrów i zapytań, w tym nazwy zespołu, nazwy kanału i nazwy konwersacji dla zawartości Teams. Każda transkrypcja będzie zawierać zawartość opartą na czasie dla elementu odpowiadającego przed i po nim. W przypadku konwersacji w kanale wpis główny i wszystkie odpowiedzi zostaną zebrane w celu odpowiadania zawartości. Aby uzyskać więcej informacji, zobacz [przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams (wersja zapoznawcza)](teams-workflow-in-advanced-ediscovery.md)
 
-- **Eksportowanie**: Możesz eksportować duże zestawy zawartości w jednym zadaniu eksportowania. Nowy format sprawy umożliwia wyeksportowanie 5 milionów dokumentów lub 500 GB, w zależności od tego, co jest mniejsze w zadaniu eksportu.
+- **Eksportowanie**: duże zestawy zawartości można eksportować w jednym zadaniu eksportowania. Nowy format przypadku umożliwia eksportowanie 5 milionów dokumentów lub 500 GB, w zależności od tego, która z tych wartości jest mniejsza w zadaniu eksportu.
 
-Ponadto nowy format wielkości liter zawiera zaktualizowany interfejs użytkownika, w którym jest wyświetlany całkowity rozmiar każdego zestawu recenzji w tym przypadku. Rozmiary zestawów recenzji są wyświetlane w kolumnie na **karcie Zestawy** recenzji.
+Ponadto nowy format przypadku zawiera zaktualizowany interfejs użytkownika, który wyświetla całkowity rozmiar każdego zestawu przeglądów w tym przypadku. Rozmiary zestawów przeglądów są wyświetlane w kolumnie na karcie **Zestawy przeglądów** .
 
-![Statystyki zestawu nowych recenzji Advanced eDiscovery interfejsie użytkownika.](..\media\LargeCaseUI.png)
+![Nowe statystyki zestawu przeglądów w interfejsie użytkownika zbierania elektronicznych materiałów dowodowych (Premium).](..\media\LargeCaseUI.png)
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-**Jeśli spróbuję zebrać w jednej kolekcji ponad 1 TB danych, to będzie działać?**
+**Czy próba zebrania ponad 1 TB w jednej kolekcji będzie działać?**
 
-W niektórych przypadkach wydajność będzie mieć negatywny wpływ i może spowodować niestabilność.
+Wydajność będzie mieć negatywny wpływ i może spowodować niestabilność w niektórych przypadkach.
 
-**Jeśli załączniki w chmurze są domyślnie uwzględniane w formacie dużych liter; jak usunąć zawartość z przeglądania?**  
+**Jeśli załączniki w chmurze są domyślnie uwzględniane w dużym formacie wielkości liter; jak mogę usunąć tę zawartość z mojego środowiska przeglądu?**  
 
-Użyj filtrów zestawu recenzji, aby filtrować według rodzaju wiadomości lub wykluczyć załączniki w chmurze przy użyciu filtru HasAttachment. Aby uzyskać więcej informacji, zobacz [Wykonywanie zapytań i filtrowanie zawartości w zestawie recenzji](review-set-search.md).
+Filtry zestawu przeglądów umożliwiają filtrowanie według rodzaju komunikatu lub wykluczanie załączników w chmurze przy użyciu filtru HasAttachment. Aby uzyskać więcej informacji, zobacz [Wykonywanie zapytań i filtrowanie zawartości w zestawie przeglądów](review-set-search.md).
 
-**Czy podczas eksportowania transkrypcji konwersacji czatu plik ładowania będzie zawierał wszystkie rozwinięte metadane i jeden element dla każdego transkrypcji?**
+**Czy podczas eksportowania transkrypcji konwersacji czatu plik ładowania będzie zawierać wszystkie rozwinięte metadane i pojedynczy element dla każdej transkrypcji?**
 
-Wszystkie metadane konwersacji są osadzone w pliku transkrypcji HTML.  W pliku ładowania jest dostępnych wiele pól wspólnych. Aby uzyskać więcej informacji na temat wyeksportowanych metadanych, zobacz [Pola metadanych dokumentu Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+Wszystkie metadane konwersacji są osadzone w pliku transkrypcji HTML.  Wiele typowych pól jest dostępnych w pliku ładowania. Aby uzyskać więcej informacji na temat wyeksportowanych metadanych, zobacz [Document metadata fields in eDiscovery (Premium) (Pola metadanych dokumentu w dziedzinie zbierania elektronicznych materiałów dowodowych (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md)).

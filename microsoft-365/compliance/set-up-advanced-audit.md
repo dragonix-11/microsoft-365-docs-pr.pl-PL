@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie inspekcji zaawansowanej w programie Microsoft 365
+title: Konfigurowanie inspekcji (Premium) w Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,58 +19,58 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: W tym artykule opisano, jak skonfigurować inspekcję zaawansowaną w celu przeprowadzania dochodzenia sądowego w przypadku naruszenia kont użytkowników lub badania innych zdarzeń związanych z zabezpieczeniami.
-ms.openlocfilehash: dafe53161e04f28f2f5e4ff8dcfa71bab6c1a1f1
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+description: W tym artykule opisano sposób konfigurowania inspekcji (Premium), aby można było przeprowadzać badania kryminalistyczne w przypadku naruszenia zabezpieczeń kont użytkowników lub badania innych zdarzeń związanych z zabezpieczeniami.
+ms.openlocfilehash: 9e758ce6a830569b007ee024e17abdddbce01f13
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754586"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945852"
 ---
-# <a name="set-up-advanced-audit-in-microsoft-365"></a>Konfigurowanie inspekcji zaawansowanej w programie Microsoft 365
+# <a name="set-up-microsoft-purview-audit-premium"></a>Konfigurowanie inspekcji usługi Microsoft Purview (Premium)
 
-Jeśli Organizacja ma subskrypcję i licencjonowanie użytkowników końcowych obsługujące inspekcję zaawansowaną, wykonaj poniższe czynności, aby skonfigurować dodatkowe funkcje i korzystać z nich w ramach inspekcji zaawansowanej.
+Jeśli Twoja organizacja ma subskrypcję i licencje użytkowników końcowych, które obsługują inspekcję (Premium), wykonaj następujące kroki, aby skonfigurować i korzystać z dodatkowych możliwości w obszarze Inspekcja (Premium).
 
-![Przepływ pracy do skonfigurowania inspekcji zaawansowanej.](../media/AdvancedAuditWorkflow.png)
+![Przepływ pracy do skonfigurowania inspekcji (Premium).](../media/AdvancedAuditWorkflow.png)
 
-## <a name="step-1-set-up-advanced-audit-for-users"></a>Krok 1. Konfigurowanie inspekcji zaawansowanej dla użytkowników
+## <a name="step-1-set-up-audit-premium-for-users"></a>Krok 1. Konfigurowanie inspekcji (Premium) dla użytkowników
 
-Zaawansowane funkcje inspekcji, takie jak możliwość rejestrować ważne zdarzenia, takie jak MailItemsAccessed i Send, wymagają odpowiedniej licencji usługi E5 przypisanej do użytkowników. Ponadto dla tych użytkowników musi być włączony plan usługi/aplikacji zaawansowanej inspekcji. Aby sprawdzić, czy aplikacja Advanced Auditing (Zaawansowana inspekcja) jest przypisana do użytkowników, wykonaj następujące czynności dla każdego użytkownika:
+Funkcje inspekcji (Premium), takie jak możliwość rejestrowania kluczowych zdarzeń, takich jak MailItemsAccessed i Send, wymagają odpowiedniej licencji E5 przypisanej do użytkowników. Ponadto dla tych użytkowników należy włączyć plan aplikacji/usługi inspekcji zaawansowanej. Aby sprawdzić, czy aplikacja Zaawansowana inspekcja jest przypisana do użytkowników, wykonaj następujące kroki dla każdego użytkownika:
 
-1. W centrum administracyjne platformy Microsoft 365 przejdź do **tematu** <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UżytkownicyAktywowanie**</a> >  użytkowników i wybierz użytkownika.
+1. W Centrum administracyjne platformy Microsoft 365 przejdź do pozycji <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UżytkownicyAktywni**</a> >  użytkownicy i wybierz użytkownika.
 
-2. Na stronie wysuwu właściwości użytkownika kliknij pozycję **Licencje i aplikacje**.
+2. Na stronie wysuwanej właściwości użytkownika kliknij pozycję **Licencje i aplikacje**.
 
-3. W sekcji **Licencje sprawdź** , czy użytkownikowi przypisano licencję E5 lub że przypisano mu odpowiednią licencję dodatkową. Aby uzyskać listę licencji, które obsługują inspekcję zaawansowaną, zobacz [Zaawansowane wymagania dotyczące licencjonowania inspekcji](auditing-solutions-overview.md#advanced-audit-1).
+3. W sekcji **Licencje** sprawdź, czy użytkownikowi przypisano licencję E5 lub masz przypisaną odpowiednią licencję dodatku. Aby uzyskać listę licencji, które obsługują inspekcję (Premium), zobacz [Audit (Premium) licensing requirements (Audit (Premium) licensing requirements (Audit (Premium) licensing requirements (Audit (Premium) licensing requirements (Wymagania dotyczące licencjonowania inspekcji( Premium](auditing-solutions-overview.md#audit-premium-1)).
 
-4. Rozwiń **sekcję** Aplikacje i sprawdź, czy **jest zaznaczone Microsoft 365 zaawansowanej** inspekcji.
+4. Rozwiń sekcję **Aplikacje** i sprawdź, czy zaznaczono pole wyboru **Microsoft 365 Zaawansowane inspekcje**.
 
-5. Jeśli pole wyboru nie jest zaznaczone, zaznacz je, a następnie kliknij pozycję **Zapisz zmiany.**
+5. Jeśli pole wyboru nie jest zaznaczone, zaznacz je, a następnie kliknij przycisk **Zapisz zmiany.**
 
-   Rejestrowanie rekordów inspekcji dla rekordów mailItemsAccessed i Send rozpocznie się w ciągu 24 godzin. Aby rozpocząć rejestrowanie dwóch innych zdarzeń inspekcji zaawansowanej, należy wykonać krok 3: SearchQueryInitiatedExchange i SearchQueryInitiatedSharePoint.
+   Rejestrowanie rekordów inspekcji dla elementów MailItemsAccessed i Send rozpocznie się w ciągu 24 godzin. Aby rozpocząć rejestrowanie dwóch innych zdarzeń inspekcji (Premium), należy wykonać krok 3: SearchQueryInitiatedExchange i SearchQueryInitiatedSharePoint.
 
-Ponadto, jeśli dostosowano akcje skrzynek pocztowych, które są rejestrowane w skrzynkach pocztowych użytkowników lub udostępnionych skrzynkach pocztowych, żadne nowe zdarzenia inspekcji zaawansowanej publikowane przez firmę Microsoft nie będą automatycznie rejestrowane w tych skrzynkach pocztowych. Aby uzyskać informacje na temat zmieniania akcji skrzynki pocztowej, które są rejestrowane w dzienniku inspekcji dla każdego typu logowania, zobacz sekcję "Zmienianie lub przywracanie rejestrowanych domyślnie akcji skrzynki pocztowej" w tece Zarządzanie inspekcją [skrzynki pocztowej](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
+Ponadto jeśli zostały dostosowane akcje skrzynki pocztowej, które są rejestrowane w skrzynkach pocztowych użytkowników lub udostępnionych skrzynkach pocztowych, wszystkie nowe zdarzenia inspekcji (Premium) wydane przez firmę Microsoft nie będą automatycznie poddawane inspekcji w tych skrzynkach pocztowych. Aby uzyskać informacje o zmianie akcji skrzynki pocztowej, które są poddawane inspekcji dla każdego typu logowania, zobacz sekcję "Zmień lub przywróć akcje skrzynki pocztowej zarejestrowane domyślnie" w sekcji [Zarządzanie inspekcją skrzynek pocztowych](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
-## <a name="step-2-enable-advanced-audit-events"></a>Krok 2. Włączanie zdarzeń inspekcji zaawansowanej
+## <a name="step-2-enable-audit-premium-events"></a>Krok 2. Włączanie zdarzeń inspekcji (Premium)
 
-Podczas wyszukiwania użytkowników w usługach Exchange Online i SharePoint Online należy włączyć dwa zdarzenia inspekcji zaawansowanej (SearchQueryInitiatedExchange i SearchQueryInitiatedSharePoint). Aby włączyć inspekcję tych dwóch zdarzeń dla użytkowników, uruchom następujące polecenie (dla każdego użytkownika) w [programie Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+Musisz włączyć rejestrowanie dwóch zdarzeń inspekcji (Premium) (SearchQueryInitiatedExchange i SearchQueryInitiatedSharePoint), gdy użytkownicy wykonują wyszukiwania w Exchange Online i SharePoint Online. Aby umożliwić inspekcję tych dwóch zdarzeń dla użytkowników, uruchom następujące polecenie (dla każdego użytkownika) w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
 ```
 
-W środowisku wielolokalowym należy uruchomić poprzednie polecenie **Set-Mailbox** w lesie, w którym znajduje się skrzynka pocztowa użytkownika. Aby określić lokalizację skrzynki pocztowej użytkownika, uruchom następujące polecenie: 
+W środowisku z wieloma obszarami geograficznymi należy uruchomić poprzednie polecenie **Set-Mailbox** w lesie, w którym znajduje się skrzynka pocztowa użytkownika. Aby zidentyfikować lokalizację skrzynki pocztowej użytkownika, uruchom następujące polecenie: 
 
 ```powershell
 Get-Mailbox <user identity> | FL MailboxLocations
 ```
 
-Jeśli polecenie umożliwiające inspekcję zapytań wyszukiwania było wcześniej uruchamiane w lesie innym niż skrzynka pocztowa użytkownika, należy usunąć wartość SearchQueryInitiated `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` ze skrzynki pocztowej użytkownika, uruchamiając go, a następnie dodać do skrzynki pocztowej użytkownika w lesie, w którym znajduje się skrzynka pocztowa użytkownika.
+Jeśli polecenie umożliwiające włączenie inspekcji zapytań wyszukiwania zostało wcześniej uruchomione w lesie innym niż skrzynka pocztowa użytkownika, musisz usunąć wartość SearchQueryInitiated ze skrzynki pocztowej użytkownika, uruchamiając `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` polecenie, a następnie dodaj ją do skrzynki pocztowej użytkownika w lesie, w którym znajduje się skrzynka pocztowa użytkownika.
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>Krok 3. Konfigurowanie zasad przechowywania inspekcji
 
-Poza zasadami domyślnymi, które zachowują rekordy inspekcji usług Exchange, SharePoint i Azure AD przez jeden rok, możesz utworzyć dodatkowe zasady przechowywania dziennika inspekcji, aby spełnić wymagania zespołów ds. zabezpieczeń organizacji, it i zgodności. Aby uzyskać więcej informacji, zobacz [Zarządzanie zasadami przechowywania dziennika inspekcji](audit-log-retention-policies.md).
+Oprócz domyślnych zasad, które zachowują rekordy inspekcji Exchange, SharePoint i Azure AD przez jeden rok, można utworzyć dodatkowe zasady przechowywania dzienników inspekcji, aby spełnić wymagania zespołów ds. operacji zabezpieczeń, IT i zgodności organizacji. Aby uzyskać więcej informacji, zobacz [Zarządzanie zasadami przechowywania dzienników inspekcji](audit-log-retention-policies.md).
 
-## <a name="step-4-search-for-advanced-audit-events"></a>Krok 4. Wyszukiwanie zdarzeń zaawansowanej inspekcji
+## <a name="step-4-search-for-audit-premium-events"></a>Krok 4. Wyszukiwanie zdarzeń inspekcji (Premium)
 
-Po skonfigurowaniu dla organizacji inspekcji zaawansowanej możesz wyszukiwać istotne zdarzenia zaawansowanej inspekcji i inne działania podczas prowadzenia dochodzenia sądowego. Po zakończeniu wykonywania kroków 1 i 2 możesz wyszukać w dzienniku inspekcji zdarzenia zaawansowanej inspekcji i inne działania w ramach dochodzenia sądowego w sprawie naruszonych kont oraz innych rodzajów badań zabezpieczeń lub zgodności. Aby uzyskać więcej informacji na temat prowadzenia dochodzenia sądowego w sprawie naruszonych kont użytkowników przy użyciu zdarzenia MailItemsAccessed Advanced Audit, zobacz Badanie naruszonych kont za pomocą inspekcji [zaawansowanej](mailitemsaccessed-forensics-investigations.md).
+Teraz, gdy masz skonfigurowaną usługę Audit (Premium) dla swojej organizacji, możesz wyszukiwać kluczowe zdarzenia inspekcji (Premium) i inne działania podczas prowadzenia dochodzeń kryminalistycznych. Po ukończeniu kroków 1 i 2 możesz wyszukać w dzienniku inspekcji zdarzenia inspekcji (Premium) i inne działania podczas badania kryminalistycznego naruszonego konta i innych typów badań zabezpieczeń lub zgodności. Aby uzyskać więcej informacji na temat przeprowadzania badania kryminalistycznego kont użytkowników, których bezpieczeństwo zostało naruszone, przy użyciu zdarzenia Inspekcja mailItemsAccessed (Premium), zobacz [Używanie inspekcji (Premium) do badania naruszonych kont](mailitemsaccessed-forensics-investigations.md).

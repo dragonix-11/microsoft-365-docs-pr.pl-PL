@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych gadać usługi Salesforce z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 8d86b4fcddcdf4a0f9b169b32df152873e8211c7
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 695702d33817fce96cd54e7abf646e1687834f0d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758624"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950616"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Konfigurowanie łącznika do archiwizowania danych gadać usługi Salesforce
 
-Użyj łącznika Veritas w Centrum zgodności platformy Microsoft 365, aby zaimportować i zarchiwizować dane z platformy Salesforce Chatter do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Salesforce Chatter](http://globanet.com/chatter/), który przechwytuje elementy ze źródła danych innej firmy i importuje te elementy do Microsoft 365. Łącznik konwertuje zawartość, taką jak czaty, załączniki i wpisy z usługi Salesforce Chatter, na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
+Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy Salesforce Chatter do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Salesforce Chatter](http://globanet.com/chatter/), który przechwytuje elementy ze źródła danych innej firmy i importuje te elementy do Microsoft 365. Łącznik konwertuje zawartość, taką jak czaty, załączniki i wpisy z usługi Salesforce Chatter, na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 
-Po zapisaniu danych usługi Salesforce Chatter w skrzynkach pocztowych użytkowników można zastosować Microsoft 365 funkcje zgodności, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika Salesforce Chatter może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zapisaniu danych usługi Salesforce Chatter w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika Salesforce Chatter może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-salesforce-chatter-data"></a>Omówienie archiwizacji danych paplaniny usługi Salesforce
 
@@ -35,7 +35,7 @@ W poniższym omówieniu wyjaśniono proces korzystania z łącznika do archiwizo
 
 2. Raz na 24 godziny elementy gadać usługi Salesforce są kopiowane do witryny Veritas Merge1. Łącznik zawiera również elementy Gadać w usłudze Salesforce do formatu wiadomości e-mail.
 
-3. Łącznik Salesforce Chatter, który tworzysz w Centrum zgodności platformy Microsoft 365, codziennie łączy się z witryną Veritas Merge1 i przesyła zawartość Chatter do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
+3. Łącznik Salesforce Chatter tworzony w portalu zgodności codziennie łączy się z witryną Veritas Merge1 i przesyła zawartość Chatter do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
 
 4. Łącznik importuje przekonwertowane elementy do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości *Poczta e-mail* automatycznego mapowania użytkownika zgodnie z opisem w [kroku 3](#step-3-map-users-and-complete-the-connector-setup). Podfolder w folderze Skrzynka odbiorcza o nazwie **Salesforce Chatter** jest tworzony w skrzynkach pocztowych użytkownika, a elementy są importowane do tego folderu. Łącznik określa skrzynkę pocztową do zaimportowania elementów przy użyciu wartości właściwości *Poczta e-mail* . Każdy element chatter zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika elementu.
 
@@ -45,13 +45,13 @@ W poniższym omówieniu wyjaśniono proces korzystania z łącznika do archiwizo
 
 - Utwórz aplikację usługi Salesforce i uzyskaj token w witrynie [https://salesforce.com](https://salesforce.com). Musisz zalogować się do konta usługi Salesforce jako administrator i uzyskać osobisty token użytkownika w celu zaimportowania danych. Ponadto wyzwalacze muszą być publikowane w witrynie Chatter w celu przechwytywania aktualizacji, usuwania i edycji. Te wyzwalacze spowodują utworzenie wpisu w kanale, a funkcja Merge1 będzie przechwytywać informacje z kanału. Aby uzyskać instrukcje krok po kroku dotyczące sposobu tworzenia aplikacji i uzyskiwania tokenu, zobacz [Merge1 Third-Party Connectors User Guide (Scal1 łączniki innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)).
 
-- Użytkownikowi, który utworzy łącznik Salesforce Chatter w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi, który utworzy łącznik Salesforce Chatter w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i w związku z tym nie są objęte zobowiązaniami dotyczącymi zgodności Microsoft 365 i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-the-salesforce-chatter-connector"></a>Krok 1. Konfigurowanie łącznika Salesforce Chatter
 
-Pierwszym krokiem jest dostęp do strony **Łączniki danych** w Centrum zgodności platformy Microsoft 365 i utworzenie łącznika dla danych chatter.
+Pierwszym krokiem jest dostęp do strony **Łączniki danych** w portalu zgodności i utworzenie łącznika dla danych chatter.
 
 1. Przejdź do pozycji [https://compliance.microsoft.com](https://compliance.microsoft.com/) , a następnie kliknij pozycję **Łączniki** >  **danychSalesforce Chatter**.
 
@@ -67,11 +67,11 @@ Pierwszym krokiem jest dostęp do strony **Łączniki danych** w Centrum zgodno�
 
 Drugim krokiem jest skonfigurowanie łącznika Salesforce Chatter w witrynie Veritas Merge1. Aby uzyskać informacje o sposobie konfigurowania łącznika Salesforce Chatter, zobacz [Merge1 Third-Party Connectors User Guide (Przewodnik użytkownika łączników](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf) innych firm).
 
-Po kliknięciu **przycisku Zapisz & Zakończ** zostanie wyświetlona strona **Mapowanie użytkownika** w kreatorze łącznika w Centrum zgodności platformy Microsoft 365.
+Po kliknięciu przycisku **Zapisz & Zakończ** zostanie wyświetlona strona **Mapowanie użytkownika** w kreatorze łącznika w portalu zgodności.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Krok 3. Mapowanie użytkowników i ukończenie konfiguracji łącznika
 
-Aby zamapować użytkowników i ukończyć konfigurację łącznika w Centrum zgodności platformy Microsoft 365, wykonaj następujące kroki:
+Aby zamapować użytkowników i ukończyć konfigurację łącznika w portalu zgodności, wykonaj następujące kroki:
 
 1. Na stronie **Mapowanie użytkowników usługi Salesforce Chatter w celu Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników. Elementy gadać usługi Salesforce obejmują właściwość o nazwie *Email* zawierającą adresy e-mail dla użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z użytkownikiem Microsoft 365, elementy zostaną zaimportowane do skrzynki pocztowej tego użytkownika.
 
@@ -79,7 +79,7 @@ Aby zamapować użytkowników i ukończyć konfigurację łącznika w Centrum zg
 
 ## <a name="step-4-monitor-the-salesforce-chatter-connector"></a>Krok 4. Monitorowanie łącznika Gadać usługi Salesforce
 
-Po utworzeniu łącznika Salesforce Chatter możesz wyświetlić stan łącznika w Centrum zgodności platformy Microsoft 365.
+Po utworzeniu łącznika Salesforce Chatter możesz wyświetlić stan łącznika w portalu zgodności.
 
 1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com/) i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 

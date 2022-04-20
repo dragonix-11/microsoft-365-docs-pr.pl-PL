@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika do archiwizowania danych z serwisu Facebook
+title: Konfigurowanie łącznika do archiwizowania danych serwisu Facebook
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,109 +14,109 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Dowiedz się, jak skonfigurować & łącznika w aplikacji Centrum zgodności platformy Microsoft 365 w celu & zarchiwizować dane ze stron biznesowych w serwisie Facebook w celu Microsoft 365.
-ms.openlocfilehash: f7cbc2b5a0f1ed55379224fc18b1be905e8a4cf0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak skonfigurować & za pomocą łącznika w portalu zgodności usługi Microsoft Purview w celu zaimportowania & danych archiwum ze stron biznesowych serwisu Facebook do Microsoft 365.
+ms.openlocfilehash: 6db2bd474cd2920b4b067563377bbe85084aeeaf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319521"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947236"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Konfigurowanie łącznika do archiwizowania danych serwisu Facebook (wersja zapoznawcza)
 
-Za pomocą łącznika w Centrum zgodności platformy Microsoft 365 można importować i archiwizować dane ze stron biznesowych serwisu Facebook w celu Microsoft 365. Po skonfigurowaniu i skonfigurowaniu łącznika zostanie on połączony ze stroną biznesową w serwisie Facebook (według harmonogramu), konwertuje zawartość elementów serwisu Facebook na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej w programie Microsoft 365.
+Użyj łącznika w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze stron firmy w serwisie Facebook, aby Microsoft 365. Po skonfigurowaniu i skonfigurowaniu łącznika nawiązuje on połączenie ze stroną Facebook Business (zgodnie z harmonogramem), konwertuje zawartość elementów serwisu Facebook na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej w Microsoft 365.
 
-Po zaimportowaniu danych z serwisu Facebook możesz zastosować funkcje zgodności usługi Microsoft 365, takie jak archiwizacja w związku z postępowaniem sądowym In-Place, wyszukiwanie zawartości, archiwizowanie, inspekcja, zgodność z komunikacją i zasady przechowywania Microsoft 365 do danych serwisu Facebook. Na przykład w przypadku umieszczenia skrzynki pocztowej w związku z postępowaniem sądowym lub przypisania jej do zasad przechowywania dane z serwisu Facebook zostaną zachowane. Przy użyciu funkcji przeszukiwania zawartości można przeszukiwać dane innych firm lub skojarzyć skrzynkę pocztową, w której dane z serwisu Facebook są przechowywane ze współpracownikiem w Advanced eDiscovery przypadku. Importowanie i archiwizowanie danych serwisu Facebook w programie Microsoft 365 za pomocą łącznika może ułatwić organizacji zachowania zgodności z zasadami rządowymi i przepisami regulacyjną.
+Po zaimportowaniu danych serwisu Facebook do danych serwisu Facebook można zastosować takie funkcje usługi Microsoft Purview, jak blokada postępowania sądowego, wyszukiwanie zawartości, archiwizowanie In-Place, inspekcja, zgodność z komunikacją i zasady przechowywania Microsoft 365. Na przykład po umieszczeniu skrzynki pocztowej w blokadzie postępowania sądowego lub przypisaniu do zasad przechowywania dane serwisu Facebook są zachowywane. Dane innych firm można przeszukiwać przy użyciu wyszukiwania zawartości lub kojarzyć skrzynkę pocztową, w której dane serwisu Facebook są przechowywane z opiekunem w przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview. Użycie łącznika do importowania i archiwizowania danych serwisu Facebook w Microsoft 365 może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Wymagania wstępne dotyczące konfigurowania łącznika dla stron biznesowych w serwisie Facebook
 
-Wykonaj poniższe wymagania wstępne, zanim będzie można skonfigurować łącznik w Centrum zgodności platformy Microsoft 365 do importowania i archiwizowania danych ze stron biznesowych organizacji w serwisie Facebook. 
+Przed skonfigurowaniem i skonfigurowaniem łącznika w portalu zgodności wykonaj następujące wymagania wstępne, aby zaimportować i zarchiwizować dane ze stron biznesowych facebookowych organizacji. 
 
-- Do korzystania ze stron biznesowych organizacji jest potrzebne konto serwisu Facebook (podczas konfigurowania łącznika należy zalogować się na tym koncie). Obecnie zarchiwizować można tylko dane ze stron firmowych serwisu Facebook. nie można archiwizować danych z poszczególnych profilów w serwisie Facebook.
+- Potrzebne jest konto na Facebooku dla stron biznesowych organizacji (musisz zalogować się do tego konta podczas konfigurowania łącznika). Obecnie można archiwizować tylko dane ze stron biznesowych serwisu Facebook; Nie można archiwizować danych z poszczególnych profilów na Facebooku.
 
-- Twoja organizacja musi mieć ważną subskrypcję platformy Azure. Jeśli nie masz jeszcze subskrypcji platformy Azure, możesz utworzyć konto w jednej z tych opcji:
+- Twoja organizacja musi mieć prawidłową subskrypcję platformy Azure. Jeśli nie masz istniejącej subskrypcji platformy Azure, możesz utworzyć konto, aby skorzystać z jednej z następujących opcji:
 
-    - [Zarejestruj się, aby uzyskać bezpłatną, jednoroczną subskrypcję platformy Azure](https://azure.microsoft.com/free)
+    - [Utwórz konto, aby uzyskać bezpłatną roczną subskrypcję platformy Azure](https://azure.microsoft.com/free)
 
-    - [Zarejestruj się w celu wykupinia subskrypcji usługi Azure w usłudze Pay-As-You-Go](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
+    - [Tworzenie konta w celu subskrypcji platformy Azure z płatnością zgodnie z rzeczywistym użyciem](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > [Bezpłatna Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md), która jest zawarta w Twojej subskrypcji usługi Microsoft 365, nie obsługuje łączników w Centrum zgodności platformy Microsoft 365.
+    > [Bezpłatna subskrypcja Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) dołączona do subskrypcji Microsoft 365 nie obsługuje łączników w portalu zgodności.
 
-- Łącznik dla stron biznesowych serwisu Facebook może zaimportować łącznie 200 000 elementów w jednym dniu. Jeśli dziennie istnieje więcej niż 200 000 elementów biznesowych serwisu Facebook, żaden z tych elementów nie zostanie zaimportowany do Microsoft 365.
+- Łącznik dla stron biznesowych serwisu Facebook może zaimportować łącznie 200 000 elementów w ciągu jednego dnia. Jeśli w ciągu dnia istnieje ponad 200 000 elementów biznesowych Facebooka, żaden z tych elementów nie zostanie zaimportowany do Microsoft 365.
 
-- Użytkownik, który konfiguruje łącznik niestandardowy w Centrum zgodności platformy Microsoft 365 (w kroku 5), musi mieć przypisaną rolę administrator łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który konfiguruje łącznik niestandardowy w portalu zgodności (w kroku 5), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w aplikacji Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w Azure Active Directory
 
-Pierwszym krokiem jest zarejestrowanie nowej aplikacji w aplikacji Azure Active Directory (AAD). Ta aplikacja odpowiada zasobowi aplikacji sieci Web zaimplementowanemu w krokach 4 i 5 łącznika serwisu Facebook. 
+Pierwszym krokiem jest zarejestrowanie nowej aplikacji w Azure Active Directory (AAD). Ta aplikacja odpowiada zasobowi aplikacji internetowej zaimplementowanemu w kroku 4 i kroku 5 dla łącznika usługi Facebook.
 
-Aby uzyskać instrukcje krok po kroku, [zobacz Tworzenie aplikacji w aplikacji Azure Active Directory](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory).
+Aby uzyskać instrukcje krok po kroku, zobacz [Tworzenie aplikacji w Azure Active Directory](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory).
 
-Podczas wykonania tego kroku (korzystając z poprzednich instrukcji krok po kroku), zapisujesz poniższe informacje w pliku tekstowym. Te wartości są używane w dalszych krokach procesu wdrażania.
+Podczas wykonywania tego kroku (przy użyciu poprzednich instrukcji krok po kroku) zapiszesz następujące informacje w pliku tekstowym. Te wartości są używane w kolejnych krokach procesu wdrażania.
 
-- AAD identyfikatora aplikacji
+- identyfikator aplikacji AAD
 
-- AAD tajny aplikacji
+- AAD wpis tajny aplikacji
 
 - Identyfikator dzierżawy
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Krok 2. Wdrażanie usługi sieci Web łącznika z programu GitHub do konta Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Krok 2. Wdrażanie usługi internetowej łącznika z GitHub na koncie platformy Azure
 
-Następnym krokiem jest wdrożenie kodu źródłowego dla aplikacji łącznika stron biznesowych serwisu Facebook, która będzie używać interfejsu API serwisu Facebook do łączenia się z kontem w serwisie Facebook i wyodrębniania danych, aby można było je zaimportować do usługi Microsoft 365. Łącznik serwisu Facebook wdrożony w organizacji przekaże elementy ze stron biznesowych serwisu Facebook do lokalizacji usługi Azure Storage utworzonej w tym kroku. Po utworzeniu łącznika stron biznesowych serwisu Facebook w usłudze Centrum zgodności platformy Microsoft 365 (w kroku 5) usługa importowania skopiuje dane stron biznesowych serwisu Facebook z lokalizacji usługi Azure Storage do skrzynki pocztowej w Microsoft 365 organizacji. Jak wyjaśniono [wcześniej w sekcji](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages) Wymagania wstępne, aby utworzyć konto azure dla usługi Azure Storage, musisz mieć ważną subskrypcję Storage Azure.
+Następnym krokiem jest wdrożenie kodu źródłowego aplikacji łącznika stron biznesowych Facebooka, która będzie używać interfejsu API facebooka do łączenia się z kontem w Serwisie Facebook i wyodrębniania danych, aby można było je zaimportować do Microsoft 365. Łącznik usługi Facebook wdrażany dla organizacji przekaże elementy ze stron biznesowych usługi Facebook do lokalizacji Storage platformy Azure utworzonej w tym kroku. Po utworzeniu łącznika stron biznesowych serwisu Facebook w portalu zgodności (w kroku 5) usługa Import skopiuje dane stron biznesowych serwisu Facebook z lokalizacji Storage platformy Azure do skrzynki pocztowej w organizacji Microsoft 365. Jak wyjaśniono wcześniej w sekcji [Wymagania](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages) wstępne, musisz mieć prawidłową subskrypcję platformy Azure, aby utworzyć konto usługi Azure Storage.
 
-Aby uzyskać instrukcje krok po kroku, zobacz Wdrażanie usługi sieci Web łącznika z GitHub [na koncie platformy Azure](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
+Aby uzyskać instrukcje krok po kroku, zobacz [Deploy the connector web service from GitHub to your Azure account (Wdrażanie usługi internetowej łącznika z GitHub na koncie platformy Azure](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account)).
 
-W instrukcjach krok po kroku dotyczących wykonania tego kroku podano następujące informacje:
+W instrukcjach krok po kroku, aby wykonać ten krok, podasz następujące informacje:
 
-- APISecretKey: Ten klucz tajny należy utworzyć podczas wykonania tego kroku. Jest on używany w kroku 5.
+- APISecretKey: ten wpis tajny jest utworzony podczas wykonywania tego kroku. Jest on używany w kroku 5.
 
-- TenantId: Identyfikator dzierżawy organizacji Microsoft 365, która została skopiowana po utworzeniu aplikacji łącznika serwisu Facebook w programie Azure Active Directory kroku 1.
+- TenantId: identyfikator dzierżawy organizacji Microsoft 365 skopiowany po utworzeniu aplikacji łącznika Facebook w Azure Active Directory w kroku 1.
 
-Po wykonaniu tego kroku pamiętaj o skopiowaniu adresu URL usługi aplikacji Azure (na przykład https://fbconnector.azurewebsites.net). Musisz użyć tego adresu URL do wykonania kroków 3, 4 i 5).
+Po wykonaniu tego kroku skopiuj adres URL usługi Azure App Service (na przykład https://fbconnector.azurewebsites.net). Ten adres URL należy użyć do wykonania kroków 3, 4 i 5.
 
-## <a name="step-3-register-the-web-app-on-facebook"></a>Krok 3. Rejestrowanie aplikacji sieci Web w serwisie Facebook
+## <a name="step-3-register-the-web-app-on-facebook"></a>Krok 3. Rejestrowanie aplikacji internetowej na Facebooku
 
-Następnym krokiem jest utworzenie i skonfigurowanie nowej aplikacji w serwisie Facebook. Łącznik stron biznesowych serwisu Facebook, który tworzysz w kroku 5, współdziała z interfejsem API serwisu Facebook w celu uzyskiwania danych ze stron biznesowych organizacji w serwisie Facebook.
+Następnym krokiem jest utworzenie i skonfigurowanie nowej aplikacji w serwisie Facebook. Łącznik stron biznesowych facebooka utworzony w kroku 5 używa aplikacji internetowej Facebook do interakcji z interfejsem API facebooka w celu uzyskania danych ze stron biznesowych facebookowych organizacji.
 
 Aby uzyskać instrukcje krok po kroku, zobacz [Rejestrowanie aplikacji Facebook](deploy-facebook-connector.md#step-3-register-the-facebook-app).
 
-Po wykonaniu tego kroku (zgodnie z instrukcjami krok po kroku) poniższe informacje są zapisywane w pliku tekstowym. Te wartości służą do konfigurowania aplikacji Łącznik serwisu Facebook w kroku 4.
+Podczas wykonywania tego kroku (postępjąc zgodnie z instrukcjami krok po kroku) zapisz następujące informacje w pliku tekstowym. Te wartości służą do konfigurowania aplikacji łącznika Facebooka w kroku 4.
 
-- Identyfikator aplikacji serwisu Facebook
+- Identyfikator aplikacji Facebook
 
-- Tajny program serwisu Facebook
+- Wpis tajny aplikacji Facebook
 
-- Token weryfikacji w sieci Web serwisu Facebook
+- Elementy webhook serwisu Facebook weryfikują token
 
-## <a name="step-4-configure-the-facebook-connector-app"></a>Krok 4. Konfigurowanie aplikacji Łącznik serwisu Facebook
+## <a name="step-4-configure-the-facebook-connector-app"></a>Krok 4. Konfigurowanie aplikacji łącznika Facebooka
 
-Następnym krokiem jest dodanie ustawień konfiguracji do aplikacji łącznika serwisu Facebook, która została przesłana podczas tworzenia zasobu aplikacji Azure Web App w kroku 1. Możesz to zrobić, przechodząc do strony głównej aplikacji łącznika i konfigurując ją.
+Następnym krokiem jest dodanie ustawień konfiguracji do aplikacji łącznika Facebook przekazanej podczas tworzenia zasobu aplikacji internetowej platformy Azure w kroku 1. Można to zrobić, przechodząc do strony głównej aplikacji łącznika i konfigurując ją.
 
-Aby uzyskać instrukcje krok po kroku, [zobacz Konfigurowanie aplikacji łącznika serwisu Facebook](archive-facebook-data-with-sample-connector.md#step-4-configure-the-facebook-connector-app).
+Aby uzyskać instrukcje krok po kroku, zobacz [Konfigurowanie aplikacji łącznika Facebooka](archive-facebook-data-with-sample-connector.md#step-4-configure-the-facebook-connector-app).
 
-Po wykonaniu tego kroku (wykonując instrukcje krok po kroku) podaj następujące informacje (skopiowane do pliku tekstowego po wykonaniu poprzednich kroków):
+Podczas wykonywania tego kroku (postępując zgodnie z instrukcjami krok po kroku) należy podać następujące informacje (skopiowane do pliku tekstowego po wykonaniu poprzednich kroków):
 
-- Identyfikator aplikacji serwisu Facebook (uzyskany w kroku 3)
+- Identyfikator aplikacji Facebook (uzyskany w kroku 3)
 
-- Tajny program serwisu Facebook (uzyskany w kroku 3)
+- Wpis tajny aplikacji Facebooka (uzyskany w kroku 3)
 
-- Token weryfikacji w sieci Web serwisu Facebook (uzyskany w kroku 3)
+- Elementy webhook na Facebooku weryfikują token (uzyskany w kroku 3)
 
-- Azure Active Directory aplikacji (identyfikator AAD aplikacji uzyskany w kroku 1)
+- Azure Active Directory identyfikator aplikacji (identyfikator aplikacji AAD uzyskany w kroku 1)
 
-- Azure Active Directory tajny aplikacji (AAD tajna aplikacji uzyskana w kroku 1)
+- Azure Active Directory wpis tajny aplikacji (wpis tajny aplikacji AAD uzyskany w kroku 1)
 
-## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>Krok 5. Konfigurowanie łącznika stron biznesowych serwisu Facebook w Centrum zgodności platformy Microsoft 365
+## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-compliance-portal"></a>Krok 5. Konfigurowanie łącznika stron biznesowych serwisu Facebook w portalu zgodności
 
-Ostatnim krokiem jest skonfigurowanie łącznika w Centrum zgodności platformy Microsoft 365, który zaimportuje dane ze stron biznesowych serwisu Facebook do określonej skrzynki pocztowej w Microsoft 365. Po zakończeniu tego kroku usługa importowania Microsoft 365 rozpocznie importowanie danych ze stron biznesowych serwisu Facebook w celu Microsoft 365.
+Ostatnim krokiem jest skonfigurowanie łącznika w portalu zgodności, który zaimportuje dane ze stron biznesowych serwisu Facebook do określonej skrzynki pocztowej w Microsoft 365. Po wykonaniu tego kroku usługa Microsoft 365 Import rozpocznie importowanie danych ze stron biznesowych serwisu Facebook do Microsoft 365.
 
-Aby uzyskać instrukcje krok po kroku, zobacz [Krok 5. Konfigurowanie](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center) łącznika serwisu Facebook w aplikacji Centrum zgodności platformy Microsoft 365. 
+Aby uzyskać instrukcje krok po kroku, zobacz [Krok 5: Konfigurowanie łącznika usługi Facebook w portalu zgodności](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-compliance-portal).
 
-Po wykonaniu tego kroku (zgodnie z instrukcjami krok po kroku) należy podać następujące informacje (skopiowane do pliku tekstowego po wykonaniu tych czynności).
+Podczas wykonywania tego kroku (postępując zgodnie z instrukcjami krok po kroku) należy podać następujące informacje (skopiowane do pliku tekstowego po wykonaniu kroków).
 
-- AAD aplikacji (uzyskany w kroku 1)
+- AAD identyfikator aplikacji (uzyskany w kroku 1)
 
-- Adres URL usługi aplikacji Azure (uzyskany w kroku 1, na przykład https://fbconnector.azurewebsites.net)
+- Adres URL usługi Azure App Service (uzyskany w kroku 1; na przykład https://fbconnector.azurewebsites.net)
 
 - APISecretKey (utworzony w kroku 2)

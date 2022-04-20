@@ -1,5 +1,5 @@
 ---
-title: Wykrywanie niemal duplikatów — zbierania elektronicznych materiałów dowodowych
+title: Niemal zduplikowane wykrywanie w środowisku zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Grupowanie dokumentów podobnych tekstowo podczas analizowania danych dotyczących sprawy w programie Advanced eDiscovery.
+description: Wykrywanie zbliżonych do duplikatów umożliwia grupowanie tekstowo podobnych dokumentów podczas analizowania danych przypadków w usłudze eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cbd01bd38f45a397a82a8db3774997349f4eec88
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7976f5fdf023c30f7f96264ecc2b744656e9091
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987273"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949416"
 ---
-# <a name="near-duplicate-detection-in-advanced-ediscovery"></a>Wykrywanie niemal duplikatów w Advanced eDiscovery
+# <a name="near-duplicate-detection-in-ediscovery-premium"></a>Wykrywanie niemal duplikatów w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 
-Rozważ przejrzenie zestawu dokumentów, w którym podzbiór jest oparty na tym samym szablonie i ma przeważnie ten sam język boilerplate i istnieje kilka różnic między nimi. Jeśli recenzent będzie mógł dokładnie zidentyfikować ten podzbiór, dokładnie przejrzeć jeden z nich i zapoznać się z różnicami dla pozostałych, nie przegapi żadnych unikatowych informacji, nie przeocząc w ciągu zaledwie ułamka czasu, który zajęłoby im przeczytanie wszystkich dokumentów, które zostałyby omówne. Niemal duplikaty wykrywania grupuje dokumenty podobne tekstowo, aby ułatwić wydajniejszą weryfikację.
+Rozważmy zestaw dokumentów do przejrzenia, w którym podzestaw jest oparty na tym samym szablonie i ma w większości ten sam język standardowy, z kilkoma różnicami tu i tam. Jeśli recenzent może zidentyfikować ten podzestaw, dokładnie przejrzyj jeden z nich i przejrzyj różnice w pozostałych, nie przegapiłby żadnych unikatowych informacji, poświęcając tylko ułamek czasu, który zajęłoby im przeczytanie wszystkich dokumentów. Niemal zduplikowane grupy wykrywania razem zbliżą się tekstowo do dokumentów, aby ułatwić bardziej wydajny proces przeglądu.
 
 ## <a name="how-does-it-work"></a>Jak to działa?
 
-Po uruchomieniu niemal automatycznego wykrywania duplikatów system analizuje wszystkie dokumenty z tekstem. Następnie porównuje każdy dokument ze sobą, aby ustalić, czy ich podobieństwo jest większe od ustawionego progu. Jeśli tak, dokumenty są grupowane. Po porównaniu i zgrupowaniu wszystkich dokumentów dokumenty z poszczególnych grup są oznaczane jako "przestawne". Przeglądając dokumenty, można najpierw przejrzeć tabelę przestawną i przejrzeć pozostałe dokumenty w tym samym, niemal zduplikowaowym zestawie, skupiając się na różnicy między tabelą przestawną a recenzentem dokumentu.
+Po uruchomieniu wykrywania zduplikowanych zbliżeń system analizuje każdy dokument za pomocą tekstu. Następnie porównuje każdy dokument ze sobą, aby określić, czy ich podobieństwo jest większe niż ustalony próg. Jeśli tak jest, dokumenty są grupowane razem. Po porównaniu i zgrupowania wszystkich dokumentów dokument z każdej grupy jest oznaczony jako "przestawny"; przeglądając dokumenty, możesz najpierw przejrzeć tabelę przestawną i przejrzeć inne dokumenty w tym samym zestawie niemal zduplikowanym, koncentrując się na różnicy między tabelą przestawną a dokumentem, który jest w trakcie przeglądu.

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Dowiedz się, jak kontrolować, którzy użytkownicy mogą tworzyć grupy platformy Microsoft 365.
-ms.openlocfilehash: 4280b6859358580547302ccf9497e8cd1e7ed752
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 992f5c62654f23f90f910f62dc3bb78199b949b0
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032133"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946929"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Zarządzanie tym, kto może tworzyć grupy platformy Microsoft 365
 
@@ -44,7 +44,7 @@ Ograniczenie liczby osób, które mogą utworzyć grupę, ma wpływ na wszystkie
 - Power BI (klasyczny)
 - Project dla sieci Web / Plan
 
-Kroki opisane w tym artykule nie uniemożliwią członkom niektórych ról tworzenia grup. Administratorzy globalni usługi Office 365 mogą tworzyć grupy za pośrednictwem centrum administracyjnego platformy Microsoft 365, usługi Planner, programu Exchange i usługi SharePoint Online. Inne role mogą tworzyć grupy za pośrednictwem ograniczonych środków wymienionych poniżej.
+Kroki opisane w tym artykule nie uniemożliwią członkom niektórych ról tworzenia grup. Administratorzy globalni platformy Microsoft 365 mogą tworzyć grupy za pośrednictwem centrum administracyjnego platformy Microsoft 365, usługi Planner, programu Exchange i programu SharePoint, ale nie innych lokalizacji, takich jak Teams. Inne role mogą tworzyć grupy platformy Microsoft 365 za pośrednictwem ograniczonych środków wymienionych poniżej.
 
 - Administrator usługi Exchange: centrum administracyjne programu Exchange, Azure AD
 - Pomoc techniczna dla partnerów (warstwa 1): centrum administracyjne platformy Microsoft 365, centrum administracyjne programu Exchange, Azure AD
@@ -58,7 +58,7 @@ Jeśli jesteś członkiem jednej z tych ról, możesz utworzyć Grupy Microsoft 
 
 ## <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
 
-Aby zarządzać tym, kto tworzy grupy, następujące osoby muszą mieć przypisane licencje usługi Azure AD w wersji Premium:
+Aby zarządzać tym, kto tworzy grupy, następujące osoby muszą mieć przypisane licencje usługi Azure AD w wersji Premium lub licencje EDU w warstwie Podstawowa usługi Azure AD:
 
 - Administrator, który konfiguruje te ustawienia tworzenia grup
 - Członkowie grupy, którzy mogą tworzyć grupy
@@ -66,13 +66,13 @@ Aby zarządzać tym, kto tworzy grupy, następujące osoby muszą mieć przypisa
 > [!NOTE]
 > Zobacz [Przypisywanie lub usuwanie licencji w portalu Azure Active Directory](/azure/active-directory/fundamentals/license-users-groups), aby uzyskać więcej informacji na temat przypisywania licencji platformy Azure.
 
-Następujące osoby nie potrzebują przypisanych do nich licencji usługi Azure AD w wersji Premium:
+Następujące osoby nie potrzebują przypisanych do nich licencji usługi Azure AD w wersji Premium lub licencje EDU w warstwie Podstawowa usługi Azure AD:
 
 - Osoby, które są członkami grup platformy Microsoft 365 i nie mają możliwości tworzenia innych grup.
 
 ## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>Krok 1. Tworzenie grupy dla użytkowników, którzy muszą tworzyć grupy platformy Microsoft 365
 
-Tylko jedna grupa w organizacji może być przeznaczona do kontrolowania, kto może tworzyć grupy. Można jednak zagnieździć inne grupy jako członków tej grupy.
+Tylko jedna grupa w organizacji może być przeznaczona do kontrolowania, kto może tworzyć grupy platformy Microsoft 365. Można jednak zagnieździć inne grupy jako członków tej grupy.
 
 Administratorzy w wymienionych powyżej rolach nie muszą być członkami tej grupy: zachowują oni możliwość tworzenia grup.
 
@@ -82,7 +82,7 @@ Administratorzy w wymienionych powyżej rolach nie muszą być członkami tej gr
 
 3. Wybierz odpowiedni typ grupy. Zapamiętaj nazwę tej grupy! Będzie potrzebna później.
 
-4. Zakończ konfigurowanie grupy, dodając osoby lub inne grupy, którym chcesz umożliwić tworzenie grup w organizacji.
+4. Zakończ konfigurowanie grupy, dodając osoby lub inne grupy, którym chcesz umożliwić tworzenie grup jako członkowie (nie właściciele).
 
 Aby uzyskać szczegółowe instrukcje, zobacz [Tworzenie, edytowanie lub usuwanie grupy zabezpieczeń w centrum administracyjnym platformy Microsoft 365](../admin/email/create-edit-or-delete-a-security-group.md).
 
@@ -98,7 +98,7 @@ Aby zmienić ustawienie dostępu gościa na poziomie grupy, musisz użyć wersji
 
 Skopiuj poniższy skrypt do edytora tekstów, takiego jak Notatnik, lub [środowiska Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Zamień *\<GroupName\>* na nazwę utworzonej grupy. Przykład:
+Zamień *\<GroupName\>* na nazwę utworzonej grupy. Na przykład:
 
 `$GroupName = "Group Creators"`
 

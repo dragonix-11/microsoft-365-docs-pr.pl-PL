@@ -1,5 +1,5 @@
 ---
-title: Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji
+title: Eksportuj, konfiguruj i wyświetlaj rekordy dziennika inspekcji
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,44 +17,44 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
-description: W tym artykule dowiesz się, jak eksportować, konfigurować i wyświetlać Microsoft 365 dziennika inspekcji.
-ms.openlocfilehash: efb71ea0ff0b7098c3524707cff101d7ba25877f
-ms.sourcegitcommit: 678e827a1c3bc9f4edfc48003f9b29f7bbf20ab5
+description: W tym artykule dowiesz się, jak eksportować, konfigurować i wyświetlać Microsoft 365 rekordy dziennika inspekcji.
+ms.openlocfilehash: ed9844ac7a5b7dc62b4d0ba8eb7311f76d28aace
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "63020846"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948754"
 ---
-# <a name="export-configure-and-view-audit-log-records"></a>Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji
+# <a name="export-configure-and-view-audit-log-records"></a>Eksportuj, konfiguruj i wyświetlaj rekordy dziennika inspekcji
 
-Po przeszukiwaniu dziennika inspekcji i pobraniu wyników wyszukiwania do pliku CSV plik ten zawiera kolumnę o nazwie **Dane** inspekcji, która zawiera dodatkowe informacje o każdym z zdarzeń. Dane w tej kolumnie są formatowane jako obiekt JSON, który zawiera wiele właściwości skonfigurowanych jako *pary właściwość:* wartość rozdzielone przecinkami. Za pomocą funkcji przekształcania JSON w Edytorze dodatku Power Query w programie Excel można podzielić każdą właściwość w obiekcie JSON w kolumnie **Dane** inspekcji na wiele kolumn, dzięki czemu każda właściwość ma własną kolumnę. Pozwala to sortować i filtrować według jednej lub większej liczby tych właściwości, co może ułatwić szybkie zlokalizowanie określonych danych inspekcji.
+Po przeszukaniu dziennika inspekcji i pobraniu wyników wyszukiwania do pliku CSV plik zawiera kolumnę o nazwie **AuditData**, która zawiera dodatkowe informacje o każdym zdarzeniu. Dane w tej kolumnie są sformatowane jako obiekt JSON, który zawiera wiele właściwości skonfigurowanych jako pary *property:value* rozdzielone przecinkami. Funkcja przekształcania JSON w Edytor Power Query w Excel umożliwia podzielenie każdej właściwości w obiekcie JSON w kolumnie **AuditData** na wiele kolumn, dzięki czemu każda właściwość ma własną kolumnę. Dzięki temu można sortować i filtrować co najmniej jedną z tych właściwości, co może pomóc w szybkim zlokalizowaniu konkretnych danych inspekcji, których szukasz.
 
-## <a name="step-1-export-audit-log-search-results"></a>Krok 1. Eksportowanie wyników przeszukiwania dziennika inspekcji
+## <a name="step-1-export-audit-log-search-results"></a>Krok 1. Eksportowanie wyników wyszukiwania dziennika inspekcji
 
-Pierwszym krokiem jest przeszukanie dziennika inspekcji, a następnie wyeksportowanie wyników w pliku wartości rozdzielanych przecinkami (CSV) na komputer lokalny.
+Pierwszym krokiem jest przeszukanie dziennika inspekcji, a następnie wyeksportowanie wyników w pliku wartości rozdzielanej przecinkami (CSV) na komputer lokalny.
   
-1. W razie [potrzeby uruchom przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log) i w razie potrzeby poprawiaj kryteria wyszukiwania, aż zostaną uzyskane odpowiednie wyniki.
+1. Uruchom [wyszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log) i w razie potrzeby popraw kryteria wyszukiwania, dopóki nie otrzymasz odpowiednich wyników.
 
 2. Na stronie wyników wyszukiwania kliknij pozycję **EksportujPobierz** >  **wszystkie wyniki**.
 
    ![Kliknij pozycję Pobierz wszystkie wyniki.](../media/ExportAuditSearchResults.png)
 
-   Ta opcja powoduje wyeksportowanie wszystkich rekordów inspekcji z przeszukiwania dziennika inspekcji, które uruchomiono w kroku 1, i dodanie nieprzetworzonych danych z dziennika inspekcji do pliku CSV. Przygotowanie pliku do pobrania dla dużego wyszukiwania zajmuje trochę czasu. Duże pliki będą powodować wyszukiwanie wszystkich działań lub korzystanie z szerokiego zakresu dat.
+   Ta opcja eksportuje wszystkie rekordy inspekcji z przeszukiwania dziennika inspekcji uruchomionego w kroku 1 i dodaje nieprzetworzone dane z dziennika inspekcji do pliku CSV. Przygotowanie pliku pobierania do dużego wyszukiwania zajmuje trochę czasu. Duże pliki zostaną wyświetlone podczas wyszukiwania wszystkich działań lub używania szerokiego zakresu dat.
 
-3. Po zakończeniu procesu eksportowania w górnej części okna zostanie wyświetlony komunikat z monitem o otwarcie pliku CSV i zapisanie go na komputerze lokalnym. Dostęp do pliku CSV możesz również uzyskać w folderze Pobrane.
+3. Po zakończeniu procesu eksportowania w górnej części okna zostanie wyświetlony komunikat z monitem o otwarcie pliku CSV i zapisanie go na komputerze lokalnym. Możesz również uzyskać dostęp do pliku CSV w folderze Pliki do pobrania.
 
    > [!NOTE]
-   > Z jednego przeszukiwania dziennika inspekcji do pliku CSV można pobrać maksymalnie 50 000 wpisów. Jeśli do pliku CSV zostanie pobranych 50 000 wpisów, można z pewnością założyć, że istnieje ponad 50 000 zdarzeń, które spełniają kryteria wyszukiwania. Aby wyeksportować dane powyżej tego limitu, spróbuj użyć węższego zakresu dat w celu zmniejszenia liczby rekordów dziennika inspekcji. W celu wyeksportowania ponad 50 000 wpisów może być konieczne uruchomienie wielu wyszukiwań z mniejszymi zakresami dat.
+   > Możesz pobrać maksymalnie 50 000 wpisów do pliku CSV z pojedynczego przeszukiwania dziennika inspekcji. Jeśli do pliku CSV zostanie pobranych 50 000 wpisów, można założyć, że istnieje ponad 50 000 zdarzeń spełniających kryteria wyszukiwania. Aby wyeksportować więcej niż ten limit, spróbuj użyć węższego zakresu dat, aby zmniejszyć liczbę rekordów dziennika inspekcji. Może być konieczne uruchomienie wielu wyszukiwań z mniejszymi zakresami dat, aby wyeksportować ponad 50 000 wpisów.
 
-## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>Krok 2. Formatowanie wyeksportowanego dziennika inspekcji przy użyciu Edytora dodatku Power Query
+## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>Krok 2. Formatowanie wyeksportowanego dziennika inspekcji przy użyciu Edytor Power Query
 
-Następnym krokiem jest podzielenie każdej właściwości obiektu JSON w kolumnie **Dane** inspekcji na własną kolumnę za pomocą funkcji przekształcania JSON w Edytorze dodatku Power Query w programie Excel. Następnie filtruje się kolumny, aby wyświetlić rekordy na podstawie wartości określonych właściwości. Może to ułatwić szybkie znalezienie określonych danych inspekcji, których szukasz.
+Następnym krokiem jest użycie funkcji przekształcania JSON w Edytor Power Query w Excel, aby podzielić każdą właściwość w obiekcie JSON w kolumnie **AuditData** na własną kolumnę. Następnie filtrujesz kolumny, aby wyświetlać rekordy na podstawie wartości określonych właściwości. Może to pomóc w szybkim zlokalizowaniu konkretnych danych inspekcji, których szukasz.
 
-1. Otwórz pusty skoroszyt w programie Excel dla Office 365, Excel 2019 lub Excel 2016.
+1. Otwórz pusty skoroszyt w Excel dla Office 365, Excel 2019 lub Excel 2016.
 
-2. Na karcie **Dane** w grupie Wstążki **& Przekształcanie** danych kliknij pozycję **Z tekstu/pliku CSV**.
+2. Na karcie **Dane** w grupie wstążki **Pobierz & Przekształcanie danych** kliknij pozycję **Z tekstu/CSV**.
 
-    ![Na karcie Dane kliknij pozycję Z tekstu/pliku CSV.](../media/JSONTransformOpenCSVFile.png)
+    ![Na karcie Dane kliknij pozycję Z tekstu/CSV.](../media/JSONTransformOpenCSVFile.png)
 
 3. Otwórz plik CSV pobrany w kroku 1.
 
@@ -62,47 +62,47 @@ Następnym krokiem jest podzielenie każdej właściwości obiektu JSON w kolumn
 
    ![Kliknij pozycję Przekształć dane.](../media/JSONOpenPowerQuery.png)
 
-   Plik CSV zostanie otwarty w **Edytorze zapytań**. Istnieją cztery kolumny: **CreationDate**, **UserIds**, **Operations** i **AuditData**. Kolumna **Dane inspekcji** to obiekt JSON, który zawiera wiele właściwości. Następnym krokiem jest utworzenie kolumny dla każdej właściwości obiektu JSON.
+   Plik CSV jest otwierany w **Edytor Power Query**. Istnieją cztery kolumny: **CreationDate**, **UserIds**, **Operations** i **AuditData**. **Kolumna AuditData** jest obiektem JSON zawierającym wiele właściwości. Następnym krokiem jest utworzenie kolumny dla każdej właściwości w obiekcie JSON.
 
-5. Kliknij prawym przyciskiem myszy tytuł w kolumnie **Dane** inspekcji, **kliknij polecenie** Przekształć, a następnie kliknij polecenie **JSON**. 
+5. Kliknij prawym przyciskiem myszy tytuł w kolumnie **AuditData** , kliknij pozycję **Przekształć**, a następnie kliknij pozycję **JSON**. 
 
-   ![Kliknij prawym przyciskiem myszy kolumnę Dane inspekcji, kliknij polecenie Przekształć, a następnie wybierz pozycję JSON.](../media/JSONTransform.png)
+   ![Kliknij prawym przyciskiem myszy kolumnę AuditData, kliknij pozycję Przekształć, a następnie wybierz pozycję JSON.](../media/JSONTransform.png)
 
-6. W prawym górnym rogu kolumny **Dane** inspekcji kliknij ikonę rozwijania.
+6. W prawym górnym rogu kolumny **AuditData** kliknij ikonę rozwijania.
 
-   ![W kolumnie Dane inspekcji kliknij ikonę rozwijania.](../media/JSONTransformExpandIcon.png)
+   ![W kolumnie AuditData kliknij ikonę rozwiń.](../media/JSONTransformExpandIcon.png)
 
-   Zostanie wyświetlona częściowa lista właściwości w obiektach JSON w kolumnie **Dane** inspekcji.
+   Zostanie wyświetlona częściowa lista właściwości obiektów JSON w kolumnie **AuditData** .
 
-7. Kliknij **pozycję Załaduj** więcej, aby wyświetlić wszystkie właściwości obiektów JSON w kolumnie **Dane** inspekcji.
+7. Kliknij **pozycję Załaduj więcej** , aby wyświetlić wszystkie właściwości obiektów JSON w kolumnie **AuditData** .
 
-   ![Kliknij pozycję Załaduj więcej, aby wyświetlić wszystkie właściwości obiektu JSON.](../media/JSONTransformLoadJSONProperties.png)
+   ![Kliknij pozycję Załaduj więcej, aby wyświetlić wszystkie właściwości w obiekcie JSON.](../media/JSONTransformLoadJSONProperties.png)
 
-   Możesz usunąć zaznaczenie pola wyboru obok dowolnej właściwości, której nie chcesz uwzględniać. Wyeliminowanie kolumn, które nie są przydatne w trakcie prowadzonych badań, to dobry sposób na zmniejszenie ilości danych wyświetlanych w dzienniku inspekcji. 
+   Możesz usunąć zaznaczenie pola wyboru obok dowolnej właściwości, która nie ma być uwzględniana. Wyeliminowanie kolumn, które nie są przydatne w badaniu, jest dobrym sposobem zmniejszenia ilości danych wyświetlanych w dzienniku inspekcji. 
 
    > [!NOTE]
-   > Właściwości JSON wyświetlane na poprzednim zrzucie ekranu (po kliknięciu przycisku Załaduj **więcej) są** oparte na właściwościach znalezionych w kolumnie **Dane** inspekcji z pierwszych 1000 wierszy w pliku CSV. Jeśli po pierwszych 1000 wierszach istnieją inne właściwości JSON w rekordach, te właściwości (i odpowiadająca mu kolumna) nie zostaną uwzględnione, gdy kolumna **Dane** inspekcji zostanie podzielona na wiele kolumn. Aby temu zapobiec, rozważ ponowne uruchomienie wyszukiwania w dzienniku inspekcji i zawężenie kryteriów wyszukiwania, aby zwrócono mniej rekordów. Innym obejściem tego problemu jest filtrowanie elementów w kolumnie Operacje w celu zmniejszenia liczby wierszy (przed wykonaniem kroku 5 powyżej) przed przekształceniem obiektu JSON w kolumnie **Dane** inspekcji.
+   > Właściwości JSON wyświetlane na poprzednim zrzucie ekranu (po kliknięciu przycisku **Załaduj więcej**) są oparte na właściwościach znalezionych w kolumnie **AuditData** z pierwszych 1000 wierszy w pliku CSV. Jeśli istnieją różne właściwości JSON w rekordach po pierwszych 1000 wierszach, te właściwości (i odpowiednia kolumna) nie zostaną uwzględnione, gdy **kolumna AuditData zostanie podzielona** na wiele kolumn. Aby temu zapobiec, rozważ ponowne uruchomienie wyszukiwania w dzienniku inspekcji i zawężenie kryteriów wyszukiwania w celu zwrócenia mniejszej liczby rekordów. Innym obejściem jest filtrowanie elementów w kolumnie **Operacje** w celu zmniejszenia liczby wierszy (przed wykonaniem kroku 5 powyżej) przed przekształceniem obiektu JSON w kolumnie **AuditData** .
 
    > [!TIP]
-   > Aby wyświetlić atrybut na liście, taki jak AuditData.AffectedItems, kliknij ikonę  Rozwiń w prawym górnym rogu kolumny, z której chcesz przeciągnąć atrybut, a następnie wybierz pozycję Rozwiń do nowego **wiersza.**  W tym miejscu będzie to rekord. Możesz kliknąć ikonę Rozwiń w prawym górnym rogu kolumny, wyświetlić atrybuty i wybrać ten, który chcesz wyświetlić lub wyodrębnić.
+   > Aby wyświetlić atrybut na liście, takiej jak AuditData.AffectedItems, kliknij ikonę **Rozwiń** w prawym górnym rogu kolumny, z którego chcesz ściągnąć atrybut, a następnie wybierz pozycję **Rozwiń do nowego wiersza**.  W tym miejscu będzie to rekord i możesz kliknąć ikonę **Rozwiń** w prawym górnym rogu kolumny, wyświetlić atrybuty i wybrać tę, którą chcesz wyświetlić lub wyodrębnić.
 
-8. Wykonaj jedną z następujących czynności, aby sformatować tytuł kolumn dodawanych dla każdej wybranej właściwości JSON.
+8. Wykonaj jedną z następujących czynności, aby sformatować tytuł kolumn dodanych dla każdej wybranej właściwości JSON.
 
-    - Usuń zaznaczenie pola **wyboru Użyj oryginalnej nazwy kolumny** jako prefiksu, aby użyć nazwy właściwości JSON jako nazw kolumn. na przykład **RecordType lub** **SourceFileName**.
+    - Usuń zaznaczenie pola wyboru **Użyj oryginalnej nazwy kolumny jako prefiksu** , aby użyć nazwy właściwości JSON jako nazw kolumn; na przykład **RecordType** lub **SourceFileName**.
 
-    - Pozostaw **zaznaczone pole wyboru Użyj oryginalnej nazwy kolumny** jako prefiksu, aby dodać prefiks Dane inspekcji do nazw kolumn; na przykład **AuditData.RecordType lub** **AuditData.SourceFileName**.
+    - Pozostaw pole wyboru **Użyj oryginalnej nazwy kolumny jako prefiksu** , aby dodać prefiks AuditData do nazw kolumn; Na przykład **AuditData.RecordType** lub **AuditData.SourceFileName**.
 
 9. Kliknij przycisk **OK**.
 
-    Kolumna **Dane inspekcji** jest podzielona na wiele kolumn. Każda nowa kolumna odpowiada właściwości obiektu JSON Dane inspekcji. Każdy wiersz w kolumnie zawiera wartość właściwości. Jeśli właściwość nie zawiera wartości, zostanie *wyświetlona wartość null* . Na Excel komórki o wartościach null są puste.
+    **Kolumna AuditData jest podzielona** na wiele kolumn. Każda nowa kolumna odpowiada właściwości w obiekcie AuditData JSON. Każdy wiersz w kolumnie zawiera wartość właściwości. Jeśli właściwość nie zawiera wartości, zostanie wyświetlona wartość *null* . W Excel komórki z wartościami null są puste.
   
-10. Na karcie **Narzędzia** główne kliknij pozycję Zamknij i **& Załaduj**, aby zamknąć Edytor dodatku Power Query i otworzyć przekształcony plik CSV w skoroszycie Excel skoroszycie.
+10. Na karcie **Narzędzia** główne kliknij pozycję **Zamknij & Załaduj**, aby zamknąć Edytor Power Query i otworzyć przekształcony plik CSV w skoroszycie Excel.
 
-## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Przeszukiwanie i eksportowanie rekordów dziennika inspekcji za pomocą programu PowerShell
+## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Wyszukiwanie i eksportowanie rekordów dziennika inspekcji przy użyciu programu PowerShell
 
-Zamiast korzystać z narzędzia do przeszukiwania dziennika inspekcji w programie Centrum zgodności platformy Microsoft 365, można użyć polecenia cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online PowerShell w celu wyeksportowania wyników przeszukiwania dziennika inspekcji do pliku CSV. Następnie możesz wykonać tę samą procedurę opisaną w kroku 2, aby sformatować dziennik inspekcji przy użyciu edytora dodatku Power Query. Jedną z zalet korzystania z polecenia cmdlet programu PowerShell jest możliwość wyszukiwania zdarzeń z określonej usługi za pomocą *parametru RecordType* . Oto kilka przykładów eksportowania rekordów inspekcji do pliku CSV za pomocą programu PowerShell w celu przekształcenia obiektu JSON w kolumnie **Dane** inspekcji za pomocą edytora dodatku Power Query, zgodnie z opisem w kroku 2.
+Zamiast używać narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, możesz użyć polecenia cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online programu PowerShell, aby wyeksportować wyniki wyszukiwania dziennika inspekcji do pliku CSV. Następnie możesz wykonać tę samą procedurę opisaną w kroku 2, aby sformatować dziennik inspekcji przy użyciu edytora Power Query. Jedną z zalet korzystania z polecenia cmdlet programu PowerShell jest to, że można wyszukiwać zdarzenia z określonej usługi przy użyciu parametru *RecordType* . Poniżej przedstawiono kilka przykładów użycia programu PowerShell do eksportowania rekordów inspekcji do pliku CSV, dzięki czemu można użyć edytora Power Query do przekształcenia obiektu JSON w kolumnie **AuditData** zgodnie z opisem w kroku 2.
 
-W tym przykładzie uruchom następujące polecenia, aby zwrócić wszystkie rekordy związane SharePoint udostępnianiem.
+W tym przykładzie uruchom następujące polecenia, aby zwrócić wszystkie rekordy związane z operacjami udostępniania SharePoint.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
@@ -114,9 +114,9 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 Wyniki wyszukiwania są eksportowane do pliku CSV o nazwie *PowerShellAuditlog* zawierającego cztery kolumny: CreationDate, UserIds, RecordType, AuditData).
 
-Możesz również użyć nazwy lub wartości wyli dodanej dla typu rekordu jako wartości *parametru RecordType* . Aby uzyskać listę nazw typów rekordów i odpowiadających im wartości wyliszczenia, zobacz tabelę *AuditLogRecordType* w schemacie interfejsu API działań zarządzania Office 365 [zarządzaniem](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
+Możesz również użyć nazwy lub wartości wyliczenia dla typu rekordu jako wartości parametru *RecordType* . Aby uzyskać listę nazw typów rekordów i odpowiadających im wartości wyliczenia, zobacz tabelę *AuditLogRecordType* w [schemacie interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
 
-Dla parametru *RecordType* można dołączyć tylko jedną wartość. Aby wyszukać rekordy inspekcji dla innych typów rekordów, należy ponownie uruchomić dwa poprzednie polecenia w celu określenia innego typu rekordu i dołączyć te wyniki do oryginalnego pliku CSV. Na przykład można uruchomić dwa poniższe polecenia, aby dodać działania związane z SharePoint pliku z tego samego zakresu dat do PowerShellAuditlog.csv pliku.
+Parametr *RecordType* może zawierać tylko jedną wartość. Aby wyszukać rekordy inspekcji dla innych typów rekordów, należy ponownie uruchomić dwa poprzednie polecenia, aby określić inny typ rekordu i dołączyć te wyniki do oryginalnego pliku CSV. Na przykład należy uruchomić następujące dwa polecenia, aby dodać działania SharePoint plików z tego samego zakresu dat do pliku PowerShellAuditlog.csv.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
@@ -126,10 +126,10 @@ $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -Re
 $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
 ```
 
-## <a name="tips-for-exporting-and-viewing-the-audit-log"></a>Wskazówki eksportowania i wyświetlania dziennika inspekcji
+## <a name="tips-for-exporting-and-viewing-the-audit-log"></a>Wskazówki do eksportowania i wyświetlania dziennika inspekcji
 
-Poniżej przedstawiono kilka porad i przykładów eksportowania i wyświetlania dziennika inspekcji przed użyciem funkcji przekształcania JSON i po jego użyciu w celu podzielenia kolumny **Dane** inspekcji na wiele kolumn.
+Poniżej przedstawiono kilka wskazówek i przykładów eksportowania i wyświetlania dziennika inspekcji przed użyciem funkcji przekształcania JSON w celu **podzielenia kolumny AuditData** na wiele kolumn.
 
-- **Przefiltruj kolumnę RecordType (Typ** Rekordu), aby wyświetlić tylko rekordy z określonej usługi lub obszaru funkcjonalności. Aby na przykład pokazać zdarzenia związane z udostępnianiem SharePoint, należy wybrać **wartość 14** (wartość wyli roku dla rekordów wyzwalanych przez SharePoint udostępniania). Aby uzyskać listę usług odpowiadających wartościom wyliczem wyświetlanym w kolumnie **RecordType (Typ** Rekordu), zobacz [Szczegółowe właściwości w dzienniku inspekcji](detailed-properties-in-the-office-365-audit-log.md).
+- Przefiltruj kolumnę **RecordType** , aby wyświetlić tylko rekordy z określonej usługi lub obszaru funkcjonalnego. Aby na przykład wyświetlić zdarzenia związane z udostępnianiem SharePoint, należy wybrać **wartość 14** (wartość wyliczenia dla rekordów wyzwalanych przez działania udostępniania SharePoint). Aby uzyskać listę usług odpowiadających wartościom wyliczenia wyświetlanym w kolumnie **RecordType** , zobacz [Szczegółowe właściwości w dzienniku inspekcji](detailed-properties-in-the-office-365-audit-log.md).
 
-- Filtrowanie **kolumny Operacje** w celu wyświetlenia rekordów dla określonych działań. Aby uzyskać listę operacji, które odpowiadają działaniu z przeszukiwalnym działaniem w narzędziu do przeszukiwania dziennika inspekcji w programie Centrum zgodności platformy Microsoft 365, zobacz sekcję "Działania inspekcji" w sekcji Przeszukiwanie dziennika [inspekcji](search-the-audit-log-in-security-and-compliance.md#audited-activities).
+- Przefiltruj kolumnę **Operacje** , aby wyświetlić rekordy dla określonych działań. Aby uzyskać listę większości operacji, które odpowiadają działaniu z możliwością wyszukiwania w narzędziu do wyszukiwania dzienników inspekcji w portalu zgodności, zobacz sekcję "Działania inspekcji" w temacie [Wyszukaj dziennik inspekcji](search-the-audit-log-in-security-and-compliance.md#audited-activities).
