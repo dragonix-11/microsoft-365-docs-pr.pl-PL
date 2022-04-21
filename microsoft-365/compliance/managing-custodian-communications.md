@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: eDiscovery (Premium) ułatwia zarządzanie przepływem pracy powiadomień o blokadzie prawnej wokół powiadamiania opiekunów w dochodzeniach prawnych.
-ms.openlocfilehash: 9ee915cc9955b343d76ae1314c27a86421d37332
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bf47522809b61e377abffd742b9a4d84f7b650aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944662"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998557"
 ---
 # <a name="work-with-communications-in-ediscovery-premium"></a>Praca z komunikacją w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Usługa Microsoft Purview eDiscovery (Premium) umożliwia działom prawnym uproszczenie procesów dotyczących śledzenia i rozpowszechniania powiadomień prawnych dotyczących blokad. Narzędzie do komunikacji opiekuna umożliwia działom prawnym zarządzanie całym procesem archiwizacji prawnej i automatyzowanie go, od początkowych powiadomień, po przypomnienia i eskalacje — wszystko w jednej lokalizacji.
 

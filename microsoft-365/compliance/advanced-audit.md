@@ -18,14 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Usługa Microsoft Purview Audit (Premium) udostępnia nowe funkcje inspekcji, które ułatwiają organizacji przeprowadzanie badań kryminalistycznych i zgodności.
-ms.openlocfilehash: 51add6560c12994470f5a6ad96fce5c3f293f4f7
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 4f936977c71a933dd05e5c0b2e0d2111b03bc8f7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972832"
+ms.locfileid: "64999503"
 ---
 # <a name="microsoft-purview-audit-premium"></a>Microsoft Purview Audit (Premium)
+
+> [!TIP]
+> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum wersji próbnych portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [Funkcja Inspekcja](search-the-audit-log-in-security-and-compliance.md) w usłudze Microsoft Purview zapewnia organizacjom wgląd w wiele typów inspekcji działań w wielu różnych usługach w Microsoft 365. Inspekcja usługi Microsoft Purview (Premium) pomaga organizacjom w prowadzeniu badań kryminalistycznych i zgodności poprzez zwiększenie przechowywania dzienników inspekcji wymaganych do przeprowadzenia badania, zapewnienie dostępu do kluczowych zdarzeń (przy użyciu wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview i interfejsie API działania zarządzania Office 365), które pomagają określić zakres naruszenia zabezpieczeń i szybszy dostęp do interfejs API działań zarządzania Office 365.
 

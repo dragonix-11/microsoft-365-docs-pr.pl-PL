@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Dowiedz się, jak administratorzy mogą skonfigurować & za pomocą łącznika natywnego do importowania danych ze strony firmy LinkedIn do Microsoft 365.
-ms.openlocfilehash: de39d0e3e95164a39f9aed1a227ab15f6e4fd7d6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4def1c8946c8b09f1ba543762026572ceb229b6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937240"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998049"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Konfigurowanie łącznika do archiwizowania danych linkedin
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze stron firmy LinkedIn. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z kontem dla określonej strony firmy LinkedIn raz na 24 godziny. Łącznik konwertuje komunikaty opublikowane na stronie firmy na wiadomość e-mail, a następnie importuje te elementy do skrzynki pocztowej w Microsoft 365.
 

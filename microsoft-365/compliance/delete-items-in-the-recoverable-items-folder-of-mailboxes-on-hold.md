@@ -20,14 +20,16 @@ description: Dowiedz się, jak administratorzy mogą usuwać elementy w folderze
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 29519b61d4a32b03772cfddba9183d3568afc209
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b421be087980c7878b79e3dbc03759ec45c546d8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950252"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001197"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Usuwanie elementów w folderze Elementy możliwe do odzyskania w magazynach chmurowych skrzynek pocztowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Folder Elementy do odzyskania dla skrzynki pocztowej Exchange Online istnieje w celu ochrony przed przypadkowymi lub złośliwymi usunięciami. Jest ona również używana do przechowywania elementów przechowywanych i uzyskiwanych przez funkcje zgodności, takie jak blokady i wyszukiwania zbierania elektronicznych materiałów dowodowych. Jednak w niektórych sytuacjach organizacje mogą mieć dane, które zostały przypadkowo zachowane w folderze Elementy możliwe do odzyskania, które muszą usunąć. Na przykład użytkownik może nieświadomie wysłać lub przesłać wiadomość e-mail zawierającą poufne informacje lub informacje, które mogą mieć poważne konsekwencje biznesowe. Nawet jeśli wiadomość zostanie trwale usunięta, może ona zostać zachowana przez czas nieokreślony, ponieważ w skrzynce pocztowej została umieszczona blokada prawna. Ten scenariusz jest znany jako *wyciek danych,* ponieważ dane zostały przypadkowo *rozlane* na Office 365. W takich sytuacjach można usunąć elementy w folderze Elementy do odzyskania użytkownika dla Exchange Online skrzynki pocztowej, nawet jeśli ta skrzynka pocztowa jest wstrzymana z jedną z różnych funkcji blokady w Office 365. Te typy blokad obejmują blokady sporów, blokady In-Place, blokady zbierania elektronicznych materiałów dowodowych i zasady przechowywania utworzone w centrum zabezpieczeń i zgodności w Office 365 lub Microsoft 365.
 

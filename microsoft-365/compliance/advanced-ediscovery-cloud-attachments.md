@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Kolekcje w usłudze Microsoft Purview eDiscovery (Premium) umożliwiają zbieranie załączników w chmurze do przeglądu w badaniu lub przypadku.
-ms.openlocfilehash: 0a0d3dab3942dbdfcfa896d8e2f59fd2e2dca813
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1dd48f343f9df43edf8553e73395d756eb6713a4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935725"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000713"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium-preview"></a>Zbieranie załączników w chmurze w usłudze Microsoft Purview eDiscovery (Premium) (wersja zapoznawcza)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Załączniki w chmurze to linki do dokumentów, które są zwykle przechowywane w SharePoint lokacji i OneDrive. Dlatego zamiast dołączać rzeczywistą kopię dokumentu w wiadomości e-mail lub Teams konwersacji na czacie, masz możliwość udostępnienia linku do pliku. Załączniki w chmurze to skuteczny sposób udostępniania dokumentów i współpracy z innymi osobami w organizacji. Jednak załączniki w chmurze stanowią wyzwanie podczas przepływu pracy zbierania elektronicznych materiałów dowodowych, ponieważ tylko link załącznika w chmurze, a nie rzeczywista zawartość w dokumencie udostępnionym, są zwracane w wyszukiwaniu zbierania elektronicznych materiałów dowodowych. Aby sprostać temu wyzwaniu, usługa eDiscovery (Premium) oferuje dwa rozwiązania do zbierania załączników w chmurze:  
 

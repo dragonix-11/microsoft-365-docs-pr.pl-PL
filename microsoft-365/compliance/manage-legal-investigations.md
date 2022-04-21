@@ -17,14 +17,16 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Użyj przypadków zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview, aby zarządzać badaniem prawnym organizacji.
-ms.openlocfilehash: d218c7d624da837e685929d95e515687f54897ef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28dead35cce2102cfd826fa1505cdd620e4a1b25
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932002"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999789"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnymi w Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Organizacje mają wiele powodów, aby odpowiedzieć na sprawę prawną z udziałem niektórych menedżerów lub innych pracowników w organizacji. Może to obejmować szybkie znajdowanie i przechowywanie dalszych informacji specyficznych dla badania w wiadomościach e-mail, dokumentach, konwersacjach wiadomości błyskawicznych i innych lokalizacjach zawartości używanych przez osoby w codziennych zadaniach służbowych. Te i wiele innych podobnych działań można wykonywać przy użyciu narzędzi do zbierania elektronicznych elektronicznych materiałów dowodowych w centrum zabezpieczeń i zgodności.
   

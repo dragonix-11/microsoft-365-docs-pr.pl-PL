@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik TeleMessage do importowania i archiwizowania danych komunikacyjnych telegramu w Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
-ms.openlocfilehash: b18d05fa697f3d23e57444d5757d14dff7acfc23
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6bee4eb9be5cf8c0d2719f391d89e268c5041b7f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947126"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997455"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>Konfigurowanie łącznika do archiwizowania danych komunikacyjnych telegramu
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika TeleMessage w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować czaty telegramu, załączniki, pliki oraz usunięte komunikaty i wywołania. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z kontem TeleMessage organizacji i importuje komunikację mobilną pracowników przy użyciu archiwum Telegram do skrzynek pocztowych w Microsoft 365.
 

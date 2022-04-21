@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych rozdzielanych tekstem z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: b7772143bef1f6b00d17f05c4bff76ba8692d7ee
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b2039c3b850f7d266425d464235b62d0ce4a78ad
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942980"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997235"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data"></a>Konfigurowanie łącznika do archiwizowania danych rozdzielanych tekstem
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane rozdzielane tekstem do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia [łącznik rozdzielany tekstem](https://globanet.com/text-delimited), który jest skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie) i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość z rozdzielanego tekstem źródła danych na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 

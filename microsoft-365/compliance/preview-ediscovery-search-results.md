@@ -20,14 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Wyświetl podgląd przykładu wyników zwróconych przez wyszukiwanie zawartości lub wyszukiwanie zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 83779ad333d6944b65b92b2032d46b3eaa016479
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3397b82f088f9aff480b6893edbf7aa664d91dc4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934714"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999019"
 ---
 # <a name="preview-ediscovery-search-results"></a>Eksportowanie wyników wyszukiwania w ramach zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) możesz wyświetlić podgląd przykładu wyników zwróconych przez wyszukiwanie. Podgląd elementów zwracanych przez zapytanie wyszukiwania może pomóc w określeniu, czy wyszukiwanie zwraca wyniki, których oczekujesz, lub jeśli chcesz zmienić zapytanie wyszukiwania i ponownie uruchomić wyszukiwanie.
 

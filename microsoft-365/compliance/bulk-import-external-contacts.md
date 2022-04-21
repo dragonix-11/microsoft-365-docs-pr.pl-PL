@@ -1,5 +1,5 @@
 ---
-title: Zbiorcze importowanie kontaktów zewnętrznych do programu Exchange Online
+title: Zbiorcze importowanie kontaktów zewnętrznych do Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,19 +15,21 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
-description: Dowiedz się, jak administratorzy mogą Exchange Online programu PowerShell i pliku CSV do zbiorczego importowania kontaktów zewnętrznych do globalnej listy adresowej.
-ms.openlocfilehash: fbb2d9bb93d9275e662872d945254d6bf27deb92
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: Dowiedz się, jak administratorzy mogą używać programu Exchange Online programu PowerShell i pliku CSV do zbiorczego importowania kontaktów zewnętrznych do globalnej listy adresów.
+ms.openlocfilehash: a85d24a4b20798df057250d9114f97563a6a8e2d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017809"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999305"
 ---
-# <a name="bulk-import-external-contacts-to-exchange-online"></a>Zbiorcze importowanie kontaktów zewnętrznych do programu Exchange Online
+# <a name="bulk-import-external-contacts-to-exchange-online"></a>Zbiorcze importowanie kontaktów zewnętrznych do Exchange Online
 
-**Ten artykuł jest dla administratorów. Czy próbujesz zaimportować kontakty do swojej skrzynki pocztowej? Zobacz [Importowanie kontaktów do Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+**Ten artykuł jest przeznaczony dla administratorów. Czy próbujesz zaimportować kontakty do własnej skrzynki pocztowej? Zobacz [Importowanie kontaktów do Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
-Czy Twoja firma ma wiele istniejących kontaktów biznesowych, które chcesz uwzględnić w udostępnionej książce adresowej (nazywanej również globalną listą adresową) w programie Exchange Online? Chcesz dodać kontakty zewnętrzne jako członków grup dystrybucyjnych, tak jak użytkowników wewnątrz firmy? Jeśli tak, możesz zbiorczo zaimportować kontakty zewnętrzne Exchange Online do programu PowerShell i pliku CSV (wartości rozdzielane przecinkami), aby zbiorczo zaimportować kontakty Exchange Online. Jest to proces trzystopniowy:
+Czy Twoja firma ma wiele istniejących kontaktów biznesowych, które chcesz uwzględnić w udostępnionej książce adresowej (nazywanej również globalną listą adresów) w Exchange Online? Czy chcesz dodać kontakty zewnętrzne jako członków grup dystrybucyjnych, tak jak w przypadku użytkowników w firmie? Jeśli tak, możesz użyć Exchange Online programu PowerShell i pliku CSV (wartości rozdzielanej przecinkami) do zbiorczego importowania kontaktów zewnętrznych do Exchange Online. Jest to proces trzyetapowy:
   
 [Krok 1. Tworzenie pliku CSV zawierającego informacje o kontaktach zewnętrznych](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
@@ -35,9 +37,9 @@ Czy Twoja firma ma wiele istniejących kontaktów biznesowych, które chcesz uwz
 
 [Krok 3. Dodawanie informacji do właściwości kontaktów zewnętrznych](#step-3-add-information-to-the-properties-of-the-external-contacts)
 
-Po zakończeniu importowania kontaktów możesz wykonać następujące dodatkowe zadania:
+Po wykonaniu tych kroków w celu zaimportowania kontaktów można wykonać następujące dodatkowe zadania:
   
-- [Dodawanie kolejnych kontaktów zewnętrznych](#add-more-external-contacts)
+- [Dodawanie większej liczby kontaktów zewnętrznych](#add-more-external-contacts)
   
 - [Ukrywanie kontaktów zewnętrznych w udostępnionej książce adresowej](#hide-external-contacts-from-the-shared-address-book)
   
@@ -45,10 +47,10 @@ Po zakończeniu importowania kontaktów możesz wykonać następujące dodatkowe
 
 Pierwszym krokiem jest utworzenie pliku CSV zawierającego informacje o każdym kontakcie zewnętrznym, który chcesz zaimportować do Exchange Online. 
   
-1. Skopiuj poniższy tekst do pliku tekstowego w Notatniku i zapisz go na pulpicie jako plik CSV, używając sufiksu nazwy pliku .csv; na przykład: ExternalContacts.csv.
+1. Skopiuj następujący tekst do pliku tekstowego w Notatniku i zapisz go na pulpicie jako plik CSV przy użyciu sufiksu nazwy pliku .csv; na przykład ExternalContacts.csv.
     
     > [!TIP]
-    > Jeśli język zawiera znaki specjalne (takie jak **å**, **ä** i **ö** w języku szwedzkim), zapisz plik CSV przy użyciu kodowania UTF-8 lub innego kodowania Unicode podczas zapisywania pliku w Notatniku. 
+    > Jeśli język zawiera znaki specjalne (takie jak **å**, **ä** i **ö** w języku szwedzkim) zapisz plik CSV z kodowaniem UTF-8 lub innym kodowaniem Unicode podczas zapisywania pliku w Notatniku. 
   
     ```text
     ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
@@ -56,25 +58,25 @@ Pierwszym krokiem jest utworzenie pliku CSV zawierającego informacje o każdym 
     pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park
     ```
 
-    Pierwszy wiersz w pliku CSV, czyli wiersz nagłówka, zawiera właściwości kontaktów, których można użyć podczas importowania kontaktów do Exchange Online. Poszczególne nazwy właściwości są rozdzielone przecinkami. Każdy wiersz poniżej wiersza nagłówka reprezentuje wartości właściwości do zaimportowania pojedynczego kontaktu zewnętrznego. 
+    Pierwszy wiersz lub wiersz nagłówka pliku CSV zawiera listę właściwości kontaktów, których można użyć podczas importowania ich do Exchange Online. Każda nazwa właściwości jest oddzielona przecinkiem. Każdy wiersz w wierszu nagłówka reprezentuje wartości właściwości do zaimportowania pojedynczego kontaktu zewnętrznego. 
     
     > [!NOTE]
-    > Ten tekst zawiera przykładowe dane, które możesz usunąć. Nie usuwaj jednak pierwszego wiersza (nagłówka). Zawiera on wszystkie właściwości kontaktów zewnętrznych. 
+    > Ten tekst zawiera przykładowe dane, które można usunąć. Ale nie usuwaj ani nie zmieniaj pierwszego wiersza (nagłówka). Zawiera wszystkie właściwości kontaktów zewnętrznych. 
   
-2. Otwórz plik CSV w programie Microsoft Excel, aby edytować ten plik CSV, ponieważ znacznie łatwiej jest Excel pliku CSV.
+2. Otwórz plik CSV w Microsoft Excel, aby edytować plik CSV, ponieważ znacznie łatwiej jest użyć Excel do edycji pliku CSV.
     
 3. Utwórz wiersz dla każdego kontaktu, który chcesz zaimportować do Exchange Online. Wypełnij jak najwięcej komórek. Te informacje będą wyświetlane w udostępnionej książce adresowej dla każdego kontaktu. 
     
     > [!IMPORTANT]
-    >  Następujące właściwości (czyli pierwsze cztery elementy w wierszu nagłówka) są wymagane do utworzenia kontaktu zewnętrznego i muszą być wypełnione w pliku CSV: **ExternalEmailAddress**, **Name**, **FirstName**, **LastName**. Polecenie programu PowerShell uruchomione w kroku 2 spowoduje utworzenie kontaktów przy użyciu wartości tych właściwości. 
+    >  Następujące właściwości (które są pierwszymi czterema elementami w wierszu nagłówka) są wymagane do utworzenia kontaktu zewnętrznego i muszą być wypełnione w pliku CSV: **ExternalEmailAddress**, **Name**, **FirstName**, **LastName**. Polecenie programu PowerShell uruchamiane w kroku 2 użyje wartości tych właściwości do utworzenia kontaktów. 
 
 ## <a name="step-2-create-the-external-contacts-with-powershell"></a>Krok 2. Tworzenie kontaktów zewnętrznych za pomocą programu PowerShell
 
-Następnym krokiem jest zbiorcze zaimportowanie kontaktów zewnętrznych wymienionych w pliku CSV za pomocą pliku CSV utworzonego w kroku 1 i programu PowerShell w celu Exchange Online. 
+Następnym krokiem jest użycie pliku CSV utworzonego w kroku 1 i programie PowerShell w celu zbiorczego zaimportowania kontaktów zewnętrznych wymienionych w pliku CSV do Exchange Online. 
   
-1.  Połączenie PowerShell do Twojej Exchange Online organizacji. Instrukcje krok po kroku można znaleźć w [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pamiętaj, aby podczas łączenia się z programem PowerShell użyć nazwy użytkownika i hasła Exchange Online administratora globalnego. 
+1.  Połączenie programu PowerShell do organizacji Exchange Online. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Podczas nawiązywania połączenia z programem Exchange Online programu PowerShell należy użyć nazwy użytkownika i hasła dla konta administratora globalnego. 
     
-2. Po połączeniu programu PowerShell z programem Exchange Online przejdź do folderu pulpitu, w którym zapisano na przykład plik CSV w kroku 1`C:\Users\Administrator\desktop`.
+2. Po połączeniu programu PowerShell z programem Exchange Online przejdź do folderu pulpitu, w którym zapisano plik CSV w kroku 1, na przykład `C:\Users\Administrator\desktop`.
     
 3. Uruchom następujące polecenie, aby utworzyć kontakty zewnętrzne:
 
@@ -82,27 +84,27 @@ Następnym krokiem jest zbiorcze zaimportowanie kontaktów zewnętrznych wymieni
     Import-Csv .\ExternalContacts.csv|%{New-MailContact -Name $_.Name -DisplayName $_.Name -ExternalEmailAddress $_.ExternalEmailAddress -FirstName $_.FirstName -LastName $_.LastName}
     ```
 
-    Utworzenie nowych kontaktów może zająć trochę czasu w zależności od tego, ile ich importujesz. Po zakończeniu uruchamiania polecenia program PowerShell wyświetli listę nowych kontaktów, które zostały utworzone. 
+    Tworzenie nowych kontaktów może trochę potrwać, w zależności od liczby importowanych kontaktów. Po zakończeniu działania polecenia program PowerShell wyświetla listę nowych kontaktów, które zostały utworzone. 
     
-4. Aby wyświetlić nowe kontakty zewnętrzne, przejdź do centrum Exchange administracyjnego, a następnie kliknij pozycję **Kontakty adresatów**\>.<a href="https://go.microsoft.com/fwlink/?linkid=2182970" target="_blank"></a> 
+4. Aby wyświetlić nowe kontakty zewnętrzne, przejdź do centrum administracyjnego Exchange (EAC), a następnie kliknij pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2182970" target="_blank">**Kontakty**</a> **adresatów**\>. 
     
     > [!TIP]
-    > Aby uzyskać instrukcje dotyczące nawiązywania połączenia z Centrum administracyjnym programu [Exchange w programie Exchange Online](/exchange/exchange-admin-center). 
+    > Aby uzyskać instrukcje dotyczące nawiązywania połączenia z usługą EAC, zobacz [centrum administracyjne Exchange w Exchange Online](/exchange/exchange-admin-center). 
   
-5. W razie potrzeby kliknij **pozycję Odśwież** , aby zaktualizować listę i wyświetlić zaimportowane kontakty zewnętrzne. 
+5. W razie potrzeby kliknij przycisk **Odśwież** , aby zaktualizować listę i wyświetlić zaimportowane kontakty zewnętrzne. 
     
-    Zaimportowane kontakty pojawią się w udostępnionej książce adresowej w folderze Outlook i Outlook w sieci Web.
+    Zaimportowane kontakty zostaną wyświetlone w udostępnionej książce adresowej w Outlook i Outlook w sieci Web.
     
     > [!NOTE]
-    > Kontakty można także wyświetlać w centrum administracyjne platformy Microsoft 365, przechodząc do strony **Kontakty** \> **użytkowników**. 
+    > Możesz również wyświetlić kontakty w Centrum administracyjne platformy Microsoft 365, przechodząc do pozycji **Kontakty użytkowników**\>. 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Krok 3. Dodawanie informacji do właściwości kontaktów zewnętrznych
 
-Po uruchomieniu polecenia w kroku 2 kontakty zewnętrzne zostaną utworzone, ale nie będą zawierać żadnych informacji dotyczących kontaktu lub organizacji, czyli informacji z większości komórek w pliku CSV. Wynika to z tego, że podczas tworzenia nowych kontaktów zewnętrznych wypełniane są tylko właściwości wymagane. Nie martw się, jeśli nie wszystkie informacje w pliku CSV zostały wypełnione. Jeśli jej tam nie ma, nie zostanie dodana.
+Po uruchomieniu polecenia w kroku 2 kontakty zewnętrzne są tworzone, ale nie zawierają żadnych informacji kontaktowych ani organizacji, czyli informacji z większości komórek w pliku CSV. Dzieje się tak, ponieważ podczas tworzenia nowych kontaktów zewnętrznych wypełniane są tylko wymagane właściwości. Nie martw się, jeśli nie masz wszystkich informacji wypełnionych w pliku CSV. Jeśli go tam nie ma, nie zostanie dodany.
   
-1.  Połączenie PowerShell do Twojej Exchange Online organizacji. Instrukcje krok po kroku można znaleźć w [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1.  Połączenie programu PowerShell do organizacji Exchange Online. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
-2. Przejdź do folderu pulpitu, w którym został zapisany plik CSV w kroku 1. na przykład `C:\Users\Administrator\desktop`.
+2. Przejdź do folderu pulpitu, w którym zapisano plik CSV w kroku 1; na przykład `C:\Users\Administrator\desktop`.
     
 3. Uruchom następujące dwa polecenia, aby dodać inne właściwości z pliku CSV do kontaktów zewnętrznych utworzonych w kroku 2.
     
@@ -116,47 +118,47 @@ Po uruchomieniu polecenia w kroku 2 kontakty zewnętrzne zostaną utworzone, ale
     ```
 
     > [!NOTE]
-    > Parametr  _Manager_ może być problematyczny. Jeśli komórka w pliku CSV jest pusta, zostanie wyświetlany komunikat o błędzie i żadne z informacji o właściwościach nie zostaną dodane do kontaktu. Jeśli nie chcesz określać menedżera,  ` -Manager $_.Manager ` po prostu usuń je z poprzedniego polecenia programu PowerShell. 
+    > Parametr  _Menedżera_ może być problematyczny. Jeśli komórka jest pusta w pliku CSV, zostanie wyświetlony błąd i żadne informacje o właściwości nie zostaną dodane do kontaktu. Jeśli nie musisz określać menedżera, po prostu usuń  ` -Manager $_.Manager ` go z poprzedniego polecenia programu PowerShell. 
   
-    Aktualizacja kontaktów może zająć trochę czasu w zależności od tego, ile ich zaimportowano w kroku 1. 
+    Ponownie może upłynąć trochę czasu, aby zaktualizować kontakty, w zależności od liczby zaimportowanych w kroku 1. 
     
 4. Aby sprawdzić, czy właściwości zostały dodane do kontaktów: 
     
-1. W centrum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange przejdź</a> do **pozycji Kontakty adresatów**\>.
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> przejdź do pozycji **Kontakty** **adresatów**\>.
     
-2. Kliknij kontakt, a następnie kliknij **ikonę** ![Edytuj.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) , aby wyświetlić właściwości kontaktu. 
+2. Kliknij kontakt, a następnie kliknij ikonę **Edytuj** ![edycję.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) aby wyświetlić właściwości kontaktu. 
     
-To wszystko! Użytkownicy mogą zobaczyć kontakty i dodatkowe informacje w książce adresowej w Outlook i Outlook w sieci Web.
+To wszystko! Użytkownicy mogą zobaczyć kontakty i dodatkowe informacje w książce adresowej Outlook i Outlook w sieci Web.
   
-## <a name="add-more-external-contacts"></a>Dodawanie kolejnych kontaktów zewnętrznych
+## <a name="add-more-external-contacts"></a>Dodawanie większej liczby kontaktów zewnętrznych
 
-Możesz powtórzyć kroki od 1 do 3, aby dodać nowe kontakty zewnętrzne w Exchange Online. Ty lub użytkownicy w Twojej firmie możecie po prostu dodać nowy wiersz w pliku CSV dla nowego kontaktu. Następnie możesz uruchomić polecenia programu PowerShell z kroków 2 i 3, aby utworzyć i dodać informacje do nowych kontaktów.
+Możesz powtórzyć kroki od 1 do kroku 3, aby dodać nowe kontakty zewnętrzne w Exchange Online. Ty lub użytkownicy w firmie możesz po prostu dodać nowy wiersz w pliku CSV dla nowego kontaktu. Następnie możesz uruchomić polecenia programu PowerShell z kroków 2 i 3, aby utworzyć i dodać informacje do nowych kontaktów.
   
 > [!NOTE]
-> Po uruchomieniu polecenia tworzenia nowych kontaktów może zostać wyświetlany komunikat o błędzie z informacją, że kontakty, które zostały utworzone wcześniej, już istnieją. Jednak każdy nowy kontakt dodany do pliku CSV zostanie utworzony. 
+> Po uruchomieniu polecenia w celu utworzenia nowych kontaktów może wystąpić błąd informujący, że kontakty, które zostały utworzone wcześniej, już istnieją. Zostanie jednak utworzony każdy nowy kontakt dodany do pliku CSV. 
   
-## <a name="hide-external-contacts-from-the-shared-address-book"></a>Ukrywanie kontaktów zewnętrznych w udostępnionej książce adresowej>
+## <a name="hide-external-contacts-from-the-shared-address-book"></a>Ukryj kontakty zewnętrzne w udostępnionej książce adresowej>
 
-Niektóre firmy mogą korzystać z kontaktów zewnętrznych tylko po to, aby można je było dodawać jako członków grup dystrybucyjnych. W tym scenariuszu mogą zechcieć ukryć kontakty zewnętrzne w udostępnionej książce adresowej. W tym celu wykonaj następujące czynności:
+Niektóre firmy mogą używać tylko kontaktów zewnętrznych, aby można je było dodać jako członków grup dystrybucyjnych. W tym scenariuszu mogą chcieć ukryć kontakty zewnętrzne z udostępnionej książki adresowej. W tym celu wykonaj następujące czynności:
   
-1.  Połączenie PowerShell do Twojej Exchange Online organizacji. Instrukcje krok po kroku można znaleźć w [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1.  Połączenie programu PowerShell do organizacji Exchange Online. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
-2. Aby ukryć jeden kontakt zewnętrzny, uruchom następujące polecenie.
+2. Aby ukryć pojedynczy kontakt zewnętrzny, uruchom następujące polecenie.
     
     ```powershell
     Set-MailContact <external contact> -HiddenFromAddressListsEnabled $true 
     ```
 
-    Aby na przykład ukryć pilar Pinilla w udostępnionej książce adresowej, uruchom to polecenie:
+    Aby na przykład ukryć pilar Pinilla z udostępnionej książki adresowej, uruchom następujące polecenie:
 
     ```powershell
     Set-MailContact "Pilar Pinilla" -HiddenFromAddressListsEnabled $true
     ```
 
-3. Aby ukryć wszystkie kontakty zewnętrzne w udostępnionej książce adresowej, uruchom to polecenie:
+3. Aby ukryć wszystkie kontakty zewnętrzne w udostępnionej książce adresowej, uruchom następujące polecenie:
 
     ```powershell
     Get-Contact -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailContact')} | Set-MailContact -HiddenFromAddressListsEnabled $true  
     ```
 
-Po ukryciu kontakty zewnętrzne nie są wyświetlane w udostępnionej książce adresowej, ale nadal można je dodawać jako członków grupy dystrybucyjnej.
+Po ich ukryciu kontakty zewnętrzne nie są wyświetlane w udostępnionej książce adresowej, ale nadal można dodać je jako członków grupy dystrybucyjnej.

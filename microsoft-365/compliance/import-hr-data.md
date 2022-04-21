@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych pracowników z systemu zasobów ludzkich (HR) organizacji w celu Microsoft 365. Dzięki temu dane kadrowe w zasadach zarządzania ryzykiem wewnętrznym ułatwiają wykrywanie działań określonych użytkowników, które mogą stanowić wewnętrzne zagrożenie dla organizacji.
-ms.openlocfilehash: e1539661c987de8642639df777602fbcf05bdcc4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 81ee1ae3841c4b30f7159d344a195d924d49030c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944816"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999965"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Konfigurowanie łącznika w celu importowania danych kadr
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Łącznik danych można skonfigurować w portalu zgodności usługi Microsoft Purview, aby zaimportować dane dotyczące zasobów ludzkich związane ze zdarzeniami, takimi jak rezygnacja użytkownika lub zmiana poziomu zadania użytkownika. Dane kadrowe mogą być następnie używane przez [rozwiązanie do zarządzania ryzykiem wewnętrznym](insider-risk-management.md) w celu generowania wskaźników ryzyka, które mogą ułatwić tożsamość możliwej złośliwej aktywności lub kradzieży danych przez użytkowników w organizacji.
 

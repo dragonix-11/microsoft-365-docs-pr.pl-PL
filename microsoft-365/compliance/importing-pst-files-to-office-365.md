@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Dowiedz się, jak używać usługi Import w portalu zgodności usługi Microsoft Purview do zbiorczego importowania danych poczty e-mail (plików PST) do skrzynek pocztowych użytkowników.
-ms.openlocfilehash: ba517359d54c698abd2ce50f07fe76d87fba472c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a1720b51a57569d676aeac37933f1dce3075e7ed
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946226"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001021"
 ---
 # <a name="learn-about-importing-your-organizations-pst-files"></a>Dowiedz się więcej o importowaniu plików PST organizacji
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Ten artykuł jest przeznaczony dla administratorów. Czy próbujesz zaimportować pliki PST do własnej skrzynki pocztowej? Zobacz [Importowanie wiadomości e-mail, kontaktów i kalendarza z pliku pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075).

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a5029ad6de3de33eacdf814729ed2eafcd2cf89
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6992af4483bedfe418610b752d2195a8d22f30d3
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941682"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974328"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Wykrywanie zagrożeń i Eksploratora zagrożeń w czasie rzeczywistym
 
@@ -51,7 +51,6 @@ Dzięki temu raportowi możesz:
 - [Badanie złośliwych wiadomości e-mail i nie tylko](#more-ways-to-use-explorer-and-real-time-detections)
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Ulepszenia środowiska wyszukiwania zagrożeń
-
 
 ### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>Wprowadzenie identyfikatora alertu dla alertów Ochrona usługi Office 365 w usłudze Defender w Eksploratorze/Wykrywanie w czasie rzeczywistym
 

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Zapoznaj się z krokami tagowania, a następnie pracuj z próbką szkoleniową zawierającą 40 plików na etapie trenowania istotności w usłudze eDiscovery (Premium).
-ms.openlocfilehash: 9744fd06548b4a0956db63cf200bc0a443deed9e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9078bf36e1434cad0362c4584b5c61fd49e86c14
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935571"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996685"
 ---
 # <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>Trenowanie tagowania i istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 W tym artykule opisano procedurę pracy z modułem szkoleniowym Istotność w usłudze Microsoft Purview eDiscovery (Premium).
   

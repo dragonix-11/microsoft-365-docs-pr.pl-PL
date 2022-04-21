@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie rekordami w Microsoft 365
+title: Dowiedz się więcej o zarządzaniu rekordami usługi Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,98 +20,103 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: Dzięki zarządzaniu rekordami Microsoft 365 harmonogramy przechowywania można stosować do planu ewidencji, który zarządza przechowywaniem, deklaracjami rekordów i ich rozsyłaniem.
-ms.openlocfilehash: ce00fdfc6db90b9c65051a31e8768d6cd661072d
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+description: Dowiedz się, jak usługa Microsoft Purview Records Management obsługuje elementy o wysokiej wartości dla wymagań dotyczących prowadzenia dokumentacji biznesowej, prawnej lub regulacyjnej.
+ms.openlocfilehash: dd554b4369a1f721d306bc301519ce3ef59e4569
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755684"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998535"
 ---
-# <a name="learn-about-records-management-in-microsoft-365"></a>Informacje na temat zarządzania rekordami w Microsoft 365
+# <a name="learn-about-records-management"></a>Dowiedz się więcej o zarządzaniu rekordami
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+> [!TIP]
+> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum wersji próbnych portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
 
-Organizacje wszystkich typów wymagają rozwiązania do zarządzania rekordami w celu zarządzania rekordami regulowymi, prawnie i biznesowymi o krytycznym znaczeniu w danych firmowych. Zarządzanie rekordami w firmie Microsoft 365 ułatwia organizacji zarządzanie jej zobowiązaniami prawnymi, umożliwia przedstawianie zgodności z przepisami oraz zwiększenie wydajności dzięki regularnemu zsyłaniu elementów, które nie są już wymagane do zachowania, które nie są już potrzebne lub nie są już wymagane ze względu na działalność biznesową.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Skorzystaj z następujących funkcji w celu obsługi swojego rozwiązania do zarządzania rekordami w Microsoft 365:
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-- **Etykieta zawartości jako rekordu**. Tworzenie i konfigurowanie etykiet przechowywania w celu oznaczania zawartości [](#records) jako rekordu, który może być następnie stosowany przez użytkowników lub automatycznie stosowany przez identyfikowanie informacji poufnych, słów kluczowych lub typów zawartości.
+Organizacje wszystkich typów wymagają rozwiązania do zarządzania rekordami w celu zarządzania rekordami regulacyjnymi, prawnymi i biznesowymi w danych firmowych. Zarządzanie rekordami w usłudze Microsoft Purview pomaga organizacji zarządzać swoimi zobowiązaniami prawnymi, umożliwia demonstrowanie zgodności z przepisami i zwiększa wydajność przy regularnym rozporządzaniu elementami, które nie są już wymagane do przechowywania, nie mają już wartości lub nie są już wymagane do celów biznesowych.
 
-- **Migrowanie wymagań przechowywania i zarządzanie nimi za pomocą planu plików**. Plan przechowywania [plików](file-plan-manager.md) umożliwia zastosowanie istniejącego planu przechowywania w celu Microsoft 365 lub tworzenie nowego, który zapewnia ulepszone funkcje zarządzania.
+Skorzystaj z następujących możliwości, aby obsługiwać rozwiązanie do zarządzania rekordami dla usług i aplikacji Microsoft 365:
 
-- **Konfigurowanie ustawień przechowywania i usuwania za pomocą etykiet przechowywania**. Skonfiguruj [etykiety przechowywania](retention.md#retention-labels) z okresami przechowywania i akcjami na podstawie różnych czynników, które zawierają datę ostatniej modyfikacji lub utworzenia.
+- **Etykieta zawartości jako rekordu**. Utwórz i skonfiguruj etykiety przechowywania, aby oznaczyć zawartość jako [rekord](#records) , który może być następnie stosowany przez użytkowników lub automatycznie stosowany przez identyfikowanie informacji poufnych, słów kluczowych lub typów zawartości.
 
-- **Uruchamianie różnych okresów przechowywania w przypadku wystąpienia zdarzenia** z [przechowywaniem opartym na zdarzeniach](event-driven-retention.md).
+- **Migrowanie wymagań dotyczących przechowywania i zarządzanie nimi za pomocą planu plików**. Korzystając z [planu plików](file-plan-manager.md), możesz wprowadzić istniejący plan przechowywania, aby Microsoft 365, lub utworzyć nowy, aby zwiększyć możliwości zarządzania.
 
-- **Przejrzyj i sprawdź poprawność usuwania** [za pomocą recenzji usuwania](disposition.md#disposition-reviews) i [dowodu usunięcia rekordów](disposition.md#disposition-of-records).
+- **Skonfiguruj ustawienia przechowywania i usuwania przy użyciu etykiet przechowywania**. Skonfiguruj [etykiety przechowywania](retention.md#retention-labels) z okresami przechowywania i akcjami na podstawie różnych czynników, które obejmują datę ostatniej modyfikacji lub utworzenia.
 
-- **Eksportowanie informacji o wszystkich usuniętych elementach** z [opcją eksportu](disposition.md#filter-and-export-the-views).
+- **Rozpocznij różne okresy przechowywania, gdy wystąpi zdarzenie** z [przechowywaniem opartym na zdarzeniach](event-driven-retention.md).
 
-- **Ustaw określone uprawnienia dla** funkcji menedżera rekordów w organizacji, aby [mieć odpowiedni dostęp](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Przejrzyj i zweryfikuj dyspozycję** za pomocą [przeglądów dyspozycji](disposition.md#disposition-reviews) i weryfikacji [usunięcia rekordów](disposition.md#disposition-of-records).
 
-Za pomocą tych funkcji można włączyć harmonogramy i wymagania przechowywania swojej organizacji do rozwiązania do zarządzania rekordami, które zarządza przechowywaniem, deklaracjami rekordów i ich rozsyłaniem, aby obsługiwać pełny cykl życia zawartości.
+- **Wyeksportuj informacje o wszystkich usuniętych elementach** z [opcją eksportu](disposition.md#filter-and-export-the-views).
 
-Oprócz dokumentacji online przydatne może być pobranie materiałów z często zadawanymi pytaniami [](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) z seminarium w sieci Web dotyczącej zarządzania rekordami. Nagrywanie rzeczywistego seminarium w sieci Web nie jest już dostępne.
+- **Ustaw określone uprawnienia** dla funkcji menedżera rekordów w organizacji, aby [mieć odpowiedni dostęp](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+
+Korzystając z tych możliwości, możesz włączyć harmonogramy przechowywania i wymagania organizacji do rozwiązania do zarządzania rekordami, które zarządza przechowywaniem, deklaracją rekordów i dyspozycją, aby obsługiwać pełny cykl życia zawartości.
+
+Oprócz dokumentacji online przydatne może być pobranie [talii z często zadawanymi pytaniami](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) z seminarium internetowego zarządzania rekordami. Nagrywanie rzeczywistego seminarium internetowego nie jest już dostępne.
 
 ## <a name="records"></a>Rekordy
 
-Jeśli zawartość jest deklarowana jako rekord:
+Gdy zawartość jest zadeklarowana jako rekord:
 
-- Na elementach obowiązują ograniczenia dotyczące dozwolonych lub [zablokowanych akcji](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+- Ograniczenia są nakładane na elementy pod względem tego, jakie [akcje są dozwolone lub blokowane](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 - Rejestrowane są dodatkowe działania dotyczące elementu.
 
-- Po usunięciu elementów po zakończeniu okresu przechowywania masz dowód usunięcia tych elementów.
+- Masz dowód dyspozycji, gdy elementy zostaną usunięte po zakończeniu okresu przechowywania.
 
-Etykiet przechowywania [używa się do](retention.md#retention-labels) oznaczania zawartości jako **rekordu** lub **rekordu prawnego**. Różnice między tymi dwoma typami zostały wyjaśnione w następnej sekcji. Etykiety te można opublikować, aby użytkownicy i administratorzy mogą ręcznie zastosować je do zawartości, lub automatycznie zastosować te etykiety do zawartości, którą chcesz oznaczyć jako rekord lub rekord przepisów prawa.
+Etykiety przechowywania są używane do [oznaczania](retention.md#retention-labels) zawartości jako **rekordu** lub **rekordu regulacyjnego**. Różnica między tymi dwoma elementami została wyjaśniona w następnej sekcji. Możesz opublikować te etykiety, aby użytkownicy i administratorzy mogli ręcznie zastosować je do zawartości lub automatycznie zastosować te etykiety do zawartości, którą chcesz oznaczyć jako rekord lub rekord regulacyjny.
 
-Deklarowanie rekordów za pomocą etykiet przechowywania umożliwia wdrożenie jednej i spójnej strategii zarządzania rekordami w całym środowisku Microsoft 365 przechowywania.
+Za pomocą etykiet przechowywania do deklarowania rekordów można zaimplementować pojedynczą i spójną strategię zarządzania rekordami w środowisku Microsoft 365.
 
-### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Porównywanie ograniczeń dotyczących dozwolonych lub zablokowanych akcji
+### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Porównanie ograniczeń dotyczących dozwolonych lub zablokowanych akcji
 
-Skorzystaj z poniższej tabeli, aby określić, jakie ograniczenia są nakładane na zawartość w wyniku zastosowania standardowej etykiety przechowywania, a etykiet przechowywania, które oznaczają zawartość jako rekord lub rekord przepisów prawa.
+Poniższa tabela służy do identyfikowania ograniczeń dotyczących zawartości w wyniku zastosowania standardowej etykiety przechowywania i etykiet przechowywania, które oznaczają zawartość jako rekord lub rekord regulacyjny.
 
-Standardowa etykieta przechowywania zawiera ustawienia i akcje przechowywania, ale nie oznacza zawartości jako rekordu ani rekordu prawnego.
+Standardowa etykieta przechowywania ma ustawienia przechowywania i akcje, ale nie oznacza zawartości jako rekordu ani rekordu regulacyjnego.
 
 > [!NOTE]
-> W przypadku kompletności tabela zawiera kolumny zablokowanego i odblokowaowego rekordu, które mają zastosowanie SharePoint i OneDrive, ale nie Exchange. W celu zablokowania i odblokowania rekordu [](record-versioning.md) jest używane rejestrowanie wersji, które nie jest obsługiwane w przypadku Exchange elementów. Z tego względu Exchange elementów oznaczonych jako rekord zachowanie jest mapowane na kolumnę Rekord **—** zablokowana, a kolumna Rekord **—** odblokowana nie ma znaczenia.
+> Aby uzyskać kompletność, tabela zawiera kolumny dla zablokowanego i odblokowanego rekordu, który ma zastosowanie do SharePoint i OneDrive, ale nie Exchange. Możliwość blokowania i odblokowywania rekordu używa [przechowywania wersji rekordów](record-versioning.md), które nie są obsługiwane w przypadku elementów Exchange. Dlatego w przypadku wszystkich Exchange elementów oznaczonych jako rekord zachowanie jest mapowane na kolumnę **Rekord — zablokowany**, a **kolumna Rekord — odblokowana** nie ma znaczenia.
 
 
-|Akcja| Etykieta przechowywania |Nagrywanie — zablokowane| Nagrywanie — odblokowane| Rejestr przepisów prawa |
+|Akcja| Etykieta przechowywania |Rekord — zablokowany| Rekord — odblokowany| Dokumentacja regulacyjna |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|Edytowanie zawartości|Dozwolone | **Zablokowane** | Dozwolone | **Zablokowane**|
-|Edytowanie właściwości, w tym zmienianie nazwy|Dozwolone |Dozwolone <sup>1</sup> | Dozwolone | **Zablokowane**|
-|Usuń|Dozwolone <sup>2</sup> |**Zablokowane** |**Zablokowane**| **Zablokowane**|
-|Kopiuj|Dozwolone |Dozwolone | Dozwolone| Dozwolone|
-|Poruszanie się w obrębie <sup>kontenera 3</sup>|Dozwolone |Dozwolone | Dozwolone| Dozwolone|
-|Przechodzenie między kontenerami <sup>3</sup>|Dozwolone |Dozwolone, jeśli nigdy nie odblokowano | **Zablokowane** | **Zablokowane**|
+|Edytowanie zawartości|Dozwolone | **Zablokowany** | Dozwolone | **Zablokowany**|
+|Edytowanie właściwości, w tym zmienianie nazwy|Dozwolone |Dozwolone <sup>1</sup> | Dozwolone | **Zablokowany**|
+|Usuń|Dozwolone <sup>2</sup> |**Zablokowany** |**Zablokowany**| **Zablokowany**|
+|Kopii|Dozwolone |Dozwolone | Dozwolone| Dozwolone|
+|Przenoszenie w kontenerze <sup>3</sup>|Dozwolone |Dozwolone | Dozwolone| Dozwolone|
+|Przenoszenie kontenerów <sup>3</sup>|Dozwolone |Dozwolone, jeśli nigdy nie odblokowano | **Zablokowany** | **Zablokowany**|
 |Otwieranie/odczytywanie|Dozwolone |Dozwolone | Dozwolone| Dozwolone|
-|Zmień etykietę|Dozwolone |Dozwolone — tylko administrator kontenerów | **Zablokowane**| **Zablokowane**
-|Usuń etykietę|Dozwolone |Dozwolone — tylko administrator kontenerów | **Zablokowane**| **Zablokowane**
+|Zmienianie etykiety|Dozwolone |Dozwolone — tylko administrator kontenera | **Zablokowany**| **Zablokowany**
+|Usuń etykietę|Dozwolone |Dozwolone — tylko administrator kontenera | **Zablokowany**| **Zablokowany**
 
 Przypisy dolne:
 
-<sup>1</sup> Edytowanie właściwości zablokowanego rekordu jest domyślnie dozwolone, ale może zostać zablokowane przez ustawienie dzierżawy w ustawieniach zarządzania [rekordami](https://compliance.microsoft.com/) w programie Centrum zgodności platformy Microsoft 365  > **RecordsUmianie** >  >  >  zarządzaniaWłaściwość etykietOchniż edytowanie właściwości rekordu **.**
+<sup>1</sup> Edytowanie właściwości zablokowanego rekordu jest domyślnie dozwolone, ale może zostać zablokowane przez ustawienie dzierżawy w [portalu](https://compliance.microsoft.com/) >  zgodności usługi Microsoft **PurviewZarządzanie rekordami** Ustawienia  > **zarządzaniaRekordy** >  **Etykiety** >  **ponownego rejestrowaniaUzwalaj na edytowanie właściwości rekordu**.
 
-<sup>2</sup> Usuwanie elementów oznaczonych etykietami w programach SharePoint i OneDrive można zablokować jako ustawienie dzierżawy w ustawieniach zarządzania [rekordami w](https://compliance.microsoft.com/) programie Centrum zgodności platformy Microsoft 365  > **RecordsUmianie** >  >  >  zarządzaniaRekordamiNalepki ponownego wczytania **elementów**.
+<sup>2</sup> Usuwanie elementów oznaczonych etykietami w SharePoint i OneDrive można zablokować jako ustawienie dzierżawy w [portalu](https://compliance.microsoft.com/) >  zgodności usługi Microsoft PurviewZarządzanie  > **rekordamiUstawienia** >  **zarządzaniarekordami** **Etykiety** >  **ponownego wdrażaniaUsuń elementów**.
 
-Po zastosowaniu etykiety przechowywania do elementu listy, który ma załącznik dokumentu, ten dokument nie odziedziczy ustawień przechowywania i można go usunąć z tego elementu listy. Natomiast jeśli ten element listy został zadeklarowany jako rekord z etykietą przechowywania, załącznik dokumentu odziedziczy ustawienia przechowywania i nie będzie można go usunąć.
+Po zastosowaniu etykiety przechowywania do elementu listy zawierającego załącznik dokumentu ten dokument nie dziedziczy ustawień przechowywania i można go usunąć z elementu listy. Dla porównania, jeśli ten element listy został zadeklarowany jako rekord z etykietą przechowywania, załącznik dokumentu dziedziczy ustawienia przechowywania i nie można go usunąć.
 
-<sup>3 Kontenery</sup> obejmują SharePoint biblioteki dokumentów, OneDrive konta i Exchange pocztowe.
+<sup>3</sup> Kontenery obejmują biblioteki dokumentów SharePoint, konta OneDrive i skrzynki pocztowe Exchange.
 
 > [!IMPORTANT]
-> Najważniejszą różnicą w rekordzie regulacyjną jest to, że po jego zastosowaniu do zawartości nikt, nawet administrator globalny, nie może usunąć etykiety.
+> Najważniejszą różnicą dla rekordu regulacyjnego jest to, że po zastosowaniu go do zawartości nikt, nawet administrator globalny, nie może usunąć etykiety.
 >
-> Etykiety przechowywania skonfigurowane dla rekordów prawnych mają również następujące ograniczenia administracyjne:
+> Etykiety przechowywania skonfigurowane dla rekordów regulacyjnych mają również następujące ograniczenia administratora:
 >
-> - Po zapisaniu etykiety nie można skrócić okresu przechowywania, tylko wydłużyć ten okres.
-> - Te etykiety nie są obsługiwane przez zasady automatycznego oznaczania etykiet i należy je stosować przy użyciu zasad [przechowywania etykiet](create-apply-retention-labels.md).
+> - Okres przechowywania nie może być krótszy po zapisaniu etykiety, tylko przedłużony.
+> - Etykiety te nie są obsługiwane przez zasady automatycznego etykietowania i muszą być stosowane przy użyciu [zasad etykiet przechowywania](create-apply-retention-labels.md).
 >
-> Ponadto do dokumentu, który jest wyewidencjonowany w dokumencie wyewidencjonowany w programie SharePoint, nie można stosować etykiet SharePoint.
+> Ponadto nie można zastosować etykiety regulacyjnej do dokumentu wyewidencjonowanego w SharePoint.
 >
-> Ze względu na ograniczenia i nieodwracalne działania należy przed wybraniem tej opcji na potrzeby etykiet przechowywania upewnić się, że konieczne jest korzystanie z rekordów prawnych. Aby zapobiec przypadkowej konfiguracji, ta opcja jest domyślnie wyłączona, ale musi zostać włączona przy użyciu programu PowerShell. Instrukcje znajdują się w [tece Deklarowanie rekordów przy użyciu etykiet przechowywania](declare-records.md).
+> Ze względu na ograniczenia i nieodwracalne akcje przed wybraniem tej opcji dla etykiet przechowywania upewnij się, że naprawdę musisz używać rekordów regulacyjnych. Aby zapobiec przypadkowej konfiguracji, ta opcja nie jest domyślnie dostępna, ale najpierw musi być włączona przy użyciu programu PowerShell. Instrukcje są zawarte w [temacie Deklarowanie rekordów przy użyciu etykiet przechowywania](declare-records.md).
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Zobacz [Wprowadzenie do zarządzania rekordami](get-started-with-records-management.md). Ten artykuł zawiera informacje o subskrypcjach, uprawnieniach i linkach do wskazówek dotyczących szczegółowej konfiguracji scenariuszy zarządzania rekordami.
+Zobacz [Wprowadzenie z zarządzaniem rekordami](get-started-with-records-management.md). Ten artykuł zawiera informacje o subskrypcjach, uprawnieniach i łączach do kompleksowych wskazówek dotyczących konfiguracji scenariuszy zarządzania rekordami.

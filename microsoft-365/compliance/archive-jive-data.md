@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych Jive z usługi Veritas w Microsoft 365. Ten łącznik umożliwia archiwizowanie danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania do zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: dea7f1aaaf11c222baa3a5e5815846477b39cbfc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4fd5d7bbecd6fc6b0bfeeb90c0102ef30b67bdfe
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938604"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000493"
 ---
 # <a name="set-up-a-connector-to-archive-jive-data"></a>Konfigurowanie łącznika do archiwizowania danych Jive
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy współpracy do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Jive](https://globanet.com/jive/) skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie), a następnie importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość, taką jak wiadomości e-mail, czaty i załączniki z konta Jive użytkownika, na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 

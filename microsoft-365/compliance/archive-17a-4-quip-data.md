@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak zaimportować i zarchiwizować dane quip w Microsoft 365 za pomocą łącznika 17a-4 Quip DataParser.
-ms.openlocfilehash: 7379c092b6d00c023198636fd022ef65e5b17724
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 233f4eba5a93c4176bd2ed11de965030f66d63ca
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947346"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999437"
 ---
 # <a name="set-up-a-connector-to-archive-quip-data"></a>Konfigurowanie łącznika do archiwizowania danych quip
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj narzędzia [Quip DataParser](https://www.17a-4.com/quip-dataparser/) z 17a-4 LLC, aby zaimportować i zarchiwizować dane z quip do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Moduł DataParser zawiera łącznik Quip skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do Microsoft 365. Łącznik Quip DataParser konwertuje dane quip na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 

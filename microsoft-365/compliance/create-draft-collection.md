@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Kolekcja robocza to wyszukiwanie zbierania elektronicznych materiałów dowodowych źródeł danych bez nadzoru w przypadku zbierania elektronicznych materiałów dowodowych (Premium), które zwraca oszacowanie wyszukiwania zgodne z zapytaniem wyszukiwania kolekcji. Możesz przejrzeć statystyki wyszukiwania, wyświetlić podgląd próbkowania elementów oraz poprawić i ponownie uruchomić kolekcję przed zatwierdzeniem wyników w zestawie przeglądów.
-ms.openlocfilehash: 248e95f928c818dfb4eb5b864c2d34304893281c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2178e836809a24edec6d3d184ef8b699bec87bb5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934886"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997081"
 ---
 # <a name="create-a-draft-collection-in-ediscovery-premium"></a>Tworzenie kolekcji roboczej w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po zidentyfikowaniu opiekunów i wszelkich źródeł danych niebędących opiekunami w tej sprawie możesz zidentyfikować i zlokalizować odpowiedni zestaw dokumentów. Można to zrobić za pomocą narzędzia Kolekcje do wyszukiwania źródeł danych pod kątem odpowiedniej zawartości. Można to zrobić, tworząc kolekcję, która wyszukuje określone źródła danych pod kątem zawartości zgodnej z kryteriami wyszukiwania. Możesz utworzyć *kolekcję roboczą*, która jest oszacowaniem znalezionych elementów, lub możesz utworzyć kolekcję, która automatycznie dodaje elementy do zestawu przeglądów. Podczas tworzenia kolekcji roboczej można wyświetlać informacje o szacowanych wynikach dopasowanych do zapytania wyszukiwania, takie jak całkowita liczba i rozmiar znalezionych elementów, różne źródła danych, w których zostały znalezione, oraz statystyki dotyczące zapytania wyszukiwania. Możesz również wyświetlić podgląd przykładu elementów, które zostały zwrócone przez kolekcję. Korzystając z tych statystyk, możesz zmienić zapytanie wyszukiwania i ponownie uruchomić kolekcję roboczą, aby zawęzić wyniki. Gdy wyniki kolekcji będą zadowalające, możesz zatwierdzić kolekcję w zestawie przeglądów. Po zatwierdzeniu kolekcji roboczej elementy zwracane przez kolekcję są dodawane do zestawu przeglądów do przeglądania, analizy i eksportowania.
 

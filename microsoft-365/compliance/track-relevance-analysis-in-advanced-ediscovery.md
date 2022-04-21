@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Dowiedz się, jak wyświetlać i interpretować stan trenowania istotności i wyniki dotyczące problemów ze sprawami zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: 53f1fa12849651cd01172a320eaa014614634e92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 72e12fe54b30c3d766f7a198e5e3417ff9d48a22
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935527"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000955"
 ---
 # <a name="track-relevance-analysis-in-ediscovery-premium"></a>Śledzenie analizy istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 W usłudze Microsoft Purview eDiscovery (Premium) na karcie Śledzenie istotności jest wyświetlana obliczona ważność trenowania istotności wykonywanego na karcie Tag i wskazuje następny krok do wykonania w procesie trenowania iteracyjnego w obszarze Istotność. 
   

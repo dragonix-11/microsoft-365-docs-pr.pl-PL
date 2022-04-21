@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: W Microsoft 365 można utworzyć blokadę skojarzoną ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa), aby zachować zawartość istotną dla dochodzenia lub sprawy prawnej.
-ms.openlocfilehash: 4448c9b8a55466c0cf626deff6e69acd247a5814
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 87a75923ccc270e7b9802ae5d366dd2930a84d82
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938274"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001241"
 ---
 # <a name="create-an-ediscovery-hold"></a>Tworzenie blokady zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Możesz użyć przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa), aby utworzyć blokady w celu zachowania zawartości, która może być istotna dla danego przypadku. Możesz wstrzymać skrzynki pocztowe Exchange i OneDrive dla Firm konta osób, które badasz w tej sprawie. Możesz również wstrzymać skrzynki pocztowe i witryny skojarzone z Microsoft Teams, grupami Office 365 i grupami Yammer. Po wstrzymaniu lokalizacji zawartości zawartość jest zachowywana do momentu usunięcia lokalizacji zawartości z blokady lub do momentu usunięcia blokady.
 

@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratorzy w chmurze dla instytucji rządowych USA mogą skonfigurować łącznik danych w celu importowania danych pracowników z systemu zasobów ludzkich (HR) organizacji w celu Microsoft 365. Dzięki temu dane kadrowe w zasadach zarządzania ryzykiem wewnętrznym ułatwiają wykrywanie działań określonych użytkowników, które mogą stanowić wewnętrzne zagrożenie dla organizacji.
-ms.openlocfilehash: 76de79cd856c9f114d219ffefbc45cf5e7692d40
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3f3873830caea109cf09987a21791bb299a4bdaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934758"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000031"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Konfigurowanie łącznika w celu importowania danych kadr w us government
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Łącznik danych można skonfigurować w portalu zgodności usługi Microsoft Purview w celu zaimportowania danych zasobów ludzkich (HR) do organizacji instytucji rządowych USA. Dane związane z kadrą obejmują datę złożenia rezygnacji przez pracownika oraz datę ostatniego dnia pracownika. Te dane kadrowe mogą być następnie używane przez rozwiązania do ochrony informacji firmy Microsoft, takie jak [rozwiązanie do zarządzania ryzykiem wewnętrznym](insider-risk-management.md), aby chronić organizację przed złośliwymi działaniami lub kradzieżą danych w organizacji. Konfigurowanie łącznika hr składa się z tworzenia aplikacji w Azure Active Directory, która jest używana do uwierzytelniania za pomocą łącznika, tworzenia plików mapowania CSV zawierających dane kadr, tworzenia łącznika danych w centrum zgodności, a następnie uruchamiania skryptu (zgodnie z harmonogramem), który pozyskuje dane kadr w pliku CSV do chmury firmy Microsoft. Następnie łącznik danych jest używany przez narzędzie do zarządzania ryzykiem wewnętrznym w celu uzyskania dostępu do danych kadr zaimportowanych do organizacji Microsoft 365 us government.
 

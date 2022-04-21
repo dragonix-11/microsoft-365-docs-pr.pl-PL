@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik Symphony DataParser 17a-4 i użyć go do importowania i archiwizowania danych Symphony w Microsoft 365.
-ms.openlocfilehash: 33c3bdcd3fcde1d098a2baad0dadd86685e8ee6f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f783e5f9f405223493e43e7b9966be50c2e58f10
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938889"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996619"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-symphony"></a>Konfigurowanie łącznika do archiwizowania danych z programu Symphony
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj [symphony DataParser](https://www.17a-4.com/Symphony-dataparser/) z 17a-4 LLC, aby zaimportować i zarchiwizować dane komunikacji Symphony do skrzynek pocztowych użytkowników w organizacji Microsoft 365. DataParser zawiera łącznik Symphony, który jest skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do Microsoft 365. Łącznik Symphony DataParser konwertuje dane Symphony na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 

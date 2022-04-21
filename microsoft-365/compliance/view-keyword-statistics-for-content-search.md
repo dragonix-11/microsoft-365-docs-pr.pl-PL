@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak za pomocą funkcji statystyk wyszukiwania wyświetlać statystyki dotyczące wyszukiwań zawartości i wyszukiwań skojarzonych z przypadkiem zbierania elektronicznych materiałów dowodowych (Standardowa) w portalu zgodności usługi Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e057a6e4997240dbaa4b9b7975274c5f3eab7589
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5d35616823988562b3b075e7a513c8a98a4e3281
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947104"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000823"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Wyświetlanie statystyk wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po utworzeniu i uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego z przypadkiem zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) możesz wyświetlić statystyki dotyczące szacowanych wyników wyszukiwania. Obejmuje to podsumowanie wyników wyszukiwania (podobne do podsumowania szacowanych wyników wyszukiwania wyświetlanych na stronie wysuwanego wyszukiwania), statystyki zapytań, takie jak liczba lokalizacji zawartości z elementami pasującymi do zapytania wyszukiwania oraz tożsamość lokalizacji zawartości, które mają najbardziej pasujące elementy.
   

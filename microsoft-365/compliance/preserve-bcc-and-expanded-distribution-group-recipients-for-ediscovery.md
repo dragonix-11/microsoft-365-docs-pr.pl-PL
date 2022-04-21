@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: zasady przechowywania In-Place Hold, Litigation Hold i Microsoft 365 umożliwiają zachowanie zawartości skrzynki pocztowej w celu spełnienia wymagań dotyczących zgodności z przepisami i zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: a088407277f7ebced3aa69ee9ff807913f9b0c85
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c3c7b7be98959011473eeafc85f40b19be82fdc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942122"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998509"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Zachowywanie adresatów Bcc i rozszerzonych grup dystrybucyjnych na potrzeby zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Spory sądowe, blokady zbierania elektronicznych materiałów dowodowych i [zasady przechowywania Microsoft 365](./retention.md) (utworzone w portalu zgodności usługi Microsoft Purview) umożliwiają zachowanie zawartości skrzynki pocztowej w celu spełnienia wymagań dotyczących zgodności z przepisami i zbierania elektronicznych materiałów dowodowych. Informacje o adresatach bezpośrednio adresowanych w polach Do i DW wiadomości są domyślnie uwzględniane we wszystkich komunikatach. Organizacja może jednak wymagać możliwości wyszukiwania i odtwarzania szczegółów dotyczących wszystkich adresatów wiadomości. Obejmuje to:
   

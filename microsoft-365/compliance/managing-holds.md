@@ -21,14 +21,16 @@ description: Dowiedz się, jak umieszczać blokady na opiekunach i ich źródła
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 16a4932993a652d8d7d71be78fd23a238fc90759
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6ec8e31fddba430a7a148eea5c8b07eb35872641
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939658"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996773"
 ---
 # <a name="manage-holds-in-ediscovery-premium"></a>Zarządzanie blokadami zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Możesz użyć sprawy zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), aby utworzyć blokady w celu zachowania zawartości, która może być istotna dla Twojej sprawy. Korzystając z funkcji archiwizacji zbierania elektronicznych materiałów dowodowych (Premium), można umieścić blokady na opiekunach i ich źródłach danych. Ponadto możesz wstrzymać skrzynki pocztowe i witryny OneDrive dla Firm. Możesz również umieścić blokadę w skrzynce pocztowej grupy, SharePoint lokacji i witrynie OneDrive dla Firm dla grupy Microsoft 365. Podobnie możesz umieścić blokadę w skrzynce pocztowej i witrynie skojarzonej z Microsoft Teams. W przypadku wstrzymania lokalizacji zawartości zawartość jest przechowywana do momentu zwolnienia opiekuna, usunięcia określonej lokalizacji danych lub całkowitego usunięcia zasad blokady.
 

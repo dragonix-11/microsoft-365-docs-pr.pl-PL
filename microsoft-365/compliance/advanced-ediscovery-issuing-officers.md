@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: W obszarze eDiscovery (Premium) można dodać pracowników wystawiających certyfikaty w całej organizacji, aby w dowolnym przypadku w organizacji można było dodać ich do dowolnej komunikacji dotyczącej opieki.
-ms.openlocfilehash: 076e6ea8b8dbef18c6c34221937a039fc43fad75
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f82d5359a90e21203c2ff882ceb831cc1630e008
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943002"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000559"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>Zarządzanie urzędnikami wystawiającym certyfikaty w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Gdy ty lub inne osoby utworzysz powiadomienie o blokadzie lub inny typ komunikacji, który jest wysyłany do użytkownika, który jest opiekunem w przypadku, musisz określić urzędnika wystawiającego. Powiadomienie jest wysyłane do opiekuna w imieniu określonego urzędnika wystawiającego. Na przykład paralegal w organizacji może być odpowiedzialny za tworzenie i wysyłanie powiadomień blokady do opiekunów w przypadku. W tym scenariuszu paralegal może określić adwokata w organizacji jako wystawiającego. KtoTo można określić jako urzędnika wystawiającego? Istnieją dwa typy użytkowników, którzy mogą zostać wybrani jako inspektor wystawiający do komunikacji z opiekunem:
 

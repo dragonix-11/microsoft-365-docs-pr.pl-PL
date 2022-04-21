@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 37c0ae081223f321c87cafa18d0acbbbc6adb511
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3335e437a659eab984943adda31abdb344908c1c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942144"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997653"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Trenowanie modelu kodowania predykcyjnego (wersja zapoznawcza)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po utworzeniu modelu kodowania predykcyjnego w usłudze Microsoft Purview eDiscovery (Premium) następnym krokiem jest przeprowadzenie pierwszej rundy trenowania w celu wytrenowania modelu na temat istotnej i nieistotnej zawartości w zestawie przeglądów. Po zakończeniu pierwszej rundy trenowania możesz wykonać kolejne rundy szkoleniowe, aby zwiększyć zdolność modelu do przewidywania odpowiedniej i nieistotnej zawartości.
 

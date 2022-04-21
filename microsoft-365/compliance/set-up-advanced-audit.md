@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano sposób konfigurowania inspekcji (Premium), aby można było przeprowadzać badania kryminalistyczne w przypadku naruszenia zabezpieczeń kont użytkowników lub badania innych zdarzeń związanych z zabezpieczeniami.
-ms.openlocfilehash: 9e758ce6a830569b007ee024e17abdddbce01f13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6f4f9953c88b1d994d4f033629cc89a6529fb9de
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945852"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998843"
 ---
 # <a name="set-up-microsoft-purview-audit-premium"></a>Konfigurowanie inspekcji usługi Microsoft Purview (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jeśli Twoja organizacja ma subskrypcję i licencje użytkowników końcowych, które obsługują inspekcję (Premium), wykonaj następujące kroki, aby skonfigurować i korzystać z dodatkowych możliwości w obszarze Inspekcja (Premium).
 

@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Omówienie przetwarzania różnych form danych w usłudze eDiscovery (Premium).
-ms.openlocfilehash: 043e1b2b023fdd4e379116109069674515153524
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e55d4c3554015adf1135086f23db6566d4bf132d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936318"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998975"
 ---
 # <a name="work-with-processing-errors-in-ediscovery-premium"></a>Praca z błędami przetwarzania w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 *Przetwarzanie* to proces identyfikacji plików, rozszerzania osadzonych dokumentów i załączników, wyodrębniania tekstu i optycznego rozpoznawania znaków (OCR) plików obrazów oraz późniejszego indeksowania tej zawartości.  
 

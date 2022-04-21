@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: cf6a74bbde2e32ae047f97a7198b7f263e91b048
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 75c3df32bb3103ad818524da0972567d3fd11cc8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862703"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000691"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>wymagania Microsoft Defender dla Firm
 
@@ -53,7 +53,7 @@ W poniższej tabeli wymieniono podstawowe wymagania dotyczące konfigurowania i 
 | Konta użytkowników | Konta użytkowników są tworzone w Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/><br/>Microsoft Defender dla Firm licencje są przypisywane w Centrum administracyjne platformy Microsoft 365<br/><br/>Aby uzyskać pomoc dotyczącą tego zadania, zobacz [Dodawanie użytkowników i przypisywanie licencji](mdb-add-users.md). |
 | Uprawnienia  | Aby zarejestrować się w Microsoft Defender dla Firm, musisz być administratorem globalnym.<br/><br/>Aby uzyskać dostęp do portalu Microsoft 365 Defender, użytkownicy muszą mieć przypisaną jedną z następujących [ról w usłudze Azure AD](mdb-roles-permissions.md): <br/>- Czytelnik zabezpieczeń<br/>— Administrator zabezpieczeń<br/>— Administrator globalny<br/><br/>Aby dowiedzieć się więcej, zobacz [Role i uprawnienia w Microsoft Defender dla Firm](mdb-roles-permissions.md). |
 | Wymagania przeglądarki | Microsoft Edge lub Google Chrome |
-| System operacyjny | Aby zarządzać urządzeniami w Microsoft Defender dla Firm, na urządzeniach musi działać jeden z następujących systemów operacyjnych: <br/>— Windows 10 Business lub nowsze <br/>— Windows 10 Professional lub nowsze <br/>— Windows 10 Enterprise lub nowsze <br/><br/>Upewnij się, że zainstalowano [program KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) . <br/><br/>Jeśli już zarządzasz urządzeniami w Microsoft Intune (lub Microsoft Endpoint Manager), możesz dołączyć te urządzenia do usługi Defender for Business.<br/><br/>Możliwość dołączania punktów końcowych z systemem Windows Server 2012 R2 i nowszym jest obecnie dostępna w wersji zapoznawczej. |
+| System operacyjny | Aby zarządzać urządzeniami w Microsoft Defender dla Firm, na urządzeniach musi działać jeden z następujących systemów operacyjnych: <br/>— Windows 10 Business lub nowsze <br/>— Windows 10 Professional lub nowsze <br/>— Windows 10 Enterprise lub nowsze <br/>— system macOS (obsługiwane są trzy najpopularniejsze wersje)<br/><br/>Upewnij się, że zainstalowano [program KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) . <br/><br/>Jeśli już zarządzasz urządzeniami w Microsoft Intune (lub Microsoft Endpoint Manager), możesz dołączyć te urządzenia do usługi Defender for Business. |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) służy do zarządzania uprawnieniami użytkowników i grupami urządzeń. Usługa Azure AD jest uwzględniona w subskrypcji usługi Defender for Business. 

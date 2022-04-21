@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak używać funkcji zbierania elektronicznych materiałów dowodowych (Premium) do wysyłania powiadomień o wstrzymaniu ze względów prawnych za pośrednictwem poczty e-mail oraz monitorowania stanu obowiązków.
-ms.openlocfilehash: 4be0781a273f842c043276a19688f36b96cfdb28
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: db13ed4a148238dbb677ece55999fd3fb907a1a1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947412"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999591"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Potwierdź powiadomienie o archiwum
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W odpowiedzi na wniosek regulacyjny lub dochodzenie może być wymagane poinformowanie opiekunów o obowiązku zachowania elektronicznie przechowywanych informacji (ESI) oraz wszelkich materiałów, które mogą być istotne dla aktywnej lub rychłej sprawy prawnej. Po wysłaniu zespoły prawne muszą wiedzieć, że każdy opiekun otrzymał, przeczytał, zrozumiał i zgodził się postępować zgodnie z podanymi instrukcjami.
 

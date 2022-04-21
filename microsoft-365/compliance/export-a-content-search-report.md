@@ -22,14 +22,16 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Zamiast eksportować rzeczywiste wyniki wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, możesz wyeksportować raport wyników wyszukiwania. Raport zawiera podsumowanie wyników wyszukiwania i dokument ze szczegółowymi informacjami o każdym wyeksportowanym elemencie.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ac46944ab454271358168c95a7df94d606e0ec5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f8fc881ed57831aadb035d0ec1168b4f334ec085
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944838"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001131"
 ---
 # <a name="export-a-content-search-report"></a>Eksportowanie raportu wyszukiwania zawartości
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Zamiast eksportować pełny zestaw wyników wyszukiwania z wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview (lub z wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa), możesz wyeksportować te same raporty, które są generowane podczas eksportowania rzeczywistych wyników wyszukiwania.
   

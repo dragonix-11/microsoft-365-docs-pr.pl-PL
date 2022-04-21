@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Zadania zbierania elektronicznych materiałów dowodowych (Premium) ułatwiają śledzenie stanu długotrwałych procesów związanych z wykonywaniem różnych zadań zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: 2c82b79458d59dd1176857cf37943c7676ad38a2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ab1b6cf45805a0d67492a5d386670f139b24f5e1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935615"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998506"
 ---
 # <a name="manage-jobs-in-ediscovery-premium"></a>Zarządzanie zadaniami w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Oto lista zadań (które są zazwyczaj długotrwałymi procesami), które są śledzone na karcie **Zadania** sprawy w usłudze Microsoft Purview eDiscovery (Premium). Te zadania są wyzwalane przez akcje użytkownika podczas korzystania z przypadków i zarządzania nimi.
 

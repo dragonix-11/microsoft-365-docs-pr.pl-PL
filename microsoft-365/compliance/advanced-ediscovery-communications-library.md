@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Szablony komunikacji opiekuna (takie jak szablon powiadomienia o blokadzie) można dodawać w obszarze zbierania elektronicznych materiałów dowodowych (Premium), aby można było ich używać w dowolnym przypadku w organizacji.
-ms.openlocfilehash: be8311a9687eb4edb9cc44e15264808a2a05a69a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9ac944a3d845a770e35a84adcdc2f1f1dbefd172
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945158"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000603"
 ---
 # <a name="manage-custodian-communications-templates-in-ediscovery-premium"></a>Zarządzanie szablonami komunikacji opiekuna w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Gdy ty lub inni użytkownicy tworzycie powiadomienie o blokadzie lub inne rodzaje komunikacji z opiekunami, trzeba było utworzyć dokument komunikacji od podstaw przy użyciu edytora komunikacji na karcie **Komunikacja** w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Teraz opublikowaliśmy nową funkcję, która umożliwia tworzenie szablonów komunikacji, których można użyć do tworzenia komunikacji w dowolnym przypadku w organizacji. Po utworzeniu szablonów komunikacji są one dostępne do użycia w przypadku. Oznacza to, że paralegals lub innych użytkowników, którzy tworzą komunikację opiekuna nie muszą zaczynać od podstaw, aby utworzyć powiadomienie. Zamiast tego mogą wybrać szablon, aby utworzyć powiadomienie wysyłane do opiekuna.
 

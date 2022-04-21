@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano sposób tworzenia przypadków zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) i zarządzania nimi. Pierwszym krokiem jest utworzenie sprawy i rozpoczęcie korzystania z funkcji i funkcji zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: fb14c5ce7f1ffca6216e8d592c5cc1c7ff2802ce
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 294a07c2f43559943482c3e17c98289f41dff7bc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946424"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999283"
 ---
 # <a name="create-and-manage-an-ediscovery-premium-case"></a>Tworzenie sprawy zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nią
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po skonfigurowaniu usługi Microsoft Purview eDiscovery (Premium) i [przypisaniu uprawnień do menedżerów zbierania elektronicznych materiałów](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) dowodowych w organizacji, którzy będą zarządzać sprawami, następnym krokiem jest utworzenie sprawy i zarządzanie nią.
 

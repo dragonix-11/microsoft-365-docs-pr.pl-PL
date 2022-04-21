@@ -21,14 +21,16 @@ description: Użyj portalu zgodności usługi Microsoft Purview, aby przeszukać
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: f35bfbbe299495e912d018bd00615964f883031e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c0f26bbda2ba28b98fc80b80ce4a520d9fb39c3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936274"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998909"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Przeszukiwanie dziennika inspekcji w centrum zgodności
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
 

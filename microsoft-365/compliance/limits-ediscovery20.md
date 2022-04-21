@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o limitach przypadków, limitach indeksowania i limitach wyszukiwania dla rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365.
-ms.openlocfilehash: 599f57ab863ab6d82140fa473624916bd2f26ac1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 07977b80ba0ce55c6d0e6b179955cfa959eaa5c8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942518"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999768"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limity w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule opisano limity w rozwiązaniu Microsoft Purview eDiscovery (Premium) w Microsoft 365.
 

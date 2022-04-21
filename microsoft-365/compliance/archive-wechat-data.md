@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Skonfiguruj i użyj łącznika w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane WeChat w Microsoft 365.
-ms.openlocfilehash: e504c9fd3440e0ccc232e91838ef52577b1552be
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8d87cbaf25396dc9af1497737450126e90b54a7a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942826"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997223"
 ---
 # <a name="set-up-a-connector-to-archive-wechat-data"></a>Konfigurowanie łącznika do archiwizowania danych WeChat
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika TeleMessage w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować wywołania WeChat i WeCom, czaty, załączniki, pliki i odwołane komunikaty. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z kontem TeleMessage organizacji i importuje komunikację mobilną pracowników przy użyciu archiwum TeleMessage WeChat do skrzynek pocztowych w Microsoft 365.
 

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Tagi inteligentne umożliwiają stosowanie możliwości uczenia maszynowego podczas przeglądania zawartości w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Użyj grup tagów inteligentnych, aby wyświetlić wyniki modeli wykrywania uczenia maszynowego, takich jak model uprawnień adwokackiego klienta.
-ms.openlocfilehash: 9fd4a53df00bcb096a885ed311e4fb4ed365725e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1adea2404192b9e715ad021f70ba07f7e64a89d5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934626"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999745"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>Konfigurowanie tagów inteligentnych w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Funkcje uczenia maszynowego (ML) w usłudze Microsoft Purview eDiscovery (Premium) mogą pomóc w usprawnieniu procesu podejmowania decyzji podczas przeglądania dokumentów przypadków w zestawie przeglądów. Tagi inteligentne to sposób na zapewnienie możliwości ML do miejsca, w którym są rejestrowane decyzje: podczas tagowania dokumentów podczas przeglądania. Podczas tworzenia grupy tagów inteligentnych decyzje będące wynikiem modelu ML skojarzonego z grupą tagów inteligentnych są wyświetlane w wierszu z tagami w grupie tagów. Pomaga to wyświetlić informacje o wynikach ML w wierszu podczas przeglądania określonych dokumentów.
 

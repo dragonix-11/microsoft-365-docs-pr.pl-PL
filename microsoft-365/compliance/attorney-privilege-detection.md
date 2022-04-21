@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Użyj modelu wykrywania uprawnień klienta-adwokata, aby użyć opartego na uczeniu maszynowym wykrywania zawartości uprzywilejowanej podczas przeglądania zawartości w przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
-ms.openlocfilehash: ce5cabad4a5487f6e18c1054f5c4d143bac4325e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 477b741cf617179ffd9eb1a4c38230faf5a0fce0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947170"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997301"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>Konfigurowanie wykrywania uprawnień klienta-adwokata w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Głównym i kosztownym aspektem fazy przeglądu każdego procesu zbierania elektronicznych materiałów dowodowych jest przeglądanie dokumentów pod kątem zawartości uprzywilejowanej. Usługa Microsoft Purview eDiscovery (Premium) zapewnia oparte na uczeniu maszynowym wykrywanie uprzywilejowanej zawartości w celu zwiększenia wydajności tego procesu. Ta funkcja jest nazywana *wykrywaniem uprawnień klienta-adwokata*.
 

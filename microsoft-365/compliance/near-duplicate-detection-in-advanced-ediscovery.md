@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Wykrywanie zbliżonych do duplikatów umożliwia grupowanie tekstowo podobnych dokumentów podczas analizowania danych przypadków w usłudze eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f7976f5fdf023c30f7f96264ecc2b744656e9091
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e22444845005f4cf155340e13856722976715d91
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949416"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997609"
 ---
 # <a name="near-duplicate-detection-in-ediscovery-premium"></a>Wykrywanie niemal duplikatów w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Rozważmy zestaw dokumentów do przejrzenia, w którym podzestaw jest oparty na tym samym szablonie i ma w większości ten sam język standardowy, z kilkoma różnicami tu i tam. Jeśli recenzent może zidentyfikować ten podzestaw, dokładnie przejrzyj jeden z nich i przejrzyj różnice w pozostałych, nie przegapiłby żadnych unikatowych informacji, poświęcając tylko ułamek czasu, który zajęłoby im przeczytanie wszystkich dokumentów. Niemal zduplikowane grupy wykrywania razem zbliżą się tekstowo do dokumentów, aby ułatwić bardziej wydajny proces przeglądu.
 

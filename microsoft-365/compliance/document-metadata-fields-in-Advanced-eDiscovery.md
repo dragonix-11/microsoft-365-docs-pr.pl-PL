@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: W tym artykule zdefiniowano pola metadanych dla dokumentów w zestawie przeglądów w przypadku w usłudze Microsoft Purview eDiscovery (Premium) w Microsoft 365.
-ms.openlocfilehash: bd52107a2cbefedcf30c47e897ff12e5ce0c8bd7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4e1efbf48cf4313682095b69eb97f52d00b9ceaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938098"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001109"
 ---
 # <a name="document-metadata-fields-in-ediscovery-premium"></a>Pola metadanych dokumentu w dziedzinie zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W poniższej tabeli wymieniono pola metadanych dla dokumentów w zestawie przeglądów w przypadku w usłudze Microsoft Purview eDiscovery (Premium). Tabela zawiera następujące informacje:
 

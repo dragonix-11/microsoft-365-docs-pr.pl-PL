@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik Cisco Webex DataParser 17a-4 i użyć go do importowania i archiwizowania danych cisco Webex w Microsoft 365.
-ms.openlocfilehash: 57a991f4a6d808dbcd22cb1d3466f10417e8d8e9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 67cd7007d19ba37b20da4ea961e3ec16e3b63840
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944134"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996597"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>Konfigurowanie łącznika do archiwizowania danych aplikacji Cisco Webex
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj aplikacji [Cisco Webex DataParser](https://www.17a-4.com/webex-dataparser/) z 17a-4 LLC, aby zaimportować i zarchiwizować dane z platformy Cisco Cisco Webex do skrzynek pocztowych użytkowników w organizacji Microsoft 365. DataParser zawiera łącznik Cisco Webex, który jest skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do Microsoft 365. Łącznik Cisco Webex DataParser konwertuje dane aplikacji Cisco Webex na format wiadomości e-mail, a następnie importuje je do skrzynek pocztowych użytkowników w Microsoft 365.
 

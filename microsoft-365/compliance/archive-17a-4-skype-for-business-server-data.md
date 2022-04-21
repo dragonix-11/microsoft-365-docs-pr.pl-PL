@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik Skype dla firm Server DataParser 17a-4 i użyć go do importowania i archiwizowania danych Skype dla firm Server w Microsoft 365.
-ms.openlocfilehash: 7b004068e255d5972a978d4e9650e9207a2da117
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8a7c8e7b2d59aeabc2f21207d5b3ce2eb3d524e9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937702"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997543"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>Konfigurowanie łącznika do archiwizowania danych Skype dla firm Server
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj [Skype Server DataParser](https://www.17a-4.com/skype-server-dataparser/) z 17a-4 LLC, aby zaimportować i zarchiwizować dane z Skype dla firm Server do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Program DataParser zawiera łącznik Skype dla firm skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do Microsoft 365. Łącznik Skype dla firm Server DataParser konwertuje dane Skype dla firm Server na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 

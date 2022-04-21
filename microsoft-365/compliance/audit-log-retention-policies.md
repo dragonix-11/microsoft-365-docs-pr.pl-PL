@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Zasady przechowywania dzienników inspekcji są częścią nowych funkcji inspekcji usługi Microsoft Purview (Premium). Zasady przechowywania dzienników inspekcji umożliwiają określenie czasu przechowywania dzienników inspekcji w organizacji.
-ms.openlocfilehash: 7f745baa78ebf61c0d32d39c49e3158b2418553f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a19e12f82fc577406ea4257fc315902ca8238358
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934874"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000383"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Zarządzanie zasadami przechowywania dzienników inspekcji
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Zasady przechowywania dzienników inspekcji można tworzyć i zarządzać nimi w portalu zgodności usługi Microsoft Purview. Zasady przechowywania dzienników inspekcji są częścią nowych funkcji inspekcji usługi Microsoft Purview (Premium). Zasady przechowywania dzienników inspekcji umożliwiają określenie czasu przechowywania dzienników inspekcji w organizacji. Dzienniki inspekcji można przechowywać przez maksymalnie 10 lat. Zasady można tworzyć na podstawie następujących kryteriów:
 

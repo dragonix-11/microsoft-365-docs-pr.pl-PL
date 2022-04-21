@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Po utworzeniu i iteracji w kolekcji roboczej można zatwierdzić ją w zestawie przeglądów. Po zatwierdzeniu kolekcji roboczej zebrane elementy są dodawane do zestawu przeglądów w tym przypadku. Gdy zebrane elementy znajdują się w zestawie przeglądów, można je analizować, przeglądać i eksportować.
-ms.openlocfilehash: 5637d97020d7fb086914a6debdaffc8050772828
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f908d17d804487cd5e7e93085e418f9a94915c8e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940296"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997939"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>Zatwierdzanie kolekcji roboczej do zestawu przeglądów w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jeśli elementy zebrane w kolekcji roboczej są zadowalające i są gotowe do ich analizowania, tagowania i przeglądania, możesz dodać kolekcję do zestawu przeglądów w tym przypadku. Po zatwierdzeniu kolekcji roboczej do zestawu przeglądów zebrane elementy są kopiowane z ich oryginalnej lokalizacji zawartości w Microsoft 365 do zestawu przeglądów. Zestaw przeglądów to bezpieczna, udostępniana przez firmę Microsoft lokalizacja Storage platformy Azure w chmurze firmy Microsoft.
 

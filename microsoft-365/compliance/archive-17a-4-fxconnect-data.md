@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik DataParser 17a-4 FX Połączenie do importowania i archiwizowania danych fx Połączenie w Microsoft 365.
-ms.openlocfilehash: 6317657228c00a4dbb6c73d5211b13f4c4d2c790
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1b4bd9c6dd68364db13d5e9795277bf6d91fdced
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940802"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998181"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-fx-connect"></a>Konfigurowanie łącznika do archiwizacji danych z fx Połączenie
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj fx [Połączenie DataParser](https://www.17a-4.com/dataparser-roadmap/) z 17a-4 LLC, aby zaimportować i zarchiwizować dane z fx Połączenie do skrzynek pocztowych użytkowników w organizacji Microsoft 365. DataParser zawiera łącznik fx Połączenie, który jest skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do Microsoft 365. Łącznik FX Połączenie DataParser konwertuje dane fx Połączenie na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 

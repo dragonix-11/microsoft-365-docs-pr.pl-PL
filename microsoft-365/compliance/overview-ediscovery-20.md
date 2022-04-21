@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 description: Dowiedz się więcej o rozwiązaniu eDiscovery (Premium) w usłudze Microsoft Purview. Ten artykuł zawiera omówienie zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview— narzędzia ułatwiającego zarządzanie badaniami wewnętrznymi i zewnętrznymi. Określa również przyczyny biznesowe użycia zbierania elektronicznych materiałów dowodowych (Premium) do zarządzania dochodzeniami prawnymi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7283adbf179f2d3dd04f45e2be808043e86ff88f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1a26d1abe9965ad71383a6d07e277999d85e31ef
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932072"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999085"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Omówienie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Rozwiązanie Microsoft Purview eDiscovery (Premium) bazuje na istniejących możliwościach zbierania elektronicznych materiałów dowodowych i analiz firmy Microsoft. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, analizowanie, przeglądanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Umożliwia również zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę.
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik FactSet DataParser 17a-4 i użyć go do importowania i archiwizowania danych FactSet w Microsoft 365.
-ms.openlocfilehash: 71f0ddfedb5fa3fb075ce55acaf42a95c3344e16
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c191cb1e25716bc4f4d0d948a5a0d863c55607ac
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940934"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998347"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>Konfigurowanie łącznika do archiwizowania danych factset
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj narzędzia [FactSet DataParser](https://www.17a-4.com/factset-dataparser/) z 17a-4 LLC, aby zaimportować i zarchiwizować dane z platformy FactSet do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Moduł DataParser zawiera łącznik FactSet skonfigurowany do przechwytywania elementów ze źródła danych innych firm i importowania tych elementów do Microsoft 365. Łącznik FactSet DataParser konwertuje dane factSet na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 

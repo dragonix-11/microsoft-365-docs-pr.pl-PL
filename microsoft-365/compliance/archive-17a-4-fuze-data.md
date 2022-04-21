@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik Fuze DataParser 17a-4 i użyć go do importowania i archiwizowania danych Fuze w Microsoft 365.
-ms.openlocfilehash: a1acd9462aa3497d3717219787cb9b9cd8f15cc3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7eab97532a7bbd45d61baed40c35e7b37bddfa62
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940868"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998303"
 ---
 # <a name="set-up-a-connector-to-archive-fuze-data"></a>Konfigurowanie łącznika do archiwizowania danych Fuze
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj narzędzia [Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) z 17a-4 LLC, aby zaimportować i zarchiwizować dane z usługi Fuze do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Moduł DataParser zawiera łącznik Fuze skonfigurowany do przechwytywania elementów ze źródła danych innych firm i importowania tych elementów do Microsoft 365. Łącznik Fuze DataParser konwertuje dane Fuze na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 

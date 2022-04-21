@@ -18,14 +18,16 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: Użyj skryptu programu PowerShell w tym artykule, aby szybko sklonować istniejące wyszukiwanie zawartości w centrum zgodności w Office 365 lub Microsoft 365.
-ms.openlocfilehash: 782620d3693f4659c135d2a52aa7062a490a7cd0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 82994bcc87b76efe21bb1c68877b2bb8a5926424
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940494"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998667"
 ---
 # <a name="clone-a-content-search"></a>Klonowanie wyszukiwania zawartości
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Tworzenie wyszukiwania zawartości w centrum zgodności w Office 365 lub Microsoft 365, które wyszukuje wiele skrzynek pocztowych lub SharePoint i witryn OneDrive dla Firm, może trochę potrwać. Określanie witryn do wyszukiwania może być również podatne na błędy, jeśli błędnie określisz adres URL. Aby uniknąć tych problemów, możesz użyć skryptu Windows PowerShell w tym artykule, aby szybko sklonować istniejące wyszukiwanie zawartości. Podczas klonowania wyszukiwania jest tworzone nowe wyszukiwanie (o innej nazwie), które zawiera te same właściwości (takie jak lokalizacje zawartości i zapytanie wyszukiwania) co oryginalne wyszukiwanie. Następnie możesz edytować nowe wyszukiwanie, zmieniając zapytanie słowa kluczowego lub zakres dat i uruchamiając je.
   

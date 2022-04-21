@@ -19,14 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Użyj skryptu programu PowerShell, który uruchamia polecenie cmdlet Search-UnifiedAuditLog w Exchange Online, aby przeszukać dziennik inspekcji. Ten skrypt jest zoptymalizowany pod kątem zwracania dużego zestawu rekordów inspekcji przy każdym uruchomieniu. Skrypt eksportuje te rekordy do pliku CSV, który można wyświetlić lub przekształcić przy użyciu Power Query w Excel.
-ms.openlocfilehash: fc7f2e8626fd5b510dca08504d91dd0faadd78b6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 00edbeb18bc882cf9113e80321b29d84ed43114c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943848"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000251"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Przeszukaj dziennik inspekcji za pomocą skryptu programu PowerShell
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Bezpieczeństwo, zgodność i inspekcja stały się priorytetem dla administratorów IT w dzisiejszym świecie. Microsoft 365 ma kilka wbudowanych funkcji ułatwiających organizacjom zarządzanie zabezpieczeniami, zgodnością i inspekcją. W szczególności ujednolicone rejestrowanie inspekcji może pomóc w badaniu zdarzeń zabezpieczeń i problemów ze zgodnością. Dzienniki inspekcji można pobrać przy użyciu następujących metod:
 

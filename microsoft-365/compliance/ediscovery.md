@@ -20,14 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Usługa Microsoft Purview oferuje trzy narzędzia zbierania elektronicznych materiałów dowodowych, których można użyć do wyszukiwania i eksportowania zawartości znajdującej się w różnych lokalizacjach, takich jak skrzynki pocztowe Exchange, witryny SharePoint i OneDrive dla Firm, Grupy Microsoft 365, Microsoft Teams i Skype dla firm konwersacje. eDiscovery (Standard) i eDiscovery (Premium) udostępniają wiele dodatkowych funkcji ułatwiających zarządzanie badaniami.
-ms.openlocfilehash: efa7f12ec20377713598edc54f032e7c2a27d706
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c146e2eea1c0c462491444102365cb5c611e78d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932227"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001153"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Rozwiązania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview
+
+> [!TIP]
+> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum wersji próbnych portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Odnajdywanie elektroniczne to proces identyfikowania i dostarczania informacji elektronicznych, które mogą być wykorzystane jako dowód w sprawach prawnych. Narzędzia zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview umożliwiają wyszukiwanie zawartości w zespołach Exchange Online, OneDrive dla Firm, SharePoint Online, Microsoft Teams, Grupy Microsoft 365 i Yammer. Możesz przeszukiwać skrzynki pocztowe i witryny w tym samym wyszukiwaniu zbierania elektronicznych materiałów dowodowych, a następnie eksportować wyniki wyszukiwania. Przypadki zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) umożliwiają identyfikowanie, utrzymywanie i eksportowanie zawartości znalezionej w skrzynkach pocztowych i witrynach. Jeśli Twoja organizacja ma subskrypcję Office 365 E5 lub Microsoft 365 E5 (lub powiązane subskrypcje dodatków E5), możesz dalej zarządzać opiekunami i analizować zawartość przy użyciu zaawansowanego w funkcji rozwiązania Microsoft Purview eDiscovery (Premium) w Microsoft 365.
 
@@ -47,7 +52,7 @@ Usługa Microsoft Purview oferuje trzy rozwiązania zbierania elektronicznych ma
 
 W poniższej tabeli porównano kluczowe możliwości dostępne w funkcjach wyszukiwania zawartości, eDiscovery (Standard) i eDiscovery (Premium).
 
-|Możliwości|Wyszukiwanie zawartości|eDiscovery (Standardowa)|eDiscovery (Premium)|
+|Możliwości|Wyszukiwanie zawartości|Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa|Zbieranie elektronicznych materiałów dowodowych (Premium)|
 |:------|:-------------|:-------------|:-------------|
 |Szukaj zawartości|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
 |Zapytania ze słowami kluczowymi i warunki wyszukiwania|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
@@ -138,7 +143,7 @@ W poniższych sekcjach przedstawiono minimalne wymagania dotyczące subskrypcji 
 - subskrypcja Office 365 E1
 
 
-### <a name="ediscovery-standard"></a>eDiscovery (Standardowa)
+### <a name="ediscovery-standard"></a>Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa
 
 - subskrypcja Microsoft 365 E3
 - subskrypcja Microsoft 365 G3
@@ -147,7 +152,7 @@ W poniższych sekcjach przedstawiono minimalne wymagania dotyczące subskrypcji 
 - subskrypcja Microsoft 365 Education A3 lub Office 365 Education A3
 - subskrypcja Office 365 E3
 
-### <a name="ediscovery-premium"></a>eDiscovery (Premium)
+### <a name="ediscovery-premium"></a>Zbieranie elektronicznych materiałów dowodowych (Premium)
 
 - subskrypcję platformy Microsoft 365 E5 lub pakietu Office 365 E5;
 - subskrypcję platformy Microsoft 365 E3 z dodatkiem E5 Compliance;
@@ -168,11 +173,11 @@ Zapoznaj się z poniższymi artykułami, aby dowiedzieć się więcej i rozpocz�
 
 - [Tworzenie wyszukiwania](content-search.md)
 
-### <a name="ediscovery-standard"></a>eDiscovery (Standardowa)
+### <a name="ediscovery-standard"></a>Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa
 
-- [Wprowadzenie zbierania elektronicznych materiałów dowodowych (standardowa)](get-started-core-ediscovery.md)
+- [Zacznij od zbierania elektronicznych materiałów dowodowych (Standardowa)](get-started-core-ediscovery.md)
 
-### <a name="ediscovery-premium"></a>eDiscovery (Premium)
+### <a name="ediscovery-premium"></a>Zbieranie elektronicznych materiałów dowodowych (Premium)
 
 - [Omówienie zbierania elektronicznych materiałów dowodowych (Premium)](overview-ediscovery-20.md)
 

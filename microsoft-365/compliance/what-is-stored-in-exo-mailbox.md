@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Zawartość generowana przez aplikacje oparte na chmurze w Microsoft 365 jest przechowywana lub skojarzona ze skrzynką pocztową Exchange Online użytkownika. Tę zawartość można przeszukiwać przy użyciu narzędzi microsoft eDiscovery.
-ms.openlocfilehash: b37295783883d689acc34dbff88e5a94186eb4a6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b5e8434f5345cda8ef4f637b3dff2d3cf704f748
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947852"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000801"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Zawartość przechowywana w Exchange Online skrzynkach pocztowych na potrzeby zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Skrzynka pocztowa w Exchange Online jest używana głównie do przechowywania elementów związanych z pocztą e-mail, takich jak wiadomości, elementy kalendarza, zadania i notatki. Ale to się zmienia, ponieważ coraz więcej aplikacji opartych na chmurze przechowuje również swoje dane w skrzynce pocztowej użytkownika. Jedną z zalet przechowywania danych w skrzynce pocztowej jest to, że możesz użyć narzędzi wyszukiwania zawartości, eDiscovery microsoft Purview (Standard) i microsoft Purview eDiscovery (Premium), aby znaleźć, wyświetlić i wyeksportować dane z tych aplikacji opartych na chmurze. Dane z niektórych z tych aplikacji są przechowywane w ukrytych folderach znajdujących się w poddrzeniu wiadomości innych niż IPM w skrzynce pocztowej. Dane z innych aplikacji opartych na chmurze mogą nie być przechowywane _w_ skrzynce pocztowej, ale _są skojarzone ze_ skrzynką pocztową i są zwracane w wyszukiwaniach (jeśli te dane są zgodne z zapytaniem wyszukiwania). Niezależnie od tego, czy dane oparte na chmurze są przechowywane w skrzynce pocztowej użytkownika, czy skojarzone z nią, zwykle nie są widoczne w kliencie poczty e-mail, gdy użytkownik otwiera swoją skrzynkę pocztową.
 

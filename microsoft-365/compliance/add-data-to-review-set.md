@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak dodać wyniki wyszukiwania lub przykłady tych wyników wyszukiwania do zestawu przeglądu przypadków zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: 7b754aa09390d041de44cd2e82ed9d1f93eede7e
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d41697f18360b277b060dd537020f9e04ef341ec
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973756"
+ms.locfileid: "64997741"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Dodawanie wyników wyszukiwania do zestawu przeglądów
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Gdy wyniki wyszukiwania są zadowalające i możesz je przejrzeć i przeanalizować, możesz dodać je do zestawu przeglądów w tym przypadku. Kopiowanie oryginalnych danych do zestawu przeglądów ułatwia również proces przeglądania i analizy, udostępniając zaawansowane narzędzia analityczne, takie jak wykrywanie motywów, wykrywanie niemal duplikatów i identyfikacja wątków poczty e-mail. Możesz również dodać dane ze źródeł danych innych niż Microsoft 365 do zestawu przeglądów, aby można było przeglądać te dane oprócz danych zbieranych z Microsoft 365.
 

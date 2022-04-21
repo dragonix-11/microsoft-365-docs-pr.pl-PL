@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak zaimportować dane inne niż Microsoft 365 do zestawu przeglądów do analizy w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9d27e2d1e306c189aa28a2c331a60c5b4d0c5dc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d7167f85760d0c1cc05e130413dbcdae9e0e3973
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944750"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996861"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Ładowanie danych innych niż Microsoft 365 do zestawu przeglądów
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Nie wszystkie dokumenty, które należy przeanalizować w usłudze Microsoft Purview eDiscovery (Premium), znajdują się w Microsoft 365. Dzięki funkcji importowania danych innych niż Microsoft 365 w funkcji zbierania elektronicznych materiałów dowodowych (Premium) można przekazać dokumenty, które nie znajdują się w Microsoft 365, do zestawu przeglądów. W tym artykule przedstawiono sposób przenoszenia dokumentów innych niż Microsoft 365 do zbierania elektronicznych materiałów dowodowych (Premium) na potrzeby analizy.
 

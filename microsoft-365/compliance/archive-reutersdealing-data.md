@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik w celu zaimportowania i zarchiwizowania danych dotyczących transakcji reutersa z usługi Veritas w celu Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 75b44a6ed76908a566edf8cb39c27f25788ce2c1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bbcc148b3e7176975be5e4e5624202a170c90f28
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950704"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999349"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>Konfigurowanie łącznika do archiwizowania danych dotyczących transakcji w usłudze Reuters
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy Reuters Dealing do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Transakcje reutersa](https://globanet.com/reuters-dealing/), który jest skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie), a następnie importowania tych elementów do Microsoft 365. Łącznik konwertuje komunikację transakcji z konta Reuters Dealing na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 

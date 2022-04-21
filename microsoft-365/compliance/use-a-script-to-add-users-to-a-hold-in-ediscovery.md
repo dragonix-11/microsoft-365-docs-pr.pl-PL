@@ -22,14 +22,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Dowiedz się, jak uruchomić skrypt w celu dodania skrzynek pocztowych & OneDrive dla Firm witryn do nowego archiwum skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 8835e853825786668ba1b7617078d899c0773779
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 70ec2481e8fa352be47544cd2fe6a772c2fbb325
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934534"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000892"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Używanie skryptu do dodawania użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Program PowerShell & Compliance Center zapewnia polecenia cmdlet, które umożliwiają automatyzowanie czasochłonnych zadań związanych z tworzeniem przypadków zbierania elektronicznych materiałów dowodowych i zarządzaniem nimi. Obecnie użycie sprawy zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) w portalu zgodności usługi Microsoft Purview w celu wstrzymania dużej liczby lokalizacji zawartości opiekuna wymaga czasu i przygotowania. Na przykład przed utworzeniem blokady musisz zebrać adres URL dla każdej witryny OneDrive dla Firm, która ma zostać wstrzymana. Następnie dla każdego użytkownika, który chcesz umieścić w zawieszeniu, musisz dodać jego skrzynkę pocztową i witrynę OneDrive dla Firm do blokady. Aby zautomatyzować ten proces, możesz użyć skryptu w tym artykule.
   

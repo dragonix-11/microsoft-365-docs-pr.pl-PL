@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik ICE Połączenie Chat DataParser 17a-4 i używać go do importowania i archiwizowania danych usługi ICE Połączenie Chat w Microsoft 365.
-ms.openlocfilehash: 372e833eb138150e10f81c7975647bc70af048d8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: fcc700546a15c6dad39b9ebcaeb7385194727016
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940736"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998106"
 ---
 # <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Konfigurowanie łącznika do archiwizacji danych czatu ICE Połączenie
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj ice [dataparser](https://www.17a-4.com/ice-dataparser/) z 17a-4 LLC do importowania i archiwizowania danych z ICE Połączenie Chat do skrzynek pocztowych użytkowników w organizacji Microsoft 365. DataParser zawiera łącznik ICE Chat, który jest skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do Microsoft 365. Łącznik ICE DataParser konwertuje dane ice Połączenie chat na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 

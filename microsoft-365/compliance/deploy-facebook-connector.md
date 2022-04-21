@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratorzy mogą skonfigurować natywny łącznik do importowania i archiwizowania stron biznesowych serwisu Facebook w celu Microsoft 365. Po zaimportowaniu tych danych do Microsoft 365 możesz użyć funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać zarządzaniem danymi w serwisie Facebook organizacji.
-ms.openlocfilehash: 126b4af3887632df5c8f83eac8e20fe5d88c8608
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b58b3f1707a8c3bb52aa7fc5ebc9c359ef9a8a97
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949184"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998777"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Wdrażanie łącznika w celu archiwizacji danych stron biznesowych usługi Facebook
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa usługi Office 365 Import do importowania danych ze stron biznesowych serwisu Facebook do Microsoft 365. Aby zapoznać się z ogólnym omówieniem tego procesu i listą wymagań wstępnych wymaganych do wdrożenia łącznika usługi Facebook, zobacz [Konfigurowanie łącznika w celu archiwizowania danych serwisu Facebook](archive-facebook-data-with-sample-connector.md).
 

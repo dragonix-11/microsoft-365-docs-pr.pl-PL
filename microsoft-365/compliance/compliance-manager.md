@@ -1,5 +1,5 @@
 ---
-title: Menedżer zgodności firmy Microsoft
+title: Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,118 +17,123 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Menedżer zgodności firmy Microsoft ułatwia organizacjom upraszczanie i automatyzowanie ocen ryzyka oraz sugeruje zalecane działania ułatwiające zająć się ryzykiem.
-ms.openlocfilehash: 289d82e8bc5f404589b263a2b6dec499d9e3b7e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Program Microsoft Purview Compliance Manager ułatwia organizacjom upraszczanie i automatyzowanie ocen ryzyka oraz sugeruje zalecane działania ułatwiające rozwiązanie problemów z ryzykiem.
+ms.openlocfilehash: 1d5f036b8bc97da431ed6e41017d59e01db749a4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317671"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997103"
 ---
-# <a name="microsoft-compliance-manager"></a>Menedżer zgodności firmy Microsoft
+# <a name="microsoft-purview-compliance-manager"></a>Microsoft Purview Compliance Manager
 
-**W tym artykule:** Dowiedz się, co to jest Menedżer zgodności, jak pomaga uprościć zgodność z przepisami, zmniejszyć ryzyko i jego kluczowe składniki.
+> [!TIP]
+> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum wersji próbnych portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+**W tym artykule:** Dowiedz się, czym jest Menedżer zgodności, jak pomaga uprościć zgodność i zmniejszyć ryzyko oraz jego kluczowe składniki.
 
 ## <a name="what-is-compliance-manager"></a>Co to jest Menedżer zgodności?
 
-[Menedżer zgodności firmy Microsoft](https://compliance.microsoft.com/compliancemanager) to funkcja w centrum <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365, która</a> ułatwia zarządzanie wymaganiami organizacji dotyczących zgodności z większą łatwością i wygodą. Menedżer zgodności może ułatwić Ci pozostawanie na drodze do zapewnienia zgodności z przepisami, od sporządzania spisu informacji o ryzyku związanym z ochroną danych, przez zarządzanie skomplikowaniem wdrażania kontroli, pozostawanie na czasie dzięki regulacjom i certyfikatom, a także raportowanie audytorom.
+[Menedżer zgodności usługi Microsoft Purview](https://compliance.microsoft.com/compliancemanager) to funkcja w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> , która ułatwia zarządzanie wymaganiami dotyczącymi zgodności organizacji z większą łatwością i wygodą. Menedżer zgodności może pomóc w całym procesie zapewniania zgodności, od tworzenia spisu zagrożeń związanych z ochroną danych po zarządzanie złożonością wdrażania mechanizmów kontroli, zachowanie aktualności z przepisami i certyfikatami oraz raportowanie do audytorów.
 
-Obejrzyj poniższy klip wideo, aby dowiedzieć się, jak Menedżer zgodności może uprościć zarządzanie zgodnością w Twojej organizacji:
+Obejrzyj poniższy film wideo, aby dowiedzieć się, w jaki sposób Menedżer zgodności może pomóc uprościć zarządzanie zgodnością w organizacji:
 <br>
 <br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
 
-Menedżer zgodności upraszcza zgodność i zmniejsza ryzyko, udostępniając:
+Menedżer zgodności pomaga uprościć zgodność i zmniejszyć ryzyko, zapewniając:
 
-- Wstępnie zbudowane oceny typowych norm i przepisów branżowych i regionalnych lub niestandardowych ocen w celu zaspokojenia unikatowych potrzeb w zakresie zgodności z przepisami (dostępne oceny zależą od umowy licencyjnej; [).](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+- Wstępnie utworzone oceny dla typowych standardów branżowych i regionalnych oraz przepisów lub niestandardowych ocen spełniających twoje unikatowe potrzeby w zakresie zgodności (dostępne oceny zależą od umowy licencyjnej; [dowiedz się więcej](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)).
 
-- Funkcje przepływu pracy, które ułatwiają wydajne przeprowadzanie oceny ryzyka za pomocą jednego narzędzia.
+- Funkcje przepływu pracy ułatwiające efektywne wykonywanie ocen ryzyka za pomocą jednego narzędzia.
 
-- Szczegółowe instrukcje krok po kroku dotyczące sugerowanych działań udoskonalania w celu zapewnienia zgodności ze standardami i przepisami, które są najbardziej istotne dla organizacji. W przypadku działań zarządzanych przez firmę Microsoft zobaczysz szczegóły implementacji i wyniki inspekcji.
+- Szczegółowe wskazówki krok po kroku dotyczące sugerowanych działań ulepszeń, które pomogą Ci zachować zgodność ze standardami i przepisami, które są najbardziej istotne dla Twojej organizacji. W przypadku akcji zarządzanych przez firmę Microsoft zobaczysz szczegóły implementacji i wyniki inspekcji.
 
-- Wynik zgodności oparty na czynniku ryzyka ułatwiający zrozumienie stanu zgodności przez mierzenie postępu w ukończeniu działań udoskonalania.
+- Ocena zgodności oparta na ryzyku, która pomoże Ci zrozumieć stan zgodności, mierząc postęp w wykonywaniu akcji poprawy.
 
-Pulpit nawigacyjny Menedżera zgodności pozwala wyświetlić bieżący wynik zgodności, pomaga zobaczyć, co wymaga uwagi, i pomaga w kluczowych działaniach usprawnień. Poniżej przedstawiono przykładowy wygląd pulpitu nawigacyjnego Menedżera zgodności:
+Pulpit nawigacyjny programu Compliance Manager pokazuje bieżący wynik zgodności, pomaga zobaczyć, co wymaga uwagi, i prowadzi Cię do kluczowych akcji poprawy. Poniżej przedstawiono przykład tego, jak będzie wyglądał pulpit nawigacyjny programu Compliance Manager:
 
-![Menedżer zgodności — pulpit nawigacyjny.](../media/compliance-manager-dashboard.png "Pulpit nawigacyjny Menedżera zgodności")
+![Menedżer zgodności — pulpit nawigacyjny.](../media/compliance-manager-dashboard.png "Pulpit nawigacyjny programu Compliance Manager")
 
-## <a name="understanding-your-compliance-score"></a>Opis wyniku w zakresie zgodności
+## <a name="understanding-your-compliance-score"></a>Omówienie oceny zgodności
 
-Menedżer zgodności nagradza Cię za ukończenie działań udoskonalania wykonanych w celu zapewnienia zgodności z przepisami, standardem lub zasadami, a także łączy te punkty w ogólną ocenę zgodności. Każda akcja ma inny wpływ na twój wynik w zależności od potencjalnego ryzyka. Twój wynik zgodności może ułatwić określanie priorytetów działań, na których należy się skupić, aby poprawić ogólną wydajność zgodności.
+Menedżer zgodności przyznaje punkty za ukończenie działań ulepszeń podjętych w celu zachowania zgodności z przepisami, standardami lub zasadami oraz łączy te punkty w ogólny wynik zgodności. Każda akcja ma inny wpływ na wynik w zależności od potencjalnego ryzyka. Wynik zgodności może pomóc określić priorytety akcji, na których należy się skupić, aby poprawić ogólną postawę zgodności.
 
-Menedżer zgodności daje początkową ocenę na podstawie planu bazowego Microsoft 365 ochrony danych. Ten plan bazowy jest zestawem kontroli, który zawiera najważniejsze przepisy i standardy w zakresie ochrony danych i ogólnego zarządzania danymi.
+Menedżer zgodności zapewnia wstępny wynik na podstawie punktu odniesienia Microsoft 365 ochrony danych. Ten punkt odniesienia to zestaw mechanizmów kontroli, które obejmują kluczowe przepisy i standardy dotyczące ochrony danych i ogólnego ładu danych.
 
 ##### <a name="learn-more"></a>Dowiedz się więcej
 
-[Zrozumienie sposobu obliczania wyniku zgodności](compliance-score-calculation.md).
+[Dowiedz się, jak jest obliczany wynik zgodności](compliance-score-calculation.md).
 
-[Dowiedz się, jak pracować z działaniami udoskonalania](compliance-manager-improvement-actions.md).
+[Dowiedz się, jak pracować z akcjami poprawy](compliance-manager-improvement-actions.md).
 
-## <a name="key-elements-controls-assessments-templates-improvement-actions"></a>Kluczowe elementy: kontrolki, oceny, szablony, działania usprawnień
+## <a name="key-elements-controls-assessments-templates-improvement-actions"></a>Kluczowe elementy: kontrolki, oceny, szablony, akcje poprawy
 
-Menedżer zgodności używa kilku elementów danych, które ułatwiają zarządzanie działaniami zgodności. Przypisując, testując i monitorując działania związane ze zgodnością za pomocą Menedżera zgodności, warto mieć podstawową wiedzę na temat kluczowych elementów: kontrolek, testów, szablonów i działań usprawnień.
+Menedżer zgodności używa kilku elementów danych, aby ułatwić zarządzanie działaniami dotyczącymi zgodności. W miarę używania Menedżera zgodności do przypisywania, testowania i monitorowania działań związanych ze zgodnością warto mieć podstawową wiedzę na temat kluczowych elementów: kontrolek, ocen, szablonów i akcji ulepszania.
 
-### <a name="controls"></a>Kontrolki
+### <a name="controls"></a>Formantów
 
-Kontrola wymaga przepisów, standardowych lub zasad. Definiuje on sposób oceniania konfiguracji systemu, procesu organizacyjnego i osób odpowiedzialnych za spełnianie określonych wymagań przepisów, standardu lub zasad oraz zarządzania nimi.
+Kontrola jest wymaganiem rozporządzenia, standardu lub zasad. Definiuje ona sposób oceniania konfiguracji systemu, procesu organizacyjnego i zarządzania nimi oraz osób odpowiedzialnych za spełnienie określonego wymagania dotyczącego regulacji, standardu lub zasad.
 
 Menedżer zgodności śledzi następujące typy kontrolek:
 
-1. **Formanty zarządzane przez firmę Microsoft**: kontrolki dla usług firmy Microsoft w chmurze, za wdrażanie których odpowiada firma Microsoft
-2. **Twoje kontrolki**: czasami nazywane formantami zarządzanymi przez klienta, są one wdrażane i zarządzane przez Twoją organizację
-3. **Kontrolki udostępnione**: są to mechanizmy kontroli, za które odpowiada Twoja organizacja i firma Microsoft
+1. **Kontrolki zarządzane przez firmę Microsoft**: mechanizmy kontroli usług w chmurze firmy Microsoft, które firma Microsoft jest odpowiedzialna za implementację
+2. **Kontrolki**: czasami nazywane kontrolkami zarządzanymi przez klienta, są to kontrolki implementowane i zarządzane przez organizację
+3. **Kontrolki udostępnione**: są to kontrolki, za które odpowiedzialność za implementację ponoszą zarówno organizacja, jak i firma Microsoft
 
 ##### <a name="learn-more"></a>Dowiedz się więcej
 
-[Monitoruj postęp kontrolek](compliance-manager-assessments.md#monitor-assessment-progress-and-controls).
+[Monitorowanie postępu kontrolek](compliance-manager-assessments.md#monitor-assessment-progress-and-controls).
 
-[Dowiedz się, jak Menedżer zgodności w sposób ciągły ocenia mechanizmy kontroli](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+[Dowiedz się, jak Menedżer zgodności stale ocenia mechanizmy kontroli](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
 ### <a name="assessments"></a>Oceny
 
-Ocena dotyczy grupowania kontrolek na podstawie określonych przepisów, norm lub zasad. Kończenie działań w ramach oceny pomaga spełnić wymagania standardu, przepisów lub prawa. Na przykład można oceniać, że po zakończeniu wszystkich działań w tym programie warto zachować Microsoft 365 zgodnie z wymaganiami ISO 27001.
+Ocena polega na grupowaniu mechanizmów kontroli na podstawie określonego rozporządzenia, normy lub zasad. Ukończenie działań w ramach oceny pomaga spełnić wymagania normy, regulacji lub prawa. Na przykład możesz mieć ocenę, która po wykonaniu wszystkich w nim akcji pomaga dostosować ustawienia Microsoft 365 do wymagań iso 27001.
 
-Testy mają kilka składników:
+Oceny mają kilka składników:
 
-- **Usługi zakresowe**: konkretny zestaw usługi firmy Microsoft ma zastosowanie do oceny
-- **Formanty zarządzane przez firmę Microsoft**: kontrolki dla usług firmy Microsoft w chmurze, które firma Microsoft wdraża w Twoim imieniu
-- **Twoje kontrolki**: czasami nazywane formantami zarządzanymi przez klienta, są one wdrażane i zarządzane przez Twoją organizację
-- **Kontrolki udostępnione**: są to mechanizmy kontroli, za które odpowiada Twoja organizacja i firma Microsoft
-- **Ocena:** przedstawia Twój postęp w osiągnięciu wszystkich możliwych punktów z działań w ramach oceny, które są zarządzane przez Twoją organizację i firmę Microsoft
+- **Usługi w zakresie**: określony zestaw usługi firmy Microsoft mający zastosowanie do oceny
+- **Kontrolki zarządzane przez firmę Microsoft**: mechanizmy kontroli usług w chmurze firmy Microsoft, które firma Microsoft implementuje w Twoim imieniu
+- **Kontrolki**: czasami nazywane kontrolkami zarządzanymi przez klienta, są to kontrolki implementowane i zarządzane przez organizację
+- **Kontrolki udostępnione**: są to kontrolki, za które odpowiedzialność za implementację ponoszą zarówno organizacja, jak i firma Microsoft
+- **Ocena**: pokazuje postęp w osiąganiu łącznej liczby możliwych punktów z akcji w ramach oceny, które są zarządzane przez organizację i firmę Microsoft
 
-Podczas tworzenia ocen przypiszesz je do grupy. Grupy można konfigurować w sposób najbardziej logiczny dla organizacji. Na przykład można grupować oceny według roku inspekcji, regionu, rozwiązania, zespołów w organizacji lub w inny sposób. Po utworzeniu grup można filtrować [pulpit nawigacyjny Menedżera](compliance-manager-setup.md#filtering-your-dashboard-view) zgodności, aby wyświetlić wyniki według jednej lub większej liczby grup.
+Podczas tworzenia ocen przypiszesz je do grupy. Grupy można skonfigurować w dowolny sposób, co jest najbardziej logiczne dla Twojej organizacji. Można na przykład grupować oceny według roku inspekcji, regionu, rozwiązania, zespołów w organizacji lub w inny sposób. Po utworzeniu grup możesz [filtrować pulpit nawigacyjny Programu Compliance Manager](compliance-manager-setup.md#filtering-your-dashboard-view) , aby wyświetlić wynik według co najmniej jednej grupy.
 
 ##### <a name="learn-more"></a>Dowiedz się więcej
 
-[Tworzenie ocen i zarządzanie nimi w Menedżerze zgodności](compliance-manager-assessments.md).
+[Twórz oceny i zarządzaj nimi w menedżerze zgodności](compliance-manager-assessments.md).
 
 ### <a name="templates"></a>Szablony
 
-Menedżer zgodności udostępnia szablony, które ułatwiają szybkie tworzenie ocen. Te szablony można zmodyfikować w celu utworzenia oceny zoptymalizowanej pod kątem potrzeb. Możesz również utworzyć niestandardową ocenę, tworząc szablon z własnymi kontrolkami i akcjami. Możesz na przykład chcieć, aby szablon obejmował wewnętrzną kontrolę procesów biznesowych lub regionalny standard ochrony danych, który nie jest objęty jednym z naszych szablonów testów 325+.
+Menedżer zgodności udostępnia szablony ułatwiające szybkie tworzenie ocen. Możesz zmodyfikować te szablony, aby utworzyć ocenę zoptymalizowaną pod kątem twoich potrzeb. Możesz również utworzyć niestandardową ocenę, tworząc szablon z własnymi kontrolkami i akcjami. Na przykład możesz chcieć, aby szablon obejmował wewnętrzną kontrolę procesów biznesowych lub regionalny standard ochrony danych, który nie jest objęty jednym z naszych wstępnie utworzonych szablonów oceny 325+.
 
 ##### <a name="learn-more"></a>Dowiedz się więcej
 
-[Wyświetl listę szablonów ocen dostarczonych przez Menedżera zgodności](compliance-manager-templates-list.md).
+[Wyświetl listę szablonów oceny dostarczonych przez menedżera zgodności](compliance-manager-templates-list.md).
 
-[Uzyskaj szczegółowe instrukcje dotyczące tworzenia i modyfikowania szablonów dla formularzy oceniania](compliance-manager-templates.md).
+[Uzyskaj szczegółowe instrukcje dotyczące tworzenia i modyfikowania szablonów dla ocen](compliance-manager-templates.md).
 
-### <a name="improvement-actions"></a>Działania udoskonalania
+### <a name="improvement-actions"></a>Akcje ulepszania
 
-Akcje udoskonalania ułatwiają scentralizowanie działań dotyczących zgodności. Każde działanie udoskonalania dostarcza zalecane wskazówki, które mają pomóc w dostosowaniu do przepisów i standardów ochrony danych. Użytkownikom w Twojej organizacji można przypisywać akcje udoskonalania w celu wykonania pracy implementacji i testowania. W ramach działania udoskonalania możesz również przechowywać dokumentację, notatki i aktualizacje stanu rekordów.
+Akcje poprawy ułatwiają scentralizowanie działań związanych ze zgodnością. Każda akcja poprawy zawiera zalecane wskazówki, które mają ułatwić dostosowanie do przepisów i standardów ochrony danych. Akcje poprawy można przypisać do użytkowników w organizacji w celu wykonywania zadań implementacji i testowania. W ramach akcji poprawy można również przechowywać dokumentację, notatki i aktualizacje stanu rekordów.
 
 ##### <a name="learn-more"></a>Dowiedz się więcej
 
-[Użyj akcji udoskonalania, aby zarządzać przepływem pracy zgodności](compliance-manager-improvement-actions.md).
+[Aby zarządzać przepływem pracy zgodności, użyj akcji poprawy](compliance-manager-improvement-actions.md).
 
-[Dowiedz się, jak akcje wpływają na ocenę zgodności](compliance-score-calculation.md#action-types-and-points).
+[Dowiedz się, jak akcje wpływają na wynik zgodności](compliance-score-calculation.md#action-types-and-points).
 
 ## <a name="supported-languages"></a>Obsługiwane języki
 
 Menedżer zgodności jest dostępny w następujących językach:
 
 - English
-- Bahasa Indonesian
-- Bahasa Malaj
+- Bahasa Indonezyjski
+- Bahasa Malajski
 - Chiński (uproszczony)
 - Chiński (tradycyjny)
 - Czech
@@ -144,7 +149,7 @@ Menedżer zgodności jest dostępny w następujących językach:
 - Korean
 - Norweski
 - Polish
-- Portugalski (Brazylia)
+- Portugalski (brazylijski)
 - Russian
 - Spanish
 - Swedish
@@ -153,8 +158,8 @@ Menedżer zgodności jest dostępny w następujących językach:
 
 ## <a name="next-steps-set-up-and-customize"></a>Następne kroki: konfigurowanie i dostosowywanie
 
-Aby dowiedzieć się, jak się zalogować, przypisać uprawnienia i role, skonfigurować ustawienia i spersonalizować widok pulpitu nawigacyjnego, zobacz Wprowadzenie [do Menedżera zgodności](compliance-manager-setup.md).
+Dowiedz się, jak zalogować się, przypisać uprawnienia i role, skonfigurować ustawienia i spersonalizować widok pulpitu nawigacyjnego w [Wprowadzenie za pomocą Menedżera zgodności](compliance-manager-setup.md).
 
-Następnie uruchom Menedżera zgodności, aby ułatwić zachowanie zgodności ze standardami branżowymi, które są najważniejsze dla Twojej organizacji, przez [skonfigurowanie oceny](compliance-manager-assessments.md).
+Następnie rozpocznij dostosowywanie Menedżera zgodności, aby zapewnić zgodność ze standardami branżowymi, które mają największe znaczenie dla Twojej organizacji, [konfigurując oceny](compliance-manager-assessments.md).
 
-W celu zapewnienia zgodności z przepisami dotyczącymi prywatności danych zaprojektowaliśmy przepływ pracy, który poprowadzi Cię przez cały proces planowania i implementowania funkcji w różnych Microsoft 365, w tym za pomocą Menedżera zgodności. Aby uzyskać więcej informacji, zobacz [Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych w Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+Aby zapewnić zgodność z przepisami dotyczącymi prywatności danych, opracowaliśmy przepływ pracy, który przeprowadzi Cię przez kompleksowy proces planowania i implementowania możliwości w Microsoft 365, w tym przy użyciu Menedżera zgodności. Aby uzyskać więcej informacji, zobacz [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 

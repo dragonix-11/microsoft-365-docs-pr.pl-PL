@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Nowy moduł kodowania predykcyjnego w usłudze eDiscovery (Premium) używa uczenia maszynowego do analizowania elementów w zestawie przeglądów w celu przewidywania elementów, które są istotne dla twojego przypadku lub badania.
-ms.openlocfilehash: 2cf8541e3ca3928b1206eb824c21e21e49c4caa9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7d45c995fafe5b802713e101ad36a362ab77fa37
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936560"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998997"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>Dowiedz się więcej o kodowaniu predykcyjnym w usłudze eDiscovery (Premium) (wersja zapoznawcza)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Moduł kodowania predykcyjnego w usłudze eDiscovery (Premium) korzysta z inteligentnych możliwości uczenia maszynowego, które ułatwiają zmniejszenie ilości zawartości do przeglądania. Kodowanie predykcyjne pomaga ograniczyć i zlikwidować duże ilości zawartości przypadków do odpowiedniego zestawu elementów, które można określić jako priorytet do przeglądu. Można to osiągnąć, tworząc i szkoląc własne modele kodowania predykcyjnego, które ułatwiają określenie priorytetów przeglądu najbardziej odpowiednich elementów w zestawie przeglądów.
 

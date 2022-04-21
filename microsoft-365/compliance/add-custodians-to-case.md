@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak używać wbudowanego narzędzia do zarządzania opiekunami w usłudze Microsoft Purview eDiscovery (Premium) do koordynowania przepływów pracy i identyfikowania odpowiednich źródeł danych w danym przypadku.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7da45eca9e57ef64c9272c89e24c21a20dc5af80
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 46277524f616e91e89e9bccce1fdd3c3109b3d86
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935813"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999481"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>Dodawanie opiekunów do sprawy zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj wbudowanego narzędzia do zarządzania opiekunami w usłudze Microsoft Purview eDiscovery (Premium), aby koordynować przepływy pracy związane z zarządzaniem opiekunami i identyfikowaniem odpowiednich źródeł danych opieki skojarzonych ze sprawą. Po dodaniu opiekuna system może automatycznie identyfikować i umieszczać blokady w skrzynce pocztowej Exchange i koncie OneDrive dla Firm. Podczas procesu odnajdywania badania możesz również zidentyfikować inne źródła danych (takie jak skrzynki pocztowe, witryny lub Teams), do których administrator uzyskiwał dostęp lub do których się przyczynił. W takiej sytuacji możesz użyć narzędzia do zarządzania opiekunem, aby skojarzyć te źródła danych, który będzie określonym opiekunem. Po dodaniu opiekunów do sprawy i skojarzeniu z nimi innego źródła danych można szybko zachować dane i przeszukać dane powiernicze.
 

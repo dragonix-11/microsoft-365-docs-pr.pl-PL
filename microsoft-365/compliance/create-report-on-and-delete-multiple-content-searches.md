@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Dowiedz się, jak zautomatyzować zadania wyszukiwania zawartości, takie jak tworzenie wyszukiwań i uruchamianie raportów przy użyciu programu PowerShell Centrum zgodności & zabezpieczeń.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06ea7655348851cbd457b527a3ee36f72d78e562
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c6e84641fef819503349803cdd54d5aaa860fc50
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936868"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000229"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Tworzenie, raportowanie i usuwanie wielu wyszukiwań zawartości
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  Szybkie tworzenie i raportowanie wyszukiwań odnajdywania jest często ważnym krokiem w procesie zbierania elektronicznych materiałów dowodowych i badań, gdy próbujesz dowiedzieć się więcej o danych bazowych oraz o bogactwie i jakości wyszukiwań. Aby to ułatwić, program PowerShell & Security & Compliance Center oferuje zestaw poleceń cmdlet do automatyzacji czasochłonnych zadań wyszukiwania zawartości. Te skrypty umożliwiają szybkie i łatwe tworzenie wielu wyszukiwań, a następnie uruchamianie raportów o szacowanych wynikach wyszukiwania, które mogą pomóc w określeniu danej ilości danych. Możesz również użyć skryptów, aby utworzyć różne wersje wyszukiwań, aby porównać wyniki, które każdy z nich generuje. Te skrypty mogą pomóc w szybkim i wydajnym identyfikowaniu i usuwaniu danych.
 

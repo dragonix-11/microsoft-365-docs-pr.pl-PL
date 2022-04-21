@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Dla administratorów: dowiedz się, jak używać przekazywania sieci do zbiorczego importowania wielu plików PST do skrzynek pocztowych użytkowników w Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d63b83f8052fdd3ce973bba15df72ee4c7d6989
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935440"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999811"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Importowanie plików PST organizacji do Microsoft 365 przy użyciu przekazywania sieci
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Ten artykuł jest przeznaczony dla administratorów. Czy próbujesz zaimportować pliki PST do własnej skrzynki pocztowej? Zobacz [Importowanie wiadomości e-mail, kontaktów i kalendarza z pliku pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)

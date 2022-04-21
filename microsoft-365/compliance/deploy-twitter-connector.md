@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratorzy mogą skonfigurować łącznik natywny do importowania i archiwizowania danych usługi Twitter w celu Microsoft 365. Po zaimportowaniu tych danych do Microsoft 365 możesz użyć funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać zarządzaniem danymi w usłudze Twitter organizacji.
-ms.openlocfilehash: e1ae371d59ef21955612c89b9e0bffc5c24d5950
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6bf801d7c3443385ee0a2656753dcf069ac6aebc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950208"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997147"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Wdrażanie łącznika do archiwizacji danych usługi Twitter
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa usługi Office 365 Import do importowania danych z konta twitterowego organizacji do Microsoft 365. Aby zapoznać się z ogólnym omówieniem tego procesu i listą wymagań wstępnych wymaganych do wdrożenia łącznika usługi Twitter, zobacz [Konfigurowanie łącznika w celu archiwizowania danych usługi Twitter ](archive-twitter-data-with-sample-connector.md).
 

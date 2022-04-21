@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Te procedury umożliwiają korzystanie z nazwanych jednostek w zasadach ochrony przed utratą danych
-ms.openlocfilehash: 108b21e7c5a6708a01a712dcd44788f489df0e73
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 6b00c45b95436e2425aedadd57a178fcb01ab50e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971588"
+ms.locfileid: "65000999"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>Używanie nazwanych jednostek w zasadach ochrony przed utratą danych
 
@@ -83,7 +83,7 @@ Aby utworzyć lub edytować zasady DLP, użyj procedur w [sekcji Tworzenie, test
 |SharePoint Dane w trybie online magazynowane     |Obsługiwane         |
 |Teams danych magazynowanych     |Obsługiwane         |
 |Dane w spoczynku wiadomości e-mail     |Obsługiwane w przypadku dzierżaw z planem usługi ochrony prywatności         |
-|Microsoft Defender for Cloud Apps     |Obsługiwane         |
+<!--|Microsoft Defender for Cloud Apps     |Obsługiwane         |-->
 
 ### <a name="autolabeling"></a>Automatyczne etykietowanie
 

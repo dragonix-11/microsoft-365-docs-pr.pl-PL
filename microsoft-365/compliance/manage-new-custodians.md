@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak wyświetlać szczegóły, edytować i zbiorczo edytować listę opiekunów w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 905773ac500a394b4a2394eb221e23a51a5c197e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2ab30e1343acd4718f80f816abc6ef850acf7215
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942496"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996839"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>Zarządzanie opiekunami w sprawie zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Strona **Opiekunowie** na karcie **Źródła danych** w sprawie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) zawiera listę wszystkich opiekunów, którzy zostali dodani do sprawy. Po dodaniu opiekunów do sprawy szczegóły dotyczące każdego opiekuna są automatycznie pobierane z Azure Active Directory i są widoczne w eDiscovery (Premium).
 

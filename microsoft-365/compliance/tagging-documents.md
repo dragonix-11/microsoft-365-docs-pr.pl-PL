@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Tagowanie dokumentów w zestawie przeglądów pomaga usunąć niepotrzebną zawartość i zidentyfikować odpowiednią zawartość w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c1d30cdefe0ae93fe7c87a1c5ecc9712d80bc3fb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6130a50c966fe23b1218c98efde381dc64fcb009
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931610"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996720"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Tagowanie dokumentów w zestawie przeglądów w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Organizowanie zawartości w zestawie przeglądów jest ważne, aby ukończyć różne przepływy pracy w procesie zbierania elektronicznych materiałów dowodowych. Obejmuje to:
 

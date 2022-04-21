@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Użyj narzędzia Communications w sprawie zbierania elektronicznych materiałów dowodowych (Premium), aby wysyłać, zbierać i śledzić powiadomienia o blokadzie prawnej.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f82e61b618c351f4dac05ce2559eab047f0e70a7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ca5c895ca98aafb67fd728e137f0d69dd8b98f8f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945070"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997961"
 ---
 # <a name="create-a-legal-hold-notice"></a>Tworzenie powiadomienia o blokadzie prawnej
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Korzystając z komunikacji z opiekunem zbierania elektronicznych materiałów dowodowych (Premium), organizacje mogą zarządzać przepływem pracy podczas komunikowania się z opiekunami. Za pośrednictwem narzędzia Do komunikacji zespoły prawne mogą systematycznie wysyłać, zbierać i śledzić powiadomienia o blokadzie prawnej. Elastyczny proces tworzenia umożliwia również zespołom dostosowywanie przepływu pracy powiadomień o blokadzie i zawartości w powiadomieniach wysyłanych do opiekunów.
 

@@ -19,14 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak używać narzędzia do wyszukiwania dzienników inspekcji Microsoft 365, aby pomóc w rozwiązywaniu typowych problemów z pomocą techniczną dla kont e-mail.
-ms.openlocfilehash: add354058a9e6e3d114c97a2932ff0302a27e272
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd82c735411592a3cfa7cb79ae4d1ce6f97798b4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946556"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998005"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Przeszukaj dziennik inspekcji, aby zbadać typowe problemy z pomocą techniczną
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule opisano, jak używać narzędzia do wyszukiwania dzienników inspekcji, aby ułatwić badanie typowych problemów z pomocą techniczną. Obejmuje to korzystanie z dziennika inspekcji w celu:
 

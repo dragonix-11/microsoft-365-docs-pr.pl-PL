@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Dowiedz się więcej o limitach dotyczących funkcji wyszukiwania zawartości i zbierania elektronicznych materiałów dowodowych (Standard) w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 53ecc3ceb879bc72040c5525e6bacc8d9802c5c9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8cba04c7ed3257d5a168d7754b2964eb4aa97b0d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944728"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999058"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limity wyszukiwania zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Różne limity są stosowane do narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview. Obejmuje to wyszukiwania uruchamiane na stronie **wyszukiwania zawartości** i wyszukiwania skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych na stronie **zbierania elektronicznych materiałów dowodowych (Standardowa** ). Te limity pomagają utrzymać kondycję i jakość usług dostarczanych organizacjom. Istnieją również ograniczenia związane z indeksowaniem wiadomości e-mail w Exchange Online wyszukiwania. Nie można modyfikować limitów wyszukiwania zbierania elektronicznych materiałów dowodowych ani indeksowania wiadomości e-mail, ale należy pamiętać o nich, aby uwzględnić te limity podczas planowania, uruchamiania i rozwiązywania problemów z wyszukiwaniami zbierania elektronicznych materiałów dowodowych.
 

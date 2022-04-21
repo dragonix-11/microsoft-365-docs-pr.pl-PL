@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Użyj funkcji wyszukiwania zawartości i skryptu w tym artykule, aby wyszukać w skrzynkach pocztowych i witrynach OneDrive dla Firm grupę użytkowników.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14c518c4450b01e387f84b4211da8d0eb346fe7a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1bbfc26c2193c1bf31e081b8ded9e2e2baf56743
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949272"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998821"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Wyszukiwanie zawartości umożliwia wyszukanie listy użytkowników w skrzynce pocztowej i witrynie OneDrive dla Firm
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Program PowerShell & Compliance Center zapewnia szereg poleceń cmdlet, które umożliwiają automatyzację czasochłonnych zadań związanych zbierania elektronicznych materiałów dowodowych. Obecnie tworzenie wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview w celu wyszukiwania dużej liczby lokalizacji zawartości opiekuna wymaga czasu i przygotowania. Przed utworzeniem wyszukiwania należy zebrać adres URL dla każdej OneDrive dla Firm witryny, a następnie dodać każdą skrzynkę pocztową i witrynę OneDrive dla Firm do wyszukiwania. W przyszłych wersjach będzie to łatwiejsze do wykonania w portalu zgodności. Do tego czasu możesz użyć skryptu w tym artykule, aby zautomatyzować ten proces. Ten skrypt wyświetla monit o podanie nazwy domeny witryny MySite organizacji (na przykład **contoso** w adresie URL `https://contoso-my.sharepoint.com`), listy adresów e-mail użytkownika, nazwy nowego wyszukiwania zawartości i zapytania wyszukiwania do użycia. Skrypt pobiera adres URL OneDrive dla Firm dla każdego użytkownika na liście, a następnie tworzy i uruchamia wyszukiwanie zawartości, które wyszukuje skrzynkę pocztową i witrynę OneDrive dla Firm dla każdego użytkownika na liście przy użyciu podanej kwerendy wyszukiwania.
   

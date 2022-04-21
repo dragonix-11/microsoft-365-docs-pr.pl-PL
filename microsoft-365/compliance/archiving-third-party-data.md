@@ -21,14 +21,16 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak importować i archiwizować dane innych firm z platform mediów społecznościowych, platform wiadomości błyskawicznych i platform współpracy dokumentów w celu Microsoft 365 skrzynek pocztowych.
-ms.openlocfilehash: 0588ab242f2d198c486b7ce0318939e204076421
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 820c4e2fb92720940a8b4f207d43aea649ef16e7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934956"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997257"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>Dowiedz się więcej o łącznikach dla danych innych firm
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 umożliwia administratorom używanie łączników danych do importowania i archiwizowania danych innych firm z platform mediów społecznościowych, platform wiadomości błyskawicznych i platform współpracy dokumentów do skrzynek pocztowych w organizacji Microsoft 365. Jedną z głównych zalet importowania i archiwizowania danych innych firm w Microsoft 365 jest zastosowanie różnych rozwiązań usługi Microsoft Purview do danych po ich zaimportowaniu. Dzięki temu możesz upewnić się, że dane organizacji spoza firmy Microsoft są zgodne z przepisami i standardami, które mają wpływ na organizację.
 

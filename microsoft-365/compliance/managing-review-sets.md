@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak zarządzać zestawami przeglądów, aby móc analizować, wykonywać zapytania, wyświetlać, tagować i eksportować dane w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 60e43d4d4983dd5171ed38f26096fba979c0f98c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 64970cb3302c47dbab394b974bf1df8358ad3755
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935593"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999057"
 ---
 # <a name="manage-review-sets-in-ediscovery-premium"></a>Zarządzanie zestawami przeglądów w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Zestawy przeglądów to statyczny zestaw dokumentów, w których można analizować, wykonywać zapytania, wyświetlać, tagować i eksportować dane w danym przypadku. Aby uzyskać więcej informacji na temat wykonywania tych zadań, zobacz:
 
