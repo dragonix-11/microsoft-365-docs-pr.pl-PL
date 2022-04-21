@@ -12,11 +12,11 @@
   items:
     - name: Szybkie zadania umożliwiające rozpoczęcie pracy z usługą Microsoft Purview
       href: compliance-quick-tasks.md
-    - name: Katalog rozwiązania usługi Microsoft Purview
+    - name: Katalog rozwiązań usługi Microsoft Purview
       href: microsoft-365-solution-catalog.md
     - name: Portal zgodności usługi Microsoft Purview
       href: microsoft-365-compliance-center.md
-    - name: "Uprawnienia w\_portalu zgodności usługi Microsoft Purview"
+    - name: Uprawnienia w portalu zgodności usługi Microsoft Purview
       href: microsoft-365-compliance-center-permissions.md
     - name: Przekierowywanie użytkowników do portalu zgodności usługi Microsoft Purview
       href: microsoft-365-compliance-center-redirection.md
@@ -44,15 +44,15 @@
           href: device-onboarding-vdi.md
     - name: Dołączanie urządzeń z systemem macOS (wersja zapoznawcza)
       items:
-        - name: Omówienie dołączania urządzeń z systemem macOS do platformy Microsoft 365 (wersja zapoznawcza)
+        - name: Omówienie dołączania urządzeń z systemem macOS do platformy Microsoft 365
           href: device-onboarding-macos-overview.md
-        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu usługi Intune (wersja zapoznawcza)
+        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu usługi Microsoft Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu usługi Intune dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)
+        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu usługi Microsoft Intune dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro (wersja zapoznawcza)
+        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)
+        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Zarządzanie łącznikami dla danych innych firm
   items:
@@ -306,7 +306,7 @@
       href: information-protection.md
     - name: Wdrażanie rozwiązania do ochrony informacji
       href: information-protection-solution.md
-    - name: Domyślne etykiety i zasady do ochrony danych
+    - name: Domyślne etykiety i zasady w celu ochrony danych
       href: mip-easy-trials.md
     - name: Typy informacji poufnych
       items:
@@ -461,7 +461,7 @@
               href: revoke-ome-encrypted-mail.md
             - name: Porównanie wersji szyfrowania wiadomości
               href: ome-version-comparison.md
-            - name: Szyfrowanie wiadomości — często zadawane pytania
+            - name: Często zadawane pytania dotyczące szyfrowania wiadomości
               href: ome-faq.yml
             - name: Jak usługa Exchange Online zabezpiecza Twoje tajne wpisy poczty e-mail
               href: exchange-online-secures-email-secrets.md
@@ -503,7 +503,7 @@
               href: dlp-teams-default-policy.md
             - name: Dowiedz się więcej na temat lokalnego skanera ochrony przed utratą danych
               href: dlp-on-premises-scanner-learn.md
-            - name: Dowiedz się więcej o rozszerzeniu zgodności firmy Microsoft
+            - name: Dowiedz się więcej o rozszerzeniu usługi Microsoft Purview
               href: dlp-chrome-learn-about.md
             - name: Dowiedz się więcej o pulpicie nawigacyjnym alertów ochrony przed utratą danych
               href: dlp-alerts-dashboard-learn.md
@@ -531,7 +531,7 @@
               href: endpoint-dlp-getting-started.md
             - name: Konfiguruj ustawienia serwera proxy urządzenia i połączenia internetowego dla usługi Information Protection
               href: device-onboarding-configure-proxy.md
-            - name: Wprowadzenie do rozszerzenia zgodności firmy Microsoft
+            - name: Wprowadzenie do rozszerzenia usługi Microsoft Purview
               href: dlp-chrome-get-started.md
             - name: Wprowadzenie do pulpitu nawigacyjnego alertu ochrony przed utratą danych
               href: dlp-alerts-dashboard-get-started.md
@@ -744,7 +744,7 @@
               href: clone-a-content-search.md
     - name: Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa
       items:
-        - name: Zacznij od zbierania elektronicznych materiałów dowodowych (Standardowa)
+        - name: Zacznij od zbierania elektronicznych materiałów dowodowych w warstwie Standardowa
           href: get-started-core-ediscovery.md
         - name: Twórz archiwa zbierania elektronicznych materiałów dowodowych
           href: create-ediscovery-holds.md
@@ -754,7 +754,7 @@
           href: export-content-in-core-ediscovery.md
         - name: 'Zamykaj, ponowne otwieraj i usuwaj sprawy'
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych (Standardowa)
+        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych w warstwie Standardowa
           items:
             - name: Limity wyszukiwania zbierania elektronicznych materiałów dowodowych
               href: limits-for-content-search.md
@@ -800,19 +800,19 @@
               href: configure-edge-to-export-search-results.md
             - name: Wyszukaj działania zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji
               href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Zbieranie elektronicznych materiałów dowodowych (Premium)
+    - name: Zbieranie elektronicznych materiałów dowodowych w warstwie Premium
       items:
         - name: Omówienie
           href: overview-ediscovery-20.md
-        - name: Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium)
+        - name: Konfigurowanie zbierania elektronicznych materiałów dowodowych w warstwie Premium
           href: get-started-with-advanced-ediscovery.md
-        - name: Tworzenie spraw dotyczących zbierania elektronicznych materiałów dowodowych (Premium).
+        - name: Tworzenie spraw dotyczących zbierania elektronicznych materiałów dowodowych w warstwie Premium.
           items:
             - name: Twórz sprawę i zarządzaj nią
               href: create-and-manage-advanced-ediscoveryv2-case.md
             - name: Użyj nowego formatu sprawy
               href: advanced-ediscovery-new-case-format.md
-        - name: Przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości aplikacji Teams
+        - name: Przepływ pracy zbierania elektronicznych materiałów dowodowych w warstwie Premium dla zawartości aplikacji Teams
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Zarządzaj opiekunami i źródłami danych bez opiekunów
           href: managing-custodians.md
@@ -933,9 +933,9 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: Konfiguruj ustawienia wyszukiwania i analizy
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych (Premium)
+        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych w warstwie Premium
           items:
-            - name: Limity zbierania elektronicznych materiałów dowodowych (Premium)
+            - name: Limity zbierania elektronicznych materiałów dowodowych w warstwie Premium
               href: limits-ediscovery20.md
             - name: Obsługiwane typy plików
               href: supported-filetypes-ediscovery20.md
@@ -985,11 +985,11 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Zarządzaj zasadami inspekcji i alertów
   items:
-    - name: Rozwiązania inspekcji platformy Microsoft 365
+    - name: Rozwiązania inspekcji usługi Microsoft Purview
       href: auditing-solutions-overview.md
-    - name: Inspekcja podstawowa
+    - name: Inspekcja w warstwie Standardowa
       items:
-        - name: Konfiguruj inspekcję podstawową
+        - name: Konfiguruj inspekcję w warstwie Standardowa
           href: set-up-basic-audit.md
         - name: Przeszukaj dziennik inspekcji
           href: search-the-audit-log-in-security-and-compliance.md
@@ -1013,15 +1013,15 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Interfejs API działań zarządzania usługi Office 365 — często zadawane pytania i rozwiązywanie problemów
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Inspekcja zaawansowana
+    - name: Inspekcja w warstwie Premium
       items:
-        - name: Omówienie inspekcji zaawansowanej
+        - name: Przegląd inspekcji w warstwie Premium
           href: advanced-audit.md
-        - name: Konfiguruj inspekcję zaawansowaną
+        - name: Konfigurowanie inspekcji w warstwie Premium
           href: set-up-advanced-audit.md
         - name: Zarządzanie zasadami przechowywania dzienników inspekcji
           href: audit-log-retention-policies.md
-        - name: Używaj inspekcji zaawansowanej do badania kont z naruszonymi zabezpieczeniami
+        - name: Używaj inspekcji w warstwie Premium do badania kont z naruszonymi zabezpieczeniami
           href: mailitemsaccessed-forensics-investigations.md
     - name: Inspekcja skrzynki pocztowej
       href: enable-mailbox-auditing.md
