@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik TeleMessage do importowania i archiwizowania danych sieci Rogers w Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
-ms.openlocfilehash: 790a41ce3d505e6381bb9d02ed9014132fe8f9f0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 966810ba4cedb782fb860ebff72b4fc7b4e7248c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944024"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001549"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>Konfigurowanie łącznika do archiwizowania danych sieci Rogers
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika TeleMessage w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane programu SMS i MMS z sieci komórkowej Rogers. Po skonfigurowaniu i skonfigurowaniu [łącznika Rogers Network Archiver](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/) łączy się on z siecią komórkową Rogers w organizacji i importuje dane SMS i MMS do skrzynek pocztowych w Microsoft 365.
 

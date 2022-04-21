@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak uzyskać raport aktywności Microsoft Teams użytkownika i uzyskać wgląd w działania Teams w organizacji.
-ms.openlocfilehash: cbd9bdb73dc69da5e36e0fb9c3ff2ff15b5269a4
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: ad2701e10e6b71f6fdb6a7d9ccf4a6b795a38b94
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882269"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015007"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie Microsoft Teams użytkownika
 
@@ -33,6 +33,7 @@ Na pulpicie nawigacyjnym raportów Microsoft 365 przedstawiono omówienie dział
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Jak przejść do raportu aktywności użytkowników aplikacji Microsoft Teams
 
 1. W centrum administracyjnym przejdź do strony **Raporty** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Użycie</a>.
+
 2. Na stronie głównej pulpitu nawigacyjnego kliknij przycisk **Wyświetl więcej** na karcie aktywności Microsoft Teams.
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpretowanie raportu aktywności użytkowników aplikacji Microsoft Teams
@@ -53,7 +54,7 @@ Aby zapewnić jakość danych, przeprowadzamy codzienne sprawdzanie poprawności
 |Nazwa użytkownika  <br/> |Adres e-mail użytkownika. W tym polu może być wyświetlany rzeczywisty adres e-mail lub można ustawić je jako anonimowe.   <br/> |
 |Nazwa dzierżawy  <br/> |Nazwa dzierżawy wewnętrznej lub zewnętrznej, do której należy użytkownik.   <br/> <br/> Jeśli użytkownik należy do dzierżawy zewnętrznej, odpowiednie metryki danych (na przykład komunikaty, wiadomości odpowiedzi itp.) są obliczane na podstawie interakcji w udostępnionych kanałach dzierżawy administratora. Interakcje wykonywane przez użytkownika we własnej dzierżawie (poza kanałami udostępnionymi danej dzierżawy) nie są uwzględniane w raporcie użycia administratora danej dzierżawy.  |
 |Nazwy dzierżawy kanału udostępnionego   <br/> |Nazwy wewnętrznych lub zewnętrznych dzierżaw udostępnionych kanałów, w których uczestniczył użytkownik.   <br/> |
-|Komunikaty kanału   <br/> |Liczba unikatowych komunikatów, które użytkownik zamieścił na czacie zespołowym w określonym okresie.  <br/> |
+|Komunikaty kanału   <br/> |Liczba unikatowych komunikatów, które użytkownik zamieścił na czacie zespołowym w określonym okresie.   <br/> |
 |Posty   <br/> |Liczba komunikatów pocztowych we wszystkich kanałach w określonym okresie <br/> |
 |Odpowiedzi   <br/> |Liczba odpowiedzi we wszystkich kanałach w określonym okresie. <br/> |
 |Pilne komunikaty    <br/> |Liczba pilnych komunikatów w określonym okresie. <br/> |

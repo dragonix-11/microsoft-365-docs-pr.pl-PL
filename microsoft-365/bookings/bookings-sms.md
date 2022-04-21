@@ -8,21 +8,21 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Dowiedz się, jak skonfigurować powiadomienia sms dla klientów, klientów i partnerów w Microsoft Bookings.
-ms.openlocfilehash: 46f58081bc9df799323c0c5e85253d4593d9c3c7
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 8183f89a73d3a9fa8573bfaa55935865eeb794dd
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715258"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65014963"
 ---
 # <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>Konfigurowanie powiadomień sms i przypomnień w Microsoft Bookings
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Za pomocą Microsoft Bookings możesz skonfigurować powiadomienia SMS sms, które mają być wysyłane do osoby rezerwującej termin. Powiadomienia SMS można skonfigurować w Bookings w aplikacji internetowej Bookings lub aplikacji Bookings w Teams. Uczestnicy, klienci lub partnerzy mogą również wyrazić zgodę na otrzymywanie powiadomień SMS na stronie samoobsługowej rezerwacji. Mogą również zrezygnować z otrzymywania powiadomień SMS, odpowiadając na **polecenie STOP** nadawcy.
 
 Powiadomienia SMS będą zawierać link Teams spotkania dla terminów rezerwacji wirtualnej.
+
+> [!Note]
+> Do 30 września 2022 r. będziemy dostarczać nieograniczone powiadomienia SMS dla klientów z licencjami Bookings. Gdy zbliżamy się do końca okresu promocji, podamy dodatkowe szczegóły dotyczące wymagań licencyjnych. Skontaktuj się z zespołem ds. konta lub pomocą techniczną, aby uzyskać szczegółowe informacje o cenach po okresie podwyższania poziomu.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -41,7 +41,7 @@ Powiadomienia SMS można skonfigurować w Bookings na kilka sposobów:
 > [!NOTE]
 > Musisz być administratorem Teams, aby wyświetlać dane Teams i Bookings w centrum administracyjnym Teams.
 
-Kluczowe dane dotyczące użycia powiadomień SMS w organizacji można śledzić w centrum administracyjnym Teams. Raporty użycia obejmują dane, takie jak godzina i data wysłania, numer źródła, typ komunikatu, typ zdarzenia i stan dostarczania. Możesz użyć telemetrii powiadomień SMS w okresie promocyjnym, aby ułatwić prognozowanie i budżet powiadomień SMS po 1 maja 2022 r.
+Kluczowe dane dotyczące użycia powiadomień SMS w organizacji można śledzić w centrum administracyjnym Teams. Raporty użycia obejmują dane, takie jak godzina i data wysłania, numer źródła, typ komunikatu, typ zdarzenia i stan dostarczania. Możesz użyć telemetrii powiadomień SMS w okresie promocyjnym, aby ułatwić prognozowanie i budżet powiadomień SMS po 30 września 2022 r.
 
 1. W centrum administracyjnym Teams **powiadomienia SMS dotyczące wizyt wirtualnych**.
 

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się więcej o dołączaniu urządzeń z systemem macOS do rozwiązań zgodności
-ms.openlocfilehash: 6cc3323a94ee609c3c6674c12eb99fad3f18f3b4
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 09a35e47a237639a722047b11c24f9b2d09cf51d
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952741"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65014985"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Dołączanie urządzeń z systemem macOS do Microsoft 365 omówienie
 
@@ -54,7 +54,16 @@ Urządzenia z systemem macOS muszą być już zarządzane za pośrednictwem Intu
  
 - Aby dołączyć do Intune, zobacz [Przewodnik wdrażania: Zarządzanie urządzeniami z systemem macOS w Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) i [Rejestrowanie komputera Mac przy użyciu Intune — Portal firmy](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Aby dołączyć do jamf Pro zobacz [jamf Pro administratorów](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) przewodnik i [jamf Pro instalacji i konfiguracji przewodnik dla komputerów Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
-- Instalowanie przeglądarki v95+ Edge na urządzeniach z systemem macOS 
+<!--- Install the v95+ Edge browser on your macOS devices--> 
+
+### <a name="supported-browsers"></a>Obsługiwane przeglądarki
+
+Program DLP punktu końcowego obsługuje te przeglądarki w systemie macOS Catalina 10.15 lub nowszym:
+
+- Microsoft Edge (najnowsza wersja)
+- Safari (najnowsza wersja, tylko system macOS)
+- Chrome (najnowsza wersja)
+- Firefox (najnowsza wersja)
 
 ## <a name="licensing-guidance"></a>Wskazówki dotyczące licencjonowania
 

@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: W tym artykule poznasz najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytelnionym użytkownikom.
-ms.openlocfilehash: ca6b75ba036aac826d657c8c907b512fe9d1f87a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 43db59e0380f99a2312fd803970a73013445504a
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948380"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015051"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytelnionym użytkownikom
 
@@ -47,6 +47,8 @@ Aby ustawić datę wygaśnięcia linków Każdy w całej organizacji
 1. W obszarze **Wybierz opcje wygaśnięcia i uprawnień dla linków Każdy** wybierz pole wyboru **Te linki muszą wygasnąć w ciągu tej wielu dni** .</br>
    ![Zrzut ekranu przedstawiający SharePoint ustawienia wygaśnięcia linku Ktoś na poziomie organizacji.](../media/sharepoint-organization-anyone-link-expiration.png)
 1. Wpisz liczbę dni w polu, a następnie kliknij przycisk **Zapisz**.
+
+Jeśli zmienisz czas wygaśnięcia, istniejące linki zachowają bieżący czas wygaśnięcia, jeśli nowe ustawienie jest dłuższe, lub zostaną zaktualizowane do nowego ustawienia, jeśli nowe ustawienie jest krótsze.
 
 Aby ustawić datę wygaśnięcia linków Dowolna osoba w określonej witrynie
 
@@ -101,7 +103,7 @@ Aby ustawić domyślny link do udostępniania plików i folderów dla określone
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Zapobieganie nieuwierzytelnionemu udostępnianiu poufnej zawartości
 
-Aby zapobiec nieuwierzytelnionemu udostępnianiu poufnej zawartości, można użyć [ochrony przed utratą danych (DLP) w usłudze Microsoft Purview](../compliance/dlp-learn-about-dlp.md) . Zapobieganie utracie danych może podejmować działania na podstawie etykiety poufności pliku, etykiety przechowywania lub informacji poufnych w samym pliku.
+Aby zapobiec nieuwierzytelnionemu udostępnianiu poufnej zawartości, można użyć funkcji [Microsoft Purview Data Loss Prevention (DLP](../compliance/dlp-learn-about-dlp.md) ). Zapobieganie utracie danych może podejmować działania na podstawie etykiety poufności pliku, etykiety przechowywania lub informacji poufnych w samym pliku.
 
 Aby utworzyć regułę DLP
 1. W centrum administracyjnym usługi Microsoft Purview przejdź do [strony Zapobieganie utracie danych](https://compliance.microsoft.com/datalossprevention).

@@ -1,6 +1,7 @@
 ---
 title: Zasady zgodności komunikacji
 description: Dowiedz się więcej o zasadach zgodności komunikacji.
+keywords: Microsoft 365, Microsoft Purview, zgodność, zgodność z komunikacją
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,21 +19,23 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 25a8a25497485932ce0aeb12700af1557b4cea29
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 47c7ddbc5ce935e8b9fedb7682daa6af468b66b4
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705435"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015029"
 ---
 # <a name="communication-compliance-policies"></a>Zasady zgodności komunikacji
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="policies"></a>Policies (zasady)
 
 > [!IMPORTANT]
-> Używanie programu PowerShell do tworzenia zasad zgodności komunikacji i zarządzania nimi nie jest obsługiwane. Aby utworzyć te zasady i zarządzać nimi, należy użyć mechanizmów kontroli zarządzania zasadami w [rozwiązaniu Microsoft 365 zgodności komunikacji](https://compliance.microsoft.com/supervisoryreview).
+> Używanie programu PowerShell do tworzenia zasad zgodności komunikacji i zarządzania nimi nie jest obsługiwane. Aby utworzyć te zasady i zarządzać nimi, należy użyć mechanizmów kontroli zarządzania zasadami w [rozwiązaniu zgodności z komunikacją](https://compliance.microsoft.com/supervisoryreview).
 
-Zasady zgodności komunikacji są tworzone dla organizacji Microsoft 365 w Centrum zgodności platformy Microsoft 365. Zasady zgodności komunikacji określają, które komunikaty i użytkownicy podlegają przeglądowi w organizacji, definiują niestandardowe warunki, które muszą spełniać komunikacja, i określają, kto powinien wykonywać przeglądy. Użytkownicy przypisani do roli *Administrator zgodności komunikacji* mogą konfigurować zasady, a każdy, kto ma przypisaną tę rolę, może uzyskać dostęp do strony **zgodności komunikacji** i ustawień globalnych w Centrum zgodności platformy Microsoft 365. W razie potrzeby można wyeksportować historię modyfikacji zasad do pliku .csv (wartości rozdzielane przecinkami), który zawiera również stan alertów oczekujących na przegląd, elementy eskalowane i rozwiązane elementy. Nie można zmienić nazwy zasad i można je usunąć, gdy nie będą już potrzebne.
+Zasady zgodności komunikacji są tworzone dla organizacji Microsoft 365 w portalu zgodności usługi Microsoft Purview. Zasady zgodności komunikacji określają, które komunikaty i użytkownicy podlegają przeglądowi w organizacji, definiują niestandardowe warunki, które muszą spełniać komunikacja, i określają, kto powinien wykonywać przeglądy. Użytkownicy przypisani do roli *Administrator zgodności komunikacji* mogą konfigurować zasady, a każdy, kto ma przypisaną tę rolę, może uzyskać dostęp do strony **zgodności komunikacji** i ustawień globalnych w portalu zgodności usługi Microsoft Purview. W razie potrzeby można wyeksportować historię modyfikacji zasad do pliku .csv (wartości rozdzielane przecinkami), który zawiera również stan alertów oczekujących na przegląd, elementy eskalowane i rozwiązane elementy. Nie można zmienić nazwy zasad i można je usunąć, gdy nie będą już potrzebne.
 
 ## <a name="policy-templates"></a>Szablony zasad
 
@@ -103,13 +106,16 @@ Komunikaty zgłaszane przez użytkownika z czatów Teams są jedynymi komunikata
 
 Administratorzy powinni natychmiast przypisywać niestandardowych recenzentów do tych zasad odpowiednio do twojej organizacji. Mogą to być recenzenci, tacy jak Oficer zgodności, Oficer ds. ryzyka lub członkowie działu zasobów ludzkich. Aby dostosować recenzentów wiadomości czatu przesłanych jako komunikaty zgłaszane przez użytkownika, wykonaj następujące kroki:
 
-1. Zaloguj się [do Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com/) przy użyciu poświadczeń dla konta administratora w organizacji Microsoft 365.
-2. W Centrum zgodności platformy Microsoft 365 przejdź do pozycji **Zgodność z komunikacją**.
+1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) przy użyciu poświadczeń dla konta administratora w organizacji Microsoft 365.
+2. W portalu zgodności przejdź do pozycji **Zgodność z komunikacją**.
 3. Na karcie **Zasady** wybierz zasady *Komunikaty zgłaszane przez użytkownika* i wybierz pozycję **Edytuj**.
 4. W okienku **Monitorowanie komunikatów zgłaszanych przez użytkownika** przypisz recenzentów do zasad. Recenzenci muszą mieć skrzynki pocztowe hostowane na Exchange Online. Gdy recenzenci są dodawani do zasad, automatycznie otrzymują wiadomość e-mail z powiadomieniem o przypisaniu do zasad i udostępniają linki do informacji o procesie przeglądu.
 5. Wybierz **Zapisz**.
 
-Aby wyłączyć użytkownikom możliwość raportowania komunikatów Teams za pomocą *opcji Zgłoś problem*, wyłącz opcję **Raportowanie użytkowników końcowych** w [centrum administracyjnym Teams](/microsoftteams/manage-teams-in-modern-portal).
+Aby wyłączyć użytkownikom możliwość raportowania komunikatów Teams za pomocą *opcji Zgłoś problem*, wyłącz opcję **Raportowanie użytkowników końcowych** w [centrum administracyjnym Teams](/microsoftteams/manage-teams-in-modern-portal). 
+
+>[!IMPORTANT]
+>Jeśli używasz programu PowerShell do wyłączenia opcji **Raportowanie użytkowników końcowych** w centrum administracyjnym Teams, musisz użyć [modułu Microsoft Teams poleceń cmdlet w wersji 4.2.0 lub nowszej](/MicrosoftTeams/teams-powershell-release-notes).
 
 ## <a name="storage-limit-notification-preview"></a>powiadomienie o ograniczeniu Storage (wersja zapoznawcza)
 
@@ -140,7 +146,7 @@ Domyślnie jest wyświetlany warunek **Kierunek** i nie można go usunąć. Usta
 
 ### <a name="sensitive-information-types"></a>Typy informacji poufnych
 
-W ramach zasad zgodności komunikacji można włączyć typy informacji poufnych. Typy informacji poufnych to wstępnie zdefiniowane lub niestandardowe typy danych, które mogą pomóc w identyfikowaniu i ochronie numerów kart kredytowych, numerów kont bankowych, numerów paszportów i innych. W ramach funkcji [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md) konfiguracja informacji poufnych może używać wzorców, bliskości znaków, poziomów ufności, a nawet niestandardowych typów danych, aby ułatwić identyfikowanie i oznaczanie zawartości, która może być wrażliwa. Domyślne typy informacji poufnych to:
+W ramach zasad zgodności komunikacji można włączyć typy informacji poufnych. Typy informacji poufnych to wstępnie zdefiniowane lub niestandardowe typy danych, które mogą pomóc w identyfikowaniu i ochronie numerów kart kredytowych, numerów kont bankowych, numerów paszportów i innych. W ramach funkcji [Dowiedz się więcej o zapobieganiu utracie danych usługi Microsoft Purview](dlp-learn-about-dlp.md) konfiguracja informacji poufnych może używać wzorców, bliskości znaków, poziomów ufności, a nawet niestandardowych typów danych, aby ułatwić identyfikowanie i oznaczanie zawartości, która może być wrażliwa. Domyślne typy informacji poufnych to:
 
 - Finansowych
 - Medycyna i zdrowie
@@ -186,7 +192,7 @@ Wbudowane klasyfikatory trenowalne i globalne nie zawierają wyczerpującej list
 > [!NOTE]
 > Zasady używające klasyfikatorów będą sprawdzać i oceniać komunikaty z liczbą wyrazów wynoszącą sześć lub więcej. Komunikaty zawierające mniej niż sześć wyrazów nie są oceniane w zasadach przy użyciu klasyfikatorów. Aby zidentyfikować i podjąć działania w przypadku krótszych komunikatów zawierających nieodpowiednią zawartość, zalecamy dołączenie niestandardowego słownika słów kluczowych do monitorowania zasad zgodności komunikacji dla tego typu zawartości.
 
-Aby uzyskać informacje na temat klasyfikatorów z możliwością trenowania w Microsoft 365, zobacz [Wprowadzenie do klasyfikatorów z możliwością trenowania](classifier-get-started-with.md).
+Aby uzyskać informacje na temat klasyfikatorów z możliwością trenowania, zobacz [Getting started with trainable classifiers (Wprowadzenie do klasyfikatorów z możliwością trenowania](classifier-get-started-with.md)).
 
 ### <a name="optical-character-recognition-ocr"></a>Optyczne rozpoznawanie znaków (OCR)
 
@@ -269,15 +275,15 @@ W przypadku zasad zgodności z komunikacją domyślnie skonfigurowano następuj�
 > [!NOTE]
 > Ustawienia wyzwalacza progu zasad alertów dla działań obsługują minimalną wartość co najmniej 3 dla zasad zgodności komunikacji.
 
-Możesz zmienić domyślne ustawienia wyzwalaczy dla liczby działań, okresu dla działań i dla określonych użytkowników w zasadach alertów na stronie **Zasady alertów** w Centrum zgodności platformy Microsoft 365.
+Możesz zmienić ustawienia domyślne wyzwalaczy dla liczby działań, okresu dla działań i dla określonych użytkowników w zasadach alertów na stronie **Zasady alertów** w portalu zgodności usługi Microsoft Purview.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Zmienianie poziomu ważności dla zasad alertów
 
 Jeśli chcesz zmienić poziom ważności przypisany w zasadach alertów dla określonych zasad zgodności komunikacji, wykonaj następujące kroki:
 
-1. Zaloguj się [do Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przy użyciu poświadczeń dla konta administratora w organizacji Microsoft 365.
+1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń dla konta administratora w organizacji Microsoft 365.
 
-2. W Centrum zgodności platformy Microsoft 365 przejdź do pozycji **Zasady**.
+2. W portalu zgodności usługi Microsoft Purview przejdź do pozycji **Zasady**.
 
 3. Wybierz **pozycję Office 365 alert** na stronie **Zasady**, aby otworzyć stronę **Zasady alertów**.
 

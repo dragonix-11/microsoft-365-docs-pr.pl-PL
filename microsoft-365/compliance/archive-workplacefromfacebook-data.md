@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z usługi Workplace z serwisu Facebook, który jest archiwizowany w witrynie Merge1 firmy Veritas, do Microsoft 365. Skonfigurowanie łącznika wymaga współpracy z usługą Veritas Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: 888697c6b5e340ebe82cd9466a260dc046622ee1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0dbd1bfaeea6a42db03793941b1fea894ee391b5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943936"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001461"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Konfigurowanie łącznika do archiwizowania danych aplikacji Workplace z serwisu Facebook
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z usługi Workplace z serwisu Facebook do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Workplace from Facebook](https://globanet.com/workplace/), który jest skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie) i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość, taką jak czaty, załączniki, wpisy i filmy wideo z miejsca pracy, na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 

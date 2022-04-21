@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak przeprowadzać inspekcję działań użytkowników i administratorów w organizacji Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7c6461868ee212e6b332181b9dea1560ce49558
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: ee11ee5e02ee4342921776124813b71cf4468ad7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953744"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001417"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Rozwiązania inspekcji w usłudze Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Rozwiązania do inspekcji usługi Microsoft Purview zapewniają zintegrowane rozwiązanie ułatwiające organizacjom efektywne reagowanie na zdarzenia zabezpieczeń, badania kryminalistyczne, badania wewnętrzne i obowiązki w zakresie zgodności. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Rekordy inspekcji dla tych zdarzeń można przeszukiwać za pomocą operacji zabezpieczeń, administratorów IT, zespołów ds. ryzyka dotyczącego informacji poufnych oraz badaczy zgodności i prawnych w organizacji. Ta funkcja zapewnia wgląd w działania wykonywane w organizacji Microsoft 365.
 

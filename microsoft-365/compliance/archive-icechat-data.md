@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z narzędzia ICE Chat do Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
-ms.openlocfilehash: 51c79127894f506f2f0f59a9c883f1b4c4bb5f24
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 55af0567fc5cb8dbdeb571209fb7d9f863561900
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937328"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001703"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Konfigurowanie łącznika do archiwizowania danych czatu ICE
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]V
 
 Użyj natywnego łącznika w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane czatu usług finansowych z narzędzia do współpracy ICE Chat. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z bezpieczną witryną FTP (SFTP) w organizacji raz dziennie, konwertuje zawartość wiadomości czatu na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych w Microsoft 365.
 

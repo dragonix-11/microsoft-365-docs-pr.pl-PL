@@ -20,14 +20,16 @@ description: Przypisz uprawnienia wymagane do wykonywania zadań związanych zbi
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1f19c43e65993652628703f002b9537c71066013
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3fef13fe96297b426dda4d72231846a99fb03179
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946534"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001373"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jeśli chcesz, aby użytkownicy korzystali z dowolnego [narzędzia związanego zbierania elektronicznych materiałów dowodowych](ediscovery.md) w portalu zgodności usługi Microsoft Purview, musisz przypisać im odpowiednie uprawnienia. Najprostszym sposobem na to jest dodanie odpowiedniej grupy ról na stronie **Uprawnienia** w Centrum zgodności. W tym temacie opisano uprawnienia wymagane do wykonywania zadań zbierania elektronicznych materiałów dowodowych.
   
@@ -103,7 +105,7 @@ Ta rola umożliwia użytkownikom tworzenie, edytowanie, usuwanie i kontrolowanie
 
 Więcej informacji można znaleźć w następujących artykułach:
 
-- [Wprowadzenie zbierania elektronicznych materiałów dowodowych (standardowa)](get-started-core-ediscovery.md)
+- [Zacznij od zbierania elektronicznych materiałów dowodowych (Standardowa)](get-started-core-ediscovery.md)
 
 - [Wprowadzenie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md)
 
@@ -165,7 +167,7 @@ Ta rola umożliwia użytkownikom zbiorcze usuwanie danych zgodnych z kryteriami 
 
 Grupy ról można dodawać jako członków przypadków zbierania elektronicznych materiałów dowodowych (standard) i eDiscovery (Premium), aby członkowie grup ról mogli uzyskiwać dostęp do zadań i wykonywać je w przypisanych przypadkach. Role przypisane do grupy ról definiują, co mogą robić członkowie grupy ról. Następnie dodanie grupy ról jako członka sprawy umożliwia członkom dostęp do tych zadań i wykonywanie ich w określonym przypadku. Aby uzyskać więcej informacji na temat dodawania grup ról jako członków przypadków, zobacz:
 
-- [Wprowadzenie zbierania elektronicznych materiałów dowodowych (standardowa)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
+- [Zacznij od zbierania elektronicznych materiałów dowodowych (Standardowa)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
 - [Dodawanie lub usuwanie członków ze sprawy zbierania elektronicznych materiałów dowodowych (Premium)](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 

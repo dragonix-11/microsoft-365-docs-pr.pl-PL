@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania strony internetowej Przechwytywanie danych z usługi Veritas w Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: 549af03a794c132bc11901618a60185722f24907
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4ba343d8c1a06f8c1eaf88189cae5e013a76414
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935044"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001527"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Konfigurowanie łącznika do archiwizowania danych strony internetowej
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze stron internetowych do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [przechwytywania stron sieci Web](https://globanet.com/webpage-capture) , który przechwytuje określone strony internetowe (i linki na tych stronach) w określonej witrynie internetowej lub całej domenie. Łącznik konwertuje zawartość strony internetowej na format PDF, PNG lub plik niestandardowy, a następnie dołącza przekonwertowane pliki do wiadomości e-mail, a następnie importuje te elementy poczty e-mail do skrzynek pocztowych użytkownika w Microsoft 365.
 

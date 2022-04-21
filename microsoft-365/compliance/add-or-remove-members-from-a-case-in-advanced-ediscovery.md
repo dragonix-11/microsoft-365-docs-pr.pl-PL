@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak dodać lub usunąć członków, którzy mogą uzyskać dostęp do sprawy podczas zarządzania przypadkiem zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9586fd0f606c3f95cda19ca9d6ae036bc23763dc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ae0404199506d5da18fb1579fbe6a125350afcde
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943200"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001681"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Dodaj członków do sprawy lub ich usuń
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Możesz dodać lub usunąć członków, aby zarządzać tym, kto może uzyskać dostęp do sprawy. Zanim jednak członek będzie mógł uzyskać dostęp do sprawy zbierania elektronicznych materiałów dowodowych (Premium) (i wykonywać zadania w tym przypadku), musisz dodać użytkownika do grupy ról Menedżera zbierania elektronicznych materiałów dowodowych na stronie **Uprawnienia** w portalu zgodności usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](./assign-ediscovery-permissions.md).
 
