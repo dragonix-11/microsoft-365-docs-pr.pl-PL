@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Motywy zbierania elektronicznych materiałów dowodowych (Premium) umożliwiają organizowanie zestawów przeglądów przez znalezienie dominującego motywu w każdym dokumencie.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e019c103114630411a7d13ae619827a2e83a890c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8067048c1dedeb6c70a887ec1fb41094bad35666
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991759"
+ms.locfileid: "64970388"
 ---
 # <a name="themes-in-ediscovery-premium"></a>Motywy zbierania elektronicznych materiałów dowodowych (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jak osoba pisze dokument? Zazwyczaj zaczynają od co najmniej jednego pomysłu, który chcą przekazać w dokumencie, i tworzą je przy użyciu słów zgodnych z pomysłami. Bardziej rozpowszechnionym pomysłem jest częstsze słowa, które są związane z tą ideą. Informuje to również o tym, jak użytkownicy korzystają z dokumentów. Ważną rzeczą, którą należy zrozumieć podczas czytania dokumentu, są pomysły, które dokument próbuje przekazać, które pomysły pojawiają się gdzie i jakie są relacje między pomysłami.
 

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Eksportuj dokumenty w zestawie przeglądów do konta usługi Azure Storage, a następnie użyj Eksplorator usługi Azure Storage, aby pobrać je na komputer lokalny.
-ms.openlocfilehash: babac7d0289eee2384c12acfe05223bfceba1ce1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c8709fe1540393164e00222b728b10d5f809012
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934846"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994903"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Eksportowanie dokumentów w zestawie przeglądów do konta usługi Azure Storage
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Podczas eksportowania dokumentów z zestawu przeglądów w przypadku zbierania elektronicznych materiałów dowodowych (Premium) można je wyeksportować na konto usługi Azure Storage zarządzane przez organizację. Jeśli użyjesz tej opcji, dokumenty zostaną przekazane do lokalizacji Storage platformy Azure. Po ich wyeksportowaniu można uzyskać dostęp do dokumentów (i pobrać je na komputer lokalny lub inną lokalizację) przy użyciu Eksplorator usługi Azure Storage. Ten artykuł zawiera instrukcje dotyczące eksportowania dokumentów na konto usługi Azure Storage oraz korzystania z Eksplorator usługi Azure Storage w celu nawiązania połączenia z lokalizacją Storage platformy Azure w celu pobrania wyeksportowanych dokumentów. Aby uzyskać więcej informacji na temat Eksplorator usługi Azure Storage, zobacz [Korzystanie z Eksplorator usługi Azure Storage](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 

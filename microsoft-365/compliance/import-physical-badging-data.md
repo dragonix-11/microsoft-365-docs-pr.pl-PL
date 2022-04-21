@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Administratorzy mogą skonfigurować łącznik danych do importowania danych z fizycznego systemu rozwiązywania problemów organizacji w celu Microsoft 365. Dzięki temu można użyć tych danych w zasadach zarządzania ryzykiem wewnętrznym, aby ułatwić wykrywanie dostępu do budynków fizycznych przez określonych użytkowników, które mogą wskazywać na możliwe wewnętrzne zagrożenie dla organizacji.
-ms.openlocfilehash: 7b6161cfc8f712082303641f9da7345edf5e24df
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a55874b9f920919c16a094d32c4edcde394600d4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937944"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994881"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Konfigurowanie łącznika w celu importowania fizycznych danych powodujących błędy (wersja zapoznawcza)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Łącznik danych można skonfigurować w portalu zgodności usługi Microsoft Purview w celu zaimportowania fizycznych danych powodujących awarie, takich jak nieprzetworzone fizyczne zdarzenia dostępu pracownika lub wszelkie alarmy dostępu fizycznego generowane przez zły system organizacji. Przykładami fizycznych punktów dostępu jest wejście do budynku lub wejście do serwerowni lub centrum danych. Dane fizyczne mogą być używane przez [rozwiązanie Microsoft 365 zarządzania ryzykiem wewnętrznym](insider-risk-management.md), aby chronić organizację przed złośliwą aktywnością lub kradzieżą danych w organizacji.
 

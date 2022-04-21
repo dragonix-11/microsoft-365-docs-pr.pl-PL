@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Dodawanie alertów dotyczących działań i zarządzanie nimi w portalu zgodności usługi Microsoft Purview, dzięki czemu Microsoft 365 będzie wysyłać powiadomienia e-mail, gdy użytkownicy wykonują określone działania
-ms.openlocfilehash: 7826a09bff1dd17febc3f621b50ed32129e21a37
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 43991eaf0f80957b0d72a2f16a2021f24194f2d6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946490"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995035"
 ---
 # <a name="create-activity-alerts"></a>Tworzenie alertów aktywności
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Możesz utworzyć alert działania, który wyśle Ci powiadomienie e-mail, gdy użytkownicy będą wykonywać określone działania w Office 365. Alerty dotyczące działań są podobne do wyszukiwania zdarzeń w dzienniku inspekcji, z tą różnicą, że otrzymasz wiadomość e-mail, gdy wystąpi zdarzenie dla działania, dla których utworzono alert.
 

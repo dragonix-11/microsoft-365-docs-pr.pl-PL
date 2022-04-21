@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak rozpocząć korzystanie z modułu kodowania predykcyjnego w temacie eDiscovery (Premium). W tym artykule przedstawiono kompleksowy proces używania kodowania predykcyjnego do identyfikowania zawartości w zestawie przeglądów, który jest najbardziej odpowiedni dla badania.
-ms.openlocfilehash: 449ef5446ee5a4da87081774037c9b5e2a8d440d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc4edcb6affa7ccfd6a915839ef84b0d453fcfca
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942320"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996157"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>Szybki start: kodowanie predykcyjne w usłudze eDiscovery (Premium) (wersja zapoznawcza)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule przedstawiono szybki start dotyczący korzystania z kodowania predykcyjnego w usłudze Microsoft Purview eDiscovery (Premium). Moduł kodowania predykcyjnego korzysta z inteligentnych możliwości uczenia maszynowego, które ułatwiają wykreślenie dużych ilości zawartości przypadków, która nie jest istotna dla badania. Można to osiągnąć, tworząc i szkoląc własne modele kodowania predykcyjnego, które ułatwiają określanie priorytetów najbardziej odpowiednich elementów do przeglądu.
 

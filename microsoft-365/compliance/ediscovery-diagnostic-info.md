@@ -17,14 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Dowiedz się, jak zbierać informacje diagnostyczne zbierania elektronicznych materiałów dowodowych dla pomoc techniczna firmy Microsoft przypadku.
-ms.openlocfilehash: 13d3967adc6eddb6f0fc5a5b57119eb6c47114de
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6077df8f0a014b9e3356d8f520ddbaf0b2378983
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932205"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994455"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Zbieraj informacje diagnostyczne dotyczące zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Czasami inżynierowie pomoc techniczna firmy Microsoft wymagają konkretnych informacji o problemie podczas otwierania zgłoszenia do pomocy technicznej związanego zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) lub microsoft Purview eDiscovery (Premium). Ten artykuł zawiera wskazówki dotyczące gromadzenia informacji diagnostycznych, które ułatwiają inżynierom pomocy technicznej badanie i rozwiązywanie problemów. Zazwyczaj nie trzeba zbierać tych informacji, dopóki nie zostanie o to poproszony inżynier pomoc techniczna firmy Microsoft.
 

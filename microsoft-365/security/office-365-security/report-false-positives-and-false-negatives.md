@@ -1,5 +1,5 @@
 ---
-title: Zgłaszanie wyników fałszywie dodatnich i ujemnych w Outlook
+title: Zgłaszanie wyników fałszywie dodatnich i fałszywie ujemnych w programie Outlook
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -10,86 +10,85 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-description: Dowiedz się, jak raportować wyniki fałszywie dodatnie i ujemne Outlook funkcji Komunikat raportu.
+description: Dowiedz się, jak zgłaszać wyniki fałszywie dodatnie i fałszywie ujemne w Outlook przy użyciu funkcji Komunikat raportu.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2181df44f8d193f8c19c508451733773bd20708
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 8f52b4d085c13f2e1e1a48c2a8a12e6782f13960
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473509"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974108"
 ---
-# <a name="report-false-positives-and-false-negatives-in-outlook"></a>Zgłaszanie wyników fałszywie dodatnich i ujemnych w Outlook
+# <a name="report-false-positives-and-false-negatives-in-outlook"></a>Zgłaszanie wyników fałszywie dodatnich i fałszywie ujemnych w programie Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Jeśli jesteś administratorem w organizacji usługi Microsoft 365 ze skrzynkami pocztowymi usługi Exchange Online, zalecamy korzystanie ze strony Materiały w portalu Microsoft 365 Defender pocztowych. Aby uzyskać więcej informacji, zobacz Przesyłanie plików za pomocą portalu Przesyłanie w celu przesłania do firmy Microsoft podejrzanych [wiadomości-śmieci,](admin-submission.md) wiadomości wyłudowanych przy użyciu adresów URL i plików.
+> Jeśli jesteś administratorem w organizacji Microsoft 365 z Exchange Online skrzynkami pocztowymi, zalecamy użycie strony **Przesłane** w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Przesyłanie do firmy Microsoft podejrzanych spamów, adresów URL i plików za pomocą portalu Przesyłania](admin-submission.md).
 
-W organizacjach korzystających z nowoczesnego uwierzytelniania hybrydowego w organizacjach ze skrzynkami pocztowymi w programie Exchange Online lub lokalnych skrzynkach pocztowych można przesyłać do usługi Exchange Online Protection (EOP) wyniki fałszywie dodatnie (oznaczanie dobrymi wiadomościami e-mail, które zostały zablokowane lub wysłane do folderu wiadomości-śmieci) oraz wyników fałszywie ujemnych (niechcianych wiadomości e-mail lub wiadomości wyłudzanych w skrzynce odbiorczej). Microsoft 365
+W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub lokalnych skrzynkach pocztowych przy użyciu nowoczesnego uwierzytelniania hybrydowego można przesyłać wyniki fałszywie dodatnie (dobra wiadomość e-mail, która została zablokowana lub wysłana do folderu wiadomości-śmieci) oraz fałszywe negatywy (niechciane wiadomości e-mail lub phish dostarczone do skrzynki odbiorczej) do Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
-- Aby uzyskać najlepsze środowisko przesyłania użytkownika, użyj dodatku Report Message (Wiadomość raportu) lub dodatku Wyłudzanie informacji raportu.
+- Aby uzyskać najlepsze środowisko przesyłania danych przez użytkownika, użyj dodatku Komunikat raportu lub dodatku Wyłudzanie informacji o raportach.
 
-- Dodatek Wiadomość raportu i dodatek Wyłudzanie raportów działają dla wszystkich Outlook platform (Outlook w sieci Web, iOS, Android i Desktop).
+- Dodatek Komunikat raportu i dodatek Report Phishing działają dla Outlook na wszystkich platformach (Outlook w sieci Web, iOS, Android i Desktop).
 
-- Jeśli jesteś administratorem w organizacji, która ma Exchange Online pocztowe, użyj portalu Przesyłanie w portalu Microsoft 365 Defender odbiorczego. Aby uzyskać więcej informacji, zobacz Przesyłanie administratora w celu przesłania podejrzeń o [spam, wyłudzy, adresy URL i pliki do firmy Microsoft](admin-submission.md).
+- Jeśli jesteś administratorem w organizacji z Exchange Online skrzynkami pocztowymi, użyj portalu Przesłane w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Przesyłanie przez administratora w celu przesyłania do firmy Microsoft podejrzanych wiadomości spamowych, phish, adresów URL i plików](admin-submission.md).
 
-- Możesz skonfigurować wysyłanie wiadomości bezpośrednio do firmy Microsoft,  określisz skrzynkę pocztową lub obie te usługi. Aby uzyskać więcej informacji, zobacz [Zasady przesyłania użytkowników](user-submission.md).
+- Możesz skonfigurować wysyłanie wiadomości bezpośrednio do firmy Microsoft, określonej skrzynki pocztowej lub obu tych elementów. Aby uzyskać więcej informacji, zobacz [Zasady przesyłania użytkowników](user-submission.md).
 
-- Aby uzyskać więcej informacji na temat sposobu uzyskania i włączenia dodatków Report Message (Wiadomość raportu) lub Wyłudzanie informacji (Report Phishing), zobacz Włączanie dodatku Report Message (Wiadomość raportu) lub [Report Phishing](enable-the-report-message-add-in.md) (Wyłudzanie informacji raportu).
+- Aby uzyskać więcej informacji na temat pobierania i włączania komunikatu raportu lub dodatków wyłudzania informacji o raportach, zobacz [Włączanie komunikatu raportu lub dodatków wyłudzania informacji raportu](enable-the-report-message-add-in.md).
 
-- Aby uzyskać więcej informacji na temat raportowania wiadomości do firmy Microsoft, zobacz [Raportowanie wiadomości i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
+- Aby uzyskać więcej informacji na temat raportowania komunikatów do firmy Microsoft, zobacz [Raportowanie komunikatów i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
 
-### <a name="turn-off-the-built-in-reporting-experience"></a>Wyłączanie wbudowanego środowisko raportowania
+### <a name="turn-off-the-built-in-reporting-experience"></a>Wyłączanie wbudowanego środowiska raportowania
 
-Nie zalecamy korzystania z wbudowanego środowiska raportowania w aplikacji Outlook ponieważ nie może on używać zasad [przesyłania użytkowników](./user-submission.md). Zamiast tego zalecamy użycie dodatku Wiadomość raportu lub dodatku Do wyłudzania informacji raportów.
+Nie zalecamy wbudowanego środowiska raportowania w Outlook, ponieważ nie może ono korzystać z [zasad przesyłania użytkowników](./user-submission.md). Zamiast tego zalecamy użycie dodatku Komunikat raportu lub dodatku Wyłudzanie informacji o raportach.
 
-Aby można było uruchomić to polecenie cmdlet, należy mieć przypisane odpowiednie uprawnienia. Aby znaleźć uprawnienia wymagane do uruchomienia dowolnego polecenia cmdlet lub parametru w organizacji, zobacz Znajdowanie uprawnień wymaganych do uruchamiania dowolnego Exchange [cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
+Aby można było uruchomić to polecenie cmdlet, należy mieć przypisane odpowiednie uprawnienia. Aby znaleźć uprawnienia wymagane do uruchomienia dowolnego polecenia cmdlet lub parametru w organizacji, zobacz [Znajdowanie uprawnień wymaganych do uruchomienia dowolnego polecenia cmdlet Exchange](/powershell/exchange/find-exchange-cmdlet-permissions).
 
-Uruchom następujące polecenie programu PowerShell, aby wyłączyć wbudowane środowisko raportowania w programie Outlook w sieci Web:
+Uruchom następujące polecenie programu PowerShell, aby wyłączyć wbudowane środowisko raportowania w Outlook w sieci Web:
 
 ```powershell
 Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
 ```
 
-
-## <a name="use-the-report-message-feature"></a>Korzystanie z funkcji komunikatów raportów
+## <a name="use-the-report-message-feature"></a>Korzystanie z funkcji komunikatu raportu
 
 ### <a name="report-junk-and-phishing-messages"></a>Zgłaszanie wiadomości-śmieci i wiadomości wyłudzających informacje
 
-W przypadku wiadomości w skrzynce odbiorczej lub dowolnym innym folderze poczty e-mail z wyjątkiem wiadomości-śmieci użyj następującej metody zgłaszania spamu i wiadomości wyłudzających informacje:
+W przypadku wiadomości w skrzynce odbiorczej lub innym folderze poczty e-mail z wyjątkiem wiadomości-śmieci użyj następującej metody do zgłaszania wiadomości spamu i wyłudzania informacji:
 
-1. Wybierz **wielokropek** Więcej akcji w prawym górnym rogu zaznaczonej wiadomości, wybierz pozycję Zgłoś wiadomość z  menu rozwijanego, a następnie **wybierz pozycję** Wiadomości-śmieci lub Wyłudzanie **informacji**.
+1. Wybierz wielokropek **Więcej akcji** w prawym górnym rogu wybranej wiadomości, wybierz pozycję **Komunikat raportu** z menu rozwijanego, a następnie wybierz pozycję **Wiadomości-śmieci** lub **Wyłudzanie informacji**.
 
    :::image type="content" source="../../media/report-message-more-actions.png" alt-text="Ikona Więcej akcji" lightbox="../../media/report-message-more-actions.png":::
 
-   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="Opcja Wiadomości-śmieci i wyłudzanie informacji w okienku Wiadomość raportu" lightbox="../../media/report-message-junk-phishing.png":::
+   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="Opcja Wiadomości-śmieci i wyłudzanie informacji w okienku Komunikat raportu" lightbox="../../media/report-message-junk-phishing.png":::
 
-2. Wybrane wiadomości zostaną wysłane do firmy Microsoft w celu analizy oraz:
-   - Przeniesiono do folderu Wiadomości-śmieci, jeśli zostały zgłoszone jako spam.
-   - Usunięto, jeśli zostały zgłoszone jako próby wyłudzenia informacji.
+2. Wybrane komunikaty zostaną wysłane do firmy Microsoft w celu analizy i:
+   - Przeniesiono je do folderu Wiadomości-śmieci, jeśli zostały zgłoszone jako spam.
+   - Usunięte, jeśli zostały zgłoszone jako wyłudzanie informacji.
 
-### <a name="report-messages-that-are-not-junk"></a>Zgłaszanie wiadomości niebędących śmieciami
+### <a name="report-messages-that-are-not-junk"></a>Zgłaszanie komunikatów, które nie są wiadomościami-śmieciami
 
-1. Wybierz **wielokropek** Więcej akcji w prawym górnym rogu zaznaczonej wiadomości, wybierz polecenie Zgłoś wiadomość z  menu rozwijanego, a następnie wybierz pozycję **Wiadomość niebędąka śmieciem**.
+1. Wybierz wielokropek **Więcej akcji** w prawym górnym rogu wybranej wiadomości, wybierz pozycję **Komunikat raportu** z menu rozwijanego, a następnie wybierz pozycję **Nie śmieci**.
 
-   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="Ikona udostępniaca więcej akcji" lightbox="../../media/report-message-more-actions.png":::
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="Ikona, która udostępnia więcej akcji" lightbox="../../media/report-message-more-actions.png":::
 
-   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="Opcja Wiadomość niebędące śmieciem w okienku Wiadomość raportu" lightbox="../../media/report-message-not-junk.png":::
+   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="Opcja Nie śmieci w okienku Komunikat raportu" lightbox="../../media/report-message-not-junk.png":::
 
 2. Wybrana wiadomość zostanie wysłana do firmy Microsoft w celu analizy i przeniesiona do skrzynki odbiorczej lub dowolnego innego określonego folderu.
 
-## <a name="view-and-review-reported-messages"></a>Wyświetlanie i przeglądanie zgłoszonych wiadomości
+## <a name="view-and-review-reported-messages"></a>Wyświetlanie i przeglądanie zgłoszonych komunikatów
 
-Aby przejrzeć wiadomości zgłaszane firmie Microsoft przez użytkowników, dostępne są następujące opcje:
+Aby przejrzeć komunikaty, które użytkownicy zgłaszają firmie Microsoft, dostępne są następujące opcje:
 
-- Użyj strony **Przesyłanie** w portalu Microsoft 365 Defender sieci Web. Aby uzyskać więcej informacji, [zobacz Wyświetlanie przesyłania użytkowników do firmy Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
-- Utwórz regułę przepływu poczty e-mail (z znaną również regułą transportu), aby wysyłać kopie zgłoszonych wiadomości. Aby uzyskać instrukcje, [zobacz Używanie reguł przepływu poczty e-mail, aby sprawdzić, co użytkownicy zgłaszają firmie Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
+- Użyj strony **Przesłane** w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Wyświetlanie przesyłania użytkowników do firmy Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
+- Utwórz regułę przepływu poczty (znaną również jako reguła transportu), aby wysyłać kopie zgłoszonych wiadomości. Aby uzyskać instrukcje, zobacz [Używanie reguł przepływu poczty, aby zobaczyć, co użytkownicy zgłaszają firmie Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

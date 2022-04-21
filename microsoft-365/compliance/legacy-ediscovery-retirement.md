@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery i In-Place Hold (oraz odpowiednie polecenia cmdlet programu PowerShell) w Exchange Online zostaną wycofane w pierwszej połowie 2020 r. Polecenie cmdlet Search-Mailbox i microsoft Purview eDiscovery (Premium) w wersji 1.0 są również wycofywane w tym samym okresie.
-ms.openlocfilehash: 228827ec405165bf8308d89fba350eb2192f6723
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0a5a5c5a22aefbb0ad5abe6846915e1da653ee6b
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936604"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973272"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Wycofanie starszych narzędzi zbierania elektronicznych materiałów dowodowych
 
@@ -102,7 +102,7 @@ W poniższej tabeli opisano inne narzędzia, których można użyć do zastąpie
 <tr class="odd">
 <td>Wyszukiwanie, eksportowanie i archiwizowanie do celów prawnych</td>
 <td>Przypadki zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w portalu zgodności </td>
-<td><p>Korzystanie z możliwości podstawowych przypadków zbierania elektronicznych materiałów dowodowych zapewnia równoważność funkcjonalną do In-Place zbierania elektronicznych materiałów dowodowych i In-Place Holds. Obejmuje to następujące elementy:</p>
+<td><p>Korzystanie z możliwości przypadków zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) zapewnia równoważność funkcjonalną do In-Place zbierania elektronicznych materiałów dowodowych i In-Place blokad. Obejmuje to następujące elementy:</p>
 <ul>
 <li>
 <p>Wyszukiwanie jest skalowane do milionów lokalizacji</p>
@@ -208,9 +208,9 @@ W poniższej tabeli opisano inne narzędzia, których można użyć do zastąpie
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Polecenia cmdlet ComplianceSearch i ComplianceSearchAction współpracują ze sobą, aby ułatwić wyszukiwanie i eksportowanie zawartości. Możesz utworzyć nowe wyszukiwanie i wyświetlić oszacowanie wyszukiwania przy użyciu poleceń cmdlet <strong>New-</strong>, <strong>Get-i Start-ComplianceSearch</strong>. <strong></strong> Następnie możesz użyć polecenia cmdlet <strong>New-ComplianceSearchAction</strong> , aby wyeksportować wyniki wyszukiwania. Nadal będziesz musiał użyć podstawowego narzędzia zbierania elektronicznych materiałów dowodowych w portalu zgodności, aby pobrać te wyniki wyszukiwania na komputer lokalny.</p>
+<td><p>Polecenia cmdlet ComplianceSearch i ComplianceSearchAction współpracują ze sobą, aby ułatwić wyszukiwanie i eksportowanie zawartości. Możesz utworzyć nowe wyszukiwanie i wyświetlić oszacowanie wyszukiwania przy użyciu poleceń cmdlet <strong>New-</strong>, <strong>Get-i Start-ComplianceSearch</strong>. <strong></strong> Następnie możesz użyć polecenia cmdlet <strong>New-ComplianceSearchAction</strong> , aby wyeksportować wyniki wyszukiwania. Nadal będziesz musiał użyć narzędzia eDiscovery (Standard) w portalu zgodności, aby pobrać te wyniki wyszukiwania na komputer lokalny.</p>
 <p>
-<p><strong>Uwaga:</strong> Jeśli użyjesz tych poleceń cmdlet do tworzenia wyszukiwań, które nie są skojarzone z podstawowym przypadkiem zbierania elektronicznych materiałów dowodowych, te wyszukiwania będą znajdować się na stronie <strong>wyszukiwania zawartości</strong> w portalu zgodności.</p></td>
+<p><strong>Uwaga:</strong> Jeśli użyjesz tych poleceń cmdlet do tworzenia wyszukiwań, które nie są skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa), te wyszukiwania będą znajdować się na stronie <strong>wyszukiwania zawartości</strong> w portalu zgodności.</p></td>
 </tr>
 <tr class="even">
 <td>Przechowuj zawartość w skrzynce pocztowej</td>
@@ -286,7 +286,7 @@ W poniższej tabeli opisano inne narzędzia, których można użyć do zastąpie
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>Polecenia cmdlet ComplianceSearch i ComplianceSearchAction współpracują ze sobą, aby ułatwić wyszukiwanie i eksportowanie zawartości. Możesz utworzyć nowe wyszukiwanie i wyświetlić oszacowanie wyszukiwania przy użyciu poleceń cmdlet <strong>New-</strong>, <strong>Get-i Start-ComplianceSearch</strong>. <strong></strong> Następnie możesz użyć polecenia <strong>New-ComplianceSearchAction -Export</strong> , aby wyeksportować wyniki wyszukiwania. Nadal będziesz musiał użyć podstawowego narzędzia zbierania elektronicznych materiałów dowodowych w portalu zgodności, aby pobrać te wyniki wyszukiwania na komputer lokalny.</p></p>
+<td><p>Polecenia cmdlet ComplianceSearch i ComplianceSearchAction współpracują ze sobą, aby ułatwić wyszukiwanie i eksportowanie zawartości. Możesz utworzyć nowe wyszukiwanie i wyświetlić oszacowanie wyszukiwania przy użyciu poleceń cmdlet <strong>New-</strong>, <strong>Get-i Start-ComplianceSearch</strong>. <strong></strong> Następnie możesz użyć polecenia <strong>New-ComplianceSearchAction -Export</strong> , aby wyeksportować wyniki wyszukiwania. Nadal będziesz musiał użyć narzędzia eDiscovery (Standard) w portalu zgodności, aby pobrać te wyniki wyszukiwania na komputer lokalny.</p></p>
 </td>
 </tr>
 <tr class="even">
@@ -342,7 +342,7 @@ Te operacje w interfejsie API usług sieci Web Exchange są używane przez funkc
 
 ## <a name="ediscovery-premium-v10"></a>eDiscovery (Premium) v1.0
 
-eDiscovery (Premium) v1.0, czyli wersja eDiscovery (Premium) dostępna w podstawowym przypadku zbierania elektronicznych materiałów dowodowych, klikając pozycję **Przełącz się do zbierania elektronicznych materiałów dowodowych (Premium)**, jest wycofywana. Jego funkcjonalność została zastąpiona nowym [rozwiązaniem zbierania elektronicznych materiałów dowodowych (Premium)](./ediscovery.md) w portalu zgodności.
+eDiscovery (Premium) v1.0, czyli wersja eDiscovery (Premium) dostępna w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa), klikając pozycję **Przełącz się do eDiscovery (Premium)**, jest wycofywana. Jego funkcjonalność została zastąpiona nowym [rozwiązaniem zbierania elektronicznych materiałów dowodowych (Premium)](./ediscovery.md) w portalu zgodności.
 
 Aby ustalić, czy organizacja korzysta z funkcji zbierania elektronicznych materiałów dowodowych (Premium) w wersji 1.0:
 

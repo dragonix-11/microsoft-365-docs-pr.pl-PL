@@ -1,5 +1,5 @@
 ---
-title: Praca z szablonami oceny w programie Microsoft Compliance Manager
+title: Praca z szablonami oceny w programie Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,20 +17,22 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak używać szablonów i zarządzać nimi w celu tworzenia ocen w programie Microsoft Compliance Manager. Tworzenie i modyfikowanie szablonów przy użyciu sformatowanego pliku Excel.
-ms.openlocfilehash: 0dc28eb3058e3b929da47d947b29c7ba7be41111
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Dowiedz się, jak używać szablonów do tworzenia ocen i zarządzać nimi w programie Microsoft Purview Compliance Manager. Tworzenie i modyfikowanie szablonów przy użyciu sformatowanego pliku Excel.
+ms.openlocfilehash: 009b2d742ab135abcde7c3ab73f9ec15c05c8f29
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758998"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972788"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>Dowiedz się więcej o szablonach oceny w menedżerze zgodności
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **W tym artykule:** Dowiedz **się, jak działają szablony** i **jak nimi zarządzać** na stronie szablonów oceny. Uzyskaj instrukcje dotyczące **tworzenia** nowych szablonów, **rozszerzania** i **modyfikowania** istniejących szablonów, **formatowania danych szablonu przy użyciu Excel** i eksportowania **raportów szablonów**.
 
 > [!IMPORTANT]
-> Szablony oceny, które są dostępne dla Organizacji, zależą od umowy licencyjnej. [Przejrzyj szczegóły](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Szablony oceny, które są dostępne dla Organizacji, zależą od umowy licencyjnej. [Przejrzyj szczegóły](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="templates-overview"></a>Omówienie szablonów
 
@@ -78,7 +80,7 @@ GCC kontach high i DOD muszą kupować licencje szablonów w ramach [licencjonow
 
 Aby wypróbować szablony premium przed dokonaniem zakupu, możesz również uzyskać wersje próbne licencji. Licencje próbne są dobre dla maksymalnie 25 szablonów przez 90 dni. Po uzyskaniu licencji próbnej szablony powinny zostać udostępnione w dzierżawie w ciągu 48 godzin.
 
-Jeśli Twoja organizacja ma komercyjną licencję programu Compliance Manager, możesz dowiedzieć się, jak rozpocząć wersję próbną, korzystając z [bezpłatnej wersji próbnej ocen premium programu Microsoft Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
+Jeśli Twoja organizacja ma komercyjną licencję programu Compliance Manager, możesz dowiedzieć się, jak rozpocząć wersję próbną, korzystając z [bezpłatnej wersji próbnej ocen premium programu Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
 Jeśli Twoja organizacja ma licencję GCC lub DOD, wybierz odpowiedni link do wersji próbnej dla swojej organizacji:
 

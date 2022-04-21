@@ -19,17 +19,16 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Najważniejsze zalecenia zespołu ds. cyberbezpieczeństwa firmy Microsoft dotyczące implementowania możliwości zabezpieczeń w celu ochrony środowiska Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e6174da5a9cbac779c147fb0ea091080bf4338a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3b39edc8adbe16d7f085ca9fec9f30d45f484838
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945434"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974262"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Plan bezpieczeństwa — najważniejsze priorytety dla pierwszych 30 dni, 90 dni i nie tylko
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Ten artykuł zawiera najważniejsze zalecenia zespołu ds. cyberbezpieczeństwa firmy Microsoft dotyczące implementowania możliwości zabezpieczeń w celu ochrony środowiska Microsoft 365. Ten artykuł został zaadaptowany na podstawie sesji konferencji Microsoft Ignite — [Zabezpieczanie Microsoft 365 jak profesjonalista ds. cyberbezpieczeństwa: najważniejsze priorytety pierwszych 30 dni, 90 dni i nie tylko](https://www.youtube.com/watch?v=luignzNyR-o). Ta sesja została opracowana i przedstawiona przez Marka Simosa i Matta Kemelhara, Enterprise Cybersecurity Architects.
 

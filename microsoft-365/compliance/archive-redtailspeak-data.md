@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych Red tail Speak z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: af568495cd7ee8b1bf003da71a4582462fbd5c4c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 46b9646fee78fa0589a9af41db35cf79a71e508f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950638"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994573"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Konfigurowanie łącznika do archiwizowania danych Redtail Speak
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze skrzynek pocztowych Redtail Speak to user w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Redtail Speak](https://globanet.com/redtail/) skonfigurowany do przechwytywania elementów z serwera SFTP w organizacji, na którym elementy są odbierane z usługi Redtail. Łącznik konwertuje zawartość z funkcji Redtail Speak na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 

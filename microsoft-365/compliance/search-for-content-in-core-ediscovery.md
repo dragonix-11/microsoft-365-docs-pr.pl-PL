@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Wyszukaj zawartość, która może być istotna dla sprawy zbierania elektronicznych materiałów dowodowych (standardowa).
-ms.openlocfilehash: d97acf066914a7dee0059f27aa0127efe52ea5f3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 00a7c7bdd565a5fc184281fa467db3c56b1c6288
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971610"
+ms.locfileid: "64995343"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Wyszukiwanie zawartości w przypadku zbierania elektronicznych materiałów dowodowych (standardowa)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po utworzeniu sprawy zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (w warstwie Standardowa) i umieszczeniu osób interesujących się sprawą można utworzyć i uruchomić co najmniej jedno wyszukiwanie zawartości istotnej dla sprawy. Wyszukiwania skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa) nie są wyświetlane na stronie **wyszukiwania zawartości** w portalu zgodności usługi Microsoft Purview. Te wyszukiwania są wyświetlane na stronie **Wyszukiwania** w przypadku podstawowego zbierania elektronicznych materiałów dowodowych, z które są skojarzone wyszukiwania. Oznacza to również, że do wyszukiwań skojarzonych ze sprawą mogą uzyskiwać dostęp tylko członkowie sprawy.
 

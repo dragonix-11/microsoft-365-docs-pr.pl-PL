@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano, jak rozpocząć korzystanie z eDiscovery (Standard) w usłudze Microsoft Purview. Po przypisaniu uprawnień do zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy można dodać członków, utworzyć blokady zbierania elektronicznych materiałów dowodowych, a następnie wyszukać i wyeksportować zawartość, która jest odpowiednia dla badania.
-ms.openlocfilehash: bf49ebd886a85005166f07b1a3d6c97e10412e20
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 90470d0128fd15bf295b1c8fa2cd15ef6d5cc384
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934736"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994155"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Wprowadzenie zbierania elektronicznych materiałów dowodowych (Standard) w usłudze Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Usługa Microsoft Purview eDiscovery (Standard) w usłudze Microsoft Purview udostępnia podstawowe narzędzie zbierania elektronicznych materiałów dowodowych, którego organizacje mogą używać do wyszukiwania i eksportowania zawartości w Microsoft 365 i Office 365. Możesz również użyć funkcji zbierania elektronicznych materiałów dowodowych (Standardowa), aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, takich jak skrzynki pocztowe Exchange, witryny SharePoint, konta OneDrive i Microsoft Teams. Do wdrożenia zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) nie jest wymagane żadne zadanie, ale istnieją pewne zadania wstępne, które musi wykonać administrator IT i menedżer zbierania elektronicznych elektronicznych materiałów dowodowych, zanim organizacja będzie mogła rozpocząć wyszukiwanie, eksportowanie i zachowywanie zawartości przy użyciu zbierania elektronicznych materiałów dowodowych (Standard).
 
@@ -142,7 +144,7 @@ Jeśli utworzysz przypadek w kroku 3 i jesteś jedyną osobą, która będzie u�
 
 ## <a name="explore-the-ediscovery-standard-workflow"></a>Eksplorowanie przepływu pracy zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa)
 
-Aby rozpocząć korzystanie z podstawowych zbierania elektronicznych materiałów dowodowych, oto prosty przepływ pracy tworzenia blokad zbierania elektronicznych materiałów dowodowych dla osób zainteresowanych, wyszukiwania zawartości odpowiedniej dla badania, a następnie eksportowania tych danych do dalszego przeglądu. W każdym z tych kroków wyróżnimy również niektóre rozszerzone funkcje zbierania elektronicznych materiałów dowodowych (Standard), które można eksplorować.
+Aby rozpocząć korzystanie z eDiscovery (Standard), oto prosty przepływ pracy tworzenia blokad zbierania elektronicznych materiałów dowodowych dla osób zainteresowanych, wyszukiwania zawartości odpowiedniej dla badania, a następnie eksportowania tych danych do dalszego przeglądu. W każdym z tych kroków wyróżnimy również niektóre rozszerzone funkcje zbierania elektronicznych materiałów dowodowych (Standard), które można eksplorować.
 
 ![Przepływ pracy zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa).](../media/CoreEdiscoveryWorkflow.png)
 

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Użyj akcji inspekcji skrzynki pocztowej MailItemsAccessed, aby przeprowadzić badania kryminalistyczne kont użytkowników, których zabezpieczenia zostały naruszone.
-ms.openlocfilehash: 658a4b079bd7909f8436867efd86d3ac04d61aa2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2256e331075074348e2a72d6528bed1944567b94
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946204"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996201"
 ---
 # <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Używanie inspekcji usługi Microsoft Purview (Premium) do badania kont, których zabezpieczenia zostały naruszone
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Konto użytkownika z naruszeniem zabezpieczeń (nazywane również *przejęciem konta*) jest typem ataku, gdy osoba atakująca uzyskuje dostęp do konta użytkownika i działa jako użytkownik. Tego typu ataki czasami powodują więcej szkód, niż osoba atakująca mogła chcieć. Podczas badania naruszonych kont e-mail należy założyć, że naruszono więcej danych poczty, niż może to wskazywać śledzenie rzeczywistej obecności osoby atakującej. W zależności od typu danych w wiadomościach e-mail należy założyć, że poufne informacje zostały naruszone lub zostaną nałożone grzywny prawne, chyba że możesz udowodnić, że poufne informacje nie zostały ujawnione. Na przykład, organizacje regulowane HIPAA twarz znaczne grzywny, jeśli istnieją dowody, że informacje o zdrowiu pacjenta (PHI) zostały ujawnione. W takich przypadkach osoby atakujące prawdopodobnie nie będą zainteresowane phi, ale organizacje nadal muszą zgłaszać naruszenia danych, chyba że mogą udowodnić inaczej.
 

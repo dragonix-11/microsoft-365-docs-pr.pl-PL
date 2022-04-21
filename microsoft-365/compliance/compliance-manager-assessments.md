@@ -1,5 +1,5 @@
 ---
-title: Tworzenie ocen i zarządzanie nimi w programie Microsoft Compliance Manager
+title: Tworzenie ocen i zarządzanie nimi w programie Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,15 +16,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Twórz oceny w programie Microsoft Compliance Manager, aby ułatwić spełnienie wymagań dotyczących przepisów i certyfikatów, które są ważne dla Twojej organizacji.
-ms.openlocfilehash: 9fbea59eae103e2ce9715fda6c7b7a97d38eb855
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Twórz oceny w programie Microsoft Purview Compliance Manager, aby ułatwić spełnienie wymagań dotyczących przepisów i certyfikatów, które są ważne dla Twojej organizacji.
+ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759020"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972568"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Tworzenie ocen i zarządzanie nimi w menedżerze zgodności
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **W tym artykule:** Dowiedz się, jak dostosować Menedżera zgodności dla organizacji, tworząc **oceny** i zarządzając nimi. W tym artykule przedstawiono sposób tworzenia ocen, organizowania ich w **grupy**, pracy z **kontrolkami**, akceptowania aktualizacji i eksportowania **raportów** oceny.
 
@@ -35,7 +37,7 @@ Menedżer zgodności ułatwia tworzenie ocen, które oceniają zgodność z prze
 Wszystkie oceny są wymienione na karcie oceny w Menedżerze zgodności. Dowiedz się więcej o [tym, jak filtrować widok ocen i interpretować stany stanu](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> Szablony dostępne dla organizacji na potrzeby tworzenia ocen zależą od umowy licencyjnej. [Przejrzyj szczegóły licencjonowania](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Szablony dostępne dla organizacji na potrzeby tworzenia ocen zależą od umowy licencyjnej. [Przejrzyj szczegóły licencjonowania](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="data-protection-baseline-default-assessment"></a>Domyślna ocena punktu odniesienia ochrony danych
 

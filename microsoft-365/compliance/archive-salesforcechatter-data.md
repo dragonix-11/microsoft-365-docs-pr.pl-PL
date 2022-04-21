@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych gadać usługi Salesforce z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 695702d33817fce96cd54e7abf646e1687834f0d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bfaf6de15da6707f9ce5a3ff15c255e8a605af87
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950616"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994595"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Konfigurowanie łącznika do archiwizowania danych gadać usługi Salesforce
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy Salesforce Chatter do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Salesforce Chatter](http://globanet.com/chatter/), który przechwytuje elementy ze źródła danych innej firmy i importuje te elementy do Microsoft 365. Łącznik konwertuje zawartość, taką jak czaty, załączniki i wpisy z usługi Salesforce Chatter, na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 

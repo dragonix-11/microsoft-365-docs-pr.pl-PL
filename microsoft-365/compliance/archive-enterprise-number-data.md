@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych programu SMS i MMS z usługi TeleMessage Enterprise Number Archiver. Dzięki temu można archiwizować dane ze źródeł danych innych firm w usłudze Microsoft Purview, aby można było zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: f1353e0140e1411d2cac79fc4d59043046df302d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b3f429af6caa4d650688b27f5157a212e348ffe8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944112"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995057"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Konfigurowanie łącznika do archiwizowania danych Enterprise Number
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Łącznik TeleMessage w portalu zgodności usługi Microsoft Purview umożliwia importowanie i archiwizowanie wiadomości SMS i wiadomości MMS (Multimedia Messaging Service), wiadomości czatu, nagrań połączeń głosowych i dzienników połączeń głosowych z archiwum numerów Enterprise. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z kontem telemessage organizacji raz dziennie i importuje dane komunikacji mobilnej pracowników przy użyciu archiwum telemessage Enterprise number do skrzynek pocztowych w Microsoft 365.
 

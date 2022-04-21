@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 64d1284b315b7d565a924499ef5af2b815263dac
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0aee30dff19f6d1127e63d14fa69e5d72232e305
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945202"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972538"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustracje dotyczące produktywności na platformie Microsoft 365
 
@@ -107,13 +107,13 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 --> 
 <a name="BKMK_ediscovery"></a>
 
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>architektura Advanced eDiscovery w Microsoft 365
+## <a name="ediscovery-premium-architecture-in-microsoft-365"></a>Architektura zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365
 
-Advanced eDiscovery kompleksowy przepływ pracy i przepływ danych, w tym w środowiskach Microsoft 365 Multi-Geo.
+Kompleksowy przepływ pracy i przepływ danych zbierania elektronicznych materiałów dowodowych (Premium), w tym w środowiskach Microsoft 365 Multi-Geo.
 
 | Element | Opis |
 |:-----|:-----|
-|[![Plakat modelu: architektura Advanced eDiscovery w Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Wyświetl jako obraz](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Pobieranie w formacie PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [Pobierz jako Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Zaktualizowano październik 2020 r.|Zawiera: <ul><li>  Kompleksowy przepływ pracy w jednym środowisku</li><li>Kompleksowy przepływ pracy w środowisku Microsoft 365 Multi-Geo </li><li>Kompleksowy przepływ danych obsługujący przepływ pracy EDRM</li> |
+|[![Plakat modelu: Architektura zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Wyświetl jako obraz](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Pobieranie w formacie PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [Pobierz jako Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Zaktualizowano październik 2020 r.|Zawiera: <ul><li>  Kompleksowy przepływ pracy w jednym środowisku</li><li>Kompleksowy przepływ pracy w środowisku Microsoft 365 Multi-Geo </li><li>Kompleksowy przepływ danych obsługujący przepływ pracy EDRM</li> |
 
 ## <a name="microsoft-telephony-solutions"></a>Rozwiązania telefoniczne firmy Microsoft
 

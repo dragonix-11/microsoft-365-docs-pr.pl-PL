@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: c66c0c60002b67642a2cf8eb8e1a66dc5db140ff
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: 00ded796cb0fc8878b3eee3f656afac426cd0f35
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651438"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973998"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migracja skrzynki pocztowej między dzierżawami (wersja zapoznawcza)
 
@@ -644,7 +644,7 @@ Nie, po migracji skrzynki pocztowej między dzierżawami nie działa funkcja zbi
 
       | Name (Nazwa)                                             |
       | ------------------------------------------------ |
-      | Advanced eDiscovery Storage (500 GB)             |
+      | eDiscovery (Premium) Storage (500 GB)             |
       | Skrytka klienta                                 |
       | Zapobieganie utracie danych                             |
       | Exchange Enterprise CAL Services (EOP, DLP)      |
@@ -669,7 +669,7 @@ Nie, po migracji skrzynki pocztowej między dzierżawami nie działa funkcja zbi
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
       | Microsoft MyAnalytics (pełna)                     |
-      | Office 365 Advanced eDiscovery                   |
+      | Office 365 eDiscovery (Premium)                   |
       | Ochrona usługi Office 365 w usłudze Microsoft Defender (plan 1)       |
       | Ochrona usługi Office 365 w usłudze Microsoft Defender (plan 2)       |
       | zarządzanie dostępem uprzywilejowanym Office 365          |

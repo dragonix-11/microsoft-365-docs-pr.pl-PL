@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak za pomocą korygowania błędów rozwiązywać problemy z danymi w usłudze eDiscovery (Premium), które mogą uniemożliwić prawidłowe przetwarzanie zawartości.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d1331e595f661e1e69f114058579ab9163074b41
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1f56ad34cb295103178c5f244ccd78d7ad3757b0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932183"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994551"
 ---
 # <a name="error-remediation-when-processing-data"></a>Korygowanie błędów podczas przetwarzania danych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Korygowanie błędów umożliwia administratorom zbierania elektronicznych materiałów dowodowych rozwiązywanie problemów z danymi, które uniemożliwiają prawidłowe przetwarzanie zawartości w usłudze Microsoft Purview eDiscovery (Premium). Na przykład nie można przetwarzać plików chronionych hasłem, ponieważ pliki są zablokowane lub szyfrowane. Korzystając z korygowania błędów, administratorzy zbierania elektronicznych materiałów dowodowych mogą pobierać pliki z takimi błędami, usuwać ochronę haseł, a następnie przekazywać skorygowane pliki.
 

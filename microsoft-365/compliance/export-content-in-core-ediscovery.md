@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Opis sposobu eksportowania i pobierania zawartości z przypadku zbierania elektronicznych materiałów dowodowych (Standard) w Microsoft 365.
-ms.openlocfilehash: a0ea33d599ed609c24cf63f1df4c68b882364b1b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2a63d22c8b4cb20e2c0f1317a8496e1cf517b2da
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937966"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995453"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>Eksportowanie zawartości ze sprawy zbierania elektronicznych materiałów dowodowych (standardowa)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po pomyślnym uruchomieniu wyszukiwania skojarzonego z przypadkiem zbierania elektronicznych materiałów dowodowych (Standard) usługi Microsoft Purview można wyeksportować wyniki wyszukiwania. Podczas eksportowania wyników wyszukiwania elementy skrzynki pocztowej są pobierane w plikach PST lub jako pojedyncze wiadomości. Podczas eksportowania zawartości z witryn SharePoint i OneDrive dla Firm eksportowane są kopie natywnych dokumentów Office i innych dokumentów. Eksportowany jest również plik Results.csv zawierający informacje o każdym wyeksportowanym elemencie oraz plik manifestu (w formacie XML), który zawiera informacje o każdym wyniku wyszukiwania.
   

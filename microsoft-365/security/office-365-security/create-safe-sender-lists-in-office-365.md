@@ -1,5 +1,5 @@
 ---
-title: Tworzenie bezpiecznych list nadawców
+title: Tworzenie list bezpiecznych nadawców
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,145 +15,145 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się więcej o dostępnych i preferowanych opcjach zezwalania na wiadomości przychodzące w Exchange Online Protection (EOP).
+description: Administratorzy mogą dowiedzieć się więcej o dostępnych i preferowanych opcjach zezwalania na komunikaty przychodzące w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0370b72ccf29469bd88679d589d715d8897c921f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 898f04826f89e3a33c0cfcca01b717523e7c6122
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681683"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974218"
 ---
-# <a name="create-safe-sender-lists-in-eop"></a>Tworzenie bezpiecznych list nadawców w uchcie EOP
+# <a name="create-safe-sender-lists-in-eop"></a>Tworzenie list bezpiecznych nadawców w ramach EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Jeśli jesteś klientem usługi Microsoft 365 ze skrzynkami pocztowymi w programie Exchange Online lub klientem autonomicznej usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online, program EOP oferuje wiele sposobów zapewniania, że użytkownicy będą otrzymywać wiadomości e-mail od zaufanych nadawców. Te opcje to między Exchange reguł przepływu poczty e-mail (nazywanych także regułami transportu), nadawców poczty Outlook Sejf, listy dozwolonych adresów IP (filtrowania połączeń) oraz dozwolonych list nadawców lub dozwolonych list domen w zasadach ochrony przed spamem. Te opcje można zbiorczo określić jako listy _bezpiecznych nadawców_.
+Jeśli jesteś klientem Microsoft 365 ze skrzynkami pocztowymi w Exchange Online lub autonomicznym klientem Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych, usługa EOP oferuje wiele sposobów zapewnienia, że użytkownicy będą otrzymywać wiadomości e-mail od zaufanych nadawców. Te opcje obejmują Exchange reguły przepływu poczty (nazywane również regułami transportu), Outlook Sejf nadawców, listę dozwolonych adresów IP (filtrowanie połączeń) oraz listy dozwolonych nadawców lub listy dozwolonych domen w zasadach ochrony przed spamem. Łącznie można traktować te opcje jako _listy bezpiecznych nadawców_.
 
-Dostępne listy bezpiecznych nadawców są opisane na poniższej liście w kolejności od najbardziej zalecanej do najmniej zalecanej:
+Dostępne listy bezpiecznych nadawców są opisane na poniższej liście w kolejności od najbardziej zalecanych do najmniej zalecanych:
 
-1. Reguły przepływu poczty e-mail
-2. Outlook Sejf nadawców
-3. Lista zezwalań adresów IP (filtrowanie połączeń)
-4. Listy dozwolonych nadawców lub dozwolonych domen (zasady ochrony przed spamem)
+1. Reguły przepływu poczty
+2. nadawcy Outlook Sejf
+3. Lista dozwolonych adresów IP (filtrowanie połączeń)
+4. Listy dozwolonych nadawców lub listy dozwolonych domen (zasady ochrony przed spamem)
 
-Reguły przepływu poczty e-mail zapewniają większą elastyczność w zakresie dozwolonych tylko odpowiednich wiadomości. Listy dozwolonych nadawców i dozwolonych domen w zasadach ochrony przed spamem nie są tak bezpieczne, jak lista dozwolonych adresów IP, ponieważ domena poczty e-mail nadawcy jest łatwo sfałszowana. Jednak lista adresów IP także stanowi ryzyko, ponieważ poczta e-mail z dowolnej  domeny wysyłanej z tego adresu IP ominie filtrowanie spamu.
+Reguły przepływu poczty zapewniają największą elastyczność w celu zapewnienia, że dozwolone są tylko odpowiednie wiadomości. Listy dozwolonych nadawców i dozwolonych domen w zasadach ochrony przed spamem nie są tak bezpieczne jak lista dozwolonych adresów IP, ponieważ domena poczty e-mail nadawcy jest łatwo sfałszowana. Jednak lista dozwolonych adresów IP również stanowi zagrożenie, ponieważ wiadomości e-mail z _dowolnej_ domeny wysyłanej z tego adresu IP pomijają filtrowanie spamu.
 
 > [!IMPORTANT]
 >
-> - Wiadomości zidentyfikowane jako złośliwe oprogramowanie lub wyłudzanie informacji o wysokiej pewności są zawsze pod kwarantanną niezależnie od opcji listy bezpiecznych nadawców, z których korzystasz. Aby uzyskać więcej informacji, zobacz [Domyślnie bezpieczne w aplikacji Office 365](secure-by-default.md).
+> - Komunikaty, które są identyfikowane jako złośliwe oprogramowanie lub wyłudzanie informacji o wysokim poziomie zaufania, są zawsze poddawane kwarantannie, niezależnie od używanej opcji listy bezpiecznych nadawców. Aby uzyskać więcej informacji, zobacz [Domyślne zabezpieczanie w Office 365](secure-by-default.md).
 >
-> - Uważaj, aby dokładnie monitorować _wyjątki_ od filtrowania spamu za pomocą list bezpiecznych nadawców.
+> - Należy zachować ostrożność, aby ściśle monitorować _wszelkie_ wyjątki występujące w przypadku filtrowania spamu przy użyciu list bezpiecznych nadawców.
 >
-> - Listy bezpiecznych nadawców mogą pomóc w przypadku wyników fałszywie dodatnich (dobra wiadomość e-mail oznaczona jako zła), jednak należy rozważyć użycie list bezpiecznych nadawców jako tymczasowego rozwiązania, w miarę możliwości których należy unikać. Nie zalecamy zarządzania wyników fałszywie dodatnich za pomocą list bezpiecznych nadawców, ponieważ wyjątki od filtrowania spamu mogą otworzyć Twoją organizację na fałszowanie i inne ataki. Jeśli korzystasz z listy bezpiecznych nadawców do zarządzania wynikami fałszywie dodatnimi, musisz mieć ten temat na bieżąco i przygotować wiadomości i pliki do firmy [Microsoft](report-junk-email-messages-to-microsoft.md) .
+> - List bezpiecznych nadawców można używać do pomocy w przypadku wyników fałszywie dodatnich (dobra wiadomość e-mail oznaczona jako zła), ale należy rozważyć użycie list bezpiecznych nadawców jako tymczasowego rozwiązania, którego należy unikać, jeśli to możliwe. Nie zalecamy zarządzania wynikami fałszywie dodatnimi przy użyciu bezpiecznych list nadawców, ponieważ wyjątki od filtrowania spamu mogą otworzyć organizację na fałszowanie i inne ataki. Jeśli nalegasz na używanie list bezpiecznych nadawców do zarządzania wynikami fałszywie dodatnimi, musisz zachować czujność i zachować ostrożność w [temacie Zgłaszanie komunikatów i plików firmie Microsoft](report-junk-email-messages-to-microsoft.md) w gotowości.
 >
-> - Aby zezwolić domenie na wysyłanie nieuwierzytanych wiadomości e-mail (pomijanie ochrony przed fałszowaniem), ale bez pomijania ochrony przed spamem [](learn-about-spoof-intelligence.md) i innymi zabezpieczeniami, możesz użyć szczegółowych informacji o analizie fałszowania oraz listy zezwalania[/](tenant-allow-block-list.md)blokowania dzierżawy.
+> - Aby zezwolić domenie na wysyłanie nieuwierzytelnionych wiadomości e-mail (pomiń ochronę przed fałszowaniem), ale nie pomijaj ochrony przed spamem i innymi zabezpieczeniami, możesz użyć [analizy fałszowania](learn-about-spoof-intelligence.md) i [listy dozwolonych/zablokowanych dzierżaw](tenant-allow-block-list.md).
 >
-> - Usługa EOP Outlook sprawdzić różne właściwości wiadomości w celu określenia nadawcy wiadomości. Aby uzyskać więcej informacji, zobacz [sekcję Uwagi dotyczące zbiorczego poczty e-mail](#considerations-for-bulk-email) w dalszej części tego artykułu.
+> - Metodyka EOP i Outlook sprawdzają różne właściwości komunikatów, aby określić nadawcę wiadomości. Aby uzyskać więcej informacji, zobacz sekcję [Zagadnienia dotyczące zbiorczej poczty e-mail](#considerations-for-bulk-email) w dalszej części tego artykułu.
 >
 
-Z kolei masz też kilka opcji blokowania wiadomości e-mail z określonych źródeł przy użyciu _list zablokowanych nadawców_. Aby uzyskać więcej informacji, zobacz [Tworzenie list zablokowanych nadawców w uchęce EOP](create-block-sender-lists-in-office-365.md).
+Z kolei istnieje kilka opcji blokowania poczty e-mail z określonych źródeł przy użyciu _zablokowanych list nadawców_. Aby uzyskać więcej informacji, zobacz [Create block sender lists in EOP (Tworzenie list nadawców blokowych w ramach EOP](create-block-sender-lists-in-office-365.md)).
 
-## <a name="recommended-use-mail-flow-rules"></a>(Zalecane) Używanie reguł przepływu poczty e-mail
+## <a name="recommended-use-mail-flow-rules"></a>(Zalecane) Używanie reguł przepływu poczty
 
 > [!NOTE]
-> Nie można używać nagłówków wiadomości i reguł przepływu poczty do wyznaczania nadawcy wewnętrznego jako bezpiecznego nadawcy. Procedury w tej sekcji działają tylko dla nadawców zewnętrznych.
+> Nie można użyć nagłówków wiadomości i reguł przepływu poczty, aby wyznaczyć wewnętrznego nadawcę jako bezpiecznego nadawcę. Procedury w tej sekcji działają tylko dla nadawców zewnętrznych.
 
-Reguły przepływu poczty w Exchange Online autonomicznej usługi EOP używają warunków i wyjątków do identyfikowania wiadomości oraz akcji w celu określenia, co należy zrobić z tymi wiadomościami. Aby uzyskać więcej informacji, zobacz [Reguły przepływu poczty e-mail (reguły transportu) w programie Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Reguły przepływu poczty w Exchange Online i autonomicznej operacji EOP używają warunków i wyjątków do identyfikowania komunikatów oraz akcji określających, co należy zrobić z tymi wiadomościami. Aby uzyskać więcej informacji, zobacz [Reguły przepływu poczty (reguły transportu) w Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-W poniższym przykładzie przyjęto, że aby pominąć filtrowanie spamu, contoso.com wiadomości e-mail z poczty e-mail. W tym celu skonfiguruj następujące ustawienia:
+W poniższym przykładzie założono, że potrzebujesz wiadomości e-mail z contoso.com, aby pominąć filtrowanie spamu. W tym celu skonfiguruj następujące ustawienia:
 
-1. **Warunek**: **domena** \> **nadawcy jest contoso.com**\>.
+1. **Warunek**: **Domena nadawcy** \> **jest** \> contoso.com.
 
-2. Skonfiguruj następujące ustawienia:
+2. Skonfiguruj jedno z następujących ustawień:
 
-   - **Warunek reguły przepływu poczty** **e-mail**\>: Nagłówek wiadomości zawiera **dowolny z tych wyrazów** \> **Nazwa** nagłówka: `Authentication-Results` \> **Wartość nagłówka**: `dmarc=pass` lub `dmarc=bestguesspass`.
+   - **Warunek reguły przepływu** **poczty: Nagłówek** \> wiadomości **zawiera dowolną z następujących słów** \> **Nazwa nagłówka**: `Authentication-Results` \> **wartość nagłówka**: `dmarc=pass` lub `dmarc=bestguesspass`.
 
-     Ten warunek sprawdza stan uwierzytelniania poczty e-mail wysyłającej domeny poczty e-mail, aby upewnić się, że domena wysyłająca nie jest sfałszowana. Aby uzyskać więcej informacji na temat uwierzytelniania pocztą e-mail, [zobacz SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) i [DMARC](use-dmarc-to-validate-email.md).
+     Ten warunek sprawdza stan uwierzytelniania poczty e-mail wysyłanej domeny poczty e-mail, aby upewnić się, że domena wysyłająca nie jest sfałszowana. Aby uzyskać więcej informacji na temat uwierzytelniania poczty e-mail, zobacz [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) i [DMARC](use-dmarc-to-validate-email.md).
 
-   - **Lista adresów IP zezwalania**. Określ źródłowy adres IP lub zakres adresów w zasadach filtrowania połączenia.
+   - **Lista dozwolonych adresów IP**: określ źródłowy adres IP lub zakres adresów w zasadach filtru połączeń.
 
-     Użyj tego ustawienia, jeśli domena wysyłająca nie używa uwierzytelniania poczty e-mail. Najbardziej restrykcyjny, jeśli chodzi o źródłowe adresy IP na liście adresów IP. Zalecamy korzystanie z zakresu adresów IP o wartości /24 lub mniejszej (lepszych jest mniej). Nie używaj zakresów adresów IP, które należą do usług dla klientów outlook.com) ani infrastruktury udostępnionej.
+     Użyj tego ustawienia, jeśli domena wysyłająca nie używa uwierzytelniania poczty e-mail. Być tak restrykcyjne, jak to możliwe, jeśli chodzi o źródłowe adresy IP na liście dozwolonych adresów IP. Zalecamy użycie zakresu adresów IP o wartości /24 lub mniejszej (mniej jest lepsze). Nie używaj zakresów adresów IP należących do usług konsumenckich (na przykład outlook.com) ani infrastruktur udostępnionych.
 
    > [!IMPORTANT]
    >
-   > - Nigdy nie konfiguruj reguł przepływu _poczty e-mail_ tylko z domeną nadawcy jako warunek, aby pominąć filtrowanie spamu. Spowoduje to znaczne  zwiększenie prawdopodobieństwa spoofingu wysyłającej domeny (lub podszywania się pod pełny adres e-mail), pominięcia wszystkich filtrów spamu i pominięcia testów uwierzytelniania nadawcy w celu wysłania wiadomości do skrzynki odbiorczej adresata.
+   > - Nigdy nie konfiguruj reguł przepływu poczty _tylko_ z domeną nadawcy jako warunkiem pominięcia filtrowania spamu. Spowoduje to _znaczne_ zwiększenie prawdopodobieństwa, że osoby atakujące będą mogły podszywać się pod domenę wysyłającą (lub personifikować pełny adres e-mail), pominąć filtrowanie spamu i pominąć sprawdzanie uwierzytelniania nadawcy, aby wiadomość dotarła do skrzynki odbiorczej odbiorcy.
    >
-   > - Nie używaj domen, które posiadasz (nazywanych również zaakceptowanych domen) ani popularnych domen (na przykład microsoft.com) jako warunków w zasadach przepływu poczty e-mail. Takie działania są uznawane za bardzo ryzykowne, ponieważ stwarza możliwość wysyłania przez atakujących wiadomości e-mail, które w przeciwnym razie zostaną odfiltrowane.
+   > - Nie używaj domen, których jesteś właścicielem (nazywanych również akceptowanymi domenami) ani popularnych domen (na przykład microsoft.com) jako warunków w regułach przepływu poczty. Jest to uznawane za wysokie ryzyko, ponieważ stwarza możliwość wysyłania wiadomości e-mail przez osoby atakujące, które w przeciwnym razie byłyby filtrowane.
    >
-   > - Jeśli zezwalasz na adres IP, który znajduje się za bramą translacji adresów sieciowych (NAT), musisz znać serwery, które są związane z pulą translatora NAT, aby poznać zakres listy zezwalań na adresy IP. Adresy IP i uczestnicy NAT mogą się zmieniać. W ramach standardowych procedur konserwacji należy okresowo sprawdzać wpisy listy adresów IP listy zezwalań.
+   > - Jeśli zezwolisz na adres IP, który znajduje się za bramą translatora adresów sieciowych (NAT), musisz znać serwery, które są zaangażowane w pulę translatora adresów sieciowych, aby poznać zakres listy dozwolonych adresów IP. Adresy IP i uczestnicy translatora adresów sieciowych mogą ulec zmianie. Należy okresowo sprawdzać wpisy listy dozwolonych adresów IP w ramach standardowych procedur konserwacji.
 
 3. **Warunki opcjonalne**:
-   - **Nadawca** \> **jest wewnętrzny/zewnętrzny** \> **Poza organizacją**: Ten warunek jest niejawny, ale można go użyć do uwzględnienia lokalnych serwerów poczty e-mail, które mogą nie być poprawnie skonfigurowane.
-   - **Temat lub treść** \> **temat lub treść zawiera dowolny z tych wyrazów** \> \<keywords\>: Jeśli możesz dodatkowo ograniczyć wiadomości za pomocą słów kluczowych lub fraz w wierszu tematu lub treści wiadomości, możesz użyć tych wyrazów jako warunku.
+   - **Nadawca** \> **jest wewnętrzny/zewnętrzny** \> **Poza organizacją**: ten warunek jest niejawny, ale można go używać do obsługi kont lokalnych serwerów poczty e-mail, które mogą nie być poprawnie skonfigurowane.
+   - **Temat lub treść** \> **temat lub treść zawiera dowolny z tych wyrazów** \> \<keywords\>: Jeśli możesz dodatkowo ograniczyć komunikaty według słów kluczowych lub fraz w wierszu tematu lub treści wiadomości, możesz użyć tych słów jako warunku.
 
-4. **Akcja**: Skonfiguruj obie te akcje w regułę:
-   1. **Modyfikowanie właściwości wiadomości** \> **ustawianie poziomu ufności filtru spamu** \> **Pomijanie filtrowania spamu**.
-   2. **Modyfikowanie właściwości wiadomości** \> **ustaw nagłówek wiadomości**: **Ustaw nagłówek wiadomości** \<CustomHeaderName\> **na wartość** \<CustomHeaderValue\>.
+4. **Akcja**: skonfiguruj obie te akcje w regule:
+   1. **Modyfikowanie właściwości** \> komunikatu **ustawianie poziomu ufności spamu (SCL)** \> **Pomijanie filtrowania spamu**.
+   2. **Modyfikowanie właściwości** \> komunikatu **ustaw nagłówek komunikatu**: **ustaw nagłówek** \<CustomHeaderName\> **komunikatu na wartość** \<CustomHeaderValue\>.
 
-      Na przykład `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Jeśli reguła zawiera więcej niż jedną domenę, możesz odpowiednio dostosować tekst nagłówka.
+      Na przykład `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Jeśli w regule znajduje się więcej niż jedna domena, możesz odpowiednio dostosować tekst nagłówka.
 
-      Gdy wiadomość pomija filtrowanie spamu ze względu na regułę przepływu poczty, `SFV:SKN` wartość jest stemplowana w nagłówku **X-Forefront-Antispam-Report** . Jeśli wiadomość pochodzi ze źródła, które znajduje się na liście adresów IP, ta wartość również `IPV:CAL` jest dodawana. Te wartości mogą pomóc w rozwiązywaniu problemów.
+      Gdy wiadomość pomija filtrowanie spamu z powodu reguły przepływu poczty, wartość `SFV:SKN` jest ostemplowana w nagłówku **X-Forefront-Antispam-Report** . Jeśli komunikat pochodzi ze źródła, które znajduje się na liście dozwolonych adresów IP, wartość `IPV:CAL` zostanie również dodana. Te wartości mogą pomóc w rozwiązywaniu problemów.
 
-![Ustawienia reguły przepływu poczty e-mail w Aplikacji programu EAC dotyczące pomijania filtrowania spamu.](../../media/1-AllowList-SkipFilteringFromContoso.png)
+      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="Ustawienia reguły przepływu poczty w usłudze EAC dotyczące pomijania filtrowania spamu" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
 
-## <a name="use-outlook-safe-senders"></a>Używanie Outlook Sejf nadawców
+## <a name="use-outlook-safe-senders"></a>Używanie nadawców Outlook Sejf
 
 > [!CAUTION]
-> Ta metoda stwarza duże ryzyko, że atakujący pomyślnie dostarczają wiadomości e-mail do Skrzynki odbiorczej, która w przeciwnym razie zostałaby przefiltrowana. Jednak listy nadawców i domen Sejf użytkowników nie zapobiegają filtrowaniu wiadomości wyłudzających informacje przy Sejf złośliwego oprogramowania ani wiadomości wyłudzających informacje o wysokiej pewności.
+> Ta metoda stwarza wysokie ryzyko, że osoby atakujące pomyślnie dostarczają wiadomość e-mail do skrzynki odbiorczej, która w przeciwnym razie zostałaby przefiltrowana. Jednak listy Sejf nadawców lub domen Sejf użytkownika nie uniemożliwiają filtrowania złośliwego oprogramowania ani wiadomości wyłudzających informacje o wysokim poziomie ufności.
 
-Zamiast ustawienia organizacyjnego użytkownicy lub administratorzy mogą dodawać adresy e-mail nadawców do listy Sejf nadawców w skrzynce pocztowej. Aby uzyskać instrukcje, [zobacz Konfigurowanie ustawień wiadomości-śmieci Exchange Online pocztowych w programie Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Nie jest to potrzebne w większości sytuacji, ponieważ nadawcy pomijają części stosu filtrowania. Nadawca jest zaufany, ale i tak może zostać naruszony i wysłać złośliwą zawartość. Najlepiej jest pozwolić, aby nasze filtry sprawdzały każdą wiadomość i raportowały wynik fałszywie dodatni [/](report-junk-email-messages-to-microsoft.md) ujemny firmie Microsoft, jeśli nasze filtry się nie pomyliły. Pominięcie stosu filtrowania zakłóca również działanie [zap.](zero-hour-auto-purge.md)
+Zamiast ustawienia organizacyjnego użytkownicy lub administratorzy mogą dodać adresy e-mail nadawcy do listy nadawców Sejf w skrzynce pocztowej. Aby uzyskać instrukcje, zobacz [Konfigurowanie ustawień wiadomości-śmieci w Exchange Online skrzynkach pocztowych w Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Nie jest to pożądane w większości sytuacji, ponieważ nadawcy omijają części stosu filtrowania. Mimo że nadawca jest zaufany, nadal można naruszyć bezpieczeństwo nadawcy i wysłać złośliwą zawartość. Najlepiej, aby nasze filtry robiły to, co jest potrzebne do sprawdzenia każdej wiadomości, a następnie [zgłaszały fałszywe wyniki dodatnie/ujemne firmie Microsoft](report-junk-email-messages-to-microsoft.md) , jeśli nasze filtry pomyliły się. Pomijanie stosu filtrowania zakłóca również [zap](zero-hour-auto-purge.md).
 
-Jeśli wiadomości pomijają filtrowanie spamu spowodowane listą nadawców w programie Sejf użytkownika, pole nagłówka **X-Forefront-Antispam-Report** `SFV:SFE`będzie zawierać wartość , co oznacza, że filtrowanie spamu, fałszowania i wyłudzania informacji zostało pominięte.
+Gdy wiadomości pomijają filtrowanie spamu z powodu listy nadawców Sejf użytkownika, pole nagłówka **X-Forefront-Antispam-Report** będzie zawierać wartość `SFV:SFE`, która wskazuje, że filtrowanie pod kątem spamu, fałszowania i wyłudzania informacji zostało pominięte.
 
-## <a name="use-the-ip-allow-list"></a>Korzystanie z listy adresów IP
+## <a name="use-the-ip-allow-list"></a>Używanie listy dozwolonych adresów IP
 
-Jeśli nie możesz używać reguł przepływu poczty e-mail w sposób opisany wcześniej, najlepszą opcją jest dodanie źródłowego serwera lub serwerów poczty e-mail do listy adresów IP w zasadach filtru połączenia. Aby uzyskać szczegółowe informacje, [zobacz Konfigurowanie filtrowania połączeń w u usługi EOP](configure-the-connection-filter-policy.md).
+Jeśli nie możesz użyć reguł przepływu poczty zgodnie z wcześniejszym opisem, następną najlepszą opcją jest dodanie źródłowego serwera lub serwerów poczty e-mail do listy dozwolonych adresów IP w zasadach filtru połączeń. Aby uzyskać szczegółowe informacje, zobacz [Konfigurowanie filtrowania połączeń w ramach EOP](configure-the-connection-filter-policy.md).
 
 **Uwagi**:
 
-- Należy utrzymać minimalną liczbę dozwolonych adresów IP, dlatego unikaj używania całych zakresów adresów IP, gdy tylko jest to możliwe.
-- Nie używaj zakresów adresów IP, które należą do usług dla klientów outlook.com) ani infrastruktury udostępnionej.
-- Regularnie przejrzyj wpisy na liście adresów IP i usuń wpisy, które nie są już potrzebne.
+- Ważne jest, aby zachować minimalną liczbę dozwolonych adresów IP, więc unikaj używania całych zakresów adresów IP zawsze, gdy jest to możliwe.
+- Nie używaj zakresów adresów IP należących do usług konsumenckich (na przykład outlook.com) ani infrastruktur udostępnionych.
+- Regularnie przeglądaj wpisy na liście dozwolonych adresów IP i usuwaj wpisy, których już nie potrzebujesz.
 
 > [!CAUTION]
-> Bez dodatkowej weryfikacji, na przykład reguł przepływu poczty e-mail, wiadomości e-mail ze źródeł na liście adresów IP pomijają filtrowanie spamu i uwierzytelnianie nadawcy (SPF, DKIM, DMARC). Stwarza to duże ryzyko, że atakujący pomyślnie dostarczają wiadomości e-mail do Skrzynki odbiorczej, która w przeciwnym razie zostałaby przefiltrowana. Jednak lista adresów IP nie zapobiega filtrowaniu wiadomości wyłudzających informacje o złośliwym oprogramowaniu ani wiadomościach wyłudzających informacje o wysokiej pewności.
+> Bez dodatkowej weryfikacji, takiej jak reguły przepływu poczty, poczta e-mail ze źródeł na liście dozwolonych adresów IP pomija filtrowanie spamu i uwierzytelnianie nadawcy (SPF, DKIM, DMARC). Powoduje to wysokie ryzyko, że osoby atakujące pomyślnie dostarczają wiadomość e-mail do skrzynki odbiorczej, która w przeciwnym razie zostałaby przefiltrowana. Jednak lista dozwolonych adresów IP nie uniemożliwia filtrowania złośliwego oprogramowania ani wiadomości wyłudzających informacje o wysokim poziomie ufności.
 
-## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Używanie dozwolonych list nadawców lub dozwolonych list domen
+## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Używanie list dozwolonych nadawców lub list dozwolonych domen
 
-Najmniej pożądaną opcją jest użycie listy dozwolonych nadawców lub listy domen dozwolonych w zasadach ochrony przed spamem. Tej opcji należy unikać,  jeśli jest to możliwe, ponieważ nadawcy pomijają wszystkie zabezpieczenia przed spamem, fałszem i wyłudzaniem informacji oraz uwierzytelnianie nadawcy (SPF, DKIM, DMARC). Ta metoda jest najlepsza w przypadku tylko testów tymczasowych. Szczegółowe instrukcje można znaleźć w [temacie Konfigurowanie zasad ochrony przed spamem w umacie usługi EOP](configure-your-spam-filter-policies.md) .
+Najmniej pożądaną opcją jest użycie listy dozwolonych nadawców lub listy dozwolonych domen w zasadach ochrony przed spamem. Należy unikać tej opcji, _jeśli jest to możliwe_ , ponieważ nadawcy pomijają całą ochronę przed spamem, fałszowaniem i wyłudzaniem informacji oraz uwierzytelnianie nadawcy (SPF, DKIM, DMARC). Ta metoda jest najlepiej używana tylko do testowania tymczasowego. Szczegółowe kroki można znaleźć w [temacie Konfigurowanie zasad ochrony przed spamem w temacie EOP](configure-your-spam-filter-policies.md) .
 
-Maksymalne ograniczenie dla tych list wynosi około 1000 wpisów. jednak w portalu będzie można wprowadzić tylko 30 wpisów. Aby dodać więcej niż 30 pozycji, należy użyć programu PowerShell.
+Maksymalny limit dla tych list wynosi około 1000 wpisów; chociaż w portalu będzie można wprowadzić tylko 30 wpisów. Aby dodać więcej niż 30 wpisów, należy użyć programu PowerShell.
 
 > [!CAUTION]
 >
-> - Ta metoda stwarza duże ryzyko, że atakujący pomyślnie dostarczają wiadomości e-mail do Skrzynki odbiorczej, która w przeciwnym razie zostałaby przefiltrowana. dozwolonych nadawców lub dozwolonych domen nie zapobiega filtrowaniu wiadomości wyłudzających informacje przy dużej pewności.
+> - Ta metoda stwarza wysokie ryzyko, że osoby atakujące pomyślnie dostarczają wiadomość e-mail do skrzynki odbiorczej, która w przeciwnym razie zostałaby przefiltrowana. Jednak listy dozwolonych nadawców lub dozwolonych domen nie uniemożliwiają filtrowania złośliwego oprogramowania ani wiadomości wyłudzających informacje o wysokim poziomie ufności.
 >
-> - Nie używaj domen, których jesteś właścicielem (nazywanych także zaakceptowanych domen) ani popularnych domen (na przykład microsoft.com) na listach dozwolonych domen.
+> - Nie używaj domen, których jesteś właścicielem (znanych również jako akceptowane domeny) ani popularnych domen (na przykład microsoft.com) na listach dozwolonych domen.
 
 ## <a name="considerations-for-bulk-email"></a>Zagadnienia dotyczące zbiorczej poczty e-mail
 
-Standardowa wiadomość e-mail SMTP składa się z _koperty_ wiadomości i jej zawartości. Koperta wiadomości zawiera informacje wymagane do przekazywania i dostarczania wiadomości między serwerami SMTP. Zawartość wiadomości zawiera pola nagłówka wiadomości (zbiorczo _nazywane nagłówkiem_ wiadomości) i treść wiadomości. Koperta wiadomości jest opisana w dokumencie RFC 5321, a nagłówek wiadomości jest opisany w dokumencie RFC 5322. Adresaci nigdy nie widzą rzeczywistej koperty wiadomości, ponieważ jest generowana przez proces transmisji wiadomości i w rzeczywistości nie jest ona częścią wiadomości.
+Standardowa wiadomość e-mail SMTP składa się z _koperty wiadomości_ i zawartości wiadomości. Koperta wiadomości zawiera informacje wymagane do przesyłania i dostarczania komunikatu między serwerami SMTP. Zawartość wiadomości zawiera pola nagłówka wiadomości (łącznie nazywane _nagłówkiem komunikatu_) i treść komunikatu. Koperta komunikatu jest opisana w dokumencie RFC 5321, a nagłówek komunikatu jest opisany w dokumencie RFC 5322. Adresaci nigdy nie widzą rzeczywistej koperty wiadomości, ponieważ jest ona generowana przez proces transmisji komunikatów i w rzeczywistości nie jest częścią wiadomości.
 
-- Adres `5321.MailFrom` (znany także jako adres **MAIL FROM** , nadawca P1 lub nadawca koperty) to adres e-mail używany w transmisji SMTP wiadomości. Ten adres e-mail jest zwykle rejestrowany w polu nagłówka **return-ścieżka** w nagłówku wiadomości (chociaż nadawca może wyznaczyć inny adres **e-mail** ze ścieżką zwrotną). Jeśli nie można dostarczyć wiadomości, jest ona adresatem raportu o niedostarczeniu (nazywanego również wiadomością o niedostarczeniu lub wiadomością odsuń).
-- Nadawca `5322.From` (nazywany również nadawcą Od lub P2) jest adresem e-mail w polu  nagłówka Od i jest adresem e-mail nadawcy wyświetlanym w klientach poczty e-mail.
+- Adres `5321.MailFrom` (znany również jako adres **MAIL FROM** , nadawca P1 lub nadawca koperty) to adres e-mail używany podczas transmisji wiadomości przez protokół SMTP. Ten adres e-mail jest zwykle rejestrowany w polu nagłówek **Return-Path** w nagłówku wiadomości (chociaż nadawca może wyznaczyć inny adres **e-mail ze ścieżką powrotną** ). Jeśli nie można dostarczyć wiadomości, jest to adresat raportu o braku dostarczenia (znany również jako komunikat NDR lub bounce).
+- Adres `5322.From` (znany również jako adres **od** lub nadawca P2) to adres e-mail w polu **Nagłówek od** i jest adresem e-mail nadawcy wyświetlanym w klientach poczty e-mail.
 
-Adresy i często są `5321.MailFrom` `5322.From` takie same (komunikacja między osobami). Jednak gdy wiadomości e-mail są wysyłane w imieniu innej osoby, adresy mogą być inne. Dzieje się tak najczęściej w przypadku zbiorczych wiadomości e-mail.
+Często adresy `5321.MailFrom` i `5322.From` są takie same (komunikacja między osobami). Jednak gdy wiadomość e-mail jest wysyłana w imieniu innej osoby, adresy mogą być inne. Dzieje się tak najczęściej w przypadku zbiorczych wiadomości e-mail.
 
-Załóżmy na przykład, że firma Blue Yonder Airlines zatrudniła usługę Podróż Margie'a, aby wysyłać jej wiadomości e-mail z ogłoszeniami. Wiadomość odbierana w Skrzynce odbiorczej ma następujące właściwości:
+Załóżmy na przykład, że Blue Yonder Airlines zatrudniła Margie's Travel do wysyłania reklam e-mail. Komunikat otrzymywany w skrzynce odbiorczej ma następujące właściwości:
 
 - Adres `5321.MailFrom` jest blueyonder.airlines@margiestravel.com.
-- Adres `5322.From` jest blueyonder@news.blueyonderairlines.com, który jest Outlook.
+- Adres `5322.From` jest blueyonder@news.blueyonderairlines.com, co zobaczysz w Outlook.
 
-Sejf listach nadawców i bezpiecznych domenach w zasadach ochrony przed spamem w uciekaniu tylko adresów usługi EOP `5322.From` jest to podobne do tych, które zastosowano do listy Outlook Sejf nadawców`5322.From`, który używa adresu.
+Sejf listy nadawców i listy bezpiecznych domen w zasadach ochrony przed spamem w usłudze EOP sprawdzają tylko `5322.From` adresy, jest to podobne do Outlook Sejf nadawców używających `5322.From` tego adresu.
 
-Aby zapobiec filtrowaniu tego komunikatu, możesz wykonać następujące czynności:
+Aby zapobiec filtrowaniu tego komunikatu, możesz wykonać następujące kroki:
 
-- Dodaj blueyonder@news.blueyonderairlines.com (adres`5322.From`) jako nadawcę wiadomości Outlook Sejf nadawcy.
-- [Użyj reguły przepływu poczty](#recommended-use-mail-flow-rules) e-mail z warunkiem, który wyszukuje wiadomości od blueyonder@news.blueyonderairlines.com ( `5322.From` adres, adres blueyonder.airlines@margiestravel.com (z `5321.MailFrom`) lub obu.
+- Dodaj blueyonder@news.blueyonderairlines.com (`5322.From`adres) jako nadawcę Outlook Sejf.
+- [Użyj reguły przepływu poczty](#recommended-use-mail-flow-rules) z warunkiem, który wyszuka wiadomości z blueyonder@news.blueyonderairlines.com ( `5322.From` adres, blueyonder.airlines@margiestravel.com ( `5321.MailFrom`), lub obu tych elementów.

@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie Microsoft 365 multi-Geo eDiscovery
+title: Konfigurowanie zbierania elektronicznych materiałów dowodowych Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,32 +12,32 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
-description: Dowiedz się, jak za pomocą parametru Region skonfigurować zbierania elektronicznych materiałów dowodowych do użycia w lokalizacjach satelitarnych Microsoft 365 wielu lokalizacji geograficznych.
-ms.openlocfilehash: b0366470984abbdc0ed0b3e407ca8ef6b5a5743f
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Dowiedz się, jak za pomocą parametru Region skonfigurować funkcję zbierania elektronicznych materiałów dowodowych do użycia w lokalizacjach satelitarnych w Microsoft 365 Multi-Geo.
+ms.openlocfilehash: 6160087006e77de085f6a28614b95d1136890fd3
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400940"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973294"
 ---
-# <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 multi-Geo eDiscovery configuration
+# <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 konfiguracji zbierania elektronicznych materiałów dowodowych
 
-[Advanced eDiscovery](../compliance/overview-ediscovery-20.md) umożliwiają administratorowi zbierania elektronicznych materiałów dowodowych z wieloma lokalizacjami geograficznymi przeszukiwanie wszystkich lokalizacji geograficznych bez konieczności korzystania z filtru zabezpieczeń "Region". Dane są eksportowane do wystąpienia platformy Azure, która jest centralną lokalizacją dzierżawy wielowymiarowej. To samo dzieje się w przypadku stosowania wstrzymywania w statystyce, jednak statystyka wstrzymywania wewnątrz trzymania nie będzie wyświetlana bez filtru zabezpieczeń "Region". Statystyki dotyczące hold'a pokazujące 0 nie oznacza, że zawiedzienie zakończyło się niepowodzeniem, o ile jest on pokazywany jako Wł. (pomyślnie).
+[Funkcje zbierania elektronicznych materiałów dowodowych (Premium)](../compliance/overview-ediscovery-20.md) umożliwiają administratorowi zbierania elektronicznych elektronicznych materiałów dowodowych przeszukiwanie wszystkich obszarów geograficznych bez konieczności używania filtru zabezpieczeń "Region". Dane są eksportowane do wystąpienia platformy Azure centralnej lokalizacji dzierżawy z wieloma lokalizacjami geograficznymi. To samo dzieje się z zastosowaniem blokady na opiekuna, jednak statystyki blokady wewnątrz blokady nie będą wyświetlane bez filtru zabezpieczeń "Region". Statystyka blokady pokazująca wartość 0 nie oznacza, że wstrzymanie nie powiodło się, o ile stan blokady jest wyświetlany w pozycji Włączone (pomyślne).
 
-Bez zaawansowanych funkcji zbierania elektronicznych materiałów dowodowych menedżer zbierania elektronicznych materiałów dowodowych lub administrator dzierżawy wielodostępowej będzie mógł przeprowadzać zbierania elektronicznych materiałów dowodowych tylko w lokalizacji centralnej tej dzierżawy. W celu zapewnienia obsługi możliwości zbierania elektronicznych materiałów dowodowych dla lokalizacji satelitarnych za pośrednictwem programu PowerShell dostępny jest nowy parametr filtru zabezpieczeń zgodności o nazwie "Region". Ten parametr może być używany przez dzierżawców, których lokalizacja centralna znajduje się w Ameryce Północnej, Europie lub Azji i Pacyfiku. Advanced eDiscovery jest zalecane dla dzierżawców, których lokalizacja centralna nie znajduje się w Ameryce Północnej, Europie ani Azji i Pacyfiku i którzy muszą przeprowadzać zbierania elektronicznych materiałów dowodowych w lokalizacji geolokalizacji satelitarnych. 
+Bez możliwości zbierania elektronicznych materiałów dowodowych (Premium) menedżer zbierania elektronicznych materiałów dowodowych lub administrator dzierżawy z wieloma obszarami geograficznymi będzie mógł przeprowadzać zbierania elektronicznych materiałów dowodowych tylko w centralnej lokalizacji tej dzierżawy. Aby obsługiwać możliwość przeprowadzania zbierania elektronicznych materiałów dowodowych dla lokalizacji satelitarnych, nowy parametr filtru zabezpieczeń zgodności o nazwie "Region" jest dostępny za pośrednictwem programu PowerShell. Ten parametr może być używany przez dzierżawców, których centralna lokalizacja znajduje się w Ameryka Północna, Europie lub Regionie Azji i Pacyfiku. eDiscovery (Premium) jest zalecane dla dzierżawców, których centralna lokalizacja nie znajduje się w Ameryka Północna, Europie lub Regionie Azji i Pacyfiku i którzy muszą wykonywać zbierania elektronicznych materiałów dowodowych w lokalizacjach geograficznych satelitów. 
 
-Administrator globalny usługi Microsoft 365 musi przypisać uprawnienia Menedżera zbierania elektronicznych materiałów dowodowych w celu umożliwienia innym osobom wykonywania zbierania elektronicznych materiałów dowodowych i przypisania parametru "Region" w obowiązującym filtrze zabezpieczeń zgodności w celu określenia regionu przeprowadzania zbierania elektronicznych materiałów dowodowych jako lokalizacji satelitarnej. W przeciwnym razie nie zostanie przeprowadzone zbierania elektronicznych materiałów dowodowych w lokalizacji satelitarnej. Obsługiwany jest tylko jeden filtr zabezpieczeń "Region" na użytkownika, więc wszystkie regiony muszą być wewnątrz tego samego filtru zabezpieczeń.
+Administrator globalny Microsoft 365 musi przypisać uprawnienia menedżera zbierania elektronicznych materiałów dowodowych, aby umożliwić innym osobom wykonywanie zbierania elektronicznych materiałów dowodowych i przypisać parametr "Region" w odpowiednim filtrze zabezpieczeń zgodności w celu określenia regionu do przeprowadzania zbierania elektronicznych materiałów dowodowych jako lokalizacji satelitarnej, w przeciwnym razie nie zostanie przeprowadzone żadne zbierania elektronicznych materiałów dowodowych dla lokalizacji satelitarnej. Obsługiwany jest tylko jeden filtr zabezpieczeń "Region" na użytkownika, więc wszystkie regiony muszą znajdować się w tym samym filtrze zabezpieczeń.
 
-Gdy dla określonej lokalizacji satelitarnej zostanie ustawiona rola Menedżer zbierania elektronicznych materiałów dowodowych lub Administrator, menedżer zbierania elektronicznych materiałów dowodowych lub administrator będzie mógł wykonywać akcje wyszukiwania zbierania elektronicznych materiałów dowodowych tylko w witrynach SharePoint i witrynach programu OneDrive znajdujących się w tej lokalizacji satelitarnej. Jeśli Menedżer zbierania elektronicznych materiałów dowodowych lub administrator spróbuje przeszukać witryny SharePoint lub OneDrive poza określoną lokalizacją satelitarną, żadne wyniki nie zostaną zwrócone. Ponadto gdy Menedżer zbierania elektronicznych materiałów dowodowych lub administrator lokalizacji satelitarnej wyzwala eksport, dane są eksportowane do wystąpienia platformy Azure tego regionu. Ułatwia to organizacjom zachowanie zgodności, nie zezwalając na eksportowanie zawartości przez kontrolowane obramowanie.
+Gdy dla określonej lokalizacji satelitarnej ustawiono rolę Menedżera zbierania elektronicznych materiałów dowodowych lub administratora, menedżer zbierania elektronicznych materiałów dowodowych lub administrator będzie mógł wykonywać tylko akcje wyszukiwania zbierania elektronicznych materiałów dowodowych względem witryn SharePoint i OneDrive lokacji znajdujących się w tej lokalizacji satelitarnej. Jeśli menedżer zbierania elektronicznych materiałów dowodowych lub administrator podejmie próbę wyszukania SharePoint lub OneDrive lokacji poza określoną lokalizacją satelitarną, żadne wyniki nie zostaną zwrócone. Ponadto gdy menedżer zbierania elektronicznych materiałów dowodowych lub administrator lokalizacji satelitarnej wyzwala eksport, dane są eksportowane do wystąpienia platformy Azure w tym regionie. Pomaga to organizacjom zachować zgodność, nie zezwalając na eksportowanie zawartości przez kontrolowane granice.
 
 > [!NOTE]
-> Jeśli menedżer zbierania elektronicznych materiałów dowodowych musi przeszukiwać wiele lokalizacji satelitarnych programu SharePoint, dla Menedżera zbierania elektronicznych materiałów dowodowych musi zostać utworzone inne konto użytkownika, które określa alternatywną lokalizację satelitarną, w której znajdują się witryny programu OneDrive lub SharePoint.
+> Jeśli menedżer zbierania elektronicznych materiałów dowodowych musi przeszukiwać wiele SharePoint lokalizacji satelitarnych, konieczne będzie utworzenie innego konta użytkownika dla Menedżera zbierania elektronicznych materiałów dowodowych, który określa alternatywną lokalizację satelitarną, w której znajdują się OneDrive lub SharePoint lokacje.
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
 Aby ustawić filtr zabezpieczeń zgodności dla regionu:
 
-1. [Połączenie do Microsoft 365 centrum & zgodności w programie PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Połączenie do programu PowerShell Microsoft 365 Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell)
 
 2. Należy stosować następującą składnię:
 
@@ -51,4 +51,4 @@ Aby ustawić filtr zabezpieczeń zgodności dla regionu:
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-Dodatkowe parametry i składnię można znaleźć w artykule [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) .
+Zobacz artykuł [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) , aby uzyskać dodatkowe parametry i składnię.

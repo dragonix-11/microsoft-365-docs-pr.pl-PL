@@ -22,14 +22,16 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Wyeksportuj wyniki wyszukiwania z wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview na komputer lokalny. Wyniki wiadomości e-mail są eksportowane jako pliki PST. Zawartość z witryn SharePoint i OneDrive dla Firm jest eksportowana jako natywne dokumenty Office.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cdd80829e76bce37bc55b5375597729df947b61b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 38faaf29087e67aef161e46a1fbc6c338d9c33e4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934824"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995475"
 ---
 # <a name="export-content-search-results"></a>Eksportowanie wyników wyszukiwania zawartości
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po pomyślnym uruchomieniu wyszukiwania zawartości można wyeksportować wyniki wyszukiwania na komputer lokalny. Podczas eksportowania wyników wiadomości e-mail są one pobierane na komputer jako pliki PST. Podczas eksportowania zawartości z witryn SharePoint i OneDrive dla Firm eksportowane są kopie natywnych dokumentów Office. Istnieją inne dokumenty i raporty dołączone do wyeksportowanych wyników wyszukiwania.
   

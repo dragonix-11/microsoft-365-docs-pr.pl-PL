@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Rejestrowanie inspekcji skrzynki pocztowej jest domyślnie włączone w Microsoft 365 (nazywane również domyślnym inspekcją skrzynki pocztowej lub domyślnie "inspekcją skrzynki pocztowej"). Ta konfiguracja oznacza, że niektóre akcje wykonywane przez właścicieli skrzynek pocztowych, delegatów i administratorów są automatycznie rejestrowane w dzienniku inspekcji skrzynki pocztowej, gdzie można wyszukiwać działania wykonywane w skrzynce pocztowej.
-ms.openlocfilehash: bb8170b603bc72459e3bbd55fa256df188f42f65
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: d5d966cf4d5b7c58c15df4ce8d4039331ebca8c4
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952891"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972634"
 ---
 # <a name="manage-mailbox-auditing"></a>Zarządzanie inspekcją skrzynki pocztowej
 
@@ -83,7 +83,7 @@ Typy logowania klasyfikują użytkownika, który wykonał inspekcję akcji w skr
 - **Administrator**:
   - Skrzynka pocztowa jest przeszukiwana przy użyciu jednego z następujących narzędzi zbierania elektronicznych materiałów dowodowych firmy Microsoft:
     - Wyszukiwanie zawartości w Centrum zgodności.
-    - eDiscovery lub Advanced eDiscovery w Centrum zgodności.
+    - eDiscovery lub eDiscovery (Premium) w Centrum zgodności.
     - In-Place zbierania elektronicznych materiałów dowodowych w Exchange Online.
   - Dostęp do skrzynki pocztowej jest uzyskiwany za pomocą edytora Microsoft Exchange Server MAPI.
 

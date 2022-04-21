@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik TeleMessage do importowania i archiwizowania danych PROGRAMU SMS i MMS z sieci Verizon w Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
-ms.openlocfilehash: 5df1adad87c9995caeed4e090a7db0e7fbdf7566
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: efa310c17441db67eed31d729daa28dd34755538
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936978"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994969"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Konfigurowanie łącznika do archiwizowania danych usługi Verizon Network
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika TeleMessage w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane usługi Short Messaging Service (SMS) i usługi Multimedia Messaging Service (MMS) z usługi Verizon Network. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z siecią Verizon Network organizacji raz dziennie i importuje dane wiadomości SMS i MMS do skrzynek pocztowych w Microsoft 365.
 

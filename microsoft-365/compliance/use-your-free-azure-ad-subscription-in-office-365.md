@@ -1,5 +1,5 @@
 ---
-title: Użyj bezpłatnej Azure Active Directory subskrypcji
+title: Użyj bezpłatnej subskrypcji usługi Azure Active Directory
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,43 +15,45 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
-description: Dowiedz się, jak Azure Active Directory dostęp do subskrypcji płatnej organizacji.
+description: Dowiedz się, jak uzyskać dostęp do Azure Active Directory, który jest uwzględniony w płatnej subskrypcji organizacji.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 8d41d507cc1d732b0994466ffb8f33a171a2d94e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aef6aa77e8889f8dc386558db77feef093b4e240
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986504"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994837"
 ---
-# <a name="use-your-free-azure-active-directory-subscription"></a>Użyj bezpłatnej Azure Active Directory subskrypcji
+# <a name="use-your-free-azure-active-directory-subscription"></a>Użyj bezpłatnej subskrypcji usługi Azure Active Directory
 
-Jeśli Twoja organizacja ma płatną subskrypcję pakietu Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite lub innego pakietu usługi firmy Microsoft, masz bezpłatną subskrypcję Microsoft Azure Active Directory. Ty i inni administratorzy możecie używać usługi Azure AD do tworzenia kont użytkowników i grup oraz zarządzania nimi. Aby korzystać z usługi Azure AD, po prostu przejdź do portalu Azure Portal i zaloguj się do swojego konta.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Jeśli Twoja organizacja ma płatną subskrypcję Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite lub inne usługi firmy Microsoft, masz bezpłatną subskrypcję Microsoft Azure Active Directory. Ty i inni administratorzy mogą używać usługi Azure AD do tworzenia kont użytkowników i grup oraz zarządzania nimi. Aby korzystać z usługi Azure AD, wystarczy przejść do Azure Portal i zalogować się do swojego konta.
 
 ## <a name="open-a-private-browsing-session"></a>Otwieranie prywatnej sesji przeglądania
 
-Użyj prywatnej sesji przeglądania (nie zwykłej sesji), aby uzyskać dostęp do portalu Azure Portal (w kroku 1 poniżej). Zapobiega to przekazywanemu platformie Azure poświadczeń, za pomocą których zalogowano się w usłudze. Aby otworzyć prywatną sesję przeglądania:
+Użyj sesji przeglądania prywatnego (nie zwykłej sesji), aby uzyskać dostęp do Azure Portal (w kroku 1 poniżej). Zapobiega to przekazywaniu poświadczeń, które są obecnie zalogowane na platformie Azure. Aby otworzyć prywatną sesję przeglądania:
 
-- W Microsoft Edge (starszej wersji) naciśnij klawisz Internet Explorer lub Mozilla FireFox`CTRL+SHIFT+P`.
+- W Microsoft Edge (starsza wersja), Internet Explorer lub Mozilla FireFox naciśnij klawisz `CTRL+SHIFT+P`.
 
 - W Microsoft Edge (najnowsza wersja) lub Google Chrome naciśnij klawisz `CTRL+SHIFT+N`.
 
-## <a name="access-azure-active-directory"></a>Access Azure Active Directory
+## <a name="access-azure-active-directory"></a>Azure Active Directory dostępu
 
-1. Przejdź do [portal.azure.com](https://portal.azure.com) i zaloguj się za pomocą konta służbowego.
+1. Przejdź do [portal.azure.com](https://portal.azure.com) i zaloguj się przy użyciu konta służbowego lub ucznia.
 
-2. W lewym okienku nawigacji w Portalu Azure **kliknij pozycję Azure Active Directory**.
+2. W okienku nawigacji po lewej stronie w Azure Portal kliknij pozycję **Azure Active Directory**.
 
-    ![Kliknij Azure Active Directory w lewym okienku nawigacji w Portalu Azure.](../media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
+    ![Kliknij pozycję Azure Active Directory w okienku nawigacji po lewej stronie w Azure Portal.](../media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
 
-    Zostanie **Azure Active Directory** centrum administracyjnym.
+    Zostanie wyświetlone **centrum administracyjne Azure Active Directory**.
 
 ## <a name="more-information"></a>Więcej informacji
 
-- Bezpłatna Azure Active Directory nie zawiera raportu aktywności dotyczącej logowania. Aby rejestrować działania logowania (co może być przydatne w przypadku naruszenia zabezpieczeń danych), musisz mieć Azure Active Directory — wersja Premium logowania. Aby uzyskać więcej informacji, zobacz [Jak długo dane są przechowywane w usłudze Azure AD?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
+- Bezpłatna subskrypcja Azure Active Directory nie zawiera raportu aktywności Logowania. Aby zarejestrować działanie logowania (które może być przydatne w przypadku naruszenia zabezpieczeń danych), potrzebna jest subskrypcja Azure Active Directory — wersja Premium. Aby uzyskać więcej informacji, zobacz [Jak długo usługa Azure AD przechowuje dane?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
-- Dostęp do centrum **administracyjnego Azure Active Directory** można również uzyskać z centrum administracyjne platformy Microsoft 365. W okienku nawigacji po lewej stronie okna centrum administracyjne platformy Microsoft 365 pozycję **Centra administracyjne** \> [**Azure Active Directory**](https://go.microsoft.com/fwlink/p/?linkid=2067268).
+- Dostęp do centrum administracyjnego **Azure Active Directory** można również uzyskać z Centrum administracyjne platformy Microsoft 365. W okienku nawigacji po lewej stronie Centrum administracyjne platformy Microsoft 365 kliknij pozycję **Centra** \> administracyjne [**Azure Active Directory**](https://go.microsoft.com/fwlink/p/?linkid=2067268).
 
 - Aby uzyskać informacje na temat zarządzania użytkownikami i grupami oraz wykonywania innych zadań zarządzania katalogami, zobacz [Zarządzanie katalogiem usługi Azure AD](/azure/active-directory/active-directory-administer).

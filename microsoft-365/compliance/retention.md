@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania, które ułatwiają zachowanie potrzebnych elementów i usuwanie tego, czego nie potrzebujesz.
-ms.openlocfilehash: e14c438858d5e57dca6ecab0573014171a0c6fb7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 5c9a88b27814b89077a013b03d25b4d53ef3f125
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783320"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972085"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -60,7 +62,7 @@ Za pomocą tych dwóch akcji przechowywania można skonfigurować ustawienia prz
 
 Te ustawienia przechowywania działają z zawartością, która pozwala zaoszczędzić dodatkowe obciążenia związane z tworzeniem i konfigurowaniem dodatkowego magazynu, gdy konieczne jest zachowanie zawartości ze względu na zgodność. Ponadto nie trzeba implementować dostosowanych procesów do kopiowania i synchronizowania tych danych.
 
-Skorzystaj z poniższych sekcji, aby dowiedzieć się więcej o tym, jak działają zasady przechowywania i etykiety przechowywania, kiedy z nich korzystać i jak wzajemnie się uzupełniają. Jeśli jednak wszystko jest gotowe do rozpoczęcia i wdrożenia ustawień przechowywania w niektórych typowych scenariuszach, zobacz [Wprowadzenie z zarządzaniem informacjami](get-started-with-information-governance.md).
+Skorzystaj z poniższych sekcji, aby dowiedzieć się więcej o tym, jak działają zasady przechowywania i etykiety przechowywania, kiedy z nich korzystać i jak wzajemnie się uzupełniają. Jeśli jednak wszystko jest gotowe do rozpoczęcia i wdrożenia ustawień przechowywania w niektórych typowych scenariuszach, zobacz [Wprowadzenie z zarządzaniem cyklem życia danych](get-started-with-data-lifecycle-management.md).
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Jak działają ustawienia przechowywania z zawartością w miejscu
 
@@ -172,7 +174,7 @@ Na przykład można utworzyć i zastosować etykietę przechowywania o nazwie "P
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Używanie etykiety przechowywania jako warunku w zasadach DLP
 
-Etykietę przechowywania można określić jako warunek w zasadach ochrony przed utratą danych (DLP) dla dokumentów w SharePoint. Na przykład skonfiguruj zasady DLP, aby zapobiec udostępnianiu dokumentów poza organizacją, jeśli zastosowano do nich określoną etykietę przechowywania.
+Etykietę przechowywania można określić jako warunek w zasadach ochrony przed utratą danych (DLP) usługi Microsoft Purview dla dokumentów w SharePoint. Na przykład skonfiguruj zasady DLP, aby zapobiec udostępnianiu dokumentów poza organizacją, jeśli zastosowano do nich określoną etykietę przechowywania.
 
 Aby uzyskać więcej informacji, zobacz [Używanie etykiety przechowywania jako warunku w zasadach DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
@@ -227,7 +229,7 @@ Gdy etykiety przechowywania oznaczają elementy jako rekord lub rekord regulacyj
 
 #### <a name="monitoring-retention-labels"></a>Monitorowanie etykiet przechowywania
 
-Na Centrum zgodności platformy Microsoft 365 wybierz pozycję **Klasyfikacja danych** i stronę **Przegląd**, aby monitorować sposób użycia etykiet przechowywania w dzierżawie i zidentyfikować lokalizację elementów oznaczonych etykietami. Aby uzyskać więcej informacji, w tym ważne wymagania wstępne, zobacz [Informacje o klasyfikacji danych](data-classification-overview.md).
+W portalu zgodności usługi Microsoft Purview wybierz pozycję **Klasyfikacja danych** i stronę **Przegląd** , aby monitorować sposób użycia etykiet przechowywania w dzierżawie i identyfikować lokalizację elementów oznaczonych etykietami. Aby uzyskać więcej informacji, w tym ważne wymagania wstępne, zobacz [Informacje o klasyfikacji danych](data-classification-overview.md).
 
 Następnie możesz przejść do szczegółów przy użyciu [Eksploratora zawartości](data-classification-content-explorer.md) i [Eksploratora działań](data-classification-activity-explorer.md).
 
@@ -358,11 +360,13 @@ Aby obejrzeć zarejestrowane seminarium internetowe (wymaga rejestracji), odwied
 
 ## <a name="policy-lookup"></a>Wyszukiwanie zasad
 
-Można skonfigurować wiele zasad przechowywania dla lokalizacji Microsoft 365, a także wiele zasad etykiet przechowywania publikowanych lub automatycznie stosowanych. Aby znaleźć zasady przechowywania przypisane do określonych użytkowników, witryn i grup Microsoft 365, użyj **wyszukiwania zasad** z rozwiązania **do zarządzania informacjami** w Centrum zgodności platformy Microsoft 365:
+Można skonfigurować wiele zasad przechowywania dla lokalizacji Microsoft 365, a także wiele zasad etykiet przechowywania publikowanych lub automatycznie stosowanych. Aby znaleźć zasady przechowywania przypisane do określonych użytkowników, witryn i grup Microsoft 365, użyj wyszukiwania **zasad** z rozwiązań do **zarządzania cyklem życia danych** lub **zarządzania rekordami** w portalu zgodności usługi Microsoft Purview.
+
+Przykład:
 
 ![Wyszukiwanie zasad w celu znalezienia zasad przechowywania przypisanych do określonych użytkowników, witryn i grup Microsoft 365 ](../media/policy-lookup.png)
 
-Musisz określić dokładny adres e-mail użytkownika, dokładny adres URL witryny lub dokładny adres e-mail grupy Microsoft 365.
+Musisz określić dokładny adres e-mail użytkownika, dokładny adres URL witryny lub dokładny adres e-mail grupy Microsoft 365. Na przykład nie można używać symboli wieloznacznych ani częściowych dopasowań.
 
 Opcja dla witryn obejmuje konta OneDrive. Aby uzyskać informacje na temat określania adresu URL konta OneDrive użytkownika, zobacz [Pobieranie listy wszystkich adresów URL OneDrive użytkownika w organizacji](/onedrive/list-onedrive-urls).
 
@@ -575,9 +579,9 @@ Aby użyć poleceń cmdlet przechowywania, należy najpierw [nawiązać połącz
 
 Mimo że ustawienia przechowywania i [blokady tworzone z przypadkiem zbierania elektronicznych materiałów dowodowych](create-ediscovery-holds.md) mogą uniemożliwić trwałe usunięcie danych, są one przeznaczone dla różnych scenariuszy. Aby ułatwić zrozumienie różnic i podjęcie decyzji, której użyć, skorzystaj z następujących wskazówek:
 
-- Ustawienia przechowywania określone w zasadach przechowywania i etykietach przechowywania są przeznaczone dla długoterminowej strategii ładu informacji w celu przechowywania lub usuwania danych w celu spełnienia wymagań dotyczących zgodności. Zakres jest zwykle szeroki, a głównym celem jest lokalizacja i zawartość, a nie poszczególni użytkownicy. Można skonfigurować początek i koniec okresu przechowywania z opcją automatycznego usuwania zawartości bez dodatkowej interwencji administratora.
+- Ustawienia przechowywania określone w zasadach przechowywania i etykietach przechowywania są przeznaczone dla długoterminowej strategii zarządzania cyklem życia danych w celu przechowywania lub usuwania danych w celu spełnienia wymagań dotyczących zgodności. Zakres jest zwykle szeroki, a głównym celem jest lokalizacja i zawartość, a nie poszczególni użytkownicy. Można skonfigurować początek i koniec okresu przechowywania z opcją automatycznego usuwania zawartości bez dodatkowej interwencji administratora.
 
-- Blokady zbierania elektronicznych materiałów dowodowych (podstawowe przypadki zbierania elektronicznych materiałów dowodowych lub Advanced eDiscovery) są przeznaczone do ograniczonego czasu trwania w celu zachowania danych na potrzeby dochodzenia prawnego. Zakres jest specyficzny dla zawartości będącej własnością zidentyfikowanych użytkowników. Rozpoczęcie i zakończenie okresu przechowywania nie jest konfigurowalne, ale zależy od poszczególnych akcji administratora bez opcji automatycznego usuwania zawartości po wydaniu blokady.
+- Blokady dla przypadków zbierania elektronicznych materiałów dowodowych (eDiscovery (Standard) lub eDiscovery (Premium) są przeznaczone na ograniczony czas trwania w celu zachowania danych na potrzeby dochodzenia prawnego. Zakres jest specyficzny dla zawartości będącej własnością zidentyfikowanych użytkowników. Rozpoczęcie i zakończenie okresu przechowywania nie jest konfigurowalne, ale zależy od poszczególnych akcji administratora bez opcji automatycznego usuwania zawartości po wydaniu blokady.
 
 Podsumowanie, aby porównać przechowywanie z blokadami:
 
@@ -590,7 +594,7 @@ Podsumowanie, aby porównać przechowywanie z blokadami:
 |Usuwanie zawartości: |Tak (opcjonalnie) |Nie |
 |Koszty administracyjne: |Niskie |High (Wysoki) |
 
-Jeśli zawartość podlega zarówno ustawieniu przechowywania, jak i przechowywaniu zbierania elektronicznych materiałów dowodowych, zachowanie zawartości dla blokady zbierania elektronicznych materiałów dowodowych zawsze ma pierwszeństwo. W ten sposób [zasady przechowywania](#the-principles-of-retention-or-what-takes-precedence) rozszerzają się o blokadę zbierania elektronicznych materiałów dowodowych, ponieważ przechowują dane, dopóki administrator ręcznie nie zwolni blokady. Jednak pomimo tego pierwszeństwa nie używaj blokad zbierania elektronicznych materiałów dowodowych do długoterminowego zarządzania informacjami. Jeśli obawiasz się automatycznego usuwania danych, możesz skonfigurować ustawienia przechowywania, aby zachować elementy na zawsze, lub użyć [przeglądu dyspozycji](disposition.md#disposition-reviews) z etykietami przechowywania.
+Jeśli zawartość podlega zarówno ustawieniu przechowywania, jak i przechowywaniu zbierania elektronicznych materiałów dowodowych, zachowanie zawartości dla blokady zbierania elektronicznych materiałów dowodowych zawsze ma pierwszeństwo. W ten sposób [zasady przechowywania](#the-principles-of-retention-or-what-takes-precedence) rozszerzają się o blokadę zbierania elektronicznych materiałów dowodowych, ponieważ przechowują dane, dopóki administrator ręcznie nie zwolni blokady. Jednak pomimo tego pierwszeństwa nie używaj funkcji zbierania elektronicznych materiałów dowodowych do długoterminowego zarządzania cyklem życia danych. Jeśli obawiasz się automatycznego usuwania danych, możesz skonfigurować ustawienia przechowywania, aby zachować elementy na zawsze, lub użyć [przeglądu dyspozycji](disposition.md#disposition-reviews) z etykietami przechowywania.
 
 Jeśli używasz starszych narzędzi zbierania elektronicznych materiałów dowodowych do zachowania danych, zobacz następujące zasoby:
 
@@ -605,7 +609,7 @@ Jeśli używasz starszych narzędzi zbierania elektronicznych materiałów dowod
 
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Używanie zasad przechowywania i etykiet przechowywania zamiast starszych funkcji
 
-Jeśli chcesz proaktywnie przechowywać lub usuwać zawartość w Microsoft 365 w celu zapewnienia ładu informacyjnego, zalecamy używanie zasad przechowywania i etykiet przechowywania zamiast następujących starszych funkcji.
+Jeśli chcesz proaktywnie przechowywać lub usuwać zawartość w Microsoft 365 na potrzeby zarządzania cyklem życia danych, zalecamy użycie zasad przechowywania i etykiet przechowywania zamiast następujących starszych funkcji.
 
 Jeśli obecnie używasz tych starszych funkcji, będą one nadal działać równolegle z zasadami przechowywania Microsoft 365 i etykietami przechowywania. Zalecamy jednak, aby w przyszłości używać zasad przechowywania Microsoft 365 i etykiet przechowywania, aby korzystać z jednego rozwiązania do zarządzania przechowywaniem i usuwaniem zawartości w wielu obciążeniach w Microsoft 365.
 
@@ -638,9 +642,9 @@ Jeśli skonfigurowano SharePoint lokacje pod kątem zasad typów zawartości lub
 ## <a name="related-information"></a>Informacje pokrewne
 
 - [Limity usługi SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Limity i specyfikacje dla Microsoft Teams](/microsoftteams/limits-specifications-teams)
-- [Zasoby ułatwiające spełnienie wymagań prawnych dotyczących zarządzania informacjami i zarządzania rekordami](retention-regulatory-requirements.md)
+- [Limity i specyfikacje dla Microsoft Teams](/microsoftteams/limits-specifications-teams) 
+- [Zasoby ułatwiające spełnienie wymagań prawnych dotyczących zarządzania cyklem życia danych i zarządzania rekordami](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Zobacz [Wprowadzenie z zarządzaniem informacjami](get-started-with-information-governance.md). Ten artykuł zawiera informacje o subskrypcjach, uprawnieniach i łączach do kompleksowych wskazówek dotyczących konfiguracji scenariuszy przechowywania.
+Zobacz [Wprowadzenie z zarządzaniem cyklem życia danych](get-started-with-data-lifecycle-management.md). Ten artykuł zawiera informacje o subskrypcjach, uprawnieniach i łączach do kompleksowych wskazówek dotyczących konfiguracji scenariuszy przechowywania.

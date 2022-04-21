@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Użyj narzędzia content search eDiscovery w centrum zgodności, aby wyszukać zawartość w różnych usługach Microsoft 365.
-ms.openlocfilehash: 374a9ce119c0e4563c14ae4eda15ce562dc8643d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f5d8a398f36c1ab3c0f83234718346e8dd20434e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938384"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994514"
 ---
 # <a name="create-a-content-search"></a>Tworzenie wyszukiwania zawartości
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Za pomocą narzędzia Do zbierania elektronicznych materiałów dowodowych wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview można wyszukiwać zawartość w miejscu, taką jak wiadomości e-mail, dokumenty i konwersacje dotyczące wiadomości błyskawicznych w organizacji. Użyj tego narzędzia, aby wyszukać zawartość w tych chmurowych źródłach danych Microsoft 365:
   

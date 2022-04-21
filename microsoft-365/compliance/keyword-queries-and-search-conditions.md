@@ -22,14 +22,16 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o właściwościach poczty e-mail i dokumentu, które można wyszukiwać przy użyciu narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w Microsoft 365.
-ms.openlocfilehash: 09c939f7d92bf06a9eab89d8ac45fec78bd424a8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f00d257a558d252ca0176166d42d02cd72dad0aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936648"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995387"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Zapytania słów kluczowych i warunki wyszukiwania dla zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule opisano właściwości poczty e-mail i dokumentu, które można wyszukiwać w elementach wiadomości e-mail i Microsoft Teams rozmowach na czacie w Exchange Online oraz dokumenty przechowywane w witrynach SharePoint i OneDrive dla Firm przy użyciu narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview. Obejmuje to wyszukiwanie zawartości, zbieranie elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i zbieranie elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) (wyszukiwanie zbierania elektronicznych materiałów dowodowych w Premium) jest nazywane *kolekcjami*. Aby wyszukać te właściwości, możesz również użyć **\*poleceń cmdlet -ComplianceSearch** w programie PowerShell Security & Compliance Center. W artykule opisano również:
 

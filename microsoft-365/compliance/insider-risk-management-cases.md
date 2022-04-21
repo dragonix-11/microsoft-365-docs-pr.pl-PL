@@ -1,7 +1,7 @@
 ---
-title: Przypadki zarządzania ryzykiem w niejawnym programie testów
-description: Dowiedz się więcej o przypadkach zarządzania ryzykiem w niejawnym programie testów w Microsoft 365
-keywords: Microsoft 365, zarządzanie ryzykiem w niejawnym programie testów, zarządzanie ryzykiem, zgodność
+title: Przypadki zarządzania ryzykiem wewnętrznym
+description: Dowiedz się więcej o przypadkach zarządzania ryzykiem wewnętrznym w usłudze Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -13,229 +13,231 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 59933705bb113e4ad23b12fe8bf00e8d0ca2e701
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 687eb92693d3343fb0ef5b2392d4622d9af4bb9d
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775813"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971952"
 ---
-# <a name="insider-risk-management-cases"></a>Przypadki zarządzania ryzykiem w niejawnym programie testów
+# <a name="insider-risk-management-cases"></a>Przypadki zarządzania ryzykiem wewnętrznym
 
-Przypadki są kluczowych w zarządzaniu ryzykiem w niejawnym programie testów i umożliwiają dogłębne badanie problemów wygenerowanych na podstawie wskaźników ryzyka zdefiniowanych w twoich zasadach oraz działania na ich podstawie. Sprawy są tworzone ręcznie na podstawie alertów w sytuacjach, w których potrzebne jest dalsze działanie w celu rozwiązania problemu związanego ze zgodnością użytkownika. Zakres każdej sprawy jest ograniczony do jednego użytkownika, a do istniejącej lub nowej sprawy można dodać wiele alertów dla użytkownika.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po zbadaniu szczegółów sprawy możesz podjąć działanie w:
+Przypadki są sednem zarządzania ryzykiem wewnętrznym i umożliwiają głębokie badanie i działanie w przypadku problemów generowanych przez wskaźniki ryzyka zdefiniowane w zasadach. Przypadki są tworzone ręcznie na podstawie alertów w sytuacjach, w których konieczne jest podjęcie dalszych działań w celu rozwiązania problemu związanego ze zgodnością dla użytkownika. Każdy przypadek jest ograniczony do pojedynczego użytkownika, a wiele alertów dla użytkownika można dodać do istniejącego przypadku lub do nowego przypadku.
 
-- Wysłanie użytkownikowi powiadomienia
-- rozwiązywanie sprawy jako problemu
-- udostępnianie sprawy wystąpieniu ServiceNow lub adresatowi wiadomości e-mail
-- eskalowanie sprawy w przypadku Advanced eDiscovery dochodzenia
+Po zbadaniu szczegółów sprawy możesz podjąć działania, wykonując następujące czynności:
 
-Obejrzyj klip [wideo Analizy i](https://www.youtube.com/watch?v=UONUSmkRC8s) eskalacji ryzyka w niejawnym programie testów, aby uzyskać omówienie tego, w jaki sposób sprawy są analizowane i zarządzane w zarządzaniu ryzykiem w niejawnym programie testów.
+- wysyłanie użytkownikowi powiadomienia
+- rozpoznawanie sprawy jako łagodnej
+- udostępnianie sprawy wystąpieniu usługi ServiceNow lub adresatowi wiadomości e-mail
+- eskalowanie sprawy dotyczącej dochodzenia zbierania elektronicznych materiałów dowodowych (Premium)
 
-## <a name="cases-dashboard"></a>Pulpit nawigacyjny spraw
+Zapoznaj się z [filmem Dotyczącym badania i eskalacji w ramach zarządzania ryzykiem wewnętrznym](https://www.youtube.com/watch?v=UONUSmkRC8s) , aby zapoznać się z omówieniem sposobu badania przypadków i zarządzania nimi w ramach zarządzania ryzykiem wewnętrznym.
 
-Pulpit nawigacyjny spraw zarządzania ryzykiem w niejawnym **programie** testów umożliwia wyświetlanie spraw i działanie w związku z nimi. Każdy widżet raportu na pulpicie nawigacyjnym wyświetla informacje z ostatnich 30 dni.
+## <a name="cases-dashboard"></a>Pulpit nawigacyjny przypadków
 
-- **Aktywne sprawy**: Łączna liczba aktywnych spraw, które są w toku badania.
-- **Sprawy z ostatnich 30 dni**: Całkowita liczba spraw utworzonych, posortowanych według  stanu *Aktywne i Zamknięte*.
-- **Statystyka**: średni czas aktywnego spraw wymieniony w godzinach, dniach lub miesiącach.
+**Pulpit nawigacyjny Przypadków** zarządzania ryzykiem wewnętrznym umożliwia wyświetlanie i działanie w sprawach. Każdy widżet raportu na pulpicie nawigacyjnym wyświetla informacje z ostatnich 30 dni.
 
-Oprócz bieżącego stanu następujących atrybutów sprawy kolejka spraw zawiera listę wszystkich aktywnych i zamkniętych spraw dla organizacji:
+- **Aktywne sprawy**: całkowita liczba aktywnych spraw objętych dochodzeniem.
+- **Przypadki w ciągu ostatnich 30 dni**: całkowita liczba utworzonych przypadków posortowanych według stanu *Aktywne* i *Zamknięte* .
+- **Statystyki**: średni czas aktywnych przypadków, wymieniony w godzinach, dniach lub miesiącach.
 
-- **Nazwa sprawy**: nazwa sprawy zdefiniowana po potwierdzeniu alertu i utworzeniu sprawy.  
-- **Stan**: Stan sprawy (aktywna lub *zamknięta*).
-- **Użytkownik**: użytkownik w przypadku sprawy. Jeśli jest włączona anonimizacja nazw użytkowników, są wyświetlane informacje zanonimizowane.
-- **Czas otwarcia sprawy**: czas, który minął od otwarcia sprawy.
-- **Alerty dotyczące wszystkich zasad**: liczba uwzględnianych w przypadku dopasowania zasad. Liczba ta może zwiększyć się po dodaniu nowych alertów do sprawy.
-- **Ostatnia aktualizacja sprawy**: Czas, który minął od momentu dodania notatki dotyczącej sprawy lub zmiany w stanie sprawy.
-- **Ostatnia aktualizacja przez**: Nazwa analityka zarządzających ryzykiem w niejawnym programie testów lub osób, które ostatnio zaktualizowały sprawę.
+Kolejka przypadków zawiera listę wszystkich aktywnych i zamkniętych spraw dla twojej organizacji, oprócz bieżącego stanu następujących atrybutów przypadku:
 
-![Pulpit nawigacyjny przypadków zarządzania ryzykiem w niejawnym programie testów.](../media/insider-risk-cases-dashboard.png)
+- **Nazwa przypadku**: nazwa sprawy, zdefiniowana po potwierdzeniu alertu i utworzeniu sprawy.  
+- **Stan**: stan sprawy *Aktywny* lub *Zamknięty*.
+- **Użytkownik**: użytkownik w tym przypadku. Jeśli włączono anonimizację nazw użytkowników, są wyświetlane zanonimizowane informacje.
+- **Sprawa czasowa otwarta**: czas, który minął od czasu otwarcia sprawy.
+- **Łączna liczba alertów zasad**: liczba dopasowań zasad uwzględnionych w tym przypadku. Ta liczba może wzrosnąć, jeśli do sprawy zostaną dodane nowe alerty.
+- **Przypadek ostatniej aktualizacji**: czas, który minął od momentu dodania noty sprawy lub zmiany stanu sprawy.
+- **Ostatnia aktualizacja**: nazwa analityka lub badacza zarządzania ryzykiem wewnętrznym, który ostatnio zaktualizował sprawę.
 
-Użyj **kontrolki wyszukiwania,** aby wyszukać określony tekst w nazwach spraw, a następnie użyj filtru przypadków, aby posortować sprawy według następujących atrybutów:
+![Pulpit nawigacyjny Przypadków zarządzania ryzykiem wewnętrznym.](../media/insider-risk-cases-dashboard.png)
+
+Użyj **kontrolki Wyszukiwania** , aby wyszukać nazwy przypadków dla określonego tekstu i użyć filtru przypadku do sortowania przypadków według następujących atrybutów:
 
 - Stan
-- Godzina otwarcia, daty rozpoczęcia i daty zakończenia
+- Przypadek godziny otwarcia, data rozpoczęcia i data zakończenia
 - Ostatnia aktualizacja, data rozpoczęcia i data zakończenia
 
-## <a name="filter-cases"></a>Filtrowanie spraw
+## <a name="filter-cases"></a>Przypadki filtrowania
 
-W zależności od liczby i typu aktywnych zasad zarządzania ryzykiem w niejawnym programie testów w organizacji przeglądanie dużej kolejki spraw może być trudne. Stosowanie filtrów przypadków może ułatwić analitykom i chętom sortowanie spraw według kilku atrybutów. Aby filtrować alerty na **pulpicie nawigacyjnym Sprawy**, wybierz **kontrolkę Filtruj** . Sprawy można filtrować według co najmniej jednego atrybutu:
+W zależności od liczby i typu aktywnych zasad zarządzania ryzykiem wewnętrznym w organizacji przejrzenie dużej kolejki przypadków może być trudne. Użycie filtrów przypadków może pomóc analitykom i badaczom sortować przypadki według kilku atrybutów. Aby filtrować alerty na **pulpicie nawigacyjnym Przypadki**, wybierz kontrolkę **Filtruj** . Przypadki można filtrować według co najmniej jednego atrybutu:
 
-- **Stan**: Wybierz co najmniej jedną wartość stanu, aby przefiltrować listę przypadków. Dostępne opcje to *Aktywne i* *Zamknięte*.
-- **Otwarta sprawa czasu**: wybierz datę rozpoczęcia i zakończenia otwarcia sprawy.
-- **Ostatnia aktualizacja**: Wybierz daty rozpoczęcia i zakończenia, gdy sprawa została zaktualizowana.
+- **Stan**: wybierz co najmniej jedną wartość stanu, aby odfiltrować listę przypadków. Opcje to *Aktywne* i *Zamknięte*.
+- **Sprawa czasowa otwarta**: wybierz daty rozpoczęcia i zakończenia, kiedy sprawa została otwarta.
+- **Ostatnia aktualizacja**: wybierz daty rozpoczęcia i zakończenia, kiedy sprawa została zaktualizowana.
 
 ## <a name="investigate-a-case"></a>Badanie sprawy
 
-Bardziej dogłębne badanie alertów dotyczących zarządzania ryzykiem w ramach niejawnego programu testów jest niezbędne do podejmowania odpowiednich działań naprawczych. Przypadki zarządzania ryzykiem w niejawnym programie testów są centralnym narzędziem do zarządzania, które umożliwia bardziej szczegółowe informacje dotyczące historii aktywności ryzyka użytkownika, alertów, sekwencji zdarzeń ryzyka oraz eksplorowanie zawartości i wiadomości narażona na zagrożenia. Analitycy i scentralizowanie spraw również korzystają ze spraw do scentralizowanego scentralizować opinie i notatki dotyczące recenzji oraz przetwarzać proces rozwiązywania problemów.
+Dokładniejsze badanie alertów dotyczących zarządzania ryzykiem wewnętrznym ma kluczowe znaczenie dla podejmowania odpowiednich działań naprawczych. Przypadki zarządzania ryzykiem wewnętrznym to centralne narzędzie do zarządzania, które umożliwia dokładniejsze zapoznanie się z historią działań związanych z ryzykiem użytkownika, szczegółami alertów, sekwencją zdarzeń o podwyższonym ryzyku oraz badaniem zawartości i komunikatów narażonych na ryzyko. Analitycy ryzyka i badacze używają również przypadków do scentralizowania opinii i notatek przeglądowych oraz do rozpatrywania spraw.
 
-Wybranie sprawy spowoduje otwarcie narzędzi do zarządzania sprawami i umożliwi analitykom i schłoństwom szczegółowe informacje dotyczące spraw.
+Wybranie sprawy otwiera narzędzia do zarządzania przypadkami i umożliwia analitykom i śledczym analizowanie szczegółów spraw.
 
 ### <a name="case-overview"></a>Omówienie sprawy
 
-Karta **Przegląd przypadków** zawiera podsumowanie szczegółów przypadku dla analityków ryzyka i osób, które je suną. Zawiera następujące informacje w obszarze **Informacje o tej sprawie** .
+Karta **Przegląd sprawy** zawiera podsumowanie szczegółów sprawy dla analityków ryzyka i badaczy. Zawiera ona następujące informacje w obszarze **Informacje o tym przypadku**
 
-- **Stan**: bieżący stan sprawy (aktywna lub zamknięta).
-- **Data utworzenia sprawy**: data i godzina utworzenia sprawy.
-- **Wynik ryzyka użytkownika**: bieżący obliczony poziom ryzyka użytkownika w przypadku sprawy. Ten wynik jest obliczany co 24 godziny i używa wyników alertów dotyczących ryzyka ze wszystkich aktywnych alertów skojarzonych z użytkownikiem.
-- **Adres** e-mail: alias e-mail użytkownika w przypadku sprawy.
+- **Stan**: bieżący stan sprawy, Aktywny lub Zamknięty.
+- **Przypadek utworzony w dniu**: data i godzina utworzenia sprawy.
+- **Ocena ryzyka użytkownika**: bieżący obliczony poziom ryzyka użytkownika dla przypadku. Ten wynik jest obliczany co 24 godziny i używa wyników ryzyka alertów ze wszystkich aktywnych alertów skojarzonych z użytkownikiem.
+- **Wiadomość e-mail**: alias wiadomości e-mail użytkownika dla sprawy.
 - **Organizacja lub dział**: organizacja lub dział, do których przypisano użytkownika.
-- **Nazwa kierownika**: nazwa menedżera użytkownika.
-- **Adres e-mail** kierownika: alias e-mail menedżera użytkownika.
+- **Nazwa menedżera**: nazwa menedżera użytkownika.
+- **Wiadomość e-mail menedżera**: alias wiadomości e-mail menedżera użytkownika.
 
-![Szczegóły przypadku zarządzania ryzykiem w niejawnym programie testów.](../media/insider-risk-case-details.png)
+![Szczegóły sprawy dotyczącej zarządzania ryzykiem wewnętrznym.](../media/insider-risk-case-details.png)
 
-Karta **Omówienie sprawy zawiera** również sekcję **Alerty** , która zawiera następujące informacje na temat alertów o dopasowaniu zasad skojarzonych ze sprawą:
+Karta **Przegląd przypadku** zawiera również sekcję **Alerty** , która zawiera następujące informacje dotyczące alertów dopasowania zasad skojarzonych ze sprawą:
 
-- **Dopasowania zasad**: nazwa zasad zarządzania ryzykiem w niejawnym programie testów skojarzonych z alertami dopasowania dla działań użytkowników.
+- **Dopasowania zasad**: nazwa zasad zarządzania ryzykiem wewnętrznym skojarzonych z alertami dopasowania dla działania użytkownika.
 - **Stan**: stan alertu.
 - **Ważność**: ważność alertu.
-- **Wykryty czas**: czas, który minął od wygenerowania alertu.
+- **Wykryto czas**: czas, który minął od czasu wygenerowania alertu.
 
 ### <a name="alerts"></a>Alerty
 
-Na **karcie Alerty** są podsumowywane bieżące alerty, które zostały uwzględnione w przypadku tej sprawy. Nowe alerty mogą zostać dodane do istniejącej sprawy i podczas ich przypisywania będą dodawane do kolejki **alertów** . W kolejce są wymienione następujące atrybuty alertu:
+Karta **Alerty** zawiera podsumowanie bieżących alertów uwzględnionych w tym przypadku. Nowe alerty mogą zostać dodane do istniejącego przypadku i zostaną dodane do kolejki **alertów** w miarę ich przypisywania. Kolejka zawiera następujące atrybuty alertów:
 
 - Stan
-- Ważność
-- Wykryty czas
+- Ważności
+- Wykryto czas
 
 Wybierz alert z kolejki, aby wyświetlić stronę **szczegółów alertu** .
 
-Użyj kontrolki wyszukiwania, aby wyszukać nazwy alertów dla określonego tekstu, a następnie użyj filtru alertów, aby posortować sprawy według następujących atrybutów:
+Użyj kontrolki wyszukiwania, aby wyszukać nazwy alertów pod kątem określonego tekstu, a następnie użyj filtru alertów do sortowania przypadków według następujących atrybutów:
 
 - Stan
-- Ważność
-- Wykryto czas, datę rozpoczęcia i datę zakończenia
+- Ważności
+- Wykryto godzinę, datę rozpoczęcia i datę zakończenia
 
-Filtruj alerty według kilku atrybutów, takich jak:
+Użyj kontrolki filtru, aby filtrować alerty według kilku atrybutów, w tym:
 
-- **Stan**: Wybierz co najmniej jedną wartość stanu, aby przefiltrować listę alertów. Opcje to *Potwierdzono*, *Odrzucone*, *Wymaga recenzji* i *Rozwiązano*.
-- **Ważność**: Wybierz co najmniej jeden poziom zagrożenia zagrożenia, aby przefiltrować listę alertów. Dostępne opcje to *Wysoki*, *Średni* i *Niski*.
-- **Wykryty czas**: Wybierz daty rozpoczęcia i zakończenia dla czasu utworzenia alertu.
-- **Zasady**. Wybierz jedną lub więcej zasad, aby filtrować alerty wygenerowane przez wybrane zasady.
+- **Stan**: wybierz co najmniej jedną wartość stanu, aby odfiltrować listę alertów. Opcje to *Potwierdzone*, *Odrzucone*, *Przegląd potrzeb* i *Rozwiązane*.
+- **Ważność**: wybierz co najmniej jeden poziom ważności alertu, aby odfiltrować listę alertów. Opcje są *wysokie*, *średnie* i *niskie*.
+- **Wykryto czas**: wybierz daty rozpoczęcia i zakończenia utworzenia alertu.
+- **Zasady**: wybierz co najmniej jedną zasadę, aby filtrować alerty generowane przez wybrane zasady.
 
-### <a name="user-activity"></a>Aktywność użytkowników
+### <a name="user-activity"></a>Aktywność użytkownika
 
-Karta **Aktywność użytkownika umożliwia** analitykom ryzyka i skojarzeńom możliwość przeglądania szczegółów aktywności oraz wizualnej reprezentacji wszystkich działań skojarzonych z alertami i sprawami o ryzyku. Na przykład w ramach procesu sprawdzania alertów analitycy mogą potrzebować przejrzenia wszystkich działań ryzyka związanych ze sprawą, aby uzyskać więcej szczegółowych informacji. W takich przypadkach skuchacze ryzyka mogą przeglądać szczegóły aktywności użytkowników i wykres bąbelkowy, aby ułatwić zrozumienie ogólnego zakresu działań związanych ze sprawą. Aby uzyskać więcej informacji na temat wykresu aktywności użytkowników, zobacz artykuł Działania związane z [zarządzaniem ryzykiem w niejawnym programie](insider-risk-management-activities.md#user-activity) testów.
+Karta **Aktywność użytkownika** umożliwia analitykom ryzyka i badaczom przeglądanie szczegółów działania i używanie wizualnej reprezentacji wszystkich działań związanych z alertami i przypadkami ryzyka. Na przykład w ramach procesu klasyfikacji alertów analitycy mogą wymagać przejrzenia wszystkich działań związanych z ryzykiem związanych ze sprawą, aby uzyskać więcej szczegółów. W takich przypadkach badacze ryzyka mogą przeglądać szczegóły aktywności użytkownika i wykres bąbelkowy, aby ułatwić zrozumienie ogólnego zakresu działań związanych ze sprawą. Aby uzyskać więcej informacji na temat wykresu aktywności użytkowników, zobacz artykuł [Insider risk management activities (Działania związane z zarządzaniem ryzykiem wewnętrznym](insider-risk-management-activities.md#user-activity) ).
 
-### <a name="activity-explorer-preview"></a>Eksplorator aktywności (wersja zapoznawcza)
+### <a name="activity-explorer-preview"></a>Eksplorator działań (wersja zapoznawcza)
 
-Karta **Eksplorator aktywności** umożliwia analitykom ryzyka i chętnikom przeglądanie szczegółów aktywności skojarzonych z alertami ryzyka. Na przykład w ramach działań zarządzania sprawą słoje i analitycy mogą wymagać przejrzenia wszystkich działań ryzyka związanych ze sprawą, aby uzyskać więcej szczegółowych informacji. Za pomocą **Eksploratora aktywności** recenzentzy mogą szybko przeglądać oś czasu wykrytych ryzykownych działań oraz identyfikować i filtrować wszystkie działania ryzyka skojarzone z alertami.
+Karta **Eksplorator działań** umożliwia analitykom ryzyka i badaczom przeglądanie szczegółów działań skojarzonych z alertami o ryzyku. Na przykład w ramach działań związanych z zarządzaniem sprawami śledczy i analitycy mogą wymagać przejrzenia wszystkich działań związanych z ryzykiem związanych ze sprawą, aby uzyskać więcej szczegółów. W **Eksploratorze działań** recenzenci mogą szybko przejrzeć oś czasu wykrytych ryzykownych działań oraz zidentyfikować i odfiltrować wszystkie działania związane z ryzykiem skojarzone z alertami.
 
-Aby uzyskać więcej informacji na temat Eksploratora aktywności, zobacz artykuł Działania związane z [zarządzaniem ryzykiem w ramach niejawnego programu testów](insider-risk-management-activities.md#activity-explorer) .
+Aby uzyskać więcej informacji na temat Eksploratora działań, zobacz artykuł [Insider risk management activities (Działania związane z zarządzaniem ryzykiem wewnętrznym](insider-risk-management-activities.md#activity-explorer) ).
 
 ### <a name="content-explorer"></a>Eksplorator zawartości
 
-Karta **Eksplorator zawartości umożliwia** skojarzoną z zagrożeniami kopię wszystkich pojedynczych plików i wiadomości e-mail skojarzonych z alertami ryzyka. Jeśli na przykład jest tworzony alert, gdy użytkownik pobiera setki plików z usługi SharePoint Online i działanie uruchamia alert zasad, wszystkie pobrane pliki tego alertu są przechwytywane i kopiowane do sprawy zarządzania ryzykiem w niejawnym programie testów z oryginalnych źródeł przechowywania.
+Karta **Eksplorator zawartości** umożliwia badaczom ryzyka przeglądanie kopii wszystkich pojedynczych plików i wiadomości e-mail skojarzonych z alertami o podwyższonym ryzyku. Jeśli na przykład alert zostanie utworzony, gdy użytkownik pobierze setki plików z usługi SharePoint Online, a działanie wyzwoli alert zasad, wszystkie pobrane pliki alertu zostaną przechwycone i skopiowane do przypadku zarządzania ryzykiem wewnętrznym z oryginalnych źródeł magazynu.
 
-Eksplorator zawartości to zaawansowane narzędzie z podstawowymi i zaawansowanymi funkcjami wyszukiwania i filtrowania. Aby dowiedzieć się więcej o oknie Eksplorator zawartości, zobacz Eksplorator zawartości [zarządzania ryzykiem w niejawnym programie testów](insider-risk-management-content-explorer.md).
+Eksplorator zawartości to zaawansowane narzędzie z podstawowymi i zaawansowanymi funkcjami wyszukiwania i filtrowania. Aby dowiedzieć się więcej na temat korzystania z Eksploratora zawartości, zobacz [Insider risk management Content explorer (Eksplorator zawartości zarządzania ryzykiem wewnętrznym](insider-risk-management-content-explorer.md)).
 
-![Eksplorator zawartości — przypadek zarządzania ryzykiem w niejawnym programie testów.](../media/insider-risk-content-explorer.png)
+![Przypadek zarządzania ryzykiem wewnętrznym Eksplorator zawartości.](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>Uwagi dotyczące sprawy
 
-Na **karcie Notatki dotyczące** sprawy w takim przypadku analitycy ryzyka i skomentowali sprawę, udostępniali komentarze, opinie i szczegółowe informacje na temat swojej pracy nad sprawą. Notatki są trwałymi dodatkami do sprawy i nie można ich edytować ani usuwać po zapisaniu notatki. Gdy sprawa zostanie utworzona na podstawie alertu, komentarze wprowadzone w oknie dialogowym Potwierdzanie **alertu** i tworzenie przypadku niejawnego programu testów są automatycznie dodawane jako notatka sprawy.
+Na karcie **Notatki** o przypadku w tym przypadku analitycy ryzyka i badacze dzielą się komentarzami, opiniami i szczegółowymi informacjami na temat swojej pracy w tej sprawie. Notatki są trwałymi dodatkami do sprawy i nie można ich edytować ani usuwać po zapisaniu notatki. Gdy przypadek jest tworzony na podstawie alertu, komentarze wprowadzone w oknie dialogowym **Potwierdzanie alertu i tworzenie przypadku ryzyka dla niejawnych testerów** są automatycznie dodawane jako uwaga dotycząca przypadku.
 
-Na pulpicie nawigacyjnym notatek o sprawy są wyświetlane notatki użytkownika, który utworzył notatkę, oraz czas minął od jej zapisania. Aby wyszukać określone słowo kluczowe w polu tekstowym notatki dotyczącej sprawy, użyj przycisku Wyszukaj na pulpicie nawigacyjnym sprawy i wprowadź określone słowo kluczowe.
+Na pulpicie nawigacyjnym notatek o przypadku są wyświetlane notatki użytkownika, który utworzył notatkę, oraz czas, który minął od momentu zapisania notatki. Aby wyszukać w polu tekstowym case note dla określonego słowa kluczowego, użyj przycisku **Wyszukaj** na pulpicie nawigacyjnym przypadku i wprowadź określone słowo kluczowe.
 
 Aby dodać notatkę do sprawy:
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie **ryzykiem w niejawnym programie** testów i wybierz **kartę** Sprawy.
-2. Zaznacz sprawę, a następnie wybierz **kartę Notatki dotyczące sprawy** .
-3. Wybierz **pozycję Dodaj notatkę o przypadku**.
-4. W **oknie dialogowym Dodawanie** notatki dotyczącej sprawy wpisz notatkę. Wybierz **pozycję Zapisz** , aby dodać notatkę do sprawy, lub pozycję **Anuluj** zamknięcie bez zapisywania notatki w tej sprawie.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+2. Wybierz przypadek, a następnie wybierz kartę **Notatki o sprawie** .
+3. Wybierz pozycję **Dodaj notatkę o wielkości liter**.
+4. W oknie dialogowym **Dodawanie notatek przypadku** wpisz notatkę dla sprawy. Wybierz pozycję **Zapisz** , aby dodać notatkę do sprawy lub wybierz pozycję **Anuluj** zamknięcie bez zapisywania notatki w sprawie.
 
-### <a name="contributors"></a>Współautorzy
+### <a name="contributors"></a>Współpracowników
 
-Na **karcie Współautorzy** w takim przypadku analitycy ryzyka i osoby chłoną, że mogą dodawać do sprawy innych recenzentów. Domyślnie wszyscy użytkownicy przypisani do analityków  zarządzania ryzykiem w niejawnym programie  testów i grupy osób zarządzających ryzykiem w niejawnym programie testów są wymienini jako współautorzy dla każdej aktywnej i zamkniętej sprawy. Tylko użytkownicy z przypisaną **rolą grupy** chętnych do zarządzania ryzykiem w niejawnym programie testów mają uprawnienia do wyświetlania plików i wiadomości w Eksploratorze zawartości.
+Na **karcie Współautorzy** w tym przypadku analitycy ryzyka i badacze mogą dodawać innych recenzentów do sprawy. Domyślnie wszyscy użytkownicy przypisani do ról **Insider Risk Management Analysts** i **Insider Risk Management Investigators** są wymienieni jako współautorzy każdego aktywnego i zamkniętego przypadku. Tylko użytkownicy przypisani do roli **Badacze zarządzania ryzykiem wewnętrznym** mają uprawnienia do wyświetlania plików i komunikatów w Eksploratorze zawartości.
 
-Tymczasowy dostęp do sprawy można przyznać, dodając użytkownika jako współautora. Współautorzy mają pełną kontrolę nad zarządzaniem sprawą w danej sprawie z wyjątkiem:
+Tymczasowy dostęp do sprawy można udzielić, dodając użytkownika jako współautora. Współautorzy mają kontrolę nad zarządzaniem wszystkimi przypadkami w konkretnym przypadku, z wyjątkiem:
 
-- Uprawnienia do potwierdzania lub odrzucania alertów
-- Uprawnienia do edytowania współautorów spraw
-- Uprawnienia do wyświetlania plików i wiadomości w Eksploratorze zawartości
+- Uprawnienie do potwierdzania lub odrzucania alertów
+- Uprawnienie do edytowania współautorów w przypadku przypadków
+- Uprawnienie do wyświetlania plików i komunikatów w Eksploratorze zawartości
 
 Aby dodać współautora do sprawy:
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie **ryzykiem w niejawnym programie** testów i wybierz **kartę** Sprawy.
-2. Wybierz sprawę, a następnie wybierz **kartę Współautorzy** .
-3. Wybierz **pozycję Dodaj współautora**.
-4. W **oknie dialogowym Dodawanie** współautora zacznij wpisywać nazwę użytkownika, którego chcesz dodać, a następnie wybierz użytkownika z listy sugerowanych użytkowników. Ta lista jest generowana na podstawie Azure Active Directory Twojej subskrypcji dzierżawy.
-5. Wybierz **pozycję Dodaj** , aby dodać użytkownika jako współautora, lub **wybierz pozycję Anuluj** zamykanie okna dialogowego bez dodawania użytkownika jako współautora.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+2. Wybierz przypadek, a następnie wybierz kartę **Współautorzy** .
+3. Wybierz pozycję **Dodaj współautora**.
+4. W oknie dialogowym **Dodawanie współautora** zacznij wpisywać nazwę użytkownika, którego chcesz dodać, a następnie wybierz użytkownika z listy sugerowanych użytkowników. Ta lista jest generowana na podstawie Azure Active Directory subskrypcji dzierżawy.
+5. Wybierz pozycję **Dodaj** , aby dodać użytkownika jako współautora, lub wybierz pozycję **Anuluj** , aby zamknąć okno dialogowe bez dodawania użytkownika jako współautora.
 
 ## <a name="case-actions"></a>Akcje sprawy
 
-Zagrożenia zagrożenia mogą dotyczyć jednej z kilku metod, zależnie od istotności sprawy, historii ryzyka użytkownika i wytycznych organizacji dotyczących ryzyka. W niektórych sytuacjach może być konieczne eskalowanie sprawy do użytkownika lub analizy danych w celu współpracy z innymi obszarami organizacji i bardziej dogłębnego odpowiedzialności za działania związane z ryzykiem. Zarządzanie ryzykiem w ramach niejawnego programu testów jest ściśle zintegrowane z Microsoft 365 rozwiązaniami zgodności, które pomagają w zarządzaniu rozdzielczością w pełni.
+Badacze ryzyka mogą podjąć działania w sprawie w jednej z kilku metod, w zależności od ważności sprawy, historii ryzyka użytkownika i wytycznych dotyczących ryzyka organizacji. W niektórych sytuacjach może być konieczne eskalowanie sprawy do użytkownika lub badania danych w celu współpracy z innymi obszarami organizacji i dokładniejszego poznania działań związanych z ryzykiem. Zarządzanie ryzykiem wewnętrznym jest ściśle zintegrowane z innymi rozwiązaniami usługi Microsoft Purview, które ułatwiają kompleksowe zarządzanie rozwiązaniami.
 
-### <a name="send-email-notice"></a>Powiadomienie o wysłaniu wiadomości e-mail
+### <a name="send-email-notice"></a>Wysyłanie powiadomienia e-mail
 
-W większości przypadków akcje użytkownika tworzące alerty o ryzyku w niejawnym programie testów są przypadkowe lub przypadkowe. Wysłanie do użytkownika powiadomienia z przypomnieniem pocztą e-mail jest skuteczną metodą dokumentowania przeglądu sprawy i działań oraz stanowi metodę przypominania użytkownikom o zasadach firmy lub nakierowania ich na odświeżone szkolenia. Powiadomienia są generowane na podstawie [szablonów zawiadomień, które tworzysz dla](insider-risk-management-notices.md) swojej infrastruktury zarządzania ryzykiem w niejawnym programie testów.
+W większości przypadków akcje użytkownika, które tworzą alerty o ryzyku wewnętrznym, są przypadkowe lub przypadkowe. Wysyłanie powiadomienia o przypomnieniu do użytkownika za pośrednictwem poczty e-mail jest skuteczną metodą dokumentowania przeglądu i akcji sprawy oraz jest metodą przypominającą użytkownikom o zasadach firmowych lub wskazującą im szkolenie odświeżania. Powiadomienia są generowane na podstawie [szablonów powiadomień tworzonych](insider-risk-management-notices.md) dla infrastruktury zarządzania ryzykiem wewnętrznym.
 
-Należy pamiętać, że wysłanie powiadomienia e-mail do użytkownika ***nie** _ rozwiązuje sprawy jako _Closed*. W niektórych przypadkach może być chcieć pozostawić otwartą sprawę po wysłaniu do użytkownika powiadomienia o konieczności wyszukiwania kolejnych działań ryzyka bez otwierania nowej sprawy. Aby rozstrzygować sprawę po wysłaniu powiadomienia, po wysłaniu powiadomienia  należy wybrać pozycję Rozwiąż sprawę jako krok kolejny po wysłaniu powiadomienia.
+Należy pamiętać, że wysłanie powiadomienia e-mail do użytkownika ***nie** rozwiązuje sprawy jako _Closed*. W niektórych przypadkach możesz pozostawić sprawę otwartą po wysłaniu powiadomienia do użytkownika, aby wyszukać więcej działań związanych z ryzykiem bez otwierania nowego przypadku. Jeśli chcesz rozwiązać problem po wysłaniu powiadomienia, po wysłaniu powiadomienia musisz wybrać rozwiązanie **sprawy** jako kolejny krok.
 
 Aby wysłać powiadomienie do użytkownika przypisanego do sprawy:
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie **ryzykiem w niejawnym programie** testów i wybierz **kartę** Sprawy.
-2. Zaznacz sprawę, a następnie wybierz przycisk **Wyślij powiadomienie e-mail** na pasku narzędzi akcji sprawy.
-3. W **oknie dialogowym Wysyłanie powiadomienia e-mail** wybierz kontrolkę  rozwijaną Wybierz szablon powiadomienia, aby wybrać szablon powiadomienia dla powiadomienia. To zaznaczenie wstępnie wypełnia pozostałe pola w treści powiadomienia.
-4. Przejrzyj pola powiadomienia i zaktualizuj je odpowiednio do potrzeb. Wprowadzone tutaj wartości zastąpią wartości w szablonie.
-5. Wybierz **pozycję Wyślij**, aby wysłać powiadomienie do użytkownika,  lub pozycję Anuluj zamknij okno dialogowe bez wysyłania powiadomienia do użytkownika. Wszystkie wysłane powiadomienia są dodawane do kolejki notatek o sprawy na **pulpicie nawigacyjnym notatek o sprawy** .
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+2. Wybierz przypadek, a następnie wybierz przycisk **Wyślij powiadomienie e-mail** na pasku narzędzi akcji sprawy.
+3. W oknie dialogowym **Wysyłanie powiadomienia e-mail** wybierz kontrolkę listy rozwijanej **Wybierz szablon powiadomienia** , aby wybrać szablon powiadomienia dla powiadomienia. To zaznaczenie wstępnie wypełnia inne pola w zawiadomieniu.
+4. Przejrzyj pola powiadomień i zaktualizuj je odpowiednio. Wprowadzone tutaj wartości zastąpią wartości szablonu.
+5. Wybierz pozycję **Wyślij** , aby wysłać powiadomienie do użytkownika lub wybierz pozycję **Anuluj** , aby zamknąć okno dialogowe bez wysyłania powiadomienia do użytkownika. Wszystkie wysłane powiadomienia są dodawane do kolejki notatek o przypadku na pulpicie nawigacyjnym **Notatek sprawy** .
 
-### <a name="escalate-for-investigation"></a>Eskalowanie do badania
+### <a name="escalate-for-investigation"></a>Eskalowanie w celu zbadania
 
-Eskalowanie sprawy w celu analizy użytkowników w sytuacjach, w których jest konieczna dodatkowa recenzja prawnie w przypadku aktywności użytkownika związanej z ryzykiem. Ta eskalacja powoduje otwarcie nowej Advanced eDiscovery przypadku w Twojej Microsoft 365 organizacji. Advanced eDiscovery udostępnia end-to-end przepływu pracy, który umożliwia zachowywanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która reaguje na wewnętrzne i zewnętrzne badania prawne Twojej organizacji. Umożliwia także zespołowi prawnemu zarządzanie całym przepływem pracy z powiadomieniem o zerowym zrzeka się w celu skomunikowania się z lekarzami zaangażowanymi w sprawę. Przypisanie recenzenta jako opiekuna w przypadku Advanced eDiscovery sprawy utworzonej na podstawie sprawy związanej z zarządzaniem ryzykiem w ramach niejawnego programu testów pomaga Twojemu zespołowi prawnemu podjąć odpowiednie działania i zarządzać zachowywanie zawartości. Aby dowiedzieć się więcej o Advanced eDiscovery spraw, zobacz [Omówienie Advanced eDiscovery w Microsoft 365](overview-ediscovery-20.md).
+Eskaluj sprawę do badania użytkownika w sytuacjach, w których wymagana jest dodatkowa kontrola prawna dla działania użytkownika związanego z ryzykiem. Ta eskalacja powoduje otwarcie nowego przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) w organizacji Microsoft 365. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania prawne organizacji. Umożliwia również zespołowi prawnemu zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę. Przypisanie recenzenta jako opiekuna w sprawie zbierania elektronicznych materiałów dowodowych (Premium) utworzonej na podstawie sprawy zarządzania ryzykiem wewnętrznym pomaga zespołowi prawnemu podjąć odpowiednie działania i zarządzać zachowaniem zawartości. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)](overview-ediscovery-20.md).
 
-Aby eskalować sprawę do badania użytkowników:
+Aby eskalować sprawę do badania użytkownika:
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie **ryzykiem w niejawnym programie** testów i wybierz **kartę** Sprawy.
-2. Wybierz sprawę, a następnie wybierz przycisk **Eskaluj do badania** na pasku narzędzi akcji sprawy.
-3. W **oknie dialogowym Eskalij do badania** wprowadź nazwę nowego badania użytkownika. W razie potrzeby wprowadź uwagi dotyczące sprawy i wybierz pozycję **Eskaluj**.
-4. Przejrzyj pola powiadomienia i zaktualizuj je odpowiednio do potrzeb. Wprowadzone tutaj wartości zastąpią wartości w szablonie.
-5. Wybierz **pozycję** Potwierdź, aby utworzyć sprawę badania użytkowników, **lub pozycję Anuluj** , aby zamknąć okno dialogowe bez tworzenia nowego przypadku badania użytkownika.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+2. Wybierz przypadek, a następnie wybierz przycisk **Eskaluj do zbadania** na pasku narzędzi akcji sprawy.
+3. W oknie dialogowym **Eskaluj do badania** wprowadź nazwę nowego badania użytkownika. W razie potrzeby wprowadź uwagi dotyczące sprawy i wybierz pozycję **Eskaluj**.
+4. Przejrzyj pola powiadomień i zaktualizuj je odpowiednio. Wprowadzone tutaj wartości zastąpią wartości szablonu.
+5. Wybierz pozycję **Potwierdź** , aby utworzyć przypadek badania użytkownika, lub wybierz pozycję **Anuluj** , aby zamknąć okno dialogowe bez tworzenia nowego przypadku badania użytkownika.
 
-Po eskalacji sprawy związanej z zarządzaniem ryzykiem w niejawnym programie testów do nowego przypadku analizy użytkowników możesz przejrzeć nową sprawę w obszarze **eDiscoveryAdvanced**  >  w centrum Centrum zgodności platformy Microsoft 365.
+Po eskalacji przypadku zarządzania ryzykiem wewnętrznym do nowego przypadku badania użytkownika możesz przejrzeć nowy przypadek w obszarze **eDiscoveryAdvanced** >  w portalu zgodności usługi Microsoft Purview.
 
-### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Uruchamianie zadań automatycznych Power Automate przepływów dla sprawy
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Uruchamianie zautomatyzowanych zadań przy użyciu przepływów Power Automate dla sprawy
 
-Używając zalecanych Power Automate analizy ryzyka i analitycy mogą szybko podjąć działania w celu:
+Korzystając z zalecanych przepływów Power Automate, badacze ryzyka i analitycy mogą szybko podjąć działania w celu:
 
-- Żądanie od kadry lub firmy informacji o użytkowniku w przypadku wystąpienia ryzyka w niejawnym programie testów
-- Powiadamianie menedżera, gdy użytkownik ma alert o ryzyku w niejawnym programie testów
-- Tworzenie rekordu dla przypadku zarządzania ryzykiem w niejawnym programie testów w serwisie ServiceNow
-- Powiadamianie użytkowników o dodaniu ich do zasad ryzyka niejawnego programu testów
+- Żądanie informacji od działu kadr lub firmy na temat użytkownika w przypadku ryzyka związanego z wewnętrznym dostępem
+- Powiadamianie menedżera, gdy użytkownik ma alert o ryzyku wewnętrznym
+- Tworzenie rekordu w przypadku zarządzania ryzykiem wewnętrznym w usłudze ServiceNow
+- Powiadamianie użytkowników o dodaniu ich do zasad ryzyka dotyczącego informacji poufnych
 
-Uruchamianie i tworzenie przepływów Power Automate zarządzania ryzykiem w niejawnym programie testów lub zarządzanie nimi:
+Aby uruchamiać przepływy Power Automate lub zarządzać nimi w przypadku zarządzania ryzykiem wewnętrznym:
 
-1. Wybierz **pozycję Automatyzuj** na pasku narzędzi akcji sprawy. 
-2. Wybierz przepływ Power Automate przepływu pracy, a następnie wybierz pozycję **Uruchom przepływ**. 
+1. Wybierz pozycję **Automatyzuj** na pasku narzędzi akcji sprawy. 
+2. Wybierz przepływ Power Automate do uruchomienia, a następnie wybierz pozycję **Uruchom przepływ**. 
 3. Po zakończeniu przepływu wybierz pozycję **Gotowe**.
 
-Aby dowiedzieć się więcej o przepływach Power Automate do zarządzania ryzykiem w niejawnym programie testów, zobacz Wprowadzenie do ustawień zarządzania ryzykiem w niejawnym programie [testów](insider-risk-management-settings.md#power-automate-flows-preview).
+Aby dowiedzieć się więcej na temat przepływów Power Automate na potrzeby zarządzania ryzykiem wewnętrznym, zobacz [Wprowadzenie do ustawień zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md#power-automate-flows-preview).
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Wyświetlanie lub tworzenie zespołu Microsoft Teams w sprawie
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Wyświetlanie lub tworzenie zespołu Microsoft Teams dla sprawy
 
-Gdy Microsoft Teams zarządzanie ryzykiem w niejawnym programie testów jest włączone w ustawieniach, zespół Microsoft Teams jest tworzony automatycznie za każdym razem, gdy zostanie potwierdzone alert i zostanie utworzona sprawa. W przypadku zagrożenia, a także analitycy mogą szybko otworzyć Microsoft Teams przejść bezpośrednio do zespołu w przypadku sprawy, wybierając pozycję Wyświetl Microsoft Teams **na** pasku narzędzi akcji sprawy.
+Po włączeniu integracji Microsoft Teams zarządzania ryzykiem wewnętrznym w ustawieniach zespół Microsoft Teams jest tworzony automatycznie za każdym razem, gdy alert zostanie potwierdzony i zostanie utworzony przypadek. Badacze ryzyka i analitycy mogą szybko otworzyć Microsoft Teams i przejść bezpośrednio do zespołu w celu zgłoszenia, wybierając pozycję **Wyświetl zespół Microsoft Teams** na pasku narzędzi akcji sprawy.
 
-W przypadku spraw otwartych przed włączeniem integracji z usługą Microsoft Team wschowa i analitycy mogą utworzyć nowy zespół Microsoft Teams dla sprawy, wybierając pozycję Utwórz zespół Microsoft Teams na pasku narzędzi akcji sprawy.
+W przypadku spraw otwartych przed włączeniem integracji z zespołem firmy Microsoft badacze ryzyka i analitycy mogą utworzyć nowy zespół Microsoft Teams dla danego przypadku, wybierając pozycję **Utwórz zespół Microsoft Teams** na pasku narzędzi akcji sprawy.
 
-Gdy zostanie rozpoznana sprawa, powiązany zespół Microsoft Team zostanie automatycznie zarchiwizować (ukryty i przekształcony w tylko do odczytu).
+Po rozwiązaniu sprawy skojarzony zespół firmy Microsoft zostanie automatycznie zarchiwizowany (ukryty i przekształcony w tryb tylko do odczytu).
 
-Aby dowiedzieć się więcej na Microsoft Teams do zarządzania ryzykiem w niejawnym programie testów, zobacz Wprowadzenie do ustawień [zarządzania ryzykiem w niejawnym programie testów](insider-risk-management-settings.md#microsoft-teams-preview).
+Aby dowiedzieć się więcej na temat Microsoft Teams na potrzeby zarządzania ryzykiem wewnętrznym, zobacz [Wprowadzenie do ustawień zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md#microsoft-teams-preview).
 
-### <a name="resolve-the-case"></a>Rozwiązanie sprawy
+### <a name="resolve-the-case"></a>Rozwiązywanie problemu
 
-Po zakończeniu przeglądania i analizy przez analityków ryzyka i wtłasnych osób można rozwiązać sprawę, aby działała na wszystkich alertach, które są obecnie uwzględnione w tej sprawie. Rozwiązanie problemu powoduje dodanie klasyfikacji rozwiązania, zmianę stanu sprawy na *Zamknięte, a* przyczyny akcji rozwiązywania są automatycznie dodawane do kolejki notatek dotyczących sprawy na pulpicie **nawigacyjnym notatek o sprawy** . Sprawy są rozwiązywane w następujący sposób:
+Po zakończeniu przeglądu i zbadania przez analityków ryzyka i śledczych można rozwiązać sprawę, aby działać na wszystkich alertach obecnie uwzględnionych w tej sprawie. Rozwiązanie problemu powoduje dodanie klasyfikacji rozwiązania, zmianę stanu sprawy na *Zamknięte*, a przyczyny akcji rozwiązywania problemów są automatycznie dodawane do kolejki notatek o przypadku na pulpicie nawigacyjnym **Notatek** sprawy. Sprawy są rozwiązywane jako:
 
-- **Przykład**: Klasyfikacja przypadków, w których alerty o dopasowaniu zasad są oceniane jako niskie ryzyko, inne niż poważne lub fałszywie dodatnie.
-- **Potwierdzone naruszenie zasad**: Klasyfikacja przypadków, w których alerty o dopasowaniu zasad są oceniane jako ryzykowne, poważne lub wynikiem złośliwych działań.
+- **Niegroźne**: klasyfikacja przypadków, w których alerty dopasowania zasad są oceniane jako alerty o niskim ryzyku, inne niż poważne lub fałszywie dodatnie.
+- **Potwierdzone naruszenie zasad**: klasyfikacja przypadków, w których alerty dopasowania zasad są oceniane jako ryzykowne, poważne lub w wyniku złośliwego zamiaru.
 
 Aby rozwiązać problem:
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie **ryzykiem w niejawnym programie** testów i wybierz **kartę** Sprawy.
-2. Zaznacz sprawę, a następnie wybierz przycisk Rozwiąż **sprawę** na pasku narzędzi akcji sprawy.
-3. W **oknie dialogowym Rozwiązywanie** problemów wybierz **kontrolkę listy** rozwijanej Rozwiąż jako, aby wybrać klasyfikację rozwiązania dla sprawy. Dostępne opcje to **Naruszenie** lub **Potwierdzenie naruszenia zasad**.
-4. W **oknie dialogowym Rozwiązywanie** problemów wprowadź przyczyny klasyfikacji rozwiązania w polu tekstowym Akcja **wykonane** .
-5. Wybierz **pozycję Rozwiąż** , aby zamknąć sprawę, lub pozycję **Anuluj** zamknij okno dialogowe bez usuwania sprawy.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+2. Wybierz przypadek, a następnie wybierz przycisk **Rozwiąż sprawę** na pasku narzędzi akcji sprawy.
+3. W oknie dialogowym **Rozwiązywanie sprawy** wybierz kontrolkę **rozwiąż jako** listę rozwijaną, aby wybrać klasyfikację rozpoznawania sprawy. Opcje to **łagodne** lub **potwierdzone naruszenie zasad**.
+4. W oknie dialogowym **Rozwiązywanie sprawy** wprowadź przyczyny klasyfikacji rozwiązania w polu tekstowym **Akcja podjęta** .
+5. Wybierz pozycję **Rozwiąż** , aby zamknąć sprawę, lub wybierz pozycję **Anuluj** zamknij okno dialogowe bez rozwiązywania sprawy.

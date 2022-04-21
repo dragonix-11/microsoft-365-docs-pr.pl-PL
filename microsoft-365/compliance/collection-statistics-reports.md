@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak uzyskiwać dostęp do statystyk i raportów dla kolekcji roboczych i kolekcji, które zostały zatwierdzone do zestawu przeglądów w usłudze Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 12152e0b81df6c61732fda068c593a91578861ee
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 140a6aa2ac0a0ebbff7cf2ab2ee8618cd45cdf07
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940318"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995761"
 ---
 # <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Zbieranie statystyk i raportów w usłudze Microsoft Purview eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po utworzeniu kolekcji roboczej możesz wyświetlić statystyki dotyczące pobranych elementów, takich jak lokalizacje zawartości zawierające najwięcej elementów spełniających kryteria wyszukiwania i liczbę elementów zwróconych przez zapytanie wyszukiwania. Możesz również wyświetlić podgląd podzestawu wyników.
 

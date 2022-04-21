@@ -18,14 +18,16 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: W tym artykule dowiesz się, jak eksportować, konfigurować i wyświetlać Microsoft 365 rekordy dziennika inspekcji.
-ms.openlocfilehash: ed9844ac7a5b7dc62b4d0ba8eb7311f76d28aace
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9403ead4c7fd6bd27bcc3848d367749e00beed3c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948754"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994397"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Eksportuj, konfiguruj i wyświetlaj rekordy dziennika inspekcji
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po przeszukaniu dziennika inspekcji i pobraniu wyników wyszukiwania do pliku CSV plik zawiera kolumnę o nazwie **AuditData**, która zawiera dodatkowe informacje o każdym zdarzeniu. Dane w tej kolumnie są sformatowane jako obiekt JSON, który zawiera wiele właściwości skonfigurowanych jako pary *property:value* rozdzielone przecinkami. Funkcja przekształcania JSON w Edytor Power Query w Excel umożliwia podzielenie każdej właściwości w obiekcie JSON w kolumnie **AuditData** na wiele kolumn, dzięki czemu każda właściwość ma własną kolumnę. Dzięki temu można sortować i filtrować co najmniej jedną z tych właściwości, co może pomóc w szybkim zlokalizowaniu konkretnych danych inspekcji, których szukasz.
 

@@ -1,5 +1,5 @@
 ---
-title: Używanie narzędzia eDiscovery Export Tool w programie Microsoft Edge
+title: Korzystanie z narzędzia eksportu zbierania elektronicznych materiałów dowodowych w Microsoft Edge
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,52 +12,54 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Aby pobierać wyniki ClickOnce Microsoft Edge z wyszukiwania i zbierania elektronicznych materiałów dowodowych w Centrum zabezpieczeń i zgodności, musisz włączyć obsługę zbierania elektronicznych materiałów dowodowych przy użyciu najnowszej wersji programu Microsoft Edge.
-ms.openlocfilehash: bd42ebffce326e4abe4943ff4187fc2bd960ff65
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Musisz włączyć obsługę ClickOnce, aby używać najnowszej wersji Microsoft Edge do pobierania wyników wyszukiwania z usługi Content Search i eDiscovery w centrum zabezpieczeń i zgodności.
+ms.openlocfilehash: cd20a35a0a6ee2518667d21fadbca4577342de36
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "62959540"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995783"
 ---
-# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Używanie narzędzia eDiscovery Export Tool w programie Microsoft Edge
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Korzystanie z narzędzia eksportu zbierania elektronicznych materiałów dowodowych w Microsoft Edge
 
-W wyniku ostatnich zmian w najnowszej wersji pakietu Microsoft Edge obsługa ClickOnce jest już domyślnie włączona. Aby nadal pobierać wyniki wyszukiwania zawartości lub wyszukiwania zbierania elektronicznych materiałów dowodowych za pomocą narzędzia eDiscovery Export Tool, należy użyć programu [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) lub włączyć obsługę programu ClickOnce w najnowszej wersji programu Microsoft Edge.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-## <a name="enable-clickonce-support-in-microsoft-edge"></a>Włączanie ClickOnce technicznej w Microsoft Edge
+W wyniku ostatnich zmian w najnowszej wersji Microsoft Edge obsługa ClickOnce nie jest już domyślnie włączona. Aby kontynuować korzystanie z narzędzia eksportu zbierania elektronicznych materiałów dowodowych do pobierania wyników wyszukiwania zawartości lub zbierania elektronicznych materiałów dowodowych, należy użyć programu [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) lub włączyć obsługę ClickOnce w najnowszej wersji Microsoft Edge.
 
-1. W Microsoft Edge **przejdź do edge://flags/#edge-click-once**.
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>Włączanie obsługi ClickOnce w Microsoft Edge
 
-2. Jeśli istniejąca wartość jest ustawiona na wartość  **Domyślna** lub Wyłączona na liście rozwijanej, zmień ją na **Włączono**.
+1. W Microsoft Edge przejdź do **edge://flags/#edge-click-once**.
 
-   ![Z listy rozwijanej wybierz pozycję Włączone.](../media/ClickOnceimage1.png)
+2. Jeśli istniejąca wartość jest ustawiona na **wartość Domyślna** lub **Wyłączona** na liście rozwijanej, zmień ją na **Włączone**.
 
-3. Przewiń w dół do dołu okna przeglądarki i kliknij pozycję Uruchom **ponownie, aby ponownie** uruchomić przeglądarkę Edge.
+   ![Wybierz pozycję Włączone z listy rozwijanej.](../media/ClickOnceimage1.png)
 
-   ![Kliknij pozycję Uruchom ponownie.](../media/ClickOnceimage2.png)
+3. Przewiń w dół do dołu okna przeglądarki i kliknij przycisk **Uruchom ponownie** , aby ponownie uruchomić przeglądarkę Edge.
 
-**Uwaga:** Organizacje mogą używać programu zasady grupy w celu wyłączenia ClickOnce technicznej. Aby sprawdzić, czy istnieją zasady organizacji dotyczące ClickOnce, przejdź do **edge://policy**. Poniższy zrzut ekranu przedstawia, ClickOnce w całej organizacji. Jeśli ta wartość zasad jest ustawiona na **fałsz**, skontaktuj się z administratorem w twojej organizacji.
+   ![Kliknij przycisk Uruchom ponownie.](../media/ClickOnceimage2.png)
 
-![Lista zasad organizacji w edge.](../media/ClickOnceimage3.png)
+**Uwaga:** Organizacje mogą używać zasady grupy, aby wyłączyć obsługę ClickOnce. Aby sprawdzić, czy istnieją zasady organizacyjne dotyczące ClickOnce pomocy technicznej, przejdź do **edge://policy**. Poniższy zrzut ekranu pokazuje, że ClickOnce jest włączona w całej organizacji. Jeśli ta wartość zasad jest ustawiona na **wartość false**, należy skontaktować się z administratorem w organizacji.
 
-## <a name="install-and-run-the-ediscovery-export-tool"></a>Instalowanie i uruchamianie narzędzia eDiscovery Export Tool
+![Lista zasad organizacyjnych usługi Edge.](../media/ClickOnceimage3.png)
 
-1. Kliknij **pozycję Pobierz wyniki** na stronie wysuwanego eksportu w przeszukiwaniu zawartości lub w przypadku sprawy zbierania elektronicznych materiałów dowodowych.
+## <a name="install-and-run-the-ediscovery-export-tool"></a>Instalowanie i uruchamianie narzędzia eksportu zbierania elektronicznych materiałów dowodowych
 
-   ![Kliknij pozycję Pobierz wyniki na wysuwanych stronie, aby pobrać wyniki wyszukiwania.](../media/ClickOnceExport1.png)
+1. Kliknij **pozycję Pobierz wyniki** na stronie wysuwanej eksportu w wyszukiwaniu zawartości lub w przypadku zbierania elektronicznych materiałów dowodowych.
 
-2. Zostanie wyświetlony monit z potwierdzeniem uruchomienia narzędzia i kliknij przycisk **Otwórz**.
+   ![Kliknij pozycję Pobierz wyniki na stronie wysuwanej, aby pobrać wyniki wyszukiwania.](../media/ClickOnceExport1.png)
 
-   ![Kliknij przycisk Otwórz, aby uruchomić narzędzie eDiscovery Export Tool.](../media/ClickOnceimage4.png)
+2. Zostanie wyświetlony monit z potwierdzeniem uruchomienia narzędzia Kliknij **przycisk Otwórz**.
 
-   Jeśli narzędzie eDiscovery Export Tool nie jest zainstalowane, zostanie wyświetlony monit z ostrzeżeniem o zabezpieczeniach. 
+   ![Kliknij przycisk Otwórz, aby uruchomić narzędzie eksportu zbierania elektronicznych materiałów dowodowych.](../media/ClickOnceimage4.png)
 
-   ![Kliknij przycisk Zainstaluj, aby zainstalować narzędzie eDiscovery Export Tool.](../media/ClickOnceimage5.png)
+   Jeśli narzędzie eksportu zbierania elektronicznych materiałów dowodowych nie jest zainstalowane, zostanie wyświetlony monit z ostrzeżeniem o zabezpieczeniach. 
 
-3. Kliknij przycisk **Zainstaluj**. Po jej zainstalowaniu narzędzie do eksportowania zostanie automatycznie uruchomić.
+   ![Kliknij pozycję Zainstaluj, aby zainstalować narzędzie eksportu zbierania elektronicznych materiałów dowodowych.](../media/ClickOnceimage5.png)
+
+3. Kliknij przycisk **Zainstaluj**. Po zainstalowaniu narzędzie eksportu zostanie uruchomione automatycznie.
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
 - [Eksportowanie wyników wyszukiwania zawartości](export-search-results.md)
 
-- [Jak włączyć flagi eksperymentów w Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [Jak włączyć flagi eksperymentu w Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)

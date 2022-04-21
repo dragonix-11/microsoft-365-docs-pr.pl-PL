@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Wiadomości poddane kwarantannie — często zadawane pytania
+  title: Komunikaty poddane kwarantannie — często zadawane pytania
   f1.keywords:
   - NOCSH
   ms.author: chrisda
@@ -16,17 +16,17 @@ metadata:
   ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-  description: Administratorzy mogą wyświetlać często zadawane pytania i odpowiedzi dotyczące wiadomości poddanych kwarantannie w u Exchange Online Protection (EOP).
+  description: Administratorzy mogą wyświetlać często zadawane pytania i odpowiedzi dotyczące komunikatów poddanych kwarantannie w Exchange Online Protection (EOP).
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: ff5b1e7367491e307df0468b49ba8891558275e9
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: ee026c7d4f66ae1fea9cae51027f1a143de43597
+  ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63680935"
-title: Wiadomości poddane kwarantannie — często zadawane pytania
+  ms.lasthandoff: 04/20/2022
+  ms.locfileid: "64972436"
+title: Komunikaty poddane kwarantannie — często zadawane pytania
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,90 +35,90 @@ summary: >
 
   - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-  - [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+  - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  Ten temat zawiera często zadawane pytania i odpowiedzi dotyczące wiadomości e-mail poddanych kwarantannie dla organizacji Microsoft 365 ze skrzynkami pocztowymi w programie Exchange Online lub organizacji autonomicznych usługi Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych.
+  Ten temat zawiera często zadawane pytania i odpowiedzi dotyczące wiadomości e-mail z kwarantanną dla organizacji Microsoft 365 ze skrzynkami pocztowymi w Exchange Online lub autonomicznych organizacji Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych.
 
 
-  Aby uzyskać pytania i odpowiedzi dotyczące ochrony przed spamem, zobacz Często zadawane pytania dotyczące [ochrony przed spamem](anti-spam-protection-faq.yml).
+  Aby uzyskać pytania i odpowiedzi dotyczące ochrony przed spamem, zobacz [Ochrona przed spamem — często zadawane pytania](anti-spam-protection-faq.yml).
 
 
-  Aby uzyskać pytania i odpowiedzi na temat ochrony przed złośliwym oprogramowaniem, zobacz Często zadawane pytania dotyczące [ochrony przed złośliwym oprogramowaniem](anti-malware-protection-faq-eop.yml).
+  Aby uzyskać pytania i odpowiedzi dotyczące ochrony przed złośliwym oprogramowaniem, zobacz [Ochrona przed złośliwym oprogramowaniem — często zadawane pytania](anti-malware-protection-faq-eop.yml).
 
 
-  Aby uzyskać pytania i odpowiedzi na temat ochrony przed fałszeringem, zobacz Często zadawane pytania dotyczące [ochrony przed fałszerami](anti-spoofing-protection-faq.yml).
+  Aby uzyskać pytania i odpowiedzi dotyczące ochrony przed fałszowaniem, zobacz [Ochrona przed fałszowaniem — często zadawane pytania](anti-spoofing-protection-faq.yml).
 sections:
 - name: Zignorowano
   questions:
   - question: >
-      Jak zarządzać wiadomościami poddanymi kwarantannie pod kątem złośliwego oprogramowania?
+      Jak mogę zarządzać komunikatami, które zostały poddane kwarantannie w przypadku złośliwego oprogramowania?
     answer: >
-      Domyślnie tylko administratorzy mogą zarządzać wiadomościami poddanymi kwarantannie pod kątem złośliwego oprogramowania. Aby uzyskać więcej informacji, zobacz [Zarządzanie poddanych kwarantannie wiadomości i plików jako administrator](manage-quarantined-messages-and-files.md).
+      Domyślnie tylko administratorzy mogą zarządzać komunikatami, które zostały poddane kwarantannie w przypadku złośliwego oprogramowania. Aby uzyskać więcej informacji, zobacz [Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator](manage-quarantined-messages-and-files.md).
 
 
-      Jednak administratorzy mogą tworzyć i stosować zasady  kwarantanny do zasad ochrony przed złośliwym oprogramowaniem, które definiują więcej możliwości dla użytkowników. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+      Administratorzy mogą jednak tworzyć i stosować _zasady kwarantanny_ do zasad ochrony przed złośliwym oprogramowaniem, które definiują więcej możliwości dla użytkowników. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
   - question: >
-      Jak poddać kwarantannie spam?
+      Jak mogę spam kwarantanny?
     answer: >
-      Domyślnie wiadomości klasyfikowane jako spam lub masowa poczta e-mail przez filtrowanie spamu są dostarczane do skrzynki pocztowej użytkownika i przenoszone do folderu Wiadomości-śmieci. Zamiast tego możesz jednak skonfigurować zasady ochrony przed spamem w celu kwarantanny spamu lub zbiorczej poczty e-mail. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md).
+      Domyślnie wiadomości sklasyfikowane jako spam lub zbiorcza wiadomość e-mail przez filtrowanie spamu są dostarczane do skrzynki pocztowej użytkownika i przenoszone do folderu Wiadomości-śmieci. Można jednak skonfigurować zasady ochrony przed spamem w celu kwarantanny spamu lub zbiorczych wiadomości e-mail. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed spamem w ramach EOP](configure-your-spam-filter-policies.md).
   - question: >
-      Jak udzielić użytkownikom dostępu do kwarantanny?
+      Jak mogę dać użytkownikom dostęp do kwarantanny?
     answer: >
-      Użytkownik musi mieć prawidłowe konto, aby uzyskać dostęp do swoich wiadomości w kwarantannie. Autonomiczna usługa EOP wymaga, aby użytkownicy są reprezentowani jako użytkownicy poczty w usłudze EOP (ręcznie utworzony lub utworzony za pośrednictwem synchronizacji katalogów). Aby uzyskać więcej informacji na temat zarządzania użytkownikami w autonomicznych środowiskach usługi EOP, zobacz Zarządzanie użytkownikami poczty [w autonomicznej u usługi EOP](/exchange/standalone-eop/manage-mail-users-in-eop).
+      Użytkownik musi mieć prawidłowe konto, aby uzyskać dostęp do własnych komunikatów w kwarantannie. Autonomiczna funkcja EOP wymaga, aby użytkownicy reprezentowali użytkowników poczty w ramach operacji EOP (ręcznie utworzonej lub utworzonej za pośrednictwem synchronizacji katalogów). Aby uzyskać więcej informacji na temat zarządzania użytkownikami w autonomicznych środowiskach EOP, zobacz [Zarządzanie użytkownikami poczty w autonomicznej operacji EOP](/exchange/standalone-eop/manage-mail-users-in-eop).
   - question: >
-      Do jakich wiadomości mogą uzyskać dostęp użytkownicy końcowi w kwarantannie?
+      Do jakich komunikatów mogą uzyskiwać dostęp użytkownicy końcowi w kwarantannie?
     answer: >
-      Zasady kwarantanny określają, czy użytkownicy mogą uzyskać dostęp do wiadomości poddanych kwarantannie w zależności od tego, dlaczego wiadomość została poddana kwarantannie (dla [obsługiwanych funkcji](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+      Zasady kwarantanny określają, czy użytkownicy mogą uzyskiwać dostęp do komunikatów objętych kwarantanną w zależności od tego, dlaczego komunikat został poddany kwarantannie (w przypadku [obsługiwanych funkcji](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 
 
-      Domyślnie użytkownicy mają dostęp do następujących typów wiadomości poddanych kwarantannie, do których są adresatami:
+      Domyślnie użytkownicy mogą uzyskiwać dostęp do następujących typów komunikatów objętych kwarantanną, w których są adresatami:
 
 
-      - **Zasady ochrony przed spamem**: wiadomości-śmieci, masowa poczta e-mail i wiadomości wyłudzdzce informacje (wiadomości wyłudzające informacje bez wysokiej pewności).
+      - **Zasady ochrony przed spamem**: spam, wiadomości e-mail zbiorcze i wiadomości wyłudzające informacje (nie są to wiadomości wyłudzające informacje o wysokim poziomie ufności).
 
-      - **Zasady ochrony** przed wyłudzaniem informacji: sfałszowani nadawcy, ochrona przed personifikacjami użytkowników (Defender for Office 365), ochrona przed personifikacjami domen (Defender for Office 365) i ochrona skrzynki pocztowej (Defender for Office 365).
-
-
-      Aby uzyskać więcej informacji, zobacz [Znajdowanie i zwalnianie wiadomości poddanych kwarantannie jako użytkownik](find-and-release-quarantined-messages-as-a-user.md).
+      - **Zasady ochrony przed wyłudzaniem informacji**: fałszowani nadawcy, ochrona przed personifikacją użytkowników (Ochrona usługi Office 365 w usłudze Defender), ochrona przed personifikacją domeny (Ochrona usługi Office 365 w usłudze Defender) i ochrona przed inteligencją skrzynki pocztowej ( Ochrona usługi Office 365 w usłudze Defender).
 
 
-      Domyślnie użytkownicy końcowi nie mają dostępu do następujących typów wiadomości poddanych kwarantannie, do których są adresatami:
+      Aby uzyskać więcej informacji, zobacz [Znajdowanie i zwalnianie komunikatów poddanych kwarantannie jako użytkownik](find-and-release-quarantined-messages-as-a-user.md).
 
 
-      - **Zasady ochrony przed spamem: Wyłudzanie** informacji o wysokiej pewności.
+      Domyślnie użytkownicy końcowi nie mogą uzyskać dostępu do następujących typów komunikatów objętych kwarantanną, w których są adresatami:
+
+
+      - **Zasady ochrony przed spamem**: wyłudzanie informacji o wysokim poziomie zaufania.
 
       - **Zasady ochrony przed złośliwym oprogramowaniem**
 
-      - Sejf Załączniki **(Defender dla programu Office 365)**: Wiadomości e-mail od usługi Sejf Zasady załączników i pliki z załączników programu Sejf dla aplikacji SharePoint, OneDrive i Microsoft Teams.
+      - **Sejf Załączniki (Ochrona usługi Office 365 w usłudze Defender)**: wiadomości e-mail z zasad i plików załączników Sejf z załączników Sejf dla SharePoint, OneDrive i Microsoft Teams.
 
-      - **Reguły przepływu poczty (reguły transportu)**: wiadomości, które zostały poddane kwarantannie  z powodu akcji Dostarcz wiadomość do hostowanej akcji kwarantanny w zasadach przepływu poczty.
+      - **Reguły przepływu poczty (reguły transportu)**: wiadomości, które zostały poddane kwarantannie z powodu akcji **Dostarczanie wiadomości do hostowanej kwarantanny** w regułach przepływu poczty.
 
 
-      Aby uzyskać więcej informacji, zobacz [Zarządzanie poddanych kwarantannie wiadomości i plików jako administrator](manage-quarantined-messages-and-files.md).
+      Aby uzyskać więcej informacji, zobacz [Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator](manage-quarantined-messages-and-files.md).
   - question: >
-      Jak długo wiadomości są przechowywane w kwarantannie?
+      Jak długo komunikaty są przechowywane w kwarantannie?
     answer: >
-      Zależy to od tego, dlaczego wiadomość została poddana kwarantannie. Aby uzyskać więcej informacji, zobacz [Poddaj wiadomości kwarantannie w programie EOP i Defender for Office 365](quarantine-email-messages.md).
+      To zależy od tego, dlaczego komunikat został poddany kwarantannie. Aby uzyskać więcej informacji, zobacz [Komunikaty poddane kwarantannie w ramach operacji EOP i Ochrona usługi Office 365 w usłudze Defender](quarantine-email-messages.md).
   - question: >
-      Czy można zwolnić lub zgłosić więcej niż jedną poddaną kwarantannie wiadomość na raz?
+      Czy mogę jednocześnie wydać lub zgłosić więcej niż jeden komunikat poddany kwarantannie?
     answer: >
-      W portalu Microsoft 365 Defender możesz wybrać i zwolnić maksymalnie 100 wiadomości jednocześnie.
+      W portalu Microsoft 365 Defender można wybrać i zwolnić maksymalnie 100 komunikatów jednocześnie.
 
 
-      Administratorzy mogą używać poleceń cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) i [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) w programie Exchange Online PowerShell lub autonomicznym programie PowerShell dla usługi EOP w celu zbiorczego znalezienia i zwolnienia wiadomości poddanych kwarantannie oraz zbiorczego zgłaszania wyników fałszywie dodatnich.
+      Administratorzy mogą używać poleceń cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) i [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) w programie Exchange Online programie PowerShell lub autonomicznym programie PowerShell EOP w celu zbiorczego znajdowania i wydawania komunikatów poddanych kwarantannie oraz zbiorczego zgłaszania fałszywych alarmów.
   - question: >
-      Czy podczas wyszukiwania w kwarantannie wiadomości są obsługiwane symbole wieloznaczne? Czy mogę wyszukiwać w kwarantannie wiadomości dla określonej domeny?
+      Czy symbole wieloznaczne są obsługiwane podczas wyszukiwania komunikatów poddanych kwarantannie? Czy mogę wyszukiwać komunikaty poddane kwarantannie dla określonej domeny?
     answer: >-
-      Symbole wieloznaczne nie są obsługiwane w portalu Microsoft 365 Defender wiadomości. Na przykład podczas wyszukiwania nadawcy musisz podać pełny adres e-mail. Jednak symboli wieloznacznych można używać w programie Exchange Online PowerShell lub w autonomicznym programie PowerShell usługi EOP.
+      Symbole wieloznaczne nie są obsługiwane w portalu Microsoft 365 Defender. Na przykład podczas wyszukiwania nadawcy należy określić pełny adres e-mail. Można jednak używać symboli wieloznacznych w programie Exchange Online programie PowerShell lub autonomicznym programie PowerShell EOP.
 
 
-      Na przykład skopiuj poniższy kod programu PowerShell do Notatnika i zapisz go jako .ps1 w łatwej do znalezienia lokalizacji (na przykład C:\Data\QuarantineRelease.ps1).
+      Na przykład skopiuj następujący kod programu PowerShell do Notatnika i zapisz plik jako .ps1 w lokalizacji, która jest łatwa do znalezienia (na przykład C:\Data\QuarantineRelease.ps1).
 
 
-      Następnie po nawiązania połączenia z [programem Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) [lub Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) uruchom następujące polecenie, aby uruchomić skrypt:
+      Następnie po nawiązaniu połączenia z [programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) lub [Exchange Online Protection programu PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) uruchom następujące polecenie, aby uruchomić skrypt:
 
 
       ```powershell
@@ -128,14 +128,14 @@ sections:
       ```
 
 
-      Skrypt obsługuje następujące akcje:
+      Skrypt wykonuje następujące akcje:
 
 
-      - Znajdź nieodsyłane wiadomości, które zostały poddane kwarantannie jako spam od wszystkich nadawców w domenie fabrikam. Maksymalna liczba wyników to 50 000 (50 stron z 1000 wyników).
+      - Znajdź niepublizowane wiadomości, które zostały poddane kwarantannie jako spam od wszystkich nadawców w domenie fabrikam. Maksymalna liczba wyników to 50 000 (50 stron ze 1000 wyników).
 
       - Zapisz wyniki w pliku CSV.
 
-      - Zwolnij pasujące pod kwarantannę wiadomości do wszystkich oryginalnych adresatów.
+      - Zwolnij pasujące komunikaty poddane kwarantannie wszystkim oryginalnym adresatom.
 
 
       ```powershell
@@ -174,4 +174,4 @@ sections:
       ```
 
 
-      Po zwolnieniu wiadomości nie można jej ponownie zwolnić.
+      Po wydaniu komunikatu nie można go zwolnić ponownie.

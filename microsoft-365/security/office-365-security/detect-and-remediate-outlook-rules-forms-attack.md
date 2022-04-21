@@ -1,5 +1,5 @@
 ---
-title: Wykrywaj i reagotuj ataki Outlook formularzach niestandardowych.
+title: Wykrywanie i korygowanie Outlook reguł i niestandardowych formularzy iniekcji ataków.
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,248 +14,247 @@ ms.collection:
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-description: Dowiedz się, jak rozpoznać i rozwiązać te Outlook i formularze niestandardowe podszywają się pod formularze Office 365
+description: Dowiedz się, jak rozpoznawać i korygować Outlook reguły i niestandardowe formy ataków iniekcji w Office 365
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c715552fedeefeb87206d889aa448609e8d7f60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c15046d43a1f2a48cf9f4ef4ccc79c060d18b156
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983435"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972810"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Wykrywanie i rozwiązywanie problemów z Outlook i atakami po formularzach niestandardowych
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Wykrywanie i korygowanie ataków na reguły Outlook i iniekcje formularzy niestandardowych
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Krótki opis** Dowiedz się, jak rozpoznawać i korygować Outlook reguły i niestandardowe ataki iniekcji formularzy w Office 365.
 
-**Podsumowanie** Dowiedz się, jak rozpoznać i rozwiązać te Outlook i niestandardowe ataki w formularzach niestandardowych w programie Office 365.
+## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Jaki jest atak polegający na wstrzyknięciu reguł Outlook i formularzy niestandardowych?
 
-## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Jaki jest atak Outlook i formularzy niestandardowych?
+Gdy osoba atakująca uzyska dostęp do Twojej organizacji, spróbuje ustanowić przyczółek, aby pozostać w organizacji lub wrócić do niej po odnalezieniu. To działanie jest *nazywane ustanawianiem mechanizmu trwałości*. Istnieją dwa sposoby, na jakie osoba atakująca może użyć Outlook w celu ustanowienia mechanizmu trwałości:
 
-Gdy atakujący uzyska dostęp do organizacji, spróbuje ustalić jego stopkę, aby pozostać w domu lub wrócić do niego po ich odkryniu. To działanie jest nazywane *ustanawianiem mechanizmu stabilności*. Istnieją dwa sposoby, za pomocą których atakujący mogą Outlook mechanizmu utrwalania:
+- Wykorzystując reguły Outlook.
+- Przez wstrzyknięcie formularzy niestandardowych do Outlook.
 
-- Wykorzystywanie reguł Outlook.
-- Wsuń formularze niestandardowe do Outlook.
+Ponowne zainstalowanie Outlook, a nawet nadanie osobie, której dotyczy problem, nowego komputera nie pomoże. Gdy nowa instalacja Outlook łączy się ze skrzynką pocztową, wszystkie reguły i formularze są synchronizowane z chmury. Reguły lub formularze są zwykle przeznaczone do uruchamiania kodu zdalnego i instalowania złośliwego oprogramowania na komputerze lokalnym. Złośliwe oprogramowanie kradnie poświadczenia lub wykonuje inną nielegalną działalność.
 
-Ponowne zainstalowanie Outlook, a nawet udzielenie osobie, której dotyczy problem, nowego komputera nie pomoże. Gdy nowa instalacja aplikacji Outlook się ze skrzynką pocztową, wszystkie reguły i formularze są synchronizowane z chmurą. Reguły lub formularze są zwykle zaprojektowane do uruchamiania kodu zdalnego i instalowania złośliwego oprogramowania na komputerze lokalnym. Złośliwe oprogramowanie ukradzi poświadczenia lub wykona inną aktywność aktywności.
+Dobra wiadomość jest następująca: jeśli Outlook klientów zostanie poprawiona do najnowszej wersji, nie będziesz narażony na zagrożenie, ponieważ bieżące Outlook domyślne ustawienia klienta blokują oba mechanizmy.
 
-Dobra wiadomość jest taka: jeśli dbasz o to, Outlook Twoi klienci pakietu Outlook są poprawki do najnowszej wersji, nie naraż się na zagrożenia, ponieważ bieżące ustawienia domyślne klienta Outlook blokują oba mechanizmy.
+Ataki zwykle są zgodne z następującymi wzorcami:
 
-W atakach są zazwyczaj stosowane następujące wzorce:
+**Luki w zabezpieczeniach reguł**:
 
-**Reguły wykorzystujące**:
+1. Osoba atakująca kradnie poświadczenia użytkownika.
 
-1. Atakujący ukraść poświadczenia użytkownika.
+2. Osoba atakująca loguje się do skrzynki pocztowej Exchange użytkownika (Exchange Online lub lokalnego Exchange).
 
-2. Atakujący może się do tego celu Exchange skrzynce pocztowej użytkownika (Exchange Online lokalnym lub lokalnym Exchange).
+3. Osoba atakująca tworzy regułę skrzynki odbiorczej przesyłania dalej w skrzynce pocztowej. Reguła przekazywania jest wyzwalana, gdy skrzynka pocztowa odbiera od osoby atakującej określoną wiadomość zgodną z warunkami reguły. Warunki reguły i format komunikatów są dostosowane do siebie nawzajem.
 
-3. Atakujący tworzy w skrzynce pocztowej regułę przesyłania dalej skrzynki odbiorczej. Reguła przesyłania dalej jest wyzwalana, gdy skrzynka pocztowa otrzymuje określoną wiadomość od atakującego, która jest taka, która jest taka jak jej zasada. Warunki reguły i format wiadomości są dostosowane do siebie nawzajem.
+4. Osoba atakująca wysyła wiadomość e-mail wyzwalacza do zagrożonej skrzynki pocztowej, która jest nadal używana normalnie przez niczego nie podejrzewającego użytkownika.
 
-4. Atakujący wysyła wiadomość e-mail wyzwalacza do naruszonej skrzynki pocztowej, która jest nadal używana przez niczego nie podejrzewającego użytkownika.
+5. Gdy skrzynka pocztowa otrzyma komunikat zgodny z warunkami reguły, zostanie zastosowana akcja reguły. Zazwyczaj akcją reguły jest uruchomienie aplikacji na serwerze zdalnym (WebDAV).
 
-5. Gdy do skrzynki pocztowej zostanie wyświetlony komunikat, który odpowiada regułom, zostanie zastosowana akcja reguły. Akcja reguły zwykle dotyczy uruchamiania aplikacji na serwerze zdalnym (WebDAV).
+6. Zazwyczaj aplikacja instaluje złośliwe oprogramowanie na maszynie użytkownika (na przykład [w programie PowerShell Empire](https://www.powershellempire.com/)).
 
-6. Zazwyczaj aplikacja instaluje złośliwe oprogramowanie na komputerze użytkownika (na przykład [PowerShell Empire](https://www.powershellempire.com/)).
+7. Złośliwe oprogramowanie pozwala atakującemu ukraść (lub ukraść ponownie) nazwę użytkownika i hasło użytkownika lub inne poświadczenia z komputera lokalnego i wykonywać inne złośliwe działania.
 
-7. Złośliwe oprogramowanie umożliwia atakującemu wykradzenie (lub ponownie kradzież) nazwy użytkownika i hasła lub innych poświadczeń z komputera lokalnego oraz wykonywanie innych złośliwych działań.
+**Luki w zabezpieczeniach formularzy**:
 
-**Wykorzystywanie formularzy**:
+1. Osoba atakująca kradnie poświadczenia użytkownika.
 
-1. Atakujący ukraść poświadczenia użytkownika.
+2. Osoba atakująca loguje się do skrzynki pocztowej Exchange użytkownika (Exchange Online lub lokalnego Exchange).
 
-2. Atakujący może się do tego celu Exchange skrzynce pocztowej użytkownika (Exchange Online lokalnym lub lokalnym Exchange).
+3. Osoba atakująca wstawia niestandardowy szablon formularza poczty do skrzynki pocztowej użytkownika. Formularz niestandardowy jest wyzwalany, gdy skrzynka pocztowa odbiera określoną wiadomość od osoby atakującej, która wymaga, aby skrzynka pocztowa załadował formularz niestandardowy. Formularz niestandardowy i format wiadomości są dostosowane do siebie nawzajem.
 
-3. Atakujący wstawia niestandardowy szablon formularza poczty do skrzynki pocztowej użytkownika. Formularz niestandardowy jest wyzwalany, gdy skrzynka pocztowa otrzymuje określoną wiadomość od atakującego, który wymaga, aby skrzynka pocztowa załadowała formularz niestandardowy. Formularz niestandardowy i format wiadomości są dostosowane do siebie nawzajem.
+4. Osoba atakująca wysyła wiadomość e-mail wyzwalacza do zagrożonej skrzynki pocztowej, która jest nadal używana normalnie przez niczego nie podejrzewającego użytkownika.
 
-4. Atakujący wysyła wiadomość e-mail wyzwalacza do naruszonej skrzynki pocztowej, która jest nadal używana przez niczego nie podejrzewającego użytkownika.
+5. Gdy skrzynka pocztowa odbiera wiadomość, skrzynka pocztowa ładuje wymagany formularz. Formularz uruchamia aplikację na serwerze zdalnym (WebDAV).
 
-5. Gdy skrzynka pocztowa otrzyma wiadomość, załaduje do skrzynki pocztowej wymagany formularz. Formularz uruchamia aplikację na serwerze zdalnym (WebDAV).
+6. Zazwyczaj aplikacja instaluje złośliwe oprogramowanie na maszynie użytkownika (na przykład [w programie PowerShell Empire](https://www.powershellempire.com/)).
 
-6. Zazwyczaj aplikacja instaluje złośliwe oprogramowanie na komputerze użytkownika (na przykład [PowerShell Empire](https://www.powershellempire.com/)).
+7. Złośliwe oprogramowanie pozwala atakującemu ukraść (lub ukraść ponownie) nazwę użytkownika i hasło użytkownika lub inne poświadczenia z komputera lokalnego i wykonywać inne złośliwe działania.
 
-7. Złośliwe oprogramowanie umożliwia atakującemu wykradzenie (lub ponownie kradzież) nazwy użytkownika i hasła lub innych poświadczeń z komputera lokalnego oraz wykonywanie innych złośliwych działań.
+## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>Jak może wyglądać atak polegający na wstrzyknięciu reguł i formularzy niestandardowych Office 365?
 
-## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>Jak może wyglądać atak w postaci podania reguł i formularzy niestandardowych Office 365?
+Te mechanizmy trwałości prawdopodobnie nie zostaną zauważone przez użytkowników, a w niektórych przypadkach mogą być nawet niewidoczne dla nich. W tym artykule opisano, jak wyszukać dowolny z siedmiu znaków (Wskaźniki kompromisu) wymienionych poniżej. Jeśli znajdziesz dowolną z nich, musisz wykonać kroki korygowania.
 
-Te mechanizmy nie są mało prawdopodobne do zauważenia przez użytkowników, a w niektórych przypadkach mogą być nawet niewidoczne dla nich. W tym artykule podano informacje, jak szukać dowolnych z siedmiu znaków (Wskaźników naruszenia zabezpieczeń) wymienionych poniżej. Jeśli znajdziesz dowolne z tych czynności, musisz podjąć kroki rozwiązywania problemów.
+- **Wskaźniki naruszenia zabezpieczeń reguł**:
+  - Akcja reguły polega na uruchomieniu aplikacji.
+  - Reguła odwołuje się do pliku EXE, ZIP lub adresu URL.
+  - Na komputerze lokalnym poszukaj nowego procesu, który pochodzi z Outlook PID.
 
-- **Wskaźniki naruszenia reguł**:
-  - Reguła Akcja to uruchomienie aplikacji.
-  - Reguła odwołuje się do pliku EXE, pliku ZIP lub adresu URL.
-  - Na komputerze lokalnym poszukaj nowego procesu, który pochodzi z nowego Outlook PID.
+- **Wskaźniki naruszenia zabezpieczeń formularzy niestandardowych**:
+  - Formularze niestandardowe obecne jako własne klasy komunikatów.
+  - Klasa Message zawiera kod wykonywalny.
+  - Zazwyczaj złośliwe formularze są przechowywane w bibliotece formularzy osobistych lub folderach skrzynki odbiorczej.
+  - Formularz ma nazwę IPM. Uwaga. [nazwa niestandardowa].
 
-- **Wskaźniki naruszenia bezpieczeństwa formularzy niestandardowych**:
-  - Formularze niestandardowe prezentują się jako klasa wiadomości.
-  - Klasa wiadomości zawiera kod wykonywalny.
-  - Zazwyczaj złośliwe formularze są przechowywane w folderach biblioteki formularzy osobistych lub skrzynki odbiorczej.
-  - Formularz nosi nazwę IPM. Uwaga. [nazwa niestandardowa].
+## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>Kroki znajdowania oznak tego ataku i potwierdzania go
 
-## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>Procedura znajdowania znaków tego ataku i potwierdzania go
+Aby potwierdzić atak, możesz użyć jednej z następujących metod:
 
-Możesz potwierdzić atak za pomocą jednej z następujących metod:
+- Ręcznie sprawdź reguły i formularze dla każdej skrzynki pocztowej przy użyciu klienta Outlook. Ta metoda jest dokładna, ale jednocześnie można zaznaczyć tylko jedną skrzynkę pocztową. Ta metoda może być bardzo czasochłonna, jeśli masz wielu użytkowników do sprawdzenia, a także może zainfekować komputer, który używasz.
 
-- Ręcznie sprawdź reguły i formularze dla każdej skrzynki pocztowej przy użyciu Outlook klienta. Ta metoda jest dokładna, ale można sprawdzać tylko jedną skrzynkę pocztową na raz. Ta metoda może być bardzo czasochłonne, jeśli masz wielu użytkowników do sprawdzenia i może również zainfekować komputer, z których korzystasz.
+- Użyj [ skryptuGet-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) programu PowerShell, aby automatycznie zrzucić wszystkie reguły przekazywania wiadomości e-mail i formularze niestandardowe dla wszystkich użytkowników dzierżawy. Jest to najszybsza i najbezpieczniejsza metoda z najmniejszym obciążeniem.
 
-- Użyj skryptu [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell, aby automatycznie zrzucić wszystkie reguły przesyłania dalej poczty i formularze niestandardowe dla wszystkich użytkowników w waności. Jest to najszybszy i najbezpieczniejszy sposób przy jak najmniejszym narzucie.
+### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Potwierdzanie ataku reguł przy użyciu klienta Outlook
 
-### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Potwierdź atak reguły przy użyciu Outlook klienta
+1. Otwórz użytkowników Outlook klienta jako użytkownika. Użytkownik może potrzebować Twojej pomocy w badaniu reguł w swojej skrzynce pocztowej.
 
-1. Otwórz klienta Outlook jako użytkownik. Użytkownik może potrzebować Twojej pomocy przy analizie reguł w jego skrzynce pocztowej.
+2. Zapoznaj się [z artykułem Zarządzanie wiadomościami e-mail przy użyciu reguł](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59), aby zapoznać się z procedurami otwierania interfejsu reguł w Outlook.
 
-2. Aby zapoznać [się z](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) procedurami otwierania interfejsu reguł w programie Outlook, zobacz Zarządzanie wiadomościami e-mail za pomocą Outlook.
+3. Poszukaj reguł, których użytkownik nie utworzył, ani żadnych nieoczekiwanych reguł lub reguł o podejrzanych nazwach.
 
-3. Odszukaj reguły, których użytkownik nie tworzy, oraz wszelkie nieoczekiwane reguły lub reguły z podejrzanymi nazwami.
+4. Poszukaj w opisie reguły akcji reguł, które uruchamiają się i aplikacji lub odwołują się do .EXE, .ZIP pliku lub do uruchamiania adresu URL.
 
-4. W opisie reguły znajdziesz akcje reguły, które uruchamiają się i odwołują się do .EXE, .ZIP lub uruchamiają adres URL.
+5. Poszukaj nowych procesów, które zaczynają używać identyfikatora procesu Outlook. Zapoznaj się [z tematem Znajdowanie identyfikatora procesu](/windows-hardware/drivers/debugger/finding-the-process-id).
 
-5. Poszukaj nowych procesów, które zaczynają Outlook identyfikatora procesu. Zobacz [Znajdowanie identyfikatora procesu](/windows-hardware/drivers/debugger/finding-the-process-id).
+### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>Kroki potwierdzania ataku formularzy przy użyciu klienta Outlook
 
-### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>Procedura potwierdzania ataków przy użyciu klienta Outlook Forms
+1. Otwórz użytkownika Outlook klienta jako użytkownika.
 
-1. Otwórz klienta Outlook jako użytkownika.
+2. Wykonaj kroki opisane w [temacie Pokaż kartę Deweloper](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) dla wersji Outlook użytkownika.
 
-2. Postępuj zgodnie z instrukcjami [na stronie Pokazywanie karty Deweloper](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) dla wersji programu Outlook.
+3. Otwórz teraz widoczną kartę dewelopera w Outlook i kliknij **pozycję Zaprojektuj formularz**.
 
-3. Otwórz teraz widoczną kartę Deweloper w programie Outlook a następnie kliknij **pozycję projektowanie formularza**.
-
-4. Wybierz **skrzynkę odbiorczą** z **listy Szukaj w** . Poszukaj dowolnych formularzy niestandardowych. Formularze niestandardowe występują na tyle rzadko, że jeśli istnieją w ogóle jakiekolwiek formularze niestandardowe, warto przyjrzeć się bliżej.
+4. Wybierz **skrzynkę odbiorczą** z listy **Wyszukaj w** . Poszukaj dowolnych formularzy niestandardowych. Formularze niestandardowe są na tyle rzadkie, że jeśli w ogóle masz formularze niestandardowe, warto przyjrzeć się bardziej szczegółowo.
 
 5. Zbadaj wszelkie formularze niestandardowe, zwłaszcza te oznaczone jako ukryte.
 
-6. Otwórz dowolne formularze niestandardowe i w grupie **Formularz** kliknij pozycję **Wyświetl** kod, aby sprawdzić, co jest uruchamiane po załadowaniu formularza.
+6. Otwórz dowolne formularze niestandardowe i w grupie **Formularz** kliknij pozycję **Wyświetl kod** , aby zobaczyć, co działa po załadowaniu formularza.
 
-### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>Procedura potwierdzania ataków dotyczących reguł i formularzy przy użyciu programu PowerShell
+### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>Kroki potwierdzania ataku Reguły i formularze przy użyciu programu PowerShell
 
-Najprostszym sposobem weryfikowania reguł lub formularzy niestandardowych jest uruchomienie skryptu [ programuGet-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell. Ten skrypt nawiązuje połączenie z każdą skrzynką pocztową w dzierżawie i łączy wszystkie reguły i formularze w dwa .csv pliki.
+Najprostszym sposobem zweryfikowania ataku na reguły lub formularze niestandardowe jest uruchomienie [ skryptuGet-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) programu PowerShell. Ten skrypt łączy się z każdą skrzynką pocztową w dzierżawie i zrzuca wszystkie reguły i formularze do dwóch plików .csv.
 
 #### <a name="pre-requisites"></a>Wymagania wstępne
 
-Uruchomienie skryptu będzie wymagało uprawnień administratora globalnego, ponieważ skrypt nawiązuje połączenie z każdą skrzynką pocztową w zakresie obsługi klienta w celu odczytania reguł i formularzy.
+Aby uruchomić skrypt, musisz mieć uprawnienia administratora globalnego, ponieważ skrypt nawiązuje połączenie z każdą skrzynką pocztową w dzierżawie w celu odczytania reguł i formularzy.
 
-1. Zaloguj się na komputerze, z których zostanie uruchomiony skrypt, z uprawnieniami administratora lokalnego.
+1. Zaloguj się do maszyny, z poziomu którą uruchomisz skrypt z uprawnieniami administratora lokalnego.
 
-2. Pobierz lub skopiuj skrypt Get-AllTenantRulesAndForms.ps1 z GitHub do folderu, z którego zostanie uruchomiony. Skrypt utworzy dwa pliki z sygnaturami dat do tego folderu, pliki MailboxFormsExport-yyyy-mm-dd.csv i MailboxRulesExport-yyyy-mm-dd.csv.
+2. Pobierz lub skopiuj skrypt Get-AllTenantRulesAndForms.ps1 z GitHub do folderu, z którego go uruchomisz. Skrypt utworzy dwa pliki ostemplowane datą w tym folderze, MailboxFormsExport-yyyy-mm-dd.csv i MailboxRulesExport-yyyy-mm-dd.csv.
 
-3. Otwórz wystąpienie programu PowerShell jako administrator i otwórz folder, w którym został zapisany skrypt.
+3. Otwórz wystąpienie programu PowerShell jako administrator i otwórz folder, w jakim zapisano skrypt.
 
-4. Uruchom ten wiersz polecenia programu PowerShell w następujący sposób: `.\Get-AllTenantRulesAndForms.ps1`\Get-AllTenantRulesAndForms.ps1
+4. Uruchom ten wiersz polecenia programu PowerShell w następujący sposób `.\Get-AllTenantRulesAndForms.ps1`: .\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interpretowanie danych wyjściowych
 
-- ***MailboxRulesExport-yyyy-mm-dd*.csv**: Zbadaj reguły (jeden na wiersz) pod uwagę warunki akcji, które obejmują aplikacje lub pliki wykonywalne:
+- ***MailboxRulesExport-yyyy-mm-dd*.csv**: Sprawdź reguły (jeden na wiersz) pod kątem warunków akcji, które obejmują aplikacje lub pliki wykonywalne:
 
-  - **ActionType (kolumna A)**: Jeśli zobaczysz wartość "ID_ACTION_CUSTOM", reguła jest prawdopodobnie złośliwa.
+  - **ActionType (kolumna A)**: jeśli widzisz wartość "ID_ACTION_CUSTOM", reguła jest prawdopodobnie złośliwa.
 
-  - **IsPotentiallyMali nieujemne (kolumna D)**: Jeśli ta wartość to "PRAWDA", reguła jest prawdopodobnie złośliwa.
+  - **IsPotentiallyMalicious (kolumna D)**: Jeśli ta wartość to "TRUE", reguła jest prawdopodobnie złośliwa.
 
-  - **ActionCommand (kolumna G)**: Jeśli w tej kolumnie znajduje się lista aplikacji lub dowolnego pliku z rozszerzeniami programu .exe lub .zip albo nieznanym wpisem, który odwołuje się do adresu URL, reguła jest prawdopodobnie złośliwa.
+  - **ActionCommand (kolumna G)**: jeśli ta kolumna zawiera listę aplikacji lub dowolnego pliku z rozszerzeniami .exe lub .zip albo nieznany wpis, który odwołuje się do adresu URL, reguła jest prawdopodobnie złośliwa.
 
-- ***MailboxFormsExport-yyyy-mm-dd*.csv**: Na ogół rzadko używa się formularzy niestandardowych. Jeśli znajdziesz w tym skoroszycie, otwórz skrzynkę pocztową tego użytkownika i zbadasz sam formularz. Jeśli Twoja organizacja nie umieściła jej w tym miejscu celowo, prawdopodobnie jest ona złośliwa.
+- ***MailboxFormsExport-yyyy-mm-dd*.csv**: Ogólnie rzecz biorąc, użycie formularzy niestandardowych jest rzadkie. Jeśli znajdziesz dowolny element w tym skoroszycie, otworzysz skrzynkę pocztową tego użytkownika i sprawdzisz sam formularz. Jeśli twoja organizacja nie umieściła jej w tym miejscu celowo, prawdopodobnie jest złośliwa.
 
-## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Jak zatrzymać i rozwiązać te Outlook dotyczące reguł i formularzy
+## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Jak zatrzymać i skorygować atak na reguły Outlook i formularze
 
-Jeśli znajdziesz jakiekolwiek dowody na te ataki, działania naprawcze są proste, po prostu usuń regułę lub formularz ze skrzynki pocztowej. Możesz to zrobić za pomocą klienta Outlook lub przy użyciu zdalnej obsługi programu PowerShell w celu usunięcia reguł.
+Jeśli znajdziesz jakiekolwiek dowody na jeden z tych ataków, korygowanie jest proste, wystarczy usunąć regułę lub formularz ze skrzynki pocztowej. Można to zrobić za pomocą klienta Outlook lub zdalnego programu PowerShell w celu usunięcia reguł.
 
 ### <a name="using-outlook"></a>Korzystanie z Outlook
 
-1. Zidentyfikuj wszystkie urządzenia używane przez użytkownika z Outlook. Wszystkie one muszą zostać wyczyszczone z potencjalnego złośliwego oprogramowania. Nie zezwalaj użytkownikowi na logowanie się i korzystanie z poczty e-mail, dopóki wszystkie urządzenia nie zostaną wyczyszczone.
+1. Zidentyfikuj wszystkie urządzenia używane przez użytkownika z Outlook. Wszystkie będą musiały zostać oczyszczone z potencjalnego złośliwego oprogramowania. Nie zezwalaj użytkownikowi na logowanie się i używanie poczty e-mail, dopóki wszystkie urządzenia nie zostaną wyczyszczone.
 
-2. Postępuj zgodnie z [instrukcjami Usuwanie reguły](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) dla każdego urządzenia.
+2. Wykonaj kroki opisane w [temacie Usuwanie reguły](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) dla każdego urządzenia.
 
-3. Jeśli nie masz pewności co do obecności innego złośliwego oprogramowania, możesz sformatować i ponownie zainstalować całe oprogramowanie na urządzeniu. W przypadku urządzeń przenośnych możesz wykonać instrukcje producentów, aby przywrócić obraz fabryczny.
+3. Jeśli nie masz pewności co do obecności innego złośliwego oprogramowania, możesz sformatować i ponownie zainstalować całe oprogramowanie na urządzeniu. W przypadku urządzeń przenośnych możesz wykonać kroki producentów, aby zresetować urządzenie do obrazu fabrycznego.
 
-4. Zainstaluj najnowsze wersje pakietu Outlook. Pamiętaj, że bieżąca wersja programu Outlook domyślnie blokuje oba typy tego typu ataków.
+4. Zainstaluj najbardziej aktualne wersje Outlook. Pamiętaj, że bieżąca wersja Outlook domyślnie blokuje oba typy tego ataku.
 
-5. Po usunięciu wszystkich kopii offline skrzynki pocztowej zresetuj hasło użytkownika (użyj wysokiej jakości) i wykonaj czynności opisane w konfigurowanie uwierzytelniania wieloskładnikowego dla użytkowników, jeśli uwierzytelnianie wieloskładnikowe nie zostało jeszcze włączone.[](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) Dzięki temu poświadczenia użytkownika nie będą widoczne za pomocą innych środków (takich jak wyłudzanie informacji lub ponowne użycie hasła).
+5. Po usunięciu wszystkich kopii skrzynki pocztowej w trybie offline zresetuj hasło użytkownika (użyj wysokiej jakości) i wykonaj kroki opisane w [temacie Konfigurowanie uwierzytelniania wieloskładnikowego dla użytkowników](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) , jeśli uwierzytelnianie wieloskładnikowe nie zostało jeszcze włączone. Dzięki temu poświadczenia użytkownika nie są udostępniane za pomocą innych środków (takich jak wyłudzanie informacji lub ponowne użycie hasła).
 
 ### <a name="using-powershell"></a>Korzystanie z programu PowerShell
 
-Istnieją dwa zdalne polecenia cmdlet programu PowerShell, za pomocą których można usunąć lub wyłączyć niebezpieczne reguły. Po prostu postępuj zgodnie z instrukcjami.
+Istnieją dwa zdalne polecenia cmdlet programu PowerShell, których można użyć do usuwania lub wyłączania niebezpiecznych reguł. Po prostu wykonaj kroki.
 
-#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Procedura dla skrzynek pocztowych na Exchange poczty
+#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Kroki dotyczące skrzynek pocztowych znajdujących się na serwerze Exchange
 
-1. Połączenie się z serwerem Exchange przy użyciu zdalnej pracy programu PowerShell. Postępuj zgodnie z instrukcjami [w Połączenie, aby Exchange serwerach przy użyciu zdalnej pracy programu PowerShell](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+1. Połączenie do serwera Exchange przy użyciu zdalnego programu PowerShell. Wykonaj kroki opisane w [Połączenie, aby Exchange serwerów przy użyciu zdalnego programu PowerShell](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
 
-2. Aby całkowicie usunąć jedną regułę, wiele reguł lub wszystkie reguły ze skrzynki pocztowej, użyj polecenia cmdlet [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) .
+2. Jeśli chcesz całkowicie usunąć pojedynczą regułę, wiele reguł lub wszystkie reguły ze skrzynki pocztowej, użyj polecenia cmdlet [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) .
 
-3. Aby zachować regułę i jej zawartość do dalszego badania, użyj polecenia cmdlet [Disable-InboxRule](/powershell/module/exchange/disable-inboxrule) .
+3. Jeśli chcesz zachować regułę i jej zawartość do dalszego badania, użyj polecenia cmdlet [Disable-InboxRule](/powershell/module/exchange/disable-inboxrule) .
 
-#### <a name="steps-for-mailboxes-in-exchange-online"></a>Procedura dla skrzynek pocztowych w programie Exchange Online
+#### <a name="steps-for-mailboxes-in-exchange-online"></a>Kroki dotyczące skrzynek pocztowych w Exchange Online
 
-1. Postępuj zgodnie z instrukcjami [w Połączenie, aby Exchange Online przy użyciu programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Wykonaj kroki opisane w [Połączenie, aby Exchange Online przy użyciu programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Aby całkowicie usunąć jedną regułę, wiele reguł lub wszystkie reguły ze skrzynki pocztowej, użyj polecenia cmdlet [Reguła](/powershell/module/exchange/Remove-InboxRule) usuwania skrzynki odbiorczej.
+2. Jeśli chcesz całkowicie usunąć pojedynczą regułę, wiele reguł lub wszystkie reguły ze skrzynki pocztowej, użyj polecenia cmdlet [Remove-Inbox Rule](/powershell/module/exchange/Remove-InboxRule) .
 
-3. Aby zachować regułę i jej zawartość do dalszego badania, użyj polecenia cmdlet [Disable-InboxRule](/powershell/module/exchange/disable-inboxrule) .
+3. Jeśli chcesz zachować regułę i jej zawartość do dalszego badania, użyj polecenia cmdlet [Disable-InboxRule](/powershell/module/exchange/disable-inboxrule) .
 
 ## <a name="how-to-minimize-future-attacks"></a>Jak zminimalizować przyszłe ataki
 
-### <a name="first-protect-your-accounts"></a>Najpierw: ochrona kont
+### <a name="first-protect-your-accounts"></a>Po pierwsze: ochrona kont
 
-Luki w zasadach i formularzach są używane przez atakującego tylko w przypadku kradzieży lub naruszenia jednego z kont użytkownika. Dlatego pierwszym krokiem, aby zapobiec używaniu tych luk w organizacji, jest agresywna ochrona kont użytkowników. Do najczęstszych sposobów naruszenia zabezpieczeń kont należy naruszenie hasła lub wyłudzania [informacji](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/).
+Luki w zabezpieczeniach Reguły i Formularze są używane przez osobę atakującą tylko po kradzieży lub naruszeniu jednego z kont użytkownika. Dlatego pierwszym krokiem zapobiegania wykorzystywaniu tych luk w zabezpieczeniach w organizacji jest agresywna ochrona kont użytkowników. Niektóre z najbardziej typowych sposobów naruszenia kont to ataki polegające na wyłudzaniu informacji lub [atakach z użyciem hasła](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/).
 
-Najlepszym sposobem na ochronę kont użytkowników, a zwłaszcza kont administratora, jest skonfigurowanie uwierzytelniania [wieloskładnikowego dla użytkowników](../../admin/security-and-compliance/set-up-multi-factor-authentication.md). Należy również:
+Najlepszym sposobem ochrony kont użytkowników, a zwłaszcza kont [administratorów, jest skonfigurowanie uwierzytelniania wieloskładnikowego dla użytkowników](../../admin/security-and-compliance/set-up-multi-factor-authentication.md). Należy również:
 
-- Monitoruj sposób, w jaki uzyskujesz [dostęp do kont użytkowników i jak z nich korzystasz](/azure/active-directory/active-directory-view-access-usage-reports). Użytkownik nie może zapobiec początkowemu naruszeniu, ale skrócenie czasu trwania i wpływu naruszenia zostanie skrócone, wykrywając je szybciej. Za pomocą tych zasad [Office 365 Cloud App Security możesz](/cloud-app-security/what-is-cloud-app-security) monitorować Konta i ostrzegać Cię o nietypowej aktywności:
+- Monitorowanie sposobu [uzyskiwania dostępu do kont użytkowników i ich użycia](/azure/active-directory/active-directory-view-access-usage-reports). Nie można zapobiec początkowemu naruszeniu, ale skrócisz czas trwania i wpływ naruszenia, wykrywając go wcześniej. Możesz użyć tych [zasad Office 365 Cloud App Security](/cloud-app-security/what-is-cloud-app-security), aby monitorować konta i otrzymywać alerty dotyczące nietypowych działań:
 
-  - **Wiele nieudanych** prób logowania: Te profile zasad powodują profilowanie środowiska i wyzwalają alerty, gdy użytkownicy wykonują w jednej sesji wiele działań logowania nieudanych względem poziomu początkowego, co może wskazywać na próbę naruszenia zabezpieczeń.
+  - **Wiele nieudanych prób logowania**: te zasady profilują środowisko i wyzwalają alerty, gdy użytkownicy wykonują wiele nieudanych działań logowania w jednej sesji w odniesieniu do wyuczonych punktów odniesienia, co może wskazywać na próbę naruszenia.
 
-  - **Niemożliwy podróż**: te zasady profileją Twoje środowisko i powodują wyzwalanie alertów, gdy działania tego samego użytkownika są wykrywane od tego samego użytkownika w różnych lokalizacjach w czasie krótszym niż oczekiwany czas podróży między tymi dwoma lokalizacjami. Może to oznaczać, że inny użytkownik używa tych samych poświadczeń. Wykrycie tego anomalii zachowania wymaga początkowego okresu nauki siedmiu dni, w trakcie którego uczy się wzorca aktywności nowego użytkownika.
+  - **Niemożliwa podróż**: te zasady profilują środowisko i wyzwalają alerty, gdy działania są wykrywane przez tego samego użytkownika w różnych lokalizacjach w okresie krótszym niż oczekiwany czas podróży między dwiema lokalizacjami. Może to wskazywać, że inny użytkownik używa tych samych poświadczeń. Wykrycie tego nietypowego zachowania wymaga początkowego okresu nauki wynoszącego siedem dni, podczas którego uczy się wzorca aktywności nowego użytkownika.
 
-  - **Nietypowe personifikowane działanie (** według użytkownika): Te profile zasad powodują profile Twojego środowiska i wyzwalają alerty, gdy użytkownicy wykonują w jednej sesji wiele personifikowanych działań względem poziomu początkowego, co może wskazywać na próbę naruszenia zabezpieczeń.
+  - **Nietypowe działanie personifikowane (przez użytkownika)**: te zasady profilują środowisko i wyzwalają alerty, gdy użytkownicy wykonują wiele personifikowanych działań w jednej sesji w odniesieniu do poznanego punktu odniesienia, co może wskazywać na próbę naruszenia.
 
-- Do zarządzania konfiguracjami [i zachowaniami zabezpieczeń konta](https://securescore.office.com/) Office 365 użyć narzędzia, takiego jak ocena bezpiecznego konta.
+- Użyj narzędzia, takiego jak [Office 365 Secure Score](https://securescore.office.com/), aby zarządzać konfiguracjami i zachowaniami zabezpieczeń konta.
 
-### <a name="second-keep-your-outlook-clients-current"></a>Po drugie: dbaj o aktualn Outlook klienta
+### <a name="second-keep-your-outlook-clients-current"></a>Po drugie: zachowaj aktualną Outlook klientów
 
-W pełni zaktualizowane i uaktualnione wersje programu Outlook 2013 i 2016 domyślnie wyłączą akcję reguły/formularza "Uruchom aplikację". Zapewni to zablokowanie nawet w przypadku naruszenia konta przez atakującego, działania związane z regułami i formularzami zostaną zablokowane. Możesz zainstalować najnowsze aktualizacje i poprawki zabezpieczeń, korzystając z procedury opisanej w te [Office aktualizacji](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
+W pełni zaktualizowane i poprawione wersje Outlook 2013 r. i 2016 r. domyślnie wyłączają akcję "Uruchom aplikację" /formularz. Zapewni to, że nawet jeśli osoba atakująca naruszy konto, reguła i akcje formularza zostaną zablokowane. Najnowsze aktualizacje i poprawki zabezpieczeń można zainstalować, wykonując kroki opisane w [temacie Instalowanie aktualizacji Office](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
-Oto wersje poprawek dla Twoich klientów Outlook 2013 i 2016:
+Oto wersje poprawek dla klientów Outlook 2013 i 2016:
 
-- **Outlook 2016**: 16.0.4534.1001 lub więcej.
+- **Outlook 2016**: 16.0.4534.1001 lub nowsza.
 
-- **Outlook 2013**: 15.0.4937.1000 lub więcej.
+- **Outlook 2013** r.: 15.0.4937.1000 lub nowsza.
 
 Aby uzyskać więcej informacji na temat poszczególnych poprawek zabezpieczeń, zobacz:
 
-- [Outlook 2016 zabezpieczeń](https://support.microsoft.com/help/3191883)
+- [poprawka zabezpieczeń Outlook 2016](https://support.microsoft.com/help/3191883)
 
-- [poprawka Outlook 2013](https://support.microsoft.com/help/3191938)
+- [poprawka zabezpieczeń Outlook 2013](https://support.microsoft.com/help/3191938)
 
-### <a name="third-monitor-your-outlook-clients"></a>Trzecie: Monitorowanie klientów Outlook klientach
+### <a name="third-monitor-your-outlook-clients"></a>Po trzecie: monitorowanie klientów Outlook
 
-Pamiętaj, że nawet w przypadku zainstalowania poprawek i aktualizacji możliwe jest, że atakujący może zmienić konfigurację komputera lokalnego w celu ponownego włączenia zachowania "Uruchom aplikację". Za pomocą [zaawansowanego zarządzania zasady grupy komputerami](/microsoft-desktop-optimization-pack/agpm/) możesz monitorować i wymuszać zasady komputera lokalnego na swoich klientach.
+Należy pamiętać, że nawet po zainstalowaniu poprawek i aktualizacji osoba atakująca może zmienić konfigurację komputera lokalnego w celu ponownego włączenia zachowania "Uruchom aplikację". Usługa [Advanced zasady grupy Management](/microsoft-desktop-optimization-pack/agpm/) umożliwia monitorowanie i wymuszanie zasad komputera lokalnego na klientach.
 
-Możesz sprawdzić, czy funkcja "Uruchom aplikację" została ponownie włączona za pośrednictwem zastępowania w rejestrze, korzystając z informacji w tece Jak wyświetlić rejestr systemu przy użyciu [64-bitowych](https://support.microsoft.com/help/305097) wersji Windows. Sprawdź następujące podklucze:
+Możesz sprawdzić, czy funkcja "Uruchom aplikację" została ponownie włączona za pośrednictwem przesłonięcia w rejestrze, korzystając z informacji w temacie [Jak wyświetlić rejestr systemowy przy użyciu 64-bitowych wersji Windows](https://support.microsoft.com/help/305097). Sprawdź następujące podklucze:
 
 - **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013 r.**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
-Poszukaj klucza EnableUnsafeClientMailRules. Jeśli poprawka zabezpieczeń ma wartość 1, Outlook została zastąpiona, a komputer jest narażony na ataki formularzy/reguł. Jeśli ta wartość wynosi 0, akcja "Uruchom aplikację" zostanie wyłączona. Jeśli zainstalowano zaktualizowaną i zainstalowaną Outlook pakietu i ten klucz rejestru nie jest aktualny, wówczas system nie jest narażony na te ataki.
+Poszukaj klucza EnableUnsafeClientMailRules. Jeśli jest tam i ustawiono wartość 1, poprawka zabezpieczeń Outlook została zastąpiona, a komputer jest narażony na atak formularzy/reguł. Jeśli wartość to 0, akcja "Uruchom aplikację" jest wyłączona. Jeśli zainstalowano zaktualizowaną i poprawioną wersję Outlook, a ten klucz rejestru nie jest obecny, system nie jest narażony na te ataki.
 
-Klienci korzystający z lokalnych instalacji Exchange powinny rozważyć zablokowanie starszych wersji Outlook, które nie mają dostępnych poprawek. Szczegóły tego procesu można znaleźć w artykule Konfigurowanie blokowania [Outlook klienta](/exchange/configure-outlook-client-blocking-exchange-2013-help).
+Klienci z lokalnymi instalacjami Exchange powinni rozważyć zablokowanie starszych wersji Outlook, które nie mają dostępnych poprawek. Szczegółowe informacje na temat tego procesu można znaleźć w artykule [Konfigurowanie blokowania klienta Outlook](/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Zabezpieczanie Microsoft 365 jak najbezpieczniejsi
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Zabezpieczanie Microsoft 365 jak profesjonalista ds. cyberbezpieczeństwa
 
-Subskrypcja Microsoft 365 jest wyposażona w zaawansowany zestaw funkcji zabezpieczeń, za pomocą których można chronić dane i użytkowników. Korzystaj z planu Microsoft 365 zabezpieczeń — najważniejsze priorytety w ciągu pierwszych [30, 90](security-roadmap.md) dni i nie tylko, aby wdrożyć zalecane przez firmę Microsoft najważniejsze wskazówki dotyczące zabezpieczania Microsoft 365 dzierżawy.
+Subskrypcja Microsoft 365 oferuje zaawansowany zestaw funkcji zabezpieczeń, których można użyć do ochrony danych i użytkowników. Użyj [planu zabezpieczeń Microsoft 365 — najważniejsze priorytety dla pierwszych 30 dni, 90 dni i nie tylko,](security-roadmap.md) aby zaimplementować zalecane przez firmę Microsoft najlepsze rozwiązania dotyczące zabezpieczania dzierżawy Microsoft 365.
 
-- Zadania, które można wykonać w ciągu pierwszych 30 dni. Mają one natychmiastowy efekt i mają niski wpływ na użytkowników.
+- Zadania do wykonania w ciągu pierwszych 30 dni. Mają one natychmiastowy wpływ i mają niski wpływ na użytkowników.
 
-- Zadania, które można wykonać w ciągu 90 dni. Planowanie i implementacja tych aplikacji trwa nieco dłużej, ale znacznie poprawia twoje działania w zakresie zabezpieczeń.
+- Zadania do wykonania w ciągu 90 dni. Planowanie i wdrażanie tych rozwiązań zajmuje nieco więcej czasu, ale znacznie poprawia stan zabezpieczeń.
 
-- Dłużej niż 90 dni. Te ulepszenia działają w ciągu pierwszych 90 dni.
+- Ponad 90 dni. Te ulepszenia są kompilowane w ciągu pierwszych 90 dni pracy.
 
 ## <a name="see-also"></a>Zobacz też:
 
-- [Złośliwe Outlook przez](https://silentbreaksecurity.com/malicious-outlook-rules/) wpis zabezpieczeń SilentBreak na temat wektora reguł udostępnia szczegółowy przegląd sposobu działania Outlook zabezpieczeń.
+- [Złośliwe reguły Outlook](https://silentbreaksecurity.com/malicious-outlook-rules/) według funkcji SilentBreak Security Post dotyczące wektora reguł udostępniają szczegółowy przegląd sposobu Outlook reguł.
 
-- [W blogu](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) usługi Sensepost o aplikacji Mailrule Pwnage funkcja MAPI przez HTTP i skrzynkę pocztową omawiane jest narzędzie o nazwie Linijka, które umożliwia wykorzystywanie skrzynek pocztowych za pomocą Outlook pocztowych.
+- [Mapi przez HTTP i Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) na blogu Sensepost o Mailrule Pwnage omawia narzędzie o nazwie Linijka, które pozwala wykorzystać skrzynki pocztowe za pośrednictwem reguł Outlook.
 
-- [Outlook formularzy i powłoki w](https://sensepost.com/blog/2017/outlook-forms-and-shells/) blogu Sensepost na temat wektora zagrożeń Forms.
+- [Outlook formularzy i powłok](https://sensepost.com/blog/2017/outlook-forms-and-shells/) na blogu Sensepost o forms Threat Vector.
 
 - [Linijka Codebase](https://github.com/sensepost/ruler)
 
-- [Wskaźniki naruszenia linijki](https://github.com/sensepost/notruler/blob/master/iocs.md)
+- [Wskaźniki linijki kompromisu](https://github.com/sensepost/notruler/blob/master/iocs.md)

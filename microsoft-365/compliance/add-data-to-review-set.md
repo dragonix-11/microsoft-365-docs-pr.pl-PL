@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak dodać wyniki wyszukiwania lub przykłady tych wyników wyszukiwania do zestawu przeglądu przypadków zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: 1649b766c0e7f39122505d3a73574e478373f5b2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7b754aa09390d041de44cd2e82ed9d1f93eede7e
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941132"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973756"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Dodawanie wyników wyszukiwania do zestawu przeglądów
 
@@ -37,7 +37,7 @@ Po dodaniu wyników wyszukiwania do zestawu przeglądów (zestawy przeglądów w
 
 - Wszystkie elementy (w tym zawartość i metadane) są ponownie indeksowane, aby wszystkie dane w zestawie przeglądów były w pełni przeszukiwane podczas przeglądania danych sprawy. Ponowne indeksowanie danych powoduje dokładne i szybkie wyszukiwanie podczas przeszukiwania danych w zestawie przeglądów podczas badania sprawy.
 
-- Plik zaszyfrowany za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączony do wiadomości e-mail zwracanej w wynikach wyszukiwania jest odszyfrowywany po dodaniu wiadomości e-mail i dołączonego pliku do zestawu przeglądów. Odszyfrowany plik można przeglądać i wykonywać zapytania w zestawie przeglądów. Musisz mieć przypisaną rolę odszyfrowywania usługi RMS, aby dodać odszyfrowane załączniki wiadomości e-mail do zestawu przeglądów. Aby uzyskać więcej informacji, zobacz [Odszyfrowywanie w narzędziach Microsoft 365 eDiscovery](ediscovery-decryption.md).
+- Plik zaszyfrowany za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączony do wiadomości e-mail zwracanej w wynikach wyszukiwania jest odszyfrowywany po dodaniu wiadomości e-mail i dołączonego pliku do zestawu przeglądów. Odszyfrowany plik można przeglądać i wykonywać zapytania w zestawie przeglądów. Musisz mieć przypisaną rolę odszyfrowywania usługi RMS, aby dodać odszyfrowane załączniki wiadomości e-mail do zestawu przeglądów. Aby uzyskać więcej informacji, zobacz [Decryption in Microsoft Purview eDiscovery tools (Odszyfrowywanie w narzędziach zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview](ediscovery-decryption.md)).
 
 Aby dodać dane do zestawu przeglądów, kliknij wyszukiwanie na karcie **Wyszukiwania** , a następnie kliknij pozycję **Dodaj wyniki, aby przejrzeć zestaw** na stronie wysuwanej.
 

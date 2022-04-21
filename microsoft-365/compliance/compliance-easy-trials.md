@@ -1,5 +1,5 @@
 ---
-title: Informacje o Microsoft 365 próbnej dotyczącej zgodności
+title: Informacje o wersji próbnej rozwiązań Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -13,96 +13,127 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: Informacje o próbach rozwiązań zgodności.
-ms.openlocfilehash: 247080c374cd99c93e538e46ed0894ad24e501cd
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Dowiedz się więcej na temat wersji próbnej rozwiązań Microsoft Purview i sposobu tworzenia konta.
+ms.openlocfilehash: a019ac3a2e16dfd6ae83ba1564f0031f77757b62
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679835"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971996"
 ---
-# <a name="about-the-compliance-solutions-trial"></a>Informacje o wersji próbnej rozwiązań zgodności
+# <a name="about-the-microsoft-purview-solutions-trial"></a>Informacje o wersji próbnej rozwiązań Microsoft Purview
 
-Rozwiązania firmy Microsoft dotyczące zgodności pomagają chronić Twoją organizację przed zagrożeniami wewnętrznymi, które są związane z nieodpowiednimi uprawnieniami do plików i wiadomości e-mail, oraz pomagają organizacji w przestrzeganiu wymogów prawnych i prawnych.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Wersja Microsoft 365 rozwiązania do zgodności to najprostszy sposób wypróbowania wszystkich możliwości rozwiązań firmy Microsoft w zakresie zgodności, a jego skonfigurowanie zajmuje tylko kilka minut. Po zakończeniu konfiguracji wersji próbnej wszystkie funkcje pakietu licencji Microsoft E5 są dostępne do użycia przez maksymalnie 90 dni.
+Rozwiązania usługi Microsoft Purview pomagają chronić organizację przed zagrożeniami wewnętrznymi wynikającymi z niewłaściwych uprawnień do plików i wiadomości e-mail oraz pomagają organizacji spełnić wymagania prawne i wewnętrzne.
+
+Wersja próbna rozwiązań Microsoft Purview to najprostszy sposób wypróbowania wszystkich możliwości rozwiązań Microsoft Purview, a jego skonfigurowanie zajmuje tylko kilka minut. Po zakończeniu konfiguracji wersji próbnej wszystkie funkcje pakietu licencji microsoft E5 są dostępne do użycia przez maksymalnie 90 dni.
 
 ## <a name="terms-and-conditions"></a>Warunki i postanowienia
 
-Zapoznaj się [z warunkami i postanowieniami](terms-conditions.md) Microsoft 365 prób zgodności z przepisami.
+Zapoznaj się z [warunkami i postanowieniami](terms-conditions.md) dotyczącymi wersji próbnych usługi Microsoft Purview.
 
-## <a name="set-up-a-compliance-trial"></a>Konfigurowanie wersji próbnej zgodności
+## <a name="eligibility"></a>Kwalifikowalności
 
-Możesz utworzyć konta w celu korzystania z wersji próbnej w aplikacji [Centrum zgodności platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2077149) **linku Wersje** próbne w okienku nawigacji po lewej stronie.
+Microsoft 365 E3 i Office 365 E3 klienci, którzy nie mają jeszcze pakietu licencji microsoft E5, kwalifikują się do wersji próbnej rozwiązań Usługi Purview. Wersja próbna nie jest dostępna dla klientów Microsoft 365 Government.
 
 ## <a name="licensing"></a>Licencjonowanie
 
-W ramach konfiguracji wersji próbnej licencje zgodności platformy Microsoft E5 są automatycznie stosowane do organizacji. Licencje są aktywne przez 90 dni.
+W ramach konfiguracji wersji próbnej 300 Microsoft 365 E5 licencji zgodności jest automatycznie stosowanych do organizacji. Licencje są aktywne przez 90 dni.
 
-## <a name="permissions"></a>Uprawnienia
+## <a name="required-roles-for-starting-the-trial"></a>Wymagane role do rozpoczęcia wersji próbnej
 
-Aby rozpocząć lub zakończyć wersję próbną, musisz być członkiem ról administratora globalnego lub administratora zabezpieczeń w programie Azure Active Directory. Aby uzyskać szczegółowe informacje, zobacz [Informacje o rolach administratorów](../admin/add-users/about-admin-roles.md).
+Aby zarejestrować się w wersji próbnej lub zakończyć próbę, użytkownicy muszą mieć jedną z następujących ról administratora:
+- Administrator rozliczeń
+- Administrator zgodności
+- Administrator globalny
 
-## <a name="additional-information"></a>Informacje dodatkowe
+Szczegółowe informacje na temat ról można znaleźć w artykule [Informacje o rolach administratora](../admin/add-users/about-admin-roles.md).
 
-Po zarejestrowaniu się w wersji próbnej może upłynieć do 2 godzin, aż zmiany i aktualizacje będą dostępne. Administratorzy muszą się wylogować i zalogować ponownie, aby zobaczyć zmiany.
+## <a name="how-to-sign-up-for-the-trial"></a>Jak zarejestrować się w wersji próbnej
 
-Okres próbny można przedłużyć w ciągu ostatnich 15 dni okresu próbnego. Maksymalna liczba okresów próbnych wynosi dwa. Jeśli okres próbny nie zostanie wydłużony, musisz poczekać co najmniej 30 dni przed zarejestrowaniem się w drugiej wersji próbnej.
+Odwiedź [centrum wersji próbnych Microsoft 365](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef), aby zarejestrować się w wersji próbnej. Możesz również wykonać poniższe kroki:
 
-## <a name="ending-the-trial"></a>Zakończenie okresu próbnego
+1. W [portalu zgodności usługi Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=2077149) wybierz pozycję **Wersje próbne** na lewym pasku nawigacyjnym, aby przejść do centrum Microsoft 365 trials.
+2. W obszarze **Wersje próbne zgodności** znajdź kartę **Rozwiązania usługi Microsoft Purview** i wybierz pozycję **Wypróbuj teraz**.
+3. W okienku **wysuwanej wersji próbnej rozwiązań Microsoft Purview** przejrzyj informacje o tym, co jest uwzględnione i czego można oczekiwać po rozpoczęciu wersji próbnej, a następnie wybierz pozycję **Rozpocznij wersję próbną.**
 
-Administratorzy mogą wyłączyć wersję próbną w dowolnym momencie, przechodząc na kartę zgodności.
+Twoja wersja próbna będzie obowiązywać natychmiast przez 90 dni. Wyświetlenie wszystkich rozwiązań usługi Purview w lewym obszarze nawigacji może potrwać do dwóch godzin. Wyloguj się i zaloguj się ponownie, aby wyświetlić aktualizacje.
 
-Jeśli zdecydujesz się nie zarejestrować się w funkcji, która jest częścią wersji próbnej rozwiązań zgodności, o ile nie określono inaczej dla rozwiązania, Twoje dane wersji próbnej będą utrzymywane przez okres, zwykle 180 dni, zanim zostaną trwale usunięte. Do tego czasu możesz nadal uzyskać dostęp do danych zebranych podczas okresu próbnego.
+## <a name="getting-started-finding-support-and-ending-the-trial"></a>Wprowadzenie, znalezienie pomocy technicznej i zakończenie wersji próbnej
 
-## <a name="availability"></a>Dostępność
+#### <a name="getting-started"></a>Wprowadzenie
 
-Wersja Microsoft 365 rozwiązania zgodności jest stopniowo wprowadzana u istniejących klientów, którzy spełniają określone kryteria (w tym geografię), którzy nie mają jeszcze pakietu licencji microsoft E5.
+Możesz zacząć korzystać z rozwiązań usługi Purview, gdy tylko zobaczysz je w portalu zgodności usługi Microsoft Purview. Nic nie jest tworzone automatycznie i nie będzie to miało wpływu na użytkowników. Po przejściu do każdego rozwiązania możesz skorzystać z przewodnika, aby utworzyć dodatkowe konfiguracje konfiguracji, aby rozpocząć korzystanie z funkcji.
 
-## <a name="learn-more-about-compliance-solutions"></a>Dowiedz się więcej o rozwiązaniach zgodności
+Skorzystaj z naszego [podręcznika wersji próbnej](compliance-easy-trials-compliance-playbook.md) , aby ułatwić Rozpoczęcie pracy.
 
-Zastanawiasz się, co możesz zobaczyć w bezpłatnej wersji próbnej? Wersja próbna rozwiązań zgodności obejmuje następujące rozwiązania:
+#### <a name="finding-support"></a>Znajdowanie pomocy technicznej
 
-- **Inspekcja**
+Organizacje mogą używać FastTrack do obsługi wdrażania w wersji próbnej, jeśli dzierżawa ma co najmniej 150 licencji. Uzyskaj więcej [informacji na temat FastTrack](https://docs.microsoft.com/fasttrack/introduction).
 
-  Zaawansowana inspekcja ułatwia organizacjom przeprowadzanie analiz prawnych i zgodności przez zwiększające się przechowywanie dziennika inspekcji wymaganego do przeprowadzenia badania, zapewniając dostęp do ważnych zdarzeń pomocnych w określeniu zakresu naruszenia bezpieczeństwa oraz szybszemu dostępowi do interfejsu API działań zarządzania Office 365 zarządzania. [Dowiedz się więcej o inspekcji](advanced-audit.md)
+#### <a name="extending-the-trial"></a>Rozszerzanie wersji próbnej
 
-- **Zgodność komunikacji**
+Okres próbny można przedłużyć w ciągu ostatnich 15 dni od okresu próbnego. Okres próbny jest ograniczony do maksymalnie dwóch okresów próbnych. Jeśli nie przedłużysz okresu próbnego, musisz poczekać co najmniej 30 dni, zanim zarejestrujesz się w drugiej wersji próbnej.
 
-  Zgodność komunikacji ułatwia wyzwania związane z nowoczesną zgodnością związane z komunikacją wewnętrzną i zewnętrzną, pomagając automatycznie przechwytywać nieodpowiednie wiadomości, badać możliwe naruszenia zasad i podjąć działania naprawcze. Dowiedz się więcej o [zgodności komunikacji](communication-compliance.md)
+#### <a name="ending-the-trial"></a>Zakończenie wersji próbnej
+
+Administratorzy mogą wyłączyć wersję próbną w dowolnym momencie, przechodząc do karty **próbnej rozwiązań Purview** w centrum Microsoft 365 trials (zobacz [Jak zarejestrować się w wersji próbnej](#how-to-sign-up-for-the-trial)) i wybierając pozycję **Zakończ wersję próbną**.
+
+Jeśli zdecydujesz się nie uaktualniać do rozwiązań na poziomie E5, o ile nie określono inaczej dla rozwiązania, dane próbne zostaną zachowane przez okres czasu, zwykle 180 dni, zanim zostaną trwale usunięte. Do tego czasu możesz nadal uzyskiwać dostęp do danych zebranych podczas okresu próbnego.
+
+## <a name="learn-more-about-purview-solutions"></a>Dowiedz się więcej o rozwiązaniach usługi Purview
+
+Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? Wersja próbna rozwiązań Usługi Purview obejmuje następujące rozwiązania:
+
+- **Inspekcji**
+
+  Inspekcja usługi Microsoft Purview (Premium) pomaga organizacjom w prowadzeniu badań kryminalistycznych i zgodności poprzez zwiększenie przechowywania dzienników inspekcji wymaganych do przeprowadzenia badania, zapewnienie dostępu do kluczowych zdarzeń, które pomagają określić zakres naruszenia zabezpieczeń i szybszy dostęp do interfejsu API działań zarządzania Office 365. Dowiedz się więcej o [inspekcji](advanced-audit.md)
+
+- **Zgodność z komunikacją**
+
+  Microsoft Purview Communication Compliance pomaga przezwyciężyć nowoczesne wyzwania związane ze zgodnością związane z komunikacją wewnętrzną i zewnętrzną, pomagając automatycznie przechwytywać nieodpowiednie komunikaty, badać możliwe naruszenia zasad i podejmować kroki w celu skorygowania problemu. Dowiedz się więcej o [zgodności komunikacji](communication-compliance.md)
 
 - **Menedżer zgodności**
 
-  Menedżer zgodności może ułatwić Ci pozostawanie na drodze do zapewnienia zgodności z przepisami, od sporządzania spisu informacji o ryzyku związanym z ochroną danych, przez zarządzanie skomplikowaniem wdrażania kontroli, pozostawanie na czasie dzięki regulacjom i certyfikatom, a także raportowanie audytorom. [Dowiedz się więcej o Menedżerze zgodności](compliance-manager.md)
+  Program Microsoft Purview Compliance Manager może pomóc w całej procesie zapewniania zgodności, od tworzenia spisu zagrożeń związanych z ochroną danych po zarządzanie złożonością wdrażania mechanizmów kontroli, aktualizowanie przepisów i certyfikatów oraz raportowanie do audytorów. Dowiedz się więcej o [Menedżerze zgodności](compliance-manager.md)
 
-- **zbierania elektronicznych materiałów dowodowych**
+- **Zapobieganie utracie danych**
 
-  Przy zachowaniu, zbieraniu, analizowaniu i eksportowaniu zawartości, która odpowiada wewnętrznym i zewnętrznym analizom Twojej organizacji, skorzystaj z zalet końcowego przepływu pracy. Zespoły prawne mogą również zarządzać całym procesem powiadamiania o zerowaniu ze strony prawnej, komunikując się z opiekunami zaangażowanymi w sprawę. [Dowiedz się więcej o zbierania elektronicznych materiałów dowodowych](ediscovery.md)
+  Usługa Microsoft Purview Data Loss Prevention (DLP) ułatwia kontrolowanie udostępniania i używania poufnych informacji na urządzeniach, aplikacjach i usługach. Dzięki próbom można rozszerzyć zakres zasad DLP na Teams i urządzenia, chronić jeszcze bardziej wrażliwą zawartość przy użyciu klasyfikatorów z możliwością trenowania i dokładnego dopasowania danych (EDM) oraz szybko rozpocząć pracę z zalecanymi zasadami DLP.  [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md)
 
-- **Zarządzanie informacjami**
+   Po zakończeniu okresu próbnego:
 
-  Zautomatyzuj zakres zasad przechowywania przy użyciu zakresów adaptacyjnych zasad. Ta funkcja umożliwia dynamiczne kierowanie zasad przechowywania do konkretnych użytkowników, grup lub witryn. Te zasady są automatycznie aktualizowane w przypadku wystąpienia zmian w organizacji. Ponadto zasady przechowywania z zastosowaniem adaptacyjnych zakresów nie podlegają limitom lokalizacji. [Dowiedz się więcej o adaptacyjnych zakresach zasad](create-retention-policies.md).
+  - Istniejące zasady pozostaną włączone, chyba że zostaną wyłączone.
+  - Jeśli edytujesz zasady DLP, które zawierają lokalizacje Teams lub Urządzenia po zakończeniu wersji próbnej, te lokalizacje zostaną usunięte z zasad.
 
-- **Ochrona informacji**
+- **Zarządzanie cyklem życia danych**
 
-  Wdrażaj [Microsoft Information Protection etykietami](sensitivity-labels.md) wrażliwości i zasadami [](dlp-learn-about-dlp.md) ochrony przed utratą danych, aby ułatwić odnajdowanie, klasyfikowanie i ochronę poufnej zawartości niezależnie od miejsca jej życia lub podróży.
+  Automatyzuj pokrycie przechowywania przy użyciu zakresów zasad adaptacyjnych. Ta funkcja umożliwia dynamiczne stosowanie zasad przechowywania dla określonych użytkowników, grup lub witryn. Te zasady są automatycznie aktualizowane, gdy zmiany wystąpią w organizacji. Ponadto zasady korzystające z zakresów adaptacyjnych nie podlegają limitom lokalizacji. Dowiedz się więcej o [zakresach zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
-  Wersja próbna usługi Information Protection udostępnia domyślne etykiety, automatyczne oznaczanie etykiet dla dokumentów i wiadomości e-mail oraz ochronę przed utratą danych w celu ochrony numerów kart kredytowych udostępnionych w Teams i urządzeniach. Zasady domyślne są dla Ciebie szybko uruchomione, ale możesz je w pełni dostosować do potrzeb.
+- **Zbierania elektronicznych materiałów dowodowych**
 
-    Po zakończeniu okresu próbnego otrzymasz wiadomość e-mail z powiadomieniem:
+  Korzystaj z kompleksowego przepływu pracy w celu zachowania, zbierania, analizowania i eksportowania zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Zespoły prawne mogą również zarządzać całym procesem powiadamiania o blokadzie prawnej, komunikując się z opiekunami zaangażowanymi w sprawę. Dowiedz się więcej na temat [zbierania elektronicznych materiałów dowodowych](ediscovery.md)
 
-  - Wszystkie pliki i wiadomości e-mail oznaczone w trakcie okresu próbnego pozostają oznaczone etykietą. Etykiety można usunąć ręcznie.
-  - Zostaniesz obniżyć do poprzedniej wersji pakietu licencji Microsoft E3, który nie obsługuje automatycznego oznaczania etykiet i ochrony przed utratą danych. Istniejące zasady zostaną włączone, chyba że zostaną wyłączone.
-  - Po zakończeniu okresu próbnego nie można edytować żadnych zasad automatycznego oznaczania etykiet, ale można je usunąć.
-  - W przypadku edytowania zasad DLP, które obejmują Teams lokalizacji użytkowników lub urządzeń po zakończeniu okresu próbnego, te lokalizacje zostaną usunięte z zasad.
+- **Information Protection**
 
-  Aby uzyskać więcej informacji na temat poszczególnych wstępnie skonfigurowanych funkcji i ich wpływu na użytkowników, zobacz Informacje o bezpłatnej wersji [Microsoft Information Protection.](mip-easy-trials.md)
+  Zaimplementuj Information Protection Microsoft Purview z [etykietami poufności](sensitivity-labels.md), aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych treści wszędzie tam, gdzie się znajduje lub podróżuje. Dzięki próbom można polecić użytkownikom stosowanie etykiet poufności do swoich wiadomości e-mail i dokumentów, odnajdywanie i automatyczne etykietowanie poufnej zawartości, korzystanie z klasyfikatorów opartych na uczeniu maszynowym oraz szybkie rozpoczęcie pracy z zalecanymi etykietami i zasadami.
 
-  Aby uzyskać więcej informacji na temat pełnego zakresu funkcji dla aplikacji Microsoft Information Protection, zobacz Microsoft Information Protection [części Microsoft 365](information-protection.md).
+  Wersja próbna Information Protection zapewnia etykiety domyślne, automatyczne etykietowanie dokumentów i wiadomości e-mail oraz zapobieganie utracie danych w celu ochrony numerów kart kredytowych udostępnianych w Teams i urządzeniach. Domyślne zasady, które utworzymy dla Ciebie, umożliwiają szybkie uruchomienie, ale można je w pełni dostosować zgodnie z potrzebami.
 
-- **Zarządzanie ryzykiem w niejawnym programie testów**
+    Po zakończeniu okresu próbnego:
 
-  Skorzystaj ze sztucznej inteligencji, aby ułatwić szybkie identyfikowanie, określanie i rozwiązywanie problemów wewnętrznych. Za pomocą dzienników z usługi Microsoft 365 i usług Azure możesz zdefiniować zasady monitorujące sygnały ryzyka, a następnie podjąć działania naprawcze, takie jak promowanie edukacji użytkowników lub inicjowanie badania. [Dowiedz się więcej o zarządzaniu ryzykiem w niejawnym programie testów](insider-risk-management-solution-overview.md)
+  - Wszystkie pliki i wiadomości e-mail oznaczone etykietą podczas okresu próbnego pozostają oznaczone etykietą. Etykiety można usunąć ręcznie.
+  - Istniejące zasady pozostaną włączone, chyba że zostaną wyłączone.
+  - Nie można edytować żadnych zasad automatycznego etykietowania po zakończeniu wersji próbnej, ale można je usunąć.
+  
+  Aby uzyskać więcej informacji na temat każdej z tych wstępnie skonfigurowanych funkcji i ich wpływu na użytkowników, zobacz Informacje o [bezpłatnej wersji próbnej usługi Microsoft Purview Information Protection](mip-easy-trials.md).
+
+  Aby uzyskać więcej informacji na temat pełnego zakresu funkcji usługi Microsoft Purview Information Protection, zobacz [Microsoft Purview Information Protection](information-protection.md).
+
+- **Zarządzanie ryzykiem wewnętrznym**
+
+  Korzystaj ze sztucznej inteligencji, aby ułatwić szybkie identyfikowanie, klasyfikowanie i korygowanie ryzyka wewnętrznego. Korzystając z dzienników z usług Microsoft 365 i Azure, można zdefiniować zasady, które monitorują sygnały ryzyka, a następnie podejmować działania korygujące, takie jak promowanie edukacji użytkowników lub inicjowanie badania. Dowiedz się więcej o [zarządzaniu ryzykiem wewnętrznym](insider-risk-management-solution-overview.md)
 
 <!--
 - **privacy management**
@@ -112,10 +143,10 @@ Zastanawiasz się, co możesz zobaczyć w bezpłatnej wersji próbnej? Wersja pr
 
 - **Zarządzanie rekordami**
 
-  Zintegrowane funkcje zarządzania rekordami są dostępne w celu:
-  - Klasyfikowanie zawartości jako rekordu w celu uniemożliwinia użytkownikom edytowania zgodnie z wymaganiami przepisów, ustaw lub zasad organizacyjnych
-  - Automatyczne stosowanie etykiet przechowywania do zawartości, gdy są spełnione określone kryteria, przy użyciu zasad automatycznego stosowania etykiet
-  - Dynamiczne kierowanie zasad etykiet przechowywania do lokalizacji przy użyciu adaptacyjnych zasad zakresu bez ograniczeń liczby lokalizacji
-  - Uzyskaj pełną pomoc techniczną w zakresie cyklu życia zawartości, w tym możliwość przeglądania zawartości przed ich trwałym usunięciem na końcu
+  Zintegrowane funkcje zarządzania rekordami usługi Microsoft Purview umożliwiają:
+  - Klasyfikowanie zawartości jako rekordu w celu uniemożliwienia użytkownikom edytowania zgodnie z wymaganiami przepisów, przepisów lub zasad organizacyjnych
+  - Automatyczne stosowanie etykiet przechowywania do zawartości, gdy spełnia określone kryteria, przy użyciu zasad automatycznego stosowania etykiet
+  - Użyj zasad zakresu adaptacyjnego, aby dynamicznie kierować zasady etykiet przechowywania do lokalizacji bez limitu liczby uwzględnionych lokalizacji
+  - Uzyskaj pełną obsługę cyklu życia zawartości, w tym możliwość przeprowadzania przeglądu dyspozycji zawartości przed ich trwałym usunięciem na końcu
 
-  Aby uzyskać więcej informacji na temat pełnego zakresu funkcji zarządzania rekordami firmy Microsoft, [dowiedz się więcej o zarządzaniu rekordami.](records-management.md)
+  Aby uzyskać więcej informacji na temat pełnego zakresu funkcji zarządzania rekordami firmy Microsoft, dowiedz się więcej o [zarządzaniu rekordami](records-management.md)

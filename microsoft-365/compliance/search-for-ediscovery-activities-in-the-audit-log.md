@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Dowiedz się, jakie zdarzenia są rejestrowane, gdy użytkownicy z przypisanymi uprawnieniami do zbierania elektronicznych materiałów dowodowych wykonują zadania wyszukiwania zawartości, zbierania elektronicznych materiałów dowodowych (Standard) i zbierania elektronicznych materiałów dowodowych (Premium) w portalu zgodności usługi Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 519347ed8f074fc15c8618f6ceb84159314c5915
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1e21fcff71d050e09a60a6708678d46f2b894bdc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941836"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995871"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Wyszukaj działania zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W dzienniku inspekcji są rejestrowane działania związane z wyszukiwaniem zawartości i zbierania elektronicznych materiałów dowodowych (w przypadku funkcji zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i eDiscovery (Premium) w usłudze Microsoft Purview lub przy użyciu odpowiednich poleceń cmdlet programu PowerShell. Zdarzenia są rejestrowane, gdy administratorzy lub menedżerowie zbierania elektronicznych materiałów dowodowych (lub dowolne przypisane przez użytkownika uprawnienia do zbierania elektronicznych materiałów dowodowych) wykonują następujące zadania wyszukiwania zawartości i zbierania elektronicznych materiałów dowodowych (standardowa) w portalu zgodności:
   

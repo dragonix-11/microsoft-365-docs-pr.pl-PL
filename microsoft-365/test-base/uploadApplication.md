@@ -14,18 +14,20 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9ee299c0972ed4e286e5a660f5082dd5632167e4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cd0d463e234c439d8b57576375fd6a91e512f753
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934274"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995291"
 ---
-# <a name="upload-your-test-base-package-zip"></a>Upload pakietu Test Base (Zip) 
+# <a name="upload-your-test-base-package-zip"></a>Przekaż pakiet usługi Test Base (zip) 
 
-Na stronie Portal bazy testów przejdź do **Upload nowej opcji pakietu** na lewym pasku nawigacyjnym, jak pokazano poniżej:
+Na stronie Portal bazy testów przejdź do opcji **Nowy pakiet** na lewym pasku nawigacyjnym, a następnie kliknij pozycję **Starsze środowisko przekazywania** , aby włączyć środowisko przekazywania zip, jak pokazano poniżej:
 
-:::image type="content" alt-text="Upload nowy pakiet." source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
+:::image type="content" alt-text="Upload nowy pakiet." source="Media/testapplication01.png" lightbox="Media/testapplication01.png":::
+
+:::image type="content" alt-text="Zastosuj operację." source="Media/testapplication21.png" lightbox="Media/testapplication21.png":::
 
 W tym miejscu wykonaj poniższe kroki, aby przekazać nowy pakiet.
 

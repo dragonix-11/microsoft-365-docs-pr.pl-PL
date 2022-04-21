@@ -20,14 +20,16 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Filtrowanie uprawnień wyszukiwania umożliwia menedżerom zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko podzestawu skrzynek pocztowych i witryn w organizacji.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5c746c5a608c06adab92f98b1bf4790675659fdc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 20a13b99e7ec851669aaab483a049bdea95973bd
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942232"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994089"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Konfigurowanie filtrowania uprawnień dla zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Filtrowanie uprawnień wyszukiwania umożliwia menedżerowi zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko podzestawu skrzynek pocztowych i witryn w organizacji. Możesz również użyć filtrowania uprawnień, aby umożliwić temu sameemu menedżerowi zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko zawartości skrzynki pocztowej lub witryny spełniającej określone kryteria wyszukiwania. Na przykład możesz zezwolić menedżerowi zbierania elektronicznych materiałów dowodowych na wyszukiwanie tylko skrzynek pocztowych użytkowników w określonej lokalizacji lub dziale. Można to zrobić, tworząc filtr, który używa obsługiwanego filtru adresatów, aby ograniczyć skrzynki pocztowe, które mogą być wyszukiwane przez określonego użytkownika lub grupę użytkowników. Możesz również utworzyć filtr określający zawartość skrzynki pocztowej, której może wyszukać użytkownik. Odbywa się to przez utworzenie filtru, który używa właściwości komunikatu z możliwością wyszukiwania. Podobnie można zezwolić menedżerowi zbierania elektronicznych materiałów dowodowych na wyszukiwanie tylko określonych witryn SharePoint w organizacji. Można to zrobić, tworząc filtr, który ogranicza, która witryna może być przeszukiwana. Można również utworzyć filtr określający zawartość witryny, którą można przeszukiwać. Odbywa się to przez utworzenie filtru, który używa właściwości witryny z możliwością wyszukiwania.
 

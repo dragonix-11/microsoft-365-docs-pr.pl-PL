@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Podczas przeprowadzania analizy zbierania elektronicznych materiałów dowodowych (Premium) funkcja wątkowości wiadomości e-mail analizuje konwersację wiadomości e-mail i dzieli każdą wiadomość na różne kategorie.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 51cc9ce09f1f2c9c95c3ab5a7f2175516c9ed199
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f2cdd3a10250a256179ce3fe959a88e0cbef01ba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948710"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995497"
 ---
 # <a name="email-threading-in-ediscovery-premium"></a>Wątkowość wiadomości e-mail w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Rozważmy konwersację e-mail, która trwa od jakiegoś czasu. W większości przypadków ostatnia wiadomość w wątku wiadomości e-mail będzie zawierać zawartość wszystkich poprzednich wiadomości. W związku z tym przejrzenie ostatniej wiadomości zapewni pełny kontekst konwersacji, która miała miejsce w wątku. Wątkowość wiadomości e-mail identyfikuje takie wiadomości, dzięki czemu recenzenci mogą przeglądać ułamek zebranych dokumentów bez utraty kontekstu.
 

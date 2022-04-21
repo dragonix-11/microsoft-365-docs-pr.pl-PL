@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Użyj słów kluczowych i warunków, aby zawęzić zakres wyszukiwania podczas wyszukiwania danych przy użyciu eDiscovery (Premium) w Microsoft 365.
-ms.openlocfilehash: 7a3c3747e38667eca40032511209af964ffb165a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cceac6974bacb066201120ac4972393f2323353c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950340"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995013"
 ---
 # <a name="build-search-queries-for-collections-in-ediscovery-premium"></a>Tworzenie zapytań wyszukiwania dla kolekcji zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Podczas konfigurowania zapytania wyszukiwania podczas tworzenia [kolekcji](collections-overview.md) w przypadku zbierania elektronicznych materiałów dowodowych (Premium) można użyć słów kluczowych, aby znaleźć określoną zawartość i warunki, aby zawęzić zakres wyszukiwania w celu zwrócenia elementów, które są najbardziej istotne dla badania prawnego.
 

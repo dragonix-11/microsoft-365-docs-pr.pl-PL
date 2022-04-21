@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak wybierać i eksportować zawartość z zestawu przeglądów zbierania elektronicznych materiałów dowodowych (Premium) dla prezentacji lub przeglądów zewnętrznych.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f0366843cab17092f3690992aa0cff5205414f86
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3335c0bf15a57da7b3857b8503c6aaaeca2f303a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948732"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995431"
 ---
 # <a name="export-documents-from-a-review-set-in-ediscovery-premium"></a>Eksportowanie dokumentów z zestawu przeglądów w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Eksportowanie umożliwia użytkownikom dostosowywanie zawartości dołączonej do pakietu pobierania podczas eksportowania dokumentu z zestawu przeglądów w usłudze eDiscovery (Premium).
 

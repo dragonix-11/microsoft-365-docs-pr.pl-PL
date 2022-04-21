@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak narzędzia zbierania elektronicznych materiałów dowodowych Microsoft 365 obsługują zaszyfrowane dokumenty dołączone do wiadomości e-mail i przechowywane w usłudze SharePoint Online i OneDrive dla Firm.
-ms.openlocfilehash: 91eef14c1cb4dc91657a1d9a26ab00b1eb6f6d92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e010ef1ff169467b442e137bc31d3640aa5a8cb4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948776"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994460"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Odszyfrowywanie w narzędziach Microsoft 365 eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Szyfrowanie jest ważną częścią strategii ochrony plików i ochrony informacji. Organizacje wszystkich typów używają technologii szyfrowania, aby chronić poufne treści w organizacji i zapewnić, że tylko odpowiednie osoby mają dostęp do tej zawartości.
 
@@ -44,7 +46,7 @@ Narzędzia zbierania elektronicznych materiałów dowodowych firmy Microsoft obs
 
 W poniższej tabeli przedstawiono obsługiwane zadania, które mogą być wykonywane w narzędziach Microsoft 365 eDiscovery na zaszyfrowanych plikach dołączonych do wiadomości e-mail i zaszyfrowanych dokumentów w SharePoint i OneDrive. Te obsługiwane zadania można wykonywać na zaszyfrowanych plikach, które spełniają kryteria wyszukiwania. Wartość `N/A` wskazuje, że funkcja nie jest dostępna w odpowiednim narzędziu do zbierania elektronicznych materiałów dowodowych.
 
-|Zadanie zbierania elektronicznych materiałów dowodowych  |Wyszukiwanie zawartości  |eDiscovery (Standardowa)  |eDiscovery (Premium)  |
+|Zadanie zbierania elektronicznych materiałów dowodowych  |Wyszukiwanie zawartości  |Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa  |Zbieranie elektronicznych materiałów dowodowych (Premium)  |
 |:---------|:---------|:---------|:---------|
 |Wyszukiwanie zawartości w zaszyfrowanych plikach w witrynach<sup></sup> i załącznikach wiadomości e-mail1     |Nie      |Nie      |Tak      |
 |Podgląd zaszyfrowanych plików dołączonych do poczty e-mail     |Tak      |Tak     |Tak       |

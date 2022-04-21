@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Dowiedz się, jak skonfigurować łącznik i użyć go w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z aplikacji Cisco Jabber w usłudze PostgreSQL w celu Microsoft 365.
-ms.openlocfilehash: 42c0af8274a29a162af7dc0023ce57e78ef7704f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2e573bcc6c39e9188ec09f05190c124bd904ef98
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946709"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996333"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>Konfigurowanie łącznika w celu archiwizowania danych aplikacji Cisco Jabber w usłudze PostgreSQL
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy Cisco Jabber do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Cisco Jabber on PostgreSQL](https://www.veritas.com/insights/merge1/jabber), który jest skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie) i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość, taką jak wiadomości, czaty i zawartość udostępnioną z aplikacji Cisco Jabber w usłudze PostgreSQL, na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 

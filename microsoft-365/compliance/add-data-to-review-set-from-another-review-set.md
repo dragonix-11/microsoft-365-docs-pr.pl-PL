@@ -19,14 +19,16 @@ description: Dowiedz się, jak wybierać dokumenty z jednego zestawu przeglądó
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: deb0389a4f4bd9bafedd3b2a8dd6c367c6e78fbb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b87c9278b5009f6873414f8fc53d434c458c62ad
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941176"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995849"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Dodawanie danych do zestawu przeglądów z innego zestawu przeglądów
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W niektórych przypadkach może być konieczne wybranie dokumentów z jednego zestawu przeglądów i praca z nimi indywidualnie w innym zestawie przeglądów. Jest to szczególnie przydatne, jeśli zawartość została ubita w zestawie przeglądów i chcesz uruchomić analizę na podzbiorze danych.
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych XSLT/XML z usługi Veritas w Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: e1537bce351c2dd98286f82e134cb5779742b1f2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 92932e3e18c8f43c46cf71e43ec02306d78a2f60
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936890"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995739"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Konfigurowanie łącznika do archiwizacji danych XSLT/XML
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze źródła strony sieci Web do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia [łącznik XSLT/XML](https://globanet.com/xslt-xml), który umożliwia szybkie opracowywanie plików utworzonych przy użyciu funkcji XSLT (przekształcenia języka rozszerzalnego arkusza stylów) w celu przekształcenia plików XML w inne formaty plików (takie jak HTML lub tekst), które można zaimportować do Microsoft 365. Łącznik konwertuje zawartość elementu ze źródła XSLT/XML na format wiadomości e-mail, a następnie importuje przekonwertowany element na Microsoft 365 skrzynki pocztowe.
 

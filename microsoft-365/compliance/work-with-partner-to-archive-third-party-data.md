@@ -17,14 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak skonfigurować łącznik niestandardowy do importowania danych innych firm ze źródeł danych, takich jak Salesforce Chatter, Yahoo Messenger lub Yammer.
-ms.openlocfilehash: 72159d88cdeb8c573f1a71342ca7cbd015099568
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eb557f43b97f343c45a7eaf21268ac6218d2e1c0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944508"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995321"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Współpraca z partnerem w celu archiwizowania danych innych firm
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Możesz współpracować z partnerem firmy Microsoft, aby zaimportować i zarchiwizować dane ze źródła danych innej firmy, aby Microsoft 365. Partner może zapewnić łącznik niestandardowy, który jest skonfigurowany do wyodrębniania elementów ze źródła danych innych firm (regularnie), a następnie importowania tych elementów. Łącznik partnera konwertuje zawartość elementu ze źródła danych na format wiadomości e-mail, a następnie przechowuje elementy w skrzynkach pocztowych. Po zaimportowaniu danych innych firm można zastosować do tych danych funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, In-Place archiwizowanie, inspekcja i zasady przechowywania Microsoft 365.
 

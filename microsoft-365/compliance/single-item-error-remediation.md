@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Błąd przetwarzania w dokumencie można naprawić w zestawie przeglądów w usłudze eDiscovery (Premium) bez konieczności śledzenia procesu korygowania błędów zbiorczych.
-ms.openlocfilehash: fa4a595a967935241e67b9a88ed158c789075102
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d3b90f0f2d396b6304bb85b46bc5b018802101eb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935659"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994001"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>Korygowanie błędu pojedynczego elementu w funkcji zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Korygowanie błędów daje użytkownikom usługi Microsoft Purview eDiscovery (Premium) możliwość rozwiązywania problemów z danymi, które uniemożliwiają prawidłowe przetwarzanie zawartości zbierania elektronicznych materiałów dowodowych (Premium). Na przykład nie można przetwarzać plików chronionych hasłem, ponieważ te pliki są zablokowane lub szyfrowane. Wcześniej można było korygować błędy tylko zbiorczo przy użyciu [tego przepływu pracy](error-remediation-when-processing-data-in-advanced-ediscovery.md). Ale czasami nie ma sensu korygować błędów w wielu plikach, gdy nie masz pewności, czy którykolwiek z tych plików reaguje na sprawę, którą badasz. Może również nie mieć sensu korygować błędów, zanim będziesz mieć możliwość przejrzenia metadanych pliku (takich jak lokalizacja pliku lub kto miał dostęp), aby ułatwić podejmowanie decyzji dotyczących czasu odpowiedzi. Nowa funkcja o nazwie *korygowanie błędów pojedynczego elementu* daje menedżerom zbierania elektronicznych materiałów dowodowych możliwość wyświetlania metadanych plików z błędem przetwarzania i w razie potrzeby korygowania błędu bezpośrednio w zestawie przeglądów. W tym artykule omówiono sposób identyfikowania, ignorowania i korygowania plików z błędami przetwarzania w zestawie przeglądów.
 

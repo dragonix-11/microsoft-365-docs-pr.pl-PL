@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik Zoom DataParser 17a-4 i użyć go do importowania i archiwizowania danych zoomu w Microsoft 365.
-ms.openlocfilehash: f03ec1e9c23f8fefbe7e6ecb478565034f197d3c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b03afa1271b15a27a025c16b05174c14466f65f1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938802"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996377"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-data"></a>Konfigurowanie łącznika do archiwizowania danych zoomu
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj narzędzia [Zoom DataParser](https://www.17a-4.com/dataparser/) z 17a-4 LLC, aby zaimportować i zarchiwizować dane z platformy Zoom do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Moduł DataParser zawiera łącznik Zoom skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do Microsoft 365. Łącznik Zoom DataParser konwertuje dane zoomu na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
 

@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Kolekcje zbierania elektronicznych materiałów dowodowych (Premium) umożliwiają wyszukiwanie i zbieranie zawartości powiązanej z Twoim przypadkiem lub badaniem.
-ms.openlocfilehash: 8831508260d48dc270a5e4b7a15cecf894656ff6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f57748d54bc177812fd89eca13252311d4ab269f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940274"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996245"
 ---
 # <a name="learn-about-collections-in-ediscovery-premium"></a>Dowiedz się więcej o kolekcjach zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Gdy organizacje mają do czynienia ze zbieraniem komunikacji i treści, które mogą być istotne dla dochodzenia lub potencjalnego sporu sądowego, stoją przed poważnym wyzwaniem w najlepszych okolicznościach. W dzisiejszym nowoczesnym miejscu pracy ilość, różnorodność i szybkość zawartości umożliwia innowacje i pracę zdalną, a jednocześnie rozszerza wymagania i proces zarządzania kolekcjami na potrzeby badań zbierania elektronicznych materiałów dowodowych.
 

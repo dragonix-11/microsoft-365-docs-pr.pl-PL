@@ -1,6 +1,7 @@
 ---
 title: Dowiedz się więcej o zgodności w komunikacji
-description: Informacje na temat zgodności komunikacji w programie Microsoft 365
+description: Dowiedz się więcej o zgodności komunikacji w usłudze Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, zgodność, zgodność z komunikacją
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -20,169 +21,171 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7690b93646c9b60467ca898c6167d72a7e819bb4
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 17f0cbbd62d45a3e9b2b41d1baf72224b9433d70
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594801"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973668"
 ---
-# <a name="learn-about-communication-compliance-in-microsoft-365"></a>Informacje na temat zgodności komunikacji w programie Microsoft 365
+# <a name="learn-about-communication-compliance"></a>Dowiedz się więcej o zgodności w komunikacji
 
-Zgodność komunikacji to rozwiązanie w zakresie ryzyka niejawnego programu testów w zakresie Microsoft 365 które pomaga zminimalizować ryzyko związane z komunikacją, pomagając wykrywać i przechwytywać nieodpowiednie wiadomości w organizacji oraz działać na nie. Wstępnie zdefiniowane i niestandardowe zasady umożliwiają skanowanie komunikacji wewnętrznej i zewnętrznej w poszukiwaniu dopasowania zasad, aby umożliwić ich sprawdzenie przez wyznaczonych recenzentów. Recenzentzy mogą zbadać zeskanowaną pocztę e-mail, Microsoft Teams, Yammer lub innego podmiotu w organizacji i podjąć odpowiednie działania w celu upewniania się, że są one zgodne ze standardami wiadomości Twojej organizacji.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Zasady zgodności komunikacji w programie Microsoft 365 pomagają pokonać wiele nowoczesnych wyzwań związanych ze zgodnością z przepisami oraz komunikacją wewnętrzną i zewnętrzną, w tym:
+Microsoft Purview Communication Compliance to rozwiązanie ryzyka związanego z informacjami poufnymi, które pomaga zminimalizować ryzyko komunikacji, pomagając wykrywać, przechwytywać i działać na nieodpowiednich komunikatach w organizacji. Wstępnie zdefiniowane i niestandardowe zasady umożliwiają skanowanie komunikacji wewnętrznej i zewnętrznej pod kątem dopasowań zasad, aby mogły zostać zbadane przez wyznaczonych recenzentów. Recenzenci mogą badać skanowane wiadomości e-mail, Microsoft Teams, Yammer lub komunikację innych firm w organizacji i podejmować odpowiednie działania, aby upewnić się, że są one zgodne ze standardami wiadomości organizacji.
 
-- Skanowanie rosnących typów kanałów komunikacji
-- Rosnąca ilość danych wiadomości
-- Egzekwowanie przepisów prawnych i ryzyko nałogów
+Zasady zgodności komunikacji w Microsoft 365 pomagają przezwyciężyć wiele nowoczesnych wyzwań związanych ze zgodnością oraz komunikacją wewnętrzną i zewnętrzną, w tym:
 
-Ponadto może wystąpić rozdzielenie obowiązków między administratorami IT i zespołem zarządzania zgodnością. Zgodność komunikacji obsługuje rozdzielenie między konfiguracją zasad a badaniem i przeglądem wiadomości. Na przykład grupa IT w Twojej organizacji może być odpowiedzialna za konfigurowanie uprawnień, grup i zasad dotyczących zgodności komunikacji, a także odpowiedzialność recenzentów za ocenianie wiadomości, ich przeglądanie i środki zaradcze.
+- Skanowanie rosnących typów kanałów komunikacyjnych
+- Rosnąca ilość danych komunikatów
+- Egzekwowanie przepisów i ryzyko grzywien
 
-Aby uzyskać najnowsze prezentacje Ignite dotyczące zgodności komunikacji, zobacz następujące klipy wideo:
+Ponadto może istnieć podział obowiązków między administratorami IT i zespołem zarządzania zgodnością. Zgodność z komunikacją obsługuje separację między konfiguracją zasad a badaniem i przeglądem komunikatów. Na przykład grupa IT w twojej organizacji może być odpowiedzialna za konfigurowanie uprawnień, grup i zasad zgodności komunikacji, a badacze i recenzenci mogą być odpowiedzialni za klasyfikowanie, przeglądanie i ograniczanie akcji komunikatów.
 
-- [Wspieranie kultury bezpieczeństwa i integracji dzięki zgodności z komunikacją](https://www.youtube.com/watch?v=oLVzxcaef3w)
-- [Dowiedz się, jak ograniczyć ryzyko związane z komunikacją w organizacji](https://www.youtube.com/watch?v=vzARb1YaxGo)
-- [Spełnianie wymagań dotyczących zgodności z przepisami za pomocą zgodności komunikacji](https://www.youtube.com/watch?v=gagOhtCBfgU)
-- [Lepiej z Microsoft Teams — dowiedz się więcej o najnowszych natywnych Teams zintegrowanych funkcjach zgodności komunikacji](https://www.youtube.com/watch?v=m4jukD5Fh-o)
+Najnowsze prezentacje konferencji Ignite dotyczące zgodności z komunikacją można znaleźć w następujących filmach wideo:
 
-Aby szybko sprawdzić zgodność z przepisami komunikacji, zobacz klip wideo Wykrywanie molestowania w miejscu pracy i odpowiadania za pomocą [funkcji](https://youtu.be/z33ji7a7Zho) Zgodności Microsoft 365 w kanale [Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
+- [Wspieranie kultury bezpieczeństwa i integracji przy użyciu zgodności z komunikacją](https://www.youtube.com/watch?v=oLVzxcaef3w)
+- [Dowiedz się, jak zmniejszyć ryzyko związane z komunikacją w organizacji](https://www.youtube.com/watch?v=vzARb1YaxGo)
+- [Spełnianie wymagań dotyczących zgodności z przepisami przy użyciu zgodności z komunikacją](https://www.youtube.com/watch?v=gagOhtCBfgU)
+- [Lepiej z Microsoft Teams — dowiedz się więcej na temat najnowszych natywnych Teams zintegrowanych funkcji w zakresie zgodności z komunikacją](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
-Sprawdź, w [jaki sposób TD Securities korzysta ze](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) zgodności komunikacji w celu zaspokojenia swoich zobowiązań prawnych oraz spełnienia potrzeb w zakresie bezpieczeństwa i stabilności.
+Aby uzyskać szybki przegląd zgodności z komunikacją, zobacz wideo [Wykrywanie molestowania w miejscu pracy i reagowanie za pomocą zgodności z komunikacją](https://youtu.be/z33ji7a7Zho) w [kanale Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
-Aby być na bieżąco z najnowszymi aktualizacjami zgodności komunikacji, **wybierz pozycję Co** nowego [](https://compliance.microsoft.com/) w zgodności komunikacyjnej dla organizacji.
+Sprawdź, w jaki sposób [TD Securities korzysta ze zgodności komunikacyjnej](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) , aby spełnić swoje zobowiązania regulacyjne i spełnić ich potrzeby w zakresie bezpieczeństwa i stabilności.
+
+Aby być na bieżąco z najnowszymi aktualizacjami zgodności komunikacji, wybierz pozycję **Co nowego** w [zgodności z komunikacją](https://compliance.microsoft.com/) w organizacji.
 
 > [!IMPORTANT]
-> Zgodność komunikacji jest obecnie dostępna w dzierżawach hostowanych w regionach geograficznych i krajach obsługiwanych przez zależności usługi Azure. Aby sprawdzić, czy zgodność komunikacji jest obsługiwana przez Twoją organizację, zobacz Dostępność usługi [Azure dependency według kraju/regionu](/troubleshoot/azure/general/dependency-availability-by-country).
+> Zgodność z komunikacją jest obecnie dostępna w dzierżawach hostowanych w regionach geograficznych i krajach obsługiwanych przez zależności usługi platformy Azure. Aby sprawdzić, czy zgodność komunikacji jest obsługiwana w organizacji, zobacz [Dostępność zależności platformy Azure według kraju/regionu](/troubleshoot/azure/general/dependency-availability-by-country).
 
-## <a name="scenarios-for-communication-compliance"></a>Scenariusze zgodności komunikacji
+## <a name="scenarios-for-communication-compliance"></a>Scenariusze dotyczące zgodności komunikacji
 
-Zasady zgodności komunikacji mogą pomóc w przeglądaniu wiadomości w organizacji w kilku ważnych obszarach zgodności:
+Zasady zgodności komunikacji mogą pomóc w przeglądaniu komunikatów w organizacji w kilku ważnych obszarach zgodności:
 
 - **Zasady firmowe**
 
-    Użytkownicy muszą przestrzegać akceptowalnych standardów użytkowania, standardów e-mail i innych zasad firmowych we wszystkich swoich działaniach związanych z działalnością biznesową. Zasady zgodności komunikacji mogą wykrywać dopasowania zasad i ułatwiają podjęcia działań naprawczych w celu ograniczenia tego typu zdarzeń. Możesz na przykład przeskanować komunikację użytkowników w organizacji w poszukiwaniu potencjalnych kwestii ludzkich, takich jak molestowanie lub używanie nieodpowiednich lub obraźliwych języków.
+    Użytkownicy muszą przestrzegać akceptowalnego użycia, standardów etycznych i innych zasad firmowych we wszystkich swoich komunikatach związanych z działalnością biznesową. Zasady zgodności komunikacji mogą wykrywać dopasowania zasad i ułatwiać podjęcie działań naprawczych w celu ograniczenia tego typu zdarzeń. Można na przykład skanować komunikację użytkowników w organizacji pod kątem potencjalnych problemów z zasobami ludzkimi, takich jak nękanie lub używanie niewłaściwego lub obraźliwego języka.
 
 - **Zarządzanie ryzykiem**
 
-    Organizacje są odpowiedzialne za całą komunikację rozpowszechnianą w całej swojej infrastrukturze i firmowych systemach sieciowych. Korzystanie z zasad zgodności komunikacji w celu identyfikowania potencjalnych natchnień i zagrożeń prawnych oraz zarządzania nimi może pomóc zminimalizować ryzyko, zanim będzie powodować szkody w działaniach firmy. Możesz na przykład skanować wiadomości w organizacji w poszukiwaniu nieautoryzowanej komunikacji i konfliktów zainteresowania dotyczących poufnych projektów, takich jak nadchodzące przejęcie, fuzje, ujawnienie zarobków, reorganizacje lub zmiany w zespole kierownictwa.
+    Organizacje są odpowiedzialne za całą komunikację dystrybuowaną w ramach infrastruktury i firmowych systemów sieciowych. Korzystanie z zasad zgodności z komunikacją w celu identyfikowania potencjalnych ekspozycji prawnych i ryzyka oraz zarządzania nimi może pomóc zminimalizować ryzyko, zanim będą mogły uszkodzić działalność firmy. Można na przykład skanować komunikaty w organizacji pod kątem nieautoryzowanej komunikacji i konfliktów interesów dotyczących poufnych projektów, takich jak nadchodzące przejęcia, fuzje, ujawnianie zarobków, reorganizacje lub zmiany zespołu kierowniczego.
 
-- **Zgodność z przepisami**
+- **Zgodność**
 
-    Większość organizacji musi przestrzegać niektórych standardów zgodności z przepisami w ramach normalnych procedur operacyjnych. Te przepisy często wymagają, aby organizacje wdrażały jakiś rodzaj procesu nadzorczych lub nadzorowania wiadomości, który jest odpowiedni dla ich branży. Reguła 3110 (Financial Industry Regulatory Authority) (FINRA) jest dobrym przykładem na konieczność podejmowania przez organizacje procedur nadzorczych w celu skanowania informacji z użytkownikami i typów firm, w których ta firma uczestniczy. Innym przykładem może być konieczność przejrzenia komunikacji między partnerami w organizacji, aby zabezpieczyć się przed potencjalnymi pieniędzmi, niejawnym testerem, zmową lub majętną aktywnością. Zasady zgodności komunikacji mogą ułatwić Twojej organizacji spełnienie tych wymagań, zapewniając proces skanowania i zgłaszania informacji dotyczących komunikacji firmowej. Aby uzyskać więcej informacji na temat pomocy technicznej dla organizacji finansowych, zobacz Kluczowe zagadnienia dotyczące zgodności z przepisami i zabezpieczeń na rynkach bankowych i [giełdowych w Usa](../solutions/financial-services-secure-collaboration.md).
+    Większość organizacji musi przestrzegać pewnego rodzaju standardów zgodności z przepisami w ramach normalnych procedur operacyjnych. Przepisy te często wymagają od organizacji wdrożenia pewnego rodzaju procesu nadzoru lub nadzoru nad komunikatami, który jest odpowiedni dla ich branży. Reguła 3110 Financial Industry Regulatory Authority (FINRA) jest dobrym przykładem wymogu, aby organizacje dysponowały procedurami nadzoru w celu skanowania komunikacji użytkowników i typów firm, w które się angażuje. Innym przykładem może być konieczność przeglądu komunikacji broker-dealer w organizacji w celu ochrony przed potencjalnym praniem pieniędzy, wykorzystywaniem informacji poufnych, zmową lub przekupstwem. Zasady zgodności komunikacji mogą pomóc organizacji spełnić te wymagania, udostępniając proces skanowania i raportowania komunikacji firmowej. Aby uzyskać więcej informacji na temat pomocy technicznej dla organizacji finansowych, zobacz [Kluczowe zagadnienia dotyczące zgodności i zabezpieczeń dla amerykańskich rynków bankowych i kapitałowych](../solutions/financial-services-secure-collaboration.md).
 
 ## <a name="key-feature-areas"></a>Kluczowe obszary funkcji
 
-Zgodność komunikacji w p Microsoft 365 oferuje kilka ważnych funkcji, które pomagają rozwiązać problemy ze zgodnością na platformach do obsługi wiadomości:
+Zgodność z komunikacją oferuje kilka ważnych funkcji, które ułatwiają rozwiązywanie problemów ze zgodnością na platformach obsługi komunikatów:
 
-- Inteligentne szablony z możliwością dostosowywania
-- Elastyczne przepływy pracy w celu rozwiązywania problemów
-- Szczegółowe informacje z akcjami
+- Inteligentne, dostosowywalne szablony
+- Elastyczne przepływy pracy korygowania
+- Szczegółowe informacje umożliwiające podjęcie działań
 
-![Strona główna zgodności komunikacji.](../media/communication-compliance-home.png)
+![Strona główna zgodności z komunikacją.](../media/communication-compliance-home.png)
 
-### <a name="intelligent-customizable-templates"></a>Inteligentne szablony z możliwością dostosowywania
+### <a name="intelligent-customizable-templates"></a>Inteligentne, dostosowywalne szablony
 
-Inteligentne dostosowywane szablony w zakresie zgodności komunikacji umożliwiają stosowanie uczenia maszynowego w celu inteligentnego wykrywania naruszeń komunikacji w organizacji.
+Inteligentne, dostosowywalne szablony w zakresie zgodności z komunikacją umożliwiają stosowanie uczenia maszynowego w celu inteligentnego wykrywania naruszeń komunikacji w organizacji.
 
-- **Wstępnie skonfigurowane szablony z możliwością dostosowania**: szablony zasad pomagają rozwiązać najbardziej typowe zagrożenia związane z komunikacją. Tworzenie początkowych i obserwowanych aktualizacji zasad jest teraz szybsze dzięki wstępnie zdefiniowanej nieodpowiedniej zawartości, informacjom poufnym, konfliktom zainteresowań i szablonom zgodności z przepisami.
-- Nowa obsługa uczenia maszynowego **: Wbudowane** ochrona przed zagrożeniami, molestowaniem, profanacją i [](classifier-get-started-with.md) klasyfikatorami obrazów pomagają ograniczyć błędną klasyfikację zawartości w zeskanowanych wiadomościach, co pozwala zaoszczędzić czas recenzentów podczas procesu badania i rozwiązywania problemów.
-- **Ulepszony konstruktor warunków**: Konfigurowanie warunków zasad jest teraz usprawnione, co zapewnia jedno zintegrowane środowisko w kreatorze zasad, co pozwala uniknąć nieporozumień w sposobu stosowania warunków do zasad.
+- **Dostosowywalne wstępnie skonfigurowane szablony**: szablony zasad pomagają rozwiązać najczęstsze zagrożenia związane z komunikacją. Początkowe tworzenie zasad i kolejne aktualizacje są teraz szybsze dzięki wstępnie zdefiniowanej nieodpowiedniej zawartości, poufnym informacjom, konfliktowi interesów i szablonom zgodności z przepisami.
+- **Obsługa nowego uczenia maszynowego**: Wbudowane metody dyskryminacji, zagrożeń, nękania, wulgaryzmów i [klasyfikatorów obrazów](classifier-get-started-with.md) pomagają zmniejszyć liczbę błędnie sklasyfikowanych treści w przeskanowanych komunikatach, oszczędzając czas recenzentom podczas procesu badania i korygowania.
+- **Ulepszony konstruktor warunków**: Konfigurowanie warunków zasad jest teraz usprawnione w jednym zintegrowanym środowisku kreatora zasad, co zmniejsza zamieszanie w sposobie stosowania warunków dla zasad.
 
-### <a name="flexible-remediation-workflows"></a>Elastyczne przepływy pracy w celu rozwiązywania problemów
+### <a name="flexible-remediation-workflows"></a>Elastyczne przepływy pracy korygowania
 
-Wbudowane przepływy pracy rozwiązywania problemów pozwalają szybko identyfikować wiadomości i podjąć działania na wiadomościach z dopasowaniami zasad w organizacji. Następujące nowe funkcje zwiększają wydajność działań w zakresie badań i rozwiązywania problemów:
+Wbudowane przepływy pracy korygowania umożliwiają szybkie identyfikowanie i wykonywanie akcji w przypadku komunikatów z dopasowaniami zasad w organizacji. Następujące nowe funkcje zwiększają wydajność działań związanych z badaniem i korygowaniem:
 
-- **Elastyczny przepływ pracy rozwiązywania** problemów: Nowy przepływ pracy rozwiązywania problemów pozwala szybko podjąć działania na dopasowaniach zasad, w tym eskalować wiadomości do innych recenzentów i wysyłać powiadomienia e-mail do użytkowników z dopasowaniami zasad.
-- **Dopasowywanie zasad konwersacji**: Wiadomości w konwersacjach są grupowane według dopasowań zasad, aby zapewnić większą widoczność relacji konwersacji z zasadami komunikacji. Na przykład dopasowywanie zasad konwersacji w  widoku Alerty oczekujące spowoduje automatyczne wyświetlanie wszystkich wiadomości w kanale Teams, które są zgodne z Zasadami nieodpowiedniej zawartości. Inne wiadomości w konwersacji, które nie są zgodne z zasadami Nieodpowiednia zawartość, nie zostaną wyświetlone.
-- **Wyróżnianie słów kluczowych**: Warunki zasad dopasowywania są wyróżnione w widoku tekstu wiadomości, aby ułatwić recenzentom szybkie znajdowanie i korygowanie alertów dotyczących zasad.
-- **Dokładne i niemalże** szybkie wykrywanie duplikatów: oprócz skanowania w celu sprawdzenia dokładnie tych terminów, które są zgodne z zasadami zgodności komunikacji, podobne terminy i wiadomości są w pobliżu grupowane tekstowo podobne terminy i wiadomości, co pomaga przyspieszyć proces sprawdzania.
-- **Optyczne rozpoznawanie znaków (OCR) (podgląd)**: Skanowanie, wykrywanie i badanie tekstu drukowanego i napisanego odręcznie w obrazach osadzonych lub dołączonych do wiadomości e-mail Microsoft Teams wiadomościach czatu.
-- **Nowe filtry**: Szybsze badanie i korygowanie alertów zasad za pomocą filtrów wiadomości dla kilku pól, takich jak nadawca, adresat, data, domeny i wiele innych.
-- **Ulepszone widoki wiadomości**: Akcje badania i rozwiązywania problemów są teraz szybsze dzięki nowym widokom źródła wiadomości i tekstu. Załączniki wiadomości są teraz dostępne w celu zapewnienia pełnego kontekstu podczas podejmowania działań naprawczych.
-- **Historia użytkowników**: Widok historyczny działań naprawczych dotyczących wiadomości użytkowników, takich jak wcześniejsze powiadomienia i eskalacja dopasowania zasad, udostępnia teraz recenzentom więcej kontekstu podczas procesu przepływu pracy rozwiązywania problemów. Po raz pierwszy lub powtarzane wystąpienia dopasowania zasad dla użytkowników są teraz archiwizowane i łatwo dostępne do wyświetlenia.
-- **Powiadomienie wykryte w deseniu**: Wiele napastliwych i nękających akcji odbywa się z czasem i obejmuje powtarzające się wystąpienia tego samego zachowania przez użytkownika. Nowe powiadomienie wykryte przez wzorzec wyświetlane w szczegółach alertów pomaga skupić uwagę na tych alertach i tego typu zachowaniu.
-- **Tłumaczenie**: Możesz szybko zbadać szczegóły wiadomości w ośmiu językach, korzystając z tłumaczenia pomocy technicznej w przepływie pracy rozwiązywania problemów. Wiadomości w innych językach są automatycznie konwertowane na język wyświetlania recenzenta.
-- **Wykrywanie załączników**: Skanuj, wykrywaj i badaj połączona zawartość (nowoczesne załączniki) z aplikacji OneDrive i Microsoft Teams, które są zgodne z klasyfikatorami zasad i warunkami Microsoft Teams wiadomości. Zawartość załącznika jest automatycznie wyodrębniona do pliku tekstowego w celu szczegółowego przejrzenia i działania.
+- **Elastyczny przepływ pracy korygowania**: Nowy przepływ pracy korygowania pomaga szybko podejmować działania dotyczące dopasowań zasad, w tym nowe opcje eskalowania komunikatów do innych recenzentów i wysyłania powiadomień e-mail do użytkowników z dopasowaniami zasad.
+- **Dopasowywanie zasad konwersacji**: komunikaty w konwersacjach są grupowane według dopasowań zasad, aby zapewnić większą widoczność relacji konwersacji z zasadami komunikacji. Na przykład dopasowanie zasad *konwersacji w widoku Oczekujące alerty* spowoduje automatyczne wyświetlenie wszystkich komunikatów w kanale Teams, które są zgodne z zasadami nieodpowiedniej zawartości. Inne komunikaty w konwersacji, które nie są zgodne z zasadami nieodpowiedniej zawartości, nie będą wyświetlane.
+- **Wyróżnianie słów kluczowych**: warunki zasad dopasowania warunków są wyróżnione w widoku tekstowym wiadomości, aby ułatwić recenzentom szybkie lokalizowanie i korygowanie alertów zasad.
+- **Dokładne i niemal zduplikowane wykrywanie**: oprócz skanowania w poszukiwaniu dokładnych terminów zgodnych z zasadami zgodności komunikacji, niemal zduplikowane grupy wykrywania są tekstowo podobne terminy i komunikaty, aby przyspieszyć proces przeglądu.
+- **Optyczne rozpoznawanie znaków (OCR) (wersja zapoznawcza):** skanuj, wykrywaj i badaj tekst drukowany i odręczny w obrazach osadzonych lub dołączonych do wiadomości e-mail lub Microsoft Teams wiadomości czatu.
+- **Nowe filtry**: szybciej badaj i koryguj alerty zasad za pomocą filtrów komunikatów dla kilku pól, w tym nadawcy, adresata, daty, domen i wielu innych.
+- **Ulepszone widoki komunikatów**: akcje badania i korygowania są teraz szybsze dzięki nowym widokom źródła wiadomości i tekstu. Załączniki komunikatów można teraz wyświetlać w celu zapewnienia pełnego kontekstu podczas wykonywania akcji korygowania.
+- **Historia użytkownika**: Widok historyczny wszystkich działań korygowania komunikatów użytkownika, takich jak wcześniejsze powiadomienia i eskalacje dopasowań zasad, zapewnia teraz recenzentom więcej kontekstu podczas procesu przepływu pracy korygowania. Wystąpienia dopasowań zasad po raz pierwszy lub powtórzenie dla użytkowników są teraz zarchiwizowane i można je łatwo wyświetlać.
+- **Powiadomienie wykryte wzorzec**: Wiele akcji nękania i zastraszania odbywa się w czasie i obejmuje powtarzanie wystąpień tego samego zachowania przez użytkownika. Nowe powiadomienie wykryte wzorzec wyświetlane w szczegółach alertu pomaga zwrócić uwagę na te alerty i tego typu zachowanie.
+- **Tłumaczenie**: szybkie badanie szczegółów komunikatów w ośmiu językach przy użyciu obsługi tłumaczenia w przepływie pracy korygowania. Komunikaty w innych językach są automatycznie konwertowane na język wyświetlania recenzenta.
+- **Wykrywanie załączników**: skanuj, wykrywaj i badaj połączoną zawartość (nowoczesne załączniki) z OneDrive i Microsoft Teams, które pasują do klasyfikatorów zasad i warunków Microsoft Teams komunikatów. Zawartość załącznika jest automatycznie wyodrębniany do pliku tekstowego w celu szczegółowego przeglądu i działania.
 
-### <a name="actionable-insights"></a>Szczegółowe informacje z akcjami
+### <a name="actionable-insights"></a>Szczegółowe informacje umożliwiające podjęcie działań
 
-Nowe interakcyjne pulpity nawigacyjne dla alertów, dopasowania zasad, akcji i trendów ułatwiają szybkie wyświetlanie stanu oczekujących i rozwiązanych alertów w organizacji.
+Nowe interaktywne pulpity nawigacyjne alertów, dopasowań zasad, akcji i trendów ułatwiają szybkie wyświetlanie stanu oczekujących i rozwiązanych alertów w organizacji.
 
-- **Proaktywne alerty** inteligentne: Alerty dotyczące spotkań dotyczących zasad wymagających natychmiastowej uwagi obejmują nowe pulpity nawigacyjne dla elementów oczekujących posortowanych według ważności oraz nowe automatyczne powiadomienia e-mail wysyłane do wyznaczonych recenzentów.
-- **Interakcyjne pulpity** nawigacyjne: Nowe pulpity nawigacyjne wyświetlają dopasowania zasad, oczekujące i rozwiązane akcje oraz trendy według użytkowników i zasad.
-- **Obsługa inspekcji**: Pełny rejestr działań zasad i działań rerecenzowania można łatwo wyeksportować z usługi Centrum zgodności platformy Microsoft 365 aby ułatwić obsługę żądań przeglądu inspekcji.
+- **Aktywne inteligentne alerty**: Alerty dotyczące dopasowań zasad wymagających natychmiastowej uwagi obejmują nowe pulpity nawigacyjne dla oczekujących elementów posortowanych według ważności i nowe automatyczne powiadomienia e-mail wysyłane do wyznaczonych recenzentów.
+- **Interaktywne pulpity nawigacyjne**: nowe pulpity nawigacyjne wyświetlają dopasowania zasad, oczekujące i rozwiązane akcje oraz trendy według użytkowników i zasad.
+- **Obsługa inspekcji**: pełny dziennik zasad i działań przeglądania jest łatwo eksportowany z portalu zgodności usługi Microsoft Purview, aby ułatwić obsługę żądań przeglądu inspekcji.
 
-## <a name="integration-with-microsoft-365-services"></a>Integracja z usługami Microsoft 365 firmy Microsoft
+## <a name="integration-with-microsoft-365-services"></a>Integracja z usługami Microsoft 365
 
-Zasady zgodności komunikacji skanują i przechwytują wiadomości z różnych kanałów komunikacji, aby ułatwić szybkie przeglądanie i rozwiązywanie problemów ze zgodnością:
+Zasady zgodności komunikacji skanują i przechwytują komunikaty w kilku kanałach komunikacji, aby ułatwić szybkie przeglądanie i korygowanie problemów ze zgodnością:
 
-- **Microsoft Teams**: Komunikacja na czacie dla publicznych i prywatnych [](/MicrosoftTeams/Teams-overview) kanałów Microsoft Teams i poszczególnych czatów jest obsługiwana w celu zapewnienia zgodności z przepisami jako autonomicznego źródła kanału lub z innymi Microsoft 365 usługami. Podczas wybierania użytkowników i grup do nadzór nad zasadami zgodności komunikacji konieczne będzie ręczne dodanie pojedynczych użytkowników, grup dystrybucyjnych Microsoft Teams kanałów dystrybucyjnych. Teams użytkownicy mogą również samodzielnie raportować nieodpowiednie wiadomości w kanałach prywatnych i grupowych oraz czatach w celu ich przejrzenia i rozwiązania.
-- **Exchange Online**: Wszystkie skrzynki pocztowe hostowane [na Exchange Online](/Exchange/exchange-online) w Twojej Microsoft 365 są uprawnione do skanowania. Wiadomości e-mail i załączniki spełniające warunki zasad zgodności komunikacji są natychmiast dostępne do monitorowania i w raportach zgodności. Exchange Online jest teraz opcjonalnym kanałem źródłowym i nie jest już wymagany w zasadach zgodności komunikacji.
-- **Yammer**: Wiadomości prywatne i konwersacje społeczności publicznej w programie [Yammer](/yammer/yammer-landing-page) są obsługiwane przez zasady zgodności komunikacji. Yammer jest kanałem opcjonalnym i musi być w trybie [](/yammer/configure-your-yammer-network/overview-native-mode) natywnym, aby obsługiwać skanowanie wiadomości i załączników.
-- **Skype dla firm Online**: Zasady zgodności komunikacji obsługują skanowanie komunikacji za pośrednictwem czatu i skojarzonych załączników w u [Skype dla firm Online](/SkypeForBusiness/skype-for-business-online).
-- **Źródła innych firm**: Możesz skanować wiadomości ze źródeł [](archiving-third-party-data.md) innych firm w poszukiwaniu danych zaimportowanych do skrzynek pocztowych w Twojej Microsoft 365 organizacji. Zgodność komunikacji obsługuje połączenia z kilkoma popularnymi platformami, w tym z instant Bloomberg i innymi.
+- **Microsoft Teams**: Komunikacja czatów dla publicznych i prywatnych kanałów [Microsoft Teams](/MicrosoftTeams/Teams-overview) i poszczególnych czatów jest obsługiwana w ramach zgodności z komunikacją jako autonomiczne źródło kanału lub z innymi usługami Microsoft 365. Po wybraniu użytkowników i grup do nadzorowania w zasadach zgodności komunikacji należy ręcznie dodać poszczególnych użytkowników, grupy dystrybucyjne lub określone kanały Microsoft Teams. Teams użytkownicy mogą również samodzielnie zgłaszać nieodpowiednie wiadomości w kanałach prywatnych i grupowych oraz czatach do przeglądu i korygowania.
+- **Exchange Online**: do skanowania kwalifikują się wszystkie skrzynki pocztowe hostowane w [Exchange Online](/Exchange/exchange-online) w organizacji Microsoft 365. Wiadomości e-mail i załączniki pasujące do warunków zasad zgodności komunikacji są natychmiast dostępne do monitorowania i w raportach zgodności. Exchange Online jest teraz opcjonalnym kanałem źródłowym i nie jest już wymagany w zasadach zgodności komunikacji.
+- **Yammer**: Prywatne wiadomości i konwersacje społeczności publicznej w [Yammer](/yammer/yammer-landing-page) są obsługiwane w zasadach zgodności komunikacji. Yammer jest kanałem opcjonalnym i musi być w [trybie natywnym](/yammer/configure-your-yammer-network/overview-native-mode), aby obsługiwać skanowanie komunikatów i załączników.
+- **Skype dla firm Online**: zasady zgodności komunikacji obsługują skanowanie komunikacji czatu i skojarzonych załączników w [usłudze Skype dla firm Online](/SkypeForBusiness/skype-for-business-online).
+- **Źródła innych firm**: możesz skanować wiadomości ze [źródeł innych firm](archiving-third-party-data.md) pod kątem danych zaimportowanych do skrzynek pocztowych w organizacji Microsoft 365. Zgodność z komunikacją obsługuje połączenia z kilkoma popularnymi platformami, w tym z usługą Instant Bloomberg i innymi.
 
-Aby dowiedzieć się więcej na temat obsługi kanału wiadomości w zasadach zgodności komunikacji, zobacz [Wykrywanie sygnałów kanału ze zgodnością komunikacji](communication-compliance-channels.md).
+Aby dowiedzieć się więcej na temat obsługi kanałów obsługi komunikatów w zasadach zgodności komunikacji, zobacz [Wykrywanie sygnałów kanału ze zgodnością komunikacji](communication-compliance-channels.md).
 
-## <a name="workflow"></a>Przepływ pracy
+## <a name="workflow"></a>Przepływu pracy
 
-Zgodność z przepisami komunikacji ułatwia rozwiązania typowych problemów związanych z zapewnieniem zgodności z zasadami wewnętrznymi i wymaganiami prawnymi. Dzięki szablonom szczegółowych zasad i elastycznemu przepływowi pracy możesz szybko rozwiązywać wykryte problemy ze zgodnością, za pomocą szczegółowych informacji z możliwością wykonywania akcji.
+Zgodność z komunikacją ułatwia rozwiązywanie typowych problemów związanych z zgodnością z zasadami wewnętrznymi i wymaganiami dotyczącymi zgodności z przepisami. Dzięki ukierunkowanym szablonom zasad i elastycznemu przepływowi pracy możesz użyć szczegółowych informacji umożliwiających podjęcie akcji, aby szybko rozwiązać wykryte problemy ze zgodnością.
 
-Do identyfikowania i rozwiązywania problemów ze zgodnością ze zgodnością w komunikacji w programie Microsoft 365 jest używany następujący przepływ pracy:
+Identyfikowanie i rozwiązywanie problemów ze zgodnością ze zgodnością komunikacji korzysta z następującego przepływu pracy:
 
 ![Przepływ pracy zgodności komunikacji.](../media/communication-compliance-workflow.png)
 
 ### <a name="configure"></a>Konfiguruj
 
-W tym kroku przepływu pracy określasz wymagania dotyczące zgodności i konfigurujesz odpowiednie zasady zgodności komunikacji. Szablony zasad to świetny sposób nie tylko na szybkie skonfigurowanie nowych zasad zgodności, ale również na szybkie modyfikowanie i aktualizowanie zasad w przypadku zmiany wymagań. Na przykład możesz zechcieć szybko przetestować zasady dotyczące nieodpowiedniej zawartości dotyczącej komunikacji dla małej grupy użytkowników przed skonfigurowaniem zasad dla wszystkich użytkowników w organizacji.
+W tym kroku przepływu pracy zidentyfikujesz wymagania dotyczące zgodności i skonfigurujesz odpowiednie zasady zgodności komunikacji. Szablony zasad to doskonały sposób na nie tylko szybkie skonfigurowanie nowych zasad zgodności, ale także szybkie modyfikowanie i aktualizowanie zasad w miarę zmieniania wymagań. Na przykład przed skonfigurowaniem zasad dla wszystkich użytkowników w organizacji możesz szybko przetestować zasady pod kątem nieodpowiedniej zawartości w komunikacji dla niewielkiej grupy użytkowników.
 
 >[!IMPORTANT]
->Domyślnie administratorzy globalni nie mają dostępu do funkcji zgodności komunikacji. Aby włączyć uprawnienia dla funkcji zgodności komunikacji, zobacz [Udostępnij zgodność komunikacji w organizacji](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
+>Domyślnie administratorzy globalni nie mają dostępu do funkcji zgodności komunikacji. Aby włączyć uprawnienia do funkcji zgodności komunikacji, zobacz [Udostępnianie zgodności komunikacji w organizacji](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
-W tym celu możesz wybrać jeden z następujących szablonów Centrum zgodności platformy Microsoft 365:
+W portalu zgodności usługi Microsoft Purview można wybierać spośród następujących szablonów zasad:
 
-- **Monitorowanie nieodpowiedniego** tekstu: Użyj tego szablonu, aby szybko utworzyć zasady z wbudowanymi klasyfikatorami w celu automatycznego wykrywania tekstu w wiadomościach, które mogą być uznane za nieodpowiednie, obraźliwe lub obraźliwe.
-- **Monitorowanie** nieodpowiednich obrazów: Użyj tego szablonu, aby szybko utworzyć zasady z wbudowanymi klasyfikatorami w celu automatycznego wykrywania zawartości zawierającej obrazy dla dorosłych i innych kategorii, które mogą być uznane za nieodpowiednie w Twojej organizacji.
-- **Monitorowanie informacji poufnych**. Użyj tego szablonu, aby szybko utworzyć zasady do skanowania komunikacji zawierającej zdefiniowane typy informacji poufnych lub słowa kluczowe, aby upewnić się, że ważne dane nie są udostępniane osobom, które nie powinny mieć do nich dostępu.
-- **Monitorowanie zgodności z przepisami finansowymi**. Użyj tego szablonu, aby szybko utworzyć zasady do skanowania komunikacji w poszukiwaniu odwołań do standardowych warunków finansowych związanych ze standardami regulacyjną.
-- **Monitorowanie konfliktu zainteresowań**. Użyj tego szablonu, aby szybko utworzyć zasady do monitorowania komunikacji między dwoma grupami lub dwoma użytkownikami w celu uniknięcia konfliktów zainteresowania.
-- **Zasady niestandardowe**. Użyj tego szablonu, aby skonfigurować określone kanały komunikacji, poszczególne warunki wykrywania oraz ilość zawartości do monitorowania i przeglądu w organizacji.
-- **Zasady wiadomości zgłoszonych przez użytkowników**: Te zasady systemu obsługują wiadomości z kanału, grupy i prywatnych czatów zgłoszonych przez użytkowników. Domyślnie włączone w centrum Teams administracyjnego.
+- **Monitorowanie pod kątem nieodpowiedniego tekstu**: użyj tego szablonu, aby szybko utworzyć zasady, które używają wbudowanych klasyfikatorów do automatycznego wykrywania tekstu w wiadomościach, które mogą być uważane za nieodpowiednie, obraźliwe lub obraźliwe.
+- **Monitorowanie pod kątem nieodpowiednich obrazów**: użyj tego szablonu, aby szybko utworzyć zasady, które używają wbudowanych klasyfikatorów do automatycznego wykrywania zawartości zawierającej obrazy dla dorosłych i erotyczne, które mogą być uważane za nieodpowiednie w organizacji.
+- **Monitorowanie pod kątem informacji poufnych**: ten szablon umożliwia szybkie utworzenie zasad do skanowania komunikacji zawierającej zdefiniowane typy informacji poufnych lub słowa kluczowe, aby upewnić się, że ważne dane nie są udostępniane osobom, które nie powinny mieć dostępu.
+- **Monitorowanie zgodności z przepisami finansowymi**: użyj tego szablonu, aby szybko utworzyć zasady do skanowania komunikacji pod kątem odwołań do standardowych warunków finansowych skojarzonych ze standardami regulacyjnymi.
+- **Monitorowanie pod kątem konfliktu interesów**: użyj tego szablonu, aby szybko utworzyć zasady do monitorowania komunikacji między dwiema grupami lub dwoma użytkownikami, aby uniknąć konfliktów interesów.
+- **Zasady niestandardowe**: ten szablon służy do konfigurowania określonych kanałów komunikacyjnych, indywidualnych warunków wykrywania oraz ilości zawartości do monitorowania i przeglądania w organizacji.
+- **Zasady komunikatów zgłaszane przez użytkownika**: te zasady systemowe obsługują komunikaty zgłaszane przez użytkowników z kanału, grupy i prywatnych wiadomości czatu. Domyślnie włączone w centrum administracyjnym Teams.
 
 >[!TIP]
->Zalecane [akcje ułatwiają](communication-compliance-configure.md#recommended-actions-preview) ustalenie, czy są potrzebne zasady typu informacji poufnych lub czy trzeba zaktualizować istniejące nieodpowiednie zasady dotyczące zawartości.
+>Użyj [zalecanych akcji](communication-compliance-configure.md#recommended-actions-preview) , aby określić, czy potrzebujesz zasad typów informacji poufnych, czy chcesz zaktualizować istniejące nieodpowiednie zasady zawartości.
 
 ### <a name="investigate"></a>Zbadaj
 
-W tym kroku przyjrzysz się bliżej problemom wykrytym jako pasujące do Twoich zasad zgodności komunikacji. Ten krok obejmuje następujące akcje dostępne w Centrum zgodności platformy Microsoft 365:
+W tym kroku przyjrzysz się bardziej szczegółowym problemom wykrytym jako zgodne z zasadami zgodności komunikacji. Ten krok obejmuje następujące akcje dostępne w portalu zgodności usługi Microsoft Purview:
 
-- **Alerty**: gdy wiadomość jest generowana automatycznie, zostaje automatycznie wygenerowany alert. Dla każdego alertu możesz wyświetlić stan, ważność, wykryty czas i jeśli przypisano Advanced eDiscovery i jej stan. Nowe alerty są wyświetlane na stronie głównej zgodności komunikacji oraz na stronie **Alerty** , a ich ważność jest wymieniona w kolejności ważności.
-- **Zarządzanie problemami**: Dla każdego alertu możesz podjąć działania badające, aby pomóc w podjęciu działań naprawczych do problemu wykrytego w wiadomości.
-- **Recenzja** dokumentu: W trakcie badania problemu można użyć kilku widoków komunikatu, aby pomóc w prawidłowym szacowaniu wykrytego problemu. Widoki te obejmują podsumowanie konwersacji, widok tylko tekst i widok szczegółowy konwersacji komunikacyjnej.
-- **Przeglądanie historii aktywności użytkowników**: Umożliwia wyświetlanie historii działań dotyczących wiadomości użytkowników i działań naprawczych, takich jak wcześniejsze powiadomienia i eskalacja, w przypadku dopasowania zasad.
-- **Filtry**. Użyj filtrów, takich jak nadawca, adresat, data i temat, aby szybko zawęzić alerty o wiadomościach, które chcesz przejrzeć.
+- **Alerty**: gdy komunikat jest zgodny z warunkiem zasad, alert jest generowany automatycznie. Dla każdego alertu można zobaczyć stan, ważność, czas wykrycia oraz przypisanie przypadku zbierania elektronicznych materiałów dowodowych (Premium) i jego stanu. Nowe alerty są wyświetlane na stronie głównej zgodności komunikacji i na stronie **Alerty** i są wyświetlane w kolejności ważności.
+- **Zarządzanie problemami**: dla każdego alertu możesz podjąć działania śledcze, aby pomóc w skorygowaniu problemu wykrytego w komunikacie.
+- **Przegląd dokumentu**: Podczas badania problemu można użyć kilku widoków komunikatu, aby ułatwić prawidłową ocenę wykrytego problemu. Widoki obejmują podsumowanie konwersacji, tylko tekst i szczegółowe widoki konwersacji komunikacyjnej.
+- **Przeglądanie historii aktywności użytkownika**: wyświetlanie historii działań komunikatów użytkownika i akcji korygowania, takich jak wcześniejsze powiadomienia i eskalacje, w przypadku dopasowań zasad.
+- **Filtry**: użyj filtrów, takich jak nadawca, adresat, data i temat, aby szybko zawęzić alerty komunikatów, które chcesz przejrzeć.
 
 ### <a name="remediate"></a>Korygowanie
 
-Następnym krokiem jest naprawienie badanych problemów ze zgodnością w komunikacji przy użyciu następujących opcji:
+Następnym krokiem jest skorygowanie problemów ze zgodnością komunikacji, które zostały zbadane przy użyciu następujących opcji:
 
-- **Rozwiązanie**: Po przejrzeniu problemu możesz rozwiązać go, rozpoznając alert. Rozwiązanie alertu powoduje usunięcie go z kolejki alertów oczekujących, a akcja jest zachowywana jako wpis w kolejce *Rozpoznano* dla zasad dopasowywania. Alerty są rozwiązywane automatycznie po oznaczaniu alertu jako nieprawidłowo sklasyfikowanego, wysłaniu do użytkownika powiadomienia o alercie lub otwarciu nowej sprawy dla alertu.
-- **Otagowanie** wiadomości: W ramach rozwiązania problemu możesz otagować wykrytą wiadomość jako zgodną, niezgodne lub jako podszytą w związku z zasadami i standardami Twojej organizacji. Otagowanie może ułatwić mikrofiltrowanie alertów zasad dotyczących eskalacji lub w ramach innych wewnętrznych procesów przeglądu.
-- **Powiadamianie użytkownika**: Użytkownicy często mogą przypadkowo lub przypadkowo naruszać zasady zgodności komunikacji. Za pomocą funkcji powiadamiania możesz udostępnić użytkownikowi powiadomienie ostrzegawcze i rozwiązać ten problem.
-- **Eskalacji do innego** recenzenta: Czasami pierwotny recenzent problemu potrzebuje opinii od innych recenzentów, aby pomóc w rozwiązaniu tego zdarzenia. W ramach procesu rozwiązywania problemu można łatwo eskalować problemy z wiadomościami do recenzentów z innych obszarów organizacji.
-- **Zgłaszanie jako błędnej klasyfikacji**: Wiadomości niepoprawnie wykryte jako zgodne z zasadami zgodności czasami się zdarzają, że się zdarza, że nasycą się błędy w procesie przeglądu. Te typy alertów można oznaczać jako nieprawidłowo sklasyfikowane, przesyłać do firmy Microsoft opinie na temat błędnej klasyfikacji w celu ulepszania klasyfikatorów globalnych, a także automatycznie rozwiązywać ten problem.
-- **Usuwanie wiadomości z Teams (** wersja zapoznawcza): Nieodpowiednie wiadomości mogą być usuwane z wyświetlania w kanałach Microsoft Teams lub wiadomościach czatu osobistego i grupowego. Nieodpowiednie wiadomości, które zostaną usunięte, zostaną zastąpione powiadomieniem o usunięciu wiadomości z powodu naruszenia zasad.
-- **Eskaluj do badania**: W najpoważniejszych sytuacjach może być konieczne udostępnienie informacji dotyczących zgodności komunikacji innym recenzentom w organizacji. Zgodność komunikacji jest ściśle zintegrowana z Microsoft 365 funkcjami zgodności, które pomagają w rozwiązywaniu wszystkich problemów. Eskalowanie sprawy w celu dochodzenia umożliwia przeniesienie danych i zarządzanie sprawą w celu jej Advanced eDiscovery w Microsoft 365. Advanced eDiscovery udostępnia szczegółowe przepływy pracy do zachowywania, zbierania, przeglądania, analizowania i eksportowania zawartości, która odpowiada wewnętrznym i zewnętrznym analizom Twojej organizacji. Umożliwia zespołom prawnym zarządzanie całym przepływem pracy z powiadomieniem o zerowym zeru. Aby dowiedzieć się więcej o Advanced eDiscovery spraw, zobacz [Omówienie Advanced eDiscovery w Microsoft 365](overview-ediscovery-20.md).
+- **Rozwiązanie**: Po przejrzeniu problemu można rozwiązać problem, rozwiązując alert. Rozwiązanie alertu powoduje usunięcie go z oczekującej kolejki alertów, a akcja jest zachowywana jako wpis w *rozwiązanej kolejce* dla pasujących zasad. Alerty są automatycznie rozwiązywane po oznaczeniu alertu jako błędnie sklasyfikowanego, wysłaniu do użytkownika powiadomienia o alertie lub otwarciu nowego przypadku alertu.
+- **Otaguj komunikat**: W ramach rozwiązania problemu możesz oznaczyć wykryty komunikat jako zgodny, niezgodny lub tak wątpliwy, jak w odniesieniu do zasad i standardów organizacji. Tagowanie może pomóc w mikrofiltrowaniu alertów zasad dotyczących eskalacji lub w ramach innych wewnętrznych procesów przeglądu.
+- **Powiadom użytkownika**: często użytkownicy przypadkowo lub przypadkowo naruszają zasady zgodności komunikacji. Możesz użyć funkcji powiadamiania, aby przekazać użytkownikowi powiadomienie ostrzegawcze i rozwiązać ten problem.
+- **Eskaluj do innego recenzenta**: Czasami pierwszy recenzent problemu potrzebuje danych wejściowych od innych recenzentów, aby pomóc w rozwiązaniu zdarzenia. Problemy z komunikatami można łatwo eskalować do recenzentów w innych obszarach organizacji w ramach procesu rozwiązywania problemów.
+- **Raport jako błędnie sklasyfikowany**: Komunikaty niepoprawnie wykryte jako dopasowania zasad zgodności będą od czasu do czasu przechodzić do procesu przeglądu. Możesz oznaczyć te typy alertów jako błędnie sklasyfikowane, przesłać opinię do firmy Microsoft na temat błędnej klasyfikacji w celu ulepszenia globalnych klasyfikatorów i automatycznie rozwiązać problem.
+- **Usuń komunikat w Teams (wersja zapoznawcza)**: niestosowne wiadomości mogą zostać usunięte z wyświetlania w kanałach Microsoft Teams lub wiadomościach osobistych i czatach grupowych. Usunięte nieodpowiednie komunikaty są zastępowane powiadomieniem o usunięciu komunikatu z powodu naruszenia zasad.
+- **Eskalacja w celu zbadania**: W najpoważniejszych sytuacjach może być konieczne udostępnienie informacji o zgodności komunikacji innym recenzentom w organizacji. Zgodność z komunikacją jest ściśle zintegrowana z innymi funkcjami usługi Microsoft Purview, które ułatwiają kompleksowe rozwiązywanie ryzyka. Eskalacja sprawy do zbadania umożliwia przesyłanie danych i zarządzanie sprawą do usługi Microsoft Purview eDiscovery (Premium). Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Umożliwia zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Monitorowanie
 
-Śledzenie problemów ze zgodnością zidentyfikowanych przez zasady zgodności komunikacji i zarządzanie nimi obejmuje cały proces przepływu pracy. W związku z generowaniem alertów oraz wdrożeniem działań naprawczych i naprawczych może być konieczne przejrzenie i aktualizacja istniejących zasad oraz utworzenia nowych zasad.
+Śledzenie problemów ze zgodnością identyfikowanych przez zasady zgodności komunikacji obejmuje cały proces przepływu pracy. Ponieważ alerty są generowane i są implementowane akcje badania i korygowania, istniejące zasady mogą wymagać przeglądu i aktualizacji oraz może być konieczne utworzenie nowych zasad.
 
-- **Monitorowanie i zgłaszanie**: Używanie widżetów pulpitu nawigacyjnego zgodności komunikacji, dzienników eksportu i zdarzeń zarejestrowanych w ujednoliconych dziennikach inspekcji w celu ciągłego oceniania i poprawiania stanu zgodności.
+- **Monitorowanie i raport**: użyj widżetów pulpitu nawigacyjnego zgodności komunikacji, eksportuj dzienniki i zdarzenia zarejestrowane w ujednoliconych dziennikach inspekcji, aby stale oceniać i poprawiać stan zgodności.
 
-## <a name="ready-to-get-started"></a>Wszystko gotowe do rozpoczęcia?
+## <a name="ready-to-get-started"></a>Chcesz rozpocząć pracę?
 
-- Aby uzyskać informacje na temat planowania, [zobacz Planowanie zgodności komunikacji](communication-compliance-plan.md).
-- Zapoznaj się z [analizą przypadku firmy Contoso](communication-compliance-case-study.md) i zobacz, jak szybko skonfigurowali zasady zgodności komunikacji w celu monitorowania nieodpowiedniej zawartości w aplikacjach Microsoft Teams, Exchange Online i Yammer komunikacji.
-- Aby skonfigurować zgodność komunikacji dla organizacji Microsoft 365, zobacz [Konfigurowanie zgodności komunikacji dla Microsoft 365](communication-compliance-configure.md).
+- Aby uzyskać informacje o planowaniu, zobacz [Planowanie zgodności z komunikacją](communication-compliance-plan.md).
+- Zapoznaj się z [analizą przypadku firmy Contoso](communication-compliance-case-study.md) i zobacz, jak szybko skonfigurowali zasady zgodności komunikacji w celu monitorowania nieodpowiedniej zawartości w Microsoft Teams, Exchange Online i Yammer komunikacji.
+- Aby skonfigurować zgodność komunikacji dla organizacji Microsoft 365, zobacz [Konfigurowanie zgodności komunikacji](communication-compliance-configure.md).

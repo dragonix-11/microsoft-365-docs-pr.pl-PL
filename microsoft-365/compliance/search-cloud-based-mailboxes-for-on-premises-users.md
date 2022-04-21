@@ -18,14 +18,16 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Administratorzy mogą używać narzędzi zbierania elektronicznych materiałów dowodowych w Microsoft 365 do wyszukiwania i eksportowania Teams danych czatu dla użytkowników lokalnych w ramach wdrożenia hybrydowego Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b77a5178237e7ae25f710c8cc9574449f67a4f2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e1f15922e84a68538e20ccb3ad0030bd5c2bd5f1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945874"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995365"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Wyszukaj dane czatu aplikacji Teams dla użytkowników lokalnych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jeśli Twoja organizacja ma Exchange wdrożenie hybrydowe (lub organizacja synchronizuje lokalną organizację Exchange z Office 365) i włączyła Microsoft Teams, użytkownicy lokalni mogą używać aplikacji Teams czatu do obsługi wiadomości błyskawicznych. W przypadku użytkownika opartego na chmurze Teams dane czatu (*nazywane również czatami 1x1 lub 1xN*) są zapisywane w podstawowej skrzynce pocztowej opartej na chmurze. Gdy użytkownik lokalny korzysta z aplikacji czatu Teams, wiadomości czatu nie mogą być przechowywane w podstawowej skrzynce pocztowej, która znajduje się lokalnie. Aby obejść to ograniczenie, firma Microsoft wydała nową funkcję, w której utworzono chmurowy obszar magazynowania, dzięki czemu używasz narzędzi zbierania elektronicznych materiałów dowodowych do wyszukiwania i eksportowania Teams danych czatu dla użytkowników lokalnych.
   

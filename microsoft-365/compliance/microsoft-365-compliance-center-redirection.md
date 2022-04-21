@@ -1,5 +1,5 @@
 ---
-title: Przekierowywanie użytkowników z centrum Office 365 zabezpieczeń i zgodności do centrum Centrum zgodności platformy Microsoft 365
+title: Przekierowywanie użytkowników z centrum zabezpieczeń i zgodności Office 365 do portalu zgodności usługi Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,38 +9,40 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Dowiedz się więcej na temat automatycznego przekierowywania użytkowników z centrum Office 365 zabezpieczeń i zgodności do centrum Centrum zgodności platformy Microsoft 365.
+description: Dowiedz się więcej o automatycznym przekierowywaniu użytkowników z centrum zabezpieczeń i zgodności Office 365 do portalu zgodności usługi Microsoft Purview.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 668891df31636a4975eea4bbaa12d83a8c042f24
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: b65f2521afd3802274a9c6e605ced16a66c0a76d
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63005733"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973001"
 ---
-# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Przekierowywanie użytkowników z centrum Office 365 zabezpieczeń i zgodności do centrum Centrum zgodności platformy Microsoft 365
+# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>Przekierowywanie użytkowników z centrum zabezpieczeń i zgodności Office 365 do portalu zgodności usługi Microsoft Purview
 
-W tym artykule wyjaśniono, jak działa automatyczne przekierowywanie dla użytkowników, którzy mają dostęp do rozwiązań zgodności z Centrum zabezpieczeń i zgodności Office 365 (protection.office.com) do centrum <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-## <a name="what-to-expect"></a>Czego można się spodziewać
+W tym artykule wyjaśniono, jak działa automatyczne przekierowanie dla użytkowników uzyskujących dostęp do rozwiązań zgodności z centrum Office 365 Security and Compliance Center (protection.office.com) do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>.
 
-Automatyczne przekierowywanie jest domyślnie włączone dla wszystkich użytkowników, którzy uzyskają dostęp do rozwiązań związanych ze zgodnością w p Office 365 zabezpieczenia i zgodność (protection.office.com):
+## <a name="what-to-expect"></a>Czego się spodziewać
 
-- [Advanced eDiscovery](overview-ediscovery-20.md)
-- [Zgodność komunikacji](communication-compliance.md)
-- [Przeszukiwanie zawartości](search-for-content.md)
-- [Core eDiscovery](get-started-core-ediscovery.md)
+Automatyczne przekierowanie jest domyślnie włączone dla wszystkich użytkowników uzyskujących dostęp do rozwiązań związanych ze zgodnością w Office 365 Zabezpieczenia i zgodność (protection.office.com):
+
+- [eDiscovery (Premium)](overview-ediscovery-20.md)
+- [Zgodność w komunikacji](communication-compliance.md)
+- [Wyszukiwanie zawartości](search-for-content.md)
+- [eDiscovery (Standardowa)](get-started-core-ediscovery.md)
 - [Klasyfikacja danych](data-classification-overview.md)
-- [Ochrona przed utratą danych (DLP)](dlp-learn-about-dlp.md)
-- [Żądania osób, których dane dotyczą](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
-- [Zarządzanie informacjami](manage-information-governance.md)
+- [Microsoft Purview Data Loss Prevention (DLP)](dlp-learn-about-dlp.md)
+- [Żądania podmiotów danych](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
+- [Zarządzanie informacjami](manage-data-governance.md)
 - [Zarządzanie rekordami](records-management.md)
 
-Użytkownicy są automatycznie kierowane do tych samych rozwiązań zgodności w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365.</a>
+Użytkownicy są automatycznie kierowani do tych samych rozwiązań zgodności w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a>.
 
-Ta funkcja i skojarzone z nią kontrolki nie umożliwiają automatycznego przekierowywania funkcji zabezpieczeń dla programu Microsoft Defender dla Office 365. Aby włączyć przekierowywanie dla funkcji zabezpieczeń, zobacz Przekierowywanie kont z usługi [Microsoft Defender Office 365](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) portalu Microsoft 365 Defender, aby uzyskać szczegółowe informacje.
+Ta funkcja i skojarzone kontrolki nie umożliwiają automatycznego przekierowywania funkcji zabezpieczeń dla Ochrona usługi Office 365 w usłudze Microsoft Defender. Aby włączyć przekierowanie funkcji zabezpieczeń, zobacz [Przekierowywanie kont z Ochrona usługi Office 365 w usłudze Microsoft Defender do portalu Microsoft 365 Defender, aby](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) uzyskać szczegółowe informacje.
 
 ## <a name="related-information"></a>Informacje pokrewne
 
-- [Centrum zgodności platformy Microsoft 365 omówienie](/microsoft-365/compliance/microsoft-365-compliance-center)
+- [Omówienie portalu zgodności usługi Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center)

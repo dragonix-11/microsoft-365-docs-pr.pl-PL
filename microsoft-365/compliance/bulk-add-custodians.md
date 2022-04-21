@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj narzędzia do importowania zbiorczego, aby szybko dodać wielu opiekunów i skojarzone z nimi źródła danych do sprawy w usłudze Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 7913c8674dc5560539196f34e323f05955a6850e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a6ad413c65b3b8afaa0cbf10df1a595730914405
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950362"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994529"
 ---
 # <a name="import-custodians-to-an-ediscovery-premium-case"></a>Importowanie opiekunów do sprawy zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W przypadku przypadków zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), które dotyczą wielu opiekunów, można zaimportować wielu opiekunów jednocześnie przy użyciu pliku CSV zawierającego informacje niezbędne do dodania ich do sprawy. Narzędzie do importowania opiekunów zweryfikuje również plik CSV przed utworzeniem zadania importu. Oznacza to, że można naprawić wszelkie błędy w pliku CSV zamiast czekać, aż zadanie importu zostanie ukończone przed zapoznaniem się z błędami, które uniemożliwiają dodanie opiekuna do sprawy.
 

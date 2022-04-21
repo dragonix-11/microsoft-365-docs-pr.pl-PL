@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bcbacc886c57257e5c4b067b278c7736ae403390
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d8515ce2bccb90478f11fa4a1813c7cb4ab7fb7d
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945522"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973844"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Wyszukiwanie zagrożeń w Eksploratorze zagrożeń dla Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -35,7 +35,6 @@ W tym artykule:
 
 > [!NOTE]
 > Jest to część **serii 3 artykułów** dotyczących **Eksploratora zagrożeń (Eksplorator),** **zabezpieczeń poczty e-mail** oraz **wykrywania Eksploratora i czasu rzeczywistego** (takich jak różnice między narzędziami i uprawnienia wymagane do ich obsługi). Pozostałe dwa artykuły z tej serii to [Zabezpieczenia poczty e-mail z Eksploratorem zagrożeń](email-security-in-microsoft-defender.md) i [Eksploratorem zagrożeń oraz wykrywanie w czasie rzeczywistym](real-time-detections.md).
-
 
 **Dotyczy**
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
@@ -69,7 +68,6 @@ Gdy osoba operacji zabezpieczeń (Sec Ops) wybierze dane, które chce zobaczyć,
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/sender-drop-down.png" alt-text="Przycisk Nadawca w Eksploratorze zagrożeń" lightbox="../../media/sender-drop-down.png":::
-
 
 Uściślanie fokusu w Eksploratorze lub wykrywaniu w czasie rzeczywistym można traktować w warstwach. Pierwszy z nich to **Widok**. Drugi można traktować jako *przefiltrowany fokus*. Na przykład możesz odtworzyć kroki, które zostały opisane w znalezieniu zagrożenia, rejestrując swoje decyzje w następujący sposób: Aby znaleźć problem w Eksploratorze, **wybrałem widok złośliwego oprogramowania z fokusem filtru adresata**. Ułatwia to śledzenie kroków.
 

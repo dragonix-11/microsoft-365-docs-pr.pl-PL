@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Uzyskaj najnowsze informacje na temat izolacji opartej na sprzęcie. Zapobiegaj obecnym i pojawiającym się atakom, takim jak luki w zabezpieczeniach lub złośliwe linki, zakłócając produktywność pracowników i bezpieczeństwo przedsiębiorstwa.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8e24b61b7f800b7c27a57bcec5c127adb032bf5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939262"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973250"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard dla Office dla administratorów
 
@@ -39,7 +39,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) p
 
 ### <a name="minimum-software-requirements"></a>Minimalne wymagania dotyczące oprogramowania
 
-* **Windows**: wersja Windows 10 Enterprise, kompilacja klienta w wersji 2004 (20H1) 19041 lub nowsza. Obsługiwane są wszystkie wersje Windows 11. 
+* **Windows**: wersja Windows 10 Enterprise, kompilacja klienta w wersji 2004 (20H1) 19041 lub nowsza. Obsługiwane są wszystkie wersje Windows 11.
 * **Office**: Office bieżący kanał i kanał Enterprise miesięczny, kompilacja w wersji 2011 16.0.13530.10000 lub nowszej. Office Semi-Annual Enterprise Channel, kompilacja w wersji 2108 lub nowszej. Obsługiwane są wersje 32-bitowe i 64-bitowe Office.
 * **Pakiet aktualizacji**: Windows 10 skumulowana miesięczna aktualizacja zabezpieczeń [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
@@ -124,7 +124,6 @@ Po otwarciu pliku powinno zostać wyświetlonych kilka wizualnych wskaźników, 
 
 Office obsługuje następujące zasady, aby umożliwić konfigurowanie możliwości funkcji funkcji Application Guard dla Office. Te zasady można skonfigurować za pomocą zasad grupy lub za pośrednictwem [usługi Office zasad w chmurze](/DeployOffice/overview-office-cloud-policy-service).
 
-
 > [!NOTE]
 > Skonfigurowanie tych zasad może wyłączyć niektóre funkcje plików otwartych w usłudze Application Guard dla Office.
 
@@ -198,7 +197,7 @@ Możesz również skonfigurować Ochrona usługi Office 365 w usłudze Microsoft
 
 ## <a name="limitations-and-considerations"></a>Ograniczenia i zagadnienia
 
-* Funkcja Application Guard dla Office jest trybem chronionym, który izoluje niezaufane dokumenty, aby nie mogły uzyskać dostępu do zaufanych zasobów firmowych, intranetu, tożsamości użytkownika i dowolnych plików na komputerze. W związku z tym, jeśli użytkownik próbuje uzyskać dostęp do funkcji, która ma zależność od takiego dostępu, na przykład wstawianie obrazu z pliku lokalnego na dysku, dostęp kończy się niepowodzeniem i generuje monit podobny do poniższego przykładu. Aby umożliwić niezaufanemu dokumentowi dostęp do zaufanych zasobów, użytkownicy muszą usunąć ochronę funkcji Application Guard z dokumentu. 
+* Funkcja Application Guard dla Office jest trybem chronionym, który izoluje niezaufane dokumenty, aby nie mogły uzyskać dostępu do zaufanych zasobów firmowych, intranetu, tożsamości użytkownika i dowolnych plików na komputerze. W związku z tym, jeśli użytkownik próbuje uzyskać dostęp do funkcji, która ma zależność od takiego dostępu, na przykład wstawianie obrazu z pliku lokalnego na dysku, dostęp kończy się niepowodzeniem i generuje monit podobny do poniższego przykładu. Aby umożliwić niezaufanemu dokumentowi dostęp do zaufanych zasobów, użytkownicy muszą usunąć ochronę funkcji Application Guard z dokumentu.
 
   :::image type="content" source="../../media/ag09-confirm.png" alt-text="Okno dialogowe z komunikatem o bezpieczeństwie i stanem funkcji" lightbox="../../media/ag09-confirm.png":::
 
@@ -206,7 +205,7 @@ Możesz również skonfigurować Ochrona usługi Office 365 w usłudze Microsoft
   > Poinformuj użytkowników, aby usunęli ochronę tylko wtedy, gdy ufają plikowi i jego źródle lub skąd pochodzą.
 
 * Gdy niezaufany dokument jest przechowywany w zaufanej lokalizacji, zaufanie z lokalizacji jest dziedziczone przez dokument. Zazwyczaj magazyn w chmurze organizacji jest identyfikowany jako zaufana lokalizacja.
-  
+
 * Aktywna zawartość w dokumentach, takich jak makra i kontrolki ActiveX, jest wyłączona w funkcji Application Guard dla Office. Użytkownicy muszą usunąć ochronę funkcji Application Guard, aby włączyć aktywną zawartość.
 
 * Niezaufane pliki z udziałów sieciowych lub plików udostępnionych z OneDrive, OneDrive dla Firm lub SharePoint Online z innej organizacji otwarte jako tylko do odczytu w usłudze Application Guard. Użytkownicy mogą zapisać lokalną kopię takich plików, aby kontynuować pracę w kontenerze lub usunąć ochronę, aby bezpośrednio pracować z oryginalnym plikiem.
@@ -242,4 +241,4 @@ Po spełnieniu tego heurystycznego Office utworzy wstępnie kontener usługi App
 * Pliki CSV i HTML nie są obecnie obsługiwane.
 * Funkcja Application Guard dla Office obecnie nie współpracuje ze skompresowanymi woluminami NTFS. Jeśli występuje błąd "ERROR_VIRTUAL_DISK_LIMITATION", spróbuj usunąć skompresowanie woluminu.
 * Aktualizacje platformy .NET mogą powodować niepowodzenie otwierania plików w usłudze Application Guard. Aby obejść ten problem, użytkownicy mogą ponownie uruchomić swoje urządzenie po wystąpieniu tego błędu. Dowiedz się więcej o problemie w oknie [Otrzymywanie komunikatu o błędzie podczas próby otwarcia Windows Defender Application Guard lub Piaskownica systemu Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
-* Aby uzyskać [dodatkowe informacje, zobacz Często zadawane pytania — Microsoft Defender Application Guard.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
+* Aby uzyskać [dodatkowe informacje, zobacz Często zadawane pytania — Microsoft Defender Application Guard.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)

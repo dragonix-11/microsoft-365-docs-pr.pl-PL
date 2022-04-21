@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: Administrator może dowiedzieć się, jak zbiorczo importować pliki PST, aby Microsoft 365 skrzynki pocztowe, kopiując pliki PST na dysk twardy, a następnie wysyłając je do firmy Microsoft.
-ms.openlocfilehash: 53022477b034c0620177b00c0c171c8d6c36e250
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d2255a01c49e3837365735e1c3300b7f6b34c42c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934648"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996003"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Importowanie plików PST organizacji przy użyciu wysyłania dysków
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Ten artykuł jest przeznaczony dla administratorów. Czy próbujesz zaimportować pliki PST do własnej skrzynki pocztowej? Zobacz [Importowanie wiadomości e-mail, kontaktów i kalendarza z pliku pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    

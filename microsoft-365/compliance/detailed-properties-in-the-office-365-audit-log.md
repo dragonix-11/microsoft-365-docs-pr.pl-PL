@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Ten artykuł zawiera opisy dodatkowych właściwości uwzględnionych podczas eksportowania wyników dla rekordu dziennika inspekcji Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e65b5e27f8c6821b12c7f0b7f03e4ecb472c0a9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2342a64deaa2787e534a09b3d874ed3795d82ea8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948952"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996223"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Szczegółowe właściwości w dzienniku inspekcji
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Podczas eksportowania wyników wyszukiwania dziennika inspekcji z portalu zgodności usługi Microsoft Purview możesz pobrać wszystkie wyniki spełniające kryteria wyszukiwania. Aby to zrobić, wybierz pozycję **Eksportuj wyniki** \> **Pobierz wszystkie wyniki** na stronie **przeszukiwania dziennika inspekcji** . Aby uzyskać więcej informacji, zobacz [Przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md).
   

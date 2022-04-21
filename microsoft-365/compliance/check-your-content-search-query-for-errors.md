@@ -16,14 +16,16 @@ search.appverid:
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: Dowiedz się, jak wykrywać błędy i literówki w zapytaniu słowa kluczowego na potrzeby wyszukiwania zbierania elektronicznych materiałów dowodowych przed uruchomieniem wyszukiwania.
-ms.openlocfilehash: 440cd9c54d839173e8eeb6022a840f90305a1a92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd09efd162ce8647fecbd7d5c4740588ada4a396
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938538"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996300"
 ---
 # <a name="check-your-search-query-for-errors"></a>Sprawdź, czy zapytanie wyszukiwania nie zawiera błędów
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Poniżej przedstawiono listę nieobsługiwanych znaków, które sprawdzamy w zapytaniach wyszukiwania dotyczących wyszukiwania zawartości i zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard). Nieobsługiwane znaki są często ukryte i zwykle powodują błąd wyszukiwania lub zwracają niezamierzone wyniki.
   

@@ -1,6 +1,6 @@
 ---
-title: Adres naruszonych kont użytkowników przy użyciu automatycznego badania i odpowiedzi
-keywords: AIR, autoIR, Ochrona punktu końcowego w usłudze Microsoft Defender, zautomatyzowane, badania, odpowiedzi, działania naprawcze, zagrożenia, zaawansowane, zagrożenia, ochrona, naruszone
+title: Rozwiązywanie problemów z kontami użytkowników, których zabezpieczenia zostały naruszone, za pomocą zautomatyzowanego badania i odpowiedzi
+keywords: AIR, autoIR, Ochrona punktu końcowego w usłudze Microsoft Defender, automated, investigation, response, remediation, threats, advanced, threat, protection, compromised
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,91 +13,90 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: ''
 ms.date: 06/10/2021
-description: Dowiedz się, jak przyspieszyć proces wykrywania naruszonych kont użytkowników i rozwiązywania związanych z nim problemów za pomocą funkcji automatycznego badania i odpowiedzi w programie Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
+description: Dowiedz się, jak przyspieszyć proces wykrywania i rozwiązywania problemów z kontami użytkowników, których zabezpieczenia zostały naruszone, dzięki możliwościom zautomatyzowanego badania i reagowania w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1488598eb3a198a70997e755fe77a8a0c97e1c0
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3fdbb88d38b94ac48b2bbd2a447c76ee7d79d24a
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474367"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974174"
 ---
-# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adres naruszonych kont użytkowników przy użyciu automatycznego badania i odpowiedzi
+# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Rozwiązywanie problemów z kontami użytkowników, których zabezpieczenia zostały naruszone, za pomocą zautomatyzowanego badania i odpowiedzi
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
+[Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) obejmuje zaawansowane możliwości [zautomatyzowanego badania i reagowania](office-365-air.md) (AIR). Takie możliwości mogą zaoszczędzić zespołowi ds. operacji zabezpieczeń dużo czasu i wysiłku w radzeniu sobie z zagrożeniami. Firma Microsoft nadal ulepsza możliwości zabezpieczeń. Ostatnio rozszerzono możliwości funkcji AIR w celu uwzględnienia podręcznika zabezpieczeń użytkowników, który został naruszony (obecnie w wersji zapoznawczej). Przeczytaj ten artykuł, aby dowiedzieć się więcej na temat podręcznika zabezpieczeń użytkowników, które zostały naruszone. Aby uzyskać dodatkowe informacje, zobacz wpis w blogu [Speed up time to detect and respond to user compromise and limit breach scope with Ochrona usługi Office 365 w usłudze Microsoft Defender (Skracanie czasu wykrywania i reagowania na naruszenia zabezpieczeń użytkowników oraz ograniczania zakresu naruszeń przy użyciu Ochrona usługi Office 365 w usłudze Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)).
 
-[Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) obejmuje zaawansowane funkcje automatycznego [badania i odpowiedzi](office-365-air.md) (AIR). Takie możliwości mogą zaoszczędzić wiele czasu i wysiłku zespołu operacyjnego w związku z zagrożeniami. Firma Microsoft będzie nadal ulepszać funkcje zabezpieczeń. Ostatnio funkcje AIR zostały rozszerzone tak, aby zawierały naruszony podręcznik zabezpieczeń użytkowników (obecnie dostępny w wersji Preview). Przeczytaj ten artykuł, aby dowiedzieć się więcej o podręczniku zabezpieczeń użytkownika, który został naruszony. Aby uzyskać [więcej szczegółowych informacji](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053), zapoznaj się z wpisem w blogu Przyspieszyć wykrywanie naruszenia bezpieczeństwa użytkowników i ograniczanie zakresu naruszenia Ochrona usługi Office 365 w usłudze Microsoft Defender blogu.
+![Zautomatyzowane badanie użytkownika z naruszeniem zabezpieczeń.](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
-![Zautomatyzowane badanie w przypadku naruszonego użytkownika.](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
+Podręcznik zabezpieczeń użytkownika z naruszeniem zabezpieczeń umożliwia zespołowi ds. zabezpieczeń organizacji:
 
-Podręcznik zabezpieczeń użytkowników, w przypadku których naruszono zabezpieczenia, umożliwia zespołowi zabezpieczeń w organizacji:
+- Przyspiesz wykrywanie kont użytkowników, których bezpieczeństwo zostało naruszone;
+- Ogranicz zakres naruszenia zabezpieczeń w przypadku naruszenia zabezpieczeń konta; I
+- Efektywniej i wydajniej reagować na naruszenia zabezpieczeń użytkowników.
 
-- Przyspieszyć wykrywanie naruszonych kont użytkowników;
-- ograniczanie zakresu naruszenia bezpieczeństwa w przypadku naruszenia konta; i
-- Skuteczniej i skuteczniej odpowiadaj na naruszonych użytkowników.
+## <a name="compromised-user-alerts"></a>Alerty użytkowników, których zabezpieczenia zostały naruszone
 
-## <a name="compromised-user-alerts"></a>Naruszone alerty użytkownika
+Gdy konto użytkownika zostanie naruszone, wystąpią nietypowe lub nietypowe zachowania. Na przykład wiadomości wyłudzające informacje i spam mogą być wysyłane wewnętrznie z zaufanego konta użytkownika. Ochrona usługi Office 365 w usłudze Defender może wykrywać takie anomalie we wzorcach poczty e-mail i działaniach współpracy w Office 365. W takim przypadku alerty są wyzwalane i rozpoczyna się proces ograniczania zagrożeń.
 
-W przypadku naruszenia konta użytkownika występują nietypowe lub nietypowe zachowania. Na przykład wiadomości wyłudzają informacje i spam mogą być wysyłane wewnętrznie z zaufanego konta użytkownika. Ochrona usługi Office 365 w usłudze Defender wykryć takie anomalie w wzorcach poczty e-mail i aktywności współpracy w ramach Office 365. Gdy tak się stanie, alerty są wyzwalane i rozpoczyna się proces ograniczania zagrożeń.
+Oto na przykład alert, który został wyzwolony z powodu podejrzanego wysyłania wiadomości e-mail:
 
-Oto przykładowy alert, który został wyzwolony z powodu podejrzanego wysyłania wiadomości e-mail:
-
-![Alert wyzwolony z powodu podejrzanego wysyłania wiadomości e-mail.](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
+![Alert został wyzwolony z powodu podejrzanego wysyłania wiadomości e-mail.](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
 Oto przykład alertu, który został wyzwolony po osiągnięciu limitu wysyłania dla użytkownika:
 
-![Alert wyzwalany przez osiągnięto limit wysyłania.](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
+![Alert wyzwolony przez wysłanie osiągniętego limitu.](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
-## <a name="investigate-and-respond-to-a-compromised-user"></a>Badanie naruszonego użytkownika i odpowiadanie na nie
+## <a name="investigate-and-respond-to-a-compromised-user"></a>Badanie użytkownika z naruszeniem zabezpieczeń i reagowanie na nie
 
-Gdy konto użytkownika zostanie naruszone, są wyzwolone alerty. W niektórych przypadkach to konto użytkownika jest zablokowane i nie może wysyłać kolejnych wiadomości e-mail, dopóki nie zostanie rozwiązany przez zespół operacyjny zabezpieczeń Twojej organizacji. W innych przypadkach rozpoczyna się zautomatyzowane badanie, co może spowodować zalecane działania, które powinien podjąć Twój zespół zabezpieczeń.
+Gdy konto użytkownika zostanie naruszone, alerty są wyzwalane. W niektórych przypadkach to konto użytkownika jest blokowane i nie może wysyłać dalszych wiadomości e-mail, dopóki problem nie zostanie rozwiązany przez zespół ds. operacji zabezpieczeń w organizacji. W innych przypadkach rozpoczyna się zautomatyzowane badanie, które może skutkować zalecanymi akcjami, które powinien podjąć zespół ds. zabezpieczeń.
 
 - [Wyświetlanie i badanie użytkowników z ograniczeniami](#view-and-investigate-restricted-users)
 
-- [Wyświetlanie szczegółów zautomatyzowanych badań](#view-details-about-automated-investigations)
+- [Wyświetlanie szczegółów dotyczących zautomatyzowanych dochodzeń](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> Musisz mieć odpowiednie uprawnienia, aby wykonać następujące zadania. Zobacz [Wymagane uprawnienia do używania funkcji AIR](office-365-air.md#required-permissions-to-use-air-capabilities).
+> Musisz mieć odpowiednie uprawnienia do wykonywania następujących zadań. Zobacz [Wymagane uprawnienia do korzystania z funkcji AIR](office-365-air.md#required-permissions-to-use-air-capabilities).
 
 ### <a name="view-and-investigate-restricted-users"></a>Wyświetlanie i badanie użytkowników z ograniczeniami
 
-Dostępnych jest kilka opcji przechodzenia do listy użytkowników z ograniczeniami. Na przykład w portalu Microsoft 365 Defender można przejść do tematu Współpraca za pomocą poczty e-mail &  \> **przejrzeć użytkowników** \> **z ograniczeniami**. W poniższej procedurze opisano nawigację za pomocą pulpitu nawigacyjnego **alertów** , który jest dobrym sposobem na wyświetlanie różnych rodzajów alertów, które mogły zostać wyzwolone.
+Istnieje kilka opcji przechodzenia do listy użytkowników z ograniczeniami. Na przykład w portalu Microsoft 365 Defender możesz przejść do pozycji **Poczta e-mail & współpracy** \> **Przejrzyj** \> **ograniczonych użytkowników**. Poniższa procedura opisuje nawigację przy użyciu pulpitu nawigacyjnego **Alerty** , który jest dobrym sposobem wyświetlenia różnych rodzajów alertów, które mogły zostać wyzwolone.
 
-1. Otwórz portal Microsoft 365 Defender i <https://security.microsoft.com> przejdź do **tematu Alerty o & zdarzeniach**\>. Aby przejść bezpośrednio do strony **Alerty**, użyj .<https://security.microsoft.com/alerts>
+1. Otwórz portal Microsoft 365 Defender pod adresem <https://security.microsoft.com> i przejdź do **obszaru Zdarzenia & alerty alertów**\>. Aby przejść bezpośrednio do strony **Alerty** , użyj polecenia <https://security.microsoft.com/alerts>.
 
-2. Na stronie **Alerty** filtruj wyniki według okresu i zasad o nazwie Użytkownik **ograniczony do wysyłania wiadomości e-mail**.
+2. Na stronie **Alerty** przefiltruj wyniki według okresu i zasad o nazwie **Użytkownik z ograniczeniami wysyłania wiadomości e-mail**.
 
-   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="Strona Alerty w portalu Microsoft 365 Defender z filtrami dla użytkowników z ograniczeniami" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
+   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="Strona Alerty w portalu Microsoft 365 Defender filtrowana pod kątem użytkowników z ograniczeniami" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
-3. Jeśli wybierzesz wpis, klikając nazwę, zostanie otwarta strona Użytkownik  z ograniczeniami do wysyłania wiadomości e-mail z dodatkowymi szczegółami do przejrzenia. Obok **przycisku Zarządzaj alertem** możesz kliknąć ikonę ![Więcej opcji.](../../media/m365-cc-sc-more-actions-icon.png) **Więcej opcji**, a następnie wybierz **pozycję Wyświetl ograniczone szczegóły użytkownika**, aby  przejść do strony Użytkownicy z ograniczeniami, gdzie możesz [zwolnić użytkownika z ograniczeniami](removing-user-from-restricted-users-portal-after-spam.md).
+3. Jeśli wybierzesz wpis, klikając nazwę, zostanie otwarta strona **z ograniczeniami wysyłania wiadomości e-mail** z dodatkowymi szczegółami do przejrzenia. Obok przycisku **Zarządzaj alertem** możesz kliknąć ikonę ![Więcej opcji.](../../media/m365-cc-sc-more-actions-icon.png) **Więcej opcji** , a następnie wybierz pozycję **Wyświetl ograniczone szczegóły użytkownika** , aby przejść do strony **Użytkownicy z ograniczeniami** , na której można [zwolnić użytkownika z ograniczeniami](removing-user-from-restricted-users-portal-after-spam.md).
 
-  :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="Użytkownik z ograniczonymi możliwościami wysyłania wiadomości e-mail" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
+  :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="Użytkownik nie może wysyłać wiadomości e-mail" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
 
-### <a name="view-details-about-automated-investigations"></a>Wyświetlanie szczegółów zautomatyzowanych badań
+### <a name="view-details-about-automated-investigations"></a>Wyświetlanie szczegółów dotyczących zautomatyzowanych dochodzeń
 
-Gdy zostanie rozpoczęte zautomatyzowane badanie, możesz wyświetlić jego szczegóły i wyniki w Centrum zgodności & zabezpieczeń. Przejdź do **strony Badania** \> **zarządzania zagrożeniami**, a następnie wybierz badanie, aby wyświetlić jego szczegóły.
+Po rozpoczęciu zautomatyzowanego badania możesz zobaczyć jego szczegóły i wyniki w Centrum zgodności & zabezpieczeń. Przejdź do obszaru **Badania** **zarządzania zagrożeniami**\>, a następnie wybierz badanie, aby wyświetlić jego szczegóły.
 
-Aby dowiedzieć się więcej, [zobacz Wyświetlanie szczegółów badania](air-view-investigation-results.md).
+Aby dowiedzieć się więcej, zobacz [Wyświetlanie szczegółów badania](air-view-investigation-results.md).
 
 ## <a name="keep-the-following-points-in-mind"></a>Należy pamiętać o następujących kwestiach
 
-- **Bądź na wierzchu alertów**. Jak wiadomo, im więcej łamania zabezpieczeń, tym większy jest potencjalny wpływ na odbiorców i koszty w organizacji, klientach i partnerach. Wczesne wykrywanie i terminowe reagowanie mają kluczowe znaczenie dla ograniczania zagrożeń, zwłaszcza w przypadku naruszenia bezpieczeństwa konta użytkownika.
+- **Bądź na bieżąco z alertami**. Jak wiesz, tym dłuższy kompromis jest niewykryty, tym większy jest potencjał powszechnego wpływu i kosztów na organizację, klientów i partnerów. Wczesne wykrywanie i terminowe reagowanie mają kluczowe znaczenie dla ograniczenia zagrożeń, a zwłaszcza w przypadku naruszenia zabezpieczeń konta użytkownika.
 
-- **Automatyzacja pomaga, ale nie zastępuje zespołu operacyjnego zabezpieczeń**. Funkcje automatycznego badania i reakcji mogą wcześniej wykryć naruszonego użytkownika, ale zespół operacyjny ds. zabezpieczeń prawdopodobnie będzie musiał zaangażować się i wykonać pewne działania naprawcze i badania. Potrzebujesz pomocy w tym? Zobacz [Przeglądanie i zatwierdzanie akcji](air-review-approve-pending-completed-actions.md).
+- **Automatyzacja pomaga, ale nie zastępuje zespołu ds. operacji zabezpieczeń**. Zautomatyzowane możliwości badania i reagowania mogą wykryć naruszonym użytkownikiem na wczesnym etapie, ale twój zespół ds. operacji zabezpieczeń prawdopodobnie będzie musiał zaangażować się w badanie i korygowanie. Potrzebujesz pomocy w tym zakresie? Zobacz [Przeglądanie i zatwierdzanie akcji](air-review-approve-pending-completed-actions.md).
 
-- **Jako jedyny wskaźnik nie należy polegać na podejrzanych alertach logowania**. Jeśli konto użytkownika zostanie naruszone, może (ale nie musi) spowodować wyzwolenie podejrzanego alertu logowania. Czasami jest to seria działań, która występuje po naruszoniu konta, co powoduje wyzwolenie alertu. Chcesz dowiedzieć się więcej o alertach? Zobacz [Zasady alertów](../../compliance/alert-policies.md).
+- **Nie polegaj na podejrzanym alertie logowania jako jedynym wskaźniku**. Jeśli konto użytkownika zostanie naruszone, może lub nie może wyzwolić podejrzanego alertu logowania. Czasami jest to seria działań wykonywanych po naruszeniach zabezpieczeń konta, które wyzwalają alert. Chcesz dowiedzieć się więcej o alertach? Zobacz [Zasady alertów](../../compliance/alert-policies.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
 - [Przejrzyj wymagane uprawnienia do korzystania z funkcji AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 
-- [Znajdowanie i badanie złośliwych wiadomości e-mail w programie Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Znajdowanie i badanie złośliwych wiadomości e-mail w Office 365](investigate-malicious-email-that-was-delivered.md)
 
-- [Informacje o programie AIR w programie Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Dowiedz się więcej o środowisku AIR w Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Odwiedź Microsoft 365 Przewodnik po aktualizacjach, aby zobaczyć, co zostanie wkrótce wyedytować](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Odwiedź stronę Microsoft 365 Plan działania, aby zobaczyć, co będzie wkrótce i co się stanie](https://www.microsoft.com/microsoft-365/roadmap?filters=)

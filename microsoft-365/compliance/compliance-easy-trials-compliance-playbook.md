@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Podręcznik wersji próbnej rozwiązań Microsoft Purview.
-ms.openlocfilehash: 5136ceb33f4fb09345ee942b8d411d14952befc5
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 4544e07baa5b8d2b89991d9a31c84a2d7cefb7f8
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952781"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973778"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Podręcznik wersji próbnej: rozwiązania Usługi Microsoft Purview
 
@@ -225,9 +225,9 @@ Korzystaj z kompleksowego przepływu pracy w celu zachowania, zbierania, analizo
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: Dzień 1
 
-Aby uzyskać dostęp do Advanced eDiscovery lub zostać dodanym jako członek Advanced eDiscovery przypadku, użytkownikowi muszą zostać przypisane odpowiednie uprawnienia.
+Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Premium) lub zostać dodanym jako członek sprawy zbierania elektronicznych materiałów dowodowych (Premium), użytkownikowi muszą zostać przypisane odpowiednie uprawnienia.
 
-1. [Konfigurowanie Advanced eDiscovery — przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+1. [Konfigurowanie eDiscovery (Premium) — przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [Dodaj członków do sprawy lub ich usuń](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### <a name="step-2-required-create-a-case"></a>Krok 2 (wymagany): Tworzenie sprawy
@@ -235,9 +235,9 @@ Aby uzyskać dostęp do Advanced eDiscovery lub zostać dodanym jako członek Ad
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: tworzenie w ciągu pierwszych 30 dni
 
-Więcej organizacji korzysta z rozwiązania Advanced eDiscovery w Microsoft 365 na potrzeby krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe.
+Więcej organizacji korzysta z rozwiązania eDiscovery (Premium) w Microsoft 365 na potrzeby krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe.
 
-1. Zarządzanie Advanced eDiscovery — [dowiedz się, jak konfigurować Advanced eDiscovery, zarządzać przypadkami przy użyciu Centrum zgodności & zabezpieczeń, zarządzać przepływem pracy w Advanced eDiscovery i analizować Advanced eDiscovery wyników wyszukiwania](/learn/modules/manage-advanced-ediscovery).
+1. Zarządzaniebierania elektronicznych materiałów dowodowych (Premium) — [dowiedz się, jak skonfigurować wykrywanie elektroniczne (Premium), zarządzać przypadkami przy użyciu Centrum zgodności & zabezpieczeń, zarządzać przepływem pracy w usłudze eDiscovery (Premium) i analizować wyniki wyszukiwania zbierania elektronicznych](/learn/modules/manage-advanced-ediscovery) materiałów dowodowych (Premium).
 1. [Tworzenie sprawy zbierania elektronicznych materiałów dowodowych przy użyciu nowego formatu sprawy advance eDiscovery](advanced-ediscovery-new-case-format.md)
 1. [Zamknij lub usuń sprawę](close-or-delete-case.md) — po zakończeniu sprawy prawnej lub dochodzenia możesz zamknąć lub usunąć. Możesz również ponownie otworzyć zamkniętą sprawę.
 
@@ -245,9 +245,9 @@ Więcej organizacji korzysta z rozwiązania Advanced eDiscovery w Microsoft 365 
 
 Aby umożliwić osobom w organizacji rozpoczęcie tworzenia i używania przypadków, należy skonfigurować ustawienia globalne, które mają zastosowanie do wszystkich przypadków w organizacji. Obecnie jedynym ustawieniem globalnym jest **wykrywanie uprawnień klienta-adwokata** (więcej ustawień globalnych będzie dostępnych w przyszłości).
 
-1. [Konfigurowanie Advanced eDiscovery — globalne Ustawienia](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [Konfigurowanie eDiscovery (Premium) — globalne Ustawienia](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Konfiguruj ustawienia wyszukiwania i analizy](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [Zarządzanie zadaniami w Advanced eDiscovery](managing-jobs-ediscovery20.md)
+1. [Zarządzanie zadaniami w środowisku zbierania elektronicznych materiałów dowodowych (Premium)](managing-jobs-ediscovery20.md)
 
 ### <a name="step-4-optional-compliance-boundaries"></a>Krok 4 (opcjonalnie): [Granice zgodności](set-up-compliance-boundaries.md)
 
@@ -266,7 +266,7 @@ Skonfiguruj granice zgodności dla badań zbierania elektronicznych materiałów
 
 Użyj narzędzia do wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, aby szybko znaleźć wiadomości e-mail w Exchange skrzynkach pocztowych, dokumentach w witrynach SharePoint i lokalizacjach OneDrive oraz w konwersacjach wiadomości błyskawicznych w Skype dla firm. Narzędzie do wyszukiwania zawartości umożliwia wyszukiwanie wiadomości e-mail, dokumentów i konwersacji wiadomości błyskawicznych w narzędziach do współpracy, takich jak Microsoft Teams i Grupy Microsoft 365.
 
-- [Dowiedz się więcej o wyszukiwaniu Advanced eDiscovery](search-for-content.md#search-for-content)
+- [Dowiedz się więcej o wyszukiwaniu zbierania elektronicznych materiałów dowodowych (Premium)](search-for-content.md#search-for-content)
 
 ## <a name="information-protection"></a>Information Protection
 

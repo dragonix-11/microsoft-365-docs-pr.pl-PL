@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano limity w przypadku zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w Microsoft 365.
-ms.openlocfilehash: 4eb43687e92d90179ff24d69827c3c2889d82b47
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 29d1ef4d017ebf26a0c5ed1cc03fcf4361266e94
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971538"
+ms.locfileid: "64994111"
 ---
 # <a name="limits-in-ediscovery-standard"></a>Limity w zakresie zbierania elektronicznych materiałów dowodowych (Standardowa)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W poniższej tabeli wymieniono limity dla przypadków zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) i blokad skojarzonych ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa). Aby uzyskać więcej informacji o usłudze Microsoft Purview eDiscovery (Standard), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych (Standard)](./get-started-core-ediscovery.md).
     

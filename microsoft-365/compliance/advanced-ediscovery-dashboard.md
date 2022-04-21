@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Pulpit nawigacyjny zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) umożliwia zestawy przeglądów, aby szybko przeanalizować swoje ciało w celu zidentyfikowania trendów lub kluczowych statystyk, które pomogą Ci opracować strategię przeglądu.
-ms.openlocfilehash: 8814bbf645686529aec43f710519c1bd4891c1b3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1412df381fff228c37052a6d75113c3a4c4cfcba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943112"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995893"
 ---
 # <a name="ediscovery-premium-dashboard-for-review-sets"></a>Pulpit nawigacyjny zbierania elektronicznych materiałów dowodowych (Premium) na potrzeby zestawów przeglądów
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W niektórych przypadkach w usłudze Microsoft Purview eDiscovery (Premium) może istnieć duża liczba dokumentów i wiadomości e-mail, które należy przejrzeć. Przed rozpoczęciem procesu przeglądu możesz szybko przeanalizować swoje ciało, aby zidentyfikować trendy lub kluczowe statystyki, które pomogą Ci opracować strategię przeglądu. W tym celu możesz użyć pulpitu nawigacyjnego zbierania elektronicznych elektronicznych materiałów dowodowych (Premium) na potrzeby zestawów przeglądów, aby szybko przeanalizować swoje ciało.
 

@@ -20,14 +20,16 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Utwórz zasady alertów w portalu zgodności usługi Microsoft Purview lub portalu Microsoft 365 Defender w celu monitorowania potencjalnych zagrożeń, utraty danych i problemów z uprawnieniami.
-ms.openlocfilehash: ad7099ddcbc99fd6cf852b1bb7f564c0caf444a7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: beecaf86a013480e0c5546e07189e8be5b622b17
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944266"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995915"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Zasady alertów w Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Zasady alertów i pulpit nawigacyjny alertów można użyć w portalu zgodności usługi Microsoft Purview lub portalu Microsoft 365 Defender, aby utworzyć zasady alertów, a następnie wyświetlić alerty wygenerowane, gdy użytkownicy wykonują działania zgodne z warunkami zasad alertów. Istnieje kilka domyślnych zasad alertów, które ułatwiają monitorowanie działań, takich jak przypisywanie uprawnień administratora w Exchange Online, ataki złośliwego oprogramowania, kampanie wyłudzania informacji oraz nietypowe poziomy usuwania plików i udostępniania zewnętrznego.
 

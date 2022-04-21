@@ -16,14 +16,16 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: Zapoznaj się z zaleceniami dotyczącymi konfigurowania trenowania istotności w usłudze eDiscovery (Premium), aby oceniać pliki według ich istotności i generować wyniki analityczne.
-ms.openlocfilehash: 66afbb3b8e7d8c2a4e266aa7fb63dc8434f9c8a6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f1a4f1ca9ad9fbf2b63439d463e83723dc2a0e0a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946028"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994859"
 ---
 # <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>Zarządzanie konfiguracją istotności w usłudze eDiscovery (Premium) (wersja klasyczna)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Usługa Microsoft Purview eDiscovery (Premium) wymaga Office 365 E3 z dodatkiem Zaawansowana zgodność lub subskrypcją E5 dla organizacji. Jeśli nie masz tego planu i chcesz spróbować zbierania elektronicznych materiałów dowodowych (Premium), możesz [utworzyć konto próbne Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

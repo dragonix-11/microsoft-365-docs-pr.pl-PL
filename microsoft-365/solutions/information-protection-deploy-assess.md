@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Określ przepisy dotyczące prywatności danych, odpowiednie scenariusze, gotowość i typy informacji poufnych, które znajdują się w środowisku Microsoft 365.
-ms.openlocfilehash: 967c64dee2d99f41b3c2a1b6a193730dcd75811a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2d87599315e7bb43b289d74b5f192b29aecd965
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947522"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973479"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Ocena ryzyka związanego z prywatnością danych i identyfikowanie poufnych elementów przy użyciu Microsoft 365
 
@@ -190,7 +190,7 @@ Ocena RODO składa się z następujących sekcji:
 
 Ten krok obejmuje identyfikację konkretnych typów informacji poufnych, które podlegają określonym kontrolom regulacyjnym, a także ich występowanie w środowisku Microsoft 365.
 
-Znajdowanie zawartości w środowisku zawierającym dane osobiste może być ogromnym zadaniem, które wcześniej wiąże się z połączeniem wyszukiwania zgodności, zbierania elektronicznych materiałów dowodowych, Advanced eDiscovery, DLP i inspekcji.
+Znajdowanie zawartości w środowisku zawierającej dane osobiste może być ogromnym zadaniem, które wcześniej wiąże się z użyciem wyszukiwania zgodności, zbierania elektronicznych materiałów dowodowych, zbierania elektronicznych materiałów dowodowych (Premium), DLP i inspekcji.
 
 Dzięki nowemu rozwiązaniu **do klasyfikacji danych** w portalu zgodności usługi Microsoft Purview stało się to znacznie łatwiejsze dzięki funkcji [Eksploratora zawartości](../compliance/data-classification-content-explorer.md) , która współpracuje z wbudowanymi lub niestandardowymi typami informacji poufnych, w tym tymi dotyczącymi danych osobowych.
 

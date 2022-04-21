@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie przesłaniami
+title: Zarządzanie przesyłaniem
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,95 +14,94 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się, jak za pomocą portalu Przesyłanie w portalu Microsoft 365 Defender przesyłać podejrzane wiadomości e-mail, podejrzewane wiadomości wyłudzające informacje, spam i inne potencjalnie niebezpieczne wiadomości, adresy URL i załączniki wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
+description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania podejrzanych wiadomości e-mail, podejrzanych wiadomości phishingowych, spamu i innych potencjalnie szkodliwych wiadomości, adresów URL i załączników wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0d699c3344cc16f3e15996139f1d2d8b608ba50
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: a21c9e6655c01e2d2229e957f79b2342895ac4e4
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477154"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971974"
 ---
-# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Korzystanie z portalu Przesyłanie w celu przesyłania podejrzanych wiadomości-śmieci, wyłudków, adresów URL i plików do firmy Microsoft
+# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Przesyłanie do firmy Microsoft podejrzanych wiadomości spamowych, adresów URL i plików przy użyciu portalu Przesyłania
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 
+W Microsoft 365 organizacjach ze skrzynkami pocztowymi Exchange Online administratorzy mogą przesyłać wiadomości e-mail, adresy URL i załączniki do firmy Microsoft za pomocą portalu Przesyłania w portalu Microsoft 365 Defender w celu przesyłania wiadomości e-mail, adresów URL i załączników do firmy Microsoft w celu skanowania.
 
-W Microsoft 365 organizacji ze skrzynkami pocztowymi usługi Exchange Online administratorzy mogą za pomocą portalu Przesyłanie w portalu Microsoft 365 Defender wysyłać wiadomości e-mail, adresy URL i załączniki do firmy Microsoft w celu skanowania.
+Po przesłaniu wiadomości e-mail do analizy otrzymasz:
 
-Gdy przesyłasz wiadomość e-mail do analizy, otrzymasz:
-
-- **Sprawdzanie uwierzytelniania wiadomości e-mail**: Szczegóły dotyczące tego, czy uwierzytelnianie poczty e-mail zakończyło się pomyślnie, czy nie po jego dostarczyć.
-- **Trafienia zasad**: Informacje o wszelkich zasadach, które mogły zezwolić lub zablokować przychodzącą pocztę e-mail w dzierżawie, zastępując nasze werdykty filtru usługi.
-- **Reputacja/detonacja** ładowania: Aktualne informacje o adresach URL i załącznikach w wiadomości.
-- **Analiza gradera**: przejrzyj wykonane przez ocenionych przez ludzkich klasyfikatorów, aby sprawdzić, czy wiadomości są złośliwe.
+- **Sprawdzanie uwierzytelniania za pomocą poczty e-mail**: szczegółowe informacje na temat tego, czy uwierzytelnianie poczty e-mail zostało zakończone pomyślnie, czy też nie powiodło się, gdy zostało dostarczone.
+- **Trafienia zasad**: informacje o zasadach, które mogły zezwalać na przychodzące wiadomości e-mail lub blokować je w dzierżawie, zastępując nasze werdykty dotyczące filtru usługi.
+- **Reputacja ładunku/detonacja**: aktualne badanie wszelkich adresów URL i załączników w wiadomości.
+- **Analiza równiarki**: przejrzyj wyniki wykonywane przez klasyfikatorów ludzkich w celu potwierdzenia, czy komunikaty są złośliwe.
 
 > [!IMPORTANT]
-> Analiza reputacji/detonacji obciążenia i oceny nie jest wykonywana we wszystkich dzierżawach. Dostęp do informacji poza organizację jest blokowany, gdy dane nie powinny opuszczać granicy dzierżawy w celu zachowania zgodności z przepisami.
+> Analiza reputacji ładunku/detonacji i równiarki nie jest wykonywana we wszystkich dzierżawach. Dostęp informacji poza organizację jest blokowany, gdy dane nie powinny opuszczać granicy dzierżawy w celach zgodności.
 
 Aby uzyskać inne sposoby przesyłania wiadomości e-mail, adresów URL i załączników do firmy Microsoft, zobacz [Zgłaszanie wiadomości i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
-- Otwierasz portal Microsoft 365 Defender w witrynie <https://security.microsoft.com/>. Aby przejść bezpośrednio do **strony Materiały**, użyj .<https://security.microsoft.com/reportsubmission>
+- Otwórz portal Microsoft 365 Defender pod adresem <https://security.microsoft.com/>. Aby przejść bezpośrednio do strony **Przesłane** , użyj polecenia <https://security.microsoft.com/reportsubmission>.
 
-- Aby przesłać wiadomości i pliki do firmy Microsoft, musisz mieć jedną z następujących ról:
-  - **Administrator zabezpieczeń** lub **czytnik zabezpieczeń** w [portalu Microsoft 365 Defender sieci.](permissions-microsoft-365-security-center.md)
-  
-    Jedna z tych ról jest wymagana [do wyświetlania](#view-user-submissions-to-microsoft) przesyłania użytkowników do niestandardowej skrzynki pocztowej w sposób opisany w dalszej części tego artykułu.
+- Aby przesłać komunikaty i pliki do firmy Microsoft, musisz mieć jedną z następujących ról:
+  - **Administrator zabezpieczeń** lub **czytelnik zabezpieczeń** w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-- Administratorzy mogą przesyłać wiadomości w wieku do 30 dni, jeśli są nadal dostępne w skrzynce pocztowej i nie są czyszowane przez użytkownika ani innego administratora.
+    Należy pamiętać, że jedna z tych ról jest wymagana do [wyświetlenia przesyłania użytkowników do niestandardowej skrzynki pocztowej](#view-user-submissions-to-microsoft) zgodnie z opisem w dalszej części tego artykułu.
 
-- Zgłoszenia administratorów są ograniczane zgodnie z następującymi stawkami:
-  - Maksymalna liczba przesyłania w dowolnym okresie 15 minut: 150 przesyłania
-  - Te same zgłoszenia w okresie 24-godzinnym: 3 zgłoszenia
-  - Te same zgłoszenia w okresie 15 minut: 1 przesłanie
-  
-- Aby uzyskać więcej informacji o tym, jak użytkownicy mogą przesyłać wiadomości i pliki do firmy Microsoft, zobacz [Zgłaszanie wiadomości i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
+- Administratorzy mogą przesyłać wiadomości w ciągu 30 dni, jeśli są nadal dostępne w skrzynce pocztowej i nie są usuwane przez użytkownika lub innego administratora.
+
+- Przesyłanie przez administratora jest ograniczane według następujących stawek:
+  - Maksymalna liczba przesłanych zgłoszeń w dowolnym okresie 15 minut: 150 przesłanych
+  - Te same zgłoszenia w 24-godzinnym okresie: 3 przesłania
+  - Te same zgłoszenia w okresie 15 minut: 1 przesyłanie
+
+- Aby uzyskać więcej informacji na temat sposobu przesyłania wiadomości i plików do firmy Microsoft, zobacz [Raport wiadomości i pliki do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Zgłaszanie podejrzanej zawartości firmie Microsoft
 
-1. W portalu Microsoft 365 Defender pod stroną <https://security.microsoft.com>, przejdź do strony **Przesyłanie** w witrynie **Akcje & przesyłania** \> **.** Aby przejść bezpośrednio do **strony Materiały**, użyj .<https://security.microsoft.com/reportsubmission>
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Przesłane** w **akcji & przesłanych.** \> Aby przejść bezpośrednio do strony **Przesłane** , użyj polecenia <https://security.microsoft.com/reportsubmission>.
 
-2. Na **stronie Materiały sprawdź**, czy wybrano kartę Adresy  e-mail lub adresy **URL** w zależności od typu zawartości, którą chcesz zgłosić, ![a następnie kliknij ikonę Prześlij do firmy Microsoft w celu analizy.](../../media/m365-cc-sc-create-icon.png) **Prześlij do firmy Microsoft w celu analizy**.
+2. Na stronie **Przesłane** sprawdź, czy wybrano kartę **Wiadomości e-mail**, **Załączniki lub adresy URL wiadomości e-mail** na podstawie typu zawartości, którą chcesz zgłosić, a następnie kliknij ikonę  ![Prześlij do firmy Microsoft w celu analizy.](../../media/m365-cc-sc-create-icon.png) **Prześlij do firmy Microsoft w celu analizy**.
 
-3. Użyj **wysuwanej listy** wysuwanej Submit to Microsoft for analysis (Prześlij do firmy Microsoft w celu zgłoszenia odpowiedniego typu zawartości (wiadomości e-mail, adresu URL lub załącznika wiadomości e-mail) zgodnie z opisem w poniższych sekcjach.
+3. Użyj wysuwanego **polecenia Prześlij do firmy Microsoft w celu analizy** , który wygląda na przesłany odpowiedni typ zawartości (wiadomość e-mail, adres URL lub załącznik wiadomości e-mail), zgodnie z opisem w poniższych sekcjach.
 
    > [!NOTE]
-   > Przesyłanie plików i adresów URL nie jest dostępne w chmurach, które nie zezwalają na opuszczenie środowiska przez dane. Możliwość wybrania opcji Plik lub Adres URL będzie wyszowana.
+   > Przesyłanie plików i adresów URL nie jest dostępne w chmurach, które nie zezwalają na opuszczenie środowiska przez dane. Możliwość wybrania pozycji Plik lub adres URL zostanie wyszarzone.
 
 ### <a name="notify-users-from-within-the-portal"></a>Powiadamianie użytkowników z poziomu portalu
 
-1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>, przejdź do strony **Przesyłanie w witrynie** e-mail **& Przesyłanie** \> **.** Aby przejść bezpośrednio do **strony Materiały**, użyj .<https://security.microsoft.com/reportsubmission>
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Przesłane** w witrynie Email & collaboration **Submissions (Przesyłanie** **w ramach współpracy** \> & poczty e-mail). Aby przejść bezpośrednio do strony **Przesłane** , użyj polecenia <https://security.microsoft.com/reportsubmission>.
 
-2. Na stronie **Materiały wybierz** kartę Użytkownik zgłosił **wiadomości** , a następnie wybierz wiadomość, którą chcesz oznaczyć i powiadomić.
+2. Na stronie **Przesłane** wybierz kartę **Komunikaty zgłaszane przez użytkownika** , a następnie wybierz komunikat, który chcesz oznaczyć i powiadomić.
 
-3. Wybierz menu **rozwijane Oznacz jako i powiadom** , a następnie **wybierz pozycję** \> Nie znaleziono zagrożeń **wyłudzających informacje** lub **Wiadomości-śmieci**.
+3. Wybierz listę rozwijaną **Oznacz jako i powiadom** , a następnie wybierz pozycję **Nie znaleziono** \> zagrożeń **wyłudzających informacje** lub **wiadomości-śmieci**.
 
-   :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="Strona Przesyłanie" lightbox="../../media/unified-submission-user-reported-message.png":::
+   :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="Strona Przesłane" lightbox="../../media/unified-submission-user-reported-message.png":::
 
-Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny. Powiadomienie e-mail jest wysyłane automatycznie z portalu do użytkownika, który zgłosił wiadomość.
+Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywie ujemna. Powiadomienie e-mail jest wysyłane automatycznie z poziomu portalu do użytkownika, który zgłosił wiadomość.
 
-### <a name="submit-a-questionable-email-to-microsoft"></a>Przesyłanie pytanie do firmy Microsoft w wiadomości e-mail
+### <a name="submit-a-questionable-email-to-microsoft"></a>Przesyłanie wątpliwej wiadomości e-mail do firmy Microsoft
 
-1. W polu **Wybierz typ przesyłania** sprawdź, czy na liście  rozwijanej wybrano pozycję Poczta e-mail.
+1. W polu **Wybierz typ przesyłania** sprawdź, czy na liście rozwijanej **wybrano pozycję Poczta e-mail** .
 
-2. W sekcji **Dodawanie identyfikatora wiadomości sieciowej lub przekazywanie pliku poczty e-mail** użyj jednej z następujących opcji:
-   - Dodawanie identyfikatora wiadomości sieciowej poczty e-mail **: Jest** to wartość GUID, która jest dostępna w nagłówku **identyfikatora X-MS-Exchange-Organization-Network-Message-Id** w wiadomości lub w nagłówku **identyfikatora X-MS-Office365-Filtering-Correlation-Id** w wiadomościach poddanych kwarantannie.
-   - **Upload plik poczty e-mail (msg lub eml)**: Kliknij **pozycję Przeglądaj pliki**. W otwartym oknie dialogowym znajdź i zaznacz plik eml lub msg, a następnie kliknij przycisk **Otwórz**.
+2. W sekcji **Dodawanie identyfikatora komunikatu sieciowego lub przekazywanie pliku wiadomości e-mail** użyj jednej z następujących opcji:
+   - **Dodaj identyfikator wiadomości sieciowej poczty e-mail**: jest to wartość identyfikatora GUID dostępna w nagłówku **X-MS-Exchange-Organization-Network-Message-Id** w wiadomości lub w nagłówku **X-MS-Office365-Filtering-Correlation-Id** w komunikatach poddanych kwarantannie.
+   - **Upload pliku e-mail (msg lub .eml)**: kliknij przycisk **Przeglądaj pliki**. W otwartym oknie dialogowym znajdź i wybierz plik .eml lub msg, a następnie kliknij przycisk **Otwórz**.
 
-3. W **polu Wybierz adresata** , który miał problem, określ adresata, dla kogo chcesz uruchomić sprawdzanie zasad. Sprawdzanie zasad określa, czy wiadomość e-mail nie jest skanowana ze względu na zasady użytkowników lub organizacji.
+3. W polu **Wybierz adresata, który miał problem** , określ adresata, dla któremu chcesz uruchomić sprawdzanie zasad. Sprawdzanie zasad określi, czy wiadomość e-mail pominąła skanowanie z powodu zasad użytkownika lub organizacji.
 
-4. W **sekcji Wybierz przyczynę przesyłania do firmy Microsoft** wybierz jedną z następujących opcji:
+4. W sekcji **Wybieranie przyczyny przesłania do firmy Microsoft** wybierz jedną z następujących opcji:
    - **Nie powinno być blokowane (wynik fałszywie dodatni)**
-   - Powinna zostać zablokowana (wynik fałszywie ujemny **)**:  W wyświetlonej sekcji wiadomość e-mail powinna zostać skategoryzowana jako sekcja, wybierz jedną z następujących wartości (jeśli nie masz pewności, z jak najlepszej oceny:
+   - **Powinna zostać zablokowana (fałszywie ujemna)**: W **wyświetlonej sekcji Wiadomość e-mail powinna zostać sklasyfikowana jako** jedna z następujących wartości (jeśli nie masz pewności, użyj najlepszej oceny):
      - **Phish**
-     - **Złośliwe oprogramowanie**
+     - **Złośliwego oprogramowania**
      - **Spam**
 
 5. Po zakończeniu kliknij pozycję **Prześlij**.
@@ -112,15 +111,15 @@ Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Wysyłanie podejrzanego adresu URL do firmy Microsoft
 
-1. W **polu Wybierz typ przesyłania** wybierz z listy rozwijanej pozycję **Adres URL** .
+1. W polu **Wybierz typ przesyłania** wybierz pozycję **Adres URL** z listy rozwijanej.
 
-2. W **wyświetlonym** polu Adres URL wprowadź pełny adres URL (na przykład `https://www.fabrikam.com/marketing.html`).
+2. W wyświetlonym polu **adresu URL** wprowadź pełny adres URL (na przykład `https://www.fabrikam.com/marketing.html`).
 
-3. W **sekcji Wybierz przyczynę przesyłania do firmy Microsoft** wybierz jedną z następujących opcji:
+3. W sekcji **Wybieranie przyczyny przesłania do firmy Microsoft** wybierz jedną z następujących opcji:
    - **Nie powinno być blokowane (wynik fałszywie dodatni)**
-   - Powinna zostać zablokowana (wynik fałszywie ujemny **)**: W wyświetlonej sekcji Ten adres **URL** powinien zostać skategoryzowany jako sekcja, która powinna być wyświetlana, wybierz jedną z następujących wartości (jeśli nie masz pewności, zachęć do tego z jak najlepszej oceny):
+   - **Powinna zostać zablokowana (fałszywie ujemna)**: W **wyświetlonej sekcji Ten adres URL powinien zostać sklasyfikowany jako** jedna z następujących wartości (jeśli nie masz pewności, użyj najlepszej oceny):
      - **Phish**
-     - **Złośliwe oprogramowanie**
+     - **Złośliwego oprogramowania**
 
 4. Po zakończeniu kliknij pozycję **Prześlij**.
 
@@ -129,15 +128,15 @@ Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Przesyłanie podejrzanego załącznika wiadomości e-mail do firmy Microsoft
 
-1. W **polu Wybierz typ przesyłania** **wybierz z listy** rozwijanej pozycję Załącznik wiadomości e-mail.
+1. W polu **Wybierz typ przesyłania** wybierz pozycję **Załącznik wiadomości e-mail** z listy rozwijanej.
 
-2. W **wyświetlonej sekcji** Plik kliknij pozycję **Przeglądaj pliki**. W otwartym oknie dialogowym znajdź i zaznacz plik, a następnie kliknij przycisk **Otwórz**.
+2. W wyświetlonej sekcji **Plik** kliknij pozycję **Przeglądaj pliki**. W otwartym oknie dialogowym znajdź i wybierz plik, a następnie kliknij przycisk **Otwórz**.
 
-3. W **sekcji Wybierz przyczynę przesyłania do firmy Microsoft** wybierz jedną z następujących opcji:
+3. W sekcji **Wybieranie przyczyny przesłania do firmy Microsoft** wybierz jedną z następujących opcji:
    - **Nie powinno być blokowane (wynik fałszywie dodatni)**
-   - Powinna zostać zablokowana (wynik fałszywie ujemny **)**:  W wyświetlonej sekcji Ten plik powinien zostać skategoryzowany jako sekcja, która powinna być widoczna, wybierz jedną z następujących wartości (jeśli nie masz pewności, z jak najlepszej oceny:
+   - **Powinna zostać zablokowana (fałszywie ujemna)**: W **wyświetlonej sekcji Ten plik powinien zostać sklasyfikowany jako** jedna z następujących wartości (jeśli nie masz pewności, użyj najlepszej oceny):
      - **Phish**
-     - **Złośliwe oprogramowanie**
+     - **Złośliwego oprogramowania**
 
 4. Po zakończeniu kliknij pozycję **Prześlij**.
 
@@ -145,47 +144,47 @@ Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny
     > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="Proces przesyłania nowego załącznika" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
-> Jeśli filtrowanie złośliwego oprogramowania zastąpiło załączniki wiadomości alertem o złośliwym Text.txt pliku, należy przesłać oryginalną wiadomość z kwarantanny zawierającej oryginalne załączniki. Aby uzyskać więcej informacji na temat kwarantanny i sposobu usuwania wiadomości z wynikami fałszywie dodatnimi złośliwego oprogramowania, zobacz Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako [administrator](manage-quarantined-messages-and-files.md).
+> Jeśli filtrowanie złośliwego oprogramowania zastąpiło załączniki wiadomości plikiem alertu o złośliwym oprogramowaniu Text.txt, należy przesłać oryginalny komunikat z kwarantanny zawierającej oryginalne załączniki. Aby uzyskać więcej informacji na temat kwarantanny i sposobu wydawania komunikatów ze złośliwym oprogramowaniem fałszywie dodatnim, zobacz [Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator](manage-quarantined-messages-and-files.md).
 
-## <a name="view-admin-submissions-to-microsoft"></a>Wyświetlanie przesyłania administratorów do firmy Microsoft
+## <a name="view-admin-submissions-to-microsoft"></a>Wyświetlanie przesyłania przez administratora do firmy Microsoft
 
-1. W portalu Microsoft 365 Defender pod stroną <https://security.microsoft.com>, przejdź do strony **Przesyłanie** w witrynie **Akcje & przesyłania** \> **.** Aby przejść bezpośrednio do **strony Materiały**, użyj .<https://security.microsoft.com/reportsubmission>
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Przesłane** w **akcji & przesłanych.** \> Aby przejść bezpośrednio do strony **Przesłane** , użyj polecenia <https://security.microsoft.com/reportsubmission>.
 
-2. Na stronie **Materiały sprawdź** , **czy jest** zaznaczona karta Załącznik wiadomości e-mail, **adresu URL** **lub wiadomości e-mail** .
+2. Na stronie **Przesłane** sprawdź, czy wybrano kartę **Wiadomości e-mail**, **Adres URL** lub **Załącznik wiadomości e-mail** .
 
-   - Pozycje można sortować, klikając dostępny nagłówek kolumny. Kliknij **pozycję Dostosuj kolumny** , aby wyświetlić maksymalnie siedem kolumn. Wartości domyślne są oznaczone gwiazdką (<sup>\*</sup>):
-     - **Nazwa przesłania**<sup>\*</sup>
-     - **Nadawca**<sup>\*</sup>
-     - **Adresat**
-     - **Data przesłana**<sup>\*</sup>
+   - Wpisy można sortować, klikając dostępny nagłówek kolumny. Kliknij **pozycję Dostosuj kolumny** , aby wyświetlić maksymalnie siedem kolumn. Wartości domyślne są oznaczone gwiazdką (<sup>\*</sup>):
+     - **Nazwa przesyłania**<sup>\*</sup>
+     - **Nadawcy**<sup>\*</sup>
+     - **Odbiorcy**
+     - **Data przesłania**<sup>\*</sup>
      - **Powód przesłania**<sup>\*</sup>
      - **Stan**<sup>\*</sup>
      - **Wynik**<sup>\*</sup>
-     - **Werdykt filtru**
-     - **Przyczyna dostarczenia/zablokowania**
+     - **Filtrowanie werdyktu**
+     - **Przyczyna dostarczania/blokowania**
      - **Identyfikator przesyłania**
-     - **Identyfikator komunikatu sieciowego/identyfikator obiektu**
+     - **Identyfikator komunikatu sieci/identyfikator obiektu**
      - **Kierunek**
      - **Adres IP nadawcy**
      - **Poziom zgodności zbiorczej (BCL)**
      - **Destination (Miejsce docelowe)**
      - **Akcja zasad**
      - **Przesłane przez**
-     - **Phish simulation**
+     - **Symulacja phish**
      - **Tagi**<sup>\*</sup>
      - **Zezwalaj**
 
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="Opcje kolumny Nowe dostosowywanie dla przesyłania administratorów" lightbox="../../media/admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="Opcje nowej kolumny Dostosowywanie dla przesyłania przez administratora" lightbox="../../media/admin-submission-customize-columns.png":::
 
-   - Aby filtrować pozycje, kliknij pozycję **Filtruj**. Dostępne filtry:
-     - **Data przesłana**: **Data rozpoczęcia** **i Data zakończenia**.
-     - **Identyfikator przesyłania**: wartość GUID przypisana do każdego przesłania.
-     - **Identyfikator wiadomości sieciowej**
-     - **Nadawca**
-     - **Adresat**
+   - Aby filtrować wpisy, kliknij pozycję **Filtruj**. Dostępne filtry to:
+     - **Przesłana data**: **data rozpoczęcia** i **data zakończenia**.
+     - **Identyfikator przesyłania**: wartość identyfikatora GUID przypisana do każdego przesłania.
+     - **Identyfikator komunikatu sieci**
+     - **Nadawcy**
+     - **Odbiorcy**
      - **Nazwa**
      - **Przesłane przez**
      - **Powód przesłania**
@@ -195,51 +194,51 @@ Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="Opcje nowego filtru dla przesyłania przez administratora" lightbox="../../media/admin-submission-filters.png":::
+     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="Opcje nowego filtru dla przesłanych przez administratorów" lightbox="../../media/admin-submission-filters.png":::
 
-   - Aby zgrupować pozycje, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
+   - Aby pogrupować wpisy, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
      - **Brak**
      - **Type**
-     - **Przyczyna**
+     - **Powodu**
      - **Stan**
      - **Result (Wynik)**
      - **Tagi**
 
-   - Aby wyeksportować pozycje, kliknij pozycję **Eksportuj**. W wyświetlonym oknie dialogowym zapisz .csv pliku.
+   - Aby wyeksportować wpisy, kliknij pozycję **Eksportuj**. W wyświetlonym oknie dialogowym zapisz plik .csv.
 
-### <a name="admin-submission-result-details"></a>Szczegóły wyniku przesłania przez administratora
+### <a name="admin-submission-result-details"></a>Szczegóły wyników przesyłania przez administratora
 
-Wiadomości przesłane w przesłanych przez administratorów są przeglądane i wyświetlane w wysuwanych szczegółach przesyłania wyników:
+Komunikaty przesyłane w przesłanych przez administratorów plikach są przeglądane, a wyniki wyświetlane w wysuwnym oknie wysuwnym szczegółów przesyłania:
 
 - Jeśli wystąpił błąd w uwierzytelnianiu wiadomości e-mail nadawcy w czasie dostarczania.
 - Informacje na temat wskazówek dotyczących zasad, które mogły wpłynąć na werdykt wiadomości lub go pominąć.
 - Bieżące wyniki detonacji, aby sprawdzić, czy adresy URL lub pliki zawarte w wiadomości były złośliwe.
-- Opinie graderów.
+- Opinie od równiarki.
 
-Jeśli wynik został znaleziony, wynik powinien być dostępny za kilka minut. Jeśli nie było problemu z uwierzytelnianiem lub dostarczaniem poczty e-mail, zastąpienie nie wpłynęło na to, może to potrwać nawet jeden dzień.
+Jeśli znaleziono przesłonięcia, wynik powinien być dostępny w ciągu kilku minut. Jeśli nie wystąpił problem podczas uwierzytelniania lub dostarczania wiadomości e-mail, przesłonięcie nie miało wpływu, opinie od równiarki mogą potrwać nawet jeden dzień.
 
 ## <a name="view-user-submissions-to-microsoft"></a>Wyświetlanie przesyłania użytkowników do firmy Microsoft
 
-Jeśli wdrożono dodatek Report [Message](enable-the-report-message-add-in.md) (Wiadomość raportu), dodatek Wyłudzanie informacji ([Report Phishing](enable-the-report-phish-add-in.md)) lub użytkownicy korzystają z wbudowanego raportowania w programie [Outlook w sieci Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), można sprawdzić, co raportują użytkownicy, na karcie  Komunikat zgłoszony przez użytkownika.
+Jeśli wdrożono [dodatek Komunikat raportu](enable-the-report-message-add-in.md), [dodatek wyłudzanie informacji o raportach](enable-the-report-phish-add-in.md) lub osoby korzystające z [wbudowanego raportowania w Outlook w sieci Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), możesz zobaczyć, co użytkownicy zgłaszają na karcie **Komunikat zgłoszony przez użytkownika**.
 
-1. W portalu Microsoft 365 Defender pod stroną <https://security.microsoft.com>, przejdź do strony **Przesyłanie** w witrynie **Akcje & przesyłania** \> **.** Aby przejść bezpośrednio do **strony Materiały**, użyj .<https://security.microsoft.com/reportsubmission>
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Przesłane** w **akcji & przesłanych.** \> Aby przejść bezpośrednio do strony **Przesłane** , użyj polecenia <https://security.microsoft.com/reportsubmission>.
 
-2. Na stronie **Materiały** wybierz kartę **Użytkownik zgłosił wiadomości** .
+2. Na stronie **Przesłane** wybierz kartę **Komunikaty zgłaszane przez użytkownika** .
 
-   - Pozycje można sortować, klikając dostępny nagłówek kolumny. Kliknij **pozycję Dostosuj kolumny** , aby wyświetlić opcje. Wartości domyślne są oznaczone gwiazdką (<sup>\*</sup>):
+   - Wpisy można sortować, klikając dostępny nagłówek kolumny. Kliknij **pozycję Dostosuj kolumny** , aby wyświetlić opcje. Wartości domyślne są oznaczone gwiazdką (<sup>\*</sup>):
 
      - **Temat wiadomości e-mail**<sup>\*</sup>
      - **Zgłoszone przez**<sup>\*</sup>
-     - **Data zgłoszonej daty**<sup>\*</sup>
-     - **Nadawca**<sup>\*</sup>
+     - **Data zgłoszenia**<sup>\*</sup>
+     - **Nadawcy**<sup>\*</sup>
      - **Zgłoszona przyczyna**<sup>\*</sup>
      - **Wynik**<sup>\*</sup>
-     - **Identyfikator zgłoszony wiadomości**
-     - **Identyfikator wiadomości sieciowej**
+     - **Identyfikator zgłoszonych komunikatów**
+     - **Identyfikator komunikatu sieci**
      - **Adres IP nadawcy**
-     - **Zgłoszone od**
-     - **Phish simulation**
-     - **Konwertowane na przesyłanie administratora**
+     - **Raportowane z**
+     - **Symulacja phish**
+     - **Przekonwertowane na przesyłanie przez administratora**
      - **Tagi**<sup>\*</sup>
      - **Oznaczone jako**<sup>\*</sup>
      - **Oznaczone przez**
@@ -247,55 +246,55 @@ Jeśli wdrożono dodatek Report [Message](enable-the-report-message-add-in.md) (
 
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
-   - Aby filtrować pozycje, kliknij pozycję **Filtruj**. Dostępne filtry:
-     - **Data zgłoszone**: **Data rozpoczęcia i** **Data zakończenia**.
+   - Aby filtrować wpisy, kliknij pozycję **Filtruj**. Dostępne filtry to:
+     - **Data zgłoszenia**: **data rozpoczęcia** i **data zakończenia**.
      - **Zgłoszone przez**
      - **Temat wiadomości e-mail**
-     - **Identyfikator zgłoszony wiadomości**
-     - **Identyfikator wiadomości sieciowej**
-     - **Nadawca**
-     - **Zgłoszono przyczynę**: **Wiadomość niebędąka** śmieciem, **wiadomością phish** lub **spamem**
-     - **Zgłoszone przez**: **dodatek firmy Microsoft** lub dodatek **innej firmy**
-     - **Phish simulation**: **Yes** or **No**
-     - **Konwertowane na przesyłanie administratora**: **Tak** lub **Nie**
+     - **Identyfikator zgłoszonych komunikatów**
+     - **Identyfikator komunikatu sieci**
+     - **Nadawcy**
+     - **Zgłoszony powód**: **Nie śmieci**, **Phish** lub **Spam**
+     - **Zgłoszone z**: **dodatek firmy Microsoft** lub **dodatek innej firmy**
+     - **Symulacja phish**: **Tak** lub **Nie**
+     - **Przekonwertowane na przesyłanie przez administratora**: **Tak** lub **Nie**
      - **Tagi**
 
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="Opcje nowego filtru dla przesyłania użytkowników" lightbox="../../media/admin-submission-reported-messages.png":::
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="Opcje nowego filtru dla przesyłanych przez użytkowników" lightbox="../../media/admin-submission-reported-messages.png":::
 
-   - Aby zgrupować pozycje, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
+   - Aby pogrupować wpisy, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
      - **Brak**
-     - **Przyczyna**
-     - **Nadawca**
+     - **Powodu**
+     - **Nadawcy**
      - **Zgłoszone przez**
      - **Result (Wynik)**
-     - **Zgłoszone od**
-     - **Phish simulation**
-     - **Konwertowane na przesyłanie administratora**
+     - **Raportowane z**
+     - **Symulacja phish**
+     - **Przekonwertowane na przesyłanie przez administratora**
      - **Tagi**
-   
-   - Aby wyeksportować pozycje, kliknij pozycję **Eksportuj**. W wyświetlonym oknie dialogowym zapisz .csv pliku.
+
+   - Aby wyeksportować wpisy, kliknij pozycję **Eksportuj**. W wyświetlonym oknie dialogowym zapisz plik .csv.
 
 > [!NOTE]
-> Jeśli organizacje są skonfigurowane do wysyłania wiadomości zgłoszonych przez użytkowników tylko do niestandardowej skrzynki pocztowej, zgłoszone wiadomości nie zostaną wysłane ponownie, a wyniki  w raportach użytkowników będą zawsze puste.
+> Jeśli organizacje są skonfigurowane do wysyłania wiadomości zgłoszonych przez użytkownika tylko do niestandardowej skrzynki pocztowej, zgłoszone wiadomości nie zostaną wysłane do ponownego przeskanowania, a wyniki w **wiadomościach zgłoszonych przez użytkownika** będą zawsze puste.
 
-### <a name="undo-user-submissions"></a>Cofanie przesyłania użytkowników
+### <a name="undo-user-submissions"></a>Cofanie przesyłania przez użytkownika
 
-Gdy użytkownik przesyła podejrzaną wiadomość e-mail do niestandardowej skrzynki pocztowej, użytkownik i administrator nie mogą cofnąć przesłania. Jeśli użytkownik chce odzyskać wiadomość e-mail, będzie ona dostępna do odzyskania w folderach Elementy usunięte lub Wiadomości-śmieci.
+Gdy użytkownik prześle podejrzaną wiadomość e-mail do niestandardowej skrzynki pocztowej, użytkownik i administrator nie będą mogli cofnąć przesyłania. Jeśli użytkownik chce odzyskać wiadomość e-mail, będzie on dostępny do odzyskania w folderach Elementy usunięte lub Wiadomości-śmieci.
 
-### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Konwertowanie użytkownika zgłosił wiadomości z niestandardowej skrzynki pocztowej na przesyłanie administratora 
+### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Konwertowanie wiadomości zgłoszonych przez użytkownika z niestandardowej skrzynki pocztowej na przesyłanie przez administratora
 
-Jeśli skonfigurowano niestandardową skrzynkę pocztową w celu przechwycenia wiadomości zgłoszonych przez użytkowników bez wysyłania ich do firmy Microsoft, można znaleźć i wysłać określone wiadomości do firmy Microsoft w celu analizy.
+Jeśli niestandardowa skrzynka pocztowa została skonfigurowana do przechwytywania wiadomości zgłoszonych przez użytkowników bez wysyłania wiadomości do firmy Microsoft, możesz znaleźć i wysłać określone wiadomości do firmy Microsoft w celu analizy.
 
-Na karcie **Użytkownik zgłosił wiadomości** wybierz wiadomość z listy, kliknij pozycję Prześlij do firmy **Microsoft** w celu analizy, a następnie wybierz jedną z następujących wartości z listy rozwijanej:
+Na karcie **Komunikaty zgłaszane przez użytkownika** wybierz komunikat z listy, kliknij pozycję **Prześlij do firmy Microsoft do analizy**, a następnie wybierz jedną z następujących wartości z listy rozwijanej:
 
-- **Oczyszczanie raportu**
+- **Raport jest czysty**
 - **Zgłaszanie wyłudzania informacji**
 - **Zgłaszanie złośliwego oprogramowania**
 - **Zgłaszanie spamu**
-- **Wyzwalanie badania**
+- **Badanie wyzwalacza**
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="Opcje Nowe na przycisku Akcja" lightbox="../../media/admin-submission-main-action-button.png":::
+> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="Przycisk Nowe opcje na przycisku Akcja" lightbox="../../media/admin-submission-main-action-button.png":::

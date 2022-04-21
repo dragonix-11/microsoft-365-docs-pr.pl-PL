@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z usługi Veritas FX Połączenie w Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: 79d4dca6c71f6654db7294d55761275d8b758727
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 286d8894627e00b93f3e898bd28b9bb0d2593c17
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946731"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996311"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data"></a>Konfigurowanie łącznika do archiwizowania danych fx Połączenie
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy współpracy fx Połączenie do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Veritas udostępnia łącznik [fx Połączenie](https://globanet.com/fx-connect/), który jest skonfigurowany do przechwytywania elementów fx Połączenie i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość z fx Połączenie, takich jak transakcje, wiadomości i inne szczegóły z konta fx Połączenie organizacji, na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 
