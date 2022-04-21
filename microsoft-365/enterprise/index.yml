@@ -1,74 +1,80 @@
 ### YamlMime:Hub
 title: Dokumentacja i zasoby dotyczące platformy Microsoft 365 dla przedsiębiorstw
-summary: 'Najlepsze w swojej klasie aplikacje zwiększające produktywność dzięki inteligentnym usługom w chmurze, które zmieniają sposób pracy.'
+summary: Najlepsze w swojej klasie aplikacje zwiększające produktywność dzięki inteligentnym usługom w chmurze, które zmieniają sposób pracy.
 brand: m365
 metadata:
   title: Dokumentacja i zasoby dotyczące platformy Microsoft 365 dla przedsiębiorstw
-  description: 'Zapoznaj się z dokumentacją produktu i zasobami dostępnymi dla platformy Microsoft 365 dla przedsiębiorstw dla informatyków, pracowników zajmujących się informacjami i partnerów.'
+  description: Zapoznaj się z dokumentacją produktu i zasobami dostępnymi dla platformy Microsoft 365 dla przedsiębiorstw dla informatyków, pracowników zajmujących się informacjami i partnerów.
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
   ms.topic: hub-page
   ms.collection:
-    - M365-subscription-management
-    - Adm_TOC
+  - M365-subscription-management
+  - Adm_TOC
   author: robmazz
   ms.author: robmazz
   ms.date: 07/28/2020
+  ms.openlocfilehash: 4096920e940152fc75ed473b6ef9bc70cfd1171d
+  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.translationtype: HT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64937636"
 highlightedContent:
   items:
-    - title: Dowiedz się więcej o platformie Microsoft 365 dla przedsiębiorstw
-      itemType: get-started
-      url: microsoft-365-overview.md
-    - title: Przyspiesz wdrażanie za pomocą usługi FastTrack
-      itemType: quickstart
-      url: 'https://www.microsoft.com/fasttrack/microsoft-365'
-    - title: Szkolenie informatyków i administratorów
-      itemType: learn
-      url: /learn/m365/
+  - title: Dowiedz się więcej o platformie Microsoft 365 dla przedsiębiorstw
+    itemType: get-started
+    url: microsoft-365-overview.md
+  - title: Przyspiesz wdrażanie za pomocą usługi FastTrack
+    itemType: quickstart
+    url: https://www.microsoft.com/fasttrack/microsoft-365
+  - title: Szkolenie informatyków i administratorów
+    itemType: learn
+    url: /learn/m365/
 conceptualContent:
   title: Uzyskiwanie pomocy dotyczącej platformy Microsoft 365 dla przedsiębiorstw i innych zasobów
-  summary: 'Zapoznaj się ze wskazówkami, funkcjami i usługami dotyczącymi wdrażania platformy Microsoft 365 dla przedsiębiorstw.'
+  summary: Zapoznaj się ze wskazówkami, funkcjami i usługami dotyczącymi wdrażania platformy Microsoft 365 dla przedsiębiorstw.
   items:
-    - title: Wdrażanie kluczowych elementów
-      links:
-        - url: deploy-identity-solution-overview.md
-          itemType: how-to-guide
-          text: Infrastruktura tożsamości
-        - url: /windows/deployment/
-          itemType: get-started
-          text: System Windows10 dla firm
-        - url: /deployoffice/plan-microsoft-365-apps
-          itemType: deploy
-          text: Aplikacje usługi Microsoft 365 dla przedsiębiorstw
-        - url: /intune/fundamentals/planning-guide
-          itemType: deploy
-          text: Microsoft Intune
-    - title: Zarządzanie platformą Microsoft 365 dla przedsiębiorstw
-      links:
-        - url: /windows/deployment/update/
-          itemType: how-to-guide
-          text: System Windows10 dla firm
-        - url: /deployoffice/overview-update-channels
-          itemType: concept
-          text: Aplikacje usługi Microsoft 365 dla przedsiębiorstw
-        - url: /intune/apps/app-management
-          itemType: get-started
-          text: Aplikacje w usłudze Intune
-        - url: /office365/
-          itemType: get-started
-          text: Usługi platformy Microsoft 365
+  - title: Wdrażanie kluczowych elementów
+    links:
+    - url: deploy-identity-solution-overview.md
+      itemType: how-to-guide
+      text: Infrastruktura tożsamości
+    - url: /windows/deployment/
+      itemType: get-started
+      text: System Windows10 dla firm
+    - url: /deployoffice/plan-microsoft-365-apps
+      itemType: deploy
+      text: Aplikacje usługi Microsoft 365 dla przedsiębiorstw
+    - url: /intune/fundamentals/planning-guide
+      itemType: deploy
+      text: Microsoft Intune
+  - title: Zarządzanie platformą Microsoft 365 dla przedsiębiorstw
+    links:
+    - url: /windows/deployment/update/
+      itemType: how-to-guide
+      text: System Windows10 dla firm
+    - url: /deployoffice/overview-update-channels
+      itemType: concept
+      text: Aplikacje usługi Microsoft 365 dla przedsiębiorstw
+    - url: /intune/apps/app-management
+      itemType: get-started
+      text: Aplikacje w usłudze Intune
+    - url: /office365/
+      itemType: get-started
+      text: Usługi platformy Microsoft 365
 additionalContent:
   sections:
-    - title: Dodatkowe materiały
-      summary: Dowiedz się więcej o innych funkcjach i zasobach platformy Microsoft 365.
-      items:
-        - title: Zgodność platformy Microsoft 365
-          summary: 'Pomóż swojej organizacji zarządzać informacjami, chronić się przed ryzykiem i przestrzegać standardów prawnych lub przepisów.'
-          url: ../compliance/index.yml
-        - title: Zabezpieczenia platformy Microsoft 365
-          summary: 'Chroń swoją organizację na różnych obszarach ataków, korzystając z niezawodnych usług i rozwiązań dotyczących zabezpieczeń.'
-          url: ../security/index.yml
-        - title: Społeczność techniczna platformy Microsoft 365
-          summary: Łącz się i współpracuj z innymi osobami i ekspertami w ramach społeczności technicznej firmy Microsoft oraz udostępniaj najlepsze rozwiązania platformy Microsoft 365.
-          url: 'https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365'
+  - title: Dodatkowe materiały
+    summary: Dowiedz się więcej o innych funkcjach i zasobach platformy Microsoft 365.
+    items:
+    - title: Microsoft Purview
+      summary: Pomóż swojej organizacji zarządzać informacjami, chronić się przed ryzykiem i przestrzegać standardów prawnych lub przepisów.
+      url: ../compliance/index.yml
+    - title: Zabezpieczenia platformy Microsoft 365
+      summary: Chroń swoją organizację na różnych obszarach ataków, korzystając z niezawodnych usług i rozwiązań dotyczących zabezpieczeń.
+      url: ../security/index.yml
+    - title: Społeczność techniczna platformy Microsoft 365
+      summary: Łącz się i współpracuj z innymi osobami i ekspertami w ramach społeczności technicznej firmy Microsoft oraz udostępniaj najlepsze rozwiązania platformy Microsoft 365.
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

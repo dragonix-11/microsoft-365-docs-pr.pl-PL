@@ -11,12 +11,12 @@ metadata:
   author: v-zhifufeng
   ms.author: v-zhifufeng
   ms.date: 03/29/2021
-  ms.openlocfilehash: 186c9196fde901ee3898e88f9a6891f9c447a1d7
-  ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+  ms.openlocfilehash: e49550339e3be9dbd93844ee3a06c9bbe4cd0faa
+  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 02/17/2022
-  ms.locfileid: "62970588"
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64935966"
 landingContent:
 - title: Informacje o usłudze Test Base
   linkLists:
@@ -38,10 +38,10 @@ landingContent:
     links:
     - text: Utwórz konto usługi Test Base
       url: createAccount.md
+    - text: Testowanie aplikacji w usłudze Test Base
+      url: testoverview.md
     - text: Tworzenie pakietu
       url: buildpackage.md
-    - text: Przekazywanie pakietu
-      url: uploadApplication.md
     - text: Przekazywanie plików binarnych
       url: binaries.md
     - text: Ustawianie zadań testowych
