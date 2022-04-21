@@ -4,17 +4,17 @@
   href: whats-new.md
 - name: Wersje próbne zgodności
   items:
-    - name: Informacje o bezpłatnej wersji próbnej usługi Microsoft Purview
+    - name: Informacje na temat bezpłatnej wersji próbnej usługi Microsoft Purview
       href: compliance-easy-trials.md
-    - name: Informacje o bezpłatnej wersji próbnej ocen premium menedżera zgodności usługi Microsoft Purview
+    - name: Informacje na temat bezpłatnej wersji próbnej ocen premium menedżera zgodności usługi Microsoft Purview
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Wprowadzenie
   items:
     - name: Szybkie zadania umożliwiające rozpoczęcie pracy z usługą Microsoft Purview
       href: compliance-quick-tasks.md
-    - name: Katalog rozwiązań usługi Microsoft Purview
+    - name: Katalog rozwiązań platformy Microsoft Purview
       href: microsoft-365-solution-catalog.md
-    - name: Portal zgodności usługi Microsoft Purview
+    - name: Portal zgodności platformy Microsoft Purview
       href: microsoft-365-compliance-center.md
     - name: Uprawnienia w portalu zgodności usługi Microsoft Purview
       href: microsoft-365-compliance-center-permissions.md
@@ -306,7 +306,7 @@
       href: information-protection.md
     - name: Wdrażanie rozwiązania do ochrony informacji
       href: information-protection-solution.md
-    - name: Domyślne etykiety i zasady w celu ochrony danych
+    - name: Domyślne etykiety i zasady ochrony danych
       href: mip-easy-trials.md
     - name: Typy informacji poufnych
       items:
@@ -318,7 +318,7 @@
               href: sit-learn-about-exact-data-match-based-sits.md
             - name: Tworzenie odcisków cyfrowych dokumentów
               href: document-fingerprinting.md
-            - name: Dowiedz się więcej o nazwanych jednostkach (wersja zapoznawcza)
+            - name: Dowiedz się więcej o nazywanych obiektach
               href: named-entities-learn.md
         - name: Wprowadzenie do typu informacji poufnych
           items:
@@ -362,7 +362,7 @@
               href: sit-use-exact-data-manage-schema.md
             - name: Odśwież plik tabeli źródła informacji poufnych
               href: sit-use-exact-data-refresh-data.md
-            - name: Używaj nazwanych jednostek w zasadach ochrony przed utratą danych (wersja zapoznawcza)
+            - name: Używaj nazwanych obiektów w zasadach zapobiegania utracie danych
               href: named-entities-use.md
             - name: Typowe scenariusze użycia dla typów informacji poufnych
               href: sit-common-scenarios.md
@@ -445,11 +445,11 @@
               href: ome.md
             - name: Konfigurowanie szyfrowania wiadomości w usłudze Microsoft Purview
               href: set-up-new-message-encryption-capabilities.md
-            - name: Zdefiniuj reguły przepływu poczty e-mail do szyfrowania wiadomości e-mail
+            - name: Zdefiniuj reguły przepływu poczty e-mail do szyfrowania wiadomości
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: Dodaj markę organizacji do zaszyfrowanych wiadomości
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: Twórz zasady typu informacji poufnych dla organizacji przy użyciu szyfrowania wiadomości usługi Microsoft Purview
+            - name: Tworzenie zasad typu informacji poufnych dla organizacji przy użyciu szyfrowania wiadomości usługi Microsoft Purview
               href: ome-sensitive-info-types.md
             - name: Zarządzanie szyfrowaniem wiadomości
               href: manage-office-365-message-encryption.md
@@ -457,7 +457,7 @@
               href: ome-advanced-message-encryption.md
             - name: Ustaw datę wygaśnięcia wiadomości e-mail zaszyfrowanych przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
               href: ome-advanced-expiration.md
-            - name: Odwołaj wiadomość e-mail zaszyfrowaną przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
+            - name: Odwołaj wiadomości e-mail zaszyfrowane przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
               href: revoke-ome-encrypted-mail.md
             - name: Porównanie wersji szyfrowania wiadomości
               href: ome-version-comparison.md
@@ -525,7 +525,7 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 'Twórz, testuj i dostrajaj zasady DLP'
               href: create-test-tune-dlp-policy.md
-            - name: Wprowadzenie do lokalnego skanera ochrony przed utratą danych
+            - name: Rozpocznij pracę z lokalnym skanerem w celu zapobiegania utracie danych
               href: dlp-on-premises-scanner-get-started.md
             - name: Wprowadzenie do ochrony przed utratą danych punktu końcowego
               href: endpoint-dlp-getting-started.md
@@ -543,7 +543,7 @@
               href: dlp-microsoft-teams.md
             - name: Korzystanie z ochrony przed utratą danych punktu końcowego
               href: endpoint-dlp-using.md
-            - name: Korzystanie z lokalnego skanera ochrony przed utratą danych
+            - name: Korzystaj z lokalnego skanera w celu zapobiegania utracie danych
               href: dlp-on-premises-scanner-use.md
             - name: Korzystaj z powiadomień i porad dotyczących zasad w zasadach DLP
               href: use-notifications-and-policy-tips.md
@@ -569,7 +569,7 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Dokumentacja dotycząca porad dotyczących zasad ochrony przed utratą danych
               href: dlp-policy-tips-reference.md
-- name: Zarządzanie cyklem życia danych i rekordami
+- name: Zarządzanie rekordami i cyklem życia danych
   items:
     - name: Zarządzaj swoimi danymi
       href: manage-data-governance.md
@@ -742,9 +742,9 @@
               href: create-report-on-and-delete-multiple-content-searches.md
             - name: Klonowanie wyszukiwania
               href: clone-a-content-search.md
-    - name: Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa
+    - name: Zbieranie elektronicznych materiałów dowodowych (wersja standardowa)
       items:
-        - name: Zacznij od zbierania elektronicznych materiałów dowodowych w warstwie Standardowa
+        - name: Zacznij od zbierania elektronicznych materiałów dowodowych (wersja standardowa)
           href: get-started-core-ediscovery.md
         - name: Twórz archiwa zbierania elektronicznych materiałów dowodowych
           href: create-ediscovery-holds.md
@@ -754,7 +754,7 @@
           href: export-content-in-core-ediscovery.md
         - name: 'Zamykaj, ponowne otwieraj i usuwaj sprawy'
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych w warstwie Standardowa
+        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych (wersja standardowa)
           items:
             - name: Limity wyszukiwania zbierania elektronicznych materiałów dowodowych
               href: limits-for-content-search.md
@@ -800,19 +800,19 @@
               href: configure-edge-to-export-search-results.md
             - name: Wyszukaj działania zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji
               href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Zbieranie elektronicznych materiałów dowodowych w warstwie Premium
+    - name: Zbieranie elektronicznych materiałów dowodowych (wersja Premium)
       items:
         - name: Omówienie
           href: overview-ediscovery-20.md
-        - name: Konfigurowanie zbierania elektronicznych materiałów dowodowych w warstwie Premium
+        - name: Konfiguruj zbieranie elektronicznych materiałów dowodowych (wersja Premium)
           href: get-started-with-advanced-ediscovery.md
-        - name: Tworzenie spraw dotyczących zbierania elektronicznych materiałów dowodowych w warstwie Premium.
+        - name: Tworzenie spraw dotyczących zbierania elektronicznych materiałów dowodowych (wersja Premium)
           items:
             - name: Twórz sprawę i zarządzaj nią
               href: create-and-manage-advanced-ediscoveryv2-case.md
             - name: Użyj nowego formatu sprawy
               href: advanced-ediscovery-new-case-format.md
-        - name: Przepływ pracy zbierania elektronicznych materiałów dowodowych w warstwie Premium dla zawartości aplikacji Teams
+        - name: 'Przepływ pracy zbierania elektronicznych materiałów dowodowych (wersja Premium) dla zawartości aplikacji Teams '
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Zarządzaj opiekunami i źródłami danych bez opiekunów
           href: managing-custodians.md
@@ -933,9 +933,9 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: Konfiguruj ustawienia wyszukiwania i analizy
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych w warstwie Premium
+        - name: Dokumentacja zbierania elektronicznych materiałów dowodowych (wersja Premium)
           items:
-            - name: Limity zbierania elektronicznych materiałów dowodowych w warstwie Premium
+            - name: Limity zbierania elektronicznych materiałów dowodowych (wersja Premium)
               href: limits-ediscovery20.md
             - name: Obsługiwane typy plików
               href: supported-filetypes-ediscovery20.md
@@ -985,11 +985,11 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Zarządzaj zasadami inspekcji i alertów
   items:
-    - name: Rozwiązania inspekcji usługi Microsoft Purview
+    - name: Rozwiązania w zakresie inspekcji w usłudze Microsoft Purview
       href: auditing-solutions-overview.md
-    - name: Inspekcja w warstwie Standardowa
+    - name: Usługa Inspekcja (wersja Standardowa)
       items:
-        - name: Konfiguruj inspekcję w warstwie Standardowa
+        - name: Konfiguruj usługę Inspekcja (wersja Standardowa)
           href: set-up-basic-audit.md
         - name: Przeszukaj dziennik inspekcji
           href: search-the-audit-log-in-security-and-compliance.md
@@ -1013,15 +1013,15 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Interfejs API działań zarządzania usługi Office 365 — często zadawane pytania i rozwiązywanie problemów
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Inspekcja w warstwie Premium
+    - name: Inspekcja (wersja Premium)
       items:
-        - name: Przegląd inspekcji w warstwie Premium
+        - name: Omówienie usługi Inspekcja (wersja Premium)
           href: advanced-audit.md
-        - name: Konfigurowanie inspekcji w warstwie Premium
+        - name: Konfiguruj usługę Inspekcja (wersja Premium)
           href: set-up-advanced-audit.md
         - name: Zarządzanie zasadami przechowywania dzienników inspekcji
           href: audit-log-retention-policies.md
-        - name: Używaj inspekcji w warstwie Premium do badania kont z naruszonymi zabezpieczeniami
+        - name: Zbadaj konta z naruszonymi zabezpieczeniami przy użyciu usługi Inspekcja (wersja Premium)
           href: mailitemsaccessed-forensics-investigations.md
     - name: Inspekcja skrzynki pocztowej
       href: enable-mailbox-auditing.md
