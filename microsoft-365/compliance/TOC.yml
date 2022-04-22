@@ -42,7 +42,7 @@
           href: device-onboarding-script.md
         - name: Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)
           href: device-onboarding-vdi.md
-    - name: Dołączanie urządzeń z systemem macOS (wersja zapoznawcza)
+    - name: Dołączanie urządzeń z systemem macOS
       items:
         - name: Omówienie dołączania urządzeń z systemem macOS do platformy Microsoft 365
           href: device-onboarding-macos-overview.md
