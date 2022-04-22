@@ -1,5 +1,5 @@
 ---
-title: Podgląd i zarządzanie użytkownikami stwarzającymi zagrożenie
+title: Wyświetlanie ryzykownych użytkowników i zarządzanie nimi w Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak wyświetlać ryzykownych użytkowników i zarządzać nimi.
-ms.openlocfilehash: 0b7567404b909927a80b69184299baae131f8eb7
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: dad86fedeb27f13752bcd1c07efd0d51aa33cf2a
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824273"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022938"
 ---
-# <a name="view-and-manage-risky-users"></a>Podgląd i zarządzanie użytkownikami stwarzającymi zagrożenie
+# <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Wyświetlanie ryzykownych użytkowników i zarządzanie nimi w Microsoft 365 Lighthouse
 
 Firma Microsoft zbiera i analizuje biliony sygnałów logowania użytkowników każdego dnia. Te sygnały służą do tworzenia dobrych wzorców zachowania logowania użytkowników i identyfikowania potencjalnych ryzykownych prób logowania. Azure Active Directory (Azure AD) Identity Protection używa tych sygnałów do przeglądania prób logowania użytkowników i podejmowania działań w przypadku wystąpienia podejrzanych działań.
 
@@ -44,7 +44,7 @@ Aby użytkownicy mogli pojawić się na liście ryzykownych użytkowników, nale
 
 - Dzierżawa klienta musi mieć licencję Azure AD — wersja Premium dla każdego użytkownika. Aby uzyskać więcej informacji o tym, które licencje obsługują usługę Azure AD Identity Protection, zobacz [Co to jest usługa Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
 
-- Dzierżawa klienta musi być aktywna w Microsoft 365 Lighthouse. Aby ustalić, czy dzierżawa jest aktywna, zobacz [omówienie strony Microsoft 365 Lighthouse Dzierżawy](m365-lighthouse-tenant-list-overview.md).
+- Dzierżawa klienta musi być aktywna w Microsoft 365 Lighthouse. Aby ustalić, czy dzierżawa jest aktywna, zobacz [Omówienie strony Windows 365 (komputery w chmurze) w Microsoft 365 Lighthouse](m365-lighthouse-tenant-list-overview.md).
 
 ## <a name="review-detected-risks-and-take-action"></a>Przejrzyj wykryte zagrożenia i podejmij działania
 

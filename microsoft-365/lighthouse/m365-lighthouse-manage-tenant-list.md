@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie listą dzierżaw
+title: Zarządzanie listą dzierżaw w Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak zarządzać listą dzierżaw.
-ms.openlocfilehash: 2f9d38bad24d20c53a1bafe44b1b831369957b71
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: b4bffcfd5b8962253e68938a956949ca8470f818
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824383"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022432"
 ---
-# <a name="manage-your-tenant-list"></a>Zarządzanie listą dzierżaw
+# <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Zarządzanie listą dzierżaw w Microsoft 365 Lighthouse
 
 Aby ułatwić zarządzanie listą dzierżaw w Microsoft 365 Lighthouse, możesz zastosować tagi niestandardowe do dzierżaw. Te tagi mogą służyć do organizowania dzierżaw, a także mogą ułatwić filtrowanie istniejących widoków i szczegółowych informacji dostępnych dla odpowiednich zestawów dzierżaw. Tagami można zarządzać na stronie Dzierżawy. Po utworzeniu i przypisaniu można filtrować dane na stronach Dzierżawy, Użytkownicy, Urządzenia, Zarządzanie zagrożeniami i Windows 365 na podstawie tagu.
 
@@ -106,4 +106,4 @@ Po utworzeniu i przypisaniu tagów można ich użyć do filtrowania dzierżaw. P
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Tworzenie konta w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artykuł) [Microsoft 365 Lighthouse Omówienie strony zgodności urządzeń](m365-lighthouse-device-compliance-page-overview.md) (artykuł) [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)
+[Tworzenie konta w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artykuł) [Omówienie strony Zgodność urządzeń w Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (artykuł) [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)

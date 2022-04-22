@@ -1,5 +1,5 @@
 ---
-title: Raportowanie informacji dotyczących usługi Microsoft Bookings
+title: Wyświetlanie informacji o kalendarzu Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Dowiedz się, jak można wyświetlić 4-miesięczny widok działania Bookings
-ms.openlocfilehash: 191194d112fe231c1a2f64245d33850ecb1266c0
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 8f6ddcdc7320013698b1ba9f0ad2f5b1cd1e2e22
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714312"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023728"
 ---
 # <a name="reporting-info-for-bookings"></a>Informacje dotyczące raportowania dla Bookings
 

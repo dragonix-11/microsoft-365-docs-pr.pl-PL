@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie kondycji usługi dzierżawy
+title: Wyświetlanie kondycji usługi dzierżawy w Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak wyświetlać kondycję usługi dzierżawy.
-ms.openlocfilehash: 5c15e004108606ce00a90e0fa3d675d00806b430
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: c5cfed4449fbdbb6cb63bc80dfd8e23ca4d5c4bb
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822721"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023618"
 ---
-# <a name="view-tenant-service-health"></a>Wyświetlanie kondycji usługi dzierżawy
+# <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Wyświetlanie kondycji usługi dzierżawy w Microsoft 365 Lighthouse
 
 Kondycję usługi można wyświetlić dla dzierżaw zarządzanych w Microsoft 365 Lighthouse. Kondycja usługi obejmuje zdarzenia i porady dotyczące kilku usług, w tym usług w chmurze Microsoft Intune, Azure Active Directory (Azure AD) i zarządzania urządzeniami przenośnymi (MDM). Możesz również zobaczyć, ilu dzierżaw zarządzanych dotyczy zdarzenia. Jeśli na przykład w jednej z dzierżaw wystąpią problemy, możesz sprawdzić stronę Kondycja usługi, aby ustalić, czy jest to znany problem z rozwiązaniem w toku, czy też ostatnia zmiana może mieć na nie wpływ. Może to zaoszczędzić czas na rozwiązywaniu problemów i zmniejsz liczbę wywołań pomocy technicznej.
 

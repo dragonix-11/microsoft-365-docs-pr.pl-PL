@@ -1,5 +1,5 @@
 ---
-title: Resetowanie hasła użytkownika
+title: Resetowanie hasła użytkownika w Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,57 +15,57 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: W przypadku dostawców usług zarządzanych (MSP) korzystających z usługi Microsoft 365 Lighthouse dowiedz się, jak zresetować hasło dla jednego użytkownika lub wielu ryzykownych użytkowników w różnych dzierżawach.
-ms.openlocfilehash: 5217db990816b8a1ec6ed927f8f9e05827cc215b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak zresetować hasło dla jednego użytkownika lub wielu ryzykownych użytkowników w różnych dzierżawach.
+ms.openlocfilehash: 2dd0e5d5f11f0086197db7cc472917c6bfb54aee
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311553"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022841"
 ---
-# <a name="reset-a-user-password"></a>Resetowanie hasła użytkownika
+# <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Resetowanie hasła użytkownika w Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse umożliwia zmianę lub zresetowanie haseł użytkowników. Hasło można zresetować dla jednego użytkownika lub wielu ryzykownych użytkowników z różnych dzierżaw.
+Microsoft 365 Lighthouse umożliwia zmianę lub zresetowanie haseł użytkowników. Możesz zresetować hasło dla jednego użytkownika lub wielu ryzykownych użytkowników w różnych dzierżawach.
 
-## <a name="reset-a-password-for-a-user"></a>Resetowanie hasła użytkownika
+## <a name="reset-a-password-for-a-user"></a>Resetowanie hasła dla użytkownika
 
-1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Użytkownicy**.
+1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Użytkownicy**.
 
-2. Wybierz **kartę Wyszukaj użytkowników** .
+2. Wybierz kartę **Wyszukaj użytkowników** .
 
 3. W polu wyszukiwania wprowadź nazwę użytkownika.
 
-4. Wybierz użytkownika z listy wyników wyszukiwania.
+4. Z listy wyników wyszukiwania wybierz użytkownika.
 
 5. W okienku szczegółów użytkownika wybierz pozycję **Resetuj hasło**.
 
-6. W okienku Resetowanie hasła wybierz **pozycję Automatyczniegeneruj hasło** lub **Pozwól mi utworzyć hasło**.
+6. W okienku Resetowanie hasła wybierz **pozycję Autogeneruj hasło** lub **Pozwól mi utworzyć hasło**.
 
-    - Jeśli utworzysz hasło, wprowadź je.
+    - Jeśli zdecydujesz się utworzyć hasło, wprowadź hasło.
 
-    - Jeśli chcesz, aby użytkownik zmienił hasło po pierwszym zalogowaniu się, zaznacz to pole wyboru.
+    - Jeśli chcesz, aby użytkownik zmienił swoje hasło po pierwszym logowaniu, zaznacz pole wyboru.
 
-7. Wybierz **pozycję Zresetuj hasło**.
+7. Wybierz pozycję **Resetuj hasło**.
 
-## <a name="reset-a-password-for-a-risky-user"></a>Resetowanie hasła dla ryzykownych użytkowników
+## <a name="reset-a-password-for-a-risky-user"></a>Resetowanie hasła dla ryzykownej użytkownika
 
-1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Użytkownicy**.
+1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Użytkownicy**.
 
-2. Wybierz **kartę Ryzykowni** użytkownicy.
+2. Wybierz kartę **Ryzykowni użytkownicy** .
 
-3. Wybierz z listy ryzykowny użytkownik.
+3. Wybierz z listy ryzykownego użytkownika.
 
-4. Wybierz **pozycję Zresetuj hasło**.
+4. Wybierz pozycję **Resetuj hasło**.
 
-5. W okienku Resetowanie hasła wybierz **pozycję Automatyczniegeneruj hasło** lub **Pozwól mi utworzyć hasło**.
+5. W okienku Resetowanie hasła wybierz **pozycję Autogeneruj hasło** lub **Pozwól mi utworzyć hasło**.
 
-   - Jeśli utworzysz hasło, wprowadź je.
+   - Jeśli zdecydujesz się utworzyć hasło, wprowadź hasło.
 
-   - Jeśli chcesz, aby użytkownik zmienił hasło po pierwszym zalogowaniu się, zaznacz to pole wyboru.
+   - Jeśli chcesz, aby użytkownik zmienił swoje hasło po pierwszym logowaniu, zaznacz pole wyboru.
 
-6. Wybierz **pozycję Zresetuj hasło**.
+6. Wybierz pozycję **Resetuj hasło**.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Zarządzanie Microsoft 365 użytkownikami](../enterprise/manage-microsoft-365-accounts.md) (artykuł)\
-[Blokowanie logowania użytkownika](m365-lighthouse-block-user-signin.md) (artykuł)
+[Zarządzanie kontami użytkowników Microsoft 365](../enterprise/manage-microsoft-365-accounts.md) (artykuł)\
+[Blokuj logowanie użytkownika Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md) (artykuł)

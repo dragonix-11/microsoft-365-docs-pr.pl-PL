@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Zapoznaj się z omówieniem Microsoft 365 Centrum komunikatów i jego roli w śledzeniu nowych i zmienionych funkcji oraz innych ważnych ogłoszeń.
-ms.openlocfilehash: 6fabb66407eb21dc97880eaf2532b89ce02f9281
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2d2f76d401e68fb7494cd74b169bcfe6cd6e6758
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935286"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022916"
 ---
 # <a name="message-center"></a>Centrum wiadomości
 
@@ -270,7 +270,7 @@ Po otwarciu komunikatu w okienku odczytu możesz użyć strzałek **w górę** i
 
 W centrum komunikatów Microsoft 365 pojawia się wiele praktycznych informacji o zmianach w usługach Microsoft 365. Śledzenie zmian, które wymagają wykonania zadań, kiedy i przez kogo oraz śledzić poszczególne zadania do ukończenia, może być trudne. Możesz również zanotować coś i oznaczyć go do sprawdzenia później. Możesz to zrobić i nie tylko podczas synchronizowania komunikatów z Centrum administracyjne platformy Microsoft 365 do Microsoft Planner. Aby uzyskać więcej informacji, zobacz [Śledzenie zadań centrum komunikatów w programie Planner](/office365/planner/track-message-center-tasks-planner).
 
-Aby zapoznać się z omówieniem centrum komunikatów, zobacz [Centrum komunikatów w Microsoft 365](message-center.md). Aby dowiedzieć się, jak ustawić preferencje językowe w celu włączenia tłumaczenia maszynowego dla wpisów w Centrum komunikatów, zobacz [Tłumaczenie języka dla wpisów w centrum wiadomości](language-translation-for-message-center-posts.md). Jeśli chcesz zaprogramować alternatywny sposób uzyskiwania informacji o kondycji usługi w czasie rzeczywistym i komunikacji centrum komunikatów, zapoznaj się z tematem [Praca z interfejsem API komunikacji usług w usłudze Microsoft Graph](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta).
+Aby zapoznać się z omówieniem centrum komunikatów, zobacz [Centrum komunikatów w Microsoft 365](message-center.md). Aby dowiedzieć się, jak ustawić preferencje językowe w celu włączenia tłumaczenia maszynowego dla wpisów w Centrum komunikatów, zobacz [Tłumaczenie języka dla wpisów w centrum wiadomości](language-translation-for-message-center-posts.md). Jeśli chcesz zaprogramować alternatywny sposób uzyskiwania informacji o kondycji usługi w czasie rzeczywistym i komunikacji centrum komunikatów, zobacz [Praca z interfejsem API komunikacji usług w usłudze Microsoft Graph](/graph/api/resources/service-communications-api-overview).
 
 ## <a name="unsubscribe-from-message-center-emails"></a>Anulowanie subskrypcji w wiadomościach e-mail centrum wiadomości
 

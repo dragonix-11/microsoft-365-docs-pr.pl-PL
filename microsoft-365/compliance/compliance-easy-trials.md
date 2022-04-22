@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej na temat wersji próbnej rozwiązań Microsoft Purview i sposobu tworzenia konta.
-ms.openlocfilehash: a019ac3a2e16dfd6ae83ba1564f0031f77757b62
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ed7848a12483062c2873f4735ecb2188cad373a1
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971996"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023684"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Informacje o wersji próbnej rozwiązań Microsoft Purview
 
@@ -70,7 +70,7 @@ Skorzystaj z naszego [podręcznika wersji próbnej](compliance-easy-trials-compl
 
 #### <a name="finding-support"></a>Znajdowanie pomocy technicznej
 
-Organizacje mogą używać FastTrack do obsługi wdrażania w wersji próbnej, jeśli dzierżawa ma co najmniej 150 licencji. Uzyskaj więcej [informacji na temat FastTrack](https://docs.microsoft.com/fasttrack/introduction).
+Organizacje mogą używać FastTrack do obsługi wdrażania w wersji próbnej, jeśli dzierżawa ma co najmniej 150 licencji. Uzyskaj więcej [informacji na temat FastTrack](/fasttrack/introduction).
 
 #### <a name="extending-the-trial"></a>Rozszerzanie wersji próbnej
 
@@ -98,6 +98,10 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
   Program Microsoft Purview Compliance Manager może pomóc w całej procesie zapewniania zgodności, od tworzenia spisu zagrożeń związanych z ochroną danych po zarządzanie złożonością wdrażania mechanizmów kontroli, aktualizowanie przepisów i certyfikatów oraz raportowanie do audytorów. Dowiedz się więcej o [Menedżerze zgodności](compliance-manager.md)
 
+- **Zarządzanie cyklem życia danych**
+
+  Automatyzuj pokrycie przechowywania przy użyciu zakresów zasad adaptacyjnych. Ta funkcja umożliwia dynamiczne stosowanie zasad przechowywania dla określonych użytkowników, grup lub witryn. Te zasady są automatycznie aktualizowane, gdy zmiany wystąpią w organizacji. Ponadto zasady korzystające z zakresów adaptacyjnych nie podlegają limitom lokalizacji. Dowiedz się więcej o [zakresach zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention).
+
 - **Zapobieganie utracie danych**
 
   Usługa Microsoft Purview Data Loss Prevention (DLP) ułatwia kontrolowanie udostępniania i używania poufnych informacji na urządzeniach, aplikacjach i usługach. Dzięki próbom można rozszerzyć zakres zasad DLP na Teams i urządzenia, chronić jeszcze bardziej wrażliwą zawartość przy użyciu klasyfikatorów z możliwością trenowania i dokładnego dopasowania danych (EDM) oraz szybko rozpocząć pracę z zalecanymi zasadami DLP.  [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md)
@@ -106,10 +110,6 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
   - Istniejące zasady pozostaną włączone, chyba że zostaną wyłączone.
   - Jeśli edytujesz zasady DLP, które zawierają lokalizacje Teams lub Urządzenia po zakończeniu wersji próbnej, te lokalizacje zostaną usunięte z zasad.
-
-- **Zarządzanie cyklem życia danych**
-
-  Automatyzuj pokrycie przechowywania przy użyciu zakresów zasad adaptacyjnych. Ta funkcja umożliwia dynamiczne stosowanie zasad przechowywania dla określonych użytkowników, grup lub witryn. Te zasady są automatycznie aktualizowane, gdy zmiany wystąpią w organizacji. Ponadto zasady korzystające z zakresów adaptacyjnych nie podlegają limitom lokalizacji. Dowiedz się więcej o [zakresach zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
 - **Zbierania elektronicznych materiałów dowodowych**
 
@@ -144,6 +144,7 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 - **Zarządzanie rekordami**
 
   Zintegrowane funkcje zarządzania rekordami usługi Microsoft Purview umożliwiają:
+
   - Klasyfikowanie zawartości jako rekordu w celu uniemożliwienia użytkownikom edytowania zgodnie z wymaganiami przepisów, przepisów lub zasad organizacyjnych
   - Automatyczne stosowanie etykiet przechowywania do zawartości, gdy spełnia określone kryteria, przy użyciu zasad automatycznego stosowania etykiet
   - Użyj zasad zakresu adaptacyjnego, aby dynamicznie kierować zasady etykiet przechowywania do lokalizacji bez limitu liczby uwzględnionych lokalizacji

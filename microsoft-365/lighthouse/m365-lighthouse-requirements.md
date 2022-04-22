@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych uzyskaj listę wymagań dotyczących używania Microsoft 365 Lighthouse.
-ms.openlocfilehash: d5f04c39cbce9726fefa4b410be63cd5ee4e959d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 06d5c5bb0de76ecc8ba9fc28677f480f5f4d5561
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823679"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023266"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Wymagania dotyczące portalu Microsoft 365 Lighthouse
 
@@ -62,7 +62,7 @@ Program antywirusowy Microsoft Defender jest częścią systemu operacyjnego Win
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Konfigurowanie zabezpieczeń portalu Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) (artykuł)\
-[Microsoft 365 Lighthouse Omówienie strony zgodności urządzeń](m365-lighthouse-device-compliance-page-overview.md) (artykuł)\
-[omówienie strony Microsoft 365 Lighthouse Użytkownicy](m365-lighthouse-users-page-overview.md) (artykuł)\
-[omówienie strony zarządzania zagrożeniami Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (artykuł)\
+[Omówienie strony Zgodność urządzeń w Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (artykuł)\
+[Omówienie strony Użytkownicy w Microsoft 365 Lighthouse](m365-lighthouse-users-page-overview.md) (artykuł)\
+[Omówienie strony Zarządzanie zagrożeniami w Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (artykuł)\
 [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)

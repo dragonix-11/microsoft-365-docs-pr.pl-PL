@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie fałszywymi nadawcami przy użyciu zasad ochrony przed fałszerami i wglądu w fałsz
+title: Zarządzanie fałszywymi nadawcami przy użyciu zasad analizy fałszowania i fałszowania szczegółowych informacji wywiadowczych
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,145 +15,147 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Administratorzy mogą dowiedzieć się, jak używać zasad ochrony przed fałszerami oraz informacji o fałszerce, aby zezwalać na wykrytych sfałszowanych nadawców lub blokować je.
+description: Administratorzy mogą dowiedzieć się, jak używać zasad analizy fałszowania i analizy fałszowania, aby zezwalać na wykryte sfałszowane nadawcy lub blokować ich blokowanie.
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f433c93d9bba13822cf84ff8740f86d95cf2befe
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 59f52e7fe10030283601aad86a1aa49ed91255ab
+ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471346"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "65031828"
 ---
-# <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Zarządzanie fałszywymi nadawcami przy użyciu zasad ochrony przed fałszerami i informacjami o fałszerce w u usługi EOP
+# <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Zarządzanie sfałszowanymi nadawcami przy użyciu zasad analizy fałszowania i fałszowania analizy w ramach EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> W tym artykule opisano starsze, zamieniane środowisko zarządzania fałszywymi nadawcami (zasady ochrony przed  fałszerami na stronie Zasady ochrony przed **spamem**). Aby uzyskać więcej informacji o nowym środowisko (na karcie **Fałszowanie** na liście zezwalań/zablokowanych dzierżaw), zobacz Szczegółowe informacje dotyczące fałszowania [w u usługi EOP](learn-about-spoof-intelligence.md).
+> W tym artykule opisano starsze, sfałszowane środowisko zarządzania nadawcą, które jest zastępowane ( **zasady analizy podróbek** na stronie **Zasady ochrony przed spamem** ). Aby uzyskać więcej informacji o nowym środowisku (na karcie **Fałszowanie** na liście dozwolonych/zablokowanych dzierżawców), zobacz [Spoof intelligence insight in EOP (Fałszowanie analizy w ramach operacji EOP](learn-about-spoof-intelligence.md)).
 
-W Microsoft 365 z skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacjach usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online przychodzące wiadomości e-mail są automatycznie chronione przed fałszowaniem przez usługę EOP od października 2018 r. Firma EOP **korzysta z ochrony** przed wyłudzaniem informacji fałszerczych w organizacji. Aby uzyskać więcej informacji, zobacz [Ochrona przed fałszerko-fałszergami w uciekaniu poczty eOP](anti-spoofing-protection.md).
+W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych przychodzące wiadomości e-mail są automatycznie chronione przed fałszowaniem przez EOP od października 2018 r. W ramach ogólnej ochrony organizacji przed wyłudzaniem informacji EOP używa **analizy fałszowania** . Aby uzyskać więcej informacji, zobacz [Ochrona przed fałszowaniem w ramach EOP](anti-spoofing-protection.md).
 
-Domyślne (i **tylko) zasady** ochrony przed fałszerami pomagają zagwarantować, że sfałszowane wiadomości e-mail wysyłane przez legalnych nadawców nie będą na bieżąco z filtrami spamu usługi EOP, chroniąc użytkowników przed spamem i atakami wyłudzania informacji. Przy użyciu szczegółowych informacji o  analizie fałsz można także szybko ustalić, którzy nadawcy zewnętrzni na pewno wysyłają nieuwierzytane wiadomości e-mail (wiadomości z domen, które nie przechodzą testów SPF, DKIM lub DMARC).
+Domyślne (i jedyne) **zasady analizy podróbek** pomagają zagwarantować, że sfałszowana wiadomość e-mail wysłana przez legalnych nadawców nie zostanie wplątana w filtry spamu EOP, chroniąc jednocześnie użytkowników przed atakami spamu lub wyłudzania informacji. Możesz również użyć **analizy fałszowania,** aby szybko określić, którzy zewnętrzni nadawcy legalnie wysyłają Ci nieuwierzytelnioną wiadomość e-mail (wiadomości z domen, które nie przechodzą testów SPF, DKIM lub DMARC).
 
-Do zarządzania analizą spoof intelligence można używać w portalu usługi Microsoft 365 Defender lub w programie PowerShell (Exchange Online PowerShell dla organizacji Microsoft 365 ze skrzynkami pocztowymi w programie Exchange Online; autonomiczny program PowerShell usługi EOP dla organizacji bez Exchange Online  skrzynki pocztowe).
+Analizą fałszowania można zarządzać w portalu Microsoft 365 Defender lub w programie PowerShell (Exchange Online programu PowerShell dla organizacji Microsoft 365 ze skrzynkami pocztowymi w Exchange Online; autonomicznym programem PowerShell EOP dla organizacji bez Exchange Online  skrzynki pocztowe).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
-- Otwierasz portal Microsoft 365 Defender w witrynie <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Zasady ochrony przed spamem**, użyj .<https://security.microsoft.com/antispam>
+- Otwórz portal Microsoft 365 Defender pod adresem <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Zasady ochrony przed spamem** , użyj polecenia <https://security.microsoft.com/antispam>.
 
-- Aby nawiązać połączenie Exchange Online PowerShell, zobacz Połączenie[, Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell usługi EOP, [Połączenie się z Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell EOP, zobacz [Połączenie do Exchange Online Protection programu PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Aby można było wykonać procedury z tego artykułu Exchange Online w programie **Exchange Online** mieć przypisane uprawnienia:
-  - Aby zmodyfikować zasady ochrony przed fałszerami albo włączyć lub wyłączyć analizę fałszowania,  musisz być członkiem grup ról Zarządzanie organizacją lub **Administrator** zabezpieczeń.
-  - Aby mieć dostęp tylko do odczytu do zasad ochrony przed fałszerami, musisz być członkiem  grup ról Czytnik globalny lub **Czytnik** zabezpieczeń.
+- Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w **Exchange Online**:
+  - Aby zmodyfikować zasady analizy fałszowania lub włączyć lub wyłączyć analizę fałszowania, musisz być członkiem 
+    -   **Zarządzanie organizacją**
+    -   **Administrator zabezpieczeń** <u>i</u> **konfiguracja tylko do wyświetlania** lub **zarządzanie organizacją tylko do wyświetlania**.
+  - Aby uzyskać dostęp tylko do odczytu do zasad analizy fałszowania, musisz być członkiem grup ról **Czytelnik globalny** lub **Czytelnik zabezpieczeń** .
 
-  Aby uzyskać więcej informacji, zobacz [Uprawnienia w aplikacji Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Aby uzyskać więcej informacji, zobacz [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Uwagi**:
 
-  - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w aplikacji  Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
-  - Grupa **ról Zarządzanie organizacją tylko do** odczytu w [programie Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) również zapewnia dostęp tylko do odczytu tej funkcji.
+  - Dodanie użytkowników do odpowiedniej roli Azure Active Directory w Centrum administracyjne platformy Microsoft 365 daje użytkownikom wymagane uprawnienia _i_ uprawnienia do innych funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
+  - Grupa ról **Zarządzanie organizacją tylko do wyświetlania** w [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) zapewnia również dostęp tylko do odczytu do tej funkcji.
 
-- Opcje ochrony przed fałszerami są opisane w tece Ustawienia [fałszowania w zasadach ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md#spoof-settings).
+- Opcje analizy fałszowania zostały opisane w temacie [Spoof settings in anti-phishing policies (Ustawienia fałszowania w zasadach ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md#spoof-settings)).
 
-- W zasadach ochrony przed wyłudzaniem informacji można włączać, wyłączać i konfigurować ustawienia ochrony przed fałszerami. Aby uzyskać instrukcje dotyczące subskrypcji, zobacz jeden z następujących tematów:
+- Ustawienia analizy fałszowania można włączać, wyłączać i konfigurować w zasadach ochrony przed wyłudzaniem informacji. Aby uzyskać instrukcje oparte na subskrypcji, zobacz jeden z następujących tematów:
 
-  - [Skonfiguruj zasady ochrony przed wyłudzaniem informacji w u usługi EOP](configure-anti-phishing-policies-eop.md).
-  - [Skonfiguruj zasady ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
+  - [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w ramach EOP](configure-anti-phishing-policies-eop.md).
+  - [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
 
-- Aby uzyskać informacje o naszych zalecanych ustawieniach ochrony przed fałszerami, zobacz Ustawienia zasad ochrony przed wyłudzaniem informacji [eOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
+- Aby zapoznać się z naszymi zalecanymi ustawieniami analizy podróbek, zobacz [Ustawienia zasad ochrony przed wyłudzaniem informacji](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) w usłudze EOP.
 
-## <a name="manage-spoofed-senders"></a>Zarządzanie fałszywymi nadawcami
+## <a name="manage-spoofed-senders"></a>Zarządzanie sfałszowanymi nadawcami
 
-Istnieją dwa sposoby zezwalania na spoofed nadawców i blokowania ich:
+Istnieją dwa sposoby zezwalania na fałszowanie nadawców i blokowania ich:
 
-- [Korzystanie z zasad ochrony przed fałszerami](#manage-spoofed-senders-in-the-spoof-intelligence-policy)
-- [Korzystanie z szczegółowych informacji o analizie fałszowania](#manage-spoofed-senders-in-the-spoof-intelligence-insight)
+- [Korzystanie z zasad analizy fałszowania](#manage-spoofed-senders-in-the-spoof-intelligence-policy)
+- [Korzystanie ze szczegółowych informacji na temat fałszowania analizy](#manage-spoofed-senders-in-the-spoof-intelligence-insight)
 
-### <a name="manage-spoofed-senders-in-the-spoof-intelligence-policy"></a>Zarządzanie fałszywymi nadawcami w zasadach ochrony przed fałszerami
+### <a name="manage-spoofed-senders-in-the-spoof-intelligence-policy"></a>Zarządzanie fałszywymi nadawcami w zasadach analizy fałszowania
 
 > [!IMPORTANT]
-> W tym artykule opisano starsze, zamieniane środowisko zarządzania fałszywymi nadawcami (zasady ochrony przed  fałszerami na stronie Zasady ochrony przed **spamem**). Aby uzyskać więcej informacji o nowym środowisko (na karcie **Fałszowanie** na liście zezwalań/zablokowanych dzierżaw), zobacz Szczegółowe informacje dotyczące fałszowania [w u usługi EOP](learn-about-spoof-intelligence.md).
+> W tym artykule opisano starsze, sfałszowane środowisko zarządzania nadawcą, które jest zastępowane ( **zasady analizy podróbek** na stronie **Zasady ochrony przed spamem** ). Aby uzyskać więcej informacji o nowym środowisku (na karcie **Fałszowanie** na liście dozwolonych/zablokowanych dzierżawców), zobacz [Spoof intelligence insight in EOP (Fałszowanie analizy w ramach operacji EOP](learn-about-spoof-intelligence.md)).
 
-1. W portalu Microsoft 365 Defender <https://security.microsoft.com>pod adresem przejdź  \> do sekcji Zasady &-mail & **zasady** \>  \> zagrożeń dotyczące ochrony przed **spamem** **w sekcji Zasady**. Aby przejść bezpośrednio do strony **Zasady ochrony przed spamem**, użyj .<https://security.microsoft.com/antispam>
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do  obszaru Zasady współpracy \> **& poczty e-mail** **& Zasady dotyczące** \> **zagrożeń** \> **— zasady ochrony przed spamem** w sekcji Zasady. Aby przejść bezpośrednio do strony **Zasady ochrony przed spamem** , użyj polecenia <https://security.microsoft.com/antispam>.
 
-2. Na stronie **Zasady ochrony przed spamem** wybierz pozycję Zasady **ochrony przed fałszerami** , klikając nazwę.
+2. Na stronie **Zasady ochrony przed spamem** wybierz pozycję **Zasady analizy fałszowania** , klikając nazwę.
 
-   :::image type="content" source="../../media/anti-spam-settings-spoof-intelligence-policy.png" alt-text="Opcja wyboru zasad ochrony przed fałszerami" lightbox="../../media/anti-spam-settings-spoof-intelligence-policy.png":::
+   :::image type="content" source="../../media/anti-spam-settings-spoof-intelligence-policy.png" alt-text="Opcja wybrania zasad analizy fałszowania" lightbox="../../media/anti-spam-settings-spoof-intelligence-policy.png":::
 
-3. W **wyświetlonym wysuwanych zasadach** ochrony przed fałszerami zaznacz jedną z następujących opcji:
-   - **Pokaż nadawców, którzy już przejrzeli**
-   - **Przeglądanie nowych nadawców**
+3. Na wyświetlonym wysuwu **zasad analizy fałszowania** należy dokonać jednego z następujących wyborów:
+   - **Pokaż nadawców, których już przeglądałem**
+   - **Przejrzyj nowych nadawców**
 
-4. Na **wysuwanych oknach** Zdecyduj, czy ci nadawcy mogą fałszować wyświetlanych użytkowników wybierz jedną z następujących kart:
-   - **Twoje domeny**: Nadawcy podszywając się pod użytkowników w domenach wewnętrznych.
-   - **Domeny zewnętrzne**: Nadawcy podszywając się pod użytkowników w domenach zewnętrznych.
+4. Na wyświetlonym menu wysuwowym **Zdecyduj, czy ci nadawcy mogą podszywać się pod użytkowników** , wybierz jedną z następujących kart:
+   - **Twoje domeny**: nadawcy podszywają się pod użytkowników w domenach wewnętrznych.
+   - **Domeny zewnętrzne: nadawcy** podszywają się pod użytkowników w domenach zewnętrznych.
 
-5. Kliknij ikonę ![Rozwiń.](../../media/scc-expand-icon.png) w kolumnie **Może fałszować?** i zaznacz jedną z następujących opcji:
-   - **Tak**: zezwalaj na fałszywy nadawcę.
-   - **Nie**: oznacz wiadomość jako fałszywą. Akcja jest kontrolowana przez domyślne zasady ochrony przed wyłudzaniem informacji lub niestandardowe zasady ochrony przed wyłudzaniem informacji. Aby uzyskać więcej informacji, zobacz [Ustawienia fałszowania w zasadach ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md#spoof-settings).
+5. Kliknij ikonę ![Rozwiń.](../../media/scc-expand-icon.png) w kolumnie **Dozwolone fałszowanie?** i wykonaj jedną z następujących opcji:
+   - **Tak**: zezwalaj na sfałszowanego nadawcę.
+   - **Nie**: Oznacz wiadomość jako sfałszowaną. Akcja jest kontrolowana przez domyślne zasady ochrony przed wyłudzaniem informacji lub niestandardowe zasady ochrony przed wyłudzaniem informacji. Aby uzyskać więcej informacji, zobacz [Ustawienia fałszowania w zasadach ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md#spoof-settings).
 
-   :::image type="content" source="../../media/spoof-allow-block-flyout.png" alt-text="Wysuwają się informacje o fałszywych nadawcach oraz o tym, czy nadawca może fałszować" lightbox="../../media/spoof-allow-block-flyout.png":::
+   :::image type="content" source="../../media/spoof-allow-block-flyout.png" alt-text="Wysuwane fałszowanie nadawców i to, czy nadawca może podszywać się pod nadawcę" lightbox="../../media/spoof-allow-block-flyout.png":::
 
-   Kolumny i wartości, które widzisz, zostały objaśnione na poniższej liście:
+   Widoczne kolumny i wartości zostały wyjaśnione na następującej liście:
 
-   - **Fałszywy użytkownik**: sfałszowane konto użytkownika. Jest to nadawca wiadomości w adresie Od wyświetlanym `5322.From` w klientach poczty e-mail. Ważność tego adresu nie jest sprawdzana przez SPF.
-     - Wartość na **karcie Domeny** zawiera jeden adres e-mail lub, jeśli źródłowy serwer poczty e-mail fałszuje wiele kont użytkowników, zawiera **więcej niż jeden adres**.
-     - Na karcie **Domeny zewnętrzne** wartość zawiera domenę fałszywego użytkownika, a nie pełny adres e-mail.
+   - **Sfałszowany użytkownik**: konto użytkownika, które jest sfałszowane. Jest to nadawca wiadomości z adresu Od (znanego `5322.From` również jako adres), który jest wyświetlany w klientach poczty e-mail. Ważność tego adresu nie jest sprawdzana przez SPF.
+     - Na **karcie Twoje domeny** wartość zawiera pojedynczy adres e-mail lub jeśli źródłowy serwer poczty e-mail podszywa się pod wiele kont użytkowników, zawiera **więcej niż jeden**.
+     - Na **karcie Domeny zewnętrzne** wartość zawiera domenę sfałszowanego użytkownika, a nie pełny adres e-mail.
 
-   - **Infrastruktura wysyłania**: domena znaleziona w rekordzie wyszukiwania odwrotnego DNS (PTR) adresu IP źródłowego serwera poczty e-mail. Jeśli źródłowy adres IP nie ma rekordu PTR, \<source IP\>wówczas infrastruktura wysyłania jest identyfikowana jako /24 (na przykład 192.168.100.100/24).
+   - **Infrastruktura wysyłania**: domena znaleziona w odwrotnym wyszukiwaniu DNS (rekord PTR) adresu IP źródłowego serwera poczty e-mail. Jeśli źródłowy adres IP nie ma rekordu PTR, infrastruktura wysyłania jest identyfikowana jako \<source IP\>/24 (na przykład 192.168.100.100/24).
 
-     Aby uzyskać więcej informacji o źródłach wiadomości i nadawcach wiadomości, zobacz [Omówienie standardów wiadomości e-mail](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+     Aby uzyskać więcej informacji na temat źródeł wiadomości i nadawców wiadomości, zobacz [Omówienie standardów wiadomości e-mail](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-   - **# wiadomości**: liczba wiadomości z infrastruktury wysyłania do Organizacji, które zawierają określonego sfałszowane nadawcę lub nadawców w ciągu ostatnich 30 dni.
+   - **Liczba komunikatów**: liczba komunikatów z infrastruktury wysyłania do organizacji, które zawierają określonego sfałszowanego nadawcę lub nadawcę w ciągu ostatnich 30 dni.
 
-   - **# skarg użytkowników**: Skargi złożone przez użytkowników wobec tego nadawcy w ciągu ostatnich 30 dni. Skargi zazwyczaj mają postać przesyłania wiadomości-śmieci do firmy Microsoft.
+   - **Liczba skarg użytkowników**: Skargi złożone przez użytkowników wobec tego nadawcy w ciągu ostatnich 30 dni. Skargi są zwykle w formie przesyłania wiadomości-śmieci do firmy Microsoft.
 
    - **Wynik uwierzytelniania**: Jedna z następujących wartości:
-      - **Minął**: Nadawca przeszedł testy uwierzytelniania poczty e-mail (SPF lub DKIM).
-      - **Niepowodzenie**: Nadawca nie sprawdza uwierzytelniania nadawcy usługi EOP.
+      - **Przekazano**: nadawca przeszedł testy uwierzytelniania poczty e-mail nadawcy (SPF lub DKIM).
+      - **Niepowodzenie**: nadawca nie może sprawdzić uwierzytelniania nadawcy EOP.
       - **Nieznany**: wynik tych testów nie jest znany.
 
-   - **Ostatnio widziane**: Data ostatniej daty, kiedy wiadomość została odebrana z infrastruktury wysyłania zawierającej fałszywego użytkownika.
+   - **Ostatnio widziany**: ostatnia data odebrania komunikatu z infrastruktury wysyłania zawierającej sfałszowanego użytkownika.
 
-   - **Może fałszować?**: Wartości, które widzisz poniżej, to:
-     - **Tak**: Wiadomości z połączenia sfałszowanej infrastruktury użytkownika i infrastruktury wysyłania są dozwolone i nie są traktowane jako sfałszowane wiadomości e-mail.
-     - **Nie**: Wiadomości z połączenia spoofed użytkownika i infrastruktury wysyłania są oznaczane jako fałszywe. Akcja jest kontrolowana przez domyślne zasady ochrony przed wyłudzaniem informacji lub niestandardowe zasady ochrony przed wyłudzaniem informacji (wartość domyślna to Przenoszenie wiadomości **do folderu Wiadomości-śmieci**). Aby uzyskać więcej informacji, zobacz następną sekcję.
+   - **Dozwolone do fałszowania?**: Wyświetlane tutaj wartości to:
+     - **Tak**: Wiadomości z kombinacji sfałszowanego użytkownika i infrastruktury wysyłania są dozwolone i nie są traktowane jako sfałszowane wiadomości e-mail.
+     - **Nie**: Komunikaty z kombinacji sfałszowanego użytkownika i infrastruktury wysyłania są oznaczone jako sfałszowane. Akcja jest kontrolowana przez domyślne zasady ochrony przed wyłudzaniem informacji lub niestandardowe zasady ochrony przed wyłudzaniem informacji (wartość domyślna to **Przenieś wiadomość do folderu Wiadomości-śmieci**). Aby uzyskać więcej informacji, zobacz następną sekcję.
 
-     - **Niektórzy użytkownicy** (**tylko karta Domeny** ): Infrastruktura wysyłania fałszuje wielu użytkowników, gdzie niektórzy fałszywi użytkownicy są dozwolone, a inni nie. Użyj karty **Szczegóły** , aby wyświetlić określone adresy.
+     - **Niektórzy użytkownicy** (tylko karta **Twoje domeny** ): infrastruktura wysyłania podszywa się pod wielu użytkowników, w przypadku których niektórzy sfałszowali użytkownicy są dozwoloni, a inni nie. Użyj karty **Szczegółowe** , aby wyświetlić określone adresy.
 
 6. Po zakończeniu kliknij przycisk **Zapisz**.
 
-#### <a name="use-powershell-to-manage-spoofed-senders"></a>Zarządzanie fałszywymi nadawcami za pomocą programu PowerShell
+#### <a name="use-powershell-to-manage-spoofed-senders"></a>Zarządzanie fałszowaniem nadawców przy użyciu programu PowerShell
 
 > [!IMPORTANT]
-> W tym artykule opisano starsze, zamieniane środowisko zarządzania fałszywymi nadawcami (zasady ochrony przed  fałszerami na stronie Zasady ochrony przed **spamem**). Aby uzyskać więcej informacji o nowym środowisko (na karcie **Fałszowanie** na liście zezwalań/zablokowanych dzierżaw), zobacz Szczegółowe informacje dotyczące fałszowania [w u usługi EOP](learn-about-spoof-intelligence.md).
+> W tym artykule opisano starsze, sfałszowane środowisko zarządzania nadawcą, które jest zastępowane ( **zasady analizy podróbek** na stronie **Zasady ochrony przed spamem** ). Aby uzyskać więcej informacji o nowym środowisku (na karcie **Fałszowanie** na liście dozwolonych/zablokowanych dzierżawców), zobacz [Spoof intelligence insight in EOP (Fałszowanie analizy w ramach operacji EOP](learn-about-spoof-intelligence.md)).
 
-Aby wyświetlać dozwolonych i zablokowanych nadawców w analizie fałszowania, użyj następującej składni:
+Aby wyświetlić dozwolonych i zablokowanych nadawców w analizie fałszowania, użyj następującej składni:
 
 ```powershell
 Get-PhishFilterPolicy [-AllowedToSpoof <Yes | No | Partial>] [-ConfidenceLevel <Low | High>] [-DecisionBy <Admin | SpoofProtection>] [-Detailed] [-SpoofType <Internal | External>]
 ```
 
-Ten przykład zwraca szczegółowe informacje o wszystkich nadawcach, którzy mogą fałszować użytkowników w Twoich domenach.
+Ten przykład zwraca szczegółowe informacje o wszystkich nadawcach, którzy mogą podszywać się pod użytkowników w domenach.
 
 ```powershell
 Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ```
 
-Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy).
+Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy).
 
-Aby skonfigurować dozwolonych i zablokowanych nadawców w analizie fałszowania, wykonaj następujące czynności:
+Aby skonfigurować dozwolonych i zablokowanych nadawców w analizie fałszowania, wykonaj następujące kroki:
 
-1. Przechwyć bieżącą listę wykrytych fałszywych nadawców, zapisując wynik polecenia cmdlet **Get-PhishFilterPolicy** w pliku CSV, uruchamiając następujące polecenie:
+1. Przechwyć bieżącą listę wykrytych sfałszowanych nadawców, zapisując dane wyjściowe polecenia cmdlet **Get-PhishFilterPolicy** w pliku CSV, uruchamiając następujące polecenie:
 
    ```powershell
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
@@ -161,86 +163,86 @@ Aby skonfigurować dozwolonych i zablokowanych nadawców w analizie fałszowania
 
 2. Edytuj plik CSV, aby dodać lub zmodyfikować następujące wartości:
    - **Nadawca** (domena w rekordzie PTR serwera źródłowego lub adres IP/24)
-   - **SpoofedUser**: Jedna z następujących wartości:
-     - Adres e-mail użytkownika wewnętrznego.
+   - **SpoofedUser**: jedna z następujących wartości:
+     - Wewnętrzny adres e-mail użytkownika.
      - Domena poczty e-mail użytkownika zewnętrznego.
-     - Pusta wartość wskazująca, że chcesz zablokować lub zezwolić na wszystkie sfałszowane wiadomości od określonego nadawcy **, niezależnie** od tego, czy adres e-mail jest sfałszowany.
+     - Pusta wartość wskazująca, że chcesz zablokować lub zezwolić na wszystkie sfałszowane wiadomości od określonego **nadawcy**, niezależnie od sfałszowanego adresu e-mail.
    - **AllowedToSpoof** (Tak lub Nie)
    - **SpoofType** (wewnętrzny lub zewnętrzny)
 
-   Zapisz plik, przeczytaj go i zapisz `$UpdateSpoofedSenders` zawartość jako zmienną o nazwie, uruchamiając następujące polecenie:
+   Zapisz plik, odczytaj plik i zapisz zawartość jako zmienną o nazwie `$UpdateSpoofedSenders` , uruchamiając następujące polecenie:
 
    ```powershell
    $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
    ```
 
-3. Za pomocą zmiennej `$UpdateSpoofedSenders` skonfiguruj zasady ochrony przed fałszerami, uruchamiając następujące polecenie:
+3. Użyj zmiennej `$UpdateSpoofedSenders` , aby skonfigurować zasady analizy fałszowania, uruchamiając następujące polecenie:
 
    ```powershell
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
    ```
 
-Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-PhishFilterPolicy](/powershell/module/exchange/set-phishfilterpolicy).
+Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Set-PhishFilterPolicy](/powershell/module/exchange/set-phishfilterpolicy).
 
-### <a name="manage-spoofed-senders-in-the-spoof-intelligence-insight"></a>Zarządzanie fałszywymi nadawcami w szczegółowych informacjach o analizie fałszerów
+### <a name="manage-spoofed-senders-in-the-spoof-intelligence-insight"></a>Zarządzanie sfałszowanymi nadawcami w szczegółowych informacjach na temat fałszowania danych wywiadowczych
 
 > [!IMPORTANT]
-> W tym artykule opisano starsze, zamieniane środowisko zarządzania fałszywymi nadawcami (zasady ochrony przed  fałszerami na stronie Zasady ochrony przed **spamem**). Aby uzyskać więcej informacji o nowym środowisko (na karcie **Fałszowanie** na liście zezwalań/zablokowanych dzierżaw), zobacz Szczegółowe informacje dotyczące fałszowania [w u usługi EOP](learn-about-spoof-intelligence.md).
+> W tym artykule opisano starsze, sfałszowane środowisko zarządzania nadawcą, które jest zastępowane ( **zasady analizy podróbek** na stronie **Zasady ochrony przed spamem** ). Aby uzyskać więcej informacji o nowym środowisku (na karcie **Fałszowanie** na liście dozwolonych/zablokowanych dzierżawców), zobacz [Spoof intelligence insight in EOP (Fałszowanie analizy w ramach operacji EOP](learn-about-spoof-intelligence.md)).
 
-1. W Centrum zabezpieczeń & zgodności przejdź do strony **Pulpit nawigacyjny zarządzania zagrożeniami**\>.
+1. W Centrum zgodności & zabezpieczeń przejdź do **pulpitu nawigacyjnego** **zarządzania zagrożeniami**\>.
 
-2. W **Szczegółowe informacje** wiersza poszukaj jednego z następujących elementów:
+2. W **wierszu Szczegółowe informacje** poszukaj jednego z następujących elementów:
 
-   - **Prawdopodobnie fałszowane domeny w** ciągu ostatnich siedmiu dni: Ta informacja wskazuje, że analiza fałszerska jest włączona (jest domyślnie włączona).
-   - **Włącz ochronę przed fałszerami**: Ta informacja wskazuje, że analiza przed fałszerami jest wyłączona, a kliknięcie tej informacji umożliwia włączenie ochrony przed fałszerami.
+   - **Prawdopodobnie sfałszowane domeny w ciągu ostatnich siedmiu dni**: ta analiza wskazuje, że analiza fałszowania jest włączona (jest domyślnie włączona).
+   - **Włącz ochronę przed fałszowaniem**: ta analiza wskazuje, że inteligencja fałszowania jest wyłączona, a kliknięcie szczegółowych informacji umożliwia włączenie analizy podróbek.
 
-3. Szczegółowe informacje na pulpicie nawigacyjnym są podane w ten sposób:
+3. Szczegółowe informacje na pulpicie nawigacyjnym zawierają następujące informacje:
 
-   :::image type="content" source="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png" alt-text="Analiza fałszowania" lightbox="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png":::
+   :::image type="content" source="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png" alt-text="Szczegółowe informacje na temat fałszowania danych wywiadowczych" lightbox="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png":::
 
-   Ten wgląd ma dwa tryby:
+   Ten wgląd w szczegółowe informacje ma dwa tryby:
 
-   - **Tryb analizy**: Jeśli funkcja fałszowania informacji jest włączona, możesz zobaczyć, na ile wiadomości w ciągu ostatnich siedmiu dni wpłynieliśmy na funkcje analizy fałszowania.
-   - **Co zrobić, jeśli** tryb: Jeśli analiza fałszywa jest wyłączona, w szczegółowych informacjach można sprawdzić, na ile wiadomości w ciągu ostatnich siedmiu dni wpłyniełyby nasze funkcje analizy fałszowania.
+   - **Tryb szczegółowych informacji**: jeśli włączono analizę fałszowania, szczegółowe informacje pokazują, ile komunikatów zostało dotkniętych przez nasze możliwości analizy fałszowania w ciągu ostatnich siedmiu dni.
+   - **Co zrobić, jeśli tryb**: Jeśli analiza fałszowania jest wyłączona, szczegółowe informacje pokazują, ile wiadomości *miałoby* wpływ na nasze możliwości analizy fałszowania w ciągu ostatnich siedmiu dni.
 
-   W obu tych sposób sfałszowane domeny wyświetlane w szczegółowych informacjach są podzielone na dwie **kategorie: Podejrzane** domeny i Nieza **podejrzanych domen**.
+   Tak czy inaczej, sfałszowane domeny wyświetlane w analizie są podzielone na dwie kategorie: **podejrzane domeny** i **domeny niepodejrzane**.
 
    - **Podejrzane domeny**:
-     - Zaufana fałszowanie **:** Na podstawie historycznych wzorców wysyłania i oceny reputacji domen mamy pewność, że domeny podszywają się pod inne domeny, a wiadomości z tych domen najprawdopodobniej są złośliwe.
-     - **Umiarkowane** zaufanie: Na podstawie historycznych wzorców wysyłania i oceny reputacji domen mamy umiarkowaną pewność, że domeny podszywają się pod inne domeny i że wiadomości wysyłane z tych domen są zgodne z prawem. Wyniki fałszywie dodatnie są bardziej prawdopodobne w tej kategorii niż błędy ufności.
-   - **Podejrzane domeny**: Domena nie sprawdza jawnego uwierzytelniania poczty e-mail [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) i [DMARC](use-dmarc-to-validate-email.md). Jednak ta domena przeszła niejawne testy uwierzytelniania wiadomości e-mail ([uwierzytelnianie złożone](email-validation-and-authentication.md#composite-authentication)). W wyniku tego nie zostały podjęte żadne działania zapobiegające podszywce się nad wiadomością.
+     - **Fałszerstwo o wysokim poziomie zaufania**: na podstawie historycznych wzorców wysyłania i oceny reputacji domen jesteśmy bardzo pewni, że domeny podszywają się, a komunikaty z tych domen są bardziej narażone na złośliwość.
+     - **Umiarkowane fałszowanie zaufania**: Na podstawie historycznych wzorców wysyłania i oceny reputacji domen jesteśmy umiarkowanie pewni, że domeny podchodą i że komunikaty wysyłane z tych domen są uzasadnione. Wyniki fałszywie dodatnie są bardziej prawdopodobne w tej kategorii niż fałszowanie o wysokim poziomie ufności.
+   - **Domeny niepodejrzane**: domena nie powiodła się jawne uwierzytelnianie poczty e-mail sprawdza [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) i [DMARC](use-dmarc-to-validate-email.md). Jednak domena przeszła nasze niejawne testy uwierzytelniania poczty e-mail ([uwierzytelnianie złożone](email-validation-and-authentication.md#composite-authentication)). W związku z tym nie podjęto żadnych działań chroniących przed fałszowaniem wiadomości.
 
-#### <a name="view-detailed-information-about-suspicious-and-nonsuspicious-domains"></a>Wyświetlanie szczegółowych informacji o podejrzanych i niesuspipijących domenach
+#### <a name="view-detailed-information-about-suspicious-and-nonsuspicious-domains"></a>Wyświetlanie szczegółowych informacji o podejrzanych i niepomyślnych domenach
 
-1. Na stronie Spoof intelligence insight (Analiza fałszowania) kliknij pozycję **Suspicious domains** (Podejrzane domeny) lub **Non-suspicious domains** (Podejrzane domeny), aby przejść do strony **Spoof intelligence insight (Analiza fałszowania** ). Strona **Spoof Intelligence insight (** Analiza fałszu) zawiera następujące informacje:
+1. Na stronie Szczegółowe informacje o fałszowaniu analizy kliknij pozycję **Podejrzane domeny** lub **domeny niepodejrzane** , aby przejść do strony **Szczegółowe informacje o fałszowaniu analizy** . Strona **Spoof Intelligence insight (Szczegółowe informacje dotyczące analizy fałszowania** ) zawiera następujące informacje:
 
-   - **Spoofed domain** (Fałszowana domena): domena fałszywego użytkownika wyświetlana w polu **Od w** klientach poczty e-mail. Ten adres jest również nazywany adresem `5322.From` .
-   - **Infrastruktura**: ta infrastruktura jest również znana _jako infrastruktura wysyłania_. Domena znaleziona w odwrotnym odnośniku DNS (rekord PTR) adresu IP źródłowego serwera poczty e-mail. Jeśli źródłowy adres IP nie ma rekordu PTR, \<source IP\>wówczas infrastruktura wysyłania jest identyfikowana jako /24 (na przykład 192.168.100.100/24).
-   - **Liczba wiadomości**: Liczba wiadomości z infrastruktury wysyłania do Organizacji, które zawierają określoną sfałszowaną domenę w ciągu ostatnich 7 dni.
-   - **Ostatnio widziane**: Ostatnia data, kiedy wiadomość została odebrana z infrastruktury wysyłania zawierającej fałszywą domenę.
-   - **Fałsz typ**: Ta wartość to **Zewnętrzna**.
-   - **Może fałszować?**: Wartości, które widzisz poniżej, to:
-     - **Tak**: Wiadomości z połączenia domeny sfałszowanej domeny użytkownika i infrastruktury wysyłania są dozwolone i nie są traktowane jako sfałszowane wiadomości e-mail.
-     - **Nie**: Wiadomości z połączenia domeny użytkownika o sfałszowanej domenie i infrastruktury wysyłania są oznaczane jako fałszywe. Akcja jest kontrolowana przez domyślne zasady ochrony przed wyłudzaniem informacji lub niestandardowe zasady ochrony przed wyłudzaniem informacji (wartość domyślna to Przenoszenie wiadomości **do folderu Wiadomości-śmieci**).
+   - **Domena sfałszowana**: domena sfałszowanego użytkownika wyświetlana w polu **Od** w klientach poczty e-mail. Ten adres jest również znany jako `5322.From` adres.
+   - **Infrastruktura**: znana również jako _infrastruktura wysyłająca_. Domena znaleziona w odwrotnym wyszukiwaniu DNS (rekord PTR) adresu IP źródłowego serwera poczty e-mail. Jeśli źródłowy adres IP nie ma rekordu PTR, infrastruktura wysyłania jest identyfikowana jako \<source IP\>/24 (na przykład 192.168.100.100/24).
+   - **Liczba komunikatów**: liczba komunikatów z infrastruktury wysyłania do organizacji, które zawierają określoną sfałszowaną domenę w ciągu ostatnich 7 dni.
+   - **Ostatnio widziano**: ostatnia data odebrania komunikatu z infrastruktury wysyłania zawierającej sfałszowaną domenę.
+   - **Typ fałszowania**: ta wartość to **External**.
+   - **Dozwolone do fałszowania?**: Wyświetlane tutaj wartości to:
+     - **Tak**: Wiadomości z kombinacji sfałszowanej domeny użytkownika i infrastruktury wysyłania są dozwolone i nie są traktowane jako sfałszowane wiadomości e-mail.
+     - **Nie**: Komunikaty z kombinacji sfałszowanej domeny użytkownika i infrastruktury wysyłania są oznaczone jako sfałszowane. Akcja jest kontrolowana przez domyślne zasady ochrony przed wyłudzaniem informacji lub niestandardowe zasady ochrony przed wyłudzaniem informacji (wartość domyślna to **Przenieś wiadomość do folderu Wiadomości-śmieci**).
 
-2. Wybierz element z listy, aby wyświetlić szczegóły pary domena/infrastruktura wysyłania w wysuwanych informacjach. Informacje te obejmują:
-   - Dlaczego go przygotowaliśmy.
-   - Co należy zrobić.
+2. Wybierz element z listy, aby wyświetlić szczegóły dotyczące pary domeny/wysyłania infrastruktury w wysuwnym oknie. Informacje te obejmują:
+   - Dlaczego to złapaliśmy.
+   - Co musisz zrobić.
    - Podsumowanie domeny.
-   - WhoIs data about the sender.
-   - Podobne wiadomości, które zobaczyliśmy w Twojej dzierżawie od tego samego nadawcy.
+   - WhoIs data about the sender (WhoIs data about the sender).
+   - Podobne komunikaty, które widzieliśmy w twojej dzierżawie od tego samego nadawcy.
 
-   W tym miejscu możesz również dodać lub usunąć parę infrastruktury domen/wysyłania z listy Dozwolonych **do fałszowania** nadawców listy dozwolonych. Wystarczy odpowiednio ustawić przełącznik.
+   W tym miejscu możesz również dodać lub usunąć parę infrastruktury domeny/wysyłania z listy dozwolonych **do fałszowania** nadawcy. Wystarczy odpowiednio ustawić przełącznik.
 
-   :::image type="content" source="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png" alt-text="Domena w okienku szczegółów informacji dotyczących fałszowania informacji" lightbox="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png":::
+   :::image type="content" source="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png" alt-text="Domena w okienku Szczegóły analizy fałszowania" lightbox="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png":::
 
-## <a name="how-do-you-know-these-procedures-worked"></a>Skąd wiadomo, że te procedury działały?
+## <a name="how-do-you-know-these-procedures-worked"></a>Skąd wiesz, że te procedury zadziałają?
 
-Aby sprawdzić, czy skonfigurowano analizę fałszowania nadawców, którzy są dozwolone i nie mogą fałszować, należy wykonać dowolną z następujących czynności:
+Aby sprawdzić, czy skonfigurowano analizę fałszowania z nadawcami, którzy są dozwoloni i nie mogą podszywać się, wykonaj dowolne z następujących kroków:
 
-- **Współpraca za & e-mail** \> **Zasady & reguł** \> **Zasady zagrożeń** \> **Ochrona przed spamem**  \>  \>   \> w sekcji Zasady zasady ochrony przed fałszerami zaznacz pole wyboru Pokaż nadawców,  którzy już przejrzeli, wybierz kartę Twoje domeny  lub domeny zewnętrzne i sprawdź dla nadawcy wartość Dozwolone do fałszowania?
+- Współpraca \> **& poczty e-mail** **Zasady & Reguły** \> **Zasady zagrożeń** \> **Ochrona przed spamem** w sekcji \> **Zasady** Zasady dotyczące fałszowania **zasad** \> analizy wybierz pozycję **Pokaż nadawców, których już przeglądałem**\>, wybierz kartę **Twoje domeny** lub **domeny zewnętrzne** i sprawdź wartość **Dozwolone do fałszowania dla** nadawcy.
 
-- W programie PowerShell uruchom następujące polecenia, aby wyświetlić nadawców, którzy mają prawo i nie mogą podszywać się:
+- W programie PowerShell uruchom następujące polecenia, aby wyświetlić nadawców, którzy są dozwolone i nie mogą podszywać się pod:
 
   ```powershell
   Get-PhishFilterPolicy -AllowedToSpoof Yes -SpoofType Internal

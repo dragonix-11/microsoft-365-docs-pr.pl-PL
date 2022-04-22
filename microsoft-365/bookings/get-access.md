@@ -1,5 +1,5 @@
 ---
-title: Uzyskiwanie dostępu do Microsoft Bookings
+title: Uzyskiwanie dostępu do usługi Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Dowiedz się, jak uzyskać dostęp do funkcji Bookings w Microsoft 365.
-ms.openlocfilehash: fd81b64916b1798982470ad8e6aa6e28b0a14fdf
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 22e42322cc46b8b2591c9058c2595896adc09f9b
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746766"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022542"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Uzyskiwanie dostępu do usługi Microsoft Bookings
 

@@ -1,5 +1,5 @@
 ---
-title: Omówienie Microsoft 365 Lighthouse Windows 365 (Komputery w chmurze)
+title: Omówienie strony Windows 365 (komputery w chmurze) w Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,89 +15,89 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się więcej o stronie Windows 365 (Cloud PC).
-ms.openlocfilehash: fa910e3de992aa3f3f76090f76a473a96aebc8fb
-ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
+description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse zapoznaj się ze stroną Windows 365 (komputery w chmurze).
+ms.openlocfilehash: 843e241c796d626ecca2180b0bce1372059701a2
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64387116"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022894"
 ---
-# <a name="windows-365-cloud-pcs-page-overview"></a>Omówienie Windows 365 (Komputery w chmurze)  
+# <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Omówienie strony Windows 365 (komputery w chmurze) w Microsoft 365 Lighthouse  
   
-Windows 365 to usługa oparta na chmurze, która pozwala administratorom programu Microsoft Endpoint Manager (MEM) zapewniać obsługę komputerów w chmurze i zarządzać nimi dla użytkowników, którzy mają licencję usługi Windows 365. Windows 365 jest w pełni zintegrowana z MEM do zarządzania urządzeniami oraz Microsoft 365 Lighthouse na potrzeby zarządzania komputerami w chmurze partnerów we wszystkich dzierżawach klientów.
+Windows 365 to usługa oparta na chmurze, która umożliwia administratorom Microsoft Endpoint Manager (MEM) aprowizowanie komputerów w chmurze i zarządzanie nimi dla użytkowników, którzy mają licencję Windows 365. Windows 365 jest w pełni zintegrowana z rozwiązaniem MEM do zarządzania urządzeniami oraz z Microsoft 365 Lighthouse do zarządzania przez partnerów komputerami w chmurze we wszystkich dzierżawach klientów.
 
-Aby uzyskać więcej informacji o Windows 365, zobacz Co [to jest Windows 365?](/windows-365/overview) Aby uzyskać listę wymagań Windows 365, [zobacz Wymagania dotyczące Windows 365](/windows-365/enterprise/requirements).
+Aby uzyskać więcej informacji na temat Windows 365, zobacz [Co to jest Windows 365?](/windows-365/overview) Aby uzyskać listę wymagań Windows 365, zobacz [Wymagania dotyczące Windows 365](/windows-365/enterprise/requirements).
 
 > [!IMPORTANT]
-> Aby zarządzać nimi w usłudze Lighthouse, musisz przejść do [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) w celu zapewnienia obsługi komputerów w chmurze dla poszczególnych dzierżawców. Nie można zapewniać obsługi z poziomu latarni morskiej.
+> Przed rozpoczęciem zarządzania nimi w usłudze Lighthouse musisz przejść do usługi [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) , aby aprowizować komputery w chmurze dla każdej dzierżawy klienta. Nie można aprowizować z poziomu usługi Lighthouse.
 
-Po zapewnienia obsługi administracyjnej komputerów w chmurze dla dzierżawy klienta karta Windows 365 na stronie głównej usługi Microsoft 365 udostępnia krótki alert dotyczący komputerów w chmurze potrzebny do działania, na przykład liczba komputerów z chmurą, których nie można było aprowizować, oraz awarie połączenia sieciowego platformy Azure. Aby uzyskać szczegółowy stan, wybierz przycisk na karcie Windows 365 (lub wybierz pozycję Windows 365 w lewym okienku  nawigacji), aby otworzyć Windows 365 stronę. Na tej stronie możesz uzyskać przegląd stanu komputerów w chmurze przypisanych do dzierżaw klientów, wyświetlić listę wszystkich komputerów w chmurze, które zarządzasz, oraz dzierżaw, do których są przypisani, oraz wyświetlić połączenia sieciowe platformy Azure między dzierżawami klientów i usługą Azure Active Directory (Azure AD) oraz ich stan.
+Po zainicjowaniu obsługi administracyjnej komputerów w chmurze dla dzierżawy klienta karta Windows 365 na stronie głównej Microsoft 365 zawiera krótki alert dotyczący komputerów w chmurze wymagających akcji, takich jak liczba komputerów w chmurze, których nie można aprowizować, i błędy połączeń sieciowych platformy Azure. Aby uzyskać szczegółowy stan, wybierz przycisk na karcie Windows 365 (lub wybierz **pozycję Windows 365** w okienku nawigacji po lewej stronie), aby otworzyć stronę Windows 365. Na tej stronie można uzyskać przegląd stanu komputerów w chmurze przypisanych do dzierżaw klientów, wyświetlić listę wszystkich zarządzanych komputerów w chmurze i dzierżaw, do których są przypisani, oraz wyświetlić połączenia sieciowe platformy Azure między dzierżawami klientów i Azure Active Directory (Azure AD) oraz ich stan.
 
-## <a name="overview-tab"></a>Karta Omówienie
+## <a name="overview-tab"></a>Karta Przegląd
 
-Na karcie Przegląd kolorowy pasek adnotacji z adnotacjami zawiera łączną liczbę komputerów w chmurze lub połączeń sieciowych platformy Azure we wszystkich dzierżawach klientów o następujących stanie: Nieudane połączenia sieciowe, Bez obsługi administracyjnej, Inicjowanie obsługi administracyjnej nie powiodło się i Wkrótce zostanie zatrzymane udostępnianie administracyjne.
+Na karcie Przegląd kolorowy pasek z adnotacją liczbową wyświetla całkowitą liczbę komputerów w chmurze lub połączeń sieciowych platformy Azure we wszystkich dzierżawach klientów, które mają następujące stany: Nieudane połączenia sieciowe, Nie zainicjowano obsługi administracyjnej, Aprowizowanie nie powiodło się i wkrótce anulowano aprowizację.
 
-Poniżej paska adnotacji można zobaczyć zestawienie stanu komputerów w chmurze dla poszczególnych dzierżaw klientów. Aby sprawdzić, które dzierżawy mają komputery w chmurze o określonym stanie, wybierz ten stan na pasku adnotacji, aby przefiltrować listę. Aby wyświetlić statusy komputerów w chmurze dla jednej lub większej liczby dzierżaw klientów, użyj menu  rozwijanego Dzierżawy, aby przefiltrować listę.
+Na liście poniżej paska adnotacji można zobaczyć podział stanów komputerów w chmurze dla każdej dzierżawy klienta. Aby sprawdzić, które dzierżawy mają komputery w chmurze o określonym stanie, wybierz ten stan na pasku zliczanie adnotacji, aby odfiltrować listę. Aby wyświetlić stan komputera w chmurze dla co najmniej jednej konkretnej dzierżawy klienta, użyj menu rozwijanego **Dzierżawy** , aby odfiltrować listę.
 
-Aby uzyskać szczegółowe informacje o stanie określonej dzierżawy klienta, wybierz wartość w dowolnej z kolumn stanu dla tej dzierżawy. W zależności od kolumny, w której znajduje się ta wartość, zostanie  otwarta karta **Połączenia sieciowe platformy Azure** lub Wszystkie komputery w chmurze, aby wyświetlić więcej informacji.
+Aby uzyskać szczegółowe informacje o stanie dla określonej dzierżawy klienta, wybierz wartość w dowolnej kolumnie stanu dla tej dzierżawy. W zależności od kolumny, w której znajduje się wartość, otworzy się karta **Połączenia sieciowe platformy Azure** lub **Wszystkie komputery w chmurze** i wyświetli więcej informacji.
 
-Karta Omówienie zawiera również następujące opcje:
+Karta Przegląd zawiera również następujące opcje:
 
-- **Odświeżanie:** Wybierz, aby pobrać najnowsze dane z komputera w chmurze.
-- **Eksportowanie:** Zaznacz, aby wyeksportować dane z komputera w chmurze Excel pliku z wartościami oddzielaymi .csv przecinkami.
-- **Wyszukiwanie:** Wprowadź słowa kluczowe, aby szybko znaleźć konkretny komputer w chmurze na liście.
+- **Odświeżania:** Wybierz, aby pobrać najbardziej aktualne dane komputera w chmurze.
+- **Eksportu:** Wybierz, aby wyeksportować dane komputera w chmurze do pliku Excel wartości rozdzielanych przecinkami (.csv).
+- **Szukaj:** Wprowadź słowa kluczowe, aby szybko zlokalizować określony komputer w chmurze na liście.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Zrzut ekranu przedstawiający kartę Windows 365 Przegląd." lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Zrzut ekranu przedstawiający kartę Przegląd Windows 365." lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
 
 ## <a name="all-cloud-pcs-tab"></a>Karta Wszystkie komputery w chmurze
 
-Na karcie Wszystkie komputery w chmurze na kolorowym pasku adnotacji jest wyświetlana łączna liczba komputerów w chmurze we wszystkich dzierżawach klientów o następujących stanie: Inicjowanie obsługi administracyjnej, Nieudostępniane inicjowanie obsługi administracyjnej, Inicjowanie obsługi administracyjnej nie powiodło się i Udostępnianie obsługi administracyjnej wkrótce.
+Na karcie Wszystkie komputery w chmurze na kolorowym pasku adnotacji liczbowej jest wyświetlana całkowita liczba komputerów w chmurze we wszystkich dzierżawach klientów, które mają następujące stany: Aprowizowano, Nie zainicjowano obsługi administracyjnej, aprowizowanie nie powiodło się i wkrótce anulowano aprowizację.
 
-Możesz wyświetlić wszystkie komputery w chmurze i ich stan inicjowania obsługi na liście poniżej paska adnotacji. Podano następujące informacje:
+Wszystkie komputery w chmurze i ich stan aprowizacji można wyświetlić na liście poniżej paska adnotacji. Podano następujące informacje:
 
 - **Nazwa komputera w chmurze:** Nazwa przypisana do komputera w chmurze.
-- **Dzierżawa:** Dzierżawa klienta, w której aprowizowana była usługa Cloud PC.
-- **Nazwa urządzenia:** Intune — nazwa identyfikator unikatowy dla komputera w chmurze.
-- **typ komputera:** Typ komputera w chmurze zgodnie ze standardowymi jednostkami SKU.
-- **Stan:** Stan obsługi administracyjnej komputera w chmurze.
-- **Użytkownik:** Użytkownik, dla którego inicjowanie obsługi administracyjnej lub próbowano zapewnienia obsługi komputera w chmurze.
+- **Dzierżawy:** Dzierżawa klienta, w której aprowizowane jest komputer w chmurze.
+- **Nazwa urządzenia:** Intune nazwę urządzenia — unikatowy identyfikator komputera w chmurze.
+- **Typ komputera:** Typ komputera w chmurze zgodnie ze standardowymi jednostkami SKU.
+- **Stan:** Stan aprowizacji komputera w chmurze.
+- **Użytkownika:** Użytkownik, dla którego aprowizowano lub próbowano aprowizować komputer w chmurze.
 
-Aby sprawdzić, które dzierżawy mają komputery w chmurze z określonym stanem inicjowania obsługi, wybierz ten stan na pasku adnotacji, aby przefiltrować listę. Aby wyświetlić stan inicjowania obsługi komputera w chmurze dla jednej lub większej liczby dzierżaw klientów, użyj menu  rozwijanego Dzierżawy, aby przefiltrować listę.
+Aby sprawdzić, które dzierżawy mają komputery w chmurze o określonym stanie aprowizacji, wybierz ten stan na pasku count-annotation, aby odfiltrować listę. Aby wyświetlić stan aprowizacji komputera w chmurze dla co najmniej jednej konkretnej dzierżawy klienta, użyj menu rozwijanego **Dzierżawy** , aby odfiltrować listę.
 
-Wybierz z listy dowolny komputer w chmurze, aby wyświetlić więcej szczegółów. Jeśli musisz podjąć działania na komputerze w chmurze, istnieją opcje wyświetlania zasad inicjowania obsługi administracyjnej dzierżawy i szczegółów urządzeń w Microsoft Endpoint Manager.
+Wybierz dowolny komputer z chmurą na liście, aby wyświetlić więcej szczegółów. Jeśli chcesz podjąć działania na komputerze z chmurą, możesz wyświetlić zasady aprowizacji dzierżawy i szczegóły urządzenia w Microsoft Endpoint Manager.
 
 Karta Wszystkie komputery w chmurze zawiera również następujące opcje:
 
-- **Odświeżanie:** Wybierz, aby pobrać najnowsze dane z komputera w chmurze.
-- **Eksportowanie:** Zaznacz, aby wyeksportować dane z komputera w chmurze Excel pliku z wartościami oddzielaymi .csv przecinkami.
-- **Wyszukiwanie:** Wprowadź słowa kluczowe, aby szybko znaleźć konkretny komputer w chmurze na liście.
-- **Spróbuj ponownie inicjowanie obsługi administracyjnej:** Wybierz z listy 1–20 komputerów w chmurze o stanie Inicjowanie obsługi administracyjnej nie powiodło **się, a** następnie wybierz tę opcję, aby ponowić próbę inicjowania obsługi administracyjnej dla tych komputerów w chmurze.
+- **Odświeżania:** Wybierz, aby pobrać najbardziej aktualne dane komputera w chmurze.
+- **Eksportu:** Wybierz, aby wyeksportować dane komputera w chmurze do pliku Excel wartości rozdzielanych przecinkami (.csv).
+- **Szukaj:** Wprowadź słowa kluczowe, aby szybko zlokalizować określony komputer w chmurze na liście.
+- **Ponów próbę aprowizacji:** Wybierz od 1 do 20 komputerów w chmurze z listy ze stanem **Aprowizowanie nie powiodło się**, a następnie wybierz tę opcję, aby ponowić próbę aprowizacji dla tych komputerów w chmurze.
 
-Aby wyświetlić pełną listę stanu inicjowania obsługi komputera w chmurze i ich znaczenie, zobacz Omówienie zarządzania [](/windows-365/enterprise/device-management-overview#column-details) urządzeniami dla komputerów w chmurze w bibliotece Windows 365 dokumentacji.
+Aby wyświetlić pełną listę stanów aprowizacji komputerów w chmurze i ich znaczenie, zobacz [Omówienie zarządzania urządzeniami dla komputerów w chmurze](/windows-365/enterprise/device-management-overview#column-details) w bibliotece dokumentacji Windows 365.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Zrzut ekranu przedstawiający kartę Windows 365 Wszystkie komputery w chmurze." lightbox="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png":::
 
 ## <a name="azure-network-connections-tab"></a>Karta Połączenia sieciowe platformy Azure
 
-Na karcie Połączenia sieciowe platformy Azure na kolorowym pasku adnotacji jest wyświetlana łączna liczba połączeń sieciowych platformy Azure we wszystkich dzierżawach klientów o następujących stanie: Pomyślne połączenia i Połączenia nieudane.
+Na karcie Połączenia sieciowe platformy Azure na kolorowym pasku z adnotacją liczbową jest wyświetlana całkowita liczba połączeń sieciowych platformy Azure we wszystkich dzierżawach klientów, które mają następujące stany: Pomyślne połączenia i Nieudane połączenia.
 
-Na liście poniżej paska adnotacji można wyświetlić wszystkie połączenia sieciowe platformy Azure i ich stan połączenia.
+Na liście poniżej paska zliczanie adnotacji można wyświetlić wszystkie połączenia sieciowe platformy Azure i ich stan połączenia.
 
-Aby wyświetlić połączenia z określonym stanem inicjowania obsługi, wybierz ten stan na pasku adnotacji z adnotacjami, aby przefiltrować listę. Aby wyświetlić stan połączenia dla jednej lub większej liczby dzierżaw klientów, użyj menu rozwijanego  Dzierżawy, aby przefiltrować listę.
+Aby wyświetlić połączenia z określonym stanem aprowizacji, wybierz ten stan na pasku zliczanie adnotacji, aby filtrować listę. Aby wyświetlić stan połączenia dla co najmniej jednej konkretnej dzierżawy klienta, użyj menu rozwijanego **Dzierżawy** , aby odfiltrować listę.
 
-Jeśli musisz podjąć działania lub rozwiązać problemy z połączeniem na liście, wybierz pozycję **Wyświetl szczegóły połączenia** w Microsoft Endpoint Manager.
+Jeśli musisz podjąć działania lub rozwiązać problemy z połączeniem na liście, wybierz pozycję **Wyświetl szczegóły połączenia w Microsoft Endpoint Manager**.
 
 Karta Połączenia sieciowe platformy Azure zawiera również następujące opcje:
 
-- **Odświeżanie:** Zaznacz, aby pobrać najnowsze dane połączenia.
-- **Eksportowanie:** Zaznacz, aby wyeksportować dane połączenia Excel pliku wartości rozdzielanych przecinkami (.csv).
-- **Wyszukiwanie:** Wprowadź słowa kluczowe, aby szybko zlokalizować określone połączenie.
+- **Odświeżania:** Wybierz, aby pobrać najbardziej aktualne dane połączenia.
+- **Eksportu:** Wybierz, aby wyeksportować dane połączenia do pliku Excel wartości rozdzielanych przecinkami (.csv).
+- **Szukaj:** Wprowadź słowa kluczowe, aby szybko zlokalizować określone połączenie.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Zrzut ekranu przedstawiający kartę Połączenia sieciowe platformy Azure." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Co to jest Windows 365?](/windows-365/overview) (artykuł)\
-[Windows 365 omówienie zarządzania urządzeniami na komputerach w](/windows-365/enterprise/device-management-overview) chmurze (artykuł)\
+[Windows 365 omówienie zarządzania urządzeniami dla komputerów w chmurze](/windows-365/enterprise/device-management-overview) (artykuł)\
 [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)

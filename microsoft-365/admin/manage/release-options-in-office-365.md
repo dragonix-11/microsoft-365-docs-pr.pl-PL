@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie opcji wydania standardowego lub kierowanego
+title: Konfigurowanie opcji wersji Standardowa lub Docelowa
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -23,38 +23,37 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
-description: Dowiedz się, jak skonfigurować opcję wydania dla nowych produktów i funkcji aktualizacji w centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 6e3cf1987d6b3c22ed1414bd8e352da7acf49e60
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+description: Dowiedz się, jak skonfigurować opcję wydania dla nowych aktualizacji produktów i funkcji w Centrum administracyjne platformy Microsoft 365.
+ms.openlocfilehash: 67c6fe3f08549424c725589a50c647a876c151af
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "63012509"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022454"
 ---
-# <a name="set-up-the-standard-or-targeted-release-options"></a>Konfigurowanie opcji wydania standardowego lub kierowanego
+# <a name="set-up-the-standard-or-targeted-release-options"></a>Konfigurowanie opcji wersji Standardowa lub Docelowa
 
 > [!IMPORTANT]
-> Aktualizacje Microsoft 365 opisane w tym artykule dotyczą aplikacji Microsoft 365, SharePoint Online i Exchange Online. Te opcje wydania są kierowane w celu wykorzystania najlepszych starań, aby wprowadzić zmiany w Microsoft 365, ale nie są gwarantowane przez cały czas ani w przypadku wszystkich aktualizacji. Nie dotyczą one usług Aplikacje Microsoft 365, Skype dla firm, Microsoft Teams ani powiązanych usług. Aby uzyskać informacje o opcjach wydania Aplikacje Microsoft 365, zobacz [Omówienie kanałów](/deployoffice/overview-update-channels) aktualizacji dla Aplikacje Microsoft 365.
+> Aktualizacje Microsoft 365 opisane w tym artykule dotyczą Microsoft 365, SharePoint Online i Exchange Online. Te opcje wydania są ukierunkowane i najlepiej sprawdzają się sposoby wydawania zmian w Microsoft 365, ale nie można ich zagwarantować przez cały czas ani dla wszystkich aktualizacji. Nie mają one zastosowania do usług Aplikacje Microsoft 365, Skype dla firm, Microsoft Teams i powiązanych. Aby uzyskać informacje o opcjach wydania dla Aplikacje Microsoft 365, zobacz [Omówienie kanałów aktualizacji dla Aplikacje Microsoft 365](/deployoffice/overview-update-channels).
 
-Dzięki Microsoft 365 otrzymujesz nowe aktualizacje i funkcje produktów od teraz, gdy stają się dostępne, zamiast kosztować co kilka lat. Możesz zarządzać tym, jak Twoja organizacja otrzymuje te aktualizacje. Na przykład możesz utworzyć konto w celu wcześniejszego wydania, aby Twoja organizacja najpierw otrzymuje aktualizacje. Możesz wskazać, że aktualizacje będą dostępne tylko dla określonych osób. Możesz też pozostać przy domyślnym harmonogramie wersji i otrzymywać aktualizacje później. W tym artykule opisano różne opcje wydania oraz sposoby używania ich w organizacji.
+Dzięki Microsoft 365 otrzymujesz nowe aktualizacje produktów i funkcje, ponieważ stają się one dostępne zamiast kosztownych aktualizacji co kilka lat. Możesz zarządzać sposobem otrzymywania tych aktualizacji przez organizację. Możesz na przykład zarejestrować się w celu uzyskania wcześniejszej wersji, aby organizacja najpierw otrzymywała aktualizacje. Można wyznaczyć, że aktualizacje otrzymują tylko niektóre osoby. Możesz też pozostać w domyślnym harmonogramie wydania i otrzymywać aktualizacje później. W tym artykule wyjaśniono różne opcje wydania i sposób ich używania w organizacji.
 
 ## <a name="how-it-works---release-validation"></a>Jak to działa  weryfikacja wydania
 
-Każde nowe wydanie jest najpierw testowane i weryfikowane przez zespół funkcji, a następnie przez cały zespół funkcji pakietu Microsoft 365, a następnie przez wszystkie firmy Microsoft. Po przeprowadzeniu wewnętrznych testów i walidacji następnym krokiem jest **Udostępnianie kierowane** (kiedyś nazywane udostępnianiem natychmiastowym) dla klientów, którzy wybrali tę opcję. W każdym pierścieniu wydania firma Microsoft zbiera opinie i dalej weryfikuje jakość, monitorując kluczowe metryki użycia. Ta seria stopniowej weryfikacji jest stosowana po to, aby zapewnić najwyższą możliwą jakość wydania światowego. Wydania zostały przedstawione na poniższym rysunku. 
+Każda nowa wersja jest najpierw testowana i weryfikowana przez zespół funkcji, a następnie przez cały zespół Microsoft 365 funkcji, a następnie przez całą firmę Microsoft. Po przeprowadzeniu wewnętrznych testów i walidacji następnym krokiem jest **Udostępnianie kierowane** (kiedyś nazywane udostępnianiem natychmiastowym) dla klientów, którzy wybrali tę opcję. W każdym pierścieniu wydania firma Microsoft zbiera opinie i dalej weryfikuje jakość, monitorując kluczowe metryki użycia. Ta seria stopniowej weryfikacji jest stosowana po to, aby zapewnić najwyższą możliwą jakość wydania światowego. Wydania zostały przedstawione na poniższym rysunku. 
   
-![Pierścienie weryfikacji wydania dla Microsoft 365.](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Pierścienie sprawdzania poprawności wydania dla Microsoft 365.](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-W przypadku znaczących aktualizacji klienci są wstępnie powiadamiani przez Przewodnik Microsoft 365 [klientów](https://products.office.com/business/office-365-roadmap). O zbliżaniu się aktualizacji jest ona powiadamiana za pośrednictwem [Microsoft 365 wiadomości](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
+W przypadku istotnych aktualizacji klienci są początkowo powiadamiani przez [plan Microsoft 365](https://products.office.com/business/office-365-roadmap). Gdy aktualizacja zbliża się do wdrożenia, jest ona przekazywana za pośrednictwem [centrum Microsoft 365 komunikatów](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> Aby uzyskać dostęp do Centrum wiadomości za pośrednictwem centrum administracyjnego, potrzebujesz konta usługi Microsoft 365 lub Azure [AD](/office365/admin/admin-overview/about-the-admin-center). Microsoft 365 plan dla użytkowników planu domu nie mają centrum administracyjnego.
-
+> Aby uzyskać dostęp do centrum komunikatów za pośrednictwem [centrum administracyjnego](/office365/admin/admin-overview/about-the-admin-center), potrzebujesz konta Microsoft 365 lub konta usługi Azure AD. Microsoft 365 użytkownicy planu domowego nie mają centrum administracyjnego.
 
 ## <a name="standard-release"></a>Udostępnianie standardowe
 
-Jest to opcja domyślna, w której Ty i Twoi użytkownicy otrzymujecie najnowsze aktualizacje, gdy są one ogólnie publikowane dla wszystkich klientów.
+Jest to domyślna opcja, w której ty i Twoi użytkownicy otrzymujecie najnowsze aktualizacje, gdy zostaną ogólnie wydane wszystkim klientom.
   
-Dobrym rozwiązaniem jest pozostawienie większości użytkowników w standardowych wersjach,  a informatycy i użytkownicy potęgowi  w wersji docelowej będą oceniać nowe funkcje i przygotowywać zespoły do obsługi użytkowników biznesowych i kadry kierowniczej. 
+Dobrym rozwiązaniem jest pozostawienie większości użytkowników w **wersji Standardowa** oraz specjalistów IT i zaawansowanych użytkowników w **wersji docelowej** w celu oceny nowych funkcji i przygotowania zespołów do obsługi użytkowników biznesowych i kadry kierowniczej. 
   
 > [!NOTE]
 > Jeśli zmienisz ścieżkę udostępniania kierowanego z powrotem na ścieżkę udostępniania standardowego, Twoi użytkownicy mogą utracić dostęp do funkcji, które jeszcze nie są dostępne w ramach udostępniania standardowego. 
@@ -65,19 +64,22 @@ W ramach tej opcji najnowsze aktualizacje są dostarczane dla Ciebie i Twoich u�
   
 > [!IMPORTANT]
 > - Wdrażanie dużych lub złożonych aktualizacji może trwać dłużej niż pozostałych aktualizacji. Dzięki temu nie mają one negatywnego wpływu na jakichkolwiek użytkowników. Nie ma żadnych gwarancji dotyczących dokładnego harmonogramu udostępniania.
-> - Wersja kierowane nie jest obecnie dostępna dla klientów z planem Office 365 GCC ani planem Office 365 GCC dod.
+> - Docelowa wersja nie jest obecnie dostępna dla klientów z planem Office 365 GCC lub planem Office 365 GCC High i DoD.
   
 ### <a name="targeted-release-for-entire-organization"></a>Udostępnianie kierowane dla całej organizacji
 
-Jeśli [skonfigurujemy opcję wydania w](#set-up-the-release-option-in-the-admin-center) centrum administracyjnym dla tej opcji, wszyscy użytkownicy otrzymają środowisko wersji kierowanej. W przypadku organizacji posiadających ponad 300 użytkowników zalecamy skorzystanie z testowej subskrypcji tej opcji. Aby uzyskać informacje o subskrypcji testowej, skontaktuj się ze swoim przedstawicielem firmy Microsoft. 
+Jeśli [skonfigurujesz opcję wydania w centrum administracyjnym](#set-up-the-release-option-in-the-admin-center) dla tej opcji, wszyscy użytkownicy otrzymają środowisko docelowej wersji. W przypadku organizacji posiadających ponad 300 użytkowników zalecamy skorzystanie z testowej subskrypcji tej opcji. Aby uzyskać informacje o subskrypcji testowej, skontaktuj się ze swoim przedstawicielem firmy Microsoft. 
   
 ### <a name="targeted-release-for-selected-users"></a>Udostępnianie kierowane dla wybranych użytkowników
 
-Jeśli dla [tej](#set-up-the-release-option-in-the-admin-center) opcji skonfigurujemy opcję wydania w centrum administracyjnym, możesz zdefiniować konkretnych użytkowników (zwykle użytkowników końcowych), którzy będą otrzymywać wczesny dostęp do funkcji. 
+Jeśli [skonfigurujesz opcję wydania w centrum administracyjnym](#set-up-the-release-option-in-the-admin-center) dla tej opcji, możesz zdefiniować określonych użytkowników, zazwyczaj użytkowników zaawansowanych, aby otrzymywać wczesny dostęp do funkcji i funkcji.
+
+> [!IMPORTANT]
+> Niektóre funkcje są wdrażane tylko w organizacji. Oznacza to, że cała organizacja otrzyma dostęp do tej funkcji w tym samym czasie. W przypadku takich funkcji nie jest możliwe wczesne pobranie funkcji przez wybranych użytkowników w docelowym programie wydawniczym. Oznacza to, że twoja organizacja nie będzie mogła otrzymywać tych funkcji wcześniej, jeśli skonfigurowano wybranych użytkowników w docelowej wersji. Aby upewnić się, że wszystkie funkcje są widoczne w docelowej wersji, należy skonfigurować docelową wersję dla całej organizacji lub skonfigurować organizację testową.
   
 ## <a name="benefits-of-targeted-release"></a>Zalety udostępniania kierowanego
 
-Wersja kierowane umożliwia administratorom, menedżerom zmian i innym osobom odpowiedzialnym za aktualizacje Microsoft 365 przygotowanie się na nadchodzące zmiany przez umożliwienie im:
+Docelowa wersja umożliwia administratorom, menedżerom zmian lub innym osobom odpowiedzialnym za aktualizacje Microsoft 365 przygotowanie się do nadchodzących zmian, umożliwiając im:
   
 - testowania i weryfikowania nowych aktualizacji zanim zostaną udostępnione wszystkim użytkownikom w organizacji,
     
@@ -91,27 +93,27 @@ Wersja kierowane umożliwia administratorom, menedżerom zmian i innym osobom od
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>Konfigurowanie opcji wydania w centrum administracyjnym
 
-Sposób otrzymywania aktualizacji przez Organizację możesz Microsoft 365, korzystając z poniższych kroków. Aby do tego dorezygnować, musisz być Microsoft 365 globalnym.
+Możesz zmienić sposób otrzymywania aktualizacji Microsoft 365 przez organizację, wykonując następujące kroki. Aby wyrazić zgodę, musisz być administratorem globalnym w Microsoft 365.
   
 > [!IMPORTANT]
-> Może upłynie do 24 godzin, aby poniższe zmiany zadadają się w Microsoft 365. Jeśli po włączeniu udostępniania kierowanego zrezygnujesz z niego, Twoi użytkownicy mogą utracić dostęp do funkcji, które jeszcze nie są dostępne w ramach udostępniania według harmonogramu. 
+> Może upłynąć do 24 godzin, aż poniższe zmiany wejdą w życie w Microsoft 365. Jeśli po włączeniu udostępniania kierowanego zrezygnujesz z niego, Twoi użytkownicy mogą utracić dostęp do funkcji, które jeszcze nie są dostępne w ramach udostępniania według harmonogramu. 
   
-1. W centrum administracyjnym przejdź do pozycji Ustawienia  >  Ustawienia **Org** i na karcie Profil <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"> organizacji wybierz pozycję</a> **Preferencje dotyczące wersji**.
+1. W centrum administracyjnym przejdź do **ustawienia Ustawienia** >  **Org**, a następnie na <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">karcie **Profil organizacji**</a> wybierz pozycję **Preferencje wydania**.
 
-5. Aby wyłączyć wydanie kierowane, wybierz pozycję **Wydanie standardowe**, a następnie wybierz pozycję **Zapisz zmiany**. 
+5. Aby wyłączyć wersję docelową, wybierz pozycję **Wersja standardowa**, a następnie wybierz pozycję **Zapisz zmiany**. 
     
-6. Aby włączyć kierowane wydanie dla wszystkich użytkowników w organizacji, wybierz pozycję Wersja **kierowane** dla wszystkich użytkowników, a następnie wybierz pozycję **Zapisz zmiany**. 
+6. Aby włączyć wersję docelową dla wszystkich użytkowników w organizacji, wybierz pozycję **Docelowa wersja dla wszystkich**, a następnie wybierz pozycję **Zapisz zmiany**. 
     
-7. Aby włączyć wersję ukierunkowaną dla niektórych osób w organizacji, wybierz pozycję Wersja **kierowane** dla wybranych użytkowników, a następnie wybierz pozycję **Zapisz zmiany**. 
+7. Aby włączyć docelową wersję dla niektórych osób w organizacji, wybierz pozycję **Docelowa wersja dla wybranych użytkowników**, a następnie wybierz pozycję **Zapisz zmiany**. 
     
-8. Wybierz **pozycję Wybierz użytkowników**, aby dodawać użytkowników po jednym użytkowniku na raz, lub wybierz pozycję Wybierz Upload **użytkowników**, aby dodać ich zbiorczo.
+8. Wybierz **pozycję Wybierz użytkowników**, aby dodawać użytkowników pojedynczo, lub **Upload użytkowników**, aby dodawać ich zbiorczo.
     
-9. Po dodaniu użytkowników wybierz pozycję **Zapisz zmiany**.
+9. Po zakończeniu dodawania użytkowników wybierz pozycję **Zapisz zmiany**.
   
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się, jak [zarządzać wiadomościami](/office365/admin/manage/message-center) w Centrum [Microsoft 365 wiadomości](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter), aby otrzymywać powiadomienia o nadchodzących Microsoft 365 aktualizacjach i wersjach.
+Dowiedz się, jak [zarządzać komunikatami](/office365/admin/manage/message-center) w [centrum wiadomości Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter), aby otrzymywać powiadomienia o nadchodzących aktualizacjach i wydaniach Microsoft 365.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Dołączanie do Office niejawnego programu testów](https://insider.office.com/join/windows) (artykuł)
+[Dołącz do programu Office Insider Program](https://insider.office.com/join/windows) (artykuł)

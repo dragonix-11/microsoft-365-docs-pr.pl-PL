@@ -1,5 +1,5 @@
 ---
-title: Omówienie strony dzierżaw Microsoft 365 Lighthouse
+title: Omówienie strony Dzierżawy w Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse zapoznaj się ze stroną Dzierżawy.
-ms.openlocfilehash: 44111d62a9b8df9bf3b05ddbaa9cb4f3937159a4
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823526"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023288"
 ---
-# <a name="microsoft-365-lighthouse-tenants-page-overview"></a>Omówienie strony dzierżaw Microsoft 365 Lighthouse
+# <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Omówienie strony Dzierżawy w Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse umożliwia zarządzanie kontami dzierżaw, wybierając pozycję **Dzierżawy** w okienku nawigacji po lewej stronie, aby otworzyć stronę Dzierżawy. Strona Dzierżawy zawiera listę wszystkich dzierżaw. Możesz wybrać dzierżawę, aby wyświetlić szczegółowe informacje, w tym szczegóły kontaktu i stan wdrożenia.
 
@@ -70,7 +70,7 @@ Po uaktywnieniu dzierżawy nie można wykonać akcji w dzierżawie do czasu zako
 
 ## <a name="tenant-tags"></a>Tagi dzierżawy
 
-Aby ułatwić organizowanie dzierżaw i łatwe filtrowanie istniejących widoków, możesz tworzyć i przypisywać tagi do dzierżaw. Aby dowiedzieć się więcej, zobacz [Zarządzanie listą dzierżaw](m365-lighthouse-manage-tenant-list.md).
+Aby ułatwić organizowanie dzierżaw i łatwe filtrowanie istniejących widoków, możesz tworzyć i przypisywać tagi do dzierżaw. Aby dowiedzieć się więcej, zobacz [Zarządzanie listą dzierżaw w Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md).
 
 > [!NOTE]
 > Możesz utworzyć maksymalnie 30 tagów w całej dzierżawie.
@@ -135,6 +135,6 @@ Karta Plany wdrażania zawiera również następujące opcje:
 
 [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artykuł)\
 [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)\
-[Zarządzanie listą dzierżaw](m365-lighthouse-manage-tenant-list.md) (artykuł)\
-[Omówienie wdrażania standardowych konfiguracji dzierżawy za pomocą punktów odniesienia](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (artykuł)\
+[Zarządzanie listą dzierżaw w Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (artykuł)\
+[Omówienie wdrażania standardowych konfiguracji dzierżawy za pomocą Microsoft 365 Lighthouse planów bazowych](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (artykuł)\
 [Wdrażanie Microsoft 365 Lighthouse punktów odniesienia](m365-lighthouse-deploy-baselines.md) (artykuł)

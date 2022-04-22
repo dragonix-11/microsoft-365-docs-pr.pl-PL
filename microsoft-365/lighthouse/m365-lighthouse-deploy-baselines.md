@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie Microsoft 365 Lighthouse bazowych
+title: Wdrażanie Microsoft 365 Lighthouse punktów odniesienia
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,184 +15,184 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse dowiedz się, jak wdrożyć Microsoft 365 Lighthouse bazowe.
-ms.openlocfilehash: 0e19843ee6cfebaf9b37e10929884d0671608451
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak wdrażać Microsoft 365 Lighthouse planach bazowych.
+ms.openlocfilehash: 2649094f36903e5607fee28862fa0af683d0986e
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504495"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022872"
 ---
-# <a name="deploy-microsoft-365-lighthouse-baselines"></a>Wdrażanie Microsoft 365 Lighthouse bazowych
+# <a name="deploy-microsoft-365-lighthouse-baselines"></a>Wdrażanie Microsoft 365 Lighthouse punktów odniesienia
 
-Microsoft 365 Lighthouse umożliwia wdrażanie standardowych konfiguracji dzierżaw zarządzanych w celu zabezpieczania użytkowników, urządzeń i danych w dzierżawach klientów. Istnieje siedem [domyślnych konfiguracji planu bazowego](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) standardowo z usługą Lighthouse. Za pomocą funkcji planu wdrażania latarni morskiej możesz wyświetlać, testować i wdrażać konfiguracje zabezpieczeń we wszystkich dzierżawach. Plan wdrażania jest dostępny tylko dla aktywnych dzierżawców. Po dojechania dzierżawy możesz porównać bieżącą konfigurację swoich klientów z domyślną konfiguracją podstawową i podjąć odpowiednie działania.
+Microsoft 365 Lighthouse umożliwia wdrażanie standardowych konfiguracji dzierżawy zarządzanej w celu zabezpieczenia użytkowników, urządzeń i danych w dzierżawach klientów. Istnieje siedem [domyślnych konfiguracji punktu odniesienia](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) , które są standardowo wyposażone w usługę Lighthouse. Za pomocą funkcji planu wdrożenia usługi Lighthouse można wyświetlać, testować i wdrażać konfiguracje zabezpieczeń we wszystkich dzierżawach. Plan wdrożenia jest dostępny tylko dla aktywnych dzierżaw. Po dołączeniu dzierżawy można porównać bieżącą konfigurację klientów z domyślną konfiguracją punktu odniesienia i wykonać odpowiednie akcje.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Upewnij się, że Twoja dzierżawa Twoich klientów spełnia wymagania wymienione w te sposób[: Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+Upewnij się, że Ty i Twoi dzierżawcy klienta spełniacie wymagania wymienione w [temacie Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-## <a name="view-a-deployment-plan"></a>Wyświetlanie planu wdrażania
+## <a name="view-a-deployment-plan"></a>Wyświetlanie planu wdrożenia
 
-1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawcy**.
+1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawy**.
 
-2. Z listy dzierżaw wybierz dzierżawę, którą chcesz wyświetlić.
+2. Z listy dzierżawy wybierz dzierżawę, którą chcesz wyświetlić.
 
-3. Wybierz **kartę Plan wdrażania** .
+3. Wybierz kartę **Plan wdrożenia** .
 
-    Karta Plan wdrażania zawiera listę z możliwość wyszukiwania i eksportu każdego etapu wdrożenia uwzględnionego w planie wdrażania dzierżawy, która zawiera następujące informacje dotyczące poszczególnych kroków wdrażania:
+    Karta Plan wdrożenia zawiera listę możliwych do przeszukiwania i eksportowania każdego kroku wdrożenia, która jest uwzględniona w planie wdrażania dzierżawy, która zawiera następujące informacje dotyczące każdego kroku wdrażania:
 
     | Kolumna            | Opis |
     |-----------------|-------------------------------------------------------------------------------------|
-    | Krok wdrażania | Opis etapu wdrażania.                                                     |
-    | Stan          | Stan kroku wdrażania.                                                  |
-    | Plan bazowy        | Plan bazowy, na podstawie którego pochodzi etap wdrożenia.                             |
-    | Kategoria        | Czy etap wdrażania jest skojarzony z zarządzaniem urządzeniami, tożsamością lub danymi. |
-    | Ostatnia aktualizacja    | Data ostatniej aktualizacji kroku wdrażania.                             |
+    | Krok wdrożenia | Opis kroku wdrożenia.                                                     |
+    | Stan          | Stan kroku wdrożenia.                                                  |
+    | Linii bazowej        | Punkt odniesienia, z którego pochodzi krok wdrożenia.                             |
+    | Kategoria        | Czy krok wdrożenia jest skojarzony z zarządzaniem urządzeniami, tożsamością czy danymi. |
+    | Ostatnia aktualizacja    | Data ostatniej aktualizacji kroku wdrożenia.                             |
 
 4. Z listy wybierz krok wdrożenia, który chcesz przejrzeć.
 
-    Na stronie Krok wdrożenia są podane następujące informacje:
+    Strona Krok wdrożenia zawiera następujące informacje:
 
     | Kolumna            | Opis |
     |-------------------|-----------------------------------------------------------------------------------------------|
-    | Podsumowanie        | Podsumowanie przeznaczenia Kroku wdrażania.                                         |
-    | Plan bazowy       | Plan bazowy, na podstawie którego pochodzi etap wdrożenia.                             |
-    | Kategoria       | Czy etap wdrażania jest skojarzony z zarządzaniem urządzeniami, tożsamością lub danymi. |
-    | Wymagana sku   | Jednostki SKU wymagane do ukończenia kroku wdrażania.                                      |
-    | Wpływ na użytkowników    | Wpływ wdrożenia kroku u użytkowników dzierżawy.                             |
-    | Dla użytkowników | Linki do zasobów, które mogą być pomocne dla użytkowników dzierżawy.                             |
-    | Następne kroki     | Linki i wskazówki dotyczące kolejnych odpowiednich kroków.                                |
+    | Podsumowanie        | Podsumowanie przeznaczenia kroku wdrożenia.                                         |
+    | Linii bazowej       | Punkt odniesienia, z którego pochodzi krok wdrożenia.                             |
+    | Kategoria       | Czy krok wdrożenia jest skojarzony z zarządzaniem urządzeniami, tożsamością czy danymi. |
+    | Wymagana jednostka SKU   | Jednostki SKU wymagane do ukończenia kroku wdrażania.                                      |
+    | Wpływ na użytkownika    | Wpływ wdrożenia kroku dla użytkowników dzierżawy.                             |
+    | Dla użytkowników | Linki do zasobów, które mogą okazać się przydatne dla użytkowników dzierżawy.                             |
+    | Następne kroki     | Linki i wskazówki dotyczące wszelkich odpowiednich następnych kroków.                                |
 
-    Kroki wdrażania składa się z jednego lub większej liczby procesów, które muszą zostać ukończone, aby spełnić wymagania kroku wdrażania. Strona Krok wdrażania zawiera tabelę procesu, która zawiera listę poszczególnych procesów uwzględnionych w kroku wdrażania i zawiera następujące informacje:
+    Kroki wdrażania obejmują co najmniej jeden proces, który należy ukończyć. Na stronie Krok wdrożenia znajduje się tabela zawierająca listę poszczególnych procesów uwzględnionych w kroku wdrażania i udostępnia następujące informacje:
 
     | Kolumna            | Opis |
     |-------------------|-------------------------------------------------------------|
-    | Nazwa procesu      | Nazwa procesu, który, jeśli zostanie zaznaczony, otworzy kartę Proces, która ma zastosowanie.          |
-    | Stan            | Stan wykryty tych konfiguracji ustawień uwzględnionych w procesie wdrażania.           |
-    | Portal zarządzania | Portal, za pomocą którego są zarządzane ustawienia konfiguracji skojarzone z tym procesem. |
+    | Nazwa procesu      | Nazwa procesu, który po wybraniu spowoduje otwarcie odpowiedniej karty Proces.          |
+    | Stan            | Wykryto stan tych konfiguracji ustawień uwzględnionych w procesie wdrażania.           |
+    | Portal zarządzania | Portal, za pomocą którego zarządzane są ustawienia konfiguracji skojarzone z procesem. |
 
 ## <a name="deploy-a-deployment-step"></a>Wdrażanie kroku wdrażania
 
-1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawcy**.
+1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawy**.
 
-2. Z listy dzierżaw wybierz dzierżawę, którą chcesz wyświetlić.
+2. Z listy dzierżawy wybierz dzierżawę, którą chcesz wyświetlić.
 
-3. Wybierz **kartę Plan wdrażania** .
+3. Wybierz kartę **Plan wdrożenia** .
 
 4. Z listy Krok wdrożenia wybierz krok wdrożenia, który chcesz wdrożyć.
 
-5. Wybierz **pozycję Przejrzyj i wdeksuj**.
+5. Wybierz pozycję **Przejrzyj i wdróż**.
 
-6. W **okienku Potwierdzanie** konfiguracji wybierz pozycję **Wdeksuj**.
+6. W okienku **Potwierdź konfiguracje** wybierz pozycję **Wdróż**.
 
 ## <a name="test-a-deployment-step"></a>Testowanie kroku wdrażania
 
-Aby uzyskać informacje o czynnościach wdrażania wdrożonych za pomocą zasad dostępu warunkowego, możesz porównać ustawienia konfiguracji w kroku wdrażania z ustawieniami w istniejących zasadach bez wdrażania ustawień w dzierżawie.
+W przypadku kroków wdrażania wdrożonych za pomocą zasad dostępu warunkowego można porównać ustawienia konfiguracji w kroku wdrażania z ustawieniami w istniejących zasadach bez wdrażania ustawień w dzierżawie.
 
-1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawcy**.
+1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawy**.
 
-2. Z listy dzierżaw wybierz dzierżawę, którą chcesz wyświetlić.
+2. Z listy dzierżawy wybierz dzierżawę, którą chcesz wyświetlić.
 
-3. Wybierz **kartę Plan wdrażania** .
+3. Wybierz kartę **Plan wdrożenia** .
 
 4. Z listy Krok wdrożenia wybierz krok wdrożenia, który chcesz wdrożyć.
 
-5. Wybierz **pozycję Przejrzyj i wdeksuj**.
+5. Wybierz pozycję **Przejrzyj i wdróż**.
 
-6. W **okienku Potwierdzanie** konfiguracji wybierz **pozycję Testuj te ustawienia bez wdrażania**.
+6. W okienku **Potwierdź konfiguracje** wybierz pozycję **Przetestuj te ustawienia bez wdrożenia**.
 
-7. Wybierz **pozycję Test**.
+7. Wybierz pozycję **Testuj**.
 
-Okienko Potwierdzanie konfiguracji zostanie zamknięte i wyświetli porównanie zasad. Każda zasada w istniejącej dzierżawie będzie wymieniona w tabeli Wykryte ustawienia.
+Okienko Potwierdź konfiguracje spowoduje zamknięcie i wyświetlenie porównania zasad. Wszystkie zasady w istniejącej dzierżawie zostaną wyświetlone w tabeli Wykryte ustawienia.
 
-Tabela Wykryte ustawienia zawiera listę wszystkich istniejących zasad i podsumowuje liczbę ustawień oraz w nawiasach liczbę użytkowników w jednym z następujących stanów:
-
-| Stan         | Opis
-|-------------|------------------------------------------------------------|
-| Ustawienia równe       | Łączna liczba ustawień konfiguracji w planie wdrażania o równoważnej wartości w dzierżawie.      |
-| Brakujące ustawienia     | Łączna liczba ustawień konfiguracji w planie wdrażania, dla których brakuje wartości w dzierżawie.      |
-| Ustawienia powodujące konflikt | Łączna liczba ustawień konfiguracji w planie wdrażania, których wartość w dzierżawie jest sprzeczna. |
-
-Wykryte ustawienia można również wyświetlać w modułowej tabeli, która zawiera szczegółowe informacje o ustawieniach konfiguracji dla poszczególnych zasad na poziomie ustawienia i użytkownika, a także sortować według każdego z następujących stanów ustawień:
+Tabela Wykryte ustawienia zawiera listę wszystkich istniejących zasad i zawiera podsumowanie liczby ustawień oraz w nawiasach liczbę użytkowników w jednym z następujących stanów:
 
 | Stan         | Opis
 |-------------|------------------------------------------------------------|
-| Ustawienia sumy       | Łączna liczba ustawień konfiguracji uwzględnionych w procesie wdrażania.                        |
-| Ustawienia równe       | Łączna liczba ustawień konfiguracji w planie wdrażania o równoważnej wartości w dzierżawie.      |
-| Brakujące ustawienia     | Łączna liczba ustawień konfiguracji w planie wdrażania, dla których brakuje wartości w dzierżawie.      |
-| Ustawienia powodujące konflikt | Łączna liczba ustawień konfiguracji w planie wdrażania, których wartość w dzierżawie jest sprzeczna. |
-| Dodatkowe ustawienia       | Łączna liczba ustawień konfiguracji z wartością w dzierżawie, ale bez wartości w planie wdrażania.     |
+| Równe ustawienia       | Całkowita liczba ustawień konfiguracji w planie wdrożenia z równoważną wartością w dzierżawie.      |
+| Brak ustawień     | Całkowita liczba ustawień konfiguracji w planie wdrożenia, w których brakuje wartości w dzierżawie.      |
+| Ustawienia powodujące konflikt | Całkowita liczba ustawień konfiguracji w planie wdrożenia, które mają wartość powodującą konflikt w dzierżawie. |
 
-Po zakończeniu tego porównania stan wykryty, stan wdrożenia i stan etapu wdrożenia zostaną automatycznie zaktualizowane przez latarnię morską.
+Wykryte ustawienia można również wyświetlić w tabeli modułowej, która zawiera szczegóły ustawień konfiguracji dla poszczególnych zasad na poziomie ustawienia i użytkownika i może być posortowana według każdego z następujących stanów ustawień:
 
-Jeśli nie ma żadnych istniejących zasad do porównania, wybierz pozycję Przejrzyj i wd wdrożono, aby ponownie otworzyć okienko Potwierdzanie konfiguracji, a następnie wybierz pozycję Wdeksuj.
+| Stan         | Opis
+|-------------|------------------------------------------------------------|
+| Ustawienia sumy       | Całkowita liczba ustawień konfiguracji uwzględnionych w procesie wdrażania.                        |
+| Równe ustawienia       | Całkowita liczba ustawień konfiguracji w planie wdrożenia z równoważną wartością w dzierżawie.      |
+| Brak ustawień     | Całkowita liczba ustawień konfiguracji w planie wdrożenia, w których brakuje wartości w dzierżawie.      |
+| Ustawienia powodujące konflikt | Całkowita liczba ustawień konfiguracji w planie wdrożenia, które mają wartość powodującą konflikt w dzierżawie. |
+| Dodatkowe ustawienia       | Całkowita liczba ustawień konfiguracji z wartością w dzierżawie, ale bez wartości w planie wdrożenia.     |
 
-Jeśli istnieją zasady, z którymi należy się porównać, możesz:
+Po dokonaniu tego porównania usługa Lighthouse automatycznie zaktualizuje stan Wykryto, Stan wdrożenia i Stan kroku wdrożenia.
 
-- Edytuj ustawienia konfiguracji planu wdrażania i sprawdzaj je ponownie pod względem istniejących zasad, wybierz pozycję  Przejrzyj i wdaj, aby ponownie otworzyć okienko Potwierdzanie konfiguracji, dostosuj odpowiednie ustawienia konfiguracji, ponownie zaznacz pole wyboru i wybierz pozycję **Test** u dołu okienka.
+Jeśli nie ma istniejących zasad do porównania, wybierz pozycję Przejrzyj i wdróż, aby ponownie otworzyć okienko Potwierdź konfiguracje, a następnie wybierz pozycję Wdróż.
 
-- Edytuj istniejące zasady w ramach odpowiedniego portalu zarządzania, aby uzgadniać różnice przez:
+Jeśli istnieją zasady, z którymi należy się porównać, możesz wykonać jedną z następujących czynności:
+
+- Edytuj ustawienia konfiguracji planu wdrożenia i przetestuj je ponownie względem istniejących zasad, wybierz pozycję **Przejrzyj i wdróż** , aby ponownie otworzyć okienko Potwierdź konfiguracje, dostosować żądane ustawienia konfiguracji, ponownie zaznaczyć pole wyboru, a następnie wybierz pozycję **Testuj** w dolnej części okienka.
+
+- Edytuj istniejące zasady w odpowiednim portalu zarządzania, aby uzgodnić różnice między nimi:
   - Stosowanie brakujących ustawień
-  - Edytowanie ustawień konfliktów
+  - Edytowanie ustawień powodujących konflikt
   - Usuwanie istniejących zasad
 
-Dla każdego procesu wdrażania, który można zautomatyzować za pośrednictwem latarni morskiej, istnieje zarówno stan wdrożenia, jak i stan wykryty.
+Dla każdego procesu wdrażania, który można zautomatyzować za pośrednictwem usługi Lighthouse, występuje zarówno stan wdrożenia, jak i wykryty stan.
 
-- Stan wykryty wskazuje, w jakim zakresie są obecnie wdrożone ustawienia w tym procesie.
-- Stan wdrożenia to stan ostatniego wdrożenia u dzierżawy.
+- Wykryty stan wskazuje, w jakim stopniu ustawienia w tym procesie są obecnie wdrażane.
+- Stan wdrożenia to stan ostatniego wdrożenia w dzierżawie.
 
-Kroki wdrażania można wdrożyć niezależnie od istniejących zasad, ale nie będą uznawane za ukończone, dopóki nie istnieją żadne ustawienia powodujące konflikt. Niepowodzenie rozwiązania tych ustawień powodującego konflikt może mieć wpływ na środowisko użytkownika. 
+Kroki wdrażania można wdrożyć niezależnie od istniejących zasad, ale nie będą uznawane za ukończone, dopóki nie zostaną spełnione żadne ustawienia powodujące konflikt. Nie można rozwiązać tych ustawień powodujących konflikt może mieć wpływ na środowisko użytkownika. 
 
-Wdrożenie kroku wdrażania w wystąpieniach, gdy w dzierżawie istnieją jednakowe ustawienia, z poziomu istniejących zasad spowoduje duplikowanie istniejących ustawień w dzierżawie, ale nie będzie mieć wpływu na środowisko użytkownika. 
+Wdrożenie kroku wdrożenia w wystąpieniach, gdy w dzierżawie istnieją równe ustawienia z istniejących zasad, spowoduje duplikowanie istniejących ustawień w dzierżawie, ale nie wpłynie na środowisko użytkownika. 
 
-Dodatkowe ustawienia są dostępne dla Twojej wiedzy, ale nie wymagają podjęcia działań.
+Dodatkowe ustawienia są dostępne dla Twojej świadomości, ale nie wymagają podjęcia działań.
 
-Aby uzyskać więcej informacji na temat zarządzania konfliktami zasad, zobacz Dokumentacja dostępu warunkowego w [usłudze Azure AD](/azure/active-directory/conditional-access/).
+Aby uzyskać więcej informacji na temat zarządzania konfliktami zasad, zobacz [dokumentację dostępu warunkowego usługi Azure AD](/azure/active-directory/conditional-access/).
 
-## <a name="update-deployment-step-status"></a>Aktualizowanie stanu etapu wdrożenia
+## <a name="update-deployment-step-status"></a>Stan kroku wdrażania aktualizacji
 
-1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawcy**.
+1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawy**.
 
-2. Z listy dzierżaw wybierz dzierżawę, którą chcesz wyświetlić.
+2. Z listy dzierżawy wybierz dzierżawę, którą chcesz wyświetlić.
 
-3. Wybierz **kartę Plan wdrażania** .
+3. Wybierz kartę **Plan wdrożenia** .
 
-4. Z listy kroków wdrożenia wybierz krok wdrożenia, który chcesz zaktualizować.
+4. Z listy kroków wdrażania wybierz krok wdrożenia, który chcesz zaktualizować.
 
-5. Z listy **rozwijanej** Adres do wybierz stan akcji.
+5. Z listy rozwijanej **Adres do** wybierz stan akcji.
 
     | Stan akcji                        | Opis      |
     |---------------------------------------|----------------------------------------|
-    | Adres do                        | Domyślny stan wszystkich kroków wdrażania, które NIE obejmują wielu procesów wdrożeniowych.      |
-    | Planowane                           | Etap wdrożenia został zaplanowany, ale jeszcze nie został ukończony.                                      |
-    | Ryzyko zaakceptowane                     | Użytkownik zaakceptował to ryzyko, które w przeciwnym razie zostałoby odwrócone przez zastosowanie kroku wdrażania. |
-    | Rozwiązanie problemu związanego z ryzykiem za pośrednictwem innej firmy | Problem został rozwiązany przez implementację aplikacji lub oprogramowania innej firmy.             |
-    | Rozwiązanie za pomocą alternatywnych środków  | Problem został rozwiązany za pomocą alternatywnych środków, takich jak wdrożenie narzędzia wewnętrznego.    |
-    | Zastosowana konfiguracja ręczna      | Konfiguracja  zalecana w planie wdrażania została zastosowana ręcznie.                         |
+    | Adres                        | Domyślny stan wszystkich kroków wdrażania, które NIE obejmują wielu procesów kroków wdrażania.      |
+    | Planowane                           | Krok wdrożenia został zaplanowany, ale nie został jeszcze ukończony.                                      |
+    | Zaakceptowano ryzyko                     | Użytkownik zaakceptował ryzyko, które w przeciwnym razie zostałoby zażegnane przez zastosowanie kroku wdrożenia. |
+    | Ryzyko rozwiązane za pośrednictwem innych firm | Ryzyko zostało rozwiązane przez implementację aplikacji lub oprogramowania innej firmy.             |
+    | Rozwiązane za pomocą alternatywnych środków  | Ryzyko zostało rozwiązane za pomocą alternatywnych środków, takich jak implementacja narzędzia wewnętrznego.    |
+    | Zastosowana konfiguracja ręczna      | Konfiguracja określona w planie wdrażania została zastosowana ręcznie.                         |
 
-## <a name="share-deployment-step"></a>Udostępnianie kroku wdrażania
+## <a name="share-deployment-step"></a>Krok wdrażania udostępniania
 
-1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawcy**.
+1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawy**.
 
-2. Z listy dzierżaw wybierz dzierżawę, którą chcesz wyświetlić.
+2. Z listy dzierżawy wybierz dzierżawę, którą chcesz wyświetlić.
 
-3. Wybierz **kartę Plan wdrażania** .
+3. Wybierz kartę **Plan wdrożenia** .
 
 4. Z listy Krok wdrożenia wybierz krok wdrożenia, który chcesz udostępnić.
 
-5. Z **listy rozwijanej** Udostępnij wybierz jedną z następujących opcji.
+5. Z listy rozwijanej **Udostępnij** wybierz jedną z następujących opcji.
 
     | Opcja  | Opis |
     |-----------|-------------------------------------------------------------------------|
-    | Kopiuj  | Kopiuje link do kroku wdrażania do Schowka.                                     |
+    | Kopii  | Kopiuje link do kroku wdrożenia do schowka.                                     |
     | Poczta e-mail | Otwiera nową wiadomość e-mail na komputerze lokalnym i wstawia link do kroku wdrażania. |
 
-    Link umożliwia wszystkim osobom z uprawnieniami w organizacji wyświetlanie planu wdrażania dzierżawy.
+    Link umożliwi wszystkim osobom z uprawnieniami w organizacji wyświetlanie planu wdrożenia dzierżawy.
 
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Omówienie wdrażania standardowych konfiguracji dzierżawy](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) przy użyciu planu bazowego (artykuł)\
-[Omówienie Microsoft 365 dzierżaw w latarni morskiej](m365-lighthouse-tenants-page-overview.md) (artykuł)\
-[Microsoft 365 Lighthouse faq](m365-lighthouse-faq.yml) (artykuł)\
-[Konfigurowanie Microsoft 365 Lighthouse zabezpieczeń portalu](m365-lighthouse-configure-portal-security.md) (artykuł) 
+[Omówienie wdrażania standardowych konfiguracji dzierżawy za pomocą Microsoft 365 Lighthouse planów bazowych](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (artykuł)\
+[Omówienie strony Windows 365 (komputery w chmurze) w Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (artykuł)\
+[Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)\
+[Konfigurowanie zabezpieczeń portalu Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) (artykuł) 

@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie zezwalaniami i blokami na liście zezwalania/blokowania dzierżawy
+title: Zarządzanie zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,280 +14,284 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwalania i blokowania na liście zezwalania/blokowania dzierżawy w portalu zabezpieczeń.
+description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e27da44a38162955df252e29c1754c93a2dc8967
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0ed23cf7bfe8db25ed216859c434e86f14710db8
+ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318567"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "65031846"
 ---
-# <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą zezwalania/blokowania dzierżawy
+# <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 >
-> Niektóre funkcje opisane w tym artykule są dostępne w wersji Preview, mogą ulec zmianie i nie są dostępne we wszystkich organizacjach.
+> Niektóre funkcje opisane w tym artykule są w wersji zapoznawczej, mogą ulec zmianie i nie są dostępne we wszystkich organizacjach.
 >
-> Jeśli w Twojej organizacji nie ma funkcji fałszowania opisanych w tym artykule, zobacz starsze środowisko zarządzania fałszerami w artykule Zarządzanie fałszywymi nadawcami przy użyciu zasad ochrony przed fałszerami i wglądu w analizę fałszowania w [uciekinie usługi EOP](walkthrough-spoof-intelligence-insight.md).
+> Jeśli Twoja organizacja nie ma funkcji fałszowania zgodnie z opisem w tym artykule, zobacz starsze środowisko zarządzania fałszowaniem w [temacie Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP (Zarządzanie fałszowaniem nadawców przy użyciu zasad analizy fałszowania i fałszowanie analizy w ramach EOP](walkthrough-spoof-intelligence-insight.md)).
 
-W Microsoft 365 z skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych usług Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online można nie zgodzić się z werdyktem filtrowania usługi EOP. Na przykład dobra wiadomość może zostać oznaczona jako zła (wynik fałszywie dodatni) lub błędna wiadomość może zostać dozwolona przez (wynik fałszywie ujemny).
+W Microsoft 365 organizacji ze skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacji Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych, możesz nie zgodzić się z werdyktem filtrowania EOP. Na przykład dobra wiadomość może zostać oznaczona jako zła (fałszywie dodatnia) lub zła wiadomość może zostać przepuszczona (fałszywie ujemna).
 
-Lista zezwalania/blokowania dzierżawy w portalu Microsoft 365 Defender umożliwia ręczne zastępowanie Microsoft 365 werdyktów filtrowania. Lista zezwalania/blokowania dzierżawy jest używana podczas przepływu poczty dla wiadomości przychodzących (nie dotyczy wiadomości wewnątrz organizacji) i w momencie kliknięć przez użytkownika. Można określić następujące typy zastępować:
+Lista dozwolonych/zablokowanych dzierżaw w portalu Microsoft 365 Defender umożliwia ręczne zastąpienie Microsoft 365 filtrowania werdyktów. Lista zezwalania/blokowania dzierżawy jest używana podczas przepływu poczty dla wiadomości przychodzących (nie dotyczy wiadomości wewnątrz organizacji) i w momencie kliknięcia przez użytkownika. Można określić następujące typy przesłonięcia:
 
 - Adresy URL do zablokowania.
 - Pliki do zablokowania.
-- Adresy e-mail nadawców i domeny do zablokowania.
-- Sfałszowani nadawcy, aby zezwolić lub zablokować. Jeśli zastąpisz zezwalanie na werdykt lub zablokujemy możliwość fałszowania informacji o analizie[, fałszywy](learn-about-spoof-intelligence.md) nadawca stanie się ręcznym wpisem zezwalania lub blokowania, który pojawia się tylko na karcie Fałsz na liście Zezwalaj/Zablokuj dzierżawy. Możesz również ręcznie utworzyć w tym miejscu zezwalanie na lub blokowanie wpisów dla sfałszowanych nadawców, zanim zostaną one wykryte przez fałszywą inteligencję.
-- Adresy URL, na które zezwalasz.
-- Pliki, na które zezwalasz.
-- Adresy e-mail lub domeny nadawców, na które chcesz zezwolić.
+- Wiadomości e-mail lub domeny nadawcy do zablokowania.
+- Spoofed nadawców, aby zezwolić lub zablokować. Jeśli przesłonisz werdykt zezwalania lub blokowania w [analizie analizy fałszowania](learn-about-spoof-intelligence.md), sfałszowany nadawca staje się ręcznym wpisem zezwalającym lub blokowym, który pojawia się tylko na karcie **Fałszowanie** na liście dozwolonych/zablokowanych dzierżaw. Możesz również ręcznie utworzyć wpisy zezwalania lub blokowania dla sfałszowanych nadawców w tym miejscu, zanim zostaną wykryte przez analizę fałszowania.
+- Adresy URL do zezwolenia.
+- Pliki, które mają być dozwolone.
+- Wysyłanie wiadomości e-mail lub domen nadawcy do zezwolenia.
 
-W tym artykule opisano sposób konfigurowania wpisów na liście zezwalania/blokowania dzierżawy w portalu usługi Microsoft 365 Defender lub w programie Power Microsoft 365 Shell (program Exchange Online PowerShell dla organizacji z skrzynkami pocztowymi w programie Exchange Online; autonomiczny program PowerShell usługi EOP dla organizacji bez Exchange Online skrzynki pocztowe).
+W tym artykule opisano sposób konfigurowania wpisów na liście dozwolonych/zablokowanych dzierżaw w portalu Microsoft 365 Defender lub w programie PowerShell (Exchange Online programu PowerShell dla organizacji Microsoft 365 ze skrzynkami pocztowymi w Exchange Online; autonomiczny program PowerShell EOP dla organizacji bez Exchange Online skrzynki pocztowe).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
-- Otwierasz portal Microsoft 365 Defender w witrynie <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Listy zezwalań/** zablokowanych dzierżaw, użyj .<https://security.microsoft.com/tenantAllowBlockList>
+- Otwórz portal Microsoft 365 Defender pod adresem <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Zezwalaj/blokuj listy dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 
-- Pliki można określić, używając wartości skrótu SHA256 pliku. Aby znaleźć wartość skrótu SHA256 pliku w programie Windows, uruchom następujące polecenie w wierszu polecenia:
+- Pliki można określić przy użyciu wartości skrótu SHA256 pliku. Aby znaleźć wartość skrótu SHA256 pliku w Windows, uruchom następujące polecenie w wierszu polecenia:
 
   ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
-  Przykładowa wartość to `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Wartości skrótu perceptual (pHash) nie są obsługiwane.
+  Przykładowa wartość to `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Wartości skrótu perceptualnego (pHash) nie są obsługiwane.
 
-- Dostępne wartości adresu URL opisano w składni adresu URL dla sekcji Lista adresów zezwalania [/blokowania dzierżawy](#url-syntax-for-the-tenant-allowblock-list) w dalszej części tego artykułu.
+- Dostępne wartości adresu URL są opisane w [składni adresu URL dla sekcji Zezwalanie na dzierżawę/Lista zablokowanych w dalszej](#url-syntax-for-the-tenant-allowblock-list) części tego artykułu.
 
-- Lista zezwalania/blokowania dzierżawy umożliwia nadawcom maksymalnie 500 wpisów, 500 wpisów dla adresów URL, 500 wpisów dla skrótów plików i 1024 wpisy dotyczące fałszowania (sfałszowanych nadawców).
+- Lista dozwolonych/blokowych dzierżawy zezwala na maksymalnie 500 wpisów dla nadawców, 500 wpisów adresów URL, 500 wpisów skrótów plików i 1024 wpisy na potrzeby fałszowania (sfałszowanych nadawców).
 
-- Maksymalna liczba znaków w każdym wpisie to:
+- Maksymalna liczba znaków dla każdego wpisu to:
   - Skróty plików = 64
-  - URL = 250
+  - Adres URL = 250
 
 - Wpis powinien być aktywny w ciągu 30 minut.
 
-- Domyślnie wpisy na liście zezwalania/blokowania dzierżawy wygasają po 30 dniach. Można określić datę lub ustawić ją tak, aby nigdy nie wygasła.
+- Domyślnie wpisy na liście zezwalania/blokowania dzierżawy wygasają po 30 dniach. Możesz określić datę lub ustawić ją tak, aby nigdy nie wygasały.
 
-- Aby nawiązać połączenie Exchange Online PowerShell, zobacz Połączenie[, Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell usługi EOP, [Połączenie się z Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell EOP, zobacz [Połączenie do Exchange Online Protection programu PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Aby można było wykonać procedury z tego artykułu, musisz mieć przypisane uprawnienia Microsoft 365 Defender portalu administracyjnego:
+- Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w portalu Microsoft 365 Defender:
   - **Nadawcy, adresy URL i pliki**:
-    - Aby dodawać i usuwać wartości z listy ról Zezwalaj/Blokuj dzierżawy, musisz być członkiem grup ról Zarządzanie **organizacją,** **Administrator** zabezpieczeń lub **Operator** zabezpieczeń albo mieć przypisaną rolę **Menedżer allowBlockList dzierżawy** .
-    - Aby uzyskać dostęp tylko do odczytu do listy zablokowanych/zezwalanych na dzierżawę, musisz być członkiem  grup ról Czytnik globalny lub **Czytnik** zabezpieczeń.
+    - Aby dodać i usunąć wartości z listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem 
+      -   **Zarządzanie organizacją** lub grupa ról **administratora zabezpieczeń** (**rola administratora zabezpieczeń**)
+      -    Grupa ról **operatora zabezpieczeń** (**Menedżer AllowBlockList dzierżawy**).
+    - Aby uzyskać dostęp tylko do odczytu do listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem 
+      - **Globalna grupa ról czytelnika**
+      - Grupa ról **czytelnika zabezpieczeń**
   - **Fałszowanie**: jedna z następujących kombinacji:
     - **Zarządzanie organizacją**
-    - **Administrator zabezpieczeń** <u>i</u> **konfiguracja tylko do wyświetlania** lub **zarządzanie organizacją tylko do odczytu**.
+    - **Administrator zabezpieczeń** <u>i</u> **konfiguracja tylko do wyświetlania** lub **zarządzanie organizacją tylko do wyświetlania**.
 
-  Aby uzyskać więcej informacji, zobacz [Uprawnienia w aplikacji Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Aby uzyskać więcej informacji, zobacz [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w  aplikacji Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+  > - Dodanie użytkowników do odpowiedniej roli Azure Active Directory w Centrum administracyjne platformy Microsoft 365 daje użytkownikom wymagane uprawnienia _i_ uprawnienia do innych funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
   >
-  > - Grupa **ról Zarządzanie organizacją tylko do** odczytu w [programie Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) również zapewnia dostęp tylko do odczytu tej funkcji.
+  > - Grupa ról **Zarządzanie organizacją tylko do wyświetlania** w [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) zapewnia również dostęp tylko do odczytu do tej funkcji.
 
-## <a name="configure-the-tenant-allowblock-list"></a>Konfigurowanie listy zezwalania/blokowania dzierżawy
+## <a name="configure-the-tenant-allowblock-list"></a>Konfigurowanie listy dozwolonych/zablokowanych dzierżaw
 
-### <a name="use-the-microsoft-365-defender-portal"></a>Korzystanie z Microsoft 365 Defender a
+### <a name="use-the-microsoft-365-defender-portal"></a>Korzystanie z portalu Microsoft 365 Defender
 
-W portalu Microsoft 365 Defender przejdź <https://security.microsoft.com>do **strony Zasady i & zasady** \>  \> dotyczące zagrożeń na listach **zezwalania/** blokowania dzierżawy w **sekcji** Reguły. Aby przejść bezpośrednio do strony **Listy zezwalań/** zablokowanych dzierżaw, użyj .<https://security.microsoft.com/tenantAllowBlockList>
+W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do obszaru **Zasady & reguły** \> zasad \> **zagrożeń** **Zezwalaj na dzierżawę/blokuj listy** w sekcji **Reguły**. Aby przejść bezpośrednio do strony **Zezwalaj/blokuj listy dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 
 Aby dodać wszystkie bloki, zobacz [Dodawanie bloków na liście zezwalania/blokowania dzierżawy](manage-tenant-blocks.md).
 
-Aby dodać wszystkie zezwalają, zobacz [Dodawanie zezwala na na liście zezwalania/blokowania dzierżawy](manage-tenant-allows.md).
+Aby dodać wszystkie opcje zezwala, zobacz [Dodawanie dozwolonych na liście dozwolonych/zablokowanych dzierżaw](manage-tenant-allows.md).
 
-Aby zmodyfikować i usunąć wszystkie bloki i zezwalają, zobacz [Modyfikowanie i usuwanie wpisów na liście zezwalania/blokowania dzierżawy](modify-remove-entries-tenant-allow-block.md).
+Aby zmodyfikować i usunąć wszystkie bloki i zezwolenia, zobacz [Modyfikowanie i usuwanie wpisów na liście dozwolonych/zablokowanych dzierżaw](modify-remove-entries-tenant-allow-block.md).
 
-### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Używanie Exchange Online PowerShell lub autonomicznego programu PowerShell usługi EOP
+### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Używanie Exchange Online programu PowerShell lub autonomicznego programu PowerShell EOP
 
-Aby zarządzać wszystkimi zezwalaniami i blokami, zobacz Dodawanie bloków na liście zezwalania [/](manage-tenant-blocks.md)blokowania dzierżawy, dodawanie zezwala na nie na liście zezwalania [/](manage-tenant-allows.md)blokowania dzierżawy oraz Modyfikowanie i usuwanie wpisów na liście zezwalania [/blokowania dzierżawy](modify-remove-entries-tenant-allow-block.md).
+Aby zarządzać wszystkimi zezwoleniami i blokami, zobacz [Dodawanie bloków na liście dozwolonych/zablokowanych dzierżaw](manage-tenant-blocks.md), [Dodawanie dozwolonych elementów na liście dozwolonych/zablokowanych dzierżaw](manage-tenant-allows.md) oraz [Modyfikowanie i usuwanie wpisów na liście dozwolonych/zablokowanych dzierżawców](modify-remove-entries-tenant-allow-block.md).
 
-## <a name="view-entries-in-the-tenant-allowblock-list"></a>Wyświetlanie wpisów na liście zezwalania/blokowania dzierżawy
+## <a name="view-entries-in-the-tenant-allowblock-list"></a>Wyświetlanie wpisów na liście dozwolonych/zablokowanych dzierżaw
 
-1. W portalu Microsoft 365 Defender przejdź <https://security.microsoft.com>do **strony Zasady i & zasady** \>  \> dotyczące zagrożeń na listach **zezwalania/** blokowania dzierżawy w **sekcji** Reguły. Aby przejść bezpośrednio do strony **Listy zezwalań/** zablokowanych dzierżaw, użyj .<https://security.microsoft.com/tenantAllowBlockList>
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do obszaru **Zasady & reguły** \> zasad \> **zagrożeń** **Zezwalaj na dzierżawę/blokuj listy** w sekcji **Reguły**. Aby przejść bezpośrednio do strony **Zezwalaj/blokuj listy dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. Wybierz kartę. Dostępne kolumny zależą od wybranej karty:
+2. Wybierz odpowiednią kartę. Dostępne kolumny zależą od wybranej karty:
 
    - **Nadawcy**:
-     - **Wartość**: domena lub adres e-mail nadawcy.
-     - **Akcja**: Wartość **Zezwalaj lub** **Zablokuj**.
+     - **Wartość**: domena nadawcy lub adres e-mail.
+     - **Akcja**: wartość **Zezwalaj** lub **Blokuj**.
      - **Zmodyfikowane przez**
      - **Ostatnia aktualizacja**
-     - **Usuń w dniu**
+     - **Usuń przy**
      - **Uwagi**
    - **Adresy URL**:
      - **Wartość**: adres URL.
-     - **Akcja**: Wartość **Zezwalaj lub** **Zablokuj**.
+     - **Akcja**: wartość **Zezwalaj** lub **Blokuj**.
      - **Zmodyfikowane przez**
      - **Ostatnia aktualizacja**
-     - **Usuń w dniu**
+     - **Usuń przy**
      - **Uwagi**
    - **Pliki**
      - **Wartość**: skrót pliku.
-     - **Akcja**: Wartość **Zezwalaj lub** **Zablokuj**.
+     - **Akcja**: wartość **Zezwalaj** lub **Blokuj**.
      - **Zmodyfikowane przez**
      - **Ostatnia aktualizacja**
-     - **Usuń w dniu**
+     - **Usuń przy**
      - **Uwagi**
    - **Fałszowanie**
-     - **Fałszywy użytkownik**
-     - **Infrastruktura wysyłania**
-     - **Spoof type (Fałsz**): Wartość **Wewnętrzna** lub **Zewnętrzna**.
-     - **Akcja**: Wartość **Blokuj lub** **Zezwalaj**.
+     - **Sfałszowany użytkownik**
+     - **Wysyłanie infrastruktury**
+     - **Typ fałszowania**: wartość **Wewnętrzna** lub **Zewnętrzna**.
+     - **Akcja**: wartość **Blokuj** lub **Zezwalaj**.
 
-   Możesz kliknąć nagłówek kolumny, aby posortować kolumnę w kolejności rosnącej lub malejącej.
+   Możesz kliknąć nagłówek kolumny, aby posortować w kolejności rosnącej lub malejącej.
 
-   Możesz kliknąć pozycję **Grupuj,** aby pogrupować wyniki. Dostępne wartości zależą od wybranej karty:
+   Możesz kliknąć pozycję **Grupuj** , aby pogrupować wyniki. Dostępne wartości zależą od wybranej karty:
 
-   - **Nadawcy**: Wyniki można grupowania według **akcji**.
-   - **Adresy URL**: Wyniki można grupowania według **akcji**.
-   - **Pliki**: Wyniki można grupowania **według akcji**.
-   - **Fałszowanie**: Wyniki można grupowania według **typu** Akcja lub **Fałsz**.
+   - **Nadawcy**: wyniki można grupować według **akcji**.
+   - **Adresy URL**: wyniki można grupować według **akcji**.
+   - **Pliki**: wyniki można grupować według **akcji**.
+   - **Fałszowanie**: wyniki można grupować według typu **Akcja** lub **Fałszowanie**.
 
-   Kliknij **przycisk** Wyszukaj, wprowadź całą wartość lub jej część, a następnie naciśnij klawisz ENTER, aby znaleźć określoną wartość. Po zakończeniu kliknij ikonę ![Wyczyść wyszukiwanie.](../../media/m365-cc-sc-close-icon.png) **Wyczyść wyszukiwanie**.
+   Kliknij **pozycję Wyszukaj**, wprowadź całość lub część wartości, a następnie naciśnij klawisz ENTER, aby znaleźć określoną wartość. Po zakończeniu kliknij pozycję ![Wyczyść ikonę wyszukiwania.](../../media/m365-cc-sc-close-icon.png) **Wyczyść wyszukiwanie**.
 
-   Kliknij **pozycję Filtruj** , aby przefiltrować wyniki. Wartości dostępne w **wysuwanych opcjach Filtruj** zależą od wybranej karty:
+   Kliknij **pozycję Filtruj** , aby filtrować wyniki. Wartości dostępne w wyświetlonym **wysuwu filtru** zależą od wybranej karty:
 
-   - **Nadawcy**
+   - **Nadawców**
      - **Akcja**
-     - **Nigdy nie wygasają**
+     - **Nigdy nie wygasaj**
      - **Data ostatniej aktualizacji**
-     - **Usuń w dniu**
-   - **Adresy URL**
+     - **Usuń przy**
+   - **Adresy url**
      - **Akcja**
-     - **Nigdy nie wygasają**
+     - **Nigdy nie wygasaj**
      - **Data ostatniej aktualizacji**
-     - **Usuń w dniu**
+     - **Usuń przy**
    - **Pliki**
      - **Akcja**
-     - **Nigdy nie wygasają**
+     - **Nigdy nie wygasaj**
      - **Ostatnia aktualizacja**
-     - **Usuń w dniu**
+     - **Usuń przy**
    - **Fałszowanie**
      - **Akcja**
-     - **Typ fałsz**
+     - **Typ fałszowania**
 
-   Po zakończeniu kliknij przycisk **Zastosuj**. Aby wyczyścić istniejące filtry, **kliknij pozycję Filtruj**, a następnie w wyświetlonym **wysuwanych** czacie filtru kliknij pozycję **Wyczyść filtry**.
+   Po zakończeniu kliknij przycisk **Zastosuj**. Aby wyczyścić istniejące filtry, kliknij pozycję **Filtruj**, a następnie w wyświetlonym wysuwu **Filtr** kliknij pozycję **Wyczyść filtry**.
 
 4. Po zakończeniu kliknij przycisk **Dodaj**.
 
-## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>Wyświetlanie wpisów nadawcy, pliku lub adresu URL na liście zezwalania/blokowania dzierżawy
+## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>Wyświetlanie wpisów nadawcy, pliku lub adresu URL na liście dozwolonych/zablokowanych dzierżaw
 
-Aby wyświetlić wpisy zablokowanych nadawców, plików i adresów URL na liście zezwalania/blokowania dzierżawy, użyj następującej składni:
+Aby wyświetlić wpisy nadawcy bloku, pliku lub adresu URL na liście dozwolonych/zablokowanych dzierżawców, użyj następującej składni:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <Sender | FileHash | URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
 ```
 
-W tym przykładzie są zwracane informacje dla określonej wartości skrótu pliku.
+Ten przykład zwraca informacje o określonej wartości skrótu pliku.
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
 ```
 
-W tym przykładzie są zwracane wszystkie zablokowane adresy URL.
+Ten przykład zwraca wszystkie zablokowane adresy URL.
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
-Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-## <a name="view-spoofed-sender-entries"></a>Wyświetlanie fałszywych wpisów nadawców
+## <a name="view-spoofed-sender-entries"></a>Wyświetlanie fałszywych wpisów nadawcy
 
-Aby wyświetlić fałszywych nadawców na liście zezwalania/blokowania dzierżawy, użyj następującej składni:
+Aby wyświetlić sfałszowane wpisy nadawcy na liście dozwolonych/zablokowanych dzierżaw, użyj następującej składni:
 
 ```powershell
 Get-TenantAllowBlockListSpoofItems [-Action <Allow | Block>] [-SpoofType <External | Internal>
 ```
 
-W tym przykładzie zwracane są wszystkie sfałszowane wpisy nadawców na liście zezwalania/blokowania dzierżawy.
+Ten przykład zwraca wszystkie sfałszowane wpisy nadawcy na liście Zezwalaj/Blokuj dzierżawę.
 
 ```powershell
 Get-TenantAllowBlockListSpoofItems
 ```
 
-W tym przykładzie zwracane są wszystkie wewnętrzne wpisy fałszywych nadawców.
+Ten przykład zwraca wszystkie wewnętrzne wpisy nadawcy zezwalające na sfałszowane wpisy nadawcy.
 
 ```powershell
 Get-TenantAllowBlockListSpoofItems -Action Allow -SpoofType Internal
 ```
 
-W tym przykładzie zwracane są wszystkie zewnętrzne wpisy zablokowanych sfałszowanych nadawców.
+Ten przykład zwraca wszystkie zablokowane sfałszowane wpisy nadawcy, które są zewnętrzne.
 
 ```powershell
 Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 ```
 
-Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-TenantAllowBlockListSpoofItems](/powershell/module/exchange/get-tenantallowblocklistspoofitems).
+Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-TenantAllowBlockListSpoofItems](/powershell/module/exchange/get-tenantallowblocklistspoofitems).
 
-## <a name="url-syntax-for-the-tenant-allowblock-list"></a>Składnia adresu URL dla listy zezwalania/blokowania dzierżawy
+## <a name="url-syntax-for-the-tenant-allowblock-list"></a>Składnia adresu URL listy dozwolonych/zablokowanych dzierżaw
 
 - Adresy IPv4 i IPv6 są dozwolone, ale porty TCP/UDP nie są.
 
-- Rozszerzenia filename nie są dozwolone (na przykład test.pdf).
+- Rozszerzenia nazw plików są niedozwolone (na przykład test.pdf).
 
-- Standard Unicode nie jest obsługiwany, ale kod punycode jest obsługiwany.
+- Unicode nie jest obsługiwane, ale punycode jest.
 
-- Nazwy hostów są dozwolone, jeśli wszystkie z następujących instrukcji są prawdziwe:
-  - Nazwa hosta zawiera okres.
-  - Z lewej strony okresu jest co najmniej jeden znak.
-  - Z prawej strony okresu znajdują się co najmniej dwa znaki.
+- Nazwy hostów są dozwolone, jeśli wszystkie następujące instrukcje są prawdziwe:
+  - Nazwa hosta zawiera kropkę.
+  - Po lewej stronie kropki znajduje się co najmniej jeden znak.
+  - Po prawej stronie okresu znajdują się co najmniej dwa znaki.
 
-  Na przykład jest `t.co` dozwolone lub `.com` `contoso.` niedozwolone.
+  Na przykład `t.co` jest dozwolone lub `.com` `contoso.` niedozwolone.
 
-- Subpaths are not implied for allows.
+- Ścieżki podrzędne nie są dorozumiane w przypadku zezwalania.
 
-  Na przykład nie `contoso.com` zawiera .`contoso.com/a`
+  Na przykład `contoso.com` nie zawiera elementu `contoso.com/a`.
 
 - Symbole wieloznaczne (*) są dozwolone w następujących scenariuszach:
 
-  - Po lewej stronie symbolu wieloznacznego musi być określony okres, aby określić poddomenę.
+  - Po lewym symbolu wieloznacznym musi następować kropka określająca poddomenę.
 
-    Na przykład jest `*.contoso.com` dozwolone; `*contoso.com` niedozwolone.
+    Na przykład `*.contoso.com` jest dozwolone; `*contoso.com` jest niedozwolone.
 
-  - Aby określić ścieżkę, prawy symbol wieloznaczny musi znajdować się po ukośniku (/).
+  - Aby określić ścieżkę, prawy symbol wieloznaczny musi być zgodny z ukośnikiem (/).
 
-    Na przykład jest `contoso.com/*` dozwolone lub `contoso.com*` `contoso.com/ab*` niedozwolone.
+    Na przykład `contoso.com/*` jest dozwolone lub `contoso.com*` `contoso.com/ab*` niedozwolone.
 
-  - `*.com*` jest nieprawidłowa (nie można jej rozwiązać, a prawy symbol wieloznaczny nie powoduje pomiń ukośnika).
+  - `*.com*` jest nieprawidłowa (nie jest to domena rozpoznawalna, a prawy symbol wieloznaczny nie podąża za ukośnikiem).
 
   - Symbole wieloznaczne nie są dozwolone w adresach IP.
 
-- Tylda (~) jest dostępna w następujących scenariuszach:
+- Znak kafelka (~) jest dostępny w następujących scenariuszach:
 
-  - Po lewej stronie tylda oznacza domenę i wszystkie poddomeny.
+  - Lewy kafelek oznacza domenę i wszystkie poddomeny.
 
-    Na przykład zawiera `~contoso.com` `contoso.com` i `*.contoso.com`.
+    Na przykład `~contoso.com` obejmuje `contoso.com` i `*.contoso.com`.
 
-- Wpisy adresów URL zawierające protokoły (na `http://`przykład : , `https://`lub `ftp://`) nie powiodą się, ponieważ wpisy adresów URL mają zastosowanie do wszystkich protokołów.
+- Wpisy adresów URL zawierające protokoły (na przykład `http://`, `https://`lub `ftp://`) nie powiedzie się, ponieważ wpisy adresu URL mają zastosowanie do wszystkich protokołów.
 
-- Nazwa użytkownika lub hasło nie jest obsługiwane ani wymagane.
+- Nazwa użytkownika lub hasło nie są obsługiwane ani wymagane.
 
 - Cudzysłowy (' lub ") są nieprawidłowymi znakami.
 
-- Adres URL powinien zawierać, o ile to możliwe, wszystkie przekierowania.
+- Adres URL powinien zawierać wszystkie przekierowania tam, gdzie to możliwe.
 
-### <a name="url-entry-scenarios"></a>Scenariusze wprowadzania adresu URL
+### <a name="url-entry-scenarios"></a>Scenariusze wpisu adresu URL
 
-Prawidłowe wpisy adresów URL i ich wyniki opisano w poniższych sekcjach.
+Prawidłowe wpisy adresów URL i ich wyniki są opisane w poniższych sekcjach.
 
 #### <a name="scenario-no-wildcards"></a>Scenariusz: Brak symboli wieloznacznych
 
 **Wpis**: `contoso.com`
 
-- **Zezwalaj na contoso.com**
+- **Zezwalaj na dopasowanie**: contoso.com
 
-- **Zezwalaj na nie dopasowano**:
+- **Nie dopasuj zezwalaj**:
 
   - abc-contoso.com
   - contoso.com/a
@@ -297,7 +301,7 @@ Prawidłowe wpisy adresów URL i ich wyniki opisano w poniższych sekcjach.
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **Dopasowanie bloku**:
+- **Blokuj dopasowanie**:
 
   - contoso.com
   - contoso.com/a
@@ -307,62 +311,62 @@ Prawidłowe wpisy adresów URL i ich wyniki opisano w poniższych sekcjach.
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **Blokuj, który nie jest pasowany**: abc-contoso.com
+- **Nie dopasuj blokuj**: abc-contoso.com
 
-#### <a name="scenario-left-wildcard-subdomain"></a>Scenariusz: Symbol wieloznaczny Left (poddomena)
+#### <a name="scenario-left-wildcard-subdomain"></a>Scenariusz: Symbol wieloznaczny z lewej (poddomena)
 
 **Wpis**: `*.contoso.com`
 
-- **Zezwalaj na dopasowanie** **i blokowanie dopasowań**:
+- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
 
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Zezwalaj na nie dopasowano** i **Nie dopasowano bloku**:
+- **Nie dopasuj opcji Zezwalaj** i **Blokuj nie dopasuj**:
 
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
 
-#### <a name="scenario-right-wildcard-at-top-of-path"></a>Scenariusz: prawy symbol wieloznaczny u góry ścieżki
+#### <a name="scenario-right-wildcard-at-top-of-path"></a>Scenariusz: symbol wieloznaczny z prawej strony u góry ścieżki
 
 **Wpis**: `contoso.com/a/*`
 
-- **Zezwalaj na dopasowanie** **i blokowanie dopasowań**:
+- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
 
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
-- **Zezwalaj na nie dopasowano** i **Nie dopasowano bloku**:
+- **Nie dopasuj opcji Zezwalaj** i **Blokuj nie dopasuj**:
 
   - contoso.com
   - contoso.com/a
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-#### <a name="scenario-left-tilde"></a>Scenariusz: tylda po lewej stronie
+#### <a name="scenario-left-tilde"></a>Scenariusz: Lewy kafelek
 
 **Wpis**: `~contoso.com`
 
-- **Zezwalaj na dopasowanie** **i blokowanie dopasowań**:
+- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
 
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Zezwalaj na nie dopasowano** i **Nie dopasowano bloku**:
+- **Nie dopasuj opcji Zezwalaj** i **Blokuj nie dopasuj**:
 
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
 
-#### <a name="scenario-right-wildcard-suffix"></a>Scenariusz: prawy sufiks z symbolami wieloznacznymi
+#### <a name="scenario-right-wildcard-suffix"></a>Scenariusz: Sufiks z prawej symboli wieloznaczny
 
 **Wpis**: `contoso.com/*`
 
-- **Zezwalaj na dopasowanie** **i blokowanie dopasowań**:
+- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
 
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
@@ -372,13 +376,13 @@ Prawidłowe wpisy adresów URL i ich wyniki opisano w poniższych sekcjach.
   - contoso.com/b/a/c
   - contoso.com/ba
 
-- **Zezwalaj na nie dopasowaną i** **Nie dopasowano bloku**: contoso.com
+- **Pozycja Zezwalaj nie jest dopasowana** i **nie dopasuj blokuj**: contoso.com
 
-#### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Scenariusz: lewa poddomena z symbolami wieloznacznymi i prawy sufiks z symbolami wieloznacznych
+#### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Scenariusz: Lewa poddomena wieloznaczna i sufiks z prawej symboli wieloznaczowych
 
 **Wpis**: `*.contoso.com/*`
 
-- **Zezwalaj na dopasowanie** **i blokowanie dopasowań**:
+- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -386,13 +390,13 @@ Prawidłowe wpisy adresów URL i ich wyniki opisano w poniższych sekcjach.
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Zezwalaj na nie dopasowaną i** **Nie dopasowano bloku**: contoso.com/b
+- **Pozycja Zezwalaj nie jest dopasowana** i **Blokuj nie jest dopasowana**: contoso.com/b
 
-#### <a name="scenario-left-and-right-tilde"></a>Scenariusz: tylda po lewej i prawej
+#### <a name="scenario-left-and-right-tilde"></a>Scenariusz: lewy i prawy kafelek
 
 **Wpis**: `~contoso.com~`
 
-- **Zezwalaj na dopasowanie** **i blokowanie dopasowań**:
+- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
 
   - contoso.com
   - contoso.com/a
@@ -400,7 +404,7 @@ Prawidłowe wpisy adresów URL i ich wyniki opisano w poniższych sekcjach.
   - www.contoso.com/b
   - xyz.abc.contoso.com
 
-- **Zezwalaj na nie dopasowano** i **Nie dopasowano bloku**:
+- **Nie dopasuj opcji Zezwalaj** i **Blokuj nie dopasuj**:
 
   - 123contoso.com
   - contoso.org
@@ -409,31 +413,31 @@ Prawidłowe wpisy adresów URL i ich wyniki opisano w poniższych sekcjach.
 
 **Wpis**: `1.2.3.4`
 
-- **Zezwalaj na** dopasowanie **i dopasowanie bloku**: 1.2.3.4
+- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**: 1.2.3.4
 
-- **Zezwalaj na nie dopasowano** i **Nie dopasowano bloku**:
+- **Nie dopasuj opcji Zezwalaj** i **Blokuj nie dopasuj**:
 
   - 1.2.3.4/a
   - 11.2.3.4/a
 
-#### <a name="ip-address-with-right-wildcard"></a>Adres IP z prawym symbole wieloznaczne
+#### <a name="ip-address-with-right-wildcard"></a>Adres IP z prawą symbolem wieloznacznym
 
 **Wpis**: `1.2.3.4/*`
 
-- **Zezwalaj na dopasowanie** **i blokowanie dopasowań**:
+- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
 
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
 
 ### <a name="examples-of-invalid-entries"></a>Przykłady nieprawidłowych wpisów
 
-Nieprawidłowe są następujące wpisy:
+Następujące wpisy są nieprawidłowe:
 
 - **Brakujące lub nieprawidłowe wartości domeny**:
 
-  - contoso
-  - \*contoso.\*
-  - \*com
+  - Contoso
+  - \*.contoso.\*
+  - \*.com
   - \*.pdf
 
 - **Symbol wieloznaczny w tekście lub bez znaków odstępów**:
@@ -450,12 +454,12 @@ Nieprawidłowe są następujące wpisy:
   - contoso.com:443
   - abc.contoso.com:25
 
-- **Nieopisowe symbole wieloznaczne**:
+- **Symbole wieloznaczne bez opisu**:
 
   - \*
   - \*.\*
 
-- **Symbole wieloznaczne w środku**:
+- **Symbole wieloznaczne środkowe**:
 
   - conto\* so.com
   - conto~so.com
@@ -465,32 +469,32 @@ Nieprawidłowe są następujące wpisy:
   - contoso.com/\*\*
   - contoso.com/\*/\*
 
-## <a name="domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Składnia pary domen dla fałszywych nadawców na liście zezwalania/blokowania dzierżawy
+## <a name="domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Składnia pary domeny dla sfałszowanych wpisów nadawcy na liście zezwalania/blokowania dzierżawy
 
-Para domeny dla fałszywego nadawcy na liście zezwalania/blokowania dzierżawy ma następującą składnię: `<Spoofed user>, <Sending infrastructure>`.
+Para domeny dla sfałszowanego nadawcy na liście dozwolonych/blokowych dzierżawy używa następującej składni: `<Spoofed user>, <Sending infrastructure>`.
 
-- **Fałszywy użytkownik**: Ta wartość obejmuje adres e-mail fałszywego użytkownika wyświetlany w polu Od w klientach poczty e-mail. Ten adres jest również nazywany adresem `5322.From` . Prawidłowe wartości to:
+- **Sfałszowany użytkownik**: ta wartość obejmuje adres e-mail sfałszowanego użytkownika, który jest wyświetlany w polu **Od** w klientach poczty e-mail. Ten adres jest również znany jako `5322.From` adres. Prawidłowe wartości obejmują:
   - Indywidualny adres e-mail (na przykład chris@contoso.com).
   - Domena poczty e-mail (na przykład contoso.com).
   - Symbol wieloznaczny (na przykład \*).
 
-- **Infrastruktura wysyłania**: Ta wartość wskazuje źródło wiadomości od fałszywego użytkownika. Prawidłowe wartości to:
-  - Domena znaleziona w odwrotnym odnośniku DNS (rekord PTR) adresu IP źródłowego serwera poczty e-mail (na przykład fabrikam.com).
-  - Jeśli źródłowy adres IP nie ma rekordu PTR, \<source IP\>wówczas infrastruktura wysyłania jest identyfikowana jako /24 (na przykład 192.168.100.100/24).
+- **Wysyłanie infrastruktury**: ta wartość wskazuje źródło komunikatów od sfałszowanego użytkownika. Prawidłowe wartości obejmują:
+  - Domena znaleziona w odwrotnym wyszukiwaniu DNS (rekord PTR) adresu IP źródłowego serwera poczty e-mail (na przykład fabrikam.com).
+  - Jeśli źródłowy adres IP nie ma rekordu PTR, infrastruktura wysyłania jest identyfikowana jako \<source IP\>/24 (na przykład 192.168.100.100/24).
 
-Oto kilka przykładów prawidłowych par domen do identyfikowania fałszywych nadawców:
+Oto kilka przykładów prawidłowych par domen do identyfikowania sfałszowanych nadawców:
 
 - `contoso.com, 192.168.100.100/24`
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-Maksymalna liczba fałszywych wpisów nadawców wynosi 1000.
+Maksymalna liczba fałszywych wpisów nadawcy wynosi 1000.
 
-Dodanie pary domeny umożliwia lub blokuje tylko połączenie fałszywego użytkownika *i infrastruktury wysyłania*. Nie zezwala na wiadomości e-mail od sfałszowanych użytkowników z żadnego źródła, ani nie zezwala na pocztę e-mail ze źródła infrastruktury wysyłania dla dowolnego sfałszowaego użytkownika. 
+Dodanie pary domeny umożliwia lub blokuje *tylko kombinację* sfałszowanego użytkownika *i* infrastruktury wysyłania. Nie zezwala na wysyłanie wiadomości e-mail od sfałszowanego użytkownika z żadnego źródła ani nie zezwala na wysyłanie wiadomości e-mail ze źródła infrastruktury wysyłania dla żadnego sfałszowanego użytkownika. 
 
-Na przykład możesz dodać wpis zezwalania dla następującej pary domen:
+Możesz na przykład dodać wpis zezwalania dla następującej pary domen:
 
 - **Domena**: gmail.com
 - **Infrastruktura**: tms.mx.com
 
-Spoofem mogą być  tylko wiadomości z tej domeny i pary infrastruktury wysyłania. Inni nadawcy próbujący fałszować gmail.com są niedozwolone. Wiadomości od nadawców z innych domen pochodzących z tms.mx.com są sprawdzane przez analizę fałszowania.
+Tylko komunikaty z tej domeny *i* wysyłanie pary infrastruktury mogą się fałszować. Inni nadawcy próbujący podszywać się pod gmail.com nie są dozwolone. Komunikaty od nadawców w innych domenach pochodzących z tms.mx.com są sprawdzane przez analizę fałszowania.

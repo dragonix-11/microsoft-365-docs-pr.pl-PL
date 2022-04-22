@@ -1,5 +1,5 @@
 ---
-title: Ustawianie języka i stref czasowych w Microsoft Bookings
+title: Ustawianie języka Bookings i stref czasowych
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Zmień ustawienia języka i strefy czasowej w Microsoft Bookings. Jeśli rezerwacje zostaną utworzone w niewłaściwym czasie, Bookings może zostać ustawiona dla niewłaściwej strefy czasowej.
-ms.openlocfilehash: cb6735640f85456568f0d0492a265046ab127e9c
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 342b83bf03daa237883a3f8e947306908fbae17d
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746976"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022476"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Ustawianie języka i stref czasowych w Microsoft Bookings
 

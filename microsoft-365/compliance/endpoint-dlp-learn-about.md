@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Ochrona przed utratą danych punktu końcowego rozszerza monitorowanie działań plików i akcji ochronnych dla tych plików na punkty końcowe. Pliki są widoczne w rozwiązaniach zgodności '
-ms.openlocfilehash: e84d2de72e05991a7d8374a2e5214df90fb939d9
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 76649559b1110c02f29584afdfb7e48f57a41f1e
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953310"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023376"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Dowiedz się więcej o ochronie przed utratą danych punktu końcowego
 
@@ -95,7 +95,7 @@ Jeśli chcesz tylko monitorować dane z dopasowań zasad, możesz wyłączyć **
 
 Program DLP punktu końcowego monitoruje działanie oparte na typie MIME, więc działania zostaną przechwycone, nawet jeśli rozszerzenie pliku zostanie zmienione.
 
-### <a name="file-types-preview"></a>Typy plików (wersja zapoznawcza)
+### <a name="file-types"></a>Typy plików
 
 Typy plików to grupa formatów plików, które są używane do ochrony określonych przepływów pracy lub obszarów działalności. W zasadach DLP można użyć co najmniej jednego typu plików.
 
@@ -107,7 +107,7 @@ Typy plików to grupa formatów plików, które są używane do ochrony określo
 |Archiwum  |narzędzia archiwum plików i kompresji | .zip, .zipx, .rar, .7z, .tar, .gz        |
 |Adres e-mail    |Outlook |.pst, .ost, .msg         |
 
-### <a name="file-extensions-preview"></a>Rozszerzenia plików (wersja zapoznawcza)
+### <a name="file-extensions"></a>Rozszerzenia plików
 
 Jeśli typy plików nie obejmują rozszerzeń plików, które należy wyświetlić jako warunek w zasadach, możesz użyć rozszerzeń plików rozdzielonych przecinkami.
 

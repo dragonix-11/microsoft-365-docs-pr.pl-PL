@@ -1,5 +1,5 @@
 ---
-title: Omówienie wdrażania standardowych konfiguracji dzierżawy przy użyciu planu bazowego
+title: Omówienie wdrażania standardowych konfiguracji dzierżawy przy użyciu Microsoft 365 Lighthouse planów bazowych
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,76 +15,76 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse informacji o wdrażaniu standardowych konfiguracji dzierżawy przy użyciu planu bazowego.
-ms.openlocfilehash: 643bb962277d30caf8ea067b9276a5986af8914f
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się więcej na temat wdrażania standardowych konfiguracji dzierżawy przy użyciu punktów odniesienia.
+ms.openlocfilehash: a12abd14064559ec92fc735bd90c1f8d58d24cb1
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504524"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023310"
 ---
-# <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Omówienie wdrażania standardowych konfiguracji dzierżawy przy użyciu planu bazowego 
+# <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Omówienie wdrażania standardowych konfiguracji dzierżawy przy użyciu Microsoft 365 Lighthouse planów bazowych 
 
-Microsoft 365 Lighthouse bazowe zapewniają powtarzalny i skalowalny sposób zarządzania ustawieniami zabezpieczeń Microsoft 365 w wielu dzierżawach klientów. Linie bazowe zapewniają standardowe konfiguracje dzierżaw, które wdrażają podstawowe zasady zabezpieczeń i standardy zgodności, które zapewniają bezpieczeństwo użytkowników, urządzeń i danych dzierżawcy.
+Microsoft 365 Lighthouse punkty odniesienia zapewniają powtarzalny i skalowalny sposób zarządzania Microsoft 365 ustawieniami zabezpieczeń w wielu dzierżawach klientów. Linie bazowe zapewniają standardowe konfiguracje dzierżaw, które wdrażają podstawowe zasady zabezpieczeń i standardy zgodności, które zapewniają bezpieczeństwo użytkowników, urządzeń i danych dzierżawców.
 
-Domyślny plan bazowy i kroki jego wdrożenia możesz wyświetlić z poziomu usługi Lighthouse. Aby zastosować plan bazowy do dzierżawy, wybierz pozycję **Dzierżawy** w lewym okienku nawigacji, a następnie wybierz dzierżawę. Następnie przejdź do karty **Plany wdrażania** , aby rozpocząć wdrażanie.
+Możesz wyświetlić domyślny punkt odniesienia i jego kroki wdrażania z poziomu usługi Lighthouse. Aby zastosować punkt odniesienia do dzierżawy, wybierz pozycję **Dzierżawy** w okienku nawigacji po lewej stronie, a następnie wybierz dzierżawę. Następnie przejdź do karty **Plany wdrożenia** , aby rozpocząć wdrażanie.
 
-## <a name="lighthouse-baseline"></a>Linia bazowa latarni morskiej
+## <a name="lighthouse-baseline"></a>Punkt odniesienia latarni morskiej
 
-Konfiguracje bazowe usługi Lighthouse zaprojektowano tak, aby zapewnić, że wszystkie zarządzane dzierżawy są bezpieczne i zgodne. Wybierz **pozycję Linie bazowe** w lewym okienku nawigacji, aby wyświetlić domyślny plan bazowy, który dotyczy wszystkich dzierżaw.  Aby wyświetlić kroki wdrażania zawarte w domyślnym planie bazowym, wybierz pozycję **Wyświetl** plan bazowy, aby otworzyć stronę domyślnego planu bazowego. Wybierz dowolny z kroków wdrażania, aby wyświetlić szczegóły wdrożenia i wpływ na użytkowników.
+Konfiguracje punktu odniesienia usługi Lighthouse zostały zaprojektowane tak, aby upewnić się, że wszystkie zarządzane dzierżawy są bezpieczne i zgodne. Wybierz pozycję **Punkty odniesienia** w okienku nawigacji po lewej stronie, aby wyświetlić domyślny punkt odniesienia, który ma zastosowanie do wszystkich dzierżaw.  Aby wyświetlić kroki wdrażania zawarte w domyślnej linii bazowej, wybierz pozycję **Wyświetl punkt odniesienia** , aby otworzyć domyślną stronę punktu odniesienia. Wybierz dowolny z kroków wdrażania, aby wyświetlić szczegóły wdrożenia i wpływ na użytkownika.
 
-:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Zrzut ekranu przedstawiający stronę Domyślny plan bazowy.":::
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Zrzut ekranu przedstawiający domyślną stronę punktu odniesienia.":::
 
-### <a name="default-lighthouse-configurations"></a>Domyślne konfiguracje latarni morskiej
+### <a name="default-lighthouse-configurations"></a>Domyślne konfiguracje usługi Lighthouse
 
-| Konfiguracja planu bazowego | Opis |
+| Konfiguracja punktu odniesienia | Opis |
 |--|--|
-| Wymaganie uwierzytelniania wieloskładnikowego dla administratorów | Zasady dostępu warunkowego wymagające uwierzytelniania wieloskładnikowego dla wszystkich administratorów. Jest ona wymagana dla wszystkich aplikacji w chmurze. Aby uzyskać więcej informacji o tym planie bazowym, zobacz [Dostęp warunkowy: Wymaganie uwierzytelniania MFA dla wszystkich administratorów](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa).|
-| Wymaganie uwierzytelniania wieloskładnikowego dla użytkowników końcowych | Zasady dostępu warunkowego wymagające uwierzytelniania wieloskładnikowego dla wszystkich użytkowników.  Jest ona wymagana dla wszystkich aplikacji w chmurze. Aby uzyskać więcej informacji o tym planie bazowym, zobacz [Dostęp warunkowy: Wymaganie uwierzytelniania MFA dla wszystkich użytkowników](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
-| Blokowanie starszego uwierzytelniania | Zasady dostępu warunkowego do blokowania starszego uwierzytelniania klienta. Aby uzyskać więcej informacji na temat tego planu bazowego, zobacz [Blokowanie starszego uwierzytelniania w usłudze Azure AD z dostępem warunkowym](/azure/active-directory/conditional-access/block-legacy-authentication).|
-| Konfigurowanie rejestrowania urządzenia | Rejestracja urządzeń w celu umożliwienia urządzeniu dzierżawcy zarejestrowania się w Microsoft Endpoint Manager. W tym celu należy skonfigurować automatyczne rejestrowanie między Azure Active Directory a Microsoft Endpoint Manager. Aby uzyskać więcej informacji o tym planie bazowym, [zobacz Konfigurowanie rejestracji Windows urządzeniach](/mem/intune/enrollment/windows-enroll). |
-| Konfigurowanie Program antywirusowy Microsoft Defender dla Windows 10 i nowszych | Profil konfiguracji urządzenia dla Windows urządzeń ze wstępnie skonfigurowanymi Program antywirusowy Microsoft Defender ustawieniami. Aby uzyskać więcej informacji na temat tego planu bazowego, [zobacz Konfigurowanie programu Microsoft Defender dla punktu końcowego w usłudze Intune](/mem/intune/protect/advanced-threat-protection-configure).|
-| Konfigurowanie Zapory programu Microsoft Defender do Windows 10 i nowszych | Zasady zapory ułatwiające zabezpieczanie urządzeń przez zapobieganie niechcianym i nieautoryzowanym ruchom sieciowym. Aby uzyskać więcej informacji na temat tego planu bazowego, zobacz Najlepsze rozwiązania dotyczące [konfigurowania Windows Defender sieciowej](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
-| Konfigurowanie zasad zgodności urządzenia dla Windows 10 i nowszych | Zasady Windows urządzenia ze wstępnie skonfigurowanymi ustawieniami w celu spełnienia podstawowych wymagań dotyczących zgodności. Aby uzyskać więcej informacji na temat tego planu bazowego, zobacz [Dostęp warunkowy: wymaganie zgodnego lub hybrydowego urządzenia połączonego z usługą Azure AD](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
+| Wymagaj uwierzytelniania wieloskładnikowego dla administratorów | Zasady dostępu warunkowego wymagające uwierzytelniania wieloskładnikowego dla wszystkich administratorów. Jest to wymagane dla wszystkich aplikacji w chmurze. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Dostęp warunkowy: Wymagaj uwierzytelniania wieloskładnikowego dla wszystkich administratorów](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa).|
+| Wymagaj uwierzytelniania wieloskładnikowego dla użytkowników końcowych | Zasady dostępu warunkowego, które wymagają uwierzytelniania wieloskładnikowego dla wszystkich użytkowników.  Jest to wymagane dla wszystkich aplikacji w chmurze. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Dostęp warunkowy: Wymagaj uwierzytelniania wieloskładnikowego dla wszystkich użytkowników](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
+| Blokowanie starszego uwierzytelniania | Zasady dostępu warunkowego do blokowania starszego uwierzytelniania klienta. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Blokuj starsze uwierzytelnianie w usłudze Azure AD przy użyciu dostępu warunkowego](/azure/active-directory/conditional-access/block-legacy-authentication).|
+| Konfigurowanie rejestracji urządzeń | Rejestrowanie urządzeń w celu umożliwienia rejestrowania urządzeń dzierżawy w Microsoft Endpoint Manager. W tym celu należy skonfigurować automatyczne rejestrowanie między Azure Active Directory a Microsoft Endpoint Manager. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Konfigurowanie rejestracji dla urządzeń Windows](/mem/intune/enrollment/windows-enroll). |
+| Konfigurowanie Program antywirusowy Microsoft Defender dla Windows 10 i nowszych | Profil konfiguracji urządzenia dla urządzeń Windows ze wstępnie skonfigurowanymi ustawieniami Program antywirusowy Microsoft Defender. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender w Intune](/mem/intune/protect/advanced-threat-protection-configure).|
+| Konfigurowanie zapory usługi Microsoft Defender dla Windows 10 i nowszych | Zasady zapory ułatwiające zabezpieczanie urządzeń przez zapobieganie niepożądanemu i nieautoryzowanemu ruchowi sieciowemu. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Najlepsze rozwiązania dotyczące konfigurowania zapory Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
+| Konfigurowanie zasad zgodności urządzeń dla Windows 10 i nowszych | Zasady Windows urządzenia ze wstępnie skonfigurowanymi ustawieniami spełniającymi podstawowe wymagania dotyczące zgodności. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Temat Dostęp warunkowy: Wymagaj zgodnego lub hybrydowego urządzenia przyłączanego do usługi Azure AD](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 
 ## <a name="deployment-plans"></a>Plany wdrażania
 
-Każda aktywna dzierżawa ma plan wdrożenia, który zawiera kroki wdrażania z Microsoft 365 Lighthouse bazowego. Aby uzyskać dostęp do planu wdrażania dzierżawy, wybierz aktywną dzierżawę z listy na  stronie Dzierżawcy, a następnie wybierz **kartę Plan** wdrażania.
+Każda aktywna dzierżawa ma plan wdrożenia, który obejmuje kroki wdrażania z punktu odniesienia Microsoft 365 Lighthouse. Aby uzyskać dostęp do planu wdrażania dzierżawy, wybierz aktywną dzierżawę z listy na stronie **Dzierżawy** , a następnie wybierz kartę **Plan wdrożenia** .
 
-:::image type="content" source="../media/m365-lighthouse-deploy-baselines/deployment-plan-tab.png" alt-text="Zrzut ekranu przedstawiający kartę Plan wdrażania.":::
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/deployment-plan-tab.png" alt-text="Zrzut ekranu przedstawiający kartę Plan wdrożenia.":::
 
-Karta Plan wdrażania zawiera następujące informacje:
+Karta Plan wdrożenia zawiera następujące informacje:
 
 
 |Kolumna  |Opis  |
 |---------|---------|
-|Krok wdrażania     |  Opis etapu wdrażania.       |
-|Stan     |Stan kroku wdrażania.         |
-|Plan bazowy     |Plan bazowy, na podstawie którego pochodzi etap wdrożenia.         |
-|Kategoria     | Czy etap wdrażania jest skojarzony z zarządzaniem urządzeniami, tożsamością lub danymi.        |
-|Ostatnia aktualizacja    | Data ostatniej aktualizacji kroku wdrażania.        |
+|Krok wdrożenia     |  Opis kroku wdrożenia.       |
+|Stan     |Stan kroku wdrożenia.         |
+|Linii bazowej     |Punkt odniesienia, z którego pochodzi krok wdrożenia.         |
+|Kategoria     | Czy krok wdrożenia jest skojarzony z zarządzaniem urządzeniami, tożsamością czy danymi.        |
+|Ostatnia aktualizacja    | Data ostatniej aktualizacji kroku wdrożenia.        |
 
 
-Karta Plan wdrażania zawiera również następujące opcje:
+Karta Plan wdrożenia zawiera również następujące opcje:
 
-- **Eksportowanie:** Wybierz, aby wyeksportować dane o krokach wdrożenia Excel pliku wartości rozdzielanych przecinkami (.csv).
-- **Odświeżanie:** Wybierz, aby pobrać najnowsze dane o krokach wdrożenia.
-- **Wyszukiwanie:** Wprowadź słowa kluczowe, aby szybko znaleźć określony krok wdrożenia na liście.
+- **Eksportu:** Wybierz, aby wyeksportować dane kroku wdrożenia do pliku wartości rozdzielanych przecinkami Excel (.csv).
+- **Odświeżania:** Wybierz, aby pobrać najbardziej aktualne dane kroków wdrażania.
+- **Szukaj:** Wprowadź słowa kluczowe, aby szybko zlokalizować określony krok wdrożenia na liście.
 
-## <a name="deployment-steps-and-processes"></a>Etapy i procesy wdrażania
+## <a name="deployment-steps-and-processes"></a>Kroki i procesy wdrażania
 
-Plan wdrażania każdej dzierżawy zawiera kroki wdrażania z Microsoft 365 Lighthouse bazowego. Każdy krok wdrożenia składa się z jednego lub większej liczby procesów, które muszą zostać ukończone, aby spełnić wymagania kroku wdrażania. Gdy nowa dzierżawa stanie się aktywna, musisz ukończyć działania wdrażania skojarzone z procesami i krokami wdrażania.
+Plan wdrażania każdej dzierżawy obejmuje kroki wdrażania z punktu odniesienia Microsoft 365 Lighthouse. Każdy krok wdrażania obejmuje co najmniej jeden proces, który należy ukończyć. Gdy nowa dzierżawa stanie się aktywna, należy ukończyć działania wdrażania skojarzone z krokami i procesami wdrażania.
 
-W każdym kroku wdrażania możesz podjąć następujące czynności:
+Dla każdego kroku wdrażania można wykonać następujące akcje:
 
 |Akcja  |Opis  |
 |---------|---------|
-| Udostępnianie    |  Umożliwia udostępnieniu zawartości Kroku wdrażania za pomocą linku lub wiadomości e-mail.    |
-| Przeglądanie i wdrażanie    |  Umożliwia użytkownikowi: <ul><li>Jeśli ta konfiguracja jest obsługiwana, porównaj ustawienia konfiguracyjne w kroku wdrażania z ustawieniami we wszystkich istniejących zasadach bez wdrażania ustawień w dzierżawie.<br>Porównanie kroków wdrażania jest następujące:</br><ul><li>Konfigurowanie zasad zgodności urządzenia dla Windows 10 i nowszych</li><li>Wymaganie uwierzytelniania MFA dla użytkowników końcowych</li><li>Wymaganie uwierzytelniania wieloskładnikowego dla administratorów</li><li>Blokowanie starszego uwierzytelniania</li></ul></li> <li>Wdeksuj ustawienia konfiguracji w dzierżawie.</li></ul>**Uwaga:** Kroki, które nie obsługują porównywania bez wdrażania ustawień w dzierżawie, umożliwią sprawdzenie ustawień konfiguracji i ich wdrożenie.|
-| Aktualizowanie stanu planu akcji    |  Umożliwia użytkownikowi zgłoszenie stanu planu działań w kroku wdrażania.      |
+| Udostępnianie    |  Umożliwia udostępnianie zawartości kroku wdrożenia za pośrednictwem linku lub wiadomości e-mail.    |
+| Przeglądanie i wdrażanie    |  Umożliwia użytkownikowi: <ul><li>Jeśli jest to obsługiwane, porównaj ustawienia konfiguracji w kroku wdrażania z ustawieniami w istniejących zasadach bez wdrażania ustawień w dzierżawie.<br>Poniższe kroki wdrażania obsługują porównanie:</br><ul><li>Konfigurowanie zasad zgodności urządzeń dla Windows 10 i nowszych</li><li>Wymagaj uwierzytelniania wieloskładnikowego dla użytkowników końcowych</li><li>Wymagaj uwierzytelniania wieloskładnikowego dla administratorów</li><li>Blokowanie starszego uwierzytelniania</li></ul></li> <li>Wdróż ustawienia konfiguracji w dzierżawie.</li></ul>**Uwaga:** Kroki, które nie obsługują możliwości porównywania bez wdrażania ustawień w dzierżawie, umożliwią zapoznanie się z ustawieniami konfiguracji i ich wdrożenie.|
+| Aktualizowanie stanu planu akcji    |  Umożliwia użytkownikowi zgłaszanie stanu planu działania dla kroku wdrażania.      |
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Wdrażanie Microsoft 365 Lighthouse bazowych](m365-lighthouse-deploy-baselines.md) (artykuł)\
+[Wdrażanie Microsoft 365 Lighthouse punktów odniesienia](m365-lighthouse-deploy-baselines.md) (artykuł)\
 [Typowe zasady dostępu warunkowego](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) (artykuł)\
 [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)

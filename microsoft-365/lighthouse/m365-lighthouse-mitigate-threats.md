@@ -1,5 +1,5 @@
 ---
-title: Ograniczanie zagrożeń za pomocą programu antywirusowego Microsoft Defender
+title: Eliminowanie zagrożeń w Microsoft 365 Lighthouse przy użyciu Program antywirusowy Microsoft Defender
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się więcej o ograniczaniu zagrożeń za pomocą Program antywirusowy Microsoft Defender.
-ms.openlocfilehash: 428370ce5e49bba0bc9489143864f9b88b2e8c3f
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: da8a10b1ffc1932a6b4f84447028d2fa9b865e64
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824349"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023662"
 ---
-# <a name="mitigate-threats-with-microsoft-defender-antivirus"></a>Ograniczanie zagrożeń za pomocą programu antywirusowego Microsoft Defender
+# <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Eliminowanie zagrożeń w Microsoft 365 Lighthouse przy użyciu Program antywirusowy Microsoft Defender
 
 Microsoft 365 Lighthouse umożliwia partnerom badanie i eliminowanie zagrożeń we wszystkich dzierżawach. Możesz również zainicjować skanowanie antywirusowe na urządzeniach, upewnić się, że urządzenia otrzymują najnowsze aktualizacje dla Program antywirusowy Microsoft Defender i przejrzeć oczekujące akcje po skanowaniu antywirusowym. Usługa Lighthouse obsługuje tylko urządzenia z systemem Windows 10 lub nowszym.
 
@@ -130,7 +130,7 @@ Możesz również ponownie uruchomić wiele urządzeń, zaznaczając pole wyboru
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artykuł)\
-[Omówienie strony zarządzania zagrożeniami](m365-lighthouse-threat-management-page-overview.md) (artykuł)\
+[Omówienie strony Zarządzanie zagrożeniami w Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (artykuł)\
 [Tworzenie zasad zgodności w Microsoft Intune](/mem/intune/protect/create-compliance-policy) (artykuł)\
 [Włącz Program antywirusowy Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows) (artykuł)\
 [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats) (strona internetowa)
