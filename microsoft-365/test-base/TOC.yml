@@ -12,7 +12,7 @@
       items:
         - name: Omówienie
           href: testoverview.md
-        - name: Testowanie pakietu plików binarnych w usłudze Test Base
+        - name: Testowanie plików binarnych w usłudze Test Base
           href: testapplication.md
         - name: Testowanie aplikacji usługi Intune w usłudze Test Base
           href: testintuneapplication.md
