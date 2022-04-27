@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Program Microsoft Purview Compliance Manager ułatwia organizacjom upraszczanie i automatyzowanie ocen ryzyka oraz sugeruje zalecane działania ułatwiające rozwiązanie problemów z ryzykiem.
-ms.openlocfilehash: 1d5f036b8bc97da431ed6e41017d59e01db749a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: deb3c3755a8afbab0071b8f829da620676f926ff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997103"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078219"
 ---
 # <a name="microsoft-purview-compliance-manager"></a>Microsoft Purview Compliance Manager
 
@@ -41,7 +41,7 @@ ms.locfileid: "64997103"
 Obejrzyj poniższy film wideo, aby dowiedzieć się, w jaki sposób Menedżer zgodności może pomóc uprościć zarządzanie zgodnością w organizacji:
 <br>
 <br>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VdoO]
 
 Menedżer zgodności pomaga uprościć zgodność i zmniejszyć ryzyko, zapewniając:
 

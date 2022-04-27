@@ -2,8 +2,8 @@
 title: Zarządzanie zestawami przeglądów w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak zarządzać zestawami przeglądów, aby móc analizować, wykonywać zapytania, wyświetlać, tagować i eksportować dane w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 64970cb3302c47dbab394b974bf1df8358ad3755
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d81bfa83126210bcaf80fe05b89b26a091e4192f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999057"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078850"
 ---
 # <a name="manage-review-sets-in-ediscovery-premium"></a>Zarządzanie zestawami przeglądów w usłudze eDiscovery (Premium)
 

@@ -16,12 +16,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować zezwolenia na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad2a55d19f60bf310b62ac13dfbe2563709673d2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ad2ef693848b664be6ec9b48cc4fc320a8b4b9c2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970940"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090149"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Dodawanie zezwoleń na liście dozwolonych/zablokowanych dzierżaw
 
@@ -117,7 +117,7 @@ Zezwalaj na pliki na stronie **Przesyłanie** w Microsoft 365 Defender.
    - **Typ fałszowania**: wybierz jedną z następujących wartości:
      - **Wewnętrzne**: sfałszowany nadawca znajduje się w domenie należącej do Organizacji ( [akceptowana domena](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **Zewnętrzne**: sfałszowany nadawca znajduje się w domenie zewnętrznej.
-   - **Akcja**: wybierz pozycję **Zezwalaj** lub **Blokuj**.
+   - **Akcja**: wybierz pozycję **Zezwalaj**.
 
 4. Po zakończeniu kliknij przycisk **Dodaj**.
 

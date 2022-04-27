@@ -1,10 +1,10 @@
 ---
-title: Wymagania wstępne dostępu do tożsamości i urządzeń dla uwierzytelniania przechodzą w Microsoft 365 testowego
+title: Wymagania wstępne dotyczące tożsamości i dostępu urządzeń do uwierzytelniania przekazywanego w środowisku testowym Microsoft 365
 author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,62 +13,62 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Utwórz środowisko Microsoft 365, aby przetestować tożsamość i dostęp do urządzenia zgodnie z wymaganiami wstępnymi uwierzytelniania pass-through.
-ms.openlocfilehash: 662cf1aa45c2d297600baf63bd3970f31d437f95
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+description: Utwórz środowisko Microsoft 365, aby przetestować dostęp do tożsamości i urządzeń z wymaganiami wstępnymi dotyczącymi uwierzytelniania przekazywanego.
+ms.openlocfilehash: 3a93f0562e8ff2f2c561b4709810bb2cb1049e71
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63015953"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098257"
 ---
-# <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Wymagania wstępne dostępu do tożsamości i urządzeń dla uwierzytelniania przechodzą w Microsoft 365 testowego
+# <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Wymagania wstępne dotyczące tożsamości i dostępu urządzeń do uwierzytelniania przekazywanego w środowisku testowym Microsoft 365
 
-*Ten przewodnik laboratorium testowego może być używany tylko w Microsoft 365 testowych w przedsiębiorstwie.*
+*Tego przewodnika laboratorium testowego można używać tylko w przypadku Microsoft 365 dla środowisk testowych przedsiębiorstwa.*
 
-[Konfiguracje tożsamości](../security/office-365-security/microsoft-365-policies-configurations.md) i dostępu do urządzeń są zestawem konfiguracji i zasad dostępu warunkowego w celu ochrony dostępu do wszystkich usług w usłudze Microsoft 365 dla przedsiębiorstw, które są zintegrowane z usługą Azure Active Directory (Azure AD).
+[Konfiguracje tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md) to zestaw konfiguracji i zasad dostępu warunkowego w celu ochrony dostępu do wszystkich usług w Microsoft 365 dla przedsiębiorstw zintegrowanych z usługą Azure Active Directory (Azure AD).
 
-W tym artykule opisano sposób konfigurowania środowiska Microsoft 365 testowego, które spełnia wymagania konfiguracji wymagań wstępnych uwierzytelniania [pass-through](../security/office-365-security/identity-access-prerequisites.md#prerequisites) na potrzeby dostępu do urządzenia i tożsamości.
+W tym artykule opisano sposób konfigurowania środowiska testowego Microsoft 365, które spełnia wymagania [konfiguracji wymagań wstępnych uwierzytelniania z przekazywaniem](../security/office-365-security/identity-access-prerequisites.md#prerequisites) na potrzeby tożsamości i dostępu do urządzeń.
 
-Aby skonfigurować to środowisko testowe, należy skonfigurować dziesięć faz:
+Istnieje dziesięć faz konfigurowania tego środowiska testowego:
 
-1. Stwórz symulowane przedsiębiorstwo przy użyciu uwierzytelniania Microsoft 365 testowego
-2. Konfigurowanie bezproblemowego logowania pojedynczego w usłudze Azure AD
+1. Tworzenie symulowanego przedsiębiorstwa przy użyciu uwierzytelniania przekazywanego Microsoft 365 środowisku testowym
+2. Konfigurowanie bezproblemowego logowania jednokrotnego w usłudze Azure AD
 3. Konfigurowanie nazwanych lokalizacji
-4. Konfigurowanie zapisu hasła
-5. Konfigurowanie samodzielnego resetowania hasła
+4. Konfigurowanie zapisywania zwrotnego haseł
+5. Konfigurowanie samoobsługowego resetowania hasła
 6. Konfigurowanie uwierzytelniania wieloskładnikowego
-7. Włączanie automatycznej rejestracji urządzeń dla komputerów Windows przyłączony do domeny
-8. Konfigurowanie ochrony hasłem usługi Azure AD 
+7. Włączanie automatycznej rejestracji urządzeń na komputerach Windows przyłączonych do domeny
+8. Konfigurowanie ochrony hasłem w usłudze Azure AD 
 9. Włączanie usługi Azure AD Identity Protection
-10. Włączanie nowoczesnego uwierzytelniania dla usług Exchange Online i Skype dla firm Online
+10. Włączanie nowoczesnego uwierzytelniania dla Exchange Online i Skype dla firm Online
 
-## <a name="phase-1-build-out-your-simulated-enterprise-with-pass-through-authentication-microsoft-365-test-environment"></a>Etap 1. Tworzenie symulowanego przedsiębiorstwa przy użyciu uwierzytelniania Microsoft 365 testowego
+## <a name="phase-1-build-out-your-simulated-enterprise-with-pass-through-authentication-microsoft-365-test-environment"></a>Faza 1. Tworzenie symulowanego przedsiębiorstwa przy użyciu uwierzytelniania przekazywanego Microsoft 365 środowisku testowym
 
-Postępuj zgodnie z instrukcjami [podanymi w tece Uwierzytelnianie przekaż](pass-through-auth-m365-ent-test-environment.md).
+Postępuj zgodnie z instrukcjami w temacie [Uwierzytelnianie przekazywane](pass-through-auth-m365-ent-test-environment.md).
 
-Oto wynikowa konfiguracja.
+Oto wynikowej konfiguracji.
 
-![Symulowane przedsiębiorstwo ze środowiskiem testowym uwierzytelniania przekazać.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![Symulowane przedsiębiorstwo ze środowiskiem testowym uwierzytelniania z przekazywaniem.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
-## <a name="phase-2-configure-azure-ad-seamless-single-sign-on"></a>Etap 2. Konfigurowanie bezproblemowego logowania pojedynczego w usłudze Azure AD
+## <a name="phase-2-configure-azure-ad-seamless-single-sign-on"></a>Faza 2. Konfigurowanie bezproblemowego logowania jednokrotnego w usłudze Azure AD
 
-Postępuj zgodnie z instrukcjami z fazy 2 przewodnika laboratorium testowego bezproblemowego logowania się [pojedynczego w usłudze Azure AD](single-sign-on-m365-ent-test-environment.md#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso).
+Postępuj zgodnie z instrukcjami w [fazie 2 przewodnika laboratorium testowego bezproblemowego logowania jednokrotnego usługi Azure AD](single-sign-on-m365-ent-test-environment.md#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso).
 
-## <a name="phase-3-configure-named-locations"></a>Etap 3. Konfigurowanie nazwanych lokalizacji
+## <a name="phase-3-configure-named-locations"></a>Faza 3. Konfigurowanie nazwanych lokalizacji
 
-Najpierw określ publiczne adresy IP lub zakresy adresów używane przez Twoją organizację.
+Najpierw określ publiczne adresy IP lub zakresy adresów używane przez organizację.
 
-Następnie wykonaj instrukcje z [tematu Konfigurowanie nazwanych lokalizacji w programie Azure Active Directory](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations), aby dodać adresy lub zakresy adresów jako nazwane lokalizacje. 
+Następnie postępuj zgodnie z instrukcjami w temacie [Konfigurowanie nazwanych lokalizacji w Azure Active Directory](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations), aby dodać adresy lub zakresy adresów jako nazwane lokalizacje. 
 
-## <a name="phase-4-configure-password-writeback"></a>Etap 4. Konfigurowanie zapisu hasła
+## <a name="phase-4-configure-password-writeback"></a>Faza 4. Konfigurowanie zapisywania zwrotnego haseł
 
-Postępuj zgodnie z instrukcjami [z fazy 2 przewodnika laboratorium testowego zapisu hasła](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
+Postępuj zgodnie z instrukcjami w [sekcji Faza 2 przewodnika laboratorium testowego zapisywania zwrotnego haseł](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
 
-## <a name="phase-5-configure-self-service-password-reset"></a>Etap 5. Konfigurowanie samodzielnego resetowania hasła
+## <a name="phase-5-configure-self-service-password-reset"></a>Faza 5. Konfigurowanie samoobsługowego resetowania hasła
 
-Postępuj zgodnie z instrukcjami [z fazy 3 przewodnika laboratorium testowego resetowania hasła](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
+Postępuj zgodnie z instrukcjami w [fazie 3 przewodnika laboratorium testowego resetowania haseł](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
 
-Po włączeniu resetowania hasła dla kont w konkretnej grupie usługi Azure AD dodaj następujące konta do **grupy Resetowanie** hasła:
+Podczas włączania resetowania haseł dla kont w określonej grupie usługi Azure AD dodaj te konta do grupy **Resetowanie hasła** :
 
 - Użytkownik 2
 - Użytkownik 3
@@ -77,9 +77,9 @@ Po włączeniu resetowania hasła dla kont w konkretnej grupie usługi Azure AD 
 
 Przetestuj resetowanie hasła tylko dla konta użytkownika 2.
 
-## <a name="phase-6-configure-multi-factor-authentication"></a>Etap 6. Konfigurowanie uwierzytelniania wieloskładnikowego
+## <a name="phase-6-configure-multi-factor-authentication"></a>Faza 6. Konfigurowanie uwierzytelniania wieloskładnikowego
 
-Wykonaj instrukcje [z fazy 2 przewodnika laboratorium testowego dotyczącego](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) uwierzytelniania wieloskładnikowego dla następujących kont użytkowników:
+Postępuj zgodnie z instrukcjami w [fazie 2 przewodnika laboratorium testowego uwierzytelniania wieloskładnikowego](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) dla następujących kont użytkowników:
 
 - Użytkownik 2
 - Użytkownik 3
@@ -88,25 +88,25 @@ Wykonaj instrukcje [z fazy 2 przewodnika laboratorium testowego dotyczącego](mu
 
 Przetestuj uwierzytelnianie wieloskładnikowe tylko dla konta użytkownika 2.
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Etap 7. Włączanie automatycznej rejestracji urządzeń dla komputerów Windows przyłączony do domeny 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Faza 7. Włączanie automatycznej rejestracji urządzeń przyłączonych do domeny Windows komputerów 
 
-Wykonaj [poniższe instrukcje](/azure/active-directory/devices/hybrid-azuread-join-plan), aby włączyć automatyczną rejestrację urządzeń przyłącznych do domeny Windows komputerach.
+Postępuj zgodnie z [tymi instrukcjami](/azure/active-directory/devices/hybrid-azuread-join-plan), aby włączyć automatyczną rejestrację urządzeń przyłączonych do domeny Windows komputerach.
 
-## <a name="phase-8-configure-azure-ad-password-protection"></a>Etap 8. Konfigurowanie ochrony hasłem usługi Azure AD 
+## <a name="phase-8-configure-azure-ad-password-protection"></a>Faza 8. Konfigurowanie ochrony hasłem w usłudze Azure AD 
 
-Wykonaj [poniższe instrukcje,](/azure/active-directory/authentication/concept-password-ban-bad) aby zablokować znane słabe hasła i ich warianty.
+Postępuj zgodnie [z tymi instrukcjami,](/azure/active-directory/authentication/concept-password-ban-bad) aby zablokować znane słabe hasła i ich warianty.
 
-## <a name="phase-9-enable-azure-ad-identity-protection"></a>Etap 9. Włączanie usługi Azure AD Identity Protection
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>Faza 9. Włączanie usługi Azure AD Identity Protection
 
-Postępuj zgodnie z instrukcjami [z fazy 2 przewodnika laboratorium testowego usługi Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
+Postępuj zgodnie z instrukcjami w [sekcji Faza 2 przewodnika laboratorium testowego usługi Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
-## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Etap 10. Włączanie nowoczesnego uwierzytelniania dla usług Exchange Online i Skype dla firm Online
+## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Faza 10. Włączanie nowoczesnego uwierzytelniania dla Exchange Online i Skype dla firm Online
 
-Aby Exchange Online, wykonaj [poniższe instrukcje](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
+Aby uzyskać Exchange Online, postępuj zgodnie z [tymi instrukcjami](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 
-Dla Skype dla firm Online:
+W przypadku usługi Skype dla firm Online:
 
-1. Połączenie do [usługi Skype dla firm Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
+1. Połączenie do [Skype dla firm Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
 
 2. Uruchom to polecenie.
 
@@ -114,26 +114,26 @@ Dla Skype dla firm Online:
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
-3. Sprawdź, czy zmiana powiodła się za pomocą tego polecenia.
+3. Sprawdź, czy zmiana zakończyła się pomyślnie za pomocą tego polecenia.
 
   ```powershell
   Get-CsOAuthConfiguration
   ```
 
-Wynikiem jest środowisko testowe, które spełnia wymagania konfiguracji wymagań wstępnych uwierzytelniania [pass-through](../security/office-365-security/identity-access-prerequisites.md#prerequisites) dla tożsamości i dostępu do urządzenia. 
+Rezultatem jest środowisko testowe, które spełnia wymagania [konfiguracji wymagań wstępnych uwierzytelniania z przekazywaniem](../security/office-365-security/identity-access-prerequisites.md#prerequisites) na potrzeby tożsamości i dostępu do urządzeń. 
 
 ## <a name="next-step"></a>Następny krok
 
-Użyj [wspólnych zasad dostępu do tożsamości i](../security/office-365-security/identity-access-policies.md) urządzeń, aby skonfigurować zasady na podstawie wymagań wstępnych oraz chronić tożsamości i urządzenia.
+Użyj [typowych zasad dostępu do tożsamości i urządzeń](../security/office-365-security/identity-access-policies.md) , aby skonfigurować zasady, które bazują na wymaganiach wstępnych i chronią tożsamości i urządzenia.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Dodatkowe przewodniki laboratorium testowego dotyczące tożsamości](m365-enterprise-test-lab-guides.md#identity)
+[Dodatkowe przewodniki laboratorium testów tożsamości](m365-enterprise-test-lab-guides.md#identity)
 
 [Wdrażanie tożsamości](deploy-identity-solution-overview.md)
 
-[Microsoft 365 laboratorium testowego dla przedsiębiorstw](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 dla przewodników laboratorium testowego w przedsiębiorstwie](m365-enterprise-test-lab-guides.md)
 
-[Omówienie Microsoft 365 dla przedsiębiorstw](microsoft-365-overview.md)
+[Microsoft 365 dla przedsiębiorstw — omówienie](microsoft-365-overview.md)
 
-[Microsoft 365 dla przedsiębiorstw](/microsoft-365-enterprise/)
+[Dokumentacja dotycząca subskrypcji Microsoft 365 dla Przedsiębiorstw](/microsoft-365-enterprise/)

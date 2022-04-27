@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 22c2de998f4d4cfadb0262ccedf04decc01ce226
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 8ff1e381631d3ba85f41da2bb82b1a47ddf1612f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916298"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097321"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Wyświetlanie i edytowanie zasad zabezpieczeń i ustawień w Microsoft Defender dla Firm
 
@@ -196,4 +196,6 @@ Przejdź do co najmniej jednego z następujących zadań:
 - [Wprowadzenie przy użyciu Microsoft Defender dla Firm](mdb-get-started.md)
 - [Zarządzanie urządzeniami w Microsoft Defender dla Firm](mdb-manage-devices.md)
 - [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md)
+- [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](mdb-view-edit-policies.md)
+
 - [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](mdb-view-edit-policies.md)

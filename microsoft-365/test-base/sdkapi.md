@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 14bfa8711d5cff46b8cce02950c087844384b9f9
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 6ae0fdf9cc49faaaff84eb3f96e076d1efba8a4c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953787"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077432"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>Zarządzanie zasobem przy użyciu zestawu SDK & interfejsów API
 
@@ -108,7 +108,7 @@ Skorzystaj z poniższych linków, aby dowiedzieć się więcej o interfejsie API
 
 - [Dokumentacja zestawu Test Base Python SDK](/python/api/overview/azure/mgmt-testbase-readme)
 - [Przykład testu podstawowego zestawu SDK języka Python](https://aka.ms/testbase-sample-py)
-- [Wzorzec ogólnego użycia zestawu Python SDK na platformie Azure](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
+- [Wzorzec ogólnego użycia zestawu Python SDK na platformie Azure](/azure/developer/python/sdk/azure-sdk-library-usage-patterns)
 
 **Interfejs API REST**:
 

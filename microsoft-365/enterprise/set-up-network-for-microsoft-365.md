@@ -1,8 +1,8 @@
 ---
-title: Konfigurowanie sieci pod Microsoft 365
+title: Konfigurowanie sieci na potrzeby Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/19/2019
 audience: ITPro
 ms.topic: landing-page
@@ -19,75 +19,75 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: Znajdź linki do artykułów z informacjami pomocnych w skonfigurowaniu sieci na Microsoft 365, w tym omówienie łączności sieciowej i listę punktów końcowych.
-ms.openlocfilehash: c6dbc4362648b3695c23f363c0e6925ead97bacb
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Znajdź linki do artykułów zawierających informacje ułatwiające skonfigurowanie sieci na potrzeby Microsoft 365, w tym omówienie łączności sieciowej i listę punktów końcowych.
+ms.openlocfilehash: 8651fa23983cddf243081248bf1e03fb067232e2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680847"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092850"
 ---
-# <a name="set-up-your-network-for-microsoft-365"></a>Konfigurowanie sieci pod Microsoft 365
+# <a name="set-up-your-network-for-microsoft-365"></a>Konfigurowanie sieci na potrzeby Microsoft 365
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Ważną częścią dołączania do Microsoft 365 jest skonfigurowanie połączeń sieciowych i internetowych pod kątem zoptymalizowanego dostępu. Konfigurowanie sieci lokalnej w celu uzyskiwania dostępu do globalnie rozproszonej chmury typu Oprogramowanie jako usługa (SaaS, Software-as-a-Service) różni się od tradycyjnej sieci zoptymalizowanej pod kątem ruchu do lokalnych centrów danych i centralnego połączenia internetowego. 
+Ważną częścią dołączania Microsoft 365 jest zapewnienie, że połączenia sieciowe i internetowe są skonfigurowane pod kątem zoptymalizowanego dostępu. Konfigurowanie sieci lokalnej w celu uzyskiwania dostępu do globalnie rozproszonej chmury typu oprogramowanie jako usługa (SaaS) różni się od tradycyjnej sieci zoptymalizowanej pod kątem ruchu do lokalnych centrów danych i centralnego połączenia internetowego. 
 
-Skorzystaj z tych artykułów, aby zrozumieć najważniejsze różnice i zmodyfikować urządzenia brzegowe, komputery klienckie i sieć lokalną, aby uzyskać najlepszą wydajność dla użytkowników lokalnych.
+Skorzystaj z tych artykułów, aby zrozumieć kluczowe różnice i zmodyfikować urządzenia brzegowe, komputery klienckie i sieć lokalną, aby uzyskać najlepszą wydajność dla użytkowników lokalnych.
 
-## <a name="how-microsoft-365-networking-works"></a>Jak działa Microsoft 365 sieci
+## <a name="how-microsoft-365-networking-works"></a>Jak działa sieć Microsoft 365
 
-W tych artykułach o przeglądzie łączności w Microsoft 365:
+Zapoznaj się z tymi artykułami, aby zapoznać się z omówieniem łączności dla Microsoft 365:
 
-- [Microsoft 365 łączności sieciowej](microsoft-365-networking-overview.md)
-- [Microsoft 365 dotyczących łączności sieciowej](microsoft-365-network-connectivity-principles.md)
-- [Ocenianie Microsoft 365 sieciowej](assessing-network-connectivity.md)
+- [Łączność sieciowa na platformie Microsoft 365 — omówienie](microsoft-365-networking-overview.md)
+- [Zasady dotyczące łączności sieciowej na platformie Microsoft 365](microsoft-365-network-connectivity-principles.md)
+- [Ocena łączności sieciowej na platformie Microsoft 365](assessing-network-connectivity.md)
 
-Aby uzyskać porady dotyczące zwiększania wydajności, zobacz [Planowanie sieci i dostosowywanie wydajności w celu zwiększenia Microsoft 365](network-planning-and-performance.md).
+Aby uzyskać porady dotyczące zwiększania wydajności, zobacz [Planowanie sieci i dostrajanie wydajności dla Microsoft 365](network-planning-and-performance.md).
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Obsługa Microsoft 365 sieci jako dostawca sprzętu sieciowego
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Obsługa sieci Microsoft 365 jako dostawca sprzętu sieciowego
 
-Jeśli jesteś dostawcą sprzętu sieciowego, dołącz do [Office 365 Networking Partner Program.](microsoft-365-networking-partner-program.md) Zarejestruj się w programie, aby Office 365 zasady łączności sieciowej w swoich produktach i rozwiązaniach. 
+Jeśli jesteś dostawcą sprzętu sieciowego, dołącz do [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Zarejestruj się w programie, aby tworzyć zasady Office 365 łączności sieciowej w swoich produktach i rozwiązaniach. 
 
-## <a name="office-365-endpoints"></a>Office 365 punktami końcowymi
+## <a name="office-365-endpoints"></a>Punkty końcowe usługi Office 365
 
-Punkty końcowe to zestaw docelowych adresów IP, nazw domen DNS i adresów URL dla Office 365 ruchu w Internecie. 
+Punkty końcowe to zestaw docelowych adresów IP, nazw domen DNS i adresów URL dla ruchu Office 365 w Internecie. 
 
-Aby zoptymalizować wydajność Office 365 usług opartych na chmurze, niektóre punkty końcowe wymagają specjalnej obsługi przez przeglądarki klienckie i urządzenia w Twojej sieci brzegowej. Do tych urządzeń należą zapory, urządzenia do obsługi przerw SSL i inspekcji pakietów oraz systemy ochrony przed utratą danych.
+Aby zoptymalizować wydajność Office 365 usług opartych na chmurze, niektóre punkty końcowe wymagają specjalnej obsługi przez przeglądarki klienckie i urządzenia w sieci brzegowej. Urządzenia te obejmują zapory, urządzenia SSL Break i Inspekcja i inspekcja pakietów oraz systemy zapobiegania utracie danych.
 
-Aby [uzyskać szczegółowe Office 365 zobacz Zarządzanie punktami](managing-office-365-endpoints.md) końcowymi usługi.
+Aby uzyskać szczegółowe informacje, zobacz [Zarządzanie punktami końcowymi Office 365](managing-office-365-endpoints.md).
 
-Obecnie istnieje pięć różnych Office 365 chmur. W poniższej tabeli znajdziesz listę punktów końcowych dla każdego z nich.
+Obecnie istnieje pięć różnych chmur Office 365. Ta tabela zawiera listę punktów końcowych dla każdego z nich.
 
 | Punkty końcowe | Opis |
 |:-------|:-----|
-| [Punkty końcowe na całym świecie](urls-and-ip-address-ranges.md) | Punkty końcowe dla subskrypcji usługi Office 365 na świecie, które obejmują stany zjednoczone Government Community Cloud (GCC). |
-| [Punkty końcowe amerykańskiego dod](microsoft-365-u-s-government-dod-endpoints.md) | Punkty końcowe subskrypcji DoD (United States Department of Defense). |
-| [Rząd Stanów Zjednoczonych GCC punkty końcowe o wysokiej jakości](microsoft-365-u-s-government-gcc-high-endpoints.md) | Punkty końcowe dla subskrypcji High (Government Community Cloud High) dla Stanów Zjednoczonych (GCC High). |
-| [Office 365 obsługiwane przez punkty końcowe usługi 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Punkty końcowe dla usługi Office 365 obsługiwanej przez firmę 21Vianet, która została zaprojektowana w celu zaspokojenia potrzeb firmy Office 365 w Chinach. |
+| [Punkty końcowe na całym świecie](urls-and-ip-address-ranges.md) | Punkty końcowe dla subskrypcji Office 365 na całym świecie, które obejmują Stany Zjednoczone Government Community Cloud (GCC). |
+| [Punkty końcowe DoD rządu Stanów Zjednoczonych](microsoft-365-u-s-government-dod-endpoints.md) | Punkty końcowe subskrypcji departamentu obrony Stany Zjednoczone (DoD). |
+| [Punkty końcowe środowisk GCC High rządu Stanów Zjednoczonych](microsoft-365-u-s-government-gcc-high-endpoints.md) | Punkty końcowe subskrypcji Stany Zjednoczone Government Community Cloud High (GCC High). |
+| [Usługa Office 365 obsługiwana przez punkty końcowe 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Punkty końcowe dla Office 365 obsługiwane przez firmę 21Vianet, która została zaprojektowana w celu zaspokojenia potrzeb Office 365 w Chinach. |
 |||
 
-Aby zautomatyzować uzyskiwanie najnowszej listy punktów końcowych dla chmury usługi Office 365, zobacz Office 365 [adresu IP i usługi sieci Web adresu URL](microsoft-365-ip-web-service.md).
+Aby zautomatyzować pobieranie najnowszej listy punktów końcowych dla chmury Office 365, zobacz [Office 365 adres IP i adres URL usługi sieci Web](microsoft-365-ip-web-service.md).
 
-Aby uzyskać dodatkowe punkty końcowe, zobacz następujące artykuły:
+Dodatkowe punkty końcowe można znaleźć w następujących artykułach:
 
 - [Dodatkowe punkty końcowe, które nie są dostępne w usłudze sieci Web](additional-office365-ip-addresses-and-urls.md)
-- [Żądania sieciowe w programie Office 2016 dla komputerów Mac](network-requests-in-office-2016-for-mac.md)
+- [Żądania sieciowe w Office 2016 dla komputerów Mac](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-microsoft-365-networking"></a>Dodatkowe tematy dotyczące sieci Microsoft 365 sieci
+## <a name="additional-topics-for-microsoft-365-networking"></a>Dodatkowe tematy dotyczące sieci Microsoft 365
 
-W tych artykułach znajdziesz tematy specjalistyczne w Microsoft 365 sieci:
+Zapoznaj się z tymi artykułami, aby zapoznać się ze specjalistycznymi tematami dotyczącymi sieci Microsoft 365:
 
 - [Sieci dostarczania zawartości](content-delivery-networks.md)
-- [Obsługa protokołu IPv6 w Office 365 usługach internetowych](ipv6-support.md)
-- [Obsługa NAT z Office 365](nat-support-with-microsoft-365.md)
+- [Obsługa protokołu IPv6 w usługach Office 365](ipv6-support.md)
+- [Obsługa translatora NAT za pomocą usługi Office 365](nat-support-with-microsoft-365.md)
 
-## <a name="expressroute-for-microsoft-365"></a>ExpressRoute dla Microsoft 365
+## <a name="expressroute-for-microsoft-365"></a>Usługa ExpressRoute dla Microsoft 365
 
-Zapoznaj się z tymi artykułami, aby uzyskać informacje na temat użycia Office 365 ExpressRoute:
+Zapoznaj się z tymi artykułami, aby uzyskać informacje na temat korzystania z usługi ExpressRoute dla ruchu Office 365:
 
 - [Usługa Azure ExpressRoute dla Office 365](azure-expressroute.md)
-- [Implementowanie expressroute dla Office 365](implementing-expressroute.md)
-- [Planowanie sieci z usługą ExpressRoute dla sieci Office 365](network-planning-with-expressroute.md)
-- [Routing za pomocą usługi ExpressRoute dla usługi Office 365](routing-with-expressroute.md)
+- [Implementowanie usługi ExpressRoute dla Office 365](implementing-expressroute.md)
+- [Planowanie sieci za pomocą usługi ExpressRoute dla usługi Office 365](network-planning-with-expressroute.md)
+- [Routing przy użyciu usługi ExpressRoute dla usługi Office 365](routing-with-expressroute.md)

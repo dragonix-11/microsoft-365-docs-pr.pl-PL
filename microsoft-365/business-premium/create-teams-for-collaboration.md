@@ -1,14 +1,14 @@
 ---
-title: Tworzenie zespołu w programie Microsoft Teams celu współpracy małej firmy lub kampanii
+title: Używanie Microsoft Teams do współpracy
 f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -22,88 +22,94 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Dowiedz się, dlaczego i jak utworzyć zespół w programie Microsoft Teams, aby można było współpracować w małej firmie lub kampanii.
-ms.openlocfilehash: 6c218b24b335dc01aa0b426eb4e95bccef3d20d7
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Dowiedz się, dlaczego i jak utworzyć zespół w Microsoft Teams, aby twoja mała firma lub kampania mogła współpracować.
+ms.openlocfilehash: ef9c435cbaa7a862164c39244bdb2a865845fa58
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634080"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100164"
 ---
-# <a name="create-a-team-in-microsoft-teams-so-your-small-business-or-campaign-can-collaborate"></a>Tworzenie zespołu w programie Microsoft Teams celu współpracy małej firmy lub kampanii
+# <a name="use-microsoft-teams-for-collaboration"></a>Używanie Microsoft Teams do współpracy
 
-Microsoft Teams to aplikacja do współpracy, która pomaga pracownikom w organizacji pracy i prowadzi konwersacje z dowolnego urządzenia. Za pomocą funkcji Microsoft Teams konwersacji błyskawicznych z członkami personelu lub gośćmi spoza organizacji. Możesz także dzwonić, hostuje spotkania i udostępniać pliki.
+Microsoft Teams to aplikacja do współpracy, która ułatwia personelowi organizowanie i prowadzenie konwersacji z dowolnego urządzenia. Możesz użyć Microsoft Teams, aby prowadzić natychmiastowe rozmowy z członkami personelu lub gościami spoza organizacji. Możesz również wykonywać połączenia telefoniczne, hostować spotkania i udostępniać pliki.
 
 ## <a name="best-practices"></a>Najważniejsze wskazówki
 
-1. Tworzenie prywatnych zespołów na poufne informacje.
+1. Tworzenie zespołów prywatnych na potrzeby informacji poufnych.
 
-2. Utwórz zespół dla całej organizacji do komunikacji ze wszystkimi w organizacji.
+2. Utwórz zespół dla całej organizacji do komunikacji ze wszystkimi użytkownikami w całej organizacji.
 
-3. Tworzenie zespołów dla konkretnych projektów i stosowanie odpowiedniej ochrony w zależności od tego, kto powinien być uwzględniony.
+3. Utwórz zespoły dla określonych projektów i zastosuj odpowiednią ochronę w zależności od tego, kto powinien zostać uwzględniony.
 
-4. Tworzenie określonych zespołów do komunikacji z partnerami zewnętrznymi w celu oddzielenia ich od poufnej informacji w Twojej firmie.
+4. Tworzenie konkretnych zespołów do komunikacji z partnerami zewnętrznymi w celu oddzielenia ich od wszelkich elementów wrażliwych dla Twojej firmy.
 
-Na przykład firma, firma medyczna lub opieka zdrowotna mogą tworzyć następujące zespoły:
+Na przykład firma, firma prawna lub praktyka opieki zdrowotnej mogą tworzyć następujące zespoły:
 
-1. **Zespół firmowy, firmowy lub ćwiczy w całej firmie:** Dzięki temu wszyscy mogą codziennie korzystać z komunikacji i pracy w całej firmie. Możesz skorzystać z tego zespołu, aby publikować ogłoszenia lub udostępniać informacje interesujące dla całej firmy lub ćwiczeń.
+1. **Zespół biznesowy, firmowy lub praktyczny:** Jest to przeznaczone dla wszystkich użytkowników do codziennej komunikacji i pracy w całej firmie. Za pomocą tego zespołu możesz publikować ogłoszenia lub udostępniać interesujące Cię informacje dla całej firmy lub praktyki.
 
-2. **Indywidualne zespoły:** Skonfiguruj zespoły dla mniejszych grup, aby współpracować nad ich codziennie pracą.
+2. **Poszczególne zespoły:** Skonfiguruj zespoły dla mniejszych grup, aby współpracować nad codzienną pracą.
 
-3. **Zespół lub zespoły ds. komunikacji zewnętrznej:** Koordynuj działania z dostawcami, partnerami lub klientami, nie zezwalając im na nic poufnego. Skonfiguruj różne kanały dla określonych grup.
+3. **Zewnętrzny zespół lub zespoły ds. komunikacji:** Koordynuj z dostawcami, partnerami lub klientami, nie zezwalając im na nic wrażliwego. Skonfiguruj różne kanały dla określonych grup.
 
-![Diagram okna Microsoft Teams z trzema osobnymi zespołami, które umożliwiają bezpieczną komunikację i współpracę w ramach firmy.](../media/m365-democracy-teams-business-collab.png)
+![Diagram okna Microsoft Teams z trzema oddzielnymi zespołami umożliwiającymi bezpieczną komunikację i współpracę w firmie.](../media/m365-democracy-teams-business-collab.png)
 
-A kampanie mogą tworzyć następujące zespoły w celu bezpiecznego komunikowania się i współpracy:
+A kampanie mogą tworzyć następujące zespoły do bezpiecznej komunikacji i współpracy:
 
-1. **Zespół liderów kampanii:** Skonfiguruj tę usługę jako zespół prywatny, aby tylko kluczowi członkowie kampanii mieć do niego dostęp i omawiać potencjalnie poufne kwestie.
+1. **Zespół potencjalnych klientów kampanii:** Skonfiguruj go jako zespół prywatny, aby tylko kluczowi członkowie kampanii mogli uzyskać do niego dostęp i omówić potencjalnie wrażliwe kwestie.
 
-2. **Ogólny zespół kampanii:** Jest to sposób na to, aby wszyscy korzystali z codziennie komunikacji i pracy. Poszczególne osoby, grupy lub komitety mogą skonfigurować kanały w tym zespole do pracy. Na przykład osoby planując wydarzenia mogą skonfigurować kanał do rozmów i koordynowania logistyki dla wydarzeń kampanii.
+2. **Ogólny zespół ds. kampanii:** Jest to przeznaczone dla wszystkich użytkowników do codziennej komunikacji i pracy. Osoby fizyczne, grupy lub komitety mogą tworzyć kanały w tym zespole, aby wykonywać swoją pracę. Na przykład osoby planujące wydarzenia mogą skonfigurować kanał do czatowania i koordynowania logistyki wydarzeń kampanii.
 
-3. **Zespół partnerów:** Koordynuj działania z dostawcami, partnerami i ochotnikami, nie zezwalając im na nic poufnego.
+3. **Zespół partnerów:** Koordynuj z dostawcami, partnerami lub wolontariuszami, nie zezwalając im na nic wrażliwego.
 
-![Diagram okna Microsoft Teams z trzema osobnymi zespołami, które umożliwiają bezpieczną komunikację i współpracę w ramach kampanii.](../media/m365-democracy-teams-collab.png)
+![Diagram okna Microsoft Teams z trzema oddzielnymi zespołami umożliwiającymi bezpieczną komunikację i współpracę w ramach kampanii.](../media/m365-democracy-teams-collab.png)
 
-Oto co jeszcze zostanie utworzone podczas tworzenia zespołu:
+Po utworzeniu zespołu poniżej przedstawiono, co jeszcze zostanie utworzone:
 
-- Nowa grupa [Microsoft 365 grupy](/MicrosoftTeams/office-365-groups)
+- Nowa [grupa Microsoft 365](/MicrosoftTeams/office-365-groups)
 
-- Biblioteka [SharePoint online](/MicrosoftTeams/sharepoint-onedrive-interact) i biblioteka dokumentów do przechowywania plików zespołu
+- Witryna i biblioteka dokumentów [usługi SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact) do przechowywania plików zespołu
 
-- [Udostępniona Exchange Online](/MicrosoftTeams/exchange-teams-interact) pocztowa i kalendarz
+- [Udostępniona skrzynka](/MicrosoftTeams/exchange-teams-interact) pocztowa i kalendarz Exchange Online
 
 - Notes OneNote
 
-- Ties into other Office 365 apps such as Planner and Power BI
+- Wiąże się z innymi aplikacjami Office 365, takimi jak Planner i Power BI
 
-W Microsoft Teams znajdują się:
+Wewnątrz Microsoft Teams można znaleźć następujące elementy:
 
-1. **Teams: Znajdź** kanały, do których należą, lub utwórz własne. W kanałach możesz odbywać spotkania na miejscu, dzielić się konwersacjami i udostępniać pliki.
+1. **Teams:** znajdź kanały, do którego należysz, lub utwórz własne. W kanałach można organizować spotkania na miejscu, prowadzić konwersacje i udostępniać pliki.
 
-2. **Spotkania:** Zobacz wszystkiego, co masz na dzień lub tydzień. Możesz też zaplanować spotkanie. Ten kalendarz synchronizuje się z twoim Outlook kalendarzem.
+2. **Spotkania:** Zobacz wszystko, co masz w kolejce na dzień lub tydzień. Możesz też zaplanować spotkanie. Ten kalendarz jest synchronizowany z kalendarzem Outlook.
 
-3. **Rozmowy:** W niektórych przypadkach, jeśli w organizacji został on Microsoft Teams, możesz zadzwonić do wszystkich osób, które nie Microsoft Teams.
+3. **Wywołania:** W niektórych przypadkach, jeśli twoja organizacja ma skonfigurowaną usługę, możesz zadzwonić do wszystkich osób z Microsoft Teams, nawet jeśli nie używa ona Microsoft Teams.
 
-4. **Działanie:** Nadrabiaj zaległości we wszystkich nieprzeczytanych wiadomościach, @mentions, odpowiedziach i nie tylko.
+4. **Działania:** Nadrabiaj zaległości we wszystkich nieprzeczytanych komunikatach, @mentions, odpowiedziach i nie tylko.
 
-Użyj pola polecenia u góry okna, aby wyszukać określone elementy lub osoby, szybko podjąć działania i uruchomić aplikacje.
+Użyj pola polecenia u góry, aby wyszukać określone elementy lub osoby, podjąć szybkie akcje i uruchomić aplikacje.
 
 ## <a name="set-it-up"></a>Konfigurowanie
 
-Utwórz prywatny zespół tylko dla właściciela firmy i jego kierowników lub menedżera kampanii i kandydata w ten sposób.
+Utwórz prywatny zespół tylko dla właściciela firmy i menedżerów albo menedżera kampanii i kandydata w ten sposób.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-Utwórz zespół dla całej organizacji, za pomocą których wszyscy w firmie lub kampanii mogą komunikować się i udostępniać pliki.
+Utwórz zespół w całej organizacji, którego wszyscy w firmie lub kampanii mogą używać do komunikowania się i udostępniania plików.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
-Utwórz zespół, który udostępniasz gościom spoza organizacji, na przykład na reklamę lub finanse.
+Utwórz zespół, który udostępniasz gościom spoza organizacji, na przykład w przypadku reklam lub finansów.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Więcej informacji na Microsoft Teams na [Microsoft Teams technicznej](/microsoftteams/microsoft-teams)
+Dowiedz się więcej o Microsoft Teams w [dokumentacji technicznej Microsoft Teams](/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>Ustawienia administratora
 
-Aby utworzyć zespół dla całej organizacji, musisz być administratorem. Aby uzyskać więcej informacji, zobacz [Co to jest administrator w programie Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+> [!Note]
+> Aby utworzyć zespół w całej organizacji, musisz być administratorem. Aby uzyskać więcej informacji, zobacz [Co to jest administrator w Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+
+## <a name="next-objective"></a>Następny cel
+
+Po osiągnięciu tego celu należy bezpiecznie [skonfigurować spotkania](set-up-meetings.md).
+

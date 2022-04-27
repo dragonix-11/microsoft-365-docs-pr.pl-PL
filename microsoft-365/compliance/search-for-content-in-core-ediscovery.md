@@ -2,8 +2,8 @@
 title: Wyszukiwanie zawartości w przypadku zbierania elektronicznych materiałów dowodowych (standardowa)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wyszukaj zawartość, która może być istotna dla sprawy zbierania elektronicznych materiałów dowodowych (standardowa).
-ms.openlocfilehash: 00a7c7bdd565a5fc184281fa467db3c56b1c6288
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 372f8beba2567c24e8af75acf4d11e3fe6220f2c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995343"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090412"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Wyszukiwanie zawartości w przypadku zbierania elektronicznych materiałów dowodowych (standardowa)
 

@@ -2,7 +2,7 @@
 title: Zarządzanie dodatkami za pomocą poleceń cmdlet programu PowerShell scentralizowanego wdrażania
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
@@ -19,17 +19,17 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Polecenia cmdlet programu PowerShell scentralizowanego wdrażania ułatwiają wdrażanie Office dodatków dla organizacji Microsoft 365 i zarządzanie nimi.
-ms.openlocfilehash: 9f9a3e36c6e1c76d99d8abb7dc47f97a04541322
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Polecenia cmdlet programu PowerShell scentralizowanego wdrażania ułatwiają wdrażanie dodatków Office i zarządzanie nimi dla organizacji Microsoft 365.
+ms.openlocfilehash: 07e0f69cd95bc1553adea96242bf44eb9f1217f1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824745"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078463"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Zarządzanie dodatkami za pomocą poleceń cmdlet programu PowerShell scentralizowanego wdrażania
 
-Jako administrator globalny Microsoft 365 możesz wdrażać dodatki Office użytkownikom za pośrednictwem funkcji Scentralizowane wdrażanie (zobacz [Wdrażanie dodatków Office w centrum administracyjnym](../admin/manage/manage-deployment-of-add-ins.md). Oprócz wdrażania dodatków Office za pośrednictwem Centrum administracyjne platformy Microsoft 365 można również użyć programu Microsoft PowerShell. Zainstaluj [moduł wdrażania scentralizowanego Add-In usługi O365 dla Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
+Jako administrator globalny Microsoft 365 możesz wdrażać dodatki Office dla użytkowników za pośrednictwem funkcji Scentralizowane wdrażanie (zobacz [Wdrażanie dodatków Office w centrum administracyjnym](../admin/manage/manage-deployment-of-add-ins.md). Oprócz wdrażania dodatków Office za pośrednictwem Centrum administracyjne platformy Microsoft 365 można również użyć programu Microsoft PowerShell. Zainstaluj [moduł wdrażania scentralizowanego Add-In usługi O365 dla Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
 
 Po pobraniu modułu otwórz regularne okno Windows PowerShell i uruchom następujące polecenie cmdlet:
 

@@ -2,8 +2,8 @@
 title: Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ description: Przypisz uprawnienia wymagane do wykonywania zadań związanych zbi
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 3fef13fe96297b426dda4d72231846a99fb03179
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e764aae4313a8e5d4dfc402e4c1f87eb8c1a5bbb
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001373"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090522"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności
 
@@ -105,7 +105,7 @@ Ta rola umożliwia użytkownikom tworzenie, edytowanie, usuwanie i kontrolowanie
 
 Więcej informacji można znaleźć w następujących artykułach:
 
-- [Zacznij od zbierania elektronicznych materiałów dowodowych (Standardowa)](get-started-core-ediscovery.md)
+- [Zacznij od zbierania elektronicznych materiałów dowodowych (wersja standardowa)](get-started-core-ediscovery.md)
 
 - [Wprowadzenie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md)
 
@@ -167,7 +167,7 @@ Ta rola umożliwia użytkownikom zbiorcze usuwanie danych zgodnych z kryteriami 
 
 Grupy ról można dodawać jako członków przypadków zbierania elektronicznych materiałów dowodowych (standard) i eDiscovery (Premium), aby członkowie grup ról mogli uzyskiwać dostęp do zadań i wykonywać je w przypisanych przypadkach. Role przypisane do grupy ról definiują, co mogą robić członkowie grupy ról. Następnie dodanie grupy ról jako członka sprawy umożliwia członkom dostęp do tych zadań i wykonywanie ich w określonym przypadku. Aby uzyskać więcej informacji na temat dodawania grup ról jako członków przypadków, zobacz:
 
-- [Zacznij od zbierania elektronicznych materiałów dowodowych (Standardowa)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
+- [Zacznij od zbierania elektronicznych materiałów dowodowych (wersja standardowa)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
 - [Dodawanie lub usuwanie członków ze sprawy zbierania elektronicznych materiałów dowodowych (Premium)](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 

@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych rozdzielanych tekstem w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych rozdzielanych tekstem z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: b2039c3b850f7d266425d464235b62d0ce4a78ad
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 9b61b37a1748208a7bd0c55e7659acc9d9066767
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997235"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090500"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data"></a>Konfigurowanie łącznika do archiwizowania danych rozdzielanych tekstem
 

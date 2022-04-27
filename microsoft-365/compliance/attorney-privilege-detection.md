@@ -2,8 +2,8 @@
 title: Konfigurowanie wykrywania uprawnień klienta-adwokata w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Użyj modelu wykrywania uprawnień klienta-adwokata, aby użyć opartego na uczeniu maszynowym wykrywania zawartości uprzywilejowanej podczas przeglądania zawartości w przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
-ms.openlocfilehash: 477b741cf617179ffd9eb1a4c38230faf5a0fce0
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 359dccc041a0655ade291a37e511038a50148f7b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997301"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094036"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>Konfigurowanie wykrywania uprawnień klienta-adwokata w usłudze eDiscovery (Premium)
 

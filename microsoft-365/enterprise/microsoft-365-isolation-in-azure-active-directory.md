@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 i kontrola dostępu w programie Azure Active Directory
+title: izolacja Microsoft 365 i Access Control w Azure Active Directory
 ms.author: robmazz
 author: robmazz
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,39 +14,39 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: W tym artykule dowiesz się, jak działa kontrola izolacji i dostępu w celu przechowywania danych dla wielu dzierżaw oddzielonych od siebie w Azure Active Directory.
+description: W tym artykule dowiesz się, jak izolacja i Access Control działają w celu odizolowania danych dla wielu dzierżaw w ramach Azure Active Directory.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 11c2c488f0168815a1485f5833c5520259db0fa5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 409528847d04a55926138e49128f018b349da0a3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984450"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093882"
 ---
-# <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Microsoft 365 i kontrola dostępu w programie Azure Active Directory
+# <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>izolacja Microsoft 365 i Access Control w Azure Active Directory
 
-Azure Active Directory (Azure AD) zaprojektowano, aby hostować wiele dzierżaw w wysoce bezpieczny sposób dzięki izolacji danych logicznych. Dostęp do usługi Azure AD jest bramowany przez warstwę autoryzacji. Usługa Azure AD odizoluje klientów, używając kontenerów dzierżawy jako granic zabezpieczeń w celu zabezpieczenia zawartości klienta, aby współdostępniacy nie uzyskiwali dostępu do zawartości ani jej nie mogą być naruszone. Warstwa autoryzacji usługi Azure AD wykonuje trzy testy:
+Azure Active Directory (Azure AD) została zaprojektowana do hostowania wielu dzierżaw w wysoce bezpieczny sposób za pośrednictwem logicznej izolacji danych. Dostęp do usługi Azure AD jest objęty warstwą autoryzacji. Usługa Azure AD izoluje klientów przy użyciu kontenerów dzierżaw jako granic zabezpieczeń w celu ochrony zawartości klienta, aby współdostępni współdostępni nie mogli uzyskać do niej dostępu ani naruszyć jej zabezpieczeń. Trzy testy są wykonywane przez warstwę autoryzacji usługi Azure AD:
 
-- Czy dla podmiotu głównego włączono dostęp do dzierżawy usługi Azure AD?
-- Czy dla podmiotu głównego włączono dostęp do danych w tej dzierżawie?
-- Czy rola dyrektora w tej dzierżawie jest autoryzowana dla typu żądanego dostępu do danych?
+- Czy podmiot zabezpieczeń jest włączony w celu uzyskania dostępu do dzierżawy usługi Azure AD?
+- Czy podmiot zabezpieczeń jest włączony w celu uzyskania dostępu do danych w tej dzierżawie?
+- Czy rola podmiotu zabezpieczeń w tej dzierżawie jest autoryzowana dla typu żądanego dostępu do danych?
 
-Żadna aplikacja, użytkownik, serwer ani usługa nie mogą uzyskać dostępu do usługi Azure AD bez odpowiedniego uwierzytelniania i tokenu lub certyfikatu. Żądania są odrzucane, jeśli nie towarzyszy im poświadczeń odpowiednich.
+Żadna aplikacja, użytkownik, serwer ani usługa nie mogą uzyskiwać dostępu do usługi Azure AD bez odpowiedniego uwierzytelniania, tokenu lub certyfikatu. Żądania są odrzucane, jeśli nie towarzyszą im odpowiednie poświadczenia.
 
-W praktyce usługa Azure AD hostuje każdą dzierżawę w własnym chronionym kontenerze, z zasadami i uprawnieniami do kontenera wyłącznie będącego własnością dzierżawy i zarządzanego przez nie.
+W praktyce usługa Azure AD hostuje każdą dzierżawę we własnym chronionym kontenerze z zasadami i uprawnieniami do i w kontenerze należącym wyłącznie do dzierżawy i zarządzanym przez dzierżawę.
  
 ![Kontener platformy Azure.](../media/office-365-isolation-azure-container.png)
 
-Pojęcie kontenerów dzierżawy jest mocno składowane w usłudze katalogowej na wszystkich warstwach, od portali po magazyn trwały. Nawet jeśli na tym samym dysku fizycznym jest przechowywanych wiele metadanych dzierżawy usługi Azure AD, nie ma żadnej relacji między kontenerami innymi niż te zdefiniowane przez usługę katalogową, która z kolei jest dyktowana przez administratora dzierżawy. Nie może być żadnych bezpośrednich połączeń z magazynem usługi Azure AD z dowolnej żądanej aplikacji lub usługi bez uprzedniego przejść przez warstwę autoryzacji.
+Koncepcja kontenerów dzierżawy jest głęboko zakorzeniona w usłudze katalogowej we wszystkich warstwach, od portali aż po magazyn trwały. Nawet jeśli wiele metadanych dzierżawy usługi Azure AD jest przechowywanych na tym samym dysku fizycznym, nie ma relacji między kontenerami innymi niż zdefiniowane przez usługę katalogową, co z kolei jest podyktowane przez administratora dzierżawy. Nie można nawiązać bezpośrednich połączeń z magazynem usługi Azure AD z dowolnej aplikacji lub usługi, bez uprzedniego przejścia przez warstwę autoryzacji.
 
-W poniższym przykładzie firmy Contoso i Fabrikam mają osobne dedykowane kontenery i mimo że te kontenery mogą współużytkować część tej samej infrastruktury źródłowej, na przykład serwery i magazyn, pozostają one oddzielone i odizolowane od siebie, a ponadto są przechowane przez warstwy autoryzacji i kontroli dostępu.
+W poniższym przykładzie zarówno firma Contoso, jak i firma Fabrikam mają oddzielne, dedykowane kontenery i mimo że te kontenery mogą współużytkować niektóre z tych samych podstawowych infrastruktur, takich jak serwery i magazyny, pozostają oddzielone i odizolowane od siebie i otoczone warstwami autoryzacji i kontroli dostępu.
  
-![Kontenery dedykowane platformy Azure.](../media/office-365-isolation-azure-dedicated-containers.png)
+![Dedykowane kontenery platformy Azure.](../media/office-365-isolation-azure-dedicated-containers.png)
 
-Ponadto nie ma składników aplikacji, które mogą być wykonywane z poziomu usługi Azure AD, i nie jest możliwe, aby jedna dzierżawa w sposób natłęczyła integralność innej dzierżawy, uzyskać dostęp do kluczy szyfrowania innej dzierżawy ani odczytać nieprzetworzonych danych z serwera.
+Ponadto nie ma żadnych składników aplikacji, które mogą być wykonywane z poziomu usługi Azure AD i nie jest możliwe, aby jedna dzierżawa wymusiła naruszenie integralności innej dzierżawy, dostęp do kluczy szyfrowania innej dzierżawy lub odczytanie nieprzetworzonych danych z serwera.
 
-Domyślnie usługa Azure AD nie zezwala na wszystkie operacje wykonywane przez tożsamości w innych dzierżawach. Każda dzierżawa jest logicznie odizolowana w usłudze Azure AD za pomocą formantów dostępu opartych na oświadczeniach. Odczyt i zapis danych katalogu jest ograniczony do kontenerów dzierżawy i jest przechowany przez wewnętrzną warstwę abstrakcyjną oraz warstwę kontroli dostępu opartej na rolach (RBAC, role based access control), która razem wymusza dzierżawę jako granicę zabezpieczeń. Każde żądanie dostępu do danych katalogu jest przetwarzane przez te warstwy, a każde żądanie dostępu w programie Microsoft 365 jest przesądowane przez logikę podaną powyżej.
+Domyślnie usługa Azure AD nie zezwala na wszystkie operacje wystawiane przez tożsamości w innych dzierżawach. Każda dzierżawa jest logicznie izolowana w usłudze Azure AD za pośrednictwem kontroli dostępu opartej na oświadczeniach. Odczyty i zapisy danych katalogów są ograniczone do kontenerów dzierżawy i objęte wewnętrzną warstwą abstrakcji oraz warstwą kontroli dostępu opartą na rolach (RBAC), które razem wymuszają dzierżawę jako granicę zabezpieczeń. Każde żądanie dostępu do danych katalogu jest przetwarzane przez te warstwy, a każde żądanie dostępu w Microsoft 365 jest obsługiwane przez powyższą logikę.
 
-Usługa Azure AD ma partycje Ameryki Północnej, Rząd Stanów Zjednoczonych, Unii Europejskiej, Niemiec i Świata. Dzierżawa istnieje na jednej partycji, a partycje mogą zawierać wiele dzierżaw. Informacje o partycji są wyimowane z dala od użytkowników. Partycja (łącznie ze wszystkimi dzierżawami na tej partycji) jest replikowana do wielu centrów danych. Partycja dzierżawy jest wybierana na podstawie właściwości dzierżawy (np. kodu kraju). Tajemnice i inne poufne informacje na poszczególnych partycjach są szyfrowane przy użyciu klucza dedykowanego. Klucze są generowane automatycznie podczas tworzenia nowej partycji.
+Usługa Azure AD ma partycje Ameryka Północna, Us Government, European Union, Germany i World Wide. Dzierżawa istnieje w jednej partycji, a partycje mogą zawierać wiele dzierżaw. Informacje o partycjach są abstrakcyjne dla użytkowników. Dana partycja (w tym wszystkie dzierżawy w niej) jest replikowana do wielu centrów danych. Partycja dla dzierżawy jest wybierana na podstawie właściwości dzierżawy (np. kodu kraju). Wpisy tajne i inne informacje poufne w każdej partycji są szyfrowane za pomocą dedykowanego klucza. Klucze są generowane automatycznie po utworzeniu nowej partycji.
 
-Funkcje systemu usługi Azure AD są unikatowym wystąpieniem dla każdej sesji użytkownika. Ponadto usługa Azure AD używa technologii szyfrowania w celu zapewnienia izolacji udostępnionych zasobów systemowych na poziomie sieci, aby zapobiec nieautoryzowanemu i niezamierzonemu przesyłaniu informacji.
+Funkcje systemu usługi Azure AD są unikatowym wystąpieniem dla każdej sesji użytkownika. Ponadto usługa Azure AD używa technologii szyfrowania w celu zapewnienia izolacji udostępnionych zasobów systemowych na poziomie sieci, aby zapobiec nieautoryzowanemu i niezamierzonemu transferowi informacji.

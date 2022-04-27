@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: Dowiedz się, jak uzyskać raport użycia przeglądarki Firmy Microsoft przy użyciu pulpitu nawigacyjnego Microsoft 365 Reports w Centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 29b4161b9bb6cbc509d6541e13fa9222628534b4
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 5515c00b5c7fc64a6f0295bdce724e5b798fb018
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782022"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078318"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Raporty w centrum administracyjnym — użycie przeglądarki Microsoft
 
-Na pulpicie nawigacyjnym raportów Microsoft 365 przedstawiono omówienie działań w produktach w organizacji. Umożliwia przechodzenie do szczegółów poszczególnych raportów na poziomie produktu, aby uzyskać bardziej szczegółowy wgląd w działania w ramach każdego produktu. Zobacz [temat zawierający omówienie pulpitu nawigacyjnego Raporty](activity-reports.md). W raporcie użycia przeglądarki firmy Microsoft możesz uzyskać szczegółowe informacje na temat programu Internet Explorer, Starsza wersja Microsoft Edge i nowego użycia Microsoft Edge. Raportowanie użycia jest oparte na Microsoft 365 Usługi online, do Microsoft 365 Usługi online uzyskiwany za pomocą przeglądarki firmy Microsoft.
+Na pulpicie nawigacyjnym raportów Microsoft 365 przedstawiono omówienie działań w produktach w organizacji. Umożliwia przechodzenie do szczegółów poszczególnych raportów na poziomie produktu, aby uzyskać bardziej szczegółowy wgląd w działania w ramach każdego produktu. Zobacz [temat zawierający omówienie pulpitu nawigacyjnego Raporty](activity-reports.md). W raporcie użycia przeglądarki firmy Microsoft możesz uzyskać szczegółowe informacje na temat programu Internet Explorer, Starsza wersja Microsoft Edge i nowego użycia Microsoft Edge. Raportowanie użycia jest oparte na Microsoft 365 Usługi online, do których uzyskuje się dostęp za pomocą przeglądarki Microsoft na dowolnym urządzeniu korzystającym z konta Microsoft 365.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Jak uzyskać dostęp do raportu użycia przeglądarki firmy Microsoft
 

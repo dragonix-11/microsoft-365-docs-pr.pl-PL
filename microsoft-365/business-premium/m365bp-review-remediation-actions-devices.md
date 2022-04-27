@@ -1,6 +1,6 @@
 ---
-title: Przejrzyj działania naprawcze w programie Microsoft 365 Business Premium
-description: Zobacz, jak wyświetlić działania naprawcze wykonane automatycznie lub oczekujące na zatwierdzenie w Centrum akcji
+title: Przeglądanie akcji korygowania w Microsoft 365 Business Premium
+description: Zobacz, jak wyświetlać korygowania, które zostały wykonane automatycznie lub oczekują na zatwierdzenie w Centrum akcji
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,51 +10,53 @@ ms.topic: how-to
 ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 160cef2ec7691fbc9debad809b20461a0d3efe23
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: df99f73275e0aa83216bd1de101638dee628f0f2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63705540"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091902"
 ---
-# <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Przejrzyj działania naprawcze w programie Microsoft 365 Business Premium
+# <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Przeglądanie akcji korygowania w Microsoft 365 Business Premium
 
-W przypadku wykrycia zagrożeń są podejmowane działania naprawcze. W zależności od określonego zagrożenia i konfiguracji ustawień zabezpieczeń działania naprawcze mogą być podejmowane automatycznie lub tylko po zatwierdzeniu. Przykłady działań naprawczych obejmują wysyłanie pliku do kwarantanny, zatrzymywanie procesu i usuwanie zaplanowanego zadania. Wszystkie akcje naprawcze są śledzone w Centrum akcji, które znajduje się w [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
+W porządku, wykryto naruszenie zabezpieczeń, ale co robisz? To zależy od jego natury. 
 
-:::image type="content" source="../media/defender-business/mdb-actioncenter.png" alt-text="Zrzut ekranu przedstawiający Centrum akcji na ekranie M365.":::
+Przykłady akcji korygowania obejmują wysyłanie pliku do kwarantanny, zatrzymywanie procesu przed uruchomieniem lub całkowite usunięcie zaplanowanego zadania. Wszystkie akcje korygowania są śledzone w centrum akcji, które znajduje się pod adresem [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
+
+:::image type="content" source="../media/defender-business/mdb-actioncenter.png" alt-text="Zrzut ekranu centrum akcji w języku M365.":::
 
 **W tym artykule opisano**:
 
-- [Jak korzystać z Centrum akcji](#how-to-use-your-action-center)
+- [Jak używać centrum akcji](#how-to-use-your-action-center)
 
-- [Typy działań naprawczych](#types-of-remediation-actions)
+- [Typy akcji korygowania](#types-of-remediation-actions)
 
 
-## <a name="how-to-use-your-action-center"></a>Jak korzystać z Centrum akcji
+## <a name="how-to-use-your-action-center"></a>Jak używać centrum akcji
 
-1. Przejdź do Microsoft 365 Defender portalu internetowego ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
 2. W okienku nawigacji wybierz pozycję **Centrum akcji**.
 
-3. Wybierz **kartę Oczekujące** , aby wyświetlić i zatwierdzić (lub odrzucić) wszystkie oczekujące akcje. Takie działania mogą być związane z ochroną antywirusową/antymalware, automatycznymi badaniami, działaniami ręcznej odpowiedzi lub sesjami odpowiedzi na żywo.
+3. Wybierz kartę **Oczekujące** , aby wyświetlić i zatwierdzić (lub odrzucić) wszystkie oczekujące akcje. Takie akcje mogą wynikać z ochrony antywirusowej/ochrony przed złośliwym kodem, zautomatyzowanych badań, działań ręcznego reagowania lub sesji odpowiedzi na żywo.
 
-4. Wybierz **kartę** Historia, aby wyświetlić listę ukończonych akcji. 
+4. Wybierz kartę **Historia** , aby wyświetlić listę ukończonych akcji. 
 
-## <a name="types-of-remediation-actions"></a>Typy działań naprawczych
+## <a name="types-of-remediation-actions"></a>Typy akcji korygowania
 
-Subskrypcja zawiera kilka różnych typów działań naprawczych w przypadku wykrytych zagrożeń. Te działania obejmują akcje ręcznej odpowiedzi, akcje po zautomatyzowanym śledztwu i akcje odpowiedzi na żywo.
+Twoja subskrypcja obejmuje kilka różnych typów akcji korygowania wykrytych zagrożeń. Te akcje obejmują ręczne akcje reagowania, akcje po zautomatyzowanym badaniu i akcje odpowiedzi na żywo.
 
-W poniższej tabeli wymieniono dostępne działania naprawcze:
+W poniższej tabeli wymieniono dostępne akcje korygowania:
 
-| Źródło  | Akcje  |
+| Źródło  | Działania  |
 |---------|---------|
-| [Zautomatyzowane badania](../security/defender-endpoint/automated-investigations.md)      | - Poddaj plikowi kwarantannę <br/>- Usunięcie klucza rejestru <br/>- Zaśmieć proces <br/>— Zatrzymywanie usługi <br/>- Wyłączanie sterownika <br/>— Usuwanie zaplanowanego zadania        |
-| [Ręczne akcje odpowiedzi](../security/defender-endpoint/respond-machine-alerts.md)   | - Uruchom skanowanie antywirusowe <br/>- Wyizoluj urządzenie <br/>— Zatrzymaj i poddaj kwarantannie <br/>— Dodaj wskaźnik, aby zablokować lub zezwolić na plik       |
-| [Odpowiedź na żywo](../security/defender-endpoint/live-response.md)   | - Zbieranie danych forensycznych <br/>- Analizowanie pliku <br/>- Uruchamianie skryptu <br/>— Wysłać podejrzaną jednostkę do firmy Microsoft w celu analizy <br/>— Rozwiązywanie problemów z plikiem <br/>— proaktywne poszukiwania zagrożeń         |
+| [Zautomatyzowane badania](../security/defender-endpoint/automated-investigations.md)      | — Kwarantanna pliku <br/>— Usuwanie klucza rejestru <br/>- Zabij proces <br/>— Zatrzymywanie usługi <br/>— Wyłączanie sterownika <br/>— Usuwanie zaplanowanego zadania        |
+| [Ręczne akcje odpowiedzi](../security/defender-endpoint/respond-machine-alerts.md)   | — Uruchamianie skanowania antywirusowego <br/>- Izolowanie urządzenia <br/>— Zatrzymywanie i kwarantanna <br/>- Dodaj wskaźnik, aby zablokować lub zezwolić na plik       |
+| [Odpowiedź na żywo](../security/defender-endpoint/live-response.md)   | - Zbieranie danych kryminalistycznych <br/>- Analizowanie pliku <br/>— Uruchamianie skryptu <br/>— Wysyłanie podejrzanej jednostki do firmy Microsoft w celu analizy <br/>— Korygowanie pliku <br/>- Proaktywne wyszukiwanie zagrożeń         |

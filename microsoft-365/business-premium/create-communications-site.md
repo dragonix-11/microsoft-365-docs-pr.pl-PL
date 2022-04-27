@@ -1,14 +1,14 @@
 ---
-title: Tworzenie witryny SharePoint komunikacji
+title: Tworzenie witryny komunikacji SharePoint
 f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,39 +23,39 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Dowiedz się, dlaczego i jak utworzyć witrynę SharePoint komunikacji dla kampanii lub firmy z firmami Microsoft 365.
-ms.openlocfilehash: ba0f8f559bc8843a61baca1bbb6615c596ffdc65
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Dowiedz się, dlaczego i jak utworzyć witrynę komunikacji SharePoint dla swojej kampanii lub firmy z Microsoft 365 oraz jak chronić zespół przed cyberatakami i najazdami przed złośliwym oprogramowaniem i innymi zagrożeniami spowodowanymi niewłaściwym udostępnianiem plików.
+ms.openlocfilehash: 1e1e2792e4a667737118974b95ae5f77cb6ae224
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634388"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100186"
 ---
-# <a name="create-a-communications-site-in-sharepoint"></a>Tworzenie witryny komunikacji w programie SharePoint
+# <a name="create-a-communications-site-in-sharepoint"></a>Tworzenie witryny komunikacji w SharePoint
 
-Doskonałym sposobem na komunikowanie priorytetów, udostępnianie dokumentów strategii i wyróżnianie nadchodzących zdarzeń jest korzystanie z witryny do komunikacji w programie SharePoint. Witryny komunikacji są do szerokiego udostępniania informacji w całej firmie lub kampanii; to wewnętrzna witryna strategii.
+Doskonałym sposobem komunikowania priorytetów, udostępniania dokumentów strategicznych i wyróżniania nadchodzących wydarzeń jest użycie witryny komunikacji w SharePoint i o to właśnie chodzi w tej misji. Witryny komunikacyjne są przeznaczone do udostępniania rzeczy szeroko w całej firmie lub kampanii &mdash; to twoja wewnętrzna witryna strategiczna i sala taktyczna. 
 
 ## <a name="best-practices"></a>Najważniejsze wskazówki
 
-W witrynie do komunikacji uwzględnij następujące elementy:
+Uwzględnij następujące elementy w witrynie usługi Communications:
 
 1. Dodaj logo i kolory jako obraz nagłówka i motyw.
 
-2. Prowadź ze swoją strategią, wiadomością, ważnymi dokumentami, katalogiem i często zadawanymi pytaniami w **swoim składników Web Part Element główny**.
+2. Potencjalny klient ze strategią, komunikatem, ważnymi dokumentami, katalogiem i często zadawanymi pytaniami w **składniku Web Part hero**.
 
-3. Dołącz do zespołu oświadczenie dyrektora generalnego lub kandydata w składników **Web Part tekstu**.
+3. Dołącz do zespołu oświadczenie dyrektora generalnego lub kandydata w składniku **Web Part Text**.
 
-4. Dodaj zdarzenia do składników **Web Part** Zdarzenia, aby wszyscy widzili nadchodzące wydarzenia.
+4. Dodaj zdarzenia do **składnika Web Part Zdarzenia** , aby wszyscy mogli zobaczyć, co się pojawi.
 
-5. Dodawanie zdjęć, których mogą używać inne osoby lub które mogą je udostępniać, do składników **Web Part Galeria obrazów**.
+5. Dodaj zdjęcia, których użytkownicy mogą używać lub udostępniać w **składniku Web Part galerii obrazów**.
 
-![Diagram strony komunikacji SharePoint z obszarem wspólnych elementów potrzebnych dla kampanii.](../media/m365-democracy-comms-site.png)
+![Diagram strony SharePoint Communications z miejscem na typowe elementy potrzebne w kampanii.](../media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a>Infografika: tworzenie infografiki na temat witryny komunikacji
+## <a name="infographic-create-a-communications-site-infographic"></a>Infografika: tworzenie infografiki witryny komunikacji
 
-Poniższe linki do plików PowerPoint PDF można pobrać i wydrukować w formacie tabloid (nazywanym również księgi głównej, 11 x 17 lub A3).
+Poniższe linki do plików PowerPoint i PDF można pobrać i wydrukować w formacie tabloidu (znanym również jako ledger, 11 x 17 lub A3).
 
-[![Obraz infografiki na temat witryny komunikacji.](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pdf)
+[![Obraz przedstawiający infografikę witryny komunikacji.](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pdf) |  [PowerPoint](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pptx)
 
@@ -63,12 +63,14 @@ Poniższe linki do plików PowerPoint PDF można pobrać i wydrukować w formaci
 
 1. Zaloguj się do https://Office.com.
 
-2. W lewym górnym rogu strony wybierz ikonę Uruchamianie aplikacji, a następnie wybierz **SharePoint aplikacji.** Jeśli nie widzisz kafelka **SharePoint, kliknij** kafelek Witryny lub pozycję SharePoint, jeśli nie  jest widoczny.
+2. W lewym górnym rogu strony wybierz ikonę uruchamiania aplikacji, a następnie wybierz kafelek **SharePoint**. Jeśli kafelek **SharePoint** nie jest widoczny, kliknij kafelek **Witryny** lub **Wszystkie**, jeśli SharePoint nie jest widoczny.
 
-3. U góry strony SharePoint głównej kliknij pozycję **+ Utwórz** witrynę i wybierz opcję **Witryna do** komunikacji.
+3. W górnej części strony głównej SharePoint kliknij pozycję **+ Utwórz witrynę** i wybierz opcję **Witryna komunikacji**.
 
-Dowiedz się [wszystkiego na temat witryn komunikacji](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) i sposobu [tworzenia witryny do komunikacji w u SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
+Dowiedz się wszystkiego [o witrynach usługi Communications](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) i [sposobie tworzenia witryny komunikacji w usłudze SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
 
 ## <a name="admin-settings"></a>Ustawienia administratora
 
-Jeśli nie widzisz linku **+** Utwórz witrynę, samoobsługowe tworzenie witryn może nie być dostępne w Microsoft 365. Aby utworzyć witrynę zespołu, skontaktuj się z osobą administruną Microsoft 365 organizacji. Jeśli jesteś administratorem usługi Microsoft 365, zobacz Zarządzanie tworzeniem witryn w usłudze [SharePoint Online](/sharepoint/manage-site-creation), aby włączyć samoobsługowe tworzenie witryn dla organizacji, lub Zarządzanie witrynami w nowym centrum administracyjnym programu [SharePoint](/sharepoint/manage-sites-in-new-admin-center), aby utworzyć witrynę z centrum administracyjnego usługi <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a>.
+Jeśli nie widzisz linku **+ Utwórz** witrynę, tworzenie witryny samoobsługowej może być niedostępne w Microsoft 365. Aby utworzyć witrynę zespołu, skontaktuj się z osobą zarządzającą Microsoft 365 w organizacji. Jeśli jesteś administratorem Microsoft 365, zobacz [Zarządzanie tworzeniem witryn w usłudze SharePoint Online](/sharepoint/manage-site-creation), aby włączyć samoobsługowe tworzenie witryn dla organizacji lub [Zarządzaj witrynami w nowym centrum administracyjnym SharePoint](/sharepoint/manage-sites-in-new-admin-center), aby utworzyć witrynę z <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">poziomu centrum administracyjnego SharePoint</a>.
+
+Gratulujemy &mdash; ukończenia misji! Teraz natychmiast skoncentruj się [na ochronie zarządzanych urządzeń](m365bp-protect-devices.md) dla całej organizacji!

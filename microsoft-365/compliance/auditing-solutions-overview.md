@@ -1,9 +1,9 @@
 ---
-title: Rozwiązania inspekcji usługi Microsoft Purview
+title: Rozwiązania w zakresie inspekcji w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak przeprowadzać inspekcję działań użytkowników i administratorów w organizacji Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee11ee5e02ee4342921776124813b71cf4468ad7
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cc70060872c9f416120e859673ad9a3799322048
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001417"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100880"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Rozwiązania inspekcji w usłudze Microsoft Purview
 
@@ -32,13 +32,13 @@ ms.locfileid: "65001417"
 
 Rozwiązania do inspekcji usługi Microsoft Purview zapewniają zintegrowane rozwiązanie ułatwiające organizacjom efektywne reagowanie na zdarzenia zabezpieczeń, badania kryminalistyczne, badania wewnętrzne i obowiązki w zakresie zgodności. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Rekordy inspekcji dla tych zdarzeń można przeszukiwać za pomocą operacji zabezpieczeń, administratorów IT, zespołów ds. ryzyka dotyczącego informacji poufnych oraz badaczy zgodności i prawnych w organizacji. Ta funkcja zapewnia wgląd w działania wykonywane w organizacji Microsoft 365.
 
-## <a name="microsoft-purview-auditing-solutions"></a>Rozwiązania inspekcji usługi Microsoft Purview
+## <a name="microsoft-purview-auditing-solutions"></a>Rozwiązania w zakresie inspekcji w usłudze Microsoft Purview
 
 Usługa Microsoft Purview oferuje dwa rozwiązania inspekcji: Audit (Standard) i Audit (Premium).
 
 ![Kluczowe możliwości inspekcji (standardowej) i inspekcji (Premium).](..\media\AuditingSolutionsComparison.png)
 
-### <a name="audit-standard"></a>Inspekcja (standardowa)
+### <a name="audit-standard"></a>Usługa Inspekcja (wersja Standardowa)
 
 Usługa Microsoft Purview Audit (Standard) zapewnia możliwość rejestrowania i wyszukiwania inspekcji działań oraz wykonywania dochodzeń sądowych, informatycznych, zgodności i dochodzeń prawnych.
 
@@ -59,7 +59,7 @@ Usługa Microsoft Purview Audit (Standard) zapewnia możliwość rejestrowania i
 
 - **90-dniowe przechowywanie dziennika inspekcji**. Gdy inspekcja działania jest wykonywana przez użytkownika lub administratora, rekord inspekcji jest generowany i przechowywany w dzienniku inspekcji organizacji. W obszarze Inspekcja (Standardowa) rekordy są przechowywane przez 90 dni, co oznacza, że można wyszukiwać działania, które wystąpiły w ciągu ostatnich trzech miesięcy.
 
-### <a name="audit-premium"></a>Inspekcja (Premium)
+### <a name="audit-premium"></a>Inspekcja (wersja Premium)
 
 Inspekcja (Premium) opiera się na możliwościach inspekcji (Standardowa), zapewniając zasady przechowywania dzienników inspekcji, dłuższe przechowywanie rekordów inspekcji, zdarzenia o wysokiej wartości i dostęp do interfejsu API działania zarządzania Office 365.
 
@@ -77,7 +77,7 @@ Aby uzyskać bardziej szczegółowe informacje na temat funkcji inspekcji (Premi
 
 W poniższej tabeli porównano kluczowe możliwości dostępne w obszarze Inspekcja (Standardowa) i Inspekcja (Premium). Wszystkie funkcje inspekcji (w warstwie Standardowa) są zawarte w sekcji Inspekcja (Premium).
 
-|Możliwości|Inspekcja (standardowa)|Inspekcja (Premium)|
+|Możliwości|Usługa Inspekcja (wersja Standardowa)|Inspekcja (wersja Premium)|
 |:------|:-------------|:-------------|
 |Domyślnie włączone|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
 |Tysiące zdarzeń inspekcji z możliwością wyszukiwania|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
@@ -98,7 +98,7 @@ W poniższej tabeli porównano kluczowe możliwości dostępne w obszarze Inspek
 
 W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji (standardowej) i inspekcji (Premium). Funkcja inspekcji (standardowa) jest dołączona do funkcji Inspekcja (Premium).
 
-### <a name="audit-standard"></a>Inspekcja (standardowa)
+### <a name="audit-standard"></a>Usługa Inspekcja (wersja Standardowa)
 
 - subskrypcja Microsoft 365 Business Basic
 - subskrypcja Aplikacje Microsoft 365 for Business
@@ -113,7 +113,7 @@ W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji
 - subskrypcja Office 365 Education A1
 - subskrypcja Office 365 Education A3
 
-### <a name="audit-premium"></a>Inspekcja (Premium)
+### <a name="audit-premium"></a>Inspekcja (wersja Premium)
 
 - subskrypcja Microsoft 365 Enterprise E5
 - subskrypcja Microsoft 365 Enterprise E3 + dodatek Zgodność platformy Microsoft 365 E5
@@ -132,7 +132,7 @@ W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji
 
 Aby rozpocząć korzystanie z rozwiązań inspekcji w usłudze Microsoft Purview, zapoznaj się z poniższymi wskazówkami dotyczącymi konfiguracji.
 
-### <a name="set-up-audit-standard"></a>Konfigurowanie inspekcji (standardowa)
+### <a name="set-up-audit-standard"></a>Konfiguruj usługę Inspekcja (wersja Standardowa)
 
 Pierwszym krokiem jest skonfigurowanie inspekcji (Standardowa), a następnie uruchomienie wyszukiwania dzienników inspekcji.
 
@@ -146,7 +146,7 @@ Pierwszym krokiem jest skonfigurowanie inspekcji (Standardowa), a następnie uru
 
 Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Konfigurowanie inspekcji (standardowa)](set-up-basic-audit.md).
 
-### <a name="set-up-audit-premium"></a>Konfigurowanie inspekcji (Premium)
+### <a name="set-up-audit-premium"></a>Konfiguruj usługę Inspekcja (wersja Premium)
 
 Jeśli Twoja organizacja ma subskrypcję obsługą funkcji Inspekcja (Premium), wykonaj następujące kroki, aby skonfigurować i korzystać z dodatkowych funkcji w obszarze Inspekcja (Premium).
 

@@ -1,8 +1,8 @@
 ---
-title: Zarządzanie Microsoft 365 hasłami do kont użytkowników
+title: Zarządzanie hasłami Microsoft 365 konta użytkownika
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
@@ -21,72 +21,72 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Dowiedz się, jak zarządzać hasłami Microsoft 365 użytkowników.
-ms.openlocfilehash: 6a0d4298f3d6c46ab067795bccf01123605ce1aa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak zarządzać hasłami Microsoft 365 konta użytkownika.
+ms.openlocfilehash: 689f88c2380f0655af70cea08404ed7163fa1239
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62977609"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094399"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>Zarządzanie Microsoft 365 hasłami do kont użytkowników
+# <a name="manage-microsoft-365-user-account-passwords"></a>Zarządzanie hasłami Microsoft 365 konta użytkownika
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Hasłami do Microsoft 365 użytkownika można zarządzać na kilka różnych sposobów, w zależności od konfiguracji tożsamości. Kontami użytkowników można zarządzać w centrum [centrum administracyjne platformy Microsoft 365](/admin), Usługi domenowe w usłudze Active Directory (AD DS) lub w centrum administracyjnym usługi Azure Active Directory (Azure AD).
+W zależności od konfiguracji tożsamości można zarządzać Microsoft 365 hasłami kont użytkowników na kilka różnych sposobów. Kontami użytkowników można zarządzać w [Centrum administracyjne platformy Microsoft 365](/admin), w Active Directory Domain Services (AD DS) lub w centrum administracyjnym Azure Active Directory (Azure AD).
 
-## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planowanie miejsca i sposobu zarządzania hasłami do konta użytkownika
+## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planowanie miejsca i sposobu zarządzania hasłami konta użytkownika
 
-Miejsce i sposób zarządzania kontami użytkowników zależy od modelu tożsamości, którego chcesz używać na Microsoft 365. Oba modele są oparte tylko na chmurze i hybrydowe.
+Miejsce i sposób zarządzania kontami użytkowników zależy od modelu tożsamości, którego chcesz użyć dla Microsoft 365. Te dwa modele są tylko w chmurze i hybrydowe.
   
 ### <a name="cloud-only"></a>Tylko w chmurze
 
-Hasłami do konta użytkownika zarządza się w:
+Hasłami kont użytkowników zarządza się w:
 
-- [The centrum administracyjne platformy Microsoft 365](/admin)
+- [Centrum administracyjne platformy Microsoft 365](/admin)
 - Centrum administracyjne usługi Azure AD
     
-### <a name="hybrid"></a>Hybrydowe
+### <a name="hybrid"></a>Hybrydowa
 
-Dzięki tożsamości hybrydowej hasła są przechowywane w AD DS, więc do zarządzania hasłami kont użytkowników należy używać lokalnych narzędzi AD DS użytkowników. Nawet w przypadku korzystania z funkcji synchronizacji skrótów haseł (PHS), w której usługa Azure AD przechowuje już skróty wersji już z hasztagami w programie AD DS, Ty i użytkownicy możecie zarządzać hasłami w AD DS.
+W przypadku tożsamości hybrydowej hasła są przechowywane w usługach AD DS, dlatego do zarządzania hasłami kont użytkowników należy użyć lokalnych narzędzi usług AD DS. Nawet w przypadku korzystania z synchronizacji skrótów haseł (PHS), w której usługa Azure AD przechowuje wersję skrótową już skrótowej wersji w usługach AD DS, ty i użytkownicy muszą zarządzać swoimi hasłami w usługach AD DS.
 
-[Zapisując hasło](#pw_writeback), użytkownicy mogą zmieniać swoje hasła AD DS azure AD.
+Dzięki [funkcji zapisywania zwrotnego haseł](#pw_writeback) użytkownicy mogą zmieniać swoje hasła usług AD DS za pośrednictwem usługi Azure AD.
 
-## <a name="prevent-bad-passwords"></a>Zapobieganie złym hasłom
+## <a name="prevent-bad-passwords"></a>Zapobieganie nieprawidłowym hasłom
 
-Wszyscy użytkownicy powinni tworzyć hasła do swoich kont użytkowników za pomocą wskazówek firmy [Microsoft](https://www.microsoft.com/research/publication/password-guidance) dotyczących haseł.
+Wszyscy użytkownicy powinni używać [wskazówek firmy Microsoft dotyczących haseł](https://www.microsoft.com/research/publication/password-guidance) do tworzenia haseł kont użytkowników.
 
-Aby uniemożliwić użytkownikom tworzenie łatwego do ustalenia hasła, użyj usługi Azure AD Password Protection, która używa zarówno globalnej listy zablokowanych haseł, jak i opcjonalnej niestandardowej listy zablokowanych haseł, którą możesz określić. Możesz na przykład określić terminy specyficzne dla Twojej organizacji, takie jak:
+Aby uniemożliwić użytkownikom tworzenie łatwo określonego hasła, użyj ochrony haseł usługi Azure AD, która używa zarówno globalnej listy zakazanych haseł, jak i opcjonalnej niestandardowej listy zakazanych haseł. Można na przykład określić terminy specyficzne dla twojej organizacji, takie jak:
 
-- Nazwy marek
+- Marki
 - Nazwy produktów
 - Lokalizacje (na przykład siedziba firmy)
-- Postanowienia wewnętrzne dotyczące konkretnej firmy
-- Skróty, które mają określone znaczenie firmowe
+- Warunki wewnętrzne specyficzne dla firmy
+- Skróty, które mają określone znaczenie firmy
 
-Możesz zakazać złych haseł [w chmurze](/azure/active-directory/authentication/concept-password-ban-bad) i dla użytkowników [lokalnych, AD DS](/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
+Możesz zakazać używania nieprawidłowych haseł [w chmurze](/azure/active-directory/authentication/concept-password-ban-bad) i [lokalnych usług AD DS](/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
 
-## <a name="simplify-user-sign-in"></a>Upraszczanie logowania użytkownika
+## <a name="simplify-user-sign-in"></a>Uproszczenie logowania użytkownika
 
-Bezproblemowe logowanie jednokrotne w usłudze Azure Sign-On AD (bezproblemowe logowanie jednokrotne usługi Azure AD) współpracuje z uwierzytelnianiem PTA (PHS) i usługą Pass-Through, aby umożliwić użytkownikom logowanie się do usług, które korzystają z kont użytkowników usługi Azure AD, bez konieczności wpisywania haseł, a w wielu przypadkach także ich nazw użytkowników. Zapewnia to Twoim użytkownikom łatwiejszy dostęp do aplikacji opartych na chmurze, takich jak Office 365, bez konieczności wytłaniania żadnych dodatkowych lokalnych składników, takich jak serwery federujące tożsamości.
+Bezproblemowe logowanie jedno Sign-On krotne usługi Azure AD (Azure AD Seamless SSO) współpracuje z usługami PHS i uwierzytelnianiem Pass-Through (PTA), aby umożliwić użytkownikom logowanie się do usług korzystających z kont użytkowników usługi Azure AD bez konieczności wpisywania haseł, a w wielu przypadkach ich nazw użytkowników. Zapewnia to użytkownikom łatwiejszy dostęp do aplikacji opartych na chmurze, takich jak Office 365, bez konieczności używania dodatkowych składników lokalnych, takich jak serwery federacyjne tożsamości.
 
-Bezproblemowe logowanie jednokrotne usługi Azure AD jest konfigurowane za pomocą narzędzia do logowania jednokrotnego Połączenie Azure AD. Zobacz [instrukcje dotyczące konfigurowania bezproblemowego logowania jednokrotnego usługi Azure AD](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
+Bezproblemowe logowanie jednokrotne usługi Azure AD można skonfigurować za pomocą narzędzia Połączenie usługi Azure AD. Zapoznaj [się z instrukcjami dotyczącymi konfigurowania bezproblemowego logowania jednokrotnego usługi Azure AD](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
 <a name="pw_writeback"></a>
-## <a name="simplify-password-updates-to-ad-ds"></a>Upraszczaj aktualizacje haseł AD DS
+## <a name="simplify-password-updates-to-ad-ds"></a>Uproszczenie aktualizacji haseł w usługach AD DS
 
-Dzięki zapisywaniu hasła możesz zezwolić użytkownikom na resetowanie ich haseł za pośrednictwem usługi Azure AD, która jest następnie replikowana do AD DS. Użytkownicy nie muszą mieć dostępu do swoich lokalnych AD DS, aby zaktualizować swoje hasła. Jest to przydatne dla użytkowników mobilnych lub zdalnych, którzy nie mają połączenia dostępu zdalnego z siecią lokalną.
+Dzięki funkcji zapisywania zwrotnego haseł można zezwolić użytkownikom na resetowanie haseł za pośrednictwem usługi Azure AD, która jest następnie replikowana do usług AD DS. Użytkownicy nie muszą uzyskiwać dostępu do lokalnych usług AD DS w celu zaktualizowania swoich haseł. Jest to przydatne dla użytkowników mobilnych lub zdalnych, którzy nie mają połączenia dostępu zdalnego z siecią lokalną.
 
-Aby w pełni korzystać z funkcji usługi Azure AD Identity Protection, takich jak wymaganie od użytkowników zmiany haseł lokalnych w przypadku wykrycia wysokiego ryzyka naruszenia konta, jest wymagane zwrotne pisanie haseł.
+Zapisywanie zwrotne haseł jest wymagane do pełnego wykorzystania możliwości usługi Azure AD Identity Protection, takich jak wymaganie od użytkowników zmiany haseł lokalnych w przypadku wykrycia wysokiego ryzyka naruszenia zabezpieczeń konta.
 
-Aby uzyskać dodatkowe informacje i instrukcje konfiguracji, zobacz Usługa [Azure AD SSPR z zapisem hasła](/azure/active-directory/active-directory-passwords-writeback).
+Aby uzyskać dodatkowe informacje i instrukcje konfiguracji, zobacz [Samoobsługowe resetowanie hasła w usłudze Azure AD z zapisywaniem zwrotnym haseł](/azure/active-directory/active-directory-passwords-writeback).
 
 >[!Note]
->Uaktualnij usługę Azure AD do najnowszej wersji Połączenie, aby zapewnić najlepsze możliwe środowisko i nowe funkcje w miarę ich wersji. Aby uzyskać więcej informacji, zobacz [Niestandardowa instalacja usługi Azure AD Połączenie](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>Uaktualnij do najnowszej wersji usługi Azure AD Połączenie, aby zapewnić najlepsze możliwe środowisko i nowe funkcje w miarę ich wdrażania. Aby uzyskać więcej informacji, zobacz [Instalacja niestandardowa usługi Azure AD Połączenie](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
-## <a name="simplify-password-resets"></a>Upraszczanie resetowania hasła
+## <a name="simplify-password-resets"></a>Upraszczanie resetowania haseł
 
-Funkcja samodzielnego resetowania hasła (SSPR) pozwala użytkownikom resetować i odblokowywać swoje hasła lub konta. Aby ostrzegać Cię o błędach lub nadużyciach, możesz skorzystać ze szczegółowego raportowania, które śledzi dostęp użytkowników do systemu, wraz z powiadomieniami. Aby wdrożyć [resetowanie hasła](#pw_writeback) , należy włączyć funkcję zapisu hasła.
+Samoobsługowe resetowanie haseł umożliwia użytkownikom resetowanie lub odblokowywanie haseł lub kont. Aby otrzymywać alerty o niewłaściwym lub niewłaściwym użyciu, możesz użyć szczegółowych raportów, które śledzą, kiedy użytkownicy uzyskują dostęp do systemu, wraz z powiadomieniami. Przed wdrożeniem resetowania hasła należy włączyć [funkcję zapisywania zwrotnego haseł](#pw_writeback) .
 
-Zobacz [instrukcje dotyczące wycofywania resetowania hasła](/azure/active-directory/authentication/howto-sspr-deployment).
+Zapoznaj się z [instrukcjami dotyczącymi wdrażania resetowania haseł](/azure/active-directory/authentication/howto-sspr-deployment).

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0bfec0b56a67b1242d8dfd76b845aa273a76d27e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cb17e2a3624471031eb4f72199705d6b8fe06979
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667257"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092872"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Praca z zaawansowanymi wynikami zapytania wyszukiwania zagrożeń
 
@@ -42,7 +42,7 @@ Chociaż możesz utworzyć zaawansowane zapytania [wyszukiwania zagrożeń](adva
 - Wyświetlanie wyników jako tabeli lub wykresu
 - Eksportowanie tabel i wykresów
 - Przechodzenie do szczegółów szczegółowych informacji o jednostce
-- Dostosowywanie zapytań bezpośrednio z wyników lub stosowanie filtrów
+- Dostosowywanie zapytań bezpośrednio z wyników
 
 ## <a name="view-query-results-as-a-table-or-chart"></a>Wyświetlanie wyników zapytania jako tabeli lub wykresu
 
@@ -52,12 +52,12 @@ Domyślnie zaawansowane wyszukiwanie zagrożeń wyświetla wyniki zapytania jako
 |--|--|
 | **Tabeli** | Wyświetla wyniki zapytania w formacie tabelarycznym |
 | **Wykres kolumnowy** | Renderuje serię unikatowych elementów na osi x jako pionowe słupki, których wysokość reprezentuje wartości liczbowe z innego pola |
-| **Skumulowany wykres kolumnowy** | Renderuje serię unikatowych elementów na osi x jako skumulowane słupki pionowe, których wysokość reprezentuje wartości liczbowe z jednego lub kilku innych pól |
 | **Wykres kołowy** | Renderuje fragmenty reprezentujące unikatowe elementy. Rozmiar każdego tortu reprezentuje wartości liczbowe z innego pola. |
-| **Wykres pierścieniowy** | Renderuje łuki przekrojowe reprezentujące unikatowe elementy. Długość każdego łuku reprezentuje wartości liczbowe z innego pola. |
 | **Wykres liniowy** | Wykreśla wartości liczbowe dla serii unikatowych elementów i łączy wykreślone wartości |
 | **Wykres punktowy** | Wykreśla wartości liczbowe dla serii unikatowych elementów |
 | **Wykres warstwowy** | Kreśli wartości liczbowe dla serii unikatowych elementów i wypełnia sekcje poniżej wykreślonych wartości |
+| **Skumulowany wykres warstwowy** | Kreśli wartości liczbowe dla serii unikatowych elementów i umieszcza wypełnione sekcje poniżej wykreślonych wartości  |
+| **Wykres czasowe** | Kreśla wartości według liczby w liniowej skali czasu |
 
 ### <a name="construct-queries-for-effective-charts"></a>Konstruowanie zapytań dla efektywnych wykresów
 

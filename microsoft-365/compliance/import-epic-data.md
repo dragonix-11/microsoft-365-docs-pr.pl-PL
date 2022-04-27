@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika w celu importowania danych epickiej EHR
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik danych do importowania elektronicznych rekordów opieki zdrowotnej (EHR) z systemu Epic organizacji w celu Microsoft 365. Dzięki temu można używać danych epickiej EHR w zasadach zarządzania ryzykiem wewnętrznym, aby ułatwić wykrywanie nieautoryzowanego dostępu do danych pacjentów przez pracowników.
-ms.openlocfilehash: 1dfcedbc6242f16ce476dddd642567bef69c966f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 55f33358af7b53dc6042fce94b1ddc92e9f130fa
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000141"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078006"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Konfigurowanie łącznika w celu importowania danych inspekcji epiki EHR (wersja zapoznawcza)
 

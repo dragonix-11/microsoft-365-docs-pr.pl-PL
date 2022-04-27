@@ -2,8 +2,8 @@
 title: Zbieranie załączników w chmurze w ramach zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 04/05/2022
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kolekcje w usłudze Microsoft Purview eDiscovery (Premium) umożliwiają zbieranie załączników w chmurze do przeglądu w badaniu lub przypadku.
-ms.openlocfilehash: 1dd48f343f9df43edf8553e73395d756eb6713a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4a9db59f8e8b997cdd04934c9dac161369964229
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000713"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094124"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium-preview"></a>Zbieranie załączników w chmurze w usłudze Microsoft Purview eDiscovery (Premium) (wersja zapoznawcza)
 

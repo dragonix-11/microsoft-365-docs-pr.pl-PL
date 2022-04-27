@@ -1,6 +1,6 @@
 ---
-title: Wdowaj urządzenia organizacji, aby Microsoft Defender dla Firm
-description: Wdowaj urządzenia organizacji, aby Microsoft Defender dla Firm
+title: Dołączanie urządzeń organizacji do Microsoft Defender dla Firm
+description: Dołączanie urządzeń organizacji do Microsoft Defender dla Firm
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,138 +10,139 @@ ms.topic: overview
 ms.date: 04/01/2022
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.localizationpriority: high
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
-ms.openlocfilehash: e9810b453136025e094ef8a0e88bff526f2c5a51
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 774c23a4da7d368f46607fd588a07ffb01e92f53
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634784"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094202"
 ---
-# <a name="onboard-managed-devices-to-microsoft-defender-for-business"></a>Dołączanie urządzeń zarządzanych do Microsoft Defender dla Firm
+# <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Dołączanie zarejestrowanych urządzeń do Microsoft Defender dla Firm
 
-Urządzenia w nim Microsoft Defender dla Firm w celu ich ochrony za pomocą ochrony nowej generacji (ochrony antywirusowej, ochrony przed złośliwym oprogramowaniem i dostarczana w chmurze), ochrony zapory, filtrowania zawartości sieci Web i innych. 
+Po zarejestrowaniu urządzeń należy je dołączyć do Microsoft Defender dla Firm w celu zaimplementowania ochrony nowej generacji (ochrony antywirusowej, ochrony przed złośliwym kodem i ochrony dostarczanej w chmurze), ochrony zapory, filtrowania zawartości internetowej i nie tylko. 
 
-Aby wychować urządzenia, możesz wybrać jedną z kilku opcji:
+Aby dołączyć urządzenia, możesz wybrać jedną z kilku opcji:
 
-- [Użyj automatycznego dołączania dla Windows, które są już zarejestrowane w programie Microsoft Endpoint Manager](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
+- [Używanie automatycznego dołączania dla urządzeń Windows, które są już zarejestrowane w Microsoft Endpoint Manager](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
 
-- [Używanie skryptu lokalnego na urządzeniach Windows i macOS](#use-a-local-script-to-onboard-windows-and-macos-devices)
+- [Dołączanie urządzeń z systemem Windows i macOS przy użyciu skryptu lokalnego](#use-a-local-script-to-onboard-windows-and-macos-devices)
 
-- [Zarejestruj Endpoint Manager](#use-microsoft-endpoint-manager-to-enroll-devices) urządzenia (w systemie Windows, macOS, iOS i Android), a następnie zastosuj zasady usługi Defender dla firm do tych urządzeń
+- [Używanie Endpoint Manager do rejestrowania urządzeń](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows, macOS, iOS i Android), a następnie stosowania zasad usługi Defender for Business na tych urządzeniach
 
-Ten artykuł zawiera również:
+Ten artykuł zawiera również następujące elementy:
 
-- [Jak uruchomić test wykrywania na Windows urządzenia](#run-a-detection-test-on-a-windows-device)
+- [Jak uruchomić test wykrywania na urządzeniu Windows](#run-a-detection-test-on-a-windows-device)
 
 - [Jak stopniowo dołączać urządzenia](#onboard-devices-gradually)
 
-- [Jak wyeżdżać urządzenie](#offboard-a-device) w przypadku jego wymiany lub gdy ktoś odejdzie z organizacji
+- [Jak odłączyć urządzenie](#offboard-a-device) , jeśli urządzenie zostanie zastąpione lub ktoś opuści organizację
 
 > [!IMPORTANT]
-> Jeśli coś poszło nie tak i proces dołączania zakończy się niepowodzeniem, [zobacz rozwiązywanie Microsoft Defender dla Firm problemów](../security/defender-business/mdb-troubleshooting.yml).
+> Jeśli coś pójdzie nie tak i proces dołączania zakończy się niepowodzeniem, zobacz [Microsoft Defender dla Firm rozwiązywanie problemów](../security/defender-business/mdb-troubleshooting.yml).
 
-## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager"></a>Użyj automatycznego dołączania dla Windows, które są już zarejestrowane w programie Microsoft Endpoint Manager
+## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager"></a>Używanie automatycznego dołączania dla urządzeń Windows, które są już zarejestrowane w Microsoft Endpoint Manager
 
-Opcja automatycznego dołączania dotyczy tylko Windows urządzeniach. Automatyczne dołączanie jest dostępne, jeśli Twoja organizacja używa już usługi Microsoft Endpoint Manager, Microsoft Intune lub Mobile Zarządzanie urządzeniami (MDM) w układzie Microsoft Intune przed użyciem programu Defender dla firm i masz już usługę Windows urządzenia zarejestrowane w programie Endpoint Manager. 
+Opcja automatycznego dołączania dotyczy tylko urządzeń Windows. Automatyczne dołączanie jest dostępne, jeśli spełnione są następujące warunki:
 
-Jeśli Windows urządzenia są już zarejestrowane w usłudze Endpoint Manager, program Defender dla firm wykryje je podczas konfigurowania i konfigurowania usługi Defender dla firm. Zostaniesz poproszony(-a) o zastosowanie automatycznego dołączania do wszystkich lub niektórych Windows urządzeniach. Możesz wychować wszystkie Windows urządzenia jednocześnie lub wybrać określone urządzenia, od których chcesz zacząć, a następnie dodać więcej urządzeń później.
+- Twoja organizacja używała już Microsoft Endpoint Manager, Microsoft Intune lub mobile Zarządzanie urządzeniami (MDM) w Microsoft Intune, zanim otrzymasz usługę Defender for Business ( Microsoft 365 Business Premium klienci mają już Microsoft Intune).
 
-Aby dowiedzieć się więcej o automatycznym dołączaniu, zobacz Krok 2 w tece Konfigurowanie konfiguracji przy użyciu [Microsoft Defender dla Firm](../security/defender-business/mdb-use-wizard.md).
+- Masz już Windows urządzenia zarejestrowane w Endpoint Manager.
 
-## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>Używanie skryptu lokalnego na urządzeniach Windows i macOS
+Jeśli Windows urządzenia są już zarejestrowane w usłudze Endpoint Manager, usługa Defender dla Firm wykryje te urządzenia podczas konfigurowania i konfigurowania usługi Defender dla firm. Zostanie wyświetlone pytanie, czy chcesz używać automatycznego dołączania dla wszystkich lub niektórych urządzeń Windows. Możesz dołączyć wszystkie urządzenia Windows jednocześnie lub wybrać określone urządzenia do rozpoczęcia, a następnie dodać więcej urządzeń później.
 
-Aby w urządzeniach Windows i macOS, możesz użyć skryptu lokalnego. Po uruchomieniu skryptu dołączania na urządzeniu tworzy on zaufanie dla programu Azure Active Directory (jeśli to zaufanie jeszcze nie istnieje), rejestruje urządzenie w usłudze Microsoft Endpoint Manager (jeśli nie zostało jeszcze zarejestrowane), a następnie uruchamia urządzenie do usługi Defender dla firm. 
+> [!TIP]
+> Zalecamy wybranie opcji "wszystkie zarejestrowane urządzenia". Dzięki temu, gdy Windows urządzenia zostaną zarejestrowane w Endpoint Manager później, zostaną automatycznie dołączone do usługi Defender for Business.
+Aby dowiedzieć się więcej na temat automatycznego dołączania, zobacz Krok 2 w temacie [Używanie kreatora do konfigurowania Microsoft Defender dla Firm](../security/defender-business/mdb-use-wizard.md).
 
-Za pomocą tej metody można wychować do 10 urządzeń jednocześnie.
+## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>Dołączanie urządzeń z systemem Windows i macOS przy użyciu skryptu lokalnego
 
-1. Przejdź do Microsoft 365 Defender portalu internetowego ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+Do dołączania Windows i komputerów Mac można użyć skryptu lokalnego. Po uruchomieniu skryptu dołączania na urządzeniu tworzy on relację zaufania z Azure Active Directory (jeśli to zaufanie jeszcze nie istnieje), rejestruje urządzenie w Microsoft Endpoint Manager (jeśli nie zostało jeszcze zarejestrowane), a następnie dołącza urządzenie do usługi Defender dla Firm. Ta metoda jest przydatna do dołączania urządzeń w usłudze Defender dla Firm. Jednocześnie można dołączyć maksymalnie 10 urządzeń.
 
-2. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Endpoints**, a następnie w obszarze **Zarządzanie** urządzeniami wybierz **pozycję Dołączanie**.
+1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-3. Wybierz system operacyjny, na przykład Windows 10 i **11**, **a** następnie w obszarze Na wsadu urządzenia w sekcji Metoda wdrażania  wybierz pozycję **Skrypt lokalny**. 
+2. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Punkty końcowe**, a następnie w obszarze **Zarządzanie urządzeniami** wybierz pozycję **Dołączanie**.
 
-4. Wybierz **pozycję Pobierz pakiet dołączający**. Zalecamy zapisanie pakietu dołączania na dysku wymiennym.
+3. Wybierz system operacyjny, taki jak **Windows 10 i 11** lub **macOS**, a następnie w sekcji **Metoda wdrażania** wybierz pozycję **Skrypt lokalny**. 
 
-5. Postępuj zgodnie z wskazówkami w następujących artykułach:
+4. Wybierz pozycję **Pobierz pakiet dołączania**. Zalecamy zapisanie pakietu dołączania na dysku wymiennym. (Jeśli wybrano system **macOS**, wybierz również pozycję **Pobierz pakiet instalacyjny** i zapisz go na urządzeniu wymiennym).
 
-   - Windows urządzenia: Na [urządzeniach Windows korzystające ze skryptu lokalnego](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
+5. Skorzystaj z następujących wskazówek:
 
-   - Urządzenia z systemem macOS: [Ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
+   - urządzenia Windows: [dołączanie urządzeń Windows przy użyciu skryptu lokalnego](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
 
-## <a name="use-microsoft-endpoint-manager-to-enroll-devices"></a>Zarejestruj Microsoft Endpoint Manager za pomocą urządzenia
+   - Urządzenia z systemem macOS: [ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
 
-Jeśli korzystano już z usługi Endpoint Manager (która obejmuje aplikacje Microsoft Intune i Mobile Zarządzanie urządzeniami), przed zakupem usługi Defender dla firm możesz nadal korzystać z programu Endpoint Manager do wnosnia urządzeń organizacji. Dzięki Endpoint Manager możesz korzystać z komputerów, tabletów i telefonów, w tym urządzeń z systemami iOS i Android.
+## <a name="use-microsoft-endpoint-manager-to-enroll-devices"></a>Rejestrowanie urządzeń przy użyciu Microsoft Endpoint Manager
 
-Jeśli Twoja organizacja używa urządzeń z systemem Android, użyj tej metody.
+Aby zarejestrować urządzenie, zarejestruj je samodzielnie lub poproś użytkowników o zalogowanie się do portalu firmy i zarejestrowanie i zainstalowanie wszystkich potrzebnych aplikacji. 
 
-Zobacz [Rejestracja urządzenia w aplikacji Microsoft Intune](/mem/intune/enrollment/device-enrollment).
+Jeśli używasz już Endpoint Manager (w tym Microsoft Intune i mobile Zarządzanie urządzeniami), zanim otrzymasz usługę Defender dla Firm, możesz nadal używać Endpoint Manager do dołączania urządzeń organizacji. Dzięki Endpoint Manager można dołączyć komputery, tablety i telefony, w tym urządzenia z systemami iOS i Android.
 
+Zobacz [Rejestrowanie urządzeń w Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 
-## <a name="run-a-detection-test-on-a-windows-device"></a>Uruchamianie testu wykrywania na Windows urządzenia
+## <a name="run-a-detection-test-on-a-windows-device"></a>Uruchamianie testu wykrywania na urządzeniu Windows
 
-Po włoceniu innych urządzeń Windows do usługi Defender dla firm możesz uruchomić test wykrywania na urządzeniu z systemem Windows, aby upewnić się, że wszystko działa poprawnie.
+Po dodaniu urządzeń Windows do usługi Defender dla Firm możesz uruchomić test wykrywania na urządzeniu Windows, aby upewnić się, że wszystko działa poprawnie.
 
-1. Na Windows utwórz folder: `C:\test-MDATP-test`.
+1. Na urządzeniu Windows utwórz folder: `C:\test-MDATP-test`.
 
 2. Otwórz wiersz polecenia jako administrator.
 
-3. W oknie Wiersz polecenia uruchom następujące polecenie programu PowerShell:
+3. W oknie wiersza polecenia uruchom następujące polecenie programu PowerShell:
 
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-Po uruchomieniu polecenia okno Wiersz polecenia zostanie zamknięte automatycznie. Jeśli wykrywanie zakończy się pomyślnie, test wykrywania zostanie oznaczony jako ukończony, a w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) dla nowo dodanego urządzenia w ciągu około 10 minut zostanie wyświetlony nowy alert.
+Po uruchomieniu polecenia okno wiersza polecenia zostanie zamknięte automatycznie. Jeśli test wykrywania zakończy się pomyślnie, w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) dla nowo dołączonego urządzenia zostanie wyświetlony nowy alert w ciągu około dziesięciu minut.
 
-## <a name="onboard-devices-gradually"></a>Urządzenia na wsadu stopniowo
+## <a name="onboard-devices-gradually"></a>Stopniowo dołączanie urządzeń
 
-Jeśli wolisz używać urządzeń w fazach, czyli stopniowo dołączanie *urządzeń, wykonaj* następujące czynności: 
+Jeśli wolisz dołączać urządzenia w fazach, które nazywamy *stopniowym dołączaniem urządzeń*, wykonaj następujące kroki: 
 
-1. Zidentyfikuj zestaw urządzeń do do urządzenia.
+1. Zidentyfikuj zestaw urządzeń do dołączenia.
 
-2. Przejdź do Microsoft 365 Defender portalu internetowego ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+2. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-3. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Endpoints**, a następnie w obszarze **Zarządzanie** urządzeniami wybierz **pozycję Dołączanie**.
+3. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Punkty końcowe**, a następnie w obszarze **Zarządzanie urządzeniami** wybierz pozycję **Dołączanie**.
 
-4. Wybierz system operacyjny (na przykład Windows 10 **i 11),** a następnie wybierz metodę dołączania (na przykład **skrypt lokalny**). Postępuj zgodnie z dostarczonymi wskazówkami dla wybranej metody.
+4. Wybierz system operacyjny (na przykład **Windows 10 i 11),** a następnie wybierz metodę dołączania (na przykład **skrypt lokalny**). Postępuj zgodnie ze wskazówkami podanymi dla wybranej metody.
 
-5. Powtórz tę procedurę dla każdego zestawu urządzeń, które chcesz dodać. 
+5. Powtórz ten proces dla każdego zestawu urządzeń, które chcesz dołączyć. 
 
 > [!TIP]
-> Nie musisz używać tego samego pakietu dołączania za każdym razem, gdy dodajesz urządzenia. Na przykład możesz użyć skryptu lokalnego, aby dodać niektóre urządzenia, a później możesz wybrać inną metodę, aby dodać więcej urządzeń.
+> Nie trzeba używać tego samego pakietu dołączania za każdym razem, gdy dołączasz urządzenia. Na przykład możesz użyć skryptu lokalnego do dołączania niektórych urządzeń, a później możesz wybrać inną metodę dołączania większej liczby urządzeń.
 
-## <a name="offboard-a-device"></a>Odłożanie urządzenia
+## <a name="offboard-a-device"></a>Odłączanie urządzenia
 
-Jeśli chcesz wyłączyć urządzenie, wykonaj następujące czynności:
+Jeśli chcesz odłączyć urządzenie, użyj jednej z następujących procedur:
 
-1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+1. W okienku nawigacji wybierz **pozycję Ustawienia**, a następnie wybierz pozycję **Punkty końcowe**.
 
-2. W okienku nawigacji wybierz pozycję **Ustawienia**, a następnie wybierz **pozycję Punkty końcowe**.
+1. W obszarze **Zarządzanie urządzeniami** wybierz pozycję **Odłączanie**.
 
-3. W **obszarze Zarządzanie urządzeniami** wybierz pozycję **Wyniesienie**.
+1. Wybierz system operacyjny, taki jak **Windows 10 i 11**, a następnie w obszarze **Odłącz urządzenie** w sekcji **Metoda wdrażania** wybierz pozycję **Skrypt lokalny**. 
 
-4. Wybierz system operacyjny, na przykład Windows 10 i **11**, a następnie w obszarze **Odsuń** urządzenie w sekcji Metoda wdrażania wybierz pozycję  **Skrypt lokalny**. 
+1. Na ekranie potwierdzenia przejrzyj informacje, a następnie wybierz pozycję **Pobierz** , aby kontynuować.
 
-5. Na ekranie potwierdzenia przejrzyj informacje, a następnie wybierz pozycję **Pobierz,** aby kontynuować.
+1. Wybierz pozycję **Pobierz pakiet odłączania**. Zalecamy zapisanie pakietu odłączania na dysku wymiennym.
 
-6. Wybierz **pozycję Pobierz pakiet wywęszania**. Zalecamy zapisanie pakietu wywrzenia na dysku wymiennym.
+1. Uruchom skrypt na każdym urządzeniu, które chcesz odłączyć. Potrzebujesz pomocy dotyczącej tego zadania? Zobacz następujące zasoby:   
 
-7. Uruchom skrypt na każdym urządzeniu, które chcesz wyłączyć. Potrzebujesz pomocy w tym zadaniu? Zobacz następujące zasoby:   
-
-   - Windows urządzenia: [Urządzenia Windows urządzeniach przy użyciu skryptu lokalnego](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
+   - urządzenia Windows: [odłączanie urządzeń Windows przy użyciu skryptu lokalnego](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
    
-   - Urządzenia z systemem macOS: [Odinstalowywanie w systemie macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
+   - Urządzenia z systemem macOS: [odinstalowywanie w systemie macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]
-> Wyniesienie urządzenia powoduje zatrzymanie wysyłania danych do usługi Defender dla firm. Jednak dane otrzymane przed wynodaniem są zachowywane przez maksymalnie sześć (6) miesięcy.
+> Odłączenie urządzenia powoduje, że urządzenia przestają wysyłać dane do usługi Defender dla Firm. Jednak dane odebrane przed odłożeniem są przechowywane przez maksymalnie sześć (6) miesięcy.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-objective"></a>Następny cel
 
-[Przejrzyj działania naprawcze w programie Microsoft 365 Business Premium](m365bp-review-remediation-actions-devices.md)
+Poświęć trochę czasu, aby [przejrzeć i edytować poicies](m365bp-view-edit-create-mdb-policies.md).
+

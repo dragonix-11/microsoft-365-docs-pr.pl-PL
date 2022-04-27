@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 recommendations: false
 description: dowiedz się więcej o warunkach i wyjątkach zasad dlp
-ms.openlocfilehash: f4a3521d0e5aab73cc16d97e0aea9c5830d9ddec
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cd252002f2fcef3e3935dd44b1333e801bcba46d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762062"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090456"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Warunki, wyjątki i akcje zasad DLP
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Warunki i wyjątki w zasadach DLP identyfikują poufne elementy, do których są stosowane zasady. Akcje definiują, co się dzieje w wyniku spełnienia warunku wyjątku.
 
@@ -94,11 +96,12 @@ Aby skonfigurować lokalizację adresu nadawcy na poziomie reguły DLP, parametr
 
 |warunek lub wyjątek w DLP|parametry warunku/wyjątku w programie Microsoft 365 programu PowerShell|typ właściwości|Opis|
 |---|---|---|---|
-|Temat zawiera wyrazy lub frazy|warunek: *SubjectContainsWords* <br/><br/> wyjątek: *ExceptIf SubjectContainsWords*|Słowy|Komunikaty, które mają określone wyrazy w polu Temat.|
-|Temat pasuje do wzorców|warunek: *SubjectMatchesPatterns* <br/><br/> wyjątek: *ExceptIf SubjectMatchesPatterns*|Wzorców|Komunikaty, w których pole Temat zawiera wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
-|Zawartość zawiera|warunek: *ContentContainsSensitiveInformation* <br/><br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Komunikaty lub dokumenty zawierające informacje poufne zdefiniowane przez zasady ochrony przed utratą danych (DLP).|
-|Temat lub treść pasują do wzorca|warunek: *SubjectOrBodyMatchesPatterns* <br/><br/> wyjątek: *ExceptIfSubjectOrBodyMatchesPatterns*|Wzorców|Komunikaty, w których pole tematu lub treść wiadomości zawierają wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
-|Temat lub treść zawiera wyrazy|warunek: *SubjectOrBodyContainsWords* <br/><br/> wyjątek: *ExceptIfSubjectOrBodyContainsWords*|Słowy|Komunikaty z określonymi wyrazami w polu tematu lub treści komunikatu|
+|Temat zawiera wyrazy lub frazy|warunek: *SubjectContainsWords* <br/> wyjątek: *ExceptIf SubjectContainsWords*|Słowy|Komunikaty, które mają określone wyrazy w polu Temat.|
+|Temat pasuje do wzorców|warunek: *SubjectMatchesPatterns* <br/> wyjątek: *ExceptIf SubjectMatchesPatterns*|Wzorców|Komunikaty, w których pole Temat zawiera wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
+|Zawartość zawiera|warunek: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Komunikaty lub dokumenty zawierające poufne informacje zdefiniowane przez zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview.|
+|Temat lub treść pasują do wzorca|warunek: *SubjectOrBodyMatchesPatterns* <br/> wyjątek: *ExceptIfSubjectOrBodyMatchesPatterns*|Wzorców|Komunikaty, w których pole tematu lub treść wiadomości zawierają wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
+|Temat lub treść zawiera wyrazy|warunek: *SubjectOrBodyContainsWords* <br/> wyjątek: *ExceptIfSubjectOrBodyContainsWords*|Słowy|Komunikaty z określonymi wyrazami w polu tematu lub treści komunikatu|
+|
 
 ### <a name="attachments"></a>Załączniki
 
@@ -147,7 +150,6 @@ W tej tabeli opisano akcje dostępne w programie DLP.
 |Dodawanie menedżera nadawcy jako adresata|AddRecipients|Pierwsza właściwość: *AddedManagerAction*<br/><br/>Druga właściwość: *Pole*|Dodaje menedżera nadawcy do wiadomości jako określony typ adresata (Do, DW, Bcc) lub przekierowuje wiadomość do menedżera nadawcy bez powiadamiania nadawcy lub odbiorcy. Ta akcja działa tylko wtedy, gdy atrybut Menedżera nadawcy jest zdefiniowany w usłudze Active Directory. Ten parametr używa składni: @{AddManagerAsRecipientType = "\<To \| Cc \| Bcc\>"}|
 Temat przedpłaty|PreendSubject|Ciąg|Dodaje określony tekst na początku pola Temat wiadomości. Rozważ użycie spacji lub dwukropka (:) jako ostatni znak określonego tekstu, aby odróżnić go od oryginalnego tekstu tematu.<br/><br/>Aby zapobiec dodawaniu tego samego ciągu do komunikatów, które już zawierają tekst w temacie (na przykład odpowiedzi), dodaj wyjątek "Temat zawiera słowa" (ExceptIfSubjectContainsWords) do reguły.|
 |Stosowanie zastrzeżenia HTML|ApplyHtmlDisclaimer|Pierwsza właściwość: *Tekst*<br/><br/>Druga właściwość: *Lokalizacja*<br/><br/>Trzecia właściwość: *akcja rezerwowa*|Stosuje określone zastrzeżenie HTML do wymaganej lokalizacji komunikatu.<br/><br/>Ten parametr używa składni: @{ Text = " " ; Lokalizacja = \<Append \| Prepend\>; FallbackAction = \<Wrap \| Ignore \| Reject\> }|
-|Usuwanie szyfrowania komunikatów Office 365 i ochrony praw|RemoveRMSTemplate|nie dotyczy|Usuwa szyfrowanie Office 365 stosowane w wiadomości e-mail|
+|Usuwanie szyfrowania komunikatów i ochrony praw|RemoveRMSTemplate|nie dotyczy|Usuwa szyfrowanie wiadomości zastosowane w wiadomości e-mail|
 |Dostarczanie komunikatu do hostowanej kwarantanny |*Kwarantanna*|nie dotyczy| Ta akcja jest obecnie w **publicznej wersji zapoznawczej**. W tej fazie wiadomości e-mail poddane kwarantannie przez zasady DLP będą pokazywać typ zasad jako ExchangeTransportRule.<br/><br/> Dostarcza komunikat do kwarantanny w ramach operacji EOP. Aby uzyskać więcej informacji, zobacz [Kwarantanna wiadomości e-mail w EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
-
-<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+|Modyfikowanie tematu|ModifySubject|PswsHashTable | Usuń tekst z wiersza tematu, który pasuje do określonego wzorca, i zastąp go innym tekstem. Zobacz poniższy przykład. Można: <br/><br/>- **Zastąp** wszystkie dopasowania w temacie tekstem zastępczym <br/><br/>- **Dołącz** , aby usunąć wszystkie dopasowania w temacie i wstawia tekst zastępczy na końcu tematu. <br/><br/>- **Przedstaw** , aby usunąć wszystkie dopasowania i wstawia tekst zastępczy na początku tematu. Zobacz ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|

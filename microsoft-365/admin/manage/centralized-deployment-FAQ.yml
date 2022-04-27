@@ -21,14 +21,14 @@ metadata:
   - MET150
   - MOE150
   description: Zapoznaj się z odpowiedziami na często zadawane pytania dotyczące scentralizowanego wdrażania z Centrum administracyjne platformy Microsoft 365.
-  ms.openlocfilehash: 870e59a96f1dee5e56b130f7750faa0addd593c9
-  ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+  ms.openlocfilehash: 63ccddde4a55b4842f38fb801c31fe3108e8743f
+  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 04/20/2022
-  ms.locfileid: "64971087"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65094311"
 title: Scentralizowane wdrażanie — często zadawane pytania
-summary: Wdrożenie scentralizowane to zalecany sposób wdrażania Office 365 administratora Office dodatków (Word, Excel, PowerPoint i Outlook) dla użytkowników i grup w organizacji, pod warunkiem że organizacja spełnia wszystkie wymagania dotyczące korzystania ze scentralizowanego wdrożenia zgodnie z opisem w tym artykule.
+summary: Wdrożenie scentralizowane to zalecany Office 365 sposób wdrażania dodatków Office (Word, Excel, PowerPoint i Outlook) dla użytkowników i grup w organizacji, pod warunkiem że organizacja spełnia wszystkie wymagania dotyczące korzystania ze scentralizowanego wdrożenia zgodnie z opisem w tym artykule.
 sections:
 - name: Zignorowano
   questions:
@@ -67,4 +67,4 @@ sections:
   - question: "Czy administratorzy mogą wdrażać płatne dodatki ze sklepu Office Przy użyciu scentralizowanego wdrożenia? \n"
     answer: "L.p. Obecnie nie można wdrożyć płatnych dodatków ze sklepu Office Store przy użyciu wdrożenia scentralizowanego. \n \nZalecamy skontaktowanie się z deweloperem niezależnego dostawcy oprogramowania w celu utworzenia płatnego dodatku w celu zażądania pliku manifestu lub adresu URL. Administrator dzierżawy może następnie wdrożyć dodatek jako dodatek lob przy użyciu scentralizowanego wdrożenia.\n   \n"
   - question: "Której roli administratora potrzebuję do zarządzania dodatkami dla mojej organizacji? \n"
-    answer: "Administrator globalny to zalecana rola z pełnym dostępem do cyklu życia zarządzania dodatkami. Jeśli jesteś osobą, która kupiła subskrypcję Microsoft 365 Business, jesteś administratorem globalnym.\n\nTwoja subskrypcja zawiera zestaw ról administratora, które można przypisać innym użytkownikom w organizacji. Każda rola administratora jest mapowana na typowe funkcje biznesowe i daje osobom w organizacji uprawnienia do wykonywania określonych zadań w Centrum administracyjne platformy Microsoft 365.  \n \nAby uzyskać więcej informacji, zobacz [Przypisywanie ról administratora](../add-users/assign-admin-roles.md?view=o365-worldwide)."
+    answer: "Administrator globalny jest zalecaną rolą z pełnym dostępem do cyklu życia zarządzania dodatkami. Jeśli jesteś osobą, która kupiła subskrypcję Microsoft 365 Business, jesteś administratorem globalnym.\n\nTwoja subskrypcja zawiera zestaw ról administratora, które można przypisać innym użytkownikom w organizacji. Każda rola administratora jest mapowana na typowe funkcje biznesowe i daje osobom w organizacji uprawnienia do wykonywania określonych zadań w Centrum administracyjne platformy Microsoft 365.  \n \nAby uzyskać więcej informacji, zobacz [Przypisywanie ról administratora](../add-users/assign-admin-roles.md?view=o365-worldwide)."

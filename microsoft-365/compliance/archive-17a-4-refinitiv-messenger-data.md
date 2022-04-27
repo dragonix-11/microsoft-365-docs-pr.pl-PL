@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych programu Refinitiv Eikon Messenger w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak zaimportować i zarchiwizować te dane w Microsoft 365 za pomocą łącznika 17a-4 programu Refinitiv Eikon Messenger DataParser.
-ms.openlocfilehash: 444c31df6a247d40855235b3d0de4c98b76c6d30
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2cba39d30bf83646023b457866605f37352eb478
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997634"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077498"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>Konfigurowanie łącznika do archiwizacji danych aplikacji Refinitiv Eikon Messenger
 

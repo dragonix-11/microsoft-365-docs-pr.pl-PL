@@ -20,14 +20,6 @@
           href: uploadApplication.md
     - name: Tworzenie pakietu
       href: buildpackage.md
-    - name: Przekazywanie plików binarnych i zależności
-      href: binaries.md
-    - name: Ustaw zadania testowe
-      href: testtask.md
-    - name: Ustawianie opcji testu
-      href: testoptions.md
-    - name: Przegląd
-      href: review.md
     - name: Wytyczne dotyczące pakietu
       href: contentguideline.md
     - name: Reguły aplikacji/testu

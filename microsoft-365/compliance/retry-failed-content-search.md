@@ -2,8 +2,8 @@
 title: Ponów próbę wyszukiwania zawartości, aby rozwiązać problem z błędem lokalizacji zawartości
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: Podczas badania możesz użyć przycisku Ponów próbę, aby rozwiązać problemy z wyszukiwaniem zawartości z błędami lokalizacji zawartości.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9ded77dedc2c304e8a51b165ab6b5324cc5e78e3
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5345b346e8c66f6983d67081839248e4c66be7d8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994023"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090434"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Ponów próbę wyszukiwania zawartości, aby rozwiązać problem z błędem lokalizacji zawartości
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73afd0751e34fbb020019e6f28056c9f2a935c07
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 3c517d9adcdc2181b43c430a92be3de9ac889dd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788595"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101122"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizator wydajności dla Program antywirusowy Microsoft Defender
 
@@ -31,7 +31,7 @@ ms.locfileid: "64788595"
 **Platformy**
 - System Windows
 
-**Co to jest Program antywirusowy Microsoft Defender analizator wydajności?**
+## <a name="what-is-microsoft-defender-antivirus-performance-analyzer"></a>Co to jest Program antywirusowy Microsoft Defender analizator wydajności?
 
 W niektórych przypadkach może być konieczne dostrojenie wydajności Program antywirusowy Microsoft Defender podczas skanowania określonych plików i folderów. Analizator wydajności to narzędzie wiersza polecenia programu PowerShell, które pomaga określić, które pliki, rozszerzenia plików i procesy mogą powodować problemy z wydajnością poszczególnych punktów końcowych. Te informacje mogą służyć do lepszej oceny problemów z wydajnością i stosowania akcji korygowania.
 
@@ -74,28 +74,30 @@ Aby uzyskać więcej informacji na temat parametrów i opcji wiersza polecenia, 
 > [!NOTE]
 > Jeśli podczas uruchamiania nagrania zostanie wyświetlony błąd "Nie można rozpocząć rejestrowania wydajności, ponieważ Windows rejestrator wydajności jest już nagrywany", uruchom następujące polecenie, aby zatrzymać istniejący ślad za pomocą nowego polecenia: **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
-### <a name="performance-tuning-data-and-information"></a>Dane i informacje dotyczące dostrajania wydajności
+## <a name="performance-tuning-data-and-information"></a>Dane i informacje dotyczące dostrajania wydajności
 
 Na podstawie zapytania użytkownik będzie mógł wyświetlać dane pod kątem liczby skanów, czasu trwania (łączna/minimalna/średnia/maksymalna/mediana), ścieżki, procesu i przyczyny skanowania. Na poniższej ilustracji przedstawiono przykładowe dane wyjściowe dla prostego zapytania 10 pierwszych plików pod kątem wpływu skanowania.
 
 :::image type="content" source="images/example-output.png" alt-text="Przykładowe dane wyjściowe podstawowego zapytania TopFiles" lightbox="images/example-output.png":::
 
-### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Dodatkowe funkcje: eksportowanie i konwertowanie do plików CSV i JSON
+## <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Dodatkowe funkcje: eksportowanie i konwertowanie do plików CSV i JSON
 
 Wyniki analizatora wydajności można również wyeksportować i przekonwertować na plik CSV lub JSON.
 Przykłady opisujące proces "eksportowania" i "konwertowania" za pomocą przykładowych kodów można znaleźć poniżej.
 
-#### <a name="for-csv"></a>Dla pliku CSV
+### <a name="for-csv"></a>Dla pliku CSV
 
 - **Aby wyeksportować**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
 - **Aby przekonwertować**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
-#### <a name="for-json"></a>W przypadku formatu JSON
+### <a name="for-json"></a>W przypadku formatu JSON
 
 - **Aby przekonwertować**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Wymagania
+Aby zapewnić możliwość odczytu maszynowego danych wyjściowych na potrzeby eksportowania z innymi systemami przetwarzania danych, zaleca się użycie parametru -Raw dla polecenia Get-MpPerformanceReport. Aby uzyskać szczegółowe informacje, zobacz poniżej
+
+## <a name="requirements"></a>Wymagania
 
 Program antywirusowy Microsoft Defender analizator wydajności ma następujące wymagania wstępne:
 
@@ -157,6 +159,12 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 
 Powyższe polecenie zbiera rejestrowanie wydajności na serwerze Server02 (zgodnie z argumentem $s sesji parametru) i zapisuje je w określonej ścieżce: **C:\LocalPathOnServer02\trace.etl** na serwerze Server02.
 
+##### <a name="example-3-collect-a-performance-recording-in-non-interactive-mode"></a>Przykład 3. Zbieranie nagrania wydajności w trybie nieinterakcyjnym
+```powershell
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+```
+Powyższe polecenie zbiera rejestrowanie wydajności dla czasu trwania w sekundach określonego przez parametr -Seconds. Jest to zalecane dla użytkowników prowadzących kolekcje wsadowe, które nie wymagają interakcji ani monitu.
+
 #### <a name="parameters-new-mpperformancerecording"></a>Parametry: New-MpPerformanceRecording
 
 ##### <a name="-recordto"></a>-RecordTo
@@ -179,6 +187,17 @@ Określa obiekt PSSession, w którym należy utworzyć i zapisać Program antywi
 Type: PSSession[]
 Position: 0
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+##### <a name="-seconds"></a>-Seconds
+Określa czas trwania rejestrowania wydajności w sekundach. Jest to zalecane dla użytkowników prowadzących kolekcje wsadowe, które nie wymagają interakcji ani monitu.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -218,6 +237,7 @@ Get-MpPerformanceReport    [-Path] <String>
     [-TopScansPerFilePerProcess <Int32>]
 ]
 [-MinDuration <String>]
+[-Raw]
 ```
 
 #### <a name="description-get-mpperformancereport"></a>Opis: Get-MpPerformanceReport
@@ -260,6 +280,12 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+##### <a name="example-5-using--raw-parameter"></a>Przykład 5. Używanie parametru -Raw
+
+```powershell
+Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
+```
+Użycie polecenia -Raw w powyższym poleceniu określa, że dane wyjściowe powinny być czytelne dla maszyny i łatwo można je konwertować na formaty serializacji, takie jak JSON
 
 #### <a name="parameters-get-mpperformancereport"></a>Parametry: Get-MpPerformanceReport
 
@@ -286,8 +312,19 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+##### <a name="-raw"></a>-Nieprzetworzone
 
-### <a name="-topextensions"></a>-TopExtensions
+Określa, że dane wyjściowe rejestrowania wydajności powinny być czytelne dla komputera i łatwo można je konwertować na formaty serializacji, takie jak JSON (na przykład za pomocą polecenia Convert-to-JSON). Jest to zalecane dla użytkowników zainteresowanych przetwarzaniem wsadowym z innymi systemami przetwarzania danych. 
+
+```yaml
+Type: <SwitchParameter>
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+##### <a name="-topextensions"></a>-TopExtensions
 
 Określa, ile górnych rozszerzeń do danych wyjściowych, posortowane według "Czas trwania".
 
@@ -299,7 +336,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
+##### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
 
 Określa, ile górnych rozszerzeń do danych wyjściowych dla każdego górnego procesu, posortowane według "Czas trwania".
 
@@ -311,7 +348,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfiles"></a>-TopFiles
+##### <a name="-topfiles"></a>-TopFiles
 
 Żąda raportu z najwyższą liczbą plików i określa liczbę najważniejszych plików do danych wyjściowych posortowanych według wartości "Czas trwania".
 
@@ -323,7 +360,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperextension"></a>-TopFilesPerExtension
+##### <a name="-topfilesperextension"></a>-TopFilesPerExtension
 
 Określa liczbę najlepszych plików do wyświetlenia dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
 
@@ -335,7 +372,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
+##### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
 
 Określa liczbę najlepszych plików do wyświetlenia dla każdego najwyższego procesu posortowanego według "Czas trwania".
 
@@ -347,7 +384,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocesses"></a>-TopProcesses
+##### <a name="-topprocesses"></a>-TopProcesses
 
 Żąda raportu top-processes i określa, ile z najważniejszych procesów do danych wyjściowych, posortowane według "Czas trwania".
 
@@ -359,7 +396,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
+##### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
 
 Określa liczbę najlepszych procesów do wyświetlenia dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
 
@@ -371,7 +408,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
+##### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
 
 Określa liczbę najważniejszych procesów do wyświetlenia dla każdego najwyższego pliku posortowanych według "Czas trwania".
 
@@ -383,7 +420,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscans"></a>-TopScans
+##### <a name="-topscans"></a>-TopScans
 
 Żąda najwyższego skanowania raportu i określa, ile top skanowania do danych wyjściowych, posortowane według "Czas trwania".
 
@@ -395,7 +432,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperextension"></a>-TopScansPerExtension
+##### <a name="-topscansperextension"></a>-TopScansPerExtension
 
 Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
 
@@ -407,7 +444,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
+##### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
 
 Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego górnego rozszerzenia dla każdego najwyższego procesu posortowanego według "Czas trwania".
 
@@ -419,7 +456,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfile"></a>-TopScansPerFile
+##### <a name="-topscansperfile"></a>-TopScansPerFile
 
 Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego najwyższego pliku posortowanego według "Czas trwania".
 
@@ -431,7 +468,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
+##### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
 
 Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego najwyższego pliku dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
 
@@ -443,7 +480,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
+##### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
 
 Określa, ile najczęściej skanuje dane wyjściowe dla każdego najwyższego pliku dla każdego najwyższego procesu, posortowane według "Czas trwania".
 
@@ -455,7 +492,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocess"></a>-TopScansPerProcess
+##### <a name="-topscansperprocess"></a>-TopScansPerProcess
 
 Określa, ile najlepszych skanów do danych wyjściowych dla każdego najwyższego procesu w raporcie Top Processes posortowane według "Czas trwania".
 
@@ -467,7 +504,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
+##### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
 
 Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego najwyższego procesu dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
 
@@ -479,7 +516,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
+##### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
 
 Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego najwyższego procesu dla każdego najwyższego pliku posortowanego według "Czas trwania".
 
@@ -490,12 +527,14 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-> [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
-> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
-> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+
+## <a name="additional-resources"></a>Dodatkowe materiały
+
+Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+
+- [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+- [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+- [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+- [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach](android-configure.md)-  systemu Android [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

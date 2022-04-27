@@ -1,7 +1,7 @@
 ---
-title: Tworzenie wskaźników dla plików
+title: Utwórz wskaźniki dla plików
 ms.reviewer: ''
-description: Tworzenie wskaźników dla skrótu plików definiującego wykrywanie, zapobieganie i wykluczenie obiektów.
+description: Utwórz wskaźniki dla skrótu pliku definiującego wykrywanie, zapobieganie i wykluczanie jednostek.
 keywords: file, hash, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,84 +15,84 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 20e120385046a333f68f4959c395c2bbb520899b
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: f1d32c546fc270e044d391dd35f325afc98fe5a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500920"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101452"
 ---
-# <a name="create-indicators-for-files"></a>Tworzenie wskaźników dla plików
+# <a name="create-indicators-for-files"></a>Utwórz wskaźniki dla plików
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-Zapobiegaj dalszej propagacji ataków w organizacji, aby zablokować potencjalnie złośliwe pliki lub podejrzewane złośliwe oprogramowanie. Jeśli znasz potencjalnie złośliwy plik wykonywalny (PE, Portable Wykonywalna), możesz go zablokować. Ta operacja uniemożliwi jej odczytanie, napisane lub wykonanie na urządzeniach w Twojej organizacji.
+Zapobiegaj dalszej propagacji ataku w organizacji, zakazując potencjalnie złośliwych plików lub podejrzewanego złośliwego oprogramowania. Jeśli znasz potencjalnie złośliwy przenośny plik wykonywalny (PE), możesz go zablokować. Ta operacja uniemożliwi jej odczytywanie, zapisywanie lub wykonywanie na urządzeniach w organizacji.
 
 Istnieją trzy sposoby tworzenia wskaźników dla plików:
 
-- Tworząc wskaźnik za pośrednictwem strony ustawień
-- Tworząc wskaźnik kontekstowy za pomocą przycisku dodaj wskaźnik na stronie szczegółów pliku
-- Tworzenie wskaźnika przy użyciu interfejsu [API wskaźnika](ti-indicator.md)
+- Przez utworzenie wskaźnika za pośrednictwem strony ustawień
+- Przez utworzenie wskaźnika kontekstowego przy użyciu przycisku dodaj wskaźnik na stronie szczegółów pliku
+- Przez utworzenie wskaźnika za pośrednictwem [interfejsu API wskaźników](ti-indicator.md)
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Przed utworzeniem wskaźników dla plików należy poznać następujące wymagania wstępne:
+Przed utworzeniem wskaźników dla plików ważne jest zrozumienie następujących wymagań wstępnych:
 
-- Ta funkcja jest dostępna, jeśli Twoja **organizacja Program antywirusowy Microsoft Defender (** w trybie aktywnym) i jest włączona **ochrona oparta na chmurze**. Aby uzyskać więcej informacji, zobacz [Zarządzanie ochroną opartą na chmurze](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Ta funkcja jest dostępna, jeśli organizacja używa **Program antywirusowy Microsoft Defender (w trybie aktywnym)** i **włączono ochronę opartą na chmurze**. Aby uzyskać więcej informacji, zobacz [Zarządzanie ochroną opartą na chmurze](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
-- Wersja klienta ochrony przed złośliwym oprogramowaniem musi mieć wersję 4.18.1901.x lub nowszą. Zobacz [Wersje miesięcznej platformy i aparatu](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+- Wersja klienta ochrony przed złośliwym kodem musi mieć wersję 4.18.1901.x lub nowszą. Zobacz [Miesięczne wersje platformy i aparatu](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Obsługiwane na urządzeniach z systemem Windows 10 w wersji 1703 lub nowszej, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 i Windows Server 2022.
+- Obsługiwane na urządzeniach z Windows 10 w wersji 1703 lub nowszej, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 i Windows Server 2022.
     
-   >[!NOTE]
-    >Windows Server 2016 i Windows Server 2012 R2 muszą zostać naniesone zgodnie z instrukcjami podanymi w te sposób: Windows [onboard](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016), aby ta funkcja działała. 
+   > [!NOTE]
+   > Windows Server 2016 i Windows Server 2012 R2 należy dołączyć, korzystając z instrukcji zawartych w temacie [Dołączanie serwerów Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016), aby ta funkcja działała. Niestandardowe wskaźniki plików z akcjami Zezwalaj, Blokuj i Koryguj są teraz również dostępne w [publicznej wersji zapoznawczej w celu zwiększenia możliwości aparatu ochrony przed złośliwym kodem dla systemów macOS i Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
-- Aby rozpocząć blokowanie plików, musisz najpierw włączyć funkcję blokowania lub zezwalania [w programie](advanced-features.md) Ustawienia.
+- Aby rozpocząć blokowanie plików, należy najpierw [włączyć funkcję "blokuj lub zezwalaj"](advanced-features.md) w Ustawienia.
 
-Ta funkcja ma na celu zapobieganie pobieraniu z sieci Web potencjalnie złośliwego oprogramowania (lub potencjalnie złośliwych plików). Obecnie obsługuje przenośne pliki wykonywalne (PE), w tym pliki .exe i .dll pe. Zakres będzie z czasem rozszerzany.
+Ta funkcja ma na celu zapobieganie pobieraniu z Sieci Web podejrzanego złośliwego oprogramowania (lub potencjalnie złośliwych plików). Obecnie obsługuje przenośne pliki wykonywalne (PE), w tym pliki .exe i .dll. Pokrycie zostanie przedłużone w czasie.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Tworzenie wskaźnika dla plików na stronie ustawień
 
-1. W okienku nawigacji wybierz pozycję Wskaźnik **Ustawienia** \> **punktów** \> **końcowych** (w obszarze **Reguły**).
+1. W okienku nawigacji wybierz pozycję **Ustawienia** \> **Wskaźniki** **punktów końcowych** (w obszarze **Reguły**\>).
 
-2. Wybierz **kartę Skróty** plików.
+2. Wybierz kartę **Skróty plików** .
 
-3. Wybierz **pozycję Dodaj element**.
+3. Wybierz pozycję **Dodaj element**.
 
 4. Określ następujące szczegóły:
-    - Wskaźnik — określ szczegóły jednostki i zdefiniuj wygasanie wskaźnika.
-    - Akcja — określ akcję, która ma zostać wykonane, i podaj opis.
-    - Zakres — definiowanie zakresu grupy urządzeń.
+    - Wskaźnik — określ szczegóły jednostki i zdefiniuj wygaśnięcie wskaźnika.
+    - Akcja — określ akcję do wykonania i podaj opis.
+    - Zakres — zdefiniuj zakres grupy urządzeń.
 
 5. Przejrzyj szczegóły na karcie Podsumowanie, a następnie wybierz pozycję **Zapisz**.
 
 ## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>Tworzenie wskaźnika kontekstowego na stronie szczegółów pliku
 
-Jedną z opcji podczas robienia [akcji odpowiedzi na plik](respond-file-alerts.md) jest dodanie wskaźnika dla pliku. Po dodaniu skrótu wskaźnika dla pliku możesz podnieść alert i zablokować plik za każdym razem, gdy urządzenie w organizacji spróbuje go uruchomić.
+Jedną z opcji podczas wykonywania [akcji odpowiedzi w pliku](respond-file-alerts.md) jest dodanie wskaźnika dla pliku. Po dodaniu skrótu wskaźnika dla pliku możesz zgłosić alert i zablokować plik za każdym razem, gdy urządzenie w organizacji podejmie próbę jego uruchomienia.
 
-Pliki automatycznie blokowane przez wskaźnik nie będą widoczne w Centrum akcji pliku, ale alerty będą nadal widoczne w kolejce alertów.
+Pliki automatycznie blokowane przez wskaźnik nie będą wyświetlane w centrum akcji pliku, ale alerty będą nadal widoczne w kolejce alertów.
 
-## <a name="public-preview-alerting-on-file-blocking-actions"></a>Podgląd publiczny: Alerty dotyczące akcji blokowania plików
+## <a name="public-preview-alerting-on-file-blocking-actions"></a>Publiczna wersja zapoznawcza: Alerty dotyczące akcji blokowania plików
 
 > [!IMPORTANT]
-> Informacje zawarte w tej sekcji (Publiczna wersja **zapoznawcza** automatycznego aparatu badań i rozwiązywania problemów) dotyczą produktu przedpremierowego, który może zostać znacznie zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+> Informacje w tej sekcji (**publiczna wersja zapoznawcza dla aparatu automatycznego badania i korygowania**) odnoszą się do produktu wstępnego, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
-Obecnie obsługiwane są działania dotyczące tego typu plików, które można insektować, blokować i rekultywować. Po wybraniu opcji zablokowania pliku możesz zdecydować, czy jest konieczne wyzwalanie alertu. Dzięki temu można kontrolować liczbę alertów o uzyskiwaniu powiadomień do zespołów ds. bezpieczeństwa i upewnić się, że są podwyższone tylko wymagane alerty.
+Bieżące obsługiwane akcje dla mkolu plików to zezwalanie, inspekcja i blokowanie i korygowanie. Po wybraniu opcji zablokowania pliku możesz wybrać, czy wyzwalanie alertu jest wymagane. W ten sposób będzie można kontrolować liczbę alertów docieranych do zespołów ds. operacji zabezpieczeń i upewnić się, że są zgłaszane tylko wymagane alerty.
 
-W Microsoft 365 Defender **przejdź do Ustawienia** >  EndpointsIndicatorsAdd >  >  **Nowy skrót pliku**.
+W Microsoft 365 Defender przejdź do **pozycji Ustawienia** >  EndpointsIndicatorsDodaj >  >  **skrót nowego pliku**.
 
-Wybierz opcję Blokowanie i rozwiązywanie problemów z plikiem.
+Wybierz opcję Blokuj i skoryguj plik.
 
-Wybierz opcję Wygeneruj alert dla zdarzenia blokowania plików i zdefiniuj ustawienia alertów:
+Określ, czy chcesz wygenerować alert dla zdarzenia bloku pliku i zdefiniuj ustawienia alertów:
 
 - Tytuł alertu
 - Ważność alertu
@@ -100,23 +100,23 @@ Wybierz opcję Wygeneruj alert dla zdarzenia blokowania plików i zdefiniuj usta
 - Opis
 - Zalecane akcje
 
-:::image type="content" source="images/indicators-generate-alert.png" alt-text="Ustawienia alertów dla wskaźników plików" lightbox="images/indicators-generate-alert.png":::
+:::image type="content" source="images/indicators-generate-alert.png" alt-text="Ustawienia alertu dla wskaźników plików" lightbox="images/indicators-generate-alert.png":::
 
 > [!IMPORTANT]
 >
-> - Zazwyczaj bloki plików są wymuszane i usuwane w ciągu kilku minut, ale może potrwać do 30 minut w górę.
-> - W przypadku konfliktu zasad pliku IoC z tym samym typem wymuszania i elementem docelowym zostaną zastosowane zasady bezpieczniejszego skrótu. Zasady IoC skrótu plików SHA-256 przejmą zasady IoC skrótu SHA-1, które przejmą zasady IoC skrótu pliku MD5, jeśli te typy skrótów definiują ten sam plik. Jest tak zawsze, niezależnie od grupy urządzeń.
-> - We wszystkich innych przypadkach, jeśli zasady pliku IoC powodujące konflikt z tym samym elementem docelowym wymuszania zostaną zastosowane do wszystkich urządzeń i grupy urządzenia, wówczas w przypadku urządzenia zasady w grupie urządzeń zostaną zastosowane.
-> - Jeśli zasady grupy EnableFileHashComputation są wyłączone, dokładność blokowania pliku IoC jest zmniejszana. Włączenie może jednak `EnableFileHashComputation` mieć wpływ na wydajność urządzenia. Na przykład kopiowanie dużych plików z udziału sieciowego na urządzenie lokalne, szczególnie przez połączenie VPN, może mieć wpływ na wydajność urządzenia.
+> - Zazwyczaj bloki plików są wymuszane i usuwane w ciągu kilku minut, ale może to potrwać ponad 30 minut.
+> - Jeśli istnieją powodujące konflikt zasady IoC plików o tym samym typie wymuszania i celu, zasady bardziej bezpiecznego skrótu zostaną zastosowane. Zasady IoC skrótu pliku SHA-256 zostaną przejęte przez zasady IoC skrótu plików SHA-1, które zostaną przejęte przez zasady IoC skrótu pliku MD5, jeśli typy skrótów zdefiniują ten sam plik. Jest to zawsze prawdziwe niezależnie od grupy urządzeń.
+> - We wszystkich innych przypadkach, jeśli powodujące konflikt zasady IoC plików z tym samym obiektem docelowym wymuszania są stosowane do wszystkich urządzeń i do grupy urządzenia, a następnie dla urządzenia, zasady w grupie urządzeń wygra.
+> - Jeśli zasady grupy EnableFileHashComputation są wyłączone, dokładność blokowania IoC pliku zostanie zmniejszona. Jednak włączenie `EnableFileHashComputation` może mieć wpływ na wydajność urządzenia. Na przykład kopiowanie dużych plików z udziału sieciowego na urządzenie lokalne, zwłaszcza za pośrednictwem połączenia sieci VPN, może mieć wpływ na wydajność urządzenia.
 >
-> Aby uzyskać więcej informacji na temat zasad grupy EnableFileHashComputation, zobacz Program [CSP usługi Defender](/windows/client-management/mdm/defender-csp).
+> Aby uzyskać więcej informacji na temat zasad grupy EnableFileHashComputation, zobacz [Dostawca CSP usługi Defender](/windows/client-management/mdm/defender-csp).
 
-## <a name="public-preview-advanced-hunting-capabilities"></a>Publiczna wersja zapoznawcza: Zaawansowane możliwości chłoniania
+## <a name="public-preview-advanced-hunting-capabilities"></a>Publiczna wersja zapoznawcza: zaawansowane możliwości wyszukiwania zagrożeń
 
 > [!IMPORTANT]
-> Informacje zawarte w tej sekcji (Publiczna wersja **zapoznawcza** automatycznego aparatu badań i rozwiązywania problemów) dotyczą produktu przedpremierowego, który może zostać znacznie zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+> Informacje w tej sekcji (**publiczna wersja zapoznawcza automatycznego badania i aparatu korygowania**) odnoszą się do produktu wstępnego, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
-Możesz zapytanie dotyczące działania akcji reagowania z wyprzedzeniem. Poniżej przedstawiono przykładowy, przeszły kwerendę wyszukiwania:
+Możesz wykonać zapytanie dotyczące działania akcji odpowiedzi z wyprzedzeniem. Poniżej znajduje się przykładowe zapytanie wyszukiwania zagrożeń z wyprzedzeniem:
 
 ```console
 search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents)
@@ -124,9 +124,9 @@ Timestamp > ago(30d)
 | where AdditionalFields contains "EUS:Win32/CustomEnterpriseBlock!cl"
 ```
 
-Aby uzyskać więcej informacji na temat zaawansowanego wyszukiwania, zobacz [Aktywne wyszukiwanie zagrożeń za pomocą zaawansowanego wyszukiwania](advanced-hunting-overview.md).
+Aby uzyskać więcej informacji na temat zaawansowanego wyszukiwania zagrożeń, zobacz [Proaktywne wyszukiwanie zagrożeń z zaawansowanym wyszukiwaniem zagrożeń](advanced-hunting-overview.md).
 
-Poniżej znajdują się dodatkowe nazwy wątków, których można używać w przykładowym zapytaniu powyżej:
+Poniżej przedstawiono dodatkowe nazwy wątków, których można użyć w przykładowym zapytaniu z góry:
 
 Pliki:
 
@@ -137,28 +137,28 @@ Certyfikaty:
 
 - EUS:Win32/CustomCertEnterpriseBlock!cl
 
-Działanie działania reagowania może być również widać na osi czasu urządzenia.
+Działanie akcji odpowiedzi można również wyświetlić na osi czasu urządzenia.
 
 ## <a name="policy-conflict-handling"></a>Obsługa konfliktów zasad
 
-Konflikt zasad Cert i obsługi plików IoC będzie postępować zgodnie z poniższymi kolejnościami:
+Konflikt obsługi zasad IoC certyfikatów i plików będzie postępować zgodnie z poniższą kolejnością:
 
-- Jeśli plik nie jest dozwolony przez Windows Defender i zasady trybu wymuszania funkcji AppLocker **, zablokuj**
-- W innym przypadku, jeśli plik jest dozwolony przez Program antywirusowy Microsoft Defender wykluczeniu, a następnie wybierz **pozycję Zezwalaj**
-- Inaczej, jeśli plik jest zablokowany lub ostrzegany przez blokadę lub ostrzeganie pliku o stanie IoC, a następnie **zablokuj/ostrzegaj**
-- W innym przypadku, jeśli plik jest dozwolony przez zasady IoC zezwalania na plik, a następnie wybierz pozycję **Zezwalaj**
-- Inaczej, jeśli plik jest zablokowany przez reguły ASR, CFA, AV, SmartScreen, a następnie **Zablokuj**
-- Inaczej **zezwalaj** (przekazuje Windows Defender sterowania aplikacją & zasad AppLocker, do których nie mają zastosowania żadne reguły IoC)
+- Jeśli plik nie jest dozwolony przez Windows Defender kontrolkę aplikacji i funkcję AppLocker, wymuś zasady/zasady trybu, a następnie **zablokuj**
+- W przeciwnym razie, jeśli plik jest dozwolony przez wykluczenie Program antywirusowy Microsoft Defender,
+- W przeciwnym razie, jeśli plik jest zablokowany lub ostrzegany przez blok lub ostrzeżenie pliku IoC, a następnie **blokuj/ostrzegaj**
+- W przeciwnym razie, jeśli plik jest dozwolony przez zasady IoC pliku zezwalania, a następnie **zezwalaj**
+- Jeśli plik jest zablokowany przez reguły asr, CFA, AV, SmartScreen, a następnie **blokuj**
+- Else **Allow** (przechodzi Windows Defender kontrolki aplikacji & zasad funkcji AppLocker, żadne reguły IoC nie mają do niego zastosowania)
 
 >[!NOTE]
-> W sytuacjach, gdy dla Program antywirusowy Microsoft Defender ustawiono opcję **Blokuj**, ale dla usługi Defender dla punktu końcowego ustawiono wartość Zezwalaj **, zasady** będą domyślnie ustawione na Allow (**Zezwalaj**).
+> W sytuacjach, gdy Program antywirusowy Microsoft Defender jest ustawiona na **wartość Blokuj**, ale w usłudze Defender dla punktu końcowego ustawiono wartość **Zezwalaj**, zasady będą domyślnie **zezwalać**.
 
-W przypadku konfliktu zasad pliku IoC z tym samym typem wymuszania i elementem docelowym zostaną zastosowane zasady bezpieczniejszego (dłuższego) skrótu. Na przykład zasady IoC skrótu pliku SHA-256 będą przejmować zasady IoC skrótu MD5, jeśli oba typy skrótów definiują ten sam plik.
+Jeśli istnieją powodujące konflikt zasady IoC plików o tym samym typie wymuszania i celu, zostaną zastosowane zasady bardziej bezpiecznego (czyli dłuższego) skrótu. Na przykład zasady skrótu pliku SHA-256 IoC zostaną przejęte przez zasady IoC skrótu pliku MD5, jeśli oba typy skrótów zdefiniują ten sam plik.
 
 > [!WARNING]
 > Obsługa konfliktów zasad dla plików i certyfikatów różni się od obsługi konfliktów zasad dla domen/adresów URL/adresów IP.
 
-W celu zarządzanie lukami w zabezpieczeniach zagrożenia i zablokowanie blokady aplikacji, która jest podatna na zagrożenia, na komputerach IoC plików są używane wymuszenia i są one zgodne z powyższymi kolejnościami obsługi konfliktów.
+Funkcje aplikacji narażonych na zagrożenia i zarządzanie lukami w zabezpieczeniach bloku używają plików IoCs do wymuszania i będą zgodne z powyższą kolejnością obsługi konfliktów.
 
 ### <a name="examples"></a>Przykłady
 
@@ -166,18 +166,18 @@ W celu zarządzanie lukami w zabezpieczeniach zagrożenia i zablokowanie blokady
 
 ****
 
-|Składnik|Wymuszanie składników|Wskaźnik pliku Akcja|Result (Wynik)|
+|Składnik|Wymuszanie składników|Akcja wskaźnika pliku|Result (Wynik)|
 |---|---|---|---|
-|Wykluczenie ścieżki zmniejszania powierzchni ataków|Zezwalaj|Blokuj|Blokuj|
-|Reguła zmniejszania powierzchni ataków|Blokuj|Zezwalaj|Zezwalaj|
-|Windows Defender kontrolki aplikacji|Zezwalaj|Blokuj|Zezwalaj|
-|Windows Defender kontrolki aplikacji|Blokuj|Zezwalaj|Blokuj|
-|Program antywirusowy Microsoft Defender wykluczenia|Zezwalaj|Blokuj|Zezwalaj|
+|Wykluczenie ścieżki pliku zmniejszania obszaru podatnego na ataki|Zezwalaj|Blokuj|Blokuj|
+|Reguła zmniejszania obszaru podatnego na ataki|Blokuj|Zezwalaj|Zezwalaj|
+|Windows Defender kontrolka aplikacji|Zezwalaj|Blokuj|Zezwalaj|
+|Windows Defender kontrolka aplikacji|Blokuj|Zezwalaj|Blokuj|
+|wykluczenie Program antywirusowy Microsoft Defender|Zezwalaj|Blokuj|Zezwalaj|
 |
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Tworzenie wskaźników](manage-indicators.md)
-- [Tworzenie wskaźników adresów IP oraz adresów URL/domen](indicator-ip-domain.md)
+- [Utwórz wskaźniki](manage-indicators.md)
+- [Utwórz wskaźniki adresów IP i adresów URL/domen](indicator-ip-domain.md)
 - [Tworzenie wskaźników na podstawie certyfikatów](indicator-certificates.md)
-- [Zarządzanie wskaźnikami](indicator-manage.md)
+- [Zarządzaj wskaźnikami](indicator-manage.md)

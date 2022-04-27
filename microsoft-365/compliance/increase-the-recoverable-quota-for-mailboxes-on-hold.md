@@ -2,8 +2,8 @@
 title: Zwiększ limit przydziału elementów odzyskiwalnych dla archiwum skrzynek pocztowych
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Włącz skrzynkę pocztową archiwum i włącz automatyczne rozszerzanie archiwizacji, aby zwiększyć rozmiar folderu Elementy możliwe do odzyskania dla skrzynki pocztowej w Microsoft 365.
-ms.openlocfilehash: 68ef8cfe1751ed5822d99edf9e7efeb4bd3766f2
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: a05851f1019405a495a7b909bf4a8d096227163d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999899"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100814"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Zwiększ limit przydziału elementów odzyskiwalnych dla archiwum skrzynek pocztowych
 

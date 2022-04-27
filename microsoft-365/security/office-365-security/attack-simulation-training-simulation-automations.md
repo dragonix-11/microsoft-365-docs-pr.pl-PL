@@ -1,5 +1,5 @@
 ---
-title: Automatyzacje symezyjne dla szkolenia z symezyjną ataków
+title: Automatyzacje symulacji na potrzeby trenowania symulacji ataków
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,373 +10,464 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i łady uruchamiane po spełnionych określonych warunkach w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
+description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i ładunki uruchamiane po spełnieniu określonych warunków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: e1e71fc5a901612a132d57afd663364f9a10daf4
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: c5023c29c0526b7eba2329e8206479b9d322d42e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472446"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092718"
 ---
-# <a name="simulation-automations-for-attack-simulation-training"></a>Automatyzacje symezyjne dla szkolenia z symezyjną ataków
+# <a name="simulation-automations-for-attack-simulation-training"></a>Automatyzacje symulacji na potrzeby trenowania symulacji ataków
 
-**Dotyczy planu** [Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
+**Dotyczy** [planu Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
-Aby uzyskać informacje na temat szkoleń z użyciem symezyjny ataków, [zobacz Wprowadzenie szkolenia z użyciem symezyjki ataków](attack-simulation-training-get-started.md).
+Aby uzyskać informacje o rozpoczęciu trenowania symulacji ataków, zobacz [Wprowadzenie korzystanie z trenowania symulacji ataków](attack-simulation-training-get-started.md).
 
-Aby utworzyć automatyzację symulacyjna, wykonaj następujące czynności:
+Aby utworzyć automatyzację symulacji, wykonaj następujące kroki:
 
-1. W portalu Microsoft 365 Defender pod <https://security.microsoft.com/>adresem ,  \>  \> przejdź do karty & szkolenia symulacyjnego z atakami **i** symezyjną.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com/>przejdź do karty Automatyzacje **symulacji** \> & **poczty e-mail**\>.
 
-   Aby przejść bezpośrednio do karty **Automatyzacje symulacyjne** , użyj klawisza <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
+   Aby przejść bezpośrednio do karty **Automatyzacje symulacji** , użyj polecenia <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
 
-2. Na karcie **Automatyzacje symulacyjne** wybierz pozycję Utwórz ![ikonę automatyzacji.](../../media/m365-cc-sc-create-icon.png) **Tworzenie automatyzacji**.
+2. Na **karcie Automatyzacje symulacji** wybierz pozycję Utwórz ikonę ![automatyzacji.](../../media/m365-cc-sc-create-icon.png) **Tworzenie automatyzacji**.
 
-   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Przycisk Create simulation (Utwórz symulację) na karcie Automatyzacja symulacyjnej w szkoleniu z symulacyjnej Microsoft 365 Defender czasowej" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Przycisk Utwórz symulację na karcie Automatyzacje symulacji w trenowaniu symulacji ataku w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
-3. Zostanie otwarty kreator tworzenia. W dalszej części tego artykułu opisano strony i ustawienia, które zawierają.
+3. Zostanie otwarty kreator tworzenia. W pozostałej części tego artykułu opisano strony i ustawienia, które zawierają.
 
 > [!NOTE]
-> W dowolnym momencie kreatora tworzenia symulacyjnej możesz kliknąć przycisk **Zapisz** i zamknij, aby zapisać postęp i kontynuować konfigurowanie symulacyjnej później. W czasie nieukończonej **symulacyjnej wartości stanowej** **na** **karcie Symulatory** . Możesz wybrać miejsce, w którym zostało to pozostawione, wybierając symululę i klikając ikonę ![Edytuj symululę.](../../media/m365-cc-sc-edit-icon.png) **Symulacja** edycji.## Nazwa i opisz symulowanie.
+> W dowolnym momencie kreatora tworzenia symulacji możesz kliknąć pozycję **Zapisz i zamknij** , aby zapisać postęp i kontynuować konfigurowanie symulacji później. Niekompletna symulacja ma wartość **Stan** **— wersja robocza** na **karcie Symulacje** . Możesz wybrać miejsce, w którym zostało przerwane, wybierając symulację i klikając ikonę ![Edytuj symulację.](../../media/m365-cc-sc-edit-icon.png) **Edytuj** symulację.## Nazwij i opisz symulację.
 
-## <a name="name-and-describe-the-simulation-automation"></a>Nazywanie i opisywanie automatyzacji symulacyjnej
+## <a name="name-and-describe-the-simulation-automation"></a>Nazwa i opisanie automatyzacji symulacji
 
-Na stronie **Nazwa automatyzacji** skonfiguruj następujące ustawienia:
+Na stronie **Nazwa usługi Automation** skonfiguruj następujące ustawienia:
 
-- **Nazwa**: Wprowadź unikatową nazwę opisową dla symulacyjnej.
-- **Opis**. Wprowadź opcjonalny szczegółowy opis symulowania.
-
-Po zakończeniu kliknij przycisk **Dalej**.
-
-## <a name="select-one-or-more-social-engineering-techniques"></a>Wybieranie jednej lub większej liczby technik społecznościowych
-
-Na stronie **Wybieranie technik społecznościowych** wybierz jedną lub więcej z dostępnych technik socjograficznych, które zostały przejmowane na podstawie struktury [MITRE ATT&CK®](https://attack.mitre.org/techniques/enterprise/). Różne łady są dostępne dla różnych technik. Dostępne są następujące techniki społecznościowe:
-
-- **Zbieranie poświadczeń**. Próbuje zbierać poświadczenia przez wprowadzenie nazwy użytkownika i hasła do dobrze znanej witryny internetowej z polami wprowadzania.
-- **Załącznik w złośliwym** oprogramowaniu: powoduje dodanie złośliwego załącznika do wiadomości. Gdy użytkownik otworzy załącznik, zostanie uruchomiony dowolny kod, który pomoże intruzowi naruszyć urządzenie docelowe.
-- **Link w załączniku**: typ środowiska hybrydowego zbierania poświadczeń. Atakujący wstawia adres URL do załącznika wiadomości e-mail. Adres URL w załączniku jest zgodny z techniką zbioru poświadczeń.
-- **Link do złośliwego oprogramowania**: uruchamia dowolny kod z pliku hostowanej w dobrze znanej usłudze udostępniania plików. Wiadomość wysłana do użytkownika będzie zawierać link do tego złośliwego pliku. Otwarcie pliku i pomoc osobie atakującej w naruszoniu urządzenia docelowego.
-- **Adres URL** dysku: złośliwy adres URL w wiadomości przenosi użytkownika do znanej witryny sieci Web, która po cichu uruchamia i/lub instaluje kod na urządzeniu użytkownika.
-
-Kliknięcie linku **Wyświetl szczegóły** w opisie spowoduje otwarcie wysuwu szczegółów, opisujące technikę i kroki symulacyjne wynikające z tej techniki.
-
-:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="Wysuw szczegółów techniki chyłej poświadczeń na stronie Wybieranie technik społecznościowych" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
+- **Nazwa**: wprowadź unikatową, opisową nazwę symulacji.
+- **Opis**: wprowadź opcjonalny szczegółowy opis symulacji.
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
-## <a name="select-payloads"></a>Wybierz łady
+## <a name="select-one-or-more-social-engineering-techniques"></a>Wybierz co najmniej jedną technikę inżynierii społecznej
 
-Na **stronie Wybierz ładowania** wybierz jedną z następujących opcji:
+Na stronie **Wybieranie technik inżynierii społecznej** wybierz co najmniej jedną z dostępnych technik inżynierii społecznej, które zostały wyselekcjonowane w [ramach programu MITRE ATT&CK®](https://attack.mitre.org/techniques/enterprise/). Różne ładunki są dostępne dla różnych technik. Dostępne są następujące techniki inżynierii społecznej:
 
-- **Wybierz ręcznie**
-- **Randomizuj**
+- **Zbieranie poświadczeń**: próbuje zebrać poświadczenia, zabierając użytkowników do dobrze znanej witryny internetowej z polami wejściowymi w celu przesłania nazwy użytkownika i hasła.
+- **Załącznik złośliwego oprogramowania**: dodaje złośliwy załącznik do wiadomości. Gdy użytkownik otworzy załącznik, zostanie uruchomiony dowolny kod, który pomoże atakującemu naruszyć bezpieczeństwo urządzenia docelowego.
+- **Link w załączniku**: typ hybrydowego zbioru poświadczeń. Osoba atakująca wstawia adres URL do załącznika wiadomości e-mail. Adres URL w załączniku jest zgodny z tą samą techniką co zbieranie poświadczeń.
+- **Link do złośliwego oprogramowania**: uruchamia dowolny kod z pliku hostowanego w dobrze znanej usłudze udostępniania plików. Wiadomość wysłana do użytkownika będzie zawierać link do tego złośliwego pliku. Otwarcie pliku i ułatwić atakującemu naruszenie zabezpieczeń urządzenia docelowego.
+- **Adres URL usługi Drive-by**: złośliwy adres URL w komunikacie przenosi użytkownika do znanej witryny internetowej, która w trybie dyskretnym uruchamia i/lub instaluje kod na urządzeniu użytkownika.
 
-Jeśli wybierzesz **pozycję Losowo**, na tej stronie nie ma nic do skonfigurowania, więc kliknij przycisk **Dalej** , aby kontynuować.
+Po kliknięciu linku **Wyświetl szczegóły** w opisie zostanie otwarte okno wysuwane szczegóły opisujące technikę i kroki symulacji wynikające z tej techniki.
 
-Jeśli **wybierzesz pozycję Ręcznie**, musisz wybrać jeden lub więcej ładów z listy. Wyświetlane są następujące informacje, które pomogą Ci wybrać:
+:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="Okno wysuwane Szczegóły dla techniki zbioru poświadczeń na stronie Wybieranie technik inżynierii społecznej" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
-- **Nazwaładuj**
-- **Technika**: Należy wybrać co najmniej jeden ład według techniki wybranej na poprzedniej stronie.
-- **Język**: język zawartości ładu. Katalog ładów firmy Microsoft (globalna) udostępnia  payloads w ponad 10 językach, które można również filtrować.
-- **Szybkość klikania**: ile osób kliknąło ten ład.
-- **Przewidywana szybkość naruszenia**: dane historyczne obciążenia na poziomie Microsoft 365, które przewiduje procent osób, które zostaną naruszone przez ten ład.
-- **Uruchomiono symeony** i zlicza, ile razy ten ład został użyty w innych symulacyjnych.
+Po zakończeniu kliknij przycisk **Dalej**.
 
-Na ikonie ![wyszukiwania.](../../media/m365-cc-sc-search-icon.png) **Pole** wyszukiwania, możesz wpisać część nazwy ładowania i nacisnąć klawisz Enter, aby przefiltrować wyniki.
+## <a name="select-payloads"></a>Wybieranie ładunków
 
-Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
+Na stronie **Wybieranie ładunków** wybierz jedną z następujących opcji:
 
-- **Złożoność**: Obliczona na podstawie liczby wskaźników w zbędnych wynikach możliwych ataków (błędy pisowni, pilność itp.). Więcej wskaźników jest łatwiejsze do zidentyfikowania jako atak i wskazuje niższą złożoność. Dostępne wartości:
-  - **Niska**
+- **Ręczne wybieranie**
+- **Losowo**
+
+Jeśli wybierzesz pozycję **Randomize**, nie ma nic do skonfigurowania na tej stronie, więc kliknij przycisk **Dalej** , aby kontynuować.
+
+Jeśli **wybierzesz pozycję Ręcznie**, musisz wybrać jeden lub więcej ładunków z listy. Zostaną wyświetlone następujące szczegóły, które pomogą Ci wybrać:
+
+- **Nazwa ładunku**
+- **Technika**: musisz wybrać co najmniej jeden ładunek na technikę wybraną na poprzedniej stronie.
+- **Język**: język zawartości ładunku. Katalog ładunków firmy Microsoft (globalny) udostępnia ładunki w ponad 10 językach, które można również filtrować.
+- **Współczynnik kliknięć**: ile osób kliknąło ten ładunek.
+- **Przewidywany wskaźnik kompromisu**: dane historyczne dotyczące ładunku w Microsoft 365, które przewidują odsetek osób, które zostaną naruszone przez ten ładunek.
+- **Uruchomione symulacje** liczą, ile razy ten ładunek był używany w innych symulacjach.
+
+W ikonie ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** umożliwia wpisanie części nazwy ładunku i naciśnięcie klawisza Enter w celu filtrowania wyników.
+
+Jeśli klikniesz pozycję **Filtruj**, dostępne są następujące filtry:
+
+- **Źródło**: wskazuje, czy ładunek został utworzony w organizacji, czy jest częścią wcześniej istniejącego wykazu ładunków firmy Microsoft. Prawidłowe wartości to:
+  - **Globalny** (wbudowany)
+  - **Dzierżawa** (niestandardowa)
+  - **Wszystkie**
+
+- **Złożoność**: obliczana na podstawie liczby wskaźników w ładunku, które wskazują na możliwy atak (błędy pisowni, pilność itp.). Więcej wskaźników można łatwiej zidentyfikować jako atak i wskazać mniejszą złożoność. Dostępne wartości to:
+  - **Niskie**
   - **Średni**
   - **High (Wysoki)**
-- **Źródło**: wskazuje, czy ład został utworzony w organizacji, czy jest częścią istniejącego katalogu ładów firmy Microsoft. Prawidłowe wartości to:
-  - **Globalna**
-  - **Dzierżawca**
-  - **Wszystkie**
-- Język **: Dostępne** **wartości: angielski**, **hiszpański, niemiecki****, japoński,** **francuski,** **portugalski****, holenderski****, włoski****, szwedzki**, **chiński (****uproszczony), norweski bokmål****, polski****, rosyjski,** **fiński,** **koreański,** **turecki,** węgierski, **hebrajski**, **tajski**, **arabski**, **wietnamski****, słowacki**, **grecki**, **indonezyjski**, **rumuński**, **słoweński**, **chorwacki**, **kataloński** **i inny**.
+
+- **Język**: Dostępne wartości to: **angielski**, **hiszpański**, **niemiecki**, **japoński**, **francuski**, **portugalski**, **holenderski**, **włoski**, **szwedzki**, **chiński (uproszczony),** **norweski Bokmål**, **polski**, **rosyjski**, **fiński**, **koreański**, **turecki**, **węgierski**, **hebrajski**, **tajski**, **arabski**, **wietnamski**, **słowacki**, **grecki**, **indonezyjski**, **rumuński**, **słoweński**, **chorwacki**, **kataloński** i **inne**.
+
 - **Dodawanie tagów**
-- **Filtruj** według motywu **: Dostępne** wartości: Aktywacja **konta, Weryfikacja** **konta, Rozliczenia****,** Oczyszczanie **poczty,** Odebrano dokument, **Koszt**, **Faks****, Raport** **finansowy, Wiadomości** przychodzące, Faktura **,** Odebrane **elementy,** **Alert logowania****,** Otrzymano **pocztę**, Hasło, **Płatność**, **Płace**, **Spersonalizowana oferta****,** Kwarantanna, **Praca zdalna**, **Przejrzenie wiadomości**, **Aktualizacja** **zabezpieczeń, Usługa** zawieszona, Podpis **wymagany**, Uaktualnij magazyn skrzynki pocztowej **Weryfikowanie** skrzynki pocztowej, **Poczta głosowa** i **Inne**.
-- Filtruj według **marki: Dostępne** wartości to: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid, Title** Title, **Tesco**, **Wells Fargo**, **Syrinx Cloud** i **inne**.
-- **Filtruj** według branży: Dostępne **wartości to:** Bankowość **, Usługi** **biznesowe, Usługi** dla klientów **indywidualnych, Edukacja****, Energy****,** Konsygnacja, **Consulting**, Usługi **finansowe**, **Rząd**, **Jednak**, **Ubezpieczenia**, **Prawne**, **Courier services**, **IT****, Opieka** zdrowotna **, Produkcja**, **Sprzedaż** detaliczna, **Telecom**, **Nieruchomości**, i **Inne**.
+
+- **Filtruj według motywu**: Dostępne wartości to: **Aktywacja konta**, **Weryfikacja konta**, **Rozliczenia**, **Oczyszczanie poczty**, **Odebrane dokumenty**, **Wydatki**, **Faks**, **Raport finansowy**, **Wiadomości przychodzące**, **Faktura**, **Odebrane elementy**, **Alert logowania**, **Odebrana poczta**, **Hasło**, **Płatność**, **Lista płac**, **Spersonalizowana oferta**, **Kwarantanna**, **Praca zdalna**, **przejrzyj komunikat**, **aktualizację zabezpieczeń**, **wstrzymanie usługi**, **wymagany podpis**, **uaktualnienie magazynu skrzynki pocztowej Sprawdź skrzynkę pocztową**, **pocztę głosową** i **inne**.
+
+- **Filtruj według marki**: Dostępne wartości to: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** i **Inne**.
+
+- **Filtruj według branży**: Dostępne wartości to: **Bankowość**, **Usługi biznesowe**, **Usługi konsumenckie**, **Edukacja**, **Energia**, **Budownictwo**, **Doradztwo**, **Usługi finansowe**, **Rząd**, **Gościnność**, **Ubezpieczenia**, **Prawne**, **Usługi kurierskie**, **IT**, **Healthcare**, **Produkcja**, **Handel detaliczny**, **Telekomunikacja**, **Nieruchomości**, i **inne**.
+
 - **Bieżące zdarzenie**: Dostępne wartości to **Tak** lub **Nie**.
-- **Wymierne**: Dostępne wartości to **Tak** lub **Nie**.
 
-Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
+- **Kontrowersyjne**: Dostępne wartości to **Tak** lub **Nie**.
 
-W przypadku wybrania ładu z listy przez kliknięcie nazwy szczegóły dotyczące ładów są wyświetlane w wysuwanych informacjach:
+Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj**, **Anuluj** lub **Wyczyść filtry**.
 
-- Karta **Przegląd** zawiera przykład i inne szczegóły dotyczące ładu.
-- Karta **Uruchomiono symulatory** zawiera nazwę **symulacyjnej**, **szybkość** klikania, **naruszone tempo** i **działanie**.
+Jeśli wybierzesz ładunek z listy, klikając nazwę, szczegółowe informacje o ładunku są wyświetlane w wysuwnym:
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Wysuwowe informacje o szczegółach obciążenia w szkoleniu symulacyjnych ataków w portalu Microsoft 365 Defender sieci Microsoft 365 Defender." lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
+- Karta **Przegląd** zawiera przykład i inne szczegóły dotyczące ładunku.
+- Karta **Symulacje uruchomione** zawiera **nazwę symulacji**, **szybkość kliknięć**, **wskaźnik naruszonych** zabezpieczeń i **akcję**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Wysuwane szczegóły ładunku w szkoleniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
 ## <a name="target-users"></a>Użytkownicy docelowi
 
-Na stronie **Użytkownicy docelowi** wybierz osoby, które otrzymają symulowanie. Skonfiguruj jedno z następujących ustawień:
+Na stronie **Użytkownicy docelowi** wybierz, kto otrzyma symulację. Skonfiguruj jedno z następujących ustawień:
 
-- **Uwzględnij wszystkich użytkowników w organizacji**: użytkownicy, których dotyczy problem, są pokazywani na listach z 10. Do przewijania **listy możesz** **użyć** przycisków Następny i Poprzedni bezpośrednio poniżej listy użytkowników. Możesz również użyć ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Ikona** wyszukiwania na stronie w celu znalezienia użytkowników, których dotyczy problem.
-- **Uwzględnij tylko określonych użytkowników i grupy**: Wybierz jedną z następujących opcji:
-  - ![Ikona Dodaj użytkowników.](../../media/m365-cc-sc-create-icon.png) **Dodawanie użytkowników**: **W wyświetlonym** wysuwanych czacie Dodawanie użytkowników możesz znaleźć użytkowników i grupy na podstawie następujących kryteriów:
-    - **Użytkownicy lub grupy**: W ![ikony Wyszukaj użytkowników i grupy.](../../media/m365-cc-sc-search-icon.png) **Pole Wyszukaj użytkowników i** grupy umożliwia wpisanie części Nazwa lub Adres e-mail  użytkownika lub grupy, a następnie naciśnięcie klawisza Enter. Możesz wybrać niektóre lub wszystkie wyniki. Po zakończeniu kliknij pozycję **Dodaj x użytkowników**.
+- **Uwzględnij wszystkich użytkowników w organizacji**: użytkownicy, których dotyczy problem, są pokazywani na listach po 10. Aby przewijać listę, możesz użyć przycisków **Dalej** i **Poprzednie** bezpośrednio poniżej listy użytkowników. Możesz również użyć ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Ikona wyszukiwania** na stronie w celu znalezienia użytkowników, których dotyczy problem.
+- **Uwzględnij tylko określonych użytkowników i grupy**: wybierz jedną z następujących opcji:
+  - ![Ikona Dodaj użytkowników.](../../media/m365-cc-sc-create-icon.png) **Dodaj użytkowników**: w wyświetlonym menu wysuwowym **Dodawanie użytkowników** można znaleźć użytkowników i grupy na podstawie następujących kryteriów:
+    - **Użytkownicy lub grupy**: w ikonie ![Wyszukaj użytkowników i grupy.](../../media/m365-cc-sc-search-icon.png) **Wyszukaj pola użytkownicy i grupy** , możesz wpisać część **nazwy** lub **adresu e-mail** użytkownika lub grupy, a następnie nacisnąć klawisz Enter. Możesz wybrać niektóre lub wszystkie wyniki. Po zakończeniu kliknij pozycję **Dodaj użytkowników x**.
 
       > [!NOTE]
-      > Kliknięcie **przycisku Dodaj filtry** w celu powrotu  do opcji Filtruj użytkowników według kategorii spowoduje wyczyszczenie wszystkich użytkowników lub grup wybranych w wynikach wyszukiwania.
+      > Kliknięcie przycisku **Dodaj filtry** w celu powrotu do opcji **Filtruj użytkowników według kategorii** spowoduje usunięcie wszystkich użytkowników lub grup wybranych w wynikach wyszukiwania.
 
-    - **Filtrowanie użytkowników według kategorii**: Wybierz jedną z następujących opcji:
-      - **Sugerowane grupy użytkowników**: Wybierz jedną z następujących wartości:
+    - **Filtruj użytkowników według kategorii**: wybierz opcję brak, niektóre lub wszystkie z następujących opcji:
+      - **Sugerowane grupy użytkowników**: wybierz spośród następujących wartości:
         - **Wszystkie sugerowane grupy użytkowników**
-        - **Użytkownicy, którzy nie są docelowi w czasie symulacyjnej pracy w ciągu ostatnich trzech miesięcy**
-        - **Powtarzanie czynności przez offenders**
+        - **Użytkownicy, którzy nie są objęci symulacją w ciągu ostatnich trzech miesięcy**
+        - **Recydywistów**
       - **Dział**: Użyj następujących opcji:
-        - **Wyszukiwanie**: Na ikonie ![Wyszukaj według działu.](../../media/m365-cc-sc-search-icon.png) **Pole Wyszukaj według** działu można wpisać część wartości Dział, a następnie nacisnąć klawisz Enter. Możesz wybrać niektóre lub wszystkie wyniki.
-        - Wybierz **pozycję Cały dział**
-        - Wybierz istniejące wartości department (Dział).
-      - **Tytuł**. Użyj następujących opcji:
-        - **Wyszukiwanie**: Na ikonie ![Wyszukaj według tytułu.](../../media/m365-cc-sc-search-icon.png) **Pole Wyszukaj według** tytułu można wpisać część wartości Tytuł, a następnie nacisnąć klawisz Enter. Możesz wybrać niektóre lub wszystkie wyniki.
-        - **Zaznaczanie całego tytułu**
-        - Wybierz istniejące wartości Title.
+        - **Wyszukaj**: na ikonie ![Wyszukaj według działu.](../../media/m365-cc-sc-search-icon.png) **Wyszukaj według pola Dział** , możesz wpisać część wartości Dział, a następnie nacisnąć klawisz Enter. Możesz wybrać niektóre lub wszystkie wyniki.
+        - Wybierz **pozycję Wszystkie działy**
+        - Wybierz istniejące wartości działu.
+      - **Tytuł**: Użyj następujących opcji:
+        - **Wyszukaj**: na ikonie ![Wyszukaj według tytułu.](../../media/m365-cc-sc-search-icon.png) **Wyszukaj według pola Tytuł** , możesz wpisać część wartości Tytuł, a następnie nacisnąć klawisz Enter. Możesz wybrać niektóre lub wszystkie wyniki.
+        - Wybierz **pozycję Wszystkie tytuły**
+        - Wybierz istniejące wartości tytułu.
 
-      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="Filtrowanie użytkowników na stronie Użytkownicy docelowi w szkoleniu z symezyjną ataków w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="Użytkownik filtrujący na stronie Użytkownicy docelowi w trenowaniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
-      Po zidentyfikowaniu kryteriów użytkownicy, których dotyczy problem, są pokazywani  w wyświetlonej sekcji Lista użytkowników, w której można wybrać niektórych lub wszystkich wykrytych adresatów.
+      Po zidentyfikowaniu kryteriów użytkownicy, których dotyczy problem, są wyświetlani w wyświetlonej sekcji **Lista użytkowników** , w której można wybrać niektórych lub wszystkich odnalezionych adresatów.
 
       Po zakończeniu kliknij pozycję **Zastosuj(x),** a następnie kliknij pozycję **Dodaj użytkowników x**.
 
-  Z powrotem na **stronie głównej Użytkownicy** docelowi możesz użyć ikony ![Wyszukiwania.](../../media/m365-cc-sc-search-icon.png) **Pole** wyszukiwania, aby znaleźć użytkowników, których dotyczy problem. Możesz również kliknąć ikonę ![Usuń.](../../media/m365-cc-sc-delete-icon.png) **Usuń,** aby usunąć określonych użytkowników.
+  Po powrocie do głównej strony **Użytkownicy docelowi** możesz użyć ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** w celu znalezienia użytkowników, których dotyczy problem. Możesz również kliknąć ikonę ![Usuń.](../../media/m365-cc-sc-delete-icon.png) **Usuń** , aby usunąć określonych użytkowników.
 
-- ![Ikona Importuj.](../../media/m365-cc-sc-create-icon.png) **Importowanie**: W oknie dialogowym, które zostanie otwarte, określ plik CSV zawierający jeden adres e-mail w wierszu.
+- ![Ikona importu.](../../media/m365-cc-sc-create-icon.png) **Importuj**: W otwieranym oknie dialogowym określ plik CSV zawierający jeden adres e-mail na wiersz.
 
-  Po odnalezieniu pliku CSV lista użytkowników zostanie zaimportowana i wyświetlona na stronie Użytkownicy **docelowi** . Możesz użyć ikony ![Wyszukiwania.](../../media/m365-cc-sc-search-icon.png) **Pole** wyszukiwania, aby znaleźć użytkowników, których dotyczy problem. Możesz również kliknąć ikonę ![Usuń.](../../media/m365-cc-sc-delete-icon.png) **Usuń,** aby usunąć określonych użytkowników.
+  Po znalezieniu wybranego pliku CSV lista użytkowników zostanie zaimportowana i **wyświetlona na stronie Użytkownicy docelowi** . Możesz użyć ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** w celu znalezienia użytkowników, których dotyczy problem. Możesz również kliknąć ikonę ![Usuń.](../../media/m365-cc-sc-delete-icon.png) **Usuń** , aby usunąć określonych użytkowników.
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
 ## <a name="assign-training"></a>Przypisywanie szkolenia
 
-Na stronie **Przypisywanie** szkolenia możesz przypisać szkolenia dla symulacyjnej. Zaleca się przypisywanie szkoleń do każdej symulacyjnej sytuacji, ponieważ pracownicy, którzy przejdą szkolenie, są mniej podatni na podobne ataki. Dostępne są następujące ustawienia:
+Na stronie **Przypisywanie szkolenia** można przypisać szkolenia dla symulacji. Zalecamy przypisanie szkoleń dla każdej symulacji, ponieważ pracownicy, którzy przechodzą szkolenie, są mniej podatni na podobne ataki. Dostępne są następujące ustawienia:
 
-- **Wybierz preferencje dotyczące zawartości szkoleń**: Wybierz jedną z następujących opcji:
-  - **Środowisko szkoleniowe firmy Microsoft**: Jest to wartość domyślna, która ma następujące skojarzone opcje konfigurowania:
+- **Wybierz preferencje dotyczące zawartości szkoleniowej**: Wybierz jedną z następujących opcji:
+  - **Środowisko szkoleniowe firmy Microsoft**: jest to wartość domyślna, która ma następujące skojarzone opcje konfigurowania:
     - Wybierz jedną z następujących opcji:
-      - **Przypisz do mnie szkolenie**: jest to wartość domyślna i zalecana. Przypisujemy szkolenie na podstawie poprzedniej symulacyjnej oraz wyników szkolenia użytkownika. Możesz przejrzeć opcje w następnych krokach kreatora.
-      - **Wybierz pozycję kursy** szkoleniowe i moduły samodzielnie. Jeśli wybierzesz tę wartość, w następnym kroku kreatora nadal będzie można wyświetlić zalecaną zawartość, a także wszystkie dostępne kursy i moduły.
-    - **Termin realizacji**: Wybierz jedną z następujących wartości:
-      - **30 dni po zakończeniu symulowania**: jest to wartość domyślna.
-      - **15 dni po zakończeniu symulowania**
-      - **7 dni po zakończeniu symulacyjnej pracy**
-  - **Przekierowywanie do niestandardowego adresu URL**: Ta wartość ma następujące skojarzone opcje konfigurowania:
-    - **Niestandardowy adres URL szkolenia** (wymagany)
-    - **Niestandardowa nazwa szkolenia** (wymagane)
-    - **Niestandardowy opis szkolenia**
-    - **Niestandardowy czas trwania szkolenia (w** minutach): Wartość domyślna to 0, co oznacza, że nie ma określonego czasu trwania szkolenia.
-    - **Termin realizacji**: Wybierz jedną z następujących wartości:
-      - **30 dni po zakończeniu symulowania**: jest to wartość domyślna.
-      - **15 dni po zakończeniu symulowania**
-      - **7 dni po zakończeniu symulacyjnej pracy**
-  - **Brak szkolenia**: Jeśli wybierzesz tę wartość, jedyną opcją na stronie jest przycisk **Dalej, który** przenosi Cię do [**strony docelowej**](#landing-page) .
+      - **Przypisz dla mnie szkolenie**: jest to wartość domyślna i zalecana. Przypisujemy szkolenia na podstawie poprzednich wyników symulacji i trenowania użytkownika, a wybrane opcje można przejrzeć w kolejnych krokach kreatora.
+      - **Wybierz samodzielnie kursy i moduły szkoleniowe**: jeśli wybierzesz tę wartość, w następnym kroku kreatora nadal będzie można wyświetlić zalecaną zawartość, a także wszystkie dostępne kursy i moduły.
+    - **Data ukończenia**: Wybierz jedną z następujących wartości:
+      - **30 dni po zakończeniu symulacji**: jest to wartość domyślna.
+      - **15 dni po zakończeniu symulacji**
+      - **7 dni po zakończeniu symulacji**
+  - **Przekierowanie do niestandardowego adresu URL**: Ta wartość ma następujące skojarzone opcje do skonfigurowania:
+    - **Niestandardowy adres URL trenowania** (wymagany)
+    - **Niestandardowa nazwa trenowania** (wymagana)
+    - **Niestandardowy opis trenowania**
+    - **Niestandardowy czas trwania trenowania (w minutach)**: wartość domyślna to 0, co oznacza, że nie ma określonego czasu trwania trenowania.
+    - **Data ukończenia**: Wybierz jedną z następujących wartości:
+      - **30 dni po zakończeniu symulacji**: jest to wartość domyślna.
+      - **15 dni po zakończeniu symulacji**
+      - **7 dni po zakończeniu symulacji**
+  - **Brak trenowania**: jeśli wybierzesz tę wartość, jedyną opcją na stronie jest przycisk **Dalej** , który przeniesie Cię na stronę [**docelową**](#landing-page) .
 
-:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="Opcja dodania zalecanego szkolenia na stronie Training assignment (Szkolenie dotyczące zadań do wykonania) w szkoleniu z symendyy ataków w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="Opcja dodania zalecanego szkolenia na stronie Przypisania trenowania w trenowaniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
-### <a name="training-assignment"></a>Zadanie szkoleniowe
+### <a name="training-assignment"></a>Przypisanie szkoleniowe
 
 > [!NOTE]
-> Strona **Zadania szkoleniowe jest** dostępna tylko w przypadku wybrania na poprzedniej stronie opcji Wybierz kursy szkoleniowe i moduły szkoleniowe firmy **Microsoft**\>.
+> Strona **Przypisywanie szkolenia** jest dostępna tylko wtedy, gdy wybrano **środowisko** \> **szkoleniowe firmy Microsoft Wybierz kursy szkoleniowe i moduły samodzielnie** na poprzedniej stronie.
 
-Na stronie **Zadanie szkoleniowe** wybierz szkolenia, które chcesz dodać do symulacyjnej pracy, klikając ![ikonę Dodaj szkolenia.](../../media/m365-cc-sc-create-icon.png) **Dodaj szkolenia**.
+Na stronie **Przypisanie trenowania** wybierz szkolenia, które chcesz dodać do symulacji, klikając ![ikonę Dodaj szkolenia.](../../media/m365-cc-sc-create-icon.png) **Dodaj szkolenia**.
 
-W **wyświetlonym wysuwam** menu Dodaj szkolenie możesz wybrać szkolenia, których chcesz użyć, na następujących dostępnych kartach:
+Na wyświetlonym menu wysuwowym **Dodawanie trenowania** możesz wybrać szkolenia do użycia na następujących dostępnych kartach:
 
-- **Karta** Zalecane: przedstawia zalecane wbudowane szkolenia na podstawie konfiguracji symulacyjnej. Są to te same szkolenia, które zostałyby przypisane, jeśli na poprzedniej stronie wybrano opcję **Przypisz** do mnie szkolenie.
-- **Karta Wszystkie szkolenia** : Wyświetla wszystkie dostępne wbudowane szkolenia.
+- **Zalecana** karta: przedstawia zalecane wbudowane szkolenia oparte na konfiguracji symulacji. Są to te same szkolenia, które zostałyby przypisane, gdyby wybrano pozycję **Przypisz szkolenie dla mnie** na poprzedniej stronie.
+- **Karta Wszystkie szkolenia** : pokazuje wszystkie dostępne wbudowane szkolenia.
 
   Dla każdego szkolenia są wyświetlane następujące informacje:
 
   - **Nazwa szkolenia**
-  - **Źródło**: wartość to **Global**.
-  - **Czas trwania (miny)**
-  - **Podgląd**: Kliknij przycisk **Podgląd** , aby wyświetlić szkolenie.
+  - **Źródło**: Wartość jest **globalna**.
+  - **Czas trwania (min)**
+  - **Wersja zapoznawcza**: kliknij przycisk **Podgląd** , aby wyświetlić szkolenie.
 
-  Na ikonie ![wyszukiwania.](../../media/m365-cc-sc-search-icon.png) **Pole** wyszukiwania, możesz wpisać część nazwy szkolenia i nacisnąć klawisz Enter, aby przefiltrować wyniki na bieżącej karcie.
+  W ikonie ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **W polu wyszukiwania** możesz wpisać część nazwy trenowania i nacisnąć klawisz Enter, aby filtrować wyniki na bieżącej karcie.
 
-  Z bieżącej karty zaznacz wszystkie szkolenia, które chcesz uwzględnić, a następnie kliknij przycisk **Dodaj**.
+  Wybierz wszystkie szkolenia, które chcesz uwzględnić na bieżącej karcie, a następnie kliknij przycisk **Dodaj**.
 
-Na głównej **stronie zadania szkoleniowego** są wyświetlane wybrane szkolenia. Dla każdego szkolenia są wyświetlane następujące informacje:
+Po powrocie do głównej strony **Przypisania trenowania** zostaną wyświetlone wybrane szkolenia. Dla każdego szkolenia są wyświetlane następujące informacje:
 
 - **Nazwa szkolenia**
 - **Źródło**
-- **Czas trwania (miny)**
+- **Czas trwania (min)**
 
-Dla każdego szkolenia z listy musisz wybrać, kto otrzymuje szkolenie, wybierając wartości w kolumnie **Przypisz do** :
+Dla każdego szkolenia na liście wybierz co najmniej jedną z następujących wartości w kolumnie **Przypisz do** , aby skonfigurować, kto pobiera szkolenie:
 
 - **Wszyscy użytkownicy**
+- **Klikniętego ładunku**
+- **Zagrożone**
 
-  lub co najmniej jedną z następujących wartości:
+Jeśli nie chcesz używać pokazanego szkolenia, kliknij ikonę ![Usuń.](../../media/m365-cc-sc-delete-icon.png) **Usuń**.
 
-- **Kliknął ład**
-- **Naruszone**
-
-Jeśli nie chcesz używać wyświetlonego szkolenia, kliknij ikonę ![Usuń.](../../media/m365-cc-sc-delete-icon.png) **Usuń**.
-
-:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Strona Szkoleń z szkoleniami szkoleniowym w zakresie symezyjnych ataków w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/attack-sim-training-training-assignment.png":::
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Strona Trenowanie przypisania w trenowaniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
 ### <a name="landing-page"></a>Strona docelowa
 
-Na stronie **docelowej** możesz skonfigurować stronę sieci Web, do których użytkownik jest przekierowywowywny w przypadku otwarcia przez nich ładu w czasie symulacyjnej.
+Na **stronie Docelowa** skonfigurujesz stronę internetową, do którą użytkownik jest pobierany, jeśli otworzy ładunek w symulacji.
 
-- **Wybieranie preferencji strony docelowej**: Dostępne wartości zależą od wcześniejszych wyborów na stronie Wybieranie ładowań zgodnie z opisem w poniższej tabeli:[](#select-payloads)
+- **Wybierz preferencję strony docelowej**: dostępne wartości zależą od poprzednich wyborów na stronie [Wybieranie ładunków](#select-payloads) zgodnie z opisem w poniższej tabeli:
 
-  |Zaznaczenie na stronie Wybierz łady|Dostępne wartości dla preferencji Wybierz stronę docelową|
+  |Wybór na stronie Wybieranie ładunków|Dostępne wartości dla preferencji Wybieranie strony docelowej|
   |---|---|
-  |Wybierz ręcznie|Użyj domyślnej strony startowej firmy Microsoft <p> Tworzenie własnej strony docelowej <p> Używanie niestandardowego adresu URL <p> **Uwaga**: wartość **Użyj niestandardowego adresu URL** nie jest dostępna, jeśli na stronie  Wybieranie technik społecznościowych wcześniej wybrano pozycję Załącznik złośliwego [oprogramowania lub](#select-one-or-more-social-engineering-techniques) **Link** do złośliwego oprogramowania.|
-  |Randomizuj|Użyj domyślnej strony startowej firmy Microsoft|
+  |Ręczne wybieranie|Używanie domyślnej strony docelowej firmy Microsoft <p> Tworzenie własnej strony docelowej <p> Używanie niestandardowego adresu URL <p> **Uwaga**: wartość **Użyj niestandardowego adresu URL** jest niedostępna, jeśli wcześniej **wybrano pozycję Załącznik złośliwego oprogramowania** lub **Link do złośliwego oprogramowania** na stronie [Wybieranie technik inżynierii społecznej](#select-one-or-more-social-engineering-techniques) .|
+  |Losowo|Używanie domyślnej strony docelowej firmy Microsoft|
 
-  Dostępne wartości **preferencji wybierz stronę docelową** i skojarzone z nimi ustawienia są opisane na poniższej liście:
+  Dostępne wartości **preferencji Wybierz stronę docelową** i skojarzone z nimi ustawienia są opisane na następującej liście:
 
-  - **Użyj domyślnej strony startowej firmy Microsoft**. Jest to wartość domyślna, co powoduje, że do wszystkich ładów jest stosowana jedna domyślna akcja wskaźnika, logo i ładu firmy Microsoft.
+  - **Użyj domyślnej strony docelowej firmy Microsoft**. Jest to wartość domyślna i powoduje wykonanie jednej domyślnej akcji szablonu, logo i wskaźnika ładunku firmy Microsoft, która ma zastosowanie do wszystkich ładunków.
 
-    Na stronie docelowej musisz skonfigurować następujące **ustawienia** dodatkowe:
+    Na **stronie docelowej** należy skonfigurować następujące dodatkowe ustawienia:
 
-    - **Wybieranie układu strony docelowej**: wybierz jeden z 5 dostępnych szablonów stron startowych.
-    - **Dodać logo**: Kliknij przycisk **Przeglądaj** , aby znaleźć i wybrać plik .png, jpeg lub .gif, aby dodać go do wszystkich ładów wybranych przez firmę Microsoft. Aby uniknąć zniekształceń, rozmiar logo powinien być maksymalny 210 x 70. Aby usunąć logo, kliknij przycisk **Usuń**.
-    - **Wskaźniki ładowania**: To ustawienie jest niedostępne, jeśli na stronie Wybieranie technik społecznościowych wcześniej wybrano załącznik  złośliwego [oprogramowania lub](#select-one-or-more-social-engineering-techniques) link do złośliwego oprogramowania.
+    - **Wybierz układ strony docelowej**: wybierz jeden z 5 dostępnych szablonów stron docelowych.
+    - **Dodaj logo**: kliknij przycisk **Przeglądaj** , aby znaleźć i wybrać plik .png, jpeg lub .gif, aby dodać do wszystkich ładunków wybranych przez firmę Microsoft. Aby uniknąć zniekształceń, rozmiar logo powinien wynosić maksymalnie 210 x 70. Aby usunąć logo, kliknij przycisk **Usuń**.
+    - **Wskaźniki ładunku**: to ustawienie nie jest dostępne, jeśli wcześniej **wybrano pozycję Załącznik złośliwego oprogramowania** lub **Link do złośliwego oprogramowania** na stronie [Wybieranie technik inżynierii społecznej](#select-one-or-more-social-engineering-techniques) .
 
-      Wybierz **pozycję Dodaj wskaźniki opłaty do wiadomości e-mail** , aby ułatwić użytkownikom identyfikowanie wiadomości wyłudzających informacje.
+      Wybierz pozycję **Dodaj wskaźniki ładunku do wiadomości e-mail** , aby pomóc użytkownikom dowiedzieć się, jak identyfikować wiadomości wyłudzające informacje.
 
-    Możesz wyświetlić podgląd wyników, klikając przycisk Otwórz **panel podglądu** na środku strony. W wyświetlonym wysuwanych oknie podglądu możesz użyć  opcji Wybierz ład, aby wyświetlić podgląd poszczególnych ładów.
+    Możesz wyświetlić podgląd wyników, klikając przycisk **Otwórz panel podglądu** w środku strony. W wyświetlonym okienku wysuwowym podglądu możesz użyć opcji **Wybierz ładunek w celu wyświetlenia podglądu** , aby zobaczyć, jak wygląda każdy ładunek.
 
-  - **Utwórz własną stronę docelową**: Ta wartość powoduje utworzenie jednej akcji wskaźnika obciążenia, która zostanie zastosowana do wybranych ładowań.
+  - **Utwórz własną stronę docelową**: ta wartość powoduje wykonanie pojedynczej akcji wskaźnika ładunku, która jest stosowana do wybranych ładunków.
 
-    Na stronie docelowej musisz skonfigurować następujące **ustawienia** dodatkowe:
+    Na **stronie docelowej** należy skonfigurować następujące dodatkowe ustawienia:
 
-    - **Wskaźniki ładowania**: To ustawienie jest dostępne do wyboru tylko wtedy, gdy są spełnione oba poniższe warunki:
-      - Wcześniej wybrano **opcję Zbiory poświadczeń**, **Łącze** w załączniku lub Adres **URL dysku** na [stronie Wybieranie technik społecznościowych](#select-one-or-more-social-engineering-techniques) .
+    - **Wskaźniki ładunku**: to ustawienie jest dostępne do wybrania tylko wtedy, gdy oba z następujących warunków są spełnione:
+      - Wcześniej wybrano **pozycje Zbiory poświadczeń**, **Link w załączniku** lub **Adres URL usługi Drive-by** na stronie [Wybieranie technik inżynierii społecznej](#select-one-or-more-social-engineering-techniques) .
       - Po dodaniu **tagu dynamicznego** o nazwie **Wstaw zawartość wiadomości e-mail** do zawartości strony.
 
     - Zawartość strony: Dostępne są dwie karty:
 
-      - **Funkcje** tekstowe: Do utworzenia strony docelowej jest dostępny edytor tekstów sformatowanych. Oprócz typowych ustawień czcionki i formatowania dostępne są następujące ustawienia:
-        - **Tag dynamiczny**: Wybierz z następujących tagów:
+      - **Tekst**: Do utworzenia strony docelowej jest dostępny edytor tekstów sformatowanych. Oprócz typowych ustawień czcionki i formatowania dostępne są następujące ustawienia:
+        - **Tag dynamiczny**: wybierz spośród następujących tagów:
           - **Wstaw nazwę**
-          - **Wstawianie nazwy nadawcy**
-          - **Wstawianie adresu e-mail nadawcy**
+          - **Wstaw nazwę nadawcy**
+          - **Wstawianie wiadomości e-mail nadawcy**
           - **Wstawianie tematu wiadomości e-mail**
           - **Wstawianie zawartości wiadomości e-mail**
-          - **Wstawianie daty**
-        - **Użyj z domyślnego**: Wybierz jeden z 5 dostępnych szablonów stron startowych, od których chcesz rozpocząć. Tekst i układ można zmodyfikować w obszarze edytowania. Aby przywrócić domyślny tekst i układ szablonu strony docelowej, kliknij pozycję **Resetuj do domyślnego.**
-        - **Link do szkolenia**: W wyświetlonym oknie dialogowym Nazywanie adresu **URL** szkolenia wprowadź tytuł linku do szkolenia, a następnie kliknij  pozycję Potwierdź, aby dodać link do strony docelowej.
-      - **Kod**: Możesz bezpośrednio wyświetlać i modyfikować kod HTML.
+          - **Wstaw datę**
+        - **Użyj od wartości domyślnej**: wybierz jeden z 5 dostępnych szablonów stron docelowych, od których chcesz zacząć. Możesz zmodyfikować tekst i układ w obszarze edycji. Aby zresetować stronę docelową z powrotem do domyślnego tekstu i układu szablonu, kliknij przycisk **Resetuj do wartości domyślnej**.
+        - **Łącze szkoleniowe**: W wyświetlonym oknie dialogowym **Adres URL trenowania Nazwy** wprowadź tytuł linku do linku szkoleniowego, a następnie kliknij przycisk **Potwierdź** , aby dodać link do strony docelowej.
+      - **Kod**: kod HTML można wyświetlać i modyfikować bezpośrednio.
 
-      Możesz wyświetlić podgląd wyników, klikając przycisk Otwórz **panel podglądu** na środku strony. W wyświetlonym wysuwanych oknie podglądu możesz użyć  opcji Wybierz ład, aby wyświetlić podgląd poszczególnych ładów.
+      Możesz wyświetlić podgląd wyników, klikając przycisk **Otwórz panel podglądu** w środku strony. W wyświetlonym okienku wysuwowym podglądu możesz użyć opcji **Wybierz ładunek w celu wyświetlenia podglądu** , aby zobaczyć, jak wygląda każdy ładunek.
 
-  - **Użyj niestandardowego adresu URL**: Dodaj adres URL w **wyświetlonym polu Wprowadź adres URL** niestandardowej strony docelowej. Na stronie nie są dostępne żadne inne opcje.
+  - **Użyj niestandardowego adresu URL**: dodaj adres URL w wyświetlonym polu **Wprowadź niestandardowy adres URL strony docelowej** . Na stronie nie są dostępne żadne inne opcje.
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
-## <a name="select-end-user-notification"></a>Wybierz powiadomienie użytkownika końcowego
+## <a name="select-end-user-notification"></a>Wybieranie powiadomienia użytkownika końcowego
 
 Na stronie **Wybieranie powiadomienia użytkownika końcowego** wybierz jedną z następujących opcji powiadomień:
 
-- **Nie dostarczaj powiadomień**: Kliknij **przycisk Kontynuuj** w wyświetlonym oknie dialogowym alertu. Jeśli wybierzesz tę opcję, kliknięcie przycisku Dalej spowoduje wybranie strony Harmonogram [symulowania](#simulation-schedule).
+- **Nie dostarczaj powiadomień**: kliknij przycisk **Kontynuuj** w wyświetlonym oknie dialogowym alertu. Jeśli wybierzesz tę opcję, po kliknięciu przycisku **Dalej** zostanie wyświetlona strona [Harmonogram symulacji](#simulation-schedule).
 
-- **Powiadomienie domyślne firmy Microsoft (zalecane)**: Na stronie są dostępne następujące dodatkowe ustawienia:
-  - **Wybierz język domyślny**: Dostępne wartości to: chiński **(** uproszczony), chiński (tradycyjny **),****angielski,** **francuski****, niemiecki****, włoski****, japoński**, **koreański**, **portugalski****, rosyjski****, hiszpański** i **holenderski**.
-  - Domyślnie jedynym dostępnym powiadomieniem do wyboru jest powiadomienie **o dodatnich wiadomościach od firmy Microsoft**. W przypadku tego powiadomienia dostępne są następujące informacje:
-    - **Powiadomienia** (nazwa): wartość to powiadomienie o dodatnich **wiadomościach po stronie dodatniej firmy Microsoft**.
-    - **Język**: Jeśli powiadomienie zawiera wiele tłumaczeń, dwa pierwsze języki są wyświetlane bezpośrednio. Aby wyświetlić pozostałe języki, umieść wskaźnik myszy na ikonie numerycznej (na przykład **+10**).
-    - **Typ**: Wartość jest **dodatnia**.
-    - **Preferencje dostarczania**: Wybierz jedną z następujących wartości:
+- **Domyślne powiadomienie firmy Microsoft (zalecane)**: Na stronie są dostępne następujące dodatkowe ustawienia:
+
+  - **Wybierz język domyślny**: Dostępne wartości to: **chiński (uproszczony),** **chiński (tradycyjny),** **angielski**, **francuski**, **niemiecki**, **włoski**, **japoński**, **koreański**, **portugalski**, **rosyjski**, **hiszpański** i **holenderski**.
+
+  - Domyślnie są uwzględniane następujące powiadomienia:
+    - **Powiadomienie o pozytywnym wzmocnieniu firmy Microsoft**
+    - **Domyślne powiadomienie o przypisaniu szkolenia firmy Microsoft**
+    - **Domyślne powiadomienie o przypomnieniu szkoleniowym firmy Microsoft**
+
+    Dla każdego powiadomienia są dostępne następujące informacje:
+    - **Powiadomienia**: nazwa powiadomienia.
+    - **Język**: jeśli powiadomienie zawiera wiele tłumaczeń, dwa pierwsze języki są wyświetlane bezpośrednio. Aby wyświetlić pozostałe języki, umieść kursor nad ikoną liczbową (na przykład **+10**).
+    - **Typ**: Jedna z następujących wartości:
+      - **Powiadomienie o pozytywnym wzmocnieniu**
+      - **Powiadomienie o przypisaniu szkolenia**
+      - **Powiadomienie dotyczące przypomnienia o trenowaniu**
+    - **Preferencje dostarczania**: W przypadku **powiadomień o pozytywnym wzmocnieniu** i typów **powiadomień dotyczących przypomnień szkoleniowych** dostępne są następujące wartości
       - **Nie dostarczaj**
       - **Dostarczanie po zakończeniu kampanii**
-      - **Dostarczanie w trakcie kampanii**
-    - **Dostarczanie do**: Wartość nie **ma zastosowania**.
-    - **Akcje**: Kliknięcie ikony ![Widok.](../../media/m365-cc-sc-view-icon.png) **Ikona** Widok; zostanie **wyświetlona strona z** powiadomieniem Recenzja z następującymi informacjami:
-      - **Karta** Podgląd: Wyświetlanie komunikat z powiadomieniem. Aby wyświetlić wiadomość w różnych językach, użyj **pola Wybierz** język.
-      - **Karta** Szczegóły: Wyświetl szczegóły powiadomienia:
+      - **Dostarczanie podczas kampanii**
+    - **Akcje**: jeśli klikniesz ikonę ![Widok.](../../media/m365-cc-sc-view-icon.png) **Wyświetl** ikonę, zostanie wyświetlona strona **Przejrzyj powiadomienie** z następującymi informacjami:
+      - Karta **Podgląd**: wyświetl komunikat powiadomienia.
+        - Aby wyświetlić komunikat w różnych językach, użyj pola **Wybierz język** .
+        - Użyj pola **Wybierz ładunek do wersji zapoznawczej** , aby wybrać komunikat powiadomienia dla symulacji zawierających wiele ładunków.
+      - Karta **Szczegóły**: wyświetl szczegóły dotyczące powiadomienia:
         - **Opis powiadomienia**
-        - **Źródło**: W przypadku wbudowanych powiadomień wartość to **Global**. W przypadku powiadomień niestandardowych wartość to **Dzierżawa**.
-        - **Typ powiadomienia**
+        - **Źródło**: W przypadku wbudowanych powiadomień wartość to **Globalne**. W przypadku powiadomień niestandardowych wartość to **Dzierżawa**.
+        - **Typ powiadomienia**: Jeden z następujących typów bazuje na pierwotnie wybranym powiadomieniu:
+          - **Powiadomienie o pozytywnym wzmocnieniu**
+          - **Powiadomienie o przypisaniu szkolenia**
+          - **Powiadomienie dotyczące przypomnienia o trenowaniu**
         - **Zmodyfikowane przez**
         - **Ostatnia modyfikacja**
 
         Po wprowadzeniu wszystkich zmian kliknij przycisk **Zamknij**.
 
-  Jeśli wybierzesz tę opcję, kliknięcie przycisku Dalej spowoduje wybranie strony Harmonogram [symulowania](#simulation-schedule).
+  Po kliknięciu przycisku **Dalej** zostanie wyświetlona strona [Harmonogram symulacji](#simulation-schedule).
 
-- **Dostosowane powiadomienia dla użytkowników** końcowych: Po kliknięciu przycisku **Dalej** jest przekierowywana strona powiadomień o dodatnich wiadomościach **,** zgodnie z opisem w następnej sekcji, w której można wybrać istniejące powiadomienia lub utworzyć nowe powiadomienia.
+- **Dostosowane powiadomienia użytkowników końcowych**: po kliknięciu **przycisku Dalej** zostanie wyświetlona strona **powiadomienia o przypisaniu trenowania** zgodnie z opisem w następnych sekcjach.
 
-Po zakończeniu kliknij przycisk **Dalej**.
+### <a name="training-assignment-notification"></a>Powiadomienie o przypisaniu szkolenia
 
-### <a name="positive-reinforcement-notification"></a>Powiadomienie o dodatnich wiadomościach dodatnich
+Strona **powiadomienia o przypisaniu trenowania** jest dostępna tylko wtedy, gdy **wybrano opcję Dostosowane powiadomienia użytkownika końcowego** na stronie **[Powiadomienia wybierz użytkownika końcowego](#select-end-user-notification)** .
 
-Strona **powiadomień o dodatnich wiadomościach** jest dostępna tylko w przypadku, **gdy na** poprzedniej stronie wybrano opcję Niestandardowe powiadomienia dla użytkowników końcowych.
+Na tej stronie przedstawiono następujące powiadomienia i ich skonfigurowane języki:
 
-- **Preferencje dostarczania**: Wybierz jedną z następujących wartości:
-  - **Nie dostarczaj**
-  - **Dostarczanie po zrzucie przez użytkownika informacji o wyłudzeniu informacji i zakończeniu kampanii**
-  - **Dostarczanie natychmiast po zgłosce użytkownika o wyłudzeniu informacji**
+- **Domyślne powiadomienie o przypisaniu szkolenia firmy Microsoft**
+- Wszystkie utworzone wcześniej niestandardowe powiadomienia dotyczące przypisania trenowania.
 
-- **Wybierz powiadomienie dodatnie powiadomienie z powiadomieniem**: Możesz wybrać istniejące powiadomienie lub utworzyć nowe powiadomienie o typie Powiadomienie dodatnie **przesłone do** użycia:
-  - Aby wybrać istniejące powiadomienie, kliknij pusty obszar obok nazwy powiadomienia. Jeśli klikniesz nazwę powiadomienia, zostanie zaznaczone powiadomienie i zostanie wyświetlone wysuwne okno podglądu. Aby usunąć zaznaczenie powiadomienia, wyczyść pole wyboru obok powiadomienia.
-  - Aby wyszukać istniejące powiadomienie, użyj ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole** wyszukiwania, aby wyszukać nazwę.
-  - Aby utworzyć nowe powiadomienie, kliknij pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nowy**.
-  - Aby zmodyfikować istniejące powiadomienie niestandardowe, zaznacz je, a następnie kliknij pozycję ![Edytuj ikonę powiadomienia.](../../media/m365-cc-sc-edit-icon.png) **Edytuj powiadomienie**.
+  Te powiadomienia są również dostępne na karcie **Powiadomienia użytkowników końcowych** w szkoleniu symulacji ataku pod adresem <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Domyślne powiadomienie o przypisaniu szkolenia firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia dotyczące przypisań szkoleniowych są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
 
-#### <a name="create-new-notification-wizard"></a>Tworzenie nowego kreatora powiadomień
+Możesz wybrać istniejące powiadomienie o przypisaniu szkolenia lub utworzyć nowe powiadomienie do użycia:
 
-Jeśli kliknąłem pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nowe** na stronie **powiadomień Po dodatnich wiadomościach** , zostanie otwarty kreator tworzenia powiadomień.
+- Aby wybrać istniejące powiadomienie, kliknij pusty obszar obok nazwy powiadomienia. Jeśli klikniesz nazwę powiadomienia, powiadomienie zostanie wybrane i zostanie wyświetlone okno wysuwane w wersji zapoznawczej. Aby usunąć zaznaczenie powiadomienia, wyczyść pole wyboru obok powiadomienia.
+- Aby wyszukać istniejące powiadomienie, użyj ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** w celu wyszukania nazwy.
 
-Czynności tworzenia są identyczne, jak opisano w [tece Tworzenie powiadomień dla użytkowników końcowych](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications).
+  Wybierz powiadomienie, którego chcesz użyć, a następnie kliknij przycisk **Dalej**.
+
+- Aby utworzyć nowe powiadomienie i użyć go, kliknij pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową**.
+
+#### <a name="create-new-training-assignment-notification-wizard"></a>Kreator tworzenia nowego powiadomienia o przypisaniu trenowania
+
+Jeśli klikniesz pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową** na stronie **powiadomienia o przypisaniu trenowania** , zostanie otwarty kreator tworzenia powiadomień.
+
+Kroki tworzenia są identyczne, jak opisano w artykule [Tworzenie powiadomień użytkowników końcowych](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
 > [!NOTE]
-> Na stronie **Definiowanie szczegółów** upewnij się, że dla opcji Wybierz typ powiadomień wybierz wartość Powiadomienie o dodatnim **przesłoceniu**. Nie zaznaczaj powiadomień **symulacyjnych**.
+> Na stronie **Definiowanie szczegółów** wybierz wartość **Powiadomienie o przypisaniu trenowania** dla **pozycji Wybierz typ powiadomienia**.
 
-Po zakończeniu wracasz do strony powiadomień o dodatnich przechowach, gdzie właśnie utworzone powiadomienie jest wyświetlane na liście powiadomień Wybierz dodatnią  przechłodę.
-
-- Aby utworzyć nowe powiadomienie, kliknij pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png).
-- Aby zmodyfikować powiadomienie lub dodać dodatkowe tłumaczenia, wybierz powiadomienie z listy, a następnie kliknij ikonę ![Edytuj powiadomienie.](../../media/m365-cc-sc-edit-icon.png) **Edytuj powiadomienie,** aby uruchomić kreatora powiadomień w sposób opisany wcześniej (gdy większość wartości jest już wypełniona). Jeśli powiadomienie zawiera już tłumaczenia dla 12 obsługiwanych języków, nie możesz dodać więcej tłumaczeń.
+Po zakończeniu wrócisz do strony **powiadomień o przypisaniu trenowania** , na której na liście zostanie wyświetlone właśnie utworzone powiadomienie.
 
 Wybierz powiadomienie, którego chcesz użyć, a następnie kliknij przycisk **Dalej**.
 
-## <a name="simulation-schedule"></a>Harmonogram symulowania
+### <a name="training-reminder-notification"></a>Powiadomienie dotyczące przypomnienia o trenowaniu
 
-Na stronie **Harmonogram symulowania** wybierz jedną z następujących wartości:
+Strona **powiadomienia Przypomnienie o trenowaniu** jest dostępna tylko wtedy, gdy **wybrano opcję Dostosowane powiadomienia użytkownika końcowego** na stronie **[Powiadomienia wybierz użytkownika końcowego](#select-end-user-notification)** .
 
-- **Losowo**: nadal trzeba wybrać harmonogram na następnej stronie, ale wraz z harmonogramem będą one rozpoczynane w losowych godzinach.
-- **Naprawione**
+- **Ustaw częstotliwość powiadamiania o przypomnieniu**: wybierz pozycję **Co tydzień** (wartość **domyślna) lub Dwa razy w tygodniu**.
+
+- **Wybierz powiadomienie o przypomnieniu**: W tej sekcji przedstawiono następujące powiadomienia i ich skonfigurowane języki:
+
+  - **Domyślne powiadomienie o przypomnieniu szkoleniowym firmy Microsoft**
+  - Wszystkie utworzone wcześniej powiadomienia o przypomnieniu o trenowaniu niestandardowym.
+
+    Te powiadomienia są również dostępne na karcie **Powiadomienia użytkowników końcowych** w szkoleniu symulacji ataku pod adresem <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Domyślne powiadomienie o przypomnieniu szkoleniowym firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Powiadomienia o przypomnieniu o trenowaniu niestandardowym są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
+
+  Możesz wybrać istniejące powiadomienie dotyczące przypomnienia szkoleniowego lub utworzyć nowe powiadomienie do użycia:
+
+  - Aby wybrać istniejące powiadomienie, kliknij pusty obszar obok nazwy powiadomienia. Jeśli klikniesz nazwę powiadomienia, powiadomienie zostanie wybrane i zostanie wyświetlone okno wysuwane w wersji zapoznawczej. Aby usunąć zaznaczenie powiadomienia, wyczyść pole wyboru obok powiadomienia.
+  - Aby wyszukać istniejące powiadomienie, użyj ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** w celu wyszukania nazwy.
+
+    Wybierz powiadomienie, którego chcesz użyć, a następnie kliknij przycisk **Dalej**.
+
+  - Aby utworzyć nowe powiadomienie i użyć go, kliknij pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową**.
+
+#### <a name="create-new-training-reminder-notification-wizard"></a>Kreator tworzenia nowego powiadomienia o przypomnieniu szkoleniowym
+
+Jeśli klikniesz pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową** na stronie **powiadomienia Przypomnienie szkoleniowe** , zostanie otwarty kreator tworzenia powiadomień.
+
+Kroki tworzenia są identyczne, jak opisano w artykule [Tworzenie powiadomień użytkowników końcowych](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+
+> [!NOTE]
+> Na stronie **Definiowanie szczegółów** wybierz wartość **Powiadomienie o przypomnieniu trenowania** dla **pozycji Wybierz typ powiadomienia**.
+
+Po zakończeniu zostaniesz przekierowany z powrotem na stronę **powiadomienia Przypomnienie o trenowaniu** , na której zostanie wyświetlone właśnie utworzone powiadomienie na liście.
+
+Wybierz powiadomienie, którego chcesz użyć, a następnie kliknij przycisk **Dalej**.
+
+### <a name="positive-reinforcement-notification"></a>Powiadomienie o pozytywnym wzmocnieniu
+
+Strona **Powiadomienia o pozytywnym wzmocnieniu** jest dostępna tylko wtedy, gdy **wybrano opcję Dostosowane powiadomienia użytkownika końcowego** na stronie **[Powiadomienia wybierz użytkownika końcowego](#select-end-user-notification)** .
+
+- **Preferencje dostarczania**: wybierz jedną z następujących wartości:
+
+  - **Nie dostarczaj**: po wybraniu tej opcji zostanie wyświetlona strona [Harmonogram symulacji](#simulation-schedule) po kliknięciu przycisku **Dalej**.
+
+  - **Dostarczanie po wyświetleniu przez użytkownika informacji o zakończeniu kampanii i zakończeniu kampanii** lub dostarczeniu **natychmiast po zgłoszeniu phish przez użytkownika**: W poniższych sekcjach przedstawiono następujące powiadomienia i ich skonfigurowane języki w **wyświetlonej sekcji Wybierz powiadomienie o pozytywnym wzmocnieniu** :
+
+  - **Domyślne powiadomienie o wzmacnianiu dodatnim firmy Microsoft**
+  - Wszystkie utworzone wcześniej niestandardowe powiadomienia o pozytywnym wzmocnieniu.
+
+    Te powiadomienia są również dostępne na karcie **Powiadomienia użytkowników końcowych** w szkoleniu symulacji ataku pod adresem <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Domyślne powiadomienie o pozytywnym wzmocnieniu firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia o pozytywnym wzmacnianiu są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
+
+  Możesz wybrać istniejące powiadomienie o pozytywnym wzmocnieniu lub utworzyć nowe powiadomienie do użycia:
+
+  - Aby wybrać istniejące powiadomienie, kliknij pusty obszar obok nazwy powiadomienia. Jeśli klikniesz nazwę powiadomienia, powiadomienie zostanie wybrane i zostanie wyświetlone okno wysuwane w wersji zapoznawczej. Aby usunąć zaznaczenie powiadomienia, wyczyść pole wyboru obok powiadomienia.
+  - Aby wyszukać istniejące powiadomienie, użyj ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** w celu wyszukania nazwy.
+
+    Wybierz powiadomienie, którego chcesz użyć, a następnie kliknij przycisk **Dalej**.
+
+  - Aby utworzyć nowe powiadomienie i użyć go, kliknij pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową**.
+
+#### <a name="create-new-positive-reinforcement-notification-wizard"></a>Kreator tworzenia nowego pozytywnego powiadomienia wzmacniania
+
+Jeśli klikniesz pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową** na stronie **Powiadomienia o pozytywnym wzmocnieniu** , zostanie otwarty kreator tworzenia powiadomień.
+
+Kroki tworzenia są identyczne, jak opisano w artykule [Tworzenie powiadomień użytkowników końcowych](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+
+> [!NOTE]
+> Na stronie **Definiowanie szczegółów** wybierz wartość **Powiadomienie o pozytywnym wzmocnieniu** dla **opcji Wybierz typ powiadomienia**.
+
+Po zakończeniu wrócisz do strony **powiadomienia o pozytywnym wzmocnieniu** , na której zostanie wyświetlone właśnie utworzone powiadomienie na liście.
+
+Wybierz powiadomienie, którego chcesz użyć, a następnie kliknij przycisk **Dalej**.
+
+## <a name="simulation-schedule"></a>Harmonogram symulacji
+
+Na stronie **Harmonogram symulacji** wybierz jedną z następujących wartości:
+
+- **Randomizowane**: nadal musisz wybrać harmonogram na następnej stronie, ale symulacje będą uruchamiane losowo z harmonogramem.
+- **Stałe**
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
 ## <a name="schedule-details"></a>Szczegóły harmonogramu
 
-Informacje na stronie Szczegóły harmonogramu  zależą od tego, czy wybrano opcję **Randomized** (Losowo), czy **Fixed** (Stała) na poprzedniej stronie.
+To, co widzisz na stronie **Szczegóły harmonogramu**, zależy od tego, czy **wybrano** opcję **Randomized** czy Fixed na poprzedniej stronie.
 
-- **Losowo**: Dostępne są następujące ustawienia:
-  - **Sekcja rozpoczęcia symulowania** : Konfigurowanie następującego ustawienia:
-    - **Wybierz datę, od której mają się zaczynać symulowania**
-  - **Sekcja zakresu symulacyjnego** : Konfigurowanie następujących ustawień:
-    - **Wybierz dni tygodnia, od których** mogą rozpoczynać się symulowania: Wybierz jeden lub więcej dni tygodnia.
-    - **Wprowadź maksymalną liczbę symulowań, które mogą być** rozpoczęte między datą rozpoczęcia i zakończenia: Wprowadź wartość z od 1 do 10.
-    - **Randomize czasu wysyłania**: zaznacz to ustawienie, aby losowo określać czas wysyłania.
-  - **Sekcja zakończenia symulowania** : Konfigurowanie następującego ustawienia:
-    - **Wybierz datę, do której mają się zakończyć symulowania**
+- **Randomizowane**: Dostępne są następujące ustawienia:
+  - Sekcja **uruchamiania symulacji**: Skonfiguruj następujące ustawienie:
+    - **Wybierz datę rozpoczęcia symulacji**
+  - Sekcja **określania zakresu symulacji**: Skonfiguruj następujące ustawienia:
+    - **Wybierz dni tygodnia, od których mogą rozpoczynać się symulacje**: wybierz co najmniej jeden dzień tygodnia.
+    - **Wprowadź maksymalną liczbę symulacji, które można uruchomić między datami rozpoczęcia i zakończenia**: wprowadź wartość z zakresu od 1 do 10.
+    - **Losowe czasy wysyłania**: wybierz to ustawienie, aby losowo określić czas wysyłania.
+  - Sekcja **końcowa symulacji**: Skonfiguruj następujące ustawienie:
+    - **Wybierz datę zakończenia symulacji**
 
-- **Rozwiązano**: Dostępne są następujące ustawienia:
-  - **Sekcja rozpoczęcia symulowania** : Konfigurowanie następującego ustawienia:
-    - **Wybierz datę, od której mają się zaczynać symulowania**
-  - **Sekcja cyklu** symezyjnego: Konfigurowanie następujących ustawień:
-    - **Wybierz, czy mają być uruchamiane cotygodniowe** czy miesięczne czasy symulacyjne: Wybierz jedną z następujących wartości:
+- **Naprawiono**: Dostępne są następujące ustawienia:
+  - Sekcja **uruchamiania symulacji**: Skonfiguruj następujące ustawienie:
+    - **Wybierz datę rozpoczęcia symulacji**
+  - Sekcja **Cykl symulacji**: Skonfiguruj następujące ustawienia:
+    - **Wybierz, czy chcesz, aby symulacje były uruchamiane co tydzień lub co miesiąc**: Wybierz jedną z następujących wartości:
       - **Co tydzień**: jest to wartość domyślna.
-      - **Co miesiąc**
-    - **Wprowadź, jak często mają** się powtarzać czasy symulacyjne w tygodniach: Wprowadź wartość z od 1 do 99 tygodni.
-    - **Wybierz dzień tygodnia, od którego mają się rozpoczynać symulowania**
-  - **Sekcja zakończenia symulowania** : Wybór jednej z następujących wartości:
-    - **Wybierz datę, do której mają się zakończyć symulowania**
-    - **Wprowadź liczbę wystąpień symulowań**, które mają być uruchamiane przed zakończeniem: Wprowadź wartość z od 1 do 10.
+      - **Miesięczne**
+    - **Wprowadź częstotliwość powtarzania symulacji w tygodniach**: wprowadź wartość z zakresu od 1 do 99 tygodni.
+    - **Wybierz dzień tygodnia, od których mają rozpoczynać się symulacje**
+  - Sekcja **końcowa symulacji**: Zaznacz jedną z następujących wartości:
+    - **Wybierz datę zakończenia symulacji**
+    - **Wprowadź liczbę wystąpień symulacji do uruchomienia przed zakończeniem**: wprowadź wartość z zakresu od 1 do 10.
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
@@ -384,16 +475,16 @@ Po zakończeniu kliknij przycisk **Dalej**.
 
 Na stronie **Szczegóły uruchamiania** skonfiguruj następujące dodatkowe ustawienia automatyzacji:
 
-- **Korzystanie z unikatowych ładowań w ramach automatyzacji**: domyślnie to ustawienie nie jest zaznaczone.
-- **Ustawiać docelowych użytkowników powtarzających** się: to ustawienie nie jest domyślnie zaznaczone. Jeśli ją wybierzesz, skonfiguruj następujące ustawienie, które zostanie wyświetlone:
-  - **Wprowadź maksymalną liczbę zadań, na które** użytkownik może być skierowany w ramach tej automatyzacji: Wprowadź wartość z zakresu od 1 do 10.
-- **Wysyłaj symezyjną** pocztę e-mail na podstawie bieżącego ustawienia strefy czasowej użytkownika z aplikacji Outlook sieci Web: Domyślnie to ustawienie nie jest zaznaczone.
-- **Wyświetl stronę** pochyłana danych w programie **Drive-by** technique: To ustawienie jest dostępne tylko wtedy, gdy wybrano pozycję Adres URL Według dysku na stronie Wybieranie technik **[społecznościowych](#select-one-or-more-social-engineering-techniques)** . Domyślnie to ustawienie jest włączone (![ikona Włącz](../../media/scc-toggle-on.png)).
+- **Używaj unikatowych ładunków w symulacjach w ramach automatyzacji**: domyślnie to ustawienie nie jest zaznaczone.
+- **Cel recydywistów**: domyślnie to ustawienie nie jest zaznaczone. Jeśli ją wybierzesz, skonfiguruj następujące wyświetlone ustawienie:
+  - **Wprowadź maksymalną liczbę elementów docelowych użytkownika w ramach tej automatyzacji**: wprowadź wartość z zakresu od 1 do 10.
+- **Wyślij wiadomość e-mail symulacji na podstawie bieżącego ustawienia strefy czasowej użytkownika z Outlook aplikacji internetowej**: domyślnie to ustawienie nie jest zaznaczone.
+- **Wyświetl stronę z zebranymi danymi śródmiąższowymi techniką drive-by**: to ustawienie jest dostępne tylko wtedy, gdy wybrano pozycję **Dysk po adresie URL** na stronie **[Wybieranie technik inżynierii społecznej](#select-one-or-more-social-engineering-techniques)** . Domyślnie ustawienie jest włączone (![przełącz na ikonę).](../../media/scc-toggle-on.png)
 
-## <a name="review-simulation-automation"></a>Automatyzacja przeglądania symezyjna
+## <a name="review-simulation-automation"></a>Przegląd automatyzacji symulacji
 
-Na stronie **Automatyzacja symezyjna** przeglądu można przejrzeć szczegóły automatyzacji symulacyjnej.
+Na stronie **Przegląd automatyzacji symulacji** możesz przejrzeć szczegóły automatyzacji symulacji.
 
-Możesz wybrać pozycję **Edytuj** w każdej sekcji, aby zmodyfikować ustawienia w sekcji. Możesz też kliknąć przycisk **Wstecz** lub wybrać określoną stronę w kreatorze.
+W każdej sekcji możesz wybrać pozycję **Edytuj** , aby zmodyfikować ustawienia w sekcji. Możesz też kliknąć przycisk **Wstecz** lub wybrać określoną stronę w kreatorze.
 
 Po zakończeniu kliknij pozycję **Prześlij**.

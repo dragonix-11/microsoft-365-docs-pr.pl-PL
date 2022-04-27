@@ -1,8 +1,8 @@
 ---
-title: Wdrażanie uwierzytelniania federeracyjnie o wysokiej dostępności Microsoft 365 na platformie Azure
+title: Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
@@ -18,51 +18,51 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: 'Podsumowanie: Skonfiguruj uwierzytelnianie federowane o wysokiej dostępności dla swojej Microsoft 365 subskrypcji Microsoft Azure.'
-ms.openlocfilehash: 70d597663a1920706dbab164dda05b7142f7fd04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'Podsumowanie: Skonfiguruj uwierzytelnianie federacyjne o wysokiej dostępności dla subskrypcji Microsoft 365 w Microsoft Azure.'
+ms.openlocfilehash: 64fc02e6ecaa400da6d6130cb9ae630279102fcc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983952"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093421"
 ---
-# <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Wdrażanie uwierzytelniania federeracyjnie o wysokiej dostępności Microsoft 365 na platformie Azure
+# <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure
 
-Ten artykuł zawiera linki do instrukcji krok po kroku dotyczących wdrażania uwierzytelniania federacyjne o wysokiej dostępności dla usługi Microsoft Microsoft 365 w usługach infrastruktury platformy Azure z tymi maszynami wirtualnymi:
+Ten artykuł zawiera linki do instrukcji krok po kroku dotyczących wdrażania uwierzytelniania federacyjnego o wysokiej dostępności dla usługi Microsoft Microsoft 365 w usługach infrastruktury platformy Azure z następującymi maszynami wirtualnymi:
   
-- Dwa serwery proxy aplikacji sieci Web
+- Dwa serwery proxy aplikacji internetowej
     
-- Dwa serwery usług feder serverowych Active Directory (AD FS)
+- Dwa serwery Active Directory Federation Services (AD FS)
     
 - Dwa repliki kontrolerów domeny
     
-- Jeden serwer synchronizacji katalogów z uruchomionymi usługami Azure AD Połączenie
+- Jeden serwer synchronizacji katalogów z uruchomioną usługą Azure AD Połączenie
     
 Oto konfiguracja z nazwami zastępczymi dla każdego serwera.
   
-**Uwierzytelnianie federowane o wysokiej dostępności dla infrastruktury Microsoft 365 na platformie Azure**
+**Uwierzytelnianie federacyjne o wysokiej dostępności dla infrastruktury Microsoft 365 na platformie Azure**
 
-![Ostateczna konfiguracja wysokiej dostępności usługi Microsoft 365 uwierzytelniania federacyjne na platformie Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Ostateczna konfiguracja wysokiej dostępności Microsoft 365 infrastruktury uwierzytelniania federacyjnego na platformie Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-Wszystkie maszyny wirtualne znajdują się w jednej lokalnej sieci wirtualnej platformy Azure (VNet). 
+Wszystkie maszyny wirtualne znajdują się w jednej sieci wirtualnej platformy Azure( cross-premises). 
   
 > [!NOTE]
-> Uwierzytelnianie federowane pojedynczych użytkowników nie polega na żadnym zasobie lokalnym. Jeśli jednak połączenie między siedzibą firmy stanie się niedostępne, kontrolery domen w sieci VNet nie będą otrzymywać aktualizacji kont użytkowników i grup w lokalnym programie Usługi domenowe w usłudze Active Directory (AD DS). Aby tego nie zrobić, możesz skonfigurować wysoką dostępność dla połączenia między siedzibą firmy. Aby uzyskać więcej informacji, zobacz [Wysoce dostępna łączność między siedzibą firmy i między siecią VNet.](/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> Uwierzytelnianie federacyjne poszczególnych użytkowników nie opiera się na żadnych zasobach lokalnych. Jeśli jednak połączenie między lokalami stanie się niedostępne, kontrolery domeny w sieci wirtualnej nie otrzymają aktualizacji kont użytkowników i grup wprowadzonych w usługach lokalna usługa Active Directory Domain Services (AD DS). Aby upewnić się, że tak się nie stanie, można skonfigurować wysoką dostępność dla połączenia między środowiskami lokalnymi. Aby uzyskać więcej informacji, zobacz [Highly Available Cross-Premises and VNet-to-VNet Connectivity (Łączność między sieciami wirtualnymi i między sieciami wirtualnymi](/azure/vpn-gateway/vpn-gateway-highlyavailable))
   
-Każda para maszyn wirtualnych dla określonej roli znajduje się w własnym zestawie podsieci i dostępności.
+Każda para maszyn wirtualnych dla określonej roli znajduje się we własnej podsieci i zestawie dostępności.
   
 > [!NOTE]
-> Ponieważ ta sieć VNet jest połączona z siecią lokalną, ta konfiguracja nie obejmuje skrzynki nadawczej ani monitorowania maszyn wirtualnych w podsieci zarządzania. Aby uzyskać więcej informacji, zobacz [Uruchamianie Windows maszyn wirtualnych dla architektury N-warstwy](/azure/guidance/guidance-compute-n-tier-vm). 
+> Ponieważ ta sieć wirtualna jest połączona z siecią lokalną, ta konfiguracja nie obejmuje przesiadki ani monitorowania maszyn wirtualnych w podsieci zarządzania. Aby uzyskać więcej informacji, zobacz [Running Windows VMs for an N-tier architecture (Uruchamianie maszyn wirtualnych Windows dla architektury N-warstwowej](/azure/guidance/guidance-compute-n-tier-vm)). 
   
-Wynikiem tej konfiguracji jest to, że u wszystkich użytkowników usługi Microsoft 365 będzie używane uwierzytelnianie federacyjne, w którym będą oni mogą logować się za pomocą swoich poświadczeń programu AD DS, a nie kont Microsoft 365. W infrastrukturze uwierzytelniania feder sądowego jest używany nadmiarowy zestaw serwerów, które są łatwiej wdrażane w usługach infrastruktury platformy Azure, a nie w twojej lokalnej sieci brzegowej.
+Wynikiem tej konfiguracji jest to, że będziesz mieć uwierzytelnianie federacyjne dla wszystkich użytkowników Microsoft 365, w których mogą oni używać swoich poświadczeń usług AD DS do logowania, a nie konta Microsoft 365. Infrastruktura uwierzytelniania federacyjnego korzysta z nadmiarowego zestawu serwerów, które są łatwiej wdrażane w usługach infrastruktury platformy Azure, a nie w lokalnej sieci brzegowej.
   
-## <a name="bill-of-materials"></a>Rachunki za materiały
+## <a name="bill-of-materials"></a>Rachunek za materiały
 
-Ta konfiguracja podstawowa wymaga następującego zestawu usług i składników platformy Azure:
+Ta konfiguracja punktu odniesienia wymaga następującego zestawu usług i składników platformy Azure:
   
 - Siedem maszyn wirtualnych
     
-- Jedna międzysieciowa sieć wirtualna z czterema podsieciami
+- Jedna lokalna sieć wirtualna z czterema podsieciami
     
 - Cztery grupy zasobów
     
@@ -70,42 +70,42 @@ Ta konfiguracja podstawowa wymaga następującego zestawu usług i składników 
     
 - Jedna subskrypcja platformy Azure
     
-Oto maszyny wirtualne i ich domyślne rozmiary w tej konfiguracji.
+Poniżej przedstawiono maszyny wirtualne i ich domyślne rozmiary dla tej konfiguracji.
   
-|**Element**|**Opis maszyny wirtualnej**|**Galeria platformy Azure**|**Rozmiar domyślny**|
+|**Element**|**Opis maszyny wirtualnej**|**Obraz galerii platformy Azure**|**Rozmiar domyślny**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Pierwszy kontroler domeny  <br/> |Windows Server 2016 Centrum danych  <br/> |D2  <br/> |
-|2.  <br/> |Drugi kontroler domeny  <br/> |Windows Server 2016 Centrum danych  <br/> |D2  <br/> |
-|3.  <br/> |Serwer usługi Azure AD Połączenie usługi  <br/> |Windows Server 2016 Centrum danych  <br/> |D2  <br/> |
-|4.  <br/> |Pierwszy serwer usług AD FS  <br/> |Windows Server 2016 Centrum danych  <br/> |D2  <br/> |
-|5.  <br/> |Drugi serwer usług AD FS  <br/> |Windows Server 2016 Centrum danych  <br/> |D2  <br/> |
-|6.  <br/> |Pierwszy serwer proxy aplikacji sieci Web  <br/> |Windows Server 2016 Centrum danych  <br/> |D2  <br/> |
-|7.  <br/> |Drugi serwer proxy aplikacji sieci Web  <br/> |Windows Server 2016 Centrum danych  <br/> |D2  <br/> |
+|1.  <br/> |Pierwszy kontroler domeny  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|2.  <br/> |Drugi kontroler domeny  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|3.  <br/> |Serwer Połączenie usługi Azure AD  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|4.  <br/> |Pierwszy serwer usług AD FS  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|5.  <br/> |Drugi serwer usług AD FS  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|6.  <br/> |Pierwszy serwer proxy aplikacji internetowej  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|7.  <br/> |Drugi serwer proxy aplikacji internetowej  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
    
-Aby obliczyć szacowane koszty dla tej konfiguracji, zobacz kalkulator [cen platformy Azure](https://azure.microsoft.com/pricing/calculator/)
+Aby obliczyć szacowane koszty tej konfiguracji, zobacz [kalkulator cen platformy Azure](https://azure.microsoft.com/pricing/calculator/)
   
 ## <a name="phases-of-deployment"></a>Fazy wdrażania
 
-To obciążenie można wdrożyć w następujących fazach:
+To obciążenie jest wdrażane w następujących fazach:
   
-- [Etap 1. Konfigurowanie platformy Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Tworzenie grup zasobów, kont magazynu, zestawów dostępności i między siedzibą sieci wirtualnej.
+- [Faza 1. Konfigurowanie platformy Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Tworzenie grup zasobów, kont magazynu, zestawów dostępności i sieci wirtualnej między środowiskami.
     
-- [Etap 2. Konfigurowanie kontrolerów domeny](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Utwórz i skonfiguruj repliki AD DS domeny i serwera synchronizacji katalogów.
+- [Faza 2. Konfigurowanie kontrolerów domeny](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Utwórz i skonfiguruj repliki kontrolerów domeny usług AD DS i serwer synchronizacji katalogów.
     
-- [Etap 3. Konfigurowanie serwerów usług AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Utwórz i skonfiguruj dwa serwery usług AD FS.
+- [Faza 3. Konfigurowanie serwerów usług AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Utwórz i skonfiguruj dwa serwery usług AD FS.
     
-- [Etap 4. Konfigurowanie serwerów proxy aplikacji sieci Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Utwórz i skonfiguruj dwa serwery proxy aplikacji sieci Web.
+- [Faza 4. Konfigurowanie serwerów proxy aplikacji internetowej](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Utwórz i skonfiguruj dwa serwery proxy aplikacji internetowej.
     
-- [Etap 5. Konfigurowanie uwierzytelniania feder służącego do Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Skonfiguruj uwierzytelnianie federowane na Microsoft 365 subskrypcji usługi.
+- [Faza 5. Konfigurowanie uwierzytelniania federacyjnego dla Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Skonfiguruj uwierzytelnianie federacyjne dla subskrypcji Microsoft 365.
     
-W tych artykułach za pomocą przewodnika z preskrybowanymi etapami dla wstępnie zdefiniowanej architektury utworzysz funkcjonalne uwierzytelnianie federacyjne o wysokiej dostępności dla usług Microsoft 365 infrastruktury platformy Azure. Należy pamiętać o następujących kwestiach:
+Te artykuły zawierają opisowy przewodnik fazy po fazie dla wstępnie zdefiniowanej architektury w celu utworzenia funkcjonalnego uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 w usługach infrastruktury platformy Azure. Należy pamiętać o następujących kwestiach:
   
-- Jeśli jesteś doświadczonym implementatorem usług AD FS, zachęcamy do dostosowywania instrukcji w fazach 3 i 4 oraz tworzenia zestawu serwerów, który najlepiej odpowiada Twoim potrzebom.
+- Jeśli jesteś doświadczonym implementatorem usług AD FS, możesz dostosować instrukcje w fazach 3 i 4 i skompilować zestaw serwerów, które najlepiej odpowiadają Twoim potrzebom.
     
-- Jeśli masz już istniejące wdrożenie hybrydowe platformy Azure w chmurze z istniejącą między siedzibą sieci wirtualnej, zachęcamy do dostosowywania się lub pomijania instrukcji w fazach 1 i 2 oraz umieszczać serwery proxy usług AD FS i aplikacji sieci Web w odpowiednich podsieciach.
+- Jeśli masz już istniejące wdrożenie chmury hybrydowej platformy Azure z istniejącą siecią wirtualną między środowiskami lokalnymi, możesz dostosować lub pominąć instrukcje w fazach 1 i 2 oraz umieścić usługi AD FS i serwery proxy aplikacji internetowej w odpowiednich podsieciach.
     
-Aby utworzyć środowisko deweloper/test lub dowód koncepcji tej konfiguracji, zobacz Tożsamość federacyjna dla Twojego Microsoft 365 [deweloper/test.](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+Aby utworzyć środowisko deweloperskie/testowe lub weryfikację tej konfiguracji, zobacz [Tożsamość federacyjna dla środowiska deweloperskiego/testowego Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md).
   
 ## <a name="next-step"></a>Następny krok
 
-Rozpocznij konfigurację tego obciążenia pracą [od fazy 1. Konfigurowanie platformy Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
+Rozpocznij konfigurację tego obciążenia od [fazy 1: konfigurowanie platformy Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 

@@ -15,18 +15,20 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: cc2032c547cbd9c75a73da2f47f7baed21e7438e
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 6822f736cae73d7d4654f8b4310e0e397cffa677
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835936"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077480"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych
+
+> [!IMPORTANT]
+> Klienci, którzy zastosowali aktualizację aparatu microsoft defender z marca 2022 r **. (1.1.19100.5**), mogli napotkać wysokie wykorzystanie zasobów (procesor CPU i/lub pamięć). Firma Microsoft wydała aktualizację (**1.1.19200.5**), która rozwiązuje błędy wprowadzone we wcześniejszej wersji. Zaleca się, aby klienci zaktualizowali tę nową kompilację aparatu antywirusowego (**1.1.19200.5**). Aby upewnić się, że wszystkie problemy z wydajnością są w pełni rozwiązane, zaleca się ponowne uruchomienie maszyn po zastosowaniu aktualizacji. Zobacz [Miesięczne wersje platformy i aparatu](#monthly-platform-and-engine-versions) (w tym artykule).
 
 **Dotyczy:**
 - [plany Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -37,15 +39,15 @@ ms.locfileid: "64835936"
 
 Aktualizowanie Program antywirusowy Microsoft Defender ma kluczowe znaczenie dla zapewnienia, że urządzenia mają najnowszą technologię i funkcje potrzebne do ochrony przed nowym złośliwym oprogramowaniem i technikami ataku. Pamiętaj, aby zaktualizować ochronę antywirusową, nawet jeśli Program antywirusowy Microsoft Defender działa w [trybie pasywnym](microsoft-defender-antivirus-compatibility.md). Istnieją dwa typy aktualizacji związane z aktualizowaniem Program antywirusowy Microsoft Defender:
 
-- Aktualizacje analizy zabezpieczeń
-- Aktualizacje produktów
+- [Aktualizacje analizy zabezpieczeń](#security-intelligence-updates)
+- [Aktualizacje produktów](#product-updates)
 
 > [!TIP]
 > Aby wyświetlić najbardziej aktualny aparat, platformę i datę podpisu, odwiedź [stronę Aktualizacje analizy zabezpieczeń dla Program antywirusowy Microsoft Defender i innych programów chroniących przed złośliwym kodem firmy Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## <a name="security-intelligence-updates"></a>Aktualizacje analizy zabezpieczeń
 
-Program antywirusowy Microsoft Defender korzysta z [ochrony dostarczanej w chmurze](cloud-protection-microsoft-defender-antivirus.md) (nazywanej również usługą Microsoft Advanced Protection Lub MAPS) i okresowo pobiera aktualizacje dynamicznej analizy zabezpieczeń w celu zapewnienia dodatkowej ochrony. Te aktualizacje dynamiczne nie są miejscem regularnych aktualizacji analizy zabezpieczeń za pośrednictwem aktualizacji analizy zabezpieczeń KB2267602.
+Program antywirusowy Microsoft Defender korzysta z [ochrony dostarczanej w chmurze](cloud-protection-microsoft-defender-antivirus.md) (nazywanej również usługą Microsoft Advanced Protection Lub MAPS) i okresowo pobiera aktualizacje dynamicznej analizy zabezpieczeń w celu zapewnienia dodatkowej ochrony. Te aktualizacje dynamiczne nie są umieszczane w regularnych aktualizacjach analizy zabezpieczeń za pośrednictwem aktualizacji analizy zabezpieczeń KB2267602.
 
 > [!NOTE]
 > Aktualizacje są wydawane w następujących kb/s:
@@ -88,6 +90,29 @@ Wszystkie nasze aktualizacje zawierają
 - Ulepszenia integracji (chmura, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>*AKTUALIZACJA* z marca 2022 r. (platforma: 4.18.2203.5 | Silnik: 1.1.19200.5)</summary>
+
+*Klienci, którzy zastosowali aktualizację aparatu microsoft defender z marca 2022 r **. (1.1.19100.5**), mogli napotkać wysokie wykorzystanie zasobów (procesor CPU i/lub pamięć). Firma Microsoft wydała aktualizację (**1.1.19200.5**), która rozwiązuje błędy wprowadzone we wcześniejszej wersji. Zaleca się, aby klienci zaktualizowali tę nową kompilację aparatu antywirusowego (**1.1.19200.5**). Aby upewnić się, że wszystkie problemy z wydajnością są w pełni rozwiązane, zaleca się ponowne uruchomienie maszyn po zastosowaniu aktualizacji.*
+
+&ensp;Wersja aktualizacji analizy zabezpieczeń: **1.363.817.0**<br/>
+&ensp;Data wydania: **22 kwietnia 2022 r**.<br/>
+&ensp;Platforma: **4.18.2203.5**<br/>
+&ensp;Silnik: **1.1.19200.5**<br/>
+&ensp;Faza pomocy technicznej: **Aktualizacje zabezpieczeń i krytyczne**<br/>
+
+Wersja aparatu: 1.1.19200.5 <br/>
+Wersja aktualizacji analizy zabezpieczeń: 1.363.817.0<br/>
+
+### <a name="whats-new"></a>Co nowego
+
+- Rozwiązuje problemy z wysokim wykorzystaniem zasobów (procesorem CPU i/lub pamięcią) związane z wcześniejszą aktualizacją aparatu usługi Microsoft Defender z marca 2022 r. (1.1.19100.5)
+
+### <a name="known-issues"></a>Znane problemy
+
+Brak znanych problemów
+
+<br/><br/>
+</details><details>
 <summary>Marzec-2022 (Platforma: 4.18.2203.5 | Silnik: 1.1.19100.5)</summary>
 
 &ensp;Wersja aktualizacji analizy zabezpieczeń: **1.361.1449.0**<br/>
@@ -160,7 +185,7 @@ Wersja aktualizacji analizy zabezpieczeń: 1.357.8.0 <br/>
 - Ulepszenia ochrony przed naruszeniami
 - Zastąpione `ScanScheduleTime` nowym `ScanScheduleOffest` poleceniem cmdlet w [poleceniu Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady konfigurują liczbę minut po północy w celu przeprowadzenia zaplanowanego skanowania.
 - `-ServiceHealthReportInterval` Dodano ustawienie [Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady konfigurują interwał czasu (w minutach) w celu przeprowadzenia zaplanowanego skanowania.
-- `AllowSwitchToAsyncInspection` Dodano ustawienie [Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady umożliwiają optymalizację wydajności, która umożliwia synchronicznie kontrolowane przepływy sieciowe, przełączanie się na inspekcję asynchroniczną po sprawdzeniu i zweryfikowaniu.
+- `AllowSwitchToAsyncInspection` Dodano ustawienie [Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady umożliwiają optymalizację wydajności, która umożliwia synchronicznie kontrolowane przepływy sieciowe, przełączenie się do inspekcji asynchronicznej po sprawdzeniu i zweryfikowaniu.
 - Analizator wydajności aktualizacje wersji 2: dodano zdalną obsługę programu PowerShell i programu PowerShell 7.x. Zobacz [Analizator wydajności, aby uzyskać Program antywirusowy Microsoft Defender](tune-performance-defender-antivirus.md).
 - Usunięto potencjalne usterki zduplikowanych pakietów w sterowniku systemu inspekcji sieci Program antywirusowy Microsoft Defender.
 
@@ -191,7 +216,7 @@ Wersja aparatu: 1.1.18800.4 Wersja aktualizacji analizy zabezpieczeń: 1.355.2.0
 
 - Zwiększona wydajność użycia procesora CPU w przypadku niektórych intensywnych scenariuszy na serwerach Exchange
 - Dodano nowe pola stanu sterowania urządzeniami w obszarze Get-MpComputerStatus w module programu PowerShell usługi Defender. Aby uzyskać więcej informacji, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md) .
-- Usunięto usterkę polegającą na tym, że `SharedSignatureRoot` nie można było usunąć wartości po ustawieniu za pomocą programu PowerShell
+- Usunięto usterkę polegającą na tym, że `SharedSignatureRoot` nie można było usunąć wartości po ustawieniu przy użyciu programu PowerShell
 - Usunięto usterkę polegającą na tym, że nie można było włączyć [ochrony przed naruszeniami](prevent-changes-to-security-settings-with-tamper-protection.md), mimo że Ochrona punktu końcowego w usłudze Microsoft Defender wskazuje, że ochrona przed naruszeniami została włączona
 - Dodano obsługę i poprawki błędów do analizatora wydajności dla narzędzia Program antywirusowy Microsoft Defender. Aby uzyskać więcej informacji, zobacz [Analizator wydajności dla Program antywirusowy Microsoft Defender](tune-performance-defender-antivirus.md).   
    - Dodano obsługę środowiska ISE programu PowerShell dla `New-MpPerformanceRecording`

@@ -3,7 +3,7 @@ title: Migracja skrzynki pocztowej między dzierżawami
 description: Jak przenosić skrzynki pocztowe między dzierżawami Microsoft 365 lub Office 365.
 ms.author: kvice
 author: kelleyvice-msft
-manager: Laurawi
+manager: scotv
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 00ded796cb0fc8878b3eee3f656afac426cd0f35
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 8cbaee1e4f0cd3bae519c939f2f619343bf996bd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973998"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101078"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migracja skrzynki pocztowej między dzierżawami (wersja zapoznawcza)
 

@@ -1,14 +1,14 @@
 ---
-title: Zaloguj się w Microsoft 365
+title: Zaloguj się do Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -22,32 +22,43 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Zaloguj się, aby Microsoft 365. Chroń swoją firmę, praktykę lub kampanię przed zagrożeniami bezpieczeństwa bezpieczeństwa poczty e-mail, danych i komunikacji.
-ms.openlocfilehash: da371abd17906ea53242c8679cf1d3c4f9b69861
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Zaloguj się do Microsoft 365. Chroń swoją firmę, praktykę lub kampanię przed zagrożeniami cyberbezpieczeństwa, pocztą e-mail, danymi i komunikacją.
+ms.openlocfilehash: 4203abe638c15978ac4acd753fdeb6a83ba5920d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634058"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099856"
 ---
-# <a name="sign-in-to-microsoft-365-business-premium"></a>Zaloguj się w Microsoft 365 Business Premium
+# <a name="sign-in-to-microsoft-365-business-premium"></a>Zaloguj się do Microsoft 365 Business Premium
 
-## <a name="for-business-or-campaign-admins"></a>Dla administratorów kampanii lub firm
+## <a name="for-business-or-campaign-admins"></a>Dla administratorów biznesowych lub kampanii
 
-Jeśli masz konto w Microsoft 365, jesteś administratorem Microsoft 365 administratorem. Aby się zalogować:
+Jeśli zarejestrujesz się w Microsoft 365 dla kampanii (lub Microsoft 365 Business Premium), jesteś administratorem Microsoft 365 (nazywanym również administratorem globalnym). Oto jak się zalogować:
 
-1. Znajdź nazwę użytkownika i hasło wysłane przez nas na adres e-mail, który nam podaliśmy w kroku 2 procedury [procedury rejestracji](m365-campaigns-sign-up.md#steps-to-sign-up).
+1. Znajdź nazwę użytkownika i hasło, które wysłaliśmy na adres e-mail użyty podczas [rejestrowania się w Microsoft 365 kampanii](m365-campaigns-sign-up.md).
 
-2. W przeglądarce przejdź do strony Centrum administracyjne platformy Microsoft 365 .<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>
+2. W przeglądarce przejdź do Centrum administracyjne platformy Microsoft 365 pod adresem <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-3. Wpisz swoją nazwę użytkownika i hasło. Wybierz pozycję **Zaloguj**.
+3. Wpisz nazwę użytkownika i hasło. Wybierz pozycję **Zaloguj**.
 
-4. W prawym górnym rogu strony znajdź **kontrolkę Podgląd** . Wybierz **pozycję Podgląd wł** ., aby można było używać wszystkich kontrolek opisanych w tece Ochrona w sposób nierówny [dla kampanii](m365-campaigns-security-overview.md).
+4. W prawym górnym rogu strony znajdź kontrolkę **Podgląd.** Wybierz **pozycję Wersja zapoznawcza,** aby użyć wszystkich kontrolek opisanych w sekcji [Ochrona przed wzrostem poziomu w kampanii](m365-campaigns-security-overview.md).
 
 ## <a name="for-staff"></a>Dla personelu
 
-Konfigurowanie personelu zgodnie z opisem w [tece Dodawanie użytkowników](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json)
+Użytkownicy, którzy zostali dodaeni do subskrypcji Microsoft 365 for Campaigns (lub Microsoft 365 Business Premium), mogą się zalogować, wykonując następujące kroki:
 
-Możesz również zresetować i ponownie wysłać hasła na **stronie Dodawanie** użytkowników.
+1. Przejdź do witryny <a href="https://office.com" target="_blank">https://Office.com</a>.
 
-Wszyscy pracownicy mogą zalogować się w .<a href="https://office.com" target="_blank">https://Office.com</a>
+2. Zaloguj się przy użyciu nazwy użytkownika i hasła dla konta. Użytkownicy będą mieć te informacje w wiadomości e-mail, która powinna zostać odebrana po dodaniu ich jako użytkowników. Jeśli nie mogą znaleźć wiadomości e-mail, zobacz [Udostępnianie zaproszenia e-mail, ale użytkownik nie otrzymał wiadomości e-mail](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
+
+> [!TIP]
+> Podaj pracownikom link do [przewodnika szybkiej konfiguracji pracownika](../admin/setup/employee-quick-setup.md). Przewodnik przeprowadzi ich przez proces logowania, uzyskiwania Office aplikacji oraz zapisywania, kopiowania i udostępniania plików.
+
+## <a name="next-steps"></a>Następne kroki
+
+1. [Dostosowywanie strony logowania za pomocą powiadomienia o ochronie prywatności i zgody](m365-customize-sign-in.md)
+
+2. [Korzystanie z procesu z przewodnikiem na potrzeby konfiguracji podstawowej](m365bp-setup.md#use-the-guided-process-for-basic-setup)
+
+3. [Skonfiguruj swoje możliwości zabezpieczeń](m365bp-security-overview.md).

@@ -2,8 +2,8 @@
 title: Trenowanie tagowania i istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Zapoznaj się z krokami tagowania, a następnie pracuj z próbką szkoleniową zawierającą 40 plików na etapie trenowania istotności w usłudze eDiscovery (Premium).
-ms.openlocfilehash: 9078bf36e1434cad0362c4584b5c61fd49e86c14
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3e2deb66658aacc8fdd50f2dea5ba082afb8a5e6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996685"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090390"
 ---
 # <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>Trenowanie tagowania i istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 

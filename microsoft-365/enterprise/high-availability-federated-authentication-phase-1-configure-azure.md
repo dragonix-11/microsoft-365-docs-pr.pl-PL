@@ -1,8 +1,8 @@
 ---
-title: Wysoka dostępność uwierzytelniania federegonowego (etap 1) Konfigurowanie platformy Azure
+title: Uwierzytelnianie federacyjne o wysokiej dostępności — faza 1 Konfigurowanie platformy Azure
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
@@ -13,114 +13,114 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Podsumowanie: skonfiguruj infrastrukturę Microsoft Azure, aby hostować uwierzytelnianie federowane o wysokiej dostępności dla Microsoft 365.'
-ms.openlocfilehash: 35666baf98b45419f41a0078729ac5a5a6fab995
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+description: 'Podsumowanie: Skonfiguruj infrastrukturę Microsoft Azure do hostowania uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365.'
+ms.openlocfilehash: f83aa494fcdead8f29810dea06193934b8ef26b9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63013877"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098389"
 ---
-# <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Wysoka dostępność uwierzytelniania federeracyjna Etap 1. Konfigurowanie platformy Azure
+# <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Uwierzytelnianie federacyjne o wysokiej dostępności — faza 1: konfigurowanie platformy Azure
 
-W tej fazie utworzysz grupy zasobów, sieć wirtualną (VNet) i zestawy dostępności na platformie Azure, które będą hostować maszyny wirtualne w fazach 2, 3 i 4. Należy zakończyć ten etap przed przejściem do [fazy 2. Konfigurowanie kontrolerów domeny](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Zobacz [Wdrażanie uwierzytelniania feder](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) służącego do wysokiej dostępności Microsoft 365 na platformie Azure, aby uzyskać informacje o wszystkich fazach.
+W tej fazie utworzysz grupy zasobów, sieć wirtualną (VNet) i zestawy dostępności na platformie Azure, które będą hostem maszyn wirtualnych w fazach 2, 3 i 4. Należy ukończyć tę fazę przed przejściem do [fazy 2: Konfigurowanie kontrolerów domeny](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Zobacz [Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) dla wszystkich faz.
   
-Platforma Azure musi być aprowowana przy użyciu tych podstawowych składników:
+Platforma Azure musi być aprowizowana przy użyciu następujących podstawowych składników:
   
 - Grupy zasobów
     
-- Sieć wirtualna platformy Azure (VNet) z podsieciami do hostowania maszyn wirtualnych platformy Azure
+- Sieć wirtualna platformy Azure z podsieciami obejmującymi maszyny wirtualne platformy Azure
     
-- Grupy zabezpieczeń sieci w celu wykonania izolacji podsieci
+- Sieciowe grupy zabezpieczeń do przeprowadzania izolacji podsieci
     
 - Zestawy dostępności
     
 ## <a name="configure-azure-components"></a>Konfigurowanie składników platformy Azure
 
-Przed rozpoczęciem konfigurowania składników platformy Azure wypełnij poniższe tabele. Aby pomóc w procedurach konfigurowania platformy Azure, wydrukuj tę sekcję i zanotuj wymagane informacje lub skopiuj tę sekcję do dokumentu i wypełnij ją. Aby uzyskać ustawienia sieci VNet, wpisz tabela V.
+Przed rozpoczęciem konfigurowania składników platformy Azure wypełnij poniższe tabele. Aby ułatwić procedurę konfigurowania platformy Azure, wydrukuj tę sekcję i zapisz potrzebne informacje lub skopiuj tę sekcję do dokumentu i wypełnij ją. Aby uzyskać informacje o ustawieniach sieci wirtualnej, wypełnij tabelę V.
   
 |**Element**|**Ustawienie konfiguracji**|**Opis**|**Wartość**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nazwa sieci VNet  <br/> |Nazwa do przypisania do sieci VNet (na przykład FedAuthNet).  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Lokalizacja sieci VNet  <br/> |Regionalne centrum danych platformy Azure, które będzie zawierać sieć wirtualną.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Adres IP urządzenia SIECI VPN  <br/> |Publiczny adres IPv4 interfejsu urządzenia VPN w Internecie.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet address space  <br/> |Przestrzeń adresów dla sieci wirtualnej. We współpracy z działem IT ustal tę przestrzeń adresową.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Klucz udostępniony IPsec  <br/> |32-znakowy losowy ciąg alfanumeryczny używany do uwierzytelniania obu stron połączenia VPN między witrynami. We współpracy z działem IT lub działem zabezpieczeń ustalisz tę wartość klucza. Ewentualnie zobacz [Tworzenie ciągu losowego dla wstępnie](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx) współużytego klucza IPsec.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Nazwa sieci wirtualnej  <br/> |Nazwa do przypisania do sieci wirtualnej (przykład FedAuthNet).  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Lokalizacja sieci wirtualnej  <br/> |Regionalne centrum danych platformy Azure, które będzie zawierać sieć wirtualną.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Adres IP urządzenia sieci VPN  <br/> |Publiczny adres IPv4 interfejsu urządzenia sieci VPN w Internecie.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Przestrzeń adresowa sieci wirtualnej  <br/> |Przestrzeń adresowa sieci wirtualnej. Skontaktuj się z działem IT, aby określić tę przestrzeń adresów.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Klucz udostępniony protokołu IPsec  <br/> |32-znakowy, alfanumeryczny ciąg, który będzie używany do uwierzytelniania obu stron połączenia sieci VPN typu lokacja-lokacja. Skontaktuj się z działem IT lub działu zabezpieczeń, aby określić tę wartość klucza. Alternatywnie zobacz [Create a random string for an IPsec preshared key (Tworzenie losowego ciągu dla klucza wstępnego udostępniania protokołu IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)).  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
    
- **Tabela V: Konfiguracja między lokalną siecią wirtualną**
+ **Tabela V: konfiguracja między lokalnymi sieciami wirtualnymi**
   
-Następnie wypełnij tabelę S, aby uzyskać informacje o podsieci tego rozwiązania. Wszystkie spacje adresów powinny mieć format Routing międzydomenami (CIDR, Classless Interdomain Routing), nazywany także formatem prefiksu sieciowego. Przykład: 10.24.64.0/20.
+Następnie wypełnij tabelę S dla podsieci tego rozwiązania. Wszystkie przestrzenie adresowe powinny być w formacie CIDR (Classless Interdomain Routing), znanym również jako format prefiksu sieci. Przykładem jest 10.24.64.0/20.
   
-W przypadku pierwszych trzech podsieci określ nazwę i pojedynczą przestrzeń adresów IP na podstawie wirtualnej przestrzeni adresów sieciowych. Dla podsieci bramy określ 27-bitową przestrzeń adresową (o długości prefiksu /27) dla podsieci bramy platformy Azure z następującymi:
+W przypadku pierwszych trzech podsieci określ nazwę i pojedynczą przestrzeń adresową IP na podstawie przestrzeni adresowej sieci wirtualnej. W podsieci bramy określ 27-bitową przestrzeń adresową (o długości prefiksu /27) dla podsieci bramy platformy Azure z następującymi elementami:
   
-1. Ustaw bity zmiennych w przestrzeni adresów w net. VNet na 1 ( do bitów używanych przez podsieci bramy), a następnie dla pozostałych bitów ustaw wartość 0.
+1. Ustaw zmienne bity w przestrzeni adresowej sieci wirtualnej na 1, do bitów używanych przez podsieć bramy, a następnie ustaw pozostałe bity na 0.
     
-2. Przekonwertuj bity wynikowe na dziesiętne i wyraś je jako spację adresową o długości prefiksu ustawionej na rozmiar podsieci bramy.
+2. Przekonwertuj wynikowe bity na dziesiętne i wyświęć je jako przestrzeń adresową z długością prefiksu ustawioną na rozmiar podsieci bramy.
     
-Zobacz [Kalkulator przestrzeni adresów dla podsieci bramy platformy Azure](address-space-calculator-for-azure-gateway-subnets.md) dla bloku poleceń programu PowerShell i aplikacji konsoli języka C# lub Python, która wykonuje to obliczenie za Ciebie.
+Zobacz [Kalkulator przestrzeni adresowej dla podsieci bramy platformy Azure](address-space-calculator-for-azure-gateway-subnets.md) dla bloku poleceń programu PowerShell oraz aplikacji konsolowej języka C# lub Python, która wykonuje to obliczenie za Ciebie.
   
-We współpracy z działem IT ustal te odstępy między adresami od wirtualnej przestrzeni adresów sieciowych.
+Skontaktuj się z działem IT, aby określić te przestrzenie adresowe z przestrzeni adresowej sieci wirtualnej.
   
-|**Element**|**Nazwa podsieci**|**Obszar adresu podsieci**|**Cel**|
+|**Element**|**Nazwa podsieci**|**Przestrzeń adresowa podsieci**|**Celu**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |Podsieć używana przez Usługi domenowe w usłudze Active Directory domeny (AD DS) i maszyn wirtualnych serwera synchronizacji katalogów.  <br/> |
-|2.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |Podsieci używane przez maszyny wirtualne usług AD FS.  <br/> |
-|3.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |Podsieci używane przez maszyny wirtualne proxy aplikacji sieci Web.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |Podsieci używane przez maszyny wirtualne bramy Azure.  <br/> |
+|1.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |Podsieć używana przez kontroler domeny Active Directory Domain Services (AD DS) i maszyny wirtualne serwera synchronizacji katalogów.  <br/> |
+|2.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |Podsieć używana przez maszyny wirtualne usług AD FS.  <br/> |
+|3.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |Podsieć używana przez maszyny wirtualne serwera proxy aplikacji internetowej.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |Podsieć używana przez maszyny wirtualne bramy platformy Azure.  <br/> |
    
  **Tabela S: podsieci w sieci wirtualnej**
   
-Następnie wypełnij pole Tabela I w przypadku statycznych adresów IP przypisanych do maszyn wirtualnych i wystąpień równoważenia obciążenia.
+Następnie wypełnij tabelę I dla statycznych adresów IP przypisanych do maszyn wirtualnych i wystąpień modułu równoważenia obciążenia.
   
-|**Element**|**Cel**|**Adres IP w podsieci**|**Wartość**|
+|**Element**|**Celu**|**Adres IP w podsieci**|**Wartość**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Statyczny adres IP pierwszego kontrolera domeny  <br/> |Czwarty możliwy adres IP dla przestrzeni adresów w podsieci zdefiniowanej w pozycji 1 tabeli S.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Statyczny adres IP drugiego kontrolera domeny  <br/> |Piąty możliwy adres IP dla przestrzeni adresów podsieci zdefiniowanej w pozycji 1 tabeli S.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Statyczny adres IP serwera synchronizacji katalogów  <br/> |Szósty możliwy adres IP dla przestrzeni adresów podsieci zdefiniowanej w pozycji 1 tabeli S.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Statyczny adres IP wewnętrznego równoważenia obciążenia dla serwerów usług AD FS  <br/> |Czwarty możliwy adres IP dla przestrzeni adresów w podsieci zdefiniowanej w pozycji 2 tabeli S.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Statyczny adres IP pierwszego serwera usług AD FS  <br/> |Piąty możliwy adres IP dla przestrzeni adresów podsieci zdefiniowanej w pozycji 2 tabeli S.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |Statyczny adres IP drugiego serwera usług AD FS  <br/> |Szósty możliwy adres IP dla przestrzeni adresów podsieci zdefiniowanej w pozycji 2 tabeli S.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |Statyczny adres IP serwera proxy pierwszej aplikacji sieci Web  <br/> |Czwarty możliwy adres IP dla przestrzeni adresów w podsieci zdefiniowanej w pozycji 3 tabeli S.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |Statyczny adres IP serwera proxy drugiej aplikacji sieci Web  <br/> |Piąty możliwy adres IP dla przestrzeni adresów podsieci zdefiniowanej w pozycji 3 tabeli S.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Statyczny adres IP pierwszego kontrolera domeny  <br/> |Czwarty możliwy adres IP dla przestrzeni adresowej podsieci zdefiniowanej w elemencie 1 tabeli S.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Statyczny adres IP drugiego kontrolera domeny  <br/> |Piąty możliwy adres IP dla przestrzeni adresowej podsieci zdefiniowanej w elemencie 1 tabeli S.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Statyczny adres IP serwera synchronizacji katalogów  <br/> |Szósty możliwy adres IP przestrzeni adresowej podsieci zdefiniowanej w elemencie 1 tabeli S.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Statyczny adres IP wewnętrznego modułu równoważenia obciążenia dla serwerów usług AD FS  <br/> |Czwarty możliwy adres IP dla przestrzeni adresowej podsieci zdefiniowanej w elemencie 2 tabeli S.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Statyczny adres IP pierwszego serwera usług AD FS  <br/> |Piąty możliwy adres IP przestrzeni adresowej podsieci zdefiniowanej w elemencie 2 tabeli S.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |Statyczny adres IP drugiego serwera usług AD FS  <br/> |Szósty możliwy adres IP przestrzeni adresowej podsieci zdefiniowanej w elemencie 2 tabeli S.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |Statyczny adres IP pierwszego serwera proxy aplikacji internetowej  <br/> |Czwarty możliwy adres IP dla przestrzeni adresowej podsieci zdefiniowanej w elemencie 3 tabeli S.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |Statyczny adres IP drugiego serwera proxy aplikacji internetowej  <br/> |Piąty możliwy adres IP przestrzeni adresowej podsieci zdefiniowanej w elemencie 3 tabeli S.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
    
- **Tabela I: Statyczne adresy IP w sieci wirtualnej**
+ **Tabela I: statyczne adresy IP w sieci wirtualnej**
   
-W przypadku dwóch serwerów dns (Domain Name System) w Twojej sieci lokalnej, których chcesz używać podczas wstępnego konfigurowania kontrolerów domeny w Twojej sieci wirtualnej, wypełnij tabelę D. Aby określić tę listę, we współpracy z działem IT.
+W przypadku dwóch serwerów systemu nazw domen (DNS) w sieci lokalnej, których chcesz użyć podczas początkowego konfigurowania kontrolerów domeny w sieci wirtualnej, wypełnij tabelę D. Skontaktuj się z działem IT, aby określić tę listę.
   
 |**Element**|**Przyjazna nazwa serwera DNS**|**Adres IP serwera DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tabela D: Lokalne serwery DNS**
   
-Aby rozsyłać pakiety z sieci lokalnej do sieci Twojej organizacji przez połączenie VPN między witrynami, musisz skonfigurować sieć wirtualną z siecią lokalną z listą spacji adresów (w notacji CIDR) dla wszystkich dostępnych lokalizacji w sieci lokalnej organizacji. Lista spacji adresów definiująca sieć lokalną musi być unikatowa i nie może zachodzić na przestrzeń adresów używaną w innych sieciach wirtualnych lub innych sieciach lokalnych.
+Aby kierować pakiety z sieci międzylokacyjnej do sieci organizacji przez połączenie sieci VPN typu lokacja-lokacja, należy skonfigurować sieć wirtualną z siecią lokalną zawierającą listę przestrzeni adresowych (w notacji CIDR) dla wszystkich dostępnych lokalizacji w sieci lokalnej organizacji. Lista przestrzeni adresowych definiujących sieć lokalną musi być unikatowa i nie może pokrywać się z przestrzenią adresową używaną w innych sieciach wirtualnych lub innych sieciach lokalnych.
   
-W przypadku zestawu lokalnych spacji adresów sieciowych wypełnij pole Tabela L. Pamiętaj, że na liście znajdują się trzy puste wpisy, ale zazwyczaj potrzebujesz więcej. We współpracy z działem IT ustal tę listę spacji adresowych.
+W przypadku zestawu przestrzeni adresowych sieci lokalnej wypełnij tabelę L. Pamiętaj, że na liście znajdują się trzy puste wpisy, ale zazwyczaj potrzebujesz więcej. Skontaktuj się z działem IT, aby określić tę listę przestrzeni adresowych.
   
-|**Element**|**Lokalna przestrzeń adresów sieciowych**|
+|**Element**|**Przestrzeń adresowa sieci lokalnej**|
 |:-----|:-----|
-|1.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tabela L: Prefiksy adresów dla sieci lokalnej**
   
-Teraz zacznij budować infrastrukturę platformy Azure, aby hostować uwierzytelnianie federowane na Microsoft 365.
+Teraz zacznijmy tworzyć infrastrukturę platformy Azure do hostowania uwierzytelniania federacyjnego na potrzeby Microsoft 365.
   
 > [!NOTE]
-> W poniższych zestawach poleceń jest dostępna najnowsza wersja Azure PowerShell. Zobacz [Wprowadzenie do Azure PowerShell](/powershell/azure/get-started-azureps). 
+> Poniższe zestawy poleceń używają najnowszej wersji Azure PowerShell. Zobacz [Wprowadzenie z Azure PowerShell](/powershell/azure/get-started-azureps). 
   
-Najpierw uruchom monit Azure PowerShell i zaloguj się do swojego konta.
+Najpierw uruchom Azure PowerShell monit i zaloguj się do swojego konta.
   
 ```powershell
 Connect-AzAccount
 ```
 
 > [!TIP]
-> Aby wygenerować gotowe bloki poleceń programu PowerShell na podstawie ustawień niestandardowych, użyj tego Microsoft Excel [konfiguracji programu PowerShell](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> Aby wygenerować gotowe do uruchomienia bloki poleceń programu PowerShell na podstawie ustawień niestandardowych, użyj tego [Microsoft Excel skoroszytu konfiguracji](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
-Uzyskaj nazwę subskrypcji za pomocą następującego polecenia.
+Pobierz nazwę subskrypcji przy użyciu następującego polecenia.
   
 ```powershell
 Get-AzSubscription | Sort Name | Select Name
@@ -132,7 +132,7 @@ W przypadku starszych wersji Azure PowerShell użyj tego polecenia.
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Ustaw subskrypcję platformy Azure. Zamień wszystkie cudzysłowy, łącznie ze \< and > znakami, na poprawną nazwę.
+Ustaw subskrypcję platformy Azure. Zastąp wszystkie elementy w cudzysłowie, w tym \< and > znaki, poprawną nazwą.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -145,18 +145,18 @@ Następnie utwórz nowe grupy zasobów. Aby określić unikatowy zestaw nazw gru
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-Wypełnij następującą tabelę, aby uzyskać zestaw unikatowych nazw grup zasobów.
+W poniższej tabeli podaj zestaw unikatowych nazw grup zasobów.
   
-|**Element**|**Nazwa grupy zasobów**|**Cel**|
+|**Element**|**Nazwa grupy zasobów**|**Celu**|
 |:-----|:-----|:-----|
-|1.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |Kontrolery domeny  <br/> |
-|2.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |Serwery usług AD FS  <br/> |
-|3.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |Serwery proxy aplikacji sieci Web  <br/> |
-|4.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |Elementy infrastruktury  <br/> |
+|1.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |Kontrolery domeny  <br/> |
+|2.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |Serwery usług AD FS  <br/> |
+|3.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |Serwery proxy aplikacji internetowej  <br/> |
+|4.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |Elementy infrastruktury  <br/> |
    
  **Tabela R: grupy zasobów**
   
-Za pomocą tych poleceń utwórz nowe grupy zasobów.
+Utwórz nowe grupy zasobów przy użyciu tych poleceń.
   
 ```powershell
 $locName="<an Azure location, such as West US>"
@@ -170,7 +170,7 @@ $rgName="<Table R - Item 4 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-Następnie należy utworzyć sieć wirtualną platformy Azure i jej podsieci.
+Następnie utworzysz sieć wirtualną platformy Azure i jej podsieci.
   
 ```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -199,7 +199,7 @@ New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locNa
 
 ```
 
-Następnie należy utworzyć grupy zabezpieczeń sieciowych dla każdej podsieci z maszynami wirtualnymi. Aby wykonać izolacji podsieci, możesz dodać reguły dla określonych typów ruchu dozwolonych lub odrzuconych do grupy zabezpieczeń sieciowych w podsieci.
+Następnie utworzysz sieciowe grupy zabezpieczeń dla każdej podsieci, która ma maszyny wirtualne. Aby przeprowadzić izolację podsieci, można dodać reguły dla określonych typów ruchu dozwolonego lub niedozwolonego do sieciowej grupy zabezpieczeń podsieci.
   
 ```powershell
 # Create network security groups
@@ -219,7 +219,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -Addre
 $vnet | Set-AzVirtualNetwork
 ```
 
-Następnie użyj tych poleceń, aby utworzyć bramy dla połączenia VPN między witrynami.
+Następnie użyj tych poleceń, aby utworzyć bramy dla połączenia sieci VPN typu lokacja-lokacja.
   
 ```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -253,37 +253,37 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> Uwierzytelnianie federowane pojedynczych użytkowników nie polega na żadnym zasobie lokalnym. Jednak jeśli to połączenie VPN między witrynami stanie się niedostępne, kontrolery domen w witrynie VNet nie będą otrzymywać aktualizacji kont użytkowników ani grup w lokalnym środowisku Usługi domenowe w usłudze Active Directory. Aby tego nie zrobić, możesz skonfigurować wysoką dostępność połączenia VPN między witrynami. Aby uzyskać więcej informacji, zobacz [Wysoce dostępna łączność między siedzibą firmy i między siecią VNet.](/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> Uwierzytelnianie federacyjne poszczególnych użytkowników nie opiera się na żadnych zasobach lokalnych. Jeśli jednak to połączenie sieci VPN typu lokacja-lokacja stanie się niedostępne, kontrolery domeny w sieci wirtualnej nie będą otrzymywać aktualizacji kont użytkowników i grup w usługach lokalna usługa Active Directory Domain Services. Aby upewnić się, że tak się nie stanie, można skonfigurować wysoką dostępność dla połączenia sieci VPN typu lokacja-lokacja. Aby uzyskać więcej informacji, zobacz [Highly Available Cross-Premises and VNet-to-VNet Connectivity (Łączność między sieciami wirtualnymi i między sieciami wirtualnymi](/azure/vpn-gateway/vpn-gateway-highlyavailable))
   
-Następnie zanotuj publiczny adres IPv4 bramy Azure VPN dla swojej sieci wirtualnej, wyświetlaąc to polecenie:
+Następnie zapisz publiczny adres IPv4 bramy sieci VPN platformy Azure dla sieci wirtualnej z poziomu wyświetlania tego polecenia:
   
 ```powershell
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Następnie skonfiguruj lokalne urządzenie VPN, aby łączyło się z bramą azure VPN. Aby uzyskać więcej informacji, [zobacz Konfigurowanie urządzenia VPN](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Następnie skonfiguruj lokalne urządzenie sieci VPN w celu nawiązania połączenia z bramą sieci VPN platformy Azure. Aby uzyskać więcej informacji, zobacz [Konfigurowanie urządzenia sieci VPN](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
-Aby skonfigurować lokalne urządzenie VPN, potrzebne są następujące elementy:
+Do skonfigurowania lokalnego urządzenia sieci VPN potrzebne są następujące elementy:
   
-- Publiczny adres IPv4 bramy Azure VPN.
+- Publiczny adres IPv4 bramy sieci VPN platformy Azure.
     
-- Wstępnie udostępniony klucz IPsec dla połączenia VPN między witrynami (tabela V — element 5 — kolumna Wartość).
+- Klucz wstępny protokołu IPsec dla połączenia sieci VPN typu lokacja-lokacja (tabela V — element 5 — kolumna wartość).
     
-Następnie upewnij się, że obszar adresów sieci wirtualnej jest osiągalny z Twojej sieci lokalnej. Zazwyczaj odbywa się to przez dodanie trasy odpowiadającej wirtualnej przestrzeni adresów sieciowej do urządzenia VPN, a następnie reklamowanie tej trasy do pozostałej infrastruktury routingu w sieci Twojej organizacji. We współpracy z działem IT ustal, jak to zrobić.
+Następnie upewnij się, że przestrzeń adresowa sieci wirtualnej jest osiągalna z sieci lokalnej. Zwykle odbywa się to przez dodanie trasy odpowiadającej przestrzeni adresowej sieci wirtualnej do urządzenia sieci VPN, a następnie reklamowanie tej trasy do pozostałej części infrastruktury routingu sieci organizacji. Skontaktuj się z działem IT, aby ustalić, jak to zrobić.
   
 Następnie zdefiniuj nazwy trzech zestawów dostępności. Wypełnij tabelę A. 
   
-|**Element**|**Cel**|**Nazwa zestawu dostępności**|
+|**Element**|**Celu**|**Nazwa zestawu dostępności**|
 |:-----|:-----|:-----|
-|1.  <br/> |Kontrolery domeny  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Serwery usług AD FS  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Serwery proxy aplikacji sieci Web  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Kontrolery domeny  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Serwery usług AD FS  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Serwery proxy aplikacji internetowej  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tabela A: zestawy dostępności**
   
 Te nazwy będą potrzebne podczas tworzenia maszyn wirtualnych w fazach 2, 3 i 4.
   
-Utwórz nowe zestawy dostępności za pomocą tych Azure PowerShell poleceń.
+Utwórz nowe zestawy dostępności przy użyciu tych poleceń Azure PowerShell.
   
 ```powershell
 $locName="<the Azure location for your new resource group>"
@@ -298,22 +298,22 @@ $avName="<Table A - Item 3 - Availability set name column>"
 New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 ```
 
-Jest to konfiguracja wynikowa pomyślnego ukończenia tego etapu.
+Jest to konfiguracja wynikająca z pomyślnego ukończenia tej fazy.
   
-**Etap 1. Infrastruktura platformy Azure na poziomie wysokiej dostępności uwierzytelniania feder sądowego Microsoft 365**
+**Faza 1. Infrastruktura platformy Azure na potrzeby uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365**
 
-![Etap 1. wysokiej dostępności uwierzytelniania Microsoft 365 federacji na platformie Azure z infrastrukturą platformy Azure.](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Faza 1 wysokiej dostępności Microsoft 365 uwierzytelniania federacyjnego na platformie Azure z infrastrukturą platformy Azure.](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Następny krok
 
-Etap [2. Konfigurowanie kontrolerów domeny](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) do kontynuowania konfiguracji tego obciążenia pracą.
+Użyj [fazy 2. Konfigurowanie kontrolerów domeny](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) w celu kontynuowania konfiguracji tego obciążenia.
   
 ## <a name="see-also"></a>Zobacz też
 
-[Wdrażanie uwierzytelniania federeracyjnie o wysokiej dostępności Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
+[Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Tożsamość federacyjna dla Twojego Microsoft 365 deweloper/środowisko testowania](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Tożsamość federacyjna dla środowiska deweloperskiego/testowego Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 rozwiązania i architektury](../solutions/index.yml)
+[Centrum rozwiązań i architektury platformy Microsoft 365](../solutions/index.yml)
 
-[Opis Microsoft 365 modeli tożsamości](deploy-identity-solution-identity-model.md)
+[Omówienie modeli tożsamości Microsoft 365](deploy-identity-solution-identity-model.md)

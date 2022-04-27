@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3a67d73475301096df8be691f2c5e0dc6db23db8
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 77766c153582f519aa0ba9853d18c216092747bc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862197"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092310"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -81,8 +81,8 @@ Usługa Defender for Endpoint korzysta z następującej kombinacji technologii w
 > - Ochrona punktu końcowego w usłudze Microsoft Defender przedstawiono wiodące w branży funkcje optyki i wykrywania w niedawnej ocenie MITRE. Przeczytaj: [Szczegółowe informacje z oceny opartej na&MITRE ATT](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 
->[!IMPORTANT]
->Możliwości na platformach innych niż Windows mogą różnić się od tych dla Windows. Aby uzyskać więcej informacji na temat możliwości dostępnych dla platform innych niż Windows, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender platform innych niż Windows](/security/defender-endpoint/non-windows).
+> [!IMPORTANT]
+> Możliwości na platformach innych niż Windows mogą różnić się od tych dla Windows. Aby uzyskać więcej informacji na temat możliwości dostępnych dla platform innych niż Windows, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender platform innych niż Windows](/microsoft-365/security/defender-endpoint/non-windows).
 
 <a name="tvm"></a>
 
@@ -153,7 +153,7 @@ Usługa Defender for Endpoint bezpośrednio integruje się z różnymi rozwiąza
 
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)**
 
-Dzięki Microsoft 365 Defender usługa Defender for Endpoint i różne rozwiązania zabezpieczeń firmy Microsoft tworzą ujednolicony pakiet ochrony przedsiębiorstwa przed i po naruszeniu zabezpieczeń, który natywnie integruje się między punktami końcowymi, tożsamościami, pocztą e-mail i aplikacjami w celu wykrywania, zapobiegania, badania i automatycznego reagowania na zaawansowane ataki.
+Dzięki Microsoft 365 Defender, usłudze Defender for Endpoint i różnym rozwiązaniom zabezpieczeń firmy Microsoft należy utworzyć ujednolicony pakiet ochrony przedsiębiorstwa przed naruszeniami zabezpieczeń, który natywnie integruje się między punktami końcowymi, tożsamościami, pocztą e-mail i aplikacjami w celu wykrywania, zapobiegania, badania i automatycznego reagowania na zaawansowane ataki.
 
 
 ## <a name="training-for-security-analysts"></a>Szkolenia dla analityków zabezpieczeń

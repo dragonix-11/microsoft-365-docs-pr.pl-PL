@@ -16,12 +16,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować bloki na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ea87a29d93c43b89bcfb482d185bd4b397dcc5b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862461"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100660"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Dodawanie blokad na liście dozwolonych/zablokowanych dzierżaw
 
@@ -115,9 +115,11 @@ ms.locfileid: "64862461"
    - **Typ fałszowania**: wybierz jedną z następujących wartości:
      - **Wewnętrzne**: sfałszowany nadawca znajduje się w domenie należącej do Organizacji ( [akceptowana domena](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **Zewnętrzne**: sfałszowany nadawca znajduje się w domenie zewnętrznej.
-   - **Akcja**: wybierz pozycję **Zezwalaj** lub **Blokuj**.
+   - **Akcja**: wybierz pozycję **Blokuj**.
 
 4. Po zakończeniu kliknij przycisk **Dodaj**.
+> [!NOTE]
+> Wiadomości e-mail od tych nadawców zostaną zablokowane jako *phish*. 
 
 ## <a name="use-powershell"></a>Korzystanie z programu PowerShell
 

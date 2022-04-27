@@ -2,8 +2,8 @@
 title: Przeszukaj dziennik inspekcji za pomocą skryptu programu PowerShell
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Użyj skryptu programu PowerShell, który uruchamia polecenie cmdlet Search-UnifiedAuditLog w Exchange Online, aby przeszukać dziennik inspekcji. Ten skrypt jest zoptymalizowany pod kątem zwracania dużego zestawu rekordów inspekcji przy każdym uruchomieniu. Skrypt eksportuje te rekordy do pliku CSV, który można wyświetlić lub przekształcić przy użyciu Power Query w Excel.
-ms.openlocfilehash: 00edbeb18bc882cf9113e80321b29d84ed43114c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8799f1a4ddf2ef7dd536ccb3e6e70a4b731b4cd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000251"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100858"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Przeszukaj dziennik inspekcji za pomocą skryptu programu PowerShell
 

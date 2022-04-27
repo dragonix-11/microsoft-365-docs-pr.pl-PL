@@ -2,8 +2,8 @@
 title: Moduł kodowania predykcyjnego dla eDiscovery (Premium) (wersja zapoznawcza)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Nowy moduł kodowania predykcyjnego w usłudze eDiscovery (Premium) używa uczenia maszynowego do analizowania elementów w zestawie przeglądów w celu przewidywania elementów, które są istotne dla twojego przypadku lub badania.
-ms.openlocfilehash: 7d45c995fafe5b802713e101ad36a362ab77fa37
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cc0db62b4ec7d632dae70347aaba5644138bcdce
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998997"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100770"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>Dowiedz się więcej o kodowaniu predykcyjnym w usłudze eDiscovery (Premium) (wersja zapoznawcza)
 

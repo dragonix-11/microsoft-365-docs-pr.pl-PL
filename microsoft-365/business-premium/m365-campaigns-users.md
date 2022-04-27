@@ -1,14 +1,14 @@
 ---
-title: Jak te zalecenia dotyczące zabezpieczeń wpływają na użytkowników
+title: Wpływ tych zaleceń dotyczących zabezpieczeń na użytkowników
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,68 +23,68 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Dowiedz się, jak te zalecenia dotyczące zabezpieczeń Microsoft 365 Business Premium wpływają na twoich użytkowników i chronią Twoje dane.
-ms.openlocfilehash: f1c327badefcd7f5d7f1728489a8388e7e7925e8
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Dowiedz się, jak te zalecenia dotyczące zabezpieczeń dla Microsoft 365 Business Premium wpływają na użytkowników i chronią dane.
+ms.openlocfilehash: 202df778e74fb0f14a92b572df977088f8319595
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635158"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099966"
 ---
-# <a name="how-these-security-recommendations-affect-your-users"></a>Jak te zalecenia dotyczące zabezpieczeń wpływają na użytkowników
+# <a name="how-these-security-recommendations-affect-your-users"></a>Wpływ tych zaleceń dotyczących zabezpieczeń na użytkowników
 
-Zalecenia dotyczące zabezpieczeń dla Microsoft 365 tym rozwiązaniu znacznie utrudniają hakerom uzyskanie dostępu do Twojego środowiska. Kompromis jest taki, że użytkownicy muszą wiedzieć, jak należy pracować w tym bezpieczniejszym środowisku. Rozumiemy, że wymagana jest odrobina cierpliwości, ale warto zachować ochronę Twojej organizacji.
+Zalecenia dotyczące zabezpieczeń dla Microsoft 365 w tym rozwiązaniu znacznie utrudniają hakerom uzyskanie dostępu do środowiska. Kompromis polega na tym, że użytkownicy muszą wiedzieć, jak pracować w tym bezpieczniejszym środowisku. Rozumiemy, że wymagana jest dodatkowa cierpliwość, ale warto chronić organizację.
 
-![Ilustracja sumuje poniżej najważniejsze punkty dla telefonów iPhone, urządzeń z systemem Android, komputerów Mac, Windows 10, udostępniania i kluczowego personelu.](../media/M365-democracy-Users_900px.png)
+![Ilustracja przedstawiająca najważniejsze punkty poniżej dotyczące telefonów iPhone, urządzeń z systemem Android, komputerów Mac, Windows 10, udostępniania i kluczowego personelu.](../media/M365-democracy-Users_900px.png)
 
-## <a name="use-secure-email-practices"></a>Korzystanie z bezpiecznych rozwiązań w zakresie poczty e-mail
+## <a name="use-secure-email-practices"></a>Korzystanie z rozwiązań dotyczących bezpiecznej poczty e-mail
 
-Wszyscy użytkownicy powinni wiedzieć o tych praktykach poczty e-mail i korzystać z nich, aby zapewnić bezpieczeństwo poczty e-mail:
+Wszyscy użytkownicy powinni wiedzieć o tych rozwiązaniach dotyczących poczty e-mail i korzystać z nich, aby zapewnić bezpieczeństwo poczty e-mail:
 
-- Skonfiguruj pocztę e-mail, aby korzystać z uwierzytelniania wieloskładnikowego za pomocą aplikacji uwierzytelniania.
+- Skonfiguruj pocztę e-mail, aby używać uwierzytelniania wieloskładnikowego z aplikacją authenticator.
 
-- Weryfikowanie legalnych wiadomości e-mail i wyszukiwanie porad dotyczących bezpieczeństwa z poziomu zaawansowanej ochrony przed wyłudzaniem informacji (Ochrona usługi Office 365 w usłudze Defender).
+- Zweryfikuj uzasadnione wiadomości e-mail i poszukaj wskazówek dotyczących bezpieczeństwa z zaawansowanej ochrony przed wyłudzaniem informacji (Ochrona usługi Office 365 w usłudze Defender).
 
-- Otwieranie tylko bezpiecznych linków i załączników, co zostało zweryfikowane przez Sejf i załączniki Sejf załączników.
+- Otwórz tylko bezpieczne linki i załączniki zweryfikowane przez Sejf Linki i załączniki Sejf.
 
-Dowiedz się więcej o [uwierzytelnianiu wieloskładnikowym](m365bp-multifactor-authentication.md) oraz [wyłudzaniu informacji i innych atakach](m365-campaigns-phishing-and-attacks.md).
+Dowiedz się więcej o [uwierzytelnianiu wieloskładnikowym](m365bp-multifactor-authentication.md) , [wyłudzaniu informacji i innych atakach](avoid-phishing-and-attacks.md).
 
-Pobierz [infografikę](m365-campaigns-protect-campaign-infographic.md) z poradami dla Ciebie i członków Zespołu.
+Pobierz [infografikę](m365-campaigns-protect-campaign-infographic.md) ze wskazówkami dla Ciebie i członków twojego zespołu.
 
 ## <a name="set-up-iphones-and-android-devices"></a>Konfigurowanie telefonów iPhone i urządzeń z systemem Android
 
-Wszyscy użytkownicy, których dodasz do środowiska, będą musieli trochę potrwać, aby skonfigurować telefony [iPhone i](../business/set-up-mobile-devices.md) urządzenia z systemem Android do bezpiecznej pracy:
+Aby [skonfigurować urządzenia iPhone i urządzenia](../business/set-up-mobile-devices.md) z systemem Android w celu bezpiecznego działania, wystarczy kilka minut:
 
-- Skonfiguruj urządzenia do korzystania z uwierzytelniania wieloskładnikowego za pomocą aplikacji uwierzytelniania.
+- Skonfiguruj urządzenia do korzystania z uwierzytelniania wieloskładnikowego z aplikacją authenticator.
 
-- Używaj aplikacji firmy Microsoft dla urządzeń przenośnych, Outlook, Word, OneDrive i innych aplikacji firmy Microsoft ze sklepu z aplikacjami. Natywne aplikacje poczty, które są dostępne na telefonach iPhone i urządzeniach z systemem Android, nie są obsługiwane. 
+- Korzystaj z aplikacji mobilnych firmy Microsoft, w tym Outlook Mobile, Word, OneDrive i innych aplikacji firmy Microsoft ze sklepu z aplikacjami. Natywne aplikacje poczty dołączone do telefonów iPhone i urządzeń z systemem Android nie są obsługiwane. 
 
-- Wymagaj numeru PIN, aby użytkownicy odblokowali swoje urządzenia.
+- Wymagaj numeru PIN, aby użytkownicy mogli odblokować swoje urządzenie.
 
-Po skonfigurowaniu tych ustawień użytkownicy będą monitować o korzystanie z aplikacji Authenticator podczas uzyskiwania dostępu do danych organizacji na tych urządzeniach, w tym w przypadku poczty.
+Po skonfigurowaniu tych ustawień użytkownicy będą monitować o użycie aplikacji authenticator podczas uzyskiwania dostępu do danych organizacji na tych urządzeniach, w tym poczty e-mail.
 
-## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Dbaj o to, aby komputery MAC z systemem BYOD Windows 10 komputerach pc
+## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Zachowaj świeżość komputerów Mac i Windows 10 BYOD
 
-Ważne jest również, aby użytkownicy dbali o to, aby ich podstawowe urządzenie służbowe było aktualne:
+Ważne jest również, aby użytkownicy zapewniali aktualną aktualną pracę podstawowego urządzenia roboczego:
 
-- Zainstaluj najnowsze wersje aplikacji klasycznych Office, a po wyświetleniu monitu zadbaj o ich odświeżone wersje.
+- Zainstaluj najnowsze wersje Office aplikacji klasycznych i po wyświetleniu monitu zachowaj je na bieżąco z aktualizacjami.
 
-- Bądź na informacji o aktualizacjach systemu operacyjnego, takich jak aktualizacje Windows systemu operacyjnego.
+- Bądź na bieżąco z aktualizacjami systemu operacyjnego, takimi jak aktualizacje Windows.
 
-W [przypadku urządzeń Windows 10 i Mac](m365bp-protect-pcs-macs.md) użytkownicy są odpowiedzialni za zapewnianie obsługi podstawowych funkcji zabezpieczeń.
+W przypadku [niezarządzanych urządzeń Windows 10 i Mac](m365bp-protect-pcs-macs.md) użytkownicy są odpowiedzialni za zapewnienie włączenia podstawowych funkcji zabezpieczeń.
 
 **Włączanie podstawowych funkcji zabezpieczeń na urządzeniach BYOD Windows 10 i Mac**
 
 |**Windows 10**|**Mac**|
 |:-----|:------|
-|Włączanie ochrony urządzeń za pomocą funkcji BitLocker<p><p> Upewnij Windows Defender, że jest wł. <p>Włączanie zapory Windows sieciowej| Szyfrowanie dysku komputera Mac przy użyciu funkcji FileVault <p><p>Korzystanie z niezawodnego oprogramowania antywirusowego <p>Włączanie ochrony zapór|
+|Włączanie ochrony urządzenia za pomocą funkcji BitLocker<p><p> Upewnij się, że Windows Defender pozostaje włączona <p>Włączanie zapory Windows| Szyfrowanie dysku mac przy użyciu programu FileVault <p><p>Używanie niezawodnego oprogramowania antywirusowego <p>Włączanie ochrony zapory|
 
-Aby dowiedzieć się więcej o tych zaleceniach, zobacz [Ochrona konta i urządzeń przed hakerami i złośliwym oprogramowaniem](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
+Aby dowiedzieć się więcej na temat tych zaleceń, zobacz [Ochrona konta i urządzeń przed hakerami i złośliwym oprogramowaniem](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Współpraca przy Microsoft Teams, OneDrive, SharePoint Online i innych narzędziach
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Współpraca przy użyciu Microsoft Teams, OneDrive, SharePoint Online i innych narzędzi
 
-Użytkownicy mogą mieć kusić udostępnianie i przechowywanie plików organizacji w miejscach innych niż Microsoft 365. Microsoft 365 ułatwia bezpieczną współpracę i udostępnianie. Możesz udostępniać [pliki i klipy wideo](share-files-and-videos.md) bezpośrednio Microsoft Teams, OneDrive, Stream, a nawet z poziomu pliku. Udostępnianie z poziomu tych narzędzi pomaga zapobiegać wyciekom danych. Możesz dodać dodatkową ochronę do danych poufnych, aby uniemożliwić udostępnianie poza organizacją.
+Użytkownicy mogą być skłonni do udostępniania i przechowywania plików organizacji w miejscach innych niż Microsoft 365. Microsoft 365 ułatwia bezpieczną współpracę i udostępnianie. Pliki [i filmy wideo można udostępniać](share-files-and-videos.md) bezpośrednio z Microsoft Teams, OneDrive, streamu, a nawet z poziomu pliku. Udostępnianie z poziomu tych narzędzi pomaga zapobiec wyciekowi danych. Możesz dodać dodatkową ochronę danych poufnych, aby zapobiec udostępnianiu poza organizacją.
 
-## <a name="set-up-managed-windows-10-devices"></a>Konfigurowanie zarządzanych Windows 10 przenośnych
+## <a name="set-up-managed-windows-10-devices"></a>Konfigurowanie zarządzanych urządzeń Windows 10
 
-Zalecamy, aby najważniejszych członków personelu korzystało z nowych Windows 10, które zarządzasz. Pokażemy Ci, jak [zarządzać tymi urządzeniami i je zabezpieczać](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Dzięki temu członkowie personelu, którzy są największą wartością docelową hakerów, otrzymują największą ochronę.
+Zalecamy, aby najważniejsi pracownicy korzystali ze świeżo nabytych Windows 10 zarządzanych urządzeń. Pokażemy, jak [zarządzać tymi urządzeniami i zabezpieczać je](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Dzięki temu pracownicy, którzy są celem o najwyższej wartości dla hakerów, otrzymają największą ochronę.

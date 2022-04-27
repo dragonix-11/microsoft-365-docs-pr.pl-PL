@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse zapoznaj się ze stroną Windows 365 (komputery w chmurze).
-ms.openlocfilehash: 843e241c796d626ecca2180b0bce1372059701a2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 325fe39c144227052c966b81a8a2109a07fb0cf2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022894"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100286"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Omówienie strony Windows 365 (komputery w chmurze) w Microsoft 365 Lighthouse  
   
@@ -57,22 +57,25 @@ Na karcie Wszystkie komputery w chmurze na kolorowym pasku adnotacji liczbowej j
 Wszystkie komputery w chmurze i ich stan aprowizacji można wyświetlić na liście poniżej paska adnotacji. Podano następujące informacje:
 
 - **Nazwa komputera w chmurze:** Nazwa przypisana do komputera w chmurze.
-- **Dzierżawy:** Dzierżawa klienta, w której aprowizowane jest komputer w chmurze.
-- **Nazwa urządzenia:** Intune nazwę urządzenia — unikatowy identyfikator komputera w chmurze.
-- **Typ komputera:** Typ komputera w chmurze zgodnie ze standardowymi jednostkami SKU.
-- **Stan:** Stan aprowizacji komputera w chmurze.
 - **Użytkownika:** Użytkownik, dla którego aprowizowano lub próbowano aprowizować komputer w chmurze.
+- **Nazwa urządzenia:** Intune nazwę urządzenia — unikatowy identyfikator komputera w chmurze.
+- **Dzierżawy:** Dzierżawa klienta, w której aprowizowane jest komputer w chmurze.
+- **Stan:** Stan aprowizacji komputera w chmurze.
+- **Typ licencji:** Enterprise lub Business.
+- **Specyfikacje:** Konfiguracja sprzętu komputera w chmurze.
 
 Aby sprawdzić, które dzierżawy mają komputery w chmurze o określonym stanie aprowizacji, wybierz ten stan na pasku count-annotation, aby odfiltrować listę. Aby wyświetlić stan aprowizacji komputera w chmurze dla co najmniej jednej konkretnej dzierżawy klienta, użyj menu rozwijanego **Dzierżawy** , aby odfiltrować listę.
 
-Wybierz dowolny komputer z chmurą na liście, aby wyświetlić więcej szczegółów. Jeśli chcesz podjąć działania na komputerze z chmurą, możesz wyświetlić zasady aprowizacji dzierżawy i szczegóły urządzenia w Microsoft Endpoint Manager.
+Wybierz dowolny komputer z chmurą na liście, aby wyświetlić więcej szczegółów i wykonać akcje zarządzania, takie jak:
+- **Ponownie uruchomić:** Wybierz, aby ponownie uruchomić urządzenie. 
+- **Ponowne aprowizowanie:** Wybierz, aby zresetować urządzenie. Zasady aprowizacji można również wyświetlić w linku Microsoft Endpoint Manager.
+- **Zmienić nazwę:** Wybierz, aby zmienić nazwę urządzenia przypisanego do użytkownika.
 
 Karta Wszystkie komputery w chmurze zawiera również następujące opcje:
 
-- **Odświeżania:** Wybierz, aby pobrać najbardziej aktualne dane komputera w chmurze.
 - **Eksportu:** Wybierz, aby wyeksportować dane komputera w chmurze do pliku Excel wartości rozdzielanych przecinkami (.csv).
+- **Odświeżania:** Wybierz, aby pobrać najbardziej aktualne dane komputera w chmurze.
 - **Szukaj:** Wprowadź słowa kluczowe, aby szybko zlokalizować określony komputer w chmurze na liście.
-- **Ponów próbę aprowizacji:** Wybierz od 1 do 20 komputerów w chmurze z listy ze stanem **Aprowizowanie nie powiodło się**, a następnie wybierz tę opcję, aby ponowić próbę aprowizacji dla tych komputerów w chmurze.
 
 Aby wyświetlić pełną listę stanów aprowizacji komputerów w chmurze i ich znaczenie, zobacz [Omówienie zarządzania urządzeniami dla komputerów w chmurze](/windows-365/enterprise/device-management-overview#column-details) w bibliotece dokumentacji Windows 365.
 
@@ -80,7 +83,7 @@ Aby wyświetlić pełną listę stanów aprowizacji komputerów w chmurze i ich 
 
 ## <a name="azure-network-connections-tab"></a>Karta Połączenia sieciowe platformy Azure
 
-Na karcie Połączenia sieciowe platformy Azure na kolorowym pasku z adnotacją liczbową jest wyświetlana całkowita liczba połączeń sieciowych platformy Azure we wszystkich dzierżawach klientów, które mają następujące stany: Pomyślne połączenia i Nieudane połączenia.
+Na karcie Połączenia sieciowe platformy Azure na kolorowym pasku adnotacji liczbowej jest wyświetlana całkowita liczba połączeń sieciowych platformy Azure we wszystkich dzierżawach klientów, którzy mają Windows 365 Enterprise komputery w chmurze i mogą mieć następujące stany: Pomyślne połączenia i Nieudane połączenia.
 
 Na liście poniżej paska zliczanie adnotacji można wyświetlić wszystkie połączenia sieciowe platformy Azure i ich stan połączenia.
 
@@ -90,8 +93,8 @@ Jeśli musisz podjąć działania lub rozwiązać problemy z połączeniem na li
 
 Karta Połączenia sieciowe platformy Azure zawiera również następujące opcje:
 
-- **Odświeżania:** Wybierz, aby pobrać najbardziej aktualne dane połączenia.
 - **Eksportu:** Wybierz, aby wyeksportować dane połączenia do pliku Excel wartości rozdzielanych przecinkami (.csv).
+- **Odświeżania:** Wybierz, aby pobrać najbardziej aktualne dane połączenia.
 - **Szukaj:** Wprowadź słowa kluczowe, aby szybko zlokalizować określone połączenie.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Zrzut ekranu przedstawiający kartę Połączenia sieciowe platformy Azure." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::

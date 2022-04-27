@@ -2,8 +2,8 @@
 title: Archiwizowanie danych z platformy CellTrust SL2 do Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik danych CellTrust SL2 i użyć go do importowania i archiwizowania danych komunikacji mobilnej.
-ms.openlocfilehash: a4cbfc9dccd2541de0a9dca1a3791d5f213aa73d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 0ac1137c8b6ee2d2267421c80adbbf65eaf9e5b7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996399"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100902"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiwizowanie danych z celltrust sl2 do Microsoft 365
 

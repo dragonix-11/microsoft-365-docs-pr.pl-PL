@@ -2,8 +2,8 @@
 title: Zatwierdź kolekcję roboczą w zestawie do przeglądu
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Po utworzeniu i iteracji w kolekcji roboczej można zatwierdzić ją w zestawie przeglądów. Po zatwierdzeniu kolekcji roboczej zebrane elementy są dodawane do zestawu przeglądów w tym przypadku. Gdy zebrane elementy znajdują się w zestawie przeglądów, można je analizować, przeglądać i eksportować.
-ms.openlocfilehash: f908d17d804487cd5e7e93085e418f9a94915c8e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c798981d485b6128e76ea3f0c0fbf189b4f9634a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997939"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090478"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>Zatwierdzanie kolekcji roboczej do zestawu przeglądów w usłudze eDiscovery (Premium)
 

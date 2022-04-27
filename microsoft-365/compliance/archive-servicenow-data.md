@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych usługi ServiceNow w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych usługi ServiceNow z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 3a8859fad4b15d0e9cf4ce50701da64c2c6100b6
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 745637e72e8a9def06926a2b97bf9aa68f70bfc3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992683"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078302"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>Konfigurowanie łącznika do archiwizowania danych usługi ServiceNow
 

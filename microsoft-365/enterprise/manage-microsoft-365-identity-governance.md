@@ -1,8 +1,8 @@
 ---
-title: Zarządzanie Microsoft 365 tożsamością
+title: Zarządzanie Microsoft 365 zarządzaniem tożsamościami
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
@@ -21,44 +21,44 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Dowiedz się, jak korzystać z Microsoft 365 zarządzania tożsamościami.
-ms.openlocfilehash: 35b2092412ddbeacd5d6962e110de1931b2d0f4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak używać funkcji zarządzania tożsamościami Microsoft 365.
+ms.openlocfilehash: f4fcfed9fcb978e40c3bf7c0e7a35eb717fee343
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62977610"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091176"
 ---
-# <a name="manage-microsoft-365-identity-governance"></a>Zarządzanie Microsoft 365 tożsamością
+# <a name="manage-microsoft-365-identity-governance"></a>Zarządzanie Microsoft 365 zarządzaniem tożsamościami
 
-Zarządzanie tożsamością to przede wszystkim ochrona, monitorowanie i inspekcja dostępu do krytycznych zasobów przy jednoczesnym zapewnieniu produktywności pracowników. Na przykład za pomocą zarządzania tożsamością można zapewnić odpowiednim użytkownikom odpowiedni dostęp do odpowiednich zasobów i określić, czy dostęp do nich zmieni się z czasem.
+Zarządzanie tożsamościami polega na ochronie, monitorowaniu i inspekcji dostępu do krytycznych zasobów przy jednoczesnym zapewnieniu produktywności pracowników. Na przykład w przypadku zarządzania tożsamościami można upewnić się, że odpowiedni użytkownicy mają odpowiedni dostęp do odpowiednich zasobów i określić, czy ten dostęp zmienia się wraz z upływem czasu.
 
-Aby uzyskać więcej informacji, zobacz omówienie zarządzania [tożsamością w Azure Active Directory (Azure AD).](/azure/active-directory/governance/identity-governance-overview)
+Aby uzyskać więcej informacji, zobacz [omówienie zarządzania tożsamościami dla Azure Active Directory (Azure AD)](/azure/active-directory/governance/identity-governance-overview).
 
-## <a name="set-up-azure-ad-access-reviews"></a>Konfigurowanie recenzji dostępu do usługi Azure AD
+## <a name="set-up-azure-ad-access-reviews"></a>Konfigurowanie przeglądów dostępu do usługi Azure AD
 
-Recenzje dostępu do usługi Azure AD umożliwiają sprawdzenie dostępu użytkownika, aby upewnić się, że tylko odpowiednie osoby nadal mają dostęp. Przykład:
+Przeglądy dostępu usługi Azure AD umożliwiają przeglądanie dostępu użytkownika w celu zapewnienia ciągłego dostępu tylko odpowiednim osobom. Przykład:
 
-- Gdy nowy pracownik dołącza do Twojej organizacji, musisz mieć pewność, że ma odpowiedni dostęp do produktywnej pracy.
-- Gdy pracownik przechodzi do innych zespołów, lokalizacji lub działów, musisz upewnić się, że dostęp tego pracownika do poprzednich zespołów, lokalizacji lub działów zostanie w razie potrzeby usunięty.
-- Gdy ten pracownik lub gość odchodzi z organizacji, musisz upewnić się, że jego dostęp został usunięty.
+- Gdy nowy pracownik dołączy do Twojej organizacji, musisz mieć pewność, że ma on odpowiedni dostęp, aby zapewnić produktywność.
+- Gdy pracownik przechodzi do innych zespołów, lokalizacji lub działów, musisz upewnić się, że ich dostęp do poprzednich zespołów, lokalizacji lub działów zostanie usunięty w razie potrzeby.
+- Gdy ten pracownik lub gość opuści organizację, musisz upewnić się, że jego dostęp zostanie usunięty.
 
-Jest to szczególnie ważne, jeśli organizacja podlega inspekcji zabezpieczeń w celu określenia, czy konta użytkowników mają zbyt duży dostęp, co może skutkować naruszeń przepisów branżowych lub regionalnych.
+Jest to szczególnie ważne, jeśli organizacja podlega audytom zabezpieczeń w celu ustalenia, czy konta użytkowników mają zbyt duży dostęp, co może skutkować karami, jeśli naruszają przepisy branżowe lub regionalne.
 
-Aby uzyskać więcej informacji, zobacz [omówienie recenzji dostępu](/azure/active-directory/governance/access-reviews-overview).
+Aby uzyskać więcej informacji, zobacz [przegląd przeglądów dostępu](/azure/active-directory/governance/access-reviews-overview).
 
-Zobacz te artykuły, aby skonfigurować różne typy recenzji dostępu:
+Zobacz następujące artykuły, aby skonfigurować różne typy przeglądów dostępu:
 
 - [Grupy i aplikacje](/azure/active-directory/governance/create-access-review)
-- [Role w usłudze Azure AD](/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [Role usługi Azure AD](/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 - [Role zasobów platformy Azure](/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
-## <a name="set-up-azure-ad-entitlement-management"></a>Konfigurowanie zarządzania uprawnieniami do usługi Azure AD
+## <a name="set-up-azure-ad-entitlement-management"></a>Konfigurowanie zarządzania uprawnieniami usługi Azure AD
 
-Zarządzanie uprawnieniami do usługi Azure AD umożliwia zarządzanie cyklem życia tożsamości i dostępu w skali przez automatyzację przepływów pracy żądań dostępu, uzyskiwania dostępu do zadań, recenzowania i wygasania.
+Zarządzanie uprawnieniami usługi Azure AD w usłudze Wiht umożliwia zarządzanie cyklem życia tożsamości i dostępu na dużą skalę przez automatyzację przepływów pracy żądań dostępu, przypisań dostępu, przeglądów i wygasania.
 
-Aby wykonać swoją pracę, pracownicy muszą mieć dostęp do różnych grup, aplikacji i witryn. Zarządzanie tym dostępem może być trudne, ponieważ zmieniają się wymagania, dodawane są nowe aplikacje lub użytkownicy muszą mieć dodatkowe prawa dostępu. Jeśli współpracujesz z innymi organizacjami, możesz nie wiedzieć, kto w tej organizacji potrzebuje dostępu do zasobów Organizacji, a użytkownicy zewnętrzni nie będą wiedzieć, jakich aplikacji, grup lub witryn używa Twoja organizacja.
+Pracownicy potrzebują dostępu do różnych grup, aplikacji i witryn, aby wykonywać swoje zadania. Zarządzanie tym dostępem może być trudne, ponieważ zmieniają się wymagania, dodawane są nowe aplikacje lub użytkownicy potrzebują dodatkowych praw dostępu. Podczas współpracy z innymi organizacjami możesz nie wiedzieć, kto w innej organizacji potrzebuje dostępu do zasobów organizacji, a użytkownicy zewnętrzni nie będą wiedzieć, z jakich aplikacji, grup lub witryn korzysta twoja organizacja.
 
-Zarządzanie uprawnieniami do usługi Azure AD może ułatwić wydajniejsze zarządzanie dostępem do grup, aplikacji i witryn SharePoint użytkowników wewnętrznych i zewnętrznych.
+Zarządzanie uprawnieniami usługi Azure AD może pomóc w wydajniejszym zarządzaniu dostępem do grup, aplikacji i witryn SharePoint dla użytkowników wewnętrznych i zewnętrznych.
  
-Aby uzyskać więcej informacji, zobacz [omówienie zarządzania uprawnieniami do usługi Azure AD](/azure/active-directory/governance/entitlement-management-overview).
+Aby uzyskać więcej informacji, zobacz [omówienie zarządzania uprawnieniami usługi Azure AD](/azure/active-directory/governance/entitlement-management-overview).
