@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych Jive w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych Jive z usługi Veritas w Microsoft 365. Ten łącznik umożliwia archiwizowanie danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania do zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: 4fd5d7bbecd6fc6b0bfeeb90c0102ef30b67bdfe
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 97dd400184c8d8e592d8ae8495354b3dfa367b34
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000493"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095999"
 ---
 # <a name="set-up-a-connector-to-archive-jive-data"></a>Konfigurowanie łącznika do archiwizowania danych Jive
 

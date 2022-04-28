@@ -2,8 +2,8 @@
 title: Rozwiązania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usługa Microsoft Purview oferuje trzy narzędzia zbierania elektronicznych materiałów dowodowych, których można użyć do wyszukiwania i eksportowania zawartości znajdującej się w różnych lokalizacjach, takich jak skrzynki pocztowe Exchange, witryny SharePoint i OneDrive dla Firm, Grupy Microsoft 365, Microsoft Teams i Skype dla firm konwersacje. eDiscovery (Standard) i eDiscovery (Premium) udostępniają wiele dodatkowych funkcji ułatwiających zarządzanie badaniami.
-ms.openlocfilehash: 4c146e2eea1c0c462491444102365cb5c611e78d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f5660b8a31cad45b110e6e32450dc03b75d5f533
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001153"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095867"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Rozwiązania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview
 
@@ -52,7 +52,7 @@ Usługa Microsoft Purview oferuje trzy rozwiązania zbierania elektronicznych ma
 
 W poniższej tabeli porównano kluczowe możliwości dostępne w funkcjach wyszukiwania zawartości, eDiscovery (Standard) i eDiscovery (Premium).
 
-|Możliwości|Wyszukiwanie zawartości|Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa|Zbieranie elektronicznych materiałów dowodowych (Premium)|
+|Możliwości|Wyszukiwanie zawartości|Zbieranie elektronicznych materiałów dowodowych (wersja standardowa)|Zbieranie elektronicznych materiałów dowodowych (wersja Premium)|
 |:------|:-------------|:-------------|:-------------|
 |Szukaj zawartości|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
 |Zapytania ze słowami kluczowymi i warunki wyszukiwania|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|![Obsługiwane.](../media/check-mark.png)|
@@ -143,7 +143,7 @@ W poniższych sekcjach przedstawiono minimalne wymagania dotyczące subskrypcji 
 - subskrypcja Office 365 E1
 
 
-### <a name="ediscovery-standard"></a>Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa
+### <a name="ediscovery-standard"></a>Zbieranie elektronicznych materiałów dowodowych (wersja standardowa)
 
 - subskrypcja Microsoft 365 E3
 - subskrypcja Microsoft 365 G3
@@ -152,7 +152,7 @@ W poniższych sekcjach przedstawiono minimalne wymagania dotyczące subskrypcji 
 - subskrypcja Microsoft 365 Education A3 lub Office 365 Education A3
 - subskrypcja Office 365 E3
 
-### <a name="ediscovery-premium"></a>Zbieranie elektronicznych materiałów dowodowych (Premium)
+### <a name="ediscovery-premium"></a>Zbieranie elektronicznych materiałów dowodowych (wersja Premium)
 
 - subskrypcję platformy Microsoft 365 E5 lub pakietu Office 365 E5;
 - subskrypcję platformy Microsoft 365 E3 z dodatkiem E5 Compliance;
@@ -173,15 +173,15 @@ Zapoznaj się z poniższymi artykułami, aby dowiedzieć się więcej i rozpocz�
 
 - [Tworzenie wyszukiwania](content-search.md)
 
-### <a name="ediscovery-standard"></a>Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa
+### <a name="ediscovery-standard"></a>Zbieranie elektronicznych materiałów dowodowych (wersja standardowa)
 
-- [Zacznij od zbierania elektronicznych materiałów dowodowych (Standardowa)](get-started-core-ediscovery.md)
+- [Zacznij od zbierania elektronicznych materiałów dowodowych (wersja standardowa)](get-started-core-ediscovery.md)
 
-### <a name="ediscovery-premium"></a>Zbieranie elektronicznych materiałów dowodowych (Premium)
+### <a name="ediscovery-premium"></a>Zbieranie elektronicznych materiałów dowodowych (wersja Premium)
 
 - [Omówienie zbierania elektronicznych materiałów dowodowych (Premium)](overview-ediscovery-20.md)
 
-- [Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md)
+- [Konfiguruj zbieranie elektronicznych materiałów dowodowych (wersja Premium)](get-started-with-advanced-ediscovery.md)
 
 - [Tworzenie sprawy zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nią](create-and-manage-advanced-ediscoveryv2-case.md)
 

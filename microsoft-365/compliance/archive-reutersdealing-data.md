@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych dotyczących transakcji w usłudze Reuters w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik w celu zaimportowania i zarchiwizowania danych dotyczących transakcji reutersa z usługi Veritas w celu Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: bbcc148b3e7176975be5e4e5624202a170c90f28
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: ce1ad22e1ffa7417dc393b2a81bb957e35bd6e64
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999349"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095933"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>Konfigurowanie łącznika do archiwizowania danych dotyczących transakcji w usłudze Reuters
 

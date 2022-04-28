@@ -1,8 +1,8 @@
 ---
-title: Korzystanie z narzędzia Diagnostyka stron dla usługi SharePoint Online
+title: Korzystanie z narzędzia diagnostyki strony dla usługi SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
@@ -18,166 +18,166 @@ search.appverid:
 - BSA160
 f1.keywords:
 - NOCSH
-description: Narzędzie Diagnostyka stron dla witryny SharePoint umożliwia analizowanie SharePoint nowoczesnych stron publikowania i portalu w trybie online na podstawie wstępnie zdefiniowanego zestawu kryteriów wydajności.
-ms.openlocfilehash: 7e1931b7cdc661b5e0a6ed8751a26f8a77e4bc2e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Użyj narzędzia Diagnostyka strony dla SharePoint, aby przeanalizować nowoczesny portal SharePoint Online i klasyczne strony publikowania pod kątem wstępnie zdefiniowanego zestawu kryteriów wydajności.
+ms.openlocfilehash: b39b547754acc6f12c750192af2986e9b4e54150
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986494"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095669"
 ---
-# <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Używanie narzędzia Diagnostyka SharePoint strony
+# <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Korzystanie z narzędzia Diagnostyka strony dla SharePoint
 
-W tym artykule opisano sposób używania **narzędzia Diagnostyka** SharePoint dla użytkowników do analizowania SharePoint nowoczesnych i klasycznych stron witryny w trybie online na podstawie wstępnie zdefiniowanego zestawu kryteriów wydajności.
+W tym artykule opisano sposób użycia **narzędzia Diagnostyka strony dla SharePoint** do analizowania nowoczesnych i klasycznych stron witryny SharePoint Online pod kątem wstępnie zdefiniowanego zestawu kryteriów wydajności.
 
-Narzędzie Diagnostyka stron dla SharePoint można zainstalować dla:
+Diagnostykę strony dla narzędzia SharePoint można zainstalować w następujących celach:
 
-- **Microsoft Edge** [(rozszerzenie Edge)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
-- **Chrome** [(rozszerzenie Chrome)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
+- **Microsoft Edge** [(rozszerzenie edge)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **Chrome** [(rozszerzenie chrome)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
->Wersja **2.0.0** i nowsze zawierają obsługę nowoczesnych stron oprócz klasycznych stron witryny. Jeśli nie masz pewności, której wersji narzędzia używasz, możesz **wybrać link Informacje** lub wielokropek (...), aby sprawdzić wersję. **Zawsze aktualizuj program do najnowszej wersji** podczas korzystania z narzędzia.
+>Wersja **2.0.0** i nowsze obejmują obsługę nowoczesnych stron oprócz klasycznych stron witryny. Jeśli nie masz pewności, której wersji narzędzia używasz, możesz wybrać link **Informacje** lub wielokropek (...), aby zweryfikować wersję. **Zawsze aktualizuj do najnowszej wersji** podczas korzystania z narzędzia.
 
-Narzędzie Diagnostyka stron dla programu SharePoint to rozszerzenie przeglądarki dla nowych przeglądarek Microsoft Edge (https://www.microsoft.com/edge)i Chrome), które analizuje zarówno nowoczesne portal SharePoint Online, jak i klasyczne strony witryn publikowania. To narzędzie działa tylko w SharePoint Online i nie można go używać na SharePoint stronie systemu.
+Narzędzie Diagnostyka strony dla SharePoint jest rozszerzeniem przeglądarki dla nowych Microsoft Edge (https://www.microsoft.com/edge)i przeglądarek Chrome, które analizują zarówno nowoczesne strony SharePoint Online, jak i klasyczne strony witryn publikowania. To narzędzie działa tylko w przypadku usługi SharePoint Online i nie może być używane na stronie systemu SharePoint.
 
-Narzędzie generuje dla każdej analizowanej strony raport pokazujący, jak strona wykonuje się na podstawie wstępnie zdefiniowanego zestawu reguł, i wyświetla szczegółowe informacje, gdy wyniki testu spoza wartości bazowej. SharePoint online administratorzy i projektanci mogą używać tego narzędzia do rozwiązywania problemów z wydajnością i upewnienia się, że nowe strony są zoptymalizowane przed opublikowaniem.
+Narzędzie generuje raport dla każdej analizowanej strony pokazujący, jak strona działa względem wstępnie zdefiniowanego zestawu reguł i wyświetla szczegółowe informacje, gdy wyniki testu wykraczają poza wartość punktu odniesienia. SharePoint Administratorzy i projektanci usługi Online mogą używać narzędzia do rozwiązywania problemów z wydajnością i zapewnienia optymalizacji nowych stron przed opublikowaniem.
 
-Narzędzie Diagnostyka stron umożliwia analizowanie tylko stron SharePoint witryny, a nie stron systemowych, takich jak *allitems.aspx* czy *sharepoint.aspx*. W przypadku próby uruchomienia narzędzia na stronie systemowej lub innej stronie innej niż witryna zostanie wyświetlony komunikat o błędzie z powiadomieniem, że nie można uruchomić narzędzia dla tego typu strony.
-
-> [!div class="mx-imgBorder"]
-> ![Musi działać na SharePoint stronie.](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
-
-Nie jest to błąd narzędzia, ponieważ ocena bibliotek lub stron systemowych nie ma żadnej wartości. Przejdź do strony SharePoint witryny sieci Web, aby użyć tego narzędzia. Jeśli ten błąd występuje na stronie SharePoint, sprawdź stronę wzorcową, aby upewnić się, że SharePoint metatagów nie zostały usunięte.
-
-Aby przekazać opinię na temat tego narzędzia, wybierz wielokropek w prawym górnym rogu narzędzia, a następnie wybierz pozycję [Opinie](https://go.microsoft.com/fwlink/?linkid=874109).
+Narzędzie diagnostyki strony jest przeznaczone do analizowania tylko stron witryny SharePoint, a nie stron systemowych, takich jak *allitems.aspx* lub *sharepoint.aspx*. Jeśli spróbujesz uruchomić narzędzie na stronie systemowej lub innej stronie innej niż witryna, zostanie wyświetlony komunikat o błędzie informujący, że nie można uruchomić narzędzia dla tego typu strony.
 
 > [!div class="mx-imgBorder"]
-> ![Opinie.](../media/page-diagnostics-for-spo/pagediag-feedback.png)
+> ![Musi działać na stronie SharePoint.](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
+
+Nie jest to błąd w narzędziu, ponieważ nie ma żadnej wartości w ocenie bibliotek lub stron systemowych. Przejdź do strony witryny SharePoint, aby użyć tego narzędzia. Jeśli ten błąd wystąpi na stronie SharePoint, sprawdź stronę wzorcową, aby upewnić się, że metadane SharePoint nie zostały usunięte.
+
+Aby przekazać opinię na temat narzędzia, wybierz wielokropek w prawym górnym rogu narzędzia, a następnie wybierz pozycję [Przekaż opinię](https://go.microsoft.com/fwlink/?linkid=874109).
+
+> [!div class="mx-imgBorder"]
+> ![Prześlij opinię.](../media/page-diagnostics-for-spo/pagediag-feedback.png)
   
-## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>Instalowanie narzędzia Diagnostyka SharePoint strony
+## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>Instalowanie narzędzia diagnostyki strony dla SharePoint
 
-Procedura instalacji w tej sekcji działa zarówno w przeglądarkach Chrome, jak i Microsoft Edge Chrome.
+Procedura instalacji w tej sekcji będzie działać zarówno dla przeglądarek Chrome, jak i Microsoft Edge.
 
 > [!IMPORTANT]
-> Firma Microsoft nie odczytuje danych ani zawartości strony analizowanych przez narzędzie Diagnostyka stron dla witryny SharePoint, a my nie przechwytujemy żadnych informacji osobistych, witryn internetowych ani pobieramy informacji. Jedynymi informacjami umożliwiającymi identyfikację zarejestrowanymi w firmie Microsoft przez to narzędzie jest nazwa dzierżawy, liczba reguł, które nie powiodły się, oraz data i godzina uruchomienia narzędzia. Te informacje są używane przez firmę Microsoft do lepszego zrozumienia trendów korzystania z nowoczesnych witryn portali i publikowania oraz typowych problemów z wydajnością.
+> Firma Microsoft nie odczytuje danych ani zawartości strony, która jest analizowana przez narzędzie Diagnostyka strony dla SharePoint, i nie przechwytujemy żadnych danych osobowych, witryn internetowych ani nie pobieramy informacji. Jedynymi identyfikowalnymi informacjami zarejestrowanymi w firmie Microsoft przez narzędzie jest nazwa dzierżawy, liczba reguł, które uległy awarii, oraz data i godzina uruchomienia narzędzia. Te informacje są używane przez firmę Microsoft do lepszego zrozumienia nowoczesnych portali i publikowania trendów użycia witryn oraz typowych problemów z wydajnością.
 
-1. Zainstaluj narzędzie Diagnostyka stron dla SharePoint dla **przeglądarek Microsoft Edge** [(rozszerzenie Przeglądarki Edge)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) lub **Chrome** [(rozszerzenie Chrome).](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) Przejrzyj zasady ochrony prywatności użytkownika podane na stronie opisu w sklepie. Podczas dodawania narzędzia do przeglądarki zobaczysz następujące powiadomienie o uprawnieniach.
+1. Zainstaluj narzędzie Diagnostyka strony dla narzędzia SharePoint dla **Microsoft Edge** [(rozszerzenie edge)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) lub **Chrome** [(rozszerzenie Chrome)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi). Zapoznaj się z zasadami ochrony prywatności użytkowników podanymi na stronie opisu w sklepie. Podczas dodawania narzędzia do przeglądarki zostanie wyświetlone następujące powiadomienie o uprawnieniach.
 
     > [!div class="mx-imgBorder"]
     > ![Uprawnienia rozszerzenia.](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
-    Jest to powiadomienie, ponieważ strona może zawierać zawartość z lokalizacji poza SharePoint w zależności od składników Web Part i dostosowań na stronie. Oznacza to, że po kliknięciu przycisku Start narzędzie będzie odczytywać żądania i odpowiedzi i tylko dla aktywnych kart SharePoint, gdzie narzędzie jest uruchomione. Te informacje są przechwytywane lokalnie przez przeglądarkę internetową i są dostępne za pośrednictwem przycisku Eksportuj do **JSON** lub Eksportuj do **HAR** na karcie _Śledzenie_ sieci tego narzędzia. Informacje nie są wysyłane ani przechwytywane przez firmę **Microsoft.** (To narzędzie szanuje zasady ochrony prywatności firmy Microsoft dostępne [tutaj](https://go.microsoft.com/fwlink/p/?linkid=857875)).
+    Ta informacja jest w miejscu, ponieważ strona może zawierać zawartość z lokalizacji spoza SharePoint w zależności od składników Web Part i dostosowań na stronie. Oznacza to, że narzędzie odczyta żądania i odpowiedzi po kliknięciu przycisku Start i tylko dla aktywnej karty SharePoint, na której jest uruchomione narzędzie. Te informacje są przechwytywane lokalnie przez przeglądarkę internetową i są dostępne za pośrednictwem przycisku **Eksportuj do formatu JSON** lub **Eksportuj do HAR** na karcie _Śledzenie sieci_ narzędzia. **Informacje nie są wysyłane ani przechwytywane przez firmę Microsoft.** (Narzędzie respektuje zasady ochrony prywatności firmy Microsoft dostępne [tutaj](https://go.microsoft.com/fwlink/p/?linkid=857875)).
 
-    Uprawnienia _Zarządzaj pobieraniem_ obejmują korzystanie z funkcji eksportowania do **JSON** narzędzia. Przed udostępnieniem pliku JSON poza organizacją należy postępować zgodnie z własnymi wytycznymi dotyczącymi prywatności, ponieważ wyniki zawierają adresy URL i mogą być klasyfikowane jako IDENTYFIKOWALNE DANE OSOBOWE.
-1. Jeśli chcesz korzystać z narzędzia w trybie Incognito lub InPrivate, wykonaj procedurę dla przeglądarki:
-    1. W Microsoft Edge do **rozszerzenia** lub wpisz _edge://extensions na pasku_ adresu URL i **wybierz szczegóły** rozszerzenia. W ustawieniach rozszerzenia zaznacz pole wyboru **zezwalania w inPrivate**.
-    1. W przeglądarce Chrome przejdź do **rozszerzenia lub** wpisz _chrome://extensions_ na pasku adresu URL i wybierz **szczegóły** rozszerzenia. W ustawieniach rozszerzenia wybierz suwak **zezwalania w programie Incognito**.
-1. Przejdź do SharePoint witryny w SharePoint Online, które chcesz przejrzeć. Dozwolone jest "opóźnianie ładowania" elementów na stronach; dlatego narzędzie nie zostanie automatycznie zatrzymane (jest to zaprojektowane w celu dostosowania wszystkich scenariuszy ładowania stron). Aby zatrzymać zbieranie, wybierz pozycję **Zatrzymaj**. Przed zatrzymaniem zbierania danych upewnij się, że ładowanie strony zostało ukończone, lub że przechwycisz tylko częściowe śledzenie.
-1. Kliknij przycisk paska narzędzi rozszerzenia ![Diagnostyka stron dla SharePoint logo.](../media/page-diagnostics-for-spo/pagediag-icon32.png) w celu załadowania narzędzia, a zostanie otwarte następujące okno podręczne rozszerzenia:
+    _Uprawnienie Zarządzanie pobieraniem_ obejmuje korzystanie z funkcji **eksportowania narzędzia do formatu JSON**. Przed udostępnieniem pliku JSON poza organizacją postępuj zgodnie z wytycznymi firmy dotyczącymi ochrony prywatności, ponieważ wyniki zawierają adresy URL i mogą być klasyfikowane jako dane osobowe (dane osobowe).
+1. Jeśli chcesz użyć narzędzia w trybie Incognito lub InPrivate, postępuj zgodnie z procedurą przeglądarki:
+    1. W Microsoft Edge przejdź do pozycji **Rozszerzenia** lub wpisz _edge://extensions_ na pasku adresu URL i wybierz pozycję **Szczegóły** rozszerzenia. W ustawieniach rozszerzenia zaznacz pole wyboru **Zezwalaj w usłudze InPrivate**.
+    1. W przeglądarce Chrome przejdź do pozycji **Rozszerzenia** lub wpisz _chrome://extensions_ na pasku adresu URL i wybierz pozycję **Szczegóły** rozszerzenia. W ustawieniach rozszerzenia wybierz suwak **zezwalania w usłudze Incognito**.
+1. Przejdź do strony witryny SharePoint w SharePoint Online, którą chcesz przejrzeć. Zezwoliliśmy na "opóźnienie ładowania" elementów na stronach; W związku z tym narzędzie nie zostanie zatrzymane automatycznie (jest to z założenia przeznaczone do obsługi wszystkich scenariuszy ładowania stron). Aby zatrzymać zbieranie, wybierz pozycję **Zatrzymaj**. Upewnij się, że ładowanie strony zostało ukończone przed zatrzymaniem zbierania danych lub że zostanie przechwycony tylko częściowy ślad.
+1. Kliknij przycisk paska narzędzi rozszerzenia ![Diagnostyka strony dla logo SharePoint.](../media/page-diagnostics-for-spo/pagediag-icon32.png) Aby załadować narzędzie, zostanie wyświetlone następujące okno podręczne rozszerzenia:
 
-    ![Menu podręczne narzędzia Diagnostyka stron.](../media/page-diagnostics-for-spo/pagediag-Landing.png)
+    ![Okno podręczne narzędzia diagnostyki strony.](../media/page-diagnostics-for-spo/pagediag-Landing.png)
 
-Wybierz **pozycję Rozpocznij** , aby rozpocząć zbieranie danych do analizy.
+Wybierz pozycję **Rozpocznij** , aby rozpocząć zbieranie danych do analizy.
 
-## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>Informacje w narzędziu Diagnostyka SharePoint strony
+## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>Co zobaczysz w narzędziu Diagnostyka strony dla SharePoint
 
 1. Kliknij wielokropek (...) w prawym górnym rogu narzędzia, aby znaleźć następujące linki:
-   1. Link **Dodatkowe zasoby** zawiera ogólne wskazówki i szczegóły dotyczące narzędzia, w tym link do tego artykułu.
-   1. Link **Wyrażanie** opinii udostępnia link do witryny SharePoint _witryny i witryny współpracy ( User Voice_).
-   1. Link **Informacje** zawiera obecnie zainstalowaną wersję narzędzia i bezpośredni link do informacji innej firmy.  
-1. Identyfikator **korelacji, spRequestDuration, SPIISLatency****, czas** ładowania strony i szczegóły adresu **URL** mają informacje i mogą być używane do kilku celów.
+   1. Link **Dodatkowe zasoby** zawiera ogólne wskazówki i szczegółowe informacje dotyczące narzędzia, w tym link do tego artykułu.
+   1. Link **Przekaż opinię** zawiera link do witryny _SharePoint Sites and Collaboration User Voice_.
+   1. Link **Informacje** zawiera aktualnie zainstalowaną wersję narzędzia i bezpośredni link do powiadomienia innej firmy narzędzia.  
+1. **Identyfikator korelacji, SPRequestDuration, SPIISLatency**, **czas ładowania strony** i szczegóły **adresu URL** są informacyjne i mogą być używane w kilku celach.
 
     > [!div class="mx-imgBorder"]
     > ![Szczegóły diagnostyki strony.](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
-   - **Identyfikator korelacji** to ważny element podczas współpracy z pomocą techniczną firmy Microsoft, ponieważ umożliwia zbieranie dodatkowych danych diagnostycznych dla określonej strony.
-   - **SPRequestDuration** to czas przetwarzania SharePoint strony. Nawigacja strukturalna, duże obrazy i wiele wywołań interfejsu API może mieć wpływ na dłuższy czas trwania.
-   - **SpiISLatency** to czas (w milisekundach), po których SharePoint online rozpocząć ładowanie strony. Ta wartość nie obejmuje czasu na odpowiedź aplikacji sieci Web.
-   - **Czas ładowania strony** to całkowity czas rejestrowany przez stronę od czasu żądania do czasu otrzymania i renderowania odpowiedzi w przeglądarce. Na tę wartość mają wpływ różne czynniki, takie jak opóźnienie sieci, wydajność komputera i czas ładowania strony przez przeglądarkę.
-   - Adres **URL strony** (uniform Resource Locator) to adres internetowy bieżącej strony.
+   - **CorrelationID** jest ważnym elementem podczas pracy z pomoc techniczna firmy Microsoft, ponieważ umożliwia zbieranie dodatkowych danych diagnostycznych dla określonej strony.
+   - **SPRequestDuration** to czas potrzebny SharePoint na przetworzenie strony. Nawigacja strukturalna, duże obrazy, wiele wywołań interfejsu API mogą przyczynić się do dłuższego czasu trwania.
+   - **SPIISLatency** to czas w milisekundach potrzebny na rozpoczęcie ładowania strony przez usługę SharePoint Online. Ta wartość nie obejmuje czasu potrzebnego aplikacji internetowej na udzielenie odpowiedzi.
+   - **Czas ładowania strony** to całkowity czas rejestrowany przez stronę od czasu żądania do czasu odebrania i renderowania odpowiedzi w przeglądarce. Na tę wartość wpływa wiele czynników, w tym opóźnienie sieci, wydajność komputera i czas ładowania strony przez przeglądarkę.
+   - **Adres URL strony** (Uniform Resource Locator) to adres internetowy bieżącej strony.
 
-1. Karta [**Testy diagnostyczne**](#how-to-use-the-diagnostic-tests-tab) wyświetla wyniki analizy w trzech kategoriach. **Nie są wymagane żadne działania**, **wymagane są działania w zakresie doskonalenia** **i uwagi**. Każdy wynik testu jest reprezentowany przez element w jednej z tych kategorii zgodnie z opisem w poniższej tabeli:
+1. Karta [**Testy diagnostyczne**](#how-to-use-the-diagnostic-tests-tab) wyświetla wyniki analizy w trzech kategoriach. **Nie są wymagane żadne działania**, wymagane **są możliwości poprawy** i **uwaga**. Każdy wynik testu jest reprezentowany przez element w jednej z tych kategorii, zgodnie z opisem w poniższej tabeli:
 
     |Kategoria  |Kolor  |Opis  |
     |---------|---------|---------|
-    |**Wymagana uwaga** |Czerwony |Wynik testu nie mieści się w wartości bazowej i ma wpływ na wydajność strony. Postępuj zgodnie ze wskazówkami w zakresie rozwiązywania problemów.|
-    |**Możliwości udoskonalania** |Żółty |Wynik testu nie jest wartością podstawową i może być czynnikiem współtworowym dla problemów z wydajnością. Mogą mieć zastosowanie kryteria specyficzne dla testu.|
-    |**Nie jest wymagane żadne działanie** |Zielony |Wynik testu mieści się w wartości planu bazowego testu.|
+    |**Wymagana uwaga** |Czerwony |Wynik testu wykracza poza wartość punktu odniesienia i wpływa na wydajność strony. Postępuj zgodnie ze wskazówkami dotyczącymi korygowania.|
+    |**Możliwości poprawy** |Żółty |Wynik testu wykracza poza wartość bazową i może przyczyniać się do problemów z wydajnością. Mogą być stosowane kryteria specyficzne dla testu.|
+    |**Nie jest wymagana żadna akcja** |Zielony |Wynik testu mieści się w wartości bazowej testu.|
 
     > [!div class="mx-imgBorder"]
     > ![Diagnostyka strony.](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
-1. Karta [**Śledzenie sieci zawiera**](#how-to-use-the-network-trace-tab-and-how-to-export-a-har-file) szczegółowe informacje o żądaniach kompilacji strony i odpowiedziach.
+1. Karta [**Śledzenie sieci**](#how-to-use-the-network-trace-tab-and-how-to-export-a-har-file) zawiera szczegółowe informacje o żądaniach kompilacji stron i odpowiedziach.
 
 ## <a name="how-to-use-the-diagnostic-tests-tab"></a>Jak używać karty Testy diagnostyczne
 
-Podczas analizowania strony nowoczesnego portalu usługi SharePoint lub strony klasycznej witryny publikowania za pomocą narzędzia Diagnostyka strony dla programu SharePoint wyniki są analizowane przy użyciu wstępnie zdefiniowanych reguł, które porównują wyniki z wartościami według planu  bazowego i są wyświetlane na karcie Testy diagnostyczne. Reguły niektórych testów mogą używać różnych wartości planu bazowego dla nowoczesnego portalu i klasycznych witryn publikowania w zależności od tego, jaka jest wydajność  różnią się między nimi.
+Podczas analizowania SharePoint nowoczesnej strony portalu lub klasycznej strony witryny publikowania za pomocą narzędzia Diagnostyka strony dla SharePoint wyniki są analizowane przy użyciu wstępnie zdefiniowanych reguł, które porównują wyniki z wartościami punktu odniesienia i są wyświetlane na karcie **Testy diagnostyczne**. Reguły dla niektórych testów mogą używać różnych wartości punktu odniesienia dla nowoczesnych portali i klasycznych witryn publikowania w zależności od tego, jak określona jest wydajność  cechy różnią się między tymi dwoma cechami.
 
-Wyniki testów wyświetlane w kategoriach Możliwości udoskonalania lub Uwaga wymagane wskazują obszary, które należy przeglądać w porównaniu z zalecanymi praktykami i które można wybrać w celu wyświetlenia dodatkowych informacji o wyniku.  Szczegóły dotyczące każdego elementu to link _Dowiedz się więcej_ , który umożliwia bezpośredni dostęp do odpowiednich wskazówek dotyczących testu. Wyniki testów wyświetlane w kategorii Brak **wymaganego** działania wskazują zgodność z odpowiednią regułą i po wybraniu nie są wyświetlane dodatkowe szczegóły.
+Wyniki testów, które są wyświetlane w **kategoriach Możliwości poprawy** lub **Wymagana uwaga** , wskazują obszary, które należy przejrzeć pod kątem zalecanych rozwiązań, i można je wybrać, aby wyświetlić dodatkowe informacje o wyniku. Szczegóły poszczególnych elementów zawierają link _Dowiedz się więcej_ , który przeprowadzi Cię bezpośrednio do odpowiednich wskazówek związanych z testem. Wyniki testu wyświetlane w kategorii **Brak wymaganej akcji** wskazują zgodność z odpowiednią regułą i nie wyświetlają dodatkowych szczegółów po wybraniu.
 
-Informacje na karcie Testy diagnostyczne nie będą zawierać informacji o tym, jak projektować strony, ale zostaną wyróżnione czynniki, które mogą mieć wpływ na wydajność strony. Niektóre dostosowania i funkcje strony mają nieprzewidywalny wpływ na wydajność strony i należy je przeglądać w celu sprawdzenia pod uwagę w przypadku potencjalnych środków zaradczych lub pominięcia na stronie, jeśli mają one znaczny wpływ.
+Informacje na karcie Testy diagnostyczne nie informują o sposobie projektowania stron, ale wyróżniają czynniki, które mogą mieć wpływ na wydajność strony. Niektóre funkcje i dostosowania stron mają nieunikniony wpływ na wydajność strony i powinny zostać przejrzane pod kątem potencjalnego korygowania lub pominięcia na stronie, jeśli ich wpływ jest znaczny.
 
-Wyniki w kolorze czerwonym lub żółtym mogą również wskazywać składników Web Part, które zbyt często odświeżają dane. Na przykład wiadomości firmowe nie są aktualizowane co sekundę, ale niestandardowe elementy Web Part są często tak zbudowane, aby pobierać najnowsze wiadomości co sekundę, zamiast zaimplementować elementy buforowania, które mogłyby poprawić ogólne środowisko użytkownika. Uwzględniając składników Web Part na stronie, często można zmniejszyć ich wpływ na wydajność, oceniając wartości poszczególnych dostępnych parametrów w celu upewniania się, że są one odpowiednio ustawione zgodnie z własnymi potrzebami.
+Czerwone lub żółte wyniki mogą również wskazywać składniki Web Part, które zbyt często odświeżają dane. Na przykład wiadomości firmowe nie są aktualizowane co sekundę, ale niestandardowe składniki Web Part są często tworzone w celu pobierania najnowszych wiadomości co sekundę zamiast implementowania elementów buforowania, które mogłyby poprawić ogólne środowisko użytkownika. Podczas dołączania składników Web Part na stronie należy pamiętać, że często istnieją proste sposoby zmniejszania ich wpływu na wydajność przez ocenę wartości każdego dostępnego parametru, aby upewnić się, że jest on ustawiony odpowiednio do zamierzonego celu.
 
 >[!NOTE]
->Klasyczne witryny zespołu, w których nie włączono funkcji publikowania, nie mogą korzystać z sieci CDN. Po uruchomieniu narzędzia w tych witrynach test CDN zakończy się niepowodzeniem i można go zignorować, ale mają zastosowanie wszystkie pozostałe testy. Dodatkowe funkcje funkcji publikowania stron mogą SharePoint czasy ładowania stron, więc nie powinny być włączone tylko w celu CDN funkcji.
+>Klasyczne witryny zespołu, które nie mają włączonej funkcji publikowania, nie mogą korzystać z sieci CDN. Po uruchomieniu narzędzia w tych witrynach oczekuje się, że test CDN zakończy się niepowodzeniem i może zostać zignorowany, ale wszystkie pozostałe testy mają zastosowanie. Dodatkowe funkcje funkcji publikowania SharePoint mogą wydłużyć czas ładowania strony, dlatego nie należy jej włączać tylko po to, aby umożliwić CDN funkcjonalność.
 
 >[!IMPORTANT]
->Reguły testowania są regularnie dodawane i aktualizowane, dlatego należy zapoznać się z najnowszą wersją tego narzędzia, aby uzyskać szczegółowe informacje na temat bieżących reguł i konkretnych informacji zawartych w wynikach testów. Możesz zweryfikować wersję, zarządzając swoimi rozszerzeniami, a rozszerzenie poradzy Ci, czy jest dostępna aktualizacja.
+>Reguły testów są regularnie dodawane i aktualizowane, dlatego zapoznaj się z najnowszą wersją narzędzia, aby uzyskać szczegółowe informacje o bieżących regułach i konkretnych informacjach zawartych w wynikach testów. Możesz zweryfikować wersję, zarządzając rozszerzeniami, a rozszerzenie poinformuje, czy aktualizacja jest dostępna.
 
-## <a name="how-to-use-the-network-trace-tab-and-how-to-export-a-har-file"></a>Jak korzystać z karty Śledzenie sieci i jak wyeksportować plik HAR
+## <a name="how-to-use-the-network-trace-tab-and-how-to-export-a-har-file"></a>Jak używać karty Śledzenie sieci i jak wyeksportować plik HAR
 
-Karta **Śledzenie sieci** zawiera szczegółowe informacje dotyczące obu żądań tworzenia strony i odpowiedzi otrzymanych z witryny SharePoint.
+Karta **Śledzenie sieci** zawiera szczegółowe informacje o obu żądaniach utworzenia strony i odpowiedziach otrzymanych od SharePoint.
 
-1. **Odszukaj czasy ładowania elementów oflagowane jako czerwone**. Każde żądanie i odpowiedź są oznaczane kolorami, aby wskazać ich wpływ na ogólną wydajność stron przy użyciu następujących metryk opóźnień:
-    - Zielony: \< 500 m
-    - Żółty: 500–1000 m
-    - Czerwony: \> 1000 m
+1. **Wyszukaj czas ładowania elementów oflagowany jako czerwony**. Każde żądanie i odpowiedź są zakodowane kolorami, aby wskazać jego wpływ na ogólną wydajność strony przy użyciu następujących metryk opóźnienia:
+    - Zielony: \< 500ms
+    - Żółty: 500-1000ms
+    - Czerwony: \> 1000 ms
 
     > [!div class="mx-imgBorder"]
     > ![Śledzenie sieci.](../media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    Na powyższym obrazie czerwony element dotyczy strony domyślnej. Zawsze będzie ona pokazywana na czerwono, chyba że strona zostanie załadowana po \< 1000 m (mniej niż 1 sekunda).
+    Na ilustracji przedstawionej powyżej czerwony element odnosi się do strony domyślnej. Zawsze będzie wyświetlana czerwona, chyba że strona zostanie załadowana w \< 1000ms (mniej niż 1 sekunda).
 
-2. **Testowanie czasów ładowania elementów**. W niektórych przypadkach nie będzie czasu ani kolorowego wskaźnika, ponieważ elementy zostały już zapisane w pamięci podręcznej przez przeglądarkę. Aby sprawdzić to poprawnie, otwórz stronę, wyczyść pamięć podręczną przeglądarki, a następnie kliknij przycisk **Start** , ponieważ spowoduje to wymuś "niskie" ładowanie strony i stanowić prawdziwe odbicie początkowego obciążenia strony. Należy wówczas porównać to z "ciepłem" ładowaniem strony, ponieważ pomaga to również w określeniu elementów, które mają być buforowane na stronie.
+2. **Czas ładowania elementu testowego**. W niektórych przypadkach nie będzie czasu ani wskaźnika koloru, ponieważ elementy zostały już buforowane przez przeglądarkę. Aby przetestować to poprawnie, otwórz stronę, wyczyść pamięć podręczną przeglądarki, a następnie kliknij przycisk **Uruchom** , ponieważ spowoduje to wymusżenie "zimnego" obciążenia strony i będzie prawdziwym odzwierciedleniem początkowego ładowania strony. Następnie należy porównać to z "ciepłym" obciążeniem strony, ponieważ pomoże to również określić, które elementy są buforowane na stronie.
 
-3. **Udostępniaj odpowiednie informacje innym osobom, które mogą pomóc w zbadaniu problemów**. Aby udostępnić szczegóły lub informacje udostępniane w narzędziu deweloperom lub pomocy technicznej, zalecaną podejściem jest użycie ustawienia Włącz eksportowanie do archiwum **HTTP (HAR** ). 
+3. **Udostępnij odpowiednie szczegóły innym osobom, które mogą pomóc w badaniu problemów**. Aby udostępnić szczegóły lub informacje podane w narzędziu deweloperom lub osobie pomocy technicznej, zaleca się użycie opcji **Włącz eksportowanie do archiwum HTTP (HAR** ). 
 
    > [!div class="mx-imgBorder"]
    > ![Włącz eksportowanie do har.](../media/page-diagnostics-for-spo/pagediag-submithar.png)
 
-Należy włączyć tę funkcję przed kliknięciem przycisku Start, co spowoduje włączenie trybu debugowania w przeglądarce. Zostanie wygenerowany plik archiwum HTTP (HAR), do którego dostęp można uzyskać za pośrednictwem karty "Śledzenie sieci". Kliknij przycisk "Eksportuj do HAR", aby pobrać plik na komputer i udostępnić go w ten sposób. Plik można otworzyć w różnych narzędziach do debugowania, takich jak narzędzia programowe F12 Developer Tools i Fiddler.
+Należy to włączyć przed kliknięciem przycisku Start, co spowoduje włączenie trybu debugowania w przeglądarce. Spowoduje to wygenerowanie pliku archiwum HTTP (HAR), do którego można uzyskać dostęp za pośrednictwem karty "Śledzenie sieci". Kliknij pozycję "Eksportuj do HAR" i pobierze plik na komputer, a następnie możesz go odpowiednio udostępnić. Plik można otworzyć w różnych narzędziach debugowania, takich jak F12 Developer Tools i Fiddler.
 
 > [!div class="mx-imgBorder"]
-> ![Śledzenie sieci.](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)
+> ![Ślad sieci.](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)
 
 > [!IMPORTANT]
-> Te wyniki zawierają adresy URL i mogą być klasyfikowane jako PII (Dane umożliwiające identyfikację użytkownika). Przed rozdaniem tych informacji należy postępować zgodnie z wytycznymi twojej organizacji.
+> Te wyniki zawierają adresy URL, które można sklasyfikować jako dane osobowe (dane osobowe). Przed rozpowszechnieniem tych informacji pamiętaj, aby postępować zgodnie z wytycznymi organizacji.
 
-## <a name="engaging-with-microsoft-support"></a>Współpraca z pomocą techniczną firmy Microsoft
+## <a name="engaging-with-microsoft-support"></a>Angażowanie się w pomoc techniczna firmy Microsoft
 
-Dołączona została funkcja **na poziomie pomocy technicznej firmy Microsoft** , która powinna być wykorzystywana tylko podczas pracy bezpośrednio nad sprawą pomocy technicznej. Korzystanie z tej funkcji nie zapewni Ci żadnych korzyści, gdy jest ona używana bez angażowania zespołu i może znacznie spowolnić działania strony. Podczas korzystania z tej funkcji w narzędziu nie ma żadnych dodatkowych informacji, ponieważ dodatkowe informacje są dodawane do rejestrowania w usłudze.
+Dodaliśmy **funkcję na poziomie pomoc techniczna firmy Microsoft**, która powinna być używana tylko podczas pracy bezpośrednio w przypadku pomocy technicznej. Korzystanie z tej funkcji nie zapewni żadnych korzyści w przypadku użycia bez zaangażowania zespołu pomocy technicznej i może sprawić, że strona będzie działać znacznie wolniej. Nie ma żadnych dodatkowych informacji podczas korzystania z tej funkcji w narzędziu, ponieważ dodatkowe informacje są dodawane do rejestrowania w usłudze.
 
-Żadna zmiana nie jest widoczna, tyle że zostaniesz o tym powiadomiony, że ją włączono, a wydajność strony zostanie znacznie obniżona o 2–3 razy wolniej. Będzie on odpowiedni tylko dla konkretnej strony i aktywnej sesji. Z tego powodu należy używać go oszczędnie i tylko wtedy, gdy jest aktywnie zaangażowani w pomoc techniczną.
+Żadna zmiana nie jest widoczna, z tą różnicą, że otrzymasz powiadomienie o jej włączeniu, a wydajność strony zostanie znacznie obniżona o 2–3 razy wolniejszą wydajność, gdy jest włączona. Będzie ona odpowiednia tylko dla określonej strony i tej aktywnej sesji. Z tego powodu należy go używać oszczędnie i tylko wtedy, gdy aktywnie angażuje się w pomoc techniczną.
 
-### <a name="to-enable-the-microsoft-support-level-feature"></a>Aby włączyć funkcję poziomu pomocy technicznej firmy Microsoft
+### <a name="to-enable-the-microsoft-support-level-feature"></a>Aby włączyć funkcję na poziomie pomoc techniczna firmy Microsoft
 
-1. Otwórz narzędzie Diagnostyka SharePoint strony.
-2. Na klawiaturze naciśnij klawisze **ALT-Shift-L**. Spowoduje to wyświetlenie pola **wyboru Włącz rejestrowanie** pomocy technicznej.
-3. Zaznacz to pole wyboru, a następnie kliknij przycisk **Start** , aby ponownie załadować stronę i wygenerować pełne rejestrowanie.
+1. Otwórz narzędzie Diagnostyka strony dla SharePoint.
+2. Na klawiaturze naciśnij klawisz **ALT-Shift-L**. Spowoduje to **wyświetlenie pola wyboru Włącz rejestrowanie pomocy technicznej** .
+3. Zaznacz pole wyboru, a następnie kliknij przycisk **Rozpocznij** , aby ponownie załadować stronę i wygenerować pełne rejestrowanie.
 
    > [!div class="mx-imgBorder"]
-   > ![Włączono opcję pomocy technicznej.](../media/page-diagnostics-for-spo/pagediag-support.png)
+   > ![Opcja pomocy technicznej włączona.](../media/page-diagnostics-for-spo/pagediag-support.png)
   
-    Należy zanotować identyfikator korelacji (wyświetlony w górnej części narzędzia) i podać go przedstawicielowi pomocy technicznej, aby umożliwić jej zbieranie dodatkowych informacji na temat sesji diagnostycznej.
+    Należy zanotować identyfikator CorrelationID (wyświetlany w górnej części narzędzia) i przekazać go przedstawicielowi pomocy technicznej, aby umożliwić mu zebranie dodatkowych informacji o sesji diagnostycznej.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Dostosowywanie SharePoint online](tune-sharepoint-online-performance.md)
+[Dostrajanie wydajności usługi SharePoint Online](tune-sharepoint-online-performance.md)
 
-[Dostosowywanie Office 365 wydajności](tune-microsoft-365-performance.md)
+[Dostrajanie wydajności Office 365](tune-microsoft-365-performance.md)
 
-[Wydajność w nowoczesnym SharePoint klienta](/sharepoint/modern-experience-performance)
+[Wydajność w nowoczesnym środowisku SharePoint](/sharepoint/modern-experience-performance)
 
 [Sieci dostarczania zawartości](content-delivery-networks.md)
 

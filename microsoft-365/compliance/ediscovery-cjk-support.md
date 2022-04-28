@@ -2,8 +2,8 @@
 title: Obsługa CJK/Double Byte dla zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak usługa Microsoft Purview eDiscovery (Premium) w Microsoft 365 obsługuje języki chiński, japoński i koreański (CJK), które używają zestawu znaków dwubajtowych.
-ms.openlocfilehash: e6221d37a3ebb07414f87f349b020365c80990e3
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e6399136713ff7be4b3c065de05b587a3f942b01
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992221"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095911"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>Obsługa języka CJK dla eDiscovery (Premium)
 

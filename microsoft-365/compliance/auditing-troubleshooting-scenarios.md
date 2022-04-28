@@ -2,8 +2,8 @@
 title: Przeszukaj dziennik inspekcji, aby rozwiązać typowe scenariusze
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak używać narzędzia do wyszukiwania dzienników inspekcji Microsoft 365, aby pomóc w rozwiązywaniu typowych problemów z pomocą techniczną dla kont e-mail.
-ms.openlocfilehash: dd82c735411592a3cfa7cb79ae4d1ce6f97798b4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 57d8cfd1cbb07300b7cd69fb78ff6a0b33b302f5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998005"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097189"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Przeszukaj dziennik inspekcji, aby zbadać typowe problemy z pomocą techniczną
 

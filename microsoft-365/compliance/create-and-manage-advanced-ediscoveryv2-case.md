@@ -2,8 +2,8 @@
 title: Tworzenie przypadków zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nimi w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano sposób tworzenia przypadków zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) i zarządzania nimi. Pierwszym krokiem jest utworzenie sprawy i rozpoczęcie korzystania z funkcji i funkcji zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: 294a07c2f43559943482c3e17c98289f41dff7bc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e5773f54d0ce6efbfc5aae22eb616f96c3777eda
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999283"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096991"
 ---
 # <a name="create-and-manage-an-ediscovery-premium-case"></a>Tworzenie sprawy zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nią
 

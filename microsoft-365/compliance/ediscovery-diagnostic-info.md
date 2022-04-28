@@ -2,8 +2,8 @@
 title: Zbieraj informacje diagnostyczne dotyczące zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Dowiedz się, jak zbierać informacje diagnostyczne zbierania elektronicznych materiałów dowodowych dla pomoc techniczna firmy Microsoft przypadku.
-ms.openlocfilehash: 6077df8f0a014b9e3356d8f520ddbaf0b2378983
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2759156a3948339629ea7d988eaaa5464da197fa
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994455"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095889"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Zbieraj informacje diagnostyczne dotyczące zbierania elektronicznych materiałów dowodowych
 

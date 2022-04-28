@@ -2,8 +2,8 @@
 title: Tworzenie kolekcji roboczej
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kolekcja robocza to wyszukiwanie zbierania elektronicznych materiałów dowodowych źródeł danych bez nadzoru w przypadku zbierania elektronicznych materiałów dowodowych (Premium), które zwraca oszacowanie wyszukiwania zgodne z zapytaniem wyszukiwania kolekcji. Możesz przejrzeć statystyki wyszukiwania, wyświetlić podgląd próbkowania elementów oraz poprawić i ponownie uruchomić kolekcję przed zatwierdzeniem wyników w zestawie przeglądów.
-ms.openlocfilehash: 2178e836809a24edec6d3d184ef8b699bec87bb5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 50fb63658541c07a312a502dbbe7d68a26467d14
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997081"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096099"
 ---
 # <a name="create-a-draft-collection-in-ediscovery-premium"></a>Tworzenie kolekcji roboczej w usłudze eDiscovery (Premium)
 

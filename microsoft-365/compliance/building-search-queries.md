@@ -2,8 +2,8 @@
 title: Tworzenie zapytań wyszukiwania w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Użyj słów kluczowych i warunków, aby zawęzić zakres wyszukiwania podczas wyszukiwania danych przy użyciu eDiscovery (Premium) w Microsoft 365.
-ms.openlocfilehash: cceac6974bacb066201120ac4972393f2323353c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: afb033a014528b7e79a6ce192896f4b2b3eef054
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995013"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096143"
 ---
 # <a name="build-search-queries-for-collections-in-ediscovery-premium"></a>Tworzenie zapytań wyszukiwania dla kolekcji zbierania elektronicznych materiałów dowodowych (Premium)
 

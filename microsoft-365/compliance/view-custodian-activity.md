@@ -2,8 +2,8 @@
 title: Wyświetlaj aktywność inspekcji opiekuna
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ description: Użyj narzędzia do zarządzania opiekunami zbierania elektroniczny
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: e2de6209e08d6e8dd6f853724f26d026aec1c33f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 6f55ad389fe24e87e693e6523c7008713c6bc54b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993715"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096573"
 ---
 # <a name="view-custodian-audit-activity"></a>Wyświetlaj aktywność inspekcji opiekuna
 

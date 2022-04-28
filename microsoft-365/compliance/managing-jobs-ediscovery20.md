@@ -2,8 +2,8 @@
 title: Zarządzanie zadaniami w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zadania zbierania elektronicznych materiałów dowodowych (Premium) ułatwiają śledzenie stanu długotrwałych procesów związanych z wykonywaniem różnych zadań zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: ab1b6cf45805a0d67492a5d386670f139b24f5e1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d13f53ce0a8eb0f435bb465d59b908e96926140b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998506"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096925"
 ---
 # <a name="manage-jobs-in-ediscovery-premium"></a>Zarządzanie zadaniami w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 

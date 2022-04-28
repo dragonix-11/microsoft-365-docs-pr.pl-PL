@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych bloomberga w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik Bloomberg DataParser 17a-4 i użyć go do importowania i archiwizowania danych bloomberga w Microsoft 365.
-ms.openlocfilehash: 7160d55a7870f636b7d45f6d87e0254507dd58e9
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2e894004890043c3c82c80705ee7ac1c68feec6e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998413"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096209"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-data"></a>Konfigurowanie łącznika do archiwizowania danych bloomberga
 

@@ -2,8 +2,8 @@
 title: Przeglądanie konwersacji w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się więcej o funkcji rekonstrukcji konwersacji w usłudze Microsoft Purview eDiscovery (Premium) (nazywanej wątkami konwersacji), aby odtworzyć, przejrzeć i wyeksportować rozmowy na czacie w grupach Microsoft Teams i Yammer.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c3cd05ab340775a7a923b9e4a0f66c3abaf559cb
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 075424bc6db144e86406b10ce9a4f4d28c1b937f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993277"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097079"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>Wątkowość konwersacji w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 

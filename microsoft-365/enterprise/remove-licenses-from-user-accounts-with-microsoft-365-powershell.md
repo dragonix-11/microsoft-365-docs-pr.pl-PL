@@ -2,7 +2,7 @@
 title: Usuwanie licencji Microsoft 365 z kont użytkowników przy użyciu programu PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Objaśnienie sposobu używania programu PowerShell do usuwania licencji Microsoft 365, które zostały wcześniej przypisane do użytkowników.
-ms.openlocfilehash: c3317c651c561da4c8650e45ba3b64a135a1f6ce
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: b036f58686ac179fc93c1a0605ed2b585ea89c30
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823151"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096331"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Usuwanie licencji Microsoft 365 z kont użytkowników przy użyciu programu PowerShell
 
@@ -105,7 +105,7 @@ Na koniec określ nazwy logowania użytkownika i planu licencji, usuń znaki "<"
 $userUPN="<user sign-in name (UPN)>"
 $planName="<license plan name from the list of license plans>"
 $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$License.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
+$license.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $license
 ```
 
@@ -120,12 +120,12 @@ if($userList.Count -ne 0) {
     {
         $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
         for ($i=0; $i -lt $Skus.Count; $i++) {
-            $Licenses.RemoveLicenses +=  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus[$i].SkuId -EQ).SkuID   
+            $licenses.RemoveLicenses +=  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus[$i].SkuId -EQ).SkuID   
         }
         Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
     } else {
         $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-        $Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus.SkuId -EQ).SkuID
+        $licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus.SkuId -EQ).SkuID
         Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
     }
 }

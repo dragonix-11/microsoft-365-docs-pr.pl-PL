@@ -1,8 +1,8 @@
 ---
-title: Przypisywanie ról do Microsoft 365 użytkowników za pomocą programu PowerShell
+title: Przypisywanie ról do Microsoft 365 kont użytkowników przy użyciu programu PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
@@ -19,41 +19,41 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: W tym artykule dowiesz się, jak szybko i łatwo używać programu PowerShell do Microsoft 365 przypisywania ról administratorów do kont użytkowników.
-ms.openlocfilehash: 0b0fc0a5da1a6b84d4f13f95ace4846e367ae111
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: W tym artykule dowiesz się, jak szybko i łatwo używać programu PowerShell do Microsoft 365 przypisywania ról administratora do kont użytkowników.
+ms.openlocfilehash: 8ac98920dd3d2d0487905b001434d73274463f9a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985049"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097453"
 ---
-# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Przypisywanie ról administratora do Microsoft 365 użytkowników za pomocą programu PowerShell
+# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Przypisywanie ról administratora do Microsoft 365 kont użytkowników za pomocą programu PowerShell
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Możesz łatwo przypisywać role do kont użytkowników przy użyciu programu PowerShell dla komputerów Microsoft 365.
+Role można łatwo przypisywać do kont użytkowników przy użyciu programu PowerShell na potrzeby Microsoft 365.
 
 >[!Note]
->Dowiedz się, jak [przypisywać role administratora](../admin/add-users/assign-admin-roles.md) do kont użytkowników centrum administracyjne platformy Microsoft 365.
+>Dowiedz się, jak [przypisywać role administratora](../admin/add-users/assign-admin-roles.md) do kont użytkowników przy użyciu Centrum administracyjne platformy Microsoft 365.
 >
 >Aby uzyskać listę dodatkowych zasobów, zobacz [Zarządzanie użytkownikami i grupami](/admin).
 >
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Używanie modułu Azure Active Directory PowerShell dla Graph danych
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Korzystanie z modułu Azure Active Directory programu PowerShell dla Graph
 
-Najpierw użyj administratora dc usługi **Azure AD**, administratora **aplikacji** w chmurze lub konta  administratora globalnego, aby połączyć się ze [swoją Microsoft 365 dzierżawą](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Najpierw użyj **administratora kontrolera domeny usługi Azure AD**, **administratora aplikacji w chmurze** lub konta **administratora globalnego**, [aby nawiązać połączenie z dzierżawą Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
-Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](/microsoft-365/admin/add-users/about-admin-roles?).
+Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](/microsoft-365/admin/add-users/about-admin-roles?).
 
-Następnie zidentyfikuj nazwę logowania konta użytkownika, które chcesz dodać do roli (przykład: fredsm\@ contoso.com). Ta nazwa jest również znana jako główna nazwa użytkownika (UPN).
+Następnie zidentyfikuj nazwę logowania konta użytkownika, które chcesz dodać do roli (na przykład fredsm\@ contoso.com). Jest to również nazywane główną nazwą użytkownika (UPN).
 
-Następnie określ nazwę roli. Zobacz [Wbudowane role w usłudze Azure AD](/azure/active-directory/roles/permissions-reference).
+Następnie określ nazwę roli. Zobacz [Role wbudowane usługi Azure AD](/azure/active-directory/roles/permissions-reference).
 
 >[!Note]
->Zwróć uwagę na notatki w tym artykule. Niektóre nazwy ról w programie PowerShell Azure Active Directory (Azure AD). Na przykład rola *administratora SharePoint* w programie centrum administracyjne platformy Microsoft 365 to *SharePoint usługi w* programie PowerShell usługi Azure AD.
+>Zwróć uwagę na notatki w tym artykule. Niektóre nazwy ról różnią się w przypadku programu PowerShell Azure Active Directory (Azure AD). Na przykład rolą *administratora SharePoint* w Centrum administracyjne platformy Microsoft 365 jest *administrator usługi SharePoint* w programie Azure AD PowerShell.
 >
 
-Następnie wypełnij pola logowania i nazw ról i uruchom następujące polecenia:
+Następnie wypełnij nazwy logowania i ról, a następnie uruchom następujące polecenia:
   
 ```powershell
 $userName="<sign-in name of the account>"
@@ -67,7 +67,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Oto przykład ukończonego zestawu poleceń, który przypisuje rolę administratora SharePoint do konta *belindan\@ contoso.com*:
+Oto przykład ukończonego zestawu poleceń, który przypisuje rolę administratora usługi SharePoint do konta *belindan\@ contoso.com*:
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -90,35 +90,35 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Użyj modułu Microsoft Azure Active Directory dla Windows PowerShell
 
-Najpierw użyj konta administratora globalnego, aby [połączyć się z dzierżawą Microsoft 365 dzierżawy](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Najpierw użyj konta administratora globalnego, aby [nawiązać połączenie z dzierżawą Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
-### <a name="for-a-single-role-change"></a>W przypadku jednej zmiany roli
+### <a name="for-a-single-role-change"></a>W przypadku zmiany pojedynczej roli
 
-Najczęściej spotykane sposoby określania konta użytkownika to użycie jego nazwy wyświetlanej lub nazwy e-mail, nazywanej również nazwą logowania lub główną nazwą użytkownika (UPN).
+Najczęstszym sposobem określenia konta użytkownika jest użycie jego nazwy wyświetlanej lub nazwy e-mail, która jest również znana jako nazwa logowania lub główna nazwa użytkownika (UPN).
 
-#### <a name="display-names-of-user-accounts"></a>Nazwy wyświetlane kont użytkowników
+#### <a name="display-names-of-user-accounts"></a>Wyświetlanie nazw kont użytkowników
 
-Jeśli masz już uprawnienia do pracy z wyświetlanymi nazwami kont użytkowników, określ następujące informacje:
+Jeśli pracujesz z nazwami wyświetlanymi kont użytkowników, określ następujące informacje:
   
 - Konto użytkownika, które chcesz skonfigurować
     
-    Aby określić konto użytkownika, należy określić jego nazwę wyświetlaną. Aby uzyskać pełną listę kont, użyj tego polecenia:
+    Aby określić konto użytkownika, należy określić jego nazwę wyświetlaną. Aby uzyskać pełną listę kont, użyj następującego polecenia:
     
   ```powershell
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    To polecenie zawiera listę Nazwa wyświetlana kont użytkowników posortowanych według nazwy wyświetlanej po jednym ekranie na raz. Za pomocą polecenia cmdlet **Where** można odfiltrować listę do mniejszego zestawu. Zobacz poniższy przykład.
+    To polecenie wyświetla listę nazwy wyświetlanej kont użytkowników posortowanych według nazwy wyświetlanej po jednym ekranie naraz. Listę można filtrować do mniejszego zestawu przy użyciu polecenia cmdlet **Where** . Zobacz poniższy przykład.
 
    >[!Note]
-   >Program PowerShell Core nie obsługuje modułu Microsoft Azure Active Directory dla programu Windows PowerShell i poleceń cmdlet z *nazwą Msol*. Uruchom te polecenia cmdlet z Windows PowerShell.
+   >Program PowerShell Core nie obsługuje modułu Microsoft Azure Active Directory dla modułu Windows PowerShell i poleceń cmdlet z nazwą *msol*. Uruchom te polecenia cmdlet z Windows PowerShell.
    >
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
-    To polecenie zawiera listę tylko kont użytkowników, dla których nazwa wyświetlana zaczyna się od "Jan".
+    To polecenie wyświetla tylko konta użytkowników, dla których nazwa wyświetlana zaczyna się od "John".
     
 - Rola, którą chcesz przypisać
     
@@ -128,7 +128,7 @@ Jeśli masz już uprawnienia do pracy z wyświetlanymi nazwami kont użytkownik�
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Po określeniu nazwy wyświetlanej konta i nazwy roli przypisz tę rolę do konta za pomocą tych poleceń:
+Po określeniu nazwy wyświetlanej konta i nazwy roli użyj tych poleceń, aby przypisać rolę do konta:
   
 ```powershell
 $dispName="<The Display Name of the account>"
@@ -136,7 +136,7 @@ $roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Wklej polecenia do Notatnik. Dla *$dispName i* *$roleName* zastąp tekst opisu ich wartościami. Usuń znaki \< and > , ale zachowaj cudzysłowy. Wklej zmodyfikowane wiersze do okna Microsoft Azure Active Directory Moduł Windows PowerShell, aby je uruchomić. Ewentualnie można użyć środowiska Windows PowerShell Script Environment (ISE).
+Wklej polecenia do Notatnik. W przypadku *zmiennych $dispName* i *$roleName* zastąp tekst opisu wartościami. Usuń znaki, \< and > ale zachowaj cudzysłów. Wklej zmodyfikowane wiersze w oknie Microsoft Azure Active Directory Module for Windows PowerShell, aby je uruchomić. Alternatywnie można użyć Windows PowerShell zintegrowanego środowiska skryptów (ISE).
   
 Oto przykład ukończonego zestawu poleceń:
   
@@ -148,23 +148,23 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
 
 #### <a name="sign-in-names-of-user-accounts"></a>Nazwy logowania kont użytkowników
 
-Jeśli masz już uprawnienia do pracy z nazwami logowania lub nazwami UPN kont użytkowników, sprawdź następujące informacje:
+Jeśli pracujesz z nazwami logowania lub nazwami UPN kont użytkowników, określ następujące informacje:
   
-- UpN konta użytkownika
+- Nazwa UPN konta użytkownika
     
-    Jeśli nie znasz upn, użyj tego polecenia:
+    Jeśli nie znasz nazwy UPN, użyj tego polecenia:
     
   ```powershell
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    To polecenie zawiera listę u góry nazwy użytkownika (UPN) dla kont użytkowników posortowanych według nazwy UPN po jednym ekranie na raz. Do filtrowania **listy możesz** użyć polecenia cmdlet Where. Oto przykład:
+    To polecenie wyświetla nazwę UPN kont użytkowników posortowane według nazwy UPN, po jednym ekranie naraz. Aby odfiltrować listę, możesz użyć polecenia cmdlet **Where** . Oto przykład:
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    To polecenie zawiera listę tylko kont użytkowników, dla których nazwa wyświetlana zaczyna się od "Jan".
+    To polecenie wyświetla tylko konta użytkowników, dla których nazwa wyświetlana zaczyna się od "John".
     
 - Rola, którą chcesz przypisać
     
@@ -174,7 +174,7 @@ Jeśli masz już uprawnienia do pracy z nazwami logowania lub nazwami UPN kont u
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Po przypisaniu głównej nazwy użytkownika do konta i nazwy roli użyj tych poleceń, aby przypisać tę rolę do konta:
+Po utworzeniu nazwy UPN konta i nazwy roli użyj tych poleceń, aby przypisać rolę do konta:
   
 ```powershell
 $upnName="<The UPN of the account>"
@@ -182,7 +182,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-Skopiuj polecenia i wklej je do Notatnik. Dla **$upnName** **i $roleName** zmiennych. Zastąp tekst opisu wartościami. Usuń znaki \< and > , ale zachowaj cudzysłowy. Wklej zmodyfikowane wiersze do Microsoft Azure Active Directory Moduł dla Windows PowerShell, aby je uruchomić. Ewentualnie możesz użyć funkcji Windows PowerShell ISE.
+Skopiuj polecenia i wklej je do Notatnik. Dla **zmiennych $upnName** i **$roleName** . Zastąp tekst opisu wartościami. Usuń znaki, \< and > ale zachowaj cudzysłów. Wklej zmodyfikowane wiersze do modułu Microsoft Azure Active Directory, aby Windows PowerShell okno, aby je uruchomić. Alternatywnie można użyć Windows PowerShell ISE.
   
 Oto przykład ukończonego zestawu poleceń:
   
@@ -192,21 +192,21 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-### <a name="multiple-role-changes"></a>Wiele zmian ról
+### <a name="multiple-role-changes"></a>Zmiany wielu ról
 
-W przypadku wielu zmian ról należy ustalić następujące informacje:
+W przypadku wielu zmian roli określ następujące informacje:
   
-- Konta użytkowników, które chcesz skonfigurować. Za pomocą metod poprzednich sekcji można zebrać zestaw nazw wyświetlanych lub nazw UPN.
+- Które konta użytkowników chcesz skonfigurować. Metody z poprzedniej sekcji umożliwiają zebranie zestawu nazw wyświetlanych lub nazw UPN.
     
-- Role, które chcesz przypisać do każdego konta użytkownika. Aby wyświetlić listę dostępnych ról, które można przypisać do kont użytkowników, użyj tego polecenia:
+- Jakie role chcesz przypisać do każdego konta użytkownika. Aby wyświetlić listę dostępnych ról, które można przypisać do kont użytkowników, użyj tego polecenia:
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Następnie utwórz plik tekstowy wartości rozdzielanych przecinkami (CSV), który zawiera pola nazwy wyświetlanej lub głównej nazwy użytkownika i nazwy roli. Możesz to zrobić łatwo w Microsoft Excel.
+Następnie utwórz plik tekstowy wartości rozdzielanej przecinkami (CSV), który ma nazwę wyświetlaną lub nazwę UPN i pola nazwy roli. Można to zrobić łatwo w Microsoft Excel.
 
-Oto przykład nazw wyświetlanych:
+Oto przykład dla nazw wyświetlanych:
   
 ```powershell
 DisplayName,RoleName
@@ -214,7 +214,7 @@ DisplayName,RoleName
 "Scott Wallace","SharePoint Service Administrator"
 ```
 
-Następnie wprowadź lokalizację pliku CSV i uruchom wynikowe polecenia w wierszu polecenia programu PowerShell.
+Następnie wypełnij lokalizację pliku CSV i uruchom wynikowe polecenia w wierszu polecenia programu PowerShell.
   
 ```powershell
 $fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
@@ -222,7 +222,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ```
 
-Oto przykład dla upnów:
+Oto przykład dla nazw UPN:
   
 ```powershell
 UserPrincipalName,RoleName
@@ -230,7 +230,7 @@ UserPrincipalName,RoleName
 "scottw@contoso.com","SharePoint Service Administrator"
 ```
 
-Następnie wprowadź lokalizację pliku CSV i uruchom wynikowe polecenia w wierszu polecenia programu PowerShell.
+Następnie wypełnij lokalizację pliku CSV i uruchom wynikowe polecenia w wierszu polecenia programu PowerShell.
   
 ```powershell
 $fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
@@ -240,6 +240,6 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Zarządzanie Microsoft 365 użytkownikami, licencjami i grupami za pomocą programu PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-- [Zarządzanie Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-- [Wprowadzenie do programu PowerShell dla Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+- [Zarządzanie Microsoft 365 kontami użytkowników, licencjami i grupami przy użyciu programu PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+- [Zarządzanie platformą Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+- [Wprowadzenie za pomocą programu PowerShell dla Microsoft 365](getting-started-with-microsoft-365-powershell.md)

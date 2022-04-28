@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych mobilnych systemu Android
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik TeleMessage do importowania i archiwizowania wiadomości SMS, MMS i połączeń głosowych z telefonów komórkowych z systemem Android. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
-ms.openlocfilehash: 30c6784c4a724f38c4f1e6e0e8ad81cf9c1b93cd
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b250d87ca84360f62467d2e0853384e4fbb1eaef
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997517"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65087002"
 ---
 # <a name="set-up-a-connector-to-archive-android-mobile-data"></a>Konfigurowanie łącznika do archiwizowania danych mobilnych systemu Android
 

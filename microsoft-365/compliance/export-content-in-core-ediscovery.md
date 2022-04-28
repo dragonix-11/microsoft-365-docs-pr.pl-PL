@@ -2,8 +2,8 @@
 title: Eksportowanie i pobieranie zawartości z przypadku zbierania elektronicznych materiałów dowodowych (Standardowa)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Opis sposobu eksportowania i pobierania zawartości z przypadku zbierania elektronicznych materiałów dowodowych (Standard) w Microsoft 365.
-ms.openlocfilehash: 2a63d22c8b4cb20e2c0f1317a8496e1cf517b2da
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: fb142a735d30a59735bd4f9a6370543a92f3d926
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995453"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095845"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>Eksportowanie zawartości ze sprawy zbierania elektronicznych materiałów dowodowych (standardowa)
 

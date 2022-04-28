@@ -2,8 +2,8 @@
 title: Tworzenie i uruchamianie wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Użyj narzędzia content search eDiscovery w centrum zgodności, aby wyszukać zawartość w różnych usługach Microsoft 365.
-ms.openlocfilehash: f5d8a398f36c1ab3c0f83234718346e8dd20434e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 418bdffd71e83aea548c21589c6b8c08ae2419e8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994514"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097101"
 ---
 # <a name="create-a-content-search"></a>Tworzenie wyszukiwania zawartości
 

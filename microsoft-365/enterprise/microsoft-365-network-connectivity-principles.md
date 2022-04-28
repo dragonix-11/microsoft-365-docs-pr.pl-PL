@@ -2,7 +2,7 @@
 title: Zasady dotyczące łączności sieciowej na platformie Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/23/2020
 audience: Admin
 ms.topic: conceptual
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Ten artykuł zawiera najnowsze wskazówki dotyczące bezpiecznej optymalizacji Microsoft 365 łączności sieciowej.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e92f30c356ae782ba7d4d3bb779b744bccebf320
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 082061eeeb3443068eaa13cb0b91f8e93adefb21
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944486"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078784"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Zasady dotyczące łączności sieciowej na platformie Microsoft 365
 

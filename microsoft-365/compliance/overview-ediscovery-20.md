@@ -2,8 +2,8 @@
 title: Omówienie rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Dowiedz się więcej o rozwiązaniu eDiscovery (Premium) w usłudze Microsoft Purview. Ten artykuł zawiera omówienie zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview— narzędzia ułatwiającego zarządzanie badaniami wewnętrznymi i zewnętrznymi. Określa również przyczyny biznesowe użycia zbierania elektronicznych materiałów dowodowych (Premium) do zarządzania dochodzeniami prawnymi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a26d1abe9965ad71383a6d07e277999d85e31ef
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 577ad5f03b015a7fbe447083141729df4937f515
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999085"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096903"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Omówienie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)
 
@@ -136,7 +136,7 @@ Istnieją dwa szybkie i łatwe kroki, aby rozpocząć pracę zbierania elektroni
 
 |Kroki  |Opis  |
 |:---------|:---------|
-|[Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md)| Po zweryfikowaniu wymagań dotyczących subskrypcji i licencjonowania możesz przypisać uprawnienia i skonfigurować ustawienia dla całej organizacji, aby rozpocząć pracę zbierania elektronicznych materiałów dowodowych (Premium).|
+|[Konfiguruj zbieranie elektronicznych materiałów dowodowych (wersja Premium)](get-started-with-advanced-ediscovery.md)| Po zweryfikowaniu wymagań dotyczących subskrypcji i licencjonowania możesz przypisać uprawnienia i skonfigurować ustawienia dla całej organizacji, aby rozpocząć pracę zbierania elektronicznych materiałów dowodowych (Premium).|
 |[Tworzenie spraw i zarządzanie nimi](create-and-manage-advanced-ediscoveryv2-case.md) | Tworzenie spraw do zarządzania przepływem pracy zbierania elektronicznych materiałów dowodowych (Premium) dla wszystkich prawnych i innych typów dochodzeń w organizacji.|
 |||
 

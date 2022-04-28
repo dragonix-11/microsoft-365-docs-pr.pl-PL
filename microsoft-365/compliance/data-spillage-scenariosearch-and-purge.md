@@ -2,8 +2,8 @@
 title: Seria rozwiązań zbierania elektronicznych materiałów dowodowych Scenariusz rozlania danych — wyszukiwanie i przeczyszczanie
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: ITPro
 ms.topic: how-to
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Użyj zbierania elektronicznych materiałów dowodowych i narzędzi wyszukiwania, aby zarządzać zdarzeniem wycieku danych w organizacji i reagować na nie.
-ms.openlocfilehash: 875c63f264e750603c4ad8a0b5bf1df2b6e45217
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 9be20d6c8eab99206a5510be6f21d3ca24114e0e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993233"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65086958"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Seria rozwiązań zbierania elektronicznych materiałów dowodowych: scenariusz rozlania danych — wyszukiwanie i przeczyszczanie
 

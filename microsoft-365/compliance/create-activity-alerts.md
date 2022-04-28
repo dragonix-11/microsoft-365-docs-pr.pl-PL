@@ -2,8 +2,8 @@
 title: Tworzenie alertów aktywności
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 11/7/2017
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Dodawanie alertów dotyczących działań i zarządzanie nimi w portalu zgodności usługi Microsoft Purview, dzięki czemu Microsoft 365 będzie wysyłać powiadomienia e-mail, gdy użytkownicy wykonują określone działania
-ms.openlocfilehash: 43991eaf0f80957b0d72a2f16a2021f24194f2d6
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 99cbbe4a03047b5cf8ef366a228fc78fe9dfbda1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995035"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097013"
 ---
 # <a name="create-activity-alerts"></a>Tworzenie alertów aktywności
 

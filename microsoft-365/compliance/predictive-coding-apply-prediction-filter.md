@@ -2,8 +2,8 @@
 title: Stosowanie filtru wyniku przewidywania do zestawu przeglądów
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Użyj filtru oceny przewidywania, aby wyświetlić elementy, które model kodowania predykcyjnego są przewidywane jako odpowiednie lub nieistotne.
-ms.openlocfilehash: ab97c91196456b69f7f420ccd317747f638b4ee5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 64abac8b9f53baa9afb869d77296089544919fea
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993079"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096617"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Stosowanie filtru wyniku przewidywania do zestawu przeglądów (wersja zapoznawcza)
 

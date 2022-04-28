@@ -2,8 +2,8 @@
 title: Dokumentacja dotycząca funkcji wyszukiwania zawartości
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Ten artykuł zawiera informacje referencyjne dotyczące narzędzia do zbierania elektronicznych materiałów dowodowych wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, które ułatwiają zapoznanie się z wieloma szczegółami dotyczącymi wyszukiwania zawartości.
-ms.openlocfilehash: 72088b1a1bd2e3f3ba2c38ee827c6eb46b7c893a
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8d7f1497a0dbd400536dd74c5abd4b9e3be7e29f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995717"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097123"
 ---
 # <a name="feature-reference-for-content-search"></a>Dokumentacja dotycząca funkcji wyszukiwania zawartości
 
@@ -192,7 +192,7 @@ Możesz użyć właściwości e-mail **ItemClass** lub warunku wyszukiwania **ty
 
 ## <a name="searching-inactive-mailboxes"></a>Wyszukiwanie nieaktywnych skrzynek pocztowych
 
-Nieaktywne skrzynki pocztowe można wyszukiwać w wyszukiwaniu zawartości. Aby uzyskać listę nieaktywnych skrzynek pocztowych w organizacji, uruchom polecenie `Get-Mailbox -InactiveMailboxOnly` w Exchange Online programu PowerShell. Alternatywnie możesz przejść do pozycji **Przechowywanie** **ładu** \> informacji w Centrum zgodności & zabezpieczeń, a **następnie kliknąć** wielokropek ![morenavigation bar.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**Nieaktywne skrzynki pocztowe**.
+Nieaktywne skrzynki pocztowe można wyszukiwać w wyszukiwaniu zawartości. Aby uzyskać listę nieaktywnych skrzynek pocztowych w organizacji, uruchom polecenie `Get-Mailbox -InactiveMailboxOnly` w Exchange Online programu PowerShell. Alternatywnie możesz przejść do obszaru **Przechowywanie** **zarządzania cyklem** \> życia danych w portalu zgodności usługi Microsoft Purview, a następnie kliknąć wielokropek **MoreNavigation**![ Bar.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**Nieaktywne skrzynki pocztowe**.
 
 Oto kilka kwestii, o których należy pamiętać podczas wyszukiwania nieaktywnych skrzynek pocztowych.
 

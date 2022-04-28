@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 053326cacaeb2b4110f71edaa290ed10454aa720
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 56e22e0525324c59d2d62adaf2325edc3317ccd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731653"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096055"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Co nowego w usłudze Microsoft 365 Defender
 
@@ -46,10 +46,13 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 Aktualizacje produktów i ważne powiadomienia można również uzyskać za pośrednictwem [centrum komunikatów](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
 
+## <a name="april-2022"></a>Kwiecień 2022 r.
+- (wersja zapoznawcza) Teraz można wykonywać [akcje](advanced-hunting-take-action.md) dotyczące wiadomości e-mail bezpośrednio z wyników zapytania wyszukiwania zagrożeń. Wiadomości e-mail można przenosić do innych folderów lub trwale usuwać. 
 
 ## <a name="march-2022"></a>Marzec 2022 r.
 
 - (wersja zapoznawcza) Kolejka zdarzeń została rozszerzona o kilka funkcji, które ułatwiają badanie. Ulepszenia obejmują funkcje, takie jak możliwość wyszukiwania zdarzeń według identyfikatora lub nazwy, określania niestandardowego zakresu czasu i innych.
+
 
 ## <a name="december-2021"></a>Grudzień 2021
 

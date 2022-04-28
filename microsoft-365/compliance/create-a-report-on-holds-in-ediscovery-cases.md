@@ -2,8 +2,8 @@
 title: Tworzenie raportu zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 9/11/2017
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak wygenerować raport zawierający informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 98cdad3d125fbeab9afd9d7d99b572e5f0bf7386
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1b36b134b8de490e5ca7d9e61044a3c7cac4904f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993211"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097035"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Tworzenie raportu dotyczącego blokad w przypadkach zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
 

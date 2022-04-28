@@ -2,8 +2,8 @@
 title: Obsługiwane typy plików zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Lista obsługiwanych typów plików w Microsoft 365 eDiscovery (Premium), w tym typy plików obrazów obsługiwane przez funkcję OCR w funkcji eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95adaf84f5281b943720be595b0e0e4aababd91f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 422200b3015ff86566507cbe3f63bc2a75a84bea
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996751"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095801"
 ---
 # <a name="supported-file-types-in-ediscovery-premium"></a>Obsługiwane typy plików zbierania elektronicznych materiałów dowodowych (Premium)
 

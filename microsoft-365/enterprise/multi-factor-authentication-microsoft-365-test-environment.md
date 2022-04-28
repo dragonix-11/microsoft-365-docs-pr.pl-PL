@@ -1,10 +1,10 @@
 ---
-title: Microsoft 365 do uwierzytelniania wieloskładnikowego w środowisku testowym w przedsiębiorstwie
+title: Microsoft 365 na potrzeby uwierzytelniania wieloskładnikowego w środowisku testowym przedsiębiorstwa
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
@@ -16,134 +16,134 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: Skonfiguruj uwierzytelnianie wieloskładnikowe przy użyciu wiadomości SMS wysyłanych na smartfon w Microsoft 365 testowania przedsiębiorstwa.
-ms.openlocfilehash: d3207db4d8537e78ecc83ae18f8539f0e4f56106
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+description: Skonfiguruj uwierzytelnianie wieloskładnikowe przy użyciu wiadomości sms wysyłanych do telefonu inteligentnego w Microsoft 365 dla środowiska testowego przedsiębiorstwa.
+ms.openlocfilehash: aa72375342bdf60e1fe1bc504f14b1f51a48b701
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63013872"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078740"
 ---
-# <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Uwierzytelnianie wieloskładnikowe w Microsoft 365 testowania przedsiębiorstwa
+# <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Uwierzytelnianie wieloskładnikowe dla Microsoft 365 dla środowiska testowego przedsiębiorstwa
 
-*Ten przewodnik laboratorium testowego może być używany zarówno w przypadku Microsoft 365 przedsiębiorstwa, Office 365 Enterprise testowych.*
+*Ten przewodnik po laboratorium testowym może służyć zarówno do Microsoft 365 dla środowisk testowych dla przedsiębiorstw, jak i Office 365 Enterprise.*
 
-Aby zapewnić dodatkowy poziom zabezpieczeń podczas logowania się do usługi Microsoft 365 lub dowolnej usługi lub dowolnej aplikacji, która korzysta z dzierżawy usługi Azure AD dla Twojej subskrypcji, możesz włączyć uwierzytelnianie wieloskładnikowe usługi Azure AD, które do zweryfikowania konta wymaga więcej niż tylko nazwy użytkownika i hasła.
+Aby uzyskać dodatkowy poziom zabezpieczeń logowania do Microsoft 365 lub dowolnej usługi lub aplikacji korzystającej z dzierżawy usługi Azure AD w ramach subskrypcji, możesz włączyć uwierzytelnianie wieloskładnikowe usługi Azure AD, które wymaga więcej niż tylko nazwy użytkownika i hasła w celu zweryfikowania konta.
 
-W przypadku uwierzytelniania wieloskładnikowego użytkownicy muszą potwierdzić połączenie telefoniczne, wpisać kod weryfikacyjny wysłany w wiadomości SMS lub zweryfikować uwierzytelnianie za pomocą aplikacji na telefonach inteligentnych po prawidłowym wprowadzeniu haseł. Mogą zalogować się dopiero po zadowoleniu z tego drugiego czynnika uwierzytelniania.
+W przypadku uwierzytelniania wieloskładnikowego użytkownicy muszą potwierdzić połączenie telefoniczne, wpisać kod weryfikacyjny wysłany w wiadomości SMS lub zweryfikować uwierzytelnianie przy użyciu aplikacji na swoich smartfonach po poprawnym wprowadzeniu haseł. Mogą zalogować się dopiero po spełnieniu tego drugiego współczynnika uwierzytelniania.
   
-W tym artykule opisano, jak włączyć i przetestować uwierzytelnianie oparte na wiadomościach SMS dla określonego konta użytkownika.
+W tym artykule opisano sposób włączania i testowania uwierzytelniania opartego na wiadomościach tekstowych dla określonego konta użytkownika.
   
-Konfigurowanie uwierzytelniania wieloskładnikowego dla konta w środowisku testowania Microsoft 365 dla przedsiębiorstwa obejmuje dwie fazy i trzecią fazę opcjonalną:
-- [Etap 1. Tworzenie środowiska testowego Microsoft 365 przedsiębiorstwa](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [Etap 2. Włączanie i testowanie uwierzytelniania wieloskładnikowego dla konta użytkownika 2](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
-- [Etap 3. Włączanie i testowanie uwierzytelniania wieloskładnikowego przy użyciu zasad dostępu warunkowego](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
+Konfigurowanie uwierzytelniania wieloskładnikowego dla konta w Microsoft 365 dla środowiska testowego przedsiębiorstwa obejmuje dwie fazy i trzecią fazę opcjonalną:
+- [Faza 1. Tworzenie Microsoft 365 dla środowiska testowego przedsiębiorstwa](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Faza 2. Włączanie i testowanie uwierzytelniania wieloskładnikowego dla konta użytkownika 2](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
+- [Faza 3. Włączanie i testowanie uwierzytelniania wieloskładnikowego przy użyciu zasad dostępu warunkowego](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
-![Przewodniki laboratorium testowego dotyczące chmury firmy Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Przewodniki laboratorium testowego dla chmury firmy Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Aby uzyskać wizualną mapę do wszystkich artykułów w stosie przewodników laboratorium testowego Microsoft 365 dla przedsiębiorstw, przejdź do tematu Microsoft 365 — przewodnik laboratorium testowego w [przedsiębiorstwie](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Aby uzyskać wizualną mapę na wszystkie artykuły w stosie przewodnika Microsoft 365 dla laboratorium testowego dla przedsiębiorstw, przejdź do [Microsoft 365 stosu przewodników laboratorium testowego dla przedsiębiorstw](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Etap 1. Tworzenie środowiska testowego Microsoft 365 przedsiębiorstwa
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Faza 1. Tworzenie Microsoft 365 dla środowiska testowego przedsiębiorstwa
 
-Jeśli chcesz tylko przetestować uwierzytelnianie wieloskładnikowe przy minimalnym poziomie wymagań, postępuj zgodnie z instrukcjami w teście Konfiguracja podstawowa[.](lightweight-base-configuration-microsoft-365-enterprise.md)
+Jeśli chcesz tylko przetestować uwierzytelnianie wieloskładnikowe w sposób uproszczony z minimalnymi wymaganiami, postępuj zgodnie z instrukcjami w temacie [Uproszczona konfiguracja podstawowa](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Jeśli chcesz przetestować uwierzytelnianie wieloskładnikowe w symulowanym przedsiębiorstwie, wykonaj instrukcje z uwierzytelniania [pass-through](pass-through-auth-m365-ent-test-environment.md).
+Jeśli chcesz przetestować uwierzytelnianie wieloskładnikowe w symulowanym przedsiębiorstwie, postępuj zgodnie z instrukcjami w temacie [Uwierzytelnianie przekazywane](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testowanie uwierzytelniania wieloskładnikowego nie wymaga symulowanego środowiska testowania przedsiębiorstwa, które obejmuje symulowany intranet połączony z Internetem i synchronizację katalogów dla lasu Usługi domenowe w usłudze Active Directory (AD DS). Jest on podany jako opcja, która umożliwia przetestowanie uwierzytelniania wieloskładnikowego i eksperymentowanie z nim w środowisku reprezentującym typową organizację.
+> Testowanie uwierzytelniania wieloskładnikowego nie wymaga symulowanego środowiska testowego przedsiębiorstwa, które obejmuje symulowany intranet połączony z Internetem i synchronizację katalogów dla lasu Active Directory Domain Services (AD DS). Jest ona dostępna tutaj jako opcja, dzięki czemu można przetestować uwierzytelnianie wieloskładnikowe i eksperymentować z nim w środowisku reprezentującym typową organizację.
   
-## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>Etap 2. Włączanie i testowanie uwierzytelniania wieloskładnikowego dla konta użytkownika 2
+## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>Faza 2. Włączanie i testowanie uwierzytelniania wieloskładnikowego dla konta użytkownika 2
 
-Aby włączyć uwierzytelnianie wieloskładnikowe dla konta użytkownika 2, należy wykonać następujące czynności:
+Włącz uwierzytelnianie wieloskładnikowe dla konta użytkownika 2, wykonując następujące kroki:
   
-1. Otwórz osobne prywatne wystąpienie przeglądarki, przejdź do centrum administracyjne platformy Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)), a następnie zaloguj się przy użyciu konta administratora globalnego.
+1. Otwórz oddzielne prywatne wystąpienie przeglądarki, przejdź do Centrum administracyjne platformy Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)), a następnie zaloguj się przy użyciu konta administratora globalnego.
     
-2. W lewym okienku nawigacji wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UżytkownicyAktywowanie**</a> >  użytkowników.
+2. W obszarze nawigacji po lewej stronie wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UżytkownicyAktywni**</a> >  użytkownicy.
     
 3. W okienku Aktywni użytkownicy wybierz pozycję **Uwierzytelnianie wieloskładnikowe**.
     
-4. Z listy wybierz konto **użytkownika 2** .
+4. Na liście wybierz konto **Użytkownika 2** .
     
 5. W sekcji **Użytkownik 2** w obszarze **Szybkie kroki** wybierz pozycję **Włącz**.
     
-6. W **oknie dialogowym Włączanie uwierzytelniania wieloskładnikowego —** informacje wybierz pozycję **Włącz usługę Multi-FactorAuth**.
+6. W oknie dialogowym **Informacje o włączaniu uwierzytelniania wieloskładnikowego** wybierz pozycję Włącz uwierzytelnianie **wieloskładnikowe**.
     
-7. W **oknie dialogowym** Aktualizacje po pomyślnym wybraniu przycisku **Zamknij**.
+7. W oknie dialogowym **Aktualizacje zakończone pomyślnie** wybierz pozycję **Zamknij**.
     
-8. Na karcie **centrum administracyjne platformy Microsoft 365** wybierz ikonę konta użytkownika w prawym górnym rogu, a następnie wybierz pozycję **Wyloguj.**
+8. Na karcie **Centrum administracyjne platformy Microsoft 365** wybierz ikonę konta użytkownika w prawym górnym rogu, a następnie wybierz pozycję **Wyloguj.**
     
 9. Zamknij wystąpienie przeglądarki.
    
-Wykonaj konfigurację dla konta użytkownika 2, aby użyć wiadomości SMS do sprawdzenia poprawności i przetestować ją za pomocą poniższych kroków:
+Wykonaj konfigurację konta użytkownika 2, aby użyć wiadomości SMS do weryfikacji i przetestować je, wykonując następujące kroki:
   
 1. Otwórz nowe, prywatne wystąpienie przeglądarki.
     
-2. Przejdź do tego [centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) i zaloguj się za pomocą nazwy konta użytkownika 2 i hasła.
+2. Przejdź do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) i zaloguj się przy użyciu nazwy konta użytkownika 2 i hasła.
     
-3. Po zalogowaniu się zostanie wyświetlony monit o skonfigurowanie konta, aby uzyskać więcej informacji. Wybierz pozycję **Dalej**.
+3. Po zalogowaniu zostanie wyświetlony monit o skonfigurowanie konta, aby uzyskać więcej informacji. Wybierz pozycję **Dalej**.
     
-4. Na stronie **Dodatkowa weryfikacja** zabezpieczeń:
+4. Na stronie **Dodatkowa weryfikacja zabezpieczeń** :
     
    - Wybierz swój kraj lub region.
     
-   - Wprowadź numer telefonu inteligentnego, który będzie odbierał wiadomości TEKSTOWE.
+   - Wprowadź numer telefonu inteligentnego, który będzie odbierać wiadomości SMS.
     
-   - W **polu Metoda** wybierz **pozycję Wyślij mi kod za pomocą wiadomości SMS**.
+   - W **obszarze Metoda** wybierz **pozycję Wyślij mi kod według wiadomości SMS**.
     
 5. Wybierz pozycję **Dalej**.
     
-6. Wprowadź kod weryfikacyjny z wiadomości SMS otrzymanej na smartfonie, a następnie wybierz pozycję **Weryfikuj**.
+6. Wprowadź kod weryfikacyjny z wiadomości SMS odebranej na telefonie inteligentnym, a następnie wybierz pozycję **Weryfikuj**.
     
-7. Na stronie **Krok 3. Zachowaj istniejące aplikacje** wybierz pozycję **Gotowe**.
+7. Na stronie **Krok 3: Zachowaj istniejące aplikacje** wybierz pozycję **Gotowe**.
     
-8. Jeśli po raz pierwszy zalogowano się przy użyciu konta użytkownika 2, zostanie wyświetlony monit o zmianę hasła. Wprowadź hasło oryginalne i nowe dwa razy, a następnie wybierz pozycję **Aktualizuj hasło i zaloguj się**. Zanotuj nowe hasło w bezpiecznym miejscu.
+8. Jeśli po raz pierwszy zalogowano się przy użyciu konta użytkownika 2, zostanie wyświetlony monit o zmianę hasła. Wprowadź dwa razy oryginalne hasło i nowe hasło, a następnie wybierz pozycję **Zaktualizuj hasło i zaloguj się**. Zarejestruj nowe hasło w bezpiecznej lokalizacji.
     
-    Na karcie Narzędzia Office główne w przeglądarce powinien zostać wyświetlony portal Office dla użytkowników **Microsoft Office** 2.
+    Na karcie **Narzędzia główne Microsoft Office** w przeglądarce powinien zostać wyświetlony portal Office dla użytkownika 2.
 
-## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>Etap 3. Włączanie i testowanie uwierzytelniania wieloskładnikowego przy użyciu zasad dostępu warunkowego
+## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>Faza 3. Włączanie i testowanie uwierzytelniania wieloskładnikowego przy użyciu zasad dostępu warunkowego
 
-*Tej fazy można używać tylko w przypadku Microsoft 365 w środowisku testowania przedsiębiorstwa.*
+*Ta faza może być używana tylko dla Microsoft 365 dla środowiska testowego przedsiębiorstwa.*
 
-W tej fazie włącz uwierzytelnianie wieloskładnikowe dla konta użytkownika 3 przy użyciu grupy i zasad dostępu warunkowego.
+W tej fazie włączysz uwierzytelnianie wieloskładnikowe dla konta użytkownika 3 przy użyciu grupy i zasad dostępu warunkowego.
 
-Następnie utwórz nową grupę o nazwie MFAUsers i dodaj do niego konto Użytkownika 3.
+Następnie utwórz nową grupę o nazwie MFAUsers i dodaj do niej konto Użytkownika 3.
 
-1. Na karcie **centrum administracyjne platformy Microsoft 365** grupy w lewym obszarze nawigacji,  a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupy**</a>.
+1. Na karcie **Centrum administracyjne platformy Microsoft 365** wybierz pozycję **Grupy** w lewym obszarze nawigacji, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupy**</a>.
 2. Wybierz **pozycję Dodaj grupę**.
-3. W **okienku Wybierz typ grupy** wybierz pozycję **Zabezpieczenia**, a następnie wybierz pozycję **Dalej**.
-4. W **okienku Konfigurowanie podstawowych funkcji** wybierz pozycję **Utwórz grupę**, a następnie wybierz pozycję **Zamknij**.
-5. W **okienku Przeglądanie i kończanie dodawania grupy** wprowadź **nazwę MFAUsers**, a następnie wybierz pozycję **Dalej**.
-6. Na liście grup wybierz **grupę MFAUsers** .
-7. W **okienku Użytkownicy uwierzytelniania wieloskładnikowego** wybierz **pozycję Członkowie**, a następnie wybierz pozycję **Wyświetl wszystkich członków i zarządzaj nimi**.
-8. W **okienku Użytkownicy uwierzytelniania wieloskładnikowego** wybierz pozycję **Dodaj** członków, wybierz konto użytkownika **3**, a następnie wybierz pozycję **SaveCloseClose** >  > .
+3. W okienku **Wybierz typ grupy** wybierz pozycję **Zabezpieczenia**, a następnie wybierz pozycję **Dalej**.
+4. W **okienku Konfigurowanie podstaw** wybierz pozycję **Utwórz grupę**, a następnie wybierz pozycję **Zamknij**.
+5. W okienku **Przeglądanie i zakończenie dodawania grupy** wprowadź **wartość MFAUsers**, a następnie wybierz pozycję **Dalej**.
+6. Na liście grup wybierz grupę **MFAUsers** .
+7. W okienku **MFAUsers** wybierz pozycję **Członkowie**, a następnie wybierz pozycję **Wyświetl wszystkich członków i zarządzaj nimi**.
+8. W okienku **MFAUsers** wybierz pozycję **Dodaj członków**, wybierz konto **Użytkownika 3**, a następnie wybierz pozycję **SaveCloseClose** >  > .
 
-Następnie utwórz zasady dostępu warunkowego, aby wymagać uwierzytelniania wieloskładnikowego dla członków grupy Użytkownicy uwierzytelniania WIELOSKŁADNIKOWEGO.
+Następnie utwórz zasady dostępu warunkowego, aby wymagać uwierzytelniania wieloskładnikowego dla członków grupy MFAUsers.
 
-1. Na nowej karcie przeglądarki przejdź do .[https://portal.azure.com](https://portal.azure.com)
-2. Wybierz **Azure Active Directory** >  **SecurityConditional** >  Access.
-3. W **okienku Dostęp warunkowy —** zasady wybierz pozycję **Nowe zasady**.
-4. W **okienku Nowy** wprowadź **uwierzytelniania MFA dla kont użytkowników** w **polu** Nazwa.
-5. W sekcji **Zadania wybierz** pozycję **Użytkownicy i grupy**.
-6. Na karcie **Dołączanie** **okienka Użytkownicy i** grupy wybierz pozycję **Zaznacz użytkowników i** >  **grupyUżytkowcy i grupyZaznaczanie** > .
-7. W **okienku** Wybieranie wybierz **grupę MfAUsers**, a następnie wybierz **pozycję** **SelectDone** > .
-8. W sekcji **Kontrolki programu Access** w **okienku Nowy** wybierz pozycję **U grant**.
-9. W **okienku Udzielanie** wybierz pozycję **Wymagaj uwierzytelniania wieloskładnikowego**, a następnie wybierz pozycję **Wybierz**.
-10. W **okienku Nowy** wybierz pozycję **Włącz dla** **opcji Włącz zasady**, a następnie wybierz pozycję **Utwórz**.
-11. Zamknij Portal **Azure i** **centrum administracyjne platformy Microsoft 365** karty.
+1. Na nowej karcie przeglądarki przejdź do [https://portal.azure.com](https://portal.azure.com)pozycji .
+2. Wybierz **pozycję Azure Active Directory** >  **SecurityDostęp** >  **warunkowy**.
+3. W okienku **Dostęp warunkowy — zasady** wybierz pozycję **Nowe zasady**.
+4. W okienku **Nowy** wprowadź uwierzytelnianie wieloskładnikowe **dla kont użytkowników** w polu **Nazwa** .
+5. W sekcji **Przypisania** wybierz pozycję **Użytkownicy i grupy**.
+6. Na karcie **Dołączanie** w okienku **Użytkownicy i grupy** wybierz pozycję **Wybierz użytkowników i** **grupyUżytkownicy** >  i **grupyWybierz** > .
+7. W okienku **Wybierz** wybierz grupę **MFAUsers**, a następnie wybierz pozycję **SelectDone** > .
+8. W sekcji **Kontrolki dostępu** w okienku **Nowy** wybierz pozycję **Udziel**.
+9. W okienku **Udzielanie** wybierz pozycję **Wymagaj uwierzytelniania wieloskładnikowego**, a następnie wybierz pozycję **Wybierz**.
+10. W okienku **Nowy** wybierz pozycję **Włączone** w **obszarze Włącz zasady**, a następnie wybierz pozycję **Utwórz**.
+11. Zamknij karty **Azure Portal** i **Centrum administracyjne platformy Microsoft 365**.
 
-Aby przetestować te zasady, wyloguj się i zaloguj się przy użyciu konta Użytkownika 3. Powinien zostać wyświetlony monit o skonfigurowanie uwierzytelniania MFA. Pokazuje to, że stosowana jest zasada MFAUsers.
+Aby przetestować te zasady, wyloguj się i zaloguj się przy użyciu konta użytkownika 3. Powinien zostać wyświetlony monit o skonfigurowanie uwierzytelniania wieloskładnikowego. Pokazuje to, że zasady MFAUsers są stosowane.
 
 ## <a name="next-step"></a>Następny krok
 
-Poznaj [dodatkowe funkcje tożsamości](m365-enterprise-test-lab-guides.md#identity) i możliwości w środowisku testowym.
+Zapoznaj się z dodatkowymi funkcjami i możliwościami [tożsamości](m365-enterprise-test-lab-guides.md#identity) w środowisku testowym.
 
 ## <a name="see-also"></a>Zobacz też
 
 [Wdrażanie tożsamości](deploy-identity-solution-overview.md)
 
-[Microsoft 365 laboratorium testowego dla przedsiębiorstw](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 dla przewodników laboratorium testowego w przedsiębiorstwie](m365-enterprise-test-lab-guides.md)
 
-[Omówienie Microsoft 365 dla przedsiębiorstw](microsoft-365-overview.md)
+[Microsoft 365 dla przedsiębiorstw — omówienie](microsoft-365-overview.md)
 
-[Microsoft 365 dla przedsiębiorstw](/microsoft-365-enterprise/)
+[Dokumentacja dotycząca subskrypcji Microsoft 365 dla Przedsiębiorstw](/microsoft-365-enterprise/)

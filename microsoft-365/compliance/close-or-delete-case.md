@@ -2,8 +2,8 @@
 title: Zamknij lub usuń sprawę
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, co się stanie, gdy dochodzenie lub sprawa prawna obsługiwana przez sprawę zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) zostanie zamknięta lub usunięta.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 45bf34450b430d7d33316fe0e6c6a21d12be2937
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f6428360c76862a0c4ff0c81b1cb83fb8760d789
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993255"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096083"
 ---
 # <a name="close-or-delete-an-ediscovery-premium-case"></a>Zamykanie lub usuwanie sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 

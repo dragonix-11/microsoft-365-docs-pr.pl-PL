@@ -1,8 +1,8 @@
 ---
-title: Jak skonfigurować nowoczesne Exchange Server w środowisku lokalnym
+title: Jak skonfigurować Exchange Server lokalnie do korzystania z nowoczesnego uwierzytelniania hybrydowego
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/27/2021
 audience: ITPro
 ms.topic: article
@@ -15,65 +15,65 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Dowiedz się, jak skonfigurować Exchange Server w środowisku lokalnym na użytek nowoczesnego uwierzytelniania hybrydowego, co zapewnia większe bezpieczeństwo w uwierzytelnianiu i autoryzacji użytkowników.
+description: Dowiedz się, jak skonfigurować Exchange Server lokalnie do korzystania z nowoczesnego uwierzytelniania hybrydowego (HMA), oferując bezpieczniejsze uwierzytelnianie i autoryzację użytkowników.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0889008595717308695c1ad9c5d2a9f1766d1ea
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2ee190a541fdf3e4e77a251e040f2cb69416088c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021328"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095757"
 ---
-# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Jak skonfigurować nowoczesne Exchange Server w środowisku lokalnym
+# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Jak skonfigurować Exchange Server lokalnie do korzystania z nowoczesnego uwierzytelniania hybrydowego
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Nowoczesne uwierzytelnianie hybrydowe (HMA, Hybrid Modern Authentication) jest metodą zarządzania tożsamością, która oferuje bezpieczniejsze uwierzytelnianie i autoryzację użytkowników oraz jest dostępna Exchange lokalnych wdrożeń hybrydowych na serwerze.
+Nowoczesne uwierzytelnianie hybrydowe (HMA) to metoda zarządzania tożsamościami, która oferuje bezpieczniejsze uwierzytelnianie i autoryzację użytkowników i jest dostępna w przypadku wdrożeń hybrydowych serwera Exchange.
 
 ## <a name="definitions"></a>Definicje
 
-Przed rozpoczęciem należy zapoznać się z pewnymi definicjami:
+Przed rozpoczęciem należy zapoznać się z niektórymi definicjami:
 
-- Nowoczesne uwierzytelnianie hybrydowe \> HMA
+- Hybrydowe nowoczesne uwierzytelnianie \> HMA
 
-- Exchange lokalnym \> EXCH
+- Exchange lokalnie \> EXCH
 
 - \> Exchange Online EXO
 
-Ponadto jeśli grafika w tym artykule zawiera obiekt, który jest "wyszarzony" lub "wyszarzony", co oznacza, że element pokazany na szaro nie jest uwzględniony w konfiguracji specyficznej dla usługi *HMA*.
+Ponadto *jeśli grafika w tym artykule zawiera obiekt "wyszarzony" lub "wygaszony", oznacza to, że element wyświetlany w kolorze szarym nie jest uwzględniony w konfiguracji specyficznej dla hma*.
 
 ## <a name="enabling-hybrid-modern-authentication"></a>Włączanie nowoczesnego uwierzytelniania hybrydowego
 
-Włączenie oznacza hma:
+Włączenie hma oznacza:
 
 1. Przed rozpoczęciem upewnij się, że spełniasz wymagania wstępne.
 
-1. Ponieważ wiele **wymagań wstępnych** jest wspólnych zarówno dla usług Skype dla firm, jak i Exchange, omówienie i wymagania wstępne nowoczesnego uwierzytelniania hybrydowego dotyczące używania go z lokalnymi Skype dla firm i Exchange [serwerami](hybrid-modern-auth-overview.md). Zrób to przed rozpoczęciem jakiejkolwiek czynności opisanej w tym artykule.
-Wymagania dotyczące wstawianych połączonych skrzynek pocztowych.
+1. Ponieważ wiele **wymagań wstępnych jest typowych** zarówno dla Skype dla firm, jak i Exchange, [omówienie nowoczesnego uwierzytelniania hybrydowego i wymagania wstępne dotyczące korzystania z niego z serwerami lokalnymi Skype dla firm i serwerami Exchange](hybrid-modern-auth-overview.md). Należy to zrobić przed rozpoczęciem wykonywania jakichkolwiek kroków opisanych w tym artykule.
+Wymagania dotyczące połączonych skrzynek pocztowych do wstawienia.
 
-1. Dodanie lokalnych adresów URL usług sieci Web jako **głównych nazw usług (SPN) w** usłudze Azure AD. Jeśli usługa EXCH jest w trybie hybrydowym z wieloma dzierżawami **, te** lokalne adresy URL usług sieci Web należy dodać jako adresy SPN w usłudze Azure AD wszystkich dzierżaw, które są w trybie hybrydowym z usługą EXCH.
+1. Dodawanie lokalnych adresów URL usługi internetowej jako **nazw głównych usług (SPN)** w usłudze Azure AD. Jeśli środowisko EXCH jest **hybrydowe z wieloma dzierżawami**, te lokalne adresy URL usługi internetowej muszą zostać dodane jako nazwy SPN w usłudze Azure AD wszystkich dzierżaw, które są w środowisku hybrydowym z usługą EXCH.
 
-1. Zapewnianie, że wszystkie katalogi wirtualne są włączone dla hma
+1. Zapewnianie, że wszystkie katalogi wirtualne są włączone dla usługi HMA
 
-1. Checking for theInalSTS Auth Server object
+1. Sprawdzanie obiektu EvoSTS Auth Server
 
-1. Włączanie hma w programie EXCH.
-
-> [!NOTE]
-> Czy Twoja wersja programu Office obsługuje mazowieńską? Zobacz [Jak działa nowoczesne uwierzytelnianie w aplikacjach Office 2013 i Office 2016](modern-auth-for-office-2013-and-2016.md).
-
-## <a name="make-sure-you-meet-all-the-prerequisites"></a>Upewnij się, że są spełnione wszystkie wymagania wstępne
-
-Ponieważ wiele wymagań wstępnych jest wspólnych zarówno dla usług Skype dla firm, jak i Exchange, zapoznaj się z omówieniem nowoczesnego uwierzytelniania hybrydowego i z omówieniem jego używania z lokalnymi Skype dla firm i Exchange [serwerami](hybrid-modern-auth-overview.md). Zrób to  *przed*  rozpoczęciem jakiejkolwiek czynności opisanej w tym artykule.
+1. Włączanie usługi HMA w programie EXCH.
 
 > [!NOTE]
-> Outlook Web App i Exchange nie działa z nowoczesnym uwierzytelnianiem hybrydowym.
+> Czy twoja wersja Office obsługuje ma? Zobacz [Jak działa nowoczesne uwierzytelnianie dla aplikacji klienckich Office 2013 i Office 2016](modern-auth-for-office-2013-and-2016.md).
 
-## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Dodawanie lokalnych adresów URL usługi sieci Web jako sieci SPN w usłudze Azure AD
+## <a name="make-sure-you-meet-all-the-prerequisites"></a>Upewnij się, że spełniasz wszystkie wymagania wstępne
 
-Uruchom polecenia, które przypiszą adresy URL lokalnych usług sieci Web jako adresy SPN usługi Azure AD. Sieci SPN są używane przez komputery klienckie i urządzenia podczas uwierzytelniania i autoryzacji. Wszystkie adresy URL, które mogą być używane do łączenia się z lokalnego połączenia z usługą Azure Active Directory (Azure AD) muszą być zarejestrowane w usłudze Azure AD (dotyczy to zarówno wewnętrznych, jak i zewnętrznych przestrzeni nazw).
+Ponieważ wiele wymagań wstępnych jest typowych zarówno dla Skype dla firm, jak i Exchange, zapoznaj się [z omówieniem nowoczesnego uwierzytelniania hybrydowego i wymaganiami wstępnymi dotyczącymi używania go z lokalnymi serwerami Skype dla firm i Exchange](hybrid-modern-auth-overview.md). Należy to zrobić  *przed rozpoczęciem*  wykonywania jakichkolwiek kroków opisanych w tym artykule.
 
-Najpierw zbierz wszystkie adresy URL, które chcesz dodać w AAD. Uruchom te polecenia lokalnie:
+> [!NOTE]
+> Outlook Web App i Exchange Panel sterowania nie współdziała z nowoczesnym uwierzytelnianiem hybrydowym.
+
+## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Dodawanie lokalnych adresów URL usługi internetowej jako nazw SPN w usłudze Azure AD
+
+Uruchom polecenia, które przypisują adresy URL lokalnej usługi internetowej jako nazwy SPN usługi Azure AD. Nazwy SPN są używane przez maszyny klienckie i urządzenia podczas uwierzytelniania i autoryzacji. Wszystkie adresy URL, które mogą służyć do nawiązywania połączenia ze środowiska lokalnego z usługą Azure Active Directory (Azure AD), muszą być zarejestrowane w usłudze Azure AD (obejmuje to zarówno wewnętrzne, jak i zewnętrzne przestrzenie nazw).
+
+Najpierw zbierz wszystkie adresy URL, które należy dodać w AAD. Uruchom następujące polecenia lokalnie:
 
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*
@@ -84,22 +84,22 @@ Get-AutodiscoverVirtualDirectory | FL server,*url*
 Get-OutlookAnywhere | FL server,*hostname*
 ```
 
-Upewnij się, że klienci z adresami URL mogą się łączyć, są wymienione jako nazwy główne usługi HTTPS w AAD. Jeśli program EXCH jest w trybie hybrydowym z wieloma dzierżawami **, te** sieci SPN https powinny zostać dodane AAD we wszystkich dzierżawach we współpracy hybrydowej z usługą EXCH.
+Upewnij się, że adresy URL, z którymi klienci mogą się łączyć, są wyświetlane jako nazwy główne usługi HTTPS w AAD. Jeśli exch jest w środowisku hybrydowym z **wieloma dzierżawami, te nazwy** SPN https powinny być dodawane w AAD wszystkich dzierżaw w środowisku hybrydowym z exch.
 
-1. Najpierw połącz się z AAD, instrukcji[.](connect-to-microsoft-365-powershell.md)
+1. Najpierw połącz się z AAD, korzystając z [tych instrukcji](connect-to-microsoft-365-powershell.md).
 
     > [!NOTE]
-    > Aby użyć poniższego polecenia, należy użyć opcji _Połączenie-MsolService_ z tej strony.
+    > Aby móc korzystać z poniższego polecenia, należy użyć opcji _Połączenie-MsolService_ na tej stronie.
 
-2. W Exchange URL powiązanych ze swoimi adresami URL wpisz następujące polecenie:
+2. W przypadku adresów URL związanych z Exchange wpisz następujące polecenie:
 
    ```powershell
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Zanotuj (i zanotuj zrzut ekranu w celu późniejszego porównania) danych wyjściowych tego polecenia, `https://*autodiscover.yourdomain.com*` `https://*mail.yourdomain.com*` które powinno zawierać adres URL i ale głównie zawierają spN, które zaczynają się od `00000002-0000-0ff1-ce00-000000000000/`. Jeśli brakuje `https://` adresów URL w środowisku lokalnym, należy dodać te konkretne rekordy do tej listy.
+   Zanotuj (i zrzut ekranu do późniejszego porównania) dane wyjściowe tego polecenia, które powinny zawierać `https://*autodiscover.yourdomain.com*` adres URL i `https://*mail.yourdomain.com*` , ale składają się głównie z `00000002-0000-0ff1-ce00-000000000000/`nazw SPN rozpoczynających się od . `https://` Jeśli brakuje adresów URL lokalnych, te konkretne rekordy powinny zostać dodane do tej listy.
 
-3. Jeśli na tej liście nie widzisz wewnętrznych i zewnętrznych rekordów MAPI/HTTP, EWS, ActiveSync, OAB i wykrywania automatycznego, musisz je dodać za pomocą poniższego polecenia (przykładowe adresy URL `mail.corp.contoso.com` `owa.contoso.com`to i , ale zamienisz przykładowe adresy **URL** na własne):
+3. Jeśli nie widzisz wewnętrznych i zewnętrznych rekordów MAPI/HTTP, EWS, ActiveSync, OAB i Autodiscover na tej liście, musisz dodać je przy użyciu poniższego polecenia (przykładowe adresy URL to `mail.corp.contoso.com` i `owa.contoso.com`, ale chcesz **zastąpić przykładowe adresy URL własnymi**):
 
    ```powershell
    $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
@@ -108,11 +108,11 @@ Upewnij się, że klienci z adresami URL mogą się łączyć, są wymienione ja
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. Sprawdź, czy nowe rekordy zostały dodane, uruchamiając `Get-MsolServicePrincipal` ponownie polecenie z kroku 2 i patrząc na wyniki. Porównaj listę /zrzut ekranu z listy "przedtem" z nową listą sieci SPN. Możesz również zrobić zrzut ekranu nowej listy rekordów. Jeśli udało Ci się to zrobić, zostaną one zobaczyć na liście dwa nowe adresy URL. W naszym przykładzie lista sieci SPN będzie teraz zawierać określone adresy URL `https://mail.corp.contoso.com` i `https://owa.contoso.com`.
+4. Sprawdź, czy nowe rekordy zostały dodane, uruchamiając `Get-MsolServicePrincipal` ponownie polecenie z kroku 2 i przeglądając dane wyjściowe. Porównaj listę /zrzut ekranu z poprzedniego z nową listą nazw SPN. Możesz również wykonać zrzut ekranu przedstawiający nową listę rekordów. Jeśli pomyślnie się powiodło, na liście zostaną wyświetlone dwa nowe adresy URL. W naszym przykładzie lista nazw SPN będzie teraz zawierać określone adresy `https://mail.corp.contoso.com` URL i `https://owa.contoso.com`.
 
-## <a name="verify-virtual-directories-are-properly-configured"></a>Sprawdzanie, czy katalogi wirtualne są poprawnie skonfigurowane
+## <a name="verify-virtual-directories-are-properly-configured"></a>Sprawdź, czy katalogi wirtualne są prawidłowo skonfigurowane
 
-Teraz sprawdź, czy funkcja OAuth jest poprawnie włączona Exchange we wszystkich wirtualnych katalogach, Outlook użyć, uruchamiając następujące polecenia:
+Teraz sprawdź, czy uwierzytelnianie OAuth jest prawidłowo włączone w Exchange we wszystkich katalogach wirtualnych, Outlook mogą być używane, uruchamiając następujące polecenia:
 
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*,*auth*
@@ -121,7 +121,7 @@ Get-OABVirtualDirectory | FL server,*url*,*oauth*
 Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
-Sprawdź dane wyjściowe, aby upewnić się, że funkcja **OAuth** jest włączona w każdej z tych katalogów VDirs. Będzie ona wyglądać podobnie do następującego (a kluczową rzeczą, którą należy sprawdzić, jest "OAuth").):
+Sprawdź dane wyjściowe, aby upewnić się, że **protokół OAuth** jest włączony dla każdego z tych katalogów VDir, będzie on wyglądać mniej więcej tak (a kluczową kwestią, na którą należy zwrócić uwagę, jest "OAuth"):
 
 ```powershell
 Get-MapiVirtualDirectory | fl server,*url*,*auth*
@@ -134,27 +134,27 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
 
-Jeśli brakuje protokołu OAuth na dowolnym serwerze i w dowolnym z czterech katalogów wirtualnych, przed rozpoczęciem należy go dodać przy użyciu odpowiednich poleceń ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory) i [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)).
+Jeśli brakuje protokołu OAuth na dowolnym serwerze i w dowolnym z czterech katalogów wirtualnych, należy dodać go przy użyciu odpowiednich poleceń przed kontynuowaniem ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory) i [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)).
 
-## <a name="confirm-the-evosts-auth-server-object-is-present"></a>Sprawdzanie, czy obiekt Serwer AuthSTS jest obecny
+## <a name="confirm-the-evosts-auth-server-object-is-present"></a>Potwierdzanie obecności obiektu serwera uwierzytelniania EvoSTS
 
-Wróć do lokalnej powłoki zarządzania Exchange zarządzanie dla tego ostatniego polecenia. Teraz możesz sprawdzić, czy twój dostawca uwierzytelniania lokalnego ma wpis:
+Wróć do lokalnej powłoki zarządzania Exchange dla tego ostatniego polecenia. Teraz możesz sprawdzić, czy w środowisku lokalnym jest dostępny wpis dla dostawcy uwierzytelniania evoSTS:
 
 ```powershell
 Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 ```
 
-W wynikach powinien być pokazywany serwer uwierzytelniania nazw z identyfikatorem GUID, a stan "Włączony" powinien mieć wartość True. Jeśli nie widzisz tej informacji, pobierz i uruchom najnowszą wersję Kreatora konfiguracji hybrydowej.
+Dane wyjściowe powinny zawierać AuthServer nazwy EvoSts z identyfikatorem GUID, a stan "Włączone" powinien mieć wartość True. Jeśli tego nie widzisz, pobierz i uruchom najnowszą wersję Kreatora konfiguracji hybrydowej.
 
 > [!NOTE]
-> Jeśli program EXCH jest w trybie hybrydowym z wieloma dzierżawami **,**`EvoSts - {GUID}` w wynikach powinien być pokazywany jeden serwer uwierzytelniania Name (Nazwa) dla każdej dzierżawy we współpracy hybrydowej z usługą EXCH, a stan **Enabled** (Włączone) powinien mieć wartość True (Prawda) dla wszystkich tych obiektów AuthServer (Serwer uwierzytelniania).
+> Jeśli środowisko EXCH jest w środowisku hybrydowym z **wieloma dzierżawami, dane wyjściowe** powinny zawierać jeden serwer AuthServer nazwy `EvoSts - {GUID}` dla każdej dzierżawy w środowisku hybrydowym z użyciem środowiska EXCH, a stan **Włączony** powinien mieć wartość True dla wszystkich tych obiektów AuthServer.
 
 > [!IMPORTANT]
-> Jeśli używasz w swoim środowisku Exchange 2010, dostawca uwierzytelniania OsóbStS nie zostanie utworzony.
+> Jeśli używasz programu Exchange 2010 w swoim środowisku, dostawca uwierzytelniania EvoSTS nie zostanie utworzony.
 
-## <a name="enable-hma"></a>Włączanie HMA
+## <a name="enable-hma"></a>Włączanie usługi HMA
 
-Uruchom następujące polecenie w lokalnej Exchange zarządzania, \<GUID\> zastępując w wierszu polecenia ciągiem w środowisku:
+Uruchom następujące polecenie w lokalnej powłoce zarządzania Exchange, zastępując \<GUID\> w wierszu polecenia ciągiem w środowisku:
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - <GUID>" -IsDefaultAuthorizationEndpoint $true
@@ -162,13 +162,13 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
 > [!NOTE]
-> W starszych wersjach Kreatora konfiguracji hybrydowej serwer AuthServers został po prostu nazwany NastS bez dołączonego identyfikatora GUID. Nie trzeba nic zrobić. Wystarczy zmodyfikować wiersz polecenia powyżej, aby odzwierciedlał ten przykład, usuwając część identyfikatora GUID polecenia:
+> W starszych wersjach Kreatora konfiguracji hybrydowej evosts AuthServer został po prostu nazwany EvoSTS bez dołączonego identyfikatora GUID. Nie ma żadnej akcji, którą należy wykonać, po prostu zmodyfikuj powyższy wiersz polecenia, aby to odzwierciedlić, usuwając część identyfikatora GUID polecenia:
 >
 > ```powershell
 > Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
 > ```
 
-Jeśli wersja EXCH to Exchange 2016 (CU18 lub nowsza wersja) albo Exchange 2019 (CU7 lub nowsza wersja), a w środowisku hybrydowym skonfigurowano usługę hcw pobraną po wrześniu 2020 r., uruchom następujące polecenie w lokalnej powłoki zarządzania programu Exchange:
+Jeśli wersja exch jest Exchange 2016 (CU18 lub nowsza) lub Exchange 2019 r. (CU7 lub nowsza) i została skonfigurowana hybrydowo z HCW pobranym po wrześniu 2020 r., uruchom następujące polecenie w lokalnej powłoki zarządzania Exchange:
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - {GUID}" -DomainName "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
@@ -176,30 +176,30 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
 > [!NOTE]
-> W przypadku, gdy program EXCH jest w trybie hybrydowym z wieloma dzierżawami **, istnieje** wiele obiektów AuthServer w programie EXCH z domenami odpowiadającymi każdej dzierżawie.  **Flaga IsDefaultAuthorizationEndpoint** powinna mieć wartość true (przy użyciu polecenia cmdlet **IsDefaultAuthorizationEndpoint**) dla dowolnego z tych obiektów AuthServer. Dla wszystkich obiektów serwera uwierzytelniania nie można ustawić wartości true, a funkcja HMA zostanie włączona, nawet jeśli dla flagi **IsDefaultAuthorizationEndpoint** obiektu AuthServer jest ustawiona wartość true.
+> Jeśli środowisko EXCH jest w środowisku hybrydowym z **wieloma dzierżawami**, w środowisku EXCH znajduje się wiele obiektów AuthServer z domenami odpowiadającymi każdej dzierżawie.  Flagę **IsDefaultAuthorizationEndpoint** należy ustawić na wartość true (przy użyciu polecenia cmdlet **IsDefaultAuthorizationEndpoint** ) dla dowolnego z tych obiektów AuthServer. Tej flagi nie można ustawić na wartość true dla wszystkich obiektów Authserver i hma zostanie włączona, nawet jeśli jeden z tych obiektów AuthServer **isdefaultAuthorizationEndpoint** flaga jest ustawiona na wartość true.
 > 
-> W **parametrze DomainName** użyj wartości domeny dzierżawy, która zwykle znajduje się w formularzu `contoso.onmicrosoft.com`.
+> W przypadku parametru **DomainName** użyj wartości domeny dzierżawy, która zwykle ma postać `contoso.onmicrosoft.com`.
 
-## <a name="verify"></a>Weryfikuj
+## <a name="verify"></a>Sprawdź
 
-Po włączeniu usługi HMA następny identyfikator logowania klienta będzie używać nowego przepływu uwierzytelniania. Pamiętaj, że włączenie usługi HMA nie spowoduje wyzwolenia ponownego uwierzytelniania dla żadnego klienta, a może upłynie trochę czasu, Exchange nowe ustawienia.
+Po włączeniu usługi HMA podczas następnego logowania klienta zostanie użyty nowy przepływ uwierzytelniania. Pamiętaj, że samo włączenie usługi HMA nie spowoduje wyzwolenia ponownego uwierzytelniania dla żadnego klienta i może upłynąć trochę czasu, gdy Exchange odbierze nowe ustawienia.
 
-Należy również przytrzymać naciśnięty klawisz CTRL w tym samym czasie, gdy klikniesz prawym przyciskiem myszy ikonę klienta usługi Outlook (również w pasku powiadomień systemu Windows) i kliknij pozycję "Stan połączenia". Odszukaj adres SMTP klienta dla **typu Uwierzytelniania** `Bearer\*`, który reprezentuje token użytkownika używany w uwierzytelniania OAuth.
+Należy również przytrzymać klawisz CTRL w tym samym czasie, klikając prawym przyciskiem myszy ikonę klienta Outlook (również w obszarze powiadomień Windows) i kliknij pozycję Stan połączenia. Wyszukaj adres SMTP klienta względem typu `Bearer\*`**uwierzytelniania** , który reprezentuje token elementu nośnego używany w usłudze OAuth.
 
 > [!NOTE]
-> Musisz skonfigurować Skype dla firm HMA? Potrzebne są dwa artykuły: jeden z listą obsługiwanych [topologii](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) i jeden, w których pokazano, [jak wykonać konfigurację](configure-skype-for-business-for-hybrid-modern-authentication.md).
+> Chcesz skonfigurować Skype dla firm z usługą HMA? Potrzebne będą dwa artykuły: jeden zawierający [listę obsługiwanych topologii](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) i jeden, który pokazuje [, jak wykonać konfigurację](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
-## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Używanie hybrydowego nowoczesnego uwierzytelniania z Outlook dla systemów iOS i Android
+## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Używanie nowoczesnego uwierzytelniania hybrydowego z Outlook dla systemów iOS i Android
 
-Jeśli jesteś klientem lokalnym korzystającym z serwera Exchange tcp 443, zezwalaj na ruch sieciowy z następujących zakresów adresów IP:
+Jeśli jesteś klientem lokalnym korzystającym z serwera Exchange na serwerze TCP 443, zezwalaj na ruch sieciowy z następujących zakresów adresów IP:
 
 ```console
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-Te zakresy adresów IP również o dokumencie Dodatkowe punkty końcowe nie są dostępne w usłudze sieci [Office 365 adres IP i usługa sieci Web adresów URL](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls).
+Te zakresy adresów IP są również udokumentowane w [temacie Dodatkowe punkty końcowe, które nie są uwzględnione w usłudze sieci Web Office 365 adresów IP i adresów URL](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Wymagania dotyczące konfiguracji nowoczesnego uwierzytelniania dotyczące przechodzenia z Office 365/ITAR na vNext](/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)
+[Wymagania dotyczące konfiguracji nowoczesnego uwierzytelniania na potrzeby przejścia z Office 365 dedykowanego/ITAR do wersji vNext](/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

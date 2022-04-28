@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych RingCentral w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych RingCentral z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po archiwizacji tych danych można używać funkcji zgodności, takich jak blokada prawna, zbieranie elektronicznych materiałów dowodowych i zasady przechowywania, do zarządzania danymi innych firm.
-ms.openlocfilehash: c09adf8710014cbf031740902ffbb6c29232a5b8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2472097c82f4b05cd1f1aebe67eb07d270921a48
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001626"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097167"
 ---
 # <a name="set-up-a-connector-to-archive-ringcentral-data"></a>Konfigurowanie łącznika do archiwizowania danych RingCentral
 

@@ -2,8 +2,8 @@
 title: Włącz lub wyłącz inspekcję
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Jak włączyć lub wyłączyć funkcję wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, aby włączyć lub wyłączyć możliwość przeszukiwania dziennika inspekcji przez administratorów.
-ms.openlocfilehash: e74effad1803b9a55167d1cd3bb5725bd042616a
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3602a35169670b61a124cda40c9ab50b481571d8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991825"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078872"
 ---
 # <a name="turn-auditing-on-or-off"></a>Włącz lub wyłącz inspekcję
 

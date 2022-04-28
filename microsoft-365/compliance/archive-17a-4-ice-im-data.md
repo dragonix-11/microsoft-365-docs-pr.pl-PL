@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych czatu ICE Połączenie w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik ICE Połączenie Chat DataParser 17a-4 i używać go do importowania i archiwizowania danych usługi ICE Połączenie Chat w Microsoft 365.
-ms.openlocfilehash: fcc700546a15c6dad39b9ebcaeb7385194727016
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 106b425886b6294f7c96ead439be30c5e61030a0
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998106"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097233"
 ---
 # <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Konfigurowanie łącznika do archiwizacji danych czatu ICE Połączenie
 
