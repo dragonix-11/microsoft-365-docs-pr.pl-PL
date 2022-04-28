@@ -2,8 +2,8 @@
 title: Współpraca z partnerem w celu archiwizowania danych innych firm
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak skonfigurować łącznik niestandardowy do importowania danych innych firm ze źródeł danych, takich jak Salesforce Chatter, Yahoo Messenger lub Yammer.
-ms.openlocfilehash: eb557f43b97f343c45a7eaf21268ac6218d2e1c0
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f0de03fb68b78779b6d1ed057a8b462c5c2a901b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995321"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097563"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Współpraca z partnerem w celu archiwizowania danych innych firm
 

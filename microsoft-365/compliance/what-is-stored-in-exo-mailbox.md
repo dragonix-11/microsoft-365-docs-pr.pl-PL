@@ -2,8 +2,8 @@
 title: Zawartość przechowywana w Exchange Online skrzynkach pocztowych
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Zawartość generowana przez aplikacje oparte na chmurze w Microsoft 365 jest przechowywana lub skojarzona ze skrzynką pocztową Exchange Online użytkownika. Tę zawartość można przeszukiwać przy użyciu narzędzi microsoft eDiscovery.
-ms.openlocfilehash: b5e8434f5345cda8ef4f637b3dff2d3cf704f748
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 113cbb9c386dab2339fa1b265b3443efe1ba91fd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000801"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091682"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Zawartość przechowywana w Exchange Online skrzynkach pocztowych na potrzeby zbierania elektronicznych materiałów dowodowych
 

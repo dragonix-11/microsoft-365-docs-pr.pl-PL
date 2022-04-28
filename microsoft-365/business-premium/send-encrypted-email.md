@@ -2,14 +2,14 @@
 title: Wysyłanie zaszyfrowanej wiadomości e-mail
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
-ms.date: 9/20/2018
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 03/08/2022
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -26,23 +26,24 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Dowiedz się, jak wysyłać zaszyfrowane wiadomości e-mail przy użyciu Outlook.
-ms.openlocfilehash: 9cf39d3147b5ef7a099a06737316ee20e6154775
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 02dc3b7720f6aa46ffaf3cf4a04511c725798a24
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946907"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095171"
 ---
-# <a name="encrypt-or-label-your-sensitive-email"></a>Szyfrowanie lub etykietowanie poufnej wiadomości e-mail
+# <a name="encrypt-or-label-sensitive-email"></a>Szyfrowanie lub etykietowanie poufnych wiadomości e-mail
 
-Dane i informacje o kampanii są ważne i często poufne. Pomóż chronić te poufne informacje przy użyciu etykiet szyfrowania i poufności, aby ty i adresaci wiadomości e-mail traktowali informacje z wymaganiem poufności.
+Dane i informacje są ważne i często poufne. W tym miejscu celem jest pomoc w ochronie tych poufnych informacji poprzez zapewnienie, że wszyscy używają etykiet poufności, aby adresaci wiadomości e-mail traktowali te informacje z najwyższą poufnością.
 
 ## <a name="best-practices"></a>Najważniejsze wskazówki
 
-Przed wysłaniem wiadomości e-mail z informacjami poufnymi lub poufnymi rozważ włączenie:
+Przed wysłaniem wiadomości e-mail z poufnymi lub poufnymi informacjami należy rozważyć włączenie:
 
 - **Szyfrowania:** Możesz zaszyfrować wiadomość e-mail, aby chronić prywatność informacji w wiadomości e-mail. Podczas szyfrowania wiadomości e-mail jest ona konwertowana z czytelnego zwykłego tekstu na kodowany tekst cypher. Tylko adresat, który ma klucz prywatny zgodny z kluczem publicznym używanym do szyfrowania wiadomości, może rozszyfrować komunikat do odczytu. Każdy adresat bez odpowiedniego klucza prywatnego widzi jednak nieczytelny tekst. Administrator może zdefiniować reguły do automatycznego szyfrowania komunikatów spełniających określone kryteria. Na przykład administrator może utworzyć regułę, która szyfruje wszystkie komunikaty wysyłane poza organizację lub wszystkie komunikaty, które wymieniają określone słowa lub frazy. Wszystkie reguły szyfrowania zostaną zastosowane automatycznie.
-- **Etykiety poufności:** Twoja kampania może również skonfigurować etykiety poufności, które można zastosować do plików i wiadomości e-mail, aby zachować ich zgodność z zasadami ochrony informacji kampanii. Po ustawieniu etykiety etykieta będzie się powtarzać przy użyciu wiadomości e-mail, nawet gdy zostanie wysłana — na przykład przez wyświetlenie jej jako nagłówka.
+
+- **Etykiety poufności:** Jeśli organizacja tego wymaga, możesz skonfigurować etykiety poufności stosowane do plików i wiadomości e-mail, aby zachować ich zgodność z zasadami ochrony informacji organizacji. Po ustawieniu etykiety etykieta będzie się powtarzać przy użyciu wiadomości e-mail, nawet jeśli zostanie wysłana &mdash; na przykład przez wyświetlenie jako nagłówek wiadomości.
 
 ![Diagram wiadomości e-mail z objaśnieniami etykiet i szyfrowania.](../media/m365-campaign-email-encrypt.png)
 
@@ -56,7 +57,7 @@ Wszystkie informacje na temat konfigurowania szyfrowania poczty e-mail można zn
 
 ### <a name="automatically-encrypt-email-messages"></a>Automatyczne szyfrowanie wiadomości e-mail
 
-Administratorzy mogą tworzyć reguły przepływu poczty, aby automatycznie chronić wiadomości e-mail wysyłane i odbierane z kampanii. Skonfiguruj reguły szyfrowania wszelkich wychodzących wiadomości e-mail i usuwania szyfrowania z zaszyfrowanych wiadomości pochodzących z organizacji lub odpowiedzi na zaszyfrowane wiadomości wysyłane z organizacji.
+Administratorzy mogą tworzyć reguły przepływu poczty, aby automatycznie chronić wiadomości e-mail wysyłane i odbierane z kampanii lub firmy. Skonfiguruj reguły szyfrowania wszelkich wychodzących wiadomości e-mail i usuwania szyfrowania z zaszyfrowanych wiadomości pochodzących z organizacji lub odpowiedzi na zaszyfrowane wiadomości wysyłane z organizacji.
 
 Tworzysz reguły przepływu poczty w celu szyfrowania wiadomości e-mail za pomocą usługi Microsoft Purview Message Encryption. Zdefiniuj reguły przepływu poczty na potrzeby wyzwalania szyfrowania wiadomości przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange (EAC).</a>
 
@@ -68,4 +69,7 @@ Aby uzyskać więcej informacji, zobacz [Definiowanie reguł przepływu poczty w
 
 ### <a name="brand-your-encryption-messages"></a>Oznaczanie wiadomości szyfrowania
 
-Możesz również zastosować znakowanie kampanii, aby dostosować wygląd i tekst w wiadomościach e-mail. Aby uzyskać więcej informacji, zobacz [Dodawanie marki organizacji do zaszyfrowanych komunikatów](../compliance/email-encryption.md).
+Możesz również zastosować znakowanie, aby dostosować wygląd i tekst w wiadomościach e-mail. Aby uzyskać więcej informacji, zobacz [Dodawanie marki organizacji do zaszyfrowanych komunikatów](../compliance/email-encryption.md).
+
+Jeśli dotarłeś tak daleko, pomyślnie ukończyłeś kolejną misję, więc gratulacje! Nie ma czasu, aby odpocząć od naszych sukcesów, więc przejdźmy do tworzenia bezpiecznego i bezpiecznego środowiska, w którym zespół może [bezpiecznie współpracować](m365bp-collaborate-share-securely.md). 
+

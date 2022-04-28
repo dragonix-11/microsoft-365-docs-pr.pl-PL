@@ -1,8 +1,8 @@
 ---
-title: Krok nr 2. Ochrona konta Microsoft 365 z uprawnieniami
+title: Krok nr 2. Ochrona kont uprzywilejowanych Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
@@ -20,129 +20,129 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Ten artykuł zawiera informacje na temat ochrony dostępu z uprawnieniami do dzierżawy Microsoft 365 dzierżawy.
+description: Ten artykuł zawiera informacje o ochronie uprzywilejowanego dostępu do dzierżawy Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff20b8dcaf203771b0c3a935b67e83eb291ec75e
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 34e4665067640ec625501b15c12c1c2e80d5ffb4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63013878"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095603"
 ---
-# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Krok nr 2. Ochrona konta Microsoft 365 z uprawnieniami
+# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Krok nr 2. Ochrona kont uprzywilejowanych Microsoft 365
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Naruszenia zabezpieczeń dzierżawy usługi Microsoft 365, w tym ataki chowania informacji i wyłudzania informacji, są zazwyczaj wykonywane przez naruszenie poświadczeń konta Microsoft 365 uprawnienia. Bezpieczeństwo w chmurze to partnerstwo między Tobem a firmą Microsoft:
+Naruszenia zabezpieczeń dzierżawy Microsoft 365, w tym zbieranie informacji i ataki phishingowe, są zazwyczaj wykonywane przez naruszenie poświadczeń Microsoft 365 uprzywilejowanego konta. Zabezpieczenia w chmurze to partnerstwo między Tobą a firmą Microsoft:
   
-- Podstawą usług firmy Microsoft w chmurze jest zaufanie i bezpieczeństwo. Firma Microsoft udostępnia funkcje i mechanizmy kontroli zabezpieczeń, które pomagają chronić dane i aplikacje.
+- Usługi w chmurze firmy Microsoft są oparte na fundamencie zaufania i bezpieczeństwa. Firma Microsoft zapewnia mechanizmy kontroli zabezpieczeń i możliwości ułatwiające ochronę danych i aplikacji.
     
 - Jesteś właścicielem danych i tożsamości oraz ponosisz odpowiedzialność za ich ochronę, bezpieczeństwo zasobów lokalnych i bezpieczeństwo składników chmury, które kontrolujesz.
     
-Firma Microsoft udostępnia funkcje, które pomagają chronić Twoją organizację, ale są skuteczne tylko wtedy, gdy ich używasz. Jeśli ich nie używasz, możesz być narażony na ataki. W celu ochrony Twoich kont uprzywilejowanych firma Microsoft pomoże Ci uzyskać szczegółowe instrukcje dotyczące:
+Firma Microsoft oferuje możliwości ochrony organizacji, ale są one skuteczne tylko wtedy, gdy z nich korzystasz. Jeśli ich nie używasz, możesz być narażony na ataki. Aby chronić konta uprzywilejowane, firma Microsoft jest tutaj, aby ułatwić ci szczegółowe instrukcje dotyczące:
   
-1. Twórz dedykowane konta z uprawnieniami w chmurze i korzystaj z nich tylko wtedy, gdy jest to konieczne.
+1. Utwórz dedykowane, uprzywilejowane konta oparte na chmurze i używaj ich tylko w razie potrzeby.
     
-2. Skonfiguruj uwierzytelnianie wieloskładnikowe dla dedykowanych Microsoft 365 z uprawnieniami i użyj najsilniejszej metody uwierzytelniania pomocniczego.
+2. Skonfiguruj uwierzytelnianie wieloskładnikowe (MFA) dla dedykowanych Microsoft 365 uprzywilejowanych kont i użyj najsilniejszej formy uwierzytelniania pomocniczego.
 
-3. Ochrona kont z uprawnieniami za pomocą zaleceń dotyczących tożsamości bez zaufania i dostępu do urządzeń.
+3. Ochrona kont uprzywilejowanych za pomocą Zero Trust rekomendacji dotyczących tożsamości i dostępu do urządzeń.
 
-## <a name="1-create-dedicated-privileged-cloud-based-user-accounts-and-use-them-only-when-necessary"></a>1. Tworzenie dedykowanych, uprzywilejowanych kont użytkowników w chmurze i korzystanie z nich tylko wtedy, gdy jest to konieczne
+## <a name="1-create-dedicated-privileged-cloud-based-user-accounts-and-use-them-only-when-necessary"></a>1. Tworzenie dedykowanych, uprzywilejowanych kont użytkowników opartych na chmurze i używanie ich tylko w razie potrzeby
 
-Zamiast korzystać ze zwykłych kont użytkowników, do których przypisano role administratora, utwórz dedykowane konta użytkowników z rolami administratorów w usłudze Azure AD. 
+Zamiast korzystać z codziennych kont użytkowników, do których przypisano role administratora, utwórz dedykowane konta użytkowników, które mają role administratora w usłudze Azure AD. 
 
-Od tego momentu będziesz logować się przy użyciu dedykowanych kont uprzywilejowanych tylko w przypadku zadań wymagających uprawnień administratora. Pozostałe zadania Microsoft 365 musi się odbywać przez przypisanie innych ról administracyjnych do kont użytkowników.
+Od tego momentu logujesz się przy użyciu dedykowanych kont uprzywilejowanych tylko w przypadku zadań wymagających uprawnień administratora. Wszystkie inne Microsoft 365 administracji muszą być wykonywane przez przypisanie innych ról administracyjnych do kont użytkowników.
   
 > [!NOTE]
-> Wymaga to dodatkowych czynności, aby wylogować się jako codzienne konto użytkownika i zalogować się przy użyciu dedykowanego konta administratora. Jednak tę czynności należy wykonać tylko od czasu do czasu, w przypadku operacji administratora. Warto pamiętać, że odzyskanie subskrypcji Microsoft 365 w przypadku naruszenia zabezpieczeń konta administratora wymaga znacznie więcej kroków.
+> Wymaga to dodatkowych kroków, aby wylogować się jako codzienne konto użytkownika i zalogować się przy użyciu dedykowanego konta administratora. Należy to jednak robić sporadycznie tylko w przypadku operacji administratora. Należy wziąć pod uwagę, że odzyskanie subskrypcji Microsoft 365 po naruszeniu konta administratora wymaga o wiele więcej kroków.
 
-Musisz również utworzyć konta dostępu dla [służb ratunkowych,](/azure/active-directory/roles/security-emergency-access) aby zapobiec przypadkowemu zablokowaniu usługi Azure AD.
+Należy również utworzyć [konta dostępu awaryjnego](/azure/active-directory/roles/security-emergency-access) , aby zapobiec przypadkowemu zablokowaniu usługi Azure AD.
 
-Możesz dodatkowo chronić swoje konta z uprawnieniami Privileged Identity Management (PIM, Azure AD Privileged Identity Management) na potrzeby przypisywania ról administratorów na żądanie. 
+Możesz dodatkowo chronić uprzywilejowane konta przy użyciu usługi Azure AD Privileged Identity Management (PIM) na potrzeby przypisywania ról administratora na żądanie w ramach just in time. 
  
-## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. Konfigurowanie uwierzytelniania wieloskładnikowego dla dedykowanych Microsoft 365 kont z uprawnieniami
+## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. Konfigurowanie uwierzytelniania wieloskładnikowego dla dedykowanych kont Microsoft 365 uprzywilejowanych
 
-Uwierzytelnianie wieloskładnikowe wymaga dodatkowych informacji oprócz nazwy konta i hasła. Microsoft 365 obsługuje następujące dodatkowe metody weryfikacji:
+Uwierzytelnianie wieloskładnikowe (MFA) wymaga dodatkowych informacji poza nazwą konta i hasłem. Microsoft 365 obsługuje te dodatkowe metody weryfikacji:
   
-- Aplikacja Microsoft Authenticator aplikacji
+- Aplikacja Microsoft Authenticator
 - Rozmowa telefoniczna
-- Losowo wygenerowany kod weryfikacyjny wysłany w wiadomości SMS
-- Karta inteligentna (wirtualna lub fizyczna) (wymaga uwierzytelniania feder służącego do uwierzytelniania)
+- Losowo wygenerowany kod weryfikacyjny wysyłany za pośrednictwem wiadomości SMS
+- Karta inteligentna (wirtualna lub fizyczna) (wymaga uwierzytelniania federacyjnego)
 - Urządzenie biometryczne
 - Token Oauth
 - 
     
 >[!Note]
->W organizacjach, które muszą spełniać standardy National Institute of Standards and Technology (NIST), dostęp do dodatkowych metod weryfikacji na podstawie wiadomości sms lub połączeń telefonicznych jest ograniczony. Kliknij [tutaj,](https://pages.nist.gov/800-63-FAQ/#q-b01) aby uzyskać szczegółowe informacje.
+>W przypadku organizacji, które muszą przestrzegać standardów NIST (National Institute of Standards and Technology), korzystanie z dodatkowych metod weryfikacji opartych na rozmowach telefonicznych lub wiadomościach SMS jest ograniczone. Kliknij [tutaj](https://pages.nist.gov/800-63-FAQ/#q-b01) , aby uzyskać szczegółowe informacje.
 >
 
-Jeśli korzystasz z kont użytkowników przechowywanych tylko w chmurze (model tożsamości tylko w chmurze), skonfiguruj uwierzytelniania [MFA](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) w celu skonfigurowania uwierzytelniania wieloskładnikowego przy użyciu połączenia telefonicznego lub wiadomości tekstowej z kodem weryfikacyjnym wysyłanym na smartfon dla każdego dedykowanego konta z uprawnieniami.
+Jeśli jesteś małą firmą korzystającą z kont użytkowników przechowywanych tylko w chmurze (model tożsamości tylko w chmurze), [skonfiguruj uwierzytelnianie wieloskładnikowe](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) w celu skonfigurowania uwierzytelniania wieloskładnikowego przy użyciu połączenia telefonicznego lub kodu weryfikacyjnego wiadomości SMS wysłanego na telefon inteligentny dla każdego dedykowanego konta uprzywilejowanego.
     
-W przypadku większych organizacji korzystających z modelu Microsoft 365 hybrydowego masz więcej opcji weryfikacji. Jeśli masz już infrastrukturę zabezpieczeń skonfigurowaną do silniejszej metody uwierzytelniania pomocniczego, skonfiguruj uwierzytelnianie [MFA](../admin/security-and-compliance/set-up-multi-factor-authentication.md) i skonfiguruj dla każdego dedykowanego konta z odpowiednimi uprawnieniami odpowiednią metodę weryfikacji.
+Jeśli jesteś większą organizacją korzystającą z Microsoft 365 modelu tożsamości hybrydowej, masz więcej opcji weryfikacji. Jeśli masz już infrastrukturę zabezpieczeń dla silniejszej metody uwierzytelniania pomocniczego, [skonfiguruj](../admin/security-and-compliance/set-up-multi-factor-authentication.md) uwierzytelnianie wieloskładnikowe i skonfiguruj każde dedykowane konto uprzywilejowane dla odpowiedniej metody weryfikacji.
   
-Jeśli infrastruktura zabezpieczeń odpowiedniej silniejszej metody weryfikacji na potrzeby uwierzytelniania wieloskładnikowego programu Microsoft 365 nie została jeszcze skonfigurowana i działa, zdecydowanie zalecamy skonfigurowanie dedykowanych kont z uprawnieniami do uwierzytelniania wieloskładnikowego przy użyciu aplikacji Microsoft Authenticator, połączenia telefonicznego lub wiadomości tekstowej z kodem weryfikacyjnym wysyłanej na smartfon jako tymczasowego zabezpieczenia na dedykowanych kontach. Nie pozostawiaj dedykowanych kont z uprawnieniami bez dodatkowej ochrony zapewnionej przez uwierzytelniania wieloskładnikowego.
+Jeśli infrastruktura zabezpieczeń dla żądanej silniejszej metody weryfikacji nie jest w miejscu i działa dla Microsoft 365 uwierzytelniania wieloskładnikowego, zdecydowanie zalecamy skonfigurowanie dedykowanych uprzywilejowanych kont przy użyciu uwierzytelniania wieloskładnikowego przy użyciu aplikacji Microsoft Authenticator, połączenia telefonicznego lub kodu weryfikacyjnego wiadomości SMS wysłanego do telefonu inteligentnego dla uprzywilejowanych kont jako tymczasowego środka bezpieczeństwa. Nie pozostawiaj dedykowanych kont uprzywilejowanych bez dodatkowej ochrony zapewnianej przez usługę MFA.
   
-Aby uzyskać więcej informacji, zobacz [Uwierzytelniania wieloskładnikowego dla Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
+Aby uzyskać więcej informacji, zobacz [Uwierzytelnianie wieloskładnikowe dla Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
-## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. Ochrona kont administratora za pomocą zaleceń dotyczących tożsamości i dostępu do urządzeń przy użyciu zerowego zaufania
+## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. Ochrona kont administratorów przy użyciu Zero Trust tożsamości i zaleceń dotyczących dostępu do urządzeń
 
-Aby zapewnić bezpieczeństwo i produktywność pracowników, firma Microsoft udostępnia zestaw zaleceń dotyczących tożsamości [i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md). W celu zachowania tożsamości używaj zaleceń i ustawień poszczególnych artykułów:
+Aby zapewnić bezpieczną i produktywną siłę roboczą, firma Microsoft udostępnia zestaw zaleceń dotyczących [tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md). W przypadku tożsamości użyj zaleceń i ustawień w następujących artykułach:
 
 - [Wymagania wstępne](../security/office-365-security/identity-access-prerequisites.md)
-- [Typowe zasady dostępu do urządzeń i tożsamości](../security/office-365-security/identity-access-policies.md)
+- [Wspólne zasady tożsamości i dostępu do urządzeń](../security/office-365-security/identity-access-policies.md)
 
-## <a name="additional-protections-for-enterprise-organizations"></a>Dodatkowa ochrona dla przedsiębiorstw
+## <a name="additional-protections-for-enterprise-organizations"></a>Dodatkowe zabezpieczenia dla organizacji korporacyjnych
 
-Za pomocą tych dodatkowych metod upewnij się, że Twoje konto privileged i konfiguracja, która jest z nim konfigurowana, są jak najbezpieczniej.
+Użyj tych dodatkowych metod, aby upewnić się, że konto uprzywilejowane i konfiguracja, która jest wykonywana przy jego użyciu, są możliwie najbezpieczniejsze.
   
-### <a name="privileged-access-workstation"></a>Stacja robocza z dostępem z uprawnieniami
+### <a name="privileged-access-workstation"></a>Stacja robocza z dostępem uprzywilejowanym
 
-Aby zapewnić, że wykonywanie zadań o wysokim poziomie uprawnień jest jak najbezpieczniej, użyj stacji roboczej programu Access z uprawnieniami (PAW). Komputer dedykowany jest używany tylko do poufnych zadań konfiguracyjnych, takich jak konfiguracja Microsoft 365 wymagające konta uprzywilejowanych. Ten komputer nie jest używany codziennie do przeglądania Internetu ani do poczty e-mail, dlatego jest lepiej chroniony przed atakami i zagrożeniami internetowymi.
+Aby zapewnić, że wykonywanie zadań o wysokim poziomie uprawnień jest możliwie najbezpieczniejsze, użyj stacji roboczej z uprzywilejowanym dostępem (PAW). Paw to dedykowany komputer, który jest używany tylko do poufnych zadań konfiguracji, takich jak konfiguracja Microsoft 365, która wymaga konta uprzywilejowanego. Ponieważ ten komputer nie jest używany codziennie do przeglądania Internetu lub poczty e-mail, jest lepiej chroniony przed atakami i zagrożeniami internetowymi.
   
-Aby uzyskać instrukcje dotyczące sposobu skonfigurowania zestawu pauzy, zobacz [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices).
+Aby uzyskać instrukcje dotyczące konfigurowania stacji roboczej z dostępem typu PAW, zobacz [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices).
 
-Aby włączyć usługę Azure PIM dla kont administratora i dzierżawcy usługi Azure AD, zobacz kroki [konfigurowania usługi zarządzania pim](/azure/active-directory/active-directory-privileged-identity-management-configure).
+Aby włączyć usługę Azure PIM dla kont dzierżawy i administratora usługi Azure AD, zobacz [kroki konfigurowania usługi PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
 
-Aby opracowywać kompleksowy plan dotyczący bezpiecznego dostępu uprzywilejowanych przed cyberatakami, zobacz Zabezpieczanie dostępu z uprawnieniami dla wdrożeń hybrydowych i [chmurowych w usłudze Azure AD](/azure/active-directory/admin-roles-best-practices).
+Aby opracować kompleksowy plan zabezpieczania uprzywilejowanego dostępu przed cyberagresjami, zobacz [Zabezpieczanie uprzywilejowanego dostępu do wdrożeń hybrydowych i w chmurze w usłudze Azure AD](/azure/active-directory/admin-roles-best-practices).
 
-### <a name="azure-ad-privileged-identity-management"></a>Usługa Azure AD Privileged Identity Management
+### <a name="azure-ad-privileged-identity-management"></a>Privileged Identity Management usługi Azure AD
 
-Zamiast trwale przypisywać swoje konta z uprawnieniami do roli administratora, możesz włączyć funkcję zarządzania usługą Azure AD PIM na żądanie, przypisanie roli administratora tylko na czas, gdy będzie to konieczne.
+Zamiast stałego przypisywania kont uprzywilejowanych do roli administratora, możesz użyć usługi Azure AD PIM, aby w razie potrzeby włączyć przypisanie roli administratora na żądanie i just in time.
   
-Konta administratorów są od trwałych administratorów do uprawnionych administratorów. Rola administratora jest nieaktywna, dopóki ktoś jej nie potrzebuje. Następnie należy ukończyć proces aktywacji w celu dodania roli administratora do konta uprawnień przez ustalony czas. Gdy upłynie termin, program PIM usuwa rolę administratora z konta uprawnień.
+Konta administratorów przechodzą od stałych administratorów do uprawnionych administratorów. Rola administratora jest nieaktywna, dopóki ktoś jej nie potrzebuje. Następnie ukończysz proces aktywacji, aby dodać rolę administratora do konta uprzywilejowanego przez wstępnie określony czas. Gdy czas wygaśnie, usługa PIM usunie rolę administratora z konta uprzywilejowanego.
   
-Korzystanie z funkcji pim i ten proces znacznie skraca czas, przez który Twoje konta uprzywilejowany są narażone na ataki i używanie ich przez złośliwych użytkowników.
+Użycie usługi PIM i tego procesu znacznie skraca czas, przez który uprzywilejowane konta są narażone na ataki i użycie przez złośliwych użytkowników.
 
-Program PIM jest dostępny w p Azure Active Directory — wersja Premium P2, który jest dołączony do Microsoft 365 E5. Możesz również kupić indywidualne licencje Azure Active Directory — wersja Premium P2 dla kont administratora.
+Usługa PIM jest dostępna w Azure Active Directory — wersja Premium P2, która jest dołączona do Microsoft 365 E5. Alternatywnie możesz zakupić indywidualne licencje Azure Active Directory — wersja Premium P2 dla kont administratorów.
   
 Więcej informacji można znaleźć w następujących artykułach:
 
-- [Usługa Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
-- [Zabezpieczanie dostępu z uprawnieniami dla wdrożeń hybrydowych i chmurowych w usłudze Azure AD](/azure/active-directory/roles/security-planning)
+- [Privileged Identity Management usługi Azure AD](/azure/active-directory/active-directory-privileged-identity-management-configure).
+- [Zabezpieczanie uprzywilejowanego dostępu do wdrożeń hybrydowych i w chmurze w usłudze Azure AD](/azure/active-directory/roles/security-planning)
   
 
-### <a name="privileged-access-management"></a>Zarządzanie dostępem z uprawnieniami
+### <a name="privileged-access-management"></a>Privileged Access Management
 
-Zarządzanie dostępem z uprawnieniami jest włączane przez konfigurowanie zasad określających dostęp na czas dla działań opartych na zadaniach w dzierżawie. Pomaga chronić organizację przed naruszeniem zabezpieczeń, które mogą korzystać z istniejących uprzywilejowanych kont administratora z dostępem na pozycji do poufnych danych lub dostępem do krytycznych ustawień konfiguracji. Możesz na przykład skonfigurować zasady zarządzania dostępem z uprawnieniami, które wymagają jawnego zatwierdzenia dostępu do ustawień skrzynki pocztowej organizacji i zmiany ich w dzierżawie.
+Zarządzanie dostępem uprzywilejowanym jest włączone przez skonfigurowanie zasad określających dostęp just in time dla działań opartych na zadaniach w dzierżawie. Może pomóc w ochronie organizacji przed naruszeniami, które mogą korzystać z istniejących kont administratorów uprzywilejowanych mających stały dostęp do poufnych danych lub dostęp do krytycznych ustawień konfiguracji. Można na przykład skonfigurować zasady zarządzania dostępem uprzywilejowanym, które wymagają jawnego zatwierdzenia dostępu i zmiany ustawień skrzynki pocztowej organizacji w dzierżawie.
 
-W tym kroku włączysz zarządzanie dostępem uprzywilejowanym w dzierżawie i skonfigurujesz zasady dostępu uprzywilejowanych, które zapewniają dodatkowe zabezpieczenia dostępu opartego na zadaniach do danych i ustawień konfiguracji dla organizacji. Istnieją trzy podstawowe kroki rozpoczynania pracy z dostępem z uprawnieniami w organizacji:
+W tym kroku włączysz zarządzanie dostępem uprzywilejowanym w dzierżawie i skonfigurujesz zasady dostępu uprzywilejowanego, które zapewniają dodatkowe zabezpieczenia dostępu opartego na zadaniach do danych i ustawień konfiguracji organizacji. Aby rozpocząć pracę z uprzywilejowanym dostępem w organizacji, należy wykonać trzy podstawowe kroki:
 
 - Tworzenie grupy osoby zatwierdzającej
-- Włączanie dostępu z uprawnieniami
+- Włączanie dostępu uprzywilejowanego
 - Tworzenie zasad zatwierdzania
 
-Zarządzanie dostępem uprzywilejowanym umożliwia organizacji działanie przy użyciu uprawnień o zerowej pozycji i zapewnianie warstwy ochrony przed luki w zabezpieczeniach wynikających z takiego dostępu administracyjnego na takim miejscu. Dostęp z uprawnieniami wymaga zatwierdzenia w celu wykonania dowolnego zadania, które ma zdefiniowane zasady zatwierdzania. Użytkownicy potrzebujący wykonywania zadań zawartych w zasadach zatwierdzania muszą zażądać zatwierdzenia dostępu i uzyskać do niego dostęp.
+Zarządzanie dostępem uprzywilejowanym umożliwia organizacji działanie bez stałych uprawnień i zapewnianie warstwy ochrony przed lukami w zabezpieczeniach wynikającymi z takiego stałego dostępu administracyjnego. Dostęp uprzywilejowany wymaga zatwierdzeń do wykonywania każdego zadania, które ma zdefiniowane skojarzone zasady zatwierdzania. Użytkownicy, którzy muszą wykonywać zadania zawarte w zasadach zatwierdzania, muszą zażądać zatwierdzenia dostępu i otrzymać je.
 
-Aby włączyć zarządzanie dostępem z uprawnieniami, zobacz [Konfigurowanie zarządzania dostępem z uprawnieniami](/office365/securitycompliance/privileged-access-management-configuration).
+Aby włączyć zarządzanie dostępem uprzywilejowanym, zobacz [Konfigurowanie zarządzania dostępem uprzywilejowanym](/office365/securitycompliance/privileged-access-management-configuration).
 
-Aby uzyskać więcej informacji, zobacz [Zarządzanie dostępem z uprawnieniami](/office365/securitycompliance/privileged-access-management-overview).
+Aby uzyskać więcej informacji, zobacz [Privileged access management (Zarządzanie dostępem uprzywilejowanym).](/office365/securitycompliance/privileged-access-management-overview)
 
-### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Oprogramowanie do zarządzania informacjami o zabezpieczeniach i zdarzeniami na Microsoft 365 zdarzeń
+### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Oprogramowanie do zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM) do rejestrowania Microsoft 365
 
-Oprogramowanie SIEM uruchamiane na serwerze wykonuje w czasie rzeczywistym analizę alertów zabezpieczeń i zdarzeń utworzonych przez aplikacje i sprzęt sieciowy. Aby umożliwić serwerowi SIEM dołączanie alertów i zdarzeń zabezpieczeń Microsoft 365 do funkcji analizy i raportowania, zintegruj usługę Azure AD z usługą OKR. Zobacz [Wprowadzenie do Azure Log Integration](/azure/security/security-azure-log-integration-overview).
+Oprogramowanie SIEM uruchamiane na serwerze wykonuje w czasie rzeczywistym analizę alertów zabezpieczeń i zdarzeń utworzonych przez aplikacje i sprzęt sieciowy. Aby umożliwić serwerowi SIEM uwzględnianie Microsoft 365 alertów zabezpieczeń i zdarzeń w funkcjach analizy i raportowania, zintegruj usługę Azure AD z aplikacją SEIM. Zobacz [Wprowadzenie do Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Następny krok
 
-[![Ochrona kont Microsoft 365 użytkowników](../media/deploy-identity-solution-overview/microsoft-365-secure-sign-in.png)](microsoft-365-secure-sign-in.md)
+[![Ochrona kont użytkowników Microsoft 365](../media/deploy-identity-solution-overview/microsoft-365-secure-sign-in.png)](microsoft-365-secure-sign-in.md)
 
-Przejdź do [kroku 3,](microsoft-365-secure-sign-in.md) aby zabezpieczyć konta użytkowników.
+Kontynuuj [krok 3](microsoft-365-secure-sign-in.md) , aby zabezpieczyć konta użytkowników.

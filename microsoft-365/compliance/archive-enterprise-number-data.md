@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych z archiwizatora Enterprise numerów telemessage
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych programu SMS i MMS z usługi TeleMessage Enterprise Number Archiver. Dzięki temu można archiwizować dane ze źródeł danych innych firm w usłudze Microsoft Purview, aby można było zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: b3f429af6caa4d650688b27f5157a212e348ffe8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: dc9b0220a53332c3493acc4bb3217f4b782442a7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995057"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095061"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Konfigurowanie łącznika do archiwizowania danych Enterprise Number
 

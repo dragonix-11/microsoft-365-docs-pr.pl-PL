@@ -2,8 +2,8 @@
 title: Analiza istotności testu w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Dowiedz się, jak używać karty Test po obliczeniu usługi Batch w usłudze eDiscovery (Premium) do testowania, porównywania i weryfikowania ogólnej jakości przetwarzania.
-ms.openlocfilehash: e568552501a07c74e7500a1041e69f4994668cd2
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 0b3d6c70bdfef4dec8e8a5d08d4e72f80d6fec77
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991869"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095471"
 ---
 # <a name="test-relevance-analysis-in-ediscovery-premium"></a>Analiza istotności testu w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 

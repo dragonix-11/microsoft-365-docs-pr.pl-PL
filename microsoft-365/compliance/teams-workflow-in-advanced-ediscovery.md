@@ -2,8 +2,8 @@
 title: przepływ pracy Teams w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z Microsoft Teams w usłudze eDiscovery (Premium).
-ms.openlocfilehash: 043cfb070c008b4c58e48df40dfbb069ca859edd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 36bfcde1b2ee5ad9b088db008249cdeb1cf90eb4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972392"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092276"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Ten artykuł zawiera kompleksowy zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) w celu zachowania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams. Celem tego artykułu jest pomoc w optymalizacji przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem zawartości Teams.
 

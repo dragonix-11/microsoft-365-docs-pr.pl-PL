@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczanie Windows 10 komputerach
+title: Zabezpieczanie komputerów z systemem Windows 10
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -24,50 +24,50 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Dowiedz się, jak Windows 10 komputerach po ich skonfigurowaniu Microsoft 365 Business Premium.
-ms.openlocfilehash: 0b77a3430e4a5091409cf9fc8a4672ac7ee4472f
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Dowiedz się, jak zabezpieczyć komputery Windows 10 po skonfigurowaniu Microsoft 365 Business Premium.
+ms.openlocfilehash: 4800a5906fcb10f7debb5b627ffe81a1dd910d49
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635026"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095251"
 ---
-# <a name="secure-windows-10-computers"></a>Zabezpieczanie Windows 10 komputerach
+# <a name="secure-windows-10-computers"></a>Zabezpieczanie komputerów z systemem Windows 10
 
-Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
+Ten artykuł dotyczy Microsoft 365 Business Premium.
 
-Po skonfigurowaniu [konta Microsoft 365 Business Premium](business-set-up.md) należy chronić komputery Windows 10 w organizacji przed kradzieżą i złośliwymi zagrożeniami, np. wirusami i złośliwym oprogramowaniem.
+Po [skonfigurowaniu](business-set-up.md) Microsoft 365 Business Premium nadszedł czas, aby chronić Windows 10 komputery w organizacji przed kradzieżą i złośliwymi zagrożeniami, takimi jak wirusy i złośliwe oprogramowanie.
 
-## <a name="watch-secure-your-windows-10-pcs"></a>Obejrzyj: Zabezpieczanie komputera Windows 10 komputera
+## <a name="watch-secure-your-windows-10-pcs"></a>Obejrzyj: Zabezpieczanie komputerów Windows 10
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
 
-Po skonfigurowaniu ochrony urządzeń w programie Microsoft 365 Business wykonaj poniższe czynności, aby chronić Windows 10 komputerach.
+Po skonfigurowaniu ochrony urządzeń w usłudze Microsoft 365 Business wykonaj następujące kroki, aby chronić Windows 10 komputery.
 
 1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Konfiguracja**</a>.
 
-2. W **obszarze Zabezpiecz Windows wybierz** pozycję **Wyświetl**.
+2. W obszarze **Zabezpieczanie komputerów Windows** wybierz pozycję **Wyświetl**.
 
-3. Wybierz **Wprowadzenie**.
+3. Wybierz **pozycję Wprowadzenie**.
 
-4. W **KtoTo czy zasady** mają być stosowane?, określ, czy wybrane ustawienia mają być stosowane do wszystkich osób w organizacji, czy do konkretnych grup zabezpieczeń.
+4. W obszarze **KtoTo, do których powinny mieć zastosowanie zasady?**, wybierz, czy wybrane opcje zostaną zastosowane do wszystkich w organizacji, czy do określonych grup zabezpieczeń.
 
-5. Wybierz  **pozycję Zapisz zmiany**.
+5. Wybierz pozycję  **Zapisz zmiany**.
 
-## <a name="to-secure-your-windows-10-computers"></a>Aby zabezpieczyć swoje Windows 10 komputera
+## <a name="to-secure-your-windows-10-computers"></a>Aby zabezpieczyć komputery Windows 10
 
-1. Zaloguj się w [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) przy użyciu poświadczeń administratora globalnego. 
+1. Zaloguj się do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) przy użyciu poświadczeń administratora globalnego. 
 
-2. W lewym obszarze stacjonarnym wybierz pozycję **Konfiguracja**, a następnie w obszarze **Logowanie** i zabezpieczenia wybierz pozycję Zabezpiecz Windows 10 **komputerach**. Wybierz **pozycję Widok** , aby rozpocząć.
+2. Na lewym pasku nawigacyjnym wybierz pozycję **Konfiguracja**, a następnie **w obszarze Logowanie i zabezpieczenia** wybierz pozycję **Zabezpieczanie Windows 10 komputerów**. Wybierz pozycję **Widok** , aby rozpocząć pracę.
 
-3. Na stronie **Zabezpieczanie Windows 10 komputerach** przeczytaj wszystkie informacje, aby dowiedzieć się, co jest w nich dostępne i jaki jest wpływ na użytkowników.
+3. Na stronie **Zabezpieczanie komputerów Windows 10** przeczytaj wszystkie informacje, aby zrozumieć, co włączasz i jaki jest wpływ na użytkownika.
 
-    U góry strony wybierz **pozycję Wprowadzenie.**
+    W górnej części strony wybierz **pozycję Wprowadzenie**.
 
-4. W **okienku Windows 10 komputerów wybierz** opcje, które chcesz włączyć. 
+4. W okienku **Zabezpieczanie komputerów Windows 10** wybierz opcje, które chcesz włączyć. Aby uzyskać więcej informacji na temat ustawień, zobacz [Zabezpieczanie urządzeń Windows](../../business-premium/m365bp-secure-windows-devices.md) (artykuł). 
     
-    W większości organizacji te opcje oferują dobry poziom zabezpieczeń, jednak jeśli Twoja organizacja ma bardziej złożone potrzeby w zakresie zabezpieczeń, możesz również używać wstępnie zdefiniowanych bazowych zabezpieczeń do zabezpieczania twoich Windows 10 urządzeniach. Aby uzyskać więcej informacji, zobacz [Informacje o planach bazowych zabezpieczeń dla Windows 10 urządzeniach](/mem/intune/protect/security-baselines).   
+    W przypadku większości organizacji te opcje zapewniają dobry poziom zabezpieczeń, jednak jeśli organizacja ma bardziej złożone potrzeby w zakresie zabezpieczeń, możesz również użyć wstępnie zdefiniowanych punktów odniesienia zabezpieczeń w celu zabezpieczenia Windows 10 urządzeń. Aby uzyskać więcej informacji, zobacz [punkty odniesienia zabezpieczeń dla urządzeń Windows 10](/mem/intune/protect/security-baselines).   
 
 5. Wybierz **pozycję Zastosuj ustawienia**.
 
-    Te ustawienia zostaną zastosować do wszystkich użytkowników w organizacji. Aby skonfigurować różne zasady dla różnych grup zabezpieczeń, zobacz [Konfigurowanie ustawień ochrony urządzeń dla Windows 10 pc](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md).
+    Te ustawienia będą stosowane do wszystkich użytkowników w organizacji. Aby skonfigurować różne zasady dla różnych grup zabezpieczeń, zobacz [Ustawianie ustawień ochrony urządzeń dla Windows 10 komputerów](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md).

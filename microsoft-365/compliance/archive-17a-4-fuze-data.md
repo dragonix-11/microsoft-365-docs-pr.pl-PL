@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych Fuze w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik Fuze DataParser 17a-4 i użyć go do importowania i archiwizowania danych Fuze w Microsoft 365.
-ms.openlocfilehash: 7eab97532a7bbd45d61baed40c35e7b37bddfa62
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 46dea930a77ef75ecabe097223265f91477eaa09
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998303"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099372"
 ---
 # <a name="set-up-a-connector-to-archive-fuze-data"></a>Konfigurowanie łącznika do archiwizowania danych Fuze
 

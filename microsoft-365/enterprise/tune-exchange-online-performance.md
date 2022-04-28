@@ -1,8 +1,8 @@
 ---
-title: Dostosowywanie Exchange Online wydajności
+title: Dostosowywanie wydajności usługi Exchange Online
 ms.author: krowley
 author: tracyp
-manager: laurawi
+manager: scotv
 ms.date: 12/14/2017
 audience: Admin
 ms.topic: troubleshooting
@@ -16,38 +16,38 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: Ten artykuł zawiera ogólne porady i linki do innych zasobów, które informują o tym, jak zwiększyć wydajność Exchange Online.
-ms.openlocfilehash: 5feb704a1da83ef93ebc3bbe72fb12c7f0c54574
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b048db5e3ea5090ce5ed2391269f8167c459538
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987798"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092034"
 ---
-# <a name="tune-exchange-online-performance"></a>Dostosowywanie Exchange Online wydajności
+# <a name="tune-exchange-online-performance"></a>Dostosowywanie wydajności usługi Exchange Online
 
-Ten artykuł zawiera ogólne porady i linki do innych zasobów, które informują o tym, jak zwiększyć wydajność Exchange Online, szczególnie przed migracją. Ten artykuł jest częścią planowania [sieci i dostosowywania wydajności dla Office 365](./network-planning-and-performance.md) projektu.
+Ten artykuł zawiera ogólne porady i linki do innych zasobów, które informują o tym, jak zwiększyć wydajność Exchange Online, szczególnie przed migracją. Ten artykuł jest częścią [planowania sieci i dostrajania wydajności dla projektu Office 365](./network-planning-and-performance.md).
    
-## <a name="things-to-consider-in-order-to-improve-exchange-online-performance"></a>Co należy wziąć pod uwagę w celu zwiększenia Exchange Online danych
+## <a name="things-to-consider-in-order-to-improve-exchange-online-performance"></a>Kwestie, które należy wziąć pod uwagę w celu poprawy wydajności Exchange Online
 
-Aby zwiększyć szybkość migracji i zmniejszyć ograniczenia przepustowości Twojej organizacji na Exchange Online, rozważ następujące kwestie:
+Aby zwiększyć szybkość migracji i zmniejszyć ograniczenia przepustowości organizacji dla Exchange Online, należy wziąć pod uwagę następujące kwestie:
   
-- **Zmniejszanie rozmiarów skrzynek pocztowych.** Mniejszy rozmiar skrzynki pocztowej zwiększa szybkość migracji. 
+- **Zmniejsz rozmiary skrzynek pocztowych.** Mniejszy rozmiar skrzynki pocztowej zwiększa szybkość migracji. 
     
-- **Używanie funkcji przenoszenia skrzynki pocztowej we wdrożeniu Exchange hybrydowym.** W przypadku Exchange hybrydowego poczta w trybie offline (w postaci . Pliki OST) nie wymagają ponownego pobrania podczas migracji do programu Exchange Online. Znacznie zmniejsza to wymagania w zakresie przepustowości pobierania. 
+- **Użyj możliwości przenoszenia skrzynki pocztowej z wdrożeniem hybrydowym Exchange.** W przypadku wdrożenia hybrydowego Exchange poczta offline (w postaci . Pliki OST) nie wymagają ponownego pobrania podczas migracji do Exchange Online. Znacznie zmniejsza to wymagania dotyczące przepustowości pobierania. 
     
-- **Zaplanowanie przenoszenia skrzynek pocztowych na okresy niskiego ruchu internetowego i niskiego wykorzystania Exchange lokalnych.** Podczas planowania przesuńeń żądania migracji są przesyłane do serwera proxy replikacji skrzynki pocztowej i mogą nie zostać złożone natychmiast. 
+- **Planowanie przenoszenia skrzynki pocztowej w okresach niskiego ruchu internetowego i niskiego użycia lokalnego Exchange.** W przypadku przenoszenia harmonogramu żądania migracji są przesyłane do serwera proxy replikacji skrzynki pocztowej i mogą nie być wykonywane natychmiast. 
     
-- **Korzystanie z wysuwu bez Outlook w sieci Web.** Dzięki renderowaniu niektórych składników na serwerze w programie Microsoft Edge lub Internet Explorer mniejsze i wymaga mniej pamięci wersje niektórych wiadomości e-mail. Aby uzyskać więcej informacji, zobacz Używanie wysuwu niechcących okienek w celu zmniejszenia użycia [pamięci podczas czytania wiadomości e-mail](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf).
+- **Użyj wyskakujące okienka lean dla Outlook w sieci Web.** Wyskakujące okienka lean zapewniają mniejsze, mniej intensywnie korzystające z pamięci wersje niektórych wiadomości e-mail w programie Microsoft Edge lub Internet Explorer przez renderowanie niektórych składników na serwerze. Aby uzyskać więcej informacji, zobacz [Use lean popouts to reduce memory used when reading mail messages (Używanie wyskakujące okienka lean w celu zmniejszenia ilości pamięci używanej podczas odczytywania wiadomości e-mail](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf)).
 
 
 ## <a name="general-advice"></a>Porady ogólne
 
-- Upewnij się, że odnośnik DNS outlook.office.com wprowadza do centrum danych MS w logicznej lokalizacji wpisu dla Twojej lokalizacji.
+- Upewnij się, że wyszukiwanie dns dla outlook.office.com wprowadza centrum danych MS w lokalizacji wpisu logicznego dla lokalizacji.
 
-- Buforowanie skrzynki pocztowej poszukiwania i wybieranie odpowiednich opcji (np. okres buforowania, buforowanie udostępnionej skrzynki pocztowej, et cetera).
+- Zbadaj buforowanie skrzynki pocztowej i wybierz odpowiednie opcje (ponownie. okres buforowania, buforowanie udostępnionej skrzynki pocztowej, et cetera).
 
-- Nie Outlook danych sieciowych przez połączenia VPN (do biura centralnego), zanim trafią przez Internet.
+- Zachowaj Outlook danych przed przekazywaniem połączeń sieci VPN (do centralnego biura), zanim przejdzie przez Internet.
 
-- Upewnij się, że dane skrzynki pocztowej są zgodne z ograniczeniami folderów i elementów oraz kwot.
+- Upewnij się, że dane skrzynki pocztowej są zgodne z ograniczeniami dotyczącymi ilości folderów i elementów.
     
-Aby uzyskać więcej informacji na Exchange migracji, zobacz Office 365 [wydajność migracji i najlepsze rozwiązania](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57).
+Aby uzyskać więcej informacji na temat wydajności migracji Exchange, zobacz [Office 365 wydajność migracji i najlepsze rozwiązania](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57).

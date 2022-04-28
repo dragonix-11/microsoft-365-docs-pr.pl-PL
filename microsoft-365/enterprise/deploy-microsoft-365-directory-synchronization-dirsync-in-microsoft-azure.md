@@ -1,8 +1,8 @@
 ---
-title: Wdrażanie Microsoft 365 katalogów w programie Microsoft Azure
+title: Wdrażanie synchronizacji katalogów Microsoft 365 w Microsoft Azure
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/05/2018
 audience: ITPro
 ms.topic: conceptual
@@ -19,181 +19,181 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: Dowiedz się, jak wdrożyć usługę Azure AD Połączenie na maszyny wirtualnej na platformie Azure w celu synchronizowania kont między katalogiem lokalnym a dzierżawą usługi Azure AD.
-ms.openlocfilehash: 6535b46fb360cf326d8daf07662cb7fa366ae6c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak wdrożyć usługę Azure AD Połączenie na maszynie wirtualnej na platformie Azure w celu synchronizowania kont między katalogiem lokalnym a dzierżawą usługi Azure AD.
+ms.openlocfilehash: 077fe85307b5c64c5ece9d710a3ad171d04a21da
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984453"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092166"
 ---
-# <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Wdrażanie Microsoft 365 katalogów w programie Microsoft Azure
+# <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Wdrażanie synchronizacji katalogów Microsoft 365 w Microsoft Azure
 
-Azure Active Directory (Azure AD) Połączenie (wcześniej znany jako narzędzie do synchronizacji katalogów, narzędzie do synchronizacji katalogów lub narzędzie DirSync.exe) to aplikacja instalowana na serwerze przyłączony do domeny w celu zsynchronizowania lokalnych użytkowników usługi Usługi domenowe w usłudze Active Directory (AD DS) z dzierżawą usługi Azure AD subskrypcji usługi Microsoft 365. Microsoft 365 usługi katalogowej używa usługi Azure AD. Twoja Microsoft 365 obejmuje dzierżawę usługi Azure AD. Ta dzierżawa może być również używana do zarządzania tożsamościami Twojej organizacji za pomocą innych obciążeń chmurowych, w tym innych aplikacji i aplikacji SaaS na platformie Azure.
+Azure Active Directory (Azure AD) Połączenie (wcześniej nazywane narzędziem do synchronizacji katalogów, narzędziem do synchronizacji katalogów lub narzędziem DirSync.exe) to aplikacja instalowana na serwerze przyłączonym do domeny w celu synchronizowania użytkowników usług lokalna usługa Active Directory Domain Services (AD DS) z dzierżawą usługi Azure AD Microsoft 365 subskrypcji. Microsoft 365 używa usługi Azure AD dla swojej usługi katalogowej. Twoja subskrypcja Microsoft 365 obejmuje dzierżawę usługi Azure AD. Ta dzierżawa może być również używana do zarządzania tożsamościami organizacji przy użyciu innych obciążeń w chmurze, w tym innych aplikacji i aplikacji SaaS na platformie Azure.
 
-Usługę Azure AD Połączenie możesz zainstalować na serwerze lokalnym, ale możesz również zainstalować ją na maszyny wirtualnej na platformie Azure z tych powodów:
+Usługę Azure AD można zainstalować Połączenie na serwerze lokalnym, ale można go również zainstalować na maszynie wirtualnej na platformie Azure z następujących powodów:
   
-- Możesz szybciej zapewniać i konfigurować serwery w chmurze, co przyspieszy udostępnianie usług użytkownikom.
-- Platforma Azure zapewnia lepszą dostępność witryn przy mniejszym nałocie pracy.
+- Serwery oparte na chmurze można aprowizować i konfigurować szybciej, dzięki czemu usługi będą wcześniej dostępne dla użytkowników.
+- Platforma Azure oferuje lepszą dostępność witryny przy mniejszym nakładie pracy.
 - Możesz zmniejszyć liczbę serwerów lokalnych w organizacji.
 
-To rozwiązanie wymaga łączności między siecią lokalną a siecią wirtualną platformy Azure. Aby uzyskać więcej informacji, [Połączenie połączenie z](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) siecią lokalną Microsoft Azure wirtualną. 
+To rozwiązanie wymaga łączności między siecią lokalną a siecią wirtualną platformy Azure. Aby uzyskać więcej informacji, zobacz [Połączenie sieci lokalnej do Microsoft Azure sieci wirtualnej](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
   
 > [!NOTE]
-> W tym artykule opisano synchronizację pojedynczej domeny w jednym lesie. Usługa Azure AD Połączenie synchronizuje wszystkie domeny AD DS w lesie usługi Active Directory z Microsoft 365. Jeśli masz wiele lasów usługi Active Directory do zsynchronizowania z Microsoft 365, zobacz Scenariusz synchronizacji katalogów z jednym [Sign-On](/azure/active-directory/hybrid/whatis-hybrid-identity) lasów. 
+> W tym artykule opisano synchronizację pojedynczej domeny w jednym lesie. Usługa Azure AD Połączenie synchronizuje wszystkie domeny usług AD DS w lesie usługi Active Directory z Microsoft 365. Jeśli masz wiele lasów usługi Active Directory do zsynchronizowania z Microsoft 365, zobacz [Scenariusz synchronizacji katalogów z wieloma lasami z pojedynczym Sign-On](/azure/active-directory/hybrid/whatis-hybrid-identity). 
   
-## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Omówienie wdrażania synchronizacji Microsoft 365 katalogów na platformie Azure
+## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Omówienie wdrażania synchronizacji katalogów Microsoft 365 na platformie Azure
 
-Poniższy diagram przedstawia usługę Azure AD Połączenie na maszyny wirtualnej na platformie Azure (serwer synchronizacji katalogów), która synchronizuje lokalną AD DS z subskrypcją usługi Microsoft 365.
+Na poniższym diagramie przedstawiono usługę Azure AD Połączenie uruchomioną na maszynie wirtualnej na platformie Azure (serwerze synchronizacji katalogów), która synchronizuje lokalny las usług AD DS z subskrypcją Microsoft 365.
   
-![Narzędzie azure AD Połączenie na maszyny wirtualnej na platformie Azure do synchronizowania kont lokalnych z dzierżawą usługi Azure AD subskrypcji usługi Microsoft 365 z przepływem ruchu.](../media/CP-DirSyncOverview.png)
+![Narzędzie Połączenie usługi Azure AD na maszynie wirtualnej na platformie Azure synchronizujące konta lokalne z dzierżawą usługi Azure AD subskrypcji Microsoft 365 z przepływem ruchu.](../media/CP-DirSyncOverview.png)
   
-Na diagramie istnieją dwie sieci połączone za pomocą połączenia VPN między witrynami lub przez usługę ExpressRoute. Istnieje sieć lokalna, w której znajdują się kontrolery domeny AD DS, oraz istnieje sieć wirtualna platformy Azure z serwerem synchronizacji katalogów, która jest maszyną wirtualną z uruchomionymi kontrolerami usługi [Azure AD Połączenie](https://www.microsoft.com/download/details.aspx?id=47594). Istnieją dwa główne przepływy ruchu pochodzące z serwera synchronizacji katalogów:
+Na diagramie istnieją dwie sieci połączone przez połączenie sieci VPN typu lokacja-lokacja lub połączenie usługi ExpressRoute. Istnieje sieć lokalna, w której znajdują się kontrolery domeny usług AD DS, oraz sieć wirtualna platformy Azure z serwerem synchronizacji katalogów, która jest maszyną wirtualną z uruchomioną usługą [Azure AD Połączenie](https://www.microsoft.com/download/details.aspx?id=47594). Istnieją dwa główne przepływy ruchu pochodzące z serwera synchronizacji katalogów:
   
--  Usługa Azure AD Połączenie wysyła zapytanie dotyczące kontrolera domeny w sieci lokalnej w celu zmiany kont i haseł.
--  Usługa Azure AD Połączenie wysyła zmiany do kont i haseł do wystąpienia subskrypcji usługi Azure AD Microsoft 365 konta. Ponieważ serwer synchronizacji katalogów znajduje się w rozszerzonej części sieci lokalnej, zmiany te są wysyłane za pośrednictwem serwera proxy sieci lokalnej.
+-  Usługa Azure AD Połączenie wysyła zapytanie do kontrolera domeny w sieci lokalnej w celu wprowadzenia zmian w kontach i hasłach.
+-  Usługa Azure AD Połączenie wysyła zmiany do kont i haseł do wystąpienia usługi Azure AD subskrypcji Microsoft 365. Ponieważ serwer synchronizacji katalogów znajduje się w rozszerzonej części sieci lokalnej, zmiany te są wysyłane za pośrednictwem serwera proxy sieci lokalnej.
     
 > [!NOTE]
-> To rozwiązanie opisuje synchronizację pojedynczej domeny usługi Active Directory w jednym lesie usługi Active Directory. Usługa Azure AD Połączenie synchronizuje wszystkie domeny usługi Active Directory w lesie usługi Active Directory z Microsoft 365. Jeśli masz wiele lasów usługi Active Directory do zsynchronizowania z Microsoft 365, zobacz Scenariusz synchronizacji katalogów z jednym [Sign-On](/azure/active-directory/hybrid/whatis-hybrid-identity) lasów. 
+> To rozwiązanie opisuje synchronizację pojedynczej domeny usługi Active Directory w jednym lesie usługi Active Directory. Usługa Azure AD Połączenie synchronizuje wszystkie domeny usługi Active Directory w lesie usługi Active Directory z Microsoft 365. Jeśli masz wiele lasów usługi Active Directory do zsynchronizowania z Microsoft 365, zobacz [Scenariusz synchronizacji katalogów z wieloma lasami z pojedynczym Sign-On](/azure/active-directory/hybrid/whatis-hybrid-identity). 
   
-Wdrożenie tego rozwiązania jest opisane w dwóch głównych krokach:
+Podczas wdrażania tego rozwiązania istnieją dwa główne kroki:
   
-1. Utwórz sieć wirtualną platformy Azure i nawiąń połączenie vpn między witrynami z siecią lokalną. Aby uzyskać więcej informacji, [Połączenie połączenie z](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) siecią lokalną Microsoft Azure wirtualną.
+1. Utwórz sieć wirtualną platformy Azure i nawiąż połączenie sieci VPN typu lokacja-lokacja z siecią lokalną. Aby uzyskać więcej informacji, zobacz [Połączenie sieci lokalnej do Microsoft Azure sieci wirtualnej](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
     
-2. Zainstaluj [usługę Azure AD Połączenie](https://www.microsoft.com/download/details.aspx?id=47594) na maszyny wirtualnej przyłączonej do domeny na platformie Azure, a następnie zsynchronizuj lokalną AD DS, aby Microsoft 365. Obejmuje to:
+2. Zainstaluj [usługę Azure AD Połączenie](https://www.microsoft.com/download/details.aspx?id=47594) na maszynie wirtualnej przyłączonych do domeny na platformie Azure, a następnie zsynchronizuj lokalne usługi AD DS z Microsoft 365. Obejmuje to:
     
     Tworzenie maszyny wirtualnej platformy Azure do uruchamiania usługi Azure AD Połączenie.
     
-    Instalowanie i konfigurowanie usługi [Azure AD Połączenie](https://www.microsoft.com/download/details.aspx?id=47594).
+    Instalowanie i konfigurowanie [usługi Azure AD Połączenie](https://www.microsoft.com/download/details.aspx?id=47594).
     
-    Konfigurowanie usługi Azure AD Połączenie wymaga poświadczeń (nazwy użytkownika i hasła) konta administratora usługi Azure AD i konta administratora AD DS przedsiębiorstwa. Usługa Azure AD Połączenie działa natychmiast i na bieżąco w celu zsynchronizowania lokalnego lasu AD DS do Microsoft 365.
+    Konfigurowanie usługi Azure AD Połączenie wymaga poświadczeń (nazwy użytkownika i hasła) konta administratora usługi Azure AD i konta administratora przedsiębiorstwa usług AD DS. Usługa Azure AD Połączenie działa natychmiast i na bieżąco w celu synchronizacji lokalnego lasu usług AD DS z Microsoft 365.
     
-Przed wdrożeniem tego rozwiązania w środowisku produkcyjnym można użyć instrukcji podanych [](simulated-ent-base-configuration-microsoft-365-enterprise.md) w symulowanej konfiguracji podstawowej przedsiębiorstwa w celu skonfigurowania tej konfiguracji jako dowodu koncepcji, dla pokazów lub na eksperymentach.
+Przed wdrożeniem tego rozwiązania w środowisku produkcyjnym można użyć instrukcji w temacie [Symulowana konfiguracja podstawowa przedsiębiorstwa](simulated-ent-base-configuration-microsoft-365-enterprise.md) , aby skonfigurować tę konfigurację jako dowód koncepcji, pokazów lub eksperymentów.
   
 > [!IMPORTANT]
-> Po zakończeniu konfiguracji Połączenie usługi Azure AD nie są AD DS poświadczenia administratora przedsiębiorstwa. 
+> Po zakończeniu konfiguracji usługi Azure AD Połączenie nie są zapisywane poświadczenia konta administratora przedsiębiorstwa usług AD DS. 
   
 > [!NOTE]
-> To rozwiązanie opisano synchronizowanie pojedynczego AD DS z Microsoft 365. Topologia omówiona w tym artykule to tylko jeden sposób wdrożenia tego rozwiązania. Topologia organizacji może się różnić w zależności od Twoich unikatowych wymagań sieciowych i kwestii zabezpieczeń. 
+> W tym rozwiązaniu opisano synchronizowanie pojedynczego lasu usług AD DS z Microsoft 365. Topologia omówiona w tym artykule reprezentuje tylko jeden sposób implementacji tego rozwiązania. Topologia organizacji może się różnić w zależności od unikatowych wymagań sieciowych i zagadnień dotyczących zabezpieczeń. 
   
-## <a name="plan-for-hosting-a-directory-sync-server-for-microsoft-365-in-azure"></a>Planowanie hostingu serwera synchronizacji katalogów dla usługi Microsoft 365 Azure
+## <a name="plan-for-hosting-a-directory-sync-server-for-microsoft-365-in-azure"></a>Planowanie hostowania serwera synchronizacji katalogów dla Microsoft 365 na platformie Azure
 <a name="PlanningVirtual"> </a>
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-Przed rozpoczęciem przejrzyj następujące wymagania wstępne dotyczące tego rozwiązania:
+Przed rozpoczęciem zapoznaj się z następującymi wymaganiami wstępnymi dotyczącymi tego rozwiązania:
   
-- Zapoznaj się z powiązaną zawartością planowania w [tesłudze Planowanie sieci wirtualnej platformy Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#plan-your-azure-virtual-network).
+- Przejrzyj powiązaną zawartość planowania w [temacie Planowanie sieci wirtualnej platformy Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#plan-your-azure-virtual-network).
     
-- Upewnij się, że są spełnione wszystkie [wymagania wstępne](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites) dotyczące konfigurowania sieci wirtualnej platformy Azure.
+- Upewnij się, że spełniasz wszystkie [wymagania wstępne](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites) dotyczące konfigurowania sieci wirtualnej platformy Azure.
     
-- Posiadaj Microsoft 365, która zawiera funkcję integracji z usługą Active Directory. Aby uzyskać informacje Microsoft 365 subskrypcji, przejdź do strony Microsoft 365 [subskrypcji](https://products.office.com/compare-all-microsoft-office-products?tab=2).
+- Masz subskrypcję Microsoft 365 obejmującą funkcję integracji z usługą Active Directory. Aby uzyskać informacje o subskrypcjach Microsoft 365, przejdź do [strony subskrypcji Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?tab=2).
     
-- Inicjowanie obsługi jednej maszyny wirtualnej platformy Azure z Połączenie Azure AD w celu synchronizowania lokalnego lasu AD DS z Microsoft 365.
+- Aprowizuj jedną maszynę wirtualną platformy Azure z uruchomioną usługą Azure AD Połączenie, aby zsynchronizować lokalny las usług AD DS z Microsoft 365.
     
-    Musisz mieć poświadczenia (nazwy i hasła) dla konta administratora AD DS przedsiębiorstwa i konta administratora usługi Azure AD.
+    Musisz mieć poświadczenia (nazwy i hasła) dla konta administratora przedsiębiorstwa usług AD DS i konta administratora usługi Azure AD.
     
-### <a name="solution-architecture-design-assumptions"></a>Założenia projektowe architektury rozwiązań
+### <a name="solution-architecture-design-assumptions"></a>Założenia dotyczące projektowania architektury rozwiązania
 
-Na poniższej liście opisano opcje projektu dla tego rozwiązania.
+Poniższa lista zawiera opis wyborów projektowych dokonanych dla tego rozwiązania.
   
-- To rozwiązanie korzysta z pojedynczej sieci wirtualnej platformy Azure z połączeniem VPN między witrynami. Sieć wirtualna Azure hostuje pojedynczą podsieci, która ma jeden serwer: serwer synchronizacji katalogów z uruchomionym usługą Azure AD Połączenie. 
+- To rozwiązanie używa pojedynczej sieci wirtualnej platformy Azure z połączeniem sieci VPN typu lokacja-lokacja. Sieć wirtualna platformy Azure hostuje pojedynczą podsieć z jednym serwerem— serwerem synchronizacji katalogów z uruchomioną usługą Azure AD Połączenie. 
     
 - W sieci lokalnej istnieje kontroler domeny i serwery DNS.
     
-- Usługa Azure AD Połączenie przeprowadza synchronizację skrótów haseł zamiast logowania pojedynczego. Nie musisz wdrażać infrastruktury usług federalnych Active Directory (AD FS). Aby dowiedzieć się więcej o synchronizacji skrótów haseł i opcjach logowania pojedynczego, zobacz Wybieranie odpowiedniej metody uwierzytelniania dla Azure Active Directory [hybrydowego rozwiązania tożsamości](/azure/active-directory/hybrid/choose-ad-authn).
+- Usługa Azure AD Połączenie wykonuje synchronizację skrótów haseł zamiast logowania jednokrotnego. Nie trzeba wdrażać infrastruktury Active Directory Federation Services (AD FS). Aby dowiedzieć się więcej na temat synchronizacji skrótów haseł i opcji logowania jednokrotnego, zobacz [Wybieranie odpowiedniej metody uwierzytelniania dla rozwiązania Azure Active Directory tożsamości hybrydowej](/azure/active-directory/hybrid/choose-ad-authn).
     
-Istnieją dodatkowe opcje projektu, które można rozważyć podczas wdrażania tego rozwiązania w środowisku. Są to między innymi następujące elementy:
+Istnieją dodatkowe opcje projektowania, które można wziąć pod uwagę podczas wdrażania tego rozwiązania w środowisku. Są to następujące funkcje:
   
-- Jeśli w istniejącej sieci wirtualnej Azure istnieją serwery DNS, określ, czy chcesz, aby serwer synchronizacji katalogów ich używać do rozpoznawania nazw zamiast serwerów DNS w sieci lokalnej.
+- Jeśli istnieją serwery DNS w istniejącej sieci wirtualnej platformy Azure, określ, czy serwer synchronizacji katalogów ma używać ich do rozpoznawania nazw zamiast serwerów DNS w sieci lokalnej.
     
-- Jeśli w istniejącej sieci wirtualnej Azure istnieją kontrolery domeny, określ, czy skonfigurowanie witryn i usług Active Directory może być lepszym rozwiązaniem. Serwer synchronizacji katalogów może zwracać się do kontrolerów domen w wirtualnej sieci Azure w celu zmiany kont i haseł zamiast kontrolerów domen w sieci lokalnej.
+- Jeśli w istniejącej sieci wirtualnej platformy Azure istnieją kontrolery domeny, ustal, czy skonfigurowanie lokacji i usług Active Directory może być lepszym rozwiązaniem. Serwer synchronizacji katalogów może wysyłać zapytania do kontrolerów domeny w sieci wirtualnej platformy Azure o zmiany kont i haseł zamiast kontrolerów domeny w sieci lokalnej.
     
-## <a name="deployment-roadmap"></a>Plan wdrażania
+## <a name="deployment-roadmap"></a>Plan wdrożenia
 
-Wdrażanie usługi Azure AD Połączenie na maszynie wirtualnej na platformie Azure składa się z trzech etapów:
+Wdrażanie usługi Azure AD Połączenie na maszynie wirtualnej na platformie Azure składa się z trzech faz:
   
-- Etap 1. Tworzenie i konfigurowanie sieci wirtualnej platformy Azure
+- Faza 1. Tworzenie i konfigurowanie sieci wirtualnej platformy Azure
     
-- Etap 2. Tworzenie i konfigurowanie maszyny wirtualnej platformy Azure
+- Faza 2. Tworzenie i konfigurowanie maszyny wirtualnej platformy Azure
     
-- Etap 3. Instalowanie i konfigurowanie usługi Azure AD Połączenie
+- Faza 3. Instalowanie i konfigurowanie Połączenie usługi Azure AD
     
-Po wdrożeniu musisz również przypisać lokalizacje i licencje dla nowych kont użytkowników w programie Microsoft 365.
+Po wdrożeniu należy również przypisać lokalizacje i licencje dla nowych kont użytkowników w Microsoft 365.
 
 
-### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Etap 1. Tworzenie i konfigurowanie sieci wirtualnej platformy Azure
+### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Faza 1. Tworzenie i konfigurowanie sieci wirtualnej platformy Azure
 
-Aby utworzyć i skonfigurować sieć wirtualną platformy Azure, ukończ etap [1.](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-1-prepare-your-on-premises-network) Przygotowanie sieci lokalnej i etap [2.](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-2-create-the-cross-premises-virtual-network-in-azure) Tworzenie między siedzibą sieci wirtualnej na platformie Azure w planie wdrażania usługi [Połączenie](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) sieci lokalnej do sieci Microsoft Azure wirtualnej.
+Aby utworzyć i skonfigurować sieć wirtualną platformy Azure, [ukończ fazę 1: przygotowanie sieci lokalnej](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-1-prepare-your-on-premises-network) i [fazę 2. Tworzenie sieci wirtualnej między środowiskami na platformie Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-2-create-the-cross-premises-virtual-network-in-azure) w planie wdrożenia [Połączenie sieci lokalnej do sieci Microsoft Azure wirtualnej](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
-Jest to wynikowa konfiguracja.
+Jest to konfiguracja wyniku.
   
-![Etap 1. serwera synchronizacji katalogów dla usług Microsoft 365 na platformie Azure.](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Faza 1 serwera synchronizacji katalogów dla Microsoft 365 hostowana na platformie Azure.](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
-Na tej ilustracji przedstawiono sieć lokalną połączną z siecią wirtualną platformy Azure za pośrednictwem połączenia VPN między witrynami lub usługi ExpressRoute.
+Na tym rysunku przedstawiono sieć lokalną połączoną z siecią wirtualną platformy Azure za pośrednictwem sieci VPN typu lokacja-lokacja lub połączenia usługi ExpressRoute.
   
-### <a name="phase-2-create-and-configure-the-azure-virtual-machine"></a>Etap 2. Tworzenie i konfigurowanie maszyny wirtualnej platformy Azure
+### <a name="phase-2-create-and-configure-the-azure-virtual-machine"></a>Faza 2. Tworzenie i konfigurowanie maszyny wirtualnej platformy Azure
 
-Utwórz maszynę wirtualną na platformie Azure, korzystając z instrukcji [Utwórz pierwszą Windows wirtualną w portalu Azure Portal](https://go.microsoft.com/fwlink/p/?LinkId=393098). Użyj następujących ustawień:
+Utwórz maszynę wirtualną na platformie Azure, korzystając z instrukcji [Tworzenie pierwszej maszyny wirtualnej Windows w Azure Portal](https://go.microsoft.com/fwlink/p/?LinkId=393098). Użyj następujących ustawień:
   
-- W **okienku Podstawy** wybierz tę samą subskrypcję, lokalizację i grupę zasobów, co twoja sieć wirtualna. Zanotuj nazwę użytkownika i hasło w bezpiecznym miejscu. Będą one potrzebne później do nawiązania połączenia z maszyną wirtualną.
+- W okienku **Podstawy** wybierz tę samą subskrypcję, lokalizację i grupę zasobów co sieć wirtualna. Zarejestruj nazwę użytkownika i hasło w bezpiecznej lokalizacji. Będą one potrzebne później, aby nawiązać połączenie z maszyną wirtualną.
     
-- W **okienku Wybierz rozmiar** wybierz rozmiar **standardowy A2** .
+- W okienku **Wybierz rozmiar** wybierz rozmiar **A2 w warstwie Standardowa** .
     
-- W **okienku** Ustawienia **w sekcji Storage** wybierz pozycję **Standardowy** typ przestrzeni dyskowej. W sekcji **Network** (Sieć) wybierz nazwę swojej sieci wirtualnej i podsieci hostowania serwera synchronizacji katalogów (nie nazwy GatewaySubnet). Pozostaw wszystkie inne ustawienia na ich wartości domyślne.
+- W okienku **Ustawienia** w sekcji **Storage** wybierz typ magazynu w warstwie **Standardowa**. W sekcji **Sieć** wybierz nazwę sieci wirtualnej i podsieci do hostowania serwera synchronizacji katalogów (a nie podsieci GatewaySubnet). Pozostaw wszystkie inne ustawienia na wartościach domyślnych.
     
-Sprawdź, czy serwer synchronizacji katalogów używa prawidłowo systemu DNS, sprawdzając wewnętrzny system DNS, aby upewnić się, że do maszyny wirtualnej został dodany rekord adresu (A) z jego adresem IP. 
+Sprawdź, czy serwer synchronizacji katalogów prawidłowo używa systemu DNS, sprawdzając wewnętrzny system DNS, aby upewnić się, że do maszyny wirtualnej został dodany rekord adresu (A) z jej adresem IP. 
   
-Skorzystaj z instrukcji Połączenie [się z maszyną wirtualną](/azure/virtual-machines/windows/connect-logon) i zaloguj się, aby połączyć się z serwerem synchronizacji katalogów za pomocą połączenia pulpitu zdalnego. Po zalogowaniu się dołącz maszynę wirtualną do domeny AD DS domeny.
+Użyj instrukcji w [Połączenie do maszyny wirtualnej i zaloguj się](/azure/virtual-machines/windows/connect-logon), aby nawiązać połączenie z serwerem synchronizacji katalogów za pomocą połączenia pulpitu zdalnego. Po zalogowaniu dołącz maszynę wirtualną do lokalnej domeny usług AD DS.
   
-Aby usługa Azure AD Połączenie uzyskać dostęp do zasobów internetowych, musisz skonfigurować serwer synchronizacji katalogów do używania lokalnego serwera proxy sieci. W celu wykonania wszystkich dodatkowych czynności konfiguracyjnych należy skontaktować się z administratorem sieci.
+Aby usługa Azure AD Połączenie uzyskać dostęp do zasobów internetowych, należy skonfigurować serwer synchronizacji katalogów do korzystania z serwera proxy sieci lokalnej. W celu wykonania dodatkowych czynności konfiguracyjnych należy skontaktować się z administratorem sieci.
   
-Jest to wynikowa konfiguracja.
+Jest to konfiguracja wyniku.
   
-![Etap 2 serwera synchronizacji katalogów dla usług Microsoft 365 na platformie Azure.](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Faza 2 serwera synchronizacji katalogów dla Microsoft 365 hostowana na platformie Azure.](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
-Na tej ilustracji przedstawiono maszynę wirtualną serwera synchronizacji katalogów w między siedzibą sieci wirtualnej platformy Azure.
+Na tym rysunku przedstawiono maszynę wirtualną serwera synchronizacji katalogów w sieci wirtualnej platformy Azure między środowiskami lokalnymi.
   
-### <a name="phase-3-install-and-configure-azure-ad-connect"></a>Etap 3. Instalowanie i konfigurowanie usługi Azure AD Połączenie
+### <a name="phase-3-install-and-configure-azure-ad-connect"></a>Faza 3. Instalowanie i konfigurowanie Połączenie usługi Azure AD
 
-Wykonaj następujące czynności:
+Wykonaj następującą procedurę:
   
-1. Połączenie z serwerem synchronizacji katalogów przy użyciu połączenia pulpitu zdalnego z kontem AD DS domeny z uprawnieniami administratora lokalnego. Zobacz [Połączenie do maszyny wirtualnej i zaloguj się](/azure/virtual-machines/windows/connect-logon).
+1. Połączenie do serwera synchronizacji katalogów przy użyciu połączenia pulpitu zdalnego z kontem domeny usług AD DS z uprawnieniami administratora lokalnego. Zobacz [Połączenie do maszyny wirtualnej i zaloguj się](/azure/virtual-machines/windows/connect-logon).
     
-2. Na serwerze synchronizacji katalogów otwórz artykuł Konfigurowanie [](set-up-directory-synchronization.md) synchronizacji katalogów Microsoft 365 i postępuj zgodnie z instrukcjami synchronizacji katalogów z synchronizacją skrótów haseł.
+2. Na serwerze synchronizacji katalogów otwórz artykuł [Konfigurowanie synchronizacji katalogów dla Microsoft 365](set-up-directory-synchronization.md) i postępuj zgodnie z instrukcjami synchronizacji katalogów z synchronizacją skrótów haseł.
     
 > [!CAUTION]
-> Instalator tworzy konto **AAD_xxxxxxxxxxxx** organizacji Użytkownicy lokalni. Przenoszenie lub usuwanie tego konta nie powiedzie się. Synchronizacja nie powiedzie się.
+> Instalator tworzy konto **AAD_xxxxxxxxxxxx** w jednostce organizacyjnej użytkownicy lokalni . Nie należy przenosić ani usuwać tego konta, a synchronizacja zakończy się niepowodzeniem.
   
-Jest to wynikowa konfiguracja.
+Jest to konfiguracja wyniku.
   
-![Etap 3. serwera synchronizacji katalogów dla Microsoft 365 na platformie Azure.](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Faza 3 serwera synchronizacji katalogów dla Microsoft 365 hostowana na platformie Azure.](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
-Na tej ilustracji przedstawiono serwer synchronizacji katalogów z usługą Azure AD Połączenie w między siedzibą sieci wirtualnej platformy Azure.
+Na tym rysunku przedstawiono serwer synchronizacji katalogów z usługą Azure AD Połączenie w sieci wirtualnej platformy Azure między środowiskami lokalnymi.
   
 ### <a name="assign-locations-and-licenses-to-users-in-microsoft-365"></a>Przypisywanie lokalizacji i licencji użytkownikom w Microsoft 365
 
-Usługa Azure AD Połączenie dodaje konta do Twojej subskrypcji usługi Microsoft 365 z lokalnego programu AD DS, ale aby użytkownicy logowali się do usługi Microsoft 365 i korzystali z jej usług, konta muszą być skonfigurowane z lokalizacją i licencjami. Aby dodać lokalizację i aktywować licencje dla odpowiednich kont użytkowników, użyj poniższych instrukcji:
+Usługa Azure AD Połączenie dodaje konta do subskrypcji Microsoft 365 z lokalnych usług AD DS, ale aby użytkownicy mogli logować się do Microsoft 365 i korzystać z jej usług, konta muszą być skonfigurowane przy użyciu lokalizacji i licencji. Wykonaj następujące kroki, aby dodać lokalizację i aktywować licencje dla odpowiednich kont użytkowników:
   
-1. Zaloguj się do centrum [centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com), a następnie kliknij pozycję **Administrator**.
+1. Zaloguj się do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com), a następnie kliknij pozycję **Administrator**.
     
-2. W lewym okienku nawigacji kliknij pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UżytkownicyAktywowanie**</a> >  użytkowników.
-3. Na liście kont użytkowników zaznacz pole wyboru obok użytkownika, którego chcesz aktywować.
+2. W obszarze nawigacji po lewej stronie kliknij pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UżytkownicyAktywni**</a> >  użytkownicy.
+3. Na liście kont użytkowników zaznacz pole wyboru obok użytkownika, który chcesz aktywować.
     
-4. Na stronie użytkownika kliknij pozycję **Edytuj** w **przypadku licencji produktu**.
+4. Na stronie użytkownika kliknij pozycję **Edytuj** **dla pozycji Licencje produktów**.
     
-5. Na **stronie Licencje na produkty** wybierz dla użytkownika lokalizację **Lokalizacji, a** następnie włącz odpowiednie licencje dla użytkownika.
+5. Na stronie **Licencje produktów** wybierz lokalizację dla użytkownika dla pozycji **Lokalizacja**, a następnie włącz odpowiednie licencje dla użytkownika.
     
-6. Po zakończeniu kliknij przycisk **Zapisz**, a następnie kliknij przycisk **Zamknij** dwa razy.
+6. Po zakończeniu kliknij przycisk **Zapisz**, a następnie kliknij dwukrotnie przycisk **Zamknij** .
     
-7. Wróć do kroku 3 w przypadku dodatkowych użytkowników.
+7. Wstecz do kroku 3 dla dodatkowych użytkowników.
     
 ## <a name="see-also"></a>Zobacz też
 
-[Microsoft 365 rozwiązania i architektury](../solutions/index.yml)
+[Centrum rozwiązań i architektury platformy Microsoft 365](../solutions/index.yml)
   
-[Połączenie sieci lokalnej do sieci Microsoft Azure wirtualnej](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
+[Połączenie sieci lokalnej do sieci wirtualnej Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 
-[Pobierz aplikację Azure AD Połączenie](https://www.microsoft.com/download/details.aspx?id=47594)
+[Pobieranie Połączenie usługi Azure AD](https://www.microsoft.com/download/details.aspx?id=47594)
   
 [Konfigurowanie synchronizacji katalogów dla Microsoft 365](set-up-directory-synchronization.md)

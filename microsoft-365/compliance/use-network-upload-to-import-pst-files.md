@@ -2,8 +2,8 @@
 title: Użyj przekazywania sieciowego w celu importu plików PST
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Dla administratorów: dowiedz się, jak używać przekazywania sieci do zbiorczego importowania wielu plików PST do skrzynek pocztowych użytkowników w Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cd025adb7100e6dff0d8cb97c195e851414afd81
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999811"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095427"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Importowanie plików PST organizacji do Microsoft 365 przy użyciu przekazywania sieci
 
@@ -92,7 +92,7 @@ Pierwszym krokiem jest pobranie narzędzia AzCopy, czyli narzędzia uruchomioneg
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
-2. W lewym okienku portalu zgodności kliknij pozycję **Importowanie** **ładu** \> informacji.
+2. W lewym okienku portalu zgodności kliknij pozycję **Importuj zarządzanie cyklem** \> życia danych.
 
     > [!NOTE]
     > Musisz mieć przypisane odpowiednie uprawnienia, aby uzyskać dostęp do strony **Importuj** w portalu zgodności. Aby uzyskać więcej informacji, zobacz sekcję **Przed rozpoczęciem** . 
@@ -260,7 +260,7 @@ Następnym krokiem jest utworzenie zadania importu PST w usłudze Import w Micro
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
-2. W lewym okienku portalu zgodności kliknij pozycję **Zarządzanie informacjami > Importuj**.
+2. W lewym okienku portalu zgodności kliknij pozycję **Zarządzanie cyklem życia danych > importu**.
 
 3. Na karcie **Import** kliknij pozycję Dodaj ikonę ![.](../media/ITPro-EAC-AddIcon.gif) **Nowe zadanie importu**.
 

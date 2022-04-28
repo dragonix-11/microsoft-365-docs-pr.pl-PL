@@ -21,32 +21,32 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 'Usuń licencję z udostępnionej skrzynki pocztowej, aby przypisać ją do innego użytkownika lub zwrócić licencję, aby za nie nie płacić. '
-ms.date: 05/11/2021
-ms.openlocfilehash: 6de6f213cc0df7a216122d55ef07e270586aea12
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 'Usuń licencję ze udostępnionej skrzynki pocztowej, aby przypisać ją innemu użytkownikowi lub zwrócić licencję, aby nie płacić za nią. '
+ms.date: 04/22/2022
+ms.openlocfilehash: 4445163281e403505612066285192b31adc44979
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314801"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091924"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Usuwanie licencji z udostępnionej skrzynki pocztowej
 
-Udostępnione skrzynki pocztowe zazwyczaj nie wymagają licencji. Wykonaj poniższe instrukcje, aby usunąć licencję z udostępnionej skrzynki pocztowej, tak aby można było przypisać ją do użytkownika lub zwrócić licencję, aby nie płacić za licencję, która nie jest potrzebna.
+Udostępnione skrzynki pocztowe zwykle nie wymagają licencji. Postępuj zgodnie z tymi instrukcjami, aby usunąć licencję ze udostępnionej skrzynki pocztowej, aby można było przypisać ją do użytkownika lub zwrócić licencję, aby nie płacić za licencję, której nie potrzebujesz.
 
 > [!NOTE]
 >
 > Licencja Exchange Online Plan 2 jest wymagana w następujących scenariuszach:
 >
-> - W udostępnionej skrzynce pocztowej jest ponad 50 GB miejsca do magazynowania.
+> - Udostępniona skrzynka pocztowa ma ponad 50 GB magazynu w użyciu.
 > - Udostępniona skrzynka pocztowa używa archiwizacji w miejscu.
-> - Udostępniona skrzynka pocztowa jest umieszczana w postępowaniem sądowym.
-> - Do udostępnionej skrzynki pocztowej jest Microsoft 365 Defender przypisana licencja.
+> - Udostępniona skrzynka pocztowa jest umieszczana w blokadzie sądowej.
+> - Udostępniona skrzynka pocztowa ma przypisaną licencję Microsoft 365 Defender.
 > 
-> Aby uzyskać instrukcje krok po kroku dotyczące przypisywania licencji, zobacz [Przypisywanie licencji użytkownikom](/microsoft-365/admin/manage/assign-licenses-to-users). 
+> Aby uzyskać instrukcje krok po kroku dotyczące przypisywania licencji, zobacz [Przypisywanie licencji do użytkowników](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
 
-## <a name="remove-the-license"></a>Odejmij licencję
+## <a name="remove-the-license"></a>Usuwanie licencji
 
 ::: moniker range="o365-worldwide"
 
@@ -61,17 +61,17 @@ Udostępnione skrzynki pocztowe zazwyczaj nie wymagają licencji. Wykonaj poniż
 ::: moniker-end
 
    > [!NOTE]
-   > Należy usunąć licencję ze strony Aktywni użytkownicy. Nie można usunąć licencji ze strony Udostępniona skrzynka pocztowa, ponieważ licencje są ustawieniami użytkownika.
+   > Musisz usunąć licencję ze strony Aktywni użytkownicy. Nie można usunąć licencji ze strony Udostępniona skrzynka pocztowa, ponieważ licencje są ustawieniami użytkownika.
   
 2. Wybierz udostępnioną skrzynkę pocztową.
 
-3. Na karcie **Licencje i aplikacje** rozwiń **pozycję** Licencje i wyczyść pole wyboru licencji, którą chcesz usunąć.
+3. Na **karcie Licencje i aplikacje** rozwiń węzeł **Licencje** i usuń zaznaczenie pola wyboru licencji, którą chcesz usunąć.
 
-4. Wybierz **pozycję Zapisz zmiany**.
+4. Wybierz pozycję **Zapisz zmiany**.
 
-5. Po powrocie do strony **Aktywni użytkownicy** stan udostępnionej skrzynki pocztowej będzie miał stan **Nielicencjonowany**.
+5. Po powrocie do strony **Aktywni użytkownicy** stan udostępnionej skrzynki pocztowej będzie **nielicencjonowany**.
 
-6. Nadal płacisz za licencję. Aby przestać za niego płacić, [usuń licencję z subskrypcji](../../commerce/licenses/buy-licenses.md).
+6. Nadal płacisz za licencję. Aby przestać za to płacić, [usuń licencję z subskrypcji](../../commerce/licenses/buy-licenses.md).
 
 ## <a name="related-content"></a>Zawartość pokrewna
 

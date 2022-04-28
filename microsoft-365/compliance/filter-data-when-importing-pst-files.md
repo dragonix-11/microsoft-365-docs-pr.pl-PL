@@ -2,8 +2,8 @@
 title: Filtruj dane podczas importowania plików PST
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Dowiedz się, jak filtrować dane przy użyciu funkcji inteligentnego importu w usłudze importowania Microsoft 365 podczas importowania plików PST do Microsoft 365.
-ms.openlocfilehash: dc60baf45be97e438875e0b045d9e8f3b6208d3f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5ff78126f9e2d02181635433d7a94ede0e191c8d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997917"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099746"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtruj dane podczas importowania plików PST
 
@@ -70,7 +70,7 @@ Po utworzeniu zadania importowania PST wykonaj następujące kroki, aby przefilt
   
 1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
     
-2. W lewym okienku portalu zgodności kliknij pozycję **Importowanie** **ładu** \> informacji.
+2. W lewym okienku portalu zgodności kliknij pozycję **Importuj zarządzanie cyklem** \> życia danych.
     
     Zadania importu dla organizacji są wyświetlane na karcie **Import.** Wartość **Ukończona analiza** w kolumnie **Stan** wskazuje zadania importu, które zostały przeanalizowane przez Microsoft 365 i są gotowe do zaimportowania.
     

@@ -2,8 +2,8 @@
 title: Konfigurowanie tagów inteligentnych w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Tagi inteligentne umożliwiają stosowanie możliwości uczenia maszynowego podczas przeglądania zawartości w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Użyj grup tagów inteligentnych, aby wyświetlić wyniki modeli wykrywania uczenia maszynowego, takich jak model uprawnień adwokackiego klienta.
-ms.openlocfilehash: 1adea2404192b9e715ad021f70ba07f7e64a89d5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e9b791d632ea6a1a84472ac5ad00b4a45fea294d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999745"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095515"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>Konfigurowanie tagów inteligentnych w usłudze eDiscovery (Premium)
 

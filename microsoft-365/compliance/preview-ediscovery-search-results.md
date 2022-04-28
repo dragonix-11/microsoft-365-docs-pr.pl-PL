@@ -2,8 +2,8 @@
 title: Podgląd wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Wyświetl podgląd przykładu wyników zwróconych przez wyszukiwanie zawartości lub wyszukiwanie zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 3397b82f088f9aff480b6893edbf7aa664d91dc4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: acbfebc5935666299dc6a717d70f9c426a6d61cd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999019"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099636"
 ---
 # <a name="preview-ediscovery-search-results"></a>Eksportowanie wyników wyszukiwania w ramach zbierania elektronicznych materiałów dowodowych
 

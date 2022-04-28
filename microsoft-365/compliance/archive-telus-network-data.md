@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych sieci TELUS w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik TeleMessage do importowania i archiwizowania danych programu SMS z sieci TELUS w Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
-ms.openlocfilehash: d35f14d5987f0230f17313902d0f451eedacb104
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 9199c38960cbc3e238f6ea8a47a06935c7867b69
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000471"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099702"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>Konfigurowanie łącznika do archiwizowania danych sieci TELUS
 

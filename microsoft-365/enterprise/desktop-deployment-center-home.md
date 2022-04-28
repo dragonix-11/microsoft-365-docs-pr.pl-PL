@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Informacje o tym, jak uzyskać dostęp do zasobów równoważnych przestarzałemu centrum wdrażania pulpitów.
-ms.openlocfilehash: 6a8f08b855393741e6b2d48c40b4f712154ee1a6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6ba3f86d4c1e02b29206d57ccab220f74ab7e3e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984598"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095339"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Centrum wdrażania pulpitu (przestarzałe)
 

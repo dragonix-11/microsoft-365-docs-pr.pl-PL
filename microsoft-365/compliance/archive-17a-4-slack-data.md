@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych usługi Slack w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik usługi Slack DataParser 17a-4 i używać go do importowania i archiwizowania danych usługi Slack w Microsoft 365.
-ms.openlocfilehash: 9157db405f37b53b8637c466e9d6d8050c5a325b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d36fe8214202ff8ca25cfb995d51f93e3429eae5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996652"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092508"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>Konfigurowanie łącznika do archiwizowania danych usługi Slack
 

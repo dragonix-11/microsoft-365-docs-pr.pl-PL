@@ -2,8 +2,8 @@
 title: Usuwanie elementów w folderze Elementy możliwe do odzyskania
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ description: Dowiedz się, jak administratorzy mogą usuwać elementy w folderze
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: b421be087980c7878b79e3dbc03759ec45c546d8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 808bc02eb711ff72ec8bd329b1367145d2d991a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001197"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091748"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Usuwanie elementów w folderze Elementy możliwe do odzyskania w magazynach chmurowych skrzynek pocztowych
 
@@ -214,7 +214,7 @@ Uruchom następujące polecenie w programie [PowerShell Security & Compliance Ce
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Po zidentyfikowaniu zasad przechowywania przejdź do strony **Zarządzanie** >  **informacjamiRetention** w portalu zgodności, edytuj zasady przechowywania zidentyfikowane w poprzednim kroku i usuń skrzynkę pocztową z listy adresatów uwzględnionych w zasadach przechowywania.
+Po zidentyfikowaniu zasad przechowywania przejdź do strony **Zarządzanie cyklem** >  życia **danychRetention** w portalu zgodności, edytuj zasady przechowywania zidentyfikowane w poprzednim kroku i usuń skrzynkę pocztową z listy adresatów uwzględnionych w zasadach przechowywania.
   
 ### <a name="organization-wide-retention-policies"></a>Zasady przechowywania w całej organizacji
   
@@ -224,7 +224,7 @@ Zasady przechowywania dla całej organizacji, Exchange i Teams są stosowane do 
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Po zidentyfikowaniu zasad przechowywania w całej organizacji przejdź do strony **Zarządzanie** >  **informacjamiRetention** w portalu zgodności, edytuj wszystkie zasady przechowywania w całej organizacji zidentyfikowane w poprzednim kroku i dodaj skrzynkę pocztową do listy wykluczonych adresatów. Spowoduje to usunięcie skrzynki pocztowej użytkownika z zasad przechowywania.
+Po zidentyfikowaniu zasad przechowywania w całej organizacji przejdź do strony **Zarządzanie cyklem** >  życia **danychRetention** w portalu zgodności, edytuj wszystkie zasady przechowywania w całej organizacji zidentyfikowane w poprzednim kroku i dodaj skrzynkę pocztową do listy wykluczonych adresatów. Spowoduje to usunięcie skrzynki pocztowej użytkownika z zasad przechowywania.
 
 > [!IMPORTANT]
 > Po wykluczeniu skrzynki pocztowej z zasad przechowywania w całej organizacji synchronizacja tej zmiany i usunięcie skrzynki pocztowej z zasad może potrwać do 24 godzin.
@@ -399,11 +399,11 @@ Wykonaj następujące kroki (w określonej sekwencji) w programie Exchange Onlin
 
     **Zasady przechowywania stosowane do określonych skrzynek pocztowych**
 
-    Użyj portalu zgodności, aby dodać skrzynkę pocztową z powrotem do zasad przechowywania. Przejdź do strony **Zarządzanie** >  **informacjamiRetention** w centrum zgodności, edytuj zasady przechowywania i dodaj skrzynkę pocztową z powrotem do listy adresatów, do których są stosowane zasady przechowywania.
+    Użyj portalu zgodności, aby dodać skrzynkę pocztową z powrotem do zasad przechowywania. Przejdź do strony **Zarządzanie cyklem** >  życia **danychRetention** w centrum zgodności, edytuj zasady przechowywania i dodaj skrzynkę pocztową z powrotem do listy adresatów, do których są stosowane zasady przechowywania.
 
     **Zasady przechowywania w całej organizacji**
 
-    Jeśli usunięto zasady przechowywania w całej organizacji lub w całej Exchange, wykluczając je z zasad, użyj portalu zgodności, aby usunąć skrzynkę pocztową z listy wykluczonych użytkowników. Przejdź do strony **Zarządzanie** >  **informacjamiRetention** w centrum zgodności, edytuj zasady przechowywania w całej organizacji i usuń skrzynkę pocztową z listy wykluczonych adresatów. Spowoduje to ponowne zastosowanie zasad przechowywania do skrzynki pocztowej użytkownika.
+    Jeśli usunięto zasady przechowywania w całej organizacji lub w całej Exchange, wykluczając je z zasad, użyj portalu zgodności, aby usunąć skrzynkę pocztową z listy wykluczonych użytkowników. Przejdź do strony **Zarządzanie cyklem** >  życia **danychRetention** w centrum zgodności, edytuj zasady przechowywania w całej organizacji i usuń skrzynkę pocztową z listy wykluczonych adresatów. Spowoduje to ponowne zastosowanie zasad przechowywania do skrzynki pocztowej użytkownika.
 
     **Sprawa zbierania elektronicznych materiałów dowodowych jest przechowywana**
 

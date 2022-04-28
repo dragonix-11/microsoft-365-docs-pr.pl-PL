@@ -2,7 +2,7 @@
 title: Wyświetlanie licencji Microsoft 365 konta i szczegółów usługi za pomocą programu PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Objaśnienie sposobu używania programu PowerShell do określania usług Microsoft 365, które zostały przypisane do użytkowników.
-ms.openlocfilehash: 7e5724acbff571825f1496db5d59e04e11ba3a67
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 01f8865faeb187bef23c5757a0373fbc8be2d139
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916000"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095581"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>Wyświetlanie licencji Microsoft 365 konta i szczegółów usługi za pomocą programu PowerShell
 

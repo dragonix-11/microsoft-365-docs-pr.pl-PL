@@ -2,8 +2,8 @@
 title: Importuj pliki PST za pomocą wysyłki dysków
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: Administrator może dowiedzieć się, jak zbiorczo importować pliki PST, aby Microsoft 365 skrzynki pocztowe, kopiując pliki PST na dysk twardy, a następnie wysyłając je do firmy Microsoft.
-ms.openlocfilehash: d2255a01c49e3837365735e1c3300b7f6b34c42c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4f3c38c203b98fd4448657edfac6ee9b72a515be
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996003"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095449"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Importowanie plików PST organizacji przy użyciu wysyłania dysków
 
@@ -115,7 +115,7 @@ Pierwszym krokiem jest pobranie narzędzia, którego użyjesz w kroku 2, aby sko
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
-2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Importowanie** **ładu** \> informacji.
+2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Zarządzanie cyklem** \> życia danych **Importuj**.
     
     > [!NOTE]
     > Jak wspomniano wcześniej, musisz mieć przypisane odpowiednie uprawnienia, aby uzyskać dostęp do strony **Importuj** w portalu zgodności.
@@ -242,7 +242,7 @@ Następnym krokiem jest utworzenie zadania importu PST w usłudze Import w Offic
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
-2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Importowanie** **ładu** \> informacji.
+2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Zarządzanie cyklem** \> życia danych **Importuj**.
 
 3. Na karcie **Import** kliknij pozycję Dodaj ikonę ![.](../media/ITPro-EAC-AddIcon.gif) **Nowe zadanie importu**.
 
@@ -326,7 +326,7 @@ Po wysłaniu dysku twardego do firmy Microsoft wykonaj poniższą procedurę na 
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
-2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Zarządzanie informacjami > Importuj**.
+2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Zarządzanie cyklem** >  życia **danychImportuj**.
 
 3. Na karcie **Import** kliknij zadanie wysyłki dysku, dla których chcesz wprowadzić numer śledzenia.
 
@@ -352,7 +352,7 @@ Po przekazaniu plików PST na platformę Azure stan zostanie zmieniony na **Anal
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
-2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję Zarządzanie \> **informacjami** **Import****.
+2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Zarządzanie cyklem** \> życia danych **Import****.
 
 3. Na karcie **Import** wybierz zadanie importu utworzone w kroku 4, a następnie kliknij pozycję **Importuj, aby Office 365**.
   
@@ -391,7 +391,7 @@ Aby zainstalować Eksplorator usługi Azure Storage i nawiązać połączenie z 
 
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
-2. W lewym okienku portalu zgodności kliknij pozycję **Zarządzanie informacjami > Importuj**.
+2. W lewym okienku portalu zgodności kliknij pozycję **Zarządzanie cyklem** >  życia **danychImportuj**.
 
 3. Na karcie **Import** kliknij pozycję Dodaj ikonę ![.](../media/ITPro-EAC-AddIcon.gif) **Nowe zadanie importu**.
 

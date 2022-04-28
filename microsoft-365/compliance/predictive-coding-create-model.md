@@ -2,8 +2,8 @@
 title: Tworzenie modelu kodowania predykcyjnego w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak utworzyć model kodowania predykcyjnego w usłudze eDiscovery (Premium). Jest to pierwszy krok w zakresie korzystania z funkcji uczenia maszynowego w usłudze eDiscovery (Premium), aby ułatwić zidentyfikowanie odpowiedniej i nieistotnej zawartości w zestawie przeglądów.
-ms.openlocfilehash: f5636defbd4bc004a4732ff1d956f8b879daea2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4542ffbf8be3c7a5c0193f3c0372e3c19e91f02e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994045"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099658"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Tworzenie modelu kodowania predykcyjnego (wersja zapoznawcza)
 

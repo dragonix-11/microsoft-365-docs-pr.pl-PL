@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
@@ -14,101 +14,101 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: Sposób, w jaki organizacja wdrażaca najnowszą wersję korzysta z kanałów Windows 10 i Microsoft 365 aplikacji.
-ms.openlocfilehash: 6b0226a226742a89dc65ca0d32792db03c77e465
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: W jaki sposób organizacja, która wdraża najnowszą wersję, używa kanałów do Windows 10 i Microsoft 365 aplikacji.
+ms.openlocfilehash: 6f52bc8fc55fe94361961585aacae1f48c4fbce5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984988"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092144"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Przykład szerokiego wdrożenia najnowszych wersji
 
-Ten przykład konfiguracji kanału dotyczy organizacji, która w celu dopasowania do tych priorytetów biznesowych korzysta z szybkiego wdrażania najnowszych wersji:
+Ten przykład konfiguracji kanału jest przeznaczony dla organizacji, która korzysta z szybkiego wdrażania najnowszych wersji, aby dopasować je do tych priorytetów biznesowych:
 
-- Zapewnij ciągłość działania aplikacji i usług firmy Microsoft.
-- Maksymalizuj bezpieczeństwo urządzeń, usług i danych za pomocą najnowszych funkcji i poprawek od firmy Microsoft.
-- Maksymalizuj produktywność użytkowników za pomocą najnowszych funkcji firmy Microsoft.
+- Zapewnianie ciągłości działania dzięki aplikacjom i usługom firmy Microsoft.
+- Zmaksymalizuj bezpieczeństwo urządzeń, usług i danych dzięki najnowszym funkcjom i poprawkom firmy Microsoft.
+- Maksymalizuj produktywność użytkowników dzięki najnowszym funkcjom firmy Microsoft.
 
-Te cele przekładają się na zadanie IT, czyli znalezienie równowagi między szybkim wdrożeniem produkcyjnym a wczesnym weryfikacją za pomocą reprezentatywnego podzestawu użytkowników i urządzeń w celu weryfikacji funkcjonalności przed wdrożeniem na szeroką skalę.
+Te cele przekładają się na zadanie IT, które polega na znalezieniu równowagi między szybkim wdrożeniem produkcyjnym a wczesną weryfikacją z reprezentatywnym podzestawem użytkowników i urządzeń w celu zweryfikowania funkcjonalności przed szerokim wdrożeniem.
 
-W naszej przykładowej organizacji jest 5000 pracowników w budynkich na całym świecie w Europie, Azja, Azji i Ameryce Północnej i Południowej. 70% pracowników korzysta z Microsoft 365 E3, a reszta organizacji korzysta z Microsoft 365 E5.
+Nasza przykładowa organizacja ma 5000 pracowników w budynkach na całym świecie w Europie, Afryce, Azji i obu Amerykach. 70% pracowników korzysta z Microsoft 365 E3, a reszta organizacji używa Microsoft 365 E5.
 
 >[!Note]
->Ten przykład został zaprojektowany tak, aby pokazać, jak można używać etapów i grup wdrażania, które mogą działać dla organizacji o wielu typach i rozmiarach.
+>Ten przykład został zaprojektowany tak, aby pokazać, jak można używać etapów wdrażania i grup, które mogą działać w organizacjach o wielu typach i rozmiarach.
 >
 
-Infrastruktura it tej organizacji: 
+Infrastruktura IT tej organizacji: 
 
-- Jest w dużym stopniu wa, Windows, Aplikacje Microsoft 365 usług w chmurze firmy Microsoft stanowi 60% zainstalowanej bazy. Kilka starszych systemów pozostaje po dużej wieloletniej pracy nad uproszczeniem i usprawnieniu infrastruktury informatycznej.
-- Jest utrzymywana przez wysoce doświadczony personel i ma za zadanie utrzymanie wydajności pracy i bezpieczeństwa użytkowników i ich urządzeń przez śledzenie potencjalnych użytkowników firmy Microsoft w ich wydaniach.
+- Jest w dużej mierze jednorodny, a Windows, Aplikacje Microsoft 365 i usługi w chmurze firmy Microsoft, które stanowią 60% zainstalowanej bazy. Kilka starszych systemów pozostaje po intensywnych, wieloletnich wysiłkach na rzecz uproszczenia i usprawnienia infrastruktury IT.
+- Jest utrzymywany przez bardzo doświadczonych pracowników i ma za zadanie zapewnić użytkownikom i ich urządzeniom produktywność i bezpieczeństwo dzięki obserwowaniu potencjalnych klientów firmy Microsoft w ich wersjach.
 
 ## <a name="deployment-and-update-stages"></a>Etapy wdrażania i aktualizacji
 
-W zależności od celów wdrażania najnowszej wersji w tej przykładowej organizacji jest używany dwuetapowy proces wdrażania.
+W oparciu o cele szybkiego wdrażania najnowszej wersji ta przykładowa organizacja korzysta z dwuetapowego procesu wdrażania.
 
-1. **Użyj wdrożenia w wersji zapoznawczej lub pilotażowej:** Sprawdzanie poprawności danych i iteratorów dla wczesnych użytkowników, personelu IT, użytkowników z konfiguracją reprezentacyjną i personelu szkoleniowego. 
+1. **Użyj wersji zapoznawczej lub wdrożenia pilotażowego:** Weryfikuj i iteruj z wczesnymi użytkownikami, pracownikami IT, użytkownikami z reprezentatywnymi konfiguracjami i personelem szkoleniowym. 
 
-   Wcześnie użytkownicy, personel IT, użytkownicy z konfiguracjami reprezentacyjni mogą sprawdzać funkcjonalność z innymi aplikacjami i na urządzeniach, zanim nowe funkcje będą dostępne w pozostałej części organizacji.
+   Wcześni użytkownicy, pracownicy IT, użytkownicy z reprezentatywną konfiguracją mogą weryfikować funkcje innych aplikacji i urządzeń przed wdrożeniem nowych funkcji w pozostałej części organizacji.
 
-   Menedżerowie zmian mogą wcześniej zaglądać do nowych funkcji przed ich rozpowszechnienia. Mogą planować wiadomości i ich stosowanie.
+   Menedżerowie zmian mają wczesny wgląd w nowe funkcje przed powszechnym wdrożeniem i mogą planować obsługę komunikatów i wdrażanie.
 
-   Pracownicy szkoleniowi mogą planować nowe kursy wewnętrzne lub aktualizować istniejące kursy dla nowych funkcji przed ich rozpowszechnienia.
+   Personel szkoleniowy może zaplanować nowe kursy wewnętrzne lub zaktualizować istniejące kursy dla nowych funkcji przed powszechnym wdrożeniem.
 
-2. **Wdrożenie produkcyjne:** Wdaj wszystkich pozostałych użytkowników według regionu, działu lub innej metody wdrażania.
+2. **Wdrożenie produkcyjne:** Wdrożenie dla wszystkich pozostałych użytkowników według regionu, działu lub innej metody wdrażania.
 
-## <a name="deployment-configuration-for-windows-10"></a>Konfiguracja wdrażania dla Windows 10
+## <a name="deployment-configuration-for-windows-10"></a>Konfiguracja wdrożenia dla Windows 10
 
-Ogólnym celem jest wykonanie szerokiego wdrożenia najnowszej wersji Semi-Annual kanału po weryfikacji kanału wersji zapoznawczej zmian wprowadzonych przez grupę reprezentatywnych użytkowników i ich urządzeń.
+Ogólnym celem jest przeprowadzenie szerokiego wdrożenia najnowszej wersji kanału Semi-Annual po walidacji zmian kanału wersji zapoznawczej wersji przez grupę reprezentatywnych użytkowników i ich urządzeń.
 
-Zobacz [Windows 10 wdrażania](/windows/deployment/), aby uzyskać więcej informacji na Windows 10 metod i strategii wdrażania.
+Aby uzyskać więcej informacji na temat metod i strategii wdrażania Windows 10, zobacz [wdrażanie Windows 10](/windows/deployment/).
 
-| Scena | Kanał | Grupa Wdrażania |
+| Etapie | Kanał | Grupa wdrożeń |
 |:-------|:-------|:-----|
-| Pilot |  **Kanał wersji zapoznawczej**  <ul><li>Zastosowanie: Wdrożenie aktualizacji funkcji dla personelu IT i wczesnych użytkowników na potrzeby weryfikacji na urządzeniach reprezentujących i konfiguracjach (językach, aplikacjach innych firm). </li><li> Stan: w pełni zgodne i obsługiwane dla klientów komercyjnych i nie są one wliczane do twoich umów pomocy technicznej. </li></ul> | **Win10ReleasePreviewChannel** (nazwa przykładowa) <br><br> Członkowie to grupy zawierające: <ul><li> Windows z różnych działów i lokalizacji </li><li> Personel z konfiguracjami, które wymagają sprawdzania poprawności </li><li> Administratorzy IT i personel wdrożeniowy IT </li><li> Zmień menedżerów </li><li> Wewnętrzny personel szkoleniowy </li></ul> |
-| Produkcja |  **Półroczny kanał**  <ul><li>Cel: szerokie wdrożenie najnowszych aktualizacji funkcji dla pozostałych osób w organizacji. </li><li> Stan: w pełni zgodne i obsługiwane. </li></ul> | **Win10SemiAnnualChannel** (nazwa przykładowa) <br><br> Członkowie to wszyscy użytkownicy, którzy nie znajdują się w grupie Win10ReleasePreviewChannel. |
+| Pilot |  **Kanał wersji zapoznawczej**  <ul><li>Przeznaczenie: Wdrażanie aktualizacji funkcji dla pracowników IT i wczesnych użytkowników w celu weryfikacji na reprezentatywnych urządzeniach i konfiguracjach (językach, aplikacjach innych firm). </li><li> Stan: w pełni zgodne i obsługiwane dla klientów komercyjnych i nie jest wliczane do umów pomocy technicznej. </li></ul> | **Win10ReleasePreviewChannel (przykładowa** nazwa) <br><br> Członkowie to grupy zawierające: <ul><li> Windows entuzjastów w różnych działach i lokalizacjach </li><li> Personel z konfiguracjami wymagającymi weryfikacji </li><li> Administratorzy IT i pracownicy wdrożeniowi IT </li><li> Menedżerowie zmian </li><li> Wewnętrzny personel szkoleniowy </li></ul> |
+| Produkcja |  **Półroczny kanał**  <ul><li>Przeznaczenie: szerokie wdrażanie najnowszych aktualizacji funkcji w pozostałej części organizacji. </li><li> Stan: W pełni zgodne i obsługiwane. </li></ul> | **Win10SemiAnnualChannel** (przykładowa nazwa) <br><br> Członkowie to wszyscy użytkownicy, którzy nie należą do grupy Win10ReleasePreviewChannel. |
 ||||
 
-W tej organizacji najlepiej jest wdrażać ład w kanale wersji zapoznawczej w taki sam sposób jak w przypadku wdrażania wersji Semi-Annual Channel, takich jak aktualizacja Windows czy Windows Server Update Services, i że w przypadku aktualizacji w obu kanałach zastosowano te same zasady.
+Ta organizacja korzysta z najlepszych rozwiązań w zakresie wdrażania ładunku kanału wersji zapoznawczej wersji w taki sam sposób, w jaki wdrażają wersje kanału Semi-Annual, takie jak Windows Update lub Windows Server Update Services, i że stosują te same zasady dla obu aktualizacji kanału.
 
-Proces aktualizacji bieżących:
+Trwający proces aktualizacji:
 
-1. Zmiany kanału wersji zapoznawczej są wdrażane w grupie wdrożenia Win10ReleasePreviewChannel (nazwa przykładowa).
-2. Członkowie grupy Win10ReleasePreviewChannel potwierdzają, że zmiany w kanale wersji Zapoznawczej dotyczą personelu wdrażania IT, który może przekazać opinię firmie Microsoft i poczekać na kolejne zmiany w kanale wersji zapoznawczej na dodatkowe sprawdzanie poprawności.
-3. Semi-Annual zmiany funkcji kanału są wdrażane w grupie wdrożenia Win10SemiAnnualChannel. 
+1. Zmiany kanału wersji zapoznawczej są wdrażane w grupie wdrożeń Win10ReleasePreviewChannel (przykładowa nazwa).
+2. Członkowie grupy Win10ReleasePreviewChannel potwierdzają, że zmiany kanału wersji zapoznawczej wersji zapoznawczej działają dla pracowników wdrożeń IT, którzy mogą przekazać opinię firmie Microsoft i poczekać na kolejne zmiany kanału wersji zapoznawczej wersji zapoznawczej, aby uzyskać dodatkową walidację.
+3. Semi-Annual zmiany funkcji kanału są wdrażane w grupie wdrożeń Win10SemiAnnualChannel. 
 
 >[!Note]
->Mimo że kanał Semi-Annual jest zalecanym kanałem, dział IT powinien skorzystać z narzędzi do zarządzania i określić, kiedy wdrożyć najnowszą wersję kanału Semi-Annual w organizacji, a następnie wdrażać ją w falach.
+>Chociaż kanał Semi-Annual jest zalecanym kanałem, dział IT powinien korzystać z narzędzi do zarządzania i określać, kiedy wdrożyć najnowszą wersję kanału Semi-Annual w organizacji, a następnie wdrażać ją falami.
 >
 
-## <a name="deployment-configuration-for-microsoft-365-apps"></a>Konfiguracja wdrażania dla Aplikacje Microsoft 365
+## <a name="deployment-configuration-for-microsoft-365-apps"></a>Konfiguracja wdrożenia dla Aplikacje Microsoft 365
 
-Ogólnym celem jest wdrożenie szerokiego wdrożenia najnowszej wersji w bieżącym kanale po weryfikacji zmian w bieżącym kanale (wersja Preview) przez grupę użytkowników reprezentatywnych.
+Ogólnym celem jest przeprowadzenie szerokiego wdrożenia najnowszej wersji bieżącego kanału po walidacji zmian bieżącego kanału (wersja zapoznawcza) przez grupę reprezentatywnych użytkowników.
 
-Zobacz [Aplikacje Microsoft 365 wdrażania](/deployoffice/plan-office-365-proplus), aby uzyskać więcej informacji Aplikacje Microsoft 365 metod i strategii wdrażania.
+Zobacz [wdrażanie Aplikacje Microsoft 365](/deployoffice/plan-office-365-proplus), aby uzyskać więcej informacji na temat metod i strategii wdrażania Aplikacje Microsoft 365.
 
-| Scena | Kanał | Grupa Wdrażania |
+| Etapie | Kanał | Grupa wdrożeń |
 |:-------|:-------|:-----|
-| Pilot |  **Bieżący kanał (wersja Preview)** <ul><li> Cel: {give a group of representative users sneakek of new Aplikacje Microsoft 365 features} Deployment of feature updates as soon as are tested with Current Channel (Preview) users and are production-ready. </li><li> Stan: w pełni zgodne i obsługiwane.</li><li> Jak często: Aktualizacje 2–3 razy w każdym miesiącu. </li></ul> | **AppsCurrentChannelPreview** (nazwa przykładu) <br><br> Członkowie to grupy zawierające: <ul><li> Office aplikacji dla różnych działów i lokalizacji </li><li> Personel z konfiguracjami, które wymagają sprawdzania poprawności </li><li> Administratorzy IT i personel wdrożeniowy IT </li><li> Zmień menedżerów </li><li> Wewnętrzny personel szkoleniowy </li></ul>|
-| Produkcja | **Bieżący kanał** <ul><li> Cel: szerokie wdrożenie najnowszych aktualizacji funkcji dla pozostałych osób w organizacji. </li><li> Stan: w pełni zgodne i obsługiwane. </li></ul> |  **AppsCurrentChannel** (nazwa przykładowa) <br><br> Członkowie to wszyscy użytkownicy, którzy nie znajdują się w grupie AppsCurrentChannelPreview. |
+| Pilot |  **Bieżący kanał (wersja zapoznawcza)** <ul><li> Przeznaczenie: {podaj grupie reprezentatywnych użytkowników podgląd nowych funkcji Aplikacje Microsoft 365} Wdrażanie aktualizacji funkcji natychmiast po przetestowaniu ich z użytkownikami bieżącego kanału (wersja zapoznawcza) i są gotowe do produkcji. </li><li> Stan: W pełni zgodne i obsługiwane.</li><li> Jak często: aktualizacje są aktualizowane 2–3 razy w każdym miesiącu. </li></ul> | **AppsCurrentChannelPreview** (przykładowa nazwa) <br><br> Członkowie to grupy zawierające: <ul><li> Office entuzjastów aplikacji w różnych działach i lokalizacjach </li><li> Personel z konfiguracjami wymagającymi weryfikacji </li><li> Administratorzy IT i pracownicy wdrożeniowi IT </li><li> Menedżerowie zmian </li><li> Wewnętrzny personel szkoleniowy </li></ul>|
+| Produkcja | **Bieżący kanał** <ul><li> Przeznaczenie: szerokie wdrażanie najnowszych aktualizacji funkcji w pozostałej części organizacji. </li><li> Stan: W pełni zgodne i obsługiwane. </li></ul> |  **AppsCurrentChannel** (przykładowa nazwa) <br><br> Członkowie to wszyscy użytkownicy, którzy nie należą do grupy AppsCurrentChannelPreview. |
 |||
 
-Proces aktualizacji bieżących:
+Trwający proces aktualizacji:
 
-1. Zmiany w bieżącym kanale (wersja Preview) są wdrażane w grupie wdrożenia AppsCurrentChannelPreview.
-2. Członkowie grupy AppsCurrentChannelPreview potwierdzają, że zmiany w bieżącym kanale (wersja Preview) pracują dla pracowników wdrożeń IT, którzy mogą przekazać opinię firmie Microsoft i poczekać na następne wydanie bieżącego kanału (wersja Preview) na dodatkową weryfikację.
-3. Zmiany w bieżącym kanale są wdrażane w grupie wdrażania AppsCurrentChannel. 
+1. Bieżące zmiany kanału (wersja zapoznawcza) są wdrażane w grupie wdrożeń AppsCurrentChannelPreview.
+2. Członkowie grupy AppsCurrentChannelPreview potwierdzają, że bieżące zmiany kanału (wersja zapoznawcza) działają dla pracowników wdrożeń IT, którzy mogą przekazać opinię firmie Microsoft i poczekać na kolejną wersję bieżącego kanału (wersja zapoznawcza) w celu dodatkowej weryfikacji.
+3. Bieżące zmiany kanału są wdrażane w grupie wdrożeń AppsCurrentChannel. 
 
-## <a name="visual-summary"></a>Podsumowanie wizualne
+## <a name="visual-summary"></a>Podsumowanie wizualizacji
 
-Poniżej znajdują się produkty, ich kanały i grupy wdrożeń używane przez tę przykładową organizację. 
+Oto produkty, ich kanały i grupy wdrożeń używane przez tę przykładową organizację. 
 
-![Grupy wdrażania służące do szerokiego wdrażania najnowszych wersji.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![Grupy wdrożeń na potrzeby szerokiego wdrażania najnowszych wersji.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## <a name="see-also"></a>Zobacz też
 
-[Konfiguracje przykładowego wdrożenia i aktualizowania kanału](deploy-update-channels-examples.md)
+[Przykładowe konfiguracje wdrażania i aktualizowania kanałów](deploy-update-channels-examples.md)
 
-[Omówienie Microsoft 365 dla przedsiębiorstw](microsoft-365-overview.md)
+[Microsoft 365 dla przedsiębiorstw — omówienie](microsoft-365-overview.md)
 
-[Przewodniki laboratorium testowego](m365-enterprise-test-lab-guides.md)
+[Przewodniki po laboratorium testowym](m365-enterprise-test-lab-guides.md)

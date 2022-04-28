@@ -1,75 +1,75 @@
 ---
-title: Praca z grupami urządzeń w aplikacji Microsoft 365 Business Premium
-description: Informacje o grupach urządzeń w aplikacji Microsoft 365 Business Premium
+title: Praca z grupami urządzeń w Microsoft 365 Business Premium
+description: Dowiedz się więcej o grupach urządzeń w Microsoft 365 Business Premium
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 03/08/2022
+ms.date: 03/16/2022
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.localizationpriority: high
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
-ms.openlocfilehash: 2cc874580dad24e1b3d5349d6075956a9e518704
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: ee73b5a83a669653087bf787061e8ad59b23ed18
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634652"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095217"
 ---
-# <a name="device-groups-in-microsoft-365-business-premium"></a>Grupy urządzeń w aplikacji Microsoft 365 Business Premium
+# <a name="device-groups-in-microsoft-365-business-premium"></a>Grupy urządzeń w Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium obejmuje ochronę punktu końcowego za pośrednictwem Microsoft Defender dla Firm. Zasady ochrony urządzeń są stosowane do urządzeń za pośrednictwem określonych kolekcji nazywanych grupami urządzeń. 
+Microsoft 365 Business Premium obejmuje ochronę punktów końcowych za pośrednictwem Microsoft Defender dla Firm. Zasady ochrony urządzeń są stosowane do urządzeń za pośrednictwem niektórych kolekcji nazywanych grupami urządzeń. 
 
-**W tym artykule opisano**:  
+**W tych wskazówkach opisano**:  
 
-- [Jakie grupy urządzeń to](#whats-a-device-group)
+- [Jakie są grupy urządzeń](#whats-a-device-group)
 - [Jak utworzyć nową grupę urządzeń](#how-do-i-create-a-new-device-group)
 
 ## <a name="whats-a-device-group"></a>Co to jest grupa urządzeń?
 
-Grupa urządzeń to zbiór urządzeń zgrupowanych ze względu na określone kryteria, takie jak wersja systemu operacyjnego. Urządzenia spełniające te kryteria są uwzględniane w tej grupie urządzeń, o ile nie zostaną wykluczone. 
+Grupa urządzeń to kolekcja urządzeń, które są pogrupowane ze względu na określone kryteria, takie jak wersja systemu operacyjnego. Urządzenia spełniające kryteria są uwzględniane w tej grupie urządzeń, chyba że zostaną wykluczone. 
 
-W ramach subskrypcji masz domyślne grupy urządzeń, których możesz używać. Domyślne grupy urządzeń obejmują wszystkie urządzenia, które są włączone do usługi Defender dla firm. Możesz jednak również tworzyć nowe grupy urządzeń, aby przypisać zasady ochrony urządzeń z określonymi ustawieniami do określonych urządzeń. 
+W ramach subskrypcji masz domyślne grupy urządzeń, których możesz użyć. Domyślne grupy urządzeń obejmują wszystkie urządzenia dołączone do usługi Defender dla Firm. Można jednak również utworzyć nowe grupy urządzeń w celu przypisania zasad ochrony urządzeń z określonymi ustawieniami do niektórych urządzeń. 
 
-Wszystkie grupy urządzeń, w tym domyślne grupy urządzeń i wszystkie niestandardowe grupy urządzeń, które [zdefiniowasz, są przechowywane w usłudze Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
+Wszystkie grupy urządzeń, w tym domyślne grupy urządzeń i dowolne zdefiniowane niestandardowe grupy urządzeń, są przechowywane w [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
 ## <a name="how-do-i-create-a-new-device-group"></a>Jak mogę utworzyć nową grupę urządzeń?
 
-Podczas tworzenia lub edytowania zasad ochrony urządzeń możesz utworzyć nową grupę urządzeń. 
+Podczas tworzenia lub edytowania zasad ochrony urządzeń można utworzyć nową grupę urządzeń. 
 
-1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
 2. W okienku nawigacji wybierz pozycję **Konfiguracja urządzenia**. 
 
-3. Aby to zrobić, zrób tak:
+3. Wykonaj jedną z następujących akcji:
 
     1. Wybierz istniejące zasady, a następnie wybierz pozycję **Edytuj**.
     
     2. Wybierz **pozycję + Dodaj** , aby utworzyć nowe zasady.
 
     > [!TIP]
-    > Aby uzyskać pomoc w tworzeniu lub edytowaniu zasad, zobacz [Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla Firm](m365bp-view-edit-create-mdb-policies.md).
+    > Aby uzyskać pomoc dotyczącą tworzenia lub edytowania zasad, zobacz [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](m365bp-view-edit-create-mdb-policies.md).
 
-4. W kroku **Informacje ogólne** przejrzyj informacje, w razie potrzeby przeedytuj je, a następnie wybierz przycisk **Dalej**.
+4. W kroku **Informacje ogólne** przejrzyj informacje, w razie potrzeby edytuj, a następnie wybierz pozycję **Dalej**.
 
 5. Wybierz **pozycję + Utwórz nową grupę**. 
 
-6. Określ nazwę i opis grupy urządzeń, a następnie wybierz przycisk **Dalej**.
+6. Określ nazwę i opis grupy urządzeń, a następnie wybierz pozycję **Dalej**.
 
-7. Wybierz urządzenia, które chcesz dołączyć do grupy, a następnie wybierz pozycję **Utwórz grupę**.
+7. Wybierz urządzenia do uwzględnienia w grupie, a następnie wybierz pozycję **Utwórz grupę**.
 
-8. W kroku **Grupy** urządzeń przejrzyj listę grup urządzeń dla zasad. W razie potrzeby usuń grupę z listy. Następnie wybierz przycisk **Dalej**.
+8. W kroku **Grupy urządzeń** przejrzyj listę grup urządzeń dla zasad. W razie potrzeby usuń grupę z listy. Następnie wybierz pozycję **Dalej**.
 
-9. Na stronie **Ustawienia konfiguracji** przejrzyj i edytuj ustawienia zgodnie z potrzebami, a następnie wybierz pozycję **Dalej**. Aby uzyskać więcej informacji o tych ustawieniach, zobacz Opis ustawień konfiguracji następnej [generacji w programie Microsoft Defender dla Firm](../security/defender-business/mdb-next-gen-configuration-settings.md).
+9. Na stronie **Ustawienia konfiguracji** przejrzyj i edytuj ustawienia zgodnie z potrzebami, a następnie wybierz pozycję **Dalej**. Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Omówienie ustawień konfiguracji nowej generacji w Microsoft Defender dla Firm](../security/defender-business/mdb-next-gen-configuration-settings.md).
 
-10. W kroku **Przejrzyj zasady** przejrzyj wszystkie ustawienia, wprowadzić wszelkie potrzebne zmiany, a następnie wybierz pozycję **Utwórz zasady** lub **Aktualizuj zasady**.
+10. W kroku **Przeglądanie zasad przejrzyj** wszystkie ustawienia, wprowadź wymagane zmiany, a następnie wybierz pozycję **Utwórz zasady** lub **Zaktualizuj zasady**.
 
+Po ukończeniu podstawowych misji skonfiguruj [zespoły reagowania](m365bp-security-incident-management.md) i [zachowaj środowisko](m365bp-maintain-environment.md).
 

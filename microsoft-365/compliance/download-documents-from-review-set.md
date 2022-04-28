@@ -2,8 +2,8 @@
 title: Pobieraj dokumenty z zestawu do przeglądu
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak wybierać i pobierać zawartość z zestawu przeglądów w usłudze eDiscovery (Premium) na potrzeby prezentacji lub przeglądów zewnętrznych.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 32d05b8fa39700971b4c39a1a39963d8b49e18b8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c8dda65ec1f9e49fc83992ab9c4bbc66b99bf7ba
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994485"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65086858"
 ---
 # <a name="download-selected-documents-from-a-review-set"></a>Pobieranie wybranych dokumentów z zestawu przeglądów
 

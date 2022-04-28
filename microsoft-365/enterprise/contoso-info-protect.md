@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Dowiedz się, jak firma Contoso używa funkcji ochrony informacji w Microsoft 365 dla przedsiębiorstw w celu zabezpieczenia zasobów cyfrowych w chmurze.
-ms.openlocfilehash: 70d5a0a6fba7204177771256d9a508c76a010d6d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eda36fab658a8352289a6245c565e54758fdd87a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931588"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092188"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Ochrona informacji dla firmy Contoso Corporation
 
@@ -121,4 +121,4 @@ Dowiedz się, jak firma Contoso korzysta z [funkcji zabezpieczeń w Microsoft 36
 
 [Microsoft 365 dla przedsiębiorstw — omówienie](microsoft-365-overview.md)
 
-[Przewodniki laboratorium testowego](m365-enterprise-test-lab-guides.md)
+[Przewodniki po laboratorium testowym](m365-enterprise-test-lab-guides.md)

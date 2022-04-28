@@ -2,8 +2,8 @@
 title: Wyszukiwanie zawartości służy do wyszukiwania zaimportowanych danych innych firm
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Za pomocą narzędzia content search eDiscovery wyszukaj elementy zaimportowane do skrzynek pocztowych w Microsoft 365 ze źródła danych innej firmy, tworząc zapytania.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a6a7bcdf0cbd7f14e20cc8400e5d834dc7da0a1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 73967c8897ee0fd5143b8e15dfe8874fc0c85755
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000911"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095405"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Wyszukiwanie zawartości służy do wyszukiwania danych innych firm zaimportowanych przez łącznik niestandardowego partnera
 

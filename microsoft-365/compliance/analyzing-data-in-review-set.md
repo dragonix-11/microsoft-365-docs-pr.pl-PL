@@ -2,8 +2,8 @@
 title: Analizowanie danych w zestawie przeglądów w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się więcej o narzędziach dostępnych do organizowania zestawów dokumentów podczas analizowania przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 72be5cf0cd6e4d52200f1167b525aa354192672e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: af34a790881cad2af5d278cf187b963f0aa58146
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998711"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099834"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>Analizowanie danych w zestawie przeglądów w usłudze eDiscovery (Premium)
 

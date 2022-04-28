@@ -2,8 +2,8 @@
 title: Migrowanie starszych wyszukiwań zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności usługi Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,14 +15,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 07740a6569f67b04db22351f4b4e1214ccfbc787
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 416baed923884d9cbabbd6ee7607a48b0a19ab62
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973712"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092382"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migrowanie starszych wyszukiwań zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Portal zgodności usługi Microsoft Purview zapewnia ulepszone środowisko użycia zbierania elektronicznych elektronicznych materiałów dowodowych, w tym: wyższą niezawodność, lepszą wydajność i wiele funkcji dostosowanych do przepływów pracy zbierania elektronicznych materiałów dowodowych, w tym przypadki organizowania zawartości według materii, zestawy przeglądów w celu przeglądania zawartości i analizy, aby pomóc w usuwaniu danych w celu przeglądu, takiego jak zduplikowane grupowanie, wątki wiadomości e-mail, analiza motywów i kodowanie predykcyjne.
 

@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: twerner
 author: twerner
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,16 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Konfigurowanie spotkań online za pomocą Microsoft Teams.
-ms.openlocfilehash: d945d5526e3cdd06bc0a7c7a80ef7cff0160d07d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 9ed624d8fe607f460d36eb391d801066b69f7141
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823107"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095149"
 ---
 # <a name="set-up-meetings"></a>Konfigurowanie spotkań
 
-Spotkania w Microsoft Teams obejmują dźwięk, wideo i udostępnianie. A ponieważ są one online, zawsze będziesz mieć miejsce na spotkania (bez konieczności pisania pokoju lub projektora!), nawet jeśli personel jest rozproszony geograficznie lub pracuje zdalnie. Microsoft Teams spotkania to doskonały sposób na spotkanie z pracownikami zarówno wewnątrz organizacji, jak i poza nią. Nie musisz być członkiem organizacji ani nawet mieć konta, aby dołączyć do spotkania. Możesz zaplanować i uruchomić spotkania online przy użyciu Microsoft Teams. Podczas spotkania możesz udostępniać ekran, udostępniać pliki, przypisywać zadania i nie tylko. Kampanie polityczne mogą obejmować pracowników, wolontariuszy i gości spoza organizacji w spotkaniu. Małe firmy lub praktyki mogą spotkać się ze swoimi pracownikami lub spotkać się z klientami lub partnerami w Microsoft Teams.
+Upewnij się, że członkowie organizacji używają Microsoft Teams dla wszystkich spotkań. Teams pliki spotkań obejmują dźwięk, wideo i udostępnianie, a ponieważ są w trybie online, zawsze jest miejsce na spotkania i nie ma potrzeby pokoju z projektorem! Microsoft Teams spotkania to doskonały sposób na spotkanie z pracownikami zarówno wewnątrz organizacji, jak i poza nią. 
+
+Korzystając z Teams, nie musisz być członkiem organizacji ani nawet mieć konta, aby dołączyć do spotkania. Możesz zaplanować i uruchomić spotkania online, w których możesz udostępniać ekran, udostępniać pliki, przypisywać zadania i nie tylko. Kampanie polityczne mogą obejmować pracowników, wolontariuszy lub gości spoza organizacji. Możesz łatwo spotkać się z klientami, personelem lub partnerami w Microsoft Teams oraz w bezpiecznym i bezproblemowym środowisku.
 
 [![Ilustracja przedstawiająca dwóch użytkowników na spotkaniu.](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
@@ -58,3 +60,9 @@ Postępuj zgodnie z tymi najlepszymi rozwiązaniami dotyczącymi spotkań online
 Dowiedz się więcej o spotkaniu w Microsoft Teams:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]
+
+## <a name="next-objective"></a>Następny cel
+
+Po osiągnięciu tego celu misji dowiedz się, jak bezpiecznie [udostępniać pliki i filmy wideo](share-files-and-videos.md)
+
+

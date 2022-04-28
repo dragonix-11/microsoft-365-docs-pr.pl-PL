@@ -2,7 +2,7 @@
 title: "Usługa Skype dla firm Online w usłudze Office 365 \x97 Pomoc dla administratorów"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: landing-page
@@ -21,19 +21,19 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Jako administrator znajdź pomoc w skonfigurowaniu części usługi Skype dla firm Online, w tym sieci, spotkań i wiadomości błyskawicznych oraz dostępu zewnętrznego dla użytkowników.
-ms.openlocfilehash: 3be6eaaf5d39ebb62dcc4a7cc090633147681301
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Jako administrator znajdź pomoc dotyczącą konfigurowania części usługi Skype dla firm Online, w tym sieci, spotkań i wiadomości błyskawicznych oraz dostępu zewnętrznego dla użytkowników.
+ms.openlocfilehash: d9c290cbf756cb0ec7a8a6f042409498d7a379b4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682135"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092078"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Usługa Skype dla firm Online w usłudze Office 365  Pomoc dla administratorów
 
 ## <a name="were-here-to-help"></a>We're here to help!
 
-Jako administrator usługi Office 365 dla firm, masz bezpłatny dostęp do naszych kompetentnych agentów pomocy technicznej. Jeśli nie możesz znaleźć potrzebnych informacji w tej witrynie sieci Web, Skontaktuj się z pomocą techniczną dla produktów biznesowych **[— Pomoc dla administratorów](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+Jako administrator usługi Office 365 dla firm, masz bezpłatny dostęp do naszych kompetentnych agentów pomocy technicznej. Jeśli nie znajdziesz potrzebnych informacji w tej witrynie internetowej, **[skontaktuj się z pomocą techniczną dotyczącą produktów biznesowych — Pomoc dla administratorów](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Zezwalanie użytkownikom na kontaktowanie się z użytkownikami zewnętrznymi programu Skype lub Skype dla firm
 
@@ -41,7 +41,7 @@ Możesz zezwolić osobom korzystającym z programu Skype dla firm na kontaktowan
   
 - [Zezwalanie użytkownikom na kontaktowanie się z zewnętrznymi użytkownikami programu Skype dla firm](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
-- [Umożliwianie Skype dla firm użytkownikom dodawania Skype kontaktów](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
+- [Zezwalaj Skype dla firm użytkownikom na dodawanie kontaktów Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
     
 ## <a name="improve-call-and-video-quality"></a>Poprawianie jakości połączeń głosowych i wideo
 
@@ -67,15 +67,15 @@ Zobacz też:
 
 - [Ustawianie opcji osobistych w Skype dla firm](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
-- [Potrzebujesz pomocy z logowaniem się Skype dla firm?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
+- [Potrzebujesz pomocy przy logowanie do Skype dla firm?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [Klip wideo: logowanie się i wylogowywuj Skype dla firm](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [Wideo: Logowanie i wylogowywanie się z Skype dla firm](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
 - [Ustawianie opcji urządzenia audio w Skype dla firm](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [Dołączanie do spotkania programu Skype dla firm](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
-- [Odinstaluj Skype dla firm](https://support.office.com/article/28C4A036-7F22-406C-B7F4-87894CBAF902)
+- [Odinstalowywanie Skype dla firm](https://support.office.com/article/28C4A036-7F22-406C-B7F4-87894CBAF902)
     
 ## <a name="help-your-users-get-started-quickly"></a>Pomaganie użytkownikom w szybkim rozpoczęciu pracy
 
@@ -89,6 +89,6 @@ Zobacz też:
     
 - [Rozpoczynanie połączenia konferencyjnego programu Skype dla firm](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **Aby uzyskać więcej artykułów dla użytkowników, [Skype dla firm pomoc](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
+ **Aby uzyskać więcej artykułów dla użytkowników, zobacz [Skype dla firm pomoc](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
   
 

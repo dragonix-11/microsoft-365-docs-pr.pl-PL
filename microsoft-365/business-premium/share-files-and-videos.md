@@ -1,14 +1,14 @@
 ---
-title: Udostępnianie plików i klipów wideo
+title: Udostępnianie plików i filmów wideo
 f1.keywords:
 - NOCSH
 ms.author: twerner
 author: twerner
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,48 +24,53 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Udostępniaj pliki i klipy wideo w ramach kampanii przy Microsoft Teams i SharePoint.
-ms.openlocfilehash: fa76261377f4ae52a53a4ff2375afc670086a449
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Udostępniaj pliki i filmy wideo w ramach kampanii za pomocą Microsoft Teams i SharePoint.
+ms.openlocfilehash: 5c371dea1c1e9d5768743072052825f0810938b9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011928"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095127"
 ---
-# <a name="share-files-and-videos"></a>Udostępnianie plików i klipów wideo
+# <a name="share-files-and-videos"></a>Udostępnianie plików i filmów wideo
 
-Jeśli chcesz kontrolować, kto może wyświetlać i edytować Twoje pliki, musisz przechowywać pliki w bezpiecznym miejscu, w którym możesz się upewnić, że uprawnienia zostały odpowiednio zastosowane. Możesz użyć programu Microsoft Teams do przechowywania plików, a następnie udostępnić je wewnątrz lub poza firmową, praktyką albo kampanią przy użyciu programu Microsoft Teams lub wysyłając linki SharePoint firmowe. Wysłanie linku zamiast załącznika wiadomości e-mail oznacza, że wiesz, kto wyświetla i modyfikuje pliki, i że nie można ich wyświetlać ani modyfikować bez Twojej zgody.
+Kolejną rzeczą, na którą należy zwrócić uwagę, jest zapewnienie wszystkim członkom organizacji kontroli, kto może wyświetlać i edytować pliki, oraz że są one przechowywane w bezpiecznej lokalizacji z odpowiednimi uprawnieniami. Użytkownicy mogą używać Microsoft Teams do przechowywania plików, a następnie udostępniać pliki wewnątrz lub na zewnątrz firmy, ćwiczyć lub prowadzić kampanię przy użyciu Microsoft Teams lub wysyłając linki SharePoint. Wysłanie linku zamiast załącznika wiadomości e-mail oznacza, że wiesz, kto wyświetla i modyfikuje pliki, i nie można ich wyświetlać ani modyfikować bez uprawnień.
 
-![Diagram przedstawiający okno Microsoft Teams z kartą Pliki i linkiem Pobierz w menu.](../media/m365-democracy-teams-sharefiles.png)
+![Diagram okna Microsoft Teams z wyświetloną kartą Pliki i linkiem Pobierz w menu.](../media/m365-democracy-teams-sharefiles.png)
 
-Mając pliki w Microsoft Teams i SharePoint, możesz również wspólnie pracować nad plikami i przeglądać zmiany poszczególnych osób. Użyj Microsoft Teams, aby udostępniać pliki w obrębie firmy, ćwiczeń lub kampanii. Jeśli chcesz udostępnić je zewnętrznie osobom spoza organizacji, możesz dodać je jako gości do zespołu lub wysłać im bezpieczny SharePoint link.
+Dzięki plikom w Microsoft Teams i SharePoint pliki można również pracować nad plikami i przeglądać je razem, nawet śledząc zmiany w razie potrzeby. W Teams pliki są udostępniane wewnątrz firmy, praktyki lub kampanii. Jeśli chcesz udostępnić je zewnętrznie osobom spoza organizacji, możesz dodać ich jako gości do zespołu lub wysłać im bezpieczny link SharePoint.
 
-Możesz również używać usługi Microsoft Stream do wewnętrznego przechowywania i udostępniania klipów wideo. Te klipy wideo nie są dostępne publicznie, więc doskonale nadają się do obsługi wiadomości kampanii wewnętrznych.
+Możesz również użyć Microsoft Stream, aby przechowywać i udostępniać filmy wideo wewnętrznie. Te filmy wideo nie są widoczne publicznie, dlatego są idealne do obsługi wewnętrznych wiadomości firmowych lub kampanii.
 
 ## <a name="best-practices"></a>Najważniejsze wskazówki
 
-Aby bezpiecznie udostępniać pliki i klipy wideo, użyj tych metod:
+Upewnij się, że użytkownicy używają tych metod do bezpiecznego udostępniania plików i filmów wideo:
 
-1. Przechowuj pliki w Microsoft Teams lub SharePoint i upewnij się, że mają je tylko te osoby, które muszą mieć dostęp do tych plików.
-2. Gdy chcesz udostępnić plik, nie dołączaj plików do wiadomości e-mail. Zamiast tego wybierz **pozycję Uzyskaj link** z Microsoft Teams lub SharePoint i wyślij link w wiadomości e-mail.
-3. Aby udostępnić plik zewnętrznie, dodaj użytkownika jako gościa do zespołu lub użyj programu SharePoint, aby uzyskać bezpieczny link do udostępniania tego pliku.
-4. Za pomocą usługi Microsoft Stream hostuj klipy wideo, które chcesz zobaczyć dla kampanii.
+1. Przechowuj pliki w Microsoft Teams lub SharePoint i upewnij się, że mają je tylko osoby, które potrzebują dostępu do tych plików.
+2. Jeśli chcesz udostępnić, nie dołączaj plików do wiadomości e-mail. Zamiast tego wybierz pozycję **Pobierz link** z Microsoft Teams lub SharePoint i wyślij link w wiadomości e-mail.
+3. Aby udostępnić plik zewnętrznie, dodaj użytkownika jako gościa do swojego zespołu lub użyj SharePoint, aby uzyskać bezpieczny link do udostępniania tylko tego pliku.
+4. Użyj Microsoft Stream, aby hostować filmy wideo, które chcesz zobaczyć w kampanii.
 5. Używaj Microsoft Teams lub SharePoint do przechowywania plików wideo potrzebnych zespołowi do współpracy lub udostępniania.
 
 ## <a name="set-up"></a>Konfiguruj
 
-Aby utworzyć zespół i dodać do niego gości, na przykład reklamodawców lub partnerów, wykonaj poniższe czynności.
+Członkowie organizacji mogą utworzyć zespół i dodać do niego gości, takich jak reklamodawcy lub partnerzy finansowi, wykonując następujące kroki.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Aby udostępnić bezpieczny link gościowi bez korzystania z Microsoft Teams, wykonaj poniższe czynności.
+Aby udostępnić bezpieczny link gościowi bez używania Microsoft Teams, wykonaj następujące kroki.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
 
-Aby tworzyć i udostępniać klipy wideo, wykonaj poniższe czynności.
+Aby tworzyć i udostępniać filmy wideo, wykonaj następujące kroki.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-Pobierz infografikę w [formacie PDF](https://go.microsoft.com/fwlink/?linkid=2079435) [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438), aby uzyskać krótkie omówienie sposobów udostępniania plików.
+Pobierz infografikę w [formacie PDF](https://go.microsoft.com/fwlink/?linkid=2079435) lub [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438), aby uzyskać szybki przegląd sposobów udostępniania plików.
 
 [![Ilustracja przedstawiająca udostępnianie plików różnym użytkownikom.](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+
+## <a name="next-objective"></a>Następny cel
+
+Po ukończeniu tego celu [utwórz witrynę komunikacji](create-communications-site.md) dla swojego zespołu.
+

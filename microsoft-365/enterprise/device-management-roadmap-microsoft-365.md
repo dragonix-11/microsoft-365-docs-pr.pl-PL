@@ -1,9 +1,9 @@
 ---
-title: Przewodnik po zarządzaniu urządzeniami dla Microsoft 365
-keywords: Microsoft 365, Microsoft 365 dla przedsiębiorstw, Microsoft 365, zarządzanie urządzeniami przenośnymi, Intune
+title: Plan zarządzania urządzeniami dla Microsoft 365
+keywords: Microsoft 365, Microsoft 365 dla przedsiębiorstw, dokumentacja Microsoft 365, zarządzanie urządzeniami przenośnymi, Intune
 author: kelleyvice-msft
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 08/10/2020
 ms.topic: conceptual
 f1.keywords:
@@ -14,51 +14,51 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-description: Przewodnik po skonfigurowaniu zarządzania urządzeniami na Microsoft 365.
-ms.openlocfilehash: 0fef31697657b4694090ae7a1b63516920d8c71b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Plan konfigurowania zarządzania urządzeniami dla Microsoft 365.
+ms.openlocfilehash: eeed1a69fc1724f3feb75f4bc096cad3a3c25cf0
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021285"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095317"
 ---
-# <a name="device-management-roadmap-for-microsoft-365"></a>Przewodnik po zarządzaniu urządzeniami dla Microsoft 365
+# <a name="device-management-roadmap-for-microsoft-365"></a>Plan zarządzania urządzeniami dla Microsoft 365
 
-Microsoft 365 dla przedsiębiorstwa zawiera funkcje, które ułatwiają zarządzanie urządzeniami i ich aplikacjami w organizacji. Zarządzanie urządzeniami przenośnymi ułatwia zabezpieczanie i ochronę zasobów organizacji.
+Microsoft 365 dla przedsiębiorstw obejmuje funkcje ułatwiające zarządzanie urządzeniami i ich aplikacjami w organizacji. Zarządzanie urządzeniami przenośnymi ułatwia zabezpieczanie i ochronę zasobów organizacji.
 
 Istnieją dwie opcje zarządzania urządzeniami:
 
 - [Microsoft Intune](#microsoft-intune)
-- [Podstawowa mobilność i zabezpieczenia](#basic-mobility-and-security)
+- [Funkcja Podstawowa mobilność i zabezpieczenia](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Za pomocą aplikacji Microsoft Intune zarządzać dostępem do organizacji za pomocą zarządzania urządzeniami przenośnymi lub zarządzania aplikacją mobilną. Zarządzanie urządzeniami przenośnymi jest oznaczane przez użytkowników podczas "rejestrowania" swoich urządzeń w usłudze Intune. Po zarejestrowaniu urządzenia jest ono urządzeniem zarządzanym. dlatego może on otrzymywać zasady, reguły i ustawienia Twojej organizacji. Możesz na przykład zainstalować określone aplikacje, utworzyć zasady dotyczące haseł, zainstalować połączenie VPN i nie tylko.
+Za pomocą Microsoft Intune można zarządzać dostępem do organizacji przy użyciu zarządzania urządzeniami przenośnymi lub zarządzania aplikacjami mobilnymi. Zarządzanie urządzeniami przenośnymi polega na tym, że użytkownicy "rejestrują" swoje urządzenia w Intune. Po zarejestrowaniu urządzenia jest to urządzenie zarządzane. W związku z tym może odbierać zasady, reguły i ustawienia organizacji. Można na przykład zainstalować określone aplikacje, utworzyć zasady haseł, zainstalować połączenie sieci VPN i nie tylko.
 
-Użytkownicy z własnymi urządzeniami osobistymi mogą nie chcieć rejestrować swoich urządzeń lub być zarządzani przez usługę Intune i zasady Twojej organizacji. Nadal jednak musisz chronić zasoby i dane organizacji. W tym scenariuszu możesz chronić aplikacje za pomocą zarządzania aplikacjami mobilnymi. Możesz na przykład użyć zasad zarządzania aplikacją mobilną, które wymagają od użytkownika wprowadzenia numeru PIN podczas uzyskiwania dostępu do aplikacji SharePoint Online na urządzeniu.
+Użytkownicy z własnymi urządzeniami osobistymi mogą nie chcieć rejestrować swoich urządzeń ani zarządzać nimi za pomocą Intune i zasad organizacji. Jednak nadal musisz chronić zasoby i dane organizacji. W tym scenariuszu możesz chronić aplikacje przy użyciu zarządzania aplikacjami mobilnymi. Na przykład można użyć zasad zarządzania aplikacjami mobilnymi, które wymagają od użytkownika wprowadzenia numeru PIN podczas uzyskiwania dostępu do SharePoint Online na urządzeniu.
 
-Dowiesz się także, jak będziesz zarządzać urządzeniami osobistymi i urządzeniami należącymi do organizacji. Urządzenia można traktować inaczej w zależności od ich zastosowania.
+Określisz również sposób zarządzania urządzeniami osobistymi i urządzeniami należącymi do organizacji. W zależności od ich zastosowań warto traktować urządzenia inaczej.
 
-## <a name="basic-mobility-and-security"></a>Podstawowa mobilność i zabezpieczenia
+## <a name="basic-mobility-and-security"></a>Funkcja Podstawowa mobilność i zabezpieczenia
 
-Jest to wbudowane Microsoft 365 i ułatwia zabezpieczanie urządzeń przenośnych użytkowników, takich jak telefony iPhone, tablety iPad, urządzenia z systemem Android Windows przenośnych. Możesz tworzyć zasady zabezpieczeń urządzeń i zarządzać nimi, zdalnie wyczyścić urządzenie i wyświetlać szczegółowe raporty dotyczące urządzeń.
+Jest to wbudowane w Microsoft 365 i ułatwia zabezpieczanie urządzeń przenośnych użytkowników, takich jak telefony iPhone, iPady, Androidy i Windows telefony oraz zarządzanie nimi. Możesz tworzyć zasady zabezpieczeń urządzeń i zarządzać nimi, zdalnie czyścić urządzenie oraz wyświetlać szczegółowe raporty dotyczące urządzeń.
 
 ## <a name="choose-between-the-two-options"></a>Wybierz jedną z dwóch opcji
 
-Aby ułatwić ocenę najlepszej dla Ciebie opcji zarządzania urządzeniami, zobacz Wybór [między pakietem Basic Mobility Security a usługą Intune](/office365/securitycompliance/choose-between-mdm-and-intune).
+Aby lepiej ocenić, która opcja zarządzania urządzeniami jest najlepsza, zobacz [Wybieranie między usługą Basic Mobility Security i Intune](/office365/securitycompliance/choose-between-mdm-and-intune).
 
-Na podstawie oceny, wprowadzenie do zarządzania urządzeniami za pomocą:
+Na podstawie oceny rozpocznij zarządzanie urządzeniami za pomocą:
 
 - [Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)
-- [Podstawowa mobilność i zabezpieczenia](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Funkcja Podstawowa mobilność i zabezpieczenia](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
-## <a name="identity-and-device-access-recommendations"></a>Zalecenia dotyczące dostępu do urządzenia i tożsamości
+## <a name="identity-and-device-access-recommendations"></a>Zalecenia dotyczące tożsamości i dostępu do urządzeń
 
-Firma Microsoft udostępnia zestaw zaleceń dotyczących tożsamości i [dostępu](../security/office-365-security/microsoft-365-policies-configurations.md) do urządzeń, aby zapewnić bezpieczeństwo i produktywność pracowników. Aby uzyskać dostęp do urządzenia, skorzystaj z zaleceń i ustawień poszczególnych artykułów:
+Firma Microsoft udostępnia zestaw zaleceń dotyczących [tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md) w celu zapewnienia bezpiecznej i produktywnej siły roboczej. Aby uzyskać dostęp do urządzenia, skorzystaj z zaleceń i ustawień w następujących artykułach:
 
 - [Wymagania wstępne](../security/office-365-security/identity-access-prerequisites.md)
-- [Typowe zasady dostępu do urządzeń i tożsamości](../security/office-365-security/identity-access-policies.md)
+- [Wspólne zasady tożsamości i dostępu do urządzeń](../security/office-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Jak firma Contoso miała zarządzanie urządzeniami w Microsoft 365
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Jak firma Contoso wykonywała zarządzanie urządzeniami dla Microsoft 365
 
-Aby uzyskać informacje o tym, jak fikcyjna, ale reprezentatywna, wielonarodowa firma wdrożyła swoją infrastrukturę zarządzania urządzeniami przenośnymi za pomocą usług Microsoft 365 w chmurze, zobacz Zarządzanie urządzeniami przenośnymi [dla firmy Contoso](contoso-mdm.md).
+Aby uzyskać informacje o tym, jak fikcyjna, ale reprezentatywna firma wielonarodowa wdrożyła infrastrukturę zarządzania urządzeniami przenośnymi za pomocą usług w chmurze Microsoft 365, zobacz [Zarządzanie urządzeniami przenośnymi w firmie Contoso](contoso-mdm.md).

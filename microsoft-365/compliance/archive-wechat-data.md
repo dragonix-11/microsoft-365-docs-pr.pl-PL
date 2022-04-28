@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych WeChat w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Skonfiguruj i użyj łącznika w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane WeChat w Microsoft 365.
-ms.openlocfilehash: 8d87cbaf25396dc9af1497737450126e90b54a7a
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: ab23d79983f8ccc9a2e7a9a90a755957c6eda8bd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997223"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091814"
 ---
 # <a name="set-up-a-connector-to-archive-wechat-data"></a>Konfigurowanie łącznika do archiwizowania danych WeChat
 

@@ -2,7 +2,7 @@
 title: Lokalizacje danych dla Unii Europejskiej
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Określanie miejsca przechowywania Microsoft 365 danych klientów w Unii Europejskiej
-ms.openlocfilehash: fa1f1548039f060ae51131fbfcbb0b6ab61c9b70
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 2f4a6133724d868f3caeaf977517c74fe56bb4fd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822633"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095383"
 ---
 # <a name="data-locations-for-the-european-union"></a>Lokalizacje danych dla Unii Europejskiej
 

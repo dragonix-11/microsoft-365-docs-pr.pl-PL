@@ -2,8 +2,8 @@
 title: Taguj dokumenty w zestawie do przeglądu
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Tagowanie dokumentów w zestawie przeglądów pomaga usunąć niepotrzebną zawartość i zidentyfikować odpowiednią zawartość w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6130a50c966fe23b1218c98efde381dc64fcb009
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 358f62c83cdecd1aee92a2ca56db09b732ea3d9d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996720"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099614"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Tagowanie dokumentów w zestawie przeglądów w usłudze eDiscovery (Premium)
 
