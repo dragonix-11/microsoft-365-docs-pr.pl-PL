@@ -14,303 +14,314 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Informacje dla administratorów IT dotyczące zarządzania etykietami wrażliwości Office aplikacji klasycznych, mobilnych i sieci Web.
+description: Informacje dla administratorów IT dotyczące zarządzania etykietami poufności w aplikacjach Office dla komputerów stacjonarnych, urządzeń przenośnych i sieci Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0ca67ecb87b48d551ec4fb740e8732b8196c872c
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: 0f24e707bef05b541f301a41596737c17b4ed587
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64637923"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098433"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Zarządzanie etykietami poufności w aplikacjach Office
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po [opublikowaniu etykiet](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) wrażliwości w centrum etykiet Centrum zgodności platformy Microsoft 365 lub równoważnego są one wyświetlane w aplikacjach pakietu Office, aby użytkownicy klasyfikowali i chronili dane po ich utworzeniu lub edytowaniu.
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Informacje zawarte w tym artykule ułatwiają pomyślne zarządzanie etykietami wrażliwości w Office aplikacjach. Na przykład określ minimalne wersje aplikacji potrzebne do obsługi wbudowanych etykiet i opis interakcji z ujednoliconym klientem usługi Azure Information Protection etykietami oraz zgodność z innymi aplikacjami i usługami.
+Po [opublikowaniu](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) etykiet poufności z portalu zgodności usługi Microsoft Purview zaczynają one pojawiać się w aplikacjach Office, aby użytkownicy mogli klasyfikować i chronić dane podczas ich tworzenia lub edytowania.
 
-## <a name="labeling-client-for-desktop-apps"></a>Klient etykiet dla aplikacji klasycznych
+Informacje zawarte w tym artykule ułatwiają pomyślne zarządzanie etykietami poufności w aplikacjach Office. Na przykład zidentyfikuj minimalne wersje aplikacji potrzebnych do obsługi funkcji specyficznych dla wbudowanego etykietowania, wszelkie dodatkowe informacje o konfiguracji tych funkcji i zapoznaj się z interakcjami z klientem ujednoliconego etykietowania platformy Azure Information Protection oraz innymi aplikacjami i usługami.
 
-Aby używać etykiet wrażliwości wbudowanych w Office klasycznych dla komputerów Windows i Mac, musisz użyć subskrypcji pakietu Office. Ten klient etykiet nie obsługuje autonomicznych wersji Office, nazywanych czasami "Office bezterminową".
+## <a name="labeling-client-for-desktop-apps"></a>Klient etykietowania dla aplikacji klasycznych
 
-Jeśli nie możesz uaktualnić oprogramowania do wersji Aplikacje Microsoft 365 dla przedsiębiorstw dla wersji Office usługi Windows Office, możesz użyć klienta [azure Information Protection etykiet](/azure/information-protection/rms-client/aip-clientv2).
+Aby używać etykiet poufności wbudowanych w aplikacje klasyczne Office dla Windows i komputerów Mac, należy użyć wersji subskrypcji Office. Ten klient etykietowania nie obsługuje autonomicznych wersji Office, czasami nazywanych "Office Perpetual".
 
-## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Obsługa możliwości wrażliwości etykiet w aplikacjach
+Jeśli nie możesz uaktualnić do Aplikacje Microsoft 365 dla przedsiębiorstw dla wersji subskrypcji Office, tylko w przypadku komputerów Windows możesz użyć [klienta ujednoliconego etykietowania usługi Azure Information Protection (AIP](/azure/information-protection/rms-client/aip-clientv2)). Jednak ten klient jest teraz w [trybie konserwacji](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) i nie zaleca się korzystania z dodatku AIP dla aplikacji Office, chyba że trzeba. Aby uzyskać więcej informacji, zobacz [Why choose built-in labeling over the AIP add-in for Office apps (Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji Office](sensitivity-labels-aip.md)).
 
-W poniższych tabelach przedstawiono minimalne Office, które są wymagane do obsługi etykiet wrażliwości przy użyciu wbudowanych etykiet. Lub, jeśli funkcja etykiet jest w publicznej wersji zapoznawczej lub w przeglądzie w przyszłej wersji. Skorzystaj z [Microsoft 365,](https://aka.ms/MIPC/Roadmap) aby uzyskać szczegółowe informacje o nowych możliwościach, które zaplanowano w przyszłych wersjach.
+## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Obsługa funkcji etykiet poufności w aplikacjach
 
-Nowe wersje Office są udostępniane w różnych momentach dla różnych kanałów aktualizacji. Dla Windows otrzymasz nowe funkcje wcześniej, gdy będziesz w bieżącym kanale lub miesięcznym kanale Enterprise, a nie Semi-Annual Enterprise kanału. Minimalne numery wersji mogą też różnić się w poszczególnych kanałach aktualizacji. Aby uzyskać więcej informacji, zobacz [Omówienie kanałów aktualizacji dla Aplikacje Microsoft 365](/deployoffice/overview-update-channels) [i Historia aktualizacji Aplikacje Microsoft 365](/officeupdates/update-history-microsoft365-apps-by-date).
+Dla każdej funkcji w poniższych tabelach wymieniono minimalną wersję Office, która musi obsługiwać etykiety poufności przy użyciu wbudowanego etykietowania. Lub, jeśli możliwość etykiety jest w publicznej wersji zapoznawczej lub w trakcie przeglądu dla przyszłej wersji. Skorzystaj z [planu Microsoft 365](https://aka.ms/MIPC/Roadmap), aby uzyskać szczegółowe informacje o nowych możliwościach, które są planowane w przyszłych wersjach.
 
-Nowe funkcje dostępne w prywatnej wersji zapoznawczej nie są uwzględnione w tabeli, ale możesz mieć możliwość dołączenia do tych wersji zapoznawczych przez nominowanie organizacji do Microsoft Information Protection [prywatnego programu zapoznawczego](https://aka.ms/mip-preview).
+Nowe wersje aplikacji Office są udostępniane w różnym czasie dla różnych kanałów aktualizacji. W przypadku Windows nowe możliwości będą dostępne wcześniej, gdy korzystasz z bieżącego kanału lub kanału Enterprise miesięcznego, a nie kanału Semi-Annual Enterprise. Minimalne numery wersji mogą również różnić się od jednego kanału aktualizacji do następnego. Aby uzyskać więcej informacji, zobacz [Omówienie kanałów aktualizacji dla Aplikacje Microsoft 365](/deployoffice/overview-update-channels) i [Historia aktualizacji dla Aplikacje Microsoft 365](/officeupdates/update-history-microsoft365-apps-by-date).
 
-Office dla systemu iOS i Office dla systemu Android: Etykiety wrażliwości są [wbudowane w aplikacja pakietu Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+Nowe możliwości w prywatnej wersji zapoznawczej nie są uwzględnione w tabeli, ale możesz dołączyć do tych wersji zapoznawczych, nominując organizację do [programu Microsoft Information Protection prywatnej wersji zapoznawczej](https://aka.ms/mip-preview).
 
-Dodatkowe funkcje są dostępne po zainstalowaniu klienta azure Information Protection etykiet, który działa tylko na Windows komputerach. Aby uzyskać te szczegółowe informacje, [zobacz Porównanie klientów etykiet dla Windows komputerów](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+Office dla systemów iOS i Office dla systemu Android: etykiety poufności są wbudowane w [aplikacja pakietu Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 > [!TIP]
-> Podczas porównywania minimalnych wersji tabel z wersjami, które posiadasz, pamiętaj o typowych praktykach puszczania wersji, aby pomijać zera wiodące.
+> Podczas porównywania minimalnych wersji w tabelach z wersjami, które masz, należy pamiętać o typowym rozwiązaniu wersji wersji, aby pominąć zera wiodące.
 > 
-> Na przykład masz wersję 4.2128.0 i przeczytasz, że wersja 4.7.1+ jest wersją minimalną. Dla ułatwienia porównania przeczytaj 4.7.1 (bez zer wiodących) jako 4. **0007.1** (a nie 4.**7000.1**). Wersja 4.2128.0 jest wyższa niż 4.0007.1, więc jest obsługiwana.
+> Na przykład masz wersję 4.2128.0 i odczytujesz, że wersja 4.7.1+ jest wersją minimalną. Aby ułatwić porównanie, przeczytaj 4.7.1 (bez zer wiodących) jako 4. **0007.1** (a nie 4.**7000.1**). Wersja 4.2128.0 jest wyższa niż 4.0007.1, więc twoja wersja jest obsługiwana.
 
-### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Funkcje etykiet wrażliwości w programie Word, Excel i PowerPoint
+### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Funkcje etykiet poufności w programach Word, Excel i PowerPoint
 
-Wymienione na liście liczby to minimalne Office wymaganych wersji aplikacji dla poszczególnych funkcji. 
+Wymienione liczby to minimalna Office wersji aplikacji wymaganych dla każdej funkcji. 
 
 > [!NOTE]
-> W Windows i kanale Semi-Annual Enterprise minimalne obsługiwane numery wersji mogą jeszcze nie zostać opublikowane. [Dowiedz się więcej](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> W przypadku Windows i kanału Semi-Annual Enterprise minimalna obsługiwana liczba wersji może jeszcze nie zostać wydana. [Dowiedz się więcej](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
  
-|Funkcja |Windows |Mac |iOS |Android |Web |
+|Możliwości |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
-|[Ręczne stosowanie, zmienianie lub usuwanie etykiety](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Stosowanie etykiety domyślnej](sensitivity-labels.md#what-label-policies-can-do) do nowych dokumentów                                         | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[Stosowanie etykiety domyślnej](sensitivity-labels.md#what-label-policies-can-do) do istniejących dokumentów | Wersja zapoznawcza: Wyświetlanie w bieżącym [kanale (wersja Preview)](https://office.com/insider) | Wersja zapoznawcza: Wyświetlanie w bieżącym [kanale (wersja Preview)](https://office.com/insider) | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Wymaganie justowania w celu zmiany etykiety](sensitivity-labels.md#what-label-policies-can-do)                     | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+  <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Link Podaj pomoc do niestandardowej strony pomocy](sensitivity-labels.md#what-label-policies-can-do)                       | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Oznaczanie zawartości](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Oznaczenia dynamiczne ze zmiennymi](#dynamic-markings-with-variables)                                              | Bieżący kanał: 2010+ <br /><br> Miesięczny Enterprise kanału: 2010+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Przypisz uprawnienia teraz](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Umożliwianie użytkownikom przypisywania uprawnień: <br /> — Monituj użytkowników](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Bieżący kanał: 2004+ <br /><br> Miesięczny Enterprise kanału: 2004+ <br /><br> Semi-Annual Enterprise kanału: 2008+ | 16.35+   | W trakcie przeglądu   | W trakcie przeglądu         | W trakcie przeglądu                                                        |
-|[Inspekcja działań użytkowników związanych z etykietami](#auditing-labeling-activities)                      | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Tak |
-|[Wymaganie od użytkowników stosowania etykiety do wiadomości e-mail i dokumentów](#require-users-to-apply-a-label-to-their-email-and-documents)   | Bieżący kanał: 2101+ <br /><br> Miesięczny Enterprise kanału: 2101+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny Enterprise kanału: 2009+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.44+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> - Korzystanie z klasyfikatorów przeszkolnych                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.49+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Obsługa współtworzeń i autozazawów](sensitivity-labels-coauthoring.md) dla dokumentów oznaczonych i zaszyfrowanych | Bieżący kanał: 2107+ <br /><br> Miesięczny Enterprise kanał: 2107+ <br /><br> Semi-Annual Enterprise kanału: 2202+ |  16.51+ | Wersja przedpremierowa: 2,58+ po [wybrali opcję](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | Wersja przedpremierowa: 16.0.14931 lub więcej, gdy [się na to zdecydujesz](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Ręczne stosowanie, zmienianie lub usuwanie etykiety](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Stosowanie etykiety domyślnej](sensitivity-labels.md#what-label-policies-can-do) do nowych dokumentów                                         | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
+|[Stosowanie etykiety domyślnej](sensitivity-labels.md#what-label-policies-can-do) do istniejących dokumentów | Wersja zapoznawcza: wprowadzanie do [kanału beta](https://office.com/insider) | Wersja zapoznawcza: wdrażanie do [bieżącego kanału (wersja zapoznawcza)](https://office.com/insider) | W trakcie przeglądu | W trakcie przeglądu | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Wymagaj uzasadnienia, aby zmienić etykietę](sensitivity-labels.md#what-label-policies-can-do)                     | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+  <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Podaj link pomocy do niestandardowej strony pomocy](sensitivity-labels.md#what-label-policies-can-do)                       | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Oznaczanie zawartości](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Oznaczenia dynamiczne ze zmiennymi](#dynamic-markings-with-variables)                                              | Bieżący kanał: 2010+ <br /><br> Miesięczny kanał Enterprise: 2010+ <br /><br> kanał Semi-Annual Enterprise: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Przypisz teraz uprawnienia](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Zezwalaj użytkownikom na przypisywanie uprawnień: <br /> — monituj użytkowników](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Bieżący kanał: 2004+ <br /><br> Miesięczny kanał Enterprise: 2004+ <br /><br> kanał Semi-Annual Enterprise: 2008+ | 16.35+   | W trakcie przeglądu   | W trakcie przeglądu         | W trakcie przeglądu                                                        |
+|[Inspekcja działania użytkownika związanego z etykietami](#auditing-labeling-activities)                      | Bieżący kanał: 2011+ <br /><br> Kanał Enterprise miesięczny: 2011+ <br /><br> kanał Semi-Annual Enterprise: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Tak |
+|[Wymaganie od użytkowników zastosowania etykiety do poczty e-mail i dokumentów](#require-users-to-apply-a-label-to-their-email-and-documents)   | Bieżący kanał: 2101+ <br /><br> Miesięczny kanał Enterprise: 2101+ <br /><br> kanał Semi-Annual Enterprise: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md)                                            
+|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny kanał Enterprise: 2009+ <br /><br> kanał Semi-Annual Enterprise: 2102+ | 16.44+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie klasyfikatorów z możliwością trenowania                    | Bieżący kanał: 2105+ <br /><br> Miesięczny kanał Enterprise: 2105+ <br /><br> kanał Semi-Annual Enterprise: 2108+ | 16.49+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Obsługa współtwoerowania i automatycznego](sensitivity-labels-coauthoring.md) zapisywania dla dokumentów oznaczonych etykietami i zaszyfrowanych | Bieżący kanał: 2107+ <br /><br> Miesięczny kanał Enterprise: 2107+ <br /><br> kanał Semi-Annual Enterprise: 2202+ |  16.51+ | Wersja zapoznawcza: 2.58+ po [zalogowaniu](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | Wersja zapoznawcza: 16.0.14931+ po [włączeniu](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [Tak — zgoda](sensitivity-labels-sharepoint-onedrive-files.md) |
 
 
-### <a name="sensitivity-label-capabilities-in-outlook"></a>Funkcje etykiet wrażliwości w programie Outlook
+### <a name="sensitivity-label-capabilities-in-outlook"></a>Funkcje etykiet poufności w Outlook
 
-Wymienione na liście liczby to minimalne Office wymaganych wersji aplikacji dla poszczególnych funkcji. 
+Wymienione liczby to minimalna Office wersji aplikacji wymaganych dla każdej funkcji. 
 
 > [!NOTE]
-> W Windows i kanale Semi-Annual Enterprise minimalne obsługiwane numery wersji mogą jeszcze nie zostać opublikowane. [Dowiedz się więcej](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> W przypadku Windows i kanału Semi-Annual Enterprise minimalna obsługiwana liczba wersji może jeszcze nie zostać wydana. [Dowiedz się więcej](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
 
-|Funkcja |Outlook dla Windows |Outlook dla komputerów Mac |Outlook w systemie iOS |Outlook w systemie Android |Outlook on the web |
+|Możliwości |Outlook dla Windows |Outlook dla komputerów Mac |Outlook w systemie iOS |Outlook w systemie Android |Outlook on the web |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
-|[Ręczne stosowanie, zmienianie lub usuwanie etykiety](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
-|[Stosowanie etykiety domyślnej](sensitivity-labels.md#what-label-policies-can-do)                                         | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
-|[Wymaganie justowania w celu zmiany etykiety](sensitivity-labels.md#what-label-policies-can-do)                     | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
-|[Link Podaj pomoc do niestandardowej strony pomocy](sensitivity-labels.md#what-label-policies-can-do)                       | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
-|[Oznaczanie zawartości](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
-|[Oznaczenia dynamiczne ze zmiennymi](#dynamic-markings-with-variables)                                              | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
-|[Przypisz uprawnienia teraz](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
-|[Umożliwianie użytkownikom przypisywania uprawnień: <br /> — Nie przesyłaj dalej](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
-|[Umożliwianie użytkownikom przypisywania uprawnień: <br /> — Tylko szyfrowanie](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Tak |
-|[Wymaganie od użytkowników stosowania etykiety do wiadomości e-mail i dokumentów](#require-users-to-apply-a-label-to-their-email-and-documents)   | Bieżący kanał: 2101+ <br /><br> Miesięczny Enterprise kanału: 2101+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Tak                |
-|[Inspekcja działań użytkowników związanych z etykietami](#auditing-labeling-activities) | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Tak |
-|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny Enterprise kanału: 2009+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.44+ <sup>\*</sup>                    | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
-|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> - Korzystanie z klasyfikatorów przeszkolnych                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.49+ | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
-|[Różne ustawienia etykiet domyślnych i obowiązkowych etykiet](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Tak |
+|[Ręczne stosowanie, zmienianie lub usuwanie etykiety](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
+|[Stosowanie etykiety domyślnej](sensitivity-labels.md#what-label-policies-can-do)                                         | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
+|[Wymagaj uzasadnienia, aby zmienić etykietę](sensitivity-labels.md#what-label-policies-can-do)                     | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
+|[Podaj link pomocy do niestandardowej strony pomocy](sensitivity-labels.md#what-label-policies-can-do)                       | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
+|[Oznaczanie zawartości](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
+|[Oznaczenia dynamiczne ze zmiennymi](#dynamic-markings-with-variables)                                              | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
+|[Przypisz teraz uprawnienia](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
+|[Zezwalaj użytkownikom na przypisywanie uprawnień: <br /> — nie przesyłaj dalej](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Bieżący kanał: 1910+ <br /><br> Miesięczny kanał Enterprise: 1910+ <br /><br> kanał Semi-Annual Enterprise: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
+|[Zezwalaj użytkownikom na przypisywanie uprawnień: <br /> — tylko szyfrowanie](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Bieżący kanał: 2011+ <br /><br> Kanał Enterprise miesięczny: 2011+ <br /><br> kanał Semi-Annual Enterprise: 2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Tak |
+|[Wymaganie od użytkowników zastosowania etykiety do poczty e-mail i dokumentów](#require-users-to-apply-a-label-to-their-email-and-documents)   | Bieżący kanał: 2101+ <br /><br> Miesięczny kanał Enterprise: 2101+ <br /><br> kanał Semi-Annual Enterprise: 2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Tak                |
+|[Inspekcja działania użytkownika związanego z etykietami](#auditing-labeling-activities) | Bieżący kanał: 2011+ <br /><br> Kanał Enterprise miesięczny: 2011+ <br /><br> kanał Semi-Annual Enterprise: 2108+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Tak |
+|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny kanał Enterprise: 2009+ <br /><br> kanał Semi-Annual Enterprise: 2102+ | 16.44+ <sup>\*</sup>                    | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
+|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie klasyfikatorów z możliwością trenowania                    | Bieżący kanał: 2105+ <br /><br> Miesięczny kanał Enterprise: 2105+ <br /><br> kanał Semi-Annual Enterprise: 2108+ | 16.49+ | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
+|[Różne ustawienia etykiety domyślnej i obowiązkowego etykietowania](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Bieżący kanał: 2105+ <br /><br> Miesięczny kanał Enterprise: 2105+ <br /><br> kanał Semi-Annual Enterprise: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Tak |
 |
 
 **Przypisy dolne:**
 
-<sup>\*</sup>Wymaga [nowej Outlook dla komputerów Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>\*</sup>Wymaga [nowego Outlook dla komputerów Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+
+## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office wbudowany klient etykietowania i klient usługi Azure Information Protection
+
+Jeśli użytkownicy mają zainstalowanego [klienta usługi Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) na swoich komputerach Windows, domyślnie wbudowane etykiety są wyłączone w [aplikacjach Windows Office, które je obsługują](#labeling-client-for-desktop-apps). Ponieważ wbudowane etykiety nie używają dodatku Office używanego przez klienta usługi AIP, mają one korzyści z większej stabilności i lepszej wydajności. Obsługują one również najnowsze funkcje, takie jak zaawansowane klasyfikatory. 
+
+> [!NOTE]
+> Jeśli nie widzisz funkcji etykietowania oczekiwanych na komputerach Windows, pomimo potwierdzenia minimalnej obsługiwanej wersji kanału aktualizacji Office, może to być spowodowane [koniecznością wyłączenia dodatku usługi AIP](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
+
+Aby dowiedzieć się więcej na temat obsługi etykietowania z klientem usługi AIP, zobacz [Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji Office](sensitivity-labels-aip.md).
 
 
-## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office wbudowany klient etykiet i inne rozwiązania do oznaczania etykiet
+## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Jeśli musisz wyłączyć wbudowane etykietowanie w aplikacjach Office na Windows
 
-Wbudowany Office etykiet pobiera etykiety wrażliwości i ustawienia zasad wrażliwości z Centrum zgodności platformy Microsoft 365. 
+Klient Office wbudowanego etykietowania pobiera etykiety poufności i ustawienia zasad etykiet poufności z portalu zgodności usługi Microsoft Purview.
 
-Aby używać Office etykiet, musisz opublikować jedną lub więcej zasad etykiet dla użytkowników z Centrum zgodności oraz obsługiwaną wersję pakietu [Office](#support-for-sensitivity-label-capabilities-in-apps).[](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)
+Aby korzystać z Office wbudowanego klienta etykietowania, musisz mieć co najmniej jedną [zasadę etykiety opublikowaną](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) dla użytkowników z portalu zgodności usługi Microsoft Purview oraz [obsługiwaną wersję Office](#support-for-sensitivity-label-capabilities-in-apps).
 
-Jeśli oba te warunki są spełnione, ale musisz wyłączyć wbudowane etykiety w Windows Office, użyj zasady grupy ustawienia:
+Jeśli oba te warunki zostały spełnione, ale musisz wyłączyć wbudowane etykiety w aplikacjach Windows Office, użyj następującego ustawienia zasady grupy:
 
-1. Przejdź do **konfiguracji użytkownika/szablonów administracyjnych/Microsoft Office 2016/Security Ustawienia**.
+1. Przejdź do pozycji **Konfiguracja użytkownika/Szablony administracyjne/Microsoft Office 2016/Security Ustawienia**.
 
-2. Ustaw **ustawienie Użyj funkcji wrażliwości w Office, aby zastosować etykiety wrażliwości i wyświetlić je jako** **0**. 
+2. Ustaw **opcję Użyj funkcji poufności w Office, aby zastosować i wyświetlić etykiety poufności** na **wartość 0**.
+
+Jeśli później trzeba przywrócić tę konfigurację, zmień wartość na **1**. Może być również konieczne zmianę tej wartości na 1, jeśli przycisk **Czułość** nie jest wyświetlany na wstążce zgodnie z oczekiwaniami. Na przykład poprzedni administrator wyłączył to ustawienie etykietowania.
  
-Wdąć to ustawienie przy zasady grupy lub przy użyciu usługi Office [zasad chmury](/DeployOffice/overview-office-cloud-policy-service). To ustawienie dzieje się po ponownym uruchomieniu Office aplikacji. 
+Wdróż to ustawienie przy użyciu zasady grupy lub przy użyciu [usługi zasad w chmurze Office](/DeployOffice/overview-office-cloud-policy-service). To ustawienie wchodzi w życie po ponownym uruchomieniu tych Office aplikacji. 
 
-Ponieważ to ustawienie jest specyficzne dla aplikacji pakietu Windows Office, nie ma Windows wpływu na inne aplikacje, które obsługują etykiety wrażliwości (takie jak Power BI) ani inne platformy (takie jak system macOS, urządzenia przenośne i Office dla sieci web). Jeśli nie chcesz, aby niektórzy lub wszyscy użytkownicy widzili etykiet wrażliwości i używali ich na wszystkich aplikacjach, wszystkich platformach, nie przypisuj tym użytkownikom zasad etykiet wrażliwości. 
+Ponieważ to ustawienie jest specyficzne dla aplikacji Windows Office, nie ma wpływu na inne aplikacje na Windows obsługujące etykiety poufności (takie jak Power BI) lub inne platformy (takie jak macOS, urządzenia przenośne i Office dla sieci web). Jeśli nie chcesz, aby niektórzy lub wszyscy użytkownicy widzieli etykiety poufności i korzystali z nich we wszystkich aplikacjach i na wszystkich platformach, nie przypisuj tych użytkowników zasad etykiet poufności.
 
-### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office wbudowany klient etykiet i klient usługi Azure Information Protection etykiet
+### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office wbudowany klient etykietowania i klient usługi Azure Information Protection
 
-Jeśli na komputerach z systemem Windows Information Protection jest zainstalowany klient usługi [Azure Information Protection (AIP](/azure/information-protection/rms-client/aip-clientv2)), etykiety wbudowane są domyślnie wyłączone w aplikacjach pakietu Windows Office, które je [obsługują](#labeling-client-for-desktop-apps). Ponieważ na etykietach wbudowanych nie jest używany dodatek Office, tak jak jest używany przez klienta AIP, ich zaletą jest większa stabilność i większa wydajność. Obsługują one również najnowsze funkcje, takie jak zaawansowane klasyfikatory.
+Jeśli użytkownicy mają zainstalowanego [klienta usługi Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) na swoich komputerach Windows, domyślnie wbudowane etykiety są wyłączone w [aplikacjach Windows Office, które je obsługują](#labeling-client-for-desktop-apps). Ponieważ wbudowane etykiety nie używają dodatku Office używanego przez klienta usługi AIP, mają one korzyści z większej stabilności i lepszej wydajności. Obsługują one również najnowsze funkcje, takie jak zaawansowane klasyfikatory.
 
-Aby dowiedzieć się więcej na temat opcji oznaczania etykiet za pomocą klienta AIP, zobacz Dlaczego warto wybrać wbudowaną etykietę MIP w dodatku [AIP dla aplikacji Office AIP](sensitivity-labels-aip.md).
+Aby dowiedzieć się więcej na temat opcji etykietowania za pomocą klienta usługi AIP, zobacz [Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji Office](sensitivity-labels-aip.md).
 
-## <a name="office-file-types-supported"></a>Office obsługiwane typy plików
+## <a name="office-file-types-supported"></a>obsługiwane typy plików Office
 
-Office, które mają wbudowane etykiety dla plików programów Word, Excel i PowerPoint obsługują format Open XML (taki jak .docx i .xlsx), ale nie format Microsoft Office 97–2003 (na przykład .doc i .xls), format Open Document (na przykład odt i ods) lub inne formaty. Jeśli typ pliku nie jest obsługiwany dla wbudowanych etykiet, przycisk Charakter nie jest  dostępny w aplikacja pakietu Office.
+Office aplikacje, które mają wbudowane etykietowanie dla plików programu Word, Excel i PowerPoint, obsługują format Open XML (na przykład .docx i .xlsx), ale nie format Microsoft Office 97–2003 (na przykład .doc i .xls), format open document (na przykład odt i ods) lub inne formaty. Jeśli typ pliku nie jest obsługiwany w przypadku wbudowanego etykietowania, przycisk **Czułość** nie jest dostępny w aplikacja pakietu Office.
 
-Klient ujednoliconej Information Protection Azure obsługuje zarówno format Open XML, jak i format Microsoft Office 97–2003. Aby uzyskać więcej informacji, zobacz Typy plików obsługiwane przez Information Protection [Azure i ujednoliconego](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) klienta etykiet w przewodniku administracyjnym tego klienta.
+Klient ujednoliconego etykietowania platformy Azure Information Protection obsługuje format Open XML i format Microsoft Office 97-2003. Aby uzyskać więcej informacji, zobacz [Typy plików obsługiwane przez klienta ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) z przewodnika administratora tego klienta.
 
-Aby uzyskać informacje na temat innych rozwiązań etykiet, sprawdź w dokumentacji obsługiwane typy plików.
+W przypadku innych rozwiązań do etykietowania zapoznaj się z dokumentacją dotyczącą obsługiwanych typów plików.
 
-## <a name="protection-templates-and-sensitivity-labels"></a>Szablony ochrony i etykiety wrażliwości
+## <a name="protection-templates-and-sensitivity-labels"></a>Szablony ochrony i etykiety poufności
 
-Szablony [ochrony zdefiniowane przez](/azure/information-protection/configure-policy-templates) administratora, takie jak zdefiniowane dla szyfrowania wiadomości Office 365, nie są widoczne w aplikacjach pakietu Office podczas korzystania z wbudowanych etykiet. To uproszczone środowisko odzwierciedla, że nie trzeba wybierać szablonu ochrony, ponieważ te same ustawienia są zawarte w etykietach wrażliwości z włączonym szyfrowaniem.
+[Szablony ochrony zdefiniowane przez administratora](/azure/information-protection/configure-policy-templates), takie jak te zdefiniowane na potrzeby Office 365 szyfrowania komunikatów, nie są widoczne w aplikacjach Office, gdy używasz wbudowanego etykietowania. To uproszczone środowisko odzwierciedla, że nie ma potrzeby wybierania szablonu ochrony, ponieważ te same ustawienia są dołączone do etykiet poufności z włączonym szyfrowaniem.
 
-Jeśli używasz polecenia cmdlet [New-Label](/powershell/module/exchange/new-label) z parametrem *EncryptionTemplateId* , możesz przekonwertować istniejący szablon na etykietę wrażliwości.
+Istniejący szablon można przekonwertować na etykietę poufności, gdy używasz polecenia cmdlet [New-Label](/powershell/module/exchange/new-label) z *parametrem EncryptionTemplateId* .
 
-## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>Opcje usługi Zarządzanie prawami do informacji (IRM) i etykiety wrażliwości
+## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>Opcje i etykiety poufności usługi Information Rights Management (IRM)
 
-Etykiety wrażliwości skonfigurowane do stosowania szyfrowania usuwają złożoność użytkowników, określając ich własne ustawienia szyfrowania. W wielu Office zarządzanie prawami do informacji (IRM) nadal użytkownicy mogą ręcznie konfigurować te indywidualne ustawienia szyfrowania. Na przykład dla Windows aplikacji:
+Etykiety poufności skonfigurowane w celu zastosowania szyfrowania usuwają złożoność od użytkowników w celu określenia własnych ustawień szyfrowania. W wielu aplikacjach Office te indywidualne ustawienia szyfrowania mogą być nadal ręcznie konfigurowane przez użytkowników przy użyciu opcji zarządzania prawami do informacji (IRM). Na przykład w przypadku aplikacji Windows:
 
-- W przypadku dokumentu: **FileInfoProtect** >  >  **DocumentRestrict Access** > 
-- w przypadku wiadomości e-mail: **Na karcie Opcje** kliknij > **szyfruj** 
+- Dla dokumentu: **FileInfoProtect** >  >  **DocumentRestrict Access** > 
+- dla wiadomości e-mail: na **karcie Opcje** > **Encrypt** 
   
-Gdy użytkownicy na początku oznaczą etykietą dokument lub wiadomość e-mail, mogą zastąpić ustawienia konfiguracji etykiet własnymi ustawieniami szyfrowania. Przykład:
+Gdy użytkownicy początkowo oznaczą dokument lub wiadomość e-mail etykietą, mogą zastąpić ustawienia konfiguracji etykiet własnymi ustawieniami szyfrowania. Przykład:
 
-- Użytkownik stosuje **etykietę Confidential \ All Employees** do dokumentu, a ta etykieta jest skonfigurowana do stosowania ustawień szyfrowania dla wszystkich użytkowników w organizacji. Następnie użytkownik ręcznie konfiguruje ustawienia usługi IRM w celu ograniczenia dostępu do użytkownika spoza organizacji. Wynikiem końcowy jest dokument o etykiecie Poufne **\** Wszyscy pracownicy i zaszyfrowany, ale użytkownicy w Twojej organizacji nie mogą go otworzyć zgodnie z oczekiwaniami.
+- Użytkownik stosuje etykietę **Poufne \ Wszyscy pracownicy** do dokumentu i ta etykieta jest skonfigurowana do stosowania ustawień szyfrowania dla wszystkich użytkowników w organizacji. Następnie ten użytkownik ręcznie konfiguruje ustawienia usługi IRM, aby ograniczyć dostęp do użytkownika spoza organizacji. Wynikiem końcowym jest dokument z etykietą **Poufne \ Wszyscy pracownicy i zaszyfrowane** , ale użytkownicy w organizacji nie mogą otworzyć go zgodnie z oczekiwaniami.
 
-- Użytkownik stosuje etykietę **Confidential \ Recipients Only** (Tylko adresaci) do wiadomości e-mail i ta wiadomość e-mail jest skonfigurowana do stosowania ustawienia szyfrowania **Nie przesyłaj dalej**. W Outlook następnie ręcznie wybiera ustawienie usługi IRM dla opcji Tylko szyfrowanie. Końcowy rezultat jest taki, że mimo że wiadomość e-mail pozostaje zaszyfrowana, może zostać przesyłana dalej przez adresatów, mimo że ma etykietę **Poufne \ Tylko adresaci** .
+- Użytkownik stosuje etykietę **Poufne \ Adresaci tylko** do wiadomości e-mail, a ta wiadomość e-mail jest skonfigurowana do stosowania ustawienia szyfrowania **Nie przesyłaj dalej**. W aplikacji Outlook ten użytkownik ręcznie wybiera ustawienie IRM dla opcji Szyfruj tylko. Efektem końcowym jest to, że wiadomość e-mail pozostaje zaszyfrowana, ale może zostać przesłana dalej przez adresatów, pomimo posiadania **etykiety Poufne \ Tylko adresaci** .
     
-    Jedynym wyjątkiem od Outlook w sieci Web opcji **z menu** Szyfruj jest to, że użytkownik nie może wybrać, kiedy aktualnie wybrana etykieta ma zastosowanie szyfrowanie.
+    Jako wyjątek dla Outlook w sieci Web opcje z menu **Szyfruj** nie są dostępne dla użytkownika, aby wybrać, kiedy aktualnie wybrana etykieta stosuje szyfrowanie.
 
-- Użytkownik zastosuje **etykietę Ogólne** do dokumentu i ta etykieta nie jest skonfigurowana do stosowania szyfrowania. Następnie użytkownik ręcznie konfiguruje ustawienia usługi IRM w celu ograniczenia dostępu do dokumentu. Wynikiem końcowy jest dokument z etykietą Ogólne, ale który  również stosuje szyfrowanie, aby niektórzy użytkownicy nie mogą go otworzyć zgodnie z oczekiwaniami.
+- Użytkownik stosuje etykietę **Ogólne** do dokumentu, a ta etykieta nie jest skonfigurowana do stosowania szyfrowania. Następnie ten użytkownik ręcznie konfiguruje ustawienia usługi IRM w celu ograniczenia dostępu do dokumentu. Wynikiem końcowym jest dokument z etykietą **Ogólne** , ale który stosuje również szyfrowanie, aby niektórzy użytkownicy nie mogli go otworzyć zgodnie z oczekiwaniami.
 
-Jeśli dokument lub wiadomość e-mail jest już oznaczona etykietą, użytkownik może wykonać dowolną z tych czynności, jeśli zawartość nie jest jeszcze zaszyfrowana albo [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) ma odpowiednie użycie Eksportowanie lub Pełna kontrola. 
+Jeśli dokument lub wiadomość e-mail jest już oznaczona etykietą, użytkownik może wykonać dowolną z tych akcji, jeśli zawartość nie jest jeszcze zaszyfrowana lub ma [prawo do użycia](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) eksportu lub pełnej kontroli. 
 
-Aby zapewnić bardziej spójne środowisko etykiet z zrozumiałym raportowaniem, podaj odpowiednie etykiety i wskazówki dla użytkowników dotyczące stosowania tylko etykiet w celu ochrony dokumentów i wiadomości e-mail. Przykład:
+Aby zapewnić bardziej spójne środowisko etykietowania z zrozumiałym raportowaniem, podaj odpowiednie etykiety i wskazówki dla użytkowników, aby stosować tylko etykiety w celu ochrony dokumentów i wiadomości e-mail. Przykład:
 
-- W przypadku wyjątków, w których użytkownicy muszą przypisywać własne uprawnienia, podaj etykiety, [które umożliwiają użytkownikom przypisywanie własnych uprawnień](encryption-sensitivity-labels.md#let-users-assign-permissions). 
+- W przypadkach wyjątków, w których użytkownicy muszą przypisywać własne uprawnienia, podaj etykiety, które [umożliwiają użytkownikom przypisywanie własnych uprawnień](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
-- Zamiast ręcznego usuwania szyfrowania przez użytkowników po wybraniu etykiety, która stosuje szyfrowanie, udostępnij etykietę podrzędną, gdy użytkownicy potrzebują etykiety z taką samą klasyfikacją, ale bez szyfrowania. Na przykład:
+- Zamiast ręcznie usuwać szyfrowanie przez użytkowników po wybraniu etykiety, która stosuje szyfrowanie, podaj etykietę alternatywną, gdy użytkownicy potrzebują etykiety o tej samej klasyfikacji, ale bez szyfrowania. Takie jak:
     - **Poufne \ Wszyscy pracownicy**
     - **Poufne \ Każdy (bez szyfrowania)**
 
 - Rozważ wyłączenie ustawień usługi IRM, aby uniemożliwić użytkownikom ich wybieranie:
     - Outlook dla Windows: 
-        - Klucze rejestru (DWORD:00000001) *DisableDNF* *i DisableEO* z HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
-        - Upewnij się, że zasady grupy opcji **Konfiguruj domyślne szyfrowanie przycisku** Szyfruj nie jest skonfigurowane
+        - Klucze rejestru (DWORD:00000001) *WyłączDNF* i *WyłączEO* z HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
+        - Upewnij się, że ustawienie zasady grupy **Konfigurowanie domyślnej opcji szyfrowania dla przycisku Szyfruj** nie jest skonfigurowane
     - Outlook dla komputerów Mac: 
-        - Keys *DisableEncryptOnly* *and DisableDoNotForward* security settings documented in [Set preferences for Outlook dla komputerów Mac](/DeployOffice/mac/preferences-outlook)
+        - Ustawienia zabezpieczeń *DisableEncryptOnly* i *DisableDoNotForward* opisane w temacie [Ustawianie preferencji dla Outlook dla komputerów Mac](/DeployOffice/mac/preferences-outlook)
     - Outlook w sieci Web: 
-        - Parameters *SimplifiedClientAccessDoNotForwardDisabled* and *SimplifiedClientAccessEncryptOnlyDisabled documented* for [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
-    - Outlook dla systemów iOS i Android: Te aplikacje nie obsługują stosowania szyfrowania przez użytkowników bez etykiet, więc nic nie należy wyłączać.
+        - Parametry *SimplifiedClientAccessDoNotForwardDisabled* i *SimplifiedClientAccessEncryptOnlyDisabled* udokumentowane dla [polecenia Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
+    - Outlook dla systemów iOS i Android: te aplikacje nie obsługują użytkowników stosujących szyfrowanie bez etykiet, więc nie można ich wyłączyć.
 
 > [!NOTE]
-> Jeśli użytkownicy ręcznie usuwają szyfrowanie z dokumentu oznaczonego etykietą, który jest przechowywany w programie SharePoint lub OneDrive, i masz włączone etykiety wrażliwości dla plików Office w usługach [SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), szyfrowanie etykiet zostanie automatycznie przywrócone przy następnym dostępie do dokumentu lub jego pobraniu. 
+> Jeśli użytkownicy ręcznie usuną szyfrowanie z dokumentu z etykietą przechowywanego w SharePoint lub OneDrive i [włączono etykiety poufności dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), szyfrowanie etykiet zostanie automatycznie przywrócone po następnym uzyskaniu dostępu do dokumentu lub pobraniu go. 
 
 
-## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Stosowanie etykiet wrażliwości do plików, wiadomości e-mail i załączników
+## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Stosowanie etykiet poufności do plików, wiadomości e-mail i załączników
 
-Użytkownicy mogą zastosować tylko jedną etykietę na raz do każdego dokumentu lub wiadomości e-mail.
+Użytkownicy mogą stosować tylko jedną etykietę naraz dla każdego dokumentu lub wiadomości e-mail.
 
-Jeśli oznaczysz etykietą wiadomość e-mail, która ma załączniki, dziedziczą one etykietę tylko wtedy, gdy etykieta, która ma zastosowanie do wiadomości e-mail, ma szyfrowanie, a załącznik jest dokumentem programu Office nie jest jeszcze zaszyfrowany. Dziedziczona etykieta stosuje szyfrowanie, dlatego załącznik staje się nowo zaszyfrowany.
+Po oznaczeniu wiadomości e-mail zawierającej załączniki załączniki dziedziczą etykietę tylko wtedy, gdy etykieta stosowana do wiadomości e-mail stosuje szyfrowanie, a załącznik jest Office dokument nie jest jeszcze zaszyfrowany. Ponieważ dziedziczona etykieta stosuje szyfrowanie, załącznik staje się nowo szyfrowany.
 
-Załącznik nie dziedziczy etykiet wiadomości e-mail, gdy etykieta zastosowana do wiadomości e-mail nie stosuje szyfrowania lub załącznik jest już zaszyfrowany.
+Załącznik nie dziedziczy etykiet z wiadomości e-mail, gdy etykieta zastosowana do wiadomości e-mail nie stosuje szyfrowania lub załącznik jest już zaszyfrowany.
 
-Przykłady dziedziczenia etykiet, w przypadku których etykieta **Poufne** stosuje szyfrowanie, a etykieta **Ogólne** nie stosuje szyfrowania:
+Przykłady dziedziczenia etykiet, w których etykieta **Poufne** stosuje szyfrowanie, a etykieta **Ogólne** nie stosuje szyfrowania:
 
-- Użytkownik tworzy nową wiadomość e-mail i **stosuje do tej** wiadomości etykietę Poufny. Następnie dodają dokument programu Word, który nie jest oznaczony etykietą ani zaszyfrowany. W wyniku dziedziczenia dokument ma nową etykietę **Poufne** i ma teraz zastosowane szyfrowanie.
+- Użytkownik tworzy nową wiadomość e-mail i stosuje etykietę **Poufne** do tej wiadomości. Następnie dodają dokument programu Word, który nie jest oznaczony etykietą ani szyfrowany. W wyniku dziedziczenia dokument ma nowo etykietę **Poufne** i ma teraz zastosowane szyfrowanie z tej etykiety.
 
-- Użytkownik tworzy nową wiadomość e-mail i **stosuje do tej** wiadomości etykietę Poufny. Następnie dodają dokument programu Word z etykietą **Ogólne** , a ten plik nie jest zaszyfrowany. W wyniku dziedziczenia dokument zostaje oznaczony ponownie jako poufny, a teraz ma  zastosowane szyfrowanie na tej etykiecie.
+- Użytkownik tworzy nową wiadomość e-mail i stosuje etykietę **Poufne** do tej wiadomości. Następnie dodają dokument programu Word z etykietą **Ogólne** , a ten plik nie jest szyfrowany. W wyniku dziedziczenia dokument jest ponownie oznaczany jako **poufny** i ma teraz zastosowane szyfrowanie z tej etykiety.
 
-## <a name="sensitivity-label-compatibility"></a>Zgodność etykiet wrażliwości
+## <a name="sensitivity-label-compatibility"></a>Zgodność etykiet poufności
 
-**Aplikacje z usługą RMS**. Jeśli otworzysz oznaczony i zaszyfrowany dokument lub wiadomość [e-mail](/azure/information-protection/requirements-applications#rms-enlightened-applications) w aplikacji z obsługą usługi RMS, która nie obsługuje etykiet wrażliwości, aplikacja nadal wymusza szyfrowanie i zarządzanie prawami.
+**Aplikacje obsługujące usługę RMS**: jeśli otworzysz dokument lub wiadomość e-mail z etykietami lub zaszyfrowaną wiadomością [e-mail w aplikacji obsługującego usługę RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) , która nie obsługuje etykiet poufności, aplikacja nadal wymusza szyfrowanie i zarządzanie prawami.
 
-Klient **usługi Azure Information Protection**: Możesz wyświetlać i zmieniać etykiety wrażliwości stosowane do dokumentów i wiadomości e-mail za pomocą wbudowanego klienta etykiet usługi Office, używając klienta usługi Azure Information Protection — i na drugi sposób.
+**Za pomocą klienta usługi Azure Information Protection**: możesz wyświetlać i zmieniać etykiety poufności stosowane do dokumentów i wiadomości e-mail za pomocą Office wbudowanego klienta etykietowania przy użyciu klienta usługi Azure Information Protection i na odwrót.
 
-**W innych wersjach programu Office**: Każdy autoryzowany użytkownik może otwierać dokumenty i wiadomości e-mail z etykietami w innych wersjach Office. Etykietę można jednak wyświetlić lub zmienić tylko w obsługiwanych Office wersji lub przy użyciu klienta usługi Azure Information Protection. Obsługiwane aplikacja pakietu Office są wymienione w [poprzedniej sekcji](#support-for-sensitivity-label-capabilities-in-apps).
+**W przypadku innych wersji Office**: każdy autoryzowany użytkownik może otwierać oznaczone dokumenty i wiadomości e-mail w innych wersjach Office. Można jednak wyświetlać lub zmieniać etykiety tylko w obsługiwanych wersjach Office lub przy użyciu klienta usługi Azure Information Protection. Obsługiwane wersje aplikacja pakietu Office są wymienione w [poprzedniej sekcji](#support-for-sensitivity-label-capabilities-in-apps).
 
-## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>Obsługa SharePoint i OneDrive chronionych etykietami wrażliwości
+## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>Obsługa plików SharePoint i OneDrive chronionych etykietami poufności
 
-Aby używać wbudowanego Office etykiet z programem Office w sieci Web do obsługi dokumentów w programie SharePoint lub OneDrive, upewnij się, że włączono etykiety wrażliwości dla plików Office w programach [SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Aby użyć wbudowanego klienta etykietowania Office z Office w sieci Web dla dokumentów w SharePoint lub OneDrive, upewnij się, że [włączono etykiety poufności dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="support-for-external-users-and-labeled-content"></a>Obsługa użytkowników zewnętrznych i zawartości oznaczonej etykietą
+## <a name="support-for-external-users-and-labeled-content"></a>Obsługa użytkowników zewnętrznych i zawartości oznaczonej etykietami
 
-Etykieta oznaczana dokumentem lub wiadomością e-mail jest przechowywana jako metadane, które zawierają dzierżawę i identyfikator GUID etykiety. Po otwarciu dokumentu lub wiadomości e-mail z etykietą przez aplikacja pakietu Office obsługującego etykiety wrażliwości te metadane są odczytywane i tylko wtedy, gdy użytkownik należy do tej samej dzierżawy, etykieta jest wyświetlana w jego aplikacji. Na przykład na wbudowanych etykietach dla aplikacji Word, PowerPoint i Excel etykieta jest wyświetlana na pasku stanu. 
+Etykieta dokumentu lub wiadomości e-mail jest przechowywana jako metadane zawierające dzierżawę i identyfikator GUID etykiety. Gdy dokument lub wiadomość e-mail z etykietą jest otwierana przez aplikacja pakietu Office obsługującego etykiety poufności, te metadane są odczytywane i tylko wtedy, gdy użytkownik należy do tej samej dzierżawy, etykieta jest wyświetlana w aplikacji. Na przykład w przypadku wbudowanego etykietowania dla programów Word, PowerPoint i Excel nazwa etykiety jest wyświetlana na pasku stanu. 
 
-Oznacza to, że jeśli udostępniasz dokumenty innej organizacji, która używa innych nazw etykiet, każda organizacja może zastosować i zobaczyć własną etykietę zastosowaną do dokumentu. Jednak następujące elementy z etykiety zastosowanej są widoczne dla użytkowników spoza organizacji:
+Oznacza to, że jeśli udostępniasz dokumenty innej organizacji używającej różnych nazw etykiet, każda organizacja może zastosować i zobaczyć własną etykietę zastosowaną do dokumentu. Jednak następujące elementy z zastosowanej etykiety są widoczne dla użytkowników spoza organizacji:
 
-- Oznaczenia zawartości. Gdy etykieta powoduje zastosowanie nagłówka, stopki lub znaku wodnego, są one dodawane bezpośrednio do zawartości i pozostają widoczne do momentu, aż ktoś je zmodyfikuje lub usunie.
+- Oznaczenia zawartości. Gdy etykieta stosuje nagłówek, stopkę lub znak wodny, są one dodawane bezpośrednio do zawartości i pozostają widoczne, dopóki ktoś ich nie zmodyfikuje lub nie usunie.
 
-- Nazwa i opis źródłowego szablonu ochrony na podstawie etykiety, która zastosować szyfrowanie. Informacje te są wyświetlane na pasku komunikatów u góry dokumentu w celu podania informacji o tym, kto jest uprawniony do otwierania dokumentu, i o prawach użytkowania tego dokumentu.
+- Nazwa i opis bazowego szablonu ochrony z etykiety, która zastosowała szyfrowanie. Te informacje są wyświetlane na pasku komunikatów w górnej części dokumentu, aby podać informacje o tym, kto jest upoważniony do otwierania dokumentu, oraz o prawach użytkowania tego dokumentu.
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>Udostępnianie zaszyfrowanych dokumentów użytkownikom zewnętrznym
 
-Oprócz ograniczenia dostępu do użytkowników we własnej organizacji możesz rozszerzyć dostęp do dowolnego innego użytkownika, który ma konto w u Azure Active Directory. Jeśli jednak w organizacji są używane zasady dostępu warunkowego, zapoznaj się z dodatkowymi zagadnieniami [w](#conditional-access-policies) następnej sekcji.
+Oprócz ograniczania dostępu do użytkowników we własnej organizacji można rozszerzyć dostęp do każdego innego użytkownika, który ma konto w Azure Active Directory. Jeśli jednak organizacja korzysta z zasad dostępu warunkowego, zapoznaj się z [następną sekcją](#conditional-access-policies) , aby uzyskać dodatkowe informacje.
 
-Wszystkie Office i inne aplikacje [rms mogą](/azure/information-protection/requirements-applications#rms-enlightened-applications) otwierać zaszyfrowane dokumenty po pomyślnym uwierzytelnieniu użytkownika. 
+Wszystkie aplikacje Office i inne [aplikacje obsługują usługę RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) mogą otwierać zaszyfrowane dokumenty po pomyślnym uwierzytelnieniu użytkownika. 
 
-Jeśli użytkownicy zewnętrzni nie mają konta w u Azure Active Directory, mogą uwierzytelnić się przy użyciu kont gości w Twojej dzierżawie. Tych kont gości można również używać do uzyskiwania dostępu do dokumentów udostępnionych w programie SharePoint lub OneDrive po włączeniu etykiet wrażliwości dla plików Office w programie [SharePoint](sensitivity-labels-sharepoint-onedrive-files.md) i OneDrive:
+Jeśli użytkownicy zewnętrzni nie mają konta w Azure Active Directory, mogą uwierzytelniać się przy użyciu kont gościa w dzierżawie. Te konta gościa mogą być również używane do uzyskiwania dostępu do dokumentów udostępnionych w SharePoint lub OneDrive po [włączeniu etykiet poufności dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
 
-- Jedną z możliwości jest utworzenie tych kont gości samodzielnie. Możesz określić dowolny adres e-mail, który będzie już przez tych użytkowników używać. Na przykład adres w usłudze Gmail.
+- Jedną z opcji jest samodzielne utworzenie tych kont gościa. Możesz określić dowolny adres e-mail, którego ci użytkownicy już używają. Na przykład ich adres Gmail.
     
-    Zaletą tej opcji jest możliwość ograniczenia dostępu i praw do określonych użytkowników, określając ich adresy e-mail w ustawieniach szyfrowania. Minusem jest obciążenie administracyjne związane z tworzeniem i koordynacją konta z konfiguracją etykiet.
+    Zaletą tej opcji jest to, że można ograniczyć dostęp i prawa do określonych użytkowników, określając ich adres e-mail w ustawieniach szyfrowania. Minusem jest obciążenie administracyjne związane z tworzeniem konta i koordynacją z konfiguracją etykiety.
 
-- Innym rozwiązaniem jest korzystanie SharePoint i [OneDrive z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration), dzięki czemu konta gości są tworzone automatycznie, gdy użytkownicy korzystają z linków.
+- Inną opcją jest użycie [SharePoint i OneDrive integracji z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration), aby konta gości były tworzone automatycznie, gdy użytkownicy udostępniają łącza.
     
-    Zaletą tej opcji jest minimalne obciążenie administracyjne, ponieważ konta są tworzone automatycznie i prostsza konfiguracja etykiet. W tym scenariuszu należy wybrać opcję szyfrowania [Dodaj](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) dowolnego uwierzytelnionego użytkownika, ponieważ adresy e-mail nie będą wcześniej poznane. Minusem jest to, że to ustawienie nie pozwala na ograniczenie praw dostępu i użytkowania do konkretnych użytkowników.
+    Zaletą tej opcji jest minimalne obciążenie administracyjne, ponieważ konta są tworzone automatycznie i prostsza konfiguracja etykiet. W tym scenariuszu należy wybrać opcję szyfrowania [Dodaj uwierzytelnionego użytkownika](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) , ponieważ adresy e-mail nie będą wcześniej znane. Minusem jest to, że to ustawienie nie pozwala ograniczyć dostępu i praw użytkowania do określonych użytkowników.
 
-Użytkownicy zewnętrzni mogą również używać konta Microsoft do otwierania zaszyfrowanych dokumentów podczas korzystania z usług Windows i Aplikacje Microsoft 365 (dawniej [Office 365 apps](/deployoffice/name-change)) lub autonomicznej wersji programu Office 2019. Konta Microsoft, które są ostatnio obsługiwane dla innych platform, są również obsługiwane do otwierania zaszyfrowanych dokumentów w systemie macOS (Aplikacje Microsoft 365, wersja 16.42+), Android (wersja 16.0.13029+) i iOS (wersja 2.42+). Na przykład użytkownik w Twojej organizacji udostępnia zaszyfrowany dokument użytkownikowi spoza organizacji, a ustawienia szyfrowania określają adres e-mail usługi Gmail dla użytkownika zewnętrznego. Ten użytkownik zewnętrzny może utworzyć własne konto Microsoft, które używa swojego adresu e-mail w usłudze Gmail. Następnie, po zalogowaniu się przy użyciu tego konta, mogą oni otworzyć dokument i edytować go zgodnie z określonymi dla nich ograniczeniami użytkowania. Aby uzyskać przykład instruktażowy tego scenariusza, zobacz [Otwieranie i edytowanie chronionego dokumentu](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+Użytkownicy zewnętrzni mogą również używać konta Microsoft do otwierania zaszyfrowanych dokumentów, gdy używają Windows i Aplikacje Microsoft 365 ([dawniej Office 365 aplikacji](/deployoffice/name-change)) lub autonomicznej wersji Office 2019. Niedawno obsługiwane w przypadku innych platform konta Microsoft są również obsługiwane w przypadku otwierania zaszyfrowanych dokumentów w systemach macOS (Aplikacje Microsoft 365, wersja 16.42+), Android (wersja 16.0.13029+) i iOS (wersja 2.42+). Na przykład użytkownik w organizacji udostępnia zaszyfrowany dokument użytkownikowi spoza organizacji, a ustawienia szyfrowania określają adres e-mail Gmail dla użytkownika zewnętrznego. Ten użytkownik zewnętrzny może utworzyć własne konto Microsoft, które używa swojego adresu e-mail Gmail. Następnie po zalogowaniu się przy użyciu tego konta mogą otworzyć dokument i edytować go zgodnie z określonymi dla nich ograniczeniami użycia. Aby zapoznać się z przykładem tego scenariusza, zobacz [Otwieranie i edytowanie chronionego dokumentu](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
-> Adres e-mail konta Microsoft musi być taki, jak określony w celu ograniczenia dostępu do ustawień szyfrowania.
+> Adres e-mail konta Microsoft musi być zgodny z adresem e-mail określonym w celu ograniczenia dostępu do ustawień szyfrowania.
 
-Gdy użytkownik z kontem Microsoft otwiera zaszyfrowany dokument w ten sposób, automatycznie tworzy konto gościa dla dzierżawy, jeśli konto gościa o tej samej nazwie jeszcze nie istnieje. Jeśli konto gościa istnieje, można go następnie używać do otwierania dokumentów w usługach SharePoint i OneDrive przy użyciu programu Office w sieci Web oprócz otwierania zaszyfrowanych dokumentów z obsługiwanych aplikacji klasycznych i Office przenośnych.
+Gdy użytkownik z kontem Microsoft otworzy w ten sposób zaszyfrowany dokument, automatycznie utworzy konto gościa dla dzierżawy, jeśli konto gościa o tej samej nazwie jeszcze nie istnieje. Gdy konto gościa istnieje, można go następnie użyć do otwierania dokumentów w SharePoint i OneDrive przy użyciu Office w sieci Web, a także do otwierania zaszyfrowanych dokumentów z obsługiwanych aplikacji Office stacjonarnych i mobilnych.
 
-W tym scenariuszu automatyczne konto gościa nie jest jednak tworzone natychmiast ze względu na opóźnienie replikacji. Jeśli w ustawieniach szyfrowania etykiet określisz osobiste adresy e-mail, zalecamy utworzenie odpowiednich kont gości w aplikacji Azure Active Directory. Następnie poukaj tym użytkownikom, że muszą oni użyć tego konta, aby otworzyć zaszyfrowany dokument z Twojej organizacji.
+Jednak automatyczne konto gościa nie jest tworzone natychmiast w tym scenariuszu z powodu opóźnienia replikacji. W przypadku określenia osobistych adresów e-mail w ramach ustawień szyfrowania etykiet zalecamy utworzenie odpowiednich kont gościa w Azure Active Directory. Następnie poinformuj tych użytkowników, że muszą oni użyć tego konta, aby otworzyć zaszyfrowany dokument z Organizacji.
 
 > [!TIP]
-> Ponieważ nie masz pewności, czy użytkownicy zewnętrzni będą korzystać z obsługiwanej aplikacji klienckiej Office, linki udostępniania z usług SharePoint i OneDrive są udostępnianie po utworzeniu kont gościa (dla określonych użytkowników) lub podczas korzystania z integracji usług [SharePoint i OneDrive z usługami Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)  (dla każdego uwierzytelnionego użytkownika) jest bardziej niezawodną metodą zapewnienia bezpiecznej współpracy z użytkownikami zewnętrznymi.
+> Ponieważ nie możesz mieć pewności, że użytkownicy zewnętrzni będą używać obsługiwanej aplikacji klienckiej Office, udostępniać linki z SharePoint i OneDrive po utworzeniu kont gościa (dla określonych użytkowników) lub podczas korzystania [z integracji SharePoint i OneDrive z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)  (dla każdego uwierzytelnionego użytkownika) jest bardziej niezawodną metodą obsługi bezpiecznej współpracy z użytkownikami zewnętrznymi.
 
 ### <a name="conditional-access-policies"></a>Zasady dostępu warunkowego
 
-Jeśli Twoja organizacja wdrożyła Azure Active Directory [dostęp warunkowy](/azure/active-directory/conditional-access/overview), sprawdź ich konfigurację. Jeśli zasady **obejmują Microsoft Azure Information Protection i** rozciągają się na użytkowników zewnętrznych, ci użytkownicy zewnętrzni muszą mieć konto gościa w Twojej dzierżawie, nawet jeśli mają konto usługi Azure AD w swojej dzierżawie.
+Jeśli Twoja organizacja zaimplementowała [zasady dostępu warunkowego Azure Active Directory](/azure/active-directory/conditional-access/overview), sprawdź konfigurację tych zasad. Jeśli zasady obejmują **Microsoft Azure Information Protection**, a zasady są rozszerzane na użytkowników zewnętrznych, ci użytkownicy zewnętrzni muszą mieć konto gościa w dzierżawie, nawet jeśli mają konto usługi Azure AD we własnej dzierżawie.
 
-Bez tego konta gościa nie będzie można otworzyć zaszyfrowanego dokumentu i zostanie wyświetlony komunikat o błędzie. Tekst wiadomości może informować o tym, że jego konto musi zostać dodane jako użytkownik zewnętrzny w dzierżawie, z nieprawidłowymi instrukcjami dla tego scenariusza: Wylogowanie i zalogowanie się ponownie przy użyciu innego **konta Azure Active Directory użytkownika**.
+Bez tego konta gościa nie mogą otworzyć zaszyfrowanego dokumentu i zobaczyć komunikatu o błędzie. Tekst wiadomości może poinformować ich, że ich konto musi zostać dodane jako użytkownik zewnętrzny w dzierżawie, z nieprawidłową instrukcją dla tego scenariusza, aby **wylogować się i zalogować się ponownie przy użyciu innego konta użytkownika Azure Active Directory**.
 
-Jeśli nie możesz tworzyć i konfigurować kont gości w dzierżawie dla użytkowników zewnętrznych, którzy muszą otwierać dokumenty zaszyfrowane na etykietach, musisz usunąć usługę Azure Information Protection z zasad dostępu warunkowego lub wykluczyć użytkowników zewnętrznych z tych zasad.
+Jeśli nie możesz tworzyć i konfigurować kont gości w dzierżawie dla użytkowników zewnętrznych, którzy muszą otwierać dokumenty zaszyfrowane za pomocą etykiet, musisz usunąć usługę Azure Information Protection z zasad dostępu warunkowego lub wykluczyć użytkowników zewnętrznych z zasad.
 
-Aby uzyskać więcej informacji na temat dostępu warunkowego i usługi Azure Information Protection, usługi szyfrowania używanej na etykietach wrażliwości, zobacz często zadawane pytanie: Usługa Azure Information Protection jest wymieniona jako dostępna aplikacja w chmurze do obsługi dostępu warunkowego — jak [to działa?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+Aby uzyskać więcej informacji na temat dostępu warunkowego i usługi Azure Information Protection, usługi szyfrowania używanej przez etykiety poufności, zobacz często zadawane pytanie. [Widzę, że usługa Azure Information Protection jest wymieniona jako dostępna aplikacja w chmurze na potrzeby dostępu warunkowego — jak to działa?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
-## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Gdy Office zastosują oznaczanie i szyfrowanie zawartości
+## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Gdy aplikacje Office stosują znakowanie i szyfrowanie zawartości
 
-Office aplikacje stosują oznaczenia zawartości i szyfrowania przy użyciu etykiet wrażliwości w różny sposób, w zależności od aplikacji, z których korzystasz.
+Office aplikacje inaczej stosują znakowanie zawartości i szyfrowanie przy użyciu etykiety poufności, w zależności od używanej aplikacji.
 
 | Aplikacja | Oznaczanie zawartości | Szyfrowanie |
 | --- | --- | --- |
-| Word, Excel, PowerPoint na wszystkich platformach | Natychmiast | Natychmiast |
-| Outlook dla komputerów PC i Mac | Po Exchange Online wysyła wiadomość e-mail | Natychmiast |
-| Outlook w sieci Web, iOS i Android | Po Exchange Online wysyła wiadomość e-mail | Po Exchange Online wysyła wiadomość e-mail |
+| Program Word, Excel, PowerPoint na wszystkich platformach | Natychmiast | Natychmiast |
+| Outlook dla komputerów PC i Mac | Po wysłaniu wiadomości e-mail Exchange Online | Natychmiast |
+| Outlook w sieci Web, iOS i Android | Po wysłaniu wiadomości e-mail Exchange Online | Po wysłaniu wiadomości e-mail Exchange Online |
 |
 
-Rozwiązania, które stosują etykiety wrażliwości do plików Office, można to zrobić, stosując metadane etykiet do pliku. W tym scenariuszu zawartość oznaczana z konfiguracji etykiety nie jest wstawiana do pliku, ale zastosowano szyfrowanie. 
+Rozwiązania, które stosują etykiety poufności do plików spoza aplikacji Office, robią to, stosując metadane etykietowania do pliku. W tym scenariuszu oznaczanie zawartości z konfiguracji etykiety nie jest wstawiane do pliku, ale jest stosowane szyfrowanie. 
 
-Po otwarciu tych plików w aplikacji klasycznej pakietu Office oznaczenia zawartości są automatycznie stosowane przez klienta azure Information Protection etykiet ujednoliconej etykiet podczas pierwszego zapisania pliku. Oznaczenia zawartości nie są automatycznie stosowane w przypadku korzystania z wbudowanych etykiet dla komputerów stacjonarnych, urządzeń przenośnych lub aplikacji sieci Web.
+Gdy te pliki są otwierane w aplikacji klasycznej Office, oznaczenia zawartości są automatycznie stosowane przez klienta ujednoliconego etykietowania usługi Azure Information Protection podczas pierwszego zapisywania pliku. Oznaczenia zawartości nie są automatycznie stosowane w przypadku używania wbudowanych etykiet dla aplikacji klasycznych, mobilnych lub internetowych.
 
-Scenariusze, które obejmują stosowanie etykiet wrażliwości poza Office aplikacji:
+Scenariusze obejmujące stosowanie etykiety poufności poza aplikacjami Office obejmują:
 
-- Skaner, Eksplorator plików i program PowerShell z usługi Azure Information Protection klienta ujednoliconego oznaczania 
+- Skaner, Eksplorator plików i program PowerShell z poziomu klienta ujednoliconego etykietowania usługi Azure Information Protection 
 
-- Zasady automatycznego oznaczania etykiet dla SharePoint i OneDrive
+- Zasady automatycznego etykietowania dla SharePoint i OneDrive
 
-- Wyeksportowano oznaczone i zaszyfrowane dane z aplikacji Power BI
+- Wyeksportowane dane oznaczone etykietami i zaszyfrowane z Power BI
 
 - Microsoft Defender for Cloud Apps
 
-W takich scenariuszach za pomocą aplikacji pakietu Office użytkownik z wbudowanymi etykietami może zastosować oznaczenia zawartości etykiet, tymczasowo usuwając lub zamieniając bieżącą etykietę, a następnie ponownie stosując oryginalną etykietę.
+W tych scenariuszach, korzystając z aplikacji Office, użytkownik z wbudowanym etykietowaniem może zastosować oznaczenia zawartości etykiety, tymczasowo usuwając lub zastępując bieżącą etykietę, a następnie ponownie stosując oryginalną etykietę.
 
 ### <a name="dynamic-markings-with-variables"></a>Oznaczenia dynamiczne ze zmiennymi
 
 > [!IMPORTANT]
-> Jeśli Twoje Office nie obsługują tej funkcji, zamiast rozwiązując zmienne, zastosują one oznaczenia jako oryginalny tekst określony w konfiguracji etykiet.
+> Jeśli twoje aplikacje Office nie obsługują tej możliwości, stosują oznaczenia jako oryginalny tekst określony w konfiguracji etykiety, zamiast rozwiązywać zmienne.
 > 
-> Klient azure Information Protection etykiet obsługuje oznaczenia dynamiczne. Aby uzyskać informacje na temat Office wbudowanych etykiet, zobacz tabele w sekcji funkcje na [](#support-for-sensitivity-label-capabilities-in-apps) tej stronie, aby uzyskać informacje o minimalnych obsługiwanych wersjach.
+> Klient ujednoliconego etykietowania platformy Azure Information Protection obsługuje oznaczenia dynamiczne. Aby uzyskać informacje na temat etykietowania wbudowanego w Office, zobacz [tabele](#support-for-sensitivity-label-capabilities-in-apps) w sekcji możliwości na tej stronie, aby zapoznać się z obsługiwanymi minimalnymi wersjami.
 
-Podczas konfigurowania etykiety wrażliwości na oznaczenia zawartości można używać następujących zmiennych w ciągu tekstowym nagłówka, stopki lub znaku wodnego:
+Podczas konfigurowania etykiety poufności dla oznaczeń zawartości można użyć następujących zmiennych w ciągu tekstowym dla nagłówka, stopki lub znaku wodnego:
 
 | Zmienna | Opis | Przykład zastosowania etykiety |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Nazwa wyświetlana etykiety | **Ogólne**|
-| `${Item.Name}` | Nazwa pliku lub temat wiadomości e-mail zawartości oznaczonej etykietą | **Sales.docx** |
-| `${Item.Location}` | Ścieżka i nazwa pliku oznaczania dokumentu lub temat wiadomości e-mail z etykietą | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Nazwa wyświetlana użytkownika stosującego etykietę | **Szymon Wołosz** |
-| `${User.PrincipalName}` | Główna nazwa użytkownika (UPN) w usłudze Azure AD użytkownika stosująca etykietę | **rsimone\@ contoso.com** |
-| `${Event.DateTime}` | Data i godzina na etykiecie zawartości w lokalnej strefie czasowej użytkownika mającej zastosowanie etykiety w aplikacjach pakietu Microsoft 365 lub czasu uniwersalnego UTC (Coordinated Universal Time) dla usługi Office Online i zasad automatycznego oznaczania etykiet | **2020-08-10 13:30** |
+| `${Item.Label}` | Nazwa wyświetlana etykiety zastosowanej etykiety | **Ogólne**|
+| `${Item.Name}` | Nazwa pliku lub temat wiadomości e-mail o treści oznaczonej etykietą | **Sales.docx** |
+| `${Item.Location}` | Ścieżka i nazwa pliku dokumentu oznaczonego etykietą lub temat wiadomości e-mail dla wiadomości e-mail oznaczonej etykietą | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Nazwa wyświetlana użytkownika stosującego etykietę | **Richard Simone** |
+| `${User.PrincipalName}` | Główna nazwa użytkownika usługi Azure AD (UPN) użytkownika stosującego etykietę | **rsimone\@ contoso.com** |
+| `${Event.DateTime}` | Data i godzina etykietowania zawartości w lokalnej strefie czasowej użytkownika stosującego etykietę w aplikacjach Microsoft 365 lub UTC (uniwersalny czas koordynowany) dla zasad Office Online i automatycznego etykietowania | **10.08.2020 13:30** |
 
 > [!NOTE]
-> W składni tych zmiennych jest rozróżniana wielkość liter.
+> Składnia tych zmiennych uwzględnia wielkość liter.
 
-#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Ustawianie różnych oznaczeń wizualnych dla Excel, PowerPoint i innych Outlook
+#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Ustawianie różnych oznaczeń wizualnych dla programów Word, Excel, PowerPoint i Outlook
 
-Jako dodatkową zmienną można konfigurować oznaczenia wizualne dla każdego typu aplikacji programu Office przy użyciu instrukcji zmiennej "If.App" w ciągu tekstowym oraz identyfikować typ aplikacji przy użyciu wartości **Word**, **Excel**, **PowerPoint** lub **Outlook**. Te wartości można także skracać, co jest konieczne, jeśli w jednej instrukcji If.App określić więcej niż jedną wartość.
+Jako dodatkową zmienną można skonfigurować oznaczenia wizualne na typ aplikacji Office przy użyciu instrukcji zmiennej "If.App" w ciągu tekstowym i zidentyfikować typ aplikacji przy użyciu wartości **Word**, **Excel**, **PowerPoint** lub **Outlook**. Możesz również skrócić te wartości, co jest konieczne, jeśli chcesz określić więcej niż jedną w tej samej instrukcji If.App.
 
 Należy stosować następującą składnię:
 
@@ -318,101 +329,101 @@ Należy stosować następującą składnię:
 ${If.App.<application type>}<your visual markings text> ${If.End}
 ```
 
-Podobnie jak w przypadku innych dynamicznych oznaczeń wizualnych w składni jest uwzględniana wielkość liter, która obejmuje skróty dla każdego typu aplikacji (WEPO).
+Podobnie jak w przypadku innych dynamicznych oznaczeń wizualnych, składnia uwzględnia wielkość liter, która zawiera skróty dla każdego typu aplikacji (WEPO).
 
 Przykłady:
 
-- **Ustawianie tekstu nagłówka tylko w dokumentach programu Word:**
+- **Ustaw tekst nagłówka tylko dla dokumentów programu Word:**
 
     `${If.App.Word}This Word document is sensitive ${If.End}`
 
-    W przypadku tylko nagłówków dokumentu programu Word etykieta powoduje zastosowanie tekstu nagłówka "Ten dokument programu Word jest poufny". Tekst nagłówka nie jest stosowany do Office aplikacji.
+    Tylko w nagłówkach dokumentów programu Word etykieta stosuje tekst nagłówka "Ten dokument programu Word jest poufny". Do innych aplikacji Office nie jest stosowany żaden tekst nagłówka.
 
-- **Ustaw tekst stopki dla programu Word, Excel, Outlook i inny tekst stopki dla PowerPoint:**
+- **Ustaw tekst stopki dla programu Word, Excel i Outlook oraz inny tekst stopki dla PowerPoint:**
 
     `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
 
-    W programie Word, Excel i Outlook etykieta powoduje zastosowanie tekstu stopki "Ta zawartość jest poufna". Na PowerPoint etykieta powoduje zastosowanie tekstu stopki "Ta prezentacja jest poufna".
+    W programach Word, Excel i Outlook etykieta stosuje tekst stopki "Ta zawartość jest poufna". W PowerPoint etykieta stosuje tekst stopki "Ta prezentacja jest poufna".
 
-- **Ustaw określony tekst znaku wodnego dla programu Word i PowerPoint, a następnie tekst znaku wodnego dla programu Word, Excel i PowerPoint:**
+- **Ustaw określony tekst znaku wodnego dla programu Word i PowerPoint, a następnie tekst znaku wodnego dla programów Word, Excel i PowerPoint:**
 
     `${If.App.WP}This content is ${If.End}Confidential`
 
-    W programie Word PowerPoint etykieta powoduje zastosowanie tekstu znaku wodnego "Ta zawartość jest poufna". W Excel etykieta powoduje zastosowanie tekstu znaku wodnego "Poufne". Na Outlook etykieta nie ma zastosowania do tekstu znaku wodnego, ponieważ znaki wodne jako znaki wizualne nie są obsługiwane w Outlook.
+    W programach Word i PowerPoint etykieta stosuje tekst znaku wodnego "Ta zawartość jest poufna". W Excel etykieta stosuje tekst znaku wodnego "Poufne". W Outlook etykieta nie stosuje żadnego tekstu znaku wodnego, ponieważ znaki wodne jako oznaczenia wizualne nie są obsługiwane dla Outlook.
 
-## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Wymaganie od użytkowników stosowania etykiety do wiadomości e-mail i dokumentów
+## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Wymaganie od użytkowników zastosowania etykiety do poczty e-mail i dokumentów
 
 > [!IMPORTANT]
 > 
-> Klient [ujednoliconej Information Protection Azure Information Protection](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) tę konfigurację, która jest również znana jako obowiązkowa etykieta. Aby uzyskać informacje na temat Office wbudowanych aplikacji, zobacz tabele w sekcji funkcje na tej [](#support-for-sensitivity-label-capabilities-in-apps) stronie, aby uzyskać informacje o minimalnych wersjach.
+> [Klient ujednoliconego etykietowania platformy Azure Information Protection](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) obsługuje tę konfigurację, która jest również znana jako obowiązkowe etykietowanie. Aby uzyskać etykiety wbudowane w Office aplikacje, zobacz [tabele](#support-for-sensitivity-label-capabilities-in-apps) w sekcji możliwości na tej stronie, aby zapoznać się z minimalnymi wersjami.
 >
-> Aby użyć obowiązkowych etykiet w dokumentach, ale nie w wiadomościach e-mail, zapoznaj się z instrukcjami w następnej sekcji, w których wyjaśniono, jak skonfigurować Outlook e-mail.
+> Aby użyć obowiązkowego etykietowania dokumentów, ale nie wiadomości e-mail, zapoznaj się z instrukcjami w następnej sekcji, w których wyjaśniono, jak skonfigurować opcje specyficzne dla Outlook.
 > 
-> Aby użyć obowiązkowych etykiet dla Power BI, zobacz Zasady dotyczące obowiązkowych etykiet [dla Power BI](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy).
+> Aby użyć obowiązkowego etykietowania dla Power BI, zobacz [Obowiązkowe zasady etykiet dla Power BI](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy).
 
-Gdy ustawienie zasad Wymagaj od użytkowników stosowania etykiety do wiadomości e-mail i dokumentów jest zaznaczone, użytkownicy przypisani do zasad muszą wybrać i zastosować etykietę wrażliwości w następujących scenariuszach:
+Po wybraniu ustawienia zasad **Wymagaj od użytkowników zastosowania etykiety do poczty e-mail i dokumentów** użytkownicy, do których przypisano zasady, muszą wybrać i zastosować etykietę poufności w następujących scenariuszach:
 
-- W przypadku klienta usługi Azure Information Protection etykiet ujednoliconej:
-    - W przypadku dokumentów (Word, Excel, PowerPoint): Po zapisaniu dokumentu bez etykiety lub zamknięciu go przez użytkowników.
-    - W przypadku wiadomości e-Outlook): kiedy użytkownicy wysyłają wiadomość bez etykiety.
+- W przypadku klienta ujednoliconego etykietowania usługi Azure Information Protection:
+    - W przypadku dokumentów (Word, Excel, PowerPoint): po zapisaniu dokumentu bez etykiet lub zamknięciu dokumentu przez użytkowników.
+    - W przypadku wiadomości e-mail (Outlook): w czasie, gdy użytkownicy wysyłają wiadomość bez etykiet.
 
-- Aby uzyskać etykiety wbudowane w Office aplikacji:
-    - W przypadku dokumentów (Word, Excel, PowerPoint): Po otwarciu lub zapisaniu dokumentu bez etykiety.
-    - W przypadku wiadomości e Outlook): kiedy użytkownicy wysyłają wiadomość e-mail bez etykiety.
+- W przypadku etykietowania wbudowanego w aplikacje Office:
+    - W przypadku dokumentów (Word, Excel, PowerPoint): po otwarciu lub zapisaniu nieoznakowanego dokumentu.
+    - W przypadku wiadomości e-mail (Outlook): w momencie wysyłania przez użytkowników wiadomości e-mail bez etykiet.
 
-Dodatkowe informacje dotyczące wbudowanych etykiet:
+Dodatkowe informacje dotyczące wbudowanego etykietowania:
 
-- Gdy użytkownik jest monitowany o dodanie etykiety wrażliwości, ponieważ otwiera dokument bez etykiety, może dodać etykietę lub otworzyć dokument w trybie tylko do odczytu.
+- Gdy użytkownicy zostaną poproszeni o dodanie etykiety poufności, ponieważ otwierają dokument bez etykiet, mogą dodać etykietę lub otworzyć dokument w trybie tylko do odczytu.
 
-- Gdy dzieje się obowiązkowe etykiety, użytkownicy nie mogą usuwać etykiet wrażliwości z dokumentów, ale mogą zmienić istniejącą etykietę.
+- Gdy obowiązuje obowiązkowe etykietowanie, użytkownicy nie mogą usuwać etykiet poufności z dokumentów, ale mogą zmienić istniejącą etykietę.
 
-Aby uzyskać wskazówki dotyczące tego, kiedy używać tego ustawienia, zobacz informacje o [ustawieniach zasad](sensitivity-labels.md#what-label-policies-can-do).
+Aby uzyskać wskazówki dotyczące korzystania z tego ustawienia, zobacz informacje o [ustawieniach zasad](sensitivity-labels.md#what-label-policies-can-do).
 
 > [!NOTE]
-> Jeśli oprócz obowiązkowych etykiet używasz domyślnego ustawienia zasad dotyczących etykiet dla dokumentów i wiadomości e-mail: 
+> Jeśli oprócz obowiązkowego etykietowania używasz domyślnego ustawienia zasad etykiet dla dokumentów i wiadomości e-mail: 
 >
-> Etykieta domyślna zawsze ma pierwszeństwo przed etykietami obowiązkowymi. Jednak w przypadku dokumentów ujednolicony klient etykiet usługi Azure Information Protection stosuje etykietę domyślną do wszystkich dokumentów bez etykiet, a wbudowane etykiety — do nowych dokumentów, a nie do istniejących dokumentów bez etykiety. Ta różnica w zachowaniu oznacza, że w przypadku używania obowiązkowych etykiet z domyślnym ustawieniem etykiety użytkownicy prawdopodobnie będą monitowali o stosowanie etykiet wrażliwości częściej, gdy używają wbudowanych etykiet niż w przypadku korzystania z ujednoliconego klienta etykiet usługi Azure Information Protection.
+> Etykieta domyślna zawsze ma priorytet niż obowiązkowe etykietowanie. Jednak w przypadku dokumentów klient ujednoliconego etykietowania usługi Azure Information Protection stosuje etykietę domyślną do wszystkich nieoznakowanych dokumentów, podczas gdy wbudowane etykietowanie stosuje etykietę domyślną do nowych dokumentów, a nie do istniejących dokumentów, które nie są oznaczone etykietami. Ta różnica w zachowaniu oznacza, że w przypadku korzystania z obowiązkowego etykietowania z domyślnym ustawieniem etykiety użytkownicy prawdopodobnie będą monitować o stosowanie etykiety poufności częściej, gdy używają wbudowanego etykietowania niż w przypadku korzystania z klienta ujednoliconego etykietowania usługi Azure Information Protection.
 > 
-> Teraz wprowadzamy: Office, które korzystają z wbudowanych etykiet i obsługują etykietę domyślną dla istniejących dokumentów. Aby uzyskać szczegółowe informacje, zobacz [tabelę możliwości](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) dla programu Word, Excel i PowerPoint.
+> Teraz wprowadzanie: Office aplikacje korzystające z wbudowanego etykietowania i obsługujące etykietę domyślną dla istniejących dokumentów. Aby uzyskać szczegółowe informacje, zobacz [tabelę możliwości](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) programu Word, Excel i PowerPoint.
 
-## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Outlook opcji etykiet domyślnych i obowiązkowych
+## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>opcje specyficzne dla Outlook etykiety domyślnej i etykietowania obowiązkowego
 
-W przypadku wbudowanych etykiet określ minimalne wersje programu Outlook, które obsługują te funkcje, za pomocą tabeli możliwości dla programu [Outlook](#sensitivity-label-capabilities-in-outlook) na tej stronie oraz wiersza Inne ustawienia etykiet domyślnych i obowiązkowych **etykiet.** Wszystkie wersje klienta usługi Azure Information Protection z ujednoliconą etykietą obsługują Outlook opcji.
+W przypadku wbudowanego etykietowania zidentyfikuj minimalne wersje Outlook, które obsługują te funkcje, korzystając z [tabeli możliwości dla Outlook](#sensitivity-label-capabilities-in-outlook) na tej stronie oraz **wiersza Różne ustawienia etykiety domyślnej i obowiązkowego etykietowania**. Wszystkie wersje klienta ujednoliconego etykietowania usługi Azure Information Protection obsługują te opcje specyficzne dla Outlook.
 
-Jeśli aplikacja Outlook obsługuje domyślne ustawienie etykiety inne niż domyślne ustawienie etykiet dla dokumentów:
+Gdy aplikacja Outlook obsługuje domyślne ustawienie etykiety, które różni się od domyślnego ustawienia etykiety dla dokumentów:
 
-- W konfiguracji zasad etykiet z Centrum zgodności platformy Microsoft 365 na stronie Zastosuj etykietę domyślną do wiadomości  e-mail: Możesz określić swój wybór etykiety wrażliwości, która będzie stosowana do wszystkich wiadomości e-mail bez etykiety, która nie jest etykietą domyślną. To ustawienie jest **niezależne od** domyślnego ustawienia Zastosuj tę etykietę do dokumentów na poprzedniej stronie Ustawienia **zasad dla dokumentów** w konfiguracji.
+- W konfiguracji zasad etykiet z portalu zgodności usługi Microsoft Purview na stronie **Zastosuj etykietę domyślną do wiadomości e-mail** : możesz określić wybór etykiety poufności, która będzie stosowana do wszystkich nieoznakowanych wiadomości e-mail lub bez etykiety domyślnej. To ustawienie jest niezależne od ustawienia **Zastosuj tę etykietę domyślnie do dokumentów** na poprzedniej stronie **Ustawienia zasad dla dokumentów** konfiguracji.
 
-Jeśli aplikacja Outlook nie obsługuje domyślnego ustawienia etykiety innego niż domyślne ustawienie etykiety dla dokumentów: program Outlook zawsze będzie używać wartości domyślną Zastosuj tę etykietę do dokumentów na stronie Ustawienia zasad dla dokumentów  w konfiguracji zasad etykiet.
+Gdy aplikacja Outlook nie obsługuje domyślnego ustawienia etykiety, które różni się od domyślnego ustawienia etykiety dla dokumentów: Outlook zawsze będzie używać wartości określonej **dla opcji Zastosuj tę etykietę domyślnie do dokumentów** na stronie **Ustawienia zasad dla dokumentów** konfiguracji zasad etykiety.
 
-Gdy aplikacja Outlook obsługuje wyłączanie obowiązkowych etykiet:
+Gdy aplikacja Outlook obsługuje wyłączanie obowiązkowego etykietowania:
 
-- W konfiguracji zasad etykiet z Centrum zgodności platformy Microsoft 365 na stronie **Ustawienia** zasad: Wybierz pozycję Wymagaj od użytkowników stosowania etykiety do wiadomości e-mail **lub dokumentów**. Następnie wybierz **pozycję** **DalejNastępny** >  i wyczyść pole wyboru Wymagaj od użytkowników **stosowania etykiety do swoich wiadomości e-mail**. Jeśli chcesz, aby etykiety obowiązkowych dotyczyły wiadomości e-mail, a także dokumentów, zachowaj zaznaczone pole wyboru.
+- W konfiguracji zasad etykiet w portalu zgodności usługi Microsoft Purview na stronie **Ustawienia zasad** wybierz pozycję **Wymagaj od użytkowników zastosowania etykiety do poczty e-mail lub dokumentów**. Następnie wybierz pozycję **DalejDalej**  >  i wyczyść pole wyboru **Wymagaj, aby użytkownicy stosowali etykietę do swoich wiadomości e-mail**. Zaznacz pole wyboru, jeśli chcesz, aby obowiązkowe etykietowanie było stosowane do wiadomości e-mail i dokumentów.
 
-Gdy aplikacja Outlook nie obsługuje wyłączania obowiązkowych etykiet: Jeśli wybierzesz opcję Wymagaj od użytkowników stosowania  etykiety do swoich wiadomości e-mail lub dokumentów jako ustawienia zasad, program Outlook zawsze będzie monitował użytkowników o wybranie etykiety dla wiadomości e-mail bez etykiety.
+Gdy aplikacja Outlook nie obsługuje wyłączania obowiązkowego etykietowania: jeśli wybierzesz opcję **Wymagaj od użytkowników zastosowania etykiety do poczty e-mail lub dokumentów** jako ustawienia zasad, Outlook zawsze będzie monitować użytkowników o wybranie etykiety dla wiadomości e-mail bez etykiet.
 
 > [!NOTE]
-> Jeśli w programie PowerShell skonfigurowano ustawienia zaawansowane programów **OutlookDefaultLabel** i **DisableMandatoryInOutlook** przy użyciu poleceń cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) lub [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) :
+> Jeśli skonfigurowano ustawienia zaawansowane programu **PowerShell OutlookDefaultLabel** i **DisableMandatoryInOutlook** przy użyciu poleceń cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) lub [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) :
 > 
-> Wartości wybrane dla tych ustawień programu PowerShell są odzwierciedlane w konfiguracji zasad etykiet w Centrum zgodności i automatycznie działają dla Outlook, które obsługują te ustawienia. Pozostałe ustawienia zaawansowane programu PowerShell pozostaną obsługiwane tylko dla Information Protection Azure Information Protection ujednoliconego klienta etykiet.
+> Wybrane wartości tych ustawień programu PowerShell są odzwierciedlane w konfiguracji zasad etykiet w portalu zgodności usługi Microsoft Purview i automatycznie działają w przypadku aplikacji Outlook obsługujące te ustawienia. Inne zaawansowane ustawienia programu PowerShell pozostają obsługiwane tylko dla klienta usługi Azure Information Protection ujednoliconego etykietowania.
 
-## <a name="auditing-labeling-activities"></a>Działania związane z etykietami inspekcji
+## <a name="auditing-labeling-activities"></a>Inspekcja działań etykietowania
 
-Aby uzyskać informacje na temat zdarzeń inspekcji generowanych przez działania etykiet wrażliwości, zobacz sekcję Działania [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) etykiet wrażliwości w sekcji Przeszukiwanie dziennika inspekcji [w centrum zgodności](search-the-audit-log-in-security-and-compliance.md).
+Aby uzyskać informacje o zdarzeniach inspekcji generowanych przez działania etykiet poufności, zobacz sekcję [Działania etykiet poufności](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) w sekcji [Wyszukaj dziennik inspekcji w portalu zgodności usługi Microsoft Purview](search-the-audit-log-in-security-and-compliance.md).
 
-Te informacje inspekcji są wizualnie reprezentowane w Eksploratorze [](data-classification-content-explorer.md) zawartości i w [](data-classification-activity-explorer.md) Eksploratorze aktywności, aby ułatwić zrozumienie sposobu, w jaki są używane etykiety wrażliwości i gdzie znajduje się zawartość oznaczona etykietą. 
+Te informacje inspekcji są wizualnie reprezentowane w [eksploratorze zawartości](data-classification-content-explorer.md) i [eksploratorze działań](data-classification-activity-explorer.md) , aby ułatwić zrozumienie sposobu użycia etykiet poufności i lokalizacji tej zawartości oznaczonej etykietą. 
 
-Podczas eksportowania i konfigurowania rekordów dziennika inspekcji można również tworzyć raporty niestandardowe, korzystając z oprogramowania do zarządzania informacjami o zabezpieczeniach i [zarządzania zdarzeniami](export-view-audit-log-records.md). Aby uzyskać bardziej szczegółowe rozwiązania do raportowania, zobacz Dokumentacja [Office 365 API działań zarządzania](/office/office-365-management-api/office-365-management-activity-api-reference).
+Możesz również tworzyć raporty niestandardowe z wybranym oprogramowaniem do zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM) podczas [eksportowania i konfigurowania rekordów dziennika inspekcji](export-view-audit-log-records.md). Aby uzyskać więcej rozwiązań do raportowania na większą skalę, zobacz [dokumentację interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 > [!TIP]
 > Aby ułatwić tworzenie raportów niestandardowych, zobacz następujące wpisy w blogu:
-> - [Microsoft 365 działań dziennika inspekcji zgodności za pośrednictwem interfejsu API zarządzania usługi O365 — część 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
-> - [Microsoft 365 dziennika inspekcji zgodności za pośrednictwem interfejsu API zarządzania usługi O365 — część 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
+> - [Działania dziennika inspekcji usługi Microsoft Purview za pośrednictwem interfejsu API zarządzania usługi O365 — część 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
+> - [Działania dziennika inspekcji usługi Microsoft Purview za pośrednictwem interfejsu API zarządzania O365 — część 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
 
 ## <a name="end-user-documentation"></a>Dokumentacja użytkownika końcowego
 
 - [Stosowanie etykiet wrażliwości do plików i wiadomości e-mail w pakiecie Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Znane problemy z etykietami wrażliwości w Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+    - [Znane problemy z etykietami poufności w Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
-- [Automatyczne stosowanie etykiet wrażliwości do plików i wiadomości e-mail w wiadomościach e-mail w programie Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
-    - [Znane problemy dotyczące automatycznego stosowania lub polecania etykiet wrażliwości](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+- [Automatyczne stosowanie lub rekomendowanie etykiet poufności do plików i wiadomości e-mail w Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
+    - [Znane problemy z automatycznym stosowaniem lub zalecaniem etykiet poufności](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

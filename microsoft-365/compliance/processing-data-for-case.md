@@ -2,8 +2,8 @@
 title: Praca z błędami przetwarzania w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Omówienie przetwarzania różnych form danych w usłudze eDiscovery (Premium).
-ms.openlocfilehash: e55d4c3554015adf1135086f23db6566d4bf132d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cefacd8fc4039e820a4fa899eb16f3cefdb22a87
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998975"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090900"
 ---
 # <a name="work-with-processing-errors-in-ediscovery-premium"></a>Praca z błędami przetwarzania w usłudze eDiscovery (Premium)
 

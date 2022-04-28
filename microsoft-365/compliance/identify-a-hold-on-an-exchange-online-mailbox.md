@@ -2,8 +2,8 @@
 title: Jak zidentyfikować blokadę w skrzynce pocztowej Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak zidentyfikować różne typy blokad, które można umieścić w Exchange Online skrzynce pocztowej w Microsoft 365.
-ms.openlocfilehash: 2e62d8f6fd0dc6352b4bf6fc5766b9cd33f8ffb4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4b4ff5064f59285412c4c20108df9dbbae992f7e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994177"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097761"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Jak zidentyfikować typ blokady umieszczonej w skrzynce pocztowej Exchange Online
 

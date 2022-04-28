@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ustaw uprawnienia i role użytkownika programu Microsoft Purview Compliance Manager oraz skonfiguruj automatyczne testowanie akcji. Zarządzanie historią użytkowników i filtrowanie widoku pulpitu nawigacyjnego.
-ms.openlocfilehash: e691aefdeaf3c2e1c1398bf71b74006aff4d1f6f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c7920a9eac06128f3cf9bfb54645a83296ca7e53
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973646"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091032"
 ---
 # <a name="get-started-with-compliance-manager"></a>Wprowadzenie do Menedżera zgodności
 
@@ -137,7 +137,7 @@ Administrator globalny organizacji może w dowolnym momencie zmienić ustawienia
 
 2. Na stronie ustawień wybierz pozycję **Menedżer zgodności**.
 
-3. Wybierz pozycję **Testowanie automatyczne** w obszarze nawigacji po lewej stronie.
+3. Wybierz pozycję **Testowanie źródła** w obszarze nawigacji po lewej stronie.
 
 4. Wybierz odpowiedni przycisk, aby włączyć automatyczne testowanie dla wszystkich akcji poprawy, wyłączyć go dla wszystkich akcji lub włączyć według poszczególnych akcji.
 

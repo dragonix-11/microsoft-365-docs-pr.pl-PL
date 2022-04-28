@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizacji danych Cisco Jabber w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik Cisco Jabber DataParser 17a-4 i używać go do importowania i archiwizowania danych Cisco Jabber w Microsoft 365.
-ms.openlocfilehash: 580294c4c05307c18458012d2789f481baaf4584
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 54c4bcc8af10ff7a8449cba4a7712fa6f895208e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998391"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097849"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Konfigurowanie łącznika do archiwizowania danych Cisco Jabber
 

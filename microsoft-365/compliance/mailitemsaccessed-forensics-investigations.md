@@ -1,9 +1,9 @@
 ---
-title: Użyj funkcji Inspekcja (Premium), aby zbadać konta, których zabezpieczenia zostały naruszone
+title: Zbadaj konta z naruszonymi zabezpieczeniami przy użyciu usługi Inspekcja (wersja Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Użyj akcji inspekcji skrzynki pocztowej MailItemsAccessed, aby przeprowadzić badania kryminalistyczne kont użytkowników, których zabezpieczenia zostały naruszone.
-ms.openlocfilehash: 2256e331075074348e2a72d6528bed1944567b94
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5ff3c078dfd29b5b44bfac5f04b329bf014507ea
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996201"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090944"
 ---
 # <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Używanie inspekcji usługi Microsoft Purview (Premium) do badania kont, których zabezpieczenia zostały naruszone
 

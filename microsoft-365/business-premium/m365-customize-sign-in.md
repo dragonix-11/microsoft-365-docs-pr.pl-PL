@@ -1,14 +1,14 @@
 ---
-title: Dostosowywanie strony logowania z powiadomieniem o ochronie prywatności i zgody
+title: Dostosowywanie strony logowania za pomocą powiadomienia o ochronie prywatności i zgody
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -21,32 +21,35 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Dostosuj stronę logowania z powiadomieniem o ochronie prywatności i zgodzie na Microsoft 365.
-ms.openlocfilehash: 8beff76721ce622d5e1943aea1c16fda90b052f1
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Dostosuj stronę logowania za pomocą powiadomienia o ochronie prywatności i zgody dla Microsoft 365.
+ms.openlocfilehash: 84c7a488d8a6ba854e3ac8b09067fd350c9ae4fc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634696"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097893"
 ---
-# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Dostosowywanie strony logowania z powiadomieniem o ochronie prywatności i zgody
+# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Dostosowywanie strony logowania za pomocą powiadomienia o ochronie prywatności i zgody
 
-Twoja firma lub kampania może ułatwić organom ścigania stosowanie opłat prawnych wobec przestępców internetowych przez dodanie do strony logowania informacji dotyczących prywatności i zgody.
+Twoja firma lub kampania może ułatwić organom ścigania wniesienie zarzutów prawnych przeciwko przestępcom internetowym, dodając powiadomienie o ochronie prywatności i zgody do strony logowania.
 
-Stronę logowania możesz dostosować, znakując ją. Możesz również dodać tekst, aby ułatwić użytkownikom logowanie się lub wskazać wymagania prawne lub ograniczenia dotyczące uzyskiwania dostępu do Microsoft 365 zasobów.
+Możesz dostosować stronę logowania przy użyciu znakowania. Możesz również dodać tekst, aby ułatwić użytkownikom logowanie się lub wskazać wymagania prawne lub ograniczenia dotyczące uzyskiwania dostępu do Microsoft 365 zasobów.
 
-## <a name="design-customization-the-text-on-your-sign-in-page"></a>Dostosowywanie projektu tekstu na stronie logowania
+## <a name="design-customization-the-text-on-your-sign-in-page"></a>Projektowanie dostosowywania tekstu na stronie logowania
 
-Aby zaktualizować elementy, które można dostosowywać na stronie logowania, musisz być administratorem globalnym. Aby uzyskać szczegółowe instrukcje, [zobacz Dodawanie artykułu o znakowaniach](/azure/active-directory/fundamentals/customize-branding) firmy.
+Aby zaktualizować dostosowywalne elementy na stronie logowania, musisz być administratorem globalnym. Aby uzyskać szczegółowe instrukcje, zobacz [dodawanie artykułu dotyczącego znakowania firmowego](/azure/active-directory/fundamentals/customize-branding) .
 
 Elementy, które można zaktualizować, to:
 
-- **Tekst strony logowania** Łatwe miejsce, w którym można dodać oświadczenie o ochronie prywatności i zgody.
-
+- Tekst strony logowania (łatwe miejsce do dodawania oświadczenia o ochronie prywatności i zgody)
 - Obraz tła strony logowania
+- Logo baneru
+- Wskazówka dotycząca nazwy użytkownika
 
-- Logo na banerze
+Przykłady powiadomień dotyczących prywatności i zgody można znaleźć w dodatku A w [temacie Wyszukiwanie i przejmowanie komputerów oraz Uzyskiwanie elektronicznych dowodów w dochodzeniach karnych](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
 
-- Wskazówka do nazwy użytkownika
+## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać przykłady informacji dotyczących prywatności i zgody, zobacz Dodatek A w temacie Wyszukiwanie i seizing komputerów oraz Uzyskiwanie elektronicznych dowodów [w śledztwu przestępczym](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+1. [Użyj procesu z przewodnikiem na potrzeby podstawowej konfiguracji](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+
+2. [Skonfiguruj swoje możliwości zabezpieczeń](m365bp-security-overview.md).

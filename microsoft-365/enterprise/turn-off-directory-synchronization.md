@@ -1,8 +1,8 @@
 ---
-title: Wyłączanie synchronizacji katalogów dla Microsoft 365
+title: Wyłącz synchronizację katalogów dla Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,30 +20,30 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
-description: W tym artykule znajdziesz informacje dotyczące używania programu PowerShell do wyłączenia synchronizacji katalogów dla Microsoft 365.
-ms.openlocfilehash: 83a3d66493994800a71a1910332a5eb2cdb003cd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: W tym artykule znajdziesz informacje dotyczące używania programu PowerShell do wyłączania synchronizacji katalogów dla Microsoft 365.
+ms.openlocfilehash: 5082f89032c17e549f11f8397126f6d059937c48
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988397"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077348"
 ---
-# <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Wyłączanie synchronizacji katalogów dla Microsoft 365
-Za pomocą programu PowerShell można wyłączyć synchronizację katalogów i przekonwertować synchronizowanych użytkowników na użytkowników korzystających tylko z chmury. Nie zaleca się jednak wyłączenia synchronizacji katalogów jako kroku rozwiązywania problemów. Jeśli potrzebujesz pomocy dotyczącej rozwiązywania problemów z synchronizacją katalogów, [zobacz artykuł Rozwiązywanie](fix-problems-with-directory-synchronization.md) problemów z synchronizacją Microsoft 365 katalogów. 
+# <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Wyłącz synchronizację katalogów dla Microsoft 365
+Za pomocą programu PowerShell można wyłączyć synchronizację katalogów i przekonwertować synchronizowanych użytkowników na tylko w chmurze. Nie zaleca się jednak wyłączania synchronizacji katalogów w ramach kroku rozwiązywania problemów. Jeśli potrzebujesz pomocy w rozwiązywaniu problemów z synchronizacją katalogów, zobacz artykuł [Rozwiązywanie problemów z synchronizacją katalogów dla Microsoft 365](fix-problems-with-directory-synchronization.md). 
   
-[W razie potrzeby skontaktuj](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) się z pomocą techniczną dla produktów biznesowych.
+W razie potrzeby [skontaktuj się z pomocą techniczną](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) dotyczącą produktów biznesowych.
   
 ## <a name="turn-off-directory-synchronization"></a>Wyłączanie synchronizacji katalogów  
 Aby wyłączyć synchronizację katalogów:
   
-1. Najpierw zainstaluj wymagane oprogramowanie i połącz się ze swoją Microsoft 365 subskrypcją. Aby uzyskać instrukcje, [Połączenie się z modułem Microsoft Azure Active Directory dla Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. Najpierw zainstaluj wymagane oprogramowanie i połącz się z subskrypcją Microsoft 365. Aby uzyskać instrukcje, zobacz [Połączenie z modułem Microsoft Azure Active Directory dla Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
-2. Użyj [set-MsolDirSyncEnabled,](/previous-versions/azure/dn194097(v=azure.100)) aby wyłączyć synchronizację katalogów: 
+2. Użyj [polecenia Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) , aby wyłączyć synchronizację katalogów: 
     
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```
 
 >[!Note]
->W przypadku użycia tego polecenia musisz odczekać 72 godziny, zanim będzie można ponownie włączyć synchronizację katalogów.
+>Jeśli używasz tego polecenia, musisz poczekać 72 godziny, zanim będzie można ponownie włączyć synchronizację katalogów.
 >

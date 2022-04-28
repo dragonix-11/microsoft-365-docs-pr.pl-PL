@@ -1,8 +1,8 @@
 ---
-title: Zintegrowane aplikacje i usługa Azure AD dla administratorów Microsoft 365 administratorów
+title: Zintegrowane aplikacje i usługa Azure AD dla administratorów Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration
@@ -18,38 +18,38 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Dowiedz się, jak rejestrować i administrować Office 365 zintegrowanymi aplikacjami w usłudze Azure AD, zezwalając na autoryzacje aplikacji na poziomie administratora centrum administracyjnego usługi **Azure AD** lub administratora **globalnego**.
-ms.openlocfilehash: ddb22c6e1be3d337fe7b54f27cae6a197f823c71
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Dowiedz się, jak rejestrować i administrować Office 365 zintegrowanymi aplikacjami w usłudze Azure AD, umożliwiając autoryzację aplikacji na poziomie **administratora kontrolera domeny usługi Azure AD** lub **administratora globalnego**.
+ms.openlocfilehash: 63d88d5b39dd88fafa9bb874d7d0a9df11f89462
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681265"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091198"
 ---
-# <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>Zintegrowane aplikacje i usługa Azure AD dla administratorów Microsoft 365 administratorów
+# <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>Zintegrowane aplikacje i usługa Azure AD dla administratorów Microsoft 365
 
-Zarządzanie zintegrowanymi aplikacjami to nie wszystko niż tylko zarządzanie [zgodą użytkowników na aplikacje](../admin/misc/user-consent.md). Wraz z nadejściem interfejsów API usługi Microsoft 365 REST użytkownicy mogą udzielać aplikacjom dostępu do swoich danych Microsoft 365, takich jak poczta, kalendarze, kontakty, użytkownicy, grupy, pliki i foldery. Domyślnie użytkownicy muszą udzielać uprawnień poszczególnym aplikacjom. 
+Zarządzanie zintegrowanymi aplikacjami to coś więcej niż tylko [zarządzanie zgodą użytkownika na aplikacje](../admin/misc/user-consent.md). Wraz z pojawieniem się interfejsów API REST Microsoft 365 użytkownicy mogą przyznawać aplikacjom dostęp do swoich danych Microsoft 365, takich jak poczta, kalendarze, kontakty, użytkownicy, grupy, pliki i foldery. Domyślnie użytkownicy muszą indywidualnie udzielać uprawnień każdej aplikacji. 
 
-Jednak nie można tego zrobić dobrze, jeśli chcesz autoryzować aplikację raz na poziomie administratora dc usługi **Azure AD** lub administratora  globalnego i wdaj ją w całą organizację za pośrednictwem ikony Uruchamianie aplikacji. W tym celu należy zarejestrować aplikację w usłudze Azure Active Directory (Azure AD). Przed zarejestrowaniem aplikacji w usłudze Azure AD należy wykonać pewne czynności, a także niektóre podstawowe informacje, które warto znać, aby ułatwić zarządzanie aplikacjami w Microsoft 365 organizacji.
+Nie jest to jednak dobrze skalowane, jeśli chcesz autoryzować aplikację raz na poziomie **administratora kontrolera domeny usługi Azure AD** lub **administratora globalnego** i wdrożyć ją w całej organizacji za pośrednictwem narzędzia do uruchamiania aplikacji. W tym celu należy zarejestrować aplikację w Azure Active Directory (Azure AD). Przed zarejestrowaniem aplikacji w usłudze Azure AD należy wykonać kilka czynności, które należy wykonać, oraz informacje podstawowe, które powinny ułatwić zarządzanie aplikacjami w organizacji Microsoft 365.
   
-## <a name="azure-ad-resources-for-microsoft-365-admins"></a>Zasoby usługi Azure AD dla Microsoft 365 administratorów
+## <a name="azure-ad-resources-for-microsoft-365-admins"></a>Zasoby usługi Azure AD dla administratorów Microsoft 365
 
-Musisz wykonać te dwa zadania, zanim będzie można zarządzać swoimi Microsoft 365 w usłudze Azure AD.
+Przed rozpoczęciem zarządzania aplikacjami Microsoft 365 w usłudze Azure AD musisz wykonać te dwa zadania.
   
 |Wymagania wstępne|Komentarze|
 |:-----|:-----|
-|[Korzystanie z bezpłatnej subskrypcji usługi Azure AD](../compliance/use-your-free-azure-ad-subscription-in-office-365.md) <br/> |Każda płatna subskrypcja usługi Microsoft 365 jest wyposażona w bezpłatną subskrypcję usługi Azure AD. Za pomocą usługi Azure AD możesz zarządzać swoimi aplikacjami, a także tworzyć konta użytkowników i grup oraz zarządzać nimi. Aby korzystać z usługi Azure AD, po prostu przejdź do portalu Azure Portal [https://portal.azure.com](https://portal.azure.com) i zaloguj się przy użyciu konta Microsoft 365 konta.  <br/> |
-|[Zarządzanie zgodą użytkowników na aplikacje](../admin/misc/user-consent.md) <br/> |Musisz zarządzać zgodą użytkownika na aplikacje, aby zezwolić aplikacjom innych firm na uzyskiwanie dostępu do informacji Microsoft 365 użytkownika i rejestrowanie aplikacji w usłudze Azure AD. Na przykład gdy ktoś korzysta z aplikacji innej firmy, ta aplikacja może poprosić o zezwolenie na dostęp do kalendarza i edytowanie plików, które znajdują się w folderze usługi OneDrive.  <br/> |
+|[Korzystanie z bezpłatnej subskrypcji usługi Azure AD](../compliance/use-your-free-azure-ad-subscription-in-office-365.md) <br/> |Każda płatna subskrypcja Microsoft 365 jest dostarczana z bezpłatną subskrypcją usługi Azure AD. Usługa Azure AD umożliwia zarządzanie aplikacjami oraz tworzenie kont użytkowników i grup oraz zarządzanie nimi. Aby korzystać z usługi Azure AD, wystarczy przejść do Azure Portal i [https://portal.azure.com](https://portal.azure.com) zalogować się przy użyciu konta Microsoft 365.  <br/> |
+|[Zarządzanie zgodą użytkownika na aplikacje](../admin/misc/user-consent.md) <br/> |Musisz zarządzać zgodą użytkownika na aplikacje, aby zezwolić aplikacjom innych firm na dostęp do informacji Microsoft 365 użytkownika i zarejestrować aplikacje w usłudze Azure AD. Na przykład gdy ktoś korzysta z aplikacji innej firmy, ta aplikacja może poprosić o zezwolenie na dostęp do kalendarza i edytowanie plików, które znajdują się w folderze usługi OneDrive.  <br/> |
    
-Zarządzanie Microsoft 365 wymaga znajomości aplikacji w usłudze Azure AD. W tych artykułach znajdziesz potrzebne informacje.
+Zarządzanie aplikacjami Microsoft 365 wymaga znajomości aplikacji w usłudze Azure AD. Skorzystaj z tych artykułów, aby uzyskać potrzebne tło.
   
-|Artykuł|Komentarze|
+|Artykułu|Komentarze|
 |:-----|:-----|
-|[Poznaj Microsoft 365 Uruchamianie aplikacji](https://support.microsoft.com/office/meet-the-microsoft-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |Jeśli jesteś nowym użytkownikm funkcji Uruchamiania aplikacji, być może zastanawiasz się, czym to jest i jak z niego korzystać. Uruchamianie aplikacji ma na celu pomoc w dostępie do Twoich aplikacji z dowolnego miejsca w Microsoft 365.  <br/> |
-|[Omówienie Office 365 interfejsów API zarządzania](/office/office-365-management-api/office-365-management-apis-overview) <br/> |Interfejsy API zarządzania Microsoft 365 umożliwiają zapewnienie dostępu do danych usługi Microsoft 365, w tym do najważniejszych z nich, takich jak poczta, kalendarze, kontakty, użytkownicy i grupy, pliki i foldery. <br/> |
-|[Integrowanie aplikacji z usługą Azure AD](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Dowiedz się więcej na temat aplikacji zintegrowanych z usługą Azure AD, sposobu rejestrowania aplikacji, zrozumienia pojęć związanych z zarejestrowaną aplikacją oraz wskazówek dotyczących  oznaczania aplikacji wielodostępnych.  <br/> |
-|[Dodawanie kafelków niestandardowych do ikony Uruchamianie aplikacji](/office365/admin/manage/customize-the-app-launcher)  <br/> |Uruchamianie aplikacji w aplikacji Microsoft 365 ułatwia użytkownikom znajdowanie ich aplikacji i uzyskiwanie do nich dostępu. W tym artykule opisano, jak deweloper może ustawić aplikacje jako deweloper do pojawiania się w uruchamianie aplikacji użytkowników, a także zapewnić im środowisko logowania jednokrotnego (SSO) przy użyciu poświadczeń użytkowników Microsoft 365 logowania.  <br/> |
-|[Samouczki dotyczące integracji z usługą Azure AD](/azure/active-directory/saas-apps/tutorial-list) <br/> |Celem tych samouczków jest pokazanie, jak skonfigurować logowanie jednokrotne usługi Azure AD dla aplikacji SaaS innych firm.  <br/> |
-|[Scenariusze uwierzytelniania dla usługi Azure AD](/azure/active-directory/develop/authentication-vs-authorization) <br/> |Usługa Azure AD upraszcza uwierzytelnianie dla deweloperów, udostępniając tożsamość jako usługę wraz z obsługą standardowych protokołów branżowych, takich jak OAuth 2.0 i OpenID Połączenie, a także biblioteki open source dla różnych platform, które ułatwiają szybkie rozpoczęcie kodowania. Ten dokument ułatwia zrozumienie różnych scenariuszy, które obsługuje usługa Azure AD, i pokazuje, jak rozpocząć pracę.  <br/> |
-|[Dostęp do aplikacji](/azure/active-directory/manage-apps/what-is-access-management) <br/> |Usługa Azure AD umożliwia łatwą integrację z wieloma popularnymi obecnie aplikacjami Oprogramowanie jako usługa (SaaS). Zapewnia zarządzanie tożsamościami i dostępem oraz udostępnia użytkownikom panel dostępu, w którym mogą oni dowiedzieć się, do jakich aplikacji mają dostęp i gdzie mogą używać logowania jednokrotnego. Ten artykuł zawiera linki do powiązanych zasobów, które pozwalają dowiedzieć się więcej o ulepszeniach dostępu do aplikacji w usłudze Azure AD oraz o tym, jak można je włączyć.  <br/> |
-|[Personalizowanie Office 365 użytkownika](https://support.microsoft.com/office/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |Możesz uzyskać szybki dostęp do aplikacji, których codziennie używasz, dodając lub usuwając aplikacje w Microsoft 365 Uruchamianie aplikacji.  <br/> |
+|[Poznaj narzędzie do uruchamiania aplikacji Microsoft 365](https://support.microsoft.com/office/meet-the-microsoft-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |Jeśli dopiero zaczynasz korzystać z uruchamiania aplikacji, możesz się zastanawiać, co to jest i jak z niego korzystać. Narzędzie do uruchamiania aplikacji zostało zaprojektowane tak, aby ułatwić dostęp do aplikacji z dowolnego miejsca w Microsoft 365.  <br/> |
+|[Omówienie interfejsów API zarządzania Office 365](/office/office-365-management-api/office-365-management-apis-overview) <br/> |Interfejsy API zarządzania Microsoft 365 umożliwiają zapewnienie dostępu do danych Microsoft 365, w tym do najważniejszych elementów— poczty, kalendarzy, kontaktów, użytkowników i grup, plików i folderów. <br/> |
+|[Integrowanie aplikacji w usłudze Azure AD](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Dowiedz się więcej na temat aplikacji zintegrowanych z usługą Azure AD oraz sposobu rejestrowania aplikacji, poznawania pojęć związanych z zarejestrowaną aplikacją i poznawania wytycznych dotyczących znakowania aplikacji wielodostępnych.  <br/> |
+|[Dodawanie kafelków niestandardowych do uruchamiania aplikacji](/office365/admin/manage/customize-the-app-launcher)  <br/> |Uruchamianie aplikacji w Microsoft 365 ułatwia użytkownikom znajdowanie aplikacji i uzyskiwanie do nich dostępu. W tym artykule opisano sposoby wyświetlania aplikacji przez deweloperów w programach uruchamiających aplikacje użytkowników, a także zapewnianie im logowania jednokrotnego przy użyciu poświadczeń Microsoft 365.  <br/> |
+|[Samouczki integracji usługi Azure AD](/azure/active-directory/saas-apps/tutorial-list) <br/> |Celem tych samouczków jest pokazanie, jak skonfigurować logowania jednokrotnego usługi Azure AD dla aplikacji SaaS innych firm.  <br/> |
+|[Scenariusze uwierzytelniania dla usługi Azure AD](/azure/active-directory/develop/authentication-vs-authorization) <br/> |Usługa Azure AD upraszcza uwierzytelnianie dla deweloperów, zapewniając tożsamość jako usługę dzięki obsłudze standardowych protokołów branżowych, takich jak OAuth 2.0 i OpenID Połączenie, a także open source bibliotek dla różnych platform, które ułatwiają szybkie rozpoczęcie kodowania. Ten dokument ułatwia zrozumienie różnych scenariuszy obsługiwanych przez usługę Azure AD i pokazuje, jak rozpocząć pracę.  <br/> |
+|[Dostęp do aplikacji](/azure/active-directory/manage-apps/what-is-access-management) <br/> |Usługa Azure AD umożliwia łatwą integrację z wieloma popularnymi aplikacjami oprogramowania jako usługi (SaaS). Zapewnia zarządzanie tożsamościami i dostępem, a także zapewnia Panel dostępu dla użytkowników, w którym mogą dowiedzieć się, jaki mają dostęp do aplikacji i gdzie mogą korzystać z logowania jednokrotnego w celu uzyskania dostępu do swoich aplikacji. Ten artykuł zawiera linki do powiązanych zasobów, które pozwalają dowiedzieć się więcej na temat ulepszeń dostępu do aplikacji dla usługi Azure AD i sposobu ich współtworzenia.  <br/> |
+|[Personalizowanie środowiska Office 365](https://support.microsoft.com/office/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |Możesz uzyskać szybki dostęp do aplikacji, których używasz na co dzień, dodając lub usuwając aplikacje w programie uruchamiania aplikacji Microsoft 365.  <br/> |

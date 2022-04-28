@@ -2,8 +2,8 @@
 title: Praca z komunikacją w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: eDiscovery (Premium) ułatwia zarządzanie przepływem pracy powiadomień o blokadzie prawnej wokół powiadamiania opiekunów w dochodzeniach prawnych.
-ms.openlocfilehash: bf47522809b61e377abffd742b9a4d84f7b650aa
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 59acf9dd561b46a7e7b970ffcd2c4c505f0b5a1c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998557"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097739"
 ---
 # <a name="work-with-communications-in-ediscovery-premium"></a>Praca z komunikacją w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1709597d10b140124501fd0dc7349e8fc4342bb6
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 14ec731eebe21f6b399e03d445fef248b8675026
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841749"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098763"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Dołączanie serwerów Windows do usługi Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -174,6 +174,11 @@ Jeśli zamierzasz używać rozwiązania chroniącego przed złośliwym kodem inn
 **Aktualizowanie pakietu dla Ochrona punktu końcowego w usłudze Microsoft Defender w Windows Server 2012 R2 i 2016**
 
 Aby otrzymywać regularne ulepszenia i poprawki produktu dla składnika czujnika EDR, upewnij się, Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) zostanie zastosowana lub zatwierdzona. Ponadto aby aktualizować składniki ochrony, zobacz [Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie punktów odniesienia](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
+
+
+Jeśli używasz Windows Server Update Services (WSUS) i/lub Microsoft Endpoint Configuration Manager, ta nowa "aktualizacja Ochrona punktu końcowego w usłudze Microsoft Defender dla EDR  Czujnik" jest dostępny w kategorii "Ochrona punktu końcowego w usłudze Microsoft Defender".
+
+
 
 ### <a name="onboarding-steps-summary"></a>Podsumowanie kroków dołączania
 

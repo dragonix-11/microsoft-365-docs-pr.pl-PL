@@ -2,8 +2,8 @@
 title: Korzystaj z edytora komunikacji
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Użyj Edytora komunikacji, aby zmienić tekst i scalić zmienne pól podczas formatowania zawartości.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6377da0dbb89963fdf25610c638e6f5ce4ccfd70
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b44f6090f4a8bc9b09bb7934477741effc30ff6e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999657"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098411"
 ---
 # <a name="use-the-communications-editor"></a>Korzystaj z edytora komunikacji
 

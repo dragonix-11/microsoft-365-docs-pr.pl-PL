@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Podręcznik wersji próbnej rozwiązań Microsoft Purview.
-ms.openlocfilehash: 4544e07baa5b8d2b89991d9a31c84a2d7cefb7f8
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 3ff103a2e6ebc260f5f00964ae09c6b6bbc1fd69
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973778"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098895"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Podręcznik wersji próbnej: rozwiązania Usługi Microsoft Purview
 
@@ -32,9 +32,10 @@ Wypróbowanie każdego rozwiązania pomoże Ci podjąć świadome decyzje w celu
 
 Funkcje:
 
-- [Inspekcja (Premium)](#audit-premium)
+- [Inspekcja (wersja Premium)](#audit-premium)
 - [Zgodność z komunikacją](#communication-compliance)
 - [Menedżer zgodności](#compliance-manager)
+- [Zarządzanie cyklem życia danych](#data-lifecycle-management)
 - [Zapobieganie utracie danych w usłudze Microsoft Purview](#data-loss-prevention)
 - [Zbierania elektronicznych materiałów dowodowych](#ediscovery)
 - [Information Protection](#information-protection)
@@ -52,7 +53,7 @@ Opcjonalne dodatki:
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Akcje zgodności z Microsoft 365":::
 
-## <a name="audit-premium"></a>Inspekcja (Premium)
+## <a name="audit-premium"></a>Inspekcja (wersja Premium)
 
 **Prowadzenie dochodzeń**
 
@@ -168,6 +169,31 @@ Niestandardowe oceny są przydatne w:
 1. [Modyfikowanie istniejącego szablonu w celu dodawania lub usuwania kontrolek i akcji](compliance-manager-templates-modify.md)
 1. [Konfigurowanie zautomatyzowanego testowania akcji poprawy](compliance-manager-setup.md#set-up-automated-testing)
 1. [Ponowne przypisywanie akcji poprawy do innego użytkownika](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
+
+## <a name="data-lifecycle-management"></a>Zarządzanie cyklem życia danych
+
+**Zarządzanie na dużą skalę za pomocą automatyzacji**
+
+Zwiększ możliwość dostosowywania się do zmian w organizacji za pomocą zakresów zasad, które są automatycznie aktualizowane. Automatyzowanie etykietowania zawartości w celu zmniejszenia nakładów pracy ręcznej i poprawy stanu zgodności.
+
+### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Krok 1. Dynamiczne określanie docelowych zasad przechowywania przy użyciu zakresów zasad adaptacyjnych
+> [!TIP]
+> Najlepsze rozwiązanie dotyczące wersji próbnej: Dzień 1
+
+Zakresy zasad adaptacyjnych umożliwiają dynamiczne kierowanie zasad do niektórych użytkowników, grup lub witryn na podstawie ich atrybutów usługi AD.  Atrybuty zakresów można wybrać z listy lub dostosować przy użyciu zaawansowanego konstruktora zapytań.
+
+Zasady korzystające z zakresów zasad adaptacyjnych pozostają aktualne, gdy organizacja zmienia się wraz z dołączeniem lub odejściem nowych pracowników. Ponadto nie podlegają one poprzednim limitom 100/1000 lokalizacji uwzględnionych w zasadach.
+
+- Tworzenie zakresu zasad adaptacyjnych i używanie go z zasadami przechowywania
+
+### <a name="step-2-automate-labeling-to-apply-a-label-to-all-items-by-default"></a>Krok 2. Automatyzowanie etykietowania w celu domyślnego zastosowania etykiety do wszystkich elementów
+
+> [!TIP]
+> Najlepsze rozwiązanie dotyczące wersji próbnej: Konfiguracja w ciągu pierwszych 30 dni
+
+Etykiety domyślne umożliwiają automatyczne stosowanie etykiety przechowywania do wszystkich elementów w określonej bibliotece, folderze lub dokumencie ustawionym w SharePoint.
+
+- Opublikuj etykietę i zastosuj ją jako domyślną w SharePoint
 
 ## <a name="data-loss-prevention"></a>Zapobieganie utracie danych
 
@@ -356,59 +382,38 @@ Aby włączyć analizę ryzyka związanego z informacjami poufnymi, musisz być 
 
 ## <a name="records-management"></a>Zarządzanie rekordami
 
-**Automatyzowanie harmonogramu przechowywania rekordów krytycznych dla działania firmy**
+**Zarządzanie elementami o wysokiej wartości dla wymagań dotyczących prowadzenia dokumentacji biznesowej, prawnej lub regulacyjnej**
 
-Użyj zintegrowanych funkcji zarządzania rekordami usługi Microsoft Purview, aby zautomatyzować harmonogram przechowywania dla rekordów prawnych, prawnych i krytycznych dla organizacji. Uzyskaj pełną obsługę cyklu życia zawartości, od tworzenia po współpracę, deklarację rekordu, przechowywanie i dyspozycję.
+Funkcje zarządzania rekordami w usłudze Microsoft Purview umożliwiają zautomatyzowanie harmonogramu przechowywania rekordów regulacyjnych, prawnych i krytycznych dla firmy. Wykorzystaj możliwości automatyzacji od utworzenia poprzez współpracę, aby zadeklarować rekordy, zachować zawartość i usunąć je na końcu.
 
-### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Krok 1. Dynamiczne określanie docelowych zasad przechowywania przy użyciu zakresów zasad adaptacyjnych
+### <a name="step-1-mark-contents-as-records"></a>Krok 1. Oznaczanie zawartości jako rekordów  
 
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: Dzień 1
 
-Zakresy zasad adaptacyjnych umożliwiają dynamiczne kierowanie zasad do niektórych użytkowników, grup lub witryn na podstawie ich atrybutów usługi AD.
+Gdy zawartość jest zadeklarowana jako rekord, ograniczenia są nakładane na element pod względem tego, jakie akcje są dozwolone lub blokowane, dodatkowe działania dotyczące elementów są rejestrowane i masz dowód dyspozycji, jeśli elementy zostaną usunięte po zakończeniu okresu przechowywania.
 
-Atrybuty zakresów można wybrać z listy lub dostosować przy użyciu zaawansowanego konstruktora zapytań.
+- Tworzenie etykiety przechowywania, która deklaruje zawartość jako rekord lub rekord regulacyjny
 
-Zasady korzystające z zakresów zasad adaptacyjnych pozostają aktualne, gdy organizacja zmienia się wraz z dołączeniem lub odejściem nowych pracowników. Ponadto nie podlegają one poprzednim limitom 100/1000 lokalizacji uwzględnionych w zasadach.
+### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>Krok 2. Przeglądanie zawartości do zatwierdzenia przed jej trwałym usunięciem
 
-- Tworzenie [zakresu zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention) i używanie go z zasadami przechowywania
+> [!TIP]
+> Najlepsze rozwiązanie dotyczące wersji próbnej: Dzień 1
 
-### <a name="step-2-automate-labeling-of-sensitive-information-with-the-ability-to-review-before-disposal"></a>Krok 2. Automatyzowanie etykietowania informacji poufnych przy użyciu możliwości przeglądania przed usunięciem
+Po zakończeniu okresu przechowywania użytkownicy określeni ("recenzenci") mogą zostać powiadomieni o przejrzeniu zawartości i zatwierdzeniu trwałej akcji usuwania. Jest to obsługiwane, jeśli bardziej odpowiednia jest inna akcja niż usunięcie, na przykład przypisanie innego okresu przechowywania do zawartości lub wstrzymanie usuwania na potrzeby inspekcji.
+
+- Tworzenie etykiety przechowywania używającej przeglądu dyspozycji
+
+### <a name="step-3-apply-labels-automatically-to-content-that-matches-specific-conditions"></a>Krok 3. Automatyczne stosowanie etykiet do zawartości zgodnej z określonymi warunkami
 
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: Konfiguracja w ciągu pierwszych 30 dni
 
-Etykiety przechowywania można skonfigurować do automatycznego stosowania do zawartości po wykryciu poufnych informacji, takich jak numer karty kredytowej. Eliminuje to konieczność ręcznego wykonywania działań związanych z etykietowaniem przez użytkowników.
+Automatyczne stosowanie etykiet eliminuje konieczność ręcznego wykonywania działań związanych z etykietowaniem przez użytkowników. Etykiety przechowywania można stosować do zawartości automatycznie, gdy ta zawartość nie ma jeszcze zastosowanej etykiety przechowywania i zawiera informacje poufne, słowa kluczowe lub właściwości z możliwością wyszukiwania albo dopasowanie do klasyfikatorów klasyfikujących.
 
-Po zakończeniu okresu przechowywania określeni użytkownicy ("recenzenci") będą powiadamiani o przejrzeniu zawartości i zatwierdzeniu stałej akcji usuwania. W ten sposób, jeśli coś musi być przechowywane na dłużej, może być.
-
-Działanie aplikacji etykiet i działanie przeglądu dyspozycji można wyświetlić na ekranie Omówienie zarządzania rekordami.
-
-1. [Automatyczne stosowanie etykiet przechowywania do zawartości zawierającej informacje poufne](retention.md#retention-labels)
-1. Tworzenie i stosowanie etykiety przechowywania z [przeglądem dyspozycji](disposition.md#disposition-reviews) na końcu okresu przechowywania
-
-### <a name="step-3-label-content-as-records-automatically-using-trainable-classifiers"></a>Krok 3. Automatyczne etykietowanie zawartości jako rekordów przy użyciu klasyfikatorów z możliwością trenowania
-
-Gdy zawartość jest zadeklarowana jako rekord, ograniczenia są nakładane na element pod względem tego, jakie akcje są dozwolone lub blokowane, dodatkowe działania dotyczące elementów są rejestrowane i masz dowód dyspozycji, jeśli elementy zostaną usunięte po zakończeniu okresu przechowywania.
-
-Klasyfikatory z możliwością trenowania to narzędzia, które rozpoznają różne typy zawartości na podstawie podanych przykładów. Wybierz spośród różnych wbudowanych opcji lub skonfiguruj klasyfikator niestandardowy w celu spełnienia określonych potrzeb.
-
-1. Tworzenie [etykiety przechowywania, która deklaruje zawartość jako rekord lub rekord regulacyjny](records-management.md#records)
-1. [Automatyczne stosowanie etykiet przechowywania do zawartości przy użyciu klasyfikatorów z możliwością trenowania](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
-
-### <a name="more-information-auto-apply-retention-labels--disposition-review"></a>Więcej informacji: Automatyczne stosowanie etykiet przechowywania i przegląd dyspozycji
-
-**Zastosuj etykiety automatycznie, aby zachować potrzebne elementy...** Etykiety przechowywania mogą być automatycznie stosowane do zawartości, gdy zawiera ona:
-
-- [Określone typy informacji poufnych](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
-- [Określone słowa kluczowe lub właściwości z możliwością wyszukiwania, które pasują do utworzonego zapytania](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
-- [Dopasowanie klasyfikatorów z możliwością trenowania](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
-
-**... następnie usunąć go bezpiecznie na końcu.**
-
-Gdy przegląd dyspozycji zostanie wyzwolony po zakończeniu okresu przechowywania, wybrani recenzenci otrzymają powiadomienie e-mail z informacją o zawartości do przejrzenia.
-
-Zawartość oczekująca na przegląd dyspozycji jest trwale usuwana dopiero po tym, jak recenzent na ostatnim etapie dyspozycji zdecyduje się trwale usunąć zawartość.
+- Automatyczne stosowanie etykiet przechowywania do zawartości z określonymi typami informacji poufnych
+- Automatyczne stosowanie etykiet przechowywania do zawartości przy użyciu klasyfikatorów z możliwością trenowania
+- Automatyczne stosowanie etykiet przechowywania ze słowami kluczowymi lub właściwościami z możliwością wyszukiwania
 
 ## <a name="additional-trials-and-add-ons"></a>Dodatkowe wersje próbne i dodatki
 

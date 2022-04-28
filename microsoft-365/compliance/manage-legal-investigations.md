@@ -2,8 +2,8 @@
 title: Zarządzanie dochodzeniami prawnymi w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Użyj przypadków zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview, aby zarządzać badaniem prawnym organizacji.
-ms.openlocfilehash: 28dead35cce2102cfd826fa1505cdd620e4a1b25
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 464996eb160eff520582e82ab87b74b4472f7a5d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999789"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077885"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnymi w Microsoft 365
 

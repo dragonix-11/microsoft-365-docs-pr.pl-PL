@@ -1,8 +1,8 @@
 ---
-title: Wysoka dostępność uwierzytelniania federegonowego (etap 4) Konfigurowanie serwerów proxy aplikacji sieci Web
+title: Uwierzytelnianie federacyjne o wysokiej dostępności — faza 4. Konfigurowanie serwerów proxy aplikacji internetowych
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
@@ -13,31 +13,31 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: 'Podsumowanie: Skonfiguruj serwery proxy aplikacji sieci Web pod celu skonfigurowania wysokiej dostępności federacji uwierzytelniania Microsoft 365 serwera Microsoft Azure.'
-ms.openlocfilehash: ea50a48fe4bebd997ecf6b472a60e57772bf2b0f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'Podsumowanie: Skonfiguruj serwery proxy aplikacji internetowej pod kątem uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 w Microsoft Azure.'
+ms.openlocfilehash: 2200d4f7c0aafbaff11dd5d9b5b5b414fae06b5f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986591"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091286"
 ---
-# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Wysoka dostępność uwierzytelniania federegonowego Etap 4. Konfigurowanie serwerów proxy aplikacji sieci Web
+# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Uwierzytelnianie federacyjne o wysokiej dostępności — faza 4: konfigurowanie serwerów proxy aplikacji internetowych
 
-W tym etapie wdrażania wysokiej dostępności na Microsoft 365 w usługach infrastruktury federacji platformy Azure należy utworzyć wewnętrzny równoważenie obciążenia i dwa serwery usług AD FS.
+W tej fazie wdrażania wysokiej dostępności Microsoft 365 uwierzytelniania federacyjnego w usługach infrastruktury platformy Azure utworzysz wewnętrzny moduł równoważenia obciążenia i dwa serwery usług AD FS.
   
-Należy wykonać tę fazę przed przejściem do fazy [5. Konfigurowanie uwierzytelniania federeracyjną dla Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Zobacz [Wdrażanie uwierzytelniania feder](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) służącego do wysokiej dostępności Microsoft 365 na platformie Azure, aby uzyskać informacje o wszystkich fazach.
+Należy ukończyć tę fazę przed przejściem do [fazy 5. Konfigurowanie uwierzytelniania federacyjnego dla Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Zobacz [Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) dla wszystkich faz.
   
-## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Tworzenie narzędzia do równoważenia obciążenia skierowanego do Internetu na platformie Azure
+## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Tworzenie modułu równoważenia obciążenia dostępnego z Internetu na platformie Azure
 
-Należy utworzyć narzędzie do równoważenia obciążenia skierowane do Internetu, aby usługa Azure równomiernie rozsyłała ruch uwierzytelniania klienta przychodzącego z Internetu między dwoma serwerami proxy aplikacji sieci Web.
+Musisz utworzyć moduł równoważenia obciążenia dostępny z Internetu, aby platforma Azure równomiernie rozdzielała przychodzący ruch uwierzytelniania klienta z Internetu między dwa serwery proxy aplikacji internetowej.
   
 > [!NOTE]
-> W poniższych zestawach poleceń jest dostępna najnowsza wersja Azure PowerShell. Zobacz [Wprowadzenie do Azure PowerShell](/powershell/azure/get-started-azureps). 
+> Poniższe zestawy poleceń używają najnowszej wersji Azure PowerShell. Zobacz [Wprowadzenie z Azure PowerShell](/powershell/azure/get-started-azureps). 
   
-Po po w źródłach wartości lokalizacji i grupy zasobów uruchom blok wynikowy w wierszu polecenia programu Azure PowerShell lub w programie PowerShell ISE.
+Po podaniu wartości lokalizacji i grupy zasobów uruchom wynikowe bloki w wierszu polecenia Azure PowerShell lub w programie PowerShell ISE.
   
 > [!TIP]
-> Aby wygenerować gotowe bloki poleceń programu PowerShell na podstawie ustawień niestandardowych, użyj tego Microsoft Excel [konfiguracji programu PowerShell](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> Aby wygenerować gotowe do uruchomienia bloki poleceń programu PowerShell na podstawie ustawień niestandardowych, użyj tego [Microsoft Excel skoroszytu konfiguracji](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 ```powershell
 # Set up key variables
@@ -52,21 +52,21 @@ $lbrule=New-AzLoadBalancerRuleConfig -Name "WebTraffic" -FrontendIpConfiguration
 New-AzLoadBalancer -ResourceGroupName $rgName -Name "WebAppProxyServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
 ```
 
-Aby wyświetlić publiczny adres IP przypisany do urządzenia do równoważenia obciążenia dostępnego w Internecie, uruchom następujące polecenia w wierszu polecenia Azure PowerShell na komputerze lokalnym:
+Aby wyświetlić publiczny adres IP przypisany do modułu równoważenia obciążenia dostępnego z Internetu, uruchom następujące polecenia w wierszu polecenia Azure PowerShell na komputerze lokalnym:
   
 ```powershell
 Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgName).IPAddress
 ```
 
-## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>Określanie nazwy FQDN usługi federowej i tworzenie rekordów DNS
+## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>Określanie nazwy FQDN usługi federacyjnej i tworzenie rekordów DNS
 
-Należy określić nazwę DNS do identyfikowania nazwy usługi federejnej w Internecie. Usługa Azure AD Połączenie skonfiguruje aplikację Microsoft 365 o tej nazwie w fazie 5, która stanie się częścią adresu URL wysyłanego przez usługę Microsoft 365 do łączenia klientów w celu uzyskania tokenu zabezpieczającego. Przykładem jest fs.contoso.com (fs to usługa federska).
+Musisz określić nazwę DNS, aby zidentyfikować nazwę usługi federacyjnej w Internecie. Usługa Azure AD Połączenie skonfiguruje Microsoft 365 o tej nazwie w fazie 5, która stanie się częścią adresu URL, który Microsoft 365 wysyła do klientów łączących się w celu uzyskania tokenu zabezpieczającego. Przykładem jest fs.contoso.com (fs oznacza usługę federacyjną).
   
-Po utworzeniu nazwy FDQN usługi federskiej utwórz publiczną domenę DNS Rekord FDQN usługi federskiej, który będzie rozpoznawczy publiczny adres IP narzędzia do równoważenia obciążenia skierowanego do Internetu platformy Azure.
+Po utworzeniu nazwy FDQN usługi federacyjnej utwórz publiczną domenę DNS rekord A dla nazwy FDQN usługi federacyjnej, która jest rozpoznawana jako publiczny adres IP modułu równoważenia obciążenia dostępnego z Internetu na platformie Azure.
   
 |**Name (Nazwa)**|**Type (Typ)**|**TTL (Czas wygaśnięcia)**|**Wartość**|
 |:-----|:-----|:-----|:-----|
-|FDQN usługi federskiej  <br/> |A  <br/> |3600  <br/> |publiczny adres IP narzędzia do równoważenia obciążenia skierowanego do Internetu platformy Azure (wyświetlany za pomocą polecenia **Write-Host** w poprzedniej sekcji) <br/> |
+|nazwa FDQN usługi federacyjnej  <br/> |A  <br/> |3600  <br/> |publiczny adres IP modułu równoważenia obciążenia dostępnego z Internetu na platformie Azure (wyświetlany przez polecenie **Write-Host** w poprzedniej sekcji) <br/> |
    
 Oto przykład:
   
@@ -74,15 +74,15 @@ Oto przykład:
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
-Następnie dodaj rekord adresu DNS do prywatnej przestrzeni nazw DNS Twojej organizacji, rozpoznawczy nazwę FQDN Twojej usługi federrskiej do prywatnego adresu IP przypisanego do wewnętrznego równoważenia obciążenia serwerów usług AD FS (tabela I, element 4, kolumna wartości).
+Następnie dodaj rekord adresu DNS do prywatnej przestrzeni nazw DNS organizacji, który rozpoznaje nazwę FQDN usługi federacyjnej jako prywatny adres IP przypisany do wewnętrznego modułu równoważenia obciążenia dla serwerów usług AD FS (tabela I, element 4, kolumna Wartość).
   
-## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a>Tworzenie maszyn wirtualnych serwera proxy aplikacji sieci Web na platformie Azure
+## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a>Tworzenie maszyn wirtualnych serwera proxy aplikacji internetowej na platformie Azure
 
-Użyj następującego bloku poleceń Azure PowerShell, aby utworzyć maszyny wirtualne dla dwóch serwerów proxy aplikacji sieci Web. 
+Użyj następującego bloku poleceń Azure PowerShell, aby utworzyć maszyny wirtualne dla dwóch serwerów proxy aplikacji internetowej. 
   
-Należy zauważyć, że w Azure PowerShell zestawów poleceń są używać wartości z następujących tabel:
+Należy pamiętać, że następujące zestawy poleceń Azure PowerShell używają wartości z następujących tabel:
   
-- Tabela M dla Twoich maszyn wirtualnych
+- Tabela M dla maszyn wirtualnych
     
 - Tabela R dla grup zasobów
     
@@ -92,11 +92,11 @@ Należy zauważyć, że w Azure PowerShell zestawów poleceń są używać warto
     
 - Tabela I dla statycznych adresów IP
     
-- Tabela A dla Twoich zestawów dostępności
+- Tabela A dla zestawów dostępności
     
-Przypomnijmy, że zdefiniowano tabelę M w fazie [2.](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Konfigurowanie kontrolerów domeny oraz tabel R, V, S, I i A w etapie [1. Konfigurowanie platformy Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Pamiętaj, że tabela M została zdefiniowana w [fazie 2. Konfigurowanie kontrolerów domeny](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) i tabel R, V, S, I i A w [fazie 1: konfigurowanie platformy Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
-Po pojęniu wszystkich odpowiednich wartości uruchom blok wynikowy w wierszu polecenia programu Azure PowerShell lub w programie PowerShell ISE.
+Po podaniu wszystkich odpowiednich wartości uruchom wynikowe bloki w wierszu polecenia Azure PowerShell lub w programie PowerShell ISE.
   
 ```powershell
 # Set up variables common to both virtual machines
@@ -150,22 +150,22 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Ponieważ te maszyny wirtualne są przeznaczone do aplikacji intranetowej, nie mają przypisanego publicznego adresu IP ani etykiety nazwy domeny DNS i są dostępne w Internecie. Oznacza to jednak również, że nie można się z nimi połączyć z portalu Azure Portal. Ta **Połączenie** jest niedostępna podczas wyświetlania właściwości maszyny wirtualnej. Użyj akcesorium podłączania pulpitu zdalnego lub innego narzędzia Pulpit zdalny, aby połączyć się z maszyną wirtualną przy użyciu jej prywatnego adresu IP lub intranetowej nazwy DNS i poświadczeń konta administratora lokalnego.
+> Ponieważ te maszyny wirtualne są przeznaczone dla aplikacji intranetowej, nie mają przypisanego publicznego adresu IP ani etykiety nazwy domeny DNS i nie są uwidocznione w Internecie. Jednak oznacza to również, że nie można nawiązać z nimi połączenia z Azure Portal. Opcja **Połączenie** jest niedostępna podczas wyświetlania właściwości maszyny wirtualnej. Użyj akcesorium Podłączanie pulpitu zdalnego lub innego narzędzia pulpitu zdalnego, aby nawiązać połączenie z maszyną wirtualną przy użyciu jej prywatnego adresu IP lub intranetowej nazwy DNS i poświadczeń konta administratora lokalnego.
   
-Oto konfiguracja wynikowa pomyślnego ukończenia tego etapu z symbolami zastępczymi nazw komputerów.
+Oto konfiguracja wynikająca z pomyślnego zakończenia tej fazy z nazwami komputerów zastępczych.
   
-**Etap 4. Skierowane do Internetu serwery proxy aplikacji sieci Web i równoważenia obciążenia dla infrastruktury uwierzytelniania federacji o wysokiej dostępności na platformie Azure**
+**Faza 4. Internetowy moduł równoważenia obciążenia i serwery proxy aplikacji internetowej dla infrastruktury uwierzytelniania federacyjnego o wysokiej dostępności na platformie Azure**
 
-![Etap 4. wysokiej dostępności infrastruktury Microsoft 365 uwierzytelniania feder służącego do uwierzytelniania na platformie Azure z serwerami proxy aplikacji sieci Web.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Faza 4 wysokiej dostępności Microsoft 365 infrastruktury uwierzytelniania federacyjnego na platformie Azure z serwerami proxy aplikacji internetowej.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>Następny krok
 
-Etap [5. Konfigurowanie uwierzytelniania federatora Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) kontynuowania konfigurowania tego obciążenia pracą.
+Użyj [fazy 5. Skonfiguruj uwierzytelnianie federacyjne dla Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md), aby kontynuować konfigurowanie tego obciążenia.
   
 ## <a name="see-also"></a>Zobacz też
 
-[Wdrażanie uwierzytelniania federeracyjnie o wysokiej dostępności Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
+[Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Tożsamość federacyjna dla Twojego Microsoft 365 deweloper/środowisko testowania](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Tożsamość federacyjna dla środowiska deweloperskiego/testowego Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 rozwiązania i architektury](../solutions/index.yml)
+[Centrum rozwiązań i architektury platformy Microsoft 365](../solutions/index.yml)

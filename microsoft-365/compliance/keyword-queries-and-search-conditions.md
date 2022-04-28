@@ -2,8 +2,8 @@
 title: Zapytania słów kluczowych i warunki wyszukiwania dla zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o właściwościach poczty e-mail i dokumentu, które można wyszukiwać przy użyciu narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w Microsoft 365.
-ms.openlocfilehash: f00d257a558d252ca0176166d42d02cd72dad0aa
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2961ab22c5890fa13aa17b4cdaf0dbbf47045c68
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995387"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098543"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Zapytania słów kluczowych i warunki wyszukiwania dla zbierania elektronicznych materiałów dowodowych
 
@@ -168,7 +168,7 @@ Aby uzyskać więcej informacji na temat tworzenia zapytań przy użyciu `Sensit
 
 Operatory wyszukiwania logicznego, takie jak **AND**, **OR** i **NOT**, ułatwiają definiowanie bardziej precyzyjnych wyszukiwań, dołączając lub wykluczając określone słowa w zapytaniu wyszukiwania. Inne techniki, takie jak używanie operatorów właściwości (takich jak `>=` lub `..`), cudzysłowów, nawiasów i symboli wieloznacznych, ułatwiają uściślanie zapytania wyszukiwania. W poniższej tabeli wymieniono operatory, których można użyć do zawężenia lub poszerzenia wyników wyszukiwania.
 
-|Operator|Użycia|Opis|
+|Operator|Zastosowanie|Opis|
 |---|---|---|
 |I|keyword1 AND — słowo kluczowe2|Zwraca elementy zawierające wszystkie określone słowa kluczowe lub  `property:value` wyrażenia. Na przykład  `from:"Ann Beebe" AND subject:northwind` zwraca wszystkie komunikaty wysyłane przez Ann Beebe, które zawierały słowo northwind w wierszu tematu. <sup>2</sup>|
 |+|keyword1 + słowo kluczowe2 + słowo kluczowe3|Zwraca elementy zawierające  *elementy*  `keyword2` lub  `keyword3` *,*  które również zawierają  `keyword1`elementy . W związku z tym ten przykład jest odpowiednikiem zapytania  `(keyword2 OR keyword3) AND keyword1`. <p> Zapytanie  `keyword1 + keyword2` (ze spację po symbolu **+** ) nie jest takie samo jak przy użyciu operatora **AND** . To zapytanie będzie równoważne  `"keyword1 + keyword2"` i zwróci elementy z dokładną fazą  `"keyword1 + keyword2"`.|

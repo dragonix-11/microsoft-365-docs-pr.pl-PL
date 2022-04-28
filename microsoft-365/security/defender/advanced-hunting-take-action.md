@@ -1,7 +1,7 @@
 ---
-title: Wykonywanie akcji na zaawansowanych wynikach zapytania wyszukiwania w Microsoft 365 Defender
-description: Szybkie adresuj zagrożenia i zasoby, których dotyczy problem, w wynikach zapytania wyszukiwania zaawansowanego
-keywords: zaawansowane szukanie, szukanie zagrożeń, cyberzagrożenia, Microsoft 365 Defender, microsoft 365, m365, wyszukiwanie, zapytanie, telemetria, take action
+title: Wykonywanie akcji w wyniku zaawansowanego zapytania wyszukiwania zagrożeń w Microsoft 365 Defender
+description: Szybkie rozwiązywanie problemów z zagrożeniami i zasobami, których dotyczy problem, w wynikach zaawansowanego zapytania wyszukiwania zagrożeń
+keywords: zaawansowane wyszukiwanie zagrożeń, wyszukiwanie, zapytania, telemetria, Microsoft 365 Defender, microsoft 365, m365, wyszukiwanie, zapytanie, telemetria
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb881611ad4b983eb80d028dfe3dee20c3ed6216
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: b7fbe659902bf89023e994f4e1304f25f3934db8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754679"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097616"
 ---
-# <a name="take-action-on-advanced-hunting-query-results"></a>Weź udział w zaawansowanych wyszukiwaniach wyników kwerendy
+# <a name="take-action-on-advanced-hunting-query-results"></a>Podjęcie akcji w oparciu o zaawansowane wyniki zapytania wyszukiwania zagrożeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,54 +38,73 @@ ms.locfileid: "63754679"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Używając zaawansowanych i rozbudowanych opcji akcji, możesz szybko zawierać zagrożenia lub [](advanced-hunting-overview.md) rozwiązać naruszone zasoby, które znajdziesz podczas zaawansowanego wyszukiwania. Za pomocą tych opcji możesz:
+Możesz szybko zawierać zagrożenia lub rozwiązywać problemy z zagrożonymi zasobami, które można znaleźć w [zaawansowanym wyszukiwaniu zagrożeń](advanced-hunting-overview.md) przy użyciu zaawansowanych i kompleksowych opcji akcji. Te opcje umożliwiają:
 
-- Na urządzeniach można podjąć różne działania
-- Poddaj pliki kwarantannie
+- Wykonaj różne akcje na urządzeniach
+- Pliki kwarantanny
 
 ## <a name="required-permissions"></a>Wymagane uprawnienia
-Aby podjąć działania przez zaawansowane szukanie, potrzebujesz roli w programie Microsoft Defender for Endpoint z uprawnieniami do przesyłania akcji naprawczych [na urządzeniach](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Jeśli nie możesz podjąć działania, skontaktuj się z administratorem globalnym w celu uzyskania następujących uprawnień:
+Aby podejmować działania na urządzeniach za pomocą zaawansowanego wyszukiwania zagrożeń, musisz mieć rolę w Ochrona punktu końcowego w usłudze Microsoft Defender z [uprawnieniami do przesyłania akcji korygowania na urządzeniach](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Jeśli nie możesz wykonać akcji, skontaktuj się z administratorem globalnym w celu uzyskania następującego uprawnienia:
 
-*Aktywne działania naprawcze związane > zagrożeniami i zarządzanie lukami w zabezpieczeniach — obsługa działań naprawczych*
+*Aktywne akcje korygowania > zagrożenia i zarządzanie lukami w zabezpieczeniach — obsługa korygowania*
 
-## <a name="take-various-actions-on-devices"></a>Na urządzeniach można podjąć różne działania
-Na urządzeniach `DeviceId` oznaczonych w kolumnie wyników zapytania można podjąć następujące działania:
+Aby podjąć działania w przypadku wiadomości e-mail za pośrednictwem zaawansowanego wyszukiwania zagrożeń, potrzebujesz roli w Ochrona usługi Office 365 w usłudze Microsoft Defender do [wyszukiwania i przeczyszczania wiadomości e-mail](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-- Wyizoluj urządzenia, których dotyczy problem, w celu wyizolowania ich w celu zapobiegania późniejszemu przenoszeniu się ataków
-- Zbieranie pakietu badania w celu uzyskania dodatkowych informacji forensycznych
-- Uruchamianie skanowania antywirusowego w celu znalezienia i usunięcia zagrożeń przy użyciu najnowszych aktualizacji analizy zabezpieczeń
-- Rozpoczynanie zautomatyzowanego badania w celu sprawdzenia i rozwiązania problemów związanych z zagrożeniami na urządzeniu i potencjalnie innymi urządzeniami, których to dotyczy
-- Ograniczanie wykonywania aplikacji tylko do plików wykonywalnych podpisanych przez firmę Microsoft, aby uniemożliwić dalsze działania pod kątem zagrożeń za pomocą złośliwego oprogramowania lub innych niezaufanych plików wykonywalnych
+## <a name="take-various-actions-on-devices"></a>Wykonaj różne akcje na urządzeniach
+Możesz wykonać następujące akcje na urządzeniach zidentyfikowanych przez kolumnę `DeviceId` w wynikach zapytania:
 
-Aby dowiedzieć się więcej o tym, jak te akcje odpowiedzi są wykonywane za pomocą programu Microsoft Defender for Endpoint, przeczytaj [o działaniach odpowiedzi na urządzeniach](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+- Wyizoluj urządzenia, których dotyczy problem, aby zawierały infekcję lub zapobiegają późniejszemu przenoszeniu ataków
+- Zbieranie pakietu dochodzeniowego w celu uzyskania dodatkowych informacji kryminalistycznych
+- Uruchamianie skanowania antywirusowego w celu znajdowania i usuwania zagrożeń przy użyciu najnowszych aktualizacji analizy zabezpieczeń
+- Zainicjowanie zautomatyzowanego badania w celu sprawdzenia i skorygowania zagrożeń na urządzeniu i prawdopodobnie innych urządzeniach, których dotyczy problem
+- Ograniczanie wykonywania aplikacji tylko do plików wykonywalnych podpisanych przez firmę Microsoft, co zapobiega kolejnym działaniom zagrożeń za pośrednictwem złośliwego oprogramowania lub innych niezaufanych plików wykonywalnych
+
+Aby dowiedzieć się więcej na temat sposobu wykonywania tych akcji odpowiedzi za pośrednictwem Ochrona punktu końcowego w usłudze Microsoft Defender, [przeczytaj o akcjach reagowania na urządzeniach](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
-## <a name="quarantine-files"></a>Poddaj pliki kwarantannie
-Akcję *kwarantanny można* wdrożyć dla plików, aby były one automatycznie poddane kwarantannie w przypadku ich napotkania. Po wybraniu tej akcji możesz wybrać między następującymi kolumnami, aby określić, które pliki w wynikach zapytania mają zostać poddane kwarantannie:
+### <a name="quarantine-files"></a>Pliki kwarantanny
+Akcję *kwarantanny* można wdrożyć w plikach, tak aby były automatycznie poddawane kwarantannie po napotkaniu. Podczas wybierania tej akcji możesz wybrać jedną z następujących kolumn, aby określić, które pliki w zapytaniu mają zostać poddane kwarantannie:
 
-- `SHA1`: W większości zaawansowanych tabel myśliwnych ta kolumna odwołuje się do SHA-1 pliku, na który wpływała zanotowana akcja. Na przykład w przypadku skopiowania pliku, którego dotyczy problem, będzie to skopiowany plik.
-- `InitiatingProcessSHA1`: W większości zaawansowanych tabel foremnych ta kolumna odnosi się do pliku, który jest odpowiedzialny za inicjowanie zarejestrowanej akcji. Jeśli na przykład uruchomiono proces podrzędny, ten plik inicjowania będzie częścią procesu nadrzędnego. 
-- `SHA256`: Ta kolumna odpowiada wartości SHA-256 pliku zidentyfikowanego w kolumnie `SHA1` .
-- `InitiatingProcessSHA256`: Ta kolumna odpowiada wartości SHA-256 pliku zidentyfikowanego w kolumnie `InitiatingProcessSHA1` .
+- `SHA1`: W większości zaawansowanych tabel wyszukiwania zagrożeń ta kolumna odnosi się do algorytmu SHA-1 pliku, na który miała wpływ zarejestrowana akcja. Jeśli na przykład plik został skopiowany, plik, którego dotyczy problem, będzie skopiowanym plikiem.
+- `InitiatingProcessSHA1`: W większości zaawansowanych tabel wyszukiwania zagrożeń ta kolumna odnosi się do pliku odpowiedzialnego za zainicjowanie zarejestrowanej akcji. Jeśli na przykład uruchomiono proces podrzędny, ten plik inicjatora będzie częścią procesu nadrzędnego. 
+- `SHA256`: Ta kolumna jest odpowiednikiem SHA-256 pliku zidentyfikowanego przez kolumnę `SHA1` .
+- `InitiatingProcessSHA256`: Ta kolumna jest odpowiednikiem SHA-256 pliku zidentyfikowanego przez kolumnę `InitiatingProcessSHA1` .
 
-Aby dowiedzieć się więcej o tym, jak są podejmowane akcje kwarantanny i jak można je przywrócić, przeczytaj o [akcjach odpowiedzi dotyczących plików](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
+Aby dowiedzieć się więcej na temat sposobu wykonywania akcji kwarantanny i sposobu przywracania plików, [przeczytaj o akcjach reagowania na pliki](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 
 >[!NOTE]
->Aby znaleźć pliki i poddać je kwarantannie, wyniki zapytania powinny także zawierać `DeviceId` wartości jako identyfikatory urządzeń.  
+>Aby zlokalizować pliki i poddać je kwarantannie, wyniki zapytania powinny również zawierać `DeviceId` wartości jako identyfikatory urządzeń.  
 
-## <a name="take-action"></a>Działanie
-Aby podjąć dowolną z opisanych akcji, zaznacz jeden lub więcej rekordów w wynikach zapytania, a następnie wybierz pozycję **Akcje**. Kreator przeprowadzi Cię przez proces zaznaczania, a następnie przesyłania preferowanych akcji.
+Aby wykonać dowolną z opisanych akcji, wybierz co najmniej jeden rekord w wynikach zapytania, a następnie wybierz pozycję **Wykonaj akcje**. Kreator przeprowadzi Cię przez proces wybierania, a następnie przesyłania preferowanych akcji.
 
-:::image type="content" source="../../media/take-action-multiple.png" alt-text="Opcja Akcje w portalu Microsoft 365 Defender użytkownika" lightbox="../../media/take-action-multiple.png":::
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="Opcja Wykonaj akcje w portalu Microsoft 365 Defender" lightbox="../../media/take-action-multiple.png":::
 
-## <a name="review-actions-taken"></a>Przejrzenie działań, które zostały wykonane
-Każda akcja jest pojedynczo rejestrowana w centrum [](m365d-action-center.md) akcji w **obszarze Centrum** >  **akcjiHistory** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Przejdź do centrum akcji, aby sprawdzić stan każdej akcji.
+
+## <a name="take-various-actions-on-emails"></a>Wykonaj różne akcje w wiadomościach e-mail
+Oprócz kroków korygowania skoncentrowanych na urządzeniu można również wykonać pewne akcje dotyczące wiadomości e-mail z wyników zapytania. Wybierz rekordy, na które chcesz wykonać akcję, wybierz pozycję **Wykonaj akcje**, a następnie w obszarze **Wybierz akcje** wybierz swój wybór z następujących opcji:
+- `Move to mailbox folder` — wybierz tę opcję, aby przenieść wiadomości e-mail do folderu Wiadomości-śmieci, Skrzynka odbiorcza lub Usunięte elementy
+
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="Opcja Wykonaj akcje w portalu Microsoft 365 Defender" lightbox="../../media/advanced-hunting-take-actions-email.png":::
+
+- `Delete email` — wybierz tę opcję, aby przenieść wiadomości e-mail do folderu Usunięte elementy (**usuwanie nietrwałe**) lub usunąć je trwale (**usuwanie twarde**)
+
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email-del.png" alt-text="Opcja Wykonaj akcje w portalu Microsoft 365 Defender" lightbox="../../media/advanced-hunting-take-actions-email-del.png":::
+
+Możesz również podać nazwę korygowania i krótki opis akcji podjętej w celu łatwego śledzenia jej w historii centrum akcji. Możesz również użyć identyfikatora zatwierdzenia, aby odfiltrować te akcje w centrum akcji. Ten identyfikator jest podany na końcu kreatora:
+
+:::image type="content" source="../../media/choose-email-actions-entities.png" alt-text="Kreator podejmowania akcji przedstawiający wybieranie akcji dla jednostek" lightbox="../../media/choose-email-actions-entities.png":::
+
+Te akcje poczty e-mail mają również zastosowanie do [wykrywania niestandardowego](custom-detections-overview.md) .
+
+
+## <a name="review-actions-taken"></a>Przejrzyj podjęte akcje
+Każda akcja jest rejestrowana indywidualnie w [centrum akcji](m365d-action-center.md) w obszarze **Centrum** >  **akcjiHistory** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Przejdź do centrum akcji, aby sprawdzić stan każdej akcji.
  
 >[!NOTE]
->Niektóre tabele w tym artykule mogą nie być dostępne w programie Microsoft Defender for Endpoint. [Włącz Microsoft 365 Defender](m365d-enable.md), aby poszukać zagrożeń przy użyciu większej liczby źródeł danych. Możesz przenieść zaawansowane przepływy pracy wyszukiwania z programu Microsoft Defender for Endpoint do programu Microsoft 365 Defender, korzystając z procedury migrowania zaawansowanych zapytań myśliwnych z programu [Microsoft Defender dla punktu końcowego](advanced-hunting-migrate-from-mde.md).
+>Niektóre tabele w tym artykule mogą nie być dostępne w Ochrona punktu końcowego w usłudze Microsoft Defender. [Włącz Microsoft 365 Defender](m365d-enable.md), aby wyszukiwać zagrożenia przy użyciu większej liczby źródeł danych. Zaawansowane przepływy pracy wyszukiwania zagrożeń można przenieść z Ochrona punktu końcowego w usłudze Microsoft Defender do Microsoft 365 Defender, wykonując kroki opisane w [temacie Migrowanie zaawansowanych zapytań wyszukiwania zagrożeń z Ochrona punktu końcowego w usłudze Microsoft Defender](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
+- [Omówienie zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md)
 - [Nauka języka zapytań](advanced-hunting-query-language.md)
 - [Praca z wynikami zapytań](advanced-hunting-query-results.md)
 - [Analiza schematu](advanced-hunting-schema-tables.md)
-- [Omówienie Centrum akcji](m365d-action-center.md)
+- [Centrum akcji — omówienie](m365d-action-center.md)

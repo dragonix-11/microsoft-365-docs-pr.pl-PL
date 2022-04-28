@@ -1,10 +1,10 @@
 ---
-title: Krok 3. Ochrona Microsoft 365 użytkowników
+title: Krok 3. Ochrona kont użytkowników Microsoft 365
 f1.keywords:
 - NOCSH
 author: kelleyvice-msft
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
@@ -16,136 +16,136 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Wymagaj bezpiecznego logowania użytkowników przy użyciu uwierzytelniania wieloskładnikowego (MFA) i innych funkcji.
-ms.openlocfilehash: c144b374ecc49128e11635c034f3b4b76020eafd
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 4566b2c8c73ce258899e1de6ef621715092e50a5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63015967"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090280"
 ---
-# <a name="step-3-protect-your-microsoft-365-user-accounts"></a>Krok 3. Ochrona Microsoft 365 użytkowników
+# <a name="step-3-protect-your-microsoft-365-user-accounts"></a>Krok 3. Ochrona kont użytkowników Microsoft 365
 
-Aby zwiększyć bezpieczeństwo logowania użytkowników:
+Aby zwiększyć bezpieczeństwo logowań użytkowników:
 
-- Używanie Windows Hello dla firm
-- Korzystanie Azure Active Directory hasła (Azure AD)
-- Korzystanie z uwierzytelniania wieloskładnikowego
+- Korzystanie z Windows Hello dla firm
+- Korzystanie z ochrony haseł Azure Active Directory (Azure AD)
+- Korzystanie z uwierzytelniania wieloskładnikowego (MFA)
 - Wdrażanie konfiguracji tożsamości i dostępu do urządzeń
-- Ochrona przed naruszeniami zabezpieczeń poświadczeń za pomocą usługi Azure AD Identity Protection
+- Ochrona przed naruszeniem poświadczeń za pomocą usługi Azure AD Identity Protection
 
 ## <a name="windows-hello-for-business"></a>Windows Hello dla firm
 
-Windows Hello dla firm Windows 10 Enterprise hasło na silne uwierzytelnianie dwuskładnikowe podczas logowania się na Windows urządzeniu. Dwa czynniki to nowy typ poświadczeń użytkownika powiązany z urządzeniem i biometryczny lub numer PIN.
+Windows Hello dla firm w Windows 10 Enterprise zastępuje hasła silnym uwierzytelnianiem dwuskładnikowym podczas logowania się na urządzeniu Windows. Te dwa czynniki to nowy typ poświadczeń użytkownika powiązany z urządzeniem oraz dane biometryczne lub numer PIN.
 
 Aby uzyskać więcej informacji, zobacz [omówienie Windows Hello dla firm](/windows/security/identity-protection/hello-for-business/hello-overview).
 
 
-## <a name="azure-ad-password-protection"></a>Ochrona hasłem w usłudze Azure AD
+## <a name="azure-ad-password-protection"></a>Ochrona haseł w usłudze Azure AD
 
-Usługa Azure AD Password Protection wykrywa i blokuje znane słabe hasła i ich warianty, a także może blokować dodatkowe słabe terminy specyficzne dla Twojej organizacji. Domyślne globalne listy zablokowanych haseł są automatycznie stosowane do wszystkich użytkowników w dzierżawie usługi Azure AD. Możesz zdefiniować dodatkowe wpisy na niestandardowej liście zablokowanych haseł. Gdy użytkownicy zmieniają lub resetują swoje hasła, te listy zablokowanych haseł są sprawdzane, aby wymusić stosowanie silnych haseł.
+Usługa Azure AD Password Protection wykrywa i blokuje znane słabe hasła i ich warianty, a także może blokować dodatkowe słabe terminy specyficzne dla twojej organizacji. Domyślne listy haseł z zakazem globalnym są automatycznie stosowane do wszystkich użytkowników w dzierżawie usługi Azure AD. Dodatkowe wpisy można zdefiniować na niestandardowej liście zakazanych haseł. Gdy użytkownicy zmieniają lub resetują swoje hasła, te listy zakazanych haseł są sprawdzane w celu wymuszenia użycia silnych haseł.
 
-Aby uzyskać więcej informacji, zobacz [Konfigurowanie ochrony hasłem usługi Azure AD](/azure/active-directory/authentication/concept-password-ban-bad).
+Aby uzyskać więcej informacji, zobacz [Konfigurowanie ochrony hasłem w usłudze Azure AD](/azure/active-directory/authentication/concept-password-ban-bad).
 
-## <a name="mfa"></a>Uwierzytelniania wieloskładnikowego
+## <a name="mfa"></a>MFA
 
-Uwierzytelniania wieloskładnikowego wymaga, aby logowanie użytkowników podlegało dodatkowej weryfikacji poza hasłem do konta użytkownika. Nawet jeśli złośliwy użytkownik ustali hasło do konta użytkownika, musi też przed udzieleniem dostępu odpowiedzieć na dodatkową weryfikację, taką jak wiadomość SMS wysłana na smartfon.
+Uwierzytelnianie wieloskładnikowe wymaga, aby logowania użytkowników podlegać dodatkowej weryfikacji poza hasłem konta użytkownika. Nawet jeśli złośliwy użytkownik określi hasło konta użytkownika, musi być również w stanie odpowiedzieć na dodatkową weryfikację, taką jak wiadomość SMS wysłana do smartfona przed udzieleniem dostępu.
 
-![Poprawne hasło i dodatkowa weryfikacja skutkują pomyślnym zalogowaniem się.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![Poprawne hasło oraz dodatkowa weryfikacja skutkują pomyślnym zalogowaniem.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Pierwszym krokiem w używaniu uwierzytelniania MFA jest wymaganie go dla [wszystkich kont administratora](protect-your-global-administrator-accounts.md), nazywanych również kontami z uprawnieniami. Poza tym pierwszym krokiem firma Microsoft zaleca uwierzytelniania MFA dla wszystkich użytkowników.
+Pierwszym krokiem korzystania z uwierzytelniania wieloskładnikowego jest [wymaganie go dla wszystkich kont administratorów](protect-your-global-administrator-accounts.md), znanych również jako konta uprzywilejowane. Poza tym pierwszym krokiem firma Microsoft zaleca uwierzytelnianie wieloskładnikowe dla wszystkich użytkowników.
 
-Uwierzytelniania wieloskładnikowego można wymagać na trzy sposoby w zależności od Microsoft 365 mfa.
+Istnieją trzy sposoby, aby wymagać od użytkowników używania uwierzytelniania wieloskładnikowego na podstawie planu Microsoft 365.
 
-| Planowanie | Zalecenie |
+| Plan | Zalecenie |
 |---------|---------|
-|Wszystkie Microsoft 365 (bez Azure AD — wersja Premium P1 licencji P2)     |[Włącz domyślne ustawienia zabezpieczeń w usłudze Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Wartości domyślne zabezpieczeń w usłudze Azure AD obejmują uwierzytelniania wieloskładnikowe dla użytkowników i administratorów.   |
-|Microsoft 365 E3 (obejmuje Azure AD — wersja Premium P1 licencji)     | Użyj typowych [zasad dostępu warunkowego,](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) aby skonfigurować następujące zasady: <br>- [Wymaganie uwierzytelniania wieloskładnikowego dla administratorów](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Wymaganie uwierzytelniania WIELOSKŁADNIKOWEGO dla wszystkich użytkowników](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blokowanie starszego uwierzytelniania](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (obejmuje Azure AD — wersja Premium P2 licencji)     | Korzystając z usługi Azure AD Identity Protection, zacznij implementować zalecany przez firmę Microsoft zestaw dostępu warunkowego i powiązanych zasad, tworząc te dwie zasady:<br> - [Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania jest średnie lub wysokie](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [Zmiana hasła przez użytkowników o wysokim poziomie ryzyka](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
+|Wszystkie plany Microsoft 365 (bez licencji Azure AD — wersja Premium P1 lub P2)     |[Włącz wartości domyślne zabezpieczeń w usłudze Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Ustawienia domyślne zabezpieczeń w usłudze Azure AD obejmują uwierzytelnianie wieloskładnikowe dla użytkowników i administratorów.   |
+|Microsoft 365 E3 (w tym licencje Azure AD — wersja Premium P1)     | Użyj [typowych zasad dostępu warunkowego](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) , aby skonfigurować następujące zasady: <br>- [Wymagaj uwierzytelniania wieloskładnikowego dla administratorów](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Wymagaj uwierzytelniania wieloskładnikowego dla wszystkich użytkowników](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blokowanie starszego uwierzytelniania](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (w tym licencje Azure AD — wersja Premium P2)     | Korzystając z usługi Azure AD Identity Protection, rozpocznij implementowanie zalecanego przez firmę Microsoft zestawu dostępu warunkowego i powiązanych zasad, tworząc te dwie zasady:<br> - [Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania jest średnie lub wysokie](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [Użytkownicy wysokiego ryzyka muszą zmienić hasło](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
 
-### <a name="security-defaults"></a>Domyślne ustawienia zabezpieczeń
+### <a name="security-defaults"></a>Ustawienia domyślne zabezpieczeń
 
-Wartości domyślne zabezpieczeń to nowa funkcja dla subskrypcji Microsoft 365 i Office 365 wersji próbnej utworzonych po 21 października 2019 r. Te subskrypcje mają włączone ustawienia domyślne zabezpieczeń, co wymaga, aby wszyscy użytkownicy korzystali ***z uwierzytelniania WIELOSKŁADNIKOWEGO Microsoft Authenticator aplikacji***.
+Wartości domyślne zabezpieczeń to nowa funkcja dla subskrypcji Microsoft 365 i Office 365 płatnych lub próbnych utworzonych po 21 października 2019 r. Te subskrypcje mają włączone wartości domyślne zabezpieczeń, co ***wymaga od wszystkich użytkowników używania uwierzytelniania wieloskładnikowego z aplikacją Microsoft Authenticator***.
  
-Użytkownicy mają 14 dni na zarejestrowanie się w celu uwierzytelniania wieloskładnikowego za pomocą aplikacji Microsoft Authenticator na swoich telefonach inteligentnych, która rozpoczyna się od pierwszego logowania po włączeniu ustawień domyślnych zabezpieczeń. Po upływie 14 dni użytkownik nie będzie mógł się zalogować do czasu ukończenia rejestracji uwierzytelniania MFA.
+Użytkownicy mają 14 dni na zarejestrowanie się w usłudze MFA przy użyciu aplikacji Microsoft Authenticator ze swoich smartfonów, co rozpoczyna się od pierwszego zalogowania się po włączeniu ustawień domyślnych zabezpieczeń. Po upływie 14 dni użytkownik nie będzie mógł się zalogować do momentu ukończenia rejestracji usługi MFA.
 
-Domyślne ustawienia zabezpieczeń zapewniają, że wszystkie organizacje mają podstawowy poziom zabezpieczeń dla domyślnie włączonego logowania użytkownika. Ustawienia domyślne zabezpieczeń można wyłączyć na rzecz uwierzytelniania wieloskładnikowego za pomocą zasad dostępu warunkowego lub dla poszczególnych kont.
+Ustawienia domyślne zabezpieczeń zapewniają, że wszystkie organizacje mają podstawowy poziom zabezpieczeń logowania użytkownika, który jest domyślnie włączony. Wartości domyślne zabezpieczeń można wyłączyć na korzyść uwierzytelniania wieloskładnikowego z zasadami dostępu warunkowego lub dla poszczególnych kont.
 
-Aby uzyskać więcej informacji, zobacz [omówienie domyślnych ustawień zabezpieczeń](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+Aby uzyskać więcej informacji, zobacz [omówienie ustawień domyślnych zabezpieczeń](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### <a name="conditional-access-policies"></a>Zasady dostępu warunkowego
 
-Zasady dostępu warunkowego to zestaw reguł określających warunki, na podstawie których sprawdzane są logowania i do których jest udzielany dostęp. Można na przykład utworzyć zasady dostępu warunkowego o treści:
+Zasady dostępu warunkowego to zestaw reguł określających warunki oceny logowań i udzielania dostępu. Można na przykład utworzyć zasady dostępu warunkowego, które stanowią:
 
-- Jeśli nazwa konta użytkownika jest członkiem grupy użytkowników z przypisanymi rolami administratora Exchange, użytkownika, hasła, zabezpieczeń, administratora systemu **SharePoint, administratora** **Exchange, administratora** SharePoint lub administratora globalnego, przed zezwoleniem na dostęp należy wymagać  uwierzytelniania wieloskładnikowego.
+- Jeśli nazwa konta użytkownika jest członkiem grupy dla użytkowników, do których przypisano Exchange, użytkownika, hasło, zabezpieczenia, SharePoint, **administratora Exchange**, **administratora SharePoint** lub **administratora globalnego**, przed zezwoleniem na dostęp należy wymagać uwierzytelniania wieloskładnikowego.
 
-Te zasady pozwalają na wymaganie uwierzytelniania MFA opartego na członkostwie w grupach zamiast próby skonfigurowania poszczególnych kont użytkowników do uwierzytelniania MFA, gdy są one przypisane do tych ról administratora lub nieprzypisane do nich.
+Te zasady umożliwiają wymaganie uwierzytelniania wieloskładnikowego na podstawie członkostwa w grupie, zamiast próbować skonfigurować indywidualne konta użytkowników dla uwierzytelniania wieloskładnikowego, gdy są przypisane lub nieprzypisane z tych ról administratora.
 
-Możesz również użyć zasad dostępu warunkowego, aby uzyskać bardziej zaawansowane możliwości, takie jak wymaganie, aby logowanie było wykonywane ze zgodnego urządzenia, takiego jak komputer przenośny z systemem Windows 10.
+Możesz również użyć zasad dostępu warunkowego, aby uzyskać bardziej zaawansowane możliwości, takie jak wymaganie, aby logowanie odbywało się ze zgodnego urządzenia, takiego jak laptop z systemem Windows 10.
 
-Dostęp warunkowy wymaga Azure AD — wersja Premium P1 licencji, które są zawarte w Microsoft 365 E3 i E5.
+Dostęp warunkowy wymaga licencji Azure AD — wersja Premium P1, które są dołączone do Microsoft 365 E3 i E5.
 
-Aby uzyskać więcej informacji, zobacz [Omówienie dostępu warunkowego](/azure/active-directory/conditional-access/overview).
+Aby uzyskać więcej informacji, zobacz [omówienie dostępu warunkowego](/azure/active-directory/conditional-access/overview).
 
-### <a name="using-these-methods-together"></a>Wspólne korzystanie z tych metod
+### <a name="using-these-methods-together"></a>Używanie tych metod razem
 
 Należy pamiętać o następujących kwestiach:
 
-- Nie można włączyć ustawień domyślnych zabezpieczeń, jeśli włączono jakiekolwiek zasady dostępu warunkowego.
-- Nie można włączyć żadnych zasad dostępu warunkowego, jeśli włączono ustawienia domyślne zabezpieczeń.
+- Nie można włączyć wartości domyślnych zabezpieczeń, jeśli są włączone jakiekolwiek zasady dostępu warunkowego.
+- Nie można włączyć żadnych zasad dostępu warunkowego, jeśli masz włączone ustawienia domyślne zabezpieczeń.
 
-Jeśli są włączone domyślne ustawienia zabezpieczeń, wszyscy nowi użytkownicy są monitni o rejestrację uwierzytelniania MFA i korzystanie z Microsoft Authenticator usługi. 
+Jeśli ustawienia domyślne zabezpieczeń są włączone, wszyscy nowi użytkownicy są monitowane o rejestrację uwierzytelniania wieloskładnikowego i korzystanie z aplikacji Microsoft Authenticator. 
 
-W poniższej tabeli przedstawiono wyniki włączania uwierzytelniania MFA z ustawieniami domyślnymi zabezpieczeń i zasadami dostępu warunkowego.
+W tej tabeli przedstawiono wyniki włączania uwierzytelniania wieloskładnikowego z wartościami domyślnymi zabezpieczeń i zasadami dostępu warunkowego.
 
-| Metoda | Włączone | Wyłączone | Dodatkowa metoda uwierzytelniania |
+| Metoda | Włączone | Wyłączona | Dodatkowa metoda uwierzytelniania |
 |:-------|:-----|:-------|:-------|
-| **Domyślne ustawienia zabezpieczeń**  | Nie można używać zasad dostępu warunkowego | Można używać zasad dostępu warunkowego | Microsoft Authenticator aplikacji |
-| **Zasady dostępu warunkowego** | Jeśli są włączone, nie można włączyć domyślnych ustawień zabezpieczeń | Jeśli wszystkie są wyłączone, możesz włączyć ustawienia domyślne zabezpieczeń  | Użytkownik określa podczas rejestracji uwierzytelniania MFA  |
+| **Ustawienia domyślne zabezpieczeń**  | Nie można używać zasad dostępu warunkowego | Może używać zasad dostępu warunkowego | aplikacja Microsoft Authenticator |
+| **Zasady dostępu warunkowego** | Jeśli są włączone, nie można włączyć wartości domyślnych zabezpieczeń | Jeśli wszystkie są wyłączone, można włączyć ustawienia domyślne zabezpieczeń  | Użytkownik określa podczas rejestracji uwierzytelniania wieloskładnikowego  |
 ||||
 
-## <a name="zero-trust-identity-and-device-access-configurations"></a>Konfiguracje zerowym zaufaniem tożsamości i dostępu do urządzeń
+## <a name="zero-trust-identity-and-device-access-configurations"></a>Konfiguracje Zero Trust dostępu do tożsamości i urządzeń
 
-Ustawienia i zasady zerowego zaufania w zakresie tożsamości i dostępu do urządzeń to zalecane wstępnie wymagane funkcje i ich ustawienia w połączeniu z zasadami dostępu warunkowego, usługi Intune i usługi Azure AD Identity Protection, które określają, czy dane żądanie dostępu powinno zostać udzielone i na jakich warunkach. Określenie to jest oparte na koncie użytkownika logowania, używanego urządzenia, aplikacji używanej przez użytkownika do uzyskiwania dostępu, lokalizacji, z której jest dokonywane żądanie dostępu, oraz oceny ryzyka związanego z żądaniem. Funkcja ta pomaga zapewnić, że tylko zatwierdzeni użytkownicy i urządzenia mogą uzyskać dostęp do krytycznych zasobów.
+Zero Trust ustawienia i zasady dostępu do tożsamości i urządzeń są zalecanymi funkcjami wymagań wstępnych i ich ustawieniami w połączeniu z zasadami dostępu warunkowego, Intune i usługi Azure AD Identity Protection, które określają, czy należy udzielić danego żądania dostępu i na jakich warunkach. To określenie jest oparte na koncie użytkownika logowania, używanym urządzeniu, aplikacji używanej przez użytkownika w celu uzyskania dostępu, lokalizacji, z której jest wykonywane żądanie dostępu, oraz ocenie ryzyka żądania. Ta funkcja pomaga zagwarantować, że tylko zatwierdzone użytkownicy i urządzenia będą mogli uzyskiwać dostęp do krytycznych zasobów.
 
 >[!Note]
->Usługa Azure AD Identity Protection wymaga Azure AD — wersja Premium P2 licencji, które są zawarte w Microsoft 365 E5.
+>Usługa Azure AD Identity Protection wymaga licencji Azure AD — wersja Premium P2, które są dołączone do Microsoft 365 E5.
 >
 
-Zasady dostępu do urządzenia i tożsamości są zdefiniowane jako używane w trzech warstwach: 
+Zasady dostępu do tożsamości i urządzeń są zdefiniowane tak, aby były używane w trzech warstwach: 
 
-- Ochrona według planu bazowego to minimalny poziom zabezpieczeń tożsamości i urządzeń, które mają dostęp do Twoich aplikacji i danych.
-- Ochrona po poufnej stronie zapewnia dodatkową ochronę dla określonych danych. Tożsamości i urządzenia podlegają wyższym poziomom wymagań dotyczących zabezpieczeń i kondycji urządzenia.
-- Ochrona środowisk o ściśle uregulowanych lub sklasyfikowanych danych dotyczy zazwyczaj małych ilości danych, które są wysoce klasyfikowane, zawierają tajemnice handlowe lub podlegają przepisom dotyczącym danych. Tożsamości i urządzenia podlegają znacznie wyższym poziomom wymagań dotyczących zabezpieczeń i kondycji urządzenia. 
+- Ochrona według planu bazowego to minimalny poziom zabezpieczeń tożsamości i urządzeń uzyskujących dostęp do aplikacji i danych.
+- Ochrona poufna zapewnia dodatkowe zabezpieczenia dla określonych danych. Tożsamości i urządzenia podlegają wyższym poziomom wymagań dotyczących zabezpieczeń i kondycji urządzeń.
+- Ochrona środowisk z wysoce regulowanymi lub sklasyfikowanymi danymi dotyczy zazwyczaj niewielkich ilości danych, które są wysoce sklasyfikowane, zawierają wpisy tajne handlowe lub podlegają przepisom dotyczącym danych. Tożsamości i urządzenia podlegają znacznie wyższym poziomom wymagań dotyczących zabezpieczeń i kondycji urządzeń. 
 
-Te warstwy i odpowiadające im konfiguracje zapewniają spójny poziom ochrony danych, tożsamości i urządzeń.
+Te warstwy i odpowiednie konfiguracje zapewniają spójne poziomy ochrony danych, tożsamości i urządzeń.
 
-Firma Microsoft zdecydowanie zaleca skonfigurowanie i stosowanie zasad dostępu do urządzeń i tożsamości bez zaufania w Twojej organizacji, w tym określonych ustawień dla usług Microsoft Teams, Exchange Online i SharePoint. Aby uzyskać więcej informacji, zobacz [Konfiguracje dostępu do urządzeń i tożsamości bez zaufania](../security/office-365-security/microsoft-365-policies-configurations.md).
+Firma Microsoft zdecydowanie zaleca konfigurowanie i wdrażanie Zero Trust zasad dostępu do tożsamości i urządzeń w organizacji, w tym określonych ustawień dla Microsoft Teams, Exchange Online i SharePoint. Aby uzyskać więcej informacji, zobacz [Zero Trust konfiguracje tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md).
 
-## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
+## <a name="azure-ad-identity-protection"></a>Ochrona tożsamości w usłudze Azure AD
 
-W tej sekcji dowiesz się, jak skonfigurować zasady chroniące przed złamaniem poświadczeń, gdy atakujący określi nazwę konta użytkownika i hasło w celu uzyskania dostępu do usług i danych w chmurze organizacji. Usługa Azure AD Identity Protection udostępnia wiele sposobów ochrony przed naruszeniem poświadczeń użytkownika przez atakującego.
+W tej sekcji dowiesz się, jak skonfigurować zasady chroniące przed naruszeniem poświadczeń, w których osoba atakująca określa nazwę konta użytkownika i hasło w celu uzyskania dostępu do usług i danych w chmurze organizacji. Usługa Azure AD Identity Protection oferuje szereg sposobów zapobiegania naruszaniu poświadczeń konta użytkownika przez osobę atakującą.
 
-Dzięki usłudze Azure AD Identity Protection możesz:
+Usługa Azure AD Identity Protection umożliwia:
 
-|Funkcja|Opis|
+|Możliwości|Opis|
 |:---------|:---------|
-| Określanie i adresuj potencjalne luki w tożsamościach organizacji | Usługa Azure AD używa uczenia maszynowego do wykrywania anomalii i podejrzanych działań, takich jak logowania i działania po zalogowaniu się. Korzystając z tych danych, usługa Azure AD Identity Protection generuje raporty i alerty, które ułatwiają ocenę problemów i podjęcia działań.|
-|Wykrywaj podejrzane działania związane z tożsamościami Twojej organizacji i odpowiadaj na nie automatycznie|Możesz skonfigurować zasady oparte na czynnikach ryzyka, które będą automatycznie odpowiadać na wykryte problemy po osiągnięciu określonego poziomu ryzyka. Te zasady, oprócz innych kontrolek dostępu warunkowego zapewnianych przez usługi Azure AD i Microsoft Intune, mogą automatycznie blokować dostęp lub podjąć działania korygujące, takie jak resetowanie hasła i wymaganie uwierzytelniania wieloskładnikowego usługi Azure AD dla kolejnych logowania. |
-| Badanie podejrzanych zdarzeń i rozwiązywanie ich za pomocą działań administracyjnych | Zdarzenia związane z zagrożeniami można zbadać, korzystając z informacji dotyczących zdarzenia związanego z zabezpieczeniami. Dostępne są podstawowe przepływy pracy służące do śledzenia badań i inicjowania działań naprawczych, takich jak resetowanie hasła. |
+| Określanie i rozwiązywanie potencjalnych luk w zabezpieczeniach tożsamości organizacji | Usługa Azure AD używa uczenia maszynowego do wykrywania anomalii i podejrzanych działań, takich jak logowania i działania po zalogowaniu. Korzystając z tych danych, usługa Azure AD Identity Protection generuje raporty i alerty, które ułatwiają ocenę problemów i podjęcie akcji.|
+|Wykrywanie podejrzanych akcji związanych z tożsamościami organizacji i automatyczne reagowanie na nie|Można skonfigurować zasady oparte na ryzyku, które automatycznie reagują na wykryte problemy po osiągnięciu określonego poziomu ryzyka. Te zasady, oprócz innych mechanizmów kontroli dostępu warunkowego udostępnianych przez usługę Azure AD i Microsoft Intune, mogą automatycznie blokować dostęp lub podejmować działania naprawcze, w tym resetowanie haseł i wymaganie uwierzytelniania wieloskładnikowego usługi Azure AD na potrzeby kolejnych logowań. |
+| Badanie podejrzanych zdarzeń i rozwiązywanie ich za pomocą akcji administracyjnych | Zdarzenia o podwyższonym ryzyku można zbadać, korzystając z informacji o zdarzeniu dotyczącym zabezpieczeń. Dostępne są podstawowe przepływy pracy umożliwiające śledzenie badań i inicjowanie akcji korygowania, takich jak resetowanie haseł. |
 |||
 
-Zobacz [więcej informacji na temat usługi Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
+Zobacz [więcej informacji o usłudze Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
-Zapoznaj się [z krokami włączania usługi Azure AD Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
+Zobacz [kroki włączania usługi Azure AD Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 
-## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>Zasoby techniczne dla uwierzytelniania wieloskładnikowego i bezpiecznego logowania
+## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>Zasoby techniczne administratora dotyczące uwierzytelniania wieloskładnikowego i bezpiecznych logowań
 
-- [Uwierzytelniania wieloskładnikowego dla Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
-- [Wdrażanie tożsamości dla usługi Microsoft 365](deploy-identity-solution-overview.md)
-- [Filmy szkoleniowe na platformie Azure Academy w usłudze Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
+- [Uwierzytelnianie wieloskładnikowe dla Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
+- [Wdrażanie tożsamości dla Microsoft 365](deploy-identity-solution-overview.md)
+- [Filmy szkoleniowe dotyczące usługi Azure AD w akademii platformy Azure](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Konfigurowanie zasad rejestracji usługi Azure AD Multi-Factor Authentication](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Konfiguracje tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md)
+- [Konfiguracje dostępu do tożsamości i urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>Następny krok
 

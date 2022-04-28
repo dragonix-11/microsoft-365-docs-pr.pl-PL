@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika w celu importowania fizycznych danych powodujących błędy
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Administratorzy mogą skonfigurować łącznik danych do importowania danych z fizycznego systemu rozwiązywania problemów organizacji w celu Microsoft 365. Dzięki temu można użyć tych danych w zasadach zarządzania ryzykiem wewnętrznym, aby ułatwić wykrywanie dostępu do budynków fizycznych przez określonych użytkowników, które mogą wskazywać na możliwe wewnętrzne zagrożenie dla organizacji.
-ms.openlocfilehash: a55874b9f920919c16a094d32c4edcde394600d4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 96017d6477f914c799fecbe834abdac22917bfaa
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994881"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077959"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Konfigurowanie łącznika w celu importowania fizycznych danych powodujących błędy (wersja zapoznawcza)
 

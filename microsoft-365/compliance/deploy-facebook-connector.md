@@ -2,8 +2,8 @@
 title: Wdrażanie łącznika w celu archiwizacji danych stron biznesowych usługi Facebook
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratorzy mogą skonfigurować natywny łącznik do importowania i archiwizowania stron biznesowych serwisu Facebook w celu Microsoft 365. Po zaimportowaniu tych danych do Microsoft 365 możesz użyć funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać zarządzaniem danymi w serwisie Facebook organizacji.
-ms.openlocfilehash: b58b3f1707a8c3bb52aa7fc5ebc9c359ef9a8a97
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b3f3770b4e3cf8415111ebdd1881905ae21f4739
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998777"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098873"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Wdrażanie łącznika w celu archiwizacji danych stron biznesowych usługi Facebook
 

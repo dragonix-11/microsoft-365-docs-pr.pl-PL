@@ -2,8 +2,8 @@
 title: Konfigurowanie inspekcji (Premium) w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano sposób konfigurowania inspekcji (Premium), aby można było przeprowadzać badania kryminalistyczne w przypadku naruszenia zabezpieczeń kont użytkowników lub badania innych zdarzeń związanych z zabezpieczeniami.
-ms.openlocfilehash: 6f4f9953c88b1d994d4f033629cc89a6529fb9de
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f1c858964ee3cb5e6cdfcdb7416468318393ebba
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998843"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097959"
 ---
 # <a name="set-up-microsoft-purview-audit-premium"></a>Konfigurowanie inspekcji usługi Microsoft Purview (Premium)
 

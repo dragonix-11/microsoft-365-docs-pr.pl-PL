@@ -2,8 +2,8 @@
 title: Przeszukiwanie dziennika inspekcji w portalu zgodności usługi Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ description: Użyj portalu zgodności usługi Microsoft Purview, aby przeszukać
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 6c0f26bbda2ba28b98fc80b80ce4a520d9fb39c3
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: fa397ec1ce7dea253367dfb917166a9a43655896
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998909"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098477"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Przeszukiwanie dziennika inspekcji w centrum zgodności
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32baee17e01aa4223124e21b7d20c219c0dc4b7f
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 51f9c373a68e34ffafa5c3763b8efe77fa2c6146
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841854"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098741"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Usługa ochrony punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych Stanów Zjednoczonych
 
@@ -78,7 +78,7 @@ Poniżej przedstawiono adresy URL portalu Ochrona punktu końcowego w usłudze M
 |---|---|
 |GCC|<https://security.microsoft.com>|
 |GCC wysoki|<https://security.microsoft.us>|
-|DoD|<https://security.microsoft.us>|
+|DoD|<https://security.apps.mil>|
 |
 > [!NOTE]
 > Jeśli jesteś klientem GCC i w trakcie przechodzenia z Ochrona punktu końcowego w usłudze Microsoft Defender komercyjnego do GCC, użyj polecenia https://transition.security.microsoft.com , aby uzyskać dostęp do Ochrona punktu końcowego w usłudze Microsoft Defender komercyjnych Danych.

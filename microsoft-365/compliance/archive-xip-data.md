@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych źródłowych XIP w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych źródłowych XIP z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 06309397db05034e3df3263efa30a5cca5a78682
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 038572b401730e66d08ac05ad1f9df0a2e246c22
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001505"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099268"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>Konfigurowanie łącznika do archiwizowania danych źródłowych XIP
 

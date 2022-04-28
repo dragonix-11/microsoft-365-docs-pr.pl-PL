@@ -2,8 +2,8 @@
 title: Wykonywanie zapytań dotyczących zawartości w zestawie przeglądów
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak utworzyć i uruchomić zapytanie w zestawie przeglądów, aby zorganizować zawartość w celu bardziej wydajnego przeglądu w przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aad8cd7461c795f8ecba03edab76e81e8384430d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 44f4b9d6aed92a6593f5c6c70322656e4c770c3d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991935"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090922"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Wykonuj zapytania i filtruj zawartość w zestawie do przeglądu
 

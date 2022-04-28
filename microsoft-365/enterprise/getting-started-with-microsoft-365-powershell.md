@@ -1,8 +1,8 @@
 ---
-title: Wprowadzenie do programu PowerShell dla Microsoft 365
+title: Wprowadzenie za pomocą programu PowerShell dla Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: landing-page
@@ -16,46 +16,46 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: 'Podsumowanie: opis wartości programu PowerShell dla programu Microsoft 365, sposobu na połączenia się z dzierżawą usługi Microsoft 365 i gdzie można uzyskać pomoc.'
-ms.openlocfilehash: f75e93d503a2cdb002178be16e6fb4c246fe7ae8
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: 'Podsumowanie: informacje o wartości programu PowerShell dla Microsoft 365, sposobie nawiązywania połączenia z dzierżawą Microsoft 365 i miejscach uzyskania pomocy.'
+ms.openlocfilehash: af9e4b600c14ffff47117d551962e9b7e041a33f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681155"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091308"
 ---
-# <a name="get-started-with-powershell-for-microsoft-365"></a>Wprowadzenie do programu PowerShell dla Microsoft 365
+# <a name="get-started-with-powershell-for-microsoft-365"></a>Wprowadzenie za pomocą programu PowerShell dla Microsoft 365
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Za pomocą poleceń i skryptów w programie PowerShell Microsoft 365 zarządzać Microsoft 365 usprawnić codzienną pracę. Skorzystaj z poniższych informacji, aby dowiedzieć się, dlaczego program PowerShell dla programu Microsoft 365 ma kluczowe znaczenie dla zarządzania usługą Microsoft 365, sposobu łączenia się z subskrypcją usługi Microsoft 365 i tworzenia raportów oraz tego, gdzie można uzyskać więcej informacji od społeczności Microsoft 365.
+Polecenia i skrypty w programie PowerShell umożliwiają Microsoft 365 zarządzanie Microsoft 365 i usprawnianie codziennej pracy. Skorzystaj z poniższych informacji, aby dowiedzieć się, dlaczego program PowerShell dla Microsoft 365 ma kluczowe znaczenie dla zarządzania Microsoft 365, nawiązywania połączenia z subskrypcją Microsoft 365 i tworzenia raportów oraz gdzie można uzyskać więcej informacji od społeczności Microsoft 365.
   
-Wybierz jeden z tych tematów:
+Wybierz z następujących tematów:
   
-- [**Dlaczego należy używać programu PowerShell dla Microsoft 365**](why-you-need-to-use-microsoft-365-powershell.md)
+- [**Dlaczego musisz używać programu PowerShell do Microsoft 365**](why-you-need-to-use-microsoft-365-powershell.md)
     
-    Rozpocznij tutaj, jeśli nie masz jeszcze programu PowerShell dla Microsoft 365. Dowiedz się, dlaczego należy używać programu PowerShell do Microsoft 365.
+    Rozpocznij tutaj, jeśli dopiero zaczynasz korzystać z programu PowerShell dla Microsoft 365. Dowiedz się, dlaczego należy używać programu PowerShell do Microsoft 365.
     
-- [**Połączenie do Microsoft 365 za pomocą programu PowerShell**](connect-to-microsoft-365-powershell.md)
+- [**Połączenie z platformą Microsoft 365 za pomocą programu PowerShell**](connect-to-microsoft-365-powershell.md)
     
-    Rozpocznij tutaj, aby połączyć się z subskrypcją Microsoft 365 za pomocą programu PowerShell dla Microsoft 365 i wykonywać zadania administracyjne z wiersza polecenia.
+    Zacznij tutaj, aby nawiązać połączenie z subskrypcją Microsoft 365 przy użyciu programu PowerShell na potrzeby Microsoft 365 i wykonywać zadania administracyjne z poziomu wiersza polecenia.
     
-- [**Połączenie do wszystkich Microsoft 365 w jednym oknie programu PowerShell**](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
+- [**Połączenie do wszystkich usług Microsoft 365 w jednym oknie programu PowerShell**](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
     
-    Możesz zarządzać Microsoft 365 w osobnych oknach dla usługi Skype dla firm Online, SharePoint Online, Microsoft Exchange Online i Microsoft 365 kont i licencji. Możesz też zarządzać nimi wszystkimi w jednym oknie. W tym artykule wyjaśniono, jak to zrobić.
+    Możesz zarządzać Microsoft 365 w oddzielnych oknach dla kont i licencji Skype dla firm Online, SharePoint Online, Microsoft Exchange Online i Microsoft 365. Możesz też zarządzać nimi wszystkimi z jednego okna. W tym artykule wyjaśniono, jak to zrobić.
     
-- [**Tworzenie raportów w programie PowerShell w programie Microsoft 365**](use-windows-powershell-to-create-reports-in-microsoft-365.md)
+- [**Tworzenie raportów w Microsoft 365 przy użyciu programu PowerShell**](use-windows-powershell-to-create-reports-in-microsoft-365.md)
     
-    Rozpocznij tutaj, jeśli po zainstalowaniu programu PowerShell dla Microsoft 365 modułach sterowania i chcesz dowiedzieć się, jak szybko tworzyć raporty za pomocą poleceń automatyzacji.
+    Zacznij tutaj, jeśli zainstalowano program PowerShell dla modułów Microsoft 365 i chcesz dowiedzieć się więcej na temat szybkiego tworzenia raportów za pomocą poleceń automatyzacji.
     
-- [**Odwołania do polecenia cmdlet dla Microsoft 365 usług**](cmdlet-references-for-microsoft-365-services.md)
+- [**Odwołania do polecenia cmdlet dla usług Microsoft 365**](cmdlet-references-for-microsoft-365-services.md)
     
-    Dowiedz się więcej o poleceniach cmdlet dla programu PowerShell dla Microsoft 365 modułach.
+    Dowiedz się więcej o poleceniach cmdlet programu PowerShell dla modułów Microsoft 365.
     
 - [**Microsoft 365 zasobów społeczności dla programu PowerShell**](microsoft-365-powershell-community-resources.md)
     
-    Rozpocznij tutaj, aby nawiązać połączenie ze społecznością programu PowerShell i uzyskać więcej informacji na temat korzystania z programu PowerShell dla Microsoft 365.
+    Zacznij tutaj, aby nawiązać połączenie ze społecznością programu PowerShell i uzyskać więcej informacji na temat korzystania z programu PowerShell dla Microsoft 365.
     
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Zarządzanie Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Zarządzanie platformą Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

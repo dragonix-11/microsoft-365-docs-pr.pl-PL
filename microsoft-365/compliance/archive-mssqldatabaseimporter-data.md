@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych z usługi MS SQL Database
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z usługi MS SQL Database. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 0da93ade15c8cf5ddf758f16da89b46553fb3c83
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2e3a0c6199785d2ebf43be83d82521df696bef51
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997514"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078337"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Konfigurowanie łącznika do archiwizowania danych z usługi MS SQL Database
 

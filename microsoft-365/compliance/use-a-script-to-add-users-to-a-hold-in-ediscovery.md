@@ -2,8 +2,8 @@
 title: Używanie skryptu do dodawania użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Dowiedz się, jak uruchomić skrypt w celu dodania skrzynek pocztowych & OneDrive dla Firm witryn do nowego archiwum skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 70ec2481e8fa352be47544cd2fe6a772c2fbb325
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c652cd7d553faa5a7f85c59127e4aa2acfd7df4b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000892"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097915"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Używanie skryptu do dodawania użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa)
 

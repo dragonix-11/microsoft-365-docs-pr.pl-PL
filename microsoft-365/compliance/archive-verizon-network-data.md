@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych usługi Verizon Network w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik TeleMessage do importowania i archiwizowania danych PROGRAMU SMS i MMS z sieci Verizon w Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać danymi innych firm w organizacji.
-ms.openlocfilehash: efa310c17441db67eed31d729daa28dd34755538
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5c347cf6854719780e8c64038217bd841920cd80
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994969"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098609"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Konfigurowanie łącznika do archiwizowania danych usługi Verizon Network
 

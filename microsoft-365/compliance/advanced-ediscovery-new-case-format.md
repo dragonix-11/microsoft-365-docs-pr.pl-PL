@@ -2,8 +2,8 @@
 title: Nowy format przypadku w funkcji zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: ninachen
 manager: laurawi
 ms.date: ''
@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj nowego formatu przypadku zbierania elektronicznych materiałów dowodowych (Premium), aby dodać więcej elementów do przeglądania zestawów i korzystać z innych zwiększonych limitów i nowych funkcji.
-ms.openlocfilehash: 55a5fdc2493fe046ebb8952fcbcb382750f511a5
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 50713ea585655b441d624a70cf0986245566b8bf
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973426"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098675"
 ---
 # <a name="use-the-new-case-format-in-ediscovery-premium"></a>Użyj nowego formatu przypadku w funkcji zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Więcej organizacji korzysta z rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview na potrzeby krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe. W miarę wzrostu użycia zbierania elektronicznych materiałów dowodowych (Premium) typowym wymaganiem klienta jest zwiększenie łącznej ilości zawartości, którą można zarządzać w jednym przypadku zbierania elektronicznych materiałów dowodowych (Premium). Aby ułatwić uwzględnienie znacznego wzrostu rozmiaru przypadku, zarówno w przypadku całkowitego woluminu danych, jak i całkowitej liczby elementów, możesz teraz wybrać nowy format przypadku podczas tworzenia sprawy zbierania elektronicznych materiałów dowodowych (Premium).  
 

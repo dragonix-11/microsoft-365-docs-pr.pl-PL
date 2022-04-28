@@ -2,8 +2,8 @@
 title: Tworzenie, raportowanie i usuwanie wyszukiwania zawartości
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Dowiedz się, jak zautomatyzować zadania wyszukiwania zawartości, takie jak tworzenie wyszukiwań i uruchamianie raportów przy użyciu programu PowerShell Centrum zgodności & zabezpieczeń.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c6e84641fef819503349803cdd54d5aaa860fc50
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8ef806b9be55b8c39ad26f477d35eb076b22c16b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000229"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099284"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Tworzenie, raportowanie i usuwanie wielu wyszukiwań zawartości
 

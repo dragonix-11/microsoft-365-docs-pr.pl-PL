@@ -2,8 +2,8 @@
 title: Trenowanie modelu kodowania predykcyjnego w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 3335e437a659eab984943adda31abdb344908c1c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1f94f49f93310ea4b40d588c7c43ecce7ec535cc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997653"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091462"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Trenowanie modelu kodowania predykcyjnego (wersja zapoznawcza)
 

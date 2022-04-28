@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika w celu importowania ogólnych danych inspekcji opieki zdrowotnej
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik danych do importowania danych elektronicznej dokumentacji opieki zdrowotnej (EHR) z systemu opieki zdrowotnej do Microsoft 365. Dzięki temu można używać danych EHR w zasadach zarządzania ryzykiem wewnętrznym, aby ułatwić wykrywanie nieautoryzowanego dostępu do danych pacjentów przez pracowników.
-ms.openlocfilehash: b1745d8f91253132748fe08d724386d2e6633a4c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 90f50628e255267baeff7d39c776f9a6bf8cc426
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993167"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077901"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Konfigurowanie łącznika w celu importowania danych inspekcji EHR opieki zdrowotnej (wersja zapoznawcza)
 

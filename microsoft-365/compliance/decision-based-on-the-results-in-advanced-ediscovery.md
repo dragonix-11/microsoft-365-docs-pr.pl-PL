@@ -2,8 +2,8 @@
 title: Decyzja oparta na wynikach z zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -17,12 +17,12 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Dowiedz się, jak karta Zdecyduj w usłudze eDiscovery (Premium) udostępnia dane, które mogą pomóc w określeniu prawidłowego rozmiaru zestawu przeglądów plików sprawy.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8acd1cbd6efa821266acc3f5110a83a238841cf8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 12f1dde5631283a4d0e02666ecab7267ee892225
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000185"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090988"
 ---
 # <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Decyzje oparte na istotności skutkują zbierania elektronicznych materiałów dowodowych (Premium)
 

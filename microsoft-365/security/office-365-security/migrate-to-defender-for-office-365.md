@@ -19,19 +19,19 @@ ms.custom: ''
 description: Poznaj właściwy sposób migracji z usług ochrony innych firm lub urządzeń, takich jak Google Postini, Barracuda Spam and Virus Firewall lub Cisco IronPort, aby Ochrona usługi Office 365 w usłudze Microsoft Defender ochronę.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b00051effd6ee77fd29ba0a5a07ee27c9113a439
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 2f67135e2b8a3700a2fb6a6e24fc4f66696db2e3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704828"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098719"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>Migrowanie z usługi ochrony innej firmy lub urządzenia do Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 **Dotyczy**
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 
-Jeśli masz już istniejącą usługę ochrony innej firmy lub urządzenie znajdujące się przed Microsoft 365, możesz użyć tego przewodnika do migracji ochrony w celu Ochrona usługi Office 365 w usłudze Microsoft Defender  aby uzyskać korzyści wynikające ze skonsolidowanego środowiska zarządzania, potencjalnie obniżonych kosztów (przy użyciu produktów, za które już płacisz) oraz dojrzałego produktu ze zintegrowaną ochroną bezpieczeństwa. Aby uzyskać więcej informacji, zobacz [Microsoft Defender for Office](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
+Jeśli masz już istniejącą usługę ochrony innej firmy lub urządzenie znajdujące się przed Microsoft 365, możesz użyć tego przewodnika do migracji ochrony w celu Ochrona usługi Office 365 w usłudze Microsoft Defender  aby uzyskać korzyści wynikające ze skonsolidowanego środowiska zarządzania, potencjalnie obniżonych kosztów (przy użyciu produktów, za które już płacisz) oraz dojrzałego produktu ze zintegrowaną ochroną bezpieczeństwa. Aby uzyskać więcej informacji, zobacz [Ochrona usługi Office 365 w usłudze Microsoft Defender](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
 
 Ten przewodnik zawiera konkretne i praktyczne kroki migracji oraz przyjmuje następujące fakty:
 
@@ -58,7 +58,7 @@ Bardzo ogólne kroki migracji przedstawiono na poniższym diagramie. Rzeczywiste
 W branży IT niespodzianki są na ogół złe. Po prostu przerzucanie rekordów MX, aby wskazać Microsoft 365 bez wcześniejszych i przemyślanych testów, spowoduje wiele niespodzianek. Przykład:
 
 - Ty lub Twoi poprzednicy prawdopodobnie poświęcacie dużo czasu i wysiłku, dostosowując istniejącą usługę ochrony w celu optymalnego dostarczania poczty (innymi słowy blokując to, co należy zablokować, i zezwalając na to, co musi być dozwolone). Niemal gwarantowana pewność, że nie wszystkie dostosowania w bieżącej usłudze ochrony są wymagane w Ochrona usługi Office 365 w usłudze Defender. Istnieje również bardzo możliwe, że Ochrona usługi Office 365 w usłudze Defender wprowadzi nowe problemy (zezwalanie lub bloki), które nie wystąpiły lub nie były wymagane w bieżącej usłudze ochrony.
-- Dział pomocy technicznej i pracownicy ochrony muszą wiedzieć, co robić w Ochrona usługi Office 365 w usłudze Defender. Jeśli na przykład użytkownik skarży się na brakujący komunikat, czy dział pomocy technicznej wie, gdzie i jak go szukać? Prawdopodobnie sprawdzają, czy są zaznajomieni z narzędziami w istniejącej usłudze ochrony, ale co z narzędziami w Ochrona usługi Office 365 w usłudze Defender?
+- Dział pomocy technicznej i pracownicy ochrony muszą wiedzieć, co robić w Ochrona usługi Office 365 w usłudze Defender. Jeśli na przykład użytkownik skarży się na brakujący komunikat, czy dział pomocy technicznej wie, gdzie i jak go szukać? Prawdopodobnie znają narzędzia w istniejącej usłudze ochrony, ale co z narzędziami w Ochrona usługi Office 365 w usłudze Defender?
 
 Jeśli natomiast wykonasz kroki opisane w tym przewodniku migracji, uzyskasz następujące wymierne korzyści dla migracji:
 

@@ -1,8 +1,8 @@
 ---
-title: Przygotowywanie do synchronizacji katalogów z Microsoft 365
+title: Przygotowanie do synchronizacji katalogów w celu Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
@@ -25,96 +25,96 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: W tym artykule opisano, jak przygotować się do zapewnienia Microsoft 365 użytkowników na Microsoft 365 przy użyciu synchronizacji katalogów oraz długoterminowe korzyści wynikające z używania tej metody.
-ms.openlocfilehash: 5a8914091eb8df62ba71c8ddff35c3fb355fa031
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+description: W tym artykule opisano sposób przygotowywania użytkowników do aprowizowania Microsoft 365 przy użyciu synchronizacji katalogów i długoterminowych korzyści wynikających z korzystania z tej metody.
+ms.openlocfilehash: 03182d4cb0e9ed1da2687ab23ffae11369f3765a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63013880"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090778"
 ---
-# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Przygotowywanie do synchronizacji katalogów z Microsoft 365
+# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Przygotowanie do synchronizacji katalogów w celu Microsoft 365
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Jeśli wybrano model tożsamości hybrydowej i skonfigurowano ochronę kont administratora w kroku [2](protect-your-global-administrator-accounts.md) i kontach użytkowników w kroku [3](microsoft-365-secure-sign-in.md) tego rozwiązania, następnym zadaniem jest wdrożenie synchronizacji katalogów. Zalety synchronizacji katalogów dla organizacji obejmują:
+Jeśli wybrano model tożsamości hybrydowej i skonfigurowano ochronę kont administratorów w [kroku 2](protect-your-global-administrator-accounts.md) i kont użytkowników w [kroku 3](microsoft-365-secure-sign-in.md) tego rozwiązania, następnym zadaniem jest wdrożenie synchronizacji katalogów. Zalety synchronizacji katalogów w organizacji obejmują:
 
-- Zmniejszenie liczby programów administracyjnych w organizacji
-- Opcjonalne włączenie scenariusza logowania pojedynczego
-- Automatyzowanie zmian na koncie w Microsoft 365
+- Zmniejszanie programów administracyjnych w organizacji
+- Opcjonalne włączanie scenariusza logowania jednokrotnego
+- Automatyzowanie zmian konta w Microsoft 365
 
-Aby uzyskać więcej informacji o zaletach korzystania z synchronizacji katalogów, zobacz Tożsamość hybrydowa z usługą [Azure Active Directory (Azure AD).](/azure/active-directory/hybrid/whatis-hybrid-identity)
+Aby uzyskać więcej informacji na temat zalet korzystania z synchronizacji katalogów, zobacz [tożsamość hybrydowa z usługą Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
-Jednak synchronizacja katalogów wymaga planowania i przygotowywania w celu zapewnienia, że Usługi domenowe w usłudze Active Directory (AD DS) synchronizuje się z dzierżawą usługi Azure AD Twojej subskrypcji usługi Microsoft 365 z minimalnymi błędami.
+Jednak synchronizacja katalogów wymaga planowania i przygotowania, aby upewnić się, że Active Directory Domain Services (AD DS) synchronizuje się z dzierżawą usługi Azure AD subskrypcji Microsoft 365 z minimalną ilością błędów.
 
-Aby uzyskać najlepsze wyniki, wykonaj poniższe czynności.
+Wykonaj następujące kroki, aby uzyskać najlepsze wyniki.
 
 > [!NOTE]
-> Znaki inne niż ASCII nie są synchronizowane dla żadnych atrybutów na AD DS użytkownika.
+> Znaki inne niż ASCII nie są synchronizowane dla żadnych atrybutów na koncie użytkownika usług AD DS.
 
-## <a name="ad-ds-preparation"></a>AD DS przygotowania
+## <a name="ad-ds-preparation"></a>Przygotowywanie usług AD DS
 
-Aby zapewnić bezproblemowe przejście do programu Microsoft 365 przy użyciu synchronizacji, musisz przygotować las AD DS przed rozpoczęciem wdrażania synchronizacji Microsoft 365 katalogów.
+Aby zapewnić bezproblemowe przejście do Microsoft 365 przy użyciu synchronizacji, należy przygotować las usług AD DS przed rozpoczęciem wdrażania synchronizacji katalogów Microsoft 365.
   
-Przygotowanie katalogu powinno być skoncentrowane na następujących zadaniach:
+Przygotowanie katalogu powinno koncentrować się na następujących zadaniach:
 
-- Usuń **zduplikowane atrybuty proxyAddress** i **userPrincipalName** .
-- Aktualizowanie pustych i nieprawidłowych **atrybutów userPrincipalName** prawidłowymi **atrybutami userPrincipalName** .
-- Usunięcie nieprawidłowych i kwestionowanych znaków w atrybutach **givenName**, nazwisko ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname** i **userPrincipalName** . Aby uzyskać szczegółowe informacje na temat przygotowywania atrybutów, zobacz Lista atrybutów synchronizowanych przez narzędzie [Azure Active Directory synchronizacji](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Usuń zduplikowane atrybuty **proxyAddress** i **userPrincipalName** .
+- Zaktualizuj puste i nieprawidłowe atrybuty **userPrincipalName** przy użyciu prawidłowych atrybutów **userPrincipalName** .
+- Usuń nieprawidłowe i wątpliwe znaki w atrybutach **givenName**, surname ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname** i **userPrincipalName** . Aby uzyskać szczegółowe informacje na temat przygotowywania atrybutów, zobacz [List of attributes that are synced by the Azure Active Directory Sync Tool (Lista atrybutów synchronizowanych przez narzędzie Azure Active Directory Sync Tool](https://go.microsoft.com/fwlink/p/?LinkId=396719)).
 
     > [!NOTE]
-    > Są to te same atrybuty, które są synchronizowane Połączenie Azure AD. 
+    > Są to te same atrybuty, które Połączenie usługi Azure AD synchronizuje. 
   
 ## <a name="multi-forest-deployment-considerations"></a>Zagadnienia dotyczące wdrażania wielu lasów
 
-W przypadku korzystania z wielu lasów i opcji logowania jednokrotnego użyj opcji [Niestandardowa instalacja usługi Azure AD Połączenie](/azure/active-directory/hybrid/how-to-connect-install-custom).
+W przypadku wielu lasów i opcji logowania jednokrotnego użyj [instalacji niestandardowej usługi Azure AD Połączenie](/azure/active-directory/hybrid/how-to-connect-install-custom).
   
-Jeśli Twoja organizacja ma wiele lasów uwierzytelniania (lasów logowania), zdecydowanie zalecamy:
+Jeśli Twoja organizacja ma wiele lasów do uwierzytelniania (lasy logowania), zdecydowanie zalecamy następujące kwestie:
   
-- **Rozważ skonsolidowanie swoich lasów.** Na ogół utrzymywanie wielu lasów jest o wiele większe obciążenie. Jeśli w Twojej organizacji nie ma ograniczeń dotyczących zabezpieczeń, które wymagają osobnych lasów, rozważ uproszczenie środowiska lokalnego.
-- **Używaj tylko w podstawowym lesie logowania.** Rozważ wdrożenie Microsoft 365 tylko w podstawowym lesie logowania na początku wdrożenia usługi Microsoft 365. 
+- **Rozważ skonsolidowanie lasów.** Ogólnie rzecz biorąc, do utrzymania wielu lasów jest wymaganych więcej narzutów. Jeśli organizacja nie ma ograniczeń zabezpieczeń, które dyktują potrzebę oddzielnych lasów, rozważ uproszczenie środowiska lokalnego.
+- **Użyj tylko w podstawowym lesie logowania.** Rozważ wdrożenie Microsoft 365 tylko w podstawowym lesie logowania na potrzeby początkowego wdrożenia Microsoft 365. 
 
-Jeśli nie możesz skonsolidować wdrożenia usługi multi-forest AD DS lub zarządzasz tożsamościami za pomocą innych usług katalogowych, możesz zsynchronizować je z pomocą firmy Microsoft lub partnera.
+Jeśli nie możesz skonsolidować wdrożenia usług AD DS w wielu lasach lub używasz innych usług katalogowych do zarządzania tożsamościami, możesz zsynchronizować je z pomocą firmy Microsoft lub partnera.
   
-Aby [uzyskać więcej informacji, zobacz Topologii usługi Azure AD Połączenie](/azure/active-directory/hybrid/plan-connect-topologies).
+Aby uzyskać więcej informacji[, zobacz Topologie dla usługi Azure AD Połączenie](/azure/active-directory/hybrid/plan-connect-topologies).
   
 ## <a name="features-that-are-dependent-on-directory-synchronization"></a>Funkcje zależne od synchronizacji katalogów
   
-Synchronizacja katalogów jest wymagana dla następujących funkcji:
+Synchronizacja katalogów jest wymagana dla następujących funkcji i funkcji:
   
-- Bezproblemowe logowanie jednokrotne Sign-On w usłudze Azure AD
-- Skype współistnienie
-- Exchange hybrydowe, w tym:
-  - Całkowicie udostępniona globalna lista adresowa (GAL) między lokalnym środowiskiem Exchange a Microsoft 365.
-  - Synchronizowanie informacji na temat listy adresowej z różnych systemów poczty.
-  - Możliwość dodawania i usuwania użytkowników z Microsoft 365 usług. Wymagane są następujące elementy:
-  - Podczas konfigurowania synchronizacji katalogów należy skonfigurować synchronizację dwukierunkową. Domyślnie narzędzia do synchronizacji katalogów zapisuje informacje z katalogu tylko w chmurze. Po skonfigurowaniu synchronizacji dwukierunkowej włącz funkcję zapisu, aby ograniczona liczba atrybutów obiektów było kopiowana z chmury, a następnie zapisywana z powrotem w lokalnym programie AD DS. Cofanie jest również nazywane Exchange trybem hybrydowym. 
-  - Lokalne wdrożenie Exchange hybrydowe
-  - Możliwość przenoszenia niektórych skrzynek pocztowych użytkowników do Microsoft 365 przy zachowaniu innych skrzynek pocztowych użytkowników lokalnie.
-  - Sejf i zablokowani nadawcy lokalnie są replikowane do Microsoft 365.
-  - Delegowanie podstawowe i funkcja wysyłania w imieniu poczty e-mail.
-  - Masz zintegrowane lokalne karty inteligentne lub rozwiązanie do uwierzytelniania wieloskładnikowego.
+- Bezproblemowe Sign-On jednokrotne usługi Azure AD
+- współistnienie Skype
+- Exchange wdrożenie hybrydowe, w tym:
+  - W pełni udostępniona globalna lista adresów (GAL) między lokalnym środowiskiem Exchange i Microsoft 365.
+  - Synchronizowanie informacji gal z różnych systemów poczty.
+  - Możliwość dodawania użytkowników do oferty usług Microsoft 365 i usuwania ich z niej. Wymaga to następujących czynności:
+  - Podczas konfigurowania synchronizacji katalogów należy skonfigurować synchronizację dwukierunkową. Domyślnie narzędzia synchronizacji katalogów zapisuje informacje o katalogu tylko w chmurze. Podczas konfigurowania synchronizacji dwukierunkowej włączasz funkcję zapisu zwrotnego, dzięki czemu ograniczona liczba atrybutów obiektów jest kopiowana z chmury, a następnie zapisywana z powrotem w lokalnych usługach AD DS. Zapisywanie zwrotne jest również nazywane trybem hybrydowym Exchange. 
+  - Lokalne wdrożenie hybrydowe Exchange
+  - Możliwość przenoszenia niektórych skrzynek pocztowych użytkowników do Microsoft 365 przy jednoczesnym zachowaniu lokalnych skrzynek pocztowych innych użytkowników.
+  - Sejf nadawców i zablokowanych nadawców lokalnych są replikowane do Microsoft 365.
+  - Podstawowe funkcje delegowania i wysyłania wiadomości e-mail w imieniu.
+  - Masz zintegrowaną lokalną kartę inteligentną lub rozwiązanie do uwierzytelniania wieloskładnikowego.
 - Synchronizacja zdjęć, miniatur, sal konferencyjnych i grup zabezpieczeń
 
-## <a name="1-directory-cleanup-tasks"></a>1. Zadania oczyszczania katalogu
+## <a name="1-directory-cleanup-tasks"></a>1. Zadania oczyszczania katalogów
 
-Przed zsynchronizowaniem danych AD DS dzierżawy usługi Azure AD należy wyczyścić konto AD DS.
+Przed zsynchronizowanie usług AD DS z dzierżawą usługi Azure AD należy wyczyścić usługi AD DS.
 
 > [!IMPORTANT]
-> Jeśli nie wykonasz oczyszczania AD DS synchronizacji, może to mieć znaczący negatywny wpływ na proces wdrażania. Cykl synchronizacji katalogów, identyfikowania błędów i ponownej synchronizacji może zająć kilka dni lub nawet kilka tygodni.
+> Jeśli nie wykonasz oczyszczania usług AD DS przed synchronizacją, może to prowadzić do znaczącego negatywnego wpływu na proces wdrażania. Może upłynąć kilka dni, a nawet tygodni, aby przejść przez cykl synchronizacji katalogów, identyfikowania błędów i ponownej synchronizacji.
 
-W AD DS wykonaj następujące zadania oczyszczania dla każdego konta użytkownika, do których zostanie przypisana Microsoft 365 licencji:
+W usługach AD DS wykonaj następujące zadania oczyszczania dla każdego konta użytkownika, do których zostanie przypisana licencja Microsoft 365:
 
-1. Upewnij się, że w atrybutu **proxyAddresses jest prawidłowy i unikatowy adres e-mail** .
+1. Upewnij się, że prawidłowy i unikatowy adres e-mail w atrybucie **proxyAddresses** .
 
-2. Usuń wszelkie zduplikowane wartości **atrybutu proxyAddresses** .
+2. Usuń wszystkie zduplikowane wartości w atrybucie **proxyAddresses** .
 
-3. Jeśli to możliwe, upewnij się, że wartość **atrybutu userPrincipalName** jest prawidłowa i **unikatowa** w obiekcie użytkownika. Aby zapewnić najlepsze środowisko synchronizacji, upewnij się, że AD DS upn jest taka, jak w usłudze Azure AD UPN. Jeśli atrybut **userPrincipalName** użytkownika nie ma wartości, obiekt user musi zawierać prawidłową i  **unikatową wartość atrybutu sAMAccountName**. Usuń wszelkie zduplikowane wartości **atrybutu userPrincipalName** .
+3. Jeśli to możliwe, upewnij się prawidłową i unikatową wartość atrybutu **userPrincipalName** w obiekcie **użytkownika** użytkownika. Aby uzyskać najlepsze środowisko synchronizacji, upewnij się, że nazwa UPN usług AD DS jest zgodna z nazwą UPN usługi Azure AD. Jeśli użytkownik nie ma wartości atrybutu **userPrincipalName** , obiekt **użytkownika** musi zawierać prawidłową i unikatową wartość atrybutu **sAMAccountName** . Usuń wszystkie zduplikowane wartości w atrybucie **userPrincipalName** .
 
-4. Aby optymalnie korzystać z globalnej listy adresowej, upewnij się, że informacje w następujących atrybutach konta AD DS są poprawne:
+4. Aby optymalnie wykorzystać globalną listę adresów (GAL), upewnij się, że informacje zawarte w następujących atrybutach konta użytkownika usług AD DS są poprawne:
 
-   - givenName
-   - nazwisko
+   - Givenname
+   - Nazwisko
    - displayName
    - Stanowisko
    - Department
@@ -122,29 +122,29 @@ W AD DS wykonaj następujące zadania oczyszczania dla każdego konta użytkowni
    - Tel. w biurze
    - Telefon komórkowy
    - Numer faksu
-   - Ulica
+   - Adres ulicy
    - Miasto
    - Województwo
-   - Kod pocztowy
+   - Kod pocztowy lub pocztowy
    - Kraj lub region
 
-## <a name="2-directory-object-and-attribute-preparation"></a>2. Przygotowywanie atrybutów i obiektów katalogu
+## <a name="2-directory-object-and-attribute-preparation"></a>2. Przygotowywanie obiektu katalogu i atrybutu
 
-Pomyślna synchronizacja katalogów między AD DS i Microsoft 365 wymaga odpowiedniego przygotowania AD DS atrybutów katalogów. Na przykład należy się upewnić, że w pewnych atrybutach synchronizowanych ze środowiskiem użytkownika nie są używane Microsoft 365 znaki. Nieoczekiwane znaki nie powodują, że synchronizacja katalogów nie powiedzie się, ale może spowodować zwrócenie ostrzeżenia. Nieprawidłowe znaki powodują niepowodzenie synchronizacji katalogów.
+Pomyślna synchronizacja katalogów między usługami AD DS i Microsoft 365 wymaga odpowiedniego przygotowania atrybutów usług AD DS. Na przykład należy upewnić się, że określone znaki nie są używane w niektórych atrybutach, które są synchronizowane ze środowiskiem Microsoft 365. Nieoczekiwane znaki nie powodują niepowodzenia synchronizacji katalogów, ale mogą zwracać ostrzeżenie. Nieprawidłowe znaki spowodują niepowodzenie synchronizacji katalogów.
 
-Synchronizacja katalogów również nie powiedzie się, jeśli niektórzy użytkownicy AD DS mają co najmniej jeden zduplikowany atrybut. Każdy użytkownik musi mieć unikatowe atrybuty.
+Synchronizacja katalogów również zakończy się niepowodzeniem, jeśli niektórzy użytkownicy usług AD DS mają co najmniej jeden zduplikowany atrybut. Każdy użytkownik musi mieć unikatowe atrybuty.
 
-Poniżej wymieniono atrybuty, które należy przygotować:
+Atrybuty, które należy przygotować, są wymienione tutaj:
 
 - **displayName**
 
-  - Jeśli ten atrybut istnieje w obiekcie użytkownika, zostanie zsynchronizowany z Microsoft 365.
-  - Jeśli ten atrybut istnieje w obiekcie użytkownika, musi mieć wartość. Oznacza to, że ten atrybut nie może być pusty.
+  - Jeśli atrybut istnieje w obiekcie użytkownika, zostanie zsynchronizowany z Microsoft 365.
+  - Jeśli ten atrybut istnieje w obiekcie użytkownika, musi być dla niego wartość. Oznacza to, że atrybut nie może być pusty.
   - Maksymalna liczba znaków: 256
 
-- **givenName**
+- **Givenname**
 
-  - Jeśli ten atrybut istnieje w obiekcie użytkownika, zostanie zsynchronizowany z Microsoft 365, ale Microsoft 365 nie wymaga go ani nie używa.
+  - Jeśli atrybut istnieje w obiekcie użytkownika, zostanie zsynchronizowany z Microsoft 365, ale Microsoft 365 nie wymaga ani nie używa go.
   - Maksymalna liczba znaków: 64
 
 - **mail**
@@ -152,90 +152,90 @@ Poniżej wymieniono atrybuty, które należy przygotować:
   - Wartość atrybutu musi być unikatowa w katalogu.
 
     > [!NOTE]
-    > Jeśli istnieją wartości zduplikowane, zsynchronizowany zostanie pierwszy użytkownik z wartością. Kolejni użytkownicy nie pojawią się w Microsoft 365. Aby obaj użytkownicy pojawiali się w Microsoft 365, należy zmodyfikować albo wartość w Microsoft 365 lub obie wartości w AD DS.
+    > Jeśli istnieją zduplikowane wartości, pierwszy użytkownik z wartością zostanie zsynchronizowany. Kolejni użytkownicy nie będą pojawiać się w Microsoft 365. Aby obaj użytkownicy pojawili się w Microsoft 365, musisz zmodyfikować wartość w Microsoft 365 lub zmodyfikować obie wartości w usługach AD DS.
 
-- **mailNickname** (alias Exchange poczty)
+- **mailNickname** (alias Exchange)
 
-  - Wartość atrybutu nie może rozpoczynać się od okresu (.).
+  - Wartość atrybutu nie może zaczynać się kropką (.).
   - Wartość atrybutu musi być unikatowa w katalogu.
 
     > [!NOTE]
-    > Znaki podkreślenia ("_") w zsynchronizowanej nazwie oznaczają, że oryginalna wartość tego atrybutu zawiera nieprawidłowe znaki. Aby uzyskać więcej informacji na temat tego atrybutu, [Exchange atrybut aliasu](/powershell/module/exchange/set-mailbox).
+    > Podkreślenia ("_") w zsynchronizowanej nazwie wskazują, że oryginalna wartość tego atrybutu zawiera nieprawidłowe znaki. Aby uzyskać więcej informacji na temat tego atrybutu, zobacz [Exchange atrybut aliasu](/powershell/module/exchange/set-mailbox).
     >
 
-- **proxyAddresses**
+- **Proxyaddresses**
 
-  - Atrybut wielo wartości
+  - Atrybut wielokrotnej wartości
   - Maksymalna liczba znaków na wartość: 256
   - Wartość atrybutu nie może zawierać spacji.
   - Wartość atrybutu musi być unikatowa w katalogu.
-  - Nieprawidłowe znaki: \< \> () ; , [ ] "
-  - Litery ze znakami diakrytycznymi, takimi jak umlauty, akcenty i tyldy, to nieprawidłowe znaki.
+  - Nieprawidłowe znaki: \< \> ( ) ; , [ ] "
+  - Litery ze znakami diakrytycznymi, takimi jak umlauts, akcenty i kafelki, są nieprawidłowymi znakami.
 
-    Nieprawidłowe znaki dotyczą znaków następujących po ograniczniku typu i znaków ":", co oznacza, że SMTP:User@contso.com dozwolone, ale SMTP:user:M@contoso.com nie jest.
+    Należy pamiętać, że nieprawidłowe znaki mają zastosowanie do znaków następujących po ograniczniku typu i ":", tak że SMTP:User@contso.com jest dozwolone, ale SMTP:user:M@contoso.com nie jest.
 
     > [!IMPORTANT]
-    > Wszystkie adresy SMTP (Simple Mail Transport Protocol) powinny być zgodne ze standardami wiadomości e-mail. Usuń zduplikowane lub niechciane adresy, jeśli istnieją.
+    > Wszystkie adresy protokołu SMTP (Simple Mail Transport Protocol) powinny być zgodne ze standardami obsługi wiadomości e-mail. Usuń zduplikowane lub niepożądane adresy, jeśli istnieją.
 
-- **sAMAccountName**
+- **Samaccountname**
 
   - Maksymalna liczba znaków: 20
   - Wartość atrybutu musi być unikatowa w katalogu.
   - Nieprawidłowe znaki: [ \ " | , / : \< \> + = ; ? \* ']
-  - Jeśli użytkownik ma nieprawidłowy atrybut **sAMAccountName**, ale ma prawidłowy atrybut **userPrincipalName**, konto użytkownika jest tworzone w programie Microsoft 365.
-  - Jeśli oba **atrybuty sAMAccountName** i **userPrincipalName** są nieprawidłowe, należy zaktualizować AD DS **userPrincipalName** .
+  - Jeśli użytkownik ma nieprawidłowy atrybut **sAMAccountName**, ale ma prawidłowy atrybut **userPrincipalName**, konto użytkownika jest tworzone w Microsoft 365.
+  - Jeśli zarówno **sAMAccountName** , jak i **userPrincipalName** są nieprawidłowe, należy zaktualizować atrybut **userPrincipalName** usług AD DS.
 
-- **sn** (surname)
+- **sn** (nazwisko)
 
-  - Jeśli ten atrybut istnieje w obiekcie użytkownika, zostanie zsynchronizowany z Microsoft 365, ale Microsoft 365 nie wymaga go ani nie używa.
+  - Jeśli atrybut istnieje w obiekcie użytkownika, zostanie zsynchronizowany z Microsoft 365, ale Microsoft 365 nie wymaga ani nie używa go.
 
-- **targetAddress**
+- **Targetaddress**
 
-    Wymagane jest, aby atrybut **targetAddress** (na przykład SMTP:tom@contoso.com), który jest wypełniony dla użytkownika, był widoczny na Microsoft 365 GAL. W scenariuszach z migracją wiadomości innych firm wymagałoby to rozszerzenia schematu Microsoft 365 dla AD DS. Rozszerzenie Microsoft 365 schematu dodałoby również inne przydatne atrybuty do zarządzania obiektami Microsoft 365, które są wypełniane za pomocą narzędzia do synchronizacji katalogów z usługi AD DS. Na przykład zostanie dodany **atrybut msExchHideFromAddressLists** do zarządzania ukrytymi skrzynkami pocztowymi lub grupami dystrybucyjnmi.
+    Wymagane jest, aby atrybut **targetAddress** (na przykład SMTP:tom@contoso.com) wypełniony dla użytkownika musiał pojawić się w Microsoft 365 GAL. W scenariuszach migracji komunikatów innych firm wymagałoby to rozszerzenia schematu Microsoft 365 dla usług AD DS. Rozszerzenie schematu Microsoft 365 doda również inne przydatne atrybuty do zarządzania obiektami Microsoft 365, które są wypełniane przy użyciu narzędzia do synchronizacji katalogów z usług AD DS. Na przykład atrybut **msExchHideFromAddressLists** do zarządzania ukrytymi skrzynkami pocztowymi lub grupami dystrybucyjnymi zostanie dodany.
 
   - Maksymalna liczba znaków: 256
   - Wartość atrybutu nie może zawierać spacji.
   - Wartość atrybutu musi być unikatowa w katalogu.
   - Nieprawidłowe znaki: \ \< \> ( ) ; , [ ] "
-  - Wszystkie adresy SMTP (Simple Mail Transport Protocol) powinny być zgodne ze standardami wiadomości e-mail.
+  - Wszystkie adresy protokołu SMTP (Simple Mail Transport Protocol) powinny być zgodne ze standardami obsługi wiadomości e-mail.
 
-- **userPrincipalName**
+- **Userprincipalname**
 
-  - Atrybut **userPrincipalName** musi mieć format logowania typu internetowego, po którym po nazwie użytkownika musi znajdować się znak "@" i nazwa domeny, na przykład user@contoso.com. Wszystkie adresy SMTP (Simple Mail Transport Protocol) powinny być zgodne ze standardami wiadomości e-mail.
-  - Maksymalna liczba znaków **atrybutu userPrincipalName** wynosi 113. Przed znakiem "@" i po nim są dozwolone określone liczby znaków:
-  - Maksymalna liczba znaków nazwy użytkownika przed znakiem "@": 64
-  - Maksymalna liczba znaków nazwy domeny po znaku "@": 48
+  - Atrybut **userPrincipalName** musi mieć format logowania w stylu internetowym, w którym po nazwie użytkownika następuje znak at (@) i nazwa domeny: na przykład user@contoso.com. Wszystkie adresy protokołu SMTP (Simple Mail Transport Protocol) powinny być zgodne ze standardami obsługi wiadomości e-mail.
+  - Maksymalna liczba znaków atrybutu **userPrincipalName** wynosi 113. Określona liczba znaków jest dozwolona przed i po znaku at (@), w następujący sposób:
+  - Maksymalna liczba znaków dla nazwy użytkownika, która znajduje się przed znakiem at (@): 64
+  - Maksymalna liczba znaków dla nazwy domeny po znaku at (@): 48
   - Nieprawidłowe znaki: \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] "
   - Dozwolone znaki: A – Z, a - z, 0 – 9, ' . - _ ! # ^ ~
-  - Litery ze znakami diakrytycznymi, takimi jak umlauty, akcenty i tyldy, to nieprawidłowe znaki.
-  - Każda wartość **userPrincipalName wymaga znaku** @.
-  - Znak @ nie może być pierwszym znakiem w każdej wartości **userPrincipalName** .
-  - Nazwa użytkownika nie może kończyć się znakiem spacji (.), znakiem "i" (&amp;), znakiem spacji ani znakiem @.
-  - Nazwa użytkownika nie może zawierać spacji.
-  - Należy używać domen routowalnych; nie można na przykład używać domen lokalnych ani wewnętrznych.
-  - Znaki Unicode są konwertowane na znaki podkreślenia.
-  - **Wartość userPrincipalName** nie może zawierać zduplikowanych wartości w katalogu.
+  - Litery ze znakami diakrytycznymi, takimi jak umlauts, akcenty i kafelki, są nieprawidłowymi znakami.
+  - Znak @jest wymagany w każdej wartości **userPrincipalName** .
+  - Znak @nie może być pierwszym znakiem w każdej wartości **userPrincipalName** .
+  - Nazwa użytkownika nie może kończyć się kropką (.), znakiem ampersand (&amp;), spację lub znakiem at (@).
+  - Nazwa użytkownika nie może zawierać żadnych spacji.
+  - Należy używać domen routingu; Na przykład nie można używać domen lokalnych lub wewnętrznych.
+  - Unicode jest konwertowany na znaki podkreślenia.
+  - **userPrincipalName** nie może zawierać żadnych zduplikowanych wartości w katalogu.
 
-## <a name="3-prepare-the-userprincipalname-attribute"></a>3. Przygotowywanie atrybutu userPrincipalName
+## <a name="3-prepare-the-userprincipalname-attribute"></a>3. Przygotowanie atrybutu userPrincipalName
 
-Usługa Active Directory została zaprojektowana tak, aby umożliwić użytkownikom końcowy w Twojej organizacji logowanie się do katalogu za pomocą nazwy **sAMAccountName** lub **userPrincipalName**. Podobnie użytkownicy końcowi mogą zalogować się Microsoft 365 przy użyciu głównej nazwy użytkownika (UPN) swojego konta służbowego. Synchronizacja katalogów próbuje utworzyć nowych użytkowników w usłudze Azure Active Directory przy użyciu tej samej upn, która jest w Twojej AD DS. UpN jest formatowana jak adres e-mail.
+Usługa Active Directory została zaprojektowana tak, aby umożliwić użytkownikom końcowym w organizacji logowanie się do katalogu przy użyciu **nazwy sAMAccountName** lub **userPrincipalName**. Podobnie użytkownicy końcowi mogą logować się do Microsoft 365 przy użyciu głównej nazwy użytkownika (UPN) swojego konta służbowego. Synchronizacja katalogów próbuje utworzyć nowych użytkowników w Azure Active Directory przy użyciu tej samej nazwy UPN, która jest w usługach AD DS. Nazwa UPN jest sformatowana jak adres e-mail.
 
-W Microsoft 365 adres e-mail jest domyślnym atrybutem używanym do wygenerowania upn. Możesz łatwo uzyskać wartość **userPrincipalName** (w usłudze AD DS i usłudze Azure AD) oraz podstawowy adres e-mail w adresie **proxyAddresses** ustawionym na inne wartości. Gdy są ustawione różne wartości, administratorzy i użytkownicy końcowi mogą mieć wątpliwości.
+W Microsoft 365 nazwa UPN jest atrybutem domyślnym używanym do generowania adresu e-mail. Łatwo jest pobrać **właściwość userPrincipalName** (w usługach AD DS i w usłudze Azure AD) oraz podstawowy adres e-mail w **pliku proxyAddresses** ustawiony na różne wartości. Gdy są one ustawione na różne wartości, mogą wystąpić nieporozumienia dla administratorów i użytkowników końcowych.
 
-Najlepiej jest wyrównać te atrybuty, aby uniknąć nieporozumień. Aby spełnić wymagania logowania pojedynczego w usługach feder biznesowych Active Directory (AD FS) 2.0, należy się upewnić, że nazwy UPN w usłudze Azure Active Directory i Twojej usłudze AD DS są zgodne i że korzystasz z prawidłowej przestrzeni nazw domen.
+Najlepiej jest dostosować te atrybuty, aby zmniejszyć zamieszanie. Aby spełnić wymagania logowania jednokrotnego z usługą Active Directory Federation Services (AD FS) 2.0, musisz upewnić się, że nazwy UPN w Azure Active Directory i usługi AD DS są zgodne i używają prawidłowej przestrzeni nazw domeny.
 
-## <a name="4-add-an-alternative-upn-suffix-to-ad-ds"></a>4. Dodawanie alternatywnego sufiksu upn do listy AD DS
+## <a name="4-add-an-alternative-upn-suffix-to-ad-ds"></a>4. Dodawanie alternatywnego sufiksu nazwy UPN do usług AD DS
 
-Może być konieczne dodanie alternatywnego sufiksu upn w celu skojarzenia firmowych poświadczeń użytkownika ze środowiskiem Microsoft 365 sieci. Sufiks głównej nazwy użytkownika jest częścią głównej nazwy użytkownika po prawej stronie znaku @. Głównych numerów telefonów (UPN) używanych do logowania pojedynczego mogą zawierać litery, cyfry, kropki, kreski i podkreślenia, ale nie mogą zawierać znaków innych typów.
+Może być konieczne dodanie alternatywnego sufiksu nazwy UPN, aby skojarzyć poświadczenia firmowe użytkownika ze środowiskiem Microsoft 365. Sufiks nazwy UPN jest częścią nazwy UPN po prawej stronie znaku @. Nazwy UPN używane do logowania jednokrotnego mogą zawierać litery, cyfry, kropki, kreski i podkreślenia, ale bez innych typów znaków.
 
-Aby uzyskać więcej informacji na temat dodawania alternatywnego sufiksu upn do usługi Active Directory, zobacz [Przygotowanie do synchronizacji katalogów](https://go.microsoft.com/fwlink/p/?LinkId=525430).
+Aby uzyskać więcej informacji na temat dodawania alternatywnego sufiksu nazwy UPN do usługi Active Directory, zobacz [Przygotowywanie do synchronizacji katalogów](https://go.microsoft.com/fwlink/p/?LinkId=525430).
 
-## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Dopasuj AD DS UPN do Microsoft 365 UPN
+## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Dopasuj nazwę UPN usług AD DS do nazwy UPN Microsoft 365
 
-Jeśli została już ustawiona synchronizacja katalogów, główny nazwa użytkownika w programie Microsoft 365 może być nie do siebie dopasowana do nazwy upn AD DS użytkownika zdefiniowanej w AD DS. Może się tak zdarzyć, gdy użytkownikowi przypisano licencję przed zweryfikowaniem domeny. Aby rozwiązać ten problem, za pomocą programu PowerShell napraw zduplikowaną nazwę [UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730) w celu zaktualizowania upn użytkownika w celu upewninia się, że Microsoft 365 upn jest taka sama jak firmowa nazwa użytkownika i domena. Jeśli aktualizujesz nazwę UPN w programie AD DS i chcesz zsynchronizować ją z tożsamością programu Azure Active Directory, przed wprowadzeniem zmian w programie AD DS należy usunąć licencję użytkownika w programie Microsoft 365.
+Jeśli synchronizacja katalogów została już skonfigurowana, nazwa UPN użytkownika dla Microsoft 365 może nie być zgodna z nazwą UPN usług AD DS użytkownika zdefiniowaną w usługach AD DS. Może to wystąpić, gdy użytkownikowi przypisano licencję przed zweryfikowaniem domeny. Aby rozwiązać ten problem, użyj programu [PowerShell, aby naprawić zduplikowaną nazwę UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730), aby zaktualizować nazwę UPN użytkownika, aby upewnić się, że nazwa UPN Microsoft 365 jest zgodna z firmową nazwą użytkownika i domeną. Jeśli aktualizujesz nazwę UPN w usługach AD DS i chcesz ją zsynchronizować z tożsamością Azure Active Directory, musisz usunąć licencję użytkownika w Microsoft 365 przed wprowadzeniem zmian w usługach AD DS.
 
-Zobacz też [Jak przygotować domenę nie routowaną (taką jak domena .local) do synchronizacji katalogów](prepare-a-non-routable-domain-for-directory-synchronization.md).
+Zobacz również [Jak przygotować domenę bez routingu (taką jak domena lokalna) do synchronizacji katalogów](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po zakończeniu synchronizacji katalogów (od 1 do 5 powyżej) zobacz [Konfigurowanie synchronizacji katalogów](set-up-directory-synchronization.md).
+Po wykonaniu od 1 do 5 powyższych czynności zobacz [Konfigurowanie synchronizacji katalogów](set-up-directory-synchronization.md).

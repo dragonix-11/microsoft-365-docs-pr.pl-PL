@@ -2,8 +2,8 @@
 title: Twórz zapytania wyszukiwania za pomocą edytora KQL
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Za pomocą edytora KQL można skonfigurować zapytania wyszukiwania zbierania elektronicznych materiałów dowodowych w obszarze Wyszukiwanie zawartości, zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium).
-ms.openlocfilehash: cbd7adb02c926477fd81568ed950ebd16110c79b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d97beb6cf8df95aa5112537c75caf4f548f7658d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993803"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098587"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>Twórz zapytania wyszukiwania za pomocą edytora KQL
 
