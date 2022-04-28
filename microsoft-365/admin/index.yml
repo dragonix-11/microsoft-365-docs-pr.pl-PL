@@ -10,80 +10,86 @@ metadata:
   ms.topic: hub-page
   author: kwekua
   ms.author: kwekua
-  ms.date: 11/08/2019
+  ms.date: 04/07/2022
   ms.localizationpriority: high
   ms.custom:
-    - AdminSurgePortfolio
-    - intro-hub-or-landing
+  - AdminSurgePortfolio
+  - intro-hub-or-landing
   ms.collection: Adm_TOC
+  ms.openlocfilehash: 0a50a930013db739cab368e7763669798267a509
+  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.translationtype: HT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65094333"
 highlightedContent:
   items:
-    - title: Usługa Office 365 to teraz platforma Microsoft 365!
-      itemType: whats-new
-      url: new-subscription-names.md
-    - title: Co nowego w Centrum administracyjnym platformy Microsoft 365!
-      itemType: whats-new
-      url: whats-new-in-preview.md
-    - title: Bądź na bieżąco ze zmianami na platformie Microsoft 365
-      itemType: how-to-guide
-      url: manage/stay-on-top-of-updates.md
+  - title: Usługa Office 365 to teraz platforma Microsoft 365!
+    itemType: whats-new
+    url: new-subscription-names.md
+  - title: Co nowego w Centrum administracyjnym platformy Microsoft 365!
+    itemType: whats-new
+    url: whats-new-in-preview.md
+  - title: Bądź na bieżąco ze zmianami na platformie Microsoft 365
+    itemType: how-to-guide
+    url: manage/stay-on-top-of-updates.md
 productDirectory:
   title: Wprowadzenie
-  summary: 'Skonfiguruj subskrypcję i pocztę e-mail, dodaj użytkowników i zainstaluj aplikacje.'
+  summary: Skonfiguruj subskrypcję i pocztę e-mail, dodaj użytkowników i zainstaluj aplikacje.
   items:
-    - title: 20 najczęściej wyświetlanych artykułów pomocy dla administratorów w tym miesiącu
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 'Zapoznaj się z artykułami pomocy, które są najbardziej popularne wśród innych administratorów.'
-      url: top-m365-admin-articles.yml
-    - title: Biblioteka wideo szkoleń dla administratorów
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
-      summary: 'Dowiedz się, jak skonfigurować platformę Microsoft 365 dla swojej firmy i zarządzać nią za pomocą krótkich klipów wideo.'
-      url: admin-video-library.yml
-    - title: Wprowadzenie
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
-      summary: Zarejestruj się i skonfiguruj platformę Microsoft 365.
-      url: admin-overview/sign-up-for-office-365.md
-    - title: Migrowanie danych
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/migration-blue.svg'
-      summary: Przenieś dane z innej usługi na platformę Microsoft 365.
-      url: setup/migrate-email-and-contacts-admin.md
-    - title: Instalowanie aplikacji
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/deploy-blue.svg'
-      summary: Zainstaluj pakiet Office i inne aplikacje firmy Microsoft.
-      url: setup/install-applications.md
-    - title: Szkolenie użytkowników
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 'Pomóż użytkownikom w organizacji dowiedzieć się, jak przechowywać i udostępniać pliki oraz korzystać z aplikacji pakietu Office.'
-      url: 'https://support.microsoft.com/training'
+  - title: 20 najczęściej wyświetlanych artykułów pomocy dla administratorów w tym miesiącu
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Zapoznaj się z artykułami pomocy, które są najbardziej popularne wśród innych administratorów.
+    url: top-m365-admin-articles.yml
+  - title: Biblioteka wideo szkoleń dla administratorów
+    imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+    summary: Dowiedz się, jak skonfigurować platformę Microsoft 365 dla swojej firmy i zarządzać nią za pomocą krótkich klipów wideo.
+    url: admin-video-library.yml
+  - title: Wprowadzenie
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: Zarejestruj się i skonfiguruj platformę Microsoft 365.
+    url: admin-overview/sign-up-for-office-365.md
+  - title: Migrowanie danych
+    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    summary: Przenieś dane z innej usługi na platformę Microsoft 365.
+    url: setup/migrate-email-and-contacts-admin.md
+  - title: Instalowanie aplikacji
+    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    summary: Zainstaluj pakiet Office i inne aplikacje firmy Microsoft.
+    url: setup/install-applications.md
+  - title: Szkolenie użytkowników
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Pomóż użytkownikom w organizacji dowiedzieć się, jak przechowywać i udostępniać pliki oraz korzystać z aplikacji pakietu Office.
+    url: https://support.microsoft.com/training
 additionalContent:
   sections:
-    - title: Zarządzanie
-      summary: 'Zarządzaj subskrypcją, usługami i użytkownikami, chroń swoją firmę i uzyskaj pomoc dotyczącą rozwiązywaniu problemów.'
-      items:
-        - title: Omówienie centrum administracyjnego platformy Microsoft 365
-          summary: 'Dowiedz się więcej o rolach administratora, sposobie śledzenia zmian i dostosowywaniu subskrypcji.'
-          url: admin-overview/about-the-admin-center.md
-        - title: Użytkownicy i grupy
-          summary: 'Zarządzaj hasłami, dodawaj i usuwaj użytkowników, konfiguruj grupy i zarządzaj nimi, zarządzaj dostępem gościa i przypisuj licencje użytkowników.'
-          url: add-users/add-users.md
-        - title: Poczta e-mail i kalendarze
-          summary: 'Zarządzaj ustawieniami poczty e-mail, grupami dystrybucyjnymi i ustawieniami zabezpieczeń oraz konfiguruj udostępnione skrzynki pocztowe.'
-          url: email/office-365-user-email-settings.md
-        - title: Domeny
-          summary: 'Dowiedz się więcej o domenach, konfigurowaniu domen i zarządzaniu nimi oraz aktualizowaniu rekordów DNS.'
-          url: setup/add-domain.md
-        - title: Twoje dane i usługa
-          summary: 'Monitoruj stan usługi, twórz kopie zapasowe danych, instaluj dodatki i uaktualniaj do najnowszych aplikacji.'
-          url: activity-reports/activity-reports.md
-        - title: Subskrypcje i rozliczenia
-          summary: 'Zarządzaj rachunkami, subskrypcjami i licencjami produktów, aktualizuj metody płatności oraz kupuj dodatkowe usługi i pamięć.'
-          url: ../commerce/index.yml
-        - title: Zabezpieczanie organizacji
-          summary: 'Poznaj najlepsze sposoby zabezpieczania organizacji, takie jak konfigurowanie uwierzytelniania wieloskładnikowego (MFA), a także dowiedz się więcej o wskaźniku bezpieczeństwa firmy Microsoft i RODO.'
-          url: security-and-compliance/secure-your-business-data.md
-        - title: Praca z klientami
-          summary: Udostępniaj dokumenty oraz używaj aplikacji Teams do współpracy i spotkań.
-          url: manage/share-calendars-with-external-users.md
-        - title: Rozwiązywanie problemów
-          summary: Uzyskaj dostęp do zasobów ułatwiających rozwiązywanie i usuwanie problemów z produktami lub usługami pakietu Office.
-          url: 'https://docs.microsoft.com/office/troubleshoot/'
+  - title: Zarządzanie
+    summary: Zarządzaj subskrypcją, usługami i użytkownikami, chroń swoją firmę i uzyskaj pomoc dotyczącą rozwiązywaniu problemów.
+    items:
+    - title: Omówienie centrum administracyjnego platformy Microsoft 365
+      summary: Dowiedz się więcej o rolach administratora, sposobie śledzenia zmian i dostosowywaniu subskrypcji.
+      url: admin-overview/about-the-admin-center.md
+    - title: Użytkownicy i grupy
+      summary: Zarządzaj hasłami, dodawaj i usuwaj użytkowników, konfiguruj grupy i zarządzaj nimi, zarządzaj dostępem gościa i przypisuj licencje użytkowników.
+      url: add-users/add-users.md
+    - title: Poczta e-mail i kalendarze
+      summary: Zarządzaj ustawieniami poczty e-mail, grupami dystrybucyjnymi i ustawieniami zabezpieczeń oraz konfiguruj udostępnione skrzynki pocztowe.
+      url: email/office-365-user-email-settings.md
+    - title: Domeny
+      summary: Dowiedz się więcej o domenach, konfigurowaniu domen i zarządzaniu nimi oraz aktualizowaniu rekordów DNS.
+      url: setup/add-domain.md
+    - title: Twoje dane i usługa
+      summary: Monitoruj stan usługi, twórz kopie zapasowe danych, instaluj dodatki i uaktualniaj do najnowszych aplikacji.
+      url: activity-reports/activity-reports.md
+    - title: Subskrypcje i rozliczenia
+      summary: Zarządzaj rachunkami, subskrypcjami i licencjami produktów, aktualizuj metody płatności oraz kupuj dodatkowe usługi i pamięć.
+      url: ../commerce/index.yml
+    - title: Zabezpieczanie organizacji
+      summary: Poznaj najlepsze sposoby zabezpieczania organizacji, takie jak wprowadzenie uwierzytelniania wieloskładnikowego (MFA), a także dowiedz się więcej o wskaźniku bezpieczeństwa firmy Microsoft i RODO.
+      url: security-and-compliance/secure-your-business-data.md
+    - title: Praca z klientami
+      summary: Udostępniaj dokumenty oraz używaj aplikacji Teams do współpracy i spotkań.
+      url: manage/share-calendars-with-external-users.md
+    - title: Rozwiązywanie problemów
+      summary: Uzyskaj dostęp do zasobów ułatwiających rozwiązywanie i usuwanie problemów z produktami lub usługami pakietu Office.
+      url: /office/troubleshoot/

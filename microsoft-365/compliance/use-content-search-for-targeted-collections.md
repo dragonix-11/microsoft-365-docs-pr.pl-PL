@@ -2,8 +2,8 @@
 title: Używanie wyszukiwania zawartości dla kolekcji docelowych
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Użyj wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, aby wykonać docelową kolekcję, która wyszukuje elementy w określonej skrzynce pocztowej lub folderze witryny.
-ms.openlocfilehash: 9638a0870f1d97d2bcea73215509d269576c4ecd
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 396c42183667e59e738779f618ca077d909db419
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991781"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094929"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Używanie wyszukiwania zawartości dla kolekcji docelowych
 

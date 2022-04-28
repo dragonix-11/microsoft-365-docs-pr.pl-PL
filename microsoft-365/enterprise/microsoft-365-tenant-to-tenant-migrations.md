@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 migracji z dzierżawy do dzierżawy
+title: Microsoft 365 migracji dzierżawy do dzierżawy
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -17,32 +17,32 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 f1.keywords:
 - NOCSH
-description: Dowiedz się, jak przeprowadzić Microsoft 365 dzierżaw.
+description: Dowiedz się, jak migrować dzierżawy Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 38450433538b667e1d1b54a53a27d21847d5337b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51a9f518b3cd98330b5749886f31dbe260f578d9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986413"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094841"
 ---
-# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 migracji z dzierżawy do dzierżawy
+# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 migracji dzierżawy do dzierżawy
 
-Istnieje kilka metod architektury fuzji, pozyskiwania, pozyskiwania i innych scenariuszy, które mogą doprowadzić do przeprowadzenia migracji istniejącej Microsoft 365 dzierżawy do nowej dzierżawy. Większość klientów przeprowadza migrację dzierżaw, w tym przeprowadza migrację zawartości za pomocą narzędzi innych firm we współpracy z usługami Microsoft Consulting Services lub partnerem firmy Microsoft. 
+Istnieje kilka metod architektury dla fuzji, przejęć, zbycia i innych scenariuszy, które mogą prowadzić do migracji istniejącej dzierżawy Microsoft 365 do nowej dzierżawy. Większość klientów współpracuje z usługami Microsoft Consulting Services lub partnerem firmy Microsoft w celu migrowania dzierżaw, w tym przy użyciu narzędzi innych firm do migrowania zawartości. 
 
-Użyj modelu [migracji dzierżawy-dzierżawy](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf), aby dowiedzieć się, jak zaplanować Microsoft 365 migracji dzierżawy-dzierżawy oraz etapy migracji.
+Użyj [modelu architektury migracji dzierżawy do dzierżawy](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf), aby dowiedzieć się, jak planować migracje Microsoft 365 dzierżawy do dzierżawy oraz kroki migracji.
 
-[![Model migracji z dzierżawy do dzierżawy.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
+[![Model migracji dzierżawy do dzierżawy.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
-Pobierz ten model w formacie [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) i drukujesz go na papierze w formacie letter, legal lub tabloid (11 x 17).
+Ten model można pobrać w formacie [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) i wydrukować go na papierze letter, legal lub tabloid (11 x 17).
 
-Ten model zawiera wskazówki i punkt wyjścia do planowania z sekcjami na temat:
+Ten model zawiera wskazówki i punkt wyjścia do planowania z sekcjami dotyczącymi:
 
-- Mapowanie scenariuszy biznesowych na metody architektury
-- Zagadnienia projektowe
+- Mapowanie scenariuszy biznesowych na podejścia architektury
+- Zagadnienia dotyczące projektowania
 
 Ten model zawiera również szczegółowe przykłady:
 
 - Przepływ migracji pojedynczego zdarzenia
 - Przepływ migracji etapowej
-- Przenoszenie lub dzielenie przepływu dzierżawy
+- Przepływ przenoszenia lub dzielenia dzierżawy

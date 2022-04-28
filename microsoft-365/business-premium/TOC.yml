@@ -2,81 +2,113 @@
   items:
     - name: Omówienie
       href: index.md
+    - name: Jak platforma Microsoft 365 pomaga Twojej firmie
+      href: m365bp-secure-users.md
     - name: Uzyskiwanie usługi Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
-    - name: Uzyskaj Microsoft 365 kampanii
+    - name: Pobieranie platformy Microsoft 365 for Campaigns
       href: get-microsoft-365-campaigns.md
-    - name: Jak Microsoft 365 chroni Twoją organizację
-      href: m365bp-secure-users.md
-- name: Konfigurowanie i logowanie
+- name: Wzmacnianie środowiska
   items:
-    - name: Konfigurowanie Microsoft 365 Business Premium
-      href: m365bp-setup.md
-    - name: Konfigurowanie Microsoft 365 kampanii
+    - name: Logowanie się i konfigurowanie
       items:
         - name: Omówienie
-          href: microsoft-365-campaigns-setup-overview.md
-        - name: Zarejestruj się
-          href: m365-campaigns-sign-up.md
-        - name: Logowanie się
-          href: m365-campaigns-sign-in.md
-        - name: Dostosowywanie strony logowania
-          href: m365-customize-sign-in.md
-- name: Ochrona przed poziomem zabezpieczeń
+          href: m365bp-setup-overview.md
+        - name: Konfigurowanie usługi Microsoft 365 Business Premium
+          href: m365bp-setup.md
+        - name: Konfigurowanie platformy Microsoft 365 for Campaigns
+          items:
+            - name: Tworzenie konta
+              href: m365-campaigns-sign-up.md
+            - name: Logowanie się
+              href: m365-campaigns-sign-in.md
+            - name: Dostosowywanie strony logowania
+              href: m365-customize-sign-in.md
+    - name: Zwiększanie ochrony zabezpieczeń
+      items:
+        - name: Omówienie
+          href: m365bp-security-overview.md
+        - name: Ochrona kont administratorów
+          href: m365bp-protect-admin-accounts.md
+        - name: Włączanie ustawień domyślnych zabezpieczeń
+          href: m365bp-conditional-access.md
+        - name: Ochrona przed złośliwym oprogramowaniem i innymi zagrożeniami
+          href: m365bp-increase-protection.md
+- name: Trenowanie zespołu
   items:
-    - name: Ochrona kont administratora
-      href: m365bp-protect-admin-accounts.md
-    - name: Włączanie domyślnych ustawień zabezpieczeń
-      href: m365bp-conditional-access.md
-    - name: Ochrona przed złośliwym oprogramowaniem i innymi zagrożeniami
-      href: m365bp-increase-protection.md
-- name: Konfigurowanie urządzeń
+    - name: Konfigurowanie urządzeń niezarządzanych (BYOD)
+      items:
+        - name: Omówienie
+          href: m365bp-devices-overview.md
+        - name: Konfigurowanie uwierzytelniania wieloskładnikowego
+          href: m365bp-multifactor-authentication.md
+        - name: Instalowanie aplikacji pakietu Office na urządzeniach
+          href: m365bp-install-office-apps.md
+        - name: Ochrona urządzeń niezarządzanych
+          href: m365bp-protect-pcs-macs.md
+    - name: Bezpieczne korzystanie z poczty e-mail
+      items:
+        - name: Omówienie
+          href: m365bp-protect-email-overview.md
+        - name: Ochrona przed wyłudzaniem informacji i innymi atakami
+          href: avoid-phishing-and-attacks.md
+        - name: Wysyłanie zaszyfrowanej wiadomości e-mail
+          href: send-encrypted-email.md
+    - name: Bezpieczna współpraca i udostępnianie
+      items:
+        - name: Omówienie
+          href: m365bp-collaborate-share-securely.md
+        - name: Tworzenie przestrzeni Teams na potrzeby współpracy
+          href: create-teams-for-collaboration.md
+        - name: Konfigurowanie spotkań
+          href: set-up-meetings.md
+        - name: Udostępnianie plików i klipów wideo
+          href: share-files-and-videos.md
+        - name: Tworzenie witryny do komunikacji dla organizacji
+          href: create-communications-site.md
+- name: Ochrona urządzeń zarządzanych
   items:
-    - name: Konfigurowanie uwierzytelniania wieloskładnikowego
-      href: m365bp-multifactor-authentication.md
-    - name: Konfigurowanie zarządzanych Windows przenośnych
-      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Konfigurowanie urządzeń przenośnych
-      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Ochrona niezamanektowych komputerów PC i Mac
-      href: m365bp-protect-pcs-macs.md
-- name: Ochrona poczty e-mail
+    - name: Konfigurowanie i zabezpieczanie urządzeń zarządzanych
+      items:
+        - name: Omówienie
+          href: m365bp-protect-devices.md
+        - name: Konfigurowanie urządzeń zarządzanych
+          href: m365bp-managed-devices-setup.md
+        - name: Dołączanie zarejestrowanych urządzeń i stosowanie zasad
+          href: m365bp-onboard-devices-mdb.md
+        - name: Przeglądanie i edytowanie zasad urządzeń
+          href: m365bp-view-edit-create-mdb-policies.md
+        - name: Zarządzanie grupami urządzeń
+          href: m365bp-device-groups-mdb.md
+- name: Zarządzanie zdarzeniami dotyczącymi zabezpieczeń
   items:
-    - name: Ochrona przed wyłudzaniem informacji i innymi atakami
-      href: m365-campaigns-phishing-and-attacks.md
-    - name: Wysyłanie zaszyfrowanej wiadomości e-mail
-      href: send-encrypted-email.md
-- name: Bezpieczna współpraca i udostępnianie
+    - name: Omówienie
+      href: m365bp-security-incident-management.md
+    - name: Pobieranie rekomendacji dotyczących zabezpieczeń
+      href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Przegadanie akcji korygowania na urządzeniach
+      href: m365bp-review-remediation-actions-devices.md
+    - name: Reagowanie na konto e-mail z naruszonymi zabezpieczeniami
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: Utrzymywanie środowiska
   items:
-    - name: Tworzenie Teams do współpracy
-      href: create-teams-for-collaboration.md
-    - name: Konfigurowanie spotkań
-      href: set-up-meetings.md
-    - name: Udostępnianie plików i klipów wideo
-      href: share-files-and-videos.md
-    - name: Tworzenie witryny do komunikacji dla organizacji
-      href: create-communications-site.md
-- name: Ochrona urządzeń za pomocą programu Defender dla firm
-  items:
-    - name: Urządzenia w programie Microsoft Defender dla firm
-      href: m365bp-onboard-devices-mdb.md
-    - name: Przeglądanie i edytowanie zasad urządzenia
-      href: m365bp-view-edit-create-mdb-policies.md
-    - name: Zarządzanie grupami urządzeń
-      href: m365bp-device-groups-mdb.md
-- name: Resetowanie lub usuwanie danych z urządzeń
-  items:
+    - name: Omówienie
+      href: m365bp-maintain-environment.md
+    - name: Usuwanie użytkowników
+      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Usuwanie danych z urządzeń
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Resetowanie urządzeń do ustawień fabrycznych
+    - name: Resetuj urządzenia do ustawień fabrycznych
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: Zarządzanie incydentami zabezpieczeń
-  items:
-    - name: Przeglądanie działań naprawczych na urządzeniach
-      href: m365bp-review-remediation-actions-devices.md
-    - name: Odpowiadanie na naruszone konto e-mail
-      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Odwołanie
   items:
-    - name: Microsoft Defender for Business
+    - name: Słownik terminów
+      href: m365bp-glossary.md
+    - name: Zawartość administratora platformy Microsoft 365
+      href: /microsoft-365/admin/
+    - name: Microsoft Defender dla Firm
       href: ../security/defender-business/index.yml
+    - name: Ochrona usługi Office 365 w usłudze Microsoft Defender
+      href: ../security/office-365-security/overview.md
+    - name: Microsoft 365 Lighthouse
+      href: ../lighthouse/m365-lighthouse-overview.md

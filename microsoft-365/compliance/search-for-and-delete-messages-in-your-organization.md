@@ -2,8 +2,8 @@
 title: Wyszukiwanie i usuwanie wiadomości e-mail w organizacji
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Użyj funkcji wyszukiwania i przeczyszczania w portalu zgodności usługi Microsoft Purview, aby wyszukać i usunąć wiadomość e-mail ze wszystkich skrzynek pocztowych w organizacji.
-ms.openlocfilehash: 67a1c6758a5030897afbde07a0803cad348eca0c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 9e6159bcd6cdd8a06a310c5de9f07b105dbb4122
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993668"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094907"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Wyszukaj i usuń wiadomości e-mail
 

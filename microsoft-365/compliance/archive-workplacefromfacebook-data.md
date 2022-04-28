@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych aplikacji Workplace z serwisu Facebook w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z usługi Workplace z serwisu Facebook, który jest archiwizowany w witrynie Merge1 firmy Veritas, do Microsoft 365. Skonfigurowanie łącznika wymaga współpracy z usługą Veritas Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: 0dbd1bfaeea6a42db03793941b1fea894ee391b5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8736da009ec192d2eab7225f09fb54de04b8b966
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001461"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094509"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Konfigurowanie łącznika do archiwizowania danych aplikacji Workplace z serwisu Facebook
 

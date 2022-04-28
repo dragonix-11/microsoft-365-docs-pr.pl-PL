@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych usługi Twitter
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Dowiedz się, jak administratorzy mogą skonfigurować łącznik natywny i używać go do importowania danych usługi Twitter do Microsoft 365.
-ms.openlocfilehash: 95a6a3abd9bed908172ea41b33e4fd60376bea01
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: ba151d1ffae18a5df033fbb8696fcd3bf759f285
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993518"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094553"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Konfigurowanie łącznika firmy Microsoft do archiwizowania danych usługi Twitter (wersja zapoznawcza)
 

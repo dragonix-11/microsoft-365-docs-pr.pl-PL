@@ -1,10 +1,10 @@
 ---
-title: Sieci firmy Contoso Corporation
+title: Sieć dla firmy Contoso Corporation
 author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,115 +13,115 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Zrozumienie infrastruktury sieciowej firmy Contoso i sposobu, w jaki firma korzysta z technologii SD-WAN w celu zapewnienia optymalnej wydajności sieci w Microsoft 365 dla usług w chmurze przedsiębiorstwa.
-ms.openlocfilehash: 94c9c43e35f0f1a3d973529aa2b107cffe608693
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Zapoznaj się z infrastrukturą sieciową firmy Contoso i sposobem, w jaki firma wykorzystuje technologię SD-WAN w celu uzyskania optymalnej wydajności sieci w celu Microsoft 365 dla usług w chmurze dla przedsiębiorstw.
+ms.openlocfilehash: f8450b63bed68de414c0ea585b6f5e199c87ad90
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985048"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093948"
 ---
-# <a name="networking-for-the-contoso-corporation"></a>Sieci firmy Contoso Corporation
+# <a name="networking-for-the-contoso-corporation"></a>Sieć dla firmy Contoso Corporation
 
-W celu przyjęcia infrastruktury chmurowej firma Contoso opracowała podstawową zmianę sposobu ruchu sieciowego do usług w chmurze. Zamiast wewnętrznego modelu hub-and-wrysłowy, w którym skupiono się na łączności sieciowej i ruchu na następnym poziomie hierarchii biura, zamapowane są one na lokalny internetowy ruch wychodzący i połączenia lokalne z najbliższą lokalizacją sieciową Microsoft 365 w Internecie.
+Aby wdrożyć infrastrukturę uwzględniającą chmurę, firma Contoso opracowała fundamentalną zmianę w sposobie przenoszenia ruchu sieciowego do usług w chmurze. Zamiast wewnętrznego modelu piasty i szprych, który koncentruje łączność sieciową i ruch na następnym poziomie hierarchii pakietu Office, mapowali lokalizacje użytkowników na lokalne połączenia internetowe i lokalne z najbliższą lokalizacją sieci Microsoft 365 w Internecie.
 
-## <a name="networking-infrastructure"></a>Infrastruktura sieci
+## <a name="networking-infrastructure"></a>Infrastruktura sieciowa
 
-Są to elementy sieci, które łączyją biura firmy Contoso na całym świecie:
+Są to elementy sieci, które łączą biura firmy Contoso na całym świecie:
 
 - Sieć WAN multiprotocol Label Switching (MPLS)
 
-  Sieć MPLS WAN łączy siedzibę główną Paryża z oddziałami regionalnymi i oddziałami regionalnymi w konfiguracji rozsyłanej na urządzeniach satelitarnych i w centrum. Sieć umożliwia użytkownikom dostęp do serwerów lokalnych, które składa się z aplikacji biznesowych w siedzibie głównej w Paryżu. Ponadto przekierowywuje on dowolny ogólny ruch internetowy do biura w Paryżu, gdzie urządzenia zabezpieczeń sieciowych przesuwają żądania. W każdym biurze routery dostarczają ruch do hostów przewodowych lub punktów dostępu bezprzewodowego w podsieci, w których jest wykorzystanie prywatnej przestrzeni adresów IP.
+  Sieć MPLS WAN łączy siedzibę w Paryżu z biurami regionalnymi i regionalnymi z biurami satelitarnymi w konfiguracji szprychy i koncentratora. Sieć umożliwia użytkownikom dostęp do serwerów lokalnych, które tworzą aplikacje biznesowe w siedzibie głównej w Paryżu. Kieruje również każdy ogólny ruch internetowy do biura w Paryżu, gdzie urządzenia zabezpieczeń sieci szorują żądania. W każdym biurze routery dostarczają ruch do hostów przewodowych lub punktów dostępu bezprzewodowego w podsieciach, które korzystają z prywatnej przestrzeni adresowej IP.
 
-- Lokalny bezpośredni dostęp do Internetu dla Microsoft 365 ruchu
+- Lokalny bezpośredni dostęp do Internetu dla ruchu Microsoft 365
 
-  Każde biuro ma urządzenie w sieci WAN (SD-WAN) zdefiniowane programowo, które ma co najmniej jeden lokalny obwód sieciowy u dostawcy internetowego z własną łącznością internetową za pośrednictwem serwera proxy. Jest to zwykle zaimplementowane jako link sieci WAN do lokalnego dostawcy usług internetowych, który również udostępnia publiczne adresy IP i lokalny serwer DNS.
+  Każdy urząd ma zdefiniowane programowo urządzenie WAN (SD-WAN), które ma co najmniej jeden lokalny internetowy obwód sieciowy usługodawcy internetowego z własną łącznością internetową za pośrednictwem serwera proxy. Jest to zwykle implementowane jako link sieci WAN do lokalnego usługodawcy internetowego, który udostępnia również publiczne adresy IP i lokalny serwer DNS.
 
 - Obecność w Internecie
 
-  Contoso jest właścicielem nazwy domeny publicznej contosocom\.. Publiczna witryna sieci Web Firmy Contoso do zamawiania produktów to zestaw serwerów w centrum danych połączonym z Internetem w paryżu campus. Firma Contoso używa publicznego zakresu adresów IP /24 w Internecie.
+  Firma Contoso jest właścicielem nazwy domeny publicznej contosocom\.. Publiczna witryna internetowa firmy Contoso do zamawiania produktów to zestaw serwerów w połączonym z Internetem centrum danych w kampusie w Paryżu. Firma Contoso używa zakresu publicznych adresów IP /24 w Internecie.
 
 Rysunek 1 przedstawia infrastrukturę sieciową firmy Contoso i jej połączenia z Internetem.
 
-![Sieć Contoso.](../media/contoso-networking/contoso-networking-fig1.png)
+![Sieć firmy Contoso.](../media/contoso-networking/contoso-networking-fig1.png)
  
-**Rysunek 1. Sieć Contoso**
+**Rysunek 1. Sieć firmy Contoso**
 
-## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Korzystanie z sieci SD-WAN w celu zapewnienia optymalnej łączności sieciowej z firmą Microsoft
+## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Korzystanie z sieci SD-WAN w celu uzyskania optymalnej łączności sieciowej z firmą Microsoft
 
-Firma Contoso [przestrzegać Microsoft 365 dotyczących łączności sieciowej](microsoft-365-network-connectivity-principles.md) do:
+Firma Contoso przestrzegała [Microsoft 365 zasad łączności sieciowej](microsoft-365-network-connectivity-principles.md) w celu:
 
-- Identyfikowanie i rozróżnianie Microsoft 365 sieciowego
+- Identyfikowanie i rozróżnianie ruchu sieciowego Microsoft 365
 - Egress połączeń sieciowych lokalnie
-- Unikaj spinek sieciowych
-- Pomijanie zduplikowanych urządzeń zabezpieczeń sieciowych
+- Unikanie sieciowych spinek do włosów
+- Pomijanie zduplikowanych sieciowych urządzeń zabezpieczeń
 
-Istnieją trzy kategorie ruchu sieciowego dla następujących Microsoft 365: *Optymalizuj*, *Zezwalaj* i *Domyślne*. Optymalizuj i zezwalaj na ruch jest zaufanym ruchem sieciowym, który jest zaszyfrowany i zabezpieczony w punktach końcowych i jest przeznaczony do Microsoft 365 sieci.
+Istnieją trzy kategorie ruchu sieciowego dla Microsoft 365: *Optymalizuj*, *Zezwalaj* i *Domyślne*. Optymalizacja i zezwalanie na ruch to zaufany ruch sieciowy, który jest szyfrowany i zabezpieczony w punktach końcowych i jest przeznaczony dla sieci Microsoft 365.
 
-Firma Contoso zdecydowała się:
+Firma Contoso zdecydowała się na:
 
-- Użyj bezpośredniego internetowego ruchu wychodzącego, aby zoptymalizować i zezwolić na ruch kategorii oraz aby przesyłać dalej cały domyślny ruch kategorii do centralnego połączenia internetowego opartego na Paryżu.
+- Użyj bezpośredniego ruchu wychodzącego z Internetu, aby zoptymalizować i zezwolić na ruch kategorii oraz przekazać cały domyślny ruch kategorii do centralnego połączenia internetowego z siedzibą w Paryżu.
 
-- Wdrażaj urządzenia SD-WAN w każdym biurze w prosty sposób zgodnie z tymi zasadami i osiągaj optymalną wydajność sieci dla Microsoft 365 usług opartych na chmurze.
+- Wdrażanie urządzeń SD-WAN w każdym biurze jako prosty sposób na przestrzeganie tych zasad i osiągnięcie optymalnej wydajności sieci dla Microsoft 365 usług opartych na chmurze.
 
-  Urządzenia SD-WAN mają port LAN dla lokalnej sieci biura i wiele portów WAN. Jeden port WAN łączy się z siecią MPLS. Inny łączy się z lokalnym obwodem sieciowym. Urządzenie SD-WAN umożliwia trasę optymalizowania i zezwalania na ruch sieciowy kategorii za pośrednictwem linku internetowego.
+  Urządzenia SD-WAN mają port LAN dla lokalnej sieci biurowej i wiele portów sieci WAN. Jeden port sieci WAN łączy się z siecią MPLS. Inny łączy się z lokalnym obwodem usługodawcy sieciowego. Urządzenie SD-WAN kieruje opcję Optymalizuj i zezwalaj na ruch sieciowy kategorii za pośrednictwem linku usługodawcy internetowego.
 
 ## <a name="the-contoso-line-of-business-app-infrastructure"></a>Infrastruktura aplikacji biznesowych firmy Contoso
 
-Firma Contoso zaprojektowała swoją infrastrukturę intranetową aplikacja LOB serwera na przykład w następujący sposób:
+Firma Contoso jest architektem infrastruktury intranetu aplikacji biznesowych i serwera w następujących celach:
 
-- Biura satelitarne korzystają z lokalnych serwerów buforowania do przechowywania często używanych dokumentów i wewnętrznych witryn sieci Web.
-- Centra regionalne korzystają z serwerów aplikacji regionalnych dla biur regionalnych i satelitarnych. Te serwery są synchronizowane z serwerami w siedzibie głównej w Paryżu.
-- Centra danych firmy Paris Campus zawierają scentralizowane serwery aplikacji, które obsługują całą organizację.
+- Biura satelitarne używają lokalnych serwerów buforowania do przechowywania często używanych dokumentów i wewnętrznych witryn internetowych.
+- Centra regionalne używają regionalnych serwerów aplikacji dla biur regionalnych i satelitarnych. Te serwery synchronizują się z serwerami w siedzibie głównej w Paryżu.
+- Centra danych kampusu w Paryżu zawierają scentralizowane serwery aplikacji, które obsługują całą organizację.
 
-Rysunek 2 przedstawia wartość procentową pojemności ruchu sieciowego używaną podczas uzyskiwania dostępu do serwerów przez intranet firmy Contoso.
+Rysunek 2 przedstawia procent pojemności ruchu sieciowego używany podczas uzyskiwania dostępu do serwerów w intranecie firmy Contoso.
 
 ![Infrastruktura firmy Contoso dla aplikacji wewnętrznych.](../media/contoso-networking/contoso-networking-fig2.png)
  
 **Rysunek 2. Infrastruktura firmy Contoso dla aplikacji wewnętrznych**
 
-W przypadku biur satelitarnych lub regionalnych 60% zasobów potrzebnych pracownikom może być obsługiwanych przez serwery biur satelitarnych i regionalnych centrów regionalnych. Dodatkowe 40 procent żądań zasobów musi zostać za pośrednictwem łącza WAN do uniwersytetu w Paryżu.
+W przypadku biur centrów satelitarnych lub regionalnych 60 procent zasobów potrzebnych pracownikom może być obsługiwanych przez serwery satelitarne i regionalne. Dodatkowe 40 procent żądań zasobów musi przejść przez link sieci WAN do kampusu w Paryżu.
 
-## <a name="network-analysis-and-preparation-for-microsoft-365-for-enterprise"></a>Analiza sieci i przygotowanie do Microsoft 365 przedsiębiorstwa
+## <a name="network-analysis-and-preparation-for-microsoft-365-for-enterprise"></a>Analiza sieci i przygotowanie do Microsoft 365 dla przedsiębiorstw
 
-Pomyślne wdrożenie usługi Microsoft 365 dla przedsiębiorstw firmy Contoso zależy od wysokiej dostępnej i wydajnej łączności z Internetem lub bezpośrednio z usługami firmy Microsoft w chmurze. Firma Contoso zajęła się tym, aby zaplanować i zaimplementować zoptymalizowaną łączność z usługami Microsoft 365 w chmurze przedsiębiorstwa:
+Pomyślne wdrożenie Microsoft 365 dla usług dla przedsiębiorstw przez użytkowników firmy Contoso zależy od wysokiej dostępności i wydajnej łączności z Internetem lub bezpośrednio z usługami w chmurze firmy Microsoft. Firma Contoso podjęła następujące kroki, aby zaplanować i zaimplementować zoptymalizowaną łączność z Microsoft 365 dla usług w chmurze dla przedsiębiorstw:
 
-1. Tworzenie firmowego diagramu sieci WAN w celu pomocy w planowaniu
+1. Tworzenie diagramu sieci WAN firmy w celu pomocy w planowaniu
 
-   Aby rozpocząć planowanie sieci, firma Contoso utworzyła diagram przedstawiający lokalizacje ich biur, istniejącą łączność sieciową, istniejące urządzenia obwodowe sieci oraz klasy usług zarządzane w sieci. Używali tego diagramu na każdym kolejnym etapie planowania i implementacji łączności sieciowej.
+   Aby rozpocząć planowanie sieci, firma Contoso utworzyła diagram przedstawiający lokalizacje biura, istniejącą łączność sieciową, istniejące urządzenia obwodowe sieci i klasy usług, które są zarządzane w sieci. Korzystali z tego diagramu dla każdego kolejnego kroku planowania i implementacji łączności sieciowej.
 
-2. Tworzenie planu na Microsoft 365 dla łączności sieciowej w przedsiębiorstwie
+2. Tworzenie planu dla Microsoft 365 dla łączności sieciowej przedsiębiorstwa
 
-   Firma Contoso użyła [zasad Microsoft 365](microsoft-365-network-connectivity-principles.md) łączności sieciowej i przykładowych referencyjnych architektur sieciowych do identyfikowania sieci SD-WAN jako ich preferowanej topologii dla Microsoft 365 sieci.
+   Firma Contoso użyła [Microsoft 365 zasad łączności sieciowej i przykładowych](microsoft-365-network-connectivity-principles.md) referencyjnych architektur sieci do zidentyfikowania sieci SD-WAN jako preferowanej topologii łączności Microsoft 365.
 
-3. Analizowanie użycia połączenia internetowego i przepustowości MPLS-WAN w każdym biurze i zwiększanie przepustowości zgodnie z potrzebami
+3. Analizowanie wykorzystania połączenia internetowego i przepustowości MPLS-WAN w każdym biurze i zwiększanie przepustowości w razie potrzeby
 
-   Analizowane było bieżące użycie każdego biura, a obwody zostały zwiększone, dzięki czemu przewidywany ruch oparty na chmurze Microsoft 365 będzie działać przy średniej 20-procentowej nieużywanej pojemności.
+   Przeanalizowano bieżące użycie każdego biura, a obwody zostały zwiększone, dzięki czemu przewidywany ruch oparty na chmurze Microsoft 365 będzie działać ze średnią nieużywaną pojemnością wynoszącą 20 procent.
 
 4. Optymalizowanie wydajności usług sieciowych firmy Microsoft
 
-   Firma Contoso określała zestaw punktów końcowych usług Office 365, Intune i Azure oraz skonfigurowano zapory, urządzenia zabezpieczeń i inne systemy na ścieżce internetowej w celu zapewnienia optymalnej wydajności. Punkty końcowe dla Office 365 Optymalizacja i Zezwalaj na ruch kategorii zostały skonfigurowane na urządzeniach SD-WAN na kątem routingu za pośrednictwem obwodu isp.
+   Firma Contoso określiła zestaw punktów końcowych Office 365, Intune i azure oraz skonfigurowanych zapór, urządzeń zabezpieczeń i innych systemów w ścieżce internetowej w celu uzyskania optymalnej wydajności. Punkty końcowe dla Office 365 Optymalizuj i Zezwalaj na ruch kategorii zostały skonfigurowane na urządzeniach SD-WAN na potrzeby routingu przez obwód usługodawcy internetowego.
 
 5. Konfigurowanie wewnętrznego systemu DNS
 
-   System DNS musi być funkcjonalny i poszukiwany lokalnie pod Microsoft 365 ruchu.
+   System DNS musi działać i być wyszukiwany lokalnie pod kątem ruchu Microsoft 365.
 
-6. Sprawdzanie poprawności punktu końcowego sieci i łączności portów
+6. Weryfikowanie sieciowego punktu końcowego i łączności portów
 
-   Firma Contoso uruchomiła narzędzia testowe łączności sieciowej firmy Microsoft w celu weryfikacji łączności Microsoft 365 usług w chmurze przedsiębiorstwa.
+   Firma Contoso uruchomiła narzędzia testowe łączności sieciowej firmy Microsoft, aby zweryfikować łączność dla Microsoft 365 dla usług w chmurze dla przedsiębiorstw.
 
 7. Optymalizowanie komputerów pracowników pod kątem łączności sieciowej
 
-   Poszczególne komputery zostały sprawdzone, aby upewnić się, że zainstalowano najnowsze aktualizacje systemu operacyjnego i że monitorowanie zabezpieczeń punktów końcowych było aktywne na wszystkich klientach.
+   Poszczególne komputery zostały sprawdzone, aby upewnić się, że zainstalowano najnowsze aktualizacje systemu operacyjnego i że monitorowanie zabezpieczeń punktu końcowego było aktywne na wszystkich klientach.
 
 ## <a name="next-step"></a>Następny krok
 
-Dowiedz się, jak firma Contoso [wykorzystująca](contoso-identity.md) swoje lokalne Usługi domenowe w usłudze Active Directory w chmurze na potrzeby pracowników i uwierzytelnianie federujące dla klientów i partnerów biznesowych.
+Dowiedz się, jak firma Contoso [wykorzystuje swoje usługi lokalna usługa Active Directory Domain Services w chmurze](contoso-identity.md) dla pracowników i federuje uwierzytelnianie dla klientów i partnerów biznesowych.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Plan sieci dla sieci dla sieci Microsoft 365](networking-roadmap-microsoft-365.md)
+[Plan sieciowy dla Microsoft 365](networking-roadmap-microsoft-365.md)
 
-[Omówienie Microsoft 365 dla przedsiębiorstw](microsoft-365-overview.md)
+[Microsoft 365 dla przedsiębiorstw — omówienie](microsoft-365-overview.md)
 
-[Przewodniki laboratorium testowego](m365-enterprise-test-lab-guides.md)
+[Przewodniki po laboratorium testowym](m365-enterprise-test-lab-guides.md)

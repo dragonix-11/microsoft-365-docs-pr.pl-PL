@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,70 +13,70 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Dowiedz się, jak firma Contoso Microsoft Intune w Microsoft 365 dla przedsiębiorstw do zarządzania jego urządzeniami i aplikacjami, które na nich działają.
-ms.openlocfilehash: dedda98083dd5a27c4c7721b5ae8e5dc1fed4bad
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+description: Dowiedz się, jak firma Contoso używa Microsoft Intune w Microsoft 365 dla przedsiębiorstw do zarządzania urządzeniami i aplikacjami, które na nich działają.
+ms.openlocfilehash: c321fc9bdaf27577e32d934aa771c92d1a0bdd79
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63006584"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092696"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Zarządzanie urządzeniami przenośnymi dla firmy Contoso
 
-Microsoft 365 dla przedsiębiorstw obejmuje usługę Intune i zestaw usług Azure, które obsługują zarządzanie urządzeniami przenośnymi i aplikacjami oraz zabezpieczenia.
+Microsoft 365 dla przedsiębiorstw obejmuje Intune i zestaw usług platformy Azure, które obsługują zarządzanie urządzeniami przenośnymi i aplikacjami oraz zabezpieczenia.
 
-Firma Contoso ma wielu pracowników z włączoną obsługą urządzeń przenośnych. Niektóre z nich mają biura w lokalizacjach firmy Contoso, a inne nie mają biur. Firma Contoso potrzebowała sposobu zapewnienia pracownikowi produktywności, ale przy zachowaniu urządzeń, danych firmy Contoso przechowywanych na tych urządzeniach oraz zachowania aplikacji.
+Firma Contoso ma wielu pracowników z obsługą urządzeń przenośnych. Niektóre z nich mają biura w lokalizacjach firmy Contoso, a niektóre nie mają biur. Firma Contoso potrzebowała sposobu na zapewnienie produktywności pracowników, ale zapewnienie bezpieczeństwa urządzeń, danych firmy Contoso przechowywanych na tych urządzeniach i zachowania aplikacji.
 
-## <a name="plan"></a>Planowanie
+## <a name="plan"></a>Plan
 
-Firma Contoso zidentyfikował następujące przypadki zarządzania urządzeniami przenośnymi w usłudze Intune w Microsoft 365 przedsiębiorstwie:
+Firma Contoso zidentyfikowała następujące przypadki użycia Intune zarządzania urządzeniami przenośnymi dla Microsoft 365 dla przedsiębiorstw:
 
-- Chroń Exchange Online e-mail i dane, aby można było bezpiecznie uzyskiwać do nich dostęp na urządzeniach przenośnych.
-- Wdrożenie programu bring-your-own-device (BYOD) dla pracowników firmy Contoso.
-- Dziel się z pracownikami firmy Contoso telefonami i tabletami udostępnioni o ograniczonym użyciu.
+- Chroń Exchange Online wiadomości e-mail i dane, aby można było bezpiecznie uzyskiwać do nich dostęp przez urządzenia przenośne.
+- Zaimplementuj program BYOD (bring-your-own-device) dla pracowników firmy Contoso.
+- Wystawiaj pracownikom firmy Contoso telefony należące do organizacji i tablety udostępnione o ograniczonym użyciu.
 
-Firma Contoso nie używa usługi Intune do:
+Firma Contoso nie używa Intune do:
 
-- Umożliwia pracownikom bezpieczny dostęp do Microsoft 365 z niezamówionych publicznych kiosków.
-- Chroń lokalną pocztę e-mail i dane, aby były one bezpiecznie dostępne na urządzeniach przenośnych, ponieważ nie ma żadnych lokalnych serwerów Exchange firmy Microsoft.
+- Zezwalaj pracownikom na bezpieczny dostęp do Microsoft 365 z niezarządzanego kiosku publicznego.
+- Ochrona lokalnej poczty e-mail i danych, aby można było bezpiecznie uzyskiwać do nich dostęp przez urządzenia przenośne, ponieważ nie ma lokalnych serwerów Exchange firmy Microsoft.
 
 ## <a name="deploy"></a>Wdrażanie
 
-W ten sposób firma Contoso skonfiguruje swoją infrastrukturę zarządzania urządzeniami przenośnymi:
+W ten sposób firma Contoso skonfiguruje infrastrukturę zarządzania urządzeniami przenośnymi:
 
-- Ustaw usługę Intune jako urząd zarządzania urządzeniami przenośnymi (MDM), a za pomocą usługi Intune na platformie Azure zarządzaj zawartością i urządzeniami
-- Utworzono Azure Active Directory (Azure AD) dla urządzeń do rejestracji, ustawień usługi Intune i zasad dostępu warunkowego opartych na urządzeniach
+- Ustaw Intune jako urząd usługi Mobile Zarządzanie urządzeniami (MDM) i użyj Intune na platformie Azure do administrowania zawartością i zarządzania urządzeniami
+- Utworzono grupy Azure Active Directory (Azure AD) dla urządzeń na potrzeby rejestracji i ustawień Intune oraz zasad dostępu warunkowego opartego na urządzeniach
 
   Aby uzyskać więcej informacji, zobacz [Zasady dostępu warunkowego firmy Contoso](contoso-identity.md#conditional-access-policies-for-zero-trust-identity-and-device-access).
 
-- Włączono platformę urządzeń firmy Apple, aby wspierać pracowników za pomocą tabletów iPad, komputerów iMac i telefonów iPhone oraz telefonów iPhone należących do firmy
-- Utworzono zasady dotyczące warunków i postanowień specyficznych dla firmy Contoso, które są widoczne podczas instalacji pakietu Portal firmy dla firmy Contoso na urządzeniach przenośnych
-- W przypadku urządzeń, które nie zostały zarejestrowane, zaimplementowano zestaw zasad zarządzania aplikacjami przenośnymi (MAM), aby wymagać uwierzytelniania na Microsoft 365 usługach mobilnych
-- Utworzono zasady usługi Intune wymuszane:
+- Włączono platformę urządzeń Firmy Apple do obsługi pracowników przy użyciu tabletów iPad, komputerów iMac i iPhone oraz firmowych telefonów iPhone
+- Utworzono zasady warunków i postanowień specyficznych dla firmy Contoso, które są widoczne podczas instalacji Portal firmy dla firmy Contoso na urządzeniach przenośnych
+- W przypadku urządzeń, które nie są zarejestrowane, zaimplementowano zestaw zasad zarządzania aplikacjami mobilnymi (MAM) w celu wymagania uwierzytelniania w celu uzyskania dostępu do usług Microsoft 365
+- Utworzono zasady Intune, które wymuszają:
   - Dozwolone aplikacje.
-  - Szyfrowanie urządzeń w celu zapobiegania nieautoryzowanemu dostępowi.
+  - Szyfrowanie urządzenia, aby zapobiec nieautoryzowanemu dostępowi.
   - Sześciocyfrowy numer PIN lub hasło.
-  - Okres braku aktywności.
-  - Ochrona antywirusowa i złośliwego oprogramowania oraz aktualizacje podpisu Windows Defender na Windows 10 urządzeniach.
-  - Aktualizacje automatyczne na Windows 10, które zawierają najnowsze aktualizacje zabezpieczeń.
-  - Wypychanie certyfikatów na urządzenia zarządzane.
-  - Przejrzyste wyciągi danych służbowych i osobistych. Użytkownicy lub administratorzy mogą selektywnie wyczyścić dane firmowe z urządzenia, pozostawiając bez zmian dane osobiste, takie jak obrazy, osobiste konta e-mail i pliki osobiste.
+  - Okres braku aktywności i limitu czasu.
+  - Ochrona przed oprogramowaniem antywirusowym i złośliwym oprogramowaniem oraz aktualizacje sygnatur z Windows Defender na urządzeniach Windows 10.
+  - Automatyczne aktualizacje na urządzeniach Windows 10, które zawierają najnowsze aktualizacje zabezpieczeń.
+  - Wypychanie certyfikatów do urządzeń zarządzanych.
+  - Wyraźne rozdzielenie danych biznesowych i osobowych. Użytkownicy lub administratorzy mogą selektywnie czyścić dane firmowe z urządzenia, pozostawiając nietknięte dane osobowe, takie jak zdjęcia, osobiste konta e-mail i pliki osobiste.
 
-Firma Contoso wdrożyła komputery PC oraz firmowe smartfony i tablety, dodając je do odpowiednich grup urządzeń usługi Intune. Nawiązyli oni również program BYOD, który umożliwia pracownikom zarejestrowanie swoich osobistych urządzeń. Zarejestrowane urządzenia otrzymują zasady usługi Intune, co skutkować zastosowaniem urządzeń zarządzanych i zabezpieczonych oraz ich aplikacji. Urządzenia, które nie zostały zarejestrowane, mają zasady zarządzania aplikacjami mobilnymi (MAM), które określają dozwolone aplikacje.
+Firma Contoso zarejestrowała wdrożone komputery oraz firmowe smartfony i tablety, dodając je do odpowiednich Intune grup urządzeń. Ustanowili również program BYOD dla pracowników do rejestrowania swoich urządzeń osobistych. Zarejestrowane urządzenia otrzymują zasady Intune, które powodują zarządzanie i zabezpieczanie urządzeń oraz ich aplikacji. Urządzenia, które nie są zarejestrowane, mają zasady zarządzania aplikacjami mobilnymi (MAM), które określają dozwolone aplikacje.
 
-Oto architektura wdrażania firmy Contoso dla urządzeń przenośnych.
+Oto architektura wdrażania zarządzania urządzeniami przenośnymi firmy Contoso.
 
-![Infrastruktura wdrażania urządzeń przenośnych firmy Contoso.](../media/contoso-mdm/contoso-mdm-fig1.png)
+![Infrastruktura wdrażania zarządzania urządzeniami przenośnymi firmy Contoso.](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>Następny krok
 
-Dowiedz się, jak firma Contoso używa funkcji [ochrony](contoso-info-protect.md) informacji firmy Microsoft 365 dla przedsiębiorstw do klasyfikowania, identyfikowania i ochrony ważnych zasobów cyfrowych w organizacji.
+Dowiedz się, jak firma Contoso korzysta z [funkcji ochrony informacji](contoso-info-protect.md) Microsoft 365 dla przedsiębiorstw w celu klasyfikowania, identyfikowania i ochrony kluczowych zasobów cyfrowych w całej organizacji.
 
 ## <a name="see-also"></a>Zobacz też
 
 [Zarządzanie urządzeniami dla Microsoft 365](device-management-roadmap-microsoft-365.md)
 
-[Omówienie Microsoft 365 dla przedsiębiorstw](microsoft-365-overview.md)
+[Microsoft 365 dla przedsiębiorstw — omówienie](microsoft-365-overview.md)
 
-[Przewodniki laboratorium testowego](m365-enterprise-test-lab-guides.md)
+[Przewodniki po laboratorium testowym](m365-enterprise-test-lab-guides.md)
 

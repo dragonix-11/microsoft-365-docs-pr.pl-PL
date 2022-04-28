@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Dowiedz się więcej na temat ogólnych przepisów rozporządzenia o ochronie danych (RODO), które regulują dane osobowe małoletnich.
-ms.openlocfilehash: 15b35798ba03132b35285dc16ce57b139e4d7222
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 9b348ce47b5deef8f012428a402a4a83eaa6dcf1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782374"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094245"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>Osoby niepełnoletnie i kupowanie dodatków ze Sklepu
 
 Ogólne Rozporządzenie o Ochronie Danych (RODO) to rozporządzenie Unii Europejskiej, które wchodzi w życie 25 maja 2018 r. Zapewnia ono użytkownikom prawa do ich danych oraz ochronę tych danych. Jednym z aspektów rozporządzenia RODO jest to, że osoby niepełnoletnie nie mogą przesyłać swoich danych osobowych do podmiotów, które nie zostały zatwierdzone przez opiekuna lub rodzica. Wiek określający niepełnoletność zależy od regionu, w którym dana osoba przebywa.
 
-Do regionów, w których obowiązują przepisy ustawowe dotyczące zgody rodzica, należą: Stany Zjednoczone, Korea Południowa, Zjednoczone Królestwo i Unia Europejska. W tych regionach osoba niepełnoletnia będzie mieć zablokowaną (za pośrednictwem usługi Azure Active Directory) możliwość uzyskiwania jakichkolwiek nowych dodatków do pakietu Office ze Sklepu i uruchamiania dodatków, które zostały nabyte wcześniej. W krajach, w których nie obowiązują przepisy ustawowe, nie będą obowiązywały ograniczenia pobierania.
+Do regionów, w których obowiązują przepisy ustawowe dotyczące zgody rodzica, należą: Stany Zjednoczone, Korea Południowa, Zjednoczone Królestwo i Unia Europejska. W przypadku tych regionów dostęp do dodatków pomocniczych (za pośrednictwem Azure Active Directory) zostanie zablokowany w przypadku pobierania nowych dodatków Office ze Sklepu i uruchamiania wcześniej uzyskanych dodatków. W krajach, w których nie obowiązują przepisy ustawowe, nie będą obowiązywały ograniczenia pobierania.
 
 Użytkownik jest określany jako osoba niepełnoletnia na podstawie danych wprowadzonych w usłudze Azure Active Directory. Administrator organizacji jest odpowiedzialny za deklarowanie prawnej grupy wiekowej i zgody rodziców dla tego użytkownika.
 

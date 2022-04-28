@@ -2,8 +2,8 @@
 title: Zachowywanie adresatów Bcc i rozszerzonych grup dystrybucyjnych na potrzeby zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: zasady przechowywania In-Place Hold, Litigation Hold i Microsoft 365 umożliwiają zachowanie zawartości skrzynki pocztowej w celu spełnienia wymagań dotyczących zgodności z przepisami i zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 4c3c7b7be98959011473eeafc85f40b19be82fdc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1a9ac5e19350fd2a98ecc20e94dcdcdcc84a71c7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998509"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093026"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Zachowywanie adresatów Bcc i rozszerzonych grup dystrybucyjnych na potrzeby zbierania elektronicznych materiałów dowodowych
 

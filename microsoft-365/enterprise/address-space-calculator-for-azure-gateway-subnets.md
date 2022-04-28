@@ -1,8 +1,8 @@
 ---
-title: Kalkulator przestrzeni adresów dla podsieci bram platformy Azure
+title: Kalkulator przestrzeni adresowej dla podsieci bramy platformy Azure
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 01/07/2021
 audience: ITPro
 ms.topic: landing-page
@@ -15,28 +15,28 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - seo-marvel-apr2020
-description: 'Podsumowanie: Oblicz przestrzeń adresów podsieci bramy Azure za pomocą języka C3, Python lub PowerShell.'
-ms.openlocfilehash: 129c64e4484110517edf3640861636324e59de57
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: 'Podsumowanie: Oblicz przestrzeń adresową podsieci bramy platformy Azure przy użyciu języka C3, Języka Python lub programu PowerShell.'
+ms.openlocfilehash: a19233b6ec68c92dbf65ecb6a73fc1a0a16e6d31
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681793"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094885"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Kalkulator przestrzeni adresów dla podsieci bram platformy Azure
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Kalkulator przestrzeni adresowej dla podsieci bramy platformy Azure
 
-Sieć wirtualna (VNet) w usługach infrastruktury platformy Azure, która jest połączona z innymi sieciami, musi mieć podsieci bramy. Najlepsze rozwiązania dotyczące definiowania podsieci bramy to:
+Sieć wirtualna (VNet) w usługach infrastruktury platformy Azure połączonych z innymi sieciami musi mieć podsieć bramy. Najlepsze rozwiązania dotyczące definiowania podsieci bramy to:
 
-- Długość prefiksu podsieci bramy może mieć maksymalną długość prefiksu 29 (na przykład 10.119.255.248/29), ale bieżące zalecenie jest takie, że używasz długości prefiksu 27 (na przykład 10.119.255.224/27).
-- Definiując obszar adresów podsieci bramy, należy użyć ostatniej części obszaru adresu w net.
+- Długość prefiksu podsieci bramy może mieć maksymalną długość prefiksu 29 (na przykład 10.119.255.248/29), ale bieżącą rekomendacją jest użycie prefiksu o długości 27 (na przykład 10.119.255.224/27).
+- Podczas definiowania przestrzeni adresowej podsieci bramy użyj ostatniej części przestrzeni adresowej sieci wirtualnej.
 
-Dla drugiego zalecenia można określić przestrzeń adresów podsieci bramy, ustawiając dla podsieci bramy bity na 0, a pozostałe bity w przestrzeni adresów w netu VNet na 1. Aby szybko obliczyć przestrzeń adresów w podsieci bramy bez konieczności konwertowania na format binarny i z powrotem do postaci dziesiętnej, możesz użyć aplikacji konsoli zapisanej w języku C# lub Python lub z blokiem poleceń programu PowerShell.
+W przypadku drugiego zalecenia możesz określić przestrzeń adresów podsieci bramy, ustawiając bity używane dla podsieci bramy na 0, a pozostałe bity w przestrzeni adresowej sieci wirtualnej na 1. Aby szybko obliczyć przestrzeń adresową podsieci bramy bez konieczności konwertowania na dane binarne i z powrotem na dziesiętne, możesz użyć aplikacji konsolowej napisanej w języku C# lub Python albo z blokiem poleceń programu PowerShell.
 
-Ten artykuł zawiera bloki kodu języka C#, Python i PowerShell, które obliczają odstępy między adresami podsieci bramy na podstawie wartości w.x.y.z/n prefiksu adresu w sieci VNet i długości prefiksu podsieci bramy.
+Ten artykuł zawiera bloki kodu C#, Python i PowerShell, które obliczają przestrzeń adresową podsieci bramy na podstawie wartości w.x.y.z/n prefiksu adresu sieci wirtualnej i długości prefiksu podsieci bramy.
 
-## <a name="c-code-block"></a>Blok kodu języka C#
+## <a name="c-code-block"></a>Blok kodu w języku C#
 
-Użyj tego bloku kodu, aby utworzyć aplikację konsoli w języku C#.
+Użyj tego bloku kodu, aby utworzyć aplikację konsolową w języku C#.
 
 ```c#
 using System; 
@@ -108,9 +108,9 @@ namespace ConsoleApplication1
 } 
 ```
 
-## <a name="python-code-block"></a>Blok kodu w języku Python
+## <a name="python-code-block"></a>Blok kodu języka Python
 
-Użyj tego bloku kodu, aby utworzyć aplikację konsoli w języku Python.
+Użyj tego bloku kodu, aby utworzyć aplikację konsolową w języku Python.
 
 ```python
 import math 
@@ -149,7 +149,7 @@ print(gwAddrPref)
 
 ## <a name="powershell-command-block"></a>Blok poleceń programu PowerShell
 
-Wypełnij wartości i uruchom wynikowy blok poleceń w oknie programu PowerShell lub w środowisku PowerShell Integrated Script Environment (ISE).
+Wypełnij wartości i uruchom wynikowy blok poleceń w oknie programu PowerShell lub w zintegrowanym środowisku skryptów programu PowerShell (ISE).
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 
@@ -179,4 +179,4 @@ Write-Host "Your gateway address prefix is: " $dx
     
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Zarządzanie Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Zarządzanie platformą Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

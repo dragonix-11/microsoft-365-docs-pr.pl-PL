@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych fx Połączenie w Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z usługi Veritas FX Połączenie w Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: 286d8894627e00b93f3e898bd28b9bb0d2593c17
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4e0e68575c7fa9d2cd030f513eda88a226c7ef52
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996311"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093158"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data"></a>Konfigurowanie łącznika do archiwizowania danych fx Połączenie
 

@@ -17,25 +17,23 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych dowiedz się, jak Microsoft 365 Lighthouse mogą pomóc w zabezpieczeniu dzierżaw klientów i zarządzaniu nimi w jednej lokalizacji.
-ms.openlocfilehash: 96ae7647107a1be89d9fe4d800374ce8a8970cb8
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 9a75cd43ac09d63c4524495a3146bf0b860627a4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023640"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094687"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Omówienie portalu Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse jest portalem administracyjnym, który ułatwia dostawcom usług zarządzanych zabezpieczanie urządzeń, danych i użytkowników na dużą skalę oraz zarządzanie nimi dla klientów małych i średnich firm (SMB), którzy korzystają z Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business. 
+Microsoft 365 Lighthouse to portal administracyjny, który ułatwia dostawcom usług zarządzanych zabezpieczanie urządzeń, danych i użytkowników na dużą skalę oraz zarządzanie nimi dla klientów małych i średnich firm (SMB), którzy korzystają z Microsoft 365 Business Premium lub Microsoft 365 E3.
 
-Usługa Lighthouse upraszcza dołączanie dzierżaw Microsoft 365 Business Premium, Microsoft 365 E3 i Windows 365 Business, zalecając konfigurację zabezpieczeń dostosowaną do klientów SMB i udostępniając widoki wielu dzierżaw we wszystkich środowiskach klientów. Dzięki aplikacji Lighthouse dostawcy oprogramowania mogą skalować zarządzanie swoimi klientami, skoncentrować się na tym, co najważniejsze, szybko znaleźć i zbadać ryzyko oraz podjąć działania, aby zapewnić swoim klientom zdrowy i bezpieczny stan.
+Usługa Lighthouse upraszcza dołączanie dzierżaw klientów, zalecając konfigurację zabezpieczeń dopasowaną do klientów SMB i zapewniając widoki z wieloma dzierżawami we wszystkich środowiskach klientów. Dzięki aplikacji Lighthouse dostawcy oprogramowania mogą skalować zarządzanie swoimi klientami, skoncentrować się na tym, co najważniejsze, szybko znaleźć i zbadać ryzyko oraz podjąć działania, aby zapewnić swoim klientom zdrowy i bezpieczny stan.
 
-Brak dodatkowych kosztów związanych z używaniem usługi Lighthouse do zarządzania usługami Microsoft 365 i połączonymi urządzeniami. Usługa Lighthouse jest dostępna dla dostawców oprogramowania zarejestrowanych w programie Dostawca rozwiązań w chmurze (CSP) i obsługujących klientów SMB z subskrypcją Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business.
-
-Obsługiwane jest korzystanie z usługi Lighthouse by Microsoft CSP channel partners that have customers using Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business is supported .using of Lighthouse by Microsoft CSP channel partners that have customers using Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business is supported. Obejmuje to partnerów CSP transakcji bezpośrednio z firmą Microsoft i transakcji za pośrednictwem dostawcy pośredniego (dystrybutora). 
+Brak dodatkowych kosztów związanych z używaniem usługi Lighthouse do zarządzania usługami Microsoft 365 i połączonymi urządzeniami. Usługa Lighthouse jest dostępna dla dostawców oprogramowania zarejestrowanych w programie Dostawca rozwiązań w chmurze (CSP), który obsługuje klientów SMB. Obejmuje to partnerów CSP transakcji bezpośrednio z firmą Microsoft i transakcji za pośrednictwem dostawcy pośredniego (dystrybutora).
 
 > [!IMPORTANT] 
-> Aby korzystać z usługi Lighthouse, dostawcy oprogramowania i ich dzierżawcy muszą spełniać wymagania wymienione w [Microsoft 365 Lighthouse wymaganiach](m365-lighthouse-requirements.md).     
+> Aby korzystać z usługi Lighthouse, dostawcy oprogramowania i ich dzierżawcy muszą spełniać wymagania wymienione w [Microsoft 365 Lighthouse wymaganiach](m365-lighthouse-requirements.md).
 
 Aby uzyskać więcej informacji na temat programu CSP, zobacz [omówienie programu Dostawca rozwiązań w chmurze](/partner-center/csp-overview).
 

@@ -2,8 +2,8 @@
 title: Dodawanie opiekunów do sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak używać wbudowanego narzędzia do zarządzania opiekunami w usłudze Microsoft Purview eDiscovery (Premium) do koordynowania przepływów pracy i identyfikowania odpowiednich źródeł danych w danym przypadku.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46277524f616e91e89e9bccce1fdd3c3109b3d86
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3810880ca414efaaa3471c65d2c8c7b8d2956120
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999481"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093223"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>Dodawanie opiekunów do sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 

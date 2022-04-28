@@ -2,7 +2,7 @@
 title: Sieci dostarczania zawartości
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Skorzystaj z tych informacji, aby dowiedzieć się, jak Office 365 używa sieci dostarczania zawartości (CDN) w celu zwiększenia wydajności.
-ms.openlocfilehash: 86f2e621bee00dcb72048300ed1088f7966720a8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b2809a524088b3cb53e415d3d83d1f8a02b27dc1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934318"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092740"
 ---
 # <a name="content-delivery-networks-cdns"></a>Sieci dostarczania zawartości (CDN)
 
@@ -127,7 +127,7 @@ Możesz również przeczytać [Office 365 Zasady łączności sieciowej](./micro
 
 Sieci CDN używane przez Office 365 zawsze mogą ulec zmianie i w wielu przypadkach istnieje wiele CDN partnerów skonfigurowanych w przypadku niedostępności jednej z nich. Podstawowe sieci CDN używane przez Office 365 to:
 
-|CDN  |Company  |Użycia  |Link  |
+|CDN  |Company  |Zastosowanie  |Link  |
 |---------|---------|---------|---------|
 |Office 365 CDN     |Microsoft Azure         |Zasoby ogólne w źródłach publicznych, SharePoint zawartości użytkownika w źródłach prywatnych         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Azure CDN     |Microsoft         |Kod niestandardowy, rozwiązania SharePoint Framework         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |

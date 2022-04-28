@@ -1,8 +1,8 @@
 ---
-title: Usuwanie Microsoft 365 użytkowników za pomocą programu PowerShell
+title: Usuwanie kont użytkowników Microsoft 365 przy użyciu programu PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
@@ -19,42 +19,42 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Dowiedz się, jak używać różnych modułów w programie PowerShell w celu Microsoft 365 kont użytkowników.
-ms.openlocfilehash: dc1e5c53f2d356f0585da5a0a5285b9af28dc8f0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak używać różnych modułów w programie PowerShell do usuwania Microsoft 365 kont użytkowników.
+ms.openlocfilehash: b3d273e6f2274b43018848e5439f431281a54df8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985455"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093443"
 ---
-# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Usuwanie Microsoft 365 użytkowników za pomocą programu PowerShell
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Usuwanie kont użytkowników Microsoft 365 przy użyciu programu PowerShell
 
-Za pomocą programu PowerShell Microsoft 365 usuwać i przywracać konta użytkowników.
+Program PowerShell umożliwia Microsoft 365 usuwanie i przywracanie kont użytkowników.
 
 >[!Note]
->Dowiedz się[, jak przywrócić konto użytkownika](../admin/add-users/restore-user.md) przy użyciu centrum administracyjne platformy Microsoft 365.
+>Dowiedz się, jak [przywrócić konto użytkownika](../admin/add-users/restore-user.md) przy użyciu Centrum administracyjne platformy Microsoft 365.
 >
 >Aby uzyskać listę dodatkowych zasobów, zobacz [Zarządzanie użytkownikami i grupami](/admin).
 >   
    
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Używanie modułu Azure Active Directory PowerShell dla Graph danych
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Korzystanie z modułu Azure Active Directory programu PowerShell dla Graph
 
-Najpierw [połącz się z dzierżawą Microsoft 365 dzierżawy](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Najpierw [połącz się z dzierżawą Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
-Po nawiązania połączenia usuń konto indywidualnego użytkownika przy użyciu następującej składni:
+Po nawiązaniu połączenia użyj następującej składni, aby usunąć pojedyncze konto użytkownika:
   
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-W tym przykładzie usuwa się z konta *użytkownika fabricec\@ litwareinc.com*.
+W tym przykładzie usunięto sieć *szkieletową\@* konta użytkownika litwareinc.com.
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Parametr *-ObjectID* w poleceniach cmdlet **Remove-AzureADUser** przyjmuje nazwę logowania konta, znaną także jako główna nazwa użytkownika lub identyfikator obiektu konta.
+> Parametr *-ObjectID* w poleceniu cmdlet **Remove-AzureADUser** akceptuje nazwę logowania konta, znaną również jako główna nazwa użytkownika lub identyfikator obiektu konta.
   
 Aby wyświetlić nazwę konta na podstawie nazwy użytkownika, użyj następujących poleceń:
   
@@ -79,9 +79,9 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Użyj modułu Microsoft Azure Active Directory dla Windows PowerShell
 
-W przypadku usunięcia konta użytkownika za pośrednictwem modułu Microsoft Azure Active Directory dla systemu Windows PowerShell konto nie zostanie trwale usunięte. Usunięte konto użytkownika możesz przywrócić w ciągu 30 dni.
+Po usunięciu konta użytkownika za pośrednictwem modułu Microsoft Azure Active Directory dla Windows PowerShell konto nie zostanie trwale usunięte. Usunięte konto użytkownika można przywrócić w ciągu 30 dni.
 
-Najpierw [połącz się z dzierżawą Microsoft 365 dzierżawy](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Najpierw [połącz się z dzierżawą Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 Aby usunąć konto użytkownika, użyj następującej składni:
   
@@ -90,16 +90,16 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->Program PowerShell Core nie obsługuje modułu Microsoft Azure Active Directory dla programu Windows PowerShell i poleceń cmdlet z *nazwą Msol*. Uruchom te polecenia cmdlet z Windows PowerShell.
+>Program PowerShell Core nie obsługuje modułu Microsoft Azure Active Directory dla modułu Windows PowerShell i poleceń cmdlet z nazwą *msol*. Uruchom te polecenia cmdlet z Windows PowerShell.
 >
 
-W tym przykładzie konto użytkownika jest *BelindaN@litwareinc.com*.
+W tym przykładzie usunięto *BelindaN@litwareinc.com* konta użytkownika.
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
 ```
 
-Aby przywrócić usunięte konto użytkownika w 30-dniowym okresie prolongaty, użyj następującej składni:
+Aby przywrócić usunięte konto użytkownika w ciągu 30-dniowego okresu prolongaty, użyj następującej składni:
   
 ```powershell
 Restore-MsolUser -UserPrincipalName <sign-in name>
@@ -118,13 +118,13 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 > Get-MsolUser -All -ReturnDeletedUsers
 > ```
 >
-> Jeśli oryginalna główna nazwa konta użytkownika jest używana przez inne konto, podczas przywracania konta użytkownika użyj parametru _NewUserPrincipalName_ zamiast nazwy _UserPrincipalName_ .
+> Jeśli oryginalna główna nazwa użytkownika konta użytkownika jest używana przez inne konto, użyj _parametru NewUserPrincipalName_ zamiast _UserPrincipalName_ , aby określić inną główną nazwę użytkownika podczas przywracania konta użytkownika.
 
 
 ## <a name="see-also"></a>Zobacz też
 
-[Zarządzanie Microsoft 365 użytkownikami, licencjami i grupami za pomocą programu PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[Zarządzanie Microsoft 365 kontami użytkowników, licencjami i grupami przy użyciu programu PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[Zarządzanie Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Zarządzanie platformą Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Wprowadzenie do programu PowerShell dla Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Wprowadzenie za pomocą programu PowerShell dla Microsoft 365](getting-started-with-microsoft-365-powershell.md)

@@ -1,4 +1,4 @@
-- name: Microsoft Purview
+- name: Zgodność usługi Microsoft Purview
   href: index.yml
 - name: Co nowego w usłudze Microsoft Purview
   href: whats-new.md

@@ -1,5 +1,5 @@
 ---
-title: Anulowanie subskrypcji
+title: Anuluj subskrypcję biznesową
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,20 +20,22 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Dowiedz się, jak anulować subskrypcje usług Dynamics 365, Intune, Power Platform i Microsoft 365 dla firm w wersji próbnej lub płatnych subskrypcjach w centrum administracyjnym platformy Microsoft 365.
-ms.date: 03/31/2022
-ms.openlocfilehash: d6b6c078c5f0d1b44143f3a9cc2d336a0a80fe03
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.date: 04/22/2022
+ms.openlocfilehash: 5dbf455b2c90a51aadd5d2e93b0739f93d138841
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595285"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092574"
 ---
-# <a name="cancel-your-subscription"></a>Anulowanie subskrypcji
-
-Jeśli chcesz anulować subskrypcję, najprostszym sposobem jest [wyłączenie rozliczeń cyklicznych](renew-your-subscription.md). Po wyłączeniu rozliczania cyklicznego możesz nadal korzystać z subskrypcji, dopóki nie wygaśnie ona po zakończeniu jej okresu trwania. Jeśli chcesz natychmiast anulować subskrypcję, skorzystaj z informacji i kroków opisanych w tym artykule.
+# <a name="cancel-your-business-subscription"></a>Anuluj subskrypcję biznesową
 
 > [!IMPORTANT]
-> Ten artykuł dotyczy tylko usług Dynamics 365, Intune, Power Platform i Microsoft 365 dla firm. Jeśli masz subskrypcję platformy Microsoft 365 Family lub Personal, zobacz [Anulowanie subskrypcji platformy Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+> - Ten artykuł dotyczy tylko usług Dynamics 365, Intune, Power Platform i Microsoft 365 dla firm. Jeśli masz subskrypcję platformy Microsoft 365 Family lub Personal, zobacz [Anulowanie subskrypcji platformy Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+> - Jeśli subskrypcję kupiono za pośrednictwem przedstawiciela firmy Microsoft lub partnera będącego odsprzedawcą, masz siedem dni na anulowanie i otrzymanie zwrotu proporcjonalnego. Skontaktuj się ze sprzedawcą lub partnerem, aby pomogli Ci anulować subskrypcję. [Dowiedz się więcej o partnerach](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
+> - Jeśli Twoja organizacja znajduje się w Chile i twoja subskrypcja została kupiona za pośrednictwem partnera w Chile, masz 10 dni na anulowanie i otrzymanie zwrotu proporcjonalnego.
+
+Jeśli chcesz anulować subskrypcję, najprostszym sposobem jest [wyłączenie rozliczeń cyklicznych](renew-your-subscription.md). Po wyłączeniu rozliczania cyklicznego możesz nadal korzystać z subskrypcji, dopóki nie wygaśnie ona po zakończeniu jej okresu trwania. Jeśli chcesz natychmiast anulować subskrypcję, skorzystaj z informacji i kroków opisanych w tym artykule.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 

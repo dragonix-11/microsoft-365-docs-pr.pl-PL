@@ -24,50 +24,50 @@ ms.custom:
 - manage_licenses
 - AdminTemplateSet
 search.appverid: MET150
-description: Przypisywanie licencji zależy od tego, czy chcesz przypisać licencje produktu określonym użytkownikom, czy licencje użytkowników do określonego produktu.
-ms.date: 09/16/2021
-ms.openlocfilehash: dd0469288ce53ac59663e119022a204130bad3ef
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Przypisz licencje w zależności od tego, czy chcesz przypisać licencje produktów określonym użytkownikom, czy przypisać licencje użytkowników do określonego produktu.
+ms.date: 04/22/2022
+ms.openlocfilehash: 32c91c82388cdb87b0dd6b980b51b888d1cec521
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316705"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092630"
 ---
 # <a name="assign-licenses-to-users"></a>Przypisywanie licencji do użytkowników
 
-Możesz przypisywać licencje do użytkowników na stronie **Aktywni użytkownicy** lub na stronie **Licencje**. Metoda, której używasz, zależy od tego, czy chcesz przypisać licencje produktu określonym użytkownikom, czy licencje użytkowników do określonego produktu.
+Możesz przypisywać licencje do użytkowników na stronie **Aktywni użytkownicy** lub na stronie **Licencje**. Używana metoda zależy od tego, czy chcesz przypisać licencje produktów określonym użytkownikom, czy przypisać licencje użytkowników do określonego produktu.
 
 > [!NOTE]
 > 
-> - Jako administrator nie możesz przypisywać ani anulować przypisania licencji na subskrypcję zakupu samoobsługowego zakupową zakupioną przez użytkownika w Organizacji. Możesz [przejąć subskrypcję zakupu samoobsługowego, a](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription) następnie przypisać lub anulować przypisanie licencji.
-> - W przypadku niektórych subskrypcji możesz anulować subskrypcję tylko przez ograniczony czas po zakupie lub odnowieniu subskrypcji. Jeśli okno anulowania już minęło, wyłącz rozliczanie cykliczne, aby anulować subskrypcję na koniec okresu jej zakończenia.
+> - Jako administrator nie możesz przypisywać ani anulować przypisywania licencji dla subskrypcji zakupu samoobsługowego zakupionej przez użytkownika w organizacji. Możesz [przejąć subskrypcję samoobsługowego zakupu](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription), a następnie przypisać lub cofnąć przypisanie licencji.
+> - W przypadku niektórych subskrypcji możesz anulować subskrypcję tylko przez ograniczony czas po zakupie lub odnowieniu subskrypcji. Jeśli termin anulowania już minął, wyłącz rozliczanie cykliczne, aby anulować subskrypcję na koniec okresu jej trwania.
 
-[Dowiedz się, jak dodać użytkownika i jednocześnie przypisać mu licencję](../add-users/add-users.md).
+[Dowiedz się, jak dodać użytkownika i jednocześnie przypisać licencję](../add-users/add-users.md).
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej czynności opisanej w tym temacie, rozważ współpracę z specjalistą [ds. małej firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy możecie uzyskać całodobowy dostęp do małych ekspertów biznesowych, gdy rozwijasz swoją firmę, od dołączania do codziennego użytku.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Aby przypisywać licencje, musisz być globalnym, licencjonowanym lub administratorem użytkownika. Aby uzyskać więcej informacji, zobacz [Informacje Microsoft 365 administratorów](../add-users/about-admin-roles.md).
-- Możesz [przypisywać Microsoft 365 do kont użytkowników za pomocą programu PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
-- Aby skorzystać z licencjonowania opartego na grupach, zobacz Przypisywanie licencji użytkownikom według [członkostwa w grupie w programie Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
+- Aby przypisać licencje, musisz być administratorem globalnym, licencji lub użytkownika. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratora Microsoft 365](../add-users/about-admin-roles.md).
+- Licencje [Microsoft 365 można przypisać do kont użytkowników przy użyciu programu PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- Aby korzystać z licencjonowania opartego na [grupach, zobacz Przypisywanie licencji do użytkowników według członkostwa w grupie w Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Niektóre usługi, takie jak Sway, są automatycznie przypisywane do użytkowników i nie trzeba ich przypisywać pojedynczo.
 
 
-## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>Używanie strony Licencje do przypisywania licencji do użytkowników
+## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>Przypisywanie licencji użytkownikom przy użyciu strony Licencje
 
-Na stronie **Licencje** możesz przypisać licencje na określony produkt maksymalnie 20 użytkownikom. Na **stronie Licencje** jest wyświetlona lista wszystkich produktów, dla których masz subskrypcje. Jest też dostępna łączna liczba licencji dla każdego produktu, liczba przypisanych licencji i liczba dostępnych licencji.
+Na stronie **Licencje** możesz przypisać licencje na określony produkt maksymalnie 20 użytkownikom. Na stronie **Licencje** zostanie wyświetlona lista wszystkich produktów, dla których masz subskrypcje. Zobaczysz również całkowitą liczbę licencji dla każdego produktu, liczbę przypisanych licencji i liczbę dostępnych licencji.
 
 ::: moniker range="o365-worldwide"
 
-1. W centrum administracyjnym przejdź **do strony** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencje rozliczeniowe</a> .
+1. W centrum administracyjnym przejdź do strony **Licencje rozliczeniowe**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. W centrum administracyjnym przejdź **do strony** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licencje rozliczeniowe</a> .
+1. W centrum administracyjnym przejdź do strony **Licencje rozliczeniowe**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"></a>
 
 ::: moniker-end
 
@@ -79,33 +79,33 @@ Na stronie **Licencje** możesz przypisać licencje na określony produkt maksym
 
 4. Wybierz pozycję **Włączanie i wyłączanie aplikacji oraz usług**, aby przypisać lub odebrać uprawnienia dostępu do określonych elementów.
 
-6. Po zakończeniu wybierz przypisz **, a** następnie wybierz pozycję **Zamknij**.
+6. Po zakończeniu wybierz pozycję **Przypisz**, a następnie wybierz pozycję **Zamknij**.
 
-W przypadku konfliktu zostanie wyświetlony komunikat informujący o tym, czym jest problem, oraz sposób jego rozwiązania. Na przykład w przypadku wybrania licencji, które zawierają kolidujące ze sobą usługi, wyświetli się komunikat o błędzie z poleceniem sprawdzeniem, jakie usługi są dostępne w poszczególnych licencjach, i prośbą, aby spróbować ponownie.
+Jeśli wystąpi konflikt, zostanie wyświetlony komunikat z informacją o problemie i instrukcjami dotyczącymi sposobu jego rozwiązania. Na przykład w przypadku wybrania licencji, które zawierają kolidujące ze sobą usługi, wyświetli się komunikat o błędzie z poleceniem sprawdzeniem, jakie usługi są dostępne w poszczególnych licencjach, i prośbą, aby spróbować ponownie.
 
-## <a name="change-the-apps-and-services-a-user-has-access-to"></a>Zmienianie aplikacji i usług, do których użytkownik ma dostęp
+## <a name="change-the-apps-and-services-a-user-has-access-to"></a>Zmienianie aplikacji i usług, do które użytkownik ma dostęp
 
 ::: moniker range="o365-worldwide"
 
-1. W centrum administracyjnym przejdź **do strony** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencje rozliczeniowe</a> .
+1. W centrum administracyjnym przejdź do strony **Licencje rozliczeniowe**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. W centrum administracyjnym przejdź **do strony** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licencje rozliczeniowe</a> .
+1. W centrum administracyjnym przejdź do strony **Licencje rozliczeniowe**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"></a>
 
 ::: moniker-end
 
-2. Na **stronie Licencje** zaznacz wiersz dla określonego użytkownika.
+2. Na stronie **Licencje** wybierz wiersz dla określonego użytkownika.
 
 3. W okienku po prawej stronie zaznacz aplikacje i usługi, do których chcesz przydzielić użytkownikowi dostęp, lub usuń zaznaczenie obok tych, do których użytkownik ma stracić dostęp.
 
 4. Gdy skończysz, wybierz pozycję **Zapisz**, a następnie **Zamknij**.
 
-## <a name="use-the-active-users-page-to-assign-licenses"></a>Przypisywanie licencji za pomocą strony Aktywni użytkownicy
+## <a name="use-the-active-users-page-to-assign-licenses"></a>Przypisywanie licencji przy użyciu strony Aktywni użytkownicy
 
-Gdy używasz strony **Aktywni użytkownicy** do przypisywania licencji, przypisuj licencje użytkowników do produktów.
+W przypadku przypisywania licencji przy użyciu strony **Aktywni użytkownicy** należy przypisać licencje użytkowników do produktów.
 
 ### <a name="assign-licenses-to-multiple-users"></a>Przypisywanie licencji do wielu użytkowników
 
@@ -121,20 +121,20 @@ Gdy używasz strony **Aktywni użytkownicy** do przypisywania licencji, przypisu
 
 ::: moniker-end
 
-2. Wybierz kółka obok nazw użytkowników, którym chcesz przypisać licencje.
+2. Wybierz okręgi obok nazw użytkowników, do których chcesz przypisać licencje.
 
 3. U góry wybierz pozycję **Zarządzaj licencjami produktów**.
 
-4. W **okienku Zarządzanie licencjami produktu** wybierz pozycję **Przypisz więcej: Zachowaj istniejące licencje i przypisz więcej dalej**\>.
+4. W okienku **Zarządzanie licencjami produktów** wybierz pozycję **Przypisz więcej: Zachowaj istniejące licencje i przypisz więcej** \> **dalej**.
 
-5. W **obszarze Licencje** zaznacz pola licencji, które mają mieć wybrani użytkownicy.\
-    Domyślnie do użytkownika są automatycznie przypisywane wszystkie usługi skojarzone z tymi licencjami. Możesz ograniczyć liczbę usług dostępnych dla użytkowników. Usuń zaznaczenie pól dla usług, których nie chcesz mieć dla użytkowników.
+5. W obszarze **Licencje** wybierz pole licencji, które mają mieć wybrani użytkownicy.\
+    Domyślnie do użytkownika są automatycznie przypisywane wszystkie usługi skojarzone z tymi licencjami. Możesz ograniczyć liczbę usług dostępnych dla użytkowników. Usuń zaznaczenie pól dla usług, które nie mają być dostępne dla użytkowników.
 
-6. U dołu okienka wybierz pozycję **Zapisz zmiany**.  
-    Jeśli nie masz wystarczającej ilości licencji dla wszystkich, może być konieczne zakupienie dodatkowych licencji.
+6. W dolnej części okienka wybierz pozycję **Zapisz zmiany**.  
+    Jeśli nie masz wystarczającej liczby licencji dla wszystkich, może być konieczne zakup dodatkowych licencji.
 
 > [!NOTE]
-> Jeśli chcesz przypisać licencje dużej liczbie użytkowników, użyj funkcji Przypisywanie licencji użytkownikom według członkostwa [w](/azure/active-directory/enterprise-users/licensing-groups-assign) grupach w Azure Active Directory
+> Jeśli chcesz przypisać licencje dla dużej liczby użytkowników, użyj polecenia [Przypisz licencje do użytkowników według członkostwa w grupie w Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 ### <a name="assign-licenses-to-one-user"></a>Przypisywanie licencji do jednego użytkownika
 
@@ -156,41 +156,41 @@ Gdy używasz strony **Aktywni użytkownicy** do przypisywania licencji, przypisu
 
 4. Rozwiń sekcję **Licencje**, zaznacz pola obok licencji, które chcesz przypisać, a następnie wybierz pozycję **Zapisz zmiany**.
 
-## <a name="assign-a-license-to-a-guest-user"></a>Przypisywanie licencji użytkownikowi gościowi
+## <a name="assign-a-license-to-a-guest-user"></a>Przypisywanie licencji do użytkownika-gościa
 
-Możesz zaprosić użytkowników-gości do współpracy z Twoją organizacją w centrum Azure Active Directory administracyjnego. Aby dowiedzieć się więcej o użytkownikach gości, zobacz Co to jest dostęp użytkownika gościa w Azure Active Directory [B2B?](/azure/active-directory/external-identities/what-is-b2b). Jeśli nie masz żadnych użytkowników-gości, zobacz Szybki start: dodawanie użytkowników gości do katalogu w [portalu Azure Portal](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+Możesz zaprosić użytkowników-gości do współpracy z organizacją w centrum administracyjnym Azure Active Directory. Aby dowiedzieć się więcej o użytkownikach-gościach, zobacz [Co to jest dostęp użytkowników-gości w Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b). Jeśli nie masz żadnych użytkowników-gości, zobacz [Szybki start: Dodawanie użytkowników-gości do katalogu w Azure Portal](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
-> Aby wykonać te czynności, musisz być administratorem globalnym.
+> Aby wykonać te kroki, musisz być administratorem globalnym.
 
-1. Przejdź do Azure Active Directory <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">administracyjnego</a>.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">centrum administracyjnego Azure Active Directory</a>.
 
 2. W okienku nawigacji wybierz pozycję **Użytkownicy**.
 
-3. Na **stronie | Wszyscy użytkownicy (wersja zapoznawcza)** wybierz pozycję **Dodaj filtry**.
+3. Na **| Użytkownicy Strona Wszyscy użytkownicy (wersja zapoznawcza)** wybierz pozycję **Dodaj filtry**.
 
-4. W menu **Wybierz pole** wybierz pozycję **Typ użytkownika**, a następnie wybierz pozycję **Zastosuj**.
+4. W menu **Wybierz pole wybierz pozycję** **Typ użytkownika**, a następnie wybierz pozycję **Zastosuj**.
 
 5. W następnym menu wybierz pozycję **Gość**.
 
-6. Z listy wyników wybierz użytkownika, który potrzebuje licencji.
+6. Na liście wyników wybierz użytkownika, który potrzebuje licencji.
 
-7. W **obszarze Zarządzanie** wybierz **pozycję Licencje**.
+7. W obszarze **Zarządzanie** wybierz pozycję **Licencje**.
 
-8. Wybierz **pozycję Zadania**.
+8. Wybierz pozycję **Przypisania**.
 
-9. Na **stronie Aktualizowanie przypisań licencji** wybierz produkt, do którego chcesz przypisać licencję.
+9. Na stronie **Aktualizowanie przypisań licencji** wybierz produkt, dla który chcesz przypisać licencję.
 
-10. Po prawej stronie wyczyść pola wyboru obok wszystkich usług, do których nie chcesz, aby gość miał dostęp.
+10. Po prawej stronie wyczyść pola wyboru dla wszystkich usług, do których nie chcesz, aby użytkownik-gość miał dostęp.
 
 11. Wybierz **Zapisz**.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli użytkownicy nie mają jeszcze zainstalowanych aplikacji Office, możesz udostępnić użytkownikom przewodnik Szybki start dla [](../setup/employee-quick-setup.md) pracowników, aby skonfigurować różne ustawienia, takie jak pobieranie i instalowanie programu [Microsoft 365 lub Office 2019](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) na komputerze PC lub Mac oraz konfigurowanie aplikacji [pakietu Office](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f) i poczty e-mail na urządzeniu przenośnym.
+Jeśli użytkownicy nie mają jeszcze zainstalowanych aplikacji Office, możesz udostępnić użytkownikom [przewodnik Szybki start dla](../setup/employee-quick-setup.md) pracowników, aby skonfigurować elementy, takie [jak pobieranie i instalowanie Microsoft 365 lub Office 2019 r. na komputerze PC lub Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) oraz [konfigurowanie aplikacji Office i poczty e-mail na urządzeniu przenośnym](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Opis subskrypcji i licencji](../../commerce/licenses/subscriptions-and-licenses.md) (artykuł)\
-[Odsyłanie licencji użytkownikom](remove-licenses-from-users.md) (artykuł)\
+[Omówienie subskrypcji i licencji](../../commerce/licenses/subscriptions-and-licenses.md) (artykuł)\
+[Anulowanie przypisywania licencji od użytkowników](remove-licenses-from-users.md) (artykuł)\
 [Kupowanie lub usuwanie licencji dla subskrypcji](../../commerce/licenses/buy-licenses.md) (artykuł)

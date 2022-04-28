@@ -2,8 +2,8 @@
 title: Tworzenie powiadomienia o blokadzie prawnej
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Użyj narzędzia Communications w sprawie zbierania elektronicznych materiałów dowodowych (Premium), aby wysyłać, zbierać i śledzić powiadomienia o blokadzie prawnej.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ca5c895ca98aafb67fd728e137f0d69dd8b98f8f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 21090274f385d6a3354852134764a1f53a311f10
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997961"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094995"
 ---
 # <a name="create-a-legal-hold-notice"></a>Tworzenie powiadomienia o blokadzie prawnej
 

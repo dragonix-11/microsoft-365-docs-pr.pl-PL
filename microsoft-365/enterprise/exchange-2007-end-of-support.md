@@ -2,7 +2,7 @@
 title: Exchange 2007 end of support roadmap
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Dowiedz się więcej o opcjach po zakończeniu wsparcia technicznego Exchange Server 2007 r. i rozpocznij planowanie migracji do Microsoft 365, Office 365 lub Exchange 2016 r.
-ms.openlocfilehash: 8aecc835fbdde21f6651946acd15c4c70788b3da
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7b8cad31c04d5cd1cd9e618e8e38e872a1b32634
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824405"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092674"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 end of support roadmap
 

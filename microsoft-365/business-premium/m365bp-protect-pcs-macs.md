@@ -1,14 +1,14 @@
 ---
-title: Ochrona niezamanektowana Windows 10 PC i Mac w systemie Microsoft 365 Business Premium
+title: Ochrona niezarządzanych komputerów Windows 10 i komputerów Mac w Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,58 +23,54 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Chroń niezakierowane lub przynieś własne urządzenia (BYOD) za pomocą Microsoft 365 Business Premium.
-ms.openlocfilehash: b3d783ba498337af7ff867fe749366abe1734da5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Ochrona urządzeń niezarządzanych lub przynieś własne urządzenia (BYOD) przed cyberatakami za pomocą Microsoft 365 Business Premium. Jak skonfigurować cyberbezpieczeństwo dla komputerów Windows i komputerów Mac.
+ms.openlocfilehash: a8b0fb278e4fb005d6e31d92521791134395b811
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63705010"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094168"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Ochrona niezamanektowana Windows 10 PC i Mac w systemie Microsoft 365 Business Premium
+# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Ochrona niezarządzanych komputerów Windows 10 i komputerów Mac w Microsoft 365 Business Premium
 
-Możesz zarządzać komputerami Windows 10 i Mac, rejestrując je w programie Microsoft Intune, co pozwoli zapewnić ich kondycję i bezpieczeństwo przed uzyskaniem dostępu do danych w Twoim środowisku. Jednak wiele kampanii i małych firm obejmuje pracowników, którzy wprowadzają własne urządzenia (BYOD), które nie będą zarządzane przez organizację. W przypadku tych niezawiąanych komputerów PC i Mac skorzystaj z tego artykułu, aby upewnić się, że skonfigurowano minimalne funkcje zabezpieczeń.
+Ten cel koncentruje się na tworzeniu ochrony dla wszelkich niezarządzanych komputerów Windows 10 i komputerów Mac, które nie są zarejestrowane w Microsoft Intune. Jest bardzo prawdopodobne, że twoja mała firma lub kampania może mieć pracowników, którzy przynoszą własne urządzenia (BYOD), a te urządzenia nie są zarządzane. Dyski BYOD obejmują telefony, tablety i komputery należące do użytkownika. 
 
-<!--A Windows 10 PC is considered managed after you have completed the following two steps:
+>[!NOTE]
+>Użytkownicy usługi BYOD muszą zainstalować i uruchomić aplikację Portal firmy, aby zarejestrować te urządzenia i uzyskać dostęp do zasobów firmy.
 
-1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
-
-2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in.
-3. --> 
-
-## <a name="protect-a-computer-running-windows-10-or-a-mac"></a>Ochrona komputera z systemem Windows 10 komputera Mac
-
-<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
--->
-Jeśli Twoja Windows 10 PC lub Mac nie jest zarządzana przez Twoją organizację, skonfiguruj te funkcje zabezpieczeń.
+Niezwykle ważne jest, aby zapewnić, aby użytkownicy pierwszej linii postępowali zgodnie z tymi wytycznymi, aby minimalne możliwości zabezpieczeń były konfigurowane na wszystkich urządzeniach BYOD.
 
 ## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 
-**Włączanie szyfrowania urządzeń**<p>
+**Włączanie szyfrowania urządzenia**<p>
+Szyfrowanie urządzeń jest dostępne na wielu urządzeniach Windows i pomaga chronić dane przez ich szyfrowanie. Jeśli włączysz szyfrowanie urządzenia, tylko autoryzowane osoby będą mogły uzyskać dostęp do urządzenia i danych. Aby uzyskać instrukcje [, zobacz Włączanie szyfrowania urządzeń](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) .
 
-Szyfrowanie urządzeń jest dostępne na wielu urządzeniach z Windows i pomaga chronić dane przez ich szyfrowanie. Jeśli włączysz szyfrowanie urządzeń, tylko uprawnione osoby będą mogły uzyskać dostęp do Twojego urządzenia i danych. Aby [uzyskać instrukcje, zobacz Włączanie szyfrowania](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) urządzeń.
-
- Jeśli na Twoim urządzeniu nie jest dostępne szyfrowanie urządzeń, możesz włączyć standardowe szyfrowanie [BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) . (Funkcją BitLocker nie jest dostępna w Windows 10 Home wersji). 
+ Jeśli szyfrowanie urządzenia nie jest dostępne na urządzeniu, możesz włączyć standardowe [szyfrowanie funkcji BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) . (Funkcja BitLocker nie jest dostępna w wersji Windows 10 Home). 
 
 **Ochrona urządzenia za pomocą Zabezpieczenia Windows**<p>
-Jeśli masz Windows 10, będziesz mieć dostęp do najnowszej ochrony antywirusowej dzięki programowi Zabezpieczenia Windows. Po uruchomieniu programu Windows 10 po raz pierwszy program Zabezpieczenia Windows jest wł. i aktywnie chroni komputer, skanując w poszukiwaniu złośliwego oprogramowania, wirusów i zagrożeń dla bezpieczeństwa. Zabezpieczenia Windows wszystko, co pobierasz lub uruchamiasz na komputerze, jest skanowane za pomocą ochrony w czasie rzeczywistym.
+Jeśli masz Windows 10, uzyskasz najnowszą ochronę antywirusową za pomocą Zabezpieczenia Windows. Po pierwszym uruchomieniu Windows 10 Zabezpieczenia Windows jest włączony i aktywnie pomaga chronić komputer, skanując pod kątem złośliwego oprogramowania (złośliwego oprogramowania), wirusów i zagrożeń bezpieczeństwa. Zabezpieczenia Windows używa ochrony w czasie rzeczywistym do skanowania wszystkiego, co pobierasz lub uruchamiasz na komputerze.
 
-Windows Update automatycznie pobiera aktualizacje dla Zabezpieczenia Windows, aby zapewnić bezpieczeństwo komputera i chronić go przed zagrożeniami.
+Windows Update pobiera aktualizacje dla Zabezpieczenia Windows automatycznie, aby zapewnić bezpieczeństwo komputera i chronić go przed zagrożeniami.
 
-Jeśli masz wcześniejszą wersję programu Windows i używasz programu Microsoft Security Essentials, warto przejść do programu Zabezpieczenia Windows. Aby uzyskać więcej informacji, [zobacz Zapewnianie ochrony urządzenia za pomocą Zabezpieczenia Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
+Jeśli masz starszą wersję Windows i używasz programu Microsoft Security Essentials, dobrym pomysłem jest przejście do Zabezpieczenia Windows. Aby uzyskać więcej informacji, zobacz [pomoc w ochronie urządzenia za pomocą Zabezpieczenia Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
-**Włączanie zapory Windows sieciowej**<p>
-Nawet jeśli włączona jest inna zapora, Windows zawsze powinna być włączona. Wyłączenie zapory Windows może spowodować, że urządzenie (i sieć, jeśli jest już na nich działa), będzie bardziej narażone na nieautoryzowany dostęp. Aby [uzyskać instrukcje Windows włączyć lub wyłączyć Zaporę](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) sieciową.
+**Włączanie zapory Windows**<p>
+Zawsze należy uruchamiać Windows Zapora, nawet jeśli włączono inną zaporę. Wyłączenie Windows Zapora może sprawić, że urządzenie (i sieć, jeśli je masz) będą bardziej narażone na nieautoryzowany dostęp. Aby uzyskać [instrukcje, zobacz Włączanie lub wyłączanie zapory Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off).
+
+Dobra, misja zakończona! Teraz pracujemy nad [zabezpieczeniem systemu poczty e-mail](m365bp-protect-email-overview.md) przed wyłudzaniem informacji i innymi atakami.
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 
-**Szyfrowanie dysku komputera Mac przy użyciu funkcji FileVault**<p>
-Szyfrowanie dysku chroni dane w przypadku zgubienia lub kradzieży urządzenia. Pełne szyfrowanie dysku FileVault uniemożliwia nieautoryzowany dostęp do informacji na dysku startowym. Aby [uzyskać instrukcje, zobacz Szyfrowanie dysku startowego](https://support.apple.com/HT204837) na komputerze Mac za pomocą funkcji FileVault.
+**Szyfrowanie dysku mac przy użyciu programu FileVault**<p>
+Szyfrowanie dysków chroni dane w przypadku utraty lub kradzieży urządzeń. Szyfrowanie pełnego dysku w usłudze FileVault pomaga zapobiegać nieautoryzowanemu dostępowi do informacji na dysku startowym. Aby uzyskać instrukcje [, zobacz używanie programu FileVault do szyfrowania dysku startowego na komputerze Mac](https://support.apple.com/HT204837) .
 
 **Ochrona komputera Mac przed złośliwym oprogramowaniem**<p>
-Firma Microsoft zaleca zainstalowanie na komputerze Mac i używanie niezawodnego oprogramowania antywirusowego. Zapoznaj się z następującym artykułem, aby uzyskać listę opcji: [Najlepsze oprogramowanie antywirusowe dla komputerów Mac 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
+Firma Microsoft zaleca zainstalowanie i użycie niezawodnego oprogramowania antywirusowego na komputerze Mac. Zobacz następujący artykuł, aby uzyskać listę opcji: [Najlepszy program antywirusowy dla komputerów Mac 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
-Ryzyko związane ze złośliwym oprogramowaniem można też zmniejszyć, używając tylko oprogramowania z wiarygodnych źródeł. Ustawienia w preferencjach & zabezpieczeń i prywatności umożliwiają określenie źródeł oprogramowania zainstalowanych na komputerze Mac. Aby uzyskać więcej informacji, zobacz [Ochrona komputera Mac przed złośliwym oprogramowaniem](https://support.apple.com/kb/PH25087).
+Możesz również zmniejszyć ryzyko złośliwego oprogramowania przy użyciu oprogramowania tylko z wiarygodnych źródeł. Ustawienia w obszarze Preferencje ochrony prywatności & zabezpieczeń umożliwiają określenie źródeł oprogramowania zainstalowanego na komputerze Mac. Aby uzyskać więcej informacji, zobacz [ochrona komputera Mac przed złośliwym oprogramowaniem](https://support.apple.com/kb/PH25087).
 
-**Włączanie ochrony zapór**<p>
-Użyj ustawień zapory, aby chronić komputer Mac przed niechcianymi połączeniami inicjowanymi przez inne komputery, gdy masz połączenie z Internetem lub siecią. Bez tej ochrony komputer Mac może być bardziej narażony na nieautoryzowany dostęp. [Instrukcje zawiera zapora](https://support.apple.com/HT201642) aplikacji.
+**Włączanie ochrony zapory**<p>
+Użyj ustawień zapory, aby chronić komputer Mac przed niepożądanym kontaktem zainicjowanym przez inne komputery po nawiązaniu połączenia z Internetem lub siecią. Bez tej ochrony komputer Mac może być bardziej narażony na nieautoryzowany dostęp. Aby uzyskać instrukcje [, zobacz temat zapory aplikacji](https://support.apple.com/HT201642) .
+
+Dobra, misja zakończona! Teraz pracujemy nad [zabezpieczeniem systemu poczty e-mail](m365bp-protect-email-overview.md) przed wyłudzaniem informacji i innymi atakami.
+

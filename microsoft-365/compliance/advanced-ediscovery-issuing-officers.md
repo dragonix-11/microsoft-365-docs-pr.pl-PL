@@ -2,8 +2,8 @@
 title: Zarządzanie urzędnikami wystawiającym certyfikaty w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: W obszarze eDiscovery (Premium) można dodać pracowników wystawiających certyfikaty w całej organizacji, aby w dowolnym przypadku w organizacji można było dodać ich do dowolnej komunikacji dotyczącej opieki.
-ms.openlocfilehash: f82d5359a90e21203c2ff882ceb831cc1630e008
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 894da37088599d1c8b0f9d473bf64311a09cc566
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000559"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093641"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>Zarządzanie urzędnikami wystawiającym certyfikaty w usłudze eDiscovery (Premium)
 

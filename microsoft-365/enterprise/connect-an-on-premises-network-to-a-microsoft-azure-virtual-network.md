@@ -1,8 +1,8 @@
 ---
-title: Połączenie sieci lokalnej do sieci Microsoft Azure wirtualnej
+title: Połączenie sieci lokalnej do sieci wirtualnej Microsoft Azure
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
@@ -19,46 +19,46 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: 'Podsumowanie: Dowiedz się, jak skonfigurować między lokalną siecią wirtualną Azure dla Office obciążenia serwera za pomocą połączenia VPN między witrynami.'
-ms.openlocfilehash: 5ba05dd432a6f6fe323e9d9cfd2542dcb1cc7efb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'Podsumowanie: Dowiedz się, jak skonfigurować międzylokalizową sieć wirtualną platformy Azure dla obciążeń serwera Office przy użyciu połączenia sieci VPN typu lokacja-lokacja.'
+ms.openlocfilehash: 8f9d8336bb50821374ada700613d2ae6142baf6d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985630"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094863"
 ---
-# <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Połączenie sieci lokalnej do sieci Microsoft Azure wirtualnej
+# <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Połączenie sieci lokalnej do sieci wirtualnej Microsoft Azure
 
-Do Twojej sieci lokalnej jest połączona między siedzibą sieci wirtualnej platformy Azure, rozszerzając sieć o podsieci i maszyny wirtualne hostowane w usługach infrastruktury platformy Azure. To połączenie umożliwia komputerom w Twojej sieci lokalnej bezpośredni dostęp do maszyn wirtualnych na platformie Azure i odwrotnie. 
+Sieć wirtualna platformy Azure między środowiskami lokalnymi jest połączona z siecią lokalną, rozszerzając sieć o podsieci i maszyny wirtualne hostowane w usługach infrastruktury platformy Azure. To połączenie umożliwia komputerom w sieci lokalnej bezpośredni dostęp do maszyn wirtualnych na platformie Azure i na odwrót. 
 
-Na przykład serwer synchronizacji katalogów uruchomiony na maszynie wirtualnej platformy Azure musi zwracać się do lokalnych kontrolerów domeny w celu zmiany kont i synchronizować te zmiany z Twoją subskrypcją usługi Microsoft 365. W tym artykule pokazano, jak skonfigurować między lokalną siecią wirtualną Azure przy użyciu połączenia VPN (Site-to-site Virtual Network), które jest gotowe do hostowania maszyn wirtualnych platformy Azure.
+Na przykład serwer synchronizacji katalogów działający na maszynie wirtualnej platformy Azure musi wykonywać zapytania dotyczące lokalnych kontrolerów domeny w celu wprowadzenia zmian w kontach i zsynchronizować te zmiany z subskrypcją Microsoft 365. W tym artykule przedstawiono sposób konfigurowania międzylokacyjnej sieci wirtualnej platformy Azure przy użyciu połączenia wirtualnej sieci prywatnej (VPN) typu lokacja-lokacja, które jest gotowe do hostowania maszyn wirtualnych platformy Azure.
 
-## <a name="configure-a-cross-premises-azure-virtual-network"></a>Konfigurowanie sieci wirtualnej platformy Azure
+## <a name="configure-a-cross-premises-azure-virtual-network"></a>Konfigurowanie sieci wirtualnej platformy Azure między środowiskami lokalnymi
 
-Twoje maszyny wirtualne na platformie Azure nie muszą być izolowane od środowiska lokalnego. Aby połączyć maszyny wirtualne platformy Azure z lokalnymi zasobami sieciowym, musisz skonfigurować między lokalną sieć wirtualną platformy Azure. Na poniższym diagramie przedstawiono składniki wymagane do wdrożenia międzylokacyjną sieci wirtualnej platformy Azure z maszyną wirtualną na platformie Azure.
+Maszyny wirtualne na platformie Azure nie muszą być odizolowane od środowiska lokalnego. Aby połączyć maszyny wirtualne platformy Azure z lokalnymi zasobami sieciowymi, należy skonfigurować sieć wirtualną platformy Azure między środowiskami lokalnymi. Na poniższym diagramie przedstawiono składniki wymagane do wdrożenia międzylokalizowej sieci wirtualnej platformy Azure z maszyną wirtualną na platformie Azure.
   
-![Sieć lokalna połączona Microsoft Azure przez połączenie VPN między witrynami.](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![Sieć lokalna połączona z Microsoft Azure przez połączenie sieci VPN typu lokacja-lokacja.](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
  
-Na diagramie istnieją dwie sieci połączone połączeniem VPN między witrynami: sieć lokalna i wirtualna sieć Azure. Połączenie vpn między witrynami jest:
+Na diagramie istnieją dwie sieci połączone przez połączenie sieci VPN typu lokacja-lokacja: sieć lokalna i sieć wirtualna platformy Azure. Połączenie sieci VPN typu lokacja-lokacja to:
 
-- Między dwoma punktami końcowymi, których adres można rozwiązać i które znajdują się w publicznym Internecie.
-- Zakończony przez urządzenie VPN w sieci lokalnej i bramę azure VPN w sieci wirtualnej Azure.
+- Między dwoma punktami końcowymi, które są adresowalne i znajdują się w publicznym Internecie.
+- Zakończone przez urządzenie sieci VPN w sieci lokalnej i bramę sieci VPN platformy Azure w sieci wirtualnej platformy Azure.
 
-Sieć wirtualna Azure hostuje maszyny wirtualne. Ruch sieciowy pochodzący z maszyn wirtualnych w sieci wirtualnej Azure jest przesyłany dalej do bramy VPN, która następnie przesyła ruch przez połączenie VPN między witrynami do urządzenia w sieci lokalnej. Infrastruktura routingu sieci lokalnej przesyła następnie ruch do miejsca docelowego.
+Sieć wirtualna platformy Azure hostuje maszyny wirtualne. Ruch sieciowy pochodzący z maszyn wirtualnych w sieci wirtualnej platformy Azure jest przekazywany do bramy sieci VPN, która następnie przekazuje ruch przez połączenie sieci VPN typu lokacja-lokacja do urządzenia sieci VPN w sieci lokalnej. Infrastruktura routingu sieci lokalnej przekazuje ruch do miejsca docelowego.
 
 >[!Note]
->Możesz również użyć usługi [ExpressRoute](https://azure.microsoft.com/services/expressroute/), która jest bezpośrednim połączeniem między Twoją organizacją a siecią firmy Microsoft. Ruch przez usługę ExpressRoute nie jest przekierowywowyny przez publiczny Internet. W tym artykule nie opisano korzystania z funkcji ExpressRoute.
+>Możesz również użyć usługi [ExpressRoute](https://azure.microsoft.com/services/expressroute/), która jest bezpośrednim połączeniem między organizacją a siecią firmy Microsoft. Ruch przez usługę ExpressRoute nie odbywa się za pośrednictwem publicznego Internetu. W tym artykule nie opisano korzystania z usługi ExpressRoute.
 >
   
-Aby skonfigurować połączenie VPN między Twoją siecią wirtualną Azure a Twoją siecią lokalną, wykonaj następujące czynności: 
+Aby skonfigurować połączenie sieci VPN między siecią wirtualną platformy Azure a siecią lokalną, wykonaj następujące kroki: 
   
-1. **Lokalnie:** Zdefiniuj i utwórz lokalną trasę sieciową dla przestrzeni adresowej sieci wirtualnej platformy Azure, która wskazuje Twoje lokalne urządzenie VPN.
+1. **Lokalnie:** Zdefiniuj i utwórz trasę sieci lokalnej dla przestrzeni adresowej sieci wirtualnej platformy Azure, która wskazuje lokalne urządzenie sieci VPN.
     
-2. **Microsoft Azure: Utwórz** wirtualną sieć Azure za pomocą połączenia VPN między witrynami. 
+2. **Microsoft Azure:** tworzenie sieci wirtualnej platformy Azure z połączeniem sieci VPN typu lokacja-lokacja. 
     
-3. **Lokalnie:** Skonfiguruj lokalne urządzenie lub oprogramowanie vpn, aby zakończyć połączenie VPN, które używa połączenia sieci zabezpieczenia protokołu internetowego (IPsec).
+3. **Lokalnie:** Skonfiguruj lokalny sprzęt lub oprogramowanie urządzenia sieci VPN, aby zakończyć połączenie sieci VPN, które korzysta z zabezpieczeń protokołu internetowego (IPsec).
     
-Po nawiązaniu połączenia VPN między witrynami możesz dodać maszyny wirtualne platformy Azure do podsieci sieci wirtualnej.
+Po ustanowieniu połączenia sieci VPN typu lokacja-lokacja należy dodać maszyny wirtualne platformy Azure do podsieci sieci wirtualnej.
   
 ## <a name="plan-your-azure-virtual-network"></a>Planowanie sieci wirtualnej platformy Azure
 <a name="PlanningVirtual"></a>
@@ -66,67 +66,67 @@ Po nawiązaniu połączenia VPN między witrynami możesz dodać maszyny wirtual
 ### <a name="prerequisites"></a>Wymagania wstępne
 <a name="Prerequisites"></a>
 
-- Subskrypcja platformy Azure. Aby uzyskać informacje o subskrypcjach platformy Azure, przejdź do strony [Jak kupić platformę Azure](https://azure.microsoft.com/pricing/purchase-options/).
+- Subskrypcja platformy Azure. Aby uzyskać informacje o subskrypcjach platformy Azure, przejdź do [strony Jak kupić platformę Azure](https://azure.microsoft.com/pricing/purchase-options/).
     
-- Dostępna prywatna przestrzeń adresów IPv4, która zostanie przypisana do sieci wirtualnej i jej podsieci, mając wystarczająco dużo miejsca na wzrost, aby uwzględnić liczbę maszyn wirtualnych potrzebnych teraz i w przyszłości.
+- Dostępna prywatna przestrzeń adresowa IPv4 do przypisania do sieci wirtualnej i jej podsieci z wystarczającą przestrzenią do wzrostu, aby pomieścić liczbę maszyn wirtualnych potrzebnych teraz i w przyszłości.
     
-- Dostępne urządzenie VPN w Twojej sieci lokalnej w celu zakończenia połączenia VPN między witrynami, które obsługuje wymagania dotyczące protokołu IPsec. Aby uzyskać więcej informacji, zobacz [Informacje o urządzeniach VPN dla połączeń sieci wirtualnej między witrynami](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+- Dostępne urządzenie sieci VPN w sieci lokalnej w celu zakończenia połączenia sieci VPN typu lokacja-lokacja, które obsługuje wymagania dotyczące protokołu IPsec. Aby uzyskać więcej informacji, zobacz [Informacje o urządzeniach sieci VPN dla połączeń sieci wirtualnej typu lokacja-lokacja](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
     
-- Zmiany w infrastrukturze routingu tak, aby ruch przekierowany do przestrzeni adresowej sieci wirtualnej Azure był przesyłany dalej do urządzenia VPN hostjącego połączenie VPN między witrynami.
+- Zmiany w infrastrukturze routingu, dzięki czemu ruch kierowany do przestrzeni adresowej sieci wirtualnej platformy Azure zostanie przekazany do urządzenia sieci VPN hostującego połączenie sieci VPN typu lokacja-lokacja.
     
-- Serwer proxy sieci Web udostępnia komputery połączone z siecią lokalną i wirtualny dostęp do Internetu przez sieć wirtualną platformy Azure.
+- Internetowy serwer proxy, który zapewnia komputerom połączonym z siecią lokalną i sieci wirtualnej platformy Azure dostęp do Internetu.
     
-### <a name="solution-architecture-design-assumptions"></a>Założenia projektowe architektury rozwiązań
+### <a name="solution-architecture-design-assumptions"></a>Założenia dotyczące projektowania architektury rozwiązania
 
-Na poniższej liście przedstawiono opcje projektu, które zostały wprowadzone dla tej architektury rozwiązania. 
+Poniższa lista przedstawia opcje projektowe, które zostały dokonane dla tej architektury rozwiązania. 
   
-- To rozwiązanie korzysta z pojedynczej sieci wirtualnej platformy Azure z połączeniem VPN między witrynami. Sieć wirtualna Azure hostuje pojedynczą podsieci, która może zawierać wiele maszyn wirtualnych. 
+- To rozwiązanie używa pojedynczej sieci wirtualnej platformy Azure z połączeniem sieci VPN typu lokacja-lokacja. Sieć wirtualna platformy Azure hostuje jedną podsieć, która może zawierać wiele maszyn wirtualnych. 
     
-- Za pomocą usługi routingu i dostępu zdalnego (RRAS) w programie Windows Server 2016 lub Windows Server 2012 możesz nawiązać połączenie VPN typu IPsec między siecią lokalną a siecią wirtualną Azure. Możesz także użyć innych opcji, takich jak urządzenia VPN Cisco lub Juniper Networks.
+- Usługi routingu i dostępu zdalnego (RRAS) w Windows Server 2016 lub Windows Server 2012 można użyć do ustanowienia połączenia sieci VPN typu lokacja-lokacja protokołu IPsec między siecią lokalną a siecią wirtualną platformy Azure. Możesz również użyć innych opcji, takich jak urządzenia sieci VPN Cisco lub Juniper Networks.
     
-- W sieci lokalnej nadal mogą być usługi sieciowe, takie Usługi domenowe w usłudze Active Directory (AD DS), Domain Name System (DNS) i serwery proxy. W zależności od twoich wymagań korzystne może być umieścić niektóre z tych zasobów sieciowych w sieci wirtualnej platformy Azure.
+- Sieć lokalna może nadal mieć usługi sieciowe, takie jak Active Directory Domain Services (AD DS), system nazw domen (DNS) i serwery proxy. W zależności od wymagań może być korzystne umieszczenie niektórych z tych zasobów sieciowych w sieci wirtualnej platformy Azure.
     
-W przypadku istniejącej sieci wirtualnej Platformy Azure z jedną lub większą liczby podsieci określ, czy jest pozostała ilość miejsca na adres dodatkowej podsieci do hostowania potrzebnych maszyn wirtualnych, w zależności od twoich wymagań. Jeśli nie masz pozostałej przestrzeni adresowej dla dodatkowej podsieci, utwórz dodatkową sieć wirtualną, która ma własne połączenie VPN między witrynami.
+W przypadku istniejącej sieci wirtualnej platformy Azure z co najmniej jedną podsiecią określ, czy pozostała przestrzeń adresowa dla dodatkowej podsieci do hostowania potrzebnych maszyn wirtualnych na podstawie wymagań. Jeśli nie masz pozostałej przestrzeni adresowej dla dodatkowej podsieci, utwórz dodatkową sieć wirtualną, która ma własne połączenie sieci VPN typu lokacja-lokacja.
   
 ### <a name="plan-the-routing-infrastructure-changes-for-the-azure-virtual-network"></a>Planowanie zmian infrastruktury routingu dla sieci wirtualnej platformy Azure
 
-Musisz skonfigurować lokalną infrastrukturę routingu, aby przesyłać ruch do miejsca adresów sieci wirtualnej Platformy Azure do lokalnego urządzenia VPN hostjącego połączenie VPN między witrynami.
+Należy skonfigurować lokalną infrastrukturę routingu w celu przekazywania ruchu przeznaczonego dla przestrzeni adresowej sieci wirtualnej platformy Azure do lokalnego urządzenia sieci VPN hostującego połączenie sieci VPN typu lokacja-lokacja.
   
-Dokładna metoda aktualizowania infrastruktury routingu zależy od sposobu zarządzania informacjami o routingu, które mogą być:
+Dokładna metoda aktualizowania infrastruktury routingu zależy od sposobu zarządzania informacjami o routingu, które mogą być następujące:
   
 - Aktualizacje tabeli routingu na podstawie konfiguracji ręcznej.
     
-- Aktualizacje tabeli routingu są oparte na protokołach routingu, takich jak ROUTING Information Protocol (PF) lub Open Shortest Path First (OSPF).
+- Aktualizacje tabeli routingu oparte na protokołach routingu, takich jak routing Information Protocol (RIP) lub Open Shortest Path First (OSPF).
     
-Skonsultuj się ze specjalistą ds. routingu, aby upewnić się, że ruch przeznaczony dla sieci wirtualnej platformy Azure jest przesyłany dalej do lokalnego urządzenia VPN.
+Skontaktuj się ze specjalistą ds. routingu, aby upewnić się, że ruch kierowany do sieci wirtualnej platformy Azure jest przekazywany do lokalnego urządzenia sieci VPN.
   
-### <a name="plan-for-firewall-rules-for-traffic-to-and-from-the-on-premises-vpn-device"></a>Planowanie reguł zapory dla ruchu do i z lokalnego urządzenia VPN
+### <a name="plan-for-firewall-rules-for-traffic-to-and-from-the-on-premises-vpn-device"></a>Planowanie reguł zapory dla ruchu do i z lokalnego urządzenia sieci VPN
 
-Jeśli Twoje urządzenie VPN znajduje się w sieci obwodowej, która ma zaporę między siecią obwodową a Internetem, może być konieczne skonfigurowanie zapory pod następującymi regułami w celu umożliwienia połączenia VPN między witrynami.
+Jeśli urządzenie sieci VPN znajduje się w sieci obwodowej, która ma zaporę między siecią obwodową a Internetem, może być konieczne skonfigurowanie zapory dla następujących reguł, aby zezwolić na połączenie sieci VPN typu lokacja-lokacja.
   
-- Ruch do urządzenia VPN (przychodzącego z Internetu):
+- Ruch do urządzenia sieci VPN (przychodzącego z Internetu):
     
-  - Docelowy adres IP urządzenia VPN i protokołu IP 50
+  - Docelowy adres IP urządzenia sieci VPN i protokołu IP 50
     
-  - Docelowy adres IP urządzenia VPN i portu docelowego UDP 500
+  - Docelowy adres IP urządzenia sieci VPN i portu docelowego UDP 500
     
-  - Docelowy adres IP urządzenia VPN i portu docelowego UDP 4500
+  - Docelowy adres IP urządzenia sieci VPN i portu docelowego UDP 4500
     
-- Ruch z urządzenia VPN (wychodzącego do Internetu):
+- Ruch z urządzenia sieci VPN (wychodzący do Internetu):
     
-  - Źródłowy adres IP urządzenia SIECI VPN i protokołu IP 50
+  - Źródłowy adres IP urządzenia sieci VPN i protokołu IP 50
     
-  - Źródłowy adres IP urządzenia SIECI VPN i portu źródłowego UDP 500
+  - Źródłowy adres IP urządzenia sieci VPN i portu źródłowego UDP 500
     
-  - Źródłowy adres IP urządzenia SIECI VPN i portu źródłowego UDP 4500
+  - Źródłowy adres IP urządzenia sieci VPN i portu źródłowego UDP 4500
     
-### <a name="plan-for-the-private-ip-address-space-of-the-azure-virtual-network"></a>Planowanie prywatnego obszaru adresów IP sieci wirtualnej platformy Azure
+### <a name="plan-for-the-private-ip-address-space-of-the-azure-virtual-network"></a>Planowanie prywatnej przestrzeni adresów IP sieci wirtualnej platformy Azure
 
-Prywatna przestrzeń adresów IP sieci wirtualnej Platformy Azure musi być w stanie zmieścić adresy używane przez platformę Azure do hostowania sieci wirtualnej oraz z co najmniej jedną podsieci, która ma wystarczającą ilość adresów dla Twoich maszyn wirtualnych platformy Azure.
+Prywatna przestrzeń adresów IP sieci wirtualnej platformy Azure musi być w stanie pomieścić adresy używane przez platformę Azure do hostowania sieci wirtualnej i co najmniej jedną podsieć, która ma wystarczającą liczbę adresów dla maszyn wirtualnych platformy Azure.
   
-Aby ustalić liczbę adresów potrzebnych dla podsieci, zlicz liczbę maszyn wirtualnych, których potrzebujesz teraz, szacuj na przyszłość wzrost, a następnie użyj poniższej tabeli, aby określić rozmiar podsieci.
+Aby określić liczbę adresów potrzebnych dla podsieci, zlicz potrzebną teraz liczbę maszyn wirtualnych, oszacuj przyszły wzrost, a następnie użyj poniższej tabeli, aby określić rozmiar podsieci.
   
-|**Liczba potrzebnych maszyn wirtualnych**|**Liczba potrzebnych bitów hosta**|**Rozmiar podsieci**|
+|**Wymagana liczba maszyn wirtualnych**|**Liczba potrzebnych bitów hosta**|**Rozmiar podsieci**|
 |:-----|:-----|:-----|
 |1-3  <br/> |3  <br/> |/29  <br/> |
 |4-11  <br/> |4  <br/> |/28  <br/> |
@@ -134,111 +134,111 @@ Aby ustalić liczbę adresów potrzebnych dla podsieci, zlicz liczbę maszyn wir
 |28-59  <br/> |6  <br/> |/26  <br/> |
 |60-123  <br/> |7  <br/> |/25  <br/> |
    
-### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a>Arkusz planowania na temat konfigurowania sieci wirtualnej platformy Azure
+### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a>Planowanie arkusza na potrzeby konfigurowania sieci wirtualnej platformy Azure
 <a name="worksheet"> </a>
 
 Przed utworzeniem sieci wirtualnej platformy Azure do hostowania maszyn wirtualnych należy określić ustawienia wymagane w poniższych tabelach.
   
-W przypadku ustawień sieci wirtualnej wpisz tabela V.
+Aby uzyskać informacje o ustawieniach sieci wirtualnej, wypełnij tabelę V.
   
- **Tabela V: Konfiguracja między lokalną siecią wirtualną**
+ **Tabela V: konfiguracja między lokalnymi sieciami wirtualnymi**
   
 |**Element**|**Element konfiguracji**|**Opis**|**Wartość**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nazwa sieci wirtualnej  <br/> |Nazwa do przypisania do sieci wirtualnej platformy Azure (przykład DirSyncNet).  <br/> |![wiersz.](../media/Common-Images/TableLine.png) |
-|2.  <br/> |Wirtualna lokalizacja sieciowa  <br/> |Centrum danych platformy Azure, które będzie zawierać sieć wirtualną (na przykład Zachód).  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Adres IP urządzenia SIECI VPN  <br/> |Publiczny adres IPv4 interfejsu urządzenia VPN w Internecie. We współpracy z działem IT ustal ten adres.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Wirtualna przestrzeń adresów sieciowych  <br/> |Przestrzeń adresów (zdefiniowana w jednym prefiksie adresu prywatnego) dla sieci wirtualnej. We współpracy z działem IT ustal tę przestrzeń adresową. Przestrzeń adresów powinna być w formacie Routingu międzydomenami (CIDR, Classless Interdomain Routing), nazywanym także formatem prefiksu sieciowego. Przykład: 10.24.64.0/20.  <br/> |![wiersz.](../media/Common-Images/TableLine.png) <br/> |
-|5.  <br/> |Klucz udostępniony IPsec  <br/> |32-znakowy losowy ciąg alfanumeryczny używany do uwierzytelniania obu stron połączenia VPN między witrynami. We współpracy z działem IT lub działem zabezpieczeń określ tę wartość klucza, a następnie przechowuj ją w bezpiecznym miejscu. Ewentualnie zobacz [Tworzenie ciągu losowego dla wstępnie](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx) współużytego klucza IPsec.  <br/> |![wiersz.](../media/Common-Images/TableLine.png) <br/> |
+|1.  <br/> |Nazwa sieci wirtualnej  <br/> |Nazwa do przypisania do sieci wirtualnej platformy Azure (przykład DirSyncNet).  <br/> |![Linii.](../media/Common-Images/TableLine.png) |
+|2.  <br/> |Lokalizacja sieci wirtualnej  <br/> |Centrum danych platformy Azure, które będzie zawierać sieć wirtualną (na przykład Zachodnie stany USA).  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Adres IP urządzenia sieci VPN  <br/> |Publiczny adres IPv4 interfejsu urządzenia sieci VPN w Internecie. Skontaktuj się z działem IT, aby określić ten adres.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Przestrzeń adresowa sieci wirtualnej  <br/> |Przestrzeń adresowa (zdefiniowana w pojedynczym prefiksie adresu prywatnego) dla sieci wirtualnej. Skontaktuj się z działem IT, aby określić tę przestrzeń adresów. Przestrzeń adresowa powinna być w formacie CIDR (Classless Interdomain Routing), znanym również jako format prefiksu sieci. Przykładem jest 10.24.64.0/20.  <br/> |![Linii.](../media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |Klucz udostępniony protokołu IPsec  <br/> |32-znakowy, alfanumeryczny ciąg, który będzie używany do uwierzytelniania obu stron połączenia sieci VPN typu lokacja-lokacja. Skontaktuj się z działem IT lub działu zabezpieczeń, aby określić tę wartość klucza, a następnie zapisać ją w bezpiecznej lokalizacji. Alternatywnie zobacz [Create a random string for an IPsec preshared key (Tworzenie losowego ciągu dla klucza wstępnego udostępniania protokołu IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)).  <br/> |![Linii.](../media/Common-Images/TableLine.png) <br/> |
    
-Wypełnij tabelę S, aby uzyskać podsieci tego rozwiązania.
+Wypełnij tabelę S dla podsieci tego rozwiązania.
   
-- Dla pierwszej podsieci określ 28-bitową przestrzeń adresów (o długości prefiksu /28) dla podsieci bramy Azure. Aby [uzyskać informacje na temat określania tej przestrzeni adresów](/archive/blogs/solutions_advisory_board/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks) , zobacz Obliczanie przestrzeni adresów podsieci bramy dla sieci wirtualnych platformy Azure.
+- W pierwszej podsieci określ 28-bitową przestrzeń adresową (o długości prefiksu /28) dla podsieci bramy platformy Azure. Zobacz [Obliczanie przestrzeni adresowej podsieci bramy dla sieci wirtualnych platformy Azure](/archive/blogs/solutions_advisory_board/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks) , aby uzyskać informacje o sposobie określania tej przestrzeni adresowej.
     
-- Dla drugiej podsieci określ przyjazną nazwę, pojedynczą przestrzeń adresów IP opartą na wirtualnej przestrzeni adresów sieciowych oraz opisowy cel.
+- W drugiej podsieci określ przyjazną nazwę, pojedynczą przestrzeń adresów IP opartą na przestrzeni adresowej sieci wirtualnej i opisowy cel.
     
-We współpracy z działem IT ustal te odstępy między adresami od wirtualnej przestrzeni adresów sieciowych. Obie spacje adresu powinny być w formacie CIDR.
+Skontaktuj się z działem IT, aby określić te przestrzenie adresowe z przestrzeni adresowej sieci wirtualnej. Obie przestrzenie adresowe powinny mieć format CIDR.
   
  **Tabela S: podsieci w sieci wirtualnej**
   
-|**Element**|**Nazwa podsieci**|**Obszar adresu podsieci**|**Cel**|
+|**Element**|**Nazwa podsieci**|**Przestrzeń adresowa podsieci**|**Celu**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |Podsieci używaną przez bramę platformy Azure.  <br/> |
-|2.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |Podsieć używana przez bramę platformy Azure.  <br/> |
+|2.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
    
-W przypadku lokalnych serwerów DNS, z których mają korzystać maszyny wirtualne w sieci wirtualnej, wypełnij tabelę D. Nadaj każdemu serwerowi DNS przyjazną nazwę i jeden adres IP. Ta przyjazna nazwa nie musi być taka sama jak nazwa hosta ani nazwa komputera serwera DNS. Na liście znajdują się dwa puste wpisy, ale możesz dodać kolejne. We współpracy z działem IT ustal tę listę.
+W przypadku lokalnych serwerów DNS, których mają używać maszyny wirtualne w sieci wirtualnej, wypełnij tabelę D. Nadaj każdemu serwerowi DNS przyjazną nazwę i pojedynczy adres IP. Ta przyjazna nazwa nie musi być zgodna z nazwą hosta lub nazwą komputera serwera DNS. Pamiętaj, że na liście znajdują się dwa puste wpisy, ale możesz dodać więcej. Skontaktuj się z działem IT, aby określić tę listę.
   
  **Tabela D: Lokalne serwery DNS**
   
 |**Element**|**Przyjazna nazwa serwera DNS**|**Adres IP serwera DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
    
-Aby rozsyłać pakiety z sieci wirtualnej platformy Azure do sieci Twojej organizacji przez połączenie VPN między witrynami, musisz skonfigurować sieć wirtualną z siecią lokalną. Ta sieć lokalna zawiera listę spacji adresowych (w formacie CIDR) dla wszystkich lokalizacji w sieci lokalnej organizacji, do których muszą dotrzeć maszyny wirtualne w sieci wirtualnej. Może to być wszystkie lokalizacje w sieci lokalnej lub podzestaw. Lista spacji adresowych definiująca sieć lokalną musi być unikatowa i nie może zasłaniać się odstępami adresowymi używanymi dla tej sieci wirtualnej lub innych między lokalnymi sieciami wirtualnymi.
+Aby kierować pakiety z sieci wirtualnej platformy Azure do sieci organizacji przez połączenie sieci VPN typu lokacja-lokacja, należy skonfigurować sieć wirtualną za pomocą sieci lokalnej. Ta sieć lokalna zawiera listę przestrzeni adresowych (w formacie CIDR) dla wszystkich lokalizacji w sieci lokalnej organizacji, do których muszą dotrzeć maszyny wirtualne w sieci wirtualnej. Mogą to być wszystkie lokalizacje w sieci lokalnej lub podzestawie. Lista przestrzeni adresowych definiujących sieć lokalną musi być unikatowa i nie może nakładać się na przestrzenie adresowe używane dla tej sieci wirtualnej lub innych sieci wirtualnych obejmujących wiele lokalizacji.
   
-W przypadku zestawu lokalnych spacji adresów sieciowych wypełnij pole Tabela L. Pamiętaj, że na liście znajdują się trzy puste wpisy, ale zazwyczaj potrzebujesz więcej. We współpracy z działem IT ustal tę listę.
+W przypadku zestawu przestrzeni adresowych sieci lokalnej wypełnij tabelę L. Pamiętaj, że na liście znajdują się trzy puste wpisy, ale zazwyczaj potrzebujesz więcej. Skontaktuj się z działem IT, aby określić tę listę.
   
  **Tabela L: Prefiksy adresów dla sieci lokalnej**
   
-|**Element**|**Lokalna przestrzeń adresów sieciowych**|
+|**Element**|**Przestrzeń adresowa sieci lokalnej**|
 |:-----|:-----|
-|1.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![wiersz.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![wiersz](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![Linii.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![Linii](../media/Common-Images/TableLine.png)  <br/> |
    
-## <a name="deployment-roadmap"></a>Plan wdrażania
+## <a name="deployment-roadmap"></a>Plan wdrożenia
 <a name="DeploymentRoadmap"> </a>
 
-Tworzenie sieci wirtualnej między siedzibą firmy i dodawanie maszyn wirtualnych na platformie Azure składa się z trzech etapów:
+Tworzenie lokalnej sieci wirtualnej i dodawanie maszyn wirtualnych na platformie Azure składa się z trzech faz:
   
-- Etap 1. Przygotowanie sieci lokalnej.
+- Faza 1. Przygotowywanie sieci lokalnej.
     
-- Etap 2. Tworzenie między siedzibą sieci wirtualnej na platformie Azure.
+- Faza 2. Tworzenie lokalnej sieci wirtualnej na platformie Azure.
     
-- Etap 3 (opcjonalnie): Dodawanie maszyn wirtualnych.
+- Faza 3 (opcjonalnie): dodawanie maszyn wirtualnych.
     
-### <a name="phase-1-prepare-your-on-premises-network"></a>Etap 1. Przygotowanie sieci lokalnej
+### <a name="phase-1-prepare-your-on-premises-network"></a>Faza 1. Przygotowywanie sieci lokalnej
 <a name="Phase1"></a>
 
-Musisz skonfigurować sieć lokalną za pomocą trasy, która wskazuje i ostatecznie dostarcza ruch do miejsca adresu sieci wirtualnej do routera na krawędzi sieci lokalnej. Skontaktuj się z administratorem sieci, aby ustalić, jak dodać trasę do infrastruktury routingu Twojej sieci lokalnej.
+Sieć lokalną należy skonfigurować przy użyciu trasy, która wskazuje i ostatecznie dostarcza ruch przeznaczony dla przestrzeni adresowej sieci wirtualnej do routera na krawędzi sieci lokalnej. Skontaktuj się z administratorem sieci, aby ustalić, jak dodać trasę do infrastruktury routingu sieci lokalnej.
   
-Oto wynikowa konfiguracja.
+Oto konfiguracja wyniku.
   
-![Sieć lokalna musi mieć trasę adresową do przestrzeni adresowej sieci wirtualnej, która wskazuje urządzenie sieci VPN.](../media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
+![Sieć lokalna musi mieć trasę dla przestrzeni adresowej sieci wirtualnej, która wskazuje urządzenie sieci VPN.](../media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
   
-### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Etap 2. Tworzenie między siedzibą sieci wirtualnej na platformie Azure
+### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Faza 2. Tworzenie lokalnej sieci wirtualnej na platformie Azure
 <a name="Phase2"></a>
 
-Najpierw otwórz monit Azure PowerShell monitu. Jeśli nie masz zainstalowanego Azure PowerShell, zobacz [Wprowadzenie do Azure PowerShell](/powershell/azure/get-started-azureps).
+Najpierw otwórz Azure PowerShell monit. Jeśli nie zainstalowano Azure PowerShell, zobacz [Wprowadzenie z Azure PowerShell](/powershell/azure/get-started-azureps).
 
  
-Następnie zaloguj się do swojego konta Azure za pomocą tego polecenia.
+Następnie zaloguj się do konta platformy Azure za pomocą tego polecenia.
   
 ```powershell
 Connect-AzAccount
 ```
 
-Uzyskaj nazwę subskrypcji za pomocą następującego polecenia.
+Pobierz nazwę subskrypcji przy użyciu następującego polecenia.
   
 ```powershell
 Get-AzSubscription | Sort SubscriptionName | Select SubscriptionName
 ```
 
-Skonfiguruj subskrypcję platformy Azure za pomocą tych poleceń. Zamień wszystkie cudzysłowy, łącznie < i >, na poprawną nazwę subskrypcji.
+Ustaw subskrypcję platformy Azure za pomocą tych poleceń. Zastąp wszystkie elementy w cudzysłowie, w tym znaki < i >, poprawną nazwą subskrypcji.
   
 ```powershell
 $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
-Następnie utwórz nową grupę zasobów dla swojej sieci wirtualnej. Aby określić unikatową nazwę grupy zasobów, użyj tego polecenia, aby wyświetlić listę istniejących grup zasobów.
+Następnie utwórz nową grupę zasobów dla sieci wirtualnej. Aby określić unikatową nazwę grupy zasobów, użyj tego polecenia, aby wyświetlić listę istniejących grup zasobów.
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-Za pomocą tych poleceń utwórz nową grupę zasobów.
+Utwórz nową grupę zasobów przy użyciu tych poleceń.
   
 ```powershell
 $rgName="<resource group name>"
@@ -246,7 +246,7 @@ $locName="<Table V - Item 2 - Value column>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-Następnie utworzysz sieć wirtualną Azure.
+Następnie utworzysz sieć wirtualną platformy Azure.
   
 ```powershell
 # Fill in the variables from previous values and from Tables V, S, and D
@@ -272,11 +272,11 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -Addres
 $vnet | Set-AzVirtualNetwork
 ```
 
-Oto wynikowa konfiguracja.
+Oto konfiguracja wyniku.
   
 ![Sieć wirtualna nie jest jeszcze połączona z siecią lokalną.](../media/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
   
-Następnie użyj tych poleceń, aby utworzyć bramy dla połączenia VPN między witrynami.
+Następnie użyj tych poleceń, aby utworzyć bramy dla połączenia sieci VPN typu lokacja-lokacja.
   
 ```powershell
 # Fill in the variables from previous values and from Tables V and L
@@ -302,38 +302,38 @@ $vnetConnectionName="S2SConnection"
 $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
 ```
 
-Oto wynikowa konfiguracja.
+Oto konfiguracja wyniku.
   
 ![Sieć wirtualna ma teraz bramę.](../media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
-Następnie skonfiguruj lokalne urządzenie VPN, aby łączyło się z bramą azure VPN. Aby uzyskać więcej informacji, zobacz Informacje o urządzeniach [VPN dla połączeń między witrynami usługi Azure Virtual Network](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Następnie skonfiguruj lokalne urządzenie sieci VPN w celu nawiązania połączenia z bramą sieci VPN platformy Azure. Aby uzyskać więcej informacji, zobacz [About VPN Devices for site-to-site Azure Virtual Network connections (Informacje o urządzeniach sieci VPN dla połączeń Virtual Network platformy Azure typu lokacja-lokacja](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)).
   
-Do skonfigurowania urządzenia VPN są potrzebne następujące elementy:
+Aby skonfigurować urządzenie sieci VPN, potrzebne są następujące elementy:
   
-- Publiczny adres IPv4 bramy Azure VPN dla Twojej sieci wirtualnej. Aby wyświetlić ten adres, użyj $vnetGatewayIpConfigName **Get-AzPublicIpAddress -Name $rgName -ResourceGroupName** .
+- Publiczny adres IPv4 bramy sieci VPN platformy Azure dla sieci wirtualnej. Użyj polecenia **Get-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName** , aby wyświetlić ten adres.
     
-- Wstępnie udostępniony klucz IPsec dla połączenia VPN między witrynami (tabela V — element 5 — kolumna Wartość).
+- Klucz wstępny protokołu IPsec dla połączenia sieci VPN typu lokacja-lokacja (tabela V— element 5 — kolumna wartość).
     
-Oto wynikowa konfiguracja.
+Oto konfiguracja wyniku.
   
 ![Sieć wirtualna jest teraz połączona z siecią lokalną.](../media/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
-### <a name="phase-3-optional-add-virtual-machines"></a>Etap 3 (opcjonalnie): Dodawanie maszyn wirtualnych
+### <a name="phase-3-optional-add-virtual-machines"></a>Faza 3 (opcjonalnie): dodawanie maszyn wirtualnych
 
-Utwórz maszyny wirtualne, których potrzebujesz na platformie Azure. Aby uzyskać więcej informacji, zobacz [Tworzenie Windows wirtualnej za pomocą portalu Azure Portal](https://go.microsoft.com/fwlink/p/?LinkId=393098).
+Utwórz maszyny wirtualne potrzebne na platformie Azure. Aby uzyskać więcej informacji, zobacz [Tworzenie maszyny wirtualnej Windows przy użyciu Azure Portal](https://go.microsoft.com/fwlink/p/?LinkId=393098).
   
 Użyj następujących ustawień:
   
-- Na karcie **Podstawy wybierz** tę samą grupę subskrypcji i zasobów, co Twoja sieć wirtualna. Będą one potrzebne później do zalogowania się do maszyny wirtualnej. W sekcji **Szczegóły wystąpienia** wybierz odpowiedni rozmiar maszyny wirtualnej. Zanotuj nazwę użytkownika i hasło konta administratora w bezpiecznym miejscu. 
+- Na **karcie Podstawy** wybierz tę samą subskrypcję i grupę zasobów co sieć wirtualna. Będą one potrzebne później, aby zalogować się do maszyny wirtualnej. W sekcji **Szczegóły wystąpienia** wybierz odpowiedni rozmiar maszyny wirtualnej. Zarejestruj nazwę użytkownika i hasło konta administratora w bezpiecznej lokalizacji. 
     
-- Na karcie **Sieci** zaznacz nazwę sieci wirtualnej i podsieci hostowania maszyn wirtualnych (nie nazwę GatewaySubnet). Pozostaw wszystkie inne ustawienia na ich wartości domyślne.
+- Na karcie Sieć wybierz nazwę sieci wirtualnej i podsieci do **hostowania** maszyn wirtualnych (a nie podsieć GatewaySubnet). Pozostaw wszystkie inne ustawienia na wartościach domyślnych.
     
-Sprawdź, czy Twoja maszyna wirtualna prawidłowo używa systemu DNS, sprawdzając wewnętrzną usługę DNS, aby upewnić się, że do nowej maszyny wirtualnej zostały dodane rekordy adresu (A). Aby uzyskać dostęp do Internetu, Twoje maszyny wirtualne platformy Azure muszą być skonfigurowane do korzystania z serwera proxy sieci lokalnej. Aby uzyskać dodatkowe kroki konfiguracji na serwerze, skontaktuj się z administratorem sieci.
+Sprawdź, czy maszyna wirtualna prawidłowo używa systemu DNS, sprawdzając wewnętrzny system DNS, aby upewnić się, że dodano rekordy adresu (A) dla nowej maszyny wirtualnej. Aby uzyskać dostęp do Internetu, maszyny wirtualne platformy Azure muszą być skonfigurowane do korzystania z serwera proxy sieci lokalnej. Skontaktuj się z administratorem sieci, aby uzyskać dodatkowe kroki konfiguracji do wykonania na serwerze.
   
-Oto wynikowa konfiguracja.
+Oto konfiguracja wyniku.
   
-![Sieć wirtualna hostuje teraz maszyny wirtualne dostępne z sieci lokalnej.](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![Sieć wirtualna hostuje teraz maszyny wirtualne, które są dostępne z sieci lokalnej.](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
 ## <a name="next-step"></a>Następny krok
   
-[Wdrażanie Microsoft 365 katalogów w programie Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Wdrażanie synchronizacji katalogów Microsoft 365 w Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

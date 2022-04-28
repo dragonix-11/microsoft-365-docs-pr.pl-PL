@@ -2,8 +2,8 @@
 title: Szacowane i rzeczywiste wyniki wyszukiwania zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Dowiedz się, dlaczego szacowane i rzeczywiste wyniki wyszukiwania mogą się różnić w przypadku wyszukiwań uruchamianych za pomocą narzędzi zbierania elektronicznych materiałów dowodowych w Office 365.
-ms.openlocfilehash: a71b246b71e7b3cca3ef361510042b6292c36c8b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 694d850d568aee4965530317f9bbc9f95727338c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993957"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092784"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Różnice między szacowanymi i rzeczywistymi wynikami wyszukiwania zbierania elektronicznych materiałów dowodowych
 
@@ -33,7 +33,7 @@ ms.locfileid: "64993957"
 Ten artykuł dotyczy wyszukiwań, które można uruchomić przy użyciu jednego z następujących Microsoft 365 narzędzi zbierania elektronicznych materiałów dowodowych: 
 
 - Wyszukiwanie zawartości
-- Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa
+- Zbieranie elektronicznych materiałów dowodowych (wersja standardowa)
 
 Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych używane narzędzie zwróci oszacowanie liczby elementów (i ich całkowitego rozmiaru) zgodnych z kryteriami wyszukiwania. Na przykład po uruchomieniu wyszukiwania w portalu zgodności usługi Microsoft Purview szacowane wyniki wyszukiwania są wyświetlane na stronie wysuwanej dla wybranego wyszukiwania.
   

@@ -2,8 +2,8 @@
 title: zasady alertów Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Utwórz zasady alertów w portalu zgodności usługi Microsoft Purview lub portalu Microsoft 365 Defender w celu monitorowania potencjalnych zagrożeń, utraty danych i problemów z uprawnieniami.
-ms.openlocfilehash: beecaf86a013480e0c5546e07189e8be5b622b17
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b0f7d037731bc1073ac177667927ca4f691e9904
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995915"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094597"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Zasady alertów w Microsoft 365
 
@@ -66,7 +66,7 @@ Zasady alertów składają się z zestawu reguł i warunków definiujących dzia
 
 Aby wyświetlić i utworzyć zasady alertów:
 
-### <a name="microsoft-purview-compliance-portal"></a>Portal zgodności usługi Microsoft Purview
+### <a name="microsoft-purview-compliance-portal"></a>Portal zgodności platformy Microsoft Purview
 
 Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a>, a następnie wybierz pozycję **ZasadyZasady** >  **firmyAlert** > .
 
@@ -105,7 +105,7 @@ Tagi użytkowników można również zdefiniować jako warunek zasad alertu. Spo
 
   - Zapobieganie utracie danych
 
-  - Zarządzanie informacjami
+  - Zarządzanie cyklem życia danych
 
   - Przepływ poczty
 
@@ -128,7 +128,7 @@ Tagi użytkowników można również zdefiniować jako warunek zasad alertu. Spo
 
 ## <a name="default-alert-policies"></a>Domyślne zasady alertów
 
-Firma Microsoft udostępnia wbudowane zasady alertów, które ułatwiają identyfikowanie nadużyć uprawnień administratora Exchange, działania złośliwego oprogramowania, potencjalnych zagrożeń zewnętrznych i wewnętrznych oraz zagrożeń związanych z ładem informacji. Na stronie **Zasady alertów** nazwy tych wbudowanych zasad są pogrubione, a typ zasad jest definiowany jako **System**. Te zasady są domyślnie włączone. Możesz wyłączyć te zasady (lub ponownie włączyć), skonfigurować listę adresatów do wysyłania powiadomień e-mail i ustawić dzienny limit powiadomień. Nie można edytować innych ustawień tych zasad.
+Firma Microsoft udostępnia wbudowane zasady alertów, które ułatwiają identyfikowanie zagrożeń związanych z uprawnieniami administratora Exchange, działaniami złośliwego oprogramowania, potencjalnymi zagrożeniami zewnętrznymi i wewnętrznymi oraz zagrożeniami związanymi z zarządzaniem cyklem życia danych. Na stronie **Zasady alertów** nazwy tych wbudowanych zasad są pogrubione, a typ zasad jest definiowany jako **System**. Te zasady są domyślnie włączone. Możesz wyłączyć te zasady (lub ponownie włączyć), skonfigurować listę adresatów do wysyłania powiadomień e-mail i ustawić dzienny limit powiadomień. Nie można edytować innych ustawień tych zasad.
 
 W poniższej tabeli wymieniono i opisano dostępne domyślne zasady alertów oraz kategorię, do których są przypisane poszczególne zasady. Kategoria służy do określania alertów, które użytkownik może wyświetlić na stronie Alerty. Aby uzyskać więcej informacji, zobacz [Uprawnienia RBAC wymagane do wyświetlania alertów](#rbac-permissions-required-to-view-alerts).
 
@@ -166,9 +166,9 @@ Tabela wskazuje również plan Office 365 Enterprise i Office 365 us government 
 |**Pozycja Zezwalaj na dzierżawę/Lista zablokowanych wkrótce wygaśnie**|Generuje alert, gdy wpis Listy dozwolonych/zablokowanych dzierżawy ma zostać usunięty. To zdarzenie jest wyzwalane trzy dni przed datą wygaśnięcia, która jest oparta na tym, kiedy wpis został utworzony lub ostatnio zaktualizowany. Te zasady alertów mają ustawienie Ważność **informacyjna** . Ma to na celu poinformowanie administratorów o nadchodzących zmianach w filtrach, ponieważ zezwalanie lub blokowanie może zniknąć. W przypadku bloków można przedłużyć datę wygaśnięcia, aby utrzymać blok w miejscu. Aby umożliwić, należy ponownie przesłać element, aby nasi analitycy mogli przyjrzeć się innemu wyglądowi. Jeśli jednak zezwalanie zostało już sklasyfikowane jako fałszywie dodatnie, wpis wygaśnie tylko wtedy, gdy filtry systemowe zostaną zaktualizowane, aby naturalnie zezwolić na wpis. Aby uzyskać więcej informacji na temat zdarzeń wyzwalających ten alert, zobacz [Zarządzanie listą Zezwalanie/blokowanie dzierżawy](../security/office-365-security/tenant-allow-block-list.md).|Zarządzanie zagrożeniami|Nie|Subskrypcja dodatku E5/G5 lub Ochrona usługi Office 365 w usłudze Defender P2|
 |**Dzierżawa ograniczona do wysyłania wiadomości e-mail**|Generuje alert, gdy większość ruchu poczty e-mail z organizacji została wykryta jako podejrzana, a firma Microsoft ograniczyła Organizacji możliwość wysyłania wiadomości e-mail. Zbadaj wszelkie potencjalnie naruszone konta użytkowników i administratorów, nowe łączniki lub otwarte przekaźniki, a następnie skontaktuj się z pomoc techniczna firmy Microsoft, aby odblokować organizację. Te zasady mają ustawienie **o wysokiej** ważności. Aby uzyskać więcej informacji o tym, dlaczego organizacje są blokowane, zobacz [Rozwiązywanie problemów z dostarczaniem wiadomości e-mail dla kodu błędu 5.7.7xx w Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Zarządzanie zagrożeniami|Nie|E1/F1/G1, E3/F3/G3 lub E5/G5|
 |**Dzierżawa nie może wysyłać nieobsadzone wiadomości e-mail**|Generuje alert w przypadku wysyłania zbyt dużej ilości wiadomości e-mail z niezarejestrowanych domen (nazywanych również domenami *bez aprowizacji* ). Office 365 zezwala na rozsądną ilość wiadomości e-mail z niezarejestrowanych domen, ale należy skonfigurować każdą domenę używaną do wysyłania wiadomości e-mail jako akceptowaną domenę. Ten alert wskazuje, że wszyscy użytkownicy w organizacji nie mogą już wysyłać wiadomości e-mail. Te zasady mają ustawienie **o wysokiej** ważności. Aby uzyskać więcej informacji o tym, dlaczego organizacje są blokowane, zobacz [Rozwiązywanie problemów z dostarczaniem wiadomości e-mail dla kodu błędu 5.7.7xx w Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Zarządzanie zagrożeniami|Nie|E1/F1/G1, E3/F3/G3 lub E5/G5|
-|**Nietypowe działanie pliku użytkownika zewnętrznego**|Generuje alert, gdy niezwykle duża liczba działań wykonywanych na plikach w SharePoint lub OneDrive przez użytkowników spoza organizacji. Obejmuje to działania, takie jak uzyskiwanie dostępu do plików, pobieranie plików i usuwanie plików. Te zasady mają ustawienie **o wysokiej** ważności.|Zarządzanie informacjami|Nie|Subskrypcja dodatku E5/G5, Ochrona usługi Office 365 w usłudze Microsoft Defender P2 lub Microsoft 365 E5|
-|**Nietypowa ilość zewnętrznego udostępniania plików**|Generuje alert, gdy niezwykle duża liczba plików w SharePoint lub OneDrive jest udostępniana użytkownikom spoza organizacji. Te zasady mają ustawienie **o średniej** ważności.|Zarządzanie informacjami|Nie|Subskrypcja dodatku E5/G5, Ochrona usługi Office 365 w usłudze Defender P2 lub Microsoft 365 E5|
-|**Nietypowa ilość usuwania pliku**|Generuje alert, gdy niezwykle duża liczba plików zostanie usunięta w SharePoint lub OneDrive w krótkim czasie. Te zasady mają ustawienie **o średniej** ważności.|Zarządzanie informacjami|Nie|Subskrypcja dodatku E5/G5, Ochrona usługi Office 365 w usłudze Defender P2 lub Microsoft 365 E5|
+|**Nietypowe działanie pliku użytkownika zewnętrznego**|Generuje alert, gdy niezwykle duża liczba działań wykonywanych na plikach w SharePoint lub OneDrive przez użytkowników spoza organizacji. Obejmuje to działania, takie jak uzyskiwanie dostępu do plików, pobieranie plików i usuwanie plików. Te zasady mają ustawienie **o wysokiej** ważności.|Zarządzanie cyklem życia danych|Nie|Subskrypcja dodatku E5/G5, Ochrona usługi Office 365 w usłudze Microsoft Defender P2 lub Microsoft 365 E5|
+|**Nietypowa ilość zewnętrznego udostępniania plików**|Generuje alert, gdy niezwykle duża liczba plików w SharePoint lub OneDrive jest udostępniana użytkownikom spoza organizacji. Te zasady mają ustawienie **o średniej** ważności.|Zarządzanie cyklem życia danych|Nie|Subskrypcja dodatku E5/G5, Ochrona usługi Office 365 w usłudze Defender P2 lub Microsoft 365 E5|
+|**Nietypowa ilość usuwania pliku**|Generuje alert, gdy niezwykle duża liczba plików zostanie usunięta w SharePoint lub OneDrive w krótkim czasie. Te zasady mają ustawienie **o średniej** ważności.|Zarządzanie cyklem życia danych|Nie|Subskrypcja dodatku E5/G5, Ochrona usługi Office 365 w usłudze Defender P2 lub Microsoft 365 E5|
 |**Nietypowy wzrost liczby wiadomości e-mail zgłoszonych jako phish**|Generuje alert w przypadku znacznego wzrostu liczby osób w organizacji przy użyciu dodatku Komunikat raportu Outlook do zgłaszania wiadomości jako wiadomości wyłudzających informacje. Te zasady mają ustawienie **o średniej** ważności. Aby uzyskać więcej informacji na temat tego [dodatku, zobacz Korzystanie z dodatku Komunikat raportu](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Zarządzanie zagrożeniami|Nie|Subskrypcja dodatku E5/G5 lub Ochrona usługi Office 365 w usłudze Defender P2|
 |**Phish personifikacji użytkownika dostarczane do skrzynki odbiorczej/**<sup>folder1,2</sup><sup></sup>|Generuje alert, gdy firma Microsoft wykryje, że zastąpienie przez administratora lub użytkownika pozwoliło na dostarczenie wiadomości wyłudzającej informacje o personifikacji użytkownika do skrzynki odbiorczej (lub innego folderu dostępnego dla użytkownika) skrzynki pocztowej. Przykłady przesłoń obejmują regułę skrzynki odbiorczej lub przepływu poczty, która zezwala na wiadomości od określonego nadawcy lub domeny, lub zasady ochrony przed spamem, które zezwalają na wiadomości od określonych nadawców lub domen. Te zasady mają ustawienie **o średniej** ważności.|Zarządzanie zagrożeniami|Nie|Subskrypcja dodatku E5/G5 lub Ochrona usługi Office 365 w usłudze Defender P2|
 |**Użytkownik zażądał wydania komunikatu poddanej kwarantannie**|Generuje alert, gdy użytkownik żąda wydania komunikatu poddanego kwarantannie. Aby zażądać wydania komunikatów poddanych kwarantannie, uprawnienie **Zezwalaj adresatom na żądanie zwolnienia komunikatu z kwarantanny** (_PermissionToRequestRelease_) jest wymagane w zasadach kwarantanny (na przykład z grupy uprawnień wstępnie ustawionych ograniczony **dostęp** ). Aby uzyskać więcej informacji, zobacz [Zezwalaj adresatom na żądanie zwolnienia komunikatu z uprawnienia kwarantanny](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). Te zasady mają ustawienie Ważność **informacyjna** .|Zarządzanie zagrożeniami|Nie|E1/F1/G1, E3/F3/G3 lub E5/G5|
@@ -188,7 +188,7 @@ Gdy działanie wykonywane przez użytkowników w organizacji jest zgodne z ustaw
 
 Aby wyświetlić alerty:
 
-### <a name="microsoft-purview-compliance-portal"></a>Portal zgodności usługi Microsoft Purview
+### <a name="microsoft-purview-compliance-portal"></a>Portal zgodności platformy Microsoft Purview
 
  Przejdź do obszaru <https://compliance.microsoft.com> , a następnie wybierz pozycję **Alerty**. Alternatywnie możesz przejść bezpośrednio do <https://compliance.microsoft.com/compliancealerts>.
 
@@ -250,7 +250,7 @@ Należy pamiętać o następujących kwestiach dotyczących agregacji alertów:
 
 Uprawnienia Access Control opartej na rolach (RBAC) przypisane do użytkowników w organizacji określają, które alerty użytkownik może wyświetlić na stronie **Alerty**. Jak to osiągnąć? Role zarządzania przypisane do użytkowników (na podstawie ich członkostwa w grupach ról w portalu zgodności lub portalu Microsoft 365 Defender) określają kategorie alertów, które użytkownik może zobaczyć na stronie **Alerty**. Oto kilka przykładów:
 
-- Członkowie grupy ról Zarządzanie rekordami mogą wyświetlać tylko alerty generowane przez zasady alertów, do których przypisano kategorię **Ład informacji** .
+- Członkowie grupy ról Zarządzanie rekordami mogą wyświetlać tylko alerty generowane przez zasady alertów, do których przypisano kategorię **Zarządzania cyklem życia danych** .
 
 - Członkowie grupy ról Administrator zgodności nie mogą wyświetlać alertów generowanych przez zasady alertów, do których przypisano kategorię **Zarządzanie zagrożeniami** .
 
@@ -262,7 +262,7 @@ W poniższej tabeli wymieniono role, które są wymagane do wyświetlania alert�
 
 Aby zobaczyć, do której kategorii są przypisane domyślne zasady alertów, zobacz tabelę w [temacie Domyślne zasady alertów](#default-alert-policies).
 
-|Rola|Zarządzanie informacjami|Zapobieganie utracie danych|Przepływ poczty|Uprawnienia|Zarządzanie zagrożeniami|Innych|
+|Rola|Zarządzanie cyklem życia danych|Zapobieganie utracie danych|Przepływ poczty|Uprawnienia|Zarządzanie zagrożeniami|Innych|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Dzienniki inspekcji|||||||
 |Zarządzanie przypadkami|||||||

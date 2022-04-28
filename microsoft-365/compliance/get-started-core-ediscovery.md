@@ -2,8 +2,8 @@
 title: Wprowadzenie z przypadkami zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano, jak rozpocząć korzystanie z eDiscovery (Standard) w usłudze Microsoft Purview. Po przypisaniu uprawnień do zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy można dodać członków, utworzyć blokady zbierania elektronicznych materiałów dowodowych, a następnie wyszukać i wyeksportować zawartość, która jest odpowiednia dla badania.
-ms.openlocfilehash: 3619a3097567251d012594831081f0929d5ca80e
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: e224bf22741d0e1599d099802470e231b11fd785
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972414"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094951"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Wprowadzenie zbierania elektronicznych materiałów dowodowych (Standard) w usłudze Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Usługa Microsoft Purview eDiscovery (Standard) w usłudze Microsoft Purview udostępnia podstawowe narzędzie zbierania elektronicznych materiałów dowodowych, którego organizacje mogą używać do wyszukiwania i eksportowania zawartości w Microsoft 365 i Office 365. Możesz również użyć funkcji zbierania elektronicznych materiałów dowodowych (Standardowa), aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, takich jak skrzynki pocztowe Exchange, witryny SharePoint, konta OneDrive i Microsoft Teams. Do wdrożenia zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) nie jest wymagane żadne zadanie, ale istnieją pewne zadania wstępne, które musi wykonać administrator IT i menedżer zbierania elektronicznych elektronicznych materiałów dowodowych, zanim organizacja będzie mogła rozpocząć wyszukiwanie, eksportowanie i zachowywanie zawartości przy użyciu zbierania elektronicznych materiałów dowodowych (Standard).
 

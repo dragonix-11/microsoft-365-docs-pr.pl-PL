@@ -1,9 +1,9 @@
 ---
-title: Omówienie nowoczesnego uwierzytelniania hybrydowego i wymagania wstępne dotyczące używania z lokalnymi Skype dla firm i Exchange lokalnymi
+title: Omówienie nowoczesnego uwierzytelniania hybrydowego i wymagania wstępne dotyczące użycia z lokalnymi serwerami Skype dla firm i Exchange
 ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/03/2021
 audience: ITPro
 ms.topic: article
@@ -15,104 +15,104 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: W tym artykule dowiesz się więcej o nowoczesnym uwierzytelnianiu hybrydowym i wymaganiach wstępnych dotyczących używania z lokalnymi Skype dla firm i Exchange lokalnymi.
-ms.openlocfilehash: efce3b5a04f2e9500330cab87d7ba8e62ca49db0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: W tym artykule dowiesz się więcej na temat nowoczesnego uwierzytelniania hybrydowego i wymagań wstępnych dotyczących użycia z lokalnymi serwerami Skype dla firm i Exchange.
+ms.openlocfilehash: c161f205aba1222f39811155bef5c6be6da613d0
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312869"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093399"
 ---
-# <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Omówienie i wymagania wstępne dotyczące nowoczesnego uwierzytelniania hybrydowego dotyczące używania go z lokalnymi Skype dla firm i Exchange lokalnymi
+# <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Omówienie nowoczesnego uwierzytelniania hybrydowego i wymagania wstępne dotyczące używania go z lokalnymi serwerami Skype dla firm i Exchange
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-_Nowoczesne uwierzytelnianie_ to metoda zarządzania tożsamością, która zapewnia bezpieczniejsze uwierzytelnianie i autoryzację użytkowników. Jest on dostępny w Office 365 hybrydowych wdrożeń Skype dla firm serwera lokalnego i Exchange lokalnego serwera oraz konfiguracji Skype dla firm hybrydowych. Ten artykuł zawiera linki do powiązanych dokumentów dotyczących wymagań wstępnych, konfigurowania/wyłączania nowoczesnego uwierzytelniania oraz niektórych powiązanych dokumentów (np. Outlook i Skype klientów).
+_Nowoczesne uwierzytelnianie_ to metoda zarządzania tożsamościami, która oferuje bezpieczniejsze uwierzytelnianie i autoryzację użytkowników. Jest ona dostępna dla Office 365 wdrożeń hybrydowych Skype dla firm serwera lokalnego i lokalnego serwera Exchange oraz hybrydowych Skype dla firm domeny podzielonej. Ten artykuł zawiera linki do powiązanych dokumentów dotyczących wymagań wstępnych, konfiguracji/wyłączania nowoczesnego uwierzytelniania oraz niektórych powiązanych klientów (np. Outlook i Skype klientów).
 
 - [Co to jest nowoczesne uwierzytelnianie?](hybrid-modern-auth-overview.md#BKMK_WhatisModAuth)
-- [Jakie zmiany wprowadzam, gdy używam nowoczesnego uwierzytelniania?](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
-- [Sprawdzanie stanu nowoczesnego uwierzytelniania w środowisku lokalnym](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
+- [Jakie zmiany korzystania z nowoczesnego uwierzytelniania?](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
+- [Sprawdzanie stanu nowoczesnego uwierzytelniania środowiska lokalnego](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
 - [Czy spełniasz wymagania wstępne dotyczące nowoczesnego uwierzytelniania?](#do-you-meet-modern-authentication-prerequisites)
-- [Co jeszcze należy wiedzieć przed rozpoczęciem?](hybrid-modern-auth-overview.md#BKMK_Whatelse)
+- [Co jeszcze muszę wiedzieć przed rozpoczęciem?](hybrid-modern-auth-overview.md#BKMK_Whatelse)
 
 ## <a name="what-is-modern-authentication"></a>Co to jest nowoczesne uwierzytelnianie?
 <a name="BKMK_WhatisModAuth"> </a>
 
-Nowoczesne uwierzytelnianie to termin parasolowy, który zapewnia połączenie metod uwierzytelniania i autoryzacji między klientem (na przykład laptopem lub telefonem) a serwerem, a także niektóre zabezpieczenia oparte na zasadach dostępu, które być może znasz. Oto co obejmuje:
+Nowoczesne uwierzytelnianie jest terminem parasolowym dla kombinacji metod uwierzytelniania i autoryzacji między klientem (na przykład laptopem lub telefonem) a serwerem, a także niektórych środków bezpieczeństwa, które opierają się na zasadach dostępu, które mogą już być znane. Oto co obejmuje:
 
-- **Metody uwierzytelniania**: uwierzytelnianie wieloskładnikowe (MFA); uwierzytelnianie karty inteligentnej; uwierzytelnianie klienta oparte na certyfikatach
-- **Metody autoryzacji**: Implementacja open authorization (OAuth) firmy Microsoft
-- **Zasady dostępu warunkowego**: Dostęp warunkowy zarządzanie aplikacjami mobilnymi (MAM) i Azure Active Directory (Azure AD)
+- **Metody uwierzytelniania**: uwierzytelnianie wieloskładnikowe (MFA); uwierzytelnianie za pomocą karty inteligentnej; uwierzytelnianie oparte na certyfikatach klienta
+- **Metody autoryzacji**: implementacja otwartej autoryzacji (OAuth) firmy Microsoft
+- **Zasady dostępu warunkowego: dostęp warunkowy** do zarządzania aplikacjami mobilnymi (MAM) i Azure Active Directory (Azure AD)
 
-Zarządzanie tożsamościami użytkowników za pomocą nowoczesnego uwierzytelniania zapewnia administratorom wiele różnych narzędzi do wykorzystania w zakresie zabezpieczania zasobów i oferuje bezpieczniejsze metody zarządzania tożsamością zarówno w scenariuszach lokalnych (Exchange i Skype dla firm Exchange), hybrydowych oraz Skype dla firm hybrydowych/podzielonych domenach.
+Zarządzanie tożsamościami użytkowników przy użyciu nowoczesnego uwierzytelniania zapewnia administratorom wiele różnych narzędzi do użycia w przypadku zabezpieczania zasobów i oferuje bezpieczniejsze metody zarządzania tożsamościami zarówno w środowisku lokalnym (Exchange, jak i Skype dla firm), Exchange hybrydowych i Skype dla firm scenariuszy hybrydowych/podzielonych domen.
 
-Ponieważ Skype dla firm ściśle współpracuje z usługą Exchange, na zachowanie logowania Skype dla firm klientów będzie miał wpływ stan nowoczesnego uwierzytelniania usługi Exchange. Ma to również zastosowanie, jeśli masz architekturę hybrydową Skype dla firm, w której masz zarówno usługę Skype dla firm Online, jak i Skype dla firm lokalną, z użytkownikami w obu tych lokalizacjach.
+Ponieważ Skype dla firm ściśle współpracuje z Exchange, na zachowanie logowania Skype dla firm użytkowników klienckich będzie mieć wpływ nowoczesny stan uwierzytelniania Exchange. Ma to również zastosowanie, jeśli masz Skype dla firm architekturę hybrydową _z podziałem domeny_, w której masz zarówno Skype dla firm Online, jak i Skype dla firm lokalnie, a użytkownicy znajdują się w obu lokalizacjach.
 
-Aby uzyskać więcej informacji na temat nowoczesnego uwierzytelniania Office 365, zobacz pomoc [Office 365 aplikacji klienckiej — uwierzytelnianie wieloskładnikowe](microsoft-365-client-support-multi-factor-authentication.md).
+Aby uzyskać więcej informacji na temat nowoczesnego uwierzytelniania w Office 365, zobacz [Office 365 Obsługa aplikacji klienckich — uwierzytelnianie wieloskładnikowe](microsoft-365-client-support-multi-factor-authentication.md).
 
 > [!IMPORTANT]
-> Od sierpnia 2017 r. wszystkie nowe dzierżawy usług Office 365, które zawierają usługę Skype dla firm Online i Exchange online, będą domyślnie włączone nowoczesne uwierzytelnianie. Istniejące już dzierżawy nie będą mieć zmiany w ich domyślnym stanie zarządzania tożsamościami, ale wszystkie nowe dzierżawy automatycznie obsługują rozwinięty zestaw funkcji tożsamości, które są wyświetlane powyżej. Aby sprawdzić stan usługi uwierzytelniania lokalnego, zobacz sekcję Sprawdzanie stanu nowoczesnego uwierzytelniania [w środowisku lokalnym](hybrid-modern-auth-overview.md#BKMK_CheckStatus) .
+> Od sierpnia 2017 r. wszystkie nowe dzierżawy Office 365, które obejmują Skype dla firm online i Exchange online, będą domyślnie włączone nowoczesne uwierzytelnianie. Istniejące dzierżawy nie będą miały zmiany w domyślnym stanie MA, ale wszystkie nowe dzierżawy automatycznie obsługują rozszerzony zestaw funkcji tożsamości widocznych powyżej. Aby sprawdzić stan ma, zobacz [sprawdzanie stanu nowoczesnego uwierzytelniania środowiska lokalnego](hybrid-modern-auth-overview.md#BKMK_CheckStatus) .
 
-## <a name="what-changes-when-i-use-modern-authentication"></a>Jakie zmiany wprowadzam, gdy używam nowoczesnego uwierzytelniania?
+## <a name="what-changes-when-i-use-modern-authentication"></a>Jakie zmiany korzystania z nowoczesnego uwierzytelniania?
 <a name="BKMK_WhatChanges"> </a>
 
-Podczas korzystania z nowoczesnego uwierzytelniania z lokalnym serwerem Skype dla firm lub Exchange nadal uwierzytelnianie użytkowników lokalnych jest procesem uwierzytelniania, ale  proces tworzenia ich dostępu do zasobów (takich jak pliki lub  wiadomości e-mail) zmienia się. Dlatego, chociaż nowoczesne uwierzytelnianie dotyczy komunikacji z klientem i serwerem, czynności wykonane podczas konfigurowania usługi MA spowodują ustawienie usługi tokenu zabezpieczającego używanej przez usługę Azure AD jako serwera uwierzytelniania dla lokalnego serwera Skype dla firm i Exchange.
+W przypadku korzystania z nowoczesnego uwierzytelniania z lokalnym serwerem Skype dla firm lub Exchange nadal *uwierzytelniasz* użytkowników lokalnie, ale historia *autoryzacji* ich dostępu do zasobów (takich jak pliki lub wiadomości e-mail) zmienia się. Dlatego mimo że nowoczesne uwierzytelnianie dotyczy komunikacji z klientem i serwerem, kroki wykonywane podczas konfigurowania ma skutkują ustawieniem evoSTS (usługi tokenu zabezpieczającego używanej przez usługę Azure AD) jako serwera uwierzytelniania dla serwera Skype dla firm i serwera Exchange lokalnie.
 
-Zmiana na usługę tokenS umożliwia Twoim serwerom lokalnym korzystanie z protokołu OAuth (wydawanie tokenów) w celu autoryzacji Twoich klientów, a także umożliwia Twoim lokalnym metodom zabezpieczeń najczęściej występującym w chmurze (na przykład uwierzytelnianie wieloskładnikowe). Ponadto użytkownicy mogą zażądać dostępu do zasobów bez podaniem hasła w ramach żądania przez użytkownika. Niezależnie od miejsca zamieszkania użytkowników (w trybie online lub lokalnym) i niezależnie od tego, która lokalizacja hostuje potrzebny zasób, podstawową zasadą autoryzowania użytkowników i klientów po skonfigurowaniu nowoczesnego uwierzytelniania stanie się ich podstawowa metoda.
+Zmiana na evoSTS umożliwia lokalnym serwerom korzystanie z uwierzytelniania OAuth (wystawiania tokenów) w celu autoryzowania klientów, a także umożliwia lokalne korzystanie z metod zabezpieczeń typowych w chmurze (takich jak uwierzytelnianie wieloskładnikowe). Ponadto evoSTS wystawia tokeny, które umożliwiają użytkownikom żądanie dostępu do zasobów bez podawania hasła w ramach żądania. Niezależnie od tego, gdzie znajdują się użytkownicy (online lub lokalnie) i niezależnie od tego, która lokalizacja hostuje potrzebny zasób, platforma EvoSTS stanie się rdzeniem autoryzacji użytkowników i klientów po skonfigurowaniu nowoczesnego uwierzytelniania.
 
-Jeśli na przykład klient usługi Skype dla firm musi uzyskać dostęp do serwera Exchange w celu uzyskania informacji kalendarza w imieniu użytkownika, korzysta z biblioteki uwierzytelniania firmy Microsoft (MSAL, Microsoft Authentication Library). MSAL to biblioteka kodów zaprojektowana w celu udostępnienia zabezpieczonych zasobów w katalogu aplikacjom klienckim przy użyciu tokenów zabezpieczeń OAuth. Program MSAL współpracuje z protokołu OAuth w celu weryfikowania roszczeń i wymiany tokenów (a nie haseł) w celu udzielenia użytkownikowi dostępu do zasobu. W przeszłości urząd w transakcji takiej jak ta — serwer, który potrafi weryfikować roszczenia użytkowników i wydawać wymagane tokeny — mógł to być lokalnie usługa tokenu zabezpieczeń, a nawet usługi federacyjnych Active Directory. Nowoczesne uwierzytelnianie scentralizować jednak to właściwe uprawnienia przy użyciu usługi Azure AD.
+Jeśli na przykład klient Skype dla firm musi uzyskać dostęp do serwera Exchange, aby uzyskać informacje o kalendarzu w imieniu użytkownika, używa do tego biblioteki microsoft authentication library (MSAL). BIBLIOTEKA MSAL to biblioteka kodu przeznaczona do udostępniania zabezpieczonych zasobów w katalogu aplikacjom klienckim przy użyciu tokenów zabezpieczających protokołu OAuth. Biblioteka MSAL współpracuje z usługą OAuth w celu weryfikacji oświadczeń i wymiany tokenów (zamiast haseł), aby udzielić użytkownikowi dostępu do zasobu. W przeszłości urząd w transakcji takiej jak ta — serwer, który wie, jak weryfikować oświadczenia użytkowników i wystawiać wymagane tokeny — mógł być lokalną usługą tokenu zabezpieczającego, a nawet Active Directory Federation Services. Jednak nowoczesne uwierzytelnianie scentralizuje ten urząd przy użyciu usługi Azure AD.
 
-Oznacza to również, że nawet jeśli środowiska serwera Exchange i programu Skype dla firm mogą być całkowicie lokalne, serwer autoryzowania będzie w trybie online, a środowisko lokalne musi mieć możliwość tworzenia i utrzymywania połączenia z subskrypcją usługi Office 365 w chmurze (i wystąpieniu usługi Azure AD, które używa twojej subskrypcji jako katalogu).
+Oznacza to również, że nawet jeśli serwer Exchange i środowiska Skype dla firm mogą być całkowicie lokalne, serwer autoryzacji będzie w trybie online, a środowisko lokalne musi mieć możliwość tworzenia i utrzymywania połączenia z subskrypcją Office 365 w chmurze (oraz wystąpieniem usługi Azure AD używanym przez subskrypcję jako jej katalog).
 
-Co się nie zmienia? Niezależnie od tego, czy korzystasz z konfiguracji hybrydowej podzielonej domeny, czy używasz lokalnego Skype dla firm i Exchange, wszyscy użytkownicy muszą najpierw uwierzytelnić *się lokalnie*. W hybrydowej implementacji nowoczesnego uwierzytelniania usługi _lyncdiscovery_ i _wykrywania automatycznego_ wskazują zarówno Twój serwer lokalnym, jak i usługę wykrywania automatycznego.
+Co się nie zmienia? Niezależnie od tego, czy korzystasz z hybrydowej domeny podzielonej, czy używasz lokalnego serwera Skype dla firm i Exchange, wszyscy użytkownicy muszą najpierw uwierzytelnić się *lokalnie*. W przypadku hybrydowej implementacji nowoczesnego uwierzytelniania wykrywanie programu _Lyncdiscovery_ i _wykrywanie_ automatyczne wskazują serwer lokalny.
 
 > [!IMPORTANT]
-> Jeśli chcesz poznać konkretne topologii Skype dla firm obsługiwane przez mazowieńską, o czym tutaj [o tym chodzi.](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
+> Jeśli musisz znać konkretne topologie Skype dla firm obsługiwane przez ma, jest to [udokumentowane tutaj](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported).
 
-## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>Sprawdzanie stanu nowoczesnego uwierzytelniania w środowisku lokalnym
+## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>Sprawdzanie stanu nowoczesnego uwierzytelniania środowiska lokalnego
 <a name="BKMK_CheckStatus"> </a>
 
-Ponieważ nowoczesne uwierzytelnianie zmienia serwer autoryzacji używany w przypadku stosowania przez usługi protokołu OAuth/S2S, musisz wiedzieć, czy nowoczesne uwierzytelnianie zostało włączone lub wyłączone w lokalnych środowiskach Skype dla firm i Exchange sieci. Możesz sprawdzić stan na swoich serwerach Exchange, uruchamiając następujące polecenie programu PowerShell:
+Ponieważ nowoczesne uwierzytelnianie zmienia serwer autoryzacji używany podczas stosowania usług OAuth/S2S, musisz wiedzieć, czy nowoczesne uwierzytelnianie jest włączone lub wyłączone dla lokalnych środowisk Skype dla firm i Exchange. Stan na serwerach Exchange można sprawdzić, uruchamiając następujące polecenie programu PowerShell:
 
 ```powershell
 Get-OrganizationConfig | ft OAuth*
 ```
 
-Jeśli właściwość _OAuth2ClientProfileEnabled_ ma wartość **False**, nowoczesne uwierzytelnianie jest wyłączone.
+Jeśli wartość właściwości _OAuth2ClientProfileEnabled_ to **False**, nowoczesne uwierzytelnianie jest wyłączone.
 
-Aby uzyskać więcej informacji o tym Get-OrganizationConfig cmdlet, zobacz [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
+Aby uzyskać więcej informacji na temat polecenia cmdlet Get-OrganizationConfig, zobacz [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
 
-Możesz sprawdzić swoje serwery Skype dla firm, uruchamiając następujące polecenie programu PowerShell:
+Serwery Skype dla firm można sprawdzić, uruchamiając następujące polecenie programu PowerShell:
 
 ```powershell
 Get-CSOAuthConfiguration
 ```
 
-Jeśli polecenie zwraca pustą właściwość _OAuthServers_ lub jeśli wartość właściwości _ClientADALAuthOverride_ nie jest dozwolona **, nowoczesne** uwierzytelnianie jest wyłączone.
+Jeśli polecenie zwraca pustą właściwość _OAuthServers_ lub jeśli wartość właściwości _ClientADALAuthOverride_ nie jest **dozwolona**, nowoczesne uwierzytelnianie jest wyłączone.
 
-Aby uzyskać więcej informacji na Get-CsOAuthConfiguration cmdlet, zobacz [Get-CsOAuthConfiguration](/powershell/module/skype/get-csoauthconfiguration).
+Aby uzyskać więcej informacji na temat polecenia cmdlet Get-CsOAuthConfiguration, zobacz [Get-CsOAuthConfiguration](/powershell/module/skype/get-csoauthconfiguration).
 
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>Czy spełniasz wymagania wstępne dotyczące nowoczesnego uwierzytelniania?
 
-Przed kontynuowaniem zweryfikuj i zaznacz te elementy na liście:
+Przed kontynuowaniem sprawdź i sprawdź te elementy z listy:
 
-- **Skype dla firm specyficznych**
-  - Wszystkie serwery muszą mieć aktualizację skumulowaną z maja 2017 r. (CU5) dla systemu Skype dla firm Server 2015 lub nowszego
-    - **Wyjątek** — urządzenie Nagałęźność (SBA) może mieć bieżącą wersję (opartą na programie Lync 2013)
+- **Skype dla firm specyficzne**
+  - Wszystkie serwery muszą mieć aktualizację zbiorczą (CU5) z maja 2017 r. dla Skype dla firm Server 2015 r. lub nowszej
+    - **Wyjątek** — urządzenie survivability Branch (SBA) może być w bieżącej wersji (na podstawie programu Lync 2013)
   - Domena SIP jest dodawana jako domena federacyjna w Office 365
-  - Wszystkie fronty uwierzytelniania SFB muszą mieć połączenia wychodzące z Internetem do adresów URL uwierzytelniania usługi Office 365 (TCP 443) i znanych głównych crl certyfikatów (TCP 80) wymienionych w wierszach 56 i 125 sekcji "Typowe i Office" sekcji Microsoft 365 "Typowe i Office" adresów URL i zakresów adresów [IP programu Office 365](urls-and-ip-address-ranges.md).
+  - Wszystkie frontony SFB muszą mieć połączenia wychodzące z Internetem, aby Office 365 adresów URL uwierzytelniania (TCP 443) i dobrze znanych głównych list CRL certyfikatów (TCP 80) wymienionych w wierszach 56 i 125 sekcji "Microsoft 365 Common and Office" [Office 365 adresów URL i zakresów adresów IP](urls-and-ip-address-ranges.md).
 
-- **Skype dla firm lokalnym w środowisku hybrydowym Office 365 lokalnym**
-  - Wdrożenie Skype dla firm Server 2019 r. ze wszystkimi serwerami z Skype dla firm Server 2019 r.
-  - Wdrożenie Skype dla firm Server 2015 ze wszystkimi serwerami z Skype dla firm Server 2015.
-  - Wdrożenie z maksymalnie dwiema różnymi wersjami serwera, jak podano poniżej:
+- **Skype dla firm lokalnie w środowisku Office 365 hybrydowej**
+  - Wdrożenie Skype dla firm Server 2019 r. ze wszystkimi serwerami z systemem Skype dla firm Server 2019 r.
+  - Wdrożenie Skype dla firm Server 2015 r. ze wszystkimi serwerami z systemem Skype dla firm Server 2015 r.
+  - Wdrożenie z maksymalnie dwiema różnymi wersjami serwera, jak pokazano poniżej:
     - Skype dla firm serwer 2015
     - Skype dla firm serwer 2019
-  - Wszystkie Skype dla firm muszą mieć zainstalowane najnowsze aktualizacje skumulowane. Zobacz Skype dla firm Server, aby znaleźć [](/skypeforbusiness/sfb-server-updates) wszystkie dostępne aktualizacje i zarządzać nimi.
+  - Wszystkie serwery Skype dla firm muszą mieć zainstalowane najnowsze aktualizacje zbiorcze, zobacz [Skype dla firm Server aktualizacje](/skypeforbusiness/sfb-server-updates), aby znaleźć wszystkie dostępne aktualizacje i zarządzać nimi.
   - W środowisku hybrydowym nie ma programu Lync Server 2010 ani 2013.
 
 >[!NOTE]
->Jeśli serwery Skype dla firm frontonie korzystają z serwera proxy do uzyskiwania dostępu do Internetu, należy wprowadzić adres IP serwera proxy i numer portu w sekcji konfiguracji pliku web.config dla każdego frontu.
+>Jeśli serwery frontonu Skype dla firm używają serwera proxy na potrzeby dostępu do Internetu, adres IP serwera proxy i numer portu muszą zostać wprowadzone w sekcji konfiguracji pliku web.config dla każdego frontonu.
 
 - C:\Program Files\Skype dla firm Server 2015\Web Components\Web ticket\int\web.config
 - C:\Program Files\Skype dla firm Server 2015\Web Components\Web ticket\ext\web.config
@@ -130,58 +130,58 @@ Przed kontynuowaniem zweryfikuj i zaznacz te elementy na liście:
 ```
 
 > [!IMPORTANT]
-> Zasubskrybuj kanał informacyjny RSS dla Office 365 URL i zakresów adresów [IP](urls-and-ip-address-ranges.md), aby być na żywo z najnowszymi listami wymaganych adresów URL.
+> Pamiętaj, aby subskrybować kanał informacyjny RSS dla [Office 365 adresów URL i zakresów adresów IP](urls-and-ip-address-ranges.md), aby być na bieżąco z najnowszymi listami wymaganych adresów URL.
 
-- **Exchange Server specyficznych**
-  - Używasz albo serwera Exchange 2013 CU19, albo Exchange server 2016 CU8 lub Exchange Server 2019 CU1 lub więcej.
-  - W środowisku Exchange server 2010.
-  - Ładowanie SSL nie jest skonfigurowane. Obsługiwane jest zakończenie ssl i ponowne szyfrowanie.
-  - Jeśli twoje środowisko korzysta z infrastruktury serwera proxy w celu umożliwienia serwerom łączenia się z Internetem, upewnij się, że wszystkie serwery Exchange mają serwer proxy zdefiniowany we właściwości [InternetWebProxy](/powershell/module/exchange/set-exchangeserver).
+- **Exchange Server specyficzne**
+  - Używasz serwera Exchange 2013 CU19 lub nowszego, serwera Exchange 2016 CU8 lub nowszego lub Exchange Server 2019 CU1 i nowszego.
+  - W środowisku nie ma Exchange serwera 2010.
+  - Odciążanie protokołu SSL nie jest skonfigurowane. Obsługiwane jest kończenie I ponowne szyfrowanie protokołu SSL.
+  - W przypadku, gdy środowisko korzysta z infrastruktury serwera proxy, aby umożliwić serwerom łączenie się z Internetem, upewnij się, że wszystkie serwery Exchange mają serwer proxy [zdefiniowany we właściwości InternetWebProxy](/powershell/module/exchange/set-exchangeserver).
 
-- **Exchange Server lokalnym w środowisku hybrydowym Office 365 lokalnym**
+- **Exchange Server lokalnie w środowisku Office 365 hybrydowej**
 
-  - Jeśli używasz programu Exchange Server 2013, co najmniej jeden serwer musi mieć zainstalowane role serwera skrzynki pocztowej i dostępu klienta. Role skrzynek pocztowych i dostępu klienta można zainstalować na oddzielnych serwerach, jednak zdecydowanie zalecamy zainstalowanie obu ról na tym samym serwerze w celu zapewnienia większej niezawodności i lepszej wydajności.
-  - Jeśli używasz programu Exchange w wersji 2016 lub nowszej, co najmniej jeden serwer musi mieć zainstalowaną rolę serwera Skrzynka pocztowa.
-  - W środowisku Exchange hybrydowym nie ma serwera 2007 ani 2010.
-  - Wszystkie Exchange skumulowane muszą mieć zainstalowane najnowsze aktualizacje skumulowane. Aby znaleźć wszystkie [](/exchange/plan-and-deploy/install-cumulative-updates) dostępne aktualizacje i zarządzać nimi, zobacz Uaktualnianie Exchange do najnowszych aktualizacji skumulowanych.
+  - Jeśli używasz Exchange Server 2013 r., co najmniej jeden serwer musi mieć zainstalowane role skrzynki pocztowej i serwera dostępu klienta. Chociaż można zainstalować role Skrzynka pocztowa i Dostęp klienta na oddzielnych serwerach, zdecydowanie zalecamy zainstalowanie obu ról na tym samym serwerze, aby zapewnić większą niezawodność i lepszą wydajność.
+  - Jeśli używasz serwera Exchange wersji 2016 lub nowszej, co najmniej jeden serwer musi mieć zainstalowaną rolę serwera skrzynki pocztowej.
+  - W środowisku hybrydowym nie ma Exchange serwera 2007 lub 2010.
+  - Wszystkie serwery Exchange muszą mieć zainstalowane najnowsze aktualizacje zbiorcze. Zobacz [Uaktualnianie Exchange do najnowszych aktualizacji zbiorczych](/exchange/plan-and-deploy/install-cumulative-updates), aby znaleźć wszystkie dostępne aktualizacje i zarządzać nimi.
 
-- **Exchange klienta i protokołu**
+- **Exchange wymagania dotyczące klienta i protokołu**
 
-    Dostępność nowoczesnego uwierzytelniania zależy od połączenia klienta, protokołu i konfiguracji. Jeśli nowoczesne uwierzytelnianie nie jest obsługiwane przez klienta, protokół i/lub konfigurację, klient nadal będzie używać starszego uwierzytelniania.
+    Dostępność nowoczesnego uwierzytelniania zależy od kombinacji klienta, protokołu i konfiguracji. Jeśli nowoczesne uwierzytelnianie nie jest obsługiwane przez klienta, protokół i/lub konfigurację, klient będzie nadal używać starszego uwierzytelniania.
   
-    Następujący klienci i protokoły obsługują nowoczesne uwierzytelnianie za pomocą Exchange lokalnych, gdy nowoczesne uwierzytelnianie jest włączone w środowisku:
+    Następujący klienci i protokoły obsługują nowoczesne uwierzytelnianie przy użyciu lokalnego Exchange po włączeniu nowoczesnego uwierzytelniania w środowisku:
 
-  |**Klienci**|**Primary Protocol**|**Uwagi**|
+  |**Klientów**|**Protokół podstawowy**|**Uwagi**|
   |:-----|:-----|:-----|
-  |Outlook 2013 i nowszych  <br/> |MAPI przez HTTP  <br/> |Aby można było korzystać z nowoczesnego uwierzytelniania przy użyciu tych klientów (włączony lub prawda w przypadku nowych instalacji dodatku Service Pack 1 dla programu Exchange 2013 lub nowszego), należy włączyć funkcję MAPI przez protokół HTTP w programie Exchange). Aby uzyskać więcej informacji, zobacz Jak działa nowoczesne uwierzytelnianie w aplikacjach klienckich programów [Office 2013 i Office 2016](modern-auth-for-office-2013-and-2016.md).  <br/> Upewnij się, że korzystasz z minimalnej wymaganej kompilacji pakietu Outlook. Zobacz Najnowsze aktualizacje dla wersji programu Outlook, które korzystają z Instalatora Windows [(MSI).](/officeupdates/outlook-updates-msi)  <br/> |
+  |Outlook 2013 r. i nowsze  <br/> |MAPI za pośrednictwem protokołu HTTP  <br/> |Interfejs MAPI za pośrednictwem protokołu HTTP musi być włączony w ramach Exchange w celu korzystania z nowoczesnego uwierzytelniania z tymi klientami (włączone lub true dla nowych instalacji dodatku Service Pack 1 Exchange 2013 lub nowszych); aby uzyskać więcej informacji, zobacz [Jak działa nowoczesne uwierzytelnianie dla aplikacji klienckich Office 2013 i Office 2016](modern-auth-for-office-2013-and-2016.md).  <br/> Upewnij się, że używasz minimalnej wymaganej kompilacji Outlook. Zobacz [Najnowsze aktualizacje wersji Outlook korzystających z instalatora Windows (MSI).](/officeupdates/outlook-updates-msi)  <br/> |
   |Outlook 2016 dla komputerów Mac i nowsze  <br/> |Usługi sieci Web programu Exchange  <br/> |  <br/> |
-  |Outlook dla systemów iOS i Android  <br/> | Technologia synchronizacji firmy Microsoft <br/> |Aby [uzyskać więcej informacji, zobacz Używanie hybrydowego nowoczesnego uwierzytelniania Outlook dla systemów iOS i Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
-  |Exchange ActiveSync klientach (na przykład Poczta systemu iOS11)  <br/> |Exchange ActiveSync  <br/> |W Exchange ActiveSync klientów, którzy obsługują nowoczesne uwierzytelnianie, musisz ponownie utworzyć profil, aby przełączyć się z uwierzytelniania podstawowego na nowoczesne.  <br/> |
+  |Outlook dla systemów iOS i Android  <br/> | Technologia synchronizacji firmy Microsoft <br/> |Aby uzyskać więcej informacji, zobacz [Using hybrid Modern Authentication with Outlook for iOS and Android (Używanie nowoczesnego uwierzytelniania hybrydowego z Outlook dla systemów iOS i Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)).  <br/> |
+  |Exchange ActiveSync klientów (na przykład poczta systemu iOS11)  <br/> |Exchange ActiveSync  <br/> |W przypadku Exchange ActiveSync klientów, którzy obsługują nowoczesne uwierzytelnianie, należy ponownie utworzyć profil, aby przełączyć się z uwierzytelniania podstawowego na nowoczesne uwierzytelnianie.  <br/> |
 
-    Klienci i/lub protokoły, których nie ma na liście (na przykład POP3), nie obsługują nowoczesnego uwierzytelniania za pomocą lokalnego systemu Exchange i nadal korzystają ze starszych mechanizmów uwierzytelniania nawet po włączeniu nowoczesnego uwierzytelniania w środowisku.
+    Klienci i/lub protokoły, które nie są wymienione (na przykład POP3) nie obsługują nowoczesnego uwierzytelniania przy użyciu lokalnych Exchange i nadal używają starszych mechanizmów uwierzytelniania nawet po włączeniu nowoczesnego uwierzytelniania w środowisku.
 
-- **Wymagania wstępne ogólne**
-  - Scenariusze lasu zasobów będą wymagały zaufania dwukierunkowego z lasem konta w celu zapewnienia, że podczas hybrydowych żądań nowoczesnego uwierzytelniania są wykonywane odpowiednie wyszukiwania identyfikatora SID. 
-  - Jeśli korzystasz z usług AD FS, musisz mieć Windows USŁUG AD FS 2012 R2 3.0 lub więcej dla federacji.
-  - Konfiguracje tożsamości są dowolnymi typami obsługiwanymi przez usługę Azure AD Połączenie, takimi jak synchronizacja skrótów haseł, uwierzytelnianie pass-through i lokalna usługa STS obsługiwana przez usługę Office 365.
-  - Masz usługę Azure AD, Połączenie i działa na replikację i synchronizację użytkowników.
-  - Po sprawdzeniu, że środowisko hybrydowe zostało skonfigurowane przy Exchange klasycznej topologii hybrydowej między środowiskiem lokalnym a środowiskiem Office 365 hybrydowym. Oficjalne oświadczenie o zapewniania obsługi dla Exchange hybrydowej informuje, że musisz mieć bieżącą cu lub bieżącą cu - 1.
+- **Ogólne wymagania wstępne**
+  - Scenariusze lasu zasobów będą wymagały dwukierunkowego zaufania z lasem konta, aby zapewnić, że podczas żądań nowoczesnego uwierzytelniania hybrydowego są wykonywane odpowiednie wyszukiwania identyfikatorów SID. 
+  - Jeśli używasz usług AD FS, należy mieć Windows 2012 R2 AD FS 3.0 i nowsze dla federacji.
+  - Konfiguracje tożsamości to dowolne typy obsługiwane przez Połączenie usługi Azure AD, takie jak synchronizacja skrótów haseł, uwierzytelnianie przekazywane i lokalny usługa STS obsługiwana przez Office 365.
+  - Usługa Azure AD Połączenie skonfigurowana i działa na potrzeby replikacji i synchronizacji użytkowników.
+  - Sprawdzono, że konfiguracja hybrydowa jest skonfigurowana przy użyciu Exchange klasycznego trybu topologii hybrydowej między środowiskiem lokalnym i Office 365. Oficjalne oświadczenie o wsparciu dla hybrydowej Exchange mówi, że musisz mieć obecną cu lub obecną CU - 1.
     > [!NOTE]
-    > Nowoczesne uwierzytelnianie hybrydowe nie jest obsługiwane przez agenta [hybrydowego](/exchange/hybrid-deployment/hybrid-agent).
+    > Nowoczesne uwierzytelnianie hybrydowe nie jest obsługiwane w przypadku [agenta hybrydowego](/exchange/hybrid-deployment/hybrid-agent).
 
-  - Upewnij się, że zarówno użytkownik testowy w środowisku lokalnym, jak i użytkownik testowy hybrydowy z systemem Office 365, może zalogować się do klienta klasycznego programu Skype dla firm (jeśli chcesz używać nowoczesnego uwierzytelniania z usługą Skype) i usługi Microsoft Outlook (jeśli chcesz używać nowoczesnego uwierzytelniania z usługą Exchange).
-  - Upewnij się, że ustawienie SignInOptions w programie Microsoft Office nie jest skonfigurowane do najbardziej restrykcyjnego ustawienia. Aby uzyskać więcej informacji, [zobacz Jak zezwolić Office na łączenie się z Internetem](/office365/troubleshoot/access-management/office-feature-disabled).
+  - Upewnij się, że zarówno lokalny użytkownik testowy, jak i użytkownik testowy hybrydowy hostowane w Office 365, może zalogować się do klienta klasycznego Skype dla firm (jeśli chcesz używać nowoczesnego uwierzytelniania z Skype) i microsoft Outlook (jeśli chcesz używać nowoczesnego uwierzytelniania z Exchange).
+  - Upewnij się, że ustawienie SignInOptions w Microsoft Office nie jest skonfigurowane do najbardziej restrykcyjnego ustawienia. Aby uzyskać więcej informacji, zobacz [Jak zezwolić Office na łączenie się z Internetem](/office365/troubleshoot/access-management/office-feature-disabled).
 
-## <a name="what-else-do-i-need-to-know-before-i-begin"></a>Co jeszcze należy wiedzieć przed rozpoczęciem?
+## <a name="what-else-do-i-need-to-know-before-i-begin"></a>Co jeszcze muszę wiedzieć przed rozpoczęciem?
 <a name="BKMK_Whatelse"> </a>
 
-- Wszystkie scenariusze dla serwerów lokalnych wymagają skonfigurowania nowoczesnego uwierzytelniania lokalnie (w rzeczywistości dla systemu Skype dla firm jest lista obsługiwanych topologii), tak aby serwer odpowiedzialny za uwierzytelnianie i autoryzację był w chmurze firmy Microsoft (usłudze tokenu zabezpieczeń usługi Azure AD, o nazwie "googleSTS") i zaktualizował usługę Azure AD o adresach URL lub przestrzeniach nazw używanych przez lokalną instalację jednej z tych usług Skype dla firm lub Exchange. Dlatego serwery lokalne biorą udział w zależności od chmury firmy Microsoft. Aby to zrobić, można rozważyć skonfigurowanie "uwierzytelniania hybrydowego".
-- Ten artykuł zawiera linki do innych osób, które pomogą Ci wybrać obsługiwane topologii nowoczesnego uwierzytelniania (wymagane tylko w przypadku usługi Skype dla firm) oraz artykuły z instrukcjami, w których opisano kroki konfiguracji, lub procedury wyłączania nowoczesnego uwierzytelniania w przypadku lokalnego Exchange i Skype dla firm lokalnego. Jeśli chcesz korzystać z nowoczesnego uwierzytelniania w środowisku serwera, możesz do ulubionych tę stronę w przeglądarce.
+- Wszystkie scenariusze dotyczące serwerów lokalnych obejmują skonfigurowanie nowoczesnego uwierzytelniania lokalnego (w rzeczywistości dla Skype dla firm istnieje lista obsługiwanych topologii), tak aby serwer odpowiedzialny za uwierzytelnianie i autoryzację był w chmurze firmy Microsoft (usługa tokenu zabezpieczającego usługi Azure AD o nazwie "evoSTS") i aktualizował usługę Azure AD o adresy URL lub przestrzenie nazw używane przez lokalną instalację albo Skype dla firm lub Exchange. W związku z tym serwery lokalne przyjmują zależność chmury firmy Microsoft. Wykonanie tej akcji można rozważyć skonfigurowanie "uwierzytelniania hybrydowego".
+- Ten artykuł zawiera linki do innych osób, które pomogą Ci wybrać obsługiwane topologie nowoczesnego uwierzytelniania (niezbędne tylko dla Skype dla firm) oraz artykuły z instrukcjami, które przedstawiają kroki konfiguracji lub kroki wyłączania nowoczesnego uwierzytelniania dla Exchange lokalnych i Skype dla firm lokalnych. Wybierz tę stronę jako ulubioną w przeglądarce, jeśli potrzebujesz bazy głównej do korzystania z nowoczesnego uwierzytelniania w środowisku serwera.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 <a name="BKMK_URLListforMA"> </a>
 
-- [Jak skonfigurować Exchange Server w celu używania nowoczesnego uwierzytelniania](configure-exchange-server-for-hybrid-modern-authentication.md)
-- [Skype dla firm topologii obsługiwane przez nowoczesne uwierzytelnianie](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
-- [Jak skonfigurować Skype dla firm lokalnej do używania nowoczesnego uwierzytelniania](configure-skype-for-business-for-hybrid-modern-authentication.md)
-- [Usuwanie lub wyłączanie nowoczesnego uwierzytelniania hybrydowego Skype dla firm i Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
+- [Jak skonfigurować Exchange Server lokalnie do korzystania z nowoczesnego uwierzytelniania](configure-exchange-server-for-hybrid-modern-authentication.md)
+- [topologie Skype dla firm obsługiwane przy użyciu nowoczesnego uwierzytelniania](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
+- [Jak skonfigurować Skype dla firm lokalnie do korzystania z nowoczesnego uwierzytelniania](configure-skype-for-business-for-hybrid-modern-authentication.md)
+- [Usuwanie lub wyłączanie nowoczesnego uwierzytelniania hybrydowego z Skype dla firm i Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)

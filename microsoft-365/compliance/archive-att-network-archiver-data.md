@@ -2,8 +2,8 @@
 title: Konfigurowanie łącznika do archiwizowania danych sieciowych usługi AT&T SMS/MMS
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik TeleMessage w celu importowania i archiwizowania danych programu SMS i MMS z usługi AT&T Mobile Network. Dzięki temu można archiwizować dane ze źródeł danych innych firm w usłudze Microsoft Purview, aby można było zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 87b933117fae134572ccf4a152a83ec4165b1caf
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 7d73e6a5e5a5190609cd50bd055af8b7aec969b7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992771"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093180"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Konfigurowanie łącznika do archiwizowania danych usługi AT&T SMS/MMS
 

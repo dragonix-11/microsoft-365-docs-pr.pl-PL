@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Znajdź, przetestuj i wdróż aplikacje partnerskie firmy Microsoft i firmy Microsoft dla użytkowników i grup w organizacji w portalu Zintegrowane aplikacje w Centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 2baf6aea136736b1239df9a4da7b7e6a5b456ea6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 491315b36a7698399bcd22c60173db8cec482148
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782396"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094665"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Testowanie i wdrażanie Aplikacje Microsoft 365 przez partnerów w portalu zintegrowanych aplikacji
 
@@ -34,7 +34,7 @@ Portal Aplikacje zintegrowane jest dostępny tylko dla administratorów globalny
 W portalu Aplikacje zintegrowane jest wyświetlana lista aplikacji, która obejmuje pojedyncze aplikacje i aplikacje Microsoft 365 od partnerów wdrożonych w organizacji. Wyświetlane są tylko aplikacje internetowe, aplikacje SPFx, dodatki Office i aplikacje Teams. W przypadku aplikacji internetowych można wyświetlić dwa rodzaje aplikacji.
 
 - Aplikacje SaaS, które są dostępne w appsource.microsoft.com i mogą być wdrażane przez administratorów udzielających zgody w imieniu organizacji.
-- Aplikacje galerii SAML połączone z dodatkami pakietu Office.
+- Aplikacje galerii SAML połączone z dodatkami Office.
 
 ## <a name="manage-apps-in-the-integrated-apps-portal"></a>Zarządzanie aplikacjami w portalu zintegrowanych aplikacji
 
@@ -107,7 +107,7 @@ Nie będzie można wdrożyć aplikacji z jednego sklepu ani Aplikacje Microsoft 
 
 ## <a name="prepare-to-deploy-add-ins-in-integrated-apps"></a>Przygotowywanie do wdrażania dodatków w zintegrowanych aplikacjach
 
-Dodatki pakietu Office ułatwiają personalizowanie dokumentów i usprawniają uzyskiwanie dostępu do informacji w sieci Web (zobacz Rozpoczynanie korzystania z dodatków pakietu Office). 
+Office dodatki ułatwiają personalizację dokumentów i usprawniają sposób uzyskiwania dostępu do informacji w Internecie (zobacz Rozpoczynanie korzystania z dodatku Office). 
 
 Dodatki zapewniają następujące korzyści: 
 
@@ -179,7 +179,7 @@ Można także przeprowadzić wyszukiwanie odwrotnie, sprawdzając, czy dana grup
 
 Pamiętaj, że możesz użyć Azure Active Directory interfejs Graph API do uruchamiania zapytań w celu znalezienia listy grup w grupie. Aby uzyskać więcej informacji, zobacz [Operacje na grupach | Materiały referencyjne interfejsu API Graph](/previous-versions/azure/ad/graph/api/groups-operations). 
 
-## <a name="recommended-approach-for-deploying-office-add-ins"></a>Zalecana metoda wdrażania dodatków pakietu Office 
+## <a name="recommended-approach-for-deploying-office-add-ins"></a>Zalecane podejście do wdrażania dodatków Office 
 Aby wdrożyć dodatki przy użyciu podejścia etapowego, zalecamy następujące czynności: 
 1. Wprowadź dodatek dla niewielkiego zestawu osób biorących udział w projekcie biznesowym i członków działu IT. Możesz włączyć flagę **Czy jest to wdrożenie testowe**. Jeśli wdrożenie zakończy się pomyślnie, przejdź do kroku 2. 
 
@@ -225,12 +225,12 @@ Administratorzy globalni i administratorzy Exchange mogą przypisywać dodatek w
 Właściwa opcja dla organizacji zależy od konfiguracji. Zalecamy jednak wykonywanie przypisań przy użyciu grup. Jako administrator możesz łatwiej zarządzać dodatkami przy użyciu grup i kontrolować członkostwo w tych grupach, zamiast przypisywać poszczególnych użytkowników za każdym razem. W niektórych sytuacjach możesz chcieć ograniczyć dostęp do niewielkiego zestawu użytkowników, wykonując przypisania do określonych użytkowników, przypisując użytkowników ręcznie. 
 
 ### <a name="more-about-office-add-ins-security"></a>Więcej informacji o zabezpieczeniach dodatków Office 
-Dodatki pakietu Office zawierają plik manifestu w formacie XML, w którym znajdują się pewne metadane dotyczące dodatku oraz, co najważniejsze, który wskazuje aplikację internetową zawierającą cały kod i logikę. Dodatki mogą mieć różnorodne możliwości. Na przykład dodatki mogą:
+Office dodatki łączą plik manifestu XML, który zawiera pewne metadane dotyczące dodatku, ale co najważniejsze wskazuje na aplikację internetową, która zawiera cały kod i logikę. Dodatki mogą mieć różnorodne możliwości. Na przykład dodatki mogą:
 - wyświetlać dane, 
 - odczytywać dokument użytkownika w celu dostarczenia usług kontekstowych, 
 - odczytywać i zapisywać dane w dokumencie użytkownika w celu podania wartości dla tego użytkownika.  
 
-Aby uzyskać więcej informacji na temat typów dodatków pakietu Office i ich funkcji, zobacz [Omówienie platformy dodatków pakietu Office](/office/dev/add-ins/overview/office-add-ins)  zwłaszcza sekcję „Anatomia dodatku pakietu Office". 
+Aby uzyskać więcej informacji na temat typów i możliwości dodatków Office, zobacz [omówienie platformy dodatków Office](/office/dev/add-ins/overview/office-add-ins), zwłaszcza sekcję "Anatomia dodatku Office". 
 
 Aby współdziałać z dokumentem użytkownika, dodatek musi zadeklarować, jakich uprawnień potrzebuje, w pliku manifestu. Pięciopoziomowy model uprawnień dostępu interfejsu API języka JavaScript stanowi podstawę dla prywatności i zabezpieczeń dla użytkowników dodatków okienek zadań. Większość dodatków w witrynie Sklep Office obsługuje poziom odczytu i zapisu dokumentu, a niemal wszystkie dodatki obsługują co najmniej poziom odczytu dokumentu. Aby uzyskać więcej informacji o poziomach uprawnień, zobacz [Żądanie poświadczeń na potrzeby używania interfejsu API w dodatkach zawartości i okienek zadań](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
 
