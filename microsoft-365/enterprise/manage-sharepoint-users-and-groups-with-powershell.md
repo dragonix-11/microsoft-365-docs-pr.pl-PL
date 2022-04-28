@@ -1,8 +1,8 @@
 ---
-title: Zarządzanie użytkownikami SharePoint Online i grupami za pomocą programu PowerShell
+title: Zarządzanie użytkownikami i grupami usługi SharePoint Online przy użyciu programu PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: landing-page
@@ -19,27 +19,27 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: Z tego artykułu dowiesz się, jak za pomocą programu PowerShell dla Microsoft 365 zarządzać SharePoint użytkownikami, grupami i witrynami online.
-ms.openlocfilehash: e2166753b1be56c19011a1fc7e20d1584a5d3004
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: W tym artykule dowiesz się, jak używać programu PowerShell do Microsoft 365 do zarządzania użytkownikami, grupami i witrynami usługi SharePoint Online.
+ms.openlocfilehash: 78c829e476c63e435d9543b3a4175cdbbccb76e8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681199"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100682"
 ---
-# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Zarządzanie użytkownikami SharePoint Online i grupami za pomocą programu PowerShell
+# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Zarządzanie użytkownikami i grupami usługi SharePoint Online przy użyciu programu PowerShell
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Jeśli jesteś administratorem usługi SharePoint Online, który pracuje z dużymi listami kont lub grup użytkowników i chce łatwiej zarządzać nimi, możesz użyć programu PowerShell dla systemu Microsoft 365.
+Jeśli jesteś administratorem usługi SharePoint Online, który współpracuje z dużymi listami kont użytkowników lub grup i chce łatwiej nimi zarządzać, możesz użyć programu PowerShell do Microsoft 365.
 
-Przed rozpoczęciem procedury w tym artykule wymagają nawiązania połączenia z usługą SharePoint Online. Aby uzyskać instrukcje, [Połączenie do SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Przed rozpoczęciem procedury opisane w tym artykule wymagają nawiązania połączenia z usługą SharePoint Online. Aby uzyskać instrukcje, zobacz [Połączenie to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
-## <a name="get-a-list-of-sites-groups-and-users"></a>Uzyskiwanie listy witryn, grup i użytkowników
+## <a name="get-a-list-of-sites-groups-and-users"></a>Pobieranie listy witryn, grup i użytkowników
 
-Zanim zaczniemy zarządzać użytkownikami i grupami, musisz uzyskać listy twoich witryn, grup i użytkowników. Następnie możesz użyć tych informacji do pracy z przykładem w tym artykule.
+Zanim zaczniemy zarządzać użytkownikami i grupami, musisz uzyskać listy witryn, grup i użytkowników. Następnie możesz użyć tych informacji, aby zapoznać się z przykładem w tym artykule.
 
-Uzyskaj listę witryn w dzierżawie za pomocą tego polecenia:
+Pobierz listę witryn w dzierżawie za pomocą tego polecenia:
 
 ```powershell
 Get-SPOSite
@@ -59,7 +59,7 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>Dodawanie użytkownika do grupy Administratorzy zbioru witryn
 
-Polecenie cmdlet `Set-SPOUser` umożliwia dodanie użytkownika do listy administratorów zbioru witryn w zbiorze witryn.
+Polecenie cmdlet służy `Set-SPOUser` do dodawania użytkownika do listy administratorów zbioru witryn w zbiorze witryn.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -68,9 +68,9 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-Aby użyć tych poleceń, zamień wszystkie cudzysłowy, w tym znaki < i >, na poprawne nazwy.
+Aby użyć tych poleceń, zastąp wszystkie elementy w cudzysłowie, w tym znaki < i >, prawidłowymi nazwami.
 
-Na przykład za pomocą tego zestawu poleceń do listy administratorów zbioru witryn w zbiorze witryn ContosoTest w dzierżawie Contoso jest dodano nazwę użytkownika Contoso:
+Na przykład ten zestaw poleceń dodaje opal Castillo (nazwa użytkownika opalc) do listy administratorów zbioru witryn w zbiorze witryn ContosoTest w dzierżawie firmy Contoso:
 
 ```powershell
 $tenant = "contoso"
@@ -79,9 +79,9 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
-Te polecenia można skopiować i wkleić do programu Notatnik, zmienić wartości zmiennych dla systemów $tenant, $site i $user na rzeczywiste wartości ze środowiska, a następnie wkleić je do okna powłoki zarządzania usługi SharePoint Online, aby je uruchomić.
+Możesz skopiować i wkleić te polecenia do Notatnik, zmienić wartości zmiennych dla $tenant, $site i $user na rzeczywiste wartości ze środowiska, a następnie wkleić je w oknie powłoki zarządzania usługi SharePoint Online, aby je uruchomić.
 
-## <a name="add-a-user-to-other-site-collection-groups"></a>Dodawanie użytkownika do innych grup zbioru witryn
+## <a name="add-a-user-to-other-site-collection-groups"></a>Dodawanie użytkownika do innych grup zbiorów witryn
 
 W tym zadaniu użyjemy `Add-SPOUser` polecenia cmdlet, aby dodać użytkownika do grupy SharePoint w zbiorze witryn.
 
@@ -94,7 +94,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ```
 
-Na przykład dodajmy Glen Rife (user name glenr) do grupy Audytorzy w zbiorze witryn ContosoTest w dzierżawie contoso:
+Na przykład dodajmy Glen Rife (nazwa użytkownika glenr) do grupy Audytorzy w zbiorze witryn ContosoTest w dzierżawie contoso:
 
 ```powershell
 $tenant = "contoso"
@@ -106,7 +106,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ## <a name="create-a-site-collection-group"></a>Tworzenie grupy zbioru witryn
 
-Polecenie cmdlet `New-SPOSiteGroup` umożliwia utworzenie nowej grupy SharePoint i dodanie jej do zbioru witryn.
+Polecenie cmdlet służy `New-SPOSiteGroup` do tworzenia nowej grupy SharePoint i dodawania jej do zbioru witryn.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -116,9 +116,9 @@ $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
-Właściwości grupy, takie jak poziomy uprawnień, można później zaktualizować przy użyciu polecenia `Set-SPOSiteGroup` cmdlet.
+Właściwości grupy, takie jak poziomy uprawnień, można później zaktualizować przy użyciu `Set-SPOSiteGroup` polecenia cmdlet.
 
-Na przykład dodajmy grupę Audytorzy z uprawnieniami Tylko wyświetlanie do zbioru witryn contosotest w dzierżawie firmy Contoso:
+Na przykład dodajmy grupę Audytorzy z uprawnieniami Tylko widok do zbioru witryn contosotest w dzierżawie contoso:
 
 ```powershell
 $tenant = "contoso"
@@ -130,11 +130,11 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 ## <a name="remove-users-from-a-group"></a>Usuwanie użytkowników z grupy
 
-Czasami trzeba usunąć użytkownika z witryny, a nawet wszystkich witryn. Być może pracownik przechodzi z jednego dzielenia do drugiego lub opuszcza firmę. W interfejsie użytkownika można to zrobić z łatwością dla jednego pracownika, ale nie da się tego łatwo zrobić, gdy trzeba przenieść pełne podziały z jednej witryny do drugiej.
+Czasami trzeba usunąć użytkownika z witryny, a nawet wszystkich witryn. Być może pracownik przenosi się z jednego działu do drugiego lub opuszcza firmę. Możesz to zrobić dla jednego pracownika łatwo w interfejsie użytkownika, ale nie jest to łatwe, gdy trzeba przenieść pełny podział z jednej witryny do innej.
 
-Za pomocą powłoki zarządzania SharePoint online i plików CSV jest to jednak szybkie i łatwe. W tym zadaniu za pomocą funkcji Windows PowerShell usunąć użytkownika z grupy zabezpieczeń zbioru witryn. Następnie użyjesz pliku CSV i usuniesz wielu użytkowników z różnych witryn.
+Jednak przy użyciu SharePoint plików powłoki zarządzania online i plików CSV jest to szybkie i łatwe. W tym zadaniu użyjesz Windows PowerShell, aby usunąć użytkownika z grupy zabezpieczeń zbioru witryn. Następnie użyjesz pliku CSV i usuniesz wielu użytkowników z różnych witryn.
 
-Będziemy używać polecenia cmdlet "Remove-SPOUser" do usunięcia pojedynczego Microsoft 365 z grupy zbioru witryn w celu zobaczenia składni poleceń. Składnia wygląda następująco:
+Użyjemy polecenia cmdlet "Remove-SPOUser", aby usunąć pojedynczego użytkownika Microsoft 365 z grupy zbioru witryn, aby zobaczyć składnię polecenia. Oto jak wygląda składnia:
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -144,7 +144,7 @@ $group = "<group name name, such as Auditors>"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
 
-Na przykład usuńmy wojciecha Overby z grupy audytorów zbioru witryn Contosotest w dzierżawie firmy Contoso:
+Na przykład usuńmy Bobby'ego Overby'ego z grupy Audytorzy zbioru witryn w zbiorze witryn contosotest w dzierżawie contoso:
 
 ```powershell
 $tenant = "contoso"
@@ -154,7 +154,7 @@ $group = "Auditors"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
 
-Załóżmy, że chcemy usunąć Wojciecha ze wszystkich grup, w których obecnie się znajduje. Oto jak możemy to zrobić:
+Załóżmy, że chcieliśmy usunąć Bobby'ego ze wszystkich grup, w których obecnie się znajduje. Oto jak to zrobić:
 
 ```powershell
 $tenant = "contoso"
@@ -163,19 +163,19 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 ```
 
 > [!WARNING]
-> To tylko przykład. Nie należy uruchamiać tego polecenia, chyba że naprawdę trzeba usunąć użytkownika ze wszystkich grup, na przykład gdy użytkownik odejdzie z firmy.
+> To tylko przykład. Nie należy uruchamiać tego polecenia, chyba że naprawdę trzeba usunąć użytkownika z każdej grupy, na przykład jeśli użytkownik opuści firmę.
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>Automatyzowanie zarządzania dużymi listami użytkowników i grup
 
-Aby dodać dużą liczbę kont do witryn SharePoint i nadać im uprawnienia, możesz użyć poleceń programu centrum administracyjne platformy Microsoft 365, poszczególnych poleceń programu PowerShell lub programu PowerShell i pliku CSV. Z tych opcji najszybszym sposobem na zautomatyzowanie tego zadania jest plik CSV.
+Aby dodać dużą liczbę kont do SharePoint lokacji i nadać im uprawnienia, możesz użyć Centrum administracyjne platformy Microsoft 365, poszczególnych poleceń programu PowerShell lub programu PowerShell i pliku CSV. Spośród tych opcji plik CSV jest najszybszym sposobem automatyzacji tego zadania.
 
-Podstawowym procesem jest utworzenie pliku CSV, który zawiera nagłówki (kolumny) odpowiadające parametrom, których skrypt Windows PowerShell potrzebuje. Możesz łatwo utworzyć taką listę w programie Excel a następnie wyeksportować ją jako plik CSV. Następnie możesz użyć skryptu Windows PowerShell iterować rekordy (wiersze) w pliku CSV, dodając użytkowników do grup i grup do witryn.
+Podstawowym procesem jest utworzenie pliku CSV zawierającego nagłówki (kolumny) odpowiadające parametrom, których potrzebuje skrypt Windows PowerShell. Możesz łatwo utworzyć taką listę w Excel, a następnie wyeksportować ją jako plik CSV. Następnie użyjesz skryptu Windows PowerShell, aby iterować rekordy (wiersze) w pliku CSV, dodając użytkowników do grup i grup do witryn.
 
-Na przykład utworzymy plik CSV definiujący grupę zbiorów witryn, grup i uprawnień. Następnie utworzymy plik CSV, aby wypełnić grupy użytkownikami. Na koniec utworzymy i uruchamiamy skrypt Windows PowerShell, który tworzy i wypełnia grupy.
+Na przykład utwórzmy plik CSV, aby zdefiniować grupę zbiorów witryn, grup i uprawnień. Następnie utworzymy plik CSV, aby wypełnić grupy użytkownikami. Na koniec utworzymy i uruchomimy skrypt Windows PowerShell, który tworzy i wypełnia grupy.
 
-Pierwszy plik CSV spowoduje dodanie co najmniej jednej grupy do jednego lub większej liczby zbiorów witryn i będzie mieć tę strukturę:
+Pierwszy plik CSV doda co najmniej jedną grupę do co najmniej jednego zbioru witryn i będzie miał następującą strukturę:
 
-Nagłówek:
+Nagłówka:
 
 ```powershell
 Site,Group,PermissionLevels
@@ -201,9 +201,9 @@ https://contoso.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://contoso.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
 
-Drugi plik CSV spowoduje dodanie jednego lub większej liczby użytkowników do jednej lub większej liczby grup i będzie mieć tę strukturę:
+Drugi plik CSV doda co najmniej jednego użytkownika do co najmniej jednej grupy i będzie miał następującą strukturę:
 
-Nagłówek:
+Nagłówka:
 
 ```powershell
 Group,LoginName,Site
@@ -229,16 +229,16 @@ Contoso Blog Editors,opalc@contoso.com,https://contoso.sharepoint.com/sites/Blog
 Project Alpha Approvers,robinc@contoso.com,https://contoso.sharepoint.com/sites/Project01
 ```
 
-W następnym kroku należy zapisać na dysku dwa pliki CSV. Oto przykładowe polecenia, które używają zarówno plików CSV, jak i do dodawania uprawnień i członkostwa w grupach:
+W następnym kroku na dysku muszą być zapisane dwa pliki CSV. Oto przykładowe polecenia, które używają zarówno plików CSV, jak i do dodawania uprawnień i członkostwa w grupie:
 
 ```powershell
 Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
 
-Skrypt zaim importuje zawartość pliku CSV i używa wartości w kolumnach do wypełnienia parametrów poleceń **New-SPOSiteGroup** i **Add-SPOUser** . W naszym przykładzie zapisujemy ten plik w folderze O365Admin na dysku C, ale możesz go zapisać w dowolnym miejscu.
+Skrypt importuje zawartość pliku CSV i używa wartości w kolumnach, aby wypełnić parametry poleceń **New-SPOSiteGroup** i **Add-SPOUser** . W naszym przykładzie zapisujemy ten plik w folderze O365Admin na dysku C, ale można go zapisać w dowolnym miejscu.
 
-Teraz przy użyciu tego samego pliku CSV usuńmy wiele osób z kilku grup w różnych witrynach. Oto przykładowe polecenie:
+Teraz usuńmy grupę osób dla kilku grup w różnych witrynach przy użyciu tego samego pliku CSV. Oto przykładowe polecenie:
 
 ```powershell
 Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
@@ -246,7 +246,7 @@ Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginN
 
 ## <a name="generate-user-reports"></a>Generowanie raportów użytkowników
 
-Możesz uzyskać raport dla kilku witryn i wyświetlić użytkowników tych witryn, ich poziom uprawnień i inne właściwości. Składnia wygląda następująco:
+Możesz pobrać raport dla kilku witryn i wyświetlić użytkowników dla tych witryn, ich poziomu uprawnień i innych właściwości. Tak wygląda składnia:
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -254,9 +254,9 @@ $site = "<site name>"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format-table -Wrap -AutoSize | Out-File c\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Spowoduje to pobrać dane z tych trzech witryn i zapisać je w pliku tekstowym na dysku lokalnym. Parametr —Dołącz spowoduje dodanie nowej zawartości do istniejącego pliku.
+Spowoduje to przechwycenie danych dla tych trzech witryn i zapisanie ich w pliku tekstowym na dysku lokalnym. Parametr — dołączanie spowoduje dodanie nowej zawartości do istniejącego pliku.
 
-Na przykład uruchommy raport w witrynach Test Contoso, TeamSite01 i Project01 dzierżawy Contoso1:
+Na przykład uruchomimy raport w witrynach ContosoTest, TeamSite01 i Project01 dla dzierżawy contoso1:
 
 ```powershell
 $tenant = "contoso"
@@ -268,22 +268,22 @@ $site = "Project01"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Musieliśmy zmienić tylko **zmienną $site** . **Zmienna $tenant** zachowuje wartość za pośrednictwem wszystkich trzech uruchamianych poleceń.
+Musieliśmy zmienić tylko **zmienną $site** . Zmienna **$tenant** zachowuje swoją wartość przez wszystkie trzy uruchomienia polecenia.
 
-Co jednak zrobić w przypadku każdej witryny? Możesz to zrobić bez konieczności wpisywania wszystkich tych witryn internetowych, używając tego polecenia:
+Co jednak zrobić, jeśli chcesz to zrobić dla każdej witryny? Można to zrobić bez konieczności wpisywania wszystkich tych witryn internetowych za pomocą następującego polecenia:
 
 ```powershell
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Ten raport jest dość prosty i można dodać kod, aby utworzyć bardziej szczegółowe raporty lub raporty, które zawierają bardziej szczegółowe informacje. Jednak to powinno dać Ci pomysł, jak zarządzać użytkownikami w środowisku usługi SharePoint Online SharePoint Przy użyciu powłoki zarządzania online.
+Ten raport jest dość prosty i można dodać więcej kodu w celu utworzenia bardziej szczegółowych raportów lub raportów zawierających bardziej szczegółowe informacje. Powinno to jednak dać wyobrażenie o tym, jak używać powłoki zarządzania SharePoint Online do zarządzania użytkownikami w środowisku SharePoint Online.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Połączenie do SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+[Połączenie do programu PowerShell SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
-[Zarządzanie usługą SharePoint Online za pomocą programu PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Zarządzanie SharePoint Online przy użyciu programu PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Zarządzanie Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Zarządzanie platformą Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
 
 [Wprowadzenie do programu PowerShell dla Microsoft 365](getting-started-with-microsoft-365-powershell.md)

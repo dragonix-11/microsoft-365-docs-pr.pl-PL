@@ -1,8 +1,8 @@
 ---
-title: Office 365 adresu IP i usługi sieci Web adresu URL
+title: Office 365 usługi sieci Web adresów IP i adresów URL
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
@@ -22,75 +22,75 @@ search.appverid:
 - MET150
 - MOE150
 - BCS160
-description: Dowiedz się, jak używać usługi sieci web Office 365 IP i adresu URL, aby ułatwić identyfikowanie i Office 365 ruchu sieciowego.
-ms.openlocfilehash: e4976bafbedc8f5289e2992569bbd5de28e9de75
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+description: Dowiedz się, jak używać usługi internetowej Office 365 adresów IP i adresów URL, aby lepiej identyfikować i rozróżniać ruch sieciowy Office 365.
+ms.openlocfilehash: b13377c6230c869231b7cecda8375f663cbcd33b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494488"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100638"
 ---
-# <a name="office-365-ip-address-and-url-web-service"></a>Office 365 adresu IP i usługi sieci Web adresu URL
+# <a name="office-365-ip-address-and-url-web-service"></a>Office 365 usługi sieci Web adresów IP i adresów URL
 
-Usługa Office 365 i adres IP sieci Web ułatwiają identyfikowanie i rozróżnianie ruchu sieciowego w usłudze Office 365, co ułatwia ocenę, skonfigurowanie i pozostawanie na bieżąco ze zmianami. Ta usługa sieci Web oparta na usłudze REST zastępuje poprzednie pliki XML, które zostały wycofane w dniu 2 października 2018 r.
+Usługa internetowa adresów IP i adresów URL Office 365 pomaga lepiej identyfikować i rozróżniać ruch sieciowy Office 365, ułatwiając ocenę, konfigurowanie i aktualizowanie zmian. Ta oparta na protokole REST usługa internetowa zastępuje poprzednie pliki do pobrania XML, które zostały wycofane 2 października 2018 r.
 
-Jako klient lub dostawca urządzenia sieci obwodowej, możesz tworzyć rozwiązania z usługą sieci Web pod Office 365 adresów IP i domen FQDN. Dostęp do danych można uzyskać bezpośrednio w przeglądarce internetowej, korzystając z tych adresów URL:
+Jako klient lub dostawca urządzeń obwodowych sieci można utworzyć względem usługi internetowej, aby Office 365 adres IP i wpisy FQDN. Dostęp do danych można uzyskać bezpośrednio w przeglądarce internetowej przy użyciu następujących adresów URL:
 
-- Aby uzyskać najnowszą wersję Office 365 URL i zakresów adresów IP, użyj .[https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
-- Aby uzyskać dane na stronie Office 365 URL i zakresów adresów IP dla zapór i serwerów proxy, użyj wartości [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
-- Aby uzyskać wszystkie najnowsze zmiany od lipca 2018 r., gdy usługa sieci Web była dostępna po raz pierwszy, użyj .[https://endpoints.office.com/changes/worldwide/0000000000](https://endpoints.office.com/changes/worldwide/0000000000?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+- Aby uzyskać najnowszą wersję adresów URL Office 365 i zakresów adresów IP, użyj polecenia [https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
+- W przypadku danych na stronie adresów URL Office 365 i zakresów adresów IP dla zapór i serwerów proxy użyj polecenia [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
+- Aby uzyskać wszystkie najnowsze zmiany od lipca 2018 r., kiedy usługa internetowa była po raz pierwszy dostępna, użyj polecenia [https://endpoints.office.com/changes/worldwide/0000000000](https://endpoints.office.com/changes/worldwide/0000000000?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 
-Jako klient, możesz korzystać z tej usługi sieci Web w celu:
+Jako klient możesz użyć tej usługi internetowej, aby:
 
-- Zaktualizuj skrypty programu PowerShell, Office 365 dane punktów końcowych i zmodyfikuj wszelkie formatowanie urządzeń sieciowych.
-- Skorzystaj z tych informacji, aby zaktualizować pliki PAC wdrożone na komputerach klienckich.
+- Zaktualizuj skrypty programu PowerShell, aby uzyskać Office 365 danych punktu końcowego i zmodyfikować dowolne formatowanie dla urządzeń sieciowych.
+- Te informacje umożliwiają zaktualizowanie plików PAC wdrożonych na komputerach klienckich.
 
-Jako dostawca urządzenia sieci obwodowej, możesz korzystać z tej usługi sieci Web w celu:
+Jako dostawca urządzeń obwodowych sieci można użyć tej usługi internetowej do:
 
-- Utwórz i przetestuj oprogramowanie urządzenia, aby pobrać listę do automatycznej konfiguracji.
-- Sprawdź, czy jest dostępna bieżąca wersja.
+- Utwórz i przetestuj oprogramowanie urządzenia, aby pobrać listę na potrzeby zautomatyzowanej konfiguracji.
+- Sprawdź bieżącą wersję.
 - Pobierz bieżące zmiany.
 
 > [!NOTE]
-> Jeśli łączysz się z usługą Office 365 za pomocą usługi Azure ExpressRoute, zapoznaj się z usługą [Azure ExpressRoute](azure-expressroute.md) dla usługi Office 365, aby zapoznać się z usługami Office 365 obsługiwanymi przez usługę Azure ExpressRoute. Zapoznaj się również z [artykułem Office 365 url i](urls-and-ip-address-ranges.md) zakresów adresów IP, aby dowiedzieć się, które żądania sieciowe dla Office 365 wymagają łączności z Internetem. Pomoże to lepiej skonfigurować urządzenia zabezpieczeń obwodu.
+> Jeśli używasz usługi Azure ExpressRoute do nawiązywania połączenia z Office 365, przejrzyj usługę [Azure ExpressRoute, aby uzyskać Office 365](azure-expressroute.md), aby zapoznać się z usługami Office 365 obsługiwanymi przez usługę Azure ExpressRoute. Zapoznaj się również z artykułem [Office 365 adresów URL i zakresów adresów IP](urls-and-ip-address-ranges.md), aby dowiedzieć się, które żądania sieciowe dla aplikacji Office 365 wymagają łączności z Internetem. Pomoże to lepiej skonfigurować urządzenia zabezpieczeń obwodowych.
 
 Więcej informacji można znaleźć w następujących artykułach:
 
-- [Wpis w blogu z ogłoszeniem na forum Office 365 tech Community](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
-- [Office 365 tech Community na pytania dotyczące korzystania z usług sieci Web](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
+- [Wpis w blogu z ogłoszeniem na forum Office 365 Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
+- [Office 365 Tech Community Forum dotyczące pytań dotyczących korzystania z usług internetowych](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
 
 ## <a name="common-parameters"></a>Typowe parametry
 
-Te parametry są wspólne we wszystkich metodach usługi sieci Web:
+Te parametry są typowe we wszystkich metodach usługi internetowej:
 
-- **format=\<JSON \| CSV\>** — Domyślnie format zwracanych danych to JSON. Użyj tego parametru opcjonalnego, aby zwrócić dane w formacie wartości rozdzielanych przecinkami (CSV).
-- **ClientRequestId=\<guid\>** — Wymagany identyfikator GUID generowany dla skojarzenia klienta. Wygeneruj unikatowy identyfikator GUID dla każdego komputera, który wywołuje usługę sieci Web (skrypty zawarte na tej stronie generują identyfikator GUID). Nie używaj identyfikatorów GUID pokazanych w poniższych przykładach, ponieważ mogą zostać zablokowane przez usługę sieci Web w przyszłości. Format identyfikatora GUID to _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, gdzie x reprezentuje liczbę szesnastkową.
+- **format=\<JSON \| CSV\>** — Domyślnie zwracany format danych to JSON. Użyj tego opcjonalnego parametru, aby zwrócić dane w formacie wartości rozdzielanych przecinkami (CSV).
+- **ClientRequestId=\<guid\>** — wymagany identyfikator GUID generowany na potrzeby skojarzenia klienta. Wygeneruj unikatowy identyfikator GUID dla każdej maszyny, która wywołuje usługę internetową (skrypty zawarte na tej stronie generują identyfikator GUID). Nie używaj identyfikatorów GUID przedstawionych w poniższych przykładach, ponieważ mogą one zostać zablokowane przez usługę internetową w przyszłości. Format guid to _xxxxxxxx-xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, gdzie x reprezentuje numer szesnastkowy.
 
-  Aby wygenerować identyfikator GUID, można użyć polecenia [programu PowerShell New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) lub usługi online, takiej jak [generator identyfikatorów GUID w trybie online](https://www.guidgenerator.com/).
+  Aby wygenerować identyfikator GUID, możesz użyć polecenia [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) programu PowerShell lub użyć usługi online, takiej jak [generator identyfikatorów GUID online](https://www.guidgenerator.com/).
 
-## <a name="version-web-method"></a>Metoda sieci Web Version (Wersja)
+## <a name="version-web-method"></a>Metoda internetowa wersji
 
-Firma Microsoft aktualizuje Office 365 adres IP i pozycje FQDN na początku każdego miesiąca. Aktualizacje pozapasmowe są czasami publikowane ze względu na zdarzenia związane z obsługą, aktualizacje zabezpieczeń lub inne wymagania operacyjne.
+Firma Microsoft aktualizuje Office 365 adres IP i wpisy nazwY FQDN na początku każdego miesiąca. Aktualizacje poza pasmem są czasami publikowane z powodu zdarzeń pomocy technicznej, aktualizacji zabezpieczeń lub innych wymagań operacyjnych.
 
-Do danych dla każdego opublikowanego wystąpienia jest przypisany numer wersji, a metoda sieci Web Version (Wersja) umożliwia sprawdzenie, czy jest dostępna najnowsza wersja każdego Office 365 wystąpienia usługi. Zalecamy sprawdzenie wersji nie więcej niż raz na godzinę.
+Dane dla każdego opublikowanego wystąpienia mają przypisany numer wersji, a metoda internetowa wersji umożliwia sprawdzenie najnowszej wersji każdego wystąpienia usługi Office 365. Zalecamy sprawdzenie wersji nie więcej niż raz na godzinę.
 
-Parametry metody sieci Web Version (Wersja) to:
+Parametry dla metody internetowej wersji to:
 
-- **AllVersions=\<true \| false\>** — Domyślnie jest zwracana najnowsza wersja. Dołącz ten parametr opcjonalny, aby zażądać wszystkich opublikowanych wersji od czasu pierwszej publikacji usługi sieci Web.
-- **Format=\<JSON \| CSV \| RSS\>** — Oprócz formatów JSON i CSV metoda sieci Web version (Wersja) obsługuje również funkcję RSS. Możesz użyć tego parametru opcjonalnego wraz z parametrem _AllVersions=true_, aby zażądać kanału informacyjnego RSS, który może być używany z Outlook innymi czytnikami RSS.
-- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** — Ten parametr opcjonalny określa wystąpienie, dla których ma być zwracana wersja. W razie pominięcia zostaną zwrócone wszystkie wystąpienia. Prawidłowe wystąpienia to: Worldwide, China, USGovDoD, USGovGCCHigh.
+- **AllVersions=\<true \| false\>** — Domyślnie zwrócona wersja jest najnowsza. Dołącz ten opcjonalny parametr, aby zażądać wszystkich opublikowanych wersji od czasu pierwszego wydania usługi internetowej.
+- **Format=\<JSON \| CSV \| RSS\>** — Oprócz formatów JSON i CSV metoda internetowa wersji obsługuje również usługę RSS. Możesz użyć tego opcjonalnego parametru wraz z parametrem _AllVersions=true_, aby zażądać kanału informacyjnego RSS, który może być używany z Outlook lub innymi czytnikami RSS.
+- **Wystąpienie=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** — Ten opcjonalny parametr określa wystąpienie, dla które ma zostać zwrócona wersja. Jeśli zostaną pominięte, zostaną zwrócone wszystkie wystąpienia. Prawidłowe wystąpienia to: Worldwide, China, USGovDoD, USGovGCCHigh.
 
-Metoda sieci Web Version (Wersja) nie jest ograniczona i nie zwraca 429 kodów odpowiedzi HTTP. Odpowiedź na metodę sieci Web Version (Wersja) zawiera nagłówek kontrolki pamięci podręcznej polecający buforowanie danych na 1 godzinę. Wynikiem metody sieci Web Version (Wersja) może być pojedynczy rekord lub tablica rekordów. Elementy każdego rekordu to:
+Metoda sieci Web w wersji nie jest ograniczona szybkością i nigdy nie zwraca kodów odpowiedzi HTTP 429. Odpowiedź na wersję metody internetowej zawiera nagłówek cache-control zalecający buforowanie danych przez 1 godzinę. Wynikiem metody internetowej wersji może być pojedynczy rekord lub tablica rekordów. Elementy każdego rekordu to:
 
-- instance — krótka nazwa wystąpienia Office 365 usługi.
+- instance — krótka nazwa wystąpienia usługi Office 365.
 - latest — najnowsza wersja dla punktów końcowych określonego wystąpienia.
-- versions — lista wszystkich poprzednich wersji dla określonego wystąpienia. Ten element jest uwzględniany tylko w przypadku, gdy parametr _AllVersions_ jest prawdziwy.
+- versions — lista wszystkich poprzednich wersji dla określonego wystąpienia. Ten element jest uwzględniany tylko wtedy, gdy parametr _AllVersions_ ma wartość true.
 
-### <a name="version-web-method-examples"></a>Przykłady metody sieci Web Version (Wersja)
+### <a name="version-web-method-examples"></a>Przykłady metod internetowych wersji
 
-Przykład 1. <https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Przykład 1 identyfikator URI żądania: <https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Ten URI zwraca najnowszą wersję każdego wystąpienia Office 365 usługi. Przykład wyniku:
+Ten identyfikator URI zwraca najnowszą wersję każdego wystąpienia usługi Office 365. Przykładowy wynik:
 
 ```json
 [
@@ -114,11 +114,11 @@ Ten URI zwraca najnowszą wersję każdego wystąpienia Office 365 usługi. Przy
 ```
 
 > [!IMPORTANT]
-> Identyfikator GUID parametru ClientRequestID w tych identyfikatorach  URI to tylko przykład. Aby wypróbować identyfikatory  URI usługi sieci Web, wygeneruj własny identyfikator GUID. Identyfikatory GUID pokazane w tych przykładach mogą zostać w przyszłości zablokowane przez usługę sieci Web.
+> Identyfikator GUID parametru ClientRequestID w tych identyfikatorach URI jest tylko przykładem. Aby wypróbować identyfikatory URI usługi internetowej, wygeneruj własny identyfikator GUID. Identyfikatory GUID wyświetlane w tych przykładach mogą zostać w przyszłości zablokowane przez usługę internetową.
 
-Przykład 2. <https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Przykład 2 identyfikatora URI żądania: <https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Ten adres URI zwraca najnowszą wersję określonego Office 365 wystąpienia usługi. Przykład wyniku:
+Ten identyfikator URI zwraca najnowszą wersję określonego wystąpienia usługi Office 365. Przykładowy wynik:
 
 ```json
 {
@@ -127,18 +127,18 @@ Ten adres URI zwraca najnowszą wersję określonego Office 365 wystąpienia us�
 }
 ```
 
-Przykład 3. <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Przykładowy identyfikator URI żądania 3: <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Ten URI pokazuje dane wyjściowe w formacie CSV. Przykład wyniku:
+Ten identyfikator URI pokazuje dane wyjściowe w formacie CSV. Przykładowy wynik:
 
 ```csv
 instance,latest
 Worldwide,2018063000
 ```
 
-Przykład 4. <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Przykładowy identyfikator URI żądania 4: <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Ten URI pokazuje wszystkie wcześniejsze wersje, które zostały opublikowane dla wystąpienia usługi Office 365 Worldwide. Przykład wyniku:
+Ten identyfikator URI przedstawia wszystkie wcześniejsze wersje, które zostały opublikowane dla Office 365 wystąpienia usługi na całym świecie. Przykładowy wynik:
 
 ```json
 {
@@ -151,9 +151,9 @@ Ten URI pokazuje wszystkie wcześniejsze wersje, które zostały opublikowane dl
 }
 ```
 
-Przykład 5. Adres URI kanału informacyjnego RSS: <https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS>
+Przykład 5 identyfikatora URI źródła danych RSS: <https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS>
 
-Ten adres URI pokazuje kanał informacyjny RSS opublikowanych wersji, który zawiera linki do listy zmian dla każdej wersji. Przykład wyniku:
+Ten identyfikator URI przedstawia kanał informacyjny RSS opublikowanych wersji zawierający linki do listy zmian dla każdej wersji. Przykładowy wynik:
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -170,37 +170,37 @@ Ten adres URI pokazuje kanał informacyjny RSS opublikowanych wersji, który zaw
 </item>
 ```
 
-## <a name="endpoints-web-method"></a>Metoda sieci Web Endpoints (Punkty końcowe)
+## <a name="endpoints-web-method"></a>Metoda internetowa punktów końcowych
 
-Metoda sieci Web Endpoints (Punkty końcowe) zwraca wszystkie rekordy dla zakresów adresów IP i adresów URL, które Office 365 adresach URL. Najnowsze dane z metody sieci Web Endpoints (Punkty końcowe) powinny być zawsze używane do konfiguracji urządzenia sieciowego. Firma Microsoft udostępnia powiadomienie z wyprzedzeniem 30 dni przed opublikowaniem nowych dodatków, aby zapewnić Ci czas na zaktualizowanie list kontrolek dostępu i list obejść serwera proxy. Zalecamy, aby ponownie wywołać metodę sieci Web Endpoints (Punkty końcowe), gdy metoda sieci Web Version (Wersja) wskazuje, że jest dostępna nowa wersja danych.
+Metoda internetowa punktów końcowych zwraca wszystkie rekordy dla zakresów adresów IP i adresów URL, które tworzą usługę Office 365. Najnowsze dane z metody internetowej punktów końcowych powinny być zawsze używane do konfiguracji urządzeń sieciowych. Firma Microsoft zapewnia powiadomienie z wyprzedzeniem na 30 dni przed opublikowaniem nowych dodatków, aby dać Ci czas na zaktualizowanie list kontroli dostępu i list obejścia serwera proxy. Zalecamy ponowne wywołanie metody sieci Web punktów końcowych tylko wtedy, gdy metoda internetowa wersji wskazuje, że jest dostępna nowa wersja danych.
 
-Parametry metody sieci Web Endpoints (Punkty końcowe) to:
+Parametry metody internetowej punktów końcowych to:
 
-- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** — Rozdzielona przecinkami lista obszarów usługi. Prawidłowe elementy to _Common_, _Exchange_, _SharePoint_ i _Skype_. Elementy _obszaru_ usługi Common są wymaganiem wstępnym dla wszystkich pozostałych obszarów usługi, dlatego usługa sieci Web zawsze je zawiera. Jeśli nie uwzględnisz tego parametru, zostaną zwrócone wszystkie obszary usługi.
-- **TenantName=\<tenant_name\>** — Nazwa Office 365 dzierżawy. Usługa sieci Web pobiera Twoją podaną nazwę i wstawia ją w częściach adresów URL, które zawierają nazwę dzierżawy. Jeśli nie podawsz nazwy dzierżawy, te części adresów URL będą mieć symbol wieloznaczny (\*).
-- **NoIPv6=\<true \| false\>** — Ustaw wartość True ( _Prawda), aby_ wykluczyć adresy IPv6 z wyników, jeśli nie korzystasz z protokołu IPv6 w Twojej sieci.
-- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** — Ten parametr wymagany określa wystąpienie, z którego mają być zwracane punkty końcowe. Prawidłowe wystąpienia to: _Worldwide_, _China_, _USGovDoD_ i _USGovGCCHigh_.
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** —Rozdzielana przecinkami lista obszarów usług. Prawidłowe elementy to _Common_, _Exchange_, _SharePoint_ i _Skype_. Ponieważ _typowe_ elementy obszaru usługi są wymaganiami wstępnymi dla wszystkich innych obszarów usług, usługa internetowa zawsze je zawiera. Jeśli ten parametr nie zostanie dołączony, zostaną zwrócone wszystkie obszary usługi.
+- **TenantName=\<tenant_name\>** — Nazwa dzierżawy Office 365. Usługa internetowa przyjmuje podaną nazwę i wstawia ją w części adresów URL zawierających nazwę dzierżawy. Jeśli nie podasz nazwy dzierżawy, te części adresów URL mają symbol wieloznaczny (\*).
+- **NoIPv6=\<true \| false\>** — Ustaw wartość _true_ , aby wykluczyć adresy IPv6 z danych wyjściowych, jeśli nie używasz protokołu IPv6 w sieci.
+- **Wystąpienie=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** — Ten wymagany parametr określa wystąpienie, z którego mają zostać zwrócone punkty końcowe. Prawidłowe wystąpienia to: _Worldwide_, _China_, _USGovDoD_ i _USGovGCCHigh_.
 
-Jeśli wywołasz metodę sieci Web Endpoints (Punkty końcowe) zbyt wiele razy z tego samego adresu IP klienta, może zostać wyświetlony kod odpowiedzi HTTP _429 (Zbyt wiele żądań)._ Jeśli otrzymasz ten kod odpowiedzi, poczekaj 1 godzinę, zanim powtórzysz żądanie, lub wygeneruj nowy identyfikator GUID dla żądania. Ogólnie najlepszym rozwiązaniem jest wywołanie metody sieci Web Endpoints (Punkty końcowe) tylko wtedy, gdy metoda sieci Web Version (Wersja) wskazuje, że jest dostępna nowa wersja.
+Jeśli wywołasz metodę internetową punktów końcowych zbyt wiele razy z tego samego adresu IP klienta, może zostać wyświetlony kod odpowiedzi HTTP _429 (zbyt wiele żądań)_. Jeśli otrzymasz ten kod odpowiedzi, poczekaj 1 godzinę przed powtórzeniem żądania lub wygeneruj nowy identyfikator GUID dla żądania. Ogólnie rzecz biorąc, najlepszym rozwiązaniem jest wywołanie metody sieci Web punktów końcowych tylko wtedy, gdy metoda internetowa wersji wskazuje, że jest dostępna nowa wersja.
 
-Wynikiem metody sieci Web Endpoints (Punkty końcowe) jest tablica rekordów, w której każdy rekord reprezentuje określony zestaw punktów końcowych. Elementy dla każdego rekordu to:
+Wynikiem metody internetowej punktów końcowych jest tablica rekordów, w której każdy rekord reprezentuje określony zestaw punktów końcowych. Elementy dla każdego rekordu to:
 
-- id — niezmienialny numer identyfikacyjny zestawu punktów końcowych.
-- serviceArea — obszar usługi, do których to należy: _Common_, _Exchange_, _SharePoint_ lub _Skype_.
-- adresy URL — adresy URL dla zestawu punktów końcowych. Tablica JSON rekordów DNS. Pominięte, jeśli wartość jest pusta.
-- tcpPorts — porty TCP dla zestawu punktów końcowych. Wszystkie elementy portów są formatowane jako rozdzielona przecinkami lista portów lub zakresy portów rozdzielone znakiem kreski (-). Porty dotyczą wszystkich adresów IP i wszystkich adresów URL w zestawie punktów końcowych dla danej kategorii. Pominięte, jeśli wartość jest pusta.
-- udpPorts — porty UDP dla zakresów adresów IP w tym zestawie punktów końcowych. Pominięte, jeśli wartość jest pusta.
-- ips — zakresy adresów IP skojarzone z tym zestawem punktów końcowych jako skojarzone z wymienionymi portami TCP lub UDP. Tablica JSON zakresów adresów IP. Pominięte, jeśli wartość jest pusta.
-- kategoria — kategoria łączność dla zestawu punktów końcowych. Prawidłowe wartości to _: Optimize (Optymalizuj_), _Allow (_ Zezwalaj) _i Default (Domyślne_). Jeśli przeszukujesz wynik metody sieci Web Endpoints (Punkty końcowe) dla kategorii określonego adresu IP lub adresu URL, możliwe, że zapytanie zwróci wiele kategorii. W takim przypadku postępuj zgodnie z zaleceniami dla kategorii o najwyższym priorytecie. Jeśli na przykład punkt końcowy jest wyświetlany zarówno w menu _Optymalizuj__, jak_ i w allow, należy postępować zgodnie z wymaganiami _optymalizowania_. Wymagane.
-- expressRoute — _True (Prawda),_ jeśli ten zestaw punktów końcowych jest przekierowywowany przez usługi ExpressRoute, lub _False (Fałsz_ ), jeśli nie jest.
-- required — _True (Prawda_), jeśli ten zestaw punktów końcowych jest wymagany do Office 365 być obsługiwany. _False_ (Fałsz), jeśli ten zestaw punktów końcowych jest opcjonalny.
-- uwagi — w przypadku opcjonalnych punktów końcowych w tym tekście opisano funkcje Office 365, które będą niedostępne, jeśli adresy IP lub adresy URL z tego zestawu punktów końcowych nie będą dostępne w warstwie sieciowej. Pominięte, jeśli wartość jest pusta.
+- id — niezmienny numer identyfikatora zestawu punktów końcowych.
+- serviceArea — obszar usługi, który jest częścią: _Common_, _Exchange_, _SharePoint_ lub _Skype_.
+- urls — adresy URL zestawu punktów końcowych. Tablica JSON rekordów DNS. Pominięto, jeśli jest puste.
+- tcpPorts — porty TCP dla zestawu punktów końcowych. Wszystkie elementy portów są sformatowane jako rozdzielana przecinkami lista portów lub zakresów portów oddzielonych znakiem kreski (-). Porty mają zastosowanie do wszystkich adresów IP i wszystkich adresów URL w punkcie końcowym ustawionym dla danej kategorii. Pominięto, jeśli jest puste.
+- udpPorts — porty UDP dla zakresów adresów IP w tym zestawie punktów końcowych. Pominięto, jeśli jest puste.
+- ips — zakresy adresów IP skojarzone z tym punktem końcowym ustawione jako skojarzone z wymienionymi portami TCP lub UDP. Tablica JSON zakresów adresów IP. Pominięto, jeśli jest puste.
+- category — kategoria łączności dla zestawu punktów końcowych. Prawidłowe wartości to _Optymalizowanie_, _Zezwalaj_ i _Domyślne_. Jeśli wyszukasz dane wyjściowe metody internetowej punktów końcowych dla kategorii określonego adresu IP lub adresu URL, możliwe, że zapytanie zwróci wiele kategorii. W takim przypadku postępuj zgodnie z zaleceniem dla kategorii o najwyższym priorytecie. Jeśli na przykład punkt końcowy jest wyświetlany zarówno w _obszarze Optymalizuj_ , jak i _Zezwalaj_, należy postępować zgodnie z wymaganiami _dotyczącymi optymalizacji_. Wymagane.
+- expressRoute — _prawda_ , jeśli ten zestaw punktów końcowych jest kierowany przez usługę ExpressRoute, _fałsz_ , jeśli nie.
+- required — _wartość True_, jeśli ten zestaw punktów końcowych jest wymagany do zapewnienia łączności, aby Office 365 była obsługiwana. _Fałsz_ , jeśli ten zestaw punktów końcowych jest opcjonalny.
+- uwagi — w przypadku opcjonalnych punktów końcowych w tym tekście opisano Office 365 funkcji, które byłyby niedostępne, jeśli adresy IP lub adresy URL w tym zestawie punktów końcowych nie będą dostępne w warstwie sieciowej. Pominięto, jeśli jest puste.
 
-### <a name="endpoints-web-method-examples"></a>Przykłady metody sieci Web Endpoints (Punkty końcowe)
+### <a name="endpoints-web-method-examples"></a>Przykłady metod internetowych punktów końcowych
 
-Przykład 1. <https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Przykład 1 identyfikator URI żądania: <https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Ten URI uzyskuje wszystkie punkty końcowe dla wystąpienia Office 365 Worldwide dla wszystkich obciążeń. Przykład wyniku, który pokazuje fragment danych wyjściowych:
+Ten identyfikator URI uzyskuje wszystkie punkty końcowe dla wystąpienia Office 365 na całym świecie dla wszystkich obciążeń. Przykładowy wynik pokazujący fragment danych wyjściowych:
 
 ```json
 [
@@ -232,53 +232,53 @@ Ten URI uzyskuje wszystkie punkty końcowe dla wystąpienia Office 365 Worldwide
 
 Pełne dane wyjściowe żądania w tym przykładzie będą zawierać inne zestawy punktów końcowych.
 
-Przykład 2.Uri żądania: [https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp; ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+Przykład 2 identyfikator URI żądania: [https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp; ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
-Ten przykład uzyskuje punkty końcowe tylko dla wystąpienia Office 365 Worldwide dla Exchange Online i zależności.
+W tym przykładzie uzyskuje punkty końcowe dla wystąpienia Office 365 Worldwide tylko dla Exchange Online i zależności.
 
-Wynik, na przykład 2, jest podobny do przykładu 1 z tym wyjątkiem, że wyniki nie będą zawierać punktów końcowych dla usługi SharePoint Online lub Skype dla firm Online.
+Dane wyjściowe, na przykład 2, są podobne do przykładu 1, z tą różnicą, że wyniki nie obejmują punktów końcowych dla SharePoint Online lub Skype dla firm Online.
 
-## <a name="changes-web-method"></a>Metoda sieci Web Changes (Zmiany)
+## <a name="changes-web-method"></a>Zmienia metodę internetową
 
-Metoda sieci Web Changes (Zmiany) zwraca najnowsze opublikowane aktualizacje, zazwyczaj zmiany z poprzedniego miesiąca w zakresach adresów IP i adresach URL.
+Metoda sieci Web zmiany zwraca najnowsze aktualizacje, które zostały opublikowane, zazwyczaj w poprzednim miesiącu zmiany zakresów adresów IP i adresów URL.
 
-Najważniejszymi zmianami danych punktów końcowych są nowe adresy URL i adresy IP. Nieudane dodanie adresu IP do listy kontroli dostępu zapory lub adresu URL do listy obejść serwera proxy może spowodować awarię sieci dla użytkowników Office 365 korzystających z tego urządzenia sieciowego. Niezależnie od wymagań operacyjnych nowe punkty końcowe są publikowane w usłudze sieci Web 30 dni przed datą ich obsługi administracyjnej w celu zapewnienia ci czasu na zaktualizowanie list kontroli dostępu i list obejść serwera proxy.
+Najważniejsze zmiany w danych punktów końcowych to nowe adresy URL i adresy IP. Nie można dodać adresu IP do listy kontroli dostępu zapory lub adresu URL do listy obejść serwera proxy może spowodować awarię dla Office 365 użytkowników za tym urządzeniem sieciowym. Niezależnie od wymagań operacyjnych nowe punkty końcowe są publikowane w usłudze internetowej z 30-dniowym wyprzedzeniem od daty aprowizowania punktów końcowych do użycia, aby dać ci czas na zaktualizowanie list kontroli dostępu i list obejścia serwera proxy.
 
-Parametr wymagany dla metody sieci Web Changes (Zmiany) to:
+Wymaganym parametrem dla metody internetowej zmian jest:
 
-- **Version=\<YYYYMMDDNN>** — Wymagany parametr trasy adresu URL. Ta wartość to wersja, która jest obecnie zaimplementowana. Usługa sieci Web zwróci zmiany od tej wersji. Format to _RRRRMMDDNN_, gdzie _NN_ to liczba naturalna zwiększana, jeśli jednego dnia jest wymagane opublikowanie wielu wersji, z których _00_ reprezentuje pierwszą aktualizację danego dnia. Usługa sieci Web wymaga _, aby parametr wersji_ zawierał dokładnie 10 cyfr.
+- **Wersja=\<YYYYMMDDNN>** —Wymagany parametr trasy adresu URL. Ta wartość jest wersją, która została obecnie zaimplementowana. Usługa internetowa zwróci zmiany od tej wersji. Format to _RRRRMMDDNN_, gdzie _NN_ jest liczbą naturalną zwiększaną, jeśli istnieje wiele wersji wymaganych do opublikowania w ciągu jednego dnia, a _00_ reprezentuje pierwszą aktualizację dla danego dnia. Usługa internetowa wymaga, aby parametr _wersji_ zawierał dokładnie 10 cyfr.
 
-Szybkość metody sieci Web Changes (Zmiany) jest ograniczona w taki sam sposób, jak metoda sieci Web Endpoints (Punkty końcowe). Jeśli otrzymasz kod odpowiedzi HTTP 429, odczekaj 1 godzinę, zanim powtórzysz żądanie lub wygeneruj nowy identyfikator GUID dla żądania.
+Metoda internetowa zmian jest ograniczona szybkością w taki sam sposób jak metoda internetowa punktów końcowych. Jeśli otrzymasz kod odpowiedzi HTTP 429, poczekaj 1 godzinę przed powtórzeniem żądania lub wygeneruj nowy identyfikator GUID dla żądania.
 
-Wynikiem metody sieci Web Changes (Zmiany) jest tablica rekordów, w której każdy rekord odzwierciedla zmianę w określonej wersji punktów końcowych. Elementy dla każdego rekordu to:
+Wynikiem zmiany metody internetowej jest tablica rekordów, w których każdy rekord reprezentuje zmianę w określonej wersji punktów końcowych. Elementy dla każdego rekordu to:
 
-- id — niezmienialny identyfikator rekordu zmiany.
-- endpointSetId — identyfikator zmienionego rekordu zestawu punktów końcowych.
-- disposition — zawiera opis zmiany w rekordzie zestawu punktów końcowych. Wartości są _zmieniane_, _dodawania_ lub _usuwania_.
-- wpływ — nie wszystkie zmiany będą jednakowo ważne w każdym środowisku. Ten element opisuje oczekiwany wpływ tej zmiany na środowisko obwodu sieci przedsiębiorstwa. Ten element jest uwzględniany tylko w rekordach zmian wersji **2018112800** i nowszych. Mają to wpływ na następujące opcje: — AddedIp — do usługi Office 365 dodano adres IP i wkrótce pojawi się on w tej usłudze. Oznacza to zmianę, która należy zrobić na zaporze lub innym urządzeniu sieci obwodowej warstwy 3. Jeśli nie dodasz go przed rozpoczęciem korzystania z niego, może na przykład wystąpić błąd.
-  — AddedUrl — adres URL został dodany do Office 365 i wkrótce pojawi się w usłudze. Oznacza to zmianę, która należy zrobić na serwerze proxy lub urządzeniu sieci obwodowej do analizowania adresów URL. Jeśli nie dodasz tego adresu URL przed rozpoczęciem używania go, może na przykład wystąpić błąd.
-  — AddedIpAndUrl — dodano zarówno adres IP, jak i adres URL. Oznacza to zmianę, która należy zrobić na urządzeniu zapory w warstwie 3 albo na serwerze proxy albo urządzeniu do analizowania adresów URL. Jeśli nie dodasz tej pary adresów IP/URL przed rozpoczęciem korzystania z tej pary, może wystąpić błąd.
-  — RemovedIpOrUrl — co najmniej jeden adres IP lub adres URL został usunięty z Office 365. Usuń punkty końcowe sieci z urządzeń obwodowych, ale nie ma dla Ciebie ostatecznego terminu wykonania tej pracy.
-  — ChangedIsExpressRoute — zmieniono atrybut obsługi expressRoute. Jeśli korzystasz z usługi ExpressRoute, może być konieczne podjęcie działań w zależności od konfiguracji.
-  — MovedIpOrUrl — Przenieśliśmy adres IP lub adres URL między tym zestawem punktów końcowych a innym. Zasadniczo nie jest wymagane żadne działanie.
-  — RemovedDuplicateIpOrUrl — Usunęliśmy zduplikowany adres IP lub adres URL, ale jest on nadal publikowany dla Office 365. Zasadniczo nie jest wymagane żadne działanie.
-  — OtherNonPriorityChanges — Zmieniliśmy element mniej krytyczny niż wszystkie inne opcje, na przykład zawartość pola notatki.
-- version — wersja opublikowanego zestawu punktów końcowych, w którym wprowadzono zmianę. Numery wersji są w formacie _RRRRMMDDNN_, gdzie _NN_ jest liczbą naturalną zwiększaną, jeśli jednego dnia jest wymagane opublikowanie wielu wersji.
-- previous — strukturę podrzędną z wyszczególnionymi poprzednimi wartościami zmienionych elementów w zestawie punktów końcowych. Ta wartość nie zostanie uwzględniona w przypadku nowo dodanych zestawów punktów końcowych. Obejmuje  _usługi ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ i _notatki_.
-- current — podstruktura z wyszczególnioną zaktualizowanymi wartościami elementów zmian w zestawie punktów końcowych. Obejmuje _usługi ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ i _notatki_.
-- add — strukturę podrzędną z wyszczególnioną elementami do dodania do kolekcji zestawu punktów końcowych. Pominięte, jeśli nie ma dodatków.
-  — effectiveDate — definiuje dane, kiedy dodatki będą nadal obowiązywać w usłudze.
-  — ips — elementy do dodania do _tablicy adresów IP_ .
-  — adresy URL — elementy do dodania do _tablicy adresów URL_ .
-- remove — strukturę podrzędną z wyszczególnioną elementami do usunięcia z zestawu punktów końcowych. Pominięte, jeśli nie ma usunięcia.
-  — ips — elementy do usunięcia z _tablicy adresów IP_ .
+- id — niezmienny identyfikator rekordu zmiany.
+- endpointSetId — identyfikator rekordu zestawu punktów końcowych, który został zmieniony.
+- disposition — opisuje zmiany w rekordzie zestawu punktów końcowych. Wartości są _zmieniane_, _dodawane_ lub _usuwane_.
+- impact — nie wszystkie zmiany będą równie ważne dla każdego środowiska. W tym elemencie opisano oczekiwany wpływ tej zmiany na środowisko obwodowe sieci przedsiębiorstwa. Ten element jest uwzględniany tylko w rekordach zmian wersji **2018112800** i nowszych. Dostępne są następujące opcje: — AddedIp — adres IP został dodany do Office 365 i wkrótce będzie aktywny w usłudze. Oznacza to zmianę, którą należy włączyć na zaporze lub innym urządzeniu obwodowym sieci warstwy 3. Jeśli nie dodasz tego przed rozpoczęciem korzystania z niego, może wystąpić awaria.
+  — AddedUrl — adres URL został dodany do Office 365 i wkrótce będzie aktywny w usłudze. Oznacza to zmianę, którą należy włączyć na serwerze proxy lub adresie URL analizowania sieciowego urządzenia obwodowego. Jeśli nie dodasz tego adresu URL przed rozpoczęciem korzystania z niego, może wystąpić awaria.
+  — AddedIpAndUrl — dodano zarówno adres IP, jak i adres URL. Oznacza to zmianę, którą należy włączyć na urządzeniu warstwy zapory 3, serwerze proxy lub urządzeniu analizy adresów URL. Jeśli ta para adresów IP/ADRES URL nie zostanie dodana przed rozpoczęciem korzystania z niej, może wystąpić awaria.
+  — RemovedIpOrUrl — co najmniej jeden adres IP lub adres URL został usunięty z Office 365. Usuń punkty końcowe sieci z urządzeń obwodowych, ale nie ma terminu, aby to zrobić.
+  — ChangedIsExpressRoute — atrybut obsługi usługi ExpressRoute został zmieniony. Jeśli używasz usługi ExpressRoute, może być konieczne podjęcie akcji w zależności od konfiguracji.
+  — MovedIpOrUrl — przenieśliśmy adres IP lub adres URL między tym zestawem punktów końcowych a innym. Zazwyczaj nie jest wymagana żadna akcja.
+  — RemovedDuplicateIpOrUrl — usunęliśmy zduplikowany adres IP lub adres URL, ale jest on nadal publikowany dla Office 365. Zazwyczaj nie jest wymagana żadna akcja.
+  — OtherNonPriorityChanges — zmieniliśmy coś mniej krytycznego niż wszystkie inne opcje, takie jak zawartość pola notatki.
+- version — wersja opublikowanego zestawu punktów końcowych, w którym wprowadzono zmianę. Numery wersji mają format _YYYYMMDDNN_, gdzie _NN_ jest liczbą naturalną zwiększaną, jeśli istnieje wiele wersji wymaganych do opublikowania w ciągu jednego dnia.
+- previous — podstruktura zawierająca szczegóły poprzednich wartości zmienionych elementów w zestawie punktów końcowych. Nie zostanie on uwzględniony w nowo dodanych zestawach punktów końcowych. Obejmuje  _usługi ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ i _notesy_.
+- current — podstruktura zawierająca szczegółowe informacje o zaktualizowanych wartościach elementów zmian w zestawie punktów końcowych. Obejmuje _usługi ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ i _notesy_.
+- add — podstruktura zawierająca szczegóły elementów, które mają zostać dodane do kolekcji zestawów punktów końcowych. Pominięto, jeśli nie ma żadnych dodatków.
+  — effectiveDate — definiuje dane, gdy dodatki będą aktywne w usłudze.
+  — adresy IP — elementy, które mają zostać dodane do tablicy _adresów ips_ .
+  — adresy URL — elementy, które mają zostać dodane do _tablicy adresów URL_ .
+- remove — podstruktura zawierająca szczegóły elementów do usunięcia z zestawu punktów końcowych. Pominięto, jeśli nie ma żadnych przeprowadzek.
+  — adresy IP — elementy, które mają zostać usunięte z tablicy _adresów ips_ .
   — adresy URL — elementy do usunięcia z _tablicy adresów URL_ .
 
-### <a name="changes-web-method-examples"></a>Przykłady metody sieci Web Changes (Zmiany)
+### <a name="changes-web-method-examples"></a>Zmienia przykłady metod internetowych
 
-Przykład 1. <https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Przykład 1 identyfikator URI żądania: <https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-To żąda wszystkich wcześniejszych zmian w wystąpieniu Office 365 Worldwide. Przykład wyniku:
+Spowoduje to zażądanie wszystkich wcześniejszych zmian w wystąpieniu usługi Office 365 na całym świecie. Przykładowy wynik:
 
 ```json
 [
@@ -314,9 +314,9 @@ To żąda wszystkich wcześniejszych zmian w wystąpieniu Office 365 Worldwide. 
      [
 ```
 
-Przykład 2. <https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Przykład 2 identyfikatora URI żądania: <https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-To żąda zmian od określonej wersji w wystąpieniu Office 365 Worldwide. W tym przypadku określona wersja jest najnowszą wersją. Przykład wyniku:
+To żądanie zmienia się od określonej wersji wystąpienia Office 365 Worldwide. W tym przypadku określona wersja jest najnowsza. Przykładowy wynik:
 
 ```json
 [
@@ -347,28 +347,28 @@ To żąda zmian od określonej wersji w wystąpieniu Office 365 Worldwide. W tym
 
 ## <a name="example-powershell-script"></a>Przykładowy skrypt programu PowerShell
 
-Możesz uruchomić ten skrypt programu PowerShell, aby sprawdzić, czy istnieją akcje do podjęcia w przypadku zaktualizowanych danych. Ten skrypt można uruchomić jako zaplanowane zadanie w celu sprawdzenia, czy nie ma aktualizacji wersji. Aby uniknąć nadmiernego ładowania w usłudze sieci Web, postaraj się nie uruchamiać skryptu więcej niż raz na godzinę.
+Możesz uruchomić ten skrypt programu PowerShell, aby sprawdzić, czy istnieją akcje, które należy wykonać w celu zaktualizowania danych. Ten skrypt można uruchomić jako zaplanowane zadanie, aby sprawdzić aktualizację wersji. Aby uniknąć nadmiernego obciążenia usługi internetowej, spróbuj nie uruchamiać skryptu więcej niż raz na godzinę.
 
-Skrypt obsługuje następujące czynności:
+Skrypt wykonuje następujące czynności:
 
-- Sprawdza numer wersji bieżącego wystąpienia Office 365 Worldwide, wywołując interfejs API REST usługi sieci Web.
-- Sprawdza bieżący plik wersji w cenie _$Env:TEMP\O365_endpoints_latestversion.txt_. Ścieżka zmiennej globalnej o **adresie $Env:TEMP** to zwykle _C:\Użytkownicy\\<\> nazwa_użytkownika\AppData\Local\Temp_.
-- Jeśli jest to pierwsze uruchomienie skryptu, skrypt zwraca bieżącą wersję oraz wszystkie bieżące adresy IP i adresy URL, zapisuje wersję punktów końcowych w pliku _$Env:TEMP\O365_endpoints_latestversion.txt_ i dane wyjściowe danych punktów końcowych do pliku _$Env:TEMP\O365_endpoints_data.txt_. Edytując następujące wiersze, można zmodyfikować ścieżkę i/lub nazwę pliku wyjściowego:
+- Sprawdza numer wersji bieżących punktów końcowych wystąpienia Office 365 Worldwide, wywołując interfejs API REST usługi internetowej.
+- Sprawdza, czy plik bieżącej wersji ma _wartość $Env:TEMP\O365_endpoints_latestversion.txt_. Ścieżka zmiennej globalnej **$Env:TEMP** to zazwyczaj _C:\Users\\<username\>\AppData\Local\Temp_.
+- Jeśli skrypt jest uruchamiany po raz pierwszy, skrypt zwraca bieżącą wersję oraz wszystkie bieżące adresy IP i adresy URL, zapisuje wersję punktów końcowych w pliku _$Env:TEMP\O365_endpoints_latestversion.txt_ , a dane wyjściowe punktów końcowych do pliku _$Env:TEMP\O365_endpoints_data.txt_. Ścieżkę i/lub nazwę pliku wyjściowego można zmodyfikować, edytując następujące wiersze:
 
     ``` powershell
     $versionpath = $Env:TEMP + "\O365_endpoints_latestversion.txt"
     $datapath = $Env:TEMP + "\O365_endpoints_data.txt"
     ```
 
-- Przy każdym kolejnym wykonaniu skryptu, jeśli najnowsza wersja usługi sieci Web jest identyczna z wersją w pliku _O365_endpoints_latestversion.txt_ , skrypt zostanie zakończyny bez jakichkolwiek zmian.
-- Gdy najnowsza wersja usługi sieci Web jest nowsza  niż wersja w pliku _O365_endpoints_latestversion.txt_, skrypt zwraca punkty końcowe i filtry dla punktów końcowych kategorii Zezwalaj i Optymalizuj,  aktualizuje wersję w pliku _O365_endpoints_latestversion.txt_ i zapisuje zaktualizowane dane w plikuO365_endpoints_data.txt.__
+- Przy każdym kolejnym wykonaniu skryptu, jeśli najnowsza wersja usługi internetowej jest identyczna z wersją w pliku _O365_endpoints_latestversion.txt_ , skrypt kończy działanie bez wprowadzania żadnych zmian.
+- Gdy najnowsza wersja usługi internetowej jest nowsza niż wersja w pliku _O365_endpoints_latestversion.txt_ , skrypt zwraca punkty końcowe i filtry dla punktów końcowych kategorii **Zezwalaj** i **optymalizuj, aktualizuje** wersję w pliku _O365_endpoints_latestversion.txt_ i zapisuje zaktualizowane dane w pliku _O365_endpoints_data.txt_ .
 
-Skrypt generuje unikatowy identyfikator _ClientRequestId_ dla komputera, na który jest wykonywany, i ponownie używa tego identyfikatora w wielu połączeniach. Ten identyfikator jest przechowywany w _O365_endpoints_latestversion.txt_ pliku.
+Skrypt generuje unikatowy identyfikator _ClientRequestId_ dla komputera, na który jest wykonywany, i ponownie używa tego identyfikatora w wielu wywołaniach. Ten identyfikator jest przechowywany w pliku _O365_endpoints_latestversion.txt_ .
 
 ### <a name="to-run-the-powershell-script"></a>Aby uruchomić skrypt programu PowerShell
 
 1. Skopiuj skrypt i zapisz go na lokalnym dysku twardym lub w lokalizacji skryptu jako _Get-O365WebServiceUpdates.ps1_.
-1. Wykonaj skrypt w preferowanym edytorze skryptów, takim jak PowerShell ISE lub VS Code, albo z konsoli programu PowerShell, używając następującego polecenia:
+1. Wykonaj skrypt w preferowanym edytorze skryptów, takim jak PowerShell ISE lub VS Code, lub z konsoli programu PowerShell przy użyciu następującego polecenia:
 
     ``` powershell
    powershell.exe -file <path>\Get-O365WebServiceUpdates.ps1
@@ -524,7 +524,7 @@ else {
 
 ## <a name="example-python-script"></a>Przykładowy skrypt języka Python
 
-Oto skrypt w języku Python przetestowany w języku Python 3.6.3 na Windows 10, który można uruchomić, aby sprawdzić, czy istnieją akcje do podjęcia dla zaktualizowanych danych. Ten skrypt sprawdza numer wersji dla punktów końcowych Office 365 Worldwide. W przypadku zmiany pobiera on punkty końcowe i filtruje punkty końcowe kategorii _Zezwalaj_ i Optymalizuj. Używa on również unikatowego wartości ClientRequestId w wielu połączeniach i zapisuje najnowszą znalezioną wersję w pliku tymczasowym. Zadzwoń do tego skryptu raz na godzinę, aby sprawdzić, czy nie ma aktualizacji wersji.
+Oto skrypt języka Python przetestowany w języku Python 3.6.3 na Windows 10, który można uruchomić, aby sprawdzić, czy istnieją akcje, które należy wykonać w celu zaktualizowania danych. Ten skrypt sprawdza numer wersji punktów końcowych wystąpienia Office 365 Worldwide. W przypadku zmiany pobiera ona punkty końcowe i filtry dla punktów końcowych kategorii _Zezwalaj_ i _optymalizuj_ . Używa również unikatowego identyfikatora ClientRequestId w wielu wywołaniach i zapisuje najnowszą wersję znalezioną w pliku tymczasowym. Wywołaj ten skrypt raz na godzinę, aby sprawdzić aktualizację wersji.
 
 ```python
 import json
@@ -589,44 +589,44 @@ else:
     print('Office 365 worldwide commercial service instance endpoints are up-to-date')
 ```
 
-## <a name="web-service-interface-versioning"></a>Wersja interfejsu usługi sieci Web
+## <a name="web-service-interface-versioning"></a>Przechowywanie wersji interfejsu usługi internetowej
 
-W przyszłości mogą być wymagane aktualizacje parametrów lub wyników tych metod usługi sieci Web. Po opublikowaniu wersji tych usług sieci Web o ogólnej dostępności firma Microsoft podjąć uzasadnione starania w celu wcześniejszego powiadomienia o istotnych aktualizacjach usługi sieci Web. Gdy firma Microsoft uzna, że aktualizacja będzie wymagała zmian w klientach korzystających z usługi sieci Web, zachowaje dostępną poprzednią wersję (jedną wersję wstecz) usługi sieci Web przez co najmniej 12 miesięcy od wydania nowej wersji. Klienci, którzy nie uaktualnią w tym czasie, mogą nie być w stanie uzyskać dostępu do usługi sieci Web i jej metod. Klienci muszą zapewnić, że klienci usługi sieci Web będą nadal działać bez błędu, jeśli w podpisie interfejsu usługi sieci Web zostaną wprowadzone następujące zmiany:
+Aktualizacje parametrów lub wyników dla tych metod usługi internetowej mogą być wymagane w przyszłości. Po opublikowaniu ogólnej wersji dostępności tych usług internetowych firma Microsoft dołoży rozsądnych starań, aby powiadomić o istotnych aktualizacjach usługi internetowej z wyprzedzeniem. Gdy firma Microsoft uzna, że aktualizacja będzie wymagać zmian klientów korzystających z usługi internetowej, firma Microsoft zachowa poprzednią wersję (jedną wersję z powrotem) usługi internetowej dostępną przez co najmniej 12 miesięcy po wydaniu nowej wersji. Klienci, którzy nie uaktualnili w tym czasie, mogą nie mieć dostępu do usługi internetowej i jej metod. Klienci muszą upewnić się, że klienci usługi internetowej kontynuują pracę bez błędu, jeśli wprowadzono następujące zmiany w sygnaturze interfejsu usługi internetowej:
 
-- Dodanie nowego parametru opcjonalnego do istniejącej metody sieci Web, która nie musi być dostarczana przez starszych klientów i nie ma wpływu na wynik obierania przez starszego klienta.
-- Dodanie nowego nazwanego atrybutu w jednym z elementów odpowiedzi REST lub innych kolumn do pliku CSV odpowiedzi.
-- Dodanie nowej metody sieci Web z nową nazwą, która nie jest wywoływana przez starszych klientów.
+- Dodanie nowego parametru opcjonalnego do istniejącej metody internetowej, która nie musi być udostępniana przez starszych klientów i nie ma wpływu na wynik, jaki otrzymuje starszy klient.
+- Dodawanie nowego nazwanego atrybutu w jednym z elementów REST odpowiedzi lub innych kolumn do pliku CSV odpowiedzi.
+- Dodawanie nowej metody internetowej o nowej nazwie, która nie jest wywoływana przez starszych klientów.
 
-## <a name="update-notifications"></a>Powiadomienia o aktualizacjach
+## <a name="update-notifications"></a>Aktualizowanie powiadomień
 
-Aby otrzymywać powiadomienia e-mail po opublikowaniu zmian adresów IP i adresów URL w usłudze sieci Web, możesz użyć kilku różnych metod.
+Możesz użyć kilku różnych metod, aby otrzymywać powiadomienia e-mail, gdy zmiany adresów IP i adresów URL są publikowane w usłudze internetowej.
 
-- Aby skorzystać z Power Automate, zobacz [Otrzymywanie wiadomości e-Power Automate](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651) e-mail ze zmianami w adresach IP i Office 365 URL.
-- Aby wdrożyć aplikację Azure Logic przy użyciu szablonu ARM, zobacz Office 365 [powiadomienia o aktualizacji (wersja 1.1)](https://aka.ms/ipurlws-updates-template).
+- Aby użyć rozwiązania Power Automate, zobacz [Używanie Power Automate do odbierania wiadomości e-mail w celu wprowadzenia zmian Office 365 adresów IP i adresów URL](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
+- Aby wdrożyć aplikację logiki platformy Azure przy użyciu szablonu usługi ARM, zobacz [Office 365 Update Notification (wersja 1.1)](https://aka.ms/ipurlws-updates-template).
 - Aby napisać własny skrypt powiadomień przy użyciu programu PowerShell, zobacz [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Eksportowanie pliku PAC serwera proxy
 
-[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) to skrypt programu PowerShell, który odczytuje najnowsze punkty końcowe sieci z usługi sieci web programu Office 365 i adresu IP oraz tworzy przykładowy plik PAC. Aby uzyskać informacje na temat korzystania z pliku Get-PacFile, zobacz Używanie pliku PAC do bezpośredniego routingu najważniejszych Office 365 [ruchu](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
+[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) to skrypt programu PowerShell, który odczytuje najnowsze punkty końcowe sieci z usługi internetowej adresów IP i adresów URL Office 365 oraz tworzy przykładowy plik PAC. Aby uzyskać informacje na temat korzystania z pliku Get-PacFile, zobacz [Używanie pliku PAC do bezpośredniego routingu istotnego ruchu Office 365](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
 
 ## <a name="related-topics"></a>Tematy pokrewne
   
 [Adresy URL i zakresy adresów IP usługi Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
 
-[Zarządzanie Office 365 punktami końcowymi](managing-office-365-endpoints.md)
+[Zarządzanie punktami końcowymi usługi Office 365](managing-office-365-endpoints.md)
   
-[Office 365 punkty końcowe — często zadawane pytania](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Office 365 punktów końcowych — często zadawane pytania](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
-[Office 365 zasad łączności sieciowej](microsoft-365-network-connectivity-principles.md)
+[zasady łączności sieciowej Office 365](microsoft-365-network-connectivity-principles.md)
 
-[Office 365 sieci i dostosowywania wydajności](network-planning-and-performance.md)
+[Office 365 dostrajanie sieci i wydajności](network-planning-and-performance.md)
 
-[Ocena Office 365 sieci](assessing-network-connectivity.md)
+[Ocena łączności sieciowej Office 365](assessing-network-connectivity.md)
   
 [Jakość multimediów i wydajność łączności sieciowej w Skype dla firm Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Optymalizowanie sieci pod Skype dla firm Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Optymalizowanie sieci pod kątem Skype dla firm Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
 
-[Office 365 wydajności przy użyciu planu bazowego i historii wydajności](performance-tuning-using-baselines-and-history.md)
+[Office 365 dostrajanie wydajności przy użyciu punktów odniesienia i historii wydajności](performance-tuning-using-baselines-and-history.md)
   
-[Plan rozwiązywania problemów z wydajnością Office 365](performance-troubleshooting-plan.md)
+[Plan rozwiązywania problemów z wydajnością dla Office 365](performance-troubleshooting-plan.md)

@@ -1,8 +1,8 @@
 ---
-title: Wysoka dostępność uwierzytelniania federegonowego (etap 3) Konfigurowanie serwerów usług AD FS
+title: Uwierzytelnianie federacyjne o wysokiej dostępności — faza 3— konfigurowanie serwerów usług AD FS
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
@@ -15,25 +15,25 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: Dowiedz się, jak tworzyć i konfigurować serwery usług AD FS na poziomie wysokiej dostępności uwierzytelniania feder służącego do Microsoft 365 usług Microsoft Azure.
-ms.openlocfilehash: c26fc68aa382ce93c62b6edbce4040b7e0813474
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak tworzyć i konfigurować serwery usług AD FS na potrzeby uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 w Microsoft Azure.
+ms.openlocfilehash: ed0974c8286a5bbad083152d2e2f9aeb01f659df
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988405"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101254"
 ---
-# <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Wysoka dostępność uwierzytelniania federacji Etap 3. Konfigurowanie serwerów usług AD FS
+# <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Uwierzytelnianie federacyjne o wysokiej dostępności — faza 3: konfigurowanie serwerów usług AD FS
 
-W tym etapie wdrażania wysokiej dostępności na Microsoft 365 w usługach infrastruktury federacji platformy Azure należy utworzyć wewnętrzny równoważenie obciążenia i dwa serwery usług AD FS.
+W tej fazie wdrażania wysokiej dostępności Microsoft 365 uwierzytelniania federacyjnego w usługach infrastruktury platformy Azure utworzysz wewnętrzny moduł równoważenia obciążenia i dwa serwery usług AD FS.
   
-Należy wykonać tę fazę przed przejściem do [fazy 4. Konfigurowanie serwerów proxy aplikacji sieci Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Zobacz [Wdrażanie uwierzytelniania feder](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) służącego do wysokiej dostępności Microsoft 365 na platformie Azure, aby uzyskać informacje o wszystkich fazach.
+Musisz ukończyć tę fazę przed przejściem do [fazy 4: Konfigurowanie serwerów proxy aplikacji internetowej](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Zobacz [Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) dla wszystkich faz.
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Tworzenie maszyn wirtualnych serwera usług AD FS na platformie Azure
 
-Użyj następującego bloku poleceń programu PowerShell, aby utworzyć maszyny wirtualne dla dwóch serwerów usług AD FS. W tym zestawie poleceń programu PowerShell są używane wartości z następujących tabel:
+Użyj następującego bloku poleceń programu PowerShell, aby utworzyć maszyny wirtualne dla dwóch serwerów usług AD FS. Ten zestaw poleceń programu PowerShell używa wartości z następujących tabel:
   
-- Tabela M dla Twoich maszyn wirtualnych
+- Tabela M dla maszyn wirtualnych
     
 - Tabela R dla grup zasobów
     
@@ -43,17 +43,17 @@ Użyj następującego bloku poleceń programu PowerShell, aby utworzyć maszyny 
     
 - Tabela I dla statycznych adresów IP
     
-- Tabela A dla Twoich zestawów dostępności
+- Tabela A dla zestawów dostępności
     
-Przypomnijmy, że zdefiniowano tabelę M w fazie [2.](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Konfigurowanie kontrolerów domeny oraz tabel R, V, S, I i A w etapie [1. Konfigurowanie platformy Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Pamiętaj, że tabela M została zdefiniowana w [fazie 2. Konfigurowanie kontrolerów domeny](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) i tabel R, V, S, I i A w [fazie 1: konfigurowanie platformy Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> W poniższych zestawach poleceń jest dostępna najnowsza wersja Azure PowerShell. Zobacz [Wprowadzenie do Azure PowerShell](/powershell/azure/get-started-azureps). 
+> Poniższe zestawy poleceń używają najnowszej wersji Azure PowerShell. Zobacz [Wprowadzenie z Azure PowerShell](/powershell/azure/get-started-azureps). 
   
-Najpierw należy utworzyć wewnętrzny równoważenie obciążenia platformy Azure dla dwóch serwerów usług AD FS. Określ wartości zmiennych, usuwając \< and > znaki. Po pojęniu wszystkich odpowiednich wartości uruchom blok wynikowy w wierszu polecenia programu Azure PowerShell lub w programie PowerShell ISE.
+Najpierw należy utworzyć wewnętrzny moduł równoważenia obciążenia platformy Azure dla dwóch serwerów usług AD FS. Określ wartości zmiennych, usuwając \< and > znaki. Po podaniu wszystkich odpowiednich wartości uruchom wynikowe bloki w wierszu polecenia Azure PowerShell lub w programie PowerShell ISE.
   
 > [!TIP]
-> Aby wygenerować gotowe bloki poleceń programu PowerShell na podstawie ustawień niestandardowych, użyj tego Microsoft Excel [konfiguracji programu PowerShell](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> Aby wygenerować gotowe do uruchomienia bloki poleceń programu PowerShell na podstawie ustawień niestandardowych, użyj tego [Microsoft Excel skoroszytu konfiguracji](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 ```powershell
 # Set up key variables
@@ -76,7 +76,7 @@ New-AzLoadBalancer -ResourceGroupName $rgName -Name "ADFSServers" -Location $loc
 
 Następnie utwórz maszyny wirtualne serwera usług AD FS.
   
-Po pojęniu wszystkich odpowiednich wartości uruchom blok wynikowy w wierszu polecenia programu Azure PowerShell lub w programie PowerShell ISE.
+Po podaniu wszystkich odpowiednich wartości uruchom wynikowe bloki w wierszu polecenia Azure PowerShell lub w programie PowerShell ISE.
   
 ```powershell
 # Set up variables common to both virtual machines
@@ -131,11 +131,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Ponieważ te maszyny wirtualne są przeznaczone do aplikacji intranetowej, nie mają przypisanego publicznego adresu IP ani etykiety nazwy domeny DNS i są dostępne w Internecie. Oznacza to jednak również, że nie można się z nimi połączyć z portalu Azure Portal. Ta **Połączenie** jest niedostępna podczas wyświetlania właściwości maszyny wirtualnej. Użyj akcesorium podłączania pulpitu zdalnego lub innego narzędzia pulpitu zdalnego, aby połączyć się z maszyną wirtualną przy użyciu jej prywatnego adresu IP lub intranetowej nazwy DNS.
+> Ponieważ te maszyny wirtualne są przeznaczone dla aplikacji intranetowej, nie mają przypisanego publicznego adresu IP ani etykiety nazwy domeny DNS i nie są uwidocznione w Internecie. Jednak oznacza to również, że nie można nawiązać z nimi połączenia z Azure Portal. Opcja **Połączenie** jest niedostępna podczas wyświetlania właściwości maszyny wirtualnej. Użyj akcesorium Podłączanie pulpitu zdalnego lub innego narzędzia pulpitu zdalnego, aby nawiązać połączenie z maszyną wirtualną przy użyciu jej prywatnego adresu IP lub intranetowej nazwy DNS.
   
-Dla każdej maszyny wirtualnej użyj wybranego klienta pulpitu zdalnego i utwórz połączenie pulpitu zdalnego. Użyj intranetowego systemu DNS lub nazwy komputera i poświadczeń konta administratora lokalnego.
+Dla każdej maszyny wirtualnej użyj wybranego klienta pulpitu zdalnego i utwórz połączenie pulpitu zdalnego. Użyj intranetowej nazwy DNS lub komputera oraz poświadczeń konta administratora lokalnego.
   
-Dla każdej maszyny wirtualnej dołącz je do odpowiedniej domeny Usługi domenowe w usłudze Active Directory (AD DS) za pomocą tych poleceń w wierszu Windows PowerShell wiersza polecenia.
+Dla każdej maszyny wirtualnej dołącz je do odpowiedniej domeny Active Directory Domain Services (AD DS) za pomocą tych poleceń w wierszu Windows PowerShell.
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -144,18 +144,18 @@ Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
 ```
 
-Oto konfiguracja wynikowa pomyślnego ukończenia tego etapu z symbolami zastępczymi nazw komputerów.
+Oto konfiguracja wynikająca z pomyślnego zakończenia tej fazy z nazwami komputerów zastępczych.
   
-**Etap 3. Serwery usług AD FS i wewnętrzny mechanizm równoważenia obciążenia dla twojej wysokiej dostępności infrastruktury uwierzytelniania federatora na platformie Azure**
+**Faza 3. Serwery usług AD FS i wewnętrzny moduł równoważenia obciążenia dla infrastruktury uwierzytelniania federacyjnego o wysokiej dostępności na platformie Azure**
 
-![Etap 3 etapu wysokiej dostępności usługi Microsoft 365 federacji uwierzytelniania na platformie Azure z serwerami usług AD FS.](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Faza 3 wysokiej dostępności Microsoft 365 infrastruktury uwierzytelniania federacyjnego na platformie Azure z serwerami usług AD FS.](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Następny krok
 
-Etap [4. Konfigurowanie serwerów proxy aplikacji sieci Web w](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) celu kontynuowania konfigurowania tego obciążenia pracą.
+Użyj [fazy 4. Konfigurowanie serwerów proxy aplikacji internetowej](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) w celu kontynuowania konfigurowania tego obciążenia.
   
 ## <a name="see-also"></a>Zobacz też
 
-[Wdrażanie uwierzytelniania federeracyjnie o wysokiej dostępności Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
+[Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Tożsamość federacyjna dla Twojego Microsoft 365 deweloper/środowisko testowania](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Tożsamość federacyjna dla środowiska deweloperskiego/testowego Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)

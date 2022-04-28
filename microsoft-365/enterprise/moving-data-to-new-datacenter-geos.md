@@ -1,8 +1,8 @@
 ---
-title: Przenoszenie podstawowych danych do nowych Microsoft 365 lokalizacji geograficznych centrum danych
+title: Przenoszenie danych podstawowych do nowych obszarów geograficznych centrum danych Microsoft 365
 ms.author: andyber
 author: andybergen
-manager: laurawi
+manager: scotv
 ms.date: 11/16/2021
 audience: ITPro
 ms.topic: article
@@ -13,28 +13,28 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: Dowiedz się więcej Office 365 lokalizacji geograficznych centrum danych i jak korzystać z opcji przechowywania danych w celu żądania przeniesienia podstawowych danych do nowego geolokalizacji.
+description: Dowiedz się więcej na temat nowych obszarów geograficznych centrum danych Office 365 i sposobu używania opcji rezydencji danych w celu żądania przeniesienia danych podstawowych do nowego obszaru geograficznego.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 590d1b7e72f79e0e6cfd4e29a0a78560f6c13433
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: be42954aaa0de3f1c5af851915070e7f27c4e850
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997415"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101144"
 ---
-# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Przenoszenie podstawowych danych do nowych Microsoft 365 lokalizacji geograficznych centrum danych
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Przenoszenie danych podstawowych do nowych obszarów geograficznych centrum danych Microsoft 365
 
-Nadal otwieramy nowe lokalizacje geograficzne centrum danych dla Microsoft 365 internetowych. Te nowe lokalizacje geograficzne centrum danych dodają wydajność i oblicz zasoby, aby wspierać nasze bieżące zapotrzebowanie klientów i wzrost użycia. Ponadto nowe lokalizacje geolokalizacji centrum danych oferują lokalizację przechowywania danych w lokalizacji geograficznej na podstawowe dane klientów. 
+Nadal otwieramy nowe lokalizacje geograficzne centrum danych dla usług Microsoft 365. Te nowe lokalizacje geograficzne centrum danych dodają pojemność i zasoby obliczeniowe w celu obsługi bieżącego zapotrzebowania klientów i wzrostu użycia. Ponadto nowe lokalizacje geograficzne centrum danych oferują miejsce przechowywania danych w obszarze geograficznym dla podstawowych danych klientów. 
 
-Podstawowe dane klienta to termin, który odwołuje się do podzestawu danych klienta, takich jak: 
+Podstawowe dane klienta to termin, który odnosi się do podzestawu danych klienta, w tym: 
 - Exchange Online zawartości skrzynki pocztowej (treść wiadomości e-mail, wpisy kalendarza i zawartość załączników wiadomości e-mail)
-- SharePoint witryny online i pliki przechowywane w tej witrynie
+- SharePoint zawartość witryny online i pliki przechowywane w tej witrynie
 - Pliki przekazane do OneDrive dla Firm
-- Teams wiadomości czatu, w tym wiadomości prywatne, wiadomości kanałów i obrazy używane w czatach
+- Teams wiadomości czatu, w tym wiadomości prywatnych, wiadomości kanału i obrazów używanych w czatach
   
-Uruchomienie nowej lokalizacji geograficznej centrum danych nie ma wpływu na istniejących klientów, którzy mają swoje podstawowe dane klienta przechowywane w istniejącej już lokalizacji geograficznej centrum danych. Nie wprowadzamy żadnych unikatowych funkcji, funkcji ani certyfikatów zgodności za pomocą nowego geolokalizacji centrum danych. Klient w dowolnej z tych dwóch lokalizacji geograficznych będzie miał taki sam poziom kontroli jakości usług, wydajności i zabezpieczeń jak wcześniej. Oferujemy istniejącym klientom wymienionym w tabeli poniżej opcji żądania wczesnej migracji podstawowych danych klientów ich organizacji w spoczynku do nowego geolokalizacji centrum danych.
+Uruchomienie nowego obszaru geograficznego centrum danych nie ma wpływu na istniejących klientów, którzy mają swoje podstawowe dane klienta przechowywane w już istniejącym centrum danych geograficznych. Nie wprowadzamy żadnych unikatowych możliwości, funkcji ani certyfikatów zgodności z nowym obszarem geograficznym centrum danych. Jako klient w każdym z tych dwóch obszarów geograficznych będziesz mieć taką samą jakość usług, wydajności i zabezpieczeń, jak wcześniej. Oferujemy istniejącym klientom wymienionym w poniższej tabeli opcję żądania wczesnej migracji podstawowych danych klientów w organizacji do nowego obszaru geograficznego centrum danych.
   
-| Klienci z kraju rejestracji dzierżawy w układzie | Poprzednie geolokalizacji centrum danych | Nowe geolokalizacji centrum danych | Dostępne geolokalizacji od |
+| Klienci z krajem rejestracji dzierżawy | Obszar geograficzny poprzedniego centrum danych | Obszar geograficzny nowego centrum danych | Obszar geograficzny jest dostępny od |
 |:-----|:-----|:-----|:-----|
 |**Japonia**| Azja/Pacyfik | Japonia | Grudzień 2014 r. |
 |**Australia, Nowa Zelandia, Fidżi**| Azja/Pacyfik | Australia | Marzec 2015 r. |
@@ -48,24 +48,24 @@ Uruchomienie nowej lokalizacji geograficznej centrum danych nie ma wpływu na is
 |**Szwajcaria, Liechtenstein**| Unia Europejska | Szwajcaria | Grudzień 2019 |
 |**Niemcy**| Unia Europejska | Niemcy | Grudzień 2019 |
 |**Norwegia**| Unia Europejska | Norwegia | Kwiecień 2020 |
-|**Brazylia**| Ameryka Północna | Brazylia | Listopad 2020 |
+|**Brazylia**| Americas | Brazylia | Listopad 2020 |
 |**Szwecja**| Unia Europejska | Szwecja | Listopad 2021 |
 
-Od 1 października 2020 r. klienci z subskrypcją usługi Office 365 Education uwzględnioną w dzierżawie nie są uprawnieni do migracji.
+Od 1 października 2020 r. klienci z subskrypcją Office 365 Education uwzględnioną w dzierżawie nie kwalifikują się do migracji.
 
-Pełna lista wszystkich lokalizacji geograficznych centrum danych, centrów danych i lokalizacji danych klientów w spoczynku jest dostępna jako część interakcyjnych map [centrów danych](https://office.com/datamaps). 
+Pełna lista wszystkich obszarów geograficznych centrum danych, centrów danych i lokalizacji danych klientów magazynowanych jest dostępna w ramach [interaktywnych map centrów danych](https://office.com/datamaps). 
   
-## <a name="data-residency-option"></a>Opcja przechowywania danych
+## <a name="data-residency-option"></a>Opcja rezydencji danych
 
-Zapewniamy opcję przechowywania danych uprawnionym Microsoft 365, którzy są objęci lokalizacjami geograficznymi centrum danych wymienionymi w powyższej tabeli. Dzięki tej opcji uprawnieni klienci z wymaganiami przechowywania danych mogą zażądać migracji podstawowych danych klientów swojej organizacji do nowego geolokalizacji centrum danych.  Firma Microsoft zaoferuje zatwierdzone terminy ostateczne wszystkim uprawnionym klientom, którzy zażądają migracji w oknie rejestracji.  Przejrzyj stronę [Jak zażądać przeniesienia danych](request-your-data-move.md) , aby uzyskać więcej szczegółowych informacji na temat otwartego okna rejestracji dla geolokalizacji centrum danych oraz czynności wymagane do zarejestrowania się w programie.  Przeniesienie danych może potrwać do 24 miesięcy po zakończeniu okresu żądania.
+Udostępniamy opcję przechowywania danych uprawnionym Microsoft 365 klientom, którzy są objęci obszarami geograficznymi centrum danych wymienionymi w powyższej tabeli. Dzięki tej opcji uprawnieni klienci z wymaganiami dotyczącymi rezydencji danych mogą zażądać migracji podstawowych danych klientów w organizacji w spoczynku do nowego obszaru geograficznego centrum danych.  Firma Microsoft zaoferuje zatwierdzony termin wszystkim uprawnionym klientom, którzy zażądają migracji w oknie rejestracji.  Przejrzyj stronę [Jak zażądać przeniesienia danych, aby](request-your-data-move.md) uzyskać więcej szczegółów na temat otwartego okna rejestracji dla obszaru geograficznego centrum danych oraz kroków rejestracji w programie.  Przenoszenie danych może potrwać do 24 miesięcy po zakończeniu okresu żądania.
 
-Nie wprowadzamy żadnych unikatowych funkcji, funkcji ani certyfikatów zgodności za pomocą nowego geolokalizacji centrum danych.
+Nie wprowadzamy żadnych unikatowych możliwości, funkcji ani certyfikatów zgodności z nowym obszarem geograficznym centrum danych.
     
-Złożoność, dokładność i skala, przy której musimy wykonywać dane, jest przenosowana w globalnie obsługiwanym i zautomatyzowanym środowisku, aby nie można było udostępniać jej w przypadku przenoszenia danych dzierżawy lub innej pojedynczej dzierżawy. Po zakończeniu przenoszenia danych klienci otrzymają jedno potwierdzenie w Centrum wiadomości na usługę uczestniczącą w programie. 
+Złożoność, precyzja i skala, z jaką musimy wykonywać przenoszenie danych w środowisku obsługiwanym globalnie i zautomatyzowanym, uniemożliwia udostępnianie danych, gdy oczekuje się ukończenia przenoszenia danych dla dzierżawy lub dowolnej innej pojedynczej dzierżawy. Po zakończeniu przenoszenia danych klienci otrzymają jedno potwierdzenie w Centrum komunikatów na uczestniczącą usługę. 
     
-Przeniesienie danych to operacja back-end usługi, która ma minimalny wpływ na użytkowników końcowych. Funkcje, których może to wpłynąć, są wymienione na [stronie Podczas i po przenoszeniu](during-and-after-your-data-move.md) danych. Firma Microsoft jest zgodna z Umową o poziomie usług [online firmy Microsoft (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) w zakresie dostępności, więc nie ma nic do przygotowania się lub monitorowania w trakcie procesu przenoszenia przez klientów. W razie potrzeby zostanie wykonane powiadomienie o wszelkiej konserwacji usługi. 
+Przenoszenie danych to operacja usługi zaplecza o minimalnym wpływie na użytkowników końcowych. Funkcje, których może to dotyczyć, są wyświetlane na stronie [Przenoszenie danych w trakcie i po jej zakończeniu](during-and-after-your-data-move.md) . Przestrzegamy [umowy dotyczącej poziomu usług online firmy Microsoft (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) w celu zapewnienia dostępności, dlatego klienci nie muszą przygotowywać się do przenoszenia ani monitorować ich. Powiadomienie o każdej konserwacji usługi jest wykonywane w razie potrzeby. 
 
-Przeniesienie danych do nowego geolokalizacji centrum danych nie powoduje dodatkowych kosztów dla klienta.
+Przenoszenie danych do nowego centrum danych geograficznych jest wykonywane bez dodatkowych kosztów dla klienta.
     
 ## <a name="related-topics"></a>Tematy pokrewne 
  
@@ -77,4 +77,4 @@ Przeniesienie danych do nowego geolokalizacji centrum danych nie powoduje dodatk
   
 [Usługi platformy Azure według regionów](https://azure.microsoft.com/regions/)
 
-[Teams w przypadku Microsoft 365 z obsługą wielu lokalizacji geograficznych](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Teams doświadczenie w dzierżawie z obsługą wielu obszarów geograficznych Microsoft 365](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

@@ -1,8 +1,8 @@
 ---
-title: Optymalizowanie wagi stron na SharePoint nowoczesnych stron witryny w trybie online
+title: Optymalizowanie wagi strony na nowoczesnych stronach witryny usługi SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
@@ -20,70 +20,70 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Dowiedz się, jak za pomocą narzędzia Diagnostyka stron zoptymalizować SharePoint nowoczesnych stron witryny w trybie online.
-ms.openlocfilehash: 2c7221befc89fd0385b3e96a31fc7721f012628d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak za pomocą narzędzia diagnostyki strony zoptymalizować wagę strony na nowoczesnych stronach witryny SharePoint Online.
+ms.openlocfilehash: 01a1976972983cccf3e93006e395f789d5882eff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988412"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101210"
 ---
-# <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optymalizowanie wagi stron na SharePoint nowoczesnych stron witryny w trybie online
+# <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optymalizowanie wagi strony na nowoczesnych stronach witryny usługi SharePoint Online
 
-SharePoint Nowoczesne strony witryny w trybie online zawierają szeregowy kod, który jest wymagany do renderowania zawartości strony, w tym obrazów, tekstu, obiektów w obszarze zawartości pod paskami nawigacji/poleceń i innymi kodami HTML, które są strukturyą strony. Weight (Waga strony) to miara tego kodu HTML i powinna być ograniczona w celu zapewnienia optymalnego czasu ładowania stron.
+SharePoint Nowoczesne strony witryny online zawierają serializowany kod, który jest wymagany do renderowania zawartości strony, w tym obrazów, tekstu, obiektów w obszarze zawartości poniżej pasków nawigacji/poleceń i innego kodu HTML, który tworzy strukturę strony. Waga strony jest miarą tego kodu HTML i powinna być ograniczona w celu zapewnienia optymalnego czasu ładowania strony.
 
-Ten artykuł pomoże Ci w zrozumieniu sposobu zmniejszenia wagi stron na nowoczesnych stronach witryny.
-
->[!NOTE]
->Aby uzyskać więcej informacji na temat wydajności w nowoczesnych SharePoint Online, zobacz Wydajność w [nowoczesnym SharePoint sieci](/sharepoint/modern-experience-performance).
-
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Używanie narzędzia Diagnostyka SharePoint do analizowania wagi stron
-
-Narzędzie Diagnostyka stron dla programu SharePoint to rozszerzenie przeglądarki dla nowych przeglądarek Microsoft Edge (https://www.microsoft.com/edge)i Chrome), które analizuje zarówno nowoczesne portal SharePoint Online, jak i klasyczne strony witryn publikowania. To narzędzie udostępnia raport dla każdej analizowanej strony pokazujący, jak ta strona działa w stosunku do zdefiniowanego zestawu kryteriów wydajności. Aby zainstalować narzędzie Diagnostyka stron dla SharePoint informacji, odwiedź stronę Używanie narzędzia Diagnostyka stron dla usługi [SharePoint Online](page-diagnostics-for-spo.md).
+Ten artykuł pomoże Ci zrozumieć, jak zmniejszyć wagę strony na nowoczesnych stronach witryny.
 
 >[!NOTE]
->Narzędzie Diagnostyka stron działa tylko w SharePoint Online i nie można go używać na SharePoint stronie systemu.
+>Aby uzyskać więcej informacji na temat wydajności nowoczesnych portali usługi SharePoint Online, zobacz [Wydajność w nowoczesnym środowisku SharePoint](/sharepoint/modern-experience-performance).
 
-Podczas analizowania strony SharePoint za pomocą narzędzia Diagnostyka SharePoint strony można wyświetlić informacje o stronie w obszarze Waga strony poniżej **500 KB** wyniku okienka Testy diagnostyczne. Jeśli waga strony jest poniżej wartości bazowej, wynik zostanie wyświetlony na zielono, a kolor czerwony, jeśli waga strony jest większa niż wartość planu bazowego.
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Analizowanie wagi strony przy użyciu narzędzia Diagnostyka strony dla SharePoint
 
-Możliwe wyniki:
+Narzędzie Diagnostyka strony dla SharePoint jest rozszerzeniem przeglądarki dla nowych Microsoft Edge (https://www.microsoft.com/edge)i przeglądarek Chrome, które analizują zarówno nowoczesne strony SharePoint Online, jak i klasyczne strony witryn publikowania. Narzędzie udostępnia raport dla każdej analizowanej strony pokazujący sposób działania strony względem zdefiniowanego zestawu kryteriów wydajności. Aby zainstalować i dowiedzieć się więcej o narzędziu Diagnostyka strony dla SharePoint, odwiedź stronę [Korzystanie z narzędzia diagnostyki strony dla SharePoint Online](page-diagnostics-for-spo.md).
 
-- **Wymagana uwaga** (kolor czerwony): waga strony przekracza 500 KB
-- **Nie jest wymagane żadne działanie** (kolor zielony): Waga strony jest poniżej 500 KB
+>[!NOTE]
+>Narzędzie diagnostyki strony działa tylko dla SharePoint Online i nie może być używane na stronie systemu SharePoint.
 
-Jeśli w sekcji Wymagana uwaga jest wyświetlany wynik o wysokości poniżej **500 KB**, możesz kliknąć wynik, aby uzyskać szczegółowe informacje.
+Podczas analizowania strony witryny SharePoint za pomocą narzędzia Diagnostyka strony dla SharePoint można wyświetlić informacje o stronie w wyniku **500 KB** strony w okienku _Testy diagnostyczne_. Wynik zostanie wyświetlony na zielono, jeśli waga strony znajduje się poniżej wartości odniesienia, i czerwona, jeśli waga strony przekroczy wartość punktu odniesienia.
 
-![Prośby o SharePoint wyników.](../media/modern-portal-optimization/pagediag-page-weight.png)
+Możliwe wyniki obejmują:
 
-## <a name="remediate-page-weight-issues"></a>Rozwiązywanie problemów dotyczących wagi stron
+- **Wymagana uwaga (czerwona** ): waga strony przekracza 500 KB
+- **Nie jest wymagana żadna akcja** (kolor zielony): waga strony jest poniżej 500 KB
 
-Jeśli waga strony przekracza 500 KB, możesz poprawić ogólny czas ładowania stron, zmniejszając liczbę składników Web Part i ograniczając zawartość stron do odpowiedniego stopnia.
+Jeśli w sekcji **Wymagana uwaga** zostanie wyświetlony wynik **Waga strony poniżej 500 KB**, możesz kliknąć wynik, aby uzyskać szczegółowe informacje.
+
+![Żądania SharePoint wyników.](../media/modern-portal-optimization/pagediag-page-weight.png)
+
+## <a name="remediate-page-weight-issues"></a>Korygowanie problemów z wagą strony
+
+Jeśli waga strony przekroczy 500 KB, możesz skrócić ogólny czas ładowania strony, zmniejszając liczbę składników Web Part i ograniczając zawartość strony do odpowiedniego stopnia.
 
 Ogólne wskazówki dotyczące zmniejszania wagi strony obejmują:
 
-- Ogranicz zawartość strony do rozsądnej ilości i używaj wielu stron dla powiązanej zawartości.
-- Zminimalizuj użycie składników Web Part, które mają duży rozmiar torby na właściwość.
-- Używaj nieinterakcyjnych widoków rzutowania, jeśli to możliwe.
-- Optymalizuj rozmiary obrazów, odpowiednio do rozmiaru obrazów, stosując skompresowane formaty obrazów i upewniając się, że są one pobierane z CDN.
+- Ogranicz zawartość strony do rozsądnej ilości i użyj wielu stron do powiązanej zawartości.
+- Zminimalizuj użycie składników Web Part, które mają duże torby właściwości.
+- Jeśli to możliwe, użyj nieinterakcyjnych widoków zestawienia.
+- Zoptymalizuj rozmiary obrazów, odpowiednio określając rozmiary obrazów, używając skompresowanych formatów obrazów i zapewniając, że są one pobierane z CDN.
 
-Dodatkowe wskazówki dotyczące ograniczania wagi stron można znaleźć w następującym artykule:
+Dodatkowe wskazówki dotyczące ograniczania wagi strony można znaleźć w następującym artykule:
 
 - [Optymalizowanie wydajności strony w SharePoint](/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
 
-Zanim dokonasz poprawek stron w celu rozwiązania problemów z wydajnością zanotuj czas ładowania stron w wynikach analizy. Uruchom ponownie narzędzie po poprawce, aby sprawdzić, czy nowy wynik nie jest w standardzie bazowym, i sprawdź czas ładowania nowej strony, aby sprawdzić, czy w programie Wiad.
+Przed wprowadzeniem poprawek strony w celu rozwiązania problemów z wydajnością zanotuj czas ładowania strony w wynikach analizy. Uruchom narzędzie ponownie po poprawce, aby sprawdzić, czy nowy wynik mieści się w standardowej linii bazowej, i sprawdź czas ładowania nowej strony, aby sprawdzić, czy nastąpiła poprawa.
 
-![Wyniki czasu ładowania stron.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Wyniki czasu ładowania strony.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
->Czas ładowania stron może się różnić w zależności od różnych czynników, takich jak obciążenie sieci, godzina dnia i inne warunki przejściowy. Należy przetestować czas ładowania strony kilka razy przed wprowadzeniem zmian i po ich wymuseniu, aby ułatwić uśredninie wyników.
+>Czas ładowania strony może się różnić w zależności od różnych czynników, takich jak obciążenie sieci, godzina dnia i inne przejściowe warunki. Czas ładowania strony należy przetestować kilka razy przed wprowadzeniem zmian i po nich, aby ułatwić uśrednienie wyników.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Dostosowywanie SharePoint online](tune-sharepoint-online-performance.md)
+[Dostrajanie wydajności usługi SharePoint Online](tune-sharepoint-online-performance.md)
 
-[Dostosowywanie Office 365 wydajności](tune-microsoft-365-performance.md)
+[Dostrajanie wydajności Office 365](tune-microsoft-365-performance.md)
 
-[Wydajność w nowoczesnym SharePoint klienta](/sharepoint/modern-experience-performance)
+[Wydajność w nowoczesnym środowisku SharePoint](/sharepoint/modern-experience-performance)
 
 [Sieci dostarczania zawartości](content-delivery-networks.md)
 

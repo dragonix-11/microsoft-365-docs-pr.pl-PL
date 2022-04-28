@@ -1,8 +1,8 @@
 ---
-title: Optymalizowanie ramek iFrame SharePoint nowoczesnych i klasycznych stron witryny publikowania w trybie online
+title: Optymalizowanie ramek iFrame na stronach nowoczesnej i klasycznej witryny publikowania w usłudze SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
@@ -18,66 +18,66 @@ ms.custom: Adm_O365
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Dowiedz się, jak zoptymalizować wydajność ramek iFrame w SharePoint nowoczesnych i klasycznych stron witryny publikowania w trybie online.
-ms.openlocfilehash: e38dd3922444228cdf54c8ef306fbbd9eafb81c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak zoptymalizować wydajność ramek iFrame na stronach nowoczesnej i klasycznej witryny publikowania w usłudze SharePoint Online.
+ms.openlocfilehash: 0e8710b76d20388ba3514b32fe598e982a7a9561
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984278"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100704"
 ---
-# <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optymalizowanie ramek iFrame SharePoint nowoczesnych i klasycznych stron witryny publikowania w trybie online
+# <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optymalizowanie ramek iFrame na stronach nowoczesnej i klasycznej witryny publikowania w usłudze SharePoint Online
 
-Ramki iFrame mogą być przydatne do wyświetlania podglądu zawartości sformatowanych, takiej jak klipy wideo lub inne multimedia. Ponieważ jednak elementy iFrame wczytują osobną stronę w obrębie strony witryny SharePoint, zawartość załadowana w elementach iFrame może zawierać duże obrazy, klipy wideo lub inne elementy, które mogą przyczyniać się do ogólnego ładowania strony i których nie można kontrolować na stronie. Ten artykuł pomoże Ci zrozumieć, jak określić, jak ramki iFrame na stronach wpływają na odbierane opóźnienia użytkowników i jak rozwiązać typowe problemy.
-
->[!NOTE]
->Aby uzyskać więcej informacji na temat wydajności w SharePoint witrynach nowoczesnych w trybie online, zobacz Wydajność [w nowoczesnym SharePoint witryn.](/sharepoint/modern-experience-performance)
-
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>Używanie narzędzia Diagnostyka stron dla SharePoint do analizowania składników Web Part za pomocą ramek iFrame
-
-Narzędzie Diagnostyka stron dla programu SharePoint to rozszerzenie przeglądarki dla nowych przeglądarek Microsoft Edge (https://www.microsoft.com/edge)i Chrome), które analizuje zarówno nowoczesne portal SharePoint Online, jak i klasyczne strony witryn publikowania. To narzędzie udostępnia raport dla każdej analizowanej strony pokazujący, jak ta strona działa w stosunku do zdefiniowanego zestawu kryteriów wydajności. Aby zainstalować narzędzie Diagnostyka stron dla SharePoint informacji, odwiedź stronę Używanie narzędzia Diagnostyka stron dla usługi [SharePoint Online](page-diagnostics-for-spo.md).
+Elementy iFrame mogą być przydatne do podglądu rozbudowanej zawartości, takiej jak filmy wideo lub inne nośniki. Jednak ponieważ elementy iFrame ładują oddzielną stronę na stronie witryny SharePoint, zawartość załadowana w elemencie iFrame może zawierać duże obrazy, filmy wideo lub inne elementy, które mogą przyczyniać się do ogólnego czasu ładowania strony i nie można kontrolować na stronie. Ten artykuł pomoże Ci zrozumieć, jak określić, w jaki sposób elementy iFrame na stronach wpływają na opóźnienie postrzegane przez użytkownika i jak rozwiązywać typowe problemy.
 
 >[!NOTE]
->Narzędzie Diagnostyka stron działa tylko w SharePoint Online i nie można go używać na SharePoint stronie systemu.
+>Aby uzyskać więcej informacji na temat wydajności nowoczesnych witryn usługi SharePoint Online, zobacz [Wydajność w nowoczesnym środowisku SharePoint](/sharepoint/modern-experience-performance).
 
-Podczas analizowania strony SharePoint za pomocą narzędzia Diagnostyka SharePoint strony można wyświetlić informacje o elementach Web Part zawierających elementy iFrame w okienku _Testy_ diagnostyczne. Metryka planu bazowego jest taka sama w przypadku stron nowoczesnych i klasycznych.
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>Używanie narzędzia Diagnostyka strony dla SharePoint do analizowania składników Web Part przy użyciu elementów iFrame
 
-Możliwe wyniki:
-
-- **Wymagana uwaga** (kolor czerwony): strona zawiera **co najmniej trzy** składniki Web Part używające ramek iFrame
-- **Możliwości udoskonalania** (kolor żółty): strona zawiera **jeden lub dwa** składniki Web Part używające ramek iFrame
-- **Nie jest wymagane żadne działanie** (kolor zielony): strona nie zawiera składników Web Part używających elementów iFrame
-
-Jeśli składników **Web Part** używające wyników wykrytych przez elementy iFrame pojawia  się w sekcji  Wymagane możliwości udoskonalania lub Uwaga), możesz kliknąć wynik, aby wyświetlić party Web Part zawierające elementy iFrame.
-
-![Wyniki narzędzia Diagnostyka stron.](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
-
-## <a name="remediate-iframe-performance-issues"></a>Rozwiązywanie problemów z wydajnością ramek iFrame
-
-Używanie składników **Web Part przy użyciu** wyników wykrytych za pomocą ramek iFrame w narzędziu Diagnostyka stron do określenia, które części Web Part zawierają elementy iFrame i mogą skutkować wolnym czasem ładowania stron.
-
-Ramki iFrame są z natury wolne, ponieważ ładują oddzielną stronę zewnętrzną, w tym całą skojarzoną z nią zawartość, taką jak kod JavaScript, CSS i elementy struktury, co potencjalnie zwiększa obciążenie strony witryny o współczynnik co najmniej dwa.
-
-Postępuj zgodnie z poniższymi wskazówkami, aby zapewnić optymalne użycie ramek iFrame.
-
-- Jeśli to możliwe, użyj obrazów zamiast ramek iFrame, jeśli podgląd jest mały, aby rozpocząć od lub nieinterakcyjnie.
-- Jeśli musisz użyć ramek iFrame, zminimalizuj ich liczbę i/lub przenieś je poza rzutni.
-- Osadzone Office, takie jak word, Excel i PowerPoint są interakcyjne, ale ich ładowanie jest powolne. Miniatury obrazów z linkiem do pełnego dokumentu często są lepsze.
-- Osadzone klipy wideo z serwisu YouTube i kanały serwisu Twitter zwykle lepiej się w nich wykonują w przypadku ramek iFrame, ale korzystaj z tego rodzaju osadzania w sposób żmudny.
-- Odizolowane części web part stanowią rozsądny wyjątek, ale minimalizują ich liczbę i położenie w rzutni.
-- Jeśli element iFrame znajduje się poza rzutnią, rozważ opóźnienie renderowania  ramki iFrame do momentu jego wyświetlenia za pomocą serwera PrzecięciaOb.
-
-Zanim dokonasz poprawek stron w celu rozwiązania problemów z wydajnością zanotuj czas ładowania stron w wynikach analizy. Uruchom ponownie narzędzie po poprawce, aby sprawdzić, czy nowy wynik nie jest w standardzie bazowym, i sprawdź czas ładowania nowej strony, aby sprawdzić, czy w programie Wiad.
-
-![Wyniki czasu ładowania stron.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+Narzędzie Diagnostyka strony dla SharePoint jest rozszerzeniem przeglądarki dla nowych Microsoft Edge (https://www.microsoft.com/edge)i przeglądarek Chrome, które analizują zarówno nowoczesne strony SharePoint Online, jak i klasyczne strony witryn publikowania. Narzędzie udostępnia raport dla każdej analizowanej strony pokazujący sposób działania strony względem zdefiniowanego zestawu kryteriów wydajności. Aby zainstalować i dowiedzieć się więcej o narzędziu Diagnostyka strony dla SharePoint, odwiedź stronę [Korzystanie z narzędzia diagnostyki strony dla SharePoint Online](page-diagnostics-for-spo.md).
 
 >[!NOTE]
->Czas ładowania stron może się różnić w zależności od różnych czynników, takich jak obciążenie sieci, godzina dnia i inne warunki przejściowy. Należy przetestować czas ładowania strony kilka razy przed wprowadzeniem zmian i po ich wymuseniu, aby ułatwić uśredninie wyników.
+>Narzędzie diagnostyki strony działa tylko dla SharePoint Online i nie może być używane na stronie systemu SharePoint.
+
+Podczas analizowania strony witryny SharePoint za pomocą narzędzia Diagnostyka strony dla SharePoint można wyświetlić informacje o składnikach Web Part zawierających elementy iFrame w okienku _Testy diagnostyczne_. Metryka punktu odniesienia jest taka sama dla nowoczesnych i klasycznych stron.
+
+Możliwe wyniki obejmują:
+
+- **Wymagana uwaga** (czerwona): strona zawiera **co najmniej trzy** składniki Web Part korzystające z ramek iFrame
+- **Możliwości poprawy** (żółty): strona zawiera **jeden lub dwa** składniki Web Part przy użyciu elementów iFrame
+- **Nie jest wymagana żadna akcja** (kolor zielony): strona nie zawiera składników Web Part korzystających z elementów iFrame
+
+Jeśli w sekcji **Możliwości poprawy** lub **Wymagana uwaga** w **wynikach zostaną wyświetlone składniki Web Part używające elementów iFrame**, możesz kliknąć wynik, aby wyświetlić składniki Web Part zawierające elementy iFrame.
+
+![Wyniki narzędzia diagnostyki strony.](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
+
+## <a name="remediate-iframe-performance-issues"></a>Korygowanie problemów z wydajnością elementu iFrame
+
+Użyj **składników Web Part przy użyciu wykrytych elementów iFrame** , aby określić, które składniki Web Part zawierają elementy iFrame i mogą przyczyniać się do wydłużenia czasu ładowania strony.
+
+Elementy iFrame są z natury powolne, ponieważ ładują oddzielną stronę zewnętrzną, w tym całą skojarzoną zawartość, taką jak javascript, CSS i elementy struktury, potencjalnie zwiększając obciążenie strony witryny o co najmniej dwa czynniki.
+
+Postępuj zgodnie ze wskazówkami poniżej, aby zapewnić optymalne wykorzystanie ramek iFrame.
+
+- Jeśli to możliwe, użyj obrazów zamiast ramek iFrame, jeśli wersja zapoznawcza jest mała na początek lub nieinterakcyjna.
+- Jeśli elementy iFrame muszą być używane, zminimalizuj liczbę i/lub przenieś je z widoku.
+- Osadzone pliki Office, takie jak Word, Excel i PowerPoint, są interaktywne, ale wolno się ładują. Miniatury obrazów z linkiem do pełnego dokumentu często będą działać lepiej.
+- Osadzone filmy z YouTube i kanały twitterowe mają tendencję do lepszego działania w ramkach iFrame, ale używają tego rodzaju osadzania rozsądnie.
+- Izolowane składniki Web Part są rozsądnym wyjątkiem, ale minimalizują ich liczbę i położenie w okienku widoków.
+- Jeśli obiekt iFrame znajduje się poza portem widoków, rozważ użycie serwera _IntersectionObserver_ , aby opóźnić renderowanie elementu iFrame, dopóki nie zostanie on wyświetlony.
+
+Przed wprowadzeniem poprawek strony w celu rozwiązania problemów z wydajnością zanotuj czas ładowania strony w wynikach analizy. Uruchom narzędzie ponownie po poprawce, aby sprawdzić, czy nowy wynik mieści się w standardowej linii bazowej, i sprawdź czas ładowania nowej strony, aby sprawdzić, czy nastąpiła poprawa.
+
+![Wyniki czasu ładowania strony.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+
+>[!NOTE]
+>Czas ładowania strony może się różnić w zależności od różnych czynników, takich jak obciążenie sieci, godzina dnia i inne przejściowe warunki. Czas ładowania strony należy przetestować kilka razy przed wprowadzeniem zmian i po nich, aby ułatwić uśrednienie wyników.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Dostosowywanie SharePoint online](tune-sharepoint-online-performance.md)
+[Dostrajanie wydajności usługi SharePoint Online](tune-sharepoint-online-performance.md)
 
-[Dostosowywanie Office 365 wydajności](tune-microsoft-365-performance.md)
+[Dostrajanie wydajności Office 365](tune-microsoft-365-performance.md)
 
-[Wydajność w nowoczesnym SharePoint klienta](/sharepoint/modern-experience-performance)
+[Wydajność w nowoczesnym środowisku SharePoint](/sharepoint/modern-experience-performance)

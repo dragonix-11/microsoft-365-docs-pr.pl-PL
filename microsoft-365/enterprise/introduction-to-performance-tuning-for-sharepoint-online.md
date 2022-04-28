@@ -1,8 +1,8 @@
 ---
-title: Wprowadzenie do dostosowywania wydajności dla usługi SharePoint Online
+title: Wprowadzenie do dostrajania wydajności dla usługi SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/22/2018
 audience: Admin
 ms.topic: overview
@@ -16,67 +16,67 @@ f1.keywords:
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
-description: W tym artykule wyjaśniono, jakie konkretne aspekty należy uwzględnić podczas projektowania stron w celu jak najlepszej wydajności w SharePoint Online.
-ms.openlocfilehash: deabb059e2121743b35d5519e4b8684a08dd28b4
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: W tym artykule wyjaśniono, jakie konkretne aspekty należy wziąć pod uwagę podczas projektowania stron, aby uzyskać najlepszą wydajność w usłudze SharePoint Online.
+ms.openlocfilehash: b31696766d3201b6677bf0c63108fad72c3ed49d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014693"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100748"
 ---
-# <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Wprowadzenie do dostosowywania wydajności dla usługi SharePoint Online
+# <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Wprowadzenie do dostrajania wydajności dla usługi SharePoint Online
 
-W tym artykule wyjaśniono, jakie konkretne aspekty należy uwzględnić podczas projektowania stron w celu jak najlepszej wydajności w SharePoint Online.
+W tym artykule wyjaśniono, jakie konkretne aspekty należy wziąć pod uwagę podczas projektowania stron, aby uzyskać najlepszą wydajność w usłudze SharePoint Online.
      
-## <a name="sharepoint-online-metrics"></a>SharePoint metryk online
+## <a name="sharepoint-online-metrics"></a>metryki usługi SharePoint Online
 
-Następujące ogólne metryki wydajności dla usługi SharePoint Online dostarczają rzeczywistych danych dotyczących wydajności:
+Następujące ogólne metryki dla usługi SharePoint Online zapewniają rzeczywiste dane dotyczące wydajności:
   
-- Szybkość ładowania stron
+- Jak szybko ładują się strony
     
-- Ile odsyłek na stronę jest wymaganych odjęć
+- Ile rund jest wymaganych na stronę
     
 - Problemy z usługą
     
 - Inne rzeczy, które powodują obniżenie wydajności
     
-### <a name="conclusions-reached-because-of-the-data"></a>Wnioski z danych
+### <a name="conclusions-reached-because-of-the-data"></a>Wnioski osiągnięte z powodu danych
 
-Z danych do nas:
+Dane mówią nam:
   
-- Większość stron w trybie online SharePoint.
+- Większość stron działa dobrze w usłudze SharePoint Online.
     
-- Strony, które nie są dostosowane, szybko się ładują.
+- Strony, które nie są dostosowane, ładują się szybko.
     
-- OneDrive dla Firm, witryny zespołu i strony systemowe, takie _layouts itp., można szybko załadować.
+- OneDrive dla Firm, witryny zespołu i strony systemowe, takie jak _layouts itp., są szybkie do załadowania.
     
-- Ładowanie najwolniejszych 1% SharePoint w trybie online trwa ponad 5000 milisekund.
+- Najwolniejsze 1% stron SharePoint Online zajmuje ponad 5000 milisekund.
     
-Jednym z prostych testów porównawczych, który można stosować, jest mierzenie wydajności przez porównanie czasu ładowania własnego portalu z czasem ładowania strony głównej usługi OneDrive dla Firm, ponieważ korzysta on z kilku dostosowanych funkcji. Często będzie to pierwszy krok, który zostanie przez pomoc techniczną ukończony podczas rozwiązywania problemów z wydajnością sieci.
+Jednym z prostych testów porównawczych, których można użyć, jest pomiar wydajności przez porównanie czasu ładowania własnego portalu z czasem ładowania strony głównej OneDrive dla Firm, ponieważ używa ona kilku dostosowanych funkcji. Często jest to pierwszy krok, który pomoc techniczna poprosi o ukończenie rozwiązywania problemów z wydajnością sieci.
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>Używanie standardowego konta użytkownika podczas sprawdzania wydajności
 
-Administrator zbioru witryn, właściciel witryny, redaktor lub współautor należą do innych grup zabezpieczeń, mają więcej uprawnień i dlatego mają dodatkowe elementy SharePoint które można ładować na stronie.
+Administrator zbioru witryn, właściciel witryny, edytor lub współautor należą do innych grup zabezpieczeń, mają więcej uprawnień i w związku z tym mają dodatkowe elementy, które SharePoint ładowane na stronie.
   
-Dotyczy to usługi SharePoint i usługi SharePoint Online, ale w scenariuszu lokalnym różnice nie będą tak łatwo zauważyć, jak w SharePoint Online.
+Ma to zastosowanie do SharePoint lokalnych i SharePoint Online, ale w scenariuszu lokalnym różnice nie będą tak łatwo widoczne, jak w SharePoint Online.
   
-Aby poprawnie ocenić sposób działania strony dla użytkowników, należy użyć standardowego konta użytkownika w celu uniknięcia ładowania kontrolek tworzenia i dodatkowego ruchu związanego z grupami zabezpieczeń.
+Aby poprawnie ocenić sposób działania strony dla użytkowników, należy użyć standardowego konta użytkownika, aby uniknąć ładowania kontrolek tworzenia i dodatkowego ruchu związanego z grupami zabezpieczeń.
   
-## <a name="connection-categories-for-performance-tuning"></a>Kategorie połączeń w celu dostosowywania wydajności
+## <a name="connection-categories-for-performance-tuning"></a>Kategorie połączeń na potrzeby dostrajania wydajności
 
-Połączenia między serwerem a użytkownikiem można podzielić na trzy główne składniki. Przejmij je podczas projektowania SharePoint w trybie online, aby uzyskać wgląd w czasy ładowania.
+Połączenia między serwerem a użytkownikiem można podzielić na trzy główne składniki. Należy wziąć pod uwagę te kwestie podczas projektowania stron SharePoint Online, aby uzyskać wgląd w czas ładowania.
   
-- **Serwer** Serwery host przez firmę Microsoft w centrach danych.
+- **Serwera** Serwery hostujące przez firmę Microsoft w centrach danych.
     
-- **Sieć** Sieć firmy Microsoft, Internet i sieć lokalna między centrum danych a użytkownikami.
+- **Sieci** Sieć firmy Microsoft, Internet i sieć lokalna między centrum danych a użytkownikami.
     
-- **Przeglądarka** Miejsce ładowania strony.
+- **Przeglądarka** Miejsce załadowania strony.
     
-W tych trzech połączeniach jest zazwyczaj pięć powodów, które powodują 95% wolnych stron. Każda z tych przyczyn jest omówiona w tym artykule:
+W ramach tych trzech połączeń zwykle istnieje pięć przyczyn, które powodują 95% wolnych stron. Każdy z tych powodów został omówiony w tym artykule:
   
 - Problemy z nawigacją
     
-- Rzutowania zawartości
+- Zestawienie zawartości
     
 - Duże pliki
     
@@ -86,80 +86,80 @@ W tych trzech połączeniach jest zazwyczaj pięć powodów, które powodują 95
     
 ### <a name="server-connection"></a>Połączenie z serwerem
 
-Wiele problemów, które wpływają na wydajność SharePoint w środowisku lokalnym, dotyczy również SharePoint online.
+Wiele problemów wpływających na wydajność SharePoint lokalnie dotyczy również usługi SharePoint Online.
   
-Zgodnie z oczekiwaniami masz znacznie większą kontrolę nad tym, jak serwery wykonują zadania z lokalnymi SharePoint. W SharePoint online sprawy są nieco inne. Im więcej pracy należy wykonać na serwerze, tym dłużej trwa renderowanie strony. W SharePoint najbardziej mnogiej winy pod tym względem są złożone strony z wieloma składników Web Part.
+Jak można się spodziewać, masz znacznie większą kontrolę nad tym, jak serwery działają przy użyciu lokalnego SharePoint. W przypadku SharePoint Online sytuacja jest nieco inna. Tym więcej pracy wykonujesz na serwerze, tym dłużej trwa renderowanie strony. W przypadku SharePoint największymi winowajcami w tym zakresie są złożone strony z wieloma składnikami Web Part.
   
-SharePoint serwera lokalnego
+lokalny serwer SharePoint
   
-![Zrzut ekranu przedstawiający serwer w środowisku lokalnym.](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+![Zrzut ekranu przedstawiający serwer lokalny.](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
 SharePoint Online
   
 ![Zrzut ekranu przedstawiający serwer w trybie online.](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
-W SharePoint online niektóre żądania stron mogą w rzeczywistości kończyć się na wywoływaniu wielu serwerów. Może nas na końcu zostać wyedytowana macierz żądań między serwerami dla poszczególnych żądań. Te interakcje są kosztowne z perspektywy ładowania strony i mogą spowolnić proces.
+W przypadku SharePoint Online niektóre żądania stron mogą w rzeczywistości wywoływać wiele serwerów. Może skończyć się macierz żądań między serwerami dla pojedynczego żądania. Te interakcje są kosztowne z perspektywy ładowania strony i spowalniają działanie.
   
-Przykładowe interakcje między serwerami to:
+Przykłady tych interakcji między serwerami to:
   
-- Web to SQL Servers
+- Serwery z sieci Web do SQL
     
-- Serwery aplikacji w sieci Web do
+- Serwery sieci Web do aplikacji
     
-Inna rzecz, która może spowolnić interakcje na serwerach, to zapisane w pamięci podręcznej błędy. W przeciwieństwie do SharePoint lokalnej istnieje prawdopodobieństwo, że nacisniesz ten sam serwer na stronie, która została odwiedzona wcześniej, co powoduje, że buforowanie obiektów jest przestarzałe.
+Inną rzeczą, która może spowolnić interakcje z serwerem, są chybienia pamięci podręcznej. W przeciwieństwie do lokalnego SharePoint istnieje niewielkie prawdopodobieństwo, że trafisz na ten sam serwer dla strony, która była wcześniej odwiedzana. Dzięki temu buforowanie obiektów staje się przestarzałe.
   
 ### <a name="network-connection"></a>Połączenie sieciowe
 
-W przypadku SharePoint sieci w sieci WAN, która nie korzysta z sieci WAN, możesz używać szybkiego połączenia między centrum danych i użytkownikami końcowymi. Ogólnie rzecz biorąc, zarządzanie jest łatwe z perspektywy sieci.
+W przypadku lokalnego SharePoint, który nie korzysta z sieci WAN, możesz użyć szybkiego połączenia między centrum danych a użytkownikami końcowymi. Ogólnie rzecz biorąc, rzeczy są łatwe do zarządzania z perspektywy sieci.
   
-W SharePoint Online należy wziąć pod uwagę jeszcze kilka czynników, na przykład:
+W przypadku usługi SharePoint Online należy wziąć pod uwagę jeszcze kilka czynników, na przykład:
   
 - Sieć firmy Microsoft
     
 - The Internet
     
-- The ISP
+- Usługodawca sieciowy
     
-Niezależnie od używanej SharePoint sieci (i od używanej sieci) zwykle oznacza to, że sieć jest zajęta:
+Niezależnie od używanej wersji SharePoint (i używanej sieci) są to następujące elementy, które zazwyczaj spowodują zajętość sieci:
   
-- Duży ład
+- Duży ładunek
     
 - Wiele plików
     
-- Duża odległość fizyczna od serwera
+- Duża fizyczna odległość do serwera
     
-Jedną z funkcji, z których można korzystać w SharePoint Online, jest aplikacja Microsoft CDN (Content Delivery Network). Centrum CDN w zasadzie jest dystrybuowaną kolekcją serwerów wdrożonych w wielu centrach danych. W CDN zawartość stron może być hostowana na serwerze blisko klienta, nawet jeśli klient znajduje się daleko od pochodzących SharePoint Server. Firma Microsoft będzie używać tego więcej w przyszłości do przechowywania lokalnych wystąpień stron, których nie można dostosować, na przykład na stronie głównej administratora usługi SharePoint Online. Aby uzyskać więcej informacji na temat sieci CDN, zobacz [Sieci dostarczania zawartości](content-delivery-networks.md).
+Jedną z funkcji, której można użyć w usłudze SharePoint Online, jest microsoft CDN (Content Delivery Network). CDN jest zasadniczo rozproszoną kolekcją serwerów wdrożonych w wielu centrach danych. Za pomocą CDN zawartość na stronach może być hostowana na serwerze znajdującym się blisko klienta, nawet jeśli klient znajduje się daleko od źródłowego serwera SharePoint Server. Firma Microsoft będzie używać tego więcej w przyszłości do przechowywania lokalnych wystąpień stron, których nie można dostosować, na przykład strony głównej administratora usługi SharePoint Online. Aby uzyskać więcej informacji na temat sieci CDN, zobacz [Sieci dostarczania zawartości](content-delivery-networks.md).
   
-Czymś, o czym musisz wiedzieć, ale o których być może nie uda Ci się zrobić zbyt wiele, jest szybkość połączenia Twojego internetowego. Szybkie połączenie można sprawdzić za pomocą prostego narzędzia do testowania szybkości połączenia.
+Coś, o czym musisz wiedzieć, ale może nie być w stanie zrobić wiele, to szybkość połączenia usługodawcy sieciowego. Proste narzędzie do testowania prędkości informuje o szybkości połączenia.
   
-### <a name="browser-connection"></a>Połączenie z przeglądarką
+### <a name="browser-connection"></a>Połączenie przeglądarki
 
-Istnieje kilka czynników, które należy uwzględnić w przeglądarkach sieci Web z perspektywy wydajności.
+Istnieje kilka czynników, które należy wziąć pod uwagę w przypadku przeglądarek internetowych z perspektywy wydajności.
   
-Odwiedzanie złożonych stron ma wpływ na wydajność. Większość przeglądarek ma tylko niewielką pamięć podręczną (około 90 MB), a średnia strona sieci Web zazwyczaj wynosi około 1,6 MB. Może to zająć trochę czasu.
+Odwiedzanie złożonych stron wpłynie na wydajność. Większość przeglądarek ma tylko niewielką pamięć podręczną (około 90 MB), podczas gdy średnia strona internetowa zwykle wynosi około 1,6 MB. To nie trwa długo, aby się przyzwyczaić.
   
-Być może również występuje problem z przepustowością. Jeśli na przykład użytkownik ogląda klipy wideo w innej sesji, ma to wpływ na wydajność SharePoint strony. Nie można uniemożliwić użytkownikom przesyłania strumieniowego multimediów, ale można kontrolować sposób ładowania strony przez użytkowników.
+Problemem może być również przepustowość. Jeśli na przykład użytkownik ogląda filmy wideo w innej sesji, wpłynie to na wydajność strony SharePoint. Chociaż nie możesz uniemożliwić użytkownikom przesyłania strumieniowego multimediów, możesz kontrolować sposób ładowania strony dla użytkowników.
   
-Zapoznaj się z następującymi artykułami, aby uzyskać informacje na temat SharePoint dostosowywania stron w trybie online i innych najlepszych rozwiązań, które pomogą Ci osiągnąć optymalną wydajność.
+Zapoznaj się z następującymi artykułami dotyczącymi różnych technik dostosowywania stron SharePoint Online i innych najlepszych rozwiązań, które pomogą Ci osiągnąć optymalną wydajność.
   
-- [Opcje nawigacji dla aplikacji SharePoint Online](navigation-options-for-sharepoint-online.md)
+- [Opcje nawigacji dla SharePoint Online](navigation-options-for-sharepoint-online.md)
     
-- [Korzystanie z narzędzia Diagnostyka stron dla usługi SharePoint Online](page-diagnostics-for-spo.md)
+- [Korzystanie z narzędzia diagnostyki strony dla usługi SharePoint Online](page-diagnostics-for-spo.md)
     
-- [Optymalizacja obrazu dla aplikacji SharePoint Online](image-optimization-for-sharepoint-online.md)
+- [Optymalizacja obrazów dla usługi SharePoint Online](image-optimization-for-sharepoint-online.md)
     
-- [Opóźnienie ładowania obrazów i kodu JavaScript w u SharePoint Online](delay-loading-images-and-javascript-in-sharepoint-online.md)
+- [Opóźnienie ładowania obrazów i języka JavaScript w usłudze SharePoint Online](delay-loading-images-and-javascript-in-sharepoint-online.md)
     
-- [Minifikacja i tworzenie pakietów w u SharePoint Online](minification-and-bundling-in-sharepoint-online.md)
+- [Minification and bundling in SharePoint Online (Minification and bundling in SharePoint Online )Minification and bundling in SharePoint Online](minification-and-bundling-in-sharepoint-online.md)
     
 - [Używanie Office 365 Content Delivery Network (CDN) z usługą SharePoint Online](use-microsoft-365-cdn-with-spo.md)
     
-- [Używanie składników Web Part przeszukiwania zawartości zamiast składników Web Part zapytania zawartości w celu zwiększenia wydajności w SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [Używanie składnika Web Part wyszukiwania zawartości zamiast składnika Web Part zapytania o zawartość w celu zwiększenia wydajności w SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
 - [Planowanie wydajności i testowanie obciążenia usługi SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
     
-- [Diagnozowanie problemów z wydajnością aplikacji SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
+- [Diagnozowanie problemów z wydajnością w usłudze SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
     
 - [Korzystanie z pamięci podręcznej obiektów z usługą SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [Jak to zrobić: unikanie ograniczania lub blokowania w u SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
+- [Instrukcje: unikanie ograniczania lub blokowania w SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)

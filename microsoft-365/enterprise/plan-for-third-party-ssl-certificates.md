@@ -2,7 +2,7 @@
 title: Planowanie certyfikatów SSL innych firm dla Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.date: 05/15/2019
 ms.topic: conceptual
@@ -19,63 +19,63 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
-description: 'Podsumowanie: w tym artykule opisano certyfikaty SSL wymagane dla Exchange lokalnego i hybrydowego, logowania jednokrotnego przy użyciu usług AD FS, Exchange Online usług sieci Web Exchange sieci Web.'
-ms.openlocfilehash: 8c0bf69090abb87e71f2d51b73405ccf4e54d4bb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'Podsumowanie: opisuje certyfikaty SSL potrzebne do Exchange lokalnych i hybrydowych, logowania jednokrotnego przy użyciu usług AD FS, usług Exchange Online i usług Exchange Sieci Web.'
+ms.openlocfilehash: 0cd7cce2cd5f0aba8baecab7048d86d629d30427
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988012"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100308"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-microsoft-365"></a>Planowanie certyfikatów SSL innych firm dla Microsoft 365
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Aby szyfrowanie komunikacji między klientami i środowiskiem usługi Microsoft 365 było Microsoft 365, na serwerach infrastruktury muszą być zainstalowane certyfikaty SSL (Secure Socket Layer).
+Aby szyfrować komunikację między klientami a środowiskiem Microsoft 365, na serwerach infrastruktury muszą być zainstalowane certyfikaty protokołu Secure Socket Layer (SSL) innych firm.
 
-Ten artykuł jest częścią [planowania sieci i dostosowywania wydajności dla Microsoft 365](./network-planning-and-performance.md).
+Ten artykuł jest częścią [planowania sieci i dostrajania wydajności dla Microsoft 365](./network-planning-and-performance.md).
    
-Certyfikaty są wymagane dla następujących Microsoft 365 składników:
+Certyfikaty są wymagane dla następujących składników Microsoft 365:
   
-- Exchange lokalnym
+- Exchange lokalnie
     
-- Logowanie jednokrotne (SSO) zarówno dla serwerów federowych usług federnych Active Directory (AD FS), jak i federowych serwerów proxy usług AD FS
+- Logowanie jednokrotne (SSO) (zarówno dla serwerów federacyjnych Active Directory Federation Services (AD FS), jak i serwerów proxy serwerów federacyjnych usług AD FS)
     
-- Exchange Online usługi, takie jak autodiscover, Outlook Anywhere i Exchange Web Services
+- usługi Exchange Online, takie jak wykrywanie automatyczne, Outlook Anywhere i usługi sieci Web Exchange
     
-- Exchange hybrydowy
+- serwer hybrydowy Exchange
     
-## <a name="certificates-for-exchange-on-premises"></a>Certyfikaty dla Exchange lokalnych
+## <a name="certificates-for-exchange-on-premises"></a>Certyfikaty dla Exchange lokalnie
 
-Aby uzyskać omówienie sposobu używania certyfikatów cyfrowych w celu zabezpieczenia komunikacji między lokalną organizacją Exchange a Exchange Online, zobacz artykuł w witrynie TechNet Opis [wymagań dotyczących certyfikatów](/previous-versions/exchange-server/exchange-141/gg476123(v=exchg.141)).
+Aby zapoznać się z omówieniem sposobu używania certyfikatów cyfrowych w celu zapewnienia bezpieczeństwa komunikacji między lokalną organizacją Exchange i Exchange Online bezpiecznym, zobacz artykuł TechNet [Understanding Certificate Requirements (Informacje o wymaganiach dotyczących certyfikatów](/previous-versions/exchange-server/exchange-141/gg476123(v=exchg.141))).
   
 ## <a name="certificates-for-single-sign-on"></a>Certyfikaty na potrzeby logowania jednokrotnego
 
-Aby zapewnić użytkownikom uproszczone logowanie pojedyncze z niezawodnymi zabezpieczeniami, na serwerach federowanych lub federowanych serwerach proxy są wymagane certyfikaty przedstawione w poniższej tabeli. W poniższej tabeli skupiono się na usługach federowych Active Directory (AD FS), ale mamy również więcej informacji na temat korzystania z dostawców [tożsamości innych firm](/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
+Aby zapewnić użytkownikom uproszczone środowisko logowania jednokrotnego, które obejmuje niezawodne zabezpieczenia, certyfikaty wyświetlane w poniższej tabeli są wymagane na serwerach federacyjnych lub serwerach proxy serwera federacyjnego. Poniższa tabela koncentruje się na Active Directory Federation Services (AD FS), mamy również więcej informacji na temat [korzystania z dostawców tożsamości innych firm](/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
   
 | Typ certyfikatu | Opis | Co należy wiedzieć przed wdrożeniem |
 |:-----|:-----|:-----|
-|**Certyfikat SSL (nazywany również certyfikatem uwierzytelniania serwera)** <br/> |Jest to standardowy certyfikat SSL używany do zabezpieczania komunikacji między serwerami federacyjną, klientami i komputerami feder serwerowych serwerów proxy.  <br/> |Usługi AD FS wymagają certyfikatu SSL. Domyślnie usługi AD FS używa certyfikatu SSL, który jest skonfigurowany dla domyślnej witryny sieci Web w programie Internet Information Services (IIS).  <br/> Nazwa podmiotu tego certyfikatu SSL służy do określania nazwy usługi federowej (FS) dla każdego wystąpienia wdrażanej usługi AD FS. Rozważ wybranie nazwy podmiotu dla każdego nowego certyfikatu wydanego przez urząd certyfikacji (UC), która będzie najlepiej reprezentować nazwę Twojej firmy lub organizacji do Microsoft 365. Ta nazwa musi być lewalna przez Internet.  <br/>**Przestroga:** Usługi AD FS wymagają, aby ten certyfikat SSL nie miał nazwy podmiotu bez kropki (krótkiej nazwy).          <br/> **Zalecenie:** Ponieważ ten certyfikat musi być zaufany przez klientów usług AD FS, zalecamy używanie certyfikatu SSL wystawionego przez publiczny urząd certyfikacji (innej firmy) lub przez urząd certyfikacji, który jest podmiotem podrzędnym publicznie zaufanego katalogu głównego. Na przykład VeriSign lub Thawte.  <br/> |
-|**Certyfikat podpisywania tokenu** <br/> |Jest to standardowy certyfikat X.509 używany do bezpiecznego podpisywania wszystkich tokenów, które wydaje serwer federujący, Microsoft 365 przyjmuje i sprawdza.  <br/> |Certyfikat podpisywania tokenu musi zawierać klucz prywatny, który jest łańcuchem do zaufanego katalogu głównego w ujmce w usługę serwisową. Domyślnie usługi AD FS tworzą certyfikat z podpisem własnym. Jednak w zależności od potrzeb organizacji możesz zmienić ten certyfikat na certyfikat wystawiony przez urząd certyfikacji przy użyciu przystawki zarządzania usługami AD FS.  <br/>**Przestroga:** Certyfikat podpisywania tokenu ma krytyczne znaczenie dla stabilności usługi fs. Jeśli certyfikat zostanie zmieniony, Microsoft 365 o tej zmianie musi zostać powiadomiony. Jeśli powiadomienie nie zostanie dostarczone, użytkownicy nie mogą zalogować się do swoich usług Microsoft 365 usług.<br/>**Zalecenie:** Zalecamy używanie certyfikatu podpisywania tokenu z podpisem własnym generowanego przez usługi AD FS. Ta opcja domyślnie zarządza tym certyfikatem. Gdy na przykład ten certyfikat ma nie upłynąć, usługi AD FS wygeneruje nowy certyfikat z podpisem własnym.  <br/> |
+|**Certyfikat SSL (nazywany również certyfikatem uwierzytelniania serwera)** <br/> |Jest to standardowy certyfikat SSL, który służy do zabezpieczania komunikacji między serwerami federacyjnymi, klientami i komputerami proxy serwera federacyjnego.  <br/> |Usługi AD FS wymagają certyfikatu SSL. Domyślnie usługi AD FS używa certyfikatu SSL, który jest skonfigurowany dla domyślnej witryny internetowej w Internet Information Services (IIS).  <br/> Nazwa podmiotu tego certyfikatu SSL służy do określania nazwy usługi federacyjnej (FS) dla każdego wdrożonego wystąpienia usług AD FS. Rozważ wybranie nazwy podmiotu dla wszelkich nowych certyfikatów wystawionych przez urząd certyfikacji, które najlepiej reprezentują nazwę firmy lub organizacji do Microsoft 365. Ta nazwa musi być routingu internetowego.  <br/>**Ostrożność:** Usługi AD FS wymagają, aby ten certyfikat SSL nie miał nazwy podmiotu bez kropki (krótkiej nazwy).          <br/> **Zalecenie:** Ponieważ ten certyfikat musi być zaufany przez klientów usług AD FS, zalecamy użycie certyfikatu SSL wystawionego przez publiczny urząd certyfikacji (innej firmy) lub przez urząd certyfikacji podrzędny do publicznego zaufanego katalogu głównego; na przykład VeriSign lub Thawte.  <br/> |
+|**Certyfikat podpisywania tokenu** <br/> |Jest to standardowy certyfikat X.509 używany do bezpiecznego podpisywania wszystkich tokenów wystawianych przez serwer federacyjny i który Microsoft 365 akceptuje i weryfikuje.  <br/> |Certyfikat podpisywania tokenu musi zawierać klucz prywatny, który jest łańcuchem do zaufanego katalogu głównego w usługach FS. Domyślnie usługi AD FS tworzy certyfikat z podpisem własnym. Jednak w zależności od potrzeb organizacji można zmienić ten certyfikat na certyfikat wystawiony przez urząd certyfikacji przy użyciu przystawki zarządzania usługami AD FS.  <br/>**Ostrożność:** Certyfikat podpisywania tokenu ma kluczowe znaczenie dla stabilności usług FS. Jeśli certyfikat zostanie zmieniony, Microsoft 365 musi zostać powiadomiony o zmianie. Jeśli powiadomienie nie zostanie dostarczone, użytkownicy nie będą mogli zalogować się do swoich ofert usług Microsoft 365.<br/>**Zalecenie:** Zalecamy użycie certyfikatu podpisywania tokenu z podpisem własnym, który jest generowany przez usługi AD FS. W ten sposób domyślnie zarządza tym certyfikatem. Na przykład gdy ten certyfikat wkrótce wygaśnie, usługi AD FS wygenerują nowy certyfikat z podpisem własnym.  <br/> |
    
-Federowe serwery proxy wymagają certyfikatu opisanego w poniższej tabeli.
+Serwery proxy serwera federacyjnego wymagają certyfikatu opisanego w poniższej tabeli.
   
 | Typ certyfikatu | Opis | Co należy wiedzieć przed wdrożeniem |
 |:-----|:-----|:-----|
-|Certyfikat SSL  <br/> |Jest to standardowy certyfikat SSL używany do zabezpieczania komunikacji między serwerami federacyjną, federacyjną serwerem proxy i komputerami klienckimi internetowymi.  <br/> |Ten certyfikat SSL musi być powiązany z domyślną witryną sieci Web w programie IIS, aby można było pomyślnie uruchomić kreatora Konfiguracji federacyjnych serwerów proxy usług AD FS.  <br/> Ten certyfikat musi mieć taką samą nazwę podmiotu jak certyfikat SSL skonfigurowany na serwerze federacyjna w sieci firmowej.  <br/> **Zalecenie:** Zalecamy używanie tego samego certyfikatu uwierzytelniania serwera, który jest skonfigurowany na serwerze federowym, z którym jest połączony ten federowany serwer proxy.  <br/> |
+|Certyfikat SSL  <br/> |Jest to standardowy certyfikat SSL używany do zabezpieczania komunikacji między serwerem federacyjnym, serwerem proxy serwera federacyjnego i komputerami klienckimi w Internecie.  <br/> |Aby można było pomyślnie uruchomić kreatora konfiguracji serwera proxy usług AD FS, ten certyfikat SSL musi być powiązany z domyślną witryną sieci Web w usługach IIS.  <br/> Ten certyfikat musi mieć taką samą nazwę podmiotu jak certyfikat SSL, który został skonfigurowany na serwerze federacyjnym w sieci firmowej.  <br/> **Zalecenie:** Zalecamy użycie tego samego certyfikatu uwierzytelniania serwera skonfigurowanego na serwerze federacyjnym, z którym łączy się ten serwer proxy serwera federacyjnego.  <br/> |
    
-## <a name="certificates-for-autodiscover-outlook-anywhere-and-active-directory-synchronization"></a>Certyfikaty do wykrywania automatycznego, Outlook anywhere i synchronizacji z usługą Active Directory
+## <a name="certificates-for-autodiscover-outlook-anywhere-and-active-directory-synchronization"></a>Certyfikaty do wykrywania automatycznego, Outlook Anywhere i synchronizacji usługi Active Directory
 
-Skierowane do użytkowników zewnętrznych serwery dostępu klienta (CAS) Exchange 2013, Exchange 2010, Exchange 2007 i Exchange 2003 wymagają certyfikatu SSL od innej firmy do bezpiecznego połączenia z usługami wykrywania automatycznego, usługi Outlook Anywhere i synchronizacji usługi Active Directory. Ten certyfikat może już być zainstalowany w środowisku lokalnym.
+Zewnętrzne Exchange 2013 r., Exchange 2010 r., Exchange 2007 r. i Exchange 2003 serwery dostępu klienta (CAS) wymagają certyfikatu SSL innej firmy na potrzeby bezpiecznych połączeń dla usług automatycznego wykrywania, Outlook Anywhere i usług synchronizacji usługi Active Directory. Ten certyfikat może już być zainstalowany w środowisku lokalnym.
   
 ## <a name="certificate-for-an-exchange-hybrid-server"></a>Certyfikat dla serwera hybrydowego Exchange
 
-Skierowane do środowiska zewnętrznego Exchange lub serwery hybrydowe wymagają certyfikatu SSL od innego podmiotu na temat bezpiecznej łączności z Exchange Online poczty. Ten certyfikat należy uzyskać od zewnętrznego dostawcy protokołu SSL.
+Zewnętrzny serwer lub serwery hybrydowe Exchange wymagają certyfikatu SSL innej firmy w celu zapewnienia bezpiecznej łączności z usługą Exchange Online. Musisz pobrać ten certyfikat od innego dostawcy protokołu SSL.
   
-## <a name="microsoft-365-certificate-chains"></a>Microsoft 365 łańcuchów certyfikatów
+## <a name="microsoft-365-certificate-chains"></a>łańcuchy certyfikatów Microsoft 365
 
-W tym artykule opisano certyfikaty, które mogą być potrzebne do instalacji w Twojej infrastrukturze. Aby uzyskać więcej informacji na temat certyfikatów zainstalowanych na naszych Microsoft 365, zobacz Microsoft 365 [łańcuchy certyfikatów](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
+W tym artykule opisano certyfikaty, które mogą być konieczne do zainstalowania w infrastrukturze. Aby uzyskać więcej informacji na temat certyfikatów zainstalowanych na naszych serwerach Microsoft 365, zobacz [Microsoft 365 Łańcuchy certyfikatów](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
   
 ## <a name="see-also"></a>Zobacz też
 
-[Microsoft 365 Enterprise omówienie](microsoft-365-overview.md)
+[omówienie Microsoft 365 Enterprise](microsoft-365-overview.md)

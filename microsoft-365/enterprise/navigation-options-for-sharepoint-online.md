@@ -1,8 +1,8 @@
 ---
-title: Opcje nawigacji dla aplikacji SharePoint Online
+title: Opcje nawigacji dla SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 4/7/2020
 audience: Admin
 ms.topic: overview
@@ -20,116 +20,116 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: W tym artykule opisano witryny opcji nawigacji z włączoną SharePoint publikowanie w SharePoint Online.
-ms.openlocfilehash: c59006db8505991bd41d29714caae144b284f07d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: W tym artykule opisano witryny opcji nawigacji z włączoną funkcją publikowania SharePoint w usłudze SharePoint Online.
+ms.openlocfilehash: 67bf1c854d97cf254d1484151987a87853e1ae9d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984379"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101188"
 ---
-# <a name="navigation-options-for-sharepoint-online"></a>Opcje nawigacji dla aplikacji SharePoint Online
+# <a name="navigation-options-for-sharepoint-online"></a>Opcje nawigacji dla SharePoint Online
 
-W tym artykule opisano witryny opcji nawigacji z włączoną SharePoint publikowanie w SharePoint Online. Wybór i konfiguracja nawigacji znacząco wpływa na wydajność i skalowalność witryn w u SharePoint Online. Szablon SharePoint Witryny publikowania powinien być używany tylko w przypadku, gdy jest wymagany w przypadku scentralizowanego portalu, a funkcja publikowania powinna być włączona tylko w określonych witrynach i tylko wtedy, gdy jest to bezwzględnie wymagane, ponieważ może to wpłynąć na wydajność w przypadku niepoprawnego korzystania z niego.
+W tym artykule opisano witryny opcji nawigacji z włączoną funkcją publikowania SharePoint w usłudze SharePoint Online. Wybór i konfiguracja nawigacji znacząco wpływa na wydajność i skalowalność lokacji w usłudze SharePoint Online. Szablon witryny publikowania SharePoint powinien być używany tylko wtedy, gdy jest to wymagane dla scentralizowanego portalu, a funkcja publikowania powinna być włączona tylko w określonych witrynach i tylko wtedy, gdy jest to absolutnie wymagane, ponieważ może mieć wpływ na wydajność w przypadku nieprawidłowego użycia.
 
 >[!NOTE]
->Jeśli korzystasz z nowoczesnych opcji nawigacji SharePoint, takich jak mega menu, nawigacja kaskadowa lub nawigacja w centrum, ten artykuł nie dotyczy Twojej witryny. Nowoczesne SharePoint witryn są współużytkowane w hierarchii witryn oraz w modelu z wzorem dla centrum i wyczyszczania. Dzięki temu można osiągnąć wiele scenariuszy, które NIE wymagają używania SharePoint publikowania.
+>Jeśli używasz nowoczesnych SharePoint opcji nawigacji, takich jak mega menu, nawigacja kaskadowa lub nawigacja w centrum, ten artykuł nie ma zastosowania do witryny. Nowoczesne architektury lokacji SharePoint korzystają z bardziej spłaszczanej hierarchii lokacji i modelu piasty i szprych. Dzięki temu można osiągnąć wiele scenariuszy, które nie wymagają użycia funkcji publikowania SharePoint.
 
 ## <a name="overview-of-navigation-options"></a>Omówienie opcji nawigacji
 
-Konfiguracja dostawcy nawigacji może znacząco wpłynąć na wydajność całej witryny, a także należy starannie rozważyć wybór dostawcy nawigacji i konfigurację, która skutecznie spełnia wymagania witryny SharePoint nawigacji. Istnieje dwóch znanych dostawców nawigacji, a także niestandardowe implementacje nawigacji.
+Konfiguracja dostawcy nawigacji może znacząco wpłynąć na wydajność całej lokacji i należy dokładnie rozważyć wybór dostawcy nawigacji i konfiguracji, która jest efektywnie skalowana pod kątem wymagań SharePoint lokacji. Istnieją dwaj dostawcy nawigacji na zewnątrz, a także niestandardowe implementacje nawigacji.
 
-Pierwszą opcją [**,**](#using-structural-navigation-in-sharepoint-online) nawigacja strukturalna, jest zalecana opcja nawigacji w aplikacji SharePoint Online dla klasycznych witryn sieci SharePoint, jeśli w twojej witrynie włączyć buforowanie nawigacji **strukturalnej**. Ten dostawca nawigacji wyświetla elementy nawigacji poniżej bieżącej witryny oraz opcjonalnie bieżącej witryny i jej elementów równorzędnych. Udostępnia on dodatkowe funkcje, takie jak przycinanie zabezpieczeń i wyliczenie struktury witryny. Jeśli buforowanie jest wyłączone, będzie to miało negatywny wpływ na wydajność i skalowalność oraz może podlegać ograniczaniu.
+Pierwsza opcja, [**Nawigacja strukturalna**](#using-structural-navigation-in-sharepoint-online), to zalecana opcja nawigacji w usłudze SharePoint Online dla klasycznych witryn SharePoint, **jeśli włączysz buforowanie nawigacji strukturalnej dla witryny**. Ten dostawca nawigacji wyświetla elementy nawigacji poniżej bieżącej witryny i opcjonalnie bieżącą witrynę i jej elementy równorzędne. Zapewnia dodatkowe możliwości, takie jak przycinanie zabezpieczeń i wyliczenie struktury lokacji. Jeśli buforowanie jest wyłączone, wpłynie to negatywnie na wydajność i skalowalność i może podlegać ograniczaniu przepustowości.
 
-Druga opcja, [**nawigacja zarządzana (metadane),**](#using-managed-navigation-and-metadata-in-sharepoint-online) reprezentuje elementy nawigacji przy użyciu zestawu terminów zarządzanych metadanych. Zalecamy, aby przycinać zabezpieczenia, o ile nie jest to wymagane. Przycinanie zabezpieczeń jest włączane jako domyślne ustawienie bezpieczne dla tego dostawcy nawigacji. Wiele witryn nie wymaga jednak nakładu pracy związanej z zabezpieczeniami, ponieważ elementy nawigacji często są spójne dla wszystkich użytkowników witryny. W przypadku zalecanej konfiguracji w celu wyłączenia przycinania zabezpieczeń ten dostawca nawigacji nie wymaga wyliczenia struktury witryny i jest wysoce skalowalny, co ma dopuszczalny wpływ na wydajność.
+Druga opcja, [**nawigacja zarządzana (metadane),**](#using-managed-navigation-and-metadata-in-sharepoint-online) reprezentuje elementy nawigacji przy użyciu zestawu terminów zarządzanych metadanych. Zalecamy wyłączenie przycinania zabezpieczeń, chyba że jest to wymagane. Przycinanie zabezpieczeń jest włączone jako ustawienie bezpieczne domyślnie dla tego dostawcy nawigacji; Jednak wiele witryn nie wymaga narzutu związanego z przycinaniem zabezpieczeń, ponieważ elementy nawigacji są często spójne dla wszystkich użytkowników witryny. Dzięki zalecanej konfiguracji wyłączania przycinania zabezpieczeń ten dostawca nawigacji nie wymaga wyliczania struktury lokacji i jest wysoce skalowalny z akceptowalnym wpływem na wydajność.
 
-Oprócz tego, że wielu klientów zaimplementowało alternatywne niestandardowe implementacje nawigacji, wielu klientów pomyślnie zaimplementowało alternatywne niestandardowe implementacje nawigacji. Zobacz [wykonywanie skryptów po stronie klienta oparte na](#using-search-driven-client-side-scripting) wyszukiwaniu w tym artykule.
+Oprócz dostawców nawigacji out-of-the-box wielu klientów pomyślnie zaimplementowano alternatywne niestandardowe implementacje nawigacji. Zobacz [Skrypty po stronie klienta oparte na wyszukiwaniu](#using-search-driven-client-side-scripting) w tym artykule.
   
 ## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Zalety i wady opcji nawigacji SharePoint Online
 
-W poniższej tabeli podsumowano zalety i wady poszczególnych opcji.
+Poniższa tabela zawiera podsumowanie zalet i wad każdej opcji.
 
-|Nawigacja strukturalna  |Nawigacja zarządzana  |Nawigacja sterowany wyszukiwaniem  |Dostawca nawigacji niestandardowej  |
+|Nawigacja strukturalna  |Nawigacja zarządzana  |Nawigacja oparta na wyszukiwaniu  |Dostawca nawigacji niestandardowej  |
 |---------|---------|---------|---------|
-|Zawodowcy:<br/><br/>Łatwa obsługa<br/>Przycięty zabezpieczenia<br/>Automatyczne aktualizacje w ciągu 24 godzin po zmianie zawartości<br/>     |Zawodowcy:<br/><br/>Łatwa obsługa<br/>|Zawodowcy:<br/><br/>Przycięty zabezpieczenia<br/>Automatyczne aktualizacje w przypadku do dodania witryn<br/>Szybki czas ładowania i lokalnie buforowana struktura nawigacji<br/>|Zawodowcy:<br/><br/>Szerszy wybór dostępnych opcji<br/>Szybkie ładowanie podczas poprawnego korzystania z buforowania<br/>Wiele opcji dobrze się układa w elastycznym projekcie strony<br/>|
-|Wady:<br/><br/>**Wpływa na wydajność, jeśli buforowanie jest wyłączone**<br/>Podlega ograniczaniu<br/>|Wady:<br/><br/>Nie jest automatycznie aktualizowana w celu odzwierciedlenia struktury witryny<br/>**Wpływa na wydajność, jeśli jest włączone przycinanie zabezpieczeń** lub struktura nawigacji jest złożona<br/>|Wady:<br/><br/>Brak możliwości łatwego zamawiania witryn<br/>Wymaga dostosowania strony wzorcowej (wymagane umiejętności techniczne)<br/>|Wady:<br/><br/>Wymagany jest niestandardowy rozwój<br/>Zewnętrzne źródło danych/ przechowywana pamięć podręczna są potrzebne np. azure<br/>|
+|Plusy:<br/><br/>Łatwe w obsłudze<br/>Obcięte zabezpieczenia<br/>Automatycznie aktualizuje w ciągu 24 godzin po zmianie zawartości<br/>     |Plusy:<br/><br/>Łatwe w obsłudze<br/>|Plusy:<br/><br/>Obcięte zabezpieczenia<br/>Automatyczne aktualizowanie w miarę dodawania witryn<br/>Szybki czas ładowania i lokalnie buforowana struktura nawigacji<br/>|Plusy:<br/><br/>Szerszy wybór dostępnych opcji<br/>Szybkie ładowanie podczas prawidłowego korzystania z buforowania<br/>Wiele opcji dobrze współpracuje z dynamicznym projektem strony<br/>|
+|Minusy:<br/><br/>**Wpływa na wydajność, jeśli buforowanie jest wyłączone**<br/>Z zastrzeżeniem ograniczania przepustowości<br/>|Minusy:<br/><br/>Nie są automatycznie aktualizowane w celu odzwierciedlenia struktury lokacji<br/>**Wpływa na wydajność, jeśli jest włączone przycinanie zabezpieczeń** lub gdy struktura nawigacji jest złożona<br/>|Minusy:<br/><br/>Brak możliwości łatwego zamawiania witryn<br/>Wymaga dostosowania strony wzorcowej (wymagane są umiejętności techniczne)<br/>|Minusy:<br/><br/>Tworzenie niestandardowe jest wymagane<br/>Wymagane jest zewnętrzne źródło danych/pamięć podręczna, np. platforma Azure<br/>|
 
-Wybór najbardziej odpowiedniej opcji w witrynie zależy od jej wymagań i możliwości technicznych. Jeśli chcesz, aby dostawca nawigacji był łatwy w konfiguracji i automatycznie aktualizowany po zmianie zawartości, dobrym rozwiązaniem jest nawigacja strukturalna z włączonym buforowaniem.[](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)
+Najbardziej odpowiednia opcja dla twojej witryny będzie zależeć od wymagań witryny i możliwości technicznych. Jeśli potrzebujesz łatwego do skonfigurowania dostawcy nawigacji, który automatycznie aktualizuje zawartość po zmianie, dobrym rozwiązaniem jest nawigacja strukturalna [z włączonym buforowaniem](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) .
 
 >[!NOTE]
->Stosowanie tej samej zasady, co nowoczesne witryny SharePoint przez uproszczenie ogólnej struktury witryn do prostszej, nie hierarchicznej struktury zwiększa wydajność i upraszcza przechodzenie do nowoczesnych SharePoint witryn. Oznacza to, że zamiast mieć jeden zbiór witryn z setkami witryn (podwebami), lepszym rozwiązaniem jest posiadanie wielu zbiorów witryn z bardzo kilkoma podwitrynami (podwitrynami).
+>Zastosowanie tej samej zasady, co nowoczesne witryny SharePoint, upraszczając ogólną strukturę lokacji do bardziej płaskiej, nie hierarchicznej struktury, zwiększa wydajność i upraszcza przejście do nowoczesnych SharePoint lokacji. Oznacza to, że zamiast jednego zbioru witryn z setkami witryn (podsieci), lepszym podejściem jest posiadanie wielu zbiorów witryn z bardzo małą liczbą podwitryn (podsieci).
 
-## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Analizowanie wydajności nawigacji w u SharePoint Online
+## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Analizowanie wydajności nawigacji w usłudze SharePoint Online
 
-Narzędzie [Diagnostyka stron dla SharePoint](./page-diagnostics-for-spo.md) to rozszerzenie przeglądarki dla przeglądarek Microsoft Edge i Chrome, które analizuje zarówno nowoczesne portal SharePoint Online, jak i klasyczne strony witryn publikowania. To narzędzie działa tylko w SharePoint Online i nie można go używać na SharePoint stronie systemu.
+[Narzędzie Diagnostyka strony dla SharePoint](./page-diagnostics-for-spo.md) to rozszerzenie przeglądarki dla przeglądarek Microsoft Edge i Chrome, które analizuje zarówno nowoczesne portale SharePoint Online, jak i klasyczne strony witryn publikowania. To narzędzie działa tylko w przypadku usługi SharePoint Online i nie może być używane na stronie systemu SharePoint.
 
-Narzędzie generuje dla każdej analizowanej strony raport pokazujący, jak strona wykonuje się na podstawie wstępnie zdefiniowanego zestawu reguł, i wyświetla szczegółowe informacje, gdy wyniki testu spoza wartości bazowej. SharePoint online administratorzy i projektanci mogą używać tego narzędzia do rozwiązywania problemów z wydajnością w celu zapewnienia optymalizacji nowych stron przed opublikowaniem.
+Narzędzie generuje raport dla każdej analizowanej strony pokazujący, jak strona działa względem wstępnie zdefiniowanego zestawu reguł i wyświetla szczegółowe informacje, gdy wyniki testu wykraczają poza wartość punktu odniesienia. SharePoint Administratorzy i projektanci usługi Online mogą używać narzędzia do rozwiązywania problemów z wydajnością, aby upewnić się, że nowe strony są zoptymalizowane przed opublikowaniem.
 
-**W szczególności SPRequestDuration** to czas przetwarzania SharePoint strony. Bardziej skomplikowana nawigacja (na przykład ze stronami w nawigacji), złożone hierarchie witryn oraz inne opcje konfiguracji i topologii mogą znacznie skrócić czas trwania.
+**W szczególności sprequestDuration** to czas potrzebny na przetworzenie strony przez SharePoint. Intensywna nawigacja (na przykład strony w nawigacji), złożone hierarchie lokacji oraz inne opcje konfiguracji i topologii mogą znacznie przyczynić się do dłuższego czasu trwania.
 
-## <a name="using-structural-navigation-in-sharepoint-online"></a>Korzystanie z nawigacji strukturalnej w u SharePoint Online
+## <a name="using-structural-navigation-in-sharepoint-online"></a>Korzystanie z nawigacji strukturalnej w usłudze SharePoint Online
 
-Jest to domyślna nawigacja, która jest obecnie używana, i jest najprostszym rozwiązaniem. Nie wymaga on żadnych dostosowań, a użytkownik niebędący użytkownikiem technicznym może też łatwo dodawać elementy, ukrywać elementy i zarządzać nawigacją ze strony ustawień. Zalecamy włączenie [buforowania](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43), w przeciwnym razie kosztowna wydajność jest kosztowna.
+Jest to wbudowana nawigacja używana domyślnie i jest najprostszym rozwiązaniem. Nie wymaga żadnych dostosowań, a użytkownik nietechnologii może również łatwo dodawać elementy, ukrywać elementy i zarządzać nawigacją na stronie ustawień. Zalecamy [włączenie buforowania, w](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) przeciwnym razie występuje kosztowny kompromis wydajności.
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Jak zaimplementować buforowanie nawigacji strukturalnej
 
-W **obszarze Ustawienia** >  **Oki i Nawigacja** **feelNavigation** >  możesz sprawdzić, czy nawigacja strukturalna jest zaznaczona dla nawigacji globalnej, czy dla bieżącej nawigacji. Wybranie **opcji Pokaż strony** będzie miało negatywny wpływ na wydajność.
+W obszarze **Witryna Ustawienia** >  **Look i** **FeelNavigation** >  można sprawdzić, czy nawigacja strukturalna jest wybrana dla nawigacji globalnej lub bieżącej nawigacji. Wybranie pozycji **Pokaż strony** będzie miało negatywny wpływ na wydajność.
 
-![Nawigacja strukturalna z zaznaczoną witrynie Pokaż podwitryny.](../media/SPONavOptionsStructuredShowSubsites.png)
+![Nawigacja strukturalna z wybraną opcją Pokaż podwitryny.](../media/SPONavOptionsStructuredShowSubsites.png)
 
-Buforowanie włączać lub wyłączać na poziomie zbioru witryn i na poziomie witryny, a także jest domyślnie włączone dla obu. Aby włączyć tę funkcję na poziomie zbioru witryn,  >  w Ustawienia **Nawigacja** >  zbioru witryn z witrynami administracji zbioru **witryn zaznacz pole** wyboru Włącz **buforowanie**.
+Buforowanie można włączyć lub wyłączyć na poziomie zbioru witryn i na poziomie lokacji i jest domyślnie włączone dla obu tych elementów. Aby włączyć na poziomie zbioru witryn, w obszarze **Site Ustawienia** >  **Site Collection AdministrationSite Collection Navigation (Administracja** >  zbiorem **witrynNawigowanie po zbiorze witryn**) zaznacz pole wyboru **Włącz buforowanie**.
 
-![Włączanie buforowania na poziomie witryny.](../media/structural-nav/structural-nav-caching-site-coll.png)
+![Włącz buforowanie na poziomie lokacji.](../media/structural-nav/structural-nav-caching-site-coll.png)
 
-Aby włączyć na poziomie witryny, w obszarze **Ustawienia** >  **Nawigacja** witryny zaznacz pole wyboru **Włącz buforowanie**.
+Aby włączyć na poziomie lokacji, w obszarze **Site Ustawienia** >  **Navigation** zaznacz pole wyboru **Włącz buforowanie**.
 
-![Włączanie buforowania na poziomie witryny.](../media/structural-nav/structural-nav-caching-site.png)
+![Włącz buforowanie na poziomie lokacji.](../media/structural-nav/structural-nav-caching-site.png)
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Korzystanie z zarządzanej nawigacji i metadanych w u SharePoint Online
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Korzystanie z zarządzanej nawigacji i metadanych w usłudze SharePoint Online
 
-Nawigacja zarządzana to inna, odtworzona, dostępna w jednym przypadku opcja, która umożliwia ponowne utworzenie większości funkcji nawigacji strukturalnej. Zarządzane metadane można skonfigurować tak, aby włączono lub wyłączono przycinanie zabezpieczeń. Po skonfigurowaniu z wyłączonym przycinaniem zabezpieczeń nawigacja zarządzana jest dość wydajna, ponieważ ładuje wszystkie linki nawigacji ze stałą liczbą połączeń z serwerem. Włączenie przycinania zabezpieczeń ma jednak negatyw niektóre z zalet wydajności zarządzanej nawigacji.
+Nawigacja zarządzana to kolejna dostępna opcja, która umożliwia ponowne utworzenie większości tych samych funkcji co nawigacja strukturalna. Zarządzane metadane można skonfigurować tak, aby przycinanie zabezpieczeń było włączone lub wyłączone. Po skonfigurowaniu z wyłączonym przycinaniem zabezpieczeń nawigacja zarządzana jest dość wydajna, ponieważ ładuje wszystkie linki nawigacji ze stałą liczbą wywołań serwera. Włączenie przycinania zabezpieczeń neguje jednak niektóre zalety wydajności nawigacji zarządzanej.
 
-Jeśli musisz włączyć funkcję przycinania zabezpieczeń, zalecamy:
+Jeśli musisz włączyć przycinanie zabezpieczeń, zalecamy:
 
-- Aktualizowanie wszystkich przyjaznych linków w adresie URL do prostych linków
-- Dodawanie wymaganych węzłów do przycinania zabezpieczeń jako przyjaznych adresów URL
-- Ograniczanie liczby elementów nawigacyjnych do nie więcej niż 100 i nie więcej niż 3 poziomów głębokości
+- Zaktualizuj wszystkie przyjazne linki URL do prostych linków
+- Dodawanie wymaganych węzłów przycinania zabezpieczeń jako przyjaznych adresów URL
+- Ogranicz liczbę elementów nawigacji do nie więcej niż 100 i nie więcej niż 3 poziomy głębokie
 
-Wiele witryn nie wymaga przycinania zabezpieczeń, ponieważ struktura nawigacji jest często spójna dla wszystkich użytkowników witryny. Jeśli przycinanie zabezpieczeń jest wyłączone i do nawigacji zostanie dodany link, do których nie wszyscy użytkownicy mają dostęp, link nadal będzie wyświetlany, ale będzie prowadzić do komunikatu o odmowie dostępu. Nie ma ryzyka przypadkowego dostępu do zawartości.
+Wiele witryn nie wymaga przycinania zabezpieczeń, ponieważ struktura nawigacji jest często spójna dla wszystkich użytkowników witryny. Jeśli przycinanie zabezpieczeń jest wyłączone i do nawigacji zostanie dodany link, do których nie wszyscy użytkownicy mają dostęp, link będzie nadal wyświetlany, ale spowoduje odmowę dostępu. Nie ma ryzyka przypadkowego dostępu do zawartości.
 
-### <a name="how-to-implement-managed-navigation-and-the-results"></a>Jak wdrożyć nawigację zarządzaną i wyniki
+### <a name="how-to-implement-managed-navigation-and-the-results"></a>Jak zaimplementować nawigację zarządzane i wyniki
 
-Istnieje kilka artykułów na docs.microsoft.com na temat szczegółów nawigacji zarządzanej. Na przykład zobacz [Omówienie nawigacji zarządzanej w programie SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
+Istnieje kilka artykułów na temat docs.microsoft.com na temat szczegółów nawigacji zarządzanej. Zobacz na przykład [Omówienie nawigacji zarządzanej w programie SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
-Aby wdrożyć nawigację zarządzaną, należy skonfigurować terminy z adresami URL odpowiadającymi strukturze nawigacji witryny. Nawigację zarządzaną można nawet w wielu przypadkach zarządzać ręcznie, aby zastąpić nawigację strukturalną. Przykład:
+Aby zaimplementować nawigację zarządzane, należy skonfigurować terminy z adresami URL odpowiadającymi strukturze nawigacji witryny. Zarządzana nawigacja może nawet zostać ręcznie wyselekcjonowana w celu zastąpienia nawigacji strukturalnej w wielu przypadkach. Przykład:
 
-![SharePoint witryny online.](../media/SPONavOptionsListOfSites.png))
+![SharePoint Struktura witryny online.](../media/SPONavOptionsListOfSites.png))
 
-## <a name="using-search-driven-client-side-scripting"></a>Używanie skryptów po stronie klienta sterowanych wyszukiwaniem
+## <a name="using-search-driven-client-side-scripting"></a>Używanie skryptów po stronie klienta opartych na wyszukiwaniu
 
-Jedna typowa klasa niestandardowych implementacji nawigacji zapewnia renderowane przez klienta wzorce projektowania przechowujące lokalną pamięć podręczną węzłów nawigacji.
+Jedna z typowych klas niestandardowych implementacji nawigacji obejmuje wzorce projektowe renderowane przez klienta, które przechowują lokalną pamięć podręczną węzłów nawigacji.
 
-Poniższe dostawcy nawigacji mają kilka kluczowych zalet:
+Ci dostawcy nawigacji mają kilka kluczowych zalet:
 
-- Na ogół dobrze się one działają z szybko reagującymi projektami stron.
-- Są one bardzo skalowalne i performacyjnie, ponieważ mogą być renderowane bez kosztów zasobów (i odświeżane w tle po przeli czasie).
-- Ci dostawcy nawigacji mogą pobierać dane nawigacji za pomocą różnych strategii, od prostych konfiguracji statycznych po różnych dynamicznych dostawców danych.
+- Zazwyczaj dobrze sprawdzają się w dynamicznych projektach stron.
+- Są one niezwykle skalowalne i wydajne, ponieważ mogą być renderowane bez kosztów zasobów (i odświeżane w tle po przekroczeniu limitu czasu).
+- Ci dostawcy nawigacji mogą pobierać dane nawigacji przy użyciu różnych strategii, od prostych konfiguracji statycznych po różnych dynamicznych dostawców danych.
 
-Przykładem dostawcy danych jest korzystanie z nawigacji opartej na wyszukiwaniu **, która** pozwala na elastyczne wyliczanie węzłów nawigacji i wydajną obsługę przycinania zabezpieczeń.
+Przykładem dostawcy danych jest użycie **nawigacji opartej na wyszukiwaniu**, która umożliwia elastyczność wyliczania węzłów nawigacji i wydajnego obsługi przycinania zabezpieczeń.
 
-Istnieją inne popularne opcje tworzenia niestandardowych **dostawców nawigacji**. Zapoznaj się [z rozwiązaniami nawigacji dla SharePoint Online,](/sharepoint/dev/solution-guidance/portal-navigation) aby uzyskać dalsze wskazówki dotyczące tworzenia dostawcy nawigacji niestandardowej.
+Istnieją inne popularne opcje tworzenia **niestandardowych dostawców nawigacji**. Zapoznaj się z [rozwiązaniami nawigacji dla portali usługi SharePoint Online](/sharepoint/dev/solution-guidance/portal-navigation), aby uzyskać dalsze wskazówki dotyczące tworzenia niestandardowego dostawcy nawigacji.
 
-Za pomocą wyszukiwania możesz korzystać z indeksów wbudowanych w tle przy użyciu przeszukiwania ciągłego. Wyniki wyszukiwania są przyciągane z indeksu wyszukiwania, a wyniki są przycinane w zabezpieczeniach. Jest to zazwyczaj szybsze niż gdy wymagane jest obcięcie zabezpieczeń przez dostawców nawigacji. Wyszukiwanie nawigacji strukturalnej, zwłaszcza w przypadku złożonej struktury witryny, znacznie przyspiesza ładowanie strony. Główną zaletą tej możliwości w przypadku nawigacji zarządzanej jest to, że korzystasz z przycinania zabezpieczeń.
+Za pomocą wyszukiwania możesz wykorzystać indeksy utworzone w tle przy użyciu przeszukiwania ciągłego. Wyniki wyszukiwania są pobierane z indeksu wyszukiwania, a wyniki są obcięte zabezpieczeniami. Jest to zazwyczaj szybsze niż dostawcy nawigacji na zewnątrz, gdy wymagane jest przycinanie zabezpieczeń. Użycie wyszukiwania nawigacji strukturalnej, zwłaszcza jeśli masz złożoną strukturę lokacji, znacznie przyspieszy czas ładowania stron. Główną zaletą tej funkcji w stosunku do nawigacji zarządzanej jest to, że korzystasz z przycinania zabezpieczeń.
 
-Ta metoda obejmuje utworzenie niestandardowej strony wzorcowej i zastąpienie niestandardowego kodu nawigacyjnego HTML. Aby zastąpić kod nawigacyjny w pliku, wykonaj tę procedurę podaną w poniższym przykładzie `seattle.html`. W tym przykładzie otworzysz `seattle.html` plik i zamienisz cały element `id="DeltaTopNavigation"` na niestandardowy kod HTML.
+Takie podejście polega na utworzeniu niestandardowej strony wzorcowej i zastąpieniu wbudowanego kodu nawigacyjnego niestandardowym kodem HTML. Wykonaj tę procedurę opisaną w poniższym przykładzie, aby zastąpić kod nawigacji w pliku `seattle.html`. W tym przykładzie otworzysz `seattle.html` plik i zastąpisz cały element `id="DeltaTopNavigation"` niestandardowym kodem HTML.
 
-### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Przykład: zamienianie kodu nawigacji, który jest już na stronie wzorcowej,
+### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Przykład: zastąp kod nawigacji na stronie wzorcowej
 
 1. Przejdź do strony Ustawienia witryny.
-2. Otwórz galerię stron wzorcowych, klikając **pozycję Strony wzorcowe**.
-3. W tym miejscu możesz poruszać się po bibliotece i pobrać plik `seattle.master`.
-4. Edytuj kod za pomocą edytora tekstów i usuń blok kodu na poniższym zbędnie.<br/>![Usuń pokazany blok kodu.](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. Usuń kod między tagami `<SharePoint:AjaxDelta id="DeltaTopNavigation">` i `<\SharePoint:AjaxDelta>` zamień go na następujący fragment:<br/>
+2. Otwórz galerię stron wzorcowych, klikając pozycję **Strony wzorcowe**.
+3. W tym miejscu możesz przejść przez bibliotekę i pobrać plik `seattle.master`.
+4. Edytuj kod przy użyciu edytora tekstów i usuń blok kodu na poniższym zrzucie ekranu.<br/>![Usuń pokazany blok kodu.](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
+5. Usuń kod między tagami `<SharePoint:AjaxDelta id="DeltaTopNavigation">` i `<\SharePoint:AjaxDelta>` i zastąp go następującym fragmentem kodu:<br/>
 
 ```javascript
 <div id="loading">
@@ -200,28 +200,28 @@ Ta metoda obejmuje utworzenie niestandardowej strony wzorcowej i zastąpienie ni
 ```
 
 <br/>
-6. Zamień adres URL tagu zakotwiczenia obrazu ładowania na początku na link do obrazu ładowania w zbiorze witryn. Po wgraniu zmian zmień nazwę pliku, a następnie przekaż go do galerii stron wzorcowych. Zostanie wygenerowany nowy plik główny.<br/>
-7. Ten kod HTML to podstawowa markup, która zostanie wypełniona wynikami wyszukiwania zwróconmi z kodu JavaScript. Należy edytować kod w celu zmiany wartości var root = "adres URL zbioru witryn", jak pokazano w poniższym fragmencie:<br/>
+6. Zastąp adres URL tagu kotwicy obrazu ładowania na początku linkiem do obrazu ładowania w zbiorze witryn. Po wprowadzeniu zmian zmień nazwę pliku, a następnie przekaż go do galerii stron wzorcowych. Spowoduje to wygenerowanie nowego pliku master.<br/>
+7. Ten kod HTML to podstawowa adiustacja, która zostanie wypełniona przez wyniki wyszukiwania zwrócone z kodu JavaScript. Musisz edytować kod, aby zmienić wartość var root = "adres URL zbioru witryn", jak pokazano w poniższym fragmencie kodu:<br/>
 
 ```javascript
 var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. Wyniki są przypisywane do tablicy self.nodes, a na obiektach jest wbudowana hierarchia, która linq.js danych wyjściowych do self.hierarchy tablicy. Ta tablica jest obiektem powiązanym z kodem HTML. Robi się to w funkcji toggleView(), przekazując obiekt sobie do funkcji ko.applyBinding().<br/>Spowoduje to, że tablica hierarchii zostanie powiązana z następującym kodem HTML:<br/>
+8. Wyniki są przypisywane do tablicy self.nodes, a hierarchia jest kompilowana z obiektów przy użyciu linq.js przypisywania danych wyjściowych do tablicy self.hierarchy. Ta tablica jest obiektem powiązanym z kodem HTML. Odbywa się to w funkcji toggleView(), przekazując obiekt self do funkcji ko.applyBinding().<br/>Spowoduje to powiązanie tablicy hierarchii z następującym kodem HTML:<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
 ```
 
-Program obsługi zdarzeń dla `mouseenter` nawigacji `mouseexit` najwyższego poziomu i jest dodawany do nich w celu obsługi menu rozwijanych podwiter, które są wykonywane w `addEventsToElements()` funkcji.
+Programy obsługi zdarzeń i `mouseenter` `mouseexit` są dodawane do nawigacji najwyższego poziomu w celu obsługi menu rozwijanych podwitryn, które są wykonywane w `addEventsToElements()` funkcji.
 
-W naszym złożonym przykładzie nawigacji nowe obciążenie strony bez lokalnego buforowania wskazuje, że czas spędzony na serwerze został obcięty z nawigacji strukturalnej wzorcowej w celu uzyskania podobnego wyniku jak metoda nawigacji zarządzanej.
+W naszym złożonym przykładzie nawigacji nowe ładowanie strony bez lokalnego buforowania pokazuje, że czas spędzony na serwerze został skrócony z nawigacji strukturalnej testu porównawczego, aby uzyskać podobny wynik jak w przypadku zarządzanego podejścia nawigacji.
 
 ### <a name="about-the-javascript-file"></a>Informacje o pliku JavaScript...
 
 >[!NOTE]
->W przypadku używania niestandardowego kodu JavaScript upewnij się, CDN włączono obsługę plików publicznych i że plik znajduje się CDN lokalizacji.
+>Jeśli używasz niestandardowego języka JavaScript, upewnij się, że CDN publiczny jest włączony, a plik znajduje się w lokalizacji CDN.
 
 Cały plik JavaScript jest następujący:
 
@@ -458,27 +458,27 @@ function addEventsToElements() {
 
 ```
 
-Aby podsumować kod pokazany powyżej w `jQuery $(document).ready` funkcji, jest tworzona funkcja `viewModel object` `loadNavigationNodes()` tego obiektu. Ta funkcja ładuje poprzednio zbudowaną hierarchię nawigacji przechowywaną w lokalnym magazynie HTML5 przeglądarki klienckiej lub wywołuje tę funkcję `queryRemoteInterface()`.
+Aby podsumować kod pokazany powyżej w `jQuery $(document).ready` funkcji, utworzono funkcję `viewModel object` , a następnie `loadNavigationNodes()` wywoływana jest funkcja w tym obiekcie. Ta funkcja ładuje wcześniej utworzoną hierarchię nawigacji przechowywaną w magazynie lokalnym HTML5 przeglądarki klienckiej lub wywołuje funkcję `queryRemoteInterface()`.
 
-`QueryRemoteInterface()` tworzy żądanie przy użyciu funkcji z `getRequest()` parametrem zapytania zdefiniowanym wcześniej w skrypcie, a następnie zwraca dane z serwera. Te dane to zasadniczo tablica wszystkich witryn w zbiorze witryn reprezentowanych jako obiekty transferu danych o różnych właściwościach.
+`QueryRemoteInterface()` Tworzy żądanie przy użyciu `getRequest()` funkcji z parametrem zapytania zdefiniowanym wcześniej w skrypcie, a następnie zwraca dane z serwera. Te dane są zasadniczo tablicą wszystkich witryn w zbiorze witryn reprezentowanych jako obiekty transferu danych o różnych właściwościach.
 
-Te dane są następnie analizowane `SPO.Models.NavigationNode` `Knockout.js` z wcześniej zdefiniowanymi obiektami, które używają do tworzenia obserwowalnych właściwości do użytku przez powiązanie danych z zdefiniowanym wcześniej kodem HTML wartości.
+Te dane są następnie analizowane we wcześniej zdefiniowanych `SPO.Models.NavigationNode` obiektach, które umożliwiają `Knockout.js` tworzenie zauważalnych właściwości do użycia przez dane łączące wartości z wcześniej zdefiniowanym kodem HTML.
 
-Obiekty są następnie umieszczane w tablicy wyników. Ta tablica jest analizowana do JSON przy użyciu nokautów i przechowywana w lokalnym magazynie przeglądarki w celu poprawy wydajności podczas ładowania stron w przyszłości.
+Obiekty są następnie umieszczane w tablicy wyników. Ta tablica jest analizowana w formacie JSON przy użyciu narzędzia Knockout i przechowywana w magazynie przeglądarki lokalnej w celu zwiększenia wydajności podczas przyszłych obciążeń stron.
 
-### <a name="benefits-of-this-approach"></a>Zalety tego rozwiązania
+### <a name="benefits-of-this-approach"></a>Zalety tego podejścia
 
-Jedną z głównych zalet [tego](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) rozwiązania jest to, że korzystając z lokalnego magazynu HTML5, nawigacja jest przechowywana lokalnie dla użytkownika, gdy następnym razem załaduje stronę. Korzystając z interfejsu API wyszukiwania do nawigacji strukturalnej, ulepszamy wydajność; Jednak wykonywanie i dostosowywanie tej funkcji wymaga pewnych funkcji technicznych.
+Jedną z głównych zalet [tego podejścia jest to](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) , że przy użyciu magazynu lokalnego HTML5 nawigacja jest przechowywana lokalnie dla użytkownika podczas następnego ładowania strony. Uzyskujemy znaczne ulepszenia wydajności z korzystania z interfejsu API wyszukiwania dla nawigacji strukturalnej; Jednak wykonanie i dostosowanie tej funkcji wymaga pewnych możliwości technicznych.
 
-W [przykładowej implementacji](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) witryny są uporządkowane w taki sam sposób, jak w przypadku nawigacji strukturalnej, gdy jesteś w pracy. w kolejności alfabetycznej. Jeśli chcesz odchylić się od tej kolejności, opracowywanie i obsługa byłaby bardziej skomplikowana. Ponadto ta metoda wymaga odejmacji od obsługiwanych stron wzorcowych. Jeśli niestandardowa strona wzorcowa nie zostanie zachowana, w witrynie zostaną pominięte aktualizacje i ulepszenia wprowadzone przez firmę Microsoft w tych stronach wzorcowych.
+W [przykładowej implementacji](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) lokacje są uporządkowane w taki sam sposób jak wbudowana nawigacja strukturalna; porządku alfabetycznego. Jeśli chcesz odejść od tej kolejności, bardziej skomplikowane byłoby opracowanie i utrzymanie. Ponadto takie podejście wymaga odbiegania od obsługiwanych stron wzorcowych. Jeśli niestandardowa strona wzorca nie jest obsługiwana, witryna nie będzie zawierać aktualizacji i ulepszeń wprowadzanych przez firmę Microsoft na stronach wzorcowych.
 
-Powyższy [kod ma](#about-the-javascript-file) następujące zależności:
+Powyższy [kod](#about-the-javascript-file) ma następujące zależności:
 
-- jQuery - https://jquery.com/
-- KnockoutJS - https://knockoutjs.com/
-- Linq.js - https://linqjs.codeplex.com/lub github.com/neuecc/linq.js
+- jQuery — https://jquery.com/
+- KnockoutJS — https://knockoutjs.com/
+- Linq.js — https://linqjs.codeplex.com/lub github.com/neuecc/linq.js
 
-Bieżąca wersja systemu LinqJS nie zawiera metody ByHierarchy używanej w powyższym kodzie i spowoduje zerwanie kodu nawigacji. Aby rozwiązać ten problem, dodaj do pliku Linq.js przed wierszem następującą metodę `Flatten: function ()`.
+Bieżąca wersja linqJS nie zawiera metody ByHierarchy używanej w powyższym kodzie i spowoduje przerwanie kodu nawigacji. Aby rozwiązać ten problem, dodaj następującą metodę do pliku Linq.js przed wierszem `Flatten: function ()`.
 
 ```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
@@ -545,6 +545,6 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
   
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Omówienie nawigacji zarządzanej w programie SharePoint Server](/sharepoint/administration/overview-of-managed-navigation)
+[Omówienie nawigacji zarządzanej na serwerze SharePoint](/sharepoint/administration/overview-of-managed-navigation)
 
-[Buforowanie nawigacji strukturalnej i wydajność](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)
+[Buforowanie i wydajność nawigacji strukturalnej](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)
