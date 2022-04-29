@@ -251,7 +251,8 @@
 ##### [Oś czasu zdarzenia](threat-and-vuln-mgt-event-timeline.md)
 ##### [Raport urządzeń podatnych na zagrożenia](tvm-vulnerable-devices-report.md)
 ##### [Wykrywaj narażone urządzenia](tvm-hunt-exposed-devices.md)
-
+#### [Wytyczne dotyczące aktywnych zagrożeń i kampanii]()
+##### [Zarządzanie luką w zabezpieczeniach Log4Shell](tvm-manage-log4shell-guidance.md)
 ### [Wykrywanie urządzeń]()
 #### [Omówienie wykrywania urządzeń](device-discovery.md)
 #### [Konfiguruj wykrywanie urządzeń](configure-device-discovery.md)
