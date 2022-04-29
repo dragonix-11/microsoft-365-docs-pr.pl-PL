@@ -21,12 +21,12 @@ description: Użyj portalu zgodności usługi Microsoft Purview, aby przeszukać
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: fa397ec1ce7dea253367dfb917166a9a43655896
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e6754601aca5dda74ee59ed2c6c52b3f8b1eb2a3
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098477"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128505"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Przeszukiwanie dziennika inspekcji w centrum zgodności
 
@@ -128,7 +128,7 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
 
 - Jeśli chcesz programowo pobierać dane z dziennika inspekcji, zalecamy użycie interfejsu API działania zarządzania Office 365 zamiast skryptu programu PowerShell. Interfejs API działania zarządzania Office 365 to usługa internetowa REST, która umożliwia opracowywanie rozwiązań do monitorowania operacji, zabezpieczeń i zgodności dla organizacji. Aby uzyskać więcej informacji, zobacz [dokumentację interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- Azure Active Directory (Azure AD) to usługa katalogowa dla Microsoft 365. Ujednolicony dziennik inspekcji zawiera działania użytkownika, grupy, aplikacji, domeny i katalogu wykonywane w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> lub w portalu zarządzania platformy Azure. Aby uzyskać pełną listę zdarzeń usługi Azure AD, zobacz [Azure Active Directory Zdarzenia raportu inspekcji](/azure/active-directory/reports-monitoring/concept-audit-logs).
+- Azure Active Directory (Azure AD) jest usługą katalogową dla Microsoft 365. Ujednolicony dziennik inspekcji zawiera działania użytkownika, grupy, aplikacji, domeny i katalogu wykonywane w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> lub w portalu zarządzania platformy Azure. Aby uzyskać pełną listę zdarzeń Azure AD, zobacz [Azure Active Directory Zdarzenia raportu inspekcji](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 - Firma Microsoft nie gwarantuje określonego czasu po wystąpieniu zdarzenia, aby odpowiedni rekord inspekcji został zwrócony w wynikach wyszukiwania dziennika inspekcji. W przypadku usług podstawowych (takich jak Exchange, SharePoint, OneDrive i Teams) dostępność rekordów inspekcji zwykle wynosi od 60 do 90 minut po wystąpieniu zdarzenia. W przypadku innych usług dostępność rekordów inspekcji może być dłuższa. Jednak niektóre problemy, które są nieuniknione (takie jak awaria serwera) mogą wystąpić poza usługą inspekcji, która opóźnia dostępność rekordów inspekcji. Z tego powodu firma Microsoft nie zobowiązuje się do określonego czasu.
 
@@ -248,7 +248,7 @@ Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości
 
   Po podzieleniu kolumny **AuditData** można filtrować kolumnę **Operacje** , aby wyświetlić szczegółowe właściwości określonego typu działania.
 
-- Po pobraniu wszystkich wyników z zapytania wyszukiwania zawierającego zdarzenia z różnych usług **kolumna AuditData** w pliku CSV zawiera różne właściwości w zależności od usługi, w której wykonano akcję. Na przykład wpisy z dzienników inspekcji Exchange i usługi Azure AD obejmują właściwość o nazwie **ResultStatus**, która wskazuje, czy akcja zakończyła się pomyślnie, czy nie. Ta właściwość nie jest uwzględniana w przypadku zdarzeń w SharePoint. Podobnie SharePoint zdarzenia mają właściwość identyfikującą adres URL witryny dla działań związanych z plikami i folderami. Aby wyeliminować to zachowanie, rozważ użycie różnych wyszukiwań w celu wyeksportowania wyników działań z jednej usługi.
+- Po pobraniu wszystkich wyników z zapytania wyszukiwania zawierającego zdarzenia z różnych usług **kolumna AuditData** w pliku CSV zawiera różne właściwości w zależności od usługi, w której wykonano akcję. Na przykład wpisy z dzienników inspekcji Exchange i Azure AD obejmują właściwość o nazwie **ResultStatus**, która wskazuje, czy akcja zakończyła się pomyślnie, czy nie. Ta właściwość nie jest uwzględniana w przypadku zdarzeń w SharePoint. Podobnie SharePoint zdarzenia mają właściwość identyfikującą adres URL witryny dla działań związanych z plikami i folderami. Aby wyeliminować to zachowanie, rozważ użycie różnych wyszukiwań w celu wyeksportowania wyników działań z jednej usługi.
 
   Aby zapoznać się z opisem wielu właściwości wymienionych w kolumnie **AuditData** w pliku CSV podczas pobierania wszystkich wyników, a każda z nich ma zastosowanie, zobacz [Szczegółowe właściwości w dzienniku inspekcji](detailed-properties-in-the-office-365-audit-log.md).
 
@@ -298,7 +298,7 @@ Kliknij jeden z poniższych linków, aby przejść do określonej tabeli.
 
 :::row:::
     :::column:::
-        [Działania administracyjne grupy usługi Azure AD](#azure-ad-group-administration-activities)
+        [Azure AD działań administracyjnych grupy](#azure-ad-group-administration-activities)
     :::column-end:::
     :::column:::
         [Działania administracji aplikacjami](#application-administration-activities)
@@ -453,11 +453,11 @@ Nie znamy scenariuszy, w których akcje inne niż użytkownika generują zdarzen
 
 **Czy wywołania OneDriveMpc-Transform_Thumbnail są zawsze celowo wyzwalane przez użytkownika?**
 
-L.p. Jednak podobne zdarzenia można rejestrować w wyniku wstępnego pobrania przeglądarki.
+Nie. Jednak podobne zdarzenia można rejestrować w wyniku wstępnego pobrania przeglądarki.
 
 **Jeśli zobaczymy zdarzenie FilePreviewed pochodzące z adresu IP zarejestrowanego przez firmę Microsoft, czy oznacza to, że podgląd został wyświetlony na ekranie urządzenia użytkownika?**
 
-L.p. Zdarzenie mogło zostać zarejestrowane w wyniku wstępnego pobrania przeglądarki.
+Nie. Zdarzenie mogło zostać zarejestrowane w wyniku wstępnego pobrania przeglądarki.
 
 **Czy istnieją scenariusze, w których użytkownik wyświetlający podgląd dokumentu generuje zdarzenia FileAccessed?**
 
@@ -688,7 +688,7 @@ Poniższa tabela zawiera listę działań administracyjnych użytkowników, któ
 |:-----|:-----|:-----|
 |Dodano użytkownika|Dodaj użytkownika.|Utworzono konto użytkownika.|
 |Zmieniono licencję użytkownika|Zmień licencję użytkownika.|Licencja przypisana do użytkownika, co się zmieniło. Aby zobaczyć, jakie licencje zostały wprowadzone, zobacz odpowiednie **zaktualizowane działanie użytkownika** .|
-|Zmieniono hasło użytkownika|Zmień hasło użytkownika.|Użytkownik zmienia swoje hasło. Samoobsługowe resetowanie hasła musi być włączone (dla wszystkich lub wybranych użytkowników) w organizacji, aby umożliwić użytkownikom resetowanie hasła. Aktywność samoobsługowego resetowania haseł można również śledzić w Azure Active Directory. Aby uzyskać więcej informacji, zobacz [Opcje raportowania dotyczące zarządzania hasłami w usłudze Azure AD](/azure/active-directory/authentication/howto-sspr-reporting).
+|Zmieniono hasło użytkownika|Zmień hasło użytkownika.|Użytkownik zmienia swoje hasło. Samoobsługowe resetowanie hasła musi być włączone (dla wszystkich lub wybranych użytkowników) w organizacji, aby umożliwić użytkownikom resetowanie hasła. Aktywność samoobsługowego resetowania haseł można również śledzić w Azure Active Directory. Aby uzyskać więcej informacji, zobacz [Opcje raportowania dotyczące zarządzania hasłami Azure AD](/azure/active-directory/authentication/howto-sspr-reporting).
 |Usunięty użytkownik|Usuń użytkownika.|Konto użytkownika zostało usunięte.|
 |Resetowanie hasła użytkownika|Resetowanie hasła użytkownika.|Administrator resetuje hasło użytkownika.|
 |Ustaw właściwość, która wymusza zmianę hasła przez użytkownika|Ustaw wymuszanie zmiany hasła użytkownika.|Administrator ustawi właściwość, która wymusza zmianę hasła przy następnym logowaniu użytkownika do Microsoft 365.|
@@ -696,7 +696,7 @@ Poniższa tabela zawiera listę działań administracyjnych użytkowników, któ
 |Zaktualizowany użytkownik|Zaktualizuj użytkownika.|Administrator zmienia co najmniej jedną właściwości konta użytkownika. Aby uzyskać listę właściwości użytkownika, które można zaktualizować, zobacz sekcję "Aktualizowanie atrybutów użytkownika" w [Azure Active Directory Inspekcja zdarzeń raportu](/azure/active-directory/reports-monitoring/concept-audit-logs).|
 ||||
 
-### <a name="azure-ad-group-administration-activities"></a>Działania administracyjne grupy usługi Azure AD
+### <a name="azure-ad-group-administration-activities"></a>Azure AD działań administracyjnych grupy
 
 Poniższa tabela zawiera listę działań administracyjnych grupy, które są rejestrowane, gdy administrator lub użytkownik tworzy lub zmienia grupę Microsoft 365 lub gdy administrator tworzy grupę zabezpieczeń przy użyciu [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) lub portalu zarządzania platformy Azure. Aby uzyskać więcej informacji na temat grup w Microsoft 365, zobacz [Wyświetlanie, tworzenie i usuwanie grup w Centrum administracyjne platformy Microsoft 365](../admin/create-groups/create-groups.md).
 
@@ -714,25 +714,25 @@ Poniższa tabela zawiera listę działań administracyjnych grupy, które są re
 
 ### <a name="application-administration-activities"></a>Działania administracji aplikacjami
 
-Poniższa tabela zawiera listę działań administratora aplikacji, które są rejestrowane, gdy administrator dodaje lub zmienia aplikację zarejestrowaną w usłudze Azure AD. Każda aplikacja, która korzysta z usługi Azure AD na potrzeby uwierzytelniania, musi zostać zarejestrowana w katalogu.
+Poniższa tabela zawiera listę działań administratora aplikacji, które są rejestrowane, gdy administrator dodaje lub zmienia aplikację zarejestrowaną w Azure AD. Każda aplikacja, która korzysta z Azure AD uwierzytelniania, musi zostać zarejestrowana w katalogu.
 
 > [!NOTE]
 > Nazwy operacji wymienione w kolumnie **Operacja** w poniższej tabeli zawierają kropkę ( `.` ). Okres należy uwzględnić w nazwie operacji, jeśli określisz operację w poleceniu programu PowerShell podczas przeszukiwania dziennika inspekcji, tworzenia zasad przechowywania inspekcji, tworzenia zasad alertów lub tworzenia alertów aktywności. Pamiętaj również, aby użyć podwójnego cudzysłowu (`" "`), aby zawierać nazwę operacji.
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Dodano wpis delegowania|Dodaj wpis delegowania.|Utworzono/udzielono uprawnienia uwierzytelniania aplikacji w usłudze Azure AD.|
-|Dodano jednostkę usługi|Dodaj jednostkę usługi.|Aplikacja została zarejestrowana w usłudze Azure AD. Aplikacja jest reprezentowana przez jednostkę usługi w katalogu.|
-|Dodano poświadczenia do jednostki usługi|Dodaj poświadczenia jednostki usługi.|Poświadczenia zostały dodane do jednostki usługi w usłudze Azure AD. Zasada usługi reprezentuje aplikację w katalogu.|
-|Usunięto wpis delegowania|Usuń wpis delegowania.|Uprawnienie uwierzytelniania zostało usunięte z aplikacji w usłudze Azure AD.|
-|Usunięto jednostkę usługi z katalogu|Usuń jednostkę usługi.|Aplikacja została usunięta/wyrejestrowana z usługi Azure AD. Aplikacja jest reprezentowana przez jednostkę usługi w katalogu.|
-|Usunięto poświadczenia z jednostki usługi|Usuń poświadczenia jednostki usługi.|Poświadczenia zostały usunięte z jednostki usługi w usłudze Azure AD. Zasada usługi reprezentuje aplikację w katalogu.|
-|Ustawianie wpisu delegowania|Ustaw wpis delegowania.|Zaktualizowano uprawnienie uwierzytelniania dla aplikacji w usłudze Azure AD.|
+|Dodano wpis delegowania|Dodaj wpis delegowania.|Utworzono/udzielono uprawnienia uwierzytelniania aplikacji w Azure AD.|
+|Dodano jednostkę usługi|Dodaj jednostkę usługi.|Aplikacja została zarejestrowana w Azure AD. Aplikacja jest reprezentowana przez jednostkę usługi w katalogu.|
+|Dodano poświadczenia do jednostki usługi|Dodaj poświadczenia jednostki usługi.|Poświadczenia zostały dodane do jednostki usługi w Azure AD. Zasada usługi reprezentuje aplikację w katalogu.|
+|Usunięto wpis delegowania|Usuń wpis delegowania.|Uprawnienie uwierzytelniania zostało usunięte z aplikacji w Azure AD.|
+|Usunięto jednostkę usługi z katalogu|Usuń jednostkę usługi.|Aplikacja została usunięta/wyrejestrowana z Azure AD. Aplikacja jest reprezentowana przez jednostkę usługi w katalogu.|
+|Usunięto poświadczenia z jednostki usługi|Usuń poświadczenia jednostki usługi.|Poświadczenia zostały usunięte z jednostki usługi w Azure AD. Zasada usługi reprezentuje aplikację w katalogu.|
+|Ustawianie wpisu delegowania|Ustaw wpis delegowania.|Zaktualizowano uprawnienie uwierzytelniania dla aplikacji w Azure AD.|
 ||||
 
 ### <a name="role-administration-activities"></a>Działania administrowania rolami
 
-W poniższej tabeli wymieniono działania administracji rolami usługi Azure AD, które są rejestrowane, gdy administrator zarządza rolami administratora w [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) lub w portalu zarządzania platformy Azure.
+W poniższej tabeli wymieniono Azure AD działań administracyjnych ról, które są rejestrowane, gdy administrator zarządza rolami administratora w [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) lub w portalu zarządzania platformy Azure.
 
 > [!NOTE]
 > Nazwy operacji wymienione w kolumnie **Operacja** w poniższej tabeli zawierają kropkę ( `.` ). Okres należy uwzględnić w nazwie operacji, jeśli określisz operację w poleceniu programu PowerShell podczas przeszukiwania dziennika inspekcji, tworzenia zasad przechowywania inspekcji, tworzenia zasad alertów lub tworzenia alertów aktywności. Pamiętaj również, aby użyć podwójnego cudzysłowu (`" "`), aby zawierać nazwę operacji.
@@ -746,7 +746,7 @@ W poniższej tabeli wymieniono działania administracji rolami usługi Azure AD,
 
 ### <a name="directory-administration-activities"></a>Działania administracji katalogowej
 
-W poniższej tabeli wymieniono katalog usługi Azure AD i działania związane z domeną, które są rejestrowane, gdy administrator zarządza organizacją w [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) lub w portalu zarządzania platformy Azure.
+W poniższej tabeli wymieniono Azure AD działania związane z katalogiem i domeną, które są rejestrowane, gdy administrator zarządza organizacją w [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) lub w portalu zarządzania platformy Azure.
 
 > [!NOTE]
 > Nazwy operacji wymienione w kolumnie **Operacja** w poniższej tabeli zawierają kropkę ( `.` ). Okres należy uwzględnić w nazwie operacji, jeśli określisz operację w poleceniu programu PowerShell podczas przeszukiwania dziennika inspekcji, tworzenia zasad przechowywania inspekcji, tworzenia zasad alertów lub tworzenia alertów aktywności. Pamiętaj również, aby użyć podwójnego cudzysłowu (`" "`), aby zawierać nazwę operacji.
@@ -761,7 +761,7 @@ W poniższej tabeli wymieniono katalog usługi Azure AD i działania związane z
 |Ustawianie uwierzytelniania domeny|Ustaw uwierzytelnianie domeny.|Zmieniono ustawienie uwierzytelniania domeny dla organizacji.|
 |Zaktualizowano ustawienia federacji dla domeny|Ustaw ustawienia federacji w domenie.|Zmieniono ustawienia federacji (udostępniania zewnętrznego) dla organizacji.|
 |Ustawianie zasad haseł|Ustaw zasady haseł.|Zmieniono ograniczenia długości i znaków haseł użytkowników w organizacji.|
-|Włączono synchronizację usługi Azure AD|Ustaw flagę DirSyncEnabled.|Ustaw właściwość, która włącza katalog dla Azure AD Sync.|
+|Włączono synchronizację Azure AD|Ustaw flagę DirSyncEnabled.|Ustaw właściwość, która włącza katalog dla Azure AD Sync.|
 |Zaktualizowana domena|Zaktualizuj domenę.|Zaktualizowano ustawienia domeny w organizacji.|
 |Zweryfikowana domena|Sprawdź domenę.|Sprawdź, czy Twoja organizacja jest właścicielem domeny.|
 |Zweryfikowana domena zweryfikowana pocztą e-mail|Sprawdź domenę zweryfikowaną pocztą e-mail.|Używana weryfikacja poczty e-mail w celu sprawdzenia, czy Organizacja jest właścicielem domeny.|
@@ -1108,6 +1108,21 @@ Poniżej przedstawiono kilka wskazówek dotyczących wyszukiwania działań admi
 
    Należy pamiętać, że te same działania administratora Exchange są rejestrowane zarówno w dzienniku inspekcji Exchange administratora, jak i w dzienniku inspekcji.
 
+### <a name="encrypted-message-portal-activities"></a>Działania zaszyfrowanego portalu wiadomości
+
+Dzienniki dostępu są dostępne dla zaszyfrowanych komunikatów za pośrednictwem zaszyfrowanego portalu wiadomości, który pozwala organizacji określić, kiedy wiadomości są odczytywane i przekazywane dalej przez adresatów zewnętrznych. Aby uzyskać więcej informacji na temat włączania i używania zaszyfrowanych dzienników aktywności portalu komunikatów, zobacz [Encrypted message portal activity log (Dziennik aktywności zaszyfrowanego portalu wiadomości](ome-message-access-logs.md)).
+
+Każdy wpis inspekcji dla śledzonego komunikatu będzie zawierać następujące pola:
+
+- MessageID — zawiera identyfikator śledzonego komunikatu. Jest to identyfikator klucza używany do śledzenia komunikatu za pośrednictwem systemu.
+- Adresat — lista wszystkich adresów e-mail adresatów.
+- Nadawca — źródłowy adres e-mail.
+- AuthenticationMethod — opisuje metodę uwierzytelniania na potrzeby uzyskiwania dostępu do komunikatu, na przykład OTP, Yahoo, Gmail lub Microsoft.
+- AuthenticationStatus — zawiera wartość wskazującą, że uwierzytelnianie zakończyło się pomyślnie lub zakończyło się niepowodzeniem.
+- OperationStatus — wskazuje, czy wskazana operacja zakończyła się powodzeniem, czy niepowodzeniem.
+- AttachmentName — nazwa załącznika.
+- OperationProperties — lista opcjonalnych właściwości, na przykład liczba wysłanych kodów dostępu OTP lub temat wiadomości e-mail.
+
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 **Czym różnią się usługi Microsoft 365, które są obecnie poddawane inspekcji?**
@@ -1132,7 +1147,7 @@ Tak. Interfejs API działania zarządzania Office 365 służy do programowego po
 
 **Czy istnieją inne sposoby uzyskiwania dzienników inspekcji innych niż korzystanie z centrum zabezpieczeń i zgodności lub interfejsu API działania zarządzania Office 365?**
 
-L.p. Są to jedyne dwa sposoby pobierania danych z usługi inspekcji.
+Nie. Są to jedyne dwa sposoby pobierania danych z usługi inspekcji.
 
 **Czy muszę indywidualnie włączyć inspekcję w każdej usłudze, dla której chcę przechwycić dzienniki inspekcji?**
 
@@ -1140,7 +1155,7 @@ W większości usług inspekcja jest domyślnie włączona po początkowym włą
 
 **Czy usługa inspekcji obsługuje cofanie duplikowania rekordów?**
 
-L.p. Potok usługi inspekcji znajduje się niemal w czasie rzeczywistym i w związku z tym nie może obsługiwać cofania duplikowania.
+Nie. Potok usługi inspekcji znajduje się niemal w czasie rzeczywistym i w związku z tym nie może obsługiwać cofania duplikowania.
 
 **Gdzie są przechowywane dane inspekcji?**
 

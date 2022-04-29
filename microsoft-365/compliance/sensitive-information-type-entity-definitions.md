@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Istnieje wiele typów informacji poufnych, które są gotowe do użycia w zasadach DLP. W tym artykule wymieniono wszystkie te typy informacji poufnych i pokazano, czego szukają zasady DLP podczas wykrywania poszczególnych typów.
-ms.openlocfilehash: 6074082812853469e0513d67ec68519eb2a89563
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: af2cbd03de426aa34b9db82691a22684c4c1df0b
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970664"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130807"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definicje jednostek typu informacji poufnych
 
@@ -116,7 +116,7 @@ Różnych.
 
 ### <a name="checksum"></a>Suma kontrolna
 
-L.p.
+Nie.
 
 ### <a name="description"></a>Opis
 
@@ -1538,7 +1538,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Parametry połączenia bazy danych IAAS platformy Azure i parametry połączenia Azure SQL
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Parametry połączenia bazy danych IAAS platformy Azure i parametry połączenia usługi Azure SQL
 
 ### <a name="format"></a>Formacie
 
@@ -9588,9 +9588,9 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_updated, który jest oparty na [międzynarodowej klasyfikacji chorób, dziesiątej poprawce, modyfikacji klinicznej (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Ten typ szuka tylko terminu, a nie kodów ubezpieczeniowych.
+Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_updated, który jest oparty na [międzynarodowej klasyfikacji chorób, dziesiątej poprawce, modyfikacji klinicznej (ICD-10-CM)](https://icd10cmtool.cdc.gov/). Ten typ szuka tylko terminu, a nie kodów ubezpieczeniowych.
 
-Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_codes, który jest oparty na [międzynarodowej klasyfikacji chorób, dziesiątej poprawce, modyfikacji klinicznej (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Ten typ szuka tylko kodów ubezpieczeniowych, a nie opisu.
+Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_codes, który jest oparty na [międzynarodowej klasyfikacji chorób, dziesiątej poprawce, modyfikacji klinicznej (ICD-10-CM)](https://icd10cmtool.cdc.gov/). Ten typ szuka tylko kodów ubezpieczeniowych, a nie opisu.
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Międzynarodowa klasyfikacja chorób (ICD-9-CM)
 

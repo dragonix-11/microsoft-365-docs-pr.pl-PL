@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f4456dc29f4d62703041b9c386aa7c9fa132695a
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b34ac5538a2c38261f7da0a0cd3a75452660ef6e
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667367"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128810"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,6 +32,7 @@ ms.locfileid: "64667367"
 **Dotyczy:**
 
 - Microsoft 365 Defender
+- Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 Tabela `EmailEvents` w zaawansowanym schemacie [wyszukiwania zagrożeń](advanced-hunting-overview.md) zawiera informacje o zdarzeniach związanych z przetwarzaniem wiadomości e-mail na Ochrona usługi Office 365 w usłudze Microsoft Defender. To odwołanie służy do konstruowania zapytań, które zwracają informacje z tej tabeli.
 
@@ -51,13 +52,13 @@ Aby uzyskać informacje na temat innych tabel w zaawansowanym schemacie wyszukiw
 | `SenderMailFromAddress` | `string` | Adres e-mail nadawcy w nagłówku MAIL FROM, znany również jako nadawca koperty lub adres Return-Path |
 | `SenderFromAddress` | `string` | Adres e-mail nadawcy w nagłówku FROM, który jest widoczny dla adresatów poczty e-mail na klientach poczty e-mail |
 | `SenderDisplayName` | `string` | Nazwa nadawcy wyświetlana w książce adresowej, zazwyczaj kombinacja danego lub imienia, inicjał środkowy oraz nazwisko lub nazwisko |
-| `SenderObjectId` | `string` |Unikatowy identyfikator konta nadawcy w usłudze Azure AD |
+| `SenderObjectId` | `string` |Unikatowy identyfikator konta nadawcy w Azure AD |
 | `SenderMailFromDomain` | `string` | Domena nadawcy w nagłówku MAIL FROM, znana również jako nadawca koperty lub adres Return-Path |
 | `SenderFromDomain` | `string` | Domena nadawcy w nagłówku FROM, która jest widoczna dla adresatów poczty e-mail na klientach poczty e-mail |
 | `SenderIPv4` | `string` | Adres IPv4 ostatniego wykrytego serwera poczty, który przekaźnikował wiadomość |
 | `SenderIPv6` | `string` | Adres IPv6 ostatniego wykrytego serwera poczty, który przekaźnikował wiadomość |
 | `RecipientEmailAddress` | `string` | Adres e-mail odbiorcy lub adres e-mail odbiorcy po rozszerzeniu listy dystrybucyjnej |
-| `RecipientObjectId` | `string` | Unikatowy identyfikator adresata wiadomości e-mail w usłudze Azure AD |
+| `RecipientObjectId` | `string` | Unikatowy identyfikator adresata wiadomości e-mail w Azure AD |
 | `Subject` | `string` | Temat wiadomości e-mail |
 | `EmailClusterId` | `string` | Identyfikator grupy podobnych wiadomości e-mail klastrowanych na podstawie heurystycznej analizy ich zawartości |
 | `EmailDirection` | `string` | Kierunek wiadomości e-mail względem sieci: przychodzący, wychodzący, wewnątrz organizacji |

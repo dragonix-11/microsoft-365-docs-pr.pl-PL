@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Dowiedz się, jak skonfigurować opcję wydania dla nowych aktualizacji produktów i funkcji w Centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 67c6fe3f08549424c725589a50c647a876c151af
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 176558448f31fadea0b0cf865bca5d1156e3eefe
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022454"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129425"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Konfigurowanie opcji wersji Standardowa lub Docelowa
 
@@ -47,7 +47,7 @@ Każda nowa wersja jest najpierw testowana i weryfikowana przez zespół funkcji
 W przypadku istotnych aktualizacji klienci są początkowo powiadamiani przez [plan Microsoft 365](https://products.office.com/business/office-365-roadmap). Gdy aktualizacja zbliża się do wdrożenia, jest ona przekazywana za pośrednictwem [centrum Microsoft 365 komunikatów](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> Aby uzyskać dostęp do centrum komunikatów za pośrednictwem [centrum administracyjnego](/office365/admin/admin-overview/about-the-admin-center), potrzebujesz konta Microsoft 365 lub konta usługi Azure AD. Microsoft 365 użytkownicy planu domowego nie mają centrum administracyjnego.
+> Aby uzyskać dostęp do centrum wiadomości za pośrednictwem [centrum administracyjnego](/office365/admin/admin-overview/admin-center-overview), potrzebujesz konta Microsoft 365 lub Azure AD. Microsoft 365 użytkownicy planu domowego nie mają centrum administracyjnego.
 
 ## <a name="standard-release"></a>Udostępnianie standardowe
 

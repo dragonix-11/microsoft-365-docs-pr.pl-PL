@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów dotyczących wolnych reguł przepływu poczty e-mail
+title: Naprawianie szczegółowych informacji o regułach powolnego przepływu poczty e-mail
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -13,50 +13,50 @@ ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się, jak znaleźć i naprawić nieefektywne lub uszkodzone reguły przepływu poczty (nazywane także regułami transportu) w Centrum zgodności usługi Security &, aby zidentyfikować i naprawić nieefektywne lub uszkodzone reguły przepływu poczty (nazywane także regułami transportu) w organizacji.
+description: Administratorzy mogą dowiedzieć się, jak używać szczegółowych informacji na temat rozwiązywania problemów z regułami powolnych przepływów poczty w Centrum zgodności & zabezpieczeń w celu identyfikowania i naprawiania nieefektywnych lub uszkodzonych reguł przepływu poczty (nazywanych również regułami transportu) w organizacji.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30dda2b890df9f33fbc9af04b5821fb24593a335
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 650389529f2a5d811f71b7c3f755d93e7e734d81
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468396"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128745"
 ---
-# <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Rozwiązywanie problemów dotyczących wolnych reguł przepływu poczty e-mail w Centrum & zgodności
+# <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Rozwiązywanie problemów ze szczegółowymi informacjami o regułach przepływu poczty w Centrum zgodności & zabezpieczeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nieefektywne reguły przepływu poczty e-mail (nazywane także regułami transportu) mogą prowadzić do opóźnień przepływu poczty e-mail w organizacji. Ta szczegółowe informacje raportuje reguły przepływu poczty e-mail, które mają wpływ na przepływ poczty e-mail organizacji. Oto przykłady tych typów reguł:
+Nieefektywne reguły przepływu poczty (nazywane również regułami transportu) mogą prowadzić do opóźnień przepływu poczty w organizacji. Ten wgląd w szczegółowe informacje zgłasza reguły przepływu poczty, które mają wpływ na przepływ poczty w organizacji. Przykłady tych typów reguł obejmują:
 
-- Warunki, dla **których jest on członkiem** w dużych grupach.
-- Warunki, które używają złożonego dopasowania wzorca wyrażeń regularnych (regex).
-- Warunki, które korzystają z funkcji sprawdzania zawartości załączników.
+- Warunki, które używają **elementu Jest członkiem** dla dużych grup.
+- Warunki, które używają dopasowywania wzorców złożonych wyrażeń regularnych (regex).
+- Warunki, które używają ewidencjonowania zawartości w załącznikach.
 
-W **obszarze** Polecane dla Ciebie na pulpicie  nawigacyjnym przepływu poczty w [](mail-flow-insights-v2.md) Centrum zabezpieczeń & zgodności znajdziesz informacje o regułach wolnego przepływu poczty [e-mail](https://protection.office.com) z powiadomieniem o tym, że ich stosowanie trwa zbyt długo.
+Szczegółowe informacje na temat **rozwiązywania problemów z regułami powolnego przepływu poczty** w obszarze **Zalecane dla Ciebie** [na pulpicie nawigacyjnym przepływu poczty](mail-flow-insights-v2.md) w [Centrum zgodności & zabezpieczeń](https://protection.office.com) powiadamia użytkownika, gdy ukończenie reguły przepływu poczty trwa zbyt długo.
 
-Ta informacja pojawia się tylko po wykryciu warunku (jeśli nie masz żadnych pętli poczty, nie zobaczysz tej informacji).
+Ta analiza jest wyświetlana dopiero po wykryciu warunku (jeśli nie masz żadnych pętli poczty, nie zobaczysz szczegółowych informacji).
 
-To powiadomienie może ułatwić identyfikowanie i dostosowywanie reguł przepływu poczty e-mail w celu zmniejszenia opóźnień przepływu poczty.
+To powiadomienie ułatwia identyfikowanie i dostosowywanie reguł przepływu poczty w celu zmniejszenia opóźnień w przepływie poczty.
 
-:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules.png" alt-text="Szczegółowe informacje na temat naprawiania wolnych reguł przepływu poczty e-mail w obszarze Polecane dla Ciebie na pulpicie nawigacyjnym przepływu poczty" lightbox="../../media/mfi-fix-slow-mail-flow-rules.png":::
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules.png" alt-text="Szczegółowe informacje na temat rozwiązywania problemów z regułami powolnych przepływów poczty w obszarze Zalecane dla Ciebie na pulpicie nawigacyjnym przepływu poczty" lightbox="../../media/mfi-fix-slow-mail-flow-rules.png":::
 
-Po kliknięciu w **widżecie** przycisku Wyświetl szczegóły zostanie wyświetlone wysuwne okno z większej liczby informacji:
+Po kliknięciu pozycji **Wyświetl szczegóły** w widżetu zostanie wyświetlone okno wysuwane z większą ilością informacji:
 
-- **Reguła**: Możesz zatrzymać wskaźnik myszy na podsumowaniu, aby wyświetlić wszystkie warunki, wyjątki i akcje reguły. Możesz kliknąć podsumowanie, aby edytować regułę w Centrum administracyjnym programu Exchange (EAC) w oknie <https://admin.exchange.microsoft.com/#/transportrules>.
-- **Liczba wiadomości ocenionych** jako: Możesz kliknąć pozycję  Wyświetl przykładowe wiadomości, aby [](message-trace-scc.md) wyświetlić wyniki śledzenia wiadomości dla przykładowych wiadomości, na które wpływa reguła.
-- **Średni czas spędzony na każdej wiadomości**
-- **Mediana czasu spędzonego na wiadomości**: wartość środkowa, która oddziela górną połowę od dolnej połowy danych czasu.
+- **Reguła**: możesz zatrzymać kursor na podsumowaniu, aby wyświetlić wszystkie warunki, wyjątki i akcje reguły. Możesz kliknąć podsumowanie, aby edytować regułę w centrum administracyjnym Exchange (EAC) pod adresem <https://admin.exchange.microsoft.com/#/transportrules>.
+- **Liczba ocenianych komunikatów**: możesz kliknąć pozycję **Wyświetl przykładowe komunikaty** , aby wyświetlić wyniki [śledzenia komunikatów](message-trace-scc.md) dla przykładu komunikatów, których dotyczy reguła.
+- **Średni czas spędzony na każdym komunikacie**
+- **Mediana czasu poświęconego na komunikat**: wartość środkowa, która oddziela górną połowę od dolnej połowy danych czasu.
 
-:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules-details.png" alt-text="Wysuw szczegółów wyświetlany po kliknięciu przycisku Wyświetl szczegóły w szczegółowych informacjach dotyczących naprawiania wolnych reguł przepływu poczty e-mail" lightbox="../../media/mfi-fix-slow-mail-flow-rules-details.png":::
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules-details.png" alt-text="Okno wysuwane Szczegóły wyświetlane po kliknięciu pozycji Wyświetl szczegóły w szczegółowych informacjach na temat rozwiązywania problemów z regułami powolnych przepływów poczty" lightbox="../../media/mfi-fix-slow-mail-flow-rules-details.png":::
 
-Aby uzyskać więcej informacji na temat warunków i wyjątków w regułach przepływu poczty e-mail, zobacz Warunki i wyjątki reguły przepływu poczty [e-mail (predykaty) w Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Aby uzyskać więcej informacji na temat warunków i wyjątków w regułach przepływu poczty, zobacz [Warunki reguły przepływu poczty i wyjątki (predykaty) w Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 ## <a name="see-also"></a>Zobacz też
 
-Aby uzyskać więcej informacji na temat pulpitu nawigacyjnego przepływu poczty e-mail, zobacz Szczegółowe informacje o przepływie poczty w [Centrum & zabezpieczeń i zgodności](mail-flow-insights-v2.md).
+Aby uzyskać informacje o innych szczegółowych informacjach na pulpicie nawigacyjnym przepływu poczty, zobacz [Szczegółowe informacje o przepływie poczty w Centrum zgodności & zabezpieczeń](mail-flow-insights-v2.md).

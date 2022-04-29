@@ -1,5 +1,5 @@
 ---
-title: Ochrona usługi Office 365 w usłudze Microsoft Defender podręcznik wersji próbnej
+title: podręcznik wersji próbnej Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,134 +14,135 @@ ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
-description: Ochrona usługi Office 365 w usłudze Microsoft Defender dotyczące wersji próbnej rozwiązań.
-ms.openlocfilehash: 1e943cc36d7a8787a41e16d61b15fe9e2eea129c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+description: podręcznik wersji próbnej rozwiązań Ochrona usługi Office 365 w usłudze Microsoft Defender.
+ms.openlocfilehash: f23c45d117735997c219278621be7f314602cd8f
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474888"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130697"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Podręcznik wersji próbnej: Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-Zapraszamy do podręcznika Ochrona usługi Office 365 w usłudze Microsoft Defender wersji próbnej. Ten podręcznik pomoże Ci w jak najczęściej 90-dniowej bezpłatnej wersji próbnej, ucząc, jak chronić organizację przed Ochrona usługi Office 365 w usłudze Defender. Korzystając z rekomendacji firmy Microsoft, dowiesz się, jak Ochrona usługi Office 365 w usłudze Defender definiowanie zasad ochrony, analizowanie zagrożeń dla organizacji i reagowanie na ataki.
+Witamy w podręczniku wersji próbnej Ochrona usługi Office 365 w usłudze Microsoft Defender. Ten podręcznik pomoże Ci w maksymalnym użyciu 90-dniowej bezpłatnej wersji próbnej, ucząc Cię, jak chronić organizację za pomocą Ochrona usługi Office 365 w usłudze Defender. Korzystając z zaleceń firmy Microsoft, dowiesz się, jak Ochrona usługi Office 365 w usłudze Defender może pomóc w definiowaniu zasad ochrony, analizie zagrożeń dla organizacji i reagowaniu na ataki.
 
-:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Graficzna reprezentacja wszystkich składników Ochrona usługi Office 365 w usłudze Microsoft Defender" lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Graficzna reprezentacja wszystkich składników Ochrona usługi Office 365 w usłudze Microsoft Defender." lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
 
-Te działania są zaleceniami od zespołu usługi Microsoft Defender w sprawie kluczowych funkcji do wypróbowania w 90-dniowej wersji próbnej.
+Te akcje są zaleceniami zespołu usługi Microsoft Defender dotyczącymi kluczowych funkcji, które należy wypróbować w 90-dniowej wersji próbnej.
 
 ## <a name="step-1-getting-started"></a>Krok 1. Wprowadzenie
 
-### <a name="start-your-microsoft-defender-for-office-365-trial"></a>Rozpoczynanie okresu Ochrona usługi Office 365 w usłudze Microsoft Defender próbnego
+### <a name="start-your-microsoft-defender-for-office-365-trial"></a>Rozpoczynanie Ochrona usługi Office 365 w usłudze Microsoft Defender wersji próbnej
 
-Po zainicjowaniu wersji próbnej i ukończeniu procesu konfiguracji może upłynieć do 2 godzin, aż zmiany zajdą w życie.
+Po zainicjowaniu wersji próbnej i zakończeniu procesu konfiguracji wprowadzenie zmian może potrwać do 2 godzin.
 
-Wstępnie skonfigurowane zasady zabezpieczeń w [](preset-security-policies.md) Twoim środowisku zostały automatycznie skonfigurowane. Te zasady reprezentują podstawowy profil ochrony, który jest odpowiedni dla większości użytkowników. Standardowa ochrona obejmuje:
+Automatycznie skonfigurowaliśmy [wstępnie skonfigurowane zasady zabezpieczeń](preset-security-policies.md) w twoim środowisku. Te zasady reprezentują profil ochrony punktu odniesienia, który jest odpowiedni dla większości użytkowników. Standardowa ochrona obejmuje:
 
-- Sejf linki, Sejf załączniki i zasady ochrony przed wyłudzaniem informacji, które są zakresem całej dzierżawy lub podzbioru użytkowników wybranego podczas procesu konfiguracji wersji próbnej.
-- Ochrona przed SharePoint, OneDrive, Office i Microsoft Teams.
+- Sejf Linki, Sejf Załączniki i zasady ochrony przed wyłudzaniem informacji, które są ograniczone do całej dzierżawy lub podzestawu użytkowników, których można było wybrać podczas procesu konfiguracji wersji próbnej.
+- ochrona załączników Sejf dla SharePoint, OneDrive i Microsoft Teams.
+- ochrona linków Sejf dla obsługiwanych aplikacji Office 365.
 
-Obejrzyj ten klip wideo, aby dowiedzieć się więcej: Ochrona przed złośliwymi [linkami za pomocą linków Sejf w aplikacji Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
+Obejrzyj ten film wideo, aby dowiedzieć się więcej: [Ochrona przed złośliwymi linkami za pomocą linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
 
-### <a name="enable-users-to-report-suspicious-content"></a>Umożliwianie użytkownikom zgłaszania podejrzanej zawartości
+### <a name="enable-users-to-report-suspicious-content"></a>Umożliwianie użytkownikom zgłaszania podejrzanych treści
 
-Ochrona usługi Office 365 w usłudze Defender umożliwia użytkownikom zgłaszanie wiadomości do ich zespołów ds. zabezpieczeń oraz umożliwia administratorom przesyłanie wiadomości do firmy Microsoft w celu analizy.
+Ochrona usługi Office 365 w usłudze Defender umożliwia użytkownikom zgłaszanie komunikatów do swoich zespołów ds. zabezpieczeń i umożliwia administratorom przesyłanie komunikatów do firmy Microsoft w celu analizy.
 
-- [Wdymuj dodatek Wiadomość raportu lub dodatek Wyłudzanie informacji raportu](enable-the-report-message-add-in.md).
-- Ustanawianie przepływu pracy w [celu zgłaszania wyników fałszywie dodatnich i ujemnych](report-false-positives-and-false-negatives.md).
-- Korzystanie z [portalu Przesyłanie.](admin-submission.md)
+- Wdróż [dodatek Komunikat raportu lub dodatek Wyłudzanie informacji o raporcie](enable-the-report-message-add-in.md).
+- Ustanawianie przepływu pracy w celu [raportowania wyników fałszywie dodatnich i fałszywie ujemnych](report-false-positives-and-false-negatives.md).
+- Użyj [portalu Przesłane](admin-submission.md).
 
-Obejrzyj ten klip wideo, aby dowiedzieć się więcej: Dowiedz się, jak za pomocą portalu Przesyłanie przesyłać wiadomości do analizy [— YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
+Obejrzyj ten film wideo, aby dowiedzieć się więcej: [Dowiedz się, jak przesyłać wiadomości do analizy za pomocą portalu Przesyłania — YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
 
-### <a name="review-reports-to-understand-the-threat-landscape"></a>Przeglądanie raportów w celu zrozumienia zagrożeń
+### <a name="review-reports-to-understand-the-threat-landscape"></a>Przeglądanie raportów w celu zrozumienia krajobrazu zagrożeń
 
-Użyj funkcji raportowania w programie Ochrona usługi Office 365 w usłudze Defender, aby uzyskać więcej szczegółowych informacji o środowisku.
+Skorzystaj z możliwości raportowania w Ochrona usługi Office 365 w usłudze Defender, aby uzyskać więcej szczegółów na temat środowiska.
 
-- Opis zagrożeń otrzymanych w wiadomości e-mail i narzędziach do współpracy dzięki [raportowi o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
-- Zobacz, gdzie są blokowane zagrożenia za pomocą [raportu o stanie przepływu poczty](view-email-security-reports.md#mailflow-status-report).
-- [Przejrzyj linki](view-reports-for-mdo.md#url-protection-report) , które były przeglądane przez użytkowników lub blokowane przez system.
+- Omówienie zagrożeń odebranych w narzędziach do poczty e-mail i współpracy za pomocą [raportu o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
+- Zobacz, gdzie zagrożenia są blokowane w [raporcie o stanie przepływu poczty](view-email-security-reports.md#mailflow-status-report).
+- [Przejrzyj linki](view-reports-for-mdo.md#url-protection-report) , które zostały wyświetlone przez użytkowników lub zablokowane przez system.
 
-:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="Raporty dotyczące współpracy &-mail w portalu Microsoft 365 Defender-mail" lightbox="../../media/mdo-trial-playbook-reporting.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="Raporty dotyczące współpracy & poczty e-mail w portalu Microsoft 365 Defender." lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
 ## <a name="step-2-intermediate-steps"></a>Krok 2. Kroki pośrednie
 
-### <a name="prioritize-focus-on-your-most-targeted-users"></a>Ustawianie priorytetu na użytkownikach, do których jest najczęściej kierowana
+### <a name="prioritize-focus-on-your-most-targeted-users"></a>Określanie priorytetów na najbardziej docelowych użytkownikach
 
-Ochrona najbardziej ukierunkowanych i najbardziej widocznych użytkowników za pomocą usługi Priority Account Protection w programie Ochrona usługi Office 365 w usłudze Defender, która ułatwia określanie priorytetów przepływu pracy w celu zapewnienia bezpieczeństwa tym użytkownikom.
+Chroń najbardziej docelowych i najbardziej widocznych użytkowników za pomocą usługi Priority Account Protection w Ochrona usługi Office 365 w usłudze Defender, co ułatwia określenie priorytetów przepływu pracy w celu zapewnienia bezpieczeństwa tych użytkowników.
 
-- Identyfikowanie najbardziej docelowych lub najbardziej widocznych użytkowników.
-- [Oznacz tych użytkowników jako](../../admin/setup/priority-accounts.md#add-priority-accounts-from-the-setup-page) konta priorytetowe.
-- Monitoruj zagrożenia, dla których mają być najważniejsze konta w portalu.
+- Zidentyfikuj najbardziej docelowych lub najbardziej widocznych użytkowników.
+- [Otaguj tych użytkowników](../../admin/setup/priority-accounts.md#add-priority-accounts-from-the-setup-page) jako konta priorytetowe.
+- Śledzenie zagrożeń dla konta priorytetowego w portalu.
 
-Obejrzyj ten klip wideo, aby dowiedzieć się więcej: [Ochrona kont priorytetowych w aplikacji Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).
+Obejrzyj ten film wideo, aby dowiedzieć się więcej: [Ochrona kont priorytetowych w Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).
 
-:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="Alerty w portalu Microsoft 365 Defender wiadomości" lightbox="../../media/mdo-trial-playbook-alerts.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="Alerty w portalu Microsoft 365 Defender." lightbox="../../media/mdo-trial-playbook-alerts.png":::
 
-### <a name="avoid-costly-breaches-by-preventing-user-compromise"></a>Unikanie kosztownych naruszeń przez zapobieganie naruszeniu zabezpieczeń użytkowników
+### <a name="avoid-costly-breaches-by-preventing-user-compromise"></a>Unikaj kosztownych naruszeń, zapobiegając naruszeniom bezpieczeństwa użytkowników
 
-Otrzymuj alerty o potencjalnym złamaniu zabezpieczeń i automatycznie ograniczaj wpływ tych zagrożeń, aby uniemożliwić atakującym uzyskiwanie dostępu do Twojego środowiska.
+Otrzymywanie alertów o potencjalnych naruszeniach zabezpieczeń i automatyczne ograniczanie wpływu tych zagrożeń, aby zapobiec uzyskaniu przez osoby atakujące głębszego dostępu do środowiska.
 
-- Przejrzyj [naruszone alerty użytkowników](address-compromised-users-quickly.md#compromised-user-alerts).
-- [Badanie i odpowiadanie](address-compromised-users-quickly.md) na naruszonych użytkowników.
+- Przejrzyj [alerty użytkowników, których zabezpieczenia zostały naruszone](address-compromised-users-quickly.md#compromised-user-alerts).
+- [Badanie i reagowanie na](address-compromised-users-quickly.md) naruszonym użytkownikom.
 
-:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="Badanie naruszonych użytkowników" lightbox="../../media/mdo-trial-playbook-investigation.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="Badanie użytkowników, którzy naruszyli bezpieczeństwo." lightbox="../../media/mdo-trial-playbook-investigation.png":::
 
-Obejrzyj ten klip wideo, aby dowiedzieć się więcej: Wykrywanie naruszenia bezpieczeństwa w sieci i odpowiadanie [na nie Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=Pc7y3a-wdR0&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=5).
+Obejrzyj ten film wideo, aby dowiedzieć się więcej: [Wykrywanie naruszeń zabezpieczeń i reagowanie na nie w Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=Pc7y3a-wdR0&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=5).
 
 ### <a name="use-threat-explorer-to-investigate-malicious-email"></a>Badanie złośliwych wiadomości e-mail za pomocą Eksploratora zagrożeń
 
-Ochrona usługi Office 365 w usłudze Defender umożliwia badanie działań, które ryzykują osoby w organizacji, oraz działania w celu ochrony organizacji. Możesz to zrobić przy użyciu [Eksploratora zagrożeń lub (wykrywanie w czasie rzeczywistym).](threat-explorer.md)
+Ochrona usługi Office 365 w usłudze Defender umożliwia badanie działań, które narażają osoby w organizacji na niebezpieczeństwo, oraz podjęcie działań w celu ochrony organizacji. Można to zrobić za pomocą [Eksploratora zagrożeń](threat-explorer.md).
 
-- [Znajdowanie podejrzanych dostarczonych wiadomości](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered) e-mail: Znajdowanie i usuwanie wiadomości, identyfikowanie adresu IP złośliwego nadawcy wiadomości e-mail lub rozpoczynanie zdarzenia w celu dalszego badania.
-- [Sprawdź akcję i lokalizację](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) dostarczenia: To sprawdzanie pozwala sprawdzić lokalizację problemowych wiadomości e-mail.
-- [Wyświetl oś czasu wiadomości e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email): Po prostu poluj na służby bezpieczeństwa.
+- [Znajdź dostarczoną podejrzaną wiadomość e-mail](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): znajdź i usuń wiadomości, zidentyfikuj adres IP złośliwego nadawcy wiadomości e-mail lub rozpocznij zdarzenie w celu dalszego zbadania.
+- [Sprawdź akcję dostarczania i lokalizację](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): to sprawdzenie informuje o lokalizacji wiadomości e-mail z problemami.
+- [Wyświetl oś czasu wiadomości e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email): po prostu wyszukaj dla swojego zespołu ds. operacji zabezpieczeń.
 
-### <a name="see-campaigns-targeting-your-organization"></a>Zobacz kampanie ukierunkowane na organizację
+### <a name="see-campaigns-targeting-your-organization"></a>Wyświetlanie kampanii skierowanych do organizacji
 
-Zobacz większy obraz dzięki widokom kampanii w programie Ochrona usługi Office 365 w usłudze Defender, który zawiera widok kampanii ataków przeznaczonych na Twoją organizację i ich wpływ na użytkowników.
+Zobacz szerszy obraz widoków kampanii w Ochrona usługi Office 365 w usłudze Defender, co daje wgląd w kampanie ataków wymierzone w organizację i ich wpływ na użytkowników.
 
-- [Identyfikowanie kampanii kampanii](campaigns.md#what-is-a-campaign) skierowanej do użytkowników.
-- [Wizualizowanie](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal) zakresu ataków.
-- [Śledź interakcje użytkowników](campaigns.md#campaign-details) z tymi wiadomościami.
+- [Identyfikowanie kampanii](campaigns.md#what-is-a-campaign) skierowanych do użytkowników.
+- [Wizualizowanie zakresu](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal) ataku.
+- [Śledzenie interakcji użytkownika](campaigns.md#campaign-details) z tymi komunikatami.
 
-  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Szczegóły kampanii w portalu Microsoft 365 Defender informacyjnym" lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Szczegóły kampanii w portalu Microsoft 365 Defender." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
-Obejrzyj ten klip wideo, aby dowiedzieć się więcej: [Widoki kampanii w aplikacji Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14).
+Obejrzyj ten film wideo, aby dowiedzieć się więcej: [Wyświetlenia kampanii w Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14).
 
-### <a name="use-automation-to-remediate-risks"></a>Rozwiązywanie problemów za pomocą automatyzacji
+### <a name="use-automation-to-remediate-risks"></a>Korygowanie ryzyka przy użyciu automatyzacji
 
-Efektywne reagowanie przy użyciu funkcji automatycznego badania i odpowiedzi (AIR) w celu przeglądania zagrożeń, określania priorytetów i reagowania na nie.
+Efektywne reagowanie przy użyciu zautomatyzowanego badania i reagowania (AIR) do przeglądania, określania priorytetów i reagowania na zagrożenia.
 
-- [Dowiedz się więcej](automated-investigation-response-office.md) o podręcznikach do nauki.
-- [Wyświetlanie szczegółów i wyników](email-analysis-investigations.md) badania.
-- Wyeliminuj [zagrożenia, akceptując działania naprawcze](air-remediation-actions.md).
+- [Dowiedz się więcej](automated-investigation-response-office.md) o podręcznikach badania.
+- [Wyświetl szczegóły i wyniki](email-analysis-investigations.md) badania.
+- Eliminowanie zagrożeń przez [zatwierdzenie akcji korygowania](air-remediation-actions.md).
 
-:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="Wyniki badania" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="Wyniki badania." lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
 
 ## <a name="step-3-advanced-content"></a>Krok 3. Zawartość zaawansowana
 
-### <a name="dive-deep-into-data-with-query-based-hunting"></a>Zanurz się w dane za pomocą wyszukiwania opartego na zapytaniach
+### <a name="dive-deep-into-data-with-query-based-hunting"></a>Szczegółowe informacje o danych z wyszukiwaniem zagrożeń opartym na zapytaniach
 
-Korzystaj z zaawansowanego wyszukiwania, aby tworzyć niestandardowe reguły wykrywania, aktywnie sprawdzać zdarzenia w środowisku i znajdować wskaźniki zagrożeń. Eksplorowanie nieprzetworzonych danych w środowisku.
+Użyj zaawansowanego wyszukiwania zagrożeń do pisania niestandardowych reguł wykrywania, proaktywnego sprawdzania zdarzeń w środowisku i lokalizowania wskaźników zagrożeń. Eksplorowanie danych pierwotnych w środowisku.
 
-- [Tworzenie reguł wykrywania niestandardowego](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
-- [Uzyskiwanie dostępu do zapytań](../defender/advanced-hunting-shared-queries.md) udostępnionych utworzonych przez inne osoby.
+- [Kompilowanie niestandardowych reguł wykrywania](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
+- [Uzyskiwanie dostępu do udostępnionych zapytań utworzonych](../defender/advanced-hunting-shared-queries.md) przez inne osoby.
 
-Obejrzyj ten klip wideo, aby dowiedzieć się więcej: [Schłoń w Microsoft 365 Defender - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).
+Obejrzyj ten film wideo, aby dowiedzieć się więcej: [Wyszukiwanie zagrożeń przy użyciu Microsoft 365 Defender — YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).
 
-### <a name="train-users-to-spot-threats-by-simulating-attacks"></a>Szkolenie użytkowników w celu dostrzegowania zagrożeń przez symulowanie ataków
+### <a name="train-users-to-spot-threats-by-simulating-attacks"></a>Szkolenie użytkowników do wykrywania zagrożeń przez symulowanie ataków
 
-Zapewnij użytkownikom odpowiednią wiedzę, aby identyfikować zagrożenia i zgłaszać podejrzane wiadomości za pomocą szkolenia symezyjną ataków w programie Ochrona usługi Office 365 w usłudze Defender.
+Wyposaż użytkowników w odpowiednią wiedzę, aby identyfikować zagrożenia i zgłaszać podejrzane komunikaty, korzystając z trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender.
 
-- [Symulowanie realistycznych](attack-simulation-training.md) zagrożeń w celu zidentyfikowania użytkowników, którzy mogą być podatni na zagrożenia.
-- [Przypisywanie szkoleń](attack-simulation-training.md#assign-training) użytkownikom na podstawie wyników symulacyjnych.
-- [Śledzenie postępu](attack-simulation-training-insights.md) organizacji w czasie symulacyjnej i ukończonej szkoleń.
+- [Symulowanie realistycznych zagrożeń](attack-simulation-training.md) w celu zidentyfikowania narażonych użytkowników.
+- [Przypisywanie szkoleń](attack-simulation-training.md#assign-training) do użytkowników na podstawie wyników symulacji.
+- [Śledź postęp](attack-simulation-training-insights.md) organizacji w symulacjach i ukończeniu szkoleń.
 
-  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="Szczegółowe informacje szkoleniowe dotyczące symeny ataków w portalu Microsoft 365 Defender danych" lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="Szczegółowe informacje na temat symulacji ataków w portalu Microsoft 365 Defender." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
 ## <a name="additional-resources"></a>Dodatkowe materiały
 
-- **Interakcyjny przewodnik**: Nie Ochrona usługi Office 365 w usłudze Defender? Przejrzyj [interakcyjny przewodnik,](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) aby dowiedzieć się, jak rozpocząć pracę.
-- **Dokumenty firmy Microsoft**: Uzyskaj szczegółowe informacje o tym, Ochrona usługi Office 365 w usłudze Defender działa i jak najlepiej wdrożyć go dla swojej organizacji. Odwiedź [witrynę Dokumenty](overview.md).
-- **Dostępne funkcje**: Aby uzyskać pełną listę funkcji zabezpieczeń poczty e Office 365 e-mail wymienionych według warstwy produktu, zobacz [Macierz funkcji](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
-- **Dlaczego Ochrona usługi Office 365 w usłudze Defender**: [Arkusz Ochrona usługi Office 365 w usłudze Defender danych](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) pokazuje 10 powodów, dla których klient wybiera firmę Microsoft.
+- **Przewodnik interaktywny**: Nie znasz Ochrona usługi Office 365 w usłudze Defender? Zapoznaj się z [interaktywnym przewodnikiem](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) , aby dowiedzieć się, jak rozpocząć pracę.
+- **Dokumentacja firmy Microsoft**: uzyskaj szczegółowe informacje o tym, jak działa Ochrona usługi Office 365 w usłudze Defender i jak najlepiej zaimplementować ją w organizacji. Odwiedź stronę [Docs](overview.md).
+- **Co zawiera**: Aby uzyskać pełną listę funkcji zabezpieczeń Office 365 poczty e-mail wymienionych w warstwie produktu, zobacz [Macierz funkcji](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
+- **Dlaczego Ochrona usługi Office 365 w usłudze Defender**: w [arkuszu danych Ochrona usługi Office 365 w usłudze Defender](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) przedstawiono 10 najważniejszych powodów, dla których klienci wybierają firmę Microsoft.

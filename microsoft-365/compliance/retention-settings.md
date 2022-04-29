@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Zapoznaj się z ustawieniami, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i pozbyć się tego, czego nie chcesz.
-ms.openlocfilehash: 729c31935ee3ded04a12f7822a17082ef1b52c26
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: c0214476494e024247b76911475df88bdfbfa4ff
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911517"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129227"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](https://aka.ms/ComplianceSD).*
 
@@ -63,10 +65,10 @@ Po wybraniu zakresów adaptacyjnych zostanie wyświetlony monit o wybranie żąd
 
 Nazwy właściwości lokacji są oparte na właściwościach zarządzanych SharePoint lokacji. Aby uzyskać informacje na temat atrybutów niestandardowych, zobacz [Używanie właściwości witryny SharePoint niestandardowych do stosowania Microsoft 365 przechowywania przy użyciu zakresów zasad adaptacyjnych](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-Nazwy atrybutów dla użytkowników i grup są oparte na [właściwościach adresatów możliwych do filtrowania](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) , które są mapowane na atrybuty usługi Azure AD. Przykład:
+Nazwy atrybutów dla użytkowników i grup są oparte na [filtrowalnych właściwościach adresatów mapujących](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) atrybuty Azure AD. Przykład:
 
-- **Alias** mapuje na adres LDAP **mailNickname**, który jest wyświetlany jako **Adres e-mail** w centrum administracyjnym usługi Azure AD.
-- **Adresy e-mail** są mapowe na **serwer proxy nazwy LDAPAddresses**, który jest wyświetlany jako **adres proxy** w centrum administracyjnym usługi Azure AD.
+- **Alias** mapuje na adres LDAP **mailNickname**, który jest wyświetlany jako **Adres e-mail** w centrum administracyjnym Azure AD.
+- **Adresy e-mail** są mapowe na **serwer proxy nazwy LDAPAddresses**, który jest wyświetlany jako **adres proxy** w centrum administracyjnym Azure AD.
 
 Atrybuty i właściwości wymienione w tabeli można łatwo określić podczas konfigurowania zakresu adaptacyjnego przy użyciu prostego konstruktora zapytań. Dodatkowe atrybuty i właściwości są obsługiwane przez zaawansowanego konstruktora zapytań, zgodnie z opisem w poniższej sekcji.
 
@@ -83,13 +85,13 @@ Przed skonfigurowaniem zakresu adaptacyjnego użyj poprzedniej sekcji, aby ziden
 
 W przypadku SharePoint lokacji może być wymagana dodatkowa konfiguracja SharePoint, jeśli planujesz używać [niestandardowych właściwości lokacji](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
+1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
     
     - Jeśli używasz rozwiązania do zarządzania rekordami:
         - **Rozwiązania** >  **Zarządzanie rekordami** >  **Karta Zakresy adaptacyjne** > + **Tworzenie zakresu**
         
-    - Jeśli używasz rozwiązania do zarządzania informacjami:
-       - **Rozwiązania** >  **Zarządzanie informacjami** >  **Karta Zakresy adaptacyjne** > + **Tworzenie zakresu**
+    - Jeśli używasz rozwiązania do zarządzania cyklem życia danych:
+       - **Rozwiązania** >  **Zarządzanie cyklem** >  życia danych **Karta Zakresy adaptacyjne** > + **Tworzenie zakresu**
     
     Nie widzisz rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**. 
 
@@ -99,7 +101,7 @@ W przypadku SharePoint lokacji może być wymagana dodatkowa konfiguracja ShareP
     
     ![Przykładowa konfiguracja zakresu adaptacyjnego.](../media/example-adaptive-scope.png)
     
-    Raz dziennie to zapytanie będzie uruchamiane względem usługi Azure AD i identyfikuje wszystkich użytkowników, dla których określono wartość **Europa** na koncie atrybutu **Kraj lub region** .
+    Raz dziennie to zapytanie będzie uruchamiane względem Azure AD i zidentyfikuje wszystkich użytkowników, dla których określono wartość **Europa** na koncie atrybutu **Kraj lub region**.
     
     > [!IMPORTANT]
     > Ponieważ zapytanie nie jest uruchamiane natychmiast, nie ma walidacji, która została wpisana poprawnie w wartości.
@@ -116,7 +118,7 @@ W przypadku SharePoint lokacji może być wymagana dodatkowa konfiguracja ShareP
         
         Jedną z zalet korzystania z zaawansowanego konstruktora zapytań dla tych zakresów jest szerszy wybór operatorów zapytań:
         - **i**
-        - **lub**
+        - **Lub**
         - **Nie**
         - **eq** (równa się)
         - **ne** (nie równa się)
@@ -199,7 +201,7 @@ Aby uruchomić zapytanie przy użyciu programu PowerShell:
     Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
 
-3. Sprawdź, czy dane wyjściowe są zgodne z oczekiwanymi użytkownikami lub grupami dla zakresu adaptacyjnego. Jeśli tak się nie stanie, sprawdź zapytanie i wartości u odpowiedniego administratora usługi Azure AD lub Exchange.
+3. Sprawdź, czy dane wyjściowe są zgodne z oczekiwanymi użytkownikami lub grupami dla zakresu adaptacyjnego. Jeśli tak się nie stanie, sprawdź zapytanie i wartości u odpowiedniego administratora pod kątem Azure AD lub Exchange.
  
 Aby uruchomić zapytanie przy użyciu wyszukiwania SharePoint:
 
@@ -368,7 +370,7 @@ Wybierając ustawienia przechowywania i usuwania zawartości, zasady przechowywa
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Zachowywanie zawartości przez określony okres czasu
 
-Podczas konfigurowania etykiety przechowywania lub zasad przechowywania zawartości można zachować elementy przez określoną liczbę dni, miesięcy lub lat. Możesz też zachować elementy na zawsze. Okres przechowywania nie jest obliczany na podstawie czasu przypisania zasad, ale zgodnie z początkiem określonego okresu przechowywania.
+Podczas konfigurowania etykiety przechowywania lub zasad przechowywania zawartości można zachować elementy przez określoną liczbę dni, miesięcy (zakłada 30 dni dla miesiąca) lub lat. Możesz też zachować elementy na zawsze. Okres przechowywania nie jest obliczany na podstawie czasu przypisania zasad, ale zgodnie z początkiem określonego okresu przechowywania.
 
 Na początku okresu przechowywania można wybrać, kiedy zawartość została utworzona lub obsługiwana tylko dla plików i SharePoint, OneDrive i Grupy Microsoft 365, kiedy zawartość została ostatnio zmodyfikowana. W przypadku etykiet przechowywania można rozpocząć okres przechowywania od zawartości, która została oznaczona etykietą, oraz w przypadku wystąpienia zdarzenia.
 
@@ -426,7 +428,7 @@ Niektórych ustawień nie można zmienić po utworzeniu i zapisaniu zasad przech
 
 Jeśli edytujesz zasady przechowywania, a elementy są już objęte oryginalnymi ustawieniami w zasadach przechowywania, zaktualizowane ustawienia zostaną automatycznie zastosowane do tych elementów oprócz nowo zidentyfikowanych elementów.
 
-Zazwyczaj ta aktualizacja jest dość szybka, ale może potrwać kilka dni. Po zakończeniu replikacji zasad między lokalizacjami Microsoft 365 zobaczysz stan zasad przechowywania w Centrum zgodności platformy Microsoft 365 zmiany z **Włączone (Oczekujące)** **na Włączone (Powodzenie)**.
+Zazwyczaj ta aktualizacja jest dość szybka, ale może potrwać kilka dni. Po zakończeniu replikacji zasad w Microsoft 365 lokalizacjach stan zasad przechowywania w portalu zgodności usługi Microsoft Purview zmieni się z **Włączone (Oczekujące)** **na Włączone (Powodzenie)**.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Blokowanie zasad w celu zapobiegania zmianom
 

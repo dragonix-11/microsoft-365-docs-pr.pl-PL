@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse uzyskaj pomoc dotyczącą rozwiązywania problemów i komunikatów o błędach.
-ms.openlocfilehash: a150213c2e202c96afeae14843708daa58ab4f92
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3ae2737a07815284f2981e8c4debac2d064fc1e9
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093289"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130785"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Rozwiązywanie problemów i komunikatów o błędach w Microsoft 365 Lighthouse
 
@@ -54,7 +54,7 @@ W tym artykule opisano komunikaty o błędach i problemy, które mogą wystąpi�
 **Spowodować:** Dzierżawy klientów nie spełniają następujących kryteriów:
 
 - Aby można było zarządzać dzierżawą klienta, musi mieć skonfigurowany dostęp delegowany dla dostawcy usług zarządzanych (MSP).
-- Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business
+- Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business Microsoft Defender dla Firm
 - Nie może mieć więcej niż 1000 licencjonowanych użytkowników 
 
 **Rozdzielczość:** W poniższej tabeli opisano różne stany dzierżawy, które wymagają akcji, i wyjaśniono, jak je rozwiązać.
@@ -65,7 +65,7 @@ W tym artykule opisano komunikaty o błędach i problemy, które mogą wystąpi�
 |--|--|--|
 | Nieaktywne | Dzierżawa została odłączona na żądanie MSP i nie jest już zarządzana w lighthouse. | Musisz ponownie uaktywnić dzierżawę. Na stronie **Dzierżawy wybierz trzy kropki** (więcej akcji) obok dzierżawy, którą chcesz ponownie uaktywnić, a następnie wybierz pozycję **Aktywuj dzierżawę**. Może upłynąć 24–48 godzin, aż początkowe dane klientów pojawią się w aplikacji Lighthouse. |
 | Niekwalifikowalne — nie skonfigurowano protokołu DAP lub GDAP | Nie masz uprawnień administratora protokołu DAP ani GDAP skonfigurowanych w dzierżawie, co jest wymagane przez usługę Lighthouse. | Skonfiguruj uprawnienia administratora protokołu DAP lub GDAP w Centrum partnerskim firmy Microsoft. |
-| Niekwalifikowalne — brak wymaganej licencji | W dzierżawie brakuje wymaganej licencji. Potrzebują co najmniej jednej licencji Microsoft 365 Business Premium lub Microsoft 365 E3. | Upewnij się, że dzierżawa ma przypisaną co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business. |
+| Niekwalifikowalne — brak wymaganej licencji | W dzierżawie brakuje wymaganej licencji. Potrzebują co najmniej jednej licencji Microsoft 365 Business Premium, Microsoft 365 E3 lub Microsoft Defender dla Firm. | Upewnij się, że dzierżawa ma przypisaną co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Business Microsoft Defender dla Firm. |
 | Niekwalifikowalne — przekroczono liczbę użytkowników | Dzierżawa ma więcej niż maksymalnie 1000 licencjonowanych użytkowników dozwolonych przez usługę Lighthouse. | Sprawdź, czy dzierżawa nie ma więcej niż 1000 licencjonowanych użytkowników. |
 | Niekwalifikowalne — sprawdzanie geograficzne nie powiodło się | Ty i Twój klient nie mieszkacie w tym samym regionie geograficznym, który jest wymagany przez usługę Lighthouse. | Sprawdź, czy klient znajduje się w twoim regionie geograficznym. Jeśli nie, nie możesz zarządzać dzierżawą w aplikacji Lighthouse. |
 | W toku | Lighthouse odkrył dzierżawę, ale nadal jest w trakcie ich dołączania. | Zezwalaj aplikacji Lighthouse na 48 godzin na ukończenie dołączania dzierżawy. |
@@ -76,17 +76,17 @@ Jeśli potwierdzisz, że dzierżawa klienta spełnia kryteria dołączania i nad
 
 ### <a name="message-when-trying-to-access-lighthouse-not-authorized-or-insufficient-privileges-or-access-restriction-insufficient-or-lack-of-permissions-is-causing-access-restriction"></a>Komunikat podczas próby uzyskania dostępu do usługi Lighthouse: "Nie autoryzowane" lub "Niewystarczające uprawnienia" lub "Ograniczenie dostępu: Niewystarczające lub brak uprawnień powoduje ograniczenie dostępu" 
 
-**Spowodować:** Nie należysz do odpowiedniej grupy zabezpieczeń w usłudze Azure AD lub nie masz przypisanej prawidłowej roli w Centrum partnerskim, aby móc uzyskać dostęp do usługi Lighthouse.
+**Spowodować:** Nie należysz do odpowiedniej grupy zabezpieczeń w Azure AD lub nie masz przypisanej prawidłowej roli w Centrum partnerskim, aby móc uzyskać dostęp do usługi Lighthouse.
 
-**Rozdzielczość:** Upewnij się, że administrator z dzierżawy partnera z odpowiednimi uprawnieniami przydzielił Cię do odpowiedniej grupy zabezpieczeń GDAP w usłudze Azure AD i przypisze Ci poprawną rolę w Centrum partnerskim. Należy również pamiętać, że niektóre akcje w aplikacji Lighthouse wymagają uprawnień administratora globalnego. Aby dowiedzieć się więcej na temat ról GDAP i możliwości poszczególnych ról, zobacz [Omówienie uprawnień w Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Aby uzyskać szczegółowy opis wszystkich wbudowanych ról i uprawnień usługi Azure AD dla protokołu GDAP, zobacz [Role wbudowane usługi Azure AD](/azure/active-directory/roles/permissions-reference).
+**Rozdzielczość:** Upewnij się, że administrator z dzierżawy partnera z odpowiednimi uprawnieniami przypisył Cię do odpowiedniej grupy zabezpieczeń GDAP w Azure AD i przypisze Ci poprawną rolę w Centrum partnerskim. Należy również pamiętać, że niektóre akcje w aplikacji Lighthouse wymagają uprawnień administratora globalnego. Aby dowiedzieć się więcej na temat ról GDAP i możliwości poszczególnych ról, zobacz [Omówienie uprawnień w Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Aby uzyskać szczegółowy opis wszystkich Azure AD wbudowanych ról i uprawnień dla protokołu GDAP, zobacz [Azure AD role wbudowane](/azure/active-directory/roles/permissions-reference).
 
 W przypadku klientów z relacjami dap administrator partnera będzie musiał przypisać Cię do roli agenta administratora lub agenta pomocy technicznej w Centrum partnerskim. Aby uzyskać szczegółowy opis wszystkich ról i uprawnień Centrum partnerskiego, zobacz [Przypisywanie ról i uprawnień użytkownikom](/partner-center/permissions-overview).
 
 ### <a name="i-dont-see-complete-data-in-certain-areas-of-lighthouse-or-i-cant-perform-certain-tasks-or-i-cant-access-certain-tenants"></a>Nie widzę pełnych danych w niektórych obszarach usługi Lighthouse, nie mogę wykonywać pewnych zadań lub nie mogę uzyskać dostępu do niektórych dzierżaw
 
-**Spowodować:** Masz ograniczony dostęp GDAP na podstawie ról przypisanych do grupy zabezpieczeń usługi Azure AD, w której się znajdujesz.
+**Spowodować:** Dostęp do protokołu GDAP jest ograniczony na podstawie ról przypisanych do Azure AD grupy zabezpieczeń, w której się znajdujesz.
 
-**Rozdzielczość:** Upewnij się, że administrator z dzierżawy partnera z odpowiednimi uprawnieniami przypisył Cię do odpowiedniej grupy zabezpieczeń GDAP w usłudze Azure AD. Należy również pamiętać, że niektóre akcje w aplikacji Lighthouse wymagają uprawnień administratora globalnego. Aby dowiedzieć się więcej na temat ról GDAP i możliwości poszczególnych ról, zobacz [Omówienie uprawnień w Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Aby uzyskać szczegółowy opis wszystkich wbudowanych ról i uprawnień usługi Azure AD dla protokołu GDAP, zobacz [Role wbudowane usługi Azure AD](/azure/active-directory/roles/permissions-reference).
+**Rozdzielczość:** Upewnij się, że administrator z dzierżawy partnera z odpowiednimi uprawnieniami przypisył Cię do odpowiedniej grupy zabezpieczeń GDAP w Azure AD. Należy również pamiętać, że niektóre akcje w aplikacji Lighthouse wymagają uprawnień administratora globalnego. Aby dowiedzieć się więcej na temat ról GDAP i możliwości poszczególnych ról, zobacz [Omówienie uprawnień w Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Aby uzyskać szczegółowy opis wszystkich Azure AD wbudowanych ról i uprawnień dla protokołu GDAP, zobacz [Azure AD role wbudowane](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="customer-tenant-management"></a>Zarządzanie dzierżawą klienta  
 

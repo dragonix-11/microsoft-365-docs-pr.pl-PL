@@ -1,6 +1,6 @@
 ---
-title: Zalecane Teams firmowe — Microsoft 365 dla przedsiębiorstw | Microsoft Docs
-description: W tym artykule opisano zasady zalecenia firmy Microsoft dotyczące sposobu zabezpieczania Teams i dostępu do plików.
+title: Zalecane zasady Teams — Microsoft 365 dla | przedsiębiorstwa Microsoft Docs
+description: W tym artykule opisano zasady dotyczące zaleceń firmy Microsoft dotyczących zabezpieczania Teams komunikacji i dostępu do plików.
 author: MicrosoftHeidi
 manager: serdars
 ms.prod: m365-security
@@ -20,127 +20,127 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b659853d9323b4a1503cd75cff66a83cbd06e85e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 25f70d3ccdf11daa6a52d16b66d612c04ab8876a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682906"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131179"
 ---
-# <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Zalecenia dotyczące zasad dotyczące zabezpieczania Teams czatów, grup i plików
+# <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Zalecenia dotyczące zasad dotyczące zabezpieczania czatów, grup i plików Teams
 
-W tym artykule opisano, jak wdrożyć zalecane zasady dostępu do urządzeń i tożsamości bez zaufania w celu ochrony Microsoft Teams czatów, grup i zawartości, takiej jak pliki i kalendarze. Ten przewodnik opiera się na wspólnych zasadach dostępu do [tożsamości](identity-access-policies.md) i urządzeń oraz zawiera dodatkowe informacje Teams specyficzne dla urządzenia. Ponieważ Teams z innymi naszymi produktami, zobacz też Zalecenia dotyczące zasad [](sharepoint-file-access-policies.md) dotyczące SharePoint witryn i plików oraz Zalecenia dotyczące zasad dotyczące [zabezpieczania poczty e-mail](secure-email-recommended-policies.md).
+W tym artykule opisano sposób implementowania zalecanych Zero Trust zasad dostępu do tożsamości i urządzeń w celu ochrony Microsoft Teams czatów, grup i zawartości, takich jak pliki i kalendarze. Te wskazówki bazują na [typowych zasadach dostępu do tożsamości i urządzeń](identity-access-policies.md) z dodatkowymi informacjami, które są Teams specyficzne. Ponieważ Teams integruje się z innymi produktami, zobacz również [zalecenia dotyczące zasad dotyczące zabezpieczania witryn i plików SharePoint](sharepoint-file-access-policies.md) oraz [zalecenia dotyczące zasad dotyczące zabezpieczania poczty e-mail](secure-email-recommended-policies.md).
 
-Zalecenia te są oparte na trzech różnych warstwach zabezpieczeń i ochrony dla Teams, które można stosować w zależności od stopnia szczegółowości Twoich potrzeb: punktu początkowego, przedsiębiorstwa i wyspecjalizowanego zabezpieczeń. Więcej informacji o tych warstwach zabezpieczeń i zalecanych zasadach można znaleźć w te zaleceniach w konfiguracjach tożsamości [i dostępu do urządzeń](microsoft-365-policies-configurations.md).
+Te zalecenia są oparte na trzech różnych warstwach zabezpieczeń i ochrony dla Teams, które mogą być stosowane w oparciu o stopień szczegółowości twoich potrzeb: punkt początkowy, przedsiębiorstwo i wyspecjalizowane zabezpieczenia. Więcej informacji na temat tych warstw zabezpieczeń i zalecanych zasad, do których odnoszą się te zalecenia, można znaleźć w [temacie Konfiguracje tożsamości i dostępu do urządzeń](microsoft-365-policies-configurations.md).
 
-Więcej zaleceń dotyczących wdrażania Teams tym artykule pominiesz w konkretnych okolicznościach uwierzytelniania, w tym dla użytkowników spoza organizacji. Aby zapewnić pełne środowisko zabezpieczeń, należy postępować zgodnie z tymi wskazówkami.
+Więcej zaleceń dotyczących wdrażania Teams znajduje się w tym artykule, aby uwzględnić konkretne okoliczności uwierzytelniania, w tym dla użytkowników spoza organizacji. Aby uzyskać pełne środowisko zabezpieczeń, należy postępować zgodnie z poniższymi wskazówkami.
 
-## <a name="getting-started-with-teams-before-other-dependent-services"></a>Wprowadzenie do usługi Teams przed innymi usługami zależnmi
+## <a name="getting-started-with-teams-before-other-dependent-services"></a>Wprowadzenie do Teams przed innymi usługami zależnymi
 
-Aby rozpocząć pracę z usługami zależnych, nie Microsoft Teams. Wszystkie te usługi działają "po prostu działają". Musisz jednak przygotować się do zarządzania następującymi elementami związanymi z usługą:
+Nie musisz włączać usług zależnych, aby rozpocząć pracę z Microsoft Teams. Wszystkie te usługi będą "po prostu działać". Należy jednak przygotować się do zarządzania następującymi elementami związanymi z usługą:
 
-- Microsoft 365 grupy
-- SharePoint witryn zespołu
+- Grupy platformy Microsoft 365
+- witryny zespołu SharePoint
 - OneDrive dla Firm
-- Exchange skrzynki pocztowe
-- Przesyłanie strumieniowe klipów wideo i planów usługi Planner (jeśli te usługi są włączone)
+- skrzynki pocztowe Exchange
+- Przesyłanie strumieniowe filmów wideo i planów planisty (jeśli te usługi są włączone)
 
-## <a name="updating-common-policies-to-include-teams"></a>Aktualizowanie wspólnych zasad w celu ich Teams
+## <a name="updating-common-policies-to-include-teams"></a>Aktualizowanie typowych zasad w celu uwzględnienia Teams
 
-Aby chronić czat, grupy i zawartość w Teams, na poniższym diagramie pokazano zasady, które należy aktualizować na przykładach typowych zasad dostępu do urządzeń i tożsamości. Przy każdej aktualizacji zasad upewnij się, że Teams usługi zależne są uwzględnione w przypisaniu aplikacji w chmurze.
+Aby chronić czat, grupy i zawartość w Teams, na poniższym diagramie przedstawiono zasady do zaktualizowania na podstawie typowych zasad dostępu do tożsamości i urządzeń. Dla każdej aktualizacji zasad upewnij się, że usługi Teams i zależne są uwzględniane w przypisywaniu aplikacji w chmurze.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="Podsumowanie aktualizacji zasad w celu ochrony dostępu do usług Teams i ich usług zależnych." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="Podsumowanie aktualizacji zasad dotyczących ochrony dostępu do Teams i jej usług zależnych" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 
-Te usługi to usługi zależne, które należy uwzględnić przy przypisywaniu aplikacji w chmurze dla Teams:
+Te usługi są usługami zależnymi, które należy uwzględnić w przypisywaniu aplikacji w chmurze dla Teams:
 
 - Microsoft Teams
 - SharePoint i OneDrive dla Firm
 - Exchange Online
 - Skype dla firm Online
-- Microsoft Stream (nagrania ze spotkań)
-- Microsoft Planner (zadania usługi Planner i dane planu)
+- Microsoft Stream (nagrania spotkań)
+- Microsoft Planner (zadania planisty i dane planu)
 
-W poniższej tabeli wymieniono [zasady, które](identity-access-policies.md) trzeba ponownie wyświetlać, oraz linki do poszczególnych zasad we wspólnych zasadach dostępu do tożsamości i urządzeń, które mają szerszy zestaw zasad dla wszystkich Office aplikacji.
+W tej tabeli wymieniono zasady, które należy ponownie przeanalizować, i linki do poszczególnych zasad w [typowych zasadach dostępu do tożsamości i urządzeń](identity-access-policies.md), które mają szerszy zestaw zasad dla wszystkich Office aplikacji.
 
-|Poziom ochrony|Policies (zasady)|Więcej informacji na temat Teams implementacji|
+|Poziom ochrony|Policies (zasady)|Więcej informacji na temat implementacji Teams|
 |---|---|---|
-|**Punkt początkowy**|[Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania *jest średnie* lub *wysokie*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Upewnij się Teams że aplikacje i usługi zależne są uwzględnione na liście aplikacji. Teams do rozważenia są również reguły dostępu gościa i dostępu zewnętrznego, dowiedz się więcej o tych zasadach w dalszej części tego artykułu.|
-||[Blokowanie klientów, którzy nie obsługują nowoczesnego uwierzytelniania](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Przypisywanie Teams w chmurze także usług zależnych.|
-||[Zmiana hasła przez użytkowników o wysokim poziomie ryzyka](identity-access-policies.md#high-risk-users-must-change-password)|Wymusza Teams użytkowników na zmianie hasła podczas logowania się w przypadku wykrycia dla ich konta aktywności o wysokim poziomie ryzyka. Upewnij się Teams że aplikacje i usługi zależne są uwzględnione na liście aplikacji.|
-||[Stosowanie zasad ochrony danych aplikacji](identity-access-policies.md#apply-app-data-protection-policies)|Upewnij się Teams że aplikacje i usługi zależne są uwzględnione na liście aplikacji. Zaktualizuj zasady dla każdej platformy (iOS, Android, Windows).|
-|**Enterprise**|[Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania *jest niskie, średnie* lub *wysokie*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams do rozważenia są również reguły dostępu gościa i dostępu zewnętrznego, dowiedz się więcej o tych zasadach w dalszej części tego artykułu. Te Teams i usługi zależne.|
-||[Definiowanie zasad zgodności urządzeń](identity-access-policies.md#define-device-compliance-policies)|Te Teams i usługi zależne.|
-||[Wymaganie zgodności komputerów i *urządzeń* przenośnych](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Te Teams i usługi zależne.|
-|**Wyspecjalizowane zabezpieczenia**|[*Zawsze wymagaj* uwierzytelniania wieloskładnikowego](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Bez względu na tożsamość użytkownika uwierzytelniania wieloskładnikowego będzie używane przez Twoją organizację. Te Teams i usługi zależne. |
+|**Punkt początkowy**|[Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania jest *średnie* lub *wysokie*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Upewnij się, Teams i usługi zależne znajdują się na liście aplikacji. Teams ma również reguły dostępu gościa i dostępu zewnętrznego, dowiesz się więcej o tych regułach w dalszej części tego artykułu.|
+||[Blokuj klientów, którzy nie obsługują nowoczesnego uwierzytelniania](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Dołączanie Teams i usług zależnych do przypisywania aplikacji w chmurze.|
+||[Użytkownicy wysokiego ryzyka muszą zmienić hasło](identity-access-policies.md#high-risk-users-must-change-password)|Wymusza Teams użytkowników do zmiany hasła podczas logowania, jeśli zostanie wykryte działanie wysokiego ryzyka dla ich konta. Upewnij się, Teams i usługi zależne znajdują się na liście aplikacji.|
+||[Stosowanie zasad ochrony danych aplikacji](identity-access-policies.md#apply-app-data-protection-policies)|Upewnij się, Teams i usługi zależne znajdują się na liście aplikacji. Zaktualizuj zasady dla każdej platformy (iOS, Android, Windows).|
+|**Enterprise**|[Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania jest *niskie*, *średnie* lub *wysokie*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams ma również reguły dostępu gościa i dostępu zewnętrznego, dowiesz się więcej o tych regułach w dalszej części tego artykułu. Uwzględnij Teams i usługi zależne w tych zasadach.|
+||[Definiowanie zasad zgodności urządzeń](identity-access-policies.md#define-device-compliance-policies)|Uwzględnij Teams i usługi zależne w tych zasadach.|
+||[Wymagaj zgodnych komputerów *i* urządzeń przenośnych](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Uwzględnij Teams i usługi zależne w tych zasadach.|
+|**Wyspecjalizowane zabezpieczenia**|[*Zawsze* wymagaj uwierzytelniania wieloskładnikowego](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Niezależnie od tożsamości użytkownika uwierzytelnianie wieloskładnikowe będzie używane przez organizację. Uwzględnij Teams i usługi zależne w tych zasadach. |
 
-## <a name="teams-dependent-services-architecture"></a>Teams architektury usług zależnych
+## <a name="teams-dependent-services-architecture"></a>architektura usług zależnych Teams
 
-Na poniższym diagramie pokazano usługi, na których Teams korzysta. Aby uzyskać więcej informacji i ilustracji, zobacz Microsoft Teams i powiązane usługi zwiększające produktywność w Microsoft 365 [dla architektów IT](../../solutions/productivity-illustrations.md).
+Aby uzyskać więcej informacji, na poniższym diagramie przedstawiono usługi, na których Teams polega. Aby uzyskać więcej informacji i ilustracji, zobacz [Microsoft Teams i powiązane usługi produktywności w Microsoft 365 dla architektów IT](../../solutions/productivity-illustrations.md).
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="Diagram przedstawiający Teams zależności między SharePoint, OneDrive dla Firm i Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="Diagram przedstawiający zależności Teams od SharePoint, OneDrive dla Firm i Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 
-## <a name="guest-and-external-access-for-teams"></a>Dostęp gościa i dostępu zewnętrznego do Teams
+## <a name="guest-and-external-access-for-teams"></a>Dostęp gościa i dostępu zewnętrznego dla Teams
 
-Microsoft Teams zdefiniuje następujące typy dostępu:
+Microsoft Teams definiuje następujące typy dostępu:
 
-- **Dostęp gościa** korzysta z konta B2B w usłudze Azure AD dla gościa lub użytkownika zewnętrznego, które można dodać jako członka zespołu i mieć wszystkie uprawnienia dostępu do komunikacji i zasobów zespołu.
+- **Dostęp gościa** używa konta Azure AD B2B dla gościa lub użytkownika zewnętrznego, który może zostać dodany jako członek zespołu i ma uprawnienia dostępu do komunikacji i zasobów zespołu.
 
-- **Dostęp zewnętrzny** jest dla użytkownika zewnętrznego, który nie ma konta B2B usługi Azure AD. Dostęp zewnętrzny może obejmować zaproszenia i uczestnictwo w połączeniach, czatach i spotkaniach, ale nie obejmuje członkostwa w zespole ani dostępu do zasobów zespołu.
+- **Dostęp zewnętrzny** jest przeznaczony dla użytkownika zewnętrznego, który nie ma konta Azure AD B2B. Dostęp zewnętrzny może obejmować zaproszenia i uczestnictwo w rozmowach, czatach i spotkaniach, ale nie obejmuje członkostwa w zespole ani dostępu do zasobów zespołu.
 
-Zasady dostępu warunkowego dotyczą tylko dostępu gościa Teams ponieważ istnieje odpowiednie konto B2B usługi Azure AD.
+Zasady dostępu warunkowego mają zastosowanie tylko do dostępu gościa w Teams, ponieważ istnieje odpowiedni Azure AD konta B2B.
 
 <!--
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
 
 -->
 
-Aby uzyskać zalecane zasady umożliwiające dostęp dla gości i użytkowników zewnętrznych przy użyciu konta B2B usługi Azure AD, zobacz Zasady zezwalania na dostęp do konta [B2B](identity-access-policies-guest-access.md) i gościa.
+Aby uzyskać zalecane zasady zezwalające na dostęp dla użytkowników-gości i użytkowników zewnętrznych z kontem Azure AD B2B, zobacz [Zasady zezwalania na dostęp gościa i zewnętrznego konta B2B](identity-access-policies-guest-access.md).
 
-### <a name="guest-access-in-teams"></a>Dostęp dla gości w aplikacji Teams
+### <a name="guest-access-in-teams"></a>Dostęp gościa w Teams
 
-Oprócz zasad dla użytkowników wewnętrznych w firmie lub organizacji administratorzy mogą umożliwić dostęp gościa do zasobów usługi Teams oraz na interakcję z osobami wewnętrznymi w zakresie konwersacji grupowych, czatu i spotkań grupowych.
+Oprócz zasad dla użytkowników, którzy są wewnętrzni dla Twojej firmy lub organizacji, administratorzy mogą zezwolić na dostęp gościa, aby umożliwić osobom spoza firmy lub organizacji dostęp do Teams zasobów i interakcję z osobami wewnętrznymi w przypadku takich elementów jak rozmowy grupowe, czaty i spotkania.
 
-Aby uzyskać więcej informacji na temat dostępu gościa i sposobu jego wdrażania, zobacz Teams [dostępu gościa](/microsoftteams/guest-access).
+Aby uzyskać więcej informacji na temat dostępu gościa i sposobu jego implementacji, zobacz [Teams dostępu gościa](/microsoftteams/guest-access).
 
-### <a name="external-access-in-teams"></a>Dostęp zewnętrzny w programie Teams
+### <a name="external-access-in-teams"></a>Dostęp zewnętrzny w Teams
 
-Dostęp zewnętrzny jest czasami mylony z dostępem gości, dlatego należy pamiętać, że te dwa mechanizmy dostępu nieumiejętne to różne typy dostępu.
+Dostęp zewnętrzny jest czasami mylony z dostępem gościa, dlatego ważne jest, aby mieć pewność, że te dwa mechanizmy dostępu nieinternacjonalne są różnymi typami dostępu.
 
-Dostęp zewnętrzny umożliwia użytkownikom Teams z całej domeny zewnętrznej znajdowanie, dzwonienie, rozmawianie i konfigurowanie spotkań z użytkownikami w Teams. Teams administratorzy konfigurują dostęp zewnętrzny na poziomie organizacji. Aby uzyskać więcej informacji, zobacz [Zarządzanie dostępem zewnętrznym w programie Microsoft Teams](/microsoftteams/manage-external-access).
+Dostęp zewnętrzny umożliwia Teams użytkownikom z całej domeny zewnętrznej znajdowanie, wywoływanie, czatowanie i konfigurowanie spotkań z użytkownikami w Teams. Teams administratorzy konfigurują dostęp zewnętrzny na poziomie organizacji. Aby uzyskać więcej informacji, zobacz [Zarządzanie dostępem zewnętrznym w Microsoft Teams](/microsoftteams/manage-external-access).
 
-Użytkownicy z dostępem zewnętrznym mają mniejszy dostęp i funkcjonalność niż osoby dodane za pośrednictwem dostępu gościa. Na przykład użytkownicy dostępu zewnętrznego mogą czatować z użytkownikami wewnętrznymi Teams ale nie mogą uzyskać dostępu do kanałów, plików ani innych zasobów zespołu.
+Użytkownicy dostępu zewnętrznego mają mniejszy dostęp i funkcje niż osoba, która została dodana za pośrednictwem dostępu gościa. Na przykład użytkownicy dostępu zewnętrznego mogą rozmawiać z użytkownikami wewnętrznymi przy użyciu Teams, ale nie mogą uzyskiwać dostępu do kanałów zespołu, plików ani innych zasobów.
 
-Dostęp zewnętrzny nie korzysta z kont użytkowników B2B usługi Azure AD i dlatego nie korzysta z zasad dostępu warunkowego.
+Dostęp zewnętrzny nie używa Azure AD kont użytkowników B2B i dlatego nie używa zasad dostępu warunkowego.
 
-## <a name="teams-policies"></a>Teams zasad
+## <a name="teams-policies"></a>zasady Teams
 
-Poza wymienionymi powyżej zasadami wspólnymi istnieją Teams, które można i należy skonfigurować do zarządzania różnymi funkcjami Teams funkcjonalności.
+Poza typowymi zasadami wymienionymi powyżej istnieją zasady specyficzne dla Teams, które mogą i powinny być skonfigurowane do zarządzania różnymi funkcjami Teams.
 
-### <a name="teams-and-channels-policies"></a>Teams i kanałów
+### <a name="teams-and-channels-policies"></a>zasady Teams i kanałów
 
-Teams i kanały to dwa często używane elementy w aplikacji Microsoft Teams. Istnieją zasady, które można stosować, aby kontrolować, co użytkownicy mogą, a czego nie mogą robić w przypadku korzystania z zespołów i kanałów. Mimo że możesz utworzyć zespół globalny, jeśli Twoja organizacja ma nie więcej niż 5000 użytkowników, prawdopodobnie pomocne może okazać się utworzenie mniejszych zespołów i kanałów do określonych celów, zgodnie z potrzebami Twojej organizacji.
+Teams i kanały są dwoma często używanymi elementami w Microsoft Teams i istnieją zasady, które można wprowadzić, aby kontrolować, co użytkownicy mogą, a czego nie mogą robić w przypadku korzystania z zespołów i kanałów. Jeśli twoja organizacja ma co najmniej 5000 użytkowników, możesz utworzyć globalny zespół, ale prawdopodobnie warto mieć mniejsze zespoły i kanały do określonych celów, zgodnie z potrzebami organizacji.
 
-Zalecane jest zmienianie zasad domyślnych lub tworzenie zasad niestandardowych. Aby dowiedzieć się więcej na temat zarządzania zasadami, kliknij ten link: Zarządzanie zasadami zespołów w aplikacji [Microsoft Teams](/microsoftteams/teams-policies).
+Zaleca się zmianę zasad domyślnych lub tworzenie zasad niestandardowych. Więcej informacji na temat zarządzania zasadami można znaleźć pod tym linkiem: [Zarządzanie zasadami zespołów w Microsoft Teams](/microsoftteams/teams-policies).
 
-### <a name="messaging-policies"></a>Zasady obsługi wiadomości
+### <a name="messaging-policies"></a>Zasady obsługi komunikatów
 
-Wiadomościami lub czatami można również zarządzać za pomocą domyślnych zasad globalnych lub za pośrednictwem zasad niestandardowych, co może ułatwić użytkownikom komunikowanie się ze sobą w sposób odpowiedni do potrzeb organizacji. Te informacje można przejrzeć na stronie [Zarządzanie zasadami obsługi wiadomości w Teams](/microsoftteams/messaging-policies-in-teams).
+Obsługa wiadomości lub czatów może być również zarządzana za pośrednictwem domyślnych zasad globalnych lub za pośrednictwem zasad niestandardowych, co może pomóc użytkownikom komunikować się ze sobą w sposób odpowiedni dla Twojej organizacji. Te informacje można przejrzeć na stronie [Zarządzanie zasadami obsługi komunikatów w Teams](/microsoftteams/messaging-policies-in-teams).
 
-### <a name="meeting-policies"></a>Zasady spotkania
+### <a name="meeting-policies"></a>Zasady spotkań
 
-Żadna dyskusja Teams nie zostanie ukończona bez planowania i implementowania zasad wokół Teams spotkań. Spotkania to podstawowy składnik programu Teams, umożliwiający formalnie spotykanie się i przedstawianie wielu użytkownikom jednocześnie, a także udostępnianie zawartości związanej ze spotkaniem. Ustawianie odpowiednich zasad dla organizacji wokół spotkań jest bardzo ważne.
+Żadna dyskusja na temat Teams nie byłaby kompletna bez planowania i wdrażania zasad dotyczących Teams spotkań. Spotkania są istotnym elementem Teams, dzięki czemu użytkownicy mogą formalnie spotykać się i prezentować wielu użytkownikom jednocześnie oraz udostępniać zawartość istotną dla spotkania. Ustawienie odpowiednich zasad organizacji wokół spotkań jest niezbędne.
 
-Aby uzyskać więcej informacji, zapoznaj się [z tematem Zarządzanie zasadami spotkań w programie Teams](/microsoftteams/meeting-policies-in-teams).
+Aby uzyskać więcej informacji, zobacz [Zarządzanie zasadami spotkań w Teams](/microsoftteams/meeting-policies-in-teams).
 
 ### <a name="app-permission-policies"></a>Zasady uprawnień aplikacji
 
-Teams umożliwia również korzystanie z aplikacji w różnych miejscach, takich jak kanały lub czaty osobiste. Zasady dotyczące tego, jakie aplikacje można dodawać i których można używać, i gdzie, mają kluczowe znaczenie dla konserwacji zabezpieczonego również środowiska z bogatym zawartością.
+Teams umożliwia również korzystanie z aplikacji w różnych miejscach, takich jak kanały lub czaty osobiste. Posiadanie zasad dotyczących tego, które aplikacje można dodawać i używać oraz gdzie, jest niezbędne do utrzymania środowiska bogatego w zawartość, które jest również bezpieczne.
 
-Aby uzyskać więcej informacji na temat zasad uprawnień aplikacji, zobacz [Zarządzanie zasadami uprawnień aplikacji w programie Microsoft Teams](/microsoftteams/teams-app-permission-policies).
+Aby uzyskać więcej informacji na temat zasad uprawnień aplikacji, zobacz [Zarządzanie zasadami uprawnień aplikacji w Microsoft Teams](/microsoftteams/teams-app-permission-policies).
 
 ## <a name="next-steps"></a>Następne kroki
 
-![Krok 4. Zasady dotyczące aplikacji Microsoft 365 chmurze.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Krok 4. Zasady dotyczące aplikacji w chmurze Microsoft 365" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Skonfiguruj zasady dostępu warunkowego dla:
 

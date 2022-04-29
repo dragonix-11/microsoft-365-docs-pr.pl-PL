@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: W tym artykule poznasz najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytelnionym użytkownikom.
-ms.openlocfilehash: 43db59e0380f99a2312fd803970a73013445504a
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: bd153d34e6e9ddc4a4b627a79df90286661353d3
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65015051"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128593"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytelnionym użytkownikom
 
@@ -61,7 +61,11 @@ Aby ustawić datę wygaśnięcia linków Dowolna osoba w określonej witrynie
 
 Należy pamiętać, że po wygaśnięciu linku *Każdy* plik lub folder można ponownie udostępnić nowemu linkowi *Każdy* .
 
-Możesz ustawić wygaśnięcie linku *Każdy* dla określonego OneDrive przy użyciu [polecenia Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
+Możesz ustawić wygaśnięcie linku *Każdy* dla określonej witryny przy użyciu [polecenia Set-SPOSite](/powershell/module/sharepoint-online/set-sposite). 
+
+```powershell
+Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTenantAnonymousLinkExpirationPolicy $true -AnonymousLinkExpirationInDays 15
+```
 
 ## <a name="set-link-permissions"></a>Ustawianie uprawnień linku
 

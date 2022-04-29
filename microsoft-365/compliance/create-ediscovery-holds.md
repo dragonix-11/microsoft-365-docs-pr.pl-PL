@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: W Microsoft 365 można utworzyć blokadę skojarzoną ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa), aby zachować zawartość istotną dla dochodzenia lub sprawy prawnej.
-ms.openlocfilehash: e91e67b39a160de99856d73af8da6ab17d1d6fba
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddd1b2e62c2ec63dbd2303cadcef6a1d12f4dfc7
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095017"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130916"
 ---
 # <a name="create-an-ediscovery-hold"></a>Tworzenie blokady zbierania elektronicznych materiałów dowodowych
 
@@ -66,7 +66,7 @@ Aby utworzyć blokadę zbierania elektronicznych materiałów dowodowych skojarz
    3. **Exchange folderów publicznych**: ustaw przełącznik **na Wł**., aby wstrzymać wszystkie foldery publiczne w organizacji Exchange Online. Nie można wybrać określonych folderów publicznych do wstrzymania. Pozostaw przełącznik wyłączony, jeśli nie chcesz wstrzymać folderów publicznych.
 
    > [!IMPORTANT]
-   > Podczas dodawania Exchange skrzynek pocztowych lub witryn SharePoint do blokady należy jawnie dodać co najmniej jedną lokalizację zawartości do blokady. Innymi słowy, jeśli dla skrzynek pocztowych lub witryn ustawisz przełącznik **włączone** , musisz wybrać określone skrzynki pocztowe lub witryny, aby dodać je do blokady. W przeciwnym razie zostanie utworzona blokada zbierania elektronicznych materiałów dowodowych, ale żadne skrzynki pocztowe ani witryny nie zostaną dodane do blokady, a statystyki pokazują, że żadne lokalizacje zawartości ani elementy nie są zawieszone.
+   > Podczas dodawania Exchange skrzynek pocztowych lub witryn SharePoint do blokady należy jawnie dodać co najmniej jedną lokalizację zawartości do blokady. Innymi słowy, jeśli dla skrzynek pocztowych lub witryn ustawisz przełącznik **włączone** , musisz wybrać określone skrzynki pocztowe lub witryny, aby dodać je do blokady. W przeciwnym razie zostanie utworzona blokada zbierania elektronicznych materiałów dowodowych, ale do blokady nie zostaną dodane żadne skrzynki pocztowe ani witryny.
 
 8. Po zakończeniu dodawania lokalizacji do blokady kliknij przycisk **Dalej**.
 
@@ -94,24 +94,6 @@ Podczas umieszczania opartego na zapytaniach elektronicznego zbierania elektroni
 - Blokada oparta na zapytaniach początkowo zachowuje wszystkie dokumenty w witrynie przez krótki okres czasu po ich usunięciu. Oznacza to, że po usunięciu dokumentu zostanie on przeniesiony do biblioteki archiwum zachowywania, nawet jeśli nie spełnia kryteriów blokady opartej na zapytaniach. Jednak usunięte dokumenty, które nie pasują do blokady opartej na zapytaniach, zostaną usunięte przez zadanie czasomierza, które przetwarza bibliotekę archiwum zachowywania. Zadanie czasomierza jest uruchamiane okresowo i porównuje wszystkie dokumenty w bibliotece archiwizacji zachowania z blokadami zbierania elektronicznych materiałów dowodowych opartych na zapytaniach (i innymi typami zasad przechowywania i blokad). Zadanie czasomierza usuwa dokumenty, które nie są zgodne z blokadą opartą na zapytaniach, i zachowuje dokumenty, które to robią.
 
 - Blokad opartych na zapytaniach nie należy używać do wykonywania docelowego zachowania, takiego jak zachowywanie dokumentów w określonym folderze lub lokacji lub przy użyciu innych kryteriów przechowywania opartych na lokalizacji. Może to mieć niezamierzone wyniki. Zalecamy używanie kryteriów przechowywania innych niż oparte na lokalizacji, takich jak słowa kluczowe, zakresy dat lub inne właściwości dokumentu, aby zachować dokumenty witryny.
-
-## <a name="ediscovery-hold-statistics"></a>Statystyki zbierania elektronicznych materiałów dowodowych
-
-Po utworzeniu blokady zbierania elektronicznych materiałów dowodowych informacje o nowym blokadzie są wyświetlane na stronie wysuwanej dla wybranego blokady. Informacje te obejmują liczbę skrzynek pocztowych i witryn, które zostały wstrzymane, oraz statystyki dotyczące zawartości, która została wstrzymana, takie jak całkowita liczba i rozmiar elementów umieszczonych w blokadzie oraz czas ostatniego obliczenia statystyk blokady. Te statystyki przechowywania pomagają zidentyfikować ilość zawartości związanej ze sprawą jest zachowywana.
-  
-![Przechowuj statystyki.](../media/eDiscoveryHoldStatistics.png)
-  
-Należy pamiętać o następujących kwestiach dotyczących statystyk zbierania elektronicznych materiałów dowodowych:
-  
-- Całkowita liczba wstrzymanych elementów wskazuje liczbę elementów ze wszystkich źródeł zawartości, które są wstrzymane. Jeśli utworzono blokadę opartą na zapytaniach, ta statystyka wskazuje liczbę elementów zgodnych z zapytaniem.
-
-- Liczba wstrzymanych elementów obejmuje również elementy bez certyfikatu znalezione w lokalizacjach zawartości. Jeśli utworzysz blokadę opartą na zapytaniach, wszystkie elementy niezawłaszczone w lokalizacjach zawartości zostaną wstrzymane. Obejmuje to elementy niezainicjowane, które nie spełniają kryteriów wyszukiwania blokady opartej na zapytaniach i elementów niewyświetlonych, które mogą wykraczać poza warunek zakresu dat. Różni się to od tego, co dzieje się po uruchomieniu wyszukiwania, w którym niezainicjowane elementy, które nie są zgodne z zapytaniem wyszukiwania lub są wykluczone przez warunek zakresu dat, nie są uwzględniane w wynikach wyszukiwania. Aby uzyskać więcej informacji na temat elementów niezaindeksowanych, zobacz [Częściowo zaindeksowane elementy](partially-indexed-items-in-content-search.md).
-
-- Najnowsze statystyki blokady można uzyskać, klikając pozycję **Aktualizuj statystyki** , aby ponownie uruchomić oszacowanie wyszukiwania, które oblicza bieżącą liczbę wstrzymanych elementów.
-
-- Jest to normalne, że liczba wstrzymanych elementów rośnie wraz z upływem czasu, ponieważ użytkownicy, których skrzynka pocztowa lub witryna jest wstrzymana, zazwyczaj wysyłają lub odbierają nową wiadomość e-mail oraz tworzą nowe dokumenty w SharePoint i OneDrive.
-
-- Jeśli skrzynka pocztowa Exchange, SharePoint lokacja lub konto OneDrive zostaną przeniesione do innego regionu w środowisku z wieloma obszarami geograficznymi, statystyki dla tej witryny nie zostaną uwzględnione w statystykach blokady. Jednak zawartość w tych lokalizacjach będzie nadal zachowywana. Ponadto jeśli skrzynka pocztowa lub witryna zostanie przeniesiona do innego regionu, adres SMTP lub adres URL wyświetlany w blokadzie nie zostaną automatycznie zaktualizowane. Musisz edytować blokadę i zaktualizować adres URL lub adres SMTP, aby lokalizacje zawartości zostały ponownie uwzględnione w statystykach blokady
 
 ## <a name="search-locations-on-ediscovery-hold"></a>Wyszukiwanie lokalizacji w blokadzie zbierania elektronicznych materiałów dowodowych
 

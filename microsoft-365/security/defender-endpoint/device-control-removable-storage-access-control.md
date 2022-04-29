@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 03/18/2022
-ms.openlocfilehash: 03efd5f8681824b5625611e0c8c871bfc7fd03a6
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.date: 04/11/2022
+ms.openlocfilehash: b176f7a89c46e016f7eb25cdf4cd6b0d6beb3966
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665145"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130610"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Ochrona punktu końcowego w usłudze Microsoft Defender Storage Access Control wymienna kontrolki urządzenia
 
@@ -92,7 +92,7 @@ Aby utworzyć grupę magazynu wymiennego, można użyć następujących właści
 | **Type** | Definiuje akcję dla wymiennych grup magazynów w obszarze IncludedIDList. <p>Wymuszanie: zezwalanie lub odrzucanie <p>Inspekcja: AuditAllowed lub AuditDenied<p> | Zezwalaj<p>Odmów <p>AuditAllowed: definiuje powiadomienia i zdarzenia, gdy dostęp jest dozwolony <p>AuditDenied: definiuje powiadomienia i zdarzenia, gdy odmowa dostępu; musi współpracować **z** odmową wpisu.<p> Jeśli istnieją typy konfliktów dla tego samego nośnika, system zastosuje pierwszy z nich w zasadach. Przykładem typu konfliktu są **Zezwalaj** i **Odmów**. |
 | **Sid** | Identyfikator Sid użytkownika lokalnego, grupa sid użytkownika lub identyfikator Sid obiektu usługi AD określa, czy te zasady mają być stosowane względem określonego użytkownika lub grupy użytkowników; Jeden wpis może mieć maksymalnie jeden identyfikator Sid, a wpis bez identyfikatora Sid oznacza zastosowanie zasad na maszynie. |  |
 | **ComputerSid** | Identyfikator SID komputera lokalnego lub grupa sid komputera lub identyfikator Sid obiektu usługi AD określa, czy te zasady mają być stosowane do określonej maszyny lub grupy maszyn; Jeden wpis może mieć maksymalnie jeden ComputerSid i wpis bez żadnych ComputerSid oznacza zastosowanie zasad na maszynie. Jeśli chcesz zastosować wpis do określonego użytkownika i konkretnej maszyny, dodaj identyfikator Sid i ComputerSid do tego samego wpisu. |  |
-| **Opcje** | Określa, czy ma być wyświetlane powiadomienie, czy nie |**Po wybraniu opcji Zezwalaj na typ:** <p>0: nic<p>4: wyłącz **auditAllowed** i **AuditDenied** dla tego wpisu. Nawet jeśli ustawienie **Zezwalaj** zostanie skonfigurowane, a ustawienie AuditAllowed zostanie skonfigurowane, system nie wyśle zdarzenia. <p>8: przechwytywanie informacji o pliku i posiadanie kopii pliku jako dowodu na dostęp do zapisu. <p>16: przechwytywanie informacji o pliku na potrzeby dostępu do zapisu. <p>**Po wybraniu opcji Odmów typu**: <p>0: nic<p>4: wyłącz **wartość AuditDenied** dla tego wpisu. Nawet jeśli ustawienie **Blokuj** nastąpi i skonfigurowano ustawienie AuditDenied, system nie wyświetli powiadomienia. <p>**Po **wybraniu opcji Typ AuditAllowed**:** <p>0: nic <p>1: nic <p>2: wyślij zdarzenie<p>3: wyślij zdarzenie <p> **Po **wybraniu opcji Type AuditDenied****: <p>0: nic <p>1: pokaż powiadomienie <p>2: wyślij zdarzenie<p>3: pokaż powiadomienie i wyślij zdarzenie |
+| **Opcje** | Określa, czy ma być wyświetlane powiadomienie, czy nie |**Po wybraniu opcji Zezwalaj na typ:** <p>0: nic<p>4: wyłącz **auditAllowed** i **AuditDenied** dla tego wpisu. Nawet jeśli ustawienie **Zezwalaj** zostanie skonfigurowane, a ustawienie AuditAllowed zostanie skonfigurowane, system nie wyśle zdarzenia. <p>8: przechwytywanie informacji o pliku i posiadanie kopii pliku jako dowodu na dostęp do zapisu. <p>16: przechwytywanie informacji o pliku na potrzeby dostępu do zapisu. <p>**Po wybraniu opcji Odmów typu**: <p>0: nic<p>4: wyłącz **wartość AuditDenied** dla tego wpisu. Nawet jeśli ustawienie **Blokuj** nastąpi i skonfigurowano ustawienie AuditDenied, system nie wyświetli powiadomienia. <p>**Po **wybraniu opcji Typ AuditAllowed**:** <p>0: nic <p>1: nic <p>2: wyślij zdarzenie<p> **Po **wybraniu opcji Type AuditDenied****: <p>0: nic <p>1: pokaż powiadomienie <p>2: wyślij zdarzenie<p>3: pokaż powiadomienie i wyślij zdarzenie |
 |Maska dostępu|Definiuje dostęp. | **Dostęp na poziomie dysku**: <p>1: Odczyt <p>2: Zapis <p>4: Wykonywanie <p>**Dostęp na poziomie systemu plików**: <p>8: Odczyt systemu plików <p>16: Zapis systemu plików <p>32: Wykonywanie systemu plików <p><p>Możesz mieć wiele dostępu, wykonując operację binarną LUB, na przykład maska dostępu do odczytu i zapisu i wykonywania będzie miała wartość 7; Maska dostępu dla odczytu i zapisu będzie mieć wartość 3.|
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Typowe scenariusze Storage Access Control wymiennych

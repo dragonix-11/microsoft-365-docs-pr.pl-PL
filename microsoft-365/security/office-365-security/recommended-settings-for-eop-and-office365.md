@@ -19,12 +19,12 @@ ms.collection:
 description: Jakie są najlepsze rozwiązania dotyczące ustawień zabezpieczeń Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Defender? Jakie są bieżące zalecenia dotyczące standardowej ochrony? Co powinno być używane, jeśli chcesz być bardziej rygorystyczne? A jakie dodatki otrzymujesz, jeśli również używasz Ochrona usługi Office 365 w usłudze Defender?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a5e18547a26d688238f5d4be94520d4e68c9ff4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 72d4f64ca00defe26ddaff7fe27d641cb65f13be
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916342"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130522"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Zalecane ustawienia zabezpieczeń EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -43,10 +43,16 @@ Aby automatycznie zastosować ustawienia standardowe lub ścisłe do użytkownik
 
 W tym artykule opisano ustawienia domyślne, a także zalecane ustawienia standardowe i ścisłe, które ułatwiają ochronę użytkowników. Tabele zawierają ustawienia w portalu Microsoft 365 Defender i programie PowerShell (Exchange Online programu PowerShell lub autonomicznej Exchange Online Protection programu PowerShell dla organizacji bez Exchange Online skrzynek pocztowych).
 
-> [!TIP]
-> W portalu Microsoft 365 Defender nie można zmienić zalecanych ustawień standardowych i ścisłych. Aby zmienić zalecane wartości, takie jak **Włączanie ochrony użytkownikom**, należy użyć [Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
->
+> [!NOTE]
 > Moduł Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) dla programu PowerShell może ułatwić (administratorom) znalezienie bieżących wartości tych ustawień. W szczególności polecenie cmdlet **Get-ORCAReport** generuje ocenę ochrony przed spamem, ochrony przed wyłudzaniem informacji i innych ustawień higieny wiadomości. Moduł ORCA można pobrać pod adresem <https://www.powershellgallery.com/packages/ORCA/>.
+>
+> W Microsoft 365 organizacjach zalecamy pozostawienie filtru wiadomości-śmieci w Outlook ustawić wartość **Brak automatycznego filtrowania**, aby zapobiec niepotrzebnym konfliktom (zarówno pozytywnym, jak i negatywnym) z werdyktami filtrowania spamu z EOP. Aby uzyskać więcej informacji, zapoznaj się z następującymi artykułami:
+>
+> - [Konfigurowanie ustawień wiadomości-śmieci w skrzynkach pocztowych Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)
+> - [Informacje o ustawieniach wiadomości-śmieci w Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
+> - [Zmienianie poziomu ochrony w filtrze wiadomości-śmieci](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [Tworzenie list bezpiecznych nadawców w ramach EOP](create-safe-sender-lists-in-office-365.md)
+> - [Tworzenie zablokowanych list nadawców w ramach EOP](create-block-sender-lists-in-office-365.md)
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Ochrona przed spamem, ochroną przed złośliwym oprogramowaniem i ochroną przed wyłudzaniem informacji w ramach EOP
 
@@ -200,10 +206,10 @@ Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Temat Impersona
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
 |**Ochrona & progu wyłudzania informacji**|||||
-|**Umożliwianie użytkownikom ochrony** (ochrona użytkowników personifikowanych) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Nie zaznaczono <br/><br/> `$false` <br/><br/> Brak|Wybrane <br/><br/> `$true` <br/><br/> \<list of users\>|Wybrane <br/><br/> `$true` <br/><br/> \<list of users\>|Zalecamy dodanie użytkowników (nadawców komunikatów) do kluczowych ról. Wewnętrznie chronionymi nadawcami mogą być Dyrektor Generalny, Dyrektor Finansowy i inni starsi liderzy. Zewnętrznie chronieni nadawcy mogą obejmować członków rady lub zarząd. <br/><br/> W ustawieniach wstępnych zasad zabezpieczeń nie można określić użytkowników do ochrony. Należy wyłączyć wstępnie ustawione zasady zabezpieczeń i użyć niestandardowych zasad ochrony przed wyłudzaniem informacji, aby dodać użytkowników w kluczowych rolach zgodnie z sugestią.|
+|**Umożliwianie użytkownikom ochrony** (ochrona użytkowników personifikowanych) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Nie zaznaczono <br/><br/> `$false` <br/><br/> brak|Wybrane <br/><br/> `$true` <br/><br/> \<list of users\>|Wybrane <br/><br/> `$true` <br/><br/> \<list of users\>|Zalecamy dodanie użytkowników (nadawców komunikatów) do kluczowych ról. Wewnętrznie chronionymi nadawcami mogą być Dyrektor Generalny, Dyrektor Finansowy i inni starsi liderzy. Zewnętrznie chronieni nadawcy mogą obejmować członków rady lub zarząd. <br/><br/> W ustawieniach wstępnych zasad zabezpieczeń nie można określić użytkowników do ochrony. Należy wyłączyć wstępnie ustawione zasady zabezpieczeń i użyć niestandardowych zasad ochrony przed wyłudzaniem informacji, aby dodać użytkowników w kluczowych rolach zgodnie z sugestią.|
 |**Włączanie ochrony domen** (personifikowana ochrona domeny)|Nie zaznaczono|Wybrane|Wybrane||
 |**Uwzględnij domeny, których jestem właścicielem** <br/><br/> _EnableOrganizationDomainsProtection_|Wył. <br/><br/> `$false`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
-|**Dołączanie domen niestandardowych** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Wył. <br/><br/> `$false` <br/><br/> Brak|Wybrane <br/><br/> `$true` <br/><br/> \<list of domains\>|Wybrane <br/><br/> `$true` <br/><br/> \<list of domains\>|Zalecamy dodanie domen (domen nadawcy), których nie jesteś właścicielem, ale często wchodzisz w interakcje. <br/><br/> W ustawieniach wstępnych zasad zabezpieczeń nie można określić domen custm do ochrony. Należy wyłączyć wstępnie ustawione zasady zabezpieczeń i użyć niestandardowych zasad ochrony przed wyłudzaniem informacji w celu dodania domen niestandardowych w celu ochrony zgodnie z sugestią.|
+|**Dołączanie domen niestandardowych** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Wył. <br/><br/> `$false` <br/><br/> brak|Wybrane <br/><br/> `$true` <br/><br/> \<list of domains\>|Wybrane <br/><br/> `$true` <br/><br/> \<list of domains\>|Zalecamy dodanie domen (domen nadawcy), których nie jesteś właścicielem, ale często wchodzisz w interakcje. <br/><br/> W ustawieniach wstępnych zasad zabezpieczeń nie można określić domen custm do ochrony. Należy wyłączyć wstępnie ustawione zasady zabezpieczeń i użyć niestandardowych zasad ochrony przed wyłudzaniem informacji w celu dodania domen niestandardowych w celu ochrony zgodnie z sugestią.|
 |**Dodawanie zaufanych nadawców i domen** <br/><br/> _Wykluczeni nadawcy_ <br/><br/> _Wykluczonedomeny_|Brak|Brak|Brak|W zależności od organizacji zalecamy dodanie nadawców lub domen, które są niepoprawnie identyfikowane jako próby personifikacji.|
 |**Włączanie analizy skrzynki pocztowej** <br/><br/> _EnableMailboxIntelligence_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
 |**Włączanie analizy w celu ochrony przed personifikacją** <br/><br/> _EnableMailboxIntelligenceProtection_|Wył. <br/><br/> `$false`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|To ustawienie umożliwia określoną akcję wykrywania personifikacji za pomocą analizy skrzynki pocztowej.|

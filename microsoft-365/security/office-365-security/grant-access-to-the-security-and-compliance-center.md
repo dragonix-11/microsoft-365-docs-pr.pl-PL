@@ -1,5 +1,5 @@
 ---
-title: Umożliwianie użytkownikom dostępu do Centrum & zgodności
+title: Udzielanie użytkownikom dostępu do Centrum zabezpieczeń i zgodności
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,55 +16,55 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Aby użytkownicy mieli dostęp do jakichkolwiek funkcji zabezpieczeń lub zgodności, Microsoft 365 w Centrum zgodności usługi Microsoft 365 & i zgodności muszą mieć przypisane uprawnienia.
+description: Użytkownicy muszą mieć przypisane uprawnienia w centrum Microsoft 365 Security & Compliance Center, zanim będą mogli zarządzać dowolną z jej funkcji zabezpieczeń lub zgodności.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5af3d045b174c4405dc2060fea1db22b3b4066ac
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 5bf2f6f99af13de0858b041807f01e25e3516da8
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680692"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130763"
 ---
-# <a name="give-users-access-to-the-security--compliance-center"></a>Umożliwianie użytkownikom dostępu do Centrum & zgodności
+# <a name="give-users-access-to-the-security--compliance-center"></a>Udzielanie użytkownikom dostępu do Centrum zabezpieczeń i zgodności
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Użytkownicy muszą mieć przypisane uprawnienia w Centrum zabezpieczeń & zgodności, aby mogą zarządzać dowolnymi jego funkcjami zabezpieczeń lub zgodności. Te uprawnienia możesz nadać użytkownikom jako administrator globalny lub członek grupy ról OrganizationManagement w Centrum & zabezpieczeń i zgodności. Użytkownicy będą mogli zarządzać tylko funkcjami zabezpieczeń lub zgodności, do których mają dostęp.
+Użytkownicy muszą mieć przypisane uprawnienia w Centrum zgodności & zabezpieczeń, zanim będą mogli zarządzać dowolną z jej funkcji zabezpieczeń lub zgodności. Jako administrator globalny lub członek grupy ról OrganizacjaZarządzanie w Centrum zgodności & zabezpieczeń możesz przyznać te uprawnienia użytkownikom. Użytkownicy będą mogli zarządzać tylko funkcjami zabezpieczeń lub zgodności, do których mają dostęp.
 
-Aby uzyskać więcej informacji na temat poszczególnych uprawnień, które można nadać użytkownikom w Centrum zabezpieczeń & zgodności, zobacz Uprawnienia w Centrum zabezpieczeń & [zgodności](permissions-in-the-security-and-compliance-center.md).
+Aby uzyskać więcej informacji o różnych uprawnieniach, które można przyznać użytkownikom w Centrum zgodności & zabezpieczeń, zapoznaj się z tematem [Uprawnienia w Centrum zgodności & zabezpieczeń](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
-- Aby wykonać czynności opisane w tym artykule, musisz być administratorem globalnym lub członkiem grupy ról OrganizationManagement w Centrum & zabezpieczeń i zgodności.
+- Aby wykonać kroki opisane w tym artykule, musisz być administratorem globalnym lub członkiem grupy ról OrganizacjaZarządzanie w Centrum zgodności & zabezpieczeń.
 
-- Grupy ról w Centrum & zabezpieczeń mogą mieć podobne nazwy jak grupy ról w programie Exchange Online, ale nie są takie same.
+- Grupy ról centrum zgodności & zabezpieczeń mogą mieć podobne nazwy do grup ról w Exchange Online, ale nie są takie same.
 
-- Członkostwa w grupach ról nie są udostępniane między Exchange Online a Centrum & zgodności.
+- Członkostwa w grupach ról nie są współużytkowane między Exchange Online i Centrum zgodności & zabezpieczeń.
 
-- Partnerzy dap (Delegated Access Permission) z uprawnieniami administrować w imieniu (AOBO) nie mogą uzyskać dostępu do Centrum zabezpieczeń & zgodności.
+- Partnerzy uprawnień dostępu delegowanego (DAP) z uprawnieniami administrowania w imieniu (AOBO) nie mogą uzyskać dostępu do Centrum zgodności & zabezpieczeń.
 
-## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Korzystanie z Centrum & zgodności w celu zapewnienia iniu użytkownikowi dostępu do Centrum zgodności & zabezpieczeń
+## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Użyj Centrum zgodności & zabezpieczeń, aby udzielić innemu użytkownikowi dostępu do Centrum zgodności & zabezpieczeń
 
-1. Otwórz Centrum zabezpieczeń & zgodności, <https://protection.office.com> a następnie przejdź do okna **Uprawnienia**. Aby przejść bezpośrednio do karty **Uprawnienia** , otwórz pozycję <https://protection.office.com/permissions>.
+1. Otwórz centrum zgodności & zabezpieczeń pod adresem <https://protection.office.com> , a następnie przejdź do pozycji **Uprawnienia**. Aby przejść bezpośrednio do karty **Uprawnienia** , otwórz pozycję <https://protection.office.com/permissions>.
 
-2. Na liście grup ról wybierz grupę ról, a następnie kliknij pozycję **Edytuj ikonę** ![Edytuj](../../media/O365-MDM-CreatePolicy-EditIcon.gif).
+2. Z listy grup ról wybierz grupę ról, a następnie kliknij pozycję **Edytuj ikonę Edytuj**![.](../../media/O365-MDM-CreatePolicy-EditIcon.gif)
 
-3. Na stronie właściwości grupy ról w obszarze **Członkowie** kliknij pozycję **AddAdd**![ Icon.](../../media/ITPro-EAC-AddIcon.gif) i wybierz nazwę użytkownika (lub użytkowników), którego chcesz dodać.
+3. Na stronie właściwości grupy ról w obszarze **Członkowie** kliknij pozycję **DodajDodaj**![ ikonę.](../../media/ITPro-EAC-AddIcon.gif) i wybierz nazwę użytkownika (lub użytkowników), którego chcesz dodać.
 
-4. Po wybraniu wszystkich użytkowników, których chcesz dodać do grupy ról, kliknij pozycję **dodaj -\>** i **OK**.
+4. Po wybraniu wszystkich użytkowników, których chcesz dodać do grupy ról, kliknij przycisk **dodaj,\>** a następnie przycisk **OK**.
 
 5. Po zakończeniu kliknij przycisk **Zapisz**.
 
-## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Użyj programu PowerShell & zabezpieczeń i zgodności, aby dać iniu mu dostęp do Centrum & zabezpieczeń i zgodności
+## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Użyj programu PowerShell Usługi Security & Compliance Center, aby udzielić innemu użytkownikowi dostępu do Centrum zgodności & zabezpieczeń
 
-1. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Należy stosować następującą składnię:
 
@@ -80,18 +80,18 @@ Aby uzyskać więcej informacji na temat poszczególnych uprawnień, które moż
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-Aby uzyskać szczegółowe informacje na temat problemów ze składnią i parametrami, [zobacz Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
+Aby uzyskać szczegółowe informacje o problemach ze składnią i parametrami, zobacz [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
 ### <a name="how-do-you-know-this-worked"></a>Skąd wiadomo, że to działanie się powiodło?
 
 Aby sprawdzić, czy pomyślnie udzielono dostępu do Centrum zgodności & zabezpieczeń, wykonaj jedną z następujących czynności:
 
-- W Centrum zabezpieczeń & zgodności przejdź do **przycisku** Uprawnienia i wybierz grupę ról. W czacie wysuwu szczegółów sprawdź członków grupy ról.
+- W Centrum zgodności & zabezpieczeń przejdź do pozycji **Uprawnienia** i wybierz grupę ról. W wyświetlonym wysuwu szczegółów sprawdź członków grupy ról.
 
-- W & zabezpieczeń i zgodności programu PowerShell \<RoleGroupName\> zastąp nazwę grupy ról i uruchom następujące polecenie:
+- W programie PowerShell Usługi Security & Compliance Center zastąp \<RoleGroupName\> ciąg nazwą grupy ról i uruchom następujące polecenie:
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"
   ```
 
-  Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember).
+  Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember).

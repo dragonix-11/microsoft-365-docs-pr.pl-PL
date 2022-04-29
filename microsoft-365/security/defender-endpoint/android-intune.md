@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 461664cc72486a49e5b7bd9be44235559409adff
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: e5f38f701c865ad337bd04cb731ba40e00bf6118
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825261"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130460"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Wdrażaj usługę ochrony punktu końcowego w usłudze Microsoft Defender w systemie Android za pomocą usługi Microsoft Intune
 
@@ -261,6 +261,63 @@ Profil konfiguracji urządzenia jest teraz przypisany do wybranej grupy użytkow
 4. Na tym etapie urządzenie zostało pomyślnie dołączone do usługi Defender for Endpoint w systemie Android. Możesz to sprawdzić w [portalu Microsoft 365 Defender](https://security.microsoft.com), przechodząc do strony **Spis urządzeń**.
 
     :::image type="content" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="Portal Ochrona punktu końcowego w usłudze Microsoft Defender" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
+
+## <a name="set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode"></a>Konfigurowanie usługi Microsoft Defender w profilu osobistym w systemie Android Enterprise w trybie BYOD
+
+>[!NOTE]
+>Obsługa usługi Microsoft Defender w profilu osobistym w systemie Android Enterprise (AE) w trybie "Przynieś własne urządzenie" (BYOD) jest teraz dostępna w publicznej wersji zapoznawczej. Poniższe informacje dotyczą wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+
+Dzięki obsłudze usługi Microsoft Defender w profilach osobistych systemu Android urządzenia użytkowników mogą być chronione przed atakami wyłudzania informacji i złośliwego oprogramowania w profilu osobistym, które mogą potencjalnie naruszyć bezpieczeństwo zasobów firmowych w profilu służbowym. 
+
+**Konfigurowanie usługi Microsoft Defender w profilu osobistym**
+
+Administratorzy mogą przejść do [centrum administracyjnego usługi Microsoft Endpoint Management](https://endpoint.microsoft.com) , aby skonfigurować i skonfigurować pomoc techniczną usługi Microsoft Defender w profilach osobistych, wykonując następujące kroki:
+1. Przejdź do obszaru **Aplikacje> Zasady konfiguracji aplikacji** i kliknij pozycję **Dodaj**. Wybierz pozycję **Urządzenia zarządzane**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Obraz przedstawiający dodawanie zasad konfiguracji aplikacji.](images/addpolicy.png)
+
+1.  Wprowadź **nazwę** i **opis** , aby jednoznacznie zidentyfikować zasady konfiguracji. Wybierz platformę jako **"Android Enterprise",** typ profilu **jako "Tylko profil służbowy należący do użytkownika"** i Aplikacja docelowa jako **"Microsoft Defender"**.
+ 
+    > [!div class="mx-imgBorder"]
+    > ![Obraz przedstawiający zasady konfiguracji nazewnictwa.](images/selectapp.png)
+
+1. Na stronie ustawień w **obszarze "Format ustawień konfiguracji"** wybierz pozycję **"Użyj projektanta konfiguracji",** a następnie kliknij pozycję **Dodaj**. Z wyświetlonej listy konfiguracji wybierz pozycję **"Microsoft Defender w profilu osobistym"**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Obraz przedstawiający konfigurowanie profilu osobistego.](images/addconfiguration.png)
+
+1. Zostanie wyświetlona wybrana konfiguracja. Zmień **wartość konfiguracji na 1** , aby włączyć obsługę profilów osobistych w usłudze Microsoft Defender. Zostanie wyświetlone powiadomienie informujące administratora o tym samym. Kliknij przycisk **Dalej**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Obraz przedstawiający zmianę wartości konfiguracji.](images/changeconfigvalue.png)
+
+1. **Przypisz** zasady konfiguracji do grupy użytkowników. **Przejrzyj i utwórz** zasady.
+
+    > [!div class="mx-imgBorder"]
+    > ![Obraz przedstawiający przeglądanie i tworzenie zasad.](images/savepolicy.png)
+
+Administratorzy mogą również skonfigurować **mechanizmy kontroli prywatności** z centrum administracyjnego Microsoft Endpoint Manager, aby kontrolować, jakie dane mogą być wysyłane przez klienta mobilnego usługi Defender do portalu zabezpieczeń. Aby uzyskać więcej informacji, zobacz [konfigurowanie mechanizmów kontroli prywatności](android-configure.md).
+
+Organizacje mogą komunikować się ze swoimi użytkownikami w celu ochrony profilu osobistego za pomocą usługi Microsoft Defender na zarejestrowanych urządzeniach BYOD.
+- Wymagania wstępne: usługa Microsoft Defender musi być już zainstalowana i aktywna w profilu służbowym, aby włączyć usługę Microsoft Defender w profilach osobistych.
+
+**Aby ukończyć dołączanie urządzenia**
+1.  Zainstaluj aplikację Microsoft Defender w profilu osobistym przy użyciu osobistego konta sklepu Google Play.
+2.  Zainstaluj aplikację Portal firmy w profilu osobistym. Logowanie nie jest wymagane.
+3.  Po uruchomieniu aplikacji przez użytkownika zostanie wyświetlony ekran logowania. **Zaloguj się tylko przy użyciu konta firmowego**.
+4.  Po pomyślnym zalogowaniu użytkownicy zobaczą następujące ekrany:
+
+    a.  **Ekran umowy EULA**: prezentowany tylko wtedy, gdy użytkownik nie wyraził jeszcze zgody w profilu służbowym.
+
+    b.  **Ekran powiadomienia**: użytkownicy muszą wyrazić zgodę na tym ekranie, aby kontynuować dołączanie aplikacji. Jest to wymagane tylko podczas pierwszego uruchomienia aplikacji.
+5.  Podaj wymagane uprawnienia do ukończenia dołączania.
+
+>[!NOTE]
+>**Wymagania wstępne:**
+ >1. Portal firmy musi być włączony w profilu osobistym.
+ >2. Usługa Microsoft Defender musi być już zainstalowana i aktywna w profilu służbowym.
+
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

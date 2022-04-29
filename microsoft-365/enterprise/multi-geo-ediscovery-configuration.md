@@ -13,18 +13,18 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: Dowiedz się, jak za pomocą parametru Region skonfigurować funkcję zbierania elektronicznych materiałów dowodowych do użycia w lokalizacjach satelitarnych w Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 6160087006e77de085f6a28614b95d1136890fd3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a220e68e6dbe010f2eab6876dc2813dcd84d5d6d
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973294"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130938"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 konfiguracji zbierania elektronicznych materiałów dowodowych
 
-[Funkcje zbierania elektronicznych materiałów dowodowych (Premium)](../compliance/overview-ediscovery-20.md) umożliwiają administratorowi zbierania elektronicznych elektronicznych materiałów dowodowych przeszukiwanie wszystkich obszarów geograficznych bez konieczności używania filtru zabezpieczeń "Region". Dane są eksportowane do wystąpienia platformy Azure centralnej lokalizacji dzierżawy z wieloma lokalizacjami geograficznymi. To samo dzieje się z zastosowaniem blokady na opiekuna, jednak statystyki blokady wewnątrz blokady nie będą wyświetlane bez filtru zabezpieczeń "Region". Statystyka blokady pokazująca wartość 0 nie oznacza, że wstrzymanie nie powiodło się, o ile stan blokady jest wyświetlany w pozycji Włączone (pomyślne).
+[Funkcje zbierania elektronicznych materiałów dowodowych (Premium)](../compliance/overview-ediscovery-20.md) umożliwiają administratorowi zbierania elektronicznych elektronicznych materiałów dowodowych przeszukiwanie wszystkich obszarów geograficznych bez konieczności używania filtru zabezpieczeń "Region". Dane są eksportowane do wystąpienia platformy Azure centralnej lokalizacji dzierżawy z wieloma lokalizacjami geograficznymi.
 
-Bez możliwości zbierania elektronicznych materiałów dowodowych (Premium) menedżer zbierania elektronicznych materiałów dowodowych lub administrator dzierżawy z wieloma obszarami geograficznymi będzie mógł przeprowadzać zbierania elektronicznych materiałów dowodowych tylko w centralnej lokalizacji tej dzierżawy. Aby obsługiwać możliwość przeprowadzania zbierania elektronicznych materiałów dowodowych dla lokalizacji satelitarnych, nowy parametr filtru zabezpieczeń zgodności o nazwie "Region" jest dostępny za pośrednictwem programu PowerShell. Ten parametr może być używany przez dzierżawców, których centralna lokalizacja znajduje się w Ameryka Północna, Europie lub Regionie Azji i Pacyfiku. eDiscovery (Premium) jest zalecane dla dzierżawców, których centralna lokalizacja nie znajduje się w Ameryka Północna, Europie lub Regionie Azji i Pacyfiku i którzy muszą wykonywać zbierania elektronicznych materiałów dowodowych w lokalizacjach geograficznych satelitów. 
+Bez możliwości zbierania elektronicznych materiałów dowodowych (Premium) menedżer zbierania elektronicznych materiałów dowodowych lub administrator dzierżawy z wieloma obszarami geograficznymi będzie mógł przeprowadzać zbierania elektronicznych materiałów dowodowych tylko w centralnej lokalizacji tej dzierżawy. Aby obsługiwać możliwość przeprowadzania zbierania elektronicznych materiałów dowodowych dla lokalizacji satelitarnych, nowy parametr filtru zabezpieczeń zgodności o nazwie "Region" jest dostępny za pośrednictwem programu PowerShell. Ten parametr może być używany przez dzierżawców, których centralna lokalizacja znajduje się w Ameryka Północna, Europie lub Regionie Azji i Pacyfiku. eDiscovery (Premium) jest zalecane dla dzierżawców, których centralna lokalizacja nie znajduje się w Ameryka Północna, Europie lub Regionie Azji i Pacyfiku i którzy muszą wykonywać zbierania elektronicznych materiałów dowodowych w lokalizacjach geograficznych satelitów.
 
 Administrator globalny Microsoft 365 musi przypisać uprawnienia menedżera zbierania elektronicznych materiałów dowodowych, aby umożliwić innym osobom wykonywanie zbierania elektronicznych materiałów dowodowych i przypisać parametr "Region" w odpowiednim filtrze zabezpieczeń zgodności w celu określenia regionu do przeprowadzania zbierania elektronicznych materiałów dowodowych jako lokalizacji satelitarnej, w przeciwnym razie nie zostanie przeprowadzone żadne zbierania elektronicznych materiałów dowodowych dla lokalizacji satelitarnej. Obsługiwany jest tylko jeden filtr zabezpieczeń "Region" na użytkownika, więc wszystkie regiony muszą znajdować się w tym samym filtrze zabezpieczeń.
 

@@ -1,5 +1,5 @@
 ---
-title: Jak program EOP sprawdza poprawność adresu Od w celu zapobiegania próbom wyłudzania informacji
+title: Jak funkcja EOP weryfikuje adres Od, aby zapobiec wyłudzaniu informacji
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,108 +15,108 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Administratorzy mogą dowiedzieć się więcej o typach adresów e-mail akceptowanych lub odrzucanych przez usługę Exchange Online Protection (EOP) i witrynę Outlook.com, aby zapobiec próbom wyłudzania informacji.
+description: Administratorzy mogą dowiedzieć się więcej o typach adresów e-mail akceptowanych lub odrzucanych przez Exchange Online Protection (EOP) i Outlook.com, aby zapobiec wyłudzaniu informacji.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 412b6eb7045051c21a88c8b4b2ba5e80a06832dd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 92b7072e3127da71f423648c83fc94c17bed7caa
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986438"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131069"
 ---
-# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Jak program EOP sprawdza poprawność adresu Od w celu zapobiegania próbom wyłudzania informacji
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Jak funkcja EOP weryfikuje adres Od, aby zapobiec wyłudzaniu informacji
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Ataki służące do wyłudzania informacji stanowią ciągłe zagrożenie dla każdej organizacji poczty e-mail. Oprócz adresów e-mail sfałszowanych (sfałszowanych [)](anti-spoofing-protection.md) nadawców atakujący często używają wartości w adresie Nadawca, które naruszają standardy internetowe. Aby zapobiec wyłudzaniu informacji tego typu, Exchange Online Protection (EOP) i Outlook.com wymagają teraz, aby wiadomości przychodzące zawierały adres Od zgodny ze standardem RFC zgodnie z opisem w tym artykule. Wymuszanie zostało włączone w listopadzie 2017 r.
+Ataki wyłudzające informacje stanowią stałe zagrożenie dla dowolnej organizacji poczty e-mail. Oprócz [używania sfałszowanych (sfałszowanych) adresów e-mail nadawcy](anti-spoofing-protection.md) osoby atakujące często używają wartości w polu Adres od, które naruszają standardy internetowe. Aby zapobiec wyłudzaniu informacji tego typu, Exchange Online Protection (EOP) i Outlook.com wymagają teraz, aby komunikaty przychodzące zawierały adres Z zgodny z RFC zgodnie z opisem w tym artykule. To wymuszanie zostało włączone w listopadzie 2017 r.
 
 **Uwagi**:
 
-- Jeśli regularnie otrzymujesz wiadomości e-mail od organizacji, które mają adresy Od w sposób opisany w tym artykule, zachęć te organizacje do zaktualizowania serwerów poczty e-mail w celu zapewnienia zgodności z nowoczesnymi standardami zabezpieczeń.
+- Jeśli regularnie otrzymujesz wiadomości e-mail od organizacji, które mają źle sformułowane adresy Z zgodnie z opisem w tym artykule, zachęć te organizacje do zaktualizowania serwerów poczty e-mail w celu zachowania zgodności z nowoczesnymi standardami zabezpieczeń.
 
-- Te wymagania nie mają wpływu na powiązane pole Nadawca (używane przez pole Wyślij w imieniu i listy adresowe). Aby uzyskać więcej informacji, zobacz następujący wpis w blogu: Co mamy na myśli, gdy używamy "nadawcy [" wiadomości e-mail?](/archive/blogs/tzink/what-do-we-mean-when-we-refer-to-the-sender-of-an-email).
+- Te wymagania nie mają wpływu na powiązane pole nadawcy (używane przez usługę Wyślij w imieniu i listy wysyłkowe). Aby uzyskać więcej informacji, zobacz następujący wpis w blogu: [Co mamy na myśli, gdy odwołujemy się do "nadawcy" wiadomości e-mail?](/archive/blogs/tzink/what-do-we-mean-when-we-refer-to-the-sender-of-an-email).
 
 ## <a name="an-overview-of-email-message-standards"></a>Omówienie standardów wiadomości e-mail
 
-Standardowa wiadomość e-mail SMTP składa się z *koperty* wiadomości i jej zawartości. Koperta wiadomości zawiera informacje wymagane do przekazywania i dostarczania wiadomości między serwerami SMTP. Zawartość wiadomości zawiera pola nagłówka wiadomości (zbiorczo *nazywane nagłówkiem* wiadomości) i treść wiadomości. Koperta wiadomości jest opisana w [dokumencie RFC 5321](https://tools.ietf.org/html/rfc5321), a nagłówek wiadomości jest opisany w dokumencie [RFC 5322](https://tools.ietf.org/html/rfc5322). Adresaci nigdy nie widzą rzeczywistej koperty wiadomości, ponieważ jest generowana przez proces transmisji wiadomości i w rzeczywistości nie jest ona częścią wiadomości.
+Standardowa wiadomość e-mail SMTP składa się z *koperty wiadomości* i zawartości wiadomości. Koperta wiadomości zawiera informacje wymagane do przesyłania i dostarczania komunikatu między serwerami SMTP. Zawartość wiadomości zawiera pola nagłówka wiadomości (łącznie nazywane *nagłówkiem komunikatu*) i treść komunikatu. Koperta komunikatu jest opisana w dokumencie [RFC 5321](https://tools.ietf.org/html/rfc5321), a nagłówek komunikatu jest opisany w dokumencie [RFC 5322](https://tools.ietf.org/html/rfc5322). Adresaci nigdy nie widzą rzeczywistej koperty wiadomości, ponieważ jest ona generowana przez proces transmisji komunikatów i w rzeczywistości nie jest częścią wiadomości.
 
-- Adres `5321.MailFrom` (znany także jako adres **MAIL FROM** , nadawca P1 lub nadawca koperty) to adres e-mail używany w transmisji SMTP wiadomości. Ten adres e-mail jest zwykle rejestrowany w polu nagłówka **return-ścieżka** w nagłówku wiadomości (chociaż nadawca może wyznaczyć inny adres **e-mail** ze ścieżką zwrotną).
+- Adres `5321.MailFrom` (znany również jako adres **MAIL FROM** , nadawca P1 lub nadawca koperty) to adres e-mail używany podczas transmisji wiadomości przez protokół SMTP. Ten adres e-mail jest zwykle rejestrowany w polu nagłówek **Return-Path** w nagłówku wiadomości (chociaż nadawca może wyznaczyć inny adres **e-mail ze ścieżką powrotną** ).
 
-- Nadawca (nazywany również nadawcą Od lub P2) jest adresem e-mail w polu  nagłówka Od i jest adresem e-mail nadawcy wyświetlanym w klientach poczty e-mail.`5322.From` W centrum wymagań w tym artykule znajduje się adres Od.
+- Adres `5322.From` (znany również jako adres od lub nadawca P2) to adres e-mail w polu **Nagłówek od** i jest adresem e-mail nadawcy wyświetlanym w klientach poczty e-mail. Adres Od jest przedmiotem wymagań w tym artykule.
 
-Adres Od jest zdefiniowany szczegółowo w kilku zapytaniech ofertowych (na przykład WFC 5322 sekcjach 3.2.3, 3.4 i 3.4.1 i [RFC 3696](https://tools.ietf.org/html/rfc3696)). Istnieje wiele odmian adresowania oraz to, co jest uznawane za prawidłowe lub nieprawidłowe. Aby zachować prostotę, zalecamy następujący format i definicje:
+Adres From jest definiowany szczegółowo w kilku punktach Z (na przykład RFC 5322 sekcje 3.2.3, 3.4 i 3.4.1 i [RFC 3696](https://tools.ietf.org/html/rfc3696)). Istnieje wiele odmian dotyczących adresowania i tego, co jest uważane za prawidłowe lub nieprawidłowe. Aby zachować prostotę, zalecamy następujący format i definicje:
 
 `From: "Display Name" <EmailAddress>`
 
-- **Nazwa wyświetlana**: opcjonalna fraza opisującą właściciela adresu e-mail.
+- **Nazwa wyświetlana**: opcjonalna fraza opisująca właściciela adresu e-mail.
 
-  - Zalecamy, aby zawsze ująć nazwę wyświetlaną w podwójny cudzysłów ("), jak pokazano. Jeśli nazwa wyświetlana zawiera przecinek, należy  ująć ten ciąg w cudzysłów podwójny na kod RFC 5322.
-  - Jeśli adres Od zawiera nazwę wyświetlaną, wartość EmailAddress musi być ujęta w nawiasy kwadratowe (< >), jak pokazano.
-  - Firma Microsoft zdecydowanie zaleca wstawienie spacji między nazwą wyświetlaną a adresem e-mail.
+  - Zalecamy, aby zawsze umieszczać nazwę wyświetlaną w podwójnym cudzysłowie ("), jak pokazano poniżej. Jeśli nazwa wyświetlana zawiera przecinek, _należy ująć_ ciąg w podwójny cudzysłów na RFC 5322.
+  - Jeśli adres Od zawiera nazwę wyświetlaną, wartość EmailAddress musi być ujęta w nawiasy kątowe (< >), jak pokazano poniżej.
+  - Firma Microsoft zdecydowanie zaleca wstawienie miejsca między nazwą wyświetlaną a adresem e-mail.
 
-- **EmailAddress**: Adres e-mail ma format `local-part@domain`:
+- **EmailAddress**: adres e-mail używa formatu `local-part@domain`:
 
-  - **local-part**: ciąg identyfikujący skrzynkę pocztową skojarzoną z adresem. Ta wartość jest unikatowa w obrębie domeny. Często jest używana nazwa użytkownika lub identyfikator GUID właściciela skrzynki pocztowej.
-  - **domena**: w pełni kwalifikowana nazwa domeny (FQDN) serwera poczty e-mail hostowego skrzynkę pocztową identyfikowaną przez lokalną część adresu e-mail.
+  - **local-part**: ciąg identyfikujący skrzynkę pocztową skojarzoną z adresem. Ta wartość jest unikatowa w domenie. Często używana jest nazwa użytkownika lub identyfikator GUID właściciela skrzynki pocztowej.
+  - **domena**: w pełni kwalifikowana nazwa domeny (FQDN) serwera poczty e-mail hostującego skrzynkę pocztową określoną przez lokalną część adresu e-mail.
 
-  Oto kilka dodatkowych kwestii, które należy uwzględnić w wartości EmailAddress:
+  Oto kilka dodatkowych zagadnień dotyczących wartości EmailAddress:
 
   - Tylko jeden adres e-mail.
-  - Zalecamy, aby nie rozdzielać nawiasów kątowych spacjami.
+  - Zalecamy, aby nie oddzielać nawiasów kątowych spacjami.
   - Nie dołączaj dodatkowego tekstu po adresie e-mail.
 
-## <a name="examples-of-valid-and-invalid-from-addresses"></a>Przykłady prawidłowych i nieprawidłowych adresów Od
+## <a name="examples-of-valid-and-invalid-from-addresses"></a>Przykłady prawidłowych i nieprawidłowych adresów z
 
-Prawidłowe są następujące adresy e-mail z adresu e-mail:
+Następujące adresy e-mail z są prawidłowe:
 
 - `From: sender@contoso.com`
 
 - `From: <sender@contoso.com>`
 
-- `From: < sender@contoso.com >` (Zalecane, ponieważ istnieją spacje między nawiasami kątowymi a adresem e-mail).
+- `From: < sender@contoso.com >` (Nie zaleca się, ponieważ istnieją spacje między nawiasami kątowymi a adresem e-mail).
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
 - `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Microsoft 365 <sender@contoso.com>` Ta nazwa nie jest zalecana, ponieważ nazwa wyświetlana nie jest ujęta w cudzysłów.
+- `From: Microsoft 365 <sender@contoso.com>` (Nie jest to zalecane, ponieważ nazwa wyświetlana nie jest ujęta w podwójny cudzysłów).
 
-Następujące adresy e-mail od są nieprawidłowe:
+Następujące adresy e-mail z są nieprawidłowe:
 
-- **Brak adresu od**: niektóre automatyczne wiadomości nie zawierają adresu Od. W przeszłości, gdy Microsoft 365 lub Outlook.com odebrano wiadomość bez adresu Od, usługa dodała następujący domyślny adres od: w celu dostarczania wiadomości:
+- **Nie z adresu**: niektóre automatyczne komunikaty nie zawierają adresu Od. W przeszłości, gdy Microsoft 365 lub Outlook.com odebrało komunikat bez adresu Od, usługa dodała następujące domyślne ustawienie Od: adres, aby komunikat był dostarczany:
 
   `From: <>`
 
-  Teraz wiadomości z pustym adresem Od nie będą już akceptowane.
+  Teraz komunikaty z pustym adresem Od nie są już akceptowane.
 
 - `From: Microsoft 365 sender@contoso.com` (Nazwa wyświetlana jest obecna, ale adres e-mail nie jest ujęty w nawiasy kątowe).
 
-- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` Tekst po adresie e-mail.
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Tekst po adresie e-mail).
 
-- `From: Sender, Example <sender.example@contoso.com>` (Nazwa wyświetlana zawiera przecinek, ale nie jest ujęta w cudzysłów).
+- `From: Sender, Example <sender.example@contoso.com>` (Nazwa wyświetlana zawiera przecinek, ale nie jest ujęta w podwójny cudzysłów).
 
-- `From: "Microsoft 365 <sender@contoso.com>"` (Cała wartość jest nieprawidłowo ujęta w cudzysłów).
+- `From: "Microsoft 365 <sender@contoso.com>"` (Cała wartość jest niepoprawnie ujęta w podwójny cudzysłów).
 
 - `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (Nazwa wyświetlana jest obecna, ale adres e-mail nie jest ujęty w nawiasy kątowe).
 
-- `From: Microsoft 365<sender@contoso.com>` (Brak odstępu między nazwą wyświetlaną a lewym nawiasem kątowym).
+- `From: Microsoft 365<sender@contoso.com>` (Brak miejsca między nazwą wyświetlaną a lewym nawiasem kwadratowym).
 
-- `From: "Microsoft 365"<sender@contoso.com>` (Brak odstępu między zamykającym podwójnym cudzysłowem a lewym nawiasem kątowym).
+- `From: "Microsoft 365"<sender@contoso.com>` (Brak miejsca między zamykaniem podwójnego cudzysłowu a lewym nawiasem kątowym).
 
-## <a name="suppress-auto-replies-to-your-custom-domain"></a>Pomijanie automatycznych odpowiedzi w domenie niestandardowej
+## <a name="suppress-auto-replies-to-your-custom-domain"></a>Pomijanie automatycznych odpowiedzi do domeny niestandardowej
 
-Tej wartości nie można użyć do `From: <>` pomiń automatycznych odpowiedzi. Zamiast tego należy skonfigurować pusty rekord MX dla domeny niestandardowej. Automatyczne odpowiedzi (i wszystkie odpowiedzi) są w sposób naturalny pomijane, ponieważ nie ma opublikowanego adresu, na który serwer odpowiada, na który mogą wysyłać wiadomości.
+Nie można użyć wartości `From: <>` do pominięcia automatycznych odpowiedzi. Zamiast tego należy skonfigurować rekord MX o wartości null dla domeny niestandardowej. Automatyczne odpowiedzi (i wszystkie odpowiedzi) są naturalnie pomijane, ponieważ nie ma opublikowanego adresu, na który serwer odpowiedzi może wysyłać komunikaty.
 
-- Wybierz domenę poczty e-mail, która nie może odbierać poczty e-mail. Jeśli na przykład domena podstawowa jest contoso.com, możesz wybrać pozycję noreply.contoso.com.
+- Wybierz domenę poczty e-mail, która nie może odbierać wiadomości e-mail. Jeśli na przykład domena podstawowa jest contoso.com, możesz wybrać noreply.contoso.com.
 
-- Pusty rekord MX dla tej domeny składa się z jednego okresu.
+- Rekord MX o wartości null dla tej domeny składa się z jednego okresu.
 
 Przykład:
 
@@ -124,16 +124,16 @@ Przykład:
 noreply.contoso.com IN MX .
 ```
 
-Aby uzyskać więcej informacji na temat konfigurowania rekordów MX, zobacz [Tworzenie rekordów DNS dla](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) Microsoft 365.
+Aby uzyskać więcej informacji na temat konfigurowania rekordów MX, zobacz [Tworzenie rekordów DNS u dowolnego dostawcy hostingu DNS dla Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
-Aby uzyskać więcej informacji na temat publikowania rekordu MX wartości null, zobacz [RFC 7505](https://tools.ietf.org/html/rfc7505).
+Aby uzyskać więcej informacji na temat publikowania wartości null MX, zobacz [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
-## <a name="override-from-address-enforcement"></a>Override From address enforcement
+## <a name="override-from-address-enforcement"></a>Zastępowanie z wymuszania adresu
 
-Aby obejść wymagania dotyczące adresu Od dla przychodzącej poczty e-mail, możesz użyć listy adresów IP (filtrowania połączeń) lub reguł przepływu poczty (nazywanych także regułami transportu), jak opisano w artykule Tworzenie list bezpiecznych nadawców w programie [Microsoft 365](create-safe-sender-lists-in-office-365.md).
+Aby pominąć wymagania dotyczące adresu Od dla przychodzącej poczty e-mail, można użyć listy dozwolonych adresów IP (filtrowania połączeń) lub reguł przepływu poczty (znanych również jako reguły transportu), zgodnie z opisem w artykule [Tworzenie list bezpiecznych nadawców w Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-Nie możesz zastąpić wymagań dotyczących adresu Od dla wychodzących wiadomości e-mail, które wysyłasz z Microsoft 365. Ponadto w Outlook.com nie zezwalają na zastępowanie jakichkolwiek zastąpień, nawet za pośrednictwem pomocy technicznej.
+Nie można zastąpić wymagań dotyczących adresu Od dla wychodzącej poczty e-mail wysyłanej z Microsoft 365. Ponadto Outlook.com nie zezwala na przesłonięcia jakiegokolwiek rodzaju, nawet za pośrednictwem pomocy technicznej.
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Inne sposoby zapobiegania cyberprzestępczości i ochrony przed cyberprzestępczością w Microsoft 365
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Inne sposoby zapobiegania i ochrony przed cyberprzestępczością w Microsoft 365
 
-Aby uzyskać więcej informacji na temat sposobu, w jaki można wzmocnić organizację przed wyłudzaniem informacji, spamem, naruszeniem danych i innymi zagrożeniami, zobacz [10](../../admin/security-and-compliance/secure-your-business-data.md) najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm.
+Aby uzyskać więcej informacji na temat wzmacniania organizacji przed wyłudzaniem informacji, spamem, naruszeniami danych i innymi zagrożeniami, zobacz [Top 10 ways to secure Microsoft 365 for business plans (10 najlepszych sposobów zabezpieczania Microsoft 365 dla planów biznesowych](../../admin/security-and-compliance/secure-your-business-data.md)).

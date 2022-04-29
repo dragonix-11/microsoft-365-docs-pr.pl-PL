@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0f499a08288735d5f0d75e7111ec0b6360908a8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b467d87f16900375ca2db2f8478bf001780c9059
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664529"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130346"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
@@ -323,12 +323,12 @@ Pobierz pakiet dołączania z portalu Microsoft 365 Defender.
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
 
 ## <a name="client-configuration"></a>Konfiguracja klienta
 
-1. Skopiuj MicrosoftDefenderATPOnboardingLinuxServer.py na urządzenie docelowe.
+1. Skopiuj MicrosoftDefenderATPOnboardingLinuxServer.sh na urządzenie docelowe.
 
     > [!NOTE]
     > Początkowo urządzenie klienckie nie jest skojarzone z organizacją, a atrybut *orgId* jest pusty.
@@ -337,21 +337,10 @@ Pobierz pakiet dołączania z portalu Microsoft 365 Defender.
     mdatp health --field org_id
     ```
 
-2. Uruchom MicrosoftDefenderATPOnboardingLinuxServer.py.
-
-    > [!NOTE]
-    > Aby uruchomić to polecenie, musisz mieć `python`  lub `python3` zainstalować na urządzeniu w zależności od wersji i disto. W razie potrzeby zobacz [Instrukcje krok po kroku dotyczące instalowania języka Python w systemie Linux](https://opensource.com/article/20/4/install-python-linux).
-    
-    Jeśli używasz systemu RHEL 8.x lub Ubuntu 20.04 lub nowszego, musisz użyć polecenia `python3`.
+2. Uruchom MicrosoftDefenderATPOnboardingLinuxServer.sh.
 
     ```bash
-    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
-
-    W pozostałych dystrybucjach i wersjach należy użyć polecenia `python`.
-    
-    ```bash
-    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
+    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
     
 3. Sprawdź, czy urządzenie jest teraz skojarzone z Twoją organizacją i zgłosi prawidłowy identyfikator organizacji:

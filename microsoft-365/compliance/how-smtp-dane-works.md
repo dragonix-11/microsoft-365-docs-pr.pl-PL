@@ -1,5 +1,5 @@
 ---
-title: Jak działa uwierzytelnianie oparte na usłudze DNS SMTP dla jednostek nazwanych (DANE) w celu zabezpieczenia komunikacji za pośrednictwem poczty e-mail
+title: Jak oparte na usłudze SMTP uwierzytelnianie oparte na systemie DNS jednostek nazwanych (DANE) zabezpiecza komunikację za pośrednictwem poczty e-mail
 f1.keywords:
 - NOCSH
 ms.author: v-mathavale
@@ -14,16 +14,20 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Dowiedz się, jak oparte na usłudze SMTP uwierzytelnianie dns jednostek nazwanych (DANE) działa w celu zabezpieczenia komunikacji poczty e-mail między serwerami poczty.
-ms.openlocfilehash: b5f9337457556dda53b5b2f982480a4c2501fcc9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: fa982671aebb7c857c1c55af027d10437091e0dd
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782858"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131025"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Jak działa uwierzytelnianie oparte na usłudze DNS SMTP dla jednostek nazwanych (DANE)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Protokół SMTP jest głównym protokołem używanym do przesyłania komunikatów między serwerami poczty i domyślnie nie jest bezpieczny. Protokół Transport Layer Security (TLS) został wprowadzony wiele lat temu w celu obsługi szyfrowanej transmisji komunikatów za pośrednictwem protokołu SMTP. Jest to powszechnie używane oportunistycznie, a nie jako wymóg, pozostawiając dużo ruchu poczty e-mail w postaci zwykłego tekstu, podatne na przechwycenie przez nikczemnych aktorów. Ponadto protokół SMTP określa adresy IP serwerów docelowych za pośrednictwem publicznej infrastruktury DNS, która jest podatna na fałszowanie i ataki typu man-in-the-middle (MITM). Doprowadziło to do utworzenia wielu nowych standardów w celu zwiększenia bezpieczeństwa wysyłania i odbierania wiadomości e-mail. Jednym z nich jest uwierzytelnianie nazwane jednostek (DANE) oparte na systemie DNS.
+  
+DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) używa obecności rekordu TLSA (Transport Layer Security Authentication) w rekordzie DNS domeny, aby zasygnalizować domenę, a jej serwery poczty obsługują DANE. Jeśli nie ma rekordu TLSA, rozpoznawanie nazw DNS dla przepływu poczty będzie działać jak zwykle bez próby sprawdzenia DANE. Rekord TLSA bezpiecznie sygnalizuje obsługę protokołu TLS i publikuje zasady DANE dla domeny. Dlatego wysyłanie serwerów poczty może pomyślnie uwierzytelnić prawidłowe serwery poczty odbiorczej przy użyciu protokołu SMTP DANE. Dzięki temu jest odporny na ataki z powodu obniżenia poziomu i mitm. Dane ma bezpośrednie zależności od serwera DNSSEC, który działa poprzez cyfrowe podpisywanie rekordów odnośników DNS przy użyciu kryptografii klucza publicznego. Testy DNSSEC są wykonywane dla cyklicznych rozpoznawania nazw DNS, serwerów DNS, które tworzą zapytania DNS dla klientów. Serwer DNSSEC zapewnia, że rekordy DNS nie są modyfikowane i są autentyczne.  
 
 DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) używa obecności rekordu TLSA (Transport Layer Security Authentication) w rekordzie DNS domeny, aby zasygnalizować domenę, a jej serwery poczty obsługują DANE. Jeśli nie ma rekordu TLSA, rozpoznawanie nazw DNS dla przepływu poczty będzie działać jak zwykle bez próby sprawdzenia DANE. Rekord TLSA bezpiecznie sygnalizuje obsługę protokołu TLS i publikuje zasady DANE dla domeny. Dlatego wysyłanie serwerów poczty może pomyślnie uwierzytelnić prawidłowe serwery poczty odbiorczej przy użyciu protokołu SMTP DANE. Dzięki temu jest odporny na ataki z powodu obniżenia poziomu i mitm. Dane ma bezpośrednie zależności od serwera DNSSEC, który działa poprzez cyfrowe podpisywanie rekordów odnośników DNS przy użyciu kryptografii klucza publicznego. Testy DNSSEC są wykonywane dla cyklicznych rozpoznawania nazw DNS, serwerów DNS, które tworzą zapytania DNS dla klientów. Serwer DNSSEC zapewnia, że rekordy DNS nie są modyfikowane i są autentyczne.
 
@@ -127,6 +131,13 @@ Obecnie istnieją cztery kody błędów dane podczas wysyłania wiadomości e-ma
 |5.7.323|tlsa-invalid: Nie można zweryfikować danych DANE w domenie.|
 |5.7.324|dnssec-invalid: domena docelowa zwróciła nieprawidłowe rekordy DNSSEC.|
 
+> [!NOTE]
+> Obecnie, gdy domena sygnalizuje obsługę protokołu DNSSEC, ale nie sprawdza dnssec, Exchange Online nie generuje błędu 4/5.7.324 dnssec-invalid. Generuje ogólny błąd DNS:
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> Aktywnie pracujemy nad rozwiązaniem tego znanego ograniczenia. Jeśli zostanie wyświetlona ta instrukcja błędu, przejdź do analizatora łączności zdalnej firmy Microsoft i wykonaj test walidacji DANE względem domeny, która wygenerowała błąd 4/5.4.312. Wyniki pokażą, czy jest to problem DNSSEC, czy inny problem z systemem DNS.
+
 ### <a name="troubleshooting-57321-starttls-not-supported"></a>Rozwiązywanie problemów z programem starttls-not-supported w wersji 5.7.321
 
 Zwykle oznacza to problem z docelowym serwerem poczty. Po otrzymaniu komunikatu:
@@ -188,6 +199,13 @@ Podczas rozwiązywania problemów mogą zostać wygenerowane poniższe kody bł�
 |4/5.7.322|certyfikat wygasł: certyfikat docelowego serwera poczty wygasł.|
 |4/5.7.323|tlsa-invalid: Nie można zweryfikować danych DANE w domenie.|
 |4/5.7.324|dnssec-invalid: domena docelowa zwróciła nieprawidłowe rekordy DNSSEC.|
+
+> [!NOTE]
+> Obecnie, gdy domena sygnalizuje obsługę protokołu DNSSEC, ale nie sprawdza dnssec, Exchange Online nie generuje błędu 4/5.7.324 dnssec-invalid. Generuje ogólny błąd DNS:
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> Aktywnie pracujemy nad rozwiązaniem tego znanego ograniczenia. Jeśli zostanie wyświetlona ta instrukcja błędu, przejdź do analizatora łączności zdalnej firmy Microsoft i wykonaj test walidacji DANE względem domeny, która wygenerowała błąd 4/5.4.312. Wyniki pokażą, czy jest to problem DNSSEC, czy inny problem z systemem DNS.
 
 ### <a name="troubleshooting-57321-starttls-not-supported"></a>Rozwiązywanie problemów z programem starttls-not-supported w wersji 5.7.321
 

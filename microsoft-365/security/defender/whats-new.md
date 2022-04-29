@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 56e22e0525324c59d2d62adaf2325edc3317ccd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0cbcc198f31497996595a9f17df9cf689c435b58
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096055"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130544"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Co nowego w usłudze Microsoft 365 Defender
 
@@ -48,6 +48,7 @@ Aktualizacje produktów i ważne powiadomienia można również uzyskać za poś
 
 ## <a name="april-2022"></a>Kwiecień 2022 r.
 - (wersja zapoznawcza) Teraz można wykonywać [akcje](advanced-hunting-take-action.md) dotyczące wiadomości e-mail bezpośrednio z wyników zapytania wyszukiwania zagrożeń. Wiadomości e-mail można przenosić do innych folderów lub trwale usuwać. 
+- (wersja zapoznawcza) Nowa [`UrlClickEvents` tabela](advanced-hunting-urlclickevents-table.md) zaawansowanego wyszukiwania zagrożeń może służyć do wyszukiwania zagrożeń, takich jak kampanie phishingowe i podejrzane linki, na podstawie informacji pochodzących z kliknięć linków Sejf w wiadomościach e-mail, Microsoft Teams i aplikacjach Office 365.
 
 ## <a name="march-2022"></a>Marzec 2022 r.
 

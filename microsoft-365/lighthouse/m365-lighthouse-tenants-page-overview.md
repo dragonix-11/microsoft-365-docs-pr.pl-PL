@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse zapoznaj się ze stroną Dzierżawy.
-ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0f25f8bb02c6957598b2b328bc7832c429ca1e7a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023288"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128379"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Omówienie strony Dzierżawy w Microsoft 365 Lighthouse
 
@@ -52,9 +52,11 @@ Lista dzierżaw umożliwia:
 
 Aby uaktywnić dzierżawę lub wyświetlić tagi i zarządzać nimi, wybierz trzy kropki (więcej akcji) obok nazwy dzierżawy. Poszczególne dzierżawy można wyświetlić, wybierając nazwę dzierżawy lub wybierając jeden z tagów przypisanych do dzierżawy.
 
+Aby uzyskać informacje na temat dodawania dzierżaw, zobacz [Dodawanie wielu dzierżaw i zarządzanie nimi na koncie Centrum partnerskiego](/partner-center/multi-tenant-account).
+
 ## <a name="tenant-status"></a>Stan dzierżawy
 
-W poniższej tabeli przedstawiono różne stany i ich znaczenie.<br><br>
+W poniższej tabeli przedstawiono różne stany i ich znaczenie. Aby uzyskać informacje na temat rozwiązywania problemów ze stanami dzierżawy klienta, zobacz [Rozwiązywanie problemów z komunikatami o błędach i problemami w Microsoft 365 Lighthouse: dołączanie dzierżawy klienta](m365-lighthouse-troubleshoot.md#customer-tenant-onboarding).<br><br>
 
 | Stan                                   | Opis                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|

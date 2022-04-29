@@ -1,7 +1,7 @@
 ---
-title: EmailPostDeliveryEvents tabela w zaawansowanym schemacie wyszukiwania
-description: Dowiedz się więcej o działaniach po dostarczeniu podjętych na Microsoft 365 e-mail w tabeli EmailPostDeliveryEvents zaawansowanego schematu wyszukiwania
-keywords: zaawansowane szukanie, schłodzenie przed zagrożeniami, Microsoft 365 Defender, microsoft 365, m365, wyszukiwanie, zapytanie, telemetria, informacje o schemacie, kusto, tabela, kolumna, typ danych, opis, EmailPostDeliveryEvents, identyfikator wiadomości sieciowej, nadawca, adresat, identyfikator załącznika, nazwa załącznika, werdykt złośliwego oprogramowania, werdykt wyłudzania informacji, liczba załączników, liczba linków, liczba adresów URL
+title: Tabela EmailPostDeliveryEvents w zaawansowanym schemacie wyszukiwania zagrożeń
+description: Dowiedz się więcej o akcjach po dostarczeniu wykonanych w Microsoft 365 wiadomościach e-mail w tabeli EmailPostDeliveryEvents zaawansowanego schematu wyszukiwania zagrożeń
+keywords: zaawansowane wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, Microsoft 365 Defender wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, dokumentacja schematu, kusto, tabela, kolumna, typ danych, opis, EmailPostDeliveryEvents, identyfikator wiadomości sieciowej, nadawca, adresat, identyfikator załącznika, nazwa załącznika, werdykt w sprawie złośliwego oprogramowania, werdykt wyłudzania informacji, liczba załączników, liczba linków, liczba adresów URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 59d611ae89aeedf386cd0dcad5939a9510f0820e
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 876b240d73613637cc2f564ce6415873b645293c
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017872"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130588"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -32,43 +32,44 @@ ms.locfileid: "63017872"
 
 **Dotyczy:**
 - Microsoft 365 Defender
+- Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-Tabela `EmailPostDeliveryEvents` w zaawansowanym [schemacie chłoń](advanced-hunting-overview.md) zawiera informacje o akcjach po dostarczeniu, które są podejmowane w wiadomościach e-mail przetwarzanych przez Microsoft 365. To odwołanie pozwala konstruować zapytania, które zwracają informacje z tej tabeli.
+Tabela `EmailPostDeliveryEvents` w zaawansowanym schemacie [wyszukiwania zagrożeń](advanced-hunting-overview.md) zawiera informacje o akcjach po dostarczeniu wykonanych w wiadomościach e-mail przetwarzanych przez Microsoft 365. To odwołanie służy do konstruowania zapytań, które zwracają informacje z tej tabeli.
 
 >[!TIP]
-> Aby uzyskać szczegółowe informacje na temat typów zdarzeń (`ActionType` wartości) obsługiwanych w tabeli, użyj wbudowanego schematu referencyjnego dostępnego w usłudze Defender dla chmury.
+> Aby uzyskać szczegółowe informacje na temat typów zdarzeń (`ActionType`wartości) obsługiwanych przez tabelę, użyj wbudowanego odwołania do schematu dostępnego w Defender dla Chmury.
 
-Aby uzyskać więcej informacji na temat poszczególnych wiadomości e-mail, [`EmailEvents`](advanced-hunting-emailevents-table.md)możesz również użyć tabel , [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md)i [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) . Aby uzyskać informacje o innych tabelach w zaawansowanym schemacie łęgowania, [zapoznaj się z zaawansowanymi informacjami na temat wyszukiwania](advanced-hunting-schema-tables.md).
+Aby uzyskać więcej informacji na temat poszczególnych wiadomości e-mail, możesz również użyć [`EmailEvents`](advanced-hunting-emailevents-table.md)tabel , [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md)i [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) . Aby uzyskać informacje na temat innych tabel w zaawansowanym schemacie wyszukiwania zagrożeń, [zobacz zaawansowane informacje dotyczące wyszukiwania zagrożeń](advanced-hunting-schema-tables.md).
 
 > [!IMPORTANT]
-> Niektóre informacje odnoszą się do wstępnie wypuszczonych produktów, które mogą zostać znacząco zmodyfikowane przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+> Niektóre informacje odnoszą się do wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
 | Nazwa kolumny | Typ danych | Opis |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Data i godzina nagrania zdarzenia |
+| `Timestamp` | `datetime` | Data i godzina zarejestrowania zdarzenia |
 | `NetworkMessageId` | `string` | Unikatowy identyfikator wiadomości e-mail wygenerowany przez Microsoft 365 |
-| `InternetMessageId` | `string` | Publiczny identyfikator wiadomości e-mail ustawiany przez wysyłający system poczty e-mail |
-| `Action` | `string` | Czynność podejmowane w encji |
-| `ActionType` | `string` | Typ działania, które wyzwoliło zdarzenie: Ręczne działania naprawcze, Phish ZAP, Malware ZAP |
-| `ActionTrigger` | `string` | Wskazuje, czy akcja została wyzwolona przez administratora (ręcznie lub za pośrednictwem zatwierdzenia oczekującej akcji automatycznej), czy przez jakiś specjalny mechanizm, taki jak ZAP lub Dynamic Delivery (Dostarczanie dynamiczne). |
+| `InternetMessageId` | `string` | Publiczny identyfikator wiadomości e-mail ustawionej przez system wysyłania wiadomości e-mail |
+| `Action` | `string` | Akcja podjęta w jednostce |
+| `ActionType` | `string` | Typ działania, które wyzwoliło zdarzenie: Ręczne korygowanie, Phish ZAP, Złośliwe oprogramowanie ZAP |
+| `ActionTrigger` | `string` | Wskazuje, czy akcja została wyzwolona przez administratora (ręcznie lub poprzez zatwierdzenie oczekującej akcji zautomatyzowanej), czy też przez specjalny mechanizm, taki jak zap lub dynamiczne dostarczanie |
 | `ActionResult` | `string` | Wynik akcji |
-| `RecipientEmailAddress` | `string` | Adres e-mail adresata lub adres e-mail odbiorcy po rozwinięciu listy dystrybucyjnej |
-| `DeliveryLocation` | `string` | Lokalizacja, w której wiadomość e-mail została dostarczona: Skrzynka odbiorcza/folder, Lokalnie/Zewnętrzne, Wiadomości-śmieci, Kwarantanna, Niepowodzenie, Upuszczenie, Elementy usunięte |
-| `ReportId` | `long` | Identyfikator zdarzenia oparty na liczniku powtarzających się. Aby zidentyfikować unikatowe zdarzenia, należy użyć tej kolumny w połączeniu z kolumnami DeviceName i Timestamp. |
-| `ThreatTypes` | `string` | Werdykt z stosu filtrowania wiadomości e-mail na temat tego, czy wiadomość e-mail zawiera złośliwe oprogramowanie, wyłudzanie informacji lub inne zagrożenia |
-| `DetectionMethods` | `string` | Metody używane do wykrywania złośliwego oprogramowania, wyłudzania informacji lub innych zagrożeń znalezionych w wiadomości e-mail |
+| `RecipientEmailAddress` | `string` | Adres e-mail odbiorcy lub adres e-mail odbiorcy po rozszerzeniu listy dystrybucyjnej |
+| `DeliveryLocation` | `string` | Lokalizacja, w której została dostarczona wiadomość e-mail: Skrzynka odbiorcza/Folder, Lokalna/Zewnętrzna, Śmieci, Kwarantanna, Niepowodzenie, Porzucone, Usunięte elementy |
+| `ReportId` | `long` | Identyfikator zdarzenia na podstawie licznika powtarzającego się. Aby zidentyfikować unikatowe zdarzenia, ta kolumna musi być używana w połączeniu z kolumnami DeviceName i Timestamp. |
+| `ThreatTypes` | `string` | Werdykt ze stosu filtrowania wiadomości e-mail dotyczący tego, czy wiadomość e-mail zawiera złośliwe oprogramowanie, wyłudzanie informacji lub inne zagrożenia |
+| `DetectionMethods` | `string` | Metody służące do wykrywania złośliwego oprogramowania, wyłudzania informacji lub innych zagrożeń znalezionych w wiadomości e-mail |
 
 ## <a name="supported-event-types"></a>Obsługiwane typy zdarzeń
-W poniższej tabeli są przechwycone zdarzenia z następującymi wartościami `ActionType` :
+Ta tabela przechwytuje zdarzenia z następującymi `ActionType` wartościami:
 
-- **Ręczne działania naprawcze —** administrator ręcznie podjęł działania dotyczące wiadomości e-mail po jej dostarczyć do skrzynki pocztowej użytkownika. Dotyczy to czynności prowadzonych ręcznie za pośrednictwem [Eksploratora](../office-365-security/threat-explorer.md) zagrożeń lub zatwierdzeń zautomatyzowanych [akcji badania i odpowiedzi (AIR](m365d-autoir-actions.md)).
-- **Phish ZAP** — [akcja automatycznego przeczyszczania bez godzin (ZAP)](../office-365-security/zero-hour-auto-purge.md) miała miejsce w wiadomości e-mail służącej do wyłudzania informacji po dostarczeniu.
-- **Malware ZAP** — akcja automatycznego przeczyszczania bez godzin (ZAP) zajęła się wiadomością e-mail, która zawierała złośliwe oprogramowanie po dostarczeniu.
+- **Ręczne korygowanie** — administrator ręcznie podjął akcję w wiadomości e-mail po dostarczeniu jej do skrzynki pocztowej użytkownika. Obejmuje to akcje wykonywane ręcznie za pośrednictwem [Eksploratora zagrożeń](../office-365-security/threat-explorer.md) lub zatwierdzenia [zautomatyzowanych akcji badania i reagowania (AIR](m365d-autoir-actions.md)).
+- **Phish ZAP** — [automatyczne przeczyszczanie o zerowej godzinie (ZAP)](../office-365-security/zero-hour-auto-purge.md) podjęło działania w wiadomości e-mail wyłudzającej informacje po dostarczeniu.
+- **Złośliwe oprogramowanie ZAP** — zerogodzinne automatyczne przeczyszczanie (ZAP) podjęło działania w wiadomości e-mail zawierającej złośliwe oprogramowanie po dostarczeniu.
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
+- [Omówienie zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
 - [Używanie zapytań udostępnionych](advanced-hunting-shared-queries.md)
-- [Przeszukaj urządzenia, wiadomości e-mail, aplikacje i tożsamości](advanced-hunting-query-emails-devices.md)
-- [Opis schematu](advanced-hunting-schema-tables.md)
-- [Stosowanie najlepszych rozwiązań kwerend](advanced-hunting-best-practices.md)
+- [Wyszukiwanie zagrożeń na urządzeniach, w wiadomościach e-mail, aplikacjach i tożsamościach](advanced-hunting-query-emails-devices.md)
+- [Analiza schematu](advanced-hunting-schema-tables.md)
+- [Stosowanie najlepszych rozwiązań dla zapytań](advanced-hunting-best-practices.md)

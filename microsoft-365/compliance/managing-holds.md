@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 04/27/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -21,12 +21,12 @@ description: Dowiedz się, jak umieszczać blokady na opiekunach i ich źródła
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: c2213c34e111989f0de6fccf886f44dd0f45841b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bc69481c8d59408ce22c238fc80d8ceb67685cf9
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098499"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128395"
 ---
 # <a name="manage-holds-in-ediscovery-premium"></a>Zarządzanie blokadami zbierania elektronicznych materiałów dowodowych (Premium)
 
@@ -46,7 +46,7 @@ Aby wyświetlić zasady blokady opiekuna:
 
 3. Przejdź do karty **Blokady** i kliknij pozycję **KustoszHold\<HoldId>**.
 
-4. Na stronie wysuwanej możesz zobaczyć statystyki blokady dla zasad. Możesz również wykonywać akcje, takie jak stosowanie zapytania do blokady opartej na opiekunie. Aby uzyskać więcej informacji na temat tworzenia zapytania blokady i używania [warunków, zobacz Zapytania słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
+4. Na stronie wysuwanej można wykonywać akcje, takie jak stosowanie zapytania do blokady opartej na opiekunie. Aby uzyskać więcej informacji na temat tworzenia zapytania blokady i używania [warunków, zobacz Zapytania słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
 
 ## <a name="manage-non-custodial-holds"></a>Zarządzanie blokadami bez opieki
 
@@ -105,24 +105,6 @@ Aby utworzyć blokadę bez nadzoru dla sprawy zbierania elektronicznych materia�
 
 > [!NOTE]
 > Jeśli adres SMTP użytkownika zmieni się po wstrzymaniu skrzynki pocztowej użytkownika, skrzynka pocztowa pozostanie wstrzymana. Aby użyć nowego adresu SMTP do przechowywania, utwórz nowe blokady.
-
-## <a name="view-hold-statistics"></a>Wyświetlanie statystyk archiwum
-
-Po pewnym czasie informacje o nowym blokadzie są wyświetlane w okienku szczegółów na karcie **Blokady** dla wybranego blokady. Informacje te obejmują liczbę skrzynek pocztowych i witryn, które zostały wstrzymane, oraz statystyki dotyczące zawartości, która została wstrzymana, takie jak całkowita liczba i rozmiar elementów umieszczonych w blokadzie oraz czas ostatniego obliczenia statystyk blokady. Te statystyki przechowywania pomagają określić, ile zawartości jest związanych ze sprawą zbierania elektronicznych materiałów dowodowych.
-
-Należy pamiętać o następujących kwestiach dotyczących statystyk archiwum:
-
-- Całkowita liczba wstrzymanych elementów wskazuje liczbę elementów ze wszystkich źródeł zawartości, które są wstrzymane. Jeśli utworzono blokadę opartą na zapytaniach, ta statystyka wskazuje liczbę elementów zgodnych z zapytaniem.
-  
-- Liczba wstrzymanych elementów obejmuje również elementy bez certyfikatu znalezione w lokalizacjach zawartości. Jeśli utworzysz blokadę opartą na zapytaniach, wszystkie elementy niezawłaszczone w lokalizacjach zawartości zostaną wstrzymane. Obejmuje to elementy niezainicjowane, które nie spełniają kryteriów wyszukiwania blokady opartej na zapytaniach i elementów niewyświetlonych, które mogą wykraczać poza warunek zakresu dat. Różni się to od tego, co dzieje się po uruchomieniu wyszukiwania zawartości, w którym niezainicjowane elementy, które nie są zgodne z zapytaniem wyszukiwania lub są wykluczone przez warunek zakresu dat, nie są uwzględniane w wynikach wyszukiwania. Aby uzyskać więcej informacji na temat elementów niezaindeksowanych, zobacz [Częściowo zaindeksowane elementy w wyszukiwaniu zawartości w Office 365](partially-indexed-items-in-content-search.md).
-
-- Najnowsze statystyki blokady można uzyskać, klikając pozycję Aktualizuj statystyki, aby ponownie uruchomić oszacowanie wyszukiwania, które oblicza bieżącą liczbę wstrzymanych elementów.
-
-- W razie potrzeby kliknij przycisk Odśwież na pasku narzędzi, aby zaktualizować statystyki blokady w okienku szczegółów.
-
-- Jest to normalne, że liczba wstrzymanych elementów rośnie wraz z upływem czasu, ponieważ użytkownicy, których skrzynka pocztowa lub witryna jest wstrzymana, zazwyczaj wysyłają lub odbierają nową wiadomość e-mail oraz tworzą nowe SharePoint i OneDrive dla Firm dokumentów.
-
-- Jeśli witryna SharePoint lub konto OneDrive zostaną przeniesione do innego regionu w środowisku z wieloma obszarami geograficznymi, statystyki dla tej witryny nie zostaną uwzględnione w statystykach blokady. Jednak zawartość witryny nadal będzie wstrzymana. Ponadto jeśli witryna zostanie przeniesiona do innego regionu, adres URL wyświetlany w blokadzie nie zostanie zaktualizowany. Musisz edytować blokadę i zaktualizować adres URL.
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Umieszczanie blokady w grupach Microsoft Teams i Office 365
 

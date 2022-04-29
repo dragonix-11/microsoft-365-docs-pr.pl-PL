@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak wdrażać Microsoft 365 Lighthouse planach bazowych.
-ms.openlocfilehash: 2649094f36903e5607fee28862fa0af683d0986e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 550ded1383cb402da0943bdfeb6707cbd12b02d1
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022872"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131135"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Wdrażanie Microsoft 365 Lighthouse punktów odniesienia
 
@@ -33,7 +33,7 @@ Upewnij się, że Ty i Twoi dzierżawcy klienta spełniacie wymagania wymienione
 
 ## <a name="view-a-deployment-plan"></a>Wyświetlanie planu wdrożenia
 
-1. Na lewej stronie nawigacji wybierz pozycję **Dzierżawy**.
+1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Dzierżawy**.
 
 2. Z listy dzierżawy wybierz dzierżawę, którą chcesz wyświetlić.
 
@@ -147,7 +147,7 @@ Wdrożenie kroku wdrożenia w wystąpieniach, gdy w dzierżawie istnieją równe
 
 Dodatkowe ustawienia są dostępne dla Twojej świadomości, ale nie wymagają podjęcia działań.
 
-Aby uzyskać więcej informacji na temat zarządzania konfliktami zasad, zobacz [dokumentację dostępu warunkowego usługi Azure AD](/azure/active-directory/conditional-access/).
+Aby uzyskać więcej informacji na temat zarządzania konfliktami zasad, zobacz [Azure AD dokumentację dostępu warunkowego](/azure/active-directory/conditional-access/).
 
 ## <a name="update-deployment-step-status"></a>Stan kroku wdrażania aktualizacji
 
