@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak przeprowadzać inspekcję działań użytkowników i administratorów w organizacji Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cc70060872c9f416120e859673ad9a3799322048
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4dd26229e5ca29344524238903dd2e972ac09ad7
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100880"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145360"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Rozwiązania inspekcji w usłudze Microsoft Purview
 
@@ -53,7 +53,7 @@ Usługa Microsoft Purview Audit (Standard) zapewnia możliwość rejestrowania i
   - [Dokumentacja poleceń cmdlet Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
   - [Przeszukaj dziennik inspekcji za pomocą skryptu programu PowerShell](audit-log-search-script.md)
 
-- **Eksportuj rekordy inspekcji do pliku CSV**. Po uruchomieniu narzędzia do wyszukiwania dzienników inspekcji w centrum zgodności można wyeksportować rekordy inspekcji zwrócone przez wyszukiwanie do pliku CSV. Dzięki temu można używać Microsoft Excel sortowania i filtrowania różnych właściwości rekordu inspekcji. Możesz również użyć funkcji przekształcania Excel Power Query, aby podzielić każdą właściwość w obiekcie AuditData JSON na własną kolumnę. Umożliwia to efektywne wyświetlanie i porównywanie podobnych danych dla różnych zdarzeń. Aby uzyskać więcej informacji, zobacz [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md).
+- **Eksportuj rekordy inspekcji do pliku CSV**. Po uruchomieniu narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności można wyeksportować rekordy inspekcji zwrócone przez wyszukiwanie do pliku CSV. Dzięki temu można używać Microsoft Excel sortowania i filtrowania różnych właściwości rekordu inspekcji. Możesz również użyć funkcji przekształcania Excel Power Query, aby podzielić każdą właściwość w obiekcie AuditData JSON na własną kolumnę. Umożliwia to efektywne wyświetlanie i porównywanie podobnych danych dla różnych zdarzeń. Aby uzyskać więcej informacji, zobacz [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md).
 
 - **Dostęp do dzienników inspekcji za pośrednictwem interfejsu API działania zarządzania Office 365**. Trzecią metodą uzyskiwania dostępu do rekordów inspekcji i pobierania ich jest użycie interfejsu API działania zarządzania Office 365. Umożliwia to organizacjom przechowywanie danych inspekcji przez dłuższy czas niż domyślne 90 dni i umożliwia im importowanie danych inspekcji do rozwiązania SIEM. Aby uzyskać więcej informacji, zobacz [dokumentację interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
@@ -90,7 +90,7 @@ W poniższej tabeli porównano kluczowe możliwości dostępne w obszarze Inspek
 |10-letni okres przechowywania dziennika inspekcji <sup>2</sup>||![Obsługiwane](../media/check-mark.png)|
 |Zasady przechowywania dzienników inspekcji||![Obsługiwane](../media/check-mark.png)|
 |Zdarzenia o wysokiej wartości, kluczowe||![Obsługiwane](../media/check-mark.png)|
-||||
+
 > [!NOTE]
 > <sup>1</sup> Inspekcja (Premium) obejmuje wyższy dostęp do interfejsu API działania zarządzania Office 365, który zapewnia szybszy dostęp do danych inspekcji.<br/><sup>2</sup> Oprócz wymaganej licencji na inspekcję (Premium) (opisanej w następnej sekcji), użytkownikowi musi zostać przypisany 10-letni dodatek Przechowywania dzienników inspekcji w celu zachowania rekordów inspekcji przez 10 lat.
 
@@ -100,14 +100,14 @@ W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji
 
 ### <a name="audit-standard"></a>Usługa Inspekcja (wersja Standardowa)
 
-- subskrypcja Microsoft 365 Business Basic
-- subskrypcja Aplikacje Microsoft 365 for Business
-- subskrypcja Microsoft 365 Enterprise E3
-- Microsoft 365 Business Premium
-- subskrypcja Microsoft 365 Education A3
-- subskrypcja Microsoft 365 Government G3
-- subskrypcja Microsoft 365 Government G1
-- subskrypcja Microsoft 365 Frontline F1 lub F3 lub dodatek F5 Security
+- Subskrypcja usługi Microsoft Purview Business Basic
+- Subskrypcja usługi Microsoft Purview Apps dla Firm
+- Subskrypcja usługi Microsoft Purview Enterprise E3
+- Microsoft Purview Business Premium
+- Subskrypcja usługi Microsoft Purview Education A3
+- Subskrypcja usługi Microsoft Purview Government G3
+- Subskrypcja usługi Microsoft Purview Government G1
+- Subskrypcja usługi Microsoft Purview Frontline F1 lub F3 lub dodatek F5 Security
 - subskrypcja Office 365 Enterprise E3
 - subskrypcja Office 365 Enterprise E1
 - subskrypcja Office 365 Education A1
@@ -158,16 +158,25 @@ Jeśli Twoja organizacja ma subskrypcję obsługą funkcji Inspekcja (Premium), 
   
    - Włączenie planu aplikacji/usługi Inspekcja (Premium) musi być przeznaczone dla tych użytkowników.
   
-   - Włączanie inspekcji kluczowych zdarzeń, a następnie włączanie planu aplikacji/usługi inspekcji zaawansowanej dla tych użytkowników.
+   - Włączanie inspekcji kluczowych zdarzeń, a następnie włączanie planu inspekcji (Premium)ing app/service dla tych użytkowników.
 
 2. Włącz rejestrowanie zdarzeń inspekcji (Premium), gdy użytkownicy wykonują wyszukiwania w Exchange Online i SharePoint Online.
 
-3. Skonfiguruj zasady przechowywania dzienników inspekcji. Oprócz domyślnych zasad, które zachowują rekordy inspekcji Exchange, SharePoint i Azure AD przez jeden rok, można utworzyć dodatkowe zasady przechowywania dzienników inspekcji, aby spełnić wymagania zespołów ds. operacji zabezpieczeń, IT i zgodności organizacji.
+3. Skonfiguruj zasady przechowywania dzienników inspekcji. Oprócz domyślnych zasad, które zachowują Exchange, SharePoint i Azure AD rekordów inspekcji przez jeden rok, można utworzyć dodatkowe zasady przechowywania dzienników inspekcji, aby spełnić wymagania zespołów ds. operacji zabezpieczeń, IT i zgodności organizacji.
 
 4. Wyszukaj kluczowe zdarzenia inspekcji (Premium) i inne działania podczas prowadzenia dochodzeń kryminalistycznych. Po wykonaniu kroków 1 i 2 możesz przeszukać dziennik inspekcji pod kątem zdarzeń inspekcji (Premium) i innych działań podczas badania kryminalistycznego naruszonego konta i innych typów badań zabezpieczeń lub zgodności.
 
 Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Konfigurowanie inspekcji (Premium)](set-up-advanced-audit.md).
 
+## <a name="encrypt-audit-records-using-customer-key"></a>Szyfrowanie rekordów inspekcji przy użyciu klucza klienta
+
+Możesz włączyć szyfrowanie klucza klienta dla rekordów inspekcji. Inspekcja opiera się na [szyfrowaniu usługi przy użyciu klucza klienta](customer-key-overview.md) w celu szyfrowania poufnych informacji w danych inspekcji organizacji. Wdrożenie klucza klienta zapewnia dodatkową ochronę, uniemożliwiając nieautoryzowanym systemom lub pracownikom centrum danych firmy Microsoft wyświetlanie danych inspekcji w potoku inspekcji i spoczynku. Szyfrowanie danych inspekcji przy użyciu klucza klienta ułatwia również spełnienie zobowiązań regulacyjnych lub dotyczących zgodności, ponieważ organizacja udostępnia i kontroluje klucze szyfrowania.
+
+Aby zaimplementować klucz klienta do inspekcji, należy utworzyć zasady szyfrowania danych o wielu obciążeniach (DEP), które definiują hierarchię szyfrowania. Aby uzyskać szczegółowe instrukcje krok po kroku, zobacz [Konfigurowanie klucza klienta](customer-key-set-up.md).
+
+> [!NOTE]
+> Nie wszystkie rekordy inspekcji w organizacji są szyfrowane. Usługa Microsoft Purview, która generuje określone rekordy inspekcji dla działań w tej usłudze, określa, czy rekord inspekcji jest szyfrowany, czy nie.
+
 ## <a name="training"></a>Szkolenia
 
-Szkolenie zespołu ds. operacji zabezpieczeń, administratorów IT i zespołu badaczy zgodności w zakresie podstaw inspekcji (standard) i inspekcji (Premium) może pomóc organizacji szybciej rozpocząć pracę przy użyciu inspekcji, aby pomóc w badaniu. Microsoft 365 udostępnia następujący zasób ułatwiający tym użytkownikom w organizacji rozpoczęcie inspekcji: [Opisz możliwości zbierania elektronicznych materiałów dowodowych i inspekcji Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Szkolenie zespołu ds. operacji zabezpieczeń, administratorów IT i zespołu badaczy zgodności w zakresie podstaw inspekcji (standard) i inspekcji (Premium) może pomóc organizacji szybciej rozpocząć pracę przy użyciu inspekcji, aby pomóc w badaniu. Usługa Microsoft Purview udostępnia następujący zasób, który ułatwia tym użytkownikom w organizacji rozpoczęcie inspekcji: [Opis możliwości zbierania elektronicznych materiałów dowodowych i inspekcji w usłudze Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

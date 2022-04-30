@@ -1,5 +1,5 @@
 ---
-title: Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach w celu zachowania lub usunięcia zawartości
+title: Publikowanie i stosowanie etykiet przechowywania
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,92 +17,94 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Instrukcje publikowania etykiet przechowywania w celu ich stosowania w aplikacjach w celu zachowania tego, co jest potrzebne, i usunięcia tego, co nie jest potrzebne.
-ms.openlocfilehash: a1d8a32a9190ddb645160fc475fb72a9d1dcd72e
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+description: Instrukcje publikowania etykiet przechowywania, dzięki czemu można je zastosować w aplikacjach, aby zachować to, czego potrzebujesz, i usunąć to, czego nie potrzebujesz.
+ms.openlocfilehash: c2088afd895b47945bea056c940e564b4dd770fb
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638404"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145388"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Ten scenariusz jest obsługiwany we wszystkich konfiguracjach etykiet przechowywania, w tym w [rekordach prawnych](records-management.md#records).
+> Ten scenariusz jest obsługiwany dla wszystkich konfiguracji etykiet przechowywania, w tym [rekordów regulacyjnych](records-management.md#records).
 
-Poniższe informacje ułatwiają publikowanie etykiet [przechowywania](retention.md) i stosowanie ich do dokumentów oraz wiadomości e-mail.
+Poniższe informacje ułatwiają [publikowanie etykiet przechowywania](retention.md), a następnie stosowanie ich do dokumentów i wiadomości e-mail.
 
-Etykiety przechowywania ułatwiają zachowanie tego, czego potrzebujesz, i usuwanie elementów, których nie ma na poziomie elementu (dokumentu lub wiadomości e-mail). Są one również używane do deklarowania elementu jako rekordu w [ramach rozwiązania do](records-management.md) zarządzania rekordami dla Twoich Microsoft 365 danych.
+Etykiety przechowywania pomagają zachować potrzebne elementy i usuwać elementy na poziomie elementu (dokument lub wiadomość e-mail). Są one również używane do deklarowania elementu jako rekordu w ramach rozwiązania [do zarządzania rekordami](records-management.md) dla danych Microsoft 365.
 
-Tworzenie etykiet przechowywania dla osób w organizacji w celu klasyfikowania zawartości jest procesem dwuetapowym: 
+Udostępnianie etykiet przechowywania osobom w organizacji w celu klasyfikowania zawartości jest procesem dwuetapowym: 
 
 1. Utwórz etykiety przechowywania.
 
-2. Publikowanie etykiet przechowywania przy użyciu zasad etykiet przechowywania.
+2. Opublikuj etykiety przechowywania przy użyciu zasad etykiet przechowywania.
   
 ![Diagram ról i zadań dla etykiet.](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
 
-Skorzystaj z poniższych instrukcji, aby wykonać dwa kroki administracyjne.
+Wykonaj poniższe instrukcje dla dwóch kroków administratora.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Administrator globalny w Twojej organizacji ma pełne uprawnienia do tworzenia i edytowania etykiet przechowywania oraz ich zasad. Jeśli nie logujesz się jako administrator globalny, zobacz informacje o uprawnieniach do zarządzania [](get-started-with-records-management.md#permissions) rekordami lub [informacjami w zależności](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels) od używasz rozwiązania.
+Administrator globalny organizacji ma pełne uprawnienia do tworzenia i edytowania etykiet przechowywania oraz ich zasad. Jeśli nie logujesz się jako administrator globalny, zobacz informacje o uprawnieniach do [zarządzania rekordami](get-started-with-records-management.md#permissions) lub [zarządzania cyklem życia danych](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), w zależności od używanego rozwiązania.
 
-Upewnij się, [że utworzono etykiety przechowywania,](file-plan-manager.md#create-retention-labels) które chcesz zastosować do elementów.
+Upewnij się, że [utworzono etykiety przechowywania](file-plan-manager.md#create-retention-labels) , które chcesz zastosować do elementów.
 
 ## <a name="how-to-publish-retention-labels"></a>Jak publikować etykiety przechowywania
 
-Przed utworzeniem zasad etykiet przechowywania zdecyduj, czy będą one **adaptacyjne** , czy **statyczne**. Aby uzyskać więcej informacji, zobacz [Adaptacyjne lub statyczne zakresy zasad przechowywania](retention.md#adaptive-or-static-policy-scopes-for-retention). Jeśli zdecydujesz się na korzystanie z adaptacyjnych zasad, musisz utworzyć co najmniej jeden adaptacyjny zakres przed utworzeniem zasad etykiet przechowywania, a następnie wybrać je podczas tworzenia procesu tworzenia zasad etykiet przechowywania. Aby uzyskać instrukcje, [zobacz Informacje o konfiguracji dotyczące adaptacyjnych zakresów](retention-settings.md#configuration-information-for-adaptive-scopes).
+Przed utworzeniem zasad etykiet przechowywania zdecyduj, czy będą **to zasady adaptacyjne** , czy **statyczne**. Aby uzyskać więcej informacji, zobacz [Adaptacyjne lub statyczne zakresy zasad przechowywania](retention.md#adaptive-or-static-policy-scopes-for-retention). Jeśli zdecydujesz się na korzystanie z zasad adaptacyjnych, musisz utworzyć co najmniej jeden zakres adaptacyjny przed utworzeniem zasad etykiet przechowywania, a następnie wybrać je podczas procesu tworzenia zasad etykiet przechowywania. Aby uzyskać instrukcje, zobacz [Informacje o konfiguracji dla zakresów adaptacyjnych](retention-settings.md#configuration-information-for-adaptive-scopes).
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> przejdź do jednej z następujących lokalizacji:
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> przejdź do jednej z następujących lokalizacji:
     
     - Jeśli używasz zarządzania rekordami:
-        - **Rozwiązania** >  **Karta Zasady > >** **zarządzania rekordami i** > **Publikowanie etykiet**
+        - **Rozwiązania** >  **Karta Zasady zarządzania rekordami** > > **Etykiety** > **Publikowanie etykiet**
     
-    - W przypadku korzystania z zarządzania informacjami:
-        - **Rozwiązania** >  **Zarządzanie informacjami** >  **Karta Zasady etykiet** > **Publikowanie etykiet**
+    - Jeśli używasz zarządzania cyklem życia danych:
+        - **Rozwiązania** >  **Zarządzanie magazynem** >  życia danych **Karta Zasady etykiet** > **Publikowanie etykiet**
     
-    Nie widzisz swojego rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**. 
+    Nie widzisz rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**. 
 
-2. Postępuj zgodnie z monitami, aby utworzyć zasady etykiet przechowywania. Należy zachować ostrożność przy wybieranej nazwie zasady, ponieważ nie można jej zmienić po zapisaniu zasad.
+2. Postępuj zgodnie z monitami, aby utworzyć zasady etykiet przechowywania. Zachowaj ostrożność, jaką nazwę wybierzesz dla zasad, ponieważ nie można jej zmienić po zapisaniu zasad.
 
 3. Użyj linku, aby wybrać etykiety przechowywania do opublikowania, a następnie wybierz pozycję **Dalej**.
 
-4. W przypadku **strony Wybierz typ zasad przechowywania** do utworzenia wybierz pozycję **Adaptacyjny** lub Statyczny **, w** zależności od wyboru dokonanego w [instrukcjach Przed rozpoczęciem](#before-you-begin) . Jeśli nie masz jeszcze utworzonych zakresów adaptacyjnych, możesz wybrać pozycję  Adaptacyjny, ale ponieważ nie będzie żadnych adaptacyjnych zakresów do wyboru, nie możesz zakończyć działania kreatora za pomocą tej opcji.
+4. Na stronie **Wybierz typ zasad przechowywania do utworzenia** wybierz pozycję **Adaptacyjne** lub **Statyczne**, w zależności od wyboru dokonanego z instrukcji [Przed rozpoczęciem](#before-you-begin) . Jeśli nie utworzono jeszcze zakresów adaptacyjnych, możesz wybrać opcję **Adaptive,ale** ponieważ nie będzie żadnych zakresów adaptacyjnych do wybrania, nie będzie można ukończyć pracy kreatora z tą opcją.
 
 5. W zależności od wybranego zakresu:
     
-    - Jeśli wybrano **adaptacyjny**: Na  stronie Wybieranie zakresów i lokalizacji adaptacyjnych zasad wybierz pozycję  Dodaj zakresy i wybierz co najmniej jeden z utworzonych adaptacyjnych zakresów. Następnie wybierz jedną lub więcej lokalizacji. Lokalizacje, które można wybrać, zależą od [dodanych typów](retention-settings.md#configuration-information-for-adaptive-scopes) zakresów. Jeśli na przykład dodano tylko typ zakresu **użytkownika, będzie** można wybrać adres e-mail Exchange ale  nie SharePoint **witryn.** 
+    - Jeśli wybrano pozycję **Adaptacyjne**: na stronie **Wybieranie zakresów i lokalizacji zasad adaptacyjnych** wybierz pozycję **Dodaj zakresy** i wybierz co najmniej jeden utworzony zakres adaptacyjny. Następnie wybierz co najmniej jedną lokalizację. Lokalizacje, które można wybrać, zależą od [dodanych typów zakresów](retention-settings.md#configuration-information-for-adaptive-scopes) . Jeśli na przykład dodano tylko typ zakresu **Użytkownika**, będzie można wybrać **Exchange wiadomości e-mail**, ale nie **SharePoint witryn**. 
     
-    - Jeśli wybrano **pozycję Statyczny**: **Na stronie** Wybieranie lokalizacji włącz lub wyłącz dowolną z tych lokalizacji. Dla każdej lokalizacji możesz pozostawić ją domyślną, aby zastosować zasady do całej [lokalizacji, lub](retention-settings.md#a-policy-that-applies-to-entire-locations) określić [uwzględniania i wykluczania](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
+    - Jeśli **wybrano pozycję Statyczne**: na stronie **Wybieranie lokalizacji** włącz lub wyłącz dowolną lokalizację. Dla każdej lokalizacji można pozostawić ją domyślną, aby [zastosować zasady do całej lokalizacji](retention-settings.md#a-policy-that-applies-to-entire-locations) lub [określić opcje dołączania i wykluczania](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
     
-    Aby uzyskać informacje o dostępnych lokalizacjach, zobacz [Lokalizacje](retention-settings.md#locations).
+    Aby uzyskać informacje o wyborze lokalizacji, zobacz [Lokalizacje](retention-settings.md#locations).
 
-Aby edytować istniejące zasady etykiet przechowywania (typ zasad to **Publikuj), zaznacz** je, a następnie wybierz opcję Edytuj,  aby uruchomić **konfigurację Edytuj zasady** przechowywania.
+Aby edytować istniejące zasady etykiet przechowywania (typ zasad to **Publikuj**), wybierz je, a następnie wybierz opcję **Edytuj** , aby uruchomić konfigurację **zasad przechowywania edycji** .
 
-## <a name="when-retention-labels-become-available-to-apply"></a>Gdy etykiety przechowywania stają się dostępne do zastosowania
+## <a name="when-retention-labels-become-available-to-apply"></a>Gdy etykiety przechowywania staną się dostępne do zastosowania
 
-Jeśli publikujesz etykiety przechowywania SharePoint lub OneDrive, etykiety te są zazwyczaj wyświetlane użytkownikom do wyboru w ciągu jednego dnia. Jednak może to być do siedmiu dni. 
+Jeśli publikujesz etykiety przechowywania w SharePoint lub OneDrive, te etykiety są zwykle wyświetlane, aby użytkownicy wybierali je w ciągu jednego dnia. Jednak poczekaj do siedmiu dni. 
 
-Jeśli etykiety przechowywania są publikowane Exchange, może upłynieć do siedmiu dni, aż etykiety przechowywania będą widoczne dla użytkowników, a skrzynka pocztowa musi zawierać co najmniej 10 MB danych.
+Jeśli publikujesz etykiety przechowywania w Exchange, wyświetlenie etykiet przechowywania dla użytkowników może potrwać do siedmiu dni, a skrzynka pocztowa musi zawierać co najmniej 10 MB danych.
 
-![Diagram przedstawiający efekt opublikowania etykiet.](../media/retention-labels-published-timings.png)
+![Diagram przedstawiający, kiedy opublikowane etykiety wchodzą w życie.](../media/retention-labels-published-timings.png)
 
-Jeśli etykiety nie są wyświetlane po upływie siedmiu dni, sprawdź **stan** zasad etykiet, wybierając je na stronie Zasady etykiet w  Centrum zgodności. Jeśli zobaczysz **(Błąd)** zawarty w stanie i w szczegółach lokalizacji zostanie wyświetlony komunikat informujący, że wdrożenie zasad trwa dłużej, niż oczekiwano, lub próby ponownego wdrożenia zasad, spróbuj uruchomić ponownie polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell w celu ponownego wypróbowania rozkładu zasad:
+Jeśli etykiety nie są wyświetlane po siedmiu dniach, sprawdź **stan** zasad etykiety, wybierając je na stronie **Zasady etykiet** w portalu zgodności usługi Microsoft Purview. Jeśli zobaczysz **(błąd)** uwzględniony w stanie i w szczegółach lokalizacji zobaczysz komunikat, że wdrożenie zasad trwa dłużej niż oczekiwano lub spróbuj ponownie wdrożyć zasady, spróbuj uruchomić polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) , aby ponowić próbę dystrybucji zasad:
 
-1. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Uruchom jedno z następujących poleceń:
     
-    - W przypadku lokalizacji zasad Teams **wiadomości kanału** prywatnego, wiadomości **Yammer użytkowników** **i Yammer wiadomości społeczności**:
+    - W przypadku lokalizacji zasad **Teams wiadomości kanału prywatnego** **Yammer komunikaty użytkowników** i **Yammer komunikaty społeczności**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - W przypadku wszystkich innych lokalizacji zasad, takich **jak Exchange-mail****, witryny** SharePoint, Teams **wiadomości w kanałach itp.**:
+    - W przypadku wszystkich innych lokalizacji zasad, takich jak **Exchange poczty e-mail**, **witryn SharePoint**, **wiadomości kanałów Teams** itp.:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -110,9 +112,9 @@ Jeśli etykiety nie są wyświetlane po upływie siedmiu dni, sprawdź **stan** 
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Jak sprawdzić stan etykiet przechowywania opublikowanych w Exchange
 
-W Exchange Online przechowywania są udostępniane użytkownikom końcowych w procesie, który jest uruchamiany co siedem dni. Za pomocą programu PowerShell można sprawdzić, kiedy ten proces został uruchomiony po raz ostatni, i z tego powodu określić, kiedy zostanie uruchomiony ponownie.
+W Exchange Online etykiety przechowywania są udostępniane użytkownikom końcowym przez proces uruchamiany co siedem dni. Za pomocą programu PowerShell można zobaczyć, kiedy ten proces został ostatnio uruchomiony i w związku z tym określić, kiedy zostanie uruchomiony ponownie.
   
-1. [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Uruchom te polecenia.
     

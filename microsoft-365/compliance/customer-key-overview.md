@@ -1,5 +1,5 @@
 ---
-title: Szyfrowanie usługi przy użyciu klucza klienta
+title: Szyfrowanie usługi przy użyciu klucza klienta usługi Microsoft Purview
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,15 +14,17 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: W tym artykule dowiesz się, jak szyfrowanie usługi działa z kluczem klienta w Microsoft 365.
-ms.openlocfilehash: 65098994a6883fdadd3106b74b25a2251239fb3a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: W tym artykule dowiesz się, jak szyfrowanie usług działa z kluczem klienta usługi Microsoft Purview.
+ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761092"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145217"
 ---
-# <a name="service-encryption-with-customer-key"></a>Szyfrowanie usługi przy użyciu klucza klienta
+# <a name="service-encryption-with-microsoft-purview-customer-key"></a>Szyfrowanie usługi przy użyciu klucza klienta usługi Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 zapewnia podstawowe szyfrowanie na poziomie woluminu włączone za pośrednictwem funkcji BitLocker i rozproszonego menedżera kluczy (DKM). Microsoft 365 oferuje dodatkową warstwę szyfrowania zawartości. Ta zawartość obejmuje dane z Exchange Online, Skype dla firm, SharePoint Online, OneDrive dla Firm i Microsoft Teams.
 
@@ -40,7 +42,7 @@ Klucz klienta szyfruje tylko dane magazynowane w chmurze. Klucz klienta nie dzia
 
 ## <a name="about-data-encryption-policies"></a>Informacje o zasadach szyfrowania danych
 
-Zasady szyfrowania danych (DEP) definiują hierarchię szyfrowania. Ta hierarchia jest używana przez usługę do szyfrowania danych przy użyciu każdego zarządzanego klucza i klucza dostępności chronionego przez firmę Microsoft. Możesz tworzyć adresy DEPs przy użyciu poleceń cmdlet programu PowerShell, a następnie przypisywać te adresy DEPs do szyfrowania danych aplikacji. Istnieją trzy typy deps obsługiwane przez Microsoft 365 Klucz klienta, każdy typ zasad używa różnych poleceń cmdlet i zapewnia pokrycie dla innego typu danych. Adresy IP, które można zdefiniować, obejmują:
+Zasady szyfrowania danych (DEP) definiują hierarchię szyfrowania. Ta hierarchia jest używana przez usługę do szyfrowania danych przy użyciu każdego zarządzanego klucza i klucza dostępności chronionego przez firmę Microsoft. Możesz tworzyć adresy DEPs przy użyciu poleceń cmdlet programu PowerShell, a następnie przypisywać te adresy DEPs do szyfrowania danych aplikacji. Istnieją trzy typy deps obsługiwane przez klucz klienta, każdy typ zasad używa różnych poleceń cmdlet i zapewnia pokrycie dla innego typu danych. Adresy IP, które można zdefiniować, obejmują:
 
 **Program DEP dla wielu obciążeń Microsoft 365** Te dostawcy USŁUG szyfrują dane w wielu obciążeniach M365 dla wszystkich użytkowników w ramach dzierżawy. Te obciążenia obejmują:
 
@@ -52,7 +54,8 @@ Zasady szyfrowania danych (DEP) definiują hierarchię szyfrowania. Ta hierarchi
 - Teams komunikaty o stanie
 - Informacje o użytkowniku i sygnale dla Exchange Online
 - Exchange Online skrzynki pocztowe, które nie są jeszcze szyfrowane przez adresy DEPs skrzynki pocztowej
-- Microsoft Information Protection:
+- Ujednolicony magazyn dzienników inspekcji
+- Microsoft Purview Information Protection:
 
   - Dokładne dane są zgodne z danymi (EDM), w tym schematy plików danych, pakiety reguł i sole używane do wyznaczania wartości skrótu danych poufnych. W przypadku programu EDM i Microsoft Teams program DEP z wieloma obciążeniami szyfruje nowe dane od momentu przypisania programu DEP do dzierżawy. W przypadku Exchange Online klucz klienta szyfruje wszystkie istniejące i nowe dane.
 

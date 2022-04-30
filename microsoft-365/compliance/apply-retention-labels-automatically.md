@@ -1,5 +1,5 @@
 ---
-title: Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości
+title: Automatyczne stosowanie etykiety przechowywania
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Tworzenie zasad przechowywania automatycznego etykietowania w celu automatycznego stosowania etykiet w celu zachowania potrzebnych elementów i usunięcia tego, czego nie potrzebujesz
-ms.openlocfilehash: 8c3df81eabb0d67993825d95e390d3e94c7a9bd7
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 2c1ea20f9b663ca8cee59043bbe6399f5bae66f1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762018"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145278"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -63,7 +65,7 @@ Wykonaj poniższe instrukcje dla dwóch kroków administratora.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Administrator globalny organizacji ma pełne uprawnienia do tworzenia i edytowania etykiet przechowywania oraz ich zasad. Jeśli nie logujesz się jako administrator globalny, zapoznaj się z informacjami o uprawnieniach do [zarządzania rekordami](get-started-with-records-management.md#permissions) lub [zarządzania informacjami](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), w zależności od używanego rozwiązania.
+Administrator globalny organizacji ma pełne uprawnienia do tworzenia i edytowania etykiet przechowywania oraz ich zasad. Jeśli nie logujesz się jako administrator globalny, zapoznaj się z informacjami o uprawnieniach do [zarządzania rekordami](get-started-with-records-management.md#permissions) lub [zarządzania magazynem danych](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels) w zależności od używanego rozwiązania.
 
 Upewnij się, że [utworzono etykiety przechowywania](file-plan-manager.md#create-retention-labels) , które chcesz zastosować do elementów.
 
@@ -73,13 +75,13 @@ Przed utworzeniem zasad etykiet przechowywania zdecyduj, czy będą **to zasady 
 
 Podczas tworzenia zasad automatycznego stosowania należy wybrać etykietę przechowywania, która ma być automatycznie stosowana do zawartości, na podstawie określonych warunków.
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
+1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
     
     - Jeśli używasz zarządzania rekordami:
         - **Rozwiązania** >  **Karta Zasady zarządzania rekordami** > > **Etykiety** > **automatyczne stosowanie etykiety**
     
-    - Jeśli używasz ładu informacyjnego:
-        - **Rozwiązania** >  **Zarządzanie informacjami** >  **Karta Zasady etykiet** > **automatyczne stosowanie etykiety**
+    - Jeśli używasz zarządzania magazynem życia danych:
+        - **Rozwiązania** >  **Zarządzanie magazynem** >  życia danych **Karta Zasady etykiet** > **automatyczne stosowanie etykiety**
     
     Nie widzisz rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**.
 
@@ -147,7 +149,7 @@ Ponadto SharePoint elementów, które są w wersji roboczej lub które nigdy nie
 > 
 > Mimo że skrzynki pocztowe grup zazwyczaj są uwzględniane przez wybranie lokalizacji **Grupy Microsoft 365**, dla tej konkretnej konfiguracji zasad lokalizacja grup obejmuje tylko SharePoint lokacji połączonych z grupą Microsoft 365.
 
-Podczas tworzenia zasad automatycznego stosowania etykiet przechowywania dla informacji poufnych jest wyświetlana ta sama lista szablonów zasad, co w przypadku tworzenia zasad ochrony przed utratą danych (DLP). Każdy szablon jest wstępnie skonfigurowany do wyszukiwania określonych typów informacji poufnych. W poniższym przykładzie typy informacji poufnych pochodzą z kategorii **Prywatność** i szablonu **danych osobowych (PII):**
+Podczas tworzenia zasad automatycznego stosowania etykiet przechowywania dla informacji poufnych zostanie wyświetlona ta sama lista szablonów zasad, co podczas tworzenia zasad ochrony przed utratą danych (DLP) w usłudze Microsoft Purview. Każdy szablon jest wstępnie skonfigurowany do wyszukiwania określonych typów informacji poufnych. W poniższym przykładzie typy informacji poufnych pochodzą z kategorii **Prywatność** i szablonu **danych osobowych (PII):**
 
 ![Szablony zasad z typami informacji poufnych.](../media/sensitive-info-configuration.png)
 
@@ -341,7 +343,7 @@ W przypadku automatycznego stosowania etykiet przechowywania na podstawie poufny
   
 ![Diagram przedstawiający, kiedy stosowane automatycznie etykiety są stosowane.](../media/retention-labels-autoapply-timings.png)
 
-Jeśli oczekiwane etykiety nie są wyświetlane po siedmiu dniach, sprawdź **stan** zasad automatycznego stosowania, wybierając je na stronie **Zasady etykiet** w Centrum zgodności. Jeśli w szczegółach lokalizacji zostanie wyświetlony komunikat o tym, że wdrażanie zasad (dla SharePoint **)** lub próba ponownego wdrożenia zasad (dla OneDrive) trwa dłużej niż oczekiwano, spróbuj uruchomić polecenie [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell, aby ponowić próbę dystrybucji zasad:
+Jeśli oczekiwane etykiety nie pojawią się po siedmiu dniach, sprawdź **stan** zasad automatycznego stosowania, wybierając je na stronie **Zasady etykiet** w portalu zgodności usługi Microsoft Purview. Jeśli w szczegółach lokalizacji zostanie wyświetlony komunikat o tym, że wdrażanie zasad (dla SharePoint **)** lub próba ponownego wdrożenia zasad (dla OneDrive) trwa dłużej niż oczekiwano, spróbuj uruchomić polecenie [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell, aby ponowić próbę dystrybucji zasad:
 
 1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
