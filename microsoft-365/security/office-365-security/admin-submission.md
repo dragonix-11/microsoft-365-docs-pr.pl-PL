@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania podejrzanych wiadomości e-mail, podejrzanych wiadomości phishingowych, spamu i innych potencjalnie szkodliwych wiadomości, adresów URL i załączników wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a21c9e6655c01e2d2229e957f79b2342895ac4e4
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 5d16cae309a90b8ffe10c90fea8ca3a359ece33b
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971974"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144822"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Przesyłanie do firmy Microsoft podejrzanych wiadomości spamowych, adresów URL i plików przy użyciu portalu Przesyłania
 
@@ -278,7 +278,7 @@ Jeśli wdrożono [dodatek Komunikat raportu](enable-the-report-message-add-in.md
    - Aby wyeksportować wpisy, kliknij pozycję **Eksportuj**. W wyświetlonym oknie dialogowym zapisz plik .csv.
 
 > [!NOTE]
-> Jeśli organizacje są skonfigurowane do wysyłania wiadomości zgłoszonych przez użytkownika tylko do niestandardowej skrzynki pocztowej, zgłoszone wiadomości nie zostaną wysłane do ponownego przeskanowania, a wyniki w **wiadomościach zgłoszonych przez użytkownika** będą zawsze puste.
+> Jeśli organizacje są skonfigurowane do wysyłania wiadomości zgłoszonych przez użytkownika tylko do niestandardowej skrzynki pocztowej, zgłoszone wiadomości będą wyświetlane w **wiadomościach zgłoszonych przez użytkownika** , ale ich wyniki będą zawsze puste (ponieważ nie zostałyby ponownie przeskanowane).
 
 ### <a name="undo-user-submissions"></a>Cofanie przesyłania przez użytkownika
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej na temat analizy fałszowania w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30a9a7a9714ed5e071c53a6b1641204fd8c4fafe
-ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
+ms.openlocfilehash: c147396ff47f924d7dd4b2ebd3a0cac106de94b2
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "65031837"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144734"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Fałszowanie szczegółowych informacji wywiadowczych w ramach EOP
 
@@ -35,9 +35,6 @@ ms.locfileid: "65031837"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji zapoznawczej, mogą ulec zmianie i nie są dostępne we wszystkich organizacjach. Jeśli Twoja organizacja nie ma funkcji opisanych w tym artykule, zobacz starsze środowisko zarządzania fałszowaniem w [temacie Zarządzanie fałszowaniem nadawców przy użyciu zasad analizy fałszowania i fałszowania analizy w ramach EOP](walkthrough-spoof-intelligence-insight.md).
 
 W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych przychodzące wiadomości e-mail są automatycznie chronione przed fałszowaniem. W ramach ogólnej ochrony organizacji przed wyłudzaniem informacji EOP używa **analizy fałszowania** . Aby uzyskać więcej informacji, zobacz [Ochrona przed fałszowaniem w ramach EOP](anti-spoofing-protection.md).
 

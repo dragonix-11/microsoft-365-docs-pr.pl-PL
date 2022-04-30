@@ -16,12 +16,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować zezwolenia na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 413209bdecef19c4d101162f0e23f24ff1a2903e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: af5f8ae1d3c172f4bf77bdca14625fe2440769ef
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129249"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144764"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Dodawanie zezwoleń na liście dozwolonych/zablokowanych dzierżaw
 
@@ -57,12 +57,11 @@ Zezwalaj nadawcom (lub domenom) na stronie **Przesyłanie** w Microsoft 365 Defe
 
 > ![Prześlij złośliwe oprogramowanie do firmy Microsoft w celu analizy przykładu.](../../media/admin-submission-allow-messages.png)
 
-
 > [!NOTE]
 >
-> - Na podstawie filtrów, które określały, że poczta jest złośliwa, podczas przepływu poczty są dodawane elementy zezwalające. Jeśli na przykład filtry wykryją, że zarówno nadawca, jak i adres URL są nieprawidłowe, dla każdego z nich zostanie dodane zezwolenie. 
-> - Po ponownym napotkaniu tej jednostki (nadawcy, domeny, adresu URL, pliku) wszystkie filtry skojarzone z tą jednostką zostaną pominięte.
-> - Dlatego w przypadku wiadomości e-mail (zawierającej tę jednostkę) podczas przepływu poczty, jeśli pozostałe filtry uznają wiadomość e-mail za czystą, wiadomość e-mail zostanie dostarczona.
+> - Na podstawie filtrów, które określają, że poczta jest złośliwa, podczas przepływu poczty są dodawane zezwala. Jeśli na przykład filtry wykryją, że zarówno nadawca, jak i adres URL są nieprawidłowe, dla każdego z nich zostanie dodane zezwolenie. 
+> - Gdy ta jednostka (nadawca, domena, adres URL, plik) zostanie ponownie napotkana, wszystkie filtry skojarzone z tą jednostką zostaną pominięte.
+> - W przypadku wiadomości e-mail (zawierającej tę jednostkę) podczas przepływu poczty, jeśli pozostałe filtry uznają wiadomość e-mail za czystą, wiadomość e-mail zostanie dostarczona. Na przykład zezwolenie nadawcy (gdy uwierzytelnianie przejdzie) pomija wszystkie werdykty z wyjątkiem złośliwego oprogramowania i wyłudzania informacji o wysokim poziomie zaufania skojarzonego z załącznikiem lub adresem URL.
 
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Dodawanie adresu URL umożliwia korzystanie z portalu Przesyłania
 
@@ -85,12 +84,10 @@ Zezwalaj na adresy URL na stronie **Przesyłanie** w Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![Prześlij adres URL do analizy.](../../media/submit-url-for-analysis.png)
 
-
 > [!NOTE]
 >
-> -  Po ponownym napotkaniu adresu URL adres URL nie jest wysyłany do celów detonacji lub kontroli reputacji, a wszystkie inne filtry oparte na adresach URL są pomijane.
-> -  Dlatego w przypadku wiadomości e-mail (zawierającej ten adres URL) podczas przepływu poczty, jeśli pozostałe filtry uznają wiadomość e-mail za czystą, wiadomość e-mail zostanie dostarczona.
-
+> - Po ponownym napotkaniu adresu URL adres URL nie jest wysyłany do celów detonacji lub kontroli reputacji, a wszystkie inne filtry oparte na adresach URL są pomijane.
+> - Dlatego w przypadku wiadomości e-mail (zawierającej ten adres URL) podczas przepływu poczty, jeśli pozostałe filtry uznają wiadomość e-mail za czystą, wiadomość e-mail zostanie dostarczona.
 
 ## <a name="add-file-allows-using-the-submissions-portal"></a>Opcja Dodaj plik umożliwia korzystanie z portalu Przesyłania
 
@@ -113,7 +110,6 @@ Zezwalaj na pliki na stronie **Przesyłanie** w Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![Prześlij wiadomość e-mail do analizy.](../../media/submit-email-for-analysis.png)
 
-
 > [!NOTE]
 >
 > - Po ponownym napotkaniu pliku nie jest on wysyłany do celów detonacji ani kontroli reputacji, a wszystkie inne filtry oparte na plikach są pomijane.
@@ -126,7 +122,7 @@ Zezwalaj na pliki na stronie **Przesyłanie** w Microsoft 365 Defender.
 > - Tylko _kombinacja_ sfałszowanego użytkownika _i_ infrastruktury wysyłania zdefiniowanej w parze domeny jest wyraźnie dozwolona lub zablokowana przed fałszowaniem.
 > - Podczas konfigurowania wpisu zezwalania lub blokowania dla pary domeny komunikaty z tej pary domeny nie są już wyświetlane w szczegółowych informacjach analizy na temat fałszowania.
 > - Wpisy dla sfałszowanych nadawców nigdy nie wygasają.
-> - Spoof obsługuje zarówno zezwalanie, jak i blokowanie. Adres URL obsługuje tylko opcję zezwalania.
+> - Spoof obsługuje zarówno zezwalanie, jak i blokowanie. Adres URL obsługuje tylko blok.
 
 1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do obszaru Zasady **współpracy** \> & poczty e-mail **& reguły** \> **Zasad** \> zagrożeń **Zezwalaj/Blokuj listy** dzierżawy w sekcji **Reguły**. Możesz też przejść bezpośrednio do strony **Zezwalaj/blokuj listy dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ed23cf7bfe8db25ed216859c434e86f14710db8
-ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
+ms.openlocfilehash: 62116022c14af67b4589e4ee8479d294755fcc80
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "65031846"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144714"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
@@ -32,12 +32,6 @@ ms.locfileid: "65031846"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
->
-> Niektóre funkcje opisane w tym artykule są w wersji zapoznawczej, mogą ulec zmianie i nie są dostępne we wszystkich organizacjach.
->
-> Jeśli Twoja organizacja nie ma funkcji fałszowania zgodnie z opisem w tym artykule, zobacz starsze środowisko zarządzania fałszowaniem w [temacie Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP (Zarządzanie fałszowaniem nadawców przy użyciu zasad analizy fałszowania i fałszowanie analizy w ramach EOP](walkthrough-spoof-intelligence-insight.md)).
 
 W Microsoft 365 organizacji ze skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacji Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych, możesz nie zgodzić się z werdyktem filtrowania EOP. Na przykład dobra wiadomość może zostać oznaczona jako zła (fałszywie dodatnia) lub zła wiadomość może zostać przepuszczona (fałszywie ujemna).
 
@@ -81,10 +75,10 @@ W tym artykule opisano sposób konfigurowania wpisów na liście dozwolonych/zab
 
 - Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w portalu Microsoft 365 Defender:
   - **Nadawcy, adresy URL i pliki**:
-    - Aby dodać i usunąć wartości z listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem 
-      -   **Zarządzanie organizacją** lub grupa ról **administratora zabezpieczeń** (**rola administratora zabezpieczeń**)
-      -    Grupa ról **operatora zabezpieczeń** (**Menedżer AllowBlockList dzierżawy**).
-    - Aby uzyskać dostęp tylko do odczytu do listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem 
+    - Aby dodać i usunąć wartości z listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem
+      - **Zarządzanie organizacją** lub grupa ról **administratora zabezpieczeń** (**rola administratora zabezpieczeń**)
+      - Grupa ról **operatora zabezpieczeń** (**Menedżer AllowBlockList dzierżawy**).
+    - Aby uzyskać dostęp tylko do odczytu do listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem
       - **Globalna grupa ról czytelnika**
       - Grupa ról **czytelnika zabezpieczeń**
   - **Fałszowanie**: jedna z następujących kombinacji:
@@ -95,7 +89,7 @@ W tym artykule opisano sposób konfigurowania wpisów na liście dozwolonych/zab
 
   > [!NOTE]
   >
-  > - Dodanie użytkowników do odpowiedniej roli Azure Active Directory w Centrum administracyjne platformy Microsoft 365 daje użytkownikom wymagane uprawnienia _i_ uprawnienia do innych funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
+  > - Dodanie użytkowników do odpowiedniej roli Azure Active Directory w Centrum administracyjne platformy Microsoft 365 daje użytkownikom wymagane uprawnienia *i* uprawnienia do innych funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
   >
   > - Grupa ról **Zarządzanie organizacją tylko do wyświetlania** w [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) zapewnia również dostęp tylko do odczytu do tej funkcji.
 
@@ -182,7 +176,7 @@ Aby zarządzać wszystkimi zezwoleniami i blokami, zobacz [Dodawanie bloków na 
 
    Po zakończeniu kliknij przycisk **Zastosuj**. Aby wyczyścić istniejące filtry, kliknij pozycję **Filtruj**, a następnie w wyświetlonym wysuwu **Filtr** kliknij pozycję **Wyczyść filtry**.
 
-4. Po zakończeniu kliknij przycisk **Dodaj**.
+3. Po zakończeniu kliknij przycisk **Dodaj**.
 
 ## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>Wyświetlanie wpisów nadawcy, pliku lub adresu URL na liście dozwolonych/zablokowanych dzierżaw
 
@@ -490,7 +484,7 @@ Oto kilka przykładów prawidłowych par domen do identyfikowania sfałszowanych
 
 Maksymalna liczba fałszywych wpisów nadawcy wynosi 1000.
 
-Dodanie pary domeny umożliwia lub blokuje *tylko kombinację* sfałszowanego użytkownika *i* infrastruktury wysyłania. Nie zezwala na wysyłanie wiadomości e-mail od sfałszowanego użytkownika z żadnego źródła ani nie zezwala na wysyłanie wiadomości e-mail ze źródła infrastruktury wysyłania dla żadnego sfałszowanego użytkownika. 
+Dodanie pary domeny umożliwia lub blokuje *tylko kombinację* sfałszowanego użytkownika *i* infrastruktury wysyłania. Nie zezwala na wysyłanie wiadomości e-mail od sfałszowanego użytkownika z żadnego źródła ani nie zezwala na wysyłanie wiadomości e-mail ze źródła infrastruktury wysyłania dla żadnego sfałszowanego użytkownika.
 
 Możesz na przykład dodać wpis zezwalania dla następującej pary domen:
 

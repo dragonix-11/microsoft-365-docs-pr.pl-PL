@@ -19,19 +19,19 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się więcej o propozycjach ułatwiających zakup produktów i usług firmy Microsoft.
 ROBOTS: NOINDEX
-ms.date: 03/17/2021
-ms.openlocfilehash: 6ba1f27901795a1e473165c0b6ac65d90ca1c0af
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.date: 04/28/2022
+ms.openlocfilehash: 8dc80bfaadcbee236f282796dcdb37f59360ebe4
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824887"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144866"
 ---
 # <a name="understand-the-proposal-workflow"></a>Omówienie przepływu pracy propozycji
 
 Propozycja jest formalną ofertą firmy Microsoft dla Twojej organizacji w celu zakupu produktów i usług firmy Microsoft. Pracujesz bezpośrednio z przedstawicielem firmy Microsoft, aby określić określone produkty, usługi i warunki swojej propozycji.
 
-Przedstawiciel firmy Microsoft opracowuje propozycję zawierającą omówione przez Ciebie i Twojego przedstawiciela elementy. Przedstawiciel wysyła wiadomość e-mail z linkiem do witryny propozycji. Witryna zawiera propozycję przygotowaną specjalnie dla Ciebie i Twojej organizacji.
+Przedstawiciel firmy Microsoft opracowuje propozycję zawierającą omówione przez Ciebie i Twojego przedstawiciela elementy. Przedstawiciel wysyła wiadomość e-mail z linkiem do witryny Azure Marketplace Portal. Witryna zawiera propozycję przygotowaną specjalnie dla Ciebie i Twojej organizacji.
 
 Po otrzymaniu wiadomości e-mail z powiadomieniem postępuj zgodnie z linkiem do witryny propozycji. Po zalogowaniu się do witryny możesz rozpocząć proces przeglądu propozycji.
 
@@ -53,13 +53,29 @@ Umowa z Klientem Microsoft (MCA) umożliwia organizacji kupowanie produktów i u
 
 ## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Uprawnienia wymagane do podpisania umowy lub płacenia za elementy
 
-Jeśli nie masz przypisanej roli na koncie rozliczeniowym, podczas wyświetlania propozycji masz przypisaną podstawową rolę czytelnika. Ta rola umożliwia wyświetlenie propozycji, ale nie podjęcie żadnych działań. Przed podpisaniem umowy lub zakupem produktów i usług musisz mieć przypisaną rolę właściciela konta rozliczeniowego lub współautora konta rozliczeniowego. Właściciel konta rozliczeniowego może przypisać Ci tę rolę.
+Aby pomyślnie podpisać umowę lub kupić produkty i usługi, musisz być właścicielem konta rozliczeniowego lub współautorem konta rozliczeniowego. Jeśli jesteś administratorem globalnym, ale nie masz jednej z tych ról, możesz przypisać role do siebie. Jeśli nie jesteś administratorem globalnym, poproś administratora globalnego lub właściciela konta rozliczeniowego o przypisanie ci jednej z ról.
+
+Role właściciela konta rozliczeniowego i współautora konta rozliczeniowego są przypisywane przy użyciu jednej z następujących metod.
+
+### <a name="assign-roles-in-the-microsoft-365-admin-center"></a>Przypisywanie ról w Centrum administracyjne platformy Microsoft 365
+
+1. W Centrum administracyjne platformy Microsoft 365 przejdź do strony **RozliczeniaRozliczenia** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">kont</a>.
+2. Na stronie **Konta rozliczeniowe** w sekcji **Role konta rozliczeniowego** wybierz pozycję **Przypisz role**.
+3. W okienku **Przypisywanie ról** wyszukaj imię i nazwisko osoby, do której chcesz przypisać rolę.
+4. Zaznacz pole dla nazwy roli, którą ma mieć dana osoba, a następnie wybierz pozycję **Przypisz**.
+
+### <a name="assign-roles-in-the-azure-portal"></a>Przypisywanie ról w Azure Portal
+
+1. W Azure Portal przejdź do strony <a href="https://portal.azure.com/#blade/Microsoft_Azure_GTM/ModernBillingMenuBlade/Overview" target="_blank">Kontrola dostępu (IAM</a>).
+2. Na stronie **Kontrola dostępu (IAM)** wybierz pozycję **Dodaj**.
+3. W okienku **Dodawanie uprawnień** wybierz **rolę, która** ma zostać przypisana do użytkownika.
+4. Wybierz użytkownika, a następnie wybierz pozycję **Zapisz**.
 
 Aby uzyskać więcej informacji na temat ról konta rozliczeniowego, zobacz [Omówienie dostępu do kont rozliczeniowych](manage-billing-accounts.md#understand-access-to-billing-accounts).
 
 Jeśli jest to nowe konto rozliczeniowe i nikt nie zaakceptował umowy, automatycznie stajesz się właścicielem konta rozliczeniowego, pod warunkiem, że:
 
-- Czy osoba wymieniona w propozycji, **lub**
+- Czy osoba wymieniona w propozycji **lub**
 - Jesteś już [administratorem globalnym Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) twojej organizacji
 
 ## <a name="what-is-the-overall-workflow"></a>Jaki jest ogólny przepływ pracy?
@@ -119,7 +135,7 @@ Wniosek zawiera następujące informacje:
 |---|---|
 | Nazwa organizacji | Nazwa organizacji, dla której została przygotowana propozycja. |
 | Ważność do daty | Data wygaśnięcia oferty propozycji. Jeśli przegapisz tę datę wygaśnięcia, skontaktuj się z przedstawicielem firmy Microsoft, aby poinformować go, że nadal interesuje Cię propozycja. |
-| Waluty | Waluta używana do obliczania kosztu pozycji w propozycji. |
+| Waluta | Waluta używana do obliczania kosztu pozycji w propozycji. |
 | Przygotowane do | Nazwa konta rozliczeniowego, adres, kontaktowy adres e-mail i numer telefonu osoby, która zażądała propozycji. |
 | Przygotowane przez | Adres e-mail przedstawiciela firmy Microsoft, który przygotował propozycję. |
 | Podsumowanie | Przedstawia sumę częściową skojarzoną z propozycją. W razie potrzeby zostanie również wyświetlony kurs wymiany walut (FX), który jest używany do obliczania kosztów. |
@@ -154,6 +170,9 @@ W tej sekcji przedstawiono listę wszystkich elementów uwzględnionych w propoz
 - **Kup teraz** Lista elementów, za które płacisz podczas wyewidencjonowania na końcu przepływu pracy akceptacji propozycji.
 - **Rabaty (stosowane do przyszłych opłat)** Lista rabatów, które otrzymujesz w ramach propozycji.
 - **Zawarte** Lista elementów uwzględnionych w pakiecie propozycji bez dodatkowych opłat. Niektóre z tych elementów mogą mieć skojarzony koszt w przyszłości.
+
+> [!NOTE]
+> Twoja propozycja może obejmować subskrypcje z przyszłą datą rozpoczęcia. Aby uzyskać więcej informacji, zobacz [Understand invoicing for future start dates (Omówienie fakturowania dla przyszłych dat rozpoczęcia](billing-and-payments/future-start-date.md)).
 
 ### <a name="summary"></a>Podsumowanie
 

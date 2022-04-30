@@ -17,12 +17,12 @@ ms.collection:
 description: Dowiedz się, jak włączyć dodatki Report Message lub Report Phishing dla Outlook i Outlook w sieci Web, dla poszczególnych użytkowników lub dla całej organizacji.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14d59cbe6f3f98aabc231da88e4f0919a3974c97
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973228"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144844"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Włączanie komunikatu raportu lub dodatków wyłudzania informacji o raportach
 
@@ -61,7 +61,7 @@ Jeśli jesteś administratorem globalnym lub administratorem Exchange Online, a 
 
 - Oba dodatki nie są dostępne dla udostępnionych skrzynek pocztowych.
 
-- Oba dodatki nie są dostępne dla lokalnych Exchange skrzynek pocztowych. 
+- Oba dodatki nie są dostępne dla lokalnych Exchange skrzynek pocztowych.
 
 - Istniejąca przeglądarka internetowa powinna współdziałać zarówno z dodatkami Komunikat raportu, jak i Wyłudzanie informacji o raportach. Jeśli jednak zauważysz, że dodatek jest niedostępny lub nie działa zgodnie z oczekiwaniami, spróbuj użyć innej przeglądarki.
 
@@ -81,7 +81,7 @@ Jeśli jesteś administratorem globalnym lub administratorem Exchange Online, a 
 
 2. Kliknij **pozycję POBIERZ TERAZ**.
 
-   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="Komunikat raportu Pobierz teraz" lightbox="../../media/ReportMessageGETITNOW.png":::
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="Komunikat raportu Pobierz teraz." lightbox="../../media/ReportMessageGETITNOW.png":::
 
 3. W wyświetlonym oknie dialogowym przejrzyj warunki użytkowania i zasady ochrony prywatności, a następnie kliknij przycisk **Kontynuuj**.
 
@@ -92,7 +92,7 @@ Po zainstalowaniu i włączeniu dodatku zostaną wyświetlone następujące ikon
 - W Outlook ikona wygląda następująco:
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="Ikona dodatku Komunikat raportu dla Outlook" lightbox="../../media/OutlookReportMessageIcon.png":::
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="Ikona dodatku Komunikat raportu dla Outlook." lightbox="../../media/OutlookReportMessageIcon.png":::
 
 - W Outlook w sieci Web ikona wygląda następująco:
 
@@ -107,21 +107,21 @@ Po zainstalowaniu i włączeniu dodatku zostaną wyświetlone następujące ikon
 1. W [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage) przejdź do **obszaru** \> Ustawienia **Aplikacje zintegrowane**. Kliknij **pozycję Pobierz aplikacje**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Aplikacje zintegrowane Centrum administracyjne platformy Microsoft 365" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Centrum administracyjne platformy Microsoft 365 aplikacje zintegrowane." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. Na wyświetlonej stronie **Aplikacje Microsoft 365** kliknij w polu **Wyszukaj**, wprowadź **komunikat raportu**, a następnie kliknij ikonę **Wyszukaj**![.](../../media/search-icon.png) Na liście wyników znajdź i wybierz pozycję **Komunikat raportu**. 
+2. Na wyświetlonej stronie **Aplikacje Microsoft 365** kliknij w polu **Wyszukaj**, wprowadź **komunikat raportu**, a następnie kliknij ikonę **Wyszukaj**![.](../../media/search-icon.png) Na liście wyników znajdź i wybierz pozycję **Komunikat raportu**.
 
-3. Zostanie otwarta strona szczegółów aplikacji. Wybierz pozycję **Pobierz teraz**. 
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="Dodatek Komunikat raportu" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
-
-4. Wypełnij podstawowe informacje o profilu, a następnie kliknij przycisk **Kontynuuj**. 
+3. Zostanie otwarta strona szczegółów aplikacji. Wybierz pozycję **Pobierz teraz**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="Konfiguracja profilu dodatku Komunikat raportu" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="Dodatek Komunikat raportu." lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
-5. Zostanie otwarte okno wysuwane **Wdrażanie nowej aplikacji** . Skonfiguruj następujące ustawienia. Kliknij **przycisk Dalej** , aby przejść do następnej strony, aby ukończyć konfigurację. 
+4. Wypełnij podstawowe informacje o profilu, a następnie kliknij przycisk **Kontynuuj**.
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="Konfiguracja profilu dodatku Komunikat raportu." lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+
+5. Zostanie otwarte okno wysuwane **Wdrażanie nowej aplikacji** . Skonfiguruj następujące ustawienia. Kliknij **przycisk Dalej** , aby przejść do następnej strony, aby ukończyć konfigurację.
 
    - **Dodaj użytkowników**: wybierz jedną z następujących wartości:
      - **Tylko ja**
@@ -132,13 +132,13 @@ Po zainstalowaniu i włączeniu dodatku zostaną wyświetlone następujące ikon
      - **Akceptowanie żądań uprawnień**: przed przejściem do następnej strony uważnie przeczytaj uprawnienia i możliwości aplikacji.
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="Strona Akceptowanie żądań uprawnień" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="Strona Akceptowanie żądań uprawnień." lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
 
-     - **Zakończ wdrażanie**: przejrzyj i zakończ wdrażanie dodatku. 
-     - **Wdrożenie zostało ukończone**: wybierz pozycję **Gotowe** , aby ukończyć konfigurację. 
+     - **Zakończ wdrażanie**: przejrzyj i zakończ wdrażanie dodatku.
+     - **Wdrożenie zostało ukończone**: wybierz pozycję **Gotowe** , aby ukończyć konfigurację.
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="Komunikat powiadomienia o zakończeniu wdrożenia" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="Komunikat powiadomienia o zakończeniu wdrożenia." lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>Edytowanie ustawień dodatku Komunikat raportu
 
@@ -147,9 +147,9 @@ Po zainstalowaniu i włączeniu dodatku zostaną wyświetlone następujące ikon
 2. W wyświetlonym wysuwie wybierz pozycję **Edytuj użytkowników** , aby edytować ustawienia użytkownika.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="Wysuwany komunikat raportu" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="Wysuwany komunikat raportu." lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
 
-3. Aby usunąć dodatek, wybierz pozycję **Usuń aplikację** w obszarze **Akcje** w tym samym wysuwnym okienku. 
+3. Aby usunąć dodatek, wybierz pozycję **Usuń aplikację** w obszarze **Akcje** w tym samym wysuwnym okienku.
 
 ## <a name="get-the-report-phishing-add-in"></a>Uzyskiwanie dodatku Wyłudzanie informacji o raportach
 
@@ -182,15 +182,15 @@ Po zainstalowaniu i włączeniu dodatku zostaną wyświetlone następujące ikon
 1. W [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage) przejdź do **obszaru** \> Ustawienia **Aplikacje zintegrowane**. Kliknij **pozycję Pobierz aplikacje**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Aplikacje zintegrowane Centrum administracyjne platformy Microsoft 365" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Centrum administracyjne platformy Microsoft 365 aplikacje zintegrowane." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. Na wyświetlonej stronie **Aplikacje Microsoft 365** kliknij pole **Wyszukaj**, wprowadź **wyłudzanie informacji o raporcie**, a następnie kliknij ikonę **Wyszukaj**![.](../../media/search-icon.png) Na liście wyników znajdź i wybierz pozycję **Zgłoś wyłudzanie informacji**. 
- 
+2. Na wyświetlonej stronie **Aplikacje Microsoft 365** kliknij pole **Wyszukaj**, wprowadź **wyłudzanie informacji o raporcie**, a następnie kliknij ikonę **Wyszukaj**![.](../../media/search-icon.png) Na liście wyników znajdź i wybierz pozycję **Zgłoś wyłudzanie informacji**.
+
 3. Zostanie otwarta strona szczegółów aplikacji. Wybierz pozycję **Pobierz teraz**.
 
 4. Wypełnij podstawowe informacje o profilu, a następnie kliknij przycisk **Kontynuuj**.
 
-5. Zostanie otwarte okno wysuwane **Wdrażanie nowej aplikacji** . Wykonaj kroki [opisane powyżej](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) , aby ukończyć konfigurację. 
+5. Zostanie otwarte okno wysuwane **Wdrażanie nowej aplikacji** . Wykonaj kroki [opisane powyżej](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) , aby ukończyć konfigurację.
 
 ## <a name="edit-settings-for-the-report-phishing-add-in"></a>Edytowanie ustawień dodatku Wyłudzanie informacji o raportach
 
@@ -199,6 +199,6 @@ Po zainstalowaniu i włączeniu dodatku zostaną wyświetlone następujące ikon
 2. W wyświetlonym wysuwie wybierz pozycję **Edytuj użytkowników** , aby edytować ustawienia użytkownika.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Wysuwane wyłudzanie informacji o raporcie" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Wysuwane wyłudzanie informacji o raporcie." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
-3. Aby usunąć dodatek, wybierz pozycję **Usuń aplikację** w obszarze **Akcje** w tym samym wysuwnym okienku. 
+3. Aby usunąć dodatek, wybierz pozycję **Usuń aplikację** w obszarze **Akcje** w tym samym wysuwnym okienku.

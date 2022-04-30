@@ -18,12 +18,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować skrzynkę pocztową do zbierania wiadomości e-mail dotyczących spamu i wyłudzania informacji zgłaszanych przez użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2e57c5dbfb8738eb9e554a3207679bfd48c6f60
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 8b73144b678140cd30917b4fd687663ff0a455a3
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970917"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144800"
 ---
 # <a name="user-reported-message-settings"></a>Ustawienia komunikatów zgłoszonych przez użytkownika
 
@@ -95,7 +95,7 @@ Po upewnieniu się, że skrzynka pocztowa spełnia wszystkie odpowiednie wymagan
           > [!IMPORTANT]
           > Organizacje rządowe Stanów Zjednoczonych (GCC, GCC High i DoD) mogą konfigurować tylko **skrzynkę pocztową mojej organizacji**. Pozostałe dwie opcje są wyłączone.
           >
-          > Jeśli organizacje są skonfigurowane do wysyłania tylko do niestandardowej skrzynki pocztowej, zgłoszone wiadomości nie zostaną wysłane do ponownego przeskanowania, a wyniki w portalu wiadomości zgłoszonych przez użytkownika będą zawsze puste.
+          > Jeśli organizacje są skonfigurowane do wysyłania wiadomości zgłoszonych przez użytkownika tylko do niestandardowej skrzynki pocztowej, zgłoszone wiadomości będą wyświetlane w **wiadomościach zgłoszonych przez użytkownika** , ale ich wyniki będą zawsze puste (ponieważ nie zostałyby ponownie przeskanowane).
 
        Niezależnie od wartości wybranej dla opcji **Wyślij zgłoszone komunikaty do** są dostępne następujące ustawienia:
 
