@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Uzyskaj okresowy raport o tym, jak osoby w Twojej organizacji korzystają z usług platformy Microsoft 365, i przejdź do szczegółów każdego wykresu, aby uzyskać więcej szczegółowych informacji.
-ms.openlocfilehash: aa1cdf4b8fa6c1d558b005eb80031a20be4872af
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4757cf72653ffad2caeba45c99d3aabe61517ee4
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65088851"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144646"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Raporty platformy Microsoft 365 w centrum administracyjnym
 
@@ -87,35 +87,35 @@ W zależności od subskrypcji we wszystkich środowiskach dostępne są następu
 
 |**Raport**|**Publiczny**|**GCC**|**GCC-High**|**DoD**|**Usługa Office 365 obsługiwana przez firmę 21Vianet**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[Użycie przeglądarki firmy Microsoft](browser-usage-report.md)|Tak|Nie[^1]|Nie[^1]|Nie[^1]|Nie[^1]|
+|[Użycie przeglądarki firmy Microsoft](browser-usage-report.md)|Tak|Nie<sup>1</sup>|Nie<sup>1</sup>|Nie<sup>1</sup>|Nie<sup>1</sup>|
 |[Aktywność poczty e-mail](email-activity-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Użycie aplikacji poczty e-mail](email-apps-usage-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Użycie skrzynek pocztowych](mailbox-usage.md)|Tak|Tak|Tak|Tak|Tak|
 |[Aktywacje pakietu Office](microsoft-office-activations-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Aktywni użytkownicy](active-users-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Grupy platformy Microsoft 365](office-365-groups-ww.md)|Tak|Tak|Tak|Tak|Tak|
-|[Użycie aplikacji platformy Microsoft 365](microsoft365-apps-usage-ww.md)|Tak|Tak|Nie[^1]|Nie[^1]|Tak
+|[Użycie aplikacji platformy Microsoft 365](microsoft365-apps-usage-ww.md)|Tak|Tak|Nie<sup>1</sup>|Nie<sup>1</sup>|Tak
 |[Aktywność użytkowników usługi OneDrive dla Firm](onedrive-for-business-activity-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Użycie usługi OneDrive dla Firm](onedrive-for-business-usage-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Użycie witryny programu SharePoint](sharepoint-site-usage-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Aktywność programu SharePoint](sharepoint-activity-ww.md)|Tak|Tak|Tak|Tak|Tak|
-|[Aktywność użytkowników aplikacji Microsoft Teams](microsoft-teams-user-activity-preview.md)|Tak|Tak|Tak|Tak|N/D[^2]|
-|[Użycie urządzeń z aplikacją Microsoft Teams](microsoft-teams-device-usage-preview.md)|Tak|Tak|Tak|Tak|N/D[^2]|
-|[Aktywność korzystania z aplikacji Microsoft Teams](microsoft-teams-usage-activity.md)|Tak|Tak|nd.|nd.|nd.|
-|[Aktywność usługi Yammer](yammer-activity-report-ww.md)|Tak|Tak|N/D[^2]|N/D[^2]|N/D[^2]|
-|[Użycie urządzeń w usłudze Yammer](yammer-device-usage-report-ww.md)|Tak|Tak|N/D[^2]|N/D[^2]|N/D[^2]|
-|[Raport aktywności grup usługi Yammer](yammer-groups-activity-report-ww.md)|Tak|Tak|N/D[^2]|N/D[^2]|N/D[^2]|
-|[Aktywność w programie Forms](forms-activity-ww.md)|Tak|Tak|Nie[^1]|Nie[^1]|Nie[^1]|
-|[Aktywność usługi Dynamics 365 Customer Voice](forms-pro-activity-ww.md)|Tak|Tak|N/D[^2]|N/D[^2]|N/D[^2]|
-|[Aktywność usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Tak|Tak|Nie[^1]|Nie[^1]|Tak|
-|[Aktywność organizowanych konferencji usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Tak|Tak|Nie[^1]|Nie[^1]|Tak|
-|[Aktywność uczestników konferencji usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Tak|Tak|Nie[^1]|Nie[^1]|Tak|
-|[Aktywność sesji równorzędnych usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Tak|Tak|Nie[^1]|Nie[^1]|Tak|
+|[Aktywność użytkowników aplikacji Microsoft Teams](microsoft-teams-user-activity-preview.md)|Tak|Tak|Tak|Tak|N/D<sup>2</sup>|
+|[Użycie urządzeń z aplikacją Microsoft Teams](microsoft-teams-device-usage-preview.md)|Tak|Tak|Tak|Tak|N/D<sup>2</sup>|
+|[Aktywność korzystania z aplikacji Microsoft Teams](microsoft-teams-usage-activity.md)|Tak|Tak|Tak|Tak|N/D<sup>2</sup>|
+|[Aktywność usługi Yammer](yammer-activity-report-ww.md)|Tak|Tak|N/D<sup>2</sup>|N/D<sup>2</sup>|N/D<sup>2</sup>|
+|[Użycie urządzeń w usłudze Yammer](yammer-device-usage-report-ww.md)|Tak|Tak|N/D<sup>2</sup>|N/D<sup>2</sup>|N/D<sup>2</sup>|
+|[Raport aktywności grup usługi Yammer](yammer-groups-activity-report-ww.md)|Tak|Tak|N/D<sup>2</sup>|N/D<sup>2</sup>|N/D<sup>2</sup>|
+|[Aktywność w programie Forms](forms-activity-ww.md)|Tak|Tak|Nie<sup>1</sup>|Nie<sup>1</sup>|Nie<sup>1</sup>|
+|[Aktywność usługi Dynamics 365 Customer Voice](forms-pro-activity-ww.md)|Tak|Tak|N/D<sup>2</sup>|N/D<sup>2</sup>|N/D<sup>2</sup>|
+|[Aktywność usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Tak|Tak|Nie<sup>1</sup>|Nie<sup>1</sup>|Tak|
+|[Aktywność organizowanych konferencji usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Tak|Tak|Nie<sup>1</sup>|Nie<sup>1</sup>|Tak|
+|[Aktywność uczestników konferencji usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Tak|Tak|Nie<sup>1</sup>|Nie<sup>1</sup>|Tak|
+|[Aktywność sesji równorzędnych usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Tak|Tak|Nie<sup>1</sup>|Nie<sup>1</sup>|Tak|
 |[Aktywność usługi Viva Learning](viva-learning-activity.md)|Tak|nd.|nd.|nd.|nd.|
 |[Aktywność usługi Szczegółowe informacje Viva](viva-insights-activity.md)|Tak|Tak|nd.|nd.|nd.|
 
-[^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
-[^2]: The service is not available in the environment so no plan to release the report.
+N/D<sup>1</sup>: raport jest planowany do wydania w przyszłości. <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Plan platformy Microsoft 365</a> zostanie zaktualizowany przed wydaniem.
+N/D<sup>2</sup>: usługa nie jest dostępna w środowisku, więc nie ma planu wydania raportu.
 
 ## <a name="how-to-view-licensing-information"></a>Jak wyświetlić informacje o licencjonowaniu
 
