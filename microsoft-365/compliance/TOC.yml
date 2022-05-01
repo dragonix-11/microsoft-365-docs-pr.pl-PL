@@ -1005,6 +1005,8 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Włącz lub wyłącz inspekcję
           href: turn-audit-log-search-on-or-off.md
+        - name: Użyj klucza klienta do zaszyfrowania rekordów inspekcji
+          href: auditing-cmk-encryption.md
         - name: Badaj typowe problemy przy użyciu dziennika inspekcji
           href: auditing-troubleshooting-scenarios.md
         - name: Używaj inspekcji udostępniania w dzienniku inspekcji
