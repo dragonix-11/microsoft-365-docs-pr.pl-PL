@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Defender dla Firm
-summary: Od 1 marca 2022 r. usługa Microsoft Defender dla Firm jest dostępna w usłudze Microsoft 365 Business Premium. Usługa Defender dla Firm jako autonomiczna subskrypcja jest obecnie dostępna w wersji zapoznawczej i będzie wdrażana stopniowo dla klientów i partnerów IT, którzy zarejestrują się w witrynie https://aka.ms/mdb-preview.
+summary: Proste, kompleksowe zabezpieczenia punktów końcowych ułatwiające ochronę firmy, dzięki czemu możesz skupić się na tym, co ważne. Usługa Microsoft Defender dla Firm jest dostępna jako autonomiczna subskrypcja i jest uwzględniona na platformie Microsoft 365 Business Premium.
 metadata:
   title: Dokumentacja usługi Microsoft Defender dla Firm
-  description: Zapoznaj się z omówieniem i informacjami dotyczącymi konfiguracji usługi Microsoft Defender dla Firm
+  description: Usługa Defender dla Firm to rozwiązanie dotyczące cyberbezpieczeństwa dla małych i średnich firm. Chroń urządzenia za pomocą zabezpieczeń klasy korporacyjnej w przystępnej cenie.
   ms.prod: m365-security
   ms.technology: mdb
   ms.topic: landing-page
@@ -14,13 +14,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 04/04/2022
-  ms.openlocfilehash: b0a500df395dca03949d9e40905bc0b048875bcd
-  ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+  ms.openlocfilehash: f63ef5a232f5cce828d827198beabe84443bc4c9
+  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 04/15/2022
-  ms.locfileid: "64861779"
+  ms.lasthandoff: 05/03/2022
+  ms.locfileid: "65172361"
 landingContent:
 - title: Omówienie
   linkLists:
@@ -34,25 +33,53 @@ landingContent:
       url: compare-mdb-m365-plans.md
     - text: Integracja z usługą Microsoft 365 Lighthouse
       url: mdb-lighthouse-integration.md
+  - linkListType: how-to-guide
+    links:
+    - text: Maksymalnie wykorzystaj możliwości usługi Defender dla Firm w wersji próbnej
+      url: trial-playbook-defender-business.md
 - title: Wprowadzenie
   linkLists:
   - linkListType: get-started
     links:
     - text: Pobierz usługę Defender dla Firm
       url: get-defender-business.md
+    - text: Korzystanie z podręcznika wersji próbnej
+      url: trial-playbook-defender-business.md
     - text: Dodawanie użytkowników i przypisywanie licencji
       url: mdb-add-users.md
     - text: Odwiedź portal usługi Microsoft 365 Defender
       url: mdb-get-started.md
     - text: Korzystanie z kreatora konfiguracji
       url: mdb-use-wizard.md
+  - linkListType: tutorial
+    links:
     - text: Wypróbuj samouczki i symulacje
       url: mdb-tutorials.md
+- title: Pomoc i więcej zasobów
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Jak uzyskać pomoc lub skontaktować się z pomocą techniczną
+      url: mdb-get-help.md
+    - text: Często zadawane pytania
+      url: mdb-faq.yml
+    - text: Rozwiązywanie problemów
+      url: mdb-troubleshooting.yml
+  - linkListType: reference
+    links:
+    - text: Słownik terminów zabezpieczeń
+      url: /microsoft-365/business-premium/m365bp-glossary
+    - text: Informacje referencyjne interfejsu API
+      url: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
+    - text: Microsoft 365 Business Premium
+      url: /microsoft-365/business-premium/
+    - text: Microsoft 365 Lighthouse
+      url: /microsoft-365/lighthouse/m365-lighthouse-overview
 - title: Instalowanie i konfigurowanie
   linkLists:
   - linkListType: deploy
     links:
-    - text: Omówienie konfiguracji
+    - text: Zobacz proces konfiguracji.
       url: mdb-setup-configuration.md
     - text: Krok 1. Przegląd wymagań
       url: mdb-requirements.md
@@ -62,13 +89,13 @@ landingContent:
       url: mdb-email-notifications.md
     - text: Krok 4. Dołączanie urządzeń
       url: mdb-onboard-devices.md
-    - text: Krok 5. Konfigurowanie zasad zabezpieczeń
+    - text: Krok 5. Przeglądanie zasad zabezpieczeń
       url: mdb-view-edit-policies.md
 - title: Wyświetlanie zagrożeń i reagowanie na nie
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Wyświetl pulpit nawigacyjny zarządzania zagrożeniami i lukami w zabezpieczeniach
+    - text: Wyświetlanie pulpitu nawigacyjnego zagrożeń
       url: mdb-view-tvm-dashboard.md
     - text: Wyświetlanie zdarzeń i zarządzanie nimi
       url: mdb-view-manage-incidents.md
@@ -78,7 +105,7 @@ landingContent:
       url: mdb-review-remediation-actions.md
     - text: Wyświetlanie i używanie raportów
       url: mdb-reports.md
-- title: Zarządzanie zasadami zabezpieczeń
+- title: Wyświetlanie lub edytowanie zasad zabezpieczeń
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -94,11 +121,11 @@ landingContent:
       url: mdb-next-gen-configuration-settings.md
     - text: Ustawienia zapory
       url: mdb-firewall.md
-- title: Zarządzanie urządzeniami
+- title: Monitorowanie urządzeń lub zarządzanie nimi
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Wyświetlanie urządzeń i zarządzanie nimi
+    - text: Wyświetlanie i monitorowanie urządzeń
       url: mdb-manage-devices.md
     - text: Tworzenie grup urządzeń
       url: mdb-create-edit-device-groups.md
@@ -106,17 +133,3 @@ landingContent:
       url: mdb-onboard-devices.md
     - text: Usuwanie urządzeń
       url: mdb-offboard-devices.md
-- title: Pomoc i obsługa techniczna
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Jak uzyskać pomoc lub skontaktować się z pomocą techniczną
-      url: mdb-get-help.md
-    - text: Często zadawane pytania
-      url: mdb-faq.yml
-    - text: Rozwiązywanie problemów
-      url: mdb-troubleshooting.yml
-    - text: Microsoft 365 Business Premium
-      url: /microsoft-365/business-premium/
-    - text: Microsoft 365 Lighthouse
-      url: /microsoft-365/lighthouse/m365-lighthouse-overview
