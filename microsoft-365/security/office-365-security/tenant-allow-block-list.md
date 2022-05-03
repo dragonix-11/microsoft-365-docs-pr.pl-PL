@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a067672a013f3e0ed7b9009604f8a4fe000ea47f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 64b9c044a463e940b0d9862221ca854fe0eebfdc
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172832"
+ms.locfileid: "65182655"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
@@ -90,7 +90,6 @@ W tym artykule opisano sposób konfigurowania wpisów na liście dozwolonych/zab
   > [!NOTE]
   >
   > - Dodanie użytkowników do odpowiedniej roli Azure Active Directory w Centrum administracyjne platformy Microsoft 365 daje użytkownikom wymagane uprawnienia *i* uprawnienia do innych funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
-  >
   > - Grupa ról **Zarządzanie organizacją tylko do wyświetlania** w [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) zapewnia również dostęp tylko do odczytu do tej funkcji.
 
 ## <a name="configure-the-tenant-allowblock-list"></a>Konfigurowanie listy dozwolonych/zablokowanych dzierżaw
@@ -111,7 +110,7 @@ Aby zarządzać wszystkimi zezwoleniami i blokami, zobacz [Dodawanie bloków na 
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Wyświetlanie wpisów na liście dozwolonych/zablokowanych dzierżaw
 
-1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do obszaru **Zasady & reguły** \> zasad \> **zagrożeń** **Zezwalaj na dzierżawę/blokuj listy** w sekcji **Reguły**. Aby przejść bezpośrednio do strony **Zezwalaj/blokuj listy dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do obszaru **Zasady & reguły** \> zasad \> **zagrożeń** **Zezwalaj na dzierżawę/blokuj listy** w sekcji **Reguły**. Możesz też przejść bezpośrednio do strony **Zezwalaj/blokuj listy dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Wybierz odpowiednią kartę. Dostępne kolumny zależą od wybranej karty:
 
@@ -122,6 +121,11 @@ Aby zarządzać wszystkimi zezwoleniami i blokami, zobacz [Dodawanie bloków na 
      - **Ostatnia aktualizacja**
      - **Usuń przy**
      - **Uwagi**
+   - **Fałszowanie**
+     - **Sfałszowany użytkownik**
+     - **Wysyłanie infrastruktury**
+     - **Typ fałszowania**: wartość **Wewnętrzna** lub **Zewnętrzna**.
+     - **Akcja**: wartość **Blokuj** lub **Zezwalaj**.
    - **Adresy URL**:
      - **Wartość**: adres URL.
      - **Akcja**: wartość **Zezwalaj** lub **Blokuj**.
@@ -136,20 +140,15 @@ Aby zarządzać wszystkimi zezwoleniami i blokami, zobacz [Dodawanie bloków na 
      - **Ostatnia aktualizacja**
      - **Usuń przy**
      - **Uwagi**
-   - **Fałszowanie**
-     - **Sfałszowany użytkownik**
-     - **Wysyłanie infrastruktury**
-     - **Typ fałszowania**: wartość **Wewnętrzna** lub **Zewnętrzna**.
-     - **Akcja**: wartość **Blokuj** lub **Zezwalaj**.
 
    Możesz kliknąć nagłówek kolumny, aby posortować w kolejności rosnącej lub malejącej.
 
    Możesz kliknąć pozycję **Grupuj** , aby pogrupować wyniki. Dostępne wartości zależą od wybranej karty:
 
    - **Nadawcy**: wyniki można grupować według **akcji**.
+   - **Fałszowanie**: wyniki można grupować według typu **Akcja** lub **Fałszowanie**.
    - **Adresy URL**: wyniki można grupować według **akcji**.
    - **Pliki**: wyniki można grupować według **akcji**.
-   - **Fałszowanie**: wyniki można grupować według typu **Akcja** lub **Fałszowanie**.
 
    Kliknij **pozycję Wyszukaj**, wprowadź całość lub część wartości, a następnie naciśnij klawisz ENTER, aby znaleźć określoną wartość. Po zakończeniu kliknij pozycję ![Wyczyść ikonę wyszukiwania.](../../media/m365-cc-sc-close-icon.png) **Wyczyść wyszukiwanie**.
 
@@ -160,6 +159,9 @@ Aby zarządzać wszystkimi zezwoleniami i blokami, zobacz [Dodawanie bloków na 
      - **Nigdy nie wygasaj**
      - **Data ostatniej aktualizacji**
      - **Usuń przy**
+   - **Fałszowanie**
+     - **Akcja**
+     - **Typ fałszowania**
    - **Adresy url**
      - **Akcja**
      - **Nigdy nie wygasaj**
@@ -170,9 +172,6 @@ Aby zarządzać wszystkimi zezwoleniami i blokami, zobacz [Dodawanie bloków na 
      - **Nigdy nie wygasaj**
      - **Ostatnia aktualizacja**
      - **Usuń przy**
-   - **Fałszowanie**
-     - **Akcja**
-     - **Typ fałszowania**
 
    Po zakończeniu kliknij przycisk **Zastosuj**. Aby wyczyścić istniejące filtry, kliknij pozycję **Filtruj**, a następnie w wyświetlonym wysuwu **Filtr** kliknij pozycję **Wyczyść filtry**.
 

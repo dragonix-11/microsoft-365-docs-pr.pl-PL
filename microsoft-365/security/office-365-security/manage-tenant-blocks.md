@@ -16,12 +16,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować bloki na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 03c56e5e7e540766bb4a6048fba15b494c46d815
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100660"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182722"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Dodawanie blokad na liście dozwolonych/zablokowanych dzierżaw
 
@@ -32,11 +32,11 @@ ms.locfileid: "65100660"
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-## <a name="use-the-microsoft-365-defender-portal"></a>Korzystanie z portalu Microsoft 365 Defender 
+## <a name="use-the-microsoft-365-defender-portal"></a>Korzystanie z portalu Microsoft 365 Defender
 
 ### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>Tworzenie wpisów nadawcy bloku na liście dozwolonych/zablokowanych dzierżaw
 
-1. W portalu Microsoft 365 Defender przejdź **do sekcji** **Zasady & reguły zasad** \> **zagrożeń** \> w sekcji \> **Zezwalaj/blokuj listy dzierżawy**.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do sekcji **Zasady, & reguły zasad** \> **zagrożeń** \> **,** sekcja \> **Zezwalaj/blokuj listy dzierżawy**. Możesz też przejść bezpośrednio do strony **Zezwalaj/blokuj listę dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Na stronie **Lista dozwolonych/zablokowanych dzierżawy** sprawdź, czy wybrano kartę **Nadawcy** , a następnie kliknij ikonę ![Blokuj.](../../media/m365-cc-sc-create-icon.png) **Blokuj**.
 
@@ -53,11 +53,11 @@ ms.locfileid: "65100660"
 4. Po zakończeniu kliknij przycisk **Dodaj**.
 
 > [!NOTE]
-> Wiadomości e-mail od tych nadawców zostaną zablokowane jako *spam o wysokim poziomie ufności (SCL = 9).*. 
+> Wiadomości e-mail od tych nadawców zostaną zablokowane jako _spam o wysokim poziomie zaufania_ (SCL = 9).
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>Tworzenie wpisów bloku adresu URL na liście dozwolonych/zablokowanych dzierżaw
 
-1. W portalu Microsoft 365 Defender przejdź **do sekcji** **Zasady & reguły zasad** \> **zagrożeń** \> w sekcji \> **Zezwalaj/blokuj listy dzierżawy**.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do sekcji **Zasady, & reguły zasad** \> **zagrożeń** \> **,** sekcja \> **Zezwalaj/blokuj listy dzierżawy**. Możesz też przejść bezpośrednio do strony **Zezwalaj/blokuj listę dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Na stronie **Lista dozwolonych/zablokowanych dzierżawy** sprawdź, czy wybrano kartę **Adresy URL** , a następnie kliknij pozycję Blokuj ikonę ![.](../../media/m365-cc-sc-create-icon.png) **Blokuj**.
 
@@ -74,11 +74,11 @@ ms.locfileid: "65100660"
 4. Po zakończeniu kliknij przycisk **Dodaj**.
 
 > [!NOTE]
-> Wiadomości e-mail zawierające te adresy URL zostaną zablokowane jako *phish*. 
+> Wiadomości e-mail zawierające te adresy URL zostaną zablokowane jako _phish_.
 
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>Tworzenie wpisów pliku blokowego na liście dozwolonych/zablokowanych dzierżaw
 
-1. W portalu Microsoft 365 Defender przejdź **do sekcji** **Zasady & reguły zasad** \> **zagrożeń** \> w sekcji \> **Zezwalaj/blokuj listy dzierżawy**.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do sekcji **Zasady, & reguły zasad** \> **zagrożeń** \> **,** sekcja \> **Zezwalaj/blokuj listy dzierżawy**. Możesz też przejść bezpośrednio do strony **Zezwalaj/blokuj listę dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Na stronie **Lista dozwolonych/blokowych dzierżawy** wybierz kartę **Pliki** , a następnie kliknij ikonę ![Blokuj.](../../media/m365-cc-sc-create-icon.png) **Blokuj**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "65100660"
 4. Po zakończeniu kliknij przycisk **Dodaj**.
 
 > [!NOTE]
-> Wiadomości e-mail zawierające te pliki zostaną zablokowane jako *złośliwe oprogramowanie*. 
+> Wiadomości e-mail zawierające te pliki zostaną zablokowane jako _złośliwe oprogramowanie_.
 
 ### <a name="create-spoofed-sender-block-entries"></a>Tworzenie sfałszowanych wpisów bloku nadawcy
 
@@ -118,8 +118,9 @@ ms.locfileid: "65100660"
    - **Akcja**: wybierz pozycję **Blokuj**.
 
 4. Po zakończeniu kliknij przycisk **Dodaj**.
+
 > [!NOTE]
-> Wiadomości e-mail od tych nadawców zostaną zablokowane jako *phish*. 
+> Wiadomości e-mail od tych nadawców zostaną zablokowane jako _phish_.
 
 ## <a name="use-powershell"></a>Korzystanie z programu PowerShell
 
@@ -151,7 +152,7 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="add-spoofed-sender-block-entries"></a>Dodawanie sfałszowanych wpisów bloku nadawcy 
+### <a name="add-spoofed-sender-block-entries"></a>Dodawanie sfałszowanych wpisów bloku nadawcy
 
 Aby dodać sfałszowane wpisy nadawcy na liście zezwalania/blokowania dzierżawy, użyj następującej składni:
 

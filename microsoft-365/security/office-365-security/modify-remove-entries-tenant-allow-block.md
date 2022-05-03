@@ -16,12 +16,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak modyfikować i usuwać wpisy na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7da986c42421c797f2d01b1e61d50c06933e373f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ac612b51cab9069e50c4eec05948b3aa840b9cc9
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970936"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182700"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modyfikowanie i usuwanie wpisów na liście dozwolonych/zablokowanych dzierżaw
 
@@ -38,7 +38,7 @@ Za pomocą portalu Microsoft 365 Defender lub programu PowerShell można modyfik
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>Modyfikowanie wpisów na liście dozwolonych/zablokowanych dzierżaw
 
-1. W portalu Microsoft 365 Defender przejdź **do sekcji** **Zasady & reguły zasad** \> **zagrożeń** \> w sekcji \> **Zezwalaj/blokuj listy dzierżawy**.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do sekcji **Zasady, & reguły zasad** \> **zagrożeń** \> **,** sekcja \> **Zezwalaj/blokuj listy dzierżawy**. Możesz też przejść bezpośrednio do strony **Zezwalaj/blokuj listę dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Wybierz kartę zawierającą typ wpisu, który chcesz zmodyfikować:
    - **Nadawców**
@@ -66,7 +66,7 @@ Za pomocą portalu Microsoft 365 Defender lub programu PowerShell można modyfik
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>Usuwanie wpisów z listy dozwolonych/zablokowanych dzierżaw
 
-1. W portalu Microsoft 365 Defender przejdź **do sekcji** **Zasady & reguły zasad** \> **zagrożeń** \> w sekcji \> **Zezwalaj/blokuj listy dzierżawy**.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do sekcji **Zasady, & reguły zasad** \> **zagrożeń** \> **,** sekcja \> **Zezwalaj/blokuj listy dzierżawy**. Możesz też przejść bezpośrednio do strony **Zezwalaj/blokuj listę dzierżawy** , użyj polecenia <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Wybierz kartę zawierającą typ wpisu, który chcesz usunąć:
    - **Nadawców**

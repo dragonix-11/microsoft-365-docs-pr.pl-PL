@@ -16,12 +16,12 @@ ms.custom: ''
 description: Dowiedz się, jak rozpoznawać łącznik z naruszonymi zabezpieczeniami i reagować na nie w Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3aadcd44fcf2c6ab6665546a6335dd15997e3d2
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 50caf98bec9d918dd3ff1bcb076a080b123a357a
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130280"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182649"
 ---
 # <a name="respond-to-a-compromised-connector"></a>Reagowanie na łącznik z naruszonymi zabezpieczeniami
 
@@ -83,7 +83,7 @@ Jeśli masz [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](de
 
     :::image type="content" source="../../media/connector-compromise-sender-ip.png" alt-text="Adres IP nadawcy i lokalny adres IP organizacji" lightbox="../../media/connector-compromise-sender-ip.png":::
 
-Jeśli masz [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1](defender-for-office-365.md) lub [Exchange Online Protection](exchange-online-protection-overview.md), przejdź do .https://admin-sdf.exchange.microsoft.com/#/messagetrace 
+Jeśli masz [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1](defender-for-office-365.md) lub [Exchange Online Protection](exchange-online-protection-overview.md), przejdź do .https://admin.exchange.microsoft.com/#/messagetrace 
 
 1. Otwórz alert **dotyczący działania podejrzanego łącznika** w programie https://security.microsoft.com/alerts.  
 
@@ -91,13 +91,13 @@ Jeśli masz [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1](de
 
     :::image type="content" source="../../media/connector-compromise-outbound-email-details.png" alt-text="Szczegóły wychodzącej poczty e-mail dotyczące naruszenia zabezpieczeń łącznika" lightbox="../../media/connector-compromise-outbound-email-details.png":::
     
-3. Wyszukaj przy użyciu **domeny łącznika** i **adresu IP** w [**śledzenia komunikatów**](https://admin-sdf.exchange.microsoft.com/#/messagetrace). 
+3. Wyszukaj przy użyciu **domeny łącznika** i **adresu IP** w [**śledzenia komunikatów**](https://admin.exchange.microsoft.com/#/messagetrace). 
 
     :::image type="content" source="../../media/connector-compromise-new-message-trace.png" alt-text="Wysuwany nowy ślad komunikatu" lightbox="../../media/connector-compromise-new-message-trace.png":::
     
 4. W wynikach wyszukiwania **śledzenia komunikatów** zidentyfikuj: 
 
-    - Jeśli znaczna liczba wiadomości e-mail została ostatnio **oznaczona jako FilteredAsSpam**.  Jest to dobry wskaźnik naruszenia zabezpieczeń łącznika używanego do wysyłania spamu. 
+    - Jeśli znaczna liczba wiadomości e-mail została ostatnio **oznaczona jako FilteredAsSpam**. Jest to dobry wskaźnik naruszenia zabezpieczeń łącznika używanego do wysyłania spamu. 
 
     - Jeśli adresaci są adresatami, z którymi organizacja zwykle pozostaje w kontakcie. 
 
