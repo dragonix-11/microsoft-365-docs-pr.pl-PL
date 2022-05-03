@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77766c153582f519aa0ba9853d18c216092747bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092310"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173710"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "65092310"
 Ochrona punktu końcowego w usłudze Microsoft Defender to platforma zabezpieczeń punktu końcowego przedsiębiorstwa, która pomaga sieciom przedsiębiorstw w zapobieganiu zaawansowanym zagrożeniom, wykrywaniu i badaniu ich oraz reagowaniu na nie.
 
 > [!TIP]
-> Wkrótce Ochrona punktu końcowego w usłudze Microsoft Defender będą dostępne w dwóch planach. W tym artykule opisano funkcje i możliwości zawarte w planie Ochrona punktu końcowego w usłudze Microsoft Defender 2. [Dowiedz się więcej o Ochrona punktu końcowego w usłudze Microsoft Defender planie 1 i planie 2](defender-endpoint-plan-1-2.md).
+> Ochrona punktu końcowego w usłudze Microsoft Defender jest dostępna w dwóch planach: Defender for Endpoint Plan 1 i Plan 2. W tym artykule opisano funkcje i możliwości zawarte w każdym planie. [Dowiedz się więcej o Ochrona punktu końcowego w usłudze Microsoft Defender planie 1 i planie 2](defender-endpoint-plan-1-2.md).
 > 
 
 <p><p>

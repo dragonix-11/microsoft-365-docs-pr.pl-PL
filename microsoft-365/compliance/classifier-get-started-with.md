@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do przeszkolnych klasyfikatorów
+title: Wprowadzenie do klasyfikatorów z możliwością szkolenia
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,23 +18,25 @@ ms.custom: admindeeplinkDEFENDER
 search.appverid:
 - MOE150
 - MET150
-description: Klasyfikator Microsoft 365 to narzędzie, które można szkolenie w celu rozpoznawania różnych typów zawartości, dając mu przykłady do oglądu. W tym artykule pokazano, jak utworzyć i przeszkolenie niestandardowego klasyfikatora oraz jak przećwiczać je w celu zwiększenia dokładności.
-ms.openlocfilehash: 263791549e314a116f21231e8dc4cde5be380cb7
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+description: Klasyfikator Microsoft 365 to narzędzie, które można wytrenować w celu rozpoznawania różnych typów zawartości, udostępniając przykłady do obejrzenia. W tym artykule przedstawiono sposób tworzenia i trenowania klasyfikatora niestandardowego oraz sposobu ich ponownego trenowania w celu zwiększenia dokładności.
+ms.openlocfilehash: d3a7639ed31dc42688cffbffb151049659a41660
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63005734"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173192"
 ---
-# <a name="get-started-with-trainable-classifiers"></a>Wprowadzenie do przeszkolnych klasyfikatorów
+# <a name="get-started-with-trainable-classifiers"></a>Wprowadzenie do klasyfikatorów z możliwością szkolenia
 
-Przeszkolny Microsoft 365 klasyfikator to narzędzie, które może pomóc w rozpoznawczym typach zawartości, dając mu przykłady do oglądu. Po przeszkoleniu możesz za jego pomocą zidentyfikować element do stosowania etykiet wrażliwości Office, zasad zgodności komunikacji i zasad etykiet przechowywania.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Utworzenie niestandardowego, przeszkoliwnego klasyfikatora polega najpierw na podaniem próbki, która jest wybierana przez człowieka i dobrze dopasowana do kategorii. Następnie, po przetworzeniu tych danych, należy przetestować możliwość przewidywania klasyfikatorów, podając połączenie próbek dodatnich i ujemnych. W tym artykule pokazano, jak utworzyć i przeszkolenie niestandardowego klasyfikatora oraz jak zwiększyć wydajność niestandardowych przeszkolonych klasyfikatorów i wstępnie przeszkolonych klasyfikatorów przez ich okres istnienia przez ponowne przeszkolenie.
+Klasyfikator Microsoft 365 trainable to narzędzie, które można wytrenować w celu rozpoznawania różnych typów zawartości, dając mu przykłady do obejrzenia. Po wytrenowaniu można go używać do identyfikowania elementów do stosowania etykiet poufności Office, zasad zgodności komunikacji i zasad etykiet przechowywania.
 
-Aby dowiedzieć się więcej o różnych typach klasyfikatorów, zobacz [Informacje o przeszkolnych klasyfikatorach](classifier-learn-about.md).
+Najpierw utworzenie niestandardowego klasyfikatora trenowalnego polega na nadaniu mu próbek, które są wybierane przez człowieka i pozytywnie pasują do kategorii. Następnie, po przetworzeniu tych, można przetestować zdolność klasyfikatorów do przewidywania, dając mu mieszankę pozytywnych i negatywnych próbek. W tym artykule pokazano, jak utworzyć i wytrenować klasyfikator niestandardowy oraz jak zwiększyć wydajność niestandardowych klasyfikatorów trenowalnych i wstępnie wytrenowanych klasyfikatorów w okresie ich istnienia poprzez ponowne trenowanie.
 
-Obejrzyj ten klip wideo, aby szybko podsumować tworzenie przeszkoliwnego klasyfikatora. Aby uzyskać szczegółowe informacje, nadal musisz przeczytać ten pełny artykuł.
+Aby dowiedzieć się więcej na temat różnych typów klasyfikatorów, zobacz [Learn about trainable classifiers (Dowiedz się więcej o klasyfikatorach z możliwością trenowania](classifier-learn-about.md)).
+
+Obejrzyj to wideo, aby zapoznać się z krótkim podsumowaniem tworzenia klasyfikatora z możliwością trenowania. Aby uzyskać szczegółowe informacje, nadal musisz przeczytać ten pełny artykuł.
 
 </br>
 
@@ -45,116 +47,116 @@ Obejrzyj ten klip wideo, aby szybko podsumować tworzenie przeszkoliwnego klasyf
 
 ### <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
 
-Klasyfikatory to funkcja zgodności Microsoft 365 E5 lub E5. Aby można było korzystać z tych subskrypcji, musisz mieć jedną z tych subskrypcji.
+Klasyfikatory są funkcją Microsoft 365 E5 lub E5 Compliance. Aby móc z nich korzystać, musisz mieć jedną z tych subskrypcji.
 
 ### <a name="permissions"></a>Uprawnienia
 
 Aby uzyskać dostęp do klasyfikatorów w interfejsie użytkownika: 
 
-- Administrator globalny musi wybrać opcję dla dzierżawy, aby tworzyć niestandardowe klasyfikatory.
-- Rola administratora zgodności jest wymagana do przeszkolinia klasyfikatora.
+- Administrator globalny musi wyrazić zgodę na dzierżawę w celu utworzenia niestandardowych klasyfikatorów.
+- Rola administratora zgodności jest wymagana do trenowania klasyfikatora.
 
-Do używania klasyfikatorów w tych scenariuszach potrzebne są konta z tymi uprawnieniami:
+Konta z tymi uprawnieniami będą potrzebne do używania klasyfikatorów w następujących scenariuszach:
 
-- Scenariusz zasad etykiet przechowywania: Role zarządzania rekordami i zarządzania przechowywaniem 
-- Scenariusz zasad etykiet wrażliwości: Administrator zabezpieczeń, Administrator zgodności, Administrator danych zgodności
-- Scenariusz zasad zgodności komunikacji: Administrator zarządzania ryzykiem w niejawnym programie testów, administrator przeglądu nadzorczych 
+- Scenariusz zasad przechowywania etykiet: Role zarządzania rekordami i zarządzania przechowywaniem 
+- Scenariusz zasad etykiet poufności: Administrator zabezpieczeń, Administrator zgodności, Administrator danych zgodności
+- Scenariusz zasad zgodności komunikacji: Administrator zarządzania ryzykiem wewnętrznym, administrator przeglądu nadzoru 
 
 > [!IMPORTANT]
-> Domyślnie tylko użytkownik, który tworzy niestandardowy klasyfikator, może przeszkolić i przeglądać prognozy wprowadzone przez tego klasyfikatora.
+> Domyślnie tylko użytkownik tworzący klasyfikator niestandardowy może trenować i przeglądać przewidywania dokonane przez ten klasyfikator.
 
-## <a name="prepare-for-a-custom-trainable-classifier"></a>Przygotowanie na niestandardowy klasyfikator przeszkolny 
+## <a name="prepare-for-a-custom-trainable-classifier"></a>Przygotowanie do niestandardowego klasyfikatora trenowalnego 
 
-Warto zrozumieć, co należy zrobić w celu utworzenia niestandardowego, przeszkoliwnego klasyfikatora, zanim zanurzysz się. 
+Warto zrozumieć, co jest związane z tworzeniem niestandardowego klasyfikatora trenowalnego przed rozpoczęciem pracy. 
 
 ### <a name="timeline"></a>Oś czasu
 
-Ta oś czasu odzwierciedla przykładowe wdrożenie klasyfikatorów przeszkolnych.
+Ta oś czasu odzwierciedla przykładowe wdrożenie klasyfikatorów z możliwością trenowania.
 
 ![trainable-classifier-timeline.](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> Klauzula opt-in jest wymagana po raz pierwszy dla przeszkolnych klasyfikatorów. Ukończenie oceny planu bazowego Microsoft 365 organizacji w ciągu dwunastu dni. Skontaktuj się z administratorem globalnym, aby rozpostartować proces rejestracji.
+> Zgoda jest wymagana po raz pierwszy dla klasyfikatorów z możliwością trenowania. Ukończenie oceny bazowej zawartości organizacji trwa dwanaście dni, Microsoft 365. Skontaktuj się z administratorem globalnym, aby rozpocząć proces zgody.
 
 ### <a name="overall-workflow"></a>Ogólny przepływ pracy
 
-Aby dowiedzieć się więcej o ogólnym przepływie pracy tworzenia niestandardowych, przeszkolnych klasyfikatorów, zobacz Przepływ procesu tworzenia klasyfikatorów przeszkolnych [klientów](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
+Aby dowiedzieć się więcej na temat ogólnego przepływu pracy tworzenia niestandardowych klasyfikatorów trenowalnych, zobacz [Przepływ procesów tworzenia niestandardowych klasyfikatorów trenowalnych](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
 
-### <a name="seed-content"></a>Zawartość iniekcyjna
+### <a name="seed-content"></a>Zawartość inicjowania
 
-Aby przeszkolić klasyfikatora niezależnie i dokładnie zidentyfikować element jako element w określonej kategorii treści, musisz najpierw przedstawić go z wieloma przykładami typu zawartości określonej kategorii. To podawanie próbek dla przeszkoliwnego klasyfikatora jest nazywane *inicjatorem*. Zawartość iniekcyjna jest wybierana przez ludzi i oceniana jako kategoria treści.
+Jeśli chcesz, aby klasyfikator trenowalny niezależnie i dokładnie identyfikował element jako znajdujący się w określonej kategorii zawartości, najpierw musisz przedstawić go z wieloma przykładami typu zawartości, które znajdują się w kategorii. To podawanie próbek klasyfikatorowi trainable jest znane jako *rozsiewanie*. Zawartość inicjowania jest wybierana przez człowieka i jest oceniana jako reprezentująca kategorię zawartości.
 
 > [!TIP]
-> Należy mieć co najmniej 50 próbek dodatnich i nawet 500. Przeszkolny klasyfikator będzie przetwarzać maksymalnie 500 najnowszych utworzonych przykładów (według sygnatury daty/godziny utworzenia pliku). Im więcej próbek poowie, tym dokładniejszy będzie podpowiadał klasfikator.
+> Musisz mieć co najmniej 50 pozytywnych próbek i aż 500. Klasyfikator trainable będzie przetwarzać maksymalnie 500 najnowszych utworzonych przykładów (według daty/sygnatury czasowej utworzonego pliku). Im więcej przykładów podasz, tym dokładniejsze będą przewidywania klasyfikatora.
 
 ### <a name="testing-content"></a>Testowanie zawartości
 
-Gdy przeszkolny klasyfikator przetworzona jest wystarczająca ilość dodatnich próbek do zbudowania modelu prognozowania, należy sprawdzić prognozy, które wykonuje, aby sprawdzić, czy klasyfikator prawidłowo rozróżnia elementy, które pasują do kategorii, a elementy, które nie są takie. W tym celu należy wybrać kolejną, mając większej, zbiór zawartości pobranej przez człowieka, która powinna się znaleźć w kategorii, i próbki, które nie powinny zostać do tej kategorii. Należy testowania danych innych niż początkowe dane inicjalnie podane po raz pierwszy. Po przeprocesów tych danych ręcznie przechodzisz przez wyniki i sprawdzasz, czy każda prognoza jest poprawna, nieprawidłowa lub nie masz pewności. Klasyfikator przeszkoliwczy używa tych opinii w celu ulepszenia swojego modelu prognozowania.
+Gdy klasyfikator trenowalny przetworzy wystarczająco dużo pozytywnych przykładów, aby utworzyć model przewidywania, musisz przetestować przewidywania, które wykonuje, aby sprawdzić, czy klasyfikator może poprawnie odróżnić elementy zgodne z kategorią i elementami, które tego nie zrobią. Można to zrobić, wybierając inny, miejmy nadzieję większy, zestaw zawartości wybranej przez człowieka, który składa się z próbek, które powinny należeć do kategorii i próbek, które nie będą. Należy przetestować dane inne niż początkowe dane inicjowania podane po raz pierwszy. Po ich przeróżniu możesz ręcznie przejść przez wyniki i sprawdzić, czy każde przewidywanie jest poprawne, niepoprawne, czy też nie masz pewności. Klasyfikator trainable używa tej opinii, aby ulepszyć swój model przewidywania.
 
 > [!TIP]
-> Aby uzyskać najlepsze wyniki, należy mieć w zestawie próbek testowych co najmniej 200 elementów z równomiernym rozkładem wyników dodatnich i ujemnych.
+> Aby uzyskać najlepsze wyniki, masz co najmniej 200 elementów w zestawie przykładów testowych z równomiernym rozkładem dopasowań dodatnich i ujemnych.
 
-## <a name="how-to-create-a-trainable-classifier"></a>Jak utworzyć przeszkolny klasyfikator
+## <a name="how-to-create-a-trainable-classifier"></a>Jak utworzyć klasyfikator trenowalny
 
-1. Zbierz od 50 do 500 elementów w zawartości iniekcyjną. Muszą to być tylko próbki, które zdecydowanie reprezentują typ zawartości, którą ma przećwiczyć klasyfikator, aby dokładnie identyfikował go jako należący do kategorii klasyfikacji. Aby uzyskać [informacje na](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) temat obsługiwanych typów plików, zobacz Domyślne rozszerzenia nazw plików przeszukanych i typy plików SharePoint server.
+1. Zbierz od 50 do 500 elementów zawartości inicjowania. Muszą to być tylko przykłady, które silnie reprezentują typ zawartości, którą klasyfikator trainable ma pozytywnie zidentyfikować jako będącą w kategorii klasyfikacji. Zobacz [Domyślne rozszerzenia nazw plików przeszukanych i analizowane typy plików w programie SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) dla obsługiwanych typów plików.
 
    > [!IMPORTANT]
-   > Upewnij się, że elementy w zestawie iniekków **są silnymi przykładami** kategorii. Przeszkolny klasyfikator początkowo tworzy swój model na podstawie tego, co jest inicjatorem. Klasyfikator zakłada, że wszystkie próbki iniekatorów są silnymi wartościami dodatnimi i nie wiadomo, czy próbka jest słaba, czy ujemna dla danej kategorii.
+   > Upewnij się, że elementy w zestawie inicjowania są **silnymi** przykładami kategorii. Klasyfikator trainable początkowo tworzy swój model w oparciu o to, z czym go inicjujesz. Klasyfikator zakłada, że wszystkie próbki nasion są silnymi wynikami dodatnimi i nie ma możliwości poznania, czy próbka jest słabym lub negatywnym dopasowaniem do kategorii.
 
-2. Umieść zawartość iniekcyjną w folderze SharePoint Online, który jest przeznaczony tylko do przechowywania *zawartości iniekcyjną*. Zanotuj adres URL witryny, biblioteki i folderu.
+2. Umieść zawartość inicjowania w folderze SharePoint Online przeznaczonym tylko do przechowywania *zawartości inicjującej*. Zanotuj adres URL witryny, biblioteki i folderu.
 
    > [!TIP]
-   > Jeśli utworzysz nową witrynę i folder na dane iniekcyjną, przed utworzeniem przeszkoliwnego klasyfikatora, który użyje danych iniektora, odczekaj co najmniej godzinę na zindeksowanie tej lokalizacji.
+   > Jeśli utworzysz nową lokację i folder dla danych inicjatora, przed utworzeniem klasyfikatora trainable, który będzie używać tych danych inicjacyjnych, zaczekaj co najmniej godzinę na indeksowanie tej lokalizacji.
 
-3. Zaloguj się w celu Centrum zgodności platformy Microsoft 365 uprawnień przy użyciu roli administratora zgodności lub administratora zabezpieczeń i otwórz <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a> Centrum zgodności platformy Microsoft 365 lub Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dane portalu</a> > **klasyfikacja**.
+3. Zaloguj się do portalu zgodności usługi Microsoft Purview z dostępem administratora zgodności lub administratora zabezpieczeń i otwórz <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności usługi Microsoft Purview</a> lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a> >  Microsoft 365 Defender **Klasyfikacja danych**.
 
-4. Wybierz **kartę Klasyfikatory do przeszkoli** .
+4. Wybierz kartę **Trainable classifiers (Klasyfikatory z możliwością trenowania** ).
 
-5. Wybierz **pozycję Create trainable classifier (Utwórz klasyfikator przeszkolny**).
+5. Wybierz **pozycję Utwórz klasyfikator trenowalny**.
 
-6. Wypełnij odpowiednie wartości dla pól `Name` kategorii `Description` elementów, które ma identyfikować ten przeszkolny klasyfikator.
+6. Wypełnij odpowiednie wartości dla `Name` pól i `Description` kategorii elementów, które chcesz zidentyfikować w tym klasyfikatorze trenowalnym.
 
-7. Wybierz adres URL SharePoint Online, biblioteki i folderu dla witryny zawartości iniektora od kroku 2. Wybierz pozycję `Add`.
+7. Wybierz adres URL witryny, biblioteki i folderu usługi SharePoint Online dla witryny zawartości inicjowania z kroku 2. Wybierz pozycję `Add`.
 
 8. Przejrzyj ustawienia i wybierz pozycję `Create trainable classifier`.
 
-9. W ciągu 24 godzin przeszkolny klasyfikator przetnie dane iniekcyjną i sbuduje model prognozowania. Stan klasyfikatora jest w `In progress` trakcie przetwarzania danych iniekatora. Po zakończeniu przetwarzania danych w iniekcie przez klasyfikatora stan zmieni się na `Need test items`.
+9. W ciągu 24 godzin klasyfikator trainable przetworzy dane inicjowania i utworzy model przewidywania. Stan klasyfikatora to `In progress` czas, w jaki przetwarza dane inicjowania. Po zakończeniu przetwarzania danych inicjałów przez klasyfikator stan zmieni się na `Need test items`.
 
-10. Możesz teraz wyświetlić stronę szczegółów, wybierając klasyfikator.
+10. Teraz możesz wyświetlić stronę szczegółów, wybierając klasyfikator.
 
     > [!div class="mx-imgBorder"]
-    > ![przeszkolny klasyfikator gotowy do testowania.](../media/classifier-trainable-ready-to-test-detail.png)
+    > ![klasyfikator trainable gotowy do testowania.](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Zbierz co najmniej 200 testowych elementów zawartości (10 000 maks),aby uzyskać najlepsze wyniki. Powinny one być kombinacją elementów, które są silne dodatnie, silne wartości ujemne, a inne, które są nieco mniej oczywiste w ich przymiocie. Aby uzyskać [informacje na](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) temat obsługiwanych typów plików, zobacz Domyślne rozszerzenia nazw plików przeszukanych i typy plików SharePoint server.
+11. Zbierz co najmniej 200 testowych elementów zawartości (maksymalnie 10 000), aby uzyskać najlepsze wyniki. Powinny to być mieszanka elementów, które są silne pozytywy, silne negatywy i niektóre, które są nieco mniej oczywiste w ich naturze. Zobacz [Domyślne rozszerzenia nazw plików przeszukanych i analizowane typy plików w programie SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) dla obsługiwanych typów plików.
 
-12. Umieść testową zawartość w folderze SharePoint Online, który jest przeznaczony tylko do przechowywania *zawartości testowej*. Zanotuj adres URL witryny SharePoint Online, biblioteki i folderu.
+12. Umieść zawartość testową w folderze SharePoint Online przeznaczonym tylko do przechowywania *zawartości testowej*. Zanotuj adres URL witryny, biblioteki i folderu usługi SharePoint Online.
 
     > [!TIP]
-    > Jeśli utworzysz nową witrynę i folder na dane testowe, przed utworzeniem przeszkoliwnego klasyfikatora, który użyje danych iniektora, należy zezwolić na zindeksowanie tej lokalizacji co najmniej godzinę.
+    > Jeśli utworzysz nową lokację i folder dla danych testowych, przed utworzeniem klasyfikatora trainable, który będzie używać tych danych inicjacyjnych, zaczekaj co najmniej godzinę na indeksowanie tej lokalizacji.
 
 13. Wybierz pozycję `Add items to test`.
 
-14. Wybierz adres URL SharePoint Online, biblioteki i folderu witryny testowej zawartości z kroku 12. Wybierz pozycję `Add`.
+14. Wybierz adres URL witryny, biblioteki i folderu usługi SharePoint Online dla witryny zawartości testowej z kroku 12. Wybierz pozycję `Add`.
 
-15. Zakończ kreatora, wybierając przycisk `Done`. Przetwarzanie plików testowych przez przeszkolny klasyfikatora może potrwać do godziny.
+15. Zakończ pracę kreatora, wybierając pozycję `Done`. Przetwarzanie plików testowych przez klasyfikator trainable potrwa do godziny.
 
-16. Gdy przeszkolny klasyfikator przejmie przetwarzanie Twoich plików testowych, stan na stronie szczegółów zmieni się na `Ready to review`. Jeśli chcesz zwiększyć rozmiar próbki testowej, `Add items to test` wybierz i zezwomij na przeszkoliwny klasyfikator w celu przetwarzania dodatkowych elementów.
-
-    > [!div class="mx-imgBorder"]
-    > ![gotowy do przejrzenia zrzut ekranu.](../media/classifier-trainable-ready-to-review-detail.png)
-
-17. Wybierz kartę `Tested items to review` , aby przejrzeć elementy.
-
-18. Microsoft 365 prezentować 30 elementów jednocześnie. Przejrzyj je i w polu `We predict this item is "Relevant". Do you agree?` wybierz pozycję albo `Yes` `No` lub `Not sure, skip to next item`. Dokładność modelu jest automatycznie aktualizowana po co 30 elementach.
+16. Po zakończeniu przetwarzania plików testowych klasyfikator trenowalny stan na stronie szczegółów zmieni się na `Ready to review`. Jeśli chcesz zwiększyć rozmiar próbki testowej, wybierz `Add items to test` i zezwól klasyfikatorowi trainable na przetwarzanie dodatkowych elementów.
 
     > [!div class="mx-imgBorder"]
-    > ![pole Przeglądanie elementów.](../media/classifier-trainable-review-detail.png)
+    > ![gotowy do przejrzenia zrzutu ekranu.](../media/classifier-trainable-ready-to-review-detail.png)
 
-19. Przejrzyj *co najmniej* 200 elementów. Po stabilizacji wyniku dokładności pojawi się opcja publikowania, a zostanie jej nadany stan `Ready to use`.
+17. Wybierz `Tested items to review` kartę, aby przejrzeć elementy.
+
+18. Microsoft 365 będzie prezentować 30 elementów jednocześnie. Przejrzyj je i w `We predict this item is "Relevant". Do you agree?` polu wybierz albo `Yes` lub `No` `Not sure, skip to next item`. Dokładność modelu jest automatycznie aktualizowana po każdym 30 elementach.
 
     > [!div class="mx-imgBorder"]
-    > ![oraz gotowe do opublikowania.](../media/classifier-trainable-review-ready-to-publish.png)
+    > ![przejrzyj pole elementów.](../media/classifier-trainable-review-detail.png)
 
-20. Opublikuj klasyfikatora.
+19. Przejrzyj *co najmniej* 200 elementów. Po ustabilizowaniu wyniku dokładności opcja **publikowania** stanie się dostępna, a stan klasyfikatora to `Ready to use`.
 
-21. Po opublikowaniu klasyfikator będzie dostępny jako warunek w Office z etykietami [wrażliwości, zasady](apply-sensitivity-label-automatically.md) automatycznego stosowania etykiet przechowywania [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) na podstawie warunku i zgodności [komunikacji.](communication-compliance.md)
+    > [!div class="mx-imgBorder"]
+    > ![wynik dokładności i gotowy do opublikowania.](../media/classifier-trainable-review-ready-to-publish.png)
+
+20. Opublikuj klasyfikator.
+
+21. Po opublikowaniu klasyfikator będzie dostępny jako warunek [w Office automatycznego etykietowania za pomocą etykiet poufności](apply-sensitivity-label-automatically.md), [zasad automatycznego stosowania etykiet przechowywania na podstawie warunku](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) i [zgodności z komunikacją](communication-compliance.md).

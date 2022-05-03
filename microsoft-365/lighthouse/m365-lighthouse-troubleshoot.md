@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse uzyskaj pomoc dotyczącą rozwiązywania problemów i komunikatów o błędach.
-ms.openlocfilehash: 3ae2737a07815284f2981e8c4debac2d064fc1e9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 939b81344d2957dc005b71d91e27c09a8bca3c96
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130785"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174254"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Rozwiązywanie problemów i komunikatów o błędach w Microsoft 365 Lighthouse
 
@@ -54,7 +54,7 @@ W tym artykule opisano komunikaty o błędach i problemy, które mogą wystąpi�
 **Spowodować:** Dzierżawy klientów nie spełniają następujących kryteriów:
 
 - Aby można było zarządzać dzierżawą klienta, musi mieć skonfigurowany dostęp delegowany dla dostawcy usług zarządzanych (MSP).
-- Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business Microsoft Defender dla Firm
+- Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Business lub Microsoft Defender dla Firm
 - Nie może mieć więcej niż 1000 licencjonowanych użytkowników 
 
 **Rozdzielczość:** W poniższej tabeli opisano różne stany dzierżawy, które wymagają akcji, i wyjaśniono, jak je rozwiązać.
@@ -65,7 +65,7 @@ W tym artykule opisano komunikaty o błędach i problemy, które mogą wystąpi�
 |--|--|--|
 | Nieaktywne | Dzierżawa została odłączona na żądanie MSP i nie jest już zarządzana w lighthouse. | Musisz ponownie uaktywnić dzierżawę. Na stronie **Dzierżawy wybierz trzy kropki** (więcej akcji) obok dzierżawy, którą chcesz ponownie uaktywnić, a następnie wybierz pozycję **Aktywuj dzierżawę**. Może upłynąć 24–48 godzin, aż początkowe dane klientów pojawią się w aplikacji Lighthouse. |
 | Niekwalifikowalne — nie skonfigurowano protokołu DAP lub GDAP | Nie masz uprawnień administratora protokołu DAP ani GDAP skonfigurowanych w dzierżawie, co jest wymagane przez usługę Lighthouse. | Skonfiguruj uprawnienia administratora protokołu DAP lub GDAP w Centrum partnerskim firmy Microsoft. |
-| Niekwalifikowalne — brak wymaganej licencji | W dzierżawie brakuje wymaganej licencji. Potrzebują co najmniej jednej licencji Microsoft 365 Business Premium, Microsoft 365 E3 lub Microsoft Defender dla Firm. | Upewnij się, że dzierżawa ma przypisaną co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Business Microsoft Defender dla Firm. |
+| Niekwalifikowalne — brak wymaganej licencji | W dzierżawie brakuje wymaganej licencji. Potrzebują co najmniej jednej licencji Microsoft 365 Business Premium, Microsoft 365 E3 lub Microsoft Defender dla Firm. | Upewnij się, że dzierżawa ma przypisaną co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Business lub Microsoft Defender dla Firm. |
 | Niekwalifikowalne — przekroczono liczbę użytkowników | Dzierżawa ma więcej niż maksymalnie 1000 licencjonowanych użytkowników dozwolonych przez usługę Lighthouse. | Sprawdź, czy dzierżawa nie ma więcej niż 1000 licencjonowanych użytkowników. |
 | Niekwalifikowalne — sprawdzanie geograficzne nie powiodło się | Ty i Twój klient nie mieszkacie w tym samym regionie geograficznym, który jest wymagany przez usługę Lighthouse. | Sprawdź, czy klient znajduje się w twoim regionie geograficznym. Jeśli nie, nie możesz zarządzać dzierżawą w aplikacji Lighthouse. |
 | W toku | Lighthouse odkrył dzierżawę, ale nadal jest w trakcie ich dołączania. | Zezwalaj aplikacji Lighthouse na 48 godzin na ukończenie dołączania dzierżawy. |

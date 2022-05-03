@@ -1,5 +1,5 @@
 ---
-title: Zarejestruj się w celu Microsoft 365 Lighthouse
+title: Tworzenie konta w Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -16,53 +16,53 @@ ms.custom:
 - M365-Lighthouse
 - intro-get-started
 search.appverid: MET150
-description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP), dowiedz się, jak pisać Microsoft 365 Lighthouse.
-ms.openlocfilehash: 25ad88edc63d53e3c9110062a64285bbb759a775
-ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
+description: W przypadku dostawców usług zarządzanych dowiedz się, jak zarejestrować się w Microsoft 365 Lighthouse.
+ms.openlocfilehash: 8d845ed454a672b1480ca0b6fe6f471cc30a37a6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64645185"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172208"
 ---
-# <a name="sign-up-for-microsoft-365-lighthouse"></a>Zarejestruj się w celu Microsoft 365 Lighthouse
+# <a name="sign-up-for-microsoft-365-lighthouse"></a>Tworzenie konta w Microsoft 365 Lighthouse
 
-Ten artykuł zawiera instrukcje dotyczące sposobu rejestracji w celu Microsoft 365 Lighthouse. Microsoft 365 Lighthouse to portal administracyjny, który ułatwia zarządzanym dostawcom usług (MSP) zabezpieczanie urządzeń, danych i użytkowników oraz zarządzanie nimi na skalę dla klientów małych i średnich firm korzystających z usług firmy Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business. 
+Ten artykuł zawiera instrukcje dotyczące rejestrowania się w Microsoft 365 Lighthouse. Microsoft 365 Lighthouse jest portalem administracyjnym, który ułatwia dostawcom usług zarządzanych zabezpieczanie urządzeń, danych i użytkowników na dużą skalę oraz zarządzanie nimi dla klientów małych i średnich firm (SMB). 
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- &mdash;Microsoft 365 Lighthouse jest wdrażana w dzierżawie partnerskiej tylkonie w dzierżawach klientów, ale upewnij się, że Twoja dzierżawa klienta spełnia wymagania wymienione Microsoft 365 Lighthouse [wymagań](m365-lighthouse-requirements.md).
+- Microsoft 365 Lighthouse jest wdrażana w dzierżawie partnera nie tylko&mdash; w dzierżawach klientów, ale upewnij się, że Ty i Twoi dzierżawcy klienta spełniacie wymagania wymienione w [Microsoft 365 Lighthouse wymaganiach](m365-lighthouse-requirements.md).
 
-- Musisz być administratorem globalnym w dzierżawie partnerskiej, do których się logujesz.
+- Musisz być administratorem globalnym w dzierżawie partnera, do której się logujesz.
 
-## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>Procedura rejestracji w Microsoft 365 Lighthouse
+## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>Kroki tworzenia konta w celu Microsoft 365 Lighthouse
 
-1. Przejdź do Centrum administracyjne platformy Microsoft 365 i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> zaloguj się przy użyciu poświadczeń dzierżawy partnera. 
+1. Przejdź do Centrum administracyjne platformy Microsoft 365 pod adresem <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> i zaloguj się przy użyciu poświadczeń dzierżawy partnera. 
 
-1. Przejdź do **billingpurchase** >  **ServicesOther** >  Services.
+1. Przejdź do pozycji **RozliczeniaPurchase** >  **ServicesOther** >  Services.
 
-    Jeśli Microsoft 365 Lighthouse nie ma na liście usług, wybierz pozycję **Zobacz wszystkie inne produkty usług**.
+    Jeśli Microsoft 365 Lighthouse nie znajduje się na liście usług, wybierz pozycję **Zobacz wszystkie inne produkty usług**.
 
-    Jeśli wystąpi błąd Zakup usług, wybierz **pozycję Wyświetl produkty** u dołu strony.
+    Jeśli napotkasz stronę błędu Zakup usług, wybierz pozycję **Wyświetl produkty** w dolnej części strony.
 
-1. W **Microsoft 365 Lighthouse** wybierz pozycję **Szczegóły**. 
+1. W obszarze **Microsoft 365 Lighthouse** wybierz pozycję **Szczegóły**. 
 
-1. Wybierz **pozycję Kup**.
-
-    > [!NOTE]
-    > Latarnia morska wymaga tylko jednej licencji dla dzierżawy partnerskiej. Partner nie musi posiadać żadnych dodatkowych licencji na użytkownika, a w żadnej dzierżawie klienta nie są wymagane żadne licencje na usługę Lighthouse. 
-
-    Aby sprawdzić, czy latarnia morska została pomyślnie dodana do Twojej dzierżawy, poszukaj informacji Microsoft 365 Lighthouse w obszarze Rozliczenia **> Produkty** w Centrum administracyjne platformy Microsoft 365.
-
-1. Jeśli nie przekierowujesz cię do portalu Latarnia morska, przejdź do .<a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>
-
-1. Wybierz **pozycję & kontynuować,** aby ukończyć poprawkę z umową partnerską.
+1. Wybierz pozycję **Kup**.
 
     > [!NOTE]
-    > Po zakończeniu rejestracji dane klienta pojawią się w latarni morskiej w ciągu 48 godzin.
+    > Usługa Lighthouse wymaga jednej licencji tylko dla dzierżawy partnera. Dla partnera nie są wymagane żadne dodatkowe licencje na użytkownika, a w żadnej dzierżawie klienta nie są wymagane żadne licencje usługi Lighthouse. 
+
+    Aby sprawdzić, czy usługa Lighthouse została pomyślnie dodana do dzierżawy, poszukaj Microsoft 365 Lighthouse w obszarze **Rozliczenia > Twoje produkty** w Centrum administracyjne platformy Microsoft 365.
+
+1. Jeśli nie nastąpi przekierowanie do portalu lighthouse, przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+
+1. Wybierz pozycję **Zgadzam się, & Kontynuuj** , aby ukończyć poprawkę do umowy partnerskiej.
+
+    > [!NOTE]
+    > Po zakończeniu rejestracji może upłynąć do 48 godzin, aż dane klientów pojawią się w aplikacji Lighthouse.
 
 ## <a name="next-steps"></a>Następne kroki
 
-[Konfigurowanie Microsoft 365 Lighthouse zabezpieczeń portalu](m365-lighthouse-configure-portal-security.md) 
+[Konfigurowanie zabezpieczeń portalu Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) 
 
 ## <a name="related-content"></a>Zawartość pokrewna
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informacje dla administratorów IT dotyczące zarządzania etykietami poufności w aplikacjach Office dla komputerów stacjonarnych, urządzeń przenośnych i sieci Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0f24e707bef05b541f301a41596737c17b4ed587
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 792b87c8d045002ebec27dc5de38177cec0ae647
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098433"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172312"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Zarządzanie etykietami poufności w aplikacjach Office
 
@@ -115,8 +115,7 @@ Jeśli użytkownicy mają zainstalowanego [klienta usługi Azure Information Pro
 > [!NOTE]
 > Jeśli nie widzisz funkcji etykietowania oczekiwanych na komputerach Windows, pomimo potwierdzenia minimalnej obsługiwanej wersji kanału aktualizacji Office, może to być spowodowane [koniecznością wyłączenia dodatku usługi AIP](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
-Aby dowiedzieć się więcej na temat obsługi etykietowania z klientem usługi AIP, zobacz [Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji Office](sensitivity-labels-aip.md).
-
+Aby dowiedzieć się więcej na temat obsługi etykietowania za pomocą klienta usługi AIP i sposobu wyłączania tego klienta tylko w aplikacjach Office, zobacz [Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji Office](sensitivity-labels-aip.md).
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Jeśli musisz wyłączyć wbudowane etykietowanie w aplikacjach Office na Windows
 
@@ -135,12 +134,6 @@ Jeśli później trzeba przywrócić tę konfigurację, zmień wartość na **1*
 Wdróż to ustawienie przy użyciu zasady grupy lub przy użyciu [usługi zasad w chmurze Office](/DeployOffice/overview-office-cloud-policy-service). To ustawienie wchodzi w życie po ponownym uruchomieniu tych Office aplikacji. 
 
 Ponieważ to ustawienie jest specyficzne dla aplikacji Windows Office, nie ma wpływu na inne aplikacje na Windows obsługujące etykiety poufności (takie jak Power BI) lub inne platformy (takie jak macOS, urządzenia przenośne i Office dla sieci web). Jeśli nie chcesz, aby niektórzy lub wszyscy użytkownicy widzieli etykiety poufności i korzystali z nich we wszystkich aplikacjach i na wszystkich platformach, nie przypisuj tych użytkowników zasad etykiet poufności.
-
-### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office wbudowany klient etykietowania i klient usługi Azure Information Protection
-
-Jeśli użytkownicy mają zainstalowanego [klienta usługi Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) na swoich komputerach Windows, domyślnie wbudowane etykiety są wyłączone w [aplikacjach Windows Office, które je obsługują](#labeling-client-for-desktop-apps). Ponieważ wbudowane etykiety nie używają dodatku Office używanego przez klienta usługi AIP, mają one korzyści z większej stabilności i lepszej wydajności. Obsługują one również najnowsze funkcje, takie jak zaawansowane klasyfikatory.
-
-Aby dowiedzieć się więcej na temat opcji etykietowania za pomocą klienta usługi AIP, zobacz [Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji Office](sensitivity-labels-aip.md).
 
 ## <a name="office-file-types-supported"></a>obsługiwane typy plików Office
 
@@ -245,7 +238,7 @@ Jeśli użytkownicy zewnętrzni nie mają konta w Azure Active Directory, mogą 
     
     Zaletą tej opcji jest to, że można ograniczyć dostęp i prawa do określonych użytkowników, określając ich adres e-mail w ustawieniach szyfrowania. Minusem jest obciążenie administracyjne związane z tworzeniem konta i koordynacją z konfiguracją etykiety.
 
-- Inną opcją jest użycie [SharePoint i OneDrive integracji z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration), aby konta gości były tworzone automatycznie, gdy użytkownicy udostępniają łącza.
+- Inną opcją jest użycie [integracji SharePoint i OneDrive z Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration), aby konta gości były tworzone automatycznie, gdy użytkownicy udostępniają linki.
     
     Zaletą tej opcji jest minimalne obciążenie administracyjne, ponieważ konta są tworzone automatycznie i prostsza konfiguracja etykiet. W tym scenariuszu należy wybrać opcję szyfrowania [Dodaj uwierzytelnionego użytkownika](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) , ponieważ adresy e-mail nie będą wcześniej znane. Minusem jest to, że to ustawienie nie pozwala ograniczyć dostępu i praw użytkowania do określonych użytkowników.
 
@@ -259,11 +252,11 @@ Gdy użytkownik z kontem Microsoft otworzy w ten sposób zaszyfrowany dokument, 
 Jednak automatyczne konto gościa nie jest tworzone natychmiast w tym scenariuszu z powodu opóźnienia replikacji. W przypadku określenia osobistych adresów e-mail w ramach ustawień szyfrowania etykiet zalecamy utworzenie odpowiednich kont gościa w Azure Active Directory. Następnie poinformuj tych użytkowników, że muszą oni użyć tego konta, aby otworzyć zaszyfrowany dokument z Organizacji.
 
 > [!TIP]
-> Ponieważ nie możesz mieć pewności, że użytkownicy zewnętrzni będą używać obsługiwanej aplikacji klienckiej Office, udostępniać linki z SharePoint i OneDrive po utworzeniu kont gościa (dla określonych użytkowników) lub podczas korzystania [z integracji SharePoint i OneDrive z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)  (dla każdego uwierzytelnionego użytkownika) jest bardziej niezawodną metodą obsługi bezpiecznej współpracy z użytkownikami zewnętrznymi.
+> Ponieważ nie możesz mieć pewności, że użytkownicy zewnętrzni będą używać obsługiwanej aplikacji klienckiej Office, udostępniać linki z SharePoint i OneDrive po utworzeniu kont gościa (dla określonych użytkowników) lub podczas korzystania z [integracji SharePoint i OneDrive z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)  (dla każdego uwierzytelnionego użytkownika) jest bardziej niezawodną metodą obsługi bezpiecznej współpracy z użytkownikami zewnętrznymi.
 
 ### <a name="conditional-access-policies"></a>Zasady dostępu warunkowego
 
-Jeśli Twoja organizacja zaimplementowała [zasady dostępu warunkowego Azure Active Directory](/azure/active-directory/conditional-access/overview), sprawdź konfigurację tych zasad. Jeśli zasady obejmują **Microsoft Azure Information Protection**, a zasady są rozszerzane na użytkowników zewnętrznych, ci użytkownicy zewnętrzni muszą mieć konto gościa w dzierżawie, nawet jeśli mają konto usługi Azure AD we własnej dzierżawie.
+Jeśli Twoja organizacja zaimplementowała [zasady dostępu warunkowego Azure Active Directory](/azure/active-directory/conditional-access/overview), sprawdź konfigurację tych zasad. Jeśli zasady obejmują **Microsoft Azure Information Protection**, a zasady rozszerzają się na użytkowników zewnętrznych, ci użytkownicy zewnętrzni muszą mieć konto gościa w dzierżawie, nawet jeśli mają konto Azure AD we własnej dzierżawie.
 
 Bez tego konta gościa nie mogą otworzyć zaszyfrowanego dokumentu i zobaczyć komunikatu o błędzie. Tekst wiadomości może poinformować ich, że ich konto musi zostać dodane jako użytkownik zewnętrzny w dzierżawie, z nieprawidłową instrukcją dla tego scenariusza, aby **wylogować się i zalogować się ponownie przy użyciu innego konta użytkownika Azure Active Directory**.
 
@@ -313,7 +306,7 @@ Podczas konfigurowania etykiety poufności dla oznaczeń zawartości można uży
 | `${Item.Name}` | Nazwa pliku lub temat wiadomości e-mail o treści oznaczonej etykietą | **Sales.docx** |
 | `${Item.Location}` | Ścieżka i nazwa pliku dokumentu oznaczonego etykietą lub temat wiadomości e-mail dla wiadomości e-mail oznaczonej etykietą | **\\\Sales\2020\Q3\Report.docx**|
 | `${User.Name}` | Nazwa wyświetlana użytkownika stosującego etykietę | **Richard Simone** |
-| `${User.PrincipalName}` | Główna nazwa użytkownika usługi Azure AD (UPN) użytkownika stosującego etykietę | **rsimone\@ contoso.com** |
+| `${User.PrincipalName}` | Azure AD główną nazwą użytkownika (UPN) użytkownika stosującego etykietę | **rsimone\@ contoso.com** |
 | `${Event.DateTime}` | Data i godzina etykietowania zawartości w lokalnej strefie czasowej użytkownika stosującego etykietę w aplikacjach Microsoft 365 lub UTC (uniwersalny czas koordynowany) dla zasad Office Online i automatycznego etykietowania | **10.08.2020 13:30** |
 
 > [!NOTE]

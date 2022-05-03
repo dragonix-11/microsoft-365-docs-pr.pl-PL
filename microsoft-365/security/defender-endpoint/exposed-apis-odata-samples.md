@@ -1,8 +1,8 @@
 ---
-title: Zapytania OData za pomocą programu Microsoft Defender dla punktu końcowego
+title: Zapytania OData z Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.reviewer: ''
-description: Użyj tych przykładów zapytań Open Data Protocol (OData), aby ułatwić korzystanie z protokołów dostępu do danych w programie Microsoft Defender for Endpoint.
-keywords: apis, obsługiwane api, odata, zapytanie
+description: Skorzystaj z tych przykładów zapytań protokołu Open Data Protocol (OData), aby ułatwić korzystanie z protokołów dostępu do danych w Ochrona punktu końcowego w usłudze Microsoft Defender.
+keywords: apis, obsługiwane interfejsy API, odata, zapytanie
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,37 +16,41 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6ee47a1c624020ffa40848910866738072044d27
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 808ff3e6cc0dc69d748dabed102c478a27593790
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996305"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172289"
 ---
-# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Zapytania OData za pomocą programu Microsoft Defender dla punktu końcowego
+# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Zapytania OData z Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- [Microsoft Defender dla Firm](../defender-business/index.yml)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!IMPORTANT]
+> Zaawansowane możliwości wyszukiwania zagrożeń nie są uwzględniane w usłudze Defender dla firm. Zobacz [Porównanie Microsoft Defender dla Firm z planami Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Jeśli nie znasz zapytań OData, zobacz: Zapytania [V4 OData](https://www.odata.org/documentation/)
+Jeśli nie znasz zapytań OData, zobacz: [Zapytania OData V4](https://www.odata.org/documentation/)
 
 Nie wszystkie właściwości można filtrować.
 
-## <a name="properties-that-support-filter"></a>Właściwości, które obsługują $filter
+## <a name="properties-that-support-filter"></a>Właściwości obsługujące $filter
 
-- [Alert](alerts.md): `alertCreationTime`, `lastUpdateTime`, `incidentId`,`InvestigationId``status` , `severity`i `category`.
-- [Komputer](machine.md): `ComputerDnsName`, `LastSeen`, `HealthStatus``OsPlatform`, `onboardingStatus`, `RiskScore`i `RbacGroupId`.
-- [MachineAction](machineaction.md): `Status`, `MachineId`, `Type`, `Requestor`i `CreationDateTimeUtc`.
-- [Wskaźnik](ti-indicator.md): `indicatorValue`, `indicatorType`, `creationTimeDateTimeUtc`, `createdBy``severity`i `action`.
+- [Alert](alerts.md): `alertCreationTime`, , `incidentId``lastUpdateTime`,`InvestigationId` , , `status`, `severity`i `category`.
+- [Maszyna](machine.md): `ComputerDnsName`, `LastSeen`, `HealthStatus`, `OsPlatform`, , `onboardingStatus`, `RiskScore`i `RbacGroupId`.
+- [MachineAction](machineaction.md): `Status`, `MachineId`, `Type`, `Requestor`, i `CreationDateTimeUtc`.
+- [Wskaźnik](ti-indicator.md): `indicatorValue`, , `creationTimeDateTimeUtc``indicatorType`, `createdBy`, , `severity`i `action`.
 
 ### <a name="example-1"></a>Przykład 1
 
@@ -56,7 +60,7 @@ Uzyskaj 10 najnowszych alertów z powiązanymi dowodami:
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-#### <a name="response"></a>Odpowiedź
+#### <a name="response"></a>Odpowiedzi
 
 ```json
 {
@@ -195,13 +199,13 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### <a name="example-2"></a>Przykład 2
 
-Uzyskiwanie wszystkich alertów ostatnio zaktualizowanych po 2019-11-22 00:00:00:
+Pobierz wszystkie alerty ostatnio zaktualizowane po 2019-11-22 00:00:00:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
-#### <a name="response"></a>Odpowiedź
+#### <a name="response"></a>Odpowiedzi
 
 ```json
 {
@@ -257,13 +261,13 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
 
 ### <a name="example-3"></a>Przykład 3
 
-Pobierz wszystkie urządzenia za pomocą "High" "RiskScore":
+Pobierz wszystkie urządzenia z atrybutem "High" "RiskScore":
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
-#### <a name="response"></a>Odpowiedź
+#### <a name="response"></a>Odpowiedzi
 
 ```json
 {
@@ -310,13 +314,13 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
 
 ### <a name="example-4"></a>Przykład 4
 
-Uzyskaj 100 najwyższych urządzeń, których stan kondycji nie równa się "Aktywne":
+Pobierz 100 najlepszych urządzeń z wartością "HealthStatus" nie jest równa "Active":
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
-#### <a name="response"></a>Odpowiedź
+#### <a name="response"></a>Odpowiedzi
 
 ```json
 {
@@ -363,13 +367,13 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthSt
 
 ### <a name="example-5"></a>Przykład 5
 
-Uzyskaj wszystkie urządzenia, które ostatnio widziane po 2018-10-20:
+Pobierz wszystkie urządzenia, które ostatnio były widoczne po 2018-10-20:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
-#### <a name="response"></a>Odpowiedź
+#### <a name="response"></a>Odpowiedzi
 
 ```json
 {
@@ -416,13 +420,13 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen
 
 ### <a name="example-6"></a>Przykład 6
 
-Uzyskaj wszystkie skanowania antywirusowe, które użytkownik utworzył Analyst@examples.onmicrosoft.com za pomocą programu Microsoft Defender for Endpoint:
+Pobierz wszystkie skany antywirusowe, które użytkownik Analyst@examples.onmicrosoft.com utworzony przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
-#### <a name="response"></a>Odpowiedź
+#### <a name="response"></a>Odpowiedzi
 
 ```json
 json{
@@ -448,13 +452,13 @@ json{
 
 ### <a name="example-7"></a>Przykład 7
 
-Uzyskaj liczbę otwartych alertów dla określonego urządzenia:
+Pobierz liczbę otwartych alertów dla określonego urządzenia:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
-#### <a name="response"></a>Odpowiedź
+#### <a name="response"></a>Odpowiedzi
 
 ```json
 4
@@ -462,13 +466,13 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa4
 
 ### <a name="example-8"></a>Przykład 8
 
-Pobierz wszystkie urządzenia, których nazwa "computerDnsName" zaczyna się od "mymachine":
+Pobierz wszystkie urządzenia z elementem "computerDnsName", zaczynając od "mymachine":
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
 ```
 
-#### <a name="response"></a>Odpowiedź
+#### <a name="response"></a>Odpowiedzi
 
 ```json
 json{
@@ -515,4 +519,4 @@ json{
 
 ## <a name="see-also"></a>Zobacz też
 
-[Interfejsy API programu Microsoft Defender dla punktów końcowych](apis-intro.md)
+[interfejsy API Ochrona punktu końcowego w usłudze Microsoft Defender](apis-intro.md)

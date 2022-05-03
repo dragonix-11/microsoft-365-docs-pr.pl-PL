@@ -1,8 +1,8 @@
 ---
-title: Tworzenie aplikacji w celu uzyskania dostępu Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika
+title: Tworzenie aplikacji w celu uzyskania dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika
 ms.reviewer: ''
-description: Dowiedz się, jak zaprojektować aplikację sieci Web, aby uzyskać dostęp programowy Ochrona punktu końcowego w usłudze Microsoft Defender dostępu bez użytkownika.
-keywords: apis, api Graph, obsługiwane api, actor, alerts, device, user, domain, ip, file, advanced hunting, query
+description: Dowiedz się, jak zaprojektować aplikację internetową w celu uzyskania dostępu programowego do Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika.
+keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,109 +16,114 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c26bc9762b76deff0dddb04f98e2630e789ee6b5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f8b620d519b0e27fd54313329040096f10c070f9
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474492"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172333"
 ---
-# <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Tworzenie aplikacji w celu uzyskania dostępu Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika
+# <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Tworzenie aplikacji w celu uzyskania dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:** 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- [Microsoft Defender dla Firm](../defender-business/index.yml)
 
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!IMPORTANT]
+> Zaawansowane możliwości wyszukiwania zagrożeń nie są uwzględniane w usłudze Defender dla firm. Zobacz [Porównanie Microsoft Defender dla Firm z planami Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+
+
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Na tej stronie opisano, jak utworzyć aplikację w celu uzyskania dostępu programowego do usługi Defender for Endpoint bez użytkownika. Jeśli potrzebujesz dostępu programowego do usługi Defender for Endpoint w imieniu użytkownika, zobacz Uzyskiwanie [dostępu z kontekstem użytkownika](exposed-apis-create-app-nativeapp.md). Jeśli nie masz pewności, którego dostępu potrzebujesz[, zobacz Wprowadzenie](apis-intro.md).
+Na tej stronie opisano sposób tworzenia aplikacji w celu uzyskania dostępu programowego do usługi Defender for Endpoint bez użytkownika. Jeśli potrzebujesz dostępu programowego do usługi Defender for Endpoint w imieniu użytkownika, zobacz [Uzyskiwanie dostępu za pomocą kontekstu użytkownika](exposed-apis-create-app-nativeapp.md). Jeśli nie masz pewności, jakiego dostępu potrzebujesz, zobacz [Wprowadzenie](apis-intro.md).
 
-Ochrona punktu końcowego w usłudze Microsoft Defender udostępnia większość danych i akcji za pośrednictwem zestawu interfejsów API programistycznych. Te interfejsy API pomogą Ci zautomatyzować przepływy robocze i wprowadzać innowacje w oparciu o możliwości usługi Defender for Endpoint. Dostęp do interfejsu API wymaga uwierzytelniania OAuth2.0. Aby uzyskać więcej informacji, zobacz [Kod autoryzacji protokołu OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Ochrona punktu końcowego w usłudze Microsoft Defender uwidacznia wiele swoich danych i akcji za pośrednictwem zestawu programowych interfejsów API. Te interfejsy API pomogą Ci zautomatyzować przepływy robocze i wprowadzać innowacje w oparciu o możliwości usługi Defender for Endpoint. Dostęp do interfejsu API wymaga uwierzytelniania OAuth2.0. Aby uzyskać więcej informacji, zobacz [Kod autoryzacji OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-Aby korzystać z interfejsów API, musisz wykonać następujące czynności:
-- Utwórz aplikację usługi Azure Active Directory (Azure AD).
-- Uzyskaj token dostępu przy użyciu tej aplikacji.
-- Użyj tego tokenu, aby uzyskać dostęp do usługi Defender for Endpoint API.
+Ogólnie rzecz biorąc, należy wykonać następujące kroki, aby korzystać z interfejsów API:
+- Utwórz aplikację Azure Active Directory (Azure AD).
+- Pobierz token dostępu przy użyciu tej aplikacji.
+- Użyj tokenu, aby uzyskać dostęp do interfejsu API usługi Defender for Endpoint.
 
-W tym artykule wyjaśniono, jak utworzyć aplikację usługi Azure AD, uzyskać token dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender i zweryfikować token.
+W tym artykule wyjaśniono, jak utworzyć aplikację Azure AD, uzyskać token dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender i zweryfikować token.
 
 ## <a name="create-an-app"></a>Tworzenie aplikacji
 
-1. Zaloguj się do [platformy Azure](https://portal.azure.com) przy użyciu użytkownika z rolą **administratora globalnego** .
+1. Zaloguj się na [platformie Azure](https://portal.azure.com) przy użyciu użytkownika z rolą **administratora globalnego** .
 
-2. Przejdź do **Azure Active Directory** \> **Rejestracje aplikacji** \> **Rejestracja**. 
+2. Przejdź do **Azure Active Directory** \> **Rejestracje aplikacji** \> **Nowa rejestracja**. 
 
     :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Okienko rejestracji aplikacji" lightbox="images/atp-azure-new-app2.png":::
 
 3. W formularzu rejestracji wybierz nazwę aplikacji, a następnie wybierz pozycję **Zarejestruj**.
 
-4. Aby umożliwić aplikacji dostęp do usługi Defender dla punktu końcowego i przypisać jej uprawnienie **"** Odczyt wszystkich alertów", na stronie aplikacji wybierz pozycję Uprawnienia interfejsów API Dodaj interfejsy  **API** \> \> uprawnień, z których korzysta moja organizacja >, wpisz **WindowsDefenderATP**, a następnie wybierz **pozycję WindowsDefenderATP**.
+4. Aby umożliwić aplikacji dostęp do usługi Defender for Endpoint i przypisać jej **uprawnienie "Odczyt wszystkich alertów",** na stronie aplikacji wybierz pozycję **Uprawnienia interfejsu API Dodaj interfejsy** \> API **uprawnień**\>, **które moja organizacja używa** >, wpisz **WindowsDefenderATP**, a następnie wybierz pozycję **WindowsDefenderATP**.
 
    > [!NOTE]
-   > *Funkcja WindowsDefenderATP* nie jest wyświetlana na oryginalnej liście. Zacznij pisać jego nazwę w polu tekstowym, aby ją wyświetlić.
+   > *WindowsDefenderATP* nie jest wyświetlany na oryginalnej liście. Zacznij pisać jego nazwę w polu tekstowym, aby zobaczyć, jak jest wyświetlana.
 
    :::image type="content" source="images/add-permission.png" alt-text="Okienko uprawnień interfejsu API" lightbox="images/add-permission.png":::
 
-   Wybierz **pozycję Uprawnienia aplikacji** \> **Alert.Odczyt.Wszystko**, a następnie wybierz **pozycję Dodaj uprawnienia**.
+   Wybierz pozycję **Uprawnienia** \> aplikacji **Alert.Read.All**, a następnie wybierz pozycję **Dodaj uprawnienia**.
 
    :::image type="content" source="images/application-permissions.png" alt-text="Okienko informacji o uprawnieniach aplikacji" lightbox="images/application-permissions.png":::
 
-     Należy wybrać odpowiednie uprawnienia. "Czytaj wszystkie alerty" to tylko przykład. Przykład:
+     Musisz wybrać odpowiednie uprawnienia. "Odczyt wszystkich alertów" jest tylko przykładem. Przykład:
 
-     - Aby [uruchomić zapytania zaawansowane](run-advanced-query-api.md), wybierz uprawnienie Uruchamianie zapytań zaawansowanych.
-     - Aby [odizolować urządzenie](isolate-machine.md), wybierz uprawnienie "Wyizoluj komputer".
-     - Aby ustalić, jakich uprawnień potrzebujesz, zobacz **sekcję Uprawnienia** w interfejsie API, który chcesz wywołać.
+     - Aby [uruchamiać zaawansowane zapytania](run-advanced-query-api.md), wybierz uprawnienie "Uruchom zaawansowane zapytania".
+     - Aby [wyizolować urządzenie](isolate-machine.md), wybierz uprawnienie "Izolowanie maszyny".
+     - Aby określić, którego uprawnienia potrzebujesz, zapoznaj się z sekcją **Uprawnienia** w interfejsie API, który chcesz wywołać.
 
-5. Wybierz **pozycję Ut przyznaj zgodę**.
+5. Wybierz pozycję **Udziel zgody**.
 
      > [!NOTE]
-     > Za każdym razem, gdy dodajesz uprawnienie, musisz **wybrać pozycję** Udawaj zgodę, aby nowe uprawnienie było skuteczne.
+     > Za każdym razem, gdy dodasz uprawnienie, musisz wybrać pozycję **Udziel zgody** , aby nowe uprawnienie weszło w życie.
 
-    :::image type="content" source="images/grant-consent.png" alt-text="Strona udzielanie uprawnień" lightbox="images/grant-consent.png":::
+    :::image type="content" source="images/grant-consent.png" alt-text="Strona udzielania uprawnień" lightbox="images/grant-consent.png":::
 
-6. Aby dodać do aplikacji klucz tajny, wybierz pozycję Certyfikaty **& sekretów**, dodaj opis do tajemnicy, a następnie wybierz pozycję **Dodaj**.
+6. Aby dodać wpis tajny do aplikacji, wybierz pozycję **Certyfikaty & wpisów tajnych**, dodaj opis do wpisu tajnego, a następnie wybierz pozycję **Dodaj**.
 
     > [!NOTE]
-    > Po wybraniu **przycisku Dodaj** wybierz **pozycję kopiuj wygenerowaną wartość tajnych**. Po opuszczeniu tej wartości nie będzie można jej pobrać.
+    > Po wybraniu pozycji **Dodaj** wybierz pozycję **Skopiuj wygenerowaną wartość wpisu tajnego**. Nie będzie można pobrać tej wartości po opuszczeniu.
 
-      :::image type="content" source="images/webapp-create-key2.png" alt-text="Opcja utwórz aplikację" lightbox="images/webapp-create-key2.png":::
+      :::image type="content" source="images/webapp-create-key2.png" alt-text="Opcja tworzenia aplikacji" lightbox="images/webapp-create-key2.png":::
 
-7. Zategolij swój identyfikator aplikacji i identyfikator dzierżawy. Na stronie aplikacji przejdź do strony **Omówienie i** skopiuj następujące informacje.
+7. Zapisz identyfikator aplikacji i identyfikator dzierżawy. Na stronie aplikacji przejdź do pozycji **Przegląd** i skopiuj następujące elementy.
 
-   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Identyfikatory utworzonej aplikacji i dzierżawy" lightbox="images/app-and-tenant-ids.png":::
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Utworzone identyfikatory aplikacji i dzierżawy" lightbox="images/app-and-tenant-ids.png":::
 
-8. **Dotyczy Ochrona punktu końcowego w usłudze Microsoft Defender partnerów**. Ustaw aplikację jako wielodostępną (dostępną we wszystkich dzierżawach po zgodzie). Jest to **wymagane** w przypadku aplikacji innych firm (na przykład w przypadku tworzenia aplikacji przeznaczonej do uruchamiania w dzierżawie wielu klientów). Nie **jest to** wymagane, jeśli utworzysz usługę, którą chcesz uruchomić tylko w dzierżawie (na przykład jeśli utworzysz aplikację do własnego użycia, która będzie wchodzić w interakcje tylko z Twoimi danymi). Aby ustawić aplikację jako wielodostępną:
+8. **Tylko w przypadku partnerów Ochrona punktu końcowego w usłudze Microsoft Defender**. Ustaw aplikację na wielodostępną (dostępną we wszystkich dzierżawach po wyrażeniu zgody). Jest to wymagane w przypadku aplikacji innych firm (na przykład w przypadku utworzenia aplikacji, która ma być **uruchamiana** w dzierżawie wielu klientów). Nie jest to **wymagane** , jeśli utworzysz usługę, którą chcesz uruchomić tylko w dzierżawie (na przykład jeśli utworzysz aplikację dla własnego użycia, która będzie wchodzić w interakcje tylko z własnymi danymi). Aby ustawić aplikację jako wielodostępną:
 
-    - Przejdź do **uwierzytelniania** i dodaj jako `https://portal.azure.com` redirect **URI (Przekieruj URI**).
+    - Przejdź do pozycji **Uwierzytelnianie** i dodaj `https://portal.azure.com` jako **identyfikator URI przekierowania**.
 
-    - U dołu strony w obszarze Obsługiwane **typy kont** wybierz opcję Konta w dowolnej  aplikacji katalogu organizacyjnego dla aplikacji z wieloma dzierżawami.
+    - W dolnej części strony w obszarze **Obsługiwane typy kont** wybierz pozycję **Konta w dowolnej zgody aplikacji katalogu organizacyjnego** dla aplikacji wielodostępnej.
 
-    Twoja aplikacja musi zostać zatwierdzona w każdej dzierżawie, w której zamierzasz jej używać. Jest to spowodowane tym, że Aplikacja komunikuje się z usługą Defender dla punktu końcowego w imieniu klienta.
+    Aplikacja musi zostać zatwierdzona w każdej dzierżawie, w której ma być używana. Dzieje się tak, ponieważ aplikacja współdziała z usługą Defender for Endpoint w imieniu klienta.
 
-    Ty (lub Twój klient, jeśli piszesz aplikację innej firmy) musisz wybrać link zgody i zatwierdzić aplikację. Zgoda powinna być udzielana użytkownikowi z uprawnieniami administracyjnymi w usłudze Active Directory.
+    Użytkownik (lub klient piszący aplikację innej firmy) musi wybrać link zgody i zatwierdzić aplikację. Zgodę należy wyrazić z użytkownikiem, który ma uprawnienia administracyjne w usłudze Active Directory.
 
-    Link zgody jest formularzowany w następujący sposób: 
+    Link zgody jest tworzony w następujący sposób: 
 
     ```https
     https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
     ```
 
-    Gdzie 00000000-0000-0000-0000-0000000000000 zostanie zastąpiony Twoim identyfikatorem aplikacji.
+    Gdzie 00000000-0000-0000-0000-000000000000 jest zastępowany identyfikatorem aplikacji.
 
 
-**Ukończono!** Aplikacja została pomyślnie zarejestrowana! Zobacz poniższe przykłady dotyczące pozyskiwania i sprawdzania poprawności tokenu.
+**Ukończono!** Aplikacja została pomyślnie zarejestrowana! Zapoznaj się z poniższymi przykładami dotyczącymi uzyskiwania i walidacji tokenu.
 
 ## <a name="get-an-access-token"></a>Uzyskiwanie tokenu dostępu
 
-Aby uzyskać więcej informacji na temat tokenów usługi Azure AD, zobacz [samouczek dotyczący usługi Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Aby uzyskać więcej informacji na temat tokenów Azure AD, zobacz [samouczek Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
-### <a name="use-powershell"></a>Używanie programu PowerShell
+### <a name="use-powershell"></a>Korzystanie z programu PowerShell
 
 ```powershell
 # This script acquires the App Context Token and stores it in the variable $token for later use in the script.
@@ -142,11 +147,11 @@ $token = $authResponse.access_token
 
 ### <a name="use-c"></a>Użyj języka C#:
 
-Poniższy kod został przetestowany w programie NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+Poniższy kod został przetestowany przy użyciu NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
 
-1. Utwórz nową aplikację konsoli.
-1. Zainstaluj NuGet [witryny Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
-1. Dodaj następujące informacje:
+1. Utwórz nową aplikację konsolową.
+1. Zainstaluj NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Dodaj następujące elementy:
 
     ```csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -169,18 +174,18 @@ Poniższy kod został przetestowany w programie NuGet Microsoft.IdentityModel.Cl
     ```
 
 
-### <a name="use-python"></a>Używanie języka Python
+### <a name="use-python"></a>Korzystanie z języka Python
 
-Zobacz [Uzyskiwanie tokenu za pomocą języka Python](run-advanced-query-sample-python.md#get-token).
+Zobacz [Pobieranie tokenu przy użyciu języka Python](run-advanced-query-sample-python.md#get-token).
 
-### <a name="use-curl"></a>Używanie zwijania
+### <a name="use-curl"></a>Korzystanie z narzędzia Curl
 
 > [!NOTE]
-> W poniższej procedurze przyjęto, że program Curl for Windows jest już zainstalowany na komputerze.
+> W poniższej procedurze przyjęto założenie, że program Curl for Windows jest już zainstalowany na komputerze.
 
-1. Otwórz wiersz polecenia i ustaw dla CLIENT_ID azure identyfikator aplikacji.
-1. Ustaw CLIENT_SECRET klucz tajny aplikacji platformy Azure.
-1. Ustaw TENANT_ID azure identyfikator dzierżawy klienta, który chce uzyskać dostęp do usługi Defender dla punktu końcowego za pomocą twojej aplikacji.
+1. Otwórz wiersz polecenia i ustaw CLIENT_ID na identyfikator aplikacji platformy Azure.
+1. Ustaw CLIENT_SECRET na wpis tajny aplikacji platformy Azure.
+1. Ustaw TENANT_ID na identyfikator dzierżawy platformy Azure klienta, który chce używać aplikacji do uzyskiwania dostępu do usługi Defender for Endpoint.
 1. Uruchom następujące polecenie:
 
     ```console
@@ -193,25 +198,25 @@ Zobacz [Uzyskiwanie tokenu za pomocą języka Python](run-advanced-query-sample-
     {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
     ```
     
-## <a name="validate-the-token"></a>Sprawdź poprawność tokenu
+## <a name="validate-the-token"></a>Weryfikowanie tokenu
 
-Upewnij się, że masz poprawny token:
+Upewnij się, że masz prawidłowy token:
 
-1. Skopiuj i wklej token z poprzedniego kroku do aplikacji [JWT](https://jwt.ms) , aby go odkodować.
+1. Skopiuj i wklej token uzyskany w poprzednim kroku do [narzędzia JWT](https://jwt.ms) , aby go odkodować.
 
-1. Sprawdź, czy masz "role" z wymaganymi uprawnieniami.
+1. Sprawdź, czy otrzymasz oświadczenie "role" z żądanymi uprawnieniami.
 
-   Na poniższej ilustracji widać dekodowany token nabytego z aplikacji z uprawnieniami do wszystkich Ochrona punktu końcowego w usłudze Microsoft Defender ról użytkownika:
+   Na poniższej ilustracji widać dekodowany token uzyskany z aplikacji z uprawnieniami do wszystkich ról Ochrona punktu końcowego w usłudze Microsoft Defender:
 
-   :::image type="content" source="images/webapp-decoded-token.png" alt-text="Część ze szczegółami tokenu" lightbox="images/webapp-decoded-token.png":::
+   :::image type="content" source="images/webapp-decoded-token.png" alt-text="Część szczegółów tokenu" lightbox="images/webapp-decoded-token.png":::
 
-## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Uzyskiwanie dostępu do interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender tokenu
+## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Uzyskiwanie dostępu do interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu tokenu
 
-1. Wybierz interfejs API, którego chcesz użyć. Aby uzyskać więcej informacji, zobacz [Obsługiwany program Defender dla interfejsów API punktów końcowych](exposed-apis-list.md).
-1. Ustaw nagłówek autoryzacji w żądaniu http, które wysyłasz na adres "Bearer {token}" (Bearer jest schematem autoryzacji).
-1. Czas wygaśnięcia tokenu to godzina. Możesz wysłać więcej niż jedno żądanie z tym samym tokenem.
+1. Wybierz interfejs API, którego chcesz użyć. Aby uzyskać więcej informacji, zobacz [Supported Defender for Endpoint APIs (Obsługiwana usługa Defender dla interfejsów API punktu końcowego](exposed-apis-list.md)).
+1. Ustaw nagłówek autoryzacji w żądaniu http wysyłanym do elementu "Bearer {token}" (Element nośny jest schematem autoryzacji).
+1. Czas wygaśnięcia tokenu wynosi jedną godzinę. Możesz wysłać więcej niż jedno żądanie z tym samym tokenem.
 
-Poniżej przedstawiono przykład wysyłania żądania uzyskania listy alertów przy użyciu języka **C#**:
+Poniżej przedstawiono przykład wysyłania żądania uzyskania listy alertów **przy użyciu języka C#**:
 
 ```csharp
 var httpClient = new HttpClient();
@@ -226,5 +231,5 @@ var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Obsługiwane Ochrona punktu końcowego w usłudze Microsoft Defender API](exposed-apis-list.md)
-- [Uzyskiwanie Ochrona punktu końcowego w usłudze Microsoft Defender w imieniu użytkownika](exposed-apis-create-app-nativeapp.md)
+- [Obsługiwane interfejsy API usługi ochrony punktu końcowego w usłudze Microsoft Defender](exposed-apis-list.md)
+- [Dostęp Ochrona punktu końcowego w usłudze Microsoft Defender w imieniu użytkownika](exposed-apis-create-app-nativeapp.md)

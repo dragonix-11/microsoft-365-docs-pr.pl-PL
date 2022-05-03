@@ -1,13 +1,12 @@
 ---
 title: Przypisywanie ról i uprawnień w Microsoft Defender dla Firm
-description: Dowiedz się, jak przypisywać role i uprawnienia w Microsoft Defender dla Firm
+description: Przypisywanie ról do zespołu ds. cyberbezpieczeństwa. Dowiedz się więcej o tych rolach i uprawnieniach w usłudze Defender dla Firm.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,26 +15,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e4a3be91ff46626654f0c0f7b027557958429b33
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 03295989e1ee44ab43fe0cc53e4029a6c4307ea8
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862681"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172645"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Przypisywanie ról i uprawnień w Microsoft Defender dla Firm
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Aby wykonywać zadania w portalu Microsoft 365 Defender, takie jak konfigurowanie Microsoft Defender dla Firm, wyświetlanie raportów lub podejmowanie akcji reagowania na wykryte zagrożenia, należy przypisać odpowiednie uprawnienia do zespołu ds. zabezpieczeń. Uprawnienia są przyznawane za pośrednictwem ról przypisanych w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) lub w [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## <a name="what-to-do"></a>Co robić
 
 1. [Dowiedz się więcej o rolach w usłudze Defender dla Firm](#roles-in-defender-for-business).
-
 2. [Wyświetlanie lub edytowanie przypisań ról dla zespołu ds. zabezpieczeń](#view-or-edit-role-assignments).
-
 3. [Przejdź do kolejnych kroków](#next-steps).
 
 >
@@ -58,7 +52,7 @@ W poniższej tabeli opisano trzy role, które można przypisać w usłudze Defen
 
 1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-2. W okienku nawigacji wybierz pozycję **Uprawnienia & ról**, a następnie w obszarze **Azure AD** wybierz pozycję **Role**.
+2. W okienku nawigacji wybierz pozycję **Uprawnienia & role**, a następnie w obszarze **Azure AD** wybierz pozycję **Role**.
 
 3. Wybierz jedną z następujących ról, aby otworzyć okienko boczne:
 
@@ -69,7 +63,7 @@ W poniższej tabeli opisano trzy role, które można przypisać w usłudze Defen
    > [!IMPORTANT]
    > Firma Microsoft zaleca udzielanie użytkownikom dostępu tylko do tego, czego potrzebują do wykonywania swoich zadań. Nazywamy to pojęcie *najmniejszym uprawnieniem* dla uprawnień. Aby dowiedzieć się więcej, zobacz [Best practices for least-privileged access for applications (Najlepsze rozwiązania dotyczące dostępu z najniższymi uprawnieniami dla aplikacji](/azure/active-directory/develop/secure-least-privileged-access)). 
 
-4. W okienku bocznym wybierz link **Zarządzanie członkami w usłudze Azure AD** . Ta akcja powoduje przejście do Azure Active Directory (Azure AD), w której można wyświetlać przypisania ról i zarządzać nimi.
+4. W okienku bocznym wybierz link **Zarządzanie członkami w Azure AD**. Ta akcja prowadzi do Azure Active Directory (Azure AD), gdzie można wyświetlać przypisania ról i zarządzać nimi.
 
 5. Wybierz użytkownika, aby otworzyć swój profil, a następnie wybierz pozycję **Przypisane role**.
 

@@ -1,8 +1,8 @@
 ---
-title: Uzyskiwanie dostępu do interfejsów API programu Microsoft Defender dla punktów końcowych
+title: Uzyskaj dostęp do interfejsów API usługi ochrony punktu końcowego w usłudze Microsoft Defender
 ms.reviewer: ''
-description: Dowiedz się, jak za pomocą interfejsów API automatyzować przepływy pracy i wprowadzać w nich innowacje w oparciu o program Microsoft Defender w zakresie funkcji punktu końcowego
-keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, public api, supported api, alerts, device, user, domain, ip, file, advanced hunting, query
+description: Dowiedz się, jak za pomocą interfejsów API automatyzować przepływy pracy i wprowadzać innowacje w oparciu o możliwości Ochrona punktu końcowego w usłudze Microsoft Defender
+keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,49 +16,53 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a73df39c6d26bdfd44a7f4f629e148e7f0afabb2
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 3638357d2c1440604858fabfa42e5df32569aed3
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996879"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172270"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Uzyskiwanie dostępu do interfejsów API programu Microsoft Defender dla punktów końcowych
+# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Uzyskaj dostęp do interfejsów API usługi ochrony punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender dla Firm](../defender-business/index.yml)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!IMPORTANT]
+> Zaawansowane możliwości wyszukiwania zagrożeń nie są uwzględniane w usłudze Defender dla firm. Zobacz [Porównanie Microsoft Defender dla Firm z planami Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
-Program Defender for Endpoint udostępnia większość danych i akcji za pośrednictwem zestawu programistycznych interfejsów API. Te interfejsy API umożliwią Automatyzowanie przepływów pracy i wprowadzanie innowacji w oparciu o funkcje usługi Defender for Endpoint. Dostęp do interfejsu API wymaga uwierzytelniania OAuth2.0. Aby uzyskać więcej informacji, zobacz [Kod autoryzacji protokołu OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Obejrzyj ten klip wideo, aby szybko oomówić interfejsy API usługi Defender dla punktu końcowego.
+Usługa Defender for Endpoint uwidacznia wiele swoich danych i akcji za pośrednictwem zestawu programowych interfejsów API. Te interfejsy API umożliwiają automatyzację przepływów pracy i wprowadzanie innowacji w oparciu o możliwości usługi Defender for Endpoint. Dostęp do interfejsu API wymaga uwierzytelniania OAuth2.0. Aby uzyskać więcej informacji, zobacz [Kod autoryzacji OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+
+Obejrzyj to wideo, aby zapoznać się z krótkim omówieniem interfejsów API usługi Defender for Endpoint.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
-Aby korzystać z interfejsów API, musisz wykonać następujące czynności:
+Ogólnie rzecz biorąc, należy wykonać następujące kroki, aby korzystać z interfejsów API:
 
-- Tworzenie AAD [aplikacji](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
+- Tworzenie [aplikacji AAD](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - Uzyskiwanie tokenu dostępu przy użyciu tej aplikacji
-- Korzystanie z tokenu w celu uzyskania dostępu do usługi Defender for Endpoint API
+- Uzyskiwanie dostępu do interfejsu API usługi Defender for Endpoint przy użyciu tokenu
 
-Dostęp do interfejsu API punktu końcowego programu Defender można uzyskać z **kontekstem aplikacji** **lub kontekstem użytkownika**.
+Dostęp do interfejsu API usługi Defender for Endpoint można uzyskać za pomocą **kontekstu aplikacji** lub **kontekstu użytkownika**.
 
 - **Kontekst aplikacji: (zalecane)**
 
-  Używane przez aplikacje uruchamiane bez zalogowania się użytkownika. na przykład aplikacje, które działają jako usługi w tle lub jako daemony.
+  Używane przez aplikacje uruchamiane bez zalogowanego użytkownika. na przykład aplikacje działające jako usługi w tle lub demony.
 
-  Kroki, które należy wykonać, aby uzyskać dostęp do usługi Defender dla interfejsu API punktu końcowego w kontekście aplikacji:
+  Kroki, które należy wykonać w celu uzyskania dostępu do interfejsu API usługi Defender for Endpoint z kontekstem aplikacji:
 
-  1. Utwórz nową AAD web-Application.
-  2. Przypisz żądane uprawnienie do aplikacji, na przykład "Odczyt alertów", "Izoluj komputery".
+  1. Utwórz aplikację internetową AAD.
+  2. Przypisz żądane uprawnienie do aplikacji, na przykład "Odczyt alertów", "Izoluj maszyny".
   3. Utwórz klucz dla tej aplikacji.
-  4. Pobierz token przy użyciu aplikacji wraz z jej kluczem.
-  5. Używanie tokenu w celu uzyskania dostępu do interfejsu API programu Microsoft Defender dla punktu końcowego
+  4. Pobierz token przy użyciu aplikacji z jej kluczem.
+  5. Uzyskiwanie dostępu do interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu tokenu
 
      Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu za pomocą kontekstu aplikacji](exposed-apis-create-app-webapp.md).
 
@@ -66,17 +70,17 @@ Dostęp do interfejsu API punktu końcowego programu Defender można uzyskać z 
 
   Służy do wykonywania akcji w interfejsie API w imieniu użytkownika.
 
-  Czynności, które należy wykonać, aby uzyskać dostęp do usługi Defender for Endpoint API z kontekstem użytkownika:
+  Kroki, które należy wykonać, aby uzyskać dostęp do interfejsu API usługi Defender for Endpoint z kontekstem użytkownika:
 
-  1. Tworzenie AAD natywnej.
-  2. Przypisz żądane uprawnienie do aplikacji, np. "Odczyt alertów", "Izoluj komputery" itd.
-  3. Uzyskaj token przy użyciu aplikacji z poświadczeniami użytkownika.
-  4. Używanie tokenu w celu uzyskania dostępu do interfejsu API programu Microsoft Defender dla punktu końcowego
+  1. Utwórz AAD aplikację natywną.
+  2. Przypisz żądane uprawnienie do aplikacji, np. "Odczyt alertów", "Izolowanie maszyn" itp.
+  3. Pobierz token przy użyciu aplikacji z poświadczeniami użytkownika.
+  4. Uzyskiwanie dostępu do interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu tokenu
 
-     Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu z kontekstem użytkownika](exposed-apis-create-app-nativeapp.md).
+     Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu za pomocą kontekstu użytkownika](exposed-apis-create-app-nativeapp.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Interfejsy API programu Microsoft Defender dla punktów końcowych](exposed-apis-list.md)
-- [Uzyskiwanie dostępu do programu Microsoft Defender dla punktu końcowego w kontekście aplikacji](exposed-apis-create-app-webapp.md)
-- [Dostęp do programu Microsoft Defender dla punktu końcowego z kontekstem użytkownika](exposed-apis-create-app-nativeapp.md)
+- [interfejsy API Ochrona punktu końcowego w usłudze Microsoft Defender](exposed-apis-list.md)
+- [Dostęp Ochrona punktu końcowego w usłudze Microsoft Defender z kontekstem aplikacji](exposed-apis-create-app-webapp.md)
+- [Dostęp Ochrona punktu końcowego w usłudze Microsoft Defender z kontekstem użytkownika](exposed-apis-create-app-nativeapp.md)

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f6046576fcea2fe961e73e88168c6254a2d95a40
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 7b76fff060b46cbe13c11eb90f521af61e8900f5
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665057"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172922"
 ---
 # <a name="device-discovery-overview"></a>Omówienie wykrywania urządzeń
 
@@ -116,19 +116,43 @@ Wyszukaj rekomendacje dotyczące zabezpieczeń dotyczące protokołu "SSH", aby 
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Używanie zaawansowanego wyszukiwania zagrożeń na odnalezionych urządzeniach
 
-Możesz użyć zapytań zaawansowanego wyszukiwania zagrożeń, aby uzyskać wgląd w odnalezione urządzenia.
-Znajdź szczegółowe informacje o odnalezionych punktach końcowych w tabeli DeviceInfo lub informacje dotyczące sieci dotyczące tych urządzeń w tabeli DeviceNetworkInfo.
+Zaawansowane zapytania dotyczące wyszukiwania zagrożeń umożliwiają uzyskanie wglądu w odnalezione urządzenia. Szczegółowe informacje o odnalezionych urządzeniach znajdują się w tabeli DeviceInfo lub informacje dotyczące sieci dotyczące tych urządzeń w tabeli DeviceNetworkInfo.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Strona Zaawansowane wyszukiwanie zagrożeń, na której można używać zapytań" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
-Odnajdywanie urządzeń korzysta z Ochrona punktu końcowego w usłudze Microsoft Defender dołączonych urządzeń jako źródła danych sieciowych w celu przypisywania działań do urządzeń nieprzysłanych. Oznacza to, że jeśli urządzenie Ochrona punktu końcowego w usłudze Microsoft Defender dołączone do urządzenia komunikuje się z urządzeniem nieprzydzielinym, działania na urządzeniu bez dołączenia można zobaczyć na osi czasu i w tabeli Zaawansowane wyszukiwanie zagrożeń DeviceNetworkEvents.
+### <a name="query-discovered-devices-details"></a>Wykonywanie zapytań dotyczących odnalezionych urządzeń
 
-Nowe zdarzenia są oparte na połączeniach protokołu TCP (Transmission Control Protocol) i będą pasować do bieżącego schematu DeviceNetworkEvents. Ruch przychodzący TCP do urządzenia z włączoną obsługą Ochrona punktu końcowego w usłudze Microsoft Defender z Ochrona punktu końcowego w usłudze Microsoft Defender nie jest włączony.
+Uruchom to zapytanie w tabeli DeviceInfo, aby zwrócić wszystkie odnalezione urządzenia wraz z najbardziej szczegółowymi informacjami dla każdego urządzenia:
 
-Dodano również następujące typy akcji:
+```query
+DeviceInfo
+| summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
+| where isempty(MergedToDeviceId) // Remove invalidated/merged devices
+| where OnboardingStatus != "Onboarded" 
+```
+
+Wywołując funkcję **SeenBy** , w zaawansowanym zapytaniu wyszukiwania zagrożeń możesz uzyskać szczegółowe informacje na temat tego, które urządzenie zostało dołączone do odnalezionego urządzenia.Te informacje mogą pomóc w określeniu lokalizacji sieciowej każdego odnalezionego urządzenia, a następnie ułatwić jego identyfikację w sieci.  
+
+```query
+DeviceInfo
+| where OnboardingStatus != "Onboarded" 
+| summarize arg_max(Timestamp, *) by DeviceId  
+| where isempty(MergedToDeviceId)  
+| limit 100 
+| invoke SeenBy() 
+| project DeviceId, DeviceName, DeviceType, SeenBy  
+```
+
+Aby uzyskać więcej informacji, zobacz funkcję [SeenBy(](/microsoft-365/security/defender/advanced-hunting-seenby-function) ).
+
+### <a name="query-network-related-information"></a>Informacje dotyczące sieci zapytań
+
+Odnajdywanie urządzeń korzysta z Ochrona punktu końcowego w usłudze Microsoft Defender dołączonych urządzeń jako źródła danych sieciowych w celu przypisywania działań do urządzeń nieprzysłanych. Czujnik sieciowy na urządzeniu dołączonym do Ochrona punktu końcowego w usłudze Microsoft Defender identyfikuje dwa nowe typy połączeń:
 
 - ConnectionAttempt — próba nawiązania połączenia TCP (syn)
 - ConnectionAcknowledged — potwierdzenie, że połączenie TCP zostało zaakceptowane (syn\ack)
+
+Oznacza to, że gdy urządzenie niewsładzone próbuje komunikować się z dołączonym urządzeniem Ochrona punktu końcowego w usłudze Microsoft Defender, próba wygeneruje element DeviceNetworkEvent, a działania urządzenia nienadsuwanego będą widoczne na osi czasu dołączonych urządzeń oraz za pośrednictwem tabeli DeviceNetworkEvents wyszukiwania zaawansowanego.
 
 Możesz wypróbować to przykładowe zapytanie:
 

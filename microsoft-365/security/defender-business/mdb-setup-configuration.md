@@ -1,33 +1,29 @@
 ---
 title: Konfigurowanie i konfigurowanie Microsoft Defender dla Firm
-description: Zapoznaj się z omówieniem procesu konfiguracji i konfiguracji dla Microsoft Defender dla Firm
+description: Zobacz, jak skonfigurować rozwiązanie do cyberbezpieczeństwa usługi Defender for Business. Dołącz urządzenia, przejrzyj zasady i w razie potrzeby edytuj ustawienia.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e832a06a27d479bcd9ffecaf00e07b20f55d1042
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 5dd056640101d3feb97d9f502e4dcc8661454115
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862659"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173235"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Konfigurowanie i konfigurowanie Microsoft Defender dla Firm
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender dla Firm zapewnia usprawnione środowisko konfiguracji i konfiguracji, zaprojektowane specjalnie dla małych i średnich firm. Skorzystaj z tego artykułu jako przewodnika dla całego procesu.
 
@@ -54,7 +50,7 @@ Na poniższym diagramie przedstawiono ogólny proces konfiguracji i konfiguracji
 | 2 | [Przypisywanie ról i uprawnień](mdb-roles-permissions.md)     | Osoby w twoim zespole ds. zabezpieczeń potrzebują uprawnień do wykonywania zadań, takich jak przeglądanie wykrytych zagrożeń & akcji korygowania, wyświetlanie & edytowania zasad, dołączanie urządzeń i używanie raportów. Te uprawnienia można udzielić za pośrednictwem niektórych ról. Zobacz [Przypisywanie ról i uprawnień](mdb-roles-permissions.md).        |
 | 3 | [Konfigurowanie powiadomień e-mail](mdb-email-notifications.md) | Możesz określić, kto powinien otrzymywać powiadomienia e-mail po wyzwoleniu alertów lub wykryciu nowych luk w zabezpieczeniach. Zobacz [Konfigurowanie powiadomień e-mail](mdb-email-notifications.md).| 
 | 4 | [Dołączanie urządzeń](mdb-onboard-devices.md)     | Microsoft Defender dla Firm jest skonfigurowany tak, aby można było wybrać jedną z kilku opcji dołączania urządzeń firmy. Zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).         |
-| 5 | [Konfigurowanie ustawień zabezpieczeń i zasad](mdb-configure-security-settings.md) | Możesz wybrać jedną z kilku opcji konfigurowania ustawień zabezpieczeń i zasad, w tym uproszczony proces konfiguracji lub Microsoft Endpoint Manager. Zobacz [Konfigurowanie ustawień zabezpieczeń i zasad](mdb-configure-security-settings.md). |
+| 5 | [Konfigurowanie ustawień zabezpieczeń i zasad](mdb-configure-security-settings.md) | Możesz wybrać jedną z kilku opcji konfigurowania ustawień zabezpieczeń i zasad, w tym uproszczonego procesu konfiguracji w usłudze Defender dla Firm lub za pomocą centrum administracyjnego Microsoft Endpoint Manager. Zobacz [Konfigurowanie ustawień zabezpieczeń i zasad](mdb-configure-security-settings.md). |
 
 ## <a name="next-steps"></a>Następne kroki
 

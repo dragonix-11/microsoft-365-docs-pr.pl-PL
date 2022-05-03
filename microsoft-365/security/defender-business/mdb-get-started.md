@@ -1,40 +1,35 @@
 ---
-title: Odwiedź portal Microsoft 365 Defender
-description: Zobacz, jak rozpocząć korzystanie z portalu Microsoft 365 Defender. Dowiedz się, jak nawigować po portalu i wyświetlać bieżący stan zabezpieczeń i zalecenia
+title: Odwiedź portal usługi Microsoft 365 Defender
+description: Centrum zabezpieczeń w usłudze Defender dla Firm to portal Microsoft 365 Defender. Dowiedz się, jak nawigować po portalu i zobaczyć kolejne kroki.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 4af2986a3c1c726e9bf963752d53fe6ef098c19e
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 7e4f22634756b931a6136f57b1938d12d36bc988
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861471"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172802"
 ---
-# <a name="visit-the-microsoft-365-defender-portal"></a>Odwiedź portal Microsoft 365 Defender
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
+# <a name="visit-the-microsoft-365-defender-portal"></a>Odwiedź portal usługi Microsoft 365 Defender
 
 Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) to punkt obsługi do korzystania z Microsoft Defender dla Firm i zarządzania nimi. Zawiera baner powitalny i objaśnienia ułatwiające rozpoczęcie pracy, karty, które udostępniają odpowiednie informacje, oraz pasek nawigacyjny, który zapewnia łatwy dostęp do różnych funkcji i możliwości. 
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="portal Microsoft 365 Defender":::
 
- 
 >
 > **Masz minutę?**
 > Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!

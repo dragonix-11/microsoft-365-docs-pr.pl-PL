@@ -1,8 +1,8 @@
 ---
-title: Obsługiwana usługa Microsoft Defender dla interfejsów API punktów końcowych
+title: Obsługiwane interfejsy API usługi ochrony punktu końcowego w usłudze Microsoft Defender
 ms.reviewer: ''
-description: Dowiedz się więcej o konkretnych obsługiwanych jednostkach programu Microsoft Defender dla punktów końcowych, do których można tworzyć wywołania interfejsu API.
-keywords: api, obsługiwane api, actor, alerts, device, user, domain, ip, file, advanced queries, advanced hunting
+description: Dowiedz się więcej o określonych obsługiwanych jednostkach Ochrona punktu końcowego w usłudze Microsoft Defender, do których można tworzyć wywołania interfejsu API.
+keywords: apis, obsługiwane interfejsy API, aktor, alerty, urządzenie, użytkownik, domena, adres IP, plik, zaawansowane zapytania, zaawansowane wyszukiwanie zagrożeń
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,69 +16,74 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 94c5698845f556936373ee4548d9aa137f03867b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: fe43d4df71b0801ae89149797068873577c77c38
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996871"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174683"
 ---
-# <a name="supported-microsoft-defender-for-endpoint-apis"></a>Obsługiwana usługa Microsoft Defender dla interfejsów API punktów końcowych
+# <a name="supported-microsoft-defender-for-endpoint-apis"></a>Obsługiwane interfejsy API usługi ochrony punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:** 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- [Microsoft Defender dla Firm](../defender-business/index.yml)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!IMPORTANT]
+> Zaawansowane możliwości wyszukiwania zagrożeń nie są uwzględniane w usłudze Defender dla firm. Zobacz [Porównanie Microsoft Defender dla Firm z planami Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
-## <a name="endpoint-uri-and-versioning"></a>Numer URI punktu końcowego i numerowanie wersji
 
-### <a name="endpoint-uri"></a>URI punktu końcowego
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Podstawowy URI usługi to: [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
+## <a name="endpoint-uri-and-versioning"></a>Identyfikator URI punktu końcowego i przechowywanie wersji
+
+### <a name="endpoint-uri"></a>Identyfikator URI punktu końcowego
+
+> Identyfikator URI bazy usług to: [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
 >
-> Zapytania oparte na danych OData mają prefiks "/api". Aby na przykład pobrać alerty, można wysłać żądanie GET do [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
+> Dane OData oparte na zapytaniach mają prefiks "/api". Aby na przykład uzyskać alerty, możesz wysłać żądanie GET do [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
 
-### <a name="versioning"></a>Versioning (Wersja)
+### <a name="versioning"></a>Wersji
 
-> Interfejs API obsługuje sporządzanie wersji.
+> Interfejs API obsługuje przechowywanie wersji.
 >
 > Bieżąca wersja to **V1.0**.
 >
-> Aby użyć określonej wersji, użyj tego formatu: `https://api.securitycenter.microsoft.com/api/{Version}`. Na przykład: `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
+> Aby użyć określonej wersji, użyj następującego formatu: `https://api.securitycenter.microsoft.com/api/{Version}`. Przykład: `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 >
-> Jeśli nie określisz żadnej wersji (np. `https://api.securitycenter.microsoft.com/api/alerts`), otrzymasz dostęp do najnowszej wersji.
+> Jeśli nie określisz żadnej wersji (np. `https://api.securitycenter.microsoft.com/api/alerts`), przejdziesz do najnowszej wersji.
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Dowiedz się więcej o poszczególnych obsługiwanych jednostkach, w których można uruchamiać wywołania interfejsu API, oraz poznaj szczegóły, takie jak wartości żądań HTTP, nagłówki żądań i oczekiwane odpowiedzi.
+Dowiedz się więcej o poszczególnych obsługiwanych jednostkach, do których można uruchamiać wywołania interfejsu API, oraz o szczegółach, takich jak wartości żądań HTTP, nagłówki żądań i oczekiwane odpowiedzi.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 Temat | Opis
 :---|:---
-[Zaawansowane łowiectwo](run-advanced-query-api.md) | Uruchamianie zapytań z interfejsu API.
-[Metody i właściwości alertów](alerts.md) | Uruchamianie wywołań interfejsu API, takich \- jak uzyskiwanie alertów, tworzenie alertów, aktualizowanie alertów i nie tylko.
-[Eksportowanie metod i właściwości oceny na urządzenie](get-assessment-methods-properties.md) | Uruchamiaj wywołania interfejsu API, aby zbierać oceny luk w zabezpieczeniach w zależności od urządzenia, takie jak: \- ocena bezpiecznej konfiguracji, ocena eksportu zasobów oprogramowania, ocena luk w oprogramowaniu eksportu lub ocena luk w zabezpieczeniach oprogramowania w przypadku eksportu.
-[Metody i właściwości badania automatycznego](investigation.md) | Uruchamianie wywołań interfejsu API, takich \- jak pobierz kolekcję badania.
-[Alerty dotyczące domeny](get-domain-related-alerts.md) | Uruchamianie wywołań interfejsu API, takich \- jak uzyskiwanie urządzeń związanych z domeną, statystyk dotyczących domen i nie tylko.
-[Metody i właściwości plików](files.md) | Uruchamianie wywołań interfejsu API, \- takich jak uzyskiwanie informacji o plikach, alerty dotyczące plików, urządzenia powiązane z plikami i statystyki plików.
-[Metody i właściwości wskaźników](ti-indicator.md) | Uruchamianie wywołania interfejsu API, na \- przykład uzyskiwanie wskaźników, tworzenie wskaźników i usuwanie wskaźników.
-[Alerty dotyczące adresów IP](get-ip-related-alerts.md) | Uruchamianie połączeń interfejsu API, takich jak \- uzyskiwanie alertów dotyczących adresów IP i uzyskiwanie statystyk adresów IP.
-[Metody i właściwości komputera](machine.md) | Uruchamianie wywołań interfejsu API, \- takich jak uzyskiwanie urządzeń, uzyskiwanie urządzeń według identyfikatora, informacje o zalogowanych użytkownikach, edytowanie tagów i nie tylko.
-[Metody i właściwości akcji komputera](machineaction.md) | Uruchom wywołanie interfejsu API, takie \- jak Isolation, Uruchom skanowanie antywirusowe i nie tylko.
-[Metody i właściwości zalecenia](recommendation.md) | Uruchamianie wywołań interfejsu API, takich \- jak get recommendation by ID.
-[Metody i właściwości działań naprawczych](get-remediation-methods-properties.md) | Uruchamianie wywołania interfejsu API, na \- przykład wykonywanie wszystkich zadań naprawczych, uzyskiwanie na urządzeniach ujawnionych zadań naprawczych i uzyskiwanie jednego zadania zaradczego według identyfikatorów.
-[Metody i właściwości wyników](score.md) | Uruchamiaj połączenia API, takie jak \- uzyskiwanie wyniku ekspozycji lub uzyskiwanie bezpiecznego wyniku urządzenia.
-[Metody i właściwości oprogramowania](software.md) | Uruchamianie wywołań interfejsu API, takich \- jak luki w zabezpieczeniach listy przez oprogramowanie.
-[Metody użytkownika](user.md) | Uruchamianie wywołań interfejsu API, takich \- jak uzyskiwanie alertów związanych z użytkownikiem i urządzeń związanych z użytkownikami.
-[Metody i właściwości luk w zabezpieczeniach](vulnerability.md) | Uruchamianie wywołań interfejsu API, takich \- jak urządzenia listy w przypadku luki w zabezpieczeniach.
+[Zaawansowane wyszukiwanie zagrożeń](run-advanced-query-api.md) | Uruchamianie zapytań z interfejsu API.<p>*Zaawansowane możliwości wyszukiwania zagrożeń nie są uwzględniane w [usłudze Defender dla firm](../defender-business/mdb-overview.md)*.
+[Metody alertu i właściwości](alerts.md) | Uruchamianie wywołań interfejsu API, takich jak \- uzyskiwanie alertów, tworzenie alertów, aktualizowanie alertów i nie tylko.
+[Eksportowanie metod oceny i właściwości na urządzenie](get-assessment-methods-properties.md) | Uruchom wywołania interfejsu API, aby zbierać oceny luk w zabezpieczeniach na poszczególnych urządzeniach, takie jak: \- eksportowanie bezpiecznej oceny konfiguracji, eksportowanie oceny spisu oprogramowania, eksportowanie oceny luk w zabezpieczeniach oprogramowania i ocena luk w zabezpieczeniach oprogramowania eksportowania różnicowego.
+[Zautomatyzowane metody i właściwości badania](investigation.md) | Uruchamianie wywołań interfejsu API, takich jak \- pobieranie kolekcji badania.
+[Pobierz alerty powiązane z domeną](get-domain-related-alerts.md) | Uruchamianie wywołań interfejsu API, takich jak \- pobieranie urządzeń związanych z domeną, statystyki domeny i nie tylko.
+[Metody i właściwości pliku](files.md) | Uruchom wywołania interfejsu API, takie jak \- pobieranie informacji o pliku, alerty związane z plikami, urządzenia związane z plikami i statystyki plików.
+[Metody i właściwości wskaźników](ti-indicator.md) | Uruchom wywołanie interfejsu API, takie jak \- pobieranie wskaźników, tworzenie wskaźnika i usuwanie wskaźników.
+[Pobierz alerty związane z adresem IP](get-ip-related-alerts.md) | Uruchamianie wywołań interfejsu API, takich jak \- uzyskiwanie alertów związanych z adresem IP i pobieranie statystyk adresów IP.
+[Metody i właściwości komputera](machine.md) | Uruchamianie wywołań interfejsu API, takich jak \- pobieranie urządzeń, pobieranie urządzeń według identyfikatora, informacje o zalogowanych użytkownikach, edytowanie tagów i nie tylko.
+[Metody i właściwości akcji komputera](machineaction.md) | Uruchom wywołanie interfejsu API, takie jak \- Izolacja, Uruchom skanowanie antywirusowe i nie tylko.
+[Metody i właściwości rekomendacji](recommendation.md) | Uruchamianie wywołań interfejsu API, takich jak \- uzyskiwanie rekomendacji według identyfikatora.
+[Metody i właściwości akcji korygowania](get-remediation-methods-properties.md) | Uruchom wywołanie interfejsu API, takie jak \- pobieranie wszystkich zadań korygowania, pobieranie uwidocznionego zadania korygowania urządzeń i pobieranie jednego zadania korygowania według identyfikatora.
+[Metody i właściwości wyniku](score.md) | Uruchamianie wywołań interfejsu API, takich jak \- uzyskiwanie oceny ekspozycji lub uzyskiwanie wskaźnika bezpieczeństwa urządzenia.
+[Metody i właściwości oprogramowania](software.md) | Uruchamianie wywołań interfejsu API, takich jak \- lista luk w zabezpieczeniach według oprogramowania.
+[Metody użytkownika](user.md) | Uruchamianie wywołań interfejsu API, takich jak \- uzyskiwanie alertów związanych z użytkownikiem i urządzeń związanych z użytkownikiem.
+[Metody i właściwości luki w zabezpieczeniach](vulnerability.md) | Uruchamianie wywołań interfejsu API, takich jak \- wyświetlanie listy urządzeń według luk w zabezpieczeniach.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Interfejsy API programu Microsoft Defender dla punktów końcowych](apis-intro.md)
+- [interfejsy API Ochrona punktu końcowego w usłudze Microsoft Defender](apis-intro.md)
 
-- [Program Microsoft Defender for Endpoint API informacje o wersji](api-release-notes.md)
+- [Informacje o wersji interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender](api-release-notes.md)

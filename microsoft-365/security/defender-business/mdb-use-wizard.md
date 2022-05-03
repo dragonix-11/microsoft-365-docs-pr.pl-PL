@@ -1,34 +1,30 @@
 ---
 title: Korzystanie z kreatora konfiguracji w Microsoft Defender dla Firm
-description: Usługa Defender dla firm obejmuje proces konfiguracji i konfiguracji podobny do kreatora. Użyj kreatora, aby zaoszczędzić czas i nakład pracy.
+description: Usługa Defender dla firm ułatwia konfigurowanie za pomocą kreatora uruchamianego po raz pierwszy przy użyciu usługi Defender dla Firm. Zobacz, jak działa kreator instalacji.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 697dfc567eb2719a6e81a7b57df321ba2af40911
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 042f20cce0e0d30195ed241b376bf304abeaa2aa
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882313"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172781"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Korzystanie z kreatora konfiguracji w Microsoft Defender dla Firm
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender dla Firm została zaprojektowana w celu zaoszczędzenia czasu i wysiłku małych i średnich firm. Na przykład można wykonać początkową konfigurację i konfigurację za pomocą kreatora konfiguracji. Kreator konfiguracji przeprowadzi Cię przez udzielanie dostępu zespołowi ds. zabezpieczeń, konfigurowanie powiadomień e-mail dla zespołu ds. zabezpieczeń i dołączanie urządzeń Windows firmy.
 
@@ -69,30 +65,30 @@ Kreator konfiguracji został zaprojektowany, aby ułatwić szybkie i wydajne kon
 
    [Dowiedz się więcej o rolach i uprawnieniach](mdb-roles-permissions.md). 
 
-2. **Konfigurowanie powiadomień e-mail**. W tym kroku możesz skonfigurować powiadomienia e-mail dla zespołu ds. zabezpieczeń. Następnie po wygenerowaniu alertu lub wykryciu nowej luki w zabezpieczeniach twój zespół ds. zabezpieczeń nie będzie o nim korzystać, nawet jeśli znajduje się z dala od biurka. [Dowiedz się więcej o powiadomieniach e-mail](mdb-email-notifications.md). 
+2. **Konfigurowanie powiadomień e-mail**. W tym kroku możesz skonfigurować powiadomienia e-mail dla zespołu ds. zabezpieczeń. Po wygenerowaniu alertu lub wykryciu nowej luki w zabezpieczeniach twój zespół ds. zabezpieczeń nie przegapi go, nawet jeśli znajduje się poza biurkiem. [Dowiedz się więcej o powiadomieniach e-mail](mdb-email-notifications.md). 
 
 3. **Dołączanie i konfigurowanie urządzeń Windows**. W tym kroku możesz szybko dołączyć urządzenia Windows firmy do usługi Defender dla Firm. Od razu dołączanie urządzeń pomaga chronić te urządzenia od pierwszego dnia. 
 
-   - **Jeśli używasz już Microsoft Endpoint Manager** (w tym Microsoft Intune), a twoja firma ma urządzenia zarejestrowane w Endpoint Manager, zostanie wyświetlone pytanie, czy chcesz używać [automatycznego dołączania](#what-is-automatic-onboarding) do niektórych lub wszystkich zarejestrowanych urządzeń Windows. Automatyczne dołączanie konfiguruje połączenie między Endpoint Manager i usługą Defender dla Firm, a następnie bezproblemowo dołącza urządzenia Windows do usługi Defender dla Firm. 
-   - **Jeśli nie używasz jeszcze Endpoint Manager**, możesz [dołączyć urządzenia do usługi Defender dla Firm](mdb-onboard-devices.md). 
+   - **Jeśli korzystasz już z Microsoft Intune**, a twoja firma ma urządzenia zarejestrowane w Intune, zostanie wyświetlony monit, czy chcesz używać [automatycznego dołączania](#what-is-automatic-onboarding) dla niektórych lub wszystkich zarejestrowanych urządzeń Windows. Automatyczne dołączanie konfiguruje połączenie między Intune i usługą Defender dla Firm, a następnie bezproblemowo dołącza urządzenia Windows do usługi Defender dla Firm. 
+   - **Jeśli nie używasz jeszcze Intune**, możesz [dołączyć urządzenia do usługi Defender dla Firm](mdb-onboard-devices.md). 
    
    [Dowiedz się więcej o dołączaniu urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).
    
-4. **Skonfiguruj zasady zabezpieczeń**. Usługa Defender dla firm zawiera domyślne zasady zabezpieczeń dla ochrony następnej generacji i ochrony zapory, które mogą być stosowane do urządzeń firmy. Te domyślne zasady używają zalecanych ustawień i zostały zaprojektowane tak, aby zapewnić silną ochronę urządzeń. Możesz również utworzyć własne zasady zabezpieczeń. A jeśli już używasz Endpoint Manager, możesz nadal używać ich do zarządzania zasadami zabezpieczeń.
+4. **Skonfiguruj zasady zabezpieczeń**. Usługa Defender dla firm zawiera domyślne zasady zabezpieczeń dla ochrony następnej generacji i ochrony zapory, które mogą być stosowane do urządzeń firmy. Te domyślne zasady używają zalecanych ustawień i zostały zaprojektowane tak, aby zapewnić silną ochronę urządzeń. Możesz również utworzyć własne zasady zabezpieczeń. A jeśli już używasz Intune, możesz nadal używać centrum administracyjnego Microsoft Endpoint Manager do zarządzania zasadami zabezpieczeń.
 
    [Wyświetlanie i edytowanie zasad zabezpieczeń i ustawień](mdb-configure-security-settings.md).
 
 ## <a name="what-is-automatic-onboarding"></a>Co to jest automatyczne dołączanie?
 
-Automatyczne dołączanie to uproszczony sposób dołączania urządzeń Windows do usługi Defender for Business. Automatyczne dołączanie jest dostępne tylko dla urządzeń Windows, które są już zarejestrowane w Microsoft Endpoint Manager (lub Microsoft Intune). 
+Automatyczne dołączanie to uproszczony sposób dołączania urządzeń Windows do usługi Defender for Business. Automatyczne dołączanie jest dostępne tylko dla urządzeń Windows, które są już zarejestrowane w Microsoft Intune. 
 
-Podczas korzystania z kreatora instalacji system wykryje, czy urządzenia Windows są już zarejestrowane w Endpoint Manager. Zostanie wyświetlone pytanie, czy chcesz używać automatycznego dołączania dla wszystkich lub niektórych z tych urządzeń. Możesz dołączyć wszystkie urządzenia Windows jednocześnie lub wybrać określone urządzenia do rozpoczęcia, a następnie dodać więcej urządzeń później. 
+Podczas korzystania z kreatora instalacji system wykryje, czy urządzenia Windows są już zarejestrowane w Intune. Zostanie wyświetlone pytanie, czy chcesz używać automatycznego dołączania dla wszystkich lub niektórych z tych urządzeń. Możesz dołączyć wszystkie urządzenia Windows jednocześnie lub wybrać określone urządzenia do rozpoczęcia, a następnie dodać więcej urządzeń później. 
 
 Aby dołączyć inne urządzenia, zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).
 
 > [!TIP]
-> - Zalecamy wybranie opcji "wszystkie zarejestrowane urządzenia". Dzięki temu, gdy Windows urządzenia zostaną zarejestrowane w Endpoint Manager później, zostaną automatycznie dołączone do usługi Defender for Business. 
-> - Jeśli zarządzasz zasadami i ustawieniami zabezpieczeń w Endpoint Manager, zalecamy przejście do portalu Microsoft 365 Defender w celu zarządzania urządzeniami, zasadami i ustawieniami. Aby dowiedzieć się więcej, zobacz [Wybieranie miejsca zarządzania zasadami zabezpieczeń i urządzeniami](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
+> - Zalecamy wybranie opcji "wszystkie zarejestrowane urządzenia". Dzięki temu, gdy Windows urządzenia zostaną zarejestrowane w Intune później, zostaną automatycznie dołączone do usługi Defender for Business. 
+> - Jeśli zarządzasz zasadami i ustawieniami zabezpieczeń w centrum administracyjnym Endpoint Manager, zalecamy przejście do portalu Microsoft 365 Defender w celu zarządzania urządzeniami, zasadami i ustawieniami. Aby dowiedzieć się więcej, zobacz [Wybieranie miejsca zarządzania zasadami zabezpieczeń i urządzeniami](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 
 ## <a name="what-happens-if-i-dont-use-the-wizard"></a>Co się stanie, jeśli nie będę używać kreatora?
 

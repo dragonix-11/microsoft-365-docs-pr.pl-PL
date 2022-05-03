@@ -1,13 +1,12 @@
 ---
 title: Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm
-description: Dowiedz się, jak wyświetlać, edytować, tworzyć i usuwać zasady ochrony nowej generacji w Microsoft Defender dla Firm
+description: Dowiedz się, jak wyświetlać, edytować, tworzyć i usuwać zasady cyberbezpieczeństwa w usłudze Defender for Business. Ochrona urządzeń za pomocą zasad zabezpieczeń.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ba7f6846809009b8bb9df258b8ac18536a910b6d
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 85845ec12b8ad43abe965e277f8ea3f6c67e1d7d
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862131"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174172"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 W Microsoft Defender dla Firm ustawienia zabezpieczeń są konfigurowane za pomocą zasad stosowanych do urządzeń. Aby uprościć konfigurację i środowisko konfiguracji, usługa Defender dla firm zawiera wstępnie skonfigurowane zasady ułatwiające ochronę urządzeń firmy natychmiast po ich dołączeniu. Możesz użyć zasad domyślnych, edytować zasady lub tworzyć własne zasady.
 

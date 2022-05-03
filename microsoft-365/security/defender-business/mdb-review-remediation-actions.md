@@ -1,13 +1,12 @@
 ---
 title: Przeglądanie akcji korygowania w Microsoft Defender dla Firm
-description: Wyświetlanie korygowania, które zostały wykonane automatycznie lub oczekujące na zatwierdzenie w Centrum akcji
+description: Wyświetlanie korygowania wykrytych zagrożeń w usłudze Defender dla firm. Akcje można wyświetlać w centrum akcji w portalu Microsoft 365 Defender.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 15a64491f6e97137d1e919aa126d4bf134c47999
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 438d43548b4318499c44aea65399a7d5a3a5f43d
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862219"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174366"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Przeglądanie akcji korygowania w centrum akcji
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 W miarę wykrywania zagrożeń w grę wchodzą akcje korygowania. W zależności od konkretnego zagrożenia i sposobu konfigurowania ustawień zabezpieczeń akcje korygowania mogą być wykonywane automatycznie lub tylko po zatwierdzeniu. Przykłady akcji korygowania obejmują wysyłanie pliku do kwarantanny, zatrzymywanie procesu przed uruchomieniem i usuwanie zaplanowanego zadania. Wszystkie akcje korygowania są śledzone w centrum akcji.
 

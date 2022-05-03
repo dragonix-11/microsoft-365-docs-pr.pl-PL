@@ -11,15 +11,15 @@ metadata:
   ms.custom:
   - AdminSurgePortfolio
   - intro-hub-or-landing
-  author: efrene
-  ms.author: efrene
-  ms.date: 04/08/2022
-  ms.openlocfilehash: e319645e0dea93a04213402003788d069a64a2b0
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  author: denisebmsft
+  ms.author: deniseb
+  ms.date: 05/02/2022
+  ms.openlocfilehash: a9e7a3cd8ed3fb331c37c60453e8ef864ee96e3a
+  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65092596"
+  ms.lasthandoff: 05/03/2022
+  ms.locfileid: "65174799"
 productDirectory:
   title: Produktywność i bezpieczeństwo przy użyciu usługi Microsoft 365 Business Premium
   items:
@@ -57,7 +57,7 @@ conceptualContent:
       text: Porównanie planów platformy Microsoft 365 dla Firm
     - url: ../admin/misc/microsoft-365-business-faqs.yml
       itemType: reference
-      text: Microsoft 365 dla Firm — często zadawane pytania
+      text: Microsoft 365 Business Premium — często zadawane pytania
     - url: ../business-video/index.yml
       itemType: video
       text: Filmy szkoleniowe dotyczące usługi Microsoft 365 dla firm
@@ -117,9 +117,12 @@ conceptualContent:
       text: Wprowadzenie do Centrum partnerskiego
   - title: Ochrona urządzeń
     links:
+    - url: ../security/defender-business/index.yml
+      itemType: overview
+      text: Wprowadzenie do usługi Microsoft Defender dla Firm
     - url: ../business-premium/m365bp-devices-overview.md
       itemType: overview
-      text: Ochrona urządzeń osobistych (niezarządzanych)
+      text: Konfigurowanie urządzeń niezarządzanych (BYOD)
     - url: ../business-premium/m365bp-multifactor-authentication.md
       itemType: how-to-guide
       text: Konfigurowanie uwierzytelniania wieloskładnikowego na urządzeniach
@@ -134,9 +137,12 @@ conceptualContent:
       text: Konfigurowanie i zabezpieczanie urządzeń zarządzanych
   - title: Ochrona zawartości wiadomości e-mail i plików pakietu Office
     links:
+    - url: ..//security/office-365-security/index.yml
+      itemType: overview
+      text: Wprowadzenie do usługi Microsoft Defender dla usługi Office 365
     - url: ../business-premium/m365bp-increase-protection.md
       itemType: how-to-guide
-      text: Konfigurowanie zasad zabezpieczeń
+      text: Ochrona przed wyłudzaniem informacji, złośliwym oprogramowaniem i innymi zagrożeniami
     - url: ../business-premium/avoid-phishing-and-attacks.md
       itemType: how-to-guide
       text: Dowiedz się, czego szukać w zawartości wiadomości e-mail

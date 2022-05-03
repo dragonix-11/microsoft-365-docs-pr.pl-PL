@@ -1,8 +1,8 @@
 ---
-title: Przewodnik zaawansowanego wyszukiwania przy użyciu interfejsu API programu PowerShell
+title: Zaawansowane wyszukiwanie zagrożeń za pomocą interfejsu API programu PowerShell — przewodnik
 ms.reviewer: ''
-description: Skorzystaj z tych przykładów kodów i przeszukaj kilka interfejsów API programu Microsoft Defender dla punktów końcowych.
-keywords: api, obsługiwane api, zaawansowane wyszukiwania, zapytanie
+description: Użyj tych przykładów kodu, wykonując zapytania dotyczące kilku Ochrona punktu końcowego w usłudze Microsoft Defender interfejsów API.
+keywords: interfejsy API, obsługiwane interfejsy API, zaawansowane wyszukiwanie zagrożeń, zapytania
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,59 +15,63 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 09/24/2018
+ms.date: 04/27/2022
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b1f501b942512500c11c7f9fe1e9308d67706e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c23bf15a188527b2b4c24270fbc1312537da4154
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997848"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174880"
 ---
-# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>Interfejsy API programu Microsoft Defender dla punktów końcowych przy użyciu programu PowerShell
+# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>Ochrona punktu końcowego w usłudze Microsoft Defender interfejsów API przy użyciu programu PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:** 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- [Microsoft Defender dla Firm](../defender-business/index.yml)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!IMPORTANT]
+> Zaawansowane możliwości wyszukiwania zagrożeń nie są uwzględniane w usłudze Defender dla firm. Zobacz [Porównanie Microsoft Defender dla Firm z planami Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Pełny scenariusz z użyciem wielu interfejsów API z programu Microsoft Defender dla punktu końcowego.
+Pełny scenariusz z użyciem wielu interfejsów API z Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-W tej sekcji udostępniamy przykłady programu PowerShell 
+W tej sekcji udostępnimy przykłady programu PowerShell 
 - Pobieranie tokenu 
-- Pobieranie najnowszych alertów w programie Microsoft Defender dla punktu końcowego za pomocą tokenu
-- Dla każdego alertu, jeśli alert ma średni lub wysoki priorytet i jest nadal w toku, sprawdź, ile razy urządzenie jest połączone z podejrzanym adresem URL.
+- Użyj tokenu, aby pobrać najnowsze alerty w Ochrona punktu końcowego w usłudze Microsoft Defender
+- Jeśli alert ma średni lub wysoki priorytet i jest nadal w toku, sprawdź, ile razy urządzenie połączyło się z podejrzanym adresem URL.
 
-**Wymagania** wstępne: najpierw należy [utworzyć aplikację](apis-intro.md).
+**Wymagania wstępne**: najpierw musisz [utworzyć aplikację](apis-intro.md).
 
-## <a name="preparation-instructions"></a>Instrukcje przygotowania
+## <a name="preparation-instructions"></a>Instrukcje przygotowywania
 
-- Otwieranie okna programu PowerShell.
-- Jeśli zasady nie umożliwiają uruchamiania poleceń programu PowerShell, możesz uruchomić poniższe polecenie:
+- Otwórz okno programu PowerShell.
+- Jeśli zasady nie zezwalają na uruchamianie poleceń programu PowerShell, możesz uruchomić poniższe polecenie:
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-Aby uzyskać więcej informacji, zobacz Dokumentacja [programu PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
+Aby uzyskać więcej informacji, zobacz [dokumentację programu PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-## <a name="get-token"></a>Pobierz token
+## <a name="get-token"></a>Uzyskiwanie tokenu
 
-Uruchom poniższe czynności:
+Uruchom poniższe polecenie:
 
 - $tenantId: identyfikator dzierżawy, w imieniu której chcesz uruchomić zapytanie (tj. zapytanie zostanie uruchomione na danych tej dzierżawy)
-- $appId: Identyfikator aplikacji AAD (aplikacja musi mieć uprawnienie "Uruchom zapytania zaawansowane" do usługi Defender dla punktu końcowego)
-- $appSecret: Klucz tajny aplikacji usługi Azure AD
+- $appId: identyfikator aplikacji AAD (aplikacja musi mieć uprawnienie "Uruchamianie zaawansowanych zapytań" do usługi Defender for Endpoint)
+- $appSecret: wpis tajny aplikacji Azure AD
 
-- $suspiciousUrl: Adres URL
+- $suspiciousUrl: adres URL
 
 
 ```
@@ -132,6 +136,6 @@ $response
 
 
 ## <a name="see-also"></a>Zobacz też
-- [Interfejsy API programu Microsoft Defender dla punktów końcowych](apis-intro.md)
-- [Zaawansowany interfejs API łowiectwo](run-advanced-query-api.md)
-- [Zaawansowane szukanie w języku Python](run-advanced-query-sample-python.md)
+- [interfejsy API Ochrona punktu końcowego w usłudze Microsoft Defender](apis-intro.md)
+- [Interfejs API zaawansowanego wyszukiwania zagrożeń](run-advanced-query-api.md)
+- [Zaawansowane wyszukiwanie zagrożeń przy użyciu języka Python](run-advanced-query-sample-python.md)

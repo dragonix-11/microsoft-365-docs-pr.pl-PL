@@ -1,6 +1,7 @@
 ---
-title: Korzystanie z raportów dotyczących zgodności komunikacji i inspekcji
-description: Dowiedz się więcej o używaniu raportów dotyczących zgodności komunikacji i inspekcji.
+title: Używanie raportów i inspekcji zgodności komunikacji
+description: Dowiedz się więcej na temat korzystania z raportów zgodności komunikacji i inspekcji.
+keywords: Microsoft 365, Microsoft Purview, zgodność, zgodność z komunikacją
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,174 +19,176 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a65a72538afa3684cf4ad9351d30313e0dc43b8d
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: e7e26451e2cf4786f73b16f74bedd46ca764f6ed
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013811"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173750"
 ---
-# <a name="use-communication-compliance-reports-and-audits"></a>Korzystanie z raportów dotyczących zgodności komunikacji i inspekcji
+# <a name="use-communication-compliance-reports-and-audits"></a>Używanie raportów i inspekcji zgodności komunikacji
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="reports"></a>Raporty
 
-Nowy pulpit **nawigacyjny Raporty** jest centralną lokalizacją przeglądania wszystkich raportów zgodności komunikacji. Widżety raportów zapewniają szybki podgląd najczęściej potrzebnych informacji do ogólnej oceny stanu działań dotyczących zgodności komunikacji. Informacji zawartych w widżetach raportów nie można eksportować. Raporty szczegółowe zawierają szczegółowe informacje dotyczące określonych obszarów zgodności komunikacji oraz zapewniają możliwości filtrowania, grupowania, sortowania i eksportowania informacji podczas przeglądania. 
+Nowy pulpit **nawigacyjny Raporty** to centralna lokalizacja do wyświetlania wszystkich raportów zgodności komunikacji. Widżety raportów zapewniają szybki wgląd w szczegółowe informacje najczęściej potrzebne do ogólnej oceny stanu działań związanych ze zgodnością komunikacji. Informacji zawartych w widżetach raportu nie można eksportować. Szczegółowe raporty zawierają szczegółowe informacje związane z określonymi obszarami zgodności komunikacji i oferują możliwość filtrowania, grupowania, sortowania i eksportowania informacji podczas przeglądania. 
 
-W przypadku filtru zakresu dat data i godzina zdarzeń są podane w uniwersalnym czasie koordynowanej (UTC). Podczas filtrowania wiadomości dla raportów lokalna data/godzina użytkownika żądającego określa wyniki na podstawie konwersji lokalnej daty/czasu użytkownika na czas UTC. Jeśli na przykład użytkownik w czasie pacyficznego czasu letniego (PDT) filtruje raport od 2021-08-30 do 2021-08-31 o 00:00, raport będzie zawierał wiadomości od 2021-08-30 07:00 czasu UTC do 2021-08-31 07:00. Jeśli ten sam użytkownik był w czasie wschodnioletniego (EDT) podczas filtrowania o godzinie 00:00, raport będzie zawierał wiadomości z dnia 2021-08-30 w godzinach 04:00 czasu UTC do godziny 2021-08-31 04:00 czasu UTC.
+Dla filtru zakresu dat data i godzina dla zdarzeń są wymienione w uniwersalnym czasie koordynowanym (UTC). Podczas filtrowania komunikatów dla raportów lokalna data/godzina użytkownika żądającego określa wyniki na podstawie konwersji lokalnej daty/godziny użytkownika na utc. Jeśli na przykład użytkownik z regionu Pacyfik (PDT) filtruje raport z 30.08.2021 r. do 31.08.2021 r. o godzinie 00:00, raport zawiera komunikaty z 30.08.2021 r. od 07:00 UTC do 31.08.2021 r. 07:00 UTC. Jeśli ten sam użytkownik był w usa wschodniego czasu letniego (EDT) podczas filtrowania o 00:00, raport zawiera komunikaty z 30.08.2021 04:00 UTC do 31.08.2021 04:00 UTC.
 
 ![Pulpit nawigacyjny raportów zgodności komunikacji.](../media/communication-compliance-reports-dashboard.png)
 
-Pulpit **nawigacyjny Raporty** zawiera następujące widżety raportów i linki do szczegółowych raportów:
+**Pulpit nawigacyjny Raporty** zawiera następujące widżety raportów i szczegółowe linki do raportów:
 
 ### <a name="report-widgets"></a>Widżety raportów
 
-- **Ostatnie dopasowania zasad**: wyświetla liczbę dopasowania według aktywnych zasad w czasie.
-- **Rozwiązano elementy według zasad**: wyświetla liczbę alertów o dopasowaniach zasad rozwiązanych przez zasady w czasie.
-- **Użytkownicy, których zasady są najbardziej** zgodne: wyświetla użytkowników (lub zanonimizowane nazwy użytkowników) oraz liczbę dopasowań zasad dla danego okresu.
-- **Zasady z największą liczbą dopasowania**: wyświetla zasady i liczbę dopasowania dla danego okresu w klasyfikacji od największej do najmniejszej w przypadku dopasowania.
-- **Eskalacji według zasad**: wyświetla liczbę eskalacji na zasady w danym czasie.
+- **Ostatnie dopasowania zasad**: wyświetla liczbę dopasowań według aktywnych zasad w czasie.
+- **Rozwiązane elementy według zasad**: wyświetla liczbę alertów dopasowania zasad rozpoznawanych przez zasady w czasie.
+- **Użytkownicy z większością dopasowań zasad**: wyświetla użytkowników (lub zanonimizowane nazwy użytkowników) i liczbę dopasowań zasad dla danego okresu.
+- **Zasady z większością dopasowań**: wyświetla zasady i liczbę dopasowań dla danego okresu, w rankingu od najwyższego do najniższego w przypadku dopasowań.
+- **Eskalacje według zasad**: wyświetla liczbę eskalacji na zasady w danym czasie.
 
-### <a name="detailed-reports"></a>Raporty szczegółowe
+### <a name="detailed-reports"></a>Szczegółowe raporty
 
-Użyj opcji *Eksportuj* , aby utworzyć plik .csv zawierający szczegóły raportu dla dowolnego raportu szczegółowego.
+Użyj opcji *Eksportuj* , aby utworzyć plik .csv zawierający szczegóły raportu dla dowolnego szczegółowego raportu. Opcja *Eksportuj* raport obsługuje pobieranie plików o rozmiarze do 3 MB.
 
-- **Ustawienia i stan** zasad: umożliwia szczegółowe spojrzenie na konfigurację i ustawienia zasad, a także ogólny stan każdej zasady (dopasowania i akcje) w wiadomościach. Zawiera informacje o zasadach oraz skojarzyć zasady z użytkownikami i grupami, lokalizacje, przeglądanie wartości procentowych, recenzentów, stan i czas ostatniej modyfikacji zasad. Użyj opcji *Eksportuj* , aby utworzyć plik .csv zawierający szczegóły raportu.
-- **Elementy i akcje według zasad**: Przeglądanie i eksportowanie pasujących elementów oraz działań naprawczych dla per zasad. Zawiera informacje o zasadach i skojarzona z nimi zasady:
-
-    - Elementy dopasowane
-    - Eskalacji elementów
-    - Rozpoznane elementy
-    - Otagowane jako zgodne
-    - Otagowane jako niezgodne
-    - Otagowane jako znak zapytania
-    - Elementy oczekujące na recenzję
-    - Użytkownik został powiadomiony
-    - Utworzono sprawę
-
-- **Element i akcje dla lokalizacji**: Przejrzyj i wyeksportuj pasujące elementy oraz akcje naprawcze na Microsoft 365 lokalizacji. Zawiera informacje o skojarzona z nią platformach obciążeń:
+- **Ustawienia zasad i stan**: szczegółowe omówienie konfiguracji i ustawień zasad, a także ogólny stan poszczególnych zasad (dopasowań i akcji) w komunikatach. Zawiera informacje o zasadach oraz sposób, w jaki zasady są skojarzone z użytkownikami i grupami, lokalizacjami, wartościami procentowymi przeglądania, recenzentami, stanem oraz datą ostatniej modyfikacji zasad. Użyj opcji *Eksportuj* , aby utworzyć plik .csv zawierający szczegóły raportu.
+- **Elementy i akcje na zasady**: przejrzyj i wyeksportuj pasujące elementy oraz akcje korygowania dla zasad. Zawiera informacje o zasadach i sposób, w jaki zasady są skojarzone z:
 
     - Elementy dopasowane
-    - Eskalacji elementów
-    - Rozpoznane elementy
-    - Otagowane jako zgodne
-    - Otagowane jako niezgodne
-    - Otagowane jako znak zapytania
-    - Elementy oczekujące na recenzję
-    - Użytkownik został powiadomiony
-    - Utworzono sprawę
+    - Elementy eskalowane
+    - Rozwiązane elementy
+    - Oznakowane jako zgodne
+    - Oznaczone jako niezgodne
+    - Oznaczone jako wątpliwe
+    - Elementy oczekujące na przegląd
+    - Użytkownik powiadomiony
+    - Utworzono przypadek
 
-- **Aktywność według użytkownika**: Przeglądanie i eksportowanie pasujących elementów oraz akcji naprawczych dla każdego użytkownika. Zawiera informacje o skojarzona z nim skojarzona z:
+- **Element i akcje na lokalizację**: przejrzyj i wyeksportuj pasujące elementy oraz akcje korygowania na Microsoft 365 lokalizacji. Zawiera informacje o tym, jak platformy obciążeń są skojarzone z:
 
     - Elementy dopasowane
-    - Eskalacji elementów
-    - Rozpoznane elementy
-    - Otagowane jako zgodne
-    - Otagowane jako niezgodne
-    - Otagowane jako znak zapytania
-    - Elementy oczekujące na recenzję
-    - Użytkownik został powiadomiony
-    - Utworzono sprawę
+    - Elementy eskalowane
+    - Rozwiązane elementy
+    - Oznakowane jako zgodne
+    - Oznaczone jako niezgodne
+    - Oznaczone jako wątpliwe
+    - Elementy oczekujące na przegląd
+    - Użytkownik powiadomiony
+    - Utworzono przypadek
 
-- **Typ informacji poufnych na lokalizację** (wersja zapoznawcza): Przeglądanie i eksportowanie informacji o wykrywaniu typów informacji poufnych i skojarzonych ze źródłami w zasadach zgodności komunikacji. Zawiera ogólną sumę oraz określony podział wystąpień typów informacji poufnych w źródłach skonfigurowanych w organizacji. Wartości dla każdego źródła innej firmy są wyświetlane w osobnych kolumnach w .csv pliku. Przykłady:
+- **Działanie według użytkownika**: przejrzyj i wyeksportuj pasujące elementy oraz akcje korygowania na użytkownika. Zawiera informacje o sposobie, w jaki użytkownicy są kojarzeni z:
 
-    - **Poczta e-mail**: Typy informacji poufnych wykryte w Exchange e-mail.
-    - **Teams**: Typy informacji poufnych wykryte w Microsoft Teams i wiadomościach czatu.
-    - **Skype dla firm**: Typy informacji poufnych wykryte w programie Skype komunikacji biznesowej.
-    - **Yammer**: Typy informacji poufnych wykryte w Yammer, wpisach, czatach i odpowiedziach.
-    - **Źródła innych firm: typy** informacji poufnych wykryte w przypadku działań skojarzonych z łącznikami innych firm skonfigurowanymi w organizacji. Aby wyświetlić zestawienie źródeł innych firm dla określonego typu informacji poufnych w raporcie, umieść wskaźnik myszy na wartości dla typu informacji poufnych w kolumnie Źródło innych firm.
-    - **Inne**: Typy informacji poufnych używane do wewnętrznego przetwarzania systemu. Zaznaczenie lub usunięcie zaznaczenia tego źródła dla raportu nie ma wpływu na żadne wartości.
+    - Elementy dopasowane
+    - Elementy eskalowane
+    - Rozwiązane elementy
+    - Oznakowane jako zgodne
+    - Oznaczone jako niezgodne
+    - Oznaczone jako wątpliwe
+    - Elementy oczekujące na przegląd
+    - Użytkownik powiadomiony
+    - Utworzono przypadek
 
-### <a name="message-details-report-preview"></a>Raport szczegółów wiadomości (wersja zapoznawcza)
+- **Typ informacji poufnych na lokalizację** (wersja zapoznawcza): przejrzyj i wyeksportuj informacje o wykrywaniu typów informacji poufnych i skojarzonych źródłach w zasadach zgodności komunikacji. Obejmuje całkowitą sumę i określony podział wystąpień typów informacji poufnych w źródłach skonfigurowanych w organizacji. Wartości dla każdego źródła innej firmy są wyświetlane w oddzielnych kolumnach w pliku .csv. Przykłady:
 
-Tworzenie raportów niestandardowych i przeglądanie szczegółów wiadomości zawartych w określonych zasadach na **karcie** Zasady. Te raporty mogą być używane do wszystkich przeglądów wiadomości i tworzenia migawki raportu stanu wiadomości w dostosowywalnym okresie. Po utworzeniu raportu możesz wyświetlić i pobrać raport szczegółów jako plik .csv na karcie **Raporty szczegółów** wiadomości.
+    - **Wiadomość e-mail**: typy informacji poufnych wykryte w Exchange wiadomościach e-mail.
+    - **Teams**: typy informacji poufnych wykryte w kanałach Microsoft Teams i wiadomościach czatu.
+    - **Skype dla firm**: typy informacji poufnych wykryte w Skype komunikacji biznesowej.
+    - **Yammer**: typy informacji poufnych wykryte w Yammer skrzynkach odbiorczych, wpisach, czatach i odpowiedziach.
+    - **Źródła innych firm**: wykryto poufne typy informacji dla działań skojarzonych z łącznikami innych firm skonfigurowanymi w organizacji. Aby wyświetlić podział źródeł innych firm dla określonego typu informacji poufnych w raporcie, umieść wskaźnik myszy nad wartością typu informacji poufnych w kolumnie źródła innej firmy.
+    - **Inne**: Typy informacji poufnych używane do wewnętrznego przetwarzania systemu. Wybranie lub usunięcie zaznaczenia tego źródła raportu nie wpłynie na żadne wartości.
+
+### <a name="message-details-report-preview"></a>Raport szczegółów komunikatu (wersja zapoznawcza)
+
+Utwórz niestandardowe raporty i przejrzyj szczegóły komunikatów zawartych w określonych zasadach na karcie **Zasady** . Te raporty mogą służyć do wszystkich przeglądów komunikatów i tworzenia migawki raportu dla stanu komunikatów w dostosowywalnym okresie. Po utworzeniu raportu możesz wyświetlić i pobrać raport szczegółów jako plik .csv na karcie **Raporty szczegółów wiadomości** .
 
 ![Raport szczegółowy komunikatu o zgodności komunikacji.](../media/communication-compliance-message-detail-report.png)
 
-Aby utworzyć raport ze szczegółami nowej wiadomości, wykonaj następujące czynności:
+Aby utworzyć nowy raport szczegółów komunikatu, wykonaj następujące kroki:
 
-1. Zaloguj się do Centrum zgodności platformy Microsoft 365 za pomocą konta, które jest członkiem grupy ról Grupy członków *zgodności* komunikacji.
-2. Przejdź do karty **Zasady** , wybierz zasady, a następnie wybierz pozycję **Utwórz raport szczegółów wiadomości**.
-3. W **okienku Utwórz raport ze szczegółami** wiadomości wprowadź nazwę raportu w **polu Nazwa** raportu.
-4. W **przycisku Wybierz zakres dat** wybierz dla raportu wartości *Data rozpoczęcia* i Data zakończenia.
+1. Zaloguj się do portalu zgodności usługi Microsoft Purview przy użyciu konta należącego do grupy ról *Badacze zgodności komunikacji* .
+2. Przejdź do karty **Zasady** , wybierz zasady, a następnie wybierz pozycję **Utwórz raport szczegółów komunikatu**.
+3. W okienku **Tworzenie raportu szczegółów komunikatu** wprowadź nazwę raportu w polu **Nazwa raportu** .
+4. W **obszarze Wybierz zakres dat** wybierz *datę rozpoczęcia* i *datę zakończenia* raportu.
 5. Wybierz pozycję **Utwórz**.
 6. Zostanie wyświetlone potwierdzenie utworzenia raportu.
 
-W zależności od liczby elementów w raporcie może mi potrwać od kilku minut do godzin, zanim raport będzie gotowy do pobrania. Postęp możesz sprawdzić na karcie Raporty szczegółów wiadomości. Raport ma stan *W toku* lub *Gotowe do pobrania*. Możesz jednocześnie przetwarzać maksymalnie 15 oddzielnych raportów. Aby pobrać raport, wybierz raport w stanie *Gotowe do* pobrania, a następnie wybierz pozycję **Pobierz raport**.
+W zależności od liczby elementów w raporcie może upłynąć kilka minut do godzin, zanim raport będzie gotowy do pobrania. Postęp można sprawdzić na karcie Raporty szczegółów komunikatów. Stan raportu to *W toku* lub *Gotowe do pobrania*. Jednocześnie może być przetwarzanych maksymalnie 15 oddzielnych raportów. Aby pobrać raport, wybierz raport w stanie *Gotowe do pobrania* i wybierz pozycję **Pobierz raport**.
 
 > [!NOTE]
-> Jeśli wybrany okres nie powoduje zwrócenia żadnych wiadomości w raporcie, oznacza to, że w wybranym okresie nie było żadnych komunikatów. Raport będzie pusty.
+> Jeśli wybrany okres nie zwraca żadnych wyników komunikatu w raporcie, nie było żadnych komunikatów dla wybranego okresu. Raport będzie pusty.
 
-Raporty szczegółów wiadomości zawierają następujące informacje dla każdego elementu wiadomości w zasadach:
+Raporty szczegółów komunikatów zawierają następujące informacje dla każdego elementu komunikatu w zasadach:
 
-- **Identyfikator dopasowania**: unikatowy identyfikator wiadomości w zasadach.
+- **Identyfikator dopasowania**: unikatowy identyfikator komunikatu w zasadach.
 - **Nadawca**: nadawca wiadomości.
-- **Adresaci**: adresaci wiadomości.
+- **Adresaci**: adresaci dołączone do wiadomości.
 - **Data wysłania**: data wysłania wiadomości.
-- **Data dopasowania**: data dopasowania wiadomości do warunków zasad.
+- **Data dopasowania**: data dopasowania komunikatu do warunków zasad.
 - **Temat**: temat wiadomości.
-- **Zawiera załączniki**: stan wszystkich załączników wiadomości. Wartości to Tak lub Nie.
-- **Nazwa zasad**: nazwa zasady skojarzonej z wiadomością. Ta wartość będzie taka sama dla wszystkich wiadomości w raporcie.
-- **Stan elementu**: stan elementu wiadomości w zasadach. Wartości są oczekujące lub rozwiązane.
-- **Tagi**: tagi przypisane do wiadomości. Wartości mogą być wątpliwości, zgodne lub niezgodne.
-- **Dopasowania słów** kluczowych: dopasowania słów kluczowych do wiadomości.
-- **Recenzentzy**: recenzentzy przypisani do wiadomości.
-- **Oczekiwanie przez (dni)**: liczba dni, przez które wiadomość była w stanie oczekiwania. W przypadku rozwiązanych wiadomości wartość wynosi 0.
-- **Komentarz do rozwiązania**: komentarze do wiadomości wprowadzonej podczas rozwiązania.
-- **Data rozwiązania**: data i godzina rozwiązania wiadomości.
-- **Ostatnia aktualizacja według**: nazwa użytkownika ostatniej aktualizacji.
-- **Ostatnia aktualizacja w** dniu: data i godzina ostatniej aktualizacji wiadomości.
-- **Historia komentarzy**: lista wszystkich komentarzy do alertu wiadomości, łącznie z autorem komentarza i datą/godziną komentarza.
+- **Zawiera załączniki**: stan załączników wiadomości. Wartości to Tak lub Nie.
+- **Nazwa zasad**: nazwa zasad skojarzonych z komunikatem. Ta wartość będzie taka sama dla wszystkich komunikatów w raporcie.
+- **Stan elementu**: stan elementu komunikatu w zasadach. Wartości są oczekujące lub rozwiązane.
+- **Tagi**: tagi przypisane do wiadomości. Wartości są wątpliwe, zgodne lub niezgodne.
+- **Dopasowania słów kluczowych**: dopasowanie słowa kluczowego dla komunikatu.
+- **Recenzenci**: recenzenci przypisani do wiadomości.
+- **Oczekujące dla (dni)**: liczba dni, w których komunikat jest w stanie oczekiwania. W przypadku rozpoznanych komunikatów wartość to 0.
+- **Komentarz do rozwiązania**: komentarze do wiadomości wprowadzone po rozwiązaniu.
+- **Data rozwiązania**: data i godzina usunięcia komunikatu.
+- **Ostatnia aktualizacja:** nazwa użytkownika ostatniego aktualizującego.
+- **Ostatnia aktualizacja**: data i godzina ostatniej aktualizacji komunikatu.
+- **Historia komentarzy**: lista wszystkich komentarzy dla alertu wiadomości, w tym autor komentarza i data/godzina komentarza.
 
-## <a name="audit"></a>Inspekcja
+## <a name="audit"></a>Inspekcji
 
-W niektórych przypadkach należy udostępnić informacje audytorom wymogów prawnych lub zgodności, aby potwierdzić nadzór nad działaniami użytkowników i komunikacją. Te informacje mogą być podsumowaniem wszystkich działań skojarzonych ze zdefiniowanymi zasadami organizacji lub w dowolnym momencie, gdy zmienią się zasady zgodności komunikacji. Zasady zgodności komunikacji mają wbudowane ślady inspekcji w celu pełnej gotowości do inspekcji wewnętrznej lub zewnętrznej. Szczegółowe historie inspekcji wszystkich działań związanych z tworzeniem, edytowaniem i usuwaniem są przechwytywane przez zasady komunikacji w celu potwierdzenia procedur nadzorczych.
+W niektórych przypadkach należy przekazać informacje audytorom regulacyjnym lub zgodności, aby udowodnić nadzór nad działaniami użytkowników i komunikacją. Te informacje mogą być podsumowaniem wszystkich działań skojarzonych ze zdefiniowanymi zasadami organizacyjnymi lub w dowolnym momencie zmiany zasad zgodności komunikacji. Zasady zgodności komunikacji mają wbudowane ścieżki inspekcji umożliwiające pełną gotowość do wewnętrznych lub zewnętrznych inspekcji. Szczegółowe historie inspekcji każdej akcji tworzenia, edycji i usuwania są przechwytywane przez zasady komunikacji w celu dostarczenia dowodu procedur nadzoru.
 
 > [!IMPORTANT]
-> Aby zdarzenia zgodności komunikacji nagrywały, inspekcja musi być włączona w organizacji. Aby włączyć inspekcję, [zobacz Włączanie dziennika inspekcji](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Gdy działania powodują wyzwolenie zdarzeń rejestrowanych w dzienniku Microsoft 365 inspekcji, ich wyświetlenie w zasadach zgodności komunikacji może potrwać do 48 godzin.
+> Aby zdarzenia zgodności z komunikacją były rejestrowane, należy włączyć inspekcję dla organizacji. Aby włączyć inspekcję, zobacz [Włączanie dziennika inspekcji](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Gdy działania wyzwalają zdarzenia przechwycone w dzienniku inspekcji Microsoft 365, wyświetlenie tych zdarzeń w zasadach zgodności komunikacji może potrwać do 48 godzin.
 
-Aby wyświetlić działania aktualizacji zasad zgodności komunikacji, wybierz kontrolkę aktualizacji zasad eksportu na stronie głównej dla dowolnych zasad. Aby wyeksportować działania aktualizujące *,* musisz  mieć przypisane role administratora globalnego lub administratora zgodności komunikacji. Ta akcja generuje plik inspekcji w formacie .csv zawierającym następujące informacje:
+Aby wyświetlić działania aktualizacji zasad zgodności komunikacji, wybierz kontrolkę **Eksportuj aktualizacje zasad** na stronie głównej dla wszystkich zasad. Aby eksportować działania aktualizacji, musisz mieć przypisane role *administratora globalnego* lub *administratora zgodności komunikacji* . Ta akcja generuje plik inspekcji w formacie .csv, który zawiera następujące informacje:
 
 |**Pole**|**Szczegóły**|
 |:-----|:-----|
-| **CreationDate** | Data wykonania działania aktualizacji w zasadach. |
-| **UserIds** | Użytkownik, który wykonał działanie aktualizacji w zasadach. |
+| **Creationdate** | Data wykonania działania aktualizacji w zasadach. |
+| **Identyfikatory użytkowników** | Użytkownik, który wykonał działanie aktualizacji w zasadach. |
 | **Operacje** | Operacje aktualizacji wykonywane na zasadach. |
-| **Dane inspekcji** | To pole jest głównym źródłem danych dla wszystkich działań aktualizacji zasad. Wszystkie działania aktualizacji są rejestrowane i rozdzielone przecinkami. |
+| **AuditData** | To pole jest głównym źródłem danych dla wszystkich działań związanych z aktualizacją zasad. Wszystkie działania aktualizacji są rejestrowane i oddzielone ogranicznikami przecinków. |
 
-Aby wyświetlić działania związane z przeglądem zgodności komunikacji dla zasad,  wybierz kontrolkę Eksportowanie działań przeglądu na stronie **Omówienie** dla określonych zasad. Aby wyeksportować działania przeglądowe *,* musisz mieć  przypisane role administratora globalnego lub administratora zgodności komunikacji. Ta akcja generuje plik inspekcji w formacie .csv zawierającym następujące informacje:
+Aby wyświetlić działania przeglądu zgodności komunikacji dla zasad, wybierz kontrolkę **Eksportuj działania przeglądu** na stronie **Przegląd** dla określonych zasad. Aby eksportować działania przeglądu, musisz mieć przypisane role *administratora globalnego* lub *administratora zgodności komunikacji* . Ta akcja generuje plik inspekcji w formacie .csv, który zawiera następujące informacje:
 
 |**Pole**|**Szczegóły**|
 |:-----|:-----|
-| **CreationDate** | Data wykonania działania rerecenzenta w zasadach. |
-| **UserIds** | Użytkownik, który wykonał działanie rerecenzenta w zasadach. |
-| **Operacje** | Operacje przeglądu wykonywane na zasadach. |
-| **Dane inspekcji** | To pole jest głównym źródłem danych dla wszystkich działań przeglądu zasad. Wszystkie działania przeglądowe są rejestrowane i rozdzielone przecinkami. |
+| **Creationdate** | Data wykonania działania przeglądu w zasadach. |
+| **Identyfikatory użytkowników** | Użytkownik, który wykonał działanie przeglądu w zasadach. |
+| **Operacje** | Operacje przeglądania wykonywane na zasadach. |
+| **AuditData** | To pole jest głównym źródłem danych dla wszystkich działań związanych z przeglądem zasad. Wszystkie działania przeglądania są rejestrowane i oddzielone ogranicznikami przecinków. |
 
-Działania inspekcji można także wyświetlać w ujednoliconym dzienniku inspekcji lub za pomocą polecenia cmdlet programu PowerShell [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) . Aby dowiedzieć się więcej o zasadach przechowywania dziennika inspekcji, zobacz [Zarządzanie zasadami przechowywania dziennika inspekcji](audit-log-retention-policies.md).
+Działania inspekcji można również wyświetlać w ujednoliconym dzienniku inspekcji lub za pomocą polecenia cmdlet programu PowerShell [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) . Aby dowiedzieć się więcej na temat zasad przechowywania dzienników inspekcji, zobacz [Zarządzanie zasadami przechowywania dzienników inspekcji](audit-log-retention-policies.md).
 
-Na przykład w poniższym przykładzie są zwracane działania ze wszystkich działań przeglądu nadzorczych (zasad i reguł):
+Na przykład poniższy przykład zwraca działania dla wszystkich działań przeglądu nadzoru (zasad i reguł):
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -Operations SupervisoryReviewTag
 ```
 
-W tym przykładzie są zwracane działania aktualizacji dla zasad zgodności komunikacji:
+Ten przykład zwraca działania aktualizacji dla zasad zgodności komunikacji:
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
 
-W tym przykładzie są zwracane działania zgodne z bieżącymi zasadami zgodności komunikacji:
+Ten przykład zwraca działania zgodne z bieżącymi zasadami zgodności komunikacji:
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
-Dopasowania do zasad zgodności komunikacji są przechowywane w skrzynkach pocztowych pod nadzorem poszczególnych zasad. W niektórych przypadkach może być konieczne sprawdzenie rozmiaru skrzynki pocztowej pod nadzorem, aby uzyskać zasady, aby upewnić się, że nie zbliża się do bieżącego limitu 100 GB przestrzeni dyskowej lub miliona wiadomości. Po osiągnięciu limitu skrzynki pocztowej dopasowania zasad nie są przechwytywane i musisz utworzyć nowe zasady (z tych samych ustawień), aby nadal przechwytywać dopasowania dla tych samych działań.
+Dopasowania zasad zgodności komunikacji są przechowywane w skrzynce pocztowej nadzoru dla każdej zasady. W niektórych przypadkach może być konieczne sprawdzenie rozmiaru skrzynki pocztowej nadzoru dla zasad, aby upewnić się, że nie zbliżasz się do bieżącego rozmiaru magazynu 100 GB lub limitu 1 miliona wiadomości. Jeśli limit skrzynki pocztowej zostanie osiągnięty, dopasowania zasad nie zostaną przechwycone i musisz utworzyć nowe zasady (z tymi samymi ustawieniami), aby nadal przechwytywać dopasowania dla tych samych działań.
 
-Aby sprawdzić rozmiar skrzynki pocztowej pod nadzorem dla zasad, wykonaj następujące czynności:
+Aby sprawdzić rozmiar skrzynki pocztowej nadzoru dla zasad, wykonaj następujące kroki:
 
-1. Użyj polecenia [cmdlet Połączenie-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) w module V2 programu Exchange Online PowerShell, aby połączyć się z programem Exchange Online PowerShell przy użyciu nowoczesnego uwierzytelniania.
+1. Użyj polecenia cmdlet [Połączenie-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) w module Exchange Online Programu PowerShell w wersji 2, aby nawiązać połączenie z programem Exchange Online programu PowerShell przy użyciu nowoczesnego uwierzytelniania.
 2. Uruchom następujące polecenie w programie PowerShell:
 
     ```PowerShell

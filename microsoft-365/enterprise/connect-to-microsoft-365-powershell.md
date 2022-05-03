@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Połączenie do dzierżawy Microsoft 365 przy użyciu programu PowerShell, aby Microsoft 365 wykonywać zadania centrum administracyjnego z poziomu wiersza polecenia.
-ms.openlocfilehash: a7f493bd0073762d995a232918d732e999a85777
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a69fa6885e254e0c15cd65833a4f8368ec239c4f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093926"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174822"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Połączenie z platformą Microsoft 365 za pomocą programu PowerShell
 
@@ -107,9 +107,9 @@ Odpowiedz **tak** lub **tak na wszystkie, aby** kontynuować instalację.
     Import-Module  AzureAD
     ```
     
-### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Krok 2. Połączenie do usługi Azure AD dla subskrypcji Microsoft 365
+### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Krok 2. Połączenie do Azure AD subskrypcji Microsoft 365
 
-Aby nawiązać połączenie z usługą Azure Active Directory (Azure AD) dla subskrypcji Microsoft 365 przy użyciu nazwy konta i hasła lub uwierzytelniania wieloskładnikowego, uruchom jedno z tych poleceń z wiersza polecenia Windows PowerShell. (Nie musi być podwyższony poziom.)
+Aby nawiązać połączenie z Azure Active Directory (Azure AD) dla subskrypcji Microsoft 365 przy użyciu nazwy konta i hasła lub przy użyciu uwierzytelniania wieloskładnikowego, uruchom jedno z tych poleceń w wierszu polecenia Windows PowerShell. (Nie musi być podwyższony poziom.)
 
 | chmura Office 365 | Polecenia |
 |:-------|:-----|
@@ -147,9 +147,9 @@ Te kroki są wymagane tylko raz na komputerze. Jednak prawdopodobnie będzie kon
    1. Jeśli zostanie wyświetlony monit o zainstalowanie dostawcy NuGet, wpisz **Y** i naciśnij klawisz Enter.
    1. Jeśli zostanie wyświetlony monit o zainstalowanie modułu z galerii PSGallery, wpisz **Y** i naciśnij klawisz Enter.
     
-### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Krok 2. Połączenie do usługi Azure AD dla subskrypcji Microsoft 365
+### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Krok 2. Połączenie do Azure AD subskrypcji Microsoft 365
 
-Aby nawiązać połączenie z usługą Azure AD dla subskrypcji Microsoft 365 przy użyciu nazwy konta i hasła lub uwierzytelniania wieloskładnikowego, uruchom jedno z tych poleceń w wierszu polecenia Windows PowerShell. (Nie musi być podwyższony poziom.)
+Aby nawiązać połączenie z Azure AD dla subskrypcji Microsoft 365 przy użyciu nazwy konta i hasła lub uwierzytelniania wieloskładnikowego, uruchom jedno z tych poleceń w wierszu polecenia Windows PowerShell. (Nie musi być podwyższony poziom.)
 
 | chmura Office 365 | Polecenia |
 |:-------|:-----|
@@ -204,6 +204,13 @@ Aby nawiązać połączenie z usługą Azure Cloud Shell i korzystać z niej z C
 Będziesz potrzebować aktywnej subskrypcji platformy Azure dla organizacji powiązanej z subskrypcją Microsoft 365. Jeśli jeszcze go nie masz, możesz go utworzyć. Po utworzeniu subskrypcji platformy Azure zostanie otwarte okno programu PowerShell, z którego można uruchamiać polecenia i skrypty programu PowerShell.
 
 Aby uzyskać więcej informacji, zobacz [Azure Cloud Shell](/azure/cloud-shell/overview).
+
+
+## <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Wprowadzenie z zestawem SDK programu PowerShell firmy Microsoft Graph
+
+Możesz użyć zestawu SDK programu PowerShell firmy Microsoft Graph, aby uzyskać dostęp do wszystkich interfejsów API Graph firmy Microsoft.
+
+Aby uzyskać więcej informacji, zobacz [Wprowadzenie z zestawem Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
 
 ## <a name="see-also"></a>Zobacz też
 

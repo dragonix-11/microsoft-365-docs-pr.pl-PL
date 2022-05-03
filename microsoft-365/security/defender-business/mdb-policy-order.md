@@ -1,32 +1,28 @@
 ---
 title: Omówienie kolejności zasad w Microsoft Defender dla Firm
-description: Dowiedz się więcej o kolejności priorytetów dzięki zasadom w Microsoft Defender dla Firm
+description: Dowiedz się więcej o kolejności priorytetów dzięki zasadom cyberbezpieczeństwa, aby chronić urządzenia firmowe za pomocą usługi Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 56b7bbcb95bc00c8647fb4cc39e0d1e0611596ab
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 4003585c82c835c21218fd1200b3468140c8370b
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862175"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174091"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Omówienie kolejności zasad w Microsoft Defender dla Firm
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 ## <a name="policy-order-in-microsoft-defender-for-business"></a>Kolejność zasad w Microsoft Defender dla Firm
 

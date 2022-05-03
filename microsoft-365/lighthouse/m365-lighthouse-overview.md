@@ -17,16 +17,16 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych dowiedz się, jak Microsoft 365 Lighthouse mogą pomóc w zabezpieczeniu dzierżaw klientów i zarządzaniu nimi w jednej lokalizacji.
-ms.openlocfilehash: 9a75cd43ac09d63c4524495a3146bf0b860627a4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 218442ee6714ece4c984fbf13478e5c4f3982101
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094687"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173973"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Omówienie portalu Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse to portal administracyjny, który ułatwia dostawcom usług zarządzanych zabezpieczanie urządzeń, danych i użytkowników na dużą skalę oraz zarządzanie nimi dla klientów małych i średnich firm (SMB), którzy korzystają z Microsoft 365 Business Premium lub Microsoft 365 E3.
+Microsoft 365 Lighthouse jest portalem administracyjnym, który ułatwia dostawcom usług zarządzanych zabezpieczanie urządzeń, danych i użytkowników na dużą skalę oraz zarządzanie nimi dla klientów małych i średnich firm (SMB).
 
 Usługa Lighthouse upraszcza dołączanie dzierżaw klientów, zalecając konfigurację zabezpieczeń dopasowaną do klientów SMB i zapewniając widoki z wieloma dzierżawami we wszystkich środowiskach klientów. Dzięki aplikacji Lighthouse dostawcy oprogramowania mogą skalować zarządzanie swoimi klientami, skoncentrować się na tym, co najważniejsze, szybko znaleźć i zbadać ryzyko oraz podjąć działania, aby zapewnić swoim klientom zdrowy i bezpieczny stan.
 

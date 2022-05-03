@@ -16,20 +16,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse zapoznaj się ze stroną Zarządzanie zagrożeniami.
-ms.openlocfilehash: fea297845446bd8cbb14c81851afb5d51ce33717
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 6e6a49cd1e31132881f45877bc00801d91aff492
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023354"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173757"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Omówienie strony Zarządzanie zagrożeniami w Microsoft 365 Lighthouse 
 
 **Dotyczy:**
 
-- Windows 10
+- System Windows
 
-Program antywirusowy Microsoft Defender chroni dzierżawców, użytkowników i urządzenia przed zagrożeniami oprogramowania, w tym wirusami, złośliwym oprogramowaniem i programami szpiegującymi. Jest to niezawodna, ciągła ochrona wbudowana w Windows 10 i dołączona do Microsoft 365 Business Premium i Microsoft365E3&nbsp;&nbsp;.  
+Program antywirusowy Microsoft Defender chroni dzierżawców, użytkowników i urządzenia przed zagrożeniami oprogramowania, w tym wirusami, złośliwym oprogramowaniem i programami szpiegującymi. Jest to niezawodna, ciągła ochrona wbudowana w Windows.  
   
 Aby uzyskać dostęp do strony Zarządzanie zagrożeniami w Microsoft 365 Lighthouse, wybierz pozycję **Zarządzanie zagrożeniami** w okienku nawigacji po lewej stronie, aby wyświetlić stan zabezpieczeń dzierżaw klientów przed zagrożeniami. Zobaczysz dzierżawy, użytkowników i urządzenia, które wymagają uwagi i zaleceń, które pomogą Ci zmniejszyć ryzyko.  
   

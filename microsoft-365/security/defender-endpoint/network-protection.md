@@ -1,7 +1,7 @@
 ---
 title: Używanie ochrony sieci w celu zapobiegania połączeniom z nieprawidłowymi lokacjami
 description: Ochrona sieci przez uniemożliwienie użytkownikom uzyskiwania dostępu do znanych złośliwych i podejrzanych adresów sieciowych
-keywords: Ochrona sieci, luki w zabezpieczeniach, złośliwa witryna internetowa, adres IP, domena, domeny
+keywords: Ochrona sieci, luki w zabezpieczeniach, złośliwa witryna internetowa, adres IP, domena, domeny, polecenie i kontrola, Filtr SmartScreen, powiadomienie wyskakujące
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,18 +19,19 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: f58c7afe9c6f532f7f6420d58bcd681778483680
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: e9e8682853757fa9fd078645e398f6ba8f2f636c
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789343"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173664"
 ---
 # <a name="protect-your-network"></a>Chroń sieć
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
+
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Program antywirusowy Microsoft Defender
@@ -44,7 +45,7 @@ ms.locfileid: "64789343"
 
 Ochrona sieci pomaga chronić urządzenia przed zdarzeniami internetowymi. Ochrona sieci to możliwość zmniejszania obszaru podatnego na ataki. Pomaga to uniemożliwić pracownikom dostęp do niebezpiecznych domen za pośrednictwem aplikacji. Domeny hostujące wyłudzanie informacji, luki w zabezpieczeniach i inne złośliwe treści w Internecie są uważane za niebezpieczne. Ochrona sieci rozszerza zakres [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview), aby zablokować cały wychodzący ruch HTTP(ów), który próbuje nawiązać połączenie ze źródłami o niskiej reputacji (na podstawie domeny lub nazwy hosta).
 
-Ochrona sieci rozszerza ochronę w [sieci Web](web-protection-overview.md) na poziom systemu operacyjnego. Zapewnia ona funkcje ochrony sieci Web w przeglądarce Edge dla innych obsługiwanych przeglądarek i aplikacji innych niż przeglądarki. Ponadto ochrona sieci zapewnia widoczność i blokowanie wskaźników naruszenia zabezpieczeń (IOCs) w przypadku użycia z [wykrywaniem i reagowaniem na punkty końcowe](overview-endpoint-detection-response.md). Na przykład ochrona sieci działa z [niestandardowymi wskaźnikami](manage-indicators.md) , których można użyć do blokowania określonych domen lub nazw hostów.
+Ochrona sieci rozszerza ochronę w [sieci Web](web-protection-overview.md) na poziom systemu operacyjnego. Udostępnia ona funkcje ochrony sieci Web znajdujące się w Microsoft Edge do innych obsługiwanych przeglądarek i aplikacji innych niż przeglądarki. Ochrona sieci zapewnia również widoczność i blokowanie wskaźników naruszenia zabezpieczeń (IOC) w przypadku użycia z [wykrywaniem punktów końcowych i reagowaniem na nie](overview-endpoint-detection-response.md). Na przykład ochrona sieci działa z [niestandardowymi wskaźnikami](manage-indicators.md) , których można użyć do blokowania określonych domen lub nazw hostów.
 
 > [!TIP]
 > Zobacz witrynę Ochrona punktu końcowego w usłudze Microsoft Defender testground w [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground), aby zobaczyć, jak działa ochrona sieci.
@@ -56,23 +57,205 @@ Ochrona sieci rozszerza ochronę w [sieci Web](web-protection-overview.md) na po
 
 Ochrona sieci wymaga Windows 10 Pro lub Enterprise i Program antywirusowy Microsoft Defender ochrony w czasie rzeczywistym.
 
-<br>
-
 ****
 
-|Wersje systemu Windows|Program antywirusowy Microsoft Defender|
-|---|---|
-|Windows 10 wersji 1709 lub nowszej <p> Windows 11 <p> Windows Server 1803 lub nowszy|[Program antywirusowy Microsoft Defender należy włączyć ochronę w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md) i [ochronę dostarczaną przez chmurę](enable-cloud-protection-microsoft-defender-antivirus.md)|
-|
+| Wersje systemu Windows | Program antywirusowy Microsoft Defender |
+|:---|:---|
+| Windows 10 wersji 1709 lub nowszej <br> Windows 11 <br> Windows Server 1803 lub nowszy | [Program antywirusowy Microsoft Defender ochrony w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md) <br> ochrona [dostarczana przez chmurę musi być włączona](enable-cloud-protection-microsoft-defender-antivirus.md) (aktywna)|
+
+## <a name="why-network-protection-is-important"></a>Dlaczego ochrona sieci jest ważna
+
+> [!IMPORTANT]
+> Niektóre informacje odnoszą się do wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+>
+> Informacje o funkcjach dostępnych komercyjnie są zgodne z informacjami publicznej wersji zapoznawczej.
+
+Ochrona sieci jest częścią grupy redukcji obszaru ataków rozwiązań w Ochrona punktu końcowego w usłudze Microsoft Defender. Ochrona sieci umożliwia blokowanie adresów URL i adresów IP w warstwie 3 (warstwa sieciowa). Ochrona sieci może blokować dostęp do adresów URL z przeglądarek innych firm i standardowych połączeń sieciowych.
+
+Domyślnie ochrona sieci chroni komputery przed znanymi złośliwymi adresami URL przy użyciu kanału informacyjnego Smart Screen, który blokuje złośliwe adresy URL w sposób podobny do filtru SmartScreen w przeglądarce Microsoft Edge. Funkcje ochrony sieci można rozszerzyć na:
+
+- Blokuj adres IP/adres URL z własnej funkcji Threat Intel (Wskaźniki)
+- Blokuj niesankcjonowane usługi z Microsoft Cloud App Security (MCAS)
+- Blokowanie witryn na podstawie kategorii (filtrowanie zawartości sieci Web)
+
+Usługa Network Protections jest krytyczną częścią stosu ochrony i odpowiedzi firmy Microsoft.
+
+Aby uzyskać szczegółowe informacje na temat ochrony sieci dla Windows Server, Linux, MacOS i MTD, zobacz [Proaktywne wyszukiwanie zagrożeń z zaawansowanym wyszukiwaniem zagrożeń](advanced-hunting-overview.md).
+
+### <a name="block-command-and-control-c2-attacks"></a>Blokuj ataki na polecenia i kontrolę (C2)
+
+Komputery z serwerem C2 są używane przez złośliwych użytkowników do wysyłania poleceń do systemów zagrożonych złośliwym oprogramowaniem, a następnie wywierają pewnego rodzaju kontrolę nad systemami, których zabezpieczenia zostały naruszone. Ataki C2 zwykle ukrywają się w usługach opartych na chmurze, takich jak udostępnianie plików i usługi poczty internetowej, co umożliwia serwerom C2 uniknięcie wykrycia przez połączenie się z typowym ruchem.
+
+Serwerów C2 można używać do inicjowania poleceń, które mogą:
+
+- kradzież danych (na przykład w drodze wyłudzania informacji)
+- kontrolowanie komputerów z naruszonymi zabezpieczeniami w sieci botnet
+- zakłócanie legalnych aplikacji
+- rozprzestrzenianie złośliwego oprogramowania, takiego jak oprogramowanie wymuszające okup
+
+Składnik ochrony sieci Ochrona punktu końcowego w usłudze Microsoft Defender identyfikuje i blokuje połączenia z infrastrukturami C2 używanymi w atakach wymuszania okupu obsługiwanych przez człowieka przy użyciu technik takich jak uczenie maszynowe i inteligentna identyfikacja wskaźnika naruszenia zabezpieczeń (IoC).
+
+#### <a name="network-protection-new-toast-notifications"></a>Ochrona sieci: nowe powiadomienia wyskakujące
+
+| Nowe mapowanie  | Kategoria odpowiedzi  | Źródeł |
+| :--- | :--- | :--- |
+| Phishing | Wyłudzanie informacji | Filtr smartscreen |
+| Złośliwy | Złośliwy | Filtr smartscreen |
+| polecenie i kontrolka | C2 | Filtr smartscreen |
+| polecenie i kontrolka | COCO | Filtr smartscreen |
+| Złośliwy | Niezaufanych | Filtr smartscreen |
+| przez administratora IT | CustomBlockList |   |
+| przez administratora IT | CustomPolicy |   |
+
+> [!NOTE]
+> **customAllowList** nie generuje powiadomień w punktach końcowych.
+
+### <a name="new-notifications-for-network-protection-determination"></a>Nowe powiadomienia dotyczące określania ochrony sieci
+
+Nowa, publicznie dostępna funkcja ochrony sieci wykorzystuje funkcje w filtrze SmartScreen do blokowania działań wyłudzających informacje ze złośliwych witryn poleceń i kontroli.
+
+Gdy użytkownik końcowy próbuje odwiedzić witrynę internetową w środowisku, w którym włączono ochronę sieci, możliwe są trzy scenariusze:
+
+- Adres URL ma **znaną dobrą reputację** — w tym przypadku użytkownik ma dozwolony dostęp bez przeszkód i w punkcie końcowym nie jest wyświetlane wyskakujące powiadomienie. W efekcie domena lub adres URL jest ustawiona na _wartość Dozwolone_.
+- Adres URL ma **nieznaną lub niepewną reputację** — dostęp użytkownika jest zablokowany, ale z możliwością obejścia (odblokowania) bloku. W efekcie domena lub adres URL jest ustawiona na _Inspekcja_.
+- Adres URL ma **znaną złą (złośliwą) reputację** — użytkownik nie może uzyskać dostępu. W efekcie domena lub adres URL jest ustawiona na _wartość Blokuj_.
+
+#### <a name="warn-experience"></a>Ostrzeżenie o środowisku
+
+Użytkownik odwiedza witrynę internetową:
+
+- Jeśli adres URL ma nieznaną lub niepewną reputację, wyskakujące powiadomienie wyświetli użytkownikowi następujące opcje:
+
+  - **Ok** — powiadomienie wyskakujące jest zwalniane (usuwane), a próba uzyskania dostępu do witryny została zakończona.
+  - **Odblokuj** — aby uzyskać dostęp do witryny, użytkownik nie będzie musiał uzyskiwać dostępu do portalu Windows Defender Security Intelligence (WDSI). Użytkownik będzie miał dostęp do witryny przez 24 godziny. w którym momencie blok jest ponownie włączany przez kolejne 24 godziny. Użytkownik może nadal używać funkcji **Odblokuj** , aby uzyskać dostęp do witryny do czasu, gdy administrator zabroni (blokuje) witryny, usuwając w ten sposób opcję **Odblokuj**.
+  - **Opinia** — wyskakujące powiadomienie przedstawia użytkownikowi link do przesłania biletu, którego użytkownik może użyć do przesłania opinii do administratora w celu uzasadnienia dostępu do witryny.
+
+  > [!div class="mx-imgBorder"]
+  > ![Wyświetla powiadomienie o wyłudzaniu informacji o zawartości ochrony sieci](images/network-protection-phishing-warn-2.png)
+
+  > [UWAGA!] Obrazy wyświetlane tutaj w celu ostrzeżenia środowiska i blokowania (poniżej) zawierają listę **"zablokowany adres URL"** jako przykładowy tekst zastępczy; W środowisku funkcjonującym zostanie wyświetlony rzeczywisty adres URL lub domena.  
+
+#### <a name="block-experience"></a>Zablokuj środowisko
+
+Użytkownik odwiedza witrynę internetową:
+
+- Jeśli adres URL ma złą reputację, wyskakujące powiadomienie wyświetli użytkownikowi następujące opcje:
+  - **Ok** Powiadomienie wyskakujące jest zwalniane (usuwane), a próba uzyskania dostępu do witryny została zakończona.
+  - **Opinie** Wyskakujące powiadomienie przedstawia użytkownikowi link do przesłania biletu, którego użytkownik może użyć do przesłania opinii do administratora, próbując uzasadnić dostęp do witryny.
+  
+  > [!div class="mx-imgBorder"]
+  > ![ Pokazuje powiadomienie o blokadzie znanej zawartości wyłudzającej informacje o ochronie sieci](images/network-protection-phishing-blocked.png)
+
+### <a name="network-protection-c2-detection-and-remediation"></a>Ochrona sieci: wykrywanie i korygowanie C2
+
+W początkowej formie oprogramowanie wymuszające okup jest zagrożeniem towarowym, wstępnie zaprogramowanym i skoncentrowanym na ograniczonych, konkretnych wynikach (na przykład szyfrowaniu komputera). Jednak oprogramowanie wymuszające okup przekształciło się w zaawansowane zagrożenie, które jest sterowane przez człowieka, adaptacyjne i koncentruje się na większej skali i bardziej rozpowszechnionych wynikach; takich jak przechowywanie zasobów lub danych całej organizacji dla okupu.
+
+Obsługa poleceń i kontroli (C2) jest kluczowym elementem tej ewolucji oprogramowania wymuszającego okup i umożliwia tym atakom dostosowanie się do środowiska, do którego są przeznaczone. Przerwanie połączenia z infrastrukturą poleceń i kontroli oznacza zatrzymanie postępu ataku do następnego etapu.
+
+#### <a name="detecting-and-remediating-cobaltstrike-public-preview"></a>Wykrywanie i korygowanie aplikacji CobaltStrike (publiczna wersja zapoznawcza)
+
+Jedną z najczęstszych platform po eksploatacji stosowanych w atakach ransomware obsługiwanych przez człowieka jest CobaltStrike. Zespoły analizy zagrożeń w firmie Microsoft śledzą _taktykę, techniki i procedury_ (TTP) w wielu grupach działań, które wdrażają oprogramowanie wymuszające okup w celu identyfikowania wzorców zachowań, które mogą służyć do obrony przed określonymi strategiami i wektorami zagrożeń używanymi przez złośliwe podmioty. Te grupy działań ransomware wszystkie, w pewnym momencie w cyklu życia ataku, obejmują wdrożenie CobaltStrike Beacon na komputerze ofiary, aby umożliwić praktyczną aktywność klawiatury.
+
+CobaltStrike umożliwia dostosowanie wielu aspektów ataku, od możliwości hostowania wielu odbiorników reagujących na różne protokoły, po sposób, w jaki główny składnik po stronie klienta (Beacon) powinien wykonywać iniekcję kodu i uruchamiać zadania po eksploatacji. Gdy usługa Microsoft Defender wykryje cobaltStrike, może inteligentnie znaleźć i zebrać kluczowe wskaźniki naruszenia zabezpieczeń (IoC). Po przechwyceniu te wskaźniki są współużytkowane w stosie produktów firmy Microsoft w celu wykrywania i ochrony.
+
+Wykrywanie poleceń i kontroli w usłudze Microsoft Defender nie ogranicza się do aplikacji CobaltStrike. Usługa Microsoft Defender może przechwytywać kluczowe IoCs wielu rodzin złośliwego oprogramowania. Wskaźniki są współużytkowane w stosie ochrony firmy Microsoft, aby chronić klientów i ostrzegać ich, jeśli dojdzie do naruszenia zabezpieczeń.
+
+Blokowanie komunikacji poleceń i kontroli może poważnie utrudnić ukierunkowany atak, dając obrońcom czas na znalezienie początkowych wektorów wejścia i zamknięcie ich przed kolejną próbą ataku.
+
+<!-- Hide {this intro with no subsequent list items}
+[For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
+-->
+
+## <a name="smart-screen-unblock"></a>Odblokowywanie ekranu inteligentnego
+
+Nowa funkcja w Ochrona punktu końcowego w usłudze Microsoft Defender Indicators umożliwia administratorom zezwalanie użytkownikom końcowym na pomijanie ostrzeżeń generowanych dla niektórych adresów URL i adresów IP. W zależności od tego, dlaczego adres URL został zablokowany, napotkanie bloku Ekranu inteligentnego może oferować administratorom możliwość odblokowania witryny przez maksymalnie 24 godziny. W takich przypadkach zostanie wyświetlone powiadomienie Zabezpieczenia Windows wyskakujące, co umożliwi użytkownikowi końcowemu **odblokowanie** adresu URL lub adresu IP przez zdefiniowany okres.  
+
+ > [!div class="mx-imgBorder"]
+ > ![Zabezpieczenia Windows powiadomienia o ochronie sieci](images/network-protection-smart-screen-block-notification.png)
+
+Ochrona punktu końcowego w usłudze Microsoft Defender Administratorzy mogą skonfigurować funkcję Odblokuj ekran inteligentny w [Microsoft 365 Defender](https://security.microsoft.com/) przy użyciu następującego narzędzia konfiguracji. W portalu Microsoft 365 Defender przejdź do ścieżki do nazwy ConfigToolName.
+
+<!-- Hide {this intro with no subsequent list items}
+[Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
+-->
+
+ > [!div class="mx-imgBorder"]
+ > ![Formularz ulr i ip konfiguracji bloku ochrony sieci inteligentnego ekranu](images/network-protection-smart-screen-block-configuration.png)
+
+## <a name="using-network-protection"></a>Korzystanie z ochrony sieci
+
+Ochrona sieci jest włączona dla każdego urządzenia, co zwykle odbywa się przy użyciu infrastruktury zarządzania. Aby uzyskać obsługiwane metody, zobacz [Włączanie ochrony sieci](enable-network-protection.md).
+
+> [!NOTE]
+> Program antywirusowy Microsoft Defender musi być aktywna, aby włączyć ochronę sieci.
+
+Ochronę sieci można włączyć w trybie **inspekcji** lub w trybie **bloku** . Jeśli chcesz ocenić wpływ włączenia ochrony sieci przed zablokowaniem adresów IP lub adresów URL, możesz włączyć go w trybie inspekcji przez pewien czas, aby zebrać dane dotyczące tego, co byłoby zablokowane. Dzienniki trybu inspekcji, gdy użytkownicy końcowi nawiązali połączenie z adresem lub lokacją, która w przeciwnym razie zostałaby zablokowana przez ochronę sieci.
+
+## <a name="advanced-hunting"></a>Zaawansowane wyszukiwanie zagrożeń
+
+Jeśli używasz zaawansowanego wyszukiwania zagrożeń do identyfikowania zdarzeń inspekcji, będziesz mieć do 30-dniową historię dostępną w konsoli programu . Zobacz [Zaawansowane wyszukiwanie zagrożeń](advanced-hunting-overview.md).
+
+Dane inspekcji można znaleźć w **temacie Zaawansowane wyszukiwanie zagrożeń** w portalu Ochrona punktu końcowego w usłudze Microsoft Defender.  
+
+Zdarzenia są w deviceevents z ActionType ExploitGuardNetworkProtectionAudited. Bloki są wyświetlane przez exploitGuardNetworkProtectionBlocked.  
+
+Poniższy przykład obejmuje zablokowane akcje:
+
+DeviceEvents
+
+- Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+
+ > [!div class="mx-imgBorder"]
+ > ![Zaawansowane wyszukiwanie zagrożeń na potrzeby inspekcji i identyfikowania zdarzeń](images/network-protection-advanced-hunting.png)
+
+> [!TIP]
+> Te wpisy zawierają dane w kolumnie AdditionalFields, które zawierają doskonałe informacje dotyczące akcji, jeśli rozwiniesz pole Dodatkowe, możesz również uzyskać pola: **IsAudit**, **ResponseCategory** i **DisplayName**.
+
+DeviceEvents:
+
+- where ActionType contains "ExploitGuardNetworkProtection" (Gdzie element ActionType zawiera ciąg "ExploitGuardNetworkProtection"
+- extend ParsedFields=parse_json(AdditionalFields)
+- project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
+- sort by Timestamp desc
+
+Kategoria odpowiedzi informuje o przyczynach zdarzenia, na przykład:
+
+| Kategoria odpowiedzi | Funkcja odpowiedzialna za zdarzenie |
+|:---|:---|
+| CustomPolicy |  WCF  |
+| CustomBlockList  |   Wskaźniki niestandardowe   |
+| CasbPolicy   |   Defender for Cloud Apps   |
+| Złośliwy   |   Zagrożenia internetowe  |
+| Wyłudzanie informacji  |   Zagrożenia internetowe  |
+
+Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z blokami punktów końcowych](web-protection-overview.md#troubleshoot-endpoint-blocks).
+
+Możesz użyć wynikowej listy adresów URL i adresów IP, aby określić, co zostałoby zablokowane, gdyby urządzenie było w trybie bloku, a także która funkcja je zablokowała. Przejrzyj każdy element na liście, aby zidentyfikować adresy URL lub adresy IP, niezależnie od tego, czy są niezbędne dla danego środowiska. Jeśli znajdziesz wszystkie wpisy, które zostały poddane inspekcji, które mają kluczowe znaczenie dla środowiska, utwórz wskaźnik zezwalający na nie w sieci. Wskaźniki zezwalania na adres URL/ADRES IP mają pierwszeństwo przed dowolnym blokiem.
+
+Po utworzeniu wskaźnika możesz przyjrzeć się rozwiązaniu podstawowego problemu:
+
+- Inteligentny ekran — przegląd żądania
+- Wskaźnik — modyfikowanie istniejącego wskaźnika
+- MCA — przeglądanie nieusankcjonowanych aplikacji
+- WCF — ponowna kategoryzacja żądania
+
+Korzystając z tych danych, możesz podjąć świadomą decyzję o włączeniu ochrony sieci w trybie bloku. Zobacz [Kolejność pierwszeństwa dla bloków ochrony sieci](web-protection-overview.md#order-of-precedence).
+
+> [!NOTE]
+> Ponieważ jest to ustawienie dla poszczególnych urządzeń, jeśli istnieją urządzenia, które nie mogą przejść do trybu bloku, możesz po prostu pozostawić je w inspekcji, dopóki nie będzie można rozwiązać problemu i nadal będą otrzymywać zdarzenia inspekcji.
+
+Aby uzyskać informacje o sposobie zgłaszania wyników fałszywie dodatnich, zobacz [Zgłaszanie wyników fałszywie dodatnich](web-protection-overview.md#report-false-positives).
+
+Aby uzyskać szczegółowe informacje na temat tworzenia własnych raportów Power BI, zobacz [Tworzenie niestandardowych raportów przy użyciu Power BI](api-power-bi.md).
+
+## <a name="configuring-network-protection"></a>Konfigurowanie ochrony sieci
+
+Aby uzyskać więcej informacji na temat włączania ochrony sieci, zobacz **[Włączanie ochrony sieci](enable-network-protection.md)**. Użyj zasady grupy, programu PowerShell lub dostawców CSP mdm, aby włączyć ochronę sieci w sieci i zarządzać nią.
 
 Po włączeniu usług może być konieczne skonfigurowanie sieci lub zapory w celu zezwolenia na połączenia między usługami i urządzeniami (nazywane również punktami końcowymi).
 
 - `.smartscreen.microsoft.com`
 - `.smartscreen-prod.microsoft.com`
-
-## <a name="configuring-network-protection"></a>Konfigurowanie ochrony sieci
-
-Aby uzyskać więcej informacji na temat włączania ochrony sieci, zobacz **[Włączanie ochrony sieci](enable-network-protection.md)**. Użyj zasady grupy, programu PowerShell lub dostawców CSP mdm, aby włączyć ochronę sieci w sieci i zarządzać nią.
 
 ## <a name="viewing-network-protection-events"></a>Wyświetlanie zdarzeń ochrony sieci
 
@@ -102,8 +285,6 @@ Możesz przejrzeć dziennik zdarzeń Windows, aby wyświetlić zdarzenia, które
 2. Wybierz przycisk **OK**.
 
 Ta procedura tworzy widok niestandardowy, który filtruje tylko następujące zdarzenia związane z ochroną sieci:
-
-<br>
 
 ****
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 62116022c14af67b4589e4ee8479d294755fcc80
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: a067672a013f3e0ed7b9009604f8a4fe000ea47f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144714"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172832"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
@@ -73,7 +73,7 @@ W tym artykule opisano sposób konfigurowania wpisów na liście dozwolonych/zab
 
 - Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell EOP, zobacz [Połączenie do Exchange Online Protection programu PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w portalu Microsoft 365 Defender:
+- Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w Exchange Online:
   - **Nadawcy, adresy URL i pliki**:
     - Aby dodać i usunąć wartości z listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem
       - **Zarządzanie organizacją** lub grupa ról **administratora zabezpieczeń** (**rola administratora zabezpieczeń**)

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 47c7ddbc5ce935e8b9fedb7682daa6af468b66b4
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: 9be1c581edb1b9564349ae8c3a659d226d6ef312
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65015029"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173790"
 ---
 # <a name="communication-compliance-policies"></a>Zasady zgodności komunikacji
 
@@ -112,10 +112,10 @@ Administratorzy powinni natychmiast przypisywać niestandardowych recenzentów d
 4. W okienku **Monitorowanie komunikatów zgłaszanych przez użytkownika** przypisz recenzentów do zasad. Recenzenci muszą mieć skrzynki pocztowe hostowane na Exchange Online. Gdy recenzenci są dodawani do zasad, automatycznie otrzymują wiadomość e-mail z powiadomieniem o przypisaniu do zasad i udostępniają linki do informacji o procesie przeglądu.
 5. Wybierz **Zapisz**.
 
-Aby wyłączyć użytkownikom możliwość raportowania komunikatów Teams za pomocą *opcji Zgłoś problem*, wyłącz opcję **Raportowanie użytkowników końcowych** w [centrum administracyjnym Teams](/microsoftteams/manage-teams-in-modern-portal). 
+Opcja *Zgłoś problem* jest domyślnie włączona i może być kontrolowana za pośrednictwem zasad obsługi komunikatów Teams w [centrum administracyjnym Teams](/microsoftteams/manage-teams-in-modern-portal). Użytkownicy w organizacji automatycznie otrzymają zasady globalne, chyba że utworzysz i przypiszesz zasady niestandardowe. Edytuj ustawienia w zasadach globalnych lub utwórz i przypisz co najmniej jedną zasadę niestandardową, aby włączyć lub wyłączyć *opcję Zgłoś problem* . Aby dowiedzieć się więcej, zobacz [Zarządzanie zasadami obsługi komunikatów w Teams](/microsoftteams/messaging-policies-in-teams).  
 
 >[!IMPORTANT]
->Jeśli używasz programu PowerShell do wyłączenia opcji **Raportowanie użytkowników końcowych** w centrum administracyjnym Teams, musisz użyć [modułu Microsoft Teams poleceń cmdlet w wersji 4.2.0 lub nowszej](/MicrosoftTeams/teams-powershell-release-notes).
+>Jeśli używasz programu PowerShell do **włączania lub wyłączania opcji Raportowanie użytkowników końcowych** w centrum administracyjnym Teams, musisz użyć [modułu Microsoft Teams poleceń cmdlet w wersji 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) lub nowszej.
 
 ## <a name="storage-limit-notification-preview"></a>powiadomienie o ograniczeniu Storage (wersja zapoznawcza)
 

@@ -1,28 +1,27 @@
 ---
 title: Odłączanie urządzenia od Microsoft Defender dla Firm
-description: Dowiedz się, jak usunąć urządzenie z Microsoft Defender dla Firm
+description: Dowiedz się, jak usunąć lub odłączyć urządzenie z Microsoft Defender dla Firm.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f702cb51e87777f0ac0e18e7caa794977df9c3dd
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 00b9b8b9a4ac1cfad07741de84bd99db5403ef1a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862943"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174454"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>Odłączanie urządzenia od Microsoft Defender dla Firm
 
@@ -51,10 +50,13 @@ Jeśli chcesz odłączyć urządzenie, użyj jednej z następujących procedur:
 
 1. Przejdź do pozycji **FinderApplications** > . 
 
-2. Kliknij prawym przyciskiem myszy Microsoft Defender dla Firm, a następnie wybierz pozycję **Przenieś do kosza**. <br/><br/>--- lub --- <br/><br/> Użyj następującego polecenia: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
+2. Kliknij prawym przyciskiem myszy Microsoft Defender dla Firm, a następnie wybierz pozycję **Przenieś do kosza**. <br/>--- lub --- <br/> Użyj następującego polecenia: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
 > [!IMPORTANT]
 > Odłączenie urządzenia powoduje, że urządzenia przestają wysyłać dane do usługi Defender dla Firm. Jednak dane odebrane przed odłożeniem są przechowywane przez maksymalnie sześć (6) miesięcy.
 
 ## <a name="next-steps"></a>Następne kroki
 
+- [Korzystanie z pulpitu nawigacyjnego zarządzania lukami w zabezpieczeniach & w Microsoft Defender dla Firm](mdb-view-tvm-dashboard.md)
+- [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](mdb-view-edit-create-policies.md)
+- [Zarządzanie urządzeniami w Microsoft Defender dla Firm](mdb-manage-devices.md)

@@ -1,39 +1,33 @@
 ---
 title: Konfigurowanie powiadomień e-mail dla zespołu ds. zabezpieczeń
-description: Konfigurowanie powiadomień e-mail w celu poinformowania użytkowników o alertach i lukach w zabezpieczeniach przy użyciu Microsoft Defender dla Firm
+description: Skonfiguruj powiadomienia e-mail, aby poinformować zespół ds. zabezpieczeń o alertach i lukach w zabezpieczeniach w usłudze Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a65634a5827e60d710cec56ca10835c73053cb10
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: b6381f5bfa8ebe4f7c23a16d9a214cadb4e511e6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862857"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174496"
 ---
 # <a name="set-up-email-notifications"></a>Konfigurowanie powiadomień e-mail
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Możesz skonfigurować powiadomienia e-mail dla zespołu ds. zabezpieczeń. Następnie po wygenerowaniu alertów lub wykryciu nowych luk w zabezpieczeniach osoby z zespołu ds. zabezpieczeń będą automatycznie powiadamiane. 
 
 ## <a name="what-to-do"></a>Co robić
 
 1. [Dowiedz się więcej o typach powiadomień e-mail](#types-of-email-notifications).
-
 2. [Wyświetlanie i edytowanie ustawień powiadomień e-mail](#view-and-edit-email-notifications).
-
 3. [Przejdź do kolejnych kroków](#next-steps).
 
 

@@ -1,25 +1,24 @@
 ---
 title: Dodawanie użytkowników i przypisywanie licencji w Microsoft Defender dla Firm
-description: Dowiedz się, jak dodawać użytkowników i przypisywać licencje
+description: Dodawanie użytkowników i przypisywanie licencji usługi Defender dla Firm w celu ochrony urządzeń
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance.
-ms.reviewer: inbadian, shlomiakirav
+ms.collection: M365-security-compliance
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: d954d745cde6505fb91eff8e394aee4f06c59092
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: d108064edc361f25f9301c0d4511d68d0856d817
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862924"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172300"
 ---
 # <a name="add-users-and-assign-licenses-in-microsoft-defender-for-business"></a>Dodawanie użytkowników i przypisywanie licencji w Microsoft Defender dla Firm
 
@@ -50,5 +49,5 @@ Po zarejestrowaniu się w Microsoft Defender dla Firm pierwszym krokiem jest dod
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Odwiedź portal Microsoft 365 Defender](mdb-get-started.md)
+- [Odwiedź portal usługi Microsoft 365 Defender](mdb-get-started.md)
 - [Użyj kreatora konfiguracji w Microsoft Defender dla Firm](mdb-use-wizard.md).

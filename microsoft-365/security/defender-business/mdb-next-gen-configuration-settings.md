@@ -1,40 +1,36 @@
 ---
 title: Omówienie ustawień konfiguracji ochrony nowej generacji w Microsoft Defender dla Firm
-description: Omówienie ustawień konfiguracji ochrony nowej generacji w Microsoft Defender dla Firm
+description: Omówienie ustawień ochrony przed oprogramowaniem antywirusowym i nowej generacji w usłudze Defender dla firm, zabezpieczenia punktów końcowych dla małych i średnich firm.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: eee272798be5396ad9ad15177fcd29a0180bc448
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 34cbd422cafe5c171f47e8e6470c4b12f9e1700d
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862725"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174471"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Omówienie ustawień konfiguracji nowej generacji w Microsoft Defender dla Firm
 
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
-Ochrona nowej generacji w usłudze Defender for Business obejmuje niezawodny program antywirusowy i ochronę przed złośliwym kodem. Domyślne zasady mają na celu ochronę urządzeń i użytkowników bez ograniczania produktywności. Można jednak również dostosować zasady do własnych potrzeb biznesowych. A jeśli używasz Microsoft Endpoint Manager, możesz go użyć do zarządzania zasadami zabezpieczeń.
+Ochrona nowej generacji w usłudze Defender for Business obejmuje niezawodny program antywirusowy i ochronę przed złośliwym kodem. Domyślne zasady mają na celu ochronę urządzeń i użytkowników bez ograniczania produktywności. Można jednak również dostosować zasady do własnych potrzeb biznesowych. A jeśli używasz Microsoft Intune, możesz zarządzać zasadami zabezpieczeń za pomocą centrum administracyjnego Microsoft Endpoint Manager.
 
 **W tym artykule opisano**:
 
 - [Ustawienia i opcje ochrony następnej generacji](#next-generation-protection-settings-and-options)
 - [Inne wstępnie skonfigurowane ustawienia w usłudze Defender dla Firm](#other-preconfigured-settings-in-defender-for-business) 
-- [Ustawienia domyślne usługi Defender dla firm i Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
+- [Ustawienia domyślne usługi Defender dla firm i Microsoft Intune](#defender-for-business-default-settings-and-microsoft-intune)
 
 ## <a name="next-generation-protection-settings-and-options"></a>Ustawienia i opcje ochrony następnej generacji
 
@@ -69,9 +65,9 @@ Następujące ustawienia zabezpieczeń są wstępnie skonfigurowane w usłudze D
 - Aktualizacje analizy zabezpieczeń są sprawdzane przed uruchomieniem skanowania antywirusowego ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
 - Kontrole analizy zabezpieczeń są wykonywane co cztery godziny ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
-## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Ustawienia domyślne usługi Defender dla firm i Microsoft Endpoint Manager
+## <a name="defender-for-business-default-settings-and-microsoft-intune"></a>Ustawienia domyślne usługi Defender dla firm i Microsoft Intune
 
-W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla usługi Defender dla firm oraz sposób, w jaki te ustawienia odpowiadają temu, co można zobaczyć w Microsoft Endpoint Manager (lub Microsoft Intune). Jeśli używasz [uproszczonego procesu konfiguracji w usłudze Defender dla Firm](mdb-simplified-configuration.md) (wersja zapoznawcza), nie musisz edytować tych ustawień.
+W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla usługi Defender dla Firm oraz sposób, w jaki te ustawienia odpowiadają temu, co można zobaczyć w Intune (zarządzanym w centrum administracyjnym Microsoft Endpoint Manager). Jeśli używasz [uproszczonego procesu konfiguracji w usłudze Defender dla firm](mdb-simplified-configuration.md), nie musisz edytować tych ustawień.
 
 | Ustawienie  | Opis  |
 |---------|---------|
@@ -96,6 +92,6 @@ W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla usługi Defe
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwiedź portal Microsoft 365 Defender](mdb-get-started.md)
+- [Odwiedź portal usługi Microsoft 365 Defender](mdb-get-started.md)
 - [Zarządzanie ustawieniami zapory w Microsoft Defender dla Firm](mdb-custom-rules-firewall.md)
 - [Dostawca CSP zasad — Defender](/windows/client-management/mdm/policy-csp-defender)

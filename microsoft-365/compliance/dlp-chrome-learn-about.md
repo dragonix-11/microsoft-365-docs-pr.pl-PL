@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się więcej o rozszerzeniu zgodności firmy Microsoft
+title: Dowiedz się więcej o rozszerzeniu usługi Microsoft Purview
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,50 +18,52 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Rozszerzenie zgodności firmy Microsoft rozszerza monitorowanie i kontrolowanie działań dotyczących plików oraz akcji zabezpieczających do przeglądarki Google Chrome
-ms.openlocfilehash: 15c62369bb8b4fc02926fa0e2b0bfc4834c371ac
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+description: Rozszerzenie Microsoft Purview rozszerza monitorowanie i kontrolę działań dotyczących plików i akcji ochronnych na przeglądarkę Google Chrome
+ms.openlocfilehash: a74cfeb734f41622d491c8aaffe3a5e054479a2a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "63015422"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172252"
 ---
-# <a name="learn-about-the-microsoft-compliance-extension"></a>Dowiedz się więcej o rozszerzeniu zgodności firmy Microsoft
+# <a name="learn-about-the-microsoft-purview-extension"></a>Dowiedz się więcej o rozszerzeniu usługi Microsoft Purview
 
-[Ochrona przed utratą danych w punkcie końcowym (DLP, endpoint](endpoint-dlp-learn-about.md) data loss prevention) rozszerza możliwości monitorowania aktywności i ochrony usługi Microsoft 365 ochrony przed utratą danych [(DLP, data loss prevention)](dlp-learn-about-dlp.md) do poufnych elementów, które znajdują się Windows 10 urządzeniach. Po dojechiniu urządzeń do rozwiązań zgodności usługi Microsoft 365 informacje o tym, co użytkownicy robią z poufnymi elementami, są widoczne [](data-classification-activity-explorer.md) w Eksploratorze aktywności i można wymusić akcje zabezpieczające przed tymi elementami za pośrednictwem zasad [DLP](create-test-tune-dlp-policy.md).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po zainstalowaniu rozszerzenia zgodności firmy Microsoft na urządzeniu z systemem Windows 10 organizacje mogą monitorować, kiedy użytkownik próbuje uzyskać dostęp do usługi w chmurze lub przekazać do usługi w chmurze poufny element przy użyciu przeglądarki Google Chrome, i wymuszać akcje zabezpieczające za pośrednictwem funkcji DLP.  
+[Ochrona przed utratą danych punktu końcowego (endpoint DLP)](endpoint-dlp-learn-about.md) rozszerza możliwości monitorowania aktywności i ochrony usługi [Microsoft Purview przed utratą danych (DLP)](dlp-learn-about-dlp.md) na poufne elementy znajdujące się na urządzeniach Windows 10. Po dołączeniu urządzeń do rozwiązań Usługi Microsoft Purview informacje o tym, co użytkownicy robią z poufnymi elementami, są widoczne w [Eksploratorze aktywności](data-classification-activity-explorer.md) i można wymuszać akcje ochronne na tych elementach za pośrednictwem [zasad DLP](create-test-tune-dlp-policy.md).
 
-## <a name="activities-you-can-monitor-and-take-action-on"></a>Działania, w których można monitorować i podjąć działania
+Po zainstalowaniu rozszerzenia na urządzeniu Windows 10 organizacje mogą monitorować, kiedy użytkownik próbuje uzyskać dostęp do poufnego elementu lub przekazać go do usługi w chmurze przy użyciu przeglądarki Google Chrome i wymusić działania ochronne za pośrednictwem usługi DLP.  
 
-Rozszerzenie zgodności firmy Microsoft umożliwia inspekcję następujących typów działań, które użytkownicy mogą podjąć w związku z poufnymi elementami na urządzeniach z systemem Windows 10.
+## <a name="activities-you-can-monitor-and-take-action-on"></a>Działania, które można monitorować i podejmować działania
 
-działanie |opis  | obsługiwane akcje zasad|
+Rozszerzenie umożliwia przeprowadzanie inspekcji i zarządzanie następującymi typami działań wykonywanych przez użytkowników na poufnych elementach na urządzeniach z uruchomionymi Windows 10.
+
+Działania |Opis  | obsługiwane akcje zasad|
 |---------|---------|---------|
-|plik skopiowany do chmury  | Wykrywa, kiedy użytkownik próbuje przekazać poufny element do domeny usługi z ograniczeniami za pośrednictwem przeglądarki Chrome. |inspekcja, blokowanie z zastępowaniem, blokowanie|
-|wydrukowano plik  |Wykrywa, kiedy użytkownik próbuje wydrukować poufny element otwarty w przeglądarce Chrome na drukarce lokalnej lub sieciowej. |inspekcja, blokowanie z zastępowaniem, blokowanie|
-|Plik skopiowany do schowka |Wykrywa, kiedy użytkownik próbuje skopiować informacje z poufnego elementu, który jest przeglądany w przeglądarce Chrome, a następnie wkleja go do innej aplikacji, procesu lub elementu. |inspekcja, blokowanie z zastępowaniem, blokowanie|
-|Plik skopiowany do magazynu wymiennego    | Wykrywa, kiedy użytkownik próbuje skopiować poufny element lub informacje z poufnego elementu otwartego w przeglądarce Chrome na nośnik wymienny lub urządzenie USB. |inspekcja, blokowanie z zastępowaniem, blokowanie|
-|Plik skopiowany do udziału sieciowego  |Wykrywa, kiedy użytkownik próbuje skopiować poufny element lub informacje z poufnego elementu otwartego w przeglądarce Chrome do udziału sieciowego lub zamapego dysku sieciowego.|inspekcja, blokowanie z zastępowaniem, blokowanie |
+|plik skopiowany do chmury  | Wykrywa, kiedy użytkownik próbuje przekazać poufny element do domeny usługi z ograniczeniami za pośrednictwem przeglądarki Chrome |audit, block with override, block|
+|plik drukowany  |Wykrywa, kiedy użytkownik próbuje wydrukować poufny element otwarty w przeglądarce Chrome na drukarce lokalnej lub sieciowej |audit, block with override, block|
+|plik skopiowany do schowka |Wykrywa, kiedy użytkownik próbuje skopiować informacje z poufnego elementu wyświetlanego w przeglądarce Chrome, a następnie wkleić je do innej aplikacji, procesu lub elementu. |audit, block with override, block|
+|plik skopiowany do magazynu wymiennego    | Wykrywa, kiedy użytkownik próbuje skopiować poufny element lub informacje z poufnego elementu otwartego w przeglądarce Chrome na nośnik wymienny lub urządzenie USB |audit, block with override, block|
+|plik skopiowany do udziału sieciowego  |Wykrywa, kiedy użytkownik próbuje skopiować poufny element lub informacje z poufnego elementu otwartego w przeglądarce Chrome na udział sieciowy lub zamapowany dysk sieciowy.|audit, block with override, block |
 
 ## <a name="deployment-process"></a>Proces wdrażania
-1. [Wprowadzenie do ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-getting-started.md)
-2. [Narzędzia i metody dołączania do Windows 10 urządzeniach](device-onboarding-overview.md)
-3. [Zainstaluj rozszerzenie na Windows 10 urządzeniach](dlp-chrome-get-started.md)
-4. [Tworzenie lub edytowanie zasad DLP ograniczające](create-test-tune-dlp-policy.md) przekazywanie do usługi w chmurze lub uzyskiwanie do nich dostępu przez niedozwolone akcje przeglądarek i stosowanie ich do twoich Windows 10 urządzeniach
+1. [Wprowadzenie z zapobieganiem utracie danych punktu końcowego](endpoint-dlp-getting-started.md)
+2. [Narzędzia i metody dołączania dla urządzeń Windows 10](device-onboarding-overview.md)
+3. [Instalowanie rozszerzenia na urządzeniach Windows 10](dlp-chrome-get-started.md)
+4. [Tworzenie lub edytowanie zasad DLP](create-test-tune-dlp-policy.md) ograniczających przekazywanie do usługi w chmurze lub dostęp przez niedozwolone akcje przeglądarek i stosowanie ich do urządzeń Windows 10
 
 ## <a name="next-steps"></a>Następne kroki
 
-Zobacz [Wprowadzenie do rozszerzenia zgodności firmy Microsoft, aby](dlp-chrome-get-started.md) uzyskać pełne procedury i scenariusze wdrażania.
+Zobacz [Wprowadzenie z rozszerzeniem Microsoft Purview](dlp-chrome-get-started.md), aby zapoznać się z kompletnymi procedurami i scenariuszami wdrażania.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Wprowadzenie do rozszerzenia zgodności firmy Microsoft](dlp-chrome-get-started.md)
-- [Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w punktach końcowych](endpoint-dlp-learn-about.md)
-- [Wprowadzenie do ochrony przed utratą danych w punktach końcowych firmy Microsoft](endpoint-dlp-getting-started.md)
-- [Korzystanie z ochrony przed utratą danych w punkcie końcowym firmy Microsoft](endpoint-dlp-using.md)
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
-- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
-- [Wprowadzenie do Eksploratora aktywności](data-classification-activity-explorer.md)
+- [Wprowadzenie z rozszerzeniem Microsoft Purview](dlp-chrome-get-started.md)
+- [Dowiedz się więcej o ochronie przed utratą danych punktu końcowego](endpoint-dlp-learn-about.md)
+- [Wprowadzenie do zapobiegania utracie danych punktu końcowego](endpoint-dlp-getting-started.md)
+- [Korzystanie z ochrony przed utratą danych punktu końcowego](endpoint-dlp-using.md)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
+- [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
+- [Wprowadzenie za pomocą Eksploratora działań](data-classification-activity-explorer.md)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/)
-- [Zarządzanie ryzykiem w niejawnym programie testów](insider-risk-management.md)
+- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md)

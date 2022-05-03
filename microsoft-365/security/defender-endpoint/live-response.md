@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e5d2b2bd47ba30aaf152171605947bb9a627480
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1f387696797d52805495777be0850ebe135fd38a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666355"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173116"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Badanie jednostek na urządzeniach przy użyciu odpowiedzi na żywo
 
@@ -165,7 +165,7 @@ Następujące polecenia są dostępne dla ról użytkowników, którym przyznano
 | Połączenia  | Pokazuje wszystkie aktywne połączenia.  | T  | N  | N  |
 | Dir  | Pokazuje listę plików i podkatalogów w katalogu.  | T  | T  | T  |
 | Sterowniki  | Pokazuje wszystkie sterowniki zainstalowane na urządzeniu.  | T  | N  | N  |
-| Fg `<command ID>`  | Umieść określone zadanie na pierwszym planie na pierwszym planie, co czyni go bieżącym zadaniem.  UWAGA: usługa fg pobiera identyfikator polecenia dostępny z zadań, a nie z identyfikatora PID  | T  | T  | T  |
+| Fg `<command ID>`  | Umieść określone zadanie na pierwszym planie, co czyni go bieżącym zadaniem.  UWAGA: usługa fg pobiera identyfikator polecenia dostępny z zadań, a nie z identyfikatora PID  | T  | T  | T  |
 | Fileinfo  | Uzyskaj informacje o pliku.  | T  | T  | T  |
 | Findfile  | Lokalizuje pliki według danej nazwy na urządzeniu.  | T  | T  | T  |
 | getfile <file_path>  | Pobiera plik.  | T  | T  | T  |
@@ -346,7 +346,7 @@ Wybierz kartę **Dziennik poleceń** , aby wyświetlić polecenia używane na ur
 - Urządzenie może być jednocześnie tylko w jednej sesji.
 - Obowiązują następujące limity rozmiaru plików:
   - `getfile` limit: 3 GB
-  - `fileinfo` limit: 10 GB
+  - `fileinfo` limit: 30 GB
   - `library` limit: 250 MB
 
 ## <a name="related-article"></a>Powiązany artykuł

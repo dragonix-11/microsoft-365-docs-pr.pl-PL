@@ -1,13 +1,12 @@
 ---
 title: Porównanie funkcji zabezpieczeń w planach Microsoft 365 dla małych i średnich firm
-description: Poznaj różnice między usługą Defender dla Firm i usługą Defender dla punktu końcowego. Wiedza o tym, co jest zawarte w każdym planie, może pomóc w podjęciu świadomej decyzji dla twojej firmy.
+description: Jak usługa Defender dla Firm wypada w porównaniu z usługą Defender for Endpoint i Microsoft 365 Business Premium? Zobacz, co jest zawarte w każdym planie, aby podjąć bardziej świadomą decyzję dla swojej firmy.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,23 +16,16 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: d14215c7c648bafd4d21f765848f20a391a13a2f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 971617311ce8d2443f90a1792339d4f0927ade3e
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100242"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174740"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Porównanie funkcji zabezpieczeń w planach Microsoft 365 dla małych i średnich firm
 
-> [!IMPORTANT]
-> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako autonomiczna subskrypcja jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby go zażądać. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
->
-> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj.
-
 Firma Microsoft oferuje szeroką gamę rozwiązań i usług w chmurze, w tym kilka różnych planów dla małych i średnich firm. Na przykład [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) obejmuje funkcje zabezpieczeń i zarządzania urządzeniami oraz funkcje zwiększające produktywność, takie jak Office aplikacje. Ten artykuł ma na celu wyjaśnienie, jakie funkcje zabezpieczeń, takie jak ochrona urządzenia, są zawarte w Microsoft 365 Business Premium, Microsoft Defender dla Firm i Ochrona punktu końcowego w usłudze Microsoft Defender.
-
-Microsoft Defender dla Firm jest dostępna jako oferta autonomiczna lub w ramach Microsoft 365 Business Premium (począwszy od 1 marca 2022 r.).
 
 >
 > **Masz minutę?**
@@ -50,13 +42,11 @@ Microsoft Defender dla Firm jest dostępna jako oferta autonomiczna lub w ramach
 ## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Porównanie funkcji zabezpieczeń w Microsoft Defender dla Firm z Microsoft 365 Business Premium
 
 > [!NOTE]
-> Ten artykuł ma na celu zapewnienie ogólnego przeglądu funkcji ochrony przed zagrożeniami zawartych w Microsoft Defender dla Firm (jako plan autonomiczny) i Microsoft 365 Business Premium (w tym w usłudze Defender dla firm). Ten artykuł nie ma służyć jako opis usługi ani dokument umowy licencyjnej. Aby uzyskać więcej informacji, zobacz [Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> Ten artykuł ma na celu zapewnienie ogólnego przeglądu funkcji ochrony przed zagrożeniami zawartych w Microsoft Defender dla Firm (jako plan autonomiczny) i Microsoft 365 Business Premium (w tym w usłudze Defender dla firm). Ten artykuł nie ma służyć jako opis usługi ani dokument umowy licencyjnej. Aby uzyskać więcej informacji, zobacz [wskazówki dotyczące licencjonowania Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-**Począwszy od 1 marca 2022 r., usługa Defender dla Firm rozpocznie wdrażanie w ramach Microsoft 365 Business Premium. Usługa Defender dla Firm jako oferta autonomiczna jest nadal dostępna w wersji zapoznawczej.**
+**Od 1 marca 2022 r. usługa Defender for Business jest objęta Microsoft 365 Business Premium. Usługa Defender dla Firm jest również dostępna jako subskrypcja autonomiczna.** W poniższej tabeli porównano funkcje zabezpieczeń i możliwości usługi Defender for Business (autonomiczne) z Microsoft 365 Business Premium.
 
-W poniższej tabeli porównano funkcje zabezpieczeń i możliwości usługi Defender for Business (autonomiczne) z Microsoft 365 Business Premium.
-
-|Funkcja/możliwość|[Microsoft Defender dla Firm](mdb-overview.md)<br/>(autonomiczny; obecnie w wersji zapoznawczej)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(obejmuje usługę Defender dla Firm)|
+|Funkcja/możliwość|[Microsoft Defender dla Firm](mdb-overview.md)<br/>(autonomiczny)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(obejmuje usługę Defender dla Firm)|
 |---|---|---|
 |Ochrona poczty e-mail|Tak <br/>- [Skanowanie poczty e-mail przy użyciu Program antywirusowy Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Tak <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Skanowanie poczty e-mail przy użyciu Program antywirusowy Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Ochrona przed atakami przeciwspamowych|Tak <br/>— W przypadku urządzeń|Tak <br/>— W przypadku urządzeń<br/>— W przypadku Microsoft 365 zawartości wiadomości e-mail, takiej jak wiadomości i załączniki|
@@ -71,11 +61,9 @@ W poniższej tabeli porównano funkcje zabezpieczeń i możliwości usługi Defe
 
 ## <a name="compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2"></a>Porównanie Microsoft Defender dla Firm z planami Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2
 
-Usługa Defender dla firm oferuje możliwości usługi Defender for Endpoint klasy korporacyjnej dla małych i średnich firm.
+Usługa Defender dla firm oferuje możliwości usługi Defender for Endpoint klasy korporacyjnej dla małych i średnich firm. W poniższej tabeli porównaliśmy funkcje zabezpieczeń i możliwości usługi Defender dla firm z ofertami dla przedsiębiorstw, Ochrona punktu końcowego w usłudze Microsoft Defender Plany 1 i 2.
 
-W poniższej tabeli porównaliśmy funkcje zabezpieczeń i możliwości usługi Defender dla firm z ofertami dla przedsiębiorstw, Ochrona punktu końcowego w usłudze Microsoft Defender Plany 1 i 2.
-
-|Funkcja/możliwość|[Defender dla Firm](mdb-overview.md)<br/>(autonomiczny; obecnie w wersji zapoznawczej)|[Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(dla klientów korporacyjnych) |[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(dla klientów korporacyjnych) |
+|Funkcja/możliwość|[Defender dla Firm](mdb-overview.md)<br/>(autonomiczny)|[Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(dla klientów korporacyjnych) |[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(dla klientów korporacyjnych) |
 |---|---|---|---|
 |[Scentralizowane zarządzanie](../defender-endpoint/manage-atp-post-migration.md) |Tak <sup>[[1](#fn1)]</sup>|Tak|Tak|
 |[Uproszczona konfiguracja klienta](mdb-simplified-configuration.md)|Tak|Nie|Nie|
@@ -91,7 +79,7 @@ W poniższej tabeli porównaliśmy funkcje zabezpieczeń i możliwości usługi 
 |Interfejsy API partnerów|Tak|Tak|Tak|
 |[integracja Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Do wyświetlania zdarzeń zabezpieczeń w dzierżawach klientów)|Tak|Nie|Nie|
 
-(<a id="fn1">1</a>) Dołączanie urządzeń i zarządzanie nimi w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) lub za pomocą Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) Dołączanie urządzeń i zarządzanie nimi w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) lub w Microsoft Intune zarządzanym w centrum administracyjnym Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
 (<a id="fn2">2</a>) Funkcje wykrywania i reagowania na punkty końcowe (EDR) w usłudze Defender for Business obejmują wykrywanie oparte na zachowaniu i następujące cztery typy akcji ręcznego reagowania: 
 - Uruchomiono skanowanie antywirusowe
@@ -105,7 +93,7 @@ W poniższej tabeli porównaliśmy funkcje zabezpieczeń i możliwości usługi 
 
 (<a id="fn5">5</a>) W usłudze Defender for Business analiza zagrożeń jest zoptymalizowana pod kątem małych i średnich firm.
 
-(<a id="fn6">6</a>) Podczas programu w wersji zapoznawczej Windows urządzenia klienckie są obsługiwane do dołączania w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Możesz użyć lokalnej metody skryptu. Zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).
+(<a id="fn6">6</a>) Zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).
 
 ## <a name="next-steps"></a>Następne kroki
 

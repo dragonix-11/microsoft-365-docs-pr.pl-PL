@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych uzyskaj listę wymagań dotyczących używania Microsoft 365 Lighthouse.
-ms.openlocfilehash: 06d5c5bb0de76ecc8ba9fc28677f480f5f4d5561
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: ca5a736c6b14b77f433b07480eba718b4f0e55c2
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023266"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174033"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Wymagania dotyczące portalu Microsoft 365 Lighthouse
 
@@ -32,7 +32,7 @@ Aby korzystać z usługi Lighthouse, dostawcy msps muszą być zarejestrowani w 
 Ponadto każda dzierżawa klienta MSP musi kwalifikować się do aplikacji Lighthouse, spełniając następujące wymagania:
 
 - Aby można było zarządzać dzierżawą klienta, musi mieć skonfigurowany dostęp delegowany dla dostawcy usług zarządzanych (MSP).
-- Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business
+- Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Business lub Microsoft Defender dla Firm
 - Nie może mieć więcej niż 1000 licencjonowanych użytkowników
 
 *Uprawnienia administratora delegowanego (DAP) są wymagane do dołączenia klientów do usługi Lighthouse. Zalecamy również ustanowienie szczegółowych uprawnień administratora delegowanego (GDAP) z klientami, aby umożliwić bezpieczniejszy dostęp delegowany. Chociaż dap i GDAP współistnieją, GDAP będzie mieć pierwszeństwo dla klientów, gdzie oba modele są w miejscu. Wkrótce klienci z zaledwie GDAP (i bez dap) będą mogli dołączyć do lighthouse.

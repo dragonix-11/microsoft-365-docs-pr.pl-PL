@@ -1,13 +1,12 @@
 ---
 title: Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm
-description: Dowiedz się, jak wyświetlać & zarządzać alertami, reagować na zagrożenia, zarządzać urządzeniami i przeglądać akcje korygowania
+description: Wyświetlanie alertów i zarządzanie nimi, reagowanie na zagrożenia, zarządzanie urządzeniami i przeglądanie akcji korygowania wykrytych zagrożeń w usłudze Defender dla firm.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ec1d85b72cfbe17e182d3aed573476e4fadfdef6
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 04c8d32c6bb016d4640094013d1f71eb248a8d6c
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861449"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172711"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 W miarę wykrywania zagrożeń i wyzwalania alertów tworzone są zdarzenia. Zespół ds. zabezpieczeń twojej firmy może wyświetlać zdarzenia i zarządzać nimi w portalu Microsoft 365 Defender.
 

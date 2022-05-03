@@ -1,33 +1,29 @@
 ---
 title: Grupy urządzeń w Microsoft Defender dla Firm
-description: Dowiedz się więcej o grupach urządzeń w Microsoft Defender dla Firm
+description: Zasady zabezpieczeń są stosowane do urządzeń za pośrednictwem grup urządzeń w usłudze Defender dla Firm.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6c02a92132f7f5249f2ba67ca2841902b889d52b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: abb1c694f98ace7595f1389e3270ca3479d0c745
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861750"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172218"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>Grupy urządzeń w Microsoft Defender dla Firm
-
-> [!NOTE]
-> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 W Microsoft Defender dla Firm zasady są stosowane do urządzeń za pośrednictwem niektórych kolekcji nazywanych grupami urządzeń. 
 
@@ -54,7 +50,7 @@ Możesz również utworzyć nowe grupy urządzeń, aby przypisywać zasady z okr
 > [!NOTE]
 > Podczas tworzenia zasad w usłudze Defender dla Firm jest przypisywana kolejność priorytetów. Jeśli zastosujesz wiele zasad do danego zestawu urządzeń, te urządzenia otrzymają tylko pierwsze zastosowane zasady. Aby uzyskać więcej informacji, zobacz [Omówienie kolejności zasad w Microsoft Defender dla Firm](mdb-policy-order.md).
 
-Wszystkie grupy urządzeń, w tym domyślne grupy urządzeń i dowolne zdefiniowane niestandardowe grupy urządzeń, są przechowywane w [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
+Wszystkie grupy urządzeń, w tym domyślne grupy urządzeń i wszystkie zdefiniowane niestandardowe grupy urządzeń, są przechowywane w [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
 ## <a name="create-a-new-device-group"></a>Tworzenie nowej grupy urządzeń
 
@@ -112,7 +108,7 @@ Podczas tworzenia lub edytowania zasad może zostać wyświetlona opcja **Dodaj 
 
 :::image type="content" source="media/add-all-devices-option.png" alt-text="Zrzut ekranu przedstawiający opcję Dodaj wszystkie urządzenia.":::
 
-Jeśli wybierzesz tę opcję, wszystkie urządzenia zarejestrowane w Microsoft Endpoint Manager (w tym Microsoft Intune) otrzymają domyślnie tworzone lub edytowane zasady. 
+Jeśli wybierzesz tę opcję, wszystkie urządzenia zarejestrowane w Microsoft Intune otrzymają domyślnie tworzone lub edytowane zasady. 
 
 ## <a name="next-steps"></a>Następne kroki
 

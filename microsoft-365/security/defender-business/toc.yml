@@ -5,8 +5,10 @@
       items:
         - name: Co to jest usługa Microsoft Defender dla Firm?
           href: mdb-overview.md
-        - name: Uproszczony proces konfiguracji
+        - name: Uproszczona konfiguracja
           href: mdb-simplified-configuration.md
+        - name: Podręcznik wersji próbnej — Defender dla Firm
+          href: trial-playbook-defender-business.md
         - name: Porównanie planów dla małych i średnich firm
           href: compare-mdb-m365-plans.md
         - name: Integracja z usługą Microsoft 365 Lighthouse
@@ -49,7 +51,7 @@
           href: mdb-review-remediation-actions.md
         - name: Wyświetlanie i używanie raportów
           href: mdb-reports.md
-    - name: Zarządzanie zasadami zabezpieczeń
+    - name: Wyświetl lub edytuj zasady zabezpieczeń
       items:
         - name: 'Wyświetlanie, edytowanie i tworzenie zasad'
           href: mdb-view-edit-create-policies.md
@@ -61,7 +63,7 @@
           href: mdb-firewall.md
         - name: Zarządzanie regułami zasad zapory
           href: mdb-custom-rules-firewall.md
-    - name: Zarządzanie urządzeniami
+    - name: Monitorowanie urządzeń lub zarządzanie nimi
       items:
         - name: Wyświetlanie urządzeń i zarządzanie nimi
           href: mdb-manage-devices.md
@@ -71,6 +73,8 @@
           href: mdb-offboard-devices.md
     - name: Informacje referencyjne
       items:
+        - name: Informacje referencyjne interfejsu API
+          href: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
         - name: Jak uzyskać pomoc lub skontaktować się z pomocą techniczną
           href: mdb-get-help.md
         - name: Często zadawane pytania
