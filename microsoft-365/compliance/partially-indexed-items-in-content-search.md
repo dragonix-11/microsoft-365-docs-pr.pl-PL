@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Dowiedz się więcej o niezaimportowanych elementach w Exchange i SharePoint, które można uwzględnić w wyszukiwaniu zbierania elektronicznych materiałów dowodowych uruchamianym w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: ff21f04456d6886e7849a8d9a0770640897a62ac
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 27f59ac9bf6a580fa0a3193ee91f66a4ac58ab1e
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091506"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188795"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Częściowo zaindeksowane elementy w środowisku zbierania elektronicznych materiałów dowodowych
 
@@ -162,7 +162,10 @@ Aby uzyskać listę limitów indeksowania dla dokumentów SharePoint, zobacz [Li
 
 - Mimo że typ pliku jest obsługiwany w przypadku indeksowania i jest indeksowany, mogą wystąpić błędy indeksowania lub wyszukiwania, które spowodują zwrócenie pliku jako częściowo indeksowanego elementu. Na przykład wyszukiwanie dużego pliku Excel może zakończyć się częściowym powodzeniem (ponieważ pierwsze 4 MB jest indeksowane), ale nie powiedzie się, ponieważ przekroczono limit rozmiaru pliku. W takim przypadku jest możliwe, że ten sam plik jest zwracany z wynikami wyszukiwania i jako częściowo zaindeksowany element.
 
-- Pliki zaszyfrowane za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączone do wiadomości e-mail zgodnej z kryteriami wyszukiwania mogą być przeglądane i będą odszyfrowywane po wyeksportowaniu. Obecnie pliki szyfrowane za pomocą technologii szyfrowania firmy Microsoft (i przechowywane w SharePoint lub OneDrive dla Firm) są częściowo indeksowane.
+- Pliki zaszyfrowane za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączone do wiadomości e-mail zgodnej z kryteriami wyszukiwania mogą być przeglądane i będą odszyfrowywane po wyeksportowaniu. Obecnie pliki szyfrowane za pomocą technologii szyfrowania firmy Microsoft (i przechowywane w SharePoint lub OneDrive dla Firm) są częściowo indeksowane. 
+
+   > [!NOTE]
+   > Pliki zaszyfrowane przy użyciu etykiet poufności nie zostaną odszyfrowane.
 
 - Wiadomości e-mail zaszyfrowane za pomocą protokołu S/MIME są częściowo indeksowane. Obejmuje to zaszyfrowane komunikaty z załącznikami plików lub bez tych załączników.
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak zarządzać listą dzierżaw.
-ms.openlocfilehash: b4bffcfd5b8962253e68938a956949ca8470f818
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: bdd92f066f0b94c545b102b96eedb7e08c10ed96
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022432"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188333"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Zarządzanie listą dzierżaw w Microsoft 365 Lighthouse
 
@@ -106,4 +106,6 @@ Po utworzeniu i przypisaniu tagów można ich użyć do filtrowania dzierżaw. P
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Tworzenie konta w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artykuł) [Omówienie strony Zgodność urządzeń w Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (artykuł) [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)
+[Zarejestruj się, aby Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artykuł)\
+[Omówienie strony Zgodność urządzeń w Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (artykuł)\
+[Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)

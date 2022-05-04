@@ -16,16 +16,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak skonfigurować zabezpieczenia portalu.
-ms.openlocfilehash: de93ebfff03241500bb1788fc282c4b2bb747ea2
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 60e0d2f1ba61e5def3979358f338da0846914543
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823570"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188685"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Konfigurowanie zabezpieczeń portalu Microsoft 365 Lighthouse
 
-Ochrona dostępu do danych klientów, gdy dostawca usług zarządzanych (MSP) delegował uprawnienia dostępu do swoich dzierżaw, jest priorytetem cyberbezpieczeństwa. Microsoft 365 Lighthouse oferuje zarówno wymagane, jak i opcjonalne funkcje ułatwiające konfigurowanie zabezpieczeń portalu usługi Lighthouse. Przed uzyskaniem dostępu do usługi Lighthouse należy skonfigurować określone role z włączonym uwierzytelnianiem wieloskładnikowym (MFA). Opcjonalnie można skonfigurować usługi Azure AD Privileged Identity Management (PIM) i dostęp warunkowy.
+Ochrona dostępu do danych klientów, gdy dostawca usług zarządzanych (MSP) delegował uprawnienia dostępu do swoich dzierżaw, jest priorytetem cyberbezpieczeństwa. Microsoft 365 Lighthouse oferuje zarówno wymagane, jak i opcjonalne funkcje ułatwiające konfigurowanie zabezpieczeń portalu usługi Lighthouse. Przed uzyskaniem dostępu do usługi Lighthouse należy skonfigurować określone role z włączonym uwierzytelnianiem wieloskładnikowym (MFA). Opcjonalnie można skonfigurować Azure AD Privileged Identity Management (PIM) i dostęp warunkowy.
 
 ## <a name="set-up-multifactor-authentication-mfa"></a>Konfigurowanie uwierzytelniania wieloskładnikowego (MFA)
 
@@ -45,26 +45,26 @@ Technicy MSP mogą również uzyskiwać dostęp do usługi Lighthouse przy użyc
 
 W przypadku akcji niezwiązanych z dzierżawą klienta w usłudze Lighthouse (na przykład dołączania, dezaktywowania/ponownego aktywowania klienta, zarządzania tagami, przeglądania dzienników) technicy MSP muszą mieć przypisaną rolę w dzierżawie partnera. Aby uzyskać więcej informacji na temat ról dzierżawy partnera, zobacz [Omówienie uprawnień w Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
-## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Konfigurowanie usługi Azure AD Privileged Identity Management (PIM)
+## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Konfigurowanie Azure AD Privileged Identity Management (PIM)
 
 Dostawcy oprogramowania mogą zminimalizować liczbę osób, które mają dostęp do ról o wysokim poziomie uprawnień w celu zabezpieczenia informacji lub zasobów przy użyciu usługi PIM. Usługa PIM zmniejsza prawdopodobieństwo, że złośliwa osoba uzyska dostęp do zasobów lub autoryzowani użytkownicy przypadkowo wpłyną na poufny zasób. Dostawcy usług zarządzania mogą również przyznawać użytkownikom role just in time o wysokim poziomie uprawnień, aby uzyskiwać dostęp do zasobów, wprowadzać szerokie zmiany i monitorować, co wyznaczoni użytkownicy robią ze swoim uprzywilejowanym dostępem.
 
 > [!NOTE]
-> Korzystanie z usługi Azure AD PIM wymaga licencji Azure AD — wersja Premium P2 w dzierżawie partnera.
+> Użycie Azure AD PIM wymaga licencji Azure AD — wersja Premium P2 w dzierżawie partnera.
 
 Poniższe kroki umożliwiają podniesienie poziomu uprawnień użytkowników dzierżawy partnera do ról wyższych uprawnień o określonym zakresie czasu przy użyciu usługi PIM:
 
 1. Utwórz grupę z możliwością przypisywania ról zgodnie z [opisem w artykule Tworzenie grupy do przypisywania ról w Azure Active Directory](/azure/active-directory/roles/groups-create-eligible).
 
-2. Przejdź do [usługi Azure AD — wszystkie grupy](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) i dodaj nową grupę jako członka grupy zabezpieczeń dla ról o wysokich uprawnieniach (na przykład grupy zabezpieczeń agentów administracyjnych dla języka DAP lub podobnie odpowiedniej grupy zabezpieczeń dla ról GDAP).
+2. Przejdź do [Azure AD — wszystkie grupy](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) i dodaj nową grupę jako członka grupy zabezpieczeń dla ról o wysokich uprawnieniach (na przykład grupy zabezpieczeń agentów administracyjnych dla języka DAP lub podobnie odpowiedniej grupy zabezpieczeń dla ról GDAP).
 
 3. Skonfiguruj uprzywilejowany dostęp do nowej grupy zgodnie z opisem w artykule [Przypisywanie uprawnionych właścicieli i członków dla uprzywilejowanych grup dostępu](/azure/active-directory/privileged-identity-management/groups-assign-member-owner).
 
 Aby dowiedzieć się więcej na temat usługi PIM, zobacz [Co to jest Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 
-## <a name="set-up-risk-based-azure-ad-conditional-access"></a>Konfigurowanie dostępu warunkowego usługi Azure AD opartego na ryzyku
+## <a name="set-up-risk-based-azure-ad-conditional-access"></a>Konfigurowanie dostępu warunkowego Azure AD opartego na ryzyku
 
-Dostawcy usług mogą korzystać z dostępu warunkowego opartego na ryzyku, aby upewnić się, że członkowie personelu udowodnią swoją tożsamość przy użyciu uwierzytelniania wieloskładnikowego i zmieniając hasło po wykryciu jako ryzykowny użytkownik (z wyciekiem poświadczeń lub analizą zagrożeń w usłudze Azure AD). Użytkownicy muszą również zalogować się ze znanej lokalizacji lub zarejestrowanego urządzenia, gdy zostanie wykryte ryzykowne logowanie. Inne ryzykowne zachowania obejmują logowanie się ze złośliwego lub anonimowego adresu IP lub z nietypowej lub niemożliwej lokalizacji podróży, użycie nietypowego tokenu, użycie hasła z sprayu hasła lub inne nietypowe zachowanie logowania. W zależności od poziomu ryzyka użytkownika dostawcy usług mogą również zablokować dostęp podczas logowania. Aby dowiedzieć się więcej na temat zagrożeń, zobacz [Co to jest ryzyko?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+Dostawcy usług mogą korzystać z dostępu warunkowego opartego na ryzyku, aby upewnić się, że ich pracownicy udowodnili swoją tożsamość przy użyciu uwierzytelniania wieloskładnikowego i zmieniając hasło po wykryciu jako ryzykowny użytkownik (z wyciekiem poświadczeń lub według Azure AD analizy zagrożeń). Użytkownicy muszą również zalogować się ze znanej lokalizacji lub zarejestrowanego urządzenia, gdy zostanie wykryte ryzykowne logowanie. Inne ryzykowne zachowania obejmują logowanie się ze złośliwego lub anonimowego adresu IP lub z nietypowej lub niemożliwej lokalizacji podróży, użycie nietypowego tokenu, użycie hasła z sprayu hasła lub inne nietypowe zachowanie logowania. W zależności od poziomu ryzyka użytkownika dostawcy usług mogą również zablokować dostęp podczas logowania. Aby dowiedzieć się więcej na temat zagrożeń, zobacz [Co to jest ryzyko?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
 > [!NOTE]
 > Dostęp warunkowy wymaga licencji Azure AD — wersja Premium P2 w dzierżawie partnera. Aby skonfigurować dostęp warunkowy, zobacz [Konfigurowanie dostępu warunkowego Azure Active Directory](/appcenter/general/configuring-aad-conditional-access).
@@ -72,6 +72,8 @@ Dostawcy usług mogą korzystać z dostępu warunkowego opartego na ryzyku, aby 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Uprawnienia do resetowania haseł](/azure/active-directory/roles/permissions-reference#password-reset-permissions) (artykuł)\
+[Omówienie uprawnień w Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (artykuł)\
+[Wyświetl role Azure Active Directory w Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (artykuł)\
 [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artykuł)\
 [Omówienie Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (artykuł)\
 [Zarejestruj się, aby Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artykuł)\

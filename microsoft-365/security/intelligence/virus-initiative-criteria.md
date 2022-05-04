@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51d5814d718c1422d493f5227b311a58f99f7a82
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 7b7586a75c95202e2737bab857ab1ffebd04d6c4
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783276"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187739"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft Virus Initiative
 
@@ -53,6 +53,7 @@ Aby zakwalifikować się do programu MVI, organizacja musi spełnić wszystkie n
 |Laboratoria SKD|Wymagania dotyczące certyfikacji Produkt: Oprogramowanie antywirusowe lub chroniące przed złośliwym kodem </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|Skd Labs Star Check Certification Requirements Pass >= 98.5% with On Demand, On Access and Total Detection tests|
 |VB 100|Test certyfikacji VB100 v1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|Certyfikacja VB100|
 |Laboratoria Zachodniego Wybrzeża|Checkmark Certified </br> <http://www.checkmarkcertified.com/sme/>|Ocena "A" dotycząca wydajności zabezpieczeń produktów|
+|laboratoria SE|Ochrona, małe firmy lub Enterprise test ochrony PE  </br> <https://selabs.uk/en/reports/consumers/>|Ochrona Ocena lub Ocena PE dla małych firm lub ocena Enterprise EP Protection A |
 
 ## <a name="apply-now"></a>Zastosuj teraz
 

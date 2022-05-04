@@ -1,5 +1,5 @@
 ---
-title: Wynik produktywności firmy Microsoft
+title: Microsoft Productivity Score
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,147 +20,147 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Dowiedz się, jak ocena produktywności firmy Microsoft odzwierciedla wyniki pomiarów osób i technologii oraz ich porównanie z organizacjami o podobnej wielkości.
-ms.openlocfilehash: 24a84c3780ec3787b76f78acbe9c0c109a27c639
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, w jaki sposób wskaźnik produktywności firmy Microsoft odzwierciedla pomiary osób i technologii oraz porównuje je z organizacjami o podobnym rozmiarze.
+ms.openlocfilehash: 094d5de77db6bffb4a2d5981268b364a6f9e690f
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327073"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188355"
 ---
-# <a name="microsoft-productivity-score"></a>Wynik produktywności firmy Microsoft 
+# <a name="microsoft-productivity-score"></a>Microsoft Productivity Score 
 
-Wynik produktywności pomaga w przekształceniu cyfrowym dzięki szczegółowej informacji na temat sposobu, w jaki Twoja organizacja korzysta Microsoft 365 i technologii, które ją obsługują. Wyniki Twojej organizacji odzwierciedlają pomiary doświadczenia osób i technologii i mogą być porównywane z poziomami odniesienia organizacji o podobnej wielkości co Twoja.
+Wskaźnik produktywności obsługuje proces transformacji cyfrowej dzięki szczegółowym informacjom na temat sposobu, w jaki organizacja korzysta z Microsoft 365 i środowisk technologicznych, które ją obsługują. Wynik twojej organizacji odzwierciedla pomiary osób i środowiska technologicznego i można go porównać z testami porównawczymi organizacji podobnymi do Twoich.
 
 Zapewniają:
 
-- **Metryki** , które pomogą Ci zobaczyć, w którym miejscu jesteś na drodze cyfrowej transformacji.
-- **Szczegółowe informacje** informacji o danych, które ułatwiają zidentyfikowanie możliwości zwiększających produktywność i zadowolenie w organizacji.
-- **Zalecane działania**, które można podjąć, aby pomóc Twojej organizacji w efektywnym Microsoft 365 produktach.
+- **Metryki ułatwiające** sprawdzenie, gdzie jesteś w procesie transformacji cyfrowej.
+- **Szczegółowe informacje** o danych, które pomogą Ci zidentyfikować możliwości zwiększenia produktywności i zadowolenia w organizacji.
+- **Zalecane akcje**, które można podjąć, aby ułatwić organizacji wydajne korzystanie z Microsoft 365 produktów.
 
-Zapewniamy metryki, szczegółowe informacje i zalecenia w dwóch obszarach: 
+Udostępniamy metryki, szczegółowe informacje i zalecenia w dwóch obszarach: 
 
-- **Środowisko osób:** Określa sposób działania organizacji przy Microsoft 365, takich jak współpraca nad zawartością, mobilność, komunikacja, spotkania i praca zespołowa.  
+- **Doświadczenia osób:** Kwantyfikuje sposób działania organizacji przy użyciu Microsoft 365 kategorii, takich jak współpraca nad zawartością, mobilność, komunikacja, spotkania i praca zespołowa.  
 
-    W przypadku każdej z wymienionych kategorii korzystamy z badań publicznych w celu określenia najlepszych rozwiązań i powiązanych korzyści w postaci skuteczności organizacyjnej. Na przykład badania Forrester pokazują, że gdy inne osoby współpracują i udostępniają zawartość w chmurze (zamiast wysyłać załączniki pocztą e-mail), mogą zaoszczędzić do 100 minut w tygodniu. Ponadto określenie wykorzystania tych najlepszych praktyk w Twojej organizacji jest określanie, w którym miejscu twoja organizacja się znajduje. 
+    W przypadku każdej z wymienionych kategorii przyjrzymy się badaniom publicznym, aby zidentyfikować najlepsze rozwiązania i powiązane korzyści w postaci skuteczności organizacyjnej. Na przykład badania firmy Forrester wykazały, że gdy ludzie współpracują i udostępniają zawartość w chmurze (zamiast wysyłać załączniki pocztą e-mail), mogą zaoszczędzić do 100 minut tygodniowo. Ponadto kwantyfikujemy użycie tych najlepszych rozwiązań w organizacji, aby ułatwić ci zobaczenie, gdzie jesteś w procesie transformacji cyfrowej. 
 
-- **Środowisko technologii:** Twoja organizacja zależy od niezawodnej i wydajnej technologii, a także od efektywnego wykorzystania Microsoft 365. [Analiza punktu](https://aka.ms/endpointanalytics) końcowego pomaga zrozumieć, jaki wpływ na twoją organizację mogą wpłynąć problemy z wydajnością i kondycją sprzętu i oprogramowania. Kondycja aplikacji platformy Microsoft 365 pomaga zrozumieć, czy na urządzeniach w Twojej organizacji są Microsoft 365 w polecanych kanałach.
+- **Środowiska technologiczne:** Twoja organizacja zależy od niezawodnej i wydajnej technologii, a także efektywnego wykorzystania Microsoft 365. [Analiza punktów końcowych](https://aka.ms/endpointanalytics) pomaga zrozumieć, w jaki sposób na organizację mogą mieć wpływ problemy z wydajnością i kondycją sprzętu i oprogramowania. Kondycja aplikacji platformy Microsoft 365 pomaga zrozumieć, czy na urządzeniach w organizacji działają aplikacje Microsoft 365 na zalecanych kanałach.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Aby [uzyskać omówienie i szczegóły wymagań wstępnych](/mem/analytics/overview) , zobacz Co to jest analiza punktu końcowego. Aby dowiedzieć się więcej Microsoft 365 informacji o łączności sieciowej, przeczytaj [omówienie łączności sieciowej](../../enterprise/microsoft-365-networking-overview.md).
+Zobacz [What is Endpoint Analytics (Co to jest analiza punktu końcowego](/mem/analytics/overview) ), aby zapoznać się z omówieniem i szczegółami wymagań wstępnych. Aby dowiedzieć się więcej na temat Microsoft 365 szczegółowych informacji o łączności sieciowej, przeczytaj [omówienie łączności sieciowej](../../enterprise/microsoft-365-networking-overview.md).
 
-Aby dane dotyczące użytkowników obsługiły, potrzebny jest Microsoft 365 dla firm lub Office 365 dla subskrypcji enterprise. Aby uzyskać dane analizy punktu końcowego dla Twojej dzierżawy, musisz dodać Microsoft Intune do subskrypcji. Usługa Intune pomaga chronić dane twojej organizacji, zarządzając urządzeniami i aplikacjami. Po zainstalowaniu usługi Intune możesz włączyć analizę punktów końcowych w środowisku usługi Intune. Aby dowiedzieć się więcej Microsoft Intune na ten temat, zapoznaj się z Microsoft Intune [dokumentacją](/mem/intune/). 
+W przypadku osób, które korzystają z danych, potrzebujesz Microsoft 365 dla firm lub Office 365 dla subskrypcji przedsiębiorstwa. W przypadku danych analizy punktów końcowych dla dzierżawy należy dodać Microsoft Intune do subskrypcji. Intune pomaga chronić dane organizacji, zarządzając urządzeniami i aplikacjami. Po Intune możesz włączyć analizę punktów końcowych w środowisku Intune. Aby dowiedzieć się więcej o Microsoft Intune, zobacz [dokumentację Microsoft Intune](/mem/intune/). 
 
 > [!NOTE]
-> Do uzyskania funkcji wyników produktywności nie jest wymagana licencja na usługę Workplace Analytics.
+> Licencja na usługę Workplace Analytics nie jest wymagana do uzyskania funkcji wyniku produktywności.
 
-Wynik produktywności jest dostępny tylko w centrum administracyjne platformy Microsoft 365 i może być dostępny tylko dla informatyków, którzy pełnią jedną z następujących ról:  
+Wynik produktywności jest dostępny tylko w Centrum administracyjne platformy Microsoft 365 i jest dostępny tylko dla specjalistów IT, którzy mają jedną z następujących ról:  
 
 - Administrator globalny
 - Administratorzy serwera Exchange
 - Administrator programu SharePoint
 - Administrator programu Skype dla firm
 - Administrator aplikacji Teams
-- Czytnik globalny
+- Czytelnik globalny
 - Czytelnik raportów
-- Czytnik raportów podsumowujących użycie
+- Czytelnik raportów podsumowania użycia
 
 > [!NOTE]
-> Tylko specjalista IT z rolą administratora globalnego może utworzyć konto lub wybrać w dzierżawie ocenę produktywności.
+> Tylko specjalista IT z rolą administratora globalnego może zarejestrować się lub wyrazić zgodę na dzierżawę w celu oceny wydajności.
 
-Model kontroli dostępu oparty na rolach dla wyników produktywności ułatwia organizacjom dalsze przekształcanie cyfrowe w ramach programu Microsoft 365 dzięki elastyczności przypisywania ról informatykom w organizacji.
+Model kontroli dostępu opartej na rolach dla współczynnika produktywności pomaga organizacjom w dalszych działaniach związanych z transformacją cyfrową dzięki Microsoft 365, zapewniając elastyczność przypisywania ról do specjalistów IT w organizacji.
 
-Firma Microsoft dba o ochronę prywatności użytkowników. W [tym dokumencie](privacy.md)  zachowania poufności informacji wyjaśniono kontrolki, które zapewniamy administratorowi IT w Twojej organizacji, aby zagwarantować, że dane będą możliwe do działania, bez naruszania zaufania, które umieszczasz w firmie Microsoft.
+Firma Microsoft dokłada wszelkich starań, aby chronić prywatność użytkowników indywidualnych. Ten [dokument dotyczący prywatności](privacy.md)  zawiera objaśnienie mechanizmów kontroli, które udostępniamy, jako administratora IT w organizacji, w celu zapewnienia, że informacje są możliwe do działania, a jednocześnie nie naruszają zaufania, jakie daje firma Microsoft.
 
-Dostęp do wyników można uzyskać z Administracja Microsoft 365 w obszarze **RaportyProductivity** >  Score.
+Możesz uzyskać dostęp do środowiska z Administracja Microsoft 365 domu w obszarze **Raporty** >  **Wynikproduktywności**.
   
 ## <a name="how-the-score-is-calculated"></a>Sposób obliczania wyniku
 
-Twój wynik produktywności jest oparty na połączonych wynikach osób i technologii w kategoriach. Każda kategoria jest jednakowo ważona (łącznie wynosi 100 punktów). Najwyższa możliwa wartość wyników produktywności to 800.
+Wskaźnik produktywności jest oparty na połączonych wynikach kategorii osób i środowisk technologicznych. Każda kategoria jest ważona równo, w sumie 100 punktów. Najwyższy możliwy wynik produktywności to 800.
 
-### <a name="score-categories"></a>Kategorie wyników 
+### <a name="score-categories"></a>Ocenianie kategorii 
 
 - Komunikacja (100 punktów)
 - Spotkania (100 punktów)
 - Współpraca nad zawartością (100 punktów)
 - Praca zespołowa (100 punktów)
 - Mobilność (100 punktów)
-- Analiza punktu końcowego (100 punktów)
+- Analiza punktów końcowych (100 punktów)
 - Łączność sieciowa (100 punktów)
-- Aplikacje Microsoft 365 kondycji (100 punktów)
-- **Łącznie możliwe = 800 punktów**
+- Aplikacje Microsoft 365 Health (100 punktów)
+- **Łączna możliwa liczba = 800 punktów**
  
-W każdej kategorii wyników określamy znaczenie kluczowych wskaźników dla sposobu używania przez Twoją organizację Microsoft 365 w jej kierunku transformacji cyfrowej. Zapewniamy 28-dniowe i 180-dniowe widoki kluczowych działań. Oferujemy również metryki obsługi, które nie są częścią obliczeń wyników, ale są ważne, aby pomóc Ci w zidentyfikowaniu podstawowych statystyk użycia i konfiguracji, które możesz rozwiązać.
+W każdej kategorii wyników kwantyfikujemy kluczowe wskaźniki użycia Microsoft 365 w organizacji w procesie transformacji cyfrowej. Oferujemy 28-dniowe i 180-dniowe widoki kluczowych działań. Udostępniamy również metryki pomocnicze, które nie są częścią obliczania oceny, ale są ważne, aby ułatwić identyfikowanie podstawowych statystyk użycia i konfiguracji, które można rozwiązać.
 
-### <a name="products-included-in-productivity-score"></a>Produkty uwzględnione w ocenach produktywności 
+### <a name="products-included-in-productivity-score"></a>Produkty uwzględnione w współczynniku produktywności 
 
 Wynik produktywności obejmuje dane z Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer i Skype.
 
-Wyniki organizacji są aktualizowane codziennie i odzwierciedlają akcje użytkowników wykonane w ostatnich 28 (w tym bieżącym dniu).
+Wynik organizacji jest aktualizowany codziennie i odzwierciedla akcje użytkowników wykonane w ciągu ostatnich 28 lat (w tym bieżącego dnia).
 
-## <a name="interpreting-your-organizations-productivity-score"></a>Interpretowanie wyników organizacji dotyczącej produktywności 
+## <a name="interpreting-your-organizations-productivity-score"></a>Interpretowanie wskaźnika produktywności organizacji 
 
-Strona główna Wynik produktywności zawiera łączny wynik i historię wyników organizacji oraz podstawową analizę każdej kategorii.
+Na stronie głównej Wynik produktywności przedstawiono łączną historię wyników i wyników organizacji oraz podstawową analizę dla każdej kategorii.
 
-:::image type="content" source="../../media/prodscore-landing.png" alt-text="Strona Wyników produktywności w raportach.":::
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Strona Ocena produktywności w raportach.":::
 
-**Wynik organizacji jest wyświetlany** jako wartość procentowa i w punktach. Możesz zobaczyć punkty w liczniku oraz maksymalną możliwą liczbę punktów w mianowniku.
+**Wynik organizacji** jest wyświetlany jako wartość procentu i w punktach. Punkty można wyświetlić w liczniku i maksymalną możliwą liczbę punktów w mianowniku.
 
-**Peer benchmarks** allow you to compare your organization's score with organization like yours. Peer benchmark for the people experiences categories is calculated as the average of measures within a set of similar organizations. Zestaw organizacji składa się z organizacji z Twojego regionu, które mają podobną liczbę licencjonowanych użytkowników, typy licencji, branżę i prawo Microsoft 365.
+**Testy porównawcze komunikacji równorzędnej** umożliwiają porównywanie wyników organizacji z organizacjami takimi jak Twoja. Punkt odniesienia równorzędny dla kategorii osób doświadczanych jest obliczany jako średnia miar w ramach zestawu podobnych organizacji. Zestaw organizacji składa się z organizacji w Twoim regionie z podobną liczbą licencjonowanych użytkowników, typami licencji, branżą i kadencją z Microsoft 365.
 
 > [!NOTE]
-> Firma Microsoft używa danych wewnętrznych do określenia branży, na która jest mapna organizacja. Dzierżawy w organizacji nadrzędnej są mapowane na tę samą branżę, co organizacja nadrzędna. Organizacje nie mogą wyświetlać ani modyfikować mapowań branży.
+> Firma Microsoft używa danych wewnętrznych do określania branży, na którą jest mapowana organizacja. Dzierżawy w organizacji nadrzędnej są mapowane do tej samej branży co organizacja nadrzędna. Organizacje nie mogą wyświetlać ani modyfikować mapowań branżowych.
 
-Punkt odniesienia do analizy punktów końcowych zawiera cele dotyczące wydajności uruchamiania urządzenia i zalecaną konfigurację oprogramowania opartą na zagregowanych wartościach mediany we wszystkich dzierżawach.
+Test porównawczy komunikacji równorzędnej analizy punktów końcowych obejmuje cele dotyczące wydajności uruchamiania urządzeń i zalecaną konfigurację oprogramowania na podstawie zagregowanych wartości mediany we wszystkich dzierżawach.
 
-W przypadku łączności sieciowej zalecany punkt odniesienia wynosi 80 punktów.
+W przypadku łączności sieciowej zalecany test porównawczy wynosi 80 punktów.
 
-Sekcja **Podział wyników zawiera** zestawienie wyników produktywności z punktami odniesienia według osób i obszarów doświadczenia technologicznego.
+Sekcja **Podział wyników** zawiera podział wskaźnika produktywności z testami porównawczymi według osób i obszarów doświadczenia technologicznego.
 
-Historia wyników pokazuje, jak zmienił się twój wynik w poszczególnych kategoriach w ciągu ostatnich sześciu miesięcy.
+Historia wyników przedstawia sposób zmiany wyniku w każdej kategorii w ciągu ostatnich sześciu miesięcy.
 
-Obszary **Środowisko osób i** **Technologia zawierają** podstawowe informacje o kategoriach w tych obszarach. Możesz wybrać każdą kategorię, aby wyświetlić bardziej szczegółowe informacje.
+Obszary **środowiska osób** i **środowiska technologiczne** zawierają podstawowe szczegółowe informacje dla kategorii w tych obszarach. Możesz wybrać każdą kategorię, aby wyświetlić bardziej szczegółowe informacje.
 
 ## <a name="category-details-pages"></a>Strony szczegółów kategorii
 
-Strona szczegółów każdej kategorii zawiera podstawowe metryki szczegółowej i obsługi technicznej, a także pokrewne badania i działania, które można podjąć, aby wspierać zmiany w organizacji. Badania wspierają ważność i racracyjność podstawowych informacji dla każdej kategorii. Aby uzyskać więcej informacji, [przeczytaj raport Forrester](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb).
+Na każdej stronie szczegółów kategorii przedstawiono podstawową analizę i metryki pomocnicze, a także powiązane badania i akcje, które można podjąć w celu wyprowadzenia zmian w organizacji. Badania potwierdzają znaczenie i uzasadnienie podstawowych szczegółowych informacji dla każdej kategorii. Aby uzyskać więcej informacji, [przeczytaj raport Forrestera](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb).
 
-Strony szczegółów są:
-- [Współpraca nad zawartością — środowisko osób](content-collaboration.md)
-- [Komunikacja — środowisko osób](communication.md)
-- [Spotkania — środowisko osób](meetings.md)
-- [Mobilność — środowisko osób](mobility.md)
-- [Praca zespołowa — środowisko osób](teamwork.md)
-- [Aplikacje Microsoft 365 kondycji — środowisko technologii](apps-health.md)
+Strony szczegółów to:
+- [Współpraca z zawartością — środowiska osób](content-collaboration.md)
+- [Komunikacja — doświadczenia osób](communication.md)
+- [Spotkania — doświadczenia osób](meetings.md)
+- [Mobilność — środowiska osób](mobility.md)
+- [Praca zespołowa — doświadczenia osób](teamwork.md)
+- [Aplikacje Microsoft 365 zdrowia — środowiska technologiczne](apps-health.md)
 - [Analiza punktu końcowego](/mem/analytics/productivity-score)
 
-## <a name="business-continuity-special-report"></a>Raport specjalny zapewnia ciągłość działania
+## <a name="business-resilience-special-report"></a>Raport specjalny dotyczący odporności firmy
 
-Raport ciągłości działania to raport analizy pracy w ograniczonym czasie dostępny dla wszystkich klientów usługi Microsoft 365, aby pomóc im w prowadzenia organizacji w tym trudnym czasie.  
+Raport dotyczący odporności firmy to ograniczony czasowy raport analizy miejsca pracy dostępny dla wszystkich Microsoft 365 klientów, który pomaga im kierować organizacjami w tym trudnym czasie.  
 
 Ten raport pomaga organizacjom zrozumieć: 
 
-- Zmiana na pracę zdalną wpływa na współpracę i komunikację. 
+- Jak przejście na współpracę i komunikację wpływa na pracę zdalną. 
 
-- Wpływ na równowagę między pracą a życiem prywatnym w zależności od dostosowania osób do pracy w domu. 
+- Wpływ na równowagę między życiem zawodowym a prywatnym, gdy ludzie dostosowują się do pracy z domu. 
 
 - Czy spotkania zdalne obsługują efektywne podejmowanie decyzji.
 
-[Dowiedz się więcej o raporcie ciągłości działania firmy](/Workplace-Analytics/tutorials/bcrps)
+[Dowiedz się więcej o raporcie dotyczącym odporności firmy](/Workplace-Analytics/tutorials/bcrps)
 
-[Dowiedz się więcej o aplikacji Microsoft Graph](/graph/)
+[Dowiedz się więcej o usłudze Microsoft Graph](/graph/)
 
 > [!NOTE]
-> Użytkownicy mają również możliwość uzyskania szczegółowych informacji o produktywności z [pulpitu nawigacyjnego do usługi MyAnalytics](/workplace-analytics/myanalytics/use/dashboard-2).
+> Użytkownicy mają również możliwość uzyskania szczegółowych informacji o produktywności z [pulpitu nawigacyjnego MyAnalytics](/workplace-analytics/myanalytics/use/dashboard-2).
 
 
-## <a name="we-want-to-hear-from-you"></a>Chcemy usłyszeć Od Ciebie
+## <a name="we-want-to-hear-from-you"></a>Chcemy usłyszeć od Ciebie
 
-Podziel się swoimi pomysłami na temat wyników produktywności i pomysłami na to, jak je ulepszyć. Skorzystaj z **sekcji Opinii** w obrębie produktu i/lub kontaktuj się z zespołem do zespołu productivity score w prodscorefeedback@microsoft.com.
+Podziel się swoimi przemyśleniami na temat współczynnika produktywności i pomysłów na jego ulepszenie. Skorzystaj z sekcji **Opinie** w produkcie i/lub skontaktuj się z zespołem ds. wyników produktywności w prodscorefeedback@microsoft.com.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Monitorowanie Microsoft 365 za pomocą raportów](../../admin/activity-reports/activity-reports.md) (artykuł)\
-[Włączanie Microsoft 365 użycia](../../admin/usage-analytics/enable-usage-analytics.md) (artykuł)\
-[Omówienie centrum administracyjne platformy Microsoft 365](Omówienie centrum administracyjne platformy Microsoft 365](.. /admin-overview/admin-center-overview.md) (wideo)
+[Monitorowanie działania Microsoft 365 przy użyciu raportów](../../admin/activity-reports/activity-reports.md) (artykuł)\
+[Włączanie analizy użycia Microsoft 365](../../admin/usage-analytics/enable-usage-analytics.md) (artykuł)\
+[Omówienie Centrum administracyjne platformy Microsoft 365](Omówienie Centrum administracyjne platformy Microsoft 365](.. /admin-overview/admin-center-overview.md) (wideo)

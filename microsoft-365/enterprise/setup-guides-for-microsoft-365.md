@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Uzyskaj szczegółowe narzędzia do planowania, migracji i implementowania funkcji w licencjach dzierżawy. Znajdź przewodnik konfigurowania usługi lub aplikacji, którą musisz uruchomić.
-ms.openlocfilehash: 6018a490cf77498b1767e7e269b17937f11ae011
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 61eccec443a939591e563daa5135239bf0e23a74
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097365"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188729"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Przewodniki konfiguracji dla usług Microsoft 365 i Office 365
 
@@ -103,11 +103,11 @@ Microsoft Search pomaga twojej organizacji znaleźć to, czego potrzebuje, aby u
 
 ### <a name="add-or-sync-users-to-microsoft-365"></a>Dodawanie lub synchronizowanie użytkowników do Microsoft 365
 
-[Ten przewodnik](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) pomoże usprawnić proces konfigurowania kont użytkowników w **Microsoft 365**. W zależności od środowiska i potrzeb możesz wybrać opcję indywidualnego dodawania użytkowników, migrowania katalogu lokalnego za pomocą synchronizacji w chmurze usługi Azure AD lub usługi Azure AD Połączenie lub rozwiązywania istniejących problemów z synchronizacją w razie potrzeby.
+[Ten przewodnik](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) pomoże usprawnić proces konfigurowania kont użytkowników w **Microsoft 365**. W zależności od środowiska i potrzeb możesz indywidualnie dodawać użytkowników, migrować katalog lokalny za pomocą Azure AD synchronizacji w chmurze lub Azure AD Połączenie lub rozwiązywać istniejące problemy z synchronizacją w razie potrzeby.
 
-### <a name="azure-ad-setup-guide"></a>Przewodnik konfiguracji usługi Azure AD
+### <a name="azure-ad-setup-guide"></a>przewodnik konfiguracji Azure AD
 
-[Przewodnik konfiguracji usługi Azure AD](https://aka.ms/aadpguidance) zawiera informacje zapewniające, że Organizacja ma silne podstawy zabezpieczeń. W tym przewodniku skonfigurujesz funkcje początkowe, takie jak kontrola dostępu oparta na rolach platformy Azure (Azure RBAC) dla administratorów, Połączenie usługi Azure AD dla katalogu lokalnego i usługa Azure AD Połączenie Health, dzięki czemu można monitorować kondycję tożsamości hybrydowej podczas automatycznej synchronizacji.
+[Przewodnik konfiguracji Azure AD](https://aka.ms/aadpguidance) zawiera informacje zapewniające, że Organizacja ma silne podstawy zabezpieczeń. W tym przewodniku skonfigurujesz funkcje początkowe, takie jak kontrola dostępu oparta na rolach (RBAC) platformy Azure dla administratorów, Azure AD Połączenie dla katalogu lokalnego i Azure AD Połączenie Health, dzięki czemu możesz monitorować kondycję tożsamości hybrydowej podczas zautomatyzowanych synchronizacji.
 
 Zawiera ona również podstawowe informacje dotyczące włączania samoobsługowego resetowania haseł, dostępu warunkowego i zintegrowanego logowania innych firm, w tym opcjonalnej zaawansowanej ochrony tożsamości i automatyzacji aprowizacji użytkowników.
 
@@ -125,7 +125,7 @@ Uaktualnij do alternatywnego podejścia do logowania, które umożliwia użytkow
 
 Skorzystaj z przewodnika [planowania wdrażania bez hasła](https://aka.ms/passwordlesssetup) , aby znaleźć najlepsze metody uwierzytelniania bez hasła do użycia i otrzymać wskazówki dotyczące sposobu ich wdrażania.
 
-### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Integrowanie aplikacji w chmurze innej firmy z usługą Azure AD
+### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Integrowanie aplikacji w chmurze innej firmy z aplikacją Azure AD
 
 [Ten przewodnik](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/azureadappintegration) ułatwia administratorom IT wybieranie i konfigurowanie aplikacji.
 
@@ -181,13 +181,13 @@ Rozwiązania w tym przewodniku pomogą Ci uzyskać wgląd w działania użytkown
 * Dzięki rozwiązaniu do zapewniania zgodności z komunikacją można identyfikować zagrożenia komunikacyjne i działać na ich podstawie w przypadku takich elementów jak przemoc w miejscu pracy, wykorzystywanie informacji poufnych, nękanie, kodeks postępowania i naruszenia zgodności z przepisami.
 * Rozwiązanie do zarządzania ryzykiem wewnętrznym pomaga identyfikować, badać i podejmować działania dotyczące ryzyka kradzieży własności intelektualnej, wycieków poufnych danych, naruszeń zabezpieczeń, wycieków danych i naruszeń poufności.
 
-### <a name="information-protection-setup-guide"></a>Przewodnik konfiguracji ochrony informacji
+### <a name="microsoft-purview-information-protection-setup-guide"></a>Przewodnik konfiguracji Information Protection usługi Microsoft Purview
 
-Zapoznaj się z omówieniem możliwości, które można zastosować do strategii ochrony informacji, aby mieć pewność, że informacje poufne są chronione. Użyj 4-etapowego podejścia do cyklu życia, w którym będzie można odkrywać, klasyfikować, chronić i monitorować informacje poufne. [Poradnik konfiguracji ochrony informacji firmy Microsoft](https://aka.ms/mipsetupguide) udziela wskazówek na temat wykonywania każdego z tych etapów.
+Zapoznaj się z omówieniem możliwości, które można zastosować do strategii ochrony informacji, aby mieć pewność, że informacje poufne są chronione. Użyj 4-etapowego podejścia do cyklu życia, w którym będzie można odkrywać, klasyfikować, chronić i monitorować informacje poufne. [Przewodnik konfiguracji usługi Microsoft Purview Information Protection](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) zawiera wskazówki dotyczące ukończenia każdego z tych etapów.
 
-### <a name="data-lifecycle-management-setup-guide"></a>Przewodnik konfiguracji zarządzania cyklem życia danych
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Przewodnik konfiguracji zarządzania cyklem życia danych usługi Microsoft Purview
 
-[Przewodnik konfiguracji zarządzania informacjami firmy Microsoft](https://aka.ms/migsetupguide) zawiera informacje potrzebne do skonfigurowania strategii ładu organizacji i zarządzania nimi, aby upewnić się, że dane są klasyfikowane i zarządzane zgodnie z określonymi wytycznymi dotyczącymi cyklu życia. W tym przewodniku dowiesz się, jak tworzyć, automatycznie stosować lub publikować etykiety, zasady etykiet i zasady przechowywania, które są stosowane do zawartości i rekordów zgodności wielokrotnego użytku organizacji. Uzyskasz również informacje na temat importowania plików CSV z planem plików dla scenariuszy zbiorczych lub ich ręcznego stosowania do poszczególnych dokumentów.
+[Przewodnik konfiguracji zarządzania cyklem życia danych usługi Microsoft Purview](https://aka.ms/migsetupguide) zawiera informacje potrzebne do skonfigurowania strategii ładu organizacji i zarządzania nią w celu zapewnienia, że dane są klasyfikowane i zarządzane zgodnie z określonymi wytycznymi dotyczącymi cyklu życia. W tym przewodniku dowiesz się, jak tworzyć, automatycznie stosować lub publikować etykiety przechowywania, zasady etykiet przechowywania i zasady przechowywania, które są stosowane do rekordów zawartości i zgodności organizacji. Uzyskasz również informacje na temat importowania plików CSV z planem plików dla scenariuszy zbiorczych lub ich ręcznego stosowania do poszczególnych dokumentów.
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>przewodnik konfiguracji Microsoft Defender for Cloud Apps
 

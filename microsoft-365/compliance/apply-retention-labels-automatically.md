@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Tworzenie zasad przechowywania automatycznego etykietowania w celu automatycznego stosowania etykiet w celu zachowania potrzebnych elementów i usunięcia tego, czego nie potrzebujesz
-ms.openlocfilehash: 2c1ea20f9b663ca8cee59043bbe6399f5bae66f1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1895669c20d06bdae13ed2d25183dff92862d44f
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145278"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188861"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości
 
@@ -279,7 +279,7 @@ Po wybraniu opcji klasyfikatora z możliwością trenowania można wybrać co na
 > [!CAUTION]
 > Wycofywamy wstępnie wytrenowany klasyfikator **języka obraźliwego** , ponieważ generuje on dużą liczbę wyników fałszywie dodatnich. Nie używaj tego klasyfikatora i jeśli obecnie go używasz, zalecamy przeniesienie procesów biznesowych poza ten proces i użycie wstępnie **wytrenowanych** klasyfikatorów targeted harassment, **profanity** i **Threat** .
 
-Aby automatycznie zastosować etykietę przy użyciu tej opcji, SharePoint witryny i skrzynki pocztowe muszą mieć co najmniej 10 MB danych.
+Aby automatycznie zastosować etykietę przy użyciu tej opcji, SharePoint lokacje, a także skrzynki pocztowe, muszą mieć co najmniej 10 MB danych.
 
 Aby uzyskać więcej informacji na temat klasyfikatorów z możliwością trenowania, zobacz [Learn about trainable classifiers (Informacje o klasyfikatorach z możliwością trenowania](classifier-learn-about.md)).
 

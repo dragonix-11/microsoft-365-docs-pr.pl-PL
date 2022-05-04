@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6fb2b8c3e1466c52d707538f46643580c72a6fbf
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 351a403923df8e12d63051e30518b5c254abccb8
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841873"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188817"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Co nowego w ochronie punktu końcowego w usłudze Microsoft Defender
 
@@ -62,6 +62,7 @@ Aby uzyskać więcej informacji na temat Ochrona punktu końcowego w usłudze Mi
 
 ## <a name="april-2022"></a>Kwiecień 2022 r.
 - [Zaktualizowano dołączanie i równoważność funkcji dla Windows Server 2012 R2 i Windows Server 2016)](configure-server-endpoints.md)<br/> Nowy pakiet ujednoliconego rozwiązania jest teraz ogólnie dostępny i ułatwia dołączanie serwerów przez usunięcie zależności i kroki instalacji. Ponadto ten ujednolicony pakiet rozwiązań zawiera wiele nowych ulepszeń funkcji.
+- Integracja z Tunnel. Ochrona punktu końcowego w usłudze Microsoft Defender w systemie iOS można teraz zintegrować z Microsoft Tunnel, rozwiązaniem bramy sieci VPN, które umożliwia bezpieczeństwo i łączność w jednej aplikacji. Ta funkcja była wcześniej dostępna tylko w systemie Android. [Dowiedz się więcej](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="january-2022"></a>Styczeń 2022
 

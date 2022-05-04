@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak działa przechowywanie dla Exchange.
-ms.openlocfilehash: 66b7ad888e62ff84b6a2de49714bbbdf96268312
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: d5c961c733dd757c1f2b8179793b43991e71b4d8
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911429"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188751"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Dowiedz się więcej na temat przechowywania Exchange
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Informacje zawarte w tym artykule [uzupełniają informacje na temat przechowywania](retention.md), ponieważ zawierają informacje specyficzne dla Exchange.  W przypadku innych obciążeń zobacz:
 
@@ -41,6 +43,8 @@ Elementy kalendarza, które mają datę końcową, są obsługiwane w przypadku 
 Kontakty oraz wszystkie zadania i elementy kalendarza, które nie mają daty zakończenia, nie są obsługiwane.
 
 Inne elementy przechowywane w skrzynce pocztowej, takie jak wiadomości Skype i Teams, nie są uwzględniane w zasadach przechowywania ani etykietach dla Exchange. Te elementy mają własne zasady przechowywania.
+
+Skrzynki pocztowe muszą mieć co najmniej 10 MB danych, zanim zostaną zastosowane ustawienia przechowywania, a etykiety przechowywania mogą być do nich publikowane.
 
 ## <a name="how-retention-works-for-exchange"></a>Jak działa przechowywanie dla Exchange
 
@@ -97,7 +101,7 @@ Jeśli ustawienia przechowywania nie mają już zastosowania, ponieważ dane zos
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Jeśli dopiero zaczynasz konfigurować przechowywanie w Microsoft 365, zobacz [Wprowadzenie z zarządzaniem informacjami](get-started-with-information-governance.md).
+Jeśli dopiero zaczynasz konfigurować przechowywanie w Microsoft 365, zobacz [Wprowadzenie z zarządzaniem cyklem życia danych](get-started-with-data-lifecycle-management.md).
 
 Jeśli wszystko jest gotowe do skonfigurowania zasad przechowywania lub etykiety przechowywania dla Exchange, zobacz następujące instrukcje:
 - [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md)

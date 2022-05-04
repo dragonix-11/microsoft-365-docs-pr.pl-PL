@@ -1,5 +1,5 @@
 ---
-title: Ustawianie daty wygaśnięcia zaszyfrowanej wiadomości e-mail przez Zaawansowane szyfrowanie wiadomości usługi Office 365
+title: Ustaw datę wygaśnięcia wiadomości e-mail zaszyfrowanych przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,34 +15,38 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Użyj Zaawansowane szyfrowanie wiadomości usługi Office 365, aby zwiększyć bezpieczeństwo poczty e-mail, ustawiając datę wygaśnięcia w wiadomościach e-mail za pomocą niestandardowego, markowego szablonu.
+description: Zaawansowane szyfrowanie wiadomości usługi Microsoft Purview umożliwia rozszerzenie zabezpieczeń poczty e-mail przez ustawienie daty wygaśnięcia wiadomości e-mail za pośrednictwem niestandardowego szablonu markowego.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1213ecf48ee9bd2e04accdd13aaf3ecd74d3faba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e8689820adc3158ae2a36a4d52ebad0959097b49
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983166"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188399"
 ---
-# <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Ustawianie daty wygaśnięcia zaszyfrowanej wiadomości e-mail przez Zaawansowane szyfrowanie wiadomości usługi Office 365
+# <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Ustaw datę wygaśnięcia wiadomości e-mail zaszyfrowanych przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
 
-Zaawansowane szyfrowanie wiadomości usługi Office 365 jest zawarta w usługach [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5 i Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing) i Office 365 Education A5. Jeśli Twoja organizacja ma subskrypcję, która nie zawiera subskrypcji usługi Zaawansowane szyfrowanie wiadomości usługi Office 365, możesz ją kupić za pomocą dodatku Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing) lub dodatek jednostki SKU usługi Office 365 Advanced Compliance dla produktów Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing) lub Office 365 jednostki SKU.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Funkcji wygasania wiadomości e-mail wysyłanych przez użytkowników do adresatów zewnętrznych, którzy korzystają z portalu OME w celu uzyskiwania dostępu do zaszyfrowanych wiadomości e-mail. Wymuszasz, aby adresaci używali portalu OME do wyświetlania zaszyfrowanych wiadomości e-mail wysłanych przez Twoją organizację i odpowiadania na nie przy użyciu niestandardowego, markowego szablonu, który określa datę wygaśnięcia w Windows PowerShell.
+Zaawansowane szyfrowanie komunikatów w usłudze Microsoft Purview jest zawarte w [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (cennik pracowników organizacji non-profit), Office 365 Enterprise E5 (cennik personelu organizacji non-profit) i Office 365 Education A5. dodatek Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub dodatek Office 365 Advanced Compliance SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub jednostki SKU Office 365.
 
-Jeśli jesteś Office 365 globalnym, gdy zastosujemy markę firmy w celu dostosowania wyglądu wiadomości e-mail organizacji, możesz także określić datę wygaśnięcia tych wiadomości e-mail. Dzięki Zaawansowane szyfrowanie wiadomości usługi Office 365 możesz utworzyć wiele szablonów zaszyfrowanych wiadomości e-mail pochodzących z Twojej organizacji. Za pomocą szablonu możesz określić, jak długo adresaci mają dostęp do poczty wysyłanej przez użytkowników.
+Jeśli Twoja organizacja ma subskrypcję, która nie obejmuje zaawansowanego szyfrowania komunikatów w usłudze Microsoft Purview, możesz ją kupić za pomocą dodatku Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub dodatek Office 365 Advanced Compliance jednostki SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik pracowników organizacji non-profit) lub jednostek SKU Office 365.
 
-Gdy użytkownik końcowy otrzyma wiadomość e-mail z ustawioną datą wygaśnięcia, w wiadomości e-mail zawijaowej będzie ona widzieć datę wygaśnięcia. Jeśli użytkownik spróbuje otworzyć wygasłą pocztę, w portalu OME zostanie wyświetlony komunikat o błędzie.
+Możesz użyć wygaśnięcia wiadomości w wiadomościach e-mail wysyłanych przez użytkowników do adresatów zewnętrznych, którzy korzystają z portalu OME, aby uzyskać dostęp do zaszyfrowanych wiadomości e-mail. Wymuszasz, aby adresaci używali portalu OME do wyświetlania zaszyfrowanych wiadomości e-mail wysyłanych przez organizację i odpowiadania na nie przy użyciu niestandardowego szablonu oznaczonego marką, który określa datę wygaśnięcia w Windows PowerShell.
+
+Jako administrator globalny Office 365, gdy zastosujesz firmową markę w celu dostosowania wyglądu wiadomości e-mail organizacji, możesz również określić wygaśnięcie tych wiadomości e-mail. Zaawansowane szyfrowanie komunikatów w usłudze Microsoft Purview umożliwia tworzenie wielu szablonów dla zaszyfrowanych wiadomości e-mail pochodzących z Organizacji. Za pomocą szablonu możesz kontrolować, jak długo adresaci mają dostęp do poczty wysyłanej przez użytkowników.
+
+Gdy użytkownik końcowy otrzyma wiadomość e-mail z ustawioną datą wygaśnięcia, użytkownik zobaczy datę wygaśnięcia w wiadomości e-mail otoki. Jeśli użytkownik spróbuje otworzyć wygasłą wiadomość e-mail, w portalu OME zostanie wyświetlony błąd.
 
 Daty wygaśnięcia wiadomości e-mail można ustawić tylko dla adresatów zewnętrznych.
 
-Przy Zaawansowane szyfrowanie wiadomości usługi Office 365, gdy tylko zastosujemy znakowanie niestandardowe, etykieta Office 365 do wiadomości e-mail, która pasuje do reguły przepływu poczty, do której stosujesz szablon. Ponadto z wygasania można korzystać tylko w przypadku użycia niestandardowych  brandingów.
+Dzięki zaawansowanemu szyfrowaniu komunikatów usługi Microsoft Purview za każdym razem, gdy stosujesz znakowanie niestandardowe, Office 365 stosuje otokę do wiadomości e-mail, która pasuje do reguły przepływu poczty, do której stosujesz szablon. Ponadto możesz użyć wygaśnięcia tylko wtedy, gdy używasz znakowania niestandardowego.
 
-## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Tworzenie niestandardowego szablonu  brandingu w celu wymusania wygaśnięcia poczty przy użyciu programu PowerShell
+## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Tworzenie niestandardowego szablonu znakowania w celu wymuszenia wygaśnięcia poczty przy użyciu programu PowerShell
 
-1. [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu konta z uprawnieniami administratora globalnego w Twojej organizacji.
+1. [Połączenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu konta z uprawnieniami administratora globalnego w organizacji.
 
-2. Uruchom New-OMEConfiguration cmdlet.
+2. Uruchom polecenie cmdlet New-OMEConfiguration.
 
     ```powershell
     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
@@ -52,12 +56,12 @@ Gdzie:
 
 - `Identity` to nazwa szablonu niestandardowego.
 
-- `ExternalMailExpiryInDays` określa liczbę dni, przez które adresaci mogą przechowywać pocztę przed jej wygaśnięciem. Możesz użyć dowolnej wartości od 1 do 730 dni.
+- `ExternalMailExpiryInDays` określa liczbę dni, przez które adresaci mogą przechowywać pocztę przed jej wygaśnięciem. Można użyć dowolnej wartości z zakresu od 1 do 730 dni.
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>Więcej informacji na temat Zaawansowane szyfrowanie wiadomości usługi Office 365
+## <a name="more-information-about-microsoft-purview-advanced-message-encryption"></a>Więcej informacji na temat zaawansowanego szyfrowania komunikatów w usłudze Microsoft Purview
 
-- [Zaawansowane szyfrowanie wiadomości usługi Office 365](ome-advanced-message-encryption.md)
+- [Zaawansowane szyfrowanie komunikatów](ome-advanced-message-encryption.md)
 
-- [Odwołaj wiadomości e-mail zaszyfrowane za pomocą Zaawansowane szyfrowanie wiadomości usługi Office 365](revoke-ome-encrypted-mail.md)
+- [Odwołaj wiadomości e-mail zaszyfrowane przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview](revoke-ome-encrypted-mail.md)
 
-- [Opis usługi zgodności i zasad dotyczących wiadomości](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [Opis zasad komunikatów i usługi zgodności](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej na temat wersji próbnej rozwiązań Microsoft Purview i sposobu tworzenia konta.
-ms.openlocfilehash: ed7848a12483062c2873f4735ecb2188cad373a1
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 653c80e7c8b412ac1d9c14a021519ca80baab6e9
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023684"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188839"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Informacje o wersji próbnej rozwiązań Microsoft Purview
 
@@ -31,7 +31,7 @@ Wersja próbna rozwiązań Microsoft Purview to najprostszy sposób wypróbowani
 
 ## <a name="terms-and-conditions"></a>Warunki i postanowienia
 
-Zapoznaj się z [warunkami i postanowieniami](terms-conditions.md) dotyczącymi wersji próbnych usługi Microsoft Purview.
+Zapoznaj się z [warunkami dotyczącymi](/legal/microsoft-365/microsoft-365-trial) wersji próbnych Microsoft 365.
 
 ## <a name="eligibility"></a>Kwalifikowalności
 

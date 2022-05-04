@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 51f9c373a68e34ffafa5c3763b8efe77fa2c6146
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a27cb75a9bace821e20a914bc3c63b571079f9db
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098741"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188421"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Usługa ochrony punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych Stanów Zjednoczonych
 
@@ -103,8 +103,8 @@ Windows 10, wersja 1909 (z [KB4586819](https://support.microsoft.com/help/458681
 Windows 10, wersja 1903 (z [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows 10, wersja 1809 (z [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows 10, wersja 1803 (z [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
-Windows 10, wersja 1709|![L.p.](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Tak](images/svg/check-yes.svg) z [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Uwaga: [Przestarzałe](/lifecycle/announcements/revised-end-of-service-windows-10-1709), uaktualnij|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana
-Windows 10, wersja 1703 lub starsza|![L.p.](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana
+Windows 10, wersja 1709|![Nie.](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Tak](images/svg/check-yes.svg) z [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Uwaga: [Przestarzałe](/lifecycle/announcements/revised-end-of-service-windows-10-1709), uaktualnij|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana
+Windows 10, wersja 1703 lub starsza|![Nie.](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana
 Windows Server 2022|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2019 (z [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2016 (nowoczesne) <sup>2</sup>|![Tak.](images/svg/check-yes.svg) <br /> Publiczna wersja zapoznawcza|![Tak](images/svg/check-yes.svg) <br /> Publiczna wersja zapoznawcza|![Tak](images/svg/check-yes.svg) <br /> Publiczna wersja zapoznawcza
@@ -211,6 +211,6 @@ Są to funkcje i znane luki w usłudze [Mobile Threat Defense (Ochrona punktu ko
 |Dostęp warunkowy/uruchamianie warunkowe|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Obsługa zarządzania aplikacjami mobilnymi|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Mechanizmy kontroli prywatności|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
-|Zarządzanie zagrożeniami i lukami w zabezpieczeniach (TVM)|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|
+|Zarządzanie zagrożeniami i lukami w zabezpieczeniach (TVM)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
   
 

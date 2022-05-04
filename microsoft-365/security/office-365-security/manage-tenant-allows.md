@@ -16,12 +16,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować zezwolenia na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af5f8ae1d3c172f4bf77bdca14625fe2440769ef
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: f1dffb7fd6b13fc1999e51666717dc464e694d0c
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144764"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188146"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Dodawanie zezwoleń na liście dozwolonych/zablokowanych dzierżaw
 
@@ -59,9 +59,9 @@ Zezwalaj nadawcom (lub domenom) na stronie **Przesyłanie** w Microsoft 365 Defe
 
 > [!NOTE]
 >
-> - Na podstawie filtrów, które określają, że poczta jest złośliwa, podczas przepływu poczty są dodawane zezwala. Jeśli na przykład filtry wykryją, że zarówno nadawca, jak i adres URL są nieprawidłowe, dla każdego z nich zostanie dodane zezwolenie. 
+> - Podczas przepływu poczty, na podstawie którego filtry określały, że poczta jest złośliwa, są dodawane zezwala. Na przykład nadawca i adres URL są określane jako nieprawidłowe. Dla każdego z nich zostanie dodane zezwolenie.
 > - Gdy ta jednostka (nadawca, domena, adres URL, plik) zostanie ponownie napotkana, wszystkie filtry skojarzone z tą jednostką zostaną pominięte.
-> - W przypadku wiadomości e-mail (zawierającej tę jednostkę) podczas przepływu poczty, jeśli pozostałe filtry uznają wiadomość e-mail za czystą, wiadomość e-mail zostanie dostarczona. Na przykład zezwolenie nadawcy (gdy uwierzytelnianie przejdzie) pomija wszystkie werdykty z wyjątkiem złośliwego oprogramowania i wyłudzania informacji o wysokim poziomie zaufania skojarzonego z załącznikiem lub adresem URL.
+> - Jeśli podczas przepływu poczty pozostałe filtry uznają wiadomość e-mail zawierającą tę jednostkę za czystą, wiadomość e-mail zostanie dostarczona. Na przykład zezwolenie nadawcy (gdy uwierzytelnianie przejdzie) pomija wszystkie werdykty z wyjątkiem złośliwego oprogramowania i wyłudzania informacji o wysokim poziomie zaufania skojarzonego z załącznikiem lub adresem URL.
 
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Dodawanie adresu URL umożliwia korzystanie z portalu Przesyłania
 
@@ -112,8 +112,7 @@ Zezwalaj na pliki na stronie **Przesyłanie** w Microsoft 365 Defender.
 
 > [!NOTE]
 >
-> - Po ponownym napotkaniu pliku nie jest on wysyłany do celów detonacji ani kontroli reputacji, a wszystkie inne filtry oparte na plikach są pomijane.
-> - Dlatego w przypadku wiadomości e-mail (zawierającej ten plik) podczas przepływu poczty, jeśli pozostałe filtry uznają wiadomość e-mail za czystą, wiadomość e-mail zostanie dostarczona. 
+> Po ponownym napotkaniu pliku nie jest on wysyłany do celów detonacji lub kontroli reputacji, a wszystkie inne filtry oparte na plikach są pomijane. Jeśli podczas przepływu poczty pozostałe filtry znajdą wiadomość e-mail zawierającą plik do oczyszczenia, wiadomość e-mail zostanie dostarczona.
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>Tworzenie sfałszowanego nadawcy zezwala na wpisy przy użyciu Microsoft 365 Defender
 

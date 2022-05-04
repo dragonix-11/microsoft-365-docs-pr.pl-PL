@@ -1,8 +1,8 @@
 ---
-title: Program Microsoft Defender dla punktu końcowego — obrona przed zagrożeniami na urządzeniach przenośnych
+title: Ochrona punktu końcowego w usłudze Microsoft Defender — Mobile Threat Defense
 ms.reviewer: ''
-description: Omówienie ochrony przed zagrożeniami na urządzeniach przenośnych w programie Microsoft Defender dla punktu końcowego
-keywords: mobile, defender, Microsoft Defender for Endpoint, ios, mtd, android, security
+description: Omówienie usługi Mobile Threat Defense w Ochrona punktu końcowego w usłudze Microsoft Defender
+keywords: mobile, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, ios, mtd, android, security
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,49 +17,49 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07cd42d1ab1c6b945525b1e9ed4b463ee76376e1
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 83da2034a04da85849383700204174110ceffa57
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468938"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188531"
 ---
-# <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Program Microsoft Defender dla punktu końcowego — obrona przed zagrożeniami na urządzeniach przenośnych
+# <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Ochrona punktu końcowego w usłudze Microsoft Defender — Mobile Threat Defense
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Program Microsoft Defender for Endpoint w systemach Android i iOS to nasze rozwiązanie do ochrony przed **zagrożeniami mobilnymi (MTD).** Zazwyczaj firmy aktywnie chronią komputery przed luki w zabezpieczeniach i atakami, podczas gdy urządzenia przenośne często są niemonitorowane i niechronione. Platformy mobilne, które mają wbudowaną ochronę, taką jak izolacji aplikacji i magazyny aplikacji dla klientów stacjonarnych, są narażona na ataki oparte na sieci Web lub na innych zaawansowanych atakach. Ponieważ więcej pracowników korzysta z urządzeń do pracy i uzyskiwania dostępu do informacji poufnych, konieczne jest wdrożenie przez firmy rozwiązania MTD w celu ochrony urządzeń i zasobów przed coraz bardziej zaawansowanymi atakami na urządzenia przenośne.
+Ochrona punktu końcowego w usłudze Microsoft Defender w systemach Android i iOS to nasze **rozwiązanie do ochrony przed zagrożeniami mobilnymi (MTD).** Zazwyczaj firmy aktywnie chronią komputery przed lukami w zabezpieczeniach i atakami, podczas gdy urządzenia przenośne często nie sąmonitorowane i niechronione. W przypadku, gdy platformy mobilne mają wbudowaną ochronę, taką jak izolacja aplikacji i sprawdzone sklepy z aplikacjami konsumenckimi, platformy te pozostają narażone na ataki internetowe lub inne zaawansowane ataki. Ponieważ coraz więcej pracowników korzysta z urządzeń do pracy i uzyskuje dostęp do poufnych informacji, konieczne jest, aby firmy wdrażały rozwiązanie MTD, aby chronić urządzenia i zasoby przed coraz bardziej zaawansowanymi atakami na urządzenia przenośne.
 
-## <a name="key-capabilities"></a>Najważniejsze funkcje
+## <a name="key-capabilities"></a>Kluczowe możliwości
 
-Program Microsoft Defender for Endpoint dla systemów Android i iOS oferuje poniższe kluczowe funkcje. Aby uzyskać informacje o najnowszych funkcjach i zaletach, przeczytaj [nasze ogłoszenia](https://aka.ms/mdeblog).
+Ochrona punktu końcowego w usłudze Microsoft Defender w systemach Android i iOS zapewnia poniższe kluczowe możliwości. Aby uzyskać informacje o najnowszych funkcjach i [korzyściach](https://aka.ms/mdeblog), przeczytaj nasze ogłoszenia.
 
 <br>
 
-|Funkcja|Opis|
+|Możliwości|Opis|
 |---|---|
-|Ochrona sieci Web|Ochrona przed wyłudzaniem informacji, blokowanie niebezpiecznych połączeń sieciowych i obsługa wskaźników niestandardowych.|
-|Ochrona przed złośliwym oprogramowaniem (tylko system Android)|Skanowanie w celu skanowania w celu wymiany złośliwych aplikacji.|
-|Detection (tylko system iOS)|Wykrywanie urządzeń o jailbroken.|
-|Zarządzanie zagrożeniami i lukami (TVM) |Ocena luk w zabezpieczeniach podłączonych urządzeń przenośnych. Odwiedź tę [stronę,](next-gen-threat-and-vuln-mgt.md) aby dowiedzieć się więcej o tym, Zarządzanie zagrożeniami i lukami programie Microsoft Defender for Endpoint. *W systemie iOS są obsługiwane tylko luki w zabezpieczeniach systemu operacyjnego.*|
+|Ochrona w Sieci Web|Ochrona przed wyłudzaniem informacji, blokowanie niebezpiecznych połączeń sieciowych i obsługa niestandardowych wskaźników.|
+|Ochrona przed złośliwym oprogramowaniem (tylko dla systemu Android)|Skanowanie w poszukiwaniu złośliwych aplikacji.|
+|Wykrywanie jailbreaka (tylko system iOS)|Wykrywanie urządzeń ze zdjętymi zabezpieczeniami systemu.|
+|Zarządzanie zagrożeniami i lukami w zabezpieczeniach (TVM) |Ocena luk w zabezpieczeniach dołączonych urządzeń przenośnych. Odwiedź tę [stronę](next-gen-threat-and-vuln-mgt.md), aby dowiedzieć się więcej o Zarządzanie zagrożeniami i lukami w Ochrona punktu końcowego w usłudze Microsoft Defender. *Należy pamiętać, że w systemie iOS tylko luki w zabezpieczeniach systemu operacyjnego są obsługiwane w tej wersji zapoznawczej.*|
 |Ujednolicone alerty|Alerty ze wszystkich platform w ujednoliconej konsoli zabezpieczeń M365|
-|Dostęp warunkowy, Uruchamianie warunkowe|Blokuje to ryzykowne urządzenia w celu uzyskiwania dostępu do zasobów firmy. Do zasad ochrony aplikacji (MAM) można również dodawać sygnały ryzyka związane z programem Defender for Endpoint|
-|Mechanizmy kontroli prywatności. Na podglądzie (patrz uwaga poniżej)|Skonfiguruj prywatność w raportach o zagrożeniach, kontrolując dane wysyłane przez usługę Microsoft Defender for Endpoint. *Pamiętaj, że mechanizmy kontroli prywatności są obecnie dostępne tylko dla zarejestrowanych urządzeń. Kontrolki dla nie zarejestrowanych urządzeń zostaną dodane później*|
-|Integracja z Microsoft Tunnel|Może zintegrować Microsoft Tunnel z bramą VPN, aby zapewnić bezpieczeństwo i łączność w jednej aplikacji. Obecnie dostępne tylko w systemie Android|
+|Dostęp warunkowy, uruchamianie warunkowe|Blokowanie uzyskiwania dostępu do zasobów firmowych przez ryzykowne urządzenia. Sygnały o ryzyku usługi Defender for Endpoint można również dodać do zasad ochrony aplikacji (MAM)|
+|Mechanizmy kontroli prywatności. W wersji zapoznawczej (patrz uwaga poniżej)|Skonfiguruj prywatność w raportach o zagrożeniach, kontrolując dane wysyłane przez Ochrona punktu końcowego w usłudze Microsoft Defender. *Należy pamiętać, że mechanizmy kontroli prywatności są obecnie dostępne tylko dla zarejestrowanych urządzeń. Kontrolki dla niezarejestrowanych urządzeń zostaną dodane później*|
+|Integracja z Microsoft Tunnel|Można zintegrować z Microsoft Tunnel, rozwiązaniem bramy sieci VPN w celu włączenia zabezpieczeń i łączności w jednej aplikacji. Dostępne w systemie Android i jest teraz ogólnie dostępne również w systemie iOS.|
 
-Wszystkie te funkcje są dostępne dla posiadaczy licencji programu Microsoft Defender dla punktów końcowych. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące licencjonowania](minimum-requirements.md#licensing-requirements).
+Wszystkie te możliwości są dostępne dla Ochrona punktu końcowego w usłudze Microsoft Defender posiadaczy licencji. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące licencjonowania](minimum-requirements.md#licensing-requirements).
 
 
 ## <a name="overview-and-deploy"></a>Omówienie i wdrażanie
 
-Wdrażanie programu Microsoft Defender dla punktu końcowego na urządzeniach przenośnych można wykonać za pośrednictwem Microsoft Endpoint Manager (MEM). Obejrzyj ten klip wideo, aby szybko oomów możliwości i wdrożenie technologii MTD:
+Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach przenośnych można wykonać za pośrednictwem Microsoft Endpoint Manager (MEM). Obejrzyj to wideo, aby zapoznać się z krótkim omówieniem możliwości i wdrożenia usługi MTD:
 
 <br/>
 
@@ -67,65 +67,65 @@ Wdrażanie programu Microsoft Defender dla punktu końcowego na urządzeniach pr
 
 ### <a name="deploy"></a>Wdrażanie
 
-W poniższej tabeli podsumowano sposób wdrażania programu Microsoft Defender dla punktu końcowego w systemach Android i iOS. Aby uzyskać szczegółową dokumentację, zobacz 
-- [Omówienie programu Microsoft Defender dla punktu końcowego w systemie Android](microsoft-defender-endpoint-android.md) oraz
-- [Omówienie programu Microsoft Defender dla punktu końcowego w systemie iOS](microsoft-defender-endpoint-ios.md)
+Poniższa tabela zawiera podsumowanie sposobu wdrażania Ochrona punktu końcowego w usłudze Microsoft Defender w systemach Android i iOS. Aby uzyskać szczegółową dokumentację, zobacz 
+- [Omówienie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android](microsoft-defender-endpoint-android.md) i
+- [Omówienie usługi ochrony punktu końcowego w usłudze Microsoft Defender w systemie iOS](microsoft-defender-endpoint-ios.md)
 
 **Android**
 
 |Typ rejestracji     |Szczegóły      |
 |--------------------|-------------|
-|System Android Enterprise z ujednoliconą Endpoint Manager Intune (Microsoft Endpoint Manager)|[Wdrażanie na zarejestrowanych Enterprise Android](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|Administrator urządzenia z ujednoliconą usługą Intune Endpoint Manager (Microsoft Endpoint Manager)|[Wdrażanie na urządzeniach zarejestrowanych przez administratora urządzeń](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
-|Nieza zarządzanie urządzeniami BYOD OR zarządzanymi przez innych ujednoliconych menedżerów punktów końcowych/ Zasady ochrony aplikacji instalatora (MAM)|[Konfigurowanie sygnałów ryzyka usługi Defender w zasadach ochrony aplikacji (MAM)](android-configure-mam.md)|
+|Android Enterprise z Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Wdrażanie na urządzeniach z systemem Android Enterprise zarejestrowanych](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
+|Administrator urządzeń z Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Wdrażanie na urządzeniach zarejestrowanych przez administratora urządzeń](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|Niezarządzane urządzenia BYOD LUB zarządzane przez innych menedżerów ujednoliconych punktów końcowych / Konfigurowanie zasad ochrony aplikacji (MAM)|[Konfigurowanie sygnałów ryzyka usługi Defender w zasadach ochrony aplikacji (MAM)](android-configure-mam.md)|
 
 **iOS**
 
 |Typ rejestracji     |Szczegóły      |
 |--------------------|-------------|
-|Urządzenia nadzorowane przy użyciu ujednoliconej Endpoint Manager Intune (Microsoft Endpoint Manager)|1. [Wdrażanie jako aplikacji ze sklepu iOS](ios-install.md)<br/>2. [Konfigurowanie ochrony sieci Web bez połączenia VPN pod nadzorem urządzeń z systemem iOS](ios-install.md#complete-deployment-for-supervised-devices)|
-|Niesupervised (BYOD) devices enrolled with Intune UEM (Microsoft Endpoint Manager)|[Wdrażanie jako aplikacji ze sklepu iOS](ios-install.md)|
-|Nieza zarządzanie urządzeniami BYOD LUB zarządzanymi przez inne uems/ zasady ochrony aplikacji instalatora (MAM)|[Konfigurowanie sygnałów ryzyka usługi Defender w zasadach ochrony aplikacji (MAM)](ios-install-unmanaged.md)|
+|Nadzorowane urządzenia z Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|1. [Wdrażanie aplikacji ze sklepu dla systemu iOS](ios-install.md)<br/>2. [Konfigurowanie ochrony sieci Web bez sieci VPN dla nadzorowanych urządzeń z systemem iOS](ios-install.md#complete-deployment-for-supervised-devices)|
+|Urządzenia nienadzorowane (BYOD) zarejestrowane w Intune UEM (Microsoft Endpoint Manager)|[Wdrażanie jako aplikacja ze sklepu dla systemu iOS](ios-install.md)|
+|Niezarządzane urządzenia BYOD LUB zarządzane przez inne moduły UEM / Konfigurowanie zasad ochrony aplikacji (MAM)|[Konfigurowanie sygnałów ryzyka usługi Defender w zasadach ochrony aplikacji (MAM)](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>Dołączanie użytkowników końcowych
 
-- Konfigurowanie tablicy zerowej dotyku dla zarejestrowanych urządzeń z systemem iOS: Administratorzy mogą skonfigurować instalację z zerowej obsługi dotykowej w celu dyskretnego wnosze usługi Microsoft Defender dla punktu końcowego na zarejestrowanych urządzeniach z systemem [iOS](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) bez konieczności otwierania aplikacji przez użytkownika. 
+- [Konfigurowanie dołączania bezobsługowego dla zarejestrowanych urządzeń z systemem iOS](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint): administratorzy mogą skonfigurować instalację bezobsługową do dyskretnego dołączania Ochrona punktu końcowego w usłudze Microsoft Defender na zarejestrowanych urządzeniach z systemem iOS bez konieczności otwierania aplikacji przez użytkownika. 
 
-- [Konfigurowanie dostępu warunkowego](android-configure.md#conditional-access-with-defender-for-endpoint-on-android) w celu wymuszania dołączania użytkowników: Można to zastosować, aby zapewnić użytkownikom końcowym dołączanie do aplikacji Microsoft Defender for Endpoint po wdrożeniu. Obejrzyj ten klip wideo, aby szybko obejrzeć pokaz konfigurowania dostępu warunkowego za pomocą programu Defender do sygnalizowania ryzyka związanego z punktem końcowym. 
+- [Skonfiguruj dostęp warunkowy, aby wymusić dołączanie użytkowników](android-configure.md#conditional-access-with-defender-for-endpoint-on-android): można to zastosować w celu zapewnienia, że użytkownicy końcowi dołączą do aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender po wdrożeniu. Obejrzyj ten film wideo, aby zapoznać się z krótkim pokazem konfigurowania dostępu warunkowego przy użyciu sygnałów ryzyka usługi Defender for Endpoint. 
 
   <br/>
 
   > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMwR1]
 
-### <a name="simplify-onboarding"></a>Upraszczanie dołączania
+### <a name="simplify-onboarding"></a>Uproszczenie dołączania
 
-- [iOS — Zero-Touch Onboard](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)
-- [System Android Enterprise — konfiguracja zawsze w sieci VPN](android-intune.md#auto-setup-of-always-on-vpn).
-- [iOS — automatyczna konfiguracja profilu VPN](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
+- [iOS — dołączanie Zero-Touch](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)
+- [Android Enterprise — konfigurowanie zawsze włączonej sieci VPN](android-intune.md#auto-setup-of-always-on-vpn).
+- [iOS — automatyczna konfiguracja profilu sieci VPN](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
 
 ## <a name="pilot-evaluation"></a>Ocena pilotażowa
 
-Oceniając obronę przed zagrożeniami na urządzeniach przenośnych za pomocą programu Microsoft Defender dla punktu końcowego, możesz przed przystąpieniem do wdrażania usługi na większym zestawie urządzeń sprawdzić, czy są spełnione określone kryteria. Możesz zdefiniować kryteria wyjścia i upewnić się, że są one odpowiednie przed rozpoczęciem szerokiego wdrażania.
+Podczas oceny ochrony przed zagrożeniami mobilnymi za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender można sprawdzić, czy zostały spełnione określone kryteria przed kontynuowaniem wdrażania usługi na większych urządzeniach. Możesz zdefiniować kryteria zakończenia i upewnić się, że są one spełnione przed szerokim wdrożeniem.
 
-Pomaga to ograniczyć potencjalne problemy, które mogą się pojawić podczas świadczenia usługi. Oto kilka testów i kryteriów wyjścia, które mogą okazać się pomocne:
+Pomaga to zmniejszyć potencjalne problemy, które mogą wystąpić podczas wdrażania usługi. Oto niektóre testy i kryteria zakończenia, które mogą pomóc:
 
-- Urządzenia są wyświetlane na liście zasobów w spisie urządzeń: Po pomyślnym wkładzie programu Defender for Endpoint na urządzeniu przenośnym sprawdź, czy urządzenie jest wymienione w spisie urządzeń w [konsoli zabezpieczeń](https://security.microsoft.com).
+- Urządzenia są wyświetlane na liście spisu urządzeń: po pomyślnym dołączeniu usługi Defender for Endpoint na urządzeniu przenośnym sprawdź, czy urządzenie znajduje się na liście Spis urządzeń w [konsoli zabezpieczeń](https://security.microsoft.com).
 
-- Uruchom test wykrywania złośliwego oprogramowania na urządzeniu z systemem Android: zainstaluj dowolną aplikację testowa wirusów ze sklepu Google Play i sprawdź, czy jest wykrywana przez program Microsoft Defender for Endpoint. Oto przykładowa aplikacja, która może zostać użyta do tego testu: [Test wirusa](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). Pamiętaj, że na Enterprise Android z profilem służbowym jest obsługiwany tylko profil służbowy.
+- Uruchom test wykrywania złośliwego oprogramowania na urządzeniu z systemem Android: zainstaluj dowolną testową aplikację antywirusową ze sklepu Google Play i sprawdź, czy zostanie wykryta przez Ochrona punktu końcowego w usłudze Microsoft Defender. Oto przykładowa aplikacja, która może być używana do tego testu: [test wirusa](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). Należy pamiętać, że w systemie Android Enterprise z profilem służbowym obsługiwany jest tylko profil służbowy.
 
-- Uruchom test wyłudzania informacji: Przejdź do tej https://smartscreentestratings2.net usługi i sprawdź, czy jest blokowana przez usługę Microsoft Defender for Endpoint. Pamiętaj, że na Enterprise Android z profilem służbowym jest obsługiwany tylko profil służbowy.
+- Uruchom test wyłudzania informacji: przejdź do https://smartscreentestratings2.net strony i sprawdź, czy zostanie on zablokowany przez Ochrona punktu końcowego w usłudze Microsoft Defender. Należy pamiętać, że w systemie Android Enterprise z profilem służbowym obsługiwany jest tylko profil służbowy.
 
-- Alerty są wyświetlane na pulpicie nawigacyjnym. Sprawdź, czy na konsoli zabezpieczeń są wyświetlane alerty dotyczące powyższych [testów wykrywania](https://security.microsoft.com).
+- Alerty są wyświetlane na pulpicie nawigacyjnym: sprawdź, czy alerty dla powyższych testów wykrywania są wyświetlane w [konsoli zabezpieczeń](https://security.microsoft.com).
 
-## <a name="configure"></a>Konfigurowanie
+## <a name="configure"></a>Konfiguruj
 
 - [Konfigurowanie funkcji systemu Android](android-configure.md)
-- [Konfigurowanie funkcji systemu iOS](ios-configure-features.md)
-- [Konfigurowanie ochrony sieci Web bez połączenia VPN pod nadzorowane urządzenia z systemem iOS](ios-install.md#complete-deployment-for-supervised-devices)
+- [Skonfiguruj funkcje systemu iOS](ios-configure-features.md)
+- [Konfigurowanie usługi Web Protection bez sieci VPN dla nadzorowanych urządzeń z systemem iOS](ios-install.md#complete-deployment-for-supervised-devices)
 
 ## <a name="resources"></a>Zasoby
 
-- [Program Microsoft Defender for Endpoint w systemie Android](microsoft-defender-endpoint-android.md)
-- [Program Microsoft Defender for Endpoint w systemie iOS](microsoft-defender-endpoint-ios.md)
-- Bądź na bieżąco z informacjami o nadchodzących wersjach, czytając [nasze ogłoszenia](https://aka.ms/mdeblog).
+- [Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android](microsoft-defender-endpoint-android.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender w systemie iOS](microsoft-defender-endpoint-ios.md)
+- Bądź na bieżąco z nadchodzącymi wydaniami, czytając nasze [ogłoszenia](https://aka.ms/mdeblog).
 

@@ -9,27 +9,31 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 03/04/2022
+ms.date: 05/02/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Jako administrator i jako nadawca wiadomości możesz odwołać niektóre wiadomości e-mail, które zostały zaszyfrowane za pomocą Zaawansowane szyfrowanie wiadomości usługi Office 365.
-ms.openlocfilehash: 313cbe990e322285fc81465329fa5e19b52e2701
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Jako administrator i jako nadawca wiadomości możesz odwołać niektóre wiadomości e-mail, które zostały zaszyfrowane za pomocą zaawansowanego szyfrowania wiadomości usługi Microsoft Purview.
+ms.openlocfilehash: 79d09c13755c0c73e4d68598e83ac41344b9281a
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759396"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187948"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Odwoływanie wiadomości e-mail zaszyfrowanych za pomocą zaawansowanego szyfrowania wiadomości
 
-Odwołanie wiadomości e-mail jest oferowane w ramach Zaawansowane szyfrowanie wiadomości usługi Office 365. Zaawansowane szyfrowanie wiadomości usługi Office 365 jest uwzględniona w [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (cennik personelu organizacji non-profit), Office 365 Enterprise E5 (cennik personelu organizacji non-profit) i Office 365 Education A5. Jeśli Twoja organizacja ma subskrypcję, która nie zawiera Zaawansowane szyfrowanie wiadomości usługi Office 365, możesz ją kupić za pomocą dodatku Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub dodatek jednostki SKU Office 365 Advanced Compliance dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub jednostek SKU Office 365.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Odwołanie wiadomości e-mail jest oferowane w ramach zaawansowanego szyfrowania komunikatów usługi Microsoft Purview. Zaawansowane szyfrowanie komunikatów w usłudze Microsoft Purview jest zawarte w [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (cennik pracowników organizacji non-profit), Office 365 Enterprise E5 (cennik personelu organizacji non-profit) i Office 365 Education A5. Aby użyć funkcji odwołania i wygaśnięcia zaawansowanego szyfrowania komunikatów, włącz opcję **szyfrowania Premium w Office 365** w licencji E5.
+
+Jeśli Twoja organizacja ma subskrypcję, która nie obejmuje zaawansowanego szyfrowania komunikatów w usłudze Microsoft Purview, możesz ją kupić za pomocą dodatku Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub dodatek Office 365 Advanced Compliance jednostki SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik pracowników organizacji non-profit) lub jednostek SKU Office 365.
 
 Ten artykuł jest częścią większej serii artykułów na temat [Office 365 szyfrowania komunikatów](ome.md).
 
-Jeśli wiadomość została zaszyfrowana przy użyciu Zaawansowane szyfrowanie wiadomości usługi Office 365 i jesteś administratorem Microsoft 365 lub jesteś nadawcą wiadomości, możesz odwołać wiadomość pod pewnymi warunkami. Administratorzy odwołują komunikaty przy użyciu programu PowerShell. Jako nadawca odwołasz wiadomość wysłaną bezpośrednio z Outlook w sieci Web. W tym artykule opisano okoliczności, w których możliwe jest odwołanie i jak to zrobić.
+Jeśli wiadomość została zaszyfrowana przy użyciu zaawansowanego szyfrowania komunikatów usługi Microsoft Purview i jesteś administratorem Microsoft 365 lub jesteś nadawcą wiadomości, możesz odwołać wiadomość pod pewnymi warunkami. Administratorzy odwołują komunikaty przy użyciu programu PowerShell. Jako nadawca odwołasz wiadomość wysłaną bezpośrednio z Outlook w sieci Web. W tym artykule opisano okoliczności, w których możliwe jest odwołanie i jak to zrobić.
 
 > [!NOTE]
 > Aby zagwarantować, że możliwość śledzenia i odwoływania komunikatów OME jest dostępna, należy dodać niestandardowy szablon znakowania. Zobacz [Dodawanie marki organizacji do zaszyfrowanych komunikatów](add-your-organization-brand-to-encrypted-messages.md)
@@ -92,7 +96,7 @@ Istnieje wiele sposobów znajdowania identyfikatora wiadomości e-mail, którą 
 
 2. Po zlokalizowaniu wiadomości e-mail wybierz ją, aby wyświetlić okienko **Szczegóły śledzenia wiadomości** . Rozwiń węzeł **Więcej informacji,** aby zlokalizować identyfikator komunikatu.
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Aby zidentyfikować identyfikator wiadomości e-mail, którą chcesz odwołać przy użyciu Office raportów szyfrowania komunikatów w Centrum zgodności zabezpieczeń &amp;
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-encryption-reports-in-the-security-amp-compliance-center"></a>Aby zidentyfikować identyfikator wiadomości e-mail, którą chcesz odwołać przy użyciu raportów szyfrowania komunikatów w Centrum zgodności zabezpieczeń &amp;
 
 1. W Centrum zgodności zabezpieczeń &amp; przejdź do **raportu szyfrowania komunikatów**. Aby uzyskać informacje na temat tego raportu, zobacz [Wyświetlanie raportów zabezpieczeń poczty e-mail w Centrum zgodności zabezpieczeń&amp;](../security/office-365-security/view-email-security-reports.md).
 
@@ -154,10 +158,10 @@ Aby odwołać wiadomość e-mail przy użyciu Windows PowerShell, użyj poleceni
      Revoked: True
      ```
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>Więcej informacji o Zaawansowane szyfrowanie wiadomości usługi Office 365
+## <a name="more-information-about-microsoft-purview-advanced-message-encryption"></a>Więcej informacji na temat zaawansowanego szyfrowania komunikatów w usłudze Microsoft Purview
 
-- [Zaawansowane szyfrowanie wiadomości usługi Office 365](ome-advanced-message-encryption.md)
+- [Zaawansowane szyfrowanie komunikatów w usłudze Microsoft Purview](ome-advanced-message-encryption.md)
 
-- [Zaawansowane szyfrowanie wiadomości usługi Office 365 — wygaśnięcie wiadomości e-mail](ome-advanced-expiration.md)
+- [Zaawansowane szyfrowanie komunikatów usługi Microsoft Purview — wygaśnięcie poczty e-mail](ome-advanced-expiration.md)
 
 - [Opis zasad komunikatów i usługi zgodności](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

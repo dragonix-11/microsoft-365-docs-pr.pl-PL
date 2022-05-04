@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrukcje publikowania etykiet przechowywania, dzięki czemu można je zastosować w aplikacjach, aby zachować to, czego potrzebujesz, i usunąć to, czego nie potrzebujesz.
-ms.openlocfilehash: c2088afd895b47945bea056c940e564b4dd770fb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd20de86b17460d5b150b5bb576ae811e40eed32
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145388"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187805"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach
 
@@ -88,7 +88,7 @@ Aby edytować istniejące zasady etykiet przechowywania (typ zasad to **Publikuj
 
 Jeśli publikujesz etykiety przechowywania w SharePoint lub OneDrive, te etykiety są zwykle wyświetlane, aby użytkownicy wybierali je w ciągu jednego dnia. Jednak poczekaj do siedmiu dni. 
 
-Jeśli publikujesz etykiety przechowywania w Exchange, wyświetlenie etykiet przechowywania dla użytkowników może potrwać do siedmiu dni, a skrzynka pocztowa musi zawierać co najmniej 10 MB danych.
+Jeśli publikujesz etykiety przechowywania w Exchange, wyświetlanie etykiet przechowywania dla użytkowników może potrwać do siedmiu dni. Podobnie jak w przypadku wszystkich ustawień przechowywania dla Exchange, skrzynka pocztowa musi zawierać co najmniej 10 MB danych.
 
 ![Diagram przedstawiający, kiedy opublikowane etykiety wchodzą w życie.](../media/retention-labels-published-timings.png)
 

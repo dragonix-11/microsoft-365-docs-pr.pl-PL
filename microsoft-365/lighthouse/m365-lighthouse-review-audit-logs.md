@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak przeglądać dzienniki inspekcji.
-ms.openlocfilehash: ca4d1e9941e0c15fee169def7be0c2d801f522c2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 59e45f33b1c6708b4743605bda6ac4c93499bf59
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022850"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188773"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Przeglądanie dzienników inspekcji w Microsoft 365 Lighthouse
 
@@ -96,8 +96,9 @@ W poniższej tabeli wymieniono działania przechwycone w dziennikach inspekcji u
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli potrzebujesz więcej informacji, użyj usługi Microsoft interfejs Graph API, aby uzyskać dostęp do większej liczby zdarzeń inspekcji. Aby uzyskać więcej informacji, zobacz [Omówienie zarządzania wieloma dzierżawami przy użyciu interfejsu API Microsoft 365 Lighthouse](/graph/managedtenants-concept-overview).
+W razie potrzeby użyj usługi Microsoft interfejs Graph API, aby uzyskać dostęp do większej liczby zdarzeń inspekcji. Aby uzyskać więcej informacji, zobacz [Omówienie zarządzania wieloma dzierżawami przy użyciu interfejsu API Microsoft 365 Lighthouse](/graph/managedtenants-concept-overview).
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)
+[Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)\
+[Wyświetlanie ról Azure Active Directory w Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (artykuł)

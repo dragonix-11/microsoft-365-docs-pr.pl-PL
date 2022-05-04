@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zapoznaj się z ustawieniami, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i pozbyć się tego, czego nie chcesz.
-ms.openlocfilehash: c0214476494e024247b76911475df88bdfbfa4ff
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: ab3adee8275f6c64dd7ad3b21547e8205b00ff7d
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129227"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187783"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
@@ -240,6 +240,8 @@ Lokalizacje w zasadach przechowywania identyfikują określone usługi Microsoft
 
 ### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Informacje o konfiguracji Exchange wiadomości e-mail i Exchange folderów publicznych
 
+Zarówno lokalizacja **Exchange poczty e-mail**, jak i **lokalizacja folderów publicznych Exchange** wymagają, aby skrzynki pocztowe miały co najmniej 10 MB danych, zanim zostaną zastosowane ustawienia przechowywania.
+
 Lokalizacja **Exchange poczty e-mail** obsługuje przechowywanie poczty e-mail, kalendarza i innych elementów skrzynki pocztowej przez zastosowanie ustawień przechowywania na poziomie skrzynki pocztowej. Obsługiwane są również udostępnione skrzynki pocztowe.
 
 Skrzynki pocztowe zasobów, kontakty i skrzynki pocztowe grup Microsoft 365 nie są obsługiwane w przypadku Exchange wiadomości e-mail. W przypadku skrzynek pocztowych Microsoft 365 grup wybierz zamiast tego **lokalizację Grupy Microsoft 365**. Chociaż lokalizacja Exchange początkowo zezwala na wybór skrzynki pocztowej grupy dla zakresu statycznego, podczas próby zapisania zasad przechowywania jest wyświetlany błąd informujący o tym, że opcja "RemoteGroupMailbox" nie jest prawidłowym wyborem dla tej lokalizacji.
@@ -294,6 +296,8 @@ Po skonfigurowaniu zasad przechowywania korzystających z zakresów zasad adapta
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informacje o konfiguracji Grupy Microsoft 365
 
 Aby zachować lub usunąć zawartość grupy Microsoft 365 (dawniej Office 365), użyj lokalizacji **Grupy Microsoft 365**. W przypadku zasad przechowywania ta lokalizacja obejmuje skrzynkę pocztową grupy i witrynę SharePoint teams. W przypadku etykiet przechowywania ta lokalizacja obejmuje tylko witrynę SharePoint teams.
+
+Skrzynki pocztowe przeznaczone dla tej lokalizacji zasad wymagają co najmniej 10 MB danych, zanim zostaną zastosowane do nich ustawienia przechowywania.
 
 > [!NOTE]
 > Mimo że grupa Microsoft 365 ma Exchange skrzynkę pocztową, zasady przechowywania **dla lokalizacji Exchange wiadomości e-mail** nie będą zawierać zawartości w skrzynkach pocztowych Microsoft 365 grup.

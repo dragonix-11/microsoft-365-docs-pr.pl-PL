@@ -17,12 +17,12 @@ ms.collection:
 description: Administratorzy mogą poznać różne sposoby raportowania dobrych i złych komunikatów i plików do firmy Microsoft w celu analizy.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2ddd9c0d96355af1ccdbb40cdd5c7542d9852c1
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 56ef5cd5a376f4d10af1ad8c592dad02dbc8ef0a
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144724"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188443"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Zgłaszanie wiadomości i plików firmie Microsoft
 
@@ -46,4 +46,4 @@ W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub auton
 > [!NOTE]
 > Gdy zgłaszasz jednostkę poczty e-mail firmie Microsoft, tworzymy kopię wszystkich elementów skojarzonych z wiadomością e-mail w celu uwzględnienia jej w naszych ciągłych przeglądach algorytmów. Ta kopia zawiera zawartość wiadomości e-mail, nagłówki wiadomości e-mail i powiązane dane dotyczące routingu wiadomości e-mail. Dołączono również załączniki w wiadomości.
 >
-> Firma Microsoft traktuje Twoją opinię jako uprawnienie organizacji do analizowania wszystkich wcześniej opisanych informacji i pracy nad dostosowaniem algorytmów higieny komunikatów. Wiadomość jest przechowywana w naszych bezpiecznych centrach danych z inspekcją w Stanach Zjednoczonych, dopóki nie usuniemy twojego przesłania nie później niż 30 dni po jego przekazaniu. Pracownicy firmy Microsoft mogą odczytywać przesłane wiadomości i załączniki, co zwykle nie jest dozwolone w przypadku wiadomości e-mail w Office 365. Jednak Twoja wiadomość e-mail jest nadal traktowana jako poufna między Tobą a firmą Microsoft, a my przekażemy Twoje przesłanie każdej innej stronie w celu przeczytania wiadomości e-mail lub jej załączników na potrzeby tego procesu przeglądu.
+> Firma Microsoft traktuje Twoją opinię jako uprawnienie organizacji do analizowania wszystkich wcześniej opisanych informacji i pracy nad dostosowaniem algorytmów higieny komunikatów. Wiadomość jest przechowywana w naszych bezpiecznych centrach danych z inspekcją w Stanach Zjednoczonych, dopóki nie usuniemy twojego przesłania nie później niż 30 dni po jego przekazaniu. Pracownicy firmy Microsoft mogą odczytywać przesłane wiadomości i załączniki, co zwykle nie jest dozwolone w przypadku wiadomości e-mail w Office 365. Jednak Twoja wiadomość e-mail jest nadal traktowana jako poufna między Tobą a firmą Microsoft i nie przekażemy Twojego przesłania żadnej innej stronie w celu przeczytania wiadomości e-mail lub załączników do tego procesu przeglądu.

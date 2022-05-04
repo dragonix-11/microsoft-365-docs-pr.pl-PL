@@ -1,5 +1,5 @@
 ---
-title: Informacje o wersji próbnej testów premium w menedżerze zgodności firmy Microsoft
+title: Informacje o wersji próbnej oceny premium programu Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,57 +13,59 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: Informacje o wersjach próbnych testów premium menedżera zgodności firmy Microsoft.
-ms.openlocfilehash: b7eaa963a3978a38db8511f30aa663670e7168c7
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+description: Informacje o wersjach próbnych oceny premium programu Microsoft Purview Compliance Manager.
+ms.openlocfilehash: b5d653626eadbfcc6e58d2be36a7ed8899c02eeb
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027057"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187761"
 ---
-# <a name="about-the-free-trial-for-microsoft-compliance-manager-premium-assessments"></a>Informacje o bezpłatnej wersji próbnej testów premium menedżera zgodności firmy Microsoft
+# <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>Informacje na temat bezpłatnej wersji próbnej ocen premium menedżera zgodności usługi Microsoft Purview
 
-Menedżer zgodności ułatwia zarządzanie wymaganiami organizacji dotyczących zgodności oraz ocenę i poprawę wyników w zakresie zgodności. Oceny, które tworzysz, są oparte na szablonach, które odpowiadają ustawom rządowych i standardom branżowym na całym świecie.  
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Umowa licencyjna na korzystanie z Menedżera zgodności może zawierać jeden lub więcej wbudowanych szablonów do tworzenia ocen. Dostępna jest również obszerna biblioteka szablonów oceniania klasy premium na potrzeby tworzenia testów specyficznych dla potrzeb organizacji. Aby wypróbować te szablony przed zakupem licencji, zarejestruj się w bezpłatnej wersji próbnej premium usługi Compliance Manager.
+Menedżer zgodności pomaga zarządzać wymaganiami organizacji dotyczącymi zgodności oraz oceniać i ulepszać ocenę zgodności. Oceny, które tworzysz, są oparte na szablonach, które odpowiadają przepisom rządowym i standardom branżowym na całym świecie.  
+
+Umowa licencyjna dotycząca korzystania z Menedżera zgodności może zawierać co najmniej jeden wbudowany szablon do tworzenia ocen. Dostępna jest również obszerna biblioteka szablonów oceny w warstwie Premium, która umożliwia tworzenie ocen specyficznych dla potrzeb organizacji. Aby wypróbować te szablony przed zakupem licencji, utwórz konto bezpłatnej wersji próbnej ocen premium programu Compliance Manager.
 
 ## <a name="terms-and-conditions"></a>Warunki i postanowienia
 
-Zapoznaj się [z warunkami i postanowieniami](terms-conditions.md) Microsoft 365 prób zgodności z przepisami.
+Zapoznaj się z [warunkami dotyczącymi](/legal/microsoft-365/microsoft-365-trial) wersji próbnych Microsoft 365.
 
-## <a name="set-up-a-premium-assessment-trial"></a>Konfigurowanie wersji próbnej premium testowej
+## <a name="set-up-a-premium-assessment-trial"></a>Konfigurowanie wersji próbnej oceny premium
 
-Możesz utworzyć konta w celu korzystania z wersji próbnej w Centrum zgodności platformy Microsoft 365 **użyciu linku** Próby w okienku nawigacji po lewej stronie. Wybierz wersję **próbną oceny premium w** menedżerze zgodności, aby rozpocząć wersję próbną dla szablonów testów premium.
+Możesz utworzyć konto próbne w portalu zgodności usługi Microsoft Purview, korzystając z linku **Wersje próbne** w okienku nawigacji po lewej stronie. Wybierz wersję **próbną premium programu Compliance Manager** , aby rozpocząć wersję próbną szablonów oceny w warstwie Premium.
 
-Ta wersja próbna premium jest dostępna dla organizacji korzystających z Menedżera zgodności w ramach licencji komercyjnej. Aby GCC dod i opcje wersji próbnej, zobacz [Praca z szablonami Menedżera zgodności](compliance-manager-templates.md).
+Ta wersja próbna oceny w warstwie Premium jest dostępna dla organizacji korzystających z Programu Compliance Manager w ramach licencji komercyjnej. Aby uzyskać informacje o GCC i DOD oraz opcje wersji próbnej, zobacz [Praca z szablonami programu Compliance Manager](compliance-manager-templates.md).
 
-Pełny dostęp do funkcji Menedżera zgodności może być zależny od umowy licencyjnej menedżera zgodności. Aby dowiedzieć się więcej o bezpłatnej wersji próbnej dotyczącej zgodności, która zawiera Menedżera zgodności, zobacz Informacje o bezpłatnej wersji Microsoft 365 [zgodności](compliance-easy-trials.md).
+Pełny dostęp do funkcji programu Compliance Manager może zależeć od umowy licencyjnej programu Compliance Manager. Aby dowiedzieć się więcej na temat bezpłatnej wersji próbnej zgodności obejmującej Menedżera zgodności, zobacz [Informacje o bezpłatnej wersji próbnej usługi Microsoft Purview](compliance-easy-trials.md).
 
 > [!NOTE]
-> Sprawdź ustawienia centrum administracyjne platformy Microsoft 365 w celu ułatwienia rejestracji w wersji próbnej. W centrum administracyjne platformy Microsoft 365 przejdź do strony Ustawienia > ustawienia organizacji **> usługi** i wybierz pozycję Aplikacje **i usługi należące do użytkownika**. Następnie zaznacz pole wyboru, aby pozwolić użytkownikom na rozpoczynanie wersji próbnych w imieniu twojej organizacji. Po zakończeniu konfiguracji za około dwie minuty możesz wrócić do ustawień i usunąć zaznaczenie tego pola wyboru, aby wyłączyć to ustawienie. Możesz również rozpocząć wersję próbną bez konieczności dostosowywania ustawień organizacji, przechodząc do strony > Billing **> Zakup** usług i wyszukując wersję próbną oceny premium menedżera zgodności.
+> Sprawdź ustawienia Centrum administracyjne platformy Microsoft 365, aby ułatwić rejestrację w wersji próbnej. W Centrum administracyjne platformy Microsoft 365 przejdź do strony **Ustawienia > Ustawienia organizacji > Services** i wybierz pozycję **Aplikacje i usługi należące do użytkownika**. Następnie zaznacz pole wyboru, aby umożliwić użytkownikom rozpoczęcie prób w imieniu organizacji. Po zakończeniu instalacji w ciągu około dwóch minut możesz wrócić i usunąć zaznaczenie pola wyboru, aby wyłączyć to ustawienie. Możesz również rozpocząć wersję próbną bez dostosowywania ustawień organizacji, przechodząc do strony **Rozliczenia > Zakup usług** i wyszukując wersję próbną oceny premium programu Compliance Manager.
 
 ## <a name="template-licensing"></a>Licencjonowanie szablonów
 
-Rozpoczęcie korzystania z testów w wersji próbnej premium daje Ci prawo do bezpłatnego korzystania z 25 szablonów premium przez 90 dni bezpłatnie. Na podstawie 25 szablonów możesz utworzyć tyle formularzy, ile tylko chcesz.
+Rozpoczęcie jednorazowej wersji próbnej na potrzeby ocen w warstwie Premium daje prawo do bezpłatnego korzystania z 25 wybranych szablonów premium przez 90 dni. Możesz utworzyć dowolną liczbę ocen na podstawie 25 szablonów.
 
-Po rozpoczęciu okresu próbnego przejdź do karty  Assessments (Testy) w Menedżerze zgodności i wyświetl liczniki aktywowanych **/** licencjonowanych szablonów, aby sprawdzić, ile szablonów jest dostępnych i jest w użyciu. W tym liczniku będzie pokazywanych 25 licencjonowanych szablonów. Podczas tworzenia ocen przy użyciu tych szablonów twój aktywowany numer telefonu zostanie uaktualniony. Użycie szablonu jest liczone na podstawie certyfikacji, co oznacza, że wiele ocen opartych na tym samym szablonie lub różnych wersjach tego samego szablonu, które obsługują różne produkty, będzie liczone jako użycie jednego szablonu.
+Po rozpoczęciu wersji próbnej przejdź do karty **Oceny** w Menedżerze zgodności i wyświetl licznik **Szablony aktywowane/licencjonowane** , aby zobaczyć, ile szablonów jest dostępnych i używanych. Ten licznik wyświetli 25 licencjonowanych szablonów. Podczas tworzenia ocen przy użyciu tych szablonów aktywowany numer zostanie zaktualizowany. Użycie szablonu jest liczone na podstawie podstawowego certyfikatu, co oznacza, że wiele ocen opartych na tym samym szablonie lub różnych wersjach tego samego szablonu, które obsługują różne produkty, będzie liczonych jako jedno użycie szablonu.
 
-Aby uzyskać więcej informacji na temat korzystania z szablonów Menedżera zgodności i zarządzania nimi, zobacz [Praca z szablonami oceniania](compliance-manager-templates.md).
+Aby uzyskać więcej informacji na temat używania szablonów programu Compliance Manager i zarządzania nimi, zobacz [Praca z szablonami oceny](compliance-manager-templates.md).
 
 ## <a name="permissions"></a>Uprawnienia
 
-Każdy użytkownik w organizacji z uprawnieniami dostępu do Menedżera zgodności może utworzyć konto w celu uzyskania dostępu do wersji próbnej Premium assessments. Dowiedz się więcej o [uprawnieniach i rolach wymaganych dla Menedżera zgodności](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+Każdy użytkownik w organizacji z uprawnieniami dostępu do Menedżera zgodności może zarejestrować się w wersji próbnej ocen w warstwie Premium. Dowiedz się więcej o [uprawnieniach i rolach wymaganych przez Menedżera zgodności](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-## <a name="during-your-trial"></a>W trakcie okresu próbnego
+## <a name="during-your-trial"></a>Podczas okresu próbnego
 
-W trakcie okresu próbnego możesz przejrzeć  sekcję Podsumowanie wersji próbnej na stronie Przegląd w Menedżerze zgodności, aby sprawdzić, ile ocen zostało utworzonych, ile działań udoskonalania zostało wykonane, jak to wywrócło swój wynik zgodności i ile czasu pozostało w wersji próbnej. W tym miejscu możesz także przejrzeć listę dostępnych szablonów i dowiedzieć się więcej o ich zakupie do stałego użytku.
+W trakcie okresu próbnego możesz przejrzeć sekcję **Podsumowanie wersji próbnej** na stronie **Przegląd** w Menedżerze zgodności, aby zobaczyć, ile ocen zostało utworzonych, ile działań ulepszeń wykonano, jak to przyczyniło się do oceny zgodności i ile czasu pozostało w okresie próbnym. W tym miejscu możesz również przejrzeć listę dostępnych szablonów i dowiedzieć się więcej o zakupie ich do bieżącego użytku.
 
-## <a name="after-the-trial"></a>Po upływie okresu próbnego
+## <a name="after-the-trial"></a>Po zakończeniu okresu próbnego
 
-Po zakończeniu okresu próbnego używane szablony nie będą otrzymywać aktualizacji automatycznych i mogą być przejasne z zmianami regulacyjną. Zaleca się usunięcie ocen z szablonów, które nie będą kupowane w planie.
+Po zakończeniu okresu próbnego użyte szablony nie będą otrzymywać aktualizacji automatycznych i mogą zostać nieaktualne wraz ze zmianami prawnymi. Zalecamy usunięcie ocen utworzonych z szablonów, których nie zamierzasz kupować.
 
 ## <a name="learn-more-about-compliance"></a>Dowiedz się więcej o zgodności
 
-Aby dowiedzieć się więcej o funkcjach Menedżera zgodności i o tym, jak może on pomóc Twojej organizacji w spełnianiu wymagań dotyczących zgodności z przepisami, zobacz [Menedżer zgodności firmy Microsoft](compliance-manager.md).  
+Aby dowiedzieć się więcej na temat funkcji Menedżera zgodności i sposobu, w jaki może on pomóc organizacji w spełnieniu wymagań dotyczących zgodności i przepisów, zobacz [Microsoft Purview Compliance Manager](compliance-manager.md).  
 
-Możesz również dowiedzieć się więcej o innych rozwiązaniach firmy Microsoft dotyczących zgodności i rozpoczynaniu wersji próbnych na stronie Informacje o bezpłatnej wersji [Microsoft 365 próbnej](compliance-easy-trials.md).
+Możesz również dowiedzieć się więcej o innych rozwiązaniach do zapewniania zgodności firmy Microsoft i sposobach uruchamiania wersji próbnych w witrynie [Informacje o bezpłatnej wersji próbnej usługi Microsoft Purview](compliance-easy-trials.md).
