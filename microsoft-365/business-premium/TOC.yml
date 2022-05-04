@@ -104,6 +104,8 @@
   items:
     - name: Słownik terminów
       href: m365bp-glossary.md
+    - name: Microsoft 365 Business Premium — często zadawane pytania
+      href: microsoft-365-business-faqs.yml
     - name: Zawartość administratora platformy Microsoft 365
       href: /microsoft-365/admin/
     - name: Microsoft Defender dla Firm
