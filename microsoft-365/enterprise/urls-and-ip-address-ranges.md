@@ -3,7 +3,7 @@ title: Adresy URL i zakresy adresów IP usługi Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/28/2022
+ms.date: 04/28/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,14 +22,14 @@ search.appverid:
 - MOM160
 - BCS160
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
-description: 'Podsumowanie: Usługa Office 365 wymaga połączenia z Internetem. Poniższe punkty końcowe powinny być osiągalne dla klientów korzystających z planów usługi Office 365, a w tym planu Government Community Cloud (GCC).'
+description: 'Podsumowanie: usługa Office 365 wymaga łączności z Internetem. Poniższe punkty końcowe powinny być osiągalne dla klientów korzystających z planów usługi Office 365, w tym dla chmury Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 04522b211056b1d7c6feba08dd97fc3a2d33451a
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 80e4c14652303d1f04e697f73153b0f013b987cd
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634872"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217337"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Adresy URL i zakresy adresów IP usługi Office 365
 
@@ -39,7 +39,7 @@ Usługa Office 365 wymaga łączności z Internetem. Poniższe punkty końcowe p
 
 |Uwagi|Pobierz|Opcja, której należy użyć|
 |---|---|---|
-|**Ostatnia aktualizacja:** 28.03.2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Subskrypcja dziennika zmian](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Pobieranie:** lista w [formacie JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) zawierająca wszystkie wymagane i opcjonalne adresy docelowe.|**Użyj:** [plików PAC](managing-office-365-endpoints.md#pacfiles) naszych serwerów proxy|
+|**Ostatnia aktualizacja:** 28.04.2022 – ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Subskrypcja dziennika zmian](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Pobieranie:** lista w [formacie JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) zawierająca wszystkie wymagane i opcjonalne adresy docelowe.|**Użyj:** [plików PAC](managing-office-365-endpoints.md#pacfiles) naszych serwerów proxy|
 |
 
 Zacznij od pozycji [Zarządzanie punktami końcowymi usługi Office 365](managing-office-365-endpoints.md), aby zrozumieć nasze zalecenia dotyczące zarządzania łącznością sieciową przy użyciu tych danych. Dane punktów końcowych są aktualizowane zgodnie z potrzebami na początku każdego miesiąca przy użyciu nowych adresów IP i adresów URL opublikowanych 30 dni przed uaktywnieniem. Dzięki temu klienci, którzy nie mają jeszcze automatycznych aktualizacji, mogą ukończyć swoje procesy zanim będzie wymagana nowa łączność. Punkty końcowe mogą być również aktualizowane w ciągu miesiąca, jeśli jest to konieczne w celu realizacji eskalacji pomocy technicznej, zdarzeń zabezpieczeń lub innych natychmiastowych wymagań operacyjnych. Wszystkie dane wyświetlane na poniższej stronie są generowane na podstawie usług internetowych opartych na protokole REST. Jeśli do uzyskiwania dostępu do tych danych używasz skryptu lub urządzenia sieciowego, przejdź bezpośrednio do pozycji [Usługa sieci Web](microsoft-365-ip-web-service.md).
