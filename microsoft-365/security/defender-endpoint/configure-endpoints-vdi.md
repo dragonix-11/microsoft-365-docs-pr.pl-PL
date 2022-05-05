@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: 78d22772ccc9713b968347de5dee4c3a9699fe26
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: b3f27f0fc5b4b6d0a8d23c7fac112597fed381ad
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891871"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217447"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Dołączanie nietrwałych urządzeń infrastruktury pulpitu wirtualnego w Microsoft 365 Defender
 
@@ -148,6 +148,21 @@ Dzięki możliwości łatwego wdrażania aktualizacji na maszynach wirtualnych d
 
 Aby uzyskać więcej informacji, postępuj zgodnie ze wskazówkami w [przewodniku wdrażania dotyczącym Program antywirusowy Microsoft Defender w środowisku infrastruktury pulpitu wirtualnego (VDI).](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
 
+   > [!NOTE]
+   > Jeśli dodasz obraz główny nietrwałego środowiska VDI (usługa SENSE jest uruchomiona), musisz odłączyć i wyczyścić niektóre dane przed wprowadzeniem obrazu z powrotem do środowiska produkcyjnego.
+   > 1. Upewnij się, że czujnik został zatrzymany, uruchamiając poniższe polecenie w oknie cmd:
+   >  ```console
+   >  sc query sense
+   >  ```
+   > 2. Uruchom poniższe polecenia przy użyciu PsExec.exe (które można pobrać z https://download.sysinternals.com/files/PSTools.zip)
+   >
+   >  ```console
+   >  PsExec.exe -s cmd.exe
+   >  cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+   >  del *.* /f /s /q
+   >  REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   >  exit
+   >  ```
 
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Dołącz urządzenia z systemem Windows przy użyciu zasad grupy](configure-endpoints-gp.md)

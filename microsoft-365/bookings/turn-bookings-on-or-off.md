@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Dowiedz się, jak uzyskać dostęp do Microsoft Bookings w Microsoft 365.
-ms.openlocfilehash: 28398faba7c21b6d3cce84063934268dad11fd64
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: e088250a24078d735b6751ff8cbcc55e2fdceaaa
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823085"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217469"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Włącz lub wyłącz aplikację Microsoft Bookings
 
@@ -123,7 +123,7 @@ Należy uruchomić następujące polecenia przy użyciu Exchange Online programu
    Set-OwaMailboxPolicy "OwaMailboxPolicy-Default" -BookingsMailboxCreationEnabled:$false
    ```
 
-   Aby uzyskać więcej informacji, zobacz [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
+Aby uzyskać więcej informacji, zobacz [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
 
 Aby uzyskać więcej informacji na temat zasad skrzynki pocztowej OWA, zapoznaj się z następującymi tematami:
 

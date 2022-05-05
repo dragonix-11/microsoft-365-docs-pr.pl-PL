@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5e474505eecca0c42aa919b42364a1ad54c27e17
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094762"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217403"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Poznaj zaawansowany język zapytań wyszukiwania zagrożeń
 
@@ -175,14 +175,14 @@ Edytor zapytań umożliwia eksperymentowanie z wieloma zapytaniami. Aby użyć w
 
 Aby uzyskać bardziej wydajny obszar roboczy, możesz również użyć wielu kart na tej samej stronie wyszukiwania zagrożeń. Wybierz pozycję **Nowe zapytanie** , aby otworzyć kartę dla nowego zapytania.
 
-:::image type="content" source="../../media/multitab.png" alt-text="Przykład wykonania wielu zapytań na stronie **Nowe zapytanie** w portalu Microsoft 365 Defender" lightbox="../../media/multitab.png":::
+:::image type="content" source="../../media/multitab.png" alt-text="Otwieranie nowej karty przez wybranie pozycji Utwórz nową w zaawansowanym polowaniu w portalu Microsoft 365 Defender" lightbox="../../media/multitab.png":::
 
 Następnie można uruchamiać różne zapytania bez otwierania nowej karty przeglądarki. 
 
-:::image type="content" source="../../media/multitab-examples.png" alt-text="Przykład wykonania wielu zapytań na stronie **Nowe zapytanie** w portalu Microsoft 365 Defender" lightbox="../../media/multitab-examples.png":::
+:::image type="content" source="../../media/multitab-examples.png" alt-text="Uruchamianie różnych zapytań bez opuszczania zaawansowanej strony wyszukiwania zagrożeń w portalu Microsoft 365 Defender" lightbox="../../media/multitab-examples.png":::
 
 >[!NOTE] 
-> Jeśli otworzysz nową kartę przeglądarki dla nowego zapytania, możesz utracić niezapisane zapytania.
+> Użycie wielu kart przeglądarki z zaawansowanym wyszukiwaniem zagrożeń może spowodować utratę niezapisanych zapytań. Aby temu zapobiec, użyj funkcji tabulacji w ramach zaawansowanego wyszukiwania zagrożeń zamiast oddzielnych kart przeglądarki.
 
 ## <a name="use-sample-queries"></a>Używanie przykładowych zapytań
 

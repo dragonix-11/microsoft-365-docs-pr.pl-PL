@@ -1,7 +1,7 @@
 ---
 title: Wprowadzenie do zarządzania ryzykiem wewnętrznym
 description: Skonfiguruj zarządzanie ryzykiem wewnętrznym w organizacji.
-keywords: Microsoft 365, zarządzanie ryzykiem wewnętrznym, zarządzanie ryzykiem, zgodność
+keywords: Microsoft 365, Microsoft Purview, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -16,21 +16,23 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ca858aaf10c453a3fa333288fd5e44c62d20cb08
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 3a72f5399ac295dac199c816fc68fbec74a7fe23
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783914"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217547"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Wprowadzenie do zarządzania ryzykiem wewnętrznym
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj zasad zarządzania ryzykiem wewnętrznym, aby zidentyfikować ryzykowne działania i narzędzia do zarządzania, aby działać na alertach o podwyższonym ryzyku w organizacji. Wykonaj poniższe kroki, aby skonfigurować wymagania wstępne i skonfigurować zasady zarządzania ryzykiem wewnętrznym.
 
 > [!IMPORTANT]
-> Rozwiązanie do zarządzania ryzykiem wewnętrznym Microsoft 365 udostępnia opcję na poziomie dzierżawy, aby ułatwić klientom zarządzanie wewnętrzne na poziomie użytkownika. Administratorzy na poziomie dzierżawy mogą skonfigurować uprawnienia w celu zapewnienia dostępu do tego rozwiązania członkom organizacji i skonfigurować łączniki danych w Centrum zgodności platformy Microsoft 365 w celu zaimportowania odpowiednich danych w celu obsługi identyfikacji na poziomie użytkownika potencjalnie ryzykownych działań. Klienci potwierdzają szczegółowe informacje dotyczące zachowania, charakteru lub wydajności poszczególnych użytkowników związane z zatrudnieniem, które mogą zostać obliczone przez administratora i udostępnione innym osobom w organizacji. Ponadto klienci przyznają, że muszą przeprowadzić własne pełne badanie dotyczące zachowania, charakteru lub wydajności poszczególnych użytkowników związane z zatrudnieniem, a nie tylko polegać na szczegółowych informacjach z usługi zarządzania ryzykiem wewnętrznym. Klienci są wyłącznie odpowiedzialni za korzystanie z Microsoft 365 usługi zarządzania ryzykiem wewnętrznym oraz wszelkich skojarzonych funkcji lub usług zgodnie ze wszystkimi obowiązującymi przepisami, w tym przepisami dotyczącymi identyfikacji poszczególnych użytkowników i wszelkich działań korygujących.
+> Rozwiązanie do zarządzania ryzykiem wewnętrznym zapewnia opcję na poziomie dzierżawy, aby ułatwić klientom zarządzanie wewnętrzne na poziomie użytkownika. Administratorzy na poziomie dzierżawy mogą skonfigurować uprawnienia w celu zapewnienia dostępu do tego rozwiązania członkom organizacji i skonfigurować łączniki danych w portalu zgodności usługi Microsoft Purview w celu zaimportowania odpowiednich danych w celu obsługi identyfikacji na poziomie użytkownika potencjalnie ryzykownych działań. Klienci potwierdzają szczegółowe informacje dotyczące zachowania, charakteru lub wydajności poszczególnych użytkowników związane z zatrudnieniem, które mogą zostać obliczone przez administratora i udostępnione innym osobom w organizacji. Ponadto klienci przyznają, że muszą przeprowadzić własne pełne badanie dotyczące zachowania, charakteru lub wydajności poszczególnych użytkowników związane z zatrudnieniem, a nie tylko polegać na szczegółowych informacjach z usługi zarządzania ryzykiem wewnętrznym. Klienci są wyłącznie odpowiedzialni za korzystanie z usługi zarządzania ryzykiem wewnętrznym oraz wszelkich powiązanych funkcji lub usług zgodnie ze wszystkimi obowiązującymi przepisami, w tym przepisami dotyczącymi identyfikacji poszczególnych użytkowników i wszelkich działań korygujących.
 
-Aby uzyskać więcej informacji na temat sposobu, w jaki zasady ryzyka wewnętrznego mogą pomóc w zarządzaniu ryzykiem w organizacji, zobacz [Insider risk management in Microsoft 365 (Zarządzanie ryzykiem wewnętrznym w Microsoft 365](insider-risk-management.md)).
+Aby uzyskać więcej informacji na temat sposobu, w jaki zasady ryzyka wewnętrznego mogą pomóc w zarządzaniu ryzykiem w organizacji, zobacz [Informacje o zarządzaniu ryzykiem wewnętrznym](insider-risk-management.md).
 
 ## <a name="subscriptions-and-licensing"></a>Subskrypcje i licencjonowanie
 
@@ -77,12 +79,12 @@ Wybierz zalecenie z listy, aby rozpocząć konfigurowanie zarządzania ryzykiem 
 > [!IMPORTANT]
 > Po skonfigurowaniu grup ról stosowanie uprawnień grupy ról do przypisanych użytkowników w całej organizacji może potrwać do 30 minut.
 
-Istnieje sześć grup ról używanych do konfigurowania funkcji zarządzania ryzykiem wewnętrznym. Aby udostępnić zarządzanie **ryzykiem niejawnym** jako opcję menu w Centrum zgodności platformy Microsoft 365 i kontynuować te kroki konfiguracji, musisz zostać przypisany do jednej z następujących ról lub grup ról:
+Istnieje sześć grup ról używanych do konfigurowania funkcji zarządzania ryzykiem wewnętrznym. Aby udostępnić **zarządzanie ryzykiem wewnętrznym** jako opcję menu w portalu zgodności usługi Microsoft Purview i kontynuować te kroki konfiguracji, musisz mieć przypisaną jedną z następujących ról lub grup ról:
 
 - rola [*administratora globalnego*](/azure/active-directory/roles/permissions-reference#global-administrator) Azure Active Directory
 - rola [*administratora zgodności*](/azure/active-directory/roles/permissions-reference#compliance-administrator) Azure Active Directory
-- grupa ról [*zarządzania organizacją*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) Centrum zgodności platformy Microsoft 365
-- grupa ról [*administratora zgodności*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) Centrum zgodności platformy Microsoft 365
+- Grupa ról [*zarządzania organizacją*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) w portalu zgodności usługi Microsoft Purview
+- Grupa ról [*administratora zgodności*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portalu zgodności usługi Microsoft Purview
 - *Grupa ról zarządzania ryzykiem wewnętrznym*
 - *Grupa ról administratora zarządzania ryzykiem wewnętrznym*
 
@@ -107,17 +109,17 @@ Członkowie następujących ról mogą przypisywać użytkowników do grup ról 
 
 - *administrator globalny* Azure Active Directory
 - *administrator zgodności* Azure Active Directory
-- *zarządzanie organizacją* Centrum zgodności platformy Microsoft 365
-- *administrator zgodności* Centrum zgodności platformy Microsoft 365
+- *Zarządzanie organizacją* w portalu zgodności usługi Microsoft Purview
+- *Administrator zgodności* portalu zgodności usługi Microsoft Purview
 
 > [!NOTE]
-> Te grupy ról nie są obecnie obsługiwane w Privileged Identity Management (PIM). Aby dowiedzieć się więcej na temat usługi PIM, zobacz [Przypisywanie ról usługi Azure AD w Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
+> Te grupy ról nie są obecnie obsługiwane w Privileged Identity Management (PIM). Aby dowiedzieć się więcej na temat usługi PIM, zobacz [Przypisywanie ról Azure AD w Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Dodawanie użytkowników do grupy ról zarządzania ryzykiem wewnętrznym
 
 Wykonaj następujące kroki, aby dodać użytkowników do grupy ról zarządzania ryzykiem wewnętrznym:
 
-1. Zaloguj się [do Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przy użyciu poświadczeń dla konta administratora w organizacji Microsoft 365.
+1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń dla konta administratora w organizacji Microsoft 365.
 
 2. W Centrum zgodności zabezpieczeń &amp; przejdź do pozycji **Uprawnienia**. Wybierz link, aby wyświetlić role i zarządzać nimi w Office 365.
 
@@ -147,7 +149,7 @@ Aby włączyć analizę ryzyka związanego z informacjami poufnymi, musisz być 
 
 Wykonaj następujące kroki, aby włączyć analizę ryzyka wewnętrznego:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym**.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym**.
 2. Wybierz pozycję **Uruchom skanowanie** na **karcie Skanuj w poszukiwaniu zagrożeń wewnętrznych na** karcie Zarządzanie ryzykiem wewnętrznym na karcie **Omówienie** . Ta akcja włącza skanowanie analityczne dla twojej organizacji. Skanowanie w organizacji można również włączyć, przechodząc do **pozycji Ustawienia** >  ryzyka niejawnych **testerówAnaliza** i włączając opcję **Skanuj aktywność użytkownika dzierżawy w celu zidentyfikowania potencjalnych zagrożeń związanych z poufnymi informacjami**.
 3. W okienku **Szczegóły analizy** wybierz pozycję **Uruchom skanowanie, aby rozpocząć skanowanie w organizacji**. Wyniki skanowania analizy mogą potrwać do 48 godzin, zanim szczegółowe informacje będą dostępne jako raporty do przeglądu.
 
@@ -235,7 +237,7 @@ Zobacz [artykuł Konfigurowanie zaawansowanych funkcji w usłudze Defender for E
 
 Przed skonfigurowaniem zasad zdefiniuj następujące ustawienia ryzyka wewnętrznego:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz pozycję **Ustawienia ryzyka niejawnych testerów** w prawym górnym rogu dowolnej strony.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz pozycję **Ustawienia ryzyka niejawnych testerów** w prawym górnym rogu dowolnej strony.
 2. Na stronie **Prywatność** wybierz ustawienie prywatności do wyświetlania nazw użytkowników alertów zasad.
 3. Na stronie **Wskaźniki** wybierz wskaźniki alertów, które chcesz zastosować do wszystkich zasad ryzyka dotyczącego informacji poufnych.
 
@@ -260,7 +262,7 @@ Przed skonfigurowaniem zasad zdefiniuj następujące ustawienia ryzyka wewnętrz
 
 Zasady zarządzania ryzykiem wewnętrznym obejmują przypisanych użytkowników i określają, które typy wskaźników ryzyka są skonfigurowane dla alertów. Zanim działania będą mogły wyzwalać alerty, należy skonfigurować zasady. Użyj kreatora zasad, aby utworzyć nowe zasady zarządzania ryzykiem wewnętrznym.
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Zasady**.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym** i wybierz kartę **Zasady** .
 2. Wybierz pozycję **Utwórz zasady** , aby otworzyć kreatora zasad.
 3. Na stronie **Szablon zasad** wybierz kategorię zasad, a następnie wybierz szablon dla nowych zasad. Te szablony składają się z warunków i wskaźników definiujących działania związane z ryzykiem, które chcesz wykryć i zbadać. Zapoznaj się z wymaganiami wstępnymi szablonu, wyzwalaniem zdarzeń i wykrytymi działaniami, aby potwierdzić, że ten szablon zasad spełnia Twoje potrzeby.
 
@@ -277,16 +279,17 @@ Zasady zarządzania ryzykiem wewnętrznym obejmują przypisanych użytkowników 
 8. Wybierz przycisk **Dalej**, aby kontynuować.
 9. Na stronie **Zawartość do określania priorytetów** można przypisać (w razie potrzeby) źródła do priorytetyzacji, co zwiększa prawdopodobieństwo wygenerowania alertu o wysokiej ważności dla tych źródeł. Wybierz jedną z następujących opcji:
 
-    - **Chcę określić witryny SharePoint, etykiety poufności i/lub typy informacji poufnych jako zawartość priorytetu**. Wybranie tej opcji spowoduje włączenie stron szczegółów w kreatorze w celu skonfigurowania tych kanałów.
+    - **Chcę określić witryny SharePoint, etykiety poufności, typy informacji poufnych i/lub rozszerzenia plików jako zawartość priorytetu**. Wybranie tej opcji spowoduje włączenie stron szczegółów w kreatorze w celu skonfigurowania tych kanałów.
     - **Nie chcę teraz określać priorytetowej zawartości (będzie można to zrobić po utworzeniu zasad).** Wybranie tej opcji spowoduje pominięcie stron szczegółów kanału w kreatorze.
 
 10. Wybierz przycisk **Dalej**, aby kontynuować.
 
-11. Jeśli wybrano **opcję Chcę określić SharePoint witryny, etykiety poufności i/lub typy informacji poufnych jako zawartość priorytetu** w poprzednim kroku, zostaną wyświetlone strony szczegółów *dla witryn SharePoint*, *typów informacji poufnych* i *etykiet poufności*. Użyj tych stron szczegółów, aby zdefiniować SharePoint, typy informacji poufnych i etykiety poufności, aby określić priorytety w zasadach.
+11. Jeśli wybrano **opcję Chcę określić witryny SharePoint, etykiety poufności, typy informacji poufnych i/lub rozszerzenia plików jako zawartość priorytetu** w poprzednim kroku, zobaczysz strony szczegółów *dla witryn SharePoint*, *typów informacji poufnych*, *etykiet poufności* i *rozszerzeń plików*. Te strony szczegółów umożliwiają definiowanie SharePoint, typów informacji poufnych, etykiet poufności i rozszerzeń plików w celu określenia priorytetów w zasadach.
 
     - **SharePoint witryn**: wybierz pozycję **Dodaj SharePoint lokację** i wybierz SharePoint witryn, do których masz dostęp, i chcesz określić priorytety. Na przykład *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Typ informacji poufnych**: wybierz pozycję **Dodaj typ informacji poufnych** i wybierz typy poufności, które chcesz nadać priorytet. Na przykład *"Numer konta bankowego w Stanach Zjednoczonych"* i *"Numer karty kredytowej"*.
     - **Etykiety poufności**: wybierz pozycję **Dodaj etykietę poufności** i wybierz etykiety, które chcesz nadać priorytet. Na przykład *"Poufne"* i *"Tajne"*.
+    - Rozszerzenia plików: dodaj do 50 rozszerzeń plików. Możesz dołączyć lub pominąć "". z rozszerzeniem pliku. Na przykład plik *py* lub *py* określa priorytety plików języka Python.
 
     > [!NOTE]
     > Użytkownicy konfigurujący zasady i wybierający priorytetowe witryny share point mogą wybierać SharePoint witryn, do których mają uprawnienia dostępu. Jeśli SharePoint witryny nie są dostępne do wyboru w zasadach przez bieżącego użytkownika, inny użytkownik z wymaganymi uprawnieniami może wybrać witryny dla zasad później lub bieżący użytkownik powinien mieć dostęp do wymaganych witryn.
@@ -302,7 +305,7 @@ Zasady zarządzania ryzykiem wewnętrznym obejmują przypisanych użytkowników 
 14. Wybierz przycisk **Dalej**, aby kontynuować.
 15. Jeśli wybrano *szablony Ogólne wycieki danych* lub *Wycieki danych według priorytetowych użytkowników* i wybrano, że **użytkownik wykonuje działanie eksfiltracji i skojarzone wskaźniki**, możesz wybrać progi niestandardowe lub domyślne dla wybranych zdarzeń wyzwalających wskaźnik. Wybierz pozycję **Użyj progów domyślnych (zalecane)** lub **Użyj progów niestandardowych dla wyzwalających zdarzeń**.
 16. Wybierz przycisk **Dalej**, aby kontynuować.
-17. Jeśli wybrano pozycję **Użyj niestandardowych progów dla zdarzeń wyzwalających**, dla każdego wskaźnika zdarzenia wyzwalającego wybranego w kroku 13 wybierz odpowiedni poziom, aby wygenerować żądany poziom alertów dotyczących działań.
+17. Jeśli wybrano pozycję **Użyj niestandardowych progów dla zdarzeń wyzwalających**, dla każdego wskaźnika zdarzenia wyzwalającego wybranego w kroku 13 wybierz odpowiedni poziom, aby wygenerować żądany poziom alertów dotyczących działań. Można użyć zalecanych progów, progów niestandardowych lub progów opartych na nietypowych działaniach (dla niektórych wskaźników) powyżej dziennej normy dla użytkowników.
 18. Wybierz przycisk **Dalej**, aby kontynuować.
 19. Na stronie **Wskaźniki zasad** zostaną wyświetlone [wskaźniki](insider-risk-management-settings.md#indicators) zdefiniowane jako dostępne na stronie **Ustawienia** >  ryzyka niejawnych **testerówIndicators**. Wybierz wskaźniki, które chcesz zastosować do zasad.
 

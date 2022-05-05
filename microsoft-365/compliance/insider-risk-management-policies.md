@@ -1,7 +1,7 @@
 ---
 title: Zasady zarządzania ryzykiem wewnętrznym
-description: Dowiedz się więcej o zasadach zarządzania ryzykiem wewnętrznym w Microsoft 365
-keywords: Microsoft 365, zarządzanie ryzykiem wewnętrznym, zarządzanie ryzykiem, zgodność
+description: Dowiedz się więcej o zasadach zarządzania ryzykiem wewnętrznym w usłudze Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -13,14 +13,16 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7f77ca2f53e05291533395d3de5a860e9444732c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 8277c962b149cb105dd8e08e983594610618bdd4
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824031"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217425"
 ---
 # <a name="insider-risk-management-policies"></a>Zasady zarządzania ryzykiem wewnętrznym
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Zasady zarządzania ryzykiem wewnętrznym określają, którzy użytkownicy są w zakresie i jakie typy wskaźników ryzyka są skonfigurowane dla alertów. Można szybko utworzyć zasady, które mają zastosowanie do wszystkich użytkowników w organizacji lub zdefiniować poszczególnych użytkowników lub grupy do zarządzania w zasadach. Zasady obsługują priorytety zawartości, aby skoncentrować warunki zasad na wielu lub określonych Microsoft Teams, SharePoint lokacjach, typach poufności danych i etykietach danych. Za pomocą szablonów można wybrać określone wskaźniki ryzyka i dostosować progi zdarzeń dla wskaźników zasad, skutecznie dostosowując wyniki ryzyka oraz poziom i częstotliwość alertów. Ponadto dopalacze oceny ryzyka i wykrywanie anomalii pomagają zidentyfikować aktywność użytkownika, która ma większe znaczenie lub jest bardziej nietypowa. Okna zasad umożliwiają zdefiniowanie przedziału czasowego stosowania zasad do działań alertów i służą do określania czasu trwania zasad po aktywowaniu.
 
@@ -54,11 +56,11 @@ Szablony zarządzania ryzykiem wewnętrznym to wstępnie zdefiniowane warunki za
 Gdy użytkownicy opuszczają organizację, istnieją określone wskaźniki ryzyka zwykle związane z kradzieżą danych przez odchodzących użytkowników. Ten szablon zasad używa wskaźników eksfiltracji do oceniania ryzyka i koncentruje się na wykrywaniu i alertach w tym obszarze ryzyka. Kradzież danych dla odchodzących użytkowników może obejmować pobieranie plików z usługi SharePoint Online, drukowanie plików i kopiowanie danych do osobistych usług przesyłania komunikatów i magazynowania w chmurze w pobliżu ich rezygnacji z zatrudnienia i dat zakończenia. Korzystając z łącznika Microsoft 365 HR lub opcji automatycznego monitorowania usunięcia konta użytkownika w Azure Active Directory dla organizacji, ten szablon rozpoczyna ocenianie wskaźników ryzyka związanych z tymi działaniami i ich korelowania ze stanem zatrudnienia użytkowników.
 
 > [!IMPORTANT]
-> W przypadku korzystania z tego szablonu można skonfigurować łącznik Microsoft 365 HR, aby okresowo importować informacje o rezygnacji i dacie zakończenia dla użytkowników w organizacji. Zapoznaj się [z artykułem Importowanie danych za pomocą łącznika HR,](import-hr-data.md) aby uzyskać szczegółowe wskazówki dotyczące konfigurowania łącznika Microsoft 365 HR dla organizacji. Jeśli nie chcesz używać łącznika hr, musisz wybrać opcję Konto użytkownika usunięte z usługi Azure AD podczas konfigurowania zdarzeń wyzwalacza w kreatorze zasad.
+> W przypadku korzystania z tego szablonu można skonfigurować łącznik Microsoft 365 HR, aby okresowo importować informacje o rezygnacji i dacie zakończenia dla użytkowników w organizacji. Zapoznaj się [z artykułem Importowanie danych za pomocą łącznika HR,](import-hr-data.md) aby uzyskać szczegółowe wskazówki dotyczące konfigurowania łącznika Microsoft 365 HR dla organizacji. Jeśli nie chcesz używać łącznika hr, musisz wybrać opcję Konto użytkownika usunięte z Azure AD podczas konfigurowania zdarzeń wyzwalacza w kreatorze zasad.
 
 ### <a name="general-data-leaks"></a>Ogólne przecieki danych
 
-Ochrona danych i zapobieganie wyciekom danych jest stałym wyzwaniem dla większości organizacji, szczególnie w przypadku szybkiego wzrostu liczby nowych danych tworzonych przez użytkowników, urządzenia i usługi. Użytkownicy mogą tworzyć, przechowywać i udostępniać informacje między usługami i urządzeniami, które sprawiają, że zarządzanie wyciekami danych staje się coraz bardziej złożone i trudniejsze. Wycieki danych mogą obejmować przypadkowe nadmierne dzielenie informacji poza organizacją lub kradzież danych ze złośliwym zamiarem. Dzięki przypisanym zasadom ochrony przed utratą danych (DLP), wbudowanym lub dostosowywalnym wyzwalaczom, ten szablon rozpoczyna ocenianie w czasie rzeczywistym wykrywania podejrzanych SharePoint pobierania danych online, udostępniania plików i folderów, drukowania plików oraz kopiowania danych do osobistych usług przesyłania komunikatów i magazynowania w chmurze.
+Ochrona danych i zapobieganie wyciekom danych jest stałym wyzwaniem dla większości organizacji, szczególnie w przypadku szybkiego wzrostu liczby nowych danych tworzonych przez użytkowników, urządzenia i usługi. Użytkownicy mogą tworzyć, przechowywać i udostępniać informacje między usługami i urządzeniami, które sprawiają, że zarządzanie wyciekami danych staje się coraz bardziej złożone i trudniejsze. Wycieki danych mogą obejmować przypadkowe nadmierne dzielenie informacji poza organizacją lub kradzież danych ze złośliwym zamiarem. Dzięki przypisanym zasadom ochrony przed utratą danych (DLP) firmy Microsoft Purview, wbudowanym lub dostosowywalnym wyzwalaczom, ten szablon rozpoczyna ocenianie wykrywania podejrzanych SharePoint pobierania danych online, udostępniania plików i folderów, drukowania plików oraz kopiowania danych do osobistych usług przesyłania komunikatów i magazynowania w chmurze.
 
 W przypadku korzystania z szablonu *Wycieki danych* można przypisać zasady DLP w celu wyzwolenia wskaźników w zasadach ryzyka wewnętrznego dla alertów o wysokiej ważności w organizacji. Za każdym razem, gdy alert o wysokiej ważności jest generowany przez regułę zasad DLP, jest dodawany do dziennika inspekcji Office 365, zasady ryzyka wewnętrznego utworzone za pomocą tego szablonu automatycznie sprawdzają alert DLP o wysokiej ważności. Jeśli alert zawiera użytkownika w zakresie zdefiniowanego w zasadach ryzyka niejawnego dostępu do informacji poufnych, alert jest przetwarzany przez zasady ryzyka informacji poufnych jako nowy alert i przypisano do niego ważność ryzyka wewnętrznego i ocenę ryzyka. Możesz również przypisać wybrane wskaźniki jako wyzwalające zdarzenia dla zasad. Ta elastyczność i dostosowywanie ułatwia określanie zakresu zasad tylko do działań objętych wskaźnikami. Te zasady umożliwiają ocenę tego alertu w kontekście innych działań uwzględnionych w tym przypadku.
 
@@ -134,21 +136,21 @@ W zależności od szablonu wybranego dla zasad zarządzania ryzykiem wewnętrzny
 
 W poniższej tabeli wymieniono zdarzenia wyzwalające i wymagania wstępne dotyczące zasad utworzonych na podstawie każdego szablonu zasad zarządzania ryzykiem wewnętrznym:
 
-|Szablon zasad|Wyzwalanie zdarzeń dla zasad|Wymagania wstępne|
-|---|---|---|
-|**Kradzież danych przez odchodzących użytkowników**|Wskaźnik daty rezygnacji lub zakończenia z łącznika HR lub usunięcia konta Azure Active Directory|(opcjonalnie) łącznik Microsoft 365 HR skonfigurowany pod kątem wskaźników daty zakończenia i rezygnacji|
-|**Ogólne przecieki danych**|Działanie zasad wycieku danych, które tworzy alert *o wysokiej ważności* lub wbudowane wyzwalacze zdarzeń eksfiltracji|Zasady DLP skonfigurowane dla alertów *o wysokiej ważności* <br><br> LUB <br><br> Dostosowane wskaźniki wyzwalania|
-|**Wycieki danych według użytkowników o priorytecie**|Działanie zasad wycieku danych, które tworzy alert *o wysokiej ważności* lub wbudowane wyzwalacze zdarzeń eksfiltracji|Zasady DLP skonfigurowane dla alertów *o wysokiej ważności* <br><br> LUB <br><br> Dostosowane wskaźniki wyzwalania <br><br> Priorytetowe grupyużytkownikia|
-|**Wycieki danych przez niezadowolonych użytkowników**|Wskaźnik poprawy wydajności, niskiej wydajności lub wskaźników zmiany poziomu zadań z łącznika HR|Microsoft 365 łącznik hr skonfigurowany pod kątem wskaźników niezadowolenia|
-|**Ogólne naruszenia zasad zabezpieczeń**|Ochrona przed uchylaniem się od kontroli bezpieczeństwa lub niepożądanym oprogramowaniem wykrytym przez Ochrona punktu końcowego w usłudze Microsoft Defender|Aktywna subskrypcja Ochrona punktu końcowego w usłudze Microsoft Defender <br><br> integracja Ochrona punktu końcowego w usłudze Microsoft Defender z Centrum zgodności platformy Microsoft 365 skonfigurowana|
-|**Ogólne nieprawidłowe wykorzystanie danych pacjentów**|Ochrona przed uchylaniem się od kontroli bezpieczeństwa z systemów EMR <br><br> Wskaźniki dopasowywania adresów użytkowników i pacjentów z systemów HR|Wskaźniki dostępu do opieki zdrowotnej wybrane w ustawieniach ryzyka dotyczącego zasad lub informacji poufnych <br><br> łącznik Microsoft 365 HR skonfigurowany do dopasowywania adresów <br><br> Skonfigurowano łącznik Microsoft Healthcare lub Epic|
-|**Naruszenia zasad zabezpieczeń przez odchodzących użytkowników**|Wskaźniki daty rezygnacji lub zakończenia z łącznika HR lub usunięcia konta Azure Active Directory|(opcjonalnie) łącznik Microsoft 365 HR skonfigurowany pod kątem wskaźników daty zakończenia i rezygnacji <br><br> Aktywna subskrypcja Ochrona punktu końcowego w usłudze Microsoft Defender <br><br> integracja Ochrona punktu końcowego w usłudze Microsoft Defender z Centrum zgodności platformy Microsoft 365 skonfigurowana|
-|**Naruszenia zasad zabezpieczeń przez użytkowników o priorytecie**|Ochrona przed uchylaniem się od kontroli bezpieczeństwa lub niepożądanym oprogramowaniem wykrytym przez Ochrona punktu końcowego w usłudze Microsoft Defender|Aktywna subskrypcja Ochrona punktu końcowego w usłudze Microsoft Defender <br><br> integracja Ochrona punktu końcowego w usłudze Microsoft Defender z Centrum zgodności platformy Microsoft 365 skonfigurowana <br><br> Priorytetowe grupyużytkownikia|
-|**Naruszenia zasad zabezpieczeń przez niezadowolonych użytkowników**|Wskaźnik poprawy wydajności, niskiej wydajności lub wskaźników zmiany poziomu zadań z łącznika HR|Microsoft 365 łącznik hr skonfigurowany pod kątem wskaźników niezadowolenia <br><br> Aktywna subskrypcja Ochrona punktu końcowego w usłudze Microsoft Defender <br><br> integracja Ochrona punktu końcowego w usłudze Microsoft Defender z Centrum zgodności platformy Microsoft 365 skonfigurowana|
+| **Szablon zasad** | **Wyzwalanie zdarzeń dla zasad** | **Wymagania wstępne** |
+| :------------------ | :--------------------------------- | :---------------- |
+| **Kradzież danych przez odchodzących użytkowników** | Wskaźnik daty rezygnacji lub zakończenia z łącznika HR lub usunięcia konta Azure Active Directory | (opcjonalnie) łącznik Microsoft 365 HR skonfigurowany pod kątem wskaźników daty zakończenia i rezygnacji |
+| **Ogólne przecieki danych** | Działanie zasad wycieku danych, które tworzy alert *o wysokiej ważności* lub wbudowane wyzwalacze zdarzeń eksfiltracji | Zasady DLP skonfigurowane dla alertów *o wysokiej ważności* <br><br> LUB <br><br> Dostosowane wskaźniki wyzwalania |
+| **Wycieki danych według użytkowników o priorytecie** | Działanie zasad wycieku danych, które tworzy alert *o wysokiej ważności* lub wbudowane wyzwalacze zdarzeń eksfiltracji | Zasady DLP skonfigurowane dla alertów *o wysokiej ważności* <br><br> LUB <br><br> Dostosowane wskaźniki wyzwalania <br><br> Priorytetowe grupyużytkownikia |
+| **Wycieki danych przez niezadowolonych użytkowników** | Wskaźnik poprawy wydajności, niskiej wydajności lub wskaźników zmiany poziomu zadań z łącznika HR | Microsoft 365 łącznik hr skonfigurowany pod kątem wskaźników niezadowolenia |
+| **Ogólne naruszenia zasad zabezpieczeń** | Ochrona przed uchylaniem się od kontroli bezpieczeństwa lub niepożądanym oprogramowaniem wykrytym przez Ochrona punktu końcowego w usłudze Microsoft Defender | Aktywna subskrypcja Ochrona punktu końcowego w usłudze Microsoft Defender <br><br> Ochrona punktu końcowego w usłudze Microsoft Defender skonfigurowano integrację z portalem zgodności usługi Microsoft Purview |
+| **Ogólne nieprawidłowe wykorzystanie danych pacjentów** | Ochrona przed uchylaniem się od kontroli bezpieczeństwa z systemów EMR <br><br> Wskaźniki dopasowywania adresów użytkowników i pacjentów z systemów HR | Wskaźniki dostępu do opieki zdrowotnej wybrane w ustawieniach ryzyka dotyczącego zasad lub informacji poufnych <br><br> łącznik Microsoft 365 HR skonfigurowany do dopasowywania adresów <br><br> Skonfigurowano łącznik Microsoft Healthcare lub Epic |
+| **Naruszenia zasad zabezpieczeń przez odchodzących użytkowników** | Wskaźniki daty rezygnacji lub zakończenia z łącznika HR lub usunięcia konta Azure Active Directory | (opcjonalnie) łącznik Microsoft 365 HR skonfigurowany pod kątem wskaźników daty zakończenia i rezygnacji <br><br> Aktywna subskrypcja Ochrona punktu końcowego w usłudze Microsoft Defender <br><br> Ochrona punktu końcowego w usłudze Microsoft Defender skonfigurowano integrację z portalem zgodności usługi Microsoft Purview |
+| **Naruszenia zasad zabezpieczeń przez użytkowników o priorytecie** | Ochrona przed uchylaniem się od kontroli bezpieczeństwa lub niepożądanym oprogramowaniem wykrytym przez Ochrona punktu końcowego w usłudze Microsoft Defender | Aktywna subskrypcja Ochrona punktu końcowego w usłudze Microsoft Defender <br><br> Ochrona punktu końcowego w usłudze Microsoft Defender skonfigurowano integrację z portalem zgodności usługi Microsoft Purview <br><br> Priorytetowe grupyużytkownikia |
+| **Naruszenia zasad zabezpieczeń przez niezadowolonych użytkowników** | Wskaźnik poprawy wydajności, niskiej wydajności lub wskaźników zmiany poziomu zadań z łącznika HR | Microsoft 365 łącznik hr skonfigurowany pod kątem wskaźników niezadowolenia <br><br> Aktywna subskrypcja Ochrona punktu końcowego w usłudze Microsoft Defender <br><br> Ochrona punktu końcowego w usłudze Microsoft Defender skonfigurowano integrację z portalem zgodności usługi Microsoft Purview |
 
 ## <a name="prioritize-content-in-policies"></a>Określanie priorytetów zawartości w zasadach
 
-Zasady zarządzania ryzykiem wewnętrznym obsługują określanie wyższego priorytetu zawartości w zależności od tego, gdzie jest przechowywana lub jak jest klasyfikowana. Określenie zawartości jako priorytetu zwiększa ocenę ryzyka dla każdego skojarzonego działania, co z kolei zwiększa prawdopodobieństwo wygenerowania alertu o wysokiej ważności. Jednak niektóre działania w ogóle nie wygenerują alertu, chyba że powiązana zawartość zawiera wbudowane lub niestandardowe typy informacji poufnych lub została określona jako priorytet w zasadach.
+Zasady zarządzania ryzykiem wewnętrznym obsługują określanie wyższego priorytetu zawartości w zależności od tego, gdzie jest przechowywana, typ zawartości lub sposób jej klasyfikowania. Określenie zawartości jako priorytetu zwiększa ocenę ryzyka dla każdego skojarzonego działania, co z kolei zwiększa prawdopodobieństwo wygenerowania alertu o wysokiej ważności. Jednak niektóre działania w ogóle nie wygenerują alertu, chyba że powiązana zawartość zawiera wbudowane lub niestandardowe typy informacji poufnych lub została określona jako priorytet w zasadach.
 
 Na przykład twoja organizacja ma dedykowaną witrynę SharePoint dla wysoce poufnego projektu. Wycieki danych dotyczące informacji w tej SharePoint witrynie mogą naruszyć projekt i mieć znaczący wpływ na jego sukces. Dzięki określaniu priorytetów tej SharePoint lokacji w zasadach wycieków danych wyniki ryzyka dla kwalifikujących się działań są automatycznie zwiększane. Ta priorytetyzacja zwiększa prawdopodobieństwo, że te działania wygenerują alert o ryzyku wewnętrznym i podwyższą poziom ważności alertu.
 
@@ -157,6 +159,7 @@ Podczas tworzenia zasad zarządzania ryzykiem wewnętrznym w kreatorze zasad mo�
 - **SharePoint lokacji**: wszelkie działania skojarzone ze wszystkimi typami plików w zdefiniowanych SharePoint lokacjach mają wyższy wynik ryzyka. Użytkownicy konfigurujący zasady i wybierający priorytetowe witryny share point mogą wybierać SharePoint witryn, do których mają uprawnienia dostępu. Jeśli SharePoint witryny nie są dostępne do wyboru w zasadach przez bieżącego użytkownika, inny użytkownik z wymaganymi uprawnieniami może wybrać witryny dla zasad później lub bieżący użytkownik powinien mieć dostęp do wymaganych witryn.
 - **Typy informacji poufnych**: każde działanie skojarzone z zawartością zawierającą [typy informacji poufnych](sensitive-information-type-entity-definitions.md) ma wyższy wynik ryzyka.
 - **Etykiety poufności**: każde działanie skojarzone z zawartością, do którego zastosowano określone [etykiety poufności](sensitivity-labels.md) , otrzymuje wyższy wynik ryzyka.
+- **Rozszerzenia plików**: wszelkie działania skojarzone z zawartością, która ma określone rozszerzenia plików. Użytkownicy konfigurujący zasady kradzieży/wycieku danych, które wybierają **rozszerzenia plików do określenia priorytetów** w kreatorze zasad, mogą zdefiniować maksymalnie 50 rozszerzeń plików w celu określenia priorytetów w zasadach. Wprowadzone rozszerzenia mogą zawierać lub pomijać znak "". Jako pierwszy znak rozszerzenia o priorytetach.
 
 ## <a name="sequence-detection-preview"></a>Wykrywanie sekwencji (wersja zapoznawcza)
 
@@ -185,7 +188,7 @@ Aby dowiedzieć się więcej na temat zarządzania wykrywaniem sekwencji w widok
 
 Wskaźniki ryzyka wewnętrznego pomagają zidentyfikować nietypowe poziomy działań związanych z ryzykiem podczas codziennej oceny dla użytkowników, którzy są w zakresie zasad ryzyka wewnętrznego. Skumulowane wykrywanie eksfiltracji używa modeli uczenia maszynowego, aby ułatwić określenie, kiedy działania eksfiltracji wykonywane przez użytkownika w określonym czasie przekraczają normalną ilość wykonywaną przez użytkowników w organizacji w ciągu ostatnich 30 dni w wielu typach działań eksfiltracji. Jeśli na przykład użytkownik udostępnił więcej plików niż większość użytkowników w ciągu ostatniego miesiąca, to działanie zostanie wykryte i sklasyfikowane jako skumulowane działanie eksfiltracji.
 
-Analitycy i badacze zarządzania ryzykiem wewnętrznym mogą używać zbiorczych szczegółowych informacji dotyczących wykrywania eksfiltracji, aby ułatwić identyfikację działań eksfiltracji, które zazwyczaj nie generują alertów, ale są wyższe niż typowe dla ich organizacji. Niektóre przykłady mogą spowodować, że odchodzących użytkowników powoli eksfiltrują dane w ciągu kilku dni lub gdy użytkownicy wielokrotnie udostępniają dane w wielu kanałach bardziej niż zwykle na potrzeby udostępniania danych w organizacji.  Wyższe wyniki ryzyka są przypisywane do skumulowanych działań eksfiltracji dla witryn SharePoint, typów informacji poufnych i zawartości z [etykietami poufności](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) skonfigurowanymi jako zawartość priorytetowa w zasadach lub do działania obejmującego etykiety skonfigurowane jako wysoki priorytet w Microsoft Information Protection.
+Analitycy i badacze zarządzania ryzykiem wewnętrznym mogą używać zbiorczych szczegółowych informacji dotyczących wykrywania eksfiltracji, aby ułatwić identyfikację działań eksfiltracji, które zazwyczaj nie generują alertów, ale są wyższe niż typowe dla ich organizacji. Niektóre przykłady mogą spowodować, że odchodzących użytkowników powoli eksfiltrują dane w ciągu kilku dni lub gdy użytkownicy wielokrotnie udostępniają dane w wielu kanałach bardziej niż zwykle na potrzeby udostępniania danych w organizacji.  Wyższe wyniki ryzyka są przypisywane do skumulowanych działań eksfiltracji dla witryn SharePoint, typów informacji poufnych i zawartości z [etykietami poufności](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) skonfigurowanymi jako zawartość priorytetowa w zasadach lub do działań obejmujących etykiety skonfigurowane jako wysoki priorytet w usłudze Microsoft Purview Information Protection.
 
 Zbiorcze wykrywanie eksfiltracji jest domyślnie włączone w przypadku korzystania z następujących szablonów zasad:
 
@@ -234,7 +237,7 @@ Skorzystaj z poniższej tabeli, aby dowiedzieć się więcej na temat zaleceń, 
 |Nie wybrano żadnych wskaźników dla tych zasad|Wszystkie szablony zasad|Wskaźniki nie zostały wybrane dla zasad <br><br> Edytuj zasady i wybierz odpowiednie wskaźniki zasad dla zasad.|
 |Żadne grupy użytkowników o priorytecie nie są uwzględniane w tych zasadach|— Wycieki danych według użytkowników o priorytecie <br> — Naruszenia zasad zabezpieczeń przez użytkowników o priorytecie|Grupy użytkowników o priorytecie nie są przypisane do zasad. <br><br> Skonfiguruj grupy użytkowników o priorytecie w ustawieniach zarządzania ryzykiem wewnętrznym i przypisz priorytetowe grupy użytkowników do zasad.|
 |Dla tych zasad nie wybrano żadnego zdarzenia wyzwalającego|Wszystkie szablony zasad|Zdarzenie wyzwalające nie jest skonfigurowane dla zasad <br><br> Wyniki ryzyka nie będą przypisywane do działań użytkownika, dopóki nie zostaną edytowane zasady i nie wybierzesz zdarzenia wyzwalającego.|
-|Łącznik hr nie jest skonfigurowany lub działa zgodnie z oczekiwaniami|— Kradzież danych przez odchodzącego użytkownika <br> — Naruszenia zasad zabezpieczeń przez odchodzącego użytkownika <br> — Wycieki danych przez niezadowolonych użytkowników <br> — Naruszenia zasad zabezpieczeń przez niezadowolonych użytkowników|Wystąpił problem z łącznikiem HR. <br><br> 1. Jeśli używasz łącznika hr, sprawdź, czy łącznik HR wysyła poprawne dane <br><br> LUB <br><br> 2. Wybierz zdarzenie wyzwalające usunięcie konta usługi Azure AD.|
+|Łącznik hr nie jest skonfigurowany lub działa zgodnie z oczekiwaniami|— Kradzież danych przez odchodzącego użytkownika <br> — Naruszenia zasad zabezpieczeń przez odchodzącego użytkownika <br> — Wycieki danych przez niezadowolonych użytkowników <br> — Naruszenia zasad zabezpieczeń przez niezadowolonych użytkowników|Wystąpił problem z łącznikiem HR. <br><br> 1. Jeśli używasz łącznika hr, sprawdź, czy łącznik HR wysyła poprawne dane <br><br> LUB <br><br> 2. Wybierz zdarzenie wyzwalające usunięcie konta Azure AD.|
 |Żadne urządzenia nie są dołączone|— Kradzież danych przez odchodzących użytkowników <br> — Ogólne przecieki danych <br> — Wycieki danych przez niezadowolonych użytkowników <br> — Wycieki danych według użytkowników o priorytecie|Wskaźniki urządzenia są wybierane, ale nie ma żadnych urządzeń dołączonych do Microsoft 365 <br><br> Sprawdź, czy urządzenia są dołączone i spełniają wymagania.|
 |Łącznik hr nie przekazał ostatnio danych|— Kradzież danych przez odchodzącego użytkownika <br> — Naruszenia zasad zabezpieczeń przez odchodzącego użytkownika <br> — Wycieki danych przez niezadowolonych użytkowników <br> — Naruszenia zasad zabezpieczeń przez niezadowolonych użytkowników|Łącznik hr nie zaimportował danych od ponad 7 dni. <br><br> Sprawdź, czy łącznik hr jest poprawnie skonfigurowany i wysyła dane.|
 |Nie możemy teraz sprawdzić stanu łącznika hr. Sprawdź ponownie później|— Kradzież danych przez odchodzącego użytkownika <br> — Naruszenia zasad zabezpieczeń przez odchodzącego użytkownika <br> — Wycieki danych przez niezadowolonych użytkowników <br> — Naruszenia zasad zabezpieczeń przez niezadowolonych użytkowników|Rozwiązanie do zarządzania ryzykiem wewnętrznym nie może sprawdzić stanu łącznika hr. <br><br> Sprawdź, czy łącznik hr jest poprawnie skonfigurowany i wysyła dane, lub wróć i sprawdź stan zasad.|
@@ -268,11 +271,11 @@ Użyj poniższej tabeli, aby określić maksymalną liczbę użytkowników w zak
 
 ## <a name="create-a-new-policy"></a>Tworzenie nowych zasad
 
-Aby utworzyć nowe zasady zarządzania ryzykiem wewnętrznym, użyj kreatora zasad w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w Centrum zgodności platformy Microsoft 365.
+Aby utworzyć nowe zasady zarządzania ryzykiem wewnętrznym, użyjesz kreatora zasad w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w portalu zgodności usługi Microsoft Purview.
 
 Wykonaj następujące kroki, aby utworzyć nowe zasady:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Zasady**.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym** i wybierz kartę **Zasady** .
 2. Wybierz pozycję **Utwórz zasady** , aby otworzyć kreatora zasad.
 3. Na stronie **Szablon zasad** wybierz kategorię zasad, a następnie wybierz szablon dla nowych zasad. Te szablony składają się z warunków i wskaźników definiujących działania związane z ryzykiem, które chcesz wykryć i zbadać. Zapoznaj się z wymaganiami wstępnymi szablonu, wyzwalaniem zdarzeń i wykrytymi działaniami, aby potwierdzić, że ten szablon zasad spełnia Twoje potrzeby.
 
@@ -294,11 +297,12 @@ Wykonaj następujące kroki, aby utworzyć nowe zasady:
 
 10. Wybierz przycisk **Dalej**, aby kontynuować.
 
-11. Jeśli wybrano **opcję Chcę określić SharePoint witryny, etykiety poufności i/lub typy informacji poufnych jako zawartość priorytetu** w poprzednim kroku, zostaną wyświetlone strony szczegółów *dla witryn SharePoint*, *typów informacji poufnych* i *etykiet poufności*. Użyj tych stron szczegółów, aby zdefiniować SharePoint, typy informacji poufnych i etykiety poufności, aby określić priorytety w zasadach.
+11. Jeśli wybrano **opcję Chcę określić SharePoint witryny, etykiety poufności, typy informacji poufnych i/lub rozszerzenia plików jako zawartość priorytetu** w poprzednim kroku, zobaczysz strony szczegółów *dla witryn SharePoint*, *typów informacji poufnych*, *etykiet poufności* i *rozszerzeń plików*. Użyj tych stron szczegółów, aby zdefiniować SharePoint, typy informacji poufnych i etykiety poufności, aby określić priorytety w zasadach.
 
     - **SharePoint witryn**: wybierz pozycję **Dodaj SharePoint lokację** i wybierz SharePoint witryn, do których masz dostęp, i chcesz określić priorytety. Na przykład *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Typ informacji poufnych**: wybierz pozycję **Dodaj typ informacji poufnych** i wybierz typy poufności, które chcesz nadać priorytet. Na przykład *"Numer konta bankowego w Stanach Zjednoczonych"* i *"Numer karty kredytowej"*.
     - **Etykiety poufności**: wybierz pozycję **Dodaj etykietę poufności** i wybierz etykiety, które chcesz nadać priorytet. Na przykład *"Poufne"* i *"Tajne"*.
+    - **Rozszerzenia plików**: dodaj do 50 rozszerzeń plików. Możesz dołączyć lub pominąć "". z rozszerzeniem pliku. Na przykład plik *py* lub *py* określa priorytety plików języka Python.
 
     >[!NOTE]
     >Użytkownicy konfigurujący zasady i wybierający priorytetowe witryny share point mogą wybierać SharePoint witryn, do których mają uprawnienia dostępu. Jeśli SharePoint witryny nie są dostępne do wyboru w zasadach przez bieżącego użytkownika, inny użytkownik z wymaganymi uprawnieniami może wybrać witryny dla zasad później lub bieżący użytkownik powinien mieć dostęp do wymaganych witryn.
@@ -330,11 +334,11 @@ Wykonaj następujące kroki, aby utworzyć nowe zasady:
 
 ## <a name="update-a-policy"></a>Aktualizowanie zasad
 
-Aby zaktualizować istniejące zasady zarządzania ryzykiem wewnętrznym, użyj kreatora zasad w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w Centrum zgodności platformy Microsoft 365.
+Aby zaktualizować istniejące zasady zarządzania ryzykiem wewnętrznym, użyj kreatora zasad w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w portalu zgodności usługi Microsoft Purview.
 
 Wykonaj następujące kroki, aby zarządzać istniejącymi zasadami:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Zasady**.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym** i wybierz kartę **Zasady** .
 2. Na pulpicie nawigacyjnym zasad wybierz zasady, które chcesz zarządzać.
 3. Na stronie szczegółów zasad wybierz pozycję **Edytuj zasady**
 4. W kreatorze zasad nie można edytować następujących elementów:
@@ -346,16 +350,17 @@ Wykonaj następujące kroki, aby zarządzać istniejącymi zasadami:
 8. Wybierz przycisk **Dalej**, aby kontynuować.
 9. Na stronie **Zawartość do określania priorytetów** można przypisać (w razie potrzeby) źródła do priorytetyzacji, co zwiększa prawdopodobieństwo wygenerowania alertu o wysokiej ważności dla tych źródeł. Wybierz jedną z następujących opcji:
 
-    - **Chcę określić witryny SharePoint, etykiety poufności i/lub typy informacji poufnych jako zawartość priorytetu**. Wybranie tej opcji spowoduje włączenie stron szczegółów w kreatorze w celu skonfigurowania tych kanałów.
+    - **Chcę określić SharePoint witryny, etykiety poufności, typy informacji poufnych i/lub rozszerzenia plików jako zawartość priorytetu**. Wybranie tej opcji spowoduje włączenie stron szczegółów w kreatorze w celu skonfigurowania tych kanałów.
     - **Nie chcę teraz określać priorytetowej zawartości (będzie można to zrobić po utworzeniu zasad).** Wybranie tej opcji spowoduje pominięcie stron szczegółów kanału w kreatorze.
 
 10. Wybierz przycisk **Dalej**, aby kontynuować.
 
-11. Jeśli wybrano **opcję Chcę określić SharePoint witryny, etykiety poufności i/lub typy informacji poufnych jako zawartość priorytetu** w poprzednim kroku, zostaną wyświetlone strony szczegółów *dla witryn SharePoint*, *typów informacji poufnych* i *etykiet poufności*. Użyj tych stron szczegółów, aby zdefiniować SharePoint, typy informacji poufnych i etykiety poufności, aby określić priorytety w zasadach.
+11. Jeśli wybrano **opcję Chcę określić SharePoint witryn, etykiet poufności i/lub typów informacji poufnych jako zawartość priorytetu** w poprzednim kroku, zobaczysz strony szczegółów *dla witryn SharePoint*, *typów informacji poufnych* i *etykiet poufności*. Użyj tych stron szczegółów, aby zdefiniować SharePoint, typy informacji poufnych i etykiety poufności, aby określić priorytety w zasadach.
 
     - **SharePoint witryn**: wybierz pozycję **Dodaj SharePoint lokację** i wybierz SharePoint witryn, do których masz dostęp, i chcesz określić priorytety. Na przykład *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Typ informacji poufnych**: wybierz pozycję **Dodaj typ informacji poufnych** i wybierz typy poufności, które chcesz nadać priorytet. Na przykład *"Numer konta bankowego w Stanach Zjednoczonych"* i *"Numer karty kredytowej"*.
     - **Etykiety poufności**: wybierz pozycję **Dodaj etykietę poufności** i wybierz etykiety, które chcesz nadać priorytet. Na przykład *"Poufne"* i *"Tajne"*.
+    - **Rozszerzenia plików**: dodaj do 50 rozszerzeń plików. Możesz dołączyć lub pominąć "". z rozszerzeniem pliku. Na przykład plik *py* lub *py* określa priorytety plików języka Python.
 
     >[!NOTE]
     >Użytkownicy konfigurujący zasady i wybierający priorytetowe witryny share point mogą wybierać SharePoint witryn, do których mają uprawnienia dostępu. Jeśli SharePoint witryny nie są dostępne do wyboru w zasadach przez bieżącego użytkownika, inny użytkownik z wymaganymi uprawnieniami może wybrać witryny dla zasad później lub bieżący użytkownik powinien mieć dostęp do wymaganych witryn.
@@ -391,7 +396,7 @@ Może być konieczne utworzenie nowych zasad, które są podobne do istniejącyc
 
 Wykonaj następujące kroki, aby skopiować istniejące zasady:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Zasady**.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym** i wybierz kartę **Zasady** .
 2. Na pulpicie nawigacyjnym zasad wybierz zasady, które chcesz skopiować.
 3. Na stronie szczegółów zasad wybierz pozycję Kopiuj.
 4. W kreatorze zasad nadaj nowe zasady nazwę i zaktualizuj konfigurację zasad zgodnie z potrzebami.
@@ -411,7 +416,7 @@ Niektóre scenariusze, w których można natychmiast rozpocząć ocenianie dzia�
 
 Aby ręcznie rozpocząć działanie oceniania dla użytkowników w co najmniej jednej polityce zarządzania ryzykiem wewnętrznym, wykonaj następujące kroki:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Zasady**.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym** i wybierz kartę **Zasady** .
 2. Na pulpicie nawigacyjnym zasad wybierz zasady lub zasady, do które chcesz dodać użytkowników.
 3. Wybierz pozycję **Rozpocznij działanie oceniania dla użytkowników**.
 4. W **polu Przyczyna** w okienku **Dodawanie użytkowników do wielu zasad** dodaj przyczynę dodania użytkowników.
@@ -438,7 +443,7 @@ Aby zatrzymać ocenianie użytkowników w zasadach, zobacz artykuł [Insider ris
 
 Aby usunąć istniejące zasady zarządzania ryzykiem wewnętrznym, wykonaj następujące kroki:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Zasady**.
+1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym** i wybierz kartę **Zasady** .
 2. Na pulpicie nawigacyjnym zasad wybierz zasady, które chcesz usunąć.
 3. Wybierz pozycję **Usuń** na pasku narzędzi pulpitu nawigacyjnego.
 4. W oknie dialogowym **Usuwanie** wybierz pozycję **Tak** , aby usunąć zasady, lub wybierz pozycję **Anuluj** , aby zamknąć okno dialogowe.

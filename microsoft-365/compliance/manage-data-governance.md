@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Zaimplementuj możliwości zarządzania cyklem życia danych usługi Microsoft Purview & zarządzania rekordami usługi Microsoft Purview, aby zarządzać danymi pod kątem zgodności lub wymagań prawnych.
-ms.openlocfilehash: d79396b9489bc21f899eaa6ab1ef89b175831095
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0b507fad6b4455755a3a0036bff15a7973b906ee
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973361"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217635"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>Zarządzanie danymi za pomocą usługi Microsoft Purview
 
@@ -29,6 +29,9 @@ ms.locfileid: "64973361"
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Skorzystaj z możliwości **zarządzania cyklem życia danych usługi Microsoft Purview** (dawniej Microsoft Information Governance) i **zarządzania rekordami usługi Microsoft Purview** , aby zarządzać danymi pod kątem zgodności lub wymagań prawnych.
+
+> [!TIP]
+> Chcesz mapować dane i zarządzać nimi w całej infrastrukturze danych, w tym w wielu chmurach i oprogramowaniu jako usłudze (SaaS)? Użyj usług [Microsoft Purview Data Map, Microsoft Purview Data Catalog i Microsoft Purview Data Estate Szczegółowe informacje](/azure/purview/overview).
 
 Z [punktu widzenia licencjonowania](#licensing-requirements) zarządzanie cyklem życia danych i zarządzanie rekordami może znacznie się nakładać. Oba rozwiązania obsługują przechowywanie i usuwanie danych dla Microsoft 365 aplikacji i usług.
 

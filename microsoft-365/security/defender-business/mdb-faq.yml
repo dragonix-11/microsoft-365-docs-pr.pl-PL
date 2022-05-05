@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 8f544cfb15c03e78219fcb31bdae1e09cb7c628f
-  ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+  ms.openlocfilehash: 6819cfe99b118298ec1d319d42dc2246d8194943
+  ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 05/04/2022
-  ms.locfileid: "65188377"
+  ms.lasthandoff: 05/05/2022
+  ms.locfileid: "65217591"
 title: Microsoft Defender dla Firm — często zadawane pytania i odpowiedzi
 summary: >
   Skorzystaj z tego artykułu, aby uzyskać odpowiedzi na pytania dotyczące usługi Defender dla Firm.
@@ -63,8 +63,7 @@ sections:
   - question: Jakie są różnice między usługą Defender dla firm i usługą Defender for Endpoint Plans 1 i 2?
     answer: "Zarówno usługa Defender dla firm, jak i usługa Defender for Endpoint zapewniają silne możliwości ochrony przed zagrożeniami dla punktów końcowych firmy. Usługa Defender for Business została zaprojektowana dla małych i średnich firm (do 300 pracowników). Dzięki [uproszczonemu procesowi konfiguracji](mdb-simplified-configuration.md) i [opcjom dołączania urządzeń](mdb-onboard-devices.md) usługa Defender dla firm umożliwia klientom, którzy niekoniecznie mają doświadczenie w zakresie zabezpieczeń, konfigurowanie i używanie usługi Defender for Business do ochrony urządzeń firmowych.  \n\nAby dowiedzieć się więcej o różnicach, zobacz [Porównanie Microsoft Defender dla Firm z Microsoft 365 Business Premium](compare-mdb-m365-plans.md).\n"
   - question: Co się stanie, jeśli mam kombinację subskrypcji? Załóżmy na przykład, że 10 użytkowników ma przypisaną licencję usługi Defender dla Firm, a 10 innym użytkownikom przypisano licencję usługi Defender for Endpoint Plan 2 w tej samej dzierżawie?
-    answer: >
-      Licencje mieszane nie są obsługiwane. Najwyższa licencja funkcjonalna ustawia środowisko dzierżawy. W naszym przykładzie środowisko dzierżawy będzie mieć wartość [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) i będzie wymagać 20 licencji usługi Defender for Endpoint Plan 2. Należy pamiętać, że [usługa Defender dla firm](mdb-overview.md) i [Microsoft 365 Business Premium](/microsoft-365/business-premium/) są przeznaczone dla klientów, którzy mają maksymalnie 300 użytkowników. W przypadku klientów, którzy potrzebują więcej niż 300 miejsc, zalecamy uzyskanie Microsoft 365 E3, E5 lub Ochrona punktu końcowego w usłudze Microsoft Defender planu 1 lub planu 2.
+    answer: "Licencje mieszane nie są obsługiwane. Najwyższa funkcjonalna licencja usługi Defender ustawia środowisko dzierżawy. \n\nW naszym przykładzie środowisko dzierżawy będzie mieć wartość [Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) dla wszystkich 20 użytkowników. \n\nNależy pamiętać, że [usługa Defender dla firm](mdb-overview.md) i [Microsoft 365 Business Premium](/microsoft-365/business-premium/) są przeznaczone dla klientów, którzy mają maksymalnie 300 użytkowników. W przypadku klientów, którzy potrzebują więcej niż 300 licencji użytkowników, zalecamy uzyskanie subskrypcji przedsiębiorstwa obejmującej Ochrona punktu końcowego w usłudze Microsoft Defender plan 1 lub plan 2.\n\nAby uzyskać szczegółowe informacje na temat licencji, zobacz [Licencjonowanie i postanowienia dotyczące produktów dla subskrypcji Microsoft 365](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).\n"
   - question: Mam inną subskrypcję usługi Microsoft Cloud. Dlaczego nie widzę Microsoft Defender dla Firm w portalu?
     answer: "Obecnie, gdy klient ma wiele subskrypcji, pierwszeństwo ma najwyższa subskrypcja. Oto kilka przykładów:\n\n- Przykład 1: Jeśli masz [Ochrona punktu końcowego w usłudze Microsoft Defender plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (zakupiona lub próbna subskrypcja) i uzyskasz Microsoft Defender dla Firm, pierwszeństwo ma usługa Defender for Endpoint Plan 2. W takim przypadku nie zobaczysz środowiska usługi Defender dla Firm.\n- Przykład 2: Jeśli masz [Microsoft Defender dla Chmury](/azure/defender-for-cloud/defender-for-cloud-introduction) (zakupioną lub próbną subskrypcję) i otrzymasz usługę Defender dla Firm, Defender dla Chmury ma pierwszeństwo. W takim przypadku nie zobaczysz środowiska usługi Defender dla Firm.\n\n\n\n \n \n"
 additionalContent: >-

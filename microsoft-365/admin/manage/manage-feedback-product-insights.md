@@ -1,5 +1,5 @@
 ---
-title: Opinie o serwerach np. produktów firmy Microsoft i szczegółowe informacje dla Twojej organizacji
+title: Opinie i szczegółowe informacje dotyczące serwera NPS produktu firmy Microsoft dla Twojej organizacji
 f1.keywords:
 - NOCSH
 ms.author: Kwekua
@@ -16,150 +16,153 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Użyj wyników NET promoter scores (NPS) od użytkowników końcowych, aby sprawdzić, jak się czujesz na temat produktów i usług firmy Microsoft.
-ms.openlocfilehash: 230225edf924a418a65055a2527f9f7ded28ba61
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+description: Użyj wyników promotora net (NPS) od użytkowników końcowych, aby zobaczyć, jak czują się w przypadku produktów i usług firmy Microsoft.
+ms.openlocfilehash: ec261553a5713d9e12205cbf4c88611a128bc48b
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016546"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217359"
 ---
-# <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Opinie o serwerach np. produktów firmy Microsoft i szczegółowe informacje dla Twojej organizacji
+# <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Opinie i szczegółowe informacje dotyczące serwera NPS produktu firmy Microsoft dla Twojej organizacji
 
-Jako administrator organizacji danych Microsoft 365 możesz uzyskiwać dostęp do ankiet produktu NPS wysłanych przez firmę Microsoft i uzyskiwać do nich dostęp.  
+Jako administrator organizacji Microsoft 365 możesz uzyskiwać dostęp do szczegółowych informacji z ankiet produktów NPS wysyłanych przez firmę Microsoft.  
 
-Ankiety Net Promoter Score (NPS) zbierają opinie użytkowników i zmierzą, czy użytkownicy zalecają produkty i usługi znajomym i współpracownikom. Te dane mogą być używane w Twojej organizacji do określania strategii przyjęcia i wdrożenia Microsoft 365 produktów i usług.
+Ankiety Net Promoter Score (NPS) zbierają opinie użytkowników i mierzą prawdopodobieństwo, że użytkownicy będą polecać produkty i usługi znajomym i współpracownikom. Te dane mogą być używane w organizacji do określania strategii wdrażania i wdrażania Microsoft 365 produktów i usług.
 
-Używamy ankiet NPS i opinii od Twoich użytkowników końcowych, aby dostarczać Ci szczegółowych informacji na temat produktów i usług firmy Microsoft. Te informacje mogą ułatwić ustalenie, z jakich produktów i usług korzystali użytkownicy końcowi w organizacji, a także pomóc w identyfikowaniu problemów i ich szybkiego rozwiązywaniu. Za pomocą tych informacji możesz:
+Używamy ankiet nps i opinii użytkowników końcowych, aby zapewnić ci szczegółowe informacje na temat produktów i usług firmy Microsoft. Te informacje mogą pomóc ci dowiedzieć się, z jakich produktów i usług korzystają użytkownicy końcowi w organizacji, a także pomóc w identyfikowaniu problemów i ich szybkim rozwiązywaniu. Dzięki tym informacjom możesz:
 
-- Dostęp do głównych tematów, które są omawiane przez użytkowników.
-- Zidentyfikuj szczęśliwych użytkowników.
-- Wykonuj skargi od niechcianych użytkowników.
-- Sprawdź, z jakiego systemu operacyjnego lub platformy korzystają ludzie.
-- Filtruj według produktu, platformy, kanału lub wyszukiwania za pomocą słów kluczowych.
-- Zobacz komentarze użytkowników końcowych na temat najgorętszych produktów i problemów.
-- Wyeksportuj opinie i informacje z ankiet do pliku CSV.
+- O dostępie do najważniejszych motywów dyskutują użytkownicy.
+- Identyfikowanie zadowolonych użytkowników.
+- Rozwiąz skargi niezadowolonych użytkowników.
+- Zobacz, z jakiego systemu operacyjnego lub platformy korzystają użytkownicy.
+- Filtruj według produktu, platformy, kanału lub wyszukiwania przy użyciu słów kluczowych.
+- Zobacz komentarze użytkowników końcowych dotyczące najważniejszych produktów i problemów.
+- Eksportuj opinie i informacje o ankiecie do pliku CSV.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Aby wyświetlać i odczytywać [raporty](../add-users/about-admin-roles.md) z ankiet, musisz być administratorem. Aby wyświetlać i odczytywać raporty z ankiet, organizacja musi mieć włączone ankiety. Aby dowiedzieć się [więcej, zobacz Zarządzanie opiniami firmy Microsoft](manage-feedback-ms-org.md) dla Twojej organizacji.
+Musisz być [administratorem](../add-users/about-admin-roles.md) , aby wyświetlać i odczytywać raporty z ankiet. Twoja organizacja musi mieć włączone ankiety opinii, aby wyświetlać i odczytywać raporty ankiet. Aby dowiedzieć się więcej, zapoznaj się z [artykułem Zarządzanie opiniami firmy Microsoft dla organizacji](manage-feedback-ms-org.md) .
 
-## <a name="nps-survey-insights"></a>Szczegółowe informacje z ankiety NPS
+> [!IMPORTANT]
+> Przed wyświetleniem szczegółowych informacji o ankiecie NPS użytkownicy końcowi muszą wykonać co najmniej 30 ankiet nps.
 
-1. W centrum administracyjnym przejdź do szczegółowych informacji z ankiety **SNPS** >  dotyczącej opinii o **wynikach** >  **healthProduct**.
-2. Na stronie **szczegółowych informacji z ankiety NPS** przejdź do tej strony, aby wyświetlić szczegółowe informacje z ankiety dotyczącej np. twojej organizacji.
+## <a name="nps-survey-insights"></a>Szczegółowe informacje o ankiecie nps
 
-:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Zrzut ekranu: główny wykres Net Promoter Score (NPS)":::
+1. W centrum administracyjnym przejdź do **obszaru HealthProduct** **feedbackNPS survey insights** (Informacje o  >  ankiecie HealthProductNPS > ).
+2. Na stronie **Analizy ankiet nps** przejdź na stronę, aby wyświetlić szczegółowe informacje o ankietach związane z serwerem NPS w organizacji.
 
-### <a name="top-topic-filters"></a>Filtry najgorętszych tematów
+:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Zrzut ekranu: Wykres główny Net Promoter Score (NPS)":::
 
-Zidentyfikowaliśmy typowe motywy na stronie opinii użytkowników. Następnie używaliśmy modeli uczenia maszynowego, które przeszkoliły zestawy danych i automatycznie uporządkowały opinie w **tematy na początku**. Następnie możesz zidentyfikować pięć najważniejszych tematów, mając najwięcej opinii pełnej szczegółowości.  
+### <a name="top-topic-filters"></a>Filtry najważniejszych tematów
 
-:::image type="content" source="../../media/top-topics-filter.png" alt-text="Zrzut ekranu: pięć najważniejszych tematów z najbardziej szczegółową opinią":::
+Zidentyfikowaliśmy typowe motywy z opinii użytkowników. Następnie użyliśmy modeli uczenia maszynowego, które szkolą zestawy danych i automatycznie organizują opinie w **najważniejsze tematy**. Następnie możesz zidentyfikować pięć najważniejszych tematów z największą ilością dosłownych opinii.  
+
+:::image type="content" source="../../media/top-topics-filter.png" alt-text="Zrzut ekranu: pięć najważniejszych tematów z najbardziej dosłowną opinią":::
 
 > [!NOTE]
-> Publikujemy inteligentny temat tylko wtedy, gdy spełnia on minimalny pasek jakości ustawiony we współpracy z ekspertami w dziedzinie. Do określenia tej samej metryki są używane metryki dokładności i odwołania.
+> Publikujemy inteligentny temat dopiero po spełnieniu minimalnego paska jakości ustawionego we współpracy z ekspertami z dziedziny. Metryki precyzji i odwołania są używane do określania tego samego.
 
-**Dokładność verbatim** jest tym, czy jest prawdopodobieństwo, że czasowniki sklasyfikowane w tym temacie są poprawne.
+**Dokładność dosłowna** to prawdopodobieństwo, że dosłowne sklasyfikowanie w tym temacie jest poprawne.
 
-**Verbatim Recall is** how likely that a verbatim related to this topic is classified in this topic.
+**Przypomnij sobie** , jak prawdopodobne jest sklasyfikowanie dosłownego elementu związanego z tym tematem w tym temacie.
 
-Obecnie dostępne tematy są następujące:
+Tematy, które są obecnie dostępne w następujący sposób:
 
-**Zarządzanie** zmianami odnosi się do komentarzy klientów dotyczących zaktualizowanych funkcji, w tym procesu aktualizacji, sposobu używania ulubionych aplikacji i zmian w projekcie.
+**Usługa Change Management** odnosi się do komentarzy klientów dotyczących zaktualizowanych środowisk, w tym procesu aktualizacji, sposobu korzystania z ulubionych aplikacji i zmian projektu.
 
-- Verbatim Precision- 82%
-- Odwołanie czasownikowe — 81%
+- Precyzja dosłowna — 82%
+- Dosłowne odwołanie- 81%
 
-**Współpraca** to takie, które ułatwiają użytkownikom współpracę przy użyciu aplikacji firmy Microsoft.
+**Współpraca** odnosi się do tego, jak łatwo użytkownicy mogą współpracować przy użyciu aplikacji firmy Microsoft.
 
-- Verbatim Precision- 92%
-- Odwołanie czasownikowe-91%
+- Precyzja dosłowna — 92%
+- Dosłowne odwołanie-91%
 
-**Złożoność** odnosi się do opinii klientów, czy ich zdaniem aplikacje są złożone, czy proste w użyciu.
+**Złożoność** odnosi się do opinii klientów na temat tego, czy ich zdaniem aplikacje są złożone, czy proste w użyciu.
 
-- Verbatim Precision- 92%
-- Odwołanie czasownikowe — 89%
+- Precyzja dosłowna — 92%
+- Dosłowne odwołanie- 89%
 
-**Ogólne Pochwała** się do komentarzy klientów, które mają pozytywny sentyment i nie mieszczą się w innych tematach.
+**Ogólne Pochwała** odnosi się do komentarzy klientów, które mają pozytywną tonację i nie pasują do innego tematu.
 
-- Verbatim Precision- 93%
-- Odwołanie czasownikowe — 98%
+- Precyzja dosłowna — 93%
+- Dosłowne odwołanie — 98%
 
-**Niezawodność** zawiera komentarze klientów dotyczące zachowania aplikacji i systemu, czego wynikiem jest nieoczekiwane zakończenie.
+**Niezawodność** obejmuje komentarze klientów dotyczące zachowania aplikacji i systemu, co skutkuje nieoczekiwanym zakończeniem.
 
-- Verbatim Precision- 97%
-- Odwołanie czasownikowe — 94%
+- Precyzja dosłowna — 97%
+- Dosłowne odwołanie — 94%
 
-**Nawigacja** zawiera komentarze klientów dotyczące nawigacji po aplikacji i użyteczności.  
+**Nawigacja** obejmuje komentarze klientów dotyczące nawigacji i użyteczności aplikacji.  
 
-- Verbatim Precision- 93%
-- Odwołanie czasownikowe — 98%
+- Precyzja dosłowna — 93%
+- Dosłowne odwołanie — 98%
 
-**Wydajność** to komentarze klientów, które dotyczą problemów odbieranych przez użytkowników podczas korzystania z produktu firmy Microsoft. W tym temacie nie o kwestie związane z awariami i szerszymi problemami z niezawodnością.
+**Wydajność** odnosi się do komentarzy klientów, które dotyczą problemów związanych z postrzeganą szybkością operacji, które użytkownik doświadcza podczas korzystania z produktu firmy Microsoft. W tym temacie nie opisano obszarów awarii ani szerszych problemów z niezawodnością.
 
-- Verbatim Precision- 92%
-- Odwołanie czasownikowe — 98%
+- Precyzja dosłowna — 92%
+- Dosłowne odwołanie — 98%
 
-**Niezawodność** to komentarze klientów dotyczące zachowania aplikacji i systemu, czego wynikiem jest nieoczekiwane zakończenie.  
+**Niezawodność** odnosi się do komentarzy klientów dotyczących zachowania aplikacji i systemu, co powoduje nieoczekiwane zakończenie działania.  
 
-Verbatim Precision- 97% Verbatim Recall-94%
+Precyzja dosłowna — 97% dosłowne wycofanie — 94%
 
-**User Education** składa się z komentarzy klientów do dokumentacji pomocy, samouczków, przewodników i innej zawartości edukacyjnej w produktach lub online.
+**Usługa User Education** składa się z komentarzy klientów dotyczących dokumentacji pomocy, samouczków, przewodników i innej zawartości szkoleniowej w produkcie lub online.
 
-- Verbatim Precision- 83%
-- Odwołanie czasownikowe — 87%
+- Precyzja dosłowna — 83%
+- Dosłowne odwołanie- 87%
 
-**Wartość** odnosi się do schłodnych informacji o klientach, w tym o preferencjach związanych z cenami i płatnościami.  
+**Wartość** odnosi się do postrzegania przez klientów tematów, w tym preferencji dotyczących cen i płatności.  
 
-- Verbatim Precision- 86%
-- Odwołanie czasownikowe — 100%
+- Precyzja dosłowna — 86%
+- Dosłowne odwołanie — 100%
 
 ### <a name="chart-information"></a>Informacje o wykresie
 
-**Całkowita liczba** opinii zawiera łączną liczbę odpowiedzi na opinie serwera NPS przesłanych przez użytkowników końcowych, w tym opinie np. z komentarzami i bez komentarzy.
+**Łączna liczba opinii** pokazuje całkowitą liczbę odpowiedzi opinii nps przesyłanych przez użytkowników końcowych, obejmują opinie nps z komentarzami i bez komentarzy.
 
-**Komentarze** zawierają łączną liczbę odpowiedzi na opinie serwera NPS przesłanych przez użytkownika końcowego, w tym komentarze.
+**Komentarze** pokazują całkowitą liczbę odpowiedzi opinii nps przesłanych przez użytkownika końcowego, które zawierają komentarze.
 
-**Liczba odpowiedzi według aplikacji pokazuje** łączną liczbę odpowiedzi na opinie serwera NPS według aplikacji.
+**Wolumin odpowiedzi według aplikacji** pokazuje całkowitą liczbę woluminów odpowiedzi opinii nps według aplikacji.
 
-**Liczba odpowiedzi według platformy pokazuje** łączną liczbę odpowiedzi na opinie serwera NPS według platformy.
+**Wolumin odpowiedzi według platformy** pokazuje całkowitą liczbę odpowiedzi na opinie nps według platformy.
 
-**Wolumin opinii według miesiąca** zawiera łączną liczbę odpowiedzi na opinie serwera NPS w ciągu ostatnich dwunastu miesięcy.
+**Liczba opinii według miesięcy** pokazuje całkowitą liczbę odpowiedzi na opinie nps w ciągu ostatnich dwunastu miesięcy.
 
-:::image type="content" source="../../media/response-details.png" alt-text="Zrzut ekranu: głośność odpowiedzi i głośność odpowiedzi według miesięcy":::
+:::image type="content" source="../../media/response-details.png" alt-text="Zrzut ekranu: Wolumin odpowiedzi i wolumin odpowiedzi według miesiąca":::
 
-Wykresy są filtrowane według klasyfikacji NPS w następujący sposób:
+Wykresy są filtrowane według klasyfikacji nps w następujący sposób:
 
-- Detr oznaczanie jest niechcianych klientów, którzy są mało prawdopodobne, aby polecić Ci produkt lub usługę.
-- Strony pasywne to klienci, którzy są zadowoleni z usługi, ale nie na tyle, aby polecić produkt lub usługę.
-- Promoters — radosni klienci, którzy są lojalni, pasjonują się i polecą Twój produkt lub usługę.
+- Przeciwnicy są nieszczęśliwi klienci, którzy są mało prawdopodobne, aby polecić swój produkt lub usługę.
+- Pasywni to klienci, którzy są zadowoleni z usługi, ale za mało, aby polecić produkt lub usługę.
+- Promotorzy — zadowoleni klienci, którzy są lojalni, entuzjastyczni i prawdopodobnie polecą Twój produkt lub usługę.
 
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Zrzut ekranu: wykres pokazujący, czy polecisz aplikację znajomym lub współpracownikom":::
+:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Zrzut ekranu: Wykres przedstawiający prawdopodobieństwo polecenia aplikacji znajomemu lub współpracownikowi":::
 
 ### <a name="export-to-csv-and-search"></a>Eksportowanie do pliku CSV i wyszukiwanie
 
-Nieprzetworzone dane można wyeksportować do dalszej analizy przy użyciu funkcji Eksportowanie do pliku CSV. Słowa kluczowe można wyszukać w sekcji komentarzy odpowiadającej obszarowi opinii.
+Nieprzetworzone dane można wyeksportować do dalszej analizy przy użyciu funkcji Eksportuj do pliku CSV. Słowa kluczowe można wyszukiwać w sekcji komentarzy, która odpowiada obszarowi opinii.
 
-:::image type="content" source="../../media/export-to-csv.png" alt-text="Zrzut ekranu: wybierz opcję eksportu do pliku CSV":::
+:::image type="content" source="../../media/export-to-csv.png" alt-text="Zrzut ekranu: Wybierz, aby wyeksportować do pliku CSV":::
 
 > [!NOTE]
-> Nieprzetworzone dane zawierają wszystkie typy opinii, w tym opinie inne niż dane nps.
+> Nieprzetworzone dane obejmują wszystkie typy opinii, w tym opinie inne niż nps.
 
 ### <a name="filters"></a>Filtry
 
-Możesz filtrować według **kanałów**, **produktów**, **platform** **i typów opinii**.
+Możesz filtrować według **kanałów**, **produktów**, **platform** i **typów opinii**.
 
-**Kanały** to sposób organizacji na wybranie, jak często będą one o nowych funkcjach w Office. Aby uzyskać więcej [informacji, zobacz Omówienie kanałów aktualizacji dla Aplikacje Microsoft 365](/deployoffice/overview-update-channels). Ten filtr umożliwia filtrowanie w celu filtrowania opinii przesłanych przez użytkownika w określonym kanale.
+**Kanały** umożliwiają organizacjom wybieranie, jak często pobierają aktualizacje funkcji dla Office. Dowiedz się więcej na [stronie Przegląd kanałów aktualizacji dla Aplikacje Microsoft 365](/deployoffice/overview-update-channels). Ten filtr umożliwia filtrowanie w dół do opinii przesłanych przez użytkownika w określonym kanale.
 
-Opinie można przesłać na różnych **platformach**, takich jak Android, iOS, Mac i Windows. Ten filtr umożliwia filtrowanie opinii na podstawie platformy, na której zostało przesłane.
+Opinie można przesyłać na różnych **platformach**, takich jak Android, iOS, Mac i Windows. Ten filtr umożliwia filtrowanie opinii na podstawie platformy, na którą została przesłana.
 
-Ten filtr umożliwia Microsoft 365 produktów dla firm. Użyj tego filtru, aby wybrać produkty, które przesłały opinię.
+Większość Microsoft 365 **produktów** biznesowych można znaleźć w tym filtrze. Użyj tego filtru, aby wybrać produkty, które zostały przesłane przez opinię.
 
-**Typy opinii** (ustawione tylko dla typów opinii NPS) do filtrowania zbieranych opinii.
+Użyj **typów opinii** (ustawionych tylko na typy opinii nps), aby filtrować zbierane opinie.
 
-:::image type="content" source="../../media/feedback-filters.png" alt-text="Zrzut ekranu: wykres przedstawiający typy opinii":::
+:::image type="content" source="../../media/feedback-filters.png" alt-text="Zrzut ekranu: Wykres przedstawiający typy opinii":::
 
-### <a name="we-want-to-hear-from-you"></a>Chcemy usłyszeć Od Ciebie
+### <a name="we-want-to-hear-from-you"></a>Chcemy usłyszeć od Ciebie
 
-Podziel się swoimi pomysłami na temat pulpitu nawigacyjnego szczegółowych informacji z ankiet NPS i pomysłami na to, jak je ulepszyć. Skorzystaj z sekcji Opinii w produktach i usługach. Możesz również wysłać nam wiadomość e-mail na adres prosight@microsoft.com
+Podziel się swoimi przemyśleniami na temat pulpitu nawigacyjnego analizy ankiet nps i swoich pomysłów dotyczących sposobu jego ulepszania. Skorzystaj z sekcji Opinie w produktach i usługach. Możesz również wysłać do nas wiadomość e-mail na adres prosight@microsoft.com
