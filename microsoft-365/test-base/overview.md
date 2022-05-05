@@ -1,6 +1,6 @@
 ---
 title: Omówienie
-description: Opis bazy testowej
+description: Omówienie bazy testów
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -14,55 +14,50 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 8d7539dfeecf1e34a639bc506f312c35a4243323
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: 13eaea1e62dd030f86e08d885ad743d673d6142c
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63405927"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231698"
 ---
-# <a name="what-is-test-base-for-microsoft-365"></a>Co to jest podstawa testowa dla Microsoft 365?
+# <a name="what-is-test-base-for-microsoft-365"></a>Co to jest baza testowa dla Microsoft 365?
 
-Test Base for Microsoft 365 (Test Base) to usługa sprawdzania poprawności firmy Microsoft oparta na bezpiecznym środowisku platformy Azure.
-Dzięki bazie testowej dostawcy oprogramowania (SV) i integratorzy systemu mogą przyspieszyć weryfikację swoich aplikacji przed Windows kompilacjami zabezpieczeń i funkcji. Jest to wysoce zaangażowani partnerzy OZP i firma Microsoft umożliwiająca wspólne testowanie, sprawdzanie poprawności i rozwiązywanie problemów.
+Baza testowa to usługa platformy Azure, która umożliwia testowanie aplikacji opartych na danych przy jednoczesnym zapewnieniu użytkownikom dostępu do inteligentnych testów z dowolnego miejsca na świecie.
 
-Baza testowa zapewnia świetną możliwość tworzenia i utrzymywania bezpiecznej usługi sprawdzania poprawności na platformie Azure, w której klienci i partnerzy mogą testować obciążenia aplikacji etapami i testować je w oparciu o wstępnie wydane aktualizacje zabezpieczeń.
+Następujące jednostki są zachęcane do dołączania swoich aplikacji, plików binarnych i skryptów testowych do bazy testowej dla usługi Microsoft 365: niezależni dostawcy oprogramowania (ISV), integratorzy systemu (SI) w celu weryfikowania swoich aplikacji i specjalistów IT, którzy chcą weryfikować swoje aplikacje biznesowe poprzez integrację z Microsoft Intune.
 
-Dzięki bazie testowej telewizory są bardziej widoczne w przypadku potencjalnych problemów, które mogą utrudnić ich stosowanie w jak najlepszym wydaniu nowej wersji systemu operacyjnego przed wydaniem przez firmę Microsoft aktualizacji na rynek.
+## <a name="why-test-your-application-with-test-base"></a>Dlaczego warto przetestować aplikację przy użyciu bazy testowej?
 
-Ta nowa usługa pomoże w uproszczonym i bardziej efektywnym testowaniu telewizorów. Enterprise będą wspólnie testować aplikacje SV i Microsoft w środowisku współpracy i zyskać większą pewność, że ich aplikacje będą działać zgodnie z oczekiwaniami.
+Usługa Test Base for Microsoft 365 może w razie potrzeby dostosować się do rozszerzenia macierzy testowania, dzięki czemu będziesz mieć pewność co do integralności, zgodności i użyteczności aplikacji.
 
-**Baza testowa Advantages oferuje przedsiębiorstwom i ich partnerom OZP:**
+Baza testowa umożliwia aplikacji kontynuowanie pracy zgodnie z oczekiwaniami, nawet jeśli zależności platformy są różne, a nowe aktualizacje są stosowane przez usługę aktualizacji Windows. Dzięki bazie testów można uniknąć pogorszenia, przedłużających się zobowiązań czasowych oraz kosztów konfigurowania i utrzymywania złożonego środowiska laboratoryjnego na potrzeby testowania aplikacji.
 
-- Szybsze wycofywanie aktualizacji zabezpieczeń w celu zabezpieczenia twoich urządzeń;
-- Obniżenie kosztów sprawdzania poprawności aktualizacji przez hostowanie zmian systemu operacyjnego i aplikacji w tym samym środowisku.
-- Raport analizy światowej klasy firmy Microsoft na temat Twoich aplikacji (zakres kodu, analiza wpływu interfejsu API i tak dalej);
-- Doświadczenie firmy Microsoft w zmienianiu zawartości testowej i wykorzystania ich na platformę Azure.
+Ponadto można automatycznie testować zgodność z aktualizacjami zabezpieczeń i funkcji dla Windows przy użyciu bezpiecznych maszyn wirtualnych, jednocześnie uzyskując dostęp do światowej klasy analizy na potrzeby testowania aplikacji. Możesz również przetestować aplikacje pod kątem zgodności z wstępnymi aktualizacjami zabezpieczeń systemu Windows, przesyłając żądanie uzyskania dostępu.
 
-## <a name="guide-to-navigating-the-test-base-portal"></a>Przewodnik po portalu Test Base
+## <a name="how-does-test-base-work"></a>Jak działa baza testów?
 
-Ten przewodnik jest podzielony na cztery (4) części, aby zapewnić bezpieczeństwo podczas korzystania z naszej usługi:
+Aby zarejestrować się w usłudze Test Base, zobacz [Tworzenie nowego konta bazy testów](createAccount.md).
 
-1. Przegląd **,** który zawiera szczegółowe, krok po kroku wskazówki dotyczące przekazywania aplikacji za pośrednictwem naszego samoobsługowego portalu dołączania.
+Po zarejestrowaniu klienta w usłudze Test Base wystarczy rozpocząć przekazywanie pakietów aplikacji do testowania.
 
-2. Sekcja **Szybki start** zawiera informacje o formacie struktury folderów sformatowanych oraz o tym, co należy wiedzieć podczas przygotowywania skryptów testowych.
+Po pomyślnym przekazaniu pakiety są testowane pod kątem Windows aktualizacji wersji wstępnej.
 
-3. Przewodnik **instrukcje, który** zawiera szczegółowe informacje na temat sposobu używania bazy testowej do wywchyniania wyników testów.
+Po pomyślnym zakończeniu testów początkowych klient może dokładnie zapoznać się ze szczegółowymi informacjami na temat analizy wydajności i regresji, aby wykryć, czy aktualizacje zawartości w wersji wstępnej w jakikolwiek sposób obniżają wydajność aplikacji.
 
-4. Sekcja **Reference** (Odwołanie) zawiera odpowiedzi na typowe pytania, jakie otrzymujemy od naszych klientów.
+Jeśli jednak pakiet nie przeszedł żadnego testu, klient może również wykorzystać Szczegółowe informacje z regresji pamięci lub procesora CPU, aby skorygować awarię, a następnie zaktualizować pakiet w razie potrzeby.
 
-## <a name="test-base-has-reached-general-availability"></a>Baza testowa osiągnęła ogólną dostępność
+W przypadku bazy testowej klient może użyć jednej lokalizacji do zarządzania wszystkimi testowanymi pakietami, co może również ułatwić przekazywanie i aktualizowanie pakietów w celu generowania nowych wersji aplikacji w razie potrzeby.
 
-Baza testowa została oficjalnie zadeklarowana jako ogólna dostępność podczas konferencji Microsoft Ignite w listopadzie 2021 r. 
+> [!NOTE]
+> **Aby klienci mogli korzystać z zawartości aktualizacji przed wydaniem, muszą w szczególności zażądać do niej dostępu. Po zatwierdzeniu żądania dostępu do aktualizacji wersji wstępnej przekazane pakiety zostaną automatycznie przetestowane pod kątem wersji wstępnej Windows aktualizacji wersji systemu operacyjnego wybranych podczas dołączania**.
 
-Oznacza to, że każdy z ważnym firmowym kontem Azure może skorzystać z usług testowych i szybko rozpocząć testowanie aplikacji w usłudze.
+Następnie po udostępnieniu nowych Windows aktualizacji wersji wstępnej pakiety aplikacji są automatycznie testowane z nową zawartością w wersji wstępnej. Następnie może być wymagana dodatkowa runda szczegółowych informacji. Jeśli klienci nie zażądają konkretnie dostępu, pakiety aplikacji będą testowane tylko w bieżącej wersji Windows.
 
-## <a name="who-should-onboard"></a>KtoTo powinien być na wschowy?
-
-Zachęcamy wszystkich dostawców oprogramowania (SV), integratorów systemu do uruchamiania aplikacji, urządzeń binralnych i testowania skryptów w usłudze.
+Po pomyślnym przetestowaniu pakietów klienci mogą dostarczać je swoim klientom oprogramowania i użytkownikom końcowym z ufnością i zapewnieniem, że baza testowa wykonała swoje zadanie.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Skorzystaj z linku, aby rozpocząć
+Aby rozpocząć pracę, postępuj zgodnie z linkiem
 > [!div class="nextstepaction"]
-> [Następny krok](createaccount.md)
+> [Tworzenie nowego konta bazy testowej | Microsoft Docs](createaccount.md)

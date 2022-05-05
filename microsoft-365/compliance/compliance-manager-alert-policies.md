@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak tworzyć alerty dla działań w programie Microsoft Purview Compliance Manager, które mogą mieć wpływ na wynik zgodności.
-ms.openlocfilehash: b1e5630e20ace4835f8651d1878e731e423f58b1
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 32ab22f47d35d64fa72dcc4898f5fff06d20c13c
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129161"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231742"
 ---
 # <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alerty i zasady alertów programu Microsoft Purview Compliance Manager
 
@@ -36,8 +36,7 @@ Menedżer zgodności może otrzymywać alerty o zmianach natychmiast po ich wyst
 
 Aby utworzyć alerty, najpierw skonfiguruj zasady alertów, aby określić warunki wyzwalające alert i częstotliwość powiadomień. Po wykryciu dopasowania do warunków zasad otrzymasz powiadomienie e-mail ze szczegółowymi informacjami, aby określić, czy należy zbadać, czy podjąć dalsze działania.
 
-
-Wszystkie alerty są wyświetlane na karcie **Alerty** w obszarze Zarządzanie zgodnością, a wszystkie zasady alertów są wyświetlane na **karcie Zasady alertów**.
+Wszystkie alerty są wyświetlane na karcie **Alerty** w obszarze Zarządzanie zgodnością, a wszystkie zasady alertów są wyświetlane na **karcie Zasady alertów**.  Wszystkie organizacje mają już skonfigurowane [domyślne zasady zmiany oceny](#default-score-change-policy) .
 
 ## <a name="understanding-the-alerts-and-alert-policies-pages"></a>Omówienie stron Alerty i zasady alertów
 
@@ -95,6 +94,28 @@ Możesz utworzyć zasady, aby otrzymywać alerty, gdy wystąpią pewne zmiany lu
 - **Zmiana stanu implementacji**: użytkownik zmienił stan implementacji akcji poprawy.
 - **Zmiana stanu testu**: użytkownik zmienił stan testowania akcji poprawy.
 - **Zmiana dowodów**: użytkownik przekazał lub usunął dokument dowodowy na karcie **Dokumenty** akcji poprawy.
+
+#### <a name="default-score-change-policy"></a>Domyślne zasady zmiany oceny
+
+Menedżer zgodności konfiguruje domyślne zasady alertów w celu monitorowania zmian wyników w akcjach poprawy. Zasady domyślne wygenerują alert po zmianie wyniku akcji poprawy. Nie można edytować większości ustawień zasad domyślnych, ale możesz dodać dodatkowych adresatów powiadomień.
+
+Poniżej przedstawiono ustawienia zasad domyślnych:
+
+- Wszystkie dopasowania wykryte w ciągu 60 minut zostaną zgrupowane w jeden alert w celu zmniejszenia nadmiernych powiadomień. Jeśli na przykład w ciągu jednej godziny wystąpi zmiana wyniku pięciu akcji poprawy, zostanie wygenerowany jeden alert.
+
+- Poziom ważności tych alertów jest **średni**.
+
+- Administrator globalny organizacji jest domyślnym odbiorcą powiadomień o alertach.
+
+- Aby dodać więcej adresatów alertów, wykonaj następujące kroki:
+    - Na stronie **Zasady alertów** znajdź **domyślne zasady alertów programu Compliance Manager**.
+    - Zaznacz pole wyboru z lewej strony jego nazwy i wybierz przycisk **Edytuj** u góry, nad filtrami.
+    - Wybierz przycisk **Dalej** , dopóki nie pojawisz się na stronie **Adresaci alertów** .
+    - Wybierz **pozycję +Wybierz adresatów** i zaznacz pola obok każdej nazwy użytkownika w okienku wysuwanego, którego chcesz otrzymać powiadomienie e-mail. Po zakończeniu wybierz pozycję **Dodaj adresata**, a następnie wybierz pozycję **Dalej**.
+    - Na stronie **Przeglądanie i zakończenie** wybierz pozycję **Aktualizuj** , aby zapisać zmiany.
+
+- Nie można usunąć zasad domyślnych, ale można je wyłączyć, [wykonując kroki opisane poniżej](#activate-or-inactivate-a-policy).
+
 
 ### <a name="policy-creation-steps"></a>Kroki tworzenia zasad
 

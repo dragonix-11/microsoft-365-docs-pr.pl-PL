@@ -21,14 +21,14 @@ description: Użyj portalu zgodności usługi Microsoft Purview, aby przeszukać
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: e6754601aca5dda74ee59ed2c6c52b3f8b1eb2a3
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: b3ad71878f6d0c766cbcf5ba435bc61396f45ed6
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128505"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231772"
 ---
-# <a name="search-the-audit-log-in-the-compliance-center"></a>Przeszukiwanie dziennika inspekcji w centrum zgodności
+# <a name="search-the-audit-log-in-the-compliance-portal"></a>Przeszukiwanie dziennika inspekcji w portalu zgodności
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -93,7 +93,6 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
 
 - Aby przeszukać dziennik inspekcji, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w centrum administracyjnym Exchange. Administratorzy globalni w Office 365 i Microsoft 365 są automatycznie dodawani jako członkowie grupy ról Zarządzanie organizacją w Exchange Online. Aby umożliwić użytkownikowi przeszukiwanie dziennika inspekcji z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w Exchange Online, dodać rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
 
-  > [!IMPORTANT]
   > Jeśli przypiszesz użytkownikowi rolę dzienników inspekcji lub dzienników inspekcji View-Only na stronie **Uprawnienia** w portalu zgodności, nie będzie mógł przeszukiwać dziennika inspekcji. Musisz przypisać uprawnienia w Exchange Online. Dzieje się tak, ponieważ podstawowe polecenie cmdlet używane do przeszukiwania dziennika inspekcji jest Exchange Online poleceniem cmdlet.
 
 - Gdy inspekcja działania jest wykonywana przez użytkownika lub administratora, rekord inspekcji jest generowany i przechowywany w dzienniku inspekcji organizacji. Czas, przez który rekord inspekcji jest przechowywany (i można go przeszukiwać w dzienniku inspekcji) zależy od twojej subskrypcji Office 365 lub Microsoft 365 Enterprise, a w szczególności od typu licencji przypisanej do określonych użytkowników.
@@ -103,7 +102,7 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
     > [!NOTE]
     > Jeśli Twoja organizacja uczestniczyła w programie prywatnej wersji zapoznawczej na potrzeby rocznego przechowywania rekordów inspekcji, czas przechowywania rekordów inspekcji wygenerowanych przed ogólną datą wdrożenia dostępności nie zostanie zresetowany.
 
-  - W przypadku użytkowników, do których przypisano dowolną inną licencję Office 365 lub Microsoft 365 E5, rekordy inspekcji są przechowywane przez 90 dni. Aby uzyskać listę subskrypcji Office 365 i Microsoft 365 obsługujących ujednolicone rejestrowanie inspekcji, zobacz [opis usługi Centrum zabezpieczeń i zgodności](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+  - W przypadku użytkowników, do których przypisano dowolną inną licencję Office 365 lub Microsoft 365 E5, rekordy inspekcji są przechowywane przez 90 dni. Aby uzyskać listę subskrypcji Office 365 i Microsoft 365 obsługujących ujednolicone rejestrowanie inspekcji, zobacz [opis usługi portalu zabezpieczeń i zgodności](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
     > Nawet jeśli domyślnie włączono inspekcję skrzynek pocztowych, można zauważyć, że zdarzenia inspekcji skrzynki pocztowej dla niektórych użytkowników nie są odnalezione podczas przeszukiwania dzienników inspekcji w portalu zgodności lub za pośrednictwem interfejsu API działania zarządzania Office 365. Aby uzyskać więcej informacji, zobacz [Więcej informacji na temat rejestrowania inspekcji skrzynki pocztowej](enable-mailbox-auditing.md#more-information).
@@ -244,7 +243,7 @@ Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości
 
 #### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Więcej informacji na temat eksportowania i wyświetlania wyników wyszukiwania dzienników inspekcji
 
-- Po pobraniu wszystkich wyników wyszukiwania plik CSV zawiera kolumny **CreationDate**, **UserIds**, **Operations** i **AuditData**. **Kolumna AuditData** zawiera dodatkowe informacje o każdym zdarzeniu (podobnie jak szczegółowe informacje wyświetlane na stronie wysuwanej podczas wyświetlania wyników wyszukiwania w centrum zgodności). Dane w tej kolumnie składają się z obiektu JSON, który zawiera wiele właściwości z rekordu dziennika inspekcji. Każda para *właściwości:value* w obiekcie JSON jest oddzielona przecinkami. Narzędzie przekształcania JSON w Edytor Power Query w Excel umożliwia podzielenie kolumny **AuditData** na wiele kolumn, dzięki czemu każda właściwość obiektu JSON ma własną kolumnę. Umożliwia to sortowanie i filtrowanie co najmniej jednej z tych właściwości. Aby uzyskać instrukcje krok po kroku dotyczące przekształcania obiektu JSON przy użyciu Edytor Power Query, zobacz [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md).
+- Po pobraniu wszystkich wyników wyszukiwania plik CSV zawiera kolumny **CreationDate**, **UserIds**, **Operations** i **AuditData**. **Kolumna AuditData** zawiera dodatkowe informacje o każdym zdarzeniu (podobnie jak szczegółowe informacje wyświetlane na stronie wysuwanej podczas wyświetlania wyników wyszukiwania w portalu zgodności). Dane w tej kolumnie składają się z obiektu JSON, który zawiera wiele właściwości z rekordu dziennika inspekcji. Każda para *właściwości:value* w obiekcie JSON jest oddzielona przecinkami. Narzędzie przekształcania JSON w Edytor Power Query w Excel umożliwia podzielenie kolumny **AuditData** na wiele kolumn, dzięki czemu każda właściwość obiektu JSON ma własną kolumnę. Umożliwia to sortowanie i filtrowanie co najmniej jednej z tych właściwości. Aby uzyskać instrukcje krok po kroku dotyczące przekształcania obiektu JSON przy użyciu Edytor Power Query, zobacz [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md).
 
   Po podzieleniu kolumny **AuditData** można filtrować kolumnę **Operacje** , aby wyświetlić szczegółowe właściwości określonego typu działania.
 
@@ -254,7 +253,7 @@ Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości
 
 ## <a name="audited-activities"></a>Działania poddane inspekcji
 
-W tabelach w tej sekcji opisano działania, które są poddawane inspekcji w Microsoft 365. Te zdarzenia można wyszukać, wyszukując dziennik inspekcji w centrum zabezpieczeń i zgodności.
+W tabelach w tej sekcji opisano działania, które są poddawane inspekcji w Microsoft 365. Te zdarzenia można wyszukać, wyszukując dziennik inspekcji w portalu zabezpieczeń i zgodności.
 
 Te tabele grupują powiązane działania lub działania z określonej usługi. Tabele zawierają przyjazną nazwę wyświetlaną na liście rozwijanej **Działania** oraz nazwę odpowiedniej operacji, która jest wyświetlana w szczegółowych informacjach rekordu inspekcji i w pliku CSV podczas eksportowania wyników wyszukiwania. Aby uzyskać opisy szczegółowych informacji, zobacz [Szczegółowe właściwości w dzienniku inspekcji](detailed-properties-in-the-office-365-audit-log.md).
 
@@ -401,6 +400,18 @@ Kliknij jeden z poniższych linków, aby przejść do określonej tabeli.
     :::column-end:::
     :::column:::
         [działania administratora Exchange](#exchange-admin-audit-log)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Działania zaszyfrowanego portalu wiadomości](#encrypted-message-portal-activities)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
     :::column-end:::
 :::row-end:::
 
@@ -769,7 +780,7 @@ W poniższej tabeli wymieniono Azure AD działania związane z katalogiem i dome
 
 ### <a name="ediscovery-activities"></a>Działania zbierania elektronicznych materiałów dowodowych
 
-W dzienniku inspekcji są rejestrowane działania związane z wyszukiwaniem zawartości i zbierania elektronicznych materiałów dowodowych, które są wykonywane w centrum zabezpieczeń i zgodności lub przez uruchomienie odpowiednich poleceń cmdlet programu PowerShell. Obejmuje to następujące działania:
+W dzienniku inspekcji są rejestrowane działania związane z wyszukiwaniem zawartości i zbierania elektronicznych materiałów dowodowych, które są wykonywane w portalu zabezpieczeń i zgodności lub przy użyciu odpowiednich poleceń cmdlet programu PowerShell. Obejmuje to następujące działania:
 
 - Tworzenie przypadków zbierania elektronicznych materiałów dowodowych i zarządzanie nimi
 
@@ -1145,7 +1156,7 @@ Jak wyjaśniono wcześniej, rekordy inspekcji działań wykonywanych przez użyt
 
 Tak. Interfejs API działania zarządzania Office 365 służy do programowego pobierania dzienników inspekcji.  Aby rozpocząć, zobacz [Wprowadzenie z interfejsami API zarządzania Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Czy istnieją inne sposoby uzyskiwania dzienników inspekcji innych niż korzystanie z centrum zabezpieczeń i zgodności lub interfejsu API działania zarządzania Office 365?**
+**Czy istnieją inne sposoby uzyskiwania dzienników inspekcji innych niż korzystanie z portalu zabezpieczeń i zgodności lub interfejsu API działania zarządzania Office 365?**
 
 Nie. Są to jedyne dwa sposoby pobierania danych z usługi inspekcji.
 

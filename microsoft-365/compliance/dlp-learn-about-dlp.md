@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak chronić poufne informacje przy użyciu zasad i narzędzi ochrony przed utratą danych w usłudze Microsoft Purview i zapoznać się z cyklem życia DLP.
-ms.openlocfilehash: 755593830b489b268c81e722bd35a5984f2d1d93
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: aa32eba1111f4a119652ba88b59062581bb6cc4b
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953410"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231793"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Dowiedz się więcej o ochronie przed utratą danych
 
@@ -183,7 +183,7 @@ Po zsynchronizowanym z odpowiednimi lokalizacjami zasady zaczynają oceniać zaw
 
 ## <a name="viewing-policy-application-results"></a>Wyświetlanie wyników aplikacji zasad
 
-DLP raportuje ogromną ilość informacji w usłudze Microsoft Purview z monitorowania, dopasowań zasad i akcji oraz działań użytkowników. Musisz korzystać z tych informacji i działać na nich, aby dostosować zasady i klasyfikować akcje podejmowane w przypadku poufnych elementów. Dane telemetryczne trafiają najpierw do [portalu zgodności usługi Microsoft Purview Dzienniki inspekcji](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) , są przetwarzane i trafiają do różnych narzędzi raportowania. Każde narzędzie raportowania ma inny cel.
+DLP raportuje ogromną ilość informacji w usłudze Microsoft Purview z monitorowania, dopasowań zasad i akcji oraz działań użytkowników. Musisz korzystać z tych informacji i działać na nich, aby dostosować zasady i klasyfikować akcje podejmowane w przypadku poufnych elementów. Dane telemetryczne trafiają najpierw do [portalu zgodności usługi Microsoft Purview Dzienniki inspekcji](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) , są przetwarzane i trafiają do różnych narzędzi raportowania. Każde narzędzie raportowania ma inny cel.
 
 ### <a name="dlp-alerts-dashboard"></a>Pulpit nawigacyjny alertów DLP
 
@@ -217,7 +217,7 @@ Aby dowiedzieć się więcej o programie Microsoft Purview DLP, zobacz:
 
 - [Dowiedz się więcej o ochronie przed utratą danych punktu końcowego](endpoint-dlp-learn-about.md)
 - [Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams (wersja zapoznawcza)](dlp-teams-default-policy.md)
-- [Dowiedz się więcej o lokalnym skanerze zapobiegania utracie danych](dlp-on-premises-scanner-learn.md)
+- [Dowiedz się więcej na temat lokalnego skanera ochrony przed utratą danych](dlp-on-premises-scanner-learn.md)
 - [Dowiedz się więcej o rozszerzeniu zgodności firmy Microsoft](dlp-chrome-learn-about.md)
 - [Dowiedz się więcej o pulpicie nawigacyjnym alertów ochrony przed utratą danych](dlp-alerts-dashboard-learn.md)
 

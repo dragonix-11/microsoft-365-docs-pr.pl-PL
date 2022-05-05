@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zapoznaj się z ustawieniami, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i pozbyć się tego, czego nie chcesz.
-ms.openlocfilehash: ab3adee8275f6c64dd7ad3b21547e8205b00ff7d
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187783"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231808"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
@@ -44,7 +44,7 @@ Aby uzyskać omówienie informacji o zasadach przechowywania i sposobie działan
 
 ## <a name="scopes---adaptive-and-static"></a>Zakresy — adaptacyjne i statyczne
 
-Jeśli nie znasz zakresów adaptacyjnych i statycznych oraz chcesz ułatwić wybór zasad do użycia podczas konfigurowania zasad przechowywania, zobacz [Adaptacyjne lub statyczne zakresy zasad przechowywania](retention.md#adaptive-or-static-policy-scopes-for-retention). 
+Jeśli nie znasz zakresów adaptacyjnych i statycznych oraz chcesz wybrać, którego z nich należy użyć podczas konfigurowania zasad przechowywania, zobacz [Adaptacyjne lub statyczne zakresy zasad przechowywania](retention.md#adaptive-or-static-policy-scopes-for-retention). 
 
 Gdy zdecydujesz, czy chcesz korzystać z zakresu adaptacyjnego, czy statycznego, skorzystaj z następujących informacji, które pomogą Ci go skonfigurować:
 - [Informacje o konfiguracji zakresów adaptacyjnych](#configuration-information-for-adaptive-scopes)
@@ -73,7 +73,7 @@ Nazwy atrybutów dla użytkowników i grup są oparte na [filtrowalnych właści
 Atrybuty i właściwości wymienione w tabeli można łatwo określić podczas konfigurowania zakresu adaptacyjnego przy użyciu prostego konstruktora zapytań. Dodatkowe atrybuty i właściwości są obsługiwane przez zaawansowanego konstruktora zapytań, zgodnie z opisem w poniższej sekcji.
 
 > [!TIP]
-> Aby uzyskać dodatkowe informacje na temat korzystania z zaawansowanego konstruktora zapytań, zobacz następujące seminaria internetowe: 
+> Aby uzyskać więcej informacji na temat korzystania z zaawansowanego konstruktora zapytań, zobacz następujące seminaria internetowe: 
 > - [Tworzenie zaawansowanych zapytań dla użytkowników i grup przy użyciu zakresów zasad adaptacyjnych](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 > - [Tworzenie zaawansowanych zapytań dla witryn SharePoint z zakresami zasad adaptacyjnych](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
@@ -130,11 +130,11 @@ W przypadku SharePoint lokacji może być wymagana dodatkowa konfiguracja ShareP
     - W **przypadku SharePoint** zakresów witryn użyj języka zapytań słów kluczowych (KQL). Możesz już znać używanie KQL do wyszukiwania SharePoint przy użyciu indeksowanych właściwości witryny. Aby ułatwić określenie tych KQL zapytań, zobacz [Dokumentacja składni języka zapytań słów kluczowych (KQL).](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
         
         Na przykład, ponieważ zakresy witryn SharePoint automatycznie obejmują wszystkie SharePoint typy lokacji, które obejmują Microsoft 365 połączone z grupą i OneDrive lokacje, można użyć indeksowanych właściwości lokacji **SiteTemplate** w celu uwzględnienia lub wykluczenia określonych typów lokacji. Szablony, które można określić:
-        - SITEPAGEPUBLISHING dla nowoczesnych witryn komunikacyjnych
-        - GRUPA dla Microsoft 365 lokacji połączonych z grupą
-        - TEAMCHANNEL dla Microsoft Teams witryn kanałów prywatnych
-        - Usługa STS dla klasycznej witryny zespołu SharePoint
-        - SPSPERS dla witryn OneDrive
+        - `SITEPAGEPUBLISHING` dla nowoczesnych witryn komunikacyjnych
+        - `GROUP`dla Microsoft 365 witryn połączonych z grupą
+        - `TEAMCHANNEL`dla Microsoft Teams witryn kanałów prywatnych
+        - `STS`dla klasycznej witryny zespołu SharePoint
+        - `SPSPERS`dla witryn OneDrive
         
         Aby utworzyć zakres adaptacyjny obejmujący tylko nowoczesne witryny komunikacyjne i wykluczający Microsoft 365 witryn połączonych z goupami i OneDrive, określ następujące zapytanie KQL:
         ````console
@@ -175,19 +175,19 @@ Aby uruchomić zapytanie przy użyciu programu PowerShell:
 
 1. [Połączenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu konta z [odpowiednimi uprawnieniami administratora Exchange Online](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet).
 
-2. Użyj polecenia [Get-Recipient](/powershell/module/exchange/get-recipient) lub [Get-Mailbox](/powershell/module/exchange/get-mailbox) z parametrem *-Filter* i [zapytaniem OPATH](/powershell/exchange/filter-properties) dla zakresu adaptacyjnego ujętego w nawiasy klamrowe (`{`,`}`). Jeśli wartości atrybutów są ciągami, umieść te wartości w cudzysłowie podwójnym lub pojedynczym.  
+2. Użyj polecenia [Get-Recipient](/powershell/module/exchange/get-recipient), [Get-Mailbox](/powershell/module/exchange/get-mailbox) lub [Get-User](/powershell/module/exchange/get-user) z parametrem *-Filter* i [zapytaniem OPATH](/powershell/exchange/filter-properties) dla zakresu adaptacyjnego ujętego w nawiasy klamrowe (`{`,`}`). Jeśli wartości atrybutów są ciągami, umieść te wartości w cudzysłowie podwójnym lub pojedynczym.
 
-    Możesz określić, czy ma być używane `Get-Mailbox` , czy `Get-Recipient` walidacji, identyfikując, które polecenie cmdlet jest obsługiwane przez [właściwość OPATH](/powershell/exchange/filter-properties) wybraną dla zapytania.
+    Możesz określić, czy do weryfikacji ma być używana funkcja Get-Mailbox, Get-Recipient, czy Get-User, identyfikując, które polecenie cmdlet jest obsługiwane przez [właściwość OPATH](/powershell/exchange/filter-properties) wybraną dla zapytania.
 
     > [!IMPORTANT]
-    > `Get-Mailbox` Nie obsługuje typu adresata *usługi MailUser* , dlatego `Get-Recipient` musi służyć do weryfikowania zapytań, które zawierają lokalne skrzynki pocztowe w środowisku hybrydowym.
+    > Get-Mailbox nie obsługuje typu adresata *usługi MailUser* , dlatego Get-Recipient lub Get-User muszą być używane do weryfikowania zapytań obejmujących lokalne skrzynki pocztowe w środowisku hybrydowym.
 
-    Aby zweryfikować zakres **użytkownika** , użyj jednego z następujących elementów:
-    - `Get-Mailbox`z lub `-RecipientTypeDetails UserMailbox`
-    - `Get-Recipient` Z `-RecipientTypeDetails UserMailbox,MailUser`
+    Aby zweryfikować zakres **użytkownika** , użyj odpowiedniego polecenia:
+    - `Get-Mailbox` with *-RecipientTypeDetails UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox*
+    - `Get-Recipient` with *-RecipientTypeDetails UserMailbox,MailUser,SharedMailbox,RoomMailbox,EquipmentMailbox*
     
     Aby zweryfikować zakres **grupy Microsoft 365**, użyj:
-    - `Get-Mailbox` lub `Get-Recipient` z `-RecipientTypeDetails GroupMailbox`
+    - `Get-Mailbox` z *-GroupMailbox* lub `Get-Recipient` *-RecipientTypeDetails GroupMailbox*
 
     Aby na przykład zweryfikować zakres **użytkownika** , można użyć następujących elementów:
     
@@ -200,6 +200,11 @@ Aby uruchomić zapytanie przy użyciu programu PowerShell:
     ```PowerShell
     Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
+    
+    > [!TIP]
+    > Jeśli używasz tych poleceń do weryfikowania zakresu użytkownika, jeśli liczba zwróconych adresatów jest wyższa niż oczekiwano, może to być spowodowane tym, że obejmuje użytkowników, którzy nie mają ważnej licencji na zakresy adaptacyjne. Ci użytkownicy nie będą mieć zastosowanych ustawień przechowywania.
+    > 
+    > Na przykład w środowisku hybrydowym możesz mieć nielicencjonowane zsynchronizowane konta użytkowników bez Exchange skrzynki pocztowej lokalnie lub w Exchange Online. Tych użytkowników można zidentyfikować, uruchamiając następujące polecenie: `Get-User -RecipientTypeDetails User`
 
 3. Sprawdź, czy dane wyjściowe są zgodne z oczekiwanymi użytkownikami lub grupami dla zakresu adaptacyjnego. Jeśli tak się nie stanie, sprawdź zapytanie i wartości u odpowiedniego administratora pod kątem Azure AD lub Exchange.
  
@@ -217,7 +222,7 @@ Jeśli zdecydujesz się na użycie zakresów statycznych, musisz zdecydować, cz
 
 #### <a name="a-policy-that-applies-to-entire-locations"></a>Zasady, które mają zastosowanie do całych lokalizacji
 
-Z wyjątkiem Skype dla firm domyślne jest to, że wszystkie wystąpienia dla wybranych lokalizacji są automatycznie uwzględniane w zasadach bez konieczności określania ich jako dołączone.
+Z wyjątkiem Skype dla firm domyślne jest to, że wszystkie wystąpienia dla wybranych lokalizacji są automatycznie uwzględniane w zasadach bez konieczności określania ich jako dołączonych.
 
 Na przykład **Wszyscy adresaci** Exchange lokalizacji **poczty e-mail**. W przypadku tego ustawienia domyślnego wszystkie istniejące skrzynki pocztowe użytkowników zostaną uwzględnione w zasadach, a wszystkie nowe skrzynki pocztowe utworzone po zastosowaniu zasad zostaną automatycznie dziedziczone.
 
@@ -242,9 +247,9 @@ Lokalizacje w zasadach przechowywania identyfikują określone usługi Microsoft
 
 Zarówno lokalizacja **Exchange poczty e-mail**, jak i **lokalizacja folderów publicznych Exchange** wymagają, aby skrzynki pocztowe miały co najmniej 10 MB danych, zanim zostaną zastosowane ustawienia przechowywania.
 
-Lokalizacja **Exchange poczty e-mail** obsługuje przechowywanie poczty e-mail, kalendarza i innych elementów skrzynki pocztowej przez zastosowanie ustawień przechowywania na poziomie skrzynki pocztowej. Obsługiwane są również udostępnione skrzynki pocztowe.
+Lokalizacja **Exchange poczty e-mail** obsługuje przechowywanie poczty e-mail, kalendarza i innych elementów skrzynki pocztowej przez zastosowanie ustawień przechowywania na poziomie skrzynki pocztowej. Obsługiwane są również udostępnione skrzynki pocztowe i skrzynki pocztowe zasobów dla sprzętu i pomieszczeń.
 
-Skrzynki pocztowe zasobów, kontakty i skrzynki pocztowe grup Microsoft 365 nie są obsługiwane w przypadku Exchange wiadomości e-mail. W przypadku skrzynek pocztowych Microsoft 365 grup wybierz zamiast tego **lokalizację Grupy Microsoft 365**. Chociaż lokalizacja Exchange początkowo zezwala na wybór skrzynki pocztowej grupy dla zakresu statycznego, podczas próby zapisania zasad przechowywania jest wyświetlany błąd informujący o tym, że opcja "RemoteGroupMailbox" nie jest prawidłowym wyborem dla tej lokalizacji.
+Kontakty e-mail i skrzynki pocztowe grup Microsoft 365 nie są obsługiwane w przypadku Exchange wiadomości e-mail. W przypadku skrzynek pocztowych Microsoft 365 grup wybierz zamiast tego **lokalizację Grupy Microsoft 365**. Chociaż lokalizacja Exchange początkowo zezwala na wybór skrzynki pocztowej grupy dla zakresu statycznego, podczas próby zapisania zasad przechowywania występuje błąd, że "RemoteGroupMailbox" nie jest prawidłowym wyborem dla tej lokalizacji.
 
 W zależności od konfiguracji zasad [nieaktywne skrzynki pocztowe](inactive-mailboxes-in-office-365.md) mogą być dołączone lub nie:
 
@@ -306,7 +311,7 @@ Jeśli używasz zakresów statycznych: chociaż **lokalizacja Exchange poczty e-
 
 Domyślnie zasady przechowywania stosowane do grupy Microsoft 365 obejmują skrzynkę pocztową grupy i witrynę SharePoint teams. Pliki przechowywane w witrynie zespołów SharePoint są objęte tą lokalizacją, ale nie Teams czatów ani Teams komunikatów kanału, które mają własne lokalizacje zasad przechowywania.
 
-Aby zmienić ustawienie domyślne, ponieważ zasady przechowywania mają być stosowane tylko do skrzynek pocztowych Microsoft 365 lub tylko do połączonych witryn SharePoint teams, użyj polecenia cmdlet [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) programu PowerShell z parametrem *Aplikacje* z jedną z następujących wartości:
+Aby zmienić ustawienie domyślne, ponieważ zasady przechowywania mają być stosowane tylko do skrzynek pocztowych Microsoft 365 lub tylko do połączonych witryn SharePoint teams, użyj polecenia cmdlet [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) programu PowerShell i parametru *Aplikacje* z jedną z następujących wartości:
 
 - `Group:Exchange`tylko dla Microsoft 365 skrzynek pocztowych połączonych z grupą.
 - `Group:SharePoint`tylko dla SharePoint witryn połączonych z grupą.
@@ -325,7 +330,7 @@ Gdy zasady przechowywania (zakres zasad statycznych lub adaptacyjne) są stosowa
 
 - Lokacja SharePoint połączona z grupą jest zachowywana i nadal jest zarządzana przez zasady przechowywania z **lokalizacją Grupy Microsoft 365**. Witryna jest nadal dostępna dla osób, które miały do niej dostęp przed usunięciem grupy, a wszelkie nowe uprawnienia muszą być teraz zarządzane za pośrednictwem SharePoint.
     
-    W tym momencie nie można wykluczyć witryny z Grupy Microsoft 365 lokalizacji, ponieważ nie można określić usuniętej grupy. Jeśli musisz zwolnić zasady przechowywania z tej witryny, skontaktuj się z pomoc techniczna firmy Microsoft. Na przykład otwórz [żądanie obsługi w centrum Administracja Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/support).
+    W tym momencie nie można wykluczyć witryny z Grupy Microsoft 365 lokalizacji, ponieważ nie można określić usuniętej grupy. Jeśli musisz zwolnić zasady przechowywania z tej witryny, skontaktuj się z pomoc techniczna firmy Microsoft. Na przykład [otwórz wniosek o pomoc techniczną w centrum Administracja Microsoft 365](/microsoft-365/admin/get-help-support#online-support).
 
 - Skrzynka pocztowa usuniętej grupy staje się nieaktywna i podobnie jak SharePoint lokacja, pozostaje objęta ustawieniami przechowywania. Aby uzyskać więcej informacji, zobacz [Nieaktywne skrzynki pocztowe w Exchange Online](inactive-mailboxes-in-office-365.md).
 
@@ -400,13 +405,13 @@ Przed skonfigurowaniem przechowywania najpierw zapoznaj się z limitami pojemno�
 
 Ustawienia przechowywania mogą zachowywać, a następnie usuwać elementy lub usuwać stare elementy bez ich przechowywania.
 
-W obu przypadkach, jeśli ustawienia przechowywania usuwają elementy, ważne jest, aby zrozumieć, że określony okres nie jest obliczany od momentu przypisania zasad, ale zgodnie z rozpoczęciem określonego okresu przechowywania. Na przykład od momentu utworzenia, zmodyfikowania lub etykiety elementu.
+W obu przypadkach, jeśli ustawienia przechowywania usuwają elementy, ważne jest, aby zrozumieć, że określony okres nie jest obliczany od momentu przypisania zasad, ale zgodnie z początkiem określonego okresu przechowywania. Na przykład od momentu utworzenia, zmodyfikowania lub etykiety elementu.
 
 Z tego powodu najpierw należy wziąć pod uwagę wiek istniejącej zawartości i wpływ ustawień na tę zawartość. Rozważ przekazanie wybranych ustawień użytkownikom i działowi pomocy technicznej przed zastosowaniem ustawień do zawartości, co daje im czas na ocenę możliwego wpływu.
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Zasady, które mają zastosowanie do całych lokalizacji
 
-Po wybraniu lokalizacji z wyjątkiem Skype dla firm ustawienie domyślne to **Wszystkie**, gdy stan lokalizacji jest **włączony**.
+Po wybraniu lokalizacji, z wyjątkiem Skype dla firm, ustawieniem domyślnym jest **Wszystkie**, gdy stan lokalizacji jest **włączony**.
 
 Jeśli zasady przechowywania mają zastosowanie do dowolnej kombinacji całych lokalizacji, nie ma limitu liczby adresatów, witryn, kont, grup itp., które mogą zawierać zasady.
 

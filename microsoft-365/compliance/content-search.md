@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Użyj narzędzia content search eDiscovery w centrum zgodności, aby wyszukać zawartość w różnych usługach Microsoft 365.
-ms.openlocfilehash: 418bdffd71e83aea548c21589c6b8c08ae2419e8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 90b1ce142b5d629be86ba058071af906485e765f
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097101"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231721"
 ---
 # <a name="create-a-content-search"></a>Tworzenie wyszukiwania zawartości
 
@@ -50,7 +50,9 @@ Po uruchomieniu wyszukiwania na stronie wysuwanej wyszukiwania zostanie wyświet
 
 - Aby uzyskać dostęp do narzędzia do wyszukiwania zawartości w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a> (aby uruchamiać wyszukiwania i wyświetlać podgląd wyników i eksportować wyniki), administrator, oficer zgodności lub menedżer zbierania elektronicznych materiałów dowodowych musi być członkiem grupy ról Menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
-- W Exchange wdrożenia hybrydowego nie można wyszukiwać lokalnych skrzynek pocztowych za pomocą narzędzia wyszukiwania zawartości. Za pomocą tego narzędzia można wyszukiwać tylko skrzynki pocztowe oparte na chmurze.
+- W Exchange wdrożeniu hybrydowym nie można używać narzędzia do wyszukiwania zawartości do wyszukiwania wiadomości e-mail w lokalnych skrzynkach pocztowych. Za pomocą tego narzędzia można wyszukiwać tylko skrzynki pocztowe oparte na chmurze.
+
+- W Exchange wdrożenia hybrydowego można wyszukiwać Teams danych czatu w lokalnych skrzynkach pocztowych. Aby uzyskać więcej informacji, zobacz [Teams dane czatu dla użytkowników lokalnych](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide).
 
 ## <a name="create-and-run-a-search"></a>Tworzenie i uruchamianie wyszukiwania
   
