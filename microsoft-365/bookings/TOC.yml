@@ -27,6 +27,8 @@
           href: add-questions.md
         - name: Ustaw czas buforu
           href: set-buffer-time.md
+        - name: Zarządzanie uczestnikami grupy w aplikacji Bookings
+          href: manage-attendees-bookings.md
         - name: Metryki i śledzenie aktywności
           href: metrics-and-activity-tracking.md
         - name: Ustaw język i strefę czasową

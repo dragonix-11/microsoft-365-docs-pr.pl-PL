@@ -26,6 +26,8 @@
   items:
     - name: Omówienie strony Dzierżawy
       href: m365-lighthouse-tenants-page-overview.md
+    - name: Wyświetl role usługi Microsoft Azure AD w dzierżawach
+      href: m365-lighthouse-view-your-roles.md
     - name: Zarządzanie listą dzierżaw
       href: m365-lighthouse-manage-tenant-list.md
     - name: Wyświetlanie kondycji usługi dzierżawy
