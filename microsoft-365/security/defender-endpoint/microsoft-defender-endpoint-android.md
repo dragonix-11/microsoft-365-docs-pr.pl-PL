@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea1c551c216dffe8d9ac4e0cedd5679146483e5e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 51f4915da08920018526ac7eb17372247e28de6d
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666245"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243101"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android
 
@@ -45,7 +45,8 @@ W tym temacie opisano sposób instalowania, konfigurowania, aktualizowania i uż
 ### <a name="prerequisites"></a>Wymagania wstępne
 
 - **Dla użytkowników końcowych**:
-  - Ochrona punktu końcowego w usłudze Microsoft Defender licencji przypisanej do użytkowników końcowych aplikacji. Zobacz [wymagania dotyczące licencjonowania Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+  - Ochrona punktu końcowego w usłudze Microsoft Defender licencji przypisanej do użytkowników końcowych aplikacji. Zobacz [wymagania dotyczące licencjonowania Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
+  - Intune licencja jest wymagana przed dołączeniem urządzeń z systemem Android.
   - Intune — Portal firmy aplikację można pobrać z [sklepu Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) i jest dostępna na urządzeniu z systemem Android.
   - Ponadto urządzenia można [zarejestrować](/mem/intune/user-help/enroll-device-android-company-portal) za pośrednictwem aplikacji Intune — Portal firmy w celu wymuszenia Intune zasad zgodności urządzeń. Wymaga to, aby użytkownikowi końcowemu przypisano licencję Microsoft Intune.
   - Aby uzyskać więcej informacji na temat przypisywania licencji, zobacz [Przypisywanie licencji do użytkowników](/azure/active-directory/users-groups-roles/licensing-groups-assign).

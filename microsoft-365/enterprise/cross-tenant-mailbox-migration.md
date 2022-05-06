@@ -8,7 +8,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/21/2020
+ms.date: 05/05/2022
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 8cbaee1e4f0cd3bae519c939f2f619343bf996bd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 984df48edf4ba75569286618086d8be9ab684b60
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101078"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243057"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migracja skrzynki pocztowej między dzierżawami (wersja zapoznawcza)
 
@@ -59,7 +59,7 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [Centrum admi
 
 ### <a name="prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret"></a>Przygotowanie dzierżawy docelowej (docelowej) przez utworzenie aplikacji migracji i wpisu tajnego
 
-1. Zaloguj się do portalu usługi Azure AD (<https://portal.azure.com>) przy użyciu poświadczeń administratora dzierżawy docelowej
+1. Zaloguj się do portalu Azure AD (<https://portal.azure.com>) przy użyciu poświadczeń administratora dzierżawy docelowej
 
    ![Logowanie do platformy Azure](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
@@ -73,7 +73,7 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [Centrum admi
 
    ![Nowa aplikacja](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. Na stronie Rejestrowanie aplikacji w obszarze Obsługiwane typy kont wybierz pozycję Konta w dowolnym katalogu organizacyjnym (Dowolny katalog usługi Azure AD — wielodostępny). Następnie w obszarze Identyfikator URI przekierowania (opcjonalnie) wybierz pozycję Sieć Web i wprowadź wartość <https://office.com>. Na koniec wybierz pozycję Zarejestruj.
+5. Na stronie Rejestrowanie aplikacji w obszarze Obsługiwane typy kont wybierz pozycję Konta w dowolnym katalogu organizacyjnym (Dowolny katalog Azure AD — wielodostępny). Następnie w obszarze Identyfikator URI przekierowania (opcjonalnie) wybierz pozycję Sieć Web i wprowadź wartość <https://office.com>. Na koniec wybierz pozycję Zarejestruj.
 
    ![Rejestracja aplikacji](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -246,7 +246,7 @@ Upewnij się, że w organizacji docelowej ustawiono następujące obiekty i atry
       - UserPrincipalName: nazwa UPN będzie zgodna z nową tożsamością użytkownika lub firmą docelową (na przykład user@northwindtraders.onmicrosoft.com).
       - Podstawowy adres SMTPAddress: podstawowy adres SMTP zostanie dopasowany do nowej firmy użytkownika (na przykład user@northwind.com).
       - TargetAddress/ExternalEmailAddress: Aplikacja MailUser będzie odwoływać się do bieżącej skrzynki pocztowej użytkownika hostowanej w dzierżawie źródłowej (na przykład user@contoso.onmicrosoft.com). Podczas przypisywania tej wartości sprawdź, czy masz/przypisujesz również primarySMTPAddress lub ta wartość ustawi wartość PrimarySMTPAddress, co spowoduje błędy przenoszenia.
-      - Nie można dodać starszych adresów proxy smtp ze źródłowej skrzynki pocztowej do docelowego elementu MailUser. Na przykład nie można obsługiwać contoso.com w jednostce MEU w fabrikam.onmicrosoft.com obiektach dzierżawy). Domeny są skojarzone tylko z jedną dzierżawą usługi Azure AD lub Exchange Online.
+      - Nie można dodać starszych adresów proxy smtp ze źródłowej skrzynki pocztowej do docelowego elementu MailUser. Na przykład nie można obsługiwać contoso.com w jednostce MEU w fabrikam.onmicrosoft.com obiektach dzierżawy). Domeny są skojarzone tylko z jedną dzierżawą Azure AD lub Exchange Online.
 
      Przykładowy **docelowy** obiekt MailUser:
 
@@ -286,7 +286,7 @@ Upewnij się, że w organizacji docelowej ustawiono następujące obiekty i atry
    - msExchSafeRecipientsHash — zapisuje w trybie online bezpieczne i zablokowane dane nadawcy od klientów do lokalna usługa Active Directory.
    - msExchSafeSendersHash — zapisuje w trybie online bezpieczne i zablokowane dane nadawcy z klientów do lokalna usługa Active Directory.
 
-2. Jeśli źródłowa skrzynka pocztowa znajduje się w witrynie LitigationHold, a rozmiar elementów możliwych do odzyskania źródłowej skrzynki pocztowej jest większy niż domyślny rozmiar bazy danych (30 GB), przenoszenie nie będzie kontynuowane, ponieważ docelowy limit przydziału jest mniejszy niż rozmiar źródłowej skrzynki pocztowej. Możesz zaktualizować docelowy obiekt MailUser, aby przenieść flagi skrzynki pocztowej ELC ze środowiska źródłowego do miejsca docelowego, co wyzwala system docelowy w celu zwiększenia limitu przydziału usługi MailUser do 100 GB, co umożliwia przejście do obiektu docelowego. Te instrukcje będą działać tylko w przypadku tożsamości hybrydowej z uruchomioną usługą Azure AD Połączenie, ponieważ polecenia umożliwiające ostemplowanie flag ELC nie są widoczne dla administratorów dzierżawy.
+2. Jeśli źródłowa skrzynka pocztowa znajduje się w witrynie LitigationHold, a rozmiar elementów możliwych do odzyskania źródłowej skrzynki pocztowej jest większy niż domyślny rozmiar bazy danych (30 GB), przenoszenie nie będzie kontynuowane, ponieważ docelowy limit przydziału jest mniejszy niż rozmiar źródłowej skrzynki pocztowej. Możesz zaktualizować docelowy obiekt MailUser, aby przenieść flagi skrzynki pocztowej ELC ze środowiska źródłowego do miejsca docelowego, co wyzwala system docelowy w celu zwiększenia limitu przydziału usługi MailUser do 100 GB, co umożliwia przejście do obiektu docelowego. Te instrukcje będą działać tylko w przypadku tożsamości hybrydowej działającej Azure AD Połączenie, ponieważ polecenia do ostemplowania flag ELC nie są widoczne dla administratorów dzierżawy.
 
     > [!NOTE]
     > PRZYKŁAD — BEZ GWARANCJI
@@ -434,7 +434,7 @@ Get-MoveRequest -Flags "CrossTenant"
    ```powershell
    # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
    # This action should create the target mail enabled users (MEUs) in the Target tenant
-   Start-ADSyncCycle
+   Start-ADSyncSyncCycle
    ```
 
 **Jak uzyskać dostęp do Outlook w dniu 1 po przeniesieniu skrzynki pocztowej do użycia?**
@@ -510,7 +510,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 **Czy dzierżawa źródłowa i docelowa może używać tej samej nazwy domeny?**
 
-L.p. Nazwy domen dzierżawy źródłowej i docelowej muszą być unikatowe. Na przykład domena źródłowa contoso.com i domena docelowa fourthcoffee.com.
+Nie. Nazwy domen dzierżawy źródłowej i docelowej muszą być unikatowe. Na przykład domena źródłowa contoso.com i domena docelowa fourthcoffee.com.
 
 **Czy udostępnione skrzynki pocztowe będą przenoszone i nadal będą działać?**
 
@@ -558,7 +558,7 @@ Nie, po migracji skrzynki pocztowej między dzierżawami nie działa funkcja zbi
 
 - **Problem: Usługa Cloud MailUsers z niewłaściwym serwerem proxy SMTPBlokowanie usługi MRS przenosi tło.** Podczas tworzenia obiektów mailuser dzierżawy docelowej należy upewnić się, że wszystkie adresy proxy SMTP należą do docelowej organizacji dzierżawy. Jeśli serwer proxy SMTP istnieje na docelowym użytkowniku poczty e-mail, który nie należy do dzierżawy lokalnej, konwersja elementu MailUser na skrzynkę pocztową jest zablokowana. Wynika to z naszego zapewnienia, że obiekty skrzynki pocztowej mogą wysyłać wiadomości e-mail tylko z domen, dla których dzierżawa jest autorytatywna (domeny, o które ubiega się dzierżawca):
 
-  - Podczas synchronizowania użytkowników ze środowiska lokalnego przy użyciu usługi Azure AD Połączenie aprowizujesz lokalne obiekty MailUser przy użyciu polecenia ExternalEmailAddress wskazującą dzierżawę źródłową, w której istnieje skrzynka pocztowa (LaraN@contoso.onmicrosoft.com) i ostemplujesz adres PrimarySMTPAddress jako domenę, która znajduje się w dzierżawie docelowej (Lara.Newton@northwind.com). Te wartości są synchronizowane z dzierżawą, a odpowiedni użytkownik poczty jest aprowizowany i gotowy do migracji. Przykładowy obiekt jest pokazany tutaj.
+  - Podczas synchronizowania użytkowników ze środowiska lokalnego przy użyciu Azure AD Połączenie aprowizujesz lokalne obiekty MailUser przy użyciu polecenia ExternalEmailAddress wskazującego dzierżawę źródłową, w której istnieje skrzynka pocztowa (LaraN@contoso.onmicrosoft.com), i ostemplujesz adres PrimarySMTPAddress jako domenę, która znajduje się w dzierżawie docelowej (Lara.Newton@northwind.com). Te wartości są synchronizowane z dzierżawą, a odpowiedni użytkownik poczty jest aprowizowany i gotowy do migracji. Przykładowy obiekt jest pokazany tutaj.
 
     ```powershell
     Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
@@ -575,7 +575,7 @@ Nie, po migracji skrzynki pocztowej między dzierżawami nie działa funkcja zbi
 
   Obiekty MailUser są wskaźnikami do nielokalnych skrzynek pocztowych. W przypadku migracji skrzynek pocztowych między dzierżawami używamy obiektów MailUser do reprezentowania źródłowej skrzynki pocztowej (z perspektywy organizacji docelowej) lub docelowej skrzynki pocztowej (z perspektywy organizacji źródłowej). Elementy MailUsers będą miały adres ExternalEmailAddress (targetAddress), który wskazuje adres smtp rzeczywistej skrzynki pocztowej (ProxyTest@fabrikam.onmicrosoft.com) i adres primarySMTP reprezentujący wyświetlany adres SMTP użytkownika skrzynki pocztowej w katalogu. Niektóre organizacje decydują się na wyświetlenie podstawowego adresu SMTP jako zewnętrznego adresu SMTP, a nie jako adres będący własnością/zweryfikowany przez dzierżawę lokalną (na przykład fabrikam.com, a nie jako contoso.com).  Jednak po zastosowaniu obiektu planu usługi Exchange do usługi MailUser za pośrednictwem operacji licencjonowania podstawowy adres SMTP jest modyfikowany tak, aby był wyświetlany jako domena zweryfikowana przez lokalną organizację (contoso.com). Istnieją dwie potencjalne przyczyny:
 
-  - Gdy dowolny plan usługi Exchange jest stosowany do usługi MailUser, proces usługi Azure AD zaczyna wymuszać czyszczenie serwera proxy, aby upewnić się, że lokalna organizacja nie może wysyłać wiadomości e-mail, fałszowania ani poczty z innej dzierżawy. Dowolny adres SMTP obiektu adresata z tymi planami usług zostanie usunięty, jeśli adres nie zostanie zweryfikowany przez organizację lokalną. Podobnie jak w przykładzie, domena Fabikam.com NIE jest weryfikowana przez dzierżawę contoso.onmicrosoft.com, więc szorowanie usuwa tę fabrikam.com domenę. Jeśli chcesz utrwalić te domeny zewnętrzne w usłudze MailUser przed migracją lub po migracji, musisz zmienić procesy migracji, aby pozbawić licencje po zakończeniu przenoszenia lub przed przeniesieniem, aby upewnić się, że użytkownicy mają zastosowany oczekiwany znak zewnętrzny. Należy upewnić się, że obiekt skrzynki pocztowej jest prawidłowo licencjonowany, aby nie wpływać na usługę poczty.
+  - Gdy dowolny plan usługi Exchange jest stosowany do usługi MailUser, proces Azure AD rozpoczyna wymuszanie szorowania serwera proxy, aby upewnić się, że lokalna organizacja nie może wysyłać wiadomości e-mail, fałszowania ani poczty z innej dzierżawy. Dowolny adres SMTP obiektu adresata z tymi planami usług zostanie usunięty, jeśli adres nie zostanie zweryfikowany przez organizację lokalną. Podobnie jak w przykładzie, domena Fabikam.com NIE jest weryfikowana przez dzierżawę contoso.onmicrosoft.com, więc szorowanie usuwa tę fabrikam.com domenę. Jeśli chcesz utrwalić te domeny zewnętrzne w usłudze MailUser przed migracją lub po migracji, musisz zmienić procesy migracji, aby pozbawić licencje po zakończeniu przenoszenia lub przed przeniesieniem, aby upewnić się, że użytkownicy mają zastosowany oczekiwany znak zewnętrzny. Należy upewnić się, że obiekt skrzynki pocztowej jest prawidłowo licencjonowany, aby nie wpływać na usługę poczty.
   - Przykładowy skrypt służący do usuwania planów usług w usłudze MailUser w dzierżawie contoso.onmicrosoft.com jest wyświetlany tutaj.
 
     ```powershell
