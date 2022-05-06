@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9be1c581edb1b9564349ae8c3a659d226d6ef312
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 8418683577ffe3bf63fe7fe3bf4aff2ef55007f5
+ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173790"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65249636"
 ---
 # <a name="communication-compliance-policies"></a>Zasady zgodności komunikacji
 
@@ -166,11 +166,15 @@ Skonfiguruj niestandardowe słowniki słów kluczowych (lub leksykony), aby zape
 
 Wbudowane klasyfikatory trenujące i globalne skanują wysyłane lub odbierane komunikaty we wszystkich kanałach komunikacyjnych w organizacji w celu uzyskania różnych typów problemów ze zgodnością. Klasyfikatory używają kombinacji sztucznej inteligencji i słów kluczowych do identyfikowania języka w komunikatach, które mogą naruszać zasady ochrony przed molestowaniem. Wbudowane klasyfikatory obsługują obecnie identyfikację słów kluczowych komunikatów w kilku językach:
 
+- Arabski
 - Chiński (uproszczony)
+- Chiński (tradycyjny)
+- Dutch
 - English
 - French
 - German
 - Italian
+- Korean
 - Japanese
 - Portugalski
 - Spanish
