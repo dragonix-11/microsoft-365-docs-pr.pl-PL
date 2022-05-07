@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: ccd92b38937bcb64fdcf738b803160119c0a025a
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 612cbb4005285f46594bc900cbbc14497b72ffec
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665585"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268832"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Tworzenie aplikacji z dostępem partnera do interfejsów API Microsoft 365 Defender
 
@@ -55,7 +55,7 @@ Ponieważ ta aplikacja jest wielodostępna, musisz również wyrazić [zgodę ad
 
 W tym artykule wyjaśniono, jak:
 
-- Tworzenie **wielodostępnej** aplikacji usługi Azure AD
+- Tworzenie aplikacji Azure AD **wielodostępnej**
 - Uzyskaj autoryzowaną zgodę administratora użytkownika dla aplikacji, aby uzyskać dostęp do Microsoft 365 Defender potrzebnych zasobów.
 - Uzyskiwanie tokenu dostępu do Microsoft 365 Defender
 - Weryfikowanie tokenu
@@ -64,12 +64,12 @@ Microsoft 365 Defender uwidacznia wiele swoich danych i akcji za pośrednictwem 
 
 Ogólnie rzecz biorąc, należy wykonać następujące kroki, aby korzystać z interfejsów API:
 
-- Tworzenie **wielodostępnej** aplikacji usługi Azure AD.
+- Utwórz aplikację Azure AD z **wieloma dzierżawami**.
 - Uzyskaj autoryzację (zgodę) administratora użytkownika, aby aplikacja uzyskiwała dostęp do Microsoft 365 Defender potrzebnych zasobów.
 - Pobierz token dostępu przy użyciu tej aplikacji.
 - Użyj tokenu, aby uzyskać dostęp do interfejsu API Microsoft 365 Defender.
 
-W poniższych krokach przedstawiono sposób tworzenia wielodostępnej aplikacji usługi Azure AD, uzyskiwania tokenu dostępu do Microsoft 365 Defender i weryfikowania tokenu.
+W poniższych krokach przedstawiono sposób tworzenia aplikacji Azure AD z wieloma dzierżawami, uzyskiwania tokenu dostępu do Microsoft 365 Defender i weryfikowania tokenu.
 
 ## <a name="create-the-multi-tenant-app"></a>Tworzenie aplikacji wielodostępnej
 
@@ -82,7 +82,7 @@ W poniższych krokach przedstawiono sposób tworzenia wielodostępnej aplikacji 
 3. W formularzu rejestracji:
 
    - Wybierz nazwę aplikacji.
-   - W obszarze **Obsługiwane typy kont** wybierz pozycję **Konta w dowolnym katalogu organizacyjnym (dowolny katalog usługi Azure AD) — wielodostępny**.
+   - W obszarze **Obsługiwane typy kont** wybierz pozycję **Konta w dowolnym katalogu organizacyjnym (dowolny katalog Azure AD) — wielodostępny**.
    - Wypełnij sekcję **Identyfikator URI przekierowania** . Wybierz pozycję Wpisz **Sieć Web** i podaj identyfikator URI przekierowania jako **https://portal.azure.com**.
 
    Po zakończeniu wypełniania formularza wybierz pozycję **Zarejestruj**.
@@ -145,7 +145,7 @@ W poniższych krokach przedstawiono sposób tworzenia wielodostępnej aplikacji 
 
 ## <a name="get-an-access-token"></a>Uzyskiwanie tokenu dostępu
 
-Aby uzyskać więcej informacji na temat tokenów usługi Azure AD, zobacz [samouczek usługi Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Aby uzyskać więcej informacji na temat tokenów Azure AD, zobacz [samouczek Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
 > Chociaż przykłady w tej sekcji zachęcają do wklejania wartości wpisów tajnych do celów testowych, **nigdy nie należy kodować wpisów tajnych** do aplikacji działającej w środowisku produkcyjnym. Inna firma może użyć Twojego wpisu tajnego do uzyskania dostępu do zasobów. Możesz pomóc w zabezpieczeniu wpisów tajnych aplikacji przy użyciu [usługi Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Praktyczny przykład sposobu ochrony aplikacji można znaleźć [w temacie Zarządzanie wpisami tajnymi w aplikacjach serwera przy użyciu usługi Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
@@ -184,6 +184,9 @@ return $token
 
 > [!NOTE]
 > Poniższy kod został przetestowany przy użyciu narzędzia Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+
+> [!IMPORTANT]
+> Pakiet [microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet i biblioteka uwierzytelniania Azure AD (ADAL) zostały przestarzałe. Od 30 czerwca 2020 r. nie dodano żadnych nowych funkcji.   Zdecydowanie zachęcamy do uaktualnienia. Aby uzyskać więcej informacji, zobacz [przewodnik migracji](/azure/active-directory/develop/msal-migration) .
 
 1. Utwórz nową aplikację konsolową.
 1. Zainstaluj NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).

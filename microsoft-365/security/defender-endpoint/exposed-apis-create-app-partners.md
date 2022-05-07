@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fde2cc894fb989628f9e2e0d9d7297bdb3c9e9da
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5f17f29f083df6e567218363027e7677c87ee154
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172398"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268880"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Dostęp partnerów za pośrednictwem interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -169,6 +169,9 @@ return $token
 ### <a name="using-c"></a>Korzystanie z języka C #
 
 > Poniższy kod został przetestowany za pomocą narzędzia Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
+
+> [!IMPORTANT]
+> Pakiet [microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet i biblioteka uwierzytelniania Azure AD (ADAL) zostały przestarzałe. Od 30 czerwca 2020 r. nie dodano żadnych nowych funkcji.   Zdecydowanie zachęcamy do uaktualnienia. Aby uzyskać więcej informacji, zobacz [przewodnik migracji](/azure/active-directory/develop/msal-migration) .
 
 - Tworzenie nowej aplikacji konsolowej
 - Instalowanie NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)

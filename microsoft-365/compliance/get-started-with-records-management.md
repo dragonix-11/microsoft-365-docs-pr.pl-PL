@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Potrzebujesz rozwiązania do zarządzania rekordami dla Microsoft 365, które zarządza zawartością o wysokiej wartości dla zobowiązań prawnych, biznesowych lub regulacyjnych, ale nie wiesz, od czego zacząć? Zapoznaj się z praktycznymi wskazówkami, aby rozpocząć pracę.
-ms.openlocfilehash: e73cb1a118235082978ee93efcdb77f5e5135f8c
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: bbba24a2627c6040873da8d01185e4e6bdfdbfc8
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971478"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268754"
 ---
 # <a name="get-started-with-records-management"></a>Wprowadzenie do zarządzania rekordami
 
@@ -81,6 +81,7 @@ Poniższa tabela ułatwia mapowanie wymagań biznesowych na scenariusze obsługi
 |Rozpocznij okres przechowywania, gdy wystąpi zdarzenie, na przykład:  <br />— Pracownicy opuszczają organizację <br />- Kontrakty wygasają <br />— Koniec okresu istnienia produktu| [Rozpocznij przechowywanie po wystąpieniu zdarzenia](event-driven-retention.md)|
 |Ograniczanie zmian zasad w celu spełnienia wymagań prawnych lub ochrony przed nieautoryzowanymi administratorami| [Używanie blokady zachowania w celu ograniczenia zmian zasad przechowywania i zasad etykiet przechowywania](retention-preservation-lock.md)
 |Zarządzanie cyklem życia różnych typów dokumentów w SharePoint| [Używanie etykiet przechowywania do zarządzania cyklem życia dokumentów przechowywanych w SharePoint](auto-apply-retention-labels-scenario.md)|
+|Zastosuj etykietę przechowywania do pliku, gdy otrzymuję alert informujący o tym, że zawartość zawierająca dane osobowe jest przechowywana lub pozostaje nietknięta przez zbyt długi czas| [Badanie i korygowanie alertów w usłudze Privacy Risk Management](/privacy/priva/risk-management-alerts)|
 |Upewnij się, że ktoś przegląda i zatwierdza zawartość, zanim zawartość zostanie usunięta po zakończeniu okresu przechowywania|[Przeglądy dyspozycji](disposition.md#disposition-reviews) |
 |Posiadaj dowód dyspozycji dla zawartości, która została trwale usunięta po zakończeniu okresu przechowywania|[Dyspozycja rekordów](disposition.md#disposition-of-records) |
 | Monitorowanie sposobu i miejsca stosowania ustawień zachowywania i usuwania do elementów | [Monitorowanie etykiet przechowywania](retention.md#monitoring-retention-labels) |

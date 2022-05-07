@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zapoznaj się z ustawieniami, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i pozbyć się tego, czego nie chcesz.
-ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 90a048cf96bb2414a42d803bcd2f15deab4e711b
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231808"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268798"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
@@ -277,7 +277,10 @@ Po skonfigurowaniu zasad automatycznego stosowania korzystających z typów info
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Informacje o konfiguracji dla witryn SharePoint i kont OneDrive
 
-Po wybraniu lokalizacji **lokacji SharePoint** zasady przechowywania mogą przechowywać i usuwać dokumenty w witrynach komunikacji SharePoint, witrynach zespołu, które nie są połączone przez grupy Microsoft 365 i lokacje klasyczne. Jeśli nie używasz [zakresów zasad adaptacyjnych](#exceptions-for-adaptive-policy-scopes), witryny zespołu połączone przez grupy Microsoft 365 nie są obsługiwane za pomocą tej opcji, a zamiast tego użyj lokalizacji **Grupy Microsoft 365**, która ma zastosowanie do zawartości w skrzynce pocztowej, witrynie i plikach grupy.
+Po wybraniu lokalizacji **lokacji SharePoint** zasady przechowywania mogą przechowywać i usuwać dokumenty w witrynach komunikacji SharePoint, witrynach zespołu, które nie są połączone przez grupy Microsoft 365 i lokacje klasyczne. Jeśli nie używasz [zakresów zasad adaptacyjnych, witryny zespołu](#exceptions-for-adaptive-policy-scopes) połączone przez grupy Microsoft 365 nie są obsługiwane za pomocą tej opcji, a zamiast tego użyj lokalizacji **Grupy Microsoft 365**, która ma zastosowanie do zawartości w skrzynce pocztowej, witrynie i plikach grupy.
+
+> [!TIP]
+> Aby potwierdzić, czy lokacja jest połączona z grupą, możesz użyć [filtru w centrum administracyjnym SharePoint](/sharepoint/customize-admin-center-site-list) lub [SharePoint programu PowerShell](/powershell/module/sharepoint-online/get-sposite#example-10). W przypadku zakresów statycznych te witryny są obsługiwane w **Grupy Microsoft 365** lokalizacji.
 
 Aby uzyskać szczegółowe informacje na temat elementów uwzględnionych i wykluczonych podczas konfigurowania ustawień przechowywania dla SharePoint i OneDrive, zobacz [Co jest dołączone do przechowywania i usuwania](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
