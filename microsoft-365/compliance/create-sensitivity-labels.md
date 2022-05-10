@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Wymaganie dotyczące wszystkich rozwiązań usługi Microsoft Purview Information Protection: tworzenie, konfigurowanie i publikowanie etykiet poufności w celu klasyfikowania i ochrony danych organizacji.'
-ms.openlocfilehash: 7dc8cfc095167021df2cec093734ab9c1b101868
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: e35d6e317abc3fb32bb11a6bdf937f303212fc23
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286951"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302359"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Tworzenie i konfigurowanie etykiet poufności i ich zasad
 
@@ -47,14 +47,14 @@ Administrator globalny organizacji ma pełne uprawnienia do tworzenia wszystkich
     
     Jeśli ta opcja nie zostanie od razu wyświetlona, najpierw wybierz pozycję **Pokaż wszystko**.
 
-2. Na stronie **Etykiety** wybierz **pozycję + Utwórz etykietę** , aby rozpocząć konfigurację nowej etykiety poufności: 
+2. Na stronie **Etykiety** wybierz pozycję **+ Utwórz etykietę** , aby rozpocząć nową konfigurację etykiet poufności: 
     
     ![Utwórz etykietę poufności.](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
     > Domyślnie dzierżawy nie mają żadnych etykiet i musisz je utworzyć. Etykiety na przykładowym obrazie pokazują etykiety domyślne, które zostały [zmigrowane z usługi Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
-3. Na stronie **Definiowanie zakresu dla tej etykiety** wybrane opcje określają zakres etykiety dla ustawień, które można skonfigurować, oraz miejsce, w którym będą widoczne po opublikowaniu:
+3. Na stronie **Definiowanie zakresu dla tej etykiety** wybrane opcje określają zakres etykiety dla ustawień, które można skonfigurować i gdzie będą widoczne po opublikowaniu:
 
     ![Zakresy etykiet poufności.](../media/sensitivity-labels-scopes.png)
 
@@ -195,21 +195,21 @@ Możesz również użyć funkcji [Remove-Label](/powershell/module/exchange/remo
 
 W środowisku produkcyjnym jest mało prawdopodobne, że konieczne będzie usunięcie etykiet poufności z zasad etykiet lub usunięcie etykiet poufności. Jest bardziej prawdopodobne, że może być konieczne przeprowadzenie jednej lub jednej z tych akcji w początkowej fazie testowania. Upewnij się, że rozumiesz, co się stanie, gdy wykonasz jedną z tych akcji.
 
-Usunięcie etykiety z zasad etykiety jest mniej ryzykowne niż usunięcie tej etykiety i zawsze można ją dodać z powrotem do zasad etykiet później, jeśli zajdzie taka potrzeba:
+Usunięcie etykiety z zasad etykiety jest mniej ryzykowne niż usunięcie tej etykiety i zawsze można ją dodać później, jeśli zajdzie taka potrzeba. Nie będzie można usunąć etykiety, jeśli jest ona nadal w zasadach etykiet.
 
-- Po usunięciu etykiety z zasad etykiety, aby etykieta nie była już publikowana dla pierwotnie określonych użytkowników, przy następnym odświeżeniu zasad etykiety użytkownicy nie będą już widzieć tej etykiety do wybrania w aplikacja pakietu Office. Jeśli jednak etykieta została zastosowana do dokumentów lub wiadomości e-mail, etykieta nie zostanie usunięta z tej zawartości. Wszelkie szyfrowanie zastosowane przez etykietę pozostaje, a bazowy szablon ochrony pozostaje opublikowany. 
-
-- W przypadku etykiet, które zostały usunięte, ale zostały wcześniej zastosowane do zawartości, użytkownicy korzystający z wbudowanych etykiet dla programu Word, Excel i PowerPoint nadal widzą nazwę zastosowanej etykiety na pasku stanu. Podobnie etykiety, które zostały usunięte, które zostały zastosowane do SharePoint witryn, nadal wyświetlają nazwę etykiety w kolumnie **Poufność**.
+Po usunięciu etykiety z zasad etykiety, aby etykieta nie była już publikowana dla pierwotnie określonych użytkowników, przy następnym odświeżeniu zasad etykiety użytkownicy nie widzą już tej etykiety do wybrania w swoich aplikacjach Office. Jeśli ta etykieta jest już zastosowana, etykieta nie zostanie usunięta z zawartości ani kontenera. Na przykład użytkownicy korzystający z wbudowanych etykiet w aplikacjach klasycznych dla programu Word, Excel i PowerPoint nadal widzą nazwę zastosowanej etykiety na pasku stanu. Zastosowana etykieta kontenera nadal chroni witrynę Teams lub SharePoint.
 
 Dla porównania po usunięciu etykiety:
 
 - Jeśli etykieta zastosowała szyfrowanie, bazowy szablon ochrony jest archiwizowany, aby można było nadal otwierać wcześniej chronioną zawartość. Z powodu tego zarchiwizowanego szablonu ochrony nie będzie można utworzyć nowej etykiety o tej samej nazwie. Mimo że można usunąć szablon ochrony przy użyciu programu [PowerShell](/powershell/module/aipservice/remove-aipservicetemplate), nie rób tego, chyba że na pewno nie musisz otwierać zawartości zaszyfrowanej za pomocą zarchiwizowanego szablonu.
 
-- W przypadku aplikacji klasycznych: informacje o etykiecie w metadanych pozostają, ale ponieważ mapowanie identyfikatora etykiety na nazwę nie jest już możliwe, użytkownicy nie widzą wyświetlanej nazwy zastosowanej etykiety (na przykład na pasku stanu), więc użytkownicy zakładają, że zawartość nie jest oznaczona etykietą. Jeśli etykieta zastosowała szyfrowanie, szyfrowanie pozostaje i po otwarciu zawartości użytkownicy nadal widzą nazwę i opis zarchiwizowanego szablonu ochrony.
+- W przypadku dokumentów przechowywanych w SharePoint lub OneDrive i [włączono etykiety poufności dla plików Office](sensitivity-labels-sharepoint-onedrive-files.md): po otwarciu dokumentu w Office dla sieci web etykieta nie zostanie zastosowana w aplikacji, a nazwa **etykiety** nie będzie już wyświetlana w kolumnie Czułość w SharePoint. Jeśli usunięta etykieta zastosowała szyfrowanie, a usługi mogą przetwarzać zaszyfrowaną zawartość, szyfrowanie zostanie usunięte. Egress akcje z tych usług powodują taki sam wynik. Na przykład pobierz, skopiuj do, przejdź do i otwórz za pomocą Office aplikacji klasycznej lub mobilnej. Mimo że informacje o etykiecie pozostają w metadanych pliku, aplikacje nie mogą już mapować identyfikatora etykiety na nazwę wyświetlaną, więc użytkownicy zakładają, że plik nie jest oznaczony etykietą.
 
-- W przypadku Office w sieci Web: użytkownicy nie widzą nazwy etykiety na pasku stanu ani w kolumnie **Czułość**. Informacje o etykiecie w metadanych pozostają tylko wtedy, gdy etykieta nie zastosowała szyfrowania. Jeśli etykieta zastosowała szyfrowanie i włączono [etykiety poufności dla SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), informacje o etykietach w metadanych zostaną usunięte i szyfrowanie zostanie usunięte. 
+- W przypadku dokumentów przechowywanych poza SharePoint i OneDrive lub nie włączono etykiet poufności dla plików Office i wiadomości e-mail: Po otwarciu zawartości informacje o etykiecie w metadanych pozostają, ale bez identyfikatora etykiety mapowania nazw użytkownicy nie widzą wyświetlanej zastosowanej nazwy etykiety (na przykład na pasku stanu dla aplikacji klasycznych). Jeśli usunięta etykieta zastosowała szyfrowanie, szyfrowanie pozostanie, a użytkownicy nadal będą widzieć nazwę i opis zarchiwizowanego szablonu ochrony.
 
-Usunięcie etykiety poufności z zasad etykiety lub usunięcie etykiety poufności może potrwać do 24 godzin.
+- W przypadku kontenerów, takich jak witryny w SharePoint i Teams: etykieta jest usuwana, a wszystkie ustawienia skonfigurowane przy użyciu tej etykiety nie są już wymuszane. Ta akcja zwykle trwa od 48 do 72 godzin dla SharePoint witryn i może być szybsza w przypadku Teams i Grupy Microsoft 365.
+
+Podobnie jak w przypadku wszystkich zmian etykiet, usunięcie etykiety poufności z zasad etykiety lub usunięcie etykiety poufności wymaga czasu na replikację do wszystkich użytkowników i usług.
 
 ## <a name="next-steps"></a>Następne kroki
 

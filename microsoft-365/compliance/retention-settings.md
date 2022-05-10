@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zapoznaj się z ustawieniami, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i pozbyć się tego, czego nie chcesz.
-ms.openlocfilehash: 39c0258cb4b471e05bae24d0d35c708a42252219
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: ec7743c2e72016c606decb1346bdd558e40ae412
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285385"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302133"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
@@ -396,6 +396,8 @@ Po zakończeniu okresu przechowywania możesz wybrać, czy zawartość ma zosta�
 
 ![Strona ustawień przechowywania.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
+Jak wyjaśniono w następnej sekcji, etykiety przechowywania mają inną opcję; aby zastosować inną etykietę przechowywania z własnym okresem przechowywania.
+
 Przed skonfigurowaniem przechowywania najpierw zapoznaj się z limitami pojemności i magazynu dla odpowiednich obciążeń:
 
 - W przypadku SharePoint i OneDrive zachowane elementy są przechowywane w bibliotece archiwum zachowywania witryny, która jest uwzględniona w limitach przydziału magazynu lokacji. Aby uzyskać więcej informacji, zobacz [Zarządzanie limitami magazynu lokacji](/sharepoint/manage-site-collection-storage-limits) z dokumentacji SharePoint.
@@ -403,6 +405,55 @@ Przed skonfigurowaniem przechowywania najpierw zapoznaj się z limitami pojemno�
 - Aby uzyskać Exchange, Teams i Yammer, w których przechowywane wiadomości są przechowywane w skrzynkach pocztowych, zobacz [Exchange Online limity](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) i włącz [automatyczne rozszerzanie archiwizacji](autoexpanding-archiving.md).
     
     W skrajnych przypadkach, gdy duża ilość wiadomości e-mail jest usuwana w krótkim czasie przez użytkowników lub automatycznie z ustawień zasad, może być również konieczne skonfigurowanie Exchange w celu częstszego przenoszenia elementów z folderu Elementy do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy możliwe do odzyskania w ich archiwum skrzynki pocztowej. Aby uzyskać instrukcje krok po kroku, zobacz [Zwiększanie limitu przydziału elementów możliwych do odzyskania dla skrzynek pocztowych wstrzymanych](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+
+#### <a name="relabeling-at-the-end-of-the-retention-period"></a>Ponowne etykietowanie na końcu okresu przechowywania
+
+> [!NOTE]
+> Ta opcja jest obecnie wdrażana w wersji zapoznawczej i może ulec zmianie.
+
+Po skonfigurowaniu etykiety przechowywania w celu automatycznego zastosowania innej etykiety przechowywania na końcu okresu przechowywania element podlega następnie ustawieniu przechowywania nowo wybranej etykiety przechowywania. Ta opcja umożliwia automatyczną zmianę ustawień przechowywania elementu.
+
+Etykietę zastępczą można zmienić po utworzeniu i zapisaniu podstawowej etykiety przechowywania. W przypadku elementów, które mają już zastosowaną podstawową etykietę przechowywania i w skonfigurowanym okresie przechowywania, zmiana etykiety zastępczej zostanie zsynchronizowana z tymi elementami. Podobnie jak w przypadku innych zmian etykiet, zezwalaj na ten okres synchronizacji przez maksymalnie 7 dni.
+
+W przypadku etykiety zastępczej zazwyczaj wybierasz etykietę, która ma dłuższy okres przechowywania niż podstawowa etykieta przechowywania. Jednak niekoniecznie tak jest ze względu na ustawienie etykiety, kiedy należy rozpocząć okres przechowywania. Na przykład podstawowa etykieta przechowywania jest skonfigurowana do uruchamiania okresu przechowywania po utworzeniu elementu, a etykieta zastępcza rozpoczyna okres przechowywania po oznaczeniu etykietą lub w przypadku wystąpienia zdarzenia.
+
+W przypadku zmiany, czy etykieta [oznacza element jako rekord, czy regularnie,](declare-records.md) zastępcza etykieta przechowywania może również zmienić [ograniczenia dotyczące dozwolonej lub zablokowanej akcji](records-management.md#records) dla tego elementu.
+
+##### <a name="relabeling-example-configuration"></a>Ponowne etykietowanie przykładu konfiguracji
+
+Tworzysz i konfigurujesz etykietę przechowywania dla wymagania dotyczącego zgodności z branżą, aby zachować zawartość przez trzy lata po jej utworzeniu i oznaczyć element jako rekord. Po zastosowaniu tej etykiety użytkownicy nie będą mogli usunąć elementu ze swojej aplikacji, ponieważ jest to jedno z ograniczeń rekordu.
+
+Pod koniec trzech lat chcesz automatycznie przechowywać zawartość przez kolejne dwa lata z powodu wewnętrznych zasad zgodności, ale nie ma potrzeby oznaczania jej jako rekordu z ograniczeniami stosowanymi przez tę konfigurację.
+
+Aby ukończyć konfigurację, należy wybrać ustawienie etykiety, aby zmienić etykietę na końcu okresu przechowywania, i wybrać etykietę, która zachowuje zawartość przez pięć lat po utworzeniu zawartości i nie oznacza elementu jako rekordu. 
+
+Dzięki tym połączonym ustawieniom użytkownicy będą mogli usunąć element ze swojej aplikacji po trzech latach, ale pozostaje on dostępny w przypadku wyszukiwania zbierania elektronicznych materiałów dowodowych przez pięć lat.
+
+##### <a name="considerations-for-the-relabeling-option"></a>Zagadnienia dotyczące opcji ponownego etykietowania
+
+- Nie można ponownie oznaczyć rekordu regulacyjnego, ale etykietę zastępczą można skonfigurować do oznaczania zawartości jako rekordu regulacyjnego.
+
+- Nie będzie można usunąć etykiety przechowywania wybranej jako etykieta zastępcza.
+
+- Możesz wybrać etykietę zastępczą skonfigurowaną do stosowania innej etykiety zastępczej. Nie ma limitu liczby etykiet zastępczych, które może mieć element.
+
+- Jeśli etykieta zastępcza oznacza element jako rekord lub rekord regulacyjny, ale nie można go zastosować, ponieważ plik jest obecnie wyewidencjonowany, proces ponownego etykietowania jest ponowiony po ponownym zaewidencjonowaniu pliku lub odrzuceniu wyewidencjonowania.
+
+- Jako znany problem w tej wersji zapoznawczej etykieta zastępcza jest widoczna dla użytkowników w Outlook tylko wtedy, gdy etykieta jest uwzględniona w opublikowanych zasadach etykiet dla tej samej lokalizacji lub jest skonfigurowana do usuwania tylko.
+
+##### <a name="configuration-paths-for-relabeling"></a>Ścieżki konfiguracji do ponownego etykietowania
+
+Opcja ponownego etykietowania na końcu okresu przechowywania ma dwie ścieżki konfiguracji podczas tworzenia etykiety przechowywania:
+
+- Jeśli musisz początkowo zachować zawartość z etykietą podstawową (najbardziej typową): na stronie **Definiowanie ustawień etykiety** wybierz pozycję **Zachowaj elementy na czas nieokreślony lub dla określonego okresu** i określ okres przechowywania. Następnie na stronie **Wybierz, co się stanie po okresie przechowywania**, wybierz pozycję Zmień **etykietęUtwórz** >  etykietę.
+
+- Jeśli nie musisz początkowo zachowywać zawartości z etykietą podstawową: na stronie **Definiowanie ustawień etykiety** wybierz pozycję **Wymuszaj akcje po określonym okresie**, określ okres przechowywania, a następnie wybierz pozycję **Zmień** **etykietęChoose** >  etykietę.
+
+W obu przypadkach etykieta zastępcza musi już zostać utworzona, ale nie musi być uwzględniona w istniejących zasadach etykiet.
+
+![Zmień opcję etykiety po okresie przechowywania.](../media/change-label-option.png)
+
+Alternatywnie recenzenci dyspozycji mogą ręcznie wybrać etykietę zastępczą w ramach [procesu przeglądu dyspozycji](disposition.md#disposition-reviews) , jeśli ustawienie **etykiety Uruchom przegląd dyspozycji** jest zaznaczone na tej stronie **Wybierz, co się stanie po okresie przechowywania** .
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Usuwanie zawartości starszej niż określony wiek
 

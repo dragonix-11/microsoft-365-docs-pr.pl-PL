@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania, które ułatwiają zachowanie potrzebnych elementów i usuwanie tego, czego nie potrzebujesz.
-ms.openlocfilehash: 6fd2f56d6876b6a3832e869767880890486551db
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c8ac850c77c97cbcc313108ffc74e05aa1735fde
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286929"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302229"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
 
@@ -101,9 +101,11 @@ W przeciwieństwie do zasad przechowywania ustawienia przechowywania z etykiet p
 
 - Użyj [klasyfikatorów z możliwością trenowania](classifier-learn-about.md) , aby zidentyfikować zawartość do etykiety.
 
-- Zastosuj etykietę domyślną dla dokumentów SharePoint.
+- Zastosuj etykietę domyślną dla elementów SharePoint lub komunikatów Exchange.
 
-- Obsługa [przeglądu dyspozycji](./disposition.md) w celu przejrzenia zawartości przed jej trwałym usunięciem.
+- Obsługiwane akcje w końcowym okresie przechowywania:
+    - [Przegląd](./disposition.md)  dyspozycji , aby przejrzeć zawartość przed jej trwałym usunięciem.
+    - Automatyczne stosowanie innej etykiety przechowywania
 
 - Oznacz zawartość jako [rekord](records-management.md#records) jako część ustawień etykiety i zawsze masz [dowód dyspozycji](disposition.md#disposition-of-records) , gdy zawartość zostanie usunięta po zakończeniu okresu przechowywania.
 
@@ -219,14 +221,18 @@ W przypadku standardowych etykiet przechowywania (nie oznaczają one elementów 
 
 - Gdy zawartość ma już zastosowaną etykietę przechowywania, istniejąca etykieta nie zostanie automatycznie usunięta ani zastąpiona inną etykietą przechowywania jednym możliwym wyjątkiem: istniejąca etykieta została zastosowana jako etykieta domyślna. Jeśli używasz etykiety domyślnej, istnieją pewne scenariusze, w których można ją zastąpić inną etykietą domyślną lub automatycznie usunąć.
 
-  Aby uzyskać więcej informacji na temat zachowania etykiety, gdy jest stosowana przy użyciu etykiety domyślnej:
-
-  - Etykieta domyślna dla SharePoint: [zachowanie etykiety podczas używania etykiety domyślnej dla SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-  - Etykieta domyślna dla Outlook: [stosowanie domyślnej etykiety przechowywania do folderu Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- Jeśli zawartość ma już zastosowaną etykietę przechowywania, istniejąca etykieta nie zostanie automatycznie usunięta ani zastąpiona przez inną etykietę przechowywania z dwoma możliwymi wyjątkami: 
+    
+    - Istniejąca etykieta jest skonfigurowana do automatycznego stosowania innej etykiety przechowywania na końcu okresu przechowywania.
+    - Istniejąca etykieta została zastosowana jako etykieta domyślna. Jeśli używasz etykiety domyślnej, istnieją pewne scenariusze, w których można ją zastąpić inną etykietą domyślną lub automatycznie usunąć. 
+        
+        Aby uzyskać więcej informacji na temat zachowania etykiety, gdy jest stosowana przy użyciu etykiety domyślnej:
+        - Etykieta domyślna dla SharePoint: [zachowanie etykiety podczas używania etykiety domyślnej dla SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+        - Etykieta domyślna dla Outlook: [stosowanie domyślnej etykiety przechowywania do folderu Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - Jeśli istnieje wiele zasad automatycznego stosowania etykiet, które mogą stosować etykietę przechowywania, a zawartość spełnia warunki wielu zasad, zostanie zastosowana etykieta przechowywania najstarszych zasad automatycznego stosowania etykiet (według daty utworzenia).
 
-Gdy etykiety przechowywania oznaczają elementy jako rekord lub rekord regulacyjny, etykiety te nigdy nie są automatycznie zmieniane. Tylko administratorzy kontenera mogą ręcznie zmieniać lub usuwać etykiety przechowywania, które oznaczają elementy jako rekord, ale nie rekordy regulacyjne. Aby uzyskać więcej informacji, zobacz [Porównanie ograniczeń dotyczących dozwolonych lub zablokowanych akcji](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+Gdy etykiety przechowywania oznaczają elementy jako rekord lub rekord regulacyjny, etykiety te nigdy nie są automatycznie zmieniane podczas skonfigurowanego okresu przechowywania. Tylko administratorzy kontenera mogą ręcznie zmieniać lub usuwać etykiety przechowywania, które oznaczają elementy jako rekord, ale nie rekordy regulacyjne. Aby uzyskać więcej informacji, zobacz [Porównanie ograniczeń dotyczących dozwolonych lub zablokowanych akcji](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 #### <a name="monitoring-retention-labels"></a>Monitorowanie etykiet przechowywania
 
@@ -254,6 +260,7 @@ Poniższa tabela ułatwia określenie, czy należy używać zasad przechowywania
 |Ustawienia przechowywania, które mogą być zachowywane, a następnie usuwane, tylko do zachowania lub tylko do usuwania |Tak |Tak |
 |Obsługiwane obciążenia: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />— grupy Microsoft 365 <br />- Skype dla firm <br />- Teams<br />- Yammer|<br /> Tak <br /> Tak <br /> Tak <br /> Tak <br /> Tak <br /> Tak <br /> Tak | <br /> Tak, z wyjątkiem folderów publicznych <br /> Tak <br /> Tak <br /> Tak <br /> Nie <br /> Nie <br /> Nie |
 |Przechowywanie stosowane automatycznie | Tak | Tak |
+|Automatyczne stosowanie różnych ustawień przechowywania na końcu okresu przechowywania | Nie | Tak |
 |Przechowywanie stosowane na podstawie warunków <br /> — poufne typy informacji, KQL zapytań i słów kluczowych, klasyfikatory z możliwością trenowania, załączniki w chmurze| Nie | Tak |
 |Przechowywanie zastosowane ręcznie | Nie | Tak |
 |Interakcja użytkownika końcowego | Nie | Tak |

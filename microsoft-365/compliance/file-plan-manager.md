@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Plan plików zapewnia zaawansowane możliwości zarządzania etykietami przechowywania.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5ed2ccfa1c26efc8e55f048e24de005701417576
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: d025dc7637b9c7b494a5bff3447fe4429ba24701
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286083"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302206"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Tworzenie etykiet przechowywania i zarządzanie nimi przy użyciu planu plików
 
@@ -221,9 +221,11 @@ Poniższe informacje ułatwiają wypełnienie pobranego szablonu w celu zaimport
 
 Ustawienia etykiet nie są obecnie obsługiwane w przypadku importowania:
 
-- Przegląd dyspozycji wieloetapowej: Mimo że można skonfigurować ustawienia dla pojedynczego etapu przeglądu dyspozycji podczas importowania etykiet przechowywania za pomocą szablonu, nie można określić dodatkowych etapów przeglądu. Zamiast tego skonfiguruj je w centrum zgodności po pomyślnym zakończeniu importowania.
+- Przegląd dyspozycji wieloetapowej: Mimo że można skonfigurować ustawienia dla pojedynczego etapu przeglądu dyspozycji podczas importowania etykiet przechowywania za pomocą szablonu, nie można określić dodatkowych etapów przeglądu. Zamiast tego skonfiguruj je w portalu zgodności po pomyślnym zaimportowaniu.
 
-- Domyślnie odblokuj ten rekord (obecnie wdrażany w wersji zapoznawczej): to ustawienie nie jest dostępne w szablonie do zaimportowania i nie można wybrać tego ustawienia w centrum zgodności po pomyślnym zaimportowaniu.
+- Domyślnie odblokuj ten rekord (obecnie wdrażany w wersji zapoznawczej): to ustawienie nie jest dostępne w szablonie do zaimportowania i nie można wybrać tego ustawienia w portalu zgodności po pomyślnym zaimportowaniu.
+
+- Etykieta zastępcza (obecnie wdrażana w wersji zapoznawczej): to ustawienie nie jest dostępne w szablonie do zaimportowania, ale możesz wybrać to ustawienie w portalu zgodności po pomyślnym zaimportowaniu.
 
 
 ## <a name="next-steps"></a>Następne kroki

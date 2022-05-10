@@ -19,12 +19,12 @@ ms.collection:
 description: Jakie są najlepsze rozwiązania dotyczące ustawień zabezpieczeń Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Defender? Jakie są bieżące zalecenia dotyczące standardowej ochrony? Co powinno być używane, jeśli chcesz być bardziej rygorystyczne? A jakie dodatki otrzymujesz, jeśli również używasz Ochrona usługi Office 365 w usłudze Defender?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 72d4f64ca00defe26ddaff7fe27d641cb65f13be
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: c6e2b52c9dbde60dfb554dd92c8a0cae2ba05ced
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130522"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302293"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Zalecane ustawienia zabezpieczeń EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -74,11 +74,11 @@ Aby utworzyć i skonfigurować zasady ochrony przed spamem, zobacz [Konfigurowan
 |**Tryb testu** (_TestModeAction_)|**Brak**|**Brak**|**Brak**|To ustawienie jest częścią usługi ASF. Aby uzyskać więcej informacji, zobacz [sekcję Ustawienia asf w zasadach ochrony przed spamem](#asf-settings-in-anti-spam-policies) w tym artykule.|
 |**Działania**||||Wszędzie tam, gdzie **wybrano komunikat kwarantanny**, dostępne jest pole **Wyboru zasad kwarantanny** . Zasady kwarantanny definiują, co użytkownicy mogą robić w przypadku komunikatów poddanych kwarantannie. <br/><br/> Podczas tworzenia nowych zasad ochrony przed spamem pusta wartość oznacza, że domyślne zasady kwarantanny są używane do definiowania historycznych możliwości komunikatów, które zostały poddane kwarantannie przez ten konkretny werdykt (AdminOnlyAccessPolicy for **High confidence phishing**; DefaultFullAccessPolicy dla wszystkich innych). <br/><br/> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny, które definiują bardziej restrykcyjne lub mniej restrykcyjne możliwości dla użytkowników. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
 |Akcja wykrywania **spamu** <br/><br/> _SpamAction_|**Przenoszenie wiadomości do folderu Wiadomości-śmieci** <br/><br/> `MoveToJmf`|**Przenoszenie wiadomości do folderu Wiadomości-śmieci** <br/><br/> `MoveToJmf`|**Komunikat kwarantanny** <br/><br/> `Quarantine`||
-|**Akcja wykrywania spamu o wysokim poziomie ufności** <br/><br/> _HighConfidenceSpamAction_|**Komunikat kwarantanny** <br/><br/> `MoveToJmf`|**Komunikat kwarantanny** <br/><br/> `Quarantine`|**Komunikat kwarantanny** <br/><br/> `Quarantine`||
-|Akcja wykrywania **wyłudzania informacji** <br/><br/> _PhishSpamAction_|**Komunikat kwarantanny** <br/><br/> `MoveToJmf`|**Komunikat kwarantanny** <br/><br/> `Quarantine`|**Komunikat kwarantanny** <br/><br/> `Quarantine`||
+|**Akcja wykrywania spamu o wysokim poziomie ufności** <br/><br/> _HighConfidenceSpamAction_|**Przenoszenie wiadomości do folderu Wiadomości-śmieci** <br/><br/> `MoveToJmf`|**Komunikat kwarantanny** <br/><br/> `Quarantine`|**Komunikat kwarantanny** <br/><br/> `Quarantine`||
+|Akcja wykrywania **wyłudzania informacji** <br/><br/> _PhishSpamAction_|**Przenoszenie wiadomości do folderu Wiadomości-śmieci**<sup>\*</sup> <br/><br/> `MoveToJmf`|**Komunikat kwarantanny** <br/><br/> `Quarantine`|**Komunikat kwarantanny** <br/><br/> `Quarantine`|<sup>\*</sup> Wartość domyślna to **Przenieś wiadomość do folderu Wiadomości-śmieci** w domyślnych zasadach ochrony przed spamem oraz w nowych zasadach ochrony przed spamem utworzonych w programie PowerShell. Wartość domyślna to **Komunikat kwarantanny** w nowych zasadach ochrony przed spamem tworzonych w portalu Microsoft 365 Defender.|
 |**Akcja wykrywania wyłudzania informacji o wysokim poziomie zaufania** <br/><br/> _HighConfidencePhishAction_|**Komunikat kwarantanny** <br/><br/> `Quarantine`|**Komunikat kwarantanny** <br/><br/> `Quarantine`|**Komunikat kwarantanny** <br/><br/> `Quarantine`||
 |Akcja wykrywania **zbiorczego** <br/><br/> _BulkSpamAction_|**Przenoszenie wiadomości do folderu Wiadomości-śmieci** <br/><br/> `MoveToJmf`|**Przenoszenie wiadomości do folderu Wiadomości-śmieci** <br/><br/> `MoveToJmf`|**Komunikat kwarantanny** <br/><br/> `Quarantine`||
-|**Przechowywanie spamu w kwarantannie przez tyle dni** <br/><br/> _KwarantannaRetentionPeriod_|15 dni<sup>\*</sup>|30 dni|30 dni|<sup>\*</sup> Wartość domyślna to 15 dni w domyślnych zasadach ochrony przed spamem oraz w nowych zasadach ochrony przed spamem utworzonych w programie PowerShell. Wartość domyślna to 30 dni w nowych zasadach ochrony przed spamem tworzonych w portalu Microsoft 365 Defender. <br/><br/> Ta wartość ma również wpływ na komunikaty poddane kwarantannie przez zasady ochrony przed wyłudzaniem informacji. Aby uzyskać więcej informacji, zobacz [Kwarantanna wiadomości e-mail w EOP](quarantine-email-messages.md).|
+|**Przechowywanie spamu w kwarantannie przez tyle dni** <br/><br/> _KwarantannaRetentionPeriod_|15 dni<sup>\*</sup>|30 dni|30 dni|<sup>\*</sup> Wartość domyślna to 15 dni w domyślnych zasadach ochrony przed spamem i w nowych zasadach ochrony przed spamem utworzonych w programie PowerShell. Wartość domyślna to 30 dni w nowych zasadach ochrony przed spamem tworzonych w portalu Microsoft 365 Defender. <br/><br/> Ta wartość ma również wpływ na komunikaty poddane kwarantannie przez zasady ochrony przed wyłudzaniem informacji. Aby uzyskać więcej informacji, zobacz [Kwarantanna wiadomości e-mail w EOP](quarantine-email-messages.md).|
 |**Włączanie wskazówek dotyczących bezpieczeństwa spamu** <br/><br/> _InlineSafetyTipsEnabled_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
 |Włączanie automatycznego przeczyszczania w godzinach zerowych (ZAP) na potrzeby wiadomości wyłudzających informacje <br/><br/> _PhishZapEnabled_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
 |Włączanie zap dla wiadomości niepożądanych <br/><br/> _SpamZapEnabled_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
@@ -163,6 +163,8 @@ Aby utworzyć i skonfigurować zasady ochrony przed złośliwym oprogramowaniem,
 
 Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Spoof settings (Fałszowanie ustawień](set-up-anti-phishing-policies.md#spoof-settings)). Aby skonfigurować te ustawienia, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w ramach EOP](configure-anti-phishing-policies-eop.md).
 
+Ustawienia fałszowania są ze sobą powiązane, ale ustawienie **Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa** nie ma zależności od ustawień fałszowania.
+
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
 |**Ochrona & progu wyłudzania informacji**|||||
@@ -224,18 +226,6 @@ Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Temat Impersona
 #### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Ustawienia zasad ochrony przed wyłudzaniem informacji na platformie EOP w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 Są to te same ustawienia, które są dostępne w [ustawieniach zasad ochrony przed spamem w ramach EOP](#eop-anti-spam-policy-settings).
-
-Ustawienia fałszowania są ze sobą powiązane, ale ustawienie **Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa** nie ma zależności od ustawień fałszowania.
-
-|Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
-|---|:---:|:---:|:---:|---|
-|**Ochrona & progu wyłudzania informacji**|||||
-|**Włączanie analizy fałszowania** <br/><br/> _EnableSpoofIntelligence_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
-|**Działania**|||||
-|**Jeśli komunikat zostanie wykryty jako sfałszowany** <br/><br/> _AuthenticationFailAction_|**Przenoszenie wiadomości do folderów wiadomości-śmieci adresatów** <br/><br/> `MoveToJmf`|**Przenoszenie wiadomości do folderów wiadomości-śmieci adresatów** <br/><br/> `MoveToJmf`|**Kwarantanna komunikatu** <br/><br/> `Quarantine`|To ustawienie dotyczy sfałszowanych nadawców, którzy zostali automatycznie zablokowani, jak pokazano w szczegółowych [informacjach dotyczących fałszowania analizy](learn-about-spoof-intelligence.md) lub ręcznie zablokowanych na [liście dozwolonych/zablokowanych dzierżaw](tenant-allow-block-list.md). <br/><br/> Jeśli **wybierzesz pozycję Kwarantanna komunikatu**, dostępne jest pole **Zastosuj zasady kwarantanny** , aby wybrać zasady kwarantanny, które definiują, co użytkownicy mogą robić w przypadku komunikatów poddanych kwarantannie. Podczas tworzenia nowych zasad ochrony przed wyłudzaniem informacji pusta wartość oznacza, że domyślne zasady kwarantanny są używane do definiowania historycznych możliwości fałszowania komunikatów poddanych kwarantannie (DefaultFullAccessPolicy). <br/><br/> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny, które definiują, co adresaci mogą robić dla tych komunikatów w kwarantannie. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
-|**Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa** <br/><br/> _EnableFirstContactSafetyTips_|Nie zaznaczono <br/><br/> `$false`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Aby uzyskać więcej informacji, zobacz [Pierwszy kontakt porada dotycząca bezpieczeństwa](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Pokaż (?) dla nieuwierzytelnionych nadawców na potrzeby fałszowania** <br/><br/> _EnableUnauthenticatedSender_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Dodaje znak zapytania (?) do zdjęcia nadawcy w Outlook dla niezidentyfikowanych sfałszowanych nadawców. Aby uzyskać więcej informacji, zobacz [Nieuwierzytelniony nadawca](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|**Pokaż tag "via"** <br/><br/> _EnableViaTag_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Dodaje tag via (chris@contoso.com za pośrednictwem fabrikam.com) do adresu Od, jeśli różni się on od domeny w podpisie DKIM lub **adresIE MAIL FROM** . <br/><br/> Aby uzyskać więcej informacji, zobacz [Nieuwierzytelniony nadawca](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 
 ### <a name="safe-attachments-settings"></a>ustawienia załączników Sejf
 
