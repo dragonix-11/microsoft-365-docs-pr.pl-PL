@@ -328,6 +328,10 @@
               href: microsoft-threat-experts.md
             - name: Konfigurowanie funkcji usługi Microsoft Threat Experts i zarządzanie nimi
               href: configure-microsoft-threat-experts.md
+        - name: Współpraca z ekspertami w zakresie wyszukiwania zagrożeń w usłudze Microsoft Defender
+          items:
+            - name: Omówienie
+              href: defenderexpertsforhuntingprev.md
     - name: Przewodnik na temat operacji dotyczących zabezpieczeń
       items:
         - name: Omówienie
