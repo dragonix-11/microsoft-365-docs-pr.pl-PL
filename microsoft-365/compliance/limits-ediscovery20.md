@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o limitach przypadków, limitach indeksowania i limitach wyszukiwania dla rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365.
-ms.openlocfilehash: 3d0204eb452b669937d30fe5519e5af073b64d6d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7aa9dcd65cb047914a8b1b68de3340bb9d7b728f
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099218"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294624"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limity w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 
@@ -64,7 +64,8 @@ W poniższej tabeli wymieniono limity indeksowania w obszarze eDiscovery (Premiu
 |Maksymalna liczba znaków wyodrębnionych z jednego pliku.|10 <sup>milionów4</sup>|
 |Maksymalny rozmiar pojedynczego pliku.|150 <sup>MB4</sup>|
 |Maksymalna głębokość osadzonych elementów w dokumencie.|<sup>254</sup>|
-|Maksymalny rozmiar plików przetwarzanych przez optyczne rozpoznawanie znaków (OCR).|24 <sup>MB4</sup> <br/>  
+|Maksymalny rozmiar plików przetwarzanych przez optyczne rozpoznawanie znaków (OCR).|24 <sup>MB4</sup> <br/> |
+|Maksymalna zaawansowana przepływność indeksowania | 2 GB na godzinę |
 
 ## <a name="search-limits"></a>Limity wyszukiwania
 

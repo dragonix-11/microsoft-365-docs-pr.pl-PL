@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Zaimplementuj możliwości zarządzania cyklem życia danych usługi Microsoft Purview & zarządzania rekordami usługi Microsoft Purview, aby zarządzać danymi pod kątem zgodności lub wymagań prawnych.
-ms.openlocfilehash: c807d2359c9a8c9cb17955b1ad4bf121cab57918
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 2eff1aea82575a8364eb05f91652a089efbbe833
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286973"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294739"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>Zarządzanie danymi za pomocą usługi Microsoft Purview
 
@@ -39,7 +39,9 @@ Poniższa grafika ułatwia zidentyfikowanie głównych składników konfigurowal
 
 ![Główne składniki do konfigurowania i używania do zarządzania danymi za pomocą usługi Microsoft Purview.](../media/govern-your-data.png)
 
-Chcesz chronić dane? Zobacz [Ochrona danych za pomocą usługi Microsoft Purview](information-protection.md).
+W poniższych sekcjach szczegółowo opisano główne możliwości każdego rozwiązania z linkami, aby dowiedzieć się więcej. Jeśli jednak szukasz wdrożenia z przewodnikiem, zobacz [Wdrażanie rozwiązania do zarządzania danymi za pomocą usługi Microsoft Purview](data-governance-solution.md).
+
+Szukasz uzupełniających możliwości ochrony danych? Zobacz [Ochrona danych za pomocą usługi Microsoft Purview](information-protection.md).
 
 ## <a name="microsoft-purview-data-lifecycle-management"></a>Zarządzanie cyklem życia danych usługi Microsoft Purview
 

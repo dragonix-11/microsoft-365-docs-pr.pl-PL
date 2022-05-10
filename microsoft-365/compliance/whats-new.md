@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Niezależnie od tego, czy chodzi o dodawanie nowych rozwiązań do centrum zgodności, aktualizowanie istniejących funkcji na podstawie opinii, czy wprowadzanie nowej i zaktualizowanej dokumentacji, Microsoft 365 pomaga być na bieżąco z ciągle zmieniającym się poziomem zgodności. Dowiedz się, co mieliśmy do tego miesiąca.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b79015ce0ca55bf9a74b6acac8f38f09b9e5e984
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3bfa6ce581b0bd4846ebe27b95cf27d1228b10b2
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100550"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294625"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Co nowego w usłudze Microsoft Purview
 
@@ -44,6 +44,81 @@ Niezależnie od tego, czy chodzi o dodawanie nowych rozwiązań do [portalu zgod
 > I odwiedź [Microsoft 365 plan,](https://www.microsoft.com/microsoft-365/roadmap) aby dowiedzieć się więcej o Microsoft 365 funkcji, które zostały uruchomione, są wdrażane, są w programie, zostały anulowane lub wcześniej wydane.
 
 ## <a name="april-2022"></a>Kwiecień 2022 r.
+
+### <a name="communication-compliance"></a>Zgodność w komunikacji
+
+- [Tworzenie zasad zgodności komunikacji i zarządzanie nimi](communication-compliance-policies.md) — zaktualizowano ją o wskazówki dotyczące nowej funkcji zasad komunikatów zgłaszanych przez użytkowników na potrzeby integracji Microsoft Teams.
+- [Wprowadzenie ze zgodnością z komunikacją](communication-compliance-configure.md) — zaktualizowano w celu dodania wyjaśnień dotyczących subskrypcji i licencjonowania F5.
+
+### <a name="compliance-manager"></a>Menedżer zgodności
+
+- [Lista szablonów programu Compliance Manager](compliance-manager-templates-list.md) — dodano 6 nowych szablonów i linków nawigacyjnych na stronie, aby łatwiej przejść do kategorii szablonów.
+- [Omówienie programu Compliance Manager](compliance-manager.md) — zaktualizowane wideo z omówieniem produktu.
+
+### <a name="compliance-offerings--service-assurance"></a>Oferty zgodności & service assurance
+
+- [Oferty zgodności](/compliance/regulatory/offering-home) — aktualizacje dotyczące pokrycia usług i raportowania inspekcji dla ofert VPATS, SOC, ISO i FedRAMP.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Zarządzanie cyklem życia danych i zarządzanie rekordami
+
+- [Zarządzanie danymi za pomocą usługi Microsoft Purview](manage-data-governance.md) — łączniki danych są usuwane z tej strony, a rozwiązanie do zarządzania rekordami jest prezentowane jako produkt równorzędny.
+- [Typowe ustawienia zasad przechowywania i etykiet przechowywania](retention-settings.md) — odzwierciedlają nowe odwołania nawigacji i interfejsu użytkownika dla nowo zaprojektowanego kreatora etykiet przechowywania.
+- [Deklarowanie rekordów przy użyciu etykiet przechowywania](declare-records.md) i [Używanie przechowywania wersji rekordów do aktualizowania rekordów przechowywanych w SharePoint lub OneDrive](record-versioning.md) — nowe informacje o nowym ustawieniu etykiety "Odblokuj ten rekord domyślnie", które jest obecnie wdrażane w wersji zapoznawczej.
+- [Użyj planu plików, aby utworzyć etykiety przechowywania i zarządzać nimi](file-plan-manager.md#information-about-the-label-properties-for-import)  — sekcja importu ujawnia teraz ustawienia etykiet, które nie są obecnie obsługiwane w przypadku importowania (przegląd rozporządzeń wieloetapowych i domyślne odblokowywanie tego rekordu).
+
+### <a name="data-loss-prevention"></a>Zapobieganie utracie danych
+
+- Zaktualizowano artykuły dotyczące dołączania urządzeń z systemem macOS:
+  - [Dowiedz się więcej o programie DLP punktu końcowego](endpoint-dlp-learn-about.md)
+  - [Konfigurowanie ustawień ochrony przed utratą danych punktu końcowego](dlp-configure-endpoint-settings.md)
+  - [Planowanie zapobiegania utracie danych (DLP)](dlp-overview-plan-for-dlp.md)
+  - [Dokumentacja zasad ochrony przed utratą danych](dlp-policy-reference.md)
+  - [Wprowadzenie do ochrony przed utratą danych punktu końcowego](endpoint-dlp-getting-started.md)
+- [Warunki zasad DLP, wyjątki i akcje](dlp-conditions-and-exceptions.md) — dodano wskazówki dotyczące modyfikowania akcji podmiotu.
+- [Dokumentacja zasad ochrony przed utratą danych](dlp-policy-reference.md) — predykaty GA SPO/ODB; zaktualizowano o nowe wskazówki dotyczące przetwarzania reguł w punktach końcowych.
+
+### <a name="device-onboarding"></a>Dołączanie urządzenia
+
+- Zaktualizowano artykuły dotyczące dołączania urządzeń z systemem macOS:
+  - [Dołączanie urządzeń z systemem macOS do Microsoft 365 — omówienie](device-onboarding-macos-overview.md)
+  - [Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu usługi Microsoft Intune dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender](device-onboarding-offboarding-macos-intune-mde.md)
+  - [Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu Intune](device-onboarding-offboarding-macos-intune.md)
+  - [Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender](device-onboarding-offboarding-macos-jamfpro-mde.md)
+  - [Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu narzędzia JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md)
+
+### <a name="information-barriers"></a>Bariery informacyjne
+
+- [Korzystanie z barier informacyjnych w SharePoint](/sharepoint/information-barriers) — dodano wskazówki dotyczące obsługi nowych kanałów prywatnych w SharePoint.
+- [Zarządzanie zasadami barier informacyjnych](information-barriers-edit-segments-policies.md) — dodano wskazówki dotyczące usuwania segmentów i zasad/segmentów razem.
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Zasady zarządzania ryzykiem prywatności](/privacy/priva/risk-management) — nowe strony, istotne aktualizacje i restrukturyzacja zawartości zasad; szczegóły poniżej:
+  - [Zasady zarządzania ryzykiem prywatności](/privacy/priva/risk-management-policies) — dodano istotne szczegóły dotyczące konfiguracji zasad i zarządzania nimi, które mają zastosowanie do wszystkich zasad; dodano linki do nowych stron dla każdego z trzech typów zasad.
+  - [Zasady nadmiernej eksponowania danych](/privacy/priva/risk-management-policy-data-overexposure) — określa potrzeby i zastosowania zasad; Objaśnia ustawienia domyślne tworzenia po wyjętej wersji oraz szczegółowe instrukcje dotyczące dostosowywania ustawień.
+  - [Zasady transferu danych](/privacy/priva/risk-management-policy-data-transfer) — wyróżnia nowy warunek dla zasad wykrywania transferów poza organizacją; wyraża potrzebę i zastosowania zasad; Objaśnia ustawienia domyślne tworzenia po wyjętej wersji oraz szczegółowe instrukcje dotyczące dostosowywania ustawień.
+  - [Zasady minimalizacji danych](/privacy/priva/risk-management-policy-data-minimization) — określa potrzeby i zastosowania zasad; Objaśnia ustawienia domyślne tworzenia po wyjętej wersji oraz szczegółowe instrukcje dotyczące dostosowywania ustawień.
+  - [Badanie i korygowanie alertów](/privacy/priva/risk-management-alerts) — dodano objaśnienie szczegółów i formatowanie zmian w celu zwiększenia czytelności.
+  - [Powiadomienia użytkowników](/privacy/priva/risk-management-notifications) — dodano informacje na temat funkcji wyświetlania podglądu i dostosowywania zawartości powiadomień e-mail.
+- [Utwórz żądanie praw podmiotu](/privacy/priva/subject-rights-requests-create) — dodano sekcję dotyczącą rozpoczynania pracy z pierwszym żądaniem z ustawieniami domyślnymi w celu eksplorowania funkcji.
+- [Przejrzyj dane dotyczące żądania praw podmiotu](/privacy/priva/subject-rights-requests-data-review) — dodano szczegóły wyjaśniające elementy priorytetu do przeglądu i sposoby ich znajdowania oraz potrzebę skonfigurowania dopasowywania danych w celu uzyskania tej analizy.
+- [Znajdowanie i wizualizowanie danych osobowych](/privacy/priva/priva-data-profile) — wyjaśniono, że użytkownicy muszą skonfigurować dopasowywanie danych w celu uzyskania szczegółowych informacji o elementach z największą zawartością podmiotu danych w obszarze "Kluczowe szczegółowe informacje".
+- [Dopasowywanie danych dla żądań praw podmiotu](/privacy/priva/subject-rights-requests-data-match) — wyjaśniono postęp kroku w tym procesie i dodano drugi krok tworzenia typów informacji poufnych.
+
+### <a name="sensitive-information-types"></a>Typy informacji poufnych
+
+- [Użyj nazwanych jednostek w zasadach DLP](named-entities-use.md) — jednostek o nazwie GA.
+- [Dowiedz się więcej o nazwanych jednostkach](named-entities-learn.md) — jednostkach o nazwie GA.
+- [Informacje poufne typy definicji jednostek](sensitive-information-type-entity-definitions.md) — jednostki nazwane ogólnej dostępności i aktualizacje wzorca.
+- [Dowiedz się więcej o typach informacji poufnych](sensitive-information-type-learn-about.md) — jednostki o nazwie GA.
+
+### <a name="sensitivity-labels"></a>Etykiety wrażliwości
+
+- [Użyj etykiet poufności, aby chronić zawartość w Microsoft Teams, grupach Microsoft 365 i witrynach SharePoint](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings) — nowa konfiguracja dostępna teraz w wersji zapoznawczej dla uprawnień do udostępniania witryn przy użyciu ustawień zaawansowanych programu PowerShell.
+- [Ogranicz dostęp do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania](encryption-sensitivity-labels.md) — dodano znany problem dotyczący określania grupy zawierającej kontakty poczty, z linkiem do opublikowanej bazy wiedzy w celu uzyskania szczegółowych informacji i obejść.
+- [Automatyczne stosowanie etykiety poufności do zawartości — usunięto](apply-sensitivity-label-automatically.md) znany problem z usuniętymi OneDrive witrynami niepoprawnie wyświetlanymi w wynikach symulacji dla zasad automatycznego etykietowania)
+- [Włącz współtworzenie plików zaszyfrowanych za pomocą etykiet poufności](sensitivity-labels-coauthoring.md) — w wyniku opinii klientów usunięto objaśnienie w sekcji Wymagania wstępne, że ta funkcja nie jest jeszcze obsługiwana przez kanał Semi-Annual Enterprise, a zamiast tego dodano Semi-Annual Enterprise Channel (wersja zapoznawcza) z minimalną wersją 2202.
+- [Zarządzanie etykietami poufności w aplikacjach Office](sensitivity-labels-office-apps.md) — szczegóły pomocy technicznej dotyczące stosowania etykiety domyślnej do istniejących dokumentów są aktualizowane w celu skorygowania, że na Windows ta wersja jest nadal wdrażana w kanale beta i jest teraz w pełni wdrażana w Internecie.
 
 ### <a name="changes-to-product-names"></a>Zmiany nazw produktów
 
@@ -232,122 +307,3 @@ Dodano następujące nowe artykuły:
 
 ### <a name="sensitivity-labels"></a>Etykiety wrażliwości
 - Nazwa zakresu [etykiet mapy danych usługi Microsoft Purview](/azure/purview/create-sensitivity-label) to teraz "Schematyzowane zasoby danych".
-
-## <a name="october-2021"></a>Październik 2021
-
-### <a name="app-governance"></a>Zarządzanie aplikacjami
-
-- [Dodatek ładu aplikacji dla aplikacji Defender dla Chmury Apps został wydany w ogólnej dostępności](/cloud-app-security/app-governance-manage-app-governance). Dokumentacja ładu aplikacji została przeniesiona w celu dołączenia do dokumentacji usługi Defender dla Chmury Apps.
-
-### <a name="compliance--service-assurance"></a>Zapewnianie zgodności & usługą
-
-- [Service assurance](/compliance) — kwartalny przegląd aktualizacji zawartości dla certyfikatów i instrukcji stosowania) Zarządzanie zasobami centrum danych
-  - Architektura i infrastruktura centrum danych
-  - Ciągłość działania centrum danych i odzyskiwanie po awarii
-  - Zabezpieczenia środowiskowe centrum danych
-  - Zabezpieczenia dostępu fizycznego centrum danych
-  - program zgodności Microsoft 365 SDL
-  - kontrola dostępu inżyniera usługi Microsoft 365
-  - Przewodnik oceny ryzyka dla usługi MS Cloud
-
-### <a name="data-loss-prevention"></a>Zapobieganie utracie danych
-
-- [Informacje na temat ochrony przed utratą danych w usłudze Microsoft Purview](endpoint-dlp-learn-about.md) zostały zaktualizowane na potrzeby obsługi systemu macOS i zaawansowanej klasyfikacji; zaktualizowano w celu utworzenia niestandardowych zasad DLP w celu inspekcji działania dla wszystkich obsługiwanych typów plików.
-- [Wprowadzenie z Microsoft 365 ochrona przed utratą danych punktu końcowego](endpoint-dlp-getting-started.md) została zaktualizowana na potrzeby obsługi systemu macOS i zaawansowanej klasyfikacji.
-- [Za pomocą funkcji zapobiegania utracie danych punktu końcowego](endpoint-dlp-using.md) zaktualizowano obsługę systemu macOS i zaawansowaną klasyfikację.
-- [Dokumentacja porad dotyczących zasad ochrony przed utratą danych](dlp-policy-tips-reference.md) została zaktualizowana na potrzeby obsługi systemu macOS i zaawansowanej klasyfikacji.
-- [Dołącz urządzenia z systemem macOS do Microsoft 365 (wersja zapoznawcza)](device-onboarding-macos-overview.md) została zaktualizowana pod kątem obsługi systemu macOS i zaawansowanej klasyfikacji.
-- Dodano następujące nowe strony dotyczące dołączania urządzeń:
-  - [Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu Intune (wersja zapoznawcza)](device-onboarding-offboarding-macos-intune.md)
-  - [Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu usługi Intune dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)](device-onboarding-offboarding-macos-intune-mde.md)
-  - [Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu Pro JAMF (wersja zapoznawcza)](device-onboarding-offboarding-macos-jamfpro.md)
-  - [Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)](device-onboarding-offboarding-macos-jamfpro-mde.md)
-
-### <a name="ediscovery"></a>Zbierania elektronicznych materiałów dowodowych
-
-- [Oprócz zbierania najnowszych wersji załączników w chmurze w usłudze eDiscovery (Premium)](advanced-ediscovery-cloud-attachments.md) możesz zebrać wersję udostępnioną w wiadomości e-mail lub Teams konwersacji na czacie; zbieranie udostępnionej wersji jest możliwe dzięki nowej możliwości automatycznego stosowania etykiety przechowywania do załączników w chmurze.
-- [Skonfiguruj wersje historyczne w nowej funkcji zbierania elektronicznych materiałów dowodowych (Premium),](advanced-ediscovery-historical-versions.md) która indeksuje wszystkie wersje dokumentów przechowywanych w witrynie SharePoint w celu wyszukiwania; oznacza to, że wersje dokumentów zawierające zawartość zgodną z zapytaniem kolekcji są zwracane w wynikach wyszukiwania.
-
-### <a name="encryption"></a>Szyfrowanie
-
-- [Użyj kompleksowego szyfrowania dla wywołań typu "jeden do jednego" Microsoft Teams (publiczna wersja zapoznawcza)](/microsoftteams/teams-end-to-end-encryption) Nowa zawartość dla publicznej wersji zapoznawczej.
-
-### <a name="data-lifecycle-management"></a>Zarządzanie cyklem życia danych
-
-- [Skonfigurowanie łącznika w celu zaimportowania nowego łącznika danych inspekcji epic EHR](import-epic-data.md) umożliwia importowanie danych z elektronicznego systemu dokumentacji medycznej firmy Epic w celu obsługi nowego ogólnego scenariusza niewłaściwego używania danych pacjentów na potrzeby zarządzania ryzykiem wewnętrznym.
-- [Skonfigurowanie łącznika w celu zaimportowania nowego łącznika danych inspekcji EHR dla opieki zdrowotnej](import-healthcare-data.md) umożliwia importowanie danych z elektronicznego systemu dokumentacji opieki zdrowotnej w celu obsługi nowego ogólnego scenariusza niewłaściwego używania danych pacjentów na potrzeby zarządzania ryzykiem wewnętrznym.
-
-### <a name="retention-and-records-management"></a>Zarządzanie przechowywaniem i rekordami
-- [Zakresy zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention) są udostępniane w wersji zapoznawczej dla zasad przechowywania i zasad etykiet przechowywania.
-- Teraz możesz [automatycznie zastosować etykietę przechowywania na podstawie etykiety poufności](apply-retention-labels-automatically.md#identify-files-and-emails-that-have-a-sensitivity-label).
-- Plan plików ma nowy [proces importowania](file-plan-manager.md#import-retention-labels-into-your-file-plan).
-- [Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania](retention-settings.md): Nowy artykuł zawierający szczegółowe informacje na temat konfigurowania zakresów adaptacyjnych i innych ustawień zarówno w zasadach przechowywania, jak i zasadach etykiet przechowywania.
-
-### <a name="sensitive-information-types"></a>Typy informacji poufnych
-
-- [Dowiedz się więcej o nazwanych jednostkach (wersja zapoznawcza)](named-entities-learn.md) nowej zawartości dla nazwanych jednostek.
-- [Użyj nazwanych jednostek w zasadach ochrony przed utratą danych (wersja zapoznawcza)](named-entities-use.md) nowej zawartości przy użyciu nazwanych jednostek.
-
-### <a name="sensitivity-labels"></a>Etykiety wrażliwości
-
-- [Domyślne etykiety i zasady domyślne](mip-easy-trials.md) są wdrażane dla uprawnionych klientów.
-
-## <a name="september-2021"></a>Wrzesień 2021
-
-### <a name="app-governance"></a>Zarządzanie aplikacjami
-
-- [Usprawnione informacje dotyczące rozpoczynania pracy z ładem aplikacji](app-governance-get-started.md) mają zmieniony przepływ pracy i dodano nowe linki do rejestracji w publicznej wersji zapoznawczej
-- [Dodano nową definicję alertów wykrywania](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) (zaktualizowano; dodano nową definicję alertów kolekcji)
-
-### <a name="auditing"></a>Inspekcja
-
-- [Włącz lub wyłącz inspekcję](turn-audit-log-search-on-or-off.md) dodaną nową sekcję dotyczącą sposobu inspekcji zmian stanu inspekcji w organizacji; oznacza to, że rekordy inspekcji są rejestrowane po włączeniu lub wyłączeniu inspekcji; możesz wyszukać te rekordy inspekcji w dzienniku inspekcji administratora Exchange
-
-### <a name="communication-compliance"></a>Zgodność w komunikacji
-
-- [Wskazówki dotyczące zgodności komunikacji z rozwiązaniami SIEM](communication-compliance-siem.md) na potrzeby integracji zgodności komunikacji z rozwiązaniami SIEM)
-
-### <a name="compliance-offerings"></a>Oferty zgodności
-
-- [Wielowarstwowa usługa Cloud Security (MTCS)](/compliance/regulatory/offering-mtcs-singapore) Aktualizacje standardu dla Singapuru dotyczące pokrycia usługi Dynamics 365
-- [Branża kart płatniczych (PCI)](/compliance/regulatory/offering-pci-dss) Aktualizacje usługi Data Security Standard (DSS) dotyczące pokrycia usługi SharePoint Online
-- [U.S. Section 508](/compliance/regulatory/offering-section-508-vpats) new client software guidance (Wskazówki dotyczące nowego oprogramowania klienckiego w sekcji 508)
-- [Wskazówki dotyczące ułatwień dostępu do zawartości internetowej —](/compliance/regulatory/offering-wcag-2-1) nowe wskazówki dotyczące oprogramowania klienckiego
-
-### <a name="compliance--service-assurance"></a>Zapewnianie zgodności & usługą
-
-- Kwartalny przegląd aktualizacji zawartości [usługi Service Assurance](/compliance/) pod kątem certyfikatów i instrukcji stosowania
-  - Niszczenie urządzenia z łożyskami danych
-  - Ataki DDOS
-
-### <a name="data-connectors"></a>Łączniki danych
-
-- [Archiwizowanie danych innych firm w łącznikach danych Microsoft 365](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) z aplikacji CellTrust i 17a-4 LLC jest teraz dostępne w organizacjach GCC w chmurze dla instytucji rządowych USA
-- [Konfigurowanie łącznika w celu archiwizowania danych usługi YouTube](archive-youtube-data.md) zawiera nowe wskazówki dotyczące tej funkcji w publicznej wersji zapoznawczej.
-
-### <a name="ediscovery"></a>Zbierania elektronicznych materiałów dowodowych
-
-- [Użyj edytora KQL, aby utworzyć zapytania wyszukiwania](ediscovery-kql-editor.md) w publicznej wersji zapoznawczej nowego sposobu tworzenia zapytań wyszukiwania w wyszukiwaniu zawartości, zbierania elektronicznych materiałów dowodowych (Standard) i zbierania elektronicznych materiałów dowodowych (Premium); edytor KQL udostępnia automatyczne uzupełnianie obsługiwanych właściwości i warunków umożliwiających wyszukiwanie oraz wyświetla listy obsługiwanych wartości standardowych właściwości i warunków; KQL  Edytor udostępnia również wykrywanie błędów i sugestie dotyczące poprawek potencjalnych błędów w zapytaniach wyszukiwania
-
-### <a name="information-barriers"></a>Bariery informacyjne
-
-- [Wprowadzenie z barierami informacyjnymi](information-barriers-policies.md#step-6-information-barriers-modes) nowa funkcja w wersji zapoznawczej dla trybów barier informacyjnych
-- [Bariery informacyjne dzięki Microsoft Teams](/microsoftteams/information-barriers-in-teams) nowej funkcji w wersji zapoznawczej dla trybów barier informacyjnych
-- [Bariery informacyjne z OneDrive](/onedrive/information-barriers) nową funkcją w wersji zapoznawczej dla trybów barier informacyjnych
-- [Bariery informacyjne dzięki nowej funkcji SharePoint Online w](/sharepoint/information-barriers) wersji zapoznawczej dla trybów barier informacyjnych
-
-### <a name="insider-risk-management"></a>Zarządzanie ryzykiem wewnętrznym
-
-- Wprowadzenie z nową funkcją [zarządzania ryzykiem wewnętrznym](insider-risk-management-configure.md#recommended-actions-preview) w wersji zapoznawczej na potrzeby rozpoczynania zalecanych akcji
-- [Badanie działań związanych z ryzykiem wewnętrznym](insider-risk-management-activities.md#get-help-managing-your-insider-risk-alert-queue) w nowej sekcji wskazówek "Uzyskiwanie pomocy w zarządzaniu kolejką alertów o ryzyku wewnętrznym"
-- [Wprowadzenie z ustawieniami zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md#admin-notifications) nowa funkcja podglądu ustawień powiadomień administratora
-
-### <a name="retention-and-records-management"></a>Zarządzanie przechowywaniem i rekordami
-- [Przegląd rozporządzeń wieloekonscencjonowanych](disposition.md) jest teraz ogólnie dostępny z [nowymi zdarzeniami inspekcji](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities). Przegląd dyspozycji wieloetapowej umożliwia określenie maksymalnie pięciu kolejnych etapów przeglądu dyspozycji dla etykiety przechowywania, a recenzenci mogą dodać innych użytkowników do etapu przeglądu dyspozycji. Możesz również dostosować powiadomienia e-mail i przypomnienia.
-- Kanały prywatne dla [zasad przechowywania Teams](create-retention-policies.md#retention-policy-for-teams-locations) są teraz ogólnie dostępne.
-
-### <a name="sensitivity-labels"></a>Etykiety wrażliwości
-- [Współtworzenie i automatyczne](sensitivity-labels-coauthoring.md) zapisywanie jest teraz ogólnie dostępne dla Windows (minimalna wersja 2107 z bieżącego kanału lub miesięcznego kanału Enterprise) i macOS (minimalna wersja 16.51).
-- Wdrażanie dla aplikacji Office korzystających z wbudowanych etykiet: domyślne ustawienie etykiet obsługuje teraz istniejące dokumenty, a także nowe dokumenty. Ta zmiana zachowania zapewnia równość z klientem ujednoliconego etykietowania usługi Azure Information Protection. Aby uzyskać więcej informacji na temat wdrożenia aplikacji i minimalnych wersji, zobacz [tabelę możliwości](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) programu Word, Excel i PowerPoint.
-- Etykiety kontenerów obsługują teraz [domyślne ustawienia linku udostępniania przy użyciu ustawień zaawansowanych programu PowerShell](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings).
-- [Tabele możliwości](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps), które wyświetlają listę minimalnych obsługiwanych wersji wbudowanego etykietowania, mają teraz wersje dla bieżącego kanału, kanału Enterprise miesięcznego i kanału Semi-Annual Enterprise.

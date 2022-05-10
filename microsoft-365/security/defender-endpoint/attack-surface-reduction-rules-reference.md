@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 64162b83376facddbdeffd1c3079baa49f9d8924
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2f76a8ec53d6f7c809ed9f6612f2c8abf7388d1b
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788023"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294783"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Dokumentacja reguł zmniejszania obszaru podatnego na ataki
 
@@ -33,7 +33,8 @@ ms.locfileid: "64788023"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Program antywirusowy Microsoft Defender
 
-**Platformy**
+**Platformy:**
+
 - System Windows
 
 Ten artykuł zawiera informacje o regułach zmniejszania ataków:
@@ -57,7 +58,7 @@ Poniższa tabela zawiera listę obsługiwanych systemów operacyjnych dla reguł
 >
 > Reguły zmniejszania obszaru ataków w Windows&nbsp; Server2012R2&nbsp;&nbsp; i Windows&nbsp; Server2016&nbsp; są dostępne dla urządzeń dołączonych przy użyciu nowoczesnego ujednoliconego pakietu rozwiązań. Aby uzyskać więcej informacji, zobacz [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview (Nowe funkcje w nowoczesnym ujednoliconym rozwiązaniu dla Windows Server 2012 R2 i 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)).
 
-| Nazwa reguły|Windows 10 | Windows Server 2019 | &nbsp;Windows Server | <sup>Windows Server 2016 [[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1, 2](#fn1)]<sup></sup> |
+| Nazwa reguły| &nbsp;Windows 11 <br>i<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>i<br>  &nbsp;Windows Server <br> 2019 | Serwer z systemem Windows | &nbsp;Windows Server <br> 2016 <br> <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp; <br> <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T | T <br> wersja 1803 (półroczny kanał) lub nowszy | T | T |
 | [Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | Wersja Y 1809 lub nowsza | T | T | T | T |
@@ -102,7 +103,6 @@ Poniżej tej tabeli znajdują się linki do informacji o wersjach systemu zarzą
 |[Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T |   |T <br><br> CB 1802  | T  | T  |
 |[Blokuj wywołania interfejsu API Win32 z makr Office](#block-win32-api-calls-from-office-macros) | T |   | T <br><br> CB 1710  | T  |  T |
 |[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | T |   | T <br><br> CB 1802 | T  | T  |
-|  |  |  |  |  |  |
 
   (<a id="fn1">1</a>) Reguły zmniejszania obszaru ataków można skonfigurować dla każdej reguły przy użyciu identyfikatora GUID dowolnej reguły.
 
@@ -139,7 +139,6 @@ W przypadku reguł z określonym stanem reguły:
 |[Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze  | N \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
 |[Blokuj wywołania interfejsu API Win32 z makr Office](#block-win32-api-calls-from-office-macros) |   | N | T |
 |[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze  | N \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
-|   |   |   |   |
   
 ## <a name="asr-rules-and-guids-matrix"></a>Macierz reguł i identyfikatorów GUID usługi ASR
 

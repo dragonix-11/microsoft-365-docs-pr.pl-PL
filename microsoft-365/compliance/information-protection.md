@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Zaimplementuj funkcje usługi Microsoft Purview Information Protection, aby ułatwić ochronę poufnych informacji wszędzie tam, gdzie się znajdują lub podróżują.
-ms.openlocfilehash: 97f5172479d889ec1914cfc46102a58a83165269
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: b055e71ee6c22cc9804b82a36f339a73675ce914
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285483"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294652"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Ochrona poufnych danych za pomocą usługi Microsoft Purview
 
@@ -40,9 +40,9 @@ Te funkcje ochrony informacji zapewniają narzędzia do [poznania danych](#know-
 
 ![Obraz przedstawiający sposób, w jaki usługa Microsoft Purview Information Protection pomaga odnajdywać, klasyfikować i chronić poufne dane.](../media/powered-by-intelligent-platform.png)
 
-Aby uzyskać opisowe wskazówki dotyczące wdrażania rozwiązania Information Protection usługi Microsoft Purview dla organizacji, zobacz [Wdrażanie rozwiązania do ochrony informacji w usłudze Microsoft Purview](information-protection-solution.md).
+Skorzystaj z poniższych sekcji, aby dowiedzieć się więcej na temat dostępnych możliwości i sposobu rozpoczęcia pracy z każdą z nich. Jeśli jednak szukasz wdrożenia z przewodnikiem, zobacz [Wdrażanie rozwiązania do ochrony informacji za pomocą usługi Microsoft Purview](information-protection-solution.md).
 
-Aby uzyskać informacje na temat zarządzania danymi, zobacz [Zarządzanie danymi za pomocą usługi Microsoft Purview](manage-Information-governance.md).
+Aby uzyskać informacje na temat zarządzania danymi pod kątem zgodności lub wymagań prawnych, zobacz [Zarządzanie danymi za pomocą usługi Microsoft Purview](manage-data-governance.md).
 
 ## <a name="know-your-data"></a>Poznaj swoje dane
 
@@ -60,7 +60,7 @@ Aby zastosować elastyczne akcje ochrony, które obejmują szyfrowanie, ogranicz
 
 |Możliwości|Jakie problemy rozwiązuje?|Wprowadzenie|
 |:------|:------------|---------------------|
-|[Etykiety wrażliwości](sensitivity-labels.md)| Pojedyncze rozwiązanie dla aplikacji, usług i urządzeń umożliwiające etykietowanie i ochronę danych w miarę ich przenoszenia do organizacji i poza nią. <br /><br /> Przykładowe scenariusze: <br />- [Zarządzanie etykietami poufności dla aplikacji Office](sensitivity-labels-office-apps.md) <br />- [Szyfrowanie dokumentów i wiadomości e-mail](encryption-sensitivity-labels.md) <br />-  [Stosowanie i wyświetlanie etykiet w Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> Pełną listę scenariuszy dotyczących etykiet poufności można znaleźć w dokumentacji Wprowadzenie.|[Wprowadzenie do etykiet poufności](get-started-with-sensitivity-labels.md) |
+|[Etykiety wrażliwości](sensitivity-labels.md)| Pojedyncze rozwiązanie do etykietowania w aplikacjach, usługach i urządzeniach w celu ochrony danych w miarę ich przenoszenia do organizacji i poza nią. <br /><br /> Przykładowe scenariusze: <br />- [Zarządzanie etykietami poufności dla aplikacji Office](sensitivity-labels-office-apps.md) <br />- [Szyfrowanie dokumentów i wiadomości e-mail](encryption-sensitivity-labels.md) <br />-  [Stosowanie i wyświetlanie etykiet w Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> Aby uzyskać pełną listę obsługiwanych scenariuszy dla etykiet poufności, zobacz dokumentację Wprowadzenie.|[Wprowadzenie do etykiet poufności](get-started-with-sensitivity-labels.md) |
 |[Klient ujednoliconego etykietowania platformy Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2)| W przypadku komputerów Windows rozszerzenie etykietowania do Eksplorator plików i programu PowerShell z dodatkowymi funkcjami dla aplikacji Office w razie potrzeby| [Przewodnik administratora klienta ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Podwójne szyfrowanie kluczy](double-key-encryption.md)| W każdych okolicznościach tylko twoja organizacja może kiedykolwiek odszyfrować chronioną zawartość lub zgodnie z wymaganiami prawnymi, klucze szyfrowania muszą być przechowywane w granicach geograficznych. | [Wdrażanie szyfrowania podwójnego klucza](double-key-encryption.md#deploy-dke)|
 |[Szyfrowanie wiadomości usługi Office 365 (OME)](ome.md)| Szyfruje wiadomości e-mail i dołączone dokumenty wysyłane do dowolnego użytkownika na dowolnym urządzeniu, dzięki czemu tylko autoryzowani adresaci mogą odczytywać informacje wysyłane pocztą e-mail. <br /><br />  Przykładowy scenariusz: [odwoływanie wiadomości e-mail zaszyfrowanych za pomocą zaawansowanego szyfrowania komunikatów](revoke-ome-encrypted-mail.md) | [Konfigurowanie nowych funkcji szyfrowania komunikatów](set-up-new-message-encryption-capabilities.md)|
