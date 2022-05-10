@@ -1,5 +1,5 @@
 ---
-title: Włączanie współtworzenia dokumentów zaszyfrowanych za pomocą etykiet poufności w Microsoft 365
+title: Włączanie współtworzyła zaszyfrowanych dokumentów
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -13,16 +13,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Włącz ustawienie, które umożliwia współtworzenie i automatyczne zapisywanie w aplikacjach klasycznych dla dokumentów oznaczonych etykietami i zaszyfrowanych w SharePoint i OneDrive.
-ms.openlocfilehash: 0fee934af5e2dfb01c681c9b2e415ef538312367
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 72935a58931c1458466f145c17a9e423e6b6d31c
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836111"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286995"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Włączanie współtworzyła pliki zaszyfrowane przy użyciu etykiet poufności
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Włącz ustawienie, aby obsługiwać [współtworzynie](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) aplikacji klasycznych Office, tak aby po oznaczeniu i zaszyfrowaniu dokumentów za pomocą [etykiet poufności](sensitivity-labels.md) wielu użytkowników może edytować te dokumenty w tym samym czasie.
 
@@ -136,7 +138,7 @@ Przed włączeniem ustawienia dzierżawy dla współtworzyła pliki zaszyfrowane
 
 Jeśli to ustawienie zostało już włączone w okresie zapoznawczym, nie są potrzebne żadne dalsze działania i można pominąć tę procedurę.
 
-1. Zaloguj się do [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) jako administrator globalny dzierżawy.
+1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) jako administrator globalny dzierżawy.
 
 2. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Tworzenie dla plików z plikami poufności**.
 

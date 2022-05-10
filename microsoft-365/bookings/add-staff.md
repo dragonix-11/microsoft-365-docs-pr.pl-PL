@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Ta strona służy do tworzenia listy pracowników i zarządzania danymi pracowników, takimi jak imię i nazwisko, numer telefonu i adres e-mail.
-ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: b6ceee7c4464daf050f6e6626628c9cb3d94960f
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746802"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285461"
 ---
 # <a name="add-staff-to-bookings"></a>Dodaj pracowników do aplikacji Bookings
 
@@ -45,10 +45,11 @@ Chociaż Bookings jest cechą Microsoft 365, nie wszyscy pracownicy muszą mieć
     > [!NOTE]
     > Pracownicy spoza dzierżawy nie będą mogli udostępniać Bookings informacji wolnych/zajętych.
 
-5. Dla każdego członka personelu wybierz rolę: Administrator, Przeglądarka lub Gość.
-    - **Administratorzy** mogą edytować wszystkie ustawienia, dodawać i usuwać pracowników oraz tworzyć, edytować lub usuwać rezerwacje.
-    - **Osoby przeglądające** mogą zobaczyć wszystkie rezerwacje w kalendarzu, ale nie mogą ich modyfikować ani usuwać. Mają dostęp tylko do odczytu do ustawień.
-    - **Goście** mogą zostać przypisani do rezerwacji, ale nie mogą otworzyć skrzynki pocztowej rezerwacji.
+5. Dla każdego członka personelu wybierz rolę: Członek zespołu, Harmonogram, Przeglądarka lub Gość.
+    - **Członek zespołu** może zarządzać rezerwacjami we własnym kalendarzu i ich dostępności w skrzynce pocztowej rezerwacji. Podczas dodawania lub edytowania rezerwacji w kalendarzu zostaną oni przypisani jako pracownicy.
+    - **Harmonogram** może zarządzać rezerwacjami w kalendarzu i szczegółami klienta. Mają dostęp tylko do odczytu do ustawień, personelu i usług.
+    - **Osoba przeglądająca** może zobaczyć wszystkie rezerwacje w kalendarzu, ale nie może ich modyfikować ani usuwać. Mają dostęp tylko do odczytu do ustawień.
+    - **Gość** może zostać przypisany do rezerwacji, ale nie może otworzyć skrzynki pocztowej rezerwacji.
 
 6. Wybierz pozycję **Powiadom wszystkich pracowników za pośrednictwem poczty e-mail, gdy zostanie utworzona lub zmieniona rezerwacja** , aby włączyć wiadomości e-mail pracowników. Poniżej znajduje się przykładowa wiadomość e-mail:
 

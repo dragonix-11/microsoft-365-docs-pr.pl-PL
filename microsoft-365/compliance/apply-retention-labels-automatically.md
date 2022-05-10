@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Tworzenie zasad przechowywania automatycznego etykietowania w celu automatycznego stosowania etykiet w celu zachowania potrzebnych elementów i usunięcia tego, czego nie potrzebujesz
-ms.openlocfilehash: 1895669c20d06bdae13ed2d25183dff92862d44f
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 54db8d8c72266e1fc7a9fa6c3fe4829c62ba4357
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188861"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285505"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Ten scenariusz nie jest obsługiwany w przypadku [rekordów regulacyjnych](records-management.md#records) ani etykiet domyślnych dla struktury organizacyjnej, takiej jak zestaw dokumentów lub biblioteka w SharePoint lub folder w Exchange. Te scenariusze wymagają [opublikowanych zasad etykiet przechowywania](create-apply-retention-labels.md).

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak identyfikować określone grupy użytkowników za pomocą tagów użytkowników w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2. Filtrowanie tagów jest dostępne dla alertów, raportów i badań w Ochrona usługi Office 365 w usłudze Microsoft Defender, aby szybko zidentyfikować otagowanych użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f045e5dcb590c36fd0f3768c472057b07b12b21
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: e7b9584b41ded7edd28fb1501ee4e5c3a1febd74
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891825"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286411"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tagi użytkowników w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -44,6 +44,7 @@ Po zastosowaniu tagów systemowych lub tagów niestandardowych do użytkowników
 - [Raport użytkownika z naruszeniem zabezpieczeń](view-email-security-reports.md#compromised-users-report)
 - [Strona jednostki poczty e-mail](mdo-email-entity-page.md#other-innovations)
 - [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report)
+- [Raport najpopularniejszych nadawców i adresatów](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Symulacja ataku](attack-simulation-training.md#target-users)
 - [Widoki kampanii](campaigns.md)
 - [Przesyłanie przez administratora i użytkownika](admin-submission.md)

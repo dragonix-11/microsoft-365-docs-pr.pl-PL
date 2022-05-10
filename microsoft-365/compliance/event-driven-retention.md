@@ -1,5 +1,5 @@
 ---
-title: Rozpoczynanie przechowywania w przypadku wystąpienia zdarzenia
+title: Rozpocznij przechowywanie po wystąpieniu zdarzenia
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,173 +19,175 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-may2020
 - seo-marvel-jun2020
-description: Zazwyczaj jest to część rozwiązania do zarządzania rekordami, które pozwala skonfigurować etykietę przechowywania w celu rozpoczęcia okresu przechowywania na podstawie identyfikowanego zdarzenia.
-ms.openlocfilehash: ad5fb2ef567525fa021acb0388ebc5cc98b1148c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Zazwyczaj częścią rozwiązania do zarządzania rekordami można skonfigurować etykietę przechowywania w celu rozpoczęcia okresu przechowywania na podstawie identyfikowanego zdarzenia.
+ms.openlocfilehash: 65a3c2088974398abb6ddbeb205cfb66541629e2
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313303"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285111"
 ---
-# <a name="start-retention-when-an-event-occurs"></a>Rozpoczynanie przechowywania w przypadku wystąpienia zdarzenia
+# <a name="start-retention-when-an-event-occurs"></a>Rozpocznij przechowywanie po wystąpieniu zdarzenia
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Okres przechowywania zawartości często zależy od wieku jej zawartości. Na przykład możesz przechowywać dokumenty przez siedem lat od ich utworzenia, a następnie je usuwać. Jednak podczas konfigurowania [etykiet przechowywania](retention.md#retention-labels) można również określić okres przechowywania na podstawie wystąpienia określonego typu zdarzenia. Zdarzenie wyzwala początek okresu przechowywania, a cała zawartość z etykietą przechowywania zastosowaną do tego typu zdarzenia wymusza na nich akcje przechowywania etykiety.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+W przypadku przechowywania zawartości okres przechowywania jest często określany na podstawie wieku zawartości. Na przykład można przechowywać dokumenty przez siedem lat po ich utworzeniu, a następnie usuwać je. Jednak podczas konfigurowania [etykiet przechowywania](retention.md#retention-labels) można również oprzeć okres przechowywania na tym, kiedy wystąpi określony typ zdarzenia. Zdarzenie wyzwala początek okresu przechowywania, a cała zawartość z etykietą przechowywania zastosowaną dla tego typu zdarzenia pobiera akcje przechowywania etykiety wymuszane na nich.
   
 Przykłady korzystania z przechowywania opartego na zdarzeniach:
   
-- **Pracownicy odchodzą z organizacji** Załóżmy, że rekordy pracowników muszą być przechowywane przez 10 lat od chwili odejm przez pracownika od organizacji. Po upływie 10 lat wszystkie dokumenty związane z zatrudnieniem, wynikami i rozwiązaniem tego pracownika muszą zostać usunięte. Zdarzeniem wyzwalanym przez 10-letni okres przechowywania jest opuszczenie organizacji przez pracownika. 
+- **Pracownicy opuszczający organizację** Załóżmy, że rekordy pracowników muszą być przechowywane przez 10 lat od momentu opuszczenia organizacji przez pracownika. Po upływie 10 lat wszystkie dokumenty związane z zatrudnianiem, wykonywaniem i wypowiedzeniem tego pracownika muszą zostać usunięte. Zdarzenie, które wyzwala 10-letni okres przechowywania, to pracownik opuszczający organizację. 
     
-- **Wygasanie umowy** Załóżmy, że wszystkie rekordy związane z umowami muszą być przechowywane przez pięć lat od czasu wygaśnięcia umowy. Zdarzenie, które powoduje wyzwolenie 5-letniego okresu przechowywania, oznacza wygaśnięcie umowy. 
+- **Wygaśnięcie kontraktu** Załóżmy, że wszystkie rekordy związane z umowami muszą być przechowywane przez pięć lat od momentu wygaśnięcia umowy. Zdarzenie, które wyzwala pięcioletni okres przechowywania, to wygaśnięcie kontraktu. 
     
-- **Okres ważności produktu** Twoja organizacja może mieć wymagania przechowywania związane z ostatnią datą produkcji produktów w odniesieniu do zawartości, takiej jak specyfikacje techniczne. W tym przypadku ostatnią datą produkcji jest zdarzenie wyzwalanie okresu przechowywania. 
+- **Okres istnienia produktu** Twoja organizacja może mieć wymagania dotyczące przechowywania związane z ostatnią datą produkcji produktów dla zawartości, takiej jak specyfikacje techniczne. W tym przypadku ostatnia data produkcji jest zdarzeniem wyzwalającym okres przechowywania. 
     
 Przechowywanie oparte na zdarzeniach jest zwykle używane w ramach procesu zarządzania rekordami. Oznacza to, że:
   
-- Etykiety przechowywania oparte na zdarzeniach zazwyczaj również oznaczają elementy jako rekordy w ramach rozwiązania do zarządzania rekordami. Aby uzyskać więcej informacji, zobacz [Informacje na temat zarządzania rekordami](records-management.md).
+- Etykiety przechowywania oparte na zdarzeniach również zwykle oznaczają elementy jako rekord jako część rozwiązania do zarządzania rekordami. Aby uzyskać więcej informacji, zobacz [Informacje o zarządzaniu rekordami](records-management.md).
 
-- Dokument, który został zadeklarowany jako rekord, ale którego wyzwalacz zdarzenia jeszcze się nie wydarzył, jest zachowywany przez czas nieograniczony (nie można trwale usuwać rekordów) do momentu wyzwolenia okresu przechowywania tego dokumentu.
+- Dokument, który został zadeklarowany jako rekord, ale którego wyzwalacz zdarzenia jeszcze się nie wydarzył, jest przechowywany przez czas nieokreślony (rekordów nie można trwale usunąć), dopóki zdarzenie nie wyzwoli okresu przechowywania tego dokumentu.
     
-- Etykiety przechowywania na podstawie zdarzeń zwykle powodują przegląd usuwania po zakończeniu okresu przechowywania, tak aby menedżer rekordów może ręcznie przeglądać i usuwać zawartość. Aby uzyskać więcej informacji, zobacz [Ich zawartość](disposition.md).
+- Etykiety przechowywania oparte na zdarzeniach zwykle wyzwalają przegląd dyspozycji na końcu okresu przechowywania, dzięki czemu menedżer rekordów może ręcznie przeglądać i usuwać zawartość. Aby uzyskać więcej informacji, zobacz [Dyspozycja zawartości](disposition.md).
     
 
-Etykieta przechowywania oparta na zdarzeniu ma te same możliwości, co każda etykieta przechowywania w Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
+Etykieta przechowywania oparta na zdarzeniu ma takie same możliwości jak każda etykieta przechowywania w Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
 
-## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Opis relacji między typami zdarzeń, etykietami, zdarzeniami i identyfikatorami elementów zawartości
+## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Opis relacji między typami zdarzeń, etykietami, zdarzeniami i identyfikatorami zasobów
 
-Aby pomyślnie używać przechowywania opartego na zdarzeniach, należy zrozumieć relację między typami zdarzeń, etykietami przechowywania, zdarzeniami i identyfikatorami elementów zawartości, jak pokazano na diagramach, oraz następujące wyjaśnienie: 
+Aby pomyślnie korzystać z przechowywania opartego na zdarzeniach, ważne jest zrozumienie relacji między typami zdarzeń, etykietami przechowywania, zdarzeniami i identyfikatorami zasobów, jak pokazano na diagramach i wyjaśnieniem następującym: 
   
-![Diagram 1 z 2: Typ zdarzenia, etykiety, zdarzenia i identyfikatory elementów zawartości.](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
+![Diagram 1 z 2: typ zdarzenia, etykiety, zdarzenia i identyfikatory zasobów.](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
-![Diagram 2 z 2: Typ zdarzenia, etykiety, zdarzenia i identyfikatory elementów zawartości.](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
+![Diagram 2 z 2: typ zdarzenia, etykiety, zdarzenia i identyfikatory zasobów.](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
-1. Etykiety przechowywania można tworzyć dla różnych typów zawartości, a następnie skojarzyć je z typem zdarzenia. Na przykład etykiety przechowywania dla różnych typów plików i rekordów produktów są skojarzone z typem zdarzenia o nazwie Okres istnienia produktu, ponieważ te rekordy muszą być przechowywane przez 10 lat od czasu zakończenia użytkowania produktu.
+1. Tworzysz etykiety przechowywania dla różnych typów zawartości, a następnie kojarzysz je z typem zdarzenia. Na przykład etykiety przechowywania dla różnych typów plików i rekordów produktów są skojarzone z typem zdarzenia o nazwie Okres istnienia produktu, ponieważ te rekordy muszą być przechowywane przez 10 lat od momentu zakończenia życia produktu.
     
-2. Użytkownicy (zazwyczaj menedżerowie rekordów) stosują te etykiety przechowywania do zawartości i (w przypadku dokumentów w aplikacjach SharePoint i OneDrive) wprowadzić identyfikator składnika majątku dla każdego elementu. W tym przykładzie identyfikator środka trwałego to nazwa produktu lub kod używany przez organizację. Następnie do rekordów każdego produktu jest przypisywana etykieta przechowywania, a do każdego rekordu jest przypisana właściwość zawierająca identyfikator składnika majątku. Diagram przedstawia **całą zawartość wszystkich** rekordów produktów w organizacji, a każdy element zawiera identyfikator środka trwałego produktu, którego rekord się znajduje. 
+2. Użytkownicy (zazwyczaj menedżerowie rekordów) stosują te etykiety przechowywania do zawartości i (w przypadku dokumentów w SharePoint i OneDrive) wprowadzają identyfikator zasobu dla każdego elementu. W tym przykładzie identyfikator zasobu jest nazwą produktu lub kodem używanym przez organizację. Następnie do rekordów każdego produktu jest przypisywana etykieta przechowywania, a każdy rekord ma właściwość zawierającą identyfikator zasobu. Diagram reprezentuje **całą zawartość** wszystkich rekordów produktów w organizacji, a każdy element ma identyfikator zasobu produktu, którego rekord jest. 
     
-3. Okres istnienia produktu jest typem zdarzenia. Określony produkt, dla których kończy się okres użytkowania, to wydarzenie. Gdy wystąpi zdarzenie tego typu — w tym przypadku, gdy produkt dotrze do końca użytkowania — tworzy się zdarzenie, które określa:
+3. Okres istnienia produktu to typ zdarzenia; konkretny produkt, który zbliża się do końca życia, jest wydarzeniem. Gdy wystąpi zdarzenie tego typu zdarzenia — w tym przypadku, gdy produkt osiągnie koniec życia — utworzysz zdarzenie, które określa:
     
-   - Identyfikator środka trwałego (na SharePoint i OneDrive dokumentów)
+   - Identyfikator zasobu (dla dokumentów SharePoint i OneDrive)
     
-   - Słowa kluczowe (dla Exchange elementów). W tym przykładzie organizacja używa kodu produktu w wiadomościach zawierających rekordy produktów, więc słowo kluczowe dla elementów Exchange działa tak samo, jak identyfikator SharePoint i OneDrive dokumentów.
+   - Słowa kluczowe (dla Exchange elementów). W tym przykładzie organizacja używa kodu produktu w komunikatach zawierających rekordy produktów, więc słowo kluczowe dla elementów Exchange jest funkcjonalnie takie samo jak identyfikator zasobu dla SharePoint i OneDrive dokumentów.
     
-   - Data wystąpienia zdarzenia. Ta data jest używana jako początek okresu przechowywania. Może to być data bieżąca, przeszła lub przyszła.
+   - Data wystąpienia zdarzenia. Ta data jest używana jako początek okresu przechowywania. Ta data może być bieżącą, przeszłą lub przyszłą datą.
 
-4. Po utworzeniu zdarzenia ta data zdarzenia zostanie zsynchronizowana ze wszystkimi elementami zawartości, dla których jest oznaczona etykieta przechowywania tego typu i która zawiera określony identyfikator zasobu lub słowo kluczowe. Ta synchronizacja, podobnie jak każda etykieta przechowywania, może potrwać do siedmiu dni. Na poprzednim diagramie wszystkie elementy zakreślone na czerwono mają okres przechowywania wyzwolony przez to zdarzenie. Innymi słowy, po zakończeniu użytkowania tego produktu to zdarzenie powoduje wyzwolenie okresu przechowywania rekordów tego produktu.
+4. Po utworzeniu zdarzenia ta data zdarzenia jest synchronizowana z całą zawartością, która ma etykietę przechowywania tego typu zdarzenia i zawiera określony identyfikator zasobu lub słowo kluczowe. Podobnie jak każda etykieta przechowywania, ta synchronizacja może potrwać do siedmiu dni. Na poprzednim diagramie wszystkie elementy w kolorze czerwonym mają swój okres przechowywania wyzwolony przez to zdarzenie. Innymi słowy, gdy ten produkt osiągnie koniec życia, to zdarzenie wyzwala okres przechowywania rekordów tego produktu.
 
-Ważne jest, aby zrozumieć, że jeśli nie określisz identyfikatora zasobu lub słów kluczowych dla **zdarzenia, dla** całej zawartości z etykietą przechowywania tego typu zdarzenia zostanie wyzwolony okres przechowywania. Oznacza to, że na poprzednim diagramie cała zawartość zacznie być zachowywana. To może być nie to, co zamierzasz.
+Ważne jest, aby zrozumieć, że jeśli nie określisz identyfikatora zasobu lub słów kluczowych dla zdarzenia, **cała zawartość** z etykietą przechowywania tego typu zdarzenia będzie miała swój okres przechowywania wyzwalany przez zdarzenie. Oznacza to, że na poprzednim diagramie cała zawartość zacznie być zachowywana. To może nie być to, co zamierzasz.
 
-Na koniec należy pamiętać, że każda etykieta przechowywania ma własne ustawienia przechowywania. W tym przykładzie wszystkie określają 10 lat, ale zdarzenie może wyzwalać etykiety przechowywania, gdy każda etykieta ma inny okres przechowywania.
+Na koniec należy pamiętać, że każda etykieta przechowywania ma własne ustawienia przechowywania. W tym przykładzie wszystkie określają 10 lat, ale zdarzenie może wyzwolić etykiety przechowywania, w których każda etykieta ma inny okres przechowywania.
   
 ## <a name="how-to-set-up-event-driven-retention"></a>Jak skonfigurować przechowywanie oparte na zdarzeniach
 
-Przepływ pracy wysokiego poziomu do przechowywania opartego na zdarzeniach:
+Przepływ pracy wysokiego poziomu na potrzeby przechowywania opartego na zdarzeniach:
   
-![Diagram przepływu pracy do konfigurowania przechowywania opartego na zdarzeniach.](../media/event-based-retention-process.png)
+![Diagram przepływu pracy na potrzeby konfigurowania przechowywania opartego na zdarzeniach.](../media/event-based-retention-process.png)
   
 > [!TIP]
-> Zobacz [Zarządzanie cyklem](auto-apply-retention-labels-scenario.md) życia dokumentów przechowywanych w programie SharePoint za pomocą etykiet przechowywania, aby uzyskać szczegółowy scenariusz użycia właściwości zarządzanych w programie SharePoint w celu automatycznego stosowania etykiet przechowywania i implementowania przechowywania sterowanego zdarzeniami.
+> Zobacz [Używanie etykiet przechowywania do zarządzania cyklem życia dokumentów przechowywanych w SharePoint, aby zapoznać](auto-apply-retention-labels-scenario.md) się ze szczegółowym scenariuszem dotyczącym używania właściwości zarządzanych w SharePoint do automatycznego stosowania etykiet przechowywania i implementowania przechowywania opartego na zdarzeniach.
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Krok 1. Tworzenie etykiety, której okres przechowywania jest oparty na zdarzeniu
 
-Aby utworzyć i skonfigurować etykietę przechowywania, zobacz instrukcje Tworzenie etykiet [](file-plan-manager.md#create-retention-labels) przechowywania do zarządzania rekordami lub Jak tworzyć etykiety przechowywania [na temat zarządzania informacjami](create-retention-labels-information-governance.md). Jednak specyficzne dla przechowywania opartego na zdarzeniach,  na stronie Definiowanie ustawień przechowywania podczas tworzenia etykiety przechowywania po Rozpoczęciu okresu przechowywania na podstawie wybierz jeden z domyślnych typów zdarzeń z listy rozwijanej lub utwórz własne, wybierając pozycję Utwórz nowy typ **zdarzenia:**
+Aby utworzyć i skonfigurować etykietę przechowywania, zobacz instrukcje dotyczące [tworzenia etykiet przechowywania](file-plan-manager.md#create-retention-labels) na potrzeby zarządzania rekordami lub [Jak utworzyć etykiety przechowywania na potrzeby zarządzania cyklem życia danych](create-retention-labels-data-lifecycle-management.md). Jednak specyficzne dla przechowywania opartego na zdarzeniach na stronie **Definiowanie ustawień przechowywania** podczas tworzenia etykiety przechowywania po **rozpoczęciu okresu przechowywania na podstawie** wybierz jeden z domyślnych typów zdarzeń z listy rozwijanej lub utwórz własne, wybierając pozycję **Utwórz nowy typ zdarzenia**:
 
 ![Utwórz nowy typ zdarzenia dla etykiety przechowywania.](../media/SPRetention6.png)
 
-Typ zdarzenia jest po prostu ogólnym opisem zdarzenia, które chcesz skojarzyć z etykietą przechowywania.
+Typ zdarzenia to po prostu ogólny opis zdarzenia, które chcesz skojarzyć z etykietą przechowywania.
 
-Na liście rozwijanej domyślne typy zdarzeń są zawierały (typ zdarzenia **)** po nazwie w celu ułatwienia identyfikacji,  >  a typ zdarzenia można również wyświetlić i utworzyć na karcie Zarządzanie zdarzeniami rekordów > **Zarządzanie** typami zdarzeń.
+Domyślne typy zdarzeń mają **(typ zdarzenia)** po ich nazwie na liście rozwijanej, aby ułatwić identyfikację, a także można zobaczyć i utworzyć typ zdarzenia na karcie Zarządzanie **rekordamiWykonywanie**  >  > **Zarządzanie typami zdarzeń**.
 
 Przechowywanie oparte na zdarzeniach wymaga ustawień przechowywania, które:
   
-- Zachowywanie zawartości.
+- Zachowaj zawartość.
     
-- Zawartość należy usuwać automatycznie lub wyzwalać recenzję usuwania po zakończeniu okresu przechowywania.
+- Usuń zawartość automatycznie lub wyzwól przegląd dyspozycji na końcu okresu przechowywania.
   
-Przechowywanie oparte na zdarzeniach jest zwykle używane dla zawartości deklarowanej jako rekord, więc jest to dobry czas na sprawdzenie, czy należy również zaznaczyć opcję oznaczania zawartości jako [rekordu](records-management.md#records).
+Przechowywanie oparte na zdarzeniach jest zwykle używane w przypadku zawartości zadeklarowanej jako rekord, więc jest to dobry moment, aby sprawdzić, czy należy również wybrać opcję oznaczania zawartości jako [rekordu](records-management.md#records).
 
-Jeśli zamiast tworzenia nowego typu zdarzenia używasz istniejącego typu zdarzenia, przejdź do kroku 3.
+Jeśli używasz istniejącego typu zdarzenia zamiast tworzenia nowego typu zdarzenia, przejdź do kroku 3.
 
 > [!NOTE]
-> Po wybraniu typu zdarzenia i zapisaniu etykiety przechowywania nie można go zmienić.
+> Po wybraniu typu zdarzenia i zapisaniu etykiety przechowywania nie można zmienić typu zdarzenia.
 
 ### <a name="step-2-create-a-new-event-type-for-your-label"></a>Krok 2. Tworzenie nowego typu zdarzenia dla etykiety
 
-W ustawieniach przechowywania, jeśli wybrano **pozycję Utwórz nowy typ zdarzenia**, wprowadź nazwę i opis typu zdarzenia. Następnie wybierz **pozycję Dalej**, **Prześlij** i **Gotowe**.
+Jeśli dla ustawień przechowywania **wybrano pozycję Utwórz nowy typ zdarzenia**, wprowadź nazwę i opis typu zdarzenia. Następnie wybierz pozycję **Dalej**, **Prześlij** i **Gotowe**.
 
-Na stronie **Definiowanie ustawień przechowywania** w celu rozpoczęcia okresu przechowywania na podstawie wybierz utworzony typ zdarzenia z listy rozwijanej.
+Wróć do strony **Definiowanie ustawień przechowywania** , aby **rozpocząć okres przechowywania na podstawie** listy rozwijanej, aby wybrać utworzony typ zdarzenia.
 
   
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Krok 3. Publikowanie lub automatyczne stosowanie etykiet przechowywania opartych na zdarzeniach
 
-Aby etykieta była ręcznie lub automatycznie stosowana do zawartości, podobnie jak każda etykieta przechowywania, trzeba opublikować lub automatycznie zastosować etykietę opartą na zdarzeniach:
+Podobnie jak w przypadku każdej etykiety przechowywania, musisz opublikować lub automatycznie zastosować etykietę opartą na zdarzeniach, aby była ręcznie lub automatycznie stosowana do zawartości:
 - [Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
 - [Automatyczne stosowanie etykiety przechowywania do zawartości](apply-retention-labels-automatically.md)
 
-### <a name="step-4-enter-an-asset-id"></a>Krok 4. Wprowadzanie identyfikatora środka trwałego
+### <a name="step-4-enter-an-asset-id"></a>Krok 4. Wprowadź identyfikator zasobu
 
-Po zastosowaniu etykiety opartej na zdarzeniu do zawartości możesz wprowadzić identyfikator zasobu dla każdego elementu. Na przykład organizacja może używać:
+Po zastosowaniu etykiety opartej na zdarzeniach do zawartości można wprowadzić identyfikator zasobu dla każdego elementu. Na przykład twoja organizacja może używać następujących elementów:
   
-- Kody produktów, za pomocą których można zachować zawartość tylko dla określonego produktu.
+- Kody produktów, których można użyć do przechowywania zawartości tylko dla określonego produktu.
     
-- Project, których można użyć do przechowywania zawartości tylko dla określonego projektu.
+- Project kody, których można użyć do przechowywania zawartości tylko dla określonego projektu.
     
-- Identyfikatory pracowników, za pomocą których można przechowywać zawartość tylko określonej osoby.
+- Identyfikatory pracowników, których można użyć do przechowywania zawartości tylko dla określonej osoby.
     
-Identyfikator zasobu to po prostu inna właściwość dokumentu, która jest dostępna w SharePoint i OneDrive. Twoja organizacja może już klasyfikować zawartość za pomocą innych właściwości dokumentów i identyfikatorów. Jeśli tak, możesz również użyć tych właściwości i wartości podczas tworzenia zdarzenia — zobacz krok 6 poniżej. Ważne jest, aby skojarzyć ten element z typem zdarzenia za pomocą kombinacji właściwość *:* wartość we właściwościach dokumentu.
+Identyfikator zasobu to po prostu inna właściwość dokumentu dostępna w SharePoint i OneDrive. Twoja organizacja może już używać innych właściwości i identyfikatorów dokumentów do klasyfikowania zawartości. Jeśli tak, możesz również użyć tych właściwości i wartości podczas tworzenia zdarzenia — zobacz krok 6, który następuje. Ważne jest, aby użyć kombinacji *właściwości:value* we właściwościach dokumentu, aby skojarzyć ten element z typem zdarzenia.
   
-![Pole tekstowe służące do wprowadzania identyfikatora zasobu.](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
+![Pole tekstowe umożliwiające wprowadzenie identyfikatora zasobu.](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>Krok 5. Tworzenie zdarzenia
 
-Gdy wystąpi konkretne wystąpienie tego typu zdarzenia, na przykład produkt zostanie wycofaniem z użytkowania, przejdź do strony **Zarządzanie** >  rekordami Zdarzenia w Centrum zgodności platformy Microsoft 365 i wybierz pozycję **+** Utwórz, aby utworzyć zdarzenie. Tutaj zdarzenie jest wyzwalane przez jego utworzenie.
+Gdy wystąpi określone wystąpienie tego typu zdarzenia, takie jak produkt, do końca życia, przejdź do strony Zarządzanie **rekordamiZarządzanie zdarzeniami**  >  w portalu zgodności usługi Microsoft Purview i wybierz pozycję **+ Utwórz**, aby utworzyć zdarzenie. Zdarzenie jest wyzwalane przez utworzenie go w tym miejscu.
 
-![Utwórz zdarzenie, aby wyzwalać rozpoczęcie przechowywania dla etykiet przechowywania opartych na zdarzeniach.](../media/create-event-records-management.png)
+![Utwórz zdarzenie wyzwalające rozpoczęcie przechowywania dla etykiet przechowywania opartych na zdarzeniach.](../media/create-event-records-management.png)
 
-W jednej dzierżawie jest obsługiwanych do miliona zdarzeń.
+Maksymalnie milion zdarzeń jest obsługiwanych na dzierżawę.
 
-### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Krok 6. Wybieranie typu zdarzenia używanego na etykiecie w kroku 2
+### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Krok 6. Wybierz ten sam typ zdarzenia używany przez etykietę w kroku 2
 
-Podczas tworzenia zdarzenia wybierz ten sam typ zdarzenia określony w ustawieniach etykiet przechowywania w kroku 2. Jeśli na przykład jako typ zdarzenia  dla ustawień etykiet wybrano element Okres istnienia produktu, podczas tworzenia  zdarzenia wybierz pozycję Okres istnienia produktu. Tylko zawartość z zastosowanymi etykietami przechowywania dla tego typu zdarzenia będzie wyzwalana.
+Podczas tworzenia zdarzenia wybierz ten sam typ zdarzenia określony w ustawieniach etykiety przechowywania w kroku 2. Jeśli na przykład wybrano opcję **Okres istnienia produktu** jako typ zdarzenia dla ustawień etykiety, wybierz pozycję **Okres istnienia produktu** podczas tworzenia zdarzenia. Tylko zawartość z etykietami przechowywania zastosowanymi do tego typu zdarzenia będzie miała wyzwolony okres przechowywania.
 
-![Opcja w ustawieniach zdarzenia umożliwia wybranie typu zdarzenia.](../media/choose-event-type-records-management.png)
+![Opcja w ustawieniach zdarzenia, aby wybrać typ zdarzenia.](../media/choose-event-type-records-management.png)
 
-Ewentualnie, jeśli chcesz utworzyć zdarzenie dla wielu etykiet przechowywania, które mają różne typy zdarzeń, wybierz opcję **Wybierz istniejące etykiety** . Następnie wybierz etykiety skonfigurowane dla typów zdarzeń, które chcesz skojarzyć z tym zdarzeniem.
+Alternatywnie, jeśli musisz utworzyć zdarzenie dla wielu etykiet przechowywania, które mają różne typy zdarzeń, wybierz opcję **Wybierz istniejące etykiety** . Następnie wybierz etykiety skonfigurowane dla typów zdarzeń, które chcesz skojarzyć z tym zdarzeniem.
 
-### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>Krok 7. Wprowadzanie słów kluczowych lub zapytania Exchange, identyfikatora zasobu dla SharePoint i OneDrive
+### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>Krok 7. Wprowadź słowa kluczowe lub zapytanie dotyczące Exchange, identyfikatora zasobu dla SharePoint i OneDrive
 
-Teraz zawęzisz zakres zawartości. W Exchange zawartości można to zrobić przez określenie słów kluczowych lub zapytania. W SharePoint zawartości OneDrive zawartości można to zrobić, określając identyfikatory środków trwałych.
+Teraz zawężasz zakres zawartości. W przypadku Exchange zawartości należy to zrobić, określając słowa kluczowe lub zapytanie. W przypadku zawartości SharePoint i OneDrive należy to zrobić, określając identyfikatory zasobów.
 
-Aby Exchange, użyj słów kluczowych lub zapytania, które używa języka Keyword Query Language (KQL). Aby uzyskać więcej informacji na temat składni zapytania, zobacz Informacje dotyczące składni w języku słowa kluczowego [(KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)). Aby uzyskać więcej informacji na temat właściwości, których można używać na Exchange, zobacz Zapytania słów kluczowych i warunki wyszukiwania [dotyczące wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
+W przypadku Exchange elementów użyj słów kluczowych lub zapytania używającego języka zapytań słów kluczowych (KQL). Aby uzyskać więcej informacji na temat składni zapytania, zobacz [Dokumentacja składni języka zapytań słów kluczowych (KQL).](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) Aby uzyskać więcej informacji na temat właściwości z możliwością wyszukiwania, których można użyć dla Exchange, zobacz [Zapytania słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
 
-W przypadku identyfikatorów środków trwałych przechowywanie będzie wymuszane tylko na zawartości z określoną parą właściwość *:wartość* . Jeśli na przykład używasz właściwości Identyfikator zasobu, `ComplianceAssetID:<value>` wprowadź w polu identyfikatory środków trwałych przedstawione na poniższej ilustracji.
+W przypadku identyfikatorów zasobów przechowywanie będzie wymuszane tylko dla zawartości z określoną parą *property:value* . Jeśli na przykład używasz właściwości Asset ID, wprowadź `ComplianceAssetID:<value>` w polu identyfikatory zasobów wyświetlane na poniższej ilustracji.
 
-Jeśli nie zostanie wprowadzony identyfikator zasobu, to do całej zawartości z etykietami tego typu zdarzenia będzie stosowana ta sama data przechowywania.
+Jeśli identyfikator zasobu nie zostanie wprowadzony, cała zawartość z etykietami tego typu zdarzenia otrzyma tę samą datę przechowywania.
 
-Być może w Organizacji do dokumentów związanych z tym typem zdarzenia zostały zastosowane inne właściwości i identyfikatory. Jeśli na przykład trzeba wykryć rekordy określonego produktu, identyfikator może być połączeniem właściwości niestandardowej ProductID i wartości "XYZ". W takim przypadku należy wprowadzić `ProductID:XYZ` pole identyfikatorów środków trwałych pokazanych na poniższej ilustracji.
+Organizacja mogła zastosować inne właściwości i identyfikatory do dokumentów związanych z tym typem zdarzenia. Jeśli na przykład musisz wykryć rekordy określonego produktu, identyfikator może być kombinacją właściwości niestandardowej ProductID i wartości "XYZ". W tym przypadku należy wprowadzić `ProductID:XYZ` w polu identyfikatory zasobów wyświetlane na poniższej ilustracji.
 
-Na koniec wybierz datę wystąpienia zdarzenia. Data ta jest używana jako początek okresu przechowywania. Po utworzeniu zdarzenia ta data zdarzenia zostanie zsynchronizowana ze wszystkimi elementami zawartości z etykietą przechowywania tego typu zdarzenia, identyfikatorem zasobu oraz słowami kluczowymi lub kwerendami. Tak jak w przypadku każdej etykiety przechowywania, synchronizacja może potrwać do siedmiu dni.
+Na koniec wybierz datę wystąpienia zdarzenia. ta data jest używana jako początek okresu przechowywania. Po utworzeniu zdarzenia ta data zdarzenia jest synchronizowana z całą zawartością z etykietą przechowywania tego typu zdarzenia, identyfikatorem zasobu oraz słowami kluczowymi lub zapytaniami. Podobnie jak w przypadku każdej etykiety przechowywania, synchronizacja może potrwać do siedmiu dni.
   
-![Strona ustawień zdarzenia.](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
+![Strona ustawień zdarzeń.](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
-Po utworzeniu zdarzenia ustawienia przechowywania są obowiązywać dla zawartości, która jest już oznaczona etykietą i zindeksowana. Jeśli etykieta przechowywania zostanie dodana do nowej zawartości po utworzeniu zdarzenia, musisz utworzyć nowe zdarzenie o takich samych szczegółach.
+Po utworzeniu zdarzenia ustawienia przechowywania obowiązują dla zawartości, która jest już oznaczona etykietą i indeksowana. Jeśli etykieta przechowywania zostanie dodana do nowej zawartości po utworzeniu zdarzenia, musisz utworzyć nowe zdarzenie z tymi samymi szczegółami.
 
-Usunięcie zdarzenia nie oznacza anulowania ustawień przechowywania, które są obecnie obowiązywały dla zawartości, która została już oznaczona etykietą. Obecnie po wyzwoleniu zdarzeń nie można ich anulować.
+Usunięcie zdarzenia nie powoduje anulowania ustawień przechowywania, które są teraz dostępne dla zawartości, która jest już oznaczona etykietą. Obecnie nie można anulować zdarzeń po ich wyzwoleniu.
 
-## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Wyszukiwanie zawartości w celu znalezienia całej zawartości z określoną etykietą lub identyfikatorem zasobu
+## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Wyszukiwanie zawartości umożliwia znalezienie całej zawartości z określoną etykietą lub identyfikatorem zasobu
 
-Po przypisaniu etykiet przechowywania do zawartości możesz użyć funkcji wyszukiwania zawartości, aby znaleźć całą zawartość, która jest klasyfikowana przy użyciu określonej etykiety przechowywania lub zawiera określony identyfikator zasobu:
+Po przypisaniu etykiet przechowywania do zawartości możesz użyć wyszukiwania zawartości, aby znaleźć całą zawartość sklasyfikowaną przy użyciu określonej etykiety przechowywania lub zawierającą określony identyfikator zasobu:
   
-- Aby znaleźć całą zawartość z określoną etykietą przechowywania, wybierz warunek Etykieta przechowywania, a następnie wprowadź pełną nazwę etykiety lub jej część i użyj symbolu wieloznacznego. 
+- Aby znaleźć całą zawartość z określoną etykietą przechowywania, wybierz warunek **Etykieta przechowywania** , a następnie wprowadź pełną nazwę etykiety lub część nazwy etykiety i użyj symbolu wieloznacznego. 
     
-- Aby znaleźć całą zawartość o określonym identyfikatorze zasobu, wprowadź właściwość **ComplianceAssetID** i wartość, używając formatu `ComplianceAssetID:<value>`. 
+- Aby znaleźć całą zawartość o określonym identyfikatorze zasobu, wprowadź właściwość **ComplianceAssetID** i wartość przy użyciu formatu `ComplianceAssetID:<value>`. 
     
-Aby uzyskać więcej informacji, zobacz [Zapytania słów kluczowych i warunki wyszukiwania dotyczące wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
+Aby uzyskać więcej informacji, zobacz [Zapytania dotyczące słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
 
 ## <a name="automate-events-by-using-powershell"></a>Automatyzowanie zdarzeń przy użyciu programu PowerShell
 
-Za pomocą skryptu programu PowerShell możesz zautomatyzować przechowywanie oparte na zdarzeniach z aplikacji biznesowych. Polecenia cmdlet programu PowerShell dostępne na wypadek przechowywania na podstawie zdarzeń:
+Skrypt programu PowerShell umożliwia zautomatyzowanie przechowywania opartego na zdarzeniach z aplikacji biznesowych. Polecenia cmdlet programu PowerShell dostępne do przechowywania opartego na zdarzeniach:
   
 - [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype)
     
@@ -200,39 +202,39 @@ Za pomocą skryptu programu PowerShell możesz zautomatyzować przechowywanie op
 - [New-ComplianceRetentionEvent](/powershell/module/exchange/new-complianceretentionevent)
     
 
-## <a name="automate-events-by-using-a-rest-api"></a>Automatyzowanie zdarzeń przy użyciu interfejsu API usługi REST
+## <a name="automate-events-by-using-a-rest-api"></a>Automatyzowanie zdarzeń przy użyciu interfejsu API REST
 
-Możesz użyć interfejsu API usługi REST, aby automatycznie utworzyć zdarzenia wyzwalane po rozpoczęciu czasu przechowywania.
+Interfejs API REST umożliwia automatyczne tworzenie zdarzeń wyzwalających początek czasu przechowywania.
 
-Interfejs API usługi REST to punkt końcowy usługi obsługujący zestawy operacji HTTP (metod), które zapewniają dostęp do zasobów usługi (create/retrieve/update/delete). Aby uzyskać więcej informacji, [zobacz Składniki żądania/odpowiedzi interfejsu API REST](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). Za pomocą interfejsu API Microsoft 365 REST można tworzyć i pobierać zdarzenia przy użyciu metod POST i GET.
+Interfejs API REST to punkt końcowy usługi, który obsługuje zestawy operacji HTTP (metod), które zapewniają dostęp do zasobów usługi do tworzenia/pobierania/aktualizowania/usuwania. Aby uzyskać więcej informacji, zobacz [Składniki żądania/odpowiedzi interfejsu API REST](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). Przy użyciu interfejsu API REST Microsoft 365 zdarzenia można tworzyć i pobierać przy użyciu metod POST i GET.
 
-Istnieją dwie opcje korzystania z interfejsu API usługi REST:
+Istnieją dwie opcje korzystania z interfejsu API REST:
 
-- **Firma Microsoft Power Automate lub podobnej aplikacji** w celu automatycznego wyzwolenia wystąpienia zdarzenia. Microsoft Power Automate to system do łączenia się z innymi systemami, więc nie musisz pisać rozwiązania niestandardowego. Aby uzyskać więcej informacji, zobacz Power Automate [sieci Web](https://flow.microsoft.com/en-us/).
+- **Firma Microsoft Power Automate lub podobną aplikację**, aby automatycznie wyzwolić wystąpienie zdarzenia. Microsoft Power Automate jest orkiestratorem do łączenia się z innymi systemami, więc nie trzeba pisać rozwiązania niestandardowego. Aby uzyskać więcej informacji, zobacz [witrynę internetową Power Automate](https://flow.microsoft.com/en-us/).
 
-- **Program PowerShell lub klient HTTP do** wywołania interfejsu API REST w celu tworzenia zdarzeń przy użyciu programu PowerShell (w wersji 6 lub nowszej), który jest częścią rozwiązania niestandardowego.
+- **Program PowerShell lub klient HTTP do wywoływania interfejsu API REST** w celu tworzenia zdarzeń przy użyciu programu PowerShell (wersja 6 lub nowsza), który jest częścią rozwiązania niestandardowego.
 
-Przed użyciem interfejsu API usługi REST jako administrator globalny potwierdź adres URL, który ma być używać do wywołania zdarzenia przechowywania. W tym celu uruchom wywołanie zdarzenia przechowywania GET przy użyciu adresu URL interfejsu API rest:
+Przed użyciem interfejsu API REST jako administrator globalny potwierdź adres URL używany do wywołania zdarzenia przechowywania. W tym celu uruchom wywołanie zdarzenia przechowywania GET przy użyciu adresu URL interfejsu API REST:
 
 ```http
 https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
 ```
 
-Sprawdź kod odpowiedzi. Jeśli jest to wartość 302, uzyskaj przekierowany adres URL z właściwości Location nagłówka odpowiedzi i użyj tego adresu URL `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` zamiast w poniższych instrukcjach.
+Sprawdź kod odpowiedzi. Jeśli jest to wartość 302, pobierz przekierowany adres URL z właściwości Location nagłówka odpowiedzi i użyj tego adresu URL zamiast `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` w poniższych instrukcjach.
 
-Zdarzenia tworzone automatycznie można potwierdzić, wyświetlając je w Centrum zgodności platformy Microsoft 365 > **Zarządzanie** >   **rekordami**.
+Zdarzenia, które są tworzone automatycznie, można potwierdzić, wyświetlając je w portalu zgodności usługi Microsoft Purview > **Records** **managementEvents** >  .
 
-### <a name="use-microsoft-power-automate-to-create-the-event"></a>Tworzenie zdarzenia Power Automate za pomocą aplikacji Microsoft Power Automate
+### <a name="use-microsoft-power-automate-to-create-the-event"></a>Tworzenie zdarzenia przy użyciu usługi Microsoft Power Automate
 
-Utwórz przepływ, który tworzy zdarzenie przy użyciu Microsoft 365 API REST:
+Utwórz przepływ, który tworzy zdarzenie przy użyciu interfejsu API REST Microsoft 365:
 
-![Tworzenie Flow przy użyciu aplikacji.](../media/automate-event-driven-retention-flow-1.png)
+![Tworzenie zdarzenia przy użyciu Flow.](../media/automate-event-driven-retention-flow-1.png)
 
-![Używanie przepływu do wywołania interfejsu API REST.](../media/automate-event-driven-retention-flow-2.png)
+![Wywoływanie interfejsu API REST przy użyciu przepływu.](../media/automate-event-driven-retention-flow-2.png)
 
 #### <a name="create-an-event"></a>Tworzenie zdarzenia
 
-Przykładowy kod wywołujący interfejs API REST:
+Przykładowy kod do wywołania interfejsu API REST:
 
 - **Metoda**: POST
 - **Adres URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
@@ -271,7 +273,7 @@ Przykładowy kod wywołujący interfejs API REST:
     </entry>
     ```
 
-- **Uwierzytelnianie**: podstawowe
+- **Uwierzytelnianie**: Podstawowe
 - **Nazwa użytkownika**: "Complianceuser"
 - **Hasło**: "Compliancepassword"
 
@@ -281,22 +283,22 @@ Przykładowy kod wywołujący interfejs API REST:
 
 |Parametry|Opis|Uwagi|
 |--- |--- |--- |
-|<d:Nazwa></d:Nazwa>|Nadaj wydarzeniu unikatową nazwę,|Nie może zawierać spacji na trailu ani następujących znaków: % * \ & < \> \| # ? , : ;|
-|<d:EventType></d:EventType>|Wprowadź nazwę typu zdarzenia (lub wartość Guid),|Przykład: "Rozwiązanie umowy przez pracownika". Typ zdarzenia musi być skojarzony z etykietą przechowywania.|
-|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Wprowadź "ComplianceAssetId:" + identyfikator pracownika|Przykład: "ComplianceAssetId:12345"|
-|<d:EventDateTime></d:EventDateTime>|Data i godzina zdarzenia|Format: yyyy-MM-ddTHH:mm:ssZ, Przykład: 2018-12-01T00:00:00Z
+|<d:Name></d:Name>|Podaj unikatową nazwę zdarzenia,|Nie może zawierać spacji końcowych ani następujących znaków: % * \ & < \> \| # ? , : ;|
+|<d:EventType></d:EventType>|Wprowadź nazwę typu zdarzenia (lub identyfikator GUID),|Przykład: "Kończenie pracy pracowników". Typ zdarzenia musi być skojarzony z etykietą przechowywania.|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Wprowadź ciąg "ComplianceAssetId:" + identyfikator pracownika|Przykład: "ComplianceAssetId:12345"|
+|<d:EventDateTime></d:EventDateTime>|Data i godzina zdarzenia|Format: rrrr-MM-ddTHH:mm:ssZ, przykład: 2018-12-01T00:00:00Z
 |
 
 ###### <a name="response-codes"></a>Kody odpowiedzi
 
 | Kod odpowiedzi | Opis       |
 | ----------------- | --------------------- |
-| 302               | Przekierowywanie              |
+| 302               | Przekierowanie              |
 | 201               | Utwórz               |
 | 403               | Autoryzacja nie powiodła się  |
-| 401               | Uwierzytelnienie nie powiodło się |
+| 401               | Uwierzytelnianie nie powiodło się |
 
-##### <a name="get-events-based-on-a-time-range"></a>Uzyskiwanie zdarzeń na podstawie zakresu czasu
+##### <a name="get-events-based-on-a-time-range"></a>Pobieranie zdarzeń na podstawie zakresu czasu
 
 - **Metoda**: GET
 
@@ -304,7 +306,7 @@ Przykładowy kod wywołujący interfejs API REST:
 
 - **Nagłówki**: Key = Content-Type, Value = application/atom+xml
 
-- **Uwierzytelnianie**: podstawowe
+- **Uwierzytelnianie**: Podstawowe
 
 - **Nazwa użytkownika**: "Complianceuser"
 
@@ -314,13 +316,13 @@ Przykładowy kod wywołujący interfejs API REST:
 
 | Kod odpowiedzi | Opis                   |
 | ----------------- | --------------------------------- |
-| 200               | OK, lista zdarzeń w atom+ xml |
+| 200               | OK, lista zdarzeń w formacie xml atom+ |
 | 404               | Nie znaleziono                         |
-| 302               | Przekierowywanie                          |
+| 302               | Przekierowanie                          |
 | 401               | Autoryzacja nie powiodła się              |
-| 403               | Uwierzytelnienie nie powiodło się             |
+| 403               | Uwierzytelnianie nie powiodło się             |
 
-##### <a name="get-an-event-by-id"></a>Uzyskiwanie zdarzenia według identyfikatora
+##### <a name="get-an-event-by-id"></a>Pobieranie zdarzenia według identyfikatora
 
 - **Metoda**: GET
 
@@ -328,7 +330,7 @@ Przykładowy kod wywołujący interfejs API REST:
 
 - **Nagłówki**: Key = Content-Type, Value = application/atom+xml
 
-- **Uwierzytelnianie**: podstawowe
+- **Uwierzytelnianie**: Podstawowe
 
 - **Nazwa użytkownika**: "Complianceuser"
 
@@ -338,13 +340,13 @@ Przykładowy kod wywołujący interfejs API REST:
 
 | Kod odpowiedzi | Opis                                      |
 | ----------------- | ---------------------------------------------------- |
-| 200               | OK, treść odpowiedzi zawiera zdarzenie w formacie atom+xml |
+| 200               | OK. Treść odpowiedzi zawiera zdarzenie w pliku atom+xml |
 | 404               | Nie znaleziono                                            |
-| 302               | Przekierowywanie                                             |
+| 302               | Przekierowanie                                             |
 | 401               | Autoryzacja nie powiodła się                                 |
-| 403               | Uwierzytelnienie nie powiodło się                                |
+| 403               | Uwierzytelnianie nie powiodło się                                |
 
-##### <a name="get-an-event-by-name"></a>Uzyskiwanie zdarzenia według nazwy
+##### <a name="get-an-event-by-name"></a>Pobieranie zdarzenia według nazwy
 
 - **Metoda**: GET
 
@@ -352,7 +354,7 @@ Przykładowy kod wywołujący interfejs API REST:
 
 - **Nagłówki**: Key = Content-Type, Value = application/atom+xml
 
-- **Uwierzytelnianie**: podstawowe
+- **Uwierzytelnianie**: Podstawowe
 
 - **Nazwa użytkownika**: "Complianceuser"
 
@@ -362,15 +364,15 @@ Przykładowy kod wywołujący interfejs API REST:
 
 | Kod odpowiedzi | Opis                                      |
 | ----------------- | ---------------------------------------------------- |
-| 200               | OK, treść odpowiedzi zawiera zdarzenie w formacie atom+xml |
+| 200               | OK. Treść odpowiedzi zawiera zdarzenie w pliku atom+xml |
 | 404               | Nie znaleziono                                            |
-| 302               | Przekierowywanie                                             |
+| 302               | Przekierowanie                                             |
 | 401               | Autoryzacja nie powiodła się                                 |
-| 403               | Uwierzytelnienie nie powiodło się                                |
+| 403               | Uwierzytelnianie nie powiodło się                                |
 
 ### <a name="use-powershell-or-any-http-client-to-create-the-event"></a>Tworzenie zdarzenia przy użyciu programu PowerShell lub dowolnego klienta HTTP
 
-Program PowerShell musi być w wersji 6 lub nowszej.
+Program PowerShell musi mieć wersję 6 lub nowszą.
 
 W sesji programu PowerShell uruchom następujący skrypt:
 

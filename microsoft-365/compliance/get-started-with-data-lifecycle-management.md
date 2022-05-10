@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie z zarządzaniem cyklem życia danych
+title: Wprowadzenie do zarządzania cyklem życia danych
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Chcesz rozpocząć zarządzanie danymi organizacji, ale nie wiesz, od czego zacząć? Przeczytaj niektóre wskazówki nakazowe, aby rozpocząć pracę.
-ms.openlocfilehash: c5b9e931e2ab822a4d888b775de9fb8fa2acb13b
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0d9545a04b94b75ee1b9429d7db75b39e90b06ef
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972370"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286851"
 ---
-# <a name="get-started-with-data-lifecycle-management"></a>Wprowadzenie z zarządzaniem cyklem życia danych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="get-started-with-data-lifecycle-management"></a>Wprowadzenie do zarządzania cyklem życia danych
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Chcesz rozpocząć zarządzanie danymi organizacji, zachowując zawartość, którą musisz przechowywać, i usuwając zawartość, której nie masz? Aby rozpocząć pracę, skorzystaj z poniższych wskazówek dotyczących zarządzania cyklem życia danych usługi Microsoft Purview (dawniej Microsoft Information Governance):
 

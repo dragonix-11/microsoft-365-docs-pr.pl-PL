@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0cbcc198f31497996595a9f17df9cf689c435b58
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 3c11e531e8b4706128e1519b790046f800827d67
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130544"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285023"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Co nowego w usłudze Microsoft 365 Defender
 
@@ -45,6 +45,8 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 
 Aktualizacje produktów i ważne powiadomienia można również uzyskać za pośrednictwem [centrum komunikatów](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+## <a name="may-2022"></a>Maj 2022 r.
+- (wersja zapoznawcza) Zgodnie z niedawno ogłoszonym rozszerzeniem do nowej kategorii usług o nazwie [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts) wprowadzamy dostępność ekspertów [usługi Microsoft Defender do wyszukiwania zagrożeń](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) w publicznej wersji zapoznawczej. Defender Experts for Hunting jest przeznaczony dla klientów, którzy mają niezawodne centrum operacji zabezpieczeń, ale chcą, aby firma Microsoft pomagała im aktywnie wyszukiwać zagrożenia w danych usługi Microsoft Defender, w tym punkty końcowe, Office 365, aplikacje w chmurze i tożsamość. 
 
 ## <a name="april-2022"></a>Kwiecień 2022 r.
 - (wersja zapoznawcza) Teraz można wykonywać [akcje](advanced-hunting-take-action.md) dotyczące wiadomości e-mail bezpośrednio z wyników zapytania wyszukiwania zagrożeń. Wiadomości e-mail można przenosić do innych folderów lub trwale usuwać. 

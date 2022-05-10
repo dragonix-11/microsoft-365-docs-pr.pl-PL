@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Zaimplementuj funkcje usługi Microsoft Purview Information Protection, aby ułatwić ochronę poufnych informacji wszędzie tam, gdzie się znajdują lub podróżują.
-ms.openlocfilehash: ac6627d620169aca962f85f30c98d830b4a34a9f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 97f5172479d889ec1914cfc46102a58a83165269
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999877"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285483"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Ochrona poufnych danych za pomocą usługi Microsoft Purview
+
+>*[Licencjonowanie na potrzeby zgodności & zabezpieczeń Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 > [!TIP]
 > *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum wersji próbnych portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
->*[Licencjonowanie na potrzeby zgodności & zabezpieczeń Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Zaimplementuj możliwości usługi **Microsoft Purview Information Protection** (dawniej Microsoft Information Protection), aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych informacji wszędzie tam, gdzie się znajdują lub podróżują.
 

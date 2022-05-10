@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Chcesz wdrożyć etykiety poufności, aby chronić dane organizacji, ale nie wiesz, od czego zacząć? Zapoznaj się z praktycznymi wskazówkami, które pomogą Ci w procesie etykietowania.
-ms.openlocfilehash: b0fcf435d7805440e93f0d1248723f4b5599d4a9
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: f27f1a475f5880058db40894015dabdec9038be1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268776"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286039"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Wprowadzenie do etykiet poufności
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Aby uzyskać informacje o tym, czym są etykiety poufności i jak mogą pomóc w ochronie danych organizacji, zobacz [Dowiedz się więcej o etykietach poufności](sensitivity-labels.md).
 
@@ -106,6 +106,7 @@ Wszystkie scenariusze wymagają [utworzenia i skonfigurowania etykiet poufności
 |Stosowanie etykiety przechowywania w celu przechowywania lub usuwania plików lub wiadomości e-mail z określoną etykietą poufności|[Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości](apply-retention-labels-automatically.md) |
 |Odnajdywanie, etykietowanie i ochrona plików przechowywanych w lokalnych magazynach danych |[Wdrażanie skanera usługi Azure Information Protection w celu automatycznego klasyfikowania i ochrony plików](/azure/information-protection/deploy-aip-scanner)|
 |Odnajdywanie, etykietowanie i ochrona plików przechowywanych w magazynach danych znajdujących się w chmurze|[Odnajdywanie, klasyfikowanie, etykietowanie i ochrona danych regulowanych i poufnych przechowywanych w chmurze](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|Etykieta SQL kolumn bazy danych przy użyciu tych samych etykiet poufności, które są używane w przypadku plików i wiadomości e-mail, dzięki czemu organizacja ma ujednolicone rozwiązanie do etykietowania, które może nadal chronić te dane ustrukturyzowane podczas eksportowania |[Klasyfikacja & odnajdywania danych dla Azure SQL Database, Azure SQL Managed Instance i Azure Synapse Analytics](/azure/azure-sql/database/data-discovery-and-classification-overview) <br /><br /> [SQL odnajdywanie i klasyfikacja danych dla SQL Server lokalnie](/sql/relational-databases/security/sql-data-discovery-and-classification)|
 |Stosowanie i wyświetlanie etykiet w Power BI oraz ochrona danych, gdy są one zapisywane poza usługą|[Etykiety poufności w Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Monitorowanie i zrozumienie sposobu użycia etykiet poufności w mojej organizacji|[Dowiedz się więcej o klasyfikacji danych](data-classification-overview.md)|
 |Rozszerzanie etykiet poufności na aplikacje i usługi innych firm|[zestaw SDK Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|

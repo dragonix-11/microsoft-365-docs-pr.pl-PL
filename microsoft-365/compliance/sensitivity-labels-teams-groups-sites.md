@@ -1,5 +1,5 @@
 ---
-title: Używanie etykiet poufności z Microsoft Teams, grupami Microsoft 365 i witrynami SharePoint
+title: Używanie etykiet poufności z witrynami Microsoft Teams, Grupy Microsoft 365 i SharePoint
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,16 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj etykiet poufności, aby chronić zawartość w witrynach SharePoint i Microsoft Teams oraz w grupach Microsoft 365.
-ms.openlocfilehash: 0c8462333a3b3fd0c062c72fce0f673977c54b9b
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 9b9427fc736dfee3ea326b8c523d3f872ad98c70
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916254"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286105"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Używanie etykiet poufności do ochrony zawartości w witrynach Microsoft Teams, Microsoft 365 i SharePoint
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Oprócz używania [etykiet poufności](sensitivity-labels.md) do klasyfikowania i ochrony dokumentów i wiadomości e-mail można również używać etykiet poufności do ochrony zawartości w następujących kontenerach: Microsoft Teams witrynach, grupach Microsoft 365 ([dawniej Office 365 grupach](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) i witrynach SharePoint. W przypadku tej klasyfikacji i ochrony na poziomie kontenera użyj następujących ustawień etykiety:
 
@@ -66,9 +68,9 @@ Po włączeniu i skonfigurowaniu etykiet poufności dla kontenerów użytkownicy
 
 Jeśli nie włączono jeszcze etykiet poufności dla kontenerów, wykonaj następujący zestaw kroków jako jednorazową procedurę:
 
-1. Ponieważ ta funkcja korzysta z funkcji usługi Azure AD, postępuj zgodnie z instrukcjami z dokumentacji usługi Azure AD, aby włączyć obsługę etykiet poufności: [Przypisz etykiety poufności do Microsoft 365 grup w Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
+1. Ponieważ ta funkcja korzysta z funkcji Azure AD, postępuj zgodnie z instrukcjami z dokumentacji Azure AD, aby włączyć obsługę etykiet poufności: [Przypisz etykiety poufności do grup Microsoft 365 w Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. Teraz musisz zsynchronizować etykiety poufności z usługą Azure AD. Najpierw [połącz się z programem PowerShell Security & Compliance Center](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. Teraz musisz zsynchronizować etykiety poufności z Azure AD. Najpierw [połącz się z programem PowerShell Security & Compliance Center](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    Na przykład w sesji programu PowerShell uruchamianej jako administrator zaloguj się przy użyciu konta administratora globalnego.
 
@@ -93,7 +95,7 @@ Po włączeniu etykiet poufności dla kontenerów zgodnie z opisem w poprzedniej
 2. Następnie na stronie **Definiowanie ustawień ochrony dla grup i witryn** wybierz jedną lub obie dostępne opcje:
     
     - **Ustawienia prywatności i dostępu użytkowników zewnętrznych** w celu skonfigurowania ustawień dostępu **prywatność** i **użytkownicy zewnętrzni** . 
-    - **Ustawienia udostępniania zewnętrznego i dostępu warunkowego** w celu skonfigurowania **zewnętrznego udostępniania kontrolki z oznaczonych etykietami witryn SharePoint** i **używania dostępu warunkowego usługi Azure AD w celu ochrony ustawień witryn z etykietami SharePoint**.
+    - **Ustawienia udostępniania zewnętrznego i dostępu warunkowego** w celu skonfigurowania **zewnętrznego udostępniania kontrolki z oznaczonych etykietami witryn SharePoint** i **używania dostępu warunkowego Azure AD w celu ochrony oznaczonych etykietami SharePoint lokacji**.
 
 3. Jeśli wybrano **ustawienia prywatności i dostępu użytkowników zewnętrznych**, skonfiguruj teraz następujące ustawienia:
     
@@ -111,9 +113,9 @@ Po włączeniu etykiet poufności dla kontenerów zgodnie z opisem w poprzedniej
     
     - **Kontrolowanie udostępniania zewnętrznego z witryn z etykietami SharePoint**: wybierz tę opcję, aby wybrać udostępnianie zewnętrzne dla wszystkich osób, nowych i istniejących gości, istniejących gości lub tylko osób w organizacji. Aby uzyskać więcej informacji na temat tej konfiguracji i ustawień, zobacz dokumentację SharePoint [Włączanie i wyłączanie udostępniania zewnętrznego dla witryny](/sharepoint/change-external-sharing-site).
     
-    - **Użyj dostępu warunkowego usługi Azure AD, aby chronić witryny z etykietami SharePoint**: wybierz tę opcję tylko wtedy, gdy twoja organizacja została skonfigurowana i korzysta z [Azure Active Directory dostępu warunkowego](/azure/active-directory/conditional-access/overview). Następnie wybierz jedno z następujących ustawień:
+    - **Użyj Azure AD dostępu warunkowego, aby chronić witryny z etykietami SharePoint**: wybierz tę opcję tylko wtedy, gdy twoja organizacja została skonfigurowana i korzysta z [Azure Active Directory dostępu warunkowego](/azure/active-directory/conditional-access/overview). Następnie wybierz jedno z następujących ustawień:
     
-        - **Ustal, czy użytkownicy mogą uzyskiwać dostęp do witryn SharePoint z urządzeń niezarządzanych**: ta opcja używa funkcji SharePoint, która używa dostępu warunkowego usługi Azure AD do blokowania lub ograniczania dostępu do SharePoint i OneDrive zawartości z urządzeń niezarządzanych. Aby uzyskać więcej informacji, zobacz [Kontrolowanie dostępu z urządzeń niezarządzanych](/sharepoint/control-access-from-unmanaged-devices) z dokumentacji SharePoint. Opcja określona dla tego ustawienia etykiety jest odpowiednikiem uruchamiania polecenia programu PowerShell dla lokacji, zgodnie z opisem w krokach 3–5 z sekcji [Blokuj lub ogranicz dostęp do określonej witryny SharePoint lub OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) z instrukcji SharePoint.
+        - **Określ, czy użytkownicy mogą uzyskiwać dostęp do witryn SharePoint z urządzeń niezarządzanych**: ta opcja używa funkcji SharePoint, która używa dostępu warunkowego Azure AD do blokowania lub ograniczania dostępu do zawartości SharePoint i OneDrive z urządzeń niezarządzanych. Aby uzyskać więcej informacji, zobacz [Kontrolowanie dostępu z urządzeń niezarządzanych](/sharepoint/control-access-from-unmanaged-devices) z dokumentacji SharePoint. Opcja określona dla tego ustawienia etykiety jest odpowiednikiem uruchamiania polecenia programu PowerShell dla lokacji, zgodnie z opisem w krokach 3–5 z sekcji [Blokuj lub ogranicz dostęp do określonej witryny SharePoint lub OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) z instrukcji SharePoint.
             
             Aby uzyskać dodatkowe informacje o konfiguracji, zobacz [Więcej informacji o zależnościach dla opcji urządzeń niezarządzanych](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) na końcu tej sekcji.
             
@@ -142,7 +144,7 @@ Ponieważ można skonfigurować ustawienia SharePoint niezależnie od konfigurac
 
 ##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>Więcej informacji o zależnościach dla opcji kontekstu uwierzytelniania
 
-Aby można było wyświetlić konteksty uwierzytelniania na liście rozwijanej do wyboru, należy utworzyć, skonfigurować i opublikować konteksty uwierzytelniania w ramach konfiguracji dostępu do warunku Azure Active Directory. Aby uzyskać więcej informacji i instrukcji, zobacz sekcję [Konfigurowanie kontekstów uwierzytelniania](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) w dokumentacji dostępu warunkowego usługi Azure AD.
+Aby można było wyświetlić konteksty uwierzytelniania na liście rozwijanej do wyboru, należy utworzyć, skonfigurować i opublikować konteksty uwierzytelniania w ramach konfiguracji dostępu do warunku Azure Active Directory. Aby uzyskać więcej informacji i instrukcji, zobacz sekcję [Konfigurowanie kontekstów uwierzytelniania](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) w dokumentacji Azure AD dostępu warunkowego.
 
 Nie wszystkie aplikacje obsługują konteksty uwierzytelniania. Jeśli użytkownik z nieobsługiwaną aplikacją nawiąże połączenie z witryną skonfigurowaną pod kątem kontekstu uwierzytelniania, zobaczy komunikat o odmowie dostępu lub zostanie wyświetlony monit o uwierzytelnienie, ale odrzucony. Aplikacje, które obecnie obsługują konteksty uwierzytelniania:
 
@@ -181,7 +183,7 @@ Znane ograniczenia dotyczące tej wersji zapoznawczej:
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>Konfigurowanie ustawień domyślnego typu łącza udostępniania witryny przy użyciu ustawień zaawansowanych programu PowerShell
 
-Oprócz ustawień etykiet dla witryn i grup, które można skonfigurować z poziomu centrum zgodności, można również skonfigurować domyślny typ linku udostępniania dla witryny. Etykiety poufności dokumentów można również skonfigurować dla domyślnego typu łącza udostępniania. Te ustawienia, które pomagają zapobiegać nadmiernemu udostępnianiu, są wybierane automatycznie, gdy użytkownicy wybierają przycisk **Udostępnij** w swoich aplikacjach Office. 
+Oprócz ustawień etykiet dla witryn i grup, które można skonfigurować w portalu zgodności usługi Microsoft Purview, można również skonfigurować domyślny typ linku udostępniania dla witryny. Etykiety poufności dokumentów można również skonfigurować dla domyślnego typu łącza udostępniania. Te ustawienia, które pomagają zapobiegać nadmiernemu udostępnianiu, są wybierane automatycznie, gdy użytkownicy wybierają przycisk **Udostępnij** w swoich aplikacjach Office. 
 
 Aby uzyskać więcej informacji i instrukcji, zobacz [Używanie etykiet poufności do konfigurowania domyślnego typu linku udostępniania witryn i dokumentów w SharePoint i OneDrive](sensitivity-labels-default-sharing-link.md).
 
@@ -257,7 +259,7 @@ Jeśli usuniesz etykietę poufności z włączonymi ustawieniami lokacji i grupy
 
 Teraz możesz zastosować etykietę poufności lub etykiety do następujących kontenerów:
 
-- [grupa Microsoft 365 w usłudze Azure AD](#apply-sensitivity-labels-to-microsoft-365-groups)
+- [grupa Microsoft 365 w Azure AD](#apply-sensitivity-labels-to-microsoft-365-groups)
 - [witryna zespołu Microsoft Teams](#apply-a-sensitivity-label-to-a-new-team)
 - [grupa Microsoft 365 w Outlook w sieci Web](#apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web)
 - [witryna SharePoint](#apply-a-sensitivity-label-to-a-new-site)
@@ -266,7 +268,7 @@ Jeśli chcesz [zastosować etykietę poufności do wielu lokacji](#use-powershel
 
 ### <a name="apply-sensitivity-labels-to-microsoft-365-groups"></a>Stosowanie etykiet poufności do grup Microsoft 365
 
-Teraz możesz przystąpić do stosowania etykiet lub etykiet poufności do Microsoft 365 grup. Wróć do dokumentacji usługi Azure AD, aby uzyskać instrukcje:
+Teraz możesz przystąpić do stosowania etykiet lub etykiet poufności do Microsoft 365 grup. Wróć do dokumentacji Azure AD, aby uzyskać instrukcje:
 
 - [Przypisz etykietę do nowej grupy w Azure Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
 
@@ -367,8 +369,7 @@ Następujące aplikacje i usługi obsługują etykiety poufności skonfigurowane
   - centrum administracyjne programu SharePoint
   - centrum administracyjne Teams
   - Centrum administracyjne platformy Microsoft 365
-  - Centrum zgodności platformy Microsoft 365
-  - portal Azure Active Directory
+  - Portal zgodności platformy Microsoft Purview
 
 - Aplikacje i usługi użytkownika:
 
@@ -392,13 +393,13 @@ Następujące aplikacje i usługi nie obsługują obecnie etykiet poufności sko
   - Project
   - Power BI
 
-## <a name="classic-azure-ad-group-classification"></a>Klasyczna klasyfikacja grupy usługi Azure AD
+## <a name="classic-azure-ad-group-classification"></a>Klasyczna klasyfikacja grup Azure AD
 
-Po włączeniu etykiet poufności dla kontenerów klasyfikacje grup z usługi Azure AD nie są już obsługiwane przez Microsoft 365 i nie będą wyświetlane w witrynach, które obsługują etykiety poufności. Można jednak przekonwertować stare klasyfikacje na etykiety poufności.
+Po włączeniu etykiet poufności dla kontenerów klasyfikacje grup z Azure AD nie są już obsługiwane przez Microsoft 365 i nie będą wyświetlane w witrynach, które obsługują etykiety poufności. Można jednak przekonwertować stare klasyfikacje na etykiety poufności.
 
 Jako przykład użycia starej klasyfikacji grup dla SharePoint zobacz [klasyfikację "nowoczesnych" lokacji SharePoint](/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
-Te klasyfikacje zostały skonfigurowane przy użyciu programu Azure AD PowerShell lub biblioteki PnP Core i zdefiniowania wartości dla `ClassificationList` tego ustawienia. Jeśli dzierżawa ma zdefiniowane wartości klasyfikacji, są one wyświetlane podczas uruchamiania następującego polecenia z [modułu AzureADPreview programu PowerShell](https://www.powershellgallery.com/packages/AzureADPreview):
+Te klasyfikacje zostały skonfigurowane przy użyciu Azure AD programu PowerShell lub biblioteki PnP Core i zdefiniowania wartości dla `ClassificationList` tego ustawienia. Jeśli dzierżawa ma zdefiniowane wartości klasyfikacji, są one wyświetlane podczas uruchamiania następującego polecenia z [modułu AzureADPreview programu PowerShell](https://www.powershellgallery.com/packages/AzureADPreview):
 
 ```powershell
 ($setting["ClassificationList"])
@@ -418,7 +419,7 @@ Następnie:
 
 Chociaż nie można uniemożliwić użytkownikom tworzenia nowych grup w aplikacjach i usługach, które nie obsługują jeszcze etykiet poufności, można uruchomić cykliczny skrypt programu PowerShell w celu wyszukania nowych grup utworzonych przez użytkowników ze starymi klasyfikacjami i przekonwertowania ich na etykiety poufności.
 
-Aby ułatwić zarządzanie współistnieniem etykiet poufności i klasyfikacji usługi Azure AD dla witryn i grup, zobacz [Azure Active Directory klasyfikacji i etykiet poufności dla grup Microsoft 365](migrate-aad-classification-sensitivity-labels.md).
+Aby ułatwić zarządzanie współistnieniem etykiet poufności i klasyfikacji Azure AD dla lokacji i grup, zobacz [Azure Active Directory klasyfikacji i etykiet poufności dla grup Microsoft 365](migrate-aad-classification-sensitivity-labels.md).
 
 ### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>Konwertowanie klasyfikacji grup Microsoft 365 na etykiety poufności przy użyciu programu PowerShell
 
@@ -481,11 +482,11 @@ Wszystkie te zdarzenia inspekcji można znaleźć w kategorii [działania etykie
 
 Etykiety poufności dla Microsoft Teams, grup Microsoft 365 i witryn SharePoint można wyłączyć, korzystając z tych samych instrukcji z sekcji [Włączanie obsługi etykiet poufności w programie PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Aby jednak wyłączyć tę funkcję, w kroku 5 określ wartość `$setting["EnableMIPLabels"] = "False"`.
 
-Oprócz tego, że wszystkie ustawienia są niedostępne dla grup i witryn podczas tworzenia lub edytowania etykiet poufności, ta akcja przywraca właściwość używaną przez kontenery do ich konfiguracji. Włączenie etykiet poufności dla Microsoft Teams, grup Microsoft 365 i lokacji SharePoint powoduje przełączenie właściwości używanej z **klasyfikacji** (używanej do [klasyfikacji grup usługi Azure AD](#classic-azure-ad-group-classification)) na **poufność**. Po wyłączeniu etykiet poufności dla kontenerów kontenery ignorują właściwość Sensitivity i ponownie używają właściwości Classification.
+Oprócz tego, że wszystkie ustawienia są niedostępne dla grup i witryn podczas tworzenia lub edytowania etykiet poufności, ta akcja przywraca właściwość używaną przez kontenery do ich konfiguracji. Włączenie etykiet poufności dla Microsoft Teams, grup Microsoft 365 i lokacji SharePoint powoduje przełączenie właściwości używanej z **klasyfikacji** (używanej do [klasyfikacji grup Azure AD](#classic-azure-ad-group-classification)) na **poufność**. Po wyłączeniu etykiet poufności dla kontenerów kontenery ignorują właściwość Sensitivity i ponownie używają właściwości Classification.
 
 Oznacza to, że żadne ustawienia etykiet z witryn i grup wcześniej stosowanych do kontenerów nie będą wymuszane, a kontenery nie będą już wyświetlać etykiet.
 
-Jeśli te kontenery mają zastosowane wartości klasyfikacji usługi Azure AD, kontenery powrócą do ponownego użycia klasyfikacji. Należy pamiętać, że wszystkie nowe witryny lub grupy utworzone po włączeniu funkcji nie będą wyświetlać etykiety ani klasyfikacji. W przypadku tych kontenerów i wszystkich nowych kontenerów można teraz stosować wartości klasyfikacji. Aby uzyskać więcej informacji, zobacz [SharePoint klasyfikację "nowoczesnych" lokacji](/sharepoint/dev/solution-guidance/modern-experience-site-classification) i [Tworzenie klasyfikacji dla grup Office w organizacji](../enterprise/manage-microsoft-365-groups-with-powershell.md).
+Jeśli te kontenery mają Azure AD wartości klasyfikacji stosowane do nich, kontenery powrócić do korzystania z klasyfikacji ponownie. Należy pamiętać, że wszystkie nowe witryny lub grupy utworzone po włączeniu funkcji nie będą wyświetlać etykiety ani klasyfikacji. W przypadku tych kontenerów i wszystkich nowych kontenerów można teraz stosować wartości klasyfikacji. Aby uzyskać więcej informacji, zobacz [SharePoint klasyfikację "nowoczesnych" lokacji](/sharepoint/dev/solution-guidance/modern-experience-site-classification) i [Tworzenie klasyfikacji dla grup Office w organizacji](../enterprise/manage-microsoft-365-groups-with-powershell.md).
 
 ## <a name="additional-resources"></a>Dodatkowe materiały
 

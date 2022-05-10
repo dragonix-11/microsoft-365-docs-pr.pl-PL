@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Deklarowanie rekordów przy użyciu etykiet przechowywania.
-ms.openlocfilehash: 23dd6c61d9da787eecd2e1fa825fe338d961d1d1
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 75445d1cd61bd86dd41d6325efc6e71fac20ddc0
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911460"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286061"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Deklaruj rekordy przy użyciu etykiet przechowywania
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Aby zadeklarować dokumenty i wiadomości e-mail jako [rekordy](records-management.md#records), należy użyć [etykiet przechowywania](retention.md#retention-labels) , które oznaczają zawartość jako **rekord** lub **rekord regulacyjny**.
 
@@ -55,11 +57,7 @@ Jeśli zmienisz zdanie dotyczące wyświetlania tej opcji w kreatorze etykiet pr
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Konfigurowanie etykiet przechowywania w celu deklarowania rekordów
 
-Podczas tworzenia etykiety przechowywania na podstawie rozwiązania **Do zarządzania rekordami** w Centrum zgodności platformy Microsoft 365 możesz wybrać opcję **Oznacz elementy jako rekord**. Następnie jako dodatkową opcję, która jest obecnie wdrażana w wersji zapoznawczej, domyślnie odblokuj rekord dla SharePoint i OneDrive.
-
-Dodatkowa opcja **odblokowywania tego rekordu domyślnie umożliwia** użytkownikom deklarowanie samych rekordów, ponieważ blokują rekord po zakończeniu edytowania zawartości. Aby uzyskać więcej informacji na temat tego obsługiwanego scenariusza, zobacz [Używanie przechowywania wersji rekordów do aktualizowania rekordów przechowywanych w SharePoint lub OneDrive](record-versioning.md).
-
-Jeśli uruchomiono polecenie programu PowerShell z poprzedniej sekcji, możesz oznaczyć elementy jako rekord regulacyjny.
+Podczas tworzenia etykiety przechowywania z poziomu rozwiązania **Do zarządzania rekordami** w portalu zgodności usługi Microsoft Purview można oznaczyć elementy jako rekord. Jeśli uruchomiono polecenie programu PowerShell z poprzedniej sekcji, możesz oznaczyć elementy jako rekord regulacyjny.
 
 Przykład:
 
@@ -77,7 +75,7 @@ Aby uzyskać pełne instrukcje:
 
 Jeśli użyjesz etykiet przechowywania do deklarowania elementów jako rekordów (zamiast rekordów regulacyjnych) w SharePoint i OneDrive, rozważ, czy musisz zmienić domyślne ustawienie dzierżawy, które umożliwia użytkownikom edytowanie właściwości [zablokowanego rekordu](record-versioning.md), gdy pliki są większe niż 0 bajtów.
 
-Aby zmienić to ustawienie domyślne, przejdź do [obszaru zarządzania](https://compliance.microsoft.com/) >  Centrum zgodności platformy Microsoft 365 **RecordsUstawienia** >  >  **zarządzania rekordamiUstawienia zarządzania rekordamiUzwalaj** na **edytowanie** >  **właściwości rekordu,** a następnie wyłącz ustawienie **Zezwalaj użytkownikom na edytowanie właściwości rekordu**.
+Aby zmienić to ustawienie domyślne, przejdź do portalu  > [zgodności usługi Microsoft PurviewZarządzanie](https://compliance.microsoft.com/) >  **rekordamiUstawienia** >  **zarządzania rekordami** **Etykiety** >  **ponownej konfiguracjiUzwalaj na edytowanie właściwości rekordu**, a następnie wyłącz ustawienie **Zezwalaj użytkownikom na edytowanie właściwości rekordu**.
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Stosowanie skonfigurowanej etykiety przechowywania do zawartości
 

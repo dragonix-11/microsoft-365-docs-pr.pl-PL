@@ -18,16 +18,18 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Informacje o maksymalnej liczbie zasad i elementów na zasady dotyczące zasad przechowywania i zasad etykiet przechowywania
-ms.openlocfilehash: 260b99a4519937f962cc1c779a9beb9c6810e7e1
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: bb94043f68d46f98f005853cde03da048495e10f
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782814"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285363"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limity zasad przechowywania i zasad etykiet przechowywania
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jeśli używasz [zasad przechowywania i zasad etykiet przechowywania](retention.md#retention-policies-and-retention-labels) do automatycznego przechowywania lub usuwania danych dla organizacji, należy pamiętać o pewnych maksymalnych liczbach.
 

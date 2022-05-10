@@ -21,21 +21,21 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Dowiedz się, jak usługa Microsoft Purview Records Management obsługuje elementy o wysokiej wartości dla wymagań dotyczących prowadzenia dokumentacji biznesowej, prawnej lub regulacyjnej.
-ms.openlocfilehash: dd554b4369a1f721d306bc301519ce3ef59e4569
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b14c622d1468cdb91ad1ac8e58c184e650ebbe6c
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998535"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284869"
 ---
 # <a name="learn-about-records-management"></a>Dowiedz się więcej o zarządzaniu rekordami
+
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!TIP]
 > *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum wersji próbnych portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Organizacje wszystkich typów wymagają rozwiązania do zarządzania rekordami w celu zarządzania rekordami regulacyjnymi, prawnymi i biznesowymi w danych firmowych. Zarządzanie rekordami w usłudze Microsoft Purview pomaga organizacji zarządzać swoimi zobowiązaniami prawnymi, umożliwia demonstrowanie zgodności z przepisami i zwiększa wydajność przy regularnym rozporządzaniu elementami, które nie są już wymagane do przechowywania, nie mają już wartości lub nie są już wymagane do celów biznesowych.
 

@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj zasad przechowywania, aby efektywnie kontrolować zawartość generowaną przez użytkowników za pomocą poczty e-mail, dokumentów i konwersacji. Zachowaj to, czego chcesz, i pozbądź się tego, czego nie chcesz.
-ms.openlocfilehash: 22373fddf6a4ccac718f9fede9d1bbc40b92681d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: abb18142517ceb6c5442ccd372c4f392db706bc1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145322"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284957"
 ---
 # <a name="create-and-configure-retention-policies"></a>Tworzenie i konfigurowanie zasad przechowywania
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj zasad przechowywania, aby zarządzać danymi organizacji, aktywnie podejmując decyzję, czy zachować zawartość, usunąć zawartość, czy zachować, a następnie usunąć zawartość.
 

@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Wymaganie dotyczące wszystkich rozwiązań usługi Microsoft Purview Information Protection: tworzenie, konfigurowanie i publikowanie etykiet poufności w celu klasyfikowania i ochrony danych organizacji.'
-ms.openlocfilehash: 036835e77ca1e1d7c15435050d4577f5352f0ebd
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 7dc8cfc095167021df2cec093734ab9c1b101868
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131279"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286951"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Tworzenie i konfigurowanie etykiet poufności i ich zasad
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Wszystkie rozwiązania Information Protection Microsoft Purview są implementowane przy użyciu [etykiet poufności](sensitivity-labels.md). Aby utworzyć i opublikować te etykiety, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>.
 

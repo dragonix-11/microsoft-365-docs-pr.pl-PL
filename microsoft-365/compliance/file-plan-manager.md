@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie etykietami przechowywania w całym cyklu życia zawartości przy użyciu planu plików
+title: Zarządzanie etykietami przechowywania przy użyciu planu plików
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,18 +17,20 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Plan plików zapewnia zaawansowane możliwości zarządzania etykietami przechowywania.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 40c395d609a9a02637b937cafae988578dc6e14f
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 5ed2ccfa1c26efc8e55f048e24de005701417576
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836177"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286083"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Tworzenie etykiet przechowywania i zarządzanie nimi przy użyciu planu plików
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Mimo że w Centrum zgodności platformy Microsoft 365 można tworzyć etykiety przechowywania  i zarządzać nimi, plan plików z **zarządzania rekordami** ma dodatkowe możliwości zarządzania:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Mimo że można tworzyć etykiety przechowywania i zarządzać nimi z **poziomu zarządzania cyklem życia danych** w portalu zgodności usługi Microsoft Purview, plan plików z **zarządzania rekordami** ma dodatkowe możliwości zarządzania:
 
 - Etykiety przechowywania można tworzyć zbiorczo, importując odpowiednie informacje z arkusza kalkulacyjnego.
 
@@ -50,7 +52,7 @@ Aby uzyskać dostęp do planu plików, musisz mieć jedną z następujących ró
 
 - Menedżer przechowywania tylko do wyświetlania
 
-W Centrum zgodności platformy Microsoft 365 przejdź do obszaru **SolutionsRecords** >  **managementFile** >  plan:
+W portalu zgodności usługi Microsoft Purview przejdź do obszaru **SolutionsRecords** >  **managementFile** >  plan:
 
 ![Strona planów plików](../media/compliance-file-plan.png). 
 
@@ -58,9 +60,9 @@ Jeśli **zarządzanie rekordami** nie jest wyświetlane w okienku nawigacji, naj
 
 ## <a name="navigating-your-file-plan"></a>Nawigowanie po planie plików
 
-Jeśli w Centrum zgodności platformy Microsoft 365 utworzono już etykiety przechowywania na podstawie **ładu informacji**, etykiety te są automatycznie wyświetlane w planie plików. 
+Jeśli etykiety przechowywania zostały już utworzone w ramach **zarządzania cyklem życia danych** w portalu zgodności usługi Microsoft Purview, etykiety te są automatycznie wyświetlane w planie plików. 
 
-Podobnie, jeśli teraz tworzysz etykiety przechowywania w planie plików, są one również dostępne w **usłudze Zarządzanie informacjami** , jeśli etykiety nie są skonfigurowane do oznaczania zawartości jako rekordu.
+Podobnie jeśli teraz tworzysz etykiety przechowywania w planie plików, są one również dostępne w **ramach zarządzania cyklem życia danych** , jeśli etykiety nie są skonfigurowane do oznaczania zawartości jako rekordu.
 
 Na stronie **Plan pliku** widoczne są wszystkie etykiety ze stanem i ustawieniami, opcjonalne deskryptory planu plików, opcja eksportu umożliwiająca analizowanie lub włączanie przeglądów etykiet w trybie offline oraz opcja importowania umożliwiająca tworzenie etykiet przechowywania. 
 
@@ -199,7 +201,7 @@ Poniższe informacje ułatwiają wypełnienie pobranego szablonu w celu zaimport
 |Właściwość|Wpisać|Wymagany|Prawidłowe wartości|
 |:-----|:-----|:-----|:-----|
 |LabelName|Ciąg|Tak|Ta właściwość określa nazwę etykiety przechowywania i musi być unikatowa w dzierżawie. Obsługiwane znaki do importowania: a-z, A-Z, 0-9, łącznik (-) i znak spacji.|
-|Komentowanie|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla administratorów. Ten opis jest wyświetlany tylko administratorom, którzy zarządzają etykietą przechowywania w Centrum zgodności.|
+|Komentowanie|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla administratorów. Ten opis jest wyświetlany tylko administratorom, którzy zarządzają etykietą przechowywania w portalu zgodności usługi Microsoft Purview.|
 |Uwagi|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla użytkowników. Ten opis jest wyświetlany, gdy użytkownicy umieszczają wskaźnik myszy na etykiecie w aplikacjach takich jak Outlook, SharePoint i OneDrive. Jeśli pozostawisz tę właściwość pustą, zostanie wyświetlony domyślny opis, który objaśnia ustawienia przechowywania etykiety. |
 |IsRecordLabel|Ciąg|Nie, chyba że **przepis** ma **wartość TRUE**|Ta właściwość określa, czy etykieta oznacza zawartość jako rekord. Prawidłowe wartości to: </br>**PRAWDA**: Etykieta oznacza element jako rekord i w rezultacie nie można usunąć elementu. </br>**FALSE**: Etykieta nie oznacza zawartości jako rekordu. Jest to wartość domyślna. </br> </br> Zależności grupy: Po określeniu tej właściwości należy również określić właściwości RetentionAction, RetentionDuration i RetentionType.|
 |RetentionAction|Ciąg|Nie, o ile nie określono **wartości RetentionDuration**, **RetentionType** lub **ReviewerEmail**|Ta właściwość określa akcję, jaką należy wykonać po wygaśnięciu wartości określonej przez właściwość RetentionDuration (jeśli określono). Prawidłowe wartości to: </br>**Usuń**: Elementy starsze niż wartość określona przez właściwość RetentionDuration są usuwane.</br>**Zachowaj: Zachowaj** elementy przez czas określony przez właściwość RetentionDuration, a następnie nie rób nic po upływie okresu trwania. </br>**KeepAndDelete**: Zachowaj elementy przez czas określony przez właściwość RetentionDuration, a następnie usuń je po upływie okresu trwania. </br> </br> Zależności grupy: po określeniu tej właściwości należy również określić właściwości RetentionDuration i RetentionType. |

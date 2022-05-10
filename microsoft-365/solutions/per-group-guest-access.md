@@ -1,5 +1,5 @@
 ---
-title: Zapobieganie dodaniu gości do określonej grupy
+title: Uniemożliwianie dodawania gości do określonej grupy
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -15,25 +15,25 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Dowiedz się, jak uniemożliwić dodanie gości do określonej grupy
-ms.openlocfilehash: 4b9ebc6366934db52c30d51091ac9991ff82d8c3
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Dowiedz się, jak uniemożliwić dodawanie gości do określonej grupy
+ms.openlocfilehash: f050011427ceeeff8347c2acd5b6d3fbbcf11bec
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570068"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285319"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Zapobieganie dodaniu gości do określonej grupy Microsoft 365 lub zespołu Microsoft Teams zespołu
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Uniemożliwianie dodawania gości do określonej grupy Microsoft 365 lub zespołu Microsoft Teams
 
-Jeśli chcesz zezwolić na dostęp gości do większości grup i zespołów, ale w niektórych miejscach, w których nie chcesz zezwalać na dostęp gości, możesz zablokować dostęp gościa dla poszczególnych grup i zespołów. (Zablokowanie dostępu gościa do zespołu jest wykonywane przez zablokowanie dostępu gościa do skojarzonej grupy). Zapobiega to dodawaniu nowych gości, ale nie powoduje usunięcia gości, którzy są już w grupie lub zespole.
+Jeśli chcesz zezwolić na dostęp gościa do większości grup i zespołów, ale masz gdzieś, gdzie chcesz uniemożliwić dostęp gościowi, możesz zablokować dostęp gościa dla poszczególnych grup i zespołów. (Blokowanie dostępu gościa do zespołu odbywa się przez zablokowanie dostępu gościa do skojarzonej grupy). Zapobiega to dodawaniu nowych gości, ale nie usuwa gości, którzy są już w grupie lub zespole.
 
-Jeśli używasz etykiet wrażliwości w swojej organizacji, zalecamy używanie ich do kontrolowania dostępu gościa w zależności od grupy. Aby dowiedzieć się, jak to zrobić, zobacz Chroninie zawartości w witrynach sieci [Microsoft Teams, Microsoft 365 grup SharePoint zawartości](../compliance/sensitivity-labels-teams-groups-sites.md). Jest to zalecane podejście.
+Jeśli używasz etykiet poufności w organizacji, zalecamy używanie ich do kontrolowania dostępu gościa dla grupy. Aby uzyskać informacje o tym, jak to zrobić, [użyj etykiet poufności, aby chronić zawartość w witrynach Microsoft Teams, Microsoft 365 i SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md). Jest to zalecane podejście.
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Zmienianie ustawień grupy przy użyciu programu Microsoft PowerShell
 
-Możesz również zapobiec dodatku nowych gości do poszczególnych grup przy użyciu programu PowerShell. (Pamiętaj, że witryna zespołu skojarzona SharePoint ma [osobne mechanizmy udostępniania gościa](/sharepoint/change-external-sharing-site)).
+Możesz również uniemożliwić dodawanie nowych gości do poszczególnych grup przy użyciu programu PowerShell. (Pamiętaj, że skojarzona witryna SharePoint zespołu ma [oddzielne kontrolki udostępniania gościa](/sharepoint/change-external-sharing-site)).
 
-Aby zmienić ustawienie dostępu gościa na poziomie grupy Azure Active Directory należy użyć wersji Preview programu [PowerShell dla programu Graph](/powershell/azure/active-directory/install-adv2) (nazwa modułu **AzureADPreview**):
+Aby zmienić ustawienie dostępu gościa na poziomie grupy, należy użyć wersji zapoznawczej [programu Azure Active Directory programu PowerShell dla Graph](/powershell/azure/active-directory/install-adv2) (nazwa modułu **AzureADPreview**):
 
 - Jeśli nie zainstalowano jeszcze żadnej wersji modułu programu Azure AD PowerShell, zobacz [Instalowanie modułu usługi Azure AD](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) i postępuj zgodnie z instrukcjami, aby zainstalować publiczną wersję zapoznawczą.
 
@@ -42,9 +42,9 @@ Aby zmienić ustawienie dostępu gościa na poziomie grupy Azure Active Director
 - Jeśli masz już zainstalowaną wersję zapoznawczą, uruchom `Install-Module AzureADPreview` , aby upewnić się, że jest to najnowsza wersja tego modułu.
 
 > [!NOTE]
-> Aby uruchomić te polecenia, musisz mieć uprawnienia administratora globalnego. 
+> Aby uruchamiać te polecenia, musisz mieć uprawnienia administratora globalnego. 
 
-Uruchom poniższy skrypt, zmieniając *\<GroupName\>* nazwę grupy, w której chcesz zablokować dostęp gościa.
+Uruchom następujący skrypt, zmieniając *\<GroupName\>* nazwę grupy, w której chcesz zablokować dostęp gościa.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -58,7 +58,7 @@ $groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
 New-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy
 ```
 
-Aby zweryfikować ustawienia, uruchom to polecenie:
+Aby zweryfikować ustawienia, uruchom następujące polecenie:
 
 ```PowerShell
 Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
@@ -66,9 +66,9 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 Weryfikacja wygląda następująco:
     
-![Zrzut ekranu przedstawiający okno programu PowerShell pokazujące, że dostęp do grupy gości został ustawiony na wartość False (Fałsz).](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
+![Zrzut ekranu okna programu PowerShell pokazujący, że dostęp do grupy gości został ustawiony na wartość false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
 
-Jeśli chcesz ponownie włączyć ustawienie zezwalania na dostęp gościa do konkretnej grupy, uruchom poniższy skrypt, zmieniając nazwę grupy, ```<GroupName>``` w której chcesz zezwolić na dostęp gościa.
+Jeśli chcesz ponownie przełączyć ustawienie, aby zezwolić na dostęp gościa do określonej grupy, uruchom następujący skrypt, zmieniając ```<GroupName>``` nazwę grupy, w której chcesz zezwolić na dostęp gościa.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -83,23 +83,23 @@ $id = (get-AzureADObjectSetting -TargetType groups -TargetObjectId $groupID).id
 Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy -id $id
 ```
 
-## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Zezwalanie na dostęp gościa lub blokowanie go na podstawie jego domeny
+## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Zezwalanie na dostęp gościa lub blokowanie go na podstawie ich domeny
 
-Możesz zezwolić na gości korzystających z określonej domeny lub zablokować ich. Jeśli na przykład Twoja firma (Contoso) będzie partnerską firmą (Fabrikam), możesz dodać firmę Fabrikam do listy zezwalań, aby twoi użytkownicy dodali tych gości do swoich grup.
+Możesz zezwolić lub zablokować gości korzystających z określonej domeny. Jeśli na przykład Firma (Contoso) współpracuje z inną firmą (Fabrikam), możesz dodać firmę Fabrikam do listy dozwolonych, aby użytkownicy mogli dodawać tych gości do swoich grup.
 
-Aby uzyskać więcej informacji, zobacz [Zezwalanie na zaproszenia do B2B lub blokowanie zaproszeń do B2B użytkowników z określonych organizacji](/azure/active-directory/b2b/allow-deny-list).
+Aby uzyskać więcej informacji, zobacz [Zezwalanie lub blokowanie zaproszeń do użytkowników B2B z określonych organizacji](/azure/active-directory/b2b/allow-deny-list).
 
-## <a name="add-guests-to-the-global-address-list"></a>Dodawanie gości do globalnej listy adresowej
+## <a name="add-guests-to-the-global-address-list"></a>Dodawanie gości do globalnej listy adresów
 
-Domyślnie goście nie są widoczni na globalnej Exchange adresowej. Aby wyświetlić gościa na globalnej liście adresowej, należy wykonać czynności wymienione poniżej.
+Domyślnie goście nie są widoczni na Exchange globalnej liście adresów. Wykonaj poniższe kroki, aby wyświetlić gościa na globalnej liście adresów.
 
-Znajdź identyfikator ObjectID gościa, uruchamiając go:
+Znajdź identyfikator ObjectID gościa, uruchamiając polecenie:
 
 ```PowerShell
-Get-AzureADUser -Filter "userType eq 'Guest'"
+get-AzureADUser -all $true | ?{$_.CreationType -eq "Invitation"}
 ```
 
-Następnie uruchom następujące czynności, używając odpowiednich wartości dla obiektów ObjectID, GivenName, Surname, DisplayName i TelephoneNumber.
+Następnie uruchom następujące polecenie, używając odpowiednich wartości dla wartości ObjectID, GivenName, Surname, DisplayName i TelephoneNumber.
 
 ```PowerShell
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
@@ -113,6 +113,6 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [Zarządzanie członkostwem w grupie w Centrum administracyjne platformy Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
   
-[Azure Active Directory dostępu](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[przeglądy dostępu Azure Active Directory](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)

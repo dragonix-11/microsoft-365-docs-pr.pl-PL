@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Zapoznaj się z ustawieniami, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i pozbyć się tego, czego nie chcesz.
-ms.openlocfilehash: 90a048cf96bb2414a42d803bcd2f15deab4e711b
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 39c0258cb4b471e05bae24d0d35c708a42252219
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268798"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285385"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](https://aka.ms/ComplianceSD).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Wiele ustawień przechowywania jest typowych zarówno dla zasad przechowywania, jak i zasad etykiet przechowywania. Poniższe informacje ułatwiają skonfigurowanie tych ustawień w celu proaktywnego przechowywania zawartości, usuwania zawartości lub obu tych ustawień — zachowywania i usuwania zawartości.
 

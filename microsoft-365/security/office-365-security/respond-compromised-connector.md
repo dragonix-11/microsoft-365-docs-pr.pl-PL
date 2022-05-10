@@ -16,12 +16,12 @@ ms.custom: ''
 description: Dowiedz się, jak rozpoznawać łącznik z naruszonymi zabezpieczeniami i reagować na nie w Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50caf98bec9d918dd3ff1bcb076a080b123a357a
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: fd4c5f22de51081f5b848c367bf79a8c7033f3d3
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182649"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285398"
 ---
 # <a name="respond-to-a-compromised-connector"></a>Reagowanie na łącznik z naruszonymi zabezpieczeniami
 
@@ -35,7 +35,7 @@ ms.locfileid: "65182649"
 
 Łączniki są używane do włączania przepływu poczty między serwerami Microsoft 365 lub Office 365 i poczty e-mail, które znajdują się w środowisku lokalnym. Aby uzyskać więcej informacji, zobacz [Konfigurowanie przepływu poczty przy użyciu łączników w Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-Łącznik ruchu przychodzącego, który został naruszony, jest definiowany jako wtedy, gdy nieautoryzowana osoba stosuje zmiany do istniejącego łącznika przychodzącego lub tworzy nowy łącznik przychodzący w dzierżawie Microsoft 365, z zamiarem wysyłania spamu lub fałszywych wiadomości e-mail.  
+Łącznik ruchu przychodzącego, który został naruszony, jest definiowany jako wtedy, gdy nieautoryzowana osoba stosuje zmiany do istniejącego łącznika przychodzącego lub tworzy nowy łącznik przychodzący w dzierżawie Microsoft 365, z zamiarem wysyłania spamu lub fałszywych wiadomości e-mail. Należy pamiętać, że dotyczy to tylko łączników przychodzących typu OnPremises. 
 
 ## <a name="detect-a-compromised-connector"></a>Wykrywanie łącznika z naruszonymi zabezpieczeniami
 

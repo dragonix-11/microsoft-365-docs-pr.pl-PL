@@ -1,5 +1,5 @@
 ---
-title: Zasoby ułatwiające spełnienie wymagań prawnych dotyczących zarządzania informacjami i zarządzania rekordami
+title: Zasoby ułatwiające spełnienie wymagań prawnych dotyczących zarządzania cyklem życia danych i zarządzania rekordami
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,19 +14,21 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: Zasoby ułatwiające spełnienie wymagań prawnych dotyczących zarządzania informacjami i zarządzania rekordami.
-ms.openlocfilehash: d5f0c2d405d35147a7868635520521134d0ee8f0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Zasoby ułatwiające spełnienie wymagań prawnych dotyczących zarządzania cyklem życia danych i zarządzania rekordami.
+ms.openlocfilehash: 2d66aa6ac7eee3fab0718e2850f62730d0bd66f1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759822"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286433"
 ---
-# <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Wymagania prawne dotyczące zarządzania informacjami i zarządzania rekordami
+# <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>Wymagania prawne dotyczące zarządzania cyklem życia danych i zarządzania rekordami
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Zasoby na tej stronie ułatwiają spełnienie określonych wymagań prawnych dotyczących zarządzania informacjami i zarządzania rekordami w Microsoft 365. Każda sekcja tego dokumentu koncentruje się na co najmniej jednym powiązanym przepisie i zawiera wszelkie istniejące wskazówki lub ocenę innych firm dotyczącą sposobu konfigurowania Microsoft 365, aby ułatwić spełnienie opisanych wymagań.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Zasoby na tej stronie ułatwiają spełnienie określonych wymagań prawnych dotyczących zarządzania cyklem życia danych i zarządzania rekordami w Microsoft 365. Każda sekcja tego dokumentu koncentruje się na co najmniej jednym powiązanym przepisie i zawiera wszelkie istniejące wskazówki lub ocenę innych firm dotyczącą sposobu konfigurowania Microsoft 365, aby ułatwić spełnienie opisanych wymagań.
 
 Te zasoby są dostępne do pobrania ze strony [Zasoby ochrony danych, często zadawane pytania i oficjalne dokumenty](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) w portalu zaufania usługi.
 

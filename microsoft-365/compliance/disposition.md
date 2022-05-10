@@ -1,5 +1,5 @@
 ---
-title: Disposition of content
+title: Dyspozycja zawartości
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,51 +16,53 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Monitoruj usuwanie zawartości i zarządzaj nimi podczas korzystania z recenzji usuwania lub elementów oznaczonych jako rekordy są automatycznie usuwane zgodnie z skonfigurowanymi ustawieniami.
-ms.openlocfilehash: dbc713c665367bb973fb8faded24015ad6c2d5c3
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+description: Monitorowanie usuwania zawartości i zarządzanie nią w przypadku używania przeglądu dyspozycji lub elementów oznaczonych jako rekordy są automatycznie usuwane zgodnie z skonfigurowanymi ustawieniami.
+ms.openlocfilehash: c8a9db05367dd7007ad164bbfe95e4a190253f85
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594823"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285133"
 ---
-# <a name="disposition-of-content"></a>Disposition of content
+# <a name="disposition-of-content"></a>Dyspozycja zawartości
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Za pomocą strony **Usuwaj** rekordy z zarządzania rekordami w Centrum zgodności platformy Microsoft 365 i wyświetlania metadanych rekordów, które zostały automatycznie [](records-management.md#records) usunięte po zakończeniu okresu przechowywania.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-## <a name="prerequisites-for-viewing-content-dispositions"></a>Wymagania wstępne dotyczące wyświetlania zawartości rozsyłania
+Strona **Dyspozycja** z **zarządzania rekordami** w portalu zgodności usługi Microsoft Purview umożliwia zarządzanie przeglądami dyspozycji i wyświetlanie metadanych [rekordów](records-management.md#records) , które zostały automatycznie usunięte po zakończeniu okresu przechowywania.
 
-Aby zarządzać recenzjami usunięcia i potwierdzać, że rekordy zostały usunięte, musisz mieć wystarczające uprawnienia i włączyć inspekcję. Należy również pamiętać o wszelkich [ograniczeniach](retention-limits.md#maximum-number-of-items-for-disposition) dotyczących ich rozsyłania.
+## <a name="prerequisites-for-viewing-content-dispositions"></a>Wymagania wstępne dotyczące wyświetlania usposobień zawartości
 
-### <a name="permissions-for-disposition"></a>Uprawnienia dotyczące rozsyłania
+Aby zarządzać przeglądami dyspozycji i potwierdzić, że rekordy zostały usunięte, musisz mieć wystarczające uprawnienia, a inspekcja musi być włączona. Należy również pamiętać o wszelkich [ograniczeniach](retention-limits.md#maximum-number-of-items-for-disposition) dotyczących dyspozycji.
 
-Aby pomyślnie uzyskać dostęp do karty **Disposition** w Centrum zgodności platformy Microsoft 365, użytkownicy muszą mieć rolę **Zarządzanie nimi**. Od grudnia 2020 r. ta rola jest teraz uwzględniana w domyślnej **grupie ról Zarządzanie** rekordami.
+### <a name="permissions-for-disposition"></a>Uprawnienia do dyspozycji
+
+Aby pomyślnie uzyskać dostęp do karty **Dyspozycja** w portalu zgodności usługi Microsoft Purview, użytkownicy muszą mieć rolę **Zarządzanie dyspozycjami** . Od grudnia 2020 r. ta rola jest teraz uwzględniana w domyślnej grupie ról **Zarządzanie rekordami** .
 
 > [!NOTE]
-> Administrator globalny nie ma domyślnie roli **Zarządzanie rozsyłaniem** . 
+> Domyślnie administrator globalny nie otrzymuje roli **Zarządzanie dyspozycjami** . 
 
-Aby przyznać użytkownikom tylko te uprawnienia, których potrzebują do przeglądania rozsyłania, bez udzielania im uprawnień do wyświetlania i konfigurowania innych funkcji na potrzeby przechowywania i zarządzania rekordami, utwórz niestandardową grupę ról (na przykład  "Recenzenty rozsyłania") i nadaj tej grupie rolę Zarządzanie nimi.
+Aby przyznać użytkownikom tylko uprawnienia potrzebne do przeglądów dyspozycji bez przyznawania im uprawnień do wyświetlania i konfigurowania innych funkcji zarządzania przechowywaniem i rekordami, utwórz niestandardową grupę ról (na przykład o nazwie "Recenzenci dyspozycji") i przyznaj tej grupie rolę **Zarządzanie dyspozycjami** .
 
-Aby uzyskać instrukcje dotyczące dodawania użytkowników do ról domyślnych lub tworzenia własnych grup ról, zobacz Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md).
+Aby uzyskać instrukcje dotyczące dodawania użytkowników do ról domyślnych lub tworzenia własnych grup ról, zobacz [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 Dodatkowo:
 
-- Aby wyświetlić zawartość elementów podczas procesu ich rozsyłania, dodaj użytkowników do grupy ról Podgląd **zawartości Eksploratora** zawartości. Użytkownicy, którzy nie mają uprawnień z tej grupy ról, nadal mogą wybrać akcję recenzji rozsyłania, aby ukończyć recenzję rozsyłania, ale musi to robić bez możliwości wyświetlania zawartości elementu z poziomu mini-podglądu w centrum zgodności.
+- Aby wyświetlić zawartość elementów podczas procesu dyspozycji, dodaj użytkowników do grupy ról **Podgląd zawartości Eksploratora zawartości** . Jeśli użytkownicy nie mają uprawnień z tej grupy ról, nadal mogą wybrać akcję przeglądu dyspozycji, aby ukończyć przegląd dyspozycji, ale muszą to zrobić bez możliwości wyświetlania zawartości elementu w okienku mini-podglądu w portalu zgodności usługi Microsoft Purview.
 
-- Domyślnie każda osoba mająca dostęp **do strony Disposition** widzi tylko te elementy, do których została przypisana. Aby administrator zarządzania rekordami mógł wyświetlić wszystkie elementy przypisane do wszystkich użytkowników oraz wszystkie etykiety przechowywania skonfigurowane do przeglądania rozsyłania: Przejdź  >  do ustawień zarządzania rekordamiWyświetlanie w celu wybrania, a następnie włączenia grupy zabezpieczeń z obsługą poczty, która zawiera konta administratora.
+- Domyślnie każda osoba uzyskująca dostęp do strony **Dyspozycja** widzi tylko elementy, które są przypisane do przeglądu. Aby administrator zarządzania rekordami wyświetlał wszystkie elementy przypisane do wszystkich użytkowników oraz wszystkie etykiety przechowywania skonfigurowane do przeglądu dyspozycji: Przejdź do **pozycji Ustawienia** >  zarządzania **rekordamiWybierz**, a następnie włącz grupę zabezpieczeń z włączoną obsługą poczty zawierającą konta administratorów.
     
-    Microsoft 365 grupy i grupy zabezpieczeń, które nie mają włączonej obsługi poczty, nie obsługują tej funkcji i nie są wyświetlane na liście do wybrania. Jeśli chcesz utworzyć nową grupę zabezpieczeń z obsługą poczty, użyj linku do Centrum administracyjne platformy Microsoft 365, <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a> aby utworzyć nową grupę. 
+    Microsoft 365 grupy i grupy zabezpieczeń, które nie obsługują poczty, nie obsługują tej funkcji i nie są wyświetlane na liście do wybrania. Jeśli chcesz utworzyć nową grupę zabezpieczeń z obsługą poczty, użyj linku do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, aby utworzyć nową grupę. 
     
     > [!IMPORTANT]
-    > Po włączeniu grupy nie można jej zmienić w centrum zgodności. W następnej sekcji opisano sposób włączania innej grupy przy użyciu programu PowerShell.
+    > Po włączeniu grupy nie można jej zmienić w portalu zgodności usługi Microsoft Purview. Zobacz następną sekcję, aby dowiedzieć się, jak włączyć inną grupę przy użyciu programu PowerShell.
 
 - Opcja **Ustawienia zarządzania rekordami** jest widoczna tylko dla administratorów zarządzania rekordami. 
 
-#### <a name="enabling-another-security-group-for-disposition"></a>Włączanie innej grupy zabezpieczeń do ich rozsyłania
+#### <a name="enabling-another-security-group-for-disposition"></a>Włączanie innej grupy zabezpieczeń na potrzeby dyspozycji
 
-Po włączeniu grupy zabezpieczeń do obsługi rozsyłania  z ustawień zarządzania rekordami w centrum Centrum zgodności platformy Microsoft 365 nie można wyłączyć tego uprawnienia dla grupy ani zamienić wybranej grupy w Centrum zgodności. Jednak inną grupę zabezpieczeń z obsługą poczty można włączyć przy użyciu polecenia cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) .
+Po włączeniu grupy zabezpieczeń do dyspozycji z **ustawień zarządzania rekordami** w portalu zgodności usługi Microsoft Purview nie można wyłączyć tego uprawnienia dla grupy ani zastąpić wybranej grupy w portalu zgodności usługi Microsoft Purview. Można jednak włączyć inną grupę zabezpieczeń obsługującą pocztę za pomocą polecenia cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) .
 
 Przykład: 
 
@@ -70,98 +72,98 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 ### <a name="enable-auditing"></a>Włączanie inspekcji
 
-Upewnij się, że inspekcja jest włączona co najmniej dzień przed pierwszą akcją rozsyłania. Aby uzyskać więcej informacji, zobacz [Przeszukiwanie dziennika inspekcji w Centrum zgodności](search-the-audit-log-in-security-and-compliance.md). 
+Upewnij się, że inspekcja jest włączona co najmniej jeden dzień przed pierwszą akcją dyspozycji. Aby uzyskać więcej informacji, zobacz [Przeszukiwanie dziennika inspekcji w portalu zgodności usługi Microsoft Purview](search-the-audit-log-in-security-and-compliance.md). 
 
-## <a name="disposition-reviews"></a>Recenzje rozsyłania
+## <a name="disposition-reviews"></a>Przeglądy dyspozycji
 
-Gdy kończy się okres przechowywania zawartości, istnieje kilka powodów, dla których warto przejrzeć tę zawartość i potwierdzić, czy można ją trwale usunąć ("usunięto"). Na przykład zamiast usuwać zawartość, może być konieczne:
+Gdy zawartość osiągnie koniec okresu przechowywania, istnieje kilka powodów, dla których warto przejrzeć tę zawartość i potwierdzić, czy można ją trwale usunąć ("usunięte"). Na przykład zamiast usuwać zawartość, może być konieczne:
   
-- Wstrzymanie usuwania odpowiedniej zawartości w przypadku sporu sądowego lub inspekcji.
+- Wstrzymywanie usuwania odpowiedniej zawartości na potrzeby sporów sądowych lub inspekcji.
 
-- Przypisz do zawartości inny okres przechowywania, na przykład dlatego, że oryginalne ustawienia przechowywania były rozwiązaniem tymczasowym lub częściowym.
+- Przypisz do zawartości inny okres przechowywania, być może dlatego, że oryginalne ustawienia przechowywania były rozwiązaniem tymczasowym lub tymczasowym.
 
-- Przenieś zawartość z istniejącej lokalizacji do lokalizacji archiwum, jeśli na przykład ta zawartość ma wartość badawczą lub historyczny.
+- Przenieś zawartość z istniejącej lokalizacji do lokalizacji archiwum, na przykład jeśli ta zawartość ma wartość badawczą lub historyczną.
 
-Gdy na koniec okresu przechowywania zostanie wyzwolona recenzja rozsyłania, wybieranie recenzentów powoduje otrzymywanie wiadomości e-mail z powiadomieniem, że mają zawartość do przejrzenia. Tymi recenzentami mogą być poszczegłoni użytkownicy lub grupy zabezpieczeń z włączoną obsługą poczty.
+Gdy przegląd dyspozycji zostanie wyzwolony po zakończeniu okresu przechowywania, wybrani recenzenci otrzymają powiadomienie e-mail z informacją o zawartości do przejrzenia. Mogą to być poszczególni użytkownicy lub grupy zabezpieczeń z obsługą poczty e-mail.
 
-Możesz dostosować wiadomość e-mail z powiadomieniem obierania przez recenzentów, łącznie z instrukcjami w różnych językach. Aby zapewnić obsługę wielu języków, musisz samodzielnie określić tłumaczenia, a ten niestandardowy tekst będzie wyświetlany wszystkim recenzentom niezależnie od ich ustawień regionalnych.
+Możesz dostosować wiadomość e-mail z powiadomieniem otrzymywaną przez recenzentów, w tym instrukcje w różnych językach. W przypadku obsługi wielu języków należy samodzielnie określić tłumaczenia, a ten tekst niestandardowy jest wyświetlany wszystkim recenzentom niezależnie od ich ustawień regionalnych.
 
-Na koniec okresu przechowywania elementu użytkownicy otrzymują początkowe powiadomienie e-mail z powiadomieniem na każdej etykiecie, z przypomnieniem na każdej etykiecie raz w tygodniu podczas wszystkich przypisanych przez nich recenzji dotyczących rozsyłania. Mogą kliknąć link  >  w wiadomościach e-mail z przypomnieniem i przejść bezpośrednio do strony Zarządzanie rekordami w Centrum zgodności platformy Microsoft 365, aby przejrzeć zawartość i podjąć działanie. Recenzentzy mogą również przejść do tej strony **Disposition** (Ustawienia) w Centrum zgodności. Następnie:
+Użytkownicy otrzymują początkowe powiadomienie e-mail na etykietę na końcu okresu przechowywania elementu z przypomnieniem na etykietę raz w tygodniu o wszystkich przypisanych przeglądach dyspozycji. Mogą kliknąć link w wiadomościach e-mail z powiadomieniami i przypomnieniami, aby przejść bezpośrednio do strony **Zarządzanie** rekordamiDyspozycja  >  w portalu zgodności usługi Microsoft Purview, aby przejrzeć zawartość i podjąć akcję. Recenzenci mogą również przejść do tej strony **Dyspozycja** w portalu zgodności usługi Microsoft Purview. Następnie:
 
-- Recenzentzy widzą tylko recenzje rozsyłania, które są do nich przypisane, natomiast administratorzy dodani do wybranej grupy zabezpieczeń dla menedżera rekordów widzą wszystkie recenzje rozsyłania.
+- Recenzenci widzą tylko przeglądy dyspozycji, które są do nich przypisane, podczas gdy administratorzy, którzy są dodawani do wybranej grupy zabezpieczeń dla menedżera rekordów, widzą wszystkie przeglądy dyspozycji.
 
-- Recenzentzy mogą dodawać nowych użytkowników do tego samego recenzji rozsyłania. Ta akcja nie spowoduje automatycznego udzielenia tym dodanym użytkownikom [wymaganych uprawnień](#permissions-for-disposition).
+- Recenzenci mogą dodawać nowych użytkowników do tego samego przeglądu dyspozycji. Należy pamiętać, że ta akcja nie udziela automatycznie dodanym użytkownikom [wymaganych uprawnień](#permissions-for-disposition).
 
-- W przypadku procesu przeglądania zawartości dla każdego elementu w mini okienku przeglądu jest wyświetlony podgląd zawartości, o ile mają uprawnienia do jej wyświetlania. Jeśli użytkownik nie ma uprawnień, może wybrać link do zawartości i zażądać uprawnień. To mini-okienko recenzji zawiera również karty z dodatkowymi informacjami na temat zawartości:
-   - **Szczegóły** dotyczące wyświetlania właściwości indeksowanych, miejsca i miejsca jego utworzenia, daty i czasie oraz osoby, która ostatnio ją zmodyfikowała i kiedy.
-   - **Historia** , która zawiera historię wszystkich do tej pory akcji re przeglądu operacji ich operacji rozsyłania z komentarzami recenzentów, jeśli są dostępne.
+- W przypadku procesu przeglądu dyspozycji okienko minirecenzowania dla każdego elementu wyświetla podgląd zawartości, jeśli ma uprawnienia do jej wyświetlenia. Jeśli nie mają uprawnień, mogą wybrać link do zawartości i zażądać uprawnień. W tym okienku minirecenzowania znajdują się również karty umożliwiające dodatkowe informacje o zawartości:
+   - **Szczegóły** dotyczące wyświetlania indeksowanych właściwości, miejsca jego lokalizacji, tego, kto go utworzył, kiedy, kto ostatnio je zmodyfikował i kiedy.
+   - **Historia** przedstawiająca historię wszelkich dotychczasowych akcji przeglądu dyspozycji z komentarzami recenzentów, jeśli są dostępne.
 
-Recenzja rozsyłania może obejmować zawartość Exchange skrzynek pocztowych, SharePoint witryn i OneDrive kontach. Zawartość oczekująca na sprawdzenie usuwania w tych lokalizacjach jest trwale usuwana dopiero po ostatecznym etapie usuwania recenzenta zdecyduje o trwałym usunięciu zawartości.
+Przegląd dyspozycji może obejmować zawartość w Exchange skrzynkach pocztowych, witrynach SharePoint i kontach OneDrive. Zawartość oczekująca na przegląd dyspozycji w tych lokalizacjach jest trwale usuwana dopiero po tym, jak recenzent na ostatnim etapie dyspozycji zdecyduje się trwale usunąć zawartość.
 
 > [!NOTE]
-> Skrzynka pocztowa musi mieć co najmniej 10 MB danych do obsługi recenzji rozsyłania.
+> Skrzynka pocztowa musi mieć co najmniej 10 MB danych, aby obsługiwać przeglądy dyspozycji.
 
-Administratorzy mogą zobaczyć przegląd wszystkich oczekujących rozsyłań na **karcie** Omówienie. Recenzentzy widzą tylko elementy oczekujące na ich rozsyłanie. Przykład:
+Administratorzy mogą wyświetlić przegląd wszystkich oczekujących dyspozycji na karcie **Przegląd** . Recenzenci widzą tylko swoje elementy oczekujące na dyspozycję. Przykład:
 
-![Oczekujące zmiany rozsyłania w przeglądzie zarządzania rekordami.](../media/dispositions-overview.png)
+![Omówienie oczekujących dyspozycji w obszarze Zarządzanie rekordami.](../media/dispositions-overview.png)
 
-Po wybraniu opcji **Wyświetl wszystkie oczekujące** rozsyłania jest przekierowywana strona **Disposition (Disposition).** Przykład:
+Po wybraniu pozycji **Wyświetl wszystkie oczekujące dyspozycje** zostanie wyświetlona strona **Dyspozycja** . Przykład:
 
-![Strona Dispositions w Centrum zgodności platformy Microsoft 365.](../media/disposition-tab.png)
+![Strona Dyspozycje w portalu zgodności usługi Microsoft Purview.](../media/disposition-tab.png)
 
 
-### <a name="workflow-for-a-disposition-review"></a>Przepływ pracy do przeglądania rozsyłania
+### <a name="workflow-for-a-disposition-review"></a>Przepływ pracy na potrzeby przeglądu dyspozycji
 
-Na poniższym diagramie przedstawiono podstawowy przepływ pracy do przeglądania rozsyłania (jednoetapowego) w przypadku opublikowania etykiety przechowywania, a następnie zastosowania jej ręcznie przez użytkownika. Ewentualnie etykieta przechowywania skonfigurowana do przeglądania zawartości może być automatycznie stosowana do zawartości.
+Na poniższym diagramie przedstawiono podstawowy przepływ pracy dla przeglądu dyspozycji (w jednym etapie), gdy etykieta przechowywania jest publikowana, a następnie ręcznie stosowana przez użytkownika. Alternatywnie etykietę przechowywania skonfigurowaną na potrzeby przeglądu dyspozycji można automatycznie zastosować do zawartości.
   
-![Wykres przedstawiający sposób działania ich rozsyłania.](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Wykres przedstawiający przepływ działania dyspozycji.](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
 
-### <a name="how-to-configure-a-retention-label-for-disposition-review"></a>Jak skonfigurować etykietę przechowywania do przeglądania rozsyłania
+### <a name="how-to-configure-a-retention-label-for-disposition-review"></a>Jak skonfigurować etykietę przechowywania na potrzeby przeglądu dyspozycji
 
-Wyzwalanie recenzji rozsyłania na koniec okresu przechowywania jest opcją konfiguracji, która jest dostępna tylko z etykietą przechowywania. Recenzja rozsyłania nie jest dostępna w przypadku zasad przechowywania. Aby uzyskać więcej informacji na temat tych dwóch rozwiązań przechowywania, zobacz Informacje [o zasadach przechowywania i etykietach przechowywania](retention.md).
+Wyzwalanie przeglądu dyspozycji na końcu okresu przechowywania jest opcją konfiguracji dostępną tylko z etykietą przechowywania. Przegląd dyspozycji nie jest dostępny dla zasad przechowywania. Aby uzyskać więcej informacji na temat tych dwóch rozwiązań przechowywania, zobacz [Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania](retention.md).
 
-Na stronie **Definiowanie ustawień przechowywania** dla etykiety przechowywania:
+Na stronie **Definiowanie ustawień przechowywania** etykiety przechowywania:
 
-![Ustawienia przechowywania dla etykiety.](../media/disposition-review-option.png)
+![Ustawienia przechowywania etykiety.](../media/disposition-review-option.png)
  
-Po wybraniu tej opcji  Wyzwolij recenzję rozsyłania na następnej stronie konfiguracji możesz określić liczbę kolejnych etapów procesu ich określania oraz recenzentów rozsyłania dla poszczególnych etapów:
+Po wybraniu tej opcji **Wyzwalanie przeglądu dyspozycji** na następnej stronie konfiguracji należy określić liczbę kolejnych etapów dyspozycji i recenzentów dyspozycji dla każdego etapu:
 
-![Określanie recenzentów rozsyłania.](../media/disposition-reviewers.png) 
+![Określanie recenzentów dyspozycji.](../media/disposition-reviewers.png) 
 
 Wybierz **pozycję Dodaj etap** i nadaj etapowi nazwę na potrzeby identyfikacji. Następnie określ recenzentów dla tego etapu.
 
-Dla recenzentów określ użytkownika lub grupę zabezpieczeń z włączoną obsługą poczty. Microsoft 365 tej opcji nie [są obsługiwane Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601) (dawniej grupy grup grupowych).
+W przypadku recenzentów określ użytkownika lub grupę zabezpieczeń obsługującą pocztę. grupy Microsoft 365 ([wcześniej Office 365 grupy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) nie są obsługiwane dla tej opcji.
 
-Jeśli na koniec okresu przechowywania konieczne jest przejrzenie elementu przez więcej niż jedną osobę, wybierz ponownie pozycję Dodaj  etap i powtórz proces konfiguracji dla liczby potrzebnych etapów (maksymalnie pięć etapów). 
+Jeśli potrzebujesz więcej niż jednej osoby do przejrzenia elementu na końcu okresu przechowywania, wybierz ponownie **pozycję Dodaj etap** i powtórz proces konfiguracji dla wymaganej liczby etapów z maksymalnie pięcioma etapami. 
 
-W ramach każdego etapu przechowywania każdy użytkownik określony dla tego etapu jest uprawniony do podjęcia następnej czynności dotyczącej danego elementu po zakończeniu okresu przechowywania. Ci użytkownicy mogą także dodawać innych użytkowników do etapu recenzji ich rozsyłania.
+W ramach każdego indywidualnego etapu dyspozycji każdy z użytkowników określonych dla tego etapu jest upoważniony do wykonania następnej akcji dla elementu na koniec okresu przechowywania. Ci użytkownicy mogą również dodawać innych użytkowników do etapu przeglądu dyspozycji.
 
 > [!NOTE]
-> Jeśli etykiety przechowywania skonfigurowano przed dostępem do wieloetapowego przeglądu rozsyłania, możesz uaktualnić etykiety, aby obsługiły tę funkcję: W kreatorze etykiet wybierz pozycję Dodaj scenę **, edytuj** istniejących recenzentów lub dodaj nowych recenzentów.
+> Jeśli skonfigurowano etykiety przechowywania przed udostępnieniem wieloetapowego przeglądu dyspozycji, możesz uaktualnić etykiety do obsługi tej funkcji: w kreatorze etykiet wybierz **pozycję Dodaj etap**, edytuj istniejących recenzentów lub dodaj nowych recenzentów.
 
-W fazie konfiguracji, dla każdego etapu, który jest określony, możesz zmienić jego nazwę, zmienić jego kolejność lub usunąć go, wybierając opcję Akcje etapu (**...**): 
+W fazie konfiguracji dla każdego określonego etapu można zmienić jego nazwę, zmienić jego kolejność lub usunąć, wybierając opcję Akcje etapu (**...**): 
 
-![Akcje etapowe do recenzy rozsyłania.](../media/stage-actions-disposition-review.png)
+![Akcje etapów przeglądów dyspozycji.](../media/stage-actions-disposition-review.png)
 
-Po utworzeniu etykiety przechowywania nie można jednak zmienić kolejności ani usunąć etapu.
+Nie można jednak zmienić kolejności ani usunąć etapu po utworzeniu etykiety przechowywania.
 
-Po określonym recenzentach należy pamiętać o przyznaniu im uprawnień roli **Zarządzanie rozsyłaniem** . Aby uzyskać więcej informacji, zobacz [sekcję Uprawnienia](#permissions-for-disposition) do rozsyłania na tej stronie.
+Po określeniu recenzentów pamiętaj, aby przyznać im uprawnienie roli **Zarządzanie dyspozycjami** . Aby uzyskać więcej informacji, zobacz sekcję [Uprawnienia do dyspozycji](#permissions-for-disposition) na tej stronie.
 
-### <a name="how-to-customize-email-messages-for-disposition-review"></a>Jak dostosować wiadomości e-mail do przeglądania ich rozsyłania
+### <a name="how-to-customize-email-messages-for-disposition-review"></a>Jak dostosować wiadomości e-mail do przeglądu dyspozycji
 
-Przykład domyślnego powiadomienia e-mail wysyłanego do recenzenta:
+Przykładowe domyślne powiadomienie e-mail wysyłane do recenzenta:
 
-![Przykład powiadomienia e-mail z tekstem domyślnym, gdy element jest gotowy do recenzji rozsyłania.](../media/disposition-review-email.png)
+![Przykład powiadomienia e-mail z tekstem domyślnym, gdy element jest gotowy do przeglądu dyspozycji.](../media/disposition-review-email.png)
 
-Możesz dostosować wiadomości e-mail wysyłane do recenzentów rozsyłania początkowego powiadomienia, a następnie przypomnień.
+Możesz dostosować wiadomości e-mail wysyłane do recenzentów dyspozycji dla początkowego powiadomienia, a następnie przypomnień.
 
-Na dowolnej stronie Zarządzanie rekordami w Centrum zgodności wybierz pozycję **Ustawienia zarządzania rekordami**:  
+Na dowolnej ze stron zarządzania rekordami w portalu zgodności usługi Microsoft Purview wybierz pozycję **Ustawienia zarządzania rekordami**:  
 
-![Ustawienia zarządzania rekordami.](../media/record-management-settings.png)
+![Rejestruje ustawienia zarządzania.](../media/record-management-settings.png)
 
-Na karcie **Rozsuń** w  sekcji Powiadomienia e-mail dotyczące recenzji dotyczących rozsyłania wybierz i określ, czy chcesz używać tylko domyślnej wiadomości e-mail, czy też chcesz dodać własny tekst do wiadomości domyślnej. Niestandardowy tekst zostanie dodany do wiadomości e-mail po informacjach dotyczących etykiety przechowywania i przed kolejnymi instrukcjami dotyczącymi tych kroków.
+Na karcie **Dyspozycja** w sekcji **Powiadomienia e-mail dotyczące przeglądów dyspozycji** wybierz i określ, czy chcesz używać tylko domyślnej wiadomości e-mail, czy dodać własny tekst do wiadomości domyślnej. Tekst niestandardowy jest dodawany do instrukcji wiadomości e-mail po informacjach o etykiecie przechowywania i przed następnymi instrukcjami.
 
-Można dodawać tekst dla wszystkich języków, ale formatowanie i obrazy są nieobsługiwane. Adresy URL i adresy e-mail mogą być wprowadzane jako tekst i, w zależności od klienta poczty e-mail, wyświetlane jako hiperlinki lub niesformatowany tekst w dostosowanej wiadomości e-mail.
+Tekst dla wszystkich języków można dodać, ale formatowanie i obrazy nie są obsługiwane. Adresy URL i adresy e-mail można wprowadzić jako tekst i w zależności od klienta poczty e-mail wyświetlać jako hiperlinki lub niesformatowany tekst w dostosowanej wiadomości e-mail.
 
 Przykładowy tekst do dodania:
 
@@ -169,61 +171,61 @@ Przykładowy tekst do dodania:
 If you need additional information, visit the helpdesk website (https://support.contoso.com) or send them an email (helpdesk@contoso.com).
 ```
 
-Wybierz **pozycję Zapisz** , aby zapisać zmiany.
+Wybierz pozycję **Zapisz** , aby zapisać wszelkie zmiany.
 
-### <a name="viewing-and-disposing-of-content"></a>Wyświetlanie i rozsyłanie zawartości
+### <a name="viewing-and-disposing-of-content"></a>Wyświetlanie i usuwanie zawartości
 
-Gdy recenzent zostanie powiadomiony pocztą e-mail, że zawartość jest gotowa do przejrzenia, może kliknąć w wiadomości e-mail link, który  przenosi go bezpośrednio  do strony Disposition (Zarządzanie rekordami) w Centrum zgodności platformy Microsoft 365. W tym miejscu recenzentzy mogą sprawdzić, ile elementów dla każdej etykiety przechowywania czeka na ich zasiecie, przy użyciu pozycji **Typ** z wyświetlonym **komunikatem Oczekiwanie na wysyłkę**. Następnie wybierzą etykietę przechowywania i pozycję **Otwórz w nowym** oknie, aby wyświetlić całą zawartość, która ma tę etykietę:
+Gdy recenzent zostanie powiadomiony pocztą e-mail, że zawartość jest gotowa do przejrzenia, może kliknąć link w wiadomości e-mail, który przeniesie go bezpośrednio do strony **Dyspozycja** z **obszaru Zarządzanie rekordami** w portalu zgodności usługi Microsoft Purview. W tym miejscu recenzenci mogą zobaczyć, ile elementów dla każdej etykiety przechowywania oczekuje na dyspozycję z **typem** wyświetlającym **oczekujące usposobienie**. Następnie wybierają etykietę przechowywania i **otwierają w nowym oknie** , aby wyświetlić całą zawartość z tą etykietą:
 
-![Otwórz w nowym oknie do przejrzenia rozsyłania.](../media/open-in-new-window.png)
+![Otwórz w nowym oknie na potrzeby przeglądu dyspozycji.](../media/open-in-new-window.png)
 
-Na stronie **Oczekujące dispositions** widzą wszystkie oczekujące dispositions dla tej etykiety. Jeśli jest zaznaczony jeden lub więcej elementów, mogą oni sprawdzać zawartość przed podjęciem większej liczby działań w związku z tym, korzystając z mini okienka podglądu oraz karty **Źródło, Szczegóły** i Historia:
+Na stronie **Oczekujące dyspozycje** widzą wszystkie oczekujące dyspozycje dla tej etykiety. Po wybraniu co najmniej jednego elementu mogą oni użyć okienka mini-podglądu oraz karty **Źródło**, **Szczegóły** i **Historia** , aby sprawdzić zawartość przed podjęciem na niej akcji:
 
-![Opcje ich rozsyłania.](../media/retention-disposition-options.png)
+![Opcje dyspozycji.](../media/retention-disposition-options.png)
 
-Jeśli używasz poziomego paska przewijania lub zamkniesz okienko przeglądu min, zobaczysz więcej kolumn z datą wygaśnięcia i nazwą etapu przeglądu rozsyłania.
+Jeśli używasz poziomego paska przewijania lub zamkniesz okienko min-review, zobaczysz więcej kolumn zawierających datę wygaśnięcia i nazwę etapu przeglądu dyspozycji.
 
-Jak widać w przedstawionym przykładzie, obsługiwane akcje to: 
+Jak widać w pokazanym przykładzie, obsługiwane akcje to: 
   
-- **Zatwierdzanie usuwania**:
-    - Jeśli ta akcja jest wybrana na pośredni etap przeglądu rozsyłania (skonfigurowano wiele etapów): Element przechodzi do następnego etapu procesu ich rozsyłania.
-    - Jeśli ta czynność jest zaznaczona w ostatnim etapie przeglądania usuwania lub istnieje tylko jeden etap usuwania: Element jest oznaczony jako uprawniony do trwałego usunięcia, który wówczas czynność czasomierza ma zostać podjęte w ciągu 7 dni. Dokładny chronometraż elementu, który następnie zostanie trwale usunięty, zależy od obciążenia pracą. Aby uzyskać więcej informacji, zobacz [Jak](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) działa przechowywanie SharePoint i OneDrive [Jak](retention-policies-exchange.md#how-retention-works-for-exchange) działa przechowywanie w Exchange.
+- **Zatwierdź usuwanie**:
+    - Po wybraniu tej akcji do tymczasowego etapu przeglądu dyspozycji (skonfigurowano wiele etapów): element przechodzi do następnego etapu dyspozycji.
+    - Gdy ta akcja jest wybrana do końcowego etapu przeglądu dyspozycji lub istnieje tylko jeden etap rozporządzania: element jest oznaczony jako kwalifikujący się do trwałego usunięcia, które zadanie czasomierza następnie działa w ciągu 7 dni. Dokładny czas trwałego usunięcia elementu zależy od obciążenia. Aby uzyskać więcej informacji, zobacz [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) and [How retention works for Exchange (Jak działa przechowywanie dla SharePoint i OneDrive) oraz How retention works for Exchange (Jak działa przechowywanie dla Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)).
 
 - **Etykieta ponownie**:
-    - Jeśli ta akcja jest zaznaczona, element kończy proces przeglądania ich rozsyłania oryginalnej etykiety. Następnie element podlega ustawień przechowywania na nowo wybranej etykiecie przechowywania.
+    - Po wybraniu tej akcji element kończy proces przeglądu dyspozycji dla oryginalnej etykiety. Element podlega następnie ustawieniu przechowywania nowo wybranej etykiety przechowywania.
 
-- **Rozszerz**:
-    - Po wybraniu tej akcji przegląd rozsyłania jest w praktyce zawieszany do końca rozszerzonego okresu, a następnie przegląd rozsyłania jest wyzwalany ponownie od pierwszego etapu.
+- **Rozszerzanie**:
+    - Po wybraniu tej akcji przegląd dyspozycji jest skutecznie zawieszony do końca dłuższego okresu, a następnie przegląd dyspozycji jest wyzwalany ponownie od pierwszego etapu.
 
 - **Dodaj recenzentów**:
-    - Po wybraniu tej akcji użytkownik jest monitowany o określenie i dodanie innych użytkowników do recenzji.
+    - Po wybraniu tej akcji użytkownik jest monitowany o określenie i dodanie innych użytkowników do przeglądu.
     > [!NOTE]
-    > Ta akcja nie spowoduje automatycznego udzielenia [wymaganych uprawnień](#permissions-for-disposition) dodanym użytkownikom. Osoby, które nie mają tych uprawnień, nie mogą uczestniczyć w recenzji rozsyłania.
+    > Ta akcja nie udziela automatycznie [wymaganych uprawnień do dodanych](#permissions-for-disposition) użytkowników. Jeśli nie mają tych uprawnień, nie mogą uczestniczyć w przeglądzie dyspozycji.
 
-Każde wykonane działanie ma odpowiednie zdarzenie inspekcji [w grupie Działania](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) inspekcji działań inspekcji działań inspekcji dotyczących czynności dotyczących ich działania.
+Każda podjęta akcja ma odpowiednie zdarzenie inspekcji w grupie Działań inspekcji [działań przeglądu dyspozycji](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) .
 
-Podczas przeglądania usuwania zawartość nigdy nie jest przesuowana z pierwotnej lokalizacji i nie jest oznaczona do trwałego usunięcia, dopóki ta akcja nie zostanie wybrana przez recenzenta na ostatni lub tylko etap usuwania.
+Podczas przeglądu dyspozycji zawartość nigdy nie jest przenoszona z pierwotnej lokalizacji i nie jest oznaczona do trwałego usunięcia, dopóki ta akcja nie zostanie wybrana przez recenzenta na etap ostatecznej lub jedynej dyspozycji.
 
-## <a name="disposition-of-records"></a>Disposition of records
+## <a name="disposition-of-records"></a>Dyspozycja rekordów
 
-Na stronie **głównej Zarządzanie rekordami** > **karcie Disposition** możesz znaleźć:
+Na stronie głównej **zarządzania rekordami** > karcie **Dyspozycja** można zidentyfikować:
 
-- Elementy usunięte w wyniku kontroli usunięcia.
-- Elementy oznaczone jako rekord lub rekord przepisów prawa, które zostały automatycznie usunięte po zakończeniu okresu przechowywania.
+- Elementy usunięte w wyniku przeglądu dyspozycji.
+- Elementy oznaczone jako rekord lub rekord regulacyjny, które zostały automatycznie usunięte po zakończeniu okresu przechowywania.
 
-W tych elementach **są wyświetlane rekordy usunięte** w **kolumnie** Typ. Przykład:
+Te elementy wyświetlają **rekordy usunięte** w kolumnie **Typ** . Przykład:
 
-![Elementy, które zostały usunięte bez recenzji usuwania.](../media/records-disposed2.png)
+![Elementy, które zostały usunięte bez przeglądu dyspozycji.](../media/records-disposed2.png)
 
 > [!NOTE]
-> Ta funkcja korzysta z informacji z [](search-the-audit-log-in-security-and-compliance.md) ujednoliconego dziennika inspekcji i dlatego wymaga włączenia inspekcji i [](turn-audit-log-search-on-or-off.md) możliwości wyszukiwania w celu przechwycenia odpowiednich zdarzeń.
+> Ta funkcja używa informacji z [ujednoliconego dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md) i dlatego wymaga [włączenia inspekcji i możliwości wyszukiwania](turn-audit-log-search-on-or-off.md) , aby odpowiednie zdarzenia zostały przechwycone.
 
-W przypadku inspekcji usuniętych elementów oznaczonych jako rekordy lub rekordy prawne wyszukaj pozycję Usunięty plik  oznaczony jako rekord w kategorii Działania na pliku **i na stronie**. To zdarzenie inspekcji dotyczy dokumentów i wiadomości e-mail.
+Na potrzeby inspekcji usuniętych elementów, które zostały oznaczone jako rekordy lub rekordy regulacyjne, wyszukaj **pozycję Usunięty plik oznaczony jako rekord** w kategorii **Działania dotyczące plików i stron** . To zdarzenie inspekcji ma zastosowanie do dokumentów i wiadomości e-mail.
 
 ## <a name="filter-and-export-the-views"></a>Filtrowanie i eksportowanie widoków
 
-Po wybraniu etykiety przechowywania na stronie Usuwania karty Oczekiwanie na  usuwania (jeśli dotyczy) i Usunięte elementy umożliwiają  filtrowanie widoków, aby ułatwić znajdowanie elementów.
+Po wybraniu etykiety przechowywania na stronie **Dyspozycja** karta **Oczekujące rozporządzanie** (jeśli ma zastosowanie) i karta **Unieszkodliwiane elementy** umożliwiają filtrowanie widoków, aby ułatwić znajdowanie elementów.
 
-W przypadku oczekujących dispositions przedział czasu jest oparty na dacie wygaśnięcia. W przypadku elementów usuniętych przedział czasu jest oparty na dacie usunięcia.
+W przypadku oczekujących dyspozycji zakres czasu jest oparty na dacie wygaśnięcia. W przypadku usuniętych elementów zakres czasu jest oparty na dacie usunięcia.
   
-Informacje o elementach w obu widokach można wyeksportować jako plik .csv, który można następnie sortować i zarządzać przy użyciu programu Excel.
+Możesz wyeksportować informacje o elementach w obu widokach jako plik .csv, który można następnie sortować i zarządzać przy użyciu Excel.

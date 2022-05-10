@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Potrzebujesz rozwiązania do zarządzania rekordami dla Microsoft 365, które zarządza zawartością o wysokiej wartości dla zobowiązań prawnych, biznesowych lub regulacyjnych, ale nie wiesz, od czego zacząć? Zapoznaj się z praktycznymi wskazówkami, aby rozpocząć pracę.
-ms.openlocfilehash: bbba24a2627c6040873da8d01185e4e6bdfdbfc8
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 86d6f21963b33fde59cb498868b8ecec315e1ad8
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268754"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286785"
 ---
 # <a name="get-started-with-records-management"></a>Wprowadzenie do zarządzania rekordami
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Chcesz rozpocząć zarządzanie zawartością o wysokiej wartości organizacji na potrzeby zobowiązań prawnych, biznesowych lub regulacyjnych przy użyciu rozwiązania do zarządzania rekordami w Microsoft 365? Aby rozpocząć pracę, skorzystaj z poniższych wskazówek:
 

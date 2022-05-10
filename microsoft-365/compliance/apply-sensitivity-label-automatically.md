@@ -1,5 +1,5 @@
 ---
-title: Automatyczne stosowanie etykiet wrażliwości do zawartości w Microsoft 365
+title: Automatyczne stosowanie etykiety poufności w Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,410 +16,412 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Po utworzeniu etykiety wrażliwości możesz automatycznie przypisać etykietę do plików i wiadomości e-mail lub poprosić użytkowników o wybranie etykiety, która jest zalecana.
-ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Podczas tworzenia etykiety poufności możesz automatycznie przypisywać etykietę do plików i wiadomości e-mail lub monitować użytkowników o wybranie zalecanej etykiety.
+ms.openlocfilehash: 69a36789e4143e3e8852976eb5e41c12ab6872f8
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634630"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287227"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiety poufności do zawartości
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-> [!NOTE]
-> Aby uzyskać informacje na temat automatycznego stosowania etykiety wrażliwości w usłudze Azure Purview, zobacz [Oznaczanie etykiet w usłudze Azure Purview](/azure/purview/create-sensitivity-label).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po utworzeniu etykiety wrażliwości możesz ją automatycznie przypisać do plików i wiadomości e-mail, jeśli jest ona taka, jaka jest do warunków określonych przez Ciebie.
+> [!TIP]
+> Aby uzyskać informacje na temat automatycznego stosowania etykiety poufności na mapie danych, zobacz [Etykietowanie w usłudze Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
-Ta możliwość automatycznego stosowania etykiet wrażliwości do zawartości jest ważna, ponieważ:
+Podczas tworzenia etykiety poufności można automatycznie przypisywać tę etykietę do plików i wiadomości e-mail, gdy jest ona zgodna z określonymi warunkami.
 
-- Nie musisz szkolenie użytkowników, kiedy należy używać każdej z klasyfikacji.
+Ta możliwość automatycznego stosowania etykiet poufności do zawartości jest ważna, ponieważ:
 
-- Nie musisz polegać na użytkownikach, aby prawidłowo klasyfikować całą zawartość.
+- Nie musisz szkolić użytkowników, kiedy używać każdej klasyfikacji.
 
-- Użytkownicy nie muszą już znać twoich zasad — zamiast tego mogą skoncentrować się na swojej pracy.
+- Nie musisz polegać na użytkownikach, aby poprawnie klasyfikować całą zawartość.
 
-Istnieją dwie różne metody automatycznego stosowania etykiet wrażliwości do zawartości w Microsoft 365:
+- Użytkownicy nie muszą już znać twoich zasad — zamiast tego mogą skupić się na swojej pracy.
 
-- **Etykiety po** stronie klienta, gdy użytkownicy edytują dokumenty lub tworzą wiadomości e-mail (także odpowiadaj na nie lub przesyłaj je dalej): użyj etykiety skonfigurowanej do automatycznego oznaczania plików i wiadomości e-mail (obejmuje Excel, PowerPoint i Outlook).
+Istnieją dwie różne metody automatycznego stosowania etykiety poufności do zawartości w Microsoft 365:
 
-    Ta metoda obsługuje polecanie etykiet użytkownikom, a także automatyczne stosowanie etykiety. Jednak w obu przypadkach użytkownik decyduje, czy zaakceptować, czy odrzucić tę etykietę w celu zapewnienia prawidłowego oznaczania zawartości. To etykiety po stronie klienta mają minimalne opóźnienia w przypadku dokumentów, ponieważ tę etykietę można zastosować nawet przed zapisaniem dokumentu. Jednak nie wszystkie aplikacje klienckie obsługują automatyczne oznaczanie etykiet. Ta funkcja jest obsługiwana przez wbudowane etykiety w niektórych wersjach programu [Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps), a także w kliencie usługi Azure Information Protection etykiet ujednoliconej.
+- **Etykietowanie po stronie klienta, gdy użytkownicy edytują dokumenty lub tworzą (również odpowiadają lub przesyłają dalej) wiadomości e-mail**: użyj etykiety skonfigurowanej do automatycznego etykietowania plików i wiadomości e-mail (w tym programów Word, Excel, PowerPoint i Outlook).
 
-    Aby uzyskać instrukcje dotyczące konfiguracji, [zobacz Jak skonfigurować automatyczne oznaczanie etykiet dla Office na](#how-to-configure-auto-labeling-for-office-apps) tej stronie.
+    Ta metoda obsługuje zalecanie etykiety użytkownikom, a także automatyczne stosowanie etykiety. Jednak w obu przypadkach użytkownik decyduje, czy zaakceptować lub odrzucić etykietę, aby zapewnić poprawne etykietowanie zawartości. To etykietowanie po stronie klienta ma minimalne opóźnienie dla dokumentów, ponieważ etykietę można zastosować jeszcze przed zapisaniem dokumentu. Jednak nie wszystkie aplikacje klienckie obsługują automatyczne etykietowanie. Ta funkcja jest obsługiwana przez wbudowane [etykietowanie z niektórymi wersjami Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps), a także ujednoliconego klienta etykietowania usługi Azure Information Protection.
 
-- **Etykiety** po stronie usługi, gdy zawartość jest już zapisana (w usłudze SharePoint lub OneDrive) lub wysłana pocztą e-mail (przetwarzana przez Exchange Online): Użyj zasad automatycznego oznaczania.
+    Aby uzyskać instrukcje dotyczące konfiguracji, zobacz [Jak skonfigurować automatyczne etykietowanie dla aplikacji Office](#how-to-configure-auto-labeling-for-office-apps) na tej stronie.
+
+- **Etykietowanie po stronie usługi, gdy zawartość jest już zapisywana (w SharePoint lub OneDrive) lub wysyłana pocztą e-mail (przetwarzana przez Exchange Online)**: Użyj zasad automatycznego etykietowania.
     
-    Możesz również usłyszeć tę metodę, określaną mianem automatycznego oznaczania danych w spoczynku (dokumenty w systemach SharePoint i OneDrive) oraz przesyłanych danych (wiadomości e-mail wysyłanych lub otrzymywanych przez Exchange). Na Exchange wiadomości e-mail nie są uwzględniane w spoczynku (skrzynki pocztowe).
+    Ta metoda może być również nazywana automatycznym etykietowaniem danych magazynowanych (dokumenty w SharePoint i OneDrive) oraz przesyłanych danych (wiadomości e-mail wysyłane lub odbierane przez Exchange). W przypadku Exchange nie zawiera ona wiadomości e-mail w spoczynku (skrzynek pocztowych).
     
-    Ponieważ to etykiety są stosowane przez usługi, a nie przez aplikacje, nie musisz martwić się o to, jakie aplikacje mają użytkownicy i która wersja. W efekcie ta funkcja jest natychmiast dostępna w całej organizacji i nadaje się do stosowania etykiet w skali. Zasady automatycznego oznaczania etykiet nie obsługują zalecanych etykiet, ponieważ użytkownik nie wchodzi w interakcję z procesem oznaczania. Zamiast tego administrator uruchamia zasady w sposób symulowany, aby zapewnić prawidłowe etykiety zawartości przed ich zastosowaniem.
+    Ponieważ to etykietowanie jest stosowane przez usługi, a nie przez aplikacje, nie musisz martwić się o to, jakie aplikacje mają użytkownicy i jaka wersja. W związku z tym ta funkcja jest natychmiast dostępna w całej organizacji i nadaje się do etykietowania na dużą skalę. Zasady automatycznego etykietowania nie obsługują zalecanego etykietowania, ponieważ użytkownik nie wchodzi w interakcję z procesem etykietowania. Zamiast tego administrator uruchamia zasady w symulacji, aby zapewnić poprawne etykietowanie zawartości przed faktycznym zastosowaniem etykiety.
 
-    Aby uzyskać instrukcje dotyczące konfiguracji, zobacz Jak skonfigurować zasady automatycznego oznaczania etykiet dla SharePoint[, OneDrive i](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) Exchange na tej stronie.
+    Aby uzyskać instrukcje dotyczące konfiguracji, zobacz [Jak skonfigurować zasady automatycznego etykietowania dla SharePoint, OneDrive i Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) na tej stronie.
     
-    Specyficzne dla automatycznego oznaczania etykiet dla SharePoint i OneDrive:
+    Specyficzne dla automatycznego etykietowania dla SharePoint i OneDrive:
     
-    - Office dla programu Word (.docx), PowerPoint (.pptx) i Excel (.xlsx).
-        - Te pliki można automatycznie oznaczać etykietami w miejscu przed lub po utworzeniu zasad automatycznego oznaczania etykiet. Plików nie można automatycznie oznaczać, jeśli są częścią otwartej sesji (plik jest otwarty).
-        - Obecnie załączniki do elementów listy nie są obsługiwane i nie są oznaczane automatycznie.
+    - Obsługiwane są pliki Office dla programu Word (.docx), PowerPoint (.pptx) i Excel (.xlsx).
+        - Te pliki mogą być automatycznie oznaczane etykietami magazynowanymi przed utworzeniem zasad automatycznego etykietowania lub po nich. Nie można automatycznie oznaczać plików, jeśli są częścią otwartej sesji (plik jest otwarty).
+        - Obecnie załączniki do elementów listy nie są obsługiwane i nie będą oznaczone automatycznie.
     - Maksymalnie 25 000 automatycznie oznaczonych plików w dzierżawie dziennie.
-    - Maksymalnie 100 zasad automatycznego oznaczania na dzierżawcę, przy każdym określaniu docelowych wartości docelowych do 100 witryn (SharePoint lub OneDrive), jeśli są określone indywidualnie. Możesz także określić wszystkie witryny, a ta konfiguracja będzie wykluczana z maksymalnej liczby 100 witryn.
-    - Istniejące wartości modyfikacji, modyfikacji i daty nie są zmieniane w wyniku zasad automatycznego oznaczania etykiet — zarówno w trybie symulowania, jak i podczas stosowania etykiet.
-    - Gdy etykieta stosuje szyfrowanie [, wystawca](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) zarządzania prawami i właściciel zarządzania prawami to konto, które ostatnio zmodyfikował plik. Jeśli tego konta nie ma Azure Active Directory, etykiety nie można ustawić, ponieważ tych wartości nie można ustawić.
+    - Maksymalnie 100 zasad automatycznego etykietowania na dzierżawę, z których każda jest przeznaczona dla maksymalnie 100 witryn (SharePoint lub OneDrive), gdy są one określane indywidualnie. Można również określić wszystkie lokacje, a ta konfiguracja jest wykluczona z maksymalnej wartości 100 lokacji.
+    - Istniejące wartości modyfikacji, modyfikacji i daty nie są zmieniane w wyniku zasad automatycznego etykietowania — zarówno w trybie symulacji, jak i w przypadku stosowania etykiet.
+    - Gdy etykieta stosuje szyfrowanie, [wystawcą usługi Rights Management i właścicielem usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jest konto, które ostatnio zmodyfikowało plik. Jeśli to konto nie jest już w Azure Active Directory, etykieta nie zostanie zastosowana, ponieważ nie można ustawić tych wartości.
 
-    Specyficzne dla automatycznego oznaczania etykiet dla Exchange:
+    Specyficzne dla automatycznego etykietowania dla Exchange:
     
-    - W odróżnieniu od ręcznego oznaczania etykiet lub automatycznego oznaczania etykiet za pomocą aplikacji pakietu Office załączniki PDF oraz załączniki Office są również skanowane w celu zachowania określonych warunków określonych w zasadach automatycznego oznaczania etykiet. W przypadku dopasowania wiadomość e-mail jest oznaczona etykietą, ale nie załącznikiem.
-        - W przypadku plików PDF, jeśli etykieta stosuje szyfrowanie, te pliki są szyfrowane przy użyciu narzędzia [Office 365 Message Encryption (OME),](ome.md) gdy dla dzierżawy włączono [załączniki PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - Dla tych Office obsługiwane są pliki programu Word, PowerPoint i Excel. Jeśli etykieta stosuje szyfrowanie, są one szyfrowane przy użyciu Office 365 [OME (Message Encryption).](ome.md)
-    - Jeśli masz reguły przepływu poczty e-mail lub zasady ochrony przed utratą danych (DLP), które stosują szyfrowanie IRM: jeśli zawartość jest identyfikowana przez te reguły i zasady automatycznego oznaczania etykiet, etykieta jest stosowana. Exchange Jeśli ta etykieta ma zastosowanie szyfrowanie, ustawienia usługi IRM na Exchange przepływu poczty e-mail lub zasady DLP są ignorowane. Jeśli jednak etykieta nie zastosuje szyfrowania, oprócz etykiety zostaną zastosowane ustawienia usługi IRM z reguł przepływu poczty e-mail lub zasad DLP.
-    - Wiadomość e-mail z szyfrowaniem IRM bez etykiet zostanie zastąpiona etykietą z dowolnymi ustawieniami szyfrowania, jeśli zostanie dopasowana za pomocą automatycznego oznaczania etykiet.
-    - Przychodząca wiadomość e-mail jest oznaczana w przypadku dopasowania do warunków automatycznego oznaczania etykiet. Jeśli ta etykieta jest skonfigurowana do [szyfrowania](encryption-sensitivity-labels.md), to szyfrowanie jest zawsze stosowane, gdy nadawca pochodzi z Twojej organizacji. Domyślnie to szyfrowanie nie jest stosowane, gdy nadawca znajduje się poza organizacją, ale można je zastosować, konfigurując  dodatkowe ustawienia poczty e-mail i określając właściciela zarządzania prawami.
-    - Gdy etykieta stosuje szyfrowanie, wystawca usługi zarządzanie prawami i właściciel usługi [zarządzania](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) prawami to osoba, która wysyła wiadomość e-mail, gdy nadawca pochodzi z Twojej organizacji. Jeśli nadawca znajduje się poza organizacją, możesz określić właściciela zarządzania prawami dostępu dla przychodzącej wiadomości e-mail oznaczonej i zaszyfrowanej przez zasady.
-    - Jeśli etykieta jest skonfigurowana do stosowania oznaczenia [dynamicznego,](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) należy pamiętać, że w przypadku przychodzących wiadomości e-mail ta konfiguracja może spowodować wyświetlanie imion i nazwisk osób spoza organizacji.
+    - W przeciwieństwie do ręcznego etykietowania lub automatycznego etykietowania za pomocą aplikacji Office, załączniki PDF oraz załączniki Office są również skanowane pod kątem warunków określonych w zasadach automatycznego etykietowania. W przypadku dopasowania wiadomość e-mail jest oznaczona etykietą, ale nie załącznikiem.
+        - W przypadku plików PDF, jeśli etykieta stosuje szyfrowanie, te pliki są szyfrowane przy użyciu [szyfrowania komunikatów](ome.md) , gdy dzierżawa jest [włączona dla załączników PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - W przypadku tych plików Office obsługiwane są programy Word, PowerPoint i Excel. Jeśli etykieta stosuje szyfrowanie, są one szyfrowane przy użyciu [szyfrowania komunikatów](ome.md).
+    - Jeśli masz Exchange reguły przepływu poczty lub zasady ochrony przed utratą danych (DLP) usługi Microsoft Purview, które stosują szyfrowanie IRM: Gdy zawartość jest identyfikowana przez te reguły lub zasady i zasady automatycznego etykietowania, zostanie zastosowana etykieta. Jeśli ta etykieta stosuje szyfrowanie, ustawienia usługi IRM z Exchange reguł przepływu poczty lub zasad DLP są ignorowane. Jeśli jednak ta etykieta nie stosuje szyfrowania, oprócz etykiety zostaną zastosowane ustawienia usługi IRM z reguł przepływu poczty lub zasad DLP.
+    - Wiadomość e-mail z szyfrowaniem IRM bez etykiety zostanie zastąpiona etykietą dowolnymi ustawieniami szyfrowania w przypadku dopasowania przy użyciu automatycznego etykietowania.
+    - Przychodząca wiadomość e-mail jest oznaczona etykietą w przypadku dopasowania do warunków automatycznego etykietowania. Jeśli ta etykieta jest skonfigurowana pod kątem [szyfrowania](encryption-sensitivity-labels.md), to szyfrowanie jest zawsze stosowane, gdy nadawca pochodzi z organizacji. Domyślnie szyfrowanie nie jest stosowane, gdy nadawca znajduje się poza organizacją, ale można je zastosować, konfigurując **dodatkowe ustawienia poczty e-mail** i określając właściciela usługi Rights Management.
+    - Gdy etykieta stosuje szyfrowanie, [wystawca usługi Rights Management i właściciel usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) to osoba, która wysyła wiadomość e-mail, gdy nadawca pochodzi z własnej organizacji. Gdy nadawca znajduje się poza organizacją, możesz określić właściciela usługi Rights Management dla przychodzącej wiadomości e-mail, która jest oznaczona etykietą i szyfrowana przez zasady.
+    - Jeśli etykieta jest skonfigurowana do stosowania [oznaczeń dynamicznych](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), należy pamiętać, że w przypadku przychodzącej poczty e-mail ta konfiguracja może spowodować wyświetlenie nazwisk osób spoza organizacji.
 
-## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Porównanie automatycznego oznaczania etykiet dla aplikacji Office z zasadami automatycznego oznaczania etykiet
+## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Porównanie automatycznego etykietowania dla aplikacji Office z zasadami automatycznego etykietowania
 
-Skorzystaj z poniższej tabeli, aby ułatwić zidentyfikowanie różnic w zachowaniu dwóch dopełniających metod automatycznego oznaczania etykiet:
+Poniższa tabela ułatwia zidentyfikowanie różnic w zachowaniu dwóch uzupełniających się metod automatycznego etykietowania:
 
-|Funkcja lub zachowanie|Ustawienie etykiet: automatyczne oznaczanie plików i wiadomości e-mail  |Zasady: Automatyczne oznaczanie etykiet|
+|Funkcja lub zachowanie|Ustawienie etykiety: Automatyczne etykietowanie plików i wiadomości e-mail  |Zasady: automatyczne etykietowanie|
 |:-----|:-----|:-----|
-|Zależność aplikacji|Tak ([minimalne wersje](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |Nie \* |
-|Ograniczanie według lokalizacji|Nie |Tak |
-|Warunki: Klasyfikatorzy przeszkoli|Tak |Nie |
-|Warunki: Opcje udostępniania i dodatkowe opcje dla poczty e-mail|Nie |Tak |
-|Warunki: Wyjątki|Nie |Tak (tylko poczta e-mail) |
-|Rekomendacje, etykietka narzędzia zasad i zastępowanie użytkownika|Tak |Nie |
-|Tryb symulowania|Nie |Tak |
-|Exchange sprawdzane pod kątem warunków|Nie | Tak|
-|Stosowanie oznaczeń wizualnych |Tak |Tak (tylko poczta e-mail) |
-|Zastępowanie szyfrowania IRM zastosowanego bez etykiety|Tak, jeśli użytkownik ma minimalne prawo do korzystania z eksportu |Tak (tylko poczta e-mail) |
+|Zależność aplikacji|Tak ([wersje minimalne](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |Nr \* |
+|Ogranicz według lokalizacji|Nie |Tak |
+|Warunki: Klasyfikatory z możliwością trenowania|Tak |Nie |
+|Warunki: Opcje udostępniania i dodatkowe opcje poczty e-mail|Nie |Tak |
+|Warunki: wyjątki|Nie |Tak (tylko wiadomość e-mail) |
+|Rekomendacje, etykietka narzędzia zasad i przesłonięcia użytkowników|Tak |Nie |
+|Tryb symulacji|Nie |Tak |
+|Exchange załączniki sprawdzone pod kątem warunków|Nie | Tak|
+|Stosowanie oznaczeń wizualnych |Tak |Tak (tylko wiadomość e-mail) |
+|Zastępowanie szyfrowania IRM zastosowanego bez etykiety|Tak, jeśli użytkownik ma prawo do minimalnego użycia eksportu |Tak (tylko wiadomość e-mail) |
 |Etykieta przychodzącej wiadomości e-mail|Nie |Tak|
-|Przypisywanie właściciela zarządzania prawami do wiadomości e-mail wysłanych z innej organizacji |Nie |Tak|
-|W przypadku wiadomości e-mail zamień istniejącą etykietę o tym samym lub niższym priorytecie |Nie |Tak (możliwość konfigurowania)|
+|Przypisywanie właściciela usługi Rights Management do wiadomości e-mail wysyłanych z innej organizacji |Nie |Tak|
+|W przypadku wiadomości e-mail zastąp istniejącą etykietę o tym samym lub niższym priorytecie |Nie |Tak (konfigurowalne)|
 
-\* Automatyczne oznaczanie etykiet nie jest obecnie dostępne we wszystkich regionach ze względu na współzależność platformy Azure w ramach zaplecza. Jeśli dzierżawa nie obsługuje tej funkcji, karta **Auto etykiety** nie jest widoczna w centrum zgodności. Aby uzyskać więcej informacji, zobacz [Dostępność platformy Azure w zależności od kraju](/troubleshoot/azure/general/dependency-availability-by-country).
+\* Automatyczne etykietowanie nie jest obecnie dostępne we wszystkich regionach ze względu na zależność zaplecza platformy Azure. Jeśli dzierżawa nie może obsługiwać tej funkcji, karta **Automatyczne etykietowanie** nie jest widoczna w portalu zgodności usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Dostępność zależności platformy Azure według kraju](/troubleshoot/azure/general/dependency-availability-by-country).
 
-## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Jak ocenia się wiele warunków, gdy dotyczą więcej niż jednej etykiety
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Jak wiele warunków jest ocenianych w przypadku zastosowania do więcej niż jednej etykiety
 
-Etykiety są uporządkowane do oceny zgodnie z ich położeniem, które zostało określone w zasadach: Etykieta pozycjonowana jako pierwsza ma najmniejszą pozycję (najmniejsza poufne), a ostatnia etykieta ma największą pozycję (najbardziej wrażliwą). Aby uzyskać więcej informacji o priorytecie, zobacz [Priorytet etykiety (pierwszeństwo zamówień ma znaczenie).](sensitivity-labels.md#label-priority-order-matters)
+Etykiety są uporządkowane do oceny zgodnie z ich pozycją określoną w zasadach: etykieta umieszczona jako pierwsza ma najniższą pozycję (najmniej wrażliwą), a etykieta umieszczona jako ostatnia ma najwyższą pozycję (najbardziej wrażliwą). Aby uzyskać więcej informacji na temat priorytetu, zobacz [Priorytet etykiety (kolejność ma znaczenie)](sensitivity-labels.md#label-priority-order-matters).
 
-## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>Nie konfiguruj etykiety nadrzędnej do automatycznego lub zalecanego zastosowania
+## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>Nie konfiguruj etykiety nadrzędnej, która ma być stosowana automatycznie lub zalecana
 
-Pamiętaj, że do zawartości nie można zastosować etykiety nadrzędnej (etykiety z pod etykietami). Upewnij się, że nie skonfigurowano etykiety nadrzędnej do automatycznego stosowania lub polecania w aplikacjach pakietu Office i nie wybieraj etykiety nadrzędnej dla zasad automatycznego oznaczania etykiet. Jeśli to zrobisz, etykieta nadrzędna nie zostanie zastosowana do zawartości.
+Pamiętaj, że nie można zastosować etykiety nadrzędnej (etykiety z etykietami podrzędnymi) do zawartości. Upewnij się, że nie konfigurujesz etykiety nadrzędnej tak, aby była automatycznie stosowana lub zalecana w aplikacjach Office, i nie wybierasz etykiety nadrzędnej dla zasad automatycznego etykietowania. Jeśli to zrobisz, etykieta nadrzędna nie zostanie zastosowana do zawartości.
 
-Aby użyć etykiet automatycznych z pod etykietami, upewnij się, że publikujesz zarówno etykietę nadrzędną, jak i etykietę podrzędną.
+Aby użyć automatycznego etykietowania z etykietami podrzędnymi, należy opublikować etykietę nadrzędną i etykietę podrzędną.
 
-Aby uzyskać więcej informacji na temat etykiet nadrzędnych i pod etykiet, zobacz Etykiety podrzędne [(etykiety grupowania).](sensitivity-labels.md#sublabels-grouping-labels)
+Aby uzyskać więcej informacji na temat etykiet nadrzędnych i etykiet podrzędnych, zobacz [Etykiety podrzędne (etykiety grupowania)](sensitivity-labels.md#sublabels-grouping-labels).
 
 ## <a name="will-an-existing-label-be-overridden"></a>Czy istniejąca etykieta zostanie zastąpiona?
 
 > [!NOTE]
-> Niedawno dodane ustawienie zasad automatycznego oznaczania wiadomości e-mail umożliwia określenie, że pasującą etykietę wrażliwości zawsze zastępuje istniejącą etykietę.
+> Niedawno dodane ustawienie zasad automatycznego etykietowania wiadomości e-mail pozwala określić, że zgodna etykieta poufności zawsze zastąpi istniejącą etykietę.
 
-Zachowanie domyślne niezależnie od tego, czy etykiety automatyczne zastąpią istniejącą etykietę:
+Domyślne zachowanie polegające na tym, że automatyczne etykietowanie zastąpi istniejącą etykietę:
 
-- Jeśli zawartość została oznaczona ręcznie etykietą, etykieta ta nie zostanie zastąpiona etykietą automatyczną.
+- Gdy zawartość została ręcznie oznaczona etykietą, etykieta ta nie zostanie zastąpiona przez automatyczne etykietowanie.
 
-- Automatyczne oznaczanie etykiet spowoduje zastąpienie etykiety [wrażliwości o niższym priorytecie](sensitivity-labels.md#label-priority-order-matters) , która została automatycznie zastosowana, ale nie będzie miała wyższego priorytetu.
+- Automatyczne etykietowanie zastąpi [etykietę poufności o niższym priorytecie](sensitivity-labels.md#label-priority-order-matters) , która została automatycznie zastosowana, ale nie etykietę o wyższym priorytecie.
     
     > [!TIP]
-    > Na przykład etykieta poufności u góry listy w Centrum zgodności ma nazwę Publiczny z numerem zamówienia (priorytet) 0, a etykieta wrażliwości u dołu listy nosi nazwę Wysoce poufne z numerem zamówienia (priorytet 4). **Etykieta Wysoce poufne** może zastąpić **etykietę** publiczną, ale nie na drugi sposób.
+    > Na przykład etykieta poufności w górnej części listy w portalu zgodności usługi Microsoft Purview ma nazwę **Public** z numerem zamówienia (priorytetem) 0, a etykieta poufności w dolnej części listy nosi nazwę **Wysoce poufne** z numerem zamówienia (priorytet 4). Etykieta **Wysoce poufne** może zastąpić etykietę **Publiczna** , ale nie odwrotnie.
 
-W przypadku zasad automatycznego oznaczania wiadomości e-mail możesz wybrać ustawienie, które zawsze zastępuje istniejącą etykietę wrażliwości, niezależnie od tego, jak została zastosowana.
+Tylko w przypadku zasad automatycznego etykietowania wiadomości e-mail można wybrać ustawienie, aby zawsze przesłaniać istniejącą etykietę poufności, niezależnie od sposobu jej stosowania.
 
-|Istniejąca etykieta |Zastępowanie za pomocą ustawienia etykiet: Automatyczne oznaczanie plików i wiadomości e-mail  |Zastępowanie przy użyciu zasad: automatyczne oznaczanie etykiet|
+|Istniejąca etykieta |Zastępowanie przy użyciu ustawienia etykiety: automatyczne etykietowanie plików i wiadomości e-mail  |Zastępowanie przy użyciu zasad: automatyczne etykietowanie|
 |:-----|:-----|:-----|
-|Stosowane ręcznie, dowolny priorytet|Word, Excel, PowerPoint: Nie <br /><br> Outlook: Nie  |SharePoint i OneDrive: Nie <br /><br> Exchange: Domyślnie nie, ale można je skonfigurować |
-|Etykieta automatycznie zastosowana lub domyślna z zasad o niskim priorytecie |Word, Excel, PowerPoint: Tak <br /><br> Outlook: Tak | SharePoint i OneDrive: Tak <br /><br> Exchange: Tak |
-|Etykieta automatycznie zastosowana lub domyślna z zasad, wyższy priorytet |Word, Excel, PowerPoint: Nie <br /><br> Outlook: Nie |SharePoint i OneDrive: Nie <br /><br> Exchange: Domyślnie nie, ale można je skonfigurować |
+|Zastosowane ręcznie— dowolny priorytet|Word, Excel, PowerPoint: Nie <br /><br> Outlook: Nie  |SharePoint i OneDrive: Nie <br /><br> Exchange: domyślnie nie, ale można go skonfigurować |
+|Automatycznie stosowana lub domyślna etykieta z zasad, niższy priorytet |Word, Excel, PowerPoint: Tak <br /><br> Outlook: Tak | SharePoint i OneDrive: Tak <br /><br> Exchange: Tak |
+|Automatycznie stosowana lub etykieta domyślna z zasad, wyższy priorytet |Word, Excel, PowerPoint: Nie <br /><br> Outlook: Nie |SharePoint i OneDrive: Nie <br /><br> Exchange: domyślnie nie, ale można go skonfigurować |
 
-Konfigurowalne ustawienie zasad automatycznego oznaczania wiadomości e-mail znajduje się na **stronie Dodatkowe ustawienia dla poczty e-mail** . Ta strona zostanie wyświetlona po wybraniu etykiety wrażliwości dla zasad automatycznego oznaczania, które zawierają Exchange lokalizacji.
+Konfigurowalne ustawienie zasad automatycznego etykietowania poczty e-mail znajduje się na stronie **Dodatkowe ustawienia poczty e-mail** . Ta strona jest wyświetlana po wybraniu etykiety poufności dla zasad automatycznego etykietowania, która zawiera lokalizację Exchange.
 
-## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Jak skonfigurować automatyczne etykiety dla Office aplikacji
+## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Jak skonfigurować automatyczne etykietowanie dla aplikacji Office
 
-Aby uzyskać wbudowane etykiety w Office, sprawdź minimalne wersje wymagane do automatycznego oznaczania etykiet w Office aplikacjach.[](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
+Aby uzyskać wbudowane etykietowanie w aplikacjach Office, sprawdź [minimalne wersje wymagane](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) do automatycznego etykietowania w aplikacjach Office.
 
-Klient ujednoliconej etykiet usługi Azure Information Protection obsługuje automatyczne oznaczanie etykiet tylko dla wbudowanych i niestandardowych typów informacji poufnych i nie obsługuje klasyfikatorów przeszkolnych ani typów informacji poufnych, które używają funkcji Dokładne dopasowanie danych (EDM) lub nazwanych obiektów.
+Klient ujednoliconego etykietowania platformy Azure Information Protection obsługuje automatyczne etykietowanie tylko dla wbudowanych i niestandardowych typów informacji poufnych oraz nie obsługuje klasyfikatorów z możliwością trenowania ani poufnych typów informacji korzystających z dokładnego dopasowania danych (EDM) lub nazwanych jednostek.
 
-Ustawienia automatycznego oznaczania etykiet dla Office są dostępne po utworzeniu lub [edytowaniu etykiety wrażliwości](create-sensitivity-labels.md). Upewnij się **& że** w zakresie etykiety wybrano opcję Pliki i wiadomości e-mail:
+Ustawienia automatycznego etykietowania dla aplikacji Office są dostępne podczas [tworzenia lub edytowania etykiety poufności](create-sensitivity-labels.md). Upewnij się, że dla zakresu etykiety wybrano opcję **Pliki & wiadomości e-mail** :
 
-![Opcje zakresu etykiet wrażliwości dla plików i wiadomości e-mail.](../media/filesandemails-scope-options-sensitivity-label.png)
+![Opcje zakresu etykiet poufności dla plików i wiadomości e-mail.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-Podczas poruszania się po konfiguracji jest wyświetlona strona Automatyczne oznaczanie plików i wiadomości **e-mail** , na której możesz wybrać z listy typów informacji poufnych lub przeszkolnych klasyfikatorów:
+Podczas przechodzenia przez konfigurację zostanie wyświetlona strona **Automatyczne etykietowanie plików i wiadomości e-mail** , na której można wybierać spośród listy typów informacji poufnych lub klasyfikatorów z możliwością trenowania:
 
-![Label conditions for auto-labeling in Office apps.](../media/sensitivity-labels-conditions.png)
+![Warunki etykietowania do automatycznego etykietowania w aplikacjach Office.](../media/sensitivity-labels-conditions.png)
 
-Gdy ta etykieta wrażliwości zostanie automatycznie zastosowana, użytkownik zobaczy powiadomienie w aplikacja pakietu Office. Przykład:
+Gdy ta etykieta poufności zostanie automatycznie zastosowana, użytkownik zobaczy powiadomienie w aplikacja pakietu Office. Przykład:
 
-![Powiadomienie o tym, że w dokumencie zastosowano etykietę automatycznie.](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
+![Powiadomienie o tym, że dokument ma automatycznie zastosowaną etykietę.](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>Konfigurowanie typów informacji poufnych dla etykiety
 
-Po wybraniu opcji **Typy informacji poufnych** jest dostępna ta sama lista typów informacji poufnych co podczas tworzenia zasad ochrony przed utratą danych (DLP). W związku z tym możesz na przykład automatycznie zastosować etykietę o wysokim poufnej treści do dowolnej zawartości zawierającej dane osobowe klientów, na przykład numery kart kredytowych, numery PESEL czy numery paszportów:
+Po wybraniu opcji **Typy informacji poufnych** zostanie wyświetlona ta sama lista typów informacji poufnych, co podczas tworzenia zasad ochrony przed utratą danych (DLP). Możesz więc na przykład automatycznie zastosować etykietę Wysoce poufne do dowolnej zawartości zawierającej dane osobowe klientów, takie jak numery kart kredytowych, numery ubezpieczenia społecznego lub numery paszportów:
 
-![Typy informacji poufnych do automatycznego oznaczania etykiet w Office aplikacjach.](../media/sensitivity-labels-sensitive-info-types.png)
+![Typy informacji poufnych do automatycznego etykietowania w aplikacjach Office.](../media/sensitivity-labels-sensitive-info-types.png)
 
-Podobnie jak podczas konfigurowania zasad DLP można uściślić warunek, zmieniając liczbę wystąpień i dokładność dopasowania. Przykład:
+Podobnie jak w przypadku konfigurowania zasad DLP, można następnie uściślić warunek, zmieniając liczbę wystąpień i dokładność dopasowania. Przykład:
 
 ![Opcje dokładności dopasowania i liczby wystąpień.](../media/sit-confidence-level.png)
 
-Więcej informacji o tych opcjach konfiguracji można znaleźć w dokumentacji dotyczącej zasad DLP: Dostosowywanie reguł tak, aby były łatwiejsze lub [trudniejsze do dopasowania](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+Więcej informacji na temat tych opcji konfiguracji można znaleźć w dokumentacji DLP: [Dostrajanie reguł, aby ułatwić ich dopasowanie lub utrudnić ich dopasowanie](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 > [!IMPORTANT]
-> Typy informacji poufnych mają dwa różne sposoby definiowania parametrów maksymalnej liczby unikatowych wystąpień. Aby dowiedzieć się więcej, zobacz [Obsługiwane wartości liczby wystąpień dla usługi SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Typy informacji poufnych mają dwa różne sposoby definiowania maksymalnej liczby unikatowych parametrów liczby wystąpień. Aby dowiedzieć się więcej, zobacz [Liczba obsługiwanych wartości wystąpień dla usługi SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
-Podobnie jak w przypadku konfiguracji zasad DLP można określić, czy warunek ma wykrywać wszystkie typy informacji poufnych, czy tylko jeden z nich. Aby twoje warunki bardziej elastyczne lub złożone, można dodawać grupy i używać operatorów logicznych [między grupami](data-loss-prevention-policies.md).
+Podobnie jak w przypadku konfiguracji zasad DLP, można wybrać, czy warunek musi wykryć wszystkie typy informacji poufnych, czy tylko jeden z nich. Aby warunki były bardziej elastyczne lub złożone, można dodawać [grupy i używać operatorów logicznych między grupami](data-loss-prevention-policies.md).
 
 > [!NOTE]
-> Automatyczne oznaczanie etykietami opartymi na niestandardowych typach informacji poufnych dotyczy tylko nowo utworzonej lub zmodyfikowanej zawartości w OneDrive i SharePoint, a nie do istniejącej zawartości. Niniejsze ograniczenie dotyczy również zasady automatycznego oznaczania etykiet.
+> Automatyczne etykietowanie oparte na niestandardowych typach informacji poufnych ma zastosowanie tylko do nowo utworzonej lub zmodyfikowanej zawartości w OneDrive i SharePoint, a nie do istniejącej zawartości. To ograniczenie dotyczy również reguł automatycznego etykietowania.
 
 #### <a name="custom-sensitive-information-types-with-exact-data-match"></a>Niestandardowe typy informacji poufnych z dokładnym dopasowaniem danych
 
-Możesz skonfigurować etykietę wrażliwości, [aby dla niestandardowych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) typów informacji poufnych używać dokładnych typów informacji poufnych opartych na danych. Jednak obecnie musisz także określić co najmniej jeden rodzaj informacji poufnych, który nie korzysta z funkcji EDM. Może to być na przykład jeden z wbudowanych typów informacji poufnych, na przykład **numer karty kredytowej**.
+Etykietę poufności można skonfigurować tak, aby [używała dokładnych typów informacji poufnych na podstawie dopasowania danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) dla niestandardowych typów informacji poufnych. Jednak obecnie należy również określić co najmniej jeden typ informacji poufnych, który nie używa EDM. Na przykład jeden z wbudowanych typów informacji poufnych, takich jak **numer karty kredytowej**.
 
-Jeśli skonfigurujesz etykietę wrażliwości tylko przy użyciu funkcji EDM dla warunków typu informacji poufnych, ustawienie automatycznego oznaczania etykiety zostanie automatycznie wyłączone.
+Jeśli skonfigurujesz etykietę poufności z tylko rozwiązaniem EDM dla warunków typów informacji poufnych, ustawienie automatycznego etykietowania zostanie automatycznie wyłączone dla etykiety.
 
-### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurowanie klasyfikatorów przeszkolnych dla etykiety
+### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurowanie klasyfikatorów z możliwością trenowania dla etykiety
 
-Jeśli używasz tej opcji z programem Aplikacje Microsoft 365 dla systemu Windows w wersji 2106 lub niższej albo Aplikacje Microsoft 365 dla komputerów Mac w wersji 16.50 lub niższej, upewnij się, że opublikowano w dzierżawie co najmniej jedną inną etykietę wrażliwości skonfigurowaną do automatycznego oznaczania etykiet i opcję informacji poufnych[.](#configuring-sensitive-info-types-for-a-label) To wymaganie nie jest konieczne, gdy używasz nowszych wersji na tych platformach.
+Jeśli używasz tej opcji z Aplikacje Microsoft 365 dla Windows wersji 2106 lub niższej lub Aplikacje Microsoft 365 dla komputerów Mac w wersji 16.50 lub niższej, upewnij się, że opublikowano w dzierżawie co najmniej jedną inną etykietę poufności skonfigurowaną do automatycznego etykietowania i [opcję typów informacji poufnych](#configuring-sensitive-info-types-for-a-label). To wymaganie nie jest konieczne, gdy na tych platformach są używane nowsze wersje.
 
-Po wybraniu opcji **Klasyfikatorzy** przeszkolone wybierz co najmniej jeden z wstępnie przeszkolonych lub niestandardowych przeszkolonych klasyfikatorów:
+Po wybraniu opcji **Trainable classifiers (Klasyfikatory trainable** ) wybierz co najmniej jeden z wstępnie wytrenowanych lub niestandardowych klasyfikatorów trenowalnych:
 
-![Opcje klasyfikatorów przeszkolnych i etykiet wrażliwości.](../media/sensitivity-labels-classifers.png)
+![Opcje klasyfikatorów i etykiet poufności z możliwością trenowania.](../media/sensitivity-labels-classifers.png)
 
 > [!CAUTION]
-> Wyszkodziliśmy wstępnie  przeszkolonych klasyfikatorów w języku obraźliwym, ponieważ został w nim wyszkolonych duża liczba wyników fałszywie dodatnich. Nie używaj tego klasyfikatora, a jeśli obecnie go używasz, zalecamy przeniesienie procesów biznesowych, a zamiast tego użyj wcześniej przeszkolonych klasyfikatorów: Molestowanie **kierowane,** **Profanity** i Zagrożenia.
+> Wycofywamy wstępnie wytrenowany klasyfikator **języka obraźliwego** , ponieważ generuje on dużą liczbę wyników fałszywie dodatnich. Nie używaj tego klasyfikatora i jeśli obecnie go używasz, zalecamy przeniesienie procesów biznesowych poza ten proces i użycie wstępnie **wytrenowanych** klasyfikatorów targeted harassment, **profanity** i **Threat** .
 
-Aby uzyskać więcej informacji na temat tych klasyfikatorów, zobacz [Informacje na temat przeszkolnych klasyfikatorów](classifier-learn-about.md).
+Aby uzyskać więcej informacji na temat tych klasyfikatorów, zobacz [Learn about trainable classifiers (Informacje o klasyfikatorach z możliwością trenowania](classifier-learn-about.md)).
 
-### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Poleć użytkownikowi stosowanie etykiety wrażliwości
+### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Zaleca się, aby użytkownik zastosował etykietę poufności
 
-Jeśli wolisz, możesz polecić użytkownikom stosowanie etykiety. Po użyciu tej opcji użytkownicy mogą zaakceptować klasyfikację i skojarzoną ochronę lub odrzucić zalecenie, jeśli etykieta nie nadaje się do ich zawartości.
+Jeśli wolisz, możesz zalecić użytkownikom zastosowanie etykiety. Dzięki tej opcji użytkownicy mogą zaakceptować klasyfikację i skojarzoną ochronę lub odrzucić zalecenie, jeśli etykieta nie jest odpowiednia dla ich zawartości.
 
-![Opcja polecania użytkownikom etykiety wrażliwości.](../media/Sensitivity-labels-Recommended-label-option.png)
+![Opcja zalecania użytkownikom etykiety poufności.](../media/Sensitivity-labels-Recommended-label-option.png)
 
-Oto przykład monitu z klienta ujednoliconej etykiet usługi Azure Information Protection podczas konfigurowania warunku do stosowania etykiety jako zalecanej akcji z etykietą niestandardową poradą o zasadach. Możesz wybrać tekst, który ma być wyświetlany w poradzie dotyczącej zasad.
+Oto przykład monitu z klienta ujednoliconego etykietowania usługi Azure Information Protection podczas konfigurowania warunku stosowania etykiety jako zalecanej akcji z poradą dotyczącą zasad niestandardowych. Możesz wybrać tekst wyświetlany w poradzie zasad.
 
 ![Monituj o zastosowanie zalecanej etykiety.](../media/Sensitivity-label-prompt-for-required-label.png)
 
-### <a name="when-automatic-or-recommended-labels-are-applied"></a>W przypadku stosowania etykiet automatycznych lub zalecanych
+### <a name="when-automatic-or-recommended-labels-are-applied"></a>Po zastosowaniu etykiet automatycznych lub zalecanych
 
-Implementacja automatycznego i zalecanego oznaczania etykiet w aplikacjach Office zależy od tego, czy używasz etykiet wbudowanych w usługę Office, czy klienta ujednoliconego Information Protection azure Information Protection etykiet. Jednak w obu przypadkach:
+Implementacja automatycznego i zalecanego etykietowania w aplikacjach Office zależy od tego, czy używasz etykietowania wbudowanego w Office, czy klienta usługi Azure Information Protection ujednoliconego etykietowania. Jednak w obu przypadkach:
 
-- W dokumentach i wiadomościach e-mail, które wcześniej były ręcznie lub automatycznie oznaczane z większą wrażliwością, nie można używać etykiet automatycznych. Pamiętaj, że do dokumentu lub wiadomości e-mail możesz zastosować tylko jedną etykietę wrażliwości (oprócz jednej etykiety przechowywania).
+- Nie można używać automatycznego etykietowania dla dokumentów i wiadomości e-mail, które zostały wcześniej oznaczone ręcznie lub wcześniej automatycznie oznaczone większą poufnością. Pamiętaj, że do dokumentu lub wiadomości e-mail można zastosować tylko jedną etykietę poufności (oprócz pojedynczej etykiety przechowywania).
 
-- Nie można używać zalecanych etykiet w dokumentach ani wiadomościach e-mail, które wcześniej były oznaczone wyższym poziomem wrażliwości. Jeśli zawartość jest już oznaczona wyższym poziomem wrażliwości, użytkownik nie zobaczy monitu z zaleceniem i poradą o zasadach.
+- Nie można używać zalecanego etykietowania dla dokumentów lub wiadomości e-mail, które zostały wcześniej oznaczone z większą poufnością. Gdy zawartość jest już oznaczona wyższą poufnością, użytkownik nie zobaczy monitu z zaleceniem i poradą dotyczącą zasad.
 
-Specyficzne dla wbudowanych etykiet:
+Specyficzne dla wbudowanego etykietowania:
 
-- Nie wszystkie Office obsługują etykiety automatyczne (i zalecane). Aby uzyskać więcej informacji, zobacz [Pomoc techniczna dla funkcji etykiet wrażliwości w aplikacjach](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+- Nie wszystkie aplikacje Office obsługują automatyczne (i zalecane) etykietowanie. Aby uzyskać więcej informacji, zobacz [Obsługa funkcji etykiet poufności w aplikacjach](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-- W przypadku etykiet zalecanych w klasycznych wersjach programu Word zawartość, która wyzwolyła zalecane etykiety, jest oflagowana, aby użytkownicy mogą przeglądać i usuwać po poufnej zawartości zamiast stosowania zalecanej etykiety wrażliwości.
+- W przypadku zalecanych etykiet w klasycznych wersjach programu Word zawartość poufna, która wyzwoliła zalecenie, jest oflagowana, aby użytkownicy mogli przeglądać i usuwać zawartość poufną zamiast stosować zalecaną etykietę poufności.
 
-- Aby uzyskać szczegółowe informacje na temat stosowania tych etykiet w aplikacjach pakietu Office, przykładowych zrzutów ekranu i wykrywania poufnych informacji, zobacz Automatyczne stosowanie etykiet wrażliwości do plików i wiadomości e-mail w aplikacji [Office.](https://support.microsoft.com/office/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
+- Aby uzyskać szczegółowe informacje na temat sposobu stosowania tych etykiet w aplikacjach Office, przykładowych zrzutach ekranu i sposobie wykrywania informacji poufnych, zobacz [Automatyczne stosowanie lub rekomendowanie etykiet poufności do plików i wiadomości e-mail w Office](https://support.microsoft.com/office/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
-Specyficzne dla klienta usługi Azure Information Protection etykiet ujednoliconej:
+Specyficzne dla klienta ujednoliconego etykietowania usługi Azure Information Protection:
 
-- Automatyczne i zalecane etykiety dotyczą programu Word, Excel i PowerPoint podczas zapisywania dokumentu oraz do Outlook podczas wysyłania wiadomości e-mail.
+- Automatyczne i zalecane etykietowanie ma zastosowanie do programów Word, Excel i PowerPoint podczas zapisywania dokumentu oraz do Outlook podczas wysyłania wiadomości e-mail.
 
-- Aby Outlook zalecane etykiety, musisz najpierw skonfigurować [zaawansowane ustawienie zasad](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
+- Aby Outlook obsługiwać zalecane etykietowanie, należy najpierw skonfigurować [zaawansowane ustawienie zasad](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
 
-- Informacje poufne mogą być wykrywane w tekście treści dokumentów i wiadomości e-mail oraz w nagłówkach i stopce, ale nie mogą znaleźć się w wierszu tematu ani w załącznikach wiadomości e-mail.
+- Poufne informacje można wykryć w tekście treści w dokumentach i wiadomościach e-mail oraz nagłówkach i stopkach — ale nie w wierszu tematu lub załącznikach wiadomości e-mail.
 
-## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Jak skonfigurować zasady automatycznego oznaczania SharePoint, OneDrive i Exchange
+## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Jak skonfigurować zasady automatycznego etykietowania dla SharePoint, OneDrive i Exchange
 
-Przed skonfigurowaniem zasad automatycznego oznaczania upewnij się, że wymagania wstępne są spełnione.
+Przed skonfigurowaniem zasad automatycznego etykietowania upewnij się, że znasz wymagania wstępne.
 
-### <a name="prerequisites-for-auto-labeling-policies"></a>Wymagania wstępne dotyczące zasad automatycznego oznaczania etykiet
+### <a name="prerequisites-for-auto-labeling-policies"></a>Wymagania wstępne dotyczące zasad automatycznego etykietowania
 
-- Tryb symulowania:
-  - Inspekcja dla Microsoft 365 musi być włączona. Jeśli musisz włączyć inspekcję lub nie masz pewności, czy inspekcja jest już własna, zobacz Włączanie lub wyłączanie przeszukiwania dziennika [inspekcji](turn-audit-log-search-on-or-off.md).
-  - Aby wyświetlić zawartość pliku lub wiadomości e-mail w widoku źródłowym, musisz  mieć rolę Podgląd zawartości klasyfikacji danych, która jest dostępna  w grupie ról Podgląd zawartości Eksploratora zawartości, lub grupy ról Podgląd zawartości programu **Information Protection** i **Information Protection** (obecnie dostępne w wersji zapoznawczej). Bez wymaganej roli okienko podglądu nie jest widać po zaznaczeniu elementu na karcie **Elementy dopasowane** . Administratorzy globalni domyślnie nie mają tej roli.
+- Tryb symulacji:
+  - Inspekcja dla Microsoft 365 musi być włączona. Jeśli chcesz włączyć inspekcję lub nie masz pewności, czy inspekcja jest już włączona, zobacz [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](turn-audit-log-search-on-or-off.md).
+  - Aby wyświetlić zawartość pliku lub wiadomości e-mail w widoku źródłowym, musisz mieć rolę **Podgląd zawartości klasyfikacji danych**, która jest uwzględniona w grupie ról **Podgląd zawartości Eksploratora zawartości**, lub **Information Protection** i Information Protection grupy ról **badaczy** (obecnie w wersji zapoznawczej). Bez wymaganej roli okienko podglądu nie jest widoczne po wybraniu elementu na karcie **Dopasowane elementy** . Administratorzy globalni domyślnie nie mają tej roli.
 
-- Aby automatycznie oznaczać pliki w SharePoint i OneDrive:
-  - Włączono [etykiety wrażliwości dla Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-  - Po uruchamianiu zasad auto etykiet plik nie może być otwarty przez inny proces lub użytkownika. Plik wyewidencjonowany do edycji należy do tej kategorii.
+- Aby automatycznie etykietować pliki w SharePoint i OneDrive:
+  - W [SharePoint i OneDrive włączono etykiety poufności dla plików Office](sensitivity-labels-sharepoint-onedrive-files.md).
+  - W momencie uruchamiania zasad automatycznego etykietowania plik nie może być otwarty przez inny proces lub użytkownika. Plik wyewidencjonowany do edycji należy do tej kategorii.
 
-- Jeśli zamierzasz używać [niestandardowych typów informacji poufnych](sensitive-information-type-learn-about.md) , a nie wbudowanych typów wrażliwości:
-  - Niestandardowe typy informacji wrażliwości mają zastosowanie tylko do zawartości dodanej lub zmodyfikowanej SharePoint lub OneDrive po utworzeniu niestandardowych typów informacji o wrażliwości.
-  - Aby przetestować nowe niestandardowe typy informacji poufnych, utwórz je przed utworzeniem zasad auto etykiet, a następnie utwórz nowe dokumenty z przykładami danych do testowania.
+- Jeśli planujesz używać [niestandardowych typów informacji poufnych](sensitive-information-type-learn-about.md) , a nie wbudowanych typów poufności:
+  - Niestandardowe typy informacji o poufności mają zastosowanie tylko do zawartości dodawanej lub modyfikowanej w SharePoint lub OneDrive po utworzeniu niestandardowych typów informacji o poufności.
+  - Aby przetestować nowe niestandardowe typy informacji poufnych, utwórz je przed utworzeniem zasad automatycznego etykietowania, a następnie utwórz nowe dokumenty z przykładowymi danymi do testowania.
 
-- Utworzono i opublikowano co najmniej jedną etykietę [wrażliwości (dla](create-sensitivity-labels.md) co najmniej jednego użytkownika), które można wybrać dla zasad automatycznego oznaczania etykiet. W przypadku tych etykiet:
-  - Nie ma znaczenia, czy ustawienie etykiet automatycznych w aplikacjach pakietu Office jest włączone, czy wyłączone, ponieważ takie zasady automatycznego oznaczania etykiet są uzupełnieniem zasad automatycznego oznaczania etykiet, jak wyjaśniono we wprowadzeniu.
-  - Jeśli etykiety, których chcesz użyć do automatycznego oznaczania etykiet, są skonfigurowane do używania oznaczeń wizualnych (nagłówków, stopek, znaków wodnych), pamiętaj, że nie są one stosowane do dokumentów.
-  - Jeśli etykiety [mają szyfrowanie:](encryption-sensitivity-labels.md)
-    - Jeśli zasady automatycznego oznaczania zawierają lokalizacje dla SharePoint lub OneDrive, etykieta musi być teraz skonfigurowana dla ustawienia **Przypisz** uprawnienia.
-    - Gdy zasady automatycznego oznaczania są przeznaczone tylko dla usługi Exchange, etykietę można skonfigurować pod pomocą opcji Przypisz uprawnienia **teraz** lub Pozwól użytkownikom na przypisywanie **uprawnień (w** przypadku opcji Nie przesyłaj dalej Encrypt-Only).
+- Co najmniej jedna etykieta poufności [utworzona i opublikowana](create-sensitivity-labels.md) (dla co najmniej jednego użytkownika), którą można wybrać dla zasad automatycznego etykietowania. Dla następujących etykiet:
+  - Nie ma znaczenia, czy automatyczne etykietowanie w Office ustawienie etykiety aplikacji jest włączone lub wyłączone, ponieważ to ustawienie etykiety uzupełnia zasady automatycznego etykietowania, jak wyjaśniono we wstępie.
+  - Jeśli etykiety, których chcesz używać do automatycznego etykietowania, są skonfigurowane do używania oznaczeń wizualnych (nagłówków, stopek, znaków wodnych), pamiętaj, że nie są one stosowane do dokumentów.
+  - Jeśli etykiety stosują [szyfrowanie](encryption-sensitivity-labels.md):
+    - Jeśli zasady automatycznego etykietowania zawierają lokalizacje dla SharePoint lub OneDrive, etykieta musi być skonfigurowana dla ustawienia **Przypisz uprawnienia teraz**.
+    - Jeśli zasady automatycznego etykietowania są przeznaczone tylko dla Exchange, etykietę można skonfigurować dla opcji **Przypisz uprawnienia teraz** lub **Zezwalaj użytkownikom na przypisywanie uprawnień** (dla opcji Nie przesyłaj dalej lub Encrypt-Only).
 
-### <a name="learn-about-simulation-mode"></a>Informacje na temat trybu symulacyjnego
+### <a name="learn-about-simulation-mode"></a>Dowiedz się więcej o trybie symulacji
 
-Tryb symulowania jest unikatowy dla zasad automatycznego oznaczania etykiet i może być uwzględniany w przepływie pracy. Nie można automatycznie oznaczać dokumentów i wiadomości e-mail, dopóki zasady nie uruchomą co najmniej jednej symulacyjnej.
+Tryb symulacji jest unikatowy dla zasad automatycznego etykietowania i wpleciony w przepływ pracy. Nie można automatycznie oznaczać etykietami dokumentów i wiadomości e-mail, dopóki zasady nie uruchomią co najmniej jednej symulacji.
 
-Tryb symulowania obsługuje maksymalnie 1000 000 dopasowanych plików. Jeśli zasady auto etykiet pasują do większej liczby plików niż ta liczba, nie można włączyć tych zasad w celu zastosowania etykiet. W takim przypadku należy ponownie skonfigurować zasady automatycznego oznaczania etykiet tak, aby dopasować mniej plików i uruchomić symulację ponownego konfigurowania. Ta maksymalna liczba 1000 000 dopasowanych plików dotyczy tylko trybu symulacyjnego, a nie zasad automatycznego oznaczania, które są już włączone w celu stosowania etykiet wrażliwości.
+Tryb symulacji obsługuje do 1 000 000 dopasowanych plików. Jeśli więcej niż ta liczba plików jest dopasowanych z zasad automatycznego etykietowania, nie można włączyć zasad w celu zastosowania etykiet. W takim przypadku należy ponownie skonfigurować zasady automatycznego etykietowania, aby dopasować mniejszą liczbę plików i ponownie uruchomić symulację. Maksymalnie 1 000 000 dopasowanych plików dotyczy tylko trybu symulacji, a nie zasad automatycznego etykietowania, które zostały już włączone w celu zastosowania etykiet poufności.
 
-Przepływ pracy dla zasad auto etykiet:
+Przepływ pracy dla zasad automatycznego etykietowania:
 
-1. Tworzenie i konfigurowanie zasad automatycznego oznaczania etykiet.
+1. Utwórz i skonfiguruj zasady automatycznego etykietowania.
 
-2. Zasady należy uruchamiać w trybie symulacyjnej, który może potrwać do 12 godzin. Ukończona symulacja wyzwala powiadomienie e-mail wysyłane do użytkownika skonfigurowanego do odbierania [alertów dotyczących aktywności](alert-policies.md).
+2. Uruchom zasady w trybie symulacji, co może potrwać 12 godzin. Ukończona symulacja wyzwala powiadomienie e-mail wysyłane do użytkownika skonfigurowanego do otrzymywania [alertów aktywności](alert-policies.md).
 
-3. Przejrzyj wyniki i w razie potrzeby uściślij zasady. Na przykład może być konieczne edytowanie reguł zasad w celu zmniejszenia wyników fałszywie dodatnich lub usunięcie niektórych witryn, tak aby liczba dopasowanych plików nie przekroczyła 1 000 000. Tryb powtarzania symulacyjnego i poczekaj na jego ponowne ukończenie.
+3. Przejrzyj wyniki i w razie potrzeby uściślij zasady. Na przykład może być konieczne edytowanie reguł zasad w celu zmniejszenia liczby fałszywie dodatnich lub usunięcie niektórych witryn, aby liczba dopasowanych plików nie przekraczała 1 000 000. Uruchom ponownie tryb symulacji i poczekaj na jego ponowne zakończenie.
 
-4. W razie potrzeby powtórz krok 3.
+4. Powtórz krok 3 zgodnie z potrzebami.
 
-5. Wdrożenie w środowisku produkcyjnym.
+5. Wdrażanie w środowisku produkcyjnym.
 
-Symulowane wdrożenie działa podobnie jak parametr WhatIf dla programu PowerShell. Zostaną zgłoszone wyniki, tak jakby zasady auto etykiet zastosowano wybraną etykietę przy użyciu zdefiniowanych reguł. Następnie można w razie potrzeby uściślić reguły w celu zapewnienia dokładności i ponownie uruchomić symulację. Ponieważ jednak automatyczne oznaczanie etykiet w programie Exchange dotyczy wysyłanych i otrzymywanych wiadomości e-mail, a nie wiadomości przechowywanych w skrzynkach pocztowych, nie należy oczekiwać spójności wyników, ponieważ wiadomość e-mail jest spójna, chyba że można wysyłać i odbierać takie same wiadomości e-mail.
+Symulowane wdrożenie działa jak parametr WhatIf dla programu PowerShell. Wyniki są zgłaszane tak, jakby zasady automatycznego etykietowania zastosowały wybraną etykietę przy użyciu zdefiniowanych reguł. W razie potrzeby można dostosować reguły dokładności i ponownie uruchomić symulację. Jednak ponieważ automatyczne etykietowanie dla Exchange ma zastosowanie do wiadomości e-mail wysyłanych i odbieranych, a nie wiadomości e-mail przechowywanych w skrzynkach pocztowych, nie oczekuj spójności wyników dla wiadomości e-mail w symulacji, chyba że możesz wysyłać i odbierać dokładnie te same wiadomości e-mail.
 
-Tryb symulowania pozwala również stopniowo zwiększać zakres zasad auto etykiet przed wdrożeniem. Na przykład można zacząć od jednej lokalizacji, na przykład SharePoint dokumentów, z jedną biblioteką dokumentów. Następnie, w przypadku zmian iteracyjnych, zwiększ zakres do wielu witryn, a następnie do innej lokalizacji, na przykład OneDrive.
+Tryb symulacji umożliwia również stopniowe zwiększanie zakresu zasad automatycznego etykietowania przed wdrożeniem. Na przykład możesz zacząć od jednej lokalizacji, takiej jak witryna SharePoint, z pojedynczą biblioteką dokumentów. Następnie, wraz ze zmianami iteracyjnymi, zwiększ zakres do wielu lokacji, a następnie do innej lokalizacji, takiej jak OneDrive.
 
-Ponadto można użyć trybu symulowania, aby przedstawić przybliżenie czasu potrzebnego do uruchomienia zasad auto etykiet, co pomoże zaplanować i zaplanować, kiedy zostanie uruchomione bez użycia trybu symulacyjnego.
+Na koniec możesz użyć trybu symulacji, aby zapewnić przybliżenie czasu potrzebnego do uruchomienia zasad automatycznego etykietowania, aby ułatwić planowanie i planowanie uruchamiania ich bez trybu symulacji.
 
-### <a name="creating-an-auto-labeling-policy"></a>Tworzenie zasad automatycznego oznaczania etykiet
+### <a name="creating-an-auto-labeling-policy"></a>Tworzenie zasad automatycznego etykietowania
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365 przejdź</a> do etykiet wrażliwości:
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> przejdź do etykiet poufności:
 
     - **Rozwiązania** >  **Ochrona informacji**
 
-    Jeśli nie widzisz tej opcji od razu, najpierw wybierz pozycję **Pokaż wszystko**.
+    Jeśli ta opcja nie zostanie od razu wyświetlona, najpierw wybierz pozycję **Pokaż wszystko**.
 
-2. Wybierz **kartę Automatyczne etykiety** :
+2. Wybierz kartę **Automatyczne etykietowanie** :
 
-    ![Karta Auto-etykieta.](../media/auto-labeling-tab.png)
+    ![Karta Automatycznego etykietowania.](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > Jeśli nie widzisz karty **Automatyczne** etykiety, ta funkcja nie jest obecnie dostępna w Twoim regionie ze względu na współzależność zaplecza platformy Azure. Aby uzyskać więcej informacji, zobacz [Dostępność platformy Azure w zależności od kraju](/troubleshoot/azure/general/dependency-availability-by-country).
+    > Jeśli nie widzisz karty **Automatyczne etykietowanie** , ta funkcja nie jest obecnie dostępna w Twoim regionie ze względu na zależność zaplecza platformy Azure. Aby uzyskać więcej informacji, zobacz [Dostępność zależności platformy Azure według kraju](/troubleshoot/azure/general/dependency-availability-by-country).
 
-3. Wybierz **pozycję + Utwórz zasady auto etykiet**. To uruchamia konfigurację nowych zasad:
+3. Wybierz pozycję **+ Utwórz zasady automatycznego etykietowania**. Spowoduje to uruchomienie konfiguracji nowych zasad:
 
-    ![Konfiguracja nowych zasad do automatycznego oznaczania etykiet.](../media/auto-labeling-wizard.png)
+    ![Nowa konfiguracja zasad automatycznego etykietowania.](../media/auto-labeling-wizard.png)
 
-4. Dla strony **Wybierz informacje, do których chcesz zastosować tę etykietę**: Wybierz jeden z szablonów, na przykład **Finanse** lub **Prywatność**. Możesz uściślić wyszukiwanie przy użyciu **listy rozwijanej Pokaż opcje** . Lub wybierz pozycję **Zasady niestandardowe** , jeśli szablony nie spełniają Twoich wymagań. Wybierz pozycję **Dalej**.
+4. Na stronie **Wybierz informacje, do których ma zostać zastosowana ta etykieta**: wybierz jeden z szablonów, na przykład **Financial** lub **Privacy**. Wyszukiwanie można uściślić, korzystając z listy rozwijanej **Pokaż opcje** . Możesz też wybrać pozycję **Zasady niestandardowe** , jeśli szablony nie spełniają Twoich wymagań. Wybierz pozycję **Dalej**.
 
-5. Dla strony **Nadaj nazwę zasadom auto** etykiet: Podaj unikatową nazwę i opcjonalnie opis ułatwiający identyfikację automatycznie zastosowanej etykiety, lokalizacji i warunków identyfikującej zawartość do o etykiecie.
+5. Na stronie **Nazwa zasad automatycznego etykietowania**: podaj unikatową nazwę i opcjonalnie opis, aby ułatwić identyfikację automatycznie stosowanej etykiety, lokalizacji i warunków identyfikujących zawartość do etykiety.
 
-6. Dla strony **Wybierz lokalizacje, w których chcesz** zastosować etykietę: Wybierz i określ lokalizacje dla etykiet Exchange, SharePoint i OneDrive. Jeśli nie chcesz zachować domyślnego ustawienia Wszystkie w wybranych lokalizacjach, wybierz link, aby wybrać konkretne wystąpienia do dołączyć, lub wybierz link, aby wybrać konkretne wystąpienia, które mają zostać wykluczone. Następnie wybierz pozycję **Dalej**.
+6. Na stronie **Wybierz lokalizacje, w których chcesz zastosować etykietę**: wybierz i określ lokalizacje dla Exchange, SharePoint i OneDrive. Jeśli nie chcesz zachować wartości domyślnej **Wszystkie** uwzględnione dla wybranych lokalizacji, wybierz link, aby wybrać określone wystąpienia do uwzględnienia, lub wybierz link, aby wybrać określone wystąpienia do wykluczenia. Następnie wybierz pozycję **Dalej**.
 
-    ![Wybierz stronę lokalizacje w celu konfiguracji automatycznego oznaczania etykiet.](../media/locations-auto-labeling-wizard.png)
+    ![Wybierz stronę lokalizacje dla konfiguracji automatycznego etykietowania.](../media/locations-auto-labeling-wizard.png)
     
-    Jeśli zmienisz ustawienia domyślne za pomocą ustawień **Uwzględniany lub** **Wykluczony**:
+    Jeśli zmienisz ustawienia domyślne przy użyciu opcji **Dołączone** lub **Wykluczone**:
     
-    - W przypadku **Exchange** adres e-mail zasady są stosowane zgodnie z adresem nadawcy określonym adresatom. W większości przypadków warto zachować wartość domyślną Wszystkie z wartością **Brak wykluczonych**. Ta konfiguracja jest odpowiednia nawet w przypadku testów dla podzestawu użytkowników. Zamiast określać podzbiór użytkowników w tym miejscu, użyj zaawansowanych reguł w następnym kroku w celu skonfigurowania warunków dołączania lub wykluczania adresatów w organizacji. W przeciwnym razie po zmianie ustawień domyślnych w tym miejscu:
-        -  Jeśli zmienisz domyślne ustawienie Wszystkie  uwzględnione i zamiast tego wybierz konkretnych użytkowników lub grupy, wiadomości e-mail wysyłane spoza organizacji zostaną wyłączone z zasad. 
-        -  Jeśli nie określisz wartości  domyślnej Wszystkie, ale określisz wykluczanych użytkowników lub grupy, wiadomości e-mail, które te wykluczeni użytkownicy będą wykluczane z zasad, ale nie będą z nich wyłączane wiadomości e-mail.
+    - W **przypadku lokalizacji Exchange** zasady są stosowane zgodnie z adresem nadawcy określonych adresatów. W większości przypadków należy zachować wartość domyślną **opcji Wszystkie** dołączone do pozycji **Brak** wykluczone. Ta konfiguracja jest odpowiednia nawet w przypadku testowania podzestawu użytkowników. Zamiast tutaj określać podzestaw użytkowników, użyj zaawansowanych reguł w następnym kroku, aby skonfigurować warunki dołączania lub wykluczania adresatów w organizacji. W przeciwnym razie po zmianie ustawień domyślnych w tym miejscu:
+        -  Jeśli zmienisz wartość domyślną **Wszystkie** uwzględnione, a zamiast tego wybierzesz określonych użytkowników lub grupy, wiadomości e-mail wysyłane spoza organizacji zostaną wykluczone z zasad. 
+        -  Jeśli zachowasz wartość domyślną **Wszystkie** uwzględnione, ale określisz użytkowników lub grupy do wykluczenia, wiadomości e-mail wysyłane przez wykluczonych użytkowników zostaną wykluczone z zasad, ale nie wiadomości e-mail, które otrzymają.
     
-    - Aby OneDrive konta, zobacz Uzyskiwanie listy wszystkich [](/onedrive/list-onedrive-urls) adresów URL OneDrive użytkowników w organizacji, aby ułatwić określanie poszczególnych kont OneDrive, które mają być dołączane lub wykluczane.
+    - Aby uzyskać OneDrive kont, zobacz [Pobieranie listy wszystkich adresów URL OneDrive użytkowników w organizacji](/onedrive/list-onedrive-urls), aby ułatwić określenie poszczególnych kont OneDrive do uwzględnienia lub wykluczenia.
 
-7. Na stronie **Konfigurowanie reguł typowych** lub zaawansowanych: Zachowaj domyślną regułę Common,  aby zdefiniować reguły identyfikujące zawartość do oznaczania etykietą we wszystkich wybranych lokalizacjach. Jeśli dla poszczególnych lokalizacji są potrzebne różne reguły, w tym więcej opcji dla Exchange, wybierz **pozycję Reguły zaawansowane**. Następnie wybierz pozycję **Dalej**.
+7. Na stronie **Konfigurowanie reguł typowych lub zaawansowanych** zachowaj wartość domyślną **Reguły wspólne** , aby zdefiniować reguły identyfikujące zawartość do etykietowania we wszystkich wybranych lokalizacjach. Jeśli potrzebujesz różnych reguł na lokalizację, w tym więcej opcji dla Exchange, wybierz pozycję **Reguły zaawansowane**. Następnie wybierz pozycję **Dalej**.
 
-    Reguły używają warunków, które obejmują typy informacji poufnych i opcje udostępniania:
-    - W przypadku typów informacji poufnych możesz wybrać zarówno wbudowane, jak i niestandardowe typy informacji poufnych.
-    - W przypadku opcji udostępnionych możesz wybrać opcję tylko z osobami **w** mojej organizacji lub **z osobami spoza mojej organizacji**.
+    Reguły używają warunków obejmujących typy informacji poufnych i opcje udostępniania:
+    - W przypadku typów informacji poufnych można wybrać zarówno wbudowane, jak i niestandardowe typy informacji poufnych.
+    - W przypadku opcji udostępnionych możesz wybrać **tylko osoby w mojej organizacji** lub **osoby spoza mojej organizacji**.
 
-    Jeśli lokalizacja **jest Exchange i** wybrano pozycję **Reguły** zaawansowane, możesz wybrać inne warunki:
-    - Adres IP nadawcy to
-    - Domena adresata to
-    - Adresatem jest
+    Jeśli lokalizacja jest **Exchange** i **wybrano opcję Reguły zaawansowane**, można wybrać inne warunki:
+    - Adres IP nadawcy jest
+    - Domena adresata jest
+    - Adresat jest
     - Rozszerzenie pliku załącznika to
     - Załącznik jest chroniony hasłem
-    - Nie można było zeskanować zawartości dowolnego załącznika wiadomości e-mail
-    - Zawartość każdego załącznika wiadomości e-mail nie ukończono skanowania
-    - Nagłówek odpowiada wzorcom
-    - Temat odpowiada wzorcom
-    - Adres adresata zawiera wyrazy
-    - Adres adresata pasuje do wzorców
-    - Adres nadawcy odpowiada wzorcom
-    - Domena nadawcy to
+    - Nie można skanować zawartości załącznika wiadomości e-mail
+    - Zawartość załącznika wiadomości e-mail nie została ukończona podczas skanowania
+    - Nagłówek pasuje do wzorców
+    - Temat pasuje do wzorców
+    - Adres odbiorcy zawiera wyrazy
+    - Adres odbiorcy pasuje do wzorców
+    - Adres nadawcy pasuje do wzorców
+    - Domena nadawcy jest
     - Adresat jest członkiem
-    - Nadawca:
+    - Nadawca jest
 
-    Dla każdego z tych warunków możesz określić wyjątki.
+    Dla każdego z tych warunków można określić wyjątki.
 
-8. W zależności od poprzednich opcji możesz teraz tworzyć nowe reguły, korzystając z warunków i wyjątków.
+8. W zależności od poprzednich opcji będziesz mieć teraz możliwość tworzenia nowych reguł przy użyciu warunków i wyjątków.
 
-    Opcje konfiguracji dla typów informacji poufnych są takie same jak opcje wybrane do automatycznego oznaczania etykiet dla Office aplikacji. Jeśli potrzebujesz dodatkowych informacji, zobacz [Konfigurowanie typów informacji poufnych dla etykiety](#configuring-sensitive-info-types-for-a-label).
+    Opcje konfiguracji dla typów informacji poufnych są takie same jak te wybrane do automatycznego etykietowania dla aplikacji Office. Jeśli potrzebujesz więcej informacji, zobacz [Konfigurowanie typów informacji poufnych dla etykiety](#configuring-sensitive-info-types-for-a-label).
 
-    Po wybraniu wszystkich potrzebnych reguł i potwierdzeniu, że ich status jest wł. wybierz pozycję  Dalej, aby przejść do wybierania etykiety do automatycznego zastosowania.
+    Po zdefiniowaniu wszystkich potrzebnych reguł i potwierdzeniu ich stanu wybierz pozycję **Dalej** , aby przejść do wybierania etykiety do automatycznego zastosowania.
 
-9. Na stronie **Wybierz etykietę do automatycznego** zastosowania: Wybierz pozycję **+ Wybierz** etykietę, wybierz etykietę w okienku Wybierz **etykietę** wrażliwości, a następnie wybierz pozycję **Dalej**.
+9. Na stronie **Wybierz etykietę do automatycznego zastosowania** : wybierz **pozycję + Wybierz etykietę**, wybierz etykietę w okienku **Wybierz etykietę poufności** , a następnie wybierz pozycję **Dalej**.
 
-10. Jeśli zasady zawierają lokalizację Exchange: Określ opcjonalne konfiguracje na **stronie Dodatkowe ustawienia poczty e-mail**:
+10. Jeśli zasady zawierają lokalizację Exchange: określ opcjonalne konfiguracje na stronie **Dodatkowe ustawienia poczty e-mail**:
     
-    - **Automatyczne zamienianie istniejących** etykiet o takim samym lub niskim priorytecie: Dotyczy zarówno przychodzących, jak i wychodzących wiadomości e-mail. Wybranie tego ustawienia zapewnia, że zawsze będzie stosowana pasująca etykieta wrażliwości. Jeśli nie wybierzesz tego ustawienia, pasującą etykietę wrażliwości nie zostanie zastosowana do wiadomości e-mail, które mają istniejącą etykietę [](sensitivity-labels.md#label-priority-order-matters) wrażliwości o wyższym priorytecie lub ręcznie oznaczone etykietą.
+    - **Automatycznie zastąp istniejące etykiety o tym samym lub niższym priorytecie**: Dotyczy to zarówno przychodzących, jak i wychodzących wiadomości e-mail, po wybraniu tego ustawienia gwarantuje, że etykieta poufności będzie zawsze stosowana. Jeśli to ustawienie nie zostanie wybrane, pasujące etykiety poufności nie będą stosowane do wiadomości e-mail, które mają istniejącą etykietę poufności o [wyższym priorytecie](sensitivity-labels.md#label-priority-order-matters) lub które zostały oznaczone ręcznie.
     
-    - Zastosuj szyfrowanie do wiadomości e-mail otrzymanych spoza **organizacji: Po** wybraniu tej opcji musisz przypisać właściciela zarządzania [](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) prawami, aby zapewnić, że upoważniona osoba w Twojej organizacji będzie mieć uprawnienia [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) do używania pełnej kontroli dla wiadomości e-mail wysyłanych z Twojej organizacji spoza organizacji oraz etykiet zasad za pomocą szyfrowania. Ta rola może być potrzebna do późniejszego usunięcia szyfrowania lub przypisania różnych praw użytkowania użytkownikom w organizacji.
+    - **Zastosuj szyfrowanie do wiadomości e-mail odebranych spoza organizacji**: po wybraniu tej opcji musisz przypisać [właściciela usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) , aby upewnić się, że autoryzowana osoba w organizacji ma [prawa do pełnej kontroli użycia](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) wiadomości e-mail wysyłanych spoza organizacji i etykiet zasad za pomocą szyfrowania. Ta rola może być potrzebna do późniejszego usunięcia szyfrowania lub przypisania różnych praw użytkowania dla użytkowników w organizacji.
         
-        W **przypadku ustawienia Przypisz właściciela zarządzania prawami** określ pojedynczego użytkownika za pomocą adresu e-mail należącego do Twojej organizacji. Nie określaj kontaktu pocztowego, udostępnionej skrzynki pocztowej ani żadnego typu grupy, ponieważ nie są one obsługiwane dla tej roli.
+        W obszarze **Przypisywanie właściciela usługi Rights Management** określ pojedynczego użytkownika za pomocą adresu e-mail należącego do Organizacji. Nie określaj kontaktu pocztowego, udostępnionej skrzynki pocztowej ani żadnego typu grupy, ponieważ nie są one obsługiwane dla tej roli.
 
-10. Na **stronie** Zdecyduj, czy chcesz przetestować zasady teraz, czy później: Wybierz pozycję Uruchom  zasady w trybie symulacyjnej, jeśli chcesz teraz uruchomić zasady auto etykiet w trybie symulacyjnej. W przeciwnym razie **wybierz pozycję Odejdzie z zasad wyłączonych**. Wybierz **pozycję Dalej**:
+10. Na stronie **Zdecyduj, czy chcesz przetestować zasady teraz, czy później** : wybierz pozycję **Uruchom zasady w trybie symulacji** , jeśli chcesz teraz uruchomić zasady automatycznego etykietowania w trybie symulacji. W przeciwnym razie wybierz pozycję **Pozostaw wyłączone zasady**. Wybierz pozycję **Dalej**:
 
-    ![Przetestuj skonfigurowane zasady automatycznego oznaczania etykiet.](../media/simulation-mode-auto-labeling-wizard.png)
+    ![Przetestuj skonfigurowane zasady automatycznego etykietowania.](../media/simulation-mode-auto-labeling-wizard.png)
 
-11. Strona **Podsumowanie:** Przejrzyj konfigurację zasad automatycznego oznaczania etykiet i w razie potrzeby wprowadzić wymagane zmiany, a następnie dokończ konfigurację.
+11. Na stronie **Podsumowanie** : przejrzyj konfigurację zasad automatycznego etykietowania i wprowadź wszelkie wymagane zmiany, a następnie ukończ konfigurację.
 
- Teraz na stronie  **Information** **protectionAuto-labeling** >  (Ochrona informacjiAutomatyczne etykiety) są dostępne zasady auto etykiet w sekcji Symulacja lub Wyłączone w zależności od tego, czy ma ona być uruchamiana w trybie symulacyjnej, czy nie. Wybierz zasady, aby wyświetlić szczegóły konfiguracji i stanu (na przykład nadal działa **symulacyjna zasada**). W przypadku zasad w trybie symulowania  wybierz kartę Dopasowane elementy, aby sprawdzić, które wiadomości e-mail lub dokumenty są zgodne z określonymi regułami.
+Teraz na stronie Information **protectionAuto-labeling** (**Ochrona** >  informacji) zasady automatycznego etykietowania są widoczne w sekcji **Symulacja** lub **Wył.**, w zależności od tego, czy zostały uruchomione w trybie symulacji, czy nie. Wybierz zasady, aby wyświetlić szczegóły konfiguracji i stanu (na przykład **symulacja zasad jest nadal uruchomiona**). W przypadku zasad w trybie symulacji wybierz kartę **Dopasowane elementy** , aby zobaczyć, które wiadomości e-mail lub dokumenty pasują do określonych reguł.
 
-Zasady można modyfikować bezpośrednio w tym interfejsie:
+Zasady można modyfikować bezpośrednio z tego interfejsu:
 
-- W przypadku zasad w **sekcji Wyłączone** wybierz przycisk **Edytuj zasady** .
+- W przypadku zasad w sekcji **Wył** . wybierz przycisk **Edytuj zasady** .
 
-- Dla zasad w sekcji **Symulacja** wybierz opcję Edytuj  zasady w górnej części strony, z jednej z kart:
+- W przypadku zasad w sekcji **Symulacja** wybierz opcję **Edytuj zasady** w górnej części strony na dowolnej karcie:
 
-    ![Opcja Edytuj zasady auto etykiet.](../media/auto-labeling-edit.png)
+    ![Edytuj opcję zasad automatycznego etykietowania.](../media/auto-labeling-edit.png)
 
-    Gdy wszystko będzie gotowe do uruchomienia zasad bez symulowania, wybierz opcję **Włącz zasady** .
+    Gdy wszystko będzie gotowe do uruchomienia zasad bez symulacji, wybierz opcję **Włącz zasady** .
 
-Zasady automatycznego oznaczania są uruchamiane w sposób ciągły do momentu ich usunięcia. Na przykład nowe i zmodyfikowane pliki zostaną uwzględnione w bieżących ustawieniach zasad.
+Zasady automatycznego etykietowania są uruchamiane w sposób ciągły, dopóki nie zostaną usunięte. Na przykład nowe i zmodyfikowane pliki zostaną dołączone do bieżących ustawień zasad.
 
-### <a name="monitoring-your-auto-labeling-policy"></a>Monitorowanie zasad auto etykiet
+### <a name="monitoring-your-auto-labeling-policy"></a>Monitorowanie zasad automatycznego etykietowania
 
-Po włączeniu zasad automatycznego oznaczania możesz wyświetlić postęp oznaczania etykiet dla plików w wybranych SharePoint i OneDrive lokalizacjach. Wiadomości e-mail nie są uwzględniane w postępie oznaczania etykiet, ponieważ są automatycznie oznaczane w trakcie ich wysłania.
+Po włączeniu zasad automatycznego etykietowania możesz wyświetlić postęp etykietowania plików w wybranych lokalizacjach SharePoint i OneDrive. Wiadomości e-mail nie są uwzględniane w postępie etykietowania, ponieważ są automatycznie oznaczone jako wysyłane.
 
-Postęp oznaczania etykiet obejmuje pliki, które mają zostać oznaczone etykietą przez zasady, pliki oznaczone etykietą w ciągu ostatnich siedmiu dni oraz całkowitą liczbę plików oznaczonych etykietą. Ponieważ dziennie może oznaczać maksymalnie 25 000 plików, te informacje zapewniają wgląd w bieżący postęp oznaczania zasad i liczbę plików, które nadal mają zostać oznaczone etykietą.
+Postęp etykietowania obejmuje pliki, które mają być oznaczone przez zasady, pliki oznaczone etykietą w ciągu ostatnich siedmiu dni oraz łączną liczbę plików oznaczonych etykietą. Ze względu na maksymalne etykietowanie 25 000 plików dziennie te informacje zapewniają wgląd w bieżący postęp etykietowania zasad oraz liczbę plików, które mają być nadal oznaczone etykietami.
 
-Po pierwszym włączeniu zasad początkowo jest widać wartość 0, aby oznaczać pliki do momentu pobrania najnowszych danych. Te informacje o postępie są aktualizowane co 48 godzin, więc można się spodziewać, że co drugi dzień będą dostępne najnowsze dane. Po wybraniu zasad auto etykiet można wyświetlić więcej szczegółów dotyczących zasad w okienku wysuwu, które zawiera informacje o postępie etykiet dla 10 najlepszych witryn. Informacje w tym wysuwanych okienku mogą być bardziej aktualne niż zagregowane informacje o zasadach wyświetlane na stronie głównej Auto **etykiecie** .
+Po pierwszym włączeniu zasad początkowo zobaczysz wartość 0, aby pliki były oznaczone etykietami do momentu pobrania najnowszych danych. Te informacje o postępie są aktualizowane co 48 godzin, więc możesz spodziewać się najbardziej aktualnych danych co drugi dzień. Po wybraniu zasad automatycznego etykietowania można wyświetlić więcej szczegółów dotyczących zasad w okienku wysuwanym, które obejmuje postęp etykietowania według 10 pierwszych witryn. Informacje w tym okienku wysuwanym mogą być bardziej aktualne niż zagregowane informacje o zasadach wyświetlane na stronie głównej **Automatycznego etykietowania** .
 
-Wyniki zasad auto etykiet można również wyświetlić przy użyciu [Eksploratora](data-classification-content-explorer.md) zawartości, gdy masz odpowiednie [uprawnienia](data-classification-content-explorer.md#permissions):
+Wyniki zasad automatycznego etykietowania można również wyświetlić za pomocą [Eksploratora zawartości](data-classification-content-explorer.md) , jeśli masz odpowiednie [uprawnienia](data-classification-content-explorer.md#permissions):
 
-- **Grupa ról Podgląd listy Eksploratora** zawartości umożliwia wyświetlanie etykiety pliku, ale nie zawartości pliku.
-- **Grupy ról podglądu zawartości** w Eksploratorze zawartości **oraz** grupy Information Protection i **Information Protection** Grupy ról (obecnie dostępne w wersji zapoznawczej) eksploratora zawartości umożliwiają wyświetlanie zawartości pliku.
+- Grupa ról **Podgląd listy Eksploratora zawartości** umożliwia wyświetlenie etykiety pliku, ale nie jego zawartości.
+- **Grupa ról Przeglądarki zawartości Eksploratora zawartości** oraz **grupy ról Information Protection** i **Information Protection Badacze** (obecnie w wersji zapoznawczej) umożliwiają wyświetlenie zawartości pliku.
 
 > [!TIP]
-> Za pomocą Eksploratora zawartości można również identyfikować lokalizacje, w których znajdują się dokumenty z informacjami poufnymi, ale nie mają etykiety. Korzystając z tych informacji, rozważ dodanie tych lokalizacji do zasad auto etykiet i dołącz jako reguły określone typy informacji poufnych.
+> Możesz również użyć Eksploratora zawartości, aby zidentyfikować lokalizacje, w których znajdują się dokumenty z poufnymi informacjami, ale nie są oznaczane etykietami. Korzystając z tych informacji, rozważ dodanie tych lokalizacji do zasad automatycznego etykietowania i uwzględnij zidentyfikowane typy informacji poufnych jako reguły.
 
-### <a name="use-powershell-for-auto-labeling-policies"></a>Używanie programu PowerShell do automatycznego oznaczania zasad
+### <a name="use-powershell-for-auto-labeling-policies"></a>Używanie programu PowerShell do automatycznego etykietowania zasad
 
-Za pomocą programu [PowerShell &](/powershell/exchange/scc-powershell) zabezpieczeń i zgodności możesz tworzyć i konfigurować zasady automatycznego oznaczania. Oznacza to, że można w pełni skrybować tworzenie i konserwację zasad auto etykiet, co zapewnia również bardziej skuteczną metodę określania wielu adresów URL dla lokalizacji OneDrive i SharePoint etykiet.
+Program [PowerShell Security & Compliance Center](/powershell/exchange/scc-powershell) umożliwia tworzenie i konfigurowanie zasad automatycznego etykietowania. Oznacza to, że można w pełni wykonywać skrypty tworzenia i konserwacji zasad automatycznego etykietowania, co zapewnia również bardziej wydajną metodę określania wielu adresów URL dla lokalizacji OneDrive i SharePoint.
 
-Przed uruchomieniem poleceń w programie PowerShell należy najpierw połączyć się z programem [PowerShell w centrum zabezpieczeń & zgodności](/powershell/exchange/connect-to-scc-powershell).
+Przed uruchomieniem poleceń w programie PowerShell należy najpierw [nawiązać połączenie z programem PowerShell & Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell).
 
-Aby utworzyć nowe zasady automatycznego oznaczania etykiet:
+Aby utworzyć nowe zasady automatycznego etykietowania:
 
 ```powershell
 New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
 
-To polecenie tworzy zasady automatycznego oznaczania etykiet dla SharePoint witrynie. Aby uzyskać OneDrive lokalizacji, użyj zamiast tego *parametru OneDriveLocation*.
+To polecenie tworzy zasady automatycznego etykietowania dla określonej witryny SharePoint. W przypadku lokalizacji OneDrive użyj parametru *OneDriveLocation*.
 
-Aby dodać więcej witryn do istniejących zasad automatycznego oznaczania etykiet:
+Aby dodać więcej witryn do istniejących zasad automatycznego etykietowania:
 
 ```powershell
 $spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
 Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
 
-To polecenie określa nowe adresy SHAREPOINT URL w zmiennej, która jest następnie dodawana do istniejących zasad auto etykiet. Aby zamiast OneDrive lokalizacji, użyj *parametru AddOneDriveLocation* z inną zmienną, taką *jak $OneDriveLocations*.
+To polecenie określa nowe adresy URL SharePoint w zmiennej, która jest następnie dodawana do istniejących zasad automatycznego etykietowania. Aby zamiast tego dodać lokalizacje OneDrive, użyj parametru *AddOneDriveLocation* z inną zmienną, taką jak *$OneDriveLocations*.
 
-Aby utworzyć nową regułę zasad automatycznego oznaczania:
+Aby utworzyć nową regułę zasad automatycznego etykietowania:
 
 ```powershell
 New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelingRuleName> -ContentContainsSensitiveInformation @{"name"= "a44669fe-0d48-453d-a9b1-2cc83f2cba77"; "mincount" = "2"} -Workload SharePoint
 ```
 
-W przypadku istniejących zasad automatycznego oznaczania to polecenie tworzy nową regułę zasad wykrywającą typ informacji poufnych numer **SSN,** który ma identyfikator jednostki a44669fe-0d48-453d-a9b1-2cc83f2cba77. Aby znaleźć identyfikatory encji dla innych typów informacji poufnych, zobacz Definicje encji [typu informacji poufnych](sensitive-information-type-entity-definitions.md).
+W przypadku istniejących zasad automatycznego etykietowania to polecenie tworzy nową regułę zasad w celu wykrywania poufnego typu informacji **numeru ubezpieczenia społecznego (SSN) w Stanach Zjednoczonych**, który ma identyfikator jednostki a44669fe-0d48-453d-a9b1-2cc83f2cba77. Aby znaleźć identyfikatory jednostek dla innych typów informacji poufnych, zapoznaj się z [definicjami jednostek typów informacji poufnych](sensitive-information-type-entity-definitions.md).
 
-Aby uzyskać więcej informacji na temat poleceń cmdlet programu PowerShell, które obsługują zasady auto etykietowania, ich dostępne parametry i kilka przykładów, zobacz następującą pomoc w zakresie poleceń cmdlet:
+Aby uzyskać więcej informacji na temat poleceń cmdlet programu PowerShell obsługujących zasady automatycznego etykietowania, ich dostępne parametry i kilka przykładów, zobacz następującą pomoc dotyczącą poleceń cmdlet:
 
 - [Get-AutoSensitivityLabelPolicy](/powershell/module/exchange/get-autosensitivitylabelpolicy)
 - [New-AutoSensitivityLabelPolicy](/powershell/module/exchange/new-autosensitivitylabelpolicy)
@@ -429,18 +431,18 @@ Aby uzyskać więcej informacji na temat poleceń cmdlet programu PowerShell, kt
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
 
-## <a name="tips-to-increase-labeling-reach"></a>Wskazówki, aby zwiększyć zasięg etykiet
+## <a name="tips-to-increase-labeling-reach"></a>Wskazówki zwiększyć zasięg etykietowania
 
-Mimo że automatyczne oznaczanie etykiet jest jednym z najbardziej efektywnych sposobów klasyfikowania, oznaczania i chroniania plików programu Office, których właścicielami jest Twoja organizacja, sprawdź, czy można je uzupełnić za pomocą dowolnej z następujących metod, aby zwiększyć zasięg etykiet:
+Chociaż automatyczne etykietowanie jest jednym z najbardziej wydajnych sposobów klasyfikowania, etykietowania i ochrony plików Office, które są własnością organizacji, sprawdź, czy można uzupełnić je o dowolną z następujących metod w celu zwiększenia zasięgu etykietowania:
 
-- W SharePoint Syntex można zastosować etykietę wrażliwości do modelu zrozumienia [dokumentu, dzięki](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) czemu dokumenty zidentyfikowane w bibliotece dokumentów SharePoint są automatycznie oznaczane.
+- Za pomocą SharePoint Syntex można [zastosować etykietę poufności do modelu zrozumienia dokumentów](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), aby identyfikowane dokumenty w bibliotece SharePoint były automatycznie oznaczane etykietami.
 
-- W przypadku korzystania z [klienta usługi Azure Information Protection etykiet ujednoliconej](/azure/information-protection/rms-client/aip-clientv2):
+- W przypadku korzystania z [klienta ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2):
 
-  - W przypadku plików w lokalnych magazynach danych, takich jak udziały sieciowe i biblioteki programu SharePoint Server: Skaner umożliwia [](/azure/information-protection/deploy-aip-scanner) odnajdowanie poufnych informacji w tych plikach i odpowiednie oznaczanie ich etykietami. Jeśli planujesz migrację lub przekazanie tych plików do usługi SharePoint w programie Microsoft 365, użyj skanera do oznaczania plików etykietami przed przeniesieniem ich do chmury.
+  - W przypadku plików w lokalnych magazynach danych, takich jak udziały sieciowe i biblioteki serwera SharePoint: użyj [skanera](/azure/information-protection/deploy-aip-scanner), aby odnaleźć poufne informacje w tych plikach i odpowiednio je oznaczyć etykietami. Jeśli planujesz migrację lub przekazanie tych plików do SharePoint w Microsoft 365, użyj skanera, aby oznaczyć pliki etykietami przed przeniesieniem ich do chmury.
 
-  - Jeśli używasz innego rozwiązania do etykiet przed użyciem etykiet wrażliwości: Użyj programu PowerShell i [zaawansowanego](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) ustawienia, aby ponownie użyć etykiet z tych rozwiązań.
+  - Jeśli używasz innego rozwiązania do etykietowania przed użyciem etykiet poufności: użyj programu PowerShell i [ustawienia zaawansowanego do ponownego użycia etykiet](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) z tych rozwiązań.
 
-- [Zachęcaj użytkowników do ręcznego](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) oznaczania etykiet po zasypceniu ich, jakie etykiety wrażliwości należy zastosować. Jeśli masz pewność, że użytkownicy zrozumieją, którą etykietę zastosować, rozważ skonfigurowanie etykiety domyślnej i obowiązkowych etykiet jako [ustawień zasad](sensitivity-labels.md#what-label-policies-can-do).
+- Zachęcaj do [ręcznego etykietowania](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) po zapewnieniu użytkownikom trenowania, które etykiety poufności mają być stosowane. Jeśli masz pewność, że użytkownicy zrozumieją, która etykieta ma zostać zastosowana, rozważ skonfigurowanie etykiety domyślnej i obowiązkowego etykietowania jako [ustawień zasad](sensitivity-labels.md#what-label-policies-can-do).
 
-Ponadto rozważ domyślne oznaczanie nowych plików jako poufnych w programie SharePoint, aby uniemożliwić gościom dostęp do nowo dodanych plików, dopóki co najmniej jedna zasada DLP nie przeskanuje zawartości pliku.[](/sharepoint/sensitive-by-default)
+Ponadto należy rozważyć [domyślne oznaczenie nowych plików jako poufnych](/sharepoint/sensitive-by-default) w SharePoint, aby uniemożliwić gościom dostęp do nowo dodanych plików, dopóki co najmniej jedna zasada DLP nie przeskanuje zawartości pliku.

@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Poznaj najlepsze rozwiązania dotyczące ładu dla narzędzi do współpracy Microsoft 365, w tym Grupy Microsoft 365, Teams, SharePoint i Yammer.
-ms.openlocfilehash: 130342725e8c43b4aeaac116b94704db3046e059
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4afed27fa6d40f7f6967583bcfd3f43c69c7963
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941396"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285001"
 ---
 # <a name="what-is-collaboration-governance"></a>Co to jest zarządzanie współpracą?
 
@@ -182,7 +182,7 @@ Te moduły szkoleniowe z usługi Microsoft Learn mogą pomóc w poznaniu funkcji
 
 |Szkolenia:|Ochrona informacji o przedsiębiorstwie za pomocą Microsoft 365|
 |:---|:---|
-|![Teams ikona trenowania.](../media/protect-enterprise-information-microsoft-365.svg)|Ochrona i zabezpieczanie informacji organizacji jest trudniejsze niż kiedykolwiek wcześniej. W ścieżce szkoleniowej Ochrona informacji o przedsiębiorstwie za pomocą Microsoft 365 omówiono sposób ochrony poufnych informacji przed przypadkowym nadmiernym udostępnianiem lub niewłaściwym użyciem, sposobu odnajdywania i klasyfikowania danych, sposobu ich ochrony za pomocą etykiet poufności oraz sposobu monitorowania i analizowania poufnych informacji w celu ochrony przed ich utratą. Ta ścieżka szkoleniowa może pomóc w przygotowaniu się do certyfikacji Microsoft 365 Certified: Security Administrator Associate i Microsoft 365 Certified: Enterprise Administration Expert..<br><br>1 godz. ścieżka Edukacja — 5 modułów|
+|![Teams ikona trenowania.](../media/protect-enterprise-information-microsoft-365.svg)|Ochrona i zabezpieczanie informacji organizacji jest trudniejsze niż kiedykolwiek wcześniej. W ścieżce szkoleniowej Ochrona informacji o przedsiębiorstwie za pomocą Microsoft 365 omówiono sposób ochrony poufnych informacji przed przypadkowym nadmiernym udostępnianiem lub niewłaściwym użyciem, sposobu odnajdywania i klasyfikowania danych, sposobu ich ochrony za pomocą etykiet poufności oraz sposobu monitorowania i analizowania poufnych informacji w celu ochrony przed ich utratą. Ta ścieżka szkoleniowa może pomóc w przygotowaniu się do certyfikacji Microsoft 365 Certified: Security Administrator Associate i Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 godz. ścieżka Edukacja — 5 modułów|
 
 > [!div class="nextstepaction"]
 > [Rozpocznij >](/learn/modules/m365-security-info-overview/introduction/)
@@ -205,7 +205,7 @@ Co architekci IT muszą wiedzieć o grupach w Microsoft 365
 
 |**Element**|**Opis**|
 |:-----|:-----|
-|[![Obraz kciuka dla infografiki grup.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Zaktualizowano czerwiec 2019 r.|Na tych ilustracjach przedstawiono różne typy grup, sposób ich tworzenia i zarządzania oraz kilka zaleceń dotyczących ładu.|
+|[![Obraz kciuka dla infografiki grup.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Zaktualizowano maj 2022 r.|Na tych ilustracjach przedstawiono różne typy grup, sposób ich tworzenia i zarządzania oraz kilka zaleceń dotyczących ładu.|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams i powiązanych usług produktywności w Microsoft 365 dla architektów IT
 Architektura logiczna usług produktywności w Microsoft 365, wiodąca z Microsoft Teams.
@@ -223,7 +223,7 @@ Ten zestaw ilustracji korzysta z jednej z najbardziej regulowanych branż, usłu
 
 | Element | Opis |
 |:-----|:-----|
-|[![Plakat modelu: Funkcje ochrony informacji i zgodności w usłudze Microsoft Purview.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Angielski: [pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japoński: [pobierz jako plik PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano listopad 2020 r.|Zawiera: <ul><li>  Microsoft Purview Information Protection i Microsoft Purview — zapobieganie utracie danych</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność w komunikacji</li><li>Ryzyko związane z wewnętrznymi testerami</li><li>Pozyskiwanie danych innych firm</li>|
+|[![Plakat modelu: Funkcje ochrony informacji i zgodności w usłudze Microsoft Purview.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Angielski: [pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japoński: [pobierz jako plik PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano listopad 2020 r.|Zawiera: <ul><li>  Microsoft Purview Information Protection i Microsoft Purview Data Loss Prevention</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność w komunikacji</li><li>Ryzyko związane z wewnętrznymi testerami</li><li>Pozyskiwanie danych innych firm</li>|
 
 ## <a name="conference-sessions"></a>Sesje konferencyjne
 
@@ -245,7 +245,7 @@ Dowiedz się, jak skonfigurować cykl życia wygaśnięcia grup, zasady nazewnic
 
 Zobacz zakulisowy przykład współpracy Grupy Microsoft 365, SharePoint, Teams i Yammer w celu zapewnienia globalnej platformy współpracy.
 
-- [Znajdowanie słodkiego miejsca współpracy za pomocą grup Office 365, SharePoint, Teams i Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [Znajdowanie słodkiego miejsca współpracy za pomocą Grupy Microsoft 365, SharePoint, Teams i Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
 ## <a name="see-also"></a>Zobacz też
 

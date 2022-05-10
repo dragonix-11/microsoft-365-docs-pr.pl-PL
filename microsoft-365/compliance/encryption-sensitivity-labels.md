@@ -1,5 +1,5 @@
 ---
-title: Ograniczanie dostępu do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania
+title: Stosowanie szyfrowania przy użyciu etykiet poufności
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,16 +16,18 @@ search.appverid:
 - MET150
 description: Skonfiguruj etykiety poufności na potrzeby szyfrowania, które chroni dane, ograniczając dostęp i użycie.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0ec60e573d5c05c4a30e74f235ffae5983de03dc
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 7355ef75eb455ad7442052daf1df814eb9b3bf26
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705413"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285089"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Ogranicz dostęp do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Podczas tworzenia etykiety poufności można ograniczyć dostęp do zawartości, do którą zostanie zastosowana etykieta. Na przykład za pomocą ustawień szyfrowania etykiety poufności można chronić zawartość, aby:
 
@@ -45,7 +47,7 @@ Na koniec, jako administrator, podczas konfigurowania etykiety poufności w celu
 - **Przypisz teraz uprawnienia**, aby określić dokładnie, którzy użytkownicy uzyskują uprawnienia do zawartości z tą etykietą.
 - **Zezwalaj użytkownikom na przypisywanie uprawnień** podczas stosowania etykiety do zawartości. Dzięki temu możesz zezwolić osobom w organizacji na pewną elastyczność, która może wymagać współpracy i wykonania pracy.
 
-Ustawienia szyfrowania są dostępne podczas [tworzenia etykiety poufności](create-sensitivity-labels.md) w Centrum zgodności platformy Microsoft 365. Możesz również użyć starszego portalu, Centrum zgodności & zabezpieczeń.
+Ustawienia szyfrowania są dostępne podczas [tworzenia etykiety poufności](create-sensitivity-labels.md) w portalu zgodności usługi Microsoft Purview.
 
 ## <a name="understand-how-the-encryption-works"></a>Informacje o tym, jak działa szyfrowanie
 
@@ -192,14 +194,14 @@ Podczas przypisywania uprawnień można wybrać następujące opcje:
 
 - Wszyscy uwierzytelnieni użytkownicy. Przed wybraniem tego ustawienia upewnij się, że znasz [wymagania i ograniczenia](#requirements-and-limitations-for-add-any-authenticated-users) tego ustawienia.
 
-- Dowolny konkretny użytkownik lub grupa zabezpieczeń z obsługą poczty e-mail, grupa dystrybucyjna lub grupa Microsoft 365 ([wcześniej grupa Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) w usłudze Azure AD. Grupa Microsoft 365 może mieć członkostwo statyczne lub [dynamiczne](/azure/active-directory/users-groups-roles/groups-create-rule). Należy pamiętać, że nie można używać [dynamicznej grupy dystrybucyjnej z Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), ponieważ ten typ grupy nie jest synchronizowany z usługą Azure AD i nie można używać grupy zabezpieczeń, która nie jest włączona przy użyciu poczty e-mail.
+- Każda określona grupa zabezpieczeń, grupa dystrybucyjna lub grupa Microsoft 365 z obsługą poczty e-mail lub użytkownika ([wcześniej grupa Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) w Azure AD. Grupa Microsoft 365 może mieć członkostwo statyczne lub [dynamiczne](/azure/active-directory/users-groups-roles/groups-create-rule). Należy pamiętać, że nie można używać [dynamicznej grupy dystrybucyjnej z Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), ponieważ ten typ grupy nie jest synchronizowany z Azure AD i nie można użyć grupy zabezpieczeń, która nie jest włączona pocztą e-mail.
     
     Chociaż można określić grupy zawierające kontakty pocztowe jako wygodną metodę udzielania dostępu wielu osobom spoza organizacji, obecnie istnieje znany problem z tą konfiguracją. Aby uzyskać więcej informacji, zobacz [Kontakty poczty w grupach mają sporadyczny dostęp do zaszyfrowanej zawartości](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content).
 
-- Dowolny adres e-mail lub domena. Użyj tej opcji, aby określić wszystkich użytkowników w innej organizacji, którzy korzystają z usługi Azure AD, wprowadzając dowolną nazwę domeny z tej organizacji. Możesz również użyć tej opcji dla dostawców społecznościowych, wprowadzając ich nazwę domeny, taką jak **gmail.com**, **hotmail.com** lub **outlook.com**.
+- Dowolny adres e-mail lub domena. Użyj tej opcji, aby określić wszystkich użytkowników w innej organizacji, którzy używają Azure AD, wprowadzając dowolną nazwę domeny z tej organizacji. Możesz również użyć tej opcji dla dostawców społecznościowych, wprowadzając ich nazwę domeny, taką jak **gmail.com**, **hotmail.com** lub **outlook.com**.
 
     > [!NOTE]
-    > Jeśli określisz domenę z organizacji korzystającej z usługi Azure AD, nie możesz ograniczyć dostępu do tej określonej domeny. Zamiast tego wszystkie zweryfikowane domeny w usłudze Azure AD są automatycznie uwzględniane dla dzierżawy, która jest właścicielem określonej nazwy domeny.
+    > Jeśli określisz domenę z organizacji korzystającej z Azure AD, nie możesz ograniczyć dostępu do tej określonej domeny. Zamiast tego wszystkie zweryfikowane domeny w Azure AD są automatycznie uwzględniane dla dzierżawy, która jest właścicielem określonej nazwy domeny.
 
 Po wybraniu wszystkich użytkowników i grup w organizacji lub przeglądaniu katalogu użytkownicy lub grupy muszą mieć adres e-mail.
 
@@ -210,7 +212,7 @@ Najlepszym rozwiązaniem jest użycie grup, a nie użytkowników. Ta strategia s
 To ustawienie nie ogranicza tego, kto może uzyskiwać dostęp do zawartości szyfrowanej przez etykietę, jednocześnie szyfrując zawartość i udostępniając opcje ograniczające sposób użycia zawartości (uprawnienia) i uzyskiwania do niej dostępu (wygaśnięcie i dostęp w trybie offline). Jednak aplikacja otwierająca zaszyfrowaną zawartość musi być w stanie obsługiwać używane uwierzytelnianie. Z tego powodu federacyjni dostawcy usług społecznościowych, tacy jak Google, i jednorazowe uwierzytelnianie kodem dostępu działają tylko w przypadku poczty e-mail i tylko wtedy, gdy używasz Exchange Online. Konta Microsoft mogą być używane z aplikacjami Office 365 i [przeglądarką usługi Azure Information Protection](https://portal.azurerms.com/#/download).
 
 > [!NOTE]
-> Rozważ użycie tego ustawienia z [integracją SharePoint i OneDrive z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview), gdy etykiety poufności są [włączone dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+> Rozważ użycie tego ustawienia z [integracją SharePoint i OneDrive z Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview), gdy etykiety poufności są [włączone dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Niektóre typowe scenariusze dla wszystkich ustawień uwierzytelnionych użytkowników:
 

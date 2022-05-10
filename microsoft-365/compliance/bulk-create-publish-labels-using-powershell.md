@@ -18,52 +18,54 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak za pomocą programu PowerShell tworzyć i publikować etykiety przechowywania z wiersza polecenia, niezależnie od Centrum zgodności platformy Microsoft 365.
-ms.openlocfilehash: 3f64fc7aede06e512d735908b8f06b7a8cb3e032
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak za pomocą programu PowerShell tworzyć i publikować etykiety przechowywania z poziomu wiersza polecenia niezależnie od portalu zgodności usługi Microsoft Purview.
+ms.openlocfilehash: 7d650c87aad92cdb65ed9a40c98c8fc3c94e01fb
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985645"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287161"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Tworzenie i publikowanie etykiet przechowywania przy użyciu programu PowerShell
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Gdy zdecydujesz się używać etykiet przechowywania[](retention.md), aby ułatwić przechowywanie lub usuwanie dokumentów i wiadomości e-mail w programie Microsoft 365, możesz mieć wiele, a nawet setki etykiet przechowywania, które można tworzyć i publikować. Zalecaną metodą tworzenia etykiet przechowywania w skali jest zastosowanie [planu](file-plan-manager.md) plików na podstawie Centrum zgodności platformy Microsoft 365. Można jednak użyć także programu [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Po podjęciu decyzji o użyciu [etykiet przechowywania](retention.md), które ułatwiają przechowywanie lub usuwanie dokumentów i wiadomości e-mail w Microsoft 365, być może wiesz, że istnieje wiele i prawdopodobnie setki etykiet przechowywania do tworzenia i publikowania. Zalecaną metodą tworzenia etykiet przechowywania na dużą skalę jest użycie [planu plików](file-plan-manager.md) z portalu zgodności usługi Microsoft Purview. Można jednak również użyć programu [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
-Informacje, pliki szablonów i przykłady oraz skrypty w tym artykule ułatwiają zbiorcze tworzenie etykiet przechowywania i publikowanie ich w zasadach etykiet przechowywania. Następnie administratorzy i użytkownicy mogą stosować etykiety [przechowywania](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
+Skorzystaj z informacji, plików szablonów i przykładów oraz skryptu w tym artykule, aby ułatwić zbiorcze tworzenie etykiet przechowywania i publikowanie ich w zasadach etykiet przechowywania. Następnie etykiety przechowywania mogą być [stosowane przez administratorów i użytkowników](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
-Podane instrukcje nie obsługują etykiet przechowywania, które są stosowane automatycznie.
+Podane instrukcje nie obsługują etykiet przechowywania, które są automatycznie stosowane.
 
-Omówienie: 
+Przegląd: 
 
-1. W Excel utwórz listę etykiet przechowywania i listę ich zasad przechowywania etykiet.
+1. W Excel utwórz listę etykiet przechowywania i listę ich zasad etykiet przechowywania.
 
-2. Za pomocą programu PowerShell utwórz etykiety przechowywania i zasady przechowywania etykiet na tych listach.
+2. Użyj programu PowerShell, aby utworzyć etykiety przechowywania i zasady etykiet przechowywania na tych listach.
   
 ## <a name="disclaimer"></a>Zastrzeżenie
 
-Przykładowe skrypty podane w tym artykule nie są obsługiwane w żadnym standardowym programie lub usłudze pomocy technicznej firmy Microsoft. Przykładowe skrypty są dostarczane W JAKIM JEST bez jakiejkolwiek gwarancji. Firma Microsoft dodatkowo nie udziela żadnych dorozumianych gwarancji, w tym, ale nie wyłącznie, żadnych dorozumianych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko związane z użyciem lub wykonaniem przykładowych skryptów i dokumentacji pozostaje tylko dla użytkownika. Firma Microsoft, jej autorzy ani nikt inny biorący udział w tworzeniu, produkcji lub dostarczaniu skryptów nie będą w żadnym wypadku ponosić odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody związane z utratą zysków, przerwami w działaniu firmy, utratą informacji biznesowych lub inne straty pieniężne) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub nieumiejętnego korzystania z tych skryptów lub dokumentacji.  nawet jeśli firma Microsoft została powiadomiona o możliwości wystąpienia takich szkód.
+Przykładowe skrypty podane w tym artykule nie są obsługiwane w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowe skrypty są dostarczane jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowych skryptów i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
   
-## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Krok 1. Tworzenie pliku .csv na etykiety przechowywania
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Krok 1. Tworzenie pliku .csv dla etykiet przechowywania
 
-1. Skopiuj następujący przykładowy plik .csv szablonu oraz wpisy przykładowe czterech różnych etykiet przechowywania i wklej je do Excel. 
+1. Skopiuj następujący przykładowy plik .csv dla szablonu i przykładowe wpisy dla czterech różnych etykiet przechowywania i wklej je do Excel. 
 
-2. Konwertowanie tekstu na kolumny: **Karta Dane Tekst** \> **na przecinek** \> **rozdzielany kolumnami** \>  \> **Ogólne**
+2. Konwertowanie tekstu na kolumny: Karta \> **Dane** **Tekst na kolumny** \> **rozdzielane** \> **przecinkami** \> **ogólne**
 
-2. Zamień przykłady na wpisy dla własnych etykiet przechowywania i ustawień. Aby uzyskać więcej informacji na temat wartości parametrów, zobacz [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
+2. Zastąp przykłady wpisami dla własnych etykiet przechowywania i ustawień. Aby uzyskać więcej informacji na temat wartości parametrów, zobacz [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
-3. Zapisz arkusz jako .csv w łatwej do znalezienia lokalizacji do późniejszego kroku. Na przykład: C:\>Scripts\Labels.csv
+3. Zapisz arkusz jako plik .csv w lokalizacji, którą można łatwo znaleźć w późniejszym kroku. Na przykład: C:\>Scripts\Labels.csv
 
   
 Uwagi:
 
-- Jeśli plik .csv zawiera etykietę przechowywania o takiej samej nazwie jak już istnieje, skrypt pominie tworzenie tej etykiety przechowywania. Nie są tworzone zduplikowane etykiety przechowywania.
+- Jeśli plik .csv zawiera etykietę przechowywania o takiej samej nazwie jak ta, która już istnieje, skrypt pomija tworzenie tej etykiety przechowywania. Nie są tworzone zduplikowane etykiety przechowywania.
     
-- Nie zmieniaj nagłówków kolumn w przykładowym pliku danych ani nie zmieniaj ich nazw w .csv pliku danych — w przypadku, gdy skrypt nie powiedzie się.
+- Nie zmieniaj ani nie zmieniaj nazw nagłówków kolumn z udostępnionego przykładowego pliku .csv lub skrypt zakończy się niepowodzeniem.
     
-### <a name="sample-csv-file-for-retention-labels"></a>Przykładowy .csv przechowywania etykiet przechowywania
+### <a name="sample-csv-file-for-retention-labels"></a>Przykładowy plik .csv etykiet przechowywania
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -73,24 +75,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>Krok 2. Tworzenie pliku .csv na zasady etykiet przechowywania
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>Krok 2. Tworzenie pliku .csv dla zasad etykiet przechowywania
 
-1. Skopiuj następujący przykładowy plik .csv szablonu oraz wpisy przykładowe trzech różnych zasad przechowywania etykiet i wklej je do Excel. 
+1. Skopiuj następujący przykładowy plik .csv szablonu i przykładowe wpisy dla trzech różnych zasad etykiet przechowywania i wklej je do Excel. 
 
-2. Konwertowanie tekstu na kolumny: **Karta Dane Tekst** \> **na przecinek** \> **rozdzielany kolumnami** \>  \> **Ogólne**
+2. Konwertowanie tekstu na kolumny: Karta \> **Dane** **Tekst na kolumny** \> **rozdzielane** \> **przecinkami** \> **ogólne**
 
 2. Zastąp przykłady wpisami dla własnych zasad etykiet przechowywania i ich ustawień. Aby uzyskać więcej informacji na temat wartości parametrów dla tego polecenia cmdlet, zobacz [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
 
-3. Zapisz arkusz jako .csv w łatwej do znalezienia lokalizacji do późniejszego kroku. Na przykład: `<path>Policies.csv`
+3. Zapisz arkusz jako plik .csv w lokalizacji, którą można łatwo znaleźć w późniejszym kroku. Przykład: `<path>Policies.csv`
 
 
 Uwagi:
   
-- Jeśli plik .csv zawiera zasady etykiet przechowywania o takiej samej nazwie, jak już istnieje, skrypt pominie tworzenie tych zasad etykiet przechowywania. Nie są tworzone żadne zduplikowane zasady etykiet przechowywania.
+- Jeśli plik .csv zawiera zasady etykiet przechowywania o takiej samej nazwie jak ta, która już istnieje, skrypt pomija tworzenie tych zasad etykiet przechowywania. Nie są tworzone zduplikowane zasady etykiet przechowywania.
     
-- Nie zmieniaj nagłówków kolumn w przykładowym pliku danych ani nie zmieniaj ich nazw w .csv pliku danych — w przypadku, gdy skrypt nie powiedzie się.
+- Nie zmieniaj ani nie zmieniaj nazw nagłówków kolumn z udostępnionego przykładowego pliku .csv lub skrypt zakończy się niepowodzeniem.
     
-### <a name="sample-csv-file-for-retention-policies"></a>Przykładowy .csv zasad przechowywania
+### <a name="sample-csv-file-for-retention-policies"></a>Przykładowy plik .csv zasad przechowywania
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -101,17 +103,17 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 ## <a name="step-3-create-the-powershell-script"></a>Krok 3. Tworzenie skryptu programu PowerShell
 
-1. Skopiuj poniższy skrypt programu PowerShell i wklej go do Notatnik.
+1. Skopiuj i wklej następujący skrypt programu PowerShell do Notatnik.
 
-2. Zapisz plik, używając rozszerzenia nazwy **.ps1w** łatwej do znalezienia lokalizacji. Na przykład: `<path>CreateRetentionSchedule.ps1`
+2. Zapisz plik przy użyciu rozszerzenia nazwy pliku **.ps1** w łatwej do znalezienia lokalizacji. Przykład: `<path>CreateRetentionSchedule.ps1`
 
 Uwagi:
 
-- Skrypt wyświetli monit o podanie dwóch plików źródłowych utworzonych w dwóch poprzednich krokach:
-    - Jeśli nie określisz pliku źródłowego do utworzenia etykiet przechowywania, skrypt zostanie przeniesiony w celu utworzenia zasad etykiet przechowywania. 
+- Skrypt monituje o podanie dwóch plików źródłowych utworzonych w dwóch poprzednich krokach:
+    - Jeśli nie określisz pliku źródłowego do utworzenia etykiet przechowywania, skrypt przejdzie dalej, aby utworzyć zasady etykiet przechowywania. 
     - Jeśli nie określisz pliku źródłowego w celu utworzenia zasad etykiet przechowywania, skrypt utworzy tylko etykiety przechowywania.
 
-- Skrypt wygeneruje plik dziennika, który rejestruje każdą akcję, która została przez niego podysowana, i czy akcja zakończyła się powodzeniem, czy nie. Zobacz ostatni krok, aby uzyskać instrukcje znajdowania tego pliku dziennika.
+- Skrypt generuje plik dziennika, który rejestruje każdą wykonywaną akcję i określa, czy akcja zakończyła się powodzeniem, czy niepowodzeniem. Zobacz ostatni krok, aby uzyskać instrukcje dotyczące znajdowania tego pliku dziennika.
 
 ### <a name="powershell-script"></a>Skrypt programu PowerShell
 
@@ -737,17 +739,17 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Krok 4. Uruchamianie skryptu programu PowerShell
 
-Najpierw Połączenie [do programu PowerShell & w Centrum zgodności.](/powershell/exchange/connect-to-scc-powershell)
+Najpierw [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 Następnie uruchom skrypt, który tworzy i publikuje etykiety przechowywania:
   
-1. W sesji programu PowerShell centrum zabezpieczeń & zabezpieczeń wprowadź ścieżkę, `.\` a po niej znaki i nazwę pliku skryptu, a następnie naciśnij klawisz ENTER, aby uruchomić skrypt. Przykład:
+1. W sesji programu PowerShell Usługi Security & Compliance Center wprowadź ścieżkę, a następnie znaki `.\` i nazwę pliku skryptu, a następnie naciśnij klawisz ENTER, aby uruchomić skrypt. Przykład:
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
     ```
 
-2. Skrypt wyświetli monit o lokalizacje plików .csv utworzonych w poprzednich krokach. Wprowadź ścieżkę oraz znaki i `.\` nazwę pliku pliku, .csv następnie naciśnij klawisz ENTER. Na przykład w przypadku pierwszego monitu:
+2. Skrypt wyświetla monit o lokalizacje plików .csv utworzonych w poprzednich krokach. Wprowadź ścieżkę, a następnie znaki `.\` i nazwę pliku .csv, a następnie naciśnij klawisz ENTER. Na przykład w pierwszym wierszu polecenia:
     
     ```powershell
     <path>.\Labels.csv
@@ -755,9 +757,9 @@ Następnie uruchom skrypt, który tworzy i publikuje etykiety przechowywania:
 
 ## <a name="step-5-view-the-log-file-with-the-results"></a>Krok 5. Wyświetlanie pliku dziennika z wynikami
 
-Użyj pliku dziennika utworzonego przez skrypt, aby sprawdzić wyniki i zidentyfikować błędy do rozwiązania.
+Użyj pliku dziennika utworzonego przez skrypt, aby sprawdzić wyniki i zidentyfikować wszelkie błędy, które wymagają rozwiązania.
 
-Plik dziennika można znaleźć w następującej lokalizacji, ale cyfry w przykładowej nazwie pliku różnią się.
+Plik dziennika można znaleźć w następującej lokalizacji, chociaż cyfry w przykładowej nazwie pliku różnią się.
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt

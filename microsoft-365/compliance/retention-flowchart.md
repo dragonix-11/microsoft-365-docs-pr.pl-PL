@@ -1,5 +1,5 @@
 ---
-title: Schemat blokowy do określania, kiedy element zostanie zachowany lub trwale usunięty
+title: Schemat blokowy do określania, kiedy element jest zachowywany lub usuwany
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,33 +16,35 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Określanie wyniku działania elementu z wieloma zasadami przechowywania lub etykietą przechowywania i zasadami przechowywania przy użyciu schematów blokowych
-ms.openlocfilehash: b9c3b94dcb50499b6af72fd124da384f90d16da9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Użyj schematu blokowego, aby określić wynik, gdy element ma wiele zasad przechowywania lub etykietę przechowywania i zasady przechowywania
+ms.openlocfilehash: cf35a89faf3ed526c94acf362f1a927eb36420f0
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021376"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286807"
 ---
-# <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Schemat blokowy do określania, kiedy element zostanie zachowany lub trwale usunięty
+# <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Schemat blokowy określający, kiedy element zostanie zachowany lub trwale usunięty
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Skorzystaj z poniższego wykresu blokowego, [](retention.md#the-principles-of-retention-or-what-takes-precedence) aby zastosować zasady przechowywania do elementu w celu określenia, czy system zachowa go lub trwale usunie w wyniku etykiety przechowywania lub zasad przechowywania.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Ten przepływ logiki jest używany dla elementu, gdy ma zastosowanie jeden z następujących warunków:
+Użyj poniższego schematu blokowego, aby zastosować [zasady przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) do elementu, aby określić, czy system będzie go zachować, czy trwale usunąć go w wyniku etykiety przechowywania lub zasad przechowywania.
 
-- Zastosowano więcej niż jedną zasady przechowywania
-- Etykieta przechowywania i co najmniej jedna zasady przechowywania
+Ten przepływ logiki jest używany dla elementu w przypadku zastosowania jednego z następujących warunków:
 
-Jeśli element podlega zasadom zbierania elektronicznych materiałów dowodowych (lub starszym technologiom przechowywania w przypadku sporu sądowego lub In-Place), jest on zawsze zachowywany przed przepływami decyzji dotyczących zasad przechowywania i etykietą przechowywania.
+- Zastosowano więcej niż jedną zasadę przechowywania
+- Istnieje etykieta przechowywania i co najmniej jedna zasady przechowywania
 
-Jeśli którykolwiek z terminów użytych w tym schematze blokowy nie jest dla Ciebie nieznany, zobacz Informacje o zasadach przechowywania i [etykietach przechowywania](retention.md).
+Gdy element podlega blokadzie zbierania elektronicznych materiałów dowodowych (lub starszym technologiom archiwum sporów sądowych lub In-Place blokady), zawsze będzie przechowywany przed podjęciem decyzji o zasadach przechowywania i etykiecie przechowywania.
+
+Jeśli którykolwiek z terminów używanych w tym schemacie blokowym nie jest ci znany, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
 
 
-   ![Schemat blokowy pozwala określić, kiedy element zostanie zachowany lub trwale usunięty.](../media/retention-flowchart.svg)
+   ![Schemat blokowy określający, kiedy element zostanie zachowany lub trwale usunięty.](../media/retention-flowchart.svg)
 
 > [!NOTE]
-> Należy odróżnić najdłuższy okres przechowywania elementu od najdłuższego określonego okresu w zasadach przechowywania lub etykietach. Podobnie, między najkrótszą datą wygaśnięcia elementu a najkrótszym okresem określonym w zasadach przechowywania.
+> Ważne jest rozróżnienie między najdłuższym okresem przechowywania elementu a najdłuższym określonym okresem w zasadach przechowywania lub etykiecie. Podobnie między najkrótszą datą wygaśnięcia elementu a najkrótszym określonym okresem w zasadach przechowywania.
 > 
-> Aby uzyskać więcej informacji, zobacz objaśnienie po ilustracji w [sekcji Zasady przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) .
+> Aby uzyskać więcej informacji, zobacz objaśnienie po grafice w sekcji [zasady przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) .

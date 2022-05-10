@@ -18,18 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania, które ułatwiają zachowanie potrzebnych elementów i usuwanie tego, czego nie potrzebujesz.
-ms.openlocfilehash: 5c9a88b27814b89077a013b03d25b4d53ef3f125
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 6fd2f56d6876b6a3832e869767880890486551db
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972085"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286929"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Jeśli widzisz komunikaty dotyczące zasad przechowywania w Teams lub masz pytania dotyczące etykiet przechowywania w aplikacjach, skontaktuj się z działem IT, aby uzyskać informacje o sposobie ich konfigurowania. W międzyczasie pomocne mogą być następujące artykuły:
@@ -323,7 +324,7 @@ Podczas tworzenia zasad przechowywania lub zasad etykiet przechowywania należy 
 
 - **Zakres adaptacyjny** używa określonego zapytania, więc członkostwo nie jest statyczne, ale dynamiczne, uruchamiając codziennie atrybuty lub właściwości określone dla wybranych lokalizacji. Można użyć wielu zakresów adaptacyjnych z jednymi zasadami.
 
-    Przykład: Wiadomości e-mail i dokumenty OneDrive dla kadry kierowniczej wymagają dłuższego okresu przechowywania niż użytkownicy standardowi. Tworzysz zasady przechowywania z zakresem adaptacyjnym, który używa tytułu zadania atrybutu usługi Azure AD "Executive", a następnie wybiera lokalizacje Exchange poczty e-mail i kont OneDrive dla zasad. Nie ma potrzeby określania adresów e-mail ani adresów URL OneDrive dla tych użytkowników, ponieważ zakres adaptacyjny automatycznie pobiera te wartości. W przypadku nowych menedżerów nie trzeba ponownie konfigurować zasad przechowywania, ponieważ ci nowi użytkownicy z odpowiednimi wartościami dla poczty e-mail i OneDrive są automatycznie odbierane.
+    Przykład: Wiadomości e-mail i dokumenty OneDrive dla kadry kierowniczej wymagają dłuższego okresu przechowywania niż użytkownicy standardowi. Tworzysz zasady przechowywania z zakresem adaptacyjnym, który używa tytułu zadania atrybutu Azure AD "Executive", a następnie wybiera lokalizacje Exchange poczty e-mail i kont OneDrive dla zasad. Nie ma potrzeby określania adresów e-mail ani adresów URL OneDrive dla tych użytkowników, ponieważ zakres adaptacyjny automatycznie pobiera te wartości. W przypadku nowych menedżerów nie trzeba ponownie konfigurować zasad przechowywania, ponieważ ci nowi użytkownicy z odpowiednimi wartościami dla poczty e-mail i OneDrive są automatycznie odbierane.
 
 - **Zakres statyczny** nie używa zapytań i ma ograniczoną konfigurację, ponieważ może mieć zastosowanie do wszystkich wystąpień określonej lokalizacji lub używać dołączania i wykluczeń dla określonych wystąpień dla danej lokalizacji. Te trzy opcje są czasami określane jako odpowiednio "org-wide", "includes" i "excludes".
 
@@ -335,7 +336,7 @@ Zalety korzystania z zakresów adaptacyjnych:
 
 - Brak limitów [liczby elementów na zasady](retention-limits.md#maximum-number-of-items-per-policy). Mimo że zasady adaptacyjne nadal podlegają [maksymalnej liczbie zasad na ograniczenia dzierżawy](retention-limits.md#maximum-number-of-policies-per-tenant) , bardziej elastyczna konfiguracja prawdopodobnie spowoduje znacznie mniejszą liczbę zasad.
 
-- Bardziej zaawansowane określanie wymagań dotyczących przechowywania. Na przykład można przypisać różne ustawienia przechowywania do użytkowników zgodnie z ich lokalizacją geograficzną przy użyciu istniejących atrybutów usługi Azure AD bez konieczności tworzenia i utrzymywania grup administracyjnych w tym celu.
+- Bardziej zaawansowane określanie wymagań dotyczących przechowywania. Na przykład można przypisać różne ustawienia przechowywania do użytkowników zgodnie z ich lokalizacją geograficzną przy użyciu istniejących atrybutów Azure AD bez konieczności tworzenia i utrzymywania grup administracyjnych w tym celu.
 
 - Członkostwo oparte na zapytaniach zapewnia odporność na zmiany biznesowe, które mogą nie być niezawodnie odzwierciedlone w członkostwie w grupach lub procesach zewnętrznych, które opierają się na komunikacji między działami.
 

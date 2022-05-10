@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak działa przechowywanie dla SharePoint i OneDrive.
-ms.openlocfilehash: ed9cc45218dde112baec8fbca997abc6e82b4d72
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: cbcc8015b8b24309c882e5b8ca7a9c56fb6e344d
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911495"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285995"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Dowiedz się więcej na temat przechowywania SharePoint i OneDrive
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Informacje zawarte w tym artykule [uzupełniają informacje na temat przechowywania](retention.md), ponieważ zawierają informacje specyficzne dla SharePoint i OneDrive.
 
@@ -78,7 +80,7 @@ Użytkownicy widzą również komunikat o błędzie, jeśli spróbują usunąć 
 
 - Ustawienie zarządzania rekordami, które umożliwia użytkownikom usuwanie elementów oznaczonych etykietą, jest wyłączone.
     
-    Aby sprawdzić lub zmienić to ustawienie, przejdź do rozwiązania do **zarządzania rekordami** w **ustawieniach** >  **zarządzania rekordami** >  Centrum zgodności platformy Microsoft 365 > Ustawienia zarządzania **rekordamiRetention** **labelsDeletion** >  of items (Usuwanie elementów). Istnieją oddzielne ustawienia dla SharePoint i OneDrive.
+    Aby sprawdzić lub zmienić to ustawienie, przejdź do rozwiązania do **zarządzania rekordami** w portalu zgodności usługi Microsoft Purview > **Zarządzanie rekordamiUstawienia** >  >  **zarządzania rekordamiZarządzanie rekordami** **Etykiety** >  **ponownej konfiguracjiUsuń elementy**. Istnieją oddzielne ustawienia dla SharePoint i OneDrive.
     
     Alternatywnie, jeśli nie masz dostępu do rozwiązania do **zarządzania rekordami** , możesz użyć opcji *AllowFilesWithKeepLabelToBeDeletedSPO* i *AllowFilesWithKeepLabelToBeDeletedODB* z [get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) i [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
 
@@ -170,7 +172,7 @@ Gdy okres przechowywania wygaśnie, a ustawienia przechowywania obejmowały akcj
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Jeśli dopiero zaczynasz konfigurować przechowywanie w Microsoft 365, zobacz [Wprowadzenie z zarządzaniem informacjami](get-started-with-information-governance.md).
+Jeśli dopiero zaczynasz konfigurować przechowywanie w Microsoft 365, zobacz [Wprowadzenie z zarządzaniem cyklem życia danych](get-started-with-data-lifecycle-management.md).
 
 Jeśli wszystko jest gotowe do skonfigurowania zasad przechowywania lub etykiety przechowywania dla Exchange, zobacz następujące instrukcje:
 - [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md)

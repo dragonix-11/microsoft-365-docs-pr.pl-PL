@@ -13,16 +13,20 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Twórz i oceniaj przypisania, twórz i kuratoruj zawartość kursu oraz współpracuj nad plikami w czasie rzeczywistym przy użyciu nowej aplikacji Microsoft OneDrive Edukacja Tools Interoperability App for Canvas.
-ms.openlocfilehash: 5de027c9d7606ebe546a8dc8e087b91da7f0400e
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 8a4e3a1fc1b1d19bed093d5e72bf66e1afb2f591
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824569"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285571"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integracja Microsoft OneDrive LTI z kanwą
 
-Integracja Microsoft OneDrive lti z kanwą to proces dwuetapowy. Pierwszy krok umożliwia Microsoft OneDrive w kanwie, a drugi sprawia, że Microsoft OneDrive LTI jest dostępny w ramach kursów kanwy.
+Ten artykuł jest przeznaczony dla edukacyjnych administratorów IT, którzy muszą skonfigurować Microsoft OneDrive LTI for Canvas.
+
+Aby uzyskać instrukcje dla nauczycieli dotyczące korzystania z OneDrive LTI w kanwie, zobacz [Korzystanie z Microsoft OneDrive z usługą LMS](https://support.microsoft.com/topic/use-microsoft-onedrive-with-your-lms-c2ddeb48-f695-4267-94f2-14f7ff1b7bdd).
+
+Integracja Microsoft OneDrive LTI z kanwą to proces dwuetapowy. Pierwszy krok umożliwia Microsoft OneDrive w kanwie, a drugi sprawia, że Microsoft OneDrive LTI jest dostępny w ramach kursów kanwy.
 
 ## <a name="recommended-browser-settings"></a>Zalecane ustawienia przeglądarki
 
@@ -76,7 +80,10 @@ Integracja Microsoft OneDrive lti z kanwą to proces dwuetapowy. Pierwszy krok u
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="Strona rejestracji dzierżawy LTI, na której jest wyświetlany tekst JSON i pole tekstowe, do którego należy skopiować klucz.":::
 
 9. Przejrzyj i zapisz zmiany. Po pomyślnej rejestracji zostanie wyświetlony komunikat.
+
 10. Szczegóły rejestracji można również przejrzeć, wybierając przycisk **Wyświetl dzierżawy LTI** na stronie głównej.
+
+Przyszłe wersje mogą wymagać dodatkowej zgody administratora. W takich przypadkach należy powtórzyć tylko kroki 1 i 2.
 
 ## <a name="enable-microsoft-onedrive-lti-in-canvas-courses"></a>Włączanie Microsoft OneDrive LTI na kursach kanwy
 

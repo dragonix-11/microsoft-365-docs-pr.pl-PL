@@ -1,5 +1,5 @@
 ---
-title: Aktualizowanie rekordów przechowywanych w SharePoint lub OneDrive przy użyciu wersji rekordów
+title: Używanie przechowywania wersji rekordów w SharePoint lub OneDrive
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,21 +17,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o rekordach, które pomogą Ci zaimplementować rozwiązanie do zarządzania rekordami w Microsoft 365.
-ms.openlocfilehash: 7fc4f9bb14e9e49c7894e864b8ff9e8f4337149a
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 9515622af6a6ddb5abe28d6fb920eed72f487f41
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835892"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285067"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Aktualizowanie rekordów przechowywanych w SharePoint lub OneDrive przy użyciu wersji rekordów
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!NOTE]
 > Ponieważ rekordy regulacyjne blokują edytowanie, przechowywanie wersji rekordów nie jest dostępne dla rekordów regulacyjnych.
 >
-> Można również uniemożliwić przechowywanie wersji rekordów dla dzierżawy, nawet jeśli nie używasz rekordów regulacyjnych: przejdź do **węzła zarządzania rekordami** w **ustawieniach** >  zarządzania rekordami Centrum zgodności platformy Microsoft 365 > **Etykiety** >  ponownego **konfigurowaniaKonfiguruj przechowywanie wersji rekordów**, a następnie wyłącz ustawienie **Włącz przechowywanie wersji rekordów**.
+> Możesz również uniemożliwić przechowywanie wersji rekordów dla dzierżawy, nawet jeśli nie używasz rekordów regulacyjnych: przejdź do obszaru **Zarządzanie rekordami** w portalu zgodności usługi Microsoft Purview > **Ustawienia** >  zarządzania rekordami **Etykiety** >  ponownego **konfigurowania wersji rekordów,** a następnie wyłącz ustawienie **Włącz przechowywanie wersji rekordów**.
 
 Możliwość oznaczania dokumentu jako [rekordu](records-management.md#records) i ograniczania akcji, które mogą być wykonywane na rekordzie, jest podstawowym celem dla każdego rozwiązania do zarządzania rekordami. Jednak współpraca może być również potrzebna, aby użytkownicy mogli tworzyć kolejne wersje.
 

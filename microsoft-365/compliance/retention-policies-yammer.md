@@ -1,5 +1,5 @@
 ---
-title: Informacje na temat przechowywania danych dla Yammer
+title: Dowiedz się więcej na temat przechowywania Yammer
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,173 +16,175 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się więcej o zasadach przechowywania, które dotyczą Yammer.
-ms.openlocfilehash: 48b7f00df2f01d1b84af1962d91551752334c8b1
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+description: Dowiedz się więcej o zasadach przechowywania, które mają zastosowanie do Yammer.
+ms.openlocfilehash: e90d83cb4b71600f4dbf8b16790454f523ce6c13
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595109"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286477"
 ---
-# <a name="learn-about-retention-for-yammer"></a>Informacje na temat przechowywania danych dla Yammer
+# <a name="learn-about-retention-for-yammer"></a>Dowiedz się więcej na temat przechowywania Yammer
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Informacje zawarte w tym artykule uzupełnia informacje [dotyczące przechowywania,](retention.md) ponieważ zawierają informacje specyficzne dla Yammer.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-W przypadku innych obciążeń, zobacz:
+Informacje zawarte w tym artykule [uzupełniają informacje na temat przechowywania](retention.md), ponieważ zawierają informacje specyficzne dla Yammer.
+
+W przypadku innych obciążeń zobacz:
 
 - [Dowiedz się więcej na temat przechowywania SharePoint i OneDrive](retention-policies-sharepoint.md)
 - [Dowiedz się więcej na temat przechowywania Microsoft Teams](retention-policies-teams.md)
 - [Dowiedz się więcej na temat przechowywania Exchange](retention-policies-exchange.md)
 
-## <a name="whats-included-for-retention-and-deletion"></a>Co obejmuje przechowywanie i usuwanie
+## <a name="whats-included-for-retention-and-deletion"></a>Co jest dołączone do przechowywania i usuwania
 
-Yammer wiadomości użytkowników i wiadomości społeczności można usuwać przy użyciu zasad przechowywania dla programu Yammer, a ponadto, oprócz tekstu w tych wiadomościach, w celu zachowania zgodności mogą być zachowywane następujące elementy: linki hipertekstowe i linki do innych wiadomości Yammer wiadomości.
-
-> [!NOTE]
-> Jak wyjaśniono w poniższej sekcji, wiadomości użytkowników obejmują wiadomości prywatne dla poszczególnych użytkowników oraz wszystkie wiadomości społeczności skojarzone z tym użytkownikiem.
-
-Wiadomości użytkowników zawierają wszystkie nazwy osób w konwersacji, a wiadomości społeczności zawierają nazwę społeczności i tytuł wiadomości (jeśli po pojęli).
-
-Reakcje innych osób w formie emotikonów nie są zachowywane, gdy używasz zasad przechowywania na Yammer.
-
-Pliki, z których korzystasz Yammer, nie są uwzględniane w zasadach przechowywania dla Yammer. Te elementy mają własne zasady przechowywania.
-
-## <a name="how-retention-works-with-yammer"></a>Jak działa przechowywanie na Yammer
-
-W tej sekcji opisano, w jaki sposób są spełnione wymagania dotyczące zgodności przez wewnętrzne magazyny i procesy. Powinny one być weryfikowane przez narzędzia zbierania elektronicznych materiałów dowodowych, a nie przez wiadomości obecnie widoczne w Yammer aplikacji.
-
-Przy użyciu zasad przechowywania można zachować dane z wiadomości społeczności i wiadomości użytkowników w Yammer i usunąć te wiadomości. W tle dane Exchange są używane do przechowywania danych skopiowanych z tych wiadomości. Dane Yammer wiadomości od użytkowników są przechowywane w ukrytym folderze w skrzynce pocztowej każdego użytkownika zawartego w wiadomości użytkownika, a podobny ukryty folder w skrzynce pocztowej grupy jest używany do obsługi wiadomości społeczności.
-
-Kopie wiadomości społeczności mogą być również przechowywane w ukrytym folderze skrzynek pocztowych użytkowników, gdy @wzmiankują użytkowników lub informują użytkownika o odpowiedzi. Mimo że te wiadomości są wiadomościami wysyłanymi do społeczności, zasady przechowywania Yammer wiadomości użytkowników będą często zawierać kopie wiadomości od społeczności. W efekcie wiadomości użytkowników nie są ograniczone do wiadomości prywatnych.
-
-Te ukryte foldery nie są przeznaczone do bezpośredniego dostępu dla użytkowników lub administratorów, ale zamiast tego przechowuj dane, które administratorzy zgodności mogą wyszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
-
-Mimo że wiadomości są przechowywane w programie Exchange, wiadomości Yammer są uwzględniane tylko w zasadach przechowywania skonfigurowanych dla wiadomości społeczności usługi **Yammer** lub lokalizacji wiadomości Yammer użytkowników.
+Yammer komunikaty użytkowników i komunikaty społeczności mogą być usuwane przy użyciu zasad przechowywania dla Yammer, a oprócz tekstu w tych wiadomościach następujące elementy mogą być przechowywane ze względów zgodności: linki hipertekstu i linki do innych komunikatów Yammer.
 
 > [!NOTE]
-> Jeśli użytkownik jest uwzględniony w aktywnych zasadach przechowywania, które zachowują dane programu Yammer, Yammer użytkownik usunie skrzynkę pocztową użytkownika uwzględnionego w tych zasadach, w celu zachowania danych z usługi Yammer zostanie ona przekonwertowana na nieaktywną skrzynkę [pocztową](inactive-mailboxes-in-office-365.md). Jeśli nie chcesz zachowywać tych danych Yammer, wyklucz konto użytkownika z zasad przechowywania przed usunięciem jego skrzynki pocztowej.
+> Jak wyjaśniono w poniższej sekcji, komunikaty użytkowników zawierają wiadomości prywatne dla poszczególnych użytkowników oraz wszelkie komunikaty społeczności skojarzone z tym użytkownikiem.
 
-Po skonfigurowaniu zasad przechowywania dla wiadomości Yammer zadanie czasomierza z usługi Exchange okresowo ocenia elementy w ukrytym folderze, w którym są przechowywane Yammer wiadomości. Zadanie czasomierza może potrwać do siedmiu dni. Po wygaśnięciu okresu przechowywania elementy te są przenoszone do folderu Holds — folderu ukrytego w skrzynce pocztowej każdego użytkownika lub grupy w celu przechowywania elementów "miękkiego usunięcia" przed ich trwałym usunięciem.
+Komunikaty użytkowników zawierają wszystkie nazwy osób w konwersacji, a wiadomości społeczności zawierają nazwę społeczności i tytuł wiadomości (jeśli zostały podane).
+
+Reakcje innych osób w postaci emotikonów nie są zachowywane podczas korzystania z zasad przechowywania dla Yammer.
+
+Pliki używane z Yammer nie są uwzględniane w zasadach przechowywania dla Yammer. Te elementy mają własne zasady przechowywania.
+
+## <a name="how-retention-works-with-yammer"></a>Jak przechowywanie działa z Yammer
+
+Ta sekcja służy do zrozumienia, w jaki sposób wymagania dotyczące zgodności są spełniane przez magazyn zaplecza i procesy, i powinny być weryfikowane przez narzędzia zbierania elektronicznych materiałów dowodowych, a nie przez komunikaty, które są obecnie widoczne w aplikacji Yammer.
+
+Zasady przechowywania umożliwiają przechowywanie danych z komunikatów społeczności i komunikatów użytkowników w Yammer i usuwanie tych komunikatów. W tle Exchange skrzynki pocztowe są używane do przechowywania danych skopiowanych z tych wiadomości. Dane z Yammer wiadomości użytkowników są przechowywane w ukrytym folderze w skrzynce pocztowej każdego użytkownika dołączonego do wiadomości użytkownika, a podobny ukryty folder w skrzynce pocztowej grupy jest używany dla wiadomości społeczności.
+
+Kopie wiadomości społeczności mogą być również przechowywane w ukrytym folderze skrzynek pocztowych użytkownika, gdy @ wspomnieć użytkowników lub powiadomić użytkownika o odpowiedzi. Mimo że te komunikaty pochodzą z wiadomości społeczności, zasady przechowywania dla Yammer komunikatów użytkowników często zawierają kopie komunikatów społeczności. W związku z tym komunikaty użytkowników nie są ograniczone do wiadomości prywatnych.
+
+Te ukryte foldery nie są przeznaczone do bezpośredniego dostępu do użytkowników lub administratorów, ale zamiast tego przechowują dane, które administratorzy zgodności mogą wyszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
+
+Mimo że są one przechowywane w Exchange, komunikaty Yammer są uwzględniane tylko w zasadach przechowywania skonfigurowanych dla **Yammer komunikatów społeczności** lub **Yammer lokalizacji komunikatów użytkowników**.
+
+> [!NOTE]
+> Jeśli użytkownik jest uwzględniony w aktywnych zasadach przechowywania, które przechowują dane Yammer i usuwasz skrzynkę pocztową użytkownika uwzględnionego w tych zasadach, aby zachować dane Yammer, skrzynka pocztowa zostanie przekonwertowana na [nieaktywną skrzynkę pocztową](inactive-mailboxes-in-office-365.md). Jeśli nie musisz zachowywać tych danych Yammer dla użytkownika, przed usunięciem skrzynki pocztowej wyklucz konto użytkownika z zasad przechowywania.
+
+Po skonfigurowaniu zasad przechowywania dla komunikatów Yammer zadanie czasomierza z usługi Exchange okresowo ocenia elementy w ukrytym folderze, w którym są przechowywane te komunikaty Yammer. Uruchomienie zadania czasomierza trwa do siedmiu dni. Po wygaśnięciu okresu przechowywania tych elementów są one przenoszone do folderu SubstrateHolds — ukrytego folderu, który znajduje się w każdej skrzynce pocztowej użytkownika lub grupy w celu przechowywania elementów "nietrwale usuniętych", zanim zostaną trwale usunięte.
 
 > [!IMPORTANT]
-> Ze względu na [](retention.md#the-principles-of-retention-or-what-takes-precedence) pierwszą zasadę przechowywania i ze względu na to, że wiadomości Yammer są przechowywane w skrzynkach pocztowych programu Exchange Online, trwałe usuwanie z folderuHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania (w tym zasady stosowane do Exchange  lokalizację), zawieszenie w związku z postępowaniem sądowym, opóźnienie lub zastosowanie do skrzynki pocztowej zbierania elektronicznych materiałów dowodowych ze względów prawnych lub dochodzenia.
+> Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) i ponieważ Yammer wiadomości są przechowywane w Exchange Online skrzynkach pocztowych, trwałe usunięcie z folderu SubstrateHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania (w tym zasady stosowane do Exchange  lokalizacja), wstrzymanie postępowania sądowego, wstrzymanie opóźnienia lub zastosowanie blokady zbierania elektronicznych materiałów dowodowych do skrzynki pocztowej ze względów prawnych lub śledczych.
 >
-> Gdy skrzynka pocztowa jest zawarta w stosownym zarchiwiwi, Yammer usunięte wiadomości nie będą już widoczne w programie Yammer ale nadal będą wykrywane za pomocą zbierania elektronicznych materiałów dowodowych.
+> Chociaż skrzynka pocztowa jest uwzględniona w odpowiednim blokadzie, Yammer wiadomości, które zostały usunięte, nie będą już widoczne w Yammer, ale będą nadal wykrywalne przy użyciu zbierania elektronicznych materiałów dowodowych.
 
-Po skonfigurowaniu zasad przechowywania dla wiadomości Yammer ścieżki, których zawartość przyjmuje, zależą od tego, czy zasady przechowywania mają być zachowywane, a następnie usuwane, zachowywać tylko lub usuwać.
+Po skonfigurowaniu zasad przechowywania dla komunikatów Yammer ścieżki, które pobiera zawartość, zależą od tego, czy zasady przechowywania mają zostać zachowane, a następnie usunięte, tylko do zachowania lub usunięcia.
 
-Jeśli zasady przechowywania mają być zachowywane, a następnie usuwane:
+Gdy zasady przechowywania mają zostać zachowane, a następnie usunięte:
 
-![Diagram przepływu przechowywania dla Yammer wiadomości.](../media/yammerretentionlifecycle.png)
+![Diagram przepływu przechowywania komunikatów Yammer.](../media/yammerretentionlifecycle.png)
 
-W przypadku dwóch ścieżek na diagramie:
+Dla dwóch ścieżek na diagramie:
 
-1. Jeśli wiadomość **Yammer** jest edytowana lub usuwana przez użytkownika w trakcie okresu przechowywania, wiadomość oryginalna jest natychmiast kopiowana (jeśli edytowana) lub przenoszony (jeśli została usunięta) do folderuHolds. Wiadomość jest przechowywana do momentu wygaśnięcia okresu przechowywania i natychmiastowego trwałego usunięcia wiadomości.
+1. **Jeśli komunikat Yammer jest edytowany lub usuwany** przez użytkownika w okresie przechowywania, oryginalny komunikat jest natychmiast kopiowany (jeśli jest edytowany) lub przenoszony (jeśli został usunięty) do folderu SubstrateHolds. Komunikat jest tam przechowywany do czasu wygaśnięcia okresu przechowywania, a następnie komunikat zostanie natychmiast trwale usunięty.
 
-2. **Jeśli wiadomość Yammer** nie zostanie usunięta, a bieżące wiadomości będą wyświetlane po zakończeniu edycji, po upływie okresu przechowywania jest ona przenoszony do folderu. To działanie trwa do siedmiu dni od daty wygaśnięcia. Gdy wiadomość znajduje się w folderzeHolds, jest natychmiast trwale usuwana. 
+2. **Jeśli komunikat Yammer nie zostanie usunięty** i dla bieżących komunikatów po edycji komunikat zostanie przeniesiony do folderu SubstrateHolds po upływie okresu przechowywania. Ta akcja trwa do siedmiu dni od daty wygaśnięcia. Gdy komunikat znajduje się w folderze SubstrateHolds, zostanie on natychmiast trwale usunięty. 
 
 > [!NOTE]
-> Wiadomości w folderzeHolds Można wyszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych. Dopóki wiadomości nie zostaną trwale usunięte (w folderzeHolds), pozostaną one przeszukiwane przez narzędzia zbierania elektronicznych materiałów dowodowych.
+> Komunikaty w folderze SubstrateHolds można wyszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych. Dopóki komunikaty nie zostaną trwale usunięte (w folderze SubstrateHolds), nadal można je przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
 
-Gdy zasady przechowywania są tylko do zachowywania lub usuwania, ścieżki zawartości są odmianami zachowania i usuwania.
+Jeśli zasady przechowywania są tylko do zachowania lub tylko do usuwania, ścieżki zawartości są odmianami zachowywania i usuwania.
 
-### <a name="content-paths-for-retain-only-retention-policy"></a>Ścieżki zawartości dla zasad przechowywania tylko do przechowywania
+### <a name="content-paths-for-retain-only-retention-policy"></a>Ścieżki zawartości dla zasad przechowywania tylko do zachowania
 
-1. **Jeśli Yammer** wiadomości e-mail jest edytowana lub usuwana: Kopia oryginalnej wiadomości jest od razu tworzona w folderzeHolds i zachowywana w tym folderze do momentu wygaśnięcia okresu przechowywania. Następnie wiadomość zostanie natychmiast trwale usunięta z folderuHolds.
+1. **Jeśli komunikat Yammer zostanie edytowany lub usunięty**: kopia oryginalnej wiadomości zostanie natychmiast utworzona w folderze SubstrateHolds i zachowana do czasu wygaśnięcia okresu przechowywania. Następnie komunikat zostanie natychmiast trwale usunięty z folderu SubstrateHolds.
 
-2. **Jeśli wiadomość Yammer** nie została zmodyfikowana ani usunięta oraz dla bieżących wiadomości po zakończeniu edycji w okresie przechowywania: Nic się nie dzieje przed i po okresie przechowywania; wiadomość pozostaje w pierwotnej lokalizacji.
+2. **Jeśli komunikat Yammer nie zostanie zmodyfikowany lub usunięty**, a dla bieżących komunikatów po edycji w okresie przechowywania: Nic się nie dzieje przed i po okresie przechowywania; komunikat pozostaje w oryginalnej lokalizacji.
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>Ścieżki zawartości dla zasad przechowywania tylko do usuwania
 
-1. **Jeśli wiadomość Yammer** nie zostanie usunięta w trakcie okresu przechowywania: Na koniec okresu przechowywania wiadomość jest przenoszony do folderu Holds. To działanie trwa do siedmiu dni od daty wygaśnięcia. Następnie wiadomość zostanie natychmiast trwale usunięta z folderuHolds.
+1. **Jeśli komunikat Yammer nie zostanie usunięty** w okresie przechowywania: po zakończeniu okresu przechowywania komunikat zostanie przeniesiony do folderu SubstrateHolds. Ta akcja trwa do siedmiu dni od daty wygaśnięcia. Następnie komunikat zostanie natychmiast trwale usunięty z folderu SubstrateHolds.
 
-2. **Jeśli Yammer wiadomość** e-mail zostanie usunięta przez użytkownika w tym okresie, element zostanie natychmiast przeniesiony do folderu Holds, gdzie zostanie natychmiast trwale usunięty.
+2. **Jeśli komunikat Yammer zostanie usunięty przez użytkownika w** tym okresie, element zostanie natychmiast przeniesiony do folderu SubstrateHolds, w którym zostanie natychmiast trwale usunięty.
 
-#### <a name="example-flows-and-timings-for-retention-policies"></a>Przykładowe przepływy i chronometrażu zasad przechowywania
+#### <a name="example-flows-and-timings-for-retention-policies"></a>Przykładowe przepływy i chronometraż zasad przechowywania
 
-Skorzystaj z poniższych przykładów, aby zobaczyć, jak procesy i chronometraż opisane w poprzednich sekcjach mają zastosowanie do zasad przechowywania, które mają następujące konfiguracje:
+Skorzystaj z poniższych przykładów, aby zobaczyć, jak procesy i chronometraż wyjaśnione w poprzednich sekcjach mają zastosowanie do zasad przechowywania, które mają następujące konfiguracje:
 
-- [Przykład 1. Zachowywanie tylko przez 7 lat](#example-1-retain-only-for-7-years)
-- [Przykład 2. Zachowywanie przez 30 dni, a następnie usuwanie](#example-2-retain-for-30-days-and-then-delete)
-- [Przykład 3. Usuwanie tylko po 1 dniu](#example-3-delete-only-after-1-day)
+- [Przykład 1: Zachowaj tylko przez 7 lat](#example-1-retain-only-for-7-years)
+- [Przykład 2: Zachowaj przez 30 dni, a następnie usuń](#example-2-retain-for-30-days-and-then-delete)
+- [Przykład 3: Usuwanie tylko po 1 dniu](#example-3-delete-only-after-1-day)
 
-Ze względu na zasady przechowywania wszystkie przykłady dotyczące trwałego usuwania są zawieszane [, jeśli](retention.md#the-principles-of-retention-or-what-takes-precedence) wiadomość podlega innym zasadom przechowywania w celu zachowania elementu lub podlega zawieszeniu zbierania elektronicznych materiałów dowodowych.
+Dla wszystkich przykładów, które odwołują się do trwałego usunięcia, ze względu na [zasady przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence), ta akcja jest zawieszona, jeśli komunikat podlega innym zasadom przechowywania w celu zachowania elementu lub podlega blokadzie zbierania elektronicznych materiałów dowodowych.
 
-##### <a name="example-1-retain-only-for-7-years"></a>Przykład 1. Zachowywanie tylko przez 7 lat
+##### <a name="example-1-retain-only-for-7-years"></a>Przykład 1: Zachowaj tylko przez 7 lat
 
-W dniu 1 użytkownik publikuje nową wiadomość Yammer wiadomości.
+W dniu 1 użytkownik publikuje nową wiadomość Yammer.
 
-W dniu 5 użytkownik edytuje tę wiadomość.
+W dniu 5 użytkownik edytuje ten komunikat.
 
-W dniu 30 użytkownik usunie bieżącą wiadomość.
-
-Wyniki przechowywania:
-
-- W przypadku oryginalnej wiadomości:
-    - W dniu 5 wiadomość jest kopiowana do folderu. W którym nadal można ją przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych przez okres co najmniej 7 lat od dnia 1 (okresu przechowywania).
-
-- W przypadku bieżącej (edytowanej) wiadomości:
-    - W dniu 30 wiadomość jest przenoszona do folderu. W tym miejscu nadal można wyszukiwać pliki za pomocą narzędzi zbierania elektronicznych materiałów dowodowych przez okres co najmniej 7 lat od dnia 1 (okresu przechowywania).
-
-Jeśli użytkownik usunął bieżącą wiadomość po upływie określonego okresu przechowywania, a nie w okresie przechowywania, wiadomość zostałaby nadal przeniesiona do folderu Holds. Jednak teraz okres przechowywania wygasł, wiadomość zostanie trwale usunięta po co najmniej 1 dniu, a następnie zwykle w ciągu 1–7 dni.
-
-##### <a name="example-2-retain-for-30-days-and-then-delete"></a>Przykład 2. Zachowywanie przez 30 dni, a następnie usuwanie
-
-W dniu 1 użytkownik publikuje nową wiadomość Yammer wiadomości.
-
-W dniu 10 użytkownik edytuje tę wiadomość.
-
-Użytkownik nie dokona dalszych zmian i nie usunie wiadomości.
+W dniu 30 użytkownik usuwa bieżący komunikat.
 
 Wyniki przechowywania:
 
 - W przypadku oryginalnej wiadomości:
-    - W dniu 10 wiadomość jest kopiowana do folderu OwaSS, gdzie nadal można ją przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
-    - Po upływie okresu przechowywania (30 dni od dnia 1) wiadomość jest zwykle trwale usuwana w ciągu 1–7 dni po co najmniej 1 dniu, a następnie nie zostanie zwrócona podczas wyszukiwania zbierania elektronicznych materiałów dowodowych.
+    - W dniu 5 komunikat jest kopiowany do folderu SubstrateHolds, w którym nadal można go przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych przez co najmniej 7 lat od dnia 1 (okres przechowywania).
 
-- W przypadku bieżącej (edytowanej) wiadomości:
-    - Po zakończeniu okresu przechowywania (30 dni od dnia 1) wiadomość jest przenoszona do folderu 1–7 dni, gdzie nadal może być przeszukiwana za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
-    - Wiadomość jest następnie trwale usuwana zwykle w ciągu 1–7 dni po co najmniej 1 dniu i nie zostanie zwrócona za pomocą wyszukiwań zbierania elektronicznych materiałów dowodowych.
+- Dla bieżącego (edytowanego) komunikatu:
+    - W dniu 30 komunikat przechodzi do folderu SubstrateHolds, w którym nadal można go przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych przez co najmniej 7 lat od dnia 1 (okres przechowywania).
 
-##### <a name="example-3-delete-only-after-1-day"></a>Przykład 3. Usuwanie tylko po 1 dniu
+Jeśli użytkownik usunął bieżący komunikat po określonym okresie przechowywania, zamiast w okresie przechowywania, komunikat nadal będzie przenoszony do folderu SubstrateHolds. Jednak teraz okres przechowywania wygasł, komunikat zostanie trwale usunięty po upływie co najmniej 1 dnia, a następnie zazwyczaj w ciągu 1–7 dni.
+
+##### <a name="example-2-retain-for-30-days-and-then-delete"></a>Przykład 2: Zachowaj przez 30 dni, a następnie usuń
+
+W dniu 1 użytkownik publikuje nową wiadomość Yammer.
+
+W dniu 10 użytkownik edytuje ten komunikat.
+
+Użytkownik nie wprowadza dalszych zmian i nie usuwa komunikatu.
+
+Wyniki przechowywania:
+
+- W przypadku oryginalnej wiadomości:
+    - W dniu 10 komunikat jest kopiowany do folderu SubstrateHolds, gdzie nadal można go przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
+    - Po zakończeniu okresu przechowywania (30 dni od dnia 1) komunikat jest trwale usuwany zazwyczaj w ciągu 1–7 dni od co najmniej 1 dnia, a następnie nie zostanie zwrócony z wyszukiwaniem zbierania elektronicznych materiałów dowodowych.
+
+- Dla bieżącego (edytowanego) komunikatu:
+    - Po zakończeniu okresu przechowywania (30 dni od dnia 1) komunikat przechodzi do folderu SubstrateHolds zazwyczaj w ciągu 1–7 dni, gdzie nadal można go przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
+    - Komunikat jest następnie trwale usuwany zwykle w ciągu 1–7 dni od co najmniej 1 dnia, a następnie nie będzie zwracany z wyszukiwaniem zbierania elektronicznych materiałów dowodowych.
+
+##### <a name="example-3-delete-only-after-1-day"></a>Przykład 3: Usuwanie tylko po 1 dniu
 
 > [!NOTE]
-> Z powodu krótkiego, jednodniowego czasu trwania tych procesów konfiguracji i przechowywania, które działają w okresie 1–7 dni, w tej sekcji pokazano przykładowe chronometrażu z typowych przedziałów czasowych.
+> Ze względu na krótki jednodniowy czas trwania tej konfiguracji i procesów przechowywania, które działają w okresie od 1 do 7 dni, w tej sekcji przedstawiono przykładowe chronometraży, które mieszczą się w typowych zakresach czasu.
 
-W dniu 1 użytkownik publikuje nową wiadomość Yammer wiadomości.
+W dniu 1 użytkownik publikuje nową wiadomość Yammer.
 
-Przykład wyniku przechowywania, jeśli użytkownik nie edytuje ani nie usuwa wiadomości:
+Przykładowy wynik przechowywania, jeśli użytkownik nie edytuje ani nie usunie komunikatu:
 
 - Dzień 5 (zazwyczaj 1–7 dni po rozpoczęciu okresu przechowywania w dniu 2):
-    - Wiadomość zostanie przeniesiony do folderu Holds i pozostanie tam przez co najmniej 1 dzień, gdzie nadal może być przeszukiwana za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
+    - Komunikat jest przenoszony do folderu SubstrateHolds i pozostaje tam przez co najmniej 1 dzień, w którym nadal można go przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
 
-- Dzień 9 (zazwyczaj 1–7 dni po co najmniej 1 dniu w folderzeHolds):
-    - Wiadomość zostanie trwale usunięta, a następnie nie zostanie zwrócona za pomocą wyszukiwania zbierania elektronicznych materiałów dowodowych.
+- Dzień 9 (zazwyczaj 1–7 dni po co najmniej 1 dniu w folderze SubstrateHolds):
+    - Wiadomość zostanie trwale usunięta, a następnie nie zostanie zwrócona z wyszukiwaniem zbierania elektronicznych materiałów dowodowych.
 
-Jak pokazano w tym przykładzie, chociaż można skonfigurować zasady przechowywania tak, aby usuwać wiadomości po upływie zaledwie jednego dnia, usługa podlega wielu procesom w celu zapewnienia zgodnego usuwania. W efekcie akcja usunięcia po 1 dniu może potrwać 16 dni, zanim wiadomość zostanie trwale usunięta, aby nie była już zwracana w wyszukiwaniach zbierania elektronicznych materiałów dowodowych.
+Jak pokazano w tym przykładzie, mimo że można skonfigurować zasady przechowywania w celu usuwania komunikatów po zaledwie jednym dniu, usługa przechodzi wiele procesów w celu zapewnienia zgodnego usunięcia. W związku z tym akcja usuwania po upływie 1 dnia może potrwać 16 dni, zanim wiadomość zostanie trwale usunięta, aby nie była już zwracana w wyszukiwaniach zbierania elektronicznych materiałów dowodowych.
 
-## <a name="messages-and-external-users"></a>Wiadomości i użytkownicy zewnętrzni
+## <a name="messages-and-external-users"></a>Komunikaty i użytkownicy zewnętrzni
 
-Domyślnie zasady przechowywania wiadomości e-Yammer użytkowników dotyczą wszystkich użytkowników w organizacji, ale nie do użytkowników zewnętrznych. Zasady przechowywania można zastosować do użytkowników zewnętrznych, jeśli użyjesz opcji Edytuj  dla uwzględnionych użytkowników i określisz ich konto.
+Domyślnie zasady przechowywania dla Yammer komunikatów użytkowników mają zastosowanie do wszystkich użytkowników w organizacji, ale nie do użytkowników zewnętrznych. Zasady przechowywania można zastosować do użytkowników zewnętrznych, jeśli używasz opcji **Edytuj** dla dołączonych użytkowników i określasz ich konto.
 
-Obecnie użytkownicy goście B2B usługi Azure nie są obsługiwani.
+Obecnie użytkownicy-goście usługi Azure B2B nie są obsługiwana.
 
-## <a name="when-a-user-leaves-the-organization"></a>Kiedy użytkownik odchodzi z organizacji 
+## <a name="when-a-user-leaves-the-organization"></a>Gdy użytkownik opuszcza organizację 
 
-Jeśli użytkownik opuści organizację i jego konto Microsoft 365 zostanie usunięte, jego Yammer, które podlegają przechowywaniu, są przechowywane w nieaktywnej skrzynce pocztowej. Te wiadomości pozostają objęte zasadami przechowywania, które zostały umieszczone na użytkowniku przed tym, gdy jego skrzynka pocztowa została nieaktywna, a zawartość jest dostępna podczas wyszukiwania zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Nieaktywne skrzynki pocztowe w Exchange Online](inactive-mailboxes-in-office-365.md). 
+Jeśli użytkownik opuści organizację, a jego konto Microsoft 365 zostanie usunięte, jego Yammer wiadomości użytkowników, które podlegają przechowywaniu, są przechowywane w nieaktywnej skrzynce pocztowej. Te wiadomości pozostają objęte wszelkimi zasadami przechowywania, które zostały umieszczone na użytkowniku, zanim jego skrzynka pocztowa została nieaktywna, a zawartość jest dostępna dla wyszukiwania zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Nieaktywne skrzynki pocztowe w Exchange Online](inactive-mailboxes-in-office-365.md). 
 
-Jeśli użytkownik przechowył jakiekolwiek pliki w u Yammer, [zobacz sekcję](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) równoważną dla pliku SharePoint i OneDrive.
+Jeśli użytkownik przechowywał pliki w Yammer, zobacz [równoważną sekcję](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) SharePoint i OneDrive.
 
 ## <a name="limitations"></a>Ograniczenia
 
-Korzystając z przechowywania wiadomości e-mail i wiadomości Yammer użytkowników, należy pamiętać o następujących ograniczeniach:
+Należy pamiętać o następującym ograniczeniu, jeśli używasz przechowywania do Yammer komunikatów społeczności i komunikatów użytkowników:
 
-- Po wybraniu pozycji **Edytuj** dla lokalizacji **Yammer wiadomości od** użytkowników mogą być wyświetlane goście i użytkownicy niebędący skrzynkami pocztowymi. Zasady przechowywania nie są przeznaczone dla tych użytkowników, więc ich nie wybieraj.
+- Po wybraniu pozycji **Edytuj** dla **Yammer lokalizacji wiadomości użytkowników** mogą być widoczni goście i użytkownicy bez skrzynki pocztowej. Zasady przechowywania nie są przeznaczone dla tych użytkowników, więc nie wybieraj ich.
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Jeśli nie wiesz, jak konfigurować przechowywanie w aplikacji Microsoft 365, zobacz zarządzanie Wprowadzenie [informacjami](get-started-with-information-governance.md).
+Jeśli dopiero zaczynasz konfigurować przechowywanie w Microsoft 365, zobacz [Wprowadzenie z zarządzaniem cyklem życia danych](get-started-with-data-lifecycle-management.md).
 
-Jeśli możesz już skonfigurować zasady przechowywania dla aplikacji Yammer, zobacz [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md).
+Jeśli wszystko jest gotowe do skonfigurowania zasad przechowywania dla Yammer, zobacz [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md).

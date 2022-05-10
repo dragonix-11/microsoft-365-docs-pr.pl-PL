@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d97442fc2c3767a30c1ea98dc4a1ee7a38e56b45
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c83213278c7f9bc3b63c141e4d964475d64599d1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971006"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286631"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender
 
@@ -986,7 +986,7 @@ Po umieszczeniu wskaźnika myszy na klinze na wykresie kołowym będzie widoczna
 
 W tabeli szczegółów poniżej wykresu przedstawiono nadawców lub adresatów oraz liczbę wiadomości na podstawie wybranego widoku.
 
-Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozycję **Filtruj** i wybierając **pozycję Data rozpoczęcia** i **Data zakończenia**.
+Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozycję **Filtruj** i wybierając **pozycję Data rozpoczęcia** i **Data zakończenia**. Użytkownicy mogą również filtrować według tagów użytkowników. 
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj**, **Anuluj** lub **Wyczyść filtry**.
 
