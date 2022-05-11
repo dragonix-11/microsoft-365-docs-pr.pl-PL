@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak zastosować etykietę przechowywania do modelu w SharePoint Syntex.
-ms.openlocfilehash: 281ff940377f033690f1ed1e7146c8aefe645bf1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 362b370fa34193e66802e9b0d2c5788785ea92c5
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941814"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349781"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Stosowanie etykiety przechowywania do modelu w SharePoint Syntex
 
@@ -28,7 +28,6 @@ ms.locfileid: "64941814"
 
 </br>
 
-
 Etykietę [przechowywania](../compliance/retention.md) można łatwo zastosować do modelu w usłudze Microsoft SharePoint Syntex. Można to zrobić zarówno w przypadku modeli interpretacji dokumentów, jak i przetwarzania formularzy.
 
 Etykiety przechowywania umożliwiają stosowanie ustawień przechowywania do dokumentów, które identyfikują modele.  Na przykład chcesz, aby model nie tylko identyfikował wszelkie dokumenty *z powiadomieniem o ubezpieczeniach* , które zostały przekazane do biblioteki dokumentów, ale także zastosował do nich tag przechowywania *firmy* , aby nie można było usunąć tych dokumentów z biblioteki dokumentów w określonym okresie (na przykład w ciągu najbliższych pięciu miesięcy).
@@ -36,7 +35,7 @@ Etykiety przechowywania umożliwiają stosowanie ustawień przechowywania do dok
 Istniejącą etykietę przechowywania można zastosować do modelu za pomocą ustawień modelu na stronie głównej modelu. 
 
 > [!Important]
-> Aby etykiety przechowywania były dostępne do zastosowania do modeli interpretacji dokumentów, należy [je utworzyć](../compliance/file-plan-manager.md#create-retention-labels) i [opublikować](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) w portalu zgodności usługi Microsoft Purview.
+> Aby etykiety przechowywania były dostępne do zastosowania do modeli interpretacji dokumentów, należy [je utworzyć](../compliance/file-plan-manager.md#create-retention-labels) i [opublikować](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) w portal zgodności Microsoft Purview.
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Aby dodać etykietę przechowywania do modelu zrozumienia dokumentu
 
@@ -74,7 +73,7 @@ Na przykład wszystkie dokumenty *z powiadomieniem o ubezpieczeniach* , które i
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Aby dodać etykietę przechowywania do modelu przetwarzania formularzy
 
 > [!Important]
-> Aby etykiety przechowywania były dostępne do zastosowania do modelu przetwarzania formularzy, należy [je utworzyć](../compliance/file-plan-manager.md#create-retention-labels) i [opublikować](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) w portalu zgodności usługi Microsoft Purview.
+> Aby etykiety przechowywania były dostępne do zastosowania do modelu przetwarzania formularzy, należy [je utworzyć](../compliance/file-plan-manager.md#create-retention-labels) i [opublikować](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) w portal zgodności Microsoft Purview.
 
 Podczas tworzenia modelu można zastosować etykietę przechowywania do modelu przetwarzania formularzy lub zastosować ją do istniejącego modelu.
 

@@ -14,228 +14,228 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się więcej o zasadach ochrony przed wyłudzaniem informacji dostępnych w programach Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender.
+description: Administratorzy mogą dowiedzieć się więcej o zasadach ochrony przed wyłudzaniem informacji dostępnych w Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5389e83634bc92dd01908b16e8ca0a76dd76c765
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 8b8d75bbb520a2f31ff1d1b55d97e445748a110c
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475702"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349857"
 ---
-# <a name="anti-phishing-policies-in-microsoft-365"></a>Zasady ochrony przed wyłudzaniem informacji w programie Microsoft 365
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Zasady ochrony przed wyłudzaniem informacji w Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Zasady konfigurowania ustawień ochrony przed wyłudzaniem informacji są dostępne w organizacjach Microsoft 365 ze skrzynkami pocztowymi firmy Exchange Online, w autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych oraz Ochrona usługi Office 365 w usłudze Microsoft Defender organizacji.
+Zasady konfigurowania ustawień ochrony przed wyłudzaniem informacji są dostępne w organizacjach Microsoft 365 z Exchange Online skrzynkami pocztowymi, autonomicznymi organizacjami Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych oraz Ochrona usługi Office 365 w usłudze Microsoft Defender organizacji.
 
-Oto przykłady Ochrona usługi Office 365 w usłudze Microsoft Defender organizacji:
+Przykłady organizacji Ochrona usługi Office 365 w usłudze Microsoft Defender to:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5 itp.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Ochrona usługi Office 365 w usłudze Microsoft Defender jako dodatek](https://products.office.com/exchange/advance-threat-protection)
 
-W poniższej tabeli przedstawiono różnice między zasadami ochrony przed wyłudzaniem informacji w UAD a zasadami ochrony przed Ochrona usługi Office 365 w usłudze Defender wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender:
+Ogólne różnice między zasadami ochrony przed wyłudzaniem informacji w ramach EOP i zasadami ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender opisano w poniższej tabeli:
 
-|Funkcja|Zasady ochrony przed wyłudzaniem informacji w uchcie EOP|Zasady ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender|
+|Funkcja|Zasady ochrony przed wyłudzaniem informacji w ramach EOP|Zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender|
 |---|:---:|:---:|
-|Zasady domyślne utworzone automatycznie|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
+|Automatycznie utworzone zasady domyślne|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
 |Tworzenie zasad niestandardowych|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
-|Ustawienia wspólnych zasad<sup>\*</sup>|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
-|Spoof settings|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
+|Typowe ustawienia zasad<sup>\*</sup>|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
+|Ustawienia fałszowania|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
 |Pierwszy kontakt porada dotycząca bezpieczeństwa|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru](../../media/checkmark.png)|
 |Ustawienia personifikacji||![Znacznik wyboru](../../media/checkmark.png)|
 |Zaawansowane progi wyłudzania informacji||![Znacznik wyboru](../../media/checkmark.png)|
 
-<sup>\*</sup> W zasadach domyślnych nazwa i opis zasad są tylko do odczytu (opis jest pusty) i nie można określić, kogo dotyczą zasady (zasady domyślne dotyczą wszystkich adresatów).
+<sup>\*</sup> W zasadach domyślnych nazwa zasad i opis są tylko do odczytu (opis jest pusty) i nie można określić, do kogo mają zastosowanie zasady (zasady domyślne dotyczą wszystkich adresatów).
 
 Aby skonfigurować zasady ochrony przed wyłudzaniem informacji, zobacz następujące artykuły:
 
-- [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w u usługi EOP](configure-anti-phishing-policies-eop.md)
-- [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md)
+- [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w usłudze EOP](configure-anti-phishing-policies-eop.md)
+- [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md)
 
-W dalszej części tego artykułu opisano ustawienia dostępne w zasadach ochrony przed wyłudzaniem informacji w umacie EOP i Ochrona usługi Office 365 w usłudze Defender.
+W pozostałej części tego artykułu opisano ustawienia, które są dostępne w zasadach ochrony przed wyłudzaniem informacji w ramach operacji EOP i Ochrona usługi Office 365 w usłudze Defender.
 
-## <a name="common-policy-settings"></a>Ustawienia wspólnych zasad
+## <a name="common-policy-settings"></a>Typowe ustawienia zasad
 
-Poniższe ustawienia zasad są dostępne w zasadach ochrony przed wyłudzaniem informacji w u Ochrona usługi Office 365 w usłudze Defender:
+Następujące ustawienia zasad są dostępne w zasadach ochrony przed wyłudzaniem informacji na platformie EOP i Ochrona usługi Office 365 w usłudze Defender:
 
-- **Nazwa**: Nie można zmienić nazwy domyślnych zasad ochrony przed wyłudzaniem informacji. Po utworzeniu niestandardowych zasad ochrony przed wyłudzaniem informacji nie można zmienić ich nazw w portalu Microsoft 365 Defender informacje.
+- **Nazwa**: nie można zmienić nazwy domyślnych zasad ochrony przed wyłudzaniem informacji. Po utworzeniu niestandardowych zasad ochrony przed wyłudzaniem informacji nie można zmienić nazwy zasad w portalu Microsoft 365 Defender.
 
-- **Opis** Nie można dodawać opisu do domyślnych zasad ochrony przed wyłudzaniem informacji, ale można dodawać i zmieniać opisy niestandardowych zasad niestandardowych tworzyć.
+- **Opis** Nie można dodać opisu do domyślnych zasad ochrony przed wyłudzaniem informacji, ale możesz dodać i zmienić opis utworzonych zasad niestandardowych.
 
-- **Użytkownicy, grupy i domeny**: Identyfikuje adresatów wewnętrznych, do których mają zastosowanie zasady ochrony przed wyłudzaniem informacji. Ta wartość jest wymagana w zasadach niestandardowych i nie jest dostępna w zasadach domyślnych (zasady domyślne są stosowane do wszystkich adresatów).
+- **Użytkownicy, grupy i domeny**: identyfikuje wewnętrznych adresatów, których dotyczą zasady ochrony przed wyłudzaniem informacji. Ta wartość jest wymagana w zasadach niestandardowych i nie jest dostępna w zasadach domyślnych (zasady domyślne dotyczą wszystkich adresatów).
 
-  Możesz użyć tylko raz warunku lub wyjątku, ale możesz określić wiele wartości dla warunku lub wyjątku. Wiele wartości takich samych warunków lub wyjątków używa logiki OR (na przykład _\<recipient1\>_ lub _\<recipient2\>_). W różnych warunkach lub wyjątkach jest używanie logiki AND (na przykład _\<recipient1\>_ i _\<member of group 1\>_).
+  Warunek lub wyjątek można użyć tylko raz, ale można określić wiele wartości dla warunku lub wyjątku. Wiele wartości tego samego warunku lub wyjątku używa logiki OR (na przykład _\<recipient1\>_ lub _\<recipient2\>_). Różne warunki lub wyjątki używają logiki AND (na przykład _\<recipient1\>_ i _\<member of group 1\>_).
 
-  - **Użytkownicy**: co najmniej jedna skrzynka pocztowa, użytkownicy poczty lub kontakty poczty w organizacji.
-  - **Grupy**: Co najmniej jedna grupa w organizacji.
-  - **Domeny**: Co najmniej jedna ze skonfigurowanych [zaakceptowanych domen](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) w Microsoft 365.
+  - **Użytkownicy**: co najmniej jedna skrzynka pocztowa, użytkownicy poczty lub kontakty pocztowe w organizacji.
+  - **Grupy**: co najmniej jedna grupa w organizacji.
+  - **Domeny**: co najmniej jedna ze skonfigurowanych [zaakceptowanych domen](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) w Microsoft 365.
 
-  - **Wyklucz tych użytkowników, grupy i domeny**: Wyjątki dla zasad. Ustawienia i zachowanie są dokładnie takie, jak warunki:
+  - **Wyklucz tych użytkowników, grupy i domeny**: wyjątki dla zasad. Ustawienia i zachowanie są dokładnie takie same jak w następujących warunkach:
     - **Użytkownicy**
     - **Grupy**
     - **Domeny**
 
   > [!NOTE]
-  > W niestandardowych zasadach ochrony przed wyłudzaniem informacji w celu zidentyfikowania adresatów wiadomości, których dotyczą te zasady, wymagane jest  co najmniej jedno zaznaczenie ustawień Użytkownicy **,** grupy i <u>domeny</u>. Zasady ochrony przed wyłudzaniem informacji w programie [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Ochrona usługi Office 365 w usłudze Defender także ustawienia personifikacji, gdzie można określić adresy e-mail poszczególnych nadawców lub domeny nadawców, które będą otrzymywać ochronę przed personifikacji zgodnie z opisem w dalszej części tego artykułu.<u></u>
+  > Co najmniej jeden wybór w **ustawieniach Użytkownicy, grupy i domeny** jest wymagany w niestandardowych zasadach ochrony przed wyłudzaniem informacji, aby zidentyfikować **adresatów** wiadomości <u>, których dotyczą zasady</u>. Zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender mają również [ustawienia personifikacji](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), w których można określić poszczególne adresy e-mail nadawcy lub domeny nadawcy<u>, które otrzymają ochronę przed personifikacją</u> zgodnie z opisem w dalszej części tego artykułu.
 
-## <a name="spoof-settings"></a>Spoof settings
+## <a name="spoof-settings"></a>Ustawienia fałszowania
 
-Spoofing (Fałszowanie) jest wyświetlany w sytuacji, gdy adres Nadawca w wiadomości e-mail (adres nadawcy wyświetlany w klientach poczty e-mail) nie jest taki, jak domena źródła poczty e-mail. Aby uzyskać więcej informacji na temat fałszowania, zobacz Ochrona [przed fałszowaniem w programie Microsoft 365](anti-spoofing-protection.md).
+Fałszowanie polega na tym, że adres Od w wiadomości e-mail (adres nadawcy wyświetlany w klientach poczty e-mail) nie jest zgodny z domeną źródła wiadomości e-mail. Aby uzyskać więcej informacji na temat fałszowania, zobacz [Ochrona przed fałszowaniem w Microsoft 365](anti-spoofing-protection.md).
 
-Poniższe ustawienia fałszowania są dostępne w zasadach ochrony przed wyłudzaniem informacji w u Ochrona usługi Office 365 w usłudze Defender:
+Następujące ustawienia fałszowania są dostępne w zasadach ochrony przed wyłudzaniem informacji na platformie EOP i Ochrona usługi Office 365 w usłudze Defender:
 
-- **Włącz analizę fałszowania**: Pozwala włączać lub wyłączać funkcję fałszowania. Zalecamy pozostawienie jej włączonej.
+- **Włączanie analizy fałszowania**: włącza lub wyłącza analizę fałszowania. Zalecamy pozostawienie jej włączonej.
 
-  Gdy jest włączona analiza fałszerska, analiza fałszerska pokazuje sfałszowanych nadawców, którzy zostali automatycznie wykryci i zachęceni lub zablokowani przez fałszywą inteligencję. Możesz ręcznie zastąpić werdykt analizy fałszowania, aby zezwolić na dostęp do informacji wykrytych fałszywych nadawców lub zablokować ich. Jednak gdy to zrobisz, fałszywy nadawca zniknie z szczegółowych informacji o analizie fałszowania i będzie teraz widoczny tylko na  karcie Fałsz na liście zezwalania/blokowania dzierżawy. Na liście zezwalania/blokowania dzierżawy można też ręcznie tworzyć wpisy zezwalające lub blokowane dla sfałszowanych nadawców. Aby uzyskać więcej informacji, zapoznaj się z następującymi artykułami:
+  Po włączeniu analizy fałszowania szczegółowe **informacje o fałszowaniu analizy** pokazują sfałszowanych nadawców, którzy zostali automatycznie wykryci i dozwoloni lub zablokowani przez fałszowanie inteligencji. Możesz ręcznie zastąpić werdykt analizy fałszowania, aby umożliwić lub zablokować wykrytych sfałszowanych nadawców z poziomu szczegółowych informacji. Jednak gdy to zrobisz, sfałszowany nadawca znika ze szczegółowych informacji o fałszowaniu analizy i jest teraz widoczny tylko na karcie **Fałszowanie** na liście dozwolonych/zablokowanych dzierżaw. Możesz również ręcznie utworzyć wpisy zezwalania lub blokowania dla sfałszowanych nadawców na liście dozwolonych/zablokowanych dzierżaw. Aby uzyskać więcej informacji, zapoznaj się z następującymi artykułami:
 
-  - [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)
-  - [Zarządzanie listą zezwalania/blokowania dzierżawy w uciekaniu usługi EOP](tenant-allow-block-list.md)
+  - [Fałszowanie szczegółowych informacji wywiadowczych w ramach EOP](learn-about-spoof-intelligence.md)
+  - [Zarządzanie listą dozwolonych/zablokowanych dzierżaw w funkcji EOP](tenant-allow-block-list.md)
 
   > [!NOTE]
   >
-  > - Ochrona przed fałszerskami jest domyślnie włączona w domyślnych zasadach ochrony przed wyłudzaniem informacji i we wszystkich nowych niestandardowych zasadach ochrony przed wyłudzaniem informacji, które są przez Ciebie tworzyć.
-  > - Nie musisz wyłączać ochrony przed fałszeringem, jeśli rekord MX nie Microsoft 365; zamiast tego włącz funkcję rozszerzonego filtrowania dla łączników. Aby uzyskać instrukcje, [zobacz Ulepszone filtrowanie łączników w programie Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
-  > - Wyłączenie ochrony przed fałszeringem powoduje tylko  wyłączenie niejawnej ochrony przed fałszowaniem na podstawie [testów uwierzytelniania złożonego](email-validation-and-authentication.md#composite-authentication). Jeśli nadawca nie sprawdzi _jawnego_ [ciągu DMARC](use-dmarc-to-validate-email.md) w miejscu, w którym ustawiono zasady do kwarantanny lub odrzucenia, wiadomość jest nadal poddana kwarantannie lub odrzucana.
+  > - Ochrona przed fałszowaniem jest domyślnie włączona w domyślnych zasadach ochrony przed wyłudzaniem informacji i we wszystkich nowych niestandardowych zasadach ochrony przed wyłudzaniem informacji, które tworzysz.
+  > - Nie musisz wyłączać ochrony przed fałszowaniem, jeśli rekord MX nie wskazuje na Microsoft 365; zamiast tego włączysz rozszerzone filtrowanie dla łączników. Aby uzyskać instrukcje, zobacz [Rozszerzone filtrowanie łączników w Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > - Wyłączenie ochrony przed fałszowaniem wyłącza tylko _niejawną_ ochronę przed fałszowaniem z testów [uwierzytelniania złożonego](email-validation-and-authentication.md#composite-authentication) . Jeśli nadawca nie _powiedzie się jawnie_ [DMARC](use-dmarc-to-validate-email.md) sprawdza, czy zasady są ustawione na kwarantannę lub odrzucenie, komunikat jest nadal poddawany kwarantannie lub odrzucany.
 
-- **Powiadomienia nieuwierzytanych nadawców**: Te powiadomienia są dostępne tylko wtedy, gdy jest włączona sfałszowana inteligencja. Zapoznaj się z informacjami w następnej sekcji.
-- Akcje **: W** przypadku wiadomości od zablokowanych sfałszowanych nadawców (automatycznie zablokowanych przez fałszywą inteligencję lub ręcznie zablokowanych na liście Zezwalaj/Zablokuj dzierżawy) możesz także określić akcję, która ma być podejmowane w porównaniu z wiadomościami:
-  - **Przenoszenie wiadomości do folderów wiadomości-śmieci** adresatów: jest to wartość domyślna. Wiadomość zostanie dostarczona do skrzynki pocztowej i przeniesiona do folderu Wiadomości-śmieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci Exchange Online pocztowych w programie Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
-  - **Poddaj wiadomość kwarantannie**: Wysyła wiadomość do kwarantanny zamiast do zamierzonych adresatów. Aby uzyskać informacje na temat kwarantanny, zobacz następujące artykuły:
+- **Nieuwierzytelnione powiadomienia nadawcy**: te powiadomienia są dostępne tylko wtedy, gdy włączono analizę fałszowania. Zobacz informacje w następnej sekcji.
+- **Akcje**: W przypadku komunikatów od zablokowanych sfałszowanych nadawców (automatycznie zablokowanych przez fałszowanie analizy lub ręcznie zablokowanych na liście Zezwalaj/blokuj dzierżawę) można również określić akcję do wykonania w przypadku komunikatów:
+  - **Przenieś wiadomości do folderów wiadomości-śmieci adresatów**: jest to wartość domyślna. Wiadomość jest dostarczana do skrzynki pocztowej i przenoszona do folderu Wiadomości-śmieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci w Exchange Online skrzynkach pocztowych w Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Kwarantanna komunikatu**: wysyła komunikat do kwarantanny zamiast zamierzonych adresatów. Aby uzyskać informacje o kwarantannie, zobacz następujące artykuły:
     - [Kwarantanna w Microsoft 365](quarantine-email-messages.md)
-    - [Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako administrator w Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [Znajdowanie i zwalnianie wiadomości poddanych kwarantannie jako użytkownik w programie Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator w Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Znajdowanie i zwalnianie komunikatów poddanych kwarantannie jako użytkownik w Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    Jeśli wybierzesz pozycję Poddaj wiadomość kwarantannie, możesz także wybrać zasady kwarantanny dotyczące wiadomości poddanych kwarantannie przez ochronę przed fałszerami. Zasady kwarantanny określają, co użytkownicy mogą robić w kwarantannie wiadomości i czy użytkownicy otrzymują powiadomienia kwarantanny. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+    Jeśli **wybierzesz pozycję Kwarantanna komunikatu**, możesz również wybrać zasady kwarantanny, które mają zastosowanie do komunikatów, które zostały poddane kwarantannie przez ochronę przed fałszowaniem danych wywiadowczych. Zasady kwarantanny określają, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie oraz czy użytkownicy otrzymują powiadomienia o kwarantannie. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 
-### <a name="unauthenticated-sender"></a>Nieuwierzyta nadawca
+### <a name="unauthenticated-sender"></a>Nieuwierzytelniony nadawca
 
-Powiadomienia nieuwierzytanych nadawców są częścią ustawień [](#spoof-settings) fałszowania dostępnych w zasadach ochrony przed wyłudzaniem informacji w uchcie EOP i w Ochrona usługi Office 365 w usłudze Defender zgodnie z opisem w poprzedniej sekcji. Następujące ustawienia są dostępne tylko wtedy, gdy jest włączona sfałszowana inteligencja:
+Nieuwierzytelnione powiadomienia nadawcy są częścią [ustawień fałszowania](#spoof-settings), które są dostępne w zasadach ochrony przed wyłudzaniem informacji w usłudze EOP i Ochrona usługi Office 365 w usłudze Defender zgodnie z opisem w poprzedniej sekcji. Następujące ustawienia są dostępne tylko po włączeniu analizy fałszowania:
 
-- **Pokaż (?)** dla nieuwierzytanych nadawców w celu fałszowania: To powiadomienie powoduje dodanie znaku zapytania do zdjęcia nadawcy w polu Od, jeśli wiadomość nie przejdzie testów SPF lub DKIM i wiadomość nie przejdzie uwierzytelniania DMARC lub [złożonego](email-validation-and-authentication.md#composite-authentication). Gdy to ustawienie jest wyłączone, znak zapytania nie jest dodawany do fotografii nadawcy.
+- **Pokaż (?) dla nieuwierzytelnionych nadawców w celu fałszowania**: to powiadomienie dodaje znak zapytania do zdjęcia nadawcy w polu Od, jeśli wiadomość nie przechodzi testów SPF lub DKIM **, a** komunikat nie przekazuje [uwierzytelniania złożonego](email-validation-and-authentication.md#composite-authentication) lub DMARC. Gdy to ustawienie jest wyłączone, znak zapytania nie jest dodawany do zdjęcia nadawcy.
 
-- Czy jest wyświetlany tag **"** za pośrednictwem"? To powiadomienie dodaje tag za pośrednictwem <u>(chris@contoso.com za</u> pośrednictwem usługi fabrikam.com) w polu Od, jeśli domena w polu adresu Od (nadawca wiadomości wyświetlana w klientach poczty e-mail) różni się od domeny w podpisie DKIM lub adresu **MAIL FROM**. Aby uzyskać więcej informacji o tych adresach, zobacz [Omówienie standardów wiadomości e-mail](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+- **Pokaż tag "za pośrednictwem"?**: to powiadomienie dodaje tag via (chris@contoso.com <u>za pośrednictwem</u> fabrikam.com) w polu Od, jeśli domena w adresie Od (nadawca wiadomości wyświetlanym w klientach poczty e-mail) różni się od domeny w sygnaturze DKIM lub **adresIE MAIL FROM** . Aby uzyskać więcej informacji na temat tych adresów, zobacz [Omówienie standardów wiadomości e-mail](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-Aby zapobiec dodaniu znaku zapytania lub tagu za pośrednictwem do wiadomości od określonych nadawców, dostępne są następujące opcje:
+Aby zapobiec dodawaniu znaku zapytania lub tagu za pośrednictwem tagu do wiadomości od określonych nadawców, dostępne są następujące opcje:
 
-- Zezwalaj fałszywym nadawcom na wgląd w analizę [fałszowania](learn-about-spoof-intelligence.md) lub ręcznie na liście [zezwalania/blokowania dzierżawy](tenant-allow-block-list.md). Zezwolenie nadawcy na spoofed sender will prevent the via tag from the messages from the sender when unauthenticated sender identification is disabled (Identyfikacja nieuwierzytanego nadawcy) nie będzie wyświetlana w wiadomościach od tego nadawcy.
-- [Konfigurowanie uwierzytelniania poczty e-mail](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) dla domeny nadawcy.
-  - Dla znaku zapytania na zdjęciu nadawcy najważniejsze są SPF lub DKIM.
-  - W przypadku tagu za pośrednictwem potwierdź w podpisie DKIM lub w adresie **MAIL FROM** dopasowania (lub jest poddomeną) domeny w adresie Od.
+- Zezwalaj na sfałszowanego nadawcę w szczegółowych [informacjach analizy fałszowania](learn-about-spoof-intelligence.md) lub ręcznie na [liście zezwalania/blokowania dzierżawy](tenant-allow-block-list.md). Zezwolenie na sfałszowany nadawca uniemożliwi wyświetlanie tagu za pośrednictwem w komunikatach od nadawcy po wyłączeniu identyfikacji nieuwierzytelnionego nadawcy.
+- [Skonfiguruj uwierzytelnianie poczty e-mail](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) dla domeny nadawcy.
+  - Dla znaku zapytania na zdjęciu nadawcy najważniejszy jest SPF lub DKIM.
+  - W przypadku tagu via potwierdź, że domena w podpisie DKIM lub adres **MAIL FROM** jest zgodna (lub jest poddomeną) domeny w adresie Od.
 
-Aby uzyskać więcej informacji, zobacz [Identyfikowanie podejrzanych wiadomości Outlook.com i Outlook w sieci Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+Aby uzyskać więcej informacji, zobacz [Identyfikowanie podejrzanych wiadomości w witrynie Outlook.com i Outlook w sieci Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="first-contact-safety-tip"></a>Pierwszy kontakt porada dotycząca bezpieczeństwa
 
-Ustawienia **Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa** są dostępne w usługach EOP i Ochrona usługi Office 365 w usłudze Defender organizacji i nie są zależne od ustawień ochrony przed fałszerami i personifikacji. Przedstawione porada dotycząca bezpieczeństwa są wyświetlane adresatom w następujących scenariuszach:
+Ustawienia **porada dotycząca bezpieczeństwa Pokaż pierwszy kontakt** są dostępne w organizacjach EOP i Ochrona usługi Office 365 w usłudze Defender i nie są zależne od ustawień ochrony przed fałszowaniem lub personifikacją. Porada dotycząca bezpieczeństwa jest wyświetlany adresatom w następujących scenariuszach:
 
-- Gdy po raz pierwszy otrzyma wiadomość od nadawcy
-- Nie są one często wysyłane do nadawcy.
+- Przy pierwszym pobraniu wiadomości od nadawcy
+- Często nie pobierają wiadomości od nadawcy.
 
 :::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="Pierwszy kontakt porada dotycząca bezpieczeństwa wiadomości z jednym adresatem" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
 :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Pierwszy kontakt porada dotycząca bezpieczeństwa wiadomości z wieloma adresatami" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
-Ta funkcja zapewnia dodatkową warstwę ochrony przed potencjalnymi atakami personifikacji, dlatego zalecamy jej włączenie.
+Ta funkcja dodaje dodatkową warstwę ochrony przed potencjalnymi atakami personifikacji, dlatego zalecamy jej włączenie.
 
-Pierwszy kontakt porada dotycząca bezpieczeństwa zastępuje również konieczność utworzenia reguł przepływu poczty e-mail (nazywanych również regułami transportu), które dodają nagłówek o nazwie **X-MS-Exchange-EnableFirstContactSafetyTip** z wartością **Włącz** do wiadomości (chociaż ta funkcja jest nadal dostępna).
+Pierwszy kontakt porada dotycząca bezpieczeństwa zastępuje również konieczność tworzenia reguł przepływu poczty (znanych również jako reguły transportu), które dodają nagłówek o nazwie **X-MS-Exchange-EnableFirstContactSafetyTip** **wartością Włącz** dla komunikatów (chociaż ta funkcja jest nadal dostępna).
 
 > [!NOTE]
-> Jeśli wiadomość ma wielu adresatów, to czy porada jest wyświetlana i dla kogo jest oparty model dla większości. Jeśli większość adresatów nigdy lub nie otrzymuje wiadomości od tego nadawcy, adresaci, których to dotyczy, otrzymają poradę Niektórzy adresaci, którzy otrzymali **tę wiadomość.** Jeśli obawiasz się, że takie zachowanie ujawnia nawyki dotyczące komunikacji jednego adresata drugiemu, nie włączaj pierwszego kontaktu porada dotycząca bezpieczeństwa i zamiast tego używaj reguł przepływu poczty e-mail.
+> Jeśli komunikat ma wielu adresatów, czy porada jest wyświetlana i dla kogo jest oparta na modelu większości. Jeśli większość adresatów nigdy nie odbiera lub nie odbiera wiadomości od nadawcy, adresaci, których dotyczy problem, otrzymają poradę **Niektóre osoby, które otrzymały tę wiadomość...** Jeśli obawiasz się, że to zachowanie uwidacznia nawyki komunikacyjne jednego adresata, nie należy włączać pierwszego kontaktu porada dotycząca bezpieczeństwa i nadal używać reguł przepływu poczty.
 
-## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Ustawienia wyłączności w zasadach ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender
+## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Ustawienia wyłączne w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 W tej sekcji opisano ustawienia zasad, które są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender.
 
 > [!NOTE]
-> Domyślne zasady ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender zapewniają ochronę przed [fałszerami](set-up-anti-phishing-policies.md#spoof-settings) i analizą skrzynek pocztowych dla wszystkich adresatów. Jednak inne dostępne funkcje ochrony [personifikacji](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) i ustawienia [zaawansowane](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) nie są konfigurowane ani włączone w zasadach domyślnych. Aby włączyć wszystkie funkcje ochrony, zmodyfikuj domyślne zasady ochrony przed wyłudzaniem informacji lub utwórz dodatkowe zasady ochrony przed wyłudzaniem informacji.
+> Domyślne zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender zapewniają [ochronę przed fałszowaniem](set-up-anti-phishing-policies.md#spoof-settings) i analizę skrzynek pocztowych dla wszystkich adresatów. Jednak inne dostępne funkcje [ochrony przed personifikacją](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) i [ustawienia zaawansowane](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) nie są skonfigurowane ani włączone w zasadach domyślnych. Aby włączyć wszystkie funkcje ochrony, zmodyfikuj domyślne zasady ochrony przed wyłudzaniem informacji lub utwórz dodatkowe zasady ochrony przed wyłudzaniem informacji.
 
 ### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-Personifikacja to miejsce, w którym nadawca lub domena poczty e-mail nadawcy w wiadomości wygląda podobnie do rzeczywistego nadawcy lub domeny:
+Personifikacja to miejsce, w którym domena poczty e-mail nadawcy lub nadawcy w wiadomości wygląda podobnie do rzeczywistego nadawcy lub domeny:
 
-- Przykład personifikacji domeny, contoso.com to ćóntoso.com.
-- Personifikacja użytkownika to połączenie nazwy wyświetlanej i adresu e-mail użytkownika. Na przykład valeria Barrios (vbarrios@contoso.com) może zostać personifikowana jako Valeria Barrios, ale ma zupełnie inny adres e-mail.
+- Przykładowa personifikacja contoso.com domeny jest ćóntoso.com.
+- Personifikacja użytkownika jest kombinacją nazwy wyświetlanej użytkownika i adresu e-mail. Na przykład Valeria Barrios (vbarrios@contoso.com) może być personifikowana jako Valeria Barrios, ale z zupełnie innym adresem e-mail.
 
 > [!NOTE]
-> Ochrona personifikacji wyszukuje podobne domeny. Jeśli na przykład domena jest contoso.com, jako próby personifikacji sprawdzamy inne domeny najwyższego poziomu (.com, .biz itp.), ale także domeny, które są dosyć podobne. Na przykład contosososo.com lub contoabcdef.com mogą być widoczne jako próby personifikacji contoso.com.
+> Ochrona przed personifikacją wyszukuje podobne domeny. Jeśli na przykład domena jest contoso.com, sprawdzamy różne domeny najwyższego poziomu (.com, biz itp.) jako próby personifikacji, ale także domeny, które są nawet nieco podobne. Na przykład contosososo.com lub contoabcdef.com mogą być postrzegane jako próby personifikacji contoso.com.
 
-Spersonifikowana domena może być w inny sposób uznawana za legalną (zarejestrowaną domenę, skonfigurowane rekordy uwierzytelniania poczty e-mail itp.), z wyjątkiem sytuacji, gdy jej celem jest nakłonienie adresatów.
+Domena personifikowana może w przeciwnym razie zostać uznana za uzasadnioną (zarejestrowana domena, skonfigurowane rekordy uwierzytelniania poczty e-mail itp.), z wyjątkiem tego, że jej celem jest oszukanie adresatów.
 
 Następujące ustawienia personifikacji są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender:
 
-- **Włączanie ochrony dla użytkowników**: zapobiega personifikacji określonych wewnętrznych lub zewnętrznych adresów e-mail **jako nadawców wiadomości**. Na przykład otrzymasz wiadomość e-mail od wiceprezesa ds. firmy z prośbą o wysłanie jej pewnych wewnętrznych informacji o firmie. Czy możesz to zrobić? Wiele osób przysłało odpowiedź bez przemyślenia.
+- **Włącz ochronę użytkowników**: zapobiega personifikacji określonych wewnętrznych lub zewnętrznych adresów e-mail **jako nadawców wiadomości**. Na przykład otrzymasz wiadomość e-mail od wiceprezesa twojej firmy z prośbą o wysłanie jej wewnętrznych informacji o firmie. Czy to zrobisz? Wiele osób wysyłałoby odpowiedź bez zastanowienia.
 
-  Możesz użyć chronionych użytkowników, aby dodać wewnętrzne i zewnętrzne adresy e-mail nadawcy w celu ochrony przed personifikacji. Ta lista nadawców, którzy są chronieni przed personifikacji użytkownika, różni się  od listy adresatów, do których mają zastosowanie zasady (wszyscy adresaci zasad domyślnych, określonymi adresatami skonfigurowanymi w ustawieniu Użytkownicy **,** grupy i domeny w [](#common-policy-settings) sekcji Ustawienia wspólnych zasad).
+  Chronionych użytkowników można używać do dodawania wewnętrznych i zewnętrznych adresów e-mail nadawcy w celu ochrony przed personifikacją. Ta lista **nadawców** , którzy są chronieni przed personifikacją użytkowników, różni się od listy **adresatów** , których dotyczą zasady (wszyscy adresaci zasad domyślnych; określonych adresatów skonfigurowanych w ustawieniu **Użytkownicy, grupy i domeny** w sekcji [Typowe ustawienia zasad](#common-policy-settings) ).
 
   > [!NOTE]
   >
-  > - W każdej z zasad ochrony przed wyłudzaniem informacji możesz określić maksymalnie 350 chronionych użytkowników (adresy e-mail nadawców). Nie można określić tego samego chronionego użytkownika w wielu zasadach. Z tego względu niezależnie od liczby zasad, które mają zastosowanie do adresata, maksymalna liczba chronionych użytkowników (adresów e-mail nadawców) dla każdego adresata wynosi 350. Aby uzyskać więcej informacji na temat priorytetu zasad i sposobu zatrzymania przetwarzania zasad po zastosowaniu pierwszej zasady, zobacz Kolejność i [pierwszeństwo ochrony poczty e-mail](how-policies-and-protections-are-combined.md).
-  > - Ochrona personifikacji użytkownika nie działa, jeśli nadawca i adresat wcześniej komunikowali się za pośrednictwem poczty e-mail. Jeśli nadawca i adresat nigdy nie komunikowali się za pośrednictwem poczty e-mail, wiadomość zostanie zidentyfikowany jako próba personifikacji.
+  > - W poszczególnych zasadach ochrony przed wyłudzaniem informacji można określić maksymalnie 350 chronionych użytkowników (adresy e-mail nadawcy). Nie można określić tego samego chronionego użytkownika w wielu zasadach. Dlatego bez względu na to, ile zasad dotyczy adresata, maksymalna liczba chronionych użytkowników (adresów e-mail nadawcy) dla każdego pojedynczego adresata wynosi 350. Aby uzyskać więcej informacji na temat priorytetu zasad i sposobu zatrzymywania przetwarzania zasad po zastosowaniu pierwszych zasad, zobacz [Kolejność i pierwszeństwo ochrony poczty e-mail](how-policies-and-protections-are-combined.md).
+  > - Ochrona przed personifikacją użytkownika nie działa, jeśli nadawca i adresat wcześniej komunikowali się za pośrednictwem poczty e-mail. Jeśli nadawca i adresat nigdy nie komunikowali się za pośrednictwem poczty e-mail, wiadomość zostanie zidentyfikowana jako próba personifikacji.
 
-  Domyślnie w celu ochrony użytkowników nie są konfigurowane żadne adresy e-mail **nadawców na potrzeby ochrony personifikacji**. Dlatego domyślnie żadne adresy e-mail nadawców nie są objęte ochroną personifikacji, zarówno w zasadach domyślnych, jak i w zasadach niestandardowych.
+  Domyślnie żadne adresy e-mail nadawcy nie są skonfigurowane do ochrony przed personifikacją w **obszarze Użytkownicy w celu ochrony**. W związku z tym domyślnie żadne adresy e-mail nadawcy nie są objęte ochroną przed personifikacją w zasadach domyślnych lub zasadach niestandardowych.
 
-  Gdy dodasz wewnętrzne lub zewnętrzne adresy e-mail  do listy Użytkownicy w celu ochrony, wiadomości  od tych nadawców będą podlegały testom ochrony przed personifikacjami. Wiadomość jest sprawdzana pod kątem personifikacji, jeśli wiadomość jest  wysyłana do adresata, do których mają zastosowanie zasady (wszyscy adresaci zasad domyślnych; **Użytkownicy, grupy i adresaci domen** w zasadach niestandardowych). W przypadku wykrycia personifikacji w adresie e-mail nadawcy do wiadomości są stosowane akcje ochrony personifikacji dla użytkowników (co zrobić z wiadomością, czy wyświetlić porady dotyczące bezpieczeństwa personifikacji użytkowników itp.).
+  Po dodaniu wewnętrznych lub zewnętrznych adresów e-mail do listy **Użytkownicy w celu ochrony** wiadomości od tych **nadawców** podlegają kontroli ochrony przed personifikacją. Wiadomość jest sprawdzana pod kątem personifikacji, **jeśli** wiadomość jest wysyłana do **adresata** , do których mają zastosowanie zasady (wszyscy adresaci domyślnych zasad; **Użytkownicy, grupy i adresaci domen** w zasadach niestandardowych). Jeśli na adres e-mail nadawcy zostanie wykryta personifikacja, do wiadomości zostaną zastosowane akcje ochrony przed personifikacją dla użytkowników (co zrobić z komunikatem, czy wyświetlić wskazówki dotyczące bezpieczeństwa personifikowanych użytkowników itp.).
 
-- **Włączanie ochrony domen**: zapobiega personifikacji określonych domen **w domenie nadawcy wiadomości**. Na przykład wszystkie posiadane [domeny (](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)zaakceptowane domeny) lub określone domeny niestandardowe (domeny, których jesteś właścicielem lub domenami partnerów). Ta lista domen  nadawców, które są chronione za pomocą personifikacji, różni  się od listy adresatów, do których mają zastosowanie zasady (wszyscy adresaci zasad domyślnych, określonymi adresatami skonfigurowanymi w ustawieniu Użytkownicy **,** grupy i domeny [](#common-policy-settings) w sekcji Ustawienia wspólnych zasad).
+- **Włącz ochronę domen**: zapobiega personifikacji określonych domen **w domenie nadawcy wiadomości**. Na przykład wszystkie domeny, których jesteś właścicielem ([akceptowane domeny](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) lub określonych domen niestandardowych (domen, których jesteś właścicielem lub domen partnerskich). Ta lista **domen nadawców** , które są chronione przed personifikacją, różni się od listy **adresatów** , których dotyczą zasady (wszyscy adresaci domyślnych zasad; określonych adresatów skonfigurowanych w ustawieniu **Użytkownicy, grupy i domeny** w sekcji [Typowe ustawienia zasad](#common-policy-settings) ).
 
   > [!NOTE]
-  > Maksymalna liczba chronionych domen, które można zdefiniować we wszystkich zasadach ochrony przed wyłudzaniem informacji, wynosi 50.
+  > W każdej z zasad ochrony przed wyłudzaniem informacji można określić maksymalnie 50 domen niestandardowych.
 
-  Domyślnie żadna domena nadawcy nie jest skonfigurowana do ochrony personifikacji w **opcjach Włącz ochronę domen**. Dlatego domyślnie żadna domena nadawcy nie jest objęta ochroną personifikacji, zarówno w zasadach domyślnych, jak i w zasadach niestandardowych.
+  Domyślnie żadne domeny nadawcy nie są skonfigurowane do ochrony przed personifikacją w **sekcji Włączanie ochrony domen**. W związku z tym domyślnie żadne domeny nadawcy nie są objęte ochroną przed personifikacją w zasadach domyślnych lub zasadach niestandardowych.
 
-  Po dodaniu domen do listy **Włącz** ochronę domen wiadomości od nadawców w  tych domenach podlegają testom ochrony przed personifikacjami. Wiadomość jest sprawdzana pod kątem personifikacji, jeśli wiadomość jest  wysyłana do adresata, do których mają zastosowanie zasady (wszyscy adresaci zasad domyślnych; **Użytkownicy, grupy i adresaci domen** w zasadach niestandardowych). W przypadku wykrycia personifikacji w domenie nadawcy do wiadomości są stosowane akcje ochrony przed personifikacji dla domen (co zrobić z wiadomością, czy wyświetlić porady dotyczące bezpieczeństwa personifikacji użytkowników itp.).
+  Po dodaniu domen do listy **Włącz domeny w celu ochrony** komunikaty od **nadawców w tych domenach** podlegają kontroli ochrony przed personifikacją. Wiadomość jest sprawdzana pod kątem personifikacji, **jeśli** wiadomość jest wysyłana do **adresata** , do których mają zastosowanie zasady (wszyscy adresaci domyślnych zasad; **Użytkownicy, grupy i adresaci domen** w zasadach niestandardowych). Jeśli w domenie nadawcy zostanie wykryta personifikacja, do komunikatu zostaną zastosowane akcje ochrony przed personifikacją domen (co zrobić z komunikatem, czy wyświetlić wskazówki dotyczące bezpieczeństwa personifikowanych użytkowników itp.).
 
-- **Akcje**: Wybierz akcję, która ma być podejmowana względem wiadomości przychodzących, które zawierają próby personifikacji wobec chronionych użytkowników i chronionych domen w zasadach. Dla personifikacji chronionych użytkowników i personifikacji chronionych domen można określić różne akcje:
-  - **Nie zastosuj żadnej akcji**
-  - **Przekierowywanie wiadomości na inne** adresy e-mail: wysyła wiadomość do określonych adresatów zamiast do określonych adresatów.
-  - **Przenoszenie wiadomości do folderów wiadomości-śmieci** adresatów: Wiadomość jest dostarczana do skrzynki pocztowej i przenoszony do folderu Wiadomości-śmieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci Exchange Online pocztowych w programie Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
-  - **Poddaj wiadomość kwarantannie**: Wysyła wiadomość do kwarantanny zamiast do zamierzonych adresatów. Aby uzyskać informacje na temat kwarantanny, zobacz następujące artykuły:
+- **Akcje**: wybierz akcję do wykonania w przypadku komunikatów przychodzących zawierających próby personifikacji wobec chronionych użytkowników i chronionych domen w zasadach. Możesz określić różne akcje personifikacji chronionych użytkowników a personifikację chronionych domen:
+  - **Nie stosuj żadnej akcji**
+  - **Przekieruj wiadomość na inne adresy e-mail**: wysyła wiadomość do określonych adresatów zamiast do zamierzonych adresatów.
+  - **Przenieś wiadomości do folderów wiadomości-śmieci adresatów**: wiadomość jest dostarczana do skrzynki pocztowej i przenoszona do folderu Wiadomości-śmieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci w Exchange Online skrzynkach pocztowych w Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Kwarantanna komunikatu**: wysyła komunikat do kwarantanny zamiast zamierzonych adresatów. Aby uzyskać informacje o kwarantannie, zobacz następujące artykuły:
     - [Kwarantanna w Microsoft 365](quarantine-email-messages.md)
-    - [Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako administrator w Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [Znajdowanie i zwalnianie wiadomości poddanych kwarantannie jako użytkownik w programie Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator w Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Znajdowanie i zwalnianie komunikatów poddanych kwarantannie jako użytkownik w Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    Jeśli wybierzesz pozycję Poddaj wiadomość kwarantannie, możesz również wybrać zasady kwarantanny dotyczące wiadomości poddanych kwarantannie przez ochronę personifikacji użytkownika lub personifikacji domeny. Zasady kwarantanny określają, co użytkownicy mogą robić w kwarantannie wiadomości. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+    Jeśli **wybierzesz pozycję Kwarantanna komunikatu**, możesz również wybrać zasady kwarantanny, które mają zastosowanie do komunikatów poddawanych kwarantannie przez personifikację użytkownika lub ochronę przed personifikacją domeny. Zasady kwarantanny definiują, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 
-  - **Dostarczanie wiadomości i dodawanie innych adresów** do wiersza UDW: Dostarczanie wiadomości do określonych adresatów i dyskretne dostarczanie wiadomości do określonych adresatów.
-  - **Usunąć wiadomość przed jej dostarczenia**: w trybie dyskretnym usuwa całą wiadomość wraz ze wszystkimi załącznikami.
+  - **Dostarczenie wiadomości i dodanie innych adresów do wiersza Bcc**: dostarczenie wiadomości do zamierzonych adresatów i dyskretne dostarczenie wiadomości do określonych adresatów.
+  - **Usuń wiadomość przed jej dostarczeniem**: w trybie dyskretnym usuwa całą wiadomość, w tym wszystkie załączniki.
 
-- **Porady dotyczące bezpieczeństwa personifikacji**: Włącz lub wyłącz następujące porady dotyczące bezpieczeństwa personifikacji, które będą wyświetlane wiadomości, które nie będą sprawdzać personifikacji:
-  - **Pokaż poradę dla personifikowanych użytkowników**: Adres Od zawiera pole **Umożliwiaj użytkownikom ochronę** użytkownika. Dostępne tylko wtedy **, gdy jest włączone** i skonfigurowane ustawienie Włącz ochronę dla użytkowników.
-  - **Pokaż poradę dla spersonifikowanych domen**: Adres Od zawiera pole **Włącz domeny w celu ochrony** domeny. Dostępne tylko wtedy **, gdy jest** włączona i skonfigurowana włączanie ochrony domen.
-  - **Pokaż** poradę dla nietypowych znaków: Adres Od zawiera nietypowe zestawy znaków (na przykład symbole matematyczne i tekst lub kombinację wielkich i małych liter) w  polu Umożliwiaj użytkownikom ochronę nadawcy lub Włącz domeny w celu ochrony domeny nadawcy.  Dostępne tylko wtedy **, gdy jest włączone i**   skonfigurowane ustawienie Włącz ochronę dla użytkowników lub Włącz ochronę domen.
+- **Wskazówki dotyczące bezpieczeństwa personifikacji**: włącz lub wyłącz następujące wskazówki dotyczące bezpieczeństwa personifikacji, które będą wyświetlane komunikaty, które nie sprawdzają personifikacji:
+  - **Pokaż poradę dla personifikowanych użytkowników**: adres Od zawiera opcję **Włącz użytkownikom ochronę** użytkownika. Opcja dostępna tylko wtedy, gdy opcja **Włącz ochronę użytkowników** jest włączona i skonfigurowana.
+  - **Pokaż poradę dotyczącą domen personifikowanych**: adres Od zawiera domenę **Włączanie ochrony** domeny. Dostępne tylko wtedy, gdy włączono i skonfigurowano opcję **Włącz domeny do ochrony** .
+  - **Pokaż poradę dotyczącą nietypowych znaków**: adres From zawiera nietypowe zestawy znaków (na przykład symbole matematyczne i tekst lub kombinację wielkich i małych liter) w obszarze **Włącz użytkownikom ochronę** **nadawcy lub domenom Włączanie ochrony domeny nadawcy** .  Dostępne tylko wtedy, gdy włączono i skonfigurowano opcję **Włącz dla użytkowników ochronę** _lub_ **Włącz ochronę domen** .
 
-- **Włączanie analizy skrzynek pocztowych**: Włączenie lub wyłączenie sztucznej inteligencji, która określa wzorce obsługi poczty e-mail użytkowników z częstymi kontaktami. To ustawienie ułatwia AI odróżnianie wiadomości od legalnych i personifikowanych nadawców.
+- **Włączanie analizy skrzynek pocztowych**: włącza lub wyłącza sztuczną inteligencję (AI), która określa wzorce poczty e-mail użytkowników z ich częstymi kontaktami. To ustawienie pomaga sztucznej inteligencji odróżnić komunikaty od legalnych i personifikowanych nadawców.
 
-  Na przykład Laureano Laureano (glaureano@contoso.com) jest dyrektorem generalną Twojej firmy, dlatego dodajesz ją jako chronionego nadawcę w ustawieniach  Zasad umożliwiania użytkownikom ochrony ustawień. Jednak niektórzy adresaci, do których mają zastosowanie zasady, regularnie komunikują się z dostawcą o imieniu Laureano (glaureano@fabrikam.com). Ponieważ w przypadku tych adresatów historia komunikacji jest glaureano@fabrikam.com, inteligencja skrzynek pocztowych nie będzie identyfikować wiadomości od usługi glaureano@fabrikam.com jako próby personifikacji glaureano@contoso.com dla tych adresatów.
+  Na przykład Gabriela Laureano (glaureano@contoso.com) jest dyrektorem generalnym twojej firmy, dlatego należy dodać ją jako chronionego nadawcę w obszarze **Włączanie użytkownikom ochrony** ustawień zasad. Ale niektórzy adresaci, których dotyczą zasady, regularnie komunikują się z dostawcą o nazwie Gabriela Laureano (glaureano@fabrikam.com). Ponieważ adresaci mają historię komunikacji z glaureano@fabrikam.com, analiza skrzynek pocztowych nie będzie identyfikować wiadomości z glaureano@fabrikam.com jako próby personifikacji glaureano@contoso.com dla tych adresatów.
 
-  Aby korzystać z częstych kontaktów, które były poznane przez funkcje analizy skrzynek pocztowych (i których nie ma) w celu ochrony użytkowników przed atakami  personifikacji, możesz włączyć ochronę personifikacji analizy po włączeniu włączoną analizę skrzynki **pocztowej.**
+  Aby używać częstych kontaktów poznanych przez analizę skrzynki pocztowej (i ich brak) w celu ochrony użytkowników przed atakami personifikacji, możesz włączyć opcję **Włącz ochronę przed personifikacją inteligencji** po **włączeniu funkcji Włączanie analizy skrzynek pocztowych**.
 
-- **Włączanie ochrony personifikacji** personifikacji: Włącz to ustawienie, aby określić akcję, która ma być wytyczysz wiadomości na podstawie wykrywania personifikacji z wyników analizy skrzynki pocztowej:
-  - **Nie zastosuj żadnej akcji**: Zwróć uwagę, że ta wartość ma taki sam skutek jak włączenie analizy skrzynki **pocztowej, ale** wyłączenie ochrony przed personifikacjami włączoną **analizę**.
+- **Włącz ochronę przed personifikacją analizy**: włącz to ustawienie, aby określić akcję do wykonania w przypadku wykrywania personifikacji z wyników analizy skrzynki pocztowej:
+  - **Nie stosuj żadnych akcji**: zwróć uwagę, że ta wartość ma taki sam wynik jak włączenie **analizy skrzynki pocztowej** , ale **wyłączenie opcji Włącz ochronę przed personifikacją inteligencji**.
   - **Przekierowywanie wiadomości na inne adresy e-mail**
   - **Przenoszenie wiadomości do folderów wiadomości-śmieci adresatów**
-  - **Poddaj kwarantannie** wiadomość: Jeśli wybierzesz tę akcję, możesz również wybrać zasady kwarantanny dotyczące wiadomości poddanych kwarantannie przez ochronę skrzynki pocztowej. Zasady kwarantanny określają, co użytkownicy mogą robić w kwarantannie wiadomości i czy użytkownicy otrzymują powiadomienia kwarantanny. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
-  - **Dostarczanie wiadomości i dodawanie innych adresów do wiersza UDW**
-  - **Usunięcie wiadomości przed jej dostarczeniaą**
+  - **Kwarantanna komunikatu**: Jeśli wybierzesz tę akcję, możesz również wybrać zasady kwarantanny, które mają zastosowanie do wiadomości poddawanych kwarantannie przez ochronę przed inteligencją skrzynki pocztowej. Zasady kwarantanny określają, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie oraz czy użytkownicy otrzymują powiadomienia o kwarantannie. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+  - **Dostarczanie komunikatu i dodawanie innych adresów do wiersza Bcc**
+  - **Usuń wiadomość przed jej dostarczeniem**
 
-- **Dodaj zaufanych nadawców i domeny**: Wyjątki od ustawień ochrony personifikacji. Wiadomości od określonych nadawców i domen nadawcy nigdy nie są klasyfikowane przez zasady jako ataki oparte na personifikacji. Innymi słowy, akcja dla chronionych nadawców, chronionych domen lub ochrony skrzynki pocztowej nie jest stosowana do tych zaufanych nadawców ani domen nadawców. Maksymalne ograniczenie dla tych list to 1024 wpisy.
+- **Dodawanie zaufanych nadawców i domen**: wyjątki od ustawień ochrony przed personifikacją. Komunikaty z określonych domen nadawców i nadawców nigdy nie są klasyfikowane jako ataki oparte na personifikacji przez zasady. Innymi słowy, akcja dla chronionych nadawców, domen chronionych ani ochrony inteligencji skrzynki pocztowej nie jest stosowana do tych zaufanych nadawców ani domen nadawców. Maksymalny limit dla tych list to 1024 wpisy.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Zaawansowane progi wyłudzania informacji w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-Poniższe zaawansowane progi wyłudzania informacji są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender. Te progi sterują wrażliwością na stosowanie modeli uczenia maszynowego do wiadomości w celu określenia werdyktu wyłudzania informacji:
+Następujące zaawansowane progi wyłudzania informacji są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender. Te progi kontrolują czułość stosowania modeli uczenia maszynowego do komunikatów w celu określenia werdyktu wyłudzania informacji:
 
-- **1 — Standardowe**: jest to wartość domyślna. Ważność akcji podejmowanej w  związku z wiadomością zależy od stopnia pewności, że wiadomość jest próbą wyłudzenia informacji (niska, średnia, wysoka lub bardzo wysoka pewność). Na przykład w wiadomościach zidentyfikowanych jako próby wyłudzenia informacji o bardzo wysokim stopniu ufności stosowane są najbardziej poważne akcje, natomiast w wiadomościach oznaczonych jako próby wyłudzenia informacji o niskim stopniu pewności stosowane są mniej poważne akcje.
-- **2 . Agresywne**: Wiadomości zidentyfikowane jako próby wyłudzenia informacji z dużą pewnością są traktowane tak, jakby zostały zidentyfikowane z bardzo dużą pewnością siebie.
-- **3 — Bardziej** agresywne: Wiadomości zidentyfikowane jako próby wyłudzenia informacji z średnią lub wysokim stopniem ufności są traktowane tak, jakby zostały zidentyfikowane z bardzo wysokim stopniem ufności.
-- **4 —** Najbardziej agresywne: Wiadomości zidentyfikowane jako próby wyłudzenia informacji z niskim, średnim lub wysokim stopniem ufności są traktowane tak, jakby zostały zidentyfikowane z bardzo dużą pewnością.
+- **1 — Standardowa**: jest to wartość domyślna. Ważność akcji wykonywanej w wiadomości zależy od stopnia pewności, że wiadomość jest wyłudzająca informacje (niska, średnia, wysoka lub bardzo wysoka pewność). Na przykład komunikaty, które są identyfikowane jako wyłudzanie informacji z bardzo wysokim poziomem zaufania, mają najsurowsze działania, podczas gdy komunikaty, które są identyfikowane jako wyłudzanie informacji z niskim stopniem ufności, mają mniej poważne działania.
+- **2 — Agresywne**: Komunikaty, które są identyfikowane jako wyłudzanie informacji z wysokim stopniem ufności, są traktowane tak, jakby były identyfikowane z bardzo wysokim poziomem zaufania.
+- **3 — Bardziej agresywne**: Komunikaty, które są identyfikowane jako wyłudzanie informacji ze średnim lub wysokim poziomem ufności, są traktowane tak, jakby były identyfikowane z bardzo wysokim poziomem zaufania.
+- **4 — Najbardziej agresywne**: Komunikaty, które są identyfikowane jako wyłudzanie informacji z niskim, średnim lub wysokim stopniem ufności, są traktowane tak, jakby zostały zidentyfikowane z bardzo wysokim poziomem zaufania.
 
-W przypadku zwiększenia tego ustawienia prawdopodobieństwo wyników fałszywie dodatnich (oznaczanych jako złe) wzrasta. Aby uzyskać informacje na temat zalecanych ustawień, zobacz zasady [ochrony przed wyłudzaniem informacji Ochrona usługi Office 365 w usłudze Microsoft Defender sieci.](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)
+Prawdopodobieństwo fałszywie dodatnich (dobrych komunikatów oznaczonych jako złe) zwiększa się w miarę zwiększania tego ustawienia. Aby uzyskać informacje o zalecanych ustawieniach, zobacz [zasady ochrony przed wyłudzaniem informacji w ustawieniach Ochrona usługi Office 365 w usłudze Microsoft Defender](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).

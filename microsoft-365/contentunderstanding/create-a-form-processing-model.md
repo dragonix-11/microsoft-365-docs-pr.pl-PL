@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Dowiedz się, jak utworzyć model przetwarzania formularzy w SharePoint Syntex.
-ms.openlocfilehash: 3eb14a76bd597f1f382b87813c7e4bd2a4518e19
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: bf0a15894e7b9bbc4905a0372d557e1880650e84
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882357"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349814"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Tworzenie modelu przetwarzania formularzy w usłudze Microsoft SharePoint Syntex
 
@@ -43,7 +43,7 @@ Tworzenie modelu przetwarzania formularzy obejmuje następujące kroki:
 
 Model przetwarzania formularzy można utworzyć tylko w SharePoint bibliotekach dokumentów, dla których jest włączony. Jeśli przetwarzanie formularzy jest włączone, możesz wyświetlić menu **AutomateAI** **BuilderUtwórz** >  **model do przetwarzania formularzy** w bibliotece  >  dokumentów. Jeśli potrzebujesz włączonego przetwarzania w bibliotece dokumentów, musisz skontaktować się z administratorem SharePoint.
 
- ![Zrzut ekranu przedstawiający model narzędzia AI Builder.](../media/content-understanding/create-ai-builder-model2.png)
+![Zrzut ekranu przedstawiający model narzędzia AI Builder.](../media/content-understanding/create-ai-builder-model2.png)
 
 ## <a name="step-1-create-a-form-processing-model"></a>Krok 1. Tworzenie modelu przetwarzania formularzy
 
@@ -114,11 +114,9 @@ Musisz otagować dokumenty, aby nauczyć model rozumieć pola i dane tabeli, kt�
 
 2. Po opublikowaniu modelu wybierz pozycję **Użyj modelu**, a następnie wybierz pozycję **Utwórz przepływ**. Spowoduje to utworzenie przepływu Power Automate, który może być uruchamiany w bibliotece dokumentów SharePoint i wyodrębnia pola, które zostały zidentyfikowane w modelu.
 
-    ![Zrzut ekranu w narzędziu AI Builder przedstawiający panel Tworzenie przepływu.](../media/content-understanding/ai-builder-create-a-flow.png)
+    ![Zrzut ekranu w narzędziu AI Builder przedstawiający panel Tworzenie przepływu.](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
 3. Po zakończeniu zostanie wyświetlony komunikat: *Przepływ został pomyślnie utworzony*.
-
-    ![Zrzut ekranu w narzędziu AI Builder pokazujący, że przepływ został pomyślnie utworzony.](../media/content-understanding/ai-builder-flow-created.png)
 
 4. Wybierz przycisk **Przejdź do SharePoint**, aby wyświetlić bibliotekę dokumentów zaktualizowaną przy użyciu modelu.
 
@@ -132,7 +130,7 @@ Musisz otagować dokumenty, aby nauczyć model rozumieć pola i dane tabeli, kt�
 
     ![Przycisk Informacje.](../media/content-understanding/info-button.png)  
 
-3. Upload pliki do biblioteki dokumentów. Wszystkie pliki, które model identyfikuje jako typ zawartości, wyświetlają pliki w widoku i wyświetlają wyodrębnione dane w kolumnach.
+3. Przekaż pliki do biblioteki dokumentów. Wszystkie pliki, które model identyfikuje jako typ zawartości, wyświetlają pliki w widoku i wyświetlają wyodrębnione dane w kolumnach.
 
     ![Zrobić.](../media/content-understanding/doc-lib-done.png) 
 
