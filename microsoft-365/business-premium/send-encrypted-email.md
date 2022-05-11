@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Dowiedz się, jak wysyłać zaszyfrowane wiadomości e-mail przy użyciu Outlook.
-ms.openlocfilehash: 02dc3b7720f6aa46ffaf3cf4a04511c725798a24
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9b2251114831bfe0b6364dc4327bd0c21da55e2
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095171"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316837"
 ---
 # <a name="encrypt-or-label-sensitive-email"></a>Szyfrowanie lub etykietowanie poufnych wiadomości e-mail
 
@@ -59,7 +59,7 @@ Wszystkie informacje na temat konfigurowania szyfrowania poczty e-mail można zn
 
 Administratorzy mogą tworzyć reguły przepływu poczty, aby automatycznie chronić wiadomości e-mail wysyłane i odbierane z kampanii lub firmy. Skonfiguruj reguły szyfrowania wszelkich wychodzących wiadomości e-mail i usuwania szyfrowania z zaszyfrowanych wiadomości pochodzących z organizacji lub odpowiedzi na zaszyfrowane wiadomości wysyłane z organizacji.
 
-Tworzysz reguły przepływu poczty w celu szyfrowania wiadomości e-mail za pomocą usługi Microsoft Purview Message Encryption. Zdefiniuj reguły przepływu poczty na potrzeby wyzwalania szyfrowania wiadomości przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange (EAC).</a>
+Tworzysz reguły przepływu poczty w celu szyfrowania wiadomości e-mail przy użyciu Szyfrowanie wiadomości w Microsoft Purview. Zdefiniuj reguły przepływu poczty na potrzeby wyzwalania szyfrowania wiadomości przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange (EAC).</a>
 
 1. W przeglądarce internetowej zaloguj się przy użyciu konta służbowego, któremu udzielono uprawnień administratora globalnego.
 2. Wybierz kafelek Administrator.
@@ -71,5 +71,6 @@ Aby uzyskać więcej informacji, zobacz [Definiowanie reguł przepływu poczty w
 
 Możesz również zastosować znakowanie, aby dostosować wygląd i tekst w wiadomościach e-mail. Aby uzyskać więcej informacji, zobacz [Dodawanie marki organizacji do zaszyfrowanych komunikatów](../compliance/email-encryption.md).
 
-Jeśli dotarłeś tak daleko, pomyślnie ukończyłeś kolejną misję, więc gratulacje! Nie ma czasu, aby odpocząć od naszych sukcesów, więc przejdźmy do tworzenia bezpiecznego i bezpiecznego środowiska, w którym zespół może [bezpiecznie współpracować](m365bp-collaborate-share-securely.md). 
+## <a name="next-mission"></a>Następna misja
 
+Jeśli dotarłeś tak daleko, pomyślnie ukończyłeś kolejną misję, więc gratulacje! Nie ma czasu, aby odpocząć od naszych sukcesów, więc przejdźmy do tworzenia bezpiecznego i bezpiecznego środowiska, w którym zespół może [bezpiecznie współpracować](m365bp-collaborate-share-securely.md).

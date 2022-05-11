@@ -11,21 +11,21 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Dowiedz się, jak skonfigurować łącznik i użyć go w portalu zgodności usługi Microsoft Purview w celu importowania i archiwizowania danych z Skype dla firm do Microsoft 365.
-ms.openlocfilehash: 5fa8b0ddaa46a181fca4d2539a3ff4778e47c632
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak skonfigurować łącznik w portal zgodności Microsoft Purview i używać go do importowania i archiwizowania danych z Skype dla firm do Microsoft 365.
+ms.openlocfilehash: ceca2068f819d4b7bec32ab65e673b055775c217
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078282"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318357"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Konfigurowanie łącznika do archiwizowania danych Skype dla firm
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy Skype dla firm do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Skype dla firm](https://www.veritas.com/en/au/insights/merge1/skype-for-business) skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie) i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość, taką jak wiadomości między użytkownikami, trwałe czaty i wiadomości konferencyjne z Skype dla firm na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
+Użyj łącznika Veritas w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy Skype dla firm do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Skype dla firm](https://www.veritas.com/en/au/insights/merge1/skype-for-business) skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie) i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość, taką jak wiadomości między użytkownikami, trwałe czaty i wiadomości konferencyjne z Skype dla firm na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 
-Po zapisaniu Skype dla firm danych w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika Skype dla firm może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zapisaniu Skype dla firm danych w skrzynkach pocztowych użytkowników można zastosować funkcje Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika Skype dla firm może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-skype-for-business-data"></a>Omówienie archiwizacji danych Skype dla firm
 
@@ -45,9 +45,9 @@ W poniższym omówieniu wyjaśniono proces korzystania z łącznika do archiwizo
 
 - Utwórz konto Merge1 dla łączników firmy Microsoft. W tym celu skontaktuj się z [pomocą techniczną veritas](https://www.veritas.com/form/requestacall/ms-connectors-contact.html). Musisz zalogować się do tego konta podczas tworzenia łącznika w kroku 1.
 
-- Użytkownik, który tworzy łącznik Skype dla firm w kroku 1 (i kończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który tworzy łącznik Skype dla firm w kroku 1 (i kończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-the-skype-for-business-connector"></a>Krok 1. Konfigurowanie łącznika Skype dla firm
 
@@ -85,7 +85,7 @@ Po utworzeniu łącznika Skype dla firm możesz wyświetlić stan łącznika w p
 
 2. Kliknij kartę **Łączniki**, a następnie wybierz łącznik **Skype dla firm**, aby wyświetlić stronę wysuwaną zawierającą właściwości i informacje o łączniku.
 
-3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera dane zaimportowane do chmury firmy Microsoft.
+3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera informacje o danych, które zostały zaimportowane do chmury firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Wyświetlanie dzienników administratora łączników danych](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Znane problemy
 

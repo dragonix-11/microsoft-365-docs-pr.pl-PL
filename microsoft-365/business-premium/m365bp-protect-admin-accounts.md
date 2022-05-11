@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Dowiedz się, jak skonfigurować i chronić konta administratorów w Microsoft 365 Business Premium.
-ms.openlocfilehash: b054267264b8440929559ad1a2e335449f3c0309
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1428ee6b447f3f841e7e8e9b77cfd82c2f7a6444
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091528"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320016"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Ochrona kont administratorów w Microsoft 365 Business Premium
 
@@ -50,17 +50,17 @@ Aby utworzyć dodatkowe konta administratora:
 
     ![Wybierz pozycję Użytkownicy, a następnie pozycję Aktywni użytkownicy w lewym pasku nawigacyjnym.](../media/Activeusers.png)
 
- 2. Na stronie **Aktywni użytkownicy** wybierz **pozycję Dodaj użytkownika** w górnej części strony, a następnie w panelu **Nowy użytkownik** wprowadź nazwę i inne informacje.
+ 1. Na stronie **Aktywni użytkownicy** wybierz **pozycję Dodaj użytkownika** w górnej części strony. 
 
- 3. Rozwiń sekcję **Role** i wybierz **pozycję administrator globalny**, aby udzielić temu użytkownikowi dostępu administratora globalnego. Możesz również wybrać opcję **Dostosowany administrator** i wybrać dowolną z wyświetlanych ról.
+ 1. W panelu **Dodawanie użytkownika wprowadź** podstawowe informacje, takie jak nazwa i nazwa użytkownika.
 
-    Wprowadź alternatywną wiadomość e-mail w polu tekstowym **Alternatywny adres e-mail** . Możesz użyć tego adresu, aby odzyskać informacje o haśle, jeśli zostanie zablokowane. W przypadku administratorów globalnych na ten adres zostanie również wysłana instrukcja rozliczeniowa.
+ 1. Wprowadź i skonfiguruj informacje o **licencjach produktów** .
 
-    ![Wybierz rolę administratora.](../media/adminroles.png)
+ 1. W **obszarze Ustawienia opcjonalne** zdefiniuj rolę użytkownika, w tym w razie potrzeby dodaj dostęp do centrum administracyjnego.
 
- 4. W sekcji **Licencje produktów** przenieś selektor dla **Microsoft 365 Business** do **pozycji Wył.**, a pozycję **Utwórz użytkownika bez licencji produktu** na **Wł**.
+    :::image type="content" source="media/m365bp-global-admin.png" alt-text="Zdefiniuj nowe role użytkowników.":::
 
-    ![Wybierz licencję produktu.](../media/productlicense.png)
+ 1. Zakończ i przejrzyj ustawienia, a następnie wybierz pozycję **Zakończ dodawanie** , aby potwierdzić szczegóły.
 
 ## <a name="create-an-emergency-admin-account"></a>Tworzenie konta administratora awaryjnego
 
@@ -68,17 +68,19 @@ Należy również utworzyć konto kopii zapasowej, które nie jest skonfigurowan
 
 ## <a name="create-a-user-account-for-yourself"></a>Tworzenie konta użytkownika dla siebie
 
-Użyj konta użytkownika, aby uczestniczyć we współpracy z organizacją, w tym w sprawdzaniu poczty. Oznacza to, że poświadczenia administratora mogą być podobne do  *Alice.Chavez <span></span>@Contoso.org* , a zwykłe konto użytkownika może być podobne do *alice <span></span>@Contoso.com*.
+Użyj konta użytkownika, aby uczestniczyć we współpracy z organizacją, w tym w sprawdzaniu poczty. Oznacza to, że poświadczenia administratora mogą być podobne do  *alice.Chavez <span></span>@Contoso.org*, a zwykłe konto użytkownika może być podobne do *alice <span></span>@Contoso.com*.
 
 Aby utworzyć nowe konto użytkownika:
 
 1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, a następnie wybierz pozycję **Użytkownicy** \> **Aktywni użytkownicy** w lewej nawigacji.
 
-2. Na stronie **Aktywni użytkownicy** wybierz **pozycję Dodaj użytkownika** w górnej części strony, a następnie w panelu **Nowy użytkownik** wprowadź nazwę i inne informacje.
+1. Na stronie **Aktywni użytkownicy** wybierz **pozycję Dodaj użytkownika** w górnej części strony, a następnie na panelu **Dodawanie użytkownika** wprowadź nazwę i inne informacje.
 
-3. Rozwiń sekcję **Role** i wybierz pozycję **Użytkownik (bez dostępu administracyjnego).**
+1. W sekcji **Licencje produktów** zaznacz pole wyboru **Microsoft 365 Business Premium (bez dostępu administracyjnego).**
 
-4. W sekcji **Licencje produktów** przenieś selektor dla **Microsoft 365 Business** do **pozycji Włączone**.
+1. W sekcji **Ustawienia opcjonalne** pozostaw domyślny przycisk radiowy wybrany dla **pozycji Użytkownik (brak dostępu do centrum administracyjnego).**
+
+1. Zakończ i przejrzyj ustawienia, a następnie wybierz pozycję **Zakończ dodawanie** , aby potwierdzić szczegóły.
 
 ## <a name="additional-recommendations"></a>Dodatkowe zalecenia
 

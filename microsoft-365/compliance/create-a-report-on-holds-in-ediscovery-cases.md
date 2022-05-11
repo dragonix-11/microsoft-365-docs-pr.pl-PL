@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 9/11/2017
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,18 +20,18 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak wygenerować raport zawierający informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 1b36b134b8de490e5ca7d9e61044a3c7cac4904f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 25e201e1b8bef0a4ccc3724a6adab6c095f34d54
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097035"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318033"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Tworzenie raportu dotyczącego blokad w przypadkach zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych generowanie raportu zawierającego informacje o wszystkich blokadach skojarzonych z przypadkami core i eDiscovery (Premium) w portalu zgodności usługi Microsoft Purview. Raport zawiera informacje, takie jak nazwa przypadku, z którym jest skojarzona blokada, lokalizacje zawartości, które są wstrzymane, oraz to, czy blokada jest oparta na zapytaniach. Jeśli istnieją przypadki, które nie mają żadnych blokad, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
+Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych generowanie raportu zawierającego informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium) w portal zgodności Microsoft Purview. Raport zawiera informacje, takie jak nazwa przypadku, z którym jest skojarzona blokada, lokalizacje zawartości, które są wstrzymane, oraz to, czy blokada jest oparta na zapytaniach. Jeśli istnieją przypadki, które nie mają żadnych blokad, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
 
 Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać szczegółowy opis informacji zawartych w raporcie.
 
@@ -203,7 +203,7 @@ Sprawa zawiera raport utworzony podczas uruchamiania skryptu w tym artykule zawi
 
 - Nazwa blokady i nazwa sprawy zbierania elektronicznych materiałów dowodowych, z którą jest skojarzona blokada.
 
-- Czy blokada jest skojarzona z przypadkiem Core, czy eDiscovery (Premium).
+- Czy blokada jest skojarzona ze sprawą zbierania elektronicznych materiałów dowodowych (standardowa), czy zbierania elektronicznych materiałów dowodowych (Premium).
 
 - Czy przypadek zbierania elektronicznych materiałów dowodowych jest aktywny, czy zamknięty.
 

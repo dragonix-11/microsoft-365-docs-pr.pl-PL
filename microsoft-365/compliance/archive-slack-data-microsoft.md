@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować i użyć łącznika danych zbierania elektronicznych materiałów dowodowych usługi Slack dostarczonego przez firmę Microsoft w celu importowania i archiwizowania danych wiadomości błyskawicznych.
-ms.openlocfilehash: dc63673ae51d4ea47931a8a27acd7ef2191397d7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 65d7b666390c132995882ca4e8d027064482df13
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093092"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320689"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Konfigurowanie łącznika do archiwizowania danych zbierania elektronicznych materiałów dowodowych usługi Slack (wersja zapoznawcza)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Łącznik danych usługi Slack eDiscovery udostępniany przez firmę Microsoft ułatwia importowanie i archiwizowanie danych wiadomości błyskawicznych (takich jak wiadomości, załączniki, linki i poprawki) z obszarów roboczych usługi Slack w organizacji w celu Microsoft 365. Łącznik danych pobiera dane z interfejsu API usługi Slack, konwertuje je na format wiadomości e-mail, a następnie importuje je do skrzynek pocztowych użytkowników w Microsoft 365. Po zaimportowaniu danych usługi Slack można zastosować rozwiązania zgodności, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), zgodność z komunikacją i ustawienia przechowywania do zawartości usługi Slack. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika danych zbierania elektronicznych materiałów dowodowych usługi Slack może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Łącznik danych usługi Slack eDiscovery udostępniany przez firmę Microsoft ułatwia importowanie i archiwizowanie danych wiadomości błyskawicznych (takich jak wiadomości, załączniki, linki i poprawki) z obszarów roboczych usługi Slack w organizacji w celu Microsoft 365. Łącznik danych pobiera dane z interfejsu API usługi Slack, konwertuje je na format wiadomości e-mail, a następnie importuje je do skrzynek pocztowych użytkowników w Microsoft 365. Po zaimportowaniu danych usługi Slack można zastosować rozwiązania zgodności, takie jak blokada postępowania sądowego, Microsoft Purview zbieranie elektronicznych materiałów dowodowych (Premium), zgodność z komunikacją i ustawienia przechowywania do zawartości usługi Slack. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika danych zbierania elektronicznych materiałów dowodowych usługi Slack może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Omówienie archiwizacji danych zbierania elektronicznych materiałów dowodowych usługi Slack
 
@@ -45,7 +45,7 @@ W poniższym omówieniu wyjaśniono proces korzystania z łącznika danych firmy
 
 - Uzyskaj nazwę użytkownika i hasło dla konta usługi Slack enterprise w organizacji. Te poświadczenia są używane do logowania się do tego konta podczas tworzenia łącznika danych. Zaleca się również automatyczne aprowizowanie użytkowników w organizacji usługi Slack skonfigurowane do korzystania z logowania jednokrotnego. [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Użytkownikowi, który tworzy łącznik usługi Slack eDiscovery, należy przypisać rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności usługi Microsoft Purview. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi, który tworzy łącznik usługi Slack eDiscovery, należy przypisać rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portal zgodności Microsoft Purview. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>Krok 1. Tworzenie łącznika zbierania elektronicznych materiałów dowodowych usługi Slack
 
@@ -121,7 +121,7 @@ Po utworzeniu łącznika usługi Slack eDiscovery możesz wyświetlić stan łą
 
 2. Kliknij kartę **Łączniki** , a następnie wybierz łącznik **Slack eDiscovery** , aby wyświetlić stronę wysuwaną zawierającą właściwości i informacje o łączniku.
 
-3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera dane zaimportowane do chmury firmy Microsoft.
+3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera informacje o danych, które zostały zaimportowane do chmury firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Wyświetlanie dzienników administratora łączników danych](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Znane problemy
 

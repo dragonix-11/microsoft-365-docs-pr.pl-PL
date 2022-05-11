@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 774c23a4da7d368f46607fd588a07ffb01e92f53
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a03d79da004dab7a68e691c6c2a8ac21ac2b7501
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094202"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318187"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Dołączanie zarejestrowanych urządzeń do Microsoft Defender dla Firm
 
@@ -31,9 +31,9 @@ Aby dołączyć urządzenia, możesz wybrać jedną z kilku opcji:
 
 - [Używanie automatycznego dołączania dla urządzeń Windows, które są już zarejestrowane w Microsoft Endpoint Manager](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
 
-- [Dołączanie urządzeń z systemem Windows i macOS przy użyciu skryptu lokalnego](#use-a-local-script-to-onboard-windows-and-macos-devices)
+- [Dołączanie urządzeń Windows i macOS przy użyciu skryptu lokalnego](#use-a-local-script-to-onboard-windows-and-macos-devices)
 
-- [Używanie Endpoint Manager do rejestrowania urządzeń](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows, macOS, iOS i Android), a następnie stosowania zasad usługi Defender for Business na tych urządzeniach
+- [Rejestrowanie urządzeń](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows, macOS, iOS i Android przy użyciu Endpoint Manager), a następnie stosowanie zasad usługi Defender for Business na tych urządzeniach
 
 Ten artykuł zawiera również następujące elementy:
 
@@ -60,7 +60,7 @@ Jeśli Windows urządzenia są już zarejestrowane w usłudze Endpoint Manager, 
 > Zalecamy wybranie opcji "wszystkie zarejestrowane urządzenia". Dzięki temu, gdy Windows urządzenia zostaną zarejestrowane w Endpoint Manager później, zostaną automatycznie dołączone do usługi Defender for Business.
 Aby dowiedzieć się więcej na temat automatycznego dołączania, zobacz Krok 2 w temacie [Używanie kreatora do konfigurowania Microsoft Defender dla Firm](../security/defender-business/mdb-use-wizard.md).
 
-## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>Dołączanie urządzeń z systemem Windows i macOS przy użyciu skryptu lokalnego
+## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>Dołączanie urządzeń Windows i macOS przy użyciu skryptu lokalnego
 
 Do dołączania Windows i komputerów Mac można użyć skryptu lokalnego. Po uruchomieniu skryptu dołączania na urządzeniu tworzy on relację zaufania z Azure Active Directory (jeśli to zaufanie jeszcze nie istnieje), rejestruje urządzenie w Microsoft Endpoint Manager (jeśli nie zostało jeszcze zarejestrowane), a następnie dołącza urządzenie do usługi Defender dla Firm. Ta metoda jest przydatna do dołączania urządzeń w usłudze Defender dla Firm. Jednocześnie można dołączyć maksymalnie 10 urządzeń.
 
@@ -70,19 +70,19 @@ Do dołączania Windows i komputerów Mac można użyć skryptu lokalnego. Po ur
 
 3. Wybierz system operacyjny, taki jak **Windows 10 i 11** lub **macOS**, a następnie w sekcji **Metoda wdrażania** wybierz pozycję **Skrypt lokalny**. 
 
-4. Wybierz pozycję **Pobierz pakiet dołączania**. Zalecamy zapisanie pakietu dołączania na dysku wymiennym. (Jeśli wybrano system **macOS**, wybierz również pozycję **Pobierz pakiet instalacyjny** i zapisz go na urządzeniu wymiennym).
+4. Wybierz pozycję **Pobierz pakiet dołączania**. Zalecamy zapisanie pakietu dołączania na dysku wymiennym. (Jeśli **wybrano macOS**, wybierz również pozycję **Pobierz pakiet instalacyjny** i zapisz go na urządzeniu wymiennym).
 
 5. Skorzystaj z następujących wskazówek:
 
    - urządzenia Windows: [dołączanie urządzeń Windows przy użyciu skryptu lokalnego](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
 
-   - Urządzenia z systemem macOS: [ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
+   - urządzenia macOS: [ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender na macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
 
 ## <a name="use-microsoft-endpoint-manager-to-enroll-devices"></a>Rejestrowanie urządzeń przy użyciu Microsoft Endpoint Manager
 
 Aby zarejestrować urządzenie, zarejestruj je samodzielnie lub poproś użytkowników o zalogowanie się do portalu firmy i zarejestrowanie i zainstalowanie wszystkich potrzebnych aplikacji. 
 
-Jeśli używasz już Endpoint Manager (w tym Microsoft Intune i mobile Zarządzanie urządzeniami), zanim otrzymasz usługę Defender dla Firm, możesz nadal używać Endpoint Manager do dołączania urządzeń organizacji. Dzięki Endpoint Manager można dołączyć komputery, tablety i telefony, w tym urządzenia z systemami iOS i Android.
+Jeśli używasz już Endpoint Manager (w tym Microsoft Intune i mobile Zarządzanie urządzeniami), zanim otrzymasz usługę Defender dla Firm, możesz nadal używać Endpoint Manager do dołączania urządzeń organizacji. Dzięki Endpoint Manager można dołączyć komputery, tablety i telefony, w tym urządzenia iOS i Android.
 
 Zobacz [Rejestrowanie urządzeń w Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 
@@ -137,12 +137,11 @@ Jeśli chcesz odłączyć urządzenie, użyj jednej z następujących procedur:
 
    - urządzenia Windows: [odłączanie urządzeń Windows przy użyciu skryptu lokalnego](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
    
-   - Urządzenia z systemem macOS: [odinstalowywanie w systemie macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
+   - urządzenia macOS: [odinstalowywanie na macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]
 > Odłączenie urządzenia powoduje, że urządzenia przestają wysyłać dane do usługi Defender dla Firm. Jednak dane odebrane przed odłożeniem są przechowywane przez maksymalnie sześć (6) miesięcy.
 
 ## <a name="next-objective"></a>Następny cel
 
-Poświęć trochę czasu, aby [przejrzeć i edytować poicies](m365bp-view-edit-create-mdb-policies.md).
-
+[Skonfiguruj ochronę urządzeń Windows](m365bp-protection-settings-for-windows-10-devices.md).

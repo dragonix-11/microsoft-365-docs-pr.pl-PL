@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Plan plików zapewnia zaawansowane możliwości zarządzania etykietami przechowywania.
-ms.custom: seo-marvel-may2020
-ms.openlocfilehash: d025dc7637b9c7b494a5bff3447fe4429ba24701
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: d509d878b244054138e4e95329d00759719e131d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302206"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319053"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Tworzenie etykiet przechowywania i zarządzanie nimi przy użyciu planu plików
 
@@ -30,7 +30,7 @@ ms.locfileid: "65302206"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Mimo że można tworzyć etykiety przechowywania i zarządzać nimi z **poziomu zarządzania cyklem życia danych** w portalu zgodności usługi Microsoft Purview, plan plików z **zarządzania rekordami** ma dodatkowe możliwości zarządzania:
+Mimo że w portal zgodności Microsoft Purview można tworzyć etykiety przechowywania i zarządzać nimi na podstawie **zarządzania cyklem życia danych**, plan plików z **zarządzania rekordami** ma dodatkowe możliwości zarządzania:
 
 - Etykiety przechowywania można tworzyć zbiorczo, importując odpowiednie informacje z arkusza kalkulacyjnego.
 
@@ -52,15 +52,13 @@ Aby uzyskać dostęp do planu plików, musisz mieć jedną z następujących ró
 
 - Menedżer przechowywania tylko do wyświetlania
 
-W portalu zgodności usługi Microsoft Purview przejdź do obszaru **SolutionsRecords** >  **managementFile** >  plan:
-
-![Strona planów plików](../media/compliance-file-plan.png). 
+W [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) przejdź do obszaru **SolutionsRecords** >  **managementFile** >  plan.
 
 Jeśli **zarządzanie rekordami** nie jest wyświetlane w okienku nawigacji, najpierw przewiń w dół i wybierz pozycję **Pokaż wszystko**.
 
 ## <a name="navigating-your-file-plan"></a>Nawigowanie po planie plików
 
-Jeśli etykiety przechowywania zostały już utworzone w ramach **zarządzania cyklem życia danych** w portalu zgodności usługi Microsoft Purview, etykiety te są automatycznie wyświetlane w planie plików. 
+Jeśli w portal zgodności Microsoft Purview utworzono już etykiety przechowywania z **zarządzania cyklem życia danych**, etykiety te są automatycznie wyświetlane w planie plików. 
 
 Podobnie jeśli teraz tworzysz etykiety przechowywania w planie plików, są one również dostępne w **ramach zarządzania cyklem życia danych** , jeśli etykiety nie są skonfigurowane do oznaczania zawartości jako rekordu.
 
@@ -86,6 +84,9 @@ Wszystkie kolumny z wyjątkiem **etykiety Nazwa** mogą być wyświetlane lub uk
 - **Jest domyślnie odblokowany** — obecnie wdrażany — określa, czy element oznaczony jako rekord jest odblokowany po zastosowaniu etykiety. Prawidłowe wartości:
     - Nie
     - Tak
+
+- **Ponowne etykietowanie do** — obecnie wdrażane — określa, czy etykieta jest skonfigurowana do stosowania innej etykiety na końcu okresu przechowywania. Prawidłowe wartości:
+    - Pusta lub wybrana nazwa etykiety
 
 - **Czas trwania przechowywania** określa okres przechowywania. Prawidłowe wartości:
     - Dni
@@ -153,9 +154,7 @@ Jednak wyświetlenie elementów oznaczonych etykietą Eksploratora zawartości m
 
 Z planu plików możesz wyeksportować szczegóły wszystkich etykiet przechowywania do pliku .csv, aby ułatwić okresowe przeglądy zgodności z osobami biorącymi udział w zarządzaniu danymi w organizacji.
 
-Aby wyeksportować wszystkie etykiety przechowywania: na stronie **Plan pliku** kliknij pozycję **Eksportuj**:
-
-![Opcja eksportowania planu plików.](../media/compliance-file-plan-export-labels.png)
+Aby wyeksportować wszystkie etykiety przechowywania: na stronie **Plan pliku** kliknij pozycję **Eksportuj**.
 
 Zostanie otwarty plik *.csv zawierający wszystkie istniejące etykiety przechowywania. Przykład:
 
@@ -177,7 +176,7 @@ W planie plików można zbiorczo importować nowe etykiety przechowywania przy u
     
     ![Szablon planu pliku z wypełnionymi informacjami.](../media/file-plan-filled-out-template.png)
 
-4. Wybierz **Upload plik,** aby przekazać wypełniony szablon.
+4. Wybierz **pozycję Przekaż plik,** aby przekazać wypełniony szablon.
     
    Plan plików przekazuje plik i weryfikuje wpisy.
 
@@ -201,7 +200,7 @@ Poniższe informacje ułatwiają wypełnienie pobranego szablonu w celu zaimport
 |Właściwość|Wpisać|Wymagany|Prawidłowe wartości|
 |:-----|:-----|:-----|:-----|
 |LabelName|Ciąg|Tak|Ta właściwość określa nazwę etykiety przechowywania i musi być unikatowa w dzierżawie. Obsługiwane znaki do importowania: a-z, A-Z, 0-9, łącznik (-) i znak spacji.|
-|Komentowanie|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla administratorów. Ten opis jest wyświetlany tylko administratorom, którzy zarządzają etykietą przechowywania w portalu zgodności usługi Microsoft Purview.|
+|Komentowanie|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla administratorów. Ten opis jest wyświetlany tylko administratorom, którzy zarządzają etykietą przechowywania w portal zgodności Microsoft Purview.|
 |Uwagi|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla użytkowników. Ten opis jest wyświetlany, gdy użytkownicy umieszczają wskaźnik myszy na etykiecie w aplikacjach takich jak Outlook, SharePoint i OneDrive. Jeśli pozostawisz tę właściwość pustą, zostanie wyświetlony domyślny opis, który objaśnia ustawienia przechowywania etykiety. |
 |IsRecordLabel|Ciąg|Nie, chyba że **przepis** ma **wartość TRUE**|Ta właściwość określa, czy etykieta oznacza zawartość jako rekord. Prawidłowe wartości to: </br>**PRAWDA**: Etykieta oznacza element jako rekord i w rezultacie nie można usunąć elementu. </br>**FALSE**: Etykieta nie oznacza zawartości jako rekordu. Jest to wartość domyślna. </br> </br> Zależności grupy: Po określeniu tej właściwości należy również określić właściwości RetentionAction, RetentionDuration i RetentionType.|
 |RetentionAction|Ciąg|Nie, o ile nie określono **wartości RetentionDuration**, **RetentionType** lub **ReviewerEmail**|Ta właściwość określa akcję, jaką należy wykonać po wygaśnięciu wartości określonej przez właściwość RetentionDuration (jeśli określono). Prawidłowe wartości to: </br>**Usuń**: Elementy starsze niż wartość określona przez właściwość RetentionDuration są usuwane.</br>**Zachowaj: Zachowaj** elementy przez czas określony przez właściwość RetentionDuration, a następnie nie rób nic po upływie okresu trwania. </br>**KeepAndDelete**: Zachowaj elementy przez czas określony przez właściwość RetentionDuration, a następnie usuń je po upływie okresu trwania. </br> </br> Zależności grupy: po określeniu tej właściwości należy również określić właściwości RetentionDuration i RetentionType. |

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,22 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Dowiedz się, jakie zdarzenia są rejestrowane, gdy użytkownicy z przypisanymi uprawnieniami do zbierania elektronicznych materiałów dowodowych wykonują zadania wyszukiwania zawartości, zbierania elektronicznych materiałów dowodowych (Standard) i zbierania elektronicznych materiałów dowodowych (Premium) w portalu zgodności usługi Microsoft Purview.
+description: Dowiedz się, jakie zdarzenia są rejestrowane, gdy użytkownicy z przypisanymi uprawnieniami do zbierania elektronicznych materiałów dowodowych wykonują zadania wyszukiwania zawartości, eDiscovery (Standard) i eDiscovery (Premium) w portal zgodności Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a11c8a939954b7319b88b45ea8f0d43b1b72442
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b94c53d497b5e300cdb0a08dbb5f02daec28c19
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090866"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317521"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Wyszukaj działania zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-W dzienniku inspekcji są rejestrowane działania związane z wyszukiwaniem zawartości i zbierania elektronicznych materiałów dowodowych (w przypadku funkcji zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i eDiscovery (Premium) w usłudze Microsoft Purview lub przy użyciu odpowiednich poleceń cmdlet programu PowerShell. Zdarzenia są rejestrowane, gdy administratorzy lub menedżerowie zbierania elektronicznych materiałów dowodowych (lub dowolne przypisane przez użytkownika uprawnienia do zbierania elektronicznych materiałów dowodowych) wykonują następujące zadania wyszukiwania zawartości i zbierania elektronicznych materiałów dowodowych (standardowa) w portalu zgodności:
+Rejestrowane są działania związane z wyszukiwaniem zawartości ibierania elektronicznych materiałów dowodowych (dla Microsoft Purview eDiscovery (Standard) i Microsoft Purview eDiscovery (Premium)), które są wykonywane w portal zgodności Microsoft Purview lub przez uruchomienie odpowiednich poleceń cmdlet programu PowerShell w dzienniku inspekcji. Zdarzenia są rejestrowane, gdy administratorzy lub menedżerowie zbierania elektronicznych materiałów dowodowych (lub dowolne przypisane przez użytkownika uprawnienia do zbierania elektronicznych materiałów dowodowych) wykonują następujące zadania wyszukiwania zawartości i zbierania elektronicznych materiałów dowodowych (standardowa) w portalu zgodności:
   
-- Tworzenie spraw podstawowych i zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nimi
+- Tworzenie przypadków zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium) oraz zarządzanie nimi
 
 - Tworzenie, uruchamianie i edytowanie wyszukiwań zawartości
 
@@ -87,9 +87,9 @@ W poniższej tabeli opisano działania wyszukiwania zawartości i zbierania elek
 |Zmieniono członkostwo w przypadku zbierania elektronicznych materiałów dowodowych  <br/> |CaseMemberUpdated  <br/> |Update-ComplianceCaseMember  <br/> |Lista członkostwa w sprawie zbierania elektronicznych materiałów dowodowych została zmieniona. To działanie jest rejestrowane, gdy wszyscy członkowie zostaną zastąpieni grupą nowych użytkowników. W przypadku dodania lub usunięcia pojedynczego elementu członkowskiego zarejestrowana jest operacja CaseMemberAdded lub CaseMemberRemoved.  <br/> |
 |Zmieniony filtr uprawnień wyszukiwania  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |Filtr uprawnień wyszukiwania został zmieniony.  <br/> |
 |Zmieniono zapytanie wyszukiwania dla blokady sprawy zbierania elektronicznych materiałów dowodowych  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |Zmieniono blokadę opartą na zapytaniach skojarzoną ze sprawą zbierania elektronicznych materiałów dowodowych. Możliwe zmiany obejmują edytowanie zapytania lub zakresu dat dla blokady opartej na zapytaniach.  <br/> |
-|Pobrano element podglądu wyszukiwania zawartości  <br/> |PreviewItemDownloaded  <br/> |nd.  <br/> |Użytkownik pobrał element na swój komputer lokalny (klikając link **Pobierz oryginalny element** ) podczas podglądu wyników wyszukiwania.  <br/> |
-|Element podglądu wyszukiwania zawartości na liście  <br/> |PreviewItemListed  <br/> |nd.  <br/> |Użytkownik kliknął pozycję **Podgląd wyników wyszukiwania** , aby wyświetlić stronę wyników wyszukiwania w wersji zapoznawczej, która wyświetla maksymalnie 1000 elementów z wyników wyszukiwania.  <br/> |
-|Wyświetlony element podglądu wyszukiwania zawartości  <br/> |PreviewItemRendered  <br/> |nd.  <br/> |Menedżer zbierania elektronicznych materiałów dowodowych wyświetlił element, klikając go podczas wyświetlania podglądu wyników wyszukiwania.  <br/> |
+|Pobrano element podglądu wyszukiwania zawartości  <br/> |PreviewItemDownloaded  <br/> |Nie dotyczy  <br/> |Użytkownik pobrał element na swój komputer lokalny (klikając link **Pobierz oryginalny element** ) podczas podglądu wyników wyszukiwania.  <br/> |
+|Element podglądu wyszukiwania zawartości na liście  <br/> |PreviewItemListed  <br/> |Nie dotyczy  <br/> |Użytkownik kliknął pozycję **Podgląd wyników wyszukiwania** , aby wyświetlić stronę wyników wyszukiwania w wersji zapoznawczej, która wyświetla maksymalnie 1000 elementów z wyników wyszukiwania.  <br/> |
+|Wyświetlony element podglądu wyszukiwania zawartości  <br/> |PreviewItemRendered  <br/> |Nie dotyczy  <br/> |Menedżer zbierania elektronicznych materiałów dowodowych wyświetlił element, klikając go podczas wyświetlania podglądu wyników wyszukiwania.  <br/> |
 |Utworzone wyszukiwanie zawartości  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |Utworzono nowe wyszukiwanie zawartości.  <br/> |
 |Utworzony administrator zbierania elektronicznych materiałów dowodowych  <br/> |CaseAdminAdded  <br/> |Add-eDiscoveryCaseAdmin  <br/> |Użytkownik został dodany jako administrator zbierania elektronicznych materiałów dowodowych w organizacji.  <br/> |
 |Utworzono przypadek zbierania elektronicznych materiałów dowodowych  <br/> |CaseAdded  <br/> |New-ComplianceCase  <br/> |Utworzono przypadek zbierania elektronicznych materiałów dowodowych. Po utworzeniu sprawy wystarczy nadać mu nazwę. Inne zadania związane z wielkością liter, takie jak dodawanie członków, tworzenie blokad i tworzenie wyszukiwań zawartości skojarzonych ze sprawą, powodują rejestrowanie dodatkowych zdarzeń.  <br/> |
@@ -100,8 +100,8 @@ W poniższej tabeli opisano działania wyszukiwania zawartości i zbierania elek
 |Usunięto przypadek zbierania elektronicznych materiałów dowodowych  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Usunięto przypadek zbierania elektronicznych materiałów dowodowych. Przed usunięciem sprawy należy usunąć wszystkie blokady skojarzone ze sprawą.  <br/> |
 |Filtr usuniętych uprawnień wyszukiwania  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Usunięto filtr uprawnień wyszukiwania.  <br/> |
 |Usunięto zapytanie wyszukiwania dla blokady sprawy zbierania elektronicznych materiałów dowodowych  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Usunięto blokadę opartą na zapytaniach skojarzoną ze sprawą zbierania elektronicznych materiałów dowodowych. Usunięcie zapytania z blokady jest często wynikiem usunięcia blokady. Po usunięciu blokady lub blokady zostaną zwolnione lokalizacje zawartości, które zostały wstrzymane.  <br/> |
-|Pobrany eksport wyszukiwania zawartości  <br/> |SearchExportDownloaded  <br/> |nd.  <br/> |Użytkownik pobrał wyniki wyszukiwania zawartości na komputerze lokalnym. Przed pobraniem wyników wyszukiwania należy zainicjować rozpoczęty **eksport działania wyszukiwania zawartości** .  <br/> |
-|Podgląd wyników wyszukiwania zawartości  <br/> |SearchPreviewed  <br/> |nd.  <br/> |Użytkownik wyświetlił podgląd wyników wyszukiwania zawartości.  <br/> |
+|Pobrany eksport wyszukiwania zawartości  <br/> |SearchExportDownloaded  <br/> |Nie dotyczy  <br/> |Użytkownik pobrał wyniki wyszukiwania zawartości na komputerze lokalnym. Przed pobraniem wyników wyszukiwania należy zainicjować rozpoczęty **eksport działania wyszukiwania zawartości** .  <br/> |
+|Podgląd wyników wyszukiwania zawartości  <br/> |SearchPreviewed  <br/> |Nie dotyczy  <br/> |Użytkownik wyświetlił podgląd wyników wyszukiwania zawartości.  <br/> |
 |Przeczyszczane wyniki wyszukiwania zawartości  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Użytkownik oczyścił wyniki wyszukiwania zawartości, uruchamiając polecenie **New-ComplianceSearchAction -Purge** .  <br/> |
 |Usunięto analizę wyszukiwania zawartości  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Usunięto akcję przygotowywania wyszukiwania zawartości (w celu przygotowania wyników wyszukiwania do zbierania elektronicznych materiałów dowodowych (Premium)). Jeśli akcja przygotowania miała mniej niż dwa tygodnie, wyniki wyszukiwania przygotowane do zbierania elektronicznych materiałów dowodowych (Premium) zostały usunięte z obszaru przechowywania Microsoft Azure. Jeśli akcja przygotowania była starsza niż 2 tygodnie, to zdarzenie wskazuje, że usunięto tylko odpowiednią akcję przygotowania.  <br/> |
 |Usunięto eksport wyszukiwania zawartości  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Akcja eksportowania wyszukiwania zawartości została usunięta. Jeśli akcja eksportu miała mniej niż dwa tygodnie, wyniki wyszukiwania przekazane do Microsoft Azure obszaru magazynowania zostały usunięte. Jeśli akcja eksportu była starsza niż 2 tygodnie, to zdarzenie wskazuje, że usunięto tylko odpowiednią akcję eksportu.  <br/> |
@@ -115,7 +115,7 @@ W poniższej tabeli opisano działania wyszukiwania zawartości i zbierania elek
 |Rozpoczęto eksportowanie raportu  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Użytkownik wyeksportował raport wyszukiwania zawartości.  <br/> |
 |Zatrzymano wyszukiwanie zawartości  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Użytkownik zatrzymał wyszukiwanie zawartości.  <br/> |
 |(brak)|CaseViewed|Get-ComplianceCase|Użytkownik wyświetlił przypadek zbierania elektronicznych elektronicznych materiałów dowodowych (Standard) w centrum zgodności. Rekord inspekcji dla tego zdarzenia zawiera nazwę sprawy, która została wyświetlona. |
-|(brak)|SearchViewed|Get-ComplianceSearch|Użytkownik wyświetlił wyszukiwanie zawartości w centrum zgodności, uzyskując dostęp do wyszukiwania na karcie **Wyszukiwania** w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa) lub uzyskując do niego dostęp na stronie **wyszukiwania zawartości** . Rekord inspekcji dla tego zdarzenia zawiera tożsamość wyświetlonego wyszukiwania.|
+|(brak)|SearchViewed|Get-ComplianceSearch|Użytkownik wyświetlił wyszukiwanie zawartości w centrum zgodności, uzyskując dostęp do wyszukiwania na karcie **Wyszukiwania** w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa) lub uzyskując do niego dostęp na stronie **wyszukiwania zawartości**. Rekord inspekcji dla tego zdarzenia zawiera tożsamość wyświetlonego wyszukiwania.|
 |(brak)|ViewedSearchExported|Get-ComplianceSearchAction -Export|Użytkownik wyświetlił eksport wyszukiwania zawartości w centrum zgodności, uzyskując dostęp do eksportu na karcie **Eksporty** na stronie **wyszukiwania zawartości** . To działanie jest również rejestrowane, gdy użytkownik wyświetli eksport skojarzony ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa).|
 |(brak)|ViewedSearchPreviewed|Get-ComplianceSearchAction —wersja zapoznawcza|Użytkownik wyświetlił podgląd wyników wyszukiwania zawartości w Centrum zgodności. To działanie jest również rejestrowane, gdy użytkownik wyświetla podgląd wyników wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa).|
 |||||

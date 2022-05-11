@@ -12,20 +12,20 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych XSLT/XML z usługi Veritas w Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: fbc7c170d31c1278b58a63953864ab6b1457db86
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 450294107ce9ef7d138a60e4fcc5de47bce47ef1
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093597"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319401"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Konfigurowanie łącznika do archiwizacji danych XSLT/XML
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze źródła strony sieci Web do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia [łącznik XSLT/XML](https://globanet.com/xslt-xml), który umożliwia szybkie opracowywanie plików utworzonych przy użyciu funkcji XSLT (przekształcenia języka rozszerzalnego arkusza stylów) w celu przekształcenia plików XML w inne formaty plików (takie jak HTML lub tekst), które można zaimportować do Microsoft 365. Łącznik konwertuje zawartość elementu ze źródła XSLT/XML na format wiadomości e-mail, a następnie importuje przekonwertowany element na Microsoft 365 skrzynki pocztowe.
+Użyj łącznika Veritas w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane ze źródła strony sieci Web do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia [łącznik XSLT/XML](https://globanet.com/xslt-xml), który umożliwia szybkie opracowywanie plików utworzonych przy użyciu funkcji XSLT (przekształcenia języka rozszerzalnego arkusza stylów) w celu przekształcenia plików XML w inne formaty plików (takie jak HTML lub tekst), które można zaimportować do Microsoft 365. Łącznik konwertuje zawartość elementu ze źródła XSLT/XML na format wiadomości e-mail, a następnie importuje przekonwertowany element na Microsoft 365 skrzynki pocztowe.
 
-Po przechowywaniu danych XSLT/XML w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych oraz zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika XSLT/XML może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po przechowywaniu danych XSLT/XML w skrzynkach pocztowych użytkowników można zastosować funkcje Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych oraz zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika XSLT/XML może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-xsltxml-data"></a>Omówienie archiwizacji danych XSLT/XML
 
@@ -45,9 +45,9 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 - Utwórz konto veritas merge1 dla łączników firmy Microsoft. Aby utworzyć to konto, skontaktuj się z [pomocą techniczną veritas](https://www.veritas.com/content/support/). Zalogujesz się do tego konta podczas tworzenia łącznika w kroku 1.
 
-- Użytkownik, który utworzy łącznik XSLT/XML w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który utworzy łącznik XSLT/XML w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-an-xsltxml-connector"></a>Krok 1. Konfigurowanie łącznika XSLT/XML
 
@@ -85,7 +85,7 @@ Po utworzeniu łącznika XSLT/XML możesz wyświetlić stan łącznika w portalu
 
 2. Kliknij kartę **Łączniki,** a następnie wybierz łącznik **XSLT/XML** , aby wyświetlić stronę wysuwaną. Ta strona zawiera właściwości i informacje o łączniku.
 
-3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera dane zaimportowane do chmury firmy Microsoft.
+3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera informacje o danych, które zostały zaimportowane do chmury firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Wyświetlanie dzienników administratora łączników danych](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Znane problemy
 

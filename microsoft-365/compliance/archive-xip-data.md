@@ -12,20 +12,20 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych źródłowych XIP z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 038572b401730e66d08ac05ad1f9df0a2e246c22
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fe58aa290a984b7386fdd125e06384e43c60b912
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099268"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317063"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>Konfigurowanie łącznika do archiwizowania danych źródłowych XIP
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy źródłowej XIP do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [XIP](https://globanet.com/xip/), który umożliwia importowanie elementów do Microsoft 365 przy użyciu pliku XIP. Plik XIP jest podobny do pliku ZIP, ale umożliwia użycie podpisu cyfrowego. Podpis cyfrowy jest weryfikowany przez veritas merge 1 przed wyodrębnieniem pliku źródłowego XIP. Łącznik konwertuje zawartość z pliku źródłowego XIP na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkownika w Microsoft 365.
+Użyj łącznika Veritas w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy źródłowej XIP do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [XIP](https://globanet.com/xip/), który umożliwia importowanie elementów do Microsoft 365 przy użyciu pliku XIP. Plik XIP jest podobny do pliku ZIP, ale umożliwia użycie podpisu cyfrowego. Podpis cyfrowy jest weryfikowany przez veritas merge 1 przed wyodrębnieniem pliku źródłowego XIP. Łącznik konwertuje zawartość z pliku źródłowego XIP na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkownika w Microsoft 365.
 
-Po zapisaniu danych źródłowych XIP w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania oraz zgodność z komunikacją. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika XIP może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zapisaniu danych źródłowych XIP w skrzynkach pocztowych użytkowników można zastosować funkcje Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania oraz zgodność z komunikacją. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika XIP może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-the-xip-source-data"></a>Omówienie archiwizacji danych źródłowych XIP
 
@@ -45,9 +45,9 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 - Utwórz konto veritas merge1 dla łączników firmy Microsoft. Aby utworzyć konto, skontaktuj się z [pomocą techniczną veritas](https://www.veritas.com/content/support/). Musisz zalogować się do tego konta podczas tworzenia łącznika w kroku 1.
 
-- Użytkownik, który utworzy łącznik XIP w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który utworzy łącznik XIP w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-the-xip-connector"></a>Krok 1. Konfigurowanie łącznika XIP
 
@@ -85,7 +85,7 @@ Po utworzeniu łącznika XIP możesz wyświetlić stan łącznika w portalu zgod
 
 2. Kliknij kartę **Łączniki,** a następnie wybierz łącznik **XIP** , aby wyświetlić stronę wysuwaną zawierającą właściwości i informacje o łączniku.
 
-3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera dane zaimportowane do chmury firmy Microsoft.
+3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera informacje o danych, które zostały zaimportowane do chmury firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Wyświetlanie dzienników administratora łączników danych](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Znane problemy
 

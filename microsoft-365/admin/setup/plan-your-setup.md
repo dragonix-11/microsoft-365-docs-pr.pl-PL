@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Dowiedz się więcej o wymaganiach i zagadnieniach związanych z przejściem do Microsoft 365 dla firm.
-ms.openlocfilehash: 9a8ca80a9559d4ecdb988c515c20add4676e602d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a5f777a411f82de30c1d7dc69f07f92eadbbedce
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128897"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317477"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planowanie konfiguracji subskrypcji Microsoft 365 dla Firm
 
@@ -92,7 +92,7 @@ Istnieje kilka scenariuszy, które obejmują migrowanie danych lub użytkownikó
 
 Każda osoba w organizacji może zainstalować pakiet aplikacji Office 2016 (Word, Excel, PowerPoint itd.) na maksymalnie pięciu komputerach PC i Mac. Zobacz wymagania dotyczące systemu i komputera związane z instalowaniem [pakietów Office 2016](https://go.microsoft.com/fwlink/?LinkId=534827) dla firm.
   
-Aplikacje mobilne można instalować na urządzeniach z systemami iOS, Android i Windows. Aby znaleźć informacje dotyczące obsługiwanych urządzeń przenośnych i przeglądarek, zobacz [Wymagania systemowe pakietu Office](https://go.microsoft.com/fwlink/?LinkId=534827).
+Aplikacje mobilne można instalować na urządzeniach iOS, Android i Windows. Aby znaleźć informacje dotyczące obsługiwanych urządzeń przenośnych i przeglądarek, zobacz [Wymagania systemowe pakietu Office](https://go.microsoft.com/fwlink/?LinkId=534827).
   
 ## <a name="plan-for-email"></a>Planowanie korzystania z poczty e-mail
 
@@ -149,4 +149,4 @@ W przypadku większych organizacji lub jeśli zaczynasz od Skype dla firm, wdro�
 
 ## <a name="see-also"></a>Zobacz też
 
-[10 najlepszych sposobów zabezpieczania Microsoft 365 dla planów biznesowych](../security-and-compliance/secure-your-business-data.md)
+[Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla planów biznesowych](../security-and-compliance/secure-your-business-data.md)

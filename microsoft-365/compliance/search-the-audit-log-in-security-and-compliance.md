@@ -1,5 +1,5 @@
 ---
-title: Przeszukiwanie dziennika inspekcji w portalu zgodności usługi Microsoft Purview
+title: Przeszukaj dziennik inspekcji w portal zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Użyj portalu zgodności usługi Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji.
+description: Użyj portal zgodności Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: b3ad71878f6d0c766cbcf5ba435bc61396f45ed6
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 585b3be2149b1e94dc27633bac20707a6b193c0f
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231772"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320611"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Przeszukiwanie dziennika inspekcji w portalu zgodności
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
+Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portal zgodności Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
 
 ## <a name="microsoft-365-services-that-support-auditing"></a>usługi Microsoft 365 obsługujące inspekcję
 
@@ -44,6 +44,7 @@ Dlaczego ujednolicony dziennik inspekcji? Ponieważ można przeszukiwać dzienni
 | Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
 | Zgodność w komunikacji|ComplianceSuperVisionExchange|
 | Eksplorator zawartości|LabelContentExplorer|
+| Łączniki danych|ComplianceConnector|
 | Ochrona przed utratą danych (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 | Dynamics 365|CRM|
 | Zbierania elektronicznych materiałów dowodowych|Odnajdywanie, AeD|
@@ -67,7 +68,6 @@ Dlaczego ujednolicony dziennik inspekcji? Ponieważ można przeszukiwać dzienni
 | Analiza zagrożeń|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
-|||
 
 Aby uzyskać więcej informacji na temat operacji, które są poddawane inspekcji w każdej z usług wymienionych w poprzedniej tabeli, zobacz sekcję [Inspekcja działań](#audited-activities) w tym artykule.
 
@@ -454,7 +454,6 @@ W poniższej tabeli opisano działania dotyczące plików i stron w usłudze Sha
 |(brak)|PageViewedExtended|Jest to związane z działaniem "Wyświetlona strona" (PageViewed). Zdarzenie PageViewedExtended jest rejestrowane, gdy ta sama osoba stale wyświetla stronę internetową przez dłuższy czas (do 3 godzin). <br/><br/> Celem rejestrowania zdarzeń PageViewedExtended jest zmniejszenie liczby zdarzeń PageViewed, które są rejestrowane, gdy strona jest stale wyświetlana. Pomaga to zmniejszyć szum wielu rekordów PageViewed dla tego, co jest zasadniczo tym samym działaniem użytkownika, i pozwala skupić się na początkowym (i ważniejszym) zdarzeniu PageViewed.|
 |Widok sygnalizowany przez klienta|ClientViewSignaled|Klient użytkownika (taki jak witryna internetowa lub aplikacja mobilna) zasygnalizował, że wskazana strona została wyświetlona przez użytkownika. To działanie jest często rejestrowane po zdarzeniu PagePrefetched dla strony. <br/><br/>**UWAGA**: Ponieważ zdarzenia ClientViewSignaled są sygnalizowane przez klienta, a nie przez serwer, możliwe, że zdarzenie nie zostanie zarejestrowane przez serwer i w związku z tym może nie pojawić się w dzienniku inspekcji. Istnieje również możliwość, że informacje w rekordzie inspekcji mogą nie być wiarygodne. Jednak ponieważ tożsamość użytkownika jest weryfikowana przez token użyty do utworzenia sygnału, tożsamość użytkownika wymieniona w odpowiednim rekordzie inspekcji jest dokładna. System czeka pięć minut, zanim zarejestruje to samo zdarzenie, gdy klient tego samego użytkownika sygnalizuje, że strona została ponownie wyświetlona przez użytkownika.|
 |(brak)|PagePrefetched|Klient użytkownika (taki jak witryna internetowa lub aplikacja mobilna) zażądał wskazanej strony, aby zwiększyć wydajność, jeśli użytkownik przegląda tę stronę. To zdarzenie jest rejestrowane, aby wskazać, że zawartość strony została udostępniona klientowi użytkownika. To zdarzenie nie jest ostatecznym wskazaniem, że użytkownik przeszedł do strony. <br/><br/> Gdy zawartość strony jest renderowana przez klienta (zgodnie z żądaniem użytkownika), powinno zostać wygenerowane zdarzenie ClientViewSignaled. Nie wszyscy klienci obsługują elementy wskazujące wstępne pobieranie, dlatego niektóre wstępnie pobrane działania mogą zostać zarejestrowane jako zdarzenia PageViewed.|
-||||
 
 #### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>Często zadawane pytania dotyczące zdarzeń FileAccessed i FilePreviewed
 
@@ -505,7 +504,6 @@ W poniższej tabeli opisano działania folderów w usłudze SharePoint Online i 
 |Folder przeniesiony|FolderMoved|Użytkownik przenosi folder do innej lokalizacji w witrynie.|
 |Zmieniono nazwę folderu|FolderRenamed|Użytkownik zmienia nazwę folderu w witrynie.|
 |Przywrócony folder|FolderRestored|Użytkownik przywraca usunięty folder z kosza w witrynie.|
-||||
 
 ### <a name="sharepoint-list-activities"></a>działania listy SharePoint
 
@@ -535,7 +533,6 @@ W poniższej tabeli opisano działania związane z interakcją użytkowników z 
 |Zaktualizowana kolumna witryny|SiteColumnUpdated|Użytkownik zaktualizował kolumnę witryny SharePoint, modyfikując co najmniej jedną właściwość.|
 |Zaktualizowany typ zawartości witryny|SiteContentTypeUpdated|Użytkownik zaktualizował typ zawartości witryny, modyfikując co najmniej jedną właściwość.|
 |Wyświetlony element listy|ListItemViewed|Użytkownik wyświetlił element listy SharePoint. Gdy użytkownik wyświetli element listy, zdarzenie ListItemViewed nie zostanie ponownie zarejestrowane dla tego samego użytkownika dla tego samego elementu listy przez następne pięć minut.|
-||||
 
 ### <a name="sharing-and-access-request-activities"></a>Działania dotyczące udostępniania i uzyskiwania dostępu do żądań
 
@@ -570,7 +567,6 @@ W poniższej tabeli opisano działania związane z udostępnianiem i uzyskiwanie
 |Użytkownik dodany do bezpiecznego linku|DodanoToSecureLink|Użytkownik został dodany do listy jednostek, które mogą korzystać z linku bezpiecznego udostępniania.|
 |Użytkownik usunięty z bezpiecznego linku|RemovedFromSecureLink|Użytkownik został usunięty z listy jednostek, które mogą korzystać z linku bezpiecznego udostępniania.|
 |Wycofane zaproszenie do udostępniania|SharingInvitationRevoked|Użytkownik wycofał zaproszenie do udostępniania zasobu.|
-||||
 
 ### <a name="synchronization-activities"></a>Działania synchronizacji
 
@@ -584,7 +580,6 @@ W poniższej tabeli wymieniono działania synchronizacji plików w usłudze Shar
 |Pobrane zmiany pliku na komputerze|FileSyncDownloadedPartial|To zdarzenie zostało przestarzałe wraz ze starą aplikacją synchronizacji OneDrive dla Firm (Groove.exe).|
 |Przekazane pliki do biblioteki dokumentów|FileSyncUploadedFull|Użytkownik przekazuje nowy plik lub zmiany do pliku w bibliotece dokumentów SharePoint lub OneDrive dla Firm przy użyciu aplikacji synchronizacja usługi OneDrive (OneDrive.exe).|
 |Przekazane zmiany pliku do biblioteki dokumentów|FileSyncUploadedPartial|To zdarzenie zostało przestarzałe wraz ze starą aplikacją synchronizacji OneDrive dla Firm (Groove.exe).|
-||||
 
 ### <a name="site-permissions-activities"></a>Działania dotyczące uprawnień witryny
 
@@ -608,7 +603,6 @@ W poniższej tabeli wymieniono zdarzenia związane z przypisywaniem uprawnień w
 |Żądane uprawnienia administratora witryny|SiteAdminChangeRequest|Użytkownik żąda dodania jako administrator zbioru witryn dla zbioru witryn. Administratorzy zbioru witryn mają uprawnienia pełnej kontroli dla zbioru witryn i wszystkich podwitryn.|
 |Przywrócone dziedziczenie udostępniania|SharingInheritanceReset|Wprowadzono zmianę, dzięki czemu element dziedziczy uprawnienia do udostępniania po jego elemencie nadrzędnym.|
 |Zaktualizowana grupa|GroupUpdated|Administrator lub właściciel witryny zmienia ustawienia grupy dla witryny. Może to obejmować zmianę nazwy grupy, osób, które mogą wyświetlać lub edytować członkostwo w grupie oraz sposobu obsługi żądań członkostwa.|
-||||
 
 ### <a name="site-administration-activities"></a>Działania administracji lokacji
 
@@ -647,7 +641,6 @@ W poniższej tabeli wymieniono zdarzenia wynikające z zadań administracji loka
 |Ustawianie limitu przydziału magazynu dla lokalizacji geograficznej|GeoQuotaAllocated|Administrator SharePoint lub administrator globalny skonfigurował przydział magazynu dla lokalizacji geograficznej w środowisku z wieloma obszarami geograficznymi.|
 |Witryna połączona z witryny centrum|HubSiteUnjoined|Właściciel witryny odłącza swoją witrynę od lokacji centrum.|
 |Niezarejestrowana lokacja centrum|HubSiteUnregistered|Administrator SharePoint lub administrator globalny wyrejestruje lokację jako lokację centrum. Gdy lokacja koncentratora jest wyrejestrowana, nie działa już jako lokacja centrum.|
-||||
 
 ### <a name="exchange-mailbox-activities"></a>działania Exchange skrzynki pocztowej
 
@@ -680,7 +673,6 @@ W poniższej tabeli wymieniono działania, które mogą być rejestrowane przez 
 |Zaktualizowano komunikat|Aktualizacja|Komunikat lub jego właściwości zostały zmienione.|
 |Użytkownik zalogowany do skrzynki pocztowej|MailboxLogin|Użytkownik zalogował się do swojej skrzynki pocztowej.|
 |Etykieta komunikatu jako rekordu||Użytkownik zastosował etykietę przechowywania do wiadomości e-mail i ta etykieta jest skonfigurowana do oznaczania elementu jako rekordu. |
-||||
 
 #### <a name="system-accounts-in-exchange-mailbox-audit-records"></a>Konta systemowe w rekordach inspekcji Exchange skrzynki pocztowej
 
@@ -705,7 +697,6 @@ Poniższa tabela zawiera listę działań administracyjnych użytkowników, któ
 |Ustaw właściwość, która wymusza zmianę hasła przez użytkownika|Ustaw wymuszanie zmiany hasła użytkownika.|Administrator ustawi właściwość, która wymusza zmianę hasła przy następnym logowaniu użytkownika do Microsoft 365.|
 |Ustawianie właściwości licencji|Ustaw właściwości licencji.|Administrator modyfikuje właściwości licencji przypisanej do użytkownika.|
 |Zaktualizowany użytkownik|Zaktualizuj użytkownika.|Administrator zmienia co najmniej jedną właściwości konta użytkownika. Aby uzyskać listę właściwości użytkownika, które można zaktualizować, zobacz sekcję "Aktualizowanie atrybutów użytkownika" w [Azure Active Directory Inspekcja zdarzeń raportu](/azure/active-directory/reports-monitoring/concept-audit-logs).|
-||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD działań administracyjnych grupy
 
@@ -721,7 +712,6 @@ Poniższa tabela zawiera listę działań administracyjnych grupy, które są re
 |Usunięto grupę|Usuń grupę.|Grupa została usunięta.|
 |Usunięto członka z grupy|Usuń członka z grupy.|Element członkowski został usunięty z grupy.|
 |Zaktualizowana grupa|Zaktualizuj grupę.|Zmieniono właściwość grupy.|
-||||
 
 ### <a name="application-administration-activities"></a>Działania administracji aplikacjami
 
@@ -739,7 +729,6 @@ Poniższa tabela zawiera listę działań administratora aplikacji, które są r
 |Usunięto jednostkę usługi z katalogu|Usuń jednostkę usługi.|Aplikacja została usunięta/wyrejestrowana z Azure AD. Aplikacja jest reprezentowana przez jednostkę usługi w katalogu.|
 |Usunięto poświadczenia z jednostki usługi|Usuń poświadczenia jednostki usługi.|Poświadczenia zostały usunięte z jednostki usługi w Azure AD. Zasada usługi reprezentuje aplikację w katalogu.|
 |Ustawianie wpisu delegowania|Ustaw wpis delegowania.|Zaktualizowano uprawnienie uwierzytelniania dla aplikacji w Azure AD.|
-||||
 
 ### <a name="role-administration-activities"></a>Działania administrowania rolami
 
@@ -753,7 +742,6 @@ W poniższej tabeli wymieniono Azure AD działań administracyjnych ról, które
 |Dodawanie elementu członkowskiego do roli|Dodaj element członkowski do roli.|Dodano użytkownika do roli administratora w Microsoft 365.|
 |Usunięto użytkownika z roli katalogu|Usuń członka z roli.|Usunięto użytkownika z roli administratora w Microsoft 365.|
 |Ustawianie informacji kontaktowych firmy|Ustaw informacje kontaktowe firmy.|Zaktualizowano preferencje kontaktów na poziomie firmy dla organizacji. Obejmuje to adresy e-mail związane z subskrypcją wysyłane przez Microsoft 365 oraz powiadomienia techniczne dotyczące usług.|
-||||
 
 ### <a name="directory-administration-activities"></a>Działania administracji katalogowej
 
@@ -776,7 +764,6 @@ W poniższej tabeli wymieniono Azure AD działania związane z katalogiem i dome
 |Zaktualizowana domena|Zaktualizuj domenę.|Zaktualizowano ustawienia domeny w organizacji.|
 |Zweryfikowana domena|Sprawdź domenę.|Sprawdź, czy Twoja organizacja jest właścicielem domeny.|
 |Zweryfikowana domena zweryfikowana pocztą e-mail|Sprawdź domenę zweryfikowaną pocztą e-mail.|Używana weryfikacja poczty e-mail w celu sprawdzenia, czy Organizacja jest właścicielem domeny.|
-||||
 
 ### <a name="ediscovery-activities"></a>Działania zbierania elektronicznych materiałów dowodowych
 
@@ -799,7 +786,7 @@ Aby uzyskać listę i szczegółowy opis zarejestrowanych działań zbierania el
 
 ### <a name="ediscovery-premium-activities"></a>Działania zbierania elektronicznych materiałów dowodowych (Premium)
 
-Możesz również wyszukać w dzienniku inspekcji działania w usłudze Microsoft Purview eDiscovery (Premium). Opis tych działań można znaleźć w sekcji "Działania zbierania elektronicznych materiałów dowodowych (Premium) w [temacie Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
+Możesz również wyszukać w dzienniku inspekcji działania w Microsoft Purview eDiscovery (Premium). Opis tych działań można znaleźć w sekcji "Działania zbierania elektronicznych materiałów dowodowych (Premium) w [temacie Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
 
 ### <a name="power-bi-activities"></a>działania Power BI
 
@@ -825,7 +812,6 @@ Usługa Workplace Analytics zapewnia wgląd w sposób współpracy grup w całej
 |Zalogowany użytkownik<sup>*</sup>| UserLoggedIn |Użytkownik zalogował się do swojego konta użytkownika Microsoft 365.|
 |Użytkownik wylogowany<sup>*</sup>| UserLoggedOff |Użytkownik wylogowył się ze swojego konta użytkownika Microsoft 365.
 |Wyświetlone eksplorowanie|ViewedExplore|Wizualizacje przeglądane przez analityków na co najmniej jednej karcie Eksploruj stronę.|
-||||
 
 > [!NOTE]
 > <sup>*</sup>Są to Azure Active Directory działania logowania i logowania. Te działania są rejestrowane, nawet jeśli nie masz włączonej usługi Workplace Analytics w organizacji. Aby uzyskać więcej informacji na temat działań związanych z logowaniem [użytkowników, zobacz Logowanie w Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
@@ -880,7 +866,6 @@ W poniższej tabeli wymieniono działania użytkownika i administratora w Yammer
 |Zaktualizowano komunikat<sup>*</sup>|MessageUpdated|Użytkownik aktualizuje komunikat.|
 |Wyświetlony plik|FileVisited|Użytkownik wyświetla plik.|
 |Wyświetlony komunikat<sup>*</sup>|MessageViewed|Użytkownik wyświetla komunikat.|
-||||
 
 ### <a name="microsoft-power-automate-activities"></a>Działania firmy Microsoft Power Automate
 
@@ -901,7 +886,6 @@ W poniższej tabeli wymieniono działania w Eksploratorze zawartości, które s�
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
 |Element, do który uzyskano dostęp|LabelContentExplorerAccessedItem|Administrator (lub użytkownik należący do grupy ról Podgląd zawartości Eksploratora zawartości) używa Eksploratora zawartości do wyświetlania wiadomości e-mail lub SharePoint/OneDrive dokumentu.|
-||||
 
 ### <a name="quarantine-activities"></a>Działania kwarantanny
 
@@ -914,7 +898,6 @@ W poniższej tabeli wymieniono działania kwarantanny, które można wyszukać w
 |Podgląd komunikatu kwarantanny|KwarantannaPrzegląd|Użytkownik wyświetlił podgląd wiadomości e-mail, która została uznana za szkodliwą.|
 |Komunikat dotyczący wydanej kwarantanny|QuarantineRelease|Użytkownik opublikował wiadomość e-mail z kwarantanny, która została uznana za szkodliwą.|
 |Wyświetlony nagłówek komunikatu kwarantanny|QuarantineViewHeader|Użytkownik wyświetlił nagłówek wiadomości e-mail, która została uznana za szkodliwą.|
-||||
 
 ### <a name="microsoft-forms-activities"></a>działania Microsoft Forms
 
@@ -973,7 +956,6 @@ Jeśli działanie formularzy jest wykonywane przez współautora lub anonimowego
 |Zmieniono nazwę kolekcji|CollectionRenamed|Właściciel formularza zmienił nazwę kolekcji.|
 |Przeniesiono formularz do kolekcji|MovedFormIntoCollection|Właściciel formularza przeniósł formularz do kolekcji.|
 |Przeniesiono formularz z kolekcji|MovedFormOutofCollection|Właściciel formularza przeniósł formularz z kolekcji.|
-||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Formularze działań wykonywanych przez współautorów i osoby odpowiadające anonimowo
 
@@ -983,13 +965,12 @@ W poniższej tabeli opisano działania inspekcji i informacje w rekordzie inspek
 
 |Typ działania|Użytkownik wewnętrzny lub zewnętrzny|Zarejestrowany identyfikator użytkownika|Organizacja zalogowana do|Typ użytkownika formularzy|
 |:-----|:-----|:-----|:-----|:-----|
-|Działania współautora|Wewnętrznego|UPN|Organizacja właściciela formularza|Współautor|
-|Działania współautora|Zewnętrznych|UPN<br>|Organizacja współautora<br>|Współautor|
-|Działania współautora|Zewnętrznych|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Druga część identyfikatora to skrót, który będzie się różnić w przypadku różnych użytkowników)|Organizacja właściciela formularza<br>|Współautor|
+|działania Współautorstwo|Wewnętrznego|UPN|Organizacja właściciela formularza|Współautor|
+|działania Współautorstwo|Zewnętrznych|UPN<br>|Organizacja współautora<br>|Współautor|
+|działania Współautorstwo|Zewnętrznych|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Druga część identyfikatora to skrót, który będzie się różnić w przypadku różnych użytkowników)|Organizacja właściciela formularza<br>|Współautor|
 |Działania odpowiedzi|Zewnętrznych|UPN<br>|Organizacja odpowiadającego<br>|Obiektu odpowiadającego|
 |Działania odpowiedzi|Zewnętrznych|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(Druga część identyfikatora użytkownika to skrót, który będzie się różnić w przypadku różnych użytkowników)|Organizacja właściciela formularza|Obiektu odpowiadającego|
 |Działania odpowiedzi|Anonimowy|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(Druga część identyfikatora użytkownika to skrót, który będzie się różnić w przypadku różnych użytkowników)|Organizacja właściciela formularza|Obiektu odpowiadającego|
-||||
 
 ### <a name="sensitivity-label-activities"></a>Działania związane z etykietami poufności
 
@@ -1003,7 +984,6 @@ W poniższej tabeli wymieniono zdarzenia wynikające z [używania etykiet poufno
 |Zmieniono etykietę poufności stosowaną do pliku|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|Do dokumentu została zastosowana inna etykieta poufności. <br /><br>Operacje dla tego działania różnią się w zależności od sposobu zmiany etykiety:<br /> - Office w sieci Web lub zasady automatycznego etykietowania (FileSensitivityLabelChanged) <br /> — aplikacje Microsoft 365 (SensitivityLabelUpdated)|
 |Zmieniono etykietę poufności w witrynie|SensitivityLabelChanged|Inna etykieta poufności została zastosowana do witryny SharePoint lub Teams.|
 |Usunięto etykietę poufności z pliku|FileSensitivityLabelRemoved|Etykieta poufności została usunięta z dokumentu przy użyciu Microsoft 365 aplikacji, Office w sieci Web, zasad automatycznego etykietowania lub polecenia cmdlet [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile).|
-||||
 
 ### <a name="retention-policy-and-retention-label-activities"></a>Działania dotyczące zasad przechowywania i etykiet przechowywania
 
@@ -1025,7 +1005,6 @@ W poniższej tabeli opisano działania konfiguracji [zasad przechowywania i etyk
 | Zaktualizowano ustawienia zasad przechowywania | SetRetentionComplianceRule | Administrator zmienił ustawienia przechowywania istniejących zasad przechowywania. Ustawienia przechowywania obejmują czas przechowywania elementów oraz to, co dzieje się z elementami po upływie okresu przechowywania (na przykład usuwanie elementów, zachowywanie lub zachowywanie, a następnie ich usuwanie). To działanie odpowiada również uruchamianiu polecenia cmdlet [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) . |
 | Zaktualizowana etykieta przechowywania |SetComplianceTag  | Administrator zaktualizował istniejącą etykietę przechowywania.|
 | Zaktualizowane zasady przechowywania |SetRetentionCompliancePolicy |Administrator zaktualizował istniejące zasady przechowywania. Aktualizacje wyzwalające to zdarzenie obejmują dodawanie lub wykluczanie lokalizacji zawartości, do których są stosowane zasady przechowywania.|
-||||
 
 ### <a name="briefing-email-activities"></a>Działania dotyczące wiadomości e-mail z briefingu
 
@@ -1039,7 +1018,6 @@ W poniższej tabeli wymieniono działania w wiadomości e-mail z informacją, kt
 |:----|:-----|:-----|
 |Zaktualizowane ustawienia prywatności organizacji|UpdatedOrganizationBriefingSettings|Administrator aktualizuje ustawienia prywatności organizacji dla wiadomości e-mail z briefingiem. |
 |Zaktualizowane ustawienia prywatności użytkowników|UpdatedUserBriefingSettings|Administrator aktualizuje ustawienia prywatności użytkownika dla wiadomości e-mail z briefingiem.
-||||
 
 ### <a name="myanalytics-activities"></a>Działania myAnalytics
 
@@ -1049,7 +1027,6 @@ W poniższej tabeli wymieniono działania w usłudze MyAnalytics, które są rej
 |:-----|:-----|:-----|
 |Zaktualizowano ustawienia myanalytics organizacji|UpdatedOrganizationMyAnalyticsSettings|Administrator aktualizuje ustawienia na poziomie organizacji dla usługi MyAnalytics. |
 |Zaktualizowano ustawienia myanalytics użytkownika|UpdatedUserMyAnalyticsSettings|Administrator aktualizuje ustawienia użytkownika dla usługi MyAnalytics.|
-||||
 
 ### <a name="information-barriers-activities"></a>Działania związane z barierami informacyjnymi
 
@@ -1060,7 +1037,6 @@ W poniższej tabeli wymieniono działania w barierach informacyjnych, które są
 | Dodano segmenty do witryny | SegmentyAdded | Administrator SharePoint, administrator globalny lub właściciel witryny dodał co najmniej jeden segment barier informacyjnych do witryny. |
 | Zmieniono segmenty witryny | SegmentsChanged | Administrator SharePoint lub administrator globalny zmienił co najmniej jeden segment barier informacyjnych dla witryny. |
 | Usunięto segmenty z witryny | SegmentyRemoved | Administrator SharePoint lub administrator globalny usunął co najmniej jeden segment barier informacyjnych z witryny. |
-||||
 
 ### <a name="disposition-review-activities"></a>Działania przeglądu dyspozycji
 
@@ -1072,7 +1048,6 @@ W poniższej tabeli wymieniono działania wykonywane przez recenzenta dyspozycji
 |Dłuższy okres przechowywania|ExtendRetention|Recenzent dyspozycji przedłużył okres przechowywania elementu.|
 |Ponownie oznakowany element|RelabelItem|Recenzent dyspozycji ponownie oznaczył etykietę przechowywania.|
 |Dodano recenzentów|AddReviewer|Recenzent dyspozycji dodał co najmniej jednego innego użytkownika do bieżącego etapu przeglądu dyspozycji.|
-||||
 
 ### <a name="communication-compliance-activities"></a>Działania dotyczące zgodności komunikacji
 
@@ -1083,7 +1058,6 @@ Poniższa tabela zawiera listę działań zgodności komunikacji, które są rej
 |Aktualizacja zasad|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|Administrator zgodności komunikacji przeprowadził aktualizację zasad.|
 |Dopasowanie zasad|NadzórRuleMatch|Użytkownik wysłał komunikat zgodny z warunkiem zasad.|
 |Tag zastosowany do komunikatów|SupervisoryReviewTag|Tagi są stosowane do komunikatów lub komunikatów są rozwiązywane.|
-||||
 
 ### <a name="report-activities"></a>Działania raportu
 
@@ -1092,7 +1066,6 @@ W poniższej tabeli wymieniono działania dotyczące raportów użycia, które s
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
 |Zaktualizowane ustawienia prywatności raportu użycia|UpdateUsageReportsPrivacySetting|Administrator zaktualizował ustawienia prywatności raportów użycia. |
-||||
 
 ### <a name="exchange-admin-audit-log"></a>dziennik inspekcji administratora Exchange
 
@@ -1174,6 +1147,6 @@ Obecnie przeprowadzamy inspekcję wdrożeń potoków w regionach NA (Ameryka Pó
 
 **Czy inspekcja danych jest szyfrowana?**
 
-Dane inspekcji są przechowywane w Exchange skrzynkach pocztowych (danych magazynowanych) w tym samym regionie, w którym wdrożono ujednolicony potok inspekcji. Dane skrzynki pocztowej magazynowane nie są szyfrowane przez Exchange. Jednak szyfrowanie na poziomie usługi szyfruje wszystkie dane skrzynki pocztowej, ponieważ serwery Exchange w centrach danych firmy Microsoft są szyfrowane za pośrednictwem funkcji BitLocker. Aby uzyskać więcej informacji, zobacz [szyfrowanie Microsoft 365 dla Skype dla firm, OneDrive dla Firm, SharePoint Online i Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services).
+Dane inspekcji są przechowywane w Exchange skrzynkach pocztowych (danych magazynowanych) w tym samym regionie, w którym wdrożono ujednolicony potok inspekcji. Dane skrzynki pocztowej magazynowane nie są szyfrowane przez Exchange. Jednak szyfrowanie na poziomie usługi szyfruje wszystkie dane skrzynki pocztowej, ponieważ serwery Exchange w centrach danych firmy Microsoft są szyfrowane za pośrednictwem BitLocker. Aby uzyskać więcej informacji, zobacz [szyfrowanie Microsoft 365 dla Skype dla firm, OneDrive dla Firm, SharePoint Online i Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services).
 
 Przesyłane dane poczty są zawsze szyfrowane.

@@ -12,20 +12,20 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania strony internetowej Przechwytywanie danych z usługi Veritas w Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: 1e8fdc71a2d37a80488db4d2a62ae1ab77aeb123
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1509cf4694fec8a3fdf8bf4e375a27267ab41a11
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094080"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317055"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Konfigurowanie łącznika do archiwizowania danych strony internetowej
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze stron internetowych do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [przechwytywania stron sieci Web](https://globanet.com/webpage-capture) , który przechwytuje określone strony internetowe (i linki na tych stronach) w określonej witrynie internetowej lub całej domenie. Łącznik konwertuje zawartość strony internetowej na format PDF, PNG lub plik niestandardowy, a następnie dołącza przekonwertowane pliki do wiadomości e-mail, a następnie importuje te elementy poczty e-mail do skrzynek pocztowych użytkownika w Microsoft 365.
+Użyj łącznika Veritas w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane ze stron internetowych do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [przechwytywania stron sieci Web](https://globanet.com/webpage-capture) , który przechwytuje określone strony internetowe (i linki na tych stronach) w określonej witrynie internetowej lub całej domenie. Łącznik konwertuje zawartość strony internetowej na format PDF, PNG lub plik niestandardowy, a następnie dołącza przekonwertowane pliki do wiadomości e-mail, a następnie importuje te elementy poczty e-mail do skrzynek pocztowych użytkownika w Microsoft 365.
 
-Po zapisaniu zawartości strony internetowej w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, pozyskiwanie elektronicznych materiałów dowodowych oraz zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika przechwytywania strony internetowej może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zapisaniu zawartości strony internetowej w skrzynkach pocztowych użytkowników można zastosować funkcje Microsoft Purview, takie jak blokada postępowania sądowego, zbierania elektronicznych materiałów dowodowych oraz zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika przechwytywania strony internetowej może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-webpage-data"></a>Omówienie archiwizowania danych strony internetowej
 
@@ -47,9 +47,9 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 - Aby skonfigurować niestandardowy format pliku w celu konwertowania elementów strony internetowej, musisz współpracować z obsługą usługi Veritas. Aby uzyskać więcej informacji, zobacz [Merge1 Third-Party Connectors User Guide (Scal1 łączniki innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf)).
 
-- Użytkownik, który utworzy łącznik przechwytywania strony internetowej w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który utworzy łącznik przechwytywania strony internetowej w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-the-webpage-capture-connector"></a>Krok 1. Konfigurowanie łącznika przechwytywania strony internetowej
 
@@ -87,7 +87,7 @@ Po utworzeniu łącznika przechwytywania strony internetowej możesz wyświetli�
 
 2. Kliknij kartę **Łączniki** , a następnie wybierz łącznik **Przechwytywanie strony internetowej** , aby wyświetlić stronę wysuwaną. Ta strona zawiera właściwości i informacje o łączniku.
 
-3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera dane zaimportowane do chmury firmy Microsoft.
+3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera informacje o danych, które zostały zaimportowane do chmury firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Wyświetlanie dzienników administratora łączników danych](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Znane problemy
 

@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ee73b5a83a669653087bf787061e8ad59b23ed18
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2c218cd2b0f04201f46155a72a916cc7676aaddb
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095217"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320823"
 ---
 # <a name="device-groups-in-microsoft-365-business-premium"></a>Grupy urządzeń w Microsoft 365 Business Premium
 
@@ -38,7 +38,7 @@ Grupa urządzeń to kolekcja urządzeń, które są pogrupowane ze względu na o
 
 W ramach subskrypcji masz domyślne grupy urządzeń, których możesz użyć. Domyślne grupy urządzeń obejmują wszystkie urządzenia dołączone do usługi Defender dla Firm. Można jednak również utworzyć nowe grupy urządzeń w celu przypisania zasad ochrony urządzeń z określonymi ustawieniami do niektórych urządzeń. 
 
-Wszystkie grupy urządzeń, w tym domyślne grupy urządzeń i dowolne zdefiniowane niestandardowe grupy urządzeń, są przechowywane w [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
+Wszystkie grupy urządzeń, w tym domyślne grupy urządzeń i wszystkie zdefiniowane niestandardowe grupy urządzeń, są przechowywane w [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
 ## <a name="how-do-i-create-a-new-device-group"></a>Jak mogę utworzyć nową grupę urządzeń?
 
@@ -70,6 +70,8 @@ Podczas tworzenia lub edytowania zasad ochrony urządzeń można utworzyć nową
 9. Na stronie **Ustawienia konfiguracji** przejrzyj i edytuj ustawienia zgodnie z potrzebami, a następnie wybierz pozycję **Dalej**. Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Omówienie ustawień konfiguracji nowej generacji w Microsoft Defender dla Firm](../security/defender-business/mdb-next-gen-configuration-settings.md).
 
 10. W kroku **Przeglądanie zasad przejrzyj** wszystkie ustawienia, wprowadź wymagane zmiany, a następnie wybierz pozycję **Utwórz zasady** lub **Zaktualizuj zasady**.
+
+## <a name="next-steps"></a>Następne kroki
 
 Po ukończeniu podstawowych misji skonfiguruj [zespoły reagowania](m365bp-security-incident-management.md) i [zachowaj środowisko](m365bp-maintain-environment.md).
 

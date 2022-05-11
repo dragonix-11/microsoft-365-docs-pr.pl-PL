@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Skonfiguruj urządzenia Windows z systemem Windows 10 Pro dla użytkowników Microsoft 365 Business Premium, umożliwiając scentralizowane zarządzanie i mechanizmy kontroli zabezpieczeń.
-ms.openlocfilehash: 57db37f73d2b9145f7c4fb9c1ee1005318c629d7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9c8a5eb724a74959983e86dcdcb8f2f8f96b540
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096231"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318585"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Konfigurowanie urządzeń Windows dla użytkowników Microsoft 365 Business Premium
 
@@ -56,9 +56,9 @@ Aby uzyskać więcej informacji na temat uaktualniania urządzeń Windows, zobac
 - [Uaktualnij Windows Home do Windows Pro](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
 - [Uaktualnianie do Windows 10 Pro](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
   
-Po uaktualnieniu zobacz [Sprawdzanie, czy urządzenie jest połączone z usługą Azure AD](#verify-the-device-is-connected-to-azure-ad) , aby sprawdzić, czy uaktualnienie zostało uaktualnione, lub aby upewnić się, że uaktualnienie zadziałało.
+Po uaktualnieniu zobacz [Sprawdzanie, czy urządzenie jest połączone z Azure AD](#verify-the-device-is-connected-to-azure-ad), aby sprawdzić, czy uaktualnienie zostało uaktualnione, lub upewnij się, że uaktualnienie zadziałało.
 
-## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Dołączanie urządzeń Windows do usługi Azure AD organizacji
+## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Dołączanie urządzeń Windows do Azure AD organizacji
 
 Gdy wszystkie urządzenia Windows firmy działają Windows 10 Pro lub Windows 11 Pro, możesz dołączyć te urządzenia do Azure Active Directory organizacji (Azure AD). 
 
@@ -80,6 +80,6 @@ Na stronie **Stan synchronizacji** wybierz pozycję **Synchronizuj** , aby pobra
 
 Aby skonfigurować urządzenia przenośne, zobacz [Konfigurowanie urządzeń przenośnych dla użytkowników Microsoft 365 Business Premium](set-up-mobile-devices.md), 
 
-Aby zwiększyć ochronę, zobacz [Top 10 ways to secure Microsoft 365 for business plans (10 najlepszych sposobów zabezpieczania Microsoft 365 dla planów biznesowych](../security-and-compliance/secure-your-business-data.md)).
+Aby zwiększyć ochronę, zobacz [Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla planów biznesowych](../security-and-compliance/secure-your-business-data.md).
   
 

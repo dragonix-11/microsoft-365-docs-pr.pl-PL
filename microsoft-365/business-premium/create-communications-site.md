@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, dlaczego i jak utworzyć witrynę komunikacji SharePoint dla swojej kampanii lub firmy z Microsoft 365 oraz jak chronić zespół przed cyberatakami i najazdami przed złośliwym oprogramowaniem i innymi zagrożeniami spowodowanymi niewłaściwym udostępnianiem plików.
-ms.openlocfilehash: 1e1e2792e4a667737118974b95ae5f77cb6ae224
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100186"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319533"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>Tworzenie witryny komunikacji w SharePoint
 
@@ -72,5 +72,7 @@ Dowiedz się wszystkiego [o witrynach usługi Communications](https://support.of
 ## <a name="admin-settings"></a>Ustawienia administratora
 
 Jeśli nie widzisz linku **+ Utwórz** witrynę, tworzenie witryny samoobsługowej może być niedostępne w Microsoft 365. Aby utworzyć witrynę zespołu, skontaktuj się z osobą zarządzającą Microsoft 365 w organizacji. Jeśli jesteś administratorem Microsoft 365, zobacz [Zarządzanie tworzeniem witryn w usłudze SharePoint Online](/sharepoint/manage-site-creation), aby włączyć samoobsługowe tworzenie witryn dla organizacji lub [Zarządzaj witrynami w nowym centrum administracyjnym SharePoint](/sharepoint/manage-sites-in-new-admin-center), aby utworzyć witrynę z <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">poziomu centrum administracyjnego SharePoint</a>.
+
+## <a name="next-mission"></a>Następna misja
 
 Gratulujemy &mdash; ukończenia misji! Teraz natychmiast skoncentruj się [na ochronie zarządzanych urządzeń](m365bp-protect-devices.md) dla całej organizacji!

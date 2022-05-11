@@ -1,5 +1,5 @@
 ---
-title: Weryfikowanie ustawień ochrony aplikacji na urządzeniach z systemem Android lub iOS
+title: Weryfikowanie ustawień ochrony aplikacji na urządzeniach Android lub iOS
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,32 +23,32 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: Dowiedz się, jak zweryfikować ustawienia ochrony aplikacji Microsoft 365 Business Premium na urządzeniach z systemem Android lub iOS.
-ms.openlocfilehash: 98b3110516d074fe945e1bb68652b40e93fa7fb7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak zweryfikować ustawienia ochrony aplikacji Microsoft 365 Business Premium na urządzeniach Android lub iOS.
+ms.openlocfilehash: 7e1355f71e9757e1055999e1951b4f093b0d21a0
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090690"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317921"
 ---
-# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Weryfikowanie ustawień ochrony aplikacji na urządzeniach z systemem Android lub iOS
+# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Weryfikowanie ustawień ochrony aplikacji na urządzeniach Android lub iOS
 
 > [!NOTE]
 > Microsoft Defender dla Firm jest wdrażana dla klientów Microsoft 365 Business Premium od 1 marca 2022 r. Ta oferta zapewnia dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o usłudze Defender dla Firm](../../security/defender-business/mdb-overview.md)
 
-Postępuj zgodnie z instrukcjami w poniższych sekcjach, aby zweryfikować ustawienia ochrony aplikacji na urządzeniach z systemem Android lub iOS.
+Postępuj zgodnie z instrukcjami w poniższych sekcjach, aby zweryfikować ustawienia ochrony aplikacji na urządzeniach Android lub iOS.
   
 ## <a name="android"></a>Android
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Sprawdzanie, czy ustawienia ochrony aplikacji działają na urządzeniach użytkowników
 
-Po [ustawieniu ustawień ochrony aplikacji dla urządzeń z systemem Android lub iOS](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) w celu ochrony aplikacji możesz wykonać te kroki, aby sprawdzić, czy wybrane ustawienia działają. 
+Po [ustawieniu ustawień ochrony aplikacji dla urządzeń Android lub iOS](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) w celu ochrony aplikacji możesz wykonać te kroki, aby sprawdzić, czy wybrane ustawienia działają. 
   
 Najpierw upewnij się, że zasady mają zastosowanie do aplikacji, w której mają zostać zweryfikowane.
   
 1. W [centrum administracyjnym](https://admin.microsoft.com) Microsoft 365 Business Premium przejdź do pozycji **Zasady Edytuj** \> **zasady**.
     
-2. Wybierz **pozycję Zasady aplikacji dla systemu Android** dla ustawień utworzonych podczas instalacji lub innych utworzonych zasad i sprawdź, czy są wymuszane dla Outlook, na przykład. 
+2. Wybierz **pozycję Zasady aplikacji dla Android** ustawień utworzonych podczas instalacji lub innych utworzonych zasad i sprawdź, czy są wymuszane na przykład dla Outlook. 
     
     ![Zrzut ekranu przedstawiający wszystkie aplikacje, dla których te zasady chronią pliki.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
@@ -58,7 +58,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Kontrola 
   
 ![Upewnij się, że ustawienie Wymagaj numeru PIN lub odcisku palca w celu uzyskania dostępu do aplikacji Office ma wartość Włączone.](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. Na urządzeniu użytkownika z systemem Android otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika.
+1. Na urządzeniu Android użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika.
     
 2. Zostanie również wyświetlony monit o wprowadzenie numeru PIN lub użycie odcisku palca.
     
@@ -68,7 +68,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Kontrola 
 
 W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok **pozycji Office kontroli dostępu do dokumentów**, **rozwiń węzeł Zarządzanie dostępem użytkowników do Office plików na urządzeniach przenośnych** i upewnij się, że dla **pozycji Resetuj numer PIN po wielu nieudanych próbach** ustawiono pewną liczbę. Domyślnie jest to 5. 
   
-1. Na urządzeniu użytkownika z systemem Android otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika.
+1. Na urządzeniu Android użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika.
     
 2. Wprowadź nieprawidłowy numer PIN więcej razy niż zezwalają na to obowiązujące zasady. Zostanie wyświetlony monit z informacją o osiągnięciu **limitu próby podania numeru PIN** w celu zresetowania numeru PIN. 
     
@@ -82,7 +82,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Ochrona w
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. Na urządzeniu użytkownika z systemem Android otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
+1. Na urządzeniu Android użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
     
 2. Otwórz wiadomość e-mail zawierającą załącznik, a następnie naciśnij ikonę strzałki w dół obok informacji o załączniku.
     
@@ -99,11 +99,11 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Ochrona w
 
 W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok **pozycji Office kontroli dostępu do dokumentów**, **rozwiń pozycję Zarządzaj dostępem użytkowników do Office plików na urządzeniach przenośnych** i upewnij się, że pozycja **Wymagaj od użytkowników ponownego zalogowania się po Office aplikacji w stanie bezczynności** jest ustawiona na pewną liczbę minut. Domyślnie jest to 30 minut. 
   
-1. Na urządzeniu użytkownika z systemem Android otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
+1. Na urządzeniu Android użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
     
 2. Powinna zostać wyświetlona skrzynka odbiorcza aplikacji Outlook. Nie dotykaj urządzenia z systemem Android przez co najmniej 30 minut (lub inny czas dłuższy niż wartość określona w zasadach). Ekran urządzenia prawdopodobnie zostanie wygaszony.
     
-3. Ponownie uzyskaj dostęp do Outlook na urządzeniu z systemem Android.
+3. Ponownie uzyskaj dostęp do Outlook na urządzeniu Android.
     
 4. Przed ponownym uzyskaniem dostępu do Outlook zostanie wyświetlony monit o wprowadzenie numeru PIN.
     
@@ -111,7 +111,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok **pozycji Office ko
 
 W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Ochrona w razie utraty lub kradzieży urządzenia**, rozwiń pozycję **Chroń pliki służbowe w przypadku zgubienia lub kradzieży urządzenia** i upewnij się, że funkcja **Chroń pliki służbowe przy użyciu szyfrowania** jest **włączona**, a funkcja **Wymuszaj na użytkownikach zapisywanie wszystkich plików służbowych w usłudze OneDrive dla Firm** jest **wyłączona**.
   
-1. Na urządzeniu użytkownika z systemem Android otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
+1. Na urządzeniu Android użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
     
 2. Otwórz wiadomość e-mail zawierającą kilka załączników plików obrazów.
     
@@ -137,7 +137,7 @@ Najpierw upewnij się, że zasady mają zastosowanie do aplikacji, w której maj
   
 1. W [centrum administracyjnym](https://admin.microsoft.com) Microsoft 365 Business Premium przejdź do pozycji **Zasady Edytuj** \> **zasady**.
     
-2. Wybierz pozycję **Zasady aplikacji dla systemu iOS** dla ustawień utworzonych podczas instalacji lub innych utworzonych zasad i sprawdź, czy są wymuszane dla Outlook na przykład. 
+2. Wybierz **pozycję Zasady aplikacji dla iOS** dla ustawień utworzonych podczas instalacji lub innych utworzonych zasad i sprawdź, czy są wymuszane na przykład dla Outlook. 
     
     ![Zrzut ekranu przedstawiający wszystkie aplikacje, dla których te zasady chronią pliki.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
@@ -147,7 +147,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Kontrola 
   
 ![Upewnij się, że ustawienie Wymagaj numeru PIN lub odcisku palca w celu uzyskania dostępu do aplikacji Office ma wartość Włączone.](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. Na urządzeniu użytkownika z systemem iOS otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika.
+1. Na urządzeniu iOS użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika.
     
 2. Zostanie również wyświetlony monit o wprowadzenie numeru PIN lub użycie odcisku palca.
     
@@ -157,7 +157,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Kontrola 
 
 W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok **pozycji Office kontroli dostępu do dokumentów**, **rozwiń węzeł Zarządzanie dostępem użytkowników do Office plików na urządzeniach przenośnych** i upewnij się, że dla **pozycji Resetuj numer PIN po wielu nieudanych próbach** ustawiono pewną liczbę. Domyślnie jest to 5. 
   
-1. Na urządzeniu użytkownika z systemem iOS otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika.
+1. Na urządzeniu iOS użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika.
     
 2. Wprowadź nieprawidłowy numer PIN więcej razy niż zezwalają na to obowiązujące zasady. Zostanie wyświetlony monit z informacją o osiągnięciu **limitu próby podania numeru PIN** w celu zresetowania numeru PIN. 
     
@@ -171,7 +171,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Ochrona w
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. Na urządzeniu użytkownika z systemem iOS otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
+1. Na urządzeniu iOS użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
     
 2. Otwórz wiadomość e-mail z załącznikiem, otwórz ten załącznik i wybierz pozycję **Zapisz** u dołu ekranu. 
     
@@ -185,11 +185,11 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Ochrona w
 
 W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok **pozycji Office kontroli dostępu do dokumentów**, **rozwiń pozycję Zarządzaj dostępem użytkowników do Office plików na urządzeniach przenośnych** i upewnij się, że pozycja **Wymagaj od użytkowników ponownego zalogowania się po Office aplikacji w stanie bezczynności** jest ustawiona na pewną liczbę minut. Domyślnie jest to 30 minut. 
   
-1. Na urządzeniu użytkownika z systemem iOS otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
+1. Na urządzeniu iOS użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
     
 2. Powinna zostać wyświetlona skrzynka odbiorcza aplikacji Outlook. Nie dotykaj urządzenia z systemem iOS przez co najmniej 30 minut (lub inny czas, który jest dłuższy od wartości określonej w zasadach). Ekran urządzenia prawdopodobnie zostanie wygaszony.
     
-3. Ponownie uzyskaj dostęp do Outlook na urządzeniu z systemem iOS.
+3. Ponownie uzyskaj dostęp do Outlook na urządzeniu iOS.
     
 4. Przed ponownym uzyskaniem dostępu do Outlook zostanie wyświetlony monit o wprowadzenie numeru PIN.
     
@@ -197,7 +197,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok **pozycji Office ko
 
 W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Ochrona w razie utraty lub kradzieży urządzenia**, rozwiń pozycję **Chroń pliki służbowe w przypadku zgubienia lub kradzieży urządzenia** i upewnij się, że funkcja **Chroń pliki służbowe przy użyciu szyfrowania** jest **włączona**, a funkcja **Wymuszaj na użytkownikach zapisywanie wszystkich plików służbowych w usłudze OneDrive dla Firm** jest **wyłączona**.
   
-1. Na urządzeniu użytkownika z systemem iOS otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
+1. Na urządzeniu iOS użytkownika otwórz Outlook i zaloguj się przy użyciu poświadczeń Microsoft 365 Business Premium użytkownika, a następnie wprowadź numer PIN w razie potrzeby.
     
 2. Otwórz wiadomość e-mail zawierającą kilka załączników plików obrazów.
     
@@ -208,4 +208,4 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Ochrona w
 
 ## <a name="see-also"></a>Zobacz też
 
-[10 najlepszych sposobów zabezpieczania Microsoft 365 dla planów biznesowych](../security-and-compliance/secure-your-business-data.md)
+[Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla planów biznesowych](../security-and-compliance/secure-your-business-data.md)

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ochrona urządzeń niezarządzanych lub przynieś własne urządzenia (BYOD) przed cyberatakami za pomocą Microsoft 365 Business Premium. Jak skonfigurować cyberbezpieczeństwo dla komputerów Windows i komputerów Mac.
-ms.openlocfilehash: a8b0fb278e4fb005d6e31d92521791134395b811
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b13c208fd2cdd0fcadf7f5bc820d41b3621eebd
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094168"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318839"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Ochrona niezarządzanych komputerów Windows 10 i komputerów Mac w Microsoft 365 Business Premium
 
@@ -45,7 +45,7 @@ Niezwykle ważne jest, aby zapewnić, aby użytkownicy pierwszej linii postępow
 **Włączanie szyfrowania urządzenia**<p>
 Szyfrowanie urządzeń jest dostępne na wielu urządzeniach Windows i pomaga chronić dane przez ich szyfrowanie. Jeśli włączysz szyfrowanie urządzenia, tylko autoryzowane osoby będą mogły uzyskać dostęp do urządzenia i danych. Aby uzyskać instrukcje [, zobacz Włączanie szyfrowania urządzeń](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) .
 
- Jeśli szyfrowanie urządzenia nie jest dostępne na urządzeniu, możesz włączyć standardowe [szyfrowanie funkcji BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) . (Funkcja BitLocker nie jest dostępna w wersji Windows 10 Home). 
+ Jeśli szyfrowanie urządzenia nie jest dostępne na urządzeniu, możesz włączyć standardowe [szyfrowanie BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption). (BitLocker nie jest dostępna w wersji Windows 10 Home). 
 
 **Ochrona urządzenia za pomocą Zabezpieczenia Windows**<p>
 Jeśli masz Windows 10, uzyskasz najnowszą ochronę antywirusową za pomocą Zabezpieczenia Windows. Po pierwszym uruchomieniu Windows 10 Zabezpieczenia Windows jest włączony i aktywnie pomaga chronić komputer, skanując pod kątem złośliwego oprogramowania (złośliwego oprogramowania), wirusów i zagrożeń bezpieczeństwa. Zabezpieczenia Windows używa ochrony w czasie rzeczywistym do skanowania wszystkiego, co pobierasz lub uruchamiasz na komputerze.
@@ -71,6 +71,8 @@ Możesz również zmniejszyć ryzyko złośliwego oprogramowania przy użyciu op
 
 **Włączanie ochrony zapory**<p>
 Użyj ustawień zapory, aby chronić komputer Mac przed niepożądanym kontaktem zainicjowanym przez inne komputery po nawiązaniu połączenia z Internetem lub siecią. Bez tej ochrony komputer Mac może być bardziej narażony na nieautoryzowany dostęp. Aby uzyskać instrukcje [, zobacz temat zapory aplikacji](https://support.apple.com/HT201642) .
+
+## <a name="next-mission"></a>Następna misja
 
 Dobra, misja zakończona! Teraz pracujemy nad [zabezpieczeniem systemu poczty e-mail](m365bp-protect-email-overview.md) przed wyłudzaniem informacji i innymi atakami.
 

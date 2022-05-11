@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 351a403923df8e12d63051e30518b5c254abccb8
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 8a3d8caa02aa04412925b4d0648d166194df0548
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188817"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319204"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Co nowego w ochronie punktu końcowego w usłudze Microsoft Defender
 
@@ -56,19 +56,23 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 
 Aby uzyskać więcej informacji na temat Ochrona punktu końcowego w usłudze Microsoft Defender w innych systemach operacyjnych:
 
-- [Co nowego w usłudze Defender for Endpoint w systemie macOS](mac-whatsnew.md)
-- [Co nowego w usłudze Defender for Endpoint w systemie iOS](ios-whatsnew.md)
+- [Co nowego w usłudze Defender for Endpoint na macOS](mac-whatsnew.md)
+- [Co nowego w usłudze Defender for Endpoint na iOS](ios-whatsnew.md)
 - [Co nowego w usłudze Defender for Endpoint w systemie Linux](linux-whatsnew.md)
+
+## <a name="may-2022"></a>Maj 2022 r.
+- [Ochrona przed naruszeniami macOS (wersja zapoznawcza)](tamperprotection-macos.md)<br>Ochrona przed naruszeniami zapobiega nieautoryzowanemu usuwaniu Ochrona punktu końcowego w usłudze Microsoft Defender na macOS.
+
 
 ## <a name="april-2022"></a>Kwiecień 2022 r.
 - [Zaktualizowano dołączanie i równoważność funkcji dla Windows Server 2012 R2 i Windows Server 2016)](configure-server-endpoints.md)<br/> Nowy pakiet ujednoliconego rozwiązania jest teraz ogólnie dostępny i ułatwia dołączanie serwerów przez usunięcie zależności i kroki instalacji. Ponadto ten ujednolicony pakiet rozwiązań zawiera wiele nowych ulepszeń funkcji.
-- Integracja z Tunnel. Ochrona punktu końcowego w usłudze Microsoft Defender w systemie iOS można teraz zintegrować z Microsoft Tunnel, rozwiązaniem bramy sieci VPN, które umożliwia bezpieczeństwo i łączność w jednej aplikacji. Ta funkcja była wcześniej dostępna tylko w systemie Android. [Dowiedz się więcej](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
+- Integracja z Tunnel. Ochrona punktu końcowego w usłudze Microsoft Defender na iOS można teraz zintegrować z usługą Microsoft Tunnel, rozwiązaniem bramy sieci VPN w celu zapewnienia bezpieczeństwa i łączności w jednej aplikacji. Ta funkcja była wcześniej dostępna tylko w Android. [Dowiedz się więcej](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="january-2022"></a>Styczeń 2022
 
 - Ulepszenia laboratorium ewaluacji: do laboratorium można teraz dodawać urządzenia z systemem Windows 11 i Linux. 
 
-- Zagrożenia i zarządzanie lukami w zabezpieczeniach dla systemów Android i iOS są teraz ogólnie dostępne. [Dowiedz się więcej](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+- Zagrożenia i zarządzanie lukami w zabezpieczeniach dla Android i iOS są teraz ogólnie dostępne. [Dowiedz się więcej](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## <a name="december-2021"></a>Grudzień 2021
 
@@ -123,9 +127,9 @@ Aby uzyskać więcej informacji na temat Ochrona punktu końcowego w usłudze Mi
 
 - [Obsługa zarządzania aplikacjami mobilnymi](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> To ulepszenie umożliwia Ochrona punktu końcowego w usłudze Microsoft Defender ochrony danych organizacji w aplikacji zarządzanej, gdy Intune jest używana do zarządzania aplikacjami mobilnymi. Aby uzyskać więcej informacji na temat zarządzania aplikacjami mobilnymi, zobacz [tę dokumentację](/microsoft-365/mem/intune/apps/mam-faq).
 
-- [integracja Microsoft Tunnel sieci VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel możliwości sieci VPN są teraz zintegrowane z aplikacją Ochrona punktu końcowego w usłudze Microsoft Defender dla systemu Android. To zjednoczenie umożliwia organizacjom oferowanie uproszczonego środowiska użytkownika końcowego przy użyciu jednej aplikacji zabezpieczeń — oferując zarówno ochronę przed zagrożeniami mobilnymi, jak i możliwość uzyskiwania dostępu do zasobów lokalnych z urządzeń przenośnych, podczas gdy zespoły ds. zabezpieczeń i IT są w stanie utrzymać te same środowiska administratora, które znają.
+- [integracja Microsoft Tunnel sieci VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel możliwości sieci VPN są teraz zintegrowane z aplikacją Ochrona punktu końcowego w usłudze Microsoft Defender dla Android. To zjednoczenie umożliwia organizacjom oferowanie uproszczonego środowiska użytkownika końcowego przy użyciu jednej aplikacji zabezpieczeń — oferując zarówno ochronę przed zagrożeniami mobilnymi, jak i możliwość uzyskiwania dostępu do zasobów lokalnych z urządzeń przenośnych, podczas gdy zespoły ds. zabezpieczeń i IT są w stanie utrzymać te same środowiska administratora, które znają.
 
-- [Wykrywanie jailbreaku w systemie iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> Funkcja wykrywania jailbreak w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie iOS jest teraz ogólnie dostępna. Spowoduje to dodanie ochrony przed wyłudzaniem informacji, która już istnieje.  Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad dostępu warunkowego na podstawie sygnałów ryzyka urządzenia](/microsoft-365/security/defender-endpoint/ios-configure-features).
+- [Wykrywanie jailbreaku na iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> Funkcja wykrywania jailbreak w Ochrona punktu końcowego w usłudze Microsoft Defender na iOS jest teraz ogólnie dostępna. Spowoduje to dodanie ochrony przed wyłudzaniem informacji, która już istnieje.  Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad dostępu warunkowego na podstawie sygnałów ryzyka urządzenia](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 
 ## <a name="march-2021"></a>Marzec 2021 r.

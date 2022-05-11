@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,20 +14,20 @@ ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak za pomocą funkcji statystyk wyszukiwania wyświetlać statystyki dotyczące wyszukiwań zawartości i wyszukiwań skojarzonych z przypadkiem zbierania elektronicznych materiałów dowodowych (Standardowa) w portalu zgodności usługi Microsoft Purview.
+description: Dowiedz się, jak za pomocą funkcji statystyk wyszukiwania wyświetlać statystyki dotyczące wyszukiwań zawartości i wyszukiwań skojarzonych z przypadkiem zbierania elektronicznych materiałów dowodowych (Standardowa) w portal zgodności Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d96ad67a638ab3917743e64462debd9f2c94ef4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cc8e249f62b0dbfbeaa6bcf32e7873ca2ff5b36d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092210"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318077"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Wyświetlanie statystyk wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po utworzeniu i uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego z przypadkiem zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) możesz wyświetlić statystyki dotyczące szacowanych wyników wyszukiwania. Obejmuje to podsumowanie wyników wyszukiwania (podobne do podsumowania szacowanych wyników wyszukiwania wyświetlanych na stronie wysuwanego wyszukiwania), statystyki zapytań, takie jak liczba lokalizacji zawartości z elementami pasującymi do zapytania wyszukiwania oraz tożsamość lokalizacji zawartości, które mają najbardziej pasujące elementy.
+Po utworzeniu i uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego z przypadkiem zbierania elektronicznych materiałów dowodowych (Standard) Microsoft Purview można wyświetlić statystyki dotyczące szacowanych wyników wyszukiwania. Obejmuje to podsumowanie wyników wyszukiwania (podobne do podsumowania szacowanych wyników wyszukiwania wyświetlanych na stronie wysuwanego wyszukiwania), statystyki zapytań, takie jak liczba lokalizacji zawartości z elementami pasującymi do zapytania wyszukiwania oraz tożsamość lokalizacji zawartości, które mają najbardziej pasujące elementy.
   
 Ponadto można użyć listy słów kluczowych, aby skonfigurować wyszukiwanie w celu zwrócenia statystyk dla każdego słowa kluczowego w zapytaniu wyszukiwania. Dzięki temu można porównać liczbę wyników zwracanych przez każde słowo kluczowe w zapytaniu.
   
@@ -37,13 +37,13 @@ Możesz również pobrać statystyki wyszukiwania do pliku CSV. Umożliwia to u�
 
 Aby wyświetlić statystyki dotyczące wyszukiwania zawartości lub wyszukiwania skojarzonego z przypadkiem zbierania elektronicznych materiałów dowodowych (Standardowa):
   
-1. W portalu zgodności usługi Microsoft Purview kliknij pozycję **Pokaż wszystko**, a następnie wykonaj jedną z następujących czynności:
+1. W portal zgodności Microsoft Purview kliknij pozycję **Pokaż wszystko**, a następnie wykonaj jedną z następujących czynności:
 
    - Kliknij pozycję **Wyszukiwanie zawartości** , a następnie wybierz wyszukiwanie, aby wyświetlić stronę wysuwaną.
 
      LUB
 
-   - Kliknij **pozycję eDiscoveryCore** > , wybierz przypadek, a następnie wybierz wyszukiwanie na **karcie** **Wyszukiwania**, aby wyświetlić stronę wysuwaną.
+   - Kliknij **pozycję eDiscoveryeDiscovery** >  **(Standardowa),** wybierz przypadek, a następnie wybierz wyszukiwanie na karcie **Wyszukiwania**, aby wyświetlić stronę wysuwaną.
 
 2. Na wysuwanej stronie wybranego wyszukiwania kliknij kartę **Statystyki wyszukiwania** .
   

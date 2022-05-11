@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 04/11/2022
-ms.openlocfilehash: b176f7a89c46e016f7eb25cdf4cd6b0d6beb3966
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.date: 05/09/2022
+ms.openlocfilehash: a472a2183d642ca8c3231e6ca5129fdf79cad8fd
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130610"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317631"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Ochrona punktu końcowego w usłudze Microsoft Defender Storage Access Control wymienna kontrolki urządzenia
 
@@ -267,7 +267,7 @@ Microsoft Endpoint Manager w centrum administracyjnym (<https://endpoint.microso
 
 5. Ustaw lokalizację kopii pliku: jeśli chcesz mieć kopię pliku podczas zapisu, musisz ustawić lokalizację, w której system może zapisać kopię.
 
-    - Identyfikator OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
+    - OMA-URI: './Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation
 
     - Typ danych: ciąg
 

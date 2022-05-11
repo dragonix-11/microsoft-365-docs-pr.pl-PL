@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: f888556ea32d9d59c53728b30b629169bc9db45d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9e24e6bada3b1f5aa047692dc4d742a5a006b9af
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093245"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317989"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Konfigurowanie usługi Microsoft 365 Business Premium
 
@@ -40,7 +40,7 @@ Przed rozpoczęciem procesu konfiguracji upewnij się, że spełniasz następuj�
 | Subskrypcji | Microsoft 365 Business Premium lub Microsoft 365 kampanii <br/><br/> Aby rozpocząć okres próbny lub kupić subskrypcję, zobacz następujące artykuły: <br/>- [Pobieranie Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Uzyskiwanie Microsoft 365 dla kampanii](get-microsoft-365-campaigns.md) |
 | Uprawnienia  | Aby ukończyć początkowy proces konfiguracji, musisz być administratorem globalnym. [Dowiedz się więcej o rolach administratora](../admin/add-users/about-admin-roles.md). |
 | Wymagania przeglądarki | Microsoft Edge, Safari, Chrome lub Firefox. [Dowiedz się więcej o wymaganiach przeglądarki](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| System operacyjny | **Windows**: Windows 11, Windows 10, Windows 8.1, Windows Server 2019 lub nowszy lub Windows Server 2016<br/><br/>**macOS**: jedna z trzech najnowszych wersji systemu macOS |
+| System operacyjny | **Windows**: Windows 11, Windows 10, Windows 8.1, Windows Server 2019 lub nowszy lub Windows Server 2016<br/><br/>**macOS**: jedna z trzech najnowszych wersji macOS |
 
 > [!TIP]
 > Aby uzyskać bardziej szczegółowe informacje na temat Microsoft 365, Office i wymagań systemowych, zobacz Microsoft 365 i Office Resources.For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources (Zasoby Microsoft 365 i Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)).
@@ -53,9 +53,9 @@ Microsoft 365 Business Premium obejmuje proces z przewodnikiem na potrzeby konfi
 - [Dodawanie użytkowników i przypisywanie licencji](../admin/add-users/add-users.md)
 - [Aktualizowanie rekordów DNS](../admin/setup/setup-business-basic.md#connect-your-domain)
 
-Poniższy film wideo przedstawia proces konfiguracji z przewodnikiem dla Microsoft 365 Business Basic, który działa w ten sam sposób w Microsoft 365 Business Premium.<br/><br/>
+Poniższy film wideo przedstawia proces konfiguracji z przewodnikiem dla Microsoft 365 Business Standard, który działa w ten sam sposób w Microsoft 365 Business Premium.<br/><br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > Po dodaniu użytkowników podaj im link do [przewodnika szybkiej konfiguracji pracownika](../admin/setup/employee-quick-setup.md). Przewodnik przeprowadzi ich przez proces logowania, uzyskiwania Office aplikacji oraz zapisywania, kopiowania i udostępniania plików.
@@ -72,8 +72,13 @@ Jeśli wolisz, aby partner firmy Microsoft pomógł Ci uzyskać i skonfigurować
 
 4. Przejrzyj listę wyników. Wybierz dostawcę, aby dowiedzieć się więcej o swojej wiedzy i udostępnianych przez nich usługach.
 
-Zobacz również [Artykuł Znajdowanie partnera lub odsprzedawcy](../admin/manage/find-your-partner-or-reseller.md).
+## <a name="see-also"></a>Zobacz też
 
+- [Znajdowanie partnera lub odsprzedawcy](../admin/manage/find-your-partner-or-reseller.md)
+
+- [Konfigurowanie haseł samoobsługowych](../admin/add-users/let-users-reset-passwords.md)
+
+- [Konfigurowanie samoobsługowego zarządzania grupami](/azure/active-directory/enterprise-users/groups-self-service-management)
 ## <a name="next-objectives"></a>Następne cele
 
 Po zakończeniu początkowego procesu konfiguracji następnym celem jest skonfigurowanie możliwości zabezpieczeń i zgodności:
@@ -83,7 +88,7 @@ Po zakończeniu początkowego procesu konfiguracji następnym celem jest skonfig
 2. Wytrenuj swój zespół:
 
    - [Konfigurowanie urządzeń osobistych używanych do uzyskiwania dostępu do danych biznesowych](m365bp-devices-overview.md)
-   - [Bezpieczne korzystanie z poczty e-mail](m365bp-protect-email-overview.md)
+   - [Bezpieczniejsze korzystanie z poczty e-mail](m365bp-protect-email-overview.md)
    - [Współpracuj i udostępniaj bezpieczniej](m365bp-collaborate-share-securely.md)
 
 3. [Chroń zarządzane urządzenia](m365bp-protect-devices.md).

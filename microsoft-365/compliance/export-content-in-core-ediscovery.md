@@ -18,24 +18,24 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Opis sposobu eksportowania i pobierania zawartości z przypadku zbierania elektronicznych materiałów dowodowych (Standard) w Microsoft 365.
-ms.openlocfilehash: fb142a735d30a59735bd4f9a6370543a92f3d926
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 550bdda2c8b2f8afb0e7b4934f5337d7ee323d3a
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095845"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318663"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>Eksportowanie zawartości ze sprawy zbierania elektronicznych materiałów dowodowych (standardowa)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po pomyślnym uruchomieniu wyszukiwania skojarzonego z przypadkiem zbierania elektronicznych materiałów dowodowych (Standard) usługi Microsoft Purview można wyeksportować wyniki wyszukiwania. Podczas eksportowania wyników wyszukiwania elementy skrzynki pocztowej są pobierane w plikach PST lub jako pojedyncze wiadomości. Podczas eksportowania zawartości z witryn SharePoint i OneDrive dla Firm eksportowane są kopie natywnych dokumentów Office i innych dokumentów. Eksportowany jest również plik Results.csv zawierający informacje o każdym wyeksportowanym elemencie oraz plik manifestu (w formacie XML), który zawiera informacje o każdym wyniku wyszukiwania.
+Po pomyślnym uruchomieniu wyszukiwania skojarzonego z przypadkiem zbierania elektronicznych materiałów dowodowych (Standardowa) Microsoft Purview można wyeksportować wyniki wyszukiwania. Podczas eksportowania wyników wyszukiwania elementy skrzynki pocztowej są pobierane w plikach PST lub jako pojedyncze wiadomości. Podczas eksportowania zawartości z witryn SharePoint i OneDrive dla Firm eksportowane są kopie natywnych dokumentów Office i innych dokumentów. Eksportowany jest również plik Results.csv zawierający informacje o każdym wyeksportowanym elemencie oraz plik manifestu (w formacie XML), który zawiera informacje o każdym wyniku wyszukiwania.
   
 ## <a name="export-search-results"></a>Eksportuj wyniki wyszukiwania
 
-1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> i zaloguj się przy użyciu poświadczeń konta użytkownika, do których przypisano odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> i zaloguj się przy użyciu poświadczeń konta użytkownika, do których przypisano odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych.
 
-2. W okienku nawigacji po lewej stronie portalu zgodności wybierz pozycję **Pokaż wszystko**, a następnie wybierz pozycję **eDiscoveryCore** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+2. W okienku nawigacji po lewej stronie portalu zgodności wybierz pozycję **Pokaż wszystko**, a następnie wybierz pozycję **eDiscoveryeDiscovery** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**(Standard)**</a>.
 
 3. Na stronie **eDiscovery (Standard)** kliknij nazwę przypadku, w ramach którego chcesz utworzyć blokadę.
 
@@ -45,7 +45,7 @@ Po pomyślnym uruchomieniu wyszukiwania skojarzonego z przypadkiem zbierania ele
 
    ![Opcja Eksportuj wyniki w menu Akcje.](../media/ActionMenuExportResults.png)
 
-   Przepływ pracy umożliwiający wyeksportowanie wyników wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa) jest taki sam jak eksportowanie wyników wyszukiwania do wyszukiwania na stronie **wyszukiwania zawartości** . Aby uzyskać instrukcje krok po kroku, zobacz [Eksportowanie wyników wyszukiwania zawartości](export-search-results.md).
+   Przepływ pracy umożliwiający wyeksportowanie wyników wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa) jest taki sam jak eksportowanie wyników wyszukiwania do wyszukiwania na stronie **wyszukiwania zawartości**. Aby uzyskać instrukcje krok po kroku, zobacz [Eksportowanie wyników wyszukiwania zawartości](export-search-results.md).
 
    > [!NOTE]
    > Podczas eksportowania wyników wyszukiwania można włączyć funkcję de-duplikowania, aby wyeksportować tylko jedną kopię wiadomości e-mail, mimo że w przeszukanych skrzynkach pocztowych mogło zostać znalezionych wiele wystąpień tej samej wiadomości. Aby uzyskać więcej informacji na temat de-duplikowania i sposobu identyfikowania zduplikowanych elementów, zobacz [De-duplication in eDiscovery search results (De-duplikowanie w wynikach wyszukiwania zbierania elektronicznych materiałów dowodowych](de-duplication-in-ediscovery-search-results.md)).

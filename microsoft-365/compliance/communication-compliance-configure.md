@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b5752d0ebeb0095defe47f52529392e4b9c01212
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c4e28c91cc7e7fe441d000553e9099ad39420991
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973734"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317079"
 ---
 # <a name="get-started-with-communication-compliance"></a>Wprowadzenie do zgodności w komunikacji
 
@@ -71,12 +71,12 @@ Działanie obejmujące [typy informacji poufnych](/microsoft-365/compliance/comm
 > [!IMPORTANT]
 > Po skonfigurowaniu grup ról stosowanie uprawnień grupy ról do przypisanych użytkowników w całej organizacji może potrwać do 30 minut.
 
-Istnieje sześć grup ról używanych do konfigurowania początkowych uprawnień do zarządzania funkcjami zgodności komunikacji. Aby zapewnić **zgodność komunikacji** jako opcję menu w portalu zgodności usługi Microsoft Purview i kontynuować wykonywanie tych kroków konfiguracji, musisz zostać przypisany do jednej z następujących ról lub grup ról:
+Istnieje sześć grup ról używanych do konfigurowania początkowych uprawnień do zarządzania funkcjami zgodności komunikacji. Aby zapewnić **zgodność z komunikacją** jako opcję menu w portal zgodności Microsoft Purview i kontynuować wykonywanie tych kroków konfiguracji, musisz zostać przypisany do jednej z następujących ról lub grup ról:
 
 - rola [*administratora globalnego*](/azure/active-directory/roles/permissions-reference#global-administrator) Azure Active Directory
 - rola [*administratora zgodności*](/azure/active-directory/roles/permissions-reference#compliance-administrator) Azure Active Directory
-- Grupa ról [*zarządzania organizacją*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) w portalu zgodności usługi Microsoft Purview
-- Grupa ról [*administratora zgodności*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portalu zgodności usługi Microsoft Purview
+- grupa ról [*zarządzania organizacją*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portal zgodności Microsoft Purview
+- grupa ról [*administratora zgodności*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portal zgodności Microsoft Purview
 - *Grupa ról Zgodność z komunikacją*
 - *Grupa ról administratora zgodności komunikacji*
 
@@ -84,8 +84,8 @@ Członkowie następujących ról mają te same uprawnienia rozwiązania dołącz
 
 - *administrator globalny* Azure Active Directory
 - *administrator zgodności* Azure Active Directory
-- *Zarządzanie organizacją* w portalu zgodności usługi Microsoft Purview
-- *Administrator zgodności* portalu zgodności usługi Microsoft Purview
+- *zarządzanie organizacją* portal zgodności Microsoft Purview
+- *administrator zgodności* portal zgodności Microsoft Purview
 
 > [!IMPORTANT]
 > Upewnij się, że zawsze masz co najmniej jednego użytkownika w grupach ról *Zgodność z komunikacją* lub *Zgodność z komunikacją Administrator* (w zależności od wybranej opcji), aby konfiguracja zgodności komunikacji nie wchodziła do scenariusza "zero administratora", jeśli określoni użytkownicy opuszczają organizację.
@@ -122,7 +122,7 @@ Wybierz spośród tych opcji grupy ról rozwiązania podczas konfigurowania zgod
 
 Ta opcja służy do przypisywania użytkowników do określonych grup ról w celu segmentowania dostępu do zgodności komunikacji i obowiązków między różnymi użytkownikami w organizacji.
 
-1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365, a następnie przejdź do obszaru **Uprawnienia**</a>.
+1. Zaloguj się do [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365, a następnie przejdź do obszaru **Uprawnienia**</a>.
 
 2. Wybierz link, aby wyświetlić role i zarządzać nimi w Office 365.
 
@@ -216,9 +216,9 @@ Aby uzyskać więcej informacji na temat konfigurowania Yammer w trybie natywnym
 >[!TIP]  
 >Chcesz zapoznać się z szczegółowym przewodnikiem konfigurowania nowych zasad zgodności komunikacji i korygowania alertu? Zapoznaj się z [tym 15-minutowym filmem wideo](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) , aby zobaczyć pokaz sposobu, w jaki zasady zgodności komunikacji mogą pomóc w wykrywaniu nieodpowiednich komunikatów, badaniu potencjalnych naruszeń i korygowaniu problemów ze zgodnością.
 
-1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
+1. Zaloguj się do [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
 
-2. W portalu zgodności usługi Microsoft Purview wybierz pozycję **Zgodność z komunikacją**.
+2. W portal zgodności Microsoft Purview wybierz pozycję **Zgodność z komunikacją**.
 
 3. Wybierz kartę **Zasady** .
 
@@ -288,9 +288,9 @@ Jeśli chcesz mieć możliwość odpowiadania na alert zasad, wysyłając powiad
 
 Możesz również włączyć anonimizację wyświetlanych nazw użytkowników podczas badania dopasowań zasad i podejmowania działań dotyczących komunikatów.
 
-1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
+1. Zaloguj się do [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
 
-2. W portalu zgodności usługi Microsoft Purview przejdź do pozycji **Zgodność z komunikacją**.
+2. W portal zgodności Microsoft Purview przejdź do pozycji **Zgodność z komunikacją**.
 
 3. Aby skonfigurować anonimizację nazw użytkowników, wybierz kartę **Prywatność** .
 
@@ -312,7 +312,7 @@ Możesz również włączyć anonimizację wyświetlanych nazw użytkowników po
 
 ## <a name="step-8-optional-test-your-communication-compliance-policy"></a>Krok 8 (opcjonalnie): Testowanie zasad zgodności komunikacji
 
-Po utworzeniu zasad zgodności komunikacji warto ją przetestować, aby upewnić się, że zdefiniowane warunki są prawidłowo wymuszane przez zasady. Możesz również [przetestować zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview,](create-test-tune-dlp-policy.md) jeśli zasady zgodności komunikacji zawierają typy informacji poufnych. Upewnij się, że dajesz zasadom czas na aktywowanie, aby komunikacja, którą chcesz przetestować, została przechwycona.
+Po utworzeniu zasad zgodności komunikacji warto ją przetestować, aby upewnić się, że zdefiniowane warunki są prawidłowo wymuszane przez zasady. Możesz również [przetestować zasady Ochrona przed utratą danych w Microsoft Purview (DLP),](create-test-tune-dlp-policy.md) jeśli zasady zgodności komunikacji obejmują typy informacji poufnych. Upewnij się, że dajesz zasadom czas na aktywowanie, aby komunikacja, którą chcesz przetestować, została przechwycona.
 
 Wykonaj następujące kroki, aby przetestować zasady zgodności komunikacji:
 
@@ -321,7 +321,7 @@ Wykonaj następujące kroki, aby przetestować zasady zgodności komunikacji:
 2. Wyślij wiadomość e-mail, Microsoft Teams czat lub Yammer wiadomość spełniającą kryteria zdefiniowane w zasadach zgodności komunikacji. Ten test może być słowem kluczowym, rozmiarem załącznika, domeną itp. Upewnij się, że określono, czy skonfigurowane ustawienia warunkowe w zasadach są zbyt restrykcyjne lub zbyt łagodne.
 
     > [!NOTE]
-    > Pełne przetwarzanie wiadomości e-mail w zasadach może potrwać do 24 godzin. Pełne przetwarzanie komunikacji na platformach Microsoft Teams, Yammer i platformach innych firm może potrwać do 48 godzin.
+    > Pełne przetwarzanie wiadomości e-mail w zasadach może potrwać około 24 godzin. Pełne przetwarzanie komunikacji na platformach Microsoft Teams, Yammer i innych firm może potrwać około 48 godzin.
 
 3. Zaloguj się do Microsoft 365 jako recenzent wyznaczony w zasadach zgodności komunikacji. Przejdź do pozycji **Zgodność** >  **komunikacjiAcertyfikacje**, aby wyświetlić alerty dotyczące zasad.
 

@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Wyszukaj zawartość, która może być istotna dla sprawy zbierania elektronicznych materiałów dowodowych (standardowa).
-ms.openlocfilehash: 372f8beba2567c24e8af75acf4d11e3fe6220f2c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d0c565e46860329c4dc6dac741fb0312ddccfd2c
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090412"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318929"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Wyszukiwanie zawartości w przypadku zbierania elektronicznych materiałów dowodowych (standardowa)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po utworzeniu sprawy zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (w warstwie Standardowa) i umieszczeniu osób interesujących się sprawą można utworzyć i uruchomić co najmniej jedno wyszukiwanie zawartości istotnej dla sprawy. Wyszukiwania skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa) nie są wyświetlane na stronie **wyszukiwania zawartości** w portalu zgodności usługi Microsoft Purview. Te wyszukiwania są wyświetlane na stronie **Wyszukiwania** w przypadku podstawowego zbierania elektronicznych materiałów dowodowych, z które są skojarzone wyszukiwania. Oznacza to również, że do wyszukiwań skojarzonych ze sprawą mogą uzyskiwać dostęp tylko członkowie sprawy.
+Po utworzeniu Microsoft Purview przypadku zbierania elektronicznych materiałów dowodowych (Standardowa) i umieszczeniu osób interesujących się sprawą możesz utworzyć i uruchomić co najmniej jedno wyszukiwanie zawartości istotnej dla sprawy. Wyszukiwania skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych (standardowa) nie są wyświetlane na stronie **wyszukiwania zawartości** w portal zgodności Microsoft Purview. Te wyszukiwania są wyświetlane na stronie **Wyszukiwania** w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa), z których są skojarzone wyszukiwania. Oznacza to również, że do wyszukiwań skojarzonych ze sprawą mogą uzyskiwać dostęp tylko członkowie sprawy.
 
 Aby utworzyć wyszukiwanie zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa):
   

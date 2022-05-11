@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano sposób zarządzania przypadkami zbierania elektronicznych materiałów dowodowych (standardowa). Obejmuje to zamknięcie sprawy, ponowne otwarcie zamkniętej sprawy i usunięcie sprawy.
-ms.openlocfilehash: 27dc46fcfe65b6a39c3a217fd72fcc97037ccb99
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f527d206e7112534db557928daf6ab8942c60d1c
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094014"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318321"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>Zamykanie, ponowne otwieranie i usuwanie sprawy zbierania elektronicznych materiałów dowodowych (standardowa)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-W tym artykule opisano sposób zamykania, ponownego otwierania i usuwania przypadków zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (standard) w Microsoft 365.
+W tym artykule opisano sposób zamykania, ponownego otwierania i usuwania Microsoft Purview przypadków zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w Microsoft 365.
 
 ## <a name="close-a-case"></a>Zamykanie sprawy
 
@@ -38,13 +38,13 @@ Po zakończeniu sprawy prawnej lub dochodzenia obsługiwanego przez sprawę zbie
 
 - Zamknięcie sprawy powoduje wyłączenie tylko blokad skojarzonych z tą sprawą. Jeśli inne blokady zostaną umieszczone w lokalizacji zawartości (takiej jak blokada postępowania sądowego, zasady przechowywania lub blokada z innego przypadku zbierania elektronicznych materiałów dowodowych (standardowa) te blokady będą nadal utrzymywane.
 
-- Sprawa jest nadal wyświetlana na stronie eDiscovery (Standard) w portalu zgodności usługi Microsoft Purview. Szczegóły, blokady, wyszukiwania i członkowie zamkniętej sprawy są zachowywane.
+- Sprawa jest nadal wyświetlana na stronie eDiscovery (Standard) w portal zgodności Microsoft Purview. Szczegóły, blokady, wyszukiwania i członkowie zamkniętej sprawy są zachowywane.
 
 - Sprawę można edytować po jej zamknięciu. Możesz na przykład dodawać lub usuwać członków, tworzyć wyszukiwania i eksportować wyniki wyszukiwania. Podstawowa różnica między aktywnymi i zamkniętymi przypadkami polega na tym, że blokady zbierania elektronicznych materiałów dowodowych są wyłączone po zamknięciu sprawy.
 
 Aby zamknąć przypadek:
   
-1. W portalu zgodności kliknij pozycję **eDiscoveryCore** > , aby wyświetlić listę przypadków zbierania elektronicznych materiałów dowodowych (Standard) w organizacji.
+1. W portalu zgodności kliknij pozycję **eDiscoveryeDiscovery** >  **(Standard),** aby wyświetlić listę przypadków zbierania elektronicznych materiałów dowodowych (Standard) w organizacji.
 
 2. Kliknij nazwę sprawy, którą chcesz zamknąć.
 
@@ -58,7 +58,7 @@ Aby zamknąć przypadek:
 
     Stan na stronie głównej sprawy został zmieniony z **Aktywny** na **Zamykający**.
 
-5. Na stronie **eDiscovery (Standard)** kliknij pozycję **Odśwież** , aby zaktualizować stan zamkniętego przypadku. Ukończenie procesu zamykania może potrwać do 60 minut.
+5. Na stronie **eDiscovery (Standard)** kliknij pozycję **Odśwież**, aby zaktualizować stan zamkniętego przypadku. Ukończenie procesu zamykania może potrwać do 60 minut.
 
     Po zakończeniu procesu stan sprawy zostanie zmieniony na **Zamknięty** na stronie **Zbierania elektronicznych materiałów dowodowych (Standardowa).**
 
@@ -80,7 +80,7 @@ Po ponownym otwarciu sprawy wszelkie blokady zbierania elektronicznych materiał
 
     Stan strony wysuwanej strony głównej sprawy został zmieniony z **Zamknięty** na **Aktywny**.
 
-5. Na stronie **eDiscovery (Standard)** kliknij pozycję **Odśwież** , aby zaktualizować stan ponownie otwartej sprawy. Ukończenie procesu ponownego otwierania może potrwać do 60 minut. 
+5. Na stronie **eDiscovery (Standard)** kliknij pozycję **Odśwież**, aby zaktualizować stan ponownie otwartej sprawy. Ukończenie procesu ponownego otwierania może potrwać do 60 minut. 
 
     Po zakończeniu procesu stan sprawy zostanie zmieniony na **Aktywny** na stronie **eDiscovery (Standard).**
 
@@ -104,7 +104,7 @@ Aby usunąć blokadę zbierania elektronicznych materiałów dowodowych:
 
 Aby usunąć przypadek:
 
-1. W portalu zgodności kliknij pozycję **eDiscoveryCore** > , aby wyświetlić listę przypadków zbierania elektronicznych materiałów dowodowych (Standard) w organizacji.
+1. W portalu zgodności kliknij pozycję **eDiscoveryeDiscovery** >  **(Standard),** aby wyświetlić listę przypadków zbierania elektronicznych materiałów dowodowych (Standard) w organizacji.
 
 2. Kliknij nazwę sprawy, którą chcesz usunąć.
 

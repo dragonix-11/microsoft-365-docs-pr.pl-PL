@@ -19,12 +19,12 @@ description: Administratorzy mogą dowiedzieć się więcej o typach adresów e-
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92b7072e3127da71f423648c83fc94c17bed7caa
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: c8b9fb5c9e2b67a656948684838b61b4a9c33a8d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131069"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319555"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Jak funkcja EOP weryfikuje adres Od, aby zapobiec wyłudzaniu informacji
 
@@ -136,4 +136,4 @@ Nie można zastąpić wymagań dotyczących adresu Od dla wychodzącej poczty e-
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Inne sposoby zapobiegania i ochrony przed cyberprzestępczością w Microsoft 365
 
-Aby uzyskać więcej informacji na temat wzmacniania organizacji przed wyłudzaniem informacji, spamem, naruszeniami danych i innymi zagrożeniami, zobacz [Top 10 ways to secure Microsoft 365 for business plans (10 najlepszych sposobów zabezpieczania Microsoft 365 dla planów biznesowych](../../admin/security-and-compliance/secure-your-business-data.md)).
+Aby uzyskać więcej informacji na temat wzmacniania organizacji przed wyłudzaniem informacji, spamem, naruszeniami danych i innymi zagrożeniami, zobacz [Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla planów biznesowych](../../admin/security-and-compliance/secure-your-business-data.md).

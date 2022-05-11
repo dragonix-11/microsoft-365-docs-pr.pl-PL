@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Dowiedz się, jak sprawdzić, czy ustawienia ochrony aplikacji Microsoft 365 dla firm weszły w życie na urządzeniach Windows 10 użytkowników.
-ms.openlocfilehash: c107741d87c63472310352b58872ec0b6ecc1d4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cbb26461da9fcc73f57d219c36ef04d97e7fc209
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090668"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317558"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Weryfikowanie ustawień ochrony urządzeń dla komputerów Windows 10
 
@@ -67,5 +67,5 @@ Po [skonfigurowaniu zasad urządzeń](../../business-premium/m365bp-protection-s
 
 [Microsoft 365 dokumentacji i zasobów biznesowych](/admin)
 
-[Ustawianie konfiguracji urządzeń dla komputerów Windows 10](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
- [10 sposobów zabezpieczania Microsoft 365 dla planów biznesowych](../../admin/security-and-compliance/secure-your-business-data.md)
+[Ustawianie konfiguracji urządzeń dla Windows 10 rozwiązań PCsBest](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
+ [dotyczących zabezpieczania Microsoft 365 dla planów biznesowych](../../admin/security-and-compliance/secure-your-business-data.md)

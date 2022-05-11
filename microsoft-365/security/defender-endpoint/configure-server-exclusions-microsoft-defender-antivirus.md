@@ -14,14 +14,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/04/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 487c253adc422d69be5ce011ffef1fc1a014474b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 890be814be75c303aa42feb5cb7a16cb4f5c3bd9
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789783"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320645"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Konfigurowanie wykluczeń Program antywirusowy Microsoft Defender na serwerze Windows
 
@@ -42,12 +41,12 @@ Oprócz automatycznych wykluczeń zdefiniowanych przez rolę serwera można doda
 
 ## <a name="a-few-points-to-keep-in-mind"></a>Należy pamiętać o kilku kwestiach
 
-Należy pamiętać o następujących ważnych kwestiach:
-
 - Wykluczenia niestandardowe mają pierwszeństwo przed automatycznymi wykluczeniami.
-- Automatyczne wykluczenia mają zastosowanie tylko do skanowania ochrony w czasie rzeczywistym (RTP). Automatyczne wykluczenia nie są uwzględniane podczas pełnego, szybkiego lub na żądanie skanowania.
+- Automatyczne wykluczenia mają zastosowanie tylko do skanowania [ochrony w czasie rzeczywistym (RTP](configure-protection-features-microsoft-defender-antivirus.md) ). 
+- Automatyczne wykluczenia nie są uwzględniane podczas [pełnego, szybkiego lub na żądanie skanowania](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 - Wykluczenia niestandardowe i zduplikowane nie powodują konfliktu z automatycznymi wykluczeniami.
 - Program antywirusowy Microsoft Defender używa narzędzi do obsługi i zarządzania obrazami wdrożenia (DISM) w celu określenia, które role są zainstalowane na komputerze.
+- Należy ustawić odpowiednie wykluczenia dla oprogramowania, które nie jest dołączone do systemu operacyjnego.
 - Windows Server 2012 R2 nie ma Program antywirusowy Microsoft Defender jako funkcji instalowania. Po dołączeniu tych serwerów do usługi Defender for Endpoint zainstalujesz Program antywirusowy Windows Defender i zostaną zastosowane domyślne wykluczenia dla plików systemu operacyjnego. Jednak wykluczenia dla ról serwera (jak określono poniżej) nie są stosowane automatycznie i należy odpowiednio skonfigurować te wykluczenia. Aby dowiedzieć się więcej, zobacz [Dołączanie serwerów Windows do usługi Ochrona punktu końcowego w usłudze Microsoft Defender](configure-server-endpoints.md).
 
 Ten artykuł zawiera omówienie wykluczeń dla Program antywirusowy Microsoft Defender Windows Server 2016 lub nowszych.
@@ -55,8 +54,6 @@ Ten artykuł zawiera omówienie wykluczeń dla Program antywirusowy Microsoft De
 Ponieważ Program antywirusowy Microsoft Defender jest wbudowana w Windows Server 2016 i później, wykluczenia plików systemu operacyjnego i ról serwera są automatycznie wykonywane. Można jednak zdefiniować wykluczenia niestandardowe. W razie potrzeby możesz również zrezygnować z automatycznych wykluczeń.
 
 Ten artykuł zawiera następujące sekcje:
-
-<br/><br/>
 
 |Sekcji|Opis|
 |---|---|
@@ -87,8 +84,9 @@ Poniższe sekcje zawierają wykluczenia dostarczane ze ścieżkami plików i typ
 
 Ta sekcja zawiera listę domyślnych wykluczeń dla wszystkich ról w Windows Server 2016, Windows Server 2019 i Windows Server 2022.
 
-> [!NOTE]
-> Lokalizacje domyślne mogą być inne niż wymienione w tym artykule.
+> [!IMPORTANT]
+> - Lokalizacje domyślne mogą być inne niż lokalizacje opisane w tym artykule.
+> - Aby ustawić wykluczenia dla oprogramowania, które nie jest uwzględnione jako funkcja Windows lub rola serwera, zapoznaj się z dokumentacją producenta oprogramowania.
 
 ##### <a name="windows-tempedb-files"></a>Windows plików "temp.edb"
 
@@ -171,8 +169,6 @@ Ta sekcja zawiera listę domyślnych wykluczeń dla wszystkich ról w Windows Se
 ##### <a name="hyper-v-exclusions"></a>Wykluczenia funkcji Hyper-V
 
 Poniższa tabela zawiera listę wykluczeń typów plików, wykluczeń folderów i wykluczeń procesów, które są dostarczane automatycznie podczas instalowania roli funkcji Hyper-V.
-
-<br><br/>
 
 |Typ wykluczenia|Specyfiki|
 |---|---|
@@ -381,14 +377,14 @@ W razie potrzeby można dodawać lub usuwać wykluczenia niestandardowe. Aby to 
 - [Konfigurowanie i weryfikowanie wykluczeń dla plików otwieranych przez procesy](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> Jeśli szukasz powiązanych informacji dotyczących programu antywirusowego dla innych platform, zobacz:
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 

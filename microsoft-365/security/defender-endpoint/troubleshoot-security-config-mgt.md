@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: e7b9e757f15663338f2e12c645cc3cb0b63ef34b
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 958c58fab875ce86b0a3290450e2cf17c4b75a44
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302250"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320502"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Rozwiązywanie problemów z dołączaniem związanych z usługą Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -108,7 +108,7 @@ Na przykład w ramach przepływu dołączania usługi Security Management jest w
 
 ## <a name="general-troubleshooting"></a>Ogólne rozwiązywanie problemów
 
-Jeśli nie możesz zidentyfikować dołączonego urządzenia w AAD lub MEM i nie wystąpił błąd podczas rejestracji, sprawdzenie klucza `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` rejestru może dostarczyć dodatkowych informacji dotyczących rozwiązywania problemów.
+Jeśli nie możesz zidentyfikować dołączonego urządzenia w usłudze AAD lub MEM i nie wystąpił błąd podczas rejestracji, sprawdzenie klucza `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` rejestru może dostarczyć dodatkowych informacji dotyczących rozwiązywania problemów.
 
 :::image type="content" source="images/enrollment-status.png" alt-text="Strona ze stanem rejestracji" lightbox="images/enrollment-status.png":::
 
@@ -120,14 +120,14 @@ W poniższej tabeli wymieniono błędy i wskazówki dotyczące tego, co należy 
 
 |Kod błędu|Stan rejestracji|Akcje administratora|
 |---|---|---|
-|`5-9`,`11-12`, `26-33`|Błąd ogólny|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń. Może to być spowodowane tym, że urządzenie nie spełnia [wymagań wstępnych dotyczących kanału zarządzania Ochrona punktu końcowego w usłudze Microsoft Defender](security-config-management.md). Uruchomienie [analizatora klienta](https://aka.ms/BetaMDEAnalyzer) na urządzeniu może pomóc w zidentyfikowaniu głównej przyczyny problemu. Jeśli to nie pomoże, skontaktuj się z pomocą techniczną.|
+|`5-7`, `9`, `11-12`, `26-33`|Błąd ogólny|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń. Może to być spowodowane tym, że urządzenie nie spełnia [wymagań wstępnych dotyczących kanału zarządzania Ochrona punktu końcowego w usłudze Microsoft Defender](security-config-management.md). Uruchomienie [analizatora klienta](https://aka.ms/BetaMDEAnalyzer) na urządzeniu może pomóc w zidentyfikowaniu głównej przyczyny problemu. Jeśli to nie pomoże, skontaktuj się z pomocą techniczną.|
+| `8`, `44` | problem z konfiguracją Microsoft Endpoint Manager | Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Jednak Microsoft Endpoint Manager nie został skonfigurowany za pośrednictwem Centrum administracyjnego, aby umożliwić Ochrona punktu końcowego w usłudze Microsoft Defender konfiguracji zabezpieczeń. Upewnij się, że [dzierżawa Microsoft Endpoint Manager jest skonfigurowana, a funkcja jest włączona](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
 |`13-14`,`20`,`24`,`25`|Problem z łącznością|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń, który może być spowodowany problemem z łącznością. Sprawdź, czy [punkty końcowe Azure Active Directory i Microsoft Endpoint Manager](security-config-management.md#connectivity-requirements) są otwierane w zaporze.|
 |`10`,`42`|Ogólny błąd sprzężenia hybrydowego|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń i system operacyjny nie mógł wykonać sprzężenia hybrydowego. [Rozwiązywanie problemów z hybrydowymi urządzeniami przyłączonymi do Azure Active Directory](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) w celu rozwiązywania problemów z błędami przyłączania hybrydowego na poziomie systemu operacyjnego.|
 |`15`|Niezgodność dzierżawy|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń, ponieważ identyfikator dzierżawy Ochrona punktu końcowego w usłudze Microsoft Defender jest niezgodny z identyfikatorem dzierżawy Azure Active Directory. Upewnij się, że identyfikator dzierżawy Azure Active Directory z dzierżawy usługi Defender for Endpoint jest zgodny z identyfikatorem dzierżawy we wpisie SCP domeny. Aby uzyskać więcej informacji, [rozwiąż problemy z dołączaniem związane z usługą Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender](troubleshoot-security-config-mgt.md).|
-|`16`,`17`|Błąd hybrydowy — punkt połączenia usługi|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Jednak rekord punktu połączenia usługi (SCP) nie jest poprawnie skonfigurowany i nie można przyłączyć urządzenia do Azure AD. Może to być spowodowane tym, że protokół SCP został skonfigurowany do dołączania Enterprise usługi DRS. Upewnij się, że punkty rekordu SCP AAD i SCP zostały skonfigurowane zgodnie z najlepszymi rozwiązaniami. Aby uzyskać więcej informacji, zobacz [Konfigurowanie punktu połączenia usługi](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point).|
+|`16`,`17`|Błąd hybrydowy — punkt połączenia usługi|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Jednak rekord punktu połączenia usługi (SCP) nie jest poprawnie skonfigurowany i nie można przyłączyć urządzenia do Azure AD. Może to być spowodowane tym, że protokół SCP został skonfigurowany do dołączania Enterprise usługi DRS. Upewnij się, że rekord SCP wskazuje usługę AAD i protokół SCP zgodnie z najlepszymi rozwiązaniami. Aby uzyskać więcej informacji, zobacz [Konfigurowanie punktu połączenia usługi](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point).|
 |`18`|Błąd certyfikatu|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń z powodu błędu certyfikatu urządzenia. Certyfikat urządzenia należy do innej dzierżawy. Sprawdź, czy podczas tworzenia [profilów zaufanych certyfikatów](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles) są stosowane najlepsze rozwiązania.|
-|`36`|Błąd interfejsu API LDAP|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń z powodu błędnej konfiguracji w AAD Połączenie. Aby określić, co uniemożliwia zarejestrowanie urządzenia w AAD, rozważ uruchomienie [narzędzia do rozwiązywania problemów z rejestracją urządzeń](/samples/azure-samples/dsregtool/dsregtool). W przypadku Windows Server 2012 R2 uruchom [dedykowane instrukcje rozwiązywania problemów](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy).  |
-|`37`|Problem z synchronizacją lokalną|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń z powodu błędnej konfiguracji w AAD Połączenie. Aby określić, co uniemożliwia zarejestrowanie urządzenia w AAD, rozważ uruchomienie [narzędzia do rozwiązywania problemów z rejestracją urządzeń](/samples/azure-samples/dsregtool/dsregtool). W przypadku Windows Server 2012 R2 uruchom [dedykowane instrukcje rozwiązywania problemów](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy). |
+|`36` , `37`| Błędna konfiguracja Połączenie usługi AAD |Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń z powodu błędnej konfiguracji w usłudze AAD Połączenie. Aby zidentyfikować, co uniemożliwia rejestrowanie urządzenia w usłudze AAD, rozważ uruchomienie [narzędzia do rozwiązywania problemów z rejestracją urządzeń](/samples/azure-samples/dsregtool/dsregtool). W przypadku Windows Server 2012 R2 uruchom [dedykowane instrukcje rozwiązywania problemów](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy).  |
 |`38`,`41`|Błąd DNS|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń z powodu błędu DNS. Sprawdź ustawienia połączenia internetowego i/lub DNS na urządzeniu. Nieprawidłowe ustawienia DNS mogą znajdować się po stronie stacji roboczej. Usługa Active Directory wymaga użycia domeny DNS do prawidłowego działania (a nie adresu routera). Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z dołączaniem związanych z usługą Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender](troubleshoot-security-config-mgt.md).|
 |`40`|Problem z synchronizacją zegara|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń. Sprawdź, czy zegar jest ustawiony poprawnie i jest synchronizowany na urządzeniu, na którym występuje błąd.|
 
@@ -141,14 +141,14 @@ Zobacz poniżej, aby zapoznać się z typowym błędem w dzienniku AADRT i jak g
 
 :::image type="content" source="images/event-properties.png" alt-text="Strona właściwości zdarzenia" lightbox="images/event-properties.png":::
 
-Z informacji zawartych w komunikacie można w większości przypadków zrozumieć, jaki błąd wystąpił, jaki interfejs API Win32 zwrócił błąd (jeśli ma zastosowanie), jaki adres URL (jeśli ma zastosowanie) został użyty i jakie AAD napotkano błąd interfejsu API środowiska uruchomieniowego.
+Z informacji zawartych w komunikacie można w większości przypadków zrozumieć, jaki błąd wystąpił, jaki interfejs API Win32 zwrócił błąd (jeśli ma zastosowanie), jaki adres URL (jeśli ma zastosowanie) został użyty i jaki błąd interfejsu API środowiska uruchomieniowego usługi AAD został napotkany.
 
-## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>Instrukcje dotyczące stosowania reguły przyłączania do komputera w AAD Połączenie
+## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>Instrukcje dotyczące stosowania reguły dołączania do komputera w usłudze AAD Połączenie
 
 W przypadku usługi Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender na komputerach przyłączonych do domeny Windows Server 2012 R2 wymagana jest aktualizacja reguły synchronizacji Azure AD Połączenie "In from AD-Computer Join". Można to osiągnąć, klonując i modyfikując regułę, co spowoduje wyłączenie oryginalnej reguły "In from AD - Computer Join". Azure AD Połączenie domyślnie oferuje to środowisko do wprowadzania zmian w regułach wbudowanych.
 
 > [!NOTE]
->Te zmiany należy zastosować na serwerze, na którym działa AAD Połączenie. Jeśli wdrożono wiele wystąpień AAD Połączenie, te zmiany muszą być stosowane do wszystkich wystąpień.
+>Te zmiany należy zastosować na serwerze, na którym działa usługa AAD Połączenie. Jeśli wdrożono wiele wystąpień usługi AAD Połączenie, te zmiany muszą być stosowane do wszystkich wystąpień.
 
 1. Otwórz aplikację Edytor reguł synchronizacji z menu Start. Na liście reguł znajdź regułę o nazwie **In z usługi AD — przyłączanie do komputera**. **Zanotuj wartość w kolumnie "Pierwszeństwo" dla tej reguły.**
 
