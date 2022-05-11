@@ -577,6 +577,8 @@
   items:
     - name: Zarządzaj swoimi danymi
       href: manage-data-governance.md
+    - name: Wdrażanie rozwiązania do zarządzania danymi
+      href: data-governance-solution.md
     - name: Omówienie zachowywania i usuwania danych
       items:
         - name: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
