@@ -76,6 +76,16 @@
           href: m365bp-managed-devices-setup.md
         - name: Dołączanie zarejestrowanych urządzeń i stosowanie zasad
           href: m365bp-onboard-devices-mdb.md
+        - name: "Ochrona urządzeń z\_systemem Windows"
+          items:
+            - name: "Ustawienia ochrony dla urządzeń z\_systemem Windows\_10"
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: "Zabezpieczanie urządzeń z\_systemem Windows"
+              href: m365bp-secure-windows-devices.md
+            - name: "Zarządzanie urządzeniami z\_systemem Windows"
+              href: m365bp-manage-windows-devices.md
+            - name: Przygotowywanie do wdrożenia klienta pakietu Office
+              href: m365bp-prepare-for-office-client-deployment.md
         - name: Przeglądanie i edytowanie zasad urządzeń
           href: m365bp-view-edit-create-mdb-policies.md
         - name: Zarządzanie grupami urządzeń
@@ -108,6 +118,20 @@
       href: microsoft-365-business-faqs.yml
     - name: Zawartość administratora platformy Microsoft 365
       href: /microsoft-365/admin/
+    - name: Konfigurowanie rozwiązania Autopilot
+      items:
+        - name: Dodawanie urządzeń i profilu rozwiązania Autopilot
+          href: m365bp-add-autopilot-devices-and-profile.md
+        - name: Ustawienia profilu rozwiązania Autopilot
+          href: m365bp-autopilot-profile-settings.md
+        - name: Tworzenie i edytowanie profilów rozwiązania AutoPilot
+          href: m365bp-create-and-edit-autopilot-devices.md
+    - name: "Ustawienia ochrony aplikacji dla systemów Android i\_iOS"
+      href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: "Mapowanie funkcji ochrony z\_ustawieniami usługi Intune"
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Konfigurowanie Menedżera zgodności
+      href: m365bp-set-up-compliance.md
     - name: Microsoft Defender dla Firm
       href: ../security/defender-business/index.yml
     - name: Ochrona usługi Office 365 w usłudze Microsoft Defender
