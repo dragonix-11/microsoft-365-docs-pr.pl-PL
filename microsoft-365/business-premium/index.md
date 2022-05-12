@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Dowiedz się, jak zaimplementować cyberbezpieczeństwo w małych lub średnich firmach przy użyciu platformy Microsoft 365 Business Premium. Możliwości i funkcje cyberbezpieczeństwa są zoptymalizowane pod kątem zapobiegania cyberatakom i naruszeniom zabezpieczeń oraz pomagają chronić dane, urządzenia i informacje za pomocą wysokiej jakości cyberzabezpieczeń.
-ms.openlocfilehash: ac152ca67e7bdf62931b64e008669ca60b0a8031
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d6ffd452e04c755fd60fcf7cad0d228005c5510
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100043"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320099"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; cyberbezpieczeństwo dla małych firm
 
@@ -44,15 +44,15 @@ Kliknij poniższe karty, aby dowiedzieć się więcej o każdej misji i sposobie
 
 Podczas tych pierwszych misji zaloguj się i skonfiguruj pierwsze linie obrony, zaczynając od ochrony dostępu do konta.
 
-[**Konfigurowanie środowiska**](m365bp-setup-overview.md). Ta misja wymaga skonfigurowania i zaimplementowania zabezpieczeń na wszystkich kontach w systemie.
+[**Konfiguracja środowiska**](m365bp-setup-overview.md). Ta misja wymaga skonfigurowania i zaimplementowania zabezpieczeń na wszystkich kontach w systemie.
 
-[**Zwiększanie ochrony zabezpieczeń**](m365bp-security-overview.md). Skonfiguruj krytyczne zabezpieczenia pierwszej linii, aby zapobiec cyberatakom.
+[**Zwiększenie ochrony przed zagrożeniami cybernetycznymi**](m365bp-security-overview.md). Skonfiguruj krytyczne środki bezpieczeństwa frontonu, aby zapobiec cyberatakom.
 
 [:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premium chroni Twoje aplikacje, magazyn plików, pocztę e-mail, urządzenia i tożsamości.":::](m365bp-setup-overview.md)
 
 ## <a name="cybersecurity-playbook"></a>Podręcznik cyberbezpieczeństwa
 
-Wskazówki zawarte w tych misjach ułatwią Twojej firmie osiągnięcie celów opisanych w podręczniku Harvard Kennedy School [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). Podsumowanie jest dostępne do pobrania.
+Wskazówki zawarte w tych misjach ułatwią Twojej firmie osiągnięcie celów opisanych w podręczniku [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598) wydanym przez Harvard Kennedy School. Podsumowanie jest dostępne do pobrania.
 
 Kliknij infografikę, aby wyświetlić większą wersję, lub [Pobierz kopię plakatu podręcznika cyberbezpieczeństwa](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
@@ -75,17 +75,17 @@ Teraz [wzmocnij swoje środowisko przed cyberatakami](m365bp-setup-overview.md)!
 
 W tym miejscu zawarliśmy zestaw misji z celami, które muszą zostać ukończone przez Twój zespół. Upewnij się, że urządzenia zespołu są chronione, a także że zespół jest przeszkolony do bezpiecznego korzystania z poczty e-mail i udostępniania plików oraz do rozpoznawania i zgłaszania zagrożeń.
 
-[**Konfigurowanie urządzeń BYOD**](m365bp-protect-pcs-macs.md). W ramach tej misji skonfigurujesz wszystkie urządzenia niezarządzane (BYOD), aby stały się bezpieczną częścią ekosystemu.
+[**Konfiguracja urządzeń BYOD**](m365bp-protect-pcs-macs.md)W ramach tej misji skonfigurujesz wszystkie urządzenia niezarządzane (BYOD), aby stały się bezpieczną częścią ekosystemu.
 
-[**Ochrona poczty e-mail**](m365bp-protect-email-overview.md). Wykonaj niezbędne kroki, aby chronić systemy poczty e-mail przed atakiem.
+[**Ochrona poczty e-mail**](m365bp-protect-email-overview.md)Wykonaj niezbędne kroki, aby chronić systemy poczty e-mail przed atakiem.
 
-[**Współpraca i bezpieczne udostępnianie**](m365bp-collaborate-share-securely.md). Cele tej misji wymagają skonfigurowania bezpiecznego udostępniania plików dla wszystkich członków organizacji.
+[**Bezpiecznie współpracuj i udostępniaj**](m365bp-collaborate-share-securely.md)Cele tej misji wymagają skonfigurowania bezpiecznego udostępniania plików dla wszystkich członków organizacji.
 
 [:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Microsoft 365 Business Premium chroni Twoje aplikacje, magazyn plików, pocztę e-mail, urządzenia i tożsamości.":::](m365bp-devices-overview.md)
 
 ## <a name="cybersecurity-playbook"></a>Podręcznik cyberbezpieczeństwa
 
-Wskazówki zawarte w tych misjach ułatwią Twojej firmie osiągnięcie celów opisanych w podręczniku Harvard Kennedy School [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). Podsumowanie jest dostępne do pobrania.
+Wskazówki zawarte w tych misjach ułatwią Twojej firmie osiągnięcie celów opisanych w podręczniku [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598) wydanym przez Harvard Kennedy School. Podsumowanie jest dostępne do pobrania.
 
 Kliknij infografikę, aby wyświetlić większą wersję, lub [Pobierz kopię plakatu podręcznika cyberbezpieczeństwa](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
@@ -106,15 +106,15 @@ Teraz [wzmocnij swoje środowisko przed cyberatakami](m365bp-setup-overview.md)!
 
 ## <a name="safeguard-managed-devices"></a>[**Zabezpieczanie urządzeń zarządzanych**](#tab/Safeguard)
 
-Bezpieczne urządzenie to takie, które jest monitorowane przez organizację. W tej ostatniej misji krytycznej dołączasz i rejestrujesz urządzenia w usłudze Microsoft Defender dla Firm, aby były one zabezpieczone i chronione przy użyciu najlepszych dostępnych narzędzi.
+Bezpieczne urządzenie jest monitorowane przez organizację. W tej ostatniej misji krytycznej dołączasz i rejestrujesz urządzenia w usłudze Microsoft Defender dla Firm, aby były one zabezpieczone i chronione przy użyciu najlepszych dostępnych narzędzi.
 
-[**Konfigurowanie i zabezpieczanie urządzeń zarządzanych**](m365bp-protect-devices.md). Wykonaj kroki dotyczące zabezpieczenia tych urządzeń, aby były monitorowane i chronione przez organizację.
+[**Konfigurowanie i zabezpieczanie urządzeń zarządzanych**](m365bp-protect-devices.md). Wykonaj kroki, aby zabezpieczyć te urządzenia, aby były monitorowane i chronione przez organizację!
 
 [:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premium chroni Twoje aplikacje, magazyn plików, pocztę e-mail, urządzenia i tożsamości.":::](m365bp-protect-devices.md)
 
 ## <a name="cybersecurity-playbook"></a>Podręcznik cyberbezpieczeństwa
 
-Wskazówki zawarte w tych misjach ułatwią Twojej firmie osiągnięcie celów opisanych w podręczniku Harvard Kennedy School [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). Podsumowanie jest dostępne do pobrania.
+Wskazówki zawarte w tych misjach ułatwią Twojej firmie osiągnięcie celów opisanych w podręczniku [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598) wydanym przez Harvard Kennedy School. Podsumowanie jest dostępne do pobrania.
 
 Kliknij infografikę, aby wyświetlić większą wersję, lub [Pobierz kopię plakatu podręcznika cyberbezpieczeństwa](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
