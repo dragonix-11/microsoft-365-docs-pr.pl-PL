@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a3d7548dc71c3a9d588d2a77fae5c4ed71f139f4
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 629d475c160d5836d155ca0374630ad64b0928b4
+ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302322"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65372026"
 ---
 # <a name="enable-corelight-data-integration"></a>Włącz integrację danych Corelight
 
@@ -67,7 +67,7 @@ Aby włączyć integrację z rozwiązaniem Corelight, należy wykonać następuj
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>Krok 3. Konfigurowanie urządzenia Corelight w celu wysyłania danych do Microsoft 365 Defender
 
 > [!NOTE]
-> Integracja jest dostępna w oprogramowaniu Corelight Sensor w wersji 24 lub nowszej.
+> Integracja jest dostępna w oprogramowaniu Corelight Sensor w wersji 25 lub nowszej.
 > 
 > Aby rozwiązanie działało, potrzebna będzie łączność z Internetem, aby czujnik dotarł zarówno do usług w chmurze Defender, jak i Corelight.
 
