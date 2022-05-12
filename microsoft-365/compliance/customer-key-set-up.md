@@ -11,19 +11,21 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Dowiedz się, jak skonfigurować klucz klienta dla Microsoft 365.
-ms.openlocfilehash: 38b8a73a1c4654e1922f4f8e4600727a978af431
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Dowiedz się, jak skonfigurować klucz klienta.
+ms.openlocfilehash: 42c89c23f823f5f4297f31308516888633a1c06c
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759971"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363175"
 ---
 # <a name="set-up-customer-key"></a>Konfigurowanie klucza klienta
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Klucz klienta umożliwia kontrolowanie kluczy szyfrowania organizacji, a następnie konfigurowanie Microsoft 365 do szyfrowania danych magazynowanych w centrach danych firmy Microsoft. Innymi słowy, klucz klienta umożliwia klientom dodawanie warstwy szyfrowania, która należy do nich wraz z kluczami.
 
-Skonfiguruj platformę Azure przed użyciem klucza klienta dla Office 365. W tym artykule opisano kroki, które należy wykonać, aby utworzyć i skonfigurować wymagane zasoby platformy Azure, a następnie przedstawiono kroki konfigurowania klucza klienta w Office 365. Po skonfigurowaniu platformy Azure należy określić, które zasady, a w związku z tym, które klucze należy przypisać do szyfrowania danych w różnych obciążeniach Microsoft 365 w organizacji. Aby uzyskać więcej informacji na temat klucza klienta lub ogólne omówienie, zobacz [Szyfrowanie usługi za pomocą klucza klienta w Office 365](customer-key-overview.md).
+Skonfiguruj platformę Azure przed użyciem klucza klienta. W tym artykule opisano kroki, które należy wykonać, aby utworzyć i skonfigurować wymagane zasoby platformy Azure, a następnie przedstawiono kroki konfigurowania klucza klienta. Po skonfigurowaniu platformy Azure należy określić, które zasady, a w związku z tym, które klucze należy przypisać do szyfrowania danych w różnych obciążeniach Microsoft 365 w organizacji. Aby uzyskać więcej informacji na temat klucza klienta lub ogólne omówienie, zobacz [Szyfrowanie usługi za pomocą Microsoft Purview Klucz klienta](customer-key-overview.md).
   
 > [!IMPORTANT]
 > Zdecydowanie zalecamy stosowanie najlepszych rozwiązań w tym artykule. Są one wywoływane jako **PORADA** i **WAŻNE**. Klucz klienta zapewnia kontrolę nad głównymi kluczami szyfrowania, których zakres może być tak duży, jak cała organizacja. Oznacza to, że błędy popełniane przy użyciu tych kluczy mogą mieć duży wpływ i mogą powodować przerwy w świadczeniu usług lub nieodwołalną utratę danych.
@@ -43,7 +45,7 @@ Przed rozpoczęciem upewnij się, że masz odpowiednie subskrypcje platformy Azu
 
 Istniejące licencje Office 365 Advanced Compliance będą nadal obsługiwane.
 
-Aby zrozumieć pojęcia i procedury opisane w tym artykule, zapoznaj się z dokumentacją [usługi Azure Key Vault](/azure/key-vault/). Zapoznaj się również z terminami używanymi na platformie Azure, na przykład [z dzierżawą usługi Azure AD](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Aby zrozumieć pojęcia i procedury opisane w tym artykule, zapoznaj się z dokumentacją [usługi Azure Key Vault](/azure/key-vault/). Zapoznaj się również z terminami używanymi na platformie Azure, na przykład [Azure AD dzierżawy](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
   
 Jeśli potrzebujesz większej pomocy technicznej poza dokumentacją, skontaktuj się z firmą Microsoft Consulting Services (MCS), Premier Field Engineering (PFE) lub z partnerem firmy Microsoft w celu uzyskania pomocy. Aby przekazać opinię na temat klucza klienta, w tym dokumentację, wyślij swoje pomysły, sugestie i perspektywy do customerkeyfeedback@microsoft.com.
   
@@ -86,7 +88,7 @@ Wykonaj te zadania na platformie Azure Key Vault. Należy wykonać te kroki dla 
   
 ### <a name="create-two-new-azure-subscriptions"></a>Tworzenie dwóch nowych subskrypcji platformy Azure
 
-Klucz klienta wymaga dwóch subskrypcji platformy Azure. Najlepszym rozwiązaniem jest, aby firma Microsoft zaleca tworzenie nowych subskrypcji platformy Azure do użycia z kluczem klienta. Klucze usługi Azure Key Vault mogą być autoryzowane tylko dla aplikacji w tej samej dzierżawie Azure Active Directory (Microsoft Azure Active Directory), należy utworzyć nowe subskrypcje przy użyciu tej samej dzierżawy usługi Azure AD używanej w organizacji, do której zostaną przypisane adresy IP. Na przykład przy użyciu konta służbowego, które ma uprawnienia administratora globalnego w organizacji. Aby uzyskać szczegółowe instrukcje, zobacz [Tworzenie konta na platformie Azure jako organizacja](/azure/active-directory/fundamentals/sign-up-organization).
+Klucz klienta wymaga dwóch subskrypcji platformy Azure. Najlepszym rozwiązaniem jest, aby firma Microsoft zaleca tworzenie nowych subskrypcji platformy Azure do użycia z kluczem klienta. Klucze usługi Azure Key Vault mogą być autoryzowane tylko dla aplikacji w tej samej dzierżawie Azure Active Directory (Microsoft Azure Active Directory), należy utworzyć nowe subskrypcje przy użyciu tej samej dzierżawy Azure AD używanej w organizacji, do której zostaną przypisane adresy IP. Na przykład przy użyciu konta służbowego, które ma uprawnienia administratora globalnego w organizacji. Aby uzyskać szczegółowe instrukcje, zobacz [Tworzenie konta na platformie Azure jako organizacja](/azure/active-directory/fundamentals/sign-up-organization).
   
 > [!IMPORTANT]
 > Klucz klienta wymaga dwóch kluczy dla każdej zasady szyfrowania danych (DEP). Aby to osiągnąć, należy utworzyć dwie subskrypcje platformy Azure. Najlepszym rozwiązaniem jest, aby firma Microsoft zaleca, aby w każdej subskrypcji członkowie organizacji konfigurowali jeden klucz. Należy używać tych subskrypcji platformy Azure tylko do administrowania kluczami szyfrowania dla Office 365. Chroni to organizację w przypadku przypadkowego, celowego lub złośliwego usunięcia lub niewłaściwego zarządzania kluczami, za które są odpowiedzialni przez jednego z operatorów.
@@ -144,7 +146,7 @@ Tymczasowa lub trwała utrata głównych kluczy szyfrowania może być destrukcy
 
 - Aby włączyć klucz klienta do przypisywania adresów IP do szyfrowania zawartości SharePoint Online i OneDrive dla Firm (w tym plików Teams) dla wszystkich użytkowników dzierżawy, skontaktuj się z [spock@microsoft.com](mailto:spock@microsoft.com).
 
-- Aby włączyć klucz klienta do przypisywania adresów IP do szyfrowania zawartości w wielu obciążeniach Microsoft 365 (Exchange Online, Teams, MIP EDM) dla wszystkich użytkowników dzierżawy, skontaktuj się z [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
+- Aby włączyć klucz klienta do przypisywania adresów IP do szyfrowania zawartości w wielu obciążeniach Microsoft 365 (Exchange Online, Teams, Microsoft Purview Information Protection) dla wszystkich użytkowników dzierżawy, skontaktuj się z [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
 - Dołącz następujące informacje do wiadomości e-mail:
 
@@ -232,7 +234,7 @@ W zależności od implementacji musisz zdefiniować trzy oddzielne zestawy upraw
    - *Nazwa magazynu* to nazwa utworzonego magazynu kluczy.
    - W przypadku Exchange Online i Skype dla firm zastąp *Office 365 identyfikatorem appID*`00000002-0000-0ff1-ce00-000000000000`
    - W przypadku plików SharePoint Online, OneDrive dla Firm i Teams zastąp *Office 365 identyfikatorem appID*`00000003-0000-0ff1-ce00-000000000000`
-   - W przypadku zasad obejmujących wiele obciążeń (Exchange, Teams, Microsoft Information Protection), które mają zastosowanie do wszystkich użytkowników dzierżawy, zastąp *Office 365 identyfikatorem appID*`c066d759-24ae-40e7-a56f-027002b5d3e4`
+   - W przypadku zasad obejmujących wiele obciążeń (Exchange, Teams, Microsoft Purview Information Protection), które mają zastosowanie do wszystkich użytkowników dzierżawy, zastąp *Office 365 identyfikatorem appID*`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   Przykład: ustawianie uprawnień dla Exchange Online i Skype dla firm:
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64b9c044a463e940b0d9862221ca854fe0eebfdc
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 6e112b6b386e0a2961119478aae7d4cb53138ccf
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182655"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363319"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
@@ -248,7 +248,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-Tena
 
 - Symbole wieloznaczne (*) są dozwolone w następujących scenariuszach:
 
-  - Po lewym symbolu wieloznacznym musi następować kropka określająca poddomenę.
+  - Po lewym symbolu wieloznacznym musi następować kropka określająca poddomenę. (dotyczy tylko bloków)
 
     Na przykład `*.contoso.com` jest dozwolone; `*contoso.com` jest niedozwolone.
 
@@ -265,8 +265,6 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-Tena
   - Lewy kafelek oznacza domenę i wszystkie poddomeny.
 
     Na przykład `~contoso.com` obejmuje `contoso.com` i `*.contoso.com`.
-
-- Wpisy adresów URL zawierające protokoły (na przykład `http://`, `https://`lub `ftp://`) nie powiedzie się, ponieważ wpisy adresu URL mają zastosowanie do wszystkich protokołów.
 
 - Nazwa użytkownika lub hasło nie są obsługiwane ani wymagane.
 
@@ -285,7 +283,6 @@ Prawidłowe wpisy adresów URL i ich wyniki są opisane w poniższych sekcjach.
 - **Zezwalaj na dopasowanie**: contoso.com
 
 - **Nie dopasuj zezwalaj**:
-
   - abc-contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -295,7 +292,6 @@ Prawidłowe wpisy adresów URL i ich wyniki są opisane w poniższych sekcjach.
   - www.contoso.com/q=a@contoso.com
 
 - **Blokuj dopasowanie**:
-
   - contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -308,15 +304,16 @@ Prawidłowe wpisy adresów URL i ich wyniki są opisane w poniższych sekcjach.
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Scenariusz: Symbol wieloznaczny z lewej (poddomena)
 
+> [!NOTE]
+> Ten scenariusz dotyczy tylko bloków.
+
 **Wpis**: `*.contoso.com`
 
-- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
-
+- **Blokuj dopasowanie**:
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Nie dopasuj opcji Zezwalaj** i **Blokuj nie dopasuj**:
-
+- **Blok nie jest dopasowany**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -327,13 +324,11 @@ Prawidłowe wpisy adresów URL i ich wyniki są opisane w poniższych sekcjach.
 **Wpis**: `contoso.com/a/*`
 
 - **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
-
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
 - **Nie dopasuj opcji Zezwalaj** i **Blokuj nie dopasuj**:
-
   - contoso.com
   - contoso.com/a
   - www.contoso.com
@@ -344,13 +339,11 @@ Prawidłowe wpisy adresów URL i ich wyniki są opisane w poniższych sekcjach.
 **Wpis**: `~contoso.com`
 
 - **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
-
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Nie dopasuj opcji Zezwalaj** i **Blokuj nie dopasuj**:
-
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -360,7 +353,6 @@ Prawidłowe wpisy adresów URL i ich wyniki są opisane w poniższych sekcjach.
 **Wpis**: `contoso.com/*`
 
 - **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
-
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
@@ -373,17 +365,19 @@ Prawidłowe wpisy adresów URL i ich wyniki są opisane w poniższych sekcjach.
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Scenariusz: Lewa poddomena wieloznaczna i sufiks z prawej symboli wieloznaczowych
 
+> [!NOTE]
+> Ten scenariusz dotyczy tylko bloków.
+
 **Wpis**: `*.contoso.com/*`
 
-- **Zezwalaj na dopasowanie** i **blokuj dopasowanie**:
-
+- **Blokuj dopasowanie**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Pozycja Zezwalaj nie jest dopasowana** i **Blokuj nie jest dopasowana**: contoso.com/b
+- **Nie dopasowano bloku**: contoso.com/b
 
 #### <a name="scenario-left-and-right-tilde"></a>Scenariusz: lewy i prawy kafelek
 

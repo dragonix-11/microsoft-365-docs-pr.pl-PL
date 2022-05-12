@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d37723e45c5c4049e913422b2500b74d36c701eb
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789717"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363270"
 ---
 # <a name="turn-on-network-protection"></a>Wyłącz ochronę sieci
 
@@ -38,7 +38,7 @@ ms.locfileid: "64789717"
 > [!TIP]
 > Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Ochrona sieci](network-protection.md) pomaga uniemożliwić pracownikom korzystanie z dowolnej aplikacji w celu uzyskania dostępu do niebezpiecznych domen, które mogą hostować wyłudzanie informacji, luki w zabezpieczeniach i inne złośliwe treści w Internecie. Ochronę [sieci można przeprowadzać](evaluate-network-protection.md) w środowisku testowym, aby wyświetlić, które aplikacje zostaną zablokowane przed jej włączeniem.
+[Ochrona sieci](network-protection.md) pomaga uniemożliwić pracownikom korzystanie z dowolnej aplikacji w celu uzyskania dostępu do niebezpiecznych domen, które mogą hostować wyłudzanie informacji, luki w zabezpieczeniach i inne złośliwe treści w Internecie. Ochronę [sieci można przeprowadzać](evaluate-network-protection.md) w środowisku testowym, aby sprawdzić, które aplikacje zostaną zablokowane przed włączeniem ochrony sieci.
 
 [Dowiedz się więcej o opcjach konfiguracji filtrowania sieci.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
@@ -140,27 +140,19 @@ Poniższa procedura umożliwia włączenie ochrony sieci na komputerach przyłą
    > [!IMPORTANT]
    > Aby w pełni włączyć ochronę sieci, należy ustawić opcję zasady grupy **włączone**, a także wybrać pozycję **Blokuj** w menu rozwijanym opcje.
 
-Upewnij się, że ochrona sieci jest włączona na komputerze lokalnym przy użyciu edytora rejestru:
-
-1. Wybierz pozycję **Start** i wpisz **regedit** , aby otworzyć **Edytor rejestru**.
-
-2. Przejdź do **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
-
-3. Wybierz pozycję **EnableNetworkProtection** i potwierdź wartość:
-   - 0=Wył.
-   - 1=Wł.
-   - 2=Inspekcja
+   > [!NOTE]
+   > Opcjonalnie: wykonaj kroki opisane w temacie [Sprawdzanie, czy włączono ochronę sieci](#check-if-network-protection-is-enabled), aby sprawdzić, czy ustawienia zasady grupy są poprawne.
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
 1. Otwórz konsolę Configuration Manager.
 
-2. Przejdź do **obszaru Zasoby i zgodność** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**. 
+2. Przejdź do **obszaru Zasoby i zgodność** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**.
 
 3. Wybierz pozycję **Utwórz zasady funkcji Exploit Guard** na wstążce, aby utworzyć nowe zasady.
    - Aby edytować istniejące zasady, wybierz zasady, a następnie wybierz pozycję **Właściwości** na wstążce lub w menu kliknij prawym przyciskiem myszy. **Edytuj opcję Konfiguruj ochronę sieci** na karcie **Ochrona sieci**.  
 
-4. Na stronie **Ogólne** określ nazwę nowych zasad i sprawdź, czy opcja **Ochrona sieci** jest włączona. 
+4. Na stronie **Ogólne** określ nazwę nowych zasad i sprawdź, czy opcja **Ochrona sieci** jest włączona.
 
 5. Na stronie **Ochrona sieci** wybierz jedno z następujących ustawień opcji **Konfiguruj ochronę sieci** :
    - **Blokuj**

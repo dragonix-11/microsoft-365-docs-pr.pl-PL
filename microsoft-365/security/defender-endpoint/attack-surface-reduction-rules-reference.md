@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 2f76a8ec53d6f7c809ed9f6612f2c8abf7388d1b
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 48fbef36720d295dabbf640944e64900633f1fe2
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294783"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363065"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Dokumentacja reguł zmniejszania obszaru podatnego na ataki
 
@@ -58,28 +58,30 @@ Poniższa tabela zawiera listę obsługiwanych systemów operacyjnych dla reguł
 >
 > Reguły zmniejszania obszaru ataków w Windows&nbsp; Server2012R2&nbsp;&nbsp; i Windows&nbsp; Server2016&nbsp; są dostępne dla urządzeń dołączonych przy użyciu nowoczesnego ujednoliconego pakietu rozwiązań. Aby uzyskać więcej informacji, zobacz [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview (Nowe funkcje w nowoczesnym ujednoliconym rozwiązaniu dla Windows Server 2012 R2 i 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)).
 
-| Nazwa reguły| &nbsp;Windows 11 <br>i<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>i<br>  &nbsp;Windows Server <br> 2019 | Serwer z systemem Windows | &nbsp;Windows Server <br> 2016 <br> <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp; <br> <sup>[[1, 2](#fn1)]<sup></sup> |
+| Nazwa reguły| &nbsp;Windows 11 <br>i<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>i<br>  &nbsp;Windows Server <br> 2019 | Serwer z systemem Windows | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T | T <br> wersja 1803 (półroczny kanał) lub nowszy | T | T |
-| [Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | Wersja Y 1809 lub nowsza | T | T | T | T |
+| [Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | T <br> wersja 1809 lub nowsza <sup>[[3](#fn1)]<sup></sup> | T | T | T | T |
 | [Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office](#block-all-office-applications-from-creating-child-processes) | T | T | T | T | T |
-| [Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T <br> wersja 1803 lub nowsza | T | T | T | T |
+| [Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T <br> wersja 1803 lub nowsza <sup>[[3](#fn1)]<sup></sup> | T | T | T | T |
 | [Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) | T | T | T | T | T |
-| [Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | T <br> wersja 1803 lub nowsza | T | T | T | T |
+| [Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | T <br> wersja 1803 lub nowsza <sup>[[3](#fn1)]<sup></sup> | T | T | T | T |
 | [Blokuj wykonywanie potencjalnie zaciemnionych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T | T | T | T | T |
 | [Blokowanie uruchamiania pobranej zawartości wykonywalnej w języku JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | T | T | T | N | N |
 | [Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office](#block-office-applications-from-creating-executable-content) | T | T | T | T | T |
 | [Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  | T | T | T | T | T |
 | [Blokowanie tworzenia procesów podrzędnych przez aplikację komunikacji Office](#block-office-communication-application-from-creating-child-processes) | T | T | T | T | T |
-| [Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI](#block-persistence-through-wmi-event-subscription) <br> \*_Wykluczenia plików i folderów nie są obsługiwane._ | T <br> wersja 1903 (kompilacja 18362) lub nowsza | T | T <br> wersja 1903 (kompilacja 18362) lub nowsza | N | N |
-| [Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | T <br> wersja 1803 lub nowsza | T | T | T | T |
+| [Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI](#block-persistence-through-wmi-event-subscription) <br> \*_Wykluczenia plików i folderów nie są obsługiwane._ | T <br> wersja 1903 (kompilacja 18362) lub nowsza <sup>[[3](#fn1)]<sup></sup> | T | T <br> wersja 1903 (kompilacja 18362) lub nowsza | N | N |
+| [Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | T <br> wersja 1803 lub nowsza <sup>[[3](#fn1)]<sup></sup> | T | T | T | T |
 | [Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T | T | T | T | T |
 | [Blokuj wywołania interfejsu API Win32 z makr Office](#block-win32-api-calls-from-office-macros) | T | T | T | N | N |
-| [Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | T <br> wersja 1803 lub nowsza | T | T | T | T |
+| [Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | T <br> wersja 1803 lub nowsza <sup>[[3](#fn1)]<sup></sup> | T | T | T | T |
 
 (<a id="fn1">1</a>) Odnosi się do nowoczesnego ujednoliconego rozwiązania dla Windows Server 2012 i 2016 roku. Aby uzyskać więcej informacji, zobacz [Dołączanie serwerów Windows do usługi Defender for Endpoint](configure-server-endpoints.md).
 
 (<a id="fn1">2</a>) W przypadku Windows&nbsp; Server 2016 i Windows&nbsp; Server 2012R2&nbsp; minimalna wymagana wersja Microsoft Endpoint Configuration Manager to wersja 2111.
+
+(<a id="fn1">3</a>) Wersja i numer kompilacji mają zastosowanie tylko do Windows&nbsp; 10.
 
 ## <a name="supported-configuration-management-systems"></a>Obsługiwane systemy zarządzania konfiguracją
 
@@ -234,7 +236,7 @@ Zależności: MDAV
 
 Ta reguła uniemożliwia Office aplikacjom tworzenie procesów podrzędnych. aplikacje Office obejmują programy Word, Excel, PowerPoint, OneNote i Access.
 
-Tworzenie złośliwych procesów podrzędnych jest typową strategią złośliwego oprogramowania. Złośliwe oprogramowanie, które nadużywa Office jako wektor, często uruchamia makra VBA i wykorzystuje kod do pobierania i próby uruchomienia większej liczby ładunków. Jednak niektóre uzasadnione aplikacje biznesowe mogą również generować procesy podrzędne dla niegroźnych celów; na przykład zduplikowanie wiersza polecenia lub użycie programu PowerShell do skonfigurowania ustawień rejestru.
+Tworzenie złośliwych procesów podrzędnych jest typową strategią złośliwego oprogramowania. Złośliwe oprogramowanie, które nadużywa Office jako wektor, często uruchamia Visual Basic for Applications makra i wykorzystuje kod do pobierania i próby uruchomienia większej liczby ładunków. Jednak niektóre uzasadnione aplikacje biznesowe mogą również generować procesy podrzędne dla niegroźnych celów; na przykład zduplikowanie wiersza polecenia lub użycie programu PowerShell do skonfigurowania ustawień rejestru.
 
 nazwa Intune:`Office apps launching child processes`
 
@@ -488,9 +490,9 @@ Zależności: MDAV
 
 ### <a name="block-win32-api-calls-from-office-macros"></a>Blokuj wywołania interfejsu API Win32 z makr Office
 
-Ta reguła uniemożliwia makra VBA wywoływanie interfejsów API Win32.
+Ta reguła uniemożliwia Visual Basic for Applications makra wywoływania interfejsów API Win32.
 
-Office VBA włącza wywołania interfejsu API Win32. Złośliwe oprogramowanie może nadużywać tej funkcji, na przykład [wywoływania interfejsów API Win32 w celu uruchomienia złośliwego kodu powłoki](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) bez pisania czegokolwiek bezpośrednio na dysku. Większość organizacji nie polega na możliwości wywoływania interfejsów API Win32 w ich codziennym funkcjonowaniu, nawet jeśli używają makr w inny sposób.
+Office Visual Basic for Applications włącza wywołania interfejsu API Win32. Złośliwe oprogramowanie może nadużywać tej funkcji, na przykład [wywoływania interfejsów API Win32 w celu uruchomienia złośliwego kodu powłoki](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) bez pisania czegokolwiek bezpośrednio na dysku. Większość organizacji nie polega na możliwości wywoływania interfejsów API Win32 w ich codziennym funkcjonowaniu, nawet jeśli używają makr w inny sposób.
 
 Obsługiwane systemy operacyjne:
 

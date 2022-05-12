@@ -18,16 +18,22 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 3b943569485ffaa96b33208c1c4bf0a491c23a95
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bb452c74763e31be11a6431cc260667319d2582f
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939482"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363197"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan wdrożenia platformy Microsoft 365 Zero Trust
 
 Ten artykuł zawiera plan wdrożenia na potrzeby tworzenia **zabezpieczeń Zero Trust** przy użyciu Microsoft 365. Zero Trust to nowy model zabezpieczeń, który zakłada naruszenie zabezpieczeń i weryfikuje każde żądanie tak, jakby pochodziło z niekontrolowanej sieci. Niezależnie od tego, skąd pochodzi żądanie i do jakiego zasobu uzyskuje dostęp, model Zero Trust uczy nas,aby "nigdy nie ufać, zawsze weryfikować".
+
+Użyj tego artykułu razem z tym plakatem.
+
+| Element | Opis |
+|:-----|:-----|
+|[![Ilustracja planu wdrożenia Microsoft 365 Zero Trust.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Zaktualizowano marzec 2022 r. | **Powiązane przewodniki po rozwiązaniach** <br/> <ul><li>[Wdrażanie infrastruktury tożsamości dla Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Zalecane konfiguracje tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Zarządzanie urządzeniami przy użyciu Intune](../solutions/manage-devices-with-intune-overview.md)</li><li>[Ocena i pilotaż usługi Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Wdrażanie rozwiązania Microsoft Information Protection](../compliance/information-protection-solution.md)</li><li>[Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych za pomocą Microsoft 365](../solutions/information-protection-deploy.md)</li></ul>
 
 ## <a name="zero-trust-security-architecture"></a>architektura zabezpieczeń Zero Trust
 
@@ -69,7 +75,7 @@ Pierwszym krokiem jest utworzenie podstawy Zero Trust przez skonfigurowanie ochr
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Proces konfigurowania tożsamości Zero Trust i ochrony dostępu do urządzeń" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
 
-Przejdź do [**_Zero Trust ochrony tożsamości i dostępu do urządzeń_**](office-365-security/microsoft-365-policies-configurations.md), aby uzyskać wskazówki nakazowe, aby to osiągnąć. W tej serii artykułów opisano zestaw konfiguracji wymagań wstępnych dotyczących tożsamości i dostępu do urządzeń oraz zestaw Azure Active Directory (Azure AD) dostępu warunkowego, Microsoft Intune i innych zasad w celu zabezpieczenia dostępu do Microsoft 365  dla aplikacji i usług w chmurze dla przedsiębiorstw, innych usług SaaS i aplikacji lokalnych opublikowanych w usłudze Azure AD serwer proxy aplikacji.
+Przejdź do [**_Zero Trust ochrony tożsamości i dostępu do urządzeń_**](office-365-security/microsoft-365-policies-configurations.md), aby uzyskać wskazówki nakazowe, aby to osiągnąć. W tej serii artykułów opisano zestaw konfiguracji wymagań wstępnych dotyczących tożsamości i dostępu do urządzeń oraz zestaw Azure Active Directory (Azure AD) dostępu warunkowego, Microsoft Intune i innych zasad w celu zabezpieczenia dostępu do Microsoft 365  dla aplikacji i usług w chmurze dla przedsiębiorstw, innych usług SaaS i aplikacji lokalnych opublikowanych za pomocą Azure AD serwer proxy aplikacji.
 
 |Zawiera|Wymagania wstępne|Nie obejmuje|
 |---------|---------|---------|
@@ -89,7 +95,7 @@ Przejdź do obszaru [**_Zarządzanie urządzeniami za pomocą Intune_**](../solu
 
 |Zawiera|Wymagania wstępne|Nie obejmuje|
 |---------|---------|---------|
-|Rejestrowanie urządzeń przy użyciu Intune: <ul><li>Urządzenia należące do firmy</li><li>Rozwiązanie Autopilot/zautomatyzowane</li><li>Rejestracji</li></ul> <br> Konfigurowanie zasad: <ul><li>Zasady ochrony aplikacji</li><li>Zasady zgodności</li><li>Zasady profilu urządzenia</li></ul>|Rejestrowanie punktów końcowych w usłudze Azure AD|Konfigurowanie możliwości ochrony informacji, w tym: <ul><li>Typy informacji poufnych</li><li>Etykiety</li><li>Zasady DLP</li></ul> <br> Aby uzyskać te możliwości, zobacz [Krok 5. Ochrona poufnych danych i zarządzanie nimi](#step-5-protect-and-govern-sensitive-data) (w dalszej części tego artykułu).|
+|Rejestrowanie urządzeń przy użyciu Intune: <ul><li>Urządzenia należące do firmy</li><li>Rozwiązanie Autopilot/zautomatyzowane</li><li>Rejestracji</li></ul> <br> Konfigurowanie zasad: <ul><li>Zasady ochrony aplikacji</li><li>Zasady zgodności</li><li>Zasady profilu urządzenia</li></ul>|Rejestrowanie punktów końcowych za pomocą Azure AD|Konfigurowanie możliwości ochrony informacji, w tym: <ul><li>Typy informacji poufnych</li><li>Etykiety</li><li>Zasady DLP</li></ul> <br> Aby uzyskać te możliwości, zobacz [Krok 5. Ochrona poufnych danych i zarządzanie nimi](#step-5-protect-and-govern-sensitive-data) (w dalszej części tego artykułu).|
 
 ## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>Krok nr 3. Dodawanie tożsamości Zero Trust i ochrony dostępu do urządzeń — zasady Enterprise
 
@@ -111,22 +117,22 @@ Przejdź do [**_tematu Evaluate and pilot Microsoft 365 Defender (Ocena i pilota
 
 |Zawiera|Wymagania wstępne|Nie obejmuje|
 |---------|---------|---------|
-|Skonfiguruj środowisko ewaluacji i pilotażu dla wszystkich składników: <ul><li>Defender for Identity</li><li>Ochrona usługi Office 365 w usłudze Defender</li><li>Ochrona punktu końcowego w usłudze Microsoft Defender</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Ochrona przed zagrożeniami <br><br> Badanie zagrożeń i odpowiadanie na nie|Zapoznaj się ze wskazówkami, aby zapoznać się z wymaganiami dotyczącymi architektury dla każdego składnika Microsoft 365 Defender.| Usługa Azure AD Identity Protection nie jest uwzględniona w tym przewodniku po rozwiązaniach. Jest on uwzględniony w [kroku 1. Skonfiguruj Zero Trust tożsamości i ochrony dostępu do urządzeń](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
+|Skonfiguruj środowisko ewaluacji i pilotażu dla wszystkich składników: <ul><li>Defender for Identity</li><li>Ochrona usługi Office 365 w usłudze Defender</li><li>Ochrona punktu końcowego w usłudze Microsoft Defender</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Ochrona przed zagrożeniami <br><br> Badanie zagrożeń i odpowiadanie na nie|Zapoznaj się ze wskazówkami, aby zapoznać się z wymaganiami dotyczącymi architektury dla każdego składnika Microsoft 365 Defender.| Azure AD usługa Identity Protection nie jest uwzględniona w tym przewodniku po rozwiązaniach. Jest on uwzględniony w [kroku 1. Skonfiguruj Zero Trust tożsamości i ochrony dostępu do urządzeń](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>Krok nr 5. Ochrona poufnych danych i zarządzanie nimi
 
-Zaimplementuj Information Protection Microsoft Purview, aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych informacji wszędzie tam, gdzie się znajdują lub podróżują.
+Zaimplementuj Microsoft Purview Information Protection, aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych informacji wszędzie tam, gdzie się znajdują lub podróżują.
 
-Funkcje Information Protection usługi Microsoft Purview są dołączone do usługi Microsoft Purview i udostępniają narzędzia do poznania danych, ochrony danych i zapobiegania utracie danych.
+Microsoft Purview Information Protection możliwości są dołączone do Microsoft Purview i udostępniają narzędzia do poznania danych, ochrony danych i zapobiegania utracie danych.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Funkcje ochrony informacji chroniące dane poprzez wymuszanie zasad" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 Chociaż ta praca jest reprezentowana w górnej części stosu wdrażania zilustrowanego wcześniej w tym artykule, możesz rozpocząć tę pracę w dowolnym momencie.
 
-Usługa Microsoft Purview Information Protection zapewnia strukturę, proces i możliwości, których można użyć do realizacji określonych celów biznesowych.
+Microsoft Purview Information Protection zapewnia strukturę, proces i możliwości, których można użyć do realizacji określonych celów biznesowych.
 
 ![Microsoft Purview Information Protection](../media/zero-trust/mip-solution-overview.png)
 
-Aby uzyskać więcej informacji na temat planowania i wdrażania ochrony informacji, zobacz [**_Deploy a Microsoft Purview Information Protection solution (Wdrażanie rozwiązania microsoft Purview Information Protection_**](../compliance/information-protection-solution.md)). 
+Aby uzyskać więcej informacji na temat planowania i wdrażania ochrony informacji, zobacz [**_Wdrażanie rozwiązania Microsoft Purview Information Protection_**](../compliance/information-protection-solution.md). 
 
 Jeśli wdrażasz ochronę informacji dla przepisów dotyczących prywatności danych, ten przewodnik po rozwiązaniach zawiera zalecaną strukturę dla całego procesu: [**_Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych za pomocą Microsoft 365_**](../solutions/information-protection-deploy.md).
