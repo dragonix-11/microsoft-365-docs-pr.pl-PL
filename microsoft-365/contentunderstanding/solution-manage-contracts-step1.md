@@ -1,5 +1,5 @@
 ---
-title: Krok nr 1. Identyfikowanie plików SharePoint Syntex wyodrębnianie danych przy użyciu funkcji podpisów
+title: Krok nr 1. Używanie SharePoint Syntex do identyfikowania plików kontraktów i wyodrębniania danych
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,203 +11,203 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Dowiedz się, jak za SharePoint Syntex identyfikować pliki kontraktu i wyodrębniać dane przy użyciu Microsoft 365 danych.
-ms.openlocfilehash: c654c72ef36bf86337b7564efc68e4523516f4f9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak używać SharePoint Syntex do identyfikowania plików kontraktów i wyodrębniania danych przy użyciu rozwiązania Microsoft 365.
+ms.openlocfilehash: 7d2874260ce7a307aa42c67ba571104ed4c4da87
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985486"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368094"
 ---
-# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Krok nr 1. Identyfikowanie plików SharePoint Syntex wyodrębnianie danych przy użyciu funkcji podpisów
+# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Krok nr 1. Używanie SharePoint Syntex do identyfikowania plików kontraktów i wyodrębniania danych
 
-Twoja organizacja potrzebuje sposobu identyfikowania i klasyfikowania wszystkich dokumentów kontraktowych z wielu obierania plików. Ponadto warto mieć możliwość szybkiego wyświetlania kilku kluczowych elementów w każdym z zidentyfikowanych plików umowy (na przykład *klient, wykonawca* *i kwota opłaty*). Można to zrobić za pomocą narzędzia [SharePoint Syntex](index.md) w celu utworzenia modelu rozumienia dokumentu i zastosowania go do biblioteki dokumentów.
+Twoja organizacja potrzebuje sposobu identyfikowania i klasyfikowania wszystkich dokumentów kontraktowych z wielu otrzymywanych plików. Chcesz również szybko wyświetlić kilka kluczowych elementów w każdym z zidentyfikowanych plików kontraktu (na przykład *Klient*, *Wykonawca* i *Kwota opłaty*). Można to zrobić za pomocą [SharePoint Syntex](index.md), aby utworzyć model zrozumienia dokumentu i zastosować go do biblioteki dokumentów.
 
 ## <a name="overview-of-the-process"></a>Omówienie procesu
 
-[W zrozumieniu](document-understanding-overview.md) dokumentu są używane modele sztucznej inteligencji w celu zautomatyzowania klasyfikacji plików i wyodrębniania informacji. Model zrozumienia dokumentów jest również optymalny w przypadku wyodrębniania informacji z dokumentów niestrukturalnych i półstrukturalnych, gdy potrzebne informacje nie są zawarte w tabelach lub formularzach, takich jak umowy. 
+[Omówienie dokumentów](document-understanding-overview.md) używa modeli sztucznej inteligencji (AI) do automatyzacji klasyfikacji plików i wyodrębniania informacji. Modele interpretacji dokumentów są również optymalne w wyodrębnianiu informacji z dokumentów bez struktury i częściowo ustrukturyzowanych, w których potrzebne informacje nie są zawarte w tabelach lub formularzach, takich jak kontrakty. 
 
-Modele opisowe dokumentów korzystają z technologii optycznego rozpoznawania znaków (OCR, Optical Character Recognition) do skanowania plików PDF, obrazów i plików TIFF podczas przeszkolania modelu przy użyciu plików przykładowych, jak i podczas uruchamiania modelu z plikami w bibliotece dokumentów.
+Modele interpretacji dokumentów używają technologii optycznego rozpoznawania znaków (OCR) do skanowania plików PDF, obrazów i plików TIFF, zarówno podczas trenowania modelu z przykładowymi plikami, jak i podczas uruchamiania modelu względem plików w bibliotece dokumentów.
 
-1. Najpierw należy znaleźć co najmniej pięć plików przykładowych, przy użyciu których można "przeszkolić" model w celu wyszukania cech charakterystycznych dla typu zawartości, który próbujesz zidentyfikować (umowa). 
+1. Najpierw należy znaleźć co najmniej pięć przykładowych plików, których można użyć do "wytrenowania" modelu w celu wyszukania cech specyficznych dla typu zawartości, który próbujesz zidentyfikować (kontrakt). 
 
-2. Za SharePoint Syntex utwórz nowy model zrozumienia dokumentu. W przypadku plików przykładowych należy [utworzyć klasyfikatora](create-a-classifier.md). Wyszukując klasyfikatora za pomocą plików przykładowych, uczysz go, jak wyszukiwać cechy specyficzne dla tego, co będzie widać w umowach firmowych. Można na przykład [utworzyć "](create-a-classifier.md#create-an-explanation)objaśnienie", które wyszukuje określone ciągi znaków w umowach, takie jak Umowa o świadczenie *usług, Warunki* umowy i *Wynagrodzenia*. Możesz nawet przeszkolić wyjaśnienie w celu wyszukiwania tych ciągów w określonych sekcjach dokumentu lub znajdujących się obok innych ciągów. Jeśli uważasz, że twój klasyfikator został przeszkolony w zakresie informacji, których potrzebujesz, możesz przetestować model na przykładowym zestawie plików przykładowych, aby sprawdzić, jak wydajna jest ta klasa. Po przetestowaniu w razie potrzeby możesz wprowadzić zmiany w objaśnieniach, aby ułatwić ich przeprowadzanie. 
+2. Za pomocą SharePoint Syntex utwórz nowy model interpretacji dokumentów. Korzystając z przykładowych plików, musisz [utworzyć klasyfikator](create-a-classifier.md). Szkoląc klasyfikator przy użyciu przykładowych plików, nauczysz go wyszukiwać cechy specyficzne dla tego, co można zobaczyć w kontraktach firmy. Na przykład [utwórz "wyjaśnienie",](create-a-classifier.md#create-an-explanation) które wyszukuje określone ciągi znajdujące się w umowach, takie jak *umowa serwisowa*, *warunki umowy* i *kompensacja*. Możesz nawet wytrenować wyjaśnienie, aby wyszukać te ciągi w określonych sekcjach dokumentu lub znajdujących się obok innych ciągów. Jeśli uważasz, że wytrenowałeś klasyfikator z wymaganymi informacjami, możesz przetestować model na przykładowym zestawie przykładowych plików, aby zobaczyć, jak wydajny jest. Po przetestowaniu w razie potrzeby możesz wprowadzić zmiany w wyjaśnieniach, aby były bardziej wydajne. 
 
-3. W swoim modelu możesz utworzyć [wyodrębnianie](create-an-extractor.md) konkretnych fragmentów danych z każdej umowy. Na przykład w przypadku każdej umowy najważniejszą informacją jest to, kto jest klientem, nazwa wykonawcy i całkowity koszt.
+3. W modelu można [utworzyć wyodrębniacz](create-an-extractor.md) do ściągania określonych fragmentów danych z każdego kontraktu. Na przykład dla każdej umowy najbardziej interesuje Cię informacja o tym, kim jest klient, nazwa wykonawcy i całkowity koszt.
 
-4. Po pomyślnym utworzeniu modelu [zastosuj go do SharePoint dokumentów](apply-a-model.md). Podczas przekazywania dokumentów do biblioteki dokumentów będzie uruchamiany model rozumienia dokumentu, który będzie identyfikować i klasyfikować wszystkie pliki zgodne z typem zawartości kontraktów zdefiniowanym w modelu. Wszystkie pliki sklasyfikowane jako umowy będą wyświetlane w widoku biblioteki niestandardowej. W plikach będą również wyświetlane wartości z każdej umowy zdefiniowanej w wyodrębniarze.
+4. Po pomyślnym utworzeniu modelu [zastosuj go do biblioteki dokumentów SharePoint](apply-a-model.md). Podczas przekazywania dokumentów do biblioteki dokumentów model interpretacji dokumentów będzie uruchamiany i będzie identyfikować i klasyfikować wszystkie pliki zgodne z typem zawartości kontraktów zdefiniowanym w modelu. Wszystkie pliki sklasyfikowane jako kontrakty będą wyświetlane w widoku biblioteki niestandardowej. Pliki będą również wyświetlać wartości z każdego kontraktu zdefiniowanego w wyodrębniaczu.
 
-   ![Umowy w bibliotece dokumentów.](../media/content-understanding/doc-lib-solution.png)
+   ![Kontrakty w bibliotece dokumentów.](../media/content-understanding/doc-lib-solution.png)
 
-5. W przypadku stosowania wymagań dotyczących przechowywania lub zabezpieczeń dotyczących umów można również użyć modelu w celu zastosowania etykiety przechowywania [](apply-a-retention-label-to-a-model.md) lub etykiety wrażliwości[](apply-a-sensitivity-label-to-a-model.md), która zapobiegnie usunięciu umów przez określony czas lub ograniczeniu dostępu do umów.
+5. Jeśli masz wymagania dotyczące przechowywania lub zabezpieczeń dla kontraktów, możesz również użyć modelu, aby zastosować [etykietę przechowywania](apply-a-retention-label-to-a-model.md) lub [etykietę poufności](apply-a-sensitivity-label-to-a-model.md) , która uniemożliwi usunięcie kontraktów przez określony okres lub ograniczyć, kto może uzyskać dostęp do umów.
 
-## <a name="steps-to-create-and-train-your-model"></a>Procedura tworzenia i szkolenia modelu
+## <a name="steps-to-create-and-train-your-model"></a>Kroki tworzenia i trenowania modelu
 
 > [!NOTE]
-> W tych krokach możesz użyć przykładowych plików w repozytorium Zasoby rozwiązania do zarządzania [umowami](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management). Przykłady w tym repozytorium zawierają zarówno dokument opisowy pliki modelu, jak i pliki służące do przeszkolinia modelu.
+> W tych krokach można użyć przykładowych plików w [repozytorium Zasobów rozwiązania do zarządzania kontraktami](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management). Przykłady w tym repozytorium zawierają zarówno pliki modelu, jak i pliki używane do trenowania modelu.
 
-### <a name="create-a-contract-model"></a>Tworzenie modelu umowy
+### <a name="create-a-contract-model"></a>Tworzenie modelu kontraktu
 
-Pierwszym krokiem jest utworzenie modelu umowy.
+Pierwszym krokiem jest utworzenie modelu kontraktu.
 
-1. W centrum zawartości wybierz pozycję **Nowy**, **a następnie pozycję Utwórz model**.
+1. W centrum zawartości wybierz pozycję **Nowy**, a następnie **utwórz model**.
 
-2. W **okienku Nowy dokument opisowy modelu** w polu **Nazwa** wpisz nazwę modelu. W przypadku tego rozwiązania do zarządzania umowami możesz nazwać model *Umowa*.
+2. W okienku **Nowy model zrozumienia dokumentu** w polu **Nazwa** wpisz nazwę modelu. W przypadku tego rozwiązania do zarządzania kontraktami możesz nazwać model *Contract*.
 
-4. Wybierz pozycję **Utwórz**. Powoduje to utworzenie strony głównej modelu.</br>
+4. Wybierz pozycję **Utwórz**. Spowoduje to utworzenie strony głównej modelu.</br>
 
-    ![Zrzut ekranu przedstawiający stronę główną Umowa.](../media/content-understanding/models-contract-home-page.png)
+    ![Zrzut ekranu przedstawiający stronę główną Kontraktu.](../media/content-understanding/models-contract-home-page.png)
 
 
-### <a name="train-your-model-to-classify-a-type-of-file"></a>Szkolenie modelu w celu klasyfikowania typu pliku
+### <a name="train-your-model-to-classify-a-type-of-file"></a>Trenowanie modelu w celu klasyfikowania typu pliku
 
-#### <a name="add-example-files-for-your-model"></a>Dodawanie przykładowych plików do modelu
+#### <a name="add-example-files-for-your-model"></a>Dodawanie przykładowych plików dla modelu
 
-Musisz dodać co najmniej pięć plików przykładowych, które są dokumentami kontraktu, a jeden plik przykładowy nie jest dokumentem kontraktowym (na przykład zestawieniem pracy). 
+Musisz dodać co najmniej pięć przykładowych plików, które są dokumentami kontraktów, oraz jeden przykładowy plik, który nie jest dokumentem kontraktu (na przykład instrukcja pracy). 
 
-1. Na stronie **Modele > w** obszarze **Akcje klawiszyDadowane** >  **pliki przykładowe** wybierz pozycję **Dodaj pliki**.
+1. Na stronie **Modele > Kontrakt** w obszarze **Akcje** >  **kluczyDodaj przykładowe pliki** wybierz pozycję **Dodaj pliki**.
 
-   ![Zrzut ekranu przedstawiający stronę Umowy z wyróżniona opcją Dodaj przykładowe pliki.](../media/content-understanding/key-actions-add-example-files.png)
+   ![Zrzut ekranu przedstawiający stronę Kontrakty z wyróżnioną opcją Dodaj przykładowe pliki.](../media/content-understanding/key-actions-add-example-files.png)
 
-2. Na **stronie Wybierz pliki przykładowe swojego modelu** otwórz folder Umowa, wybierz pliki, których chcesz użyć, a następnie wybierz pozycję **Dodaj**. Jeśli nie masz tam plików przykładowych, **wybierz pozycję Upload**, aby je dodać.
+2. Na stronie **Wybieranie przykładowych plików dla modelu** otwórz folder Kontrakt, wybierz pliki, których chcesz użyć, a następnie wybierz pozycję **Dodaj**. Jeśli nie masz tam przykładowych plików, wybierz pozycję **Przekaż** , aby je dodać.
 
-#### <a name="label-the-files-as-positive-or-negative-examples"></a>Przykłady oznaczania plików jako dodatnich lub ujemnych
+#### <a name="label-the-files-as-positive-or-negative-examples"></a>Oznaczanie plików jako pozytywnych lub negatywnych przykładów
 
-1. Na stronie **Modele > w** obszarze **Akcje** >  kluczaSklasyfikuj pliki i **uruchom szkolenie** wybierz pozycję **Klasyfikator pociągu**.
+1. Na stronie **Modele > Kontrakt** w obszarze **Akcje** >  **kluczyKlasyzowanie plików i uruchamianie trenowania** wybierz pozycję **Train classifier (Trenowanie klasyfikatora**).
 
-   ![Zrzut ekranu przedstawiający stronę Umowy z wyróżniona opcją Klasyfikowanie plików i uruchamianie szkolenia.](../media/content-understanding/key-actions-classify-files.png)
+   ![Zrzut ekranu przedstawiający stronę Kontrakty z wyróżnioną opcją klasyfikowania plików i uruchamiania trenowania.](../media/content-understanding/key-actions-classify-files.png)
 
-2. Na stronie Klasyfikator kontraktu **> Modele >** w podglądzie u góry pierwszego pliku przykładowego zobaczysz tekst z pytaniem, czy plik jest przykładem utworzonego modelu Umowy. Jeśli jest to dodatni przykład, wybierz pozycję **Tak**. Jeśli jest to przykład ujemny, wybierz pozycję **Nie**.
+2. Na stronie **Model > Contract > Contract classifier (Model > Contract > Contract)** w przeglądarce w górnej części pierwszego przykładowego pliku zobaczysz tekst z pytaniem, czy plik jest przykładem utworzonego modelu kontraktu. Jeśli jest to pozytywny przykład, wybierz pozycję **Tak**. Jeśli jest to przykład negatywny, wybierz pozycję **Nie**.
 
-3. Z listy **Przykłady oznaczone** etykietami po lewej stronie zaznacz inne pliki, których chcesz użyć jako przykładów, i oznacz je etykietami. 
+3. Z listy **Przykłady oznaczone** po lewej stronie wybierz inne pliki, których chcesz użyć jako przykłady, i oznacz je etykietami. 
 
     ![Strona główna klasyfikatora.](../media/content-understanding/models-contract-classifier.png) 
 
-#### <a name="add-at-least-one-explanation-to-train-the-classifier"></a>Dodawanie co najmniej jednego objaśnienia w celu przeszkolinia klasyfikatora 
+#### <a name="add-at-least-one-explanation-to-train-the-classifier"></a>Dodaj co najmniej jedno wyjaśnienie, aby wytrenować klasyfikator 
 
-1. Na stronie **> Typ > klasyfikatora kontraktu** wybierz **kartę** Pociąg.
+1. Na stronie **Model > Contract > Contract classifier (Klasyfikator kontraktów)** wybierz kartę **Train (Trenowanie** ).
 
-2. W **sekcji Przeszkolone** pliki zostanie wyświetlona lista plików przykładowych oznaczonych wcześniej etykietą. Wybierz jeden z dodatnich plików z listy, aby wyświetlić go w przeglądarce.
+2. W sekcji **Wytrenowane pliki** zostanie wyświetlona lista plików przykładowych, które zostały wcześniej oznaczone etykietą. Wybierz jeden z pozytywnych plików z listy, aby wyświetlić go w przeglądarce.
 
-3. W sekcji **Objaśnienia** wybierz **pozycję Nowy,** a następnie Pozycję **Puste**.
+3. W sekcji **Wyjaśnienia** wybierz pozycję **Nowy** , a następnie pozycję **Puste**.
 
-4. Na **stronie Tworzenie objaśnienia** :
+4. Na stronie **Tworzenie wyjaśnienia** :
 
-    a. W **polu Nazwa** wpisz nazwę objaśnienia (na przykład "Umowa").
+    a. W polu **Nazwa** wpisz nazwę wyjaśnienia (np. "Umowa").
 
-    b. W polu **Typ objaśnienia** wybierz pozycję **Lista fraz**, ponieważ dodajesz ciąg tekstowy.
+    b. W polu **Typ wyjaśnienia** wybierz pozycję **Lista fraz**, ponieważ dodajesz ciąg tekstowy.
 
-    c. W polu **listy Fraza** wpisz ciąg (na przykład "UMOWA"). Możesz wybrać pozycję Wielkość **liter,** jeśli w ciągu musi być wróżniana wielkość liter.
+    c. W polu **Lista fraz** wpisz ciąg (na przykład "AGREEMENT"). Jeśli ciąg musi uwzględniać wielkość liter, możesz wybrać pozycję **Wielkość** liter.
 
-    d. Wybierz **pozycję Zapisz i pociąg.**
+    d. Wybierz pozycję **Zapisz i wytrenuj**.
 
-    ![Zrzut ekranu przedstawiający panel Tworzenie objaśnienia.](../media/content-understanding/contract-classifier-create-explanation.png) 
+    ![Zrzut ekranu przedstawiający panel Tworzenie wyjaśnienia.](../media/content-understanding/contract-classifier-create-explanation.png) 
 
 #### <a name="test-your-model"></a>Testowanie modelu
 
-Możesz przetestować model Kontrakt na przykładowych plikach, które nie widziały go wcześniej. Jest to opcjonalne, ale może być przydatne najlepszym rozwiązaniem.
+Model kontraktu można przetestować na przykładowych plikach, których wcześniej nie widział. Jest to opcjonalne rozwiązanie, ale może być przydatnym najlepszym rozwiązaniem.
 
-1. Na stronie **> Typ > klasyfikatora kontraktu** wybierz **kartę** Test. Model będzie uruchamiany w przypadku plików przykładowych bez etykiety.
+1. Na stronie **Model > Contract > Contract classifier (Klasyfikator kontraktów)** wybierz kartę **Test** . Spowoduje to uruchamianie modelu w plikach przykładowych bez etykiet.
 
-2. Na liście **Pliki testowe** pliki przykładowe są wyświetlane i pokazują, czy model przewidział, że są dodatnie, czy ujemne. Skorzystaj z tych informacji, aby pomóc w określeniu skuteczności klasyfikatora w identyfikowaniu Twoich dokumentów.
+2. Na liście **Pliki testowe** przykładowe pliki są wyświetlane i pokazują, czy model przewidział ich wyniki dodatnie lub ujemne. Te informacje ułatwiają określenie skuteczności klasyfikatora w identyfikowaniu dokumentów.
 
-    ![Zrzut ekranu przedstawiający pliki bez etykiety na liście Pliki tekstowe.](../media/content-understanding/test-on-files.png) 
+    ![Zrzut ekranu przedstawiający nieoznakowane pliki na liście Pliki tekstowe.](../media/content-understanding/test-on-files.png) 
 
-3. Gdy zakończysz, wybierz pozycję **Zakończ szkolenie**.
+3. Po zakończeniu wybierz pozycję **Zakończ trenowanie**.
 
-### <a name="create-and-train-an-extractor"></a>Tworzenie i szkolenie wyodrębniacz
+### <a name="create-and-train-an-extractor"></a>Tworzenie i trenowanie ekstraktora
 
-1. Na stronie **Modele > w** obszarze **Akcje** >  **kluczoweTworzenie** i szkolenie wyodrębniaczy wybierz pozycję **Utwórz wyodrębniator**.
+1. Na stronie **Modele > Kontrakt** w obszarze **Akcje** >  **kluczyUtwórz i wytrenuj wyodrębniacze** wybierz pozycję **Utwórz wyodrębniacz**.
 
-   ![Zrzut ekranu przedstawiający stronę Umowy z wyróżniona opcją Utwórz i wyodrębniacze pociągów.](../media/content-understanding/key-actions-create-extractors.png)
+   ![Zrzut ekranu przedstawiający stronę Kontrakty z wyróżnioną opcją Tworzenie i trenowanie wyodrębniaczy.](../media/content-understanding/key-actions-create-extractors.png)
 
-2. W **panelu New entity extractor (Nowa** jednostka) w polu **New name (** Nowa nazwa) wpisz nazwę wyodrębniającego. Na przykład nadaj jej nazwę *Klient* , jeśli chcesz wyodrębnić nazwę klienta z każdej umowy.
+2. W panelu **New entity extractor (Nowy wyodrębniacz jednostki** ) w polu **Nowa nazwa** wpisz nazwę swojego wyodrębniacza. Na przykład nadaj mu nazwę *Klient* , jeśli chcesz wyodrębnić nazwę klienta z każdego kontraktu.
 
-3. Po utworzeniu konta wybierz pozycję **Utwórz**.
+3. Po zakończeniu wybierz pozycję **Utwórz**.
 
-#### <a name="label-the-entity-you-want-to-extract"></a>Oznaczanie jednostki, którą chcesz wyodrębnić
+#### <a name="label-the-entity-you-want-to-extract"></a>Etykieta jednostki, którą chcesz wyodrębnić
 
-Po utworzeniu wyodrębnianego fragmentatora zostanie otwarta strona wyodrębnianego fragmentatora. Zostanie wyświetlona lista plików przykładowych, a pierwszy plik na liście zostanie wyświetlony w przeglądarce.
+Podczas tworzenia ekstraktora zostanie otwarta strona wyodrębniacza. W tym miejscu zostanie wyświetlona lista przykładowych plików z pierwszym plikiem na liście wyświetlonej w przeglądarce.
 
-![Zrzut ekranu przedstawiający stronę Client Extractor Labeled Examples (Przykłady klientów).](../media/content-understanding/client-extractor-labeled-examples.png) 
+![Zrzut ekranu przedstawiający stronę przykładów z etykietami klienta.](../media/content-understanding/client-extractor-labeled-examples.png) 
 
-Aby o etykiecie encji:
+Aby oznaczyć jednostkę etykietą:
 
-1. W przeglądarce zaznacz dane, które chcesz wyodrębnić z plików. Jeśli na przykład chcesz wyodrębnić *klienta,* wyróżnij wartość klienta w pierwszym pliku (w tym przykładzie *Best For You Organics*), a następnie wybierz pozycję **Zapisz**. Wartość z pliku będzie wyświetlana na liście Przykłady oznaczone etykietą **w kolumnie Etykieta**.
+1. W przeglądarce wybierz dane, które chcesz wyodrębnić z plików. Jeśli na przykład chcesz wyodrębnić *klienta*, wyróżnisz wartość klienta w pierwszym pliku (w tym przykładzie *Best For You Organics*), a następnie wybierz pozycję **Zapisz**. Wartość wyświetlana z pliku zostanie wyświetlona na liście **Przykłady oznaczone** w kolumnie **Etykieta** .
 
-2. Wybierz **pozycję Następny plik** , aby autozazadać i otworzyć następny plik na liście w przeglądarce. Możesz też **wybrać pozycję Zapisz**, a następnie wybrać inny plik z listy **Przykłady oznaczone etykietą** .
+2. Wybierz pozycję **Następny plik** , aby automatycznie zapisać i otworzyć następny plik na liście w przeglądarce. Lub wybierz pozycję **Zapisz**, a następnie wybierz inny plik z listy **Przykłady oznaczone etykietami** .
 
-3. W przeglądarce powtarzaj kroki 1 i 2, a następnie powtarzaj te czynności do momentu zapisania etykiety we wszystkich plikach.
+3. W przeglądarce powtórz kroki 1 i 2, a następnie powtarzaj je do momentu zapisania etykiety we wszystkich plikach.
 
-Po oznaczeniu plików etykietą zostanie wyświetlony transparent z powiadomieniem z informacjami o tym, aby przejść do szkolenia. Możesz dodać etykiety do większej liczby dokumentów lub przejść do szkolenia.
+Po oznaczeniu plików etykietą zostanie wyświetlony baner powiadomień informujący o przejściu do szkolenia. Możesz wybrać etykietę większej liczby dokumentów lub przejść do szkolenia.
 
 #### <a name="add-an-explanation"></a>Dodawanie objaśnienia
 
-Możesz utworzyć objaśnienie, które daje wskazówkę co do formatu jednostki i jego odmian w plikach przykładowych. Na przykład wartość daty może być w wielu różnych formatach, takich jak:
+Możesz utworzyć wyjaśnienie, które zawiera wskazówkę dotyczącą samego formatu jednostki i odmian, które może mieć w przykładowych plikach. Na przykład wartość daty może być w wielu różnych formatach, takich jak:
 
 - 10/14/2019
 - 14 października 2019 r.
 - Poniedziałek, 14 października 2019 r.
 
-Aby ułatwić zidentyfikowanie *daty rozpoczęcia umowy*, możesz utworzyć objaśnienie wzorca.
+Aby ułatwić identyfikację *daty rozpoczęcia kontraktu*, możesz utworzyć wyjaśnienie wzorca.
 
-1. W sekcji **Objaśnienia** wybierz **pozycję Nowy,** a następnie Pozycję **Puste**.
+1. W sekcji **Wyjaśnienia** wybierz pozycję **Nowy** , a następnie pozycję **Puste**.
 
-2. Na **stronie Tworzenie objaśnienia** :
+2. Na stronie **Tworzenie wyjaśnienia** :
 
-    a. W **polu Nazwa** wpisz nazwę objaśnienia (na przykład *Data*).
+    a. W polu **Nazwa** wpisz nazwę wyjaśnienia (na przykład *Date*).
 
-    b. W polu **Typ objaśnienia** wybierz pozycję **Lista Deseń**.
+    b. W polu **Typ wyjaśnienia** wybierz pozycję **Lista wzorców**.
 
-    c. W **polu Wartość** podaj odmianę daty wyświetlaną w plikach przykładowych. Jeśli na przykład masz formaty daty wyświetlane jako 00-00-000, wprowadź dowolne odmiany widoczne w twoich dokumentach, takie jak:
+    c. W polu **Wartość** podaj odmianę daty wyświetlaną w przykładowych plikach. Jeśli na przykład masz formaty dat, które są wyświetlane jako 0/00/0000, wprowadź wszelkie odmiany wyświetlane w dokumentach, takie jak:
 
     - 0/0/0000
     - 0/00/0000
     - 00/0/0000
     - 00/00/0000
 
-4. Wybierz **pozycję Zapisz i pociąg.**
+4. Wybierz pozycję **Zapisz i wytrenuj**.
 
 #### <a name="test-your-model-again"></a>Ponownie przetestuj model
 
-Możesz przetestować model Kontrakt na przykładowych plikach, które nie widziały go wcześniej. Jest to opcjonalne, ale może być przydatne najlepszym rozwiązaniem.
+Model kontraktu można przetestować na przykładowych plikach, których wcześniej nie widział. Jest to opcjonalne rozwiązanie, ale może być przydatnym najlepszym rozwiązaniem.
 
-1. Na stronie **> Typ > klasyfikatora kontraktu** wybierz **kartę** Test. Model będzie uruchamiany w przypadku plików przykładowych bez etykiety.
+1. Na stronie **Model > Contract > Contract classifier (Klasyfikator kontraktów)** wybierz kartę **Test** . Spowoduje to uruchamianie modelu w plikach przykładowych bez etykiet.
 
-2. Na liście **Pliki testowe** są wyświetlane twoje pliki przykładowe i pokazuje, czy model umożliwia wyodrębnianie potrzebnych informacji. Skorzystaj z tych informacji, aby pomóc w określeniu skuteczności klasyfikatora w identyfikowaniu Twoich dokumentów.
+2. Na liście **Pliki testowe** przykładowe pliki są wyświetlane i pokazują, czy model może wyodrębnić potrzebne informacje. Te informacje ułatwiają określenie skuteczności klasyfikatora w identyfikowaniu dokumentów.
 
-3. Gdy zakończysz, wybierz pozycję **Zakończ szkolenie**.
+3. Po zakończeniu wybierz pozycję **Zakończ trenowanie**.
 
 ### <a name="apply-your-model-to-a-document-library"></a>Stosowanie modelu do biblioteki dokumentów
 
-Aby zastosować model do SharePoint dokumentów:
+Aby zastosować model do biblioteki dokumentów SharePoint:
 
-1. Na stronie **Modele > w** obszarze **Akcje** >  kluczyStosowanie **modelu do bibliotek** wybierz pozycję **Zastosuj model**.
+1. Na stronie **Models > Contract (Modele > kontraktu**) w obszarze **Akcje kluczyAplikuj** >  model do bibliotek wybierz pozycję **Zastosuj model**.
 
-   ![Zrzut ekranu przedstawiający stronę Umowy z wyróżniona opcją Zastosuj model do bibliotek.](../media/content-understanding/key-actions-apply-model.png)
+   ![Zrzut ekranu przedstawiający stronę Kontrakty z wyróżnioną opcją Zastosuj model do bibliotek.](../media/content-understanding/key-actions-apply-model.png)
 
-2. W **panelu Dodaj umowę** wybierz witrynę SharePoint zawierającą bibliotekę dokumentów, do której chcesz zastosować model. Jeśli witryna nie jest wyświetlona na liście, użyj pola wyszukiwania, aby ją znaleźć. Wybierz opcję **Dodaj**.
+2. Na panelu **Dodawanie kontraktu** wybierz witrynę SharePoint zawierającą bibliotekę dokumentów, do których chcesz zastosować model. Jeśli witryna nie jest wyświetlana na liście, użyj pola wyszukiwania, aby ją znaleźć. Wybierz opcję **Dodaj**.
 
     > [!NOTE]
-    > Musisz mieć uprawnienia *do zarządzania listą* lub *uprawnienia do* edytowania biblioteki dokumentów, do których chcesz zastosować model.
+    > Musisz mieć uprawnienia *Do zarządzania listą* lub *Uprawnienia do edycji* do biblioteki dokumentów, do których stosujesz model.
 
 3. Po wybraniu witryny wybierz bibliotekę dokumentów, do której chcesz zastosować model.
 
-4. Ponieważ model jest skojarzony z typem zawartości, po zastosowaniu go do biblioteki zostanie on dodajony typ zawartości i jego widok z wyodrębnioną etykietą wyświetloną jako kolumny. Ten widok jest domyślnie widokiem domyślnym biblioteki, ale opcjonalnie możesz zdecydować, aby nie był to widok domyślny, zaznaczając pozycję Ustawienia  zaawansowane i czyszcząc pole wyboru Ustaw ten nowy widok jako domyślny.
+4. Ponieważ model jest skojarzony z typem zawartości, po zastosowaniu go do biblioteki doda typ zawartości i jego widok z wyodrębnionymi etykietami wyświetlanymi jako kolumny. Ten widok jest domyślnie widokiem domyślnym biblioteki, ale opcjonalnie możesz wybrać, aby nie był to widok domyślny, wybierając pozycję **Ustawienia zaawansowane** i wyczyść pole wyboru **Ustaw nowy widok jako domyślny** .
 
-5. Wybierz **pozycję Dodaj** , aby zastosować model do biblioteki.
+5. Wybierz pozycję **Dodaj** , aby zastosować model do biblioteki.
 
-6. Na **stronie > Typ** umowy w sekcji Biblioteki z tym **modelem** zobaczysz adres URL witryny SharePoint na liście.
+6. Na stronie **Model > Contract** w sekcji **Biblioteki z tym modelem** zostanie wyświetlony adres URL witryny SharePoint.
 
-    ![Zrzut ekranu przedstawiający stronę główną Umowa z wyświetloną sekcją Biblioteki w tym modelu.](../media/content-understanding/contract-libraries-with-this-model.png)
+    ![Zrzut ekranu strony głównej Kontrakt przedstawiający sekcję Biblioteki z tym modelem.](../media/content-understanding/contract-libraries-with-this-model.png)
 
-7. W **Ustawienia** >  **Ustawienia Ustawienia library**:
+7. W **obszarze ustawień Ustawienia** >  **Library**:
 
-   - Dodaj kolumnę o nazwie **Stan** i wybierz **pozycję Wybór** jako typ kolumny.
-   - Stosowanie wartości **W recenzji**, **Zatwierdzone** **i Odrzucone** .
+   - Dodaj kolumnę o nazwie **Status** i wybierz pozycję **Wybór** jako typ kolumny.
+   - Zastosuj wartości **W przeglądzie**, **Zatwierdzone** i **Odrzucone** .
 
 Po zastosowaniu modelu do biblioteki dokumentów możesz rozpocząć przekazywanie dokumentów do witryny i wyświetlić wyniki.
 
 ## <a name="next-step"></a>Następny krok
 
-[Krok 2. Użyj Microsoft Teams, aby utworzyć kanał zarządzania umowami](solution-manage-contracts-step2.md)
+[Krok 2. Tworzenie kanału zarządzania kontraktami przy użyciu Microsoft Teams](solution-manage-contracts-step2.md)

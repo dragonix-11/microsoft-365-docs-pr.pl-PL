@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cbfc82f56cc1922a663c31defe30dc61c2d3dd9b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97e8db205d066671b7c0d430e3dbf79f0dd6ebd
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664155"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368116"
 ---
 # <a name="exclude-devices"></a>Wyklucz urządzenia
 
@@ -33,11 +33,11 @@ ms.locfileid: "64664155"
 
 > Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## <a name="exclude-devices-from-threat-and-vulnerability-management"></a>Wykluczanie urządzeń z Zarządzanie zagrożeniami i lukami
+## <a name="exclude-devices-from-vulnerability-management"></a>Wykluczanie urządzeń z zarządzanie lukami w zabezpieczeniach
 
-Wyłączenie urządzeń, które są nieaktywne, zduplikowane lub poza zakresem, pozwala skupić się na odnajdyowaniu i określaniu priorytetów zagrożeń na aktywnych urządzeniach. Ta akcja może również pomóc odzwierciedlić dokładniejszy wynik Zarządzanie zagrożeniami i lukami ekspozycji, ponieważ wykluczone urządzenia nie będą widoczne w raportach Zarządzanie zagrożeniami i lukami.
+Wyłączenie urządzeń, które są nieaktywne, zduplikowane lub poza zakresem, pozwala skupić się na odnajdyowaniu i określaniu priorytetów zagrożeń na aktywnych urządzeniach. Ta akcja może również pomóc odzwierciedlić dokładniejszy wynik zarządzanie lukami w zabezpieczeniach ekspozycji, ponieważ wykluczone urządzenia nie będą widoczne w raportach zarządzanie lukami w zabezpieczeniach.
 
-Po wykluczeniu urządzeń nie będzie można wyświetlać zaktualizowanych ani istotnych informacji o lukach w zabezpieczeniach i zainstalowanym oprogramowaniu na tych urządzeniach. Ma wpływ na wszystkie Zarządzanie zagrożeniami i lukami stron, raportów i powiązanych tabel w zaawansowanym polowaniu.
+Po wykluczeniu urządzeń nie będzie można wyświetlać zaktualizowanych ani istotnych informacji o lukach w zabezpieczeniach i zainstalowanym oprogramowaniu na tych urządzeniach. Ma wpływ na wszystkie zarządzanie lukami w zabezpieczeniach stron, raportów i powiązanych tabel w zaawansowanym polowaniu.
 
 Mimo że funkcja wykluczania urządzenia usuwa dane urządzenia z zarządzanie lukami w zabezpieczeniach stron i raportów, urządzenia pozostają połączone z siecią i nadal mogą stanowić zagrożenie dla organizacji. Wykluczenie urządzenia będzie można anulować w dowolnym momencie.
 

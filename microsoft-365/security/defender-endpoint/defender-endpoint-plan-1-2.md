@@ -1,7 +1,7 @@
 ---
-title: Porównanie programu Microsoft Defender dla planu punktu końcowego 1 z planem 2
-description: Porównaj program Defender dla planu punktu końcowego 1 z planem 2. Poznaj różnice między planami i wybierz plan, który najlepiej odpowiada potrzebom Twojej organizacji.
-keywords: Defender for Endpoint, advanced threat protection, endpoint protection
+title: Porównanie planów Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Porównaj usługę Defender for Endpoint Plan 1 z planem 2. Dowiedz się więcej o różnicach między planami i wybierz plan odpowiadający potrzebom organizacji.
+keywords: Defender for Endpoint, zaawansowana ochrona przed zagrożeniami, ochrona punktu końcowego
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,37 +17,32 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d1ed6f5b45bc488c998c99efa1c35d5af869194e
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 3fb31e985e0f6d2191e45c9e4350399e4bb7eb40
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016572"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368270"
 ---
-# <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 and Plan 2
+# <a name="compare-microsoft-defender-for-endpoint-plans"></a>Porównanie planów Ochrona punktu końcowego w usłudze Microsoft Defender
 
-**Dotyczy**
+Ochrona punktu końcowego w usłudze Microsoft Defender to platforma zabezpieczeń punktu końcowego przedsiębiorstwa, która pomaga sieciom przedsiębiorstw w zapobieganiu zaawansowanym zagrożeniom, wykrywaniu i badaniu ich oraz reagowaniu na nie. Usługa Defender for Endpoint zapewnia zaawansowaną ochronę przed zagrożeniami, która obejmuje oprogramowanie antywirusowe, oprogramowanie chroniące przed złośliwym kodem, ograniczanie ryzyka wymuszania okupu i nie tylko, a także scentralizowane zarządzanie i raportowanie. Możesz wybrać jedną z następujących opcji dla Ochrona punktu końcowego w usłudze Microsoft Defender:
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Program Microsoft Defender for Endpoint to platforma zabezpieczeń punktów końcowych przedsiębiorstwa, która ma ułatwić sieciom przedsiębiorstwa zapobieganie zaawansowanym zagrożeniam, wykrywanie, badanie i reagowanie na nie. Program Defender for Endpoint zapewnia zaawansowaną ochronę przed zagrożeniami, która obejmuje programy antywirusowe, ochrony przed złośliwym oprogramowaniem, środki zaradcze przed oprogramowaniem wymuszającym okup i inne funkcje, a także umożliwia scentralizowane zarządzanie i raportowanie. Dostępne są dwa plany:   
- 
-- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md); i 
-- [Program Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), dawniej znany jako [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+Ten artykuł ułatwia wyjaśnienie, jaka ochrona jest zapewniana przez różne funkcje dostępne w usłudze Defender for Endpoint Plan 1, Defender for Endpoint Plan 2 i dodatku Defender Vulnerability Management.
 
-## <a name="compare-defender-for-endpoint-plans"></a>Porównanie planów programu Defender dla punktów końcowych
-
-W poniższej tabeli opisano elementy zawarte w poszczególnych planach na wysokim poziomie. <br/><br/>
-
-| [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
-|:---|:---|
-| [Ochrona następnej generacji](defender-endpoint-plan-1.md#next-generation-protection) <br/>(zawiera oprogramowanie antywirusowe i ochrony przed złośliwym oprogramowaniem) <p> [Zmniejszenie powierzchni ataków](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Ręczne akcje odpowiedzi](defender-endpoint-plan-1.md#manual-response-actions) <p> [Scentralizowane zarządzanie](defender-endpoint-plan-1.md#centralized-management) <p>[Raporty zabezpieczeń](defender-endpoint-plan-1.md#reporting) <p>[Interfejsy API](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), plus: <p> [Odnajdowanie urządzeń](device-discovery.md) <p> [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md) <p> [Analiza zagrożeń](threat-analytics.md) <p> [Zautomatyzowane badanie i odpowiedź](automated-investigations.md) <p> [Zaawansowane łowy](advanced-hunting-overview.md) <p> [Wykrywanie punktu końcowego i odpowiedź](overview-endpoint-detection-response.md) <p> [Microsoft Threat Experts](microsoft-threat-experts.md)  |
-| [Pomoc techniczna dla Windows 10, iOS, Android OS i macOS](defender-endpoint-plan-1.md#cross-platform-support) | Pomoc techniczna Windows klientów (klientów i serwerów) i platform Windows innych<br/> (macOS, iOS, Android i Linux) |
-| Aby wypróbować program Defender dla punktu końcowego (plan 1), odwiedź stronę [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial). | Aby wypróbować program Defender dla punktu końcowego (plan 2), odwiedź stronę [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial). |
+| [Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | [Dodatek usługi Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)|
+|:---|:---|:---|
+| [Ochrona nowej generacji](defender-endpoint-plan-1.md#next-generation-protection) <br/>(obejmuje oprogramowanie chroniące przed złośliwym kodem i oprogramowanie antywirusowe) <p> [Zmniejszanie obszaru podatnego na ataki](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Ręczne akcje odpowiedzi](defender-endpoint-plan-1.md#manual-response-actions) <p> [Scentralizowane zarządzanie](defender-endpoint-plan-1.md#centralized-management) <p>[Raporty zabezpieczeń](defender-endpoint-plan-1.md#reporting) <p>[Interfejsów api](defender-endpoint-plan-1.md#apis) | Możliwości usługi Defender for Endpoint Plan 1 oraz: <p> <p> [Wykrywanie urządzeń](device-discovery.md) <p> [Spisz urządzeń](machines-view-overview.md) <p> [Podstawowe możliwości zarządzania lukami w zabezpieczeniach usługi Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) <p> [Analiza zagrożeń](threat-analytics.md) <p> [Zautomatyzowane badanie i reagowanie](automated-investigations.md) <p> [Zaawansowane wyszukiwanie zagrożeń](advanced-hunting-overview.md) <p> [Wykrywanie i reagowanie dotyczące punktów końcowych](overview-endpoint-detection-response.md) <p> [Microsoft Threat Experts](microsoft-threat-experts.md) | Dodatkowe zarządzanie lukami w zabezpieczeniach usługi Defender dla usługi Defender for Endpoint Plan 2: <p> [Ocena punktów odniesienia zabezpieczeń](../defender-vulnerability-management/tvm-security-baselines.md) <p> [Blokowanie aplikacji narażonych na zagrożenia](../defender-vulnerability-management/tvm-block-vuln-apps.md) <p> [Rozszerzenia przeglądarki](../defender-vulnerability-management/tvm-browser-extensions.md) <p> [Ocena certyfikatów cyfrowych](../defender-vulnerability-management/tvm-certificate-inventory.md) <p> [Analiza udziału sieciowego](../defender-vulnerability-management/tvm-network-share-assessment.md)|
+| [Obsługa urządzeń Windows 10, iOS, Android I macOS](defender-endpoint-plan-1.md#cross-platform-support) | Obsługa platform Windows (klienta i serwera) i platform innych niż Windows<br/> (macOS, iOS, Android i Linux) | Obsługa platform Windows (klienta i serwera) i platform innych niż Windows<br/> (macOS, iOS, Android i Linux) |
+| Aby wypróbować usługę Defender for Endpoint Plan 1, odwiedź stronę [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) | Aby wypróbować usługę Defender for Endpoint Plan 2, odwiedź stronę [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) | Aby spróbować Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender dodatku, odwiedź stronę [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). Aby uzyskać więcej informacji, zobacz [Pobieranie zarządzania lukami w zabezpieczeniach usługi Defender](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Uzyskaj omówienie programu Microsoft Defender dla punktu końcowego (plan 1)](defender-endpoint-plan-1.md)
-- [Konfigurowanie usługi Defender dla planu 1 punktu końcowego](mde-p1-setup-configuration.md)
-- [Wprowadzenie do korzystania z usługi Defender dla punktu końcowego (plan 1)](mde-plan1-getting-started.md)
+- [Omówienie planu Ochrona punktu końcowego w usłudze Microsoft Defender 1](defender-endpoint-plan-1.md)
+- [Instalowanie i konfigurowanie ochrony punktu końcowego w usłudze Defender (plan 1)](mde-p1-setup-configuration.md)
+- [Wprowadzenie przy użyciu usługi Defender for Endpoint Plan 1](mde-plan1-getting-started.md)

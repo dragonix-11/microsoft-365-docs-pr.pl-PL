@@ -1,5 +1,5 @@
 ---
-title: Krok nr 2. Użyj Microsoft Teams, aby utworzyć kanał zarządzania umowami
+title: Krok nr 2. Tworzenie kanału zarządzania kontraktami przy użyciu Microsoft Teams
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,55 +11,55 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Dowiedz się, jak za Microsoft Teams utworzyć kanał zarządzania umowami przy użyciu Microsoft 365 rozwiązania.
-ms.openlocfilehash: a5a42bedcb6acba4caf8f6f114812c63869ee92e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak za pomocą Microsoft Teams utworzyć kanał zarządzania kontraktami przy użyciu rozwiązania Microsoft 365.
+ms.openlocfilehash: 6020b6e57af285e96c7998454dc46e5eb19bc5f9
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985460"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368050"
 ---
-# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Krok nr 2. Użyj Microsoft Teams, aby utworzyć kanał zarządzania umowami
+# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Krok nr 2. Tworzenie kanału zarządzania kontraktami przy użyciu Microsoft Teams
 
-Podczas organizacji konfiguruje się rozwiązanie do zarządzania umowami, potrzebujesz centralnej lokalizacji, w której uczestnicy projektu mogą przeglądać umowy i zarządzać nimi. W tym celu możesz za pomocą Microsoft Teams [](/microsoftteams/) skonfigurować kanał Teams oraz korzystać z funkcji dostępnych w Teams:
+Podczas konfigurowania rozwiązania do zarządzania kontraktami w organizacji potrzebna jest centralna lokalizacja, w której osoby biorące udział w projekcie mogą przeglądać kontrakty i zarządzać nimi. W tym celu możesz użyć [Microsoft Teams](/microsoftteams/), aby skonfigurować kanał Teams i użyć funkcji w Teams:
 
-- **Utwórz miejsce dla uczestników projektu, w którym z łatwością będą widzieć wszystkie umowy wymagające działania.** Na przykład w programie Teams można utworzyć kartę Umowy w  kanale Zarządzanie umowami, w której członkowie mogą wyświetlać użyteczny widok kafelków wszystkich umów, które wymagają zatwierdzenia. Można również skonfigurować widok tak, aby każda "karta" zawierała ważne dane (takie jak *Klient, Wykonawca* i *Kwota opłaty*). 
+- **Utwórz lokalizację dla osób biorących udział w projekcie, aby łatwo wyświetlić wszystkie kontrakty wymagające akcji.** Na przykład w Teams można utworzyć kartę **Kontrakty** w kanale Zarządzanie kontraktami, w której członkowie mogą zobaczyć przydatny widok kafelka dla wszystkich kontraktów, które wymagają zatwierdzenia. Można również skonfigurować widok tak, aby każda "karta" wyświetlała ważne dane, na przykład *Klient*, *Wykonawca* i *Kwota opłaty*.
 
-     ![Karta Umowy.](../media/content-understanding/tile-view.png)
+     ![Karta Kontrakty.](../media/content-understanding/tile-view.png)
 
-- **W tym miejscu członkowie mogą wchodzić ze sobą w interakcje i widzieć ważne zdarzenia.** Na przykład w programie Teams na karcie Wpisy można  m.in. umożliwiać konwersacje, uzyskiwanie aktualizacji i wyświetlanie akcji (takich jak członek odrzucający umowę). Jeśli coś się stało (na przykład została przesłana do zatwierdzenia nowa umowa),  karta Wpisy może być używana nie tylko do jej ogłaszania, ale także do rejestrować jej informacje. A jeśli członkowie subskrybują powiadomienia, będą otrzymywać powiadomienia po każdej aktualizacji.
+- **Mieć lokalizację, w przypadku których członkowie mogą wchodzić ze sobą w interakcje i wyświetlać ważne zdarzenia.** Na przykład w Teams karta **Wpisy** może służyć do konwersacji, pobierania aktualizacji i przeglądania akcji (takich jak członek odrzucający kontrakt). Gdy coś się stało (na przykład nowa umowa przesłana do zatwierdzenia), karta **Wpisy** może służyć nie tylko do jej ogłaszania, ale także do prowadzenia rejestru. A jeśli członkowie subskrybują powiadomienia, będą otrzymywać powiadomienia za każdym razem, gdy nastąpi aktualizacja.
 
      ![Karta Wpisy.](../media/content-understanding/posts.png)
 
-- **Miej miejsce, w którym członkowie mogą zobaczyć zatwierdzone umowy i wiedzieć, kiedy można ich przesłać o płatność.** W SharePoint musisz utworzyć listę do wypłat i dodać kolumny dla **klienta, wykonawcy** i kwoty **opłaty**, wybierając pojedynczy wiersz tekstu jako typ kolumny.  Musisz dodać listę Do wypłat jako kartę Teams w kanale Zarządzanie umowami, podobnie jak na karcie [**Umowy**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab). Na **karcie Wypłaty** zostanie wyświetlona lista wszystkich umów, które muszą zostać przesłane do zapłaty. Możesz łatwo rozszerzyć to rozwiązanie, aby zamiast tego napisać te informacje bezpośrednio do innej aplikacji finansowej (na przykład Dynamics CRM). 
+- **Mieć lokalizację dla członków, aby zobaczyć zatwierdzone umowy, aby wiedzieć, kiedy mogą być przesyłane do płatności.** W SharePoint musisz utworzyć listę **For Payout** i uwzględnić kolumny **Dla klienta**, **wykonawcy** i **kwoty opłaty**, wybierając pozycję **Pojedynczy wiersz tekstu** jako typ kolumny. Musisz dodać listę **For Payout (Dla wypłat**) jako kartę Teams w kanale Zarządzanie kontraktami, podobnie jak w przypadku [karty **Kontrakty**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab). Na karcie **Wypłaty** zostaną wyświetlone wszystkie umowy, które będą musiały zostać przesłane do płatności. To rozwiązanie można łatwo rozszerzyć, aby zamiast tego zapisywać te informacje bezpośrednio w aplikacji finansowej innej firmy (na przykład Dynamics CRM). 
 
 
-## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Dołączanie SharePoint dokumentów do karty Umowy
+## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Dołącz bibliotekę dokumentów SharePoint do karty Kontrakty
 
-Po utworzeniu karty **Umowy** w kanale Zarządzanie umowami musisz dołączyć do niego własną SharePoint [dokumentów](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). Biblioteka SharePoint dokumentów, do której chcesz dołączyć, to ta, do której zastosowano model SharePoint Syntex w poprzedniej sekcji.
+Po utworzeniu karty **Kontrakty** w kanale Zarządzanie kontraktami należy [do niego dołączyć bibliotekę dokumentów SharePoint](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). Biblioteka dokumentów SharePoint, do której chcesz dołączyć, jest biblioteką, do której zastosowaliśmy model zrozumienia dokumentów SharePoint Syntex w poprzedniej sekcji.
 
-Po dołączeniu SharePoint dokumentów będzie można wyświetlać wszystkie sklasyfikowane umowy za pomocą domyślnego widoku listy.
+Po dołączeniu biblioteki dokumentów SharePoint będzie można wyświetlić wszystkie niejawne kontrakty za pośrednictwem domyślnego widoku listy.
 
-   ![Widok listy SharePoint biblioteki.](../media/content-understanding/list-view.png)
+   ![Widok listy biblioteki SharePoint.](../media/content-understanding/list-view.png)
 
-## <a name="customize-your-contracts-tab-tile-view"></a>Dostosowywanie widoku kafelka karty Umowy
+## <a name="customize-your-contracts-tab-tile-view"></a>Dostosowywanie widoku kafelka karty Kontrakty
 
 > [!NOTE]
-> Ta sekcja odwołuje się do przykładów kodu zawartych w pliku [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) , który znajduje się w repozytorium Rozwiązania do zarządzania [umowami](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management).
+> W tej sekcji odwołują się do przykładów kodu zawartych w pliku [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) , który znajduje się w [repozytorium Zasobów rozwiązania do zarządzania kontraktami](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management).
 
-Chociaż Teams pozwala na wyświetlanie umów w widoku kafelków, możesz dostosować je tak, aby były wyświetlane dane kontraktu, które mają być widoczne na karcie umowy. Na przykład na karcie **Umowy** członkowie mogą zobaczyć klienta, wykonawcę i kwotę opłaty na karcie umowy. Wszystkie te pola zostały wyodrębnione z każdej umowy za pośrednictwem SharePoint Syntex dokumentów, który został zastosowany do biblioteki dokumentów. Chcesz również mieć możliwość zmiany kolorów paska nagłówka kafelków na różne dla poszczególnych stanów, aby członkowie mogli łatwo zobaczyć, gdzie umowa jest w procesie zatwierdzania. Na przykład wszystkie zatwierdzone umowy będą zawierały niebieski pasek nagłówka.
+Chociaż Teams umożliwia wyświetlanie kontraktów w widoku kafelka, warto je dostosować, aby wyświetlić dane kontraktu, które mają być widoczne na karcie kontraktu. Na przykład na **karcie Kontrakty** ważne jest, aby członkowie widzieli klienta, wykonawcę i kwotę opłaty na karcie umowy. Wszystkie te pola zostały wyodrębnione z każdego kontraktu za pośrednictwem modelu SharePoint Syntex, który został zastosowany do biblioteki dokumentów. Chcesz również mieć możliwość zmiany paska nagłówka kafelka na różne kolory dla każdego stanu, aby członkowie mogli łatwo zobaczyć, gdzie kontrakt znajduje się w procesie zatwierdzania. Na przykład wszystkie zatwierdzone kontrakty będą miały niebieski pasek nagłówka.
 
    ![Widok kafelka biblioteki SharePoint.](../media/content-understanding/tile.png)
 
-Niestandardowy widok kafelków, który jest używany, wymaga zmiany w pliku JSON używanym do formatowania bieżącego widoku kafelków. Można odwołać się do pliku JSON użytego do utworzenia widoku karty, patrząc na plik [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) . W poniższych sekcjach zobaczysz konkretne sekcje kodu dla funkcji, które znajdują się na kartach umowy.
+Niestandardowy widok kafelka, którego używasz, wymaga wprowadzenia zmian w pliku JSON używanym do formatowania bieżącego widoku kafelka. Możesz odwołać się do pliku JSON użytego do utworzenia widoku karty, przeglądając plik [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) . W poniższych sekcjach zostaną wyświetlone konkretne sekcje kodu dla funkcji znajdujących się na kartach kontraktów.
 
-Jeśli chcesz wyświetlić lub wprowadzić zmiany w kodzie JSON widoku w kanale programu Teams, w kanale Teams wybierz menu rozwijane widok, a następnie wybierz polecenie Formatuj bieżący **widok.**
+Jeśli chcesz wyświetlić lub wprowadzić zmiany w kodzie JSON widoku w kanale Teams, w kanale Teams wybierz menu rozwijane widok, a następnie wybierz pozycję **Formatuj bieżący widok**.
 
-   ![Zrzut ekranu przedstawiający format json w Teams kanału.](../media/content-understanding/jason-format.png)
+   ![Zrzut ekranu przedstawiający format json w kanale Teams.](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>Rozmiar i kształt karty
 
-W pliku [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) w następnej sekcji przedstawiono kod formatowania rozmiaru i kształtu wizytówki.
+W pliku [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) zapoznaj się z następującą sekcją, aby zobaczyć kod formatowania rozmiaru i kształtu karty.
 
 ```JSON
                   {
@@ -82,9 +82,9 @@ W pliku [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob
                       }
 ```
 
-## <a name="contract-status"></a>Stan umowy
+## <a name="contract-status"></a>Stan kontraktu
 
-Poniższy kod pozwala zdefiniować stan każdej karty tytułowej. Pamiętaj, że każda wartość *stanu (Nowy**, W* recenzji, *Zatwierdzone* i Odrzucone *) będzie* wyświetlać inny kod koloru dla każdego z nich. W [pliku ContractTileFormatting.json przyjrzyj](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) się sekcji definiującej stan.
+Poniższy kod umożliwia zdefiniowanie stanu każdej karty tytułu. Należy pamiętać, że każda wartość stanu (*New*, *In review*, *Approved*, and *Rejected*) będzie wyświetlać inny kod koloru dla każdego z nich. W pliku [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) zapoznaj się z sekcją definiującą stan.
 
 ```JSON
           {
@@ -106,13 +106,13 @@ Poniższy kod pozwala zdefiniować stan każdej karty tytułowej. Pamiętaj, że
 
 ## <a name="extracted-fields"></a>Wyodrębnione pola
 
-Na każdej karcie umowy będą wyświetlane trzy pola wyodrębnione dla każdej umowy (*Klient*, *Wykonawca* i *Kwota opłaty*). Ponadto chcesz wyświetlić również datę/godzinę klasyfikacji pliku przy SharePoint Syntex używanym do jego identyfikowania.
+Na każdej karcie kontraktu zostaną wyświetlone trzy pola wyodrębnione dla każdej umowy (*Klient*, *Wykonawca* i *Kwota opłaty*). Ponadto chcesz również wyświetlić godzinę/datę sklasyfikowania pliku przez model SharePoint Syntex używany do jego identyfikacji.
 
-W pliku [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) poniższe sekcje określają każdy z nich.
+W pliku [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) poniższe sekcje definiują każdą z nich.
 
 ### <a name="client"></a>Klient
 
-Ta sekcja określa sposób wyświetlania informacji "Klient" na karcie i używa wartości określonej umowy.
+W tej sekcji zdefiniowano sposób wyświetlania elementu "Klient" na karcie i użyto wartości dla określonego kontraktu.
 
 ```JSON
                       {
@@ -136,7 +136,7 @@ Ta sekcja określa sposób wyświetlania informacji "Klient" na karcie i używa 
 
 ### <a name="contractor"></a>Wykonawca
 
-Ta sekcja określa sposób wyświetlania "Wykonawcy" na karcie i wykorzystuje wartość określonej umowy.
+W tej sekcji zdefiniowano sposób wyświetlania elementu "Wykonawca" na karcie i użyto wartości dla określonej umowy.
 
 ```JSON
                         {
@@ -160,7 +160,7 @@ Ta sekcja określa sposób wyświetlania "Wykonawcy" na karcie i wykorzystuje wa
 
 ### <a name="fee-amount"></a>Kwota opłaty
 
-Ta sekcja określa sposób wyświetlania kwoty opłaty na karcie i używa wartości określonej umowy.
+W tej sekcji zdefiniowano sposób wyświetlania "Kwoty opłaty" na karcie i użyto wartości dla określonej umowy.
 
 ```JSON
                       {
@@ -184,7 +184,7 @@ Ta sekcja określa sposób wyświetlania kwoty opłaty na karcie i używa warto�
 
 ### <a name="classification-date"></a>Data klasyfikacji
 
-Ta sekcja określa sposób wyświetlania na karcie informacji "Klasyfikacja" i używa wartości określonej umowy.
+W tej sekcji zdefiniowano sposób wyświetlania "Klasyfikacja" na karcie i użyto wartości dla konkretnego kontraktu.
 
 ```JSON
                       {
@@ -208,4 +208,4 @@ Ta sekcja określa sposób wyświetlania na karcie informacji "Klasyfikacja" i u
 
 ## <a name="next-step"></a>Następny krok
 
-[Krok 3. Przy Power Automate tworzenia przepływu pracy w celu przetwarzania umów](solution-manage-contracts-step3.md)
+[Krok 3. Tworzenie przepływu do przetwarzania kontraktów przy użyciu Power Automate](solution-manage-contracts-step3.md)

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 631a141ca6c898c6394bfd34839fd65d351fe8fc
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665541"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368182"
 ---
 # <a name="device-inventory"></a>Spisz urządzeń
 
@@ -30,13 +30,17 @@ ms.locfileid: "64665541"
 
 - [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-**Lista Urządzenia** zawiera listę urządzeń w sieci, dla których wygenerowano alerty. Domyślnie kolejka wyświetla urządzenia widoczne w ciągu ostatnich 30 dni.
+**Spis urządzeń** zawiera listę urządzeń w sieci, dla których wygenerowano alerty. Domyślnie kolejka wyświetla urządzenia widoczne w ciągu ostatnich 30 dni.
 
 W skrócie zobaczysz informacje, takie jak domena, poziom ryzyka, platforma systemu operacyjnego i inne szczegóły ułatwiające identyfikację urządzeń najbardziej zagrożonych.
+
+> [!NOTE]
+> Spis urządzeń jest dostępny w różnych usługach Microsoft 365 Defender. Dostępne informacje będą się różnić w zależności od licencji. W przypadku korzystania z [Ochrona punktu końcowego w usłudze Microsoft Defender planu 2](https://go.microsoft.com/fwlink/p/?linkid=2154037) uzyskasz najbardziej kompletny zestaw możliwości.
 
 Istnieje kilka opcji, które można wybrać, aby dostosować widok listy urządzeń. Na górnym pasku nawigacyjnym można:
 

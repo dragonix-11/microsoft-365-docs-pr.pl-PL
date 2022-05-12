@@ -17,19 +17,21 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c9fe313994e7468004e17df05b1ec4d7c3cf7a6b
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173710"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65367957"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
+
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,10 +39,13 @@ ms.locfileid: "65173710"
 Ochrona punktu końcowego w usłudze Microsoft Defender to platforma zabezpieczeń punktu końcowego przedsiębiorstwa, która pomaga sieciom przedsiębiorstw w zapobieganiu zaawansowanym zagrożeniom, wykrywaniu i badaniu ich oraz reagowaniu na nie.
 
 > [!TIP]
-> Ochrona punktu końcowego w usłudze Microsoft Defender jest dostępna w dwóch planach: Defender for Endpoint Plan 1 i Plan 2. W tym artykule opisano funkcje i możliwości zawarte w każdym planie. [Dowiedz się więcej o Ochrona punktu końcowego w usłudze Microsoft Defender planie 1 i planie 2](defender-endpoint-plan-1-2.md).
-> 
+> Ochrona punktu końcowego w usłudze Microsoft Defender jest dostępna w dwóch planach: Defender for Endpoint Plan 1 i Plan 2. Nowy dodatek Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender jest teraz dostępny dla planu 2.
+>
+> Aby uzyskać więcej informacji na temat funkcji i możliwości zawartych w każdym planie, w tym nowego dodatku Defender Vulnerability Management, zobacz [Porównanie planów Ochrona punktu końcowego w usłudze Microsoft Defender](defender-endpoint-plan-1-2.md).
 
 <p><p>
+
+Obejrzyj następujące wideo, aby dowiedzieć się więcej o usłudze Defender for Endpoint:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
@@ -55,7 +60,7 @@ Usługa Defender for Endpoint korzysta z następującej kombinacji technologii w
 <center><h2>Ochrona punktu końcowego w usłudze Microsoft Defender</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Zarządzanie lukami w zabezpieczeniach & zagrożeń</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Zarządzanie lukami w zabezpieczeniach usługi Core Defender</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Zmniejszanie obszaru podatnego na ataki</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Ochrona nowej generacji</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Wykrywanie i reagowanie na punkty końcowe</b></a></center></td>
@@ -86,9 +91,11 @@ Usługa Defender for Endpoint korzysta z następującej kombinacji technologii w
 
 <a name="tvm"></a>
 
-**[Zarządzanie lukami w zabezpieczeniach & zagrożeń](next-gen-threat-and-vuln-mgt.md)**
+**[Zarządzanie lukami w zabezpieczeniach usługi Core Defender](../defender-vulnerability-management/defender-vulnerability-management.md)**
 
-Ta wbudowana funkcja korzysta ze zmieniającego się w grze podejścia opartego na ryzyku do odnajdywania, określania priorytetów i korygowania luk w zabezpieczeniach punktów końcowych i błędnych konfiguracji.
+Wbudowane podstawowe funkcje zarządzanie lukami w zabezpieczeniach korzystają z nowoczesnego podejścia opartego na ryzyku do odnajdywania, oceny, określania priorytetów oraz korygowania luk w zabezpieczeniach i błędów konfiguracji punktów końcowych. Aby jeszcze bardziej zwiększyć możliwość oceny stanu zabezpieczeń i zmniejszenia ryzyka, dostępny jest nowy dodatek defendera do zarządzania lukami w zabezpieczeniach dla planu 2.
+
+Aby uzyskać więcej informacji na temat różnych dostępnych możliwości zarządzanie lukami w zabezpieczeniach, zobacz [Porównanie ofert Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md).
 
 <a name="asr"></a>
 
@@ -162,7 +169,7 @@ Korzystając z tej ścieżki szkoleniowej z usługi Microsoft Learn, możesz zro
 
 |Szkolenia:|Wykrywanie cyberataków i reagowanie na nie za pomocą Microsoft 365 Defender|
 |---|---|
-|![Microsoft 365 Defender ikona trenowania.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender for Endpoint to rozwiązanie zabezpieczeń punktu końcowego, które oferuje zarządzanie lukami w zabezpieczeniach, ochronę punktów końcowych, wykrywanie i reagowanie w punktach końcowych, ochronę przed zagrożeniami mobilnymi i usługi zarządzane na jednej, ujednoliconej platformie.<p> 2 godz. 25 min — ścieżka Edukacja — 9 modułów|
+|![Microsoft 365 Defender ikona trenowania.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender for Endpoint to rozwiązanie zabezpieczeń punktu końcowego, które oferuje zarządzanie lukami w zabezpieczeniach, ochronę punktów końcowych, wykrywanie i reagowanie w punktach końcowych, ochronę przed zagrożeniami mobilnymi i usługi zarządzane na jednej, ujednoliconej platformie.<p> 2 godz. 25 min — Ścieżka szkoleniowa — 9 modułów|
 
 > [!div class="nextstepaction"]
 > [Rozpocznij >](/learn/paths/defender-endpoint-fundamentals/)
