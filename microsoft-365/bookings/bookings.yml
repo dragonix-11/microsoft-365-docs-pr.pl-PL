@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Bookings
-summary: Planuj terminy i zarządzaj nimi za pomocą usługi Microsoft Bookings. Obejmuje integrację z Outlook i powiadomieniami automatycznymi.
+summary: Planowanie terminów i zarządzanie nimi za pomocą Microsoft Bookings. Obejmuje integrację z Outlook i automatycznymi powiadomieniami.
 metadata:
   title: Microsoft Bookings
-  description: Planuj terminy i zarządzaj nimi za pomocą usługi Microsoft Bookings. Obejmuje integrację z Outlook i powiadomieniami automatycznymi.
+  description: Planowanie terminów i zarządzanie nimi za pomocą Microsoft Bookings. Obejmuje integrację z Outlook i automatycznymi powiadomieniami.
   ms.service: bookings
   ms.topic: landing-page
   author: dmaguire
@@ -18,7 +18,7 @@ metadata:
   ms.lasthandoff: 08/05/2021
   ms.locfileid: "62959483"
 landingContent:
-- title: Informacje o aplikacji Microsoft Bookings
+- title: Informacje o Microsoft Bookings
   linkLists:
   - linkListType: overview
     links:
@@ -28,23 +28,23 @@ landingContent:
     links:
     - text: Pobierz aplikację Bookings
       url: get-bookings-app.md
-- title: Konfigurowanie usługi Microsoft Bookings
+- title: Konfigurowanie Microsoft Bookings
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Wprowadź informacje służbowe
+    - text: Wprowadź informacje o firmie
       url: enter-business-information.md
-    - text: Ustawianie zasad planowania
+    - text: Ustaw zasady planowania
       url: set-scheduling-policies.md
-    - text: Definiowanie ofert usług
+    - text: Zdefiniuj oferty usług
       url: define-service-offerings.md
     - text: Ustawianie godzin pracy pracowników
       url: employee-hours.md
-    - text: Dostosowywanie i publikowanie strony rezerwacji
+    - text: Dostosuj i opublikuj stronę rezerwacji
       url: customize-booking-page.md
-    - text: Tworzenie rezerwacji i personelu
+    - text: Tworzenie rezerwacji i personel
       url: create-a-manual-booking.md
-- title: Zapraszanie osób do rezerwować terminy
+- title: Zapraszanie osób do rezerwacji terminów
   linkLists:
   - linkListType: how-to-guide
     links:
