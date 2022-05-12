@@ -2,10 +2,11 @@
 title: Zestaw laboratoryjny wdrażania systemu Windows i usługi Office 365
 f1.keywords:
 - NOCSH
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: cdmm12
 manager: dougeby
-ms.date: 11/18/2021
+ms.reviewer: alainme
+ms.date: 05/11/2022
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Dowiedz się, gdzie można uzyskać dostęp do zestawu Windows i Office Deployment Lab Kit.
-ms.openlocfilehash: cbcde8f0593adb54d3496156b1bf83dca1cd5064
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: bfa8d52776e93f4a9c33f484f7d56696fdab31fe
+ms.sourcegitcommit: 35d0c891f3d927f3346044be61ab9f348e8da2b4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363087"
+ms.locfileid: "65364302"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Zestaw laboratoryjny wdrażania systemu Windows i usługi Office 365
 
@@ -30,7 +31,7 @@ Dostępne są dwie wersje laboratorium do bezpłatnego pobrania:
 
 |laboratorium Windows 10|laboratorium Windows 11|
 |---|---|
-|[Środowisko laboratoryjne Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Środowisko laboratoryjne Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Środowisko laboratoryjne Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Środowisko laboratoryjne Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
 |[Przewodniki laboratorium Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab_guides.zip)|[Przewodniki laboratorium Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>Kompletne środowisko laboratoryjne
