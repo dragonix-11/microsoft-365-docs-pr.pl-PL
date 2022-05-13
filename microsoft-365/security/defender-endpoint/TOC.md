@@ -2,7 +2,7 @@
 
 ## [Omówienie]()
 ### [Co to jest Ochrona punktu końcowego w usłudze Microsoft Defender?](microsoft-defender-endpoint.md)
-### [Porównanie planu 1 ochrony punktu końcowego w usłudze Defender z planem 2](defender-endpoint-plan-1-2.md)
+### [Porównaj plany ochrony punktu końcowego w usłudze Microsoft Defender](defender-endpoint-plan-1-2.md)
 ### [Minimalne wymagania](minimum-requirements.md)
 ### [Co nowego w usłudze ochrony punktu końcowego w usłudze Microsoft Defender](whats-new-in-microsoft-defender-endpoint.md)
 ### [Funkcje wersji zapoznawczej](preview.md)
@@ -54,7 +54,6 @@
 
 ##### [Dołącz poprzednią wersję systemu Windows](onboard-downlevel.md)
 
-
 ##### [Dołącz urządzenia z systemem Windows i Windows Server]()
 ###### [Dołącz system Windows Server 2012 R2, 2016, półroczny kanał, 2019 i 2022](configure-server-endpoints.md)
 ###### [Dołącz urządzenia z systemem Windows przy użyciu skryptu lokalnego](configure-endpoints-script.md)
@@ -64,9 +63,6 @@
 ###### [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](configure-endpoints-vdi.md)
 ###### [Dołącz urządzenia wielosesyjne z systemem Windows 10 w pulpicie wirtualnym Windows](onboard-windows-multi-session-device.md)
 
-
-
-
 #### [Integracja z Microsoft Defender dla Chmury](azure-server-integration.md)
 
 #### [Dołącz urządzenia bez dostępu do Internetu](onboard-offline-machines.md)
@@ -74,8 +70,6 @@
 #### [Uruchom symulowane ataki na urządzeniach](attack-simulations.md)
 #### [Konfiguruj ustawienia serwera proxy i połączenia internetowego](configure-proxy-internet.md)
 #### [Utwórz regułę powiadomienia o dołączaniu lub odłączaniu](onboarding-notification.md)
-
-
 
 ### [Usługa ochrony punktu końcowego w usłudze Microsoft Defender w innych systemach operacyjnych]()
 #### [Dołącz urządzenia z system operacyjnym innym niż Windows](configure-endpoints-non-windows.md)
@@ -118,7 +112,6 @@
 ##### [Prywatność](mac-privacy.md)
 ##### [Zasoby](mac-resources.md)
 
-
 #### [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie]()
 ##### [Omówienie usługi ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](microsoft-defender-endpoint-linux.md)
 ##### [Co nowego](linux-whatsnew.md)
@@ -137,7 +130,6 @@
 ###### [Wykryj i zablokuj potencjalnie niechciane aplikacje](linux-pua.md)
 ###### [Zaplanuj skany z usługą ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-schedule-scan-mde.md)
 ###### [Zaplanuj aktualizację usługi ochrony punktu końcowego w usłudze Microsoft Defender (Linux)](linux-update-MDE-Linux.md)
-
 
 ##### [Rozwiązywanie problemów]()
 ###### [Rozwiąż problemy z instalacją](linux-support-install.md)
@@ -184,17 +176,12 @@
 
 ###### [Prywatność](ios-privacy.md)
 
-
 ### [Zarządzaj ustawieniami konfiguracji usługi ochrony punktu końcowego w usłudze Microsoft Defender na urządzeniach z programem Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Rozwiąż problemy z dołączaniem]()
 #### [Rozwiąż problemy podczas dołączania](troubleshoot-onboarding.md)
 #### [Rozwiąż problemy z dostępem do subskrypcji i portalu](troubleshoot-onboarding-error-messages.md)
 #### [Rozwiąż problemy z dołączaniem do zarządzania konfiguracją zabezpieczeń](troubleshoot-security-config-mgt.md)
-
-
-
-
 
 ### [Konfiguruj ustawienia portalu]()
 #### [Konfiguruj ogólne ustawienia usługi ochrony punktu końcowego w usłudze Microsoft Defender](preferences-setup.md)
@@ -230,30 +217,7 @@
 #### [Skonfiguruj ustawienia strefy czasowej Centrum zabezpieczeń usługi Microsoft Defender](time-settings.md)
 
 ## [Wykryj zagrożenia i chroń punkty końcowe]()
-### [Zarządzanie zagrożeniami i lukami w zabezpieczeniach]()
-#### [Omówienie](next-gen-threat-and-vuln-mgt.md)
-#### [Wprowadzenie]()
-##### [Uprawnienia i wymagania wstępne](tvm-prerequisites.md)
-##### [Obsługiwane platformy i możliwości systemów operacyjnych](tvm-supported-os.md)
-##### [Przypisz wartość urządzenia](tvm-assign-device-value.md)
-#### [Ocenianie postawy dotyczącej zabezpieczeń]()
-##### [Szczegółowe informacje pulpitu nawigacyjnego](tvm-dashboard-insights.md)
-##### [Stopień zagrożenia](tvm-exposure-score.md)
-##### [Wskaźnik bezpieczeństwa Microsoft dla urządzeń](tvm-microsoft-secure-score-devices.md)
-#### [Zwiększ stan zabezpieczeń i zmniejsz ryzyko]()
-##### [Uwzględnij rekomendacje dotyczące zabezpieczeń](tvm-security-recommendation.md)
-##### [Koryguj luki w zabezpieczeniach](tvm-remediation.md)
-##### [Wyjątki dla rekomendacji dotyczących zabezpieczeń](tvm-exception.md)
-##### [Zaplanuj zakończenie wsparcia technicznego](tvm-end-of-support-software.md)
-##### [Łagodź luki w zabezpieczeniach zero-day](tvm-zero-day-vulnerabilities.md)
-#### [Zrozum luki w zabezpieczeniach na Twoich urządzeniach]()
-##### [Spis oprogramowania](tvm-software-inventory.md)
-##### [Luki w zabezpieczeniach w mojej organizacji](tvm-weaknesses.md)
-##### [Oś czasu zdarzenia](threat-and-vuln-mgt-event-timeline.md)
-##### [Raport urządzeń podatnych na zagrożenia](tvm-vulnerable-devices-report.md)
-##### [Wykrywaj narażone urządzenia](tvm-hunt-exposed-devices.md)
-#### [Wytyczne dotyczące aktywnych zagrożeń i kampanii]()
-##### [Zarządzanie luką w zabezpieczeniach Log4Shell](tvm-manage-log4shell-guidance.md)
+### [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 ### [Wykrywanie urządzeń]()
 #### [Omówienie wykrywania urządzeń](device-discovery.md)
 #### [Konfiguruj wykrywanie urządzeń](configure-device-discovery.md)
@@ -395,14 +359,15 @@
 ##### [Blokowanie behawioralne klienta](client-behavioral-blocking.md)
 ##### [Blokowanie pętli opinii](feedback-loop-blocking.md)
 
-
 ### [Rozwiązywanie problemów z wynikami fałszywie pozytywnymi/negatywnymi w ochronie punktu końcowego w usłudze Microsoft Defender](defender-endpoint-false-positives-negatives.md)
-
 
 ### [Zarządzaj konfiguracją urządzenia]()
 
 #### [Zwiększ zgodność do planu bazowego zabezpieczeń](configure-machines-security-baseline.md)
 #### [Optymalizuj wdrażanie i wykrywanie reguł zmniejszania obszaru ataków](configure-machines-asr.md)
+
+## [Wytyczne dotyczące aktywnych zagrożeń i kampanii]()
+### [Zarządzanie luką w zabezpieczeniach Log4Shell](tvm-manage-log4shell-guidance.md)
 
 ## [Badanie zagrożeń i odpowiadanie na nie]()
 ### [Wykrywanie i reagowanie dotyczące punktów końcowych]()
@@ -520,7 +485,6 @@
 ####### [Pobierz informacje o urządzeniu powiązanym z alertem](get-alert-related-machine-info.md)
 ####### [Pobierz informacje o użytkowniku powiązanym z alertem](get-alert-related-user-info.md)
 
-
 ###### [Ocena luk w zabezpieczeniach i bezpiecznych konfiguracji]()
 ####### [Eksportuj metody oceny i właściwości](get-assessment-methods-properties.md)
 ####### [Eksportuj ocenę bezpiecznej konfiguracji](get-assessment-secure-config.md)
@@ -532,6 +496,9 @@
 ####### [Wylistuj badanie](get-investigation-collection.md)
 ####### [Pobierz badanie](get-investigation-object.md)
 ####### [Uruchom badanie](initiate-autoir-investigation.md)
+
+###### [Spis certyfikatów]()
+####### [Eksportuj ocenę spisu certyfikatów](export-certificate-inventory-assessment.md)
 
 ###### [Domain (Domena)]()
 ####### [Pobierz alerty powiązane z domeną](get-domain-related-alerts.md)
@@ -562,7 +529,6 @@
 ####### [Przekaż do biblioteki dokumentów reagowania w czasie rzeczywistym](upload-library.md)
 ####### [Usuń z biblioteki dokumentów](delete-library.md)
 
-
 ###### [Komputer]()
 ####### [Metody i właściwości komputera](machine.md)
 ####### [Wylistuj komputery](get-machines.md)
@@ -578,8 +544,6 @@
 ####### [Pobierz brakujące KB](get-missing-kbs-machine.md)
 ####### [Ustaw wartość urządzenia](set-device-value.md)
 ####### [Zaktualizuj komputer](update-machine-method.md)
-
-
 
 ###### [Akcja komputera]()
 ####### [Metody i właściwości akcji komputera](machineaction.md)
@@ -617,6 +581,11 @@
 ####### [Wylistuj stopień zagrożenia według grupy komputera](get-machine-group-exposure-score.md)
 ####### [Pobierz stopnień zagrożenia](get-exposure-score.md)
 ####### [Pobierz wskaźnik bezpieczeństwa urządzenia](get-device-secure-score.md)
+
+###### [Punkty odniesienia zabezpieczeń]()
+####### [Eksportuj ocenę punktów odniesienia zabezpieczeń](export-security-baseline-assessment.md)
+####### [Wyświetl listę profilów oceny punktów odniesienia zabezpieczeń](get-security-baselines-assessment-profiles.md)
+####### [Wyświetl listę konfiguracji oceny punktów odniesienia zabezpieczeń](get-security-baselines-assessment-configurations.md)
 
 ###### [Oprogramowanie]()
 ####### [Metody i właściwości oprogramowania](software.md)
