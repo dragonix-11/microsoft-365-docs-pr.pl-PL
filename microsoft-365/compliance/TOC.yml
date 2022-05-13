@@ -455,10 +455,10 @@
               href: ome-sensitive-info-types.md
             - name: Zarządzanie szyfrowaniem wiadomości
               href: manage-office-365-message-encryption.md
-            - name: Dziennik aktywności portalu zaszyfrowanych wiadomości
-              href: ome-message-access-logs.md
             - name: Zaawansowane szyfrowanie wiadomości
               href: ome-advanced-message-encryption.md
+            - name: Dziennik aktywności portalu zaszyfrowanych wiadomości
+              href: ome-message-access-logs.md
             - name: Ustaw datę wygaśnięcia wiadomości e-mail zaszyfrowanych przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
               href: ome-advanced-expiration.md
             - name: Odwołaj wiadomości e-mail zaszyfrowane przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview

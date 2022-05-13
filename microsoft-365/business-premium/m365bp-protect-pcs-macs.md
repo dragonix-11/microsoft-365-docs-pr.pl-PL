@@ -1,5 +1,5 @@
 ---
-title: Ochrona niezarządzanych komputerów Windows 10 i komputerów Mac w Microsoft 365 Business Premium
+title: Ochrona niezarządzanych komputerów Windows i komputerów Mac w Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Ochrona urządzeń niezarządzanych lub przynieś własne urządzenia (BYOD) przed cyberatakami za pomocą Microsoft 365 Business Premium. Jak skonfigurować cyberbezpieczeństwo dla komputerów Windows i komputerów Mac.
-ms.openlocfilehash: 0b13c208fd2cdd0fcadf7f5bc820d41b3621eebd
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2c2c94e79e7f694e75ab6aeb6ed38005dbd1f2f4
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318839"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393247"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Ochrona niezarządzanych komputerów Windows 10 i komputerów Mac w Microsoft 365 Business Premium
+# <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Ochrona niezarządzanych komputerów Windows i komputerów Mac w Microsoft 365 Business Premium
 
 Ten cel koncentruje się na tworzeniu ochrony dla wszelkich niezarządzanych komputerów Windows 10 i komputerów Mac, które nie są zarejestrowane w Microsoft Intune. Jest bardzo prawdopodobne, że twoja mała firma lub kampania może mieć pracowników, którzy przynoszą własne urządzenia (BYOD), a te urządzenia nie są zarządzane. Dyski BYOD obejmują telefony, tablety i komputery należące do użytkownika. 
 

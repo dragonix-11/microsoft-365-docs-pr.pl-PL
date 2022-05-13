@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie zespołu z izolacją zabezpieczeń
+title: Konfigurowanie zespołu z izolacją zabezpieczeń przy użyciu unikatowej etykiety poufności
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -18,14 +18,14 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Dowiedz się, jak utworzyć zespół z unikatową etykietą poufności dla zabezpieczeń.
-ms.openlocfilehash: cfea35dccd09e0eea361e56f1914700660b7fdd4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 15f155255518df38921288f68dcc9365703e4f2a
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943134"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393115"
 ---
-# <a name="configure-a-team-with-security-isolation"></a>Konfigurowanie zespołu z izolacją zabezpieczeń
+# <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>Konfigurowanie zespołu z izolacją zabezpieczeń przy użyciu unikatowej etykiety poufności
 
 Ten artykuł zawiera zalecenia i kroki konfigurowania prywatnego zespołu w Microsoft Teams i używania unikatowej etykiety poufności do szyfrowania plików, aby tylko członkowie zespołu mogli je odszyfrować.
 
@@ -111,7 +111,7 @@ Jeśli masz partnera wewnętrznego lub grupę uczestników projektu, którzy pow
 
 Aby utworzyć etykietę poufności
 
-1. Otwórz portal zgodności usługi Microsoft Purview, a następnie w obszarze **Rozwiązania** wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Ochrona informacji**</a>.
+1. Otwórz portal zgodności Microsoft Purview, a następnie w obszarze **Rozwiązania** wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Ochrona informacji**</a>.
 1. Kliknij **pozycję Utwórz etykietę**.
 1. Nadaj etykiecie nazwę. Sugerujemy nadanie nazwy zespołowi, z którą będziesz go używać.
 1. Dodaj nazwę wyświetlaną i opis, a następnie kliknij przycisk **Dalej**.
@@ -143,7 +143,7 @@ Po utworzeniu etykiety musisz opublikować ją dla użytkowników, którzy będ�
 
 Aby opublikować etykietę poufności:
 
-1. W portalu zgodności usługi Microsoft Purview na <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">stronie **Ochrona informacji**</a> wybierz kartę **Zasady etykiet**.
+1. W portal zgodności Microsoft Purview na <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">stronie **Ochrona informacji**</a> wybierz kartę **Zasady etykiet**.
 2. Kliknij pozycję **Publikuj etykiety**.
 3. Na stronie **Wybieranie etykiet poufności do opublikowania** kliknij pozycję **Wybierz etykiety poufności do opublikowania**.
 4. Wybierz utworzoną etykietę, a następnie kliknij przycisk **Dodaj**.
@@ -269,4 +269,4 @@ W razie potrzeby ponownie wytrenuj użytkowników.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Privileged Identity Management usługi Azure AD](/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

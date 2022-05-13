@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 25085dc22fd2f939e10833c98bc4fb599dd5a11f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: a4df65d0364aff71c3d3bbfb261952859d6d8ecf
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172616"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393093"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Korzystanie z pulpitu nawigacyjnego zarządzania lukami w zabezpieczeniach & w Microsoft Defender dla Firm
 
@@ -31,11 +31,11 @@ Microsoft Defender dla Firm zawiera pulpit nawigacyjny zarządzania lukami w zab
 - Wyświetlanie najważniejszych zaleceń dotyczących zabezpieczeń, takich jak rozwiązywanie problemów z upośledzoną komunikacją z urządzeniami, włączanie ochrony zapory lub aktualizowanie definicji Program antywirusowy Microsoft Defender
 - Wyświetlanie działań korygowania, takich jak wszystkie pliki wysłane do kwarantanny lub luki w zabezpieczeniach znalezione na urządzeniach
 
-Chcesz zobaczyć, jak to działa? Obejrzyj ten film wideo, w którym opisano zarządzanie lukami w zabezpieczeniach & zagrożeń w [Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/microsoft-defender-endpoint.md).
+Chcesz zobaczyć, jak to działa? Obejrzyj to wideo, w którym opisano [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1FX]
 
-Aby dowiedzieć się więcej na temat zarządzania lukami w zabezpieczeniach & zagrożeń, zobacz [Temat Threat and zarządzanie lukami w zabezpieczeniach in Ochrona punktu końcowego w usłudze Microsoft Defender (Zarządzanie zagrożeniami i zarządzanie lukami w zabezpieczeniach w Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)).
+[Dowiedz się więcej o Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
 >
 > **Masz minutę?**

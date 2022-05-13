@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1cf677ccf4716ede6182db48bb1e1a2622fd9abe
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 730eb90202acff9efad1cc2f01fd60431366e997
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65369556"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393442"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>Eksportowanie oceny punktów odniesienia zabezpieczeń na urządzenie
 
@@ -53,23 +53,32 @@ Dane zbierane przy użyciu "_odpowiedzi JSON_ lub _za pośrednictwem plików_" t
 
 Zwraca wszystkie oceny punktów odniesienia zabezpieczeń dla wszystkich urządzeń na poszczególnych urządzeniach. Zwraca tabelę z oddzielnym wpisem dla każdej unikatowej kombinacji elementów DeviceId, ProfileId i ConfigurationId.
 
-#### <a name="12-limitations"></a>1.2 Ograniczenia
+### <a name="12-permissions"></a>1.2 Uprawnienia
+
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender](apis-intro.md), aby uzyskać szczegółowe informacje.
+
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
+:---|:---|:---
+Aplikacja|SecurityBaselinesAssessment.Read.All |"Odczytywanie wszystkich informacji o ocenach punktów odniesienia zabezpieczeń"
+Delegowane (konto służbowe)|SecurityBaselinesAssessment.Read|"Odczytywanie informacji o ocenach punktów odniesienia zabezpieczeń"
+
+### <a name="13-limitations"></a>1.3 Ograniczenia
 
 - Maksymalny rozmiar strony to 200 000.
 - Ograniczenia szybkości dla tego interfejsu API to 30 wywołań na minutę i 1000 wywołań na godzinę.
 
-### <a name="13-parameters"></a>Parametry 1.3
+### <a name="14-parameters"></a>Parametry 1.4
 
 - pageSize (wartość domyślna = 50 000): liczba wyników w odpowiedzi.
 - $top: liczba wyników do zwrócenia (nie zwraca @odata.nextLink, więc nie ściąga wszystkich danych).
 
-### <a name="14-http-request"></a>1.4 Żądanie HTTP
+### <a name="15-http-request"></a>1.5 Żądanie HTTP
 
 ```http
 GET /api/machines/baselineComplianceAssessmentByMachine
 ```
 
-### <a name="15-properties-json-response"></a>1.5 Właściwości (odpowiedź JSON)
+### <a name="16-properties-json-response"></a>1.6 Właściwości (odpowiedź JSON)
 
 > [!NOTE]
 > Każdy rekord to około 1 KB danych. Należy wziąć to pod uwagę podczas wybierania prawidłowego parametru pageSize.
@@ -97,15 +106,15 @@ Właściwość (ID)|Typ danych|Opis
 |Currentvalue|Ciąg|Zestaw wykrytych wartości znalezionych na urządzeniu.
 |Źródło|Ciąg|Ścieżka rejestru lub inna lokalizacja używana do określania bieżącego ustawienia urządzenia.
 
-## <a name="16-example"></a>Przykład 1.6
+## <a name="17-example"></a>Przykład 1.7
 
-### <a name="161-request-example"></a>1.6.1 Przykład żądania
+### <a name="171-request-example"></a>1.7.1 Przykład żądania
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAssessmentByMachine
 ```
 
-### <a name="162-response-example"></a>Przykład odpowiedzi 1.6.2
+### <a name="172-response-example"></a>Przykład odpowiedzi 1.7.2
 
 ```json
 { 
