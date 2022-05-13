@@ -14,12 +14,12 @@ metadata:
   ms.author: macapara
   ms.date: 10/18/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: d141c9f8b6109bd55bd64e5839db552fc13588de
-  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+  ms.openlocfilehash: 74b5ca4b6abed02f5015a6c6c09e15ce7fcda5cc
+  ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 12/30/2021
-  ms.locfileid: "62970547"
+  ms.lasthandoff: 05/12/2022
+  ms.locfileid: "65368204"
 landingContent:
 - title: Ochrona punktu końcowego w usłudze Microsoft Defender
   linkLists:
@@ -27,9 +27,9 @@ landingContent:
     links:
     - text: Co to jest Ochrona punktu końcowego w usłudze Microsoft Defender?
       url: microsoft-defender-endpoint.md
-    - text: Co to jest ochrona punktu końcowego w usłudze Defender (plan 1)?
+    - text: Co to jest ochrona punktu końcowego w usłudze Microsoft Defender – plan 1?
       url: defender-endpoint-plan-1.md
-    - text: Porównanie planu 1 ochrony punktu końcowego w usłudze Defender z planem 2
+    - text: Porównanie planów ochrony punktu końcowego w usłudze Microsoft Defender
       url: defender-endpoint-plan-1-2.md
   - linkListType: whats-new
     links:
@@ -105,8 +105,8 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Zarządzanie zagrożeniami i lukami w zabezpieczeniach
-      url: next-gen-threat-and-vuln-mgt.md
+    - text: Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender
+      url: ../defender-vulnerability-management/defender-vulnerability-management.md
     - text: Zmniejszanie obszaru podatnego na ataki
       url: overview-attack-surface-reduction.md
     - text: Ochrona nowej generacji
