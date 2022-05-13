@@ -61,7 +61,7 @@
               href: configure-teams-sensitive-protection.md
             - name: Konfigurowanie ochrony wysoce wrażliwych danych
               href: configure-teams-highly-sensitive-protection.md
-            - name: Konfigurowanie zespołu z izolacją zabezpieczeń
+            - name: Konfigurowanie zespołu z unikatową etykietą poufności
               href: secure-teams-security-isolation.md
         - name: Konfigurowanie udostępniania zewnętrznego
           items:

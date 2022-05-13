@@ -2,43 +2,43 @@
   href: index.md
 - name: Modele niestandardowe
   items:
-    - name: Opis dokumentu
+    - name: Analiza dokumentu
       items:
         - name: Omówienie
           href: document-understanding-overview.md
         - name: Różnice między modelami
           href: difference-between-document-understanding-and-form-processing-model.md
-        - name: Importowanie przykładowego modelu
+        - name: Importuj przykładowy model
           href: learn-about-document-understanding-models-through-the-sample-model.md
-        - name: Tworzenie centrum zawartości
+        - name: Utwórz centrum zawartości
           href: create-a-content-center.md
-        - name: Tworzenie klasyfikatora
+        - name: Utwórz klasyfikator
           href: create-a-classifier.md
-        - name: Duplikowanie modelu
+        - name: Duplikuj model
           href: duplicate-a-model.md
-        - name: Zmienianie nazwy modelu
+        - name: Zmień nazwę modelu
           href: rename-a-model.md
-        - name: Tworzenie wyodrębnianego
+        - name: Utwórz ekstraktor
           href: create-an-extractor.md
-        - name: Zmienianie nazwy wyodrębnianego
+        - name: Zmień nazwę ekstraktora
           href: rename-an-extractor.md
-        - name: Typy objaśnień
+        - name: Typy wyjaśnień
           href: explanation-types-overview.md
-        - name: Korzystanie z szablonów objaśnień
+        - name: Użyj szablonów objaśnień
           href: explanation-templates.md
-        - name: Stosowanie modelu rozumienia dokumentu
+        - name: Zastosuj model do analizy dokumentu
           href: apply-a-model.md
-        - name: Publikowanie i odnajdywanie modelu
+        - name: Opublikuj i odnajdź model
           href: model-discovery.md
-        - name: Stosowanie etykiety przechowywania
+        - name: Zastosuj etykietę przechowywania
           href: apply-a-retention-label-to-a-model.md
-        - name: Stosowanie etykiety wrażliwości
+        - name: Stosowanie etykiety poufności
           href: apply-a-sensitivity-label-to-a-model.md
-        - name: Tworzenie modelu lokalnego
+        - name: Utwórz model lokalny
           href: create-local-model.md
         - name: Analiza użycia modelu
           href: model-usage-analytics.md
-        - name: Korzystanie z taksonomii magazynu terminów podczas tworzenia wyodrębnianego
+        - name: Wykorzystanie taksonomii magazynu terminów podczas tworzenia ekstraktora
           href: leverage-term-store-taxonomy.md
         - name: Tryb ułatwień dostępu
           href: accessibility-mode.md
@@ -48,21 +48,21 @@
           href: form-processing-overview.md
         - name: Różnice między modelami
           href: difference-between-document-understanding-and-form-processing-model.md
-        - name: Tworzenie modelu przetwarzania formularzy
+        - name: Utwórz model przetwarzania formularzy
           href: create-a-form-processing-model.md
-        - name: Stosowanie etykiety przechowywania
+        - name: Zastosuj etykietę przechowywania
           href: apply-a-retention-label-to-a-model.md
         - name: Analiza użycia modelu
           href: model-usage-analytics.md
-- name: Wbudowane modele
+- name: Wstępnie utworzone modele
   items:
     - name: Omówienie
       href: prebuilt-overview.md
-    - name: Wbudowane modele faktur i pokwitowania
+    - name: Wstępnie utworzone modele faktur i paragonów
       href: prebuilt-models.md
-    - name: Stosowanie etykiety przechowywania
+    - name: Zastosuj etykietę przechowywania
       href: apply-a-retention-label-to-a-model.md
-    - name: Tworzenie modelu lokalnego
+    - name: Utwórz model lokalny
       href: create-local-model.md
     - name: Analiza użycia modelu
       href: model-usage-analytics.md
@@ -78,21 +78,21 @@
   items:
     - name: Importowanie przy użyciu usługi SKOS
       href: import-term-set-skos.md
-    - name: Odwołanie do formatowania SKOS
+    - name: Dokumentacja formatowania SKOS
       href: skos-format-reference.md
     - name: Wypychanie typu zawartości do centrum
       href: push-content-type-to-hub.md
-    - name: Raporty dotyczące magazynu okresów
+    - name: Raporty magazynu terminów
       href: term-store-analytics.md
-- name: Konfiguracja i administrowanie
+- name: Konfiguracja i administracja
   items:
-    - name: Licencjonowanie oprogramowania SharePoint Syntex
+    - name: Licencjonowanie usługi SharePoint Syntex
       href: syntex-licensing.md
-    - name: Konfigurowanie SharePoint Syntex
+    - name: Konfigurowanie usługi SharePoint Syntex
       href: set-up-content-understanding.md
-    - name: Tworzenie centrum zawartości
+    - name: Utwórz centrum zawartości
       href: create-a-content-center.md
-    - name: Zarządzanie SharePoint Syntex za pomocą programu PowerShell
+    - name: Zarządzanie usługą SharePoint Syntex za pomocą programu PowerShell
       items:
         - name: Omówienie
           href: powershell-syntex-intro.md
@@ -100,29 +100,31 @@
           href: powershell-syntex-import-export.md
         - name: Publikowanie modeli
           href: powershell-syntex-publishing.md
-        - name: Żądanie przetworzenia za pomocą modelu
+        - name: Przetwarzanie żądań przez model
           href: powershell-syntex-processing.md
         - name: Praca z objaśnieniami modelu
           href: powershell-syntex-explanations.md
-- name: Wdrożenie
+- name: Wdrażanie
   items:
-    - name: Wprowadzenie do wdrożenia
+    - name: Wdrażanie — wprowadzenie
       href: adoption-getstarted.md
     - name: Scenariusze i przypadki użycia
       href: adoption-scenarios.md
+    - name: Ocena środowiska
+      href: adoption-assessment-tool.md
     - name: Uruchamianie wersji próbnej
       href: trial-syntex.md
-    - name: Zarządzanie umowami w programie Microsoft 365
+    - name: Zarządzanie kontraktami na platformie Microsoft 365
       items:
         - name: Omówienie
           href: solution-manage-contracts-in-microsoft-365.md
-        - name: Krok nr 1. Użyj SharePoint Syntex
+        - name: Krok nr 1. Korzystanie z usługi SharePoint Syntex
           href: solution-manage-contracts-step1.md
-        - name: Krok nr 2. Użyj Microsoft Teams
+        - name: Krok nr 2. Korzystanie z aplikacji Microsoft Teams
           href: solution-manage-contracts-step2.md
-        - name: Krok nr 3. Używanie Power Automate
+        - name: Krok nr 3. Korzystanie z usługi Power Automate
           href: solution-manage-contracts-step3.md
-    - name: Szablon witryny Zarządzanie umowami
+    - name: Szablon witryny zarządzania kontraktami
       href: use-contracts-management-site.md
     - name: Szablon witryny Centrum zawartości
       href: use-content-center-site.md
