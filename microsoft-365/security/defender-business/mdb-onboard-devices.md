@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ce3c458013a96f845da528104997b63360879c56
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: ebe8f623842716ab53b4eae64d24ef85b9598099
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174043"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396162"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Dołączanie urządzeń do Microsoft Defender dla Firm
 
@@ -34,7 +34,7 @@ Dzięki Microsoft Defender dla Firm masz do wyboru kilka opcji dołączania urz�
 
 ## <a name="what-to-do"></a>Co robić
 
-1. Wybierz kartę dla systemu operacyjnego: **Windows klientów**, **komputerów z systemem macOS** lub **urządzeń przenośnych**.
+1. Wybierz kartę dla systemu operacyjnego: **Windows klientów**, **macOS komputerów** lub **urządzeń przenośnych**.
 2. Wyświetl opcje dołączania i postępuj zgodnie ze wskazówkami na wybranej karcie.
 3. Przejdź do kolejnych kroków.
 
@@ -78,7 +78,7 @@ Jeśli wolisz używać zasady grupy do dołączania klientów Windows, postępuj
 
 ### <a name="microsoft-intune-for-windows-clients"></a>Microsoft Intune dla klientów Windows
 
-Jeśli Twoja subskrypcja obejmuje Intune, możesz dołączyć Windows klientów i inne urządzenia w centrum administracyjnym Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Jeśli na przykład masz [Microsoft 365 Business Premium](../../business/index.yml), masz Intune w ramach subskrypcji.  
+Jeśli Twoja subskrypcja obejmuje Intune, możesz dołączyć Windows klientów i inne urządzenia w centrum administracyjnym Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Jeśli na przykład masz [Microsoft 365 Business Premium](../../business/index.yml), Intune w ramach subskrypcji.  
 
 Istnieje kilka metod rejestrowania urządzeń w Intune. Zalecamy rozpoczęcie od jednej z następujących metod:
 
@@ -144,35 +144,35 @@ Aby wyświetlić listę urządzeń dołączonych do usługi Defender dla Firm, w
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Jeśli masz inne urządzenia do dołączenia, wybierz kartę odpowiadającą systemowi operacyjnemu na urządzeniach [(Windows klientów, Windows Server, macOS lub urządzenia przenośne](#what-to-do)) i postępuj zgodnie ze wskazówkami na tej karcie.
+- Jeśli masz inne urządzenia do dołączenia, wybierz kartę odpowiadającą systemowi operacyjnego na urządzeniach [(Windows klientom, Windows Server, macOS lub urządzeniom przenośnym](#what-to-do)) i postępuj zgodnie ze wskazówkami na tej karcie.
 - Jeśli skończysz dołączać urządzenia, przejdź do [kroku 5. Konfigurowanie ustawień zabezpieczeń i zasad w Microsoft Defender dla Firm](mdb-configure-security-settings.md)
 - Zobacz [Wprowadzenie przy użyciu Microsoft Defender dla Firm](mdb-get-started.md).
 
 ## <a name="macos"></a>[**macOS**](#tab/macOSdevices)
 
-## <a name="macos-computers"></a>Komputery z systemem macOS
+## <a name="macos-computers"></a>komputery macOS
 
 > [!NOTE]
-> - Zalecamy używanie [skryptu lokalnego do dołączania urządzeń z systemem macOS](#local-script-for-macos). Chociaż [rejestrację dla urządzeń z systemem macOS można skonfigurować w Intune](/mem/intune/enrollment/macos-enroll), skrypt lokalny jest najprostszą metodą dołączania urządzeń z systemem macOS do usługi Defender for Business. 
+> - Zalecamy dołączenie [macOS urządzeń przy użyciu skryptu lokalnego](#local-script-for-macos). Chociaż [rejestrację dla urządzeń macOS można skonfigurować w Intune](/mem/intune/enrollment/macos-enroll), skrypt lokalny jest najprostszą metodą dołączania urządzeń macOS do usługi Defender for Business. 
 
-Wybierz jedną z następujących opcji dołączania urządzeń z systemem macOS:
+Wybierz jedną z następujących opcji dołączania urządzeń macOS:
 
-- [Skrypt lokalny dla systemu macOS](#local-script-for-macos) (*zalecane*)
-- [Intune dla systemu macOS](#microsoft-intune-for-macos)
+- [Skrypt lokalny dla macOS](#local-script-for-macos) (*zalecane*)
+- [Intune dla macOS](#microsoft-intune-for-macos)
 
-### <a name="local-script-for-macos"></a>Skrypt lokalny dla systemu macOS
+### <a name="local-script-for-macos"></a>Skrypt lokalny dla macOS
 
-Po uruchomieniu skryptu lokalnego na urządzeniu z systemem macOS tworzy on relację zaufania z Azure Active Directory (jeśli to zaufanie jeszcze nie istnieje), rejestruje urządzenie w Microsoft Intune (jeśli nie zostało jeszcze zarejestrowane), a następnie dołącza urządzenie do usługi Defender dla Firm. Lokalna metoda skryptu działa, nawet jeśli obecnie nie masz Intune. Zalecamy dołączanie maksymalnie 10 urządzeń jednocześnie przy użyciu tej metody.
+Po uruchomieniu skryptu lokalnego na urządzeniu macOS tworzy on relację zaufania z Azure Active Directory (jeśli to zaufanie jeszcze nie istnieje), rejestruje urządzenie w Microsoft Intune (jeśli nie zostało jeszcze zarejestrowane), a następnie dołącza urządzenie do usługi Defender dla Firm. Lokalna metoda skryptu działa, nawet jeśli obecnie nie masz Intune. Zalecamy dołączanie maksymalnie 10 urządzeń jednocześnie przy użyciu tej metody.
 
 1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
 2. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Punkty końcowe**, a następnie w obszarze **Zarządzanie urządzeniami** wybierz pozycję **Dołączanie**.
 
-3. Wybierz pozycję **macOS**, a następnie w sekcji **Metoda wdrażania** wybierz pozycję **Skrypt lokalny**. 
+3. Wybierz **pozycję macOS**, a następnie w sekcji **Metoda wdrażania** wybierz pozycję **Skrypt lokalny**. 
 
 4. Wybierz pozycję **Pobierz pakiet dołączania** i zapisz go na dysku wymiennym. Wybierz również pozycję **Pobierz pakiet instalacyjny** i zapisz go na urządzeniu wymiennym.
 
-5. Na urządzeniu z systemem macOS zapisz pakiet instalacyjny jako `wdav.pkg` w katalogu lokalnym.
+5. Na urządzeniu macOS zapisz pakiet instalacyjny jako `wdav.pkg` w katalogu lokalnym.
 
 6. Zapisz pakiet dołączania w `WindowsDefenderATPOnboardingPackage.zip` tym samym katalogu, który był używany dla pakietu instalacyjnego.
 
@@ -186,26 +186,26 @@ Po uruchomieniu skryptu lokalnego na urządzeniu z systemem macOS tworzy on rela
 
 11. Po zarejestrowaniu urządzenia w Intune możesz dodać je do grupy urządzeń. [Dowiedz się więcej o grupach urządzeń w Microsoft Defender dla Firm](mdb-create-edit-device-groups.md).
 
-### <a name="microsoft-intune-for-macos"></a>Microsoft Intune dla systemu macOS
+### <a name="microsoft-intune-for-macos"></a>Microsoft Intune dla macOS
 
-Jeśli Twoja subskrypcja obejmuje Microsoft Intune, możesz dołączyć urządzenia z systemem macOS w centrum administracyjnym Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Jeśli na przykład masz [Microsoft 365 Business Premium](../../business/index.yml), masz Intune w ramach subskrypcji.  
+Jeśli Twoja subskrypcja obejmuje Microsoft Intune, możesz dołączyć urządzenia macOS w centrum administracyjnym Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Jeśli na przykład masz [Microsoft 365 Business Premium](../../business/index.yml), Intune w ramach subskrypcji.  
 
 Istnieje kilka metod rejestrowania urządzeń w Intune. Zalecamy rozpoczęcie od jednej z następujących metod:
 
-- [Wybierz opcję dla firmowych urządzeń z systemem macOS](#options-for-company-owned-macos-devices)
-- [Poproś użytkowników o zarejestrowanie własnych urządzeń z systemem macOS w Intune](#ask-users-to-enroll-their-own-macos-devices-in-intune)
+- [Wybierz opcję dla firmowych urządzeń macOS](#options-for-company-owned-macos-devices)
+- [Poproś użytkowników o zarejestrowanie własnych urządzeń macOS w Intune](#ask-users-to-enroll-their-own-macos-devices-in-intune)
 
-#### <a name="options-for-company-owned-macos-devices"></a>Opcje dla firmowych urządzeń z systemem macOS
+#### <a name="options-for-company-owned-macos-devices"></a>Opcje dla firmowych urządzeń macOS
 
-Wybierz jedną z opcji w poniższej tabeli, aby zarejestrować urządzenia z systemem macOS zarządzane przez firmę w Intune:
+Wybierz jedną z opcji w poniższej tabeli, aby zarejestrować zarządzane przez firmę urządzenia macOS w Intune:
 
 | Opcja  | Opis  |
 |---------|---------|
-| Automatyczna rejestracja urządzeń firmy Apple |  Ta metoda służy do automatyzowania środowiska rejestracji na urządzeniach zakupionych za pośrednictwem programu Apple Business Manager lub Apple School Manager. Automatyczna rejestracja urządzeń wdraża profil rejestracji na antenie, dzięki czemu nie trzeba mieć fizycznego dostępu do urządzeń. <br/><br/>Zobacz [Automatyczne rejestrowanie urządzeń z systemem macOS przy użyciu programu Apple Business Manager lub Apple School Manager](/mem/intune/enrollment/device-enrollment-program-enroll-macos). |
+| Automatyczna rejestracja urządzeń firmy Apple |  Ta metoda służy do automatyzowania środowiska rejestracji na urządzeniach zakupionych za pośrednictwem programu Apple Business Manager lub Apple School Manager. Automatyczna rejestracja urządzeń wdraża profil rejestracji na antenie, dzięki czemu nie trzeba mieć fizycznego dostępu do urządzeń. <br/><br/>Zobacz [Automatyczne rejestrowanie urządzeń macOS za pomocą programu Apple Business Manager lub Apple School Manager](/mem/intune/enrollment/device-enrollment-program-enroll-macos). |
 | Menedżer rejestracji urządzeń (DEM)  |  Użyj tej metody w przypadku wdrożeń na dużą skalę i gdy w organizacji jest wiele osób, które mogą pomóc w konfiguracji rejestracji. Osoba z uprawnieniami menedżera rejestracji urządzeń (DEM) może zarejestrować maksymalnie 1000 urządzeń przy użyciu jednego konta Azure Active Directory. Ta metoda używa aplikacji Portal firmy lub aplikacji Microsoft Intune do rejestrowania urządzeń. Nie można użyć konta DEM do rejestrowania urządzeń za pośrednictwem zautomatyzowanej rejestracji urządzeń.<br/><br/> Zobacz [Rejestrowanie urządzeń w Intune przy użyciu konta menedżera rejestracji urządzeń](/mem/intune/enrollment/device-enrollment-manager-enroll).  |
-| Rejestracja bezpośrednia  | Rejestracja bezpośrednia rejestruje urządzenia bez koligacji użytkownika, dlatego ta metoda jest najlepsza w przypadku urządzeń, które nie są skojarzone z jednym użytkownikiem. Ta metoda wymaga fizycznego dostępu do zarejestrowanych komputerów Mac. <br/><br/>Zobacz [Używanie rejestracji bezpośredniej dla urządzeń z systemem macOS](/mem/intune/enrollment/device-enrollment-direct-enroll-macos).      |
+| Rejestracja bezpośrednia  | Rejestracja bezpośrednia rejestruje urządzenia bez koligacji użytkownika, dlatego ta metoda jest najlepsza w przypadku urządzeń, które nie są skojarzone z jednym użytkownikiem. Ta metoda wymaga fizycznego dostępu do zarejestrowanych komputerów Mac. <br/><br/>Zobacz [Używanie rejestracji bezpośredniej dla urządzeń macOS](/mem/intune/enrollment/device-enrollment-direct-enroll-macos).      |
 
-#### <a name="ask-users-to-enroll-their-own-macos-devices-in-intune"></a>Poproś użytkowników o zarejestrowanie własnych urządzeń z systemem macOS w Intune
+#### <a name="ask-users-to-enroll-their-own-macos-devices-in-intune"></a>Poproś użytkowników o zarejestrowanie własnych urządzeń macOS w Intune
 
 Jeśli Twoja firma woli, aby osoby rejestrowały własne urządzenia w Intune, poproś użytkowników, aby postępowali zgodnie z następującymi krokami:
 
@@ -215,11 +215,11 @@ Jeśli Twoja firma woli, aby osoby rejestrowały własne urządzenia w Intune, p
 
 3. Zainstaluj aplikację Portal firmy pod adresem [https://aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac)i postępuj zgodnie z instrukcjami w aplikacji.
 
-### <a name="confirm-that-a-macos-device-is-onboarded"></a>Upewnij się, że urządzenie z systemem macOS jest dołączone
+### <a name="confirm-that-a-macos-device-is-onboarded"></a>Upewnij się, że urządzenie macOS jest dołączone
 
 1. Aby potwierdzić, że urządzenie jest skojarzone z Firmą, użyj następującego polecenia języka Python w powłoki Bash: `mdatp health --field org_id`.
 
-2. Jeśli używasz systemu macOS 10.15 (Catalina) lub nowszego, przyznaj usłudze Defender for Business zgodę na ochronę urządzenia. Przejdź do **obszaru Preferencje** **systemoweZabezpieczenia** >  & **prywatnośćPrivacyDywatny** >  >  **dostęp do dysku**. Wybierz ikonę blokady, aby wprowadzić zmiany (u dołu okna dialogowego), a następnie wybierz pozycję **Microsoft Defender dla Firm** (lub **Defender for Endpoint**, jeśli to właśnie widzisz).
+2. Jeśli używasz programu macOS 10.15 (Catalina) lub nowszego, przyznaj usłudze Defender for Business zgodę na ochronę urządzenia. Przejdź do **obszaru Preferencje** **systemoweZabezpieczenia** >  & **prywatnośćPrivacyDywatny** >  >  **dostęp do dysku**. Wybierz ikonę blokady, aby wprowadzić zmiany (u dołu okna dialogowego), a następnie wybierz pozycję **Microsoft Defender dla Firm** (lub **Defender for Endpoint**, jeśli to właśnie widzisz).
 
 3. Aby sprawdzić, czy urządzenie jest dołączone, użyj następującego polecenia w powłoki Bash: `mdatp health --field real_time_protection_enabled`
 
@@ -231,7 +231,7 @@ Aby wyświetlić listę urządzeń dołączonych do usługi Defender dla Firm, w
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Jeśli masz inne urządzenia do dołączenia, wybierz kartę odpowiadającą systemowi operacyjnemu na urządzeniach ([Windows klientów, Windows Server, macOS lub urządzenia przenośne](#what-to-do)) i postępuj zgodnie ze wskazówkami na tej karcie.
+- Jeśli masz inne urządzenia do dołączenia, wybierz kartę odpowiadającą systemowi operacyjnemu na urządzeniach ([Windows klientom, Windows Server, macOS lub urządzeniom przenośnym](#what-to-do)) i postępuj zgodnie ze wskazówkami na tej karcie.
 - Jeśli skończysz dołączać urządzenia, przejdź do [kroku 5. Konfigurowanie ustawień zabezpieczeń i zasad w Microsoft Defender dla Firm](mdb-configure-security-settings.md)
 - Zobacz [Wprowadzenie przy użyciu Microsoft Defender dla Firm](mdb-get-started.md).
 
@@ -239,17 +239,17 @@ Aby wyświetlić listę urządzeń dołączonych do usługi Defender dla Firm, w
 
 ## <a name="mobile-devices"></a>Urządzenia przenośne
 
-Musisz Microsoft Intune do dołączania urządzeń przenośnych, takich jak urządzenia z systemem Android i iOS/iPadOS. Jeśli masz [Microsoft 365 Business Premium](../../business/index.yml), masz Intune. 
+Musisz Microsoft Intune do dołączania urządzeń przenośnych, takich jak urządzenia Android i iOS/iPadOS. Jeśli masz [Microsoft 365 Business Premium](../../business/index.yml), Intune. 
 
 Zobacz następujące zasoby, aby uzyskać pomoc dotyczącą rejestrowania tych urządzeń w Intune:
 
-- [Rejestrowanie urządzeń z systemem Android](/mem/intune/enrollment/android-enroll)
+- [Rejestrowanie urządzeń Android](/mem/intune/enrollment/android-enroll)
 - [Rejestrowanie urządzeń z systemem iOS lub iPadOS](/mem/intune/enrollment/ios-enroll)
 
 Po zarejestrowaniu urządzenia w Intune możesz dodać je do grupy urządzeń. [Dowiedz się więcej o grupach urządzeń w Microsoft Defender dla Firm](mdb-create-edit-device-groups.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Jeśli masz inne urządzenia do dołączenia, wybierz kartę odpowiadającą systemowi operacyjnemu na urządzeniach ([Windows klientów, Windows Server, macOS lub urządzenia przenośne](#what-to-do)) i postępuj zgodnie ze wskazówkami na tej karcie.
+- Jeśli masz inne urządzenia do dołączenia, wybierz kartę odpowiadającą systemowi operacyjnemu na urządzeniach ([Windows klientom, Windows Server, macOS lub urządzeniom przenośnym](#what-to-do)) i postępuj zgodnie ze wskazówkami na tej karcie.
 - Jeśli skończysz dołączać urządzenia, przejdź do [kroku 5. Konfigurowanie ustawień zabezpieczeń i zasad w Microsoft Defender dla Firm](mdb-configure-security-settings.md)
 - Zobacz [Wprowadzenie przy użyciu Microsoft Defender dla Firm](mdb-get-started.md).

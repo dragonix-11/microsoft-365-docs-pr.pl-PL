@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Plan plików zapewnia zaawansowane możliwości zarządzania etykietami przechowywania.
-ms.openlocfilehash: d509d878b244054138e4e95329d00759719e131d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 7cb963106551951fb6ae1e2455d21fa44d47a77c
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319053"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396364"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Tworzenie etykiet przechowywania i zarządzanie nimi przy użyciu planu plików
 
@@ -49,10 +49,11 @@ Aby uzyskać informacje o tym, czym są etykiety przechowywania i jak ich używa
 Aby uzyskać dostęp do planu plików, musisz mieć jedną z następujących ról administratora:
     
 - Menedżer przechowywania
-
 - Menedżer przechowywania tylko do wyświetlania
 
-W [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) przejdź do obszaru **SolutionsRecords** >  **managementFile** >  plan.
+W [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) przejdź do obszaru **SolutionsRecords** >  **managementFile** >  plan:
+
+![Strona planów plików](../media/compliance-file-plan.png). 
 
 Jeśli **zarządzanie rekordami** nie jest wyświetlane w okienku nawigacji, najpierw przewiń w dół i wybierz pozycję **Pokaż wszystko**.
 
@@ -154,7 +155,9 @@ Jednak wyświetlenie elementów oznaczonych etykietą Eksploratora zawartości m
 
 Z planu plików możesz wyeksportować szczegóły wszystkich etykiet przechowywania do pliku .csv, aby ułatwić okresowe przeglądy zgodności z osobami biorącymi udział w zarządzaniu danymi w organizacji.
 
-Aby wyeksportować wszystkie etykiety przechowywania: na stronie **Plan pliku** kliknij pozycję **Eksportuj**.
+Aby wyeksportować wszystkie etykiety przechowywania: na stronie **Plan pliku** wybierz pozycję **Eksportuj**:
+
+![Opcja eksportowania planu plików.](../media/compliance-file-plan-export-labels.png)
 
 Zostanie otwarty plik *.csv zawierający wszystkie istniejące etykiety przechowywania. Przykład:
 
@@ -164,7 +167,7 @@ Zostanie otwarty plik *.csv zawierający wszystkie istniejące etykiety przechow
 
 W planie plików można zbiorczo importować nowe etykiety przechowywania przy użyciu pliku .csv o określonym formacie: 
 
-1. Na stronie **Plan pliku** kliknij pozycję **Importuj**: ![Opcja importowania planu plików](../media/compliance-file-plan-import-labels.png)
+1. Na stronie **Plan pliku** wybierz pozycję **Importuj**: ![Opcja importowania planu plików](../media/compliance-file-plan-import-labels.png)
 
 2. W okienku **Wypełnij i zaimportuj plan pliku** wybierz pozycję **Pobierz pusty szablon**:
 
