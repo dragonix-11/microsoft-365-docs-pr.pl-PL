@@ -19,13 +19,13 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: Dowiedz się, jak dodać licencje do subskrypcji Microsoft 365 zakupionej za pośrednictwem partnera innej firmy, rozpoznanego przez firmę Microsoft.
-ms.date: 08/27/2021
-ms.openlocfilehash: 56779a263a42ef385b1d6cf4df608b2243495e9a
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.date: 05/12/2022
+ms.openlocfilehash: a9a449edb5d03a43e39338a9b52df2b40fa9ad7a
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713828"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403255"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Dodawanie licencji do subskrypcji kupionej za pośrednictwem centrum Volume Licensing Service Center
 

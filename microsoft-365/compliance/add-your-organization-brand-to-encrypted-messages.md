@@ -1,5 +1,5 @@
 ---
-title: Dodawanie marki organizacji do zaszyfrowanych wiadomości
+title: Dodawanie marki do zaszyfrowanych komunikatów
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 4/1/2020
+ms.date: 5/12/2022
 search.appverid:
 - MET150
 - MOE150
@@ -22,82 +22,84 @@ ms.custom:
 - seo-marvel-jun2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-description: Dowiedz się Office 365, jak administratorzy globalni mogą zastosować znakowanie Twojej organizacji do zaszyfrowanych & e-mail w portalu szyfrowania.
-ms.openlocfilehash: b96f87886b6f1dc5ca78de068b86dbbcfb9e460d
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: Dowiedz się, jak Office 365 administratorzy globalni mogą stosować znakowanie organizacji do zaszyfrowanych wiadomości e-mail & zawartości portalu szyfrowania.
+ms.openlocfilehash: c8806f3f52fe5c76ff0e318a13789f580d4e31e2
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009684"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403343"
 ---
-# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Dodawanie marki organizacji do wiadomości szyfrowanych Microsoft 365 wiadomości szyfrowanie wiadomości dla firm
+# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Dodawanie marki organizacji do Microsoft 365 zaszyfrowanych wiadomości szyfrowania komunikatów biznesowych
 
-Możesz zastosować znakowanie firmowe, aby dostosować wygląd wiadomości e-mail organizacji i portalu szyfrowania. Aby rozpocząć, musisz zastosować uprawnienia administratora globalnego do swojego konta służbowego. Gdy masz te uprawnienia, dostosuj te części zaszyfrowanych wiadomości e-Get-OMEConfiguration i Set-OMEConfiguration Windows PowerShell cmdlet:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Możesz zastosować znakowanie firmowe, aby dostosować wygląd wiadomości e-mail organizacji i portalu szyfrowania. Aby rozpocząć pracę, musisz zastosować uprawnienia administratora globalnego do konta służbowego. Po uzyskaniu tych uprawnień użyj poleceń cmdlet Get-OMEConfiguration i Set-OMEConfiguration Windows PowerShell, aby dostosować te części zaszyfrowanych wiadomości e-mail:
 
 - Tekst wprowadzający
 - Tekst zastrzeżenia
-- Adres URL zasad zachowania poufności informacji twojej organizacji
+- Adres URL oświadczenia o ochronie prywatności twojej organizacji
 - Tekst w portalu OME
-- Logo wyświetlane w wiadomości e-mail i w portalu OME oraz informacje o tym, czy w ogóle używać logo
-- Kolor tła wiadomości e-mail i portalu OME
+- Logo, które pojawia się w wiadomości e-mail i portalu OME lub czy w ogóle ma być używane logo
+- Kolor tła w wiadomości e-mail i portalu OME
 
-W dowolnym momencie możesz także przywrócić domyślny wygląd i sposób pracy.
+Możesz również przywrócić domyślny wygląd i działanie w dowolnym momencie.
 
-Jeśli chcesz mieć większą kontrolę, użyj szablonów Zaawansowane szyfrowanie wiadomości usługi Office 365 tworzenia wielu szablonów zaszyfrowanych wiadomości e-mail pochodzących z Twojej organizacji. Szablony te są dostępne do sterowania częściami interfejsu użytkownika końcowego. Możesz na przykład określić, czy adresaci mogą logować się do portalu szyfrowania za pomocą kont Google, Yahoo i Microsoft. Użyj szablonów, aby zrealizować kilka przypadków użycia, takich jak:
+Jeśli chcesz uzyskać większą kontrolę, użyj Microsoft Purview zaawansowanego szyfrowania komunikatów, aby utworzyć wiele szablonów dla zaszyfrowanych wiadomości e-mail pochodzących z organizacji. Te szablony umożliwiają kontrolowanie części środowiska użytkownika końcowego. Na przykład określ, czy adresaci mogą logować się do portalu szyfrowania przy użyciu kont Google, Yahoo i Microsoft. Użyj szablonów, aby spełnić kilka przypadków użycia, takich jak:
 
-- Poszczególne działy, na przykład Finanse, Sprzedaż i tak dalej.
+- Poszczególne działy, takie jak Finanse, Sprzedaż itd.
 - Różne produkty
-- Różne regiony lub kraje
-- Czy chcesz zezwolić na odwołanie wiadomości e-mail
-- Czy wiadomości e-mail wysyłane do adresatów zewnętrznych mają wygasać po określonej liczbie dni.
+- Różne regiony geograficzne lub kraje
+- Czy chcesz zezwolić na odwoływanie wiadomości e-mail
+- Czy chcesz, aby wiadomości e-mail wysyłane do adresatów zewnętrznych wygasały po określonej liczbie dni.
 
-Po utworzeniu szablonów możesz zastosować je do zaszyfrowanych wiadomości e-mail, używając Exchange przepływu poczty e-mail. Jeśli masz Zaawansowane szyfrowanie wiadomości usługi Office 365, możesz odwołać wszelkie wiadomości e-mail znakowane za pomocą tych szablonów.
+Po utworzeniu szablonów można je zastosować do zaszyfrowanych wiadomości e-mail przy użyciu Exchange reguł przepływu poczty. Jeśli masz Microsoft Purview zaawansowane szyfrowanie komunikatów, możesz odwołać wszystkie wiadomości e-mail oznaczone marką przy użyciu tych szablonów.
 
-## <a name="work-with-ome-branding-templates"></a>Praca z szablonami  marki OME
+## <a name="work-with-ome-branding-templates"></a>Praca z szablonami znakowania OME
 
-W szablonie marki można modyfikować kilka funkcji. Szablon domyślny można modyfikować, ale nie można go usuwać. Jeśli masz zaawansowane szyfrowanie wiadomości, możesz również tworzyć, modyfikować i usuwać szablony niestandardowe. Używaj Windows PowerShell, aby pracować z jednym szablonem  marki na raz.
+W szablonie znakowania można zmodyfikować kilka funkcji. Szablon domyślny można modyfikować, ale nie usuwać. Jeśli masz zaawansowane szyfrowanie komunikatów, możesz również tworzyć, modyfikować i usuwać szablony niestandardowe. Użyj Windows PowerShell, aby pracować z jednym szablonem znakowania jednocześnie.
 
-- [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) — modyfikowanie domyślnego szablonu brandingu lub utworzonego szablonu niestandardowych brandingów.
-- [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) — utwórz nowy szablon marki, tylko zaawansowane szyfrowanie wiadomości.
-- [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration) — usuwanie niestandardowego szablonu brandingu (dotyczy tylko zaawansowanego szyfrowania wiadomości). Nie można usunąć domyślnego szablonu  brandingu.
+- [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) — zmodyfikuj domyślny szablon znakowania lub utworzony niestandardowy szablon znakowania.
+- [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) — utwórz nowy szablon znakowania, tylko zaawansowane szyfrowanie komunikatów.
+- [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration) — usuń niestandardowy szablon znakowania, tylko zaawansowane szyfrowanie komunikatów. Nie można usunąć domyślnego szablonu znakowania.
 
-## <a name="modify-an-ome-branding-template"></a>Modyfikowanie szablonu  brandingu OME
+## <a name="modify-an-ome-branding-template"></a>Modyfikowanie szablonu znakowania OME
 
-Użyj Windows PowerShell, aby modyfikować jeden szablon  marki na raz. Jeśli masz zaawansowane szyfrowanie wiadomości, możesz również tworzyć, modyfikować i usuwać szablony niestandardowe.
+Użyj Windows PowerShell, aby modyfikować jeden szablon znakowania jednocześnie. Jeśli masz zaawansowane szyfrowanie komunikatów, możesz również tworzyć, modyfikować i usuwać szablony niestandardowe.
 
-1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w Twojej organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Użyj polecenia cmdlet Set-OMEConfiguration zgodnie z opisem w tece [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) lub skorzystaj z poniższej grafiki i tabeli, aby uzyskać wskazówki.
+2. Użyj polecenia cmdlet Set-OMEConfiguration zgodnie z opisem w temacie [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) lub skorzystaj z poniższej grafiki i tabeli, aby uzyskać wskazówki.
 
-![Możliwe do dostosowania części wiadomości e-mail.](../media/ome-template-breakout.png)
+![Dostosowywalne części wiadomości e-mail.](../media/ome-template-breakout.png)
 
 <br>
 
 ****
 
-|**Aby dostosować tę funkcję obsługi szyfrowania**|**Używanie tych poleceń**|
+|**Aby dostosować tę funkcję środowiska szyfrowania**|**Użyj tych poleceń**|
 |---|---|
-|Kolor tła|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <p> Aby uzyskać więcej informacji na temat kolorów tła, zobacz sekcję Kolory [tła](#background-color-reference) w dalszej części tego artykułu.|
-|Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> Obsługiwane formaty plików: .png, .jpg, .bmp lub tiff <p> Optymalny rozmiar pliku logo: mniej niż 40 KB <p> Optymalny rozmiar obrazu logo: 170x70 pikseli. Jeśli obraz przekracza te wymiary, usługa zmienia rozmiar logo w celu wyświetlenia go w portalu. Usługa nie modyfikuje samego pliku graficznego. Aby uzyskać najlepsze wyniki, korzystaj z optymalnego rozmiaru.|
-|Tekst obok nazwy i adresu e-mail nadawcy|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|Tekst wyświetlany na przycisku "Czytaj wiadomość"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|Tekst wyświetlany poniżej przycisku "Czytaj wiadomość"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|Adres URL linku do zasad zachowania poufności informacji|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
-|Oświadczenie o zrzeczeniu odpowiedzialności w wiadomości e-mail zawierającej zaszyfrowaną wiadomość|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
+|Kolor tła|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <p> Aby uzyskać więcej informacji na temat kolorów tła, zobacz sekcję [Kolory tła](#background-color-reference) w dalszej części tego artykułu.|
+|Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> Obsługiwane formaty plików: .png, .jpg, .bmp lub .tiff <p> Optymalny rozmiar pliku logo: mniej niż 40 KB <p> Optymalny rozmiar obrazu logo: 170x70 pikseli. Jeśli obraz przekroczy te wymiary, usługa zmienia rozmiar logo do wyświetlenia w portalu. Usługa nie modyfikuje samego pliku graficznego. Aby uzyskać najlepsze wyniki, użyj optymalnego rozmiaru.|
+|Tekst obok nazwy nadawcy i adresu e-mail|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
+|Tekst wyświetlany na przycisku "Odczyt wiadomości"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
+|Tekst wyświetlany poniżej przycisku "Odczyt wiadomości"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|Adres URL linku zasady zachowania poufności informacji|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
+|Instrukcja zastrzeżenia w wiadomości e-mail zawierającej zaszyfrowaną wiadomość|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
 |Tekst wyświetlany w górnej części zaszyfrowanego portalu wyświetlania poczty|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
-|Aby włączyć lub wyłączyć uwierzytelnianie za pomocą kodu dostępu w czasie rzeczywistym dla tego szablonu niestandardowego|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <p> **Przykłady:** <br/>Aby włączyć hasło dostępu w czasie rzeczywistym dla tego szablonu niestandardowego <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <p> Aby wyłączyć kod dostępu do tego szablonu niestandardowego <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
-|Aby włączyć lub wyłączyć uwierzytelnianie za pomocą tożsamości firmy Microsoft, Google lub Yahoo dla tego szablonu niestandardowego|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <p> **Przykłady:** <br/>Aby włączyć identyfikatory społecznościowe dla tego szablonu niestandardowego <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <p> Aby wyłączyć identyfikatory społecznościowe dla tego szablonu niestandardowego <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
+|Aby włączyć lub wyłączyć uwierzytelnianie przy użyciu jednorazowego kodu dostępu dla tego szablonu niestandardowego|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <p> **Przykłady:** <br/>Aby włączyć jednorazowe kody dostępu dla tego szablonu niestandardowego <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <p> Aby wyłączyć jednorazowe kody dostępu dla tego szablonu niestandardowego <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
+|Aby włączyć lub wyłączyć uwierzytelnianie przy użyciu tożsamości firmy Microsoft, Google lub Yahoo dla tego szablonu niestandardowego|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <p> **Przykłady:** <br/>Aby włączyć identyfikatory społecznościowe dla tego szablonu niestandardowego <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <p> Aby wyłączyć identyfikatory społecznościowe dla tego szablonu niestandardowego <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 |
 
-## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>Tworzenie szablonu  marki OME (zaawansowane szyfrowanie wiadomości)
+## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>Tworzenie szablonu znakowania OME (zaawansowane szyfrowanie komunikatów)
 
-Jeśli masz Zaawansowane szyfrowanie wiadomości usługi Office 365, możesz utworzyć niestandardowe szablony brandingu dla swojej organizacji, korzystając z polecenia cmdlet [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration). Po utworzeniu szablonu można go zmodyfikować za pomocą polecenia cmdlet Set-OMEConfiguration zgodnie z opisem w tece Modyfikowanie szablonu marki [OME](#modify-an-ome-branding-template). Możesz utworzyć wiele szablonów.
+Jeśli masz Microsoft Purview zaawansowane szyfrowanie komunikatów, możesz utworzyć niestandardowe szablony znakowania dla swojej organizacji przy użyciu polecenia cmdlet [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration). Po utworzeniu szablonu można zmodyfikować szablon przy użyciu polecenia cmdlet Set-OMEConfiguration zgodnie z opisem w artykule [Modyfikowanie szablonu znakowania OME](#modify-an-ome-branding-template). Możesz utworzyć wiele szablonów.
 
-Aby utworzyć nowy szablon niestandardowych  brandingów:
+Aby utworzyć nowy szablon znakowania niestandardowego:
 
-1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w Twojej organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Utwórz nowy szablon za pomocą polecenia cmdlet [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) .
+2. Użyj polecenia cmdlet [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) , aby utworzyć nowy szablon.
 
    ```powershell
    New-OMEConfiguration -Identity "<OMEConfigurationName>"
@@ -109,36 +111,36 @@ Aby utworzyć nowy szablon niestandardowych  brandingów:
    New-OMEConfiguration -Identity "Custom branding template"
    ```
 
-## <a name="return-the-default-branding-template-to-its-original-values"></a>Zwracanie oryginalnych wartości domyślnego szablonu  brandingu
+## <a name="return-the-default-branding-template-to-its-original-values"></a>Zwracanie domyślnego szablonu znakowania do jego oryginalnych wartości
 
-Aby usunąć wszystkie modyfikacje z szablonu domyślnego, w tym dostosowania marki i tak dalej, wykonaj następujące czynności:
+Aby usunąć wszystkie modyfikacje z szablonu domyślnego, w tym dostosowania marki itd., wykonaj następujące kroki:
 
-1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w Twojej organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Użyj **polecenia cmdlet Set-OMEConfiguration** zgodnie z opisem w [tece Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration). Aby usunąć znakowane dostosowania organizacji z wartości DisclaimerText, EmailText i PortalText, ustaw dla tej wartości pusty ciąg. `""` Dla wszystkich wartości obrazów, takich jak Logo, ustaw wartość .`"$null"`
+2. Użyj polecenia cmdlet **Set-OMEConfiguration** zgodnie z opisem w temacie [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration). Aby usunąć dostosowania markowe organizacji z wartości DisclaimerText, EmailText i PortalText, ustaw wartość na pusty ciąg . `""` Dla wszystkich wartości obrazu, takich jak Logo, ustaw wartość na `"$null"`.
 
-   W poniższej tabeli opisano domyślne opcje dostosowywania szyfrowania.
+   W poniższej tabeli opisano wartości domyślne opcji dostosowywania szyfrowania.
 
    <br>
 
    ****
 
-   |Aby przywrócić domyślną funkcję szyfrowania do domyślnego tekstu i obrazu|Używanie tych poleceń|
+   |Aby przywrócić tę funkcję środowiska szyfrowania z powrotem do domyślnego tekstu i obrazu|Użyj tych poleceń|
    |:-----|:-----|
-   |Domyślny tekst, który jest dostarczany z zaszyfrowanymi wiadomościami e-mail. Tekst domyślny jest wyświetlany powyżej instrukcji dotyczących wyświetlania zaszyfrowanych wiadomości|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-   |Oświadczenie o zrzeczeniu odpowiedzialności w wiadomości e-mail zawierającej zaszyfrowaną wiadomość|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-   |Tekst wyświetlany w górnej części zaszyfrowanego portalu wyświetlania poczty|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <p> **Przykład przywracania domyślnego ustawienia:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
-   |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <p> **Przykład przywracania domyślnego ustawienia:** <p> `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-   |Kolor tła|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <p> **Przykład przywracania domyślnego ustawienia:** <p> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   |Domyślny tekst dostarczany z zaszyfrowanymi wiadomościami e-mail. Tekst domyślny jest wyświetlany powyżej instrukcji wyświetlania zaszyfrowanych komunikatów|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |Instrukcja zastrzeżenia w wiadomości e-mail zawierającej zaszyfrowaną wiadomość|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <p> **Przykład:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+   |Tekst wyświetlany w górnej części zaszyfrowanego portalu wyświetlania poczty|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <p> **Przykład powrót do wartości domyślnej:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
+   |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <p> **Przykład powrót do wartości domyślnej:** <p> `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
+   |Kolor tła|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <p> **Przykład powrót do wartości domyślnej:** <p> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
    |
 
-## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>Usuwanie niestandardowego szablonu  marki (zaawansowane szyfrowanie wiadomości)
+## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>Usuwanie niestandardowego szablonu znakowania (zaawansowane szyfrowanie komunikatów)
 
-Możesz usuwać tylko te szablony, które zostały wprowadzone. Nie można usunąć domyślnego szablonu  brandingu.
+Możesz usuwać lub usuwać tylko utworzone szablony znakowania. Nie można usunąć domyślnego szablonu znakowania.
 
-Aby usunąć szablon niestandardowych  brandingów:
+Aby usunąć niestandardowy szablon znakowania:
 
-1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w Twojej organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Użyj polecenia cmdlet **Remove-OMEConfiguration** w następujący sposób:
 
@@ -152,49 +154,49 @@ Aby usunąć szablon niestandardowych  brandingów:
    Remove-OMEConfiguration -Identity "Branding template 1"
    ```
 
-   Aby uzyskać więcej informacji, [zobacz Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
+   Aby uzyskać więcej informacji, zobacz [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Tworzenie reguły Exchange przepływu poczty e-mail, która stosuje znakowanie niestandardowe do zaszyfrowanych wiadomości e-mail
+## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Tworzenie reguły przepływu poczty Exchange, która stosuje niestandardowe znakowanie do zaszyfrowanych wiadomości e-mail
 
 > [!IMPORTANT]
-> Aplikacje innych firm, które skanują i modyfikują pocztę, mogą uniemożliwić poprawne zastosowanie  brandingu OME.
+> Aplikacje innych firm, które skanują i modyfikują pocztę, mogą uniemożliwić poprawne stosowanie znakowania OME.
 
-Po zmodyfikowaniu szablonu domyślnego lub utworzeniu nowych szablonów  marki możesz utworzyć reguły Exchange przepływu poczty e-mail, aby zastosować znakowanie niestandardowe na podstawie określonych warunków. Taka reguła będzie stosować znakowanie niestandardowe w następujących scenariuszach:
+Po zmodyfikowaniu szablonu domyślnego lub utworzeniu nowych szablonów znakowania można utworzyć Exchange reguł przepływu poczty, aby zastosować znakowanie niestandardowe na podstawie określonych warunków. Co najważniejsze, wiadomość e-mail musi być szyfrowana. Taka reguła będzie stosować znakowanie niestandardowe w następujących scenariuszach:
 
-- Jeśli wiadomość e-mail została ręcznie zaszyfrowana przez użytkownika końcowego przy Outlook lub Outlook w sieci Web, wcześniej Outlook Web App
-- Jeśli wiadomość e-mail została automatycznie zaszyfrowana przez regułę przepływu Exchange lub zasady ochrony przed utratą danych
+- Jeśli wiadomość e-mail została ręcznie zaszyfrowana przez użytkownika końcowego przy użyciu Outlook lub Outlook w sieci Web, wcześniej Outlook Web App
+- Jeśli wiadomość e-mail została automatycznie zaszyfrowana przez regułę przepływu poczty Exchange lub zasady Ochrona przed utratą danych w Microsoft Purview
 
-Aby uzyskać informacje na temat tworzenia reguły przepływu Exchange poczty e-mail stosowanej do szyfrowania, zobacz Definiowanie reguł przepływu poczty w celu szyfrowania wiadomości e-mail [w Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Aby upewnić się, że Szyfrowanie wiadomości w Microsoft Purview stosuje znakowanie niestandardowe, skonfiguruj regułę przepływu poczty w celu szyfrowania wiadomości e-mail. Priorytet reguły szyfrowania powinien być wyższy niż reguła znakowania, aby reguła szyfrowania była przetwarzana jako pierwsza. Domyślnie jeśli utworzysz regułę szyfrowania przed regułą znakowania, reguła szyfrowania będzie miała wyższy priorytet. Aby uzyskać informacje na temat tworzenia reguły przepływu poczty Exchange, która stosuje szyfrowanie, zobacz [Definiowanie reguł przepływu poczty w celu szyfrowania wiadomości e-mail w Office 365](define-mail-flow-rules-to-encrypt-email.md). Aby uzyskać informacje na temat ustawiania priorytetu reguły przepływu poczty, zobacz [Zarządzanie regułami przepływu poczty](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
 
-1. W przeglądarce internetowej, używając konta służbowego, które otrzymało uprawnienia administratora globalnego[, zaloguj](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser) się w celu Office 365.
+1. W przeglądarce internetowej przy użyciu konta służbowego, któremu przyznano uprawnienia administratora globalnego, [zaloguj się do Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Wybierz **kafelek Administrator** .
+2. Wybierz kafelek **Administrator** .
 
-3. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365 wybierz</a> pozycję **Centra administracyjne** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> wybierz pozycję **Centra** \> administracyjne <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
-4. W selektorze wiadomości e-mail przejdź do **menu Reguły przepływu** \> **poczty e-mail** i wybierz **ikonę Nowy** ![nowy.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Utwórz nową regułę**. Aby uzyskać więcej informacji na temat korzystania z Centrum administracyjnego programu Exchange [centrum administracyjnego w programie Exchange Online](/exchange/exchange-admin-center).
+4. W usłudze EAC przejdź do pozycji **Reguły** **przepływu poczty** \> i wybierz pozycję **Nowa** ![ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Utwórz nową regułę**. Aby uzyskać więcej informacji na temat korzystania z usługi EAC, zobacz [centrum administracyjne Exchange w Exchange Online](/exchange/exchange-admin-center).
 
-5. **W imieniu** firmy Wpisz nazwę reguły, na przykład Znakowanie dla działu sprzedaży.
+5. W **polu Nazwa** wpisz nazwę reguły, taką jak Branding dla działu sprzedaży.
 
-6. W **części Zastosuj tę regułę**, jeśli wybierz  warunek Nadawca znajduje się wewnątrz organizacji i inne odpowiednie warunki z listy dostępnych warunków. Na przykład możesz zastosować określony szablon  marki do:
+6. W **obszarze Zastosuj tę regułę, jeśli** wybierz warunek **Nadawca znajduje się w organizacji** i inne warunki, które chcesz, z listy dostępnych warunków. Możesz na przykład zastosować określony szablon znakowania do następujących elementów:
 
-   - Wszystkie zaszyfrowane wiadomości e-mail wysłane przez członków działu finansowego
-   - Zaszyfrowane wiadomości e-mail wysłane za pomocą określonego słowa kluczowego, takiego jak "Zewnętrzne" lub "Partner"
+   - Wszystkie zaszyfrowane wiadomości e-mail wysyłane od członków działu finansowego
+   - Zaszyfrowane wiadomości e-mail wysyłane przy użyciu określonego słowa kluczowego, takiego jak "Zewnętrzne" lub "Partner"
    - Zaszyfrowane wiadomości e-mail wysyłane do określonej domeny
 
-7. W **poniższej czynności wybierz** **pozycję Modyfikuj zabezpieczenia wiadomości** \> **Zastosuj znakowanie niestandardowe do wiadomości OME**. Następnie z listy rozwijanej wybierz szablon  marki.
+7. Jeśli zdefiniowano już regułę przepływu poczty w celu zastosowania szyfrowania, pomiń ten krok. W przeciwnym razie, aby skonfigurować regułę przepływu poczty w celu zastosowania szyfrowania **, wybierz** pozycję **Modyfikuj zabezpieczenia komunikatów**, a następnie wybierz pozycję **Zastosuj Office 365 szyfrowanie wiadomości i ochronę praw**. Wybierz szablon usługi RMS z listy, a następnie wybierz pozycję **Dodaj akcję**.
 
-8. (Opcjonalnie) Możesz skonfigurować regułę przepływu poczty e-mail tak, aby stosować szyfrowanie i znakowanie niestandardowe. Na **stronie Wykonaj następujące czynności** wybierz **pozycję Modyfikuj zabezpieczenia wiadomości**, a następnie wybierz pozycję **Zastosuj Szyfrowanie wiadomości usługi Office 365 i ochronę praw**. Wybierz szablon RMS z listy, wybierz pozycję **Zapisz**, a następnie wybierz przycisk **OK**.
+   Lista szablonów zawiera szablony domyślne i opcje oraz wszelkie utworzone szablony niestandardowe. Jeśli lista jest pusta, upewnij się, że skonfigurowano Szyfrowanie wiadomości w Microsoft Purview. Aby uzyskać instrukcje, zobacz [Konfigurowanie Szyfrowanie wiadomości w Microsoft Purview](set-up-new-message-encryption-capabilities.md). Aby uzyskać informacje o szablonach domyślnych, zobacz [Konfigurowanie szablonów platformy Azure Information Protection i zarządzanie nimi](/information-protection/deploy-use/configure-policy-templates). Aby uzyskać informacje o opcji **Nie przesyłaj dalej** , zobacz [Nie przesyłaj dalej dla wiadomości e-mail](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Aby uzyskać informacje o opcji **tylko do szyfrowania** , zobacz [Opcja Tylko szyfrowanie dla wiadomości e-mail](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   
+8. W **obszarze Wykonaj następujące** czynności wybierz pozycję **Modyfikuj zabezpieczenia komunikatów** \> **Zastosuj znakowanie niestandardowe do komunikatów OME**. Następnie z listy rozwijanej wybierz szablon znakowania.
 
-   Lista szablonów zawiera domyślne szablony i opcje oraz wszelkie szablony niestandardowe, które tworzysz. Jeśli lista jest pusta, upewnij się, że masz już Szyfrowanie wiadomości usługi Office 365 nowych możliwości. Aby uzyskać instrukcje, [zobacz Konfigurowanie nowych Szyfrowanie wiadomości usługi Office 365 funkcji](set-up-new-message-encryption-capabilities.md). Aby uzyskać informacje na temat szablonów domyślnych, zobacz [Konfigurowanie szablonów usługi Azure Information Protection i zarządzanie nimi](/information-protection/deploy-use/configure-policy-templates). Aby uzyskać informacje na temat **opcji Nie przesyłaj dalej** , zobacz Opcja [Nie przesyłaj dalej w wiadomościach e-mail](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Aby uzyskać informacje o opcji **tylko szyfrowania** , zobacz [Opcja Tylko szyfrowanie w przypadku wiadomości e-mail](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   Wybierz **pozycję Dodaj akcję** , jeśli chcesz określić inną akcję, lub wybierz pozycję **Zapisz**, a następnie wybierz przycisk **OK**.
 
-   Wybierz **pozycję dodaj** akcję, jeśli chcesz określić inną akcję.
+## <a name="background-color-reference"></a>Dokumentacja koloru tła
 
-## <a name="background-color-reference"></a>Odwołanie do koloru tła
+Nazwy kolorów, których można użyć dla koloru tła, są ograniczone. Zamiast nazwy koloru można użyć wartości kodu szesnastkowego (`#RRGGBB`). Możesz użyć wartości kodu szesnastkowego, która odpowiada nazwie koloru, lub użyć niestandardowej wartości kodu szesnastkowego. Pamiętaj, aby ująć wartość kodu szesnastkowego w cudzysłów (na przykład `"#f0f8ff"`).
 
-Nazwy kolorów, których można użyć dla koloru tła, są ograniczone. Zamiast nazwy koloru można użyć wartości kodu hex (`#RRGGBB`). Można użyć heksowej wartości kodu odpowiadającej nazwie koloru lub niestandardowej wartości kodu hex. Pamiętaj, aby ująć hex wartość kodu w cudzysłów (na przykład `"#f0f8ff"`).
-
-Dostępne nazwy kolorów tła i odpowiadające im wartości kodów hex są opisane w poniższej tabeli.
+Dostępne nazwy kolorów tła i odpowiadające im wartości kodu szesnastkowego są opisane w poniższej tabeli.
 
 |**Nazwa koloru**|**Kod koloru**|
 |---|---|
