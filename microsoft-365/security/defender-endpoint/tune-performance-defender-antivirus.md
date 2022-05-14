@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3c517d9adcdc2181b43c430a92be3de9ac889dd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43b39cac260f5bda773af6a428304dc898444771
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101122"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419599"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizator wydajności dla Program antywirusowy Microsoft Defender
 
@@ -537,4 +537,4 @@ Jeśli szukasz informacji związanych z programem antywirusowym dla innych platf
 - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-- [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach](android-configure.md)-  systemu Android [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+- [Konfigurowanie usługi Defender for Endpoint w funkcjach](android-configure.md)-  Android [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender na funkcjach iOS](ios-configure-features.md)

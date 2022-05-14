@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: Często zadawane pytania dotyczące Program firmy Microsoft użytkowania w domu.
   ms.date: 05/01/2021
-  ms.openlocfilehash: 8f9b3bb1e6bba0bb9b473962bbaf50653f733760
-  ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+  ms.openlocfilehash: 58ebd94bad0e68cd6bfdf231c920a8170430d968
+  ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 04/13/2022
-  ms.locfileid: "64823921"
+  ms.lasthandoff: 05/14/2022
+  ms.locfileid: "65415477"
 title: Program firmy Microsoft użytkowania w domu często zadawanych pytań
 summary: >
   Klienci korzystający z licencjonowania zbiorowego używają Program firmy Microsoft użytkowania w domu (HUP) w [witrynie internetowej Microsoft Store dla Firm](https://go.microsoft.com/fwlink/?linkid=2139192).
@@ -46,11 +46,11 @@ sections:
     answer: "Rabaty na subskrypcje Microsoft 365 Family i osobiste są oferowane kwalifikującym się firmom na całym świecie z następującymi wyjątkami:\n\n- Liban, Makau, Rosja i Wenezuela: Ta oferta nie jest dostępna na tych rynkach.\n- Chiny i Hongkong: roczna subskrypcja jest dostępna na tych rynkach. W Chinach odwiedź [Microsoft 365 w Chinach](https://www.microsoftstore.com.cn/home-use-program/invite). W Hong Kongu odwiedź stronę [Kup Microsoft 365 w obniżonej cenie](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Japonia: Microsoft 365 Family jest niedostępna.\n- Rabaty na wybrane urządzenia surface i akcesoria są oferowane kwalifikującym się firmom na wybranych rynkach. \n"
   - question: >
       Jak organizacja kwalifikuje się do rabatów HUP?
-    answer: "Aby pracownicy mogli korzystać z rabatu Program firmy Microsoft użytkowania w domu, potrzebują prawidłowego firmowego adresu e-mail i aktywnego konta Microsoft, a Twoja organizacja musi spełniać jedno z następujących kryteriów:\n\n- Klienci, którzy mają aktywną usługę Software Assurance na potrzeby kwalifikowania aplikacji Office\n- Klienci, którzy mają Microsoft 365/Microsoft 365 E3/E5 z pakietu Software Assurance\n- Klienci komercyjni i rządowi, którzy kupili ≥ 2000 licencji jednego lub kombinacji Microsoft 365 E3/E5\n- Klienci edukacyjni i non-profit\n- Klienci komercyjni i rządowi, którzy wydali 250 000 USD lub więcej w ciągu ostatnich 12 miesięcy na kwalifikujące się Power BI, Office, urządzenia Surface & akcesoria, Windows i Enterprise Mobility \n"
+    answer: "Aby pracownicy mogli korzystać z rabatu Program firmy Microsoft użytkowania w domu, potrzebują prawidłowego firmowego adresu e-mail i aktywnego konta Microsoft, a Twoja organizacja musi spełniać jedno z następujących kryteriów:\n\n- Klienci, którzy mają aktywną usługę Software Assurance na potrzeby kwalifikowania aplikacji Office\n- Klienci, którzy mają Microsoft 365/Microsoft 365 E3/E5 z pakietu Software Assurance\n- Klienci komercyjni i rządowi, którzy kupili co najmniej 2000 licencji jednego lub kombinacji Microsoft 365 E3/E5\n- Klienci edukacyjni i non-profit\n- Klienci komercyjni i rządowi, którzy wydali 250 000 USD lub więcej w ciągu ostatnich 12 miesięcy na kwalifikujące się Power BI, Office, urządzenia Surface & akcesoria, Windows i Enterprise Mobility \n"
   - question: >
       Dlaczego muszę utworzyć konto Azure Active Directory (AAD), aby korzystać z programu Home Use Program/Microsoft Store dla Firm?
     answer: >
-      Aby zaktualizować i zmodernizować program home use do szerszego zakresu korzyści z licencji i produktów, musieliśmy zmienić sposób, w jaki spełniamy wymagania hup. Microsoft Store dla Firm jest używany do weryfikacji uprawnień i przypisywania korzyści hup, a w tym celu opiera się na AAD do łączenia informacji z VLSC i weryfikowania domen poczty e-mail pracowników organizacji. Aby uzyskać więcej informacji, zobacz [Tworzenie konta usługi Azure AD za pośrednictwem usługi Office 365 for Business](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
+      Aby zaktualizować i zmodernizować program home use do szerszego zakresu korzyści z licencji i produktów, musieliśmy zmienić sposób, w jaki spełniamy wymagania hup. Microsoft Store dla Firm jest używana do weryfikacji uprawnień i przypisywania korzyści hup, a w tym celu opiera się na usłudze AAD w celu łączenia informacji z usługi VLSC i weryfikowania domen poczty e-mail, na których znajdują się pracownicy organizacji. Aby uzyskać więcej informacji, zobacz [Tworzenie konta Azure AD za pośrednictwem usługi Office 365 for Business](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
   - question: >
       Jak mogę zostać przypisanym administratorem IT dzierżawy zarządzanej?
     answer: >

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usługa Basic Mobility and Security ułatwia zabezpieczanie urządzeń przenośnych i zarządzanie nimi.
-ms.openlocfilehash: aa5c6bb757604763e9ba7348d1d4f952a6555865
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 96deda323c6dedcae860811a1e538aaa0bffa25d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935264"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414849"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Zarządzanie ustawieniami dostępu do urządzeń w usłudze Basic Mobility and Security
 
@@ -33,12 +33,12 @@ Wykonaj następujące kroki:
 
 1. Zaloguj się do Microsoft 365 przy użyciu konta administratora globalnego.
 
-2. W przeglądarce wpisz: [https://protection.office.com](https://protection.office.com/).
+2. W przeglądarce wpisz: <https://protection.office.com/>.
 
     > [!IMPORTANT]
     > Jeśli po raz pierwszy używasz pakietu Basic Mobility and Security dla Microsoft 365 Business Standard, aktywuj je tutaj: [Aktywuj podstawowe zabezpieczenia i mobilność](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Po aktywowaniu urządzeniami należy zarządzać przy użyciu [Office 365 Security & Compliance](https://protection.office.com/).
 
-3. Przejdź do pozycji  **Zapobieganie** >  **utracie danychZarządzanie urządzeniamiZarządzanie urządzeniami** > i **** wybierz  **pozycjęZarządzanie ustawieniami dostępu do urządzeń w całej organizacji**.
+3. Przejdź do obszaru **Ochrona przed utratą** \> danych **Zasady urządzeń** **zarządzania urządzeniami** \> i wybierz pozycję **Zarządzaj ustawieniami dostępu do urządzeń w całej organizacji**.
 
 4. Wybierz pozycję **Blokuj**.
 

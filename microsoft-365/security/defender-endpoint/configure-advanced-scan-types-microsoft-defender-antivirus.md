@@ -16,12 +16,12 @@ ms.technology: mde
 ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: a2eaeb2de0a7caf502130bef788c17e515657d7a
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 5060a05e485db18f8276ecd2ec592ea3873a83b2
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788969"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419929"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Konfiguruj opcje skanowania programu antywirusowego Microsoft Defender
 
@@ -72,7 +72,7 @@ Aby uzyskać szczegółowe informacje na temat konfigurowania Microsoft Endpoint
 |Skanowanie plików w sieci <p> **Skanowania** \> **Skanowanie plików sieciowych**|Wyłączona|`-DisableScanningNetworkFiles`|
 |Skanowanie spakowanych plików wykonywalnych <p> **Skanowania** \> **Skanowanie spakowanych plików wykonywalnych**|Włączone|Niedostępny|
 |Skanuj dyski wymienne tylko podczas pełnego skanowania <p> **Skanowania** \> **Skanowanie dysków wymiennych**|Wyłączona|`-DisableRemovableDriveScanning`|
-|Określanie poziomu podfolderów w folderze archiwum do skanowania <p>**Skanowania** \> **Określ maksymalną głębokość skanowania plików archiwum**|0|Niedostępne|
+|Określanie poziomu podfolderów w folderze archiwum do skanowania <p>**Skanowania** \> **Określ maksymalną głębokość skanowania plików archiwum**|0|Niedostępny|
 |Określ maksymalne obciążenie procesora CPU (jako wartość procentową) podczas skanowania. <p> **Skanowania** \> **Określanie maksymalnego procentu wykorzystania procesora CPU podczas skanowania**|50|`-ScanAvgCPULoadFactor` <p>**UWAGA**: Maksymalne obciążenie procesora CPU nie jest twardym limitem, ale jest wskazówką dla aparatu skanowania, aby nie przekraczać średniej maksymalnej. Ręczne uruchamianie skanowania spowoduje zignorowanie tego ustawienia i uruchomienie go bez żadnych limitów procesora CPU.|
 |Określ maksymalny rozmiar (w kilobajtach) plików archiwum, które mają być skanowane. <p> **Skanowania** \> **Określanie maksymalnego rozmiaru plików archiwum do skanowania**|Brak limitu|Niedostępny <p>Wartość domyślna 0 nie ma żadnego limitu|
 |Konfigurowanie niskiego priorytetu procesora CPU dla zaplanowanych skanów <p> **Skanowania** \> **Konfigurowanie niskiego priorytetu procesora CPU dla zaplanowanych skanów**|Wyłączona|Niedostępny|
@@ -112,13 +112,13 @@ W dowolnym systemie operacyjnym skanowane są tylko dyski sieciowe zamapowane na
 
 > [!TIP]
 > Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 

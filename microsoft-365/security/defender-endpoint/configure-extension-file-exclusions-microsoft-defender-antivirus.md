@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4db7b8f13f1f4860d8cd88f6dec0ff588a89ab41
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 034a12d1f1354ac63778d142d1bc09848e2f9911
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098917"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419907"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia pliku i lokalizacji folderu
 
@@ -379,7 +379,7 @@ Jeśli nie masz dostępu do Internetu, możesz utworzyć własny plik testowy EI
 Możesz również skopiować ciąg do pustego pliku tekstowego i spróbować go zapisać przy użyciu nazwy pliku lub folderu, który próbujesz wykluczyć.
 
 > [!TIP]
-> Jeśli szukasz powiązanych informacji dotyczących programu antywirusowego dla innych platform, zobacz:
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

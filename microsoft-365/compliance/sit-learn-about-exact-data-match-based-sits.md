@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Dowiedz się więcej o dokładnych typach informacji poufnych zgodnych z danymi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f883d2509961ee07045949530f8fbb50629212f
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759772"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415931"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [Typy informacji poufnych](sensitive-information-type-learn-about.md) służą do identyfikowania poufnych elementów, dzięki czemu można zapobiec ich nieumyślnemu lub niewłaściwemu udostępnianiu, aby ułatwić lokalizowanie odpowiednich danych w zakresie zbierania elektronicznych materiałów dowodowych oraz stosowanie akcji ładu do niektórych typów informacji. Niestandardowy typ informacji poufnych (SIT) definiuje się na podstawie:
 
@@ -44,10 +46,10 @@ Ale co zrobić, jeśli chcesz niestandardowego typu informacji poufnych (SIT), k
 
 ![Klasyfikacja oparta na protokole EDM.](../media/EDMClassification.png)
 
-Klasyfikacja oparta na protokole EDM umożliwia tworzenie niestandardowych typów informacji poufnych odwołujących się do dokładnych wartości w bazie danych informacji poufnych. Bazę danych można odświeżać codziennie i zawierać do 100 milionów wierszy danych. W miarę jak pracownicy, pacjenci lub klienci przychodzą i odchodzą, a rekordy ulegają zmianie, niestandardowe typy informacji poufnych pozostają aktualne i stosowane. Ponadto można używać klasyfikacji opartej na rozwiązaniu EDM z zasadami, takimi jak [zasady zapobiegania utracie danych](dlp-learn-about-dlp.md) lub [zasady Microsoft Cloud App Security plików](/cloud-app-security/data-protection-policies).
+Klasyfikacja oparta na protokole EDM umożliwia tworzenie niestandardowych typów informacji poufnych odwołujących się do dokładnych wartości w bazie danych informacji poufnych. Bazę danych można odświeżać codziennie i zawierać do 100 milionów wierszy danych. W miarę jak pracownicy, pacjenci lub klienci przychodzą i odchodzą, a rekordy ulegają zmianie, niestandardowe typy informacji poufnych pozostają aktualne i stosowane. Ponadto można używać klasyfikacji opartej na rozwiązaniu EDM z zasadami, takimi jak [zasady ochrony przed utratą danych Microsoft Purview](dlp-learn-about-dlp.md) lub [zasady Microsoft Cloud App Security plików](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection obsługuje języki podwójnego zestawu znaków bajtowych dla:
+> Microsoft Purview Information Protection obsługuje języki podwójnego zestawu znaków bajtowych dla:
 >
 > - Chiński (uproszczony)
 > - Chiński (tradycyjny)
@@ -93,7 +95,7 @@ Bliskość — liczba znaków między elementem podstawowym i pomocniczym
 
 ### <a name="you-supply-your-own-schema-and-data"></a>Dostarczasz własny schemat i dane
 
-[Microsoft 365 zawiera ponad 200 funkcji SITS](sensitive-information-type-entity-definitions.md) ze wstępnie zdefiniowanymi schematami, wzorcami regex, słowami kluczowymi i poziomami ufności. Za pomocą interfejsów SIC EDM odpowiadasz za definiowanie schematu, a także pól podstawowych i pomocniczych identyfikujących poufne elementy. Ponieważ schemat i podstawowe i pomocnicze wartości danych są wysoce poufne, szyfrujesz je za pomocą funkcji [skrótu](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) , która zawiera losowo wygenerowaną lub samodzielnie dostarczoną wartość [soli](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) . Te wartości skrótu są następnie przekazywane do usługi, więc dane poufne nigdy nie są otwarte.
+[Microsoft Purview zawiera ponad 200 funkcji SITS](sensitive-information-type-entity-definitions.md) ze wstępnie zdefiniowanymi schematami, wzorcami regex, słowami kluczowymi i poziomami ufności. Za pomocą interfejsów SIC EDM odpowiadasz za definiowanie schematu, a także pól podstawowych i pomocniczych identyfikujących poufne elementy. Ponieważ schemat i podstawowe i pomocnicze wartości danych są wysoce poufne, szyfrujesz je za pomocą funkcji [skrótu](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) , która zawiera losowo wygenerowaną lub samodzielnie dostarczoną wartość [soli](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) . Te wartości skrótu są następnie przekazywane do usługi, więc dane poufne nigdy nie są otwarte.
 
 ### <a name="primary-and-secondary-support-elements"></a>Podstawowe i pomocnicze elementy pomocy technicznej
 
@@ -110,4 +112,3 @@ Program EDM znajduje dopasowania, porównując zawartość, którą znajduje, z 
 ## <a name="see-also"></a>Zobacz też
 
 - [Wprowadzenie do dokładnych typów informacji poufnych opartych na dopasowaniu danych](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
-   

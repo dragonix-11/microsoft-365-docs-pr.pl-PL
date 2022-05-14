@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4e0d249f7805c47be55ec42f3362ca1952c20ca3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 049c7a772c4c8dcf986efd310e4613423f33dcc9
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788507"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419137"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Wdrażanie i raportowanie Program antywirusowy Microsoft Defender oraz zarządzanie nimi
 
@@ -58,7 +58,7 @@ Microsoft Endpoint Manager ([1](#fn1))|Użyj roli [Endpoint Protection punkt sys
 zasady grupy i Active Directory (przyłączone do domeny)|Użyj obiektu zasady grupy, aby wdrożyć zmiany konfiguracji i upewnić się, że Program antywirusowy Microsoft Defender jest włączona.|Użyj obiektów zasady grupy (GPO), aby [Skonfigurować opcje aktualizacji dla Program antywirusowy Microsoft Defender][] i [Konfigurowanie funkcji Windows Defender][]|Raportowanie punktów końcowych nie jest dostępne w przypadku zasady grupy. Możesz wygenerować listę [Zasad grupy, aby określić, czy nie zastosowano żadnych ustawień lub zasad][]
 PowerShell|Wdrażanie przy użyciu zasady grupy, Microsoft Endpoint Configuration Manager lub ręcznie w poszczególnych punktach końcowych.|Użyj poleceń cmdlet [Set-MpPreference] i [Update-MpSignature] dostępnych w module Defender.|Użyj odpowiednich poleceń cmdlet [Get- dostępnych w module Defender][]
 Instrumentacja zarządzania Windows|Wdrażanie przy użyciu zasady grupy, Microsoft Endpoint Configuration Manager lub ręcznie w poszczególnych punktach końcowych.|Użyj metody [Set klasy MSFT_MpPreference][] i metody [Update klasy MSFT_MpSignature][]|Użyj klasy [MSFT_MpComputerStatus][] i metody get skojarzonych klas w [dostawcy WMIv2 Windows Defender][]
-Microsoft Azure|Wdróż Microsoft Antimalware dla platformy Azure w [Azure Portal przy użyciu Visual Studio konfiguracji maszyny wirtualnej lub przy użyciu poleceń cmdlet Azure PowerShell](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). Program [Endpoint Protection można również zainstalować w Microsoft Defender dla Chmury*](/azure/security-center/security-center-install-endpoint-protection)|Konfigurowanie [Microsoft Antimalware dla Virtual Machines i Cloud Services przy użyciu poleceń cmdlet Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) lub [używanie przykładów kodu](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Użyj [Microsoft Antimalware dla Virtual Machines i Cloud Services z poleceniami cmdlet Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets), aby włączyć monitorowanie. Możesz również przejrzeć raporty użycia w Azure Active Directory, aby określić podejrzane działania, w tym raport [Prawdopodobnie zainfekowane urządzenia][] i skonfigurować narzędzie SIEM do raportowania [Program antywirusowy Microsoft Defender zdarzeń][] i dodać to narzędzie jako aplikację w AAD.
+Microsoft Azure|Wdróż Microsoft Antimalware dla platformy Azure w [Azure Portal przy użyciu Visual Studio konfiguracji maszyny wirtualnej lub przy użyciu poleceń cmdlet Azure PowerShell](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). Program [Endpoint Protection można również zainstalować w Microsoft Defender dla Chmury*](/azure/security-center/security-center-install-endpoint-protection)|Konfigurowanie [Microsoft Antimalware dla maszyn wirtualnych i usług w chmurze przy użyciu poleceń cmdlet Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) lub [używanie przykładów kodu](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Użyj [Microsoft Antimalware dla maszyn wirtualnych i usług w chmurze z poleceniami cmdlet Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets), aby włączyć monitorowanie. Możesz również przejrzeć raporty użycia w Azure Active Directory, aby określić podejrzane działania, w tym raport [Prawdopodobnie zainfekowane urządzenia][] i skonfigurować narzędzie SIEM do raportowania zdarzeń [Program antywirusowy Microsoft Defender][] i dodać to narzędzie jako aplikację w usłudze AAD.
 
 1. <span id="fn1" />Dostępność niektórych funkcji i funkcji, szczególnie związanych z ochroną dostarczaną przez chmurę, różni się między Microsoft Endpoint Manager (Current Branch) i System Center 2012 Configuration Manager. W tej bibliotece skupiliśmy się na Windows 10, Windows 11, Windows Server 2016 i Microsoft Endpoint Manager (Current Branch). Aby zapoznać się z tabelą opisującą główne różnice, zobacz [Use Microsoft cloud-provided protection in Program antywirusowy Microsoft Defender (Korzystanie z ochrony firmy Microsoft w chmurze w Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)). [(Wróć do tabeli)](#ref2)
 
@@ -76,11 +76,11 @@ Temat | Opis
 
 > [!TIP]
 > Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
     

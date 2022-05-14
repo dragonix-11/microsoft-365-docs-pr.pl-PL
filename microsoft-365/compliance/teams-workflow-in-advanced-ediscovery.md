@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z Microsoft Teams w usłudze eDiscovery (Premium).
-ms.openlocfilehash: 36bfcde1b2ee5ad9b088db008249cdeb1cf90eb4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 46fe8491533f6d2fa6954eab76758213eaa7d30d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092276"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414871"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Ten artykuł zawiera kompleksowy zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) w celu zachowania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams. Celem tego artykułu jest pomoc w optymalizacji przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem zawartości Teams.
+Ten artykuł zawiera kompleksowy zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania Microsoft Purview eDiscovery (Premium) do przechowywania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams. Celem tego artykułu jest pomoc w optymalizacji przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem zawartości Teams.
 
 Istnieje pięć kategorii zawartości Teams, które można zbierać i przetwarzać przy użyciu zbierania elektronicznych materiałów dowodowych (Premium):
 
@@ -70,7 +70,7 @@ Aby utworzyć przypadek:
 
 1. Przejdź do i <https://compliance.microsoft.com> zaloguj się.
 
-2. W okienku nawigacji po lewej stronie portalu zgodności usługi Microsoft Purview kliknij pozycję **eDiscovery > Advanced**.
+2. W okienku nawigacji po lewej stronie portal zgodności Microsoft Purview kliknij pozycję **eDiscovery > Advanced**.
 
 3. Na stronie **eDiscovery (Premium)** kliknij kartę **Przypadki**, a następnie kliknij **pozycję Utwórz przypadek**.
 

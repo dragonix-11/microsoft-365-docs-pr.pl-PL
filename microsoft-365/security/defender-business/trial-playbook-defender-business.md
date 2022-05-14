@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym podręczniku najlepiej wykorzystać wersję próbną usługi Defender for Business. Szybko skonfiguruj i rozpocznij korzystanie z nowych funkcji zabezpieczeń.
-ms.openlocfilehash: 8a676d7c412746e4f941e11d91e44faddc7237a7
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 4f239a08e46e8c8bede5c2e972c3daed2af8b550
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65175023"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418988"
 ---
 # <a name="trial-playbook-microsoft-defender-for-business"></a>Podręcznik wersji próbnej: Microsoft Defender dla Firm
 
@@ -109,9 +109,9 @@ Jeśli używasz kreatora instalacji, ale musisz dołączyć więcej urządzeń, 
    | Urządzeń | Metody dołączania |
    |:---|:---|
    | [klienci Windows](mdb-onboard-devices.md) | Wybierz jedną z następujących opcji dołączania Windows urządzeń klienckich do usługi Defender dla Firm:<br/>— Skrypt lokalny (do ręcznego dołączania urządzeń w portalu Microsoft 365 Defender)<br/>- zasady grupy (jeśli już używasz zasady grupy i wolisz tę metodę)<br/>- Microsoft Intune (*zalecane*; zawarte w [Microsoft 365 Business Premium](../../business-premium/index.md)) |
-   | [Komputery z systemem macOS](mdb-onboard-devices.md) | Wybierz jedną z następujących opcji dołączania urządzeń z systemem macOS:<br/>— Skrypt lokalny dla systemu macOS (*zalecane*) <br/>- Microsoft Intune dla systemu macOS (Intune jest uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md))<br/><br/>Zalecamy używanie skryptu lokalnego do dołączania urządzeń z systemem macOS. Chociaż [rejestrację dla urządzeń z systemem macOS można skonfigurować w Intune](/mem/intune/enrollment/macos-enroll), skrypt lokalny jest najprostszą metodą dołączania urządzeń z systemem macOS do usługi Defender for Business. |
+   | [komputery macOS](mdb-onboard-devices.md) | Wybierz jedną z następujących opcji dołączania urządzeń macOS:<br/>— Skrypt lokalny dla macOS (*zalecane*) <br/>- Microsoft Intune dla macOS (Intune jest uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md))<br/><br/>Zalecamy dołączenie macOS urządzeń przy użyciu skryptu lokalnego. Chociaż [rejestrację dla urządzeń macOS można skonfigurować w Intune](/mem/intune/enrollment/macos-enroll), skrypt lokalny jest najprostszą metodą dołączania urządzeń macOS do usługi Defender for Business. |
    | serwery Windows Server i Linux | *serwery Windows Server i Linux nie są obecnie obsługiwane. Funkcje dołączania serwera i zabezpieczeń wkrótce zostaną wyświetlone w usłudze Defender dla Firm*. |
-   | [Urządzenia przenośne](mdb-onboard-devices.md) | Musisz Microsoft Intune do dołączania urządzeń przenośnych, takich jak urządzenia z systemem Android i iOS/iPadOS. Jeśli masz [Microsoft 365 Business Premium](../../business-premium/index.md), Intune w ramach subskrypcji. Intune można również kupić oddzielnie. Zobacz następujące zasoby, aby uzyskać pomoc dotyczącą rejestrowania tych urządzeń w Intune:<br/>- [Rejestrowanie urządzeń z systemem Android](/mem/intune/enrollment/android-enroll)<br/>- [Rejestrowanie urządzeń z systemem iOS lub iPadOS](/mem/intune/enrollment/ios-enroll) |
+   | [Urządzenia przenośne](mdb-onboard-devices.md) | Musisz Microsoft Intune do dołączania urządzeń przenośnych, takich jak urządzenia Android i iOS/iPadOS. Jeśli masz [Microsoft 365 Business Premium](../../business-premium/index.md), Intune w ramach subskrypcji. Intune można również kupić oddzielnie. Zobacz następujące zasoby, aby uzyskać pomoc dotyczącą rejestrowania tych urządzeń w Intune:<br/>- [Rejestrowanie urządzeń Android](/mem/intune/enrollment/android-enroll)<br/>- [Rejestrowanie urządzeń z systemem iOS lub iPadOS](/mem/intune/enrollment/ios-enroll) |
 
 5. **[Wyświetl i w razie potrzeby skonfiguruj zasady zabezpieczeń](mdb-configure-security-settings.md)**. Po dołączeniu urządzeń firmy do Microsoft Defender dla Firm następnym krokiem jest wyświetlenie i w razie potrzeby edytowanie zasad i ustawień zabezpieczeń. Usługa Defender dla firm zawiera wstępnie skonfigurowane zasady zabezpieczeń, które używają zalecanych ustawień. Można jednak edytować ustawienia zgodnie z potrzebami biznesowymi.
 

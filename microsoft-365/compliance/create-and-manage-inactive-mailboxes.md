@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Utwórz nieaktywne skrzynki pocztowe i zarządzaj nimi, które zachowują zawartość usuniętych skrzynek pocztowych w Microsoft 365.
-ms.openlocfilehash: 485352f292321ccfa56e59451cf017c01f3d7fdd
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: b7a33101135b43357b095af6864b54c618abd84d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393379"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417407"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Twórz nieaktywne skrzynki pocztowe i zarządzaj nimi
 
@@ -72,9 +72,11 @@ Aby wyświetlić listę nieaktywnych skrzynek pocztowych w organizacji:
 
    ![Opcja Nieaktywna skrzynka pocztowa na stronie Zasady przechowywania z zarządzania cyklem życia danych.](../media/inactive-mailbox-option.png)
 
-4. Na stronie **Nieaktywne skrzynki pocztowe** jest wyświetlana lista nieaktywnych skrzynek pocztowych. Wybierz jedną, aby wyświetlić szczegółowe informacje o tej nieaktywnej skrzynce pocztowej. Szczegóły obejmują czas, przez jaki był nieaktywny, identyfikator Exchange, kiedy został wstrzymany.
+4. Na stronie **Nieaktywne skrzynki pocztowe** jest wyświetlana lista nieaktywnych skrzynek pocztowych. Wybierz jedną, aby wyświetlić szczegółowe informacje o tej nieaktywnej skrzynce pocztowej. Szczegóły obejmują identyfikator Exchange skrzynki pocztowej oraz informacje o tym, czy jest on [w blokadzie postępowania sądowego](create-a-litigation-hold.md).
+    
+    W okienku szczegółów nie będą widoczne inne typy blokad, na przykład zasady przechowywania Microsoft 365 lub blokada zbierania elektronicznych materiałów dowodowych. Aby znaleźć te informacje, zobacz [How to identify the type of hold placed on an Exchange Online mailbox (Jak zidentyfikować typ blokady umieszczonej w Exchange Online skrzynce pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md)).
 
-Na stronie **Nieaktywne skrzynki pocztowe** wybierz pozycję Eksportuj ikonę ![wyników wyszukiwania.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Eksportuj** , aby wyświetlić lub pobrać plik CSV zawierający dodatkowe informacje o nieaktywnych skrzynkach pocztowych w organizacji.
+Jeśli masz wiele nieaktywnych skrzynek pocztowych, możesz łatwiej wyszukać i posortować plik CSV pod kątem szczegółów widocznych na liście: na stronie **Nieaktywne skrzynki pocztowe** wybierz pozycję :::image type="icon" source="../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png"::: **Eksportuj**.
 
 Alternatywnie możesz uruchomić następujące polecenie w programie Exchange Online programu PowerShell, aby wyświetlić listę nieaktywnych skrzynek pocztowych:
 

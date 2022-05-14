@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Skrót i przekaż tabelę źródła informacji poufnych, aby uzyskać dokładne dane zgodne z typami informacji poufnych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4c40802a76ab09dc86dcada5ebfd17187136f42e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0277a53b74359bdcac1de8fa6013082b991247f4
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760234"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417529"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Utwórz skrót i przekaż tabelę źródła informacji poufnych dla dokładnych typów informacji poufnych opartych na dopasowaniu danych 
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule przedstawiono sposób tworzenia skrótów i przekazywania tabeli źródła informacji poufnych.
 
@@ -33,8 +35,8 @@ W tym artykule przedstawiono sposób tworzenia skrótów i przekazywania tabeli 
 W tej fazie:
 
 1. Konfigurowanie niestandardowej grupy zabezpieczeń i konta użytkownika
-2. Konfigurowanie narzędzia agenta Upload EDM
-3. Użyj narzędzia agenta Upload EDM, aby utworzyć skrót z wartością soli, tabelą źródła informacji poufnych i przekazać ją.
+2. Konfigurowanie narzędzia EDM Upload Agent
+3. Użyj narzędzia Agent przekazywania EDM, aby utworzyć skrót z wartością soli, tabelą źródła informacji poufnych i przekazać ją.
 
 Mieszanie i przekazywanie można wykonać przy użyciu jednego komputera lub oddzielić krok skrótu od kroku przekazywania w celu zwiększenia bezpieczeństwa.
 
@@ -76,7 +78,7 @@ Jeśli narzędzie wskazuje niezgodność liczby kolumn, może to być spowodowan
 - konto służbowe dla Microsoft 365, które zostanie dodane do grupy zabezpieczeń **EDMDataUploaders\_**
 - maszyna Windows 10 lub Windows Server 2016 z platformą .NET w wersji 4.6.2 <!--4.7.2 un comment this around 9/29-->do uruchamiania EDMUploadAgent
 - katalog na maszynie przekazywania dla:
-  - [Agent Upload EDM](#links-to-edm-upload-agent-by-subscription-type)
+  - [Agent przekazywania EDM](#links-to-edm-upload-agent-by-subscription-type)
   - plik poufnego elementu w formacie .csv, tsv lub potoku (|), **PatientRecords.csv** w naszych przykładach
   - wyjściowych plików skrótu i soli utworzonych w tej procedurze
   - nazwa magazynu danych z pliku **edm.xml** , na przykład jego `PatientRecords`
@@ -111,14 +113,14 @@ Ten komputer musi mieć bezpośredni dostęp do dzierżawy Microsoft 365.
 
 1. Utwórz katalog roboczy dla EDMUploadAgent. Na przykład **C:\EDM\Data**. Umieść tam plik **PatientRecords.csv** .
 
-2. Pobierz i zainstaluj odpowiedniego [agenta Upload EDM](#links-to-edm-upload-agent-by-subscription-type) dla subskrypcji w katalogu utworzonym w kroku 1.
+2. Pobierz i zainstaluj odpowiedniego [agenta przekazywania EDM](#links-to-edm-upload-agent-by-subscription-type) dla subskrypcji do katalogu utworzonego w kroku 1.
 
    > [!NOTE]
    > Agent EDMUploadAgent w powyższych linkach został zaktualizowany w celu automatycznego dodania wartości soli do danych skrótu. Alternatywnie możesz podać własną wartość soli. Po użyciu tej wersji nie będzie można używać poprzedniej wersji EDMUploadAgent.
    >
    > Dane za pomocą EDMUploadAgent można przekazać do dowolnego magazynu danych tylko dwa razy dziennie.
 
-3. Autoryzuj agenta Upload EDM, otwórz okno wiersza polecenia jako administrator, przejdź do katalogu **C:\EDM\Data**, a następnie uruchom następujące polecenie:
+3. Autoryzuj agenta przekazywania EDM, otwórz okno wiersza polecenia jako administrator, przejdź do katalogu **C:\EDM\Data** , a następnie uruchom następujące polecenie:
 
    `EdmUploadAgent.exe /Authorize`
 
@@ -193,7 +195,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 2. Skopiuj te pliki w bezpieczny sposób na komputer, którego użyjesz do przekazania pliku tabeli źródła informacji poufnych (PatientRecords) do dzierżawy.
 
-3. Autoryzuj agenta Upload EDM, otwórz okno wiersza polecenia jako administrator, przejdź do katalogu **C:\EDM\Data**, a następnie uruchom następujące polecenie:
+3. Autoryzuj agenta przekazywania EDM, otwórz okno wiersza polecenia jako administrator, przejdź do katalogu **C:\EDM\Data** , a następnie uruchom następujące polecenie:
 
    ```dos
    EdmUploadAgent.exe /Authorize

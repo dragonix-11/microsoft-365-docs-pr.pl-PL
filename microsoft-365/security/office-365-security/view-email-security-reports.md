@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c83213278c7f9bc3b63c141e4d964475d64599d1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: dcc04b1c06e5ca2900cca9f0a66fe5b041af734e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286631"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417177"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender
 
@@ -43,6 +43,9 @@ W portalu <https://security.microsoft.com> Microsoft 365 Defender dostępnych je
 > Niektóre raporty na stronie **Raporty współpracy & poczty e-mail** wymagają Ochrona usługi Office 365 w usłudze Microsoft Defender. Aby uzyskać informacje o tych raportach, zobacz [Wyświetlanie raportów Ochrona usługi Office 365 w usłudze Defender w portalu Microsoft 365 Defender](view-reports-for-mdo.md).
 >
 > Raporty związane z przepływem poczty znajdują się teraz w centrum administracyjnym Exchange. Aby uzyskać więcej informacji na temat tych raportów, zobacz [Raporty przepływu poczty w nowym centrum administracyjnym Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak używać raportów do zrozumienia skuteczności Ochrona usługi Office 365 w usłudze Defender w organizacji.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBkxB]
 
 ## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>Zmiany raportu zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender
 

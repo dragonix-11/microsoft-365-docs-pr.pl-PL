@@ -15,12 +15,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 890be814be75c303aa42feb5cb7a16cb4f5c3bd9
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 3d1fce680062f2ca63f220754ac1ab3f8b9b33d3
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320645"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419863"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Konfigurowanie wykluczeń Program antywirusowy Microsoft Defender na serwerze Windows
 
@@ -377,7 +377,7 @@ W razie potrzeby można dodawać lub usuwać wykluczenia niestandardowe. Aby to 
 - [Konfigurowanie i weryfikowanie wykluczeń dla plików otwieranych przez procesy](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> Jeśli szukasz powiązanych informacji dotyczących programu antywirusowego dla innych platform, zobacz:
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

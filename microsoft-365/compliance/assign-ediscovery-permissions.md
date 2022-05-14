@@ -1,5 +1,5 @@
 ---
-title: Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview
+title: Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,26 +16,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Przypisz uprawnienia wymagane do wykonywania zadań związanych zbierania elektronicznych materiałów dowodowych przy użyciu portalu zgodności usługi Microsoft Purview.
+description: Przypisz uprawnienia wymagane do wykonywania zadań związanych zbierania elektronicznych materiałów dowodowych przy użyciu portal zgodności Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e764aae4313a8e5d4dfc402e4c1f87eb8c1a5bbb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 112109d50f0f7e1f11687a325f8756cf2b355e5c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090522"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419445"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Jeśli chcesz, aby użytkownicy korzystali z dowolnego [narzędzia związanego zbierania elektronicznych materiałów dowodowych](ediscovery.md) w portalu zgodności usługi Microsoft Purview, musisz przypisać im odpowiednie uprawnienia. Najprostszym sposobem na to jest dodanie odpowiedniej grupy ról na stronie **Uprawnienia** w Centrum zgodności. W tym temacie opisano uprawnienia wymagane do wykonywania zadań zbierania elektronicznych materiałów dowodowych.
-  
+Jeśli chcesz, aby użytkownicy korzystali z dowolnego narzędzia [związanego zbierania elektronicznych materiałów dowodowych](ediscovery.md) w portal zgodności Microsoft Purview, musisz przypisać im odpowiednie uprawnienia. Najprostszym sposobem na to jest dodanie odpowiedniej grupy ról na stronie **Uprawnienia** w portalu zgodności. W tym temacie opisano uprawnienia wymagane do wykonywania zadań zbierania elektronicznych materiałów dowodowych.
+
+> [!TIP]
+> Możesz wyświetlić własne uprawnienia na stronie przeglądu zbierania elektronicznych materiałów dowodowych (Premium) w portalu zgodności. Aby uprawnienia były wyświetlane, musisz mieć przypisaną co najmniej jedną rolę.
+
 Podstawowa grupa ról związana zbierania elektronicznych materiałów dowodowych w portalu zgodności nosi nazwę **eDiscovery Manager**. W tej grupie ról znajdują się dwie podgrupy.
   
-- **eDiscovery Manager** — menedżer zbierania elektronicznych materiałów dowodowych może używać narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych do wyszukiwania lokalizacji zawartości w organizacji i wykonywania różnych akcji związanych z wyszukiwaniem, takich jak podgląd i eksport wyników wyszukiwania. Członkowie mogą również tworzyć przypadki i zarządzać nimi w usługach Microsoft Purview eDiscovery (Standard) i Microsoft Purview eDiscovery (Premium), dodawać i usuwać członków do sprawy, tworzyć blokady spraw, uruchamiać wyszukiwania skojarzone ze sprawą i uzyskiwać dostęp do danych przypadków. Menedżerowie zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp tylko do utworzonych przypadków i zarządzać nimi. Nie mogą uzyskiwać dostępu do spraw utworzonych przez innych menedżerów zbierania elektronicznych materiałów dowodowych ani zarządzać nimi.
+- **eDiscovery Manager** — menedżer zbierania elektronicznych materiałów dowodowych może używać narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych do wyszukiwania lokalizacji zawartości w organizacji i wykonywania różnych akcji związanych z wyszukiwaniem, takich jak podgląd i eksport wyników wyszukiwania. Członkowie mogą również tworzyć przypadki i zarządzać nimi w Microsoft Purview eDiscovery (Standard) i Microsoft Purview eDiscovery (Premium), dodawać i usuwać elementy członkowskie do sprawy, tworzyć blokady spraw, uruchamiać wyszukiwania skojarzone ze sprawą i dane przypadków dostępu. Menedżerowie zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp tylko do utworzonych przypadków i zarządzać nimi. Nie mogą uzyskiwać dostępu do spraw utworzonych przez innych menedżerów zbierania elektronicznych materiałów dowodowych ani zarządzać nimi.
   
 - **Administrator zbierania** elektronicznych materiałów dowodowych — administrator zbierania elektronicznych materiałów dowodowych jest członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych i może wykonywać te same zadania związane z wyszukiwaniem zawartości i zarządzaniem sprawami, które może wykonywać menedżer zbierania elektronicznych materiałów dowodowych. Ponadto administrator zbierania elektronicznych materiałów dowodowych może:
   
@@ -135,7 +138,7 @@ Aby uzyskać więcej informacji, zobacz [Praca z opiekunami w zakresie zbierania
 
 Rola umożliwia użytkownikom eksportowanie wyników wyszukiwania zawartości na komputer lokalny. Umożliwia również przygotowanie wyników wyszukiwania do analizy w obszarze zbierania elektronicznych materiałów dowodowych (Premium).
 
-Aby uzyskać więcej informacji na temat eksportowania wyników wyszukiwania, zobacz [Eksportowanie wyników wyszukiwania z portalu zgodności usługi Microsoft Purview](export-search-results.md).
+Aby uzyskać więcej informacji na temat eksportowania wyników wyszukiwania, zobacz [Eksportowanie wyników wyszukiwania z portal zgodności Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>Przytrzymaj
 

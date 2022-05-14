@@ -1,5 +1,5 @@
 ---
-title: Krok nr 5. Zarządzanie urządzeniami i aplikacją na Microsoft 365 dzierżawy przedsiębiorstwa
+title: Krok nr 5. Zarządzanie urządzeniami i aplikacjami dla Microsoft 365 dla dzierżaw przedsiębiorstwa
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -15,71 +15,71 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: Wdeduj odpowiednią opcję zarządzania urządzeniami i Microsoft 365 dzierżawami.
-ms.openlocfilehash: 09fd96977fbde0f546049d24b1705d27b4c92080
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+description: Wdróż poprawną opcję zarządzania urządzeniami i aplikacjami dla dzierżaw Microsoft 365.
+ms.openlocfilehash: 3999d30aaeee9ebfc2af90b0aeeeaea1b46986fb
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63027153"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419467"
 ---
-# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Krok nr 5. Zarządzanie urządzeniami i aplikacją na Microsoft 365 dzierżawy przedsiębiorstwa
+# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Krok nr 5. Zarządzanie urządzeniami i aplikacjami dla Microsoft 365 dla dzierżaw przedsiębiorstwa
 
-program Microsoft 365 dla przedsiębiorstwa zawiera funkcje, które ułatwiają zarządzanie urządzeniami i korzystanie z aplikacji na tych urządzeniach w organizacji za pomocą funkcji zarządzania urządzeniami przenośnymi (MDM) i zarządzania aplikacjami mobilnymi (MAM). Możesz zarządzać urządzeniami z systemami iOS, Android, macOS i Windows, aby chronić dostęp do zasobów organizacji, w tym do Twoich danych. Możesz na przykład zapobiec wysyłaniu wiadomości e-mail do osób spoza organizacji lub odizolować dane organizacji od danych osobistych na urządzeniach osobistych Twoich pracowników.
+Microsoft 365 dla przedsiębiorstw obejmuje funkcje ułatwiające zarządzanie urządzeniami i korzystanie z aplikacji na tych urządzeniach w organizacji za pomocą zarządzania urządzeniami przenośnymi (MDM) i zarządzania aplikacjami mobilnymi (MAM). Możesz zarządzać urządzeniami iOS, Android, macOS i Windows, aby chronić dostęp do zasobów organizacji, w tym danych. Możesz na przykład uniemożliwić wysyłanie wiadomości e-mail do osób spoza organizacji lub odizolować dane organizacji od danych osobowych na urządzeniach osobistych pracownika.
 
-Oto przykład sprawdzania poprawności i zarządzania użytkownikami, ich urządzeniami oraz ich użyciem lokalnych i chmurowych aplikacji biurowych, takich jak Microsoft Teams.
+Oto przykład weryfikacji i zarządzania użytkownikami, ich urządzeniami oraz korzystaniem z lokalnych i chmurowych aplikacji zwiększających produktywność, takich jak Microsoft Teams.
 
-![Sprawdzanie poprawności i zarządzanie użytkownikami, urządzeniami i aplikacjami.](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
+![Walidacja użytkowników, urządzeń i aplikacji oraz zarządzanie nimi.](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
-Aby ułatwić zabezpieczanie i ochronę zasobów organizacji, aplikacja Microsoft 365 dla przedsiębiorstwa zawiera funkcje do zarządzania urządzeniami i ich dostępem do aplikacji. Istnieją dwie opcje zarządzania urządzeniami:
+Aby ułatwić zabezpieczanie i ochronę zasobów organizacji, Microsoft 365 dla przedsiębiorstw obejmuje funkcje ułatwiające zarządzanie urządzeniami i dostępem do aplikacji. Istnieją dwie opcje zarządzania urządzeniami:
 
-- Microsoft Intune to kompleksowe rozwiązanie do zarządzania urządzeniami i aplikacją dla przedsiębiorstw.
-- Basic Mobility and Security, który jest podzestawem usług Intune dostępnych we wszystkich Microsoft 365 do zarządzania urządzeniami w Organizacji. Aby uzyskać więcej informacji, zobacz [Funkcje mobilności podstawowej i zabezpieczeń](../admin/basic-mobility-security/capabilities.md).
+- Microsoft Intune, która jest kompleksowym rozwiązaniem do zarządzania urządzeniami i aplikacjami dla przedsiębiorstw.
+- Podstawowa mobilność i zabezpieczenia, która jest podzestawem usług Intune dołączonych do wszystkich produktów Microsoft 365 do zarządzania urządzeniami w organizacji. Aby uzyskać więcej informacji, zobacz [Możliwości usługi Basic Mobility and Security](../admin/basic-mobility-security/capabilities.md).
 
-Jeśli masz usługę Microsoft 365 E3 lub E5, użyj usługi Intune.
+Jeśli masz Microsoft 365 E3 lub E5, należy użyć Intune.
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Zarządzasz [dostępem Microsoft Intune](/mem/intune/fundamentals/planning-guide) organizacji za pomocą usługi MDM lub MAM. Funkcja MDM jest wtedy, gdy użytkownicy "rejestrują" swoje urządzenia w usłudze Intune. Po zarejestrowaniu urządzenia jest ono urządzeniem zarządzanym i może otrzymywać zasady, reguły i ustawienia organizacji. Możesz na przykład zainstalować określone aplikacje, utworzyć zasady dotyczące haseł, zainstalować połączenie VPN i nie tylko.
+Używasz [Microsoft Intune](/mem/intune/fundamentals/planning-guide) do zarządzania dostępem do organizacji przy użyciu zarządzania urządzeniami przenośnymi lub zarządzania aplikacjami mobilnymi. Rozwiązanie MDM jest wtedy, gdy użytkownicy "rejestrują" swoje urządzenia w Intune. Po zarejestrowaniu urządzenia jest to urządzenie zarządzane i może odbierać zasady, reguły i ustawienia organizacji. Można na przykład zainstalować określone aplikacje, utworzyć zasady haseł, zainstalować połączenie sieci VPN i nie tylko.
 
-Użytkownicy z własnymi urządzeniami osobistymi mogą nie chcieć rejestrować swoich urządzeń lub być zarządzani przez usługę Intune i zasady Twojej organizacji. Nadal jednak musisz chronić zasoby i dane organizacji. W tym scenariuszu możesz chronić aplikacje za pomocą mam. Możesz na przykład użyć zasad MAM, które wymagają od użytkownika wprowadzenia numeru PIN podczas uzyskiwania dostępu SharePoint na urządzeniu.
+Użytkownicy z własnymi urządzeniami osobistymi mogą nie chcieć rejestrować swoich urządzeń ani zarządzać nimi za pomocą Intune i zasad organizacji. Jednak nadal musisz chronić zasoby i dane organizacji. W tym scenariuszu możesz chronić aplikacje przy użyciu funkcji ZARZĄDZANIA aplikacjami mobilnymi. Na przykład można użyć zasad zarządzania aplikacjami mobilnymi, które wymagają od użytkownika wprowadzenia numeru PIN podczas uzyskiwania dostępu do SharePoint na urządzeniu.
 
-Dowiesz się także, jak będziesz zarządzać urządzeniami osobistymi i urządzeniami należącymi do organizacji. Urządzenia można traktować inaczej w zależności od ich zastosowania.
+Określisz również sposób zarządzania urządzeniami osobistymi i urządzeniami należącymi do organizacji. W zależności od ich zastosowań warto traktować urządzenia inaczej.
 
-## <a name="identity-and-device-access-configurations"></a>Konfiguracje tożsamości i dostępu do urządzeń
+## <a name="identity-and-device-access-configurations"></a>Konfiguracje dostępu do tożsamości i urządzeń
 
-Firma Microsoft oferuje zestaw konfiguracji tożsamości i dostępu do [urządzeń, aby](../security/office-365-security/microsoft-365-policies-configurations.md) zapewnić bezpieczeństwo i produktywność pracowników. Te konfiguracje obejmują korzystanie z:
+Firma Microsoft udostępnia zestaw konfiguracji dla [tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md) w celu zapewnienia bezpiecznej i produktywnej siły roboczej. Te konfiguracje obejmują korzystanie z następujących elementów:
 
-- Zasady dostępu warunkowego w usłudze Azure AD
-- Microsoft Intune zgodności urządzeń i zasad ochrony aplikacji
-- Zasady ryzyka użytkownika w usłudze Azure AD Identity Protection
-- Dodatkowe zasady dotyczące aplikacji w chmurze
+- zasady dostępu warunkowego Azure AD
+- Microsoft Intune zasad zgodności urządzeń i ochrony aplikacji
+- zasady ryzyka użytkownika usługi Azure AD Identity Protection
+- Dodatkowe zasady aplikacji w chmurze
 
-Oto przykład zastosowania tych ustawień i zasad w celu weryfikacji i ograniczenia użytkowników, ich urządzeń oraz używania lokalnych i chmurowych aplikacji biurowych, takich jak Microsoft Teams.
+Oto przykład zastosowania tych ustawień i zasad w celu weryfikowania i ograniczania użytkowników, ich urządzeń oraz korzystania z lokalnych i chmurowych aplikacji zwiększających produktywność, takich jak Microsoft Teams.
 
-![Konfiguracje tożsamości i dostępu do urządzeń w celu zachowania zgodności z wymaganiami i ograniczeniami dotyczącymi użytkowników, ich urządzeń i korzystania z aplikacji.](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
+![Konfiguracje tożsamości i dostępu do urządzeń dla wymagań i ograniczeń dotyczących użytkowników, ich urządzeń i korzystania z aplikacji.](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 
-Konfiguracje w zakresie dostępu do urządzeń i zarządzania aplikacją można uzyskać za pomocą tych artykułów:
+Aby uzyskać dostęp do urządzeń i zarządzanie aplikacjami, skorzystaj z konfiguracji w następujących artykułach:
 
 - [Wymagania wstępne](../security/office-365-security/identity-access-prerequisites.md)
-- [Typowe zasady dostępu do urządzeń i tożsamości](../security/office-365-security/identity-access-policies.md)
+- [Wspólne zasady tożsamości i dostępu do urządzeń](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>Wyniki kroku 5
 
-W przypadku zarządzania urządzeniami i aplikacjami dla dzierżawy usługi Microsoft 365 określono zasady i ustawienia usługi Intune w celu weryfikacji i ograniczenia użytkowników, ich urządzeń oraz korzystania z aplikacji biurowych w chmurze i lokalnych.
+W przypadku zarządzania urządzeniami i aplikacjami dla dzierżawy Microsoft 365 określono ustawienia i zasady Intune w celu weryfikowania i ograniczania użytkowników, ich urządzeń oraz korzystania z lokalnych i chmurowych aplikacji zwiększających produktywność.
 
-Oto przykład dzierżawy z wyróżnionem zarządzaniem urządzeniami i aplikacją Intune.
+Oto przykład dzierżawy z Intune zarządzania urządzeniami i aplikacjami z wyróżnionymi nowymi elementami.
 
-![Przykład dzierżawy z zarządzaniem urządzeniami i aplikacją Intune.](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+![Przykład dzierżawy z Intune zarządzaniem urządzeniami i aplikacjami.](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
-Na poniższej ilustracji dzierżawa ma:
+Na tej ilustracji dzierżawa ma następujące elementy:
 
-- Urządzenia należące do organizacji zarejestrowane w usłudze Intune.
-- Zasady usługi Intune dotyczące urządzeń i aplikacji dla urządzeń zarejestrowanych i osobistych.
+- Urządzenia należące do organizacji zarejestrowane w Intune.
+- Intune zasad dotyczących urządzeń i aplikacji dla zarejestrowanych i osobistych urządzeń.
 
-## <a name="ongoing-maintenance-for-device-and-app-management"></a>Bieżąca konserwacja zarządzania urządzeniami i aplikacją
+## <a name="ongoing-maintenance-for-device-and-app-management"></a>Bieżąca konserwacja zarządzania urządzeniami i aplikacjami
 
 Na bieżąco może być konieczne: 
 
-- Zarządzaj rejestracją urządzeń.
-- Zmieniaj ustawienia i zasady, aby uzyskać informacje o dodatkowych aplikacjach, urządzeniach i wymaganiach dotyczących zabezpieczeń.
+- Zarządzanie rejestracją urządzeń.
+- Popraw ustawienia i zasady dotyczące dodatkowych aplikacji, urządzeń i wymagań dotyczących zabezpieczeń.

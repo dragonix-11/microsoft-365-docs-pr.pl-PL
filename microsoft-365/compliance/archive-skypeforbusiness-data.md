@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik w portal zgodności Microsoft Purview i używać go do importowania i archiwizowania danych z Skype dla firm do Microsoft 365.
-ms.openlocfilehash: ceca2068f819d4b7bec32ab65e673b055775c217
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 8b824a8ac0db74d639c402bdec9e0894078b2dea
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318357"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415953"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Konfigurowanie łącznika do archiwizowania danych Skype dla firm
 

@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Konfigurowanie spotkań online za pomocą Microsoft Teams.
-ms.openlocfilehash: 9ed624d8fe607f460d36eb391d801066b69f7141
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 367d344aac8d85a68875f7f51685f59310277c27
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095149"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417737"
 ---
 # <a name="set-up-meetings"></a>Konfigurowanie spotkań
 
-Upewnij się, że członkowie organizacji używają Microsoft Teams dla wszystkich spotkań. Teams pliki spotkań obejmują dźwięk, wideo i udostępnianie, a ponieważ są w trybie online, zawsze jest miejsce na spotkania i nie ma potrzeby pokoju z projektorem! Microsoft Teams spotkania to doskonały sposób na spotkanie z pracownikami zarówno wewnątrz organizacji, jak i poza nią. 
+Upewnij się, że członkowie organizacji używają Microsoft Teams dla wszystkich spotkań. Teams pliki spotkań obejmują dźwięk, wideo i udostępnianie, a ponieważ są w trybie online, zawsze jest miejsce na spotkania i nie ma potrzeby pokoju z projektorem! Microsoft Teams spotkania to doskonały sposób na spotkanie z pracownikami zarówno wewnątrz organizacji, jak i poza nią.
 
 Korzystając z Teams, nie musisz być członkiem organizacji ani nawet mieć konta, aby dołączyć do spotkania. Możesz zaplanować i uruchomić spotkania online, w których możesz udostępniać ekran, udostępniać pliki, przypisywać zadania i nie tylko. Kampanie polityczne mogą obejmować pracowników, wolontariuszy lub gości spoza organizacji. Możesz łatwo spotkać się z klientami, personelem lub partnerami w Microsoft Teams oraz w bezpiecznym i bezproblemowym środowisku.
 
@@ -64,5 +64,3 @@ Dowiedz się więcej o spotkaniu w Microsoft Teams:
 ## <a name="next-objective"></a>Następny cel
 
 Po osiągnięciu tego celu misji dowiedz się, jak bezpiecznie [udostępniać pliki i filmy wideo](share-files-and-videos.md)
-
-

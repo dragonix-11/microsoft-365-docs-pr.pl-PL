@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 071bd6fe59a7200e1d16cf94633b0d7b3cb688c5
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: fb65e1ad898427c3f0a2fc1ba9a13685c1617bc1
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788111"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416283"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Włącz blokowanie od pierwszego wejrzenia
 
@@ -153,7 +153,7 @@ Możesz potwierdzić, że blok od pierwszego wejrzenia jest włączony na poszcz
 
 ## <a name="validate-block-at-first-sight-is-working"></a>Sprawdzanie poprawności działania bloku od pierwszego wejrzenia
 
-Aby sprawdzić, czy funkcja działa, pobierz [przykładowy plik Blokuj od pierwszego wejrzenia](https://demo.wd.microsoft.com/Page/BAFS). Do pobrania pliku potrzebne jest konto w usłudze Azure AD z przypisaną rolą administratora zabezpieczeń lub administratora globalnego.
+Aby sprawdzić, czy funkcja działa, pobierz [przykładowy plik Blokuj od pierwszego wejrzenia](https://demo.wd.microsoft.com/Page/BAFS). Aby pobrać plik, musisz mieć konto w Azure AD z przypisaną rolą administratora zabezpieczeń lub administratora globalnego.
 
 Aby sprawdzić, czy ochrona z obsługą chmury działa, postępuj zgodnie ze [wskazówkami w temacie Weryfikowanie połączeń między siecią a chmurą](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
@@ -223,13 +223,13 @@ Jeśli masz urządzenie osobiste, które nie jest zarządzane przez organizację
 
 > [!TIP]
 > Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 

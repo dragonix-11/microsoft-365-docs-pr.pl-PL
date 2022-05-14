@@ -18,12 +18,12 @@ ms.date: 04/19/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 08f9f3e127246b361cd76000967ae22991335338
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3bae6326fca5cefc921cb24b1a16180da2a2f52f
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943453"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415134"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi
 
@@ -206,7 +206,7 @@ W tabeli w tej sekcji opisano różne stany, które mogą być widoczne w Progra
  |  Wyłączona <br/><br/> lub <br/><br/> Odinstalować  |  Po wyłączeniu lub odinstalowaniu Program antywirusowy Microsoft Defender nie jest używana jako aplikacja antywirusowa. Pliki nie są skanowane, a zagrożenia nie są korygowane. <br/><br/> Wyłączenie lub odinstalowanie Program antywirusowy Microsoft Defender nie jest zalecane ogólnie; jeśli to możliwe, zachowaj Program antywirusowy Microsoft Defender w trybie pasywnym, jeśli używasz rozwiązania chroniącego przed złośliwym kodem lub oprogramowania antywirusowego firmy innej niż Microsoft. <br/><br/> W przypadkach, gdy Program antywirusowy Microsoft Defender jest automatycznie wyłączona, można ją ponownie włączyć automatycznie, jeśli produkt antywirusowy/chroniący przed złośliwym kodem firmy microsoft wygaśnie lub w inny sposób przestanie zapewniać ochronę przed wirusami, złośliwym oprogramowaniem lub innymi zagrożeniami w czasie rzeczywistym. Automatyczne ponowne włączanie Program antywirusowy Microsoft Defender pomaga zapewnić utrzymanie ochrony antywirusowej w punktach końcowych. <br/><br/> Możesz również używać [ograniczonego okresowego skanowania](limited-periodic-scanning-microsoft-defender-antivirus.md), które współpracuje z aparatem Program antywirusowy Microsoft Defender, aby okresowo sprawdzać zagrożenia, jeśli używasz aplikacji antywirusowej innej niż Microsoft.  | 
 
 > [!TIP]
-> Jeśli szukasz powiązanych informacji dotyczących programu antywirusowego dla innych platform, zobacz:
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

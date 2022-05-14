@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9192ecae72156531b0c5dccc360b2e2ea7bd343a
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 08f8e0c861bfd19f11c5b011d0a8db41ce3e73bc
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789057"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419951"
 ---
 # <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Ochrona w chmurze i przesyłanie przykładów w Program antywirusowy Microsoft Defender
 
@@ -71,16 +71,16 @@ Program antywirusowy Microsoft Defender i ochrona w chmurze automatycznie blokuj
 
       2. **Zawsze monituj**
          - W przypadku skonfigurowania użytkownik zawsze będzie monitowany o zgodę przed przesłaniem pliku
-         - To ustawienie nie jest dostępne w ramach ochrony w chmurze systemu macOS
+         - To ustawienie nie jest dostępne w macOS ochrony w chmurze
 
       3. **Automatycznie wysyłaj wszystkie przykłady**
          - W przypadku skonfigurowania wszystkie przykłady zostaną wysłane automatycznie
          - Jeśli chcesz, aby przykładowe przesyłanie zawierało makra osadzone w dokumentacji programu Word, musisz wybrać opcję "Automatycznie wyślij wszystkie przykłady"
-         - To ustawienie nie jest dostępne w przypadku ochrony w chmurze systemu macOS
+         - To ustawienie nie jest dostępne w macOS ochrony w chmurze
 
       4. **Nie wysyłaj**
          - Zapobiega "blokuj od pierwszego wejrzenia" na podstawie analizy przykładowej pliku
-         - Ustawienie "Nie wysyłaj" jest równoważne ustawieniu "Wyłączone" w zasadach systemu macOS
+         - Ustawienie "Nie wysyłaj" jest odpowiednikiem ustawienia "Wyłączone" w zasadach macOS
          - Metadane są wysyłane do wykrywania nawet wtedy, gdy przesyłanie przykładowe jest wyłączone
 
    3. Po przesłaniu metadanych i/lub plików do ochrony w chmurze możesz użyć **przykładów**, **detonacji** lub modeli uczenia maszynowego **analizy danych big data** , aby uzyskać werdykt. Wyłączenie ochrony dostarczanej w chmurze ograniczy analizę tylko do tego, co klient może zapewnić za pośrednictwem lokalnych modeli uczenia maszynowego i podobnych funkcji.
@@ -142,13 +142,13 @@ Istnieją jeszcze dwa scenariusze, w których usługa Defender for Endpoint moż
 
 > [!TIP]
 > Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 

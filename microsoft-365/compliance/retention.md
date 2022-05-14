@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania, które ułatwiają zachowanie potrzebnych elementów i usuwanie tego, czego nie potrzebujesz.
-ms.openlocfilehash: c8ac850c77c97cbcc313108ffc74e05aa1735fde
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 95d79bd95aa816b82e69399b9bde99500fcc8b6b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302229"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419533"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
 
@@ -104,8 +104,8 @@ W przeciwieństwie do zasad przechowywania ustawienia przechowywania z etykiet p
 - Zastosuj etykietę domyślną dla elementów SharePoint lub komunikatów Exchange.
 
 - Obsługiwane akcje w końcowym okresie przechowywania:
-    - [Przegląd](./disposition.md)  dyspozycji , aby przejrzeć zawartość przed jej trwałym usunięciem.
-    - Automatyczne stosowanie innej etykiety przechowywania
+  - [Przegląd dyspozycji](./disposition.md) w celu przejrzenia zawartości przed jej trwałym usunięciem.
+  - Automatyczne stosowanie innej etykiety przechowywania
 
 - Oznacz zawartość jako [rekord](records-management.md#records) jako część ustawień etykiety i zawsze masz [dowód dyspozycji](disposition.md#disposition-of-records) , gdy zawartość zostanie usunięta po zakończeniu okresu przechowywania.
 
@@ -177,7 +177,7 @@ Na przykład można utworzyć i zastosować etykietę przechowywania o nazwie "P
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Używanie etykiety przechowywania jako warunku w zasadach DLP
 
-Etykietę przechowywania można określić jako warunek w zasadach ochrony przed utratą danych (DLP) usługi Microsoft Purview dla dokumentów w SharePoint. Na przykład skonfiguruj zasady DLP, aby zapobiec udostępnianiu dokumentów poza organizacją, jeśli zastosowano do nich określoną etykietę przechowywania.
+Etykietę przechowywania można określić jako warunek w zasadach Ochrona przed utratą danych w Microsoft Purview (DLP) dla dokumentów w SharePoint. Na przykład skonfiguruj zasady DLP, aby zapobiec udostępnianiu dokumentów poza organizacją, jeśli zastosowano do nich określoną etykietę przechowywania.
 
 Aby uzyskać więcej informacji, zobacz [Używanie etykiety przechowywania jako warunku w zasadach DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
@@ -221,14 +221,15 @@ W przypadku standardowych etykiet przechowywania (nie oznaczają one elementów 
 
 - Gdy zawartość ma już zastosowaną etykietę przechowywania, istniejąca etykieta nie zostanie automatycznie usunięta ani zastąpiona inną etykietą przechowywania jednym możliwym wyjątkiem: istniejąca etykieta została zastosowana jako etykieta domyślna. Jeśli używasz etykiety domyślnej, istnieją pewne scenariusze, w których można ją zastąpić inną etykietą domyślną lub automatycznie usunąć.
 
-- Jeśli zawartość ma już zastosowaną etykietę przechowywania, istniejąca etykieta nie zostanie automatycznie usunięta ani zastąpiona przez inną etykietę przechowywania z dwoma możliwymi wyjątkami: 
-    
-    - Istniejąca etykieta jest skonfigurowana do automatycznego stosowania innej etykiety przechowywania na końcu okresu przechowywania.
-    - Istniejąca etykieta została zastosowana jako etykieta domyślna. Jeśli używasz etykiety domyślnej, istnieją pewne scenariusze, w których można ją zastąpić inną etykietą domyślną lub automatycznie usunąć. 
-        
-        Aby uzyskać więcej informacji na temat zachowania etykiety, gdy jest stosowana przy użyciu etykiety domyślnej:
-        - Etykieta domyślna dla SharePoint: [zachowanie etykiety podczas używania etykiety domyślnej dla SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-        - Etykieta domyślna dla Outlook: [stosowanie domyślnej etykiety przechowywania do folderu Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- Jeśli zawartość ma już zastosowaną etykietę przechowywania, istniejąca etykieta nie zostanie automatycznie usunięta ani zastąpiona przez inną etykietę przechowywania z dwoma możliwymi wyjątkami:
+
+  - Istniejąca etykieta jest skonfigurowana do automatycznego stosowania innej etykiety przechowywania na końcu okresu przechowywania.
+  - Istniejąca etykieta została zastosowana jako etykieta domyślna. Jeśli używasz etykiety domyślnej, istnieją pewne scenariusze, w których można ją zastąpić inną etykietą domyślną lub automatycznie usunąć.
+
+  Aby uzyskać więcej informacji na temat zachowania etykiety, gdy jest stosowana przy użyciu etykiety domyślnej:
+
+  - Etykieta domyślna dla SharePoint: [zachowanie etykiety podczas używania etykiety domyślnej dla SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+  - Etykieta domyślna dla Outlook: [stosowanie domyślnej etykiety przechowywania do folderu Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - Jeśli istnieje wiele zasad automatycznego stosowania etykiet, które mogą stosować etykietę przechowywania, a zawartość spełnia warunki wielu zasad, zostanie zastosowana etykieta przechowywania najstarszych zasad automatycznego stosowania etykiet (według daty utworzenia).
 
@@ -236,7 +237,7 @@ Gdy etykiety przechowywania oznaczają elementy jako rekord lub rekord regulacyj
 
 #### <a name="monitoring-retention-labels"></a>Monitorowanie etykiet przechowywania
 
-W portalu zgodności usługi Microsoft Purview wybierz pozycję **Klasyfikacja danych** i stronę **Przegląd** , aby monitorować sposób użycia etykiet przechowywania w dzierżawie i identyfikować lokalizację elementów oznaczonych etykietami. Aby uzyskać więcej informacji, w tym ważne wymagania wstępne, zobacz [Informacje o klasyfikacji danych](data-classification-overview.md).
+Na portal zgodności Microsoft Purview wybierz pozycję **Klasyfikacja danych** i stronę **Przegląd**, aby monitorować sposób użycia etykiet przechowywania w dzierżawie i identyfikować lokalizację elementów oznaczonych etykietami. Aby uzyskać więcej informacji, w tym ważne wymagania wstępne, zobacz [Informacje o klasyfikacji danych](data-classification-overview.md).
 
 Następnie możesz przejść do szczegółów przy użyciu [Eksploratora zawartości](data-classification-content-explorer.md) i [Eksploratora działań](data-classification-activity-explorer.md).
 
@@ -285,7 +286,7 @@ Poniższe przykłady to tylko niektóre ze sposobów łączenia zasad przechowyw
 
 Aby uzyskać więcej informacji na temat sposobu współdziałania zasad przechowywania i etykiet przechowywania oraz sposobu określania ich połączonego wyniku, zobacz sekcję na tej stronie, w której [wyjaśniono zasady przechowywania i pierwszeństwo](#the-principles-of-retention-or-what-takes-precedence).
 
-**Przykład zastąpienia automatycznego usuwania przez użytkowników**
+#### <a name="example-for-users-to-override-automatic-deletion"></a>Przykład zastąpienia automatycznego usuwania przez użytkowników
 
 Scenariusz: domyślnie zawartość na kontach OneDrive użytkowników jest automatycznie usuwana po pięciu latach, ale użytkownicy muszą mieć możliwość zastąpienia tej zawartości dla określonych dokumentów.
 
@@ -293,7 +294,7 @@ Scenariusz: domyślnie zawartość na kontach OneDrive użytkowników jest autom
 
 2. Tworzysz i konfigurujesz etykietę przechowywania, która przechowuje zawartość na zawsze i dodaje ją do zasad etykiet publikowanych na wszystkich kontach OneDrive. Użytkownikom wyjaśniono, jak ręcznie zastosować tę etykietę do określonych dokumentów, które powinny zostać wykluczone z automatycznego usuwania, jeśli nie zostaną zmodyfikowane po pięciu latach.
 
-**Przykład dłuższego przechowywania elementów**
+Przykład przechowywania elementów na dłużej**
 
 Scenariusz: domyślnie elementy SharePoint są automatycznie zachowywane, a następnie usuwane po pięciu latach, ale dokumenty w określonych bibliotekach muszą być przechowywane przez dziesięć lat.
 
@@ -301,7 +302,7 @@ Scenariusz: domyślnie elementy SharePoint są automatycznie zachowywane, a nast
 
 2. Tworzysz i konfigurujesz etykietę przechowywania, która automatycznie zachowuje zawartość przez dziesięć lat. Tę etykietę można opublikować dla SharePoint administratorów witryny, aby mogli zastosować ją jako etykietę domyślną, która ma być dziedziczona przez wszystkie elementy w określonych bibliotekach dokumentów.
 
-**Przykład usuwania elementów w krótszym okresie**
+#### <a name="example-to-delete-items-in-a-shorter-time-period"></a>Przykład usuwania elementów w krótszym okresie
 
 Scenariusz: domyślnie wiadomości e-mail nie są zachowywane, ale są automatycznie usuwane po dziesięciu latach. Jednak wiadomości e-mail związane z określonym projektem, który ma nazwę kodu wstępnej wersji, muszą zostać automatycznie usunięte po roku.
 
@@ -368,7 +369,7 @@ Aby obejrzeć zarejestrowane seminarium internetowe (wymaga rejestracji), odwied
 
 ## <a name="policy-lookup"></a>Wyszukiwanie zasad
 
-Można skonfigurować wiele zasad przechowywania dla lokalizacji Microsoft 365, a także wiele zasad etykiet przechowywania publikowanych lub automatycznie stosowanych. Aby znaleźć zasady przechowywania przypisane do określonych użytkowników, witryn i grup Microsoft 365, użyj wyszukiwania **zasad** z rozwiązań do **zarządzania cyklem życia danych** lub **zarządzania rekordami** w portalu zgodności usługi Microsoft Purview.
+Można skonfigurować wiele zasad przechowywania dla lokalizacji Microsoft 365, a także wiele zasad etykiet przechowywania publikowanych lub automatycznie stosowanych. Aby znaleźć zasady przechowywania przypisane do określonych użytkowników, witryn i grup Microsoft 365, użyj wyszukiwania **zasad** z rozwiązań do **zarządzania cyklem życia danych** lub **zarządzania rekordami** w portal zgodności Microsoft Purview.
 
 Przykład:
 

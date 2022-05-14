@@ -1,6 +1,6 @@
 ---
 title: Kolejność i pierwszeństwo ochrony poczty e-mail
-keywords: zabezpieczenia, złośliwe oprogramowanie, Microsoft 365, M365, centrum zabezpieczeń, portal sieci Microsoft 365 Defender, program Microsoft Defender dla punktu końcowego, Microsoft Defender dla Office 365, Microsoft Defender for Identity
+keywords: zabezpieczenia, złośliwe oprogramowanie, Microsoft 365, M365, Security Center, portal Microsoft 365 Defender, Ochrona punktu końcowego w usłudze Microsoft Defender, Ochrona usługi Office 365 w usłudze Microsoft Defender, Microsoft Defender for Identity
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się więcej na temat kolejności aplikacji ochrony w u Exchange Online Protection (EOP) i jak wartość priorytetu w zasadach ochrony określa, które zasady są stosowane.
+description: Administratorzy mogą dowiedzieć się więcej o kolejności ochrony aplikacji w Exchange Online Protection (EOP) oraz o tym, jak wartość priorytetu w zasadach ochrony określa, które zasady są stosowane.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1debec0d2f8ca1498fd674f3d5a2d5a4681196eb
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8b7bf48de0939ec913982feb399b38dc2c540157
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679791"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417759"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Kolejność i pierwszeństwo ochrony poczty e-mail
 
@@ -30,49 +30,49 @@ ms.locfileid: "63679791"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-W Microsoft 365 z skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacjach usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online przychodzące wiadomości e-mail mogą być oflagowyane przez wiele rodzajów ochrony. Mogą Microsoft 365 przykład wbudowane zasady ochrony przed wyłudzaniem informacji w UOKI, które są dostępne dla wszystkich klientów usługi Microsoft 365, oraz bardziej zaawansowane zasady ochrony przed wyłudzaniem informacji, które są dostępne dla usługi Microsoft Defender dla Office 365 klientów. Wiadomości przechodzą również przez wiele wykrycia w poszukiwaniu złośliwego oprogramowania, spamu, wyłudzania informacji itp. Biorąc pod uwagę wszystkie te działania, mogą wystąpić pewne wątpliwości co do tego, które zasady są stosowane.
+W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych przychodzące wiadomości e-mail mogą być oflagowane przez wiele form ochrony. Na przykład wbudowane zasady ochrony przed wyłudzaniem informacji dostępne dla wszystkich Microsoft 365 klientów oraz bardziej niezawodne zasady ochrony przed wyłudzaniem informacji, które są dostępne dla Ochrona usługi Office 365 w usłudze Microsoft Defender klientów. Komunikaty przechodzą również przez wiele skanów wykrywania złośliwego oprogramowania, spamu, wyłudzania informacji itp. Biorąc pod uwagę wszystkie te działania, może wystąpić pewne nieporozumienie co do tego, które zasady są stosowane.
 
-Ogólnie zasady stosowane do wiadomości są określone w nagłówku **X-Forefront-Antispam-Report** we właściwości **CAT (kategoria** ). Aby uzyskać więcej informacji, zobacz [Nagłówki wiadomości przed spamem](anti-spam-message-headers.md).
+Ogólnie rzecz biorąc, zasady stosowane do komunikatu są identyfikowane w nagłówku **X-Forefront-Antispam-Report** we właściwości **CAT (Kategoria** ). Aby uzyskać więcej informacji, zobacz [Nagłówki wiadomości antyspamowych](anti-spam-message-headers.md).
 
-Istnieją dwa główne czynniki, które określają zasady stosowane do wiadomości:
+Istnieją dwa główne czynniki, które określają, które zasady są stosowane do komunikatu:
 
-- **Priorytet typu ochrony przed wiadomościami e-mail**: Tego zamówienia nie można konfigurować i jest opisane w poniższej tabeli:
+- **Kolejność przetwarzania dla typu ochrony poczty e-mail**: to zamówienie nie jest konfigurowalne i jest opisane w poniższej tabeli:
 
-  |Priority (Priorytet)|Ochrona poczty e-mail|Kategoria|Gdzie zarządzać|
-  |---|---|---|---|
-  |1|Złośliwe oprogramowanie|KOT:MALW|[Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w u usługi EOP](configure-anti-malware-policies.md)|
-  |2|Wyłudzanie informacji|CAT:PHSH|[Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md)|
-  |3|Duża pewność, że spam|CAT:HSPM|[Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md)|
-  |4|Fałszowanie|CAT:SPOOF|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|Personifikacja użytkownika (użytkownicy chronieni)|UIMP|[Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365](configure-mdo-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|Personifikacja domeny (domeny chronione)|DIMP|[Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365](configure-mdo-anti-phishing-policies.md)|
-  |7|Spam|CAT:SPM|[Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md)|
-  |8|Zbiorcze|KOT:ZBIORCZO|[Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md)|
+  |Zamówienia|Ochrona poczty e-mail|Kategoria|Gdzie zarządzać|
+  |:---:|---|---|---|
+  |1|Złośliwego oprogramowania|CAT:MALW|[Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w ramach operacji EOP](configure-anti-malware-policies.md)|
+  |2|Wyłudzanie informacji|CAT:PHSH|[Konfigurowanie zasad ochrony przed spamem w ramach EOP](configure-your-spam-filter-policies.md)|
+  |3|Spam o wysokim poziomie ufności|CAT:HSPM|[Konfigurowanie zasad ochrony przed spamem w ramach EOP](configure-your-spam-filter-policies.md)|
+  |4|Fałszowanie|CAT:SPOOF|[Fałszowanie szczegółowych informacji wywiadowczych w ramach EOP](learn-about-spoof-intelligence.md)|
+  |5<sup>\*</sup>|Personifikacja użytkownika (użytkownicy chronieni)|UIMP|[Konfigurowanie zasad ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Personifikacja domeny (domeny chronione)|DIMP|[Konfigurowanie zasad ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md)|
+  |7|Spam|CAT:SPM|[Konfigurowanie zasad ochrony przed spamem w ramach EOP](configure-your-spam-filter-policies.md)|
+  |8|Zbiorczego|CAT:BULK|[Konfigurowanie zasad ochrony przed spamem w ramach EOP](configure-your-spam-filter-policies.md)|
 
-  <sup>\*</sup>Te funkcje są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365.
+  <sup>\*</sup>Te funkcje są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 
-- Priorytet **zasad: dla** każdego typu zasad (ochrony przed spamem, ochrony przed złośliwym oprogramowaniem, ochrony przed wyłudzaniem informacji itp.) obowiązują zasady domyślne dotyczące wszystkich użytkowników, ale można tworzyć zasady niestandardowe dotyczące konkretnych użytkowników. Każda zasada niestandardowa ma wartość priorytetu, która określa kolejność stosowania zasad. Zasady domyślne są zawsze stosowane na końcu.
+- **Priorytet zasad**: dla każdego typu zasad (antyspamowych, chroniących przed złośliwym oprogramowaniem, chroniących przed wyłudzaniem informacji itp.) istnieją zasady domyślne, które mają zastosowanie do wszystkich użytkowników, ale można utworzyć niestandardowe zasady, które mają zastosowanie do określonych użytkowników (adresatów). Każda zasada niestandardowa ma wartość priorytetu, która określa kolejność stosowania zasad. Domyślne zasady są zawsze stosowane jako ostatnie.
 
   > [!IMPORTANT]
-  > Jeśli użytkownik jest zdefiniowany w wielu zasadach tego samego typu, są do nich stosowane tylko zasady o najwyższym priorytecie. Wszelkie pozostałe zasady tego typu nie są obliczane dla użytkownika (w tym zasady domyślne).
+  > Jeśli adresat jest zdefiniowany w wielu zasadach tego samego typu (anty-spam, ochrona przed wyłudzaniem informacji itp.), tylko zasady o najwyższym priorytecie są stosowane do adresata. Wszystkie pozostałe zasady tego typu nie są oceniane dla odbiorcy (w tym zasady domyślne).
 
-Rozważ na przykład następujące zasady ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla systemu Office 365, które dotyczą tych samych **użytkowników, oraz** wiadomość, która jest identyfikowana zarówno jako personifikacja użytkownika, jak i spoofing:
+Rozważmy na przykład następujące **zasady ochrony przed wyłudzaniem informacji** w Ochrona usługi Office 365 w usłudze Microsoft Defender **, które mają zastosowanie do tych samych użytkowników**, oraz komunikat, który jest identyfikowany jako **personifikacja i fałszowanie użytkowników**:
 
-|Nazwa zasad|Priority (Priorytet)|Personifikacja użytkownika|Ochrona przed fałszeringem|
-|---|---|---|---|
-|Zasady A|1|Wł.|Wyłączone|
-|Zasady B|2|Wyłączone|Wł.|
+|Nazwa zasad|Priority (Priorytet)|Personifikacja użytkownika|Ochrona przed fałszowaniem|
+|---|:---:|:---:|:---:|
+|Zasady A|1|Na|Wył.|
+|Zasady B|2|Wył.|Na|
 
-1. Wiadomość jest oznaczona i traktowana jako fałsz, ponieważ fałszowanie ma wyższy priorytet (4) niż personifikacja użytkownika (5).
-2. Zasady A są stosowane do użytkowników, ponieważ mają wyższy priorytet niż zasady B.
-3. Na podstawie ustawień w zasadach A nie są podejmowane żadne akcje dotyczące wiadomości, ponieważ w tych zasadach jest wyłączona ochrona przed fałszowaniami.
-4. Przetwarzanie zasad jest zatrzymane, więc zasady B nigdy nie są stosowane do użytkowników.
+1. Komunikat jest identyfikowany jako fałszowanie, ponieważ fałszowanie (4) jest oceniane przed personifikacją użytkownika (5).
+2. Zasady A są stosowane jako pierwsze, ponieważ mają wyższy priorytet niż zasady B.
+3. Na podstawie ustawień w zasadach A nie jest podejmowana żadna akcja dotycząca komunikatu, ponieważ funkcja ochrony przed fałszowaniem jest wyłączona.
+4. Przetwarzanie zasad ochrony przed wyłudzaniem informacji zatrzymuje się dla wszystkich uwzględnionych adresatów, dlatego zasady B nigdy nie są stosowane do adresatów, którzy również znajdują się w zasadach A.
 
-Ponieważ istnieje możliwość celowego lub niezamierzonego uwzględnionia tych samych użytkowników w wielu zasadach niestandardowych tego samego typu, należy użyć następujących wytycznych dotyczących projektowania zasad niestandardowych:
+Ponieważ ci sami użytkownicy mogą być celowo lub przypadkowo uwzględnieni w wielu zasadach tego samego typu, skorzystaj z następujących wytycznych dotyczących projektowania zasad niestandardowych:
 
-- Zasady, które mają zastosowanie do niewielkiej liczby użytkowników, mają wyższy priorytet, a zasady dotyczące dużej liczby użytkowników mają niższy priorytet. Pamiętaj, że zasady domyślne są zawsze stosowane jako ostatnie.
-- Skonfiguruj zasady o wyższym priorytecie, aby ustawienia bardziej rygorystyczne lub bardziej specjalistyczne niż zasady o niższych priorytetach.
-- Rozważ zastosowanie mniejszej liczby zasad niestandardowych (używaj zasad niestandardowych tylko w przypadku użytkowników wymagających bardziej rygorystycznych lub bardziej wyspecjalizowanych ustawień).
+- Przypisz wyższy priorytet do zasad, które mają zastosowanie do niewielkiej liczby użytkowników, i niższy priorytet zasad, które mają zastosowanie do dużej liczby użytkowników. Pamiętaj, że domyślne zasady są zawsze stosowane jako ostatnie.
+- Skonfiguruj zasady o wyższym priorytecie, aby miały bardziej rygorystyczne lub bardziej wyspecjalizowane ustawienia niż zasady o niższym priorytecie.
+- Rozważ użycie mniejszej liczby zasad niestandardowych (używaj tylko zasad niestandardowych dla użytkowników, którzy wymagają bardziej rygorystycznych lub bardziej wyspecjalizowanych ustawień).

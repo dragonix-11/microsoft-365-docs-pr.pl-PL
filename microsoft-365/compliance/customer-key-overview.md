@@ -14,23 +14,23 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: W tym artykule dowiesz się, jak szyfrowanie usług działa z kluczem klienta usługi Microsoft Purview.
-ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+description: W tym artykule dowiesz się, jak szyfrowanie usługi działa z Microsoft Purview Klucz klienta.
+ms.openlocfilehash: 3a0533b94cb70c9fc46d6246e99d3f9fdb5eb6e6
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145217"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415090"
 ---
 # <a name="service-encryption-with-microsoft-purview-customer-key"></a>Szyfrowanie usługi przy użyciu klucza klienta usługi Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft 365 zapewnia podstawowe szyfrowanie na poziomie woluminu włączone za pośrednictwem funkcji BitLocker i rozproszonego menedżera kluczy (DKM). Microsoft 365 oferuje dodatkową warstwę szyfrowania zawartości. Ta zawartość obejmuje dane z Exchange Online, Skype dla firm, SharePoint Online, OneDrive dla Firm i Microsoft Teams.
+Microsoft 365 zapewnia podstawowe szyfrowanie na poziomie woluminu włączone za pośrednictwem BitLocker i rozproszonego menedżera kluczy (DKM). Microsoft 365 oferuje dodatkową warstwę szyfrowania zawartości. Ta zawartość obejmuje dane z Exchange Online, Skype dla firm, SharePoint Online, OneDrive dla Firm i Microsoft Teams.
 
-## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Jak szyfrowanie usługi, funkcja BitLocker i klucz klienta współpracują ze sobą
+## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Jak szyfrowanie usługi, BitLocker i klucz klienta współpracują ze sobą
 
-Dane są zawsze szyfrowane w stanie spoczynku w usłudze Microsoft 365 za pomocą funkcji BitLocker i DKM. Aby uzyskać więcej informacji, zobacz [Jak Exchange Online zabezpiecza wpisy tajne poczty e-mail](exchange-online-secures-email-secrets.md). Klucz klienta zapewnia dodatkową ochronę przed wyświetlaniem danych przez nieautoryzowane systemy lub personel oraz uzupełnia szyfrowanie dysków funkcją BitLocker w centrach danych firmy Microsoft. Szyfrowanie usługi nie ma na celu uniemożliwienia pracownikom firmy Microsoft uzyskiwania dostępu do danych. Zamiast tego klucz klienta pomaga spełnić wymagania prawne lub zgodności dotyczące kontrolowania kluczy głównych. Jawnie autoryzujesz usługi Microsoft 365 do używania kluczy szyfrowania w celu dostarczania usług w chmurze o wartości dodanej, takich jak elektroniczne wykrywanie, ochrona przed złośliwym oprogramowaniem, ochrona przed spamem, indeksowanie wyszukiwania itd.
+Dane są zawsze szyfrowane w usłudze Microsoft 365 za pomocą BitLocker i DKM. Aby uzyskać więcej informacji, zobacz [Jak Exchange Online zabezpiecza wpisy tajne poczty e-mail](exchange-online-secures-email-secrets.md). Klucz klienta zapewnia dodatkową ochronę przed wyświetlaniem danych przez nieautoryzowane systemy lub personel oraz uzupełnia szyfrowanie dysków BitLocker w centrach danych firmy Microsoft. Szyfrowanie usługi nie ma na celu uniemożliwienia pracownikom firmy Microsoft uzyskiwania dostępu do danych. Zamiast tego klucz klienta pomaga spełnić wymagania prawne lub zgodności dotyczące kontrolowania kluczy głównych. Jawnie autoryzujesz usługi Microsoft 365 do używania kluczy szyfrowania w celu dostarczania usług w chmurze o wartości dodanej, takich jak elektroniczne wykrywanie, ochrona przed złośliwym oprogramowaniem, ochrona przed spamem, indeksowanie wyszukiwania itd.
 
 Klucz klienta jest oparty na szyfrowaniu usługi i umożliwia udostępnianie i kontrolowanie kluczy szyfrowania. Microsoft 365 następnie używa tych kluczy do szyfrowania danych magazynowanych zgodnie z opisem w [Warunkach usług online (OST).](https://www.microsoft.com/licensing/product-licensing/products.aspx) Klucz klienta pomaga spełnić wymagania dotyczące zgodności, ponieważ kontrolujesz klucze szyfrowania, które Microsoft 365 używane do szyfrowania i odszyfrowywania danych.
   
@@ -38,7 +38,7 @@ Klucz klienta zwiększa zdolność organizacji do spełnienia wymagań dotycząc
 
 ## <a name="customer-key-with-hybrid-deployments"></a>Klucz klienta z wdrożeniami hybrydowymi
 
-Klucz klienta szyfruje tylko dane magazynowane w chmurze. Klucz klienta nie działa w celu ochrony lokalnych skrzynek pocztowych i plików. Dane lokalne można zaszyfrować przy użyciu innej metody, takiej jak Funkcja BitLocker.
+Klucz klienta szyfruje tylko dane magazynowane w chmurze. Klucz klienta nie działa w celu ochrony lokalnych skrzynek pocztowych i plików. Dane lokalne można zaszyfrować przy użyciu innej metody, takiej jak BitLocker.
 
 ## <a name="about-data-encryption-policies"></a>Informacje o zasadach szyfrowania danych
 

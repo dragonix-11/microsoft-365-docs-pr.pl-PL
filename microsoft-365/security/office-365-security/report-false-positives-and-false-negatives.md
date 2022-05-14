@@ -13,12 +13,12 @@ ms.collection:
 description: Dowiedz się, jak zgłaszać wyniki fałszywie dodatnie i fałszywie ujemne w Outlook przy użyciu funkcji Komunikat raportu.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f52b4d085c13f2e1e1a48c2a8a12e6782f13960
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 762f16916e03940f4d0f95c48f13751d3cbd63c7
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974108"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416977"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Zgłaszanie wyników fałszywie dodatnich i fałszywie ujemnych w programie Outlook
 
@@ -47,6 +47,9 @@ W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub lokal
 - Aby uzyskać więcej informacji na temat pobierania i włączania komunikatu raportu lub dodatków wyłudzania informacji o raportach, zobacz [Włączanie komunikatu raportu lub dodatków wyłudzania informacji raportu](enable-the-report-message-add-in.md).
 
 - Aby uzyskać więcej informacji na temat raportowania komunikatów do firmy Microsoft, zobacz [Raportowanie komunikatów i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
+
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak za pomocą Ochrona usługi Office 365 w usłudze Microsoft Defender można łatwo zbadać przesyłanie przez użytkowników w celu określenia zawartości wiadomości i odpowiedzieć na przesłanie, stosując odpowiednią akcję korygowania. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
 
 ### <a name="turn-off-the-built-in-reporting-experience"></a>Wyłączanie wbudowanego środowiska raportowania
 

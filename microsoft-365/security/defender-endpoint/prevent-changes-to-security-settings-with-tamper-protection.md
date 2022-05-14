@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: bcdf933de412a8141f0abc208f06cc55609f12c5
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 6bd334802319b897de7a8fd8fbb61a490dddcffe
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788947"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416315"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Chroń ustawienia zabezpieczeń z ochroną przed naruszeniami
 
@@ -86,7 +86,7 @@ Ochrona przed naruszeniami nie uniemożliwia wyświetlania ustawień zabezpiecze
 |Włączanie (lub wyłączanie) ochrony przed naruszeniami w organizacji przy użyciu Configuration Manager|[Zarządzanie ochroną przed naruszeniami w organizacji przy użyciu dołączania dzierżawy do Configuration Manager w wersji 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)|
 |Włączanie (lub wyłączanie) ochrony przed naruszeniami dla poszczególnych urządzeń|[Zarządzanie ochroną przed naruszeniami na poszczególnych urządzeniach](#manage-tamper-protection-on-an-individual-device)|
 |Wyświetlanie szczegółów dotyczących prób naruszenia na urządzeniach|[Wyświetlanie informacji o próbach naruszenia](#view-information-about-tampering-attempts)|
-|Przeglądanie zaleceń dotyczących zabezpieczeń|[Przeglądanie zaleceń dotyczących zabezpieczeń](#review-your-security-recommendations)|
+|Przeglądanie zaleceń dotyczących zabezpieczeń|[Pobieranie rekomendacji dotyczących zabezpieczeń](#review-your-security-recommendations)|
 |Przejrzyj listę często zadawanych pytań|[Przeglądaj często zadawane pytania](#view-information-about-tampering-attempts)|
 
 ## <a name="potential-dependency-on-cloud-protection"></a>Potencjalna zależność od ochrony chmury  
@@ -261,7 +261,7 @@ Jeśli używasz Configuration Manager w wersji 2006 z dołączaniem dzierżawy, 
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>Czy ochrona przed naruszeniami wpłynie na rejestrację oprogramowania antywirusowego innej firmy niż Microsoft w aplikacji Zabezpieczenia Windows?
 
-L.p. Oferty programów antywirusowych innych niż Microsoft będą nadal rejestrowane w aplikacji Zabezpieczenia Windows.
+Nie. Oferty programów antywirusowych innych niż Microsoft będą nadal rejestrowane w aplikacji Zabezpieczenia Windows.
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>Co się stanie, jeśli Program antywirusowy Microsoft Defender nie jest aktywna na urządzeniu?
 
@@ -301,7 +301,7 @@ Nie będzie można zmienić funkcji chronionych przez ochronę przed naruszeniam
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>Jestem klientem korporacyjnym. Czy administratorzy lokalni mogą zmienić ochronę przed naruszeniami na swoich urządzeniach?
 
-L.p. Administratorzy lokalni nie mogą zmieniać ani modyfikować ustawień ochrony przed naruszeniami.
+Nie. Administratorzy lokalni nie mogą zmieniać ani modyfikować ustawień ochrony przed naruszeniami.
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>Co się stanie, jeśli moje urządzenie zostanie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender, a następnie przejdzie w stan off-boarded?
 
@@ -319,16 +319,18 @@ Twój zespół ds. operacji zabezpieczeń może również używać zapytań wysz
 
 > [!TIP]
 > Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczanie komputerów Windows przy użyciu Endpoint Protection dla Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Omówienie Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint)
 - [Lepiej razem: program antywirusowy Microsoft Defender i usługa ochrony punktu końcowego w usłudze Microsoft Defender](why-use-microsoft-defender-antivirus.md)
+- [Włącz tryb rozwiązywania problemów](enable-troubleshooting-mode.md)
+- [Scenariusze trybu rozwiązywania problemów](troubleshooting-mode-scenarios.md)

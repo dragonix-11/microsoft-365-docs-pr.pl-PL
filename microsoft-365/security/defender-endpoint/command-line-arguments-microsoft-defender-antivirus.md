@@ -15,12 +15,12 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 97f818469f9da2616ca5ca2839ddf29ea227b85f
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: d459c87f7d996d70d37e84f4e21bc261c720b443
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789739"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418681"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Konfigurowanie Program antywirusowy Microsoft Defender i zarządzanie nimi za pomocą narzędzia wiersza polecenia mpcmdrun.exe
 
@@ -55,7 +55,7 @@ W naszym przykładzie narzędzie MpCmdRun uruchamia pełne skanowanie antywiruso
 
 |Polecenia|Opis|
 |---|---|
-|`-?` **lub** `-h`|Wyświetla wszystkie dostępne opcje dla narzędzia MpCmdRun|
+|`-?`**Lub** `-h`|Wyświetla wszystkie dostępne opcje dla narzędzia MpCmdRun|
 |`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|Skanuje pod kątem złośliwego oprogramowania. Wartości **parametru ScanType** to:<p>**0** Wartość domyślna zgodnie z konfiguracją<p>**1** Szybkie skanowanie<p>**2** Pełne skanowanie<p>**3** Skanowanie niestandardowe plików i katalogów.<p>CpuThrottling działa zgodnie z konfiguracjami zasad|
 |`-Trace [-Grouping #] [-Level #]`|Rozpoczyna śledzenie diagnostyczne|
 |`-GetFiles [-SupportLogLocation <path>]`|Zbiera informacje o pomocy technicznej. Zobacz "[Zbieranie danych diagnostycznych](collect-diagnostic-data.md)"|
@@ -89,13 +89,13 @@ W poniższej tabeli wymieniono typowe błędy, które mogą wystąpić podczas k
 
 > [!TIP]
 > Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 description: Dowiedz się, jak przyspieszyć proces wykrywania i rozwiązywania problemów z kontami użytkowników, których zabezpieczenia zostały naruszone, dzięki możliwościom zautomatyzowanego badania i reagowania w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8c78847e36d4a4887c4f7a3c54904cc26a012e5
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 97466622a138a6604b9be51333148b472f7cd519
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131157"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418275"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Rozwiązywanie problemów z kontami użytkowników, których zabezpieczenia zostały naruszone, za pomocą zautomatyzowanego badania i odpowiedzi
 
@@ -62,6 +62,9 @@ Gdy konto użytkownika zostanie naruszone, alerty są wyzwalane. W niektórych p
 
 > [!IMPORTANT]
 > Musisz mieć odpowiednie uprawnienia do wykonywania następujących zadań. Zobacz [Wymagane uprawnienia do korzystania z funkcji AIR](office-365-air.md#required-permissions-to-use-air-capabilities).
+
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak wykrywać naruszenia bezpieczeństwa użytkowników i reagować na nie w Ochrona usługi Office 365 w usłudze Microsoft Defender przy użyciu zautomatyzowanego badania i reagowania (AIR) oraz alertów użytkowników, których bezpieczeństwo zostało naruszone.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
 
 ### <a name="view-and-investigate-restricted-users"></a>Wyświetlanie i badanie użytkowników z ograniczeniami
 

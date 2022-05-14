@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych usługi Twitter z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po archiwizacji tych danych można używać funkcji zgodności, takich jak blokada prawna, zbieranie elektronicznych materiałów dowodowych i zasady przechowywania, do zarządzania danymi innych firm.
-ms.openlocfilehash: ec97e0f85cc2a19671b0292d478917337b56f337
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 04a478628fc8b0a9732044d44883211d924fd2f2
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319621"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416447"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Konfigurowanie łącznika do archiwizowania danych usługi Twitter (wersja zapoznawcza)
 

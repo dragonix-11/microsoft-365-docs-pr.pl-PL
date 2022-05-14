@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8a500babf581cd70b92a39b32a3be0bb5d4acd3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8f1f2add8196afef6e8bd738586957d7fea15c84
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789387"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416337"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Zarządzanie procesem stopniowego wdrażania aktualizacji usługi Microsoft Defender
 
@@ -85,7 +85,7 @@ Dostępne są następujące kanały aktualizacji:
 
 |Nazwa kanału|Opis|Aplikacja|
 |---|---|---|
-|Kanał beta — wersja wstępna|Testowanie aktualizacji przed innymi|Urządzenia ustawione na ten kanał będą pierwszymi, które będą otrzymywać nowe miesięczne aktualizacje. Wybierz pozycję Beta Channel, aby wziąć udział w identyfikowaniu i zgłaszaniu problemów firmie Microsoft. Urządzenia w programie Windows Insider Program są domyślnie subskrybowane w tym kanale. Do użytku tylko w środowiskach testowych.|
+|Kanał beta — wersja wstępna|Testowanie aktualizacji przed innymi|Urządzenia ustawione na ten kanał będą pierwszymi, które będą otrzymywać nowe miesięczne aktualizacje. Wybierz pozycję Beta Channel, aby wziąć udział w identyfikowaniu i zgłaszaniu problemów firmie Microsoft. Urządzenia w Niejawny program testów systemu Windows są domyślnie subskrybowane w tym kanale. Do użytku tylko w środowiskach testowych.|
 |Bieżący kanał (wersja zapoznawcza)|Pobieranie aktualizacji bieżącego kanału **wcześniej** podczas stopniowego wydawania|Urządzenia ustawione na ten kanał będą oferowane najwcześniej podczas stopniowego cyklu wydawania. Sugerowane dla środowisk przedprodukcyjnych/walidacyjnych.|
 |Bieżący kanał (etapowy)|Pobieranie aktualizacji bieżącego kanału później podczas stopniowego wydawania|Aktualizacje urządzeń będą oferowane później podczas stopniowego cyklu wydawania. Sugerowane zastosowanie do niewielkiej, reprezentatywnej części populacji urządzeń (~10%).|
 |Bieżący kanał (szeroki)|Pobieranie aktualizacji po zakończeniu stopniowego wydawania|Urządzenia będą oferowane aktualizacje dopiero po zakończeniu stopniowego cyklu wydawania. Sugerowane zastosowanie do szerokiego zestawu urządzeń w populacji produkcyjnej (~10–100%).|
@@ -141,10 +141,10 @@ Aby uzyskać szczegółowe informacje na temat korzystania z tych narzędzi, zob
 
 > [!TIP]
 > Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)

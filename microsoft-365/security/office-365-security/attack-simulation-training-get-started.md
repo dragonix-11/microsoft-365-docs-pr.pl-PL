@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie z użyciem szkolenia symulacyjnego w zakresie ataków
+title: Wprowadzenie do szkolenia z symulacji ataku
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,75 +17,78 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się, jak używać szkolenia symulacyjnego z użyciem symezyjnych prób wyłudzania informacji i haseł w swoich organizacjach w Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
+description: Administratorzy mogą dowiedzieć się, jak używać trenowania symulacji ataków do przeprowadzania symulowanych ataków wyłudzania informacji i haseł w organizacjach Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 244d0ae912a5cc2dc163b62f44b44877c0318b88
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 255d0f40cd360f2b4b3e5084f84989bdbe643319
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507416"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415623"
 ---
-# <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Wprowadzenie z użyciem szkolenia symezyjną ataków w programie Ochrona usługi Office 365 w usłudze Defender
+# <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Wprowadzenie przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Dotyczy planu** [Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
+**Dotyczy** [planu Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
-Jeśli w organizacji Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2, który obejmuje funkcje analizy zagrożeń i [reakcji, możesz](office-365-ti.md) skorzystać ze szkolenia symulacyjnego z użyciem funkcji ataków w Microsoft 365 Defender  w portalu, aby uruchamiać realistycznych scenariuszy ataków w twojej organizacji. Te symulowane ataki mogą ułatwić zidentyfikowanie i znalezienie narażonych użytkowników, zanim rzeczywisty atak będzie wpływał na dolną linię. Aby dowiedzieć się więcej, przeczytaj ten artykuł.
+Jeśli Twoja organizacja ma Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2, który obejmuje [możliwości badania zagrożeń i reagowania,](office-365-ti.md) możesz użyć szkolenia symulacji ataków w Microsoft 365 Defender  portal do uruchamiania realistycznych scenariuszy ataków w organizacji. Te symulowane ataki mogą pomóc w zidentyfikowaniu i znalezieniu narażonych użytkowników, zanim rzeczywisty atak wpłynie na wyniki finansowe. Przeczytaj ten artykuł, aby dowiedzieć się więcej.
+
+Obejrzyj ten krótki film wideo, aby dowiedzieć się więcej na temat trenowania symulacji ataków.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMhvB]
 
 > [!NOTE]
-> Szkolenie symulacyjne dotyczące ataków zastępuje stare środowisko podczas ataków w wersji 1  \>, które było dostępne w Centrum & zabezpieczeń w miejscu ataków na zarządzanie zagrożeniami **lub .** <https://protection.office.com/attacksimulator>
+> Trenowanie symulacji ataków zastępuje stare środowisko symulatora ataków w wersji 1, które było dostępne w Centrum zgodności & zabezpieczeń w **symulatorze ataków** **zarządzania zagrożeniami** \> lub <https://protection.office.com/attacksimulator>.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
-- Aby otworzyć Microsoft 365 Defender, przejdź do .<https://security.microsoft.com> Szkolenie dotyczące symeny ataków jest dostępne na stronie **Szkolenie dotyczące symezyjki ataków za pomocą poczty e-mail** \> **i współpracy**. Aby przejść bezpośrednio do szkolenia z symezyjną ataków, użyj narzędzia <https://security.microsoft.com/attacksimulator>.
+- Aby otworzyć portal Microsoft 365 Defender, przejdź do strony <https://security.microsoft.com>. Szkolenie z symulacji ataków jest dostępne na **stronie Szkolenia dotyczące symulacji ataków** **i współpracy w zakresie poczty** \> e-mail. Aby przejść bezpośrednio do trenowania symulacji ataków, użyj polecenia <https://security.microsoft.com/attacksimulator>.
 
-- Aby uzyskać więcej informacji na temat dostępności szkolenia symydacyjnego z tematem ataków dla różnych Microsoft 365 subskrypcji, zobacz Ochrona usługi Office 365 w usłudze Microsoft Defender [opisu usługi](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Aby uzyskać więcej informacji na temat dostępności trenowania symulacji ataków w różnych subskrypcjach Microsoft 365, zobacz [opis usługi Ochrona usługi Office 365 w usłudze Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Aby można było wykonać procedury z tego artykułu  Azure Active Directory w programie Azure Active Directory mieć przypisane uprawnienia. W szczególności musisz być członkiem jednej z następujących ról:
+- Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w **Azure Active Directory**. W szczególności musisz być członkiem jednej z następujących ról:
   - **Administrator globalny**
   - **Administrator zabezpieczeń**
-  - **Administratorzy symulacjy ataków**<sup>\*</sup>: twórz wszystkie aspekty kampanii symulacyjnych ataków i zarządzaj nimi.
-  - **Autor ładowania ataków**<sup>\*</sup>: Utwórz łady ataków, które administrator może zainicjować później.
+  - **Administratorzy symulacji ataków**<sup>\*</sup>: tworzenie wszystkich aspektów kampanii symulacji ataków i zarządzanie nimi.
+  - Autor <sup>\*</sup>**ładunku ataku**: utwórz ładunki ataku, które administrator może zainicjować później.
 
-  <sup>\*</sup>Dodawanie użytkowników do tej roli w portalu Microsoft 365 Defender jest obecnie nieobsługiwane.
+  <sup>\*</sup>Dodawanie użytkowników do tej roli w portalu Microsoft 365 Defender nie jest obecnie obsługiwane.
 
-  Aby uzyskać więcej informacji, [zobacz Uprawnienia w portalu Microsoft 365 Defender portalu lub](permissions-microsoft-365-security-center.md) [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+  Aby uzyskać więcej informacji, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md) lub [Informacje o rolach administratora](../../admin/add-users/about-admin-roles.md).
 
-- Nie ma odpowiadających im poleceń cmdlet programu PowerShell na potrzeby szkolenia z symeletami ataków.
+- Nie ma odpowiednich poleceń cmdlet programu PowerShell do trenowania symulacji ataku.
 
-- Dane związane z atakami i związane z nimi szkolenia są przechowywane razem z innymi danymi Microsoft 365 klienta. Aby uzyskać więcej informacji[, Microsoft 365 lokalizacje danych](../../enterprise/o365-data-locations.md). Symulowanie ataków jest dostępne w następujących regionach: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, KOR, BRA, LAM, CHE, NOR, ZAF, ARE i DEU.
+- Symulacja ataków i dane związane z trenowaniem są przechowywane z innymi danymi klientów dla usług Microsoft 365. Aby uzyskać więcej informacji[, zobacz Microsoft 365 lokalizacje danych](../../enterprise/o365-data-locations.md). Symulacja ataku jest dostępna w następujących regionach: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, KOR, BRA, LAM, CHE, NOR, ZAF, ARE i DEU.
 
   > [!NOTE]
-  > Najnowsze dodatki to NOR, ZAF, ARE i DEU. Wszystkie funkcje z wyjątkiem zgłoszonych telemetrii poczty e-mail będą dostępne w tych regionach. Pracujemy nad włączeniem tej funkcji i powiadomimy naszych klientów, gdy tylko zostanie udostępnione telemetria zgłoszonych wiadomości e-mail.
+  > NOR, ZAF, ARE i DEU są najnowszymi dodatkami. Wszystkie funkcje z wyjątkiem zgłoszonych danych telemetrycznych poczty e-mail będą dostępne w tych regionach. Pracujemy nad włączeniem tej funkcji i powiadomimy naszych klientów, gdy tylko będzie dostępna zgłoszona telemetria wiadomości e-mail.
 
-- Od 15 czerwca 2021 r. w programie GCC. Jeśli Twoja organizacja ma Office 365 G5 GCC lub Ochrona usługi Office 365 w usłudze Microsoft Defender (plan 2) dla instytucji rządowych, możesz użyć szkolenia symulacyjnego z użyciem funkcji ataków w aplikacji Microsoft 365 Defender  w portalu można uruchamiać realistycznych scenariuszy ataków w organizacji zgodnie z opisem w tym artykule. Szkolenie z symeny ataków nie jest jeszcze dostępne w GCC high-in lub dod.
+- Od 15 czerwca 2021 r. szkolenie z symulacji ataków jest dostępne w GCC. Jeśli Twoja organizacja ma Office 365 G5 GCC lub Ochrona usługi Office 365 w usłudze Microsoft Defender (plan 2) dla instytucji rządowych, możesz użyć szkolenia symulacji ataków w Microsoft 365 Defender  portal do uruchamiania realistycznych scenariuszy ataków w organizacji zgodnie z opisem w tym artykule. Trenowanie symulacji ataków nie jest jeszcze dostępne w środowiskach GCC High lub DoD.
 
 > [!NOTE]
-> Szkolenie symulacyjne z atakami udostępnia podzbiór możliwości klientom usługi E3 w wersji próbnej. Oferta wersji próbnej umożliwia korzystanie z ładowania poświadczeń zbierania danych dziewiętnych oraz wybieranie środowisko szkoleń "ISA Phishing" lub "Mass Market Phishing". W ramach oferty wersji próbnej E3 nie są dostępne żadne inne funkcje.
+> Szkolenie z symulacji ataków oferuje klientom E3 podzestaw możliwości w ramach wersji próbnej. Oferta wersji próbnej zawiera możliwość korzystania z ładunku Credential Harvest oraz możliwość wybierania środowisk szkoleniowych "ISA Phishing" lub "Mass Market Phishing". Żadne inne możliwości nie są częścią oferty wersji próbnej E3.
 
 ## <a name="simulations"></a>Symulacje
 
-*Wyłudzanie* informacji to ogólny termin w przypadku ataków na pocztę e-mail, w których próbie ukraść informacje poufne w wiadomościach, które wydają się pochodzić od wiarygodnych lub zaufanych nadawców. *Wyłudzanie* informacji jest częścią podzbioru technik klasyfikowanych jako _inżynieria społecznościowa_.
+*Wyłudzanie informacji* to ogólny termin dotyczący ataków e-mail, które próbują wykraść poufne informacje w wiadomościach, które wydają się pochodzić od legalnych lub zaufanych nadawców. *Wyłudzanie informacji* jest częścią podzestawu technik, które klasyfikujemy jako _inżynierię społeczną_.
 
-W szkoleniu symulacyjnych ataków dostępnych jest wiele typów technik społecznościowych:
+W szkoleniu symulacji ataków dostępnych jest wiele typów technik inżynierii społecznej:
 
-- **Zbieranie poświadczeń**: atakujący wysyła do odbiorcy wiadomość zawierającą adres URL. Gdy adresat kliknie adres URL, jest przekierowywany do witryny internetowej, w którym zwykle jest wyświetlane okno dialogowe z prośbą o nazwę użytkownika i hasło. Zazwyczaj strona docelowa ma tytuł reprezentujący dobrze znaną witrynę sieci Web w celu budowania zaufania do użytkownika.
+- **Zbieranie poświadczeń**: osoba atakująca wysyła adresatowi wiadomość zawierającą adres URL. Gdy adresat kliknie adres URL, zostanie przekierowany do witryny internetowej, w której zwykle jest wyświetlane okno dialogowe z monitem o podanie nazwy użytkownika i hasła. Zazwyczaj strona docelowa ma tematykę reprezentującą dobrze znaną witrynę internetową w celu budowania zaufania do użytkownika.
 
-- **Załącznik z złośliwym** oprogramowaniem: atakujący wysyła do odbiorcy wiadomość zawierającą załącznik. Gdy adresat otwiera załącznik, na urządzeniu użytkownika jest uruchamiany dowolny kod (na przykład makro), aby pomóc osobie atakującej zainstalować dodatkowy kod lub dodatkowo z nich korzystać.
+- **Załącznik złośliwego oprogramowania**: osoba atakująca wysyła adresatowi wiadomość zawierającą załącznik. Gdy odbiorca otworzy załącznik, dowolny kod (na przykład makro) jest uruchamiany na urządzeniu użytkownika, aby ułatwić atakującemu zainstalowanie dodatkowego kodu lub dalsze umocnienie się.
 
-- **Link w załączniku**: jest to tryb hybrydowy zbioru poświadczeń. Atakujący wysyła do odbiorcy wiadomość zawierającą adres URL w załączniku. Gdy adresat otworzy załącznik i kliknie adres URL, jest przekierowywany do witryny internetowej, w którym zazwyczaj jest wyświetlane okno dialogowe z prośbą o nazwę użytkownika i hasło. Zazwyczaj strona docelowa ma tytuł reprezentujący dobrze znaną witrynę sieci Web w celu budowania zaufania do użytkownika.
+- **Link w załączniku**: jest to hybryda zbioru poświadczeń. Osoba atakująca wysyła adresatowi wiadomość zawierającą adres URL wewnątrz załącznika. Gdy adresat otworzy załącznik i kliknie adres URL, zostanie on przekierowany do witryny internetowej, w której zwykle jest wyświetlane okno dialogowe z monitem o podanie nazwy użytkownika i hasła. Zazwyczaj strona docelowa ma tematykę reprezentującą dobrze znaną witrynę internetową w celu budowania zaufania do użytkownika.
 
-- **Link do złośliwego** oprogramowania: atakujący wysyła do odbiorcy wiadomość zawierającą link do załącznika w znanej witrynie do udostępniania plików SharePoint (na przykład w trybie online lub Dropbox). Gdy adresat kliknie adres URL, zostanie otwarty załącznik i na jego urządzeniu zostanie uruchomiony dowolny kod (na przykład makro), aby ułatwić atakującemu zainstalowanie dodatkowego kodu lub dodatkową instalację.
+- **Link do złośliwego oprogramowania**: osoba atakująca wysyła adresatowi wiadomość zawierającą link do załącznika w dobrze znanej witrynie do udostępniania plików (na przykład SharePoint Online lub Dropbox). Gdy adresat kliknie adres URL, zostanie otwarty załącznik i dowolny kod (na przykład makro) zostanie uruchomiony na urządzeniu użytkownika, aby ułatwić atakującemu zainstalowanie dodatkowego kodu lub dalsze umocnienie się.
 
-- **Drive-by-url**: atakujący wysyła do odbiorcy wiadomości zawierające adres URL. Gdy adresat kliknie adres URL, jest przekierowywany do witryny internetowej, która próbuje uruchomić kod tła. Ten kod tła próbuje zebrać informacje o adresatze lub wdrożyć dowolny kod na jego urządzeniu. Zazwyczaj docelowa witryna sieci Web jest dobrze znana witryną sieci Web, która została naruszona lub jest sklonowana dobrze znanej witryny sieci Web. Znajomość tej witryny pomaga przekonać użytkownika, że można kliknąć link. Ta technika jest również znana jako atak _z wodociągami_.
+- **Drive-by-url**: osoba atakująca wysyła adresatowi komunikaty zawierające adres URL. Gdy adresat kliknie adres URL, zostanie przekierowany do witryny internetowej, która próbuje uruchomić kod w tle. Ten kod w tle próbuje zebrać informacje o adresacie lub wdrożyć dowolny kod na urządzeniu. Zazwyczaj docelowa witryna internetowa jest dobrze znaną witryną internetową, która została naruszona lub klonem dobrze znanej witryny internetowej. Znajomość witryny internetowej pomaga przekonać użytkownika, że kliknięcie linku jest bezpieczne. Ta technika jest również znana jako _atak podlewania dziury_.
 
 > [!NOTE]
-> Zanim użyjemy adresu URL w kampanii służącej do wyłudzania informacji, sprawdź dostępność adresu URL symulowanego wyłudzania informacji w obsługiwanych przeglądarkach sieci Web. Mimo że pracujemy z wieloma dostawcami reputacji adresów URL, aby zawsze zezwalać na te adresy URL symulowania, nie zawsze mamy pełny zasięg (na przykład Google Sejf Przeglądanie). Większość dostawców zapewnia wskazówki, które pozwalają zawsze zezwalać na określone adresy URL (na przykład <https://support.google.com/chrome/a/answer/7532419>).
+> Przed użyciem adresu URL w kampanii wyłudzania informacji sprawdź dostępność symulowanego adresu URL wyłudzania informacji w obsługiwanych przeglądarkach internetowych. Chociaż współpracujemy z wieloma dostawcami reputacji adresów URL, aby zawsze zezwalać na te adresy URL symulacji, nie zawsze mamy pełne pokrycie (na przykład Google Sejf Browsing). Większość dostawców zapewnia wskazówki, które umożliwiają zawsze zezwalanie na określone adresy URL (na przykład <https://support.google.com/chrome/a/answer/7532419>).
 
-Adresy URL używane podczas szkolenia symulacyjnego w zakresie ataków są opisane na poniższej liście:
+Adresy URL używane przez trenowanie symulacji ataków są opisane na następującej liście:
 
 - <https://www.mcsharepoint.com>
 - <https://www.attemplate.com>
@@ -112,17 +115,17 @@ Adresy URL używane podczas szkolenia symulacyjnego w zakresie ataków są opisa
 - <https://www.templatern.com>
 - <https://www.windocyte.com>
 
-### <a name="create-a-simulation"></a>Tworzenie symulacyjnej
+### <a name="create-a-simulation"></a>Tworzenie symulacji
 
-Aby uzyskać instrukcje krok po kroku dotyczące tworzenia i wysyłania nowej symulacyjnej, zobacz [Symulowanie ataku służącego do wyłudzania informacji](attack-simulation-training.md).
+Aby uzyskać instrukcje krok po kroku dotyczące tworzenia i wysyłania nowej symulacji, zobacz [Symulowanie ataku wyłudzania informacji](attack-simulation-training.md).
 
-### <a name="create-a-payload"></a>Tworzenie ładu
+### <a name="create-a-payload"></a>Tworzenie ładunku
 
-Aby uzyskać instrukcje krok po kroku dotyczące tworzenia ładu do użytku w ramach symulacyjnej, zobacz Tworzenie niestandardowego obciążenia dla szkolenia [symulacyjnego z](attack-simulation-training-payloads.md) użyciem ataków.
+Aby uzyskać instrukcje krok po kroku dotyczące sposobu tworzenia ładunku do użycia w symulacji, zobacz [Tworzenie niestandardowego ładunku na potrzeby trenowania symulacji ataków](attack-simulation-training-payloads.md).
 
 ### <a name="gaining-insights"></a>Uzyskiwanie szczegółowych informacji
 
-Aby uzyskać szczegółowe instrukcje dotyczące sposobu uzyskania szczegółowych informacji na temat raportowania, zobacz Zdobywanie szczegółowych informacji dzięki szkoleniom [symulacyjnych ataków](attack-simulation-training-insights.md).
+Aby uzyskać instrukcje krok po kroku dotyczące sposobu uzyskiwania szczegółowych informacji za pomocą raportowania, zobacz [Uzyskiwanie szczegółowych informacji dzięki trenowaniu symulacji ataków](attack-simulation-training-insights.md).
 
 > [!NOTE]
-> Podczas ataków Do najbezpieczniej jest używany link Sejf w programie Ochrona usługi Office 365 w usłudze Defender w celu bezpiecznego śledzenia danych kliknięcia adresu URL w wiadomości ładowania wysyłanej do docelowych adresatów kampanii wyłudzającej informacje, nawet jeśli ustawienie Śledź użytkowników klikających w zasadach usługi Sejf Links jest wyłączone.
+> Symulator ataków używa linków Sejf w Ochrona usługi Office 365 w usłudze Defender, aby bezpiecznie śledzić dane kliknięć adresu URL w komunikacie ładunku wysyłanym do docelowych adresatów kampanii wyłudzania informacji, nawet jeśli ustawienie **Śledzenie kliknięć użytkownika w zasadach linków** Sejf jest wyłączone.

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7b76fff060b46cbe13c11eb90f521af61e8900f5
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 53a23751fd53b05b51bf1125dcca98c23f4ba73c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172922"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418253"
 ---
 # <a name="device-discovery-overview"></a>Omówienie wykrywania urządzeń
 
@@ -113,7 +113,6 @@ Wyszukaj rekomendacje dotyczące zabezpieczeń dotyczące protokołu "SSH", aby 
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Pulpit nawigacyjny zaleceń dotyczących zabezpieczeń" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
-
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Używanie zaawansowanego wyszukiwania zagrożeń na odnalezionych urządzeniach
 
 Zaawansowane zapytania dotyczące wyszukiwania zagrożeń umożliwiają uzyskanie wglądu w odnalezione urządzenia. Szczegółowe informacje o odnalezionych urządzeniach znajdują się w tabeli DeviceInfo lub informacje dotyczące sieci dotyczące tych urządzeń w tabeli DeviceNetworkInfo.
@@ -128,19 +127,19 @@ Uruchom to zapytanie w tabeli DeviceInfo, aby zwrócić wszystkie odnalezione ur
 DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
 | where isempty(MergedToDeviceId) // Remove invalidated/merged devices
-| where OnboardingStatus != "Onboarded" 
+| where OnboardingStatus != "Onboarded"
 ```
 
-Wywołując funkcję **SeenBy** , w zaawansowanym zapytaniu wyszukiwania zagrożeń możesz uzyskać szczegółowe informacje na temat tego, które urządzenie zostało dołączone do odnalezionego urządzenia.Te informacje mogą pomóc w określeniu lokalizacji sieciowej każdego odnalezionego urządzenia, a następnie ułatwić jego identyfikację w sieci.  
+Wywołując funkcję **SeenBy** , w zaawansowanym zapytaniu wyszukiwania zagrożeń możesz uzyskać szczegółowe informacje na temat tego, które urządzenie zostało dołączone do odnalezionego urządzenia. Te informacje mogą pomóc w określeniu lokalizacji sieciowej każdego odnalezionego urządzenia, a następnie ułatwić jego identyfikację w sieci.
 
 ```query
 DeviceInfo
-| where OnboardingStatus != "Onboarded" 
-| summarize arg_max(Timestamp, *) by DeviceId  
-| where isempty(MergedToDeviceId)  
-| limit 100 
-| invoke SeenBy() 
-| project DeviceId, DeviceName, DeviceType, SeenBy  
+| where OnboardingStatus != "Onboarded"
+| summarize arg_max(Timestamp, *) by DeviceId 
+| where isempty(MergedToDeviceId) 
+| limit 100
+| invoke SeenBy()
+| project DeviceId, DeviceName, DeviceType, SeenBy
 ```
 
 Aby uzyskać więcej informacji, zobacz funkcję [SeenBy(](/microsoft-365/security/defender/advanced-hunting-seenby-function) ).
