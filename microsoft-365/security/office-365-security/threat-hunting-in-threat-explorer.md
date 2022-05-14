@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8515ce2bccb90478f11fa4a1813c7cb4ab7fb7d
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: efeaf3fadfed0032da90db15a6bb57f5a1fc822a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973844"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418023"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Wyszukiwanie zagrożeń w Eksploratorze zagrożeń dla Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -52,6 +52,9 @@ Za pomocą tych narzędzi możesz:
 - Badanie złośliwych wiadomości e-mail i nie tylko
 
 Aby uzyskać więcej informacji, zobacz [Zabezpieczenia poczty e-mail w Eksploratorze zagrożeń](email-security-in-microsoft-defender.md).
+
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak wyszukiwać i badać zagrożenia związane z pocztą e-mail i współpracą przy użyciu Ochrona usługi Office 365 w usłudze Microsoft Defender. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
 
 ## <a name="threat-explorer-walk-through"></a>Przewodnik po Eksploratorze zagrożeń
 

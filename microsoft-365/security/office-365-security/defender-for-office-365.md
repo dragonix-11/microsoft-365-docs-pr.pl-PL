@@ -20,12 +20,12 @@ ms.custom:
 description: Ochrona usługi Office 365 w usłudze Microsoft Defender obejmuje załączniki Sejf, linki Sejf, zaawansowane narzędzia chroniące przed wyłudzaniem informacji, narzędzia do raportowania i możliwości analizy zagrożeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a181f8ef6bb7ca018fb9ddf0f0adc4fe565b73e1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9be72102f9813394cb2d9eab1e4d163c6d87bd4b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941550"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417825"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -91,7 +91,11 @@ W poniższej tabeli przedstawiono podsumowanie elementów uwzględnionych w każ
 
 - Jeśli bieżąca subskrypcja nie zawiera Ochrona usługi Office 365 w usłudze Microsoft Defender i chcesz, [skontaktuj się ze sprzedażą, aby rozpocząć wersję próbną](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), i dowiedz się, jak Ochrona usługi Office 365 w usłudze Microsoft Defender mogą działać w organizacji.
 
-- Ochrona usługi Office 365 w usłudze Microsoft Defender klienci P2 mają dostęp do **integracji Microsoft 365 Defender** w celu wydajnego wykrywania, przeglądania i reagowania na zdarzenia i alerty.
+- Ochrona usługi Office 365 w usłudze Microsoft Defender klienci P2 mają dostęp do **integracji Microsoft 365 Defender** w celu wydajnego wykrywania, przeglądania i reagowania na zdarzenia i alerty. 
+
+Obejrzyj ten krótki film wideo, aby dowiedzieć się więcej o możliwościach Ochrona usługi Office 365 w usłudze Microsoft Defender P2, które zostały przeniesione do portalu Microsoft 365 Defender.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfx]
+
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Konfigurowanie zasad Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -147,7 +151,7 @@ Aby uzyskać dostęp do Ochrona usługi Office 365 w usłudze Microsoft Defender
 |administrator globalny (zarządzanie organizacją)|Tę rolę można przypisać w Azure Active Directory lub w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
 |Administrator zabezpieczeń|Tę rolę można przypisać w Azure Active Directory lub w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
 |Zarządzanie organizacją w Exchange Online|[Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online programu PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Wyszukiwanie i przeczyszczanie|Ta rola jest dostępna tylko w portalu Microsoft 365 Defender lub portalu zgodności usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md) i [uprawnienia w portalu zgodności usługi Microsoft Purview](../../compliance/microsoft-365-compliance-center-permissions.md).|
+|Wyszukiwanie i przeczyszczanie|Ta rola jest dostępna tylko w portalu Microsoft 365 Defender lub portal zgodności Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md) i [Uprawnienia w portal zgodności Microsoft Purview](../../compliance/microsoft-365-compliance-center-permissions.md).|
 |||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>Pobieranie Ochrona usługi Office 365 w usłudze Microsoft Defender

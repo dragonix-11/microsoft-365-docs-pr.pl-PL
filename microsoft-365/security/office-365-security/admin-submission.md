@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania podejrzanych wiadomości e-mail, podejrzanych wiadomości phishingowych, spamu i innych potencjalnie szkodliwych wiadomości, adresów URL i załączników wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d16cae309a90b8ffe10c90fea8ca3a359ece33b
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 8e9faf6114551725dc1fc3b8b6af173bbe1e21b4
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144822"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417957"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Przesyłanie do firmy Microsoft podejrzanych wiadomości spamowych, adresów URL i plików przy użyciu portalu Przesyłania
 
@@ -45,6 +45,9 @@ Po przesłaniu wiadomości e-mail do analizy otrzymasz:
 > Analiza reputacji ładunku/detonacji i równiarki nie jest wykonywana we wszystkich dzierżawach. Dostęp informacji poza organizację jest blokowany, gdy dane nie powinny opuszczać granicy dzierżawy w celach zgodności.
 
 Aby uzyskać inne sposoby przesyłania wiadomości e-mail, adresów URL i załączników do firmy Microsoft, zobacz [Zgłaszanie wiadomości i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
+
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak używać przesłanych przez administratorów w Ochrona usługi Office 365 w usłudze Microsoft Defender do przesyłania komunikatów do firmy Microsoft w celu oceny. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
@@ -93,7 +96,7 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
 
 2. W sekcji **Dodawanie identyfikatora komunikatu sieciowego lub przekazywanie pliku wiadomości e-mail** użyj jednej z następujących opcji:
    - **Dodaj identyfikator wiadomości sieciowej poczty e-mail**: jest to wartość identyfikatora GUID dostępna w nagłówku **X-MS-Exchange-Organization-Network-Message-Id** w wiadomości lub w nagłówku **X-MS-Office365-Filtering-Correlation-Id** w komunikatach poddanych kwarantannie.
-   - **Upload pliku e-mail (msg lub .eml)**: kliknij przycisk **Przeglądaj pliki**. W otwartym oknie dialogowym znajdź i wybierz plik .eml lub msg, a następnie kliknij przycisk **Otwórz**.
+   - **Przekaż plik e-mail (msg lub .eml)**: kliknij pozycję **Przeglądaj pliki**. W otwartym oknie dialogowym znajdź i wybierz plik .eml lub msg, a następnie kliknij przycisk **Otwórz**.
 
 3. W polu **Wybierz adresata, który miał problem** , określ adresata, dla któremu chcesz uruchomić sprawdzanie zasad. Sprawdzanie zasad określi, czy wiadomość e-mail pominąła skanowanie z powodu zasad użytkownika lub organizacji.
 

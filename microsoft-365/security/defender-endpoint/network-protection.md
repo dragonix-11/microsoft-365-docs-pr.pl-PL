@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: e9e8682853757fa9fd078645e398f6ba8f2f636c
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 24a95c8ed6d7d1cdd15b15b53434414e44b7881f
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173664"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417935"
 ---
 # <a name="protect-your-network"></a>Chroń sieć
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak ustawienia domyślne zabezpieczeń mogą pomóc chronić organizację przed atakami związanymi z tożsamością, udostępniając wstępnie skonfigurowane ustawienia zabezpieczeń dla Microsoft 365 Business Premium.
-ms.openlocfilehash: af9b19dcf33f1b79d4057662cf759ace27aec38f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c1a63efc29154768a7d54d31f51c25a3c84fa30a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095273"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417847"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Ustawienia domyślne zabezpieczeń i uwierzytelnianie wieloskładnikowe
 
@@ -97,7 +97,7 @@ Jeśli chcesz skonfigurować zasady przy użyciu dostępu warunkowego, zapoznaj 
 - [Wymaganie uwierzytelniania wieloskładnikowego na potrzeby zarządzania platformą Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [Blokowanie starszego uwierzytelniania](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [Wymagaj uwierzytelniania wieloskładnikowego dla wszystkich użytkowników](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Wymagaj rejestracji usługi Azure AD MFA](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) — wymaga usługi Azure AD Identity Protection, która jest częścią Azure Active Directory — wersja Premium P2
+- [Wymagaj rejestracji Azure AD uwierzytelniania](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) wieloskładnikowego — wymaga usługi Azure AD Identity Protection, która jest częścią Azure Active Directory — wersja Premium P2
 
 Aby dowiedzieć się więcej na temat dostępu warunkowego, zobacz [Co to jest dostęp warunkowy?](/azure/active-directory/conditional-access/overview) Aby uzyskać więcej informacji na temat tworzenia zasad dostępu warunkowego, zobacz [Tworzenie zasad dostępu warunkowego](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
 
@@ -107,4 +107,3 @@ Aby dowiedzieć się więcej na temat dostępu warunkowego, zobacz [Co to jest d
 ## <a name="next-objective"></a>Następny cel
 
 Skonfiguruj sposoby [ochrony przed złośliwym oprogramowaniem i innymi zagrożeniami](m365bp-increase-protection.md).
-
