@@ -1,6 +1,6 @@
 - name: Microsoft 365 LTI
   href: index.md
-- name: Zarządzanie aplikacją Microsoft OneLTI
+- name: Zarządzanie bramą usługi Microsoft LMS
   href: manage-microsoft-one-lti.md
 - name: Zezwalanie na pliki cookie przeglądarki dla adresów URL LMS
   href: browser-cookies.md
