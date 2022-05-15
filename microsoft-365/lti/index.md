@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
 description: Dowiedz się więcej na temat współdziałania narzędzi edukacyjnych (LTI) aplikacji firmy Microsoft i o tym, jak będą one pomagać nauczycielom podczas integrowania aplikacji firmy Microsoft z ich systemem LMS (Learning Management System).
-ms.openlocfilehash: 8140b89b4bfeb26f64e8949f6d7835ca59645cbe
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 99ae862890989b0422cb819f65781a0a99340135
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746772"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414771"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Integrowanie produktów firmy Microsoft z systemem LMS (Learning Management System)
 
@@ -32,7 +32,7 @@ Te narzędzia obejmują:
 - [Spotkania w aplikacji Teams LTI](#teams-meetings-lti)
 - [Zajęcia w aplikacji Teams LTI](#teams-classes-lti)
 
-Aby uzyskać ogólne informacje na temat zarządzania narzędziami Microsoft OneLTI, zobacz [Zarządzanie narzędziami Microsoft OneLTI dla dowolnego systemu LMS](manage-microsoft-one-lti.md).
+Aby uzyskać ogólne informacje na temat zarządzania aplikacjami Microsoft LTI, zobacz [Zarządzanie aplikacjami Microsoft OneLTI dla dowolnego systemu LMS](manage-microsoft-one-lti.md).
 
 ## <a name="onedrive-lti-apps"></a>Aplikacje OneDrive LTI
 
@@ -75,7 +75,7 @@ Aby uzyskać instrukcje konfiguracji, zobacz:
 
 ### <a name="teams-meetings-lti"></a>Spotkania w aplikacji Teams LTI
 
-Aplikacja LTI spotkań w usłudze Microsoft Teams uwzględnia spotkania w aplikacji Teams w kursach systemu LMS. Nauczyciele i uczniowie mogą wyświetlać wcześniejsze i nadchodzące spotkania, planować indywidualne lub cykliczne spotkania oraz dołączać do spotkań zespołu związanych z kursem — wszystko to z poziomu ich systemu LMS.
+Aplikacja LTI spotkań w usłudze Microsoft Teams uwzględnia spotkania w aplikacji Teams na kursach LMS. Nauczyciele i uczniowie mogą wyświetlać wcześniejsze i nadchodzące spotkania, planować indywidualne lub cykliczne spotkania oraz dołączać do spotkań zespołu związanych z kursem — wszystko to z poziomu ich usług LMS.
 
 Aby uzyskać instrukcje konfiguracji, zobacz:
 

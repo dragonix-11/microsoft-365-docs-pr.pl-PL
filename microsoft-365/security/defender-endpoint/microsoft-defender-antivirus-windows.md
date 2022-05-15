@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 352b60caa3af581a5d1162b1896b255bfcea873c
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: adc6b447f7f29cde344ab0b90f9388154025f587
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790245"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418319"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Program antywirusowy Microsoft Defender w systemie Windows
 
@@ -94,7 +94,7 @@ Nazwa rozwiązania antywirusowego/chroniącego przed złośliwym oprogramowaniem
 Ważne jest, aby program antywirusowy Microsoft Defender lub dowolne rozwiązanie antywirusowe/chroniące przed złośliwym oprogramowaniem były aktualne. Firma Microsoft udostępnia regularne aktualizacje, aby zapewnić, że twoje urządzenia mają najnowszą technologię chroniącą przed nowym złośliwym oprogramowaniem i technikami ataków. Aby dowiedzieć się więcej, zobacz [Zarządzanie aktualizacji programu antywirusowego Microsoft Defender i stosowanie punktów odniesienia](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> Jeśli szukasz powiązanych informacji dotyczących programu antywirusowego dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

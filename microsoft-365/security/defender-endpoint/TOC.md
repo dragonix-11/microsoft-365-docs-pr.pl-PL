@@ -329,6 +329,10 @@
 ##### [Wykluczenia dla systemu Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Typowe błędy, których należy unikać](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
+#### Tryb rozwiązywania problemów z ochroną punktu końcowego w usłudze Defender
+##### [Rozpoczynanie z trybem rozwiązywania problemów](enable-troubleshooting-mode.md)
+##### [Scenariusze trybu rozwiązywania problemów](troubleshooting-mode-scenarios.md)
+
 #### Diagnostyka i wydajność programu antywirusowego Microsoft Defender
 ##### [Raporty kondycji urządzenia i zgodności](machine-reports.md)
 ##### [Rozwiąż problemy z wydajnością związane z ochroną w czasie rzeczywistym](troubleshoot-performance-issues.md) 
