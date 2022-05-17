@@ -19,32 +19,32 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak przeprowadzać inspekcję działań użytkowników i administratorów w organizacji Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4dd26229e5ca29344524238903dd2e972ac09ad7
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145360"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65444250"
 ---
-# <a name="auditing-solutions-in-microsoft-purview"></a>Rozwiązania inspekcji w usłudze Microsoft Purview
+# <a name="auditing-solutions-in-microsoft-purview"></a>Rozwiązania inspekcji w Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Rozwiązania do inspekcji usługi Microsoft Purview zapewniają zintegrowane rozwiązanie ułatwiające organizacjom efektywne reagowanie na zdarzenia zabezpieczeń, badania kryminalistyczne, badania wewnętrzne i obowiązki w zakresie zgodności. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Rekordy inspekcji dla tych zdarzeń można przeszukiwać za pomocą operacji zabezpieczeń, administratorów IT, zespołów ds. ryzyka dotyczącego informacji poufnych oraz badaczy zgodności i prawnych w organizacji. Ta funkcja zapewnia wgląd w działania wykonywane w organizacji Microsoft 365.
+Microsoft Purview rozwiązania do inspekcji zapewniają zintegrowane rozwiązanie ułatwiające organizacjom skuteczne reagowanie na zdarzenia związane z zabezpieczeniami, badania kryminalistyczne, dochodzenia wewnętrzne i obowiązki w zakresie zgodności. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Rekordy inspekcji dla tych zdarzeń można przeszukiwać za pomocą operacji zabezpieczeń, administratorów IT, zespołów ds. ryzyka dotyczącego informacji poufnych oraz badaczy zgodności i prawnych w organizacji. Ta funkcja zapewnia wgląd w działania wykonywane w organizacji Microsoft 365.
 
 ## <a name="microsoft-purview-auditing-solutions"></a>Rozwiązania w zakresie inspekcji w usłudze Microsoft Purview
 
-Usługa Microsoft Purview oferuje dwa rozwiązania inspekcji: Audit (Standard) i Audit (Premium).
+Microsoft Purview oferuje dwa rozwiązania inspekcji: Inspekcja (Standardowa) i Inspekcja (Premium).
 
 ![Kluczowe możliwości inspekcji (standardowej) i inspekcji (Premium).](..\media\AuditingSolutionsComparison.png)
 
 ### <a name="audit-standard"></a>Usługa Inspekcja (wersja Standardowa)
 
-Usługa Microsoft Purview Audit (Standard) zapewnia możliwość rejestrowania i wyszukiwania inspekcji działań oraz wykonywania dochodzeń sądowych, informatycznych, zgodności i dochodzeń prawnych.
+Microsoft Purview Audit (Standard) zapewnia możliwość rejestrowania i wyszukiwania inspekcji oraz wykonywania dochodzeń sądowych, informatycznych, zgodności i dochodzeń prawnych.
 
-- **Domyślnie włączone**. Inspekcja (Standardowa) jest domyślnie włączona dla wszystkich organizacji z odpowiednią subskrypcją. Oznacza to, że rekordy dla inspekcji działań zostaną przechwycone i możliwe do przeszukiwania. Jedyną wymaganą konfiguracją jest przypisanie uprawnień niezbędnych do uzyskania dostępu do narzędzia wyszukiwania dzienników inspekcji (i odpowiedniego polecenia cmdlet) i upewnienie się, że użytkownikowi przypisano odpowiednią licencję na funkcje inspekcji usługi Microsoft Purview (Premium).
+- **Domyślnie włączone**. Inspekcja (Standardowa) jest domyślnie włączona dla wszystkich organizacji z odpowiednią subskrypcją. Oznacza to, że rekordy dla inspekcji działań zostaną przechwycone i możliwe do przeszukiwania. Jedyną wymaganą konfiguracją jest przypisanie uprawnień niezbędnych do uzyskania dostępu do narzędzia wyszukiwania dzienników inspekcji (i odpowiedniego polecenia cmdlet) i upewnienie się, że użytkownikowi przypisano odpowiednią licencję na funkcje inspekcji Microsoft Purview (Premium).
 - **Tysiące zdarzeń inspekcji z możliwością wyszukiwania**. Możesz wyszukać szeroki zakres inspekcji wykonywanych działań, które są większością Microsoft 365 usług w organizacji. Aby uzyskać częściową listę działań, które można wyszukać, zobacz [Inspekcja działań](search-the-audit-log-in-security-and-compliance.md#audited-activities). Aby uzyskać listę usług i funkcji, które obsługują inspekcję działań, zobacz [Audit log record type (Typ rekordu dziennika inspekcji](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)).
-- **Narzędzie do wyszukiwania inspekcji w portalu zgodności usługi Microsoft Purview**. Użyj narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności, aby wyszukać rekordy inspekcji. Możesz wyszukać określone działania, działania wykonywane przez określonych użytkowników i działania, które wystąpiły z zakresem dat. Oto zrzut ekranu przedstawiający narzędzie do wyszukiwania inspekcji w Centrum zgodności.
+- **Narzędzie do wyszukiwania inspekcji w portal zgodności Microsoft Purview**. Użyj narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności, aby wyszukać rekordy inspekcji. Możesz wyszukać określone działania, działania wykonywane przez określonych użytkowników i działania, które wystąpiły z zakresem dat. Oto zrzut ekranu przedstawiający narzędzie do wyszukiwania inspekcji w Centrum zgodności.
 
    ![Narzędzie do wyszukiwania dzienników inspekcji w portalu zgodności.](../media/AuditLogSearchToolMCC.png)
 
@@ -100,14 +100,14 @@ W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji
 
 ### <a name="audit-standard"></a>Usługa Inspekcja (wersja Standardowa)
 
-- Subskrypcja usługi Microsoft Purview Business Basic
-- Subskrypcja usługi Microsoft Purview Apps dla Firm
-- Subskrypcja usługi Microsoft Purview Enterprise E3
-- Microsoft Purview Business Premium
-- Subskrypcja usługi Microsoft Purview Education A3
-- Subskrypcja usługi Microsoft Purview Government G3
-- Subskrypcja usługi Microsoft Purview Government G1
-- Subskrypcja usługi Microsoft Purview Frontline F1 lub F3 lub dodatek F5 Security
+- subskrypcja Microsoft Purview Business Basic
+- subskrypcja usługi Microsoft Purview Apps for Business
+- subskrypcja Microsoft Purview Enterprise E3
+- Microsoft Purview business Premium
+- subskrypcja Microsoft Purview Education A3
+- subskrypcja Microsoft Purview Government G3
+- subskrypcja Microsoft Purview Government G1
+- subskrypcja Microsoft Purview Frontline F1 lub F3 lub dodatek F5 Security
 - subskrypcja Office 365 Enterprise E3
 - subskrypcja Office 365 Enterprise E1
 - subskrypcja Office 365 Education A1
@@ -128,9 +128,9 @@ W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji
 - subskrypcja Office 365 Enterprise E5
 - subskrypcja Office 365 Education A5
 
-## <a name="set-up-microsoft-purview-auditing-solutions"></a>Konfigurowanie rozwiązań inspekcji usługi Microsoft Purview
+## <a name="set-up-microsoft-purview-auditing-solutions"></a>Konfigurowanie rozwiązań inspekcji Microsoft Purview
 
-Aby rozpocząć korzystanie z rozwiązań inspekcji w usłudze Microsoft Purview, zapoznaj się z poniższymi wskazówkami dotyczącymi konfiguracji.
+Aby rozpocząć korzystanie z rozwiązań inspekcji w Microsoft Purview, zapoznaj się z poniższymi wskazówkami dotyczącymi konfiguracji.
 
 ### <a name="set-up-audit-standard"></a>Konfiguruj usługę Inspekcja (wersja Standardowa)
 
@@ -168,15 +168,17 @@ Jeśli Twoja organizacja ma subskrypcję obsługą funkcji Inspekcja (Premium), 
 
 Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Konfigurowanie inspekcji (Premium)](set-up-advanced-audit.md).
 
-## <a name="encrypt-audit-records-using-customer-key"></a>Szyfrowanie rekordów inspekcji przy użyciu klucza klienta
+<!--
+## Encrypt audit records using Customer Key
 
-Możesz włączyć szyfrowanie klucza klienta dla rekordów inspekcji. Inspekcja opiera się na [szyfrowaniu usługi przy użyciu klucza klienta](customer-key-overview.md) w celu szyfrowania poufnych informacji w danych inspekcji organizacji. Wdrożenie klucza klienta zapewnia dodatkową ochronę, uniemożliwiając nieautoryzowanym systemom lub pracownikom centrum danych firmy Microsoft wyświetlanie danych inspekcji w potoku inspekcji i spoczynku. Szyfrowanie danych inspekcji przy użyciu klucza klienta ułatwia również spełnienie zobowiązań regulacyjnych lub dotyczących zgodności, ponieważ organizacja udostępnia i kontroluje klucze szyfrowania.
+You can enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt sensitive information in your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
 
-Aby zaimplementować klucz klienta do inspekcji, należy utworzyć zasady szyfrowania danych o wielu obciążeniach (DEP), które definiują hierarchię szyfrowania. Aby uzyskać szczegółowe instrukcje krok po kroku, zobacz [Konfigurowanie klucza klienta](customer-key-set-up.md).
+To implement Customer Key for auditing, you have to create a multi-workload Data Encryption Policy (DEP), which defines the encryption hierarchy. For detailed step-by-step instructions, see [Set up Customer Key](customer-key-set-up.md).
 
 > [!NOTE]
-> Nie wszystkie rekordy inspekcji w organizacji są szyfrowane. Usługa Microsoft Purview, która generuje określone rekordy inspekcji dla działań w tej usłudze, określa, czy rekord inspekcji jest szyfrowany, czy nie.
+> Not all audit records in your organization are encrypted. The Microsoft Purview service that generates specific audit records for activity in that service defines whether the audit record is encrypted or not.
+-->
 
 ## <a name="training"></a>Szkolenia
 
-Szkolenie zespołu ds. operacji zabezpieczeń, administratorów IT i zespołu badaczy zgodności w zakresie podstaw inspekcji (standard) i inspekcji (Premium) może pomóc organizacji szybciej rozpocząć pracę przy użyciu inspekcji, aby pomóc w badaniu. Usługa Microsoft Purview udostępnia następujący zasób, który ułatwia tym użytkownikom w organizacji rozpoczęcie inspekcji: [Opis możliwości zbierania elektronicznych materiałów dowodowych i inspekcji w usłudze Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Szkolenie zespołu ds. operacji zabezpieczeń, administratorów IT i zespołu badaczy zgodności w zakresie podstaw inspekcji (standard) i inspekcji (Premium) może pomóc organizacji szybciej rozpocząć pracę przy użyciu inspekcji, aby pomóc w badaniu. Microsoft Purview udostępnia następujący zasób, aby ułatwić tym użytkownikom w organizacji rozpoczęcie inspekcji: [Opis możliwości zbierania elektronicznych materiałów dowodowych i inspekcji Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

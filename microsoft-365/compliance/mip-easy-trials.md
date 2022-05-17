@@ -10,13 +10,13 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-description: Dowiedz się więcej o domyślnych etykietach i zasadach usługi Microsoft Purview Information Protection do klasyfikowania i ochrony poufnej zawartości.
-ms.openlocfilehash: 486286780eaa3a2deedb2c3df837a93814280f39
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+description: Dowiedz się więcej o domyślnych etykietach i zasadach Microsoft Purview Information Protection do klasyfikowania i ochrony poufnej zawartości.
+ms.openlocfilehash: a17ba3e87e219d19d8f88f413bf446664aa094a2
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286455"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65444185"
 ---
 # <a name="default-labels-and-policies-to-protect-your-data"></a>Domyślne etykiety i zasady ochrony danych
 
@@ -24,20 +24,20 @@ ms.locfileid: "65286455"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Uprawnieni klienci mogą aktywować domyślne etykiety i zasady dla usługi Microsoft Purview Information Protection: 
+Uprawnieni klienci mogą aktywować domyślne etykiety i zasady dla Microsoft Purview Information Protection: 
 
 - Etykiety poufności i zasady etykiet poufności
 - Automatyczne etykietowanie po stronie klienta
 - Automatyczne etykietowanie po stronie usługi
 - Zasady ochrony przed utratą danych (DLP) dla Teams i urządzeń
 
-Te domyślne konfiguracje ułatwiają szybkie rozpoczęcie pracy z usługą Microsoft Purview Information Protection dla Microsoft 365. Można ich używać w taki sam sposób, jak jest, wprowadzić tylko kilka zmian lub w pełni dostosować je do własnych wymagań biznesowych. 
+Te domyślne konfiguracje ułatwiają szybkie rozpoczęcie pracy z Microsoft Purview Information Protection dla Microsoft 365. Można ich używać w taki sam sposób, jak jest, wprowadzić tylko kilka zmian lub w pełni dostosować je do własnych wymagań biznesowych. 
 
-Uprawnienia obejmują klientów, którzy mają [bezpłatną wersję próbną dla usługi Microsoft Purview](compliance-easy-trials.md), oraz niektórych klientów, którzy mają już plan Microsoft 365 E5:
+Uprawnienia obejmują klientów, którzy mają [bezpłatną wersję próbną dla Microsoft Purview](compliance-easy-trials.md) i niektórych klientów, którzy mają już plan Microsoft 365 E5:
 
-- **Nowi klienci**: jeśli masz usługę Microsoft Purview przez mniej niż 30 dni, dzierżawa może aktywować wszystkie wymienione konfiguracje domyślne. Zawsze można je wyłączyć, usunąć lub edytować.
+- **Nowi klienci**: Jeśli masz Microsoft Purview przez mniej niż 30 dni, dzierżawa może aktywować wszystkie wymienione konfiguracje domyślne. Zawsze można je wyłączyć, usunąć lub edytować.
 
-- **Istniejący klienci**: jeśli masz usługę Microsoft Purview przez ponad 30 dni, możesz aktywować konfiguracje domyślne, jeśli jeszcze nie skonfigurowano odpowiednika:
+- **Istniejący klienci**: Jeśli masz Microsoft Purview przez ponad 30 dni, możesz aktywować konfiguracje domyślne, jeśli jeszcze nie skonfigurowano odpowiednika:
 
     | Konfiguracja domyślna| Równoważne |
     |:-----|:-----|
@@ -51,13 +51,13 @@ Uprawnienia obejmują klientów, którzy mają [bezpłatną wersję próbną dla
 
 Aby uzyskać te wstępnie skonfigurowane etykiety i zasady: 
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **SolutionsInformation**  >  protection
+1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **RozwiązaniaProtekcje** >  **ochrony przed informacją**
     
     Jeśli ta opcja nie zostanie od razu wyświetlona, najpierw wybierz pozycję **Pokaż wszystko** w okienku nawigacji. 
     
-2. Jeśli kwalifikujesz się do programu Microsoft Purview Information Protection domyślnych etykiet i zasad, zostaną wyświetlone następujące informacje, w których można aktywować domyślne etykiety i zasady. Przykład:
+2. Jeśli kwalifikujesz się do Microsoft Purview Information Protection domyślnych etykiet i zasad, zostaną wyświetlone następujące informacje, w których można aktywować domyślne etykiety i zasady. Przykład:
     
-    :::image type="content" alt-text="Usługa Microsoft Purview Information Protection aktywację wstępnie skonfigurowanych etykiet i zasad." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    :::image type="content" alt-text="Microsoft Purview Information Protection aktywacji dla wstępnie skonfigurowanych etykiet i zasad." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
     
     Jeśli te informacje nie są wyświetlane z opcją aktywacji, obecnie nie kwalifikujesz się do automatycznego tworzenia etykiet poufności i zasad. Możesz spróbować sprawdzić później, czy ten stan uległ zmianie, lub użyć poniższych informacji o ustawieniach, aby ręcznie utworzyć te same etykiety i zasady.
 
@@ -110,7 +110,7 @@ Aby uzyskać więcej informacji na temat tych ustawień zasad i innych dostępny
 
 Jeśli chcesz edytować te domyślne ustawienia zasad, zobacz [Publikowanie etykiet poufności, tworząc zasady etykiet](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
-Jeśli używasz tych etykiet w aplikacjach Office w Windows, macOS, iOS i Android, użytkownicy widzą nowe etykiety w ciągu czterech godzin, a w ciągu jednej godziny dla programu Word, Excel i PowerPoint w sieci Web podczas odświeżania przeglądarki. Może jednak być konieczne zezwolenie na replikację zmian do wszystkich aplikacji i usług przez maksymalnie 24 godziny.
+Gdy te etykiety są używane w aplikacjach Office w Windows, macOS, iOS i Android, użytkownicy widzą nowe etykiety w ciągu czterech godzin i w ciągu jednej godziny dla programu Word, Excel i PowerPoint w sieci Web podczas odświeżania przeglądarki. Może jednak być konieczne zezwolenie na replikację zmian do wszystkich aplikacji i usług przez maksymalnie 24 godziny.
 
 ## <a name="client-side-auto-labeling"></a>Automatyczne etykietowanie po stronie klienta
 
@@ -135,9 +135,9 @@ Automatyczne etykietowanie po stronie usługi ułatwia etykietowanie poufnych do
 
 Domyślne automatyczne etykietowanie po stronie usługi ma następującą konfigurację: 
 
-- Jeśli w dokumencie znajduje się od 1 do 9 wystąpień numerów kart kredytowych, zastosuj etykietę poufności **ConfidentialAnyone** \  **(bez ograniczeń)**
+- Jeśli w dokumencie lub wiadomości e-mail znajduje się od 1 do 9 wystąpień numerów kart kredytowych, zastosuj etykietę poufności **ConfidentialAnyone** \  **(nieograniczone)**
 
-- Jeśli w dokumencie lub wiadomości e-mail znajduje się co najmniej 10 wystąpień numerów kart kredytowych, zaleca się, aby użytkownik zastosował etykietę poufności **PoufneWszystki** \  **pracownicy** 
+- Jeśli w dokumencie lub wiadomości e-mail znajduje się co najmniej 10 wystąpień numerów kart kredytowych, zastosuj etykietę poufności **PoufneWszysci** \  **pracownicy** 
 
 > [!NOTE]
 > Jeśli wykryliśmy, że masz opublikowane własne etykiety poufności, zostanie wyświetlony monit o wybranie jednej z własnych etykiet dla zasad automatycznego etykietowania.
@@ -160,9 +160,9 @@ Jeśli chcesz edytować zasady DLP, zobacz [Tworzenie, testowanie i dostrajanie 
 
 ## <a name="dlp-for-devices"></a>DLP dla urządzeń
 
-Domyślne zasady DLP dla urządzeń wykrywają obecność numerów kart kredytowych na urządzeniach Windows 10, które zostały dołączone do usługi Microsoft Purview. Następnie przeprowadza inspekcję (nie blokuje) następujących akcji: 
+Domyślne zasady DLP dla urządzeń wykrywają obecność numerów kart kredytowych na urządzeniach Windows 10, które zostały dołączone do Microsoft Purview. Następnie przeprowadza inspekcję (nie blokuje) następujących akcji: 
 
-- Upload do domen usług w chmurze lub dostęp przez niedozwolone przeglądarki
+- Przekazywanie do domen usług w chmurze lub uzyskiwanie dostępu przez niedozwolone przeglądarki
 
 - Kopiowanie do schowka, portu USB lub udziału sieciowego 
 
@@ -184,8 +184,8 @@ Jeśli chcesz edytować zasady DLP, zobacz [Tworzenie, testowanie i dostrajanie 
 
 ## <a name="additional-resources"></a>Dodatkowe materiały
 
-Aby dowiedzieć się więcej o etykietach poufności, zapobieganiu utracie danych i wszystkich możliwościach dostępnych w usłudze Microsoft Purview Information Protection, zobacz następujące zasoby:
+Aby dowiedzieć się więcej o etykietach poufności, zapobieganiu utracie danych i wszystkich możliwościach dostępnych w Microsoft Purview Information Protection, zobacz następujące zasoby:
 
 - [Dowiedz się więcej o etykietach poufności](sensitivity-labels.md)
 - [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
-- [Ochrona danych za pomocą usługi Microsoft Purview](information-protection.md)
+- [Ochrona danych za pomocą Microsoft Purview](information-protection.md)
