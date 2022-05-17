@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Jeśli nie musisz już zachowywać zawartości nieaktywnej skrzynki pocztowej Microsoft 365, możesz trwale usunąć nieaktywną skrzynkę pocztową.
-ms.openlocfilehash: 1e518bda3d11ff17c4ce5aa1ebb6997f8bc09c4d
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: b1a828b2248be7eed583141e13a3badef948b32e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363138"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438463"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Usuń nieaktywną skrzynkę pocztową
 
@@ -38,7 +38,7 @@ Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać opis tego,
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Przed usunięciem nieaktywnej skrzynki pocztowej
 
-- Aby usunąć blokadę postępowania sądowego z nieaktywnej skrzynki pocztowej, musisz użyć Exchange Online programu PowerShell. Nie można użyć centrum administracyjnego Exchange (EAC). Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Aby usunąć blokady z nieaktywnej skrzynki pocztowej, należy użyć Exchange Online programu PowerShell. Nie można użyć centrum administracyjnego Exchange (EAC) ani portal zgodności Microsoft Purview dla tych procedur. Aby uzyskać instrukcje krok po kroku dotyczące używania Exchange Online programu PowerShell, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Zawartość nieaktywnej skrzynki pocztowej można skopiować do innej skrzynki pocztowej przed usunięciem blokady i usunięciem nieaktywnej skrzynki pocztowej. Aby uzyskać szczegółowe informacje, zobacz [Przywracanie nieaktywnej skrzynki pocztowej w Office 365](restore-an-inactive-mailbox.md).
 
@@ -50,7 +50,7 @@ Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać opis tego,
 
 Jak wspomniano wcześniej, zasady wstrzymania postępowania sądowego, In-Place blokady lub przechowywania mogą być umieszczane w nieaktywnej skrzynce pocztowej. Pierwszym krokiem jest zidentyfikowanie blokad w nieaktywnej skrzynce pocztowej.
   
-Uruchom następujące polecenie, aby wyświetlić informacje o blokadzie dla wszystkich nieaktywnych skrzynek pocztowych w organizacji.
+[Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), a następnie uruchom następujące polecenie, aby wyświetlić informacje o blokadzie dla wszystkich nieaktywnych skrzynek pocztowych w organizacji.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -83,7 +83,7 @@ Po ustaleniu, jakiego typu blokada jest umieszczana w nieaktywnej skrzynce poczt
   
 ### <a name="remove-a-litigation-hold"></a>Usuwanie blokady postępowania sądowego
 
-Jak wspomniano wcześniej, należy użyć Windows PowerShell, aby usunąć blokadę postępowania sądowego ze skrzynki pocztowej nieaktywnej. Nie można użyć umowy EAC. Uruchom następujące polecenie, aby usunąć blokadę postępowania sądowego.
+Uruchom następujące polecenie programu PowerShell, aby usunąć blokadę postępowania sądowego.
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
@@ -102,7 +102,7 @@ Procedura usuwania nieaktywnej skrzynki pocztowej z zasad przechowywania Microso
 
 #### <a name="remove-an-inactive-mailbox-from-an-organization-wide-retention-policy"></a>Usuwanie nieaktywnej skrzynki pocztowej z zasad przechowywania w całej organizacji
 
-Uruchom następujące polecenie w programie Exchange Online programu PowerShell, aby wykluczyć nieaktywną skrzynkę pocztową z zasad przechowywania w całej organizacji.
+Uruchom następujące polecenie programu PowerShell, aby wykluczyć nieaktywną skrzynkę pocztową z zasad przechowywania w całej organizacji.
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention policy GUID without prefix or suffix>
@@ -110,7 +110,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention polic
 
 Aby uzyskać więcej informacji na temat identyfikowania zasad przechowywania w całej organizacji stosowanych do nieaktywnej skrzynki pocztowej i uzyskiwania identyfikatora GUID dla zasad przechowywania, zobacz sekcję "Get-OrganizationConfig" w temacie [How to identify the type of hold placed on a mailbox (Jak zidentyfikować typ blokady umieszczonej w skrzynce pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig)).
 
-Alternatywnie możesz uruchomić następujące polecenie, aby usunąć nieaktywną skrzynkę pocztową ze wszystkich zasad w całej organizacji:
+Alternatywnie możesz uruchomić następujące polecenie programu PowerShell, aby usunąć nieaktywną skrzynkę pocztową ze wszystkich zasad w całej organizacji:
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
@@ -118,13 +118,13 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>Usuwanie nieaktywnej skrzynki pocztowej z określonych zasad przechowywania lokalizacji
 
-Uruchom następujące polecenie w programie [PowerShell Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell) , aby usunąć nieaktywną skrzynkę pocztową z jawnych zasad przechowywania.
+Użyj programu [PowerShell Usługi Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell) , aby usunąć nieaktywną skrzynkę pocztową z jawnych zasad przechowywania:
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>
 ```
 
-Aby uzyskać więcej informacji na temat identyfikowania określonych zasad przechowywania lokalizacji stosowanych do nieaktywnej skrzynki pocztowej i uzyskiwania identyfikatora GUID zasad przechowywania, zobacz sekcję "Get-Mailbox" w temacie [How to identify the type of hold placed on a mailbox (Jak zidentyfikować typ blokady umieszczonej w skrzynce pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox)).
+Aby uzyskać więcej informacji na temat identyfikowania określonych zasad przechowywania lokalizacji, które są stosowane do nieaktywnej skrzynki pocztowej, oraz uzyskiwania identyfikatora GUID dla zasad przechowywania, zobacz sekcję "Get-Mailbox" w temacie [How to identify the type of hold placed on a mailbox (Jak zidentyfikować typ blokady umieszczonej w skrzynce pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox)).
 
 ### <a name="remove-in-place-holds"></a>Usuwanie blokad In-Place
 

@@ -21,24 +21,24 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: Dowiedz się, jakie subskrypcje posiada Twoja organizacja, przechodząc na stronę Twoje produkty.
+description: Dowiedz się, które Microsoft 365 subskrypcje twojej organizacji, przechodząc do strony Twoje produkty.
 ms.date: 01/21/2021
-ms.openlocfilehash: ad4c21b9cd4fbed746b8a272f56d5cb14be49d28
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a65ddc3d2f6e9577ee8da781306a0b7f289345af
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314955"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435752"
 ---
-# <a name="what-subscription-do-i-have"></a>Jaką mam subskrypcję?
+# <a name="which-microsoft-365-subscription-do-i-have"></a>Którą subskrypcję Microsoft 365 mam?
 
-Jeśli jesteś administratorem, możesz sprawdzić, które subskrypcje posiada Twoja organizacja, przechodząc do centrum administracyjnego.
+Jeśli jesteś administratorem, możesz sprawdzić, które subskrypcje ma twoja organizacja, przechodząc do centrum administracyjnego.
   
-**Nie jesteś administratorem?** Zobacz [Microsoft 365 produktu lub licencji dla firm posiadam?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**Nie jesteś administratorem?** Zobacz [Jakie Microsoft 365 dla produktu lub licencji biznesowej mam?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">z produktami</a> .
-2. Na **karcie Produkty** są dostępne wszystkie subskrypcje. Każdy wiersz subskrypcji zawiera informacje o licencjach, stanie subskrypcji i rozliczeniach.
-3. Jeśli chcesz zmienić kolumny wyświetlane na liście, wybierz pozycję **Wybierz kolumny**. Zmień zaznaczenie kolumn, a następnie wybierz pozycję **Zapisz**.
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
+2. Na karcie **Produkty** zostaną wyświetlone wszystkie subskrypcje. Każdy wiersz subskrypcji zawiera informacje o licencjach, stanie subskrypcji i rozliczeniach.
+3. Jeśli chcesz zmienić kolumny wyświetlane na liście, wybierz pozycję **Wybierz kolumny**. Zmień wybór kolumn, a następnie wybierz pozycję **Zapisz**.
 4. Aby wyświetlić więcej szczegółów dotyczących pojedynczej subskrypcji, wybierz tę subskrypcję.
 
 ## <a name="related-content"></a>Zawartość pokrewna

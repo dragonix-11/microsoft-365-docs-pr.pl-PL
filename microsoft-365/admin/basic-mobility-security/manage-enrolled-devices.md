@@ -18,13 +18,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: Usługa Basic Mobility and Security może pomóc w zabezpieczeniu urządzeń przenośnych organizacji i zarządzaniu nimi.
-ms.openlocfilehash: 74d2a2d6034b1e893987e2ede47a96bc00658f47
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: Zaloguj się do Microsoft 365 i skonfiguruj usługę Basic Mobility and Security, aby używać wbudowanego zarządzania urządzeniami przenośnymi do zabezpieczania urządzeń przenośnych użytkowników i zarządzania nimi.
+ms.openlocfilehash: c24d36b1151b22fee228d1a85368bf26a381e4d2
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415156"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435728"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Zarządzanie urządzeniami zarejestrowanymi w usłudze Mobile Zarządzanie urządzeniami w Microsoft 365
 

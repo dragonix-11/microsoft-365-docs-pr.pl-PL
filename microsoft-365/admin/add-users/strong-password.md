@@ -1,5 +1,5 @@
 ---
-title: Wyłączanie wymagań dotyczących silnych haseł dla użytkowników
+title: Wyłączanie silnych wymagań dotyczących haseł dla użytkowników
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,29 +20,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Dowiedz się, jak ustawić dla użytkowników silne wymagania dotyczące haseł, używając funkcji Windows PowerShell.
-ms.openlocfilehash: 5932f01c2f17a72f4f6a20a6457d263bed7dd85e
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+description: Jeśli jesteś administratorem, który zarządza zasadami haseł dla firmy, szkoły lub organizacji non-profit, możesz ustawić silne wymagania dotyczące haseł przy użyciu Windows PowerShell.
+ms.openlocfilehash: 20bea953207a85b589bf1ae821f988a3cfe8e22c
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017864"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436190"
 ---
-# <a name="turn-off-strong-password-requirements-for-users"></a>Wyłączanie wymagań dotyczących silnych haseł dla użytkowników
+# <a name="turn-off-strong-password-requirements-for-users"></a>Wyłączanie silnych wymagań dotyczących haseł dla użytkowników
 
-W tym artykule wyjaśniono, jak wyłączyć użytkownikom silne wymagania dotyczące haseł. Wymagania dotyczące silnych haseł są domyślnie włączone w Twojej organizacji usługi Microsoft 365 firm. Twoja organizacja może mieć wymagania dotyczące wyłączania silnych haseł. Wykonaj poniższe czynności, aby wyłączyć wymagania dotyczące silnych haseł. Musisz wykonać te czynności przy użyciu programu PowerShell.
+W tym artykule wyjaśniono, jak wyłączyć wymagania dotyczące silnych haseł dla użytkowników. Wymagania dotyczące silnych haseł są domyślnie włączone w Microsoft 365 dla organizacji biznesowej. Organizacja może mieć wymagania dotyczące wyłączania silnych haseł. Wykonaj poniższe kroki, aby wyłączyć wymagania dotyczące silnych haseł. Te kroki należy wykonać przy użyciu programu PowerShell.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Ten artykuł jest dla osób, które zarządzają zasadami haseł dla firmy, szkoły lub organizacji niedochodowej. Aby wykonać te czynności, musisz zalogować się przy użyciu Microsoft 365 administratora. [Co to jest konto administratora?] (Omówienie centrum administracyjne platformy Microsoft 365](.. /admin-overview/admin-center-overview.md) Aby wykonać te czynności, musisz być [administratorem globalnym lub administratorem](about-admin-roles.md) haseł.
+Ten artykuł dotyczy osób, które zarządzają zasadami haseł dla firmy, szkoły lub organizacji non-profit. Aby wykonać te kroki, musisz zalogować się przy użyciu konta administratora Microsoft 365. [Co to jest konto administratora?] (Omówienie Centrum administracyjne platformy Microsoft 365](.. /admin-overview/admin-center-overview.md) Aby wykonać te kroki, musisz być [administratorem globalnym lub administratorem haseł](about-admin-roles.md).
 
-Musisz także nawiązać połączenie z programem Microsoft 365 Za pomocą programu PowerShell.
+Należy również nawiązać połączenie z Microsoft 365 za pomocą programu PowerShell.
 
 ## <a name="set-strong-passwords"></a>Ustawianie silnych haseł
 
 1. [Połączenie do Microsoft 365 za pomocą programu PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. Za pomocą programu PowerShell można wyłączyć wymagania dotyczące silnych haseł dla wszystkich użytkowników za pomocą następującego polecenia:
+2. Za pomocą programu PowerShell można wyłączyć silne wymagania dotyczące haseł dla wszystkich użytkowników za pomocą następującego polecenia:
 
     ```powershell
     Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
@@ -54,12 +54,12 @@ Musisz także nawiązać połączenie z programem Microsoft 365 Za pomocą progr
     ```
 
 > [!NOTE]
-> Nazwa użytkownikaPrincipalName musi mieć format logowania typu internetowego, w którym po nazwie użytkownika musi znajdować się znak "@" i nazwa domeny. Na przykład: user@contoso.com.
+> Nazwa userPrincipalName musi być w formacie logowania w stylu internetowym, w którym po nazwie użytkownika następuje znak at (@) i nazwa domeny. Na przykład: user@contoso.com.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Jak nawiązać połączenie z siecią Microsoft 365 programie PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[Jak nawiązać połączenie z Microsoft 365 za pomocą programu PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-[Więcej informacji na temat poleceń MsolUser programu PowerShell](/powershell/azure/active-directory/install-adv2)
+[Więcej informacji na temat poleceń msolUser programu PowerShell](/powershell/azure/active-directory/install-adv2)
 
-[Więcej informacji na temat zasad dotyczących haseł](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)
+[Więcej informacji na temat zasad haseł](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)

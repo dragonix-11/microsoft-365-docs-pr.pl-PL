@@ -1,7 +1,7 @@
 ---
-title: Badanie i odpowiadanie za pomocą Microsoft 365 Defender
-description: Badanie zdarzeń i odpowiadanie na nie za pomocą funkcji Microsoft 365 Defender.
-keywords: zdarzenia, alerty, badanie, analizowanie, odpowiedź, korelacja, ataki, komputery, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, poczta e-mail, 365, microsoft, m365, reagowanie na incydenty, cyberatak
+title: Badanie i reagowanie za pomocą Microsoft 365 Defender
+description: Badanie zdarzeń i reagowanie na nie przy użyciu funkcji Microsoft 365 Defender.
+keywords: zdarzenia, alerty, badanie, analizowanie, reagowanie, korelacja, atak, maszyny, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, e-mail, 365, microsoft, m365, reagowanie na zdarzenia, cyberatak
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -25,70 +25,70 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c54d2989941d5c91cc2626941af36cf6cdf205ce
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a4edb82291ff01a4876ad93d688dbbbf19416c05
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329561"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435374"
 ---
-# <a name="investigate-and-respond-with-microsoft-365-defender"></a>Badanie i odpowiadanie za pomocą Microsoft 365 Defender
+# <a name="investigate-and-respond-with-microsoft-365-defender"></a>Badanie i reagowanie za pomocą Microsoft 365 Defender
 
-Poniżej podano podstawowe zadania w celu zbadania i odpowiadania na Microsoft 365 Defender:
+Poniżej przedstawiono podstawowe zadania badania i reagowania dla Microsoft 365 Defender:
 
 - [Reagowanie na zdarzenia](#incident-response)
-- [Przegląd i zatwierdzanie automatycznych działań naprawczych](#automated-investigation-and-remediation)
+- [Przeglądanie i zatwierdzanie akcji automatycznego korygowania](#automated-investigation-and-remediation)
 - [Wyszukiwanie znanych zagrożeń w danych](#proactive-search-for-threats-with-advanced-hunting)
-- [Opis najnowszych cyberataków](#get-ahead-of-emerging-threats-with-threat-analytics)
+- [Omówienie najnowszych cyberataków](#get-ahead-of-emerging-threats-with-threat-analytics)
 - [Uzyskiwanie pomocy](#collaborate-with-microsoft-experts)
 
-## <a name="incident-response"></a>Reagowanie na incydenty
+## <a name="incident-response"></a>Reagowanie na zdarzenia
 
-Microsoft 365 i aplikacje tworzą alerty po wykryciu podejrzanych lub złośliwych zdarzeń bądź aktywności. Poszczególne alerty zawierają cenne wskazówki dotyczące ukończonych lub trwających ataków. Jednak zazwyczaj w atakach stosowane są różne techniki wobec różnych typów obiektów, takich jak urządzenia, użytkownicy i skrzynki pocztowe. Wynikiem jest wiele alertów dla wielu obiektów w dzierżawie. Ponieważ wspólne alerty w celu uzyskania wglądu w ataki mogą być trudne i czasochłonne, dlatego Microsoft 365 Defender automatycznie agreguje alerty i skojarzone z nimi informacje w zdarzenie.
+Microsoft 365 usługi i aplikacje tworzą alerty w przypadku wykrycia podejrzanego lub złośliwego zdarzenia lub działania. Poszczególne alerty dostarczają cennych wskazówek dotyczących zakończonego lub trwającego ataku. Jednak ataki zwykle stosują różne techniki względem różnych typów jednostek, takich jak urządzenia, użytkownicy i skrzynki pocztowe. Wynikiem jest wiele alertów dla wielu jednostek w dzierżawie. Ponieważ łączenie poszczególnych alertów w celu uzyskania wglądu w atak może być trudne i czasochłonne, Microsoft 365 Defender automatycznie agreguje alerty i skojarzone z nimi informacje w zdarzeniu.
 
-Na bieżąco musisz zidentyfikować zdarzenia o najwyższym priorytecie do analizy i rozwiązania w kolejce zdarzeń i przygotować je do reakcji. Jest to kombinacja:
+Na bieżąco należy zidentyfikować zdarzenia o najwyższym priorytecie do analizy i rozwiązania w kolejce zdarzeń i przygotować je do odpowiedzi. Jest to kombinacja następujących elementów:
 
-- [Określanie priorytetu](incident-queue.md) zdarzeń o najwyższym priorytecie za pomocą filtrowania i sortowania kolejki zdarzeń. Jest to nazywane również trygoniem.
-- [Zarządzanie](manage-incidents.md) zdarzeniami przez zmodyfikowanie ich tytułu, przypisanie ich do analityka, dodanie tagów i komentarzy, a następnie ich klasyfikowanie, gdy zostanie rozwiązane.
+- [Priorytetyzowanie](incident-queue.md) do określania zdarzeń o najwyższym priorytecie poprzez filtrowanie i sortowanie kolejki zdarzeń. Jest to również nazywane klasyfikacją.
+- [Zarządzanie zdarzeniami](manage-incidents.md) przez modyfikowanie ich tytułu, przypisywanie ich do analityka, dodawanie tagów i komentarzy oraz po ich rozwiązaniu, klasyfikowanie ich.
 
-W przypadku każdego zdarzenia użyj przepływu pracy reagowania na incydenty, aby przeanalizować zdarzenie, jego alerty i dane w celu przeanalizowania ataków, ochrony przed zagrożeniami, odzyskania go i uczenia się na jego temat. Zobacz [ten przykład dla](incidents-overview.md#example-incident-response-workflow-for-microsoft-365-defender) Microsoft 365 Defender.
+W przypadku każdego zdarzenia użyj przepływu pracy reagowania na zdarzenia, aby przeanalizować zdarzenie oraz jego alerty i dane, aby powstrzymać atak, wyeliminować zagrożenie, odzyskać sprawę po ataku i wyciągnąć z niego wnioski. Zobacz [ten przykład](incidents-overview.md#example-incident-response-workflow-for-microsoft-365-defender), aby uzyskać Microsoft 365 Defender.
 
-## <a name="automated-investigation-and-remediation"></a>Zautomatyzowane badanie i rozwiązywanie problemów
+## <a name="automated-investigation-and-remediation"></a>Zautomatyzowane badanie i korygowanie
 
-Jeśli Twoja organizacja używa programu Microsoft 365 Defender, zespół operacji zabezpieczeń otrzymuje w portalu programu Microsoft 365 Defender alert w przypadku wykrycia złośliwego lub podejrzanego działania lub artefaktu. Mając na względzie niekończące się natłok zagrożeń, na które mogą napływać zespoły zabezpieczeń, często twarzą w wyzwanie związane z odpowiedzią na dużą ilość alertów. Na szczęście Microsoft 365 Defender funkcje automatycznego badania i odpowiedzi (AIR), które mogą ułatwić zespołowi ds. bezpieczeństwa wydajniejsze i skuteczniejsze reagowanie na zagrożenia.
+Jeśli Organizacja używa Microsoft 365 Defender, twój zespół ds. operacji zabezpieczeń otrzymuje alert w portalu Microsoft 365 Defender za każdym razem, gdy zostanie wykryte złośliwe lub podejrzane działanie lub artefakt. Biorąc pod uwagę niekończący się przepływ zagrożeń, które mogą wystąpić, zespoły ds. zabezpieczeń często stoją przed wyzwaniem rozwiązania problemu dużej liczby alertów. Na szczęście Microsoft 365 Defender obejmuje funkcje zautomatyzowanego badania i reagowania (AIR), które mogą pomóc zespołowi ds. operacji zabezpieczeń w wydajniejszym i wydajniejszym reagowaniu na zagrożenia.
 
-Po zakończeniu zautomatyzowanego badania jest osiągany werdykt każdego dowodu zdarzenia. W zależności od werdyktu są identyfikowane akcje naprawcze. W niektórych przypadkach działania naprawcze są podejmowane automatycznie. w innych przypadkach działania naprawcze oczekują na zatwierdzenie przez Centrum Microsoft 365 Defender akcji. 
+Po zakończeniu zautomatyzowanego dochodzenia zostaje osiągnięty werdykt dla każdego dowodu zdarzenia. W zależności od werdyktu są identyfikowane akcje korygowania. W niektórych przypadkach akcje korygowania są wykonywane automatycznie; W innych przypadkach akcje korygowania oczekują na zatwierdzenie za pośrednictwem centrum Microsoft 365 Defender Action Center. 
 
-Aby [uzyskać więcej informacji, zobacz Automatyczne](m365d-autoir.md) badanie i Microsoft 365 Defender w programie.
+Aby uzyskać więcej informacji, zobacz [Zautomatyzowane badanie i reagowanie w Microsoft 365 Defender](m365d-autoir.md).
 
-## <a name="proactive-search-for-threats-with-advanced-hunting"></a>Aktywne wyszukiwanie zagrożeń za pomocą zaawansowanego wyszukiwania
+## <a name="proactive-search-for-threats-with-advanced-hunting"></a>Proaktywne wyszukiwanie zagrożeń z zaawansowanym wyszukiwaniem zagrożeń
 
-Nie wystarczy odpowiadać na ataki w ich przypadku. W przypadku rozszerzonych, wielofazowych ataków, takich jak oprogramowanie wymuszające okup, musisz aktywnie wyszukiwać dowód ataku w toku i podjąć działania w celu jego zatrzymania przed jego ukończeniem.
+Nie wystarczy reagować na ataki w miarę ich występowania. W przypadku rozszerzonych, wielofazowych ataków, takich jak oprogramowanie wymuszające okup, należy aktywnie wyszukiwać dowody na atak w toku i podjąć działania, aby go zatrzymać przed jego zakończeniem.
 
-Zaawansowane szukanie to oparte na zapytaniach narzędzie do wyszukiwania zagrożeń Microsoft 365 Defender które umożliwia eksplorowanie nawet 30 dni nieprzetworzonych danych. Możesz proaktywnie przeprowadzać inspekcje zdarzeń w sieci, aby zlokalizować wskaźniki zagrożeń i jednostki. Ten elastyczny dostęp do danych Microsoft 365 Defender umożliwia bezszkodne szkolenie w zakresie poszukiwań zarówno znanych, jak i potencjalnych zagrożeń.
+Zaawansowane wyszukiwanie zagrożeń to oparte na zapytaniach narzędzie do wyszukiwania zagrożeń w Microsoft 365 Defender, które umożliwia eksplorowanie nieprzetworzonych danych przez maksymalnie 30 dni. Możesz proaktywnie sprawdzać zdarzenia w sieci, aby zlokalizować wskaźniki zagrożeń i jednostki. Ten elastyczny dostęp do danych Microsoft 365 Defender umożliwia nieograniczone wyszukiwanie zagrożeń zarówno w przypadku znanych, jak i potencjalnych zagrożeń.
 
-Za pomocą tych samych zapytań wyszukiwania zagrożeń możesz tworzyć niestandardowe reguły wykrywania. Reguły te są uruchamiane automatycznie w celu sprawdzenia, czy są wykrywane i reagować na podejrzewane naruszenie, błędnie skonfigurowane komputery i inne ustalenia.
+Możesz użyć tych samych zapytań wyszukiwania zagrożeń, aby utworzyć niestandardowe reguły wykrywania. Te reguły są uruchamiane automatycznie w celu sprawdzania, a następnie reagowania na podejrzenie naruszenia zabezpieczeń, nieprawidłowo skonfigurowane maszyny i inne ustalenia.
 
-Aby [uzyskać więcej informacji, zobacz Aktywne wyszukiwanie zagrożeń za](advanced-hunting-overview.md) pomocą zaawansowanego wyszukiwania Microsoft 365 Defender informacji.
+Aby uzyskać więcej informacji[, zobacz Proaktywne wyszukiwanie zagrożeń z zaawansowanym wyszukiwaniem zagrożeń w Microsoft 365 Defender](advanced-hunting-overview.md).
 
-## <a name="get-ahead-of-emerging-threats-with-threat-analytics"></a>Wyprzedanie pojawiających się zagrożeń za pomocą analizy zagrożeń
+## <a name="get-ahead-of-emerging-threats-with-threat-analytics"></a>Wyprzedzanie pojawiających się zagrożeń za pomocą analizy zagrożeń
 
-Analiza zagrożeń to funkcja analizy zagrożeń w aplikacji Microsoft 365 Defender, która ma na celu pomóc Twojeowi zespołowi zabezpieczeń w jak najseksowniejszą ochronę przed pojawiającymi się zagrożeniami. Zawiera on szczegółową analizę i informacje dotyczące:
+Analiza zagrożeń to funkcja analizy zagrożeń w Microsoft 365 Defender zaprojektowana tak, aby pomóc zespołowi ds. zabezpieczeń być jak najbardziej wydajnym w obliczu pojawiających się zagrożeń. Zawiera ona szczegółową analizę i informacje na temat:
 
-- Aktywne działania podszywają się pod użytkowników i ich kampanie
+- Aktywni aktorzy zagrożeń i ich kampanie
 - Popularne i nowe techniki ataków
 - Krytyczne luki w zabezpieczeniach
 - Typowe powierzchnie ataków
-- Rozpowszechnione złośliwe oprogramowanie
+- Powszechnie stosowane złośliwe oprogramowanie
 
-Analiza zagrożeń zawiera również informacje na temat powiązanych zdarzeń i zasobów, na które wpływa Microsoft 365 dzierżawie sieci, dotyczących poszczególnych zidentyfikowanych zagrożeń.
+Analiza zagrożeń zawiera również informacje o powiązanych zdarzeniach i zasobach, których dotyczy problem, w ramach dzierżawy Microsoft 365 dla każdego zidentyfikowanego zagrożenia.
 
-Każda zidentyfikowana zagrożeń zawiera raport analityka, pełną analizę zagrożeń napisanych przez służby bezpieczeństwa firmy Microsoft, którzy na pierwszym planie wykrywają i analizują bezpieczeństwo. Te raporty mogą także dostarczać informacji o tym, jak ataki pojawiają się w Microsoft 365 Defender.
+Każde zidentyfikowane zagrożenie obejmuje raport analityków, kompleksową analizę zagrożenia napisaną przez badaczy zabezpieczeń firmy Microsoft, którzy są w czołówce wykrywania i analizy cyberbezpieczeństwa. Te raporty mogą również dostarczać informacji na temat sposobu, w jaki ataki pojawiają się w Microsoft 365 Defender.
 
 Aby uzyskać więcej informacji, zobacz [Analiza zagrożeń w Microsoft 365 Defender](threat-analytics.md).
 
-## <a name="collaborate-with-microsoft-experts"></a>Współpraca z ekspertami Firmy Microsoft
+## <a name="collaborate-with-microsoft-experts"></a>Współpraca z ekspertami firmy Microsoft
 
-Microsoft Threat Experts — powiadomienia o atakach kierowanej to usługa zarządzanego chowania pod zagrożeniami. Po zastosowaniu i zaakceptowaniu będziesz otrzymywać powiadomienia o ukierunkowanych atakach od ekspertów do spraw zagrożeń firmy Microsoft, dzięki czemu nie przeoczysz krytycznych zagrożeń dla Twojego środowiska. Te powiadomienia pomogą Chronić punkty końcowe, wiadomości e-mail i tożsamości organizacji. Microsoft Threat Experts — funkcja Eksperci na żądanie pozwala uzyskać porady ekspertów dotyczące zagrożeń, przed którymi stoi Twoja organizacja, oraz możesz zasięgnąć pomocy dotyczącej zagrożeń, przed którymi stoi Twoja organizacja. Jest ona dostępna jako dodatkowa usługa subskrypcji.
+Microsoft Threat Experts — docelowe powiadomienia o atakach to zarządzana usługa wyszukiwania zagrożeń. Po zastosowaniu i zaakceptowaniu otrzymasz powiadomienia o ukierunkowanych atakach od ekspertów firmy Microsoft w zakresie zagrożeń, dzięki czemu nie przegapisz krytycznych zagrożeń dla środowiska. Te powiadomienia pomogą Ci chronić punkty końcowe, pocztę e-mail i tożsamości organizacji. Microsoft Threat Experts — eksperci na żądanie pozwalają uzyskać specjalistyczne porady dotyczące zagrożeń, z którymi boryka się Twoja organizacja, i możesz skontaktować się z pomocą w zakresie zagrożeń, z którymi boryka się Twoja organizacja. Jest ona dostępna jako dodatkowa usługa subskrypcji.
 
-Aby uzyskać więcej informacji, [zobacz Microsoft Threat Experts w Microsoft 365 omówienie](/security/mtp/microsoft-threat-experts.md).
+Aby uzyskać więcej informacji, zobacz [Microsoft Threat Experts w Microsoft 365 omówienie](/microsoft-365/security/defender/microsoft-threat-experts).

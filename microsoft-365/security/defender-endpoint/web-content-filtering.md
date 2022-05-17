@@ -6,8 +6,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -15,50 +15,51 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 01000e08153e96042e6873dc45fcb0627ea82e47
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: caee6f216ad5006eb31750d2c5cbd0d9e47f21ce
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782990"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438932"
 ---
 # <a name="web-content-filtering"></a>Filtrowanie zawartości sieci Web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender dla Firm](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Filtrowanie zawartości internetowej jest częścią funkcji [ochrony sieci Web](web-protection-overview.md) w Ochrona punktu końcowego w usłudze Microsoft Defender. Umożliwia organizacji śledzenie i regulowanie dostępu do witryn internetowych na podstawie ich kategorii zawartości. Wiele z tych witryn internetowych, choć nie jest złośliwych, może być problematycznych z powodu przepisów dotyczących zgodności, użycia przepustowości lub innych problemów.
+## <a name="what-is-web-content-filtering"></a>Co to jest filtrowanie zawartości internetowej?
+
+Filtrowanie zawartości internetowej jest częścią funkcji [ochrony sieci Web](web-protection-overview.md) w Ochrona punktu końcowego w usłudze Microsoft Defender i Microsoft Defender dla Firm. Filtrowanie zawartości internetowej umożliwia organizacji śledzenie i regulowanie dostępu do witryn internetowych na podstawie ich kategorii zawartości. Wiele z tych witryn internetowych (nawet jeśli nie są złośliwe) może być problematycznych z powodu przepisów dotyczących zgodności, użycia przepustowości lub innych problemów.
 
 Skonfiguruj zasady w grupach urządzeń, aby blokować niektóre kategorie. Zablokowanie kategorii uniemożliwia użytkownikom w określonych grupach urządzeń dostęp do adresów URL skojarzonych z kategorią. W przypadku każdej kategorii, która nie jest zablokowana, adresy URL są automatycznie poddawane inspekcji. Użytkownicy mogą uzyskiwać dostęp do adresów URL bez zakłóceń, a ty zbierzesz statystyki dostępu, aby ułatwić tworzenie bardziej niestandardowych decyzji dotyczących zasad. Użytkownicy zobaczą powiadomienie o blokadzie, jeśli element na wyświetlonej stronie wykonuje wywołania zablokowanego zasobu.
 
-Filtrowanie zawartości internetowej jest dostępne w głównych przeglądarkach internetowych z blokami wykonywanymi przez Windows Defender SmartScreen (Microsoft Edge) i Network Protection (Chrome, Firefox, Brave i Opera). Aby uzyskać więcej informacji na temat obsługi przeglądarki, zobacz sekcję wymagania wstępne.
+Filtrowanie zawartości internetowej jest dostępne w głównych przeglądarkach internetowych z blokami wykonywanymi przez Windows Defender SmartScreen (Microsoft Edge) i Network Protection (Chrome, Firefox, Brave i Opera). Aby uzyskać więcej informacji na temat obsługi przeglądarki, zobacz sekcję [wymagania wstępne](#prerequisites) .
 
 ## <a name="benefits-of-web-content-filtering"></a>Zalety filtrowania zawartości internetowej
 
 - Użytkownicy nie mogą uzyskiwać dostępu do witryn internetowych w zablokowanych kategoriach, niezależnie od tego, czy przeglądają w środowisku lokalnym, czy poza siecią.
-
-- Twój zespół ds. zabezpieczeń może wygodnie wdrażać zasady w grupach użytkowników przy użyciu grup urządzeń zdefiniowanych w [Ochrona punktu końcowego w usłudze Microsoft Defender ustawień kontroli dostępu na podstawie ról](/microsoft-365/security/defender-endpoint/rbac).
-
 - Twój zespół ds. zabezpieczeń może uzyskiwać dostęp do raportów internetowych w tej samej centralnej lokalizacji z widocznością rzeczywistych bloków i użycia sieci Web.
+- Jeśli używasz usługi Defender for Endpoint, twój zespół ds. zabezpieczeń może wygodnie wdrażać zasady w grupach użytkowników przy użyciu grup urządzeń zdefiniowanych w [Ochrona punktu końcowego w usłudze Microsoft Defender ustawień kontroli dostępu opartej na rolach](/microsoft-365/security/defender-endpoint/rbac).
+- Jeśli używasz usługi Defender dla Firm, możesz zdefiniować jedną zasadę filtrowania zawartości internetowej, która będzie stosowana do wszystkich użytkowników. 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed wypróbowaniem tej funkcji upewnij się, że spełniasz następujące wymagania:
+Przed wypróbowaniem tej funkcji upewnij się, że spełniasz wymagania opisane w poniższej tabeli:
 
-- Twoja subskrypcja obejmuje jedną z następujących opcji: Windows 10 Enterprise E5, Microsoft 365 E5, Zabezpieczenia platformy Microsoft 365 E5, Microsoft 365 E3 lub Ochrona punktu końcowego w usłudze Microsoft Defender licencji autonomicznej. 
-
-- Masz dostęp do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>.
-
-- Urządzenia organizacji są uruchomione Windows 10 rocznicowej aktualizacji (wersja 1607) lub nowszej lub Windows 11 z [najnowszymi aktualizacjami oprogramowania antywirusowego/ochrony przed złośliwym kodem](manage-updates-baselines-microsoft-defender-antivirus.md).
-
-- Windows Defender Filtr SmartScreen i ochrona sieci są włączone na urządzeniach organizacji.
+| Wymóg | Opis |
+|:---|:---|
+| Subskrypcji | Twoja subskrypcja musi zawierać jedną z następujących opcji:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Zabezpieczenia platformy Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1 lub plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender dla Firm](../defender-business/mdb-overview.md) |
+| Dostęp do portalu | Musisz mieć dostęp do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>. |
+| System operacyjny | Na urządzeniach organizacji musi działać jeden z następujących systemów operacyjnych z [najnowszymi aktualizacjami oprogramowania antywirusowego/chroniącego przed złośliwym kodem](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>— rocznicowa aktualizacja Windows 10 (wersja 1607) lub nowsza |
+| Ochrona pokrewna | [Windows Defender filtr SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) i [ochrona sieci](network-protection.md) muszą być włączone na urządzeniach organizacji. |
 
 ## <a name="data-handling"></a>Obsługa danych
 
@@ -66,7 +67,13 @@ Dane są przechowywane w regionie wybranym w ramach [ustawień obsługi danych O
 
 ## <a name="turn-on-web-content-filtering"></a>Włączanie filtrowania zawartości internetowej
 
-W obszarze nawigacji po lewej stronie w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> wybierz pozycję **Ustawienia** \> **Punkty końcowe** \> **Ogólne** \> **funkcje zaawansowane**. Przewiń w dół, aż zobaczysz wpis **filtrowania zawartości sieci Web**. Przełącz przełącznik do pozycji **Włączone** i **Zapisz preferencje**.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> i zaloguj się.
+
+2. W okienku nawigacji wybierz pozycję **Ustawienia** \> **Punkty końcowe** \> **Ogólne** \> **funkcje zaawansowane**. 
+
+3. Przewiń w dół, aż zobaczysz **filtrowanie zawartości sieci Web**. 
+
+4. Przełącz przełącznik na **Wł**., a następnie wybierz pozycję **Zapisz preferencje**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Konfigurowanie zasad filtrowania zawartości internetowej
 
@@ -169,10 +176,12 @@ Aby dodać nowe zasady, wykonaj następujące kroki:
 
 4. Określ zakres zasad. Wybierz grupy urządzeń, aby określić miejsce zastosowania zasad. Tylko urządzenia w wybranych grupach urządzeń nie będą mogły uzyskiwać dostępu do witryn internetowych w wybranych kategoriach.
 
+   > [!IMPORTANT]
+   > Jeśli używasz usługi Defender dla Firm, określanie zakresu nie ma zastosowania. Pomiń ten krok i przejdź do kroku 5.
+
 5. Przejrzyj podsumowanie i zapisz zasady. Odświeżanie zasad może potrwać do 2 godzin w przypadku wybranych urządzeń.
 
 > [!NOTE]
->
 > - Zasady można wdrożyć bez wybierania dowolnej kategorii w grupie urządzeń. Ta akcja spowoduje utworzenie zasad inspekcji tylko w celu ułatwienia zrozumienia zachowania użytkownika przed utworzeniem zasad blokowych.
 > - Jeśli jednocześnie usuwasz zasady lub zmieniasz grupy urządzeń, może to spowodować opóźnienie wdrażania zasad.
 > - Zablokowanie kategorii "Uncategorized" może prowadzić do nieoczekiwanych i niepożądanych wyników.
@@ -245,7 +254,7 @@ Tylko Microsoft Edge jest obsługiwane, jeśli konfiguracja systemu operacyjnego
 
 Obsługiwane są tylko Microsoft Edge, a ochrona sieci nie jest obsługiwana na Windows 10 hostach z wieloma sesjami usługi Azure Virtual Desktop.
 
-Usługa Network Protection nie obsługuje obecnie inspekcji protokołu SSL, co może spowodować, że niektóre witryny będą dozwolone przez filtrowanie zawartości sieci Web, które normalnie byłyby blokowane. Witryny będą dozwolone z powodu braku wglądu w zaszyfrowany ruch po uzgadnianiu protokołu TLS i niemożności przeanalizowania niektórych przekierowań.  Obejmuje to przekierowania ze stron logowania poczty internetowej do strony skrzynki pocztowej. Jako zaakceptowane obejście możesz utworzyć niestandardowy wskaźnik bloku dla strony logowania, aby upewnić się, że żaden użytkownik nie będzie mógł uzyskać dostępu do witryny. Należy pamiętać, że może to zablokować dostęp do innych usług skojarzonych z tą samą witryną internetową. 
+Usługa Network Protection nie obsługuje obecnie inspekcji protokołu SSL, co może spowodować, że niektóre witryny będą dozwolone przez filtrowanie zawartości sieci Web, które normalnie byłyby blokowane. Witryny będą dozwolone z powodu braku wglądu w zaszyfrowany ruch po uzgadnianiu protokołu TLS i niemożności przeanalizowania niektórych przekierowań.  Obejmuje to przekierowania ze stron logowania poczty internetowej do strony skrzynki pocztowej. Jako zaakceptowane obejście możesz utworzyć niestandardowy wskaźnik bloku dla strony logowania, aby upewnić się, że żaden użytkownik nie będzie mógł uzyskać dostępu do witryny. Należy pamiętać, że może to zablokować ich dostęp do innych usług skojarzonych z tą samą witryną internetową. 
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Podczas tworzenia etykiety poufności możesz automatycznie przypisywać etykietę do plików i wiadomości e-mail lub monitować użytkowników o wybranie zalecanej etykiety.
-ms.openlocfilehash: 69a36789e4143e3e8852976eb5e41c12ab6872f8
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: b1a364fc6053483a05d0ea055000b863b31a94cf
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287227"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438032"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiety poufności do zawartości
 
@@ -31,7 +31,7 @@ ms.locfileid: "65287227"
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!TIP]
-> Aby uzyskać informacje na temat automatycznego stosowania etykiety poufności na mapie danych, zobacz [Etykietowanie w usłudze Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
+> Aby uzyskać informacje na temat automatycznego stosowania etykiety poufności na mapie danych, zobacz [Etykietowanie w Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 Podczas tworzenia etykiety poufności można automatycznie przypisywać tę etykietę do plików i wiadomości e-mail, gdy jest ona zgodna z określonymi warunkami.
 
@@ -67,17 +67,17 @@ Istnieją dwie różne metody automatycznego stosowania etykiety poufności do z
     - Maksymalnie 25 000 automatycznie oznaczonych plików w dzierżawie dziennie.
     - Maksymalnie 100 zasad automatycznego etykietowania na dzierżawę, z których każda jest przeznaczona dla maksymalnie 100 witryn (SharePoint lub OneDrive), gdy są one określane indywidualnie. Można również określić wszystkie lokacje, a ta konfiguracja jest wykluczona z maksymalnej wartości 100 lokacji.
     - Istniejące wartości modyfikacji, modyfikacji i daty nie są zmieniane w wyniku zasad automatycznego etykietowania — zarówno w trybie symulacji, jak i w przypadku stosowania etykiet.
-    - Gdy etykieta stosuje szyfrowanie, [wystawcą usługi Rights Management i właścicielem usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jest konto, które ostatnio zmodyfikowało plik. Jeśli to konto nie jest już w Azure Active Directory, etykieta nie zostanie zastosowana, ponieważ nie można ustawić tych wartości.
+    - Gdy etykieta stosuje szyfrowanie, [wystawcą Rights Management i właścicielem Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jest konto, które ostatnio zmodyfikowało plik. Jeśli to konto nie jest już w Azure Active Directory, etykieta nie zostanie zastosowana, ponieważ nie można ustawić tych wartości.
 
     Specyficzne dla automatycznego etykietowania dla Exchange:
     
     - W przeciwieństwie do ręcznego etykietowania lub automatycznego etykietowania za pomocą aplikacji Office, załączniki PDF oraz załączniki Office są również skanowane pod kątem warunków określonych w zasadach automatycznego etykietowania. W przypadku dopasowania wiadomość e-mail jest oznaczona etykietą, ale nie załącznikiem.
         - W przypadku plików PDF, jeśli etykieta stosuje szyfrowanie, te pliki są szyfrowane przy użyciu [szyfrowania komunikatów](ome.md) , gdy dzierżawa jest [włączona dla załączników PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
         - W przypadku tych plików Office obsługiwane są programy Word, PowerPoint i Excel. Jeśli etykieta stosuje szyfrowanie, są one szyfrowane przy użyciu [szyfrowania komunikatów](ome.md).
-    - Jeśli masz Exchange reguły przepływu poczty lub zasady ochrony przed utratą danych (DLP) usługi Microsoft Purview, które stosują szyfrowanie IRM: Gdy zawartość jest identyfikowana przez te reguły lub zasady i zasady automatycznego etykietowania, zostanie zastosowana etykieta. Jeśli ta etykieta stosuje szyfrowanie, ustawienia usługi IRM z Exchange reguł przepływu poczty lub zasad DLP są ignorowane. Jeśli jednak ta etykieta nie stosuje szyfrowania, oprócz etykiety zostaną zastosowane ustawienia usługi IRM z reguł przepływu poczty lub zasad DLP.
+    - Jeśli masz Exchange reguły przepływu poczty lub zasady Ochrona przed utratą danych w Microsoft Purview (DLP), które stosują szyfrowanie IRM: Gdy zawartość jest identyfikowana przez te reguły lub zasady i zasady automatycznego etykietowania, zostanie zastosowana etykieta. Jeśli ta etykieta stosuje szyfrowanie, ustawienia usługi IRM z Exchange reguł przepływu poczty lub zasad DLP są ignorowane. Jeśli jednak ta etykieta nie stosuje szyfrowania, oprócz etykiety zostaną zastosowane ustawienia usługi IRM z reguł przepływu poczty lub zasad DLP.
     - Wiadomość e-mail z szyfrowaniem IRM bez etykiety zostanie zastąpiona etykietą dowolnymi ustawieniami szyfrowania w przypadku dopasowania przy użyciu automatycznego etykietowania.
-    - Przychodząca wiadomość e-mail jest oznaczona etykietą w przypadku dopasowania do warunków automatycznego etykietowania. Jeśli ta etykieta jest skonfigurowana pod kątem [szyfrowania](encryption-sensitivity-labels.md), to szyfrowanie jest zawsze stosowane, gdy nadawca pochodzi z organizacji. Domyślnie szyfrowanie nie jest stosowane, gdy nadawca znajduje się poza organizacją, ale można je zastosować, konfigurując **dodatkowe ustawienia poczty e-mail** i określając właściciela usługi Rights Management.
-    - Gdy etykieta stosuje szyfrowanie, [wystawca usługi Rights Management i właściciel usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) to osoba, która wysyła wiadomość e-mail, gdy nadawca pochodzi z własnej organizacji. Gdy nadawca znajduje się poza organizacją, możesz określić właściciela usługi Rights Management dla przychodzącej wiadomości e-mail, która jest oznaczona etykietą i szyfrowana przez zasady.
+    - Przychodząca wiadomość e-mail jest oznaczona etykietą w przypadku dopasowania do warunków automatycznego etykietowania. Jeśli ta etykieta jest skonfigurowana pod kątem [szyfrowania](encryption-sensitivity-labels.md), to szyfrowanie jest zawsze stosowane, gdy nadawca pochodzi z organizacji. Domyślnie szyfrowanie nie jest stosowane, gdy nadawca znajduje się poza organizacją, ale można je zastosować, konfigurując **dodatkowe ustawienia poczty e-mail** i określając właściciela Rights Management.
+    - Gdy etykieta stosuje szyfrowanie, [wystawca Rights Management i właściciel Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) to osoba, która wysyła wiadomość e-mail, gdy nadawca pochodzi z własnej organizacji. Gdy nadawca znajduje się poza organizacją, możesz określić właściciela Rights Management dla przychodzącej wiadomości e-mail, która jest oznaczona etykietą i zaszyfrowana przez zasady.
     - Jeśli etykieta jest skonfigurowana do stosowania [oznaczeń dynamicznych](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), należy pamiętać, że w przypadku przychodzącej poczty e-mail ta konfiguracja może spowodować wyświetlenie nazwisk osób spoza organizacji.
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Porównanie automatycznego etykietowania dla aplikacji Office z zasadami automatycznego etykietowania
@@ -97,10 +97,10 @@ Poniższa tabela ułatwia zidentyfikowanie różnic w zachowaniu dwóch uzupełn
 |Stosowanie oznaczeń wizualnych |Tak |Tak (tylko wiadomość e-mail) |
 |Zastępowanie szyfrowania IRM zastosowanego bez etykiety|Tak, jeśli użytkownik ma prawo do minimalnego użycia eksportu |Tak (tylko wiadomość e-mail) |
 |Etykieta przychodzącej wiadomości e-mail|Nie |Tak|
-|Przypisywanie właściciela usługi Rights Management do wiadomości e-mail wysyłanych z innej organizacji |Nie |Tak|
+|Przypisywanie właściciela Rights Management dla wiadomości e-mail wysyłanych z innej organizacji |Nie |Tak|
 |W przypadku wiadomości e-mail zastąp istniejącą etykietę o tym samym lub niższym priorytecie |Nie |Tak (konfigurowalne)|
 
-\* Automatyczne etykietowanie nie jest obecnie dostępne we wszystkich regionach ze względu na zależność zaplecza platformy Azure. Jeśli dzierżawa nie może obsługiwać tej funkcji, karta **Automatyczne etykietowanie** nie jest widoczna w portalu zgodności usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Dostępność zależności platformy Azure według kraju](/troubleshoot/azure/general/dependency-availability-by-country).
+\* Automatyczne etykietowanie nie jest obecnie dostępne we wszystkich regionach ze względu na zależność zaplecza platformy Azure. Jeśli dzierżawa nie może obsługiwać tej funkcji, karta **Automatyczne etykietowanie** nie jest widoczna w portal zgodności Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Dostępność zależności platformy Azure według kraju](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Jak wiele warunków jest ocenianych w przypadku zastosowania do więcej niż jednej etykiety
 
@@ -126,7 +126,7 @@ Domyślne zachowanie polegające na tym, że automatyczne etykietowanie zastąpi
 - Automatyczne etykietowanie zastąpi [etykietę poufności o niższym priorytecie](sensitivity-labels.md#label-priority-order-matters) , która została automatycznie zastosowana, ale nie etykietę o wyższym priorytecie.
     
     > [!TIP]
-    > Na przykład etykieta poufności w górnej części listy w portalu zgodności usługi Microsoft Purview ma nazwę **Public** z numerem zamówienia (priorytetem) 0, a etykieta poufności w dolnej części listy nosi nazwę **Wysoce poufne** z numerem zamówienia (priorytet 4). Etykieta **Wysoce poufne** może zastąpić etykietę **Publiczna** , ale nie odwrotnie.
+    > Na przykład etykieta poufności w górnej części listy w portal zgodności Microsoft Purview ma nazwę **Public** z numerem zamówienia (priorytetem) 0, a etykieta poufności w dolnej części listy ma nazwę **Wysoce poufne** z numerem zamówienia (priorytet 4). Etykieta **Wysoce poufne** może zastąpić etykietę **Publiczna** , ale nie odwrotnie.
 
 Tylko w przypadku zasad automatycznego etykietowania wiadomości e-mail można wybrać ustawienie, aby zawsze przesłaniać istniejącą etykietę poufności, niezależnie od sposobu jej stosowania.
 
@@ -229,6 +229,23 @@ Specyficzne dla klienta ujednoliconego etykietowania usługi Azure Information P
 
 - Poufne informacje można wykryć w tekście treści w dokumentach i wiadomościach e-mail oraz nagłówkach i stopkach — ale nie w wierszu tematu lub załącznikach wiadomości e-mail.
 
+### <a name="convert-your-label-settings-into-an-auto-labeling-policy"></a>Konwertowanie ustawień etykiety na zasady automatycznego etykietowania
+
+> [!NOTE]
+> Ta opcja jest stopniowo wdrażana.
+
+Jeśli etykieta zawiera typy informacji poufnych dla skonfigurowanych warunków, na końcu procesu tworzenia lub edytowania etykiet zostanie wyświetlona opcja automatycznego tworzenia zasad etykietowania oparta na tych samych ustawieniach automatycznego etykietowania.
+
+Ponieważ zasady automatycznego etykietowania nie obsługują klasyfikatorów z możliwością trenowania:
+
+- Jeśli warunki etykiety zawierają tylko klasyfikatory z możliwością trenowania, nie będzie widoczna opcja automatycznego tworzenia zasad automatycznego etykietowania.
+
+- Jeśli warunki etykiety zawierają klasyfikatory z możliwością trenowania i typy informacji o poufności, zostaną utworzone zasady automatycznego etykietowania tylko dla typów informacji poufnych. 
+
+Mimo że zasady automatycznego etykietowania są tworzone automatycznie przez automatyczne wypełnianie wartości, które należy wybrać ręcznie, jeśli zasady zostały utworzone od podstaw, nadal można wyświetlać i edytować wartości przed ich zapisaniem.
+
+Domyślnie wszystkie lokalizacje dla SharePoint, OneDrive i Exchange są uwzględniane w zasadach automatycznego etykietowania, a po zapisaniu zasad są uruchamiane w [trybie symulacji](#learn-about-simulation-mode). Nie ma żadnej kontroli, czy [włączono etykiety poufności dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), co jest jednym z wymagań wstępnych dotyczących automatycznego etykietowania w celu zastosowania do zawartości w SharePoint i OneDrive.
+
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Jak skonfigurować zasady automatycznego etykietowania dla SharePoint, OneDrive i Exchange
 
 Przed skonfigurowaniem zasad automatycznego etykietowania upewnij się, że znasz wymagania wstępne.
@@ -280,7 +297,7 @@ Na koniec możesz użyć trybu symulacji, aby zapewnić przybliżenie czasu potr
 
 ### <a name="creating-an-auto-labeling-policy"></a>Tworzenie zasad automatycznego etykietowania
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> przejdź do etykiet poufności:
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> przejdź do etykiet poufności:
 
     - **Rozwiązania** >  **Ochrona informacji**
 
@@ -350,9 +367,9 @@ Na koniec możesz użyć trybu symulacji, aby zapewnić przybliżenie czasu potr
     
     - **Automatycznie zastąp istniejące etykiety o tym samym lub niższym priorytecie**: Dotyczy to zarówno przychodzących, jak i wychodzących wiadomości e-mail, po wybraniu tego ustawienia gwarantuje, że etykieta poufności będzie zawsze stosowana. Jeśli to ustawienie nie zostanie wybrane, pasujące etykiety poufności nie będą stosowane do wiadomości e-mail, które mają istniejącą etykietę poufności o [wyższym priorytecie](sensitivity-labels.md#label-priority-order-matters) lub które zostały oznaczone ręcznie.
     
-    - **Zastosuj szyfrowanie do wiadomości e-mail odebranych spoza organizacji**: po wybraniu tej opcji musisz przypisać [właściciela usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) , aby upewnić się, że autoryzowana osoba w organizacji ma [prawa do pełnej kontroli użycia](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) wiadomości e-mail wysyłanych spoza organizacji i etykiet zasad za pomocą szyfrowania. Ta rola może być potrzebna do późniejszego usunięcia szyfrowania lub przypisania różnych praw użytkowania dla użytkowników w organizacji.
+    - **Zastosuj szyfrowanie do wiadomości e-mail odebranych spoza organizacji**: po wybraniu tej opcji musisz przypisać [właściciela Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), aby upewnić się, że autoryzowana osoba w organizacji ma [prawa do pełnej kontroli użycia](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) wiadomości e-mail wysyłanych spoza organizacji i etykiet zasad z szyfrowaniem. Ta rola może być potrzebna do późniejszego usunięcia szyfrowania lub przypisania różnych praw użytkowania dla użytkowników w organizacji.
         
-        W obszarze **Przypisywanie właściciela usługi Rights Management** określ pojedynczego użytkownika za pomocą adresu e-mail należącego do Organizacji. Nie określaj kontaktu pocztowego, udostępnionej skrzynki pocztowej ani żadnego typu grupy, ponieważ nie są one obsługiwane dla tej roli.
+        W obszarze **Przypisywanie właściciela Rights Management** określ pojedynczego użytkownika za pomocą adresu e-mail należącego do Twojej organizacji. Nie określaj kontaktu pocztowego, udostępnionej skrzynki pocztowej ani żadnego typu grupy, ponieważ nie są one obsługiwane dla tej roli.
 
 10. Na stronie **Zdecyduj, czy chcesz przetestować zasady teraz, czy później** : wybierz pozycję **Uruchom zasady w trybie symulacji** , jeśli chcesz teraz uruchomić zasady automatycznego etykietowania w trybie symulacji. W przeciwnym razie wybierz pozycję **Pozostaw wyłączone zasady**. Wybierz pozycję **Dalej**:
 

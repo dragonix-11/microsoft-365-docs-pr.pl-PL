@@ -1,7 +1,7 @@
 ---
-title: Krok nr 3. Planowanie Microsoft 365 Defender integracji z katalogiem usług SOC
-description: Podstawowe informacje na temat integrowania Microsoft 365 Defender z wykazem usług w ramach operacji zabezpieczeń.
-keywords: zdarzenia, alerty, badanie, korelacja, ataki, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, poczta e-mail, 365, microsoft, m365, reagowanie na incydenty, cyberataki, zabezpieczenia, operacje zabezpieczeń, soc
+title: Krok nr 3. Planowanie integracji Microsoft 365 Defender z katalogiem usług SOC
+description: Podstawy integracji Microsoft 365 Defender z katalogiem usług operacji zabezpieczeń.
+keywords: zdarzenia, alerty, badanie, korelacja, atak, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, adres e-mail, 365, microsoft, m365, reagowanie na zdarzenia, cyberatak, secops, operacje zabezpieczeń, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,60 +22,60 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 45497f74db9c68959d4b23e013c6ea483e86378a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f6cab6be7d41f1d71a6ccf69fbedfa616694ee78
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323965"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438493"
 ---
-# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Krok nr 3. Planowanie Microsoft 365 Defender integracji z katalogiem usług SOC
+# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Krok nr 3. Planowanie integracji Microsoft 365 Defender z katalogiem usług SOC
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 - Microsoft 365 Defender
 
-Ustanowione Centrum operacji zabezpieczeń (SOC) powinno zawierać katalog usług, który może zawierać:
+Ustanowione centrum operacji zabezpieczeń (SOC) powinno mieć wykaz usług, które mogą obejmować:
 
-- Analiza & w celu analizy złośliwego oprogramowania
-- Attribution & reverse engineering
-- Ochrona przed zagrożeniami
-- Analiza
-- Badania  pracy myśliwskiej
+- Analiza złośliwego oprogramowania & włamań
+- Atrybucja & inżynierii odwrotnej
+- Analiza zagrożeń
+- Analytics
+- Badanie zagrożeń
 - Forensics
-- Reagowanie na incydenty 
-- CsIRT (Computer Security Incident Response Team) (który może być oddzielony od SOC) 
-- Testy zgodności
-- Monitorowanie zagrożeń w & w niejawnym programie testów
-- Monitorowanie zdarzeń & zabezpieczeń 
-- Skanowanie w przypadku luk
-- Rozszerzone wykrywanie i odpowiedź (XDR, Extended Detection and Response)/Security Poszukamy, Automatyzacja i Odpowiedź (SOAR)
+- Reagowanie na zdarzenia 
+- Computer Security Incident Response Team (CSIRT) (które mogą być oddzielone od SOC) 
+- Testowanie zgodności
+- Monitorowanie oszustw & zagrożeń wewnętrznych
+- Monitorowanie zdarzenia & zdarzenia zabezpieczeń 
+- Skanowanie luk w zabezpieczeniach
+- Rozszerzone wykrywanie i reagowanie (XDR)/Orkiestracja zabezpieczeń, automatyzacja i reagowanie (SOAR)
 - Wyłudzanie informacji
-- Ochrona przed utratą danych
+- Zapobieganie utracie danych
 - Monitorowanie marki
 
-Ponieważ Microsoft 365 Defender technologie obejmują różne funkcje, zespół soc będzie musiał określić, które role i obowiązki najlepiej nadają się do zarządzania każdym składnikiem programu Microsoft 365 Defender i dostosowania do funkcji usługi.
+Ponieważ technologie Microsoft 365 Defender obejmują różne funkcje, zespół SOC będzie musiał określić, które role i obowiązki najlepiej nadają się do zarządzania każdym składnikiem Microsoft 365 Defender i dopasowania do funkcji usługi.
 
-Składniki składowe Microsoft 365 Defender:
+Składniki Microsoft 365 Defender to:
 
-- **Microsoft Defender for Identity** (wcześniej Azure Advanced Threat Protection, znany także jako Azure ATP) to oparte na chmurze rozwiązanie zabezpieczeń, które używa sygnałów Usługi domenowe w usłudze Active Directory (AD DS) do identyfikowania, wykrywania i badanie zaawansowanych zagrożeń, naruszonych tożsamości i złośliwych działań w ramach niejawnego programu testów skierowanych do organizacji.
+- **Microsoft Defender for Identity** (dawniej Azure Advanced Threat Protection, znana również jako Azure ATP) to oparte na chmurze rozwiązanie zabezpieczeń, które używa sygnałów Active Directory Domain Services (AD DS) do identyfikowania, wykrywania i badania zaawansowanych zagrożeń, tożsamości z naruszeniem zabezpieczeń i złośliwych akcji wewnętrznych skierowanych do Organizacji.
 
-- **Program Microsoft Defender for Endpoint** to rozwiązanie bezpieczeństwa punktu końcowego w chmurze oparte na chmurze dla urządzeń, które zawiera oparte na ryzyko zarządzanie lukami w zabezpieczeniach i oceny, zmniejszenie powierzchni ataków, ochronę opartą na zachowaniu i opartą na chmurze ochronę następnej generacji. wykrywanie i reagowanie w punktach końcowych (EDR), automatyczne badanie i rozwiązywanie problemów, usługi chłoniaków zarządzanych, rozbudowane interfejsy API i ujednolicone zarządzanie zabezpieczeniami.
+- **Ochrona punktu końcowego w usłudze Microsoft Defender** to całościowe rozwiązanie zabezpieczeń punktów końcowych dostarczane w chmurze dla urządzeń, które obejmuje zarządzanie lukami w zabezpieczeniach i ocenę opartą na ryzyku, redukcję obszaru ataków, opartą na zachowaniu i opartą na chmurze nową generację ochrona, wykrywanie i reagowanie w punktach końcowych (EDR), automatyczne badanie i korygowanie, zarządzane usługi wyszukiwania zagrożeń, zaawansowane interfejsy API i ujednolicone zarządzanie zabezpieczeniami.
 
- - **Microsoft Defender for Office 365** to oparta na chmurze usługa filtrowania poczty e-mail, która pomaga chronić organizacje przed nieznanym złośliwym oprogramowaniem i wirusami, zapewniając niezawodną, bezdniową ochronę i udostępnia funkcje chroniące organizacje przed niebezpiecznymi linkami w czasie rzeczywistym. Oferuje również szeroki zakres badań, badań, reakcji i środków zaradczych, informacji i szkoleń oraz funkcji bezpiecznego postępowania.
+ - **Ochrona usługi Office 365 w usłudze Microsoft Defender** to oparta na chmurze usługa filtrowania poczty e-mail, która pomaga chronić organizacje przed nieznanym złośliwym oprogramowaniem i wirusami, zapewniając niezawodną ochronę zerodniową i udostępnia funkcje chroniące organizacje przed szkodliwymi linkami w czasie rzeczywistym. Oferuje również kompleksową listę badań i zagrożeń, reagowania i korygowania, świadomości i szkolenia oraz bezpiecznych funkcji postawy.
 
-- **Program Microsoft Defender for Cloud Apps** to broker zabezpieczeń dostępu w chmurze (CASB), który obsługuje różne tryby wdrażania, w tym zbieranie dzienników, łączniki interfejsu API i odwrotny serwer proxy. Zapewnia on zaawansowaną widoczność, kontrolę nad podróżami danych oraz zaawansowane analizy w celu identyfikowania i zwalczania cyberataków we wszystkich usługach firmy Microsoft i innych firm w chmurze.
+- **Microsoft Defender for Cloud Apps** jest brokerem zabezpieczeń dostępu do chmury (CASB), który obsługuje różne tryby wdrażania, w tym zbieranie dzienników, łączniki interfejsu API i zwrotny serwer proxy. Zapewnia ona bogaty wgląd, kontrolę nad przenoszeniem danych i zaawansowane analizy umożliwiające identyfikowanie i zwalczanie cyberoszertw we wszystkich usługach firmy Microsoft i innych firm w chmurze.
 
-Ponieważ Microsoft 365 Defender składniki i technologie obejmują różne funkcje, Twój zespół soc będzie musiał określić, które role i obowiązki najlepiej nadają się do zarządzania każdym składnikiem programu Microsoft 365 Defender i dostosowania do funkcji usługi.
+Ponieważ Microsoft 365 Defender składniki i technologie obejmują różne funkcje, zespół SOC będzie musiał określić, które role i obowiązki najlepiej nadają się do zarządzania każdym składnikiem Microsoft 365 Defender i dopasowania do funkcji usługi.
 
-Aby zintegrować możliwości Microsoft 365 Defender, musisz uściślić usługi SOC. Aby uzyskać więcej informacji na temat możliwości Microsoft 365 Defender, zobacz następujące artykuły:
+Aby zintegrować możliwości Microsoft 365 Defender, należy uściślić usługi SOC. Aby uzyskać więcej informacji na temat możliwości Microsoft 365 Defender, zobacz następujące artykuły:
 
-- [Co to jest program Microsoft Defender for Endpoint?](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
-- [Co to jest program Microsoft Defender for Identity?](/defender-for-identity/what-is)
-- [Co to jest defender dla Office 365?](/office-365-security/defender-for-office-365)
-- [Co to jest program Microsoft Defender dla aplikacji w chmurze?](/cloud-app-security/what-is-cloud-app-security)
+- [Co to jest Ochrona punktu końcowego w usłudze Microsoft Defender?](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
+- [Co to jest usługa Microsoft Defender for Identity?](/defender-for-identity/what-is)
+- [Co to jest Ochrona usługi Office 365 w usłudze Defender?](/microsoft-365/security/defender/microsoft-365-defender)
+- [Co to jest usługa Microsoft Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="next-step"></a>Następny krok
 
-[Krok 4. Definiowanie Microsoft 365 Defender, obowiązków i nadzór](integrate-microsoft-365-defender-secops-roles.md)
+[Krok 4. Definiowanie Microsoft 365 Defender ról, obowiązków i nadzoru](integrate-microsoft-365-defender-secops-roles.md)

@@ -26,14 +26,14 @@ ms.custom:
 search.appverid: MET150
 description: Przypisz licencje w zależności od tego, czy chcesz przypisać licencje produktów określonym użytkownikom, czy przypisać licencje użytkowników do określonego produktu.
 ms.date: 04/22/2022
-ms.openlocfilehash: 32c91c82388cdb87b0dd6b980b51b888d1cec521
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 71b6886ed8248f05339e135f96b24f2af2282e0b
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092630"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437569"
 ---
-# <a name="assign-licenses-to-users"></a>Przypisywanie licencji do użytkowników
+# <a name="assign-microsoft-365-licenses-to-users"></a>Przypisywanie licencji Microsoft 365 użytkownikom
 
 Możesz przypisywać licencje do użytkowników na stronie **Aktywni użytkownicy** lub na stronie **Licencje**. Używana metoda zależy od tego, czy chcesz przypisać licencje produktów określonym użytkownikom, czy przypisać licencje użytkowników do określonego produktu.
 

@@ -17,12 +17,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej o zasadach ochrony przed wyłudzaniem informacji dostępnych w Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b8d75bbb520a2f31ff1d1b55d97e445748a110c
-ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
+ms.openlocfilehash: 786a71e37e9602be2c8de4637ffd5f83a70e7e59
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65349857"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438888"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Zasady ochrony przed wyłudzaniem informacji w Microsoft 365
 
@@ -106,7 +106,7 @@ Następujące ustawienia fałszowania są dostępne w zasadach ochrony przed wy�
   > - Nie musisz wyłączać ochrony przed fałszowaniem, jeśli rekord MX nie wskazuje na Microsoft 365; zamiast tego włączysz rozszerzone filtrowanie dla łączników. Aby uzyskać instrukcje, zobacz [Rozszerzone filtrowanie łączników w Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   > - Wyłączenie ochrony przed fałszowaniem wyłącza tylko _niejawną_ ochronę przed fałszowaniem z testów [uwierzytelniania złożonego](email-validation-and-authentication.md#composite-authentication) . Jeśli nadawca nie _powiedzie się jawnie_ [DMARC](use-dmarc-to-validate-email.md) sprawdza, czy zasady są ustawione na kwarantannę lub odrzucenie, komunikat jest nadal poddawany kwarantannie lub odrzucany.
 
-- **Nieuwierzytelnione powiadomienia nadawcy**: te powiadomienia są dostępne tylko wtedy, gdy włączono analizę fałszowania. Zobacz informacje w następnej sekcji.
+- **Nieuwierzytelnione wskaźniki nadawcy**: dostępne w sekcji **Wskazówki dotyczące bezpieczeństwa & wskaźniki** tylko wtedy, gdy jest włączona inteligencja fałszowania. Zobacz szczegóły w następnej sekcji.
 - **Akcje**: W przypadku komunikatów od zablokowanych sfałszowanych nadawców (automatycznie zablokowanych przez fałszowanie analizy lub ręcznie zablokowanych na liście Zezwalaj/blokuj dzierżawę) można również określić akcję do wykonania w przypadku komunikatów:
   - **Przenieś wiadomości do folderów wiadomości-śmieci adresatów**: jest to wartość domyślna. Wiadomość jest dostarczana do skrzynki pocztowej i przenoszona do folderu Wiadomości-śmieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci w Exchange Online skrzynkach pocztowych w Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Kwarantanna komunikatu**: wysyła komunikat do kwarantanny zamiast zamierzonych adresatów. Aby uzyskać informacje o kwarantannie, zobacz następujące artykuły:
@@ -116,17 +116,17 @@ Następujące ustawienia fałszowania są dostępne w zasadach ochrony przed wy�
 
     Jeśli **wybierzesz pozycję Kwarantanna komunikatu**, możesz również wybrać zasady kwarantanny, które mają zastosowanie do komunikatów, które zostały poddane kwarantannie przez ochronę przed fałszowaniem danych wywiadowczych. Zasady kwarantanny określają, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie oraz czy użytkownicy otrzymują powiadomienia o kwarantannie. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 
-### <a name="unauthenticated-sender"></a>Nieuwierzytelniony nadawca
+### <a name="unauthenticated-sender-indicators"></a>Nieuwierzytelnione wskaźniki nadawcy
 
-Nieuwierzytelnione powiadomienia nadawcy są częścią [ustawień fałszowania](#spoof-settings), które są dostępne w zasadach ochrony przed wyłudzaniem informacji w usłudze EOP i Ochrona usługi Office 365 w usłudze Defender zgodnie z opisem w poprzedniej sekcji. Następujące ustawienia są dostępne tylko po włączeniu analizy fałszowania:
+Nieuwierzytelnione wskaźniki nadawcy są częścią [ustawień fałszowania](#spoof-settings), które są dostępne w sekcji **Wskazówki dotyczące bezpieczeństwa & wskaźników** w zasadach ochrony przed wyłudzaniem informacji zarówno na platformie EOP, jak i w Ochrona usługi Office 365 w usłudze Defender. Następujące ustawienia są dostępne tylko po włączeniu analizy fałszowania:
 
-- **Pokaż (?) dla nieuwierzytelnionych nadawców w celu fałszowania**: to powiadomienie dodaje znak zapytania do zdjęcia nadawcy w polu Od, jeśli wiadomość nie przechodzi testów SPF lub DKIM **, a** komunikat nie przekazuje [uwierzytelniania złożonego](email-validation-and-authentication.md#composite-authentication) lub DMARC. Gdy to ustawienie jest wyłączone, znak zapytania nie jest dodawany do zdjęcia nadawcy.
+- **Pokaż (?) dla nieuwierzytelnionych nadawców pod kątem fałszowania**: dodaje znak zapytania do zdjęcia nadawcy w polu Od, jeśli komunikat nie przechodzi testów SPF lub DKIM **, a** komunikat nie przekazuje [uwierzytelniania DMARC lub uwierzytelniania złożonego](email-validation-and-authentication.md#composite-authentication). Gdy to ustawienie jest wyłączone, znak zapytania nie jest dodawany do zdjęcia nadawcy.
 
-- **Pokaż tag "za pośrednictwem"?**: to powiadomienie dodaje tag via (chris@contoso.com <u>za pośrednictwem</u> fabrikam.com) w polu Od, jeśli domena w adresie Od (nadawca wiadomości wyświetlanym w klientach poczty e-mail) różni się od domeny w sygnaturze DKIM lub **adresIE MAIL FROM** . Aby uzyskać więcej informacji na temat tych adresów, zobacz [Omówienie standardów wiadomości e-mail](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+- **Pokaż tag "via"**: dodaje tag via (chris@contoso.com <u>za pośrednictwem</u> fabrikam.com) w polu Od, jeśli domena w polu Adres od (nadawca wiadomości wyświetlany w klientach poczty e-mail) różni się od domeny w sygnaturze DKIM lub **adresie MAIL FROM** . Aby uzyskać więcej informacji na temat tych adresów, zobacz [Omówienie standardów wiadomości e-mail](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
 Aby zapobiec dodawaniu znaku zapytania lub tagu za pośrednictwem tagu do wiadomości od określonych nadawców, dostępne są następujące opcje:
 
-- Zezwalaj na sfałszowanego nadawcę w szczegółowych [informacjach analizy fałszowania](learn-about-spoof-intelligence.md) lub ręcznie na [liście zezwalania/blokowania dzierżawy](tenant-allow-block-list.md). Zezwolenie na sfałszowany nadawca uniemożliwi wyświetlanie tagu za pośrednictwem w komunikatach od nadawcy po wyłączeniu identyfikacji nieuwierzytelnionego nadawcy.
+- Zezwalaj na sfałszowanego nadawcę w szczegółowych [informacjach analizy fałszowania](learn-about-spoof-intelligence.md) lub ręcznie na [liście zezwalania/blokowania dzierżawy](tenant-allow-block-list.md). Zezwolenie na sfałszowanego nadawcę uniemożliwi wyświetlanie tagu via w komunikatach od nadawcy, nawet jeśli ustawienie **tagu Pokaż "za pośrednictwem"** jest włączone w zasadach.
 - [Skonfiguruj uwierzytelnianie poczty e-mail](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) dla domeny nadawcy.
   - Dla znaku zapytania na zdjęciu nadawcy najważniejszy jest SPF lub DKIM.
   - W przypadku tagu via potwierdź, że domena w podpisie DKIM lub adres **MAIL FROM** jest zgodna (lub jest poddomeną) domeny w adresie Od.

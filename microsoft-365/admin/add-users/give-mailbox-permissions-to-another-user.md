@@ -1,5 +1,5 @@
 ---
-title: Nadaj uprawnienia do skrzynki pocztowej inowi użytkownikowi — Pomoc dla administratorów
+title: Nadawanie uprawnień skrzynki pocztowej innemu użytkownikowi — Pomoc dla administratorów
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -24,22 +24,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: Nadaj użytkownikowi prawo dostępu do skrzynki pocztowej innego użytkownika, co pozwoli użytkownikowi odczytywać i wysyłać wiadomości e-mail ze skrzynki pocztowej innego użytkownika.
-ms.openlocfilehash: 82a254081eba2e9b6f4ef83f952b07c743dee2c1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Nadaj użytkownikowi Microsoft 365 prawo dostępu do skrzynki pocztowej innego użytkownika, co umożliwia użytkownikowi odczytywanie i wysyłanie wiadomości e-mail ze skrzynki pocztowej innego użytkownika.
+ms.openlocfilehash: 80c316f0615c13d5f46410582abe2ec3516c8a8a
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011330"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436718"
 ---
-# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Nadaj uprawnienia do skrzynki pocztowej inowi użytkownikowi — Pomoc dla administratorów
+# <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>Nadaj uprawnienia skrzynki pocztowej innemu użytkownikowi Microsoft 365 — Pomoc dla administratorów
 
 Jako administrator możesz podlegać wymaganiom firmowym, aby umożliwić niektórym użytkownikom uzyskiwanie dostępu do skrzynki pocztowej innego użytkownika. Na przykład możesz zechcieć umożliwić asystentowi wysyłanie lub odczytywanie wiadomości e-mail ze skrzynki pocztowej jego kierownika lub umożliwić jednemu z użytkowników wysyłanie wiadomości e-mail w imieniu innego użytkownika. W tym temacie pokazano, jak to zrobić.
   
 Jeśli szukasz informacji na temat tworzenia udostępnionych skrzynek pocztowych i zarządzania nimi, zobacz [Tworzenie udostępnionej skrzynki pocztowej](../email/create-a-shared-mailbox.md).
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej czynności opisanej w tym temacie, rozważ współpracę z specjalistą [ds. małej firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy możecie uzyskać całodobowy dostęp do małych ekspertów biznesowych, gdy rozwijasz swoją firmę, od dołączania do codziennego użytku.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>Chcesz skonfigurować uprawnienia do skrzynki pocztowej?
 
@@ -61,10 +61,10 @@ Po skonfigurowaniu uprawnień może upłynąć do 60 minut, zanim zmiany zostan�
   
  **Jak używać uprawnień po ich skonfigurowaniu:**
   
-Istnieje kilka różnych sposobów uzyskiwania dostępu do skrzynki pocztowej po otrzymaniu do niej dostępu. Aby uzyskać pomoc na ten temat, zobacz ten artykuł: Uzyskiwanie dostępu do [skrzynki pocztowej innej osoby](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081).
+Istnieje kilka różnych sposobów uzyskiwania dostępu do skrzynki pocztowej po otrzymaniu do niej dostępu. Aby uzyskać pomoc w tej sprawie, zapoznaj się z tym artykułem: [Uzyskiwanie dostępu do skrzynki pocztowej innej osoby](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081).
 
 > [!NOTE]
-> Uprawnienia można skonfigurować tylko w ramach bieżącej dzierżawy organizacji. Nie można skonfigurować uprawnień skrzynki pocztowej u użytkowników  poza dzierżawą.
+> Uprawnienia można skonfigurować tylko w ramach bieżącej dzierżawy organizacji. Nie można skonfigurować uprawnień skrzynki pocztowej dla użytkowników użytkownikom chybiłości.
   
 ## <a name="send-email-from-another-users-mailbox"></a>Wysyłanie wiadomości e-mail ze skrzynki pocztowej innego użytkownika
 
@@ -116,7 +116,7 @@ Istnieje kilka różnych sposobów uzyskiwania dostępu do skrzynki pocztowej po
 
 
 > [!NOTE]
-> **Uprawnienia** do odczytu **i** zarządzania są nazywane **uprawnieniami Pełny** dostęp w przypadku ich Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administracyjnego</a>. To uprawnienie umożliwia przypisanej skrzynce pocztowej użytkownika czytanie wiadomości e-mail oraz zarządzanie wiadomościami e-mail w skrzynce pocztowej użytkownika, do której przypisano uprawnienie. Uprawnienia Pełny dostęp nie przyznają **uprawnień Wyślij jako** ani **Wyślij w imieniu**  .
+> Uprawnienia **do odczytu** i **zarządzania** są nazywane uprawnieniem **pełnego dostępu** po udzieleniu uprawnień w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. To uprawnienie umożliwia przypisanej skrzynce pocztowej użytkownika odczytywanie wiadomości e-mail oraz zarządzanie wiadomościami e-mail w skrzynce pocztowej użytkownika, do której przypisano uprawnienie. Uprawnienie pełnego dostępu nie udziela uprawnień **Wyślij jako** lub **Wyślij w imieniu**  .
 
 ::: moniker-end
 
@@ -170,7 +170,7 @@ Istnieje kilka różnych sposobów uzyskiwania dostępu do skrzynki pocztowej po
 
 ## <a name="related-content"></a>Zawartość pokrewna
   
-[Zarządzanie elementami poczty i kalendarza innej osoby](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (artykuł)\   
-[Wysyłanie wiadomości e-mail od innej osoby lub grupy](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (artykuł)\
-[Zmienianie nazwy użytkownika i adresu e-mail](../add-users/change-a-user-name-and-email-address.md) (klip wideo)
+[Zarządzanie pocztą i elementami kalendarza innej osoby](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (artykuł)\   
+[Wyślij wiadomość e-mail od innej osoby lub grupy](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (artykuł)\
+[Zmienianie nazwy użytkownika i adresu e-mail](../add-users/change-a-user-name-and-email-address.md) (wideo)
 

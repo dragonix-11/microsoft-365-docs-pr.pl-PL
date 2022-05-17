@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Skorzystaj z tego przewodnika po laboratorium testowym, aby utworzyć uproszczone środowisko testowe do testowania Microsoft 365 dla przedsiębiorstw.
-ms.openlocfilehash: fa83bb7681752b40c924af9b8d085447cd7fe074
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0da4a38ad951d30a536e653336571e7bad04a889
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100534"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435308"
 ---
 # <a name="the-lightweight-base-configuration"></a>Uproszczona konfiguracja podstawowa
 
@@ -39,7 +39,7 @@ Tworzenie uproszczonego środowiska testowego obejmuje pięć faz:
 - [Faza 2. Konfigurowanie subskrypcji wersji próbnej Office 365](#phase-2-configure-your-office-365-trial-subscription)
 - [Faza 3. Dodawanie subskrypcji wersji próbnej Microsoft 365 E5](#phase-3-add-a-microsoft-365-e5-trial-subscription)
 - [Faza 4. Tworzenie komputera Windows 10 Enterprise](#phase-4-create-a-windows-10-enterprise-computer)
-- [Faza 5. Dołączanie komputera Windows 10 do usługi Azure AD](#phase-5-join-your-windows-10-computer-to-azure-ad)
+- [Faza 5. Dołączanie komputera Windows 10 do Azure AD](#phase-5-join-your-windows-10-computer-to-azure-ad)
 
 Użyj wynikowego środowiska, aby przetestować funkcje i funkcje [Microsoft 365 dla przedsiębiorstw](https://www.microsoft.com/microsoft-365/enterprise).
 
@@ -49,29 +49,29 @@ Użyj wynikowego środowiska, aby przetestować funkcje i funkcje [Microsoft 365
 > Aby uzyskać wizualną mapę na wszystkie artykuły w stosie Microsoft 365 for enterprise Test Lab Guide, zobacz [Microsoft 365 for enterprise Test Lab Guide Stack (Stos przewodników laboratorium testowego dla przedsiębiorstw](../downloads/Microsoft365EnterpriseTLGStack.pdf)).
 
 >[!NOTE]
->Możesz wydrukować ten artykuł, aby zarejestrować konkretne informacje potrzebne dla tego środowiska w ciągu 30 dni subskrypcji Office 365 wersji próbnej. Subskrypcję trail można łatwo przedłużyć o kolejne 30 dni. W przypadku trwałego środowiska testowego utwórz nową płatną subskrypcję z oddzielną dzierżawą usługi Azure AD i niewielką liczbą licencji.
+>Możesz wydrukować ten artykuł, aby zarejestrować konkretne informacje potrzebne dla tego środowiska w ciągu 30 dni subskrypcji Office 365 wersji próbnej. Subskrypcję trail można łatwo przedłużyć o kolejne 30 dni. W przypadku trwałego środowiska testowego utwórz nową płatną subskrypcję z oddzielną dzierżawą Azure AD i niewielką liczbą licencji.
 
 ## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>Faza 1. Tworzenie subskrypcji Microsoft 365 E5
 
-Rozpoczynamy od subskrypcji wersji próbnej Microsoft 365 E5, a następnie dodajemy do niej subskrypcję Microsoft 365 E5.
+Rozpoczynamy od subskrypcji Microsoft 365 E5 wersji próbnej, a następnie dodajemy do niej subskrypcję Microsoft 365 E5.
 
 >[!NOTE]
->Zalecamy utworzenie subskrypcji wersji próbnej Office 365, aby środowisko testowe miało oddzielną dzierżawę usługi Azure AD od wszystkich subskrypcji płatnych, które obecnie masz. Ta separacja oznacza, że można dodawać i usuwać użytkowników i grupy w dzierżawie testowej bez wpływu na subskrypcje produkcyjne.
+>Zalecamy utworzenie subskrypcji wersji próbnej Office 365, aby środowisko testowe miało oddzielną dzierżawę Azure AD od wszystkich obecnie posiadanych płatnych subskrypcji. Ta separacja oznacza, że można dodawać i usuwać użytkowników i grupy w dzierżawie testowej bez wpływu na subskrypcje produkcyjne.
 
 Aby rozpocząć Microsoft 365 E5 subskrypcję wersji próbnej, najpierw potrzebujesz fikcyjnej nazwy firmy i nowego konta Microsoft.
   
 1. Zalecamy użycie wariantu nazwy firmy Contoso dla nazwy firmy, która jest fikcyjną firmą używaną w przykładowej zawartości firmy Microsoft, ale nie jest wymagana. Tutaj zarejestruj fikcyjną nazwę firmy: ![Linii.](../media/Common-Images/TableLine.png)
-    
+
 2. Aby utworzyć nowe konto Microsoft, przejdź do [https://outlook.com](https://outlook.com) witryny i utwórz konto przy użyciu nowego konta e-mail i adresu. Użyjesz tego konta, aby zarejestrować się w celu Office 365.
-    
+
     - Tutaj zarejestruj imię i nazwisko nowego konta: ![Linii.](../media/Common-Images/TableLine.png)
-    
+
     - Zarejestruj nowy adres konta e-mail tutaj: ![Linii.](../media/Common-Images/TableLine.png)@outlook.com
-    
+
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Tworzenie konta w celu Office 365 E5 subskrypcji wersji próbnej
 
 1. W przeglądarce przejdź do [https://aka.ms/e5trial](https://aka.ms/e5trial)pozycji .
-    
+
 2. W kroku 1 strony **Podziękowania za wybranie Office 365 E5** wprowadź nowy adres konta e-mail.
 3. W kroku 2 procesu subskrypcji trail wprowadź żądane informacje, a następnie wykonaj weryfikację.
 4. W kroku 3 wprowadź nazwę organizacji, a następnie nazwę konta, które będzie administratorem globalnym subskrypcji.
@@ -83,10 +83,10 @@ Aby rozpocząć Microsoft 365 E5 subskrypcję wersji próbnej, najpierw potrzebu
 8. W Office 365 E5 Instalatora wybierz pozycję **Kontynuuj korzystanie z *witryny organization.onmicrosoft.com* na potrzeby poczty e-mail i logowania**, a następnie wybierz pozycję **Zakończ i kontynuuj później**.
 
 Powinien zostać wyświetlony Centrum administracyjne platformy Microsoft 365.
-    
+
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>Faza 2. Konfigurowanie subskrypcji wersji próbnej Office 365
 
-W tej fazie skonfigurujesz subskrypcję z dodatkowymi użytkownikami i przypiszesz im Office 365 E5 licencji.
+W tej fazie skonfigurujesz subskrypcję z innymi użytkownikami i przypiszesz ją Office 365 E5 licencji.
   
 Aby nawiązać połączenie z subskrypcją przy użyciu modułu Azure Active Directory PowerShell for Graph z komputera, użyj instrukcji w [Połączenie, aby Microsoft 365 za pomocą programu PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
     
@@ -113,6 +113,7 @@ for($i=2;$i -le 4; $i++) {
     Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
 }
 ```
+
 > [!NOTE]
 > W tym miejscu użyto wspólnego hasła do automatyzacji i ułatwienia konfiguracji środowiska testowego. Oczywiście jest to zdecydowanie odradzane w przypadku subskrypcji produkcyjnych. 
 
@@ -121,34 +122,34 @@ for($i=2;$i -le 4; $i++) {
 Jeśli te wartości nie zostały jeszcze zarejestrowane, zarejestruj je teraz:
   
 - nazwa administrator globalny: ![Linii.](../media/Common-Images/TableLine.png).onmicrosoft.com (z kroku 6 fazy 1)
-    
+
     Zapisz również hasło dla tego konta w bezpiecznej lokalizacji.
-    
+
 - Nazwa organizacji subskrypcji wersji próbnej: ![Linii.](../media/Common-Images/TableLine.png) (z kroku 4 fazy 1)
-    
-- Aby wyświetlić listę kont Użytkownik 2, Użytkownik 3, Użytkownik 4 i Użytkownik 5, uruchom następujące polecenie z modułu Windows Azure Active Directory, aby Windows PowerShell monit:
-    
+
+- Aby wyświetlić listę kont Użytkownik 2, Użytkownik 3, Użytkownik 4 i Użytkownik 5, uruchom następujące polecenie z modułu Azure Active Directory, aby Windows PowerShell monit:
+
   ```powershell
   Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
     Tutaj zarejestruj nazwy kont:
-    
+
   - Nazwa konta użytkownika 2: użytkownik2 @![Linii.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - Nazwa konta użytkownika 3: użytkownik3 @![Linii.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - Nazwa konta użytkownika 4: użytkownik4 @![Linii.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - Nazwa konta użytkownika 5: użytkownik5 @![Linii.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     Zarejestruj również typowe hasło dla tych kont w bezpiecznej lokalizacji.
-   
+
 ### <a name="using-an-office-365-test-environment"></a>Korzystanie ze środowiska testowego Office 365
 
 Jeśli potrzebujesz tylko środowiska testowego Office 365, nie musisz czytać pozostałej części tego artykułu.
 
-Aby uzyskać dodatkowe przewodniki laboratorium testowego, które dotyczą zarówno Office 365, jak i Microsoft 365, zobacz [Microsoft 365 dla przewodników laboratorium testowego dla przedsiębiorstw](m365-enterprise-test-lab-guides.md).
+Aby zapoznać się z innymi przewodnikami laboratorium testowego, które dotyczą zarówno Office 365, jak i Microsoft 365, zobacz [Microsoft 365 dla przewodników laboratorium testowego dla przedsiębiorstw](m365-enterprise-test-lab-guides.md).
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>Faza 3. Dodawanie subskrypcji wersji próbnej Microsoft 365 E5
 
@@ -198,12 +199,18 @@ W tej fazie utworzysz autonomiczny komputer z systemem Windows 10 Enterprise jak
   
 ### <a name="physical-computer"></a>Komputer fizyczny
 
-Na komputerze osobistym zainstaluj Windows 10 Enterprise. Wersję próbną Windows 10 Enterprise można pobrać [tutaj](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-  
+Na komputerze osobistym zainstaluj Windows 10 Enterprise. Możesz pobrać wersję ewaluacyjną Windows 10 Enterprise.
+
+> [!NOTE]
+> Centrum oceny firmy Microsoft jest tymczasowo niedostępne. Aby uzyskać dostęp do tego pobierania, zobacz [Uzyskiwanie dostępu do wersji próbnych i zestawów dla Windows (obejście centrum Eval)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+
 ### <a name="virtual-machine"></a>Maszyna wirtualna
 
-Użyj wybranej funkcji hypervisor, aby utworzyć maszynę wirtualną, a następnie zainstaluj na niej Windows 10 Enterprise. Wersję próbną Windows 10 Enterprise można pobrać [tutaj](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-  
+Użyj wybranej funkcji hypervisor, aby utworzyć maszynę wirtualną, a następnie zainstaluj na niej Windows 10 Enterprise. Możesz pobrać wersję ewaluacyjną Windows 10 Enterprise.
+
+> [!NOTE]
+> Centrum oceny firmy Microsoft jest tymczasowo niedostępne. Aby uzyskać dostęp do tego pobierania, zobacz [Uzyskiwanie dostępu do wersji próbnych i zestawów dla Windows (obejście centrum Eval)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+
 ### <a name="virtual-machine-in-azure"></a>Maszyna wirtualna na platformie Azure
 
 Aby utworzyć maszynę wirtualną Windows 10 w Microsoft Azure, ***musisz mieć subskrypcję opartą na Visual Studio***, która ma dostęp do obrazu dla Windows 10 Enterprise. Inne typy subskrypcji platformy Azure, takie jak subskrypcje próbne i płatne, nie mają dostępu do tego obrazu. Aby uzyskać najnowsze informacje, zobacz [Korzystanie z klienta Windows na platformie Azure w scenariuszach tworzenia i testowania](/azure/virtual-machines/windows/client-images).
@@ -246,7 +253,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-Następnie utwórz nową sieć wirtualną i maszynę wirtualną WIN10 za pomocą tych poleceń. Po wyświetleniu monitu podaj nazwę i hasło konta administratora lokalnego win10 i zapisz je w bezpiecznej lokalizacji.
+Następnie utwórz nową sieć wirtualną i maszynę wirtualną WIN10 za pomocą tych poleceń. Po wyświetleniu monitu podaj nazwę i hasło konta administratora lokalnego win10 i zapisz te informacje w bezpiecznej lokalizacji.
   
 ```powershell
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -268,57 +275,56 @@ $vm=Set-AzVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateO
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-## <a name="phase-5-join-your-windows-10-computer-to-azure-ad"></a>Faza 5. Dołączanie komputera Windows 10 do usługi Azure AD
+## <a name="phase-5-join-your-windows-10-computer-to-azure-ad"></a>Faza 5. Dołączanie komputera Windows 10 do Azure AD
 
 Po utworzeniu maszyny fizycznej lub wirtualnej z Windows 10 Enterprise zaloguj się przy użyciu konta administratora lokalnego.
   
 > [!NOTE]
 > W przypadku maszyny wirtualnej na platformie Azure użyj  [tych instrukcji](/azure/virtual-machines/windows/connect-logon) , aby nawiązać z nią połączenie.
   
-Następnie dołącz komputer WIN10 do dzierżawy usługi Azure AD subskrypcji Microsoft 365 E5.
+Następnie dołącz komputer WIN10 do dzierżawy Azure AD subskrypcji Microsoft 365 E5.
   
 1. Na pulpicie komputera WIN10 wybierz pozycję **Uruchom konta > Ustawienia > > Dostęp do > Połączenie służbowej**.
-    
+
 2. W oknie **dialogowym Konfigurowanie konta służbowego** wybierz pozycję **Dołącz do tego urządzenia, aby Azure Active Directory**.
-    
+
 3. Na **koncie służbowym** wprowadź nazwę konta administratora globalnego subskrypcji Microsoft 365 E5, a następnie wybierz pozycję **Dalej**.
-    
+
 4. W **obszarze Wprowadź hasło** wprowadź hasło konta administratora globalnego, a następnie wybierz pozycję **Zaloguj** się.
-    
-5. Po wyświetleniu monitu o upewnienie się, że jest to Twoja organizacja, wybierz pozycję **Dołącz**, a następnie wybierz pozycję **Gotowe**.
-    
+
+5. Po wyświetleniu monitu o upewnienie się, że ta organizacja należy **do** Twojej organizacji, wybierz pozycję Dołącz, a następnie wybierz pozycję **Gotowe**.
+
 6. Zamknij okno ustawień.
-    
+
 Następnie zainstaluj Aplikacje Microsoft 365 dla przedsiębiorstw na komputerze WIN10:
   
 1. Otwórz przeglądarkę Microsoft Edge i zaloguj się do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) przy użyciu poświadczeń konta administratora globalnego.
-    
+
 2. Na karcie **Narzędzia główne Microsoft Office** wybierz pozycję **Zainstaluj Office**.
-    
+
 3. Po wyświetleniu monitu o czynności do wykonania wybierz pozycję **Uruchom**, a następnie wybierz pozycję **Tak** w obszarze **Kontrola konta użytkownika**.
-    
+
 4. Poczekaj, aż Office zakończy instalację. Gdy zobaczysz **, że wszystko jest ustawione!**, wybierz pozycję **Zamknij** dwa razy.
-    
+
 Wynikowe środowisko wygląda następująco:
 
 ![Faza 5 środowiska testowego platformy Microsoft 3656 Enterprise.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-Obejmuje to komputer WIN10 z następującymi elementami:
+To środowisko obejmuje komputer WIN10 z następującymi elementami:
 
-- Dołączono do dzierżawy usługi Azure AD subskrypcji Microsoft 365 E5.
-- Zarejestrowane jako urządzenie usługi Azure AD w Microsoft Intune (EMS).
+- Dołączono do dzierżawy Azure AD subskrypcji Microsoft 365 E5.
+- Zarejestrowane jako urządzenie Azure AD w Microsoft Intune (EMS).
 - Aplikacje Microsoft 365 dla przedsiębiorstw zainstalowana.
   
-Teraz możesz eksperymentować z dodatkowymi funkcjami [Microsoft 365 dla przedsiębiorstw](https://www.microsoft.com/microsoft-365/enterprise).
+Teraz możesz eksperymentować z większą ilością funkcji [Microsoft 365 dla przedsiębiorstw](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="next-steps"></a>Następne kroki
 
-Zapoznaj się z tymi dodatkowymi zestawami przewodników laboratorium testowego:
+Zapoznaj się z innymi zestawami przewodników laboratorium testowego:
   
 - [Tożsamości](m365-enterprise-test-lab-guides.md#identity)
 - [Zarządzanie urządzeniami przenośnymi](m365-enterprise-test-lab-guides.md#mobile-device-management)
 - [Ochrona informacji](m365-enterprise-test-lab-guides.md#information-protection)
-   
 
 ## <a name="see-also"></a>Zobacz też
 

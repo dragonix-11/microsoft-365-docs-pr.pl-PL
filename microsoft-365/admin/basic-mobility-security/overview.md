@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Użyj usługi Basic Mobility and Security, aby ustawić zasady zabezpieczeń urządzeń i reguły dostępu.
-ms.openlocfilehash: b4752a6f1b71c453b3d1b89adeb25f337a65c255
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Zarządzaj urządzeniami przenośnymi połączonymi z organizacją Microsoft 365 i zabezpieczaj je, konfigurując i korzystając z pakietu Basic Mobility and Security.
+ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780858"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435706"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Omówienie pakietu Basic Mobility and Security dla Microsoft 365
 
@@ -46,7 +46,7 @@ Oto podsumowanie kroków:
 
 **Krok 1:** Aktywuj pakiet Basic Mobility and Security, wykonując kroki opisane w [temacie Konfigurowanie pakietu Basic Mobility and Security](set-up.md).
 
-**Krok 2:** Skonfiguruj usługę Basic Mobility and Security, na przykład tworząc certyfikat usługi APNs do zarządzania urządzeniami z systemem iOS i dodając rekord DNS (Domain Name System) dla domeny w celu obsługi Windows telefonów.
+**Krok 2:** Skonfiguruj usługę Basic Mobility and Security, na przykład tworząc certyfikat usługi APNs do zarządzania urządzeniami iOS i dodając rekord DNS (Domain Name System) dla domeny w celu obsługi Windows telefonów.
 
 **Krok 3.** Utwórz zasady urządzeń i zastosuj je do grup użytkowników. Gdy to zrobisz, użytkownicy otrzymają komunikat o rejestracji na swoim urządzeniu, a po zakończeniu rejestracji ich urządzenia będą ograniczone przez skonfigurowane dla nich zasady. Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security](enroll-your-mobile-device.md). 
 

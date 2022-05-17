@@ -24,14 +24,14 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Dowiedz się, jak możesz mieć więcej niż jeden adres e-mail, nazywany aliasem wiadomości e-mail, skojarzony z kontem Microsoft 365 dla firm. '
-ms.openlocfilehash: 19303cb2c60455713595dbe23a23bae7e57efb71
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 2951b5eef21748ace22bee50afb24f86123fa46a
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780220"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437464"
 ---
-# <a name="add-another-email-alias-for-a-user"></a>Dodawanie kolejnego aliasu e-mail użytkownika
+# <a name="add-another-email-alias-for-a-microsoft-365-business-subscription-user"></a>Dodawanie kolejnego aliasu wiadomości e-mail dla Microsoft 365 użytkownika subskrypcji biznesowej
   
 Ten artykuł dotyczy administratorów Microsoft 365, którzy mają subskrypcje biznesowe. Nie dotyczy on użytkowników domowych.
   
@@ -45,7 +45,7 @@ Można utworzyć do 400 aliasów dla jednego użytkownika. Nie są przy tym wyma
 > Jeśli chcesz, aby wiele osób zarządzało wiadomościami e-mail wysyłanych na jeden adres e-mail, taki jak info@NodPublishers.com lub sales@NodPublishers.com, utwórz udostępnioną skrzynkę pocztową. Aby dowiedzieć się więcej, zobacz [Tworzenie udostępnionej skrzynki pocztowej](create-a-shared-mailbox.md).
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczących kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małej firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy możecie uzyskać całodobowy dostęp do specjalistów ds. małej firmy, gdy rozwijasz swoją firmę, od momentu dołączenia po codzienne użytkowanie.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
   
 ## <a name="add-email-aliases-to-a-user"></a>Dodawanie aliasów e-mail użytkownika
 

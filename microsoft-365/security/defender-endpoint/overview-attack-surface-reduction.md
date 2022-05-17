@@ -18,13 +18,13 @@ ms.technology: mde
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.date: 05/16/2022
+ms.openlocfilehash: ec39e02b48471857932a63ba19547ff2ad1b3390
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787715"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438104"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Omówienie możliwości zmniejszania obszaru ataków i korzystanie z nich
 
@@ -32,9 +32,9 @@ ms.locfileid: "64787715"
 
 **Dotyczy:**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Program antywirusowy Microsoft Defender
 
 **Platformy**
@@ -69,9 +69,9 @@ Aby skonfigurować redukcję obszaru ataków w środowisku, wykonaj następując
 
 7. Skonfiguruj zaporę sieciową.
 
-   1. Zapoznaj się z omówieniem [zapory Windows Defender z zaawansowanymi zabezpieczeniami](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
-   2. Skorzystaj z [przewodnika projektowania zapory Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide), aby zdecydować, jak chcesz zaprojektować zasady zapory.
-   3. Użyj [przewodnika wdrażania zapory Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide), aby skonfigurować zaporę organizacji z zaawansowanymi zabezpieczeniami.
+   1. Zapoznaj się z omówieniem [Zapora Windows Defender z zabezpieczeniami zaawansowanymi](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Skorzystaj z [przewodnika projektowania Zapora Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide), aby zdecydować, jak chcesz zaprojektować zasady zapory.
+   3. Skorzystaj z [przewodnika wdrażania Zapora Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide), aby skonfigurować zaporę organizacji z zaawansowanymi zabezpieczeniami.
 
 > [!TIP]
 > W większości przypadków podczas konfigurowania możliwości zmniejszania obszaru podatnego na ataki można wybrać jedną z kilku metod:

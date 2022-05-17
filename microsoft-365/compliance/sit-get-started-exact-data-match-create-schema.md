@@ -1,5 +1,5 @@
 ---
-title: Tworzenie schematu w celu dokładnego dopasowania danych do typów informacji poufnych
+title: Twórz schemat dla dokładnych typów informacji poufnych opartych na dopasowaniu danych
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,107 +15,72 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Tworzenie schematu w celu dokładnego dopasowania danych do typów informacji poufnych
+description: Twórz schemat dla dokładnych typów informacji poufnych opartych na dopasowaniu danych
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6bd411411c3075259bd3b9fc74ec3f558171fce7
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 9eb4e69aa833e8a355115115e1c965e57d65716c
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526294"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435286"
 ---
-# <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Tworzenie schematu w celu dokładnego dopasowania danych do typów informacji poufnych
+# <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Twórz schemat dla dokładnych typów informacji poufnych opartych na dopasowaniu danych
 
-Schemat i usługę EDM SIT można utworzyć za pomocą kreatora wzorca dokładnego dopasowania danych i typu informacji poufnych [lub](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) [ręcznie](#create-exact-data-match-schema-manually-and-upload). Schemat można też połączyć przy użyciu jednej z metod, a potem edytować go inną metodą.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Jeśli nie znasz programu SITS opartego na programie EDM ani jego implementacji, zapoznaj się z:
+Schemat i interfejs EDM SIT można utworzyć, korzystając z kreatora [ręcznego](#create-exact-data-match-schema-manually-and-upload) używania [schematu dokładnego dopasowania danych i wzorca typów informacji poufnych](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard). Można również połączyć oba przy użyciu jednej metody, aby utworzyć schemat, a następnie edytować go przy użyciu drugiej metody.
 
-- [Informacje o typach informacji poufnych](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
-- [Informacje o dokładnie tych typach informacji poufnych na podstawie danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
-- [Wprowadzenie do dokładnych typów informacji poufnych opartych na danych](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
+Jeśli nie znasz rozwiązania SITS opartego na protokole EDM lub ich implementacji, zapoznaj się z:
 
-Jednego schematu EDM można użyć w wielu typach informacji poufnych, w których jest używana ta sama tabela danych poufnych. W dzierżawie można utworzyć maksymalnie 10 różnych schematów usługi EDM Microsoft 365 dzierżawie.
+- [Dowiedz się więcej o typach informacji poufnych](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
+- [Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Wprowadzenie do dokładnych typów informacji poufnych opartych na dopasowaniu danych](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
-## <a name="working-with-specific-types-of-data"></a>Praca z określonymi typami danych
+Pojedynczy schemat EDM może być używany w wielu typach informacji poufnych, które używają tej samej poufnej tabeli danych. W dzierżawie Microsoft 365 można utworzyć maksymalnie 10 różnych schematów EDM.
 
-Ze względu na wydajność bardzo ważne jest stosowanie wzorców, które zminimalizują liczbę niepotrzebnych dopasowania. Na przykład możesz użyć typu informacji poufnych opartego na wyrażeniu regularnym.
 
-`\b\w*\b`
 
-Będzie to zgodne z każdym indywidualnym wyrazem lub numerem w dowolnym dokumencie lub wiadomości e-mail. Spowoduje to przeciążenie usługi dopasowaniami i nieodebrane wykrywanie prawdziwych trafień. Stosowanie bardziej precyzyjnych wzorców pozwala uniknąć takich sytuacji. Oto kilka zaleceń dotyczących identyfikowania odpowiedniej konfiguracji dla niektórych typowych typów danych.
-
-**Adresy e-mail**: Adresy e-mail mogą być łatwe do zidentyfikowania, ale ponieważ są tak częste w zawartości, mogą powodować istotne obciążenie w systemie, jeśli są używane jako pole podstawowe. Należy ich używać tylko jako dodatkowych dowodów. Jeśli te informacje muszą zostać użyte jako podstawowe informacje, `From` `To` spróbuj zdefiniować niestandardowy typ informacji poufnych, który używa logiki, aby wykluczyć ich użycie jako lub pola w wiadomościach e-mail oraz wykluczyć te, które zawierają firmowy adres e-mail, w celu zmniejszenia liczby niepotrzebnych ciągów, które muszą zostać dopasowane.
-
-**Telefon numery:** Telefon mogą być dostępne w wielu różnych formatach, łącznie z prefiksami krajów, numerami kierunkowym i separatorami (z wyjątkiem). Aby zmniejszyć wartości fałszywie ujemne przy jednoczesnym zachowaniu minimalnego obciążenia, używaj ich tylko jako elementów pomocniczych, wyklucz wszystkie możliwe separatory, takie jak nawiasy i kreski, i uwzględnij w tabeli poufnej tylko część, która będzie zawsze obecna w numerze telefonu.
-
-**Imiona** i nazwiska osób. Nie należy używać imion i nazwisk osób jako elementów podstawowych, jeśli jako element klasyfikacji tego typu EDM używasz typu informacji poufnego opartego na wyrażeniu regularnym, ponieważ są one trudne do odróżnienia od popularnych wyrazów.
-
-Jeśli musisz użyć elementu podstawowego, który jest trudno zidentyfikować z określoną wzorcem, na przykład nazwą kodu projektu, która może wygenerować wiele dopasowania do przetworzenia, pamiętaj, aby uwzględnić słowa kluczowe w poufnym typie informacji, który jest elementem klasyfikacji dla twojego typu EDM. Na przykład w przypadku używania nazw kodów projektu, które mogą być zwykłymi wyrazami, `project` możesz użyć tego wyrazu jako wymaganego dodatkowego dowodu w pobliżu nazwy projektu ze wzorcem regularnym opartym na wyrażeniu w typie poufnym używanym jako element klasyfikacji dla twojego typu usługi EDM. Możesz również rozważyć użycie typu poufnego opartego na zwykłym słowniku jako elementu klasyfikacji dla funkcji EDM SIT.
-
-Podczas próby dopasowania ciągów liczbowych określ dozwolone zakresy liczb, takie jak liczba cyfr lub cyfr początkowych, jeśli są znane. Jeśli musisz dopasować do stosunkowo elastycznego zakresu liczb, możesz użyć słów kluczowych w podstawowej funkcji SIT, aby zmniejszyć liczbę dopasowań. Jeśli na przykład próbujesz dopasować numery kont składające się z 7–11 cyfr, `account`dodaj wyrazy , `customer`do `acct.` numeru SIT jako wymagane dodatkowe dowód. Zmniejsza to prawdopodobieństwo, że niepotrzebne dopasowania mogą spowodować przekroczenie limitu dopasowania przetwarzanego przez EDM.
-
-Jeśli pole, które ma zostać użycia jako element podstawowy, jest zgodny z prostym wzorcem, który może powodować wiele dopasowania i nie można dodać informacji o obecności słów kluczowych jako dodatkowych dowodów w przypadku poufnego typu informacji, można także zażądać minimalnej liczby wystąpień tego wzorca. Można na przykład użyć niestandardowego typu informacji poufnych zdefiniowanego w następujący sposób w celu wykrycia co najmniej 29 innych pięciocyfrowych liczb otaczających potencjalną pięciocyfrową liczbę dopasowaną do funkcji EDM:
-
-```xml
- <Entity id="98703510-18b3-43d4-961f-15317594beb7"
-                  patternsProximity="300"
-                  recommendedConfidence="85"
-                  relaxProximity="false">
-                  <Pattern confidenceLevel="85"
-                              proximity="300">
-                              <IdMatch idRef="MRN"/>
-                              <Match idRef="30 AccountNrs"
-                                    minCount="30"
-                                    proximity="3000"
-                                    uniqueResults="true"/>
-                  </Pattern>
-      </Entity>
-      <Regex id="30 AccountNrs">\d{5}</Regex>
-```
-
-W niektórych przypadkach może być konieczne zidentyfikowanie konta lub numeru identyfikacyjnego rekordu, które ze względów historycznych nie są zgodne ze standardowym wzorcem. Może na przykład `Medical Record Numbers` składać się z wielu różnych permutacji liter i liczb w tej samej organizacji. Mimo że zidentyfikowanie wzorca może być trudne, ściślejsza inspekcja często pozwala zawęzić wzorzec opisujący wszystkie prawidłowe wartości bez powodowania nadmiarowej liczby nieprawidłowych dopasowania. Na przykład może zostać wykryty, że "wszystkie sieci MRN mają długość co najmniej siedmiu znaków, mają co najmniej dwie cyfry liczbowe i jeśli znajdują się w nich jakiekolwiek litery, zaczynają się od jednej". Utworzenie wyrażenia regularnego na podstawie takich kryteriów powinno pozwolić na zminimalizowanie niepotrzebnych dopasowania podczas przechwytywania wszystkich żądanych wartości, a dalsza analiza może umożliwić większą precyzję, definiując oddzielne wzorce opisujące różne formaty.
-
-## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Korzystanie z Kreatora dokładnego dopasowania danych do schematu i kreatora typów informacji poufnych
+## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Korzystanie z kreatora dokładnego schematu dopasowania danych i typu informacji poufnych
 
 Za pomocą tego kreatora można uprościć proces tworzenia pliku schematu.
 
 ## <a name="pre-requisites"></a>Wymagania wstępne
 
-- Wykonaj czynności opisane w [eksportowaniu danych źródłowych, aby uzyskać dokładne dopasowanie danych na podstawie typu informacji poufnych](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type).
+- Wykonaj kroki opisane w [temacie Eksportowanie danych źródłowych, aby uzyskać dokładny typ informacji poufnych zgodny z danymi](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type).
 
-## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Używanie dokładnego schematu dopasowania danych i kreatora wzorca typów informacji poufnych
+## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Użyj kreatora dokładnego schematu dopasowania danych i wzorca typów informacji poufnych
 
-1. W centrum Microsoft 365 zgodności dla dzierżawy przejdź do **Klasyfikacja danychExact** **data matchesEDM** >  >  **schemas**.
+1. W portal zgodności Microsoft Purview dzierżawy przejdź do pozycji **Klasyfikacja** >  **danychAktuacje zgodne ze** >  **schematamiEDM**.
 
-2. Wybierz **pozycję Utwórz schemat EDM** , aby otworzyć okno wysuwu konfiguracji kreatora schematu.
+2. Wybierz **pozycję Utwórz schemat EDM,** aby otworzyć wysuwaną konfigurację kreatora schematu.
 
-   ![Wysuuwane informacje o konfiguracji kreatora tworzenia schematu EDM.](../media/edm-schema-wizard-1.png)
+   ![Wysuwany kreator tworzenia schematu EDM.](../media/edm-schema-wizard-1.png)
 
-3. Wypełnij odpowiednie pola **Nazwa i** **Opis**.
+3. Podaj odpowiednią **nazwę** i **opis**.
 
-4. Wybierz **pozycję Ignoruj ograniczniki i znaki interpunktowe** dla wszystkich pól schematu, jeśli chcesz, aby takie zachowanie było dla całego schematu. Aby dowiedzieć się więcej na temat konfigurowania narzędzia EDM w celu ignorowania ograniczników lub liter, zobacz Używanie pól [inensywnych i ignorowanychDelimiters](#using-the-caseinsensitive-and-ignoreddelimiters-fields) , aby uzyskać więcej informacji na temat tej funkcji.
+4. Wybierz **pozycję Ignoruj ograniczniki i interpunkcję dla wszystkich pól schematu** , jeśli chcesz, aby to zachowanie było przeznaczone dla całego schematu. Aby dowiedzieć się więcej na temat konfigurowania EDM do ignorowania wielkości liter lub ograniczników, zobacz [Using the caseInsensitive and ignoredDelimiters fields (Używanie pól caseInsensitive i IgnoredDelimiters](#using-the-caseinsensitive-and-ignoreddelimiters-fields) ), aby uzyskać więcej informacji na temat tej funkcji.
 
-5. Wypełnij żądane wartości dla pola **schematu nr 1** i dodaj więcej pól zgodnie z potrzebami. Każde pole schematu musi być identyczne z nagłówkami kolumn w pliku źródłowym poufnych informacji.
+5. Wypełnij żądane wartości **pola Schemat nr 1** i dodaj więcej pól zgodnie z potrzebami. Każde pole schematu musi być identyczne z nagłówkami kolumn w pliku źródła informacji poufnych.
 
-6. Jeśli chcesz, ustaw dla każdego pola wartości:
-    1. **Pole można wyszukiwać**
-    1. **W polu nie jest uwzględniania liter**
-    1. **Wybierz ograniczniki i znaki interpunktowe do zignorowania dla tego pola**
-    1. **W tym polu wprowadź ograniczniki niestandardowe i znaki interpunktowe**
-
-   > [!IMPORTANT]
-   > Co najmniej jedno, ale nie więcej niż pięć pól schematu musi zostać wskazanych jako można wyszukiwać.
-
-7. Wybierz pozycję **Zapisz**. Schemat zostanie wymieniony na liście i będzie dostępny do użycia.
+6. Jeśli chcesz, ustaw wartości dla każdego pola dla:
+    1. **Pole można przeszukiwać**
+    1. **Pole nie uwzględnia wielkości liter**
+    1. **Wybierz ograniczniki i znaki interpunkcyjne do zignorowania dla tego pola**
+    1. **Wprowadź niestandardowe ograniczniki i znaki interpunkcyjne dla tego pola**
 
    > [!IMPORTANT]
-   > Jeśli chcesz usunąć schemat, który jest już skojarzony z typem informacji poufnych usługi EDM, musisz najpierw usunąć typ informacji poufnych EDM, a następnie usunąć schemat. Usunięcie schematu, z który jest skojarzony magazyn danych, powoduje również usunięcie magazynu danych w ciągu 24 godzin.
+   > Co najmniej jedno, ale nie więcej niż pięć pól schematu musi być wyznaczonych jako możliwe do przeszukiwania.
+
+7. Wybierz pozycję **Zapisz**. Schemat zostanie teraz wyświetlony i będzie dostępny do użycia.
+
+   > [!IMPORTANT]
+   > Jeśli chcesz usunąć schemat i jest on już skojarzony z typem informacji poufnych EDM, musisz najpierw usunąć typ informacji poufnych EDM, a następnie usunąć schemat. Usunięcie schematu z skojarzonym z nim magazynem danych powoduje również usunięcie magazynu danych w ciągu 24 godzin.
 
 ## <a name="export-of-the-edm-schema-file-in-xml-format"></a>Eksportowanie pliku schematu EDM w formacie XML
 
-Jeśli schemat EDM został utworzony w kreatorze schematu EDM, musisz wyeksportować plik schematu EDM w formacie XML. Będzie potrzebna w tabeli Skrót, a następnie przekaż tabelę źródła informacji poufnych, aby dokładnie dopasować dane do fazy [typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) .
+Jeśli schemat EDM został utworzony w kreatorze schematu EDM, musisz wyeksportować plik schematu EDM w formacie XML. Będzie ona potrzebna w [tabeli skrótów i przekażesz tabelę źródła informacji poufnych, aby dokładnie dopasować dane do fazy typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) .
 
-1. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Aby wyeksportować plik schematu EDM, użyj tej składni:
 
@@ -126,30 +91,30 @@ Jeśli schemat EDM został utworzony w kreatorze schematu EDM, musisz wyeksporto
 
 3. Zapisz ten plik do późniejszego użycia.
 
-## <a name="create-exact-data-match-schema-manually-and-upload"></a>Ręczne tworzenie dokładnego schematu zgodnego z danymi i przekazywanie
+## <a name="create-exact-data-match-schema-manually-and-upload"></a>Ręczne tworzenie schematu dokładnego dopasowania danych i przekazywanie
 
-W pliku schematu skonfiguruj wpis dla każdej kolumny w tabeli źródłowej informacji poufnych, stosując składnię:
+W pliku schematu skonfiguruj wpis dla każdej kolumny w tabeli źródła informacji poufnych przy użyciu składni:
 
 ```xml
 <Field name="FieldName" searchable="true/false" caseInsensitive="true/false" ignoredDelimiters="delimiter characters" />
 ```
 
-### <a name="using-the-caseinsensitive-and-ignoreddelimiters-fields"></a>Korzystanie z pól caseInsensitive i ignorowaneDelimiters
+### <a name="using-the-caseinsensitive-and-ignoreddelimiters-fields"></a>Używanie pól caseInsensitive i IgnoredDelimiters
 
-W poniższym przykładzie schematu XML są wykorzystania pól *caseInsensitive* i *ignorowanychdelimiters* .
+Poniższy przykład XML schematu korzysta z pól *caseInsensitive* i *ignoredDelimiters* .
 
-Gdy uwzględnisz *sprawęZamówienie* pola ustawionego `true` na wartość w definicji schematu, program EDM nie będzie wykluczać elementu z względu na różnice dotyczące przypadków. Na przykład EDM będzie widzieć wartości **FOO-1234** i **fOo-1234** jako identyczne dla pola `PatientID` .
+Po dodaniu pola *caseInsensitive* ustawionego `true` na wartość w definicji schematu program EDM nie wyklucza elementu na podstawie różnic wielkości liter. Na przykład EDM zobaczy wartości **FOO-1234** i **fOo-1234** jako identyczne dla `PatientID` pola.
 
-Jeśli uwzględnisz *zignorowane poleDelimiters* z obsługiwanymi znakami, program EDM zignoruje te znaki. W ten sposób funkcja NR.E.WEW będzie widzieć wartości **FOO-1234** i **FOO#1234** jako identyczne dla pola `PatienID` .
+Po dodaniu *ignorowanego polaDelimiters z obsługiwanymi znakami* program EDM zignoruje te znaki. Dlatego EDM zobaczy wartości **FOO-1234** i **FOO#1234** jako identyczne dla `PatienID` pola.
 
-W tym przykładzie, `caseInsensitive` `ignoredDelimiters` gdy zarówno są używane, jak i są używane, funkcja NR.UM będzie widzieć dane **FOO-1234** i **fOo#1234** jako identyczne i sklasyfikować produkt jako dane wrażliwych pacjentów.
+W tym przykładzie, gdy są używane zarówno `caseInsensitive` `ignoredDelimiters` i, EDM będzie zobaczyć **FOO-1234** i **fOo #1234** jako identyczne i sklasyfikować element jako typ informacji poufnych rekord pacjenta.
 
-Oba te parametry są używane na podstawie  per pola.
+Oba te parametry są używane dla każdego pola.
 
 > [!IMPORTANT]
-> Jeśli *skonfigurujesz* ignorowane spacje, będzie to obowiązuje tylko w przypadku kolumn pól podstawowych i dla których zdefiniowano typ informacji poufnych, który może wykrywać ciągi wielosłowne. W przeciwnym razie porównanie zostanie porównane z poszczególnymi wyrazami w analizowanej zawartości.
+> Jeśli skonfigurujesz *spacje* do zignorowania, będzie to skuteczne tylko w przypadku podstawowych kolumn pól, dla których zdefiniowano typ informacji poufnych, który może wykrywać ciągi wielosłowne. W przeciwnym razie porównanie zostanie wykonane względem każdego pojedynczego słowa w analizowanej zawartości.
 
-*Ignorowana flagaDelimiters* obsługuje dowolny znak niealalnumeryczny. Oto kilka przykładów:
+Flaga *IgnoredDelimiters* obsługuje dowolny znak inny niż alfanumeryczny. Oto kilka przykładów:
 
 - \.
 - \-
@@ -170,27 +135,27 @@ Oba te parametry są używane na podstawie  per pola.
 
 Flaga `ignoredDelimiters` nie obsługuje:
 
-- znaki 0-9
-- A–Z
+- znaki 0–9
+- A-Z
 - a-z
 - \"
 - \,
 
 > [!IMPORTANT]
-> Podczas definiowania typu informacji poufnych EDM *ignorowanieDelimiters* nie ma wpływu na sposób, w jaki typ Informacji poufnych Klasyfikacja skojarzona z elementem podstawowym w wzorcu EDM identyfikuje zawartość w elemencie. Dlatego jeśli skonfigurujesz *ignorujedelimiters* dla pola z polem, które można wyszukiwać, musisz upewnić się, że typ informacji poufnych używany dla elementu podstawowego opartego na tym polu wybierze ciągi zarówno z tymi znakami, jak i bez nich.
+> Podczas definiowania typu informacji poufnych EDM *ignorujDelimiters* nie wpłynie na sposób, w jaki typ informacji poufnych klasyfikacji skojarzony z elementem podstawowym we wzorcu EDM identyfikuje zawartość w elemencie. Dlatego jeśli skonfigurujesz *ignoreDelimiters* dla pola z możliwością wyszukiwania, musisz upewnić się, że typ informacji poufnych używany dla elementu podstawowego na podstawie tego pola będzie wybierał ciągi zarówno z tymi znakami, jak i bez nich.
 >
-> Liczba kolumn w tabeli źródła informacji poufnych i liczba pól w schemacie muszą być zgodne, kolejność nie ma znaczenia.
+> Liczba kolumn w tabeli źródła informacji poufnych i liczba pól w schemacie muszą być zgodne. Kolejność nie ma znaczenia.
 
-1. Zdefiniuj schemat w formacie XML (podobnie jak w poniższym przykładzie). Nadaj plikowi **schematu nazwęedm.xml** i skonfiguruj go tak, aby dla każdej kolumny w tabeli źródłowej informacji poufnych był wiersz o takiej składni:
+1. Zdefiniuj schemat w formacie XML (podobnie jak w poniższym przykładzie). Nadaj temu plikowi schematu **nazwęedm.xml** i skonfiguruj go w taki sposób, aby dla każdej kolumny w tabeli źródła informacji poufnych istniał wiersz używający składni:
 
       `\<Field name="" searchable=""/\>`.
 
-      - Użyj nazw kolumn dla *wartości Nazwa* pola.
-      - Dla *pól,* które mają być przeszukiwane, oraz pól podstawowych (maksymalnie 5) użyj wartości "prawda". Można wyszukiwać co najmniej jedno pole.
+      - Użyj nazw kolumn dla wartości *nazw pól* .
+      - Użyj *wartości searchable="true"* dla pól, które mają być przeszukiwalne, i pól podstawowych do maksymalnie 5 pól. Co najmniej jedno pole musi być możliwe do przeszukiwania.
 
-      Poniższy plik XML definiuje na przykład schemat bazy danych dokumentacji pacjentów z pięcioma polami określonymi jako można wyszukiwać: *PatientID*, *MRN*, *SSN*, *Telefon* i *DOB*.
+      Na przykład następujący plik XML definiuje schemat bazy danych rekordów pacjentów z pięcioma polami określonymi jako możliwe do wyszukiwania: *PatientID*, *MRN*, *SSN*, *Telefon* i *DOB*.
 
-      (Możesz kopiować, modyfikować i używać naszego przykładu).
+      (Możesz skopiować, zmodyfikować i użyć naszego przykładu).
 
       ```xml
       <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -208,9 +173,9 @@ Flaga `ignoredDelimiters` nie obsługuje:
       </EdmSchema>
       ```
 
-   Po utworzeniu pliku schematu EDM w formacie XML należy przekazać go do usługi w chmurze.
+   Po utworzeniu pliku schematu EDM w formacie XML musisz przekazać go do usługi w chmurze.
 
-2. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+2. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 3. Aby przekazać schemat bazy danych, uruchom następujące polecenie:
 
@@ -220,20 +185,20 @@ Flaga `ignoredDelimiters` nie obsługuje:
 
       Zostanie wyświetlony monit o potwierdzenie w następujący sposób:
 
-      > Potwierdź
+      > Potwierdzić
       >
       > Czy na pewno chcesz wykonać tę akcję?
       >
-      > Zostanie zaimportowany nowy schemat usługi EDM dla magazynu danych "patientrecords".
+      > Zostanie zaimportowany nowy schemat EDM dla magazynu danych "patientrecords".
       >
-      > \[Y Yes A Yes to All \[N\] No \[L\] No to All \[?\]\] \[\] Pomoc (domyślna wartość to "Y"):
+      > \[Y\] Tak tak \[\] do wszystkich \[N\] Nie \[L\] Nie dla wszystkich\[?\] Pomoc (wartość domyślna to "Y"):
 
    > [!TIP]
-   > Jeśli chcesz, aby zmiany wprowadzały się bez potwierdzenia, nie używaj ich w kroku `-Confirm:$true` 3.
+   > Jeśli chcesz, aby zmiany wystąpiły bez potwierdzenia, nie używaj ich `-Confirm:$true` w kroku 3.
 
 > [!NOTE]
-> Zaktualizowanie programu EDMSmSema przy użyciu dodatków może potrwać od 10 do 60 minut. Aktualizacja musi zostać ukończona przed wykonaniem kroków z zastosowaniem dodatków.
+> Aktualizacja pakietu EDMSchema z dodatkami może potrwać od 10 do 60 minut. Aktualizacja musi zostać ukończona przed wykonaniem kroków korzystających z dodatków.
 
 ## <a name="next-step"></a>Następny krok
 
-- [Skróty i przekazywanie tabeli źródła informacji poufnych w celu dokładnego dopasowania danych do typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)
+- [Utwórz skrót i przekaż tabelę źródła informacji poufnych dla dokładnych typów informacji poufnych opartych na dopasowaniu danych ](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)

@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: W ciągu 30 dni od usunięcia konta użytkownika możesz przywrócić konto i wszystkie dane, a użytkownik może zalogować się przy użyciu tego samego konta.
-ms.openlocfilehash: fc011f9589d789a7eb2faa332a104ef670cf6590
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: W ciągu 30 dni od usunięcia konta użytkownika można przywrócić konto i wszystkie dane, a użytkownik może zalogować się przy użyciu tego samego konta.
+ms.openlocfilehash: 2f9a28e5000c1ba826b5458916f30c3e8a438253
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013275"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436212"
 ---
-# <a name="restore-a-user"></a>Przywracanie użytkownika
+# <a name="restore-a-user-in-the-microsoft-365-admin-center"></a>Przywracanie użytkownika w Centrum administracyjne platformy Microsoft 365
    
 Jeśli konto użytkownika zostanie przywrócone w ciągu 30 dni od jego usunięcia, konto i wszystkie skojarzone z nim dane zostaną przywrócone. Użytkownik może zalogować się, wykorzystując to samo konto służbowe. Skrzynka pocztowa zostanie w pełni przywrócona. Aby dowiedzieć się, ile czasu pozostało do momentu, w którym przywrócenie określonego konta użytkownika nie będzie już możliwe, [skontaktuj się z nami](../../business-video/get-help-support.md).
   
@@ -39,21 +39,21 @@ Oto kilka porad:
   
 - Upewnij się, że licencje są dostępne do przypisania do konta.
     
-- Jeśli Twoja firma korzysta z usługi Active Directory, aby uzyskać instrukcje dotyczące przywracania konta użytkownika, zobacz Jak rozwiązywać problemy z usuniętymi kontami [użytkowników w usłudze Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
+- Jeśli Twoja firma korzysta z usługi Active Directory, aby uzyskać instrukcje dotyczące przywracania konta użytkownika, zobacz [Jak rozwiązywać problemy z usuniętymi kontami użytkowników w Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Przywracanie jednego lub kilku kont użytkowników
 
-Aby wykonać te czynności, Microsoft 365 administratorem globalnym lub administratorem zarządzającym użytkownikami. 
+Aby wykonać te kroki, musisz być administratorem globalnym Microsoft 365 lub administratorem zarządzania użytkownikami. 
 
-1. W centrum administracyjnym przejdź do strony **Użytkownicy usunięci** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">użytkownicy</a> .
+1. W centrum administracyjnym przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">usunięci użytkownicy</a> .
 
-2. Na stronie **Usunięci użytkownicy** zaznacz nazwy użytkowników, których chcesz przywrócić, a następnie wybierz pozycję **Przywróć**.
+2. Na stronie **Usunięci użytkownicy** wybierz nazwy użytkowników, którzy chcesz przywrócić, a następnie wybierz pozycję **Przywróć**.
     
 3. Postępuj zgodnie z monitami, aby ustawić hasło, a następnie wybierz pozycję **Przywróć**.
     
-4. Jeśli użytkownik został pomyślnie przywrócony, wybierz pozycję **Wyślij wiadomość e-mail i zamknij**. Jeśli wystąpi konflikt nazw lub konflikt adresów serwera proxy, zapoznaj się z poniższymi instrukcjami dotyczącymi sposobu przywracania tych kont.
+4. Jeśli użytkownik zostanie pomyślnie przywrócony, wybierz pozycję **Wyślij wiadomość e-mail i zamknij**. Jeśli wystąpi konflikt nazw lub konflikt adresów serwera proxy, zapoznaj się z poniższymi instrukcjami dotyczącymi sposobu przywracania tych kont.
     
-Po przywróceniu użytkownika upewnij się, że został o nim powiadamiany o zmianie hasła, a ty możesz to zrobić.
+Po przywróceniu użytkownika upewnij się, że powiadom go o zmianie hasła i postępuj zgodnie z jego instrukcjami.
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>Przywracanie użytkownika w przypadku konfliktu nazwy użytkownika
 
@@ -61,14 +61,14 @@ Konflikt nazwy użytkownika występuje, gdy usuniesz konto użytkownika, utworzy
   
 Aby to naprawić, zastąp aktywne konto tym, które chcesz przywrócić, lub przypisz inną nazwę użytkownika do przywracanego konta, tak aby nie było dwóch kont z tą samą nazwą użytkownika. Poniżej przedstawiono odpowiednią procedurę.
 
-1. W centrum administracyjnym przejdź do strony **Użytkownicy usunięci** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">użytkownicy</a> .
+1. W centrum administracyjnym przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">usunięci użytkownicy</a> .
   
 2. Na stronie **Usunięci użytkownicy** wybierz nazwy użytkowników, których chcesz przywrócić, a następnie wybierz pozycję **Przywróć**.
     
     > [!NOTE]
     > Jeśli nie uda się przywrócić dwóch lub większej liczby użytkowników, pojawi się komunikat o błędzie z informacją, że operacja przywracania niektórych użytkowników nie powiodła się. Wyświetl dziennik, aby zobaczyć, których użytkowników nie udało się przywrócić, a następnie przywróć konta pojedynczo. 
   
-3. Postępuj zgodnie z monitami, aby ustawić hasło, a następnie wybierz pozycję **Przywróć**.
+3. Postępuj zgodnie z monitami, aby ustawić hasło i wybierz pozycję **Przywróć**.
     
 4. Zostanie wyświetlony komunikat informujący o wystąpieniu problemu z przywracaniem konta. Wykonaj jedną z następujących czynności:
     
@@ -82,18 +82,18 @@ Aby to naprawić, zastąp aktywne konto tym, które chcesz przywrócić, lub prz
 
 Konflikt adresu serwera proxy występuje, gdy usuniesz konto użytkownika zawierające adres serwera proxy, przypiszesz ten adres do innego konta, a następnie spróbujesz przywrócić usunięte konto. Aby naprawić ten problem, wykonaj poniższe czynności.
   
-W tym celu [musisz](about-admin-roles.md) mieć uprawnienia Microsoft 365 administratora. 
+Aby to zrobić, musisz mieć [uprawnienia administratora](about-admin-roles.md) w Microsoft 365. 
 
-1. W centrum administracyjnym przejdź do strony **Użytkownicy usunięci** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">użytkownicy</a> .
+1. W centrum administracyjnym przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">usunięci użytkownicy</a> .
 
 2. Na stronie **Usunięci użytkownicy** wybierz użytkownika, którego chcesz przywrócić, a następnie wybierz pozycję **Przywróć**. 
     
-3. Na stronie **Przywracanie** postępuj zgodnie z instrukcjami, aby ustawić hasło, a następnie wybierz pozycję **Przywróć**. Adresy serwerów proxy powodujące konflikt są automatycznie usuwane z profilu przywracanego użytkownika.
+3. Na stronie **Przywracanie** postępuj zgodnie z instrukcjami, aby ustawić hasło i wybierz pozycję **Przywróć**. Adresy serwerów proxy powodujące konflikt są automatycznie usuwane z profilu przywracanego użytkownika.
     
 4. Przejrzyj wyniki, a następnie wybierz pozycję **Zamknij**.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Usuwanie użytkownika](delete-a-user.md) (artykuł)\
-[Przypisywanie ról administratora](assign-admin-roles.md) (klip wideo)\
+[Przypisywanie ról administratora](assign-admin-roles.md) (wideo)\
 [Przypisywanie licencji użytkownikom](../manage/assign-licenses-to-users.md) (artykuł)

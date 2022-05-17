@@ -16,32 +16,32 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
-description: Ten artykuł zawiera informacje na temat zarządzania ustawieniami użytkowników.
-ms.openlocfilehash: 681396d0389b78222afbaeaa2941b11f5e292b81
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Ten artykuł zawiera informacje na temat zarządzania ustawieniami dla użytkowników.
+ms.openlocfilehash: 291d6a0207c8ed0f94bcfa224accc217dfc1d78f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973554"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437134"
 ---
-# <a name="user-email-settings"></a>Ustawienia poczty e-mail użytkownika
+# <a name="user-email-settings-in-microsoft-365"></a>Ustawienia poczty e-mail użytkownika w Microsoft 365
 
-Jako administrator organizacji, możesz zarządzać ustawieniami poczty e-mail swoich użytkowników. Ten artykuł zawiera informacje na temat zarządzania tymi ustawieniami.
+Jako administrator organizacji istnieją ustawienia poczty e-mail, które można zarządzać dla użytkowników. Ten artykuł zawiera informacje na temat zarządzania tymi ustawieniami.
 
 ## <a name="summary-of-email-settings"></a>Podsumowanie ustawień poczty e-mail
 
-W poniższej tabeli wyjaśniono różne ustawienia poczty e-mail, które można zmienić dla użytkownika w Microsoft 365.
+W tej tabeli wyjaśniono różne ustawienia poczty e-mail, które można zmienić dla użytkownika w Microsoft 365.
 
 
-|Ustawienie poczty|Opis  |
+|Ustawienie Poczty|Opis  |
 |---------|---------|
-|Uprawnienia do skrzynki pocztowej| **Czytanie i zarządzanie** umożliwia określenie, czy inne osoby mogą czytać skrzynki pocztowe innych osób i zarządzać nimi. Możesz również ustawić **dla danej osoby** **uprawnienia Wyślij** jako i Wyślij w imieniu. Aby uzyskać [więcej szczegółowych informacji, zobacz Nadaj uprawnienia do skrzynki pocztowej in Microsoft 365 — Pomoc dla](../add-users/give-mailbox-permissions-to-another-user.md) administratorów. |
-|Aplikacje poczty e-mail| Aplikacje poczty e-mail pozwalają wybrać aplikacje, za pomocą których użytkownik może uzyskać dostęp do poczty e-mail Microsoft. |
-|Pokaż na globalnej liście adresowej| Opcja Pokaż na globalnej liście adresowej pozwala włączyć lub wyłączyć widoczność skrzynki pocztowej użytkownika na liście adresowej organizacji. |
-|Przesyłanie dalej poczty e-mail|Przesyłanie dalej poczty e-mail umożliwia dodanie do użytkownika adresu e-mail, który jest przesyłany dalej. Możesz to zrobić, jeśli dana osoba ma wiele adresów e-mail i chce otrzymywać wiadomości e-mail we wszystkich swoich adresach e-mail. Aby uzyskać [więcej szczegółowych informacji, zobacz Konfigurowanie](configure-email-forwarding.md) przesyłania dalej poczty e Microsoft 365 w sieci.|
-|Odpowiedzi automatyczne|Odpowiedzi automatyczne pozwalają ustawić odpowiedź automatyczną, gdy ktoś wyśle wiadomość e-mail na adres e-mail tej osoby. Możesz to zrobić, jeśli pracownik odchodzi z firmy i chcesz to wiedzieć.|
-|Więcej akcji| **Konwertowanie na udostępnioną** skrzynkę pocztową umożliwia przekonwertowanie skrzynki pocztowej użytkownika na udostępnioną skrzynkę pocztową. Możesz to zrobić, jeśli dana osoba odchodzi z organizacji i chcesz zachować dane skrzynki pocztowej przez jakiś czas. Zobacz [Konwertowanie skrzynki pocztowej użytkownika na udostępnioną skrzynkę pocztową oraz](convert-user-mailbox-to-shared-mailbox.md) [Otwieranie i używanie udostępnionej skrzynki pocztowej](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>**Edytowanie Exchange umożliwia** zarządzanie dodatkowymi zadaniami Exchange Online za pomocą Exchange administracyjnego. Przeczytaj o [zarządzaniu skrzynkami pocztowymi użytkowników w Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
+|Uprawnienia skrzynki pocztowej| **Funkcja odczytu i zarządzania** umożliwia określenie, czy użytkownicy mogą odczytywać skrzynki pocztowe innych osób i zarządzać nimi. Możesz również **ustawić uprawnienia Wyślij jako** i **Wyślij w imieniu** dla danej osoby. Aby uzyskać więcej informacji, zapoznaj się z [tematem Udzielanie uprawnień skrzynki pocztowej innemu użytkownikowi w Microsoft 365 — Pomoc dla administratorów](../add-users/give-mailbox-permissions-to-another-user.md). |
+|Aplikacje poczty e-mail| Aplikacje poczty e-mail umożliwiają wybieranie aplikacji, których użytkownik może używać do uzyskiwania dostępu do poczty e-mail firmy Microsoft. |
+|Pokaż na globalnej liście adresów| Funkcja Pokaż na globalnej liście adresów umożliwia włączenie lub wyłączenie widoczności skrzynki pocztowej użytkownika na liście adresów organizacji. |
+|Przekazywanie wiadomości e-mail|Przekazywanie wiadomości e-mail umożliwia dodanie adresu e-mail przekazującego do użytkownika. Możesz to zrobić, jeśli dana osoba ma wiele adresów e-mail i chce otrzymywać wiadomości e-mail na wszystkich swoich adresach e-mail. Aby uzyskać więcej informacji, zobacz [Konfigurowanie przekazywania wiadomości e-mail w Microsoft 365](configure-email-forwarding.md).|
+|Odpowiedzi automatyczne|Odpowiedzi automatyczne umożliwiają ustawienie automatycznej odpowiedzi, gdy ktoś wyśle wiadomość e-mail na adres e-mail danej osoby. Możesz to zrobić, jeśli pracownik opuści firmę i chcesz poinformować nadawcę wiadomości e-mail.|
+|Więcej akcji| **Konwersja na udostępnioną skrzynkę pocztową** umożliwia konwertowanie skrzynki pocztowej użytkownika na udostępnioną skrzynkę pocztową. Możesz to zrobić, jeśli dana osoba opuści organizację i chcesz zachować dane skrzynki pocztowej na pewien czas. [Wyewidencjonuj konwertowanie skrzynki pocztowej użytkownika na udostępnioną skrzynkę pocztową](convert-user-mailbox-to-shared-mailbox.md) i [otwórz i użyj udostępnionej skrzynki pocztowej](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>**Edytowanie właściwości Exchange** umożliwia zarządzanie dodatkowymi zadaniami Exchange Online przy użyciu centrum administracyjnego Exchange. Przeczytaj o [zarządzaniu skrzynkami pocztowymi użytkowników w Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
 
 > [!NOTE]
 >
-> <sup>1 Możesz</sup> zarządzać tylko aplikacjami poczty e-mail dla skrzynek pocztowych, które są w pełni hostowane Microsoft 365. Za pomocą tej funkcji nie można zarządzać aplikacjami poczty e-mail dla skrzynek pocztowych hostowanych lokalnie.
+> <sup>1</sup> Aplikacjami poczty e-mail można zarządzać tylko w przypadku skrzynek pocztowych, które są w pełni hostowane w Microsoft 365. Tej funkcji nie można używać do zarządzania aplikacjami poczty e-mail dla skrzynek pocztowych hostowanych lokalnie.

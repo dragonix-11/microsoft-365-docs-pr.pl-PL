@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z usługi domain Połączenie
+title: Korzystanie z Połączenie domeny
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,39 +20,39 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
-description: Dowiedz się, jak współpracować z Połączenie z włączonymi rejestratorami i dodawać domenę do Microsoft 365.
-ms.openlocfilehash: 1691d86ebd459ee69faca8d3a21d99b0caa89fca
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak pracować z rejestratorami z obsługą Połączenie domen i dodawać domenę do Microsoft 365.
+ms.openlocfilehash: e20588181a5e9ca55d11844e2f31c3504a2bbfa0
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316915"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437618"
 ---
-# <a name="using-domain-connect"></a>Korzystanie z usługi domain Połączenie
+# <a name="using-domain-connect-to-add-your-domain-to-microsoft-365"></a>Dodawanie domeny do Microsoft 365 przy użyciu Połączenie domeny
 
  **[Zajrzyj do często zadawanych pytań dotyczących domen](../setup/domains-faq.yml)**, jeśli nie możesz znaleźć szukanych informacji.
 
-[Rejestratorzy Połączenie](https://www.domainconnect.org/) domen umożliwiają dodanie domeny Microsoft 365 w trójetapowym procesie, który trwa kilka minut.
+[Rejestratorzy z](https://www.domainconnect.org/) obsługą Połączenie domeny umożliwiają dodawanie domeny do Microsoft 365 w trzyetapowym procesie, który trwa kilka minut.
 
-W kreatorze potwierdzimy, że jesteś właścicielem domeny, i automatycznie skonfigurujemy rekordy domeny, aby poczta e-mail przychodziła do usługi Microsoft 365 i innych usług Microsoft 365, takich jak Teams, działały z Twoją domeną.
+W kreatorze po prostu potwierdzimy, że jesteś właścicielem domeny, a następnie automatycznie skonfigurujemy rekordy domeny, więc wiadomość e-mail przychodzi do Microsoft 365 i innych usług Microsoft 365, takich jak Teams, do pracy z domeną.
 
 > [!NOTE]
 > Przed uruchomieniem kreatora konfiguracji upewnij się, że wyłączono wszystkie programy blokujące wyskakiwanie okienek w przeglądarce.
 
-## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Rejestratorzy Połączenie domen integrując się z usługą Microsoft 365
+## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Rejestratorzy Połączenie domeny integrujący się z Microsoft 365
 
 - [11&amp; IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
-- [WordPress](https://wordpress.com/)
-- [Wołosk](https://www.plesk.com/)
-- [MediaTemple](https://mediatemple.net/)
-- SecureServer lub WildWestDomains (odsprzedawcy w witrynie GoDaddy korzystający z hostingu DNS bezpiecznego serwera)
-  - [MadDog Web Hosting](https://maddogwebhosting.com/domains/)
+- [Wordpress](https://wordpress.com/)
+- [Plesk](https://www.plesk.com/)
+- [Mediatemple](https://mediatemple.net/)
+- SecureServer lub WildWestDomains (odsprzedawcy GoDaddy korzystający z hostingu DNS SecureServer)
+  - [Hosting internetowy maddoga](https://maddogwebhosting.com/domains/)
   - [CheapNames](https://www.cheapnames.com)
 
 ## <a name="what-happens-to-my-email-and-website"></a>Co się stanie z moją pocztą e-mail i witryną internetową?
 
-Po zakończeniu konfiguracji rekord MX domeny zostanie zaktualizowany tak, aby Microsoft 365 wiadomości e-mail dla Twojej domeny zaczną przychodzić do Microsoft 365. Upewnij się, że dodano użytkowników i skonfigurujemy skrzynki pocztowe w aplikacji Microsoft 365 dla wszystkich osób korzystających z poczty e-mail w tej domenie.
+Po zakończeniu konfiguracji rekord MX dla twojej domeny zostanie zaktualizowany tak, aby wskazywał Microsoft 365, a wszystkie wiadomości e-mail dla twojej domeny zaczną przychodzić do Microsoft 365. Upewnij się, że dodano użytkowników i skonfigurowano skrzynki pocztowe w Microsoft 365 dla wszystkich osób, które otrzymają wiadomość e-mail w Twojej domenie!
 
-Jeśli masz witrynę internetową dla swojej firmy, będzie ona nadal działać tam, gdzie dotychczas. Kroki konfiguracji Połączenie domeny nie mają wpływu na Twoją witrynę internetową.
+Jeśli masz witrynę internetową dla swojej firmy, będzie ona nadal działać tam, gdzie dotychczas. Kroki konfiguracji Połączenie domeny nie mają wpływu na witrynę internetową.

@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Zapoznaj się z omówieniem Microsoft 365 Centrum komunikatów i jego roli w śledzeniu nowych i zmienionych funkcji oraz innych ważnych ogłoszeń.
-ms.openlocfilehash: 2d2f76d401e68fb7494cd74b169bcfe6cd6e6758
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 687da2d7dec0ea913e629a4cf41740d4b664b346
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022916"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437706"
 ---
-# <a name="message-center"></a>Centrum wiadomości
+# <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Śledzenie nowych i zmienionych funkcji w centrum komunikatów Microsoft 365
 
 Aby śledzić nadchodzące zmiany, w tym nowe i zmienione funkcje, planowaną konserwację lub inne ważne ogłoszenia, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centrum komunikatów</a>.
   

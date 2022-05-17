@@ -18,14 +18,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Wybierz różne metody zarządzania urządzeniami przenośnymi i zarządzaniem aplikacjami mobilnymi.
-ms.openlocfilehash: 49c8fe8e61026e56b1698d7da2fdbac07896c858
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: cc2eef0fde261ed8ee6eace288d70c53235fc88e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317499"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435418"
 ---
-# <a name="options-for-protecting-your-devices-and-app-data"></a>Opcje ochrony urządzeń i danych aplikacji
+# <a name="options-for-protecting-your-devices-and-app-data-with-microsoft-365"></a>Opcje ochrony urządzeń i danych aplikacji za pomocą Microsoft 365
 
 Masz kilka sposobów zabezpieczania urządzeń i danych organizacji przy użyciu Microsoft 365 dla firm i przedsiębiorstw. Możesz użyć następujących planów autonomicznych:
 

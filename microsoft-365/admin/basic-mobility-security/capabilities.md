@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Usługa Basic Mobility and Security może pomóc w zabezpieczeniu urządzeń przenośnych i zarządzaniu nimi.
-ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Usługa Basic Mobility and Security ułatwia zabezpieczanie urządzeń przenośnych i zarządzanie nimi za pomocą zasad, które kontrolują dostęp do organizacji Microsoft 365 poczty e-mail i dokumentów.
+ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937768"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435860"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Możliwości funkcji Podstawowa mobilność i zabezpieczenia
 
@@ -40,7 +40,7 @@ Aby zabezpieczyć następujące urządzenia i zarządzać nimi, możesz użyć p
 - Android (w tym Samsung Knox)<sup>1</sup>
 - Windows <sup>2, 3</sup>
 
-<sup>1</sup> Po czerwcu 2020 r. wersje systemu Android późniejsze niż 9 nie mogą zarządzać ustawieniami haseł, z wyjątkiem urządzeń z systemem Samsung Knox.
+<sup>1</sup> Po czerwcu 2020 r. Android wersje późniejsze niż 9 nie mogą zarządzać ustawieniami haseł, z wyjątkiem urządzeń z systemem Samsung Knox.
 
 <sup>2.</sup> Kontrola dostępu dla urządzeń Windows 8.1 RT jest ograniczona do Exchange ActiveSync.
 
@@ -62,8 +62,8 @@ Obsługiwane aplikacje dla różnych typów urządzeń przenośnych w poniższej
 
 > [!NOTE]
 >
-> - Obsługa systemów iOS 10.0 i nowszych obejmuje urządzenia iPhone i iPad.
-> - Zarządzanie urządzeniami z systemem operacyjnym BlackBerry nie jest obsługiwane przez usługi Basic Security i Mobility. Użyj aplikacji BlackBerry Business Cloud Services (BBCS) firmy BlackBerry do zarządzania urządzeniami z systemem operacyjnym BlackBerry. Urządzenia Blackberry z systemem operacyjnym Android są obsługiwane jako standardowe urządzenia z systemem Android
+> - Obsługa wersji iOS 10.0 i nowszych obejmuje urządzenia iPhone i iPad.
+> - Zarządzanie urządzeniami z systemem operacyjnym BlackBerry nie jest obsługiwane przez usługi Basic Security i Mobility. Zarządzanie urządzeniami BlackBerry OS za pomocą usług BlackBerry Business Cloud Services (BBCS) firmy BlackBerry. Urządzenia Blackberry z systemem Android OS są obsługiwane jako standardowe urządzenia Android
 > - Użytkownicy nie będą monitować o rejestrację i nie będą blokować ani zgłaszać naruszenia zasad, jeśli korzystają z przeglądarki mobilnej w celu uzyskania dostępu do witryn Microsoft 365 SharePoint, dokumentów w usłudze Office Online lub wiadomości e-mail w Outlook Web App.
 
 Na poniższym diagramie przedstawiono, co się stanie, gdy użytkownik z nowym urządzeniem zaloguje się do aplikacji, która obsługuje kontrolę dostępu przy użyciu pakietu Basic Mobility and Security. Użytkownik ma zablokowany dostęp do Microsoft 365 zasobów w aplikacji, dopóki nie zarejestruje swojego urządzenia.
@@ -122,7 +122,7 @@ W poniższych sekcjach wymieniono ustawienia zasad, których można użyć do za
 
 ## <a name="managed-email-profile-option"></a>Opcja zarządzanego profilu poczty e-mail
 
-Poniższa opcja może zablokować użytkownikom dostęp do Microsoft 365 poczty e-mail, jeśli korzystają z ręcznie utworzonego profilu poczty e-mail. Użytkownicy urządzeń z systemem iOS muszą usunąć ręcznie utworzony profil poczty e-mail, aby mogli uzyskać dostęp do poczty e-mail. Po usunięciu profilu na urządzeniu zostanie automatycznie utworzony nowy profil. Aby uzyskać instrukcje dotyczące sposobu, w jaki użytkownicy końcowi mogą uzyskać zgodność, zobacz [Znajdowanie istniejącego konta e-mail](/intune-user-help/existing-company-email-account-found).
+Poniższa opcja może zablokować użytkownikom dostęp do Microsoft 365 poczty e-mail, jeśli korzystają z ręcznie utworzonego profilu poczty e-mail. Użytkownicy na urządzeniach iOS muszą usunąć ręcznie utworzony profil poczty e-mail, zanim będą mogli uzyskać dostęp do poczty e-mail. Po usunięciu profilu na urządzeniu zostanie automatycznie utworzony nowy profil. Aby uzyskać instrukcje dotyczące sposobu, w jaki użytkownicy końcowi mogą uzyskać zgodność, zobacz [Znajdowanie istniejącego konta e-mail](/intune-user-help/existing-company-email-account-found).
 
 |Nazwa ustawienia|iOS|Android|Samsung Knox|
 |---|---|---|---|
@@ -137,7 +137,7 @@ Poniższa opcja może zablokować użytkownikom dostęp do Microsoft 365 poczty 
 |Blokuj synchronizację dokumentów|Tak|Nie|Nie|
 |Blokuj synchronizację zdjęć|Tak|Nie|Nie|
 |Zezwalaj na tworzenie kopii zapasowych google|nd.|Nie|Tak|
-|Zezwalaj na automatyczną synchronizację konta Google|nd.|Nie|Tak|
+|Zezwalaj na automatyczną synchronizację konta Google|Nie dotyczy|Nie|Tak|
 
 ## <a name="system-settings"></a>Ustawienia systemu
 
@@ -183,7 +183,7 @@ Następujące dodatkowe ustawienia zasad można ustawić przy użyciu poleceń c
 
 ## <a name="settings-supported-by-windows"></a>Ustawienia obsługiwane przez Windows
 
-Możesz zarządzać Windows 10 urządzeniami, rejestrując je jako urządzenia przenośne. Po wdrożeniu odpowiednich zasad użytkownicy z Windows 10 urządzeniami będą musieli zarejestrować się w usłudze Basic Mobility and Security przy pierwszym użyciu wbudowanej aplikacji poczty e-mail w celu uzyskania dostępu do Microsoft 365 poczty e-mail (wymaga subskrypcji usługi Azure AD w warstwie Premium).
+Możesz zarządzać Windows 10 urządzeniami, rejestrując je jako urządzenia przenośne. Po wdrożeniu odpowiednich zasad użytkownicy z urządzeniami Windows 10 będą musieli zarejestrować się w usłudze Basic Mobility and Security przy pierwszym użyciu wbudowanej aplikacji poczty e-mail w celu uzyskania dostępu do Microsoft 365 poczty e-mail (wymaga Azure AD subskrypcji Premium).
 
 Następujące ustawienia są obsługiwane w przypadku urządzeń Windows 10 zarejestrowanych jako urządzenia przenośne. To ustawienie nie zablokuje użytkownikom dostępu do Microsoft 365 zasobów.
 
@@ -230,7 +230,7 @@ Te dodatkowe ustawienia zasad można ustawić przy użyciu poleceń cmdlet progr
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Zdalne czyszczenie urządzenia przenośnego
 
-W przypadku utraty lub kradzieży urządzenia można usunąć poufne dane **organizacyjne** i zapobiec dostępowi do zasobów organizacji Microsoft 365 przez wyczyszczenie danych z **portalu** >  zgodności usługi Microsoft PurviewZarządzanie  > **utratą** urządzeń. Można przeprowadzić selektywne czyszczenie, aby usunąć tylko dane organizacyjne lub pełne czyszczenie, aby usunąć wszystkie informacje z urządzenia i przywrócić je do ustawień fabrycznych.
+Jeśli urządzenie zostanie utracone lub skradzione, możesz usunąć poufne dane **organizacyjne** i zapobiec dostępowi do zasobów organizacji Microsoft 365, wykonując czyszczenie danych z **portal zgodności Microsoft Purview** >  **Zarządzanie urządzeniami w celu zapobiegania** >  utracie danych. Można przeprowadzić selektywne czyszczenie, aby usunąć tylko dane organizacyjne lub pełne czyszczenie, aby usunąć wszystkie informacje z urządzenia i przywrócić je do ustawień fabrycznych.
 
 Aby uzyskać więcej informacji, zobacz [Czyszczenie urządzenia przenośnego w usłudze Basic Mobility and Security](wipe-mobile-device.md).
 

@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Pakiety Basic Mobility and Security są częścią planów Microsoft 365.
-ms.openlocfilehash: 36190be6345188503e7ba5147b72918a342aba73
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Usługa Basic Mobility and Security jest częścią planów Microsoft 365, a Microsoft Intune jest autonomicznym produktem dołączonym do niektórych planów Microsoft 365.
+ms.openlocfilehash: 1d04beea6ece35d5d28bdd961041b30c1f8f2793
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781188"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435772"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Wybierz opcję Podstawowa mobilność i zabezpieczenia lub Intune
 
@@ -68,7 +68,7 @@ Microsoft Intune i wbudowane rozwiązania Basic Mobility and Security umożliwia
 | Obszar funkcji | Wyróżnienia funkcji | Funkcja Podstawowa mobilność i zabezpieczenia | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |Typy urządzeń|Zarządzanie różnymi platformami systemu operacyjnego i głównymi wariantami trybu zarządzania. |System Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|System Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
-|Zgodność urządzeń|Ustawianie zasad zabezpieczeń i zarządzanie nimi, takich jak blokada numeru PIN na poziomie urządzenia i wykrywanie jailbreaku. |Ograniczenia dotyczące urządzeń z systemem Android. Zobacz [szczegóły](capabilities.md). |Tak|
+|Zgodność urządzeń|Ustawianie zasad zabezpieczeń i zarządzanie nimi, takich jak blokada numeru PIN na poziomie urządzenia i wykrywanie jailbreaku. |Ograniczenia dotyczące urządzeń Android. Zobacz [szczegóły](capabilities.md). |Tak|
 |Dostęp warunkowy na podstawie zgodności urządzeń |Uniemożliwiaj niezgodnym urządzeniom uzyskiwanie dostępu do firmowej poczty e-mail i danych z chmury. |Nieobsługiwane w Windows 10.<br/>Ograniczone do kontrolowania dostępu do Exchange Online, SharePoint Online i Outlook. |Tak |
 |Konfiguracja urządzenia  |Konfigurowanie ustawień urządzenia (na przykład wyłączanie aparatu)|Ograniczony zestaw ustawień.|Tak|
 |Profile poczty e-mail  |Aprowizowanie natywnego profilu poczty e-mail na urządzeniu. |Tak|Tak|
@@ -88,18 +88,18 @@ W przypadku Intune masz następujący zestaw akcji:
 - [Resetowanie rozwiązania Autopilot](/mem/autopilot/windows-autopilot-reset) (tylko Windows)
 - [Odzyskiwanie klucza funkcji Bitlocker](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (tylko Windows)
 - [Używanie czyszczenia, wycofywania lub ręcznego wyrejestrowania urządzenia](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
-- [Wyłącz blokadę aktywacji](/mem/intune/remote-actions/device-activation-lock-disable) (tylko system iOS)
+- [Wyłącz blokadę aktywacji](/mem/intune/remote-actions/device-activation-lock-disable) (tylko iOS)
 - [Rozpoczęcie od nowa](/mem/intune/remote-actions/device-fresh-start) (tylko Windows)
 - [Pełne skanowanie](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (tylko Windows 10)
-- [Lokalizowanie urządzenia](/mem/intune/remote-actions/device-locate) (tylko system iOS)
-- [Tryb zgubienia](/mem/intune/remote-actions/device-lost-mode) (tylko system iOS) — [szybkie skanowanie](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (tylko Windows 10)
-- [Zdalne sterowanie dla systemu Android](/mem/intune/remote-actions/teamviewer-support)
+- [Lokalizowanie urządzenia](/mem/intune/remote-actions/device-locate) (tylko iOS)
+- [Tryb zgubienia](/mem/intune/remote-actions/device-lost-mode) (tylko iOS) — [szybkie skanowanie](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (tylko Windows 10)
+- [Zdalne sterowanie Android](/mem/intune/remote-actions/teamviewer-support)
 - [Zdalne blokowanie](/mem/intune/remote-actions/device-remote-lock)
 - [Zmienianie nazwy urządzenia](/mem/intune/remote-actions/device-rename)
 - [Resetowanie ponownego uruchamiania kodu dostępu](/mem/intune/remote-actions/device-passcode-reset) [](/mem/intune/remote-actions/device-restart) (tylko Windows)
 - [Aktualizowanie analizy zabezpieczeń Windows Defender](https://www.microsoft.com/en-us/wdsi/defenderupdates) (tylko Windows)
 - [Windows 10 resetowanie numeru PIN](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset) (tylko Windows)
-- [Wysyłanie powiadomień niestandardowych](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad OS)
+- [Wysyłanie powiadomień niestandardowych](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad systemu operacyjnego)
 - [Synchronizowanie urządzenia](/mem/intune/remote-actions/device-sync)
 
 Aby uzyskać więcej informacji na temat akcji Intune, zobacz [dokumentację Microsoft Intune](/mem/intune/).

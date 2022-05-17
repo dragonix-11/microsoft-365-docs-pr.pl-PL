@@ -19,13 +19,13 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: Dowiedz się, jak usunąć konto użytkownika oraz co zrobić z wiadomością e-mail użytkownika i zawartością OneDrive oraz jak zachować licencję produktu.
-ms.openlocfilehash: 894bcef6cc273c067b3d9b622f244d361ed24d96
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak usunąć konto użytkownika Microsoft 365, co zrobić z wiadomością e-mail użytkownika i zawartością OneDrive oraz jak zachować licencję produktu.
+ms.openlocfilehash: faa971fa8419f6bcc80855fd9dcd559a542e00a8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090712"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436784"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Usuwanie użytkownika z własnej organizacji
   
@@ -139,4 +139,4 @@ Poniżej przedstawiono najczęstsze problemy napotykane przez użytkowników pod
 [Trwale usuń skrzynkę pocztową](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (artykuł)\
 [Usuwanie byłego pracownika z Office 365](remove-former-employee.md) (artykuł)\
 [Dodawanie nowego pracownika do Office 365](add-new-employee.md) (artykuł)\
-[Usuń konto użytkownika](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): skorzystaj z tych instrukcji, jeśli Twoja firma korzysta z **usługi Active Directory** synchronizowanej z usługą Azure AD. Nie można tego zrobić za pośrednictwem usługi Office 365. (artykuł)
+[Usuń konto użytkownika](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): użyj tych instrukcji, jeśli twoja firma korzysta z **usługi Active Directory**, która jest synchronizowana z Azure AD. Nie można tego zrobić za pośrednictwem usługi Office 365. (artykuł)

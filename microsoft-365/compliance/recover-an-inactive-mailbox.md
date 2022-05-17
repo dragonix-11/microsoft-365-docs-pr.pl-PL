@@ -1,5 +1,5 @@
 ---
-title: Odzyskiwanie nieaktywnej skrzynki pocztowej
+title: Odzyskaj nieaktywną skrzynkę pocztową
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,33 +16,35 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
-description: Dowiedz się, jak odzyskać zawartość nieaktywnej skrzynki pocztowej w programie Office 365, konwertując ją na nową skrzynkę pocztową zawierającą zawartość nieaktywnej skrzynki pocztowej.
-ms.openlocfilehash: ce09d218d86e7cd949da1df80cc75a19fce64159
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+description: Dowiedz się, jak odzyskać zawartość nieaktywnej skrzynki pocztowej w Office 365, konwertując ją na nową skrzynkę pocztową zawierającą zawartość nieaktywnej skrzynki pocztowej.
+ms.openlocfilehash: 027abe49a6e517a783f6458013bdcb4d0faee78b
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010643"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435396"
 ---
-# <a name="recover-an-inactive-mailbox"></a>Odzyskiwanie nieaktywnej skrzynki pocztowej
+# <a name="recover-an-inactive-mailbox"></a>Odzyskaj nieaktywną skrzynkę pocztową
 
-Nieaktywna skrzynka pocztowa (która jest typem "miękkiej" skrzynki pocztowej) służy do zachowywania wiadomości e-mail byłego pracownika po odejechaniu z organizacji. Jeśli ten pracownik powróci do organizacji lub gdy inny pracownik przejmie obowiązki byłego pracownika, można udostępnić użytkownikowi zawartość nieaktywnej skrzynki pocztowej na dwa sposoby:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-- **Odzyskiwanie nieaktywnej skrzynki pocztowej.** Jeśli były pracownik powraca do organizacji lub gdy nowy pracownik jest zatrudniony do  obowiązków byłego pracownika, można odzyskać zawartość nieaktywnej skrzynki pocztowej. Ta metoda konwertuje nieaktywną skrzynkę pocztową na nową, aktywną skrzynkę pocztową zawierającą jej zawartość. Po ich odzyskaniu nieaktywna skrzynka pocztowa już nie istnieje. Procedury w tym temacie opisują tę metodę.
+Nieaktywna skrzynka pocztowa (która jest typem nietrwałej skrzynki pocztowej) służy do zachowania poczty e-mail byłego pracownika po opuszczeniu organizacji. Jeśli ten pracownik wróci do organizacji lub jeśli inny pracownik przejmie obowiązki byłego pracownika, istnieją dwa sposoby udostępniania zawartości nieaktywnej skrzynki pocztowej użytkownikowi:
 
-- **Przywracanie nieaktywnej skrzynki pocztowej.** Jeśli inny pracownik przejmie obowiązki byłego pracownika lub jeśli inny użytkownik potrzebuje dostępu do zawartości nieaktywnej skrzynki pocztowej, możesz przywrócić (lub scalić) zawartość nieaktywnej skrzynki pocztowej z istniejącą skrzynką pocztową. Możesz również przywrócić archiwum z nieaktywnej skrzynki pocztowej. Aby uzyskać procedury dotyczące tej metody, zobacz [Przywracanie nieaktywnej skrzynki pocztowej w programie Office 365](restore-an-inactive-mailbox.md).
+- **Odzyskaj nieaktywną skrzynkę pocztową.** Jeśli były pracownik wróci do organizacji lub nowy pracownik zostanie zatrudniony do podjęcia obowiązków związanych z pracą byłego pracownika, możesz odzyskać zawartość nieaktywnej skrzynki pocztowej. Ta metoda konwertuje nieaktywną skrzynkę pocztową na nową, aktywną skrzynkę pocztową zawierającą zawartość nieaktywnej skrzynki pocztowej. Po jej odzyskaniu nieaktywna skrzynka pocztowa już nie istnieje. Procedury opisane w tym artykule opisują tę metodę.
 
-Zobacz [sekcję Więcej](#more-information) informacji, aby uzyskać więcej informacji na temat różnic między odzyskiwaniem i przywracaniem nieaktywnej skrzynki pocztowej, a także opis tego, co się stanie, gdy nieaktywna skrzynka pocztowa zostanie odzyskana.
+- **Przywróć nieaktywną skrzynkę pocztową.** Jeśli inny pracownik przejmuje obowiązki związane z zadaniem byłego pracownika lub jeśli inny użytkownik potrzebuje dostępu do zawartości nieaktywnej skrzynki pocztowej, możesz przywrócić (lub scalić) zawartość nieaktywnej skrzynki pocztowej do istniejącej skrzynki pocztowej. Możesz również przywrócić archiwum z nieaktywnej skrzynki pocztowej. Aby zapoznać się z procedurami dla tej metody, zobacz [Przywracanie nieaktywnej skrzynki pocztowej w Office 365](restore-an-inactive-mailbox.md).
+
+Aby uzyskać więcej informacji, zobacz sekcję [Więcej informacji](#more-information) na temat różnic między odzyskiwaniem i przywracaniem nieaktywnej skrzynki pocztowej oraz opisem tego, co się stanie po odzyskaniu nieaktywnej skrzynki pocztowej.
 
 > [!NOTE]
-> Nie można odzyskiwać ani przywracać nieaktywnych skrzynek pocztowych skonfigurowanych przy użyciu archiwum powiększania automatycznego. Jeśli chcesz odzyskać dane z nieaktywnej skrzynki pocztowej za pomocą archiwum rozszerzanego automatycznie, za pomocą wyszukiwania zawartości wyeksportuj dane ze skrzynki pocztowej, a następnie zaimportuj je do innej skrzynki pocztowej. Aby uzyskać instrukcje, zobacz następujące tematy:
+> Nie można odzyskać ani przywrócić nieaktywnej skrzynki pocztowej skonfigurowanej przy użyciu automatycznie rozwijającego się archiwum. Jeśli musisz odzyskać dane z nieaktywnej skrzynki pocztowej z automatycznie rozszerzającym się archiwum, użyj wyszukiwania zawartości, aby wyeksportować dane ze skrzynki pocztowej, a następnie zaimportować je do innej skrzynki pocztowej. Aby uzyskać instrukcje, zobacz następujące artykuły:
 >
-> - [Przeszukiwanie zawartości](content-search.md)
+> - [Wyszukiwanie zawartości](content-search.md)
 > - [Eksportowanie wyników wyszukiwania zawartości](export-search-results.md)
 
 ## <a name="requirements-to-recover-an-inactive-mailbox"></a>Wymagania dotyczące odzyskiwania nieaktywnej skrzynki pocztowej
 
-- Aby odzyskać nieaktywną skrzynkę pocztową, musisz użyć programu Exchange Online PowerShell. Nie możesz korzystać z centrum administracyjnego usługi Exchange(EAC). Instrukcje krok po kroku można znaleźć w [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Aby odzyskać nieaktywną skrzynkę pocztową, należy użyć Exchange Online programu PowerShell. Nie można użyć centrum administracyjnego Exchange (EAC) ani portal zgodności Microsoft Purview dla tej procedury. Aby uzyskać instrukcje krok po kroku dotyczące używania Exchange Online programu PowerShell, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Uruchom następujące polecenie, aby uzyskać informacje o tożsamości dla nieaktywnych skrzynek pocztowych w organizacji.
 
@@ -50,11 +52,11 @@ Zobacz [sekcję Więcej](#more-information) informacji, aby uzyskać więcej inf
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-  Użyj informacji zwróconych za pomocą tego polecenia, aby odzyskać określoną nieaktywną skrzynkę pocztową.
+  Użyj informacji zwróconych przez to polecenie, aby odzyskać określoną nieaktywną skrzynkę pocztową.
 
 ## <a name="recover-inactive-mailboxes"></a>Odzyskiwanie nieaktywnych skrzynek pocztowych
 
-Aby odzyskać **nieaktywną** skrzynkę pocztową, użyj polecenia cmdlet New-Mailbox z parametrem  *InactiveMailbox*  .
+Użyj polecenia cmdlet **New-Mailbox** z parametrem  *InactiveMailbox*  , aby odzyskać nieaktywną skrzynkę pocztową.
 
 1. Utwórz zmienną zawierającą właściwości nieaktywnej skrzynki pocztowej.
 
@@ -63,50 +65,51 @@ Aby odzyskać **nieaktywną** skrzynkę pocztową, użyj polecenia cmdlet New-Ma
    ```
 
    > [!IMPORTANT]
-   > W poprzednim poleceniu należy użyć wartości właściwości **DistinguishedName** (Nazwa odróżniana) lub **ExchangeGUID (ExchangeGUID** ), aby zidentyfikować nieaktywną skrzynkę pocztową. Te właściwości są unikatowe dla każdej skrzynki pocztowej w organizacji, natomiast istnieje możliwość, że aktywna i nieaktywna skrzynka pocztowa może mieć taki sam podstawowy adres SMTP.
+   > W poprzednim poleceniu użyj wartości właściwości **DistinguishedName** lub **ExchangeGUID** , aby zidentyfikować nieaktywną skrzynkę pocztową. Te właściwości są unikatowe dla każdej skrzynki pocztowej w organizacji, podczas gdy istnieje możliwość, że aktywna i nieaktywna skrzynka pocztowa może mieć ten sam podstawowy adres SMTP.
 
-2. W tym przykładzie użyto właściwości uzyskanych w poprzednim poleceniu i odzyskano nieaktywną skrzynkę pocztową do aktywnej skrzynki pocztowej użytkownika Anny Beebe. Upewnij się, że wartości określone dla parametrów  *Name (*  Nazwa) i  *MicrosoftOnlineServicesID (Identyfikator usługi MicrosoftOnlineServicesID*  ) są unikatowe w organizacji.
+2. W tym przykładzie użyto właściwości uzyskanych w poprzednim poleceniu i odzyska nieaktywną skrzynkę pocztową do aktywnej skrzynki pocztowej użytkownika Ann Beebe. Upewnij się, że wartości określone dla parametrów  *Nazwa*  i  *MicrosoftOnlineServicesID*  są unikatowe w organizacji.
 
    ```powershell
    New-Mailbox -InactiveMailbox $InactiveMailbox.DistinguishedName -Name annbeebe -FirstName Ann -LastName Beebe -DisplayName "Ann Beebe" -MicrosoftOnlineServicesID Ann.Beebe@contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
    ```
 
-   Podstawowy adres SMTP odzyskanej nieaktywnej skrzynki pocztowej będzie miał tę samą wartość co wartość określona przez parametr  *MicrosoftOnlineServicesID*  .
+   Podstawowy adres SMTP odzyskanej nieaktywnej skrzynki pocztowej będzie miał taką samą wartość jak ten określony przez parametr  *MicrosoftOnlineServicesID*  .
 
-Po odzyskaniu nieaktywnej skrzynki pocztowej jest również tworzone nowe konto użytkownika. Musisz aktywować to konto użytkownika, przypisując licencję. Aby przypisać licencję w centrum administracyjne platformy Microsoft 365, zobacz Dodawanie użytkowników i [przypisywanie licencji w tym samym czasie](../admin/add-users/add-users.md).
+Po odzyskaniu nieaktywnej skrzynki pocztowej zostanie również utworzone nowe konto użytkownika. Musisz aktywować to konto użytkownika, przypisując licencję. Aby przypisać licencję w Centrum administracyjne platformy Microsoft 365, zobacz [Dodawanie użytkowników i przypisywanie licencji w tym samym czasie](../admin/add-users/add-users.md).
 
 ## <a name="more-information"></a>Więcej informacji
 
-- **Jaka jest główna różnica między odzyskiwaniem a przywracaniem nieaktywnej skrzynki pocztowej?** Po odzyskaniu nieaktywnej skrzynki pocztowej jest ona konwertowana na nową skrzynkę pocztową, a zawartość i struktura folderów nieaktywnej skrzynki pocztowej jest zachowywana, a skrzynka pocztowa jest połączona z nowym kontem użytkownika. Po ich odzyskaniu nieaktywna skrzynka pocztowa już nie istnieje, a wszelkie zmiany zawartości w nowej skrzynce pocztowej będą mieć wpływ na zawartość, która pierwotnie była wstrzymywana w nieaktywnej skrzynce pocztowej. Natomiast w przypadku przywracania nieaktywnej skrzynki pocztowej zawartość jest jedynie kopiowana do innej skrzynki pocztowej. Nieaktywna skrzynka pocztowa jest zachowywana i pozostaje nieaktywną skrzynką pocztową. Wszelkie zmiany wprowadzone w zawartości docelowej skrzynki pocztowej nie mają wpływu na oryginalną zawartość w nieaktywnej skrzynce pocztowej. Nieaktywną skrzynkę pocztową nadal można przeszukiwać przy użyciu zbierania elektronicznych materiałów dowodowych In-Place, jej zawartość można przywrócić do innej skrzynki pocztowej lub można ją odzyskać bądź usunąć później.
+- **Jaka jest główna różnica między odzyskiwaniem i przywracaniem nieaktywnej skrzynki pocztowej?** Po odzyskaniu nieaktywnej skrzynki pocztowej skrzynka pocztowa jest konwertowana na nową skrzynkę pocztową, zawartość i struktura folderów nieaktywnej skrzynki pocztowej są zachowywane, a skrzynka pocztowa jest połączona z nowym kontem użytkownika. Po jej odzyskaniu nieaktywna skrzynka pocztowa już nie istnieje, a wszelkie zmiany wprowadzone w zawartości w nowej skrzynce pocztowej będą miały wpływ na zawartość, która została pierwotnie wstrzymana w nieaktywnej skrzynce pocztowej. Z drugiej strony podczas przywracania nieaktywnej skrzynki pocztowej zawartość jest kopiowana tylko do innej skrzynki pocztowej. Nieaktywna skrzynka pocztowa jest zachowywana i pozostaje nieaktywną skrzynką pocztową. Wszelkie zmiany wprowadzone w zawartości w docelowej skrzynce pocztowej nie będą miały wpływu na oryginalną zawartość przechowywaną w nieaktywnej skrzynce pocztowej. Nieaktywną skrzynkę pocztową można nadal przeszukiwać przy użyciu In-Place eDiscovery, jej zawartość można przywrócić do innej skrzynki pocztowej lub odzyskać lub usunąć ją w późniejszym terminie.
 
-- **Co się stanie, gdy odzyskasz nieaktywną skrzynkę pocztową?** Podczas odzyskiwania nieaktywnej skrzynki pocztowej występują następujące zdarzenia:
+- **Co się stanie po odzyskaniu nieaktywnej skrzynki pocztowej?** Po odzyskaniu nieaktywnej skrzynki pocztowej występują następujące elementy:
 
-  - Hold, który został zastosowany do nieaktywnej skrzynki pocztowej jest zmieniany lub usuwany w zależności od typu hold, który został zastosowany do nieaktywnej skrzynki pocztowej przed jej odzyskaniem.
+  - Blokada zastosowana do nieaktywnej skrzynki pocztowej jest zmieniana lub usuwana na podstawie typu blokady, który został zastosowany do nieaktywnej skrzynki pocztowej przed jej odzyskaniem.
+    
+    - **Microsoft 365 zasad przechowywania z blokadą zachowania.** Jeśli nieaktywna skrzynka pocztowa została uwzględniona w zasadach przechowywania z [blokadą zachowania](retention-preservation-lock.md), odzyskana skrzynka pocztowa jest przypisywana do tych samych zasad przechowywania.
+    
+    - **Microsoft 365 zasad przechowywania bez blokady zachowania.** Nieaktywna skrzynka pocztowa jest usuwana z zasad przechowywania Microsoft 365. Jednak blokada postępowania sądowego jest włączona w odzyskanej skrzynce pocztowej, aby zapobiec usuwaniu zawartości skrzynki pocztowej na podstawie wszelkich zasad przechowywania w całej organizacji, które usuwają zawartość starszą niż określony wiek. Możesz zachować blokadę postępowania sądowego lub usunąć ją. Aby uzyskać więcej informacji, zobacz [Tworzenie blokady postępowania sądowego](create-a-litigation-hold.md).
 
-    - **Zawieszenie w  postępowaniem sądowym.** Jeśli dla nieaktywnej skrzynki pocztowej włączono funkcję hold w związku z postępowaniem sądowym, jest ona usuwana z odzyskanej skrzynki pocztowej.
+    - **Blokada postępowania sądowego.** Jeśli blokada postępowania sądowego została włączona dla nieaktywnej skrzynki pocztowej, zostanie usunięta z odzyskanej skrzynki pocztowej.
 
-    - **Z odzyskanej** skrzynki In-Place usuwane są blokady miejsca. Oznacza to, że odzyskana skrzynka pocztowa jest usuwana jako źródłowa skrzynka pocztowa z In-Place wstrzymywania lub In-Place zbierania elektronicznych materiałów dowodowych.
+    - **Archiwi In-Place** blokady w miejscu są usuwane z odzyskanej skrzynki pocztowej. Oznacza to, że odzyskana skrzynka pocztowa jest usuwana jako źródłowa skrzynka pocztowa z dowolnego In-Place Hold lub In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych.
 
-    - **Microsoft 365 przechowywania przy użyciu blokady zachowywania.** Jeśli nieaktywna skrzynka pocztowa została przypisana do zasad przechowywania z zachowaniem blokady zachowywania (nazywanych zablokowanymi zasadami *przechowywania),* odzyskana skrzynka pocztowa zostanie przypisana do tych samych zablokowanych zasad przechowywania. Aby uzyskać więcej informacji na temat zablokowanych zasad przechowywania, zobacz [Użyj blokady zachowywania, aby ograniczyć zmiany zasad przechowywania i [zasad etykiet przechowywania.](retention-preservation-lock.md)
+  - Okres odzyskiwania pojedynczego elementu (zdefiniowany przez **właściwość RetainDeletedItemsFor** skrzynki pocztowej) jest ustawiony na 30 dni. Zazwyczaj po utworzeniu nowej skrzynki pocztowej w Exchange Online ten okres przechowywania jest ustawiony na 14 dni. Ustawienie maksymalnej wartości 30 dni daje więcej czasu na odzyskanie wszystkich danych, które zostały trwale usunięte (lub przeczyszczane) z nieaktywnej skrzynki pocztowej. Możesz również wyłączyć odzyskiwanie pojedynczego elementu lub ustawić okres odzyskiwania pojedynczego elementu z powrotem na wartość domyślną 14 dni. Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie odzyskiwania pojedynczego elementu dla skrzynki pocztowej](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery).
 
-    - **Microsoft 365 przechowywania bez blokady zachowywania.** Nieaktywna skrzynka pocztowa zostanie usunięta z Microsoft 365 przechowywania, które do niego zastosowano. Jednak w odzyskanej skrzynce pocztowej jest włączone zawieszenie w związku z postępowaniem sądowym, aby zapobiec usuwaniu zawartości skrzynki pocztowej na podstawie wszelkich zasad przechowywania w całej organizacji, które usuwają zawartość starszą niż określony wiek. Możesz zachować zawieszenie w  postępowaniach sądowych lub je usunąć. Aby uzyskać więcej informacji, zobacz [Tworzenie postępowania w związku z postępowaniem sądowym](create-a-litigation-hold.md).
+  - Blokada przechowywania jest włączona, a czas przechowywania jest ustawiony na 30 dni. Oznacza to, że domyślne zasady przechowywania Exchange i wszelkie zasady przechowywania Microsoft 365 w całej organizacji lub Exchange całej organizacji, które są przypisane do nowej skrzynki pocztowej, nie będą przetwarzane przez 30 dni. Daje to pracownikowi zwracającemu lub nowemu właścicielowi odzyskanej nieaktywnej skrzynki pocztowej czas na zarządzanie starymi wiadomościami. W przeciwnym razie zasady przechowywania Exchange lub Microsoft 365 mogą usuwać stare elementy skrzynki pocztowej (lub przenosić elementy do skrzynki pocztowej archiwum, jeśli jest włączona), które wygasły na podstawie ustawień skonfigurowanych dla zasad przechowywania Exchange lub Microsoft 365. Po upływie 30 dni wstrzymanie przechowywania wygaśnie, właściwość **RetentionHoldEnabled** zostanie ustawiona na **wartość False**, a Asystent folderów zarządzanych rozpocznie przetwarzanie zasad przypisanych do skrzynki pocztowej. Jeśli nie potrzebujesz tego dodatkowego czasu, możesz po prostu usunąć blokadę przechowywania. Alternatywnie możesz zwiększyć czas przechowywania za pomocą polecenia **Set-Mailbox -EndDateForRetentionHold** . Aby uzyskać więcej informacji, zobacz [Umieszczanie skrzynki pocztowej w blokadzie przechowywania](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 
-  - Okres odzyskiwania jednego elementu (który jest zdefiniowany przez właściwość **RetainDeletedItemsFor** mailbox) jest ustawiony na 30 dni. Zazwyczaj po utworzeniu nowej skrzynki pocztowej w programie Exchange Online ten okres przechowywania jest ustawiany na 14 dni. Ustawienie tej wartości na wartość maksymalną 30 dni daje więcej czasu na odzyskanie wszelkich danych, które zostały trwale usunięte (lub usunięte) z nieaktywnej skrzynki pocztowej. Możesz również wyłączyć odzyskiwanie pojedynczych elementów lub ustawić domyślny okres odzyskiwania pojedynczych elementów na 14 dni. Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie odzyskiwania pojedynczych elementów dla skrzynki pocztowej](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery).
+- **Jeśli chcesz zachować oryginalny stan nieaktywnej skrzynki pocztowej, wstrzymaj odzyskaną skrzynkę pocztową.** Aby uniemożliwić nowemu właścicielowi skrzynki pocztowej lub zasadom przechowywania trwałe usunięcie wszelkich wiadomości z odzyskanej nieaktywnej skrzynki pocztowej, możesz umieścić skrzynkę pocztową w blokadzie postępowania sądowego. Aby uzyskać więcej informacji, zobacz [Tworzenie blokady postępowania sądowego](./create-a-litigation-hold.md).
 
-  - Hold is enabled, and the retention hold duration is set to 30 days. Oznacza Exchange Exchange przechowywania w całej organizacji lub organizacji albo w całej organizacji, Microsoft 365, które są przypisane do nowej skrzynki pocztowej, nie będą przetwarzane przez 30 dni. Dzięki temu zwracający pracownik lub nowy właściciel odzyskanej nieaktywnej skrzynki pocztowej może zarządzać starymi wiadomościami. W przeciwnym razie zasady przechowywania usługi Exchange lub Microsoft 365 mogą usuwać stare elementy skrzynki pocztowej (lub przenosić elementy do archiwaowej skrzynki pocztowej, jeśli jest włączona), które wygasły na podstawie ustawień skonfigurowanych dla zasad przechowywania usługi Exchange lub Microsoft 365. Po 30 dniach ważność przechowywania wygasa, właściwość **skrzynki pocztowej RetentionHoldEnabled** jest ustawiona na wartość **False**, a asystent folderów zarządzanych rozpoczyna przetwarzanie zasad przypisanych do skrzynki pocztowej. Jeśli nie potrzebujesz tego dodatkowego czasu, możesz po prostu usunąć hold przechowywania. Można również zwiększyć czas trwania przechowywania za pomocą polecenia **Set-Mailbox -EndDateForRetentionHold** . Aby uzyskać więcej informacji, zobacz [Umieść skrzynkę pocztową w miejscu przechowywania](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
+- **Jakiego identyfikatora użytkownika można użyć podczas odzyskiwania nieaktywnej skrzynki pocztowej?** Po odzyskaniu nieaktywnej skrzynki pocztowej wartość określona dla parametru  *MicrosoftOnlineServicesID*  może różnić się od oryginalnej, która została skojarzona z nieaktywną skrzynką pocztową. Możesz również użyć oryginalnego identyfikatora użytkownika. Jednak zgodnie z wcześniejszymi instrukcjami upewnij się, że wartości używane dla  *nazwy*  i  *identyfikatora MicrosoftOnlineServicesID*  są unikatowe w organizacji podczas odzyskiwania nieaktywnej skrzynki pocztowej.
 
-- **Jeśli chcesz zachować pierwotny stan nieaktywnej skrzynki pocztowej, umieść w nich stan przechowywania.** Aby uniemożliwić nowemu właścicielowi skrzynki pocztowej lub zasadom przechowywania trwałe usunięcie wszystkich wiadomości z odzyskanej nieaktywnej skrzynki pocztowej, możesz umieścić skrzynkę pocztową w związku z postępowaniem sądowym. Aby uzyskać więcej informacji, zobacz [Tworzenie postępowania w związku z postępowaniem sądowym](./create-a-litigation-hold.md).
+- **Co zrobić, jeśli okres przechowywania skrzynki pocztowej dla nieaktywnej skrzynki pocztowej nie wygasł?** Jeśli nieaktywna skrzynka pocztowa została usunięta nietrwale mniej niż 30 dni temu, nie można jej odzyskać za pomocą polecenia **New-Mailbox -InactiveMailbox** . Musisz je odzyskać, przywracając odpowiednie konto użytkownika. Aby uzyskać więcej informacji, zobacz [Usuwanie użytkownika z organizacji](../admin/add-users/delete-a-user.md).
 
-- **Jakiego identyfikatora użytkownika można użyć podczas odzyskiwania nieaktywnej skrzynki pocztowej?** Po odzyskaniu nieaktywnej skrzynki pocztowej wartość parametru  *MicrosoftOnlineServicesID*  może różnić się od wartości oryginalnej, która była skojarzona z nieaktywną skrzynką pocztową. Możesz również użyć pierwotnego identyfikatora użytkownika. Jednak jak wspomniano wcześniej, podczas odzyskiwania nieaktywnej skrzynki pocztowej upewnij się, że wartości używane dla pól  *Name*  (Nazwa) i  *MicrosoftOnlineServicesID (Identyfikator usługi MicrosoftOnlineServicesID*  ) są unikatowe w Twojej organizacji.
-
-- **Co zrobić, jeśli okres przechowywania skrzynki pocztowej dla nieaktywnej skrzynki pocztowej nie wygasł?** Jeśli nieaktywna skrzynka pocztowa została nieaktywna usunięta mniej niż 30 dni temu, nie można jej odzyskać za pomocą polecenia Nowa skrzynka pocztowa **-** Nieaktywna poczta. Aby je odzyskać, należy przywrócić odpowiednie konto użytkownika. Aby uzyskać więcej informacji, [zobacz Usuwanie użytkownika z organizacji](../admin/add-users/delete-a-user.md).
-
-- **Skąd wiadomo, że okres przechowywania "miękkiego usunięcia" skrzynki pocztowej dla nieaktywnej skrzynki pocztowej wygasł?** Uruchom następujące polecenie:
-
+- **Skąd wiesz, czy nietrwale usunięty okres przechowywania skrzynki pocztowej dla nieaktywnej skrzynki pocztowej wygasł?** Uruchom następujące polecenie:
+    
   ```powershell
   Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | Format-List ExternalDirectoryObjectId
   ```
+    
+    - Jeśli istnieje wartość właściwości **ExternalDirectoryObjectId** , okres przechowywania skrzynki pocztowej wygasł i możesz odzyskać nieaktywną skrzynkę pocztową, uruchamiając polecenie **New-Mailbox -InactiveMailbox** .
+    - Jeśli istnieje wartość właściwości **ExternalDirectoryObjectId** , okres przechowywania nietrwałej skrzynki pocztowej nie wygasł i musisz odzyskać skrzynkę pocztową, [przywracając konto użytkownika](../admin/add-users/delete-a-user.md).
 
-  Jeśli nie ma wartości właściwości **ExternalDirectoryObjectId** , okres przechowywania skrzynki pocztowej wygasł i możesz odzyskać nieaktywną skrzynkę pocztową, uruchamiając polecenie **New-Mailbox -InactiveMailbox** . Jeśli właściwość **ExternalDirectoryObjectId** ma wartość, okres przechowywania "miękkiego usunięcia" skrzynki pocztowej nie wygasł i trzeba odzyskać skrzynkę pocztową przez przywrócenie konta użytkownika. Zobacz [Usuwanie użytkownika z organizacji](../admin/add-users/delete-a-user.md).
-
-- **Rozważ włączenie archiwatywnej skrzynki pocztowej po odzyskaniu nieaktywnej skrzynki pocztowej.** Dzięki temu zwracany użytkownik lub nowy pracownik może przenieść stare wiadomości do archiwaowej skrzynki pocztowej. Gdy archiwum wygaśnie, zasady archiwizacji, które są częścią domyślnych zasad przechowywania usługi Exchange przypisanych do skrzynek pocztowych programu Exchange Online, będą przenosić do archiwaowej skrzynki pocztowej elementy, które mają dwa lata lub więcej lat. Jeśli archiwalne skrzynki pocztowe nie zostaną włączyć, elementy starsze niż dwa lata pozostaną w podstawowej skrzynce pocztowej użytkownika. Aby uzyskać więcej informacji, zobacz [Włączanie archiwalnych skrzynek pocztowych](enable-archive-mailboxes.md).
+- **Rozważ włączenie archiwum skrzynki pocztowej po odzyskaniu nieaktywnej skrzynki pocztowej.** Dzięki temu powracający użytkownik lub nowy pracownik może przenieść stare wiadomości do archiwum skrzynki pocztowej. Po wygaśnięciu blokady przechowywania zasady archiwum, które są częścią domyślnej Exchange zasad przechowywania usługi MRM przypisanych do skrzynek pocztowych Exchange Online, będą przenosić elementy, które są dwa lata lub starsze, do skrzynki pocztowej archiwum. Jeśli nie włączysz archiwum skrzynki pocztowej, elementy starsze niż dwa lata pozostaną w podstawowej skrzynce pocztowej użytkownika. Aby uzyskać więcej informacji, zobacz [Włączanie archiwalnych skrzynek pocztowych](enable-archive-mailboxes.md).

@@ -16,13 +16,13 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-description: Role administratora są powiązane z funkcjami biznesowymi i zapewniają uprawnienia do wykonywania określonych zadań w centrum administracyjnym. Na przykład administrator usługi otwiera bilety pomocy technicznej firmy Microsoft.
-ms.openlocfilehash: 6ee5c8410b64bffe66ee69e5c4468a9eda601cd8
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+description: Centrum administracyjne platformy Microsoft 365 umożliwia zarządzanie niektórymi rolami Microsoft Intune, które są mapowane na funkcje biznesowe i dają uprawnienia do wykonywania określonych zadań.
+ms.openlocfilehash: efff2d426d40103369126c082fcb8d7be44e031c
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882203"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436762"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Intune role administratora w Centrum administracyjne platformy Microsoft 365
 
@@ -43,7 +43,7 @@ W Centrum administracyjne platformy Microsoft 365 możesz przejść do pozycji *
 |administrator roli Intune    |   Przypisz administratora roli Intune użytkownikom, którzy mogą przypisywać uprawnienia Intune innym administratorom oraz zarządzać niestandardowymi i wbudowanymi rolami Intune.   |
 |Menedżer zasad i profilów     |   Przypisz rolę menedżera zasad i profilów do użytkowników, którzy zarządzają zasadami zgodności, profilami konfiguracji i rejestracją firmy Apple.   |
 |Operator tylko do odczytu     |   Przypisz rolę operatora tylko do odczytu użytkownikom, którzy mogą wyświetlać tylko użytkowników, urządzenia, szczegóły rejestracji i konfiguracje.   |
-|Administrator szkoły     |   Przypisz użytkownikom rolę administratora szkoły w celu uzyskania pełnego dostępu do zarządzania urządzeniami Windows 10 i iOS, aplikacjami i konfiguracjami w Intune for Education.   |
+|Administrator szkoły     |   Przypisz użytkownikom rolę administratora szkoły w celu uzyskania pełnego dostępu do zarządzania urządzeniami, aplikacjami i konfiguracjami Windows 10 i iOS w programie Intune for Education.   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administracja delegowana dla partnerów firmy Microsoft
 

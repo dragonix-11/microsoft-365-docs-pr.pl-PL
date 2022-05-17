@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 00f0471e32147f7171f60887d28386d6b7df204d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 99790921d51bf6d7b5a7268c541b4f754e7b99c9
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414728"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438866"
 ---
 # <a name="next-generation-protection-overview"></a>Omówienie ochrony nowej generacji
 
@@ -29,6 +29,7 @@ ms.locfileid: "65414728"
 - Program antywirusowy Microsoft Defender
 - [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Microsoft Defender dla Firm](../defender-business/index.yml)
 
 **Platformy**
 - System Windows
@@ -40,7 +41,7 @@ Ochrona punktu końcowego w usłudze Microsoft Defender obejmuje ochronę nowej 
 - [Dedykowana ochrona i aktualizacje produktów](manage-updates-baselines-microsoft-defender-antivirus.md), które obejmują aktualizacje związane z aktualizowaniem Program antywirusowy Microsoft Defender.
 
 > [!TIP]
-> Ochrona nowej generacji jest uwzględniona zarówno w planie Ochrona punktu końcowego w usłudze Microsoft Defender 1, jak i planie 2. [Dowiedz się więcej o usłudze Defender for Endpoint Plan 1 i Plan 2](defender-endpoint-plan-1-2.md)
+> Ochrona nowej generacji jest uwzględniona zarówno w planie Ochrona punktu końcowego w usłudze Microsoft Defender 1, jak i planie 2. [Dowiedz się więcej o usłudze Defender for Endpoint Plan 1 i Plan 2](defender-endpoint-plan-1-2.md) Ochrona nowej generacji jest również uwzględniana w Microsoft Defender dla Firm i Microsoft 365 Business Premium. [Porównanie funkcji zabezpieczeń w planach Microsoft 365 dla małych i średnich firm](../defender-business/compare-mdb-m365-plans.md).
 
 ## <a name="try-a-demo"></a>Wypróbuj pokaz!
 
@@ -61,7 +62,7 @@ Aby uzyskać informacje na temat konfigurowania usług ochrony nowej generacji, 
 > Konfiguracja i zarządzanie w Windows Server są w dużej mierze takie same jak w przypadku klientów Windows. Istnieją jednak pewne różnice. 
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

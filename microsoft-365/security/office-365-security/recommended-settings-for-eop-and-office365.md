@@ -19,12 +19,12 @@ ms.collection:
 description: Jakie są najlepsze rozwiązania dotyczące ustawień zabezpieczeń Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Defender? Jakie są bieżące zalecenia dotyczące standardowej ochrony? Co powinno być używane, jeśli chcesz być bardziej rygorystyczne? A jakie dodatki otrzymujesz, jeśli również używasz Ochrona usługi Office 365 w usłudze Defender?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6e2b52c9dbde60dfb554dd92c8a0cae2ba05ced
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: c1248c7192c9bd085938ae6436589a4445dd8ee8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302293"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437966"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Zalecane ustawienia zabezpieczeń EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -90,7 +90,7 @@ Aby utworzyć i skonfigurować zasady ochrony przed spamem, zobacz [Konfigurowan
 
 #### <a name="asf-settings-in-anti-spam-policies"></a>Ustawienia usługi ASF w zasadach ochrony przed spamem
 
-W tabeli w tej sekcji opisano ustawienia zaawansowanego filtru spamu (ASF), które są dostępne w zasadach ochrony przed spamem. Wszystkie te ustawienia są **wyłączone** dla poziomów **standardowych** i **ścisłych** . Aby uzyskać więcej informacji na temat ustawień asf, zobacz [Ustawienia zaawansowanego filtru spamu (ASF) w EOP](advanced-spam-filtering-asf-options.md).
+W tabeli w tej sekcji opisano ustawienia zaawansowanego filtru spamu (ASF), które są dostępne w zasadach ochrony przed spamem. Wszystkie te ustawienia są **wyłączone** dla poziomów **standardowych** i **ścisłych**. Aby uzyskać więcej informacji na temat ustawień asf, zobacz [Ustawienia zaawansowanego filtru spamu (ASF) w EOP](advanced-spam-filtering-asf-options.md).
 
 |Nazwa funkcji zabezpieczeń|Komentowanie|
 |---|---|
@@ -172,8 +172,8 @@ Ustawienia fałszowania są ze sobą powiązane, ale ustawienie **Pokaż pierwsz
 |**Działania**|||||
 |**Jeśli komunikat zostanie wykryty jako sfałszowany** <br/><br/> _AuthenticationFailAction_|**Przenoszenie wiadomości do folderów wiadomości-śmieci adresatów** <br/><br/> `MoveToJmf`|**Przenoszenie wiadomości do folderów wiadomości-śmieci adresatów** <br/><br/> `MoveToJmf`|**Kwarantanna komunikatu** <br/><br/> `Quarantine`|To ustawienie dotyczy sfałszowanych nadawców, którzy zostali automatycznie zablokowani, jak pokazano w szczegółowych [informacjach dotyczących fałszowania analizy](learn-about-spoof-intelligence.md) lub ręcznie zablokowanych na [liście dozwolonych/zablokowanych dzierżaw](tenant-allow-block-list.md). <br/><br/> Jeśli **wybierzesz pozycję Kwarantanna komunikatu**, pole **Zastosuj zasady kwarantanny** jest dostępne, aby wybrać zasady kwarantanny, które definiują, co użytkownicy mogą robić dla komunikatów, które są poddane kwarantannie jako fałszowanie. Podczas tworzenia nowych zasad ochrony przed wyłudzaniem informacji pusta wartość oznacza, że domyślne zasady kwarantanny są używane do definiowania historycznych możliwości komunikatów, które zostały poddane kwarantannie jako fałszowanie (DefaultFullAccessPolicy). <br/><br/> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny, które definiują bardziej restrykcyjne lub mniej restrykcyjne możliwości dla użytkowników. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
 |**Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa** <br/><br/> _EnableFirstContactSafetyTips_|Nie zaznaczono <br/><br/> `$false`|Nie zaznaczono <br/><br/> `$false`|Nie zaznaczono <br/><br/> `$false`|Aby uzyskać więcej informacji, zobacz [Pierwszy kontakt porada dotycząca bezpieczeństwa](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Pokaż (?) dla nieuwierzytelnionych nadawców na potrzeby fałszowania** <br/><br/> _EnableUnauthenticatedSender_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Dodaje znak zapytania (?) do zdjęcia nadawcy w Outlook dla niezidentyfikowanych sfałszowanych nadawców. Aby uzyskać więcej informacji, zobacz [Nieuwierzytelniony nadawca](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|**Pokaż tag "via"** <br/><br/> _EnableViaTag_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Dodaje tag via (chris@contoso.com za pośrednictwem fabrikam.com) do adresu Od, jeśli różni się on od domeny w podpisie DKIM lub **adresIE MAIL FROM** . <br/><br/> Aby uzyskać więcej informacji, zobacz [Nieuwierzytelniony nadawca](set-up-anti-phishing-policies.md#unauthenticated-sender).|
+|**Pokaż (?) dla nieuwierzytelnionych nadawców na potrzeby fałszowania** <br/><br/> _EnableUnauthenticatedSender_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Dodaje znak zapytania (?) do zdjęcia nadawcy w Outlook dla niezidentyfikowanych sfałszowanych nadawców. Aby uzyskać więcej informacji, zobacz [Nieuwierzytelnione wskaźniki nadawcy](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
+|**Pokaż tag "via"** <br/><br/> _EnableViaTag_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Dodaje tag via (chris@contoso.com za pośrednictwem fabrikam.com) do adresu Od, jeśli różni się on od domeny w podpisie DKIM lub **adresIE MAIL FROM** . <br/><br/> Aby uzyskać więcej informacji, zobacz [Nieuwierzytelnione wskaźniki nadawcy](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
 
 ## <a name="microsoft-defender-for-office-365-security"></a>zabezpieczenia Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -265,7 +265,7 @@ W programie PowerShell dla tych ustawień są używane polecenia cmdlet [New-Saf
 |---|:---:|:---:|:---:|:---:|---|
 |**Sejf Załączniki — nieznana odpowiedź na złośliwe oprogramowanie** <br/><br/> _Włączanie_ i _działanie_|**Wył.** <br/><br/> `-Enable $false` I `-Action Block`|**Blokuj** <br/><br/> `-Enable $true` I `-Action Block`|**Blokuj** <br/><br/> `-Enable $true` I `-Action Block`|**Blokuj** <br/><br/> `-Enable $true` I `-Action Block`|Gdy parametr _Enable_ jest $false, wartość parametru _Action_ nie ma znaczenia.|
 |**Zasady kwarantanny** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Podczas tworzenia nowych zasad Sejf Załączniki wartość pusta oznacza, że domyślne zasady kwarantanny są używane do definiowania historycznych możliwości komunikatów, które zostały poddane kwarantannie przez załączniki Sejf (AdminOnlyAccessPolicy). <br/><br/> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny, które definiują więcej możliwości dla użytkowników. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
-|**Przekierowanie załącznika z wykrytymi załącznikami** : **Włącz przekierowanie** <br/><br/> _Przekierowanie_ <br/><br/> _RedirectAddress_|Nie wybrano i nie określono adresu e-mail. <br/><br/> `-Redirect $false` <br/><br/> _RedirectAddress_ jest pusty (`$null`)|Nie wybrano i nie określono adresu e-mail. <br/><br/> `-Redirect $false` <br/><br/> _RedirectAddress_ jest pusty (`$null`)|Wybrano i określ adres e-mail. <br/><br/> `$true` <br/><br/> adres e-mail|Wybrano i określ adres e-mail. <br/><br/> `$true` <br/><br/> adres e-mail|Przekieruj komunikaty do administratora zabezpieczeń w celu sprawdzenia. <br/><br/> **Uwaga**: to ustawienie nie jest skonfigurowane w zasadach zabezpieczeń wstępnie ustawionych w **warstwie Standardowa**, **Ścisła** ani **Wbudowana ochrona** . Wartości **Standardowe** i **Ścisłe** wskazują **zalecane** wartości w nowych zasadach Sejf Załączniki, które tworzysz.|
+|**Przekierowanie załącznika z wykrytymi załącznikami** : **Włącz przekierowanie** <br/><br/> _Przekierowanie_ <br/><br/> _RedirectAddress_|Nie wybrano i nie określono adresu e-mail. <br/><br/> `-Redirect $false` <br/><br/> _RedirectAddress_ jest pusty (`$null`)|Nie wybrano i nie określono adresu e-mail. <br/><br/> `-Redirect $false` <br/><br/> _RedirectAddress_ jest pusty (`$null`)|Wybrano i określ adres e-mail. <br/><br/> `$true` <br/><br/> adres e-mail|Wybrano i określ adres e-mail. <br/><br/> `$true` <br/><br/> adres e-mail|Przekieruj komunikaty do administratora zabezpieczeń w celu sprawdzenia. <br/><br/> **Uwaga**: to ustawienie nie jest skonfigurowane w zasadach zabezpieczeń wstępnie ustawionych w **warstwie Standardowa**, **Ścisła** ani **Wbudowana ochrona**. Wartości **Standardowe** i **Ścisłe** wskazują **zalecane** wartości w nowych zasadach Sejf Załączniki, które tworzysz.|
 |**Zastosuj odpowiedź wykrywania załączników Sejf, jeśli skanowanie nie może zakończyć się (przekroczenie limitu czasu lub błędy)** <br/><br/> _ActionOnError_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
 
 ### <a name="safe-links-settings"></a>ustawienia linków Sejf
@@ -288,7 +288,7 @@ W programie PowerShell używasz polecenia cmdlet [Set-AtpPolicyForO365](/powersh
 |Nazwa funkcji zabezpieczeń|Domyślne|Wbudowana ochrona|Komentowanie|
 |---|:---:|:---:|---|
 |**Blokuj następujące adresy URL** <br/><br/> _ExcludedUrls_|Puste <br/><br/> `$null`|Puste <br/><br/> `$null`|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. <br/><br/> Aby uzyskać więcej informacji, zobacz [listę "Blokuj następujące adresy URL" dla linków Sejf](safe-links.md#block-the-following-urls-list-for-safe-links).
-|**Używanie linków Sejf w aplikacjach Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Na <br/><br/> `$true`|Na <br/><br/> `$true`|Używaj linków Sejf w obsługiwanych aplikacjach Office 365 klasycznych i mobilnych (iOS i Android). Aby uzyskać więcej informacji, zobacz [ustawienia linków Sejf dla aplikacji Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Używanie linków Sejf w aplikacjach Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Na <br/><br/> `$true`|Na <br/><br/> `$true`|Użyj linków Sejf w obsługiwanych aplikacjach Office 365 desktop i mobile (iOS i Android). Aby uzyskać więcej informacji, zobacz [ustawienia linków Sejf dla aplikacji Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
 |**Nie śledź, gdy użytkownicy klikają linki chronione w aplikacjach Office 365** <br/><br/> _TrackClicks_|Na <br/><br/> `$false`|Wył. <br/><br/> `$true`|Wyłączenie tego ustawienia (ustawienie _pozycji TrackClicks_ na `$true`) śledzi kliknięcia użytkowników w obsługiwanych aplikacjach Office 365.|
 |**Nie zezwalaj użytkownikom na klikanie oryginalnego adresu URL w aplikacjach Office 365** <br/><br/> _AllowClickThrough_|Na <br/><br/> `$false`|Na <br/><br/> `$false`|Włączenie tego ustawienia (ustawienie _allowClickThrough_ `$false`na ) uniemożliwia kliknięcie oryginalnego adresu URL w obsługiwanych aplikacjach Office 365.|
 
@@ -322,7 +322,7 @@ W programie PowerShell dla tych ustawień są używane polecenia cmdlet [New-Saf
 |**Powiadomienie**||||||
 |**Jak chcesz powiadomić użytkowników?**|**Użyj domyślnego tekstu powiadomienia**|**Użyj domyślnego tekstu powiadomienia**|**Użyj domyślnego tekstu powiadomienia**|**Użyj domyślnego tekstu powiadomienia**|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. <br/><br/> Możesz wybrać pozycję **Użyj niestandardowego tekstu powiadomień** (_CustomNotificationText_), aby wprowadzić dostosowany tekst powiadomienia do użycia. Możesz również wybrać pozycję **Użyj Microsoft Translator do automatycznej lokalizacji** (_UseTranslatedNotificationText_), aby przetłumaczyć niestandardowy tekst powiadomienia na język użytkownika.
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 - Czy szukasz najlepszych rozwiązań dotyczących **reguł przepływu poczty Exchange (nazywanych również regułami transportu**)? Zobacz [Najlepsze rozwiązania dotyczące konfigurowania reguł przepływu poczty w Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 

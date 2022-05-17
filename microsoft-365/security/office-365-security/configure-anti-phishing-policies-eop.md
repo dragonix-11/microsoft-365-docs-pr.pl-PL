@@ -16,12 +16,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak tworzyć, modyfikować i usuwać zasady ochrony przed wyłudzaniem informacji, które są dostępne w organizacjach Exchange Online Protection (EOP) z Exchange Online skrzynkami pocztowymi lub bez tych zasad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f199cb3dbaddc47416c24a82b3066a2631641706
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 08523e98577f208858fb615911ef24aacf7bedc6
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847404"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438910"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurowanie zasad ochrony przed wyłudzaniem informacji w usłudze EOP
 
@@ -138,7 +138,7 @@ Utworzenie niestandardowych zasad ochrony przed wyłudzaniem informacji w portal
 
      Aby włączyć ustawienie, zaznacz pole wyboru. Aby go wyłączyć, wyczyść pole wyboru.
 
-     <sup>\*</sup> To ustawienie jest dostępne tylko wtedy, gdy **wybrano opcję Włącz analizę fałszowania** na poprzedniej stronie. Aby uzyskać więcej informacji, zobacz [Nieuwierzytelniony nadawca](set-up-anti-phishing-policies.md#unauthenticated-sender).
+     <sup>\*</sup> To ustawienie jest dostępne tylko wtedy, gdy **wybrano opcję Włącz analizę fałszowania** na poprzedniej stronie. Aby uzyskać więcej informacji, zobacz [Nieuwierzytelnione wskaźniki nadawcy](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).
 
    Po zakończeniu kliknij przycisk **Dalej**.
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj etykiet poufności, aby chronić zawartość w witrynach SharePoint i Microsoft Teams oraz w grupach Microsoft 365.
-ms.openlocfilehash: 9b9427fc736dfee3ea326b8c523d3f872ad98c70
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 56b6d53d56c8f9fb16e900271b8d6a4c152f6440
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286105"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438010"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Używanie etykiet poufności do ochrony zawartości w witrynach Microsoft Teams, Microsoft 365 i SharePoint
 
@@ -47,9 +47,6 @@ Oprócz używania [etykiet poufności](sensitivity-labels.md) do klasyfikowania 
 Po zastosowaniu tej etykiety poufności do obsługiwanego kontenera etykieta automatycznie stosuje klasyfikację i skonfigurowane ustawienia ochrony do lokacji lub grupy.
 
 Zawartość w tych kontenerach nie dziedziczy jednak etykiet klasyfikacji ani ustawień plików i wiadomości e-mail, takich jak oznaczenia wizualne i szyfrowanie. Aby umożliwić użytkownikom etykietowanie dokumentów w witrynach SharePoint lub witrynach zespołu, upewnij się, że [włączono etykiety poufności dla Office plików w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-
-> [!NOTE]
-> Etykiety poufności dla kontenerów nie są obsługiwane w przypadku Office 365 content delivery networks (CDN).
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Używanie etykiet poufności dla Microsoft Teams, grup Microsoft 365 i witryn SharePoint
 
@@ -150,7 +147,7 @@ Nie wszystkie aplikacje obsługują konteksty uwierzytelniania. Jeśli użytkown
 
 - Office dla sieci web, w tym Outlook dla sieci Web
 
-- Microsoft Teams dla Windows i macOS (z wyłączeniem Teams aplikacji internetowej)
+- Microsoft Teams dla Windows i macOS (z wyłączeniem aplikacji internetowej Teams)
 
 - Microsoft Planner
 
@@ -169,8 +166,8 @@ Nie wszystkie aplikacje obsługują konteksty uwierzytelniania. Jeśli użytkown
 - synchronizacja usługi OneDrive aplikacji, minimalne wersje:
     - Windows: 21.002
     - macOS: 21.002
-    - iOS: wdrażanie w wersji 12.30
-    - Android: Jeszcze nieobsługiwane
+    - iOS: Wprowadzenie w wersji 12.30
+    - Android: jeszcze nieobsługiwane
 
 Znane ograniczenia dotyczące tej wersji zapoznawczej:
 
@@ -183,7 +180,7 @@ Znane ograniczenia dotyczące tej wersji zapoznawczej:
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>Konfigurowanie ustawień domyślnego typu łącza udostępniania witryny przy użyciu ustawień zaawansowanych programu PowerShell
 
-Oprócz ustawień etykiet dla witryn i grup, które można skonfigurować w portalu zgodności usługi Microsoft Purview, można również skonfigurować domyślny typ linku udostępniania dla witryny. Etykiety poufności dokumentów można również skonfigurować dla domyślnego typu łącza udostępniania. Te ustawienia, które pomagają zapobiegać nadmiernemu udostępnianiu, są wybierane automatycznie, gdy użytkownicy wybierają przycisk **Udostępnij** w swoich aplikacjach Office. 
+Oprócz ustawień etykiet dla witryn i grup, które można skonfigurować z portal zgodności Microsoft Purview, można również skonfigurować domyślny typ linku udostępniania dla witryny. Etykiety poufności dokumentów można również skonfigurować dla domyślnego typu łącza udostępniania. Te ustawienia, które pomagają zapobiegać nadmiernemu udostępnianiu, są wybierane automatycznie, gdy użytkownicy wybierają przycisk **Udostępnij** w swoich aplikacjach Office. 
 
 Aby uzyskać więcej informacji i instrukcji, zobacz [Używanie etykiet poufności do konfigurowania domyślnego typu linku udostępniania witryn i dokumentów w SharePoint i OneDrive](sensitivity-labels-default-sharing-link.md).
 

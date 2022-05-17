@@ -1,5 +1,5 @@
 ---
-title: Krok 4. Przesyłanie dalej wiadomości e-mail byłego pracownika do innego pracownika lub konwertowanie na udostępnioną skrzynkę pocztową
+title: Krok 4. Przekazywanie wiadomości e-mail byłego pracownika do innego pracownika lub konwertowanie na udostępnioną skrzynkę pocztową
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -24,45 +24,45 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Wykonaj poniższe czynności, aby przesyłać dalej wiadomości e-mail byłego pracownika do innego pracownika lub konwertować je na udostępnioną skrzynkę pocztową.
-ms.openlocfilehash: 910fb8c30982cc02c4d71f1236fd54095eda96c7
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Przekaż wiadomość e-mail byłego pracownika do innego pracownika lub przekonwertuj ją na udostępnioną skrzynkę pocztową, w której kilka osób będzie mogło uzyskać do niego dostęp zamiast do jednej osoby.
+ms.openlocfilehash: 302517ae44d9f263b293a6aa629a7bc58f8594ec
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011359"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436586"
 ---
-# <a name="step-4---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Krok 4. Przesyłanie dalej wiadomości e-mail byłego pracownika do innego pracownika lub konwertowanie na udostępnioną skrzynkę pocztową
+# <a name="step-4---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Krok 4. Przekazywanie wiadomości e-mail byłego pracownika do innego pracownika lub konwertowanie na udostępnioną skrzynkę pocztową
 
-W tym kroku przypiszesz adres e-mail byłego pracownika do innego pracownika lub przekonwertujesz skrzynkę pocztową tego użytkownika na udostępnioną skrzynkę pocztową.
+W tym kroku przypiszesz adres e-mail byłego pracownika do innego pracownika lub przekonwertujesz skrzynkę pocztową użytkownika na udostępnioną skrzynkę pocztową.
 
 ## <a name="convert-former-employees-mailbox-to-a-shared-mailbox"></a>Konwertowanie skrzynki pocztowej byłego pracownika na udostępnioną skrzynkę pocztową
 
-Po przekonwertowaniu skrzynki pocztowej użytkownika na udostępnioną skrzynkę pocztową wszystkie istniejące wiadomości e-mail i kalendarz zostaną zachowane. Tylko teraz znajduje się on w udostępnionej skrzynce pocztowej, gdzie kilka osób będzie mieć do niego dostęp zamiast jednej osoby. Jeśli chcesz, możesz później przekonwertować udostępnioną skrzynkę pocztową na skrzynkę pocztową użytkownika (prywatną).
+Podczas konwertowania skrzynki pocztowej użytkownika na udostępnioną skrzynkę pocztową wszystkie istniejące wiadomości e-mail i kalendarz są zachowywane. Dopiero teraz jest w udostępnionej skrzynce pocztowej, w której kilka osób będzie mogło uzyskać do niej dostęp zamiast jednej osoby. Jeśli chcesz, możesz przekonwertować udostępnioną skrzynkę pocztową z powrotem na skrzynkę pocztową użytkownika (prywatną) w późniejszym terminie.
 
-- Utworzenie udostępnionej skrzynki pocztowej to mniej kosztowna sposób, ponieważ nie trzeba opłacać licencji, o ile skrzynka pocztowa jest mniejsza **niż 50 GB**. Jeśli jego numer wynosi ponad 50 GB, musisz przypisać do niego licencję.
+- Tworzenie udostępnionej skrzynki pocztowej jest tańszym sposobem, ponieważ nie trzeba płacić za licencję **, o ile skrzynka pocztowa jest mniejsza niż 50 GB**. Jeśli jest ona ponad 50 GB, musisz przypisać do niej licencję.
 - Jeśli przekonwertowano skrzynkę pocztową na udostępnioną skrzynkę pocztową, zostaną udostępnione również wszystkie stare wiadomości. Może to zająć dużo miejsca.
-- Jeśli skonfigurujsz przesyłanie dalej poczty e-mail, do bieżącego pracownika będą wysyłane tylko nowe wiadomości e-mail wysyłane do byłego pracownika.
+- Jeśli skonfigurujesz przekazywanie wiadomości e-mail, do bieżącego pracownika będą wysyłane tylko *nowe* wiadomości e-mail wysyłane do byłego pracownika.
 
-Wykonaj poniższe czynności [, aby przekonwertować skrzynkę pocztową użytkownika na udostępnioną skrzynkę pocztową](../email/convert-user-mailbox-to-shared-mailbox.md).
+Wykonaj następujące kroki [, aby przekonwertować skrzynkę pocztową użytkownika na udostępnioną skrzynkę pocztową](../email/convert-user-mailbox-to-shared-mailbox.md).
 
-## <a name="forward-a-former-employees-email-to-another-employee"></a>Przesyłanie dalej wiadomości e-mail byłego pracownika do innego pracownika
+## <a name="forward-a-former-employees-email-to-another-employee"></a>Przekazywanie wiadomości e-mail byłego pracownika do innego pracownika
 
  > [!IMPORTANT]
- > Jeśli chcesz skonfigurować przesyłanie dalej poczty e-mail lub udostępnioną skrzynkę pocztową, na końcu nie usuwaj konta byłego pracownika. Jest ono niezbędne do przesyłania dalej poczty e-mail i udostępniania skrzynki pocztowej.
+ > Jeśli konfigurujesz przekazywanie wiadomości e-mail lub udostępnioną skrzynkę pocztową, nie usuwaj konta byłego pracownika. Jest ono niezbędne do przesyłania dalej poczty e-mail i udostępniania skrzynki pocztowej.
 
 1. W centrum administracyjnym przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktywni użytkownicy</a>.
-2. Wybierz imię i nazwisko pracownika, którego chcesz zablokować, a następnie wybierz **kartę** Poczta.
-3. W **obszarze Przesyłanie dalej poczty e-mail** wybierz **pozycję Zarządzaj przesyłaniem dalej poczty e-mail**.
-4. Włącz opcję **Przesyłaj dalej wszystkie wiadomości e-mail wysyłane do tej skrzynki pocztowej**. W polu **Adres przesyłania** dalej wpisz adres e-mail bieżącego pracownika, który będzie otrzymać wiadomość e-mail.
+2. Wybierz nazwę pracownika, którego chcesz zablokować, a następnie wybierz kartę **Poczta** .
+3. W obszarze **Przekazywanie wiadomości e-mail** wybierz pozycję **Zarządzaj przekazywaniem wiadomości e-mail**.
+4. Włącz opcję **Przesyłaj dalej wszystkie wiadomości e-mail wysyłane do tej skrzynki pocztowej**. W polu **Adres przekazywania** wpisz adres e-mail bieżącego pracownika, który otrzyma wiadomość e-mail.
 5. Wybierz **Zapisz**.
 6. Pamiętaj, aby nie usuwać konta byłego pracownika.
 
-### <a name="cancel-outlook-meetings"></a>Anulowanie Outlook spotkania
+### <a name="cancel-outlook-meetings"></a>Anulowanie spotkań Outlook
 
-Pamiętaj o anulowaniu wszystkich spotkań, które były wcześniej przez byłego użytkownika w kalendarzu. Pozwala to użytkownikom na usuwanie spotkań utworzonych przez byłego użytkownika.
+Pamiętaj, aby anulować wszystkie spotkania, które były użytkownik miał w kalendarzu. Dzięki temu użytkownicy mogą usuwać spotkania utworzone przez byłego użytkownika.
 
-Jeśli osoba miała spotkania, podczas których rezerwowała sprzęt lub pokoje, nie będzie dostępna do rezerwacji do czasu anulowania tych spotkań. Aby [uzyskać instrukcje, zobacz](https://support.microsoft.com/office/delete-an-appointment-or-a-meeting-2703bfdb-9a07-4396-be3b-a9f79438455b) Usuwanie terminu lub spotkania.
+Jeśli osoba miała spotkania z zarezerwowanym sprzętem lub pokojami, nie będzie dostępna do zarezerwowania, dopóki te spotkania nie zostaną odwołane. Przeczytaj [artykuł Usuń termin lub spotkanie](https://support.microsoft.com/office/delete-an-appointment-or-a-meeting-2703bfdb-9a07-4396-be3b-a9f79438455b) , aby zapoznać się z instrukcjami.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
@@ -70,6 +70,6 @@ Jeśli osoba miała spotkania, podczas których rezerwowała sprzęt lub pokoje,
 
 [Uzyskiwanie dostępu do skrzynki pocztowej innej osoby](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
 
-[Exchange administracyjnego w programie Exchange Online](/exchange/exchange-admin-center)
+[centrum administracyjne Exchange w Exchange Online](/exchange/exchange-admin-center)
 
 [Menedżer elementów poczty i kalendarza innej osoby](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

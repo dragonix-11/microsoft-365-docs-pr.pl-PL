@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Dowiedz się więcej o używaniu scentralizowanych dodatków do wdrażania dodatków dla użytkowników i grup w organizacji.
-ms.openlocfilehash: dadb308d45b17d98c7bf6a5dd0c214691d264b5f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec972cd8ce837ae21384bc3b97513bd1263a7d84
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094289"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435440"
 ---
-# <a name="manage-add-ins-in-the-admin-center"></a>Zarządzanie dodatkami w centrum administracyjnym
+# <a name="manage-add-ins-in-the-microsoft-365-admin-center"></a>Zarządzanie dodatkami w Centrum administracyjne platformy Microsoft 365
 
 Office dodatki ułatwiają personalizację dokumentów i usprawniają sposób uzyskiwania dostępu do informacji w Internecie. Zobacz [Rozpoczynanie korzystania z dodatku Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 
@@ -154,7 +154,7 @@ Jeśli wdrożony dodatek nie obsługuje poleceń dodatku lub chcesz wyświetlić
 
     ![Przycisk Zapisz w Outlook.](../../media/getaddinsicon.png)
   
-2. Wybierz pozycję **Zarządzane przez administratora** w lewej nawigacji. 
+2. Wybierz pozycję **Zarządzane przez administratora** w lewym okienku nawigacji. 
 
 ## <a name="related-content"></a>Zawartość pokrewna
 

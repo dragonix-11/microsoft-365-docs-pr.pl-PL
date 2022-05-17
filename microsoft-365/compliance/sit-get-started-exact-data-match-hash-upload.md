@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Skrót i przekaż tabelę źródła informacji poufnych, aby uzyskać dokładne dane zgodne z typami informacji poufnych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0277a53b74359bdcac1de8fa6013082b991247f4
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d3c45c618caad24084ee9c85410be886863dd733
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417529"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437640"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Utwórz skrót i przekaż tabelę źródła informacji poufnych dla dokładnych typów informacji poufnych opartych na dopasowaniu danych 
 
@@ -231,6 +231,9 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
+
+> [!NOTE]
+> Aby zautomatyzować proces skrótu i przekazywania po jego utworzeniu po raz pierwszy, zobacz [Odświeżanie dokładnego dopasowania danych do pliku tabeli źródła informacji poufnych](sit-use-exact-data-refresh-data.md).
 
 ## <a name="next-step"></a>Następny krok
 

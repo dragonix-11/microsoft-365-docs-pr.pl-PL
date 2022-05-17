@@ -1,5 +1,5 @@
 ---
-title: Używanie etykiet wrażliwości jako warunków zasad DLP
+title: Używanie etykiet poufności jako warunków w zasadach DLP
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,76 +19,78 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Informacje o usługach i typach elementów, w których można używać etykiet wrażliwości jako warunków w zasadach ochrony przed prywatnością
-ms.openlocfilehash: 1117471e38b430f1d7289c6aae76994ac5acd494
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: Dowiedz się więcej o usługach i typach elementów, których można używać jako warunków w zasadach DLP
+ms.openlocfilehash: bf0fcb327b2869e21a54de22822d0d51c72e25b8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014664"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438471"
 ---
-# <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Używanie etykiet wrażliwości jako warunków zasad DLP
+# <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Używanie etykiet poufności jako warunków w zasadach DLP
 
-Etykiet wrażliwości [można użyć](sensitivity-labels.md) jako warunku zasad DLP dla tych lokalizacji:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-- Exchange Online-mail
+Etykiet [poufności](sensitivity-labels.md) można użyć jako warunku w zasadach DLP dla tych lokalizacji:
+
+- Exchange Online wiadomości e-mail
 - SharePoint Online
-- OneDrive dla Firm witryn
-- Windows 10 urządzenia
+- witryny OneDrive dla Firm
+- urządzenia Windows 10
 
-Etykiety wrażliwości są wyświetlane jako opcja na **liście Zawartość** zawiera.
+Etykiety poufności są wyświetlane jako opcja na liście **Zawartość zawiera** .
 
 > [!div class="mx-imgBorder"]
-> ![jako warunek.](../media/dlp-sensitivity-label-as-a-condition.png)
+> ![etykieta poufności jako warunek.](../media/dlp-sensitivity-label-as-a-condition.png)
 
 > [!IMPORTANT]
-> **Etykiety** wrażliwości jako warunku nie będą dostępne, jeśli wybrano opcję  Teams czatów i kanałów jako lokalizację do zastosowania zasad DLP.
+> **Etykiety poufności** jako warunek nie będą dostępne, jeśli wybrano **Teams wiadomości czatu i kanału** jako lokalizację do zastosowania zasad DLP.
 
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>Obsługiwane elementy, scenariusze i porady dotyczące zasad
 
-Etykiet wrażliwości można używać jako warunków dla tych elementów i w tych scenariuszach.
+Etykiet poufności można używać jako warunków dla tych elementów i w tych scenariuszach.
 
 ### <a name="supported-items"></a>Obsługiwane elementy
 
-|Usługa  |Typ elementu  |Dostępne do porady dotyczącej zasad  |Można wymusić  |
+|Usługa  |Typ elementu  |Porada dotycząca zasad dostępna dla zasad  |Wykonalne  |
 |---------|---------|---------|---------|
-|Exchange    |wiadomość e-mail         |tak         |tak         |
-|Exchange    |załącznik wiadomości e-mail         |nie         |tak *         |
-|SharePoint Online     |elementy w u SharePoint Online         |tak         |tak         |
-|OneDrive dla Firm     |elementy         |tak         |tak         |
-|Teams     |Teams wiadomości na kanale         |nie dotyczy         |nie dotyczy         |
-|Teams     |załączniki         |tak **         |tak **         |
-|Windows 10 urządzenia     |elementy         |tak         |tak         |
-|MCAS (wersja zapoznawcza) |elementy         |tak         |tak         |
+|Exchange    |wiadomość e-mail         |Tak         |Tak         |
+|Exchange    |załącznik wiadomości e-mail         |Nr         |Tak *         |
+|SharePoint Online     |elementy w usłudze SharePoint Online         |Tak         |Tak         |
+|OneDrive dla Firm     |Elementy         |Tak         |Tak         |
+|Teams     |komunikaty Teams i kanałów         |nie dotyczy         |nie dotyczy         |
+|Teams     |Załączniki         |Tak **         |Tak **         |
+|urządzenia Windows 10     |Elementy         |Tak         |Tak         |
+|MCAS (wersja zapoznawcza) |Elementy         |Tak         |Tak         |
 
-\*Wykrywanie DLP załączników wiadomości e-mail z etykietami wrażliwości jest obsługiwane tylko Office typów plików.
+\*Wykrywanie przez DLP załączników wiadomości e-mail z etykietami poufności jest obsługiwane tylko w przypadku typów plików Office opartych na formacie Open XML.
 
-\** Załączniki wysyłane w Teams 1:1 na czacie lub kanałach są automatycznie przekazywane do OneDrive dla Firm i SharePoint. Jeśli więc SharePoint online lub usługi OneDrive dla Firm zostaną uwzględnione jako lokalizacje w Twoich zasadach DLP, załączniki z etykietami wysłane w programie Teams zostaną automatycznie uwzględnione w zakresie tego warunku. Teams jako lokalizacji nie musi być wybrane w zasadach DLP.
+\** Załączniki wysyłane w Teams ponad 1:1 czat lub kanały są automatycznie przekazywane do OneDrive dla Firm i SharePoint. Jeśli więc SharePoint Online lub OneDrive dla Firm są uwzględnione jako lokalizacje w zasadach DLP, załączniki wysyłane w Teams zostaną automatycznie uwzględnione w zakresie tego warunku. Teams jako lokalizacja nie musi być wybrana w zasadach DLP.
 
 > [!NOTE]
-> Możliwość wykrywania etykiet wrażliwości w usługach DLP SharePoint i OneDrive dla firm jest ograniczona. Aby uzyskać więcej informacji, zobacz [Włączanie etykiet wrażliwości Office plików w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations).
+> Zdolność DLP do wykrywania etykiet poufności w SharePoint i OneDrive dla firm jest ograniczona. Aby uzyskać więcej informacji, zobacz [Włączanie etykiet poufności dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations).
 
 ### <a name="supported-scenarios"></a>Obsługiwane scenariusze
 
-- Gdy administrator usługi DLP zdecyduje się dołączyć co najmniej jedną etykietę wrażliwości jako warunek, będzie mógł wyświetlić listę wszystkich etykiet wrażliwości w dzierżawie.
+- Administrator DLP będzie mógł wyświetlić listę wszystkich etykiet poufności w dzierżawie, gdy zdecyduje się na uwzględnienie co najmniej jednej etykiety poufności jako warunku.
 
-- Używanie etykiet wrażliwości jako warunku jest obsługiwane we wszystkich obciążeniach pracą, jak podano w macierzy pomocy technicznej powyżej.
+- Używanie etykiet poufności jako warunku jest obsługiwane we wszystkich obciążeniach, jak wskazano w powyższej macierzy obsługi.
 
-- Porady dotyczące zasad DLP będą nadal wyświetlane we wszystkich obciążeniach (z wyjątkiem Outlook Win32) w przypadku zasad DLP, które zawierają etykiety wrażliwości jako warunek.
+- Porady dotyczące zasad DLP będą nadal wyświetlane w obciążeniach (z wyjątkiem Outlook Win32) dla zasad DLP, które zawierają etykietę poufności jako warunek.
 
-- Etykiety wrażliwości będą również wyświetlane jako część wiadomości e-mail raportu o zdarzeniu, jeśli zasady DLP z etykietą wrażliwości jako warunek są dopasowane.
+- Etykiety poufności będą również wyświetlane jako część wiadomości e-mail raportu o zdarzeniu, jeśli zostaną dopasowane zasady DLP z etykietą poufności jako warunkiem.
 
-- Szczegóły etykiet wrażliwości będą również wyświetlane w dzienniku inspekcji dopasowania reguł DLP dla dopasowania zasad DLP, które zawiera etykietę wrażliwości jako warunek.
+- Szczegóły etykiety poufności będą również wyświetlane w dzienniku inspekcji zgodności reguł DLP dla dopasowania zasad DLP, który zawiera etykietę poufności jako warunek.
 
 
 ### <a name="support-policy-tips"></a>Porady dotyczące zasad pomocy technicznej
 
 
-|Obciążenie pracą  |Obsługiwane/nie obsługiwane porady dotyczące zasad  |
+|Obciążenia  |Obsługiwane/nieobsługiwane porady dotyczące zasad  |
 |---------|---------|
-|OWA |    obsługiwane     |
-|Outlook Win 32    |  nie jest obsługiwane       |
-|SharePoint   |   obsługiwane      |
-|OneDrive dla Firm    |    obsługiwane     |
-|urządzenia punktu końcowego   |  nie jest obsługiwane       |
+|OWA |    Obsługiwane     |
+|Outlook Win 32    |  nieobsługiwane       |
+|SharePoint   |   Obsługiwane      |
+|OneDrive dla Firm    |    Obsługiwane     |
+|urządzenia punktu końcowego   |  nieobsługiwane       |

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ae77d89a568f79e3369f9ded4cfb0a96aa0255d0
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 4c65943ac28315f54e6c2f4cc8b2314e810b291f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782550"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438084"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Krok nr 5. Opracowywanie i testowanie przypadków użycia
 
@@ -102,7 +102,7 @@ Ponadto zespoły SOC mogły wykonać odkrycia opisane w poniższej tabeli w odni
 
 |Zespół SOC|Wymóg|Osoby spełniające wymagania|Proces spełniający wymagania|Odpowiednia technologia|Zidentyfikowano lukę|Dziennik zmian przypadków użycia|Wykluczenie (Y/N)|
 |---|---|---|---|---|---|---|---|
-|Nadzór SOC|Wszystkie zasoby połączone z zatwierdzonymi sieciami są identyfikowane i kategoryzowane|Nadzór SOC, właściciele BU, właściciele aplikacji, właściciele zasobów IT itp.|Scentralizowany system zarządzania zasobami umożliwiający odnajdywanie i wyświetlanie listy kategorii i atrybutów zasobów na podstawie ryzyka.|ServiceNow lub inne zasoby. <br><br>[spis urządzeń Microsoft 365](/security/defender-endpoint/device-discovery)|Odnaleziono tylko 70% zasobów. Microsoft 365 Defender śledzenie korygowania obowiązujące tylko w przypadku znanych zasobów|Dojrzałe usługi zarządzania cyklem życia zasobów w celu zapewnienia, że Microsoft 365 Defender ma 100% pokrycia|N|
+|Nadzór SOC|Wszystkie zasoby połączone z zatwierdzonymi sieciami są identyfikowane i kategoryzowane|Nadzór SOC, właściciele BU, właściciele aplikacji, właściciele zasobów IT itp.|Scentralizowany system zarządzania zasobami umożliwiający odnajdywanie i wyświetlanie listy kategorii i atrybutów zasobów na podstawie ryzyka.|ServiceNow lub inne zasoby. <br><br>[spis urządzeń Microsoft 365](/microsoft-365/security/defender-endpoint/device-discovery)|Odnaleziono tylko 70% zasobów. Microsoft 365 Defender śledzenie korygowania obowiązujące tylko w przypadku znanych zasobów|Dojrzałe usługi zarządzania cyklem życia zasobów w celu zapewnienia, że Microsoft 365 Defender ma 100% pokrycia|N|
 |Inżynieria & SecOps Teams|Wysoki wpływ i krytyczne luki w zabezpieczeniach zasobów są korygowane zgodnie z zasadami|Inżynierowie secOps, analitycy SOC: luka w zabezpieczeniach & zgodności, inżynieria zabezpieczeń|Zdefiniowany proces kategoryzowania luk w zabezpieczeniach wysokiego ryzyka i krytycznych|[Pulpity nawigacyjne zarządzania zagrożeniami i lukami w zabezpieczeniach](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Usługa Defender for Endpoint zidentyfikowała urządzenia o dużym wpływie i wysokim poziomie alertów bez planu korygowania ani implementacji zalecanego działania firmy Microsoft|Dodaj przepływ pracy do powiadamiania właścicieli zasobów, gdy działanie korygujące jest wymagane w ciągu 30 dni dla zasad; Zaimplementuj system biletów, aby powiadomić właścicieli zasobów o krokach korygowania.|N|
 |Monitorowanie Teams|Stan zagrożenia i luki w zabezpieczeniach jest zgłaszany za pośrednictwem firmowego portalu intranetowego|Analityk SOC warstwy 2|Automatycznie generowane raporty z Microsoft 365 Defender pokazujące postęp korygowania zasobów|[Alerty w Centrum zgodności & zabezpieczeń](/microsoft-365/security/office-365-security/alerts) <br><br> Monitorowanie wskaźnika bezpieczeństwa|Brak widoków ani raportów pulpitu nawigacyjnego przekazywanych właścicielom zasobów dotyczących zagrożeń i stanu luk w zabezpieczeniach zasobów.|Utwórz skrypt automatyzacji, aby wypełnić stan korygowania luk w zabezpieczeniach dotyczących wysokiego ryzyka i krytycznego zasobu w organizacji.|N|
 
@@ -116,7 +116,7 @@ Konserwację elementów runbook i podręczników zespołu SOC można organizowa�
 
 ## <a name="use-a-standard-framework-for-escalation"></a>Używanie standardowej struktury na potrzeby eskalacji
 
-Podręczniki to kroki, które zespoły SOC będą musiały wykonać w przypadku wystąpienia rzeczywistego zdarzenia w oparciu o pomyślną integrację i test przypadku użycia. Dlatego konieczne jest, aby SOC przestrzegała sformalizowanego podejścia do reagowania na zdarzenia, takiego jak [NIST Incident Response Standard](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) , który stał się jednym z wiodących standardów branżowych w zakresie reagowania na zdarzenia.
+Podręczniki to kroki, które zespoły SOC będą musiały wykonać w przypadku wystąpienia rzeczywistego zdarzenia w oparciu o pomyślną integrację i test przypadku użycia. Dlatego konieczne jest, aby SOC przestrzegała sformalizowanego podejścia do reagowania na zdarzenia, takiego jak [NIST Incident Response Standard](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf), który stał się jednym z wiodących standardów branżowych w zakresie reagowania na zdarzenia.
 
 Czteroetapowy proces reagowania na zdarzenia NIST obejmuje cztery fazy:
 
