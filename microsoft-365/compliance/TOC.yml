@@ -362,7 +362,7 @@
               href: sit-modify-keyword-dictionary.md
             - name: Zarządzaj schematem dokładnego dopasowania danych
               href: sit-use-exact-data-manage-schema.md
-            - name: Odśwież plik tabeli źródła informacji poufnych
+            - name: Odśwież plik tabeli źródła informacji poufnych EDM
               href: sit-use-exact-data-refresh-data.md
             - name: Używaj nazwanych obiektów w zasadach zapobiegania utracie danych
               href: named-entities-use.md
