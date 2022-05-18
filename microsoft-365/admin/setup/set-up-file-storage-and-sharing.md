@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie przechowywania i udostępniania plików
+title: Konfigurowanie OneDrive przechowywania i udostępniania plików
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -30,12 +30,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Dowiedz się, jak używać OneDrive i witryny zespołu do Microsoft 365 magazynu i udostępniania plików Microsoft 365.
-ms.openlocfilehash: e17f4cdb7abefdc7374e1ada073c154d0f006216
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8fa78b4acbba85932778194f1785bee3fd04315c
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417243"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465937"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Konfigurowanie magazynu plików i udostępniania ich w Microsoft 365
 

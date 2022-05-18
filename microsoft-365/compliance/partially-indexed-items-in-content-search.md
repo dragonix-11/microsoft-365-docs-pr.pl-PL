@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Dowiedz się więcej o niezainicjowanych elementach w Exchange i SharePoint, które można dołączyć do wyszukiwania zbierania elektronicznych materiałów dowodowych uruchamianego w portal zgodności Microsoft Purview.
-ms.openlocfilehash: 0efb96f8d36868f182476a0eb7b0087beb3134f9
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0f3d7d4b2e2a7d4c3c23d89ad6c2b8ba20fd6afb
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417045"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468837"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Częściowo zaindeksowane elementy w środowisku zbierania elektronicznych materiałów dowodowych
 
@@ -163,9 +163,6 @@ Aby uzyskać listę limitów indeksowania dla dokumentów SharePoint, zobacz [Li
 - Mimo że typ pliku jest obsługiwany w przypadku indeksowania i jest indeksowany, mogą wystąpić błędy indeksowania lub wyszukiwania, które spowodują zwrócenie pliku jako częściowo indeksowanego elementu. Na przykład wyszukiwanie dużego pliku Excel może zakończyć się częściowym powodzeniem (ponieważ pierwsze 4 MB jest indeksowane), ale nie powiedzie się, ponieważ przekroczono limit rozmiaru pliku. W takim przypadku jest możliwe, że ten sam plik jest zwracany z wynikami wyszukiwania i jako częściowo zaindeksowany element.
 
 - Pliki zaszyfrowane za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączone do wiadomości e-mail zgodnej z kryteriami wyszukiwania mogą być przeglądane i będą odszyfrowywane po wyeksportowaniu. Obecnie pliki szyfrowane za pomocą technologii szyfrowania firmy Microsoft (i przechowywane w SharePoint lub OneDrive dla Firm) są częściowo indeksowane. 
-
-   > [!NOTE]
-   > Pliki zaszyfrowane przy użyciu etykiet poufności nie zostaną odszyfrowane.
 
 - Wiadomości e-mail zaszyfrowane za pomocą protokołu S/MIME są częściowo indeksowane. Obejmuje to zaszyfrowane komunikaty z załącznikami plików lub bez tych załączników.
 

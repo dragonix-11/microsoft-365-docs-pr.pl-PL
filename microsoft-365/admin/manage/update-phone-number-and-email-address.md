@@ -22,34 +22,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: Zaktualizuj numer telefonu i adres e-mail administratora w centrum administracyjnym, jeśli chcesz zresetować swoje hasło administratora.
-ms.openlocfilehash: 2ebd4dd17be376bc79f252055c8aeb50082f7f94
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Zaktualizuj numer telefonu administratora i adres e-mail w centrum administracyjnym, jeśli chcesz zresetować własne hasło administratora.
+ms.openlocfilehash: 8e20aa49bc5d48ebf4e3434f2d5c294bfba5a08f
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984585"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468443"
 ---
-# <a name="update-your-admin-phone-number-and-email-address"></a>Aktualizowanie numeru telefonu i adresu e-mail administratora
+# <a name="update-your-microsoft-365-admin-phone-number-and-email-address"></a>Aktualizowanie numeru telefonu i adresu e-mail administratora Microsoft 365
 
-W tym artykule wyjaśniono, jak administrator może zmienić służbowy numer telefonu i adres e-mail w u Microsoft 365.
+W tym artykule wyjaśniono, w jaki sposób administrator może zmienić swój biznesowy telefon i adres e-mail w Microsoft 365.
   
 Jeśli szukasz sposobu zmieniania informacji w profilu firmy, takich jak nazwa firmy, adres, numer telefonu firmy i informacje kontaktowe w sprawach technicznych, zobacz [Zmienianie adresu organizacji, adresu e-mail kontaktu ds. technicznych i innych informacji](change-address-contact-and-more.md).
 
-Aby uzyskać więcej informacji na temat zmieniania informacji kontaktowych użytkowników i usuwania byłych pracowników, zobacz [Powiązana zawartość](#related-content).
+Aby uzyskać więcej informacji na temat zmieniania informacji kontaktowych użytkownika lub usuwania byłych pracowników, zobacz [Powiązana zawartość](#related-content).
   
-## <a name="to-update-your-phone-number-and-email-address"></a>Aby zaktualizować swój numer telefonu i adres e-mail
+## <a name="to-update-your-phone-number-and-email-address"></a>Aby zaktualizować numer telefonu i adres e-mail
 
-Użyj strony **Informacje zabezpieczające** , aby zmienić swój numer telefonu komórkowego i alternatywny adres e-mail. Alternatywny adres e-mail jest używany w przypadku ważnych powiadomień, takich jak resetowanie hasła administratora (nie hasła administratora komputera). 
+Użyj strony **Informacje zabezpieczające** , aby zmienić numer telefonu komórkowego i alternatywny adres e-mail. Alternatywny adres e-mail jest używany w przypadku ważnych powiadomień, takich jak resetowanie hasła administratora (a nie hasła administratora komputera). 
   
-1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a>.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>.
 
-2. W nagłówku wybierz ikonę profilu Moje \> **informacje** \> **zabezpieczające konta**.
+2. W nagłówku wybierz ikonę \> profilu **Moje konto** \> **Informacje zabezpieczające**.
 
-3. Na karcie **Informacje zabezpieczające** wybierz pozycję **Dodaj metodę** \> i **Telefon** \> **Alternatywne** Telefon **e-mail**, aby dodać szczegóły. Aby zaktualizować informacje dotyczące telefonu komórkowego, telefonu i alternatywnego adresu e-mail, wybierz pozycję **Zmień**. Pamiętaj, aby alternatywny adres e-mail był inny niż adres e-mail firmy Microsoft.
+3. Na karcie **Informacje o zabezpieczeniach** wybierz pozycję **Dodaj metodę** \> **Telefon** \> **Alternatywny Telefon** lub **Wiadomość e-mail**, aby dodać szczegóły. Aby zaktualizować szczegóły telefonu komórkowego, telefonu i alternatywnego adresu e-mail, wybierz pozycję **Zmień**. Upewnij się, że używasz innego adresu e-mail niż adres e-mail firmy Microsoft dla swojego alternatywnego adresu e-mail.
 
     > [!IMPORTANT]
-    > Alternatywny adres e-mail i numer telefonu komórkowego są potrzebne do zresetowania hasła administratora (nie hasła administratora komputera).
+    > Alternatywny adres e-mail i numer telefonu komórkowego są potrzebne do zresetowania hasła administratora (a nie hasła administratora komputera).
 
 4. Po zakończeniu wybierz pozycję **Zapisz**.
   
@@ -57,11 +57,11 @@ Aby uzyskać odpowiedzi na pytania dotyczące rozliczeń, zobacz:
   
 - [Zmienianie adresów rozliczeniowych dla Microsoft 365 dla firm](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Zarządzanie metodami płatności](../../commerce/billing-and-payments/manage-payment-methods.md)
+- [Zarządzanie formami płatności](../../commerce/billing-and-payments/manage-payment-methods.md)
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Zmienianie nazwy użytkownika i adresu e-mail](../add-users/change-a-user-name-and-email-address.md) (klip wideo)\
-[Dodawanie nowego pracownika](../add-users/add-new-employee.md) (klip wideo)\
+[Zmienianie nazwy użytkownika i adresu e-mail](../add-users/change-a-user-name-and-email-address.md) (wideo)\
+[Dodawanie nowego pracownika](../add-users/add-new-employee.md) (wideo)\
 [Usuwanie byłego pracownika](../add-users/remove-former-employee.md) (wideo)\
-[Uzyskiwanie dostępu do danych byłego użytkownika i ich kopii zapasowej](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (artykuł)
+[Uzyskiwanie dostępu do danych byłego użytkownika i tworzenie ich kopii zapasowej](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (artykuł)

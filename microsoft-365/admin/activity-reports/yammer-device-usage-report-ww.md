@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Uzyskaj raport użycia urządzenia Yammer, aby dowiedzieć się, na których urządzeniach użytkownicy używają Yammer.
-ms.openlocfilehash: 265cef494349daba8b7e526ad6b7c6abd61adcf7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Pobierz raport użycia urządzenia Yammer, aby dowiedzieć się więcej o urządzeniach używanych przez użytkowników Yammer, liczbie użytkowników dziennie według typu urządzenia i szczegółach na użytkownika.
+ms.openlocfilehash: faf5b364090fe4ed88e0a6dd977238e65f3e6c68
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781278"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467191"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>raporty Microsoft 365 w centrum administracyjnym — raport użycia urządzenia Yammer
 
@@ -58,7 +58,7 @@ Raport **użycia urządzenia Yammer** można wyświetlić dla trendów z ostatni
 |Data ostatniego działania (UTC)  <br/> |Ostatnia data (UTC) udziału użytkownika w Yammer działaniu.  <br/> |
 |Web  <br/> |Wskazuje, czy użytkownik użył Yammer w Internecie.  <br/> |
 |telefon Windows  <br/> | Wskazuje, czy użytkownik użył Yammer na telefonie Windows.  <br/> |
-|Telefon z systemem Android  <br/> |Wskazuje, czy użytkownik użył Yammer na telefonie z systemem Android. <br/>|
+|Telefon z systemem Android  <br/> |Wskazuje, czy użytkownik użył Yammer na telefonie Android. <br/>|
 |Iphone <br/> | Wskazuje, czy użytkownik użył Yammer na iPhone.  <br/> |
 |Ipad  <br/> |Wskazuje, czy użytkownik użył Yammer na iPad. <br/>|
 |Innych  <br/> |Wskazuje, czy użytkownik użył Yammer na innym urządzeniu, które nie zostało wymienione wcześniej. <br/>|

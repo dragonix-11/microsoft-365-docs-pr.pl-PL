@@ -18,13 +18,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Dowiedz się, jak uzyskać raport aktywności użycia Microsoft Teams i uzyskać wgląd w działania Teams w organizacji.
-ms.openlocfilehash: 93bcb5d1e6c8d0e3bbb96671333bff1c6b7b429f
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Raport użycia Teams pokazuje, jak użytkownicy komunikują się i współpracują w Teams, w tym liczbę aktywnych użytkowników, kanałów i komunikatów.
+ms.openlocfilehash: fc720f9e164e2c9d20fb8b03e78b520102a0c021
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781695"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467566"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-usage-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie użycia Microsoft Teams
 
@@ -107,7 +107,7 @@ Dane dla następujących metryk są dostępne dla poszczególnych zespołów.
 |Aktywni goście|Goście, którzy mają co najmniej jedną akcję panelu w określonym okresie. <br/> <br/> Gość jest definiowany jako osoby spoza organizacji, które uzyskują dostęp do udostępnionych zasobów, logując się do konta gościa w moim katalogu.|
 |Aktywni użytkownicy zewnętrzni|Uczestnicy zewnętrzni, którzy mają co najmniej jedną akcję panelu w określonym okresie.<br/><br/> Uczestnik zewnętrzny jest definiowany jako osoba spoza organizacji, która uczestniczy w zasobie , takim jak kanał udostępniony, przy użyciu własnej tożsamości, a nie konta gościa w katalogu.|
 |Aktywne kanały|Prawidłowe kanały w aktywnych zespołach, które mają co najmniej jednego aktywnego użytkownika w określonym okresie. Obejmuje to kanały publiczne, prywatne lub udostępnione.|
-|Aktywne kanały udostępnione|Prawidłowe kanały udostępnione w aktywnych zespołach, które mają co najmniej jednego aktywnego użytkownika w określonym czasie. <br/> <br/>Kanał udostępniony jest definiowany jako kanał Teams, który można udostępniać osobom spoza zespołu. Te osoby mogą znajdować się w Organizacji lub innych organizacjach usługi Azure AD.|
+|Aktywne kanały udostępnione|Prawidłowe kanały udostępnione w aktywnych zespołach, które mają co najmniej jednego aktywnego użytkownika w określonym czasie. <br/> <br/>Kanał udostępniony jest definiowany jako kanał Teams, który można udostępniać osobom spoza zespołu. Te osoby mogą znajdować się w Organizacji lub innych organizacjach Azure AD.|
 |Łączna liczba zorganizowanych spotkań|Suma jednorazowych zaplanowanych, cyklicznych, ad hoc i niesklasyfikowanych spotkań zorganizowanych przez użytkownika w określonym okresie.|
 |Posty|Liczba wszystkich komunikatów postów w kanałach w określonym okresie.|
 |Odpowiedzi|Liczba wszystkich wiadomości odpowiedzi w kanałach w określonym okresie.|

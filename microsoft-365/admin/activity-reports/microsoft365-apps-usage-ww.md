@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Dowiedz się, jak uzyskać Aplikacje Microsoft 365 raportu użycia przy użyciu pulpitu nawigacyjnego Microsoft 365 Reports w Centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 229797921de2e24754203efc466f63661eb26bc8
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Dowiedz się, jak uzyskać raport użycia Aplikacje Microsoft 365, aby zobaczyć aktywność licencjonowanych użytkowników w aplikacjach i jak aplikacje są używane na różnych platformach.
+ms.openlocfilehash: acb9d910ad8e08275dff3ed65e4b39bb4e867033
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781616"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467531"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365 Raporty w centrum administracyjnym — użycie Aplikacje Microsoft 365
 

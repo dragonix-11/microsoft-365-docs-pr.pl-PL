@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak te zalecenia dotyczące zabezpieczeń dla Microsoft 365 Business Premium wpływają na użytkowników i chronią dane.
-ms.openlocfilehash: 202df778e74fb0f14a92b572df977088f8319595
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ffd25f52c0f230506a43a3f611ce933f59d26802
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099966"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469234"
 ---
-# <a name="how-these-security-recommendations-affect-your-users"></a>Wpływ tych zaleceń dotyczących zabezpieczeń na użytkowników
+# <a name="how-these-security-recommendations-affect-your-microsoft-365-users"></a>Jak te zalecenia dotyczące zabezpieczeń wpływają na Microsoft 365 użytkowników
 
 Zalecenia dotyczące zabezpieczeń dla Microsoft 365 w tym rozwiązaniu znacznie utrudniają hakerom uzyskanie dostępu do środowiska. Kompromis polega na tym, że użytkownicy muszą wiedzieć, jak pracować w tym bezpieczniejszym środowisku. Rozumiemy, że wymagana jest dodatkowa cierpliwość, ale warto chronić organizację.
 
-![Ilustracja przedstawiająca najważniejsze punkty poniżej dotyczące telefonów iPhone, urządzeń z systemem Android, komputerów Mac, Windows 10, udostępniania i kluczowego personelu.](../media/M365-democracy-Users_900px.png)
+![Ilustracja przedstawiająca najważniejsze punkty z dołu dotyczące telefonów iPhone, urządzeń Android, komputerów Mac, Windows 10, udostępniania i kluczowych pracowników.](../media/M365-democracy-Users_900px.png)
 
 ## <a name="use-secure-email-practices"></a>Korzystanie z rozwiązań dotyczących bezpiecznej poczty e-mail
 
@@ -51,13 +51,13 @@ Dowiedz się więcej o [uwierzytelnianiu wieloskładnikowym](m365bp-multifactor-
 
 Pobierz [infografikę](m365-campaigns-protect-campaign-infographic.md) ze wskazówkami dla Ciebie i członków twojego zespołu.
 
-## <a name="set-up-iphones-and-android-devices"></a>Konfigurowanie telefonów iPhone i urządzeń z systemem Android
+## <a name="set-up-iphones-and-android-devices"></a>Konfigurowanie urządzeń iPhone i Android
 
-Aby [skonfigurować urządzenia iPhone i urządzenia](../business/set-up-mobile-devices.md) z systemem Android w celu bezpiecznego działania, wystarczy kilka minut:
+Aby [skonfigurować urządzenia iPhone i Android urządzenia](../business/set-up-mobile-devices.md) w celu bezpiecznego działania, wystarczy kilka minut:
 
 - Skonfiguruj urządzenia do korzystania z uwierzytelniania wieloskładnikowego z aplikacją authenticator.
 
-- Korzystaj z aplikacji mobilnych firmy Microsoft, w tym Outlook Mobile, Word, OneDrive i innych aplikacji firmy Microsoft ze sklepu z aplikacjami. Natywne aplikacje poczty dołączone do telefonów iPhone i urządzeń z systemem Android nie są obsługiwane. 
+- Korzystaj z aplikacji mobilnych firmy Microsoft, w tym Outlook Mobile, Word, OneDrive i innych aplikacji firmy Microsoft ze sklepu z aplikacjami. Natywne aplikacje poczty dołączone do urządzeń iPhone i Android nie są obsługiwane. 
 
 - Wymagaj numeru PIN, aby użytkownicy mogli odblokować swoje urządzenie.
 
@@ -77,7 +77,7 @@ W przypadku [niezarządzanych urządzeń Windows 10 i Mac](m365bp-protect-pcs-ma
 
 |**Windows 10**|**Mac**|
 |:-----|:------|
-|Włączanie ochrony urządzenia za pomocą funkcji BitLocker<p><p> Upewnij się, że Windows Defender pozostaje włączona <p>Włączanie zapory Windows| Szyfrowanie dysku mac przy użyciu programu FileVault <p><p>Używanie niezawodnego oprogramowania antywirusowego <p>Włączanie ochrony zapory|
+|Włączanie ochrony urządzenia BitLocker<p><p> Upewnij się, że Windows Defender pozostaje włączona <p>Włączanie zapory Windows| Szyfrowanie dysku mac przy użyciu programu FileVault <p><p>Używanie niezawodnego oprogramowania antywirusowego <p>Włączanie ochrony zapory|
 
 Aby dowiedzieć się więcej na temat tych zaleceń, zobacz [Ochrona konta i urządzeń przed hakerami i złośliwym oprogramowaniem](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 

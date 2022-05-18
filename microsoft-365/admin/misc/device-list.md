@@ -1,5 +1,5 @@
 ---
-title: Plik CSV z listą urządzeń
+title: Plik CSV listy urządzeń
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: Dowiedz się, jak zrobić plik CSV dla rozwiązania AutoPilot w programie Microsoft 365 dla firm.
-ms.openlocfilehash: 62dbcddbdab1a08ab3b19c6616b814c421a57c04
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+description: Dowiedz się, jak utworzyć plik CSV dla rozwiązania AutoPilot w Microsoft 365 dla firm.
+ms.openlocfilehash: af695448e31ea93d36b36a8831702acb84a92410
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "62996395"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469563"
 ---
-# <a name="device-list-csv-file"></a>Plik CSV z listą urządzeń
+# <a name="windows-autopilot-device-list-csv-file"></a>plik CSV listy urządzeń rozwiązania Windows Autopilot
 
-## <a name="device-list-csv-file-format"></a>Lista urządzeń .csv formacie pliku
+## <a name="device-list-csv-file-format"></a>Format pliku .csv listy urządzeń
 
-Do zarządzania urządzeniami i wdrażania ich Windows rozwiązania Autopilot jest potrzebny plik .csv zawierający konkretne informacje o urządzeniach.
+Aby zarządzać urządzeniami i wdrażać je za pośrednictwem rozwiązania Windows Autopilot, potrzebny jest plik .csv zawierający konkretne informacje o urządzeniach.
   
 Kolumny w pliku listy urządzeń muszą mieć następujące nagłówki w określonej kolejności:
   
@@ -46,10 +46,10 @@ Kolumny w pliku listy urządzeń muszą mieć następujące nagłówki w określ
 
 Możesz uzyskać te informacje od producenta komputera lub użyć [skryptu programu PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo), który wygeneruje plik CSV. 
 
-Gdy dodajesz urządzenia, musisz również dodać je do profilu. Profil służy do stosowania profilów wdrożenia z zastosowaniem rozwiązania AutoPilot do urządzenia lub grupy urządzeń.
+Podczas dodawania urządzeń należy również dodać je do profilu. Profil służy do stosowania profilów wdrażania rozwiązania AutoPilot do urządzenia lub grupy urządzeń.
   
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Microsoft 365 i zasoby dla firm](../../index.yml)
+[Microsoft 365 dokumentacji i zasobów biznesowych](../../index.yml)
   
-[Wprowadzenie do Microsoft 365 dla firm](../../admin/admin-overview/what-is-microsoft-365.md)
+[Wprowadzenie z Microsoft 365 dla firm](../../admin/admin-overview/what-is-microsoft-365.md)

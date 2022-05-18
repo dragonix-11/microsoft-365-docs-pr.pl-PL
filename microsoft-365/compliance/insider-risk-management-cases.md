@@ -1,6 +1,6 @@
 ---
 title: Przypadki zarządzania ryzykiem wewnętrznym
-description: Dowiedz się więcej o przypadkach zarządzania ryzykiem wewnętrznym w usłudze Microsoft Purview
+description: Dowiedz się więcej o przypadkach zarządzania ryzykiem wewnętrznym w Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 687eb92693d3343fb0ef5b2392d4622d9af4bb9d
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 916fb67d8fb2376a1a59d3d2aa61a8e7d041f194
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971952"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469387"
 ---
 # <a name="insider-risk-management-cases"></a>Przypadki zarządzania ryzykiem wewnętrznym
 
@@ -145,7 +145,7 @@ Na pulpicie nawigacyjnym notatek o przypadku są wyświetlane notatki użytkowni
 
 Aby dodać notatkę do sprawy:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki**.
 2. Wybierz przypadek, a następnie wybierz kartę **Notatki o sprawie** .
 3. Wybierz pozycję **Dodaj notatkę o wielkości liter**.
 4. W oknie dialogowym **Dodawanie notatek przypadku** wpisz notatkę dla sprawy. Wybierz pozycję **Zapisz** , aby dodać notatkę do sprawy lub wybierz pozycję **Anuluj** zamknięcie bez zapisywania notatki w sprawie.
@@ -162,7 +162,7 @@ Tymczasowy dostęp do sprawy można udzielić, dodając użytkownika jako wspó�
 
 Aby dodać współautora do sprawy:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki**.
 2. Wybierz przypadek, a następnie wybierz kartę **Współautorzy** .
 3. Wybierz pozycję **Dodaj współautora**.
 4. W oknie dialogowym **Dodawanie współautora** zacznij wpisywać nazwę użytkownika, którego chcesz dodać, a następnie wybierz użytkownika z listy sugerowanych użytkowników. Ta lista jest generowana na podstawie Azure Active Directory subskrypcji dzierżawy.
@@ -170,7 +170,7 @@ Aby dodać współautora do sprawy:
 
 ## <a name="case-actions"></a>Akcje sprawy
 
-Badacze ryzyka mogą podjąć działania w sprawie w jednej z kilku metod, w zależności od ważności sprawy, historii ryzyka użytkownika i wytycznych dotyczących ryzyka organizacji. W niektórych sytuacjach może być konieczne eskalowanie sprawy do użytkownika lub badania danych w celu współpracy z innymi obszarami organizacji i dokładniejszego poznania działań związanych z ryzykiem. Zarządzanie ryzykiem wewnętrznym jest ściśle zintegrowane z innymi rozwiązaniami usługi Microsoft Purview, które ułatwiają kompleksowe zarządzanie rozwiązaniami.
+Badacze ryzyka mogą podjąć działania w sprawie w jednej z kilku metod, w zależności od ważności sprawy, historii ryzyka użytkownika i wytycznych dotyczących ryzyka organizacji. W niektórych sytuacjach może być konieczne eskalowanie sprawy do użytkownika lub badania danych w celu współpracy z innymi obszarami organizacji i dokładniejszego poznania działań związanych z ryzykiem. Zarządzanie ryzykiem wewnętrznym jest ściśle zintegrowane z innymi rozwiązaniami Microsoft Purview, które ułatwiają kompleksowe zarządzanie rozwiązaniami.
 
 ### <a name="send-email-notice"></a>Wysyłanie powiadomienia e-mail
 
@@ -180,7 +180,7 @@ Należy pamiętać, że wysłanie powiadomienia e-mail do użytkownika ***nie** 
 
 Aby wysłać powiadomienie do użytkownika przypisanego do sprawy:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki**.
 2. Wybierz przypadek, a następnie wybierz przycisk **Wyślij powiadomienie e-mail** na pasku narzędzi akcji sprawy.
 3. W oknie dialogowym **Wysyłanie powiadomienia e-mail** wybierz kontrolkę listy rozwijanej **Wybierz szablon powiadomienia** , aby wybrać szablon powiadomienia dla powiadomienia. To zaznaczenie wstępnie wypełnia inne pola w zawiadomieniu.
 4. Przejrzyj pola powiadomień i zaktualizuj je odpowiednio. Wprowadzone tutaj wartości zastąpią wartości szablonu.
@@ -188,17 +188,17 @@ Aby wysłać powiadomienie do użytkownika przypisanego do sprawy:
 
 ### <a name="escalate-for-investigation"></a>Eskalowanie w celu zbadania
 
-Eskaluj sprawę do badania użytkownika w sytuacjach, w których wymagana jest dodatkowa kontrola prawna dla działania użytkownika związanego z ryzykiem. Ta eskalacja powoduje otwarcie nowego przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) w organizacji Microsoft 365. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania prawne organizacji. Umożliwia również zespołowi prawnemu zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę. Przypisanie recenzenta jako opiekuna w sprawie zbierania elektronicznych materiałów dowodowych (Premium) utworzonej na podstawie sprawy zarządzania ryzykiem wewnętrznym pomaga zespołowi prawnemu podjąć odpowiednie działania i zarządzać zachowaniem zawartości. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)](overview-ediscovery-20.md).
+Eskaluj sprawę do badania użytkownika w sytuacjach, w których wymagana jest dodatkowa kontrola prawna dla działania użytkownika związanego z ryzykiem. Ta eskalacja otwiera nowy przypadek zbierania elektronicznych materiałów dowodowych Microsoft Purview (Premium) w organizacji Microsoft 365. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania prawne organizacji. Umożliwia również zespołowi prawnemu zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę. Eskalowanie do sprawy zbierania elektronicznych materiałów dowodowych (Premium) z przypadku zarządzania ryzykiem wewnętrznym pomaga zespołowi prawnemu podjąć odpowiednie działania i zarządzać zachowaniem zawartości. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
 
 Aby eskalować sprawę do badania użytkownika:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki**.
 2. Wybierz przypadek, a następnie wybierz przycisk **Eskaluj do zbadania** na pasku narzędzi akcji sprawy.
 3. W oknie dialogowym **Eskaluj do badania** wprowadź nazwę nowego badania użytkownika. W razie potrzeby wprowadź uwagi dotyczące sprawy i wybierz pozycję **Eskaluj**.
 4. Przejrzyj pola powiadomień i zaktualizuj je odpowiednio. Wprowadzone tutaj wartości zastąpią wartości szablonu.
 5. Wybierz pozycję **Potwierdź** , aby utworzyć przypadek badania użytkownika, lub wybierz pozycję **Anuluj** , aby zamknąć okno dialogowe bez tworzenia nowego przypadku badania użytkownika.
 
-Po eskalacji przypadku zarządzania ryzykiem wewnętrznym do nowego przypadku badania użytkownika możesz przejrzeć nowy przypadek w obszarze **eDiscoveryAdvanced** >  w portalu zgodności usługi Microsoft Purview.
+Po eskalacji sprawy zarządzania ryzykiem wewnętrznym do nowego przypadku badania użytkownika możesz przejrzeć nową sprawę w obszarze **eDiscoveryAdvanced** >  w portal zgodności Microsoft Purview.
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Uruchamianie zautomatyzowanych zadań przy użyciu przepływów Power Automate dla sprawy
 
@@ -236,7 +236,7 @@ Po zakończeniu przeglądu i zbadania przez analityków ryzyka i śledczych moż
 
 Aby rozwiązać problem:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki** .
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki**.
 2. Wybierz przypadek, a następnie wybierz przycisk **Rozwiąż sprawę** na pasku narzędzi akcji sprawy.
 3. W oknie dialogowym **Rozwiązywanie sprawy** wybierz kontrolkę **rozwiąż jako** listę rozwijaną, aby wybrać klasyfikację rozpoznawania sprawy. Opcje to **łagodne** lub **potwierdzone naruszenie zasad**.
 4. W oknie dialogowym **Rozwiązywanie sprawy** wprowadź przyczyny klasyfikacji rozwiązania w polu tekstowym **Akcja podjęta** .

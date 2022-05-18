@@ -1,5 +1,5 @@
 ---
-title: Zalecenia dotyczące zasad dotyczących haseł
+title: Zalecenia dotyczące zasad haseł
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -21,31 +21,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
-description: Zwiększaj bezpieczeństwo organizacji przed atakami haseł, a także zakaż popularne hasła i włącz oparte na ryzyko uwierzytelnianie wieloskładnikowe.
-ms.openlocfilehash: 46e6c4ba163df0693630896b8db17b4eefe9828a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Zwiększenie bezpieczeństwa organizacji przed atakami haseł oraz blokowanie typowych haseł i włączanie uwierzytelniania wieloskładnikowego opartego na ryzyku.
+ms.openlocfilehash: 006e537c2e2d77a19b27f1c2d537269d69d07c1e
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312580"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469013"
 ---
-# <a name="password-policy-recommendations"></a>Zalecenia dotyczące zasad dotyczących haseł
+# <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Zalecenia dotyczące zasad haseł dla haseł Microsoft 365
 
-Jako administrator organizacji, odpowiadasz za konfigurowanie zasad haseł dla użytkowników w organizacji. Ustawienie zasad dotyczących haseł może być skomplikowane i skomplikowane, a w tym artykule przedstawiono zalecenia dotyczące zabezpieczania organizacji przed atakami hasła.
+Jako administrator organizacji odpowiadasz za ustawianie zasad haseł dla użytkowników w organizacji. Ustawienie zasad haseł może być skomplikowane i mylące, a ten artykuł zawiera zalecenia, aby zapewnić bezpieczniejszą ochronę organizacji przed atakami haseł.
 
-Konta Microsoft dostępne tylko w chmurze mają wstępnie zdefiniowane zasady dotyczące haseł, których nie można zmienić. Jedynymi elementami, które można zmienić, jest liczba dni do wygaśnięcia hasła oraz to, czy hasło w ogóle wygasa. 
+Konta tylko w chmurze firmy Microsoft mają wstępnie zdefiniowane zasady haseł, których nie można zmienić. Jedyne elementy, które można zmienić, to liczba dni, po których hasło wygaśnie i czy hasła w ogóle wygasną. 
   
-Aby określić, jak często Microsoft 365 wygasają hasła w organizacji, zobacz Ustawianie zasad wygasania [haseł dla konta Microsoft 365](../manage/set-password-expiration-policy.md).
+Aby określić, jak często hasła Microsoft 365 wygasają w organizacji, zobacz [Ustawianie zasad wygasania haseł dla Microsoft 365](../manage/set-password-expiration-policy.md).
 
-Aby uzyskać więcej informacji na Microsoft 365 haseł, zobacz:
+Aby uzyskać więcej informacji na temat haseł Microsoft 365, zobacz:
 
 [Resetowanie haseł](../add-users/reset-passwords.md) (artykuł)
 
-[Konfigurowanie hasła pojedynczego użytkownika tak, aby nigdy nie wygasło](../add-users/set-password-to-never-expire.md) (artykuł)
+[Ustaw hasło pojedynczego użytkownika, aby nigdy nie wygasało](../add-users/set-password-to-never-expire.md) (artykuł)
 
-[Umożliwianie użytkownikom resetowania swoich haseł](../add-users/let-users-reset-passwords.md) (artykuł)
+[Zezwalaj użytkownikom na resetowanie własnych haseł](../add-users/let-users-reset-passwords.md) (artykuł)
 
-[Ponowne wysyłanie hasła użytkownika — Pomoc dla administratorów](../add-users/resend-user-password.md) (artykuł)
+[Ponowne zapisywanie hasła użytkownika — Pomoc dla administratorów](../add-users/resend-user-password.md) (artykuł)
   
 ## <a name="understanding-password-recommendations"></a>Zrozumienie zaleceń dotyczących haseł
 
@@ -61,7 +61,7 @@ Dobre praktyki dotyczące haseł można podzielić na kilka ogólnych kategorii:
 
 Aby system był bezpieczniejszy, hasła powinny być przede wszystkim bardziej zróżnicowane. Warto dążyć do tego, aby Twoje zasady dotyczące haseł zawierały wiele różnych i trudnych do odgadnięcia haseł. Oto kilka zaleceń dotyczących utrzymania jak najwyższego poziomu zabezpieczeń w organizacji.
   
-- Zachowywanie wymagania minimalnej długości 8 znaków
+- Utrzymywanie wymagania dotyczącego minimalnej długości 8 znaków
 
 - Nie wprowadzaj wymogów dotyczących wymaganych znaków. Na przykład \*&amp;(^%$.
 
@@ -69,7 +69,7 @@ Aby system był bezpieczniejszy, hasła powinny być przede wszystkim bardziej z
 
 - Zabroń korzystania z typowych haseł w celu wyeliminowania najłatwiejszych do złamania haseł.
 
-- Informacje dla użytkowników, aby nie ponownie używać haseł organizacji do celów niezwiązywnych z pracą
+- Edukowanie użytkowników, aby nie używać ponownie haseł organizacji do celów niezwiązanych z pracą
 
 - Wymuś korzystanie z [uwierzytelniania wieloskładnikowego](../security-and-compliance/set-up-multi-factor-authentication.md).
 
@@ -81,7 +81,7 @@ Oto kilka wskazówek dotyczących haseł dla użytkowników w Twojej organizacji
   
 - Nie używaj hasła podobnego do używanego w innych witrynach internetowych lub takiego samego.
 
-- Nie używaj pojedynczego wyrazu, na przykład **hasła ani często** używanej frazy, takiej jak **Iloveyou**
+- Nie używaj jednego słowa, na przykład **hasła** lub często używanej frazy, takiej jak **Iloveyou**
 
 - Postaraj się, aby hasło było trudne do odgadnięcia, nawet dla osób, które dobrze Cię znają. Nie używaj imion i dat urodzin swoich przyjaciół i rodziny, nazw ulubionych zespołów lub swoich typowych zwrotów.
 
@@ -91,11 +91,11 @@ Poniżej opisujemy jedne z najczęściej stosowanych praktyk w zakresie zarządz
   
 ### <a name="password-expiration-requirements-for-users"></a>Obowiązkowe wygasanie haseł
 
-Wymagania dotyczące wygasania haseł są bardziej szkodliwe, ponieważ te wymagania sprawiają, że użytkownicy będą wybierać przewidywalne hasła składające się z sekwencyjnych wyrazów i liczb, które są ze sobą ściśle powiązane. W takich przypadkach kolejne hasło można przewidzieć na podstawie poprzedniego hasła. Wymagania dotyczące wygasania haseł nie oferują korzyści związanych z zawieraniem hasła, ponieważ cyberprzestępcy prawie zawsze używają poświadczeń w momencie ich naruszenia. Aby uzyskać [więcej informacji, zobacz Czas na sprawdzenie obowiązkowych zmian](https://go.microsoft.com/fwlink/p/?linkid=861018) hasła.
+Wymagania dotyczące wygasania haseł wyrządzają więcej szkody niż pożytku, ponieważ te wymagania sprawiają, że użytkownicy wybierają przewidywalne hasła składające się z sekwencyjnych słów i liczb, które są ze sobą ściśle powiązane. W takich przypadkach kolejne hasło można przewidzieć na podstawie poprzedniego hasła. Wymagania dotyczące wygasania haseł nie oferują żadnych korzyści związanych z powstrzymywaniem, ponieważ cyberprzestępcy prawie zawsze używają poświadczeń natychmiast po ich naruszeniach. Aby uzyskać więcej informacji [, zapoznaj się z tematem Czas ponownego przemyślenia obowiązkowych zmian haseł](https://go.microsoft.com/fwlink/p/?linkid=861018) .
   
 ### <a name="requiring-long-passwords"></a>Wymóg stosowania długich haseł
 
-Wymóg stosowania długich haseł (dłuższych niż 10 znaków) może spowodować, że użytkownicy będą zachowywać się w przewidywalny i niepożądany sposób. Na przykład użytkownicy, od których oczekuje się stosowania hasła złożonego z 16 znaków, mogą zdecydować się na użycie powtarzających się słów, np. **trzytrzytrzytrzy** lub **czwartekczwartek**, aby spełnić wymóg długości. Takie hasła nie są jednak trudne do odgadnięcia. Ponadto wymagania dotyczące długości zwiększają szanse na przyjęcie przez użytkowników innych niezabezpieczonych rozwiązań, takich jak zapisywanie haseł, ponowne ich użycie lub przechowywanie w dokumentach niezaszyfrowane. W celu zachęcenia użytkowników do wymyślenia niepowtarzalnego hasła zalecamy zachowanie rozsądnego wymogu minimalnej długości wynoszącej 8 znaków.
+Wymóg stosowania długich haseł (dłuższych niż 10 znaków) może spowodować, że użytkownicy będą zachowywać się w przewidywalny i niepożądany sposób. Na przykład użytkownicy, od których oczekuje się stosowania hasła złożonego z 16 znaków, mogą zdecydować się na użycie powtarzających się słów, np. **trzytrzytrzytrzy** lub **czwartekczwartek**, aby spełnić wymóg długości. Takie hasła nie są jednak trudne do odgadnięcia. Ponadto wymagania dotyczące długości zwiększają prawdopodobieństwo, że użytkownicy przyjmą inne niezabezpieczone praktyki, takie jak zapisywanie haseł, ponowne ich używanie lub przechowywanie ich niezaszyfrowanych w dokumentach. W celu zachęcenia użytkowników do wymyślenia niepowtarzalnego hasła zalecamy zachowanie rozsądnego wymogu minimalnej długości wynoszącej 8 znaków.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Wymóg stosowania różnych rodzajów znaków
 
@@ -107,7 +107,7 @@ Wymogi dotyczące złożoności ograniczają dostępne miejsce i powodują, że 
 
 - znaki niealfanumeryczne.
 
-Większość osób używa podobnych wzorców, na przykład wielka litera na pierwszej pozycji, symbol na ostatniej i numer w jednej z dwóch ostatnich pozycji. Cyberprzestępcy wiedzą o tym, więc uruchamiają swoje ataki słowników, używając najpopularniejszych podstawiania "$" dla "s", "@" dla "a", "1" dla "l". Nakładanie na użytkowników obowiązku używania kombinacji wielkich i małych liter, cyfr i znaków specjalnych ma negatywny efekt. Zastosowanie niektórych wymogów dotyczących złożoności uniemożliwia nawet użytkownikom korzystanie z bezpiecznych i łatwych do zapamiętania haseł, a także zmusza ich do wymyślania takich, które będą mniej bezpieczne i trudniejsze do zapamiętania.
+Większość osób używa podobnych wzorców, na przykład wielka litera na pierwszej pozycji, symbol na ostatniej i numer w jednej z dwóch ostatnich pozycji. Cyberprzestępcy o tym wiedzą, więc uruchamiają swoje ataki słownikowe przy użyciu najczęściej używanych podstawień" dla "s", "@" dla "a", "1" dla "l". Nakładanie na użytkowników obowiązku używania kombinacji wielkich i małych liter, cyfr i znaków specjalnych ma negatywny efekt. Zastosowanie niektórych wymogów dotyczących złożoności uniemożliwia nawet użytkownikom korzystanie z bezpiecznych i łatwych do zapamiętania haseł, a także zmusza ich do wymyślania takich, które będą mniej bezpieczne i trudniejsze do zapamiętania.
   
 ## <a name="successful-patterns"></a>Skuteczne wzorce
 
@@ -117,9 +117,9 @@ Teraz omówimy zalecenia, które sprzyjają stosowaniu zróżnicowanych haseł.
 
 Najistotniejszym wymogiem, który użytkownicy powinni spełnić, tworząc swoje hasła, jest zakaz stosowania typowych haseł, aby ograniczyć podatność organizacji na brutalne ataki polegające na łamaniu haseł. Typowe hasła użytkowników to: **abcdefg**, **hasło**, **małpa**.
   
-### <a name="educate-users-to-not-reuse-organization-passwords-anywhere-else"></a>Ułagodnianie użytkownikom ponownego używania haseł organizacji w innych miejscach
+### <a name="educate-users-to-not-reuse-organization-passwords-anywhere-else"></a>Edukowanie użytkowników, aby nie używać ponownie haseł organizacji nigdzie indziej
 
-Jednym z najważniejszych komunikatów, które należy należy uzyskać od użytkowników w organizacji, jest to, aby nie używać ich ponownie w innych miejscach. Korzystanie z haseł organizacji w witrynach zewnętrznych znacznie zwiększa prawdopodobieństwo naruszenia tych haseł przez cyberprzestępców.
+Jednym z najważniejszych komunikatów, które należy uzyskać dla użytkowników w organizacji, jest brak ponownego użycia hasła organizacji nigdzie indziej. Użycie haseł organizacji w zewnętrznych witrynach internetowych znacznie zwiększa prawdopodobieństwo naruszenia tych haseł przez cyberprzestępców.
   
 ### <a name="enforce-multi-factor-authentication-registration"></a>Egzekwuj korzystanie z uwierzytelnienia wieloskładnikowego
 
@@ -133,9 +133,9 @@ Dzięki uwierzytelnianiu wieloskładnikowemu opartemu o ocenę ryzyka możemy mi
   
 ## <a name="next-steps"></a>Następne kroki
 
-Chcesz dowiedzieć się więcej o zarządzaniu hasłami? Oto kilka polecanych opisów:
+Chcesz dowiedzieć się więcej na temat zarządzania hasłami? Oto kilka zalecanych lektur:
 
-- [Zapomnij hasła, nie hasło](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
+- [Zapomnij o hasłach, przejdź bez hasła](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
 
 - [Wskazówki dotyczące haseł firmy Microsoft](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
@@ -154,6 +154,6 @@ Chcesz dowiedzieć się więcej o zarządzaniu hasłami? Oto kilka polecanych op
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Resetowanie haseł](../add-users/reset-passwords.md) (artykuł)\
-[Ustawianie hasła pojedynczego użytkownika tak, aby nigdy nie wygasło](../add-users/set-password-to-never-expire.md) (artykuł)\
-[Umożliwianie użytkownikom resetowania swoich haseł](../add-users/let-users-reset-passwords.md) (artykuł)\
-[Ponowne wysyłanie hasła użytkownika — Pomoc dla administratorów](../add-users/resend-user-password.md) (artykuł)
+[Ustaw hasło użytkownika, aby nigdy nie wygasało](../add-users/set-password-to-never-expire.md) (artykuł)\
+[Zezwalaj użytkownikom na resetowanie własnych haseł](../add-users/let-users-reset-passwords.md) (artykuł)\
+[Ponowne zapisywanie hasła użytkownika — Pomoc dla administratorów](../add-users/resend-user-password.md) (artykuł)

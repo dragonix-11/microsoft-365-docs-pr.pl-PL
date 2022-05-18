@@ -20,50 +20,50 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: Wyślij wiadomość e-mail jako listę dystrybucyjną w programie Microsoft 365, aby po wysłaniu odpowiedzi przez członka na wiadomość okazało się, że pochodzi ona z listy dystrybucyjnej.
-ms.openlocfilehash: d38a7cb2efe3ddd3a915030f6aff4acc1eba1aef
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Wyślij wiadomość e-mail jako listę dystrybucyjną w Microsoft 365, aby gdy członek odpowiada na wiadomość, wydaje się, że pochodzi z listy dystrybucyjnej.
+ms.openlocfilehash: dd6e1f906481fe1c04bfa7cd275bd108ab558d59
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985447"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468465"
 ---
-# <a name="send-email-as-a-distribution-list"></a>Wysyłanie wiadomości e-mail jako listy dystrybucyjnej
+# <a name="send-microsoft-365-email-as-a-distribution-list"></a>Wysyłanie Microsoft 365 wiadomości e-mail jako listy dystrybucyjnej
 
-W Microsoft 365 e-mail można wysyłać wiadomości e-mail jako listę dystrybucyjną. Gdy osoba, która jest członkiem listy dystrybucyjnej, odpowie na wiadomość wysłaną do listy dystrybucyjnej, wiadomość e-mail wydaje się pochodzić z listy dystrybucyjnej, a nie przez tego użytkownika. W tym temacie pokazano, jak to zrobić.
+W Microsoft 365 możesz wysłać wiadomość e-mail jako listę dystrybucyjną. Gdy osoba będąca członkiem listy dystrybucyjnej odpowiada na wiadomość wysłaną do listy dystrybucyjnej, wiadomość e-mail wydaje się pochodzić z listy dystrybucyjnej, a nie od pojedynczego użytkownika. W tym temacie pokazano, jak to zrobić.
   
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Zanim wykonasz te czynności, upewnij się, że dodano Cię do listy dystrybucyjnej Microsoft 365 i że udzielono Ci uprawnienia Wyślij jako.
+Przed wykonaniem tych kroków upewnij się, że dodano Cię do Microsoft 365 listy dystrybucyjnej i masz przyznane uprawnienie Wyślij jako uprawnienie do tej listy.
   
- **Administratorzy**. Upewnij się, że zostały wykonać czynności opisane w tece Dodawanie użytkownika lub kontaktu do listy i Zezwalaj członkom na wysyłanie [](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) wiadomości e-mail jako tematów grupy programu [Microsoft 365 Microsoft 365](../email/add-user-or-contact-to-distribution-list.md) oraz dodawanie odpowiednich osób do listy dystrybucyjnej.
+ **Administratorzy**: upewnij się, że wykonaliśmy kroki opisane w temacie [Dodawanie Microsoft 365 użytkownika lub kontaktu do listy](../email/add-user-or-contact-to-distribution-list.md) i [Zezwalaj członkom na wysyłanie wiadomości e-mail jako tematów grupy Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) i dodają odpowiednie osoby do listy dystrybucyjnej.
   
 ## <a name="outlook-on-the-web"></a>Outlook on the web
 
 1. Otwórz Outlook w sieci Web i przejdź do skrzynki odbiorczej. 
     
-2. Otwórz wiadomość wysłaną do listy dystrybucyjnej. 
+2. Otwórz komunikat, który został wysłany do listy dystrybucyjnej. 
     
-3. Wybierz **pozycję Odpowiedz**. 
+3. Wybierz pozycję **Odpowiedz**. 
     
-4. U dołu wiadomości wybierz pozycję **Więcej** \> Pokaż **z**.<br/> ![Wybierz pozycję Więcej, a następnie wybierz pozycję Pokaż pole Od.](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. W dolnej części wiadomości wybierz pozycję **Więcej** \> **pokaż.**<br/> ![Wybierz pozycję Więcej, a następnie wybierz pozycję Pokaż z.](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Kliknij prawym przyciskiem myszy adres Od, na przykład `Ina@weewalter.me` , i wybierz pozycję **Usuń**.<br/> ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Kliknij prawym przyciskiem myszy pozycję Z adresu — na przykład `Ina@weewalter.me` — i wybierz pozycję **Usuń**.<br/> ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. Następnie wpisz adres listy dystrybucyjnej, na przykład support@contoso.com, i wyślij wiadomość. Przy następnym odpowiadaniu z listy dystrybucyjnej jej adres zostanie wyświetlony jako opcja na **liście** Od.<br/>![Zostanie wyświetlony alias udostępnionej skrzynki pocztowej.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. Następnie wpisz adres listy dystrybucyjnej, taki jak support@contoso.com, i wyślij wiadomość. Gdy następnym razem odpowiesz z listy dystrybucyjnej, jej adres będzie wyświetlany jako opcja na liście **Od** .<br/>![Zostanie wyświetlony alias udostępnionej skrzynki pocztowej.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
 
 ## <a name="outlook"></a>Outlook
 
-1. Otwórz Outlook klienta stacjonarnego.
+1. Otwórz klienta Outlook desktop.
 
-2. Redagowanie nowej wiadomości e-mail. Kliknij pole **Od** i wybierz pozycję **Inny adres e-mail**. Jeśli pole Od nie jest wyświetlane, przejdź do **opcji i** **wybierz pozycję Od** w sekcji Pokazywanie pól.
+2. Utwórz nową wiadomość e-mail. Kliknij pole **Od** i wybierz pozycję **Inny adres e-mail**. Jeśli nie widzisz pola Od, przejdź do pozycji **Opcje** i wybierz pozycję **Od** w sekcji Pokaż pola.
 
-3. Wybierz adres **listy dystrybucyjnej** z globalnej listy adresowej.
+3. Wybierz adres **listy dystrybucyjnej** z globalnej listy adresów.
 
 4. Wyślij wiadomość e-mail.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Tworzenie, edytowanie lub usuwanie grupy zabezpieczeń w centrum administracyjne platformy Microsoft 365](../email/create-edit-or-delete-a-security-group.md) (artykuł)\
-[Współpraca za pomocą](../email/email-collaboration.md) poczty e-mail (artykuł)\
+[Tworzenie, edytowanie lub usuwanie grupy zabezpieczeń w Centrum administracyjne platformy Microsoft 365](../email/create-edit-or-delete-a-security-group.md) (artykuł)\
+[Współpraca w wiadomościach e-mail](../email/email-collaboration.md) (artykuł)\
 [Dodawanie użytkownika lub kontaktu do grupy dystrybucyjnej](../email/add-user-or-contact-to-distribution-list.md) (artykuł)

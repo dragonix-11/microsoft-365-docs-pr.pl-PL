@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: Uzyskaj raport grup Microsoft 365, aby dowiedzieć się więcej o grupach i ich działaniach.
-ms.openlocfilehash: d4130d577341bbc8c4516234964ea9e805be81ee
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Uzyskaj raport Grupy Microsoft 365, aby uzyskać wgląd w działania grup w organizacji i zobaczyć, ile grup jest tworzonych i używanych.
+ms.openlocfilehash: 1c51ddf997fb0c1c3e2416d979b83b339c414d93
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781682"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467377"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Raporty w centrum administracyjnym — grupy Microsoft 365
 

@@ -12,20 +12,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Po skonfigurowaniu klucza klienta dowiedz się, jak nim zarządzać, przywracając klucze akv oraz zarządzając uprawnieniami oraz tworząc i przypisując zasady szyfrowania danych.
-ms.openlocfilehash: 1f3124930df88113d4c75401db21d7fc87c6616c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0ca6aa1e2cf725359d74477b486a4763a35ba681
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762260"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465915"
 ---
 # <a name="manage-customer-key"></a>Zarządzanie kluczem klienta
 
-Po skonfigurowaniu klucza klienta dla Office 365 należy utworzyć i przypisać co najmniej jedną zasadę szyfrowania danych (DEP). Po przypisaniu adresów IP możesz zarządzać kluczami zgodnie z opisem w tym artykule. Dowiedz się więcej o kluczu klienta w powiązanych tematach.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Po skonfigurowaniu klucza klienta należy utworzyć i przypisać co najmniej jedną zasadę szyfrowania danych (DEP). Po przypisaniu adresów IP możesz zarządzać kluczami zgodnie z opisem w tym artykule. Dowiedz się więcej o kluczu klienta w powiązanych tematach.
 
 ## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>Tworzenie programu DEP do użycia z wieloma obciążeniami dla wszystkich użytkowników dzierżawy
 
-Przed rozpoczęciem upewnij się, że wykonano zadania wymagane do skonfigurowania klienta. Aby uzyskać informacje, zobacz [Konfigurowanie klucza klienta](customer-key-set-up.md). Aby utworzyć program DEP, potrzebne są identyfikatory URI Key Vault uzyskane podczas instalacji. Aby uzyskać informacje, zobacz [Uzyskiwanie identyfikatora URI dla każdego klucza Key Vault platformy Azure](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Przed rozpoczęciem upewnij się, że wykonano zadania wymagane do skonfigurowania klucza klienta. Aby uzyskać informacje, zobacz [Konfigurowanie klucza klienta](customer-key-set-up.md). Aby utworzyć program DEP, potrzebne są identyfikatory URI Key Vault uzyskane podczas instalacji. Aby uzyskać informacje, zobacz [Uzyskiwanie identyfikatora URI dla każdego klucza Key Vault platformy Azure](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 Aby utworzyć wielozadaniowy program DEP, wykonaj następujące kroki:
   
@@ -115,7 +117,7 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 
 Gdzie *MailboxIdParameter* określa skrzynkę pocztową użytkownika. Aby uzyskać więcej informacji na temat polecenia cmdlet Set-Mailbox, zobacz [Set-Mailbox (Set-Mailbox](/powershell/module/exchange/set-mailbox)).
 
-W środowiskach hybrydowych można przypisać program DEP do lokalnych danych skrzynki pocztowej, które są synchronizowane z dzierżawą Exchange Online. Aby przypisać program DEP do tych zsynchronizowanych danych skrzynki pocztowej, użyjesz polecenia cmdlet Set-MailUser. Aby uzyskać więcej informacji na temat danych skrzynki pocztowej w środowisku [hybrydowym, zobacz lokalne skrzynki pocztowe korzystające z Outlook dla systemów iOS i Android z nowoczesnym uwierzytelnianiem hybrydowym](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
+W środowiskach hybrydowych można przypisać program DEP do lokalnych danych skrzynki pocztowej, które są synchronizowane z dzierżawą Exchange Online. Aby przypisać program DEP do tych zsynchronizowanych danych skrzynki pocztowej, użyjesz polecenia cmdlet Set-MailUser. Aby uzyskać więcej informacji na temat danych skrzynki pocztowej w środowisku [hybrydowym, zobacz lokalne skrzynki pocztowe korzystające z Outlook dla iOS i Android z nowoczesnym uwierzytelnianiem hybrydowym](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ```powershell
 Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -346,7 +348,7 @@ Jeśli musisz wrócić do kluczy zarządzanych przez firmę Microsoft, możesz t
 > [!IMPORTANT]
 > Odłączanie nie jest tym samym, co przeczyszczanie danych. Przeczyszczanie danych trwale usuwa dane organizacji z Microsoft 365, a odłączanie nie. Nie można przeprowadzić przeczyszczania danych dla zasad wielu obciążeń.
 
-Jeśli zdecydujesz się już nie używać klucza klienta do przypisywania adresów DEPs z wieloma obciążeniami, musisz skontaktować się z pomocą techniczną firmy Microsoft z prośbą o "odłączenie" od klucza klienta. Poproś zespół pomocy technicznej o zgłoszenie żądania obsługi do zespołu Microsoft 365 Customer Key. Jeśli masz jakiekolwiek pytania, skontaktuj się z m365-ck@service.microsoft.com.
+Jeśli zdecydujesz się już nie używać klucza klienta do przypisywania adresów DEPs z wieloma obciążeniami, musisz skontaktować się z pomocą techniczną firmy Microsoft z prośbą o "odłączenie" od klucza klienta. Poproś zespół pomocy technicznej o zgłoszenie żądania obsługi do zespołu Microsoft Purview Customer Key. Jeśli masz jakiekolwiek pytania, skontaktuj się z m365-ck@service.microsoft.com.
 
 Jeśli nie chcesz już szyfrować poszczególnych skrzynek pocztowych przy użyciu adresów DEPs na poziomie skrzynki pocztowej, możesz anulować przypisanie adresów DEPs na poziomie skrzynki pocztowej ze wszystkich skrzynek pocztowych.
 
@@ -362,6 +364,9 @@ Aby anulować przypisanie adresów DEPs skrzynki pocztowej, użyj polecenia cmdl
 
 Uruchomienie tego polecenia cmdlet powoduje anulowanie przypisania aktualnie przypisanego programu DEP i ponowne odszyfrowanie skrzynki pocztowej przy użyciu programu DEP skojarzonego z domyślnymi kluczami zarządzanymi przez firmę Microsoft. Nie można cofnąć przypisania programu DEP używanego przez klucze zarządzane firmy Microsoft. Jeśli nie chcesz używać kluczy zarządzanych przez firmę Microsoft, możesz przypisać do skrzynki pocztowej inny program DEP klucza klienta.
 
+> [!IMPORTANT]
+> Wycofywanie klucza klienta do kluczy zarządzanych przez firmę Microsoft nie jest obsługiwane w przypadku plików SharePoint Online, OneDrive dla Firm i Teams. 
+
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Odwoływanie kluczy i uruchamianie procesu ścieżki przeczyszczania danych
 
 Kontrolujesz odwoływanie wszystkich kluczy głównych, w tym klucza dostępności. Klucz klienta zapewnia kontrolę nad aspektem planowania zakończenia wymagań regulacyjnych. Jeśli zdecydujesz się odwołać klucze w celu oczyszczenia danych i zakończenia usługi, usługa usunie klucz dostępności po zakończeniu procesu przeczyszczania danych. Jest to obsługiwane w przypadku adresów DEPs klucza klienta przypisanych do poszczególnych skrzynek pocztowych.
@@ -372,7 +377,7 @@ Microsoft 365 przeprowadza inspekcję i weryfikuje ścieżkę przeczyszczania da
 
 - [Zagadnienia dotyczące planowania zakończenia usługi O365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Przeczyszczanie wielozadaniowego programu DEP nie jest obsługiwane w przypadku Microsoft 365 klucza klienta. Wielozadaniowy program DEP służy do szyfrowania danych w wielu obciążeniach dla wszystkich użytkowników dzierżawy. Przeczyszczanie takiego programu DEP spowodowałoby, że dane z wielu obciążeń staną się niedostępne. Jeśli zdecydujesz się całkowicie zakończyć Microsoft 365 usług, możesz kontynuować ścieżkę usuwania dzierżawy zgodnie z udokumentowanym procesem. Zobacz[, jak usunąć dzierżawę w Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+Przeczyszczanie wielozadaniowego programu DEP nie jest obsługiwane w przypadku klucza klienta. Wielozadaniowy program DEP służy do szyfrowania danych w wielu obciążeniach dla wszystkich użytkowników dzierżawy. Przeczyszczanie takiego programu DEP spowodowałoby, że dane z wielu obciążeń staną się niedostępne. Jeśli zdecydujesz się całkowicie zakończyć Microsoft 365 usług, możesz kontynuować ścieżkę usuwania dzierżawy zgodnie z udokumentowanym procesem. Zobacz[, jak usunąć dzierżawę w Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Odwoływanie kluczy klienta i klucza dostępności dla Exchange Online i Skype dla firm
 
@@ -407,23 +412,11 @@ Aby zainicjować ścieżkę przeczyszczania danych, wykonaj następujące kroki:
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Odwoływanie kluczy klienta i klucza dostępności dla plików SharePoint Online, OneDrive dla Firm i Teams
 
-Aby zainicjować ścieżkę przeczyszczania danych dla plików SharePoint Online, OneDrive dla Firm i Teams, wykonaj następujące kroki:
+Przeczyszczanie SharePoint, OneDrive do celów służbowych i Teams plików DEPs nie jest obsługiwane w kluczu klienta. Te wielozadaniowe adresy IP są używane do szyfrowania danych w wielu obciążeniach dla wszystkich użytkowników dzierżawy. Przeczyszczanie takiego programu DEP spowodowałoby, że dane z wielu obciążeń staną się niedostępne. Jeśli zdecydujesz się całkowicie zakończyć Microsoft 365 usług, możesz kontynuować ścieżkę usuwania dzierżawy zgodnie z udokumentowanym procesem. Zobacz, jak [usunąć dzierżawę w Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).  
 
-1. Odwoływanie dostępu Key Vault platformy Azure. Wszyscy administratorzy magazynu kluczy muszą wyrazić zgodę na odwołanie dostępu.
+## <a name="related-articles"></a>Powiązane artykuły:
 
-   Nie usuwasz usługi Azure Key Vault for SharePoint Online. Magazyny kluczy mogą być współużytkowane przez kilka dzierżaw usługi SharePoint Online i deps.
-
-2. Skontaktuj się z firmą Microsoft, aby usunąć klucz dostępności.
-
-    Gdy skontaktujesz się z firmą Microsoft w celu usunięcia klucza dostępności, wyślemy Ci dokument prawny. Osoba w organizacji, która zarejestrowała się jako osoba zatwierdzająca w ofercie FastTrack podczas dołączania, musi podpisać ten dokument. Zwykle jest to osoba wykonawcza lub inna wyznaczona osoba w firmie, która jest prawnie upoważniona do podpisywania dokumentów w imieniu organizacji.
-
-3. Gdy przedstawiciel podpisze dokument prawny, zwróć go do firmy Microsoft (zwykle za pośrednictwem podpisu eDoc).
-
-   Gdy firma Microsoft otrzyma dokument prawny, uruchamiamy polecenia cmdlet, aby wyzwolić przeczyszczanie danych, które wykonuje kryptograficzne usuwanie klucza dzierżawy, klucza lokacji i wszystkich poszczególnych kluczy dla dokumentu, co nieodwołalnie łamie hierarchię kluczy. Po ukończeniu poleceń cmdlet przeczyszczania danych dane zostały wyczyszczone.
-
-## <a name="related-articles"></a>Artykuły pokrewne
-
-- [Szyfrowanie usługi przy użyciu klucza klienta](customer-key-overview.md)
+- [Szyfrowanie usługi przy użyciu klucza klienta usługi Microsoft Purview](customer-key-overview.md)
 
 - [Dowiedz się więcej o kluczu dostępności](customer-key-availability-key-understand.md)
 

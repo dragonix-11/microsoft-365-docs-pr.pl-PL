@@ -1,5 +1,5 @@
 ---
-title: Role administratora — informacje
+title: Informacje o stronie role administratora w Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Role administratora są mapowane na funkcje biznesowe i zapewniają uprawnienia do wykonywania określonych zadań w centrum administracyjnym. Na przykład administrator usługi otwiera bilety pomocy technicznej firmy Microsoft.
-ms.openlocfilehash: 07a46d7dfa23838715364ab1ab36ced992265b29
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Dowiedz się więcej o rolach administratora, takich jak administrator usługi, który otwiera bilety pomocy technicznej, które są mapowane na funkcje biznesowe i mają uprawnienia do zadań w centrum administracyjnym.
+ms.openlocfilehash: 58bbc4b15f3fd477b72c8dac3f0f624b1e152a2a
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437090"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466773"
 ---
 # <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Wprowadzenie ze stroną ról administratora Microsoft 365
 

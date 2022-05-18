@@ -1,5 +1,5 @@
 ---
-title: RODO uproszczone Przewodnik dla małych firm
+title: 'Rodo uproszczone: przewodnik dla małych firm'
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Dowiedz się, jak Microsoft 365 dla firm może pomóc w procesie ogólnego rozporządzenia o ochronie danych (RODO).
-ms.openlocfilehash: 4f900b8694acb97be3449072a2ccf5ac7d89ff1f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28f39b8aaf715c9f95f89fe30ae0cfc077327eda
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934142"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469519"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>Rodo uproszczone: przewodnik dla małych firm
 
@@ -101,7 +101,7 @@ Na przykład dane osobowe pracownika mogą być potrzebne na podstawie umowy o p
 Innym przykładem może być zarządzanie listami poszczególnych klientów w celu wysyłania im powiadomień o ofertach specjalnych, jeśli wyrażą na to zgodę.
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365 funkcje, które mogą pomóc
-[Usługa Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) ułatwia odnajdywanie, klasyfikowanie i ochronę poufnych informacji w firmie. Klasyfikatory z możliwością trenowania ułatwiają identyfikowanie i etykietowanie typów dokumentów zawierających dane osobowe. 
+[Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) ułatwiają odnajdywanie, klasyfikowanie i ochronę poufnych informacji w firmie. Klasyfikatory z możliwością trenowania ułatwiają identyfikowanie i etykietowanie typów dokumentów zawierających dane osobowe. 
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Krok 2. Informowanie klientów, pracowników i innych osób o konieczności zebrania ich danych osobowych
 

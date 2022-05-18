@@ -1,5 +1,5 @@
 ---
-title: Wynik produktywności firmy Microsoft — komunikacja
+title: Microsoft Productivity Score and communication insights (Wskaźnik produktywności firmy Microsoft i szczegółowe informacje dotyczące komunikacji)
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,21 +18,21 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Szczegóły komunikacji — ludzie odczuwają produktywność.
-ms.openlocfilehash: 3755f3e8c0ab482a2726d1e132d6e2296df08dc7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Szczegóły komunikacji — wyniki produktywności dla osób.
+ms.openlocfilehash: 7d0ac9312fcdf9604d2f63dff84c5c23ba901655
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325925"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468421"
 ---
-# <a name="communication--people-experiences"></a>Komunikacja — środowisko osób
+# <a name="communication-insights-score-people-experiences"></a>Ocena szczegółowych informacji o komunikacji — środowiska osób
 
-Wynik produktywności pomaga w przekształceniu cyfrowym dzięki szczegółowej informacji na temat sposobu, w jaki Twoja organizacja korzysta Microsoft 365 i technologii, które ją obsługują. Wyniki Twojej organizacji odzwierciedlają pomiary doświadczenia osób i technologii i mogą być porównywane z poziomami odniesienia organizacji o podobnej wielkości co Twoja. Kategoria komunikacja jest częścią miar doświadczeń użytkowników. Aby dowiedzieć się więcej, zapoznaj się z omówieniem [wyników produktywności](productivity-score.md) i przeczytaj [Oświadczenie o ochronie prywatności firmy Microsoft](https://privacy.microsoft.com/privacystatement).
+Wskaźnik produktywności obsługuje proces transformacji cyfrowej dzięki szczegółowym informacjom na temat sposobu, w jaki organizacja korzysta z Microsoft 365 i środowisk technologicznych, które ją obsługują. Wynik twojej organizacji odzwierciedla pomiary osób i środowiska technologicznego i można go porównać z testami porównawczymi organizacji podobnymi do Twoich. Kategoria komunikacji jest częścią miar środowiska osób. Aby dowiedzieć się więcej, zapoznaj się z [omówieniem oceny produktywności](productivity-score.md) i przeczytaj [Oświadczenie o ochronie prywatności firmy Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby rozpocząć pracę z informacjami o komunikacji, osoby w Twojej organizacji muszą mieć licencję na:
+Aby rozpocząć pracę z usługą Communication Insights, osoby w organizacji muszą mieć licencję na:
 
 - Microsoft Teams
 - Yammer
@@ -40,151 +40,151 @@ Aby rozpocząć pracę z informacjami o komunikacji, osoby w Twojej organizacji 
 
 Aby uzyskać więcej informacji, zobacz [Przypisywanie licencji do użytkowników](../manage/assign-licenses-to-users.md).
 
-Gdy osoby będą aktywne w powyższych produktach co najmniej raz w ciągu ostatnich 28 dni, zaczniesz widzieć szczegółowe informacje.
+Po tym, jak w ciągu ostatnich 28 dni osoby były aktywne w powyższych produktach co najmniej raz, zobaczysz szczegółowe informacje.
 
-## <a name="why-your-organizations-communication-score-matters"></a>Dlaczego wynik komunikacji organizacji ma znaczenie
+## <a name="why-your-organizations-communication-score-matters"></a>Dlaczego ocena komunikacji twojej organizacji ma znaczenie
 
-Firma Microsoft rozumie, że ludzie mają różne potrzeby w zakresie komunikacji. Aby szybko odpowiedzieć na pytanie, możesz wysłać wiadomość błyskawiczną. Jeśli chcesz wysłać aktualności o stanie kierownictwa, możesz wybrać wiadomość e-mail. Aby dotrzeć do szerszego grona odbiorców, możesz opublikować wiadomość społecznościową. Microsoft 365 zapewnia taką elastyczność w trybach komunikacji w celu dopasowania do potrzeb wszystkich użytkowników. Badania pokazują, że korzystanie z narzędzi do komunikacji w czasie rzeczywistym tworzy bardziej ujednoliconą organizację i tworzy ujednoliwność, niezależnie od lokalizacji.
+Firma Microsoft rozumie, że użytkownicy mają różne potrzeby w zakresie komunikacji. Aby uzyskać szybką odpowiedź na pytanie, możesz wysłać wiadomość błyskawiczną. Jeśli chcesz wysłać aktualizacje stanu do kierownictwa, możesz wybrać wiadomość e-mail. Aby dotrzeć do szerszego grona odbiorców, możesz opublikować komunikat społeczności. Microsoft 365 zapewnia taką elastyczność w trybach komunikacji, aby dopasować ją do potrzeb wszystkich użytkowników. Badania pokazują, że użycie narzędzi komunikacyjnych w czasie rzeczywistym tworzy bardziej ujednoliconą organizację i buduje morale, niezależnie od lokalizacji.
 
 ## <a name="how-we-calculate-the-communication-score"></a>Jak obliczamy wynik komunikacji
 
-W przypadku komunikacji dostarczamy podstawową analizę, która zawiera kluczowe metryki związane z komunikacją w organizacji, w połączeniu z platformą oceniania wyników na podstawie tych metryk do obliczania wyników organizacji.
+W przypadku komunikacji zapewniamy podstawową analizę, która zawiera kluczowe metryki skojarzone z komunikacją w organizacji, w połączeniu z platformą oceniania na potrzeby obliczania oceny organizacji przy użyciu tych metryk.
 
-### <a name="primary-insight"></a>Podstawowe informacje
+### <a name="primary-insight"></a>Podstawowa analiza
 
-Microsoft 365 umożliwia elastyczną komunikację w celu dopasowania jej do stylu komunikacji przez oferowanie wielu trybów. Podstawowe informacje są miarą osób w organizacji, które komunikują się w wielu trybach.
+Microsoft 365 zapewnia użytkownikom elastyczność dopasowania do stylu komunikacji wszystkich użytkowników, oferując wiele trybów. Podstawowa analiza zapewnia miarę osób w organizacji, które używają wielu trybów do komunikowania się.
 
-:::image type="content" source="../../media/primaryinsight.png" alt-text="Podstawowa analiza trybów komunikacji.":::
+:::image type="content" source="../../media/primaryinsight.png" alt-text="Podstawowy wgląd w tryby komunikacji.":::
 
-1. **Nagłówek:** Zapewnia kluczową metrykę osób korzystających z więcej niż jednego trybu komunikacji, czyli:
+1. **Nagłówka:** Udostępnia kluczową metrykę osób korzystających z więcej niż jednego trybu komunikacji, a mianowicie:
 
    - Wysyłanie wiadomości e-mail za pośrednictwem Exchange
-   - Wysyłanie wiadomości za pośrednictwem Teams
-   - Publikowanie wpisów dla społeczności w Yammer
+   - Wysyłanie komunikatów za pośrednictwem Teams
+   - Publikowanie w społecznościach w Yammer
 
-   Ta kluczowa metryka jest wyświetlana jako wartość procentowa wszystkich osób korzystających z co najmniej dwóch Exchange, Teams lub Yammer.
+   Ta kluczowa metryka jest wyświetlana jako procent wszystkich osób korzystających z co najmniej dwóch Exchange, Teams lub Yammer.
 
-2. **Treść:** Zapewnia więcej informacji na temat tego, jak elastyczność w trybach komunikacji jest cenna dla osób w Organizacji.
+2. **Ciała:** Zawiera więcej informacji o tym, jak elastyczność w trybach komunikacji jest cenna dla osób w organizacji.
 
-3. **Wizualizacja stanu bieżącego:**
+3. **Wizualizacja bieżącego stanu:**
 
-   - Pasek poziomy, na którym część niebieska reprezentuje wartość procentową wyrażoną w nagłówku
-   - Wyróżnia wartość (dzielnika/dzielnika) używaną do obliczania wartości procentowej wyrażonej w nagłówku:
-     - **Licznik**: # osób korzystających z więcej niż jednego trybu komunikacji w ciągu ostatnich 28 dni
-     - **Dzielna**: # osób oznaczonych jako włączone dla więcej niż jednego produktu komunikacyjnego w ciągu ostatnich 28 dni
-   - **Peer Benchmark** value of the key metric is also shown as a percentage
+   - Poziomy pasek, na którym niebieska część reprezentuje wartość procentową wyrażoną w nagłówku
+   - Wyróżnia (licznik/mianownik) używany do obliczania wartości procentowej wyrażonej w nagłówku:
+     - **Numerator**: liczba osób korzystających z więcej niż jednego trybu komunikacji w ciągu ostatnich 28 dni
+     - **Mianownik**: liczba osób oznaczonych jako włączone dla więcej niż jednego produktu komunikacyjnego w ciągu ostatnich 28 dni
+   - **Wartość testu porównawczego elementu równorzędnego** kluczowej metryki jest również wyświetlana jako wartość procentowa
 
-4. **Wyświetlanie zasobów komunikacji:** Kliknięcie tego przycisku zawęciło całą zawartość pomocy technicznej w formie klipów wideo/artykułów związanych z komunikacją. Następnie możesz przejść do niestandardowej listy odtwarzania Komunikacja, a następnie do wszystkich kategorii Wyników produktywności.
+4. **Wyświetlanie zasobów komunikacji:** Kliknięcie tutaj spowoduje pozyskanie całej zawartości pomocy technicznej w postaci filmów wideo/artykułów związanych z komunikacją. Z nich możesz przejść do niestandardowej listy odtwarzania komunikacji, a następnie do wszystkich kategorii Ocena produktywności.
 
-#### <a name="trend-visualization-of-primary-insight"></a>Wizualizacja trendu podstawowej analizy
+#### <a name="trend-visualization-of-primary-insight"></a>Wizualizacja trendu podstawowego wglądu w szczegółowe informacje
 
- Ten wykres przedstawia trend licznika kluczowej metryki w podstawowej analizie, czyli liczbę osób w organizacji korzystających z więcej niż jednego trybu komunikacji w ciągu ostatnich 180 dni. W tym miejscu wartość dzienna jest zagregowaną liczbą osób, które korzystają z wielu form komunikacji w ciągu ostatnich 28 dni.
+ Ten wykres przedstawia trend liczby kluczowych metryk w podstawowej analizie — czyli liczby osób w organizacji korzystających z więcej niż jednego trybu komunikacji w ciągu ostatnich 180 dni. W tym miejscu wartość dzienna to agregacja liczby osób korzystających z wielu form komunikacji w ciągu ostatnich 28 dni.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Wykres przedstawia liczbę osób, które komunikują się w porównaniu z czasem przy użyciu więcej niż jednego trybu.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Wykres przedstawiający liczbę osób, które używają więcej niż jednego trybu do komunikowania się w porównaniu z czasem.":::
 
 ### <a name="scoring-model"></a>Model oceniania
 
-Wynik komunikacji organizacji jest miarą na poziomie zagregowanym (organizacji), niezależnie od tego, czy osoby stale komunikują się za pomocą wielu trybów między wiadomościami e-mail, czatem i wpisami społeczności w ciągu 28 dni.
+Wynik komunikacji organizacji mierzy na poziomie agregacji (organizacji), czy osoby stale komunikują się przy użyciu wielu trybów między wiadomościami e-mail, czatami i wpisami społeczności w oknie 28-dniowym.
 
-Wyniki nie są dostępne na poziomie poszczególnych użytkowników.
+Wyniki nie są udostępniane na poziomie poszczególnych użytkowników.
 
-## <a name="explore-how-your-organization-communicates"></a>Poznawanie komunikacji Twojej organizacji
+## <a name="explore-how-your-organization-communicates"></a>Dowiedz się, jak twoja organizacja komunikuje się
 
-Przekazujemy ci także informacje, które pomagają w zyskać wgląd w sposób komunikacji Twojej organizacji. Te dodatkowe metryki nie wpływają bezpośrednio na Wynik produktywności, ale mogą pomóc w utworzeniu planu działania w ramach transformacji cyfrowej.
+Udostępniamy również informacje, które ułatwiają uzyskanie wglądu w sposób komunikacji organizacji. Te dodatkowe metryki nie wpływają bezpośrednio na wynik produktywności, ale mogą pomóc w utworzeniu planu działania w ramach transformacji cyfrowej.
 
 ### <a name="breakdown-of-communication-by-modes"></a>Podział komunikacji według trybów
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Podział trybów komunikacji.]":::
 
-1. **Nagłówek:** Wyróżnia cel uzyskania szczegółowej informacji w celu zapewnienia szczegółowego podziału informacji dla poszczególnych trybów komunikacji rozważanych w ramach komunikacji.
+1. **Nagłówka:** Podkreśla cel szczegółowych informacji, aby zapewnić szczegółowy podział różnych trybów komunikacji rozważanych w ramach komunikacji.
 
-2. **Treść:** Zapewnia informacje o wartości korzystania z różnych trybów w celu udostępniania wiedzy.
+2. **Ciała:** Zawiera informacje na temat wartości używania różnych trybów do udostępniania wiedzy.
 
-3. **Wizualizacja:** Podział odzwierciedla zastosowanie dla poszczególnych trybów. Kolorowa część i ułamek na każdym pasku reprezentują liczbę osób wysyłających wiadomości e-mail, wiadomości lub wpisy społeczności jako procent liczby osób włączonych w tym trybie:
+3. **Wizualizacji:** Podział reprezentuje użycie dla każdego trybu. Kolorowa część i ułamek na każdym pasku reprezentują liczbę osób wysyłających wiadomości e-mail, wiadomości lub wpisy społeczności jako procent liczby osób włączonych w tym trybie:
 
-   - **Osoby wysyłające wiadomości e-mail:** Część kolorowa i ułamek reprezentują procent użytkowników włączonych dla Exchange, którzy wysyłają wiadomości e-mail. Ten ułamek jest tworzony na:
+   - **Osoby wysyłające wiadomości e-mail:** Kolorowa część i ułamek reprezentują odsetek użytkowników włączonych dla Exchange, którzy wysyłają wiadomości e-mail. Ten ułamek jest skonstruowany na podstawie:
 
-     - **Dzielna**: Osoby wysyłające wiadomości e-mail w ciągu ostatnich 28 dni.
-     - **Dzielni**: Funkcja Osoby Exchange w ciągu ostatnich 28 dni.
+     - **Numerator**: Osoby wysyłające wiadomości e-mail w ciągu ostatnich 28 dni.
+     - **Mianownik**: osoby włączone dla Exchange w ciągu ostatnich 28 dni.
 
-   - **Osoby wysyłające wiadomości w Microsoft Teams:** Kolorowy fragment i ułamek reprezentują procent użytkowników włączonych dla Microsoft Teams, którzy wysyłają wiadomości. Ten ułamek jest tworzony na:
+   - **Osoby wysyłające wiadomości w Microsoft Teams:** kolorowa część i ułamek reprezentują odsetek użytkowników włączonych dla Microsoft Teams, którzy wysyłają wiadomości. Ten ułamek jest skonstruowany na podstawie:
 
-     - **Dzielna**: Osoby wysyłające wiadomości na Microsoft Teams w ciągu ostatnich 28 dni.
-     - **Dzielni**: Funkcja Osoby Microsoft Teams w ciągu ostatnich 28 dni.
+     - **Numerator**: osoby wysyłające wiadomości na Microsoft Teams w ciągu ostatnich 28 dni.
+     - **Mianownik**: osoby włączone dla Microsoft Teams w ciągu ostatnich 28 dni.
 
-   - **Osoby publikujące wpisy w społecznościach:** Część kolorowa i ułamek reprezentują procent użytkowników włączonych dla Yammer, którzy publikują wpisy w społecznościach. Ten ułamek jest tworzony na:
+   - **Osoby publikujące w społecznościach:** Kolorowa część i ułamek reprezentują odsetek użytkowników włączonych dla Yammer, które są publikowane w społecznościach. Ten ułamek jest skonstruowany na podstawie:
 
-     - **Dzielna:** Osoby publikujące wpisy Yammer społeczności w ciągu ostatnich 28 dni.
-     - **Dzielna:** Osoby włączone dla Yammer ostatnich 28 dni.
+     - **Licznik:** Osoby publikujące w Yammer społecznościach w ciągu ostatnich 28 dni.
+     - **Mianownik:** Osoby włączone dla Yammer w ciągu ostatnich 28 dni.
 
-4. **Wyświetlanie powiązanej zawartości:** Wybierz ten link, aby wyświetlić sortowane klipy wideo i inną powiązaną zawartość Pomocy.
+4. **Wyświetl powiązaną zawartość:** Wybierz ten link, aby wyświetlić zebrane filmy wideo i inną powiązaną zawartość pomocy.
 
 ### <a name="mentions-in-emails"></a>@mentions w wiadomościach e-mail
 
-:::image type="content" source="../../media/emailmentions.png" alt-text="! [Wiadomości e-mail ze wzmiankami.]":::
+:::image type="content" source="../../media/emailmentions.png" alt-text="! [Wiadomości e-mail z wzmiankami.]":::
 
-1. **Nagłówek:** Wyróżnia wzrost liczby odpowiedzi dla nowych wątków wiadomości e-mail rozpoczętych w ciągu ostatnich 28 dni, gdy zawierają @mentions.
+1. **Nagłówka:** Wyróżnia wzrost liczby odpowiedzi dla nowych wątków poczty e-mail rozpoczętych w ciągu ostatnich 28 dni, kiedy zawierają @mentions.
 
-2. **Treść:** Zawiera informacje o wartościach używania wiadomości @mentions e-mail. Ponadto osoby korzystające z @mentions wiadomości e-mail są wyrażane jako odsetek wszystkich użytkowników, którzy w ciągu ostatnich 28 dni wysłali wiadomość e-mail.
+2. **Ciała:** Zawiera informacje o wartości używania @mentions w wiadomościach e-mail. Ponadto osoby korzystające z @mentions są wyrażane jako odsetek wszystkich użytkowników, którzy wysłali wiadomość e-mail w ciągu ostatnich 28 dni.
 
-3. **Wizualizacja:** Przerywanie liczby odpowiedzi dla nowych wątków wiadomości e-mail w zależności od tego, czy były @mentions czy nie:
+3. **Wizualizacji:** Rozkłada częstotliwość odpowiedzi dla nowych wątków wiadomości e-mail na podstawie tego, czy @mentions, czy nie:
 
-   - **Odpowiedzi na wiadomości e-mail zawierające \@wzmianki:** Kolorowy fragment i ułamek reprezentują szybkość odpowiedzi dla nowych wątków wiadomości e-mail zawierających @mentions. Ten ułamek jest tworzony na:
+   - **Odpowiedzi na wiadomości e-mail z \@wzmiankami:** kolorowa część i ułamek reprezentują szybkość odpowiedzi dla nowych wątków wiadomości e-mail zawierających @mentions. Ten ułamek jest skonstruowany na podstawie:
 
-     - **Dzielna:** Nowe wątki wiadomości e-@mentions, które zostały uruchomione i odebrano odpowiedź w ciągu ostatnich 28 dni.
-     - **Dzielna:** Nowe wątki wiadomości e-@mentions, które zostały uruchomione w ciągu ostatnich 28 dni.
+     - **Licznik:** Nowe wątki wiadomości e-mail zawierające @mentions, które zostały uruchomione i otrzymały odpowiedź w ciągu ostatnich 28 dni.
+     - **Mianownik:** Nowe wątki wiadomości e-mail zawierające @mentions, które zostały uruchomione w ciągu ostatnich 28 dni.
 
-   - **Odpowiedzi na wiadomości e-mail bez \@wspomni:** Kolorowy fragment i ułamek reprezentują szybkość odpowiedzi dla nowych wątków wiadomości e-mail zawierających @mentions. Ten ułamek jest tworzony na:
+   - **Odpowiedzi na wiadomości e-mail bez \@wzmianek:** kolorowa część i ułamek reprezentują współczynnik odpowiedzi dla nowych wątków wiadomości e-mail zawierających @mentions. Ten ułamek jest skonstruowany na podstawie:
 
-     - **Dzielna:** Nowe wątki wiadomości e-mail, które nie zawierają @mentions, które zostały uruchomione, a także odebrano odpowiedź w ciągu ostatnich 28 dni.
-     - **Dzielna:** Nowe wątki wiadomości e-@mentions, które zostały uruchomione w ciągu ostatnich 28 dni.
+     - **Licznik:** Nowe wątki wiadomości e-mail, które nie zawierają @mentions, które zostały uruchomione, a także otrzymały odpowiedź w ciągu ostatnich 28 dni.
+     - **Mianownik:** Nowe wątki wiadomości e-mail, które nie zawierają @mentions, które zostały uruchomione w ciągu ostatnich 28 dni.
 
-4. **Wyświetlanie powiązanej zawartości:** Wybierz ten link, aby wyświetlić sortowane klipy wideo i inną powiązaną zawartość Pomocy.
+4. **Wyświetl powiązaną zawartość:** Wybierz ten link, aby wyświetlić zebrane filmy wideo i inną powiązaną zawartość pomocy.
 
 
-### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Zestawienie wiadomości według typu w programie Microsoft Teams
+### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Podział komunikatów według typu w Microsoft Teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Teams typów wiadomości.]":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Teams typy komunikatów.]":::
 
-1. **Nagłówek:** Wyróżnia osoby, które wysłały wiadomości w kanale jako procent osób, które w ciągu ostatnich 28 dni wysłały jakikolwiek rodzaj wiadomości (w tym wiadomości na czacie i w kanałach).
+1. **Nagłówka:** Wyróżnia osoby, które wysyłają wiadomości kanału jako odsetek osób, które wysłały dowolny rodzaj wiadomości (w tym wiadomości czatu i kanału) w ciągu ostatnich 28 dni.
 
-2. **Treść:** Zawiera informacje o wartości używania wiadomości w kanałach w Microsoft Teams.
+2. **Ciała:** Zawiera informacje o wartości korzystania z komunikatów kanałów w Microsoft Teams.
 
-3. **Wizualizacja:** Przerywa korzystanie z czatu i wiadomości kanału:
+3. **Wizualizacji:** Rozkłada użycie wiadomości czatu i kanału:
 
-      - **Osoby wysyłające wiadomości na czacie:** Kolorowa część i ułamek reprezentują użycie wiadomości czatu w obrębie osób, które wysłały wiadomości na Microsoft Teams. Część jest zbudowana z:
+      - **Osoby wysyłające wiadomości czatu:** Kolorowa część i ułamek reprezentują użycie wiadomości czatu w obrębie osób, które wysyłały wiadomości na Microsoft Teams. Ułamek jest skonstruowany na podstawie:
 
-        - **Dzielna:** Osoby, które wysłały wiadomości na Microsoft Teams w ciągu ostatnich 28 dni.
-        - **Dzielna:** Osoby, które wysłały wiadomości Microsoft Teams w ciągu ostatnich 28 dni.
+        - **Licznik:** Osoby, które wysłały wiadomości czatu na Microsoft Teams w ciągu ostatnich 28 dni.
+        - **Mianownik:** Osoby, które wysłały wiadomości na Microsoft Teams w ciągu ostatnich 28 dni.
 
-      - **Osoby wysyłające wiadomości w kanale:** Kolorowa część i ułamek reprezentują użycie wiadomości w kanale w obrębie osób wysyłających wiadomości na Microsoft Teams. Część jest zbudowana z:
+      - **Osoby wysyłające komunikaty kanału:** Kolorowa część i ułamek reprezentują użycie komunikatów kanału w obrębie osób wysyłających wiadomości na Microsoft Teams. Ułamek jest skonstruowany na podstawie:
 
-        - **Dzielna:** Osoby, które wysłały wiadomości na Microsoft Teams w ciągu ostatnich 28 dni.
-        - **Dzielna:** Osoby, które wysłały wiadomości Microsoft Teams w ciągu ostatnich 28 dni.
+        - **Licznik:** Osoby, które wysyłają wiadomości kanału na Microsoft Teams w ciągu ostatnich 28 dni.
+        - **Mianownik:** Osoby, które wysłały wiadomości na Microsoft Teams w ciągu ostatnich 28 dni.
 
-4. **Wyświetlanie powiązanej zawartości:** Wybierz ten link, aby wyświetlić sortowane klipy wideo i inną powiązaną zawartość Pomocy.
+4. **Wyświetl powiązaną zawartość:** Wybierz ten link, aby wyświetlić zebrane filmy wideo i inną powiązaną zawartość pomocy.
 
 ### <a name="questions-and-answers-in-yammer"></a>Pytania i odpowiedzi w Yammer
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Pytania i odpowiedzi w Yammer]":::
 
-1. **Nagłówek:** Wyróżnia wpisy &quot;&quot; oznaczone jako pytania Yammer, które w ciągu ostatnich 28 dni otrzymały odpowiedź oznaczoną jako Najlepsza odpowiedź jako wartość procentowa wszystkich wpisów oznaczonych jako pytania dotyczące Yammer na temat wiadomości e-mail.
+1. **Nagłówka:** Wyróżnia wpisy oznaczone jako pytania dotyczące Yammer, które otrzymały odpowiedź oznaczoną jako &quot;Najlepsza odpowiedź&quot; jako procent wszystkich wpisów oznaczonych jako pytania dotyczące Yammer w ciągu ostatnich 28 dni.
 
-2. **Treść:** Informacje na temat wartości korzystania z pytań i odpowiedzi w programie Yammer w celu dzielenia się wiedzą.
+2. **Ciała:** Zawiera informacje na temat wartości używania pytań i odpowiedzi w Yammer do udostępniania wiedzy.
 
-3. **Wizualizacja:** Przerywa korzystanie z funkcji pytań i odpowiedzi w Twojej organizacji:
+3. **Wizualizacji:** Podział funkcji pytań i odpowiedzi w organizacji:
 
-   - **Pytania:** Kolorowy fragment słupka i skojarzona z nim liczba reprezentują łączną liczbę wpisów oznaczonych jako pytania w ciągu ostatnich 28 dni.
-   - **Pytania i odpowiedzi:** Kolorowy fragment paska i skojarzona z nim liczba reprezentują liczbę wpisów oznaczonych jako pytania i odpowiedzi w ciągu ostatnich 28 dni.
-   - **Pytania z najlepszymi odpowiedziami:** Kolorowy fragment słupka i &quot;&quot; skojarzona z nim liczba reprezentują liczbę wpisów oznaczonych jako pytania i uzyskały najlepszą odpowiedź w ciągu ostatnich 28 dni.
+   - **Pytania:** Kolorowa część paska i skojarzona liczba reprezentują całkowitą liczbę wpisów oznaczonych jako pytania w ciągu ostatnich 28 dni.
+   - **Pytania z odpowiedziami:** Kolorowa część paska i skojarzona liczba reprezentują liczbę wpisów oznaczonych jako pytania i otrzymały odpowiedzi w ciągu ostatnich 28 dni.
+   - **Pytania z najlepszymi odpowiedziami:** Kolorowa część paska i skojarzona liczba reprezentują liczbę wpisów oznaczonych jako pytania, a także otrzymały najlepszą &quot;odpowiedź&quot; w ciągu ostatnich 28 dni.
 
-4. **Wyświetlanie powiązanej zawartości:** Wybierz ten link, aby wyświetlić sortowane klipy wideo i inną powiązaną zawartość Pomocy.
+4. **Wyświetl powiązaną zawartość:** Wybierz ten link, aby wyświetlić zebrane filmy wideo i inną powiązaną zawartość pomocy.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Microsoft 365 kondycji aplikacji — środowisko technologii](apps-health.md) (artykuł)\
-[Współpraca nad zawartością — środowisko osób](content-collaboration.md) (artykuł)\
-[Spotkania — środowisko osób](meetings.md) (artykuł)\
-[Mobilność — środowisko osób](mobility.md) (artykuł)\
-[Kontrolki prywatności dotyczące wyników produktywności](privacy.md) (artykuł)\
-[Praca zespołowa — środowisko osób](teamwork.md) (artykuł)
+[kondycja aplikacji Microsoft 365 — środowiska technologiczne](apps-health.md) (artykuł)\
+[Współpraca z zawartością — środowiska osób](content-collaboration.md) (artykuł)\
+[Spotkania — doświadczenia osób](meetings.md) (artykuł)\
+[Mobilność — środowiska osób](mobility.md) (artykuł)\
+[Mechanizmy kontroli prywatności dla współczynnika produktywności](privacy.md) (artykuł)\
+[Praca zespołowa — środowiska osób](teamwork.md) (artykuł)

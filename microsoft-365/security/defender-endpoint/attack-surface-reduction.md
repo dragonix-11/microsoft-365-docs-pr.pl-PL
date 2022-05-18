@@ -20,13 +20,12 @@ ms.topic: article
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: a1ae7d53ac69b4756417704b4938ff4fb41f9e41
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: a5ca2613028e892229da1888c6176cb729e0cf1b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418811"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469585"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Omówienie reguł zmniejszania obszaru podatnego na ataki
 
@@ -127,7 +126,7 @@ Możesz ustawić reguły zmniejszania obszaru podatnego na ataki dla urządzeń,
 - Windows Server, [wersja 1803 (półroczny kanał)](/windows-server/get-started/whats-new-in-windows-server-1803) lub nowszy
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+- [Windows Server 2012 R2](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh801901(v=ws.11))
 
   >[!NOTE]
   >Windows Server 2016 i Windows Server 2012 R2 należy dołączyć, korzystając z instrukcji zawartych w temacie [Dołączanie serwerów Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016), aby ta funkcja działała.
@@ -177,7 +176,7 @@ Można utworzyć widok niestandardowy, który filtruje zdarzenia w celu wyświet
 "Wersja aparatu" wymieniona dla zdarzeń redukcji obszaru ataków w dzienniku zdarzeń jest generowana przez usługę Defender for Endpoint, a nie przez system operacyjny. Usługa Defender for Endpoint jest zintegrowana z Windows 10 i Windows 11, więc ta funkcja działa na wszystkich urządzeniach z zainstalowanymi Windows 10 lub Windows 11.
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

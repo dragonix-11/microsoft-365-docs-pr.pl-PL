@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Utwórz skrzynkę pocztową pokoju lub sprzętu, aby każda osoba w organizacji mogła zarezerwować te zasoby na potrzeby spotkań lub wydarzeń, korzystając z programu Outlook. '
-ms.openlocfilehash: afd24a2780478718cb74fdd6681d53a905f96b57
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 654bd8779d7d66db5324e62c1397c3251da11945
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64633266"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469156"
 ---
-# <a name="room-and-equipment-mailboxes"></a>Skrzynki pocztowe pokoju i sprzętu
+# <a name="create-microsoft-365-room-and-equipment-mailboxes"></a>Tworzenie skrzynek pocztowych Microsoft 365 pokoju i sprzętu
 
-Jeśli masz salę konferencyjną, samochód służbowy lub sprzęt, z którego korzystają wszyscy, potrzebny jest sposób udostępnienia tych zasobów wszystkim zainteresowanym. Najlepszym sposobem jest utworzenie skrzynki pocztowej pokoju lub sprzętu w Microsoft 365 poszczególnych zasobów. Możesz utworzyć taką skrzynkę pocztową dla sali konferencyjnej na pierwszym piętrze, dla sprzętu multimedialnego lub dla ciężarówki do przeprowadzek.
+Jeśli masz salę konferencyjną, samochód służbowy lub sprzęt, z którego korzystają wszyscy, potrzebny jest sposób udostępnienia tych zasobów wszystkim zainteresowanym. Najlepszym sposobem na to jest utworzenie skrzynki pocztowej pokoju lub sprzętu w Microsoft 365 dla każdego zasobu. Możesz utworzyć taką skrzynkę pocztową dla sali konferencyjnej na pierwszym piętrze, dla sprzętu multimedialnego lub dla ciężarówki do przeprowadzek.
   
 Po utworzeniu skrzynki pocztowej pokoju lub sprzętu każda osoba w firmie będzie mogła zarezerwować te zasoby na potrzeby spotkań lub wydarzeń, korzystając z programu Outlook. Zapoznaj się z kolejnymi dwiema kartami, aby dowiedzieć się, **jak korzystać z tej funkcji** i **jak ją skonfigurować**. Poniżej przedstawiono inne często zadawane pytania dotyczące skrzynek pocztowych pokojów i sprzętu.
   
@@ -51,7 +51,7 @@ Aby używać skrzynek pocztowych pokojów lub sprzętu, otwórz program Outlook 
 
    Możesz też wybrać pozycję **Do**, a następnie dwukrotnie kliknąć salę konferencyjną lub sprzęt na liście. Następnie wybierz przycisk **OK**.
 
-   ![Rezerwowanie skrzynki pocztowej pokoju w Outlook.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+   ![Zarezerwuj skrzynkę pocztową pokoju w Outlook.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. W wierszu **Temat** wpisz cel rezerwacji lub spotkania. 
     
@@ -59,15 +59,15 @@ Aby używać skrzynek pocztowych pokojów lub sprzętu, otwórz program Outlook 
     
 6. Dostosuj **Godzinę rozpoczęcia** i **Godzinę zakończenia**. Ewentualnie wybierz pozycję **Wydarzenie całodzienne**. Aby powtarzać spotkanie lub rezerwację cyklicznie, wybierz pozycję **Cykl** na górze.
  
-   ![Rezerwuj czas spotkania.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+   ![Zarezerwuj czas spotkania.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Wpisz komunikat opisujący cel i w razie potrzeby dołącz pliki.
     
-8. Aby zezwolić innym osobom na dołączanie do spotkania online lub na telefoniczne dołączanie do spotkania, wybierz pozycję Teams **spotkania**.
+8. Aby zezwolić innym osobom na dołączanie online lub wywoływanie spotkania, wybierz pozycję **Teams Spotkanie**.
     
 9. Aby sprawdzić dostępność pokoju, sprzętu i zaproszonych osób, wybierz pozycję **Asystent planowania** na górze. Następnie wybierz dostępną godzinę w kalendarzu.
 
-   ![Sprawdź, czy jest dostępny sprzęt w pokoju.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)
+   ![Sprawdź, czy jest dostępny sprzęt do pokoju.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)
 
    > [!TIP]
    > W kalendarzu planowania niebieskie pole oznacza, że pokój lub sprzęt jest zarezerwowany, albo że osoba jest zajęta. Wybierz biały (wolny) obszar w kalendarzu. 
@@ -96,7 +96,7 @@ Aby skonfigurować skrzynkę pocztową pokoju lub sprzętu, przejdź do <a href=
     
    - **Lokalizacja**: numer pokoju albo lokalizacja pokoju w budynku lub regionie.
     
-   - **Numer telefonu**: numer telefonu dla pokoju. To inny numer niż numer telefonu spotkania generowany podczas korzystania z programu Microsoft Teams.
+   - **Numer telefonu**: numer telefonu dla pokoju. Różni się to od numeru telefonu spotkania wygenerowanego podczas korzystania z Microsoft Teams.
     
 4. Wybierz opcję **Dodaj**.
     
@@ -123,7 +123,7 @@ Nie, akceptowanie lub odrzucanie wniosków nie jest konieczne. Możesz zdecydowa
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>Czy skrzynka pocztowa pokoju lub skrzynka pocztowa sprzętu wymaga licencji produktu?
 
-L.p. Mimo że większość osób w organizacji potrzebuje licencji, aby używać usługi Microsoft 365, nie trzeba przypisywać licencji do skrzynki pocztowej pokoju ani skrzynki pocztowej sprzętu, jeśli skrzynka pocztowa zasobu nie musi mieć rozmiaru większego niż 50 GB lub jeśli niektóre funkcje nie są potrzebne (Zasady przechowywania z witryny Zabezpieczenia i zgodność lub Wstrzymaj z Exchange Online ) lub na wypadek, gdy do skrzynki pocztowej zasobu nie jest potrzebne archiwum online.
+Nie. Chociaż większość osób w organizacji potrzebuje licencji na korzystanie z Microsoft 365, nie musisz przypisywać licencji do skrzynki pocztowej pokoju lub skrzynki pocztowej sprzętu, jeśli skrzynka pocztowa zasobu nie musi mieć rozmiaru większego niż 50 GB lub, w przypadku gdy niektóre funkcje nie są potrzebne (zasady przechowywania z poziomu zabezpieczeń i zgodności lub wstrzymane z Exchange Online ), lub w przypadku, gdy skrzynka pocztowa zasobu nie potrzebuje dołączonego archiwum online.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>Czy potrzebna jest osoba zarządzająca rezerwowaniem pokojów i sprzętu?
 

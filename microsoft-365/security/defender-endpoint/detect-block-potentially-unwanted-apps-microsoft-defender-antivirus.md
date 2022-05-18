@@ -14,14 +14,13 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c7307e7c690e9664f6a848fcd93ed27f1062455a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d93587867a2fea0921a1ac9711eed0f8c1b1beec
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418363"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468311"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Wykryj i blokuj potencjalnie niechciane aplikacje
 
@@ -114,7 +113,7 @@ Aby uzyskać System Center 2012 Configuration Manager, zobacz [How to Deploy Pot
 
 ### <a name="use-group-policy-to-configure-pua-protection"></a>Konfigurowanie ochrony pua przy użyciu zasady grupy
 
-1. Pobieranie i instalowanie [szablonów administracyjnych (.admx) na potrzeby aktualizacji Windows 10 października 2020 r. (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
+1. Pobierz i zainstaluj [szablony administracyjne (.admx) dla Windows 11 aktualizacji z października 2021 r. (21H2)](https://www.microsoft.com/download/details.aspx?id=103507)
 
 2. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
@@ -208,7 +207,7 @@ Czasami plik jest błędnie blokowany przez ochronę pua lub funkcja pua jest wy
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia pliku i lokalizacji folderu](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

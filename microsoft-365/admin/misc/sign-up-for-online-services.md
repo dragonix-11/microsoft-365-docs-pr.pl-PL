@@ -1,5 +1,5 @@
 ---
-title: Domena może być używana, jeśli inna osoba w organizacji utworzyła konto za jej pomocą
+title: Twoja domena może być używana, jeśli ktoś inny się z nią zarejestrował
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: 'Dowiedz się, jak używać służbowego lub szkolnego adresu e-mail do rejestracji w usługach online firmy Microsoft bez angażowania działu IT. '
-ms.openlocfilehash: adcbad88e098a06d5220e10a0c6d365b47bd2303
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 'Dowiedz się, jak korzystać z służbowych wiadomości e-mail, aby zarejestrować się w usłudze Microsoft Usługi online bez angażowania działu IT. '
+ms.openlocfilehash: db31c62099d07d27ac0ffe4529b34db9fa5d6d19
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319815"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466663"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Twoja domena może być w użyciu, jeśli inna osoba ją załozyła
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Twoja domena może być używana, jeśli ktoś inny się z nią zarejestrował
 
 Użytkownicy mający konto służbowe lub szkolne mogą [tworzyć konta w niektórych usługach online firmy Microsoft](self-service-sign-up.md) bez angażowania działu informatycznego. Są to na przykład usługi Office 365, Power BI i usługi zarządzania prawami dostępu. Po samodzielnym utworzeniu konta z użyciem służbowego lub szkolnego adresu e-mail użytkownicy otrzymują dostęp do funkcji tej usługi, ale nie mogą zarządzać usługą (dodawać użytkowników i licencji, zarządzać domeną itp.). 
   

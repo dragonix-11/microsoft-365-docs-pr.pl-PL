@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: Dowiedz się, jak być na bieżąco z aktualizacjami Microsoft 365 przy użyciu centrum komunikatów, docelowej wersji, planu działania oraz blogów i Community.
-ms.openlocfilehash: f38805b3c09c3b40198930014a3083a3ebc03cf9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: cf4adf2e603517dfb4db57811e291195a1536488
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129315"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468531"
 ---
-# <a name="stay-on-top-of-changes"></a>Bycie na bieżąco ze zmianami
+# <a name="stay-on-top-of-microsoft-365-product-and-feature-changes"></a>Bądź na bieżąco z Microsoft 365 zmianami produktu i funkcji
 
 Dzięki Microsoft 365 otrzymujesz nowe aktualizacje produktów i funkcje w miarę ich udostępniania zamiast zaplanowanych aktualizacji, które są oddalone od siebie o miesiące lub lata. W efekcie Ty i Twoi użytkownicy możecie na bieżąco korzystać z nowych i ulepszonych sposobów pracy, bez konieczności przeprowadzania czasochłonnych i kosztownych uaktualnień w całej firmie. Pewną trudnością w takim modelu może być nadążanie za zmianami i aktualizacjami. Oto kilka sposobów, dzięki czemu możesz być na bieżąco z aktualizacjami Microsoft 365 w organizacji.
 

@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: Dowiedz się, jak uzyskać raport aktywni użytkownicy przy użyciu pulpitu nawigacyjnego raportów Microsoft 365 w Centrum administracyjne platformy Microsoft 365 i dowiedzieć się, ile licencji produktów jest używanych.
-ms.openlocfilehash: 65ea3f3624bda4f33a8c5680a53749595dc7aa15
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Dowiedz się, jak uzyskać raport aktywni użytkownicy przy użyciu pulpitu nawigacyjnego Microsoft 365 Raporty w centrum administracyjnym i dowiedzieć się, ile licencji produktów jest używanych.
+ms.openlocfilehash: 88041c5821c95271723320fb2b4474a369723fbb
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782000"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467981"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Ocena raportu Microsoft 365 Aktywni użytkownicy
 

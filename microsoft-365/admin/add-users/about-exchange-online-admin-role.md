@@ -1,5 +1,5 @@
 ---
-title: Rola administratora Exchange Online informacje
+title: Informacje o roli administratora Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,48 +21,48 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange administratorzy online zarządzają pocztą e-mail i skrzynkami pocztowymi Twojej organizacji. Na przykład odzyskują usunięte elementy ze skrzynki pocztowej użytkownika.
-ms.openlocfilehash: f046d9d85c677d0793d2b991736185b49f4174e9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Exchange Online administratorzy zarządzają pocztą e-mail i skrzynkami pocztowymi organizacji, a na przykład odzyskują usunięte elementy w skrzynce pocztowej użytkownika.
+ms.openlocfilehash: 048a435a515c4f88eb688a2cfaf13006e859741c
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315333"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467103"
 ---
-# <a name="about-the-exchange-online-admin-role"></a>Rola administratora Exchange Online informacje
+# <a name="about-the-exchange-online-admin-role"></a>Informacje o roli administratora Exchange Online
 
-Aby ułatwić administrowanie Microsoft 365, możesz przypisać użytkownikom uprawnienia [](assign-admin-roles.md) do zarządzania pocztą e-mail i skrzynkami pocztowymi organizacji z poziomu Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administracyjnego</a>. Możesz to zrobić, przypisując je do roli Exchange administratora.
+Aby ułatwić administrowanie Microsoft 365, możesz [przypisać](assign-admin-roles.md) użytkownikom uprawnienia do zarządzania pocztą e-mail i skrzynkami pocztowymi organizacji z <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a>. Można to zrobić, przypisując je do roli administratora Exchange.
   
- **Porada**: Przypisując kogoś do roli Exchange, przypisz go także do roli administratora usługi. Dzięki temu mogą oni zobaczyć ważne informacje centrum administracyjne platformy Microsoft 365, takie jak kondycja usługi Exchange Online oraz powiadomienia o zmianach i wersjach.
+ **Porada**: Po przypisaniu kogoś do roli administratora Exchange przypisz ją również do roli administratora usługi. Dzięki temu mogą zobaczyć ważne informacje w Centrum administracyjne platformy Microsoft 365, takie jak kondycja usługi Exchange Online oraz powiadomienia o zmianach i wydaniach.
 
-Poniżej podano niektóre kluczowe zadania, które użytkownicy mogą wykonywać po przypisaniu ich do roli Exchange administratora:
+Poniżej przedstawiono niektóre z kluczowych zadań, które użytkownicy mogą wykonać, gdy są przypisani do roli administratora Exchange:
   
 - [Recover deleted items in a user mailbox - Admin Help](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Skonfiguruj zasady archiwizacji i usuwania dla skrzynek pocztowych w twojej organizacji](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md).
+- [Skonfiguruj zasady archiwum i usuwania dla skrzynek pocztowych w organizacji](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md).
 
-- Konfigurowanie funkcji skrzynki pocztowej, takich jak zasady udostępniania skrzynek pocztowych: jak użytkownicy mogą udostępniać informacje kalendarza i kontaktów innym osobom spoza organizacji.
+- Skonfiguruj funkcje skrzynki pocztowej, takie jak zasady udostępniania skrzynek pocztowych: jak użytkownicy mogą udostępniać informacje o kalendarzu i kontaktach innym osobom spoza organizacji.
 
-- Skonfiguruj [pełnomocników "Wyślij jako](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" i "Wyślij [w](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user) imieniu" dla skrzynki pocztowej innej osoby. Na przykład kierownik może chcieć, aby jego asystent mógł wysyłać wiadomości e-mail w jego imieniu.
+- Skonfiguruj delegatów "[Wyślij jako](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" i "[Wyślij w imieniu](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" dla czyjejś skrzynki pocztowej. Na przykład kierownictwo może chcieć, aby jego asystent miał możliwość wysyłania wiadomości e-mail w ich imieniu.
 
-- [Utwórz udostępnioną skrzynkę pocztową](../email/create-a-shared-mailbox.md) , aby grupa osób może monitorować i wysyłać wiadomości e-mail ze wspólnego adresu e-mail.
+- [Utwórz udostępnioną skrzynkę pocztową](../email/create-a-shared-mailbox.md) , aby grupa osób mogła monitorować i wysyłać wiadomości e-mail ze wspólnego adresu e-mail.
 
-- [Ochrona poczty e-mail przed spamem](../../security/office-365-security/anti-spam-protection.md) i filtry złośliwego oprogramowania w organizacji.
+- [Filtry ochrony przed spamem](../../security/office-365-security/anti-spam-protection.md) i złośliwym oprogramowaniem poczty e-mail dla organizacji.
 
-- Zarządzanie Microsoft 365 grupami
+- Zarządzaj grupami platformy Microsoft 365
 
-## <a name="exchange-online-role-groups"></a>Exchange Online grup ról
+## <a name="exchange-online-role-groups"></a>Exchange Online grupy ról
 
-Jeśli masz dużą organizację, administrator Exchange może chcieć przypisać użytkowników do Exchange ról. Gdy administrator dodaje użytkownika do grupy ról, użytkownik otrzymuje uprawnienia do wykonywania określonych funkcji biznesowych tylko przez członków tej grupy.
+Jeśli masz dużą organizację, administrator Exchange może chcieć przypisać użytkowników do Exchange grup ról. Gdy administrator dodaje użytkownika do grupy ról, użytkownik otrzymuje uprawnienia do wykonywania określonych funkcji biznesowych, które mogą wykonywać tylko członkowie tej grupy.
   
- Na przykład administrator Exchange przypisać kogoś do grupy ról Zarządzanie odnajdowaniami, aby mógł wyszukiwać w skrzynkach pocztowych dane spełniające określone kryteria. Aby dowiedzieć się więcej, zobacz [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo) [i Zarządzanie grupami ról](/exchange/manage-role-groups-exchange-2013-help).
+ Na przykład administrator Exchange może przypisać kogoś do grupy ról usługi Discovery Management, aby mógł wykonywać wyszukiwania w skrzynkach pocztowych w poszukiwaniu danych spełniających określone kryteria. Aby dowiedzieć się więcej, zobacz [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo) i [Zarządzanie grupami ról](/exchange/manage-role-groups-exchange-2013-help).
   
 ## <a name="learn-about-other-admin-roles"></a>Dowiedz się więcej o innych rolach administratora
 
-- [Informacje Microsoft 365 administratorów](about-admin-roles.md)
+- [Informacje o rolach administratora Microsoft 365](about-admin-roles.md)
 
-- [Rola administratora usługi SharePoint Online informacje](/sharepoint/sharepoint-admin-role)
+- [Informacje o roli administratora usługi SharePoint Online](/sharepoint/sharepoint-admin-role)
 
-- [Rola administratora Skype dla firm informacje](/skypeforbusiness/skype-for-business-online)
+- [Informacje o roli administratora Skype dla firm](/skypeforbusiness/skype-for-business-online)
 
-- [Używanie Microsoft Teams roli administratora](/MicrosoftTeams/using-admin-roles)
+- [Korzystanie z roli administratora Microsoft Teams](/MicrosoftTeams/using-admin-roles)

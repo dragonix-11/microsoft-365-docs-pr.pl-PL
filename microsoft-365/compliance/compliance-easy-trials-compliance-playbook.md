@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: podręcznik wersji próbnej rozwiązań Microsoft Purview.
-ms.openlocfilehash: 10dd4ac9447c920112fd85075c3bf6ae3093ee9c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: cf054a27fb56589c42552bb1b79ae837a666d81f
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415265"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466289"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Podręcznik wersji próbnej: rozwiązania Microsoft Purview
 
@@ -444,4 +444,4 @@ Proaktywne identyfikowanie i ochrona przed zagrożeniami prywatności, takimi ja
 
 **Biblioteka zawartości technicznej zabezpieczeń firmy Microsoft**: zapoznaj się z tą biblioteką, aby znaleźć interaktywne przewodniki i inną zawartość szkoleniową odpowiadającą Twoim potrzebom. [Odwiedź stronę Biblioteka](/security).
 
-**Zasoby zabezpieczeń firmy Microsoft**: od oprogramowania chroniącego przed złośliwym kodem po Zero Trust uzyskaj wszystkie odpowiednie zasoby dla potrzeb organizacji w zakresie zabezpieczeń. [Odwiedź stronę Zasoby](/security/business/resources).
+**Zasoby zabezpieczeń firmy Microsoft**: od oprogramowania chroniącego przed złośliwym kodem po Zero Trust uzyskaj wszystkie odpowiednie zasoby dla potrzeb organizacji w zakresie zabezpieczeń.

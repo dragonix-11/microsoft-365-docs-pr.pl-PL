@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Harmonogram dla platformy Microsoft 365
-summary: 'Dowiedz się, jak skonfigurować harmonogram dla platformy Microsoft 365 w celu zaplanowania spotkań przy użyciu Cortany.'
+summary: Dowiedz się, jak skonfigurować harmonogram dla platformy Microsoft 365 w celu zaplanowania spotkań przy użyciu Cortany.
 brand: m365
 metadata:
   title: Harmonogram dla platformy Microsoft 365
-  description: 'Dowiedz się, jak skonfigurować harmonogram dla platformy Microsoft 365 w celu zaplanowania spotkań przy użyciu Cortany.'
+  description: Dowiedz się, jak skonfigurować harmonogram dla platformy Microsoft 365 w celu zaplanowania spotkań przy użyciu Cortany.
   ms.service: exchange-online
   ms.topic: hub-page
   author: AshaIyengar21
@@ -12,24 +12,30 @@ metadata:
   manager: serdars
   audience: Admin
   ms.date: 04/23/2021
+  ms.openlocfilehash: 1a0bacdaf7630c6385b1dbbf37fd5a4eb50d77aa
+  ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+  ms.translationtype: HT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 05/18/2022
+  ms.locfileid: "65468355"
 additionalContent:
   sections:
-    - items:
-        - title: Co to jest harmonogram dla platformy Microsoft 365?
-          summary: 'Dowiedz się więcej o harmonogramie dla platformy Microsoft 365 i jego funkcjach oraz o tym, kto i jak będzie z niej korzystać.'
-          url: scheduler-overview.md
-        - title: Zaufanie i prywatność
-          summary: 'Dowiedz się, jak usługa harmonogram dla platformy Microsoft 365 zapewnia ochronę zaufania i prywatności.'
-          url: scheduler-trust-privacy.md
-        - title: Konfigurowanie harmonogramu dla platformy Microsoft 365
-          summary: 'Dowiedz się, co jest wymagane do skonfigurowania harmonogramu dla platformy Microsoft 365.'
-          url: scheduler-setup.md
-        - title: Korzystanie z harmonogramu dla platformy Microsoft 365
-          summary: 'Dowiedz się, jak używać harmonogramu dla platformy Microsoft 365.'
-          url: scheduler-using.md
-        - title: Planowanie dynamicznych spotkań cyklicznych
-          summary: Dowiedz się więcej o planowaniu dynamicznych spotkań cyklicznych.
-          url: scheduler-recurring-meetings.md
-        - title: Harmonogram — często zadawane pytania
-          summary: Często zadawane pytania i odpowiedzi dotyczące harmonogramu dla platformy Microsoft 365.
-          url: scheduler-faqs.md
+  - items:
+    - title: Co to jest harmonogram dla platformy Microsoft 365?
+      summary: Dowiedz się więcej o harmonogramie dla platformy Microsoft 365 i jego funkcjach oraz o tym, kto i jak będzie z niej korzystać.
+      url: scheduler-overview.md
+    - title: Zaufanie i prywatność
+      summary: Dowiedz się, jak usługa harmonogram dla platformy Microsoft 365 zapewnia ochronę zaufania i prywatności.
+      url: scheduler-trust-privacy.md
+    - title: Konfigurowanie harmonogramu dla platformy Microsoft 365
+      summary: Dowiedz się, co jest wymagane do skonfigurowania harmonogramu dla platformy Microsoft 365.
+      url: scheduler-setup.md
+    - title: Korzystanie z harmonogramu dla platformy Microsoft 365
+      summary: Dowiedz się, jak używać harmonogramu dla platformy Microsoft 365.
+      url: scheduler-using.md
+    - title: Planowanie dynamicznych spotkań cyklicznych
+      summary: Dowiedz się więcej o planowaniu dynamicznych spotkań cyklicznych.
+      url: scheduler-recurring-meetings.md
+    - title: Harmonogram — często zadawane pytania
+      summary: Często zadawane pytania i odpowiedzi dotyczące harmonogramu dla platformy Microsoft 365.
+      url: scheduler-faqs.md

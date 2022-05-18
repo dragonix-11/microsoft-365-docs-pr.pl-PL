@@ -5,8 +5,7 @@ keywords: co nowego w Ochrona usługi Office 365 w usłudze Microsoft Defender, 
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
@@ -16,17 +15,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 12/03/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 557b81db3c211b294166af8e5f8aaa783fc563a6
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 8c2321ce8ed367db386fa97640564d07208db78b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65215798"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466267"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Co nowego w ochronie usługi Office 365 w usłudze Microsoft Defender?
 
@@ -50,8 +48,10 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 - [Co nowego w Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Co nowego w Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Co nowego w Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
 ## <a name="april-2022"></a>Kwiecień 2022 r.
 
+- [Wprowadzenie do tabeli URLClickEvents w Microsoft 365 Defender Advanced Hunting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): Introducing the UrlClickEvents table in advanced hunting with Ochrona usługi Office 365 w usłudze Microsoft Defender (Zaawansowane wyszukiwanie zagrożeń: wprowadzenie do tabeli UrlClickEvents w zaawansowanym polowaniu z użyciem Ochrona usługi Office 365 w usłudze Microsoft Defender).
 - [Ulepszenia ręcznego korygowania poczty e-mail](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): wprowadzenie ręcznych akcji przeczyszczania poczty e-mail podjętych w Ochrona usługi Office 365 w usłudze Microsoft Defender do ujednoliconego centrum akcji Microsoft 365 Defender (M365D) przy użyciu nowego badania ukierunkowanego na akcje.
  
 ## <a name="march-2022"></a>Marzec 2022 r.
@@ -122,6 +122,5 @@ Czy wiesz, że Ochrona usługi Office 365 w usłudze Microsoft Defender jest dos
 
 ## <a name="see-also"></a>Zobacz też
 
-[plan Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
-
-[Opis usługi Ochrona usługi Office 365 w usłudze Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- [plan Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
+- [Opis usługi Ochrona usługi Office 365 w usłudze Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

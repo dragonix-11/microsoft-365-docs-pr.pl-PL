@@ -1,5 +1,5 @@
 ---
-title: Wydajność firmy Microsoft — mobilność
+title: Microsoft Productivity Score and mobility insights (Wskaźnik produktywności firmy Microsoft i szczegółowe informacje dotyczące mobilności)
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,21 +18,21 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Szczegóły dotyczące mobilności — ludzie mają oceny wydajności.
-ms.openlocfilehash: 13d3fb9be30def2d8308037890a501d624d09b49
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Szczegóły pakietu Mobility — osoby mają ocenę produktywności.
+ms.openlocfilehash: 737083a8f874f3c50d44af607cf624166157e4dc
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319787"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465959"
 ---
-# <a name="mobility--people-experiences"></a>Mobilność — środowisko osób
+# <a name="mobility-insights-score--people-experiences"></a>Ocena szczegółowych informacji o mobilności — środowiska osób
 
-Wynik produktywności zapewnia wgląd w transformację cyfrową organizacji dzięki jej użyciu Microsoft 365 technologii, które obsługują ten wynik. Wyniki Twojej organizacji odzwierciedlają pomiary osób i technologii oraz mogą być porównywane z poziomami odniesienia organizacji podobnymi do Twoich. Kategoria mobilności jest częścią miar osób. Aby dowiedzieć się więcej, zapoznaj się z omówieniem [wyników produktywności](productivity-score.md) i przeczytaj [Oświadczenie o ochronie prywatności firmy Microsoft](https://privacy.microsoft.com/privacystatement).
+Wynik produktywności zapewnia wgląd w proces transformacji cyfrowej organizacji dzięki wykorzystaniu Microsoft 365 i środowisk technologicznych, które ją obsługują. Wynik twojej organizacji odzwierciedla pomiary osób i środowiska technologicznego i można go porównać z testami porównawczymi organizacji podobnymi do Twoich. Kategoria mobilności jest częścią środków środowiska osób. Aby dowiedzieć się więcej, zapoznaj się z [omówieniem oceny produktywności](productivity-score.md) i przeczytaj [Oświadczenie o ochronie prywatności firmy Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby rozpocząć pracę z rozwiązaniami Mobility Insights, osoby w Twojej organizacji muszą mieć licencję na:
+Aby rozpocząć pracę z usługą Mobility Insights, osoby w organizacji muszą mieć licencję na:
 
 - Microsoft Teams
 - Exchange Online
@@ -43,113 +43,113 @@ Aby rozpocząć pracę z rozwiązaniami Mobility Insights, osoby w Twojej organi
 
 Aby uzyskać więcej informacji, zobacz [Przypisywanie licencji do użytkowników](../manage/assign-licenses-to-users.md).
 
-Gdy osoby będą aktywne w powyższych produktach co najmniej raz w ciągu ostatnich 28 dni, zaczniesz widzieć szczegółowe informacje.
+Po tym, jak w ciągu ostatnich 28 dni osoby były aktywne w powyższych produktach co najmniej raz, zobaczysz szczegółowe informacje.
 
-## <a name="why-your-organization39s-mobility-score-matters"></a>Dlaczego Twoja organizacja&#39;jaka jest ocena mobilności ma znaczenie
+## <a name="why-your-organization39s-mobility-score-matters"></a>Dlaczego twoja organizacja&#39;ocena mobilności ma znaczenie
 
-Podstawowym elementem produktywności organizacji jest to, jak dobrze mogą pracować niezależnie od miejsca, w którym się znajdują. Dzięki Microsoft 365 inne osoby mogą pozostawać w kontakcie Outlook, Microsoft Teams i Yammer. Inne osoby mogą również bezproblemowo współpracować nad zawartością przy użyciu aplikacji Word, Excel, PowerPoint i OneNote z dowolnej lokalizacji i platform.
+Podstawowym filarem produktywności organizacyjnej jest to, jak dobrze ludzie mogą elastycznie pracować z dowolnego miejsca. Dzięki Microsoft 365 użytkownicy mogą pozostawać w kontakcie z Outlook, Microsoft Teams i Yammer. Użytkownicy mogą również bezproblemowo współpracować nad zawartością przy użyciu programów Word, Excel, PowerPoint i OneNote z dowolnej lokalizacji i platform.
 
 ## <a name="how-we-calculate-the-score"></a>Jak obliczamy wynik
 
-Zapewniamy podstawową analizę tego doświadczenia, który zawiera kluczowe metryki dla tej kategorii. Następnie na podstawie tych metryk zostanie użyta szczegółowa poniżej framework oceniania, aby obliczyć wynik organizacji.
+Udostępniamy podstawowy wgląd w środowisko zawierające kluczowe metryki dla tej kategorii. Następnie poniższa struktura oceniania jest używana dla tych metryk do obliczania oceny organizacji.
 
-### <a name="primary-insight"></a>Podstawowe informacje
+### <a name="primary-insight"></a>Podstawowa analiza
 
-Microsoft 365 umożliwia użytkownikom pracę w różnych aplikacjach, takich jak Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer i Skype dla firm. Możesz również pracować z dowolnego miejsca, korzystając z bezproblemowego działania na platformach komputerowych, internetowych i mobilnych. Podstawowa analiza wygląda na produktach włączonych dla osób w organizacji — oraz o tym, ile z tych osób jest aktywnych na co najmniej dwóch platformach.
+Microsoft 365 umożliwia użytkownikom elastyczną pracę w aplikacjach, takich jak Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer i Skype dla firm. Użytkownicy mogą również pracować z dowolnego miejsca, korzystając z bezproblemowego środowiska na platformach stacjonarnych, internetowych i mobilnych. Podstawowa analiza przedstawia produkty, które są włączone dla osób w organizacji , oraz liczbę tych osób aktywnych na co najmniej dwóch platformach.
 
-:::image type="content" source="../../media/primary-mobility.png" alt-text="Wykres przedstawiający podstawowe informacje dotyczące mobilności — ludzie mogą odczuwać wydajność.":::
+:::image type="content" source="../../media/primary-mobility.png" alt-text="Wykres przedstawiający podstawowy wgląd w mobilność — pracownicy mają wynik produktywności.":::
 
-1. **Nagłówek:** Przedstawia procent osób w organizacji, które mają dostęp do dowolnej Aplikacje Microsoft 365, i które są aktywne w co najmniej jednej z tych aplikacji na więcej niż jednej platformie.
-2. **Treść:** Zawiera więcej informacji na temat sposobu, w jaki korzystanie z tych aplikacji na wielu platformach może wspierać wydajność i zadowolenie.
-3. **Wizualizacja (stan bieżący):** Pokazuje, ile osób korzysta z więcej niż jednej platformy na komputerze stacjonarnym, urządzeniu przenośnym i w sieci Web w co najmniej jednym Microsoft 365 (lista poniżej) w następujący sposób:
-    - **Pasek poziomy** , na którym część niebieska (kolorowa) reprezentuje wartość procentową wyrażoną w nagłówku.
+1. **Nagłówka:** Pokazuje odsetek osób w organizacji, które mają dostęp do dowolnego z Aplikacje Microsoft 365 i które są aktywne w co najmniej jednej z tych aplikacji na więcej niż jednej platformie.
+2. **Ciała:** Zawiera więcej informacji na temat sposobu, w jaki korzystanie z tych aplikacji na wielu platformach może zwiększyć wydajność i zadowolenie.
+3. **Wizualizacja (bieżący stan):** Pokazuje, ile osób korzysta z więcej niż jednej platformy na komputerach stacjonarnych, urządzeniach przenośnych i w Internecie przez co najmniej jedną Microsoft 365 (lista poniżej) w następujący sposób:
+    - **Poziomy pasek** , na którym niebieska (kolorowa) część reprezentuje wartość procentową wyrażoną w nagłówku.
     - **Ułamek** na pasku wyróżnia (licznik/mianownik) używany do obliczania wartości procentowej w nagłówku.
-        - Licznik: w ciągu ostatnich 28 dni liczba osób w organizacji korzystających z dowolnej aplikacji w ramach usług Microsoft Outlook, Word, Excel, PowerPoint, OneNote i Microsoft Teams, Yammer i Skype na więcej niż jednej platformie z komputerów stacjonarnych, sieci Web i urządzeń przenośnych.
-        - Dzielna: liczba osób licencjonowanych na Aplikacje Microsoft 365, Exchange, Yammer, Microsoft Teams lub Skype na co najmniej 1 z ostatnich 28 dni.
-    - Wartość **wzorcowa komunikacji równorzędnej** dla kluczowych metryk jest również wyświetlana jako wartość procentowa.
-4. **Wyświetl zasoby dla mobilności:** Wybierz ten link, aby wyświetlić zawartość Pomocy.
+        - Numerator: liczba osób w organizacji korzystających z dowolnej aplikacji w ramach programu Microsoft Outlook, Word, Excel, PowerPoint, OneNote i Microsoft Teams, Yammer i Skype na więcej niż jednej platformie z komputerów stacjonarnych, sieci Web i urządzeń przenośnych w ciągu ostatnich 28 dni.
+        - Mianownik: liczba osób licencjonowanych na Aplikacje Microsoft 365, Exchange, Yammer, Microsoft Teams lub Skype przez co najmniej 1 z ostatnich 28 dni.
+    - Wartość **porównawcza elementu równorzędnego** dla kluczowej metryki jest również wyświetlana jako wartość procentowa.
+4. **Wyświetl zasoby mobilności:** Wybierz ten link, aby wyświetlić zawartość pomocy.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Trend visualization of the primary insight
+#### <a name="trend-visualization-of-the-primary-insight"></a>Wizualizacja trendu podstawowego wglądu w szczegółowe informacje
 
-:::image type="content" source="../../media/mobility-primary.png" alt-text="Wykres przedstawiający liczbę osób, które używają więcej niż jednej platformy i czasu.":::
+:::image type="content" source="../../media/mobility-primary.png" alt-text="Wykres przedstawiający liczbę osób korzystających z więcej niż jednej platformy w porównaniu z czasem.":::
 
-Na tym wykresie jest przedstawiana linia trendu, gdzie licznik przedstawia liczbę osób, które używały aplikacji w ciągu ostatnich 180 dni. Każdy punkt danych na wykresie liniowym jest zagregowaną aktywnością z ostatnich 28 dni. Każdy punkt danych zapewnia liczbę wszystkich osób w organizacji korzystających z aplikacji na co najmniej dwóch platformach w ciągu ostatnich 28 dni dla każdej daty na osi x.
+Na tym wykresie przedstawiono linię trendu, w której licznik jest liczbą osób, które korzystały z aplikacji w ciągu ostatnich 180 dni. Każdy punkt danych na wykresie liniowym jest zagregowaną aktywnością z ostatnich 28 dni. Każdy punkt danych udostępnia liczbę wszystkich osób w organizacji korzystających z aplikacji na co najmniej dwóch platformach w ciągu ostatnich 28 dni dla każdej daty na osi x.
 
-### <a name="scoring-framework"></a>Struktury oceniania
+### <a name="scoring-framework"></a>Struktura oceniania
 
-Ocena mobilności organizacji jest miarą na poziomie organizacji (zagregowaną) niezależnie od tego, czy osoby korzystające z usług Aplikacje Microsoft 365 – Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer i Skype  — na różnych platformach — na komputerze stacjonarnym, w sieci Web i na urządzeniach przenośnych.
+Ocena mobilności organizacji mierzy na poziomie organizacji (zagregowane), czy użytkownicy korzystają z Aplikacje Microsoft 365 — Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer i Skype  — na różnych platformach — stacjonarnych, internetowych i mobilnych.
 
-Wyniki nie są dostępne na poziomie poszczególnych użytkowników.
+Wyniki nie są udostępniane na poziomie poszczególnych użytkowników.
 
-## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Poznawanie sposobu działania organizacji na różnych platformach i lokalizacjach
+## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Dowiedz się, jak twoja organizacja działa na różnych platformach i w różnych lokalizacjach
 
-Zapewniamy także informacje, które pomagają zyskać wgląd w sposób, w jaki osoby w Twojej organizacji pracują na różnych platformach. Te dodatkowe metryki nie pomagają bezpośrednio w tworzeniu wyników produktywności, ale ułatwiają utworzenie planu działania w ramach transformacji cyfrowej.  
+Udostępniamy również informacje, które ułatwiają uzyskanie wglądu w sposób działania osób w organizacji na różnych platformach. Te dodatkowe metryki nie przyczyniają się bezpośrednio do wyniku produktywności, ale ułatwiają utworzenie planu działania w ramach transformacji cyfrowej.  
 
 ### <a name="use-of-outlook-across-platforms"></a>Korzystanie z Outlook na różnych platformach
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Wykres, który przedstawia, ile osób używa Outlook na wielu platformach.":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Wykres przedstawiający liczbę osób korzystających z Outlook na wielu platformach.":::
 
-1. **Nagłówek:** Przedstawia wartość procentową osób aktywnych na Outlook, które Outlook na wielu platformach.
-2. **Treść:** Zawiera informacje o wartości korzystania z funkcji Outlook na urządzeniach przenośnych, aby ułatwić sobie pozostawanie w kontakcie z dowolnego miejsca za pomocą poczty e-mail.
-3. **Wizualizacja:** Przedstawia wartość procentową osób, które są aktywne w Outlook i korzysta z jednej lub więcej platform:
+1. **Nagłówka:** Pokazuje odsetek osób aktywnych w Outlook, które używają Outlook na wielu platformach.
+2. **Ciała:** Zawiera informacje o wartości używania Outlook na urządzeniach przenośnych w celu ułatwienia nawiązywania połączenia z dowolnego miejsca za pośrednictwem poczty e-mail.
+3. **Wizualizacji:** Pokazuje odsetek osób aktywnych na Outlook i korzystających z jednej lub więcej platform:
       - **Wiele platform:**
-        - Licznik: Liczba osób, które w ciągu ostatnich 28 dni Outlook były używane na co najmniej dwóch platformach z komputera stacjonarnego, przenośnego lub sieci Web.
-        - Dzielna: liczba osób, które używały Outlook najmniej raz w ciągu ostatnich 28 dni.
-      - **Tylko na pulpicie:**
-        - Dzielna: liczba osób, które w ciągu ostatnich 28 dni Outlook były używane tylko na platformie klasycznej.
-        - Dzielni: Liczba osób, które użyły Outlook najmniej raz w ciągu ostatnich 28 dni
-      - **Tylko w sieci Web:**
-        - Dzielna: liczba osób, które w ciągu ostatnich 28 dni Outlook były używane tylko na platformie internetowej.
-        - Dzielna: liczba osób, które używały Outlook najmniej raz w ciągu ostatnich 28 dni.
+        - Licznik: liczba osób, które korzystały z Outlook na co najmniej dwóch platformach z komputerów stacjonarnych, urządzeń przenośnych lub sieci Web w ciągu ostatnich 28 dni.
+        - Mianownik: Liczba osób, które korzystały Outlook co najmniej raz w ciągu ostatnich 28 dni.
+      - **Tylko komputery stacjonarne:**
+        - Licznik: liczba osób, które korzystały z Outlook tylko na platformie klasycznej w ciągu ostatnich 28 dni.
+        - Mianownik: Liczba osób, które korzystały z Outlook co najmniej raz w ciągu ostatnich 28 dni
+      - **Tylko sieć Web:**
+        - Licznik: liczba osób, które korzystały z Outlook tylko na platformie internetowej w ciągu ostatnich 28 dni.
+        - Mianownik: Liczba osób, które korzystały Outlook co najmniej raz w ciągu ostatnich 28 dni.
       - **Tylko urządzenia przenośne:**
-        - Licznik: Liczba osób, które w ciągu ostatnich 28 dni Outlook były używane tylko na platformie mobilnej.
-        - *Dzielna: Liczba osób, które używały Outlook co najmniej raz w ciągu ostatnich 28 dni.
+        - Licznik: liczba osób, które korzystały z Outlook tylko na platformie mobilnej w ciągu ostatnich 28 dni.
+        - *Mianownik: liczba osób, które korzystały Outlook co najmniej raz w ciągu ostatnich 28 dni.
 
 ### <a name="use-of-teams-across-platforms"></a>Korzystanie z Teams na różnych platformach
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Wykres, na podstawie liczby osób używających Teams na więcej niż jednej platformie.":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Wykres pokazujący, ile osób korzysta z Teams na więcej niż jednej platformie lub na jednej platformie.":::
 
-1. **Nagłówek:** Przedstawia wartość procentową osób, które są aktywne w Microsoft Teams z tej usługi na wielu platformach.
-2. **Treść:** Zawiera informacje o wartości korzystania z funkcji Teams na urządzeniach przenośnych, aby ułatwić innym osobom pozostawanie na bieżąco z wiadomościami podczas pracy z dowolnego miejsca.
-3. **Wizualizacja:** Przedstawia wartość procentową osób aktywnych w Microsoft Teams korzystających z niego na jednej platformie lub na wielu platformach: 
+1. **Nagłówka:** Pokazuje, jaki odsetek osób aktywnych na Microsoft Teams używa go na wielu platformach.
+2. **Ciała:** Zawiera informacje o wartości używania Teams na urządzeniach przenośnych, aby ułatwić użytkownikom aktualizowanie komunikatów podczas pracy z dowolnej lokalizacji.
+3. **Wizualizacji:** Pokazuje odsetek osób aktywnych na Microsoft Teams, które używają go na jednej platformie lub wielu z nich: 
     - **Wiele platform:**
-        - Licznik: Liczba osób, które używały aplikacji Teams w ciągu ostatnich 28 dni na 2 lub więcej z następujących platform: komputer stacjonarny, urządzenie przenośne lub witryna internetowa.
-        - Dzielna: liczba osób, które używały Microsoft Teams co najmniej raz w ciągu ostatnich 28 dni.
-    - **Tylko na pulpicie:**
-        - Licznik: Liczba osób, które w ciągu ostatnich 28 dni Microsoft Teams były używane tylko na platformie klasycznej
-        - Dzielni: Liczba osób, które użyły Teams najmniej raz w ciągu ostatnich 28 dni
-    - **Tylko w sieci Web:**
-        - Licznik: Liczba osób, które w ciągu ostatnich 28 dni Microsoft Teams były używane tylko na platformie internetowej
-        - Dzielna: liczba osób, które używały Microsoft Teams co najmniej raz w ciągu ostatnich 28 dni
+        - Licznik: liczba osób, które korzystały z Teams w ciągu ostatnich 28 dni na co najmniej 2 z następujących platform: desktop, mobile lub web.
+        - Mianownik: Liczba osób, które korzystały Microsoft Teams co najmniej raz w ciągu ostatnich 28 dni.
+    - **Tylko komputery stacjonarne:**
+        - Numerator: liczba osób, które korzystały z Microsoft Teams tylko na platformie klasycznej w ciągu ostatnich 28 dni
+        - Mianownik: Liczba osób, które korzystały z Teams co najmniej raz w ciągu ostatnich 28 dni
+    - **Tylko sieć Web:**
+        - Licznik: liczba osób, które korzystały z Microsoft Teams tylko na platformie internetowej w ciągu ostatnich 28 dni
+        - Mianownik: Liczba osób, które korzystały z Microsoft Teams co najmniej raz w ciągu ostatnich 28 dni
     - **Tylko urządzenia przenośne:**
-        - Licznik: Liczba osób, które w ciągu ostatnich 28 dni Microsoft Teams były używane tylko na platformie mobilnej
-        - Dzielni: Liczba osób, które użyły Teams najmniej raz w ciągu ostatnich 28 dni
+        - Licznik: liczba osób, które korzystały z Microsoft Teams tylko na platformie mobilnej w ciągu ostatnich 28 dni
+        - Mianownik: Liczba osób, które korzystały z Teams co najmniej raz w ciągu ostatnich 28 dni
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>Korzystanie z Aplikacje Microsoft 365 na różnych platformach
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Wykres przedstawia liczbę osób, które korzystają z Microsoft 365 na wielu lub jednej platformie.":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Wykres przedstawiający liczbę osób korzystających z aplikacji Microsoft 365 na wielu lub pojedynczych platformach.":::
 
-1. **Nagłówek:** Przedstawia wartość procentową osób aktywnych na Aplikacje Microsoft 365 (Word, Excel, PowerPoint i OneNote) na wielu platformach.
-2. **Treść:** Zapewnia osobom w organizacji elastyczność uzyskiwania dostępu do ich plików z dowolnego miejsca.
-3. **Wizualizacja:** Grupowana pionowa ma reprezentować liczbę osób korzystających z poszczególnych aplikacji: Word, Excel, PowerPoint i OneNote — na jednej lub wielu platformach. W przypadku każdej z tych aplikacji paski przedstawiają następujące elementy:
+1. **Nagłówka:** Pokazuje odsetek osób aktywnych na Aplikacje Microsoft 365 (Word, Excel, PowerPoint i OneNote) na wielu platformach.
+2. **Ciała:** Zapewnia informacje o wartości zapewniania osobom w organizacji elastyczności dostępu do plików z dowolnego miejsca.
+3. **Wizualizacji:** Pogrupowane pionowo ma reprezentować liczbę osób korzystających z każdej z rozważanych aplikacji — Word, Excel, PowerPoint i OneNote — na jednej lub wielu platformach. W przypadku każdej z tych aplikacji słupki reprezentują następujące elementy:
       - **Wiele platform:** Liczba użytkowników aktywnych w aplikacji na co najmniej dwóch platformach w ciągu ostatnich 28 dni.
-      - **Tylko na pulpicie:** Liczba użytkowników aktywnych w aplikacji tylko na platformie klasycznej w ciągu ostatnich 28 dni.
-      - **Tylko w sieci Web:** Liczba użytkowników aktywnych w aplikacji tylko na platformie internetowej w ciągu ostatnich 28 dni.
+      - **Tylko komputery stacjonarne:** Liczba użytkowników aktywnych w aplikacji tylko na platformie klasycznej w ciągu ostatnich 28 dni.
+      - **Tylko sieć Web:** Liczba użytkowników aktywnych w aplikacji tylko na platformie internetowej w ciągu ostatnich 28 dni.
       - **Tylko urządzenia przenośne:** Liczba użytkowników aktywnych w aplikacji tylko na platformie mobilnej w ciągu ostatnich 28 dni.
 
 ### <a name="remote-work"></a>Praca zdalna
 
-:::image type="content" source="../../media/remotework-trend.png" alt-text="Wykres, który przedstawia, ile osób pracuje zdalnie, w miejscu pracy lub w obu tych programach.":::
+:::image type="content" source="../../media/remotework-trend.png" alt-text="Wykres pokazujący, ile osób pracuje zdalnie, w lokacji lub w obu tych przypadkach.":::
 
-1. **Nagłówek:** Przedstawia procent osób pracujących tylko w domu lub lokalizacji poza ich siecią firmową.
-2. **Treść:** Podkreśla ważność ułatwiania pracy zdalnej osobom bez dostępu do fizycznych biur organizacji.
-3. **Wizualizacja:** Przedstawia linię trendu dla dziennego odsetka osób, które pracują zdalnie, oraz dziennego procentu osób, które również pracują u firmy. Użytkownicy są traktowani jako użytkownicy w miejscu, jeśli wykonują co najmniej trzy godziny pracy Aplikacje Microsoft 365 w ciągu dnia.
+1. **Nagłówka:** Pokazuje odsetek osób pracujących tylko z domu lub lokalizacji poza siecią firmy.
+2. **Ciała:** Podkreśla znaczenie ułatwiania pracy zdalnej osobom bez dostępu do biur fizycznych organizacji.
+3. **Wizualizacji:** Pokazuje trend-line dla dziennego procentu osób, które pracują tylko zdalnie, a także dzienny odsetek osób, które również pracują na miejscu. Użytkownicy są uważani za użytkowników na miejscu, jeśli wykonują co najmniej trzy godziny aktywności w Aplikacje Microsoft 365 w ciągu dnia.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Microsoft 365 kondycji aplikacji — środowisko technologii](apps-health.md) (artykuł)\
-[Komunikacja — środowisko osób](communication.md) (artykuł)\
-[Współpraca nad zawartością — środowisko osób](content-collaboration.md) (artykuł)\
-[Spotkania — środowisko osób](meetings.md) (artykuł)\
-[Kontrolki prywatności dotyczące wyników produktywności](privacy.md) (artykuł)\
-[Praca zespołowa — środowisko osób](teamwork.md) (artykuł)
+[kondycja aplikacji Microsoft 365 — środowiska technologiczne](apps-health.md) (artykuł)\
+[Komunikacja — środowiska osób](communication.md) (artykuł)\
+[Współpraca z zawartością — środowiska osób](content-collaboration.md) (artykuł)\
+[Spotkania — doświadczenia osób](meetings.md) (artykuł)\
+[Mechanizmy kontroli prywatności dla współczynnika produktywności](privacy.md) (artykuł)\
+[Praca zespołowa — środowiska osób](teamwork.md) (artykuł)

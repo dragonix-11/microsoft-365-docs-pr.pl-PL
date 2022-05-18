@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Pobierz raport użycia OneDrive dla organizacji i poznaj aktywność każdego użytkownika OneDrive, liczbę udostępnionych plików i wykorzystanie magazynu.
-ms.openlocfilehash: 48edb30eae60f6e7dcac5bc63dc9676dc27e0a90
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Pobierz raport użycia OneDrive dla organizacji i sprawdź aktywność każdego użytkownika OneDrive, liczbę udostępnionych plików i wykorzystanie magazynu.
+ms.openlocfilehash: 65046154e17cdb79ee671ec14aa45d089730ca97
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781594"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467257"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie OneDrive dla Firm
 

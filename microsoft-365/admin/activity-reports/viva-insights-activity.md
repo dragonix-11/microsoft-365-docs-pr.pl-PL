@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Dowiedz się, jak uzyskać Aplikacje Microsoft 365 dla raportu użycia dla aktywności Szczegółowe informacje Viva na pulpicie nawigacyjnym raportów Microsoft 365 w Centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: c0b19871db61f37585384766d4e44ccb602a661b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Dowiedz się, jak uzyskać Aplikacje Microsoft 365 raportu użycia, aby dowiedzieć się na przykład więcej na temat wdrażania Szczegółowe informacje Viva przez aktywnych użytkowników.
+ms.openlocfilehash: ae79a1c547c695d86289544159e3492ae8d9bf86
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781320"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467213"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie Szczegółowe informacje Viva
 

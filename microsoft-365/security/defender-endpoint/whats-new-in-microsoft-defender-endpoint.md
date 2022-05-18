@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a3d8caa02aa04412925b4d0648d166194df0548
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 615a68d7725e180e512674909f490e27d3da6771
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319204"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468805"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Co nowego w ochronie punktu końcowego w usłudze Microsoft Defender
 
@@ -30,11 +30,11 @@ ms.locfileid: "65319204"
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Następujące funkcje są dostępne w wersji zapoznawczej lub ogólnie dostępne w najnowszej wersji Ochrona punktu końcowego w usłudze Microsoft Defender.
 
@@ -125,7 +125,7 @@ Aby uzyskać więcej informacji na temat Ochrona punktu końcowego w usłudze Mi
 
 - [Definicje grup urządzeń](/microsoft-365/security/defender-endpoint/machine-groups) mogą teraz zawierać wiele wartości dla każdego warunku. Możesz ustawić wiele tagów, nazw urządzeń i domen na definicję pojedynczej grupy urządzeń.
 
-- [Obsługa zarządzania aplikacjami mobilnymi](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> To ulepszenie umożliwia Ochrona punktu końcowego w usłudze Microsoft Defender ochrony danych organizacji w aplikacji zarządzanej, gdy Intune jest używana do zarządzania aplikacjami mobilnymi. Aby uzyskać więcej informacji na temat zarządzania aplikacjami mobilnymi, zobacz [tę dokumentację](/microsoft-365/mem/intune/apps/mam-faq).
+- [Obsługa zarządzania aplikacjami mobilnymi](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> To ulepszenie umożliwia Ochrona punktu końcowego w usłudze Microsoft Defender ochrony danych organizacji w aplikacji zarządzanej, gdy Intune jest używana do zarządzania aplikacjami mobilnymi. Aby uzyskać więcej informacji na temat zarządzania aplikacjami mobilnymi, zobacz [tę dokumentację](/mem/intune/apps/mam-faq).
 
 - [integracja Microsoft Tunnel sieci VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel możliwości sieci VPN są teraz zintegrowane z aplikacją Ochrona punktu końcowego w usłudze Microsoft Defender dla Android. To zjednoczenie umożliwia organizacjom oferowanie uproszczonego środowiska użytkownika końcowego przy użyciu jednej aplikacji zabezpieczeń — oferując zarówno ochronę przed zagrożeniami mobilnymi, jak i możliwość uzyskiwania dostępu do zasobów lokalnych z urządzeń przenośnych, podczas gdy zespoły ds. zabezpieczeń i IT są w stanie utrzymać te same środowiska administratora, które znają.
 

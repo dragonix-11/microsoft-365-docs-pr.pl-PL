@@ -21,14 +21,14 @@ ms.custom:
 - admindeeplinkMAC
 description: Dowiedz się, jak pobrać klucze licencji oprogramowania i produktu dla oprogramowania bezterminowego zakupione za pośrednictwem programu Dostawca rozwiązań w chmurze (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: bef05f3377bcac46e7f40e60b149dbf6a227a294
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 212aaac02772e5b695cf7ee6f3f256a9fd596c1b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841669"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468903"
 ---
-# <a name="download-perpetual-software-and-product-license-keys"></a>Pobieranie bezterminowych kluczy licencji oprogramowania i produktu
+# <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>Pobierz bezterminowe oprogramowanie i klucze licencji produktów w Microsoft 365
 
 W tym artykule wyjaśniono, jak pobrać klucze licencji oprogramowania i produktu dla oprogramowania bezterminowego zakupione w ramach programu Dostawca rozwiązań w chmurze (CSP).
 

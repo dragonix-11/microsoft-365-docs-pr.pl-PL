@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak używać przełącznika dzierżawy i widoków wielodostępnych, które umożliwiają zarządzanie dzierżawami z jednej lokalizacji.
-ms.openlocfilehash: 0058bdb45b42e2c67b96ff3e30ce1cd04e5658b2
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 4a1168b1c2676bf25f0bb4ad7f3353a5e65f8caa
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713960"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468091"
 ---
-# <a name="multi-tenant-management"></a>Zarządzanie wieloma dzierżawami
+# <a name="multi-tenant-management-for-microsoft-365-partner-admins"></a>Zarządzanie wieloma dzierżawami dla administratorów Microsoft 365 partnerów
 
 Zarządzanie wieloma dzierżawami oferuje ujednoliconą formę zarządzania, która umożliwia administratorom Microsoft 365 partnerów administrowanie wszystkimi dzierżawami, którymi zarządzają z jednej lokalizacji. Jeśli jesteś partnerem, który ma delegowaną rolę administratora i zarządza wieloma dzierżawami, możesz:
 

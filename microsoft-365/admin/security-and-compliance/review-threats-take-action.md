@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Dowiedz się, jak przeglądać zagrożenia wykryte przez Program antywirusowy Microsoft Defender i zarządzać nimi na urządzeniach Windows 10.
-ms.openlocfilehash: 9b819edc21d6cfcac663c54e15b1a060b2b16fa2
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2d75149f8bcb4ea13e1e474acbb1dedfccb4ec50
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319314"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469475"
 ---
-# <a name="review-detected-threats-and-take-action"></a>Przejrzyj wykryte zagrożenia i podejmij działania
+# <a name="review-threats-detected-by-microsoft-defender-antivirus-and-take-action"></a>Przejrzyj zagrożenia wykryte przez Program antywirusowy Microsoft Defender i podejmij działania
 
 Po wykryciu złośliwego pliku lub oprogramowania Program antywirusowy Microsoft Defender blokuje go i uniemożliwia jego uruchomienie. Po włączeniu ochrony dostarczanej w chmurze nowo wykryte zagrożenia są dodawane do aparatu antywirusowego i ochrony przed złośliwym kodem, dzięki czemu inne urządzenia i użytkownicy są również chronieni.
 

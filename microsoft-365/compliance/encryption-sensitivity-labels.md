@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Skonfiguruj etykiety poufności na potrzeby szyfrowania, które chroni dane, ograniczając dostęp i użycie.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7355ef75eb455ad7442052daf1df814eb9b3bf26
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 14be99abd0a31a8141f5f66a205a9cd0e17391af
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285089"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469453"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Ogranicz dostęp do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania
 
@@ -47,11 +47,11 @@ Na koniec, jako administrator, podczas konfigurowania etykiety poufności w celu
 - **Przypisz teraz uprawnienia**, aby określić dokładnie, którzy użytkownicy uzyskują uprawnienia do zawartości z tą etykietą.
 - **Zezwalaj użytkownikom na przypisywanie uprawnień** podczas stosowania etykiety do zawartości. Dzięki temu możesz zezwolić osobom w organizacji na pewną elastyczność, która może wymagać współpracy i wykonania pracy.
 
-Ustawienia szyfrowania są dostępne podczas [tworzenia etykiety poufności](create-sensitivity-labels.md) w portalu zgodności usługi Microsoft Purview.
+Ustawienia szyfrowania są dostępne podczas [tworzenia etykiety poufności](create-sensitivity-labels.md) w portal zgodności Microsoft Purview.
 
 ## <a name="understand-how-the-encryption-works"></a>Informacje o tym, jak działa szyfrowanie
 
-Szyfrowanie korzysta z usługi Azure Rights Management (Azure RMS) z usługi Azure Information Protection. To rozwiązanie ochrony używa zasad szyfrowania, tożsamości i autoryzacji. Aby dowiedzieć się więcej, zobacz [Co to jest usługa Azure Rights Management?](/azure/information-protection/what-is-azure-rms) z dokumentacji usługi Azure Information Protection. 
+Szyfrowanie korzysta z usługi Azure Rights Management Service (Azure RMS) z usługi Azure Information Protection. To rozwiązanie ochrony używa zasad szyfrowania, tożsamości i autoryzacji. Aby dowiedzieć się więcej, zobacz [Co to jest usługa Azure Rights Management?](/azure/information-protection/what-is-azure-rms) z dokumentacji usługi Azure Information Protection. 
 
 W przypadku korzystania z tego rozwiązania szyfrowania funkcja **superużytkownika** zapewnia, że autoryzowane osoby i usługi zawsze będą mogły odczytywać i sprawdzać dane, które zostały zaszyfrowane dla Twojej organizacji. W razie potrzeby można usunąć lub zmienić szyfrowanie. Aby uzyskać więcej informacji, zobacz [Konfigurowanie superużytkowania dla usługi Azure Information Protection i odnajdywania lub odzyskiwania danych](/azure/information-protection/configure-super-users).
 
@@ -69,9 +69,9 @@ Przed użyciem szyfrowania może być konieczne wykonywanie pewnych zadań konfi
 
 - Konfigurowanie Exchange dla usługi Azure Information Protection
     
-    Exchange nie trzeba konfigurować dla usługi Azure Information Protection, aby użytkownicy mogli stosować etykiety w Outlook w celu szyfrowania wiadomości e-mail. Jednak dopóki Exchange nie zostanie skonfigurowana dla usługi Azure Information Protection, nie uzyskasz pełnej funkcjonalności korzystania z ochrony usługi Azure Rights Management z Exchange.
+    Exchange nie trzeba konfigurować dla usługi Azure Information Protection, aby użytkownicy mogli stosować etykiety w Outlook w celu szyfrowania wiadomości e-mail. Jednak dopóki Exchange nie zostanie skonfigurowana dla usługi Azure Information Protection, nie uzyskasz pełnej funkcjonalności korzystania z usługi Azure Rights Management Protection z Exchange.
     
-    Na przykład użytkownicy nie mogą wyświetlać zaszyfrowanych wiadomości e-mail na telefonach komórkowych lub za pomocą Outlook w sieci Web, szyfrowane wiadomości e-mail nie mogą być indeksowane do wyszukiwania i nie można skonfigurować Exchange Online DLP na potrzeby ochrony usługi Rights Management. 
+    Na przykład użytkownicy nie mogą wyświetlać zaszyfrowanych wiadomości e-mail na telefonach komórkowych lub za pomocą Outlook w sieci Web, szyfrowane wiadomości e-mail nie mogą być indeksowane do wyszukiwania i nie można skonfigurować Exchange Online DLP pod kątem ochrony Rights Management. 
     
     Aby upewnić się, że Exchange może obsługiwać te dodatkowe scenariusze, zobacz następujące kwestie:
     
@@ -107,7 +107,7 @@ Jeśli etykieta poufności jest stosowana do niezaszyfrowanej zawartości, wynik
 Jednak zawartość może być już zaszyfrowana. Na przykład inny użytkownik mógł zastosować:
 
 - Ich własne uprawnienia, które obejmują uprawnienia zdefiniowane przez użytkownika po wyświetleniu monitu przez etykietę, uprawnienia niestandardowe klienta usługi Azure Information Protection oraz ochronę dokumentu **z ograniczonym dostępem** z poziomu aplikacja pakietu Office.
-- Szablon ochrony usługi Azure Rights Management, który szyfruje zawartość niezależnie od etykiety. Ta kategoria obejmuje reguły przepływu poczty, które stosują szyfrowanie przy użyciu ochrony praw.
+- Szablon usługi Azure Rights Management protection, który szyfruje zawartość niezależnie od etykiety. Ta kategoria obejmuje reguły przepływu poczty, które stosują szyfrowanie przy użyciu ochrony praw.
 - Etykieta, która stosuje szyfrowanie z uprawnieniami przypisanymi przez administratora.
 
 W poniższej tabeli określono, co dzieje się z istniejącym szyfrowaniem w przypadku zastosowania etykiety poufności do tej zawartości:
@@ -125,11 +125,11 @@ W poniższej tabeli określono, co dzieje się z istniejącym szyfrowaniem w prz
 W przypadkach, gdy nowe szyfrowanie etykiet jest stosowane lub oryginalne szyfrowanie jest usuwane, dzieje się tak tylko wtedy, gdy użytkownik stosujący etykietę ma prawo użytkowania lub rolę, która obsługuje tę akcję:
 
 - [Prawo użycia](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) — eksport lub pełna kontrola.
-- Rola [wystawcy usługi Rights Management, właściciela usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) lub [administratora](/azure/information-protection/configure-super-users).
+- Rola [wystawcy Rights Management lub właściciela Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) lub [administratora](/azure/information-protection/configure-super-users).
 
 Jeśli użytkownik nie ma jednego z tych praw lub ról, nie można zastosować etykiety, a więc oryginalne szyfrowanie zostanie zachowane. Użytkownik widzi następujący komunikat: **Nie masz uprawnień do wprowadzenia tej zmiany w etykiecie poufności. Skontaktuj się z właścicielem zawartości.**
 
-Na przykład osoba, która stosuje pozycję Nie przesyłaj dalej do wiadomości e-mail, może ponownie oznaczać wątek w celu zastąpienia szyfrowania lub usunięcia go, ponieważ jest właścicielem usługi Rights Management dla wiadomości e-mail. Jednak z wyjątkiem superużytków adresaci tej wiadomości e-mail nie mogą jej ponownie oznaczać, ponieważ nie mają wymaganych praw użytkowania.
+Na przykład osoba, która stosuje funkcję Nie przekazuj do wiadomości e-mail, może ponownie oznaczać wątek w celu zastąpienia szyfrowania lub usunięcia go, ponieważ jest właścicielem Rights Management wiadomości e-mail. Jednak z wyjątkiem superużytków adresaci tej wiadomości e-mail nie mogą jej ponownie oznaczać, ponieważ nie mają wymaganych praw użytkowania.
 
 #### <a name="email-attachments-for-encrypted-email-messages"></a>Załączniki wiadomości e-mail dla zaszyfrowanych wiadomości e-mail
 
@@ -158,21 +158,24 @@ Użyj następujących opcji, aby kontrolować, kto może uzyskiwać dostęp do p
 
 - **Zezwalaj na wygaśnięcie dostępu do zawartości oznaczonej etykietą** w określonym dniu lub po określonej liczbie dni po zastosowaniu etykiety. Po tym czasie użytkownicy nie będą mogli otworzyć oznaczonego elementu. Jeśli określisz datę, będzie ona obowiązywać o północy w tej dacie w bieżącej strefie czasowej. (Należy pamiętać, że niektórzy klienci poczty e-mail mogą nie wymuszać wygaśnięcia i wyświetlać wiadomości e-mail po dacie wygaśnięcia ze względu na mechanizmy buforowania).
 
-- **Zezwalaj na dostęp w trybie offline** nigdy, zawsze lub przez określoną liczbę dni po zastosowaniu etykiety. Jeśli ograniczysz dostęp w trybie offline do wartości nigdy lub do kilku dni, po osiągnięciu tego progu użytkownicy muszą zostać ponownie uwierzytelnieni, a ich dostęp zostanie zarejestrowany. Aby uzyskać więcej informacji, zobacz następną sekcję dotyczącą licencji użycia usługi Rights Management.
+- **Zezwalaj na dostęp w trybie offline** nigdy, zawsze lub przez określoną liczbę dni po zastosowaniu etykiety. Jeśli ograniczysz dostęp w trybie offline do wartości nigdy lub do kilku dni, po osiągnięciu tego progu użytkownicy muszą zostać ponownie uwierzytelnieni, a ich dostęp zostanie zarejestrowany. Aby uzyskać więcej informacji, zobacz następną sekcję dotyczącą Rights Management licencji użycia.
 
 Ustawienia kontroli dostępu do zaszyfrowanej zawartości:
 
 ![Ustawienia uprawnień zdefiniowanych przez administratora.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
-### <a name="rights-management-use-license-for-offline-access"></a>Licencja na korzystanie z usługi Rights Management na potrzeby dostępu w trybie offline
+### <a name="rights-management-use-license-for-offline-access"></a>Rights Management używać licencji na dostęp w trybie offline
 
-Gdy użytkownik otworzy dokument lub wiadomość e-mail chronioną przez szyfrowanie z usługi Azure Rights Management, użytkownikowi zostanie udzielona licencja na korzystanie z usługi Azure Rights Management. Ta licencja użycia to certyfikat zawierający prawa użytkowania dokumentu lub wiadomości e-mail użytkownika oraz klucz szyfrowania, który był używany do szyfrowania zawartości. Licencja użytkowania zawiera również datę wygaśnięcia, jeśli została ustawiona i jak długo licencja użytkowania jest ważna.
+> [!NOTE]
+> Mimo że można skonfigurować ustawienie szyfrowania, aby zezwolić na dostęp w trybie offline, niektóre aplikacje mogą nie obsługiwać dostępu w trybie offline do zaszyfrowanej zawartości. Na przykład pliki oznaczone etykietami i zaszyfrowane w [Power BI Desktop](/power-bi/admin/service-security-sensitivity-label-overview) nie będą otwierane, jeśli jesteś w trybie offline.
+
+Gdy użytkownik otworzy dokument lub wiadomość e-mail chronioną przez szyfrowanie z usługi Azure Rights Management, użytkownikowi zostanie udzielona licencja na korzystanie z platformy Azure Rights Management dla tej zawartości. Ta licencja użycia to certyfikat zawierający prawa użytkowania dokumentu lub wiadomości e-mail użytkownika oraz klucz szyfrowania, który był używany do szyfrowania zawartości. Licencja użytkowania zawiera również datę wygaśnięcia, jeśli została ustawiona i jak długo licencja użytkowania jest ważna.
 
 Jeśli nie ustawiono daty wygaśnięcia, domyślny okres ważności licencji użycia dzierżawy wynosi 30 dni. Na czas trwania licencji użytkowania użytkownik nie jest ponownie uwierzytelniony ani ponownie autoryzowany dla zawartości. Ten proces umożliwia użytkownikowi dalsze otwieranie chronionego dokumentu lub wiadomości e-mail bez połączenia z Internetem. Gdy okres ważności licencji użytkowania wygaśnie, następnym razem, gdy użytkownik uzyskuje dostęp do chronionego dokumentu lub wiadomości e-mail, użytkownik musi zostać ponownie uwierzytelniony i ponownie uwierzytelniony.
 
 Oprócz ponownego uwierzytelniania ustawienia szyfrowania i członkostwo w grupach użytkowników są ponownie oceniane. Oznacza to, że użytkownicy mogą doświadczyć różnych wyników dostępu dla tego samego dokumentu lub wiadomości e-mail, jeśli w ustawieniach szyfrowania lub członkostwie w grupie nastąpiły zmiany od momentu ostatniego uzyskania dostępu do zawartości.
 
-Aby dowiedzieć się, jak zmienić domyślne ustawienie 30-dniowe, zobacz [Licencja użycia usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-use-license).
+Aby dowiedzieć się, jak zmienić domyślne ustawienie 30-dniowe, zobacz [Rights Management używanie licencji](/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>Przypisywanie uprawnień do określonych użytkowników lub grup
 
@@ -237,17 +240,17 @@ W tym celu dodaj użytkowników lub grupy, przypisz im uprawnienia i zapisz te u
 
 ![Różni użytkownicy z różnymi uprawnieniami.](../media/Sensitivity-Multiple-users-permissions.png)
 
-#### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Wystawca usługi Rights Management (użytkownik stosujący etykietę poufności) zawsze ma pełną kontrolę
+#### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management wystawcy (użytkownik stosujący etykietę poufności) zawsze ma pełną kontrolę
 
-Szyfrowanie etykiety poufności używa usługi Azure Rights Management z usługi Azure Information Protection. Gdy użytkownik stosuje etykietę poufności w celu ochrony dokumentu lub wiadomości e-mail przy użyciu szyfrowania, ten użytkownik staje się wystawcą usługi Rights Management dla tej zawartości.
+Szyfrowanie etykiety poufności używa usługi Azure Rights Management z usługi Azure Information Protection. Gdy użytkownik stosuje etykietę poufności w celu ochrony dokumentu lub wiadomości e-mail przy użyciu szyfrowania, ten użytkownik staje się wystawcą Rights Management dla tej zawartości.
 
-Wystawcy usługi Rights Management zawsze otrzymuje uprawnienia pełnej kontroli dla dokumentu lub wiadomości e-mail, a ponadto:
+Wystawcy Rights Management zawsze otrzymują uprawnienia pełnej kontroli dla dokumentu lub wiadomości e-mail, a ponadto:
 
-- Jeśli ustawienia szyfrowania obejmują datę wygaśnięcia, wystawcy usługi Rights Management nadal może otworzyć i edytować dokument lub wiadomość e-mail po tej dacie.
-- Wystawca usługi Rights Management zawsze może uzyskać dostęp do dokumentu lub wiadomości e-mail w trybie offline.
-- Wystawca usługi Rights Management nadal może otworzyć dokument po jego odwołaniu.
+- Jeśli ustawienia szyfrowania obejmują datę wygaśnięcia, wystawcy Rights Management nadal mogą otwierać i edytować dokument lub wiadomość e-mail po tej dacie.
+- Wystawcy Rights Management zawsze mogą uzyskiwać dostęp do dokumentu lub wiadomości e-mail w trybie offline.
+- Wystawcy Rights Management nadal może otworzyć dokument po jego odwołaniu.
 
-Aby uzyskać więcej informacji, zobacz [Wystawcę usługi Rights Management i właściciela usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+Aby uzyskać więcej informacji, zobacz [Rights Management wystawcy i właściciela Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
 ### <a name="double-key-encryption"></a>Podwójne szyfrowanie kluczy
 
@@ -318,7 +321,7 @@ Na przykład w przypadku klienta ujednoliconego etykietowania usługi Azure Info
 
 - Wybierz poziom uprawnień, taki jak Przeglądarka (która przypisuje uprawnienie Tylko widok) lub Co-Author (który przypisuje uprawnienia Widok, Edycja, Kopiuj i Drukuj).
 - Wybierz użytkowników, grupy lub organizacje. Może to obejmować osoby zarówno w organizacji, jak i poza nią.
-- Ustaw datę wygaśnięcia, po której wybrani użytkownicy nie będą mogli uzyskać dostępu do zawartości. Aby uzyskać więcej informacji, zobacz powyższą sekcję [Licencja użycia usługi Rights Management na potrzeby dostępu w trybie offline](#rights-management-use-license-for-offline-access).
+- Ustaw datę wygaśnięcia, po której wybrani użytkownicy nie będą mogli uzyskać dostępu do zawartości. Aby uzyskać więcej informacji, zobacz powyższą sekcję [Rights Management używanie licencji na dostęp w trybie offline](#rights-management-use-license-for-offline-access).
 
 ![Opcje ochrony użytkownika przy użyciu uprawnień niestandardowych.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
@@ -435,16 +438,16 @@ Szyfrowanie najbardziej poufnych dokumentów i wiadomości e-mail pomaga zagwara
 
 - Aby wielu użytkowników mogło edytować zaszyfrowany plik w tym samym czasie, wszyscy użytkownicy muszą używać Office dla sieci web lub [włączono współtworzenie plików zaszyfrowanych za pomocą etykiet poufności](sensitivity-labels-coauthoring.md), a wszyscy użytkownicy mają [Office aplikacje obsługujące tę funkcję](sensitivity-labels-coauthoring.md#prerequisites). Jeśli tak nie jest, a plik jest już otwarty:
 
-  - W aplikacjach Office (Windows, Mac, Android i iOS) użytkownicy widzą komunikat **Plik w użyciu** z nazwiskiem osoby, która wyewidencjonowała plik. Następnie mogą wyświetlać kopię tylko do odczytu lub zapisywać i edytować kopię pliku oraz otrzymywać powiadomienia, gdy plik jest dostępny.
+  - W aplikacjach Office (Windows, Mac, Android i iOS) użytkownicy widzą komunikat **File In Use** z nazwiskiem osoby, która wyewidencjonowała plik. Następnie mogą wyświetlać kopię tylko do odczytu lub zapisywać i edytować kopię pliku oraz otrzymywać powiadomienia, gdy plik jest dostępny.
   - W Office dla sieci web użytkownicy widzą komunikat o błędzie, że nie mogą edytować dokumentu z innymi osobami. Następnie mogą wybrać pozycję **Otwórz w widoku do czytania**.
 
-- Funkcja [automatycznego zapisywania](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) w aplikacjach Office dla systemów iOS i Android jest wyłączona dla zaszyfrowanych plików. Ta funkcja jest również wyłączona dla zaszyfrowanych plików na komputerach Windows i Mac, jeśli nie [włączono współtworzenia plików zaszyfrowanych za pomocą etykiet poufności](sensitivity-labels-coauthoring.md). Użytkownicy widzą komunikat, że plik ma ograniczone uprawnienia, które muszą zostać usunięte przed włączeniem automatycznego zapisywania.
+- Funkcja [automatycznego zapisywania](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) w aplikacjach Office dla iOS i Android jest wyłączona dla zaszyfrowanych plików. Ta funkcja jest również wyłączona dla zaszyfrowanych plików na komputerach Windows i Mac, jeśli nie [włączono współtworzenia plików zaszyfrowanych za pomocą etykiet poufności](sensitivity-labels-coauthoring.md). Użytkownicy widzą komunikat, że plik ma ograniczone uprawnienia, które muszą zostać usunięte przed włączeniem automatycznego zapisywania.
 
-- Otwieranie zaszyfrowanych plików w aplikacjach Office (Windows, Mac, Android i iOS może potrwać dłużej.
+- Otwieranie zaszyfrowanych plików może trwać dłużej w aplikacjach Office (Windows, Mac, Android i iOS).
 
 - Jeśli etykieta, która stosuje szyfrowanie, zostanie dodana przy użyciu aplikacja pakietu Office, gdy dokument zostanie [wyewidencjonowany w SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), a następnie użytkownik odrzuci wyewidencjonowanie, dokument pozostanie oznaczony etykietą i zaszyfrowany.
 
-- Jeśli [nie włączono współtworzenia plików zaszyfrowanych przy użyciu etykiet poufności](sensitivity-labels-coauthoring.md), następujące akcje dla zaszyfrowanych plików nie są obsługiwane przez aplikacje Office (Windows, Mac, Android i iOS), a użytkownicy widzą komunikat o błędzie informujący o tym, że wystąpił problem. Jednak SharePoint funkcje mogą być używane jako alternatywa:
+- Jeśli nie [włączono współtworzenia plików zaszyfrowanych przy użyciu etykiet poufności](sensitivity-labels-coauthoring.md), następujące akcje dla zaszyfrowanych plików nie są obsługiwane przez aplikacje Office (Windows, Mac, Android i iOS), a użytkownicy widzą komunikat o błędzie informujący o tym, że wystąpił problem. Jednak SharePoint funkcje mogą być używane jako alternatywa:
 
   - Wyświetlanie, przywracanie i zapisywanie kopii poprzednich wersji. Alternatywnie użytkownicy mogą wykonywać te akcje przy użyciu Office w sieci Web podczas [włączania i konfigurowania przechowywania wersji dla listy lub biblioteki](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Zmień nazwę lub lokalizację plików. Alternatywnie użytkownicy mogą [zmienić nazwę pliku, folderu lub linku w bibliotece dokumentów](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) w SharePoint.

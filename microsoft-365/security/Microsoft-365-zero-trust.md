@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: bb452c74763e31be11a6431cc260667319d2582f
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 2f8fe053d0ffb6d453029ab3f7fee17846661b6d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363197"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469278"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan wdrożenia platformy Microsoft 365 Zero Trust
 
@@ -49,11 +49,13 @@ Na ilustracji:
 - Tożsamości, urządzenia, dane, aplikacje, sieć i inne składniki infrastruktury są skonfigurowane z odpowiednimi zabezpieczeniami. Zasady skonfigurowane dla każdego z tych składników są skoordynowane z ogólną strategią Zero Trust. Na przykład zasady urządzeń określają kryteria dla urządzeń w dobrej kondycji, a zasady dostępu warunkowego wymagają urządzeń w dobrej kondycji w celu uzyskania dostępu do określonych aplikacji i danych.
 - Ochrona przed zagrożeniami i analiza monitoruje środowisko, zwiększa bieżące zagrożenia i podejmuje zautomatyzowane działania w celu skorygowania ataków.
 
+Aby uzyskać więcej informacji na temat Zero Trust, zobacz [_**Centrum wskazówek Zero Trust**_](/security/zero-trust) firmy Microsoft.
+
 <!---
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
 -->
 
-Aby uzyskać więcej informacji na temat Zero Trust, zobacz [_**Centrum wskazówek Zero Trust**_](/security/zero-trust) firmy Microsoft.
+
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>Wdrażanie Zero Trust dla Microsoft 365
 
@@ -68,6 +70,9 @@ Na tej ilustracji:
 - Zero Trust zaczyna się od podstawy tożsamości i ochrony urządzeń.
 - Możliwości ochrony przed zagrożeniami są oparte na tych podstawach, aby zapewnić monitorowanie i korygowanie zagrożeń bezpieczeństwa w czasie rzeczywistym.
 - Ochrona informacji i ład zapewniają zaawansowane mechanizmy kontroli ukierunkowane na określone typy danych w celu ochrony najcenniejszych informacji i zapewnienia zgodności ze standardami zgodności, w tym ochrony danych osobowych.
+
+
+W tym artykule przyjęto założenie, że masz już skonfigurowaną tożsamość w chmurze. Jeśli potrzebujesz wskazówek dotyczących tego celu, zobacz [**Wdrażanie infrastruktury tożsamości dla Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
 
 ## <a name="step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies"></a>Krok nr 1. Konfigurowanie Zero Trust tożsamości i ochrony dostępu do urządzeń — zasady punktu początkowego
 

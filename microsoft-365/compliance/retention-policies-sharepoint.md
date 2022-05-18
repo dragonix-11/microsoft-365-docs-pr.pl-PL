@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak działa przechowywanie dla SharePoint i OneDrive.
-ms.openlocfilehash: cbcc8015b8b24309c882e5b8ca7a9c56fb6e344d
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 8515b84f21677644be821ca129ab02083121ab84
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285995"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468859"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Dowiedz się więcej na temat przechowywania SharePoint i OneDrive
 
@@ -80,9 +80,9 @@ Użytkownicy widzą również komunikat o błędzie, jeśli spróbują usunąć 
 
 - Ustawienie zarządzania rekordami, które umożliwia użytkownikom usuwanie elementów oznaczonych etykietą, jest wyłączone.
     
-    Aby sprawdzić lub zmienić to ustawienie, przejdź do rozwiązania do **zarządzania rekordami** w portalu zgodności usługi Microsoft Purview > **Zarządzanie rekordamiUstawienia** >  >  **zarządzania rekordamiZarządzanie rekordami** **Etykiety** >  **ponownej konfiguracjiUsuń elementy**. Istnieją oddzielne ustawienia dla SharePoint i OneDrive.
+    Aby sprawdzić lub zmienić to ustawienie, przejdź do rozwiązania do **zarządzania rekordami** w ustawieniach **zarządzania rekordami** >  portal zgodności Microsoft Purview > **Zarządzanie rekordamiWystawienia zarządzaniaRetention** >  **etykietyUsuń** >  elementów. Istnieją oddzielne ustawienia dla SharePoint i OneDrive.
     
-    Alternatywnie, jeśli nie masz dostępu do rozwiązania do **zarządzania rekordami** , możesz użyć opcji *AllowFilesWithKeepLabelToBeDeletedSPO* i *AllowFilesWithKeepLabelToBeDeletedODB* z [get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) i [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
+    Alternatywnie, jeśli nie masz dostępu do rozwiązania do **zarządzania rekordami** , możesz użyć opcji *AllowFilesWithKeepLabelToBeDeletedSPO* i *AllowFilesWithKeepLabelToBeDeletedODB* z [get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) i [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
 
 - Etykieta przechowywania oznacza elementy jako rekord i jest [zablokowana](record-versioning.md).
     

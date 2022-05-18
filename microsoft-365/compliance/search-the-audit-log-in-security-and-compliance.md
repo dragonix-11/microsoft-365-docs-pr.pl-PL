@@ -21,12 +21,12 @@ description: Użyj portal zgodności Microsoft Purview, aby przeszukać ujednoli
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 585b3be2149b1e94dc27633bac20707a6b193c0f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 70bb6383b67392da1766d3ca8d1ef0806d105bb1
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320611"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465981"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Przeszukiwanie dziennika inspekcji w portalu zgodności
 
@@ -532,7 +532,6 @@ W poniższej tabeli opisano działania związane z interakcją użytkowników z 
 |Zaktualizowany element listy|ListItemUpdated|Użytkownik zaktualizował element listy SharePoint, modyfikując co najmniej jedną właściwość.|
 |Zaktualizowana kolumna witryny|SiteColumnUpdated|Użytkownik zaktualizował kolumnę witryny SharePoint, modyfikując co najmniej jedną właściwość.|
 |Zaktualizowany typ zawartości witryny|SiteContentTypeUpdated|Użytkownik zaktualizował typ zawartości witryny, modyfikując co najmniej jedną właściwość.|
-|Wyświetlony element listy|ListItemViewed|Użytkownik wyświetlił element listy SharePoint. Gdy użytkownik wyświetli element listy, zdarzenie ListItemViewed nie zostanie ponownie zarejestrowane dla tego samego użytkownika dla tego samego elementu listy przez następne pięć minut.|
 
 ### <a name="sharing-and-access-request-activities"></a>Działania dotyczące udostępniania i uzyskiwania dostępu do żądań
 

@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Postępuj zgodnie z tymi instrukcjami, aby utworzyć stronę Informacje o nas, w tym nazwę firmy, adres, numer telefonu, adres URL witryny internetowej, logo i godziny pracy w Microsoft Bookings.
-ms.openlocfilehash: 5dc8fa157d6ce53231ece9d8d70eb772218ac5dd
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: e15379a414182672bd7a0372ea5c55ffbc482b62
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022520"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469608"
 ---
-# <a name="enter-your-business-information"></a>Wprowadź informacje o firmie
+# <a name="enter-your-business-information-in-microsoft-bookings"></a>Wprowadź informacje biznesowe w Microsoft Bookings
 
 > [!NOTE]
 > Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
@@ -76,13 +76,13 @@ Na przykład spotkania personelu odbywają się w każdy czwartek od godziny 1 d
 
     Gdy klient przejdzie do strony rezerwacji, zobaczy, że Twoja firma jest zamknięta od 1 do 2:30 w czwartki.
 
-## <a name="upload-your-logo"></a>Upload logo
+## <a name="upload-your-logo"></a>Przekazywanie logo
 
 Jeśli logo firmy nie zostało jeszcze przekazane do aplikacji Bookings, możesz to zrobić na stronie Informacje biznesowe.
 
-1. Na stronie Informacje biznesowe w obszarze logo Upload wybierz pozycję **Zmień**.
+1. Na stronie Informacje biznesowe w obszarze Przekaż logo wybierz pozycję **Zmień**.
 
-1. Wybierz **Upload zdjęcie**.
+1. Wybierz pozycję **Przekaż zdjęcie**.
 
    ![Obraz przedstawiający przycisk przekazywania zdjęcia.](../media/bookings-upload-photo.png)
 

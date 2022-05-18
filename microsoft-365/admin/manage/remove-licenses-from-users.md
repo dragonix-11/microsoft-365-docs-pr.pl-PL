@@ -23,14 +23,14 @@ ms.custom:
 search.appverid: MET150
 description: Metoda używana do cofania przypisania licencji produktów zależy od tego, czy nie przypisano licencji od określonych użytkowników, czy od określonego produktu.
 ms.date: 04/22/2022
-ms.openlocfilehash: b5294bd6234c36e6040ff8cc7433c3e66b7d34b6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 29d46ac745487328ecfe49bf658fdaa79fa346d9
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093707"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465805"
 ---
-# <a name="unassign-licenses-from-users"></a>Odbieranie licencji użytkownikom
+# <a name="unassign-microsoft-365-licenses-from-users"></a>Anulowanie przypisywania licencji Microsoft 365 od użytkowników
 
 Licencje od użytkowników można anulować na stronie **Aktywni użytkownicy** lub na stronie **Licencje** . Używana metoda zależy od tego, czy chcesz anulować przypisanie licencji produktów od określonych użytkowników, czy cofnąć przypisanie licencji użytkowników z określonego produktu.
 

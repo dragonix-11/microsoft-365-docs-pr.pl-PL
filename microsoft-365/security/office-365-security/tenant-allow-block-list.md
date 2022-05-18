@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e112b6b386e0a2961119478aae7d4cb53138ccf
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 58b1fadc85b993701d49b1c33750fc7db2527264
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363319"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468113"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
@@ -485,3 +485,10 @@ Możesz na przykład dodać wpis zezwalania dla następującej pary domen:
 - **Infrastruktura**: tms.mx.com
 
 Tylko komunikaty z tej domeny *i* wysyłanie pary infrastruktury mogą się fałszować. Inni nadawcy próbujący podszywać się pod gmail.com nie są dozwolone. Komunikaty od nadawców w innych domenach pochodzących z tms.mx.com są sprawdzane przez analizę fałszowania.
+
+
+## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>Czego można oczekiwać po dodaniu wpisu zezwalania lub blokowania
+
+Po dodaniu wpisu zezwalania za pośrednictwem portalu Przesłane lub wpisu bloku na liście dozwolonych/zablokowanych dzierżawcy wpis powinien zacząć działać natychmiast.
+
+Zalecamy, aby wpisy automatycznie wygasały po 30 dniach, aby sprawdzić, czy system dowiedział się o zezwalaniu lub bloku. Jeśli nie, należy utworzyć kolejny wpis, aby dać systemowi kolejne 30 dni na naukę.

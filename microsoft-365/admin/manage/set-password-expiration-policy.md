@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Dowiedz się, jak administrator może ustawić zasady wygasania haseł dla twojej firmy, szkoły lub organizacji non-profit w Centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: ed94cb8bc3bdcc1c1f30c6cb9bf56907c83de41e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: b7f7691d0c1c0e6177d5414bc7802b62bb07a3b3
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022344"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468783"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Określanie zasad wygasania haseł w organizacji
 
@@ -54,18 +54,16 @@ Jeśli jesteś użytkownikiem, nie masz uprawnień do konfigurowania hasła tak,
 
 Postępuj zgodnie z poniższą instrukcją, jeśli chcesz, aby hasła użytkowników wygasały po upływie określonego czasu.
 
-1. W Centrum administracyjne platformy Microsoft 365 przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">karty **Prywatność & zabezpieczeń**</a> w **obszarze Ustawienia organizacji**.
+1. W Centrum administracyjne platformy Microsoft 365 przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">karty **Prywatność & zabezpieczeń**</a>.
 
-    Jeśli nie jesteś administratorem globalnym lub administratorem zabezpieczeń, nie zobaczysz opcji Zabezpieczenia i prywatność.
+    Jeśli nie jesteś administratorem globalnym ani administratorem zabezpieczeń, nie zobaczysz opcji Ochrona & prywatności.
   
 1. Wybierz pozycję **Ustawianie zasad wygasania hasła**.
   
-1. Jeśli nie chcesz, aby użytkownicy musieli zmieniać hasła, usuń zaznaczenie pola wyboru obok pozycji **Ustaw, aby hasła użytkowników wygasały po kilku dniach**.
+1. Jeśli nie chcesz, aby użytkownicy musieli zmieniać hasła, usuń zaznaczenie pola wyboru obok pozycji **Ustaw hasła, aby nigdy nie wygasały**.
 
 1. Określ, jak często hasła powinny wygasać. Wybierz liczbę dni z przedziału od 14 do 730.
-  
-1. W drugim polu wpisz, kiedy użytkownicy będą powiadamiani o wygaśnięciu hasła, a następnie wybierz opcję **Zapisz**. Wybierz liczbę dni z przedziału od 1 do 30.
-
+ 
 > [!IMPORTANT]
 > Powiadomienia o wygaśnięciu hasła nie są już obsługiwane w Office aplikacji internetowych ani [w centrum administracyjnym](https://portal.office.com).
   
@@ -77,9 +75,9 @@ Osoby korzystające tylko z aplikacji Outlook nie będą zmuszone do zresetowani
 
 Jeśli chcesz uniemożliwić użytkownikom odtwarzanie starych haseł, możesz to zrobić, wymuszając historię haseł w usłudze lokalna usługa Active Directory (AD). Zobacz [Tworzenie niestandardowych zasad haseł](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
 
-W usłudze Azure AD ostatniego hasła nie można użyć ponownie, gdy użytkownik zmieni hasło. Zasady haseł są stosowane do wszystkich kont użytkowników, które są tworzone i zarządzane bezpośrednio w usłudze Azure AD. Nie można modyfikować tych zasad haseł. Zobacz [Zasady haseł usługi Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
+W Azure AD ostatniego hasła nie można użyć ponownie, gdy użytkownik zmieni hasło. Zasady haseł są stosowane do wszystkich kont użytkowników, które są tworzone i zarządzane bezpośrednio w Azure AD. Nie można modyfikować tych zasad haseł. Zobacz [Azure AD zasad haseł](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
 
-## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Synchronizowanie skrótów haseł użytkowników z lokalna usługa Active Directory do usługi Azure AD (Microsoft 365)
+## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Synchronizowanie skrótów haseł użytkowników z lokalna usługa Active Directory do Azure AD (Microsoft 365)
 
 W tym artykule opisano ustawianie zasad wygasania haseł tylko do kont użytkowników w chmurze (Azure AD). Nie dotyczy użytkowników tożsamości hybrydowej, którzy używają synchronizacji skrótów haseł, uwierzytelniania przekazywanego lub federacji lokalnej, takiej jak usługi ADFS.
   

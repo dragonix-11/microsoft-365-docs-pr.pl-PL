@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity Score — kondycja aplikacji Microsoft 365
+title: Ocena produktywności i kondycja aplikacji Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Szczegółowe informacje o kondycji Aplikacje Microsoft 365 — współczynnik wydajności środowiska technologii.
-ms.openlocfilehash: 2e8e44c954d8d1d6bacca766bd528c3897b7686b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a87bd49ace301eeb6f48edc31fba5a02d0386de6
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782154"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466377"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Aplikacje Microsoft 365 zdrowia — środowiska technologiczne
 
-Wynik produktywności zapewnia wgląd w proces transformacji cyfrowej organizacji dzięki wykorzystaniu Microsoft 365 i środowisk technologicznych, które ją obsługują. Wynik twojej organizacji odzwierciedla pomiary osób i środowiska technologicznego i można go porównać z testami porównawczymi organizacji podobnymi do Twoich. Kategoria kondycji aplikacji jest częścią pomiarów należących do środowisk technologicznych. Aby dowiedzieć się więcej, zapoznaj się z [omówieniem oceny produktywności](productivity-score.md) i przeczytaj [Oświadczenie o ochronie prywatności firmy Microsoft](https://privacy.microsoft.com/privacystatement).
+Wynik produktywności zapewnia wgląd w proces transformacji cyfrowej organizacji dzięki wykorzystaniu Microsoft 365 i środowisk technologicznych, które ją obsługują. Wynik organizacji odzwierciedla pomiary środowiska osób i technologii i można go porównać z testami porównawczymi organizacji podobnymi do Twoich. Kategoria kondycji aplikacji jest częścią pomiarów należących do środowisk technologicznych. Aby dowiedzieć się więcej, zapoznaj się z [omówieniem oceny produktywności](productivity-score.md) i przeczytaj [Oświadczenie o ochronie prywatności firmy Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organizations-microsoft-365-apps-health-score-matters"></a>Dlaczego ocena kondycji aplikacji Microsoft 365 organizacji ma znaczenie
 
