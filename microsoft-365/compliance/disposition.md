@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorowanie usuwania zawartości i zarządzanie nią w przypadku używania przeglądu dyspozycji lub elementów oznaczonych jako rekordy są automatycznie usuwane zgodnie z skonfigurowanymi ustawieniami.
-ms.openlocfilehash: c8a9db05367dd7007ad164bbfe95e4a190253f85
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 34ac1a9d3b62cd0806318582f7baef76947d7670
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285133"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463269"
 ---
 # <a name="disposition-of-content"></a>Dyspozycja zawartości
 
@@ -30,7 +30,7 @@ ms.locfileid: "65285133"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Strona **Dyspozycja** z **zarządzania rekordami** w portalu zgodności usługi Microsoft Purview umożliwia zarządzanie przeglądami dyspozycji i wyświetlanie metadanych [rekordów](records-management.md#records) , które zostały automatycznie usunięte po zakończeniu okresu przechowywania.
+Użyj strony **Dyspozycja** z **zarządzania rekordami** w portal zgodności Microsoft Purview, aby zarządzać przeglądami dyspozycji i wyświetlać metadane [rekordów](records-management.md#records), które zostały automatycznie usunięte po zakończeniu okresu przechowywania.
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Wymagania wstępne dotyczące wyświetlania usposobień zawartości
 
@@ -38,31 +38,31 @@ Aby zarządzać przeglądami dyspozycji i potwierdzić, że rekordy zostały usu
 
 ### <a name="permissions-for-disposition"></a>Uprawnienia do dyspozycji
 
-Aby pomyślnie uzyskać dostęp do karty **Dyspozycja** w portalu zgodności usługi Microsoft Purview, użytkownicy muszą mieć rolę **Zarządzanie dyspozycjami** . Od grudnia 2020 r. ta rola jest teraz uwzględniana w domyślnej grupie ról **Zarządzanie rekordami** .
+Aby pomyślnie uzyskać dostęp do karty **Dyspozycja** w portal zgodności Microsoft Purview, użytkownicy muszą mieć rolę **Zarządzanie dyspozycjami**. Od grudnia 2020 r. ta rola jest teraz uwzględniana w domyślnej grupie ról **Zarządzanie rekordami** .
 
 > [!NOTE]
 > Domyślnie administrator globalny nie otrzymuje roli **Zarządzanie dyspozycjami** . 
 
 Aby przyznać użytkownikom tylko uprawnienia potrzebne do przeglądów dyspozycji bez przyznawania im uprawnień do wyświetlania i konfigurowania innych funkcji zarządzania przechowywaniem i rekordami, utwórz niestandardową grupę ról (na przykład o nazwie "Recenzenci dyspozycji") i przyznaj tej grupie rolę **Zarządzanie dyspozycjami** .
 
-Aby uzyskać instrukcje dotyczące dodawania użytkowników do ról domyślnych lub tworzenia własnych grup ról, zobacz [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md).
+Aby uzyskać instrukcje dodawania użytkowników do ról domyślnych lub tworzenia własnych grup ról, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 Dodatkowo:
 
-- Aby wyświetlić zawartość elementów podczas procesu dyspozycji, dodaj użytkowników do grupy ról **Podgląd zawartości Eksploratora zawartości** . Jeśli użytkownicy nie mają uprawnień z tej grupy ról, nadal mogą wybrać akcję przeglądu dyspozycji, aby ukończyć przegląd dyspozycji, ale muszą to zrobić bez możliwości wyświetlania zawartości elementu w okienku mini-podglądu w portalu zgodności usługi Microsoft Purview.
+- Aby wyświetlić zawartość elementów podczas procesu dyspozycji, dodaj użytkowników do grupy ról **Podgląd zawartości Eksploratora zawartości** . Jeśli użytkownicy nie mają uprawnień z tej grupy ról, nadal mogą wybrać akcję przeglądu dyspozycji, aby ukończyć przegląd dyspozycji, ale muszą to zrobić bez możliwości wyświetlania zawartości elementu w okienku mini-podglądu w portal zgodności Microsoft Purview.
 
 - Domyślnie każda osoba uzyskująca dostęp do strony **Dyspozycja** widzi tylko elementy, które są przypisane do przeglądu. Aby administrator zarządzania rekordami wyświetlał wszystkie elementy przypisane do wszystkich użytkowników oraz wszystkie etykiety przechowywania skonfigurowane do przeglądu dyspozycji: Przejdź do **pozycji Ustawienia** >  zarządzania **rekordamiWybierz**, a następnie włącz grupę zabezpieczeń z włączoną obsługą poczty zawierającą konta administratorów.
     
     Microsoft 365 grupy i grupy zabezpieczeń, które nie obsługują poczty, nie obsługują tej funkcji i nie są wyświetlane na liście do wybrania. Jeśli chcesz utworzyć nową grupę zabezpieczeń z obsługą poczty, użyj linku do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, aby utworzyć nową grupę. 
     
     > [!IMPORTANT]
-    > Po włączeniu grupy nie można jej zmienić w portalu zgodności usługi Microsoft Purview. Zobacz następną sekcję, aby dowiedzieć się, jak włączyć inną grupę przy użyciu programu PowerShell.
+    > Po włączeniu grupy nie można jej zmienić w portal zgodności Microsoft Purview. Zobacz następną sekcję, aby dowiedzieć się, jak włączyć inną grupę przy użyciu programu PowerShell.
 
 - Opcja **Ustawienia zarządzania rekordami** jest widoczna tylko dla administratorów zarządzania rekordami. 
 
 #### <a name="enabling-another-security-group-for-disposition"></a>Włączanie innej grupy zabezpieczeń na potrzeby dyspozycji
 
-Po włączeniu grupy zabezpieczeń do dyspozycji z **ustawień zarządzania rekordami** w portalu zgodności usługi Microsoft Purview nie można wyłączyć tego uprawnienia dla grupy ani zastąpić wybranej grupy w portalu zgodności usługi Microsoft Purview. Można jednak włączyć inną grupę zabezpieczeń obsługującą pocztę za pomocą polecenia cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) .
+Po włączeniu grupy zabezpieczeń do dyspozycji z **ustawień zarządzania rekordami** w portal zgodności Microsoft Purview nie można wyłączyć tego uprawnienia dla grupy ani zastąpić wybranej grupy w portal zgodności Microsoft Purview. Można jednak włączyć inną grupę zabezpieczeń obsługującą pocztę za pomocą polecenia cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) .
 
 Przykład: 
 
@@ -72,7 +72,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 ### <a name="enable-auditing"></a>Włączanie inspekcji
 
-Upewnij się, że inspekcja jest włączona co najmniej jeden dzień przed pierwszą akcją dyspozycji. Aby uzyskać więcej informacji, zobacz [Przeszukiwanie dziennika inspekcji w portalu zgodności usługi Microsoft Purview](search-the-audit-log-in-security-and-compliance.md). 
+Upewnij się, że inspekcja jest włączona co najmniej jeden dzień przed pierwszą akcją dyspozycji. Aby uzyskać więcej informacji, zobacz [Przeszukiwanie dziennika inspekcji w portal zgodności Microsoft Purview](search-the-audit-log-in-security-and-compliance.md). 
 
 ## <a name="disposition-reviews"></a>Przeglądy dyspozycji
 
@@ -88,7 +88,7 @@ Gdy przegląd dyspozycji zostanie wyzwolony po zakończeniu okresu przechowywani
 
 Możesz dostosować wiadomość e-mail z powiadomieniem otrzymywaną przez recenzentów, w tym instrukcje w różnych językach. W przypadku obsługi wielu języków należy samodzielnie określić tłumaczenia, a ten tekst niestandardowy jest wyświetlany wszystkim recenzentom niezależnie od ich ustawień regionalnych.
 
-Użytkownicy otrzymują początkowe powiadomienie e-mail na etykietę na końcu okresu przechowywania elementu z przypomnieniem na etykietę raz w tygodniu o wszystkich przypisanych przeglądach dyspozycji. Mogą kliknąć link w wiadomościach e-mail z powiadomieniami i przypomnieniami, aby przejść bezpośrednio do strony **Zarządzanie** rekordamiDyspozycja  >  w portalu zgodności usługi Microsoft Purview, aby przejrzeć zawartość i podjąć akcję. Recenzenci mogą również przejść do tej strony **Dyspozycja** w portalu zgodności usługi Microsoft Purview. Następnie:
+Użytkownicy otrzymują początkowe powiadomienie e-mail na etykietę na końcu okresu przechowywania elementu z przypomnieniem na etykietę raz w tygodniu o wszystkich przypisanych im przeglądach dyspozycji. Mogą kliknąć link w wiadomościach e-mail z powiadomieniami i przypomnieniami, aby przejść bezpośrednio do strony **Zarządzanie rekordamiDisposition** >  w portal zgodności Microsoft Purview, aby przejrzeć zawartość i podjąć akcję. Recenzenci mogą również przejść do tej strony **Dyspozycja** w portal zgodności Microsoft Purview. Następnie:
 
 - Recenzenci widzą tylko przeglądy dyspozycji, które są do nich przypisane, podczas gdy administratorzy, którzy są dodawani do wybranej grupy zabezpieczeń dla menedżera rekordów, widzą wszystkie przeglądy dyspozycji.
 
@@ -109,7 +109,7 @@ Administratorzy mogą wyświetlić przegląd wszystkich oczekujących dyspozycji
 
 Po wybraniu pozycji **Wyświetl wszystkie oczekujące dyspozycje** zostanie wyświetlona strona **Dyspozycja** . Przykład:
 
-![Strona Dyspozycje w portalu zgodności usługi Microsoft Purview.](../media/disposition-tab.png)
+![Strona Dyspozycje w portal zgodności Microsoft Purview.](../media/disposition-tab.png)
 
 
 ### <a name="workflow-for-a-disposition-review"></a>Przepływ pracy na potrzeby przeglądu dyspozycji
@@ -122,30 +122,30 @@ Na poniższym diagramie przedstawiono podstawowy przepływ pracy dla przeglądu 
 
 Wyzwalanie przeglądu dyspozycji na końcu okresu przechowywania jest opcją konfiguracji dostępną tylko z etykietą przechowywania. Przegląd dyspozycji nie jest dostępny dla zasad przechowywania. Aby uzyskać więcej informacji na temat tych dwóch rozwiązań przechowywania, zobacz [Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania](retention.md).
 
-Na stronie **Definiowanie ustawień przechowywania** etykiety przechowywania:
+Na stronie **Wybierz, co się stanie po okresie przechowywania** etykiety przechowywania:
 
 ![Ustawienia przechowywania etykiety.](../media/disposition-review-option.png)
  
-Po wybraniu tej opcji **Wyzwalanie przeglądu dyspozycji** na następnej stronie konfiguracji należy określić liczbę kolejnych etapów dyspozycji i recenzentów dyspozycji dla każdego etapu:
+Po wybraniu opcji **Rozpocznij przegląd dyspozycji** wybierz pozycję **+ Utwórz etapy i przypisz recenzentów**. Na następnej stronie konfiguracji określisz liczbę kolejnych etapów dyspozycji i recenzenci dyspozycji dla każdego etapu:
 
 ![Określanie recenzentów dyspozycji.](../media/disposition-reviewers.png) 
 
-Wybierz **pozycję Dodaj etap** i nadaj etapowi nazwę na potrzeby identyfikacji. Następnie określ recenzentów dla tego etapu.
+Wybierz **pozycję + Dodaj etap** i nadaj etapowi nazwę na potrzeby identyfikacji. Następnie określ recenzentów dla tego etapu.
 
-W przypadku recenzentów określ użytkownika lub grupę zabezpieczeń obsługującą pocztę. grupy Microsoft 365 ([wcześniej Office 365 grupy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) nie są obsługiwane dla tej opcji.
+W przypadku recenzentów określ maksymalnie 10 pojedynczych użytkowników lub grupy zabezpieczeń z obsługą poczty e-mail. grupy Microsoft 365 ([wcześniej Office 365 grupy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) nie są obsługiwane dla tej opcji.
 
-Jeśli potrzebujesz więcej niż jednej osoby do przejrzenia elementu na końcu okresu przechowywania, wybierz ponownie **pozycję Dodaj etap** i powtórz proces konfiguracji dla wymaganej liczby etapów z maksymalnie pięcioma etapami. 
+Jeśli potrzebujesz więcej niż jednej osoby do przejrzenia elementu na końcu okresu przechowywania, wybierz pozycję **Dodaj kolejny etap** i powtórz proces konfiguracji dla wymaganej liczby etapów z maksymalnie pięcioma etapami. 
 
 W ramach każdego indywidualnego etapu dyspozycji każdy z użytkowników określonych dla tego etapu jest upoważniony do wykonania następnej akcji dla elementu na koniec okresu przechowywania. Ci użytkownicy mogą również dodawać innych użytkowników do etapu przeglądu dyspozycji.
 
 > [!NOTE]
-> Jeśli skonfigurowano etykiety przechowywania przed udostępnieniem wieloetapowego przeglądu dyspozycji, możesz uaktualnić etykiety do obsługi tej funkcji: w kreatorze etykiet wybierz **pozycję Dodaj etap**, edytuj istniejących recenzentów lub dodaj nowych recenzentów.
+> Jeśli skonfigurowano etykiety przechowywania przed udostępnieniem wieloeparacyjnego przeglądu dyspozycji, możesz uaktualnić etykiety do obsługi tej funkcji: Edytuj etykietę i wybierz pozycję **Edytuj etapy i recenzentów** na stronie **Wybierz, co się stanie po okresie przechowywania** .
 
-W fazie konfiguracji dla każdego określonego etapu można zmienić jego nazwę, zmienić jego kolejność lub usunąć, wybierając opcję Akcje etapu (**...**): 
+W fazie konfiguracji dla każdego określonego etapu można zmienić jego nazwę, zmienić jego kolejność lub usunąć, wybierając pozycję **Edytuj etapy i recenzentów** , które są teraz wyświetlane dla opcji **Rozpocznij przegląd dyspozycji** . Następnie dla każdego etapu możesz wybrać opcję Akcje etapów (**...**): 
 
 ![Akcje etapów przeglądów dyspozycji.](../media/stage-actions-disposition-review.png)
 
-Nie można jednak zmienić kolejności ani usunąć etapu po utworzeniu etykiety przechowywania.
+Nie można jednak zmienić kolejności ani usunąć etapu po utworzeniu etykiety przechowywania. Zobaczysz dostępne tylko opcje **Dodaj etap** i **Zmień nazwę etapu** . Nadal możesz edytować recenzentów.
 
 Po określeniu recenzentów pamiętaj, aby przyznać im uprawnienie roli **Zarządzanie dyspozycjami** . Aby uzyskać więcej informacji, zobacz sekcję [Uprawnienia do dyspozycji](#permissions-for-disposition) na tej stronie.
 
@@ -157,7 +157,7 @@ Przykładowe domyślne powiadomienie e-mail wysyłane do recenzenta:
 
 Możesz dostosować wiadomości e-mail wysyłane do recenzentów dyspozycji dla początkowego powiadomienia, a następnie przypomnień.
 
-Na dowolnej ze stron zarządzania rekordami w portalu zgodności usługi Microsoft Purview wybierz pozycję **Ustawienia zarządzania rekordami**:  
+Na dowolnej ze stron zarządzania rekordami w portal zgodności Microsoft Purview wybierz pozycję **Ustawienia zarządzania rekordami**:  
 
 ![Rejestruje ustawienia zarządzania.](../media/record-management-settings.png)
 
@@ -175,7 +175,7 @@ Wybierz pozycję **Zapisz** , aby zapisać wszelkie zmiany.
 
 ### <a name="viewing-and-disposing-of-content"></a>Wyświetlanie i usuwanie zawartości
 
-Gdy recenzent zostanie powiadomiony pocztą e-mail, że zawartość jest gotowa do przejrzenia, może kliknąć link w wiadomości e-mail, który przeniesie go bezpośrednio do strony **Dyspozycja** z **obszaru Zarządzanie rekordami** w portalu zgodności usługi Microsoft Purview. W tym miejscu recenzenci mogą zobaczyć, ile elementów dla każdej etykiety przechowywania oczekuje na dyspozycję z **typem** wyświetlającym **oczekujące usposobienie**. Następnie wybierają etykietę przechowywania i **otwierają w nowym oknie** , aby wyświetlić całą zawartość z tą etykietą:
+Gdy recenzent zostanie powiadomiony pocztą e-mail, że zawartość jest gotowa do przejrzenia, może kliknąć link w wiadomości e-mail, który przeniesie go bezpośrednio do strony **Dyspozycja** z **obszaru Zarządzanie rekordami** w portal zgodności Microsoft Purview. W tym miejscu recenzenci mogą zobaczyć, ile elementów dla każdej etykiety przechowywania oczekuje na dyspozycję z **typem** wyświetlającym **oczekujące usposobienie**. Następnie wybierają etykietę przechowywania i **otwierają w nowym oknie** , aby wyświetlić całą zawartość z tą etykietą:
 
 ![Otwórz w nowym oknie na potrzeby przeglądu dyspozycji.](../media/open-in-new-window.png)
 
@@ -188,8 +188,8 @@ Jeśli używasz poziomego paska przewijania lub zamkniesz okienko min-review, zo
 Jak widać w pokazanym przykładzie, obsługiwane akcje to: 
   
 - **Zatwierdź usuwanie**:
-    - Po wybraniu tej akcji do tymczasowego etapu przeglądu dyspozycji (skonfigurowano wiele etapów): element przechodzi do następnego etapu dyspozycji.
-    - Gdy ta akcja jest wybrana do końcowego etapu przeglądu dyspozycji lub istnieje tylko jeden etap rozporządzania: element jest oznaczony jako kwalifikujący się do trwałego usunięcia, które zadanie czasomierza następnie działa w ciągu 7 dni. Dokładny czas trwałego usunięcia elementu zależy od obciążenia. Aby uzyskać więcej informacji, zobacz [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) and [How retention works for Exchange (Jak działa przechowywanie dla SharePoint i OneDrive) oraz How retention works for Exchange (Jak działa przechowywanie dla Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)).
+    - Gdy ta akcja zostanie wybrana do tymczasowego etapu przeglądu dyspozycji (skonfigurowano wiele etapów): element przechodzi do następnego etapu dyspozycji.
+    - Gdy ta akcja jest wybrana do końcowego etapu przeglądu dyspozycji lub jest tylko jeden etap dyspozycji: element jest oznaczony jako kwalifikujący się do trwałego usunięcia, które zadanie czasomierza następnie działa w ciągu 7 dni. Dokładny czas trwałego usunięcia elementu zależy od obciążenia. Aby uzyskać więcej informacji, zobacz [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) and [How retention works for Exchange (Jak działa przechowywanie dla SharePoint i OneDrive) oraz How retention works for Exchange (Jak działa przechowywanie dla Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)).
 
 - **Etykieta ponownie**:
     - Po wybraniu tej akcji element kończy proces przeglądu dyspozycji dla oryginalnej etykiety. Element podlega następnie ustawieniu przechowywania nowo wybranej etykiety przechowywania.

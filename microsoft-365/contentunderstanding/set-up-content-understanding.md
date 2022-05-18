@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie SharePoint Syntex
+title: Konfigurowanie usługi SharePoint Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
@@ -14,15 +14,15 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: high
-description: Konfigurowanie SharePoint Syntex
-ms.openlocfilehash: 0d7cbe0f99747629bcac581bd080d88af27e8a06
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Konfigurowanie usługi SharePoint Syntex
+ms.openlocfilehash: 97d12527667de1583f787844da11a4ad875f34ba
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935374"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463148"
 ---
-# <a name="set-up-sharepoint-syntex"></a>Konfigurowanie SharePoint Syntex
+# <a name="set-up-sharepoint-syntex"></a>Konfigurowanie usługi SharePoint Syntex
 
 Administratorzy mogą użyć <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, aby skonfigurować usługę [Microsoft SharePoint Syntex](index.md). 
 
@@ -45,7 +45,13 @@ Przed rozpoczęciem instalacji upewnij się, że zaplanowano najlepszy sposób k
 
 Jako administrator możesz również wprowadzać zmiany w wybranych ustawieniach w dowolnym momencie po skonfigurowaniu i w całym obszarze zarządzania zawartością w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>.
 
-Jeśli planujesz korzystanie z niestandardowego środowiska platformy Power Platform, musisz [zainstalować aplikację *AI Builder for Projekt Cortex* w tym środowisku](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) i przydzielić do niego [środki narzędzia AI Builder](/power-platform/admin/capacity-add-on) przed utworzeniem modeli przetwarzania formularzy. W przypadku korzystania ze środowiska niestandardowego twórcy modelu muszą mieć przypisaną rolę zabezpieczeń usługi Environment Maker, a użytkownikom modelu musi być przypisana rola Zabezpieczeń użytkownika podstawowego. Aby uzyskać więcej informacji [, zobacz Przypisywanie roli zabezpieczeń do użytkownika](/power-platform/admin/assign-security-roles) .
+### <a name="custom-power-platform-environments"></a>Niestandardowe środowiska platformy Power Platform
+
+Jeśli planujesz używać niestandardowego środowiska platformy Power Platform, musisz zainstalować aplikację *AI Builder for Projekt Cortex* w tym środowisku. Zobacz [Zarządzanie aplikacjami usługi Dynamics 365](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view), aby uzyskać szczegółowe informacje i wyszukaj aplikację *AI Builder for Projekt Cortex* na liście aplikacji usługi Dynamics 365.
+
+Przed utworzeniem modeli przetwarzania [formularzy należy również przydzielić środki narzędzia AI Builder](/power-platform/admin/capacity-add-on) do środowiska niestandardowego. 
+
+W przypadku korzystania ze środowiska niestandardowego twórcy modelu muszą mieć przypisaną rolę zabezpieczeń usługi Environment Maker, a użytkownikom modelu musi być przypisana rola Zabezpieczeń użytkownika podstawowego. Aby uzyskać więcej informacji [, zobacz Przypisywanie roli zabezpieczeń do użytkownika](/power-platform/admin/assign-security-roles) .
 
 Użytkownicy tworzący modele w [witrynie centrum zawartości](/microsoft-365/contentunderstanding/create-a-content-center) muszą być członkami witryny. Użytkownicy tworzący modele lokalnie poza centrum zawartości muszą być właścicielami witryn.
 

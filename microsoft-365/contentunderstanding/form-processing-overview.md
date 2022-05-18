@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak tworzyć modele przetwarzania formularzy w usłudze Microsoft SharePoint Syntex za pomocą narzędzia AI Build.
-ms.openlocfilehash: 77f316a636d3a59d83bcd881df3bc2005dea722c
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 7b9ff8b8a1014dfb47aa7061caf31599e497c18a
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916110"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463192"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Omówienie przetwarzania formularzy w usłudze Microsoft SharePoint Syntex
 
@@ -28,7 +28,7 @@ Firma Microsoft SharePoint Syntex używa przetwarzania formularzy programu Micro
 
 Przetwarzanie formularzy narzędzia AI Builder umożliwia tworzenie modeli sztucznej inteligencji, które wykorzystują technologię uczenia maszynowego do identyfikowania i wyodrębniania par klucz-wartość i danych tabel z dokumentów ustrukturyzowanych lub częściowo ustrukturyzowanych, takich jak formularze i faktury.
 
-Organizacje często otrzymują faktury w dużych ilościach z różnych źródeł, takich jak poczta, faks, poczta e-mail itp. Przetwarzanie tych dokumentów i ręczne wprowadzanie ich do bazy danych może zająć dużo czasu. Za pomocą sztucznej inteligencji do wyodrębniania tekstu, par klucz/wartość i tabel z dokumentów przetwarzanie formularzy automatyzuje ten proces. 
+Organizacje często otrzymują faktury w dużych ilościach z różnych źródeł, takich jak poczta, faks i poczta e-mail. Przetwarzanie tych dokumentów i ręczne wprowadzanie ich do bazy danych może zająć dużo czasu. Za pomocą sztucznej inteligencji do wyodrębniania tekstu, par klucz/wartość i tabel z dokumentów przetwarzanie formularzy automatyzuje ten proces. 
 
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat przykładów scenariuszy przetwarzania formularzy, zobacz [przewodnik SharePoint Syntex adoption: Wprowadzenie guide (Wdrażanie SharePoint Syntex: Wprowadzenie](./adoption-getstarted.md)).
@@ -43,23 +43,28 @@ Po wytrenowania i opublikowaniu modelu model tworzy [przepływ Power Automate](/
 
 Administrator Office 365 musi [włączyć przetwarzanie formularzy](./set-up-content-understanding.md) dla biblioteki dokumentów SharePoint, aby użytkownicy mogli utworzyć w niej [model przetwarzania formularzy](create-a-form-processing-model.md). Lokacje można wybrać podczas instalacji lub po instalacji w ustawieniach zarządzania.
 
-### <a name="file-limitations"></a>Ograniczenia dotyczące plików
+## <a name="file-limitations"></a>Ograniczenia dotyczące plików
 
 W przypadku korzystania z modeli przetwarzania formularzy należy pamiętać [o wymaganiach i ograniczeniach dotyczących użycia plików](/ai-builder/form-processing-model-requirements).
 
-### <a name="supported-languages"></a>Obsługiwane języki
+## <a name="supported-languages"></a>Obsługiwane języki
 
 Przetwarzanie formularzy obsługuje dokumenty w ponad 73 językach. Aby uzyskać listę języków, zobacz [Obsługa języka przetwarzania formularzy](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support).
 
-### <a name="multi-geo-environments"></a>Środowiska z wieloma lokalizacjami geograficznymi
+## <a name="multi-geo-environments"></a>Środowiska z wieloma lokalizacjami geograficznymi
 
 Podczas konfigurowania SharePoint Syntex w [środowisku Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md) można skonfigurować go tylko do używania przetwarzania formularzy w centralnej lokalizacji. Jeśli chcesz używać przetwarzania formularzy w lokalizacji satelitarnej, skontaktuj się z pomocą techniczną firmy Microsoft.
+
+## <a name="custom-environments"></a>Środowiska niestandardowe
+
+Jeśli używasz środowiska niestandardowego (zamiast środowiska domyślnego) do przetwarzania w usłudze Power Platform, istnieją dodatkowe wymagania dotyczące konfiguracji. Aby uzyskać więcej informacji, zobacz [Custom Power Platform environments (Niestandardowe środowiska platformy Power Platform](set-up-content-understanding.md#requirements)).
+
 
 ## <a name="see-also"></a>Zobacz też
   
 [dokumentacja Power Automate](/power-automate/)
 
-[Tworzenie modelu przetwarzania formularzy](create-a-form-processing-model.md)
+[Utwórz model przetwarzania formularzy](create-a-form-processing-model.md)
 
 [Omówienie opisu dokumentu](document-understanding-overview.md)
 
