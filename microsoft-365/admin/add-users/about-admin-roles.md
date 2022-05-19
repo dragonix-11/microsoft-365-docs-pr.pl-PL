@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: Role administratora, takie jak administrator usługi, są powiązane z funkcjami biznesowymi i zapewniają uprawnienia do wykonywania określonych zadań w centrum administracyjnym.
-ms.openlocfilehash: 01659905becdbd599c9d597e4a7dac3533d1eeb9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Dowiedz się więcej o rolach administratora, takich jak rola administratora usługi, które są powiązane z określonymi funkcjami biznesowymi i zapewniają uprawnienia do wykonywania określonych zadań w centrum administracyjnym.
+ms.openlocfilehash: e56399e5e3e83146df9d1bdad09cf7a6c216c8de
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435330"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467125"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Informacje dotyczące ról administratora w centrum administracyjnym platformy Microsoft 365
 
