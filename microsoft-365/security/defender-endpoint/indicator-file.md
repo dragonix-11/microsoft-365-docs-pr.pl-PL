@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1d32c546fc270e044d391dd35f325afc98fe5a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: da9e030d929f65c7ea5bd83010d2b7f49b1d90d9
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101452"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535597"
 ---
 # <a name="create-indicators-for-files"></a>Utwórz wskaźniki dla plików
 
@@ -28,12 +28,13 @@ ms.locfileid: "65101452"
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Microsoft Defender dla Firm](../defender-business/mdb-overview.md)
 
 > [!TIP]
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Zapobiegaj dalszej propagacji ataku w organizacji, zakazując potencjalnie złośliwych plików lub podejrzewanego złośliwego oprogramowania. Jeśli znasz potencjalnie złośliwy przenośny plik wykonywalny (PE), możesz go zablokować. Ta operacja uniemożliwi jej odczytywanie, zapisywanie lub wykonywanie na urządzeniach w organizacji.
 
@@ -54,11 +55,14 @@ Przed utworzeniem wskaźników dla plików ważne jest zrozumienie następujący
 - Obsługiwane na urządzeniach z Windows 10 w wersji 1703 lub nowszej, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 i Windows Server 2022.
     
    > [!NOTE]
-   > Windows Server 2016 i Windows Server 2012 R2 należy dołączyć, korzystając z instrukcji zawartych w temacie [Dołączanie serwerów Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016), aby ta funkcja działała. Niestandardowe wskaźniki plików z akcjami Zezwalaj, Blokuj i Koryguj są teraz również dostępne w [publicznej wersji zapoznawczej w celu zwiększenia możliwości aparatu ochrony przed złośliwym kodem dla systemów macOS i Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+   > Windows Server 2016 i Windows Server 2012 R2 należy dołączyć, korzystając z instrukcji zawartych w temacie [Dołączanie serwerów Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016), aby ta funkcja działała. Niestandardowe wskaźniki plików z akcjami Zezwalaj, Blokuj i Koryguj są teraz również dostępne w [publicznej wersji zapoznawczej dla rozszerzonych możliwości aparatu ochrony przed złośliwym kodem dla macOS i Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - Aby rozpocząć blokowanie plików, należy najpierw [włączyć funkcję "blokuj lub zezwalaj"](advanced-features.md) w Ustawienia.
 
 Ta funkcja ma na celu zapobieganie pobieraniu z Sieci Web podejrzanego złośliwego oprogramowania (lub potencjalnie złośliwych plików). Obecnie obsługuje przenośne pliki wykonywalne (PE), w tym pliki .exe i .dll. Pokrycie zostanie przedłużone w czasie.
+
+> [!IMPORTANT]
+> W usłudze Defender for Endpoint Plan 1 i Defender for Business możesz utworzyć wskaźnik blokujący lub zezwalany na plik. W usłudze Defender dla firm wskaźnik jest stosowany w całym środowisku i nie może być ograniczony do konkretnych urządzeń.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Tworzenie wskaźnika dla plików na stronie ustawień
 
@@ -71,7 +75,7 @@ Ta funkcja ma na celu zapobieganie pobieraniu z Sieci Web podejrzanego złośliw
 4. Określ następujące szczegóły:
     - Wskaźnik — określ szczegóły jednostki i zdefiniuj wygaśnięcie wskaźnika.
     - Akcja — określ akcję do wykonania i podaj opis.
-    - Zakres — zdefiniuj zakres grupy urządzeń.
+    - Zakres — zdefiniuj zakres grupy urządzeń (określanie zakresu nie jest dostępne w [usłudze Defender dla firm](../defender-business/mdb-overview.md)).
 
 5. Przejrzyj szczegóły na karcie Podsumowanie, a następnie wybierz pozycję **Zapisz**.
 

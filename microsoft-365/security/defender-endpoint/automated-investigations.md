@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,21 +18,21 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: eadf9fe7f6112d1219f085662686b2a930b3ff28
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: cfc3ebb1a32487bf2b32074059091c0d4d3517ec
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789805"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535785"
 ---
 # <a name="overview-of-automated-investigations"></a>Omówienie zautomatyzowanych badań
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Program antywirusowy Microsoft Defender
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Microsoft Defender dla Firm](../defender-business/mdb-overview.md)
 
 **Platformy**
 - System Windows
@@ -47,21 +46,16 @@ Technologia zautomatyzowanego badania wykorzystuje różne algorytmy inspekcji i
 Ten artykuł zawiera omówienie funkcji AIR i zawiera linki do następnych kroków i dodatkowych zasobów.
 
 > [!TIP]
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automated-investigations-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 ## <a name="how-the-automated-investigation-starts"></a>Jak rozpoczyna się zautomatyzowane badanie
 
 Zautomatyzowane badanie może rozpocząć się po wyzwoleniu alertu lub zainicjowaniu badania przez operatora zabezpieczeń.
 
-<br>
-
-****
-
 |Sytuacji|Efekt|
 |---|---|
 |Wyzwalany jest alert|Ogólnie rzecz biorąc, automatyczne badanie rozpoczyna się po wyzwoleniu [alertu](review-alerts.md) i utworzeniu [zdarzenia](view-incidents-queue.md) . Załóżmy na przykład, że na urządzeniu znajduje się złośliwy plik. Po wykryciu tego pliku zostanie wyzwolony alert i zostanie utworzone zdarzenie. Na urządzeniu rozpoczyna się zautomatyzowany proces badania. Ponieważ inne alerty są generowane z powodu tego samego pliku na innych urządzeniach, są one dodawane do skojarzonego zdarzenia i do zautomatyzowanego badania.|
 |Badanie jest uruchamiane ręcznie|Zautomatyzowane badanie może zostać uruchomione ręcznie przez zespół ds. operacji zabezpieczeń. Załóżmy na przykład, że operator zabezpieczeń przegląda listę urządzeń i zauważa, że urządzenie ma wysoki poziom ryzyka. Operator zabezpieczeń może wybrać urządzenie na liście, aby otworzyć wysuwane urządzenie, a następnie wybrać pozycję **Inicjuj zautomatyzowane badanie**.|
-|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>Jak zautomatyzowane badanie rozszerza jego zakres
 
@@ -84,11 +78,11 @@ W zależności od [poziomu automatyzacji ustawionego](automation-levels.md) dla 
 Wszystkie akcje korygowania, oczekujące lub ukończone, są śledzone w [centrum akcji](auto-investigation-action-center.md). W razie potrzeby zespół ds. operacji zabezpieczeń może cofnąć akcję korygowania. Aby dowiedzieć się więcej, zobacz [Przeglądanie i zatwierdzanie akcji korygowania po zautomatyzowanym badaniu](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Zapoznaj się z nową, ujednoliconą stroną badania w portalu Microsoft 365 Defender. Aby dowiedzieć się więcej, zobacz [(NOWY!) Ujednolicona strona badania](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Zapoznaj się z nową, ujednoliconą stroną badania w portalu Microsoft 365 Defender. Aby dowiedzieć się więcej, zobacz [Stronę ujednoliconego badania](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## <a name="requirements-for-air"></a>Wymagania dotyczące air
 
-Twoja organizacja musi mieć usługę Defender for Endpoint (zobacz [Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender](minimum-requirements.md)).
+Twoja subskrypcja musi obejmować [usługę Defender for Endpoint](microsoft-defender-endpoint.md) lub [Defender dla Firm](../defender-business/mdb-overview.md).
 
 > [!NOTE]
 > Zautomatyzowane badanie i reagowanie wymaga Program antywirusowy Microsoft Defender do uruchamiania w trybie pasywnym lub aktywnym. Jeśli Program antywirusowy Microsoft Defender zostanie wyłączona lub odinstalowana, automatyczne badanie i odpowiedź nie będą działać poprawnie.

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 218ffa6ba9b2e7a4eb5fcd2f042b77b207ab8594
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 08abc5c53c54c5a4e4100cc88adf0fb25af5c23b
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468047"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535365"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Omówienie zarządzania urządzeniami za pomocą Intune
 
@@ -40,7 +40,8 @@ Z drugiej strony, jeśli środowisko zawiera plany współzarządzania, w tym Mi
 Obejrzyj to wideo, aby zapoznać się z omówieniem procesu wdrażania.
 <br>
 <br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y4fC]
+
 
 ## <a name="why-manage-endpoints"></a>Dlaczego warto zarządzać punktami końcowymi?
 
@@ -117,14 +118,6 @@ Należy pamiętać, że tylko Intune zarządza urządzeniami. Dołączanie odnos
 |Inne metody     |   Inne metody rejestracji zależą od platformy urządzenia i od tego, czy jest to model BYOD, czy też jest zarządzany przez organizację.      | Inne metody dołączania urządzeń obejmują, w zalecanej kolejności:<br><li>Menedżer konfiguracji<li>Inne narzędzie do zarządzania urządzeniami przenośnymi (jeśli urządzenie jest zarządzane przez jedno)<li>Skrypt lokalny<li>Pakiet konfiguracji interfejsu VDI do dołączania nietrwałych urządzeń infrastruktury pulpitu wirtualnego (VDI)<li>Zasady grupy|
 | | |     |
 
-Należy pamiętać, że tylko Intune zarządza urządzeniami. Dołączanie odnosi się do możliwości udostępniania informacji przez urządzenie określonej funkcji usługi. Poniższa tabela zawiera podsumowanie różnic między rejestrowaniem urządzeń do zarządzania i dołączaniem urządzeń w celu określonej możliwości.
-
-|&nbsp;|Zarejestrować|Onboard|
-|---|---|---|
-|Opis|Rejestracja dotyczy zarządzania urządzeniami. Urządzenia są rejestrowane do zarządzania za pomocą Intune lub Configuration Manager.|Dołączanie konfiguruje urządzenie do pracy z określonym zestawem możliwości w Microsoft 365. Obecnie dołączanie ma zastosowanie do Ochrona punktu końcowego w usłudze Microsoft Defender i możliwości zgodności firmy Microsoft. <br/><br/> Na urządzeniach Windows dołączanie obejmuje przełączanie ustawienia w Windows Defender, które umożliwia usłudze Defender nawiązywanie połączenia z usługą online i akceptowanie zasad, które mają zastosowanie do urządzenia.|
-|Zakres|Te narzędzia do zarządzania urządzeniami zarządzają całym urządzeniem, w tym konfigurują urządzenie tak, aby spełniało określone cele, takie jak zabezpieczenia.|Dołączanie ma wpływ tylko na zastosowane możliwości.|
-|Zalecana metoda|Azure Active Directory dołączanie automatycznie rejestruje urządzenia w Intune.|Intune jest preferowaną metodą dołączania urządzeń do Windows Defender dla punktu końcowego, a w konsekwencji Microsoft Purview możliwości. <br/><br/> Należy pamiętać, że urządzenia dołączone do Microsoft Purview możliwości przy użyciu innych metod nie są automatycznie rejestrowane w usłudze Defender for Endpoint.|
-|Inne metody|Inne metody rejestracji zależą od platformy urządzenia i od tego, czy jest to model BYOD, czy też jest zarządzany przez organizację.|Inne metody dołączania urządzeń obejmują, w zalecanej kolejności: <ul><li>Menedżer konfiguracji</li><li>Inne narzędzie do zarządzania urządzeniami przenośnymi (jeśli urządzenie jest zarządzane przez jedno)</li><li>Skrypt lokalny</li><li>Pakiet konfiguracji interfejsu VDI do dołączania nietrwałych urządzeń infrastruktury pulpitu wirtualnego (VDI)</li><li>Zasady grupy</li></ul>|
 
 ## <a name="learning-for-administrators"></a>Edukacja dla administratorów
 

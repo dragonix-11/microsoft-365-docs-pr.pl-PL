@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caee6f216ad5006eb31750d2c5cbd0d9e47f21ce
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2e86aa7fc8ed304327ab2c07ec487789ad966fc7
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438932"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535453"
 ---
 # <a name="web-content-filtering"></a>Filtrowanie zawartości sieci Web
 
@@ -28,12 +28,12 @@ ms.locfileid: "65438932"
 
 **Dotyczy:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft Defender dla Firm](../defender-business/mdb-overview.md)
 
 > [!TIP]
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 ## <a name="what-is-web-content-filtering"></a>Co to jest filtrowanie zawartości internetowej?
 
@@ -177,7 +177,7 @@ Aby dodać nowe zasady, wykonaj następujące kroki:
 4. Określ zakres zasad. Wybierz grupy urządzeń, aby określić miejsce zastosowania zasad. Tylko urządzenia w wybranych grupach urządzeń nie będą mogły uzyskiwać dostępu do witryn internetowych w wybranych kategoriach.
 
    > [!IMPORTANT]
-   > Jeśli używasz usługi Defender dla Firm, określanie zakresu nie ma zastosowania. Pomiń ten krok i przejdź do kroku 5.
+   > Jeśli używasz usługi Defender dla Firm, zasady filtrowania zawartości internetowej są domyślnie stosowane do wszystkich użytkowników. Określanie zakresu nie ma zastosowania.
 
 5. Przejrzyj podsumowanie i zapisz zasady. Odświeżanie zasad może potrwać do 2 godzin w przypadku wybranych urządzeń.
 

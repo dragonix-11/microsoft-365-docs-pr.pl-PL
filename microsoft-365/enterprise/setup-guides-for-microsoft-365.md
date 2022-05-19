@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Uzyskaj szczegółowe narzędzia do planowania, migracji i implementowania funkcji w licencjach dzierżawy. Znajdź przewodnik konfigurowania usługi lub aplikacji, którą musisz uruchomić.
-ms.openlocfilehash: 61eccec443a939591e563daa5135239bf0e23a74
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 5ffb0652b145bba6ae4e834815c5cb51b7ad2b94
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188729"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535929"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Przewodniki konfiguracji dla usług Microsoft 365 i Office 365
 
@@ -181,13 +181,13 @@ Rozwiązania w tym przewodniku pomogą Ci uzyskać wgląd w działania użytkown
 * Dzięki rozwiązaniu do zapewniania zgodności z komunikacją można identyfikować zagrożenia komunikacyjne i działać na ich podstawie w przypadku takich elementów jak przemoc w miejscu pracy, wykorzystywanie informacji poufnych, nękanie, kodeks postępowania i naruszenia zgodności z przepisami.
 * Rozwiązanie do zarządzania ryzykiem wewnętrznym pomaga identyfikować, badać i podejmować działania dotyczące ryzyka kradzieży własności intelektualnej, wycieków poufnych danych, naruszeń zabezpieczeń, wycieków danych i naruszeń poufności.
 
-### <a name="microsoft-purview-information-protection-setup-guide"></a>Przewodnik konfiguracji Information Protection usługi Microsoft Purview
+### <a name="microsoft-purview-information-protection-setup-guide"></a>przewodnik konfiguracji Microsoft Purview Information Protection
 
-Zapoznaj się z omówieniem możliwości, które można zastosować do strategii ochrony informacji, aby mieć pewność, że informacje poufne są chronione. Użyj 4-etapowego podejścia do cyklu życia, w którym będzie można odkrywać, klasyfikować, chronić i monitorować informacje poufne. [Przewodnik konfiguracji usługi Microsoft Purview Information Protection](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) zawiera wskazówki dotyczące ukończenia każdego z tych etapów.
+Zapoznaj się z omówieniem możliwości, które można zastosować do strategii ochrony informacji, aby mieć pewność, że informacje poufne są chronione. Użyj 4-etapowego podejścia do cyklu życia, w którym będzie można odkrywać, klasyfikować, chronić i monitorować informacje poufne. [Przewodnik konfiguracji Microsoft Purview Information Protection](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) zawiera wskazówki dotyczące ukończenia każdego z tych etapów.
 
-### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Przewodnik konfiguracji zarządzania cyklem życia danych usługi Microsoft Purview
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>przewodnik konfiguracji zarządzanie cyklem życia danych Microsoft Purview
 
-[Przewodnik konfiguracji zarządzania cyklem życia danych usługi Microsoft Purview](https://aka.ms/migsetupguide) zawiera informacje potrzebne do skonfigurowania strategii ładu organizacji i zarządzania nią w celu zapewnienia, że dane są klasyfikowane i zarządzane zgodnie z określonymi wytycznymi dotyczącymi cyklu życia. W tym przewodniku dowiesz się, jak tworzyć, automatycznie stosować lub publikować etykiety przechowywania, zasady etykiet przechowywania i zasady przechowywania, które są stosowane do rekordów zawartości i zgodności organizacji. Uzyskasz również informacje na temat importowania plików CSV z planem plików dla scenariuszy zbiorczych lub ich ręcznego stosowania do poszczególnych dokumentów.
+[Przewodnik konfiguracji zarządzanie cyklem życia danych Microsoft Purview](https://aka.ms/migsetupguide) zawiera informacje potrzebne do skonfigurowania strategii ładu organizacji i zarządzania nimi, aby upewnić się, że dane są klasyfikowane i zarządzane zgodnie z określonymi wytycznymi dotyczącymi cyklu życia. W tym przewodniku dowiesz się, jak tworzyć, automatycznie stosować lub publikować etykiety przechowywania, zasady etykiet przechowywania i zasady przechowywania, które są stosowane do rekordów zawartości i zgodności organizacji. Uzyskasz również informacje na temat importowania plików CSV z planem plików dla scenariuszy zbiorczych lub ich ręcznego stosowania do poszczególnych dokumentów.
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>przewodnik konfiguracji Microsoft Defender for Cloud Apps
 
@@ -205,11 +205,15 @@ Przekształć sposób współpracy pracowników z [pulpitem nawigacyjnym Środow
 
 ### <a name="mobile-apps-setup-guide"></a>Przewodnik konfiguracji aplikacji mobilnych
 
-[Przewodnik konfiguracji aplikacji mobilnych](https://aka.ms/officeappguidance) zawiera instrukcje dotyczące pobierania i instalowania aplikacji Office na urządzeniach przenośnych z Windows, iOS i Android. Ten przewodnik zawiera szczegółowe informacje dotyczące pobierania i instalowania aplikacji Microsoft 365 i Office 365 na telefonie i tablecie.
+[Przewodnik konfiguracji aplikacji mobilnych](https://aka.ms/officeappguidance) zawiera instrukcje dotyczące pobierania i instalowania aplikacji Office na urządzeniach przenośnych Windows, iOS i Android. Ten przewodnik zawiera szczegółowe informacje dotyczące pobierania i instalowania aplikacji Microsoft 365 i Office 365 na telefonie i tablecie.
 
 ### <a name="microsoft-teams-setup-guide"></a>przewodnik konfiguracji Microsoft Teams
 
 [Przewodnik konfiguracji Microsoft Teams](https://aka.ms/teamsguidance) zapewnia organizacji wskazówki dotyczące konfigurowania obszarów roboczych zespołu, które hostują konwersacje w czasie rzeczywistym za pośrednictwem wiadomości, połączeń oraz spotkań audio lub wideo dla komunikacji zespołowej i prywatnej. Użyj narzędzi w tym przewodniku, aby skonfigurować dostęp gościa, ustawić, kto może tworzyć zespoły i dodawać członków zespołu z pliku .csv, a wszystko to bez konieczności otwierania sesji programu PowerShell. Otrzymasz również najlepsze rozwiązania dotyczące określania wymagań sieciowych organizacji i zapewniania pomyślnego wdrożenia Teams.
+
+### <a name="teams-phone-setup-guide"></a>przewodnik konfiguracji Teams Telefon
+
+[Przewodnik konfiguracji Teams Telefon](https://aka.ms/teamsphonesetupguide) pomaga pozostać w kontakcie z używaniem nowoczesnych rozwiązań wywołujących. Zastosuj kluczowe możliwości za pomocą opartego na chmurze systemu kontroli połączeń, który obsługuje obciążenie telefonii dla Teams. Możesz wybrać i wdrożyć funkcje z dostępnych opcji łączności publicznej przełączanej sieci telefonicznej (PSTN). Możesz również znaleźć pomoc dotyczącą innych funkcji, takich jak automatyczna asystentka, kolejki połączeń, Konferencje głosowe, identyfikator wywołujący i wydarzenia na żywo.
 
 ### <a name="sharepoint-setup-guide"></a>przewodnik konfiguracji SharePoint
 

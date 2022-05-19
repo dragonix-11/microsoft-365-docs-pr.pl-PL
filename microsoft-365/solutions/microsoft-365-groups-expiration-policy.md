@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Dowiedz się więcej o zasadach wygasania grup Microsoft 365.
-ms.openlocfilehash: 9287d61b95d635eccbbef64d307c0aa0e3d12357
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 431d2ae027e92c83d645a4b27ab515d17326c1b7
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738564"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535807"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>zasady wygasania grupy Microsoft 365
 
@@ -40,8 +40,6 @@ Grupy, które są aktywnie używane, są odnawiane automatycznie. Dowolna z nast
 - Teams — odwiedź kanał zespołu.
 - Yammer — wyświetl wpis w społeczności Yammer lub interaktywną wiadomość e-mail w Outlook.
 - Formularze — wyświetlanie, tworzenie lub edytowanie formularzy albo przesyłanie odpowiedzi do formularza. 
-
-Należy pamiętać, że jedynym działaniem Yammer, które spowoduje automatyczne odnawianie grupy, jest przekazanie dokumentu do SharePoint w społeczności.
 
 > [!IMPORTANT]
 > Po zmianie zasad wygasania usługa ponownie oblicza datę wygaśnięcia dla każdej grupy. Zawsze rozpoczyna się liczenie od daty utworzenia grupy, a następnie stosuje nowe zasady wygasania.

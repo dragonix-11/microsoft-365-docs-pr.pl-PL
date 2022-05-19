@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak utworzyć wyodrębniacz w usłudze Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7d9e04b26e04a3145f5008121bfde162387a9f6b
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 5be59cc7b99d64ceceb08bc400eeb0c44e3de1a8
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882533"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535487"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Tworzenie ekstraktora w usłudze Microsoft SharePoint Syntex
 
@@ -75,13 +75,13 @@ Funkcja Znajdź jest przydatna w przypadku wyszukiwania dużego dokumentu lub wi
 
 ## <a name="add-an-explanation"></a>Dodawanie objaśnienia
 
-W naszym przykładzie utworzymy wyjaśnienie, które zawiera wskazówkę dotyczącą samego formatu jednostki i jego odmian w przykładowych dokumentach. Na przykład wartość daty może mieć różne formaty, takie jak:
+W naszym przykładzie utworzymy wyjaśnienie, które zawiera wskazówkę dotyczącą samego formatu jednostki i jego odmian w przykładowych dokumentach. Na przykład wartość daty może być w kilku różnych formatach, takich jak:
 
 - 10/14/2019
 - 14 października 2019 r.
 - Poniedziałek, 14 października 2019 r.
 
-Aby ułatwić identyfikację *daty rozpoczęcia usługi* , możesz utworzyć wyjaśnienie wzorca.
+Aby ułatwić identyfikację *daty rozpoczęcia usługi*, możesz utworzyć wyjaśnienie wzorca.
 
 1. W sekcji Wyjaśnienie wybierz pozycję **Nowy** i wpisz nazwę (na przykład *Data*).
 2. W polu Typ wybierz pozycję **Lista wzorców**.
@@ -140,15 +140,15 @@ Jeśli ponownie pojawi się **niezgodność** plików z etykietami, prawdopodobn
 
 ## <a name="test-your-model"></a>Testowanie modelu
 
-Jeśli otrzymasz dopasowanie do oznaczonych plików przykładowych, możesz teraz przetestować model na pozostałych nieoznaczonych plikach przykładowych. Jest to opcjonalne, ale przydatny krok do oceny "kondycji" lub gotowości modelu przed jego użyciem przez przetestowanie go na plikach, których model nie widział wcześniej.
+Jeśli otrzymasz dopasowanie do oznaczonych plików przykładowych, możesz teraz przetestować model na pozostałych nieoznaczonych plikach przykładowych. Ten krok jest opcjonalny, ale przydatny do oceny "kondycji" lub gotowości modelu przed jego użyciem, testując go na plikach, których model nie widział wcześniej.
 
-1. Na stronie głównej modelu wybierz kartę **Test** .  Spowoduje to uruchamianie modelu w nieoznakowanych plikach przykładowych.
+1. Na stronie głównej modelu wybierz kartę **Test** .  Spowoduje to uruchomienie modelu w nieoznakowanych plikach przykładowych.
 
 2. Na liście **Pliki testowe** wyświetlane są przykładowe pliki, aby pokazać, czy model może wyodrębnić potrzebne informacje. Te informacje ułatwiają określenie skuteczności klasyfikatora w identyfikowaniu dokumentów.
 
     ![Przetestuj pliki.](../media/content-understanding/test-filies-extractor.png)
 
-### <a name="further-refine-an-extractor"></a>Dalsze uściślanie ekstraktora
+## <a name="further-refine-an-extractor"></a>Dalsze uściślanie ekstraktora
 
 Jeśli masz zduplikowane jednostki i chcesz wyodrębnić tylko jedną wartość lub określoną liczbę wartości, możesz ustawić regułę określającą sposób jej przetwarzania. Aby dodać regułę w celu uściślenia wyodrębnionych informacji, wykonaj następujące kroki:
 
@@ -178,11 +178,11 @@ Jeśli masz zduplikowane jednostki i chcesz wyodrębnić tylko jedną wartość 
 
 ## <a name="see-also"></a>Zobacz też
 
-[Tworzenie klasyfikatora](create-a-classifier.md)
+[Utwórz klasyfikator](create-a-classifier.md)
 
 [Typy wyjaśnień](explanation-types-overview.md)
 
-[Korzystanie z taksonomii magazynu terminów podczas tworzenia ekstraktora](leverage-term-store-taxonomy.md)
+[Wykorzystanie taksonomii magazynu terminów podczas tworzenia ekstraktora](leverage-term-store-taxonomy.md)
 
 [Omówienie usługi Document Understanding](document-understanding-overview.md)
 

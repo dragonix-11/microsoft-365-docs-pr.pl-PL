@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dcc04b1c06e5ca2900cca9f0a66fe5b041af734e
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 476807a03954475470a976113a2faa926862c008
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417177"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535951"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender
 
@@ -1180,7 +1180,9 @@ Każdy wyeksportowany plik .csv jest ograniczony do 150 000 wierszy. Jeśli dane
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Ochrona przed spamem i złośliwym oprogramowaniem w ramach EOP](anti-spam-and-anti-malware-protection.md)
+[Ochrona przed spamem w ramach EOP](anti-spam-protection.md)
+
+[Ochrona przed złośliwym oprogramowaniem w ramach EOP](anti-malware-protection.md)
 
 [Inteligentne raporty i szczegółowe informacje w portalu Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
 
