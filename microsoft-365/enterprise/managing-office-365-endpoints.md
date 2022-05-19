@@ -3,6 +3,7 @@ title: Zarządzanie punktami końcowymi usługi Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 05/18/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +19,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Dowiedz się, jak zarządzać punktami końcowymi Office 365, aby działały z architekturą sieci organizacji przedsiębiorstwa.
-ms.openlocfilehash: 6743ab1c3241b84b0eb1dd3e9f5e67e100e18b40
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 68b778ac695c0b37b55dfe84414f72551d10ce68
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090346"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587473"
 ---
 # <a name="managing-office-365-endpoints"></a>Zarządzanie punktami końcowymi usługi Office 365
 
@@ -47,6 +48,9 @@ Firma Microsoft współpracuje z dostawcami usług SD-WAN w celu włączenia zau
 Użyj plików PAC lub WPAD, aby zarządzać żądaniami sieciowymi skojarzonymi z Office 365 ale nie mają adresu IP. Typowe żądania sieciowe wysyłane za pośrednictwem serwera proxy lub urządzenia obwodowego zwiększają opóźnienie. Podczas gdy funkcja SSL Break and Inspect tworzy największe opóźnienie, inne usługi, takie jak uwierzytelnianie serwera proxy i wyszukiwanie reputacji, mogą powodować niską wydajność i złe środowisko użytkownika. Ponadto te urządzenia sieci obwodowej potrzebują wystarczającej pojemności, aby przetworzyć wszystkie żądania połączenia sieciowego. Zalecamy pomijanie serwera proxy lub urządzeń inspekcji w przypadku żądań sieciowych Office 365 bezpośrednich.
   
 [Galeria programu PowerShell Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) to skrypt programu PowerShell, który odczytuje najnowsze punkty końcowe sieci z usługi sieci Web Office 365 adresów IP i adresów URL oraz tworzy przykładowy plik PAC. Skrypt można zmodyfikować tak, aby był integrowany z istniejącym zarządzaniem plikami PAC.
+
+> [!NOTE]
+> Aby uzyskać więcej informacji na temat zagadnień dotyczących zabezpieczeń i wydajności bezpośredniej łączności z punktami końcowymi Office 365, zobacz [Office 365 Zasady łączności sieciowej](microsoft-365-network-connectivity-principles.md).
 
 ![Nawiązywanie połączenia z Office 365 za pośrednictwem zapór i serwerów proxy.](../media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
@@ -198,7 +202,7 @@ Pakiet Office 365 jest podzielony na główne obszary usług. Można je selektyw
 |**Exchange** <br/> |Exchange Online i Exchange Online Protection <br/> |
 |**SharePoint** <br/> |Usługi SharePoint Online i OneDrive dla Firm <br/> |
 |**Skype dla firm Online i Microsoft Teams** <br/> |Skype dla firm i Microsoft Teams <br/> |
-|**Wspólne** <br/> |Office 365 Pro Plus, Office w przeglądarce, usłudze Azure AD i innych typowych punktach końcowych sieci <br/> |
+|**Wspólne** <br/> |Office 365 Pro Plus, Office w przeglądarce, Azure AD i innych typowych punktach końcowych sieci <br/> |
 
 Oprócz podstawowych usług internetowych istnieją usługi innych firm, które są używane tylko do integracji funkcji. Chociaż są one potrzebne do integracji, są one oznaczone jako opcjonalne w artykule Office 365 punktów końcowych, co oznacza, że podstawowe funkcje usługi będą nadal działać, jeśli punkt końcowy nie jest dostępny. Każdy wymagany punkt końcowy sieci będzie mieć wymagany atrybut ustawiony na wartość true. Każdy opcjonalny punkt końcowy sieci będzie miał wymagany atrybut ustawiony na wartość false, a atrybut notesu szczegółowo określi brakujące funkcje, których należy oczekiwać, jeśli łączność zostanie zablokowana.
   

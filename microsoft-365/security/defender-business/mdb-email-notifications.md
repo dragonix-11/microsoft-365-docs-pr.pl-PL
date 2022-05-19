@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6381f5bfa8ebe4f7c23a16d9a214cadb4e511e6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 7dc6c65221211367e080fac46506f209d17f88ff
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174496"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587451"
 ---
 # <a name="set-up-email-notifications"></a>Konfigurowanie powiadomień e-mail
 
@@ -67,6 +67,9 @@ Aby wyświetlić lub edytować ustawienia powiadomień e-mail dla firmy, wykonaj
    - Jeśli nie widzisz żadnych elementów wymienionych na karcie **Luki w zabezpieczeniach** , możesz utworzyć regułę powiadamiania użytkowników za każdym razem, gdy zostanie wykryte nowe luki w zabezpieczeniach. Aby uzyskać pomoc dotyczącą tego zadania, zobacz [Tworzenie reguł dla zdarzeń luk w zabezpieczeniach](../defender-endpoint/configure-vulnerability-email-notifications.md).
 
    - Jeśli masz utworzone reguły, wybierz regułę, aby ją edytować. Można również usunąć regułę. 
+
+> [!IMPORTANT]
+> Podczas konfigurowania powiadomień e-mail w usłudze Defender dla Firm należy przypisać reguły powiadomień do określonych użytkowników. Usługa Defender dla firm nie korzysta z [kontroli dostępu opartej na rolach, tak jak w przypadku usługi Defender for Endpoint](../defender-endpoint/rbac.md). Ponadto powiadomienia e-mail nie mogą być stosowane do grup urządzeń w usłudze Defender dla Firm. 
 
 ## <a name="next-steps"></a>Następne kroki
 

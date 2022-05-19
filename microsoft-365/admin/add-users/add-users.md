@@ -1,5 +1,5 @@
 ---
-title: Dodawanie użytkowników i przypisywanie licencji
+title: Dodawanie użytkowników i przypisywanie licencji na platformie Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ ms.custom:
 - business_assist
 search.appverid:
 - MET150
-description: Każdy członek zespołu potrzebuje konta użytkownika, aby zalogować się i uzyskać dostęp do platformy Microsoft 365 dla firm. Dowiedz się, jak dodawać użytkowników i przypisywać licencje.
+description: Dowiedz się, jak nadać każdemu członkowi zespołu konto użytkownika, aby mógł mieć licencje platformy Microsoft 365, poświadczenia logowania i skrzynki e-mail na platformie Microsoft 365.
 ms.date: 07/01/2020
-ms.openlocfilehash: 90ef6506d10c0f4c106dd18816ccd2f11803a079
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8ebc4b99840f9987d115539d0039efa1950499d3
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011305"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466817"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Dodawanie użytkowników i jednoczesne przypisywanie licencji
 
@@ -39,7 +39,7 @@ Aby osoby z Twojego zespołu mogły zalogować się i uzyskać dostęp do platfo
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Aby dodawać użytkowników i przypisywać licencje, musisz być administratorem globalnym, administratorem licencji lub użytkowników. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
+Aby dodawać użytkowników i przypisywać licencje, musisz być administratorem globalnym, administratorem licencji lub użytkowników. W celu uzyskania więcej informacji zobacz [Informacje o rolach administratora](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="watch-add-users-in-the-dashboard-view"></a>Obejrzyj: Dodawanie użytkowników w widoku pulpitu nawigacyjnego
 

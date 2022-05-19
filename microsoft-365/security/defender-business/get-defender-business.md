@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 6ac255fecaad4fd442116d4abb951be71d3ce6c7
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e47fc4630e83cb79a591f1c4fd4fc7421746a15e
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173137"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587397"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Uzyskiwanie Microsoft Defender dla Firm
 
@@ -46,7 +46,7 @@ Jeśli masz konto w wersji próbnej, po otrzymaniu wiadomości e-mail z akceptac
 3. Przejdź do pozycji [Dodawanie użytkowników i przypisywanie licencji](mdb-add-users.md).
 
 > [!TIP]
-> Upewnij się, że jest wyświetlany [podręcznik wersji próbnej: Microsoft Defender dla Firm](trial-playbook-defender-business.md).
+> Zobacz [podręcznik Wersja próbna dla usługi Defender dla Firm](trial-playbook-defender-business.md).
 
 ## <a name="get-microsoft-365-business-premium"></a>Uzyskiwanie usługi Microsoft 365 Business Premium
 
@@ -84,8 +84,8 @@ Gdy otrzymasz wiadomość e-mail z akceptacją, oto jak aktywować subskrypcję 
 
    | Scenariusz | Procedura |
    |:---|:---|
-   | Konfigurujesz subskrypcję Microsoft 365 po raz pierwszy. | Wybierz pozycję **Przejdź do konfiguracji z przewodnikiem** i wykonaj następujące kroki:<br/><br/>1. Zainstaluj teraz aplikacje Office lub wybierz pozycję **Kontynuuj**, aby pominąć ten krok. (Aplikacje Office można zainstalować później).<br/><br/>2. Jeśli twoja firma ma domenę, możesz ją teraz dodać (ta opcja jest zalecana). Alternatywnie możesz na razie użyć domeny domyślnej `.onmicrosoft.com` .<br/><br/>3. Dodawanie użytkowników i przypisywanie licencji. Każdemu użytkownikowi, który wyświetlisz listę, zostanie automatycznie przypisana licencja. Zobacz [Dodawanie użytkowników i przypisywanie licencji w tym samym czasie](mdb-add-users.md). |
-   | Dodajesz wersję próbną do istniejącej dzierżawy Microsoft 365. | 1. Przejdź do Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) i zaloguj się.<br/><br/>2. W okienku nawigacji wybierz pozycję **UżytkownicyAktywni** >  użytkownicy. Przejrzyj listę użytkowników. <br/><br/>3. Aby przypisać licencje, postępuj zgodnie ze wskazówkami w [temacie Przypisywanie licencji użytkownikom](../../admin/manage/assign-licenses-to-users.md). |
+   | Konfigurujesz subskrypcję Microsoft 365 po raz pierwszy. | Wybierz pozycję **Przejdź do konfiguracji z przewodnikiem** i wykonaj następujące kroki:<ol><li>Zainstaluj teraz aplikacje Office lub wybierz pozycję **Kontynuuj**, aby pominąć ten krok. (Aplikacje Office można zainstalować później).</li><li>Jeśli Twoja firma ma domenę, możesz ją teraz dodać (ta opcja jest zalecana). Alternatywnie możesz na razie użyć domeny domyślnej `.onmicrosoft.com` .</li><li>Dodawanie użytkowników i przypisywanie licencji. Każdemu użytkownikowi, który wyświetlisz listę, zostanie automatycznie przypisana licencja. Zobacz [Dodawanie użytkowników i przypisywanie licencji w tym samym czasie](mdb-add-users.md).</li></ol> |
+   | Dodajesz wersję próbną do istniejącej dzierżawy Microsoft 365. | <ol><li>Przejdź do Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) i zaloguj się.</li><li>W okienku nawigacji wybierz pozycję **UżytkownicyAktywni** >  użytkownicy. Przejrzyj listę użytkowników. </li><li>Aby przypisać licencje, postępuj zgodnie ze wskazówkami w [temacie Przypisywanie licencji użytkownikom](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
 ## <a name="two-portals-for-setup"></a>Dwa portale do konfiguracji
 
@@ -93,8 +93,8 @@ Gdy wszystko będzie gotowe do rozpoczęcia pracy, będziesz pracować z dwoma g
 
 |Portal  |Opis  |
 |---------|---------|
-| Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Użyj Centrum administracyjne platformy Microsoft 365, aby aktywować wersję próbną i zalogować się po raz pierwszy.<br/><br/> Użyjesz również Centrum administracyjne platformy Microsoft 365, aby: <br/>— Dodawanie lub usuwanie użytkowników.<br/>— Przypisywanie licencji użytkowników.<br/>— Wyświetlanie produktów i usług.<br/>— Wykonywanie zadań konfiguracji subskrypcji Microsoft 365. <br/><br/> Aby dowiedzieć się więcej, zobacz [Omówienie Centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
-| Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Skonfiguruj i skonfiguruj usługę Defender dla Firm za pomocą portalu Microsoft 365 Defender. <br/><br/>Użyjesz portalu Microsoft 365 Defender, aby: <br/>— Wyświetlanie urządzeń i zasad ochrony urządzeń.<br/>— Wyświetl wykryte zagrożenia i podejmij działania.<br/>— Wyświetlanie zaleceń dotyczących zabezpieczeń i zarządzanie ustawieniami zabezpieczeń.<br/><br/>Aby dowiedzieć się więcej, zobacz [Wprowadzenie przy użyciu portalu Microsoft 365 Defender](mdb-get-started.md).        |
+| Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Użyj Centrum administracyjne platformy Microsoft 365, aby aktywować wersję próbną i zalogować się po raz pierwszy.<p> Użyjesz również Centrum administracyjne platformy Microsoft 365, aby: <ul><li>Dodawanie lub usuwanie użytkowników.</li><li>Przypisywanie licencji użytkowników.</li><li>Wyświetlanie produktów i usług.</li><li>Wykonaj zadania konfiguracji dla subskrypcji Microsoft 365.</li></ul><p>Aby dowiedzieć się więcej, zobacz [Omówienie Centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
+| Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Skonfiguruj i skonfiguruj usługę Defender dla Firm za pomocą portalu Microsoft 365 Defender.<p>Użyjesz portalu Microsoft 365 Defender, aby: <ul><li>Wyświetlanie urządzeń i zasad ochrony urządzeń.</li><li>Wyświetl wykryte zagrożenia i podejmij działania.</li><li>Wyświetlanie zaleceń dotyczących zabezpieczeń i zarządzanie ustawieniami zabezpieczeń.</li></ul><p>Aby dowiedzieć się więcej, zobacz [Wprowadzenie przy użyciu portalu Microsoft 365 Defender](mdb-get-started.md).        |
 
 > [!TIP]
 > Jeśli masz Microsoft 365 Business Premium, masz również Microsoft Intune. Możesz użyć centrum administracyjnego Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) do zarządzania urządzeniami i konfigurowania ustawień zabezpieczeń. Aby dowiedzieć się więcej na temat Intune, zobacz [Microsoft Intune jest dostawcą zarządzania urządzeniami przenośnymi i zarządzaniem aplikacjami mobilnymi dla urządzeń](/mem/intune/fundamentals/what-is-intune).

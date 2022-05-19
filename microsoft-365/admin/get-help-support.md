@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak uzyskać pomoc techniczną online lub telefoniczną dla subskrypcji usługi Microsoft 365 dla firm. Aby uzyskać pomoc techniczną, musisz być administratorem subskrypcji dla firm.
-ms.openlocfilehash: 54c25cd9b6a7fcca46bd434f4e195c088d8d0986
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b0caf57ddc71f028cf913f29fa983ed1d7bcffc2
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63018908"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465893"
 ---
-# <a name="get-support"></a>Uzyskiwanie pomocy technicznej
+# <a name="get-support-for-microsoft-365-for-business"></a>Uzyskiwanie pomocy technicznej dla platformy Microsoft 365 dla firm
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ Zacznij od [sprawdzenia bieżącej kondycji usług](../enterprise/view-service-h
 
 Aby zaoszczędzić czas, możesz utworzyć żądanie usługi w trybie online. Pomożemy Ci znaleźć rozwiązanie lub połączymy Cię z pomocą techniczną.
 
-1. Przejdź do centrum administracyjnego w witrynie <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Jeśli zostanie wyświetlony komunikat z informacjami, że nie masz uprawnień dostępu do tej strony lub wykonywania tej czynności, nie jesteś administratorem. Aby uzyskać więcej informacji, zobacz [Kto ma uprawnienia administratora w mojej firmie?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Przejdź do centrum administracyjnego na stronie <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Jeśli zostanie wyświetlony komunikat z informacjami, że nie masz uprawnień dostępu do tej strony lub wykonywania tej czynności, to znaczy, że nie jesteś administratorem. Aby uzyskać więcej informacji, zobacz [Kto ma uprawnienia administratora w mojej firmie?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. W prawej dolnej części strony wybierz pozycję **Pomoc i obsługa techniczna**.
 3. Wpisz pytanie lub słowo kluczowe w polu tekstowym. Jeśli zostanie wyświetlona lista rozwijana, wybierz najbliższą pytania lub kontynuuj wpisywanie pytania, a następnie naciśnij klawisz **Enter**.
 4. Jeśli wyniki nie pomogą, u dołu wybierz pozycję **Skontaktuj się z pomocą techniczną**.
@@ -82,7 +82,7 @@ Jeśli numeru telefonu do Twojej pomocy technicznej nie jest wymieniony na powy�
 
 Korzystaj w pełni z subskrypcji dzięki poradom od specjalistów ds. małych firm.
 
-Pomoc biznesowa dla platformy Microsoft 365 jest przeznaczona dla małych firm, aby zapewnić Tobie i Twoim pracownikom całodobowy dostęp do specjalistów ds. małych firm, gdy rozwijasz swoją firmę, od momentu dołączenia po codzienne użytkowanie. Aby dowiedzieć się więcej, zobacz [Pomoc biznesowa](../admin/misc/business-assist.md).
+Pomoc dla firm w zakresie platformy Microsoft 365 jest przeznaczona dla małych firm w celu zapewnienia Tobie i Twoim pracownikom całodobowego dostępu do specjalistów do spraw małych firm, gdy rozwijasz firmę, od momentu dołączenia po codzienne użytkowanie. Aby dowiedzieć się więcej, zobacz [Pomoc dla firm](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ Zespół pomocy technicznej dla usługi Office 365 obsługiwanej przez firmę 21
 
 ## <a name="community-and-self-service-support-options"></a>Opcje społeczności i samoobsługowej pomocy technicznej
 
-Samoobsługowa pomoc techniczna jest dostępna dla wszystkich użytkowników usługi Office 365 obsługiwanej przez firmę 21Vianet i obejmuje narzędzia do rozwiązywania problemów oraz klipy wideo, artykuły pomocy i klipy wideo, a także fora i witryny typu wiki w [społeczności usługi Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Aby uzyskać więcej zasobów do samodzielnej pomocy, zobacz [Informacje o usłudze Office 365 obsługiwanej przez firmę 21Vianet](../admin/services-in-china/services-in-china.md).
+Samoobsługowa pomoc techniczna jest dostępna dla wszystkich użytkowników usługi Office 365 obsługiwanej przez firmę 21Vianet i obejmuje narzędzia do rozwiązywania problemów oraz klipy wideo, artykuły pomocy i klipy wideo, a także fora i witryny typu wiki w [społeczności usługi Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Aby uzyskać więcej zasobów samoobsługowych, zobacz [ Dowiedz się więcej o usłudze Office 365 obsługiwanej przez firmę 21Vianet](../admin/services-in-china/services-in-china.md).
 
 ## <a name="pre-sales-support"></a>Wsparcie przedsprzedażowe
 
@@ -169,7 +169,7 @@ Aby zaoszczędzić czas, możesz utworzyć żądanie usługi w trybie online. Pr
 
 ### <a name="call-support"></a>Dzwonienie do pomocy technicznej
 
-Zadzwoń do pomocy technicznej. W przypadku jakichkolwiek problemów z żądaniem online pomoc telefoniczna jest dostępna pod numerem (86) 400-089-0365.
+Dzwonienie do pomocy technicznej. W przypadku jakichkolwiek problemów z żądaniami online pomoc telefoniczna jest dostępna pod numerem (86) 400-089-0365.
 
 ### <a name="shared-support-responsibilities"></a>Wspólne obowiązki w zakresie pomocy
 
