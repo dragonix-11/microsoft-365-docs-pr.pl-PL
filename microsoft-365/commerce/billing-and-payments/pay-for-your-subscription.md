@@ -22,30 +22,30 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 10/28/2021
-ms.openlocfilehash: fb6948c59505eaa3316dab73708658f7b31c43e7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/18/2022
+ms.openlocfilehash: d116fe2b9fb2b0b0b96ec44107d486edca19ff04
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326303"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587429"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Jak zapłacić za subskrypcję
 
 > [!IMPORTANT]
-> Od 26 stycznia 2021 r. nowe konta bankowe nie są już obsługiwane dla klientów z Belgii, Francji, Włoch, Luksemburga, Portugalii, Hiszpanii i Stanów Zjednoczonych. Jeśli jesteś klientem pochodzącym z jednego z tych krajów, możesz nadal płacić za subskrypcję przy użyciu istniejącego konta bankowego i możesz dodawać do niego nowe subskrypcje, ale tylko pod warunkiem, że konto bankowe działa poprawnie.
+> Od 26 stycznia 2021 r. nowe konta bankowe nie są już obsługiwane dla klientów z Belgii, Francji, Włoch, Luksemburga, Portugalii, Hiszpanii i Stanów Zjednoczonych. Jeśli jesteś obecnym klientem w jednym z tych krajów, możesz nadal płacić za subskrypcję przy użyciu istniejącego konta bankowego, które działa poprawnie. Nie można jednak dodawać nowych subskrypcji do konta bankowego.
 
 Za kupione produkty możesz zapłacić przy użyciu karty kredytowej lub debetowej albo konta bankowego. W niektórych przypadkach możesz zapłacić na podstawie faktury, przy użyciu czeku lub przelewu elektronicznego (EFT). Jeśli masz profil rozliczeniowy, opcje są nieco inne. Aby uzyskać więcej informacji, zobacz [Płacenie za subskrypcję przy użyciu profilu rozliczeniowego](pay-for-subscription-billing-profile.md). Jeśli nie masz pewności, czy Twoje konto ma profil rozliczeniowy, zobacz [Wprowadzenie do profilów rozliczeniowych](manage-billing-profiles.md).
 
 **Czy chcesz dowiedzieć się, gdzie wysłać płatność na podstawie faktury?** Jeśli opłacasz fakturę czekiem lub przelewem elektronicznym( EFT), zobacz [Gdzie mogę wysłać czek lub płatność EFT?](#where-do-i-send-my-check-or-eft-payment)
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Korzystając z pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Musisz być administratorem rozliczeń lub administratorem globalnym, aby wykonać czynności opisane w tym artykule. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
-- Metoda płatności wybrana podczas finalizacji zakupu to forma płatności używana we wszystkich przyszłych okresach rozliczeniowych. Możesz to zmienić w dowolnym momencie.
+- Aby wykonać instrukcje w tym artykule, musisz być administratorem globalnym lub administratorem rozliczeń. W celu uzyskania dodatkowych informacji, zobacz [Informacje o rolach administratora](../../admin/add-users/about-admin-roles.md).
+- Metoda płatności wybrana podczas finalizacji zakupu to forma płatności, która będzie używana we wszystkich przyszłych okresach rozliczeniowych. Możesz to zmienić w dowolnym momencie.
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Płacisz kartą kredytową lub debetową albo z konta bankowego?
 
@@ -86,7 +86,7 @@ Jeśli nie dodano metody płatności używanej do płacenia za subskrypcję, mus
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Gdzie należy wysłać czek lub przelew elektroniczny?
 
-[Sprawdź fakturę](view-your-bill-or-invoice.md), aby uzyskać instrukcje dotyczące płatności dla Twojego kraju lub regionu. Jeśli nie masz pewności, jakie masz należności, możesz sprawdzić rachunek i historię rozliczeń online na karcie **Faktury** znajdującej się na stronie <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rachunki i płatności</a>.
+[Sprawdź fakturę](view-your-bill-or-invoice.md), aby uzyskać instrukcje dotyczące płatności dla Twojego kraju lub regionu. Jeśli nie masz pewności co do wysokości należności, możesz sprawdzić fakturę i historię rozliczeń w trybie online na karcie **Faktury** na stronie <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rachunki i płatności</a>.
 
 > [!NOTE]
 > - Płatności czekiem jest dostępna tylko w kilku krajach.
