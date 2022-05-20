@@ -1,16 +1,16 @@
-- name: Scheduler for Microsoft 365
+- name: Harmonogram dla platformy Microsoft 365
   href: index.yml
   expanded: true
   items:
-    - name: Program Scheduler dla Microsoft 365
+    - name: Organizator dla platformy Microsoft 365 — Zapraszamy!
       href: scheduler-overview.md
     - name: Zaufanie i prywatność
       href: scheduler-trust-privacy.md
-    - name: Konfigurowanie harmonogramu dla Microsoft 365
+    - name: Konfigurowanie harmonogramu dla platformy Microsoft 365
       href: scheduler-setup.md
-    - name: Jak używać programu Scheduler do Microsoft 365
+    - name: 'Dowiedz się, jak używać organizatora dla platformy Microsoft 365.'
       href: scheduler-using.md
     - name: Planowanie spotkań cyklicznych
       href: scheduler-recurring-meetings.md
-    - name: Scheduler for Microsoft 365 FAQ
+    - name: Organizator dla platformy Microsoft 365 — często zadawane pytania
       href: scheduler-faqs.md
