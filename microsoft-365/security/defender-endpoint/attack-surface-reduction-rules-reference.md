@@ -17,18 +17,18 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 48fbef36720d295dabbf640944e64900633f1fe2
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: d43bcfd16a2ab2b1927ae4da0f894db114003cbe
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363065"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599574"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Dokumentacja reguł zmniejszania obszaru podatnego na ataki
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Program antywirusowy Microsoft Defender
@@ -332,6 +332,9 @@ Zależności: MDAV, Cloud Protection
 Ta reguła wykrywa podejrzane właściwości w zaciemnionym skryptze.
 
 Zaciemnianie skryptów jest powszechną techniką używaną zarówno przez autorów złośliwego oprogramowania, jak i uzasadnione aplikacje w celu ukrycia własności intelektualnej lub skrócenia czasu ładowania skryptów. Autorzy złośliwego oprogramowania używają również zaciemniania, aby utrudnić odczytywanie złośliwego kodu, co uniemożliwia ścisłą kontrolę przez ludzi i oprogramowanie zabezpieczające.
+
+> [!IMPORTANT]
+> Ze względu na dużą liczbę wyników fałszywie dodatnich ta reguła nie wykrywa obecnie skryptów programu PowerShell; Jest to rozwiązanie tymczasowe. Reguła zostanie zaktualizowana i wkrótce rozpocznie ponowne odnajdywanie skryptów programu PowerShell.
 
 nazwa Intune:`Obfuscated js/vbs/ps/macro code`
 

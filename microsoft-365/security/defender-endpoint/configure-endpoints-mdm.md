@@ -1,7 +1,7 @@
 ---
 title: Dołącz urządzenia z systemem Windows przy użyciu narzędzi do zarządzania urządzeniami przenośnymi
-description: Użyj narzędzi mobilnych Zarządzanie urządzeniami do wdrażania pakietu konfiguracyjne na urządzeniach, aby były one dołączane do usługi Defender for Endpoint.
-keywords: urządzenia onboard za pomocą usługi mdm, zarządzania urządzeniami, Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach Ochrona punktu końcowego w usłudze Microsoft Defender, mdm
+description: Użyj narzędzi mobile Zarządzanie urządzeniami, aby wdrożyć pakiet konfiguracji na urządzeniach, tak aby były one dołączane do usługi Defender for Endpoint.
+keywords: dołączanie urządzeń przy użyciu zarządzania urządzeniami przenośnymi, zarządzania urządzeniami, dołączania Ochrona punktu końcowego w usłudze Microsoft Defender urządzeń, zarządzania urządzeniami przenośnymi
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,91 +15,92 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f3b13df5b9368609e888b92cbba49a58a0db3008
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 3e81470cb02742eb94e62118f77f1ae0e8c62f90
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634762"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599686"
 ---
 # <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Dołącz urządzenia z systemem Windows przy użyciu narzędzi do zarządzania urządzeniami przenośnymi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
-Za pomocą rozwiązań do zarządzania urządzeniami przenośnymi (MDM) możesz Windows 10 urządzenia. Program Defender for Endpoint obsługuje usługi MDM, zapewniając OMA-URIs tworzenia zasad zarządzania urządzeniami.
+Rozwiązania do zarządzania urządzeniami przenośnymi (MDM) umożliwiają konfigurowanie Windows 10 urządzeń. Usługa Defender for Endpoint obsługuje rozwiązania MDM, udostępniając OMA-URIs do tworzenia zasad zarządzania urządzeniami.
 
 
-Aby uzyskać więcej informacji na temat korzystania z programu Defender for Endpoint CSP, zobacz Plik [DDF WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) i [WindowsAdvancedThreatProtection DDF](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
+Aby uzyskać więcej informacji na temat korzystania z dostawcy CSP usługi Defender for Endpoint, zobacz [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) i [WindowsAdvancedThreatProtection plik DDF](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Jeśli korzystasz z usługi Microsoft Intune, musisz mieć zarejestrowane mdm urządzenia. W przeciwnym razie ustawienia nie zostaną zastosowane pomyślnie.
+Jeśli używasz Microsoft Intune, musisz mieć zarejestrowane urządzenie MDM. W przeciwnym razie ustawienia nie zostaną zastosowane pomyślnie.
 
-Aby uzyskać więcej informacji na temat włączania usługi MDM Microsoft Intune, zobacz [Rejestracja urządzenia (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
+Aby uzyskać więcej informacji na temat włączania zarządzania urządzeniami przenośnymi za pomocą Microsoft Intune, zobacz [Rejestrowanie urządzeń (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
-## <a name="onboard-devices-using-microsoft-intune"></a>Urządzenia w urządzeniach w urządzeniu Microsoft Intune
+## <a name="onboard-devices-using-microsoft-intune"></a>Dołączanie urządzeń przy użyciu Microsoft Intune
 
-Zapoznaj się z [plikiem PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) aby zobaczyć różne ścieżki wdrożenia programu Defender dla punktu końcowego.
+Zapoznaj się z plikiem [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) lub [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx), aby wyświetlić różne ścieżki wdrażania usługi Defender dla punktu końcowego.
 
-Postępuj zgodnie z instrukcjami [podanymi Intune](/mem/intune/protect/advanced-threat-protection-configure).
+Postępuj zgodnie z instrukcjami z [Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
-Aby uzyskać więcej informacji na temat korzystania z programu Defender for Endpoint CSP, zobacz Plik [DDF WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) i [WindowsAdvancedThreatProtection DDF](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
+
+Aby uzyskać więcej informacji na temat korzystania z dostawcy CSP usługi Defender for Endpoint, zobacz [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) i [WindowsAdvancedThreatProtection plik DDF](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 > [!NOTE]
 >
-> - W **zasadach Stan kondycji urządzeń wewnenych** używane są właściwości tylko do odczytu, których nie można rozwiązać.
-> - Konfiguracja częstotliwości raportowania danych diagnostycznych jest dostępna tylko dla urządzeń w Windows 10 wersji 1703.
+> - Zasady **Stan kondycji dołączonych urządzeń** używają właściwości tylko do odczytu i nie można ich skorygować.
+> - Konfiguracja częstotliwości raportowania danych diagnostycznych jest dostępna tylko dla urządzeń w Windows 10, wersja 1703.
 
 
-Zapoznaj się z [plikiem PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx), aby zobaczyć różne ścieżki wdrożenia Ochrona punktu końcowego w usłudze Microsoft Defender.
+Zapoznaj się z plikiem [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) lub [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx), aby wyświetlić różne ścieżki wdrażania Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-## <a name="run-a-detection-test-to-verify-onboarding"></a>Uruchamianie testu wykrywania w celu zweryfikowania do uruchomienia
-Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, [zobacz Uruchamianie testu](run-detection-test.md) wykrywania na nowo Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach.
+## <a name="run-a-detection-test-to-verify-onboarding"></a>Uruchamianie testu wykrywania w celu zweryfikowania dołączania
+Po dołączeniu urządzenia można uruchomić test wykrywania, aby sprawdzić, czy urządzenie jest prawidłowo dołączone do usługi. Aby uzyskać więcej informacji, zobacz [Uruchamianie testu wykrywania na nowo dołączonym urządzeniu Ochrona punktu końcowego w usłudze Microsoft Defender](run-detection-test.md).
 
 
-## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Urządzenia wyełowywne i monitorują je przy Zarządzanie urządzeniami urządzeniach przenośnych
+## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Odłączanie i monitorowanie urządzeń przy użyciu narzędzi mobile Zarządzanie urządzeniami
 
-Ze względów bezpieczeństwa pakiet używany na urządzeniach offboardowych wygaśnie po 30 dniach od daty jego pobrania. Pakiety wynoszące wygasłe wysłane na urządzenie zostaną odrzucone. Podczas pobierania pakietu wynegocjowanego otrzymasz powiadomienie o dacie wygaśnięcia pakietów oraz zostanie on także uwzględniony w nazwie pakietu.
+Ze względów bezpieczeństwa pakiet używany do odłączenia urządzeń wygaśnie 30 dni po pobraniu. Wygasłe pakiety odłączania wysyłane do urządzenia zostaną odrzucone. Podczas pobierania pakietu odłączania otrzymasz powiadomienie o dacie wygaśnięcia pakietów i zostanie on również uwzględniony w nazwie pakietu.
 
 > [!NOTE]
-> Zasad wnoszeń i wynoszeń nie można wdrażać jednocześnie na tym samym urządzeniu, w przeciwnym razie spowoduje to nieprzewidywalne błędy.
+> Zasady dołączania i odłączania nie mogą być wdrażane na tym samym urządzeniu w tym samym czasie, w przeciwnym razie spowoduje to nieprzewidywalne kolizje.
 
-1. Pobierz pakiet wynos ze <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender:</a>
+1. Pobierz pakiet odłączania z <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>:
 
-   1. W okienku nawigacji wybierz pozycję **Ustawienia** \> **Punkty końcowe** \> **Zarządzanie urządzeniami** \> **(Wyczyszczycie**).
+   1. W okienku nawigacji wybierz pozycję **Ustawienia** \> **Punkty końcowe** \> **Odłączanie zarządzania urządzeniami**\>.
 
    1. Wybierz Windows 10 lub Windows 11 jako system operacyjny.
 
-   1. W polu **Metoda wdrażania** wybierz pozycję **Zarządzanie urządzeniami / Microsoft Intune**.
+   1. W polu **Metoda wdrażania** wybierz pozycję **Mobile Zarządzanie urządzeniami/Microsoft Intune**.
 
-   1. Kliknij **pozycję Pobierz** pakiet i zapisz .zip pliku.
+   1. Kliknij **pozycję Pobierz pakiet** i zapisz plik .zip.
 
-2. Wyodrębnianie zawartości pliku .zip do udostępnionej lokalizacji tylko do odczytu, do której dostęp mogą uzyskać administratorzy sieci, którzy wdrożyą pakiet. Plik powinien mieć nazwę *: WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
+2. Wyodrębnij zawartość pliku .zip do udostępnionej lokalizacji tylko do odczytu, do których mogą uzyskać dostęp administratorzy sieci, którzy wdrożą pakiet. Powinien istnieć plik o nazwie *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 
-3. Skorzystaj z Microsoft Intune konfiguracji niestandardowej, aby wdrożyć następujące obsługiwane ustawienia OMA-URI.
+3. Użyj Microsoft Intune niestandardowych zasad konfiguracji, aby wdrożyć następujące obsługiwane ustawienia identyfikatora OMA-URI.
    - OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding
    - Typ daty: Ciąg
    - Wartość: [Skopiuj i wklej wartość z zawartości pliku WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding]
 
-Aby uzyskać więcej informacji Microsoft Intune dotyczących zasad, zobacz [Windows 10 ustawień zasad w Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10).
+Aby uzyskać więcej informacji na temat ustawień zasad Microsoft Intune, zobacz [Windows 10 ustawienia zasad w Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10).
 
 > [!NOTE]
-> W **zasadach Stan kondycji urządzeń wynoszonych** używane są właściwości tylko do odczytu, których nie można rozwiązać.
+> Zasady **Stan kondycji urządzeń odłączonych** używają właściwości tylko do odczytu i nie można ich skorygować.
 
 > [!IMPORTANT]
-> Wynoszenie powoduje, że urządzenie przestaje wysyłać dane czujnika do portalu, ale dane z urządzenia, w tym odwołania do wszelkich posiadanych alertów, będą przechowywane przez maksymalnie 6 miesięcy.
+> Odłączanie powoduje, że urządzenie przestaje wysyłać dane czujnika do portalu, ale dane z urządzenia, w tym odwołanie do wszelkich alertów, które miał, zostaną zachowane przez maksymalnie 6 miesięcy.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Dołącz urządzenia z systemem Windows przy użyciu zasad grupy](configure-endpoints-gp.md)
 - [Dołącz urządzenia z systemem Windows przy użyciu menedżera konfiguracji punktu końcowego Microsoft](configure-endpoints-sccm.md)
 - [Dołącz urządzenia z systemem Windows przy użyciu skryptu lokalnego](configure-endpoints-script.md)
 - [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](configure-endpoints-vdi.md)
-- [Uruchamianie testu wykrywania na nowo włodowym Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia](run-detection-test.md)
-- [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender problemów z dołączaniem](troubleshoot-onboarding.md)
+- [Uruchamianie testu wykrywania na nowo dołączonym urządzeniu Ochrona punktu końcowego w usłudze Microsoft Defender](run-detection-test.md)
+- [Rozwiązywanie problemów z dołączaniem Ochrona punktu końcowego w usłudze Microsoft Defender](troubleshoot-onboarding.md)

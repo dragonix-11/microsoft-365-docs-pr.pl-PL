@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zasad kwarantanny do kontrolowania, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f24592460daa4f476e969069d0c1b7636f6a23e
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: e591330137f2f2fd92ef05f64f5368cca533fc48
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285549"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599326"
 ---
 # <a name="quarantine-policies"></a>Zasady kwarantanny
 
@@ -53,7 +53,7 @@ Poszczególne uprawnienia zasad kwarantanny, które znajdują się w wstępnie u
 Domyślne zasady kwarantanny, skojarzone z nimi grupy uprawnień i to, czy powiadomienia o kwarantannie są włączone, są opisane w poniższej tabeli:
 
 |Domyślne zasady kwarantanny|Używana grupa uprawnień|Powiadomienia o kwarantannie są włączone?|
-|---|---|---|
+|---|:---:|:---:|
 |AdminOnlyAccessPolicy|Brak dostępu|Nie|
 |DefaultFullAccessPolicy|Pełny dostęp|Nie|
 |NotificationEnabledPolicy<sup>\*</sup>|Pełny dostęp|Tak|

@@ -3,7 +3,7 @@ title: Inne punkty końcowe nie są uwzględnione w usłudze sieci Web Office 36
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/18/2022
+ms.date: 05/19/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Podsumowanie: Nowa usługa sieci Web punktu końcowego nie zawiera kilku punktów końcowych dla określonych scenariuszy.'
 hideEdit: true
-ms.openlocfilehash: bebffa1cb03a85ffd5ab7519095f38b7ae5cf985
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: 01fbd54ed5addb8552c59e2be8de76961e613968
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587353"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599172"
 ---
 # <a name="other-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Inne punkty końcowe nie są uwzględnione w usłudze sieci Web Office 365 adresów IP i adresów URL
 
@@ -54,7 +54,7 @@ Oprócz systemu DNS wszystkie te wystąpienia są opcjonalne dla większości kl
 |3|**Azure AD Połączenie (opcja W/SSO)** <p> WinRM & zdalnego programu PowerShell|Porty TCP środowiska sts klienta (serwer usług AD FS i serwer proxy usług AD FS) \| 80 & 443|Ruch przychodzący serwera|
 |4|**Usługi STS** , takie jak serwery proxy usług AD FS (tylko dla klientów federacyjnych)|Porty TCP 443 lub TCP 49443 w/ClientTLS klienta usługi STS (np. serwer proxy usług AD FS) \||Ruch przychodzący serwera|
 |5|**[integracja Exchange Online Unified Messaging/SBC](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)**|Dwukierunkowy między lokalnym kontrolerem obramowania sesji i \*um.outlook.com|Ruch wychodzący tylko na serwerze|
-|6|**Migracja skrzynki pocztowej**<p>Gdy migracja skrzynki pocztowej jest inicjowana z lokalnego [Exchange hybrydowego](/exchange/exchange-deployment-assistant) do Office 365, Office 365 połączy się z opublikowanym serwerem usług Exchange Web Services (EWS)/Usługi replikacji skrzynek pocztowych (MRS). Jeśli potrzebujesz adresów IP TRANSLATOR używanych przez serwery Exchange Online w celu ograniczenia połączeń przychodzących z określonych źródłowych zakresów adresów IP, są one wymienione w [Office 365 adresach URL & zakresach adresów IP](urls-and-ip-address-ranges.md) w obszarze usługi "Exchange Online". <p> Należy zadbać o to, aby dostęp do opublikowanych punktów końcowych EWS, takich jak OWA, nie miał wpływu na serwer proxy MRS rozpoznawany jako oddzielna nazwa FQDN i publiczny adres IP przed ograniczeniem połączeń TCP 443 z określonych zakresów źródłowych adresów IP.|Lokalny serwer proxy EWS/MRS klienta <br> Port TCP 443|Ruch przychodzący serwera|
+|6|**Migracja skrzynki pocztowej**<p>Gdy migracja skrzynki pocztowej jest inicjowana z lokalnego [Exchange hybrydowego](/exchange/exchange-deployment-assistant) do Office 365, Office 365 połączy się z opublikowanym serwerem usług Exchange Web Services (EWS)/Usługi replikacji skrzynek pocztowych (MRS). Jeśli chcesz zezwolić na połączenia przychodzące tylko z określonych zakresów źródłowych adresów IP, utwórz regułę zezwolenia dla adresów IP wymienionych w tabeli **Exchange Online** w [Office 365 adresach URL & zakresach adresów IP](urls-and-ip-address-ranges.md). <p> Aby zapewnić, że łączność z opublikowanymi punktami końcowymi EWS (takimi jak OWA) nie jest zablokowana, przed ograniczeniem połączeń upewnij się, że serwer proxy usługi MRS jest rozpoznawany jako oddzielna nazwa FQDN i publiczny adres IP.|Lokalny serwer proxy EWS/MRS klienta <br> Port TCP 443|Ruch przychodzący serwera|
 |7|**Exchange funkcje współistnienia [hybrydowego](/exchange/exchange-deployment-assistant)**, takie jak udostępnianie bezpłatne/zajęte.|Lokalny serwer Exchange klienta|Ruch przychodzący serwera|
 |8|**[Exchange uwierzytelnianie hybrydowego](/exchange/exchange-deployment-assistant) serwera proxy**|Lokalny sts klienta|Ruch przychodzący serwera|
 |9|Służy do konfigurowania [Exchange hybrydowej](/exchange/exchange-deployment-assistant) przy użyciu **[Kreatora konfiguracji hybrydowej Exchange](/exchange/hybrid-configuration-wizard)** <p> Uwaga: te punkty końcowe są wymagane tylko do skonfigurowania Exchange hybrydowej|domains.live.com na portach TCP 80 & 443, wymagane tylko dla kreatora konfiguracji hybrydowej Exchange 2010 z dodatkiem SP3 <p> GCC adresy IP wysokiego identyfikatora DoD: 40.118.209.192/32; 168.62.190.41/32 <p> Światowe & GCC handlowe: \*.store.core.windows.net; asl.configure.office.com; tds.configure.office.com; mshybridservice.trafficmanager.net; <br> aka.ms/hybridwizard; <br> \*shcwreleaseprod.blob.core.windows.net/shcw/;|Ruch wychodzący tylko na serwerze|

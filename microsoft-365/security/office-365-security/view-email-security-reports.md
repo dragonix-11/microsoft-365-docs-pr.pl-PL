@@ -2,7 +2,7 @@
 title: Wyświetlanie raportów zabezpieczeń poczty e-mail
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: chrisdadrop
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 476807a03954475470a976113a2faa926862c008
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 8b4b520675c5c8a89324791e560e8176db1cb9b2
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535951"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599348"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender
 
@@ -60,7 +60,7 @@ Raporty Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze
 |**raport dyspozycji komunikatów załączników Sejf** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|Czerwiec 2021|
 |**Wykryto złośliwe oprogramowanie w raporcie poczty e-mail** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Czerwiec 2021|
 |**Raport wykrywania spamu** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według spamu poczty e-mail \>](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Październik 2021|
-|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|Maj 2022 r.|
+|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|Maj 2022 r.|
 |**raport reguł transportu Exchange** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange raport reguł transportu w EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|Kwiecień 2022 r.|
 |Get-MailTrafficTopReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Uwaga**: Funkcja raportowania szyfrowania nie zastępuje funkcji Get-MailTrafficTopReport.|MC315742|Kwiecień 2022 r.|
 

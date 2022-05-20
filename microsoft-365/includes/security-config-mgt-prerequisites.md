@@ -4,12 +4,12 @@ description: uwzględnij plik
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: a836865906de594436b27c44ebf65ba3ed99c96e
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 3da0554f55e25f765702fa0d0fbf169ba2e66438
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188243"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65601667"
 ---
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -31,9 +31,9 @@ Gdy urządzenie zostanie dołączone do Ochrona punktu końcowego w usłudze Mic
 Gdy urządzenie przyłączone do domeny tworzy relację zaufania z Azure Active Directory, ten scenariusz jest określany jako scenariusz *dołączania* hybrydowego Azure Active Directory. Usługa Security Management for Ochrona punktu końcowego w usłudze Microsoft Defender w pełni obsługuje ten scenariusz z następującymi wymaganiami:
 
 - Azure Active Directory Połączenie (AAD Połączenie) należy zsynchronizować z dzierżawą używaną z Ochrona punktu końcowego w usłudze Microsoft Defender
-- Przyłączanie hybrydowe Azure Active Directory musi być skonfigurowane w środowisku (za pośrednictwem federacji lub synchronizacji AAD Połączenie)
-- AAD Połączenie Sync musi zawierać obiekty urządzenia *w zakresie* synchronizacji z Azure Active Directory (w razie potrzeby do przyłączenia)
-- AAD Połączenie reguły synchronizacji muszą zostać zmodyfikowane dla serwera 2012 R2 (gdy wymagana jest obsługa serwera 2012 R2)
+- Przyłączanie hybrydowe Azure Active Directory musi być skonfigurowane w środowisku (za pośrednictwem federacji lub usługi AAD Połączenie Sync)
+- Usługa AAD Połączenie Sync musi zawierać obiekty urządzenia *w zakresie* synchronizacji z Azure Active Directory (w razie potrzeby w celu dołączenia)
+- Reguły Połączenie usługi AAD dotyczące synchronizacji muszą zostać zmodyfikowane dla serwera 2012 R2 (gdy wymagana jest obsługa serwera 2012 R2)
 - Wszystkie urządzenia muszą zarejestrować się w Azure Active Directory dzierżawy hostującej Ochrona punktu końcowego w usłudze Microsoft Defender. Scenariusze obejmujące wiele dzierżaw nie są obsługiwane. 
 
 ### <a name="connectivity-requirements"></a>Wymagania dotyczące połączenia
@@ -44,12 +44,15 @@ Urządzenia muszą mieć dostęp do następujących punktów końcowych:
 - `login.microsoftonline.com`- Na potrzeby rejestracji Azure AD.
 - `*.dm.microsoft.com` — Użycie symbolu wieloznacznego obsługuje punkty końcowe usługi w chmurze używane do rejestracji, ewidencjonowania i raportowania, które mogą ulec zmianie w miarę skalowania usługi.
 
+> [!Note]
+> Jeśli użytkownicy organizacji przeprowadzają inspekcję protokołu Secure Socket Layer (SSL), punkty końcowe powinny zostać wykluczone z inspekcji.
+
 ### <a name="supported-platforms"></a>Obsługiwane platformy
 
 Zasady zarządzania zabezpieczeniami Ochrona punktu końcowego w usłudze Microsoft Defender są obsługiwane dla następujących platform urządzeń:
 
-- Windows 10 Pro/Enterprise (z [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
-- Windows 11 Pro/Enterprise
+- Windows 10 Professional/Enterprise (z [kb5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
+- Windows 11 Professional/Enterprise
 - Windows Server 2012 R2 z [usługą Microsoft Defender dla urządzeń Down-Level](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2016 z [usługą Microsoft Defender dla urządzeń Down-Level](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2019 (z [KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0))
@@ -90,19 +93,22 @@ Microsoft Endpoint Manager obejmuje kilka metod i typów zasad do zarządzania k
 
 Jeśli ochrona urządzenia wymaga rozszerzenia poza zarządzanie usługą Defender for Endpoint, zobacz [Omówienie ochrony urządzeń](/mem/intune/protect/device-protect), aby dowiedzieć się więcej o dodatkowych funkcjach udostępnianych przez Microsoft Endpoint Manager w celu ochrony urządzeń, takich jak *zgodność urządzeń*, *aplikacje zarządzane*, *zasady ochrony aplikacji* oraz integracja z partnerami ds. zgodności i *ochrony przed zagrożeniami mobilnymi*.
 
-Poniższa tabela pomaga zrozumieć, które zasady, które można skonfigurować ustawienia MDE, są obsługiwane przez urządzenia zarządzane przez różne scenariusze. Podczas wdrażania zasad obsługiwanych zarówno w przypadku *konfiguracji zabezpieczeń MDE*, jak i *Microsoft Endpoint Manager* pojedyncze wystąpienie tych zasad może być przetwarzane przez urządzenia z systemem MDE i urządzenia zarządzane przez Intune lub Configuration Manager.
+Poniższa tabela pomaga zrozumieć, które zasady, które można skonfigurować ustawienia MDE, są obsługiwane przez urządzenia zarządzane przez różne scenariusze. Po wdrożeniu zasad obsługiwanych zarówno w przypadku *konfiguracji zabezpieczeń mde*, jak i *Microsoft Endpoint Manager* pojedyncze wystąpienie tych zasad może być przetwarzane przez urządzenia z systemem Ochrona punktu końcowego w usłudze Microsoft Defender tylko i urządzenia zarządzane przez dowolną z nich Intune lub Configuration Manager.
 
-| Microsoft Endpoint Manager  | Obciążenia | Konfiguracja zabezpieczeń mde  |  Microsoft Endpoint Manager |
+| Microsoft Endpoint Manager  | Obciążenia |Zasad| Konfiguracja zabezpieczeń mde  |  Microsoft Endpoint Manager |
 |----------------|----------------|-------------------|------------|
-| Zabezpieczenia punktu końcowego    | Antivirus                   | ![Obsługiwane](../media/green-check.png)  | ![Obsługiwane](../media/green-check.png)  |
-|                      | Szyfrowanie dysków   |           | ![Obsługiwane](../media/green-check.png)  |
-|                      | Zapora (profil i reguły)                | ![Obsługiwane](../media/green-check.png) | ![Obsługiwane](../media/green-check.png)  |
-|                      | Wykrywanie i reagowanie dotyczące punktów końcowych        | ![Obsługiwane](../media/green-check.png) | ![Obsługiwane](../media/green-check.png)  |
-|                      | Zmniejszanie obszaru podatnego na ataki    |           | ![Obsługiwane](../media/green-check.png)  |
-|                      | Ochrona konta       |       | ![Obsługiwane](../media/green-check.png)  |
-|                      | Zgodność urządzenia     |   | ![Obsługiwane](../media/green-check.png)  |
-|                      | Dostęp warunkowy    |   | ![Obsługiwane](../media/green-check.png)  |
-|                      | Punkty odniesienia zabezpieczeń      |   | ![Obsługiwane](../media/green-check.png)  |
+| Zabezpieczenia punktu końcowego    | Antivirus   |     Antivirus           | ![Obsługiwane](../media/green-check.png)  | ![Obsługiwane](../media/green-check.png)  |
+|                      | Antivirus   |   Wykluczenia programu antywirusowego   | ![Obsługiwane](../media/green-check.png)  | ![Obsługiwane](../media/green-check.png)  |
+|                      | Antivirus   | środowisko Zabezpieczenia Windows |                        | ![Obsługiwane](../media/green-check.png)  |
+|                      | Szyfrowanie dysków   |     Wszystkie |      | ![Obsługiwane](../media/green-check.png)  |
+|                      | Zapory   | Zapory              | ![Obsługiwane](../media/green-check.png) | ![Obsługiwane](../media/green-check.png)  |
+|                      | Zapory | Reguły zapory                | ![Obsługiwane](../media/green-check.png) | ![Obsługiwane](../media/green-check.png)  |
+|                      | Wykrywanie i reagowanie dotyczące punktów końcowych   | Wykrywanie i reagowanie dotyczące punktów końcowych | ![Obsługiwane](../media/green-check.png) | ![Obsługiwane](../media/green-check.png)  |
+|                      | Zmniejszanie obszaru podatnego na ataki    |   Wszystkie |          | ![Obsługiwane](../media/green-check.png)  |
+|                      | Ochrona konta       |    Wszystkie |     | ![Obsługiwane](../media/green-check.png)  |
+|                      | Zgodność urządzenia     |   Wszystkie |  | ![Obsługiwane](../media/green-check.png)  |
+|                      | Dostęp warunkowy    |   Wszystkie |  | ![Obsługiwane](../media/green-check.png)  |
+|                      | Plan bazowy zabezpieczeń      |  Wszystkie |   | ![Obsługiwane](../media/green-check.png)  |
 
 **Zasady zabezpieczeń punktu końcowego** to odrębne grupy ustawień przeznaczone do użycia przez administratorów zabezpieczeń, którzy koncentrują się na ochronie urządzeń w organizacji.
 
@@ -120,24 +126,28 @@ Aby obsługiwać Ochrona punktu końcowego w usłudze Microsoft Defender zarząd
 1. Zaloguj się do [portalu Microsoft 365 Defender](https://security.microsoft.com/) i przejdź do **Ustawienia** >  **EndpointsConfiguration** >  **ManagementW** >  **zakresie usługiForcement** i włącz platformy do zarządzania ustawieniami zabezpieczeń:
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Włącz zarządzanie ustawieniami Ochrona punktu końcowego w usłudze Microsoft Defender w konsoli usługi Defender.":::
+    
+1. Skonfiguruj tryb pilotażowy i Configuration Manager ustawień urzędu zgodnie z potrzebami organizacji:
 
-    >[!NOTE]
-    >Aby dokładnie kontrolować zakres punktów końcowych zarządzanych za pośrednictwem zarządzania ustawieniami mde, rozważ użycie **trybu pilotażowego**.
+   :::image type="content" source="../media/pilot-CMAuthority-mde-settings-management-defender.png" alt-text="Skonfiguruj tryb pilotażowy dla zarządzania ustawieniami punktu końcowego w portalu Microsoft 365 Defender.":::
+   
+  > [!TIP]
+  > Użyj trybu pilotażowego i odpowiednich tagów urządzeń, aby przetestować i zweryfikować wdrożenie na niewielkiej liczbie urządzeń. Bez korzystania z trybu pilotażowego każde urządzenie wchodzące w skonfigurowany zakres zostanie automatycznie zarejestrowane.
 
-2. Upewnij się, że odpowiedni użytkownicy mają uprawnienia do zarządzania ustawieniami zabezpieczeń punktu końcowego w Microsoft Endpoint Manager lub udzielania tych uprawnień, konfigurując rolę w portalu usługi Defender. Przejdź do **pozycji Ustawienia** >  **RolesAdd** > :
+1. Upewnij się, że odpowiedni użytkownicy mają uprawnienia do zarządzania ustawieniami zabezpieczeń punktu końcowego w Microsoft Endpoint Manager lub udzielania tych uprawnień, konfigurując rolę w portalu usługi Defender. Przejdź do **pozycji Ustawienia** >  **RolesAdd** > :
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="Utwórz nową rolę w portalu usługi Defender.":::
 
    > [!TIP]
    > Istniejące role można modyfikować i dodawać niezbędne uprawnienia w porównaniu z tworzeniem dodatkowych ról w Ochrona punktu końcowego w usłudze Microsoft Defender
 
-3. Podczas konfigurowania roli dodaj użytkowników i wybierz pozycję **Zarządzaj ustawieniami zabezpieczeń punktu końcowego w Microsoft Endpoint Manager**:
+1. Podczas konfigurowania roli dodaj użytkowników i wybierz pozycję **Zarządzaj ustawieniami zabezpieczeń punktu końcowego w Microsoft Endpoint Manager**:
 
    :::image type="content" source="../media/add-role.png" alt-text="Przyznaj użytkownikom uprawnienia do zarządzania ustawieniami.":::
 
-4. Zaloguj się do [centrum administracyjnego programu Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Zaloguj się do [centrum administracyjnego programu Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-5. Wybierz pozycję **Zabezpieczenia** >  punktu końcowego Ochrona punktu końcowego w usłudze Microsoft Defender i ustaw opcję **Zezwalaj Ochrona punktu końcowego w usłudze Microsoft Defender na wymuszanie konfiguracji zabezpieczeń punktu końcowego (wersja zapoznawcza)** **na wartość Włączone**.
+1. Wybierz pozycję **Zabezpieczenia** >  punktu końcowego Ochrona punktu końcowego w usłudze Microsoft Defender i ustaw opcję **Zezwalaj Ochrona punktu końcowego w usłudze Microsoft Defender na wymuszanie konfiguracji zabezpieczeń punktu końcowego (wersja zapoznawcza)** **na wartość Włączone**.
 
    :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="Włącz zarządzanie ustawieniami Ochrona punktu końcowego w usłudze Microsoft Defender w centrum administracyjnym Microsoft Endpoint Manager.":::
 
@@ -153,7 +163,9 @@ Ochrona punktu końcowego w usłudze Microsoft Defender obsługuje kilka opcji d
 
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Współistnienie z Microsoft Endpoint Configuration Manager
-W niektórych środowiskach może być konieczne użycie usługi Security Management dla usługi Microsoft Defender w połączeniu z Configuration Manager. Jest to możliwe przez wyłączenie **opcji Zarządzaj ustawieniami zabezpieczeń przy użyciu** przełącznika Configuration Manager na **stronie Ustawienia** (Ustawienia > punkty końcowe > zarządzanie konfiguracją > zakres wymuszania):
+W niektórych środowiskach może być konieczne użycie usługi Security Management do Ochrona punktu końcowego w usłudze Microsoft Defender z [dołączaniem dzierżawy Configuration Manager](/mem/configmgr/tenant-attach/endpoint-security-get-started). Jeśli używasz obu tych kanałów, musisz kontrolować zasady za pośrednictwem jednego kanału, ponieważ użycie więcej niż jednego kanału stwarza szansę na konflikty i niepożądane wyniki.
+
+Aby to obsłużyć, skonfiguruj *ustawienia Zarządzanie zabezpieczeniami przy użyciu przełącznika Configuration Manager* w pozycji *Wyłączone*.  Zaloguj się do [portalu Microsoft 365 Defender](https://security.microsoft.com/) i przejdź do **Ustawienia** >  **EndpointsConfiguration** >  **ManagementW** >  **zakresie usługiForcement**:
 
 :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Zarządzanie ustawieniami zabezpieczeń przy użyciu ustawienia Configuration Manager.":::
 
@@ -210,7 +222,7 @@ Po utworzeniu co najmniej jednej grupy Azure AD zawierającej urządzenia zarzą
 
    - W obszarze Zasady zapory wybierz pozycję:
      - Platforma: **Windows 10, Windows 11 i serwer Windows (wersja zapoznawcza)**
-     - Profil: **Reguły zapory usługi Microsoft Defender (wersja zapoznawcza)**
+     - Profil: **reguły Zapora Microsoft Defender (wersja zapoznawcza)**
 
    - W obszarze Zasady wykrywania punktów końcowych i reagowania wybierz:
      - Platforma: **Windows 10, Windows 11 i serwer Windows (wersja zapoznawcza)**

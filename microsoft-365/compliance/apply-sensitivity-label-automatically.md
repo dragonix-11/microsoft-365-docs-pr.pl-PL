@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Podczas tworzenia etykiety poufności możesz automatycznie przypisywać etykietę do plików i wiadomości e-mail lub monitować użytkowników o wybranie zalecanej etykiety.
-ms.openlocfilehash: b1a364fc6053483a05d0ea055000b863b31a94cf
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: fc641845907e157e555e70104b2fcb472ad496af
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438032"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599282"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiety poufności do zawartości
 
@@ -67,7 +67,7 @@ Istnieją dwie różne metody automatycznego stosowania etykiety poufności do z
     - Maksymalnie 25 000 automatycznie oznaczonych plików w dzierżawie dziennie.
     - Maksymalnie 100 zasad automatycznego etykietowania na dzierżawę, z których każda jest przeznaczona dla maksymalnie 100 witryn (SharePoint lub OneDrive), gdy są one określane indywidualnie. Można również określić wszystkie lokacje, a ta konfiguracja jest wykluczona z maksymalnej wartości 100 lokacji.
     - Istniejące wartości modyfikacji, modyfikacji i daty nie są zmieniane w wyniku zasad automatycznego etykietowania — zarówno w trybie symulacji, jak i w przypadku stosowania etykiet.
-    - Gdy etykieta stosuje szyfrowanie, [wystawcą Rights Management i właścicielem Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jest konto, które ostatnio zmodyfikowało plik. Jeśli to konto nie jest już w Azure Active Directory, etykieta nie zostanie zastosowana, ponieważ nie można ustawić tych wartości.
+    - Gdy etykieta stosuje szyfrowanie, [wystawcą Rights Management i właścicielem Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jest konto, które ostatnio zmodyfikowało plik.
 
     Specyficzne dla automatycznego etykietowania dla Exchange:
     

@@ -1,7 +1,7 @@
 ---
-title: Używanie Microsoft Teams w aplikacji Canvas
-ms.author: v-cichur
-author: cichur
+title: Korzystanie ze spotkań w aplikacji Microsoft Teams z kanwą
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: sovaish
 audience: admin
@@ -12,72 +12,72 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Integracja Microsoft Teams spotkania za pomocą systemu Canvas
-ms.openlocfilehash: 529cc27b6b63fca76d47487f26bd6deda7478640
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Integrowanie spotkań Microsoft Teams z kanwą
+ms.openlocfilehash: a81b8c7da014ba4ded9e4a2e3cfd6b38509ae2db
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569584"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599618"
 ---
-# <a name="use-microsoft-teams-meetings-with-canvas"></a>Używanie Microsoft Teams w aplikacji Canvas
+# <a name="use-microsoft-teams-meetings-with-canvas"></a>Korzystanie ze spotkań w aplikacji Microsoft Teams z kanwą
 
-Microsoft Teams spotkania to aplikacja Edukacja Tools Interoperability (LTI), która ułatwia nauczycielom i uczniom nawigowanie między ich systemami LMS (Edukacja Management System) i Teams. Użytkownicy mogą uzyskać dostęp do zespołów klasowych powiązanych z ich kursem bezpośrednio z poziomu systemu LMS.
+Microsoft Teams spotkania to aplikacja Edukacja Tools Interoperability (LTI), która ułatwia nauczycielom i uczniom łatwe przechodzenie między systemem zarządzania Edukacja (LMS) i Teams. Użytkownicy mogą uzyskiwać dostęp do swoich zespołów klas skojarzonych z kursem bezpośrednio z poziomu usługi LMS.
 
 ## <a name="prerequisites-before-deployment"></a>Wymagania wstępne przed wdrożeniem
 
 > [!NOTE]
-> Bieżąca wersja Teams LTI obsługuje tylko synchronizację użytkowników systemu Canvas Microsoft Azure Active Directory (AAD) w ograniczonym zakresie.
+> Bieżąca Teams Meetings LTI obsługuje tylko synchronizowanie użytkowników kanwy z Microsoft Azure Active Directory (AAD) w ograniczonym zakresie.
 >
-> - Dzierżawa musi mieć licencję microsoft education.
-> - Do mapowania użytkowników między systemami Canvas i Microsoft można używać tylko jednej dzierżawy firmy Microsoft.
-> - Aby uniknąć duplikowania grup, School Data Sync (SDS) należy wyłączyć usługę School Data Sync (SDS) przed użyciem narzędzia Class Teams LTI.
+> - Dzierżawca musi mieć licencję microsoft education.
+> - Do mapowania użytkowników między aplikacjami Canvas i Microsoft można używać tylko jednej dzierżawy firmy Microsoft.
+> - Przed użyciem klasy Teams LTI należy wyłączyć School Data Sync (SDS), aby uniknąć duplikowania grup.
 
-## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 administratorem
+## <a name="microsoft-office-365-admin"></a>administrator Microsoft Office 365
 
-Przed rozpoczęciem zarządzania integracją z usługą Microsoft Teams w systemie Canvas w obrębie struktury należy przed ukończeniem konfiguracji administracyjnej systemu Microsoft Azure zatwierdzoną przez administratora systemu Microsoft Office 365 Twojej instytucji w dzierżawie systemu Microsoft Azure zatwierdzoną przez administratora systemu Canvas aplikację **Teams** Canvas.
+Przed rozpoczęciem zarządzania integracją Microsoft Teams w kanwie Instructure ważne jest, aby aplikacja **Microsoft-Teams-Sync-for-Canvas** platformy Azure firmy Canvas została zatwierdzona przez administratora Microsoft Office 365 instytucji w dzierżawie Microsoft Azure przed ukończeniem konfiguracji administratora kanwy.
 
 1. Zaloguj się do kanwy.
 
 2. Wybierz link **Administrator** w nawigacji globalnej, a następnie wybierz swoje konto.
 
-3. W obszarze nawigacji administratora **wybierz link Ustawienia**, a następnie **kartę Integracje**.
+3. W obszarze nawigacji administratora wybierz link **Ustawienia**, a następnie kartę **Integracje**.
 
-   ![Pliki w Teams png w obszarze synchronizacji.](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
+   ![Kanwa Teams Synchronizuj zaktualizowane png.](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
 
-4. Wprowadź nazwę dzierżawy firmy Microsoft, atrybut logowania, sufiks domeny AAD atrybut wyszukiwania. Te pola będą używane do dopasowywania użytkowników w kanwie do użytkowników w Microsoft Azure Active Directory.
-   - Atrybut logowania to atrybut użytkownika systemu Canvas wykorzystany w celu dopasowania.
-   - Pole Sufiks jest opcjonalne i pozwala określić domenę, jeśli nie ma dokładnego mapowania między atrybutami Canvas a polami usługi Microsoft AAD pól. Jeśli na przykład adres e-mail systemu Canvas name@example.edu ma nazwę "name@example.edu", a upn w programie Microsoft AAD to "nazwa", możesz dopasować użytkowników, wprowadzając "example.edu" w polu sufiksu.
-   - Atrybut odnośnika usługi Active Directory to pole po stronie firmy Microsoft, do którego są dopasowane atrybuty systemu Canvas. Wybierz między główną siecią danych, podstawowym adresem e-mail lub aliasem e-mail.
+4. Wprowadź nazwę dzierżawy firmy Microsoft, atrybut logowania, sufiks domeny i atrybut wyszukiwania usługi AAD. Te pola będą używane do dopasowywania użytkowników na kanwie do użytkowników w Microsoft Azure Active Directory.
+   - Atrybut logowania to atrybut użytkownika kanwy używany do dopasowywania.
+   - Pole Sufiks jest opcjonalne i umożliwia określenie domeny, gdy nie ma dokładnego mapowania między atrybutami kanwy a polami usługi Microsoft AAD. Jeśli na przykład adres e-mail kanwy to "name@example.edu", podczas gdy nazwa UPN w usłudze Microsoft AAD to "name", możesz dopasować użytkowników, wprowadzając ciąg "example.edu" w polu sufiksu.
+   - Atrybut odnośnika usługi Active Directory to pole po stronie firmy Microsoft, do którego są dopasowywane atrybuty kanwy. Wybierz nazwę UPN, podstawowy adres e-mail lub alias wiadomości e-mail.
 
-5. Wybierz **pozycję Ustawienia** po zakończeniu.
+5. Po **zakończeniu** wybierz pozycję Aktualizuj Ustawienia.
 
-6. Aby zatwierdzić dostęp do aplikacji **Platformy Azure microsoft-Teams-Sync-for-Canvas**, wybierz link Udzielanie dostępu **dzierżawy**. Nastąpi przekierowanie do punktu końcowego zgody administratora platformy tożsamości firmy Microsoft.
+6. Aby zatwierdzić dostęp do aplikacji **Microsoft-Teams-Sync-for-Canvas** platformy Azure programu Canvas, wybierz link **Udzielanie dostępu do dzierżawy**. Nastąpi przekierowanie do punktu końcowego zgody administratora platformy tożsamości firmy Microsoft.
 
-   ![uprawnienia.](media/permissions.png)
+   ![Uprawnienia.](media/permissions.png)
 
-7. Wybierz **pozycję Zaakceptuj**.
+7. Wybierz pozycję **Zaakceptuj**.
 
    > [!NOTE]
-   > Synchronizacja to funkcja, która jest zarządzana przez partnera LMS i jest używana do synchronizowania członkostwa na poziomie kursu z zespołem Teams przy użyciu interfejsów API Microsoft Graph. Jest to przede wszystkim funkcja włączana przez nauczyciela jako prawdziwa na poziomie kursu. Następnie każda zmiana członkostwa wprowadzona po stronie systemu LMS w celu dodatku lub usunięcia członków jest odzwierciedlana przy użyciu synchronizacji zaimplementowanej przez partnera systemu LMS. Jeszcze zanim ten proces zostanie włączony dla nauczycieli administrator M365 Education Institute zezwala ich nauczycielom na uzyskiwanie dostępu do synchronizacji przy użyciu modalnego uprawnień synchronizacji, który został znaleziony poniżej. Te uprawnienia są udzielane partnerowi programu LMS w celu umożliwienia nauczycielom synchronizowania członkostwa między kursem LMS a zespołami Teams zajęć.
+   > Synchronizacja to funkcja zarządzana przez partnera LMS i używana do synchronizowania członkostwa na poziomie kursu z zespołem Teams przy użyciu interfejsów API programu Microsoft Graph. Jest to przede wszystkim funkcja, którą nauczyciel włącza jako rzeczywisty na poziomie kursu. Następnie wszelkie zmiany członkostwa wprowadzone po stronie usługi LMS dotyczące dodawania lub usuwania elementów członkowskich są odzwierciedlane przy użyciu synchronizacji zaimplementowanego przez partnera LMS. Jeszcze przed włączeniem tego procesu dla nauczyciela administrator instytutu edukacji M365 zezwala nauczycielom na dostęp do synchronizacji przy użyciu metody uprawnień synchronizacji znajdującej się poniżej. Te uprawnienia są przyznawane partnerowi LMS, aby umożliwić nauczycielom synchronizowanie członkostwa między kursem LMS a zespołami Teams Class.
 
-8. Włącz Microsoft Teams synchronizacji przez włączenie przełącznika.
+8. Włącz synchronizację Microsoft Teams, włączając przełącznik.
 
    ![teams-sync.](media/teams-sync.png)
 
-## <a name="canvas-admin"></a>Administrator systemu Canvas
+## <a name="canvas-admin"></a>Administrator kanwy
 
-Skonfiguruj integrację z Microsoft Teams LTI 1.3.
+Skonfiguruj integrację Microsoft Teams LTI 1.3.
 
-Jako administrator systemu Canvas musisz dodać aplikację LTI spotkań Microsoft Teams w swoim środowisku. Zanotuj identyfikator klienta LTI aplikacji.
+Jako administrator kanwy musisz dodać aplikację LTI Microsoft Teams spotkań w danym środowisku. Zanotuj identyfikator klienta LTI dla aplikacji.
 
- - Microsoft Teams spotkania — 170000000000703
+ - spotkania Microsoft Teams — 170000000000703
 
-1. Ustawienia **administratora programu** >  **AccessApps**.
+1. Dostęp **do ustawień** >  **administratoraAplikacje**.
 
-2. Wybierz **pozycję + Aplikacja**, aby dodać Teams LTI.
+2. Wybierz pozycję **+ Aplikacja**, aby dodać Teams aplikacji LTI.
 
-   ![external-apps.](media/external-apps.png)
+   ![aplikacje zewnętrzne.](media/external-apps.png)
 
 3. Wybierz **pozycję Według identyfikatora klienta** dla typu konfiguracji.
 
@@ -85,16 +85,16 @@ Jako administrator systemu Canvas musisz dodać aplikację LTI spotkań Microsof
 
 4. Wprowadź podany identyfikator klienta, a następnie wybierz pozycję **Prześlij**.
 
-   Zauważysz, że w spotkaniach Microsoft Teams nazwa aplikacji LTI dla identyfikatora klienta w celu potwierdzenia.
+   Zobaczysz nazwę aplikacji LTI spotkań Microsoft Teams dla identyfikatora klienta w celu potwierdzenia.
 
 5. Wybranie pozycji **Zainstaluj**.
 
-   Aplikacja Microsoft Teams LTI zostanie dodana do listy aplikacji zewnętrznych.
+   Aplikacja LTI spotkań Microsoft Teams zostanie dodana do listy aplikacji zewnętrznych.
 
-6. Włącz aplikację, przechodząc do kluczy dewelopera na koncie administratora systemu Canvas, wybierając pozycję dziedziczoną i włączając przełącznik "wł" dla Microsoft Teams spotkania.
+6. Włącz aplikację, przechodząc do kluczy deweloperów na koncie administratora kanwy, wybierając pozycję dziedziczone i włączając przełącznik dla Microsoft Teams Spotkania.
 
-## <a name="enable-for-canvas-courses"></a>Włączanie kursów dla kanwy
+## <a name="enable-for-canvas-courses"></a>Włącz dla kursów kanwy
 
-Aby korzystać z lti w ramach kursu, instruktor kursu Canvas musi włączyć synchronizację integracji. Każdy kurs musi zostać włączony przez instruktora w celu utworzenia Teams; nie ma żadnego globalnego mechanizmu Teams tworzenia. Ten sposób tworzona jest z zachowaniem ostrożności, aby zapobiec Teams tworzenia niechcianych wiadomości.
+Aby korzystać z lti w ramach kursu, instruktor kursu Canvas musi włączyć synchronizację integracji. Każdy kurs musi być włączony przez instruktora w celu utworzenia odpowiedniego Teams; nie ma globalnego mechanizmu tworzenia Teams. Jest to zaprojektowane z zachowaniem ostrożności, aby zapobiec tworzeniu niechcianych Teams.
 
-Należy poleć nauczycielom dokumentację [dla nauczycieli](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) w celu włączenia funkcji LTI dla każdego kursu i ukończenia konfiguracji integracji.
+Zapoznaj się z [dokumentacją nauczycieli](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) dotyczącą włączania lti dla każdego kursu i ukończenia konfiguracji integracji.

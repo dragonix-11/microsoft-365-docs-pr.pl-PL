@@ -1,6 +1,6 @@
 ---
 title: Dowiedz się więcej o zgodności w komunikacji
-description: Dowiedz się więcej o zgodności komunikacji w usłudze Microsoft Purview
+description: Dowiedz się więcej o zgodności komunikacji w Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, zgodność, zgodność z komunikacją
 f1.keywords:
 - NOCSH
@@ -21,21 +21,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd7ab3040b261fb7c664d92b73a069cc8ba6e3b5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 09135faa505aa2d5b95003cc7321a38a0eaddaf3
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997323"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599216"
 ---
 # <a name="learn-about-communication-compliance"></a>Dowiedz się więcej o zgodności w komunikacji
 
 > [!TIP]
-> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum wersji próbnych portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
+> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum portal zgodności Microsoft Purview prób](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview Communication Compliance to rozwiązanie ryzyka związanego z informacjami poufnymi, które pomaga zminimalizować ryzyko komunikacji, pomagając wykrywać, przechwytywać i działać na nieodpowiednich komunikatach w organizacji. Wstępnie zdefiniowane i niestandardowe zasady umożliwiają skanowanie komunikacji wewnętrznej i zewnętrznej pod kątem dopasowań zasad, aby mogły zostać zbadane przez wyznaczonych recenzentów. Recenzenci mogą badać skanowane wiadomości e-mail, Microsoft Teams, Yammer lub komunikację innych firm w organizacji i podejmować odpowiednie działania, aby upewnić się, że są one zgodne ze standardami wiadomości organizacji.
+Zgodność w komunikacji w Microsoft Purview jest rozwiązaniem ryzyka wewnętrznego, które pomaga zminimalizować ryzyko komunikacji, pomagając wykrywać, przechwytywać i działać na nieodpowiednich komunikatach w organizacji. Wstępnie zdefiniowane i niestandardowe zasady umożliwiają skanowanie komunikacji wewnętrznej i zewnętrznej pod kątem dopasowań zasad, aby mogły zostać zbadane przez wyznaczonych recenzentów. Recenzenci mogą badać skanowane wiadomości e-mail, Microsoft Teams, Yammer lub komunikację innych firm w organizacji i podejmować odpowiednie działania, aby upewnić się, że są one zgodne ze standardami wiadomości organizacji.
 
 Zasady zgodności komunikacji w Microsoft 365 pomagają przezwyciężyć wiele nowoczesnych wyzwań związanych ze zgodnością oraz komunikacją wewnętrzną i zewnętrzną, w tym:
 
@@ -44,6 +44,8 @@ Zasady zgodności komunikacji w Microsoft 365 pomagają przezwyciężyć wiele n
 - Egzekwowanie przepisów i ryzyko grzywien
 
 Ponadto może istnieć podział obowiązków między administratorami IT i zespołem zarządzania zgodnością. Zgodność z komunikacją obsługuje separację między konfiguracją zasad a badaniem i przeglądem komunikatów. Na przykład grupa IT w twojej organizacji może być odpowiedzialna za konfigurowanie uprawnień, grup i zasad zgodności komunikacji, a badacze i recenzenci mogą być odpowiedzialni za klasyfikowanie, przeglądanie i ograniczanie akcji komunikatów.
+
+Aby uzyskać więcej informacji i omówienie procesu planowania dotyczącego zgodności i ryzykownych działań w organizacji, zobacz [Uruchamianie programu do zarządzania ryzykiem wewnętrznym](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
 Najnowsze prezentacje konferencji Ignite dotyczące zgodności z komunikacją można znaleźć w następujących filmach wideo:
 
@@ -117,7 +119,7 @@ Nowe interaktywne pulpity nawigacyjne alertów, dopasowań zasad, akcji i trend�
 
 - **Aktywne inteligentne alerty**: Alerty dotyczące dopasowań zasad wymagających natychmiastowej uwagi obejmują nowe pulpity nawigacyjne dla oczekujących elementów posortowanych według ważności i nowe automatyczne powiadomienia e-mail wysyłane do wyznaczonych recenzentów.
 - **Interaktywne pulpity nawigacyjne**: nowe pulpity nawigacyjne wyświetlają dopasowania zasad, oczekujące i rozwiązane akcje oraz trendy według użytkowników i zasad.
-- **Obsługa inspekcji**: pełny dziennik zasad i działań przeglądania jest łatwo eksportowany z portalu zgodności usługi Microsoft Purview, aby ułatwić obsługę żądań przeglądu inspekcji.
+- **Obsługa inspekcji**: pełny dziennik zasad i działań przeglądowych można łatwo wyeksportować z portal zgodności Microsoft Purview, aby ułatwić obsługę żądań przeglądu inspekcji.
 
 ## <a name="integration-with-microsoft-365-services"></a>Integracja z usługami Microsoft 365
 
@@ -146,7 +148,7 @@ W tym kroku przepływu pracy zidentyfikujesz wymagania dotyczące zgodności i s
 >[!IMPORTANT]
 >Domyślnie administratorzy globalni nie mają dostępu do funkcji zgodności komunikacji. Aby włączyć uprawnienia do funkcji zgodności komunikacji, zobacz [Udostępnianie zgodności komunikacji w organizacji](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
-W portalu zgodności usługi Microsoft Purview można wybierać spośród następujących szablonów zasad:
+W portal zgodności Microsoft Purview możesz wybrać spośród następujących szablonów zasad:
 
 - **Monitorowanie pod kątem nieodpowiedniego tekstu**: użyj tego szablonu, aby szybko utworzyć zasady, które używają wbudowanych klasyfikatorów do automatycznego wykrywania tekstu w wiadomościach, które mogą być uważane za nieodpowiednie, obraźliwe lub obraźliwe.
 - **Monitorowanie pod kątem nieodpowiednich obrazów**: użyj tego szablonu, aby szybko utworzyć zasady, które używają wbudowanych klasyfikatorów do automatycznego wykrywania zawartości zawierającej obrazy dla dorosłych i erotyczne, które mogą być uważane za nieodpowiednie w organizacji.
@@ -161,7 +163,7 @@ W portalu zgodności usługi Microsoft Purview można wybierać spośród nastę
 
 ### <a name="investigate"></a>Zbadaj
 
-W tym kroku przyjrzysz się bardziej szczegółowym problemom wykrytym jako zgodne z zasadami zgodności komunikacji. Ten krok obejmuje następujące akcje dostępne w portalu zgodności usługi Microsoft Purview:
+W tym kroku przyjrzysz się bardziej szczegółowym problemom wykrytym jako zgodne z zasadami zgodności komunikacji. Ten krok obejmuje następujące akcje dostępne w portal zgodności Microsoft Purview:
 
 - **Alerty**: gdy komunikat jest zgodny z warunkiem zasad, alert jest generowany automatycznie. Dla każdego alertu można zobaczyć stan, ważność, czas wykrycia oraz przypisanie przypadku zbierania elektronicznych materiałów dowodowych (Premium) i jego stanu. Nowe alerty są wyświetlane na stronie głównej zgodności komunikacji i na stronie **Alerty** i są wyświetlane w kolejności ważności.
 - **Zarządzanie problemami**: dla każdego alertu możesz podjąć działania śledcze, aby pomóc w skorygowaniu problemu wykrytego w komunikacie.
@@ -179,7 +181,7 @@ Następnym krokiem jest skorygowanie problemów ze zgodnością komunikacji, kt�
 - **Eskaluj do innego recenzenta**: Czasami pierwszy recenzent problemu potrzebuje danych wejściowych od innych recenzentów, aby pomóc w rozwiązaniu zdarzenia. Problemy z komunikatami można łatwo eskalować do recenzentów w innych obszarach organizacji w ramach procesu rozwiązywania problemów.
 - **Raport jako błędnie sklasyfikowany**: Komunikaty niepoprawnie wykryte jako dopasowania zasad zgodności będą od czasu do czasu przechodzić do procesu przeglądu. Możesz oznaczyć te typy alertów jako błędnie sklasyfikowane, przesłać opinię do firmy Microsoft na temat błędnej klasyfikacji w celu ulepszenia globalnych klasyfikatorów i automatycznie rozwiązać problem.
 - **Usuń komunikat w Teams (wersja zapoznawcza)**: niestosowne wiadomości mogą zostać usunięte z wyświetlania w kanałach Microsoft Teams lub wiadomościach osobistych i czatach grupowych. Usunięte nieodpowiednie komunikaty są zastępowane powiadomieniem o usunięciu komunikatu z powodu naruszenia zasad.
-- **Eskalacja w celu zbadania**: W najpoważniejszych sytuacjach może być konieczne udostępnienie informacji o zgodności komunikacji innym recenzentom w organizacji. Zgodność z komunikacją jest ściśle zintegrowana z innymi funkcjami usługi Microsoft Purview, które ułatwiają kompleksowe rozwiązywanie ryzyka. Eskalacja sprawy do zbadania umożliwia przesyłanie danych i zarządzanie sprawą do usługi Microsoft Purview eDiscovery (Premium). Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Umożliwia zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)](overview-ediscovery-20.md).
+- **Eskalacja w celu zbadania**: W najpoważniejszych sytuacjach może być konieczne udostępnienie informacji o zgodności komunikacji innym recenzentom w organizacji. Zgodność z komunikacją jest ściśle zintegrowana z innymi funkcjami Microsoft Purview, które ułatwiają kompleksowe rozwiązywanie ryzyka. Eskalacja sprawy do zbadania umożliwia przesyłanie danych i zarządzanie sprawą w celu Microsoft Purview zbierania elektronicznych materiałów dowodowych (Premium). Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Umożliwia zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Monitorowanie
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Skonfiguruj etykiety poufności na potrzeby szyfrowania, które chroni dane, ograniczając dostęp i użycie.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14be99abd0a31a8141f5f66a205a9cd0e17391af
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: f2a9f399e447e7b483e664da2e0bf7575b9f55d8
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469453"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599238"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Ogranicz dostęp do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania
 
@@ -33,7 +33,7 @@ Podczas tworzenia etykiety poufności można ograniczyć dostęp do zawartości,
 
 - Tylko użytkownicy w organizacji mogą otworzyć poufny dokument lub wiadomość e-mail.
 - Tylko użytkownicy w dziale marketingu mogą edytować i drukować dokument lub wiadomość e-mail z ogłoszeniem o promocji, podczas gdy wszyscy inni użytkownicy w organizacji mogą go tylko odczytać.
-- Użytkownicy nie mogą przesyłać dalej wiadomości e-mail ani kopiować z niej informacji zawierających wiadomości o reorganizacji wewnętrznej.
+- Użytkownicy nie mogą przesyłać dalej wiadomości e-mail ani kopiować z niej informacji zawierających wiadomości o wewnętrznej reorganizacji.
 - Nie można otworzyć bieżącego cennika wysyłanego do partnerów biznesowych po określonej dacie.
 
 Gdy dokument lub wiadomość e-mail jest szyfrowana, dostęp do zawartości jest ograniczony, dzięki czemu:
@@ -69,14 +69,14 @@ Przed użyciem szyfrowania może być konieczne wykonywanie pewnych zadań konfi
 
 - Konfigurowanie Exchange dla usługi Azure Information Protection
     
-    Exchange nie trzeba konfigurować dla usługi Azure Information Protection, aby użytkownicy mogli stosować etykiety w Outlook w celu szyfrowania wiadomości e-mail. Jednak dopóki Exchange nie zostanie skonfigurowana dla usługi Azure Information Protection, nie uzyskasz pełnej funkcjonalności korzystania z usługi Azure Rights Management Protection z Exchange.
+    Exchange nie trzeba konfigurować dla usługi Azure Information Protection, zanim użytkownicy będą mogli stosować etykiety w Outlook w celu szyfrowania wiadomości e-mail. Jednak dopóki Exchange nie zostanie skonfigurowana dla usługi Azure Information Protection, nie uzyskasz pełnej funkcjonalności korzystania z usługi Azure Rights Management Protection z Exchange.
     
     Na przykład użytkownicy nie mogą wyświetlać zaszyfrowanych wiadomości e-mail na telefonach komórkowych lub za pomocą Outlook w sieci Web, szyfrowane wiadomości e-mail nie mogą być indeksowane do wyszukiwania i nie można skonfigurować Exchange Online DLP pod kątem ochrony Rights Management. 
     
-    Aby upewnić się, że Exchange może obsługiwać te dodatkowe scenariusze, zobacz następujące kwestie:
+    Aby upewnić się, że Exchange może obsługiwać te dodatkowe scenariusze:
     
     - Aby uzyskać Exchange Online, zobacz instrukcje dotyczące [Exchange Online: Konfiguracja usługi IRM](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-    - Aby Exchange lokalnie, należy wdrożyć [łącznik usługi RMS i skonfigurować serwery Exchange](/azure/information-protection/deploy-rms-connector). 
+    - Aby Exchange lokalnie, należy wdrożyć [łącznik usługi RMS i skonfigurować serwery Exchange](/azure/information-protection/deploy-rms-connector).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Jak skonfigurować etykietę na potrzeby szyfrowania
 
@@ -122,14 +122,14 @@ W poniższej tabeli określono, co dzieje się z istniejącym szyfrowaniem w prz
 
 <sup>\*</sup>Obsługiwane przez klienta ujednoliconego etykietowania platformy Azure Information Protection
 
-W przypadkach, gdy nowe szyfrowanie etykiet jest stosowane lub oryginalne szyfrowanie jest usuwane, dzieje się tak tylko wtedy, gdy użytkownik stosujący etykietę ma prawo użytkowania lub rolę, która obsługuje tę akcję:
+W przypadkach zastosowania nowego szyfrowania etykiet lub usunięcia oryginalnego szyfrowania dzieje się tak tylko wtedy, gdy użytkownik, który stosuje etykietę, ma prawo użytkowania lub rolę, która obsługuje tę akcję:
 
 - [Prawo użycia](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) — eksport lub pełna kontrola.
 - Rola [wystawcy Rights Management lub właściciela Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) lub [administratora](/azure/information-protection/configure-super-users).
 
 Jeśli użytkownik nie ma jednego z tych praw lub ról, nie można zastosować etykiety, a więc oryginalne szyfrowanie zostanie zachowane. Użytkownik widzi następujący komunikat: **Nie masz uprawnień do wprowadzenia tej zmiany w etykiecie poufności. Skontaktuj się z właścicielem zawartości.**
 
-Na przykład osoba, która stosuje funkcję Nie przekazuj do wiadomości e-mail, może ponownie oznaczać wątek w celu zastąpienia szyfrowania lub usunięcia go, ponieważ jest właścicielem Rights Management wiadomości e-mail. Jednak z wyjątkiem superużytków adresaci tej wiadomości e-mail nie mogą jej ponownie oznaczać, ponieważ nie mają wymaganych praw użytkowania.
+Na przykład osoba, która zastosuje polecenie Nie przesyłaj dalej do wiadomości e-mail, może ponownie oznaczać wątek w celu zastąpienia szyfrowania lub usunięcia go, ponieważ jest właścicielem Rights Management wiadomości e-mail. Ale z wyjątkiem superużytków adresaci tej wiadomości e-mail nie mogą jej ponownie oznaczać, ponieważ nie mają wymaganych praw użytkowania.
 
 #### <a name="email-attachments-for-encrypted-email-messages"></a>Załączniki wiadomości e-mail dla zaszyfrowanych wiadomości e-mail
 
@@ -146,7 +146,7 @@ Po wybraniu pozycji **Konfiguruj ustawienia szyfrowania** na stronie **Szyfrowan
 
 Jeśli na przykład masz etykietę poufności o nazwie **Wysoce poufne** , która zostanie zastosowana do najbardziej poufnej zawartości, możesz zdecydować teraz, kto otrzyma uprawnienia jakiego typu do tej zawartości.
 
-Alternatywnie, jeśli masz etykietę poufności o nazwie **Kontrakty biznesowe**, a przepływ pracy organizacji wymaga, aby użytkownicy współpracowali nad tą zawartością z różnymi osobami ad hoc, możesz zezwolić użytkownikom na decydowanie, kto otrzymuje uprawnienia podczas przypisywania etykiety. Ta elastyczność ułatwia zarówno produktywność użytkowników, jak i zmniejsza liczbę żądań administratorów dotyczących aktualizacji lub tworzenia nowych etykiet poufności w celu rozwiązania określonych scenariuszy.
+Alternatywnie, jeśli masz etykietę poufności o nazwie **Kontrakty biznesowe**, a przepływ pracy organizacji wymaga, aby użytkownicy współpracowali nad tą zawartością z różnymi osobami na zasadzie nieplanowanej, możesz zezwolić użytkownikom na decydowanie, kto otrzymuje uprawnienia podczas przypisywania etykiety. Ta elastyczność ułatwia zarówno produktywność użytkowników, jak i zmniejsza liczbę żądań administratorów dotyczących aktualizacji lub tworzenia nowych etykiet poufności w celu rozwiązania określonych scenariuszy.
 
 Określ, czy chcesz teraz przypisać uprawnienia, czy zezwolić użytkownikom na przypisywanie uprawnień:
 
@@ -156,13 +156,22 @@ Określ, czy chcesz teraz przypisać uprawnienia, czy zezwolić użytkownikom na
 
 Użyj następujących opcji, aby kontrolować, kto może uzyskiwać dostęp do poczty e-mail lub dokumentów, do których jest stosowana ta etykieta. Można:
 
-- **Zezwalaj na wygaśnięcie dostępu do zawartości oznaczonej etykietą** w określonym dniu lub po określonej liczbie dni po zastosowaniu etykiety. Po tym czasie użytkownicy nie będą mogli otworzyć oznaczonego elementu. Jeśli określisz datę, będzie ona obowiązywać o północy w tej dacie w bieżącej strefie czasowej. (Należy pamiętać, że niektórzy klienci poczty e-mail mogą nie wymuszać wygaśnięcia i wyświetlać wiadomości e-mail po dacie wygaśnięcia ze względu na mechanizmy buforowania).
+- **Zezwalaj na wygaśnięcie dostępu do zawartości oznaczonej etykietą** w określonym dniu lub po określonej liczbie dni po zastosowaniu etykiety. Po tym czasie użytkownicy nie będą mogli otworzyć oznaczonego elementu. Jeśli określisz datę, ta data będzie obowiązywać o północy w bieżącej strefie czasowej. Niektórzy klienci poczty e-mail mogą nie wymuszać wygaśnięcia i wyświetlać wiadomości e-mail po dacie wygaśnięcia ze względu na mechanizmy buforowania.
 
-- **Zezwalaj na dostęp w trybie offline** nigdy, zawsze lub przez określoną liczbę dni po zastosowaniu etykiety. Jeśli ograniczysz dostęp w trybie offline do wartości nigdy lub do kilku dni, po osiągnięciu tego progu użytkownicy muszą zostać ponownie uwierzytelnieni, a ich dostęp zostanie zarejestrowany. Aby uzyskać więcej informacji, zobacz następną sekcję dotyczącą Rights Management licencji użycia.
+- **Zezwalaj na dostęp w trybie offline** nigdy, zawsze lub przez określoną liczbę dni po zastosowaniu etykiety. To ustawienie służy do równoważenia wszelkich wymagań dotyczących zabezpieczeń z możliwością otwierania zaszyfrowanej zawartości przez użytkowników, gdy nie mają połączenia z Internetem. Jeśli ograniczysz dostęp w trybie offline do wartości nigdy lub do kilku dni, po osiągnięciu tego progu użytkownicy muszą zostać ponownie uwierzytelnieni, a ich dostęp zostanie zarejestrowany. Aby uzyskać więcej informacji na temat działania tego procesu, zobacz następującą sekcję dotyczącą [licencji Rights Management użycia](#rights-management-use-license-for-offline-access).
 
 Ustawienia kontroli dostępu do zaszyfrowanej zawartości:
 
 ![Ustawienia uprawnień zdefiniowanych przez administratora.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+
+Rekomendacje dla ustawień dostępu wygaśnięcia i dostępu w trybie offline:
+
+|Ustawienie|Zalecane ustawienie|
+|-------|----------------|-------------------|
+|**Dostęp użytkowników do zawartości wygasa**|**Nigdy,** chyba że zawartość ma określone wymagania dotyczące czasu.|
+|**Zezwalaj na dostęp w trybie offline**|Zależy od poufności zawartości:<br /><br />- **Tylko przez kilka dni** =  **7** w przypadku poufnych danych biznesowych, które mogą spowodować uszkodzenie firmy w przypadku udostępnienia ich nieautoryzowanym osobom. To zalecenie zapewnia zrównoważony kompromis między elastycznością a zabezpieczeniami. Przykłady obejmują kontrakty, raporty zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.<br /><br />- **Nigdy w** przypadku bardzo poufnych danych biznesowych, które mogłyby spowodować uszkodzenie firmy, gdyby zostały udostępnione nieautoryzowanym osobom. To zalecenie nadaje priorytet bezpieczeństwu nad elastycznością i gwarantuje, że jeśli usuniesz dostęp co najmniej jednego użytkownika do dokumentu, nie będzie mógł go otworzyć. Przykłady obejmują informacje o pracownikach i klientach, hasła, kod źródłowy i wstępnie ogłoszone raporty finansowe. <br /><br />- **Zawsze** w przypadku mniej poufnej zawartości, w której nie ma znaczenia, czy użytkownicy mogą nadal otwierać zaszyfrowaną zawartość przez maksymalnie 30 dni (lub skonfigurowany okres ważności licencji użytkowania dla dzierżawy) po usunięciu dostępu i wcześniej otworzyli zaszyfrowaną zawartość.|
+
+Tylko etykiety skonfigurowane do przypisywania uprawnień obsługują teraz różne wartości dostępu w trybie offline. Etykiety, które umożliwiają użytkownikom przypisywanie uprawnień, automatycznie używają Rights Management okresu ważności licencji dzierżawy. Na przykład etykiety skonfigurowane dla opcji Nie przesyłaj dalej, Szyfruj tylko i monituj użytkowników o określenie własnych uprawnień. Wartość domyślna tego ustawienia to 30 dni.
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Rights Management używać licencji na dostęp w trybie offline
 
@@ -197,7 +206,7 @@ Podczas przypisywania uprawnień można wybrać następujące opcje:
 
 - Wszyscy uwierzytelnieni użytkownicy. Przed wybraniem tego ustawienia upewnij się, że znasz [wymagania i ograniczenia](#requirements-and-limitations-for-add-any-authenticated-users) tego ustawienia.
 
-- Każda określona grupa zabezpieczeń, grupa dystrybucyjna lub grupa Microsoft 365 z obsługą poczty e-mail lub użytkownika ([wcześniej grupa Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) w Azure AD. Grupa Microsoft 365 może mieć członkostwo statyczne lub [dynamiczne](/azure/active-directory/users-groups-roles/groups-create-rule). Należy pamiętać, że nie można używać [dynamicznej grupy dystrybucyjnej z Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), ponieważ ten typ grupy nie jest synchronizowany z Azure AD i nie można użyć grupy zabezpieczeń, która nie jest włączona pocztą e-mail.
+- Każda określona grupa zabezpieczeń, grupa dystrybucyjna lub grupa Microsoft 365 z obsługą poczty e-mail lub użytkownika w Azure AD. Grupa Microsoft 365 może mieć członkostwo statyczne lub [dynamiczne](/azure/active-directory/users-groups-roles/groups-create-rule). Nie można użyć [dynamicznej grupy dystrybucyjnej z Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), ponieważ ten typ grupy nie jest synchronizowany z Azure AD. Nie można również użyć grupy zabezpieczeń, która nie ma włączonej poczty e-mail.
     
     Chociaż można określić grupy zawierające kontakty pocztowe jako wygodną metodę udzielania dostępu wielu osobom spoza organizacji, obecnie istnieje znany problem z tą konfiguracją. Aby uzyskać więcej informacji, zobacz [Kontakty poczty w grupach mają sporadyczny dostęp do zaszyfrowanej zawartości](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content).
 
@@ -248,7 +257,7 @@ Wystawcy Rights Management zawsze otrzymują uprawnienia pełnej kontroli dla do
 
 - Jeśli ustawienia szyfrowania obejmują datę wygaśnięcia, wystawcy Rights Management nadal mogą otwierać i edytować dokument lub wiadomość e-mail po tej dacie.
 - Wystawcy Rights Management zawsze mogą uzyskiwać dostęp do dokumentu lub wiadomości e-mail w trybie offline.
-- Wystawcy Rights Management nadal może otworzyć dokument po jego odwołaniu.
+- Wystawcy Rights Management nadal mogą otworzyć dokument po jego odwołaniu.
 
 Aby uzyskać więcej informacji, zobacz [Rights Management wystawcy i właściciela Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
@@ -303,7 +312,7 @@ W Outlook, gdy użytkownik stosuje etykietę poufności, która umożliwia mu pr
 
 Gdy któraś z tych opcji zostanie zastosowana do wiadomości e-mail, wiadomość e-mail zostanie zaszyfrowana, a adresaci muszą zostać uwierzytelnieni. Następnie adresaci automatycznie mają ograniczone prawa użytkowania:
 
-- **Nie przesyłaj dalej**: adresaci nie mogą przesyłać dalej wiadomości e-mail, drukować jej ani kopiować. Na przykład w kliencie Outlook przycisk Prześlij dalej jest niedostępny, opcje menu Zapisz jako i Drukuj nie są dostępne i nie można dodawać ani zmieniać adresatów w polach Do, DW lub BCC.
+- **Nie przesyłaj dalej**: adresaci nie mogą przesłać dalej wiadomości e-mail, wydrukować jej ani skopiować z niej. Na przykład w kliencie Outlook przycisk Prześlij dalej jest niedostępny, opcje menu Zapisz jako i Drukuj nie są dostępne i nie można dodawać ani zmieniać adresatów w polach Do, DW lub BCC.
     
     Aby uzyskać więcej informacji na temat działania tej opcji, zobacz [Nie przesyłaj dalej opcji wiadomości e-mail](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
 
@@ -311,21 +320,21 @@ Gdy któraś z tych opcji zostanie zastosowana do wiadomości e-mail, wiadomoś�
     
     Aby uzyskać więcej informacji na temat działania tej opcji, zobacz [Opcja tylko szyfrowania dla wiadomości e-mail](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
 
-Niezaszyfrowane Office dokumenty dołączone do wiadomości e-mail automatycznie dziedziczą te same ograniczenia. W przypadku pozycji Nie przesyłaj dalej prawa użytkowania stosowane do tych dokumentów to Edytuj zawartość, Edytuj; Zapisz; Wyświetl, Otwórz, Odczyt; i Zezwalaj na makra. Jeśli użytkownik chce mieć inne prawa użytkowania załącznika lub załącznik nie jest dokumentem Office, który obsługuje tę dziedziczoną ochronę, użytkownik musi zaszyfrować plik przed dołączeniem go do wiadomości e-mail.
+Niezaszyfrowane Office dokumenty dołączone do wiadomości e-mail automatycznie dziedziczą te same ograniczenia. W przypadku pozycji Nie przesyłaj dalej prawa użytkowania stosowane do tych dokumentów to Edytuj zawartość, Edytuj; Zapisz; Wyświetl, Otwórz, Odczyt; i Zezwalaj na makra. Jeśli użytkownik chce mieć inne prawa użytkowania załącznika lub załącznik nie jest dokumentem Office, który obsługuje tę ochronę dziedziczoną, użytkownik musi zaszyfrować plik przed dołączeniem go do wiadomości e-mail.
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Uprawnienia programu Word, PowerPoint i Excel
 
-W programie Word, PowerPoint i Excel, gdy użytkownik zastosuje etykietę poufności, która umożliwia mu przypisanie uprawnień do dokumentu, zostanie wyświetlony monit o określenie ich wyboru użytkowników i uprawnień po zastosowaniu szyfrowania.
+W programie Word, PowerPoint i Excel, gdy użytkownik zastosuje etykietę poufności, która umożliwia mu przypisywanie uprawnień do dokumentu, użytkownik jest monitowany o określenie wyboru użytkowników i uprawnień do szyfrowania.
 
 Na przykład w przypadku klienta ujednoliconego etykietowania usługi Azure Information Protection, chyba że [włączono współtworzenie](sensitivity-labels-coauthoring.md), użytkownicy mogą:
 
 - Wybierz poziom uprawnień, taki jak Przeglądarka (która przypisuje uprawnienie Tylko widok) lub Co-Author (który przypisuje uprawnienia Widok, Edycja, Kopiuj i Drukuj).
 - Wybierz użytkowników, grupy lub organizacje. Może to obejmować osoby zarówno w organizacji, jak i poza nią.
-- Ustaw datę wygaśnięcia, po której wybrani użytkownicy nie będą mogli uzyskać dostępu do zawartości. Aby uzyskać więcej informacji, zobacz powyższą sekcję [Rights Management używanie licencji na dostęp w trybie offline](#rights-management-use-license-for-offline-access).
+- Ustaw datę wygaśnięcia, po której wybrani użytkownicy nie mogą uzyskać dostępu do zawartości. Aby uzyskać więcej informacji, zobacz powyższą sekcję [Rights Management używanie licencji na dostęp w trybie offline](#rights-management-use-license-for-offline-access).
 
 ![Opcje ochrony użytkownika przy użyciu uprawnień niestandardowych.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
-W przypadku etykietowania wbudowanego i klienta ujednoliconego etykietowania usługi Azure Information Protection, gdy [jest włączone współtworzenie](sensitivity-labels-coauthoring.md), użytkownicy widzą to samo okno dialogowe, tak jak w przypadku wybrania następujących opcji:
+W przypadku wbudowanego etykietowania oraz dla klienta ujednoliconego etykietowania usługi Azure Information Protection, gdy [jest włączone współtworzenie](sensitivity-labels-coauthoring.md), użytkownicy widzą to samo okno dialogowe, tak jak w przypadku wybrania następujących opcji:
 
 - Windows: Karta **Plik** > **InfoProtect** >  **DocumentRestrict** >  **AccessRestricted Access** > 
 

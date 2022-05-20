@@ -1,6 +1,6 @@
 ---
 title: Dowiedz się więcej o zarządzaniu ryzykiem wewnętrznym
-description: Dowiedz się, jak zminimalizować ryzyko w organizacji dzięki zarządzaniu ryzykiem wewnętrznym w usłudze Microsoft Purview.
+description: Dowiedz się, jak zminimalizować ryzyko w organizacji dzięki zarządzaniu ryzykiem wewnętrznym w Microsoft Purview.
 keywords: Microsoft 365, Microsoft Purview, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -15,21 +15,23 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 69c24b9d26fb16936064d9099f0866ce60d16d2c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 86a56ec16f81eaa6b61a452829e65251b673cb78
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997037"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599260"
 ---
 # <a name="learn-about-insider-risk-management"></a>Dowiedz się więcej o zarządzaniu ryzykiem wewnętrznym
 
 > [!TIP]
-> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum wersji próbnych portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
+> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum portal zgodności Microsoft Purview prób](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview Insider Risk Management to rozwiązanie do zapewniania zgodności, które pomaga zminimalizować ryzyko wewnętrzne, umożliwiając wykrywanie, badanie i działanie na złośliwych i niezamierzonych działaniach w organizacji. Zasady ryzyka dotyczącego informacji poufnych umożliwiają definiowanie typów zagrożeń do identyfikowania i wykrywania w organizacji, w tym działania w sprawach i eskalowanie spraw do usługi Microsoft eDiscovery (Premium) w razie potrzeby. Analitycy ryzyka w organizacji mogą szybko podjąć odpowiednie działania, aby upewnić się, że użytkownicy są zgodni ze standardami zgodności organizacji.
+Zarządzanie ryzykiem wewnętrznym w Microsoft Purview to rozwiązanie do zapewniania zgodności, które pomaga zminimalizować ryzyko wewnętrzne, umożliwiając wykrywanie, badanie i działanie na złośliwych i niezamierzonych działaniach w organizacji. Zasady ryzyka dotyczącego informacji poufnych umożliwiają definiowanie typów zagrożeń do identyfikowania i wykrywania w organizacji, w tym działania w sprawach i eskalowanie spraw do usługi Microsoft eDiscovery (Premium) w razie potrzeby. Analitycy ryzyka w organizacji mogą szybko podjąć odpowiednie działania, aby upewnić się, że użytkownicy są zgodni ze standardami zgodności organizacji.
+
+Aby uzyskać więcej informacji i omówienie procesu planowania w celu rozwiązania ryzykownych działań w organizacji, zobacz [Uruchamianie programu do zarządzania ryzykiem wewnętrznym](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
 Obejrzyj poniższe filmy wideo, aby dowiedzieć się, jak zarządzanie ryzykiem wewnętrznym może pomóc organizacji w zapobieganiu, wykrywaniu i ograniczaniu ryzyka przy jednoczesnym określaniu priorytetów wartości organizacji, kultury i środowiska użytkownika:
 <br>
@@ -143,9 +145,9 @@ Ponadto nowy [dziennik inspekcji (wersja zapoznawcza)](insider-risk-management-a
 
 Po zbadaniu spraw recenzenci mogą szybko podjąć działania w celu rozwiązania problemu lub współpracy z innymi uczestnikami projektu ryzyka w organizacji. Jeśli użytkownicy przypadkowo lub nieumyślnie naruszają warunki zasad, do użytkownika można wysłać proste powiadomienie o przypomnieniu z szablonów powiadomień, które można dostosować dla swojej organizacji. Te powiadomienia mogą służyć jako proste przypomnienia lub mogą skierować użytkownika do odświeżenia szkolenia lub wskazówek, które pomogą zapobiec przyszłemu ryzykownemu zachowaniu. Aby uzyskać więcej informacji, zobacz [Szablony powiadomień dotyczących zarządzania ryzykiem wewnętrznym](insider-risk-management-notices.md).
 
-W poważniejszych sytuacjach może być konieczne udostępnienie informacji o przypadku zarządzania ryzykiem wewnętrznym innym recenzentom lub usługom w organizacji. Zarządzanie ryzykiem wewnętrznym jest ściśle zintegrowane z innymi rozwiązaniami usługi Microsoft Purview, które ułatwiają kompleksowe rozwiązywanie problemów z ryzykiem.
+W poważniejszych sytuacjach może być konieczne udostępnienie informacji o przypadku zarządzania ryzykiem wewnętrznym innym recenzentom lub usługom w organizacji. Zarządzanie ryzykiem wewnętrznym jest ściśle zintegrowane z innymi rozwiązaniami Microsoft Purview, które ułatwiają kompleksowe rozwiązywanie ryzyka.
 
-- **eDiscovery (Premium)**: Eskalacja sprawy do zbadania umożliwia przesyłanie danych i zarządzanie sprawą do usługi Microsoft Purview eDiscovery (Premium). Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Umożliwia zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)](overview-ediscovery-20.md).
+- **eDiscovery (Premium)**: Eskalacja sprawy do zbadania umożliwia przesyłanie danych i zarządzanie sprawą w celu Microsoft Purview zbierania elektronicznych materiałów dowodowych (Premium). Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Umożliwia zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
 - **integracja interfejsów API zarządzania Office 365 (wersja zapoznawcza)**: zarządzanie ryzykiem wewnętrznym obsługuje eksportowanie informacji o alertach do usług zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM) za pośrednictwem interfejsów API zarządzania Office 365. Dostęp do informacji o alertach na platformie najlepiej pasuje do procesów ryzyka organizacji, co zapewnia większą elastyczność w sposobie działania na działaniach związanych z ryzykiem. Aby dowiedzieć się więcej na temat eksportowania informacji o alertach za pomocą interfejsów API zarządzania Office 365, zobacz [Eksportowanie alertów](insider-risk-management-settings.md#export-alerts).
 
 > [!NOTE]
