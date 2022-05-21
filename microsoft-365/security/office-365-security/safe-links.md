@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dowiedz się więcej o ochronie linków Sejf w Ochrona usługi Office 365 w usłudze Defender, aby chronić organizację przed wyłudzaniem informacji i innymi atakami korzystającymi ze złośliwych adresów URL. Odnajdywanie linków Teams Sejf i wyświetlanie grafiki komunikatów Sejf Links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aef211b91ef406926720f8c50e4af457d07eaab
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 46ea33c872782845a8d9697a9abbddcef22e94fb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535113"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623470"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>linki Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -62,6 +62,9 @@ Sejf Ochrona linków jest dostępna w następujących lokalizacjach:
 - **Microsoft Teams**: ochrona linków Sejf linków w Teams konwersacjach, czatach grupowych lub kanałach jest również kontrolowana przez zasady linków Sejf.
 
   Aby uzyskać więcej informacji na temat ochrony linków Sejf w Teams, zobacz sekcję [ustawienia linków Sejf dla Microsoft Teams](#safe-links-settings-for-microsoft-teams) w dalszej części tego artykułu.
+
+  > [!NOTE]
+  > Obecnie ochrona linków Sejf dla Microsoft Teams nie jest dostępna w Microsoft 365 GCC High lub Microsoft 365 DoD.
 
 - **aplikacje Office 365**: ochrona linków Sejf dla aplikacji Office 365 jest dostępna w obsługiwanych aplikacjach klasycznych, mobilnych i internetowych. Ochronę łączy Sejf dla aplikacji Office 365 **można skonfigurować** w ustawieniu globalnym **, które wykraczają poza** zasady linków Sejf. Aby uzyskać instrukcje, zobacz [Konfigurowanie ustawień globalnych dla ustawień linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-global-settings-for-safe-links.md).
 
@@ -163,6 +166,8 @@ Ochronę Sejf Łącza dla Microsoft Teams można włączyć lub wyłączyć w za
 
 > [!NOTE]
 > Po włączeniu lub wyłączeniu ochrony Sejf Łącza dla Teams może upłynąć do 24 godzin, aż zmiana zostanie wprowadzona.
+>
+> Obecnie ochrona linków Sejf dla Microsoft Teams nie jest dostępna w Microsoft 365 GCC High lub Microsoft 365 DoD.
 
 Następujące ustawienia w zasadach linków Sejf, które mają zastosowanie do linków w wiadomościach e-mail, dotyczą również linków w Teams:
 

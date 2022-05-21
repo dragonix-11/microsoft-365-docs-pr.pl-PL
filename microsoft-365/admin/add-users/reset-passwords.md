@@ -30,12 +30,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Zaloguj się przy użyciu konta administratora Microsoft 365, aby zresetować hasła dla użytkowników, gdy masz subskrypcję Microsoft 365 dla firm.
-ms.openlocfilehash: 0ce656355b83077809c7082a1bf0d34e8a5439cd
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 4c2c4bc1409a49b0f0bb26217fd349348331e95b
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436265"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620957"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>Resetowanie haseł w Microsoft 365 dla firm
 
@@ -45,11 +45,11 @@ W tym artykule wyjaśniono, jak zresetować hasła dla siebie i użytkowników, 
 > Możesz również skonfigurować samoobsługowe resetowanie haseł dla użytkowników, aby mogli oni zresetować własne hasła. Aby dowiedzieć się więcej, zobacz [Zezwalanie użytkownikom na resetowanie własnych haseł](let-users-reset-passwords.md).
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Ten artykuł jest przeznaczony dla osób, które konfigurują zasady wygasania haseł dla firmy, instytucji edukacyjnej lub organizacji niedochodowej. Aby wykonać te kroki, musisz zalogować się przy użyciu konta administratora Microsoft 365. [Co to jest konto administratora?] (Omówienie Centrum administracyjne platformy Microsoft 365](.. /admin-overview/admin-center-overview.md).
+Ten artykuł jest przeznaczony dla osób, które konfigurują zasady wygasania haseł dla firmy, instytucji edukacyjnej lub organizacji niedochodowej. Aby wykonać te kroki, musisz zalogować się przy użyciu konta administratora Microsoft 365. [Omówienie w Centrum administracyjne platformy Microsoft 365](../admin-overview/admin-center-overview.md).
 
 Aby wykonać te kroki, musisz być [administratorem globalnym lub administratorem haseł](about-admin-roles.md) .
 

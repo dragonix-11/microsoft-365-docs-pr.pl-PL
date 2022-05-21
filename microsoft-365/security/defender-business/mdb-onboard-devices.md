@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ebe8f623842716ab53b4eae64d24ef85b9598099
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: 8f716f692687276e5c1c4482429ab016f9574f2f
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396162"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621321"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Dołączanie urządzeń do Microsoft Defender dla Firm
 
@@ -182,7 +182,7 @@ Po uruchomieniu skryptu lokalnego na urządzeniu macOS tworzy on relację zaufan
 
 9. Zostanie wyświetlony monit o zezwolenie na zainstalowanie sterownika firmy Microsoft ("Zablokowane rozszerzenie systemu" lub "Instalacja jest wstrzymana" lub oba te elementy. Należy zezwolić na instalację sterownika. Aby zezwolić na instalację, wybierz pozycję **Otwórz preferencje zabezpieczeń** lub **Otwórz preferencje systemoweZabezpieczenia** >  **& prywatności**, a następnie wybierz pozycję **Zezwalaj**.
 
-10. Użyj następującego polecenia języka Python w programie Bash, aby uruchomić pakiet dołączania: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
+10. Użyj następującego polecenia języka Python w programie Bash, aby uruchomić pakiet dołączania: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
 11. Po zarejestrowaniu urządzenia w Intune możesz dodać je do grupy urządzeń. [Dowiedz się więcej o grupach urządzeń w Microsoft Defender dla Firm](mdb-create-edit-device-groups.md).
 

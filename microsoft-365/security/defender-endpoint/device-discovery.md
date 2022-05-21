@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 53a23751fd53b05b51bf1125dcca98c23f4ba73c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418253"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623238"
 ---
 # <a name="device-discovery-overview"></a>Omówienie wykrywania urządzeń
 
@@ -48,9 +48,8 @@ Nieznane i niezarządzane urządzenia wiążą się ze znacznymi zagrożeniami d
 - Dołączanie niezarządzanych punktów końcowych do usługi, co zwiększa widoczność zabezpieczeń.
 - Zmniejsz obszar ataków, identyfikując i oceniając luki w zabezpieczeniach oraz wykrywając luki w konfiguracji.
 
-Obejrzyj to wideo, aby zapoznać się z szybkim omówieniem sposobu odnajdywania urządzeń:
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+Obejrzyj to wideo, aby zapoznać się z szybkim omówieniem sposobu oceny i dołączania niezarządzanych urządzeń, które Ochrona punktu końcowego w usłudze Microsoft Defender odnalezione.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
 W połączeniu z tą funkcją zalecenie dotyczące zabezpieczeń dołączania urządzeń do Ochrona punktu końcowego w usłudze Microsoft Defender jest dostępne w ramach istniejącego środowiska Zarządzanie zagrożeniami i lukami.
 
@@ -115,13 +114,13 @@ Wyszukaj rekomendacje dotyczące zabezpieczeń dotyczące protokołu "SSH", aby 
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Używanie zaawansowanego wyszukiwania zagrożeń na odnalezionych urządzeniach
 
-Zaawansowane zapytania dotyczące wyszukiwania zagrożeń umożliwiają uzyskanie wglądu w odnalezione urządzenia. Szczegółowe informacje o odnalezionych urządzeniach znajdują się w tabeli DeviceInfo lub informacje dotyczące sieci dotyczące tych urządzeń w tabeli DeviceNetworkInfo.
+Zaawansowane zapytania dotyczące wyszukiwania zagrożeń umożliwiają uzyskanie wglądu w odnalezione urządzenia. Szczegółowe informacje o odnalezionych urządzeniach w tabeli DeviceInfo lub informacje dotyczące sieci dotyczące tych urządzeń znajdują się w tabeli DeviceNetworkInfo.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Strona Zaawansowane wyszukiwanie zagrożeń, na której można używać zapytań" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 ### <a name="query-discovered-devices-details"></a>Wykonywanie zapytań dotyczących odnalezionych urządzeń
 
-Uruchom to zapytanie w tabeli DeviceInfo, aby zwrócić wszystkie odnalezione urządzenia wraz z najbardziej szczegółowymi informacjami dla każdego urządzenia:
+Uruchom to zapytanie w tabeli DeviceInfo, aby zwrócić wszystkie odnalezione urządzenia wraz z najbardziej aktualnymi szczegółami dla każdego urządzenia:
 
 ```query
 DeviceInfo

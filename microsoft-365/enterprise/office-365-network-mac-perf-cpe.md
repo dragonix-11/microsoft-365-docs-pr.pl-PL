@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 przekierowywu przekierowywów sieci
+title: Microsoft 365 routingu sieci
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -13,36 +13,36 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 przekierowywu przekierowywów sieci
-ms.openlocfilehash: f35257520385f8d4287c9a0839cd1e4e0e6b0aa3
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+description: Microsoft 365 routingu sieci
+ms.openlocfilehash: fc946b3a1de057605b89bcadeb4e5b7269aebcb0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "62996410"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622482"
 ---
-# <a name="microsoft-365-informed-network-routing"></a>Microsoft 365 przekierowywu przekierowywów sieci
+# <a name="microsoft-365-informed-network-routing"></a>Microsoft 365 routingu sieci
 
-Przeszlikowanie sieci to funkcja, która integruje różne aplikacje sieci Microsoft 365 z rozwiązaniami sieci zdefiniowanymi programowo (SD-WAN) innych firm w celu optymalizowania i ulepszania łączności sieciowej z punktami końcowymi usług firmy Microsoft. Zoptymalizowana łączność SD-WAN może spowodować poprawę wydajności i możliwości użytkownika.
+Świadomy routing sieciowy to funkcja, która integruje różne aplikacje Microsoft 365 z rozwiązaniami sieci zdefiniowanej programowo (SD-WAN) innych firm w celu optymalizacji i poprawy łączności sieciowej z punktami końcowymi usługi firmy Microsoft. Zoptymalizowana łączność SD-WAN może spowodować poprawę środowiska i wydajności użytkowników.
 
 ## <a name="overview"></a>Omówienie
 
-Przekierowywczana sieć zapewnia dwukierunkowy kanał udostępniania danych między firmą Microsoft a twoim rozwiązaniem SD-WAN. W przypadku każdej skonfigurowanej lokalizacji biura i obwodu internetowego firma Microsoft okresowo udostępnia opinie rozwiązania SD-WAN na temat jakości wybranych aplikacji pakietu Microsoft 365 dla ruchu sieciowego skojarzonego z każdym konkretnym obwodem internetowym. Korzystając z tej opinii, rozwiązanie SD-WAN może następnie podjąć inteligentne akcje odzyskiwania, przekierowywjąc Microsoft 365 ruchu aplikacji za pomocą alternatywnych dostępnych linków. 
+Usługa routingu sieciowego zapewnia dwukierunkowy kanał udostępniania danych między firmą Microsoft a rozwiązaniem SD-WAN. W przypadku każdej skonfigurowanej lokalizacji w biurze i obwodu internetowego firma Microsoft okresowo dzieli się opiniami z rozwiązaniem SD-WAN na temat jakości wybranych Microsoft 365 środowisk aplikacji dla ruchu sieciowego skojarzonego z każdym konkretnym obwodem internetowym. Korzystając z tej opinii, rozwiązanie SD-WAN może następnie podjąć akcje odzyskiwania inteligentnego przez routing ruchu aplikacji Microsoft 365 za pośrednictwem alternatywnych dostępnych linków. 
 
-Obniżenie jakości usługi w ścieżce określonego obwodu internetowego, na przykład zwiększone opóźnienie lub wysoka utrata pakietów, jest trudne do wykrycia w sposób ciągły. Pogorszenie tej wydajności może zaszkodzić procesom obsługi aplikacji takich jak Exchange Online, SharePoint, OneDrive i Microsoft Teams. Typowe symptomy to powolne wyszukiwanie Exchange zawartości, wysoki czas przesyłania podczas interakcji z bibliotekami SharePoint lub OneDrive dokumentów albo niska jakość połączeń lub spotkań w Microsoft Teams.
+Obniżenie jakości usług w ścieżce określonego obwodu internetowego, takie jak zwiększone opóźnienie lub duża utrata pakietów, jest trudne do wykrycia w sposób ciągły. Te degradacje mogą być szkodliwe dla środowisk użytkownika dla aplikacji, takich jak Exchange Online, SharePoint, OneDrive i Microsoft Teams. Typowe objawy to powolne wyszukiwanie zawartości Exchange, wysokie czasy transferu podczas interakcji z bibliotekami dokumentów SharePoint lub OneDrive albo niska jakość wywołań lub spotkań w Microsoft Teams.
 
-Mechanizm przesyłania opinii i odzyskiwania w obrębie przekierowywowanego routingu sieciowego ma na celu dynamiczne wykrywanie takich problemów w czasie rzeczywistym i informuje wdrożone rozwiązanie SD-WAN o podjęciu automatycznych działań odzyskiwania.
+Mechanizm przekazywania opinii i odzyskiwania w ramach routingu świadomej sieci ma na celu dynamiczne wykrywanie takich problemów niemal w czasie rzeczywistym i informuje wdrożone rozwiązanie SD-WAN o podjęciu automatycznych akcji odzyskiwania.
 
-Kanał udostępniania danych jest również używany do okresowego odbierania danych na poziomie sieci z rozwiązania SD-WAN, w tym informacji o konfiguracji i statystyk użycia skojarzonych z urządzeniem i podłączonymi obwodami. Nie są zbierane ani przechowywane żadne informacje osobiste. Wszystkie zebrane informacje są agregowane w lokalizacjach biura i obwodach internetowych. Te informacje mogą pomóc firmie Microsoft w bardziej efektywnym i efektywnym rozwiązywaniu zgłoszonych problemów z Microsoft 365 usługami i aplikacjami.
+Kanał udostępniania danych jest również używany do okresowego odbierania danych optycznych na poziomie sieci z rozwiązania SD-WAN, w tym informacji o konfiguracji i statystyk użycia skojarzonych z urządzeniem i dołączonymi obwodami. Żadne dane osobowe nie są zbierane ani przechowywane. Wszystkie zebrane informacje są agregowane do lokalizacji biura i połączonych obwodów internetowych. Te informacje mogą pomóc firmie Microsoft w wydajniejszym i efektywniejszym rozwiązywaniu zgłoszonych problemów z korzystaniem z usług i aplikacji Microsoft 365.
 
 >[!NOTE]
->Microsoft 365 przekierowywaną sieć obsługuje dzierżawców w chmurze komercyjnej WW, ale nie obsługuje chmur GCC moderate, GCC High, DoD, Germany lub China.
+>Microsoft 365 usługa routingu sieciowego obsługuje dzierżawy w chmurze komercyjnej platformy WW, ale nie w chmurach GCC Moderate, GCC High, DoD, Germany lub China.
 
 ## <a name="requirements"></a>Wymagania
 
 ### <a name="integrated-sd-wan-solutions"></a>Zintegrowane rozwiązania SD-WAN
 
-Firma Microsoft współpracuje z różnymi partnerami, aby umożliwić integrację z przekierowywowym Microsoft 365 przekierowywowym siecią. Aktualnie włączone rozwiązania są następujące:
+Firma Microsoft współpracuje z różnymi partnerami, aby umożliwić integrację z Microsoft 365 routingiem sieci. Obecnie włączone rozwiązania obejmują następujące elementy:
 
 | Device Maker | Nazwa rozwiązania | Minimalna wersja |
 | --- | --- | --- |
@@ -50,121 +50,121 @@ Firma Microsoft współpracuje z różnymi partnerami, aby umożliwić integracj
 
 ### <a name="network-topology"></a>Topologia sieci
 
-Informed network routing currently identifies traffic associated with a specific office location and Internet circuit based on the public IP address used to send network traffic to Microsoft. 
+Świadomy routing sieciowy obecnie identyfikuje ruch skojarzony z określoną lokalizacją biura i obwodem internetowym na podstawie publicznego adresu IP używanego do wysyłania ruchu sieciowego do firmy Microsoft. 
 
-Jeśli nie istnieje co najmniej jeden obwód sieciowy zapewniający bezpośredni dostęp do Internetu w lokalizacji gałęzi, przekierowywiona usługa przekierowywu sieci może nie dostarczyć istotnej wartości.
+W przypadku, gdy nie ma co najmniej jednego obwodu sieciowego zapewniającego bezpośredni dostęp do Internetu w lokalizacji gałęzi, routing sieciowy z informacją może nie zapewniać znaczącej wartości.
 
 ### <a name="application-usage"></a>Użycie aplikacji
 
-Dane dotyczące działania aplikacji (odzwierciedlane za pomocą metryk jakości sieci) są zbierane w ramach użycia określonych aplikacji klienckich firmy Microsoft. Exchange metryki odzwierciedlają użycie Outlook klienta sieci Outlook oraz niektóre Outlook Web App użycia. SharePoint i OneDrive odzwierciedlają użycie poszczególnych SharePoint końcowych dzierżawy, niezależnie od aplikacji klienckiej. Teams metryki odzwierciedlają użycie klienta Teams klasycznego. Podczas oceny kondycji obwodu sieciowego nie jest rozważany inny ruch aplikacji.
+Dane środowiska aplikacji (odzwierciedlone za pośrednictwem metryk jakości sieci) są zbierane poprzez użycie określonych aplikacji klienckich firmy Microsoft. Exchange metryki odzwierciedlają użycie klienta Outlook i niektóre Outlook Web App użycia. Metryki SharePoint i OneDrive odzwierciedlają użycie punktów końcowych SharePoint specyficznych dla dzierżawy, niezależnie od aplikacji klienckiej. Teams metryki odzwierciedlają użycie klienta Teams desktop. Inny ruch aplikacji nie jest brany pod uwagę podczas oceny kondycji obwodu sieciowego.
 
-## <a name="enabling-informed-network-routing"></a>Włączanie przekierowywowania przekierowywów w
+## <a name="enabling-informed-network-routing"></a>Włączanie świadomego routingu sieci
 
-Włączenie przeszłego routingu sieci wymaga wykonania wielu kroków, z których niektóre należy wykonać w interfejsie konfiguracji rozwiązania SD-WAN. Aby uzyskać wskazówki dotyczące inicjowania procesu włączania przeszłego routingu sieci w ramach rozwiązania SD-WAN przed przystąpieniem do konfiguracji w sieci centrum administracyjne platformy Microsoft 365, skontaktuj się z dostawcą rozwiązań SD-WAN.
+Włączenie świadomego routingu sieciowego wymaga wielu kroków, z których niektóre należy wykonać w interfejsie konfiguracji rozwiązania SD-WAN. Skontaktuj się z dostawcą rozwiązania SD-WAN, aby uzyskać wskazówki dotyczące sposobu inicjowania procesu włączania świadomego routingu sieciowego w rozwiązaniu SD-WAN przed kontynuowaniem konfiguracji w Centrum administracyjne platformy Microsoft 365.
 
-Gdy wszystko będzie gotowe do włączenia przekierowywowania przeszłej sieci w centrum centrum administracyjne platformy Microsoft 365, upewnij **się, że** masz odpowiednie uprawnienia administratora użytkownika lub **administratora globalnego**.
+Gdy wszystko będzie gotowe do włączenia świadomego routingu sieciowego w Centrum administracyjne platformy Microsoft 365, upewnij się, że masz wymagane uprawnienia **administratora użytkownika** lub **administratora globalnego**.
 
 >[!IMPORTANT]
->Aby udzielić wymaganej zgody aplikacji na poziomie dzierżawy na uzyskanie dostępu do wybranego rozwiązania SD-WAN w celu uzyskania dostępu do kanału udostępniania danych przekierowywu sieciowego, administrator globalny musi wykonać następujące czynności.
+>Aby udzielić odpowiedniej zgody aplikacji na poziomie dzierżawy dla wybranego rozwiązania SD-WAN w celu uzyskania dostępu do kanału udostępniania danych routingu sieciowego, należy wykonać następujące kroki jako administrator globalny.
 
 
-### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Krok 1. Otwórz opcje konfiguracji rozwiązania SD-WAN
+### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Krok 1. Otwieranie opcji konfiguracji rozwiązania SD-WAN
 
-W [okienku centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/) pozycję **Kondycja > Łączność sieciowa** w okienku nawigacji po lewej stronie.
+W [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/) wybierz pozycję **Kondycja > Łączność sieciowa** w okienku nawigacji po lewej stronie.
 
-Ta sekcja centrum administracyjnego zawiera zagregowane metryki łączności sieciowej dla Organizacji oraz wskazówki dotyczące sposobu poprawy łączności. Aby [uzyskać dodatkowe informacje](office-365-network-mac-perf-overview.md) na temat tych funkcji dostępnych w centrum administracyjnym, zobacz Łączność sieciowa w centrum administracyjnym usługi Administracja Microsoft 365 Center.
+Ta sekcja centrum administracyjnego zawiera zagregowane metryki łączności sieciowej dla organizacji oraz wskazówki dotyczące sposobu poprawy łączności. Aby uzyskać dodatkowe informacje na temat tych funkcji dostępnych [w centrum administracyjnym, zobacz Łączność sieciowa w centrum Administracja Microsoft 365](office-365-network-mac-perf-overview.md).
 
-Wybierz **Ustawienia > SD-WAN,** aby otworzyć okienko konfiguracji przekierowywu przekierowywu sieci. Pozostałe opcje wyświetlane w obszarze **Ustawienia** mają zastosowanie do ogólnych wskazówek dotyczących łączności sieciowej w centrum administracyjnym i nie są wymagane do włączania przekierowywu przekierowywów w przeszytą sieć.
+Wybierz **Ustawienia > rozwiązanie SD-WAN**, aby otworzyć okienko konfiguracji routingu sieciowego. Inne opcje, które są wyświetlane w **obszarze Ustawienia**, mają zastosowanie do ogólnych wskazówek dotyczących łączności sieciowej w centrum administracyjnym i nie są wymagane do włączenia świadomego routingu sieciowego.
 
-W okienku konfiguracji wybierz **pozycję Dodaj rozwiązanie SD-WAN**.
+W okienku konfiguracji wybierz pozycję **Dodaj rozwiązanie SD-WAN**.
 
-### <a name="step-2-select-your-sd-wan-solution-and-data-storage-location"></a>Krok 2. Wybieranie rozwiązania SD-WAN i lokalizacji przechowywania danych
+### <a name="step-2-select-your-sd-wan-solution-and-data-storage-location"></a>Krok 2. Wybieranie rozwiązania SD-WAN i lokalizacji magazynu danych
 
-W polach listy rozwijanej wybierz wdrożone rozwiązanie SD-WAN oraz lokalizację, w której mają być przechowywane dane skojarzone z przekierowywczaną siecią. Dodatkowe informacje [można znaleźć](#data-storage) w sekcji dotyczącej przechowywania danych.
+W polach rozwijanych wybierz wdrożone rozwiązanie SD-WAN oraz lokalizację, w której mają być przechowywane dane skojarzone z routingiem sieciowym. Aby uzyskać dodatkowe informacje, zobacz sekcję [magazyn danych](#data-storage) .
 
 Wybierz pozycję **Dalej**.
 
-### <a name="step-3-accept-terms-for-sharing-of-data"></a>Krok 3. Zaakceptowanie warunków udostępniania danych
+### <a name="step-3-accept-terms-for-sharing-of-data"></a>Krok 3. Akceptowanie warunków udostępniania danych
 
-Dokładnie przeczytaj i upewnij się, że dostarczone warunki są skojarzone z udostępnianiem danych między firmą Microsoft a wybranym przez Twoje rozwiązanie SD-WAN, a następnie zaznacz wskazane pole wyboru.
+Uważnie przeczytaj i potwierdź podane terminy skojarzone z udostępnianiem danych między firmą Microsoft a wybranym rozwiązaniem SD-WAN, a następnie zaznacz wskazane pole wyboru.
 
 Wybierz pozycję **Dalej**.
 
 ### <a name="step-4-grant-permissions-to-the-sd-wan-solution"></a>Krok 4. Udzielanie uprawnień do rozwiązania SD-WAN
 
-Ten krok zainicjuje żądanie przyznawania uprawnień za pomocą usługi Azure Active Directory (Azure AD). Zostaniesz żądany o udzielenie uprawnień na poziomie dzierżawy, które umożliwiają wybranemu rozwiązaniu SD-WAN dostęp do przeszłyego magazynu danych routingu sieciowego i informacji o kondycji usługi skojarzonej z Dzierżawą. Ta akcja wymaga **uprawnień administratora dc usługi Azure AD** lub **uprawnień roli** administratora globalnego.
+Ten krok spowoduje zainicjowanie żądania udzielenia uprawnień za pomocą Azure Active Directory (Azure AD). Zostanie wyświetlony wniosek o przyznanie uprawnień na poziomie dzierżawy, które zezwalają wybranemu rozwiązaniu SD-WAN na dostęp do magazynu danych routingu sieciowego oraz informacji o kondycji usługi skojarzonych z dzierżawą. Ta akcja wymaga **Azure AD uprawnień administratora kontrolera domeny** lub roli **administratora globalnego**.
 
-Wybierz link **Nadaj uprawnienia do tej aplikacji** i postępuj zgodnie z żądaniami usługi Azure AD.
+Wybierz link **Nadaj uprawnienia tej aplikacji** i postępuj zgodnie z Azure AD żądaniami.
 
 Po zakończeniu udzielania uprawnień wybierz pozycję **Dalej**.
 
 ### <a name="step-5-confirm-your-configuration-settings"></a>Krok 5. Potwierdzanie ustawień konfiguracji
 
-Ostatnim krokiem umożliwiającym przekierowywowanie przeszytej sieci dla dzierżawy jest strona potwierdzenia z wyświetlonymi ustawieniami. 
+Ostatnim krokiem włączania świadomego routingu sieciowego dla dzierżawy jest strona potwierdzenia, która wyświetla podane ustawienia. 
 
-Dla dzierżawy jest teraz włączony przekierowywowyny przekierowywowy usługi przeszłej sieci.
+Świadomy routing sieci jest teraz włączony dla dzierżawy.
 
-Wybierz **pozycję Gotowe** , a następnie zamknij okienko konfiguracji rozwiązania SD-WAN.
+Wybierz pozycję **Gotowe** , a następnie zamknij okienko konfiguracji rozwiązania SD-WAN.
 
-## <a name="configuring-informed-network-routing"></a>Konfigurowanie przekierowywu przeszłej sieci
+## <a name="configuring-informed-network-routing"></a>Konfigurowanie routingu świadomej sieci
 
-W ramach rozwiązania SD-WAN wykonasz większą część konfiguracji przekierowywowania informed sieci, na przykład skonfigurujesz sposób kierowania ruchu w zwykłych okolicznościach i alternatywne ścieżki, które powinny być używane w przypadku wykrycia problemów. Aby uzyskać szczegółowe informacje na temat tych kroków konfiguracji, skonsultuj się z dostawcą rozwiązań SD-WAN.
+Wykonasz dużą część konfiguracji dla świadomego routingu sieciowego w ramach rozwiązania SD-WAN, na przykład konfigurując sposób kierowania ruchu w normalnych warunkach i alternatywne ścieżki, które powinny być używane w przypadku wykrycia problemów. Aby uzyskać szczegółowe informacje na temat tych kroków konfiguracji, skontaktuj się z dostawcą rozwiązań SD-WAN.
 
-Każda lokalizacja biura musi zostać skonfigurowana w centrum centrum administracyjne platformy Microsoft 365, aby przekierowywowany przekierowyw sieciowy poprawnie identyfikował ruch skojarzony z obwodami sieciowym zapewniającymi łączność z tymi lokalizacjami.
+Każda lokalizacja biura musi być skonfigurowana w Centrum administracyjne platformy Microsoft 365, aby usługa routingu sieciowego mogła prawidłowo identyfikować ruch skojarzony z obwodami sieciowymi zapewniającymi łączność z tymi lokalizacjami.
 
-Office lokalizacji mogą być wykrywane automatycznie w ramach ciągłego zbioru telemetrii sieciowej firmy Microsoft. W wyniku tego niektóre lokalizacje mogą być wstępnie wypełnione w centrum administracyjnym dzierżawy. 
+Office lokalizacje mogą być automatycznie wykrywane w ramach trwającej kolekcji danych telemetrycznych sieci firmy Microsoft. W związku z tym niektóre lokalizacje mogą być wstępnie wypełnione w centrum administracyjnym dzierżawy. 
 
-Jeśli te lokalizacje są dokładne, wystarczy włączyć funkcję przekierowywowania sieci dla każdej odpowiedniej lokalizacji i skonfigurować obwody internetowe i ich publiczne adresy IP. 
+Jeśli te lokalizacje są dokładne, wystarczy włączyć funkcję świadomego routingu sieciowego dla każdej żądanej lokalizacji i skonfigurować obwody internetowe i ich publiczne adresy IP. 
 
-Jeśli lokalizacje wykrywane automatycznie nie są dokładne lub w dzierżawie nie ma wstępnie wypełnionych lokalizacji, musisz dodać lub edytować lokalizacje ręcznie, aby odzwierciedlić dokładną topologię Twojej organizacji.
+Jeśli automatycznie wykryte lokalizacje nie są dokładne lub w dzierżawie nie ma wstępnie wypełnionych lokalizacji, musisz dodać lub edytować lokalizacje ręcznie, aby odzwierciedlić dokładną topologię organizacji.
 
 ### <a name="updating-locations"></a>Aktualizowanie lokalizacji
 
-Lokalizacje dzierżawy można znaleźć na **karcie** Lokalizacje. Lokalizacje można edytować bezpośrednio na liście lub aktualizować przy użyciu pliku CSV.
+Lokalizacje dzierżawy można znaleźć na **karcie Lokalizacje** . Lokalizacje mogą być edytowane bezpośrednio na liście lub aktualizowane przy użyciu pliku CSV.
 
-Upewnij się, że na tej liście znajduje się każda lokalizacja biura, w której chcesz włączyć przekierowywowy w sieci.
+Upewnij się, że na tej liście znajduje się każda lokalizacja biura, w której chcesz włączyć routing sieciowej.
 
 >[!NOTE]
->Kolumny na liście Lokalizacje **dotyczące** pobranych próbek i inne informacje związane z ocenami nie są związane z funkcją przekierowywowania przekierowywów sieci przekierowywczych.
+>Kolumny na liście **Lokalizacje** dla zebranych przykładów i inne informacje związane z oceną nie są związane z funkcją świadomego routingu sieciowego.
 
-### <a name="enabling-a-location-for-informed-network-routing"></a>Włączanie lokalizacji dla przekierowywu przekierowywów w przeszytą sieć
+### <a name="enabling-a-location-for-informed-network-routing"></a>Włączanie lokalizacji dla świadomego routingu sieciowego
 
-1. Z listy **Lokalizacje** wybierz **pozycję Edytuj z** menu szybkich akcji, aby otworzyć okienko konfiguracji lokalizacji.
+1. Na liście **Lokalizacje** wybierz pozycję **Edytuj** z menu Szybkich akcji, aby otworzyć okienko konfiguracji lokalizacji.
 
-2. Wybierz **pozycję Microsoft 365 przekierowywuj przekierowywową sieć w tej lokalizacji**.
+2. Wybierz pozycję **Użyj Microsoft 365 świadomego routingu sieci w tej lokalizacji**.
 
-3. Dodaj wszystkie obwody sieciowe zapewniające łączność z Internetem do tej lokalizacji biura w sekcji Egress adresów **IP w tej sekcji lokalizacji biura**. Upewnij się, że każdy obwód jest skojarzony z unikatowymi publicznymi podsiecimi adresów IP reprezentującmi ruch sieciowy.
+3. Dodaj wszystkie obwody sieciowe zapewniające łączność z Internetem do tej lokalizacji biura w **Egress zakresach adresów IP w tej sekcji lokalizacji biura**. Upewnij się, że każdy obwód jest skojarzony z unikatowymi podsieciami publicznego adresu IP reprezentującymi ruch sieciowy.
 
-4. Wybierz **pozycję Zapisz** , aby zapisać zmiany.
+4. Wybierz pozycję **Zapisz** , aby zapisać zmiany.
 
-## <a name="disabling-informed-network-routing"></a>Wyłączanie przekierowywu sieci przekierowywowej
+## <a name="disabling-informed-network-routing"></a>Wyłączanie routingu sieci z informacją
 
-Funkcja przekierowywowania przeszłej sieci może zostać wyłączona dla całej dzierżawy przez zresetowanie ustawień rozwiązania SD-WAN. Mimo że spowoduje to zatrzymanie przetwarzania wszystkich danych w ramach usługi Microsoft 365, należy również wyłączyć przekierowywowywną sieć w centrum administracyjnym.
+Świadoma funkcja routingu sieciowego może zostać wyłączona dla całej dzierżawy przez zresetowanie ustawień rozwiązania SD-WAN. Mimo że spowoduje to zatrzymanie całego przetwarzania danych w Microsoft 365, należy również wyłączyć routing sieci z informacją w centrum administracyjnym.
 
-### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Krok 1. Otwórz opcje konfiguracji rozwiązania SD-WAN
+### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Krok 1. Otwieranie opcji konfiguracji rozwiązania SD-WAN
 
-W [okienku centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/) **pozycję Kondycja > Łączność sieciowa** w okienku nawigacji po lewej stronie.
+W [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/) wybierz pozycję **Kondycja > Łączność sieciowa** w okienku nawigacji po lewej stronie.
 
-Wybierz **Ustawienia > SD-WAN,** aby otworzyć okienko konfiguracji przekierowywu przekierowywu sieci.
+Wybierz **Ustawienia > rozwiązanie SD-WAN**, aby otworzyć okienko konfiguracji routingu sieciowego.
 
-Okienko konfiguracji zawiera podsumowanie obecnie skonfigurowanego rozwiązania SD-WAN.
+W okienku konfiguracji przedstawiono podsumowanie aktualnie skonfigurowanego rozwiązania SD-WAN.
 
 ### <a name="step-2-reset-your-configuration"></a>Krok 2. Resetowanie konfiguracji
 
 W okienku konfiguracji wybierz pozycję **Resetuj ustawienia rozwiązania SD-WAN**.
 
-Ustawienia zostały zresetowane i przekierowywowany przekierowyw sieci został wyłączony. Tę funkcję można włączyć ponownie w dowolnym momencie, korzystając z procedury opisanej w tece [Włączanie przekierowywani na bieżąco przekierowywaną przez przekierowywaną sieć](#enabling-informed-network-routing).
+Ustawienia zostały zresetowane i poinformowano, że routing sieci został wyłączony. Można go ponownie włączyć w dowolnym momencie, wykonując kroki opisane w [temacie Włączanie routingu świadomej sieci](#enabling-informed-network-routing).
 
-## <a name="data-storage"></a>Przechowywanie danych
+## <a name="data-storage"></a>Magazyn danych
 
-Dane wymieniane między firmą Microsoft a dostawcą rozwiązań SD-WAN są przechowywane w lokalizacji przechowywania danych wybranej podczas początkowego włączania przekierowywowania przekierowywów sieciowych o przeszlifowanych danych. Opcje lokalizacji przechowywania danych reprezentują obszary geograficzne Microsoft Azure regionów, w których dane są przechowywane.
+Dane wymieniane między firmą Microsoft a dostawcą rozwiązań SD-WAN są przechowywane w lokalizacji magazynu danych wybranej podczas początkowego włączania świadomego routingu sieciowego. Opcje lokalizacji magazynu danych reprezentują obszary geograficzne zawierające Microsoft Azure regionów, w których są przechowywane dane.
 
-Dane są przechowywane w tej lokalizacji przez maksymalnie 30 dni. Po wyłączeniu wszystkie pozostałe dane są usuwane w tym 30-dniowym oknie przechowywania.
+Dane są przechowywane w tej lokalizacji przez maksymalnie 30 dni. Po wyłączeniu wszystkie pozostałe dane zostaną usunięte w tym 30-dniowym oknie przechowywania.
 
-Dane w tej lokalizacji są wymieniane z wybranym rozwiązaniem SD-WAN, a lokalizacja skonfigurowanego rozwiązania SD-WAN może nie być w tym samym regionie. Klienci powinni współpracować z dostawcą rozwiązań SD-WAN, aby ocenić wymagania dotyczące lokalizacji przechowywania danych przed wdrożeniem produkcyjnym.
+Dane w tej lokalizacji są wymieniane z wybranym rozwiązaniem SD-WAN, a lokalizacja skonfigurowanego rozwiązania SD-WAN może nie znajdować się w tym samym regionie. Klienci powinni współpracować ze swoim dostawcą rozwiązań SD-WAN, aby ocenić wszelkie wymagania dotyczące lokalizacji magazynu danych przed wdrożeniem produkcyjnym.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Łączność sieciowa w centrum administracyjne platformy Microsoft 365](office-365-network-mac-perf-overview.md)
+[Łączność sieciowa w Centrum administracyjne platformy Microsoft 365](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 lokalizacji łączności sieciowej](office-365-network-mac-location-services.md)
+[usługi lokalizacji łączności sieciowej Microsoft 365](office-365-network-mac-location-services.md)

@@ -1,5 +1,5 @@
 ---
-title: Udostępnianie plików i filmów wideo
+title: Udostępnianie plików i filmów wideo w Microsoft Teams i programie Sharepoint
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -24,17 +24,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Udostępniaj pliki i filmy wideo w ramach kampanii za pomocą Microsoft Teams i SharePoint.
-ms.openlocfilehash: 5c371dea1c1e9d5768743072052825f0810938b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Udostępniaj pliki i filmy wideo w ramach kampanii za pomocą Microsoft Teams i SharePoint. Microsoft 365 Business Premium obejmuje Teams, co jest doskonałym sposobem bezpiecznego udostępniania plików i filmów wideo.
+ms.openlocfilehash: b678bf1bf44b63e80ac4b8d0ea6dfc760eb510a8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095127"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622356"
 ---
-# <a name="share-files-and-videos"></a>Udostępnianie plików i filmów wideo
+# <a name="share-files-and-videos-in-a-safe-environment"></a>Udostępnianie plików i filmów wideo w bezpiecznym środowisku
 
-Kolejną rzeczą, na którą należy zwrócić uwagę, jest zapewnienie wszystkim członkom organizacji kontroli, kto może wyświetlać i edytować pliki, oraz że są one przechowywane w bezpiecznej lokalizacji z odpowiednimi uprawnieniami. Użytkownicy mogą używać Microsoft Teams do przechowywania plików, a następnie udostępniać pliki wewnątrz lub na zewnątrz firmy, ćwiczyć lub prowadzić kampanię przy użyciu Microsoft Teams lub wysyłając linki SharePoint. Wysłanie linku zamiast załącznika wiadomości e-mail oznacza, że wiesz, kto wyświetla i modyfikuje pliki, i nie można ich wyświetlać ani modyfikować bez uprawnień.
+Kolejną rzeczą, na którą należy zwrócić uwagę, jest zapewnienie wszystkim członkom organizacji kontroli, kto może wyświetlać i edytować pliki, oraz że są one przechowywane w bezpiecznej lokalizacji z odpowiednimi uprawnieniami. Microsoft 365 Business Premium użytkownicy mogą używać Microsoft Teams do przechowywania plików, a następnie udostępniać pliki wewnątrz lub na zewnątrz firmy, ćwiczyć lub prowadzić kampanię. Możesz również wysłać link programu Sharepoint. Wysłanie linku zamiast załącznika wiadomości e-mail oznacza, że wiesz, kto wyświetla i modyfikuje pliki, i nie można ich wyświetlać ani modyfikować bez uprawnień.
 
 ![Diagram okna Microsoft Teams z wyświetloną kartą Pliki i linkiem Pobierz w menu.](../media/m365-democracy-teams-sharefiles.png)
 

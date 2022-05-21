@@ -1,7 +1,7 @@
 ---
-title: Przesyłanie strumieniowe Microsoft 365 Defender zdarzeń
-description: Dowiedz się, jak skonfigurować usługę Microsoft 365 Defender przesyłania strumieniowego wydarzeń zaawansowanego chłonia do centrum wydarzeń lub konta magazynu platformy Azure
-keywords: nieprzetworzone eksportowanie danych, interfejs API przesyłania strumieniowego, interfejs API, koncentratory wydarzeń, magazyn platformy Azure, konto magazynu, zaawansowane szukanie, pierwotne udostępnianie danych
+title: Przesyłanie strumieniowe zdarzeń Microsoft 365 Defender
+description: Dowiedz się, jak skonfigurować Microsoft 365 Defender do przesyłania strumieniowego zdarzeń zaawansowanego wyszukiwania zagrożeń do usługi Event Hubs lub konta usługi Azure Storage
+keywords: eksport danych pierwotnych, interfejs API przesyłania strumieniowego, interfejs API, centra zdarzeń, magazyn platformy Azure, konto magazynu, zaawansowane wyszukiwanie zagrożeń, nieprzetworzone udostępnianie danych
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c6c3cedffb1b827d441d37cc8beb53b20f3521f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d9f980656df636632c5903853c2784de81131d81
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984944"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621428"
 ---
 # <a name="streaming-api"></a>Interfejs API przesyłania strumieniowego
 
@@ -32,22 +32,24 @@ ms.locfileid: "62984944"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Przesyłaj strumieniowo zaawansowane wydarzenia łęgowe do centrum wydarzeń i/lub do konta magazynu platformy Azure.
+## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Przesyłanie strumieniowe zdarzeń zaawansowanego wyszukiwania zagrożeń do usługi Event Hubs i/lub konta usługi Azure Storage.
 
-Microsoft 365 Defender obsługuje przesyłanie strumieniowe wydarzeń za pośrednictwem [zaawansowanego](../defender/advanced-hunting-overview.md) wyszukiwania do centrum [wydarzeń i/](/azure/event-hubs/)lub konta [magazynu platformy Azure](/azure/event-hubs/).
+Microsoft 365 Defender obsługuje zdarzenia przesyłania strumieniowego za pośrednictwem [zaawansowanego wyszukiwania zagrożeń](../defender/advanced-hunting-overview.md) do usługi [Event Hubs](/azure/event-hubs/) i/lub [konta usługi Azure Storage](/azure/event-hubs/).
 
-Aby uzyskać więcej informacji na Microsoft 365 Defender interfejsu API przesyłania strumieniowego, zobacz [klip wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga).
+Aby uzyskać więcej informacji na temat Microsoft 365 Defender interfejsu API przesyłania strumieniowego, zobacz [wideo](https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga).
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 Temat | Opis
 :---|:---
-[Przesyłanie strumieniowe wydarzeń do Centrum zdarzeń Azure](streaming-api-event-hub.md)| Dowiedz się więcej o włączaniu interfejsu API przesyłania strumieniowego w dzierżawie i Microsoft 365 Defender [strumieniowego wyszukiwania zaawansowanego](../defender/advanced-hunting-overview.md) do centrum wydarzeń.
-[Przesyłanie strumieniowe zdarzeń do konta magazynu platformy Azure](streaming-api-storage.md)| Dowiedz się więcej o włączaniu interfejsu API przesyłania strumieniowego w dzierżawie i Microsoft 365 Defender [strumieniowego wyszukiwania zaawansowanego](advanced-hunting-overview.md) do konta magazynu platformy Azure.
-[Obsługiwane typy zdarzeń](supported-event-types.md) | Dowiedz się, jakie typy zaawansowanych wydarzeń łowiectwo są obsługujące interfejs API przesyłania strumieniowego.
+[Przesyłanie strumieniowe zdarzeń do Azure Event Hubs](streaming-api-event-hub.md)| Dowiedz się więcej na temat włączania interfejsu API przesyłania strumieniowego w dzierżawie i konfigurowania Microsoft 365 Defender do przesyłania strumieniowego [zaawansowanego wyszukiwania zagrożeń](../defender/advanced-hunting-overview.md) do usługi Event Hubs.
+[Przesyłanie strumieniowe zdarzeń do konta usługi Azure Storage](streaming-api-storage.md)| Dowiedz się więcej na temat włączania interfejsu API przesyłania strumieniowego w dzierżawie i konfigurowania Microsoft 365 Defender przesyłania strumieniowego [zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md) do konta usługi Azure Storage.
+[Obsługiwane typy zdarzeń](supported-event-types.md) | Dowiedz się, które zdarzenia zaawansowanego wyszukiwania zagrożeń są obsługiwane przez interfejs API przesyłania strumieniowego.
 
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak skonfigurować interfejs API przesyłania strumieniowego w celu dostarczania informacji o zdarzeniach bezpośrednio do usługi Azure Event Hubs w celu użycia przez usługi wizualizacji, aparaty przetwarzania danych lub magazyn platformy Azure na potrzeby długoterminowego przechowywania danych.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [Omówienie wyszukiwania zaawansowanego](../defender/advanced-hunting-overview.md)
-- [Dokumentacja centrum wydarzeń azure](/azure/event-hubs/)
-- [Dokumentacja Storage konta usługi Azure](/azure/storage/common/storage-account-overview)
+- [Omówienie zaawansowanego wyszukiwania zagrożeń](../defender/advanced-hunting-overview.md)
+- [dokumentacja Azure Event Hubs](/azure/event-hubs/)
+- [Dokumentacja konta usługi Azure Storage](/azure/storage/common/storage-account-overview)

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Podsumowanie: Opisuje zagadnienia dotyczące pojemności sieci, akceleratorów sieci WAN i urządzeń równoważenia obciążenia, które są używane do nawiązywania połączenia z Office 365.'
-ms.openlocfilehash: 58c4225d9d381dabedfa86d81ced7f5922932058
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b79e73f292ecf1db38a90364db3d2e475723158
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100330"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622817"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planowanie urządzeń sieciowych łączących się z usługami Office 365
 

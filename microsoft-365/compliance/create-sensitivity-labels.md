@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 'Wymaganie dotyczące wszystkich rozwiązań usługi Microsoft Purview Information Protection: tworzenie, konfigurowanie i publikowanie etykiet poufności w celu klasyfikowania i ochrony danych organizacji.'
-ms.openlocfilehash: e35d6e317abc3fb32bb11a6bdf937f303212fc23
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+description: 'Wymaganie dotyczące wszystkich rozwiązań Microsoft Purview Information Protection: tworzenie, konfigurowanie i publikowanie etykiet poufności w celu klasyfikowania i ochrony danych organizacji.'
+ms.openlocfilehash: 99b2b50ed00f470443956ff30ebb4940bbe1024d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302359"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622382"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Tworzenie i konfigurowanie etykiet poufności i ich zasad
 
@@ -31,7 +31,7 @@ ms.locfileid: "65302359"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Wszystkie rozwiązania Information Protection Microsoft Purview są implementowane przy użyciu [etykiet poufności](sensitivity-labels.md). Aby utworzyć i opublikować te etykiety, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>.
+Wszystkie rozwiązania Microsoft Purview Information Protection są implementowane przy użyciu [etykiet poufności](sensitivity-labels.md). Aby utworzyć i opublikować te etykiety, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
 
 Najpierw utwórz i skonfiguruj etykiety poufności, które chcesz udostępnić aplikacjom i innym usługom. Na przykład etykiety, które użytkownicy mają wyświetlać i stosować z Office aplikacji.
 
@@ -43,9 +43,7 @@ Administrator globalny organizacji ma pełne uprawnienia do tworzenia wszystkich
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Tworzenie i konfigurowanie etykiet poufności
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **SolutionsInformation**  >  protection
-    
-    Jeśli ta opcja nie zostanie od razu wyświetlona, najpierw wybierz pozycję **Pokaż wszystko**.
+1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **SolutionsInformation** >  **protectionLabels** > 
 
 2. Na stronie **Etykiety** wybierz pozycję **+ Utwórz etykietę** , aby rozpocząć nową konfigurację etykiet poufności: 
     
@@ -62,7 +60,7 @@ Administrator globalny organizacji ma pełne uprawnienia do tworzenia wszystkich
 
     - Jeśli wybrano **opcję Grupy & lokacje**, można skonfigurować ustawienia dotyczące grup Microsoft 365 i witryn dla Teams i SharePoint. Jeśli ta opcja nie zostanie wybrana, zobaczysz pierwszą stronę tych ustawień, ale nie możesz ich skonfigurować, a etykiety nie będą dostępne dla użytkowników do wybrania dla grup i witryny.
 
-    Aby uzyskać informacje o zakresie **schematyzowanych zasobów danych** , zobacz [Automatyczne etykietowanie zawartości w usłudze Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
+    Aby uzyskać informacje o zakresie **schematyzowanych zasobów danych**, zobacz [Automatyczne etykietowanie zawartości w Microsoft Purview Mapowanie danych](/azure/purview/create-sensitivity-label).
 
 4. Postępuj zgodnie z monitami o konfigurację ustawień etykiety.
 
@@ -128,11 +126,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publikowanie etykiet poufności przez utworzenie zasad etykiet
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **SolutionsInformation**  >  protection
-    
-    Jeśli ta opcja nie zostanie od razu wyświetlona, najpierw wybierz pozycję **Pokaż wszystko**.
+1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **RozwiązaniaZasadyinformacjiZasady** >  >  **etykiet**
 
-2. Wybierz kartę **Zasady etykiet** , a następnie **pozycję Publikuj etykietę** , aby rozpocząć konfigurację **zasad tworzenia** :
+2. Na stronie **Zasady etykiet** wybierz pozycję **Publikuj etykietę** , aby rozpocząć konfigurację **tworzenia zasad** :
     
     ![Publikowanie etykiet.](../media/publish-sensitivity-labels-full.png)
     
@@ -152,7 +148,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Jakie zasady etykiet można zrobić](sensitivity-labels.md#what-label-policies-can-do) z informacji przeglądowych i skorzystaj z pomocy w interfejsie użytkownika dla poszczególnych ustawień.
 
-    W przypadku etykiet skonfigurowanych dla **zasobów mapy danych usługi Microsoft Purview (wersja zapoznawcza)**: etykiety te nie mają żadnych skojarzonych ustawień zasad.
+    W przypadku etykiet skonfigurowanych dla **zasobów Microsoft Purview Data Map (wersja zapoznawcza)**: etykiety te nie mają żadnych skojarzonych ustawień zasad.
 
 6. Powtórz te kroki, jeśli potrzebujesz różnych ustawień zasad dla różnych użytkowników lub zakresów. Na przykład chcesz mieć dodatkowe etykiety dla grupy użytkowników lub inną etykietę domyślną dla podzestawu użytkowników. Lub jeśli skonfigurowano etykiety tak, aby miały różne zakresy.
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 05/10/2022
+ms.date: 05/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7cbb9c71e56242d15506c2c1e46f1120021928fa
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5a01c2f045ea797aa61f3028f2a0a4ef4e260fe6
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415975"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623190"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Wyświetlanie i edytowanie zasad ochrony urządzeń
 
@@ -30,7 +30,7 @@ W Microsoft 365 Business Premium ustawienia zabezpieczeń dla urządzeń zarząd
 **W tych wskazówkach opisano, jak** wykonać następujące czynności:
 
 - Zapoznaj się z omówieniem domyślnych zasad
-- Praca z zasadami urządzeń w centrum zabezpieczeń usługi Defender, centrum administracyjnym i usłudze InTune.
+- Praca z zasadami urządzeń w centrum zabezpieczeń usługi Defender, centrum administracyjnym i Intune.
 
 ## <a name="about-the-default-device-protection-policies"></a>Informacje o domyślnych zasadach ochrony urządzeń
 
@@ -40,7 +40,7 @@ Microsoft 365 Business Premium obejmuje dwa główne typy zasad ochrony urządze
 
 - **Zasady zapory**, które określają, jaki ruch sieciowy może przepływać do i z urządzeń organizacji.
 
-Te zasady są częścią Microsoft Defender dla Firm uwzględnionych w subskrypcji Microsoft 365 Business Premium. Informacje są udostępniane do pracy z zasadami w centrum zabezpieczeń usługi Microsoft Defender, a także sposobu pracy z zasadami w centrum administracyjnym i usłudze InTune.
+Te zasady są częścią Microsoft Defender dla Firm uwzględnionych w subskrypcji Microsoft 365 Business Premium. Informacje są udostępniane do pracy z zasadami w centrum zabezpieczeń usługi Microsoft Defender, a także sposobu pracy z zasadami w centrum administracyjnym i Intune.
 
 ## <a name="working-with-device-polices-in-the-microsoft-defender-security-center"></a>Praca z zasadami urządzeń w centrum zabezpieczeń usługi Microsoft Defender
 
@@ -157,13 +157,13 @@ Aby wyświetlić zasady i zarządzać nimi:
   
    ![Strona Zarządzanie urządzeniami.](../media/devicesmanage.png)
 
-## <a name="working-with-device-policies-in-intune"></a>Praca z zasadami urządzeń w usłudze InTune
+## <a name="working-with-device-policies-in-intune"></a>Praca z zasadami urządzeń w Intune
 
-Poniższe informacje umożliwiają tworzenie zasad urządzeń i zarządzanie nimi w usłudze InTune, które są wykonywane za pośrednictwem zabezpieczeń punktu końcowego w centrum administracyjnym Microsoft Endpoint Manager.
+Poniższe informacje umożliwiają tworzenie zasad urządzeń i zarządzanie nimi w Intune, które są wykonywane za pośrednictwem zabezpieczeń punktu końcowego w centrum administracyjnym Microsoft Endpoint Manager.
 
 ### <a name="create-duplicate-and-edit-policies"></a>Tworzenie, duplikowanie i edytowanie zasad
 
-Aby utworzyć zasady w usłudze InTune
+Aby utworzyć zasady w Intune
 
 1. Zaloguj się do centrum administracyjnego programu Microsoft Endpoint Manager.
 
@@ -201,7 +201,7 @@ Aby utworzyć zasady w usłudze InTune
 
 1. Na stronie Przeglądanie + tworzenie po zakończeniu wybierz pozycję **Utwórz**. Nowy profil zostanie wyświetlony na liście po wybraniu typu zasad dla utworzonego profilu.
 
-Aby zduplikować zasady w usłudze InTune:
+Aby zduplikować zasady w Intune:
 
 1. Zaloguj się do centrum administracyjnego programu Microsoft Endpoint Manager.
 
@@ -235,7 +235,7 @@ Niezależnie od metody zasad zarządzanie tym samym ustawieniem na tym samym urz
 
 ## <a name="see-also"></a>Zobacz też
 
-[Zarządzanie zabezpieczeniami punktów końcowych w usłudze Microsoft InTune](/mem/intune/protect/endpoint-security)
+[Zarządzanie zabezpieczeniami punktu końcowego w Microsoft Intune](/mem/Intune/protect/endpoint-security)
 
 [Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla planów biznesowych](../admin/security-and-compliance/secure-your-business-data.md)
 

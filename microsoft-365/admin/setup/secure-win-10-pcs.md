@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Dowiedz się, jak zabezpieczyć komputery Windows 10 po skonfigurowaniu Microsoft 365 Business Premium.
-ms.openlocfilehash: 4800a5906fcb10f7debb5b627ffe81a1dd910d49
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d0f2842c69127893e512822a8d91dfd37a4a0e48
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095251"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622919"
 ---
 # <a name="secure-windows-10-computers"></a>Zabezpieczanie komputerów z systemem Windows 10
 
@@ -70,4 +70,4 @@ Po skonfigurowaniu ochrony urządzeń w usłudze Microsoft 365 Business wykonaj 
 
 5. Wybierz **pozycję Zastosuj ustawienia**.
 
-    Te ustawienia będą stosowane do wszystkich użytkowników w organizacji. Aby skonfigurować różne zasady dla różnych grup zabezpieczeń, zobacz [Ustawianie ustawień ochrony urządzeń dla Windows 10 komputerów](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md).
+    Te ustawienia będą stosowane do wszystkich użytkowników w organizacji. Aby skonfigurować różne zasady dla różnych grup zabezpieczeń, zobacz [Ustawianie ustawień ochrony urządzeń dla Windows 10 komputerów](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md).

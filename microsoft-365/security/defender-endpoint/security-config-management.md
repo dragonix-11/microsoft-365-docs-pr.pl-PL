@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c195f5656db1b7bc971087665a83df32bace7c6
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 7e9e074e4aeaadf041a70baed1d741ea95a9f792
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188221"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622608"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Zarządzaj ustawieniami konfiguracji usługi ochrony punktu końcowego w usłudze Microsoft Defender na urządzeniach z programem Microsoft Endpoint Manager
 
@@ -35,7 +35,7 @@ ms.locfileid: "65188221"
 
 
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
 Zarządzanie zabezpieczeniami dla Ochrona punktu końcowego w usłudze Microsoft Defender to funkcja dla urządzeń, które nie są zarządzane przez Microsoft Endpoint Manager, Microsoft Intune lub Microsoft Endpoint Configuration Manager, aby odbierać konfiguracje zabezpieczeń usługi Microsoft Defender bezpośrednio z Endpoint Manager.
@@ -43,7 +43,8 @@ Zarządzanie zabezpieczeniami dla Ochrona punktu końcowego w usłudze Microsoft
 
 Aby uzyskać więcej informacji na temat zarządzania konfiguracją zabezpieczeń, w tym wymagania wstępne, obsługiwane platformy i nie tylko, zobacz [Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach z Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
-
+Obejrzyj ten film wideo, aby dowiedzieć się, jak zarządzać konfiguracją zabezpieczeń dla Ochrona punktu końcowego w usłudze Microsoft Defender za pomocą Microsoft Endpoint Manager.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVq]
 
 [!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 

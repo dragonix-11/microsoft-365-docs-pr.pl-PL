@@ -14,16 +14,15 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/19/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3bae6326fca5cefc921cb24b1a16180da2a2f52f
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5a38ed6fbdcebf54dcd8bc34458733b5edefb850
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415134"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623154"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi
 
@@ -35,15 +34,13 @@ ms.locfileid: "65415134"
 **Platformy**
 - System Windows
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 Program antywirusowy Microsoft Defender jest automatycznie instalowana w punktach końcowych z następującymi wersjami Windows:
 
 - Windows 10 lub nowsze
 - Windows Server 2022
-- Windows Server 2019
+- Windows Server 2019
 - Windows Server, wersja 1803 lub nowsza
-- System Windows Server 2016
+- Windows Server 2016
 
 Co się stanie, gdy zostanie użyte inne rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft? Czy można uruchomić Program antywirusowy Microsoft Defender obok innego produktu antywirusowego? Odpowiedzi zależą od kilku czynników, takich jak system operacyjny i czy używasz [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md) razem z ochroną antywirusową.
 
@@ -68,8 +65,8 @@ Poniższa tabela zawiera podsumowanie oczekiwań:
 |:---|:---|:---|
 |Windows 10 <br/> Windows 11|Program antywirusowy Microsoft Defender|Tryb aktywny|
 |Windows 10 <br/> Windows 11|Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Tryb wyłączony (odbywa się automatycznie)|
-|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server, wersja 1803 lub nowsza <br/> System Windows Server 2016 |Program antywirusowy Microsoft Defender|Tryb aktywny|
-|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, wersja 1803 lub nowsza <br/> System Windows Server 2016  |Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Wyłączone (ustaw ręcznie) <sup>[[1](#fn1)]</sup>|
+|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server, wersja 1803 lub nowsza <br/> Windows Server 2016 |Program antywirusowy Microsoft Defender|Tryb aktywny|
+|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, wersja 1803 lub nowsza <br/> Windows Server 2016  |Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Wyłączone (ustaw ręcznie) <sup>[[1](#fn1)]</sup>|
 
 (<a id="fn1">1</a>) Na serwerze Windows, jeśli korzystasz z oprogramowania antywirusowego innego niż Microsoft, możesz odinstalować Program antywirusowy Microsoft Defender, aby zapobiec konfliktom. Jeśli urządzenie jest dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender, możesz użyć Program antywirusowy Microsoft Defender w trybie pasywnym (patrz poniżej).
 
@@ -95,14 +92,14 @@ W poniższej tabeli podsumowano stan Program antywirusowy Microsoft Defender w k
 | Windows 10 <br/> Windows 11 | Program antywirusowy Microsoft Defender | Nie   | Tryb aktywny |
 | Windows 10 <br/> Windows 11  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Tak  | Tryb pasywny (automatycznie) |
 | Windows 10 <br/> Windows 11  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Nie   | Tryb wyłączony (automatycznie)    |
-| Windows Server 2022 <br/> Windows Server 2019 <br/>Windows Server, wersja 1803 lub nowsza  | Program antywirusowy Microsoft Defender  | Tak |         Tryb aktywny  |
-| Windows Server 2022 <br/> Windows Server 2019 <br/> Windows Server, wersja 1803 lub nowsza   | Program antywirusowy Microsoft Defender | Nie  | Tryb aktywny |
-| Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server, wersja 1803 lub nowsza  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Tak  | Program antywirusowy Microsoft Defender należy ustawić na tryb pasywny (ręcznie) <sup>[[2](#fn2)]<sup>  | 
-| Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server, wersja 1803 lub nowsza  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Nie  | Program antywirusowy Microsoft Defender należy wyłączyć (ręcznie) <sup>[[3](#fn3)]<sup></sup>  |
-| System Windows Server 2016 <br/> Windows Server 2012 R2   | Program antywirusowy Microsoft Defender | Tak | Tryb aktywny |
-|System Windows Server 2016 <br/> Windows Server 2012 R2  | Program antywirusowy Microsoft Defender | Nie | Tryb aktywny |
-| System Windows Server 2016 <br/> Windows Server 2012 R2  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Tak | Program antywirusowy Microsoft Defender należy ustawić na tryb pasywny (ręcznie) <sup>[[2](#fn2)]<sup> |
-|System Windows Server 2016 <br/> Windows Server 2012 R2  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Nie | Program antywirusowy Microsoft Defender należy wyłączyć (ręcznie) <sup>[[3](#fn3)]<sup> |
+| Windows Server 2022 <br/> Windows Server 2019 <br/>Windows Server, wersja 1803 lub nowsza  | Program antywirusowy Microsoft Defender  | Tak |         Tryb aktywny  |
+| Windows Server 2022 <br/> Windows Server 2019 <br/> Windows Server, wersja 1803 lub nowsza   | Program antywirusowy Microsoft Defender | Nie  | Tryb aktywny |
+| Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server, wersja 1803 lub nowsza  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Tak  | Program antywirusowy Microsoft Defender należy ustawić na tryb pasywny (ręcznie) <sup>[[2](#fn2)]<sup>  | 
+| Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server, wersja 1803 lub nowsza  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Nie  | Program antywirusowy Microsoft Defender należy wyłączyć (ręcznie) <sup>[[3](#fn3)]<sup></sup>  |
+| Windows Server 2016 <br/> Windows Server 2012 R2   | Program antywirusowy Microsoft Defender | Tak | Tryb aktywny |
+|Windows Server 2016 <br/> Windows Server 2012 R2  | Program antywirusowy Microsoft Defender | Nie | Tryb aktywny |
+| Windows Server 2016 <br/> Windows Server 2012 R2  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Tak | Program antywirusowy Microsoft Defender należy ustawić na tryb pasywny (ręcznie) <sup>[[2](#fn2)]<sup> |
+|Windows Server 2016 <br/> Windows Server 2012 R2  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Nie | Program antywirusowy Microsoft Defender należy wyłączyć (ręcznie) <sup>[[3](#fn3)]<sup> |
 
 (<a id="fn2">2</a>) Na Windows Server 2019, Windows Server, wersja 1803 lub nowsza, Windows Server 2016 lub Windows Server 2012 R2, Program antywirusowy Microsoft Defender  program antywirusowy innej firmy nie przechodzi automatycznie w tryb pasywny. W takich przypadkach ustaw Program antywirusowy Microsoft Defender na tryb pasywny, aby zapobiec problemom spowodowanym przez zainstalowanie wielu produktów antywirusowych na serwerze. Możesz ustawić Program antywirusowy Microsoft Defender na tryb pasywny przy użyciu programu PowerShell, zasady grupy lub klucza rejestru. 
 
@@ -190,7 +187,7 @@ Aby potwierdzić stan Program antywirusowy Microsoft Defender, można użyć jed
 
  | Metoda | Procedura | 
  |:---|:---| 
- | aplikacja Zabezpieczenia Windows |  1. Na urządzeniu Windows otwórz aplikację Zabezpieczenia Windows.<br/>2. Wybierz pozycję **Ochrona przed zagrożeniami & wirusów**.<br/>3. W obszarze **ochrona KtoTo?** wybierz pozycję **Zarządzaj dostawcami**.<br/>4. Na stronie **Dostawcy zabezpieczeń** w obszarze **Program antywirusowy** powinna zostać wyświetlona Program antywirusowy Microsoft Defender **jest włączona**. | 
+ | Aplikacja Zabezpieczenia Windows |  1. Na urządzeniu Windows otwórz aplikację Zabezpieczenia Windows.<br/>2. Wybierz pozycję **Ochrona przed zagrożeniami & wirusów**.<br/>3. W obszarze **ochrona KtoTo?** wybierz pozycję **Zarządzaj dostawcami**.<br/>4. Na stronie **Dostawcy zabezpieczeń** w obszarze **Program antywirusowy** powinna zostać wyświetlona Program antywirusowy Microsoft Defender **jest włączona**. | 
  | Menedżer zadań |  1. Na urządzeniu Windows otwórz aplikację Menedżer zadań.<br/>2. Wybierz kartę **Szczegóły** .<br/>3. Wyszukaj **MsMpEng.exe** na liście. | 
  | Windows PowerShell <br/> (Aby potwierdzić, że Program antywirusowy Microsoft Defender jest uruchomiona) |  1. Na urządzeniu Windows otwórz Windows PowerShell. <br/>2. Uruchom następujące polecenie cmdlet programu PowerShell: `Get-Process`.<br/>3. Przejrzyj wyniki. Jeśli Program antywirusowy Microsoft Defender jest włączona, powinna zostać wyświetlona **MsMpEng.exe**. | 
  | Windows PowerShell <br/>(Aby potwierdzić, że ochrona antywirusowa jest w miejscu) |  Możesz użyć [polecenia cmdlet Get-MpComputerStatus programu PowerShell](/powershell/module/defender/get-mpcomputerstatus).<br/>1. Na urządzeniu Windows otwórz Windows PowerShell.<br/>2. Uruchom następujące polecenie cmdlet programu PowerShell:<br/> \|Get-MpComputerStatus wybierz pozycję AMRunningMode <br/>3. Przejrzyj wyniki. Jeśli Program antywirusowy Microsoft Defender jest włączony w punkcie końcowym, powinien zostać wyświetlony tryb **normalny**, **pasywny** lub **EDR bloku**.  | 
@@ -206,7 +203,7 @@ W tabeli w tej sekcji opisano różne stany, które mogą być widoczne w Progra
  |  Wyłączona <br/><br/> lub <br/><br/> Odinstalować  |  Po wyłączeniu lub odinstalowaniu Program antywirusowy Microsoft Defender nie jest używana jako aplikacja antywirusowa. Pliki nie są skanowane, a zagrożenia nie są korygowane. <br/><br/> Wyłączenie lub odinstalowanie Program antywirusowy Microsoft Defender nie jest zalecane ogólnie; jeśli to możliwe, zachowaj Program antywirusowy Microsoft Defender w trybie pasywnym, jeśli używasz rozwiązania chroniącego przed złośliwym kodem lub oprogramowania antywirusowego firmy innej niż Microsoft. <br/><br/> W przypadkach, gdy Program antywirusowy Microsoft Defender jest automatycznie wyłączona, można ją ponownie włączyć automatycznie, jeśli produkt antywirusowy/chroniący przed złośliwym kodem firmy microsoft wygaśnie lub w inny sposób przestanie zapewniać ochronę przed wirusami, złośliwym oprogramowaniem lub innymi zagrożeniami w czasie rzeczywistym. Automatyczne ponowne włączanie Program antywirusowy Microsoft Defender pomaga zapewnić utrzymanie ochrony antywirusowej w punktach końcowych. <br/><br/> Możesz również używać [ograniczonego okresowego skanowania](limited-periodic-scanning-microsoft-defender-antivirus.md), które współpracuje z aparatem Program antywirusowy Microsoft Defender, aby okresowo sprawdzać zagrożenia, jeśli używasz aplikacji antywirusowej innej niż Microsoft.  | 
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -218,6 +215,5 @@ W tabeli w tej sekcji opisano różne stany, które mogą być widoczne w Progra
 ## <a name="see-also"></a>Zobacz też
 
 - [Program antywirusowy Microsoft Defender na klientach Windows](microsoft-defender-antivirus-in-windows-10.md)
-- [Program antywirusowy Microsoft Defender na serwerze Windows](microsoft-defender-antivirus-on-windows-server.md)
 - [Funkcja EDR w trybie blokowania](edr-in-block-mode.md)
 - [Dowiedz się więcej o ochronie przed utratą danych punktu końcowego](/microsoft-365/compliance/endpoint-dlp-learn-about)

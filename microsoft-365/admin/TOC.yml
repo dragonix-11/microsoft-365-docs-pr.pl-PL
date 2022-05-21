@@ -354,12 +354,8 @@
           href: security-and-compliance/enable-modern-authentication.md
         - name: Wymagania wstępne dotyczące ochrony danych
           href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
-        - name: Zwiększ ochronę przed zagrożeniami
-          href: security-and-compliance/increase-threat-protection.md
         - name: Zagrożenia wykryte przez program antywirusowy Microsoft Defender
           href: security-and-compliance/threats-detected-defender-av.md
-        - name: Przejrzyj wykryte zagrożenia i podejmij działania
-          href: security-and-compliance/review-threats-take-action.md
         - name: Konfigurowanie funkcji zgodności
           href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: Wskaźnik bezpieczeństwa
@@ -385,9 +381,6 @@
         - name: Konfigurowanie ustawień ochrony urządzeń dla komputerów z systemem Windows 10
           href: devices/protection-settings-for-windows-10-devices.md
         - name: Weryfikowanie ustawień w systemie Android lub iOS
-          href: devices/validate-settings-on-android-or-ios.md
-        - name: Weryfikowanie ustawień na komputerach z systemem Windows 10
-          href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items:
             - name: Tworzenie i edytowanie profilów rozwiązania AutoPilot

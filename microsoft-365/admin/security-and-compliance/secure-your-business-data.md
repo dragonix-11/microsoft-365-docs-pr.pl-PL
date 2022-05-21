@@ -28,19 +28,19 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Ochrona firmowych wiadomości e-mail i danych przed zagrożeniami cybernetycznymi, w tym oprogramowaniem wymuszającym okup, wyłudzaniem informacji i złośliwymi załącznikami.
-ms.openlocfilehash: 18de5e6f0d859095f38972b0fae66c1312bf4099
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 994223ff7f8f3da9d4d8b75056327214dfc310b0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093672"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622794"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla firm
 
 Jeśli jesteś małą lub średnią organizacją korzystającą z jednego z planów biznesowych firmy Microsoft, wskazówki zawarte w tym artykule ułatwiają zaostrzenie zabezpieczeń organizacji. Wśród twoich wyborów Microsoft 365 Business Premium jest liderem, ponieważ obecnie obejmuje Microsoft Defender dla Firm i inne [zabezpieczenia](../../business-premium/get-microsoft-365-business-premium.md). Zalecane działania zawarte w tym miejscu pomogą Ci osiągnąć cele opisane w [podręczniku Kampanii Cyberbezpieczeństwa](https://go.microsoft.com/fwlink/p/?linkid=2015598) Harvard Kennedy School.
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym artykule, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym artykule, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="watch-a-quick-overview-of-security"></a>Obejrzyj: Krótkie omówienie zabezpieczeń
 
@@ -54,7 +54,7 @@ Aby dowiedzieć się więcej o jednej z funkcji planu usługi, kliknij nagłówe
 
 |Zadanie|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|
-[Ochrona przed utratą lub kradzieżą haseł](#set-up-multifactor-authentication) | ![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Ochrona przed utratą lub kradzieżą haseł](#set-up-multi-factor-authentication) | ![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Szkolenie użytkowników](#train-your-users) | ![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Korzystanie z dedykowanych kont administratorów](#use-dedicated-admin-accounts)|![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 [Ochrona przed złośliwym oprogramowaniem](#protect-against-malware) | ![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(ochrona poczty e-mail) | ![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(zwiększona ochrona poczty e-mail i urządzeń) |
@@ -72,7 +72,7 @@ Przed rozpoczęciem należy sprawdzić [Microsoft 365 Wskaźnik bezpieczeństwa]
 
 ![Zrzut ekranu przedstawiający wskaźnik bezpieczeństwa firmy Microsoft.](../../media/secure-score.png)
 
-## <a name="set-up-multifactor-authentication"></a>Konfigurowanie uwierzytelniania wieloskładnikowego
+## <a name="set-up-multi-factor-authentication"></a>Konfigurowanie uwierzytelniania wieloskładnikowego
 
 Ochrona przed utratą lub kradzieżą haseł przy użyciu uwierzytelniania wieloskładnikowego (MFA). Skonfigurowanie uwierzytelniania wieloskładnikowego wymaga od użytkowników użycia kodu na telefonie w celu zalogowania się do Microsoft 365. Ten dodatkowy krok może uniemożliwić hakerom przejęcie kontroli, jeśli znają Twoje hasło. 
 

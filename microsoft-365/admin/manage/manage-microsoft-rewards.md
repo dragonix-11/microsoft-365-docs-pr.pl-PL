@@ -16,30 +16,30 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Użytkownicy, którzy mają osobiste konta Microsoft, mogą zdobyć punkty Microsoft Rewards w związku ze swoimi wyszukiwaniami służbowym, jeśli opcja Połącz AAD z funkcją Rewards jest włączona.
-ms.openlocfilehash: f31571c81ee511b081344d4bf8d50560229193e6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Użytkownicy, którzy mają osobiste konta Microsoft, mogą zdobywać punkty programu Microsoft Rewards w związku z wyszukiwaniem służbowym, jeśli funkcja Link AAD with Rewards jest włączona.
+ms.openlocfilehash: 6376d3f416adaf6945b339f28708accf46775e2b
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315823"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621387"
 ---
 # <a name="manage-microsoft-rewards"></a>Zarządzanie programem Microsoft Rewards
 
-Użytkownicy, którzy mają osobiste konta Microsoft, mogą zdobyć punkty [Microsoft Rewards](https://www.microsoft.com/rewards) w związku ze swoimi wyszukiwaniami służbowym, jeśli funkcja Link *Microsoft Azure Active Directory (Azure AD)* z programem Rewards jest włączona.
+Użytkownicy, którzy mają osobiste konta Microsoft, mogą zdobywać punkty [programu Microsoft Rewards](https://www.microsoft.com/rewards) dzięki wyszukiwaniu służbowym, jeśli włączono funkcję *Link Microsoft Azure Active Directory (Azure AD) z nagrodami*.
 
-O ile użytkownik nie zrezygnuje z tej funkcji, osobiste konto Microsoft zostanie skojarzone z kontem usługi Azure AD w miejscu pracy. Usługa Microsoft Rewards otrzymuje i dziennikuje informacje o przeszukaniu, ale nie otrzymuje żadnych informacji o jego zawartości. Zawartość zapytań z Twojej organizacji nie będzie udostępniana w ramach tej funkcji w programie Microsoft Rewards.
+Jeśli użytkownik nie zrezygnuje z tej funkcji, jego osobiste konto Microsoft zostanie skojarzone z kontem Azure AD w miejscu pracy. Program Microsoft Rewards otrzymuje i rejestruje informacje o tym, że wyszukiwanie miało miejsce, ale nie otrzymuje żadnych informacji o zawartości wyszukiwania. Zawartość zapytań z twojej organizacji nie zostanie udostępniona programowi Microsoft Rewards w ramach tej funkcji.
 
-W przypadku administratorów organizacji edukacyjnych z niepełnoletnimi dziećmi do uczestnictwa w programie Microsoft Rewards jest wymagane konto Microsoft rodzica. Konto rodzica nie będzie skojarzone z kontem organizacyjnym ucznia. Aby uzyskać więcej informacji na temat kont Microsoft dla dzieci, zobacz [Zgody rodziców i konta Microsoft dzieci](https://support.microsoft.com/account-billing/c6951746-8ee5-8461-0809-fbd755cd902e).
+W przypadku administratorów organizacji edukacyjnych z małoletnimi dziećmi rodzicielskie konto Microsoft jest wymagane, aby dziecko uczestniczyło w programie Microsoft Rewards. Konto rodzicielskie nie będzie skojarzone z kontem organizacyjnym ucznia. Aby uzyskać więcej informacji na temat kont Microsoft dla dzieci, zobacz [Zgoda rodziców i Konta podrzędne firmy Microsoft](https://support.microsoft.com/account-billing/c6951746-8ee5-8461-0809-fbd755cd902e).
 
-Ta funkcja nie jest dostępna dla użytkowników rządowych. Administratorzy powinni upewnić się, że zasady zgodności organizacji zezwalają na korzystanie z osobistych kont usługi Microsoft Rewards z wyszukiwaniami służbowych.
+Ta funkcja nie jest dostępna dla użytkowników rządowych. Administratorzy powinni upewnić się, że zasady zgodności organizacji zezwalają na korzystanie z osobistych kont programu Microsoft Rewards z wyszukiwaniami służbowymi.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Konfigurowanie Microsoft Search](/microsoftsearch/setup-microsoft-search) (artykuł)
 
-[12 najlepszych zadań dla zespołów ds. zabezpieczeń na rzecz obsługi pracy z domu](../../security/top-security-tasks-for-remote-work.md) (artykuł)
+[12 najważniejszych zadań dla zespołów zabezpieczeń do obsługi pracy z domu](../../security/top-security-tasks-for-remote-work.md) (artykuł)
 
-[Co nowego w programie Microsoft 365](https://support.microsoft.com/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426) (artykuł)
+[Co nowego w Microsoft 365](https://support.microsoft.com/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426) (artykuł)
 
 

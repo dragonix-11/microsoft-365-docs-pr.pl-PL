@@ -19,12 +19,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak wyświetlać, tworzyć, modyfikować i usuwać zasady linków Sejf i globalne ustawienia linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 867d055c44ba0d0ae0b7b763bc556a06f16e5cd8
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 1d60be56f8dad960ca3f15484276324421c00426
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847107"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623013"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurowanie zasad linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -125,6 +125,10 @@ Utworzenie niestandardowych zasad łączy Sejf w portalu Microsoft 365 Defender 
        - **Poczekaj na ukończenie skanowania adresu URL przed dostarczeniem komunikatu**: wybierz tę opcję, aby poczekać na ukończenie skanowania adresu URL w czasie rzeczywistym przed dostarczeniem komunikatu.
      - **Zastosuj Sejf Łącza do wiadomości e-mail wysyłanych w organizacji**: wybierz tę opcję, aby zastosować zasady linków Sejf do komunikatów między nadawcami wewnętrznymi i odbiorcami wewnętrznymi.
    - **Wybierz akcję dla nieznanych lub potencjalnie złośliwych adresów URL w Microsoft Teams**: wybierz pozycję **Włączone**, aby włączyć ochronę linków Sejf dla linków w Teams. Należy pamiętać, że zastosowanie tego ustawienia może potrwać do 24 godzin.
+
+     > [!NOTE]
+     > Obecnie ochrona linków Sejf dla Microsoft Teams nie jest dostępna w Microsoft 365 GCC High lub Microsoft 365 DoD.
+
    - **Śledzenie kliknięć użytkownika**: pozostaw wybraną opcję, aby włączyć śledzenie kliknięć adresów URL w wiadomościach e-mail.
    - **Zezwalaj użytkownikom na klikanie oryginalnego adresu URL**: wyczyść tę opcję, aby uniemożliwić użytkownikom klikanie oryginalnego adresu URL [na stronach ostrzegawczych](safe-links.md#warning-pages-from-safe-links).
    - **Nie należy ponownie pisać następujących adresów URL**: zezwala na dostęp do określonych adresów URL, które w przeciwnym razie byłyby blokowane przez Sejf Łącza.

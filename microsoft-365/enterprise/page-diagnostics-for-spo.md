@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Użyj narzędzia Diagnostyka strony dla SharePoint, aby przeanalizować nowoczesny portal SharePoint Online i klasyczne strony publikowania pod kątem wstępnie zdefiniowanego zestawu kryteriów wydajności.
-ms.openlocfilehash: b39b547754acc6f12c750192af2986e9b4e54150
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a4d2c0f6d298578290d9f7daf850c4744e2f8dff
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095669"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621841"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Korzystanie z narzędzia Diagnostyka strony dla SharePoint
 
@@ -47,7 +47,7 @@ Narzędzie diagnostyki strony jest przeznaczone do analizowania tylko stron witr
 > [!div class="mx-imgBorder"]
 > ![Musi działać na stronie SharePoint.](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
 
-Nie jest to błąd w narzędziu, ponieważ nie ma żadnej wartości w ocenie bibliotek lub stron systemowych. Przejdź do strony witryny SharePoint, aby użyć tego narzędzia. Jeśli ten błąd wystąpi na stronie SharePoint, sprawdź stronę wzorcową, aby upewnić się, że metadane SharePoint nie zostały usunięte.
+To nie jest błąd w narzędziu, ponieważ nie ma żadnej wartości w ocenie bibliotek lub stron systemowych. Przejdź do strony witryny SharePoint, aby użyć tego narzędzia. Jeśli ten błąd wystąpi na stronie SharePoint, sprawdź stronę wzorcową, aby upewnić się, że metadane SharePoint nie zostały usunięte.
 
 Aby przekazać opinię na temat narzędzia, wybierz wielokropek w prawym górnym rogu narzędzia, a następnie wybierz pozycję [Przekaż opinię](https://go.microsoft.com/fwlink/?linkid=874109).
 
@@ -72,7 +72,7 @@ Procedura instalacji w tej sekcji będzie działać zarówno dla przeglądarek C
 1. Jeśli chcesz użyć narzędzia w trybie Incognito lub InPrivate, postępuj zgodnie z procedurą przeglądarki:
     1. W Microsoft Edge przejdź do pozycji **Rozszerzenia** lub wpisz _edge://extensions_ na pasku adresu URL i wybierz pozycję **Szczegóły** rozszerzenia. W ustawieniach rozszerzenia zaznacz pole wyboru **Zezwalaj w usłudze InPrivate**.
     1. W przeglądarce Chrome przejdź do pozycji **Rozszerzenia** lub wpisz _chrome://extensions_ na pasku adresu URL i wybierz pozycję **Szczegóły** rozszerzenia. W ustawieniach rozszerzenia wybierz suwak **zezwalania w usłudze Incognito**.
-1. Przejdź do strony witryny SharePoint w SharePoint Online, którą chcesz przejrzeć. Zezwoliliśmy na "opóźnienie ładowania" elementów na stronach; W związku z tym narzędzie nie zostanie zatrzymane automatycznie (jest to z założenia przeznaczone do obsługi wszystkich scenariuszy ładowania stron). Aby zatrzymać zbieranie, wybierz pozycję **Zatrzymaj**. Upewnij się, że ładowanie strony zostało ukończone przed zatrzymaniem zbierania danych lub że zostanie przechwycony tylko częściowy ślad.
+1. Przejdź do strony witryny SharePoint w SharePoint Online, którą chcesz przejrzeć. Zezwoliliśmy na "opóźnienie ładowania" elementów na stronach; W związku z tym narzędzie nie zostanie zatrzymane automatycznie (jest to zgodne z projektem w celu uwzględnienia wszystkich scenariuszy ładowania stron). Aby zatrzymać zbieranie, wybierz pozycję **Zatrzymaj**. Upewnij się, że ładowanie strony zostało ukończone przed zatrzymaniem zbierania danych lub że wykonasz tylko częściowy ślad.
 1. Kliknij przycisk paska narzędzi rozszerzenia ![Diagnostyka strony dla logo SharePoint.](../media/page-diagnostics-for-spo/pagediag-icon32.png) Aby załadować narzędzie, zostanie wyświetlone następujące okno podręczne rozszerzenia:
 
     ![Okno podręczne narzędzia diagnostyki strony.](../media/page-diagnostics-for-spo/pagediag-Landing.png)
@@ -90,10 +90,10 @@ Wybierz pozycję **Rozpocznij** , aby rozpocząć zbieranie danych do analizy.
     > [!div class="mx-imgBorder"]
     > ![Szczegóły diagnostyki strony.](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
-   - **CorrelationID** jest ważnym elementem podczas pracy z pomoc techniczna firmy Microsoft, ponieważ umożliwia zbieranie dodatkowych danych diagnostycznych dla określonej strony.
+   - **CorrelationID** jest ważnym elementem podczas pracy z pomoc techniczna firmy Microsoft, ponieważ umożliwia zebranie większej ilości danych diagnostycznych dla określonej strony.
    - **SPRequestDuration** to czas potrzebny SharePoint na przetworzenie strony. Nawigacja strukturalna, duże obrazy, wiele wywołań interfejsu API mogą przyczynić się do dłuższego czasu trwania.
    - **SPIISLatency** to czas w milisekundach potrzebny na rozpoczęcie ładowania strony przez usługę SharePoint Online. Ta wartość nie obejmuje czasu potrzebnego aplikacji internetowej na udzielenie odpowiedzi.
-   - **Czas ładowania strony** to całkowity czas rejestrowany przez stronę od czasu żądania do czasu odebrania i renderowania odpowiedzi w przeglądarce. Na tę wartość wpływa wiele czynników, w tym opóźnienie sieci, wydajność komputera i czas ładowania strony przez przeglądarkę.
+   - **Czas ładowania strony** to całkowity czas rejestrowany przez stronę od czasu żądania do czasu odebrania i renderowania odpowiedzi w przeglądarce. Na tę wartość wpływają różne czynniki, w tym opóźnienie sieci, wydajność komputera i czas ładowania strony przez przeglądarkę.
    - **Adres URL strony** (Uniform Resource Locator) to adres internetowy bieżącej strony.
 
 1. Karta [**Testy diagnostyczne**](#how-to-use-the-diagnostic-tests-tab) wyświetla wyniki analizy w trzech kategoriach. **Nie są wymagane żadne działania**, wymagane **są możliwości poprawy** i **uwaga**. Każdy wynik testu jest reprezentowany przez element w jednej z tych kategorii, zgodnie z opisem w poniższej tabeli:
@@ -117,7 +117,7 @@ Wyniki testów, które są wyświetlane w **kategoriach Możliwości poprawy** l
 
 Informacje na karcie Testy diagnostyczne nie informują o sposobie projektowania stron, ale wyróżniają czynniki, które mogą mieć wpływ na wydajność strony. Niektóre funkcje i dostosowania stron mają nieunikniony wpływ na wydajność strony i powinny zostać przejrzane pod kątem potencjalnego korygowania lub pominięcia na stronie, jeśli ich wpływ jest znaczny.
 
-Czerwone lub żółte wyniki mogą również wskazywać składniki Web Part, które zbyt często odświeżają dane. Na przykład wiadomości firmowe nie są aktualizowane co sekundę, ale niestandardowe składniki Web Part są często tworzone w celu pobierania najnowszych wiadomości co sekundę zamiast implementowania elementów buforowania, które mogłyby poprawić ogólne środowisko użytkownika. Podczas dołączania składników Web Part na stronie należy pamiętać, że często istnieją proste sposoby zmniejszania ich wpływu na wydajność przez ocenę wartości każdego dostępnego parametru, aby upewnić się, że jest on ustawiony odpowiednio do zamierzonego celu.
+Czerwone lub żółte wyniki mogą również wskazywać składniki Web Part, które zbyt często odświeżają dane. Na przykład wiadomości firmowe nie są aktualizowane co sekundę, ale niestandardowe składniki Web Part są często tworzone w celu pobierania najnowszych wiadomości co sekundę zamiast implementowania elementów buforowania, które mogłyby poprawić ogólne środowisko użytkownika. Podczas dołączania składników Web Part na stronie należy pamiętać, że często istnieją proste sposoby zmniejszenia ich wpływu na wydajność przez ocenę wartości każdego dostępnego parametru, aby upewnić się, że jest on ustawiony odpowiednio do zamierzonego celu.
 
 >[!NOTE]
 >Klasyczne witryny zespołu, które nie mają włączonej funkcji publikowania, nie mogą korzystać z sieci CDN. Po uruchomieniu narzędzia w tych witrynach oczekuje się, że test CDN zakończy się niepowodzeniem i może zostać zignorowany, ale wszystkie pozostałe testy mają zastosowanie. Dodatkowe funkcje funkcji publikowania SharePoint mogą wydłużyć czas ładowania strony, dlatego nie należy jej włączać tylko po to, aby umożliwić CDN funkcjonalność.

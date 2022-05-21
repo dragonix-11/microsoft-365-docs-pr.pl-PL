@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Podczas przeprowadzania analizy zbierania elektronicznych materiałów dowodowych (Premium) funkcja wątkowości wiadomości e-mail analizuje konwersację wiadomości e-mail i dzieli każdą wiadomość na różne kategorie.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e35ffa901bb1b90b0ac5d572b6a7ee05cce31d89
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6aa8bfdccf2f7430da1aa00ed444a9c218525ee8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65086814"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622146"
 ---
 # <a name="email-threading-in-ediscovery-premium"></a>Wątkowość wiadomości e-mail w usłudze eDiscovery (Premium)
 
@@ -31,7 +31,7 @@ Rozważmy konwersację e-mail, która trwa od jakiegoś czasu. W większości pr
 
 ## <a name="what-does-email-threading-do"></a>Co robi wątkowanie wiadomości e-mail?
 
-Wątek wiadomości e-mail analizuje każdy wątek wiadomości e-mail i dekonstruuje go do poszczególnych wiadomości. Każdy wątek wiadomości e-mail jest łańcuchem poszczególnych wiadomości. Usługa Microsoft Purview eDiscovery (Premium) analizuje wszystkie wiadomości e-mail w zestawie przeglądów, aby ustalić, czy wiadomość e-mail ma unikatową zawartość, czy też łańcuch (wiadomości nadrzędne) jest całkowicie zawarty w ostatecznej wiadomości w wątku wiadomości e-mail. Wiadomości e-mail są podzielone na cztery wartości inkluzywne:
+Wątek wiadomości e-mail analizuje każdy wątek wiadomości e-mail i dekonstruuje go do poszczególnych wiadomości. Każdy wątek wiadomości e-mail jest łańcuchem poszczególnych wiadomości. Microsoft Purview eDiscovery (Premium) analizuje wszystkie wiadomości e-mail w zestawie przeglądów, aby ustalić, czy wiadomość e-mail ma unikatową zawartość, czy też łańcuch (wiadomości nadrzędne) jest całkowicie zawarty w ostatecznej wiadomości w wątku wiadomości e-mail. Wiadomości e-mail są podzielone na cztery wartości inkluzywne:
 
 - **Inkluzywna**: *inkluzywna* wiadomość e-mail to ostatnia wiadomość e-mail w wątku wiadomości e-mail zawierająca całą poprzednią zawartość tego wątku wiadomości e-mail.
 

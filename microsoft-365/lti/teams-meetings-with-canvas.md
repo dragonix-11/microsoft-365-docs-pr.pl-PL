@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrowanie spotkań Microsoft Teams z kanwą
-ms.openlocfilehash: a81b8c7da014ba4ded9e4a2e3cfd6b38509ae2db
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: cbb24972dba7fafe60cb460e514a0fede64a08fb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599618"
+ms.locfileid: "65621459"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Korzystanie ze spotkań w aplikacji Microsoft Teams z kanwą
 

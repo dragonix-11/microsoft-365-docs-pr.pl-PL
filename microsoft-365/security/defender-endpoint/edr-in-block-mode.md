@@ -18,12 +18,12 @@ ms.custom:
 ms.date: 04/04/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 5a9441a41db2dfbe53bfb280152c038e9dbc383e
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: c8b3016517393b473bcae664a6044098e04ebf6d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789849"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623596"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Wykrywanie i reagowanie na punkty końcowe (EDR) w trybie bloku
 
@@ -35,7 +35,7 @@ ms.locfileid: "64789849"
 **Platformy**
 - System Windows
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>Co to jest EDR w trybie bloku?
 
@@ -56,6 +56,9 @@ EDR w trybie bloku jest zintegrowana z [& zarządzanie lukami w zabezpieczeniach
 
 > [!TIP]
 > Aby uzyskać najlepszą ochronę, należy **[wdrożyć Ochrona punktu końcowego w usłudze Microsoft Defender punktów odniesienia](configure-machines-security-baseline.md)**.
+
+Obejrzyj ten film wideo, aby dowiedzieć się, dlaczego i jak włączyć wykrywanie i reagowanie w punktach końcowych (EDR) w trybie bloku, włączyć blokowanie zachowań i ograniczanie na każdym etapie od wstępnego naruszenia do po naruszeniu zabezpieczeń. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HjW2]
 
 ## <a name="what-happens-when-something-is-detected"></a>Co się stanie, gdy coś zostanie wykryte?
 
@@ -171,7 +174,7 @@ Jeśli Program antywirusowy Microsoft Defender działa w trybie aktywnym lub pas
 - Windows 10 (wszystkie wersje)
 - Windows Server, wersja 1803 lub nowsza 
 - Windows Server 2022
-- Windows Server 2019 
+- Windows Server 2019 
 - Windows Server 2016 i Windows Server 2012 R2 (z [nowym ujednoliconym rozwiązaniem klienckim](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution))
 
 Dzięki [nowemu ujednoliconemu rozwiązaniu klienckiemu](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) dla Windows Server 2016 i Windows Server 2012 R2 można uruchamiać EDR w trybie bloku w trybie pasywnym lub aktywnym.

@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczanie urządzeń Windows
+title: Zabezpieczanie urządzeń z systemem Windows
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -28,14 +28,14 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Dowiedz się więcej na temat konfigurowania ustawień domyślnych zasad urządzenia, które będą otrzymywać wszystkie Windows urządzenia po zalogowaniu się do konta służbowego.
-ms.openlocfilehash: e912ab639e5457d3c89155da4d3621399502267f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: a88aad90d9ca55c5a5abeb17345179c2defdbd4e
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319909"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621346"
 ---
-# <a name="secure-windows-devices"></a>Zabezpieczanie urządzeń Windows
+# <a name="secure-windows-devices"></a>Zabezpieczanie urządzeń z systemem Windows
 
 Celem jest skonfigurowanie ustawień, które są częścią domyślnych zasad urządzenia dla Windows 10 lub 11. Wszyscy użytkownicy, którzy łączą urządzenie Windows, w tym urządzenia przenośne i komputery, logując się przy użyciu konta służbowego, automatycznie otrzymają te ustawienia. Zalecane jest zaakceptowanie domyślnych zasad podczas instalacji i dodanie w późniejszym terminie zasad dotyczących konkretnych grup użytkowników.
   
@@ -45,11 +45,11 @@ Domyślnie wszystkie ustawienia są **Włączone**. Dostępne są następujące 
 
 |Ustawienie  <br/> |Opis  <br/> |
 |:-----|:-----|
-|Chroń komputery przed wirusami i innymi zagrożeniami za pomocą ochrony antywirusowej programu Windows Defender  <br/> |Wymaga włączenia programu antywirusowego Windows Defender w celu ochrony komputerów przed zagrożeniami związanymi z połączeniem z Internetem.  <br/> |
+|Ochrona komputerów przed wirusami i innymi zagrożeniami przy użyciu Program antywirusowy Microsoft Defender  <br/> |Wymaga włączenia Program antywirusowy Microsoft Defender w celu ochrony komputerów przed zagrożeniami związanymi z połączeniem z Internetem.  <br/> |
 |Chroń komputery przed zagrożeniami internetowymi w programie Microsoft Edge  <br/> |Włącza w programie Microsoft Edge ustawienia ułatwiające ochronę użytkowników przed złośliwymi witrynami i złośliwą zawartością do pobrania.  <br/> |
 |Pomóż chronić pliki i foldery na komputerach przed nieautoryzowanym dostępem za pomocą funkcji BitLocker  <br/> |BitLocker chroni dane przez szyfrowanie dysków twardych komputera i ochronę przed ujawnieniem danych w przypadku utraty lub kradzieży komputera. Aby uzyskać więcej informacji, zobacz [BitLocker często zadawane pytania](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
 |Wyłącz ekran urządzenia po takim czasie bezczynności  <br/> |Zapewnia bezpieczeństwo danych firmowych podczas bezczynności użytkownika. Jeśli użytkownik pracuje w miejscu publicznym, na przykład kawiarni, i odejdzie na chwilę od urządzenia lub skupi uwagę na czymś innym, przypadkowe osoby mogą obejrzeć zawartość ekranu. To ustawienie pozwala kontrolować czas bezczynności użytkownika, po którym ekran zostanie wyłączony.  <br/> |
 
 ## <a name="next-objective"></a>Następny cel
 
-[Zarządzanie urządzeniami Windows](m365bp-manage-windows-devices.md)
+[Zarządzanie urządzeniami z systemem Windows](m365bp-manage-windows-devices.md)

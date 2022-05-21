@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Dowiedz się, jak Program antywirusowy Microsoft Defender chroni urządzenia Windows przed zagrożeniami oprogramowania, takimi jak wirusy, złośliwe oprogramowanie i programy szpiegujące.
-ms.openlocfilehash: 47f6af2b91eed8096a685f8d3281f16fdc677331
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 796edb343745e19267f901b736ca19217b0e4f01
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466311"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620909"
 ---
 # <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>Omówienie ochrony przed zagrożeniami według Program antywirusowy Microsoft Defender
 
@@ -73,7 +73,7 @@ Gdy zagrożenia zostaną wykryte przez Program antywirusowy Microsoft Defender, 
 
 W większości przypadków użytkownicy nie muszą podejmować żadnych dalszych działań. Gdy tylko na urządzeniu zostanie wykryty złośliwy plik lub program, Program antywirusowy Microsoft Defender go zablokuje i uniemożliwi jego uruchomienie. Ponadto nowo wykryte zagrożenia są dodawane do aparatu antywirusowego i ochrony przed złośliwym kodem, dzięki czemu inne urządzenia i użytkownicy są również chronieni.  
 
-Jeśli użytkownik musi wykonać akcję, taką jak zatwierdzenie usunięcia złośliwego pliku, zobaczy to w otrzymywanym powiadomieniu. Aby dowiedzieć się więcej na temat akcji wykonywanych Program antywirusowy Microsoft Defender w imieniu użytkownika lub akcji, które użytkownicy mogą podjąć, zobacz [Historia ochrony](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). Aby dowiedzieć się, jak zarządzać wykrywaniem zagrożeń jako specjalista IT/administrator, zobacz [Przegląd wykrytych zagrożeń i podjęcie akcji](review-threats-take-action.md).
+Jeśli użytkownik musi wykonać akcję, taką jak zatwierdzenie usunięcia złośliwego pliku, zobaczy to w otrzymywanym powiadomieniu. Aby dowiedzieć się więcej na temat akcji wykonywanych Program antywirusowy Microsoft Defender w imieniu użytkownika lub akcji, które użytkownicy mogą podjąć, zobacz [Historia ochrony](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). Aby dowiedzieć się, jak zarządzać wykrywaniem zagrożeń jako specjalista IT/administrator, zobacz [Przegląd wykrytych zagrożeń i podjęcie akcji](../../business-premium/m365bp-review-threats-take-action.md).
 
 Aby dowiedzieć się więcej o różnych zagrożeniach, odwiedź <a href="https://www.microsoft.com/wdsi/threats" target="_blank">witrynę Microsoft Security Intelligence Threats</a>, w której można wykonać następujące akcje: 
 

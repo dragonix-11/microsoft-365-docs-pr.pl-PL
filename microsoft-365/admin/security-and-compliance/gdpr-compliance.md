@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Dowiedz się, jak Microsoft 365 dla firm może pomóc w procesie ogólnego rozporządzenia o ochronie danych (RODO).
-ms.openlocfilehash: 28f39b8aaf715c9f95f89fe30ae0cfc077327eda
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: f616ed65879427c377333981841006b2b50b3515
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469519"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621260"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>Rodo uproszczone: przewodnik dla małych firm
 
@@ -32,7 +32,7 @@ ms.locfileid: "65469519"
   
 Ogólne rozporządzenie o ochronie danych (RODO) jest rozporządzeniem Unii Europejskiej (UE), które określa sposób, w jaki organizacja powinna obsługiwać dane osobowe. Jeśli Twoja firma sprzedaje, świadczy usługi lub zatrudnia obywateli Unii Europejskiej, [to RODO](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) wpłynie na Ciebie. 
 
-Jako administrator małej firmy prawdopodobnie zadajesz sobie pytanie "jak rozpocząć pracę"? Może to być szczególnie prawdziwe, jeśli Twoja firma nie obsługuje danych osobowych jako podstawowej działalności biznesowej lub jeśli RODO jest dla Ciebie całkowicie nowe.
+Jako administrator małej firmy prawdopodobnie zadajesz sobie pytanie "jak rozpocząć pracę"? Może to być szczególnie istotne, jeśli Twoja firma nie obsługuje danych osobowych jako podstawowej działalności biznesowej lub jeśli RODO jest dla Ciebie całkowicie nowe.
 
 Możesz rozpocząć od zapoznania się z tym artykułem, który ma na celu pomoc w zrozumieniu, czym jest RODO, dlaczego tak się stało i jak Microsoft 365 dla firm może pomóc twojej organizacji w przestrzeganiu RODO.
 
@@ -59,7 +59,7 @@ Niektóre terminy, o których często mowa, zostaną wyświetlone w RODO. Ważne
   
  **Zgoda**
   
-RODO stanowi: "Przetwarzanie danych osobowych powinno być zaprojektowane tak, aby służyło ludzkości". RODO ma nadzieję osiągnąć ten cel, korzystając z zgody podczas przetwarzania danych osobowych. To może być prosty akt pytania klientów, czy chcą otrzymywać wiadomości e-mail od firmy. Oznacza to również, że nie ma więcej pól wyboru rezygnacji w witrynie internetowej, jeśli chcesz używać danych do celów marketingowych. Musisz wyrazić wyraźną zgodę, używając "jasnego aktu potwierdzającego". Ponadto należy również przechowywać zapisy dotyczące momentu odebrania lub odwołania zgody.
+RODO stanowi: "Przetwarzanie danych osobowych powinno być zaprojektowane tak, aby służyło ludzkości". RODO ma nadzieję osiągnąć ten cel, korzystając z zgody podczas przetwarzania danych osobowych. To może być prosty akt pytania klientów, czy chcą otrzymywać wiadomości e-mail od firmy. Oznacza to również, że nie ma więcej pól wyboru rezygnacji w witrynie internetowej, jeśli chcesz używać danych do celów marketingowych. Musisz wyrazić wyraźną zgodę, używając "jasnego aktu potwierdzającego". Ponadto należy również przechowywać rekordy dotyczące momentu odebrania lub odwołania zgody.
   
  **Prawa podmiotu danych**
   
@@ -73,7 +73,7 @@ RODO ustanawia prawa podmiotów danych, co oznacza, że w odniesieniu do ich dan
     
 - **Poproś o usunięcie danych:** To prawo, znane również jako "prawo do usunięcia", umożliwia osobie fizycznej zażądanie usunięcia wszystkich danych osobowych zebranych przez firmę we wszystkich systemach, które z nich korzystają lub udostępniają. 
     
-- **Przetwarzanie ograniczone żądania:** Osoba może poprosić o pominięcie lub ograniczenie danych. Ma on jednak zastosowanie tylko w pewnych okolicznościach. 
+- **Przetwarzanie ograniczone żądania:** Osoba może poprosić o pominięcie lub ograniczenie danych. Ma to jednak zastosowanie tylko w pewnych okolicznościach. 
     
 - **Możliwość przenoszenia danych:** Osoba fizyczna może poprosić o przesłanie swoich danych do innej firmy. 
     
@@ -94,13 +94,14 @@ Dobrym sposobem rozpoczęcia pracy z RODO przez małą firmę jest zastosowanie 
 
 ### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>Krok 1. Poznanie danych osobowych zbieranych i używanych w firmie oraz potrzebnych przyczyn
 
-W przypadku małej firmy jednym z pierwszych kroków, które należy wykonać, jest utworzenie spisu danych osobowych zbieranych i używanych w firmie oraz przyczyn, dla których są one potrzebne. Obejmuje to dane zarówno pracowników, jak i klientów.
+Jako mała firma jednym z pierwszych kroków, które należy wykonać, jest utworzenie spisu danych osobowych zbieranych i używanych w firmie oraz przyczyn ich potrzeb. Obejmuje to dane zarówno pracowników, jak i klientów.
 
 Na przykład dane osobowe pracownika mogą być potrzebne na podstawie umowy o pracę i ze względów prawnych (na przykład raportowania podatków do Wewnętrznej Służby Skarbowej).
 
 Innym przykładem może być zarządzanie listami poszczególnych klientów w celu wysyłania im powiadomień o ofertach specjalnych, jeśli wyrażą na to zgodę.
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365 funkcje, które mogą pomóc
+
 [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) ułatwiają odnajdywanie, klasyfikowanie i ochronę poufnych informacji w firmie. Klasyfikatory z możliwością trenowania ułatwiają identyfikowanie i etykietowanie typów dokumentów zawierających dane osobowe. 
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Krok 2. Informowanie klientów, pracowników i innych osób o konieczności zebrania ich danych osobowych

@@ -1,7 +1,7 @@
 ---
-title: Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender wiadomości
-description: Za pomocą menu Zarządzaj alertami można zmieniać stan alertów, tworzyć reguły ostrzeżeń w celu ukrywania alertów, przesyłania komentarzy i przeglądania historii zmian dla poszczególnych alertów.
-keywords: zarządzanie alertami, zarządzanie, alerty, stan, nowy, w toku, rozwiązywanie, rozwiązywanie alertów, pomijanie, kompresja, reguły, kontekst, historia, komentarze, zmiany
+title: Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Zmień stan alertów, utwórz reguły pomijania, aby ukryć alerty, przesłać komentarze i przejrzeć historię zmian dla poszczególnych alertów za pomocą menu Zarządzanie alertami.
+keywords: zarządzanie alertami, zarządzanie, alerty, stan, nowy, w toku, rozwiązany, rozwiązywanie alertów, pomijanie, supression, reguły, kontekst, historia, komentarze, zmiany
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,127 +14,130 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 83e7bd2cc46469cb6a5a6bc8c29a8d21dba20b7f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: c14447301cfa6abf83c231361c020d261eeb87a9
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466196"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623444"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender wiadomości
+# <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Program Defender for Endpoint powiadamia Cię o możliwych złośliwych zdarzeniach, atrybutach i informacjach kontekstowych za pośrednictwem alertów. Podsumowanie nowych alertów jest wyświetlane na pulpicie nawigacyjnym Operacje **zabezpieczeń, a** także umożliwia dostęp do wszystkich alertów w **kolejce alertów**.
+Usługa Defender for Endpoint powiadamia o możliwych złośliwych zdarzeniach, atrybutach i informacjach kontekstowych za pośrednictwem alertów. Podsumowanie nowych alertów jest wyświetlane na **pulpicie nawigacyjnym Operacje zabezpieczeń** i można uzyskać dostęp do wszystkich alertów w **kolejce alertów**.
 
-Alertami można zarządzać, wybierając je w kolejce **Alerty** lub na  karcie Alerty na stronie Urządzenie dla poszczególnych urządzeń.
+Alertami można zarządzać, wybierając alert w **kolejce Alerty** lub kartę **Alerty** na stronie Urządzenie dla pojedynczego urządzenia.
 
-Wybranie alertu w jednym z tych miejsc prowadzi do **okienka Zarządzanie alertami**.
+Wybranie alertu w każdym z tych miejsc powoduje utworzenie **okienka zarządzania alertami**.
 
 :::image type="content" source="images/atp-alerts-selected.png" alt-text="Okienko zarządzania alertami i kolejka alertów" lightbox="images/atp-alerts-selected.png":::
 
-## <a name="link-to-another-incident"></a>Link do innego zdarzenia
+Obejrzyj ten film wideo, aby dowiedzieć się, jak używać nowej strony alertów Ochrona punktu końcowego w usłudze Microsoft Defender.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
 
-Możesz utworzyć nowe zdarzenie z alertu lub linku do istniejącego zdarzenia.
+## <a name="link-to-another-incident"></a>Link do innego incydentu
+
+Możesz utworzyć nowe zdarzenie z poziomu alertu lub utworzyć link do istniejącego incydentu.
 
 ## <a name="assign-alerts"></a>Przypisywanie alertów
 
-Jeśli alert nie został jeszcze przypisany, możesz wybrać pozycję **Przypisz** do mnie, aby przypisać alert do siebie.
+Jeśli alert nie został jeszcze przypisany, możesz wybrać pozycję **Przypisz do mnie** , aby przypisać alert do siebie.
 
-## <a name="suppress-alerts"></a>Pomiń alerty
+## <a name="suppress-alerts"></a>Pomijanie alertów
 
-W niektórych sytuacjach może być konieczne pominięcie pojawiania się alertów w Microsoft 365 Defender. Program Defender for Endpoint umożliwia tworzenie reguł obowiązujących dla określonych alertów, o których wiadomo, że są one niezbędne, takie jak znane narzędzia lub procesy w organizacji.
+Mogą istnieć scenariusze, w których należy pominąć wyświetlanie alertów w Microsoft 365 Defender. Usługa Defender for Endpoint umożliwia tworzenie reguł pomijania dla określonych alertów, o których wiadomo, że są nieszkodliwe, takich jak znane narzędzia lub procesy w organizacji.
 
-Reguły można tworzyć na podstawie istniejącego alertu. W razie potrzeby można je wyłączyć i w razie potrzeby ponownie wywoływali.
+Reguły pomijania można utworzyć na podstawie istniejącego alertu. W razie potrzeby można je wyłączyć i przywrócić.
 
-Podczas tworzenia reguły reguła będzie obowiązywać od momentu jej utworzenia. Reguła nie będzie mieć wpływu na istniejące alerty już w kolejce przed utworzeniem reguły. Reguła zostanie zastosowana tylko do alertów spełniających warunki określone po jej utworzeniu.
+Gdy zostanie utworzona reguła pomijania, zacznie obowiązywać od momentu utworzenia reguły. Reguła nie wpłynie na istniejące alerty już w kolejce przed utworzeniem reguły. Reguła będzie stosowana tylko w przypadku alertów spełniających warunki ustawione po utworzeniu reguły.
 
-Istnieją dwa konteksty reguły, do wyboru:
+Istnieją dwa konteksty reguły pomijania, z których można wybrać:
 
-- **Pomiń alerty na tym urządzeniu**
-- **Pomiń alert w mojej organizacji**
+- **Pomijanie alertu na tym urządzeniu**
+- **Pomijanie alertu w mojej organizacji**
 
-Kontekst reguły pozwala dostosować to, co jest dostępne w portalu, oraz zagwarantować, że w portalu będą publikowane tylko rzeczywiste alerty zabezpieczeń.
+Kontekst reguły umożliwia dostosowanie tego, co zostanie wyświetlone w portalu, i upewnienie się, że w portalu zostaną wyświetlone tylko prawdziwe alerty zabezpieczeń.
 
-Możesz użyć przykładów z poniższej tabeli, aby ułatwić ci wybranie kontekstu reguły reguły eksowej:
+Przykłady z poniższej tabeli ułatwiają wybranie kontekstu reguły pomijania:
 
-|Kontekst|Definicja|Przykładowe scenariusze|
+|Kontekście|Definicja|Przykładowe scenariusze|
 |---|---|---|
-|**Pomiń alerty na tym urządzeniu**|Alerty z tym samym tytułem alertu i tylko na tym konkretnym urządzeniu zostaną pominięte. <p> Wszystkie inne alerty na tym urządzeniu nie będą pomijane.|<ul><li>Badacz zabezpieczeń bada złośliwy skrypt, który został użyty do ataków na inne urządzenia w organizacji.</li><li>Deweloper regularnie tworzy skrypty programu PowerShell dla swojego zespołu.</li></ul>|
-|**Pomiń alert w mojej organizacji**|Alerty z tym samym tytułem alertu na dowolnym urządzeniu będą pomijane.|<ul><li>Wszystkie osoby w organizacji będą korzystać z administracyjnych narzędzi administracyjnych, które mogą być w tym celu używane.</li></ul>|
+|**Pomijanie alertu na tym urządzeniu**|Alerty o tym samym tytule alertu i tylko na tym urządzeniu zostaną pominięte. <p> Wszystkie inne alerty na tym urządzeniu nie zostaną pominięte.|<ul><li>Badacz zabezpieczeń bada złośliwy skrypt, który został użyty do ataku na inne urządzenia w organizacji.</li><li>Deweloper regularnie tworzy skrypty programu PowerShell dla swojego zespołu.</li></ul>|
+|**Pomijanie alertu w mojej organizacji**|Alerty o tym samym tytule alertu na dowolnym urządzeniu zostaną pominięte.|<ul><li>Niegroźne narzędzie administracyjne jest używane przez wszystkich użytkowników w organizacji.</li></ul>|
 
-### <a name="suppress-an-alert-and-create-a-new-suppression-rule"></a>Pomijanie alertu i tworzenie nowej reguły reguły odc.
+### <a name="suppress-an-alert-and-create-a-new-suppression-rule"></a>Pomijanie alertu i tworzenie nowej reguły pomijania
 
-Tworzenie reguł niestandardowych w celu kontrolowania, kiedy alerty są pomijane lub rozwiązywane. Można sterować kontekstem, w którym alert jest pomijany, przez podanie tytułu alertu, wskaźnika naruszenia i warunków. Po określeniu kontekstu będzie można skonfigurować akcję i zakres w alercie.
+Utwórz reguły niestandardowe, aby kontrolować, kiedy alerty są pomijane lub rozwiązywane. Kontekst można kontrolować, gdy alert jest pomijany, określając tytuł alertu, wskaźnik naruszenia zabezpieczeń i warunki. Po określeniu kontekstu będzie można skonfigurować akcję i zakres alertu.
 
-1. Wybierz alert, który chcesz pominąć. Zostanie w ten sposób wyz **zawartość okienka Zarządzanie alertami** .
+1. Wybierz alert, który chcesz pominąć. Spowoduje to utworzenie **okienka zarządzania alertami** .
 
-2. Wybierz **pozycję Utwórz regułę reguły.**
+2. Wybierz **pozycję Utwórz regułę pomijania**.
 
-    Można utworzyć warunek podkresu przy użyciu tych atrybutów. Między poszczególnymi warunkami jest stosowany operator AND, więc tylko wtedy, gdy są spełnione wszystkie warunki.
+    Warunek pomijania można utworzyć przy użyciu tych atrybutów. Operator AND jest stosowany między każdym warunkiem, więc pomijanie występuje tylko wtedy, gdy wszystkie warunki są spełnione.
 
     - Plik SHA1
-    - Nazwa pliku — obsługiwana jest symbol wieloznaczny
-    - Ścieżka folderu — obsługiwana jest symbol wieloznaczny
+    - Nazwa pliku — obsługiwane symbole wieloznaczne
+    - Ścieżka folderu — obsługiwane symbole wieloznaczne
     - Adres IP
-    - Adres URL — obsługiwany jest symbol wieloznaczny
-    - Wiersz polecenia — obsługiwany jest symbol wieloznaczny
+    - Adres URL — obsługiwane symbole wieloznaczne
+    - Wiersz polecenia — obsługiwane symbole wieloznaczne
 
-3. Wybierz pozycję **Wyzwalanie IOC**.
+3. Wybierz **wyzwalający mkol**.
 
 4. Określ akcję i zakres alertu.
 
-   Alert można automatycznie rozstrzygnieć lub ukryć przed portalem. Alerty, które są automatycznie rozwiązywane, będą wyświetlane w rozwiązanych sekcjach kolejki alertów, strony alertów i osi czasu urządzenia oraz będą wyświetlane jako rozpoznane w interfejsach API punktów końcowych usługi Defender.
+   Alert można automatycznie rozpoznać lub ukryć w portalu. Alerty, które są automatycznie rozwiązywane, będą wyświetlane w rozwiązanej sekcji kolejki alertów, strony alertów i osi czasu urządzenia i będą wyświetlane jako rozwiązane w interfejsach API punktu końcowego usługi Defender.
 
-   Alerty oznaczone jako ukryte zostaną pominięte w całym systemie, zarówno na skojarzonych z urządzeniem alertach, jak i na pulpicie nawigacyjnym, i nie będą przesyłane strumieniowo przez interfejsy API punktów końcowych usługi Defender.
+   Alerty oznaczone jako ukryte zostaną pominięte w całym systemie, zarówno na skojarzonych alertach urządzenia, jak i na pulpicie nawigacyjnym i nie będą przesyłane strumieniowo przez interfejsy API punktu końcowego usługi Defender.
 
 5. Wprowadź nazwę reguły i komentarz.
 
 6. Kliknij **Zapisz**.
 
-#### <a name="view-the-list-of-suppression-rules"></a>Wyświetlanie listy reguł ekbrydów
+#### <a name="view-the-list-of-suppression-rules"></a>Wyświetlanie listy reguł pomijania
 
-1. W okienku nawigacji wybierz pozycję **Ustawienia** \> **alertu**.
+1. W okienku nawigacji wybierz pozycję **Ustawienia** \> **Pomijanie alertów**.
 
-2. Lista reguł reguł utworzonych przez użytkowników w organizacji.
+2. Lista reguł pomijania zawiera wszystkie reguły utworzone przez użytkowników w organizacji.
 
-Aby uzyskać więcej informacji na temat zarządzania regułami [](manage-suppression-rules.md) reguł
+Aby uzyskać więcej informacji na temat zarządzania regułami pomijania, zobacz [Zarządzanie regułami pomijania](manage-suppression-rules.md)
 
 ## <a name="change-the-status-of-an-alert"></a>Zmienianie stanu alertu
 
-Alerty można kategoryzować **(jako Nowe**, **W toku** lub Rozwiązane **), zmieniając** ich status w trakcie badania. Ułatwia to organizowanie alertów i zarządzanie tym, jak zespół może odpowiadać na alerty.
+Alerty (jako **nowe**, **w toku** lub **rozwiązane**) można kategoryzować, zmieniając ich stan w miarę postępu badania. Ułatwia to organizowanie i zarządzanie sposobem reagowania zespołu na alerty.
 
-Na przykład kierownik zespołu może przejrzeć wszystkie nowe  alerty i przypisać go do kolejki W **toku w celu** dalszej analizy.
+Na przykład lider zespołu może przejrzeć wszystkie **nowe** alerty i podjąć decyzję o przypisaniu ich do kolejki **W toku w** celu dalszej analizy.
 
-Ewentualnie kierownik zespołu może przypisać alert do kolejki Rozwiązany, jeśli  wie, że alert jest nieodpowiedni, pochodzących z urządzenia, które nie ma znaczenia (na przykład należącego do administratora zabezpieczeń) lub które jest zajęte za pomocą wcześniejszego alertu.
+Alternatywnie lider zespołu może przypisać alert do **rozwiązanej** kolejki, jeśli wie, że alert jest niegroźny, pochodzący z urządzenia, które nie ma znaczenia (na przykład należącego do administratora zabezpieczeń) lub jest rozpatrywany za pośrednictwem wcześniejszego alertu.
 
-## <a name="alert-classification"></a>Klasyfikacja alertu
+## <a name="alert-classification"></a>Klasyfikacja alertów
 
-Możesz nie ustawiać klasyfikacji lub określać, czy alert jest alertem prawdziwym, czy alertem fałszywym. Ważne jest podanie klasyfikacji wyników dodatnich/fałszywie dodatnich. Ta klasyfikacja jest używana do monitorowania jakości alertów i zapewnia większą dokładność alertów. Pole "określenie" definiuje dodatkową wierność klasyfikacji "prawdziwego dodatniego".
+Możesz nie ustawiać klasyfikacji ani określać, czy alert jest prawdziwym alertem, czy fałszywym alertem. Ważne jest, aby zapewnić klasyfikację prawdziwie dodatnich/fałszywie dodatnich. Ta klasyfikacja służy do monitorowania jakości alertów i zwiększenia dokładności alertów. Pole "determinacja" definiuje dodatkową wierność dla klasyfikacji "prawdziwie dodatniej".
 
-## <a name="add-comments-and-view-the-history-of-an-alert"></a>Dodawanie komentarzy i wyświetlanie historii alertów
+## <a name="add-comments-and-view-the-history-of-an-alert"></a>Dodawanie komentarzy i wyświetlanie historii alertu
 
-Możesz dodawać komentarze i wyświetlać historyczne zdarzenia dotyczące alertu, aby zobaczyć wcześniejsze zmiany wprowadzone w alercie.
+Możesz dodawać komentarze i wyświetlać zdarzenia historyczne dotyczące alertu, aby zobaczyć poprzednie zmiany wprowadzone w alercie.
 
-Każda zmiana lub komentarz w alercie jest rejestrowany w sekcji **Komentarze i** historia.
+Za każdym razem, gdy zostanie wprowadzona zmiana lub komentarz do alertu, jest on rejestrowany w sekcji **Komentarze i historia** .
 
 Dodane komentarze natychmiast pojawiają się w okienku.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Zarządzanie regułami zarządzania regułami](manage-suppression-rules.md)
-- [Wyświetlanie i organizowanie kolejki Ochrona punktu końcowego w usłudze Microsoft Defender alertów](alerts-queue.md)
-- [Badanie Ochrona punktu końcowego w usłudze Microsoft Defender alertów](investigate-alerts.md)
-- [Badanie pliku skojarzonego z alertem Ochrona punktu końcowego w usłudze Microsoft Defender pliku](investigate-files.md)
-- [Badanie urządzeń na liście Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia](investigate-machines.md)
-- [Badanie adresu IP skojarzonego z alertem Ochrona punktu końcowego w usłudze Microsoft Defender adresu IP](investigate-ip.md)
-- [Badanie domeny skojarzonej z alertem Ochrona punktu końcowego w usłudze Microsoft Defender domeny](investigate-domain.md)
-- [Badanie konta użytkownika w programie Ochrona punktu końcowego w usłudze Microsoft Defender](investigate-user.md)
+- [Zarządzaj regułami pomijania](manage-suppression-rules.md)
+- [Wyświetlanie i organizowanie kolejki alertów Ochrona punktu końcowego w usłudze Microsoft Defender](alerts-queue.md)
+- [Badanie alertów Ochrona punktu końcowego w usłudze Microsoft Defender](investigate-alerts.md)
+- [Badanie pliku skojarzonego z alertem Ochrona punktu końcowego w usłudze Microsoft Defender](investigate-files.md)
+- [Badanie urządzeń na liście urządzeń Ochrona punktu końcowego w usłudze Microsoft Defender](investigate-machines.md)
+- [Badanie adresu IP skojarzonego z alertem Ochrona punktu końcowego w usłudze Microsoft Defender](investigate-ip.md)
+- [Badanie domeny skojarzonej z alertem Ochrona punktu końcowego w usłudze Microsoft Defender](investigate-domain.md)
+- [Badanie konta użytkownika w Ochrona punktu końcowego w usłudze Microsoft Defender](investigate-user.md)

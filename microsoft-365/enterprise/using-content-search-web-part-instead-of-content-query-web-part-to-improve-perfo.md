@@ -21,24 +21,24 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Dowiedz się, jak zwiększyć wydajność, zastępując składnik Web Part kwerendy zawartości składnikiem Web Part wyszukiwania zawartości w SharePoint Server 2013 i SharePoint Online.
-ms.openlocfilehash: 77c2c6e48beb05b6d371734f0eeeb48881339156
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 45b43b3071ca39c67283ac70ab92b20e2fc7e21a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098169"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621974"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Używanie składnika Web Part wyszukiwania zawartości zamiast składnika Web Part zapytania o zawartość w celu zwiększenia wydajności w SharePoint Online
 
 W tym artykule opisano sposób zwiększania wydajności przez zastąpienie składnika Web Part kwerendy zawartości składnikiem Web Part wyszukiwania zawartości w SharePoint Server 2013 i SharePoint Online.
   
-Jedną z najbardziej zaawansowanych nowych funkcji SharePoint Server 2013 i SharePoint Online jest składnik Web Part wyszukiwania zawartości (CSWP). Ten składnik Web Part używa indeksu wyszukiwania, aby szybko pobrać wyniki wyświetlane użytkownikowi. Użyj składnika Web Part wyszukiwania zawartości zamiast składnika Web Part zapytania o zawartość (CQWP) na stronach, aby zwiększyć wydajność użytkowników.
+Jedną z najbardziej zaawansowanych nowych funkcji SharePoint Server 2013 i SharePoint Online jest składnik Web Part wyszukiwania zawartości (CSWP). Ten składnik Web Part używa indeksu wyszukiwania do szybkiego pobierania wyników, które są wyświetlane użytkownikowi. Użyj składnika Web Part wyszukiwania zawartości zamiast składnika Web Part zapytania o zawartość (CQWP) na stronach, aby zwiększyć wydajność użytkowników.
   
-Użycie składnika Web Part wyszukiwania zawartości za pośrednictwem składnika Web Part zapytania o zawartość prawie zawsze spowoduje znacznie lepszą wydajność ładowania stron w usłudze SharePoint Online. Istnieje nieco dodatkowa konfiguracja, aby uzyskać odpowiednie zapytanie, ale nagrody są lepsze i szczęśliwsi użytkownicy.
+Użycie składnika Web Part wyszukiwania zawartości za pośrednictwem składnika Web Part zapytania o zawartość prawie zawsze spowoduje lepszą wydajność ładowania stron w SharePoint Online. Istnieje nieco dodatkowa konfiguracja umożliwiająca uzyskanie odpowiedniego zapytania, ale nagrody to lepsza wydajność i szczęśliwsi użytkownicy.
   
 ## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Porównanie korzyści wydajności uzyskiwanych z używania składnika Web Part wyszukiwania zawartości zamiast składnika Web Part zapytania o zawartość
 
-W poniższych przykładach przedstawiono względny wzrost wydajności, który może zostać wyświetlony podczas korzystania ze składnika Web Part wyszukiwania zawartości zamiast składnika Web Part zapytania o zawartość. Efekty są bardziej oczywiste w przypadku złożonej struktury witryny i bardzo szerokich zapytań dotyczących zawartości.
+W poniższych przykładach przedstawiono względny wzrost wydajności, który może zostać wyświetlony podczas korzystania ze składnika Web Part wyszukiwania zawartości zamiast składnika Web Part zapytania o zawartość. Efekty są bardziej oczywiste w przypadku złożonej struktury witryny i zapytań o szeroką zawartość.
   
 Ta przykładowa witryna ma następujące cechy:
   
@@ -50,7 +50,7 @@ Ta przykładowa witryna ma następujące cechy:
     
 - W przykładzie użyto tylko 50 elementów w 8 witrynach. Efekty będą jeszcze bardziej widoczne dla witryn z większą ilością zawartości.
     
-Oto zrzut ekranu przedstawiający wyniki składnika Web Part kwerendy zawartości.
+Oto zrzut ekranu przedstawiający wyniki składnika Web Part zapytania o zawartość.
   
 ![Grafika przedstawiająca zapytanie o zawartość składnika Web Part.](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
@@ -58,13 +58,13 @@ W programie Internet Explorer użyj karty **Sieć** narzędzi deweloperskich F12
   
 ![Zrzut ekranu przedstawiający czas trwania żądania 924.](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
- **SpRequestDuration** wskazuje ilość pracy wykonanej na serwerze w celu przygotowania strony. Przełączanie zawartości według składniki Web Part zapytań za pomocą funkcji Content by Search składniki Web Part znacznie skraca czas renderowania strony. Natomiast strona z równoważnym składnikiem Web Part wyszukiwania zawartości, zwracająca taką samą liczbę wyników, ma wartość **SPRequestDuration** wynoszącą 106 milisekund, jak pokazano na tym zrzucie ekranu: 
+ **SpRequestDuration** wskazuje ilość pracy wykonanej na serwerze w celu przygotowania strony. Przełączanie zawartości według składników Web Part zapytań z zawartością według składników Web Part wyszukiwania znacznie skraca czas renderowania strony. Natomiast strona z równoważnym składnikiem Web Part wyszukiwania zawartości zwracająca taką samą liczbę wyników ma wartość **SPRequestDuration** wynoszącą 106 milisekund, jak pokazano na tym zrzucie ekranu: 
   
 ![Zrzut ekranu przedstawiający czas trwania żądania 106.](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Dodawanie składnika Web Part wyszukiwania zawartości w usłudze SharePoint Online
 
-Dodawanie składnika Web Part wyszukiwania zawartości jest bardzo podobne do zwykłego składnika Web Part zapytania o zawartość. Zobacz *sekcję "Dodawanie składnika Web Part wyszukiwania zawartości"* w artykule [Konfigurowanie składnika Web Part wyszukiwania zawartości w SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+Dodawanie składnika Web Part wyszukiwania zawartości jest podobne do zwykłego składnika Web Part zapytania o zawartość. Zobacz *sekcję "Dodawanie składnika Web Part wyszukiwania zawartości"* w artykule [Konfigurowanie składnika Web Part wyszukiwania zawartości w SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
 ## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Tworzenie odpowiedniego zapytania wyszukiwania dla składnika Web Part wyszukiwania zawartości
 

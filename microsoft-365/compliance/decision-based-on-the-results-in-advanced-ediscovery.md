@@ -17,12 +17,12 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Dowiedz się, jak karta Zdecyduj w usłudze eDiscovery (Premium) udostępnia dane, które mogą pomóc w określeniu prawidłowego rozmiaru zestawu przeglądów plików sprawy.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12f1dde5631283a4d0e02666ecab7267ee892225
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 50acdd36a536c417485d441e14c5d155f9de2f94
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090988"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621789"
 ---
 # <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Decyzje oparte na istotności skutkują zbierania elektronicznych materiałów dowodowych (Premium)
 

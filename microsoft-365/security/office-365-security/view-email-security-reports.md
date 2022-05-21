@@ -2,7 +2,7 @@
 title: Wyświetlanie raportów zabezpieczeń poczty e-mail
 f1.keywords:
 - NOCSH
-ms.author: chrisdadrop
+ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b4b520675c5c8a89324791e560e8176db1cb9b2
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 6e57b797ab0b5d5eee90315ae9c3459fcba0a02c
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599348"
+ms.locfileid: "65621684"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender
 
@@ -53,16 +53,16 @@ Raporty Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze
 
 |Przestarzały raport i polecenia cmdlet|Nowy raport i polecenia cmdlet|Identyfikator centrum komunikatów|Data|
 |---|---|:---:|:---:|
-|**Śledzenie adresu URL** <p> Get-URLTrace|[Raport ochrony adresu URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|Czerwiec 2021|
-|**Wysłany i odebrany raport e-mail** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[Raport o stanie ochrony przed zagrożeniami](#threat-protection-status-report) <br> [Raport o stanie przepływu poczty](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|Czerwiec 2021|
-|**Przekazywanie raportu** <p> brak poleceń cmdlet|[Raport komunikatów przesyłanych automatycznie w usłudze EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <p> brak poleceń cmdlet|MC250533|Czerwiec 2021|
-|**raport typów plików załączników Sejf** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|Czerwiec 2021|
-|**raport dyspozycji komunikatów załączników Sejf** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|Czerwiec 2021|
-|**Wykryto złośliwe oprogramowanie w raporcie poczty e-mail** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Czerwiec 2021|
-|**Raport wykrywania spamu** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według spamu poczty e-mail \>](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Październik 2021|
-|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|Maj 2022 r.|
-|**raport reguł transportu Exchange** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange raport reguł transportu w EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|Kwiecień 2022 r.|
-|Get-MailTrafficTopReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Uwaga**: Funkcja raportowania szyfrowania nie zastępuje funkcji Get-MailTrafficTopReport.|MC315742|Kwiecień 2022 r.|
+|**Śledzenie adresu URL** <br/><br/> Get-URLTrace|[Raport ochrony adresu URL](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|Czerwiec 2021|
+|**Wysłany i odebrany raport e-mail** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[Raport o stanie ochrony przed zagrożeniami](#threat-protection-status-report) <br> [Raport o stanie przepływu poczty](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|Czerwiec 2021|
+|**Przekazywanie raportu** <br/><br/> brak poleceń cmdlet|[Raport komunikatów przesyłanych automatycznie w usłudze EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> brak poleceń cmdlet|MC250533|Czerwiec 2021|
+|**raport typów plików załączników Sejf** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|Czerwiec 2021|
+|**raport dyspozycji komunikatów załączników Sejf** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|Czerwiec 2021|
+|**Wykryto złośliwe oprogramowanie w raporcie poczty e-mail** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Czerwiec 2021|
+|**Raport wykrywania spamu** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Raport o stanie ochrony przed zagrożeniami: wyświetlanie danych według spamu poczty e-mail \>](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Październik 2021|
+|Get-AdvancedThreatProtectionDocumentReport <br/><br/> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <br/><br/> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|Maj 2022 r.|
+|**raport reguł transportu Exchange** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange raport reguł transportu w EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|Kwiecień 2022 r.|
+|Get-MailTrafficTopReport|[Raport najpopularniejszych nadawców i adresatów](view-email-security-reports.md#top-senders-and-recipients-report) <br/><br/> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport) <br/><br/> **Uwaga**: Funkcja raportowania szyfrowania nie zastępuje funkcji Get-MailTrafficTopReport.|MC315742|Kwiecień 2022 r.|
 
 ## <a name="compromised-users-report"></a>Raport użytkowników z naruszonymi zabezpieczeniami
 
@@ -130,7 +130,7 @@ Poniższe informacje są wyświetlane w tabeli szczegółów poniżej wykresu:
 - **Temat**
 - **Adres nadawcy**
 - **Adres odbiorcy**
-- **Ważności**
+- **Waga**
 - **Kierunek**
 
 Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozycję **Filtruj** i wybierając co najmniej jedną z następujących wartości w wyświetlonym wysuwie:
@@ -161,7 +161,7 @@ Poniższe informacje są wyświetlane w tabeli szczegółów poniżej wykresu:
 - **Temat**
 - **Adres nadawcy**
 - **Adres odbiorcy**
-- **Ważności**
+- **Waga**
 - **Kierunek**
 
 Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozycję **Filtruj** i wybierając co najmniej jedną z następujących wartości w wyświetlonym wysuwie:

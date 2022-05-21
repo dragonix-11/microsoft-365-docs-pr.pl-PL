@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Korygowanie zagrożeń
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98b425c39cd12aea55714e9ade192e2e770b26cd
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: d584ce10f4e119ec4fe8aa2991c6cac0edd5377c
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714862"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621902"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Korygowanie złośliwych wiadomości e-mail dostarczanych w usłudze Office 365
 
@@ -55,7 +55,7 @@ Po wybraniu wiadomości e-mail za pośrednictwem Eksploratora możesz rozpoczą�
 
 - Bezpośrednie zatwierdzenie: Gdy akcje, takie jak *przenoszenie do skrzynki odbiorczej*, *przenoszenie do wiadomości-śmieci*, *przenoszenie do usuniętych elementów*, *usuwanie nietrwałe* lub *usuwanie twarde* , są wybierane przez pracowników ochrony, którzy mają odpowiednie uprawnienia, a następnie są wykonywane kolejne kroki korygowania, proces korygowania rozpoczyna wykonywanie wybranej akcji.
 > [!NOTE]
->Gdy korygowanie zostanie uruchomione, generuje alert i badanie równolegle. Alert jest wyświetlany w kolejce alertów o nazwie "Akcja administracyjna przesłana przez administratora" sugerująca, że pracownicy ochrony podjęli akcję korygowania jednostki. Przedstawia szczegóły, takie jak imię i nazwisko osoby, która wykonała akcję, link do badania pomocniczego, czas itp. To działa naprawdę dobrze wiedzieć za każdym razem, gdy trudne działania, takie jak korygowanie jest wykonywana na jednostkach. Wszystkie te akcje można wytłoczać na **karcie Actions & Submissions** **Action** **centerHistory** \>  ->  (publiczna wersja zapoznawcza).
+> Gdy korygowanie zostanie uruchomione, generuje alert i badanie równolegle. Alert jest wyświetlany w kolejce alertów o nazwie "Akcja administracyjna przesłana przez administratora" sugerująca, że pracownicy ochrony podjęli akcję korygowania jednostki. Przedstawia szczegóły, takie jak imię i nazwisko osoby, która wykonała akcję, link do badania pomocniczego, czas itp. To działa naprawdę dobrze wiedzieć za każdym razem, gdy trudne działania, takie jak korygowanie jest wykonywana na jednostkach. Wszystkie te akcje można śledzić na karcie **Actions & Submissions** **Action** **centerHistory** \>  ->  (publiczna wersja zapoznawcza).
 
 - Zatwierdzanie dwuetapowe: akcję "dodaj do korygowania" mogą wykonać administratorzy, którzy nie mają odpowiednich uprawnień lub muszą poczekać na wykonanie akcji. W takim przypadku docelowe wiadomości e-mail są dodawane do kontenera korygowania. Zatwierdzenie jest wymagane przed wykonaniem korygowania.
 
@@ -95,7 +95,7 @@ Otwórz dowolny element korygowania, aby wyświetlić szczegółowe informacje n
       > Obecnie tylko użytkownik z dostępem do skrzynki pocztowej może odzyskać elementy z folderu usuniętego nietrwale.
 
   - **Nie można wykonać akcji**: Wiadomości e-mail w następujących lokalizacjach nie mogą być realizowane ani przenoszone w akcjach korygowania:
-    - Kwarantanny
+    - Kwarantanna
     - Folder o twardym usunięciu
     - Lokalnie/zewnętrznie
     - Niepowodzenie/upuszczenie

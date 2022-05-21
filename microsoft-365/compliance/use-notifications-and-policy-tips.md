@@ -22,20 +22,22 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak dodać poradę dotyczącą zasad do zasad ochrony przed utratą danych (DLP), aby powiadomić użytkownika, że pracuje z zawartością, która powoduje konflikt z zasadami DLP.
-ms.openlocfilehash: cab4332324ec8d83b201823c98b952995e12962d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: ce6665227b62ea5937229696fa65b69e7cfb894a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760498"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623229"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Wyślij powiadomienia e-mail i pokaż porady dotyczące zasad dla zasad DLP
 
-Zasady ochrony przed utratą danych (DLP) umożliwiają identyfikowanie, monitorowanie i ochronę poufnych informacji w Office 365. Chcesz, aby osoby w organizacji, które pracują z danymi poufnymi, pozostały zgodne z zasadami DLP, ale nie chcesz niepotrzebnie blokować im wykonywania pracy. W tym miejscu mogą pomóc powiadomienia e-mail i porady dotyczące zasad.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Zasady Microsoft Purview ochrony przed utratą danych (DLP) umożliwiają identyfikowanie, monitorowanie i ochronę poufnych informacji w Office 365. Chcesz, aby osoby w organizacji, które pracują z danymi poufnymi, pozostały zgodne z zasadami DLP, ale nie chcesz niepotrzebnie blokować im wykonywania pracy. W tym miejscu mogą pomóc powiadomienia e-mail i porady dotyczące zasad.
 
 ![Pasek komunikatów zawiera poradę dotyczącą zasad w Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-W Centrum zgodności podczas tworzenia zasad DLP można skonfigurować powiadomienia użytkownika do następujących elementów:
+Podczas tworzenia zasad DLP można skonfigurować powiadomienia użytkownika do następujących elementów:
 
 - Wyślij powiadomienie e-mail do wybranych osób, które opisują problem.
 
@@ -53,13 +55,13 @@ Podczas tworzenia zasad DLP można włączyć **powiadomienia użytkownika**. Gd
 
 1. Przejdź do pozycji [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
 
-2. Zaloguj się przy użyciu konta służbowego. Jesteś teraz w Centrum zgodności zabezpieczeń &amp; .
+2. Zaloguj się przy użyciu konta służbowego.
 
-3. W lewym obszarze nawigacyjnym \> Centrum \> zgodności zabezpieczeń &amp; **zasady** \> **ochrony przed** \> **utratą danych i tworzenie zasad**.
+3. W portal zgodności Microsoft Purview \> lewej nawigacji \> **Zasady** \> zapobiegania \> **utracie danych** **+ Tworzenie zasad**.
 
     ![Utwórz przycisk zasad.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
-4. Wybierz szablon zasad DLP, który chroni typy poufnych informacji, których potrzebujesz \> **Dalej**.
+4. Wybierz szablon zasad DLP, który chroni typy poufnych informacji, które chcesz chronić \> **dalej**.
 
     Aby rozpocząć od pustego szablonu, wybierz pozycję **Niestandardowe zasady** \> **niestandardowe** \> **Dalej**.
 
@@ -135,7 +137,7 @@ Dla każdej reguły w zasadach DLP można skonfigurować porady dotyczące zasad
 
 - Zezwalaj osobie na zastąpienie zasad DLP. Opcjonalnie możesz:
 
-  - Wymagaj od danej osoby wprowadzenia uzasadnienia biznesowego dla zastąpienia zasad. Te informacje są rejestrowane i można je wyświetlić w raportach DLP w sekcji **Raporty** Centrum zgodności zabezpieczeń &amp; .
+  - Wymagaj od danej osoby wprowadzenia uzasadnienia biznesowego dla zastąpienia zasad. Te informacje są rejestrowane i można je wyświetlić w raportach DLP w sekcji **Raporty** w portalu.
 
   - Zezwalaj osobie na zgłaszanie wyników fałszywie dodatnich i zastępowanie zasad DLP. Te informacje są również rejestrowane do raportowania, dzięki czemu można używać wyników fałszywie dodatnich do dostosowywania reguł.
 
@@ -229,7 +231,7 @@ Jeśli wskazówki dotyczące zasad są skonfigurowane \> tak, aby zezwalały na 
 
 ![Okno dialogowe porad dotyczących zasad, w którym można zastąpić poradę dotyczącą zasad.](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
-Należy pamiętać, że po dodaniu poufnych informacji do wiadomości e-mail może wystąpić opóźnienie między dodaniem informacji poufnych a wyświetlenia poradą dotyczącą zasad. Gdy wiadomości e-mail są szyfrowane za pomocą Office szyfrowania komunikatów (OME), a zasady używane do ich wykrywania używają wskazówek dotyczących zasad wykrywania warunków szyfrowania, nie będą wyświetlane.
+Należy pamiętać, że po dodaniu poufnych informacji do wiadomości e-mail może wystąpić opóźnienie między dodaniem informacji poufnych a wyświetlenia poradą dotyczącą zasad. Gdy wiadomości e-mail są szyfrowane za pomocą Szyfrowanie wiadomości w Microsoft Purview, a zasady używane do ich wykrywania używają wskazówek dotyczących zasad wykrywania warunków szyfrowania, nie będą wyświetlane.
 
 ### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 r. i nowsze obsługują wyświetlanie wskazówek dotyczących zasad tylko dla niektórych warunków
 
@@ -240,13 +242,13 @@ Obecnie Outlook 2013 r. i nowsze obsługuje wyświetlanie wskazówek dotyczącyc
 
 Należy pamiętać, że wyjątki są uznawane za warunki, a wszystkie te warunki działają w Outlook, gdzie będą one zgodne z zawartością i wymuszają akcje ochronne dotyczące zawartości. Jednak wyświetlanie porad dotyczących zasad użytkownikom nie jest jeszcze obsługiwane. Ponadto Outlook nie obsługuje wyświetlania wskazówek dotyczących zasad dla zasad DLP stosowanych do dynamicznej grupy dystrybucyjnej.
 
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Porady dotyczące zasad w centrum administracyjnym Exchange a Centrum zgodności zabezpieczeń &amp;
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>Porady dotyczące zasad w centrum administracyjnym Exchange a portalu Microsoft Purview Compliance
 
-Porady dotyczące zasad mogą współpracować z zasadami DLP i regułami przepływu poczty utworzonymi w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> lub z zasadami DLP utworzonymi w Centrum zgodności zabezpieczeń&amp;, ale nie z obydwoma. Dzieje się tak, ponieważ te zasady są przechowywane w różnych lokalizacjach, ale wskazówki dotyczące zasad mogą być rysowane tylko z jednej lokalizacji.
+Porady dotyczące zasad mogą współpracować z zasadami DLP i regułami przepływu poczty utworzonymi w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> lub z zasadami DLP utworzonymi w portalu zgodności, ale nie obie. Dzieje się tak, ponieważ te zasady są przechowywane w różnych lokalizacjach, ale wskazówki dotyczące zasad mogą być rysowane tylko z jednej lokalizacji.
 
-Jeśli w centrum administracyjnym Exchange skonfigurowano wskazówki dotyczące zasad, żadne wskazówki dotyczące zasad skonfigurowane w Centrum zgodności zabezpieczeń &amp; nie będą wyświetlane użytkownikom w Outlook w sieci Web i Outlook 2013 r. i nowszych, dopóki nie wyłączysz porad w centrum administracyjnym Exchange. Dzięki temu bieżące reguły przepływu poczty Exchange (nazywane również regułami transportu) będą nadal działać do momentu przełączenia się do Centrum zgodności zabezpieczeń&amp;.
+Jeśli w centrum administracyjnym Exchange skonfigurowano wskazówki dotyczące zasad, żadne wskazówki dotyczące zasad skonfigurowane w portalu zgodności nie będą wyświetlane użytkownikom w Outlook w sieci Web i Outlook 2013 r. i nowszych, dopóki nie wyłączysz porad w centrum administracyjnym Exchange. Dzięki temu bieżące reguły przepływu poczty Exchange (nazywane również regułami transportu) będą nadal działać do momentu przełączenia się do portalu zgodności.
 
-Pamiętaj, że porady dotyczące zasad mogą być rysowane tylko z jednej lokalizacji, ale powiadomienia e-mail są zawsze wysyłane, nawet jeśli używasz zasad DLP zarówno w Centrum zgodności zabezpieczeń&amp;, jak i w centrum administracyjnym Exchange.
+Pamiętaj, że porady dotyczące zasad mogą być rysowane tylko z jednej lokalizacji, ale powiadomienia e-mail są zawsze wysyłane, nawet jeśli używasz zasad DLP zarówno w portalu zgodności, jak i w centrum administracyjnym Exchange.
 
 ### <a name="default-text-for-policy-tips-in-email"></a>Tekst domyślny wskazówek dotyczących zasad w wiadomości e-mail
 

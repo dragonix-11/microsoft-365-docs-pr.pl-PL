@@ -23,28 +23,26 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Konfigurowanie uwierzytelniania wieloskładnikowego dla urządzeń przenośnych.
-ms.openlocfilehash: 63f5538882496ed67dacdb3428a6dd02696d21e7
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Konfigurowanie uwierzytelniania wieloskładnikowego dla telefonów w usłudze Microsoft Business Premium. Zwiększ swoje bezpieczeństwo, korzystając z funkcji uwierzytelniania wieloskładnikowego usługi Microsoft Business Premium dla telefonu.
+ms.openlocfilehash: d92a1a651790626c8d8a8b70f334f907bcde7cdc
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320279"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622629"
 ---
-# <a name="set-up-multifactor-authentication-with-your-mobile-device"></a>Konfigurowanie uwierzytelniania wieloskładnikowego na urządzeniu przenośnym
+# <a name="set-up-mfa"></a>Konfigurowanie uwierzytelniania wieloskładnikowego
 
 Uwierzytelnianie wieloskładnikowe (MFA) zapewnia większe bezpieczeństwo, ponieważ zamiast używać tylko hasła lub kodu za pomocą tekstu, do weryfikowania dostępu jest używana oddzielna aplikacja na telefonie. To sprawia, że trudno włamać. Gdy jest wymagana uwierzytelnianie wieloskładnikowe, członkowie organizacji mogą bezpiecznie logować się na swoich urządzeniach za pomocą aplikacji Microsoft Authenticator. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Zobacz więcej na [stronie Konfigurowanie uwierzytelniania wieloskładnikowego w Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Zobacz więcej na [stronie Konfigurowanie uwierzytelniania wieloskładnikowego w Microsoft 365 Business Premium](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>Korzystanie z aplikacji Outlook na urządzeniach
 
-Po tym, jak administrator wymaga od użytkowników pierwszej linii korzystania z uwierzytelniania wieloskładnikowego, aplikacja authenticator służy jako druga forma uwierzytelniania. Zalecamy zainstalowanie aplikacji Outlook i użycie jej w celu uzyskania dostępu do Microsoft 365 poczty e-mail. Zobacz [Konfigurowanie urządzeń przenośnych](../admin/setup/set-up-mobile-devices.md), aby dowiedzieć się, jak instalować aplikacje Office, w tym Outlook, na telefonie.
+Po tym, jak administrator wymaga od użytkowników pierwszej linii korzystania z uwierzytelniania wieloskładnikowego, aplikacja authenticator służy jako druga forma uwierzytelniania. Zalecamy zainstalowanie aplikacji Outlook i użycie jej w celu uzyskania dostępu do Microsoft 365 poczty e-mail.
 
 ## <a name="next-objective"></a>Następny cel
 
 Postępuj zgodnie ze wskazówkami, aby [zainstalować aplikacje Office](m365bp-install-office-apps.md).
-
- 

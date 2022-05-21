@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 24a95c8ed6d7d1cdd15b15b53434414e44b7881f
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 6bf97490d60740b47420d352f7fb537e675678ae
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417935"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621137"
 ---
 # <a name="protect-your-network"></a>Chroń sieć
 
@@ -39,7 +39,7 @@ ms.locfileid: "65417935"
 **Platformy**
 - System Windows
 
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="overview-of-network-protection"></a>Omówienie ochrony sieci
 
@@ -52,6 +52,9 @@ Ochrona sieci rozszerza ochronę w [sieci Web](web-protection-overview.md) na po
 
 > [!NOTE]
 > Witryna demonstracyjna usługi Defender for Endpoint w demo.wd.microsoft.com jest przestarzała i zostanie usunięta w przyszłości.
+
+Obejrzyj ten film wideo, aby dowiedzieć się, w jaki sposób ochrona sieci pomaga ograniczyć obszar ataków urządzeń przed oszustwami wyłudzania informacji, lukami w zabezpieczeniach i inną złośliwą zawartością.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
 ## <a name="requirements-for-network-protection"></a>Wymagania dotyczące ochrony sieci
 
@@ -148,7 +151,7 @@ Użytkownik odwiedza witrynę internetową:
 
 ### <a name="network-protection-c2-detection-and-remediation"></a>Ochrona sieci: wykrywanie i korygowanie C2
 
-W początkowej formie oprogramowanie wymuszające okup jest zagrożeniem towarowym, wstępnie zaprogramowanym i skoncentrowanym na ograniczonych, konkretnych wynikach (na przykład szyfrowaniu komputera). Jednak oprogramowanie wymuszające okup przekształciło się w zaawansowane zagrożenie, które jest sterowane przez człowieka, adaptacyjne i koncentruje się na większej skali i bardziej rozpowszechnionych wynikach; takich jak przechowywanie zasobów lub danych całej organizacji dla okupu.
+W początkowej formie oprogramowanie wymuszające okup jest zagrożeniem towarowym, wstępnie zaprogramowanym i skoncentrowanym na ograniczonych, konkretnych wynikach (na przykład szyfrowaniu komputera). Jednak oprogramowanie wymuszające okup przekształciło się w zaawansowane zagrożenie oparte na człowieku, adaptacyjne i skoncentrowane na większej skali i bardziej rozpowszechnionych wynikach; takich jak przechowywanie zasobów lub danych całej organizacji dla okupu.
 
 Obsługa poleceń i kontroli (C2) jest kluczowym elementem tej ewolucji oprogramowania wymuszającego okup i umożliwia tym atakom dostosowanie się do środowiska, do którego są przeznaczone. Przerwanie połączenia z infrastrukturą poleceń i kontroli oznacza zatrzymanie postępu ataku do następnego etapu.
 

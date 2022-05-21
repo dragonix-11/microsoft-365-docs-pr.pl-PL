@@ -1,5 +1,5 @@
 ---
-title: Praca z działaniami udoskonalania w Menedżerze zgodności firmy Microsoft
+title: Praca z akcjami ulepszania w menedżerze zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,205 +16,238 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak wdrażać i testować kontrolki, współpracując z działaniami udoskonalania w Menedżerze zgodności firmy Microsoft. Przypisz raporty służbowe, przechowuj dokumentację i eksportuj.
-ms.openlocfilehash: 33b1de7dfc116cc1403d0e3619dfbec2f0853be3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak implementować i testować mechanizmy kontroli, pracując z akcjami ulepszania w programie Microsoft Purview Compliance Manager. Przypisywanie pracy, przechowywanie dokumentacji i eksportowanie raportów.
+ms.openlocfilehash: 9dca4f3a742b82a2cf119ceb40b04241d1b5177f
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319465"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621784"
 ---
-# <a name="working-with-improvement-actions-in-compliance-manager"></a>Praca z działaniami udoskonalania w Menedżerze zgodności
+# <a name="working-with-improvement-actions-in-compliance-manager"></a>Praca z akcjami poprawy w Menedżerze zgodności
 
-**W tym artykule:** W tym artykule wyjaśniono, jak **zarządzać przepływem pracy zgodności** za pomocą akcji udoskonalania. Dowiedz się, jak **przypisywać akcje udoskonalania** dotyczące implementacji i testowania, **zarządzania aktualizacjami** i **eksportowania raportów**.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-## <a name="manage-compliance-workflows-with-improvement-actions"></a>Zarządzanie przepływami pracy zgodności z działaniami udoskonalania
+**W tym artykule:** W tym artykule wyjaśniono, jak **zarządzać przepływem pracy zgodności** za pomocą akcji poprawy. Dowiedz się, jak **przypisywać akcje poprawy** dotyczące implementacji i testowania, **zarządzać aktualizacjami** i eksportować **raporty**.
 
-Akcje usprawniania scentralizują działania związane ze zgodnością. Każde działanie udoskonalania udostępnia szczegółowe wskazówki implementacji, które ułatwiają dostosowanie do przepisów i standardów ochrony danych. Do użytkowników w Twojej organizacji można przypisywać akcje służące do wykonywania prac implementacji i testowania. W ramach akcji można również przechowywać dokumentację, notatki i aktualizacje stanu rekordów.
+## <a name="manage-compliance-workflows-with-improvement-actions"></a>Zarządzanie przepływami pracy zgodności za pomocą akcji poprawy
 
-Wszystkie działania udoskonalania są wymienione na stronie akcji udoskonalania. Dowiedz się więcej [o wyświetlaniu działań udoskonalania](compliance-manager-setup.md#improvement-actions-page).
+Akcje ulepszania scentralizują działania związane ze zgodnością. Każda akcja poprawy zapewnia szczegółowe wskazówki dotyczące implementacji, które pomogą Ci dostosować się do przepisów i standardów ochrony danych. Akcje mogą być przypisywane do użytkowników w organizacji w celu wykonywania zadań implementacji i testowania. W ramach akcji można również przechowywać dokumentację, notatki i aktualizacje stanu rekordów.
 
-## <a name="improvement-actions-details-page"></a>Strona szczegółów akcji udoskonalania
+Wszystkie akcje poprawy są wyświetlane na stronie akcji poprawy. Dowiedz się więcej na temat [wyświetlania akcji poprawy](compliance-manager-setup.md#improvement-actions-page).
 
-Każde działanie udoskonalania zawiera stronę ze szczegółami pokazującymi jego bieżący stan, powiązane standardy i wymagania prawne oraz zalecane wskazówki implementacji. [W działaniach](compliance-score-calculation.md#technical-and-non-technical-actions) technicznych znajduje **się link Uruchom** teraz, za pomocą których możesz znaleźć odpowiednie rozwiązanie do wdrożenia. Możesz dołączyć dokumentację implementacji i testowania bezpośrednio do strony szczegółów akcji udoskonalania.
+## <a name="improvement-actions-details-page"></a>Strona szczegółów akcji ulepszania
 
-Aby wyświetlić stronę szczegółów akcji udoskonalania:
+Każda akcja poprawy zawiera stronę szczegółów przedstawiającą jej bieżący stan, powiązane standardy i wymagania prawne oraz zalecane wskazówki dotyczące implementacji. [Akcje techniczne](compliance-score-calculation.md#technical-and-non-technical-actions) obejmują link **Uruchom teraz** , który prowadzi do odpowiedniego rozwiązania do implementacji. Dokumentację implementacji i testowania można dołączyć bezpośrednio do strony szczegółów akcji poprawy.
 
-1. Przejdź na stronę działań udoskonalania.
-2. Wybierz wiersz zamierzonego działania udoskonalania, co spowoduje otwarcie jego strony szczegółów.
+Aby wyświetlić stronę szczegółów akcji poprawy:
 
-Możesz łatwo wyświetlić na liście następną lub poprzednią akcję udoskonalania, wybierając strzałkę w górę lub w dół w prawym górnym rogu ekranu. Jeśli odfiltrowano listę na stronie akcji udoskonalania, przejście w górę lub w dół umożliwia przejście do następnej pozycji na tej liście filtrowanych.
+1. Przejdź do strony akcji poprawy.
+2. Wybierz wiersz zamierzonej akcji poprawy, która otwiera jego stronę szczegółów.
+
+Możesz łatwo wyświetlić następną lub poprzednią akcję poprawy na liście, wybierając strzałkę w górę lub w dół w prawym górnym rogu ekranu. Jeśli lista została przefiltrowana na stronie akcji poprawy, przejście w górę lub w dół spowoduje przejście do następnego elementu na tej filtrowanej liście.
 
 > [!TIP]
-> Dowiedz się więcej o różnych [typach działań udoskonalania](compliance-score-calculation.md#action-types-and-points) oraz o tym, w jaki sposób punkty są przyznawane i wpływane na wynik w zakresie zgodności.
+> Dowiedz się więcej o różnych [typach akcji poprawy oraz o tym, jak punkty są przyznawane](compliance-score-calculation.md#action-types-and-points) i uwzględniane w wyniku zgodności.
 
-## <a name="assign-improvement-actions"></a>Przypisywanie akcji udoskonalania
+## <a name="assign-improvement-actions"></a>Przypisywanie akcji poprawy
 
-Aby rozpocząć prace implementacji nad akcją ulepszoną, możesz wykonać pracę samodzielnie lub przypisać ją in inowi użytkownikowi. Przypisana osoba może być:
+Aby rozpocząć pracę nad implementacją akcji poprawy, możesz wykonać pracę samodzielnie lub przypisać ją do innego użytkownika. Przypisaną osobą może być:
 
 - Właściciel zasad biznesowych
-- Implementer IT
+- Implementator IT
 - Inny pracownik odpowiedzialny za wykonanie zadania
 
-Po zidentyfikowaniu odpowiedniego osoby przydzielonej upewnij się, że ma oni odpowiednią rolę [Menedżera](compliance-manager-setup.md#set-user-permissions-and-assign-roles) zgodności, aby wykonać pracę. Następnie wykonaj poniższe czynności, aby przypisać akcję udoskonalania:
+Po zidentyfikowaniu odpowiedniego przypisanego użytkownika upewnij się, że ma on wystarczającą [rolę Menedżera zgodności](compliance-manager-setup.md#set-user-permissions-and-assign-roles) , aby wykonać pracę. Następnie wykonaj poniższe kroki, aby przypisać akcję poprawy:
 
-1. Na stronie szczegółów akcji udoskonalania wybierz pozycję **Przypisz** akcję po lewej stronie ekranu.
+1. Na stronie szczegółów akcji poprawy wybierz pozycję **Przypisz akcję** po lewej stronie ekranu.
 
-2. Okienko **wysuwu** Przypisz do użytkownika zawiera listę **Sugerowane** osoby użytkowników. Możesz wybrać użytkownika z listy lub wpisać adres e-mail osoby, do której chcesz go przypisać.
+2. Okienko wysuwane **Przypisywanie do użytkownika** zawiera listę sugerowanych **osób** użytkowników. Możesz wybrać użytkownika z listy lub wpisać adres e-mail osoby, do której chcesz go przypisać.
 
-3. Wybierz **pozycję Przypisz**. Przypisany użytkownik otrzyma wiadomość e-mail z wyjaśnieniem, że do użytkownika przydzielono akcję udoskonalania, z bezpośrednim linkiem do działania udoskonalania.
+3. Wybierz pozycję **Przypisz**. Przypisany użytkownik otrzyma wiadomość e-mail z wyjaśnieniem, że przypisano do niego akcję poprawy, z bezpośrednim linkiem do akcji poprawy.
 
 > [!NOTE]
-> Klienci działu Community (GCC) High and Department of Defense (DoD) nie otrzymają wiadomości e-mail po przypisaniu do nich akcji udoskonalania.
+> Klienci Community (GCC) High i Department of Defense (DoD) nie otrzymają wiadomości e-mail po przypisaniu do nich akcji poprawy.
 
-Przypisany użytkownik może następnie wykonać zalecane czynności.
+Przypisany użytkownik może następnie wykonać zalecane akcje.
 
-#### <a name="assign-multiple-improvement-actions-to-a-single-user"></a>Przypisywanie wielu akcji udoskonalania do jednego użytkownika
+#### <a name="assign-multiple-improvement-actions-to-a-single-user"></a>Przypisywanie wielu akcji poprawy do jednego użytkownika
 
-Możesz przypisać wiele akcji udoskonalania do jednego użytkownika, korzystając z następujących kroków:
+Do jednego użytkownika można przypisać wiele akcji poprawy, wykonując następujące kroki:
 
-1. Przejdź na stronę Akcje udoskonalania.
-2. Zaznacz obszar po lewej stronie nazwy akcji udoskonalania. Zostanie wyświetlony okrągła ikona wyboru wskazująca, że ta akcja jest zaznaczona. Zaznacz wszystkie akcje, które chcesz przypisać.
-3. Wybierz link **Przypisz do** użytkownika u góry tabeli akcji udoskonalania.
-4. Zostanie wyświetlone okno podręczne. W **polu Przypisz** do zacznij wpisywać imię i nazwisko osoby, do której chcesz przypisać akcje. Możesz również wybrać pozycję z listy sugerowanych osób.
-5. Po wypełnieniu pola **Przypisz** do imieniem i nazwiskiem osoby przydzielonej wybierz pozycję **Przypisz**.
-6. Następnie zostanie wyświetlony strona Akcje udoskonalania z nowymi przypisanymi do Ciebie akcjami, które zostały właśnie przypisane.
+1. Przejdź do strony Akcje poprawy.
+2. Wybierz obszar po lewej stronie nazwy akcji poprawy. Zostanie wyświetlona ikona sprawdzania okrągłego wskazująca, że wybrano tę akcję. Sprawdź wszystkie akcje, które chcesz przypisać.
+3. Wybierz link **Przypisz do użytkownika** w górnej części tabeli akcji poprawy.
+4. Zostanie wyświetlone okno podręczne. W polu **Przypisz do** zacznij wpisywać nazwę osoby, do której chcesz przypisać akcje. Możesz również wybrać z listy sugerowanych osób.
+5. Po wypełnieniu pola **Przypisz do** nazwą przypisanego wybierz pozycję **Przypisz**.
+6. Następnie zobaczysz stronę Akcji poprawy z nowym przypisanym elementem wymienionym dla przypisanych akcji.
 
 ## <a name="change-implementation-details"></a>Zmienianie szczegółów implementacji
 
-Możesz zarejestrować stan i datę implementacji dla każdego działania udoskonalania oraz dodać uwagi do użytku wewnętrznego. Te pola mogą być edytowane przez dowolnego użytkownika z uprawnieniami do edycji, nie tylko przez przypisaną osobę.
+Możesz zarejestrować stan i datę implementacji dla każdej akcji poprawy oraz dodać notatki do wewnętrznego odwołania. Te pola mogą być edytowane przez dowolnego użytkownika z uprawnieniami do edycji, a nie tylko przez przypisaną osobę.
 
-Aby edytować stan akcji udoskonalania, wybierz pozycję **Edytuj szczegóły implementacji** na stronie szczegółów. Poniżej przedstawiono dostępne pola i opcje stanu:
+Aby edytować stan akcji poprawy, wybierz pozycję **Edytuj szczegóły implementacji** na stronie szczegółów. Poniżej przedstawiono dostępne pola i opcje stanu:
 
 - **Stan implementacji**
-  - **Nie zaimplementowano**: akcja nie została jeszcze zaimplementowana
-  - **Zaimplementowano**: zaimplementowano akcję
-  - **Implementacja** alternatywna: zaznacz tę opcję, jeśli były używane inne narzędzia innych firm lub zostały podjęte inne działania, które nie zostały uwzględnione w zaleceniach firmy Microsoft
-  - **Planowane**: zaplanowano wdrożenie akcji
-  - **Poza zakresem**: działanie nie jest istotne dla Organizacji i nie wpływa na wynik
-- **Data wdrożenia**: dostępne do wyboru, kiedy stan implementacji jest "zaimplementowany" lub "implementacja alternatywna"
-- **Informacje o implementacji**: pole tekstowe notatek dotyczących implementacji.
+  - **Nie zaimplementowane**: akcja nie została jeszcze zaimplementowana
+  - **Częściowo zaimplementowane**: w przypadku automatycznie testowanych akcji akcja jest częściowo implementowana (ani nie przechodzi, ani nie kończy się niepowodzeniem) i otrzymuje wynik częściowy
+  - **Zaimplementowane**: zaimplementowana akcja
+  - **Alternatywna implementacja**: wybierz tę opcję, jeśli używasz innych narzędzi innych firm lub podjąłeś inne działania, które nie zostały uwzględnione w zaleceniach firmy Microsoft
+  - **Planowane**: planowane jest wykonanie akcji
+  - **Poza zakresem**: akcja nie jest istotna dla Twojej organizacji i nie przyczynia się do oceny
+- **Data implementacji**: dostępna do wybrania, kiedy stan implementacji jest "zaimplementowany" lub "implementacja alternatywna"
+- **Uwagi dotyczące implementacji**: pole tekstowe do notatek dotyczących implementacji.
 
-Limit znaków w polach notatek nie jest limitem znaków. Zalecamy, aby notatki były krótkie, aby można je było łatwo wyświetlać i edytować na stronie szczegółów akcji udoskonalania.
+W polach notatek nie ma limitu znaków. Zalecamy przechowywanie krótkich notatek, aby można było je łatwo wyświetlać i edytować na stronie szczegółów akcji poprawy.
 
-Typowe akcje synchronizowane między grupami. Jeśli dwie różne oceny w tej samej grupie współużytkują działania udoskonalania, które zarządzasz, wszelkie aktualizacje szczegółów implementacji akcji lub stanu zostaną automatycznie zsynchronizowane z tym samym działaniem w innej ocenie w grupie. Ta synchronizacja umożliwia wdrożenie jednego działania ulepszeń i spełnienie kilku wymagań w ramach wielu przepisów.
+Typowe akcje synchronizują się między grupami. Gdy dwie różne oceny w tej samej grupie współużytkują akcje poprawy, które są zarządzane przez Ciebie, wszelkie aktualizacje dotyczące szczegółów lub stanu implementacji akcji zostaną automatycznie zsynchronizowane z tą samą akcją w każdej innej ocenie w grupie. Ta synchronizacja umożliwia zaimplementowanie jednej akcji poprawy i spełnienie kilku wymagań w wielu przepisach.
 
-## <a name="change-test-status"></a>Zmień stan testu
+## <a name="change-test-status"></a>Zmienianie stanu testu
 
-W sekcji **Testowanie** możesz wyświetlić stan testowania akcji udoskonalania, datę testowania i wszelkie uwagi. Zawartość tych pól może być zmieniana **w obszarze Edytuj** szczegóły testowania przez dowolnego użytkownika z uprawnieniami do edycji.
+W sekcji **Testowanie** możesz wyświetlić stan testowania akcji poprawy, datę testowania i wszelkie uwagi. Użytkownik z uprawnieniami do edycji może wybrać pozycję  **Edytuj szczegóły testowania** , aby edytować zawartość na karcie **Testowanie** .
 
-Dostępne pola są następujące:
+#### <a name="testing-status-fields"></a>Pola stanu testowania
 
-- **Stan testu**: dostępny do wyboru, kiedy stan implementacji jest "zaimplementowany" lub "implementacja alternatywna". Dostępne opcje:
-  - **Nie oceniono**: działanie nie zostało sprawdzone
-  - **Pomyślnie**: implementacja została zweryfikowana przez oceniaka
-  - **Niskie ryzyko, których** testowanie zakończyło się niepowodzeniem, niskie ryzyko
-  - **Średnie ryzyko, których** niepowodzenie zakończyło się niepowodzeniem: testowanie zakończyło się niepowodzeniem, średnie ryzyko
-  - **Failed high risk**: testing failed, high risk
-  - **Poza zakresem**: nie ma możliwości zastosowania akcji w ramach oceny i nie wpływa na wynik
-- **Data testowa**: przełączanie przez okno podręczne kalendarza w celu wybrania daty
-- **Testowanie notatek** **i notatek dodatkowych**: pola tekstowe notatek do użytku wewnętrznego
+**Stan testu**
+ 
+Stan testu można edytować, gdy stan implementacji akcji poprawy jest "zaimplementowany" lub "implementacja alternatywna".
 
-### <a name="update-testing-source"></a>Aktualizuj źródło testowania
+Stan testu dla [ręcznie przetestowanych akcji](#manual-testing-source):
+  - **Brak**: nie rozpoczęto żadnej pracy nad akcją
+  - **Nie oceniono**: działanie nie zostało przetestowane
+  - **Przekazano**: implementacja została zweryfikowana przez asesora
+  - **Niepowodzenie niskiego ryzyka**: testowanie nie powiodło się, niskie ryzyko
+  - **Średnie ryzyko niepowodzenia**: testowanie nie powiodło się, średnie ryzyko
+  - **Niepowodzenie wysokiego ryzyka**: testowanie nie powiodło się, wysokie ryzyko
+  - **Poza zakresem**: akcja jest poza zakresem oceny i nie przyczynia się do oceny
+  - **W toku**: testowanie w toku
+  - **Skorygowano**: tbd
 
-Menedżer zgodności udostępnia opcje testowania działań udoskonalania. W sekcji **Przegląd** poszczególnych działań udoskonalania obszar Testowanie źródła  zawiera menu rozwijane, z którego możesz wybrać sposób przetestowania **akcji: Ręcznie****, Automatycznie** i **Nadrzędne**. Poniżej znajdziesz szczegółowe informacje na temat poszczególnych metod testowania.
+[Automatycznie przetestowane akcje](#automatic-testing-source) mogą również pokazywać jeden z następujących stanów w kolumnie **Stan testu** na stronie **Akcje poprawy** :
+   - **Do wykrycia**: oczekiwanie na sygnały wskazujące stan testu
+  - **Nie można wykryć**: nie można wykryć stanu testu; zostaną ponownie automatycznie sprawdzone
+  - **Częściowo przetestowano**: akcja została częściowo przetestowana;  ani przechodzi, ani nie kończy się niepowodzeniem
 
-#### <a name="manual-testing-source"></a>Ręczne źródło testowania
-Akcje udoskonalania ustawione do testowania ręcznego to akcje, które testuje się i implementuje ręcznie. Ustawiasz niezbędne stany implementacji i testowania, a także przesyłasz wszystkie pliki dowodów na **karcie** Dokumenty. W przypadku niektórych akcji jest to jedyna dostępna metoda testowania działań udoskonalania.
+> [!NOTE]
+> Nie można edytować ręcznie informacji o stanie testu i testach dla automatycznie testowanych akcji poprawy. Menedżer zgodności aktualizuje te pola.
 
-#### <a name="automatic-testing-source"></a>Automatyczne testowanie źródła
-Jeśli akcja implementacji jest dostępna do automatycznego przetestowania przez Menedżera zgodności, zobaczysz opcję **Automatyczne** testowanie źródła. Menedżer zgodności wykrywa sygnały z innych rozwiązań zgodności ustawionych w środowisku komputera Microsoft 365, a także wszelkich dopełnianych akcji, które program Microsoft Secure Score również monitoruje. Pole **logiki testowej** **na karcie** Testowanie zawiera informacje o tym, jakiego rodzaju zasady lub konfiguracja są wymagane w innym rozwiązaniu, aby akcja przekazać i zdobyć punkty w wyniku zgodności.
+**Data testu**
 
-Jeśli sygnalizuje to, że akcja udoskonalania została pomyślnie zaimplementowana, automatycznie otrzymujesz punkty uprawniace do tego działania, co spowoduje uwzględnienie wyników wszelkich powiązanych kontrolek i ocen. Dowiedz się więcej o [tym, jak ciągła ocena wpływa na twoją ocenę zgodności](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+Przełącz się przez wyskakujące okienko kalendarza, aby wybrać datę testowania.
 
- Automatyczne testowanie jest domyślnie włączone dla wszystkich uprawnionych działań udoskonalania. Możesz dostosować te ustawienia, aby automatycznie testować tylko niektóre akcje udoskonalania, lub możesz wyłączyć automatyczne testowanie dla wszystkich akcji. Aby dowiedzieć się więcej o tym, jak działa automatyczne testowanie i jak dostosować ustawienia, zobacz [Konfigurowanie testowania automatycznego](compliance-manager-setup.md#manage-automated-testing-settings).
+**Uwagi dotyczące testowania** i **dodatkowe uwagi**
+
+Wprowadź notatki dla własnego wewnętrznego odwołania w tych polach tekstu bezpłatnego.
+
+**Historia testowania**
+
+Historia testowania zawiera pobrany raport wszystkich zmian stanu testu dla akcji poprawy.
+
+#### <a name="exporting-testing-history"></a>Eksportowanie historii testowania
+Możesz wyeksportować raport, który wyświetli historię wszystkich zmian stanu testu dla akcji poprawy. Te raporty są szczególnie przydatne do monitorowania postępu [akcji, które są automatycznie testowane](#automatic-testing-source), ponieważ takie akcje są regularnie lub często aktualizowane na podstawie danych dzierżawy.
+
+Na stronie szczegółów akcji poprawy wybierz kartę **Testowanie** . W obszarze **Historia testowania** wybierz przycisk **Eksportuj historię testowania** . Raport zostanie pobrany jako plik Excel.
+
+## <a name="update-testing-source"></a>Aktualizowanie źródła testowania
+
+Menedżer zgodności udostępnia opcje testowania akcji poprawy. W sekcji **Przegląd** każdej akcji poprawy obszar **Źródło testowania** zawiera menu rozwijane, z którego można wybrać sposób testowania akcji: **Ręczna**, **Automatyczna** i **Nadrzędna**. Dowiedz się więcej o każdej metodzie testowania poniżej.
+
+#### <a name="manual-testing-source"></a>Źródło testowania ręcznego
+Akcje poprawy ustawione na potrzeby testowania ręcznego to akcje, które można ręcznie przetestować i zaimplementować. Należy ustawić niezbędne stany implementacji i stanu testu oraz przekazać wszystkie pliki dowodów na karcie **Dokumenty** . W przypadku niektórych akcji jest to jedyna dostępna metoda testowania akcji poprawy.
+
+#### <a name="automatic-testing-source"></a>Źródło automatycznego testowania
+Jeśli akcja implementacji kwalifikuje się do automatycznego testowania przez Menedżera zgodności, zobaczysz opcję **Automatyczne** dla źródła testowania. Menedżer zgodności wykrywa sygnały z innych rozwiązań zgodności skonfigurowanych w środowisku Microsoft 365, a także wszelkie uzupełniające akcje monitorowane przez firmę Microsoft Secure Score. Pole **Logika testowania** na karcie **Testowanie** pokaże, jakiego rodzaju zasady lub konfiguracja są wymagane w innym rozwiązaniu, aby akcja przekazywała i zdobywała punkty w kierunku oceny zgodności.
+
+Gdy sygnały wskazują, że akcja poprawy została pomyślnie zaimplementowana, automatycznie otrzymasz punkty kwalifikujące się do tej akcji, co będzie uwzględniać wyniki dla wszelkich powiązanych kontroli i ocen. Dowiedz się więcej o tym, jak [ciągła ocena wpływa na wynik zgodności](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+
+ Automatyczne testowanie jest domyślnie włączone dla wszystkich kwalifikujących się akcji poprawy. Możesz dostosować te ustawienia, aby automatycznie testować tylko niektóre akcje poprawy, lub wyłączyć automatyczne testowanie dla wszystkich akcji. Dowiedz się więcej o tym, jak działa testowanie automatyczne i jak dostosować ustawienia, zobacz [Konfigurowanie testowania automatycznego](compliance-manager-setup.md#manage-automated-testing-settings).
 
 #### <a name="parent-testing-source"></a>Nadrzędne źródło testowania
 
-Po wybraniu elementu **nadrzędnego** jako źródła testowania dla akcji udoskonalania wybierzesz inną akcję, z którą twoje działanie zostanie połączone. Działanie w efekcie stanie się "elementem podrzędnym" akcji, która została wyznaczyna na "element nadrzędny". Po wyznaczeniu elementu nadrzędnego do działania udoskonalania to działanie będzie właściwością implementacji i testowania szczegółów działania nadrzędnego. Gdy stan akcji nadrzędnej zmieni się, stan dziecka będzie dziedziczyć te zmiany. Akcja podrzędna również przyjmuje wszystkie dowody na karcie  Dokumenty, które należą do akcji nadrzędnej, co może zastąpić wszelkie dane, które wcześniej istniały w dokumentach akcji **podrzędnej**.
+Po wybraniu pozycji **Nadrzędny** jako źródła testowania dla akcji poprawy wybierz kolejną akcję, z którą zostanie połączona twoja akcja. Twoja akcja staje się "elementem podrzędnym" akcji wyznaczonej jako "nadrzędna". Gdy wyznaczysz obiekt nadrzędny do akcji poprawy, ta akcja będzie nieodłącznie związana z implementacją i testowaniem szczegółów akcji nadrzędnej. Za każdym razem, gdy stan akcji nadrzędnej zmieni się, stan dziecka odziedziczy te zmiany. Akcja podrzędna będzie również akceptować wszystkie **dowody** na karcie Dokumenty należące do akcji nadrzędnej, co może zastąpić wszystkie dane, które wcześniej istniały w **dokumentach** akcji podrzędnej.
 
 > [!NOTE]
-> Posiadanie źródła testowania elementu **nadrzędnego** nie musi oznaczać, że działanie jest sprawdzane automatycznie przez Menedżera zgodności. Jeśli na przykład źródło testowania akcji nadrzędnej jest **ręczne, akcja** podrzędna podejmie działanie nadrzędne, które jest ręcznym testem i implementacją przez organizację.
+> Posiadanie źródła testowego **elementu nadrzędnego** nie musi oznaczać, że akcja jest automatycznie testowana przez Menedżera zgodności. Jeśli na przykład źródło testowania akcji nadrzędnej jest **ręczne**, akcja podrzędna będzie podejmować stan akcji nadrzędnej, która jest ręcznym testem i implementacją organizacji.
 
-Aby skonfigurować nadrzędne źródło testowania, wykonaj poniższe czynności:
+Aby skonfigurować nadrzędne źródło testowania, wykonaj poniższe kroki:
 
-- Na stronie szczegółów akcji udoskonalania znajdź **sekcję** Przegląd.
-- W obszarze **nagłówka Testowanie** **źródła wybierz z** menu rozwijanego pozycję Element nadrzędny.
-- Wybierz **pozycję Przypisz rodzica**.
-- W **okienku** wysuwana akcja udoskonalania Przypisz rodzica znajdź akcję udoskonalania, którą chcesz przypisać jako element nadrzędny z listy, lub wprowadź nazwę akcji na pasku wyszukiwania u góry. Po zidentyfikowaniu zamierzonej akcji zaznacz pole wyboru wyświetlane po lewej stronie nazwy akcji, gdy najedziesz na nie, a następnie wybierz pozycję **Zapisz**.
+- Na stronie szczegółów akcji poprawy znajdź sekcję **Przegląd** .
+- W nagłówku **Źródła testowania** wybierz pozycję **Nadrzędny** z menu rozwijanego.
+- Wybierz pozycję **Przypisz element nadrzędny**.
+- W okienku wysuwowym **Przypisywanie akcji poprawy nadrzędnej** znajdź akcję poprawy, którą chcesz przypisać jako element nadrzędny z listy, lub wprowadź nazwę akcji na pasku wyszukiwania w górnej części. Po zidentyfikowaniu zamierzonej akcji zaznacz pole wyboru wyświetlane po lewej stronie nazwy akcji po umieszczeniu wskaźnika myszy na niej, a następnie wybierz pozycję **Zapisz**.
 
-Powrócisz do strony szczegółów akcji. W **obszarze Test źródła** w sekcji **Przegląd** w obszarze Akcja nadrzędna zostanie wymieniona nowa akcja wyznaczona jako element **nadrzędny.**
+Wrócisz do strony szczegółów akcji. W obszarze **Źródło testowania** w sekcji **Przegląd** nowa akcja wyznaczona jako element nadrzędny znajduje się w obszarze **Akcja nadrzędna**.
 
-## <a name="review-standards-and-regulations"></a>Przeglądanie standardów i przepisów
+## <a name="review-standards-and-regulations"></a>Przegląd standardów i przepisów
 
-Sekcja **standardy i przepisów** zawiera listę standardów i przepisów skojarzonych z działaniem udoskonalania, które można przeszukiwać i filtrować. Mogą one być przeglądane przez **odpowiednią kontrolkę**, identyfikator **kontrolki,** rodzinę kontrolek **i** **odpowiednie przepisy** .
+Sekcja **standardy i przepisy** zawiera listę standardów i przepisów związanych z działaniami ulepszania, które można przeszukiwać i filtrować. Mogą być one przeglądane przez odpowiednią **kontrolę**, **identyfikator kontroli**, **rodzinę kontroli** i **związane z tym rozporządzenie** .
 
-## <a name="perform-work-and-store-documentation"></a>Wykonywanie dokumentacji służbowej i przechowywania
+## <a name="perform-work-and-store-documentation"></a>Wykonywanie pracy i przechowywanie dokumentacji
 
-Pliki i notatki związane z implementacją i testowaniem można przekazywać bezpośrednio do **sekcji** Dokumenty. To środowisko to bezpieczne scentralizowane repozytorium, które pomoże Ci pokazać zadowolenie z kontroli w celu spełnienia standardów i przepisów dotyczących zgodności z przepisami. Każdy użytkownik z dostępem tylko do odczytu może odczytywać zawartość tej sekcji. Tylko użytkownicy z uprawnieniami do edytowania mogą przekazywać i pobierać pliki.
+Pliki i notatki związane z implementacją i testowaniem można przekazywać bezpośrednio do sekcji **Dokumenty** . To środowisko jest bezpiecznym, scentralizowanym repozytorium, które ułatwia zaprezentowanie satysfakcji z mechanizmów kontroli w celu spełnienia standardów i przepisów dotyczących zgodności. Każdy użytkownik z dostępem tylko do odczytu może odczytać zawartość w tej sekcji. Tylko użytkownicy z uprawnieniami do edycji mogą przekazywać i pobierać pliki.
 
 #### <a name="uploaded-documents"></a>Przekazane dokumenty
 
-- Wybierz **pozycję Zarządzaj dokumentami** , aby przekazać odpowiednie pliki.
-- Gdy zostanie otwarte okienko wysuwu zarządzanie dokumentami, wybierz pozycję **Dodaj dokument**, a następnie wybierz plik w systemie. Zaakceptowane typy plików:
+- Wybierz pozycję **Zarządzaj dokumentami** , aby przekazać odpowiednie pliki.
+- Po otwarciu okienka wysuwanego Zarządzaj dokumentami wybierz pozycję **Dodaj dokument**, a następnie wybierz plik z systemu. Akceptowane typy plików:
   - Dokumenty (.doc, .xls, .ppt, .txt, .pdf)
   - Obrazy (.jpg, .png)
-  - Klip wideo (mkv)
-  - Pliki skompresowane (.zip, .rar)
-- Gdy plik zostanie rozpoznany w okienku, wybierz pozycję **Zamknij**, co spowoduje automatyczne zapisanie załącznika pliku. Plik zostanie wyświetlony na liście poniżej Przekazane **dokumenty**.
-- Aby pobrać lub usunąć dokument, wybierz pozycję Zarządzaj **dokumentami** poniżej listy dokumentów. W okienku wysuwany zaznacz wiersz dokumentu, aby go wyróżnić, a następnie wybierz pozycję **Pobierz** lub **Usuń**.
+  - Wideo (mkv)
+  - Skompresowane pliki (.zip, .rar)
+- Gdy plik zostanie rozpoznany w okienku, wybierz pozycję **Zamknij**, co automatycznie zapisze załącznik pliku. Następnie zobaczysz plik wymieniony poniżej pozycji **Przekazane dokumenty**.
+- Aby pobrać lub usunąć dokument, wybierz pozycję **Zarządzaj dokumentami** poniżej listy dokumentów. W okienku wysuwanym wybierz wiersz dokumentu, aby go wyróżnić, a następnie wybierz pozycję **Pobierz** lub **Usuń**.
 
-## <a name="assign-improvement-action-to-assessor-for-completion"></a>Przypisywanie akcji udoskonalania, aby oceniać jego wykonanie
+## <a name="assign-improvement-action-to-assessor-for-completion"></a>Przypisywanie akcji poprawy do oceny w celu ukończenia
 
-Kolejnym krokiem po ukończeniu pracy, testowaniu i przesłaniu dowodów jest przypisanie czynności udoskonalania do oceniania w celu weryfikacji. Oceniająco sprawdza pracę i sprawdza dokumentację, a następnie wybiera odpowiedni stan testu.
+Po zakończeniu pracy, przeprowadzeniu testów i przekazaniu dowodów następnym krokiem jest przypisanie akcji poprawy do oceny w celu weryfikacji. Oceniający weryfikuje pracę i analizuje dokumentację, a następnie wybiera odpowiedni stan testu.
 
-**Jeśli stan testu jest ustawiony na "Zakończone"**: akcja jest ukończona, a punkty, które udało się uzyskać, pokazują, ile maksymalnie punktów udało się osiągnąć. Punkty są następnie liczone w ogólnym wyniku zgodności.
+**Jeśli stan testu jest ustawiony na wartość "Przekazano"**: akcja została ukończona, a uzyskane punkty pokazują maksymalną liczbę osiągniętych punktów. Punkty są następnie liczone do ogólnego wyniku zgodności.
 
-**Jeśli stan testu ma wartość "** Nie powiodło się": akcja nie spełnia wymagań, a oceniacy może ją z powrotem przypisać do odpowiedniego użytkownika w celu dodatkowej pracy.
+**Jeśli stan testu jest ustawiony na wartość "Niepowodzenie"**: akcja nie spełnia wymagań, a osoba oceniająca może przypisać ją z powrotem do odpowiedniego użytkownika na potrzeby dodatkowej pracy.
 
-## <a name="accepting-updates-to-improvement-actions"></a>Akceptowanie aktualizacji w celu działań udoskonalania
+## <a name="accepting-updates-to-improvement-actions"></a>Akceptowanie aktualizacji akcji ulepszania
 
-Gdy będzie dostępna aktualizacja w celu działania usprawnień, obok jego nazwy zostanie wyświetlony komunikat. Możesz zaakceptować aktualizację lub odroczyć ją na później.
+Gdy aktualizacja jest dostępna dla akcji poprawy, obok jej nazwy zostanie wyświetlone powiadomienie. Możesz zaakceptować aktualizację lub odroczyć ją na później.
 
 #### <a name="what-causes-an-update"></a>Co powoduje aktualizację
 
-Aktualizacja występuje w przypadku zmian dotyczących oceniania, automatyzacji lub zakresu. Zmiany mogą obejmować nowe wskazówki dotyczące działań usprawnień opartych na zmianach przepisów prawnych lub mogą być spowodowane zmianami w produktach. Tylko działania udoskonalania zarządzane przez Twoją organizacje otrzymują powiadomienia o aktualizacjach.
+Aktualizacja występuje, gdy istnieją zmiany związane z ocenianiem, automatyzacją lub zakresem. Zmiany mogą obejmować nowe wskazówki dotyczące akcji poprawy w oparciu o zmiany regulacyjne lub mogą być spowodowane zmianami produktu. Tylko akcje poprawy zarządzane przez organizacje otrzymują powiadomienia o aktualizacji.
 
-#### <a name="where-youll-see-assessment-update-notifications"></a>Gdzie są wyświetlane powiadomienia o aktualizacjach oceny
+#### <a name="where-youll-see-assessment-update-notifications"></a>Gdzie zostaną wyświetlone powiadomienia o aktualizacji oceny
 
-Po zaktualizowaniu działania ulepszeń obok jego nazwy, na stronie  akcji udoskonalania i na stronie szczegółów powiązanych z nimi ocen, będzie dostępna etykieta Oczekująca aktualizacja.
+Po zaktualizowaniu akcji poprawy obok jej nazwy zobaczysz etykietę **Oczekujące na aktualizację** na stronie akcji poprawy oraz na stronie szczegółów powiązanych ocen.
 
-Przejdź do strony szczegółów akcji udoskonalania i wybierz przycisk Sprawdź aktualizację  na górnym banerze, aby przejrzeć szczegóły zmian i zaakceptować lub odroczyć aktualizację.
+Przejdź do strony szczegółów akcji poprawy i wybierz przycisk **Przejrzyj aktualizację** na górnym banerze, aby przejrzeć szczegóły dotyczące zmian i zaakceptować lub odroczyć aktualizację.
 
 #### <a name="review-update-to-accept-or-defer"></a>Przejrzyj aktualizację, aby zaakceptować lub odroczyć
 
-Po wybraniu **przycisku Sprawdź** aktualizację na stronie szczegółów akcji udoskonalania po prawej stronie ekranu zostanie wyświetlone okienko wysuwu. Okienko wysuwu zawiera kluczowe informacje dotyczące aktualizacji, takie jak ocena, na które ma wpływ, oraz zmiany wyników i zakresu.
+Po wybraniu pozycji **Przejrzyj aktualizację** na stronie szczegółów akcji poprawy po prawej stronie ekranu zostanie wyświetlone okienko wysuwane. Okienko wysuwane zawiera kluczowe szczegóły dotyczące aktualizacji, takie jak oceny, których dotyczy problem, oraz zmiany oceny i zakresu.
 
-Wybierz **pozycję Zaakceptuj aktualizację** , aby zaakceptować wszystkie zmiany w działaniu udoskonalania. **Zaakceptowane zmiany są trwałe**.
+Wybierz pozycję **Zaakceptuj aktualizację** , aby zaakceptować wszystkie zmiany w akcji poprawy. **Zaakceptowane zmiany są trwałe**.
 
 > [!NOTE]
-> Gdy zaakceptujesz aktualizację akcji, akceptujesz również aktualizacje wszystkich innych wersji lub wystąpień tej akcji. Aktualizacje będą propagowane w całej dzierżawie do działań technicznych i będą propagowane w całej grupie w przypadku działań innych niż techniczne.
+> Po zaakceptowaniu aktualizacji akcji akceptujesz również aktualizacje innych wersji lub wystąpień tej akcji. Aktualizacje będą propagowane w całej dzierżawie w przypadku akcji technicznych i będą propagowane w całej grupie w przypadku akcji innych niż techniczne.
 
-Jeśli wybierzesz **pozycję Anuluj**, aktualizacja nie zostanie zastosowana do akcji udoskonalania. Jednak do czasu zaakceptowania aktualizacji nadal będziesz widzieć  powiadomienie o oczekującej aktualizacji.
+Jeśli wybierzesz opcję **Anuluj**, aktualizacja nie zostanie zastosowana do akcji poprawy. Będziesz jednak nadal widzieć powiadomienie **Oczekujące na aktualizację** do momentu zaakceptowania aktualizacji.
 
 **Dlaczego zalecamy akceptowanie aktualizacji**
 
-Zaakceptowanie aktualizacji pomaga zapewnić, że masz najbardziej zaktualizowane wskazówki dotyczące korzystania z rozwiązań i podejmowania odpowiednich działań udoskonalania, aby pomóc Ci w spełnianiu wymagań certyfikacji.
+Akceptowanie aktualizacji pomaga zapewnić, że masz najbardziej zaktualizowane wskazówki dotyczące korzystania z rozwiązań i podejmowania odpowiednich działań ulepszeń, które pomogą Ci spełnić wymagania dotyczące certyfikacji.
 
 **Dlaczego warto odroczyć aktualizację**
 
-Jeśli jesteś w trakcie oceniania, który obejmuje działanie udoskonalania, warto upewnić się, że zakończono pracę nad tym, zanim zaakceptujesz aktualizację. Aktualizację można odroczyć na później, wybierając pozycję **Anuluj** w okienku wysuwanej aktualizacji recenzji.
+Jeśli jesteś w trakcie oceny, która obejmuje akcję poprawy, możesz upewnić się, że zakończono pracę nad nią przed zaakceptowaniem aktualizacji. Możesz odroczyć aktualizację na później, wybierając pozycję **Anuluj** w okienku wysuwanej aktualizacji przeglądu.
 
 #### <a name="accept-all-updates-at-once"></a>Akceptowanie wszystkich aktualizacji jednocześnie
 
-Jeśli masz wiele aktualizacji i chcesz zaakceptować je wszystkie za jednym razem, **wybierz link Zaakceptuj** wszystkie aktualizacje u góry tabeli akcji udoskonalania. Zostanie wyświetlone okienko wysuane z liczbą akcji do zaktualizowania. Wybierz przycisk **Zaakceptuj aktualizacje** , aby zastosować wszystkie aktualizacje.
+Jeśli masz wiele aktualizacji i chcesz je akceptować jednocześnie, wybierz link **Akceptuj wszystkie aktualizacje** w górnej części tabeli akcji poprawy. Zostanie wyświetlone okienko wysuwane z listą akcji do zaktualizowania. Wybierz przycisk **Akceptuj aktualizacje** , aby zastosować wszystkie aktualizacje.
 
-Zwróć uwagę, że po powrocie do strony akcji udoskonalania w górnej części strony może zostać wyświetlony komunikat z prośbą o odświeżenie strony w celu ukończenia aktualizacji.
+Pamiętaj, że po powrocie do strony akcji poprawy w górnej części strony może zostać wyświetlony komunikat z prośbą o odświeżenie strony w celu ukończenia aktualizacji.
 
-## <a name="set-up-alerts-for-improvement-action-changes"></a>Konfigurowanie alertów w celu ulepszania zmian w działaniu
+## <a name="set-up-alerts-for-improvement-action-changes"></a>Konfigurowanie alertów dotyczących zmian akcji poprawy
 
-Możesz skonfigurować alerty tak, aby natychmiast powiadamiały Cię o pewnych zmianach w działaniach udoskonalania, takich jak zmiana implementacji lub stanu testowania albo zwiększenie lub zmniejszenie wyniku. Szybkie powiadomienia o takich zmianach mogą ułatwić ci pozostawanie na wierzchu na możliwych zagrożeniach związanych ze zgodnością. Aby [dowiedzieć się, jak skonfigurować alerty,](compliance-manager-alert-policies.md) odwiedź stronę Alerty i zasady alertów Menedżera zgodności.
+Możesz skonfigurować alerty, aby natychmiast powiadamiać o pewnych zmianach akcji poprawy, takich jak zmiana stanu implementacji lub testu albo zwiększenie lub spadek oceny. Szybkie powiadomienia o takich zmianach mogą pomóc Ci być na bieżąco z możliwymi zagrożeniami związanymi ze zgodnością. Odwiedź stronę [Alerty i zasady alertów programu Compliance Manager](compliance-manager-alert-policies.md) , aby dowiedzieć się, jak skonfigurować alerty.
 
 ## <a name="export-a-report"></a>Eksportowanie raportu
 
-Wybierz **pozycję** Eksportuj w lewym górnym rogu ekranu, aby pobrać arkusz Excel zawierający wszystkie akcje udoskonalania i kategorie filtrowania przedstawione na stronie akcji udoskonalania.
+Wybierz pozycję **Eksportuj** w lewym górnym rogu ekranu, aby pobrać arkusz Excel zawierający wszystkie akcje poprawy oraz kategorie filtrów wyświetlane na stronie akcji poprawy.

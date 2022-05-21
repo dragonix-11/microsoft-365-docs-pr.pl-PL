@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Eksplorator zawartości umożliwia natywne wyświetlanie elementów oznaczonych etykietami.
-ms.openlocfilehash: 0a3b036a60d3ec24533056b38ff1e68be9875aa0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: fdc67df9819054eedbe84ce647d77177039cd4a8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761378"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623284"
 ---
 # <a name="get-started-with-content-explorer"></a>Wprowadzenie do eksploratora zawartości
 
-Eksplorator zawartości klasyfikacji danych pozwala natywnie wyświetlać elementy podsumowane na stronie przeglądu.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-![zwinięty zrzut ekranu eksploratora zawartości.](../media/data-classification-content-explorer-1.png)
+Eksplorator zawartości umożliwia natywne wyświetlanie elementów podsumowanych na stronie przeglądu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -51,7 +51,7 @@ Aby uzyskać dostęp do karty eksploratora zawartości, konto musi mieć przypis
 > Członkostwo w tych grupach ról nie umożliwia wyświetlania listy elementów w Eksploratorze zawartości ani wyświetlania zawartości elementów w Eksploratorze zawartości.
 
 > [!IMPORTANT]
-> Tylko administratorzy globalni mogą zarządzać uprawnieniami lub przypisywać je innym użytkownikom w Centrum zgodności. Aby uzyskać więcej informacji, zobacz [Udzielanie użytkownikom dostępu do Centrum zgodności & zabezpieczeń](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+> Tylko administratorzy globalni mogą zarządzać uprawnieniami lub przypisywać je innym użytkownikom w portalu zgodności. Aby uzyskać więcej informacji, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 > 
 ### <a name="required-permissions-to-access-items-in-content-explorer"></a>Wymagane uprawnienia dostępu do elementów w Eksploratorze zawartości
 
@@ -60,7 +60,7 @@ Dostęp do Eksploratora zawartości jest wysoce ograniczony, ponieważ umożliwi
 > [!IMPORTANT]
 > Te uprawnienia zawłaszczają uprawnienia, które są przypisywane lokalnie do elementów, co umożliwia wyświetlanie zawartości. 
 
-Istnieją dwie role, które udzielają dostępu do Eksploratora zawartości i są przyznawane przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centrum zgodności platformy Microsoft 365</a>:
+Istnieją dwie role, które udzielają dostępu do Eksploratora zawartości i są przyznawane przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">portal zgodności Microsoft Purview</a>:
 
 - **Przeglądarka listy Eksploratora zawartości**: członkostwo w tej grupie ról umożliwia wyświetlanie każdego elementu i jego lokalizacji w widoku listy. Rola `data classification list viewer` została wstępnie przypisana do tej grupy ról.
 
@@ -76,14 +76,14 @@ Administrator globalny może przypisać niezbędną przeglądarkę list Eksplora
 
 W wersji zapoznawczej dostępne są role i grupy ról, które można przetestować, aby dostosować mechanizmy kontroli dostępu.
 
-Oto lista ról Microsoft Information Protection (MIP), które są w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Oto lista odpowiednich ról w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - administrator Information Protection
 - analityk Information Protection
 - badacz Information Protection
 - czytelnik Information Protection
 
-Oto lista grup ról programu MIP, które są w wersji zapoznawczej. Aby dowiedzieć się więcej, zobacz [Grupy ról w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Oto lista odpowiednich grup ról, które są w wersji zapoznawczej. Aby dowiedzieć się więcej, zobacz [Grupy ról w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Information Protection
 - administratorzy Information Protection
@@ -111,14 +111,14 @@ Etykiety poufności muszą być włączone dla plików znajdujących się w Shar
 
 ### <a name="how-to-use-content-explorer"></a>Jak używać eksploratora zawartości
 
-1. Otwórz **Centrum zgodności platformy Microsoft 365**  >  **Klasyfikator** **danychKontener** > .
+1. Otwórz **eksploratora** **portal zgodności Microsoft Purview**  >  **DataContent** > .
 2. Jeśli znasz nazwę etykiety lub typ informacji poufnych, możesz wpisać ją w polu filtru.
 3. Alternatywnie możesz wyszukać element, rozszerzając typ etykiety i wybierając etykietę z listy.
 4. Wybierz lokalizację w obszarze **Wszystkie lokalizacje** i przejdź do szczegółów struktury folderów dla elementu.
 5. Kliknij dwukrotnie, aby otworzyć element natywnie w Eksploratorze zawartości.
 
 ### <a name="export"></a>Eksportowanie
-**Kontrolka eksportu** utworzy plik .csv zawierający listę elementów wyświetlanych w okienku **Wszystkie lokalizacje**.
+**Kontrolka eksportu** utworzy plik .csv zawierający listę zawartości okienka.
 
 ![kontroli eksportu klasyfikacji danych.](../media/data_classification_export_control.png)
 
@@ -126,9 +126,9 @@ Etykiety poufności muszą być włączone dla plików znajdujących się w Shar
 > [!NOTE]
 > Aktualizowanie liczby w Eksploratorze zawartości może potrwać do *siedmiu dni* .
 
-### <a name="search"></a>Szukaj
+### <a name="filter"></a>Filtrowanie
 
-Po przejściu do szczegółów lokalizacji, takiej jak folder Exchange lub Teams, lub witryny SharePoint lub OneDrive, zostanie wyświetlone narzędzie **wyszukiwania**.
+Podczas przechodzenia do szczegółów lokalizacji, takiej jak folder Exchange lub Teams, lub witryny SharePoint lub OneDrive, zostanie **wyświetlone narzędzie Filtr**.
 
 ![narzędzie wyszukiwania eksploratora zawartości.](../media/data_classification_search_tool.png)
 
@@ -154,4 +154,4 @@ Możesz wyszukać następujące pozycje:
 - [Dowiedz się więcej o etykietach poufności](sensitivity-labels.md)
 - [Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania](retention.md)
 - [Jednostka typu informacji poufnych definitions.md](sensitive-information-type-entity-definitions.md)
-- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
+- [Dowiedz się więcej o Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md)

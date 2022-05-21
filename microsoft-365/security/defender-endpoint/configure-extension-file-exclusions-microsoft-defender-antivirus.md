@@ -14,18 +14,18 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 034a12d1f1354ac63778d142d1bc09848e2f9911
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419907"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622990"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia pliku i lokalizacji folderu
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
 
@@ -38,7 +38,7 @@ Można zdefiniować wykluczenia dla Program antywirusowy Microsoft Defender, kt�
 - [Wykluczenia dla plików otwieranych przez procesy](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Program antywirusowy Microsoft Defender wykluczenia nie mają zastosowania do innych możliwości Ochrona punktu końcowego w usłudze Microsoft Defender, w tym [ wykrywanie i reagowanie w punktach końcowych (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [reguły zmniejszania obszaru ataków (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) i [kontrolowany dostęp do folderów](/microsoft-365/security/defender-endpoint/controlled-folders). Pliki wykluczone przy użyciu metod opisanych w tym artykule mogą nadal wyzwalać alerty EDR i inne wykrycia.
+> Program antywirusowy Microsoft Defender wykluczenia nie mają zastosowania do innych funkcji Ochrona punktu końcowego w usłudze Microsoft Defender, takich jak [reguły zmniejszania obszaru ataków (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) i [kontrolowany dostęp do folderów](/microsoft-365/security/defender-endpoint/controlled-folders). Pliki wykluczone przy użyciu metod opisanych w tym artykule mogą nadal wyzwalać alerty EDR i inne wykrycia.
 > Aby ogólnie wykluczyć pliki, dodaj je do Ochrona punktu końcowego w usłudze Microsoft Defender [niestandardowych wskaźników](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
@@ -104,7 +104,7 @@ Zobacz [Jak tworzyć i wdrażać zasady ochrony przed złośliwym kodem: ustawie
 
 1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i wybierz pozycję **Edytuj**.
 
-2. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
+2. W **Edytorze zarządzania zasadami grupy** przejdź do **konfiguracji komputera** i wybierz **szablony administracyjne**.
 
 3. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Windows Defender** \> **Wykluczenia**.
 
@@ -293,7 +293,7 @@ Elementy na liście wykluczeń można pobrać przy użyciu jednej z następując
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
-- [aplikacja Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md)
+- [Aplikacja Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
 > Zmiany listy wykluczeń wprowadzone za pomocą zasady grupy **będą wyświetlane** na listach w [aplikacji Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md).
@@ -379,7 +379,7 @@ Jeśli nie masz dostępu do Internetu, możesz utworzyć własny plik testowy EI
 Możesz również skopiować ciąg do pustego pliku tekstowego i spróbować go zapisać przy użyciu nazwy pliku lub folderu, który próbujesz wykluczyć.
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

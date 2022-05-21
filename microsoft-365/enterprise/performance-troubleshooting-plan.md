@@ -22,12 +22,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Ten artykuł może pomóc w rozwiązywaniu Office 365 problemów z wydajnością, a nawet rozwiązać niektóre z najczęstszych problemów.
-ms.openlocfilehash: 7380d6beb89cdd128ccf86f47e1e3c236aabda77
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bb6033461d7b902ce0fad6e2c3b7b3e8f593951c
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100572"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623045"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan rozwiązywania problemów z wydajnością dla Office 365
 
@@ -43,7 +43,7 @@ Ten plan działania zawiera dwie części; faza przygotowania i faza rejestrowan
 
 ### <a name="prepare-the-client-computer"></a>Przygotowywanie komputera klienckiego
 
-- Znajdź komputer kliencki, który może odtworzyć problem z wydajnością. Ten komputer będzie używany w trakcie rozwiązywania problemów.
+- Znajdź komputer kliencki, który może odtworzyć problem z wydajnością. Ten komputer będzie używany podczas rozwiązywania problemów.
 - Zapisz kroki, które powodują wystąpienie problemu z wydajnością, dzięki czemu będziesz gotowy, gdy nadejdzie czas na testowanie.
 - Instalowanie narzędzi do zbierania i rejestrowania informacji:
   - Zainstaluj program [Netmon 3.4](https://www.microsoft.com/download/details.aspx?id=4865) (lub użyj równoważnego narzędzia do śledzenia sieci).
@@ -73,7 +73,7 @@ Jeśli nie wiesz już, jak uruchamiać narzędzia wymienione w tym artykule, nie
 
 ### <a name="flush-the-dns-cache-first"></a>Najpierw opróżnij pamięć podręczną DNS
 
-Dlaczego? Opróżniając pamięć podręczną DNS, uruchamiasz testy z czystym łupkiem. Usuwając pamięć podręczną, resetujesz zawartość programu rozpoznawania nazw DNS do najbardziej aktualnych wpisów. Pamiętaj, że opróżnienie nie powoduje usunięcia wpisów pliku HOSTs. W przypadku obszernego używania wpisów pliku HOST należy skopiować te wpisy do pliku w innym katalogu, a następnie opróżnić plik HOST.
+Dlaczego? Opróżniając pamięć podręczną DNS, uruchamiasz testy z czystą tablicą. Usuwając pamięć podręczną, resetujesz zawartość programu rozpoznawania nazw DNS do najbardziej aktualnych wpisów. Pamiętaj, że opróżnienie nie powoduje usunięcia wpisów pliku HOST. W przypadku obszernego używania wpisów pliku HOST należy skopiować te wpisy do pliku w innym katalogu, a następnie opróżnić plik HOST.
 
 #### <a name="flush-your-dns-resolver-cache"></a>Opróżnianie pamięci podręcznej programu rozpoznawania nazw DNS
 
@@ -133,7 +133,7 @@ Ten zrzut ekranu pochodzi z Professional wersji protokołu HTTPWatch. Możesz ot
 
 ## <a name="problem-steps-recorder"></a>Rejestrator kroków problemu
 
-Funkcja rejestrowania kroków lub PSR.exe umożliwia rejestrowanie problemów w miarę ich występowania. Jest to bardzo przydatne narzędzie i bardzo proste do uruchomienia.
+Funkcja rejestrowania kroków lub PSR.exe umożliwia rejestrowanie problemów w miarę ich występowania. Jest to bardzo przydatne narzędzie i proste do uruchomienia.
 
 ### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>Uruchom rejestrator kroków problemu (PSR.exe), aby zarejestrować swoją pracę
 
@@ -141,7 +141,7 @@ Funkcja rejestrowania kroków lub PSR.exe umożliwia rejestrowanie problemów w 
 
 2. Gdy pojawi się małe okno PSR.exe, kliknij przycisk **Rozpocznij rekord** i odtwórz kroki, które odtworzyć problem z wydajnością. W razie potrzeby możesz dodawać komentarze, klikając pozycję **Dodaj komentarze**.
 
-3. Po wykonaniu kroków kliknij pozycję **Zatrzymaj rekord** . Jeśli problem z wydajnością to renderowanie strony, poczekaj na renderowanie strony przed zatrzymaniem nagrywania.
+3. Kliknij pozycję **Zatrzymaj rekord** po wykonaniu kroków. Jeśli problem z wydajnością to renderowanie strony, poczekaj na renderowanie strony przed zatrzymaniem nagrywania.
 
 4. Kliknij **Zapisz**.
 
@@ -155,11 +155,11 @@ Nie można nauczyć wszystkiego o rozwiązywaniu problemów z siecią i wydajno�
 
 Jeśli chcesz zdobyć umiejętności czytania śladów sieci dla Office 365 witryn, nie ma lepszego nauczyciela niż regularne tworzenie śladów obciążeń stron i zdobywanie doświadczenia w ich czytaniu. Jeśli na przykład masz szansę, załaduj usługę Office 365 i prześledzić proces. Przefiltruj ślad dla ruchu DNS lub wyszukaj w usłudze FrameData nazwę przeglądanej usługi. Przeskanuj ślad, aby zapoznać się z krokami, które występują podczas ładowania usługi. Pomoże ci to dowiedzieć się, jak powinno wyglądać normalne ładowanie strony, a w przypadku rozwiązywania problemów, szczególnie w zakresie wydajności, porównanie dobrych i złych śladów może cię wiele nauczyć.
 
-Narzędzie Netmon używa funkcji Microsoft Intellisense w polu Filtr wyświetlania. Funkcja Intellisense, czyli inteligentne uzupełnianie kodu, to ta sztuczka, w której wpisujesz kropkę, a wszystkie dostępne opcje są wyświetlane w polu wyboru listy rozwijanej. Jeśli na przykład martwisz się skalowaniem okien protokołu TCP, możesz znaleźć sposób na filtr (na przykład  `.protocol.tcp.window < 100`) w ten sposób.
+Narzędzie Netmon używa funkcji Microsoft Intellisense w polu Filtr wyświetlania. Funkcja Intellisense, czyli inteligentne uzupełnianie kodu, to ta sztuczka, w której wpisujesz kropkę, a wszystkie dostępne opcje są wyświetlane w polu wyboru listy rozwijanej. Na przykład martwisz się o skalowanie okien protokołu TCP. W ten sposób możesz znaleźć drogę do filtru (takiego jak  `.protocol.tcp.window < 100`) .
 
 ![Zrzut ekranu przedstawiający narzędzie Netmon pokazujące, że pole Filtr wyświetlania używa funkcji intellisense.](../media/75a56c11-9a60-47ee-a100-aabdfb1ba10f.PNG)
 
-Ślady netmonów mogą mieć duży ruch. Jeśli nie masz doświadczenia w ich czytaniu, prawdopodobnie po raz pierwszy otworzysz ślad. Pierwszą rzeczą do zrobienia jest oddzielenie sygnału od szumu tła w śledzeniu. Przetestowano Office 365 i jest to ruch, który chcesz zobaczyć. Jeśli używasz do nawigowania po śladach, ta lista może nie być potrzebna.
+Ślady netmonów mogą mieć duży ruch. Jeśli nie masz doświadczenia w ich czytaniu, prawdopodobnie po raz pierwszy otworzysz ślad. Pierwszą rzeczą do zrobienia jest oddzielenie sygnału od szumu tła w śledzeniu. Przetestowano Office 365 i jest to ruch, który chcesz zobaczyć. Jeśli korzystasz z nawigowania po śladach, ta lista może nie być potrzebna.
 
 Ruch między klientem a Office 365 odbywa się za pośrednictwem protokołu TLS, co oznacza, że treść ruchu zostanie zaszyfrowana i nie będzie można jej odczytać w ogólnym śladzie Netmon. Analiza wydajności nie musi znać szczegółów informacji zawartych w pakietze. Jest jednak bardzo zainteresowany nagłówkami pakietów i informacjami, które zawierają.
 
@@ -184,7 +184,7 @@ Zapoznaj się z ruchem i dowiedz się, jak zlokalizować potrzebne informacje. N
 
 Biorąc Office 365 Outlook Online jako przykład, ruch zaczyna się mniej więcej tak:
 
-- Standardowa kwerenda DNS i odpowiedź DNS dla outlook.office365.com z pasującymi identyfikatorami QueryID. Ważne jest, aby zanotować przesunięcie czasu dla tego zwrotu, a także miejsce, w którym na świecie Office 365 globalny system DNS wysyła żądanie rozpoznawania nazw. Najlepiej, jak to możliwe lokalnie, a nie w połowie drogi na całym świecie.
+- Standardowa kwerenda DNS i odpowiedź DNS dla outlook.office365.com z pasującymi identyfikatorami QueryID. Ważne jest, aby zanotować przesunięcie czasu dla tego zwrotu i gdzie na świecie Office 365 globalny system DNS wysyła żądanie rozpoznawania nazw. Najlepiej, jak to możliwe lokalnie, a nie w połowie drogi na całym świecie.
 
 - Żądanie HTTP GET, którego raport o stanie został przeniesiony na stałe (301)
 
@@ -192,11 +192,11 @@ Biorąc Office 365 Outlook Online jako przykład, ruch zaczyna się mniej więce
 
 - Konwersacja TCP SYN i TCP SYN/ACK. Wiele ustawień w tej konwersacji ma wpływ na wydajność.
 
-- Następnie odbywa się seria ruchu TLS:TLS, w którym odbywa się uzgadnianie protokołu TLS i konwersacje certyfikatów TLS. (Pamiętaj, że dane są szyfrowane za pośrednictwem protokołu SSL/TLS).
+- Następnie odbywa się seria ruchu TLS:TLS, w którym odbywa się uzgadnianie protokołu TLS i konwersacje certyfikatów protokołu TLS. (Pamiętaj, że dane są szyfrowane za pośrednictwem protokołu SSL/TLS).
 
-Wszystkie części ruchu są ważne i połączone, ale małe fragmenty śledzenia zawierają informacje szczególnie ważne pod względem rozwiązywania problemów z wydajnością, dlatego skupimy się na tych obszarach. Ponadto, ponieważ wykonaliśmy wystarczająco dużo Office 365 rozwiązywania problemów z wydajnością w firmie Microsoft, aby skompilować listę 10 najczęstszych problemów, skupimy się na tych problemach i sposobie korzystania z narzędzi, które musimy wykorzenić w następnej kolejności.
+Wszystkie części ruchu są ważne i połączone, ale małe części śledzenia zawierają ważne informacje dotyczące rozwiązywania problemów z wydajnością, dlatego skupimy się na tych obszarach. Ponadto, ponieważ wykonaliśmy wystarczająco dużo Office 365 rozwiązywania problemów z wydajnością w firmie Microsoft, aby skompilować listę 10 najczęstszych problemów, skupimy się na tych problemach i sposobie korzystania z narzędzi, które musimy wykorzenić w następnej kolejności.
 
-Jeśli nie zainstalowano ich wszystkich gotowych, poniższa macierz korzysta z kilku narzędzi. Tam, gdzie to możliwe. Linki są dostarczane do punktów instalacji. Lista zawiera typowe narzędzia do śledzenia sieci, takie jak [Netmon](https://www.microsoft.com/download/details.aspx?id=4865) i [Wireshark](https://www.wireshark.org/), ale używasz dowolnego narzędzia do śledzenia, z którymi masz doświadczenie i w którym jesteś przyzwyczajony do filtrowania ruchu sieciowego. Podczas testowania pamiętaj:
+Jeśli jeszcze ich nie zainstalowano, poniższa macierz korzysta z kilku narzędzi tam, gdzie jest to możliwe. Linki są dostarczane do punktów instalacji. Lista zawiera typowe narzędzia do śledzenia sieci, takie jak [Netmon](https://www.microsoft.com/download/details.aspx?id=4865) i [Wireshark](https://www.wireshark.org/), ale używasz dowolnego narzędzia do śledzenia, z którymi możesz się dobrze korzystać i w którym jesteś przyzwyczajony do filtrowania ruchu sieciowego. Podczas testowania pamiętaj:
 
 - *Zamknij przeglądarki i przetestuj tylko jedną uruchomioną przeglądarkę*  — spowoduje to zmniejszenie ogólnego ruchu przechwytywania. To sprawia, że jest mniej zajęty ślad.
 - *Opróżnij pamięć podręczną rozpoznawania nazw DNS na komputerze klienckim*  — zapewni to czystą listwę po rozpoczęciu przechwytywania w celu czyszczenia śledzenia.
@@ -220,7 +220,7 @@ Wyszukaj ruch SYN — SYN/ACK w śledzeniu sieci.  W narzędziu Netmon użyj fil
 
 ![Filtruj w programie Netmon lub Wireshark pod kątem pakietów syn dla obu narzędzi: TCP. Flags.Syn == 1.](../media/4b9a12a1-c915-43c8-ac2f-a679d0435a29.PNG)
 
-Zwróć uwagę, że dla każdego synu istnieje numer portu źródłowego (SrcPort) dopasowany do portu docelowego (DstPort) powiązanego potwierdzenia (SYN/ACK).
+Zwróć uwagę, że dla każdego syn jest numer portu źródłowego (SrcPort) dopasowany do portu docelowego (DstPort) powiązanego potwierdzenia (SYN/ACK).
 
 Aby wyświetlić Windows wartość skalowania używaną przez połączenie sieciowe, rozwiń najpierw węzeł SYN, a następnie powiązaną aplikację SYN/ACK.
 
@@ -230,7 +230,7 @@ Aby wyświetlić Windows wartość skalowania używaną przez połączenie sieci
 
 W przeszłości większość sieci obwodowych jest konfigurowana pod kątem połączeń przejściowych, co oznacza, że bezczynne połączenia są zazwyczaj przerywane. Bezczynne sesje TCP mogą być przerywane przez serwery proxy i zapory w czasie większym niż 100–300 sekund. Jest to problematyczne dla Outlook Online, ponieważ tworzy i używa połączeń długoterminowych, niezależnie od tego, czy są bezczynne, czy nie.
 
-Gdy połączenia są przerywane przez serwer proxy lub urządzenia zapory, klient nie jest informowany, a próba użycia Outlook Online oznacza, że komputer kliencki będzie wielokrotnie podejmował próbę ożywienia połączenia przed utworzeniem nowego. Podczas ładowania strony mogą wystąpić zawieszenia w produkcie, monity lub niska wydajność.
+Gdy połączenia są przerywane przez serwer proxy lub urządzenia zapory, klient nie jest informowany, a próba użycia Outlook Online będzie oznaczać, że komputer kliencki będzie wielokrotnie próbował ponownie ożywić połączenie przed utworzeniem nowego. Podczas ładowania strony mogą wystąpić zawieszenia w produkcie, monity lub niska wydajność.
 
 #### <a name="tools"></a>Narzędzia
 
@@ -246,7 +246,7 @@ Na przykład filtr w narzędziu Netmon może wyglądać następująco:  `.Protoc
 > [!TIP]
 > Nie wiesz, czy adres IP w śledzeniu należy do serwera DNS? Spróbuj wyszukać go w wierszu polecenia. Kliknij **przycisk Uruchom uruchom** \> \> **i wpisz** **cmd** lub naciśnij **klawisz Windows** \> i wpisz **cmd**. W wierszu polecenia wpisz  `nslookup <the IP address from the network trace>`. Aby przetestować, użyj polecenia nslookup względem adresu IP komputera. > Aby wyświetlić listę zakresów adresów IP firmy Microsoft, zobacz [Office 365 adresy URL i zakresy adresów IP](./urls-and-ip-address-ranges.md).
 
-Jeśli wystąpi problem, spodziewaj się, że w tym przypadku (Outlook Online) pojawią się długie przesunięcia czasu, szczególnie w pakietach TLS:TLS, które pokazują fragment danych aplikacji (na przykład w usłudze Netmon można znaleźć pakiety danych aplikacji za pośrednictwem `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"`usługi ). Powinien zostać wyświetlony płynny postęp w czasie całej sesji. Jeśli podczas odświeżania Outlook Online występują duże opóźnienia, może to być spowodowane wysokim stopniem wysyłania resetowania.
+Jeśli wystąpił problem, spodziewaj się, że w tym przypadku pojawią się długie przesunięcia czasu (Outlook Online), szczególnie w pakietach TLS:TLS, które pokazują fragment danych aplikacji (na przykład w usłudze Netmon można znaleźć pakiety danych aplikacji za pośrednictwem `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"`usługi ). Powinien zostać wyświetlony płynny postęp w czasie całej sesji. Jeśli podczas odświeżania Outlook Online występują duże opóźnienia, może to być spowodowane wysokim stopniem wysyłania resetowania.
 
 ### <a name="latencyround-trip-time"></a>Opóźnienie/czas rundy podróży
 
@@ -265,7 +265,7 @@ Musisz zmierzyć szybkość połączenia lub przepustowość połączenia usług
 
 #### <a name="what-to-look-for"></a>Czego szukać
 
-Aby śledzić opóźnienie w śledzeniu, możesz zarejestrować adres IP komputera klienckiego i adres IP serwera DNS w Office 365. Jest to przeznaczone do łatwiejszego filtrowania śledzenia. Jeśli nawiążesz połączenie za pośrednictwem serwera proxy, będziesz potrzebować adresu IP komputera klienckiego, adresu IP serwera proxy/ruchu wychodzącego oraz Office 365 adresu IP DNS, aby ułatwić pracę.
+Aby śledzić opóźnienie w śledzeniu, możesz zarejestrować adres IP komputera klienckiego i adres IP serwera DNS w Office 365. Jest to łatwiejsze filtrowanie śledzenia. Jeśli nawiążesz połączenie za pośrednictwem serwera proxy, będziesz potrzebować adresu IP komputera klienckiego, adresu IP serwera proxy/ruchu wychodzącego oraz Office 365 adresu IP DNS, aby ułatwić pracę.
 
 Żądanie ping wysłane do outlook.office365.com poinformuje o nazwie centrum danych odbierającego żądanie, nawet jeśli polecenie ping  *może*  nie być w stanie nawiązać połączenia w celu wysłania kolejnych pakietów ICMP znaku towarowego. Jeśli używasz narzędzia PsPing (bezpłatne narzędzie do pobrania) i określonego portu (443) i być może do korzystania z protokołu IPv4 (-4), otrzymasz średni czas podróży w obie strony dla wysłanych pakietów. Będzie to działać w przypadku innych adresów URL w usługach Office 365, takich jak `psping -4 yourSite.sharepoint.com:443`. W rzeczywistości możesz określić liczbę poleceń ping, aby uzyskać większą próbkę dla średniej, spróbuj użyć czegoś takiego jak `psping -4 -n 20 yourSite-my.sharepoint.com:443`.
 
@@ -458,7 +458,7 @@ Znajdź połączenie w śladzie, który Cię interesuje, skanując ślad, filtru
 
 ### <a name="dns-geolocation"></a>Geolokalizacja DNS
 
-Gdzie na świecie Office 365 próbuje rozpoznać efekty wywołania DNS, szybkość połączenia.
+Gdzie na świecie Office 365 próbuje rozwiązać wywołanie DNS wpływa na szybkość połączenia.
 
 W usłudze Outlook Online po zakończeniu pierwszego wyszukiwania DNS lokalizacja tego systemu DNS zostanie użyta do nawiązania połączenia z najbliższym centrum danych. Nastąpi połączenie z serwerem CAS usługi Outlook Online, który będzie używać sieci szkieletowej do nawiązywania połączenia z centrum danych (dC), w którym przechowywane są dane. Jest to szybsze.
 

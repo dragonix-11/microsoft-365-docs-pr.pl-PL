@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Ten artykuł zawiera informacje o ochronie uprzywilejowanego dostępu do dzierżawy Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34e4665067640ec625501b15c12c1c2e80d5ffb4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9719908fcbe8aa453ac07788ee7771a39242d4e
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095603"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622566"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Krok nr 2. Ochrona kont uprzywilejowanych Microsoft 365
 
@@ -49,16 +49,16 @@ Firma Microsoft oferuje możliwości ochrony organizacji, ale są one skuteczne 
 
 ## <a name="1-create-dedicated-privileged-cloud-based-user-accounts-and-use-them-only-when-necessary"></a>1. Tworzenie dedykowanych, uprzywilejowanych kont użytkowników opartych na chmurze i używanie ich tylko w razie potrzeby
 
-Zamiast korzystać z codziennych kont użytkowników, do których przypisano role administratora, utwórz dedykowane konta użytkowników, które mają role administratora w usłudze Azure AD. 
+Zamiast korzystać z codziennych kont użytkowników, do których przypisano role administratora, utwórz dedykowane konta użytkowników, które mają role administratora w Azure AD. 
 
 Od tego momentu logujesz się przy użyciu dedykowanych kont uprzywilejowanych tylko w przypadku zadań wymagających uprawnień administratora. Wszystkie inne Microsoft 365 administracji muszą być wykonywane przez przypisanie innych ról administracyjnych do kont użytkowników.
   
 > [!NOTE]
 > Wymaga to dodatkowych kroków, aby wylogować się jako codzienne konto użytkownika i zalogować się przy użyciu dedykowanego konta administratora. Należy to jednak robić sporadycznie tylko w przypadku operacji administratora. Należy wziąć pod uwagę, że odzyskanie subskrypcji Microsoft 365 po naruszeniu konta administratora wymaga o wiele więcej kroków.
 
-Należy również utworzyć [konta dostępu awaryjnego](/azure/active-directory/roles/security-emergency-access) , aby zapobiec przypadkowemu zablokowaniu usługi Azure AD.
+Należy również utworzyć [konta dostępu awaryjnego](/azure/active-directory/roles/security-emergency-access), aby zapobiec przypadkowemu zablokowaniu Azure AD.
 
-Możesz dodatkowo chronić uprzywilejowane konta przy użyciu usługi Azure AD Privileged Identity Management (PIM) na potrzeby przypisywania ról administratora na żądanie w ramach just in time. 
+Możesz dodatkowo chronić uprzywilejowane konta przy użyciu Azure AD Privileged Identity Management (PIM) na potrzeby przypisywania ról administratora na żądanie w ramach just in time. 
  
 ## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. Konfigurowanie uwierzytelniania wieloskładnikowego dla dedykowanych kont Microsoft 365 uprzywilejowanych
 
@@ -80,7 +80,7 @@ Jeśli jesteś małą firmą korzystającą z kont użytkowników przechowywanyc
     
 Jeśli jesteś większą organizacją korzystającą z Microsoft 365 modelu tożsamości hybrydowej, masz więcej opcji weryfikacji. Jeśli masz już infrastrukturę zabezpieczeń dla silniejszej metody uwierzytelniania pomocniczego, [skonfiguruj](../admin/security-and-compliance/set-up-multi-factor-authentication.md) uwierzytelnianie wieloskładnikowe i skonfiguruj każde dedykowane konto uprzywilejowane dla odpowiedniej metody weryfikacji.
   
-Jeśli infrastruktura zabezpieczeń dla żądanej silniejszej metody weryfikacji nie jest w miejscu i działa dla Microsoft 365 uwierzytelniania wieloskładnikowego, zdecydowanie zalecamy skonfigurowanie dedykowanych uprzywilejowanych kont przy użyciu uwierzytelniania wieloskładnikowego przy użyciu aplikacji Microsoft Authenticator, połączenia telefonicznego lub kodu weryfikacyjnego wiadomości SMS wysłanego do telefonu inteligentnego dla uprzywilejowanych kont jako tymczasowego środka bezpieczeństwa. Nie pozostawiaj dedykowanych kont uprzywilejowanych bez dodatkowej ochrony zapewnianej przez usługę MFA.
+Jeśli infrastruktura zabezpieczeń dla żądanej silniejszej metody weryfikacji nie jest w miejscu i działa dla Microsoft 365 uwierzytelniania wieloskładnikowego, zdecydowanie zalecamy skonfigurowanie dedykowanych kont uprzywilejowanych przy użyciu uwierzytelniania wieloskładnikowego przy użyciu aplikacji Microsoft Authenticator, połączenia telefonicznego lub kodu weryfikacyjnego wiadomości SMS wysłanego do telefonu inteligentnego dla uprzywilejowanych kont jako tymczasowego środka bezpieczeństwa. Nie pozostawiaj dedykowanych kont uprzywilejowanych bez dodatkowej ochrony zapewnianej przez usługę MFA.
   
 Aby uzyskać więcej informacji, zobacz [Uwierzytelnianie wieloskładnikowe dla Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
@@ -101,13 +101,13 @@ Aby zapewnić, że wykonywanie zadań o wysokim poziomie uprawnień jest możliw
   
 Aby uzyskać instrukcje dotyczące konfigurowania stacji roboczej z dostępem typu PAW, zobacz [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices).
 
-Aby włączyć usługę Azure PIM dla kont dzierżawy i administratora usługi Azure AD, zobacz [kroki konfigurowania usługi PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
+Aby włączyć usługę Azure PIM dla kont dzierżawy i administratora Azure AD, zobacz [kroki konfigurowania usługi PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
 
-Aby opracować kompleksowy plan zabezpieczania uprzywilejowanego dostępu przed cyberagresjami, zobacz [Zabezpieczanie uprzywilejowanego dostępu do wdrożeń hybrydowych i w chmurze w usłudze Azure AD](/azure/active-directory/admin-roles-best-practices).
+Aby opracować kompleksowy plan zabezpieczania uprzywilejowanego dostępu przed cyberagresjami, zobacz [Zabezpieczanie uprzywilejowanego dostępu do wdrożeń hybrydowych i w chmurze w Azure AD](/azure/active-directory/admin-roles-best-practices).
 
-### <a name="azure-ad-privileged-identity-management"></a>Privileged Identity Management usługi Azure AD
+### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-Zamiast stałego przypisywania kont uprzywilejowanych do roli administratora, możesz użyć usługi Azure AD PIM, aby w razie potrzeby włączyć przypisanie roli administratora na żądanie i just in time.
+Zamiast stałego przypisywania kont uprzywilejowanych do roli administratora, możesz użyć Azure AD PIM, aby w razie potrzeby włączyć przypisanie roli administratora na żądanie i just in time.
   
 Konta administratorów przechodzą od stałych administratorów do uprawnionych administratorów. Rola administratora jest nieaktywna, dopóki ktoś jej nie potrzebuje. Następnie ukończysz proces aktywacji, aby dodać rolę administratora do konta uprzywilejowanego przez wstępnie określony czas. Gdy czas wygaśnie, usługa PIM usunie rolę administratora z konta uprzywilejowanego.
   
@@ -117,8 +117,8 @@ Usługa PIM jest dostępna w Azure Active Directory — wersja Premium P2, któr
   
 Więcej informacji można znaleźć w następujących artykułach:
 
-- [Privileged Identity Management usługi Azure AD](/azure/active-directory/active-directory-privileged-identity-management-configure).
-- [Zabezpieczanie uprzywilejowanego dostępu do wdrożeń hybrydowych i w chmurze w usłudze Azure AD](/azure/active-directory/roles/security-planning)
+- [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
+- [Zabezpieczanie uprzywilejowanego dostępu dla wdrożeń hybrydowych i w chmurze w Azure AD](/azure/active-directory/roles/security-planning)
   
 
 ### <a name="privileged-access-management"></a>Privileged Access Management
@@ -139,7 +139,7 @@ Aby uzyskać więcej informacji, zobacz [Privileged access management (Zarządza
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Oprogramowanie do zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM) do rejestrowania Microsoft 365
 
-Oprogramowanie SIEM uruchamiane na serwerze wykonuje w czasie rzeczywistym analizę alertów zabezpieczeń i zdarzeń utworzonych przez aplikacje i sprzęt sieciowy. Aby umożliwić serwerowi SIEM uwzględnianie Microsoft 365 alertów zabezpieczeń i zdarzeń w funkcjach analizy i raportowania, zintegruj usługę Azure AD z aplikacją SEIM. Zobacz [Wprowadzenie do Azure Log Integration](/azure/security/security-azure-log-integration-overview).
+Oprogramowanie SIEM uruchamiane na serwerze wykonuje w czasie rzeczywistym analizę alertów zabezpieczeń i zdarzeń utworzonych przez aplikacje i sprzęt sieciowy. Aby umożliwić serwerowi SIEM dołączanie Microsoft 365 alertów zabezpieczeń i zdarzeń do funkcji analizy i raportowania, zintegruj Azure AD z systemem SEIM. Zobacz [Wprowadzenie do Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Następny krok
 

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie witryny komunikacji SharePoint
+title: Tworzenie witryny komunikacji SharePoint w Teams dla Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,15 +23,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Dowiedz się, dlaczego i jak utworzyć witrynę komunikacji SharePoint dla swojej kampanii lub firmy z Microsoft 365 oraz jak chronić zespół przed cyberatakami i najazdami przed złośliwym oprogramowaniem i innymi zagrożeniami spowodowanymi niewłaściwym udostępnianiem plików.
-ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Dowiedz się, dlaczego i jak utworzyć witrynę komunikacji SharePoint dla swojej kampanii lub firmy z Microsoft 365 Business Premium oraz jak chronić zespół przed cyberatakami i najazdami przed złośliwym oprogramowaniem i innymi zagrożeniami spowodowanymi niewłaściwym udostępnianiem plików.
+ms.openlocfilehash: 4c8fa8a197a7fb6014833dc9701aa7f354c2e5a0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319533"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623424"
 ---
-# <a name="create-a-communications-site-in-sharepoint"></a>Tworzenie witryny komunikacji w SharePoint
+# <a name="create-a-communications-site"></a>Tworzenie witryny komunikacji
 
 Doskonałym sposobem komunikowania priorytetów, udostępniania dokumentów strategicznych i wyróżniania nadchodzących wydarzeń jest użycie witryny komunikacji w SharePoint i o to właśnie chodzi w tej misji. Witryny komunikacyjne są przeznaczone do udostępniania rzeczy szeroko w całej firmie lub kampanii &mdash; to twoja wewnętrzna witryna strategiczna i sala taktyczna. 
 
