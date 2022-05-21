@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie spf w celu zapobiegania fałszerszem
+title: Konfigurowanie platformy SPF w celu zapobiegania spoofingowi
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,25 +16,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak zaktualizować rekord usługi nazw domen (DNS) w celu używania struktury zasad dotyczących nadawców (SPF) z domeną niestandardową w usłudze Office 365.
+description: Dowiedz się, jak zaktualizować rekord usługi nazw domen (DNS) w celu używania struktury zasad nadawcy (SPF) z domeną niestandardową w Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a25efbce5b9f8141575a88baa3fdd85b099dfbd6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d29175c471e076b1f69e1edb6da3c005d3857f8f
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682972"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65626046"
 ---
-# <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurowanie spf w celu zapobiegania fałszerszem
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurowanie platformy SPF w celu zapobiegania spoofingowi
 
 - [Wymagania wstępne](#prerequisites)
 - [Tworzenie lub aktualizowanie rekordu SPF TXT](#create-or-update-your-spf-txt-record)
 - [Jak obsługiwać poddomeny?](#how-to-handle-subdomains)
-- [Rozwiązywanie problemów z SPF](#troubleshooting-spf)
+- [Rozwiązywanie problemów z platformą SPF](#troubleshooting-spf)
 
 <!--
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -42,115 +42,115 @@ ms.locfileid: "63682972"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 -->
 
-W tym artykule opisano, jak zaktualizować rekord usługi nazw domen (DNS) w celu użycia uwierzytelniania poczty e-mail SPF (Sender Policy Framework) z domeną niestandardową w usłudze Office 365.
+W tym artykule opisano sposób aktualizowania rekordu usługi nazw domen (DNS), aby można było używać uwierzytelniania poczty e-mail programu Sender Policy Framework (SPF) z domeną niestandardową w Office 365.
 
-Spf ułatwia *weryfikację* wychodzących wiadomości e-mail wysłanych z domeny niestandardowej (jest ona pochodzących od osób, do których jest wysyłana wiadomość). Jest to pierwszy krok w konfigurowaniu pełnych zalecanych metod uwierzytelniania poczty e-mail metod SPF, [DKIM](use-dkim-to-validate-outbound-email.md) i [DMARC](use-dmarc-to-validate-email.md).
+SPF pomaga *zweryfikować wychodzące wiadomości e-mail* wysyłane z domeny niestandardowej (pochodzi od tego, kto to mówi). Jest to pierwszy krok w konfigurowaniu pełnych zalecanych metod uwierzytelniania poczty e-mail usług SPF, [DKIM](use-dkim-to-validate-outbound-email.md) i [DMARC](use-dmarc-to-validate-email.md).
 
 - [Wymagania wstępne](#prerequisites)
 - [Tworzenie lub aktualizowanie rekordu SPF TXT](#create-or-update-your-spf-txt-record)
   - [Jak obsługiwać poddomeny?](#how-to-handle-subdomains)
-- [Do czego w rzeczywistości działa uwierzytelnianie za pomocą poczty e-mail SPF?](#what-does-spf-email-authentication-actually-do)
-  - [Rozwiązywanie problemów z SPF](#troubleshooting-spf)
-- [Więcej informacji na temat SPF](#more-information-about-spf)
+- [Co faktycznie robi uwierzytelnianie poczty e-mail SPF?](#what-does-spf-email-authentication-actually-do)
+  - [Rozwiązywanie problemów z platformą SPF](#troubleshooting-spf)
+- [Więcej informacji o platformie SPF](#more-information-about-spf)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 > [!IMPORTANT]
-> Jeśli jesteś **małą firmą lub** nie wiesz, jak to zrobić, zadzwoń do rejestratora domen internetowych (np. Firma GoDaddy, Bluehost, web.com) & o pomoc w konfiguracji *DNS SPF* (i dowolnej innej metody uwierzytelniania poczty e-mail). <p> **Jeśli nie używasz** niestandardowego adresu URL (a adres URL używany dla domeny Office 365 kończy się na **onmicrosoft.com**), SPF został już dla Ciebie ustawiony w usłudze Office 365.
+> Jeśli jesteś **małą firmą** lub nie znasz adresów IP lub konfiguracji DNS, zadzwoń do rejestratora domen internetowych (np. GoDaddy, Bluehost, web.com) & poprosić o pomoc w *konfiguracji DNS SPF* (i innej metody uwierzytelniania poczty e-mail). <p> **Jeśli nie używasz niestandardowego adresu URL** (a adres URL używany do Office 365 kończy się **onmicrosoft.com**), SPF został już skonfigurowany w usłudze Office 365.
 
-Zaczynamy.
+Zatem do dzieła.
 
-Rekord TXT SPF dla Office 365 zostanie wykonany w zewnętrznym systemie DNS dla dowolnych domen niestandardowych lub poddomen. Do nagrania potrzebne są pewne informacje. Zbierz te informacje:
+Rekord SPF TXT dla Office 365 zostanie wprowadzony w zewnętrznym systemie DNS dla dowolnych domen niestandardowych lub domen podrzędnych. Potrzebujesz pewnych informacji, aby utworzyć rekord. Zbierz następujące informacje:
 
-- Rekord TXT SPF domeny niestandardowej (jeśli istnieje). Aby uzyskać instrukcje, [zobacz Zbieranie informacji potrzebnych do utworzenia Office 365 DNS](../../admin/get-help-with-domains/information-for-dns-records.md).
+- Rekord SPF TXT dla domeny niestandardowej, jeśli istnieje. Aby uzyskać instrukcje, zobacz [Zbieranie informacji potrzebnych do utworzenia Office 365 rekordów DNS](../../admin/get-help-with-domains/information-for-dns-records.md).
 
-- Przejdź do swoich serwerów wiadomości i sprawdź zewnętrzne adresy IP (wymagane na wszystkich lokalnych serwerach obsługi wiadomości). Na przykład **131.107.2.200**.
+- Przejdź do serwerów obsługi komunikatów i znajdź zewnętrzne adresy IP (potrzebne ze wszystkich lokalnych serwerów obsługi komunikatów). Na przykład **131.107.2.200**.
 
-- Nazwy domen do użycia dla wszystkich domen innych firm, które należy uwzględnić w rekordzie TXT SPF. Niektórzy dostawcy poczty masowej skon skonfigurować poddomeny do używania dla swoich klientów. Na przykład w firmie MailChimp **servers.mcsv.net.**
+- Nazwy domen do użycia dla wszystkich domen innych firm, które należy uwzględnić w rekordzie SPF TXT. Niektórzy dostawcy poczty zbiorczej skonfigurowali poddomeny do użycia dla swoich klientów. Na przykład firma MailChimp skonfigurowała **servers.mcsv.net**.
 
-- Ustalić, której reguły wymuszania chcesz użyć dla rekordu TXT SPF. Zalecana **jest reguła -all** . Aby uzyskać szczegółowe informacje na temat innych opcji składni, zobacz [Składnia rekordu SPF TXT dla Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365).
+- Dowiedz się, jakiej reguły wymuszania chcesz użyć dla rekordu SPF TXT. Zalecana jest reguła **-all** . Aby uzyskać szczegółowe informacje o innych opcjach składni, zobacz [Składnia rekordu SPF TXT dla Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365).
 
 > [!IMPORTANT]
-> Aby używać domeny niestandardowej, usługa Office 365 wymaga dodania rekordu TXT SPF (Sender Policy Framework) do rekordu DNS w celu zapobiegania fałszowania.
+> Aby można było użyć domeny niestandardowej, Office 365 wymaga dodania rekordu TXT struktury zasad nadawcy (SPF) do rekordu DNS, aby zapobiec fałszowaniu.
 
 ## <a name="create-or-update-your-spf-txt-record"></a>Tworzenie lub aktualizowanie rekordu SPF TXT
 
-1. Upewnij się, że znasz składnię spf w poniższej tabeli.
+1. Upewnij się, że znasz składnię SPF w poniższej tabeli.
 
-    |Element|Jeśli używasz...|Czy jest to popularne dla klientów?|Dodaj to...|
+    |Element|Jeśli używasz...|Typowe dla klientów?|Dodaj to...|
     |---|---|---|---|
-    |1|Dowolny system poczty e-mail (wymagany)|Wspólne. Wszystkie rekordy TXT SPF zaczynają się od tej wartości|`v=spf1`|
-    |2|Exchange Online|Typowe|`include:spf.protection.outlook.com`|
-    |3|Exchange Online dedykowane|Nie typowe|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
-    |4|Office 365 Germany, tylko Microsoft Cloud Germany|Nie typowe|`include:spf.protection.outlook.de`|
-    |5|System poczty e-mail innej firmy|Nie typowe|`include:<domain_name>` <p> \<domain_name\> jest domeną systemu poczty e-mail innej firmy.|
-    |6|Lokalnego systemu poczty e-mail. Na przykład Exchange Online Protection i inny system poczty e-mail|Nie typowe|Użyj jednego z tych dla każdego dodatkowego systemu poczty: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> są \<domain_name\> adresem IP i domeną innego systemu poczty e-mail, który wysyła pocztę w imieniu Twojej domeny.|
-    |7|Dowolny system poczty e-mail (wymagany)|Wspólne. Wszystkie rekordy TXT SPF kończą się tą wartością|`<enforcement rule>` <p> Może to być jedna z kilku wartości. Zalecamy korzystanie z tej wartości `-all`.|
+    |1|Dowolny system poczty e-mail (wymagany)|Wspólne. Wszystkie rekordy SPF TXT zaczynają się od tej wartości|`v=spf1`|
+    |2|Exchange Online|Wspólne|`include:spf.protection.outlook.com`|
+    |3|Exchange Online tylko dedykowane|Nie jest to typowe|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
+    |4|Office 365 Niemczech, tylko Microsoft Cloud Germany|Nie jest to typowe|`include:spf.protection.outlook.de`|
+    |5|System poczty e-mail innej firmy|Nie jest to typowe|`include:<domain_name>` <p> \<domain_name\> jest domeną systemu poczty e-mail innej firmy.|
+    |6|Lokalny system poczty e-mail. Na przykład Exchange Online Protection plus inny system poczty e-mail|Nie jest to typowe|Użyj jednego z nich dla każdego dodatkowego systemu poczty: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> i \<domain_name\> to adres IP i domena innego systemu poczty e-mail, który wysyła pocztę w imieniu twojej domeny.|
+    |7|Dowolny system poczty e-mail (wymagany)|Wspólne. Wszystkie rekordy SPF TXT kończą się tą wartością|`<enforcement rule>` <p> Może to być jedna z kilku wartości. Zalecamy wartość `-all`.|
 
-2. Jeśli jeszcze tego nie zrobiono, stworzymy rekord TXT SPF, używając składni z tabeli.
+2. Jeśli jeszcze tego nie zrobiono, należy utworzyć rekord SPF TXT przy użyciu składni z tabeli.
 
-   Jeśli na przykład hostowane są wyłącznie Office 365, to oznacza to, że nie masz żadnych lokalnych serwerów poczty, Twój rekord SPF TXT będzie zawierać wiersze 1, 2 i 7 i będzie wyglądał tak:
+   Jeśli na przykład jesteś hostowany w całości w Office 365, oznacza to, że nie masz lokalnych serwerów poczty, rekord SPF TXT będzie zawierać wiersze 1, 2 i 7 i będzie wyglądać następująco:
 
    ```text
    v=spf1 include:spf.protection.outlook.com -all
    ```
 
-   **W powyższym przykładzie jest najczęściej spotykany rekord TXT SPF**. Ten rekord działa tylko dla prawie każdego, niezależnie od tego, czy Twoje centrum danych firmy Microsoft znajduje się w Stanach Zjednoczonych, w Europie (w tym w Niemczech) czy w innej lokalizacji.
+   **Powyższy przykład jest najczęstszym rekordem SPF TXT**. Ten rekord działa dla prawie wszystkich, niezależnie od tego, czy centrum danych firmy Microsoft znajduje się w Stany Zjednoczone, czy w Europie (w tym w Niemczech), czy w innej lokalizacji.
 
-   Jeśli jednak zakupiono usługę Office 365 Germany w ramach usługi Microsoft Cloud Germany, zamiast wiersza 2 należy użyć oświadczenia z wiersza 4. Jeśli na przykład hostowane jest całkowicie w Office 365 Germany, to oznacza to, że nie masz lokalnych serwerów poczty, Twój rekord SPF TXT będzie zawierać wiersze 1, 4 i 7 i będzie wyglądał tak:
+   Jeśli jednak zakupiono Office 365 Niemczech, część usługi Microsoft Cloud Germany, należy użyć instrukcji include z wiersza 4 zamiast wiersza 2. Jeśli na przykład jesteś hostowany w całości w Office 365 Niemczech, oznacza to, że nie masz lokalnych serwerów poczty, rekord SPF TXT będzie zawierać wiersze 1, 4 i 7 i będzie wyglądać następująco:
 
    ```text
    v=spf1 include:spf.protection.outlook.de -all
    ```
 
-   Jeśli twoja konfiguracja rekordów SPF TXT dla domeny niestandardowej została już wdrożona w programie Office 365 i jest migrowana do usługi Office 365 Germany, musisz zaktualizować rekord TXT SPF. Aby to zrobić, zmień na `include:spf.protection.outlook.com` `include:spf.protection.outlook.de`.
+   Jeśli masz już wdrożone Office 365 i skonfigurowano rekordy SPF TXT dla domeny niestandardowej i przeprowadzasz migrację do Office 365 Niemczech, musisz zaktualizować rekord SPF TXT. Aby to zrobić, zmień wartość `include:spf.protection.outlook.com` na `include:spf.protection.outlook.de`.
 
-3. Po formularzu rekordu TXT SPF musisz zaktualizować rekord w systemie DNS. **Możesz mieć tylko jeden rekord TXT SPF dla domeny.** Jeśli rekord TXT SPF istnieje, zamiast dodawać nowy rekord, musisz zaktualizować istniejący rekord. Przejdź do [strony Tworzenie rekordów DNS dla Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md), a następnie wybierz link do hosta DNS.
+3. Po utworzeniu rekordu SPF TXT należy zaktualizować rekord w systemie DNS. **Możesz mieć tylko jeden rekord TXT SPF dla domeny.** Jeśli istnieje rekord SPF TXT, zamiast dodawać nowy rekord, musisz zaktualizować istniejący rekord. Przejdź do pozycji [Tworzenie rekordów DNS dla Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md), a następnie wybierz link dla hosta DNS.
 
-4. Przetestuj rekord TXT SPF.
+4. Przetestuj rekord SPF TXT.
 
 ## <a name="how-to-handle-subdomains"></a>Jak obsługiwać poddomeny?
 
-Należy pamiętać, że musisz utworzyć osobny rekord dla każdej poddomeny, ponieważ poddomeny nie dziedziczą rekordu SPF ich domeny najwyższego *poziomu*.
+Należy pamiętać, że *należy utworzyć oddzielny rekord dla każdej poddomeny, ponieważ poddomeny nie dziedziczą rekordu SPF domeny najwyższego poziomu*.
 
-Dla każdej domeny i poddomeny jest`*.` wymagany rekord SPF z symbolami wieloznaczny, aby zapobiec wysyłaniu przez atakujących wiadomości e-mail poddomen, które poddomeny nie istnieją. Przykład:
+Rekord SPF z symbolami wieloznacznymi (`*.`) jest wymagany dla każdej domeny i poddomeny, aby zapobiec wysyłaniu wiadomości e-mail przez osoby atakujące z nieistniejącymi domenami podrzędnymi. Przykład:
 
 ```text
 *.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
-## <a name="troubleshooting-spf"></a>Rozwiązywanie problemów z SPF
+## <a name="troubleshooting-spf"></a>Rozwiązywanie problemów z platformą SPF
 
-Masz problemy z rekordem TXT SPF? Przeczytaj [rozwiązywanie problemów: Najlepsze rozwiązania dotyczące SPF w programie Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+Masz problemy z rekordem SPF TXT? [Rozwiązywanie problemów z odczytem: najlepsze rozwiązania dotyczące SPF w Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
-## <a name="what-does-spf-email-authentication-actually-do"></a>Do czego w rzeczywistości działa uwierzytelnianie za pomocą poczty e-mail SPF?
+## <a name="what-does-spf-email-authentication-actually-do"></a>Co faktycznie robi uwierzytelnianie poczty e-mail SPF?
 
-Spf określa, które serwery poczty mogą wysyłać pocztę w Twoim imieniu. Zasadniczo SPF, wraz z DKIM, DMARC i innymi technologiami obsługiwanymi przez Office 365, pomagają zapobiegać fałszersku i wyłudzaniu informacji. Spf jest dodawany jako rekord TXT, który jest używany przez system DNS do identyfikowania serwerów poczty, które mogą wysyłać pocztę w imieniu Twojej domeny niestandardowej. Systemy poczty adresata odwołują się do rekordu TXT SPF w celu określenia, czy wiadomość z Twojej domeny niestandardowej pochodzi od autoryzowanego serwera wiadomości.
+SPF określa, które serwery poczty mogą wysyłać wiadomości e-mail w Twoim imieniu. Zasadniczo SPF, wraz z DKIM, DMARC i innymi technologiami obsługiwanymi przez Office 365, pomagają zapobiegać fałszowaniu i wyłudzaniu informacji. SPF jest dodawany jako rekord TXT używany przez usługę DNS do identyfikowania serwerów poczty, które mogą wysyłać wiadomości e-mail w imieniu domeny niestandardowej. Systemy poczty adresatów odwołują się do rekordu SPF TXT, aby ustalić, czy wiadomość z domeny niestandardowej pochodzi z autoryzowanego serwera obsługi komunikatów.
 
-Załóżmy na przykład, że domena niestandardowa, z contoso.com używana przez Office 365. Dodajesz rekord TXT SPF, który wyświetla Office 365 wiadomości jako wiarygodne serwery poczty dla Twojej domeny. Gdy odbierający serwer wiadomości otrzymuje wiadomość z programu joe@contoso.com, wyszukuje rekord TXT SPF dla serwera contoso.com i sprawdza, czy wiadomość jest prawidłowa. Jeśli serwer odbierający stwierdzi, że wiadomość pochodzi z serwera innego niż serwery wiadomości Office 365 wymienione w rekordzie SPF, odbierający serwer poczty może odrzucić wiadomość jako spam.
+Załóżmy na przykład, że domena niestandardowa contoso.com używa Office 365. Dodajesz rekord SPF TXT, który wyświetla listę serwerów Office 365 komunikatów jako prawidłowe serwery poczty dla twojej domeny. Gdy serwer odbierający komunikaty otrzymuje komunikat z joe@contoso.com, serwer wyszukuje rekord SPF TXT dla contoso.com i sprawdza, czy komunikat jest prawidłowy. Jeśli serwer odbierający dowie się, że wiadomość pochodzi z serwera innego niż serwery Office 365 komunikatów wymienione w rekordzie SPF, serwer poczty odbiorczej może odrzucić wiadomość jako spam.
 
-Ponadto jeśli Twoja domena niestandardowa nie ma rekordu TXT SPF, niektóre serwery odbierające mogą odrzuć tę wiadomość. Jest tak, ponieważ serwer odbierający nie może sprawdzić, czy wiadomość pochodzi z autoryzowanego serwera wiadomości.
+Ponadto jeśli domena niestandardowa nie ma rekordu SPF TXT, niektóre serwery odbierające mogą odrzucić komunikat wprost. Dzieje się tak, ponieważ serwer odbierający nie może sprawdzić, czy komunikat pochodzi z autoryzowanego serwera obsługi komunikatów.
 
-Jeśli masz już ustawioną pocztę dla usługi Office 365, serwery wiadomości firmy Microsoft zostały już uwzględnione w systemie DNS jako rekord TXT SPF. Jednak w niektórych przypadkach może być konieczne zaktualizowanie rekordu TXT SPF w systemie DNS. Przykład:
+Jeśli poczta została już skonfigurowana dla Office 365, serwery obsługi komunikatów firmy Microsoft zostały już uwzględnione w systemie DNS jako rekord SPF TXT. Jednak w niektórych przypadkach może być konieczne zaktualizowanie rekordu SPF TXT w systemie DNS. Przykład:
 
-- Wcześniej trzeba było dodać inny rekord TXT SPF do domeny niestandardowej, jeśli używano usługi SharePoint Online. Nie jest to już wymagane. Ta zmiana powinna zmniejszyć ryzyko, że SharePoint wiadomości z powiadomieniami online kończące się w folderze Wiadomości-śmieci. Zaktualizuj rekord TXT SPF, jeśli jest przekroczony limit 10 odnośników i są odbierane błędy, takie jak "przekroczono limit odnośników" i "zbyt wiele przeskoków".
+- Wcześniej trzeba było dodać inny rekord SPF TXT do domeny niestandardowej, jeśli używasz usługi SharePoint Online. Nie jest to już wymagane. Ta zmiana powinna zmniejszyć ryzyko SharePoint wiadomości powiadomień online znajdujących się w folderze Wiadomości-śmieci. Zaktualizuj rekord TXT SPF, jeśli osiągasz limit 10 odnośników i otrzymujesz błędy, takie jak "przekroczono limit wyszukiwania" i "zbyt wiele przeskoków".
 
-- Jeśli masz środowisko hybrydowe z usługą Office 365 i Exchange lokalnym.
+- Jeśli masz środowisko hybrydowe z Office 365 i Exchange lokalnie.
 
 - Zamierzasz skonfigurować DKIM i DMARC (zalecane).
 
-## <a name="more-information-about-spf"></a>Więcej informacji na temat SPF
+## <a name="more-information-about-spf"></a>Więcej informacji o platformie SPF
 
-Aby uzyskać przykłady zaawansowane, bardziej szczegółową dyskusję na temat obsługiwanej składni SPF, fałszowania, rozwiązywania problemów i sposobu, w jaki program Office 365 obsługuje funkcję SPF, zobacz Jak działa funkcja SPF w celu zapobiegania fałszersce i wyłudzaniu informacji w sieci [Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+Aby uzyskać zaawansowane przykłady, bardziej szczegółową dyskusję na temat obsługiwanej składni SPF, fałszowania, rozwiązywania problemów i sposobu, w jaki Office 365 obsługuje SPF, zobacz [Jak działa SPF, aby zapobiec fałszowaniu i wyłudzaniu informacji w Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
 ## <a name="next-steps-dkim-and-dmarc"></a>Następne kroki: DKIM i DMARC
 
- Spf ma na celu zapobieganie fałszersce, ale istnieją techniki podszywania się, przed które spf nie może się chronić. Aby obronić się przed tymi ustawieniami, po skonfigurowaniu spf musisz skonfigurować ustawienia DKIM i DMARC dla Office 365.
+ SPF ma na celu zapobieganie fałszowaniu, ale istnieją techniki fałszowania, przed których SPF nie może się chronić. Aby się przed tym bronić, po skonfigurowaniu SPF należy skonfigurować DKIM i DMARC dla Office 365.
 
-Celem uwierzytelniania poczty e-mail [**DKIM**](use-dkim-to-validate-outbound-email.md) jest udowodnienie, że zawartość wiadomości nie została naruszona.
+Celem uwierzytelniania poczty e-mail [**DKIM**](use-dkim-to-validate-outbound-email.md) jest udowodnienie, że zawartość wiadomości e-mail nie została naruszona.
 
-[**Celem uwierzytelniania poczty e-mail DMARC**](use-dmarc-to-validate-email.md) jest upewnienie się, że informacje SPF i DKIM są takie, jak adres Od.
+Celem uwierzytelniania poczty e-mail [**DMARC**](use-dmarc-to-validate-email.md) jest upewnienie się, że informacje SPF i DKIM są zgodne z adresem Od.
 
- Aby uzyskać zaawansowane przykłady i bardziej szczegółową dyskusję na temat obsługiwanej składni SPF, zobacz Jak działa funkcja SPF w celu zapobiegania [fałszowania](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks) i wyłudzania informacji w Office 365.
+ Aby uzyskać zaawansowane przykłady i bardziej szczegółową dyskusję na temat obsługiwanej składni SPF, zobacz [Jak działa SPF, aby zapobiec fałszowaniu i wyłudzaniu informacji w Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
 *Wybierz pozycję "Ta strona" w obszarze "Opinia", jeśli masz opinię na temat tej dokumentacji.*

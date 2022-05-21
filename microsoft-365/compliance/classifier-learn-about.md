@@ -19,14 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Klasyfikatory z możliwością trenowania mogą rozpoznawać różne typy zawartości do etykietowania lub aplikacji zasad, dając jej pozytywne i negatywne próbki do obejrzenia.
-ms.openlocfilehash: 7da6c9ef6e26d25bb40cade4832abb7b73a4b095
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a95c74894fd1ab3f9e3f9dd1f398d60afdc597d0
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759882"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65625804"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Dowiedz się więcej o klasyfikatorach z możliwością szkolenia
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Klasyfikowanie i etykietowanie zawartości, aby można było ją odpowiednio chronić i obsługiwać, jest miejscem początkowym dla dziedziny ochrony informacji. Microsoft 365 ma trzy sposoby klasyfikowania zawartości.
 
@@ -43,7 +45,7 @@ Ta kategoria mechanizmów klasyfikacji obejmuje znajdowanie zawartości według:
 - Rozpoznawanie elementu, ponieważ jest to odmiana szablonu [(drukowanie palcem dokumentu).](document-fingerprinting.md)
 - Przy użyciu obecności dokładnych ciągów [dokładne dopasowanie danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Etykiety poufności i przechowywania można następnie automatycznie stosować, aby udostępnić zawartość do użycia w [artykule Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md) i [automatycznych zasadach stosowania etykiet przechowywania](apply-retention-labels-automatically.md).
+Etykiety poufności i przechowywania można następnie automatycznie stosować, aby udostępnić zawartość do użycia w [artykule Dowiedz się więcej o Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md) i [automatycznych zasadach stosowania etykiet przechowywania](apply-retention-labels-automatically.md).
 
 ## <a name="classifiers"></a>Klasyfikatorów
 
@@ -74,27 +76,49 @@ Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
 > [!CAUTION]
 > Wycofywamy wstępnie wytrenowany klasyfikator **języka obraźliwego** , ponieważ generuje on dużą liczbę wyników fałszywie dodatnich. Nie używaj go, a jeśli obecnie go używasz, należy przenieść procesy biznesowe poza ten proces. Zamiast tego zalecamy używanie wstępnie wytrenowanych klasyfikatorów **Threat**, **Profanity** i **Harassment** .
 
+- **Umowy**: Wykrywa zawartość związaną z umowami prawnymi, takimi jak umowy o zachowaniu poufności, oświadczenia o pracy, umowy pożyczki i dzierżawy, umowy o pracę i umowy o zachowaniu konkurencji. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+
 - **Życiorysy**: wykrywa dokumenty, .pdf, rtf, .txt elementy, które są tekstowymi kontami osobistymi, edukacyjnymi, zawodowymi, doświadczeniami służbowymi i innymi danymi identyfikacyjnymi wnioskodawcy
-- **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych w 25 najlepszych używanych językach programowania komputerowego w GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Wykrywa zawartość w plikach .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
+
+- **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych w 25 najlepszych używanych językach programowania komputerowego na GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Wykrywa zawartość w plikach .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
+
+- **Skargi klientów**: klasyfikator skarg klientów wykrywa opinie i skargi dotyczące produktów lub usług organizacji. Ten klasyfikator może pomóc w spełnieniu wymagań regulacyjnych dotyczących wykrywania i klasyfikowania skarg, takich jak wymagania Consumer Financial Protection Bureau i Food and Drug Administration. Wykrywa zawartość w pliku msg, a plik eml to tylko zgodność z komunikacją, .docx, .pdf, .txt, rtf, .jpg, jpeg, .png, .gif, .bmp, pliki svg.
+
+- **Dyskryminacja**: Wykrywa jawny dyskryminujący język i jest wrażliwy na dyskryminujący język wobec społeczności Afroamerykańskich/Czarnych w porównaniu z innymi społecznościami.
+
+- **Finanse**: wykrywa zawartość w kategoriach finansów korporacyjnych, księgowości, gospodarki, bankowości i inwestycji. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+
+- **Molestowanie**: Wykrywa określoną kategorię obraźliwych elementów tekstowych języka związanych z obraźliwym zachowaniem skierowanym do jednej lub wielu osób na podstawie następujących cech: rasa, pochodzenie etniczne, religia, pochodzenie narodowe, płeć, orientacja seksualna, wiek, niepełnosprawność. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
+
+- **Opieka zdrowotna**: Wykrywa zawartość w aspektach administracji medycznej i opieki zdrowotnej, takich jak usługi medyczne, diagnozy, leczenie, roszczenia itp. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+
+- **Kadr**: Wykrywa zawartość w kategoriach związanych z zasobami ludzkimi rekrutacji, rozmowy kwalifikacyjnej, zatrudniania, szkolenia, oceny, ostrzeżenia i zakończenia. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+
+- **Adres IP**: wykrywa zawartość kategorii związanych z własnością intelektualną, takich jak wpisy tajne i podobne informacje poufne. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+
+- **IT**: Wykrywa zawartość w kategoriach technologii informatycznych i cyberbezpieczeństwa, takich jak ustawienia sieci, zabezpieczenia informacji, sprzęt i oprogramowanie. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+
+- **Sprawy prawne**: Wykrywa treści w kategoriach prawnych, takich jak spory sądowe, proces prawny, obowiązek prawny, terminologia prawna, prawo i ustawodawstwo. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+
+- **Zaopatrzenie**: Wykrywa zawartość w kategoriach licytacji, ofert, zakupów i płacenia za dostawę towarów i usług. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+
+- **Wulgaryzmy**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka, które zawierają wyrażenia, które zawstydzają większość ludzi.
+
+- **Życiorysy**: wykrywa dokumenty, .pdf, rtf, .txt elementy, które są tekstowymi kontami osobistymi, edukacyjnymi, zawodowymi, doświadczeniami służbowymi i innymi danymi identyfikacyjnymi wnioskodawcy
+
+- **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych w 25 najlepszych używanych językach programowania komputerowego na GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
 
 > [!NOTE]
 > Kod źródłowy jest wytrenowany do wykrywania, kiedy większość tekstu to kod źródłowy. Nie wykrywa tekstu kodu źródłowego, który jest przeplatany zwykłym tekstem.
 
-- **Umowy**: Wykrywa zawartość związaną z umowami prawnymi, takimi jak umowy o zachowaniu poufności, oświadczenia o pracy, umowy pożyczki i dzierżawy, umowy o pracę i umowy o zachowaniu konkurencji. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
-- **Dyskryminacja**: Wykrywa jawny dyskryminujący język i jest wrażliwy na dyskryminujący język wobec społeczności Afroamerykańskich/Czarnych w porównaniu z innymi społecznościami.
-- **Finanse**: wykrywa zawartość w kategoriach finansów korporacyjnych, księgowości, gospodarki, bankowości i inwestycji. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
-- **Molestowanie**: Wykrywa określoną kategorię obraźliwych elementów tekstowych języka związanych z obraźliwym zachowaniem skierowanym do jednej lub wielu osób na podstawie następujących cech: rasa, pochodzenie etniczne, religia, pochodzenie narodowe, płeć, orientacja seksualna, wiek, niepełnosprawność. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
-- **Opieka zdrowotna**: Wykrywa zawartość w aspektach administracji medycznej i opieki zdrowotnej, takich jak usługi medyczne, diagnozy, leczenie, roszczenia itp. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
-- **Kadr**: Wykrywa zawartość w kategoriach związanych z zasobami ludzkimi rekrutacji, rozmowy kwalifikacyjnej, zatrudniania, szkolenia, oceny, ostrzeżenia i zakończenia. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
-- **Adres IP**: wykrywa zawartość kategorii związanych z własnością intelektualną, takich jak wpisy tajne i podobne informacje poufne. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
-- **IT**: Wykrywa zawartość w kategoriach technologii informatycznych i cyberbezpieczeństwa, takich jak ustawienia sieci, zabezpieczenia informacji, sprzęt i oprogramowanie. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
-- **Sprawy prawne**: Wykrywa treści w kategoriach prawnych, takich jak spory sądowe, proces prawny, obowiązek prawny, terminologia prawna, prawo i ustawodawstwo. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
-- **Zaopatrzenie**: Wykrywa zawartość w kategoriach licytacji, ofert, zakupów i płacenia za dostawę towarów i usług. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+- **Podatek**: Wykrywa zawartość relacji podatkowych, takich jak planowanie podatkowe, formularze podatkowe, zgłoszenia podatkowe, przepisy podatkowe. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
+
+- **Zagrożenie**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka związanych z groźbami popełnienia przemocy lub wyrządzenia fizycznej krzywdy lub szkody osobie lub mienia.
 - **Wulgaryzmy**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka, które zawierają wyrażenia, które zawstydzają większość ludzi. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
 - **Podatek**: Wykrywa zawartość relacji podatkowych, takich jak planowanie podatkowe, formularze podatkowe, zgłoszenia podatkowe, przepisy podatkowe. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 - **Zagrożenie**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka związanych z groźbami popełnienia przemocy lub wyrządzenia fizycznej krzywdy lub szkody osobie lub mienia. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
 
-Są one wyświetlane w widoku **klasyfikatorów** **Centrum zgodności platformy Microsoft 365** >  **DataTrainable** >  ze stanem `Ready to use`.
+Są one wyświetlane w widoku **klasyfikatorów** **portal zgodności Microsoft Purview** >  **DataTrainable** >  ze stanem `Ready to use`.
 
 ![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
