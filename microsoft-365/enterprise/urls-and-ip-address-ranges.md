@@ -3,7 +3,7 @@ title: Adresy URL i zakresy adresów IP usługi Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/28/2022
+ms.date: 05/20/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Podsumowanie: usługa Office 365 wymaga łączności z Internetem. Poniższe punkty końcowe powinny być osiągalne dla klientów korzystających z planów usługi Office 365, w tym dla chmury Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 80e4c14652303d1f04e697f73153b0f013b987cd
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 70f43a78ef0a3cb58c0ac9dc98cd7e03a56fcdff
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217337"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622063"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Adresy URL i zakresy adresów IP usługi Office 365
 
@@ -42,7 +42,7 @@ Usługa Office 365 wymaga łączności z Internetem. Poniższe punkty końcowe p
 |**Ostatnia aktualizacja:** 28.04.2022 – ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Subskrypcja dziennika zmian](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Pobieranie:** lista w [formacie JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) zawierająca wszystkie wymagane i opcjonalne adresy docelowe.|**Użyj:** [plików PAC](managing-office-365-endpoints.md#pacfiles) naszych serwerów proxy|
 |
 
-Zacznij od pozycji [Zarządzanie punktami końcowymi usługi Office 365](managing-office-365-endpoints.md), aby zrozumieć nasze zalecenia dotyczące zarządzania łącznością sieciową przy użyciu tych danych. Dane punktów końcowych są aktualizowane zgodnie z potrzebami na początku każdego miesiąca przy użyciu nowych adresów IP i adresów URL opublikowanych 30 dni przed uaktywnieniem. Dzięki temu klienci, którzy nie mają jeszcze automatycznych aktualizacji, mogą ukończyć swoje procesy zanim będzie wymagana nowa łączność. Punkty końcowe mogą być również aktualizowane w ciągu miesiąca, jeśli jest to konieczne w celu realizacji eskalacji pomocy technicznej, zdarzeń zabezpieczeń lub innych natychmiastowych wymagań operacyjnych. Wszystkie dane wyświetlane na poniższej stronie są generowane na podstawie usług internetowych opartych na protokole REST. Jeśli do uzyskiwania dostępu do tych danych używasz skryptu lub urządzenia sieciowego, przejdź bezpośrednio do pozycji [Usługa sieci Web](microsoft-365-ip-web-service.md).
+Zacznij od pozycji [Zarządzanie punktami końcowymi usługi Office 365](managing-office-365-endpoints.md), aby zrozumieć nasze zalecenia dotyczące zarządzania łącznością sieciową przy użyciu tych danych. Dane punktów końcowych są aktualizowane zgodnie z potrzebami na początku każdego miesiąca przy użyciu nowych adresów IP i adresów URL opublikowanych 30 dni przed uaktywnieniem. Ten cykl umożliwia klientom, którzy nie mają jeszcze automatycznych aktualizacji, ukończenie procesów, zanim będzie wymagana nowa łączność. Punkty końcowe mogą być również aktualizowane w ciągu miesiąca, jeśli jest to konieczne w celu realizacji eskalacji pomocy technicznej, zdarzeń zabezpieczeń lub innych natychmiastowych wymagań operacyjnych. Wszystkie dane wyświetlane na poniższej stronie są generowane na podstawie usług internetowych opartych na protokole REST. Jeśli do uzyskiwania dostępu do tych danych używasz skryptu lub urządzenia sieciowego, przejdź bezpośrednio do pozycji [Usługa sieci Web](microsoft-365-ip-web-service.md).
 
 Poniższe dane punktu końcowego zawierają wymagania dotyczące łączności z komputera użytkownika do usługi Office 365. Aby uzyskać szczegółowe informacje na temat adresów IP używanych na potrzeby połączeń sieciowych z firmy Microsoft do sieci klienta, czasami nazywanych hybrydowymi lub przychodzącymi połączeniami sieciowymi, zobacz [Dodatkowe punkty końcowe](additional-office365-ip-addresses-and-urls.md), aby uzyskać więcej informacji.
 
@@ -52,13 +52,17 @@ Wyświetlane kolumny danych to:
 
 - **ID**: numer identyfikatora wiersza, znany również jako zestaw punktów końcowych. Ten identyfikator jest taki sam jak zwracany przez usługę sieci Web dla zestawu punktów końcowych.
 
-- **Kategoria**: pokazuje, czy zestaw punktów końcowych jest przydzielony do kategorii „Optymalizuj”, „Zezwalaj” lub „Domyślne”. O tych kategoriach i wskazówkach dotyczących zarządzania nimi można przeczytać w temacie [Nowe kategorie punktów końcowych usługi Office 365](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories). Ta kolumna zawiera również listę zestawów punktów końcowych wymaganych do łączności sieciowej. W przypadku zestawów punktów końcowych, które nie muszą mieć łączności sieciowej, w tym polu udostępniamy uwagi wskazujące, jakich funkcji brakowałoby w przypadku zablokowania zestawu punktów końcowych. Jeśli wykluczasz cały obszar usługi, zestawy punktów końcowych wymienione jako wymagane nie wymagają łączności.
+- **Kategoria**: pokazuje, czy zestaw punktów końcowych jest przydzielony do kategorii **Optymalizuj**, **Zezwalaj** lub **Domyślne**. Ta kolumna zawiera również listę zestawów punktów końcowych wymaganych do łączności sieciowej. W przypadku zestawów punktów końcowych, które nie muszą mieć łączności sieciowej, w tym polu udostępniamy uwagi wskazujące, jakich funkcji brakowałoby w przypadku zablokowania zestawu punktów końcowych. Jeśli wykluczasz cały obszar usługi, zestawy punktów końcowych wymienione jako wymagane nie wymagają łączności.
 
-- **ER**: jest to **Tak**, jeśli zestaw punktów końcowych jest obsługiwany przez usługę Azure ExpressRoute z prefiksami tras usługi Office 365. Społeczność BGP zawierająca wyświetlane prefiksy tras jest zgodna z wymienionym obszarem usługi. Gdy wartość ER to **Nie**, oznacza to, że usługa ExpressRoute nie jest obsługiwana dla tego zestawu punktów końcowych. Nie należy jednak zakładać, że żadne trasy nie są anonsowane dla zestawu punktów końcowych, w którym ER ma wartość **Nie**.
+   O tych kategoriach i wskazówkach dotyczących zarządzania nimi można przeczytać w temacie [Nowe kategorie punktów końcowych usługi Office 365](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories).
+
+- **ER**: jest to **Tak**, jeśli zestaw punktów końcowych jest obsługiwany przez usługę Azure ExpressRoute z prefiksami tras usługi Office 365. Społeczność BGP zawierająca wyświetlane prefiksy tras jest zgodna z wymienionym obszarem usługi. Gdy wartość ER to **Nie**, oznacza to, że usługa ExpressRoute nie jest obsługiwana dla tego zestawu punktów końcowych.
+
+   Niektóre trasy mogą być anonsowane w więcej niż jednej społeczności BGP, dzięki czemu punkty końcowe w danym zakresie adresów IP mogą przechodzić przez obwód ER, ale nadal nie są obsługiwane. We wszystkich przypadkach należy przestrzegać wartości kolumny ER danego zestawu punktów końcowych. Aby uzyskać więcej informacji na temat społeczności BGP, zobacz [Używanie społeczności BGP w scenariuszach usługi ExpressRoute w dla usługi Office 365](bgp-communities-in-expressroute.md#key-planning-considerations-to-using-bgp-communities).
 
 - **Adresy**: wyświetla listę nazw FQDN lub nazw domen z symbolami wieloznacznymi i zakresów adresów IP dla zestawu punktów końcowych. Należy pamiętać, że zakres adresów IP jest w formacie CIDR i może zawierać wiele pojedynczych adresów IP w określonej sieci.
 
-- **Porty**: wyświetla listę portów TCP lub UDP połączonych z adresami w celu utworzenia punktu końcowego sieci. Możesz zauważyć pewne duplikowanie zakresów adresów IP, gdzie znajdują się różne porty.
+- **Porty**: wyświetla listę portów TCP lub UDP połączonych z wymienionymi adresami w celu utworzenia punktu końcowego sieci. Możesz zauważyć pewne duplikowanie w zakresach adresów IP, w których znajdują się różne porty.
 
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
