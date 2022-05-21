@@ -14,7 +14,7 @@
           items:
             - name: Wypróbuj usługę Defender dla Office 365
               href: try-microsoft-defender-for-office-365.md
-            - name: Podręcznik wersji próbnej dla usługi Defender dla Office 365
+            - name: "Podręcznik wersji próbnej dla ochrony usługi Office 365 w\_usłudze Defender"
               href: trial-playbook-defender-for-office-365.md
         - name: Co nowego w usłudze Defender dla Office 365
           href: whats-new-in-defender-for-office-365.md
@@ -364,9 +364,9 @@
           items:
             - name: Kwarantanna
               href: quarantine-email-messages.md
-            - name: Zarządzaj wiadomościami i plikami poddanymi kwarantannie jako administrator
+            - name: Kwarantanna administratora
               href: manage-quarantined-messages-and-files.md
-            - name: Znajdowanie i zwalnianie wiadomości poddanych kwarantannie jako użytkownik
+            - name: Kwarantanna użytkownika końcowego
               href: find-and-release-quarantined-messages-as-a-user.md
             - name: Zasady kwarantanny
               href: quarantine-policies.md
