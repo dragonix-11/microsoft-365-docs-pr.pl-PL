@@ -78,7 +78,7 @@
           href: m365bp-onboard-devices-mdb.md
         - name: "Ochrona urządzeń z\_systemem Windows"
           items:
-            - name: "Ustawienia ochrony dla urządzeń z\_systemem Windows\_10"
+            - name: "Ustawienia ochrony dla urządzeń z\_systemem Windows"
               href: m365bp-protection-settings-for-windows-10-devices.md
             - name: "Zabezpieczanie urządzeń z\_systemem Windows"
               href: m365bp-secure-windows-devices.md
@@ -107,9 +107,9 @@
     - name: Usuwanie użytkowników
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Usuwanie danych z urządzeń
-      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-remove-company-data.md
     - name: Resetuj urządzenia do ustawień fabrycznych
-      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-reset-devices-to-factory-settings.md
 - name: Odwołanie
   items:
     - name: Słownik terminów
@@ -128,7 +128,7 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: "Ustawienia ochrony aplikacji dla systemów Android i\_iOS"
       href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: "Mapowanie funkcji ochrony z\_ustawieniami usługi Intune"
+    - name: Mapuj funkcje ochrony na ustawienia usługi Intune
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Konfigurowanie Menedżera zgodności
       href: m365bp-set-up-compliance.md

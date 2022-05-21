@@ -58,6 +58,8 @@
       href: m365-lighthouse-win365-page-overview.md
     - name: Ponowne aprowizowanie komputera w chmurze Windows 365
       href: m365-lighthouse-reprovision-cloudpc.md
+    - name: Wyświetl nieudane połączenie sieciowe z komputerem w chmurze przedsiębiorstwa
+      href: m365-lighthouse-view-failed-network-connections.md
 - name: Zarządzanie zagrożeniami
   items:
     - name: Omówienie strony Zarządzanie zagrożeniami
