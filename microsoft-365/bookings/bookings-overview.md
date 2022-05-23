@@ -9,19 +9,16 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Omówienie aplikacji Microsoft Bookings, która zawiera internetowy kalendarz rezerwacji i integruje się z Outlook, aby zoptymalizować kalendarz pracowników i zapewnić klientom elastyczność rezerwacji terminów.
-ms.openlocfilehash: 6cb20104e9fa51023b6a828cfd70291cd0797037
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 02ae9cc4e9b101025a424acaff3a82de7afeef59
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822677"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637610"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
-
-Microsoft Bookings sprawia, że planowanie terminów i zarządzanie nimi jest bardzo proste. Bookings zawiera internetowy kalendarz rezerwacji i integruje się z Outlook, aby zoptymalizować kalendarz pracowników i zapewnić klientom elastyczność rezerwacji czasu, który będzie dla nich najlepszy. Powiadomienia tekstowe e-mail i SMS zmniejszają liczbę braków i zwiększają zadowolenie klientów. Twoja organizacja oszczędza czas dzięki zmniejszeniu liczby powtarzających się zadań planowania. Dzięki wbudowanej elastyczności i możliwości dostosowywania Bookings można dostosować do sytuacji i potrzeb wielu różnych części organizacji.
+Microsoft Bookings sprawia, że planowanie terminów i zarządzanie nimi jest bardzo proste. Bookings zawiera internetowy kalendarz rezerwacji i integruje się z Outlook, aby zoptymalizować kalendarz pracowników i zapewnić klientom elastyczność rezerwacji czasu, który będzie dla nich najlepszy. Powiadomienia e-mail i SMS tekstowe zmniejszają liczbę braków i zwiększają zadowolenie klientów. Twoja organizacja oszczędza czas dzięki zmniejszeniu liczby powtarzających się zadań planowania. Dzięki wbudowanej elastyczności i możliwości dostosowywania Bookings można dostosować do sytuacji i potrzeb wielu różnych części organizacji.
 
 > [!NOTE]
 > Kalendarz Bookings to skrzynka pocztowa w Exchange Online.

@@ -8,17 +8,14 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Ta strona służy do tworzenia listy pracowników i zarządzania danymi pracowników, takimi jak imię i nazwisko, numer telefonu i adres e-mail.
-ms.openlocfilehash: b6ceee7c4464daf050f6e6626628c9cb3d94960f
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: d5e35ae301acc785803b0c5374b4bc50bbf499e0
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285461"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637235"
 ---
 # <a name="add-staff-to-bookings"></a>Dodaj pracowników do aplikacji Bookings
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Strona Personel w Bookings to miejsce, w którym tworzysz listę pracowników i zarządzasz danymi pracowników, takimi jak imię i nazwisko, numer telefonu i adres e-mail. W tym miejscu można również ustawić godziny pracy dla każdego pracownika.
 

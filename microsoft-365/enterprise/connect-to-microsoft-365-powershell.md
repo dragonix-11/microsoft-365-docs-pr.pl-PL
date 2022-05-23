@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Połączenie do dzierżawy Microsoft 365 przy użyciu programu PowerShell, aby Microsoft 365 wykonywać zadania centrum administracyjnego z poziomu wiersza polecenia.
-ms.openlocfilehash: a69fa6885e254e0c15cd65833a4f8368ec239c4f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 24596a2781a8b2176908d6e5d3a6c5bd74b0260a
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174822"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637434"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Połączenie z platformą Microsoft 365 za pomocą programu PowerShell
 
@@ -43,6 +43,8 @@ Obecnie moduł Azure Active Directory programu PowerShell for Graph nie zastępu
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
+>[!NOTE]
+> Moduł Azure Active Directory jest zastępowany przez zestaw SDK programu PowerShell firmy Microsoft Graph. Możesz użyć zestawu SDK programu PowerShell firmy Microsoft Graph, aby uzyskać dostęp do wszystkich interfejsów API Graph firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Wprowadzenie z zestawem SDK programu PowerShell firmy Microsoft Graph](/powershell/microsoftgraph/get-started).
 
 **System operacyjny**
 
@@ -206,11 +208,6 @@ Będziesz potrzebować aktywnej subskrypcji platformy Azure dla organizacji powi
 Aby uzyskać więcej informacji, zobacz [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 
-## <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Wprowadzenie z zestawem SDK programu PowerShell firmy Microsoft Graph
-
-Możesz użyć zestawu SDK programu PowerShell firmy Microsoft Graph, aby uzyskać dostęp do wszystkich interfejsów API Graph firmy Microsoft.
-
-Aby uzyskać więcej informacji, zobacz [Wprowadzenie z zestawem Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Ustaw godziny pracy i dostępność pracowników w usłudze Microsoft Bookings.
-ms.openlocfilehash: ce248e964552b8e1258dbad999f865874ef898e2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 19b5a186c66659777a0dbe3444c0e43c4142ff36
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023332"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637257"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Godziny pracy pracowników w usłudze Microsoft Bookings
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Ustawienie godzin pracy pracowników gwarantuje, że ich dostępność jest dokładnie wyświetlana, gdy klienci próbują je zarezerwować. Domyślnie godziny pracy każdego z pracowników są zgodne z godzinami pracy ustanowionymi w aplikacji Microsoft Bookings. Zobacz sekcję "Ustawianie godzin pracy" w sekcji [Wprowadzanie informacji biznesowych](enter-business-information.md).
 

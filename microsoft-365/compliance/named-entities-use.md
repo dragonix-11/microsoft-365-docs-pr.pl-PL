@@ -16,14 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Te procedury umożliwiają korzystanie z nazwanych jednostek w zasadach ochrony przed utratą danych
-ms.openlocfilehash: 6b00c45b95436e2425aedadd57a178fcb01ab50e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 85d3d11704ea238f6c1acff64193d8aaba8994b8
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000999"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637191"
 ---
-# <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>Używanie nazwanych jednostek w zasadach ochrony przed utratą danych
+# <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>Używaj nazwanych obiektów w zasadach zapobiegania utracie danych
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -49,6 +49,7 @@ Do wykrywania i ochrony poufnych elementów w tych lokalizacjach można używać
 - Teams wiadomości czatu i kanału
 - Urządzenia (urządzenia Windows 10 i 11 urządzeń punktu końcowego)
 - skrzynki pocztowe Exchange
+- Microsoft Defender for Cloud Apps
 
 Nazwane jednostki SIC i rozszerzone zasady nie są obsługiwane w następujących celach:
 
@@ -83,7 +84,7 @@ Aby utworzyć lub edytować zasady DLP, użyj procedur w [sekcji Tworzenie, test
 |SharePoint Dane w trybie online magazynowane     |Obsługiwane         |
 |Teams danych magazynowanych     |Obsługiwane         |
 |Dane w spoczynku wiadomości e-mail     |Obsługiwane w przypadku dzierżaw z planem usługi ochrony prywatności         |
-<!--|Microsoft Defender for Cloud Apps     |Obsługiwane         |-->
+|Microsoft Defender for Cloud Apps     |Obsługiwane         |
 
 ### <a name="autolabeling"></a>Automatyczne etykietowanie
 
@@ -97,7 +98,7 @@ Aby utworzyć lub edytować zasady DLP, użyj procedur w [sekcji Tworzenie, test
 |transport Exchange     |Obsługiwane |
 |OneDrive dla Firm danych magazynowanych     |Obsługiwane |
 |SharePoint Dane w trybie online magazynowane|Obsługiwane|
-|Skaner usługi Azure Information Protection (AIP)|nieobsługiwane|
+|Skaner usługi Azure Information Protection (AIP)|Nieobsługiwane|
 
 ## <a name="known-issues"></a>Znane problemy
 
@@ -116,7 +117,7 @@ Poniżej przedstawiono niektóre rozwiązania, których można użyć podczas tw
 
 - Użyj niskiej liczby wystąpień (od trzech do pięciu), gdy szukasz danych w arkuszu kalkulacyjnym, a słowo kluczowe wymagane przez sit dla tych danych znajduje się tylko w nagłówku kolumny. Załóżmy na przykład, że szukasz numerów ubezpieczenia społecznego w USA, a słowo kluczowe `Social Security Number` występuje tylko w nagłówku kolumny. Ponieważ wartości (dowody potwierdzające) znajdują się w poniższych komórkach, prawdopodobnie tylko kilka pierwszych wystąpień znajduje się w pobliżu słowa kluczowego, które ma zostać wykryte.  
 
-- Jeśli używasz nazwanej jednostki SIT, takiej jak Wszystkie imiona i nazwiska, aby pomóc w znalezieniu numerów ubezpieczenia społecznego USA, użyj większej liczby wystąpień, takiej jak 10 lub 50. Następnie, gdy zarówno nazwy osób, jak i nazwy SSN są wykrywane razem, bardziej prawdopodobne jest uzyskanie prawdziwych wyników dodatnich.
+- Jeśli używasz nazwanej jednostki SIT, takiej jak Wszystkie imiona i nazwiska, aby pomóc w znalezieniu numerów ubezpieczenia społecznego USA, użyj większej liczby wystąpień, takiej jak 10 lub 50. Następnie, gdy zarówno nazwiska osób, jak i nazwy SSN są wykrywane razem, bardziej prawdopodobne jest uzyskanie prawdziwych wyników dodatnich.
 
 - Za pomocą [symulacji automatycznego etykietowania](apply-sensitivity-label-automatically.md#learn-about-simulation-mode) można przetestować dokładność nazwanych jednostek SIC. Uruchom symulację przy użyciu nazwanej jednostki SIT, aby zobaczyć, które elementy są zgodne z zasadami. Dzięki tym informacjom można dostosować dokładność, dostosowując liczbę wystąpień i poziomy ufności w zasadach niestandardowych lub rozszerzonych warunkach szablonu. Przed wdrożeniem zasad DLP lub automatycznego etykietowania zawierających nazwane jednostki w środowisku produkcyjnym można iterować symulacje do momentu, gdy dokładność będzie odpowiednia. Oto omówienie przepływu:
 

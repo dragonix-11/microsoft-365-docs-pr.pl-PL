@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: Dowiedz się, jak ustawić zasady planowania dla swojej firmy. Zasady planowania obejmują długość terminów, a także akceptowalne czasy potencjalnego klienta i anulowania.
-ms.openlocfilehash: f4b19af8bd0c9a91ea7fea3fd7b2a8feb4285dcd
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 39d6ab31d7bfda8f2686ed232402c1b98e6a56db
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468377"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637544"
 ---
 # <a name="set-your-microsoft-bookings-scheduling-policies"></a>Ustawianie zasad planowania Microsoft Bookings
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Nie wszystkie terminy są takie same. Niektóre zajmują tylko kilka minut, podczas gdy inne mogą trwać kilka godzin lub dłużej. W Microsoft Bookings na stronie rezerwacji są ustawiane zasady planowania dla swojej firmy. Zasady planowania obejmują długość terminów, akceptowalny czas realizacji i anulowania oraz automatyczne powiadomienia o zmianach rezerwacji. Dodatkowe dostosowania można dodać dla każdej usługi na stronie Usługi z dodatkowymi ustawieniami czasu trwania i zasadami, które mają zastosowanie tylko do tej usługi.
 

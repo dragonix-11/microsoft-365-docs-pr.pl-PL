@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Pobierz raport użycia aktywności SharePoint, aby dowiedzieć się więcej o SharePoint interakcjach z licencjonowanymi plikami użytkownika, liczbie udostępnionych plików i wykorzystaniu magazynu.
-ms.openlocfilehash: ecd44aad4e2bc1236ade623ad2723945e6422e7b
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 52aaaf3d9eef59c582977ee7b7c04ded44233c59
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467235"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636509"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie SharePoint
 
@@ -33,7 +33,7 @@ Jako administrator Microsoft 365 pulpit nawigacyjny Raporty przedstawia omówien
   
 Możesz na przykład zrozumieć działanie każdego użytkownika mającego licencję na używanie programu SharePoint poprzez wyświetlenie jego interakcji z plikami. Ułatwia to także zrozumienie poziomu współpracy przez wyświetlanie liczby udostępnionych plików.
   
-## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>Jak dotrzeć do raportu aktywności programu SharePoint?
+## <a name="how-do-i-get-to-the-sharepoint-activity-report"></a>Jak mogę przejść do raportu aktywności SharePoint?
 
 1. W centrum administracyjnym przejdź do strony **Raporty** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Użycie</a>. 
 2. Na stronie głównej pulpitu nawigacyjnego kliknij przycisk **Wyświetl więcej** na karcie SharePoint.
@@ -44,7 +44,7 @@ Możesz wyświetlić działania w raporcie SharePoint, wybierając kartę **Dzia
 
 Wybierz pozycję **Wybierz kolumny** , aby dodać lub usunąć kolumny z raportu.  <br/> ![SharePoint raportu aktywności — wybierz kolumny.](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
-Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, w celu filtrowania i sortowania należy wyeksportować dane. 
+Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, aby filtrować i sortować, musisz wyeksportować dane. 
 
 Raport **aktywności SharePoint** można wyświetlić dla trendów z ostatnich 7 dni, 30 dni, 90 dni lub 180 dni. Jeśli jednak wybierzesz konkretny dzień w raporcie, w tabeli będą wyświetlane dane przez maksymalnie 28 dni od bieżącej daty (a nie daty wygenerowania raportu).
   

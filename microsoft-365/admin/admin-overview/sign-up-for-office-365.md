@@ -29,12 +29,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Dowiedz się, co musisz wiedzieć o najnowszych wersjach programów Office przed przejściem przez proces tworzenia konta dla Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 015f99a2f0b6f9fcd17592e399bccf044313f993
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 185931ba308ae547355cb21a2935bb6f9097c8b7
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436124"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636223"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Jak się zarejestrować — Pomoc dla administratorów
 
@@ -42,7 +42,7 @@ Utwórz konto w Microsoft 365 dla firm, aby zespół mógł zacząć korzystać 
 
 ::: moniker range="o365-21vianet"
 
-Jeśli jesteś w Chinach, usługa Office 365 obsługiwana przez firmę 21Vianet została zaprojektowana tak, aby spełniała wymagania dotyczące bezpiecznych, niezawodnych i skalowalnych usług w chmurze w Chinach. Ta usługa jest obsługiwana przez technologię, którą firma Microsoft ma licencję 21Vianet. Firma Microsoft nie obsługuje samej usługi. 21Vianet obsługuje, zapewnia i zarządza dostarczaniem usługi. 21Vianet jest największym neutralnym operatorem internetowym dostawcą usług centrów danych w Chinach, świadczącym usługi hostingowe, zarządzane usługi sieciowe i usługi infrastruktury przetwarzania w chmurze. Licencjonując technologie firmy Microsoft, firma 21Vianet obsługuje lokalne centra danych firmy Microsoft, aby zapewnić możliwość korzystania z usługi firmy Microsoft przy jednoczesnym zachowaniu danych w Chinach. 21Vianet zapewnia również subskrypcję i usługi rozliczeniowe, a także pomoc techniczną.
+Jeśli jesteś w Chinach, usługa Office 365 obsługiwana przez firmę 21Vianet została zaprojektowana tak, aby spełniała wymagania dotyczące bezpiecznych, niezawodnych i skalowalnych usług w chmurze w Chinach. Ta usługa jest obsługiwana przez technologię, którą firma Microsoft ma licencję 21Vianet. Firma Microsoft nie obsługuje samej usługi. 21Vianet obsługuje, zapewnia i zarządza dostarczaniem usługi. 21Vianet jest największym neutralnym operatorem internetowym dostawcą usług centrów danych w Chinach, świadczącym usługi hostingowe, zarządzane usługi sieciowe i usługi infrastruktury przetwarzania w chmurze. Licencjonując technologie firmy Microsoft, firma 21Vianet obsługuje lokalne centra danych firmy Microsoft, aby zapewnić możliwość korzystania z usługi firmy Microsoft przy jednoczesnym zachowaniu danych w Chinach. 21Vianet zapewnia również subskrypcję i usługi rozliczeniowe oraz pomoc techniczną.
   
 > [!NOTE]
 > Te usługi podlegają chińskiemu prawu.
@@ -88,7 +88,7 @@ Nie musisz anulować wersji próbnej. Jeśli nie kupisz subskrypcji wersji prób
 
 - **Adres i informacje kontaktowe dla Twojej subskrypcji:**
 
-  - **Kraj** , w którym będą używane usługi. **Nie będzie** można zmienić kraju później, nawet podczas procesu rejestracji; Musisz ponownie uruchomić kreatora rejestracji.
+  - **Kraj** , w którym będą używane usługi. **Nie będzie** można zmienić kraju później, nawet podczas procesu rejestracji; Konieczne będzie ponowne uruchomienie kreatora rejestracji.
 
   - **Adres e-mail** i **numer telefonu**, abyśmy mogli w razie potrzeby kontaktować się z Tobą w sprawach dotyczących subskrypcji. Na przykład jeśli zapomnisz hasła, skorzystamy z tych informacji, aby wysłać Ci hasło tymczasowe. Na podany przez Ciebie adres e-mail wysyłamy również informacje rozliczeniowe.
 

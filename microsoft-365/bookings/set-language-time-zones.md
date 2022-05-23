@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Zmień ustawienia języka i strefy czasowej w Microsoft Bookings. Jeśli rezerwacje zostaną utworzone w niewłaściwym czasie, Bookings może zostać ustawiona dla niewłaściwej strefy czasowej.
-ms.openlocfilehash: 342b83bf03daa237883a3f8e947306908fbae17d
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 13ff4f81bae50e390f8f7475147e335bf010683f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022476"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637566"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Ustawianie języka i stref czasowych w Microsoft Bookings
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Jeśli używasz Microsoft Bookings, a rezerwacje są tworzone w niewłaściwym czasie, może być konieczna zmiana ustawień strefy czasowej. Podobnie, jeśli niektóre rezerwacje są w niewłaściwym języku, może być konieczna zmiana ustawień języka.
 

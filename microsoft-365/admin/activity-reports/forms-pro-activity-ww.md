@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak uzyskać raport aktywności usługi Microsoft Dynamics 365 Customer Voice przy użyciu pulpitu nawigacyjnego Raporty i dowiedzieć się, jak licencjonowani użytkownicy współpracują.
-ms.openlocfilehash: c8c7678991635139f2bdfb97a8baf7ccc2c667aa
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 8f936f2b3232d8086928751c9846a8d762ff8219
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467607"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636575"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie usługi Dynamics 365 Customer Voice
 
@@ -44,7 +44,7 @@ Możesz wyświetlić działania w raporcie Dynamics 365 Customer Voice, wybieraj
 
 Wybierz pozycję **Wybierz kolumny** , aby dodać lub usunąć kolumny z raportu.  <br/> ![Raport aktywności Dynamics 365 Customer Voice — wybierz kolumny.](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
-Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, w celu filtrowania i sortowania należy wyeksportować dane. 
+Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, aby filtrować i sortować, musisz wyeksportować dane. 
 
 Raport **aktywności Dynamics 365 Customer Voice** można wyświetlić dla trendów z ostatnich 7 dni, 30 dni, 90 dni lub 180 dni. Jeśli jednak wybierzesz konkretny dzień w raporcie, w tabeli będą wyświetlane dane przez maksymalnie 28 dni od bieżącej daty (a nie daty wygenerowania raportu).
   
@@ -54,5 +54,5 @@ Raport **aktywności Dynamics 365 Customer Voice** można wyświetlić dla trend
 |Nazwa użytkownika  <br/> |Adres e-mail użytkownika, który wykonał działanie na Microsoft Forms.  <br/> |
 |Data ostatniego działania (UTC)  <br/> |Ostatnia data wykonania działania formularza przez użytkownika dla wybranego zakresu dat. Aby zobaczyć działanie, które wystąpiło w konkretnym dniu, wybierz datę bezpośrednio na wykresie.<br/>Spowoduje to przefiltrowanie tabeli w celu wyświetlenia danych aktywności pliku tylko dla użytkowników, którzy wykonali działanie w danym dniu.  <br/> |
 |Liczba utworzonych ankiet  <br/> |Liczba ankiet utworzonych przez użytkownika.   <br/> |
-|Liczba odpowiedzi na ankietę  <br/> |Liczba odpowiedzi od osób odpowiadających, do których przeprowadzono ankietę.|
+|Liczba odpowiedzi na ankietę  <br/> |Liczba odpowiedzi od osób odpowiadających, którym przeprowadzono ankietę.|
 |||

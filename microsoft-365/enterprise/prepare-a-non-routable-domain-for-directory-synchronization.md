@@ -22,24 +22,24 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Dowiedz się, co zrobić, jeśli masz domenę bez routingu skojarzoną z kontami użytkowników lokalnych, zanim zsynchronizujesz je z dzierżawą Microsoft 365.
-ms.openlocfilehash: 7c0fd93f327305477908fba0cfb495fa73205ebe
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9d720b42b345e85031a4fa34b9c1353f868765f1
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096375"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637896"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Jak przygotować domenę bez routingu do synchronizacji katalogów
 
-Podczas synchronizowania katalogu lokalnego z Microsoft 365 musisz mieć zweryfikowaną domenę w usłudze Azure Active Directory (Azure AD). Synchronizowane są tylko główne nazwy użytkownika (UPN) skojarzone z domeną usług lokalna usługa Active Directory Domain Services (AD DS). Jednak każda nazwa UPN zawierająca domenę bez routingu, taką jak ".local" (na przykład billa@contoso.local), zostanie zsynchronizowana z domeną .onmicrosoft.com (na przykład: billa@contoso.onmicrosoft.com). 
+Podczas synchronizowania katalogu lokalnego z Microsoft 365 musisz mieć zweryfikowaną domenę w Azure Active Directory (Azure AD). Synchronizowane są tylko główne nazwy użytkownika (UPN) skojarzone z domeną usług lokalna usługa Active Directory Domain Services (AD DS). Jednak każda nazwa UPN zawierająca domenę bez routingu, taką jak ".local" (na przykład billa@contoso.local), zostanie zsynchronizowana z domeną .onmicrosoft.com (na przykład: billa@contoso.onmicrosoft.com). 
 
 Jeśli obecnie używasz domeny ".local" dla kont użytkowników w usługach AD DS, zaleca się ich zmianę w celu używania zweryfikowanej domeny, takiej jak billa@contoso.com, w celu prawidłowej synchronizacji z domeną Microsoft 365.
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Co zrobić, jeśli mam tylko domenę lokalną ".local"?
 
-Usługa Azure AD Połączenie służy do synchronizowania usług AD DS z dzierżawą usługi Azure AD dzierżawy Microsoft 365. Aby uzyskać więcej informacji, zobacz [Integrowanie tożsamości lokalnych z usługą Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+Używasz Azure AD Połączenie do synchronizowania usług AD DS z dzierżawą Azure AD dzierżawy Microsoft 365. Aby uzyskać więcej informacji, zobacz [Integrowanie tożsamości lokalnych z Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
   
-Usługa Azure AD Połączenie synchronizuje nazwę UPN i hasło użytkowników, dzięki czemu użytkownicy mogą logować się przy użyciu tych samych poświadczeń, których używają lokalnie. Jednak usługa Azure AD Połączenie synchronizuje tylko użytkowników z domenami zweryfikowanymi przez Microsoft 365. Oznacza to, że domena jest również weryfikowana przez usługę Azure AD, ponieważ tożsamości Microsoft 365 są zarządzane przez usługę Azure AD. Innymi słowy, domena musi być prawidłową domeną internetową (np. .com, .org, .net, .us). Jeśli wewnętrzne usługi AD DS używają tylko domeny bez routingu (na przykład ".local"), nie może to być zgodne ze zweryfikowaną domeną dla dzierżawy Microsoft 365. Ten problem można rozwiązać, zmieniając domenę podstawową w lokalnych usługach AD DS lub dodając co najmniej jeden sufiks nazwy UPN.
+Azure AD Połączenie synchronizuje nazwę UPN i hasło użytkowników, aby użytkownicy mogli logować się przy użyciu tych samych poświadczeń, których używają lokalnie. Jednak Azure AD Połączenie synchronizuje tylko użytkowników z domenami zweryfikowanymi przez Microsoft 365. Oznacza to, że domena jest również weryfikowana przez Azure AD, ponieważ tożsamości Microsoft 365 są zarządzane przez Azure AD. Innymi słowy, domena musi być prawidłową domeną internetową (np. .com, .org, .net, .us). Jeśli wewnętrzne usługi AD DS używają tylko domeny bez routingu (na przykład ".local"), nie może to być zgodne ze zweryfikowaną domeną dla dzierżawy Microsoft 365. Ten problem można rozwiązać, zmieniając domenę podstawową w lokalnych usługach AD DS lub dodając co najmniej jeden sufiks nazwy UPN.
   
 ### <a name="change-your-primary-domain"></a>Zmienianie domeny podstawowej
 
@@ -51,7 +51,7 @@ Problem ".local" można rozwiązać, rejestrując nowy sufiks lub sufiks nazwy U
   
 Po zaktualizowaniu nazw UPN w celu używania zweryfikowanej domeny możesz zsynchronizować lokalne usługi AD DS z Microsoft 365.
   
-#### <a name="step-1-add-the-new-upn-suffix"></a>Krok 1. Dodawanie nowego sufiksu nazwy UPN**
+#### <a name="step-1-add-the-new-upn-suffix"></a>Krok 1. Dodawanie nowego sufiksu nazwy UPN
   
 1. Na kontrolerze domeny usług AD DS w Menedżer serwera wybierz pozycję **Narzędzia** \> **Domeny i relacje zaufania usługi Active Directory**.
     

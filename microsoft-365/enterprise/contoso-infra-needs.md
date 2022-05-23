@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Poznaj podstawową strukturę lokalnej infrastruktury IT firmy Contoso oraz sposób zaspokajania potrzeb biznesowych firmy przez Microsoft 365 dla przedsiębiorstw.
-ms.openlocfilehash: 5dc47898aa0499bc4b62d22d37689d872116a9e7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 793c867d47d76a03efad707d8447e04538c8ebb8
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101364"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637500"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastruktura IT i potrzeby biznesowe firmy Contoso
 
@@ -93,7 +93,7 @@ Potrzeby biznesowe firmy Contoso dzielą się na pięć głównych kategorii:
 
   Zmniejsz koszty konserwacji i obsługi technicznej oraz zwiększ wydajność rozwiązania dostępu zdalnego, przenosząc często dostępne zasoby do chmury.
 
-- Zapewnianie lepszej łączności i mniejsze obciążenie dla transakcji typu "business-to-susiness" (B2B)
+- Zapewnianie lepszej łączności i mniejsze obciążenie dla transakcji między firmami (B2B)
 
   Zastąp starzejącą się i kosztowną ekstranet partnera rozwiązaniem opartym na chmurze, które korzysta z uwierzytelniania federacyjnego.
 
@@ -143,4 +143,4 @@ Dowiedz się więcej [o sieci lokalnej](contoso-networking.md) firmy Contoso Cor
 
 [Microsoft 365 dla przedsiębiorstw — omówienie](microsoft-365-overview.md)
 
-[Przewodniki po laboratorium testowym](m365-enterprise-test-lab-guides.md)
+[Przewodniki laboratorium testowego](m365-enterprise-test-lab-guides.md)

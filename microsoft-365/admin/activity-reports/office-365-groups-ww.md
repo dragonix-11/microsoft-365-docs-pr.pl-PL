@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Uzyskaj raport Grupy Microsoft 365, aby uzyskać wgląd w działania grup w organizacji i zobaczyć, ile grup jest tworzonych i używanych.
-ms.openlocfilehash: 1c51ddf997fb0c1c3e2416d979b83b339c414d93
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 541d3aa6534d578d30ef9eae93c38c76dd97c472
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467377"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636531"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Raporty w centrum administracyjnym — grupy Microsoft 365
 
@@ -48,7 +48,7 @@ Wybierz pozycję **Wybierz kolumny** , aby dodać lub usunąć kolumny z raportu
 
 :::image type="content" alt-text="Office 365 raport aktywności grup — wybierz kolumny." source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
-Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, w celu filtrowania i sortowania należy wyeksportować dane. 
+Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, aby filtrować i sortować, musisz wyeksportować dane. 
 
 Raport **grup** można wyświetlić dla trendów z ostatnich 7 dni, 30 dni, 90 dni lub 180 dni. Jeśli jednak wybierzesz konkretny dzień w raporcie, w tabeli będą wyświetlane dane przez maksymalnie 28 dni od bieżącej daty (a nie daty wygenerowania raportu).
 

@@ -28,12 +28,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Dowiedz się, jak skonfigurować uwierzytelnianie wieloskładnikowe dla organizacji.
 monikerRange: o365-worldwide
-ms.openlocfilehash: c37e9126b7cf06929ca9c97533cddf19d1b71f6e
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: faac2f052b7c184a967f916cca433dfaef6866c7
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468969"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637345"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Konfigurowanie uwierzytelniania wieloskładnikowego dla Microsoft 365
 
@@ -43,7 +43,7 @@ Uwierzytelnianie wieloskładnikowe oznacza, że Ty i Twoi pracownicy muszą zape
 > Jeśli subskrypcja lub wersja próbna została zakupiona po 21 października 2019 r., a po zalogowaniu zostanie wyświetlony monit o uwierzytelnianie [wieloskładnikowe, domyślne ustawienia zabezpieczeń](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) zostały automatycznie włączone dla Twojej subskrypcji.
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>Obejrzyj: Włączanie uwierzytelniania wieloskładnikowego
 
@@ -106,7 +106,7 @@ Aby uzyskać więcej informacji na temat Azure AD P1 i P2, zobacz [cennik Azure 
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>Włączanie nowoczesnego uwierzytelniania dla organizacji
 
-W przypadku większości subskrypcji nowoczesne uwierzytelnianie jest automatycznie włączone, ale jeśli subskrypcja została zakupiona przed sierpniem 2017 r., prawdopodobnie trzeba będzie włączyć nowoczesne uwierzytelnianie, aby uzyskać funkcje, takie jak Uwierzytelnianie wieloskładnikowe, aby działały w Windows klientów, takich jak Outlook.
+W przypadku większości subskrypcji nowoczesne uwierzytelnianie jest automatycznie włączone, ale jeśli subskrypcja została zakupiona przed sierpniem 2017 r., prawdopodobnie trzeba będzie włączyć nowoczesne uwierzytelnianie, aby uzyskać funkcje, takie jak uwierzytelnianie wieloskładnikowe, aby działały w Windows klientów, takich jak Outlook.
 
 
 1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> w lewym pasku nawigacyjnym wybierz **pozycję Ustawienia** \> **Ustawienia organizacji**.

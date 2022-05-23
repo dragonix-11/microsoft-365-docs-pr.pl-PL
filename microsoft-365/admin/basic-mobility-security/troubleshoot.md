@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Wypróbuj te kroki, aby śledzić problemy z mobilnością w warstwie Podstawowa i zabezpieczeniami
-ms.openlocfilehash: c8c4fe674ff3a803659223a004e304a5779a83d7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 1b1b7d67eb07c67c320554c1d64701983da30e15
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780742"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636069"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>Rozwiązywanie problemów z usługą Basic Mobility and Security
 
@@ -35,11 +35,11 @@ Aby rozpocząć, sprawdź następujące kwestie:
 
 - Przełącz się do innej sieci WI-FI lub sieci komórkowej na urządzeniu.
 
-- W przypadku urządzeń z systemem Android lub iOS odinstaluj i ponownie zainstaluj aplikację Intune — Portal firmy na urządzeniu. 
+- W przypadku urządzeń Android lub iOS odinstaluj i ponownie zainstaluj aplikację Intune — Portal firmy na urządzeniu. 
 
-## <a name="ios-phone-or-tablet"></a>Telefon lub tablet z systemem iOS
+## <a name="ios-phone-or-tablet"></a>iOS telefonu lub tabletu
 
-- Upewnij się, że skonfigurowano certyfikat usługi APNs. Aby uzyskać więcej informacji, zobacz [Tworzenie certyfikatu usługi APNs dla urządzeń z systemem iOS](create-an-apns-certificate-for-ios-devices.md).
+- Upewnij się, że skonfigurowano certyfikat usługi APNs. Aby uzyskać więcej informacji, zobacz [Tworzenie certyfikatu usługi APNs dla urządzeń iOS](create-an-apns-certificate-for-ios-devices.md).
 
 - W **Ustawienia** >  **GeneralProfile** >  **(lub Zarządzanie urządzeniami)** upewnij się, że profil zarządzania nie jest jeszcze zainstalowany. Jeśli tak jest, usuń go.
 
@@ -63,9 +63,9 @@ Aby rozpocząć, sprawdź następujące kwestie:
     
 - Jeśli nie masz Azure Active Directory — wersja Premium, upewnij się, że użytkownik wybiera pozycję **Zarejestruj tylko w Zarządzanie urządzeniami** zamiast **wybierać Połączenie**.
 
-## <a name="android-phone-or-tablet"></a>Telefon lub tablet z systemem Android
+## <a name="android-phone-or-tablet"></a>Android telefon lub tablet
 
-- Upewnij się, że na urządzeniu działa system Android.
+- Upewnij się, że urządzenie działa Android.
 
 - Upewnij się, że przeglądarka Chrome jest aktualna i jest ustawiona jako przeglądarka domyślna.
 

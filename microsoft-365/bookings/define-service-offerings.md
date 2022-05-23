@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instrukcje dotyczące wprowadzania informacji o ofertach usług, w tym nazwy usługi, opisu, lokalizacji, czasu trwania i cennika. Możesz również otagować pracowników, którzy są wykwalifikowani do świadczenia usługi.
-ms.openlocfilehash: 818d0d84e78907047df41e30f0ded62fc16c6ce4
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0c302e8d84274fa2df8eea27362407ded4a468e3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023772"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637786"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definiowanie ofert usług w Bookings
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Podczas definiowania ofert usług w Microsoft Bookings należy ustawić nazwę usługi, opis, lokalizację (wybrać, czy chcesz spotkać się osobiście, czy spotkanie online), czas trwania, domyślne przypomnienia dla klientów i pracowników, wewnętrzne notatki dotyczące usługi i cennik. Możesz również otagować pracowników, którzy są wykwalifikowani do świadczenia usługi. Następnie, gdy klienci przychodzą do twojej firmowej witryny internetowej w celu zarezerwowania terminu, mogą dokładnie zobaczyć, jakie typy terminów są dostępne, wybrać osobę, którą chcą świadczyć usługę i ile będzie kosztować ich usługa.
 
@@ -51,7 +48,7 @@ Możesz również dodać dostosowane informacje i adresy URL do potwierdzenia wi
        > Teams spotkania można dołączać za pośrednictwem aplikacji mobilnej Teams, aplikacji klasycznej Teams, przeglądarki internetowej lub telefonicznego połączenia telefonicznego. Zdecydowanie zalecamy włączenie Teams jako domyślnej usługi spotkań online dla dzierżawy, aby jak najlepiej rezerwować terminy wirtualne.
 
    - Wyłączone:
-     - Terminy nie będą zawierać opcji spotkania, a wszystkie pola związane ze spotkaniem wyświetlane po **włączeniu funkcji Dodaj spotkanie online** nie będą wyświetlane.
+     - Terminy nie będzie zawierać opcji spotkania, a wszystkie pola związane ze spotkaniem wyświetlane po włączeniu **funkcji Dodaj spotkanie online** nie będą wyświetlane.
 
    **Czas trwania**: Na ten czas będą zarezerwowane wszystkie spotkania. Czas jest blokowany od godziny rozpoczęcia, która jest wybierana podczas rezerwacji. Pełny czas mianowania zostanie zablokowany w kalendarzach personelu.
 
@@ -105,13 +102,13 @@ Możesz również dodać dostosowane informacje i adresy URL do potwierdzenia wi
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Dodatkowe informacje w wiadomości e-mail Bookings.":::
 
-9. **Włączanie powiadomień sms dla klienta** Jeśli ta opcja jest wybrana, wiadomości SMS są wysyłane do klienta, ale tylko wtedy, gdy się zdecydują.
+9. **Włączanie powiadomień sms dla klienta** Jeśli ta opcja zostanie wybrana, SMS wiadomości są wysyłane do klienta, ale tylko wtedy, gdy się zdecydują.
 
    - Pole wyboru na stronie rezerwacji ręcznej i Self-Service:
 
      :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Pole wyboru w Bookings.":::
 
-   - Powiadomienia sms będą wyglądać następująco (pamiętaj, że powiadomienia SMS są obecnie dostępne tylko w Ameryka Północna):
+   - Powiadomienia sms będą wyglądać następująco (zwróć uwagę, że powiadomienia SMS są obecnie dostępne tylko w Ameryka Północna):
 
      :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Powiadomienie tekstowe z Bookings.":::
 

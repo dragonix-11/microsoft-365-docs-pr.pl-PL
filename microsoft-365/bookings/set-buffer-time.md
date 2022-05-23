@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Ustaw czas buforowania przed lub po terminie w Microsoft Bookings, aby dać czas na czyszczenie lub resetowanie sprzętu.
-ms.openlocfilehash: 0a27cc287ed7999f1ba1cc1b017c2f54e126c0b9
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 49e58d53cec466c824a40281e3199f1544e74744
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022388"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637588"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Ustawianie czasu buforu w Microsoft Bookings
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Niektóre terminy mogą wymagać czasu przed lub po spotkaniu z klientem w celu skonfigurowania, oczyszczenia lub zresetowania pokoju i sprzętu. Lub jeśli jesteś w drodze między terminami klienta, może być potrzebny czas, aby upewnić się, że Ty i Twój zespół możecie podróżować między spotkaniami bez czekania klienta.
 

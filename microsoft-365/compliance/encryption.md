@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Dzięki Office 365 zawartość jest szyfrowana w spoczynku i przesyłana przy użyciu najsilniejszego szyfrowania, protokołów i dostępnych technologii. Zapoznaj się z omówieniem szyfrowania w Office 365.
-ms.openlocfilehash: 5f866931eba3078074b47c9cc8c5ed310489b9bb
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 5b7b0f9fecbcbb6150eb56e19757c954aeb3e812
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319270"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637478"
 ---
 # <a name="encryption"></a>Szyfrowanie
 
@@ -57,7 +57,7 @@ Dzięki Office 365 wiele warstw i rodzajów szyfrowania współdziała ze sobą 
 |:-----|:-----|:-----|
 |Pliki na urządzeniu. Te pliki mogą obejmować wiadomości e-mail zapisane w folderze, Office dokumenty zapisane na komputerze, tablecie lub telefonie albo dane zapisane w chmurze firmy Microsoft.  <br/> |BitLocker w centrach danych firmy Microsoft. BitLocker mogą być również używane na maszynach klienckich, takich jak komputery Windows i tablety  <br/> Rozproszony menedżer kluczy (DKM) w centrach danych firmy Microsoft  <br/> Klucz klienta dla Microsoft 365  <br/> |[Windows Centrum IT: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centrum zaufania firmy Microsoft: szyfrowanie](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Seria kontroli zabezpieczeń w chmurze: szyfrowanie danych magazynowanych](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Jak usługa Exchange Online zabezpiecza Twoje tajne wpisy poczty e-mail](exchange-online-secures-email-secrets.md) <br/> [Szyfrowanie usługi przy użyciu klucza klienta](customer-key-overview.md) <br/> |
 |Pliki przesyłane między użytkownikami. Te pliki mogą zawierać dokumenty Office lub SharePoint elementy listy udostępnione użytkownikom.  <br/> |Protokół TLS dla plików przesyłane  <br/> |[Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype dla firm Online: zabezpieczenia i archiwizacja](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
-|Wiadomość e-mail przesyłana między adresatami. Ta wiadomość e-mail zawiera wiadomości e-mail hostowane przez Exchange Online.  <br/> |Szyfrowanie wiadomości w Microsoft Purview z usługami Azure Rights Management, S/MIME i TLS na potrzeby przesyłania wiadomości e-mail  <br/> |[Szyfrowanie essage](ome.md) <br/> [Szyfrowanie wiadomości e-mail w Office 365](email-encryption.md) <br/> [Jak usługa Exchange Online używa protokołu TLS do zabezpieczania połączeń poczty e-mail w usłudze Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|Wiadomość e-mail przesyłana między adresatami. Ta wiadomość e-mail zawiera wiadomości e-mail hostowane przez Exchange Online.  <br/> |Szyfrowanie wiadomości w Microsoft Purview z usługami Azure Rights Management, S/MIME i TLS na potrzeby przesyłania wiadomości e-mail  <br/> |[Szyfrowanie komunikatów](ome.md) <br/> [Szyfrowanie wiadomości e-mail w Office 365](email-encryption.md) <br/> [Jak usługa Exchange Online używa protokołu TLS do zabezpieczania połączeń poczty e-mail w usłudze Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 |Czaty, wiadomości i pliki przesyłane między adresatami przy użyciu Microsoft Teams. <br/> |Teams używa protokołu TLS i MTLS do szyfrowania wiadomości błyskawicznych. Ruch multimediów jest szyfrowany przy użyciu protokołu Secure RTP (SRTP). Teams używa zgodnych algorytmów FIPS (Federal Information Processing Standard) do wymiany kluczy szyfrowania. <br/> |[Szyfrowanie dla Teams](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>Co zrobić, jeśli potrzebuję większej kontroli nad szyfrowaniem, aby spełnić wymagania dotyczące zabezpieczeń i zgodności?

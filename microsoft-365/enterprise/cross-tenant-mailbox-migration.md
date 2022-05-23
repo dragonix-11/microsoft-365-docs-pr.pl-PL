@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 73107fd82a77be730d894b057d1b9b1795fb242b
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 3832cd64ce66e667cced13c41bc34c28d575b373
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621078"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637522"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migracja skrzynki pocztowej między dzierżawami (wersja zapoznawcza)
 
@@ -147,7 +147,7 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [Centrum admi
    ```powershell
 
    # Enable customization if tenant is dehydrated
-   $dehydrated=Get-OrganizationConfig | fl isdehydrated
+   $dehydrated=Get-OrganizationConfig | select isdehydrated
    if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
    $AppId = "[guid copied from the migrations app]"
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)

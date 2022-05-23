@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usługa Basic Mobility and Security jest częścią planów Microsoft 365, a Microsoft Intune jest autonomicznym produktem dołączonym do niektórych planów Microsoft 365.
-ms.openlocfilehash: 1d04beea6ece35d5d28bdd961041b30c1f8f2793
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01d2717aa0368e3d1dc5ed17f3adfd6313880dfe
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435772"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636113"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Wybierz opcję Podstawowa mobilność i zabezpieczenia lub Intune
 
@@ -32,7 +32,7 @@ ms.locfileid: "65435772"
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Dostępność pakietu Basic Mobility and Security i Intune
 
-Zarówno pakiety Basic Mobility, jak i Security oraz Intune są uwzględniane w różnych planach opisanych w poniższej tabeli.
+Zarówno pakiety Basic Mobility, jak i Security i Intune są uwzględnione w różnych planach, opisanych w poniższej tabeli.
 
 | Plan | Funkcja Podstawowa mobilność i zabezpieczenia | Microsoft Intune |
 |:-----|:-----|:-----|

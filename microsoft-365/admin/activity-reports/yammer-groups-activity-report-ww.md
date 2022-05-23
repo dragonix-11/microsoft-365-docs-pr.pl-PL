@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Pobierz raport aktywności grupy Yammer, aby dowiedzieć się więcej o liczbie grup Yammer tworzonych i używanych w organizacji i ich działaniach.
-ms.openlocfilehash: 27e2057bb743c7d25d3ebb848151f7a32e3de52a
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 810899c47fed09325341c0b78dd5958dc63a5713
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467147"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636201"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>raporty Microsoft 365 w centrum administracyjnym — raport aktywności grup Yammer
 
@@ -42,7 +42,7 @@ Możesz wyświetlić działania grup w raporcie Yammer, wybierając kartę **Dzi
 
 Wybierz pozycję **Wybierz kolumny** , aby dodać lub usunąć kolumny z raportu.  <br/> ![Yammer raport aktywności grup — wybierz kolumny.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
-Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, w celu filtrowania i sortowania należy wyeksportować dane. 
+Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, aby filtrować i sortować, musisz wyeksportować dane. 
 
 W raporcie **Aktywność grup w usłudze Yammer** można przeglądać trendy z ostatnich 7, 30, 90 lub 180 dni. Jeśli jednak wybierzesz konkretny dzień w raporcie, w tabeli będą wyświetlane dane przez maksymalnie 28 dni od bieżącej daty (a nie daty wygenerowania raportu).
   

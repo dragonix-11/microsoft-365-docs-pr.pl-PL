@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Jeśli musisz zadawać klientom pytania podczas rezerwacji spotkania online, możesz dodać niestandardowe pytania i wymagane pytania do strony rezerwacji.
-ms.openlocfilehash: 9830dfaa9ac1964e74eb16321d061e096aad1bab
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: d42f883f3d58882ec5a2e8e8e2bbe7baf7ed3232
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714620"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637698"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Dodaj pytania niestandardowe i wymagane do strony rezerwacji
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Bookings umożliwia tworzenie pytań, które należy zadać klientom podczas rezerwacji terminów. Pozwala również wybrać, które pytania są wymagane.
 

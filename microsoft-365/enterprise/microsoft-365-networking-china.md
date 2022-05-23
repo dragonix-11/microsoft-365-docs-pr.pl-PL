@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 optymalizacji wydajności dzierżawy globalnej dla użytkowników w Chinach
+title: Microsoft 365 globalnej optymalizacji wydajności dzierżawy dla użytkowników z Chin
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -15,124 +15,124 @@ ms.collection:
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Ten artykuł zawiera wskazówki dotyczące optymalizowania wydajności sieci dla użytkowników globalnych usług Microsoft 365 w Chinach.
-ms.openlocfilehash: 6c99245d523048d30124fc8f8b0c01d7c2004327
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Ten artykuł zawiera wskazówki dotyczące optymalizacji wydajności sieci dla chińskich użytkowników globalnych dzierżaw Microsoft 365.
+ms.openlocfilehash: f7e4e69277a252fd1af52559d3bc4360fd3cfd51
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326933"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637874"
 ---
-# <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 optymalizacji wydajności dzierżawy globalnej dla użytkowników w Chinach
+# <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 globalnej optymalizacji wydajności dzierżawy dla użytkowników z Chin
 
 > [!IMPORTANT]
-> Wskazówki te są specyficzne dla scenariuszy użycia, w których użytkownicy Microsoft 365 **w** Chinach łączą się z globalną **dzierżawą usługi Microsoft 365 dzierżawy**. Te wskazówki nie **mają zastosowania** do dzierżaw w Office 365 obsługiwanej przez firmę 21Vianet.
+> Te wskazówki są specyficzne dla scenariuszy użycia, w których **użytkownicy Microsoft 365 przedsiębiorstwa znajdujący się w Chinach** łączą się z **globalną dzierżawą Microsoft 365**. Te wskazówki **nie** mają zastosowania do dzierżaw w Office 365 obsługiwanych przez firmę 21Vianet.
 
 >[!NOTE]
->Ten artykuł jest częścią zestawu artykułów dotyczących optymalizacji Microsoft 365 zdalnych.
+>Ten artykuł jest częścią zestawu artykułów, które dotyczą optymalizacji Microsoft 365 dla użytkowników zdalnych.
 
->- Aby uzyskać omówienie korzystania z rozdzielania dzielonego sieci VPN w celu zoptymalizowania Microsoft 365 dla użytkowników zdalnych, zobacz Omówienie: rozdzielanie sieci VPN dla sieci [Microsoft 365](microsoft-365-vpn-split-tunnel.md).
->- Aby uzyskać szczegółowe wskazówki dotyczące implementowania rozdzielania sieci VPN, zobacz [Implementowanie](microsoft-365-vpn-implement-split-tunnel.md) rozdzielania sieci VPN na Microsoft 365.
->- Aby uzyskać szczegółową listę scenariuszy rozdzielania rozdzielania sieci VPN, zobacz Typowe scenariusze rozdzielania sieci [VPN dla sieci Microsoft 365](microsoft-365-vpn-common-scenarios.md).
->- Aby uzyskać wskazówki dotyczące zabezpieczania Teams ruchu multimedialnego w środowiskach rozdzielanych sieci VPN, zobacz Zabezpieczanie sieci Teams sieci multimedialnej na Teams [sieci VPN](microsoft-365-vpn-securing-teams.md).
->- Aby uzyskać informacje na temat konfigurowania usługi Stream i zdarzeń na żywo w środowiskach VPN, zobacz Szczególne zagadnienia dotyczące przesyłania strumieniowego i wydarzeń na żywo w [środowiskach VPN](microsoft-365-vpn-stream-and-live-events.md).
+>- Aby zapoznać się z omówieniem korzystania z tunelowania podzielonego sieci VPN w celu optymalizacji łączności Microsoft 365 dla użytkowników zdalnych, zobacz [Omówienie tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- Aby uzyskać szczegółowe wskazówki dotyczące implementowania tunelowania podzielonego sieci VPN, zobacz [Implementowanie tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+>- Aby uzyskać szczegółową listę scenariuszy tunelowania podzielonego sieci VPN, zobacz [Typowe scenariusze tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+>- Aby uzyskać wskazówki dotyczące zabezpieczania ruchu Teams multimediów w środowiskach tunelowania podzielonego sieci VPN, zobacz [Zabezpieczanie ruchu Teams multimediów na potrzeby tunelowania podzielonego sieci VPN](microsoft-365-vpn-securing-teams.md).
+>- Aby uzyskać informacje o sposobie konfigurowania strumienia i zdarzeń na żywo w środowiskach sieci VPN, zobacz [Specjalne zagadnienia dotyczące strumienia i zdarzeń na żywo w środowiskach sieci VPN](microsoft-365-vpn-stream-and-live-events.md).
 
-W przypadku przedsiębiorstw z globalną dzierżawą usługi Microsoft 365 i obecnością firmy w Chinach wydajność klienta usługi Microsoft 365 użytkowników w Chinach może być skomplikowana ze względu na czynniki unikatowe dla architektury internetowej firmy China Telco.
+W przypadku przedsiębiorstw z globalnymi dzierżawami Microsoft 365 i obecnością firmy w Chinach Microsoft 365 wydajność klientów dla użytkowników z Chin może być skomplikowana przez czynniki unikatowe dla architektury internetowej Firmy China Telco.
 
-W Chinach są uregulowane połączenia z globalną publiczną Internetem, które przecinają urządzenia obwodowe, które są podatne na wysokie poziomy przeciążenia sieci. To przeciążenie powoduje utratę pakietów i opóźnienie dla całego ruchu internetowego przychodzącego do Chin i z tego kraju.
+Dostawcy usług internetowych z Chin regulowali połączenia offshore z globalnym publicznym Internetem, które przechodzą przez urządzenia obwodowe, które są podatne na wysoki poziom transgranicznych zatorów sieciowych. To przeciążenie powoduje utratę pakietów i opóźnienie dla całego ruchu internetowego do i z Chin.
 
-![Microsoft 365 ruchu — bez sieci.](../media/O365-networking/China-O365-unoptimized.png)
+![Microsoft 365 ruch — niezoptymalizowany.](../media/O365-networking/China-O365-unoptimized.png)
 
-Utrata pakietów i opóźnienia mogą zaszkodzić wydajności usług sieciowych, zwłaszcza tych, które wymagają dużych wymiany danych (takich jak duże transfery plików) lub wymagają niemal wydajności w czasie rzeczywistym (aplikacji audio i wideo).
+Utrata pakietów i opóźnienie są szkodliwe dla wydajności usług sieciowych, zwłaszcza usług, które wymagają dużych wymian danych (takich jak duże transfery plików) lub wymagają wydajności niemal w czasie rzeczywistym (aplikacje audio i wideo).
 
-Celem tego tematu jest podanie najlepszych praktyk w zakresie ograniczania wpływu na ograniczenie granicznych połączeń między sieciami w Chinach na Microsoft 365 sieci. Ten temat nie dotyczy innych typowych problemów z wydajnością ostatniej mili, takich jak problemy z dużymi opóźnieniami pakietów ze względu na złożony routing w obrębie operatorów w Chinach.
+Celem tego tematu jest zapewnienie najlepszych rozwiązań w zakresie łagodzenia wpływu przeciążenia sieci transgranicznej w Chinach na usługi Microsoft 365. W tym temacie nie rozwiązano innych typowych problemów z wydajnością ostatniej mili, takich jak problemy z dużym opóźnieniem pakietów z powodu złożonego routingu w chińskich przewoźnikach.
 
 ## <a name="corporate-network-best-practices"></a>Najlepsze rozwiązania dotyczące sieci firmowej
 
-Wiele przedsiębiorstw z globalną Microsoft 365 dzierżawami i użytkownikami w Chinach zaimplementowało sieci prywatne, które przenoszą ruch sieciowy firmowy między lokalizacjami biur w Chinach a lokalizacjami biurowymi na całym świecie. Te przedsiębiorstwa mogą wykorzystać tę infrastrukturę sieciową w celu uniknięcia przeciążenia sieci przy granicach i zoptymalizowania Microsoft 365 w Chinach.
+Wiele przedsiębiorstw z globalnymi dzierżawami Microsoft 365 i użytkownikami w Chinach wdrożyło sieci prywatne, które obsługują ruch sieciowy firmowy między lokalizacjami biur w Chinach a lokalizacjami na morzu na całym świecie. Przedsiębiorstwa te mogą korzystać z tej infrastruktury sieciowej, aby uniknąć przeciążenia sieci transgranicznej i zoptymalizować wydajność usług Microsoft 365 w Chinach.
 
 > [!IMPORTANT]
-> Tak jak w przypadku wszystkich prywatnych implementacji sieci WAN, należy zawsze skonsultować się z wymaganiami prawnymi dla swojego kraju i/lub regionu, aby zapewnić zgodność z konfiguracją sieci.
+> Podobnie jak w przypadku wszystkich prywatnych implementacji sieci WAN, zawsze należy zapoznać się z wymaganiami prawnymi dotyczącymi kraju i/lub regionu, aby upewnić się, że konfiguracja sieci jest zgodna.
 
-Pierwszym krokiem jest wykonanie wskazówek dotyczących sieci wzorcowej w te sposób: Planowanie sieci i dostosowywanie wydajności [pod](./network-planning-and-performance.md) Microsoft 365. Podstawowym celem powinno być uniknięcie, jeśli to możliwe, uzyskiwania dostępu Microsoft 365 usług internetowych z Internetu w Chinach.
+W pierwszym kroku ważne jest, aby postępować zgodnie z naszymi wytycznymi dotyczącymi sieci testów porównawczych w sekcji [Planowanie sieci i dostrajanie wydajności dla Microsoft 365](./network-planning-and-performance.md). Głównym celem powinno być uniknięcie dostępu do globalnych usług Microsoft 365 z Internetu w Chinach, jeśli to możliwe.
 
-- Wykorzystaj istniejącą sieć prywatną do przenoszenia Microsoft 365 sieciowego między sieciami biurowymi w Chinach i lokalizacjami, które wychodzą z publicznego Internetu poza Chiny. Niemal każde położenie poza Chinami zapewni jasne korzyści. Administratorzy sieci mogą dodatkowo optymalizować ruch wychodzący w obszarach o małych opóźnieniach, które są połączone z [globalną siecią firmy Microsoft](/azure/networking/microsoft-global-network). Przykładem są Hongkong, Singapur, Japonia i Korea Południowa.
-- Skonfiguruj na urządzeniach użytkowników dostęp do sieci firmowej za pośrednictwem połączenia VPN, aby umożliwić Microsoft 365 sieci firmowej przez prywatne łącze sieci firmowej. Upewnij się, że klienci sieci VPN nie są skonfigurowani do korzystania z rozdzielania rozdzielania lub że urządzenia użytkownika zostały skonfigurowane tak, aby ignorować podział na Microsoft 365 sieci. Aby uzyskać dodatkowe informacje na temat optymalizowania łączności VPN Teams ruchu multimedialnego w czasie rzeczywistym, zobacz [tę sekcję](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china).
-- Skonfiguruj sieć tak, aby cała sieć Microsoft 365 twojego prywatnego łącza sieciowego. Jeśli musisz zminimalizować ilość ruchu na linku prywatnym, możesz wybrać, czy w kategorii Optymalizowanie mają być kierowane tylko punkty  końcowe, czy zezwolić na przekierowywowanie żądań do punktów końcowych Zezwalaj i Domyślne do przesyłania Internetu.  Spowoduje to zwiększenie wydajności i zminimalizowanie zużycia przepustowości przez ograniczenie zoptymalizowanego ruchu do krytycznych usług, które są najbardziej poufne na duże opóźnienia i utratę pakietów.
-- Jeśli to możliwe, użyj protokołu UDP zamiast protokołu TCP w przypadku ruchu strumieniowego przesyłania na żywo, na przykład dla połączeń Teams. Protokół UDP oferuje lepszą wydajność przesyłania strumieniowego na żywo niż tcp.
+- Wykorzystaj istniejącą sieć prywatną do przenoszenia ruchu sieciowego Microsoft 365 między chińskimi sieciami biurowymi a lokalizacjami offshore wychodzącymi w publicznym Internecie poza Chinami. Prawie każda lokalizacja poza Chinami zapewni wyraźną korzyść. Administratorzy sieci mogą jeszcze bardziej zoptymalizować ruch wychodzący w obszarach o małych opóźnieniach łączących się z [siecią globalną firmy Microsoft](/azure/networking/microsoft-global-network). Przykładem są Hongkong, Singapur, Japonia i Korea Południowa.
+- Skonfiguruj urządzenia użytkowników, aby uzyskiwać dostęp do sieci firmowej za pośrednictwem połączenia sieci VPN, aby umożliwić Microsoft 365 ruchu do przesyłania prywatnego połączenia offshore sieci firmowej. Upewnij się, że klienci sieci VPN nie są skonfigurowani do używania tunelowania podzielonego lub że urządzenia użytkowników są skonfigurowane do ignorowania tunelowania podzielonego dla ruchu Microsoft 365. Aby uzyskać dodatkowe informacje na temat optymalizowania łączności sieci VPN pod kątem Teams i ruchu multimediów w czasie rzeczywistym, zobacz [tę sekcję](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china).
+- Skonfiguruj sieć tak, aby kierowała cały ruch Microsoft 365 przez prywatne połączenie offshore. Jeśli musisz zminimalizować ilość ruchu w linku prywatnym, możesz wybrać tylko kierowanie punktów końcowych w kategorii **Optymalizuj** i zezwolić na przesyłanie przez Internet żądań **zezwalania** na przesyłanie przez Internet domyślnych punktów końcowych i **domyślnych** . Zwiększy to wydajność i zminimalizuje zużycie przepustowości przez ograniczenie zoptymalizowanego ruchu do usług krytycznych, które są najbardziej wrażliwe na duże opóźnienia i utratę pakietów.
+- Jeśli to możliwe, użyj protokołu UDP zamiast protokołu TCP dla ruchu strumieniowego multimediów na żywo, na przykład w przypadku Teams. Protokół UDP oferuje lepszą wydajność transmisji strumieniowej multimediów na żywo niż TCP.
 
-Aby uzyskać informacje na temat selektywnego rozsyłania Microsoft 365, zobacz [Zarządzanie Office 365 końcowymi](managing-office-365-endpoints.md). Aby uzyskać listę wszystkich adresów URL Office 365 i IP, zobacz Adresy URL Office 365 [i zakresy adresów IP](urls-and-ip-address-ranges.md).
+Aby uzyskać informacje o tym, jak selektywnie kierować ruch Microsoft 365, zobacz [Zarządzanie punktami końcowymi Office 365](managing-office-365-endpoints.md). Aby uzyskać listę wszystkich adresów URL i IP Office 365 na całym świecie, zobacz [Office 365 adresy URL i zakresy adresów IP](urls-and-ip-address-ranges.md).
 
-![Microsoft 365 ruchu — zoptymalizowany.](../media/O365-networking/China-O365-optimized.png)
+![Microsoft 365 ruch — zoptymalizowany.](../media/O365-networking/China-O365-optimized.png)
 
-## <a name="user-best-practices"></a>Najlepsze rozwiązania dla użytkowników
+## <a name="user-best-practices"></a>Najlepsze rozwiązania dotyczące użytkowników
 
-Użytkownicy w Chinach, którzy łączą się z globalną dzierżawcą usługi Microsoft 365 z lokalizacji zdalnych, takich jak dom, kawiarnie, hotele i oddziały firmy bez połączenia z sieciami przedsiębiorstwa, mogą odczuwać niską wydajność sieci, ponieważ ruch między ich urządzeniami Microsoft 365 musi być przenoszony przez zatłoczone, krzyżowe obwody sieciowe w Chinach.
+Użytkownicy w Chinach, którzy łączą się z globalnymi dzierżawami Microsoft 365 z odległych lokalizacji, takich jak domy, kawiarnie, hotele i oddziały bez połączenia z sieciami przedsiębiorstw, mogą doświadczyć niskiej wydajności sieci, ponieważ ruch między ich urządzeniami a Microsoft 365 musi przechodzić przez zatłoczone obwody sieciowe w Chinach.
 
-Jeśli nie wchodzi w grę między sieciami prywatnymi i/lub dostępem VPN do sieci firmowej, nadal można zminimalizować problemy z wydajnością  per użytkowników, szkolenie użytkowników w Chinach w celu śledzenia tych najlepszych rozwiązań.
+Jeśli transgraniczne sieci prywatne i/lub dostęp sieci VPN do sieci firmowej nie są dostępne, problemy z wydajnością poszczególnych użytkowników nadal można rozwiązać, szkoląc użytkowników z Chin, aby postępowali zgodnie z tymi najlepszymi rozwiązaniami.
 
-- Korzystaj z rozbudowanych Office klienckich do buforowania (takich jak Outlook, Teams, OneDrive itp.) i unikaj klientów internetowych. Office buforowania klientów i dostępu w trybie offline mogą znacznie zmniejszyć wpływ przeciążenia i opóźnień sieci.
-- Jeśli dzierżawa Microsoft 365 została skonfigurowana za pomocą funkcji konferencje _głosowe_, użytkownicy Teams mogą dołączać do spotkań za pośrednictwem publicznej sieci telefonicznej. Aby uzyskać więcej informacji, zobacz [Konferencje głosowe w programie Office 365](/microsoftteams/audio-conferencing-in-office-365).
-- W przypadku problemów z wydajnością sieci użytkownicy powinni zgłaszać swojemu działowi IT w celu rozwiązania problemów i w przypadku problemów z usługami firmy Microsoft eskalować ich eskalację do pomocy technicznej firmy Microsoft 365 Microsoft. Nie wszystkie problemy są powodowane przez wydajność sieci krzyżowej.
+- Korzystaj z bogatych klientów Office obsługujących buforowanie (np. Outlook, Teams, OneDrive itp.) i unikaj klientów internetowych. Office funkcje buforowania klientów i dostępu w trybie offline mogą znacznie zmniejszyć wpływ przeciążenia i opóźnienia sieci.
+- Jeśli dzierżawa Microsoft 365 została skonfigurowana przy użyciu funkcji _Konferencje głosowe_, użytkownicy Teams mogą dołączać do spotkań za pośrednictwem publicznej przełączanej sieci telefonicznej (PSTN). Aby uzyskać więcej informacji, zobacz [Konferencje głosowe w Office 365](/microsoftteams/audio-conferencing-in-office-365).
+- Jeśli użytkownicy mają problemy z wydajnością sieci, powinni zgłosić się do swojego działu IT w celu rozwiązywania problemów i eskalować do pomocy technicznej firmy Microsoft, jeśli podejrzewa się problemy z usługami Microsoft 365. Nie wszystkie problemy są spowodowane przez wydajność sieci transgranicznej.
 
-## <a name="optimizing-microsoft-teams-meetings-network-performance-for-users-in-china"></a>Optymalizowanie Microsoft Teams sieci spotkań dla użytkowników w Chinach
+## <a name="optimizing-microsoft-teams-meetings-network-performance-for-users-in-china"></a>Optymalizowanie wydajności sieci spotkań Microsoft Teams dla użytkowników w Chinach
 
-W przypadku organizacji z globalną dzierżawą Microsoft 365 i obecnością w Chinach wydajność Microsoft 365 klientów w Chinach może być skomplikowana ze względu na czynniki unikatowe dla architektury internetowej w Chinach. Wiele firm i szkół zgłosiło dobre wyniki, korzystając z poniższych wskazówek. Zakres ten jest jednak ograniczony do lokalizacji sieciowych użytkowników, które kontrolują konfigurację sieci IT, takich jak lokalizacje biura lub punkty końcowe domu/urządzenia przenośne z łącznością VPN. Microsoft Teams połączenia i spotkania są często używane z lokalizacji zewnętrznych, takich jak biury domowe, komórkowe, w podróży i kawiarnie. Połączenia i spotkania korzystają z ruchu multimedialnego w czasie rzeczywistym, dlatego Teams są szczególnie wrażliwe na przeciążenie sieci.
+W przypadku organizacji z globalną dzierżawą Microsoft 365 i obecnością w Chinach wydajność klienta Microsoft 365 dla użytkowników z Chin może być skomplikowana przez czynniki unikatowe dla chińskiej architektury internetowej. Wiele firm i szkół zgłosiło dobre wyniki, postępjąc zgodnie z tymi wskazówkami. Zakres ten jest jednak ograniczony do lokalizacji sieci użytkowników, które są pod kontrolą konfiguracji sieci IT, na przykład lokalizacji biurowych lub domowych/mobilnych punktów końcowych z łącznością sieci VPN. Microsoft Teams połączenia i spotkania są często używane z zewnętrznych lokalizacji, takich jak biura domowe, lokalizacje mobilne, w drodze i kawiarnie. Ponieważ połączenia i spotkania opierają się na ruchu multimedialnym w czasie rzeczywistym, te środowiska Teams są szczególnie wrażliwe na przeciążenie sieci.
 
-W efekcie firma Microsoft współpracuje z dostawcami usług telekomunikacyjnych w celu przenoszenia ruchu multimedialnego w czasie rzeczywistym usług Teams i Skype dla firm Online przy użyciu wyższej jakości ścieżki sieciowej między połączeniami krajowych i publicznego Internetu w Chinach a usługami Teams i Skype w globalnej chmurze firmy Microsoft 365. Ta funkcja wywęsła ponad 10-dniowy wzrost utraty pakietów i inne kluczowe metryki wpływające na środowisko użytkownika.
+W związku z tym firma Microsoft nawiązała współpracę z dostawcami usług telekomunikacyjnych w celu przenoszenia ruchu multimedialnego Teams i Skype dla firm Online w czasie rzeczywistym przy użyciu wyższej jakości, preferencyjnej ścieżki sieciowej między krajowymi i publicznymi połączeniami internetowymi w Chinach oraz usługami Teams i Skype w chmurze globalnej Microsoft 365. Ta funkcja doprowadziła do ponad dziesięciokrotnej poprawy utraty pakietów i innych kluczowych metryk wpływających na środowisko użytkownika.
 
 >[!IMPORTANT]
->Obecnie te ulepszenia nie obejmują uczestnictwa w spotkaniach na żywo w programie Microsoft Live Events, takich jak duże spotkania w stylu emisji lub "miejskim" za pomocą programu Teams lub usługi Microsoft Stream. Aby wyświetlić spotkanie w zdarzeniach na żywo, użytkownicy w Chinach muszą korzystać z sieci prywatnej lub rozwiązania SDWAN/VPN. Ulepszenia sieci będą jednak korzystne dla użytkowników, którzy prezentują lub zakładają spotkanie na żywo, ponieważ to środowisko pełni rolę zwykłego spotkania Teams dla producenta lub osoby presenterowej.
+>Obecnie te ulepszenia nie dotyczą uczestniczenia w spotkaniach z wydarzeniami na żywo firmy Microsoft, takich jak spotkania w stylu dużych transmisji lub ratusza przy użyciu Teams lub Microsoft Stream. Ulepszenia sieci będą korzystne dla użytkowników prezentujących lub tworzących spotkania zdarzeń na żywo, ponieważ to środowisko działa jako regularne spotkanie Teams dla producenta lub prezentera.
 
-### <a name="organization-network-best-practices-for-teams-meetings"></a>Najlepsze rozwiązania dotyczące spotkań w sieci Teams organizacji
+### <a name="organization-network-best-practices-for-teams-meetings"></a>Najlepsze rozwiązania dotyczące sieci organizacji dotyczące spotkań Teams
 
-Należy rozważyć sposób wykorzystania tych ulepszeń sieci, mając na uwagę, że poprzednie wskazówki dotyczące rozważania rozszerzenia sieci prywatnej w celu uniknięcia przeciążenia sieci przez granice. Istnieją dwie ogólne opcje sieci biurowych organizacji:
+Należy rozważyć sposób wykorzystania tych ulepszeń sieci, biorąc pod uwagę, że w poprzednich wskazówkach rozważysz rozszerzenie sieci prywatnej, aby uniknąć przeciążenia sieci transgranicznej. Istnieją dwie ogólne opcje sieci biurowych organizacji:
 
-1. Nie robisz nic nowego. Należy postępować zgodnie z wcześniejszymi wskazówkami na temat obejścia sieci prywatnej, aby uniknąć przeciążenia sieci przez granice. Teams w czasie rzeczywistym ruch multimedialny będzie wykorzystywać konfigurację, tak jak wcześniej.
-2. Wdrożenie wzorca podziału/wdrożenia hybrydowego.
-   - Użyj poprzednich wskazówek dotyczących całego ruchu oflagowanych w celu optymalizacji Teams spotkania i wywoływania ruchu multimedialnego w czasie rzeczywistym.
-   - Przekieruj Teams spotkania i połączenia z ruchem multimedialnym w czasie rzeczywistym za pośrednictwem publicznego Internetu. Zapoznaj się z poniższymi informacjami, aby uzyskać szczegółowe informacje na temat identyfikowania ruchu w sieci multimedialnej w czasie rzeczywistym.
+1. Nie rób nic nowego. Postępuj zgodnie z wcześniejszymi wskazówkami dotyczącymi obejścia sieci prywatnej, aby uniknąć zatorów transgranicznych. Teams ruch multimedialny w czasie rzeczywistym będzie korzystać z tej konfiguracji, jak poprzednio.
+2. Zaimplementuj wzorzec podziału/hybrydowego.
+   - Skorzystaj z poprzednich wskazówek dotyczących całego ruchu oflagowanego w celu optymalizacji, z wyjątkiem spotkań Teams i wywoływania ruchu multimedialnego w czasie rzeczywistym.
+   - Kierowanie Teams spotkania i wywoływanie ruchu medialnego w czasie rzeczywistym przez publiczny Internet. Zapoznaj się z poniższymi informacjami, aby uzyskać szczegółowe informacje na temat identyfikowania ruchu sieciowego multimediów w czasie rzeczywistym.
 
-Wysyłanie Teams audio i wideo w czasie rzeczywistym za pośrednictwem publicznego Internetu, który korzysta z wysokiej jakości łączności, może kosztować znacznie więcej, ponieważ wysyłanie tego ruchu przez sieć prywatną jest bezpłatne w porównaniu z płatnością. Podobnych dodatkowych korzyści mogą mieć użytkownicy, którzy również korzystali z klientów SDWAN lub VPN. Niektóre organizacje preferują również ogólne przechodzenie do większej części danych w publicznych połączeniach internetowych.
+Wysyłanie Teams ruchu audio i wideo w czasie rzeczywistym za pośrednictwem publicznego Internetu, który korzysta z łączności wyższej jakości, może spowodować znaczne oszczędności, ponieważ wysyłanie tego ruchu przez sieć prywatną jest bezpłatne, a nie płatne. Mogą istnieć podobne dodatkowe korzyści, jeśli użytkownicy korzystają również z sieci SDWAN lub klientów sieci VPN. Niektóre organizacje mogą również preferować, aby więcej danych przechodziło przez publiczne połączenia internetowe jako ogólną praktykę.
 
-Te same opcje mogą być stosowane do konfiguracji SDWAN lub VPN. Na przykład użytkownik używa sieci SDWAN lub VPN do trasowania ruchu Microsoft 365 do sieci firmowej, Microsoft 365 następnie korzysta z prywatnego rozszerzenia tej sieci w celu uniknięcia przeciążenia na linii krzyżowej. W sieci SDWAN lub VPN użytkownika można teraz skonfigurować tak, aby wykluczyć Teams i dzwonić do ruchu w czasie rzeczywistym z routingu VPN. Ta konfiguracja sieci VPN jest określana mianem rozdzielania rozdzielania. Aby [uzyskać więcej informacji, zobacz Rozdzielanie sieci VPN Office 365](/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel) sieci.
+Te same opcje mogą dotyczyć konfiguracji SDWAN lub VPN. Na przykład użytkownik używa sieci SDWAN lub VPN do kierowania ruchu Microsoft 365 do sieci firmowej, a następnie korzysta z prywatnego rozszerzenia tej sieci, aby uniknąć przeciążenia transgranicznego. Sieć SDWAN lub SIEĆ VPN użytkownika można teraz skonfigurować tak, aby wykluczała Teams spotkania i wywoływania ruchu w czasie rzeczywistym z routingu sieci VPN. Ta konfiguracja sieci VPN jest określana jako tunelowanie podzielone. Aby uzyskać więcej informacji, zobacz [Tunelowanie podzielone sieci VPN, aby uzyskać Office 365](/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel).
 
-Możesz również nadal używać swojego urządzenia SDWAN lub VPN do wszystkich Microsoft 365 ruchu, w tym do Microsoft Teams ruchu w czasie rzeczywistym. Firma Microsoft nie ma żadnych zaleceń dotyczących używania rozwiązań SDWAN i VPN.
+Możesz również nadal używać sieci SDWAN lub VPN dla całego ruchu Microsoft 365, w tym dla ruchu Microsoft Teams w czasie rzeczywistym. Firma Microsoft nie ma żadnych zaleceń dotyczących korzystania z rozwiązań SDWAN lub VPN.
 
-### <a name="home-mobile-and-user-network-best-practices-for-teams-meetings"></a>Najlepsze rozwiązania dotyczące sieci dla użytkowników domowych, urządzeń przenośnych i użytkowników w Teams spotkaniach
+### <a name="home-mobile-and-user-network-best-practices-for-teams-meetings"></a>Najlepsze rozwiązania dotyczące sieci domowej, mobilnej i użytkownika dotyczące spotkań Teams
 
-Użytkownicy w Chinach mogą skorzystać z tych ulepszeń, łącząc się z publiczną usługą internetową w Chinach za pomocą telefonu stacjonarnego lub komórkowego. Teams w czasie rzeczywistym ruchu audio i wideo w publicznym Internecie bezpośrednio korzysta z lepszej łączności i jakości.
+Użytkownicy w Chinach mogą korzystać z tych ulepszeń po prostu łącząc się z publiczną usługą internetową w Chinach za pomocą połączenia stacjonarnego lub mobilnego. Teams ruch audio i wideo w czasie rzeczywistym w publicznym Internecie bezpośrednio korzysta z ulepszonej łączności i jakości.
 
-Jednak dane z innych usług Microsoft 365 — ani innego ruchu w sieci Teams, takich jak pliki lub czaty — nie będą od razu korzystać z tych ulepszeń. Użytkownicy spoza sieci organizacji mogą w dalszym ciągu odczuwać niską wydajność sieci dla tego ruchu. Jak omówiono w tym artykule, możesz zmniejszyć te efekty przy użyciu sieci VPN lub SDWAN. Użytkownicy mogą również używać rozbudowanych klientów komputerowych za pośrednictwem klientów sieci Web, którzy obsługują buforowanie w aplikacji w celu ograniczenia problemów z siecią.
+Jednak dane z innych usług Microsoft 365 i innego ruchu w Teams, takich jak czat lub pliki, nie będą bezpośrednio korzystać z tych ulepszeń. Użytkownicy spoza sieci organizacji mogą nadal doświadczać niskiej wydajności sieci dla tego ruchu. Jak opisano w tym artykule, można wyeliminować te skutki przy użyciu sieci VPN lub SDWAN. Użytkownicy mogą również używać bogatych klientów klasycznych za pośrednictwem klientów internetowych, którzy obsługują buforowanie w aplikacji w celu rozwiązania problemów z siecią.
 
-### <a name="identifying-teams-real-time-media-network-traffic"></a>Identyfikowanie Teams ruchu w sieci medialnej w czasie rzeczywistym
+### <a name="identifying-teams-real-time-media-network-traffic"></a>Identyfikowanie Teams ruchu sieciowego multimediów w czasie rzeczywistym
 
-W przypadku konfigurowania urządzenia sieciowego lub konfiguracji VPN/SDWAN musisz wykluczyć tylko Teams ruchu audio i wideo w czasie rzeczywistym. Szczegóły ruchu można znaleźć dla identyfikatora 11 na oficjalnej liście adresów URL Office 365 [i zakresów adresów IP](urls-and-ip-address-ranges.md#skype-for-business-online-and-microsoft-teams). Wszystkie pozostałe konfiguracje sieci powinny pozostać niezmienione.
+Aby skonfigurować urządzenie sieciowe lub konfigurację sieci VPN/SDWAN, należy wykluczyć tylko Teams ruchu audio i wideo multimediów w czasie rzeczywistym. Szczegóły ruchu można znaleźć dla identyfikatora 11 na oficjalnej liście [adresów URL Office 365 i zakresów adresów IP](urls-and-ip-address-ranges.md#skype-for-business-online-and-microsoft-teams). Wszystkie inne konfiguracje sieci powinny pozostać w niezmienionej postaci.
 
-Firma Microsoft nieustannie pracuje nad ulepszaniem Microsoft 365 użytkowników i wydajności klientów w zakresie najszerszego zakresu architektur i cech sieciowych. Odwiedź [witrynę Office 365 sieci Community](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking), aby rozpocząć konwersację lub dołączyć do niej, znaleźć zasoby oraz przesłać sugestie i sugestie dotyczące funkcji
+Firma Microsoft nieustannie pracuje nad poprawą Microsoft 365 środowiska użytkownika i wydajności klientów w zakresie możliwie najszerszego zakresu architektur i cech sieciowych. Odwiedź [Office 365 Networking Tech Community](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking), aby rozpocząć lub dołączyć do konwersacji, znaleźć zasoby oraz przesłać żądania i sugestie dotyczące funkcji
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
-[Omówienie: rozdzielanie sieci VPN na Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+[Omówienie: tunelowanie podzielone sieci VPN dla Microsoft 365](microsoft-365-vpn-split-tunnel.md)
 
-[Implementowanie rozdzielania sieci VPN na Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+[Implementowanie tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
 
-[Typowe scenariusze rozdzielania sieci VPN dla sieci Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+[Typowe scenariusze tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-common-scenarios.md)
 
-[Zabezpieczanie Teams multimediów na przykład przez rozdzielanie sieci VPN](microsoft-365-vpn-securing-teams.md)
+[Zabezpieczanie ruchu multimediów aplikacji Teams na potrzeby tunelowania podziału sieci VPN](microsoft-365-vpn-securing-teams.md)
 
-[Szczególne zagadnienia dotyczące przesyłania strumienia i wydarzeń na żywo w środowiskach VPN](microsoft-365-vpn-stream-and-live-events.md)
+[Specjalne zagadnienia dotyczące strumienia i wydarzeń na żywo w środowiskach sieci VPN](microsoft-365-vpn-stream-and-live-events.md)
 
-[Microsoft 365 dotyczące łączności sieciowej](microsoft-365-network-connectivity-principles.md)
+[zasady łączności sieciowej Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
-[Ocenianie Microsoft 365 sieciowej](assessing-network-connectivity.md)
+[Ocena łączności sieciowej na platformie Microsoft 365](assessing-network-connectivity.md)
 
-[Microsoft 365 sieci i dostosowywania wydajności](network-planning-and-performance.md)
+[Microsoft 365 dostrajanie sieci i wydajności](network-planning-and-performance.md)
 
-[Nowoczesne mechanizmy kontroli zabezpieczeń można zapewnić specjalistom zabezpieczeń i informatykom w alternatywnych, obecnie unikatowych scenariuszach pracy zdalnej (blog zespołu zabezpieczeń firmy Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+[Alternatywne sposoby zapewniania przez specjalistów ds. zabezpieczeń i działów IT nowoczesnych mechanizmów kontroli zabezpieczeń w dzisiejszych unikatowych scenariuszach pracy zdalnej (blog zespołu ds. zabezpieczeń firmy Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
-[Zwiększanie wydajności sieci VPN w firmie Microsoft: Windows 10 profilów SIECI VPN w celu umożliwienia automatycznego na połączenia](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+[Zwiększanie wydajności sieci VPN w firmie Microsoft: używanie Windows 10 profilów sieci VPN do zezwalania na połączenia automatyczne](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[Vpn: jak firma Microsoft łączy się ze swoimi pracownikami zdalnymi](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+[Uruchamianie w sieci VPN: jak firma Microsoft utrzymuje połączenie ze swoimi zdalnymi pracownikami](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Sieć globalna firmy Microsoft](/azure/networking/microsoft-global-network)

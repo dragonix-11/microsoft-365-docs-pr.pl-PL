@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Postępuj zgodnie z tymi instrukcjami, aby utworzyć stronę Informacje o nas z nazwą firmy, adresem, numerem telefonu, adresem URL witryny internetowej, logo i godzinami pracy w Microsoft Bookings.
-ms.openlocfilehash: 5b80de4d94010a7e13b58289d6f63da13384d57d
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 1c1b50215b1e81c0bb3af936ba00e1beefa7965c
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622534"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637764"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>Wprowadź informacje biznesowe w Microsoft Bookings
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 W Microsoft Bookings strona Informacje biznesowe w aplikacji internetowej zawiera wszystkie szczegóły, które zwykle można znaleźć na stronie "Informacje o nas" firmy. Te szczegóły obejmują odpowiednią nazwę, adres, numer telefonu, adres URL witryny internetowej, adres URL zasad ochrony prywatności, logo i godziny pracy.
 

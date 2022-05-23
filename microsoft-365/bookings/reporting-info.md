@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Dowiedz się, jak można wyświetlić 4-miesięczny widok działania Bookings
-ms.openlocfilehash: 8f6ddcdc7320013698b1ba9f0ad2f5b1cd1e2e22
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: c39515852d0a45adfb3faeb5efaf510ee2c27236
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023728"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637213"
 ---
 # <a name="reporting-info-for-bookings"></a>Informacje dotyczące raportowania dla Bookings
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Teraz w pliku TSV można wyświetlić czteromiesięczny widok kalendarza Bookings. W pliku TSV zostaną wyświetlone dane z czterech miesięcy, ale w ciągu roku możesz wybrać różne okresy czterech miesięcy.
 
@@ -61,6 +58,7 @@ Ulepszony raport zawiera teraz następujące pola.
 - **Waluty**   Typ waluty ustawiony dla firmy.
 - **Uczestnicy DW**   Adresaci, którzy będą otrzymywać powiadomienia e-mail o rezerwacji. Można to określić w aplikacji Teams podczas tworzenia rezerwacji.
 - **Liczba uczestników z kontami**   Ilu klientów zarezerwowało usługę rezerwacji grupowej.
-- **Włączone powiadomienia tekstowe**   Czy klienci mogą otrzymywać powiadomienia sms związane z tekstem.
+- **Włączone powiadomienia tekstowe**   Czy klienci mogą otrzymywać powiadomienia związane z tekstem SMS.
 - **Pola niestandardowe**   Wszystkie pytania i odpowiedzi związane z pojedynczą rezerwacją są łączone w tym polu.
 - **Identyfikator rezerwacji**   Jest to przydatne do identyfikowania tych samych rezerwacji usługi grupowej.
+- **Śledzenie danych**   Śledzenie metryk identyfikatorów kampanii używanych w kampaniach marketingowych.

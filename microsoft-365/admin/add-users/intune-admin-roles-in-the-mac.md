@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: Centrum administracyjne platformy Microsoft 365 umożliwia zarządzanie niektórymi rolami Microsoft Intune, które są mapowane na funkcje biznesowe i dają uprawnienia do wykonywania określonych zadań.
-ms.openlocfilehash: efff2d426d40103369126c082fcb8d7be44e031c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 61c73ea49b132dee12839112bdc08624a750989f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436762"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636267"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Intune role administratora w Centrum administracyjne platformy Microsoft 365
 
@@ -47,11 +47,11 @@ W Centrum administracyjne platformy Microsoft 365 możesz przejść do pozycji *
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administracja delegowana dla partnerów firmy Microsoft
 
-Jeśli pracujesz z partnerem firmy Microsoft, możesz przypisać mu role administratora. Z kolei on może przypisać użytkownikom w Twojej firmie — lub swojej — role administratora. Możesz chcieć, aby partner to zrobił, na przykład w sytuacji, gdy konfiguruje za Ciebie Twoją organizację online i zarządza nią.
+Jeśli pracujesz z partnerem firmy Microsoft, możesz przypisać mu role administratora. Z kolei on może przypisać użytkownikom w Twojej firmie — lub swojej — role administratora. Możesz chcieć, aby to zrobili, na przykład jeśli konfigurują twoją organizację online i zarządzają tą organizacją.
   
 Partner może przypisywać następujące role: 
   
-- Pełna administracja, która ma uprawnienia równoważne administratorowi globalnemu z wyjątkiem zarządzania uwierzytelnianiem wieloskładnikowym za pośrednictwem Centrum partnerskiego.
+- Pełna administracja, która ma uprawnienia równoważne administratorowi globalnemu, z wyjątkiem zarządzania uwierzytelnianiem wieloskładnikowym za pośrednictwem Centrum partnerskiego.
 
 - Ograniczona administracja, która ma uprawnienia równoważne administratorowi pomocy technicznej.
 

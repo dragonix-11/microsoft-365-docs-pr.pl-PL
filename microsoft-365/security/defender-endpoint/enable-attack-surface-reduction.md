@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 03cdc163c1f560462fa12f18d4e6101665d766de
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788155"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637918"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Włączanie reguł zmniejszania obszaru ataków
 
@@ -38,7 +38,7 @@ ms.locfileid: "64788155"
 - System Windows
 
 > [!TIP]
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [Reguły zmniejszania obszaru ataków](attack-surface-reduction.md) (reguły ASR) pomagają zapobiegać działaniom, które złośliwe oprogramowanie często nadużywa w celu naruszenia zabezpieczeń urządzeń i sieci.
 
@@ -71,9 +71,6 @@ Każda reguła usługi ASR zawiera jedno z czterech ustawień:
 - **Inspekcja**: oceń, jak reguła usługi ASR wpłynie na organizację, jeśli zostanie włączona
 - **Ostrzegaj**: Włącz regułę usługi ASR, ale zezwalaj użytkownikowi końcowemu na obejście bloku
 
-> [!IMPORTANT]
-> Obecnie tryb ostrzegania nie jest obsługiwany dla trzech reguł usługi ASR podczas konfigurowania reguł usługi ASR w Microsoft Endpoint Manager (MEM). Aby dowiedzieć się więcej, zobacz Przypadki, w [których tryb ostrzegania nie jest obsługiwany](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
-
 Zalecamy używanie reguł usługi ASR z licencją Windows E5 (lub podobną jednostką SKU licencjonowania), aby korzystać z zaawansowanych funkcji monitorowania i raportowania dostępnych w [usłudze Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md) (Defender for Endpoint). Jeśli jednak masz inną licencję, taką jak Windows Professional lub Windows E3, które nie obejmują zaawansowanych funkcji monitorowania i raportowania, możesz opracować własne narzędzia do monitorowania i raportowania oprócz zdarzeń generowanych w każdym punkcie końcowym po wyzwoleniu reguł usługi ASR (na przykład przekazywania zdarzeń).
 
 > [!TIP]
@@ -82,7 +79,7 @@ Zalecamy używanie reguł usługi ASR z licencją Windows E5 (lub podobną jedno
 Reguły zmniejszania obszaru ataków można włączyć przy użyciu dowolnej z następujących metod:
 
 - [Microsoft Intune](#intune)
-- [Mobile Zarządzanie urządzeniami (MDM)](#mdm)
+- [Zarządzanie urządzeniami przenośnymi (MDM)](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Zasady grupy](#group-policy)
 - [PowerShell](#powershell)
@@ -271,9 +268,9 @@ Przykład:
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. W Microsoft Endpoint Configuration Manager przejdź do obszaru **Zasoby i zgodność** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
+1. W programie Microsoft Endpoint Configuration Manager przejdź do pozycji **Zasoby i zgodność**\>**Ochrona punktu końcowego**\>**Windows Defender Exploit Guard**.
 
-2. Wybierz pozycję **Strona główna** \> **Utwórz zasady funkcji Exploit Guard**.
+2. Wybierz pozycję **Narzędzia główne** \> **Utwórz zasady Exploit Guard Policy**.
 
 3. Wprowadź nazwę i opis, wybierz pozycję **Zmniejszanie obszaru podatnego na ataki**, a następnie wybierz pozycję **Dalej**.
 
@@ -376,7 +373,7 @@ Przykład:
     > [!IMPORTANT]
     > Służy `Add-MpPreference` do dołączania lub dodawania aplikacji do listy. `Set-MpPreference` Użycie polecenia cmdlet spowoduje zastąpienie istniejącej listy.
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 - [Dokumentacja reguł zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md)
 - [Ocena redukcji obszaru ataków](evaluate-attack-surface-reduction.md)

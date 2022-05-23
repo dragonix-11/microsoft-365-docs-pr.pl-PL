@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Po zapisaniu wszystkich danych użytkownika byłego pracownika i uzyskaniu do nich dostępu możesz usunąć konto byłego pracownika w Centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: d6e53dd8d14add9383e3eff9d3c1d90a5087ec45
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5a1929ef1a5ff26ee0e84993f0a7cabb5ebc4617
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436278"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636179"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Krok 7. Usuwanie konta użytkownika byłego pracownika
 
@@ -43,7 +43,7 @@ Po zapisaniu i uzyskaniu dostępu do wszystkich danych użytkownika byłego prac
 2. Wybierz nazwę pracownika, który chcesz usunąć.
 3. W obszarze nazwa użytkownika wybierz pozycję **Usuń użytkownika**. Wybierz odpowiednie opcje dla tego użytkownika, a następnie wybierz pozycję **Usuń użytkownika**. Jeśli masz już dostęp innego użytkownika do poczty e-mail tego użytkownika i OneDrive, nie musisz tego robić ponownie tutaj.
 
-Po usunięciu użytkownika jego konto staje się nieaktywne na około 30 dni. Przed upływem tego czasu można przywrócić konto  później zostanie ono trwale usunięte.
+Po usunięciu użytkownika jego konto staje się nieaktywne na około 30 dni. Do tego czasu musisz przywrócić konto, zanim zostanie ono trwale usunięte.
 
 ## <a name="watch-delete-a-former-employees-user-account"></a>Obejrzyj: Usuwanie konta użytkownika byłego pracownika
 
@@ -70,8 +70,8 @@ Poniżej przedstawiono informacje o tym, jak usunąć pracownika z poczty e-mail
 |Co możesz zrobić|Jak to zrobić|
 |:-----|:-----|
 |Zamknięcie sesji (na przykład aplikacji Outlook w sieci Web, programu Outlook, programu Exchange Active Sync itp.) i wymuszenie otwarcia nowej sesji|Resetuj hasło|
-|Zamknięcie sesji i zablokowanie dostępu do przyszłych sesji (dla wszystkich protokołów)|Wyłącz konto. Na przykład (w centrum administracyjnym Exchange lub przy użyciu programu PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|Zamknięcie sesji dla konkretnego protokołu (na przykład ActiveSync)|Wyłącz protokół. Na przykład (w centrum administracyjnym Exchange lub przy użyciu programu PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|Zamknięcie sesji i zablokowanie dostępu do przyszłych sesji (dla wszystkich protokołów)|Wyłącz konto. Na przykład w centrum administracyjnym Exchange lub przy użyciu programu PowerShell: <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Zamknięcie sesji dla konkretnego protokołu (na przykład ActiveSync)|Wyłącz protokół. Na przykład w centrum administracyjnym Exchange lub przy użyciu programu PowerShell: <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 |
 
 Powyższe operacje można wykonać w trzech miejscach:

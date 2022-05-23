@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 52105373f0bc6bb70f6433eba4dacb4580a0f804
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 9008fe0d6a4c46d544e4d806c3a15b24c53f2f10
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416721"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637999"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Przejrzyj dzienniki zdarzeń i kody błędów, aby rozwiązać problemy z programem antywirusowym Microsoft Defender
 
@@ -2731,7 +2731,7 @@ Ten błąd wskazuje, że może wystąpić problem z produktem zabezpieczającym.
 </tr><tr><td>Rozwiązanie</td><td>
 <ol>
 <li>Zaktualizuj definicje. Albo:<ol>
-<li>Kliknij przycisk <b>Aktualizuj definicje</b> na karcie <b>Aktualizacja</b> w Program antywirusowy Microsoft Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Lub
+<li>Pobierz aktualizacje analizy zabezpieczeń w aplikacji Zabezpieczenia Windows. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Lub
 </li>
 <li>Pobierz najnowsze definicje z <a href="https://aka.ms/wdsi">witryny Microsoft Security Intelligence</a>.
 Uwaga: rozmiar pliku definicji pobranego z witryny może przekraczać 60 MB i nie powinien być używany jako długoterminowe rozwiązanie do aktualizowania definicji.
@@ -3202,7 +3202,7 @@ Jest to błąd wewnętrzny. Mógł zostać wyzwolony, gdy skanowanie nie powiedz
 </table>
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

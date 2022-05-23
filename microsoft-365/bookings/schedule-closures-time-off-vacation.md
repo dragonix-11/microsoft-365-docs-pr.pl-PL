@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Zaplanuj godziny zamknięcia biura i nieobecności pracownika z kalendarza aplikacji Bookings, aby pracownicy mogli być oznaczani jako niedostępni dla rezerwacji w określonych godzinach.
-ms.openlocfilehash: 32f1d930daf44d000a1dbf03eded3f05fbb976eb
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 52b2b8ea912cb876dd2d6e8b8efcdcc3bb90ce1f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468399"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637456"
 ---
 # <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Planowanie Bookings zamknięcia firmy, czasu wolnego i czasu urlopu
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Czasami warto zamknąć firmę na wakacje lub imprezy zespołowe, albo pracownicy będą potrzebować czasu wolnego, gdy są chorzy, na wakacjach lub niedostępni z innych powodów. Możesz zaplanować czas wolny od kalendarza Microsoft Bookings, a pracownik będzie niedostępny dla rezerwacji w określonym czasie. Po ponownym otwarciu firmy lub powrocie pracowników do pracy wszyscy zostaną umieszczeni na stronie rezerwacji zgodnie z ustalonymi godzinami pracy.
 

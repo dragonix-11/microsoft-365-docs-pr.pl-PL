@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się więcej o nowej funkcji przydziałów.
 ms.date: 05/12/2022
-ms.openlocfilehash: c251d653aa95fa489a2482ae0c9ef80c9851fc4b
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 60c2fdcd451f5926cbda84d8e5236176314bd3f5
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403321"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636091"
 ---
 # <a name="allotment-basics"></a>Podstawy przydziału
 
@@ -54,4 +54,4 @@ Aby rozpocząć pracę z przydziałem, musisz być administratorem globalnym lub
 
 ## <a name="getting-started"></a>Wprowadzenie
 
-Funkcja przydziałów jest dostępna w prywatnej wersji zapoznawczej tylko dla niewielkiej liczby klientów. Jeśli chcesz dołączyć, wypełnij ten formularz: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+Funkcja przydziałów jest dostępna w prywatnej wersji zapoznawczej tylko dla kilku klientów. Jeśli chcesz dołączyć, wypełnij ten formularz: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

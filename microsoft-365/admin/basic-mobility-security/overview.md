@@ -19,16 +19,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Zarządzaj urządzeniami przenośnymi połączonymi z organizacją Microsoft 365 i zabezpieczaj je, konfigurując i korzystając z pakietu Basic Mobility and Security.
-ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435706"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636135"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Omówienie pakietu Basic Mobility and Security dla Microsoft 365
 
-Urządzeniami przenośnymi można zarządzać i zabezpieczać je po nawiązaniu połączenia z organizacją Microsoft 365 przy użyciu pakietu Basic Mobility and Security. Urządzenia przenośne, takie jak smartfony i tablety, które są używane do uzyskiwania dostępu do służbowej poczty e-mail, kalendarza, kontaktów i dokumentów, odgrywają dużą rolę w upewnieniu się, że pracownicy wykonują swoją pracę w dowolnym momencie, z dowolnego miejsca. Dlatego ważne jest, aby chronić informacje organizacji, gdy użytkownicy korzystają z urządzeń. Usługa Basic Mobility and Security umożliwia ustawianie zasad zabezpieczeń urządzeń i reguł dostępu oraz czyszczenie urządzeń przenośnych w przypadku ich utraty lub kradzieży.
+Urządzeniami przenośnymi można zarządzać i zabezpieczać je po nawiązaniu połączenia z organizacją Microsoft 365 przy użyciu pakietu Basic Mobility and Security. Urządzenia przenośne, takie jak smartfony i tablety, które są używane do uzyskiwania dostępu do służbowej poczty e-mail, kalendarza, kontaktów i dokumentów, odgrywają znaczącą rolę w zapewnieniu, że pracownicy wykonują swoją pracę w dowolnym czasie i z dowolnego miejsca. Dlatego ważne jest, aby chronić informacje organizacji, gdy użytkownicy korzystają z urządzeń. Usługa Basic Mobility and Security umożliwia ustawianie zasad zabezpieczeń urządzeń i reguł dostępu oraz czyszczenie urządzeń przenośnych w przypadku ich utraty lub kradzieży.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Konfiguracja pakietu Basic Mobility and Security.":::
 

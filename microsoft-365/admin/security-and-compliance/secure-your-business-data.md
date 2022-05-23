@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Ochrona firmowych wiadomości e-mail i danych przed zagrożeniami cybernetycznymi, w tym oprogramowaniem wymuszającym okup, wyłudzaniem informacji i złośliwymi załącznikami.
-ms.openlocfilehash: 994223ff7f8f3da9d4d8b75056327214dfc310b0
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 47e9d935cdf6b44d9ba45cd57d8eb3efeabdf0a3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622794"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637676"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla firm
 
@@ -258,7 +258,7 @@ Zalecamy rozpoczęcie pracy z tą ochroną przez utworzenie zasad dla najważnie
 |Ustawienie lub opcja|Zalecane ustawienie|
 |---|---|
 |Name (Nazwa)|Domena i najcenniejszy personel kampanii|
-|Opis|Upewnij się, że najważniejsi pracownicy i nasza domena nie są personifikowane.|
+|Opis|Upewnij się, że najważniejszy personel i nasza domena nie są personifikowane.|
 |Dodawanie użytkowników w celu ochrony|Wybierz **pozycję + Dodaj warunek. Adresat to**. Wpisz nazwy użytkowników lub wprowadź adres e-mail kandydata, kierownika kampanii i innych ważnych pracowników. Możesz dodać maksymalnie 20 adresów wewnętrznych i zewnętrznych, które chcesz chronić przed personifikacją.|
 |Dodawanie domen w celu ochrony|Wybierz **pozycję + Dodaj warunek. Domena adresata to**. Wprowadź domenę niestandardową skojarzoną z subskrypcją Microsoft 365, jeśli została zdefiniowana. Możesz wprowadzić więcej niż jedną domenę.|
 |Wybieranie akcji|Jeśli wiadomość e-mail jest wysyłana przez personifikowanego użytkownika: wybierz pozycję **Przekieruj wiadomość na inny adres e-mail**, a następnie wpisz adres e-mail administratora zabezpieczeń; na przykład securityadmin@contoso.com. <br/> Jeśli wiadomość e-mail jest wysyłana przez domenę personifikaną: wybierz pozycję **Wiadomość kwarantanny**.|
@@ -271,7 +271,7 @@ Zalecamy rozpoczęcie pracy z tą ochroną przez utworzenie zasad dla najważnie
 
 ## <a name="protect-against-malicious-attachments-files-and-urls"></a>Ochrona przed złośliwymi załącznikami, plikami i adresami URL
 
-Osoby regularnie wysyłają, odbierają i udostępniają załączniki, takie jak dokumenty, prezentacje, arkusze kalkulacyjne i inne. Nie zawsze łatwo jest stwierdzić, czy załącznik jest bezpieczny, czy złośliwy, patrząc na wiadomość e-mail. Ochrona usługi Office 365 w usłudze Microsoft Defender obejmuje ochronę Sejf załącznika, ale ta ochrona nie jest domyślnie włączona. Zalecamy utworzenie nowej reguły, aby rozpocząć korzystanie z tej ochrony. Ta ochrona obejmuje pliki w SharePoint, OneDrive i Microsoft Teams.
+Osoby regularnie wysyłają, odbierają i udostępniają załączniki, takie jak dokumenty, prezentacje, arkusze kalkulacyjne i inne. Nie zawsze łatwo jest stwierdzić, czy załącznik jest bezpieczny, czy złośliwy, patrząc na wiadomość e-mail. Ochrona usługi Office 365 w usłudze Microsoft Defender obejmuje ochronę przed załącznikami Sejf, ale ta ochrona nie jest domyślnie włączona. Zalecamy utworzenie nowej reguły, aby rozpocząć korzystanie z tej ochrony. Ta ochrona obejmuje pliki w SharePoint, OneDrive i Microsoft Teams.
 
 ### <a name="set-up-safe-attachments"></a>Konfigurowanie załączników Sejf
 

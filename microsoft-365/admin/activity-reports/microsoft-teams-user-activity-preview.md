@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak uzyskać raport aktywności Microsoft Teams użytkownika i uzyskać wgląd w działania Teams w organizacji.
-ms.openlocfilehash: 691c6999e97350184fbe72e28f2b380dcf7b41d9
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: adf9952f27c5605c54f6fa31710b44519cf8684c
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467553"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636553"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie Microsoft Teams użytkownika
 
@@ -42,7 +42,7 @@ Możesz wyświetlić działanie użytkownika w raporcie Teams, wybierając kart�
 
 Wybierz pozycję **Wybierz kolumny** , aby dodać lub usunąć kolumny z raportu.  <br/> ![Teams raport aktywności użytkownika — wybierz kolumny.](../../media/user-activity-columns.png)
 
-Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, w celu filtrowania i sortowania należy wyeksportować dane. Wyeksportowany format **czasu audio**, **czasu wideo** i **czasu udostępniania ekranu** jest zgodny z formatem czasu trwania ISO8601.
+Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, aby filtrować i sortować, musisz wyeksportować dane. Wyeksportowany format **czasu audio**, **czasu wideo** i **czasu udostępniania ekranu** jest zgodny z formatem czasu trwania ISO8601.
 
 W raporcie **Aktywność użytkowników aplikacji Microsoft Teams** można przeglądać trendy z ostatnich 7, 30, 90 lub 180 dni. Jeśli jednak wybierzesz konkretny dzień w raporcie, w tabeli będą wyświetlane dane przez maksymalnie 28 dni od bieżącej daty (a nie daty wygenerowania raportu).
 

@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Zmień motyw kolorów strony rezerwacji w aplikacji Microsoft Bookings.
-ms.openlocfilehash: bd6c3fc601800cdfca93e9e1a6adc494df1bd67e
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 1c00f87f3447b7002bf647086ee60c756662803d
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747197"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637808"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Dostosuj i opublikuj stronę rezerwacji
-
-> [!NOTE]
-> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
 Strona rezerwacji to miejsce, na którym skonfigurujesz, jak będzie wyglądać twoja zewnętrzna strona rezerwacji. Gdy dostosujesz i opublikujesz stronę rezerwacji, użytkownicy będą jej używać do rezerwacji spotkań z Tobą.
 
