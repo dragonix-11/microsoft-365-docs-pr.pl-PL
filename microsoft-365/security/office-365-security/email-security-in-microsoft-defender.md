@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczenia poczty e-mail przy użyciu Eksploratora zagrożeń w Ochrona usługi Office 365 w usłudze Microsoft Defender
+title: Zabezpieczenia poczty e-mail za pomocą Eksploratora zagrożeń w Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -12,131 +12,132 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Wyświetlaj i przeszukaj próby wyłudzania informacji z złośliwego oprogramowania.
+description: Wyświetlanie i badanie prób wyłudzania informacji o złośliwym oprogramowaniu.
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da555769cbff177fff7de4ee4a25908e1eee3782
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 637e387ca457c9795892791a1a6d9326107fc6fb
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475130"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648200"
 ---
-# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Zabezpieczenia poczty e-mail przy użyciu Eksploratora zagrożeń w Ochrona usługi Office 365 w usłudze Microsoft Defender
+# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Zabezpieczenia poczty e-mail za pomocą Eksploratora zagrożeń w Ochrona usługi Office 365 w usłudze Microsoft Defender
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Dotyczy:**
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 W tym artykule:
 
 - [Wyświetlanie złośliwego oprogramowania wykrytego w wiadomości e-mail](#view-malware-detected-in-email)
-- [Wyświetlanie adresu URL wyłudzania informacji i klikanie danych werdyktu](#view-phishing-url-and-click-verdict-data)
-- [Rozpoczynanie automatycznego badania i odpowiedzi](#start-automated-investigation-and-response)
+- [Wyświetl adres URL wyłudzania informacji i kliknij dane werdyktu](#view-phishing-url-and-click-verdict-data)
+- [Rozpoczynanie zautomatyzowanego badania i reagowania](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> Jest to część 3-articleowej serii w Eksploratorze zagrożeń **(Eksploratorze),** zabezpieczeniach poczty **e-mail****,** Eksploratorze i wykrywaniu w czasie rzeczywistym (takich jak różnice między narzędziami i uprawnienia potrzebne do ich obsługi). Pozostałe dwa artykuły z tej serii to Wyszukiwania [](threat-hunting-in-threat-explorer.md) zagrożeń w Eksploratorze zagrożeń i w Eksploratorze zagrożeń oraz [Wykrywania w czasie rzeczywistym](real-time-detections.md).
+> Jest to część **serii 3 artykułów** dotyczących **Eksploratora zagrożeń (Eksplorator),** **zabezpieczeń poczty e-mail** oraz **wykrywania Eksploratora i czasu rzeczywistego** (takich jak różnice między narzędziami i uprawnienia wymagane do ich obsługi). Pozostałe dwa artykuły z tej serii to [wyszukiwanie zagrożeń w Eksploratorze zagrożeń](threat-hunting-in-threat-explorer.md) i [Eksploratorze zagrożeń oraz wykrywanie w czasie rzeczywistym](real-time-detections.md).
 
-W tym artykule wyjaśniono, jak wyświetlać i badać próby wyłudzania informacji i złośliwego oprogramowania wykryte w wiadomościach e-mail za pomocą Microsoft 365 zabezpieczeń.
-
-**Dotyczy:**
-
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+W tym artykule wyjaśniono, jak wyświetlać i badać złośliwe oprogramowanie oraz próby wyłudzania informacji wykryte w wiadomościach e-mail za pomocą funkcji zabezpieczeń Microsoft 365.
 
 ## <a name="view-malware-detected-in-email"></a>Wyświetlanie złośliwego oprogramowania wykrytego w wiadomości e-mail
 
-Aby wyświetlić informacje o złośliwym oprogramowaniu wykryte w wiadomościach e-mail Microsoft 365 technologii, [**\>**](threat-explorer-views.md#email--malware) użyj widoku Email Malware w Eksploratorze (lub wykryć w czasie rzeczywistym). Malware is the default view, so it might be selected as soon as you open Explorer.
+Aby wyświetlić złośliwe oprogramowanie wykryte w wiadomościach e-mail posortowanych według technologii Microsoft 365, użyj widoku [**Złośliwe oprogramowanie poczty e-mail \>**](threat-explorer-views.md#email--malware) Eksploratora (lub wykrywania w czasie rzeczywistym). Złośliwe oprogramowanie jest widokiem domyślnym, więc może zostać wybrane natychmiast po otwarciu Eksploratora.
 
-1. W portalu Microsoft 365 Defender pod <https://security.microsoft.com>adresem , przejdź do opcji Współpracy & e-mail, **a** następnie wybierz pozycję **Wykrywanie** **Eksploratora lub W czasie rzeczywistym**. Aby przejść bezpośrednio do strony, użyj lub <https://security.microsoft.com/threatexplorer> <https://security.microsoft.com/realtimereports>.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do pozycji **Poczta e-mail & współpracy**, a następnie wybierz pozycję **Eksplorator** lub **Wykrywanie w czasie rzeczywistym**. Aby przejść bezpośrednio do strony, użyj polecenia <https://security.microsoft.com/threatexplorer> lub <https://security.microsoft.com/realtimereports>.
 
-   W tym przykładzie użyto **Eksploratora**.
+   W tym **przykładzie użyto Eksploratora**.
 
-   W tym miejscu rozpocznij od widoku, wybierz określony okres do przejrzenia (w razie potrzeby) i skoncentruj się na filtrach, zgodnie z oknie [Eksploratora](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
+   W tym miejscu zacznij od widoku, wybierz określony przedział czasu do zbadania (w razie potrzeby) i skoncentruj filtry zgodnie z [przewodnikiem Eksplorator](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
 
-2. Na liście **rozwijanej** Widok sprawdź, czy jest **wybrana opcja Wyślij** \> wiadomość e-mail **do** złośliwego oprogramowania.
+2. Na liście rozwijanej **Widok** sprawdź, czy wybrano **opcję Złośliwe oprogramowanie poczty e-mail**\>.
 
-3. Kliknij **pozycję Nadawca**, a następnie **z** \> listy **rozwijanej wybierz** pozycję Technologia wykrywania podstawowego.
+3. Kliknij pozycję **Nadawca**, a następnie wybierz pozycję **Technologia wykrywania** **podstawowego** \> na liście rozwijanej.
 
    :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="Technologia wykrywania złośliwego oprogramowania" lightbox="../../media/exploreremailmalwaredetectiontech-newimg.png":::
 
    Technologie wykrywania są teraz dostępne jako filtry raportu.
 
-4. Wybierz opcję, a następnie kliknij pozycję **Odśwież** , aby zastosować ten filtr (nie odświeżaj okna przeglądarki).
+4. Wybierz opcję, a następnie kliknij przycisk **Odśwież** , aby zastosować ten filtr (nie odświeżaj okna przeglądarki).
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="Wybrana technologia wykrywania" lightbox="../../media/exploreremailmalwaredetectiontech2-new.png":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="wybrana technologia wykrywania" lightbox="../../media/exploreremailmalwaredetectiontech2-new.png":::
 
-   Raport zostanie odświeżony w celu pokazania wyników wykrytych w wiadomościach e-mail przez złośliwe oprogramowanie przy użyciu wybranej opcji technologii. Tutaj możesz przeprowadzić dalszą analizę.
+   Raport zostanie odświeżony w celu wyświetlenia wyników wykrytych przez złośliwe oprogramowanie w wiadomości e-mail przy użyciu wybranej opcji technologii. W tym miejscu możesz przeprowadzić dalszą analizę.
 
-### <a name="report-a-message-as-clean-in-explorer"></a>Zgłaszanie wiadomości jako czystej w Eksploratorze
+### <a name="report-a-message-as-clean-in-explorer"></a>Zgłoś komunikat jako czysty w Eksploratorze
 
-Możesz użyć **opcji Oczyszczanie** raportu w Eksploratorze, aby zgłosić wiadomość jako fałszywie dodatnią. 
+Możesz użyć opcji **Wyczyść raport** w Eksploratorze, aby zgłosić komunikat jako fałszywie dodatni. 
 
-1. W portalu Microsoft 365 Defender przejdź do eksploratora poczty e-mail & **współpracy** \> **, a** następnie z listy rozwijanej Widok sprawdź, czy jest wybrana opcja **Phish**.
+1. W portalu Microsoft 365 Defender przejdź do **Eksploratora** współpracy \> **& poczty e-mail**, a następnie na liście rozwijanej Widok sprawdź, czy wybrano pozycję **Phish**.
 
-2. Sprawdź, czy jesteś na karcie Poczta  e-mail, a następnie z listy zgłoszonych wiadomości wybierz tę, która chcesz zgłosić jako czystą. 
+2. Sprawdź, czy jesteś na karcie **Poczta e-mail** , a następnie z listy zgłoszonych wiadomości wybierz tę, którą chcesz zgłosić jako czystą. 
 
-3. Kliknij **pozycję** Akcje, aby rozwinąć listę opcji.
+3. Kliknij pozycję **Akcje** , aby rozwinąć listę opcji.
 
-4. Przewiń w dół listę opcji, aby przejść do sekcji **Rozpocznij nowe przesyłanie** , a następnie wybierz pozycję **Wyczyść raport**. Zostanie wyświetlone wysuw.
-
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="../../media/report-clean-option-explorer.png" alt-text="Opcja Oczyszczanie raportu w Eksploratorze" lightbox="../../media/report-clean-option-explorer.png":::
-
-5. Przesuń suwak do przycisku **Wł**. Z listy rozwijanej określ, przez ile dni wiadomość ma zostać usunięta, dodaj notatkę w razie potrzeby, a następnie wybierz pozycję **Prześlij**. 
-
-## <a name="view-phishing-url-and-click-verdict-data"></a>Wyświetlanie adresu URL wyłudzania informacji i klikanie danych werdyktu
-
-Próby wyłudzenia informacji możesz wyświetlić za pomocą adresów URL w wiadomościach e-mail, łącznie z listą adresów URL, które zostały dozwolone, zablokowane i zastąpione. Aby zidentyfikować adresy URL, które zostały klikone, [Sejf skonfigurować](safe-links.md) łącza. Upewnij się, że zasady połączeń [Sejf](set-up-safe-links-policies.md) dotyczące ochrony przed kliknięciami i rejestrowania werdyktów kliknięcia za pomocą linków Sejf kliknięcia.
-
-1. W portalu Microsoft 365 Defender pod <https://security.microsoft.com>adresem , przejdź do opcji Współpracy & e-mail, **a** następnie wybierz pozycję **Wykrywanie** **Eksploratora lub W czasie rzeczywistym**. Aby przejść bezpośrednio do strony, użyj lub <https://security.microsoft.com/threatexplorer> <https://security.microsoft.com/realtimereports>.
-
-   W tym przykładzie użyto **Eksploratora**.
-
-2. Z listy **rozwijanej** Widok wybierz pozycję Wiadomość **e-mail** \> **Phish**.
+4. Przewiń listę opcji w dół, aby przejść do sekcji **Rozpocznij nowe przesyłanie** , a następnie wybierz pozycję **Raport wyczyść**. Zostanie wyświetlone okno wysuwane.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="Menu Widok w Eksploratorze w kontekście wyłudzania informacji" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
+   > :::image type="content" source="../../media/report-clean-option-explorer.png" alt-text="Opcja Czyszczenie raportu w Eksploratorze" lightbox="../../media/report-clean-option-explorer.png":::
+
+5. Przełącz suwak na **Wł**. Z listy rozwijanej określ liczbę dni, przez które komunikat ma zostać usunięty, dodaj notatkę w razie potrzeby, a następnie wybierz pozycję **Prześlij**. 
+
+## <a name="view-phishing-url-and-click-verdict-data"></a>Wyświetl adres URL wyłudzania informacji i kliknij dane werdyktu
+
+Próby wyłudzania informacji można wyświetlać za pośrednictwem adresów URL w wiadomości e-mail, w tym listę dozwolonych, zablokowanych i przesłoniętych adresów URL. Aby zidentyfikować adresy URL, które zostały klikniętych, [Sejf Łącza](safe-links.md) muszą być skonfigurowane. Upewnij się, że skonfigurowano [zasady linków Sejf](set-up-safe-links-policies.md) na potrzeby ochrony przed kliknięciami i rejestrowania werdyktów dotyczących kliknięć za pomocą linków Sejf.
+
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do pozycji **Poczta e-mail & współpracy**, a następnie wybierz pozycję **Eksplorator** lub **Wykrywanie w czasie rzeczywistym**. Aby przejść bezpośrednio do strony, użyj polecenia <https://security.microsoft.com/threatexplorer> lub <https://security.microsoft.com/realtimereports>.
+
+   W tym **przykładzie użyto Eksploratora**.
+
+2. Na liście rozwijanej **Widok** wybierz pozycję **Poczta e-mail** \> **Phish**.
+
+   > [!div class="mx-imgBorder"]
+   > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="Menu Widok dla Eksploratora w kontekście wyłudzania informacji" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
 
 3. Kliknij **pozycję Nadawca**, a następnie wybierz pozycję **Adresy URL** \> **Kliknij werdykt** na liście rozwijanej.
 
-4. W wyświetlonych opcjach wybierz jedną lub więcej opcji, takich jak **Zablokowane i Zablokuj** **zastąpione, a** następnie kliknij pozycję **Odśwież (nie** odśwież okna przeglądarki).
+4. W wyświetlonych opcjach wybierz co najmniej jedną opcję, taką jak **Zablokowane** i **Przesłonięte blokuj**, a następnie kliknij przycisk **Odśwież** (nie odświeżaj okna przeglądarki).
 
-    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="Adresy URL i klikanie werdyktów" lightbox="../../media/threatexploreremailphishclickverdict-new.png":::
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="Adresy URL i werdykty kliknięcia" lightbox="../../media/threatexploreremailphishclickverdict-new.png":::
 
-   Raport zostanie odświeżony w celu pokazania dwóch różnych tabel adresów URL na karcie **adresy** URL w obszarze raportu:
+   Raport zostanie odświeżony, aby wyświetlić dwie różne tabele adresów URL na karcie **Adresy URL** w raporcie:
 
-   - **Najważniejsze adresy URL to** adresy URL w filtrowanych wiadomościach, a dla każdego adresu URL są liczone akcje dostarczania wiadomości e-mail. W widoku wiadomości e-mail Phish ta lista zawiera zwykle wiarygodne adresy URL. Atakujący zawierają w wiadomościach dobre i złe adresy URL służące do prób ich dostarczenia, ale złośliwi linki wyglądają na bardziej interesujące. Tabela adresów URL jest sortowana według łącznej liczby wiadomości e-mail, ale ta kolumna jest ukryta, aby uprościć widok.
+   - **Najważniejsze adresy URL** to adresy URL w odfiltrowanych wiadomościach oraz liczba akcji dostarczania wiadomości e-mail dla każdego adresu URL. W widoku poczty e-mail języka Phish ta lista zwykle zawiera prawidłowe adresy URL. Osoby atakujące zawierają kombinację dobrych i złych adresów URL w swoich wiadomościach, aby spróbować je dostarczyć, ale sprawiają, że złośliwe linki wyglądają bardziej interesująco. Tabela adresów URL jest sortowana według łącznej liczby wiadomości e-mail, ale ta kolumna jest ukryta, aby uprościć widok.
 
-   - **Pierwsze kliknięcia** to kliknięte Sejf URL z zawiniętymi linkami, posortowane według łącznej liczby kliknięć. Ta kolumna również nie jest wyświetlana, aby uprościć widok. Łączna liczba według kolumn wskazuje liczbę Sejf kliknij liczbę werdyktów dla każdego klikowego adresu URL. W widoku wiadomości e-mail Wyłudzy są to zazwyczaj podejrzane lub złośliwe adresy URL. Widok może jednak zawierać adresy URL, które nie są zagrożenia, ale znajdują się w wiadomościach wyłudzeniowych. Kliknięcia adresu URL nieopisanych linków nie są wyświetlane w tym miejscu.
+   - **Najważniejsze kliknięcia** to Sejf klikniętych adresów URL opakowanych łączami posortowanych według łącznej liczby kliknięć. Ta kolumna również nie jest wyświetlana, aby uprościć widok. Łączna liczba według kolumny wskazuje liczbę kliknięć Sejf Linków dla każdego klikniętego adresu URL. W widoku poczty e-mail języka Phish są to zwykle podejrzane lub złośliwe adresy URL. Ale widok może zawierać adresy URL, które nie są zagrożeniami, ale są w wiadomościach phish. Kliknięcia adresu URL nieopakowanych linków nie są tutaj wyświetlane.
 
-   W obu tabelach adresów URL są wyświetlane najważniejsze adresy URL w wiadomościach e-mail wyłudzających informacje według akcji dostarczenia i lokalizacji. W tabelach są wyświetlane kliknięcia adresów URL, które zostały zablokowane lub odwiedzone pomimo ostrzeżenia, dzięki czemu można zobaczyć, jakie potencjalne złe linki zostały przedstawione użytkownikom i które kliknął. Tutaj możesz przeprowadzić dalszą analizę. Poniżej wykresu można na przykład zobaczyć górne adresy URL wiadomości e-mail, które zostały zablokowane w środowisku organizacji.
+   Dwie tabele adresów URL zawierają najważniejsze adresy URL w wiadomościach e-mail wyłudzających informacje według akcji dostarczania i lokalizacji. W tabelach są wyświetlane kliknięcia adresu URL, które zostały zablokowane lub odwiedzone pomimo ostrzeżenia, dzięki czemu można zobaczyć, jakie potencjalne nieprawidłowe linki zostały wyświetlone użytkownikom i które użytkownicy klikną. W tym miejscu możesz przeprowadzić dalszą analizę. Na przykład poniżej wykresu można zobaczyć najważniejsze adresy URL w wiadomościach e-mail, które zostały zablokowane w środowisku organizacji.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="../../media/ExplorerPhishClickVerdictURLs.png" alt-text="Adresy URL Eksploratora, które zostały zablokowane" lightbox="../../media/ExplorerPhishClickVerdictURLs.png":::
+   > :::image type="content" source="../../media/ExplorerPhishClickVerdictURLs.png" alt-text="Zablokowane adresy URL Eksploratora" lightbox="../../media/ExplorerPhishClickVerdictURLs.png":::
 
    Wybierz adres URL, aby wyświetlić bardziej szczegółowe informacje.
 
    > [!NOTE]
-   > W oknie dialogowym Wysuw adresu URL filtrowanie wiadomości e-mail zostanie usunięte w celu pokazania pełnego widoku informacji o ekspozycji adresu URL w Twoim środowisku. To umożliwia filtrowanie pod adresem e-mail, dla których martwi Cię Eksplorator, znajdowanie konkretnych adresów URL, które mogą być zagrożenia, a następnie rozszerzenie rozumienia informacji o narażeniu na adresy URL w Twoim środowisku (za pośrednictwem okna dialogowego szczegółów adresu URL) bez konieczności dodawania filtrów adresów URL do samego widoku Eksploratora.
+   > W oknie dialogowym wysuwanego adresu URL filtrowanie wiadomości e-mail jest usuwane w celu wyświetlenia pełnego widoku ekspozycji adresu URL w środowisku. Dzięki temu można filtrować wiadomości e-mail, których dotyczy problem w Eksploratorze, znaleźć określone adresy URL, które są potencjalnymi zagrożeniami, a następnie rozszerzyć swoją wiedzę na temat ekspozycji adresu URL w środowisku (za pośrednictwem okna dialogowego szczegóły adresu URL) bez konieczności dodawania filtrów adresów URL do samego widoku Eksploratora.
 
 ### <a name="interpretation-of-click-verdicts"></a>Interpretacja werdyktów kliknięcia
 
-W menu wysuwanych wiadomości e-mail lub adresów URL, górnych kliknięciach i w naszych środowiskoch filtrowania zobaczysz różne wartości werdyktów kliknięć:
+W wysuwanych adresach e-mail lub adresach URL, kliknięciach górnych i w naszych środowiskach filtrowania zobaczysz różne wartości werdyktu kliknięcia:
 
-- **Brak:** Nie można przechwycić werdyktu adresu URL. Być może użytkownik kliknął adres URL.
+- **Brak:** Nie można przechwycić werdyktu dla adresu URL. Użytkownik mógł kliknąć adres URL.
 - **Dozwolone:** Użytkownik mógł przejść do adresu URL.
-- **Zablokowane:** Użytkownikowi zablokowano dostęp do adresu URL.
-- **Oczekiwanie na werdykt:** Użytkownikowi została przedstawiona strona oczekiwania na detonację.
-- **Zablokowane zastąpione:** Użytkownikowi zablokowano dostęp bezpośrednio do adresu URL. Jednak użytkownik overrode the block to navigate to the URL.
-- **Oczekiwanie na pominięcie werdyktu:** Użytkownik został zaprezentowany na stronie detonacji. Jednak użytkownik nie korzysta z wiadomości, aby uzyskać dostęp do adresu URL.
-- **Błąd:** Użytkownik został przedstawiony na stronie błędu lub wystąpił błąd podczas przechwytywania werdyktu.
-- **Niepowodzenie:** Podczas przechwytywania werdyktu wystąpił nieznany wyjątek. Być może użytkownik kliknął adres URL.
+- **Zablokowany:** Użytkownik nie może przejść do adresu URL.
+- **Oczekiwanie na werdykt:** Użytkownikowi przedstawiono stronę oczekującą na detonację.
+- **Przesłonięte zablokowane:** Użytkownik nie może przejść bezpośrednio do adresu URL. Ale użytkownik przekroczył blok, aby przejść do adresu URL.
+- **Oczekiwanie na werdykt zostało pominięte:** Użytkownikowi przedstawiono stronę detonacji. Ale użytkownik przekroczył komunikat, aby uzyskać dostęp do adresu URL.
+- **Błąd:** Użytkownikowi przedstawiono stronę błędu lub wystąpił błąd podczas przechwytywania werdyktu.
+- **Awarii:** Wystąpił nieznany wyjątek podczas przechwytywania werdyktu. Użytkownik mógł kliknąć adres URL.
 
-## <a name="start-automated-investigation-and-response"></a>Rozpoczynanie automatycznego badania i odpowiedzi
+## <a name="start-automated-investigation-and-response"></a>Rozpoczynanie zautomatyzowanego badania i reagowania
 
 > [!NOTE]
-> Funkcje automatycznego badania i odpowiedzi są dostępne w *programach Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2* i *Office 365 E5*.
+> Funkcje zautomatyzowanego badania i reagowania są dostępne w *Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2* i *Office 365 E5*.
 
-[Zautomatyzowane badania i odpowiedzi](automated-investigation-response-office.md) mogą zaoszczędzić czas i nakład pracy zespołowej związanej z operacjami zabezpieczeń, ale mogą pomóc w zbadaniu i ograniczania cyberataków. Oprócz konfigurowania alertów, które mogą wyzwalać podręcznik zabezpieczeń, możesz uruchomić zautomatyzowany proces badania i odpowiedzi z widoku w Eksploratorze. Aby uzyskać szczegółowe informacje, [zobacz Przykład: Administrator zabezpieczeń wyzwala badanie z Eksploratora](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+[Zautomatyzowane badanie i reagowanie](automated-investigation-response-office.md) może zaoszczędzić czas i nakład pracy zespołu ds. operacji zabezpieczeń poświęcony na badanie i ograniczanie cyberataków. Oprócz konfigurowania alertów, które mogą wyzwalać podręcznik zabezpieczeń, możesz rozpocząć zautomatyzowane badanie i proces reagowania z poziomu widoku w Eksploratorze. Aby uzyskać szczegółowe informacje, zobacz [Przykład: Administrator zabezpieczeń wyzwala badanie z Eksploratora](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 ## <a name="other-articles"></a>Inne artykuły
 

@@ -1,5 +1,5 @@
 ---
-title: Ustawienia asf w ucieknie eop
+title: Ustawienia usługi ASF w ramach EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,85 +15,83 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się więcej o ustawieniach Zaawansowanego filtru spamu (ASF) dostępnych w zasadach ochrony przed spamem w programie Exchange Online Protection (EOP).
+description: Administratorzy mogą dowiedzieć się więcej o ustawieniach zaawansowanego filtru spamu (ASF), które są dostępne w zasadach ochrony przed spamem w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a34507866be90a197fcbed7bd1038cbcec61c84
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 75fca937049e71576e1dd599b4cc0f7fba2a2211
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682312"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647672"
 ---
-# <a name="advanced-spam-filter-asf-settings-in-eop"></a>Ustawienia zaawansowanego filtru spamu (ASF) w uchcie eop
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+# <a name="advanced-spam-filter-asf-settings-in-eop"></a>Ustawienia zaawansowanego filtru spamu (ASF) w funkcji EOP
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-We wszystkich Microsoft 365 e-mail ustawienia Zaawansowanego filtru spamu w zasadach ochrony przed spamem w u administratorach usługi EOP umożliwiają administratorom oznaczanie wiadomości jako spamu na podstawie określonych właściwości wiadomości. Zasady ASF są przeznaczone specjalnie do tych właściwości, ponieważ często występują w spamie. W zależności od właściwości wykrywanie asf spowoduje oznaczenie wiadomości jako **spamu lub** **spamu o dużej pewności**.
+We wszystkich organizacjach Microsoft 365 ustawienia zaawansowanego filtru spamu (ASF) w zasadach ochrony przed spamem w usłudze EOP umożliwiają administratorom oznaczanie wiadomości jako spamu na podstawie określonych właściwości wiadomości. Usługa ASF jest przeznaczona specjalnie dla tych właściwości, ponieważ są one często spotykane w spamie. W zależności od właściwości wykrywanie asf oznacza wiadomość jako **spam** lub **spam o wysokim poziomie ufności**.
 
 > [!NOTE]
-> Włączenie jednego lub większej liczby ustawień asf to agresywne podejście do filtrowania spamu. Nie można raportować wiadomości filtrowanych według asf jako wyników fałszywie dodatnich. Wiadomości filtrowane za pomocą filtru ASF można identyfikować według:
+> Włączenie co najmniej jednego ustawienia asf jest agresywnym podejściem do filtrowania spamu. Nie można zgłaszać komunikatów, które są filtrowane przez usługę ASF jako fałszywie dodatnie. Komunikaty, które zostały przefiltrowane przez usługę ASF, można zidentyfikować według:
 >
-> - Okresowe powiadomienia kwarantanny o spamie i werdykty filtru spamu o dużej pewności.
-> - Obecność odfiltrowanych wiadomości w kwarantannie.
-> - Określone pola `X-CustomSpam:` nagłówka X dodawane do wiadomości zgodnie z opisem w tym artykule.
+> - Okresowe powiadomienia o kwarantannie ze spamu i werdykty filtru spamu o wysokim poziomie ufności.
+> - Obecność przefiltrowanych komunikatów w kwarantannie.
+> - Określone `X-CustomSpam:` pola nagłówka X, które są dodawane do komunikatów zgodnie z opisem w tym artykule.
 
-W poniższych sekcjach opisano ustawienia i opcje ochrony przed spamem dostępne w zasadach ochrony przed spamem w portalu usługi Microsoft 365 Defender oraz w programie Exchange Online PowerShell lub autonomicznym programie PowerShell usługi EOP ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) i [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md).
+W poniższych sekcjach opisano ustawienia i opcje asf dostępne w zasadach ochrony przed spamem w portalu Microsoft 365 Defender oraz w programie Exchange Online programu PowerShell lub autonomicznego programu PowerShell EOP ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) i [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed spamem w ramach EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Włączanie, wyłączanie lub testowanie ustawień asf
 
-Dla każdego ustawienia asf w zasadach ochrony przed spamem są dostępne następujące opcje:
+Dla każdego ustawienia asf dostępne są następujące opcje w zasadach ochrony przed spamem:
 
-- **Wł.:** AsF dodaje odpowiednie pole nagłówka X do wiadomości i oznacza wiadomość jako **spam** (SCL 5 lub 6 w przypadku ustawienia Zwiększ liczbę [spamu](#increase-spam-score-settings)) lub Spam o wysokiej **pewności (** SCL 9 w przypadku ustawień Oznacz jako [spam](#mark-as-spam-settings)).
-- **Wyłączone**: ustawienie asf (AsF) jest wyłączone. Jest to wartość domyślna i nie zalecamy jej zmieniania.
-- **Test**: AsF dodaje odpowiednie pole nagłówka X do wiadomości. To, co się stanie z komunikatem, zależy od **wartości testowej** (*TestModeAction*):
-  - **Brak**: Wykrycie asf nie ma wpływu na dostarczanie wiadomości. Wiadomość nadal podlega innym typom filtrowania i reguł w umacie EOP.
-  - **Dodawanie domyślnego tekstu nagłówka X (*AddXHeader*)**: Wartość nagłówka X `X-CustomSpam: This message was filtered by the custom spam filter option` jest dodawana do wiadomości. Tej wartości możesz użyć w regułach skrzynki odbiorczej lub w zasadach przepływu poczty e-mail (nazywanych również regułami transportu), aby wpływać na dostarczenie wiadomości.
-  - **Wyślij wiadomość UDW (*UDW*)**: Określone adresy e-mail (wartość parametru *TestModeBccToRecipients* w programie PowerShell) są dodawane do pola UDW wiadomości, a wiadomość jest dostarczana do dodatkowych adresatów z pola UDW. W portalu Microsoft 365 Defender rozdziel wiele adresów e-mail średnikami (;). W programie PowerShell można oddzielić wiele adresów e-mail przecinkami.
+- **Włączone: usługa** ASF dodaje odpowiednie pole nagłówka X do wiadomości i oznacza wiadomość jako **spam** (SCL 5 lub 6 dla [ustawienia Zwiększanie oceny spamu](#increase-spam-score-settings)) lub **Spam o wysokim poziomie ufności** (SCL 9 dla [opcji Oznacz jako ustawienia spamu](#mark-as-spam-settings)).
+- **Wyłączone**: ustawienie asf jest wyłączone. Jest to wartość domyślna i zalecamy, aby jej nie zmieniać.
+- **Test: program** ASF dodaje odpowiednie pole nagłówka X do komunikatu. To, co dzieje się z komunikatem, jest określane przez wartość **trybu testowego** (*TestModeAction*):
+  - **Brak**: wykrywanie usługi ASF nie ma wpływu na dostarczanie komunikatów. Komunikat nadal podlega innym typom filtrowania i reguł w ramach EOP.
+  - **Dodaj domyślny tekst nagłówka X (*AddXHeader*)**: wartość `X-CustomSpam: This message was filtered by the custom spam filter option` nagłówka X jest dodawana do komunikatu. Możesz użyć tej wartości w regułach skrzynki odbiorczej lub regułach przepływu poczty (nazywanych również regułami transportu), aby wpłynąć na dostarczanie wiadomości.
+  - **Wyślij komunikat Bcc (*BccMessage*)**: Określone adresy e-mail (wartość parametru *TestModeBccToRecipients* w programie PowerShell) są dodawane do pola Bcc wiadomości, a wiadomość jest dostarczana do dodatkowych adresatów Bcc. W portalu Microsoft 365 Defender wiele adresów e-mail należy rozdzielić średnikami (;). W programie PowerShell rozdzielasz wiele adresów e-mail przecinkami.
 
   **Uwagi**:
 
-  - Tryb testowania nie jest dostępny w następujących ustawieniach asf:
-    - **Filtrowanie warunkowego identyfikatora nadawcy: trudno nie powieść** (*MarkAsSpamFromAddressAuthFail*)
-    - **Backscatter z niedostarczeniu**(*MarkAsSpamNdrBackscatter*)
-    - **Rekord SPF: trudno nie powieść** (*MarkAsSpamSpfRecordFail*)
-  - Ta sama akcja trybu testowania jest stosowana do *wszystkich ustawień* asf, dla których ustawiono wartość **Test**. Nie można konfigurować różnych akcji trybu testowania dla różnych ustawień asf.
+  - Tryb testowania nie jest dostępny dla następujących ustawień asf:
+    - **Filtrowanie identyfikatora nadawcy warunkowego: błąd twardy** (*MarkAsSpamFromAddressAuthFail*)
+    - **NDR backscatter**(*MarkAsSpamNdrBackscatter*)
+    - **Rekord SPF: twardy błąd** (*MarkAsSpamSpfRecordHardFail*)
+  - Ta sama akcja trybu testowego jest stosowana do *wszystkich* ustawień asf ustawionych na **test**. Nie można skonfigurować różnych akcji trybu testowego dla różnych ustawień asf.
 
-## <a name="increase-spam-score-settings"></a>Zwiększanie ustawień wyników spamu
+## <a name="increase-spam-score-settings"></a>Zwiększanie ustawień oceny spamu
 
-Poniższe **ustawienia Zwiększ** wynik asf spamu ustawiaj poziom ufności filtru spamu (SCL) wykrytych wiadomości na 5 lub 6, który odpowiada  werdyktowi filtru spamu i odpowiadającemu mu akcji w zasadach ochrony przed spamem.
-
-|Ustawienie zasad ochrony przed spamem|Opis|Dodano nagłówek X|
-|---|---|---|
-|**Obraz linków do zdalnych witryn internetowych** <p> *IncreaseScoreWithImageLinks*|Wiadomości zawierające linki do `<Img>` tagów HTML do witryn zdalnych (na przykład przy użyciu http) są oznaczane jako spam.|`X-CustomSpam: Image links to remote sites`|
-|**Liczbowy adres IP w adresie URL** <p> *IncreaseScoreWithNumericIps*|Wiadomości zawierające adresy URL oparte na wartościach liczbowych (zazwyczaj adresy IP) są oznaczane jako spam.|`X-CustomSpam: Numeric IP in URL`|
-|**Przekierowanie adresu URL do innego portu** <p> *IncreaseScoreWithRedirectToOtherPort*|Wiadomość, która zawiera hiperlinki przekierowują do portów TCP innych niż 80 (HTTP), 8080 (alternatywny protokół HTTP) lub 443 (HTTPS) są oznaczane jako spam.|`X-CustomSpam: URL redirect to other port`|
-|**Linki do witryn internetowych .biz lub .info** <p> *IncreaseScoreWithBizOrInfoUrls*|Wiadomości zawierające treść `.biz` wiadomości lub `.info` linki w jej treści są oznaczane jako spam.|`X-CustomSpam: URL to .biz or .info websites`|
-
-## <a name="mark-as-spam-settings"></a>Ustawienia oznaczania jako spamu
-
-Poniższe ustawienia **Oznacz jako spam** asf ustawiają wartość SCL wykrytych wiadomości na 9, co odpowiada werdyktowi filtru spamu o wysokiej pewności i odpowiadającej mu akcji w zasadach ochrony przed spamem.
+Następujące ustawienia **zwiększania oceny spamu** asf ustawiają poziom ufności spamu (SCL) wykrytych wiadomości na 5 lub 6, co odpowiada werdyktowi filtru **spamu** i odpowiedniej akcji w zasadach ochrony przed spamem.
 
 |Ustawienie zasad ochrony przed spamem|Opis|Dodano nagłówek X|
 |---|---|---|
-|**Puste wiadomości** <p> *MarkAsSpamEmptyMessages*|Wiadomości bez tematu, treści wiadomości i załączników są oznaczane jako spam o dużej pewności.|`X-CustomSpam: Empty Message`|
-|**Tagi osadzone w języku HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Wiadomość z tagami `<embed>` HTML jest oznaczana jako spam o dużej pewności. <p> Ten tag umożliwia osadzanie różnych rodzajów dokumentów w dokumencie HTML (na przykład dźwięków, klipów wideo lub obrazów).|`X-CustomSpam: Embed tag in html`|
-|**Język JavaScript lub VBScript w języku HTML** <p> *MarkAsSpamJavaScriptInHtml*|Wiadomości z kodem JavaScript lub Visual Basic Script Edition w formacie HTML są oznaczane jako spam o dużej pewności. <p> Te języki skryptów są używane w wiadomościach e-mail w celu automatycznego wykonywania określonych akcji.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
-|**Tagi formularzy w języku HTML** <p> *MarkAsSpamFormTagsInHtml*|Wiadomości zawierające tagi `<form>` HTML są oznaczane jako spam o dużej pewności. <p> Ten tag służy do tworzenia formularzy witryny sieci Web. Ogłoszenia e-mail często zawierają ten tag w celu pozyskiwania informacji od adresata.|`X-CustomSpam: Form tag in html`|
-|**Znaczniki ramki lub elementu iframe w języku HTML** <p> *MarkAsSpamFramesInHtml*|Wiadomości zawierające tagi `<frame>` HTML `<iframe>` są oznaczane jako spam o dużej pewności. <p> Te tagi są używane w wiadomościach e-mail do formatowania strony w celu wyświetlania tekstu lub grafiki.|`X-CustomSpam: IFRAME or FRAME in HTML`|
-|**Usterki sieci Web w języku HTML** <p> *MarkAsSpamWebBugsInHtml*|Błąd *sieci Web* (nazywany także sygnałem nawigacyjnym sieci *Web*) to element graficzny (często o rozmiarze jednego piksela na jeden piksel) używany w wiadomościach e-mail w celu określenia, czy wiadomość została odczytana przez adresata. <p> Wiadomości zawierające usterki sieci Web są oznaczane jako spam o dużej pewności. <p> W biuletynach może być konieczne korzystanie z błędów internetowych, chociaż wielu z nich uznaje to za naruszenie prywatności. |`X-CustomSpam: Web bug`|
-|**Tagi obiektów w języku HTML** <p> *MarkAsSpamObjectTagsInHtml*|Wiadomości zawierające tagi `<object>` HTML są oznaczane jako spam o dużej pewności. <p> Ten tag umożliwia wtyczkom i aplikacjom uruchamianie ich w oknie języka HTML.|`X-CustomSpam: Object tag in html`|
-|**Wyrazy poufne** <p> *MarkAsSpamSensitiveWordList*|Firma Microsoft przechowuje dynamiczną, ale nieedytowalna listę wyrazów skojarzonych z potencjalnie obraźliwymi wiadomościami. <p> Wiadomości zawierające wyrazy z poufnej listy wyrazów w temacie lub w treści wiadomości są oznaczane jako spam o dużej pewności.|`X-CustomSpam: Sensitive word in subject/body`|
-|**Rekord SPF: trudno nie powieść** <p> *MarkAsSpamSpfRecordOrdFail*|Wiadomości wysyłane z adresu IP, który nie jest określony w rekordzie SPF Sender Policy Framework (SPF) w systemie DNS dla źródłowej domeny poczty e-mail są oznaczane jako spam o dużej pewności. <p> Tryb testowania nie jest dostępny w przypadku tego ustawienia.|`X-CustomSpam: SPF Record Fail`|
+|**Linki obrazów do zdalnych witryn internetowych** <p> *IncreaseScoreWithImageLinks*|Komunikaty zawierające `<Img>` linki tagów HTML do witryn zdalnych (na przykład przy użyciu protokołu http) są oznaczone jako spam.|`X-CustomSpam: Image links to remote sites`|
+|**Numeryczny adres IP w adresie URL** <p> *IncreaseScoreWithNumericIps*|Wiadomości zawierające numeryczne adresy URL (zazwyczaj adresy IP) są oznaczone jako spam.|`X-CustomSpam: Numeric IP in URL`|
+|**Przekierowanie adresu URL do innego portu** <p> *IncreaseScoreWithRedirectToOtherPort*|Komunikat zawierający hiperlinki przekierowujące do portów TCP innych niż 80 (HTTP), 8080 (alternatywny protokół HTTP) lub 443 (HTTPS) jest oznaczony jako spam.|`X-CustomSpam: URL redirect to other port`|
+|**Linki do witryn .biz lub .info** <p> *IncreaseScoreWithBizOrInfoUrls*|Wiadomości zawierające `.biz` treść wiadomości lub `.info` linki są oznaczone jako spam.|`X-CustomSpam: URL to .biz or .info websites`|
 
-Poniższe ustawienia **Oznacz jako spam** (AsF) ustawiają wartość SCL wykrytych wiadomości na 6, która odpowiada  werdyktowi filtru spamu i odpowiadającej mu akcji w zasadach ochrony przed spamem.
+## <a name="mark-as-spam-settings"></a>Oznacz jako ustawienia spamu
+
+Następujące ustawienia **Oznacz jako spam** ASF ustawiają listę SCL wykrytych wiadomości na 9, co odpowiada werdyktowi **filtru spamu o wysokim poziomie ufności** i odpowiedniej akcji w zasadach ochrony przed spamem.
 
 |Ustawienie zasad ochrony przed spamem|Opis|Dodano nagłówek X|
 |---|---|---|
-|**Trudno nie można przefiltrować identyfikatora nadawcy** <p> *MarkAsSpamFromAddressAuthFail*|Wiadomości, których trudno nie sprawdzić warunkowego identyfikatora nadawcy, są oznaczane jako spam. <p> To ustawienie łączy sprawdzanie SPF z sprawdzaniem identyfikatora nadawcy w celu ochrony przed nagłówkami wiadomości, które zawierają nadawców podszyty. <p> Tryb testowania nie jest dostępny w przypadku tego ustawienia.|`X-CustomSpam: SPF From Record Fail`|
-|**Backscatter** <p> *MarkAsSpamNdrBackscatter*|*Wiadomość typu backscatter* to bezużyteczne raporty o niedo dostarczenia (nazywane również raportami o niedo dostarczenia lub wiadomościach odsuwu) spowodowane przez podszyte nadawców w wiadomościach e-mail. Aby uzyskać więcej informacji, zobacz [Wiadomości backscatter i EOP](backscatter-messages-and-eop.md). <p> Nie musisz konfigurować tego ustawienia w następujących środowiskach, ponieważ są dostarczane wiarygodne konta OND, a wiadomość typu backscatter jest oznaczana jako spam: <ul><li>Microsoft 365 firm, które Exchange Online skrzynki pocztowe.</li><li>Lokalne organizacje poczty e-mail, do których *przekierowywają wychodzące wiadomości* e-mail za pośrednictwem usługi EOP.</li></ul> <p> W autonomicznych środowiskach usługi EOP, które chronią przychodzące wiadomości e-mail do lokalnych skrzynek pocztowych, włączenie lub wyłączenie tego ustawienia ma następujący wynik: <ul><li> **Wł**.: Są dostarczane wiarygodne wiadomości ondr, a wiadomość typu backscatter jest oznaczana jako spam.</li><li>**Wyłączone**: Normalne filtry wiadomości e-mail i wiadomości typu backscatter przejść przez normalne filtrowanie spamu. Większość legalnych wiadomości ondr zostanie dostarczona do pierwotnego nadawcy wiadomości. Niektóre (ale nie wszystkie) wiadomości typu backscatter są oznaczane jako spam. Z definicji wiadomości backscatter mogą być dostarczane tylko do nadawcy sfałszowanego, a nie do pierwotnego nadawcy.</li></ul> <p> Tryb testowania nie jest dostępny w przypadku tego ustawienia.|`X-CustomSpam: Backscatter NDR`|
+|**Puste komunikaty** <p> *MarkAsSpamEmptyMessages*|Wiadomości bez tematu, brak zawartości w treści wiadomości i brak załączników są oznaczone jako spam o wysokim poziomie ufności.|`X-CustomSpam: Empty Message`|
+|**Tagi osadzone w kodzie HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Wiadomość zawierająca `<embed>` tagi HTML jest oznaczona jako spam o wysokim poziomie ufności. <p> Ten tag umożliwia osadzanie różnych rodzajów dokumentów w dokumencie HTML (na przykład dźwięków, filmów wideo lub obrazów).|`X-CustomSpam: Embed tag in html`|
+|**Język JavaScript lub VBScript w języku HTML** <p> *MarkAsSpamJavaScriptInHtml*|Komunikaty korzystające z języka JavaScript lub Visual Basic Script Edition w języku HTML są oznaczone jako spam o wysokim poziomie ufności. <p> Te języki skryptów są używane w wiadomościach e-mail w celu automatycznego wykonania określonych akcji.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
+|**Tagi formularzy w języku HTML** <p> *MarkAsSpamFormTagsInHtml*|Wiadomości zawierające `<form>` tagi HTML są oznaczone jako spam o wysokim poziomie ufności. <p> Ten tag służy do tworzenia formularzy witryny internetowej. Reklamy e-mail często zawierają ten tag w celu uzyskania informacji od odbiorcy.|`X-CustomSpam: Form tag in html`|
+|**Tagi ramek lub ramek w języku HTML** <p> *MarkAsSpamFramesInHtml*|Wiadomości zawierające `<frame>` tagi LUB `<iframe>` HTML są oznaczone jako spam o wysokim poziomie ufności. <p> Tagi te są używane w wiadomościach e-mail do formatowania strony do wyświetlania tekstu lub grafiki.|`X-CustomSpam: IFRAME or FRAME in HTML`|
+|**Błędy internetowe w kodzie HTML** <p> *MarkAsSpamWebBugsInHtml*|*Usterka sieci Web* (znana również jako *sygnalizator internetowy*) to element graficzny (często tak mały, jak jeden piksel po jednym pikselu), który jest używany w wiadomościach e-mail w celu określenia, czy wiadomość została odczytana przez adresata. <p> Komunikaty zawierające błędy internetowe są oznaczone jako spam o wysokim poziomie ufności. <p> Uzasadnione biuletyny mogą korzystać z błędów internetowych, chociaż wielu uważa to za naruszenie prywatności. |`X-CustomSpam: Web bug`|
+|**Tagi obiektów w kodzie HTML** <p> *MarkAsSpamObjectTagsInHtml*|Wiadomości zawierające `<object>` tagi HTML są oznaczone jako spam o wysokim poziomie ufności. <p> Ten tag umożliwia uruchamianie wtyczek lub aplikacji w oknie HTML.|`X-CustomSpam: Object tag in html`|
+|**Wyrazy wrażliwe** <p> *MarkAsSpamSensitiveWordList*|Firma Microsoft utrzymuje dynamiczną, ale nieedytowalną listę słów skojarzonych z potencjalnie obraźliwymi wiadomościami. <p> Wiadomości zawierające wyrazy z listy wyrazów poufnych w treści tematu lub wiadomości są oznaczone jako spam o wysokim poziomie ufności.|`X-CustomSpam: Sensitive word in subject/body`|
+|**Rekord SPF: niepowodzenie twarde** <p> *MarkAsSpamSpfRecordHardFail*|Komunikaty wysyłane z adresu IP, który nie jest określony w rekordzie SPF Sender Policy Framework (SPF) w systemie DNS dla źródłowej domeny poczty e-mail, są oznaczone jako spam o wysokim poziomie ufności. <p> Tryb testowy nie jest dostępny dla tego ustawienia.|`X-CustomSpam: SPF Record Fail`|
+
+Następujące ustawienia **Oznacz jako spam** ASF ustawiają listę SCL wykrytych wiadomości na wartość 6, co odpowiada werdyktowi filtru **spamu** i odpowiedniej akcji w zasadach ochrony przed spamem.
+
+|Ustawienie zasad ochrony przed spamem|Opis|Dodano nagłówek X|
+|---|---|---|
+|**Filtrowanie identyfikatora nadawcy kończy się niepowodzeniem** <p> *MarkAsSpamFromAddressAuthFail*|Komunikaty, które nie sprawdzają warunkowego identyfikatora nadawcy, są oznaczone jako spam. <p> To ustawienie łączy sprawdzanie SPF z sprawdzaniem identyfikatora nadawcy, aby chronić przed nagłówkami wiadomości zawierającymi sfałszowanych nadawców. <p> Tryb testowy nie jest dostępny dla tego ustawienia.|`X-CustomSpam: SPF From Record Fail`|
+|**Backscatter** <p> *MarkAsSpamNdrBackscatter*|*Backscatter to bezużyteczne* raporty o braku dostarczania (znane również jako żądania NDR lub wiadomości bounce) spowodowane przez sfałszowanych nadawców w wiadomościach e-mail. Aby uzyskać więcej informacji, zobacz [Backscatter messages and EOP (Tworzenie kopii zapasowych komunikatów i EOP](backscatter-messages-and-eop.md)). <p> Nie musisz konfigurować tego ustawienia w następujących środowiskach, ponieważ dostarczane są uzasadnione żądania NDR, a zaplecze jest oznaczone jako spam: <ul><li>Microsoft 365 organizacje ze skrzynkami pocztowymi Exchange Online.</li><li>Lokalne organizacje poczty e-mail, w których kierujesz *wychodzącą* pocztę e-mail za pośrednictwem EOP.</li></ul> <p> W autonomicznych środowiskach EOP, które chronią przychodzące wiadomości e-mail do lokalnych skrzynek pocztowych, włączenie lub wyłączenie tego ustawienia ma następujący wynik: <ul><li> **Włączone**: dostarczane są uzasadnione żądania NDR, a zaplecze jest oznaczone jako spam.</li><li>**Wyłączone**: Uzasadnione żądania NDR i backscatter przechodzą przez normalne filtrowanie spamu. Do oryginalnego nadawcy wiadomości zostanie dostarczona większość legalnych NDR. Niektóre, ale nie wszystkie, backscatter jest oznaczony jako spam. Z definicji backscatter może być dostarczany tylko do sfałszowanego nadawcy, a nie do oryginalnego nadawcy.</li></ul> <p> Tryb testowy nie jest dostępny dla tego ustawienia.|`X-CustomSpam: Backscatter NDR`|

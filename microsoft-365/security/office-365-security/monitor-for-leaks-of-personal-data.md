@@ -1,5 +1,5 @@
 ---
-title: Monitorowanie pod kątem wycieków danych osobowych
+title: Monitorowanie wycieków danych osobowych
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -19,16 +19,14 @@ search.appverid:
 description: Dowiedz się więcej o trzech narzędziach, których można użyć do monitorowania wycieków danych osobowych.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13b8aa5699c3d4031a364ceaf62b70e6b7236fda
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 6c5b765b4eb4cbf49d31ee5ddb06fb0afe69c667
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973007"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649270"
 ---
-# <a name="monitor-for-leaks-of-personal-data"></a>Monitorowanie pod kątem wycieków danych osobowych
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+# <a name="monitor-for-leaks-of-personal-data"></a>Monitorowanie wycieków danych osobowych
 
 Istnieje wiele narzędzi, których można użyć do monitorowania wykorzystania i transportu danych osobowych. W tym temacie opisano trzy narzędzia, które działają dobrze.
 
@@ -36,9 +34,9 @@ Istnieje wiele narzędzi, których można użyć do monitorowania wykorzystania 
 
 Na ilustracji:
 
-- Zacznij od raportów ochrony przed utratą danych w usłudze Microsoft Purview na potrzeby monitorowania danych osobowych w usłudze SharePoint Online, OneDrive dla Firm i wiadomości e-mail przesyłane. Raporty te zapewniają najwyższy poziom szczegółowości monitorowania danych osobowych. Jednak te raporty nie obejmują wszystkich usług w Office 365.
+- Zacznij od Microsoft Purview raportów ochrony przed utratą danych na potrzeby monitorowania danych osobowych w usłudze SharePoint Online, OneDrive dla Firm i wiadomości e-mail przesyłane. Raporty te zapewniają najwyższy poziom szczegółowości monitorowania danych osobowych. Jednak te raporty nie obejmują wszystkich usług w Office 365.
 
-- Następnie użyj zasad alertów i dziennika inspekcji, aby monitorować aktywność między usługami. Skonfiguruj bieżące monitorowanie lub przeszukaj dziennik inspekcji w celu zbadania zdarzenia. Dziennik inspekcji działa w usługach — Sway, Power BI, eDiscovery, Dynamics 365, Power Automate, Microsoft Teams, Aktywność administratora, OneDrive dla Firm, SharePoint Online, poczta przesyłana i skrzynki pocztowe magazynowane. Skype konwersacje są uwzględniane w skrzynkach pocztowych magazynowanych.
+- Następnie użyj zasad alertów i dziennika inspekcji, aby monitorować aktywność między usługami. Skonfiguruj bieżące monitorowanie lub przeszukaj dziennik inspekcji w celu zbadania zdarzenia. Dziennik inspekcji działa w usługach — Sway, Power BI, eDiscovery, Dynamics 365, Power Automate, Microsoft Teams, Administracja, OneDrive dla Firm, SharePoint Online, poczta przesyłana i skrzynki pocztowe magazynowane. Skype konwersacje są uwzględniane w skrzynkach pocztowych magazynowanych.
 
 - Na koniec użyj Microsoft Defender for Cloud Apps do monitorowania plików z poufnymi danymi u innych dostawców SaaS. Wkrótce będzie można korzystać z poufnych typów informacji i ujednoliconych etykiet w usłudze Azure Information Protection i Office za pomocą usługi Defender dla Chmury Apps. Możesz skonfigurować zasady, które mają zastosowanie do wszystkich aplikacji SaaS lub określonych aplikacji (takich jak Box). Defender dla Chmury Apps nie odnajduje plików w Exchange Online, w tym plików dołączonych do poczty e-mail.
 
@@ -57,7 +55,7 @@ Raporty DLP umożliwiają:
 
 Ponadto możesz użyć raportów DLP, aby dostosować zasady DLP podczas uruchamiania ich w trybie testowym.
 
-Raporty DLP znajdują się w portalu zgodności usługi Microsoft Purview. Przejdź do sekcji **Raporty** \> **dotyczące danych organizacji** , aby znaleźć **dopasowania zasad DLP**, **zdarzenia DLP** i **raporty fałszywie dodatnie DLP i przesłaniają raporty** .
+Raporty DLP znajdują się w portal zgodności Microsoft Purview. Przejdź do sekcji **Raporty** \> **dotyczące danych organizacji** , aby znaleźć **dopasowania zasad DLP**, **zdarzenia DLP** i **raporty fałszywie dodatnie DLP i przesłaniają raporty** .
 
 Aby uzyskać więcej informacji, zobacz [Wyświetlanie raportów dotyczących zapobiegania utracie danych](../../compliance/view-the-dlp-reports.md).
 
@@ -67,9 +65,9 @@ Aby uzyskać więcej informacji, zobacz [Wyświetlanie raportów dotyczących za
 
 Dziennik inspekcji zawiera zdarzenia z Exchange Online, SharePoint Online, OneDrive dla Firm, Azure Active Directory, Microsoft Teams, Power BI, Sway i innych Usług.
 
-Portal Microsoft 365 Defender i portal zgodności usługi Microsoft Purview udostępniają dwa sposoby monitorowania i raportowania w dzienniku inspekcji:
+Portal Microsoft 365 Defender i portal zgodności Microsoft Purview zapewniają dwa sposoby monitorowania i raportowania w dzienniku inspekcji:
 
-- Konfigurowanie zasad alertów, wyświetlanie alertów i monitorowanie trendów — użyj zasad alertów i narzędzi pulpitu nawigacyjnego alertów w portalu Microsoft 365 Defender lub portalu zgodności usługi Microsoft Purview.
+- Konfigurowanie zasad alertów, wyświetlanie alertów i monitorowanie trendów — użyj zasad alertów i narzędzi pulpitu nawigacyjnego alertów w portalu Microsoft 365 Defender lub w portal zgodności Microsoft Purview.
 - Przeszukaj dziennik inspekcji bezpośrednio: wyszukaj wszystkie zdarzenia w określonej dacie. Możesz też filtrować wyniki na podstawie określonych kryteriów, takich jak użytkownik, który wykonał akcję, akcja lub obiekt docelowy.
 
 Zespoły ds. zgodności z informacjami i zabezpieczeń mogą używać tych narzędzi do proaktywnego przeglądania działań wykonywanych zarówno przez użytkowników końcowych, jak i administratorów w różnych usługach. Alerty automatyczne można skonfigurować do wysyłania powiadomień e-mail w przypadku niektórych działań wykonywanych w określonych zbiorach witryn — na przykład gdy zawartość jest udostępniana z witryn, o których wiadomo, że zawierają informacje związane z RODO. Dzięki temu zespoły mogą śledzić użytkowników, aby zapewnić przestrzeganie firmowych zasad zabezpieczeń lub zapewnić dodatkowe szkolenia.
@@ -162,7 +160,7 @@ Uwagi:
 |Ważność zasad|High (Wysoki)|
 |Kategoria|Kontrola udostępniania|
 |Działaj zgodnie z|Pojedyncze działanie|
-|Ustawienia filtru|Typ działania = plik Upload <p> App = Microsoft OneDrive dla Firm i Box <p> Etykieta klasyfikacji (obecnie w prywatnej wersji zapoznawczej): azure Information Protection = dane klienta, zasoby ludzkie — dane wynagrodzeń, zasoby ludzkie — dane pracowników|
+|Ustawienia filtru|Typ działania = Przekaż plik <p> App = Microsoft OneDrive dla Firm i Box <p> Etykieta klasyfikacji (obecnie w prywatnej wersji zapoznawczej): azure Information Protection = dane klienta, zasoby ludzkie — dane wynagrodzeń, zasoby ludzkie — dane pracowników|
 |Alerty|Tworzenie alertu: zaznaczone <p> Dzienny limit alertów: 1000 <p> Wybierz alert jako wiadomość e-mail: zaznaczone <p> Do: infosec@contoso.com|
 |Nadzór|Wszystkie aplikacje <p> Umieść użytkownika w kwarantannie: sprawdź <p> Wszystkie inne ustawienia: niezaznaczone <p> Usługa Office 365 <p> Umieść użytkownika w kwarantannie: sprawdź <p> Wszystkie inne ustawienia: niezaznaczone|
 

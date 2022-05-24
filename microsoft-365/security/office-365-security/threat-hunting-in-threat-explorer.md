@@ -17,14 +17,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efeaf3fadfed0032da90db15a6bb57f5a1fc822a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 2c99bc2ce004156320ec8f53f6b956f7989ee056
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418023"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648828"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Wyszukiwanie zagrożeń w Eksploratorze zagrożeń dla Ochrona usługi Office 365 w usłudze Microsoft Defender
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Dotyczy:**
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 W tym artykule:
 
@@ -217,7 +223,7 @@ Zostaną wyświetlone nazwy i identyfikatory GUID reguł transportu stosowanych 
 >
 > - Tylko Exchange Online — zapobieganie utracie danych: wszystkie
 > - Tylko Exchange Online — O365SupportViewConfig: Wszystkie
-> - Microsoft Azure Active Directory lub Exchange Online — administrator zabezpieczeń: wszystkie
+> - Microsoft Azure Active Directory lub Exchange Online — Administracja zabezpieczeń: wszystkie
 > - Azure Active Directory lub Exchange Online — czytelnik zabezpieczeń: wszystkie
 > - Tylko Exchange Online — reguły transportu: wszystkie
 > - Tylko Exchange Online — konfiguracja View-Only: wszystkie

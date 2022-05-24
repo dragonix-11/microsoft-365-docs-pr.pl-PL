@@ -19,16 +19,18 @@ ms.collection:
 recommendations: false
 description: Informacje o składniku zasad DLP i konfiguracji
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 169fb93f7343fd038af9e7b8ae789dabc871c6aa
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 1ad00a36f48849ca110a598f92c5536ef7b21843
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714004"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648619"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Dokumentacja zasad ochrony przed utratą danych
 
-Zasady ochrony przed utratą danych (DLP) mają wiele składników do skonfigurowania. Aby utworzyć skuteczne zasady, musisz zrozumieć, jaki jest cel poszczególnych składników i jak jego konfiguracja zmienia zachowanie zasad. Ten artykuł zawiera szczegółową anatomię zasad DLP.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+zasady Ochrona przed utratą danych w Microsoft Purview (DLP) mają wiele składników do skonfigurowania. Aby utworzyć skuteczne zasady, musisz zrozumieć, jaki jest cel poszczególnych składników i jak jego konfiguracja zmienia zachowanie zasad. Ten artykuł zawiera szczegółową anatomię zasad DLP.
 
 ## <a name="policy-templates"></a>Szablony zasad 
 
@@ -108,8 +110,8 @@ Zasady DLP mogą znajdować i chronić elementy zawierające poufne informacje w
 |konta OneDrive dla Firm| konto lub grupa dystrybucyjna |dane magazynowane </br> dane w użyciu|Nie|
 |Teams wiadomości czatu i kanału     | konto lub grupa dystrybucyjna |dane w ruchu </br> dane w użyciu |  Nie       |
 |Microsoft Defender for Cloud Apps   | wystąpienie aplikacji w chmurze       |dane magazynowane         | - [Używanie zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Urządzeń  |użytkownik lub grupa         |dane magazynowane </br>  dane w użyciu </br>  dane w ruchu         |- [Dowiedz się więcej o zapobieganiu utracie danych punktu końcowego Microsoft 365](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Wprowadzenie z zapobieganiem utracie danych punktu końcowego](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Konfigurowanie ustawień serwera proxy urządzenia i połączenia internetowego dla Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|Repozytoria lokalne (udziały plików i SharePoint)    |Repozytorium         | dane magazynowane         | - [Dowiedz się więcej na temat lokalnego skanera Microsoft 365 zapobiegania utracie danych](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Wprowadzenie z lokalnym skanerem zapobiegania utracie danych](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Urządzeń  |użytkownik lub grupa         |dane magazynowane </br>  dane w użyciu </br>  dane w ruchu         |- [Dowiedz się więcej o zapobieganiu utracie danych punktu końcowego](endpoint-dlp-learn-about.md) </br>- [Wprowadzenie z zapobieganiem utracie danych punktu końcowego](endpoint-dlp-getting-started.md) </br>- [Konfigurowanie ustawień serwera proxy urządzenia i połączenia internetowego dla Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Repozytoria lokalne (udziały plików i SharePoint)    |Repozytorium         | dane magazynowane         | - [Dowiedz się więcej o lokalnym skanerze zapobiegania utracie danych](dlp-on-premises-scanner-learn.md) </br> - [Wprowadzenie z lokalnym skanerem zapobiegania utracie danych](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| Obszarów roboczych | dane w użyciu | Nie|
 
 Jeśli zdecydujesz się uwzględnić określone grupy dystrybucyjne w Exchange, zasady DLP będą ograniczone tylko do członków tej grupy. Podobnie wykluczenie grupy dystrybucyjnej spowoduje wykluczenie wszystkich członków tej grupy dystrybucyjnej z oceny zasad. Możesz wybrać zakres zasad do elementów członkowskich list dystrybucyjnych, dynamicznych grup dystrybucyjnych i grup zabezpieczeń. Zasady DLP mogą zawierać nie więcej niż 50 takich wkluczeń i wykluczeń.
@@ -539,7 +541,7 @@ Opcje konfiguracji powiadomień użytkownika i porad dotyczących zasad różni�
 
 Możesz włączyć/wyłączyć powiadomienia użytkowników dla różnych aplikacji firmy Microsoft. Zobacz [Informacje na temat porad dotyczących zasad ochrony przed utratą danych](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
 
-- Możesz włączyć/wyłączyć **powiadamianie użytkowników w usłudze Office 365** za pomocą porady dotyczącej zasad.
+- Powiadomienia można włączyć/wyłączyć za pomocą porady dotyczącej zasad.
     - powiadomienia e-mail do użytkownika, który wysłał, udostępnił lub ostatnio zmodyfikował zawartość LUB
     - powiadamianie określonych osób
 
@@ -646,7 +648,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 Po dopasowaniu reguły możesz wysłać raport o zdarzeniu do oficera zgodności (lub dowolnych wybranych osób) ze szczegółami zdarzenia. Raport zawiera informacje o dopasowanym elemencie, rzeczywistej zawartości zgodnej z regułą oraz o nazwie osoby, która ostatnio zmodyfikowała zawartość. W przypadku wiadomości e-mail raport zawiera również jako załącznik oryginalną wiadomość zgodną z zasadami DLP.
 
-DLP przesyła informacje o zdarzeniach do innych Microsoft 365 usług ochrony informacji, takich jak [zarządzanie ryzykiem wewnętrznym w Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). Aby uzyskać informacje o zdarzeniach do zarządzania ryzykiem wewnętrznym, należy ustawić poziom ważności **raportów o zdarzeniach** na **wysoki**.
+DLP przesyła informacje o zdarzeniach do innych Microsoft Purview usług ochrony informacji, takich jak [zarządzanie ryzykiem wewnętrznym](insider-risk-management.md). Aby uzyskać informacje o zdarzeniach do zarządzania ryzykiem wewnętrznym, należy ustawić poziom ważności **raportów o zdarzeniach** na **wysoki**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 

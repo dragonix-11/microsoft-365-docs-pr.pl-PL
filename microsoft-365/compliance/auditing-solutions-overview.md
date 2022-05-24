@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak przeprowadzać inspekcję działań użytkowników i administratorów w organizacji Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 5e4dab263a85730f893adadab0d3fa5709d17861
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444250"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649392"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Rozwiązania inspekcji w Microsoft Purview
 
@@ -100,14 +100,14 @@ W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji
 
 ### <a name="audit-standard"></a>Usługa Inspekcja (wersja Standardowa)
 
-- subskrypcja Microsoft Purview Business Basic
-- subskrypcja usługi Microsoft Purview Apps for Business
-- subskrypcja Microsoft Purview Enterprise E3
-- Microsoft Purview business Premium
-- subskrypcja Microsoft Purview Education A3
-- subskrypcja Microsoft Purview Government G3
-- subskrypcja Microsoft Purview Government G1
-- subskrypcja Microsoft Purview Frontline F1 lub F3 lub dodatek F5 Security
+- Subskrypcja usługi Microsoft Business Basic
+- subskrypcja Aplikacje Microsoft 365 for Business
+- subskrypcja Microsoft 365 Enterprise E3
+- Microsoft 365 Business Premium
+- subskrypcja Microsoft 365 Education A3
+- subskrypcja Microsoft 365 Government G3
+- subskrypcja Microsoft 365 Government G1
+- subskrypcja Microsoft 365 Frontline F1 lub F3 lub dodatek F5 Security
 - subskrypcja Office 365 Enterprise E3
 - subskrypcja Office 365 Enterprise E1
 - subskrypcja Office 365 Education A1
@@ -158,7 +158,7 @@ Jeśli Twoja organizacja ma subskrypcję obsługą funkcji Inspekcja (Premium), 
   
    - Włączenie planu aplikacji/usługi Inspekcja (Premium) musi być przeznaczone dla tych użytkowników.
   
-   - Włączanie inspekcji kluczowych zdarzeń, a następnie włączanie planu inspekcji (Premium)ing app/service dla tych użytkowników.
+   - Włączanie inspekcji kluczowych zdarzeń, a następnie włączanie planu inspekcji (Premium) dla tych użytkowników.
 
 2. Włącz rejestrowanie zdarzeń inspekcji (Premium), gdy użytkownicy wykonują wyszukiwania w Exchange Online i SharePoint Online.
 

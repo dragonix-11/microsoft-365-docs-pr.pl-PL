@@ -15,14 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: podręcznik wersji próbnej rozwiązań Ochrona usługi Office 365 w usłudze Microsoft Defender.
-ms.openlocfilehash: f23c45d117735997c219278621be7f314602cd8f
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a1adcf15bd051478e874b990a5e6b12f19d3b0c6
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130697"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648354"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Podręcznik wersji próbnej: Ochrona usługi Office 365 w usłudze Microsoft Defender
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Dotyczy:**
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Witamy w podręczniku wersji próbnej Ochrona usługi Office 365 w usłudze Microsoft Defender. Ten podręcznik pomoże Ci w maksymalnym użyciu 90-dniowej bezpłatnej wersji próbnej, ucząc Cię, jak chronić organizację za pomocą Ochrona usługi Office 365 w usłudze Defender. Korzystając z zaleceń firmy Microsoft, dowiesz się, jak Ochrona usługi Office 365 w usłudze Defender może pomóc w definiowaniu zasad ochrony, analizie zagrożeń dla organizacji i reagowaniu na ataki.
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 385b139390192d172b3bbbcbefd5efc2b793d4ab
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c58c447a4aed08af48576b461a638c1cd43aca83
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173502"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649248"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Co nowego w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
@@ -28,6 +28,15 @@ ms.locfileid: "65173502"
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+
+## <a name="1016880-30122042168800"></a>101.68.80 (30.122042.16880.0)
+
+- Dodano obsługę wersji `2.6.32-754.47.1.el6.x86_64` jądra podczas uruchamiania w systemie RHEL 6
+- W systemie RHEL 6 produkt można teraz zainstalować na urządzeniach z systemem Unbreakable Enterprise Kernel (UEK)
+- Rozwiązano problem polegający na tym, że nazwa procesu była czasami niepoprawnie wyświetlana, jak `unknown` podczas uruchamiania `mdatp diagnostic real-time-protection-statistics`
+- Usunięto usterkę polegającą na tym, że produkt czasami niepoprawnie wykrywał pliki w folderze kwarantanny
+- Rozwiązano problem polegający na tym `mdatp` , że narzędzie wiersza polecenia nie działało, gdy `/opt` było zainstalowane jako łącze nietrwałe
+- Ulepszenia wydajności & poprawek błędów
 
 ## <a name="1016577-30122032165770"></a>101.65.77 (30.122032.16577.0)
 

@@ -17,14 +17,20 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zasad kwarantanny do kontrolowania, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e591330137f2f2fd92ef05f64f5368cca533fc48
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: ef3fc69cf07f4b643e12bab96a73b68627e07203
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599326"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648244"
 ---
 # <a name="quarantine-policies"></a>Zasady kwarantanny
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Dotyczy:**
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Zasady kwarantanny (wcześniej nazywane _tagami kwarantanny_) w Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender umożliwiają administratorom kontrolowanie, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie na podstawie przyczyn kwarantanny komunikatu.
 

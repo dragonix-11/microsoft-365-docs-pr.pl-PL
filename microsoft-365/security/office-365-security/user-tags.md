@@ -17,14 +17,20 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak identyfikować określone grupy użytkowników za pomocą tagów użytkowników w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2. Filtrowanie tagów jest dostępne dla alertów, raportów i badań w Ochrona usługi Office 365 w usłudze Microsoft Defender, aby szybko zidentyfikować otagowanych użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7b9584b41ded7edd28fb1501ee4e5c3a1febd74
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 3d4f5b82e09c9a58e891fa6fcba009ac490c0cb1
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286411"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647474"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tagi użytkowników w Ochrona usługi Office 365 w usłudze Microsoft Defender
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Dotyczy:**
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Tagi użytkowników to identyfikatory określonych grup użytkowników w [Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md). Istnieją dwa typy tagów użytkowników:
 

@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak włączyć lub wyłączyć archiwalne skrzynki pocztowe, aby obsługiwać wymagania dotyczące przechowywania komunikatów, zbierania elektronicznych materiałów dowodowych i przechowywania wiadomości w organizacji.
-ms.openlocfilehash: fac57f8b352edc62db344ec600d3063e960f5a6f
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: ba5fdf252fe379798b1126d59affb12bb3725306
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393336"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647242"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Włączanie archiwalnych skrzynek pocztowych w portal zgodności Microsoft Purview
 
@@ -55,11 +55,10 @@ Jeśli nie widzisz strony **Archiwum** w portal zgodności Microsoft Purview, po
    > [!NOTE]
    > Strona **Archiwum** zawiera maksymalnie 500 użytkowników. Użyj pola wyszukiwania, jeśli nie możesz od razu wyświetlić żądanej nazwy użytkownika.
 
-3. Na liście skrzynek pocztowych wybierz użytkownika, aby włączyć skrzynkę pocztową do archiwum, a następnie wybierz opcję **Włącz archiwum** :
-
+3. Na liście skrzynek pocztowych wybierz użytkownika, aby włączyć skrzynkę pocztową dla archiwum, a następnie wybierz opcję **Włącz archiwum** :
+    
    ![Włącz opcję archiwum dla wybranego użytkownika.](../media/enable-archive-option.png)
-
-
+    
    Zostanie wyświetlone ostrzeżenie informujące, że po włączeniu archiwum skrzynki pocztowej elementy w skrzynce pocztowej użytkownika starsze niż zasady archiwizacji przypisane do skrzynki pocztowej zostaną przeniesione do nowej skrzynki pocztowej archiwum. Domyślne zasady archiwum, które są częścią zasad przechowywania przypisanych do Exchange Online skrzynek pocztowych, przenosi elementy do archiwum skrzynki pocztowej dwa lata po dacie dostarczenia elementu do skrzynki pocztowej lub utworzenia przez użytkownika. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o archiwalnych skrzynkach pocztowych](archive-mailboxes.md).
 
 5. Wybierz pozycję **Włącz** , aby potwierdzić.

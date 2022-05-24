@@ -17,16 +17,14 @@ ms.collection:
 description: Aby zapewnić zaufanie użytkowników do korzystania z poczty e-mail, firma Microsoft wprowadziła różne zasady i technologie ułatwiające ochronę naszych użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80eff003ec75eba68d1b194fe83d216fa2d013c0
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ff526dc317935651d28843b36bb529edf4ceb006
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974196"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648684"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Usługi dla klientów niebędących klientami wysyłających wiadomości e-mail do Microsoft 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Nadużycia w wiadomościach e-mail, wiadomości-śmieci i fałszywe wiadomości e-mail (wyłudzanie informacji) nadal obciążają cały ekosystem poczty e-mail. Aby zapewnić zaufanie użytkowników do korzystania z poczty e-mail, firma Microsoft wprowadziła różne zasady i technologie ułatwiające ochronę naszych użytkowników. Firma Microsoft rozumie jednak, że uzasadnione wiadomości e-mail nie powinny mieć negatywnego wpływu. W związku z tym ustanowiliśmy zestaw usług, które pomogą nadawcom zwiększyć ich zdolność do dostarczania wiadomości e-mail do użytkowników Microsoft 365 przez proaktywne zarządzanie ich reputacją wysyłania.
 

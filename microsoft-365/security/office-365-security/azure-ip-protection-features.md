@@ -19,22 +19,20 @@ ms.custom:
 description: W tym artykule wyjaśniono zmiany wprowadzane w funkcjach ochrony w usłudze Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbfc21b879745567c9273c79356ff60e498d95ff
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 38dd1accf4641d6dfe3f66574b1072e2500cb914
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130829"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647826"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Funkcje ochrony na platformie Azure Information Protection wdrażane w istniejących dzierżawach
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Aby ułatwić początkowy krok ochrony informacji, od lipca 2018 r. wszystkie kwalifikujące się dzierżawy Information Protection platformy Azure będą mieć domyślnie włączone funkcje ochrony na platformie Azure Information Protection. Funkcje ochrony w usłudze Azure Information Protection były wcześniej znane w Office 365 jako usługa Rights Management lub Azure RMS. Jeśli Twoja organizacja ma Office plan usługi E3 lub wyższy plan usługi, uzyskasz teraz początek ochrony informacji za pośrednictwem usługi Azure Information Protection podczas wdrażania tych funkcji.
+Aby ułatwić początkowy krok ochrony informacji, od lipca 2018 r. wszystkie kwalifikujące się dzierżawy Information Protection platformy Azure będą mieć domyślnie włączone funkcje ochrony na platformie Azure Information Protection. Funkcje ochrony w usłudze Azure Information Protection były wcześniej znane w Office 365 jako Rights Management lub Azure RMS. Jeśli Twoja organizacja ma Office plan usługi E3 lub wyższy plan usługi, uzyskasz teraz początek ochrony informacji za pośrednictwem usługi Azure Information Protection podczas wdrażania tych funkcji.
 
 ## <a name="changes-beginning-july-1-2018"></a>Zmiany rozpoczynające się 1 lipca 2018 r.
 
@@ -65,7 +63,7 @@ Jeśli Twoja organizacja zakupiła kwalifikującą się licencję Office 365, ta
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Czy mogę używać usługi Azure Information Protection z usługą Usługi Active Directory Rights Management (AD RMS)?
 
-Nie. Nie jest to obsługiwany scenariusz wdrażania. Bez wykonywania dodatkowych kroków rezygnacji niektóre komputery mogą automatycznie zacząć korzystać z usługi Azure Rights Management, a także łączyć się z klastrem usług AD RMS. Ten scenariusz nie jest obsługiwany i ma niewiarygodne wyniki, dlatego ważne jest, aby zrezygnować z tej zmiany w ciągu najbliższych 30 dni przed wdrożeniem tych nowych funkcji. Aby uzyskać informacje na temat sposobu rezygnacji, zobacz "Jak mogę zrezygnować z korzystania z usług AD RMS?" w dalszej części tego artykułu. Jeśli wolisz migrować, zobacz [Migrowanie z usług AD RMS do usługi Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+L.p. Nie jest to obsługiwany scenariusz wdrażania. Bez wykonywania dodatkowych kroków rezygnacji niektóre komputery mogą automatycznie zacząć korzystać z usługi Azure Rights Management, a także łączyć się z klastrem usług AD RMS. Ten scenariusz nie jest obsługiwany i ma niewiarygodne wyniki, dlatego ważne jest, aby zrezygnować z tej zmiany w ciągu najbliższych 30 dni przed wdrożeniem tych nowych funkcji. Aby uzyskać informacje na temat sposobu rezygnacji, zobacz "Jak mogę zrezygnować z korzystania z usług AD RMS?" w dalszej części tego artykułu. Jeśli wolisz migrować, zobacz [Migrowanie z usług AD RMS do usługi Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>Jak mogę wiem, czy używam usług AD RMS?
 

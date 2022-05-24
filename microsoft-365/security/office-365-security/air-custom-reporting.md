@@ -1,6 +1,6 @@
 ---
 title: Niestandardowe rozwiązania do raportowania z automatycznym badaniem i odpowiedzią
-keywords: SIEM, API, AIR, autoIR, Microsoft Defender for Endpoint, zautomatyzowane badanie, integracja, raport niestandardowy
+keywords: SIEM, API, AIR, autoIR, Ochrona punktu końcowego w usłudze Microsoft Defender, zautomatyzowane badanie, integracja, raport niestandardowy
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -15,37 +15,39 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Dowiedz się, jak zintegrować zautomatyzowane badania i odpowiedzi z niestandardowym lub innym rozwiązaniem do raportowania.
+description: Dowiedz się, jak zintegrować zautomatyzowane badanie i reagowanie z niestandardowym lub zewnętrznym rozwiązaniem do raportowania.
 ms.date: 01/29/2021
 ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3ff4317fc195a175a2b622c13ea4683a5e010b1c
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f21ed51cc9e89c2d60c924df377f109c6e29eec6
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680714"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647892"
 ---
-# <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Niestandardowe lub inne rozwiązania do raportowania dla programu Microsoft Defender dla Office 365
+# <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Niestandardowe lub zewnętrzne rozwiązania do raportowania dla Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-Usługa [Microsoft Defender dla Office 365](defender-for-office-365.md) umożliwia uzyskiwanie szczegółowych [informacji o zautomatyzowanych badaniach](air-view-investigation-results.md). Jednak niektóre organizacje również korzystają z rozwiązania do raportowania niestandardowego lub innego. Jeśli Twoja organizacja chce zintegrować informacje [o zautomatyzowanych](office-365-air.md) badaniach z takim rozwiązaniem, możesz użyć interfejsu API działań zarządzania Office 365 zarządzaniem.
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Usługa [Microsoft Defender dla Office 365](defender-for-office-365.md) umożliwia uzyskiwanie szczegółowych [informacji o zautomatyzowanych badaniach](air-view-investigation-results.md). Jednak niektóre organizacje również korzystają z rozwiązania do raportowania niestandardowego lub innego. Jeśli Twoja organizacja chce zintegrować informacje o zautomatyzowanych badaniach z takim rozwiązaniem, możesz użyć interfejsu API działań zarządzania Office 365 zarządzaniem.
+Dzięki [Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md) uzyskasz [szczegółowe informacje o zautomatyzowanych badaniach](air-view-investigation-results.md). Jednak niektóre organizacje korzystają również z niestandardowego lub zewnętrznego rozwiązania do raportowania. Jeśli Twoja organizacja chce zintegrować informacje o [zautomatyzowanych badaniach](office-365-air.md) z takim rozwiązaniem, możesz użyć interfejsu API działania zarządzania Office 365.
+
+Dzięki [Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md) uzyskasz [szczegółowe informacje o zautomatyzowanych badaniach](air-view-investigation-results.md). Jednak niektóre organizacje korzystają również z niestandardowego lub zewnętrznego rozwiązania do raportowania. Jeśli Twoja organizacja chce zintegrować informacje o zautomatyzowanych badaniach z takim rozwiązaniem, możesz użyć interfejsu API działania zarządzania Office 365.
 
 |Zasób|Opis|
 |:---|:---|
-|[Office 365 interfejsów API zarządzania](/office/office-365-management-api/office-365-management-apis-overview)|Interfejs API Office 365 zarządzania zawiera informacje o różnych działaniach i zdarzeniach dotyczących użytkowników, administratorów, systemu oraz zdarzeń z aplikacji Microsoft 365 i Azure Active Directory aktywności.|
-|[Wprowadzenie do interfejsów API Office 365 zarządzania](/office/office-365-management-api/get-started-with-office-365-management-apis)|Interfejs API Office 365 zarządzania używa usługi Azure AD do świadczenia usług uwierzytelniania dla Twojej aplikacji na Microsoft 365 danych. Wykonaj czynności opisane w tym artykule, aby skonfigurować tę procedurę.|
-|[Office 365 interfejsu API działań zarządzania](/office/office-365-management-api/office-365-management-activity-api-reference)|Za pomocą interfejsu API działań zarządzania Office 365 możesz pobierać informacje o akcjach i zdarzeniach użytkownika, administratora, systemu oraz zasad z dzienników aktywności usługi Microsoft 365 i Azure AD. Przeczytaj ten artykuł, aby dowiedzieć się więcej o tym, jak to działa.|
-|[Office 365 schemat interfejsu API działań zarządzania](/office/office-365-management-api/office-365-management-activity-api-schema)|Zapoznaj się z omówieniem schematu [Common](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) i usługi [Defender for Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) oraz analizy zagrożeń i schematu reakcji, aby uzyskać informacje o konkretnych typach danych dostępnych za pośrednictwem interfejsu API działań zarządzania Office 365.|
+|[Omówienie interfejsów API zarządzania Office 365](/office/office-365-management-api/office-365-management-apis-overview)|Interfejs API działania zarządzania Office 365 zawiera informacje o różnych akcjach i zdarzeniach dotyczących użytkowników, administratorów, systemów i zasad z dzienników aktywności Microsoft 365 i Azure Active Directory.|
+|[Wprowadzenie z interfejsami API zarządzania Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis)|Interfejs API zarządzania Office 365 używa Azure AD do udostępniania usług uwierzytelniania dla aplikacji w celu uzyskania dostępu do danych Microsoft 365. Wykonaj kroki opisane w tym artykule, aby to skonfigurować.|
+|[Dokumentacja dotycząca interfejsu API działań związanych z zarządzaniem w usłudze Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)|Interfejs API działania zarządzania Office 365 umożliwia pobieranie informacji o akcjach i zdarzeniach dotyczących użytkowników, administratorów, systemów i zasad oraz z dzienników aktywności Microsoft 365 i Azure AD. Przeczytaj ten artykuł, aby dowiedzieć się więcej o tym, jak to działa.|
+|[Schemat interfejsu API działań związanych z zarządzaniem w usłudze Office 365](/office/office-365-management-api/office-365-management-activity-api-schema)|Zapoznaj się z omówieniem [wspólnego schematu](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) oraz [schematu Ochrona usługi Office 365 w usłudze Defender i badania zagrożeń oraz schematu reagowania na nie](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema), aby dowiedzieć się więcej o określonych rodzajach danych dostępnych za pośrednictwem interfejsu API działania zarządzania Office 365.|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Usługa Microsoft Defender dla Office 365](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md)
 - [Zautomatyzowane badanie i reagowanie w Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

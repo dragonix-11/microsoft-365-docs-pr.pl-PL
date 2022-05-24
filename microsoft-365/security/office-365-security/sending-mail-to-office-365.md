@@ -19,16 +19,14 @@ ms.custom:
 description: Dowiedz się, jak jako nadawca-gość zwiększyć możliwość dostarczania wiadomości e-mail użytkownikom w Microsoft 365. Dowiedz się również, jak zgłaszać wiadomości-śmieci & próby wyłudzania informacji jako gość.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6d0f594da174236ce03ab0fd9b2af045f57f9f0
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 94bd79493a56bd288d21be255915b046b2bb0178
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535907"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649192"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Wysyłanie wiadomości e-mail do Microsoft 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Te artykuły pomagają zewnętrznym nadawcom poprawić ich reputację i zwiększyć ich zdolność do dostarczania wiadomości e-mail użytkownikom w Microsoft 365. Udostępniają również pewne informacje o sposobie zgłaszania wiadomości-śmieci i prób wyłudzania informacji, nawet jeśli nie jesteś użytkownikiem Microsoft 365.
 

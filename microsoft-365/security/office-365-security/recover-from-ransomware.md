@@ -1,5 +1,5 @@
 ---
-title: Odzyskiwanie po ataku wymuszającym okup
+title: Odzyskiwanie danych po ataku przez oprogramowanie wymuszające okup
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,16 +16,14 @@ ms.collection:
 description: Microsoft 365 administratorzy mogą dowiedzieć się, jak odzyskać sprawności po ataku wymuszającym okup.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e5e942bb39097fffa955d5bb9c3b8a72212d0cc
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 328457e37ea6ae351abb2c5d5f0089246145b32c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64730851"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648662"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Odzyskiwanie po ataku ransomware w Microsoft 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

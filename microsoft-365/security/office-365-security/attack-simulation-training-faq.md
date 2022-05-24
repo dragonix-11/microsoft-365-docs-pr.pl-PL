@@ -1,5 +1,5 @@
 ---
-title: Zagadnienia dotyczące wdrażania szkoleń w czasie ataków i często zadawane pytania
+title: Zagadnienia dotyczące wdrażania szkolenia z symulacji ataków i często zadawane pytania
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,114 +15,119 @@ ms.assetid: ''
 ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się więcej o zagadnieniach związanych z wdrażaniem i często zadawanych pytaniach dotyczących symulacyjnej i szkolenia w zakresie ataków w organizacjach Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
+description: Administratorzy mogą poznać zagadnienia dotyczące wdrażania i często zadawane pytania dotyczące symulacji ataków i szkoleń w organizacjach Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 57b4d684e52fd51a2ece279cc7322389a953a17c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 4145dcd073ec97c43ac64eecdbd25c48612a9b83
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467802"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649026"
 ---
-# <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Zagadnienia dotyczące wdrażania szkoleń w czasie ataków i często zadawane pytania
+# <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Zagadnienia dotyczące wdrażania szkolenia z symulacji ataków i często zadawane pytania
 
-Szkolenie symulacyjne z atakami Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender Organizacje planują 2 na mierzenie ryzyka socjowego i zarządzanie nim przez umożliwienie tworzenia i zarządzania symulacyjnych wyłudzania informacji obsługiwanych w świecie rzeczywistym, w których są odimowane łady służące do wyłudzania informacji. Szkolenia ukierunkowane na działanie hiper targeted, dostarczone we współpracy z zabezpieczeniamiNova, pomagają w ulepszaniu wiedzy i zmieniania zachowań pracowników.
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Aby uzyskać więcej informacji na temat rozpoczynania szkolenia z symezyjną ataków, zobacz Wprowadzenie [szkolenia z użyciem symezyjnych](attack-simulation-training-get-started.md) ataków.
+**Dotyczy**
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md)
 
-Mimo że całe środowisko tworzenia i planowania przebiegów symulacyjnych zostało zaprojektowane tak, aby było swobodne i nieczytarne, czasy bieżące na skalę przedsiębiorstwa często wymagają planowania. Ten artykuł pomaga w odniesieniu do konkretnych wyzwań, które widzą jako nasi klienci, podczas uruchamiania symulacyjnych w swoich środowiskach.
+Trenowanie symulacji ataków umożliwia organizacjom Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 mierzenie ryzyka związanego z inżynierią społeczną i zarządzanie nim, umożliwiając tworzenie symulacji wyłudzania informacji i zarządzanie nimi, które są obsługiwane przez rzeczywiste ładunki wyłudzania informacji bez broni. Szkolenie hiper-ukierunkowane, realizowane we współpracy z zabezpieczeniami programu Terranova, pomaga poprawić wiedzę i zmienić zachowanie pracowników.
 
-## <a name="issues-with-end-user-experiences"></a>Problemy ze środowiskami użytkownika końcowego
+Aby uzyskać więcej informacji na temat rozpoczynania trenowania symulacji ataków, zobacz [Wprowadzenie korzystanie z trenowania symulacji ataków](attack-simulation-training-get-started.md).
 
-### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Adresy URL symulowania wyłudzania informacji zablokowane przez przeglądanie Sejf Google
+Podczas gdy całe środowisko tworzenia i planowania symulacji zostało zaprojektowane tak, aby było swobodne i bezproblemowe, uruchamianie symulacji w skali przedsiębiorstwa często wymaga planowania. Ten artykuł pomaga sprostać konkretnym wyzwaniom, które widzimy, gdy nasi klienci uruchamiają symulacje we własnych środowiskach.
 
-Usługa reputacji adresu URL może zidentyfikować co najmniej jeden z adresów URL używanych przez szkolenie symulacyjne z atakami jako niebezpieczne. Przeglądanie Sejf Google Chrome blokuje niektóre symulowane adresy URL służące do wyłudzania informacji z treściwą wiadomością **z wyprzedzeniem**. Mimo że pracujemy z wieloma dostawcami reputacji adresów URL, aby zawsze zezwalać na adresy URL symulowania, nie zawsze mamy pełny zakres.
+## <a name="issues-with-end-user-experiences"></a>Problemy z środowiskami użytkowników końcowych
 
-:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Ostrzeżenie z wyprzedzeniem dotyczące witryny z deceptywną witryną w przeglądarce Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
+### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Adresy URL symulacji wyłudzania informacji zablokowane przez usługę Google Sejf Browsing
 
-Zwróć uwagę, że ten problem nie wpływa Microsoft Edge.
+Usługa reputacji adresu URL może zidentyfikować co najmniej jeden adres URL używany przez trenowanie symulacji ataków jako niebezpieczny. Przeglądanie google Sejf w przeglądarce Google Chrome blokuje niektóre symulowane adresy URL wyłudzania informacji z **komunikatem o zwodniczej witrynie**. Chociaż współpracujemy z wieloma dostawcami reputacji adresów URL, aby zawsze zezwalać na nasze adresy URL symulacji, nie zawsze mamy pełne pokrycie.
 
-W ramach fazy planowania sprawdź dostępność adresu URL w obsługiwanych przeglądarkach sieci Web, zanim użyjemy adresu URL w kampanii służącej do wyłudzania informacji. Jeśli adresy URL są zablokowane przez usługę Google [Sejf Przeglądania](https://support.google.com/chrome/a/answer/7532419) internetu, postępuj zgodnie z tą wytycznymi firmy Google, aby zezwolić na dostęp do adresów URL.
+:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Ostrzeżenie o zwodniczej witrynie w Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
-Aby uzyskać [Wprowadzenie](attack-simulation-training-get-started.md) adresów URL używanych obecnie w trakcie szkolenia symulacyjnego w zakresie ataków, zobacz korzystanie z szkolenia symulacyjnego w zakresie ataków.
+Należy pamiętać, że ten problem nie ma wpływu na Microsoft Edge.
 
-### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Symulacja wyłudzania informacji i adresy URL administratorów zablokowane przez sieciowe rozwiązania serwera proxy i sterowniki filtrów
+W ramach fazy planowania przed użyciem adresu URL w kampanii wyłudzania informacji sprawdź dostępność adresu URL w obsługiwanych przeglądarkach internetowych. Jeśli adresy URL są blokowane przez usługę Google Sejf Browsing, [postępuj zgodnie z poniższymi wskazówkami](https://support.google.com/chrome/a/answer/7532419) firmy Google, aby zezwolić na dostęp do adresów URL.
 
-Zarówno adresy URL dla symulacyjnych wyłudzania informacji, jak i adresy URL administratorów mogą być blokowane lub upuszczane przez pośrednie urządzenia zabezpieczające lub filtry. Przykład:
+Zapoznaj się [z Wprowadzenie korzystania z trenowania symulacji ataków](attack-simulation-training-get-started.md), aby uzyskać listę adresów URL, które są obecnie używane przez trenowanie symulacji ataków.
+
+### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Symulacja wyłudzania informacji i adresy URL administratora zablokowane przez rozwiązania serwera proxy sieci i sterowniki filtrów
+
+Zarówno adresy URL symulacji wyłudzania informacji, jak i adresy URL administratora mogą zostać zablokowane lub usunięte przez pośrednie urządzenia lub filtry zabezpieczeń. Przykład:
 
 - Zapory
-- Web Application Firewall (WAF)
-- Sterowniki filtru innych firm (na przykład filtry trybu kernelgo)
+- rozwiązania Web Application Firewall (WAF)
+- Sterowniki filtrów innych firm (na przykład filtry trybu jądra)
 
-W tej warstwie zablokowano kilku klientów, jednak tak się dzieje. Jeśli wystąpią problemy, rozważ skonfigurowanie następujących adresów URL tak, aby pomijać skanowanie urządzeń zabezpieczających lub filtry zgodnie z wymaganiami:
+Chociaż widzieliśmy, że niewielu klientów jest zablokowanych w tej warstwie, tak się dzieje. Jeśli wystąpią problemy, rozważ skonfigurowanie następujących adresów URL w celu obejścia skanowania przez urządzenia zabezpieczeń lub filtry zgodnie z wymaganiami:
 
-- Symulowane adresy URL służące do wyłudzania informacji, jak opisano [Wprowadzenie przy użyciu szkolenia z użyciem symezyjnej próby wyłudzenia informacji](attack-simulation-training-get-started.md).
+- Symulowane adresy URL wyłudzania informacji zgodnie z opisem w [Wprowadzenie przy użyciu trenowania symulacji ataków](attack-simulation-training-get-started.md).
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
 
-### <a name="simulation-messages-not-delivered-to-all-targeted-users"></a>Wiadomości symulacyjne, które nie są dostarczane do wszystkich użytkowników docelowych
+### <a name="simulation-messages-not-delivered-to-all-targeted-users"></a>Komunikaty symulacji nie są dostarczane do wszystkich użytkowników docelowych
 
-Możliwe, że liczba użytkowników, którzy w rzeczywistości otrzymują wiadomości e-mail z symulacyjnej wiadomości e-mail, jest mniejsza niż liczba użytkowników, którzy zostali docelowi w czasie symulacyjnej. W ramach sprawdzania poprawności docelowej zostaną wykluczone następujące typy użytkowników:
+Możliwe, że liczba użytkowników, którzy faktycznie otrzymują wiadomości e-mail symulacji, jest mniejsza niż liczba użytkowników, którzy zostali objęci symulacją. Następujące typy użytkowników zostaną wykluczone w ramach weryfikacji docelowej:
 
 - Nieprawidłowe adresy e-mail adresatów.
-- Użytkownicy goście.
-- Użytkownicy, którzy nie są już aktywni w usłudze Azure Active Directory (Azure AD).
+- Użytkownicy-goście.
+- Użytkownicy, którzy nie są już aktywni w Azure Active Directory (Azure AD).
 
-Tylko prawidłowi użytkownicy, którzy nie są gośćmi z prawidłową skrzynką pocztową, będą uwzględniane w symulacyjnych przykładach. Jeśli do kierowania użytkowników używasz grup dystrybucyjnych lub grup zabezpieczeń z obsługą poczty, możesz użyć polecenia cmdlet [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) w programie [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), aby wyświetlać i sprawdzać poprawność członków grupy dystrybucyjnej.
+Tylko prawidłowi użytkownicy niebędący gośćmi z prawidłową skrzynką pocztową zostaną uwzględnieni w symulacjach. Jeśli używasz grup dystrybucyjnych lub grup zabezpieczeń z obsługą poczty do kierowania użytkowników, możesz użyć polecenia cmdlet [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), aby wyświetlić i zweryfikować członków grupy dystrybucyjnej.
 
-## <a name="issues-with-attack-simulation-training-reporting"></a>Problemy z raportowaniem szkoleń dotyczących symulacyjnych ataków
+## <a name="issues-with-attack-simulation-training-reporting"></a>Problemy z raportowaniem trenowania symulacji ataków
 
-### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Raporty szkoleniowe dotyczące symulacyjnych ataków nie zawierają żadnych szczegółów aktywności
+### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Raporty trenowania symulacji ataków nie zawierają żadnych szczegółów działania
 
-Szkolenie symulacyjne dotyczące ataków zapewnia rozbudowane, pozwala uzyskać szczegółowe informacje, które informują Cię o postępie gotowości pracowników do działania w związku z zagrożeniami. Jeśli raporty szkoleniowe dotyczące symulacyjnych ataków nie są wypełnione danymi, sprawdź, czy w organizacji włączona jest opcja przeszukiwania dziennika inspekcji (domyślnie jest włączona).
+Szkolenia dotyczące symulacji ataków są wyposażone w rozbudowane szczegółowe informacje umożliwiające podjęcie działań, które informują o postępie gotowości pracowników do realizacji zagrożeń. Jeśli raporty trenowania symulacji ataków nie są wypełnione danymi, sprawdź, czy wyszukiwanie dzienników inspekcji jest włączone w organizacji (domyślnie jest włączone).
 
-Przeszukiwanie dziennika inspekcji jest wymagane w ramach szkolenia symetanii ataków, aby można było przechwytywać, nagrywać i odczytywać zdarzenia. Wyłączenie przeszukiwania dziennika inspekcji ma następujące konsekwencje dla szkolenia z symezyjną ataków:
+Wyszukiwanie dzienników inspekcji jest wymagane przez trenowanie symulacji ataków, aby zdarzenia mogły być przechwytywane, rejestrowane i odczytywane z powrotem. Wyłączenie wyszukiwania dzienników inspekcji ma następujące konsekwencje dla trenowania symulacji ataków:
 
 - Dane raportowania nie są dostępne we wszystkich raportach. Raporty będą wyświetlane jako puste.
-- Zadania szkoleniowe są blokowane, ponieważ dane są niedostępne.
+- Przypisania trenowania są blokowane, ponieważ dane są niedostępne.
 
-Aby włączyć przeszukiwanie dziennika inspekcji, zobacz Włączanie lub wyłączanie wyszukiwania [w dzienniku inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
+Aby włączyć wyszukiwanie dzienników inspekcji, zobacz [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
 
 > [!NOTE]
-> Puste szczegóły aktywności mogą być również spowodowane tym, że do użytkowników nie przypisano żadnych licencji E5. Upewnij się, że do aktywnego użytkownika przypisano co najmniej jedną licencję E5, aby się upewnić, że zdarzenia raportowania zostały zarejestrowane.
+> Puste szczegóły działania mogą być również spowodowane tym, że żadne licencje E5 nie są przypisane do użytkowników. Sprawdź, czy co najmniej jedna licencja E5 jest przypisana do aktywnego użytkownika, aby upewnić się, że zdarzenia raportowania są przechwytywane i rejestrowane.
 
-### <a name="simulation-reports-are-not-updated-immediately"></a>Raporty symulacyjne nie są aktualizowane natychmiast
+### <a name="simulation-reports-are-not-updated-immediately"></a>Raporty symulacji nie są natychmiast aktualizowane
 
-Szczegółowe raporty symulacyjne nie są aktualizowane od razu po uruchomieniu kampanii. Nie martw się. takie zachowanie jest oczekiwane.
+Szczegółowe raporty symulacji nie są aktualizowane natychmiast po rozpoczęciu kampanii. Nie martw się; to zachowanie jest oczekiwane.
 
-Każda kampania symulacyjna ma cykl życia. Podczas tworzenia po raz pierwszy symulowany jest w stanie **Zaplanowano** . Po rozpoczęciem symulacyjnej przechodzi ona do stanu **W toku** . Po ukończeniu przejścia symulacyjne do stanu **Ukończono** .
+Każda kampania symulacji ma cykl życia. Po pierwszym utworzeniu symulacja jest w stanie **Zaplanowane** . Po rozpoczęciu symulacji przechodzi ona do stanu **W toku** . Po zakończeniu symulacja przechodzi do stanu **Ukończono** .
 
-Podczas gdy symulowanie znajduje **się w stanie** zaplanowanym, raporty symulacyjne będą przeważnie puste. Na tym etapie aparat symulowania rozwiązuje adresy e-mail użytkowników docelowych, rozszerza grupy dystrybucyjne, usuwa użytkowników gości z listy itp.:
+Gdy symulacja jest w stanie **Zaplanowane** , raporty symulacji będą w większości puste. Na tym etapie aparat symulacji rozwiązuje docelowe adresy e-mail użytkowników, rozszerza grupy dystrybucyjne, usuwa użytkowników-gości z listy itp.:
 
-:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="Szczegóły symulacyjne przedstawiające czas symulowania w stanie według harmonogramu" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
+:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="Szczegóły symulacji przedstawiające symulację w stanie Zaplanowane" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
-Gdy symulowanie przejdzie na **etap W toku** , zauważysz informacje, które zaczynają docierać do raportowania:
+Gdy symulacja przejdzie do etapu **W toku** , zauważysz, że informacje zaczynają spływać do raportowania:
 
-:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="Szczegóły symulacyjne przedstawiające czas symulowania w stanie w toku" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
+:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="Szczegóły symulacji przedstawiające symulację w stanie W toku" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
-Aktualizacja poszczególnych raportów symulacyjnych po przejściu do stanu W **toku** może potrwać do 30 minut. Dane raportu są nadal kompilowane, aż do momentu osiągnięcia przez symulacyjne **stanu Ukończono** . Aktualizacje raportowania występują w następujących interwałach:
+Aktualizacja poszczególnych raportów symulacji po przejściu do stanu **W toku** może potrwać do 30 minut. Dane raportu są nadal kompilowane, dopóki symulacja nie osiągnie stanu **Ukończono** . Aktualizacje raportowania występują w następujących interwałach:
 
-- Co 10 minut dla pierwszych 60 minut.
+- Co 10 minut przez pierwsze 60 minut.
 - Co 15 minut po 60 minutach do 2 dni.
-- Co 30 minut po 2 dniach do 7 dni.
+- Co 30 minut po 2 dniach aż do 7 dni.
 - Co 60 minut po 7 dniach.
 
-Widżety na stronie **Przegląd** zapewniają szybką migawkę czasu pracy zabezpieczeń opartej na symulacyjnej pracy organizacji. Ponieważ te widżety odzwierciedlają ogólne zadania w zakresie zabezpieczeń i podróże w czasie, są one aktualizowane po zakończeniu każdej kampanii symulacyjnej.
+Widżety na stronie **Przegląd** zapewniają szybką migawkę stanu zabezpieczeń opartego na symulacjach organizacji w miarę upływu czasu. Ponieważ te widżety odzwierciedlają ogólną postawę zabezpieczeń i podróż w czasie, są one aktualizowane po zakończeniu każdej kampanii symulacji.
 
 > [!NOTE]
-> Możesz użyć opcji **Eksportuj na** różnych stronach raportów, aby wyodrębnić dane.
+> Aby wyodrębnić dane, możesz użyć opcji **Eksportuj** na różnych stronach raportowania.
 
-### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>Wiadomości zgłoszone przez użytkowników jako próby wyłudzenia informacji nie są wyświetlane w raportach symulacyjnych
+### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>Komunikaty zgłaszane jako wyłudzanie informacji przez użytkowników nie są wyświetlane w raportach symulacji
 
-Raporty symulacyjne w szkoleniach dotyczących ataków zawierają szczegółowe informacje na temat aktywności użytkowników. Przykład:
+Raporty symulacji w trenowaniu symulatora ataków zawierają szczegółowe informacje na temat aktywności użytkownika. Przykład:
 
-- Użytkownicy, którzy klikli link w wiadomości.
-- Użytkownicy, którzy podali swoje poświadczenia.
+- Użytkownicy, którzy klikną link w wiadomości.
+- Użytkownicy, którzy zrezygnowali ze swoich poświadczeń.
 - Użytkownicy, którzy zgłosili wiadomość jako wyłudzanie informacji.
 
-Jeśli wiadomości zgłoszone przez użytkowników jako próby wyłudzenia informacji nie są przechwytywane w raportach symulacyjnych symulacyjnych ćwiczeń dotyczących ataków, może być tam reguła przepływu poczty e-mail programu Exchange (znana również jako reguła transportu), która blokuje dostarczenie zgłoszonych wiadomości do firmy Microsoft. Sprawdź, czy reguły przepływu poczty e-mail nie blokują dostarczania na następujące adresy e-mail:
+Jeśli wiadomości zgłaszane przez użytkowników jako wyłudzanie informacji nie są przechwytywane w raportach symulacji symulacji symulacji ataków, może istnieć Exchange reguła przepływu poczty (znana również jako reguła transportu), która blokuje dostarczanie zgłoszonych wiadomości do firmy Microsoft. Sprawdź, czy reguły przepływu poczty nie blokują dostarczania na następujące adresy e-mail:
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
@@ -131,55 +136,55 @@ Jeśli wiadomości zgłoszone przez użytkowników jako próby wyłudzenia infor
 
 ## <a name="other-frequently-asked-questions"></a>Inne często zadawane pytania
 
-### <a name="q-what-is-the-recommended-method-to-target-users-for-simulation-campaigns"></a>P: Jaka jest zalecana metoda kierowania użytkowników na kampanie symulacyjne?
+### <a name="q-what-is-the-recommended-method-to-target-users-for-simulation-campaigns"></a>Pyt.: Jaka jest zalecana metoda kierowania do użytkowników kampanii symulacji?
 
-O: Dla użytkowników docelowych dostępnych jest kilka opcji:
+Odjęcie: Dostępnych jest kilka opcji dla użytkowników docelowych:
 
-- Uwzględnij wszystkich użytkowników (obecnie dostępnych dla organizacji, które mają mniej niż 40 000 użytkowników).
-- Wybierz konkretnych użytkowników.
-- Wybierz użytkowników z pliku CSV (po jednym adresie e-mail w wierszu).
-- Kierowanie grupowe w usłudze Azure AD.
+- Uwzględnij wszystkich użytkowników (obecnie dostępnych dla organizacji z mniej niż 40 000 użytkowników).
+- Wybierz określonych użytkowników.
+- Wybierz użytkowników z pliku CSV (jeden adres e-mail na wiersz).
+- Azure AD określania wartości docelowej opartej na grupach.
 
-Odkryliśmy, że kampanie, w których użytkownicy docelowi są identyfikowani przez grupy usługi Azure AD, na ogół ułatwiają zarządzanie.
+Odkryliśmy, że kampanie, w których docelowi użytkownicy są identyfikowane przez grupy Azure AD, są zazwyczaj łatwiejsze w zarządzaniu.
 
-### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>P. Czy istnieją ograniczenia dotyczące określania docelowych użytkowników podczas importowania z pliku CSV lub dodawania użytkowników?
+### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>Pyt.: Czy istnieją jakieś ograniczenia dotyczące kierowania użytkowników podczas importowania z pliku CSV lub dodawania użytkowników?
 
-O. Limit importowania adresatów z pliku CSV lub dodawania poszczególnych adresatów do symulacyjnej wartości to 40 000.
+Odp.: Limit importowania adresatów z pliku CSV lub dodawania poszczególnych adresatów do symulacji wynosi 40 000.
 
-Adresatem może być pojedynczy użytkownik lub grupa. Grupa może zawierać setki lub tysiące adresatów, więc rzeczywisty limit nie jest umieszczany na liczbie pojedynczych użytkowników.
+Adresat może być pojedynczym użytkownikiem lub grupą. Grupa może zawierać setki lub tysiące adresatów, więc rzeczywisty limit nie jest ograniczony do liczby poszczególnych użytkowników.
 
-Zarządzanie dużym plikiem CSV lub dodawanie wielu pojedynczych adresatów może być uciążliwe. Korzystanie z grup usługi Azure AD upraszcza ogólne zarządzanie symulacją.
+Zarządzanie dużym plikiem CSV lub dodawanie wielu pojedynczych adresatów może być kłopotliwe. Użycie Azure AD grup upraszcza ogólne zarządzanie symulacją.
 
-### <a name="q-does-microsoft-provide-payloads-in-other-languages"></a>P: Czy firma Microsoft dostarcza  payloads w innych językach?
+### <a name="q-does-microsoft-provide-payloads-in-other-languages"></a>Pyt.: Czy firma Microsoft dostarcza ładunki w innych językach?
 
-O. Obecnie dostępnych jest ponad 40 zlokalizowanych ładówek w ponad 10 językach: chiński (uproszczony), chiński (tradycyjny), angielski, francuski, niemiecki, japoński, koreański, portugalski, rosyjski, hiszpański i holenderski. Zauważyliśmy, że bezpośrednie lub maszynowe tłumaczenie istniejących przekierowywów na inne języki spowoduje nieścisłości i zmniejszy się istotność.
+Odp.: Obecnie istnieje ponad 40 zlokalizowanych ładunków dostępnych w ponad 10 językach: chińskim (uproszczonym), chińskim (tradycyjnym), angielskim, francuskim, niemieckim, włoskim, japońskim, koreańskim, portugalskim, rosyjskim, hiszpańskim i holenderskim. Zauważyliśmy, że wszelkie bezpośrednie lub maszynowe tłumaczenia istniejących ładunków na inne języki doprowadzą do nieścisłości i zmniejszą istotność.
 
-W związku z tym możesz utworzyć własny ład w wybranej wersji językowej przy użyciu niestandardowego interfejsu tworzenia ładowania. Zdecydowanie zalecamy również zbieranie istniejących zbiorów zbiorów, które zostały użyte do kierowania użytkowników do konkretnych lokalizacji geograficznych. Innymi słowy pozwolić atakującym na zlokalizowanej zawartości.
+Mimo to możesz utworzyć własny ładunek w wybranym języku przy użyciu niestandardowego środowiska tworzenia ładunku. Zdecydowanie zalecamy również zebranie istniejących ładunków, które były używane do kierowania do użytkowników w określonej lokalizacji geograficznej. Innymi słowy, pozwól, aby osoby atakujące lokalizowały zawartość.
 
-### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>P. Jak mogę przełączyć się na inne języki w portalu administracyjnym i w witrynie szkoleniowej?
+### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>Pyt.: Jak mogę przełączyć się na inne języki dla portalu administracyjnego i środowiska szkoleniowego?
 
-O. W Microsoft 365 lub Office 365 konfiguracja języka jest konfigurowana i scentralizowana dla każdego konta użytkownika. Aby uzyskać instrukcje dotyczące zmieniania ustawienia języka, zobacz Zmienianie języka wyświetlania i strefy czasowej w [programie Microsoft 365 dla firm](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
+Odc. W Microsoft 365 lub Office 365 konfiguracja języka jest specyficzna i scentralizowana dla każdego konta użytkownika. Aby uzyskać instrukcje dotyczące sposobu zmiany ustawienia języka, zobacz [Zmienianie języka wyświetlania i strefy czasowej w Microsoft 365 dla firm](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
 
-Zauważ, że synchronizacja zmiany konfiguracji może potrwać do 30 minut we wszystkich usługach.
+Należy pamiętać, że synchronizacja zmiany konfiguracji może potrwać do 30 minut we wszystkich usługach.
 
-### <a name="q-can-i-trigger-a-test-simulation-to-understand-what-it-looks-like-prior-to-launching-a-full-fledged-campaign"></a>P. Czy mogę uruchomić symulowanie testowe, aby zrozumieć, jak wygląda przed uruchomieniem pełnej kampanii?
+### <a name="q-can-i-trigger-a-test-simulation-to-understand-what-it-looks-like-prior-to-launching-a-full-fledged-campaign"></a>Pyt.: Czy mogę wyzwolić symulację testową, aby zrozumieć, jak wygląda przed rozpoczęciem pełnoprawnej kampanii?
 
-O: Tak, możesz! Na ostatniej **stronie symulacyjnej przeglądu** w kreatorze w celu utworzenia nowej symulacyjnej istnieje opcja **Wyślij test**. Ta opcja spowoduje wysłanie przykładowego komunikatu symulacyjnego wyłudzania informacji do obecnie zalogowanego użytkownika. Po zweryfikowaniu wiadomości służącej do wyłudzania informacji w skrzynce odbiorczej możesz przesłać symulację.
+Odpowiedź: Tak, możesz! Na ostatniej stronie **Przeglądanie symulacji** w kreatorze, aby utworzyć nową symulację, istnieje możliwość **wysłania testu**. Ta opcja spowoduje wysłanie przykładowego komunikatu symulacji wyłudzania informacji do aktualnie zalogowanego użytkownika. Po zweryfikowaniu wiadomości wyłudzającej informacje w skrzynce odbiorczej możesz przesłać symulację.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="Przycisk Wyślij test na stronie symulacyjnej recenzji" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="Przycisk Wyślij test na stronie Przeglądanie symulacji" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
-### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>P. Czy można kierować użytkowników należących do innej dzierżawy w ramach tej samej kampanii symulacyjnej?
+### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>Pyt.: Czy mogę kierować do użytkowników należących do innej dzierżawy w ramach tej samej kampanii symulacji?
 
-Odp. Nie. Obecnie nie są obsługiwane symulowania dla wielu dzierżaw. Sprawdź, czy wszyscy docelowi użytkownicy znajdują się w tej samej dzierżawie. Użytkownicy korzystający z różnych dzierżaw lub goście zostaną wykluczeni z kampanii symulacyjnej.
+Odp. Nie. Obecnie symulacje obejmujące wiele dzierżaw nie są obsługiwane. Sprawdź, czy wszyscy użytkownicy docelowi znajdują się w tej samej dzierżawie. Wszyscy użytkownicy korzystający z wielu dzierżaw lub użytkownicy-goście zostaną wykluczeni z kampanii symulacji.
 
-### <a name="q-how-does-region-aware-delivery-work"></a>P: Jak działa dostarczanie w przypadku regionów?
+### <a name="q-how-does-region-aware-delivery-work"></a>Pyt.: Jak działa dostarczanie z obsługą regionów?
 
-O: Do określenia czasu dostarczenia wiadomości w regionie jest używany atrybut TimeZone skrzynki pocztowej użytkownika docelowego oraz logika "nie wcześniej". Rozważ na przykład następujący scenariusz:
+Odświadczanie: Dostarczanie z obsługą regionu używa atrybutu TimeZone skrzynki pocztowej docelowego użytkownika i logiki "nie wcześniej", aby określić, kiedy ma zostać dostarczona wiadomość. Rozważmy na przykład następujący scenariusz:
 
-- O 7:00 w strefie czasowej Pacyfiku (UTC-8) administrator tworzy i planuje kampanię, która rozpocznie się o 9:00 tego samego dnia.
-- UserA znajduje się w strefie czasowej wschodniego (UTC-5).
-- UżytkownikB znajduje się również w strefie czasowej Pacyfiku.
+- O godzinie 7:00 w strefie czasowej Pacyfiku (UTC-8) administrator tworzy i planuje rozpoczęcie kampanii o godzinie 9:00 tego samego dnia.
+- UserA znajduje się we wschodniej strefie czasowej (UTC-5).
+- UserB znajduje się również w strefie czasowej Pacyfiku.
 
-Tego samego dnia o godzinie 9:00 komunikat symulacyjnej jest wysyłany do użytkownika UserB. Dzięki dostarczeniu dla regionu wiadomość nie jest wysyłana do użytkownika W tym samym dniu, ponieważ czasu pacyficznego o 23:00 czasu wschodniego jest godzina 12:00 czasu wschodniego. Zamiast tego wiadomość jest wysyłana do użytkownika UserA o godzinie 9:00 czasu wschodniego następnego dnia.
+Tego samego dnia o godzinie 9:00 komunikat symulacji jest wysyłany do usługi UserB. W przypadku dostarczania z obsługą regionu komunikat nie jest wysyłany do użytkownika UserA tego samego dnia, ponieważ godzina 9:00 czasu pacyficznego to 12:00 czasu wschodniego. Zamiast tego wiadomość jest wysyłana do użytkownika UserA o godzinie 9:00 czasu wschodniego następnego dnia.
 
-W związku z tym w początkowym uruchomieniu kampanii z włączonym dostarczaniem w regionie świadomym może się wydawać, że komunikat symulujący został wysłany tylko do użytkowników w określonej strefie czasowej. Jednak wraz z upływem czasu i dojściem większej liczby użytkowników docelowych spowoduje ich zwiększenie.
+Dlatego podczas początkowego przebiegu kampanii z włączonym dostarczaniem z obsługą regionu może się wydawać, że komunikat symulacji został wysłany tylko do użytkowników w określonej strefie czasowej. Jednak w miarę upływu czasu coraz więcej użytkowników wchodzi w zakres, docelowi użytkownicy będą się zwiększać.

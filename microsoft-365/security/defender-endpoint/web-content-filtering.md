@@ -15,16 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2e86aa7fc8ed304327ab2c07ec487789ad966fc7
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 29a221e60484431722be4e7104efb5b37a0408bc
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535453"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648574"
 ---
 # <a name="web-content-filtering"></a>Filtrowanie zawartości sieci Web
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -56,7 +54,7 @@ Przed wypróbowaniem tej funkcji upewnij się, że spełniasz wymagania opisane 
 
 | Wymóg | Opis |
 |:---|:---|
-| Subskrypcji | Twoja subskrypcja musi zawierać jedną z następujących opcji:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Zabezpieczenia platformy Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1 lub plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender dla Firm](../defender-business/mdb-overview.md) |
+| Subskrypcji | Twoja subskrypcja musi zawierać jedną z następujących opcji:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Zabezpieczenia platformy Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1 lub plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender dla Firm](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | Dostęp do portalu | Musisz mieć dostęp do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>. |
 | System operacyjny | Na urządzeniach organizacji musi działać jeden z następujących systemów operacyjnych z [najnowszymi aktualizacjami oprogramowania antywirusowego/chroniącego przed złośliwym kodem](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>— rocznicowa aktualizacja Windows 10 (wersja 1607) lub nowsza |
 | Ochrona pokrewna | [Windows Defender filtr SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) i [ochrona sieci](network-protection.md) muszą być włączone na urządzeniach organizacji. |
@@ -177,7 +175,7 @@ Aby dodać nowe zasady, wykonaj następujące kroki:
 4. Określ zakres zasad. Wybierz grupy urządzeń, aby określić miejsce zastosowania zasad. Tylko urządzenia w wybranych grupach urządzeń nie będą mogły uzyskiwać dostępu do witryn internetowych w wybranych kategoriach.
 
    > [!IMPORTANT]
-   > Jeśli używasz usługi Defender dla Firm, zasady filtrowania zawartości internetowej są domyślnie stosowane do wszystkich użytkowników. Określanie zakresu nie ma zastosowania.
+   > Jeśli używasz usługi Microsoft 365 Business Premium lub defendera dla firm, zasady filtrowania zawartości internetowej są domyślnie stosowane do wszystkich użytkowników. Określanie zakresu nie ma zastosowania.
 
 5. Przejrzyj podsumowanie i zapisz zasady. Odświeżanie zasad może potrwać do 2 godzin w przypadku wybranych urządzeń.
 
@@ -188,7 +186,7 @@ Aby dodać nowe zasady, wykonaj następujące kroki:
 
 ## <a name="end-user-experience"></a>Środowisko użytkownika końcowego
 
-Środowisko blokowania obsługiwanych przeglądarek innych firm jest udostępniane przez usługę Network Protection, która udostępnia komunikat na poziomie systemu powiadamiający użytkownika o zablokowanym połączeniu. Aby uzyskać bardziej przyjazne dla użytkownika środowisko w przeglądarce, rozważ użycie Microsoft Edge.
+Środowisko blokowania obsługiwanych przeglądarek innych firm jest zapewniane przez ochronę sieci, która udostępnia komunikat na poziomie systemu powiadamiający użytkownika o zablokowanym połączeniu. Aby uzyskać bardziej przyjazne dla użytkownika środowisko w przeglądarce, rozważ użycie Microsoft Edge.
 
 ### <a name="allow-specific-websites"></a>Zezwalaj na określone witryny sieci Web
 
@@ -204,7 +202,7 @@ Aby zdefiniować wskaźnik niestandardowy, wykonaj następujące kroki:
 
 ### <a name="dispute-categories"></a>Kategorie sporów
 
-Jeśli napotkasz domenę, która została niepoprawnie skategoryzowana, możesz zakwestionować tę kategorię bezpośrednio z portalu.
+Jeśli napotkasz domenę, która została niepoprawnie skategoryzowana, możesz zakwestionować tę kategorię bezpośrednio z portalu Microsoft 365 Defender.
 
 Aby zakwestionować kategorię domeny, przejdź do obszaru Domeny **szczegółów**\> **filtrowania zawartości sieci Web** **usługi Reports** \> **Web Protection**\>. Na karcie domeny raportów filtrowania zawartości sieci Web obok każdej domeny zostanie wyświetlony wielokropek. Umieść kursor nad tym wielokropem i wybierz pozycję **Kategoria sporów**.
 
@@ -254,7 +252,9 @@ Tylko Microsoft Edge jest obsługiwane, jeśli konfiguracja systemu operacyjnego
 
 Obsługiwane są tylko Microsoft Edge, a ochrona sieci nie jest obsługiwana na Windows 10 hostach z wieloma sesjami usługi Azure Virtual Desktop.
 
-Usługa Network Protection nie obsługuje obecnie inspekcji protokołu SSL, co może spowodować, że niektóre witryny będą dozwolone przez filtrowanie zawartości sieci Web, które normalnie byłyby blokowane. Witryny będą dozwolone z powodu braku wglądu w zaszyfrowany ruch po uzgadnianiu protokołu TLS i niemożności przeanalizowania niektórych przekierowań.  Obejmuje to przekierowania ze stron logowania poczty internetowej do strony skrzynki pocztowej. Jako zaakceptowane obejście możesz utworzyć niestandardowy wskaźnik bloku dla strony logowania, aby upewnić się, że żaden użytkownik nie będzie mógł uzyskać dostępu do witryny. Należy pamiętać, że może to zablokować ich dostęp do innych usług skojarzonych z tą samą witryną internetową. 
+Ochrona sieci nie obsługuje obecnie inspekcji protokołu SSL, co może spowodować, że niektóre witryny będą dozwolone przez filtrowanie zawartości internetowej, które normalnie byłyby blokowane. Witryny będą dozwolone z powodu braku wglądu w zaszyfrowany ruch po uzgadnianiu protokołu TLS i niemożności przeanalizowania niektórych przekierowań.  Obejmuje to przekierowania ze stron logowania poczty internetowej do strony skrzynki pocztowej. Jako zaakceptowane obejście możesz utworzyć niestandardowy wskaźnik bloku dla strony logowania, aby upewnić się, że żaden użytkownik nie będzie mógł uzyskać dostępu do witryny. Należy pamiętać, że może to zablokować ich dostęp do innych usług skojarzonych z tą samą witryną internetową. 
+
+Jeśli używasz Microsoft 365 Business Premium lub Microsoft Defender dla Firm, możesz zdefiniować jedną zasadę filtrowania zawartości internetowej dla swojego środowiska. Te zasady będą domyślnie stosowane do wszystkich użytkowników.
 
 ## <a name="see-also"></a>Zobacz też
 

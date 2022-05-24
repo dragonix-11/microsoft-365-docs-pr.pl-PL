@@ -20,14 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6992af4483bedfe418610b752d2195a8d22f30d3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0920439345b026879b86ad3b2ce104d3ea8174d1
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974328"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649444"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Wykrywanie zagrożeń i Eksploratora zagrożeń w czasie rzeczywistym
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
@@ -172,7 +174,7 @@ Obecnie lokalizacja dostarczania jest dostępna w siatce wiadomości e-mail i wy
 
 ### <a name="additional-actions"></a>Dodatkowe akcje
 
-Po dostarczeniu wiadomości e-mail zastosowano *dodatkowe akcje*. Mogą one obejmować *zap*, *ręczne korygowanie* (działania podjęte przez administratora, takie jak usuwanie nietrwałe), *dynamiczne dostarczanie* i *ponowne przetwarzanie* (dla wiadomości e-mail, która została wykryta wstecznie jako dobra).
+Po dostarczeniu wiadomości e-mail zastosowano *dodatkowe akcje*. Mogą one obejmować *zap*, *ręczne korygowanie* (działania podejmowane przez Administracja, takie jak usuwanie nietrwałe), *dynamiczne dostarczanie* i *ponownie przetwarzane* (dla wiadomości e-mail, która została wykryta wstecznie jako dobra).
 
 > [!NOTE]
 > W ramach oczekujących zmian wartość "Usunięto przez zap" obecnie dostępna w filtrze Akcja dostarczania odchodzi. Będziesz mieć sposób wyszukiwania wszystkich wiadomości e-mail przy użyciu próby zap za pomocą **dodatkowych akcji**.
@@ -289,8 +291,8 @@ Zobaczysz zarówno identyfikator GUID, jak i nazwę reguł transportu, które zo
 >
 > - Tylko exo — zapobieganie utracie danych: wszystkie
 > - Tylko exo — O365SupportViewConfig: wszystkie
-> - Microsoft Azure Active Directory lub EXO — administrator zabezpieczeń: wszystkie
-> - AAD lub EXO — czytnik zabezpieczeń: wszystkie
+> - Microsoft Azure Active Directory lub EXO — Administracja zabezpieczeń: wszystkie
+> - AAD lub EXO — czytnik zabezpieczeń: wszystko
 > - Tylko exo — reguły transportu: wszystkie
 > - Tylko exo — konfiguracja View-Only: wszystkie
 >

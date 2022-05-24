@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 41fa5aece6f8c18ef16dbf624f90a1ead25b45f5
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 33eff726609db3d7f2d07f4a5bcf4955536c086c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174920"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647288"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Hostuj raportowanie zapory w usłudze ochrony punktu końcowego w usłudze Microsoft Defender
 
@@ -36,13 +36,45 @@ Jeśli jesteś administratorem globalnym lub administratorem zabezpieczeń, moż
 
 - Musisz mieć uruchomione Windows 10, Windows 11, Windows Server 2019 lub Windows Server 2022.
 - Aby dołączyć urządzenia do usługi Ochrona punktu końcowego w usłudze Microsoft Defender, zobacz [tutaj](onboard-configure.md).
-- Aby <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalu</a>, aby rozpocząć odbieranie danych, należy włączyć opcję **Zdarzenia inspekcji** dla zapory Windows Defender z zabezpieczeniami zaawansowanymi:
+- Aby <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalu</a>, aby rozpocząć odbieranie danych, należy włączyć opcję **Zdarzenia inspekcji** dla Zapora Windows Defender z zabezpieczeniami zaawansowanymi:
   - [Porzucanie pakietów platformy filtrowania inspekcji](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Inspekcja połączenia platformy filtrowania](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Włącz te zdarzenia przy użyciu edytora obiektów zasady grupy, zasad zabezpieczeń lokalnych lub poleceń auditpol.exe. Aby uzyskać więcej informacji, zobacz [tutaj](/windows/win32/fwp/auditing-and-logging).
   - Dwa polecenia programu PowerShell to:
     - **auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable**
     - **auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable**
+```powershell
+param (
+    [switch]$remediate
+)
+try {
+
+    $categories = "Filtering Platform Packet Drop,Filtering Platform Connection"
+    $current = auditpol /get /subcategory:"$($categories)" /r | ConvertFrom-Csv    
+    if ($current."Inclusion Setting" -ne "failure") {
+        if ($remediate.IsPresent) {
+            Write-Host "Remediating. No Auditing Enabled. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})"
+            $output = auditpol /set /subcategory:"$($categories)" /failure:enable
+            if($output -eq "The command was successfully executed.") {
+                Write-Host "$($output)"
+                exit 0
+            }
+            else {
+                Write-Host "$($output)"
+                exit 1
+            }
+        }
+        else {
+            Write-Host "Remediation Needed. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})."
+            exit 1
+        }
+    }
+
+}
+catch {
+    throw $_
+} 
+```
 
 ## <a name="the-process"></a>Proces
 
@@ -52,7 +84,7 @@ Jeśli jesteś administratorem globalnym lub administratorem zabezpieczeń, moż
 - Po włączeniu zdarzeń Microsoft 365 Defender rozpocznie monitorowanie danych.
   - Zdalny adres IP, port zdalny, port lokalny, lokalny adres IP, nazwa komputera, proces między połączeniami przychodzącymi i wychodzącymi.
 - Administratorzy mogą teraz zobaczyć działanie zapory hosta Windows [tutaj](https://security.microsoft.com/firewall).
-  - Dodatkowe raportowanie można ułatwić, pobierając [skrypt raportowania niestandardowego](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) w celu monitorowania działań zapory Windows Defender przy użyciu Power BI.
+  - Dodatkowe raportowanie można ułatwić, pobierając [skrypt raportowania niestandardowego](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) w celu monitorowania działań Zapora Windows Defender przy użyciu Power BI.
   - Może upłynąć do 12 godzin, zanim dane zostaną odzwierciedlone.
 
 ## <a name="supported-scenarios"></a>Obsługiwane scenariusze
@@ -87,4 +119,4 @@ Raporty zapory obsługują przechodzenie do szczegółów z karty bezpośrednio 
 
 Zapytanie można teraz wykonać, a wszystkie powiązane zdarzenia zapory z ostatnich 30 dni można zbadać.
 
-W przypadku dodatkowych raportów lub zmian niestandardowych zapytanie można wyeksportować do Power BI w celu dalszej analizy. Raportowanie niestandardowe można ułatwić, pobierając [skrypt raportowania niestandardowego](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) w celu monitorowania działań zapory Windows Defender przy użyciu Power BI.
+W przypadku dodatkowych raportów lub zmian niestandardowych zapytanie można wyeksportować do Power BI w celu dalszej analizy. Raportowanie niestandardowe można ułatwić, pobierając [skrypt raportowania niestandardowego](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) w celu monitorowania działań Zapora Windows Defender przy użyciu Power BI.

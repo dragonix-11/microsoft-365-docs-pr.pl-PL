@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się więcej na temat wdrażania standardowych konfiguracji dzierżawy przy użyciu punktów odniesienia.
-ms.openlocfilehash: a12abd14064559ec92fc735bd90c1f8d58d24cb1
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 11b8c5ad9adafa4cd6afb6bb4cd19861118e447c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023310"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647694"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Omówienie wdrażania standardowych konfiguracji dzierżawy przy użyciu Microsoft 365 Lighthouse planów bazowych 
 
@@ -41,11 +41,12 @@ Konfiguracje punktu odniesienia usługi Lighthouse zostały zaprojektowane tak, 
 |--|--|
 | Wymagaj uwierzytelniania wieloskładnikowego dla administratorów | Zasady dostępu warunkowego wymagające uwierzytelniania wieloskładnikowego dla wszystkich administratorów. Jest to wymagane dla wszystkich aplikacji w chmurze. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Dostęp warunkowy: Wymagaj uwierzytelniania wieloskładnikowego dla wszystkich administratorów](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa).|
 | Wymagaj uwierzytelniania wieloskładnikowego dla użytkowników końcowych | Zasady dostępu warunkowego, które wymagają uwierzytelniania wieloskładnikowego dla wszystkich użytkowników.  Jest to wymagane dla wszystkich aplikacji w chmurze. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Dostęp warunkowy: Wymagaj uwierzytelniania wieloskładnikowego dla wszystkich użytkowników](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
-| Blokowanie starszego uwierzytelniania | Zasady dostępu warunkowego do blokowania starszego uwierzytelniania klienta. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Blokuj starsze uwierzytelnianie w usłudze Azure AD przy użyciu dostępu warunkowego](/azure/active-directory/conditional-access/block-legacy-authentication).|
+| Blokowanie starszego uwierzytelniania | Zasady dostępu warunkowego do blokowania starszego uwierzytelniania klienta. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Blokuj starsze uwierzytelnianie, aby Azure AD przy użyciu dostępu warunkowego](/azure/active-directory/conditional-access/block-legacy-authentication).|
 | Konfigurowanie rejestracji urządzeń | Rejestrowanie urządzeń w celu umożliwienia rejestrowania urządzeń dzierżawy w Microsoft Endpoint Manager. W tym celu należy skonfigurować automatyczne rejestrowanie między Azure Active Directory a Microsoft Endpoint Manager. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Konfigurowanie rejestracji dla urządzeń Windows](/mem/intune/enrollment/windows-enroll). |
+| Konfigurowanie Exchange Online Protection i Ochrona usługi Office 365 w usłudze Microsoft Defender | Zasady stosowania zalecanych zasad ochrony przed spamem, ochrony przed złośliwym oprogramowaniem, ochrony przed wyłudzaniem informacji, bezpiecznych linków i zasad bezpiecznego załącznika do dzierżaw Exchange Online skrzynek pocztowych. |
 | Konfigurowanie Program antywirusowy Microsoft Defender dla Windows 10 i nowszych | Profil konfiguracji urządzenia dla urządzeń Windows ze wstępnie skonfigurowanymi ustawieniami Program antywirusowy Microsoft Defender. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender w Intune](/mem/intune/protect/advanced-threat-protection-configure).|
-| Konfigurowanie zapory usługi Microsoft Defender dla Windows 10 i nowszych | Zasady zapory ułatwiające zabezpieczanie urządzeń przez zapobieganie niepożądanemu i nieautoryzowanemu ruchowi sieciowemu. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Najlepsze rozwiązania dotyczące konfigurowania zapory Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
-| Konfigurowanie zasad zgodności urządzeń dla Windows 10 i nowszych | Zasady Windows urządzenia ze wstępnie skonfigurowanymi ustawieniami spełniającymi podstawowe wymagania dotyczące zgodności. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Temat Dostęp warunkowy: Wymagaj zgodnego lub hybrydowego urządzenia przyłączanego do usługi Azure AD](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
+| Konfigurowanie Zapora Microsoft Defender dla Windows 10 i nowszych | Zasady zapory ułatwiające zabezpieczanie urządzeń przez zapobieganie niepożądanemu i nieautoryzowanemu ruchowi sieciowemu. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Najlepsze rozwiązania dotyczące konfigurowania Zapora Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
+| Konfigurowanie zasad zgodności urządzeń dla Windows 10 i nowszych | Zasady Windows urządzenia ze wstępnie skonfigurowanymi ustawieniami spełniającymi podstawowe wymagania dotyczące zgodności. Aby uzyskać więcej informacji na temat tego punktu odniesienia, zobacz [Dostęp warunkowy: Wymagaj zgodnego lub hybrydowego urządzenia przyłączonych do Azure AD](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 
 ## <a name="deployment-plans"></a>Plany wdrażania
 

@@ -1,6 +1,6 @@
 ---
-title: Przeglądanie działań naprawczych i zarządzanie nimi w programie Microsoft Defender dla Office 365
-keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
+title: Przeglądanie akcji korygowania i zarządzanie nimi w Ochrona usługi Office 365 w usłudze Microsoft Defender
+keywords: AIR, autoIR, Ochrona punktu końcowego w usłudze Microsoft Defender, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -16,88 +16,90 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Dowiedz się więcej o działaniach naprawczych w zakresie zautomatyzowanych badań i reakcji w programie Microsoft Defender dla Office 365 Plan 2.
+description: Dowiedz się więcej o akcjach korygowania w ramach funkcji zautomatyzowanego badania i reagowania w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2.
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 35e9293fa83b86fb80c1c907fbf3a0769e323503
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: aaa444a2bada254aeed83540aee361ed806ab0a0
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318623"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649126"
 ---
-# <a name="review-and-manage-remediation-actions-in-office-365"></a>Przeglądanie działań naprawczych w programie Office 365
+# <a name="review-and-manage-remediation-actions-in-office-365"></a>Przeglądanie akcji korygowania i zarządzanie nimi w Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md)
 
-Ponieważ zautomatyzowane badania nad wiadomościami e-& zawartości współpracy są werdyktami, takimi jak  złośliwe lub *podejrzane, niektóre* działania naprawcze są tworzone. W programie Microsoft Defender for Office 365 działania naprawcze mogą obejmować:
+Ponieważ zautomatyzowane badania dotyczące poczty e-mail & zawartości współpracy powodują werdykty, takie jak *Złośliwe* lub *Podejrzane*, są tworzone pewne akcje korygowania. W Ochrona usługi Office 365 w usłudze Microsoft Defender akcje korygowania mogą obejmować:
 
-- Niechętne usuwanie wiadomości e-mail lub grup
-- Wyłączanie zewnętrznego przesyłania dalej poczty
+- Usuwanie nietrwałe wiadomości e-mail lub klastrów
+- Wyłączanie przekazywania poczty zewnętrznej
 
-Te działania naprawcze nie są podejmowane, chyba że i do czasu zatwierdzenia ich przez zespół operacji zabezpieczeń. Zalecamy jak najszybciej przejrzenie i zatwierdzenie wszystkich oczekujących akcji, tak aby zautomatyzowane badania ukończono w terminie. W niektórych przypadkach można ponownie przemyśleć przesłane akcje.  Musisz być częścią funkcji wyszukiwania i & przed podjęciem jakichkolwiek działań.
+Te akcje korygowania nie są wykonywane, chyba że i dopóki zespół ds. operacji zabezpieczeń nie zatwierdzi ich. Zalecamy jak najszybsze przejrzenie i zatwierdzenie wszelkich oczekujących akcji, aby zautomatyzowane badania zostały zakończone w odpowiednim czasie. W niektórych przypadkach można ponownie rozważyć przesłane akcje.  Musisz być częścią roli & wyszukiwania przeczyszczania przed podjęciem jakichkolwiek akcji.
 
 ## <a name="approve-or-reject-pending-actions"></a>Zatwierdzanie (lub odrzucanie) oczekujących akcji
 
-Istnieją cztery różne sposoby odnajdowania i podjęcia działań autowydaju:
+Istnieją cztery różne sposoby znajdowania i podejmowania akcji automatycznego badania:
 
 - [Kolejka zdarzeń](https://security.microsoft.com/incidents)
 - Samo badanie (dostępne za pośrednictwem zdarzenia lub alertu)
 - [Centrum akcji](https://security.microsoft.com/action-center/pending)
-- [Kolejka badania i rozwiązywania problemów](https://security.microsoft.com/airinvestigation)
+- [Kolejka dochodzeń i dochodzeń korygowania](https://security.microsoft.com/airinvestigation)
 
 ## <a name="incident-queue"></a>Kolejka zdarzeń
 
-1. W portalu Microsoft 365 Defender przejdź <https://security.microsoft.com>do strony Zdarzenia w witrynie Zdarzenia  **& Zdarzenia**\>. Aby przejść bezpośrednio do **strony Zdarzenia** , użyj funkcji <https://security.microsoft.com/incidents>.
-2. Na stronie **Zdarzenia wybierz** nazwę zdarzenia, aby otworzyć jej stronę podsumowania.
-3. Wybierz **kartę Dowód i** odpowiedź.
-4. Zaznacz element na liście. Zostanie otwarte okienko boczne tej aplikacji.
-5. W okienku bocznym zatwierdź lub odrzuć akcje.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Zdarzenia** w **temacie Incydenty & alerty** \> **Zdarzenia**. Aby przejść bezpośrednio do strony **Zdarzenia** , użyj polecenia <https://security.microsoft.com/incidents>.
+2. Na stronie **Zdarzenia** wybierz nazwę zdarzenia, aby otworzyć jego stronę podsumowania.
+3. Wybierz kartę **Dowody i odpowiedź** .
+4. Wybierz element z listy. Zostanie otwarte okienko boczne.
+5. W okienku bocznym wykonaj akcje zatwierdzania lub odrzucania.
 
 ## <a name="action-center"></a>Centrum akcji
 
-1. W Microsoft 365 Defender akcji w witrynie <https://security.microsoft.com>, przejdź do **strony Centrum** akcji, wybierając **pozycję Centrum akcji**. Aby przejść bezpośrednio do **strony Centrum akcji** , użyj aplikacji <https://security.microsoft.com/action-center/pending>.
-2. Na stronie **Centrum akcji** sprawdź, **czy jest** zaznaczona karta Oczekujące, a następnie przejrzyj listę akcji, które oczekują na zatwierdzenie.
-   - Wybierz **pozycję Otwórz stronę badania,** aby wyświetlić więcej szczegółów dotyczących badania.
-   - Wybierz **pozycję Zatwierdź** , aby zainicjować oczekującą akcję.
-   - Wybierz **pozycję Odrzuć** , aby zapobiec podejmowanej akcji oczekującej.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Centrum akcji**, wybierając pozycję **Centrum akcji**. Aby przejść bezpośrednio do strony **Centrum akcji** , użyj polecenia <https://security.microsoft.com/action-center/pending>.
+2. Na stronie **Centrum akcji** sprawdź, czy **wybrano kartę Oczekujące** , a następnie przejrzyj listę akcji oczekujących na zatwierdzenie.
+   - Wybierz **pozycję Otwórz stronę badania** , aby wyświetlić więcej szczegółów na temat badania.
+   - Wybierz pozycję **Zatwierdź** , aby zainicjować oczekującą akcję.
+   - Wybierz pozycję **Odrzuć** , aby zapobiec podjęciu oczekującej akcji.
 
-## <a name="investigation-and-remediation-investigations-queue"></a>Kolejka badania i rozwiązywania problemów
+## <a name="investigation-and-remediation-investigations-queue"></a>Kolejka dochodzeń i dochodzeń korygowania
 
-1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>, przejdź do strony **Badania zagrożeń** w witrynie Poczta e-mail & **badania** \> **dotyczące współpracy**. Aby przejść bezpośrednio do strony **Analizy zagrożeń**, użyj .<https://security.microsoft.com/airinvestigation>
-2. Na stronie **Badanie zagrożeń** znajdź i element z listy, którego stan to Akcja **oczekująca**.
-3. Kliknij pozycję ![Otwórz w nowym oknie.](../../media/m365-cc-sc-open-icon.png) **Otwieranie w nowym oknie** w czasie listy (między **wartościami Identyfikator** i **Stan**).
-4. Na otwartej stronie zatwierdź lub odrzuć akcje.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Badanie zagrożeń** w witrynie Email & collaboration **Investigations** (**Badanie współpracy** \> & poczty e-mail). Aby przejść bezpośrednio do strony **Badanie zagrożeń** , użyj polecenia <https://security.microsoft.com/airinvestigation>.
+2. Na stronie **Badanie zagrożeń** znajdź element z listy, którego stan to **Oczekująca akcja**.
+3. Kliknij przycisk ![Otwórz w nowym oknie ikona.](../../media/m365-cc-sc-open-icon.png) **Otwórz w nowym oknie** w czasie listy (między **identyfikatorem** a **stanem**).
+4. Na otwartej stronie wykonaj akcje zatwierdzania lub odrzucania.
 
-## <a name="change-or-undo-one-remediation-action"></a>Zmienianie lub cofanie jednej akcji naprawczej
+## <a name="change-or-undo-one-remediation-action"></a>Zmienianie lub cofanie jednej akcji korygowania
 
-Istnieją dwa różne sposoby ponownego przemyślenia przesłanych akcji:
+Istnieją dwa różne sposoby ponownego rozważenia przesłanych akcji:
 
-- Za [pośrednictwem ujednoliconego centrum akcji](https://security.microsoft.com/action-center).
-- Chociaż Office [akcji](https://security.microsoft.com/threatincidents).
+- Za pośrednictwem [ujednoliconego centrum akcji](https://security.microsoft.com/action-center).
+- Chociaż [centrum akcji Office](https://security.microsoft.com/threatincidents).
 
-## <a name="change-or-undo-through-the-unified-action-center"></a>Zmienianie lub cofanie w ujednoliconym centrum akcji
+## <a name="change-or-undo-through-the-unified-action-center"></a>Zmienianie lub cofanie za pośrednictwem ujednoliconego centrum akcji
 
-1. W portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com>, przejdź do ujednoliconego centrum akcji, wybierając **pozycję Centrum akcji**. Aby przejść bezpośrednio do ujednoliconego centrum akcji, użyj funkcji <https://security.microsoft.com/action-center/>.
-2. Na stronie **Centrum akcji** **wybierz kartę** Historia, a następnie wybierz akcję, którą chcesz zmienić lub cofnąć.
-3. W okienku po prawej stronie ekranu wybierz odpowiednią **akcję (przejście** do skrzynki odbiorczej, przejście do folderu **Wiadomości-śmieci****, przejście** do elementów usuniętych **,** niechybne usunięcie lub usunięcie **twarde**).
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do ujednoliconego centrum akcji, wybierając pozycję **Centrum akcji**. Aby przejść bezpośrednio do ujednoliconego centrum akcji, użyj polecenia <https://security.microsoft.com/action-center/>.
+2. Na stronie **Centrum akcji** wybierz kartę **Historia** , a następnie wybierz akcję, którą chcesz zmienić lub cofnąć.
+3. W okienku po prawej stronie ekranu wybierz odpowiednią akcję (**przejdź do skrzynki odbiorczej**, **przejdź do wiadomości-śmieci**, **przejdź do usuniętych elementów**, **usuń nietrwałe** lub **usuń je na stałe**).
 
-## <a name="change-or-undo-through-the-office-action-center"></a>Zmienianie lub cofanie w Office akcji
+## <a name="change-or-undo-through-the-office-action-center"></a>Zmienianie lub cofanie za pośrednictwem centrum akcji Office
 
-1. W portalu Microsoft 365 Defender w <https://security.microsoft.com>witrynie , przejdź do Centrum Office akcji w witrynie Centrum akcji przeglądanie  & **e-mail**\>.\> Aby przejść bezpośrednio do centrum Office akcji, użyj .<https://security.microsoft.com/threatincidents>
-2. Na stronie **Centrum akcji** wybierz odpowiednie środki zaradcze.
-3. W panelu bocznym kliknij wpis elementów przesyłania poczty i poczekaj, aż lista zostanie załadowana.
-4. Poczekaj, aż przycisk Akcja zostanie włączyć, a następnie wybierz przycisk Akcja, aby zmienić typ akcji.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do centrum akcji Office w witrynie **Email & collaboration** \> **Review** \> **Action Center**. Aby przejść bezpośrednio do centrum akcji Office, użyj polecenia <https://security.microsoft.com/threatincidents>.
+2. Na stronie **Centrum akcji** wybierz odpowiednie korygowanie.
+3. W panelu bocznym kliknij wpis przesyłania wiadomości e-mail i poczekaj na załadowanie listy.
+4. Poczekaj na przycisk Akcja u góry, aby włączyć i wybierz przycisk Akcja, aby zmienić typ akcji.
 5. Spowoduje to utworzenie odpowiednich akcji.
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Używanie Eksploratora zagrożeń](threat-explorer.md)
-- [Akcje administracyjne/ręczne](remediate-malicious-email-delivered-office-365.md)
-- [Jak raportować wyniki fałszywie dodatnie/ujemne w funkcji automatycznego badania i odpowiedzi](air-report-false-positives-negatives.md)
+- [Korzystanie z Eksploratora zagrożeń](threat-explorer.md)
+- [Administracja /Akcje ręczne](remediate-malicious-email-delivered-office-365.md)
+- [Jak zgłaszać wyniki fałszywie dodatnie/ujemne w zautomatyzowanych możliwościach badania i reagowania](air-report-false-positives-negatives.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Wyświetlanie szczegółów i wyników automatycznego badania w programie Office 365](air-view-investigation-results.md)
+- [Wyświetlanie szczegółów i wyników zautomatyzowanego badania w Office 365](air-view-investigation-results.md)

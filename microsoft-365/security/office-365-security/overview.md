@@ -16,14 +16,16 @@ ms.collection:
 description: Zabezpieczenia w Office 365, od EOP do planów Ochrona usługi Office 365 w usłudze Defender 1 i 2, standardowa i ścisła konfiguracja zabezpieczeń i nie tylko. Dowiedz się, co masz i jak zabezpieczyć swoje właściwości.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9f480575c712488a17dc7e9e91320edc11d0e50
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 62a8d298c9b3e47acb9ba9af5782624646487677
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835914"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647782"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Omówienie zabezpieczeń Ochrona usługi Office 365 w usłudze Microsoft Defender
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -84,7 +86,7 @@ począwszy od **Exchange Online Protection**:
 
 |Zapobieganie/wykrywanie|Zbadaj|Odpowiadanie|
 |---|---|---|
-|Technologie obejmują:<ul><li>Spam</li><li>Phish</li><li>Złośliwego oprogramowania</li><li>poczta zbiorcza</li><li>fałszowanie inteligencji</li><li>wykrywanie personifikacji</li><li>Kwarantanna administratora</li><li>Przesyłanie przez administratora i użytkownika wyników fałszywie dodatnich i fałszywie ujemnych</li><li>Zezwalaj/blokuj dla adresów URL i plików</li><li>Raporty</li></ul>|<li>Przeszukiwanie dzienników inspekcji</li><li>Ślad komunikatu</li>|<li>Automatyczne przeczyszczanie o zerowej godzinie (ZAP)</li><li>Uściślanie i testowanie list dozwolonych i blokowych</li>|
+|Technologie obejmują:<ul><li>Spam</li><li>Phish</li><li>Złośliwego oprogramowania</li><li>poczta zbiorcza</li><li>fałszowanie inteligencji</li><li>wykrywanie personifikacji</li><li>Kwarantanna administratora</li><li>Przesyłanie przez administratora i użytkownika wyników fałszywie dodatnich i fałszywie ujemnych</li><li>Zezwalaj/blokuj dla adresów URL i plików</li><li>Raporty</li></ul>|<li>Przeszukiwanie dzienników inspekcji</li><li>Ślad komunikatu</li>|<li>Automatyczne przeczyszczanie (ZAP)</li><li>Uściślanie i testowanie list dozwolonych i blokowych</li>|
 
 Jeśli chcesz przejść do EOP, **[przejdź do tego artykułu](exchange-online-protection-overview.md)**.
 

@@ -17,17 +17,16 @@ ms.collection:
 description: Dowiedz się więcej o domyślnym ustawieniu zabezpieczeń w Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09395775cc5ecbd420dc7197664401c01c24d6c3
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ab5fa5e9c769d68589b722e8fdc9976fa616e6ac
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664221"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648134"
 ---
 # <a name="secure-by-default-in-office-365"></a>Domyślnie zabezpieczanie w Office 365
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -80,4 +79,4 @@ Należy rozważyć użycie przesłonięcia tylko w następujących scenariuszach
 - Symulacje wyłudzania informacji: symulowane ataki mogą pomóc w identyfikacji narażonych użytkowników, zanim rzeczywisty atak wpłynie na organizację. Aby zapobiec filtrowaniu komunikatów symulacji wyłudzania informacji, zobacz [Konfigurowanie symulacji wyłudzania informacji innych firm w zaawansowanych zasadach dostarczania](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 - Skrzynki pocztowe zabezpieczeń/SecOps: dedykowane skrzynki pocztowe używane przez zespoły zabezpieczeń do pobierania niefiltrowanych wiadomości (zarówno dobrych, jak i złych). Teams następnie sprawdzić, czy zawierają złośliwą zawartość. Aby uzyskać więcej informacji, zobacz [Konfigurowanie skrzynek pocztowych SecOps w zaawansowanych zasadach dostarczania](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 - Filtry innych firm: Zabezpieczenia domyślnie mają zastosowanie tylko wtedy, gdy rekord MX dla domeny jest ustawiony na Exchange Online Protection (contoso.mail.protection.outlook.com). Jeśli jest ona ustawiona na inną usługę lub urządzenie, można domyślnie zastąpić funkcję Secure [regułą transportu](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) , aby pominąć wszystkie filtrowanie spamu. Gdy firma Microsoft wykryje komunikaty jako phish o wysokim poziomie ufności z tą regułą, nadal są dostarczane do skrzynki odbiorczej. 
-- Wyniki fałszywie dodatnie: możesz tymczasowo zezwolić na niektóre komunikaty, które są nadal analizowane przez [firmę Microsoft za pośrednictwem przesyłania przez administratora](admin-submission.md). Podobnie jak w przypadku wszystkich przesłonięcia, zaleca się, aby były tymczasowe.
+- Wyniki fałszywie dodatnie: możesz tymczasowo zezwolić na niektóre komunikaty, które są nadal analizowane przez [firmę Microsoft za pośrednictwem Administracja przesyłania](admin-submission.md). Podobnie jak w przypadku wszystkich przesłonięcia, zaleca się, aby były tymczasowe.

@@ -20,16 +20,14 @@ ms.custom:
 description: W tym artykule dowiesz się, jak usunąć siebie z listy zablokowanych nadawców platformy Microsoft 365 za pomocą portalu usuwania listy. Jest to najlepsza odpowiedź na rozwiązanie problemu z błędami „5.7.511 Odmowa dostępu”.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 43637f8eb72d078223236f78b45034218e34bcbc
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 83822faaf1c667524dd88fc1bba400c10fa30ac3
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971137"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647738"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Użyj portalu usuwania z listy, aby usunąć siebie z listy zablokowanych nadawców i rozwiąż problem z błędami „5.7.511 Odmowa dostępu”
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Wiadomość backscatter w uchwale EOP
+title: Backscatter w usłudze EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,30 +16,28 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: W tym artykule dowiesz się więcej na temat zabezpieczeń Backscatter i Microsoft Exchange Online Protection (EOP)
+description: W tym artykule dowiesz się więcej o usłudze Backscatter i Microsoft Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 79a6dd1be6c33bdbfc3d87b834f231de7cd08a0c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d132ed56c02989987da9e0ce32e7d4593e85e651
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986439"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648222"
 ---
-# <a name="backscatter-in-eop"></a>Wiadomość backscatter w uchwale EOP
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+# <a name="backscatter-in-eop"></a>Backscatter w usłudze EOP
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-*Wiadomość typu backscatter* to raporty o niedo dostarczenia (znane również jako raporty o niedo dostarczenia lub wiadomości przychodzące), które otrzymujesz za wiadomości, które nie wysłaliśmy. Backscatter jest powodowany przez spamerów podszywających się pod adres Od ( `5322.From` nazywany również adresami P2) w ich wiadomościach. Spamerzy często używają prawdziwych adresów e-mail jako adresu Od w celu wiarygodności swoich wiadomości. Gdy spam jest wysyłany do nieistniejącego adresata, docelowy serwer poczty e-mail w zasadzie musi zwrócić nie można dostarczyć wiadomości w wiadomości o niedostarczeniu do nadawcy, który został zafałszowany, w adresie Od.
+*Backscatter to raporty* o braku dostarczania (nazywane również żądaniami NDR lub komunikatami odrzuceń), które są odbierane w przypadku wiadomości, które nie zostały wysłane. Backscatter jest spowodowane przez spamerów kucie (fałszowanie) z adresu (znany również jako `5322.From` adres lub P2) w swoich komunikatach. Spamerzy często używają prawdziwych adresów e-mail jako adresu Od, aby zwiększyć wiarygodność swoich wiadomości. Gdy spam jest wysyłany do nieistniejącego adresata, docelowy serwer poczty e-mail jest zasadniczo nakłaniany do zwrócenia niepożądanej wiadomości w NDR do sfałszowanego nadawcy w adresie Od.
 
-W organizacjach Microsoft 365 ze skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacjach usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online program EOP podejmuje wszelkie starania w celu identyfikowania i dyskretnego upuszczania wiadomości z nazwanych źródeł bez generowania nDR. Jednak w zależności od tego, że przez usługę przepływa wiadomość e-mail z dużą głośnością, zawsze może się  to ając, że usługa EOP nieumyślnie wyśle wiadomość backscatter.
+W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych, EOP dokłada wszelkich starań, aby identyfikować i dyskretnie usuwać wiadomości z wątpliwych źródeł bez generowania protokołu NDR. Jednak w oparciu o samą ilość wiadomości e-mail przepływającej przez usługę, zawsze istnieje możliwość, że EOP przypadkowo wyśle zwrotne dane.
 
-Backscatterer.org przechowuje listę zablokowanych serwerów poczty e-mail (znaną także jako lista zablokowanych adresów DNS lub DNSBL) serwerów poczty e-mail, które były odpowiedzialne za wysyłanie wiadomości backscatter, a serwery usługi EOP mogą być wyświetlane na tej liście. Jednak nie staramy się usuwać naszych Backscatterer.org z listy zablokowanych osób, ponieważ nie są to listy spamerów z ich listy (z powodu ich własnego niechciania).
+Backscatterer.org utrzymuje listę zablokowanych (nazywaną również listą blokową DNS lub DNSBL) serwerów poczty e-mail, które były odpowiedzialne za wysyłanie zaplecza, a serwery EOP mogą pojawić się na tej liście. Ale nie staramy się usunąć się z listy zablokowanych Backscatterer.org, ponieważ (według własnego uznania) ich lista nie jest listą spamerów.
 
 > [!TIP]
-> Witryna Backscatterer.org-mail (<http://www.backscatterer.org/?target=usage>) zaleca używanie ich usługi w trybie Sejf zamiast w trybie odrzuć, ponieważ duże usługi poczty e-mail prawie zawsze wysyłają niektóre wiadomości w trybie backscatter.
+> Witryna internetowa Backscatterer.org (<http://www.backscatterer.org/?target=usage>) zaleca korzystanie z usługi w trybie Sejf zamiast w trybie odrzucania, ponieważ duże usługi poczty e-mail prawie zawsze wysyłają pewne problemy.

@@ -1,5 +1,5 @@
 ---
-title: Reagowanie na incydenty dotyczące zabezpieczeń
+title: Reagowanie na zdarzenia zabezpieczeń
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,63 +14,61 @@ ms.collection:
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-description: To rozwiązanie informuje, jak mogą wyglądać najpopularniejsze ataki na nagość w programie Microsoft 365 i jak na nie reagować.
+description: To rozwiązanie informuje, jak mogą wyglądać najczęstsze ataki cybernetyczne w Microsoft 365 i jak na nie reagować
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef36caca62935dbeca6640c5fa9ed2edaae9528b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e69ca9f57f3a025ee669001227e64c8809d4741
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986635"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648156"
 ---
-# <a name="security-incident-response"></a>Reagowanie na incydenty dotyczące zabezpieczeń
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+# <a name="security-incident-response"></a>Reagowanie na zdarzenia zabezpieczeń
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **Podsumowanie:** To rozwiązanie informuje o wskaźnikach najbardziej typowych ataków dotyczących bezpieczeństwa bezpieczeństwa w sieci Office 365, o tym, jak dobrze potwierdzić każdy atak i jak na nie odpowiedzieć.
+ **Krótki opis:** To rozwiązanie informuje, jakie są wskaźniki najczęstszych ataków cybernetycznych w Office 365, jak pozytywnie potwierdzić dany atak i jak na niego zareagować.
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>Dowiedz się, jak reagować na cyberataki
 
-Nie wszystkie cyberataki można zniweczyć. Atakujący nieustannie szukają nowych luk w strategii dotyczącej bezpieczeństwa lub wykorzystania starych. Wiedza o tym, jak rozpoznać atak, pozwala na jego szybsze reagowanie, co skraca czas trwania zdarzenia zabezpieczającego.
+Nie wszystkie cyberataki można udaremnić. Atakujący nieustannie szukają nowych słabych stron w twojej strategii obronnej lub wykorzystują stare. Wiedza na temat rozpoznawania ataku pozwala szybciej reagować na atak, co skraca czas trwania zdarzenia zabezpieczającego.
 
-Ta seria artykułu ułatwia zrozumienie, jak może wyglądać określony typ ataku w programie Microsoft 365 oraz udostępnia czynności, które możesz wykonać, aby na nie odpowiedzieć. Są one szybkimi punktami wejścia do zrozumienia:
+Ta seria artykułów pomaga zrozumieć, jak może wyglądać określony typ ataku w Microsoft 365 i zawiera kroki, które można podjąć, aby odpowiedzieć. Są to szybkie punkty wejścia do zrozumienia:
 
-- Co to jest i jak działa atak.
+- Co to jest atak i jak to działa.
 
-- Jakie znaki, nazywane wskaźnikami naruszenia zabezpieczeń (IOC), należy szukać i jak je znaleźć.
+- Jakie znaki, nazywane wskaźnikami kompromisu (MKOl), szukać i jak ich szukać.
 
-- Jak wyraźnie potwierdzić atak.
+- Jak pozytywnie potwierdzić atak.
 
-- Kroki, które należy wykonać, aby odciąć ataki i lepiej chronić Twoją organizację w przyszłości.
+- Kroki, które należy wykonać, aby odciąć atak i lepiej chronić organizację w przyszłości.
 
-- Linki do szczegółowych informacji na temat poszczególnych typów ataków.
+- Linki do szczegółowych informacji na temat każdego typu ataku.
 
-Zatróć tu co miesiąc, ponieważ z czasem będą dodawane kolejne artykuły.
+Sprawdź tutaj co miesiąc, ponieważ więcej artykułów będzie dodawanych w miarę upływu czasu.
 
-## <a name="detect-and-remediate-articles"></a>Wykrywanie i rozwiązywanie problemów z artykułami
+## <a name="detect-and-remediate-articles"></a>Wykrywanie i korygowanie artykułów
 
-- [Wykrywanie i rozwiązywanie problemów ze zgodą udzielaną w ramach Office 365](detect-and-remediate-illicit-consent-grants.md)
+- [Wykrywanie i korygowanie nielegalnie udzielonej zgody w usłudze Office 365](detect-and-remediate-illicit-consent-grants.md)
 
-- [Wykrywanie i rozwiązywanie problemów Outlook i niestandardowych ataków na formularze niestandardowych formularzy w Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Wykrywanie i korygowanie ataków na reguły programu Outlook i iniekcje formularzy niestandardowych w usłudze Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
-## <a name="incident-response-articles"></a>Artykuły dotyczące reakcji na incydenty
+## <a name="incident-response-articles"></a>Artykuły dotyczące reagowania na zdarzenia
 
-- [Odpowiadanie na naruszone konto e-mail w Office 365](responding-to-a-compromised-email-account.md)
+- [Reagowanie w przypadku konta e-mail z naruszonymi zabezpieczeniami w usłudze Office 365](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Zabezpieczanie Microsoft 365 jak najbezpieczniejsi
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Zabezpieczanie Microsoft 365 jak profesjonalista ds. cyberbezpieczeństwa
 
-Subskrypcja Microsoft 365 jest wyposażona w zaawansowany zestaw funkcji zabezpieczeń, za pomocą których można chronić dane i użytkowników.  Korzystaj z planu Microsoft 365 zabezpieczeń — najważniejsze priorytety w ciągu pierwszych [30, 90](security-roadmap.md) dni i nie tylko, aby wdrożyć zalecane przez firmę Microsoft najważniejsze wskazówki dotyczące zabezpieczeń Microsoft 365 organizacji.
+Subskrypcja Microsoft 365 oferuje zaawansowany zestaw funkcji zabezpieczeń, których można użyć do ochrony danych i użytkowników.  Użyj [planu zabezpieczeń Microsoft 365 — najważniejsze priorytety dla pierwszych 30 dni, 90 dni i nie tylko,](security-roadmap.md) aby zaimplementować zalecane przez firmę Microsoft najlepsze rozwiązania dotyczące zabezpieczania organizacji Microsoft 365.
 
-- Zadania, które można wykonać w ciągu pierwszych 30 dni.  Mają one natychmiastowy wpływ i mają niski wpływ na twoich użytkowników.
+- Zadania do wykonania w ciągu pierwszych 30 dni.  Mają one bezpośredni wpływ i mają niski wpływ na użytkowników.
 
-- Zadania, które można wykonać w ciągu 90 dni. Planowanie i wdrażanie może zająć nieco więcej czasu, ale znacznie poprawia twoją wydajność zabezpieczeń.
+- Zadania do wykonania w ciągu 90 dni. Planowanie i wdrażanie tych elementów zajmuje nieco więcej czasu, ale znacznie poprawia stan zabezpieczeń
 
-- Dłużej niż 90 dni. Te ulepszenia działają w ciągu pierwszych 90 dni.
+- Ponad 90 dni. Te ulepszenia są kompilowane w ciągu pierwszych 90 dni pracy.

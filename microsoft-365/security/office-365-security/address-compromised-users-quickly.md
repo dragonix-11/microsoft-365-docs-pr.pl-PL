@@ -16,14 +16,16 @@ ms.date: 06/10/2021
 description: Dowiedz się, jak przyspieszyć proces wykrywania i rozwiązywania problemów z kontami użytkowników, których zabezpieczenia zostały naruszone, dzięki możliwościom zautomatyzowanego badania i reagowania w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97466622a138a6604b9be51333148b472f7cd519
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8628f1952f37f43a66daccb5f0792097ce798c31
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418275"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649048"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Rozwiązywanie problemów z kontami użytkowników, których zabezpieczenia zostały naruszone, za pomocą zautomatyzowanego badania i odpowiedzi
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

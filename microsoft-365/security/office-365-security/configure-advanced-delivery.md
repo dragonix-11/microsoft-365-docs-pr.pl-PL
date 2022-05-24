@@ -17,14 +17,16 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zaawansowanych zasad dostarczania w Exchange Online Protection (EOP) do identyfikowania komunikatów, które nie powinny być filtrowane w określonych obsługiwanych scenariuszach (symulacje wyłudzania informacji i wiadomości dostarczane do skrzynek pocztowych operacji zabezpieczeń (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ca3b62bba9a22d8c7c9f3f37dc191d1f458b523
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: d9a959e70408af80567d1daed140e0642870b975
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713916"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647804"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurowanie dostarczania symulacji wyłudzania informacji innych firm użytkownikom i niefiltrowanych wiadomości do skrzynek pocztowych SecOps
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -43,7 +45,7 @@ Zaawansowane _zasady dostarczania_ w Microsoft 365 uniemożliwiają _filtrowanie
 - [Domyślne alerty systemowe](/microsoft-365/compliance/alert-policies#default-alert-policies) nie są wyzwalane dla tych scenariuszy.
 - [Funkcja AIR i klastrowanie w Ochrona usługi Office 365 w usłudze Defender](office-365-air.md) ignoruje te komunikaty.
 - W szczególności w przypadku symulacji wyłudzania informacji innych firm:
-  - [Przesyłanie przez administratora](admin-submission.md) generuje automatyczną odpowiedź z informacją, że wiadomość jest częścią kampanii symulacji wyłudzania informacji i nie stanowi rzeczywistego zagrożenia. Alerty i air nie zostaną wyzwolone. Środowisko przesyłania przez administratora będzie pokazywać te komunikaty jako symulowane zagrożenie.
+  - [Administracja przesyłania](admin-submission.md) generuje automatyczną odpowiedź z informacją, że wiadomość jest częścią kampanii symulacji wyłudzania informacji i nie stanowi rzeczywistego zagrożenia. Alerty i air nie zostaną wyzwolone. Środowisko przesyłania przez administratora będzie pokazywać te komunikaty jako symulowane zagrożenie.
   - Gdy użytkownik zgłosi komunikat symulacji wyłudzania informacji przy użyciu [komunikatu raportu lub dodatków Wyłudzanie informacji o raporcie](enable-the-report-message-add-in.md), system nie wygeneruje alertu, badania ani zdarzenia. Linki lub pliki nie zostaną zdetonowane, ale komunikat zostanie również wyświetlony na karcie **Komunikaty zgłaszane przez użytkownika** na stronie **Przesłane** .
   - [Sejf Linki w Ochrona usługi Office 365 w usłudze Defender](safe-links.md) nie blokują ani nie detonują określonych adresów URL w tych komunikatach w momencie kliknięcia. Adresy URL są nadal opakowane, ale nie są blokowane.
   - [Sejf Załączniki w Ochrona usługi Office 365 w usłudze Defender](safe-attachments.md) nie detonują załączników w tych wiadomościach.
@@ -52,13 +54,13 @@ Zaawansowane _zasady dostarczania_ w Microsoft 365 uniemożliwiają _filtrowanie
 
 <sup>\*\*</sup> Możesz pominąć zap dla złośliwego oprogramowania, tworząc zasady ochrony przed złośliwym oprogramowaniem dla skrzynki pocztowej SecOps, gdzie zap dla złośliwego oprogramowania jest wyłączony. Aby uzyskać instrukcje, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w ramach EOP](configure-anti-malware-policies.md).
 
-Komunikaty identyfikowane przez zaawansowane zasady dostarczania nie są zagrożeniami bezpieczeństwa, dlatego komunikaty są oznaczone przesłonięciami systemu. Środowiska administratora będą wyświetlać te komunikaty z powodu zastąpienia systemu **symulacji wyłudzania informacji** lub zastąpienia systemu **skrzynki pocztowej SecOps** . Administratorzy mogą filtrować i analizować te przesłonięcia systemu w następujących środowiskach:
+Komunikaty identyfikowane przez zaawansowane zasady dostarczania nie są zagrożeniami bezpieczeństwa, dlatego komunikaty są oznaczone przesłonięciami systemu. Administracja środowiska będą pokazywać te komunikaty z powodu zastąpienia systemu **symulacji wyłudzania informacji** lub zastąpienia systemu **skrzynki pocztowej SecOps**. Administratorzy mogą filtrować i analizować te przesłonięcia systemu w następujących środowiskach:
 
-- [Wykrywanie zagrożeń/wykrywanie w czasie rzeczywistym w Ochrona usługi Office 365 w usłudze Defender planie 2](threat-explorer.md): administrator może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
-- [Strona jednostki Poczty e-mail w Eksploratorze zagrożeń/Wykrywanie w czasie rzeczywistym](mdo-email-entity-page.md): administrator może wyświetlić komunikat dozwolony przez zasady organizacji przez **skrzynkę pocztową SecOps** lub **symulację wyłudzania informacji** w obszarze **Zastępowanie dzierżawy** w sekcji **Przesłonięcia**.
-- [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report): Administrator może filtrować według **wyświetlania danych według zastąpienia systemu** w menu rozwijanym i wybrać opcję wyświetlenia komunikatów dozwolonych z powodu zastąpienia systemu symulacji wyłudzania informacji. Aby wyświetlić komunikaty dozwolone przez zastąpienie skrzynki pocztowej SecOps, możesz wybrać **podział wykresu według lokalizacji dostarczania** w menu rozwijanym **Podział wykresu według przyczyny** .
+- [Wykrywanie zagrożeń/wykrywanie w czasie rzeczywistym w Ochrona usługi Office 365 w usłudze Defender planie 2](threat-explorer.md): Administracja może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
+- [Strona jednostki Poczty e-mail w Eksploratorze zagrożeń/Wykrywanie w czasie rzeczywistym](mdo-email-entity-page.md): Administracja może wyświetlić komunikat dozwolony przez zasady organizacji przez **skrzynkę pocztową SecOps** lub **symulację wyłudzania informacji** w obszarze **Zastępowanie dzierżawy** w sekcji **Przesłonięcia**.
+- [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report): Administracja może filtrować według **wyświetlania danych według zastąpienia systemu** w menu rozwijanym i wybrać opcję wyświetlania komunikatów dozwolonych z powodu zastąpienia systemu symulacji wyłudzania informacji. Aby wyświetlić komunikaty dozwolone przez zastąpienie skrzynki pocztowej SecOps, możesz wybrać **podział wykresu według lokalizacji dostarczania** w menu rozwijanym **Podział wykresu według przyczyny** .
 - [Zaawansowane wyszukiwanie zagrożeń w Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/advanced-hunting-overview.md): symulacja wyłudzania informacji i przesłonięcia systemu skrzynek pocztowych SecOps będą wyświetlane jako opcje w obszarze OrgLevelPolicy w usłudze EmailEvents.
-- [Widoki kampanii](campaigns.md): administrator może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
+- [Widoki kampanii](campaigns.md): Administracja może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 

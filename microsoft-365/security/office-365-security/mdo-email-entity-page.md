@@ -17,14 +17,20 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Ochrona usługi Office 365 w usłudze Microsoft Defender klienci E5 i P1 i P2 mogą teraz uzyskać 360-stopniowy widok każdej wiadomości e-mail ze stroną jednostki poczty e-mail.
-ms.openlocfilehash: c2dfd4016f756073407e7d1c22034031c60a901f
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 79863916cab3b859a0b24de9dc5eb9b4f324a3f9
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131091"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648772"
 ---
 # <a name="the-email-entity-page"></a>Strona jednostki Poczta e-mail
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Dotyczy:**
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **W tym artykule:**
 - [Docieranie do strony jednostki poczty e-mail](#reach-the-email-entity-page)
