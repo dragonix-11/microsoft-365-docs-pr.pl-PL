@@ -1,18 +1,18 @@
 ---
-title: Wykonywanie akcji maszynowej za pomocą interfejsu API programu Microsoft Defender dla punktu końcowego
-description: Ta strona koncentruje się na wykonywaniu akcji maszynowej za pośrednictwem interfejsu API programu Microsoft Defender dla punktu końcowego.
+title: Wykonywanie akcji maszyny za pośrednictwem interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Ta strona koncentruje się na wykonywaniu akcji maszyny za pośrednictwem interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender.
 ms.date: 08/28/2017
 ms.reviewer: ''
 manager: dansimp
 ms.author: macapara
 author: mjcaparas
 ms.prod: w10
-ms.openlocfilehash: 13d9d849ec6b6819e6824ba7b2b5d7a139bc81ad
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 6a280e10b89fa8934186aab2a62e30b4ac3b6114
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "62996208"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65650428"
 ---
->[!Note]
-> Ta strona ma na celu wykonywanie akcji komputera za pośrednictwem interfejsu API. Zobacz [Akcje odpowiedzi na komputerze, aby](/microsoft-365/security/defender-endpoint/respond-machine-alerts) uzyskać więcej informacji na temat funkcji akcji odpowiedzi za pośrednictwem programu Microsoft Defender for Endpoint.
+> [!NOTE]
+> Ta strona koncentruje się na wykonywaniu akcji maszyny za pośrednictwem interfejsu API. Aby uzyskać więcej informacji na temat funkcji akcji reagowania za pośrednictwem Ochrona punktu końcowego w usłudze Microsoft Defender, zobacz [akcje reagowania na maszynie](/microsoft-365/security/defender-endpoint/respond-machine-alerts).
