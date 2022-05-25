@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Dowiedz się więcej o rolach administratora, takich jak rola administratora usługi, które są powiązane z określonymi funkcjami biznesowymi i zapewniają uprawnienia do wykonywania określonych zadań w centrum administracyjnym.
-ms.openlocfilehash: e56399e5e3e83146df9d1bdad09cf7a6c216c8de
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: bef4328146c62d19257ca50d33004ce7d1185fe1
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467125"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636245"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Informacje dotyczące ról administratora w centrum administracyjnym platformy Microsoft 365
 
@@ -67,9 +67,9 @@ Ze względu na to, że administratorzy mają dostęp do poufnych danych i plikó
 | :------------------- | :------------------- |
 | Posiadanie 2–4 administratorów globalnych  | Ponieważ hasło administratora globalnego może być zresetowane tylko przez innego administratora globalnego, zalecamy, aby w organizacji byli co najmniej 2 administratorzy globalni na wypadek zablokowania konta. Jednak administrator globalny ma prawie nieograniczony dostęp do ustawień organizacji oraz do większości danych, dlatego zalecamy, żeby liczba administratorów globalnych nie przekraczała 4, ponieważ stanowi to zagrożenie bezpieczeństwa. |
 | Przypisywanie możliwie *najbardziej ograniczonej* roli    | Przypisywanie *najbardziej ograniczonej* roli oznacza zapewnienie administratorom dostępu tylko w takim zakresie, jakiego potrzebują do wykonywania swojej pracy. Jeśli na przykład chcesz, aby ktoś mógł resetować hasła pracowników, nie musisz przypisywać nieograniczonej roli administratora globalnego. Zamiast tego należy przypisać ograniczoną rolę administratora, na przykład administratora haseł lub administratora pomocy technicznej.  Dzięki temu Twoje dane będą bezpieczne.                 |
-| Wymóg uwierzytelniania wieloskładnikowego dla administratorów                  |    Dobrym pomysłem jest wymaganie uwierzytelniania wieloskładnikowego dla wszystkich użytkowników, ale administratorzy powinni mieć obowiązek logowania się za pomocą uwierzytelniania wieloskładnikowego. Uwierzytelnienie wieloskładnikowe wymaga od użytkowników użycia drugiej metody poświadczenia ich tożsamości celem potwierdzenia, że to naprawdę oni. Administratorzy mogą mieć dostęp do wielu danych klientów i pracowników, a w przypadku wymogu uwierzytelniania wieloskładnikowego nawet złamane hasło administratora staje się bezużyteczne bez drugiej formy identyfikacji.  <br><br>Gdy włączysz uwierzytelnianie wieloskładnikowe, przy następnym logowaniu użytkownik będzie musiał podać alternatywny adres e-mail oraz numer telefonu na potrzeby odzyskiwania konta.  <br> [Konfigurowanie uwierzytelniania wieloskładnikowego](../security-and-compliance/set-up-multi-factor-authentication.md)          |
+| Wymóg uwierzytelniania wieloskładnikowego dla administratorów                  |    Dobrym pomysłem jest wymaganie uwierzytelniania wieloskładnikowego dla wszystkich użytkowników, ale administratorzy powinni mieć obowiązek logowania się za pomocą uwierzytelniania wieloskładnikowego. Uwierzytelnianie wieloskładnikowe wymaga od użytkowników zastosowania drugiej metody potwierdzania tożsamości w celu zweryfikowania, czy są tymi, za których się podają. Administratorzy mogą mieć dostęp do wielu danych klientów i pracowników, ale jeśli wymagasz uwierzytelniania wieloskładnikowego, nawet jeśli hasło administratora zostanie złamane, bez drugiej formy potwierdzenia tożsamości jest ono bezużyteczne.  <br><br>Gdy włączysz uwierzytelnianie wieloskładnikowe, przy następnym logowaniu użytkownik będzie musiał podać alternatywny adres e-mail oraz numer telefonu na potrzeby odzyskiwania konta.  <br> [Konfigurowanie uwierzytelniania wieloskładnikowego](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-Jeśli w centrum administracyjnym zostanie wyświetlony komunikat z informacją, że nie masz uprawnień do edytowania danego ustawienia lub strony, jest to spowodowane tym, że masz przypisaną rolę bez tego uprawnienia.
+Jeśli w centrum administracyjnym pojawi się komunikat informujący, że nie masz uprawnień do edycji ustawienia lub strony, oznacza to, że masz przypisaną rolę, która nie ma takich uprawnień.
 
 ## <a name="commonly-used-microsoft-365-admin-center-roles"></a>Często używane role centrum administracyjnego platformy Microsoft 365
 
@@ -98,11 +98,11 @@ Prawdopodobnie w Twojej organizacji potrzebne będzie przypisanie jedynie nastę
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administracja delegowana dla partnerów firmy Microsoft
 
-Jeśli pracujesz z partnerem firmy Microsoft, możesz przypisać mu role administratora. Z kolei on może przypisać użytkownikom w Twojej firmie — lub swojej — role administratora. Być może chcesz, aby zrobił to partner, jeśli na przykład konfiguruje on za Ciebie organizację online i zarządza nią.
+Jeśli współpracujesz z partnerem firmy Microsoft, możesz przypisać mu role administratora. On z kolei może przypisywać użytkownikom w Twojej firmie lub w swojej firmie role administratorów. Można to zrobić na przykład wtedy, gdy partner konfiguruje organizację online i zarządzają nią.
   
 Partner może przypisywać następujące role: 
   
-- Uprawnienia **agenta administratora** równoważne administratorowi globalnemu z wyjątkiem zarządzania uwierzytelnianiem wieloskładnikowym za pośrednictwem Centrum partnerskiego.
+- Uprawnienia **agenta administratora** są równoważne uprawnieniom administratora globalnego z wyjątkiem zarządzania uwierzytelnianiem wieloskładnikowym za pośrednictwem Centrum partnerskiego.
 
 - Uprawnienia **agenta pomocy technicznej** równoważne z uprawnieniami administratora pomocy technicznej.
 
