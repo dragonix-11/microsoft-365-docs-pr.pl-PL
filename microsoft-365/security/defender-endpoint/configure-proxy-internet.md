@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 787da143bdbbc2d21610ba14d0fe7c955e4e976d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 1faff638c9b33b933277dc74248c2d7daa43331c
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823405"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669677"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfiguruj ustawienia serwera proxy urządzenia i połączenia internetowego
 
@@ -33,7 +33,7 @@ ms.locfileid: "64823405"
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Czujnik usługi Defender for Endpoint wymaga, aby usługa Microsoft Windows HTTP (WinHTTP) zgłaszała dane czujników i komunikowała się z usługą Defender for Endpoint. Osadzony czujnik usługi Defender for Endpoint działa w kontekście systemu przy użyciu konta LocalSystem. Czujnik korzysta z usług Http Services firmy Microsoft Windows (WinHTTP), aby umożliwić komunikację z usługą w chmurze Defender for Endpoint.
 
@@ -152,15 +152,15 @@ Za pomocą programu netsh skonfiguruj statyczny serwer proxy w całym systemie.
 
 2. Wprowadź następujące polecenie i naciśnij **klawisz Enter**:
 
-   ```PowerShell
+   ```command prompt
    netsh winhttp set proxy <proxy>:<port>
    ```
 
-   Na przykład: `netsh winhttp set proxy 10.0.0.6:8080`
+   Przykład: `netsh winhttp set proxy 10.0.0.6:8080`
 
 Aby zresetować serwer proxy winhttp, wprowadź następujące polecenie i naciśnij **klawisz Enter**:
 
-```PowerShell
+```command prompt
 netsh winhttp reset proxy
 ```
 
@@ -249,13 +249,13 @@ Sprawdź, czy konfiguracja serwera proxy została pomyślnie ukończona. Następ
 
 4. Wprowadź następujące polecenie i naciśnij **klawisz Enter**:
 
-    ```PowerShell
+    ```command prompt
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
     Zastąp ciąg *HardDrivePath* ścieżką, w której pobrano narzędzie MDEClientAnalyzer. Przykład:
 
-    ```PowerShell
+    ```command prompt
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
@@ -283,7 +283,7 @@ Jeśli jednak wyniki sprawdzania łączności wskazują na błąd, zostanie wyś
 >
 > Gdy parametr TelemetryProxyServer jest ustawiony w rejestrze lub za pośrednictwem zasady grupy, usługa Defender dla punktu końcowego powróci, nie będzie uzyskiwać dostępu do zdefiniowanego serwera proxy.
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 - [Konfigurowanie Program antywirusowy Microsoft Defender i zarządzanie nimi przy użyciu ustawień zasady grupy](use-group-policy-microsoft-defender-antivirus.md)
 - [Dołączanie urządzeń Windows](configure-endpoints.md)

@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Dowiedz się, jak chronić poufne informacje przy użyciu zasad i narzędzi ochrony przed utratą danych w usłudze Microsoft Purview i zapoznać się z cyklem życia DLP.
-ms.openlocfilehash: aa32eba1111f4a119652ba88b59062581bb6cc4b
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+description: Dowiedz się, jak chronić poufne informacje przy użyciu Microsoft Purview zasad i narzędzi ochrony przed utratą danych i zapoznaj się z cyklem życia DLP.
+ms.openlocfilehash: 1d05eb2ae7b7071a79448596832eb6594ab680ef
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231793"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669699"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Dowiedz się więcej o ochronie przed utratą danych
 
@@ -28,7 +28,7 @@ ms.locfileid: "65231793"
 
 Organizacje mają pod kontrolą poufne informacje, takie jak dane finansowe, dane zastrzeżone, numery kart kredytowych, dokumentacja kondycji lub numery ubezpieczenia społecznego. Aby chronić te poufne dane i zmniejszyć ryzyko, potrzebują sposobu, aby uniemożliwić użytkownikom niewłaściwe udostępnianie ich osobom, które nie powinny ich mieć. Ta praktyka jest nazywana zapobieganiem utracie danych (DLP).
 
-W usłudze Microsoft Purview można zaimplementować ochronę przed utratą danych, definiując i stosując zasady DLP. Za pomocą zasad DLP można identyfikować, monitorować i automatycznie chronić poufne elementy w różnych obszarach:
+W Microsoft Purview zaimplementujesz zapobieganie utracie danych, definiując i stosując zasady DLP. Za pomocą zasad DLP można identyfikować, monitorować i automatycznie chronić poufne elementy w różnych obszarach:
 
 - usługi Microsoft 365, takie jak Teams, Exchange, SharePoint i OneDrive
 - Office aplikacje, takie jak Word, Excel i PowerPoint
@@ -38,9 +38,9 @@ W usłudze Microsoft Purview można zaimplementować ochronę przed utratą dany
 
 DLP wykrywa poufne elementy przy użyciu głębokiej analizy zawartości, a nie tylko przez proste skanowanie tekstu. Zawartość jest analizowana pod kątem podstawowych dopasowań danych do słów kluczowych, oceny wyrażeń regularnych, wewnętrznej weryfikacji funkcji i pomocniczych dopasowań danych znajdujących się w pobliżu podstawowego dopasowania danych. Poza tym DLP używa również algorytmów uczenia maszynowego i innych metod do wykrywania zawartości zgodnej z zasadami DLP.
 
-## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP jest częścią większej oferty usługi Microsoft Purview
+## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP jest częścią większej oferty Microsoft Purview
 
-DLP to tylko jedno z narzędzi usługi Microsoft Purview, które ułatwia ochronę poufnych elementów wszędzie tam, gdzie mieszkają lub podróżują. Należy zrozumieć inne narzędzia w zestawie narzędzi Usługi Microsoft Purview, sposób ich wzajemnej współpracy i lepszą współpracę.  Zobacz [Narzędzia usługi Microsoft Purview](protect-information.md) , aby dowiedzieć się więcej o procesie ochrony informacji.
+DLP to tylko jedno z Microsoft Purview narzędzi, których użyjesz, aby chronić poufne elementy wszędzie tam, gdzie mieszkają lub podróżują. Należy zrozumieć inne narzędzia w zestawie narzędzi Microsoft Purview, sposób ich wzajemnej współpracy i lepszą współpracę.  Zobacz [Microsoft Purview narzędzia](protect-information.md), aby dowiedzieć się więcej o procesie ochrony informacji.
 
 ## <a name="protective-actions-of-dlp-policies"></a>Działania ochronne zasad DLP
 
@@ -71,7 +71,7 @@ Monitorowanie i ochrona DLP są natywne dla aplikacji używanych codziennie prze
 
 **Planowanie technologii dla DLP**
 
-Należy pamiętać, że DLP jako technologia może monitorować i chronić dane magazynowane, dane używane i dane w ruchu w usługach Microsoft 365, Windows 10, Windows 11 i urządzeniach z systemem macOS (Catalina 10.15 lub nowszym), lokalnych udziałach plików i lokalnych SharePoint. Istnieją implikacje dotyczące planowania dla różnych lokalizacji, typu danych, które chcesz monitorować i chronić, oraz akcji, które należy wykonać w przypadku dopasowania zasad.
+Należy pamiętać, że DLP jako technologia może monitorować i chronić dane magazynowane, dane używane i dane w ruchu w usługach Microsoft 365, Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowszych) urządzeniach, lokalnych udziałach plików i lokalnych SharePoint. Istnieją implikacje dotyczące planowania dla różnych lokalizacji, typu danych, które chcesz monitorować i chronić, oraz akcji, które należy wykonać w przypadku dopasowania zasad.
 
 **Planowanie procesów biznesowych dla DLP**
 
@@ -92,7 +92,7 @@ Zasady DLP można stosować do danych magazynowanych, używanych danych i danych
 - konta OneDrive
 - Teams wiadomości czatu i kanału
 - Microsoft Cloud App Security
-- urządzenia Windows 10, Windows 11 i macOS (Catalina 10.15 i nowsze)
+- urządzenia Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowsze)
 - Repozytoria lokalne
 - Witryny usługi PowerBI
 
@@ -122,6 +122,9 @@ W trybie testowym monitoruj wyniki zasad i dostosuj je tak, aby spełniał cele 
 - dodawanie nowych aplikacji z ograniczeniami
 - dodawanie nowych witryn z ograniczeniami
 
+> [!NOTE]
+> _Zatrzymanie przetwarzania większej liczby reguł_ nie działa w trybie testowym, nawet jeśli jest włączone.
+
 #### <a name="enable-the-control-and-tune-your-policies"></a>Włączanie kontrolki i dostosowywanie zasad
 
 Gdy zasady spełnią wszystkie twoje cele, włącz je. Kontynuuj monitorowanie wyników aplikacji zasad i dostrajanie w razie potrzeby. 
@@ -146,7 +149,7 @@ Lokalizacji | include/exclude by|
 |witryny SharePoint |Witryn |
 |konta OneDrive |konta lub grupy dystrybucyjne |
 |Teams wiadomości czatu i kanału |konto lub grupa dystrybucyjna |
-|urządzenia Windows 10, Windows 11 i macOS (Catalina 10.15 i nowsze) |użytkownik lub grupa |
+|urządzenia Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowsze) |użytkownik lub grupa |
 |Microsoft Cloud App Security |Wystąpienie |
 |Repozytoria lokalne| ścieżka pliku repozytorium|
 
@@ -183,7 +186,7 @@ Po zsynchronizowanym z odpowiednimi lokalizacjami zasady zaczynają oceniać zaw
 
 ## <a name="viewing-policy-application-results"></a>Wyświetlanie wyników aplikacji zasad
 
-DLP raportuje ogromną ilość informacji w usłudze Microsoft Purview z monitorowania, dopasowań zasad i akcji oraz działań użytkowników. Musisz korzystać z tych informacji i działać na nich, aby dostosować zasady i klasyfikować akcje podejmowane w przypadku poufnych elementów. Dane telemetryczne trafiają najpierw do [portalu zgodności usługi Microsoft Purview Dzienniki inspekcji](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) , są przetwarzane i trafiają do różnych narzędzi raportowania. Każde narzędzie raportowania ma inny cel.
+DLP raportuje ogromną ilość informacji na temat Microsoft Purview z monitorowania, dopasowań zasad i akcji oraz działań użytkowników. Musisz korzystać z tych informacji i działać na nich, aby dostosować zasady i klasyfikować akcje podejmowane w przypadku poufnych elementów. Dane telemetryczne najpierw trafiają do [portal zgodności Microsoft Purview Dzienniki inspekcji](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal), są przetwarzane i trafiają do różnych narzędzi raportowania. Każde narzędzie raportowania ma inny cel.
 
 ### <a name="dlp-alerts-dashboard"></a>Pulpit nawigacyjny alertów DLP
 
@@ -213,7 +216,7 @@ Karta Eksplorator działań na stronie DLP ma wstępnie ustawiony filtr *działa
 
 Aby uzyskać więcej informacji, zobacz [Wprowadzenie z eksploratorem działań](data-classification-activity-explorer.md)
 
-Aby dowiedzieć się więcej o programie Microsoft Purview DLP, zobacz:
+Aby dowiedzieć się więcej na temat Microsoft Purview DLP, zobacz:
 
 - [Dowiedz się więcej o ochronie przed utratą danych punktu końcowego](endpoint-dlp-learn-about.md)
 - [Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams (wersja zapoznawcza)](dlp-teams-default-policy.md)
@@ -221,7 +224,7 @@ Aby dowiedzieć się więcej o programie Microsoft Purview DLP, zobacz:
 - [Dowiedz się więcej o rozszerzeniu zgodności firmy Microsoft](dlp-chrome-learn-about.md)
 - [Dowiedz się więcej o pulpicie nawigacyjnym alertów ochrony przed utratą danych](dlp-alerts-dashboard-learn.md)
 
-Aby dowiedzieć się, jak używać ochrony przed utratą danych w celu zachowania zgodności z przepisami dotyczącymi prywatności danych, zobacz [Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych za pomocą usługi Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+Aby dowiedzieć się, jak używać ochrony przed utratą danych w celu zachowania zgodności z przepisami dotyczącymi prywatności danych, zobacz [Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych za pomocą Microsoft Purview](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
 
 ## <a name="licensing-and-subscriptions"></a>Licencjonowanie i subskrypcje
 

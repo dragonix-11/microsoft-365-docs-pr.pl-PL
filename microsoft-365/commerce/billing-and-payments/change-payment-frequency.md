@@ -19,27 +19,27 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid: MET150
-description: Dowiedz się, jak zmienić częstotliwości na fakturze za subskrypcję dla firm.
-ms.date: 04/02/2021
-ms.openlocfilehash: dcb3d20d12dec8451481626538f759aef627a221
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak zmienić częstotliwość naliczania opłat za subskrypcję biznesową.
+ms.date: 05/24/2022
+ms.openlocfilehash: 366d35b81d5c7ea84d5f9cd471ea4f6b7feac984
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321155"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669238"
 ---
 # <a name="change-your-billing-frequency"></a>Zmienianie częstotliwości rozliczeń
 
-Kupując subskrypcję, wybierasz rozliczenie miesięczne lub roczne. Aby zmienić, jak często naliczane są opłaty za subskrypcję, należy wykonać następujące czynności.
+Podczas zakupu subskrypcji wybierasz częstotliwość rozliczeń. Aby zmienić częstotliwość naliczania opłat za subskrypcję, wykonaj następujące kroki.
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">z produktami</a> .
-2. Na **karcie Produkty** wybierz subskrypcję, którą chcesz zmienić.
-3. Na stronie szczegółów subskrypcji w sekcji Ustawienia subskrypcji **i płatności** wybierz pozycję **Edytuj częstotliwość rozliczeń**.
-4. W **okienku Edytuj częstotliwość rozliczeń** wybierz opcję częstotliwości rozliczania, a następnie wybierz pozycję **Zmień**.
+1. W centrum administracyjnym przejdź do strony **Rozliczenia**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a> .
+2. Na karcie **Produkty** wybierz subskrypcję, którą chcesz zmienić.
+3. Na stronie szczegółów subskrypcji w sekcji **Ustawienia subskrypcji i płatności** wybierz pozycję **Edytuj częstotliwość rozliczeń**.
+4. W okienku **Edytuj częstotliwość rozliczeń** wybierz opcję częstotliwości rozliczania, a następnie wybierz pozycję **Zmień**.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Wyświetlanie rachunku lub faktury](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artykuł)\
 [Płacenie za subskrypcję](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artykuł)\
-[Dowiedz się, jak znaleźć i wyświetlić swój rachunek lub fakturę](view-your-bill-or-invoice.md) (artykuł)\
+[Dowiedz się, jak znaleźć i wyświetlić rachunek lub fakturę](view-your-bill-or-invoice.md) (artykuł)\
 [Zmienianie adresów rozliczeniowych](change-your-billing-addresses.md) (artykuł)

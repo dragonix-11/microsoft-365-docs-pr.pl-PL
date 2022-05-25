@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 971617311ce8d2443f90a1792339d4f0927ade3e
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: d7ee7588d9c73a6146b770cfcf135a8eeb44f72f
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174740"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663431"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Porównanie funkcji zabezpieczeń w planach Microsoft 365 dla małych i średnich firm
 
@@ -77,7 +77,7 @@ Usługa Defender dla firm oferuje możliwości usługi Defender for Endpoint kla
 |[Obsługa wielu platform](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS i Android OS)|Tak <sup>[[6](#fn6)]</sup>|Tak|Tak|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)|Nie|Nie|Tak|
 |Interfejsy API partnerów|Tak|Tak|Tak|
-|[integracja Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Do wyświetlania zdarzeń zabezpieczeń w dzierżawach klientów)|Tak|Nie|Nie|
+|[integracja Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Do wyświetlania zdarzeń zabezpieczeń w dzierżawach klientów)|Tak |Tak <sup>[[7](#fn7)]</sup>|Tak <sup>[[7](#fn7)]</sup>|
 
 (<a id="fn1">1</a>) Dołączanie urządzeń i zarządzanie nimi w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) lub w Microsoft Intune zarządzanym w centrum administracyjnym Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
@@ -94,6 +94,8 @@ Usługa Defender dla firm oferuje możliwości usługi Defender for Endpoint kla
 (<a id="fn5">5</a>) W usłudze Defender for Business analiza zagrożeń jest zoptymalizowana pod kątem małych i średnich firm.
 
 (<a id="fn6">6</a>) Zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).
+
+(<a id="fn7">7</a>) Możliwość wyświetlania zdarzeń w różnych dzierżawach przy użyciu usługi Defender for Endpoint jest nowa.
 
 ## <a name="next-steps"></a>Następne kroki
 

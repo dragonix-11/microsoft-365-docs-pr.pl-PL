@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: e47fc4630e83cb79a591f1c4fd4fc7421746a15e
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: b5fb9fabad337570744dbd94b76c39d446431cf6
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587397"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663497"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Uzyskiwanie Microsoft Defender dla Firm
 
@@ -50,7 +50,7 @@ Jeśli masz konto w wersji próbnej, po otrzymaniu wiadomości e-mail z akceptac
 
 ## <a name="get-microsoft-365-business-premium"></a>Uzyskiwanie usługi Microsoft 365 Business Premium
 
-*Począwszy od 1 marca 2022 r., usługa Defender for Business jest wdrażana w ramach Microsoft 365 Business Premium*. 
+*Od 1 marca 2022 r. usługa Defender for Business jest objęta Microsoft 365 Business Premium*. 
 
 1. Odwiedź [stronę produktu Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
@@ -85,7 +85,7 @@ Gdy otrzymasz wiadomość e-mail z akceptacją, oto jak aktywować subskrypcję 
    | Scenariusz | Procedura |
    |:---|:---|
    | Konfigurujesz subskrypcję Microsoft 365 po raz pierwszy. | Wybierz pozycję **Przejdź do konfiguracji z przewodnikiem** i wykonaj następujące kroki:<ol><li>Zainstaluj teraz aplikacje Office lub wybierz pozycję **Kontynuuj**, aby pominąć ten krok. (Aplikacje Office można zainstalować później).</li><li>Jeśli Twoja firma ma domenę, możesz ją teraz dodać (ta opcja jest zalecana). Alternatywnie możesz na razie użyć domeny domyślnej `.onmicrosoft.com` .</li><li>Dodawanie użytkowników i przypisywanie licencji. Każdemu użytkownikowi, który wyświetlisz listę, zostanie automatycznie przypisana licencja. Zobacz [Dodawanie użytkowników i przypisywanie licencji w tym samym czasie](mdb-add-users.md).</li></ol> |
-   | Dodajesz wersję próbną do istniejącej dzierżawy Microsoft 365. | <ol><li>Przejdź do Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) i zaloguj się.</li><li>W okienku nawigacji wybierz pozycję **UżytkownicyAktywni** >  użytkownicy. Przejrzyj listę użytkowników. </li><li>Aby przypisać licencje, postępuj zgodnie ze wskazówkami w [temacie Przypisywanie licencji użytkownikom](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
+   | Dodajesz wersję próbną do istniejącej dzierżawy Microsoft 365. | <ol><li>Przejdź do Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) i zaloguj się.</li><li>W okienku nawigacji wybierz pozycję **Użytkownicy** > **aktywni użytkownicy**. Przejrzyj listę użytkowników. </li><li>Aby przypisać licencje, postępuj zgodnie ze wskazówkami w [temacie Przypisywanie licencji użytkownikom](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
 ## <a name="two-portals-for-setup"></a>Dwa portale do konfiguracji
 

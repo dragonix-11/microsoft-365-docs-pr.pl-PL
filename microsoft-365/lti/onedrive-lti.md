@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Twórz i oceniaj przypisania, twórz i kuratoruj zawartość kursu oraz współpracuj nad plikami w czasie rzeczywistym przy użyciu nowej aplikacji Microsoft OneDrive Edukacja Tools Interoperability App for Canvas.
-ms.openlocfilehash: 8a4e3a1fc1b1d19bed093d5e72bf66e1afb2f591
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 62df03d18081cf9c48e5b153ed7a3cfe6ee27901
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285571"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663409"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integracja Microsoft OneDrive LTI z kanwą
 
@@ -44,7 +44,7 @@ Integracja Microsoft OneDrive LTI z kanwą to proces dwuetapowy. Pierwszy krok u
 > Osoba, która wykonuje tę integrację, powinna być administratorem aplikacji Canvas i administratorem dzierżawy Microsoft 365.
 
 1. Zaloguj się do <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portalu rejestracji Microsoft OneDrive LTI</a>
-2. Wybierz przycisk **Zgoda administratora** i zaakceptuj uprawnienia.
+2. Wybierz przycisk **Administracja Zgoda** i zaakceptuj uprawnienia.
 
    > [!CAUTION]
    > Jeśli ten krok nie zostanie wykonany, poniższy krok spowoduje wyświetlenie błędu i nie będzie można wykonać tego kroku przez godzinę po wystąpieniu błędu.
@@ -71,17 +71,21 @@ Integracja Microsoft OneDrive LTI z kanwą to proces dwuetapowy. Pierwszy krok u
     >
     > Aby uzyskać więcej informacji na temat sposobu modyfikowania linków nawigacyjnych kursów przez nauczycieli, zobacz [Jak mogę zarządzanie linkami nawigacji po kursach?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
 
-7. Zapisz klucz i stanie się on dostępny na kanwie w stanie **Wyłączone** . Włącz **klucz i** skopiuj klucz podany w kolumnie **Szczegóły** do użycia w następnym kroku.
+7. Następnie rozwiń listę rozwijaną **Ustawienia dodatkowe** i ustaw **poziom prywatności** na **publiczny**. 
+  
+   Ustawienie **poziomu prywatności** na **publiczny** umożliwia wyświetlanie nazw członków kursu innym członkom w celu współpracy.
+
+8. Zapisz klucz i stanie się on dostępny na kanwie w stanie **Wyłączone** . Włącz **klucz i** skopiuj klucz podany w kolumnie **Szczegóły** do użycia w następnym kroku.
 
    :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Strona Kanwa z kluczem ustawionym w stanie wyłączenia. Należy ją włączyć, a klucz będzie musiał zostać skopiowany z kolumny szczegółów na tej stronie.":::
 
-8. Wróć do portalu rejestracji Microsoft OneDrive LTI i wklej klucz w polu **Identyfikator klienta kanwy**. Wybierz pozycję **Dalej** , gdy wszystko będzie gotowe.
+9. Wróć do portalu rejestracji Microsoft OneDrive LTI i wklej klucz w polu **Identyfikator klienta kanwy**. Wybierz pozycję **Dalej** , gdy wszystko będzie gotowe.
 
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="Strona rejestracji dzierżawy LTI, na której jest wyświetlany tekst JSON i pole tekstowe, do którego należy skopiować klucz.":::
 
-9. Przejrzyj i zapisz zmiany. Po pomyślnej rejestracji zostanie wyświetlony komunikat.
+10. Przejrzyj i zapisz zmiany. Po pomyślnej rejestracji zostanie wyświetlony komunikat.
 
-10. Szczegóły rejestracji można również przejrzeć, wybierając przycisk **Wyświetl dzierżawy LTI** na stronie głównej.
+11. Szczegóły rejestracji można również przejrzeć, wybierając przycisk **Wyświetl dzierżawy LTI** na stronie głównej.
 
 Przyszłe wersje mogą wymagać dodatkowej zgody administratora. W takich przypadkach należy powtórzyć tylko kroki 1 i 2.
 

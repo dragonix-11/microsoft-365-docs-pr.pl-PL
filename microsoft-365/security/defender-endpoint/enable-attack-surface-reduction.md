@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 04eee4c44e0cf2b712ecab84b18837d7b3705cef
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637918"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669809"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Włączanie reguł zmniejszania obszaru ataków
 
@@ -48,13 +48,15 @@ Funkcje zmniejszania obszaru ataków w wersjach Windows
 
 Możesz ustawić reguły zmniejszania obszaru podatnego na ataki dla urządzeń, na których działa dowolna z następujących wersji i wersji Windows:
 
+- [System Windows 11 Pro](/windows/whats-new/windows-11-overview)
+- [System Windows 11 dla firm](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise)
 - Windows 10 Pro, [wersja 1709 lub nowsza](/windows/whats-new/whats-new-windows-10-version-1709)
 - Windows 10 Enterprise, [wersja 1709 lub nowsza](/windows/whats-new/whats-new-windows-10-version-1709)
 - Windows Server, [wersja 1803 (półroczny kanał)](/windows-server/get-started/whats-new-in-windows-server-1803) lub nowszy
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/windows/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
-- Windows Server 2022
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
 
 Aby użyć całego zestawu funkcji reguł zmniejszania obszaru podatnego na ataki, potrzebne są:
 
@@ -107,8 +109,8 @@ Reguły usługi ASR obsługują zmienne środowiskowe i symbole wieloznaczne. Ab
 2. Reguły zmniejszania obszaru ataków dla urządzeń zarządzanych przez MEM obsługują teraz zachowanie łączenia ustawień z różnych zasad w celu utworzenia nadzbioru zasad dla każdego urządzenia. Tylko ustawienia, które nie są w konflikcie, są scalane, podczas gdy te, które są w konflikcie, nie są dodawane do nadzbioru reguł. Wcześniej, jeśli dwie zasady zawierały konflikty dla jednego ustawienia, obie zasady były oflagowane jako będące w konflikcie i żadne ustawienia z żadnego z profilów nie były wdrażane. Zachowanie scalania reguł zmniejszania obszaru podatnego na ataki jest następujące:
    - Reguły zmniejszania obszaru podatnego na ataki z następujących profilów są oceniane dla każdego urządzenia, do którego mają zastosowanie reguły:
      - Urządzenia > zasady konfiguracji > profilu programu Endpoint Protection **> Microsoft Defender Exploit Guard** >  [Dotycz redukcję powierzchni](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
-     - Zabezpieczenia punktu końcowego > zasady  > **zmniejszania obszaru podatnego** [na atakiUsuń reguły zmniejszania obszaru](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
-     - Zabezpieczenia punktu końcowego > Punkty odniesienia zabezpieczeń > **Microsoft Defender ATP BaselineAttack** >  [Surface Reduction Rules](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules).
+     - Zabezpieczenia punktu końcowego > **zasady zmniejszania obszaru ataków Reguły** > [zmniejszania obszaru podatnego na ataki](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
+     - Zabezpieczenia punktu końcowego > punkty odniesienia zabezpieczeń >[reguły zmniejszania obszaru podatnego na ataki](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **wg planu bazowego** >  usługi Microsoft Defender ATP.
    - Ustawienia, które nie mają konfliktów, są dodawane do nadzbioru zasad dla urządzenia.
    - Jeśli co najmniej dwie zasady mają ustawienia powodujące konflikt, ustawienia powodujące konflikt nie są dodawane do połączonych zasad, a ustawienia, które nie powodują konfliktu, są dodawane do zasad nadzbioru, które mają zastosowanie do urządzenia.
    - Tylko konfiguracje ustawień powodujących konflikt są wstrzymywane.

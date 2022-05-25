@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 825605f932b3732ba27af7ec95160f34959356b0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: a5c6cd7b4fde3545f77cdece31f3693f74ca4444
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648332"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669325"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie
 
@@ -229,3 +229,9 @@ Wysokie obciążenia we/wy z niektórych aplikacji mogą występować problemy z
 ## <a name="resources"></a>Zasoby
 
 - Aby uzyskać więcej informacji na temat rejestrowania, odinstalowywania lub innych tematów, zobacz [Zasoby](linux-resources.md).
+  
+## <a name="related-articles"></a>Powiązane artykuły:
+  
+-  [Ochrona punktów końcowych za pomocą zintegrowanego rozwiązania EDR Defender dla Chmury: Ochrona punktu końcowego w usłudze Microsoft Defender](/azure/defender-for-cloud/integration-defender-for-endpoint)
+-  [Połączenie maszyny spoza platformy Azure do Microsoft Defender dla Chmury](/azure/defender-for-cloud/quickstart-onboard-machines)
+

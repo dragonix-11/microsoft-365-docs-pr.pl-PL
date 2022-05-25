@@ -18,12 +18,12 @@ ms.custom:
 description: Zapoznaj się z omówieniem integracji serwera usługi Security Information and Event Management (SIEM) z usługami i aplikacjami w chmurze Microsoft 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 978319cca91322c7eb737d89cbfc167574f14093
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ffb457a378539691627eff3ad24b24ef782705c1
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731422"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670207"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integracja serwera usługi Security Information and Event Management (SIEM) z usługami i aplikacjami Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "64731422"
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 ## <a name="summary"></a>Podsumowanie
 
@@ -61,7 +61,7 @@ Serwer SIEM może odbierać dane z wielu różnych usług i aplikacji Microsoft 
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)|Integracja dzienników|[Integracja rozwiązania SIEM z Microsoft Defender for Cloud Apps](/cloud-app-security/siem)|
 
 > [!TIP]
-> Zapoznaj się z usługą [Microsoft Sentinel](/azure/sentinel/overview). Usługa Microsoft Sentinel zawiera łączniki dla rozwiązań firmy Microsoft. Te łączniki są dostępne "po wyjętej wersji" i zapewniają integrację w czasie rzeczywistym. Usługi Microsoft Sentinel można używać z rozwiązaniami Microsoft 365 Defender i usługami Microsoft 365, w tym z usługami Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps i nie tylko.
+> Zapoznaj się z usługą [Microsoft Sentinel](/azure/sentinel/overview). Usługa Microsoft Sentinel zawiera łączniki dla rozwiązań firmy Microsoft. Te łączniki są dostępne "po wyjętej wersji" i zapewniają integrację w czasie rzeczywistym. Usługi Microsoft Sentinel można używać z rozwiązaniami Microsoft 365 Defender i usługami Microsoft 365, w tym Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps i nie tylko.
 
 ### <a name="audit-logging-must-be-turned-on"></a>Rejestrowanie inspekcji musi być włączone
 
@@ -69,6 +69,22 @@ Przed skonfigurowaniem integracji serwera SIEM upewnij się, że rejestrowanie i
 
 - Aby uzyskać informacje o SharePoint Online, OneDrive dla Firm i Azure Active Directory, zobacz [Włączanie lub wyłączanie inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
 - Aby uzyskać Exchange Online, zobacz [Zarządzanie inspekcją skrzynek pocztowych](../../compliance/enable-mailbox-auditing.md).
+
+## <a name="integration-steps-if-your-siem-is-microsoft-sentinel"></a>Kroki integracji, jeśli rozwiązanieM SIEM jest usługa Microsoft Sentinel
+
+Upewnij się, że bieżący plan umożliwia integrację z usługą Microsoft Sentinel (na przykład masz Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 lub nowszy) oraz że Twoje konto w Ochrona usługi Office 365 w usłudze Microsoft Defender lub Microsoft 365 Defender jest *administratorem zabezpieczeń*. Na koniec upewnij się, że masz *uprawnienia do zapisu w usłudze Microsoft Sentinel*.
+
+1. Przejdź do usługi Microsoft Sentinel.
+1. Na nawigacji po lewej stronie ekranu **Łączniki danych konfiguracji** > .
+1. **Wyszukaj** Microsoft 365 Defender i wybierz **łącznik Microsoft 365 Defender (wersja zapoznawcza).**
+1. Po prawej stronie ekranu wybierz pozycję **Otwórz stronę łącznika**.
+1. W obszarze **Konfiguracja** > wybierz **Połączenie zdarzenia & alerty**
+    1. Wyłącz wszystkie reguły tworzenia zdarzeń firmy Microsoft dla aktualnie wybranych produktów.
+1. Przewiń do **Ochrona usługi Office 365 w usłudze Microsoft Defender** w sekcji **zdarzenia Połączenie** strony.
+
+Pamiętaj, że możesz wybrać tabele z *dowolnego innego produktu usługi Microsoft Defender* , który jest przydatny i odpowiedni podczas wykonywania ostatniego kroku (poniżej).
+
+7. Wybierz **pozycje EmailEvents**, **EmailUrlInfo**, **EmailAttachmentInfo** i **EmailPostDeliveryEvents** > i **zastosuj zmiany**.
 
 ## <a name="more-resources"></a>Więcej zasobów
 

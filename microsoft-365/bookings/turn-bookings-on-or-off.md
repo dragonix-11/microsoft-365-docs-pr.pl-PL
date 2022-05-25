@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Dowiedz się, jak uzyskać dostęp do Microsoft Bookings w Microsoft 365.
-ms.openlocfilehash: 98c6ae99bceada7649dc823ca88669ae0081fc10
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ecd0e970d1e672a7c40bb1876f84d4e55a7dbff0
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637301"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663541"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Włącz lub wyłącz aplikację Microsoft Bookings
 
@@ -87,7 +87,7 @@ Możesz wyłączyć Bookings dla poszczególnych użytkowników.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Zezwalaj tylko wybranym użytkownikom na tworzenie kalendarzy Bookings
 
-Korzystając z ograniczeń zasad, można ograniczyć licencjonowanym użytkownikom możliwość tworzenia Bookings kalendarzy. Najpierw należy włączyć Bookings dla całej organizacji. Wszyscy użytkownicy w organizacji będą mieć licencje Bookings, ale tylko ci, którzy są uwzględnieni w zasadach, mogą tworzyć kalendarze Bookings i mieć pełną kontrolę nad tym, kto może uzyskiwać dostęp do utworzonych kalendarzy.
+Korzystając z ograniczeń zasad, można ograniczyć licencjonowanym użytkownikom możliwość tworzenia Bookings kalendarzy. Wszyscy użytkownicy w organizacji będą mieć licencje Bookings, ale tylko ci, którzy są uwzględnieni w zasadach, mogą tworzyć kalendarze Bookings i mieć pełną kontrolę nad tym, kto może uzyskiwać dostęp do utworzonych kalendarzy.
 
 Użytkownicy, którzy są uwzględnieni w tych zasadach, mogą tworzyć nowe kalendarze Bookings i mogą być dodawani jako pracownicy w dowolnej pojemności (w tym roli administratora) do istniejących kalendarzy Bookings. Użytkownicy, którzy nie są uwzględnieni w tych zasadach, nie będą mogli tworzyć nowych kalendarzy Bookings i otrzymają komunikat o błędzie, jeśli spróbują to zrobić.
 

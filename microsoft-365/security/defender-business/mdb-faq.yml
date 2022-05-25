@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 67205e2c326c34bdcaac7e36042797c9f261b547
-  ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+  ms.openlocfilehash: 8f9b3abe8b2e4eb6182496635f01b71c001f7b7d
+  ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 05/17/2022
-  ms.locfileid: "65437508"
+  ms.lasthandoff: 05/24/2022
+  ms.locfileid: "65663673"
 title: Microsoft Defender dla Firm — często zadawane pytania i odpowiedzi
 summary: >
   Skorzystaj z tego artykułu, aby uzyskać odpowiedzi na pytania dotyczące usługi Defender dla Firm.
@@ -54,7 +54,7 @@ sections:
     answer: >
       Usługa Defender dla firm zawiera obecnie zestaw interfejsów API obsługujących niezawodne raportowanie niestandardowe oraz łącznik Power BI. Możesz zaplanować skrypt programu PowerShell, aby wygenerować podsumowania kadry kierowniczej sformatowane w języku HTML i wysłać te podsumowania za pośrednictwem poczty e-mail. Zobacz [informacje referencyjne interfejsu API](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
   - question: Jestem partnerem firmy Microsoft. Czy będę mógł zarządzać wieloma dzierżawami z jednego panelu sterowania, czy też będę musiał zalogować się do każdej dzierżawy indywidualnie?
-    answer: "Usługa Defender dla firm jest włączona w Microsoft 365 Lighthouse dla obsługi wielu dzierżaw w jednej konsoli ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n \nObecnie kolejka zdarzeń z wieloma dzierżawami zapewnia widok zdarzeń między dzierżawami, które wymagają uwagi; Jednak konfiguracja i dołączanie są wykonywane w dzierżawie klienta przy użyciu poświadczeń partnera. \n\nMożliwości są nadal wdrażane i planowane są kolejne scenariusze integracji.\n\nAby dowiedzieć się więcej, zobacz [Omówienie Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
+    answer: "Usługa Defender dla firm jest włączona w Microsoft 365 Lighthouse dla obsługi wielu dzierżaw w jednej konsoli ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n\nAby dowiedzieć się więcej, zobacz [Omówienie Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
   - question: Jak mogę skonfigurować reguły i możliwości zmniejszania obszaru ataków w usłudze Defender for Business?
     answer: >
       Uproszczona konfiguracja reguł i możliwości zmniejszania obszaru ataków za pośrednictwem usługi Defender dla Firm w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) nie jest jeszcze obsługiwana. Jeśli masz Microsoft Intune, możesz użyć centrum administracyjnego Microsoft Endpoint Manager, aby skonfigurować zasady zmniejszania obszaru ataków. Zobacz [Zasady zmniejszania obszaru ataków dotyczące zabezpieczeń punktów końcowych w Intune](/mem/intune/protect/endpoint-security-asr-policy).

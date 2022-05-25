@@ -1,7 +1,7 @@
 ---
-title: Wykrywanie i blokowanie potencjalnie niechcianych aplikacji za pomocą programu Microsoft Defender for Endpoint w systemie Linux
-description: Wykrywaj i blokuj potencjalnie niechciane aplikacje przy użyciu programu Microsoft Defender dla punktu końcowego w systemie Linux.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, pua, pus
+title: Wykrywanie i blokowanie potencjalnie niechcianych aplikacji za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
+description: Wykrywanie i blokowanie potencjalnie niechcianych aplikacji (PUA) przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, pua, pus
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,61 +15,61 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 03c6f64e7272706262ef622a173e58260468e01b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 004a9d7af09e8a2abb656c29db558d797173edcd
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997308"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663607"
 ---
-# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Wykrywanie i blokowanie potencjalnie niechcianych aplikacji za pomocą programu Microsoft Defender for Endpoint w systemie Linux
+# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Wykrywanie i blokowanie potencjalnie niechcianych aplikacji za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Potencjalnie niechciana funkcja ochrony aplikacji (PUA) w programie Defender for Endpoint w systemie Linux może wykrywać i blokować pliki funkcji PUA w punktach końcowych w Twojej sieci.
+Funkcja ochrony potencjalnie niechcianej aplikacji (PUA) w usłudze Defender for Endpoint w systemie Linux może wykrywać i blokować pliki PUA w punktach końcowych w sieci.
 
-Te aplikacje nie są traktowane jako wirusy, złośliwe oprogramowanie ani inne rodzaje zagrożeń, ale mogą wykonywać akcje dotyczące punktów końcowych, które negatywnie wpływają na ich wydajność lub sposób użycia. Może też odwoływać się do aplikacji, które są uznawane za o złej reputacji.
+Te aplikacje nie są uważane za wirusy, złośliwe oprogramowanie ani inne typy zagrożeń, ale mogą wykonywać akcje w punktach końcowych, które niekorzystnie wpływają na ich wydajność lub użycie. Usługa PUA może również odwoływać się do aplikacji, które są uważane za mające słabą reputację.
 
-Te aplikacje mogą zwiększyć ryzyko zainfekowania sieci złośliwym oprogramowaniem, utrudnić identyfikację złośliwego oprogramowania i zmarnować zasoby it w oczyszczaniu aplikacji.
+Te aplikacje mogą zwiększyć ryzyko zainfekowania sieci złośliwym oprogramowaniem, spowodować, że infekcje złośliwego oprogramowania będą trudniejsze do zidentyfikowania i mogą marnować zasoby IT podczas czyszczenia aplikacji.
 
 ## <a name="how-it-works"></a>Jak to działa
 
-Program Defender for Endpoint w systemie Linux może wykrywać i zgłaszać pliki pua. Po skonfigurowaniu w trybie blokowania pliki pua są przenoszone do kwarantanny.
+Usługa Defender for Endpoint w systemie Linux może wykrywać i zgłaszać pliki PUA. Po skonfigurowaniu w trybie blokowania pliki PUA są przenoszone do kwarantanny.
 
-Po wykryciu oprogramowania PUA w punkcie końcowym program Defender for Endpoint w systemie Linux przechowuje rejestr wirusa wirusa w historii zagrożeń. Historię można zwizualizować z Microsoft 365 Defender portalu lub za pomocą `mdatp` narzędzia wiersza polecenia. Nazwa zagrożenia będzie zawierać wyraz "Aplikacja".
+Po wykryciu pua w punkcie końcowym, defender dla punktu końcowego w systemie Linux przechowuje zapis infekcji w historii zagrożeń. Historię można zwizualizować z portalu Microsoft 365 Defender lub za pomocą narzędzia wiersza `mdatp` polecenia. Nazwa zagrożenia będzie zawierać słowo "Aplikacja".
 
-## <a name="configure-pua-protection"></a>Konfigurowanie ochrony przed pua
+## <a name="configure-pua-protection"></a>Konfigurowanie ochrony pua
 
-Ochronę za pomocą zabezpieczeń PUA w programie Defender for Endpoint w systemie Linux można skonfigurować w jeden z następujących sposobów:
+Ochronę pua w usłudze Defender for Endpoint w systemie Linux można skonfigurować na jeden z następujących sposobów:
 
-- **Wyłączone**: Ochrona pua jest wyłączona.
-- **Inspekcja**: Pliki pua są zgłaszane w dziennikach produktów, ale nie są Microsoft 365 Defender. W historii zagrożeń nie jest przechowywana żadna historia zagrożeń, a produkt nie ma żadnych działań.
-- **Blokuj**: Pliki PUA są zgłaszane w dziennikach produktów i w Microsoft 365 Defender. W historii zagrożeń jest przechowywana historia zagrożeń, a produkt także jest wyekspowywowany pod jego działaniem.
+- **Wyłączone**: ochrona pua jest wyłączona.
+- **Inspekcja**: pliki PUA są zgłaszane w dziennikach produktów, ale nie w Microsoft 365 Defender. Żaden zapis zakażenia nie jest przechowywany w historii zagrożeń i produkt nie podejmuje żadnych działań.
+- **Blokuj**: pliki PUA są zgłaszane w dziennikach produktów i w Microsoft 365 Defender. Zapis zakażenia jest przechowywany w historii zagrożeń, a produkt podejmuje działania.
 
 > [!WARNING]
-> Domyślnie ochrona za pomocą zabezpieczeń po stronie użytkownika jest skonfigurowana w **trybie** inspekcji.
+> Domyślnie ochrona pua jest skonfigurowana w trybie **inspekcji** .
 
-Obsługę plików PUA można skonfigurować z wiersza polecenia lub z konsoli zarządzania.
+Sposób obsługi plików PUA można skonfigurować z poziomu wiersza polecenia lub konsoli zarządzania.
 
-### <a name="use-the-command-line-tool-to-configure-pua-protection"></a>Za pomocą narzędzia wiersza polecenia skonfiguruj ochronę za pomocą funkcji pua:
+### <a name="use-the-command-line-tool-to-configure-pua-protection"></a>Użyj narzędzia wiersza polecenia, aby skonfigurować ochronę pua:
 
-W programie Terminal wykonaj następujące polecenie, aby skonfigurować ochronę przed pua:
+W terminalu wykonaj następujące polecenie, aby skonfigurować ochronę pua:
 
 ```bash
 mdatp threat policy set --type potentially_unwanted_application --action [off|audit|block]
 ```
 
-### <a name="use-the-management-console-to-configure-pua-protection"></a>Skonfiguruj ochronę za pomocą konsoli zarządzania:
+### <a name="use-the-management-console-to-configure-pua-protection"></a>Użyj konsoli zarządzania, aby skonfigurować ochronę pua:
 
-W przedsiębiorstwie można skonfigurować ochronę przed kodem puA z konsoli zarządzania, takiej jak Nasyć lub Ansible, podobnie jak w przypadku innych ustawień produktu. Aby uzyskać więcej informacji, zobacz [sekcję ustawień typu zagrożeń](linux-preferences.md#threat-type-settings) w artykule Ustawianie preferencji programu [Defender dla punktu końcowego w systemie Linux](linux-preferences.md) .
+W przedsiębiorstwie można skonfigurować ochronę pua z poziomu konsoli zarządzania, takiej jak Puppet lub Ansible, podobnie jak w przypadku innych ustawień produktu. Aby uzyskać więcej informacji, zobacz sekcję [Ustawienia typu zagrożenia](linux-preferences.md#threat-type-settings) w artykule [Ustawianie preferencji dla usługi Defender dla punktu końcowego w systemie Linux](linux-preferences.md) .
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
-- [Ustawianie preferencji usługi Defender dla punktu końcowego w systemie Linux](linux-preferences.md)
+- [Ustawianie preferencji dla usługi Defender dla punktu końcowego w systemie Linux](linux-preferences.md)

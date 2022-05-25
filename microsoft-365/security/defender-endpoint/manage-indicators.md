@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 55f9529d511435eb66f2791fe8a177a9fa35a8a5
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1e68e1e49dd855356840eb732c6050178ae1c147
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666333"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669721"
 ---
 # <a name="create-indicators"></a>Utwórz wskaźniki
 
@@ -28,12 +28,13 @@ ms.locfileid: "64666333"
 
 **Dotyczy:**
 
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 >
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Wskaźnik kompromisu (IoCs) jest istotną funkcją w każdym rozwiązaniu ochrony punktu końcowego. Ta funkcja zapewnia usłudze SecOps możliwość ustawiania listy wskaźników wykrywania i blokowania (zapobieganie i reagowanie).
 

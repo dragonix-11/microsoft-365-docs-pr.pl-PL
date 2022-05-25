@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 6dcc0ad7d03031ed0cc41aadeba901eff666943b
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: d7681be9f1103fbf21b7f3f89b74fc6d9d32f809
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174209"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663651"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 Lighthouse i Microsoft Defender dla Firm
 
@@ -31,9 +31,6 @@ Jeśli jesteś Microsoft Cloud Solution Provider (CSP) i masz [Microsoft 365 Lig
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="zrzut ekranu przedstawiający listę zdarzeń w Microsoft 365 Lighthouse":::
 
 Aby uzyskać dostęp do listy zdarzeń, w Microsoft 365 Lighthouse na stronie głównej znajdź kartę **Zdarzenia zabezpieczeń**, a następnie wybierz pozycję **Wyświetl wszystkie zdarzenia**.
-
-> [!IMPORTANT]
-> Możliwości są nadal wdrażane. Jeśli nie masz jeszcze tych możliwości, powinieneś je mieć wkrótce.
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>Dowiedz się więcej o Microsoft 365 Lighthouse
 

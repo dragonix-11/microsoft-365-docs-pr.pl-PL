@@ -9,14 +9,14 @@ metadata:
   ms.topic: landing-page
   author: efrene
   ms.author: efrene
-  ms.date: 03/31/2022
+  ms.date: 05/23/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 036a15099420afbc356b1ae795e0f60cf5a81a7d
-  ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+  ms.openlocfilehash: 181254d39d245608bae690f2fdb78f7a6a5c0fa0
+  ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 04/21/2022
-  ms.locfileid: "65014941"
+  ms.lasthandoff: 05/24/2022
+  ms.locfileid: "65663387"
 landingContent:
 - title: Wprowadzenie
   linkLists:
@@ -35,7 +35,7 @@ landingContent:
     - text: Tworzenie konta w celu utworzenia subskrypcji
       url: admin-overview/sign-up-for-office-365.md
     - text: Konfigurowanie usługi
-      url: setup/business-set-up.md
+      url: /microsoft-365/business-premium/m365bp-setup
     - text: Bezpieczne komputery Windows 10
       url: setup/secure-win-10-pcs.md
 - title: Konfiguracja urządzenia
@@ -58,7 +58,7 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: Pobieranie aplikacji mobilnej administratora
+    - text: Pobieranie aplikacji mobilnej Administracja
       url: admin-overview/admin-mobile-app.md
 - title: Głos biznesowy
   linkLists:
@@ -120,7 +120,7 @@ landingContent:
     links:
     - text: Zabezpieczanie urządzeń Windows 10 Pro
       url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
-    - text: Zabezpieczanie aplikacji Office w systemie iOS
+    - text: Zabezpieczanie aplikacji Office na iOS
       url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
 - title: Zgodność & zabezpieczeń
   linkLists:

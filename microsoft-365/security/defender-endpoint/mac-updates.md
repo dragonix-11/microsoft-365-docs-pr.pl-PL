@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie aktualizacji dla programu Ochrona punktu końcowego w usłudze Microsoft Defender komputerów Mac
+title: Wdrażanie aktualizacji dla Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac
 description: Kontroluj aktualizacje dla Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac w środowiskach przedsiębiorstwa.
 keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, aktualizacje, wdrażanie
 ms.prod: m365-security
@@ -15,79 +15,80 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b9ddf9693a242b3b8c466cfa1616b62c5eb73b9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 4612c7ca68ab0b55fa2a2f28821cb5baef6ff6e9
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469300"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669347"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Wdrażanie aktualizacji dla aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender systemie macOS
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Wdrażanie aktualizacji dla Ochrona punktu końcowego w usłudze Microsoft Defender na macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](microsoft-defender-endpoint-mac.md)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Usługa ochrony punktu końcowego w usłudze Microsoft Defender w systemie macOS](microsoft-defender-endpoint-mac.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Firma Microsoft regularnie publikuje aktualizacje oprogramowania w celu zwiększenia wydajności, zabezpieczeń i dostarczania nowych funkcji.
+Firma Microsoft regularnie publikuje aktualizacje oprogramowania w celu zwiększenia wydajności, bezpieczeństwa i dostarczania nowych funkcji.
 
-Aby zaktualizować Ochrona punktu końcowego w usłudze Microsoft Defender systemie macOS, używany jest program o nazwie Microsoft AutoUpdate (MAU). Domyślnie program MAU automatycznie sprawdza aktualizacje codziennie, ale możesz zmienić to ustawienie na cotygodniowe, miesięczne lub ręczne.
+Aby zaktualizować Ochrona punktu końcowego w usłudze Microsoft Defender na macOS, jest używany program o nazwie Microsoft AutoUpdate (MAU). Domyślnie usługa MAU automatycznie sprawdza dostępność aktualizacji codziennie, ale można ją zmienić na co tydzień, co miesiąc lub ręcznie.
 
 :::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
-Jeśli zdecydujesz się wdrożyć aktualizacje za pomocą narzędzi do dystrybucji oprogramowania, musisz skonfigurować program MAU tak, aby ręcznie sprawdzał aktualizacje oprogramowania. Preferencje można wdrożyć, aby skonfigurować sposób i czas, w którym program MAU sprawdza aktualizacje dla komputerów Mac w organizacji.
+Jeśli zdecydujesz się wdrożyć aktualizacje przy użyciu narzędzi dystrybucji oprogramowania, skonfiguruj narzędzie MAU do ręcznego sprawdzania dostępności aktualizacji oprogramowania. Możesz wdrożyć preferencje, aby skonfigurować sposób i czas sprawdzania aktualizacji dla komputerów Mac w organizacji przez program MAU.
 
-## <a name="use-msupdate"></a>Użyj programu msupdate
+## <a name="use-msupdate"></a>Korzystanie z biblioteki msupdate
 
-Program MAU zawiera narzędzie wiersza polecenia, nazywane *msupdate*, zaprojektowane dla administratorów IT, aby mieli bardziej dokładną kontrolę nad stosowanymi aktualizacjami. Instrukcje dotyczące korzystania z tego narzędzia można znaleźć w tece Aktualizowanie [Office dla komputerów Mac przy użyciu programu msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
+Mau zawiera narzędzie wiersza polecenia o nazwie *msupdate*, które jest przeznaczone dla administratorów IT, dzięki czemu mają precyzyjniejszą kontrolę nad zastosowaniem aktualizacji. Instrukcje dotyczące korzystania z tego narzędzia można znaleźć w [temacie Update Office dla komputerów Mac przy użyciu polecenia msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
-W programie MAU identyfikator aplikacji dla programu Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS to *WDAV00*. Aby pobrać i zainstalować najnowsze aktualizacje programu Ochrona punktu końcowego w usłudze Microsoft Defender macOS, wykonaj następujące polecenie w oknie aplikacji Terminal:
+W programie MAU identyfikatorem aplikacji dla Ochrona punktu końcowego w usłudze Microsoft Defender na macOS jest *WDAV00*. Aby pobrać i zainstalować najnowsze aktualizacje dla Ochrona punktu końcowego w usłudze Microsoft Defender na macOS, wykonaj następujące polecenie w oknie terminalu:
 
 ```dos
+cd /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS
 ./msupdate --install --apps wdav00
 ```
 
-## <a name="set-preferences-for-microsoft-autoupdate"></a>Ustawianie preferencji programu Microsoft AutoUpdate
+## <a name="set-preferences-for-microsoft-autoupdate"></a>Ustawianie preferencji dla usługi Microsoft AutoUpdate
 
-W tej sekcji opisano najczęściej używane preferencje, za pomocą których można skonfigurować aplikację mau. Te ustawienia można wdrożyć jako profil konfiguracji za pośrednictwem konsoli zarządzania, z których korzysta twój przedsiębiorstwo. Przykład profilu konfiguracji przedstawiono w poniższych sekcjach.
+W tej sekcji opisano najbardziej typowe preferencje, których można użyć do skonfigurowania jednostki MAU. Te ustawienia można wdrożyć jako profil konfiguracji za pośrednictwem konsoli zarządzania używanej przez przedsiębiorstwo. Przykład profilu konfiguracji przedstawiono w poniższych sekcjach.
 
 ### <a name="set-the-channel-name"></a>Ustawianie nazwy kanału
 
-Kanał ten określa typ i częstotliwość aktualizacji oferowanych za pośrednictwem programu MAU. Urządzenia w `Beta` mogą wypróbować nowe funkcje przed urządzeniami w i `Preview` `Current`.
+Kanał określa typ i częstotliwość aktualizacji oferowanych za pośrednictwem jednostki MAU. Urządzenia w programie `Beta` mogą wypróbować nowe funkcje przed urządzeniami w systemach `Preview` i `Current`.
 
 Kanał `Current` zawiera najbardziej stabilną wersję produktu.
 
 > [!IMPORTANT]
-> Przed programem Microsoft AutoUpdate w wersji 4.29 kanały miały inne nazwy:
+> Przed programem Microsoft AutoUpdate w wersji 4.29 kanały miały różne nazwy:
 >
-> - `Beta` otrzymał nazwę `InsiderFast` (niejawny program testów z szybkimi niejawnym programem testów)
-> - `Preview` został nazwany `External` (Niejawny program testów : wolne informacje)
-> - `Current` nazwano `Production`
+> - `Beta` został nazwany `InsiderFast` (Insider Fast)
+> - `Preview` został nazwany `External` (Insider Slow)
+> - `Current` został nazwany `Production`
 
 > [!TIP]
-> Aby móc wyświetlić podgląd nowych funkcji i przekazać wczesne opinie, zalecamy skonfigurowanie na niektórych urządzeniach w przedsiębiorstwie ustawień `Beta` lub `Preview`.
+> Aby wyświetlić podgląd nowych funkcji i przekazać wczesną opinię, zaleca się skonfigurowanie niektórych urządzeń w przedsiębiorstwie do `Beta` lub `Preview`.
 
 <br>
 
 ****
 
-|Sekcja|Value|
+|Sekcji|Value|
 |---|---|
 |**Domain (Domena)**|`com.microsoft.autoupdate2`|
-|**Klucz**|ChannelName|
+|**Klucz**|Channelname|
 |**Typ danych**|Ciąg|
-|**Dopuszczalne wartości**|Beta <p> Wersja zapoznawcza <p> Bieżący|
+|**Dopuszczalne wartości**|Beta <p> Wersja zapoznawcza <p> Bieżącego|
 |||
 
 > [!WARNING]
-> To ustawienie zmienia kanał dla wszystkich aplikacji zaktualizowanych za pomocą programu Microsoft AutoUpdate. Aby zmienić kanał tylko dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS, po `[channel-name]` zamianie go na odpowiedni kanał wykonaj następujące polecenie:
+> To ustawienie zmienia kanał dla wszystkich aplikacji, które są aktualizowane za pośrednictwem usługi Microsoft AutoUpdate. Aby zmienić kanał tylko dla Ochrona punktu końcowego w usłudze Microsoft Defender na macOS, wykonaj następujące polecenie po zastąpieniu `[channel-name]` go odpowiednim kanałem:
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -95,13 +96,13 @@ Kanał `Current` zawiera najbardziej stabilną wersję produktu.
 
 ### <a name="set-update-check-frequency"></a>Ustawianie częstotliwości sprawdzania aktualizacji
 
-Zmień, jak często ma być wyszukiwane aktualizacje.
+Zmień częstotliwość wyszukiwania aktualizacji przez jednostki MAU.
 
 <br>
 
 ****
 
-|Sekcja|Value|
+|Sekcji|Value|
 |---|---|
 |**Domain (Domena)**|`com.microsoft.autoupdate2`|
 |**Klucz**|UpdateCheckFrequency|
@@ -110,85 +111,85 @@ Zmień, jak często ma być wyszukiwane aktualizacje.
 |**Komentowanie**|Ta wartość jest ustawiana w minutach.|
 |||
 
-### <a name="change-how-mau-interacts-with-updates"></a>Zmienianie sposobu interakcji użytkownika mau z aktualizacjami
+### <a name="change-how-mau-interacts-with-updates"></a>Zmienianie sposobu interakcji mau z aktualizacjami
 
-Zmienianie sposobu wyszukiwania aktualizacji przez programu MAU.
+Zmień sposób wyszukiwania aktualizacji przez jednostki MAU.
 
 <br>
 
 ****
 
-|Sekcja|Value|
+|Sekcji|Value|
 |---|---|
 |**Domain (Domena)**|`com.microsoft.autoupdate2`|
 |**Klucz**|HowToCheck|
 |**Typ danych**|Ciąg|
-|**Dopuszczalne wartości**|Ręcznie <p> AutomaticCheck <p> AutomaticDownload|
-|**Komentowanie**|Pamiętaj, że jeśli to możliwe, pobieranie i instalowanie w trybie dyskretnym odbywa się przy automatycznym pobieraniu.|
+|**Dopuszczalne wartości**|Ręcznie <p> Automatyczne sprawdzanie <p> AutomaticDownload|
+|**Komentowanie**|Pamiętaj, że funkcja AutomaticDownload wykona pobieranie i zainstalowanie w trybie dyskretnym, jeśli jest to możliwe.|
 |||
 
-### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Zmienianie ustawienia, czy jest włączony przycisk Sprawdź aktualizacje
+### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Zmienianie, czy przycisk "Sprawdź aktualizacje" jest włączony
 
-Określenie, czy użytkownicy lokalni będą mogli klikać opcję "Sprawdź aktualizacje" w interfejsie użytkownika programu Microsoft AutoUpdate.
+Zmień, czy użytkownicy lokalni będą mogli kliknąć opcję "Sprawdź aktualizacje" w interfejsie użytkownika microsoft AutoUpdate.
 
 <br>
 
 ****
 
-|Sekcja|Value|
+|Sekcji|Value|
 |---|---|
 |**Domain (Domena)**|`com.microsoft.autoupdate2`|
 |**Klucz**|EnableCheckForUpdatesButton|
 |**Typ danych**|Wartość logiczna|
-|**Dopuszczalne wartości**|True (domyślne) <p> False (Fałsz|
+|**Dopuszczalne wartości**|True (wartość domyślna) <p> False|
 |||
 
-### <a name="disable-insider-checkbox"></a>Wyłącz pole wyboru Niejawny program testów
+### <a name="disable-insider-checkbox"></a>Wyłącz pole wyboru Insider (Niejawny tester)
 
-Ma wartość True (Prawda), aby "Dołącz do Office niejawnego programu testów..." niedostępne/wyszasowane dla użytkowników.
+Ustaw wartość true na wartość "Dołącz do programu Office Insider Program..." pole wyboru jest niedostępne/wyszarzone dla użytkowników.
 
 <br>
 
 ****
 
-|Sekcja|Value|
+|Sekcji|Value|
 |---|---|
 |**Domain (Domena)**|`com.microsoft.autoupdate2`|
 |**Klucz**|DisableInsiderCheckbox|
 |**Typ danych**|Wartość logiczna|
-|**Dopuszczalne wartości**|Fałsz (domyślnie) <p> True (Prawda)|
+|**Dopuszczalne wartości**|False (wartość domyślna) <p> True|
 |||
 
-### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Ograniczanie telemetrii wysyłanej z usługi MAU
+### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Ograniczanie danych telemetrycznych wysyłanych z jednostki MAU
 
-Ustaw wartość False (Fałsz), aby wysyłać minimalne dane pulsu, bez użycia aplikacji i bez szczegółów środowiska.
+Ustaw wartość false, aby wysyłać minimalne dane pulsu, brak użycia aplikacji i brak szczegółów środowiska.
 
 <br>
 
 ****
 
-|Sekcja|Value|
+|Sekcji|Value|
 |---|---|
 |**Domain (Domena)**|`com.microsoft.autoupdate2`|
 |**Klucz**|SendAllTelemetryEnabled|
 |**Typ danych**|Wartość logiczna|
-|**Dopuszczalne wartości**|True (domyślne) <p> False (Fałsz|
+|**Dopuszczalne wartości**|True (wartość domyślna) <p> False|
 |||
 
 ## <a name="example-configuration-profile"></a>Przykładowy profil konfiguracji
 
-Poniższy profil konfiguracji służy do:
+Do tego celu jest używany następujący profil konfiguracji:
 
-- Umieść urządzenie w kanale produkcji
+- Umieść urządzenie w kanale produkcyjnym
 - Automatyczne pobieranie i instalowanie aktualizacji
-- Włączanie przycisku "Sprawdź aktualizacje" w interfejsie użytkownika
-- Zezwalaj użytkownikom na urządzeniu na zarejestrowanie się w kanałach niejawnego programu testów
+- Włącz przycisk "Sprawdź aktualizacje" w interfejsie użytkownika
+- Zezwalanie użytkownikom na urządzeniu na rejestrację w kanałach niejawnych testerów
 
 > [!WARNING]
-> Poniżej przedstawiono konfigurację przykładową i nie należy jej używać w środowisku produkcyjnym bez odpowiedniego przeglądu ustawień i dostosowania konfiguracji.
+> Poniższa konfiguracja jest przykładową konfiguracją i nie powinna być używana w środowisku produkcyjnym bez odpowiedniego przeglądu ustawień i dostosowywania konfiguracji.
 
 > [!TIP]
-> Aby móc wyświetlić podgląd nowych funkcji i przekazać wczesne opinie, zalecamy skonfigurowanie na niektórych urządzeniach w przedsiębiorstwie ustawień `Beta` lub `Preview`.
+> Aby wyświetlić podgląd nowych funkcji i przekazać wczesną opinię, zaleca się skonfigurowanie niektórych urządzeń w przedsiębiorstwie do `Beta` lub `Preview`.
 
 ### <a name="jamf"></a>JAMF
 
@@ -273,11 +274,11 @@ Poniższy profil konfiguracji służy do:
 </plist>
 ```
 
-Aby skonfigurować jednostkę MAU, możesz wdrożyć ten profil konfiguracji za pomocą narzędzia do zarządzania, z których korzysta twój przedsiębiorstwo:
+Aby skonfigurować jednostkę MAU, możesz wdrożyć ten profil konfiguracji za pomocą narzędzia do zarządzania używanego przez przedsiębiorstwo:
 
-- Z usługi JAMF przekaż ten profil konfiguracji i ustaw domenę preferencji na *com.microsoft.autoupdate2*.
-- Z Intune przekaż ten profil konfiguracji i ustaw nazwę niestandardowego profilu konfiguracji na *com.microsoft.autoupdate2*.
+- W narzędziu JAMF przekaż ten profil konfiguracji i ustaw domenę preferencji na *com.microsoft.autoupdate2*.
+- Z Intune przekaż ten profil konfiguracji i ustaw niestandardową nazwę profilu konfiguracji na *com.microsoft.autoupdate2*.
 
 ## <a name="resources"></a>Zasoby
 
-- [odwołanie do msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate)
+- [dokumentacja msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate)

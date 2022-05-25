@@ -1,7 +1,7 @@
 ---
-title: Interfejs API komputera od tablicy
-description: Dowiedz się, jak za pomocą interfejsu API wyłączyć urządzenie z usługi Microsoft Defender for Endpoint.
-keywords: apis, api Graph, obsługiwane api, zbieranie pakietu badania
+title: Interfejs API maszyny odłączaowej
+description: Dowiedz się, jak używać interfejsu API do odłączenia urządzenia od Ochrona punktu końcowego w usłudze Microsoft Defender.
+keywords: apis, graph api, obsługiwane interfejsy API, zbieranie pakietu badania
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1279f7271abbd4086c946492e95daa52962dbae5
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: a9e46b428500b41b143585434f7a16c13227db1c
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013814"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669765"
 ---
-# <a name="offboard-machine-api"></a>Interfejs API komputera od tablicy
+# <a name="offboard-machine-api"></a>Interfejs API maszyny odłączaowej
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,33 +39,33 @@ ms.locfileid: "63013814"
 
 ## <a name="api-description"></a>Opis interfejsu API
 
-Urządzenie odsuń od usługi Defender for Endpoint.
+Odłącz urządzenie od usługi Defender for Endpoint.
 
 ## <a name="limitations"></a>Ograniczenia
 
-- Ograniczenia stawek dla tego interfejsu API to 100 połączeń na minutę i 1500 połączeń na godzinę.
+- Ograniczenia szybkości dla tego interfejsu API to 100 wywołań na minutę i 1500 wywołań na godzinę.
 
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> Ten interfejs API jest obsługiwany na Windows 11, Windows 10, w wersji 1703 lub nowszej albo w Windows Server 2019 i nowszych wersjach.
+> Ten interfejs API jest obsługiwany w Windows 11, Windows 10, wersji 1703 lub nowszej lub Windows Server 2019 i nowszych.
 >
-> Ten interfejs API nie jest obsługiwany na urządzeniach z systemem MacOS ani Linux.
+> Ten interfejs API nie jest obsługiwany na urządzeniach z systemem MacOS lub Linux.
 
 ## <a name="permissions"></a>Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz Korzystanie [z usługi Defender dla interfejsów API punktów końcowych.](apis-intro.md)
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Korzystanie z usługi Defender dla interfejsów API punktu końcowego](apis-intro.md)
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 ---|---|---
-Aplikacja|Machine.Offboard|"Urządzenie do odsuń"
-Delegowane (konto służbowe)|Machine.Offboard|"Urządzenie do odsuń"
+Aplikacja|Machine.Offboard|"Maszyna odłączona"
+Delegowane (konto służbowe)|Machine.Offboard|"Maszyna odłączona"
 
 > [!NOTE]
-> W przypadku uzyskiwania tokenu przy użyciu poświadczeń użytkownika:
+> Podczas uzyskiwania tokenu przy użyciu poświadczeń użytkownika:
 >
-> - Użytkownik musi mieć rolę AD "Administrator globalny"
-> - Użytkownik musi mieć dostęp do urządzenia w zależności od ustawień grupy urządzeń (zobacz Tworzenie grup urządzeń i zarządzanie [nimi](machine-groups.md) , aby uzyskać więcej informacji)
+> - Użytkownik musi mieć rolę usługi AD "Global Administracja"
+> - Użytkownik musi mieć dostęp do urządzenia na podstawie ustawień grupy urządzeń (zobacz [Tworzenie grup urządzeń i zarządzanie nimi](machine-groups.md) , aby uzyskać więcej informacji)
 
 ## <a name="http-request"></a>Żądanie HTTP
 
@@ -75,30 +75,30 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 Identyfikator komputera można znaleźć w adresie URL po wybraniu urządzenia. Ogólnie rzecz biorąc, jest to 40-cyfrowy numer alfanumeryczny, który można znaleźć w adresie URL.
 
-## <a name="request-headers"></a>Żądaj nagłówków
+## <a name="request-headers"></a>Nagłówki żądań
 
 Name (Nazwa)|Wpisać|Opis
 ---|---|---
-Autoryzacja|Ciąg|Użytkownik {token}. **Wymagane**.
-Typ zawartości|ciąg|application/json. **Wymagane**.
+Autoryzacji|Ciąg|Element nośny {token}. **Wymagane**.
+Typ zawartości|Ciąg|application/json. **Wymagane**.
 
-## <a name="request-body"></a>Treść wniosku
+## <a name="request-body"></a>Treść żądania
 
-W treści żądania należy podać obiekt JSON o następujących parametrach:
+W treści żądania podaj obiekt JSON z następującymi parametrami:
 
 Parametr|Wpisać|Opis
 ---|---|---
 Komentowanie|Ciąg|Komentarz do skojarzenia z akcją. **Wymagane**.
 
-## <a name="response"></a>Odpowiedź
+## <a name="response"></a>Odpowiedzi
 
-Jeśli ta metoda się powiedzie, ta metoda zwróci wartość 201 — utworzono kod odpowiedzi i [akcję maszynową](machineaction.md) w treści odpowiedzi.
+W przypadku powodzenia ta metoda zwraca wartość 200 — utworzony kod odpowiedzi i [akcję maszyny](machineaction.md) w treści odpowiedzi.
 
 ## <a name="example"></a>Przykład
 
-### <a name="request"></a>Zażądaj
+### <a name="request"></a>Żądanie
 
-Oto przykład wniosku.
+Oto przykład żądania.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/offboard

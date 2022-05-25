@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bfa08a92a011d32cdc30e2f68052715b4075fdf
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a70602f9b482196ee949a8f9922f2979b04b3ff4
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665519"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669303"
 ---
 # <a name="take-response-actions-on-a-file"></a>Wykonaj akcje odpowiedzi na pliku
 
@@ -28,12 +28,12 @@ ms.locfileid: "64665519"
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-responddile-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Szybkie reagowanie na wykryte ataki przez zatrzymywanie i kwazarowanie plików lub blokowanie pliku. Po wykonaniu akcji na plikach możesz sprawdzić szczegóły działania w Centrum akcji.
 
@@ -151,7 +151,7 @@ Domyślnie powinno być możliwe pobieranie plików znajdujących się w kwarant
 
 ### <a name="download-quarantined-files"></a>Pobieranie plików poddanych kwarantannie
 
-Pliki poddane kwarantannie przez Program antywirusowy Microsoft Defender lub twój zespół ds. zabezpieczeń zostaną zapisane w zgodny sposób zgodnie z [konfiguracjami przykładowego przesyłania](enable-cloud-protection-microsoft-defender-antivirus.md). Twój zespół ds. zabezpieczeń może pobrać pliki bezpośrednio ze strony szczegółów pliku za pośrednictwem przycisku "Pobierz plik". **Ta funkcja w wersji zapoznawczej jest domyślnie włączona**.
+Pliki poddane kwarantannie przez Program antywirusowy Microsoft Defender lub twój zespół ds. zabezpieczeń zostaną zapisane w zgodny sposób zgodnie z [konfiguracjami przykładowego przesyłania](enable-cloud-protection-microsoft-defender-antivirus.md). Twój zespół ds. zabezpieczeń może pobrać pliki bezpośrednio ze strony szczegółów pliku za pośrednictwem przycisku "Pobierz plik". **Ta funkcja jest domyślnie włączona**.
 
 Lokalizacja zależy od ustawień geograficznych organizacji (UE, Wielka Brytania lub USA). Plik poddany kwarantannie będzie zbierany tylko raz dla organizacji. Dowiedz się więcej o ochronie danych firmy Microsoft w portalu zaufania usługi pod adresem https://aka.ms/STP.
 

@@ -14,12 +14,12 @@ metadata:
   ms.author: robmazz
   ms.date: 04/22/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: b848abdb739d09595e9be91b8217acf09b01dbd2
-  ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
+  ms.openlocfilehash: fe8cae943a031b6390832df1e0b85305ce4886dd
+  ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 05/06/2022
-  ms.locfileid: "65249602"
+  ms.lasthandoff: 05/25/2022
+  ms.locfileid: "65670129"
 landingContent:
 - title: Ochrona poufnych danych w chmurach, aplikacjach i na urządzeniach
   linkLists:
@@ -69,8 +69,10 @@ landingContent:
     links:
     - text: Zabezpieczanie danych przy użyciu modelu Zero Trust
       url: /security/zero-trust/data
-    - text: Wdrażanie rozwiązania ochrony informacji w usłudze Microsoft Purview
+    - text: Wdrażanie rozwiązania do ochrony informacji
       url: /microsoft-365/compliance/information-protection-solution
+    - text: Wdrażanie rozwiązania do zarządzania danymi
+      url: /microsoft-365/compliance/data-governance-solution
     - text: Wdrażanie ochrony informacji na potrzeby przepisów dotyczących prywatności danych
       url: /microsoft-365/solutions/information-protection-deploy
     - text: Zapoznaj się z ilustracjami dotyczącymi ochrony informacji i zgodności

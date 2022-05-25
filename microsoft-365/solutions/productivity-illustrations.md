@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8319cd07fb1a648e4aa20bc3a29535a2f4916f6b
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 08a85610d7790924e5e702f9d0a4133f391c4bde
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286389"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669281"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustracje dotyczące produktywności na platformie Microsoft 365
 
@@ -64,7 +64,7 @@ Ten zestaw ilustracji korzysta z jednej z najbardziej regulowanych branż, usłu
 
 | Element | Opis |
 |:-----|:-----|
-|[![Plakat modelu: Microsoft 365 możliwości ochrony informacji i zgodności.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Angielski: [pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japoński: [pobierz jako plik PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano listopad 2020 r.|Zawiera: <ul><li>  Microsoft Purview Information Protection i Microsoft Purview Data Loss Prevention</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność w komunikacji</li><li>Ryzyko związane z wewnętrznymi testerami</li><li>Pozyskiwanie danych innych firm</li>|
+|[![Plakat modelu: Microsoft 365 możliwości ochrony informacji i zgodności.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Angielski: [pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japoński: [pobierz jako plik PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [jako Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano listopad 2020 r.|Zawiera: <ul><li>  Ochrona informacji i zapobieganie utracie danych</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność w komunikacji</li><li>Ryzyko związane z wewnętrznymi testerami</li><li>Pozyskiwanie danych innych firm</li>|
 
 
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>Zabezpieczenia i Information Protection dla organizacji z wieloma regionami
@@ -124,7 +124,7 @@ Firma Microsoft obsługuje kilka opcji w miarę rozpoczynania podróży do Teams
 |[![Plakat Microsoft Telephony Solutions.](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Zaktualizowano marzec 2021 r. | Aby uzyskać więcej informacji, zobacz [Planowanie rozwiązania Teams głosu](/microsoftteams/cloud-voice-landing-page).|
 
 
-## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Konfigurowanie infrastruktury na potrzeby pracy hybrydowej
+## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Konfigurowanie infrastruktury do pracy hybrydowej
 
 Dzięki Microsoft 365 i innym technologiom w chmurze firmy Microsoft możesz zapewnić pracownikom bezpieczny dostęp do lokalnych i opartych na chmurze informacji, narzędzi i zasobów organizacji z ich domów.
 

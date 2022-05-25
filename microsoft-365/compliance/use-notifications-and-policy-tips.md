@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak dodać poradę dotyczącą zasad do zasad ochrony przed utratą danych (DLP), aby powiadomić użytkownika, że pracuje z zawartością, która powoduje konflikt z zasadami DLP.
-ms.openlocfilehash: ce6665227b62ea5937229696fa65b69e7cfb894a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: af3dd2181c5bd8865f02755ba4d17f1feb0514d2
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623229"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669545"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Wyślij powiadomienia e-mail i pokaż porady dotyczące zasad dla zasad DLP
 
@@ -97,7 +97,10 @@ Dla każdej reguły w zasadach DLP można:
 - Dostosuj tekst uwzględniony w powiadomieniu przy użyciu kodu HTML lub tokenów. Aby uzyskać więcej informacji, zobacz poniższą sekcję.
 
 > [!NOTE]
-> Powiadomienia e-mail mogą być wysyłane tylko do poszczególnych adresatów, a nie do grup ani list dystrybucyjnych. Tylko nowa zawartość spowoduje wyzwolenie powiadomienia e-mail. Edytowanie istniejącej zawartości spowoduje wyzwolenie wskazówek dotyczących zasad, ale nie powiadomienia e-mail.
+>
+> - Powiadomienia e-mail mogą być wysyłane tylko do poszczególnych adresatów, a nie do grup lub list dystrybucyjnych.
+> - Tylko nowa zawartość spowoduje wyzwolenie powiadomienia e-mail. Edytowanie istniejącej zawartości spowoduje wyzwolenie porad dotyczących zasad, ale nie powiadomień e-mail.
+> - Nadawcy zewnętrzni nie otrzymują powiadomień. Powiadomienia są wysyłane tylko do użytkowników wewnętrznych.
 
 ![Opcje powiadomień e-mail.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 

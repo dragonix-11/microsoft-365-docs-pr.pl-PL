@@ -1,23 +1,23 @@
 ### YamlMime:Landing
 title: 20 najczęściej wyświetlanych artykułów pomocy dla administratorów w tym miesiącu
-summary: 'Ostatnia aktualizacja: 2022-03-23. Zastanawiasz się, które artykuły pomocy są najpopularniejsze z administratorami? Zapoznaj się z tą kolekcją 20 najczęściej przeglądanych artykułów Pomocy aktualizowanych co miesiąc.'
+summary: Ostatnia aktualizacja 24.05.2022. Masz ciekawy temat, które artykuły pomocy są najbardziej popularne wśród administratorów? Zapoznaj się z tą kolekcją 20 najczęściej oglądanych artykułów pomocy, aktualizowanych co miesiąc.
 metadata:
   title: 20 najczęściej wyświetlanych artykułów pomocy dla administratorów w tym miesiącu
-  description: Zapoznaj się z tą kolekcją 20 artykułów pomocy, które są najpopularniejsze przez administratorów i aktualizowane co miesiąc.
+  description: Zapoznaj się z tą kolekcją 20 najpopularniejszych artykułów pomocy, które są najpopularniejsze wśród administratorów, aktualizowane co miesiąc.
   ms.service: O365-administration
   ms.topic: landing-page
   author: SKjerland
   ms.author: sharik
-  ms.date: 03/22/2022
+  ms.date: 05/24/2022
   ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 115617fb4291e65b828bb8308afab1765fcab3b6
-  ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
+  ms.openlocfilehash: d27424db329d3d5b42dfea2ab6b98a0340f75b6f
+  ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/23/2022
-  ms.locfileid: "63761527"
+  ms.lasthandoff: 05/25/2022
+  ms.locfileid: "65670085"
 landingContent:
 - title: Zarządzanie danymi i usługami
   linkLists:
@@ -25,17 +25,15 @@ landingContent:
     links:
     - text: Role administratora — informacje
       url: add-users/about-admin-roles.md
-    - text: Microsoft 365 raportów użycia
+    - text: Microsoft 365 raporty użycia
       url: activity-reports/activity-reports.md
-  - linkListType: video
-    links:
-    - text: Uzyskiwanie pomocy technicznej
+    - text: Uzyskiwanie pomocy technicznej dla platformy Microsoft 365 dla firm
       url: get-help-support.md
 - title: Domeny
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Dodawanie rekordów DNS w celu połączenia domeny
+    - text: Dodaj rekordy DNS, aby połączyć domenę
       url: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
     - text: Dodawanie domeny do Microsoft 365
       url: setup/add-domain.md
@@ -43,17 +41,17 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Konfigurowanie uwierzytelniania wieloskładnikowego
+    - text: Konfigurowanie uwierzytelniania wieloskładnikowego dla Microsoft 365
       url: security-and-compliance/set-up-multi-factor-authentication.md
 - title: Rachunki i subskrypcje
   linkLists:
   - linkListType: overview
     links:
-    - text: Informacje o numerach rejestracji i powiadomieniach o przeglądanych numerach
+    - text: Informacje o numerach rejestracyjnych i powiadomieniach o niedocenieniu
       url: ../commerce/about-registration-numbers.md
   - linkListType: how-to-guide
     links:
-    - text: Anulowanie subskrypcji
+    - text: Anuluj subskrypcję biznesową
       url: ../commerce/subscriptions/cancel-your-subscription.md
     - text: Opłaty za subskrypcję
       url: ../commerce/billing-and-payments/pay-for-your-subscription.md
@@ -69,11 +67,11 @@ landingContent:
       url: email/about-shared-mailboxes.md
   - linkListType: how-to-guide
     links:
-    - text: Konfigurowanie przesyłania dalej poczty e-mail w aplikacji Microsoft 365
+    - text: Konfigurowanie przekazywania wiadomości e-mail w Microsoft 365
       url: email/configure-email-forwarding.md
     - text: Tworzenie udostępnionej skrzynki pocztowej
       url: email/create-a-shared-mailbox.md
-    - text: Nadawanie uprawnień do skrzynki pocztowej innemu użytkownikowi
+    - text: Nadaj uprawnienia skrzynki pocztowej innemu użytkownikowi Microsoft 365
       url: add-users/give-mailbox-permissions-to-another-user.md
     - text: Zmienianie nazwy użytkownika i adresu e-mail
       url: add-users/change-a-user-name-and-email-address.md
@@ -81,17 +79,11 @@ landingContent:
       url: email/convert-user-mailbox-to-shared-mailbox.md
 - title: Użytkownicy, grupy i hasła
   linkLists:
-  - linkListType: overview
-    links:
-    - text: Porównanie grup
-      url: create-groups/compare-groups.md
   - linkListType: how-to-guide
     links:
-    - text: Dodawanie użytkowników i przypisywanie licencji w tym samym czasie
+    - text: Dodawanie użytkowników i jednoczesne przypisywanie licencji
       url: add-users/add-users.md
-    - text: Przypisywanie licencji do użytkowników
+    - text: Przypisywanie licencji Microsoft 365 użytkownikom
       url: manage/assign-licenses-to-users.md
-    - text: Określanie zasad wygasania haseł w organizacji
-      url: manage/set-password-expiration-policy.md
-    - text: Zezwalaj użytkownikom na logowanie się Outlook aplikacji mobilnych za pomocą kodu QR
+    - text: Zezwalaj użytkownikom na logowanie się do Outlook aplikacji mobilnych przy użyciu kodu QR
       url: manage/use-qr-code-download-outlook.md

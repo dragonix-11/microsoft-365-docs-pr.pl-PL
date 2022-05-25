@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Dowiedz się, gdzie można uzyskać dostęp do zestawu Windows i Office Deployment Lab Kit.
-ms.openlocfilehash: e90a52a23c6c79a3293d381c0503480abc90c2d7
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 2324501927b39d860b8f2b06e36a85585fa8d4be
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463170"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669216"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Zestaw laboratoryjny wdrażania systemu Windows i usługi Office 365
 
@@ -97,9 +97,15 @@ Szczegółowe przewodniki laboratoryjne przeprowadzą Cię przez wiele scenarius
 - BitLocker
 - Program antywirusowy Microsoft Defender
 - Windows Hello dla firm
+- Windows Defender Credential Guard       
+- Microsoft Defender Application Guard     
+- Windows Defender Exploit Guard             
+- Windows Defender kontrolka aplikacji   
+- Ochrona punktu końcowego w usłudze Microsoft Defender 
+
 
 > [!NOTE]
-> Użyj szerokopasmowego połączenia internetowego, aby pobrać tę zawartość i pozostawić około 30 minut na automatyczną aprowizację. Środowisko laboratoryjne wymaga co najmniej 16 GB dostępnej pamięci i 150 GB wolnego miejsca na dysku. W celu uzyskania optymalnej wydajności zaleca się użycie 32 GB dostępnej pamięci i 300 GB wolnego miejsca. Laboratorium Windows 10 wygasa 11 sierpnia 2022 r. Laboratorium Windows 11 wygasa 7 sierpnia 2022 r. Nowe wersje zostaną opublikowane przed wygaśnięciem.
+> Użyj szerokopasmowego połączenia internetowego, aby pobrać tę zawartość i pozostawić około 30 minut na automatyczną aprowizację. Środowisko laboratoryjne wymaga co najmniej 16 GB dostępnej pamięci i 150 GB wolnego miejsca na dysku. W celu uzyskania optymalnej wydajności zaleca się użycie 32 GB dostępnej pamięci i 300 GB wolnego miejsca. Oprogramowanie ewaluacyjne w tych laboratoriach wygasa 90–120 dni po aktywacji. Nowe wersje laboratoriów zostaną opublikowane w sierpniu 2022 r. 
 
 ## <a name="additional-guidance"></a>Dodatkowe wskazówki
 
