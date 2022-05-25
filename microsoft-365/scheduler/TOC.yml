@@ -12,5 +12,7 @@
       href: scheduler-using.md
     - name: Planowanie spotkań cyklicznych
       href: scheduler-recurring-meetings.md
+    - name: Organizator dla platformy Microsoft 365 — preferencje
+      href: scheduler-preferences.md
     - name: Organizator dla platformy Microsoft 365 — często zadawane pytania
       href: scheduler-faqs.md
