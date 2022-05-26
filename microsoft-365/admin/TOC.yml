@@ -14,13 +14,7 @@
         - name: Planowanie konfiguracji subskrypcji Microsoft 365 dla Firm
           href: setup/plan-your-setup.md
         - name: Rejestracja w subskrypcji Microsoft 365 dla Firm w warstwie Premium
-          items:
-            - name: Tworzenie konta
-              href: ../business/sign-up.md
-            - name: Konfigurowanie subskrypcji Microsoft 365 dla Firm w warstwie Premium za pomocą kreatora konfiguracji
-              href: ../business/set-up.md
-            - name: Subskrypcja Microsoft 365 dla Firm w warstwie Premium (klip wideo)
-              href: admin-overview/what-is-microsoft-365.md
+          href: ../business-premium/index.md
         - name: Rejestracja w subskrypcji Microsoft 365 dla Firm w warstwie Standard
           items:
             - name: Rejestracja w subskrypcji Microsoft 365 dla Firm w warstwie Standard
@@ -352,8 +346,6 @@
           href: manage/idle-session-timeout-web-apps.md
         - name: Włączanie nowoczesnego uwierzytelniania dla klientów pakietu Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Wymagania wstępne dotyczące ochrony danych
-          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: Zagrożenia wykryte przez program antywirusowy Microsoft Defender
           href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: Konfigurowanie funkcji zgodności
@@ -366,29 +358,7 @@
       items:
         - name: Metody ochrony danych urządzeń i aplikacji
           href: devices/choose-device-security.md
-        - name: Dokumentacja usługi Microsoft Intune
-          href: /mem/intune/
-        - name: Wyświetlaj i edytuj zasady i urządzenia
-          href: /microsoft-365/business-premium/m365bp-view-policies-and-devices
-        - name: Usuwanie firmowych danych
-          href: /microsoft-365/business-premium/m365bp-remove-company-data
-        - name: Resetuj urządzenia do ustawień fabrycznych
-          href: devices/reset-devices-to-factory-settings.md
-        - name: Mapuj funkcje ochrony na ustawienia usługi Intune
-          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings
-        - name: Stany urządzeń
-          href: devices/device-states.md
-        - name: Konfigurowanie ustawień ochrony urządzeń dla komputerów z systemem Windows 10
-          href: devices/protection-settings-for-windows-10-devices.md
         - name: Weryfikowanie ustawień w systemie Android lub iOS
-        - name: Autopilot
-          items:
-            - name: Tworzenie i edytowanie profilów rozwiązania AutoPilot
-              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles
-            - name: Tworzenie i edytowanie urządzeń rozwiązania AutoPilot
-              href: devices/create-and-edit-autopilot-devices.md
-        - name: Dokumentacja dotycząca subskrypcji Microsoft 365 dla Przedsiębiorstw
-          href: ../enterprise/index.yml
         - name: Funkcja Podstawowa mobilność i zabezpieczenia
           items:
             - name: Omówienie funkcji Podstawowa mobilność i zabezpieczenia
