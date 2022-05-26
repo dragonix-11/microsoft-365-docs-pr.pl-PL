@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 'Usuń licencję ze udostępnionej skrzynki pocztowej, aby przypisać ją innemu użytkownikowi lub zwrócić licencję, aby nie płacić za nią. '
 ms.date: 04/22/2022
-ms.openlocfilehash: 4445163281e403505612066285192b31adc44979
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5248c7fdb807a91ab2a9a7dfd44bdb375eb7d0f0
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091924"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678925"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Usuwanie licencji z udostępnionej skrzynki pocztowej
 
@@ -41,7 +41,6 @@ Udostępnione skrzynki pocztowe zwykle nie wymagają licencji. Postępuj zgodnie
 > - Udostępniona skrzynka pocztowa ma ponad 50 GB magazynu w użyciu.
 > - Udostępniona skrzynka pocztowa używa archiwizacji w miejscu.
 > - Udostępniona skrzynka pocztowa jest umieszczana w blokadzie sądowej.
-> - Udostępniona skrzynka pocztowa ma przypisaną licencję Microsoft 365 Defender.
 > 
 > Aby uzyskać instrukcje krok po kroku dotyczące przypisywania licencji, zobacz [Przypisywanie licencji do użytkowników](/microsoft-365/admin/manage/assign-licenses-to-users). 
 

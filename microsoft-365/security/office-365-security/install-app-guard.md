@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Uzyskaj najnowsze informacje na temat izolacji opartej na sprzęcie. Zapobiegaj obecnym i pojawiającym się atakom, takim jak luki w zabezpieczeniach lub złośliwe linki, zakłócając produktywność pracowników i bezpieczeństwo przedsiębiorstwa.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 17743c3aecc50724309ab17c9bcaf2ab10d8ab9b
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973250"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678991"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard dla Office dla administratorów
 
@@ -48,10 +48,14 @@ Aby dowiedzieć się więcej na temat Office kanałów aktualizacji, zobacz [Om�
 
 ### <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
 
-* Microsoft 365 E5 lub Zabezpieczenia platformy Microsoft 365 E5
+* Zabezpieczenia platformy Microsoft 365 E5
+* Microsoft 365 A5 dla wykładowców
+* Microsoft 365 A5 for Students
 
 > [!NOTE]
 > Aplikacje Microsoft 365 dla przedsiębiorstw z aktywacją komputera udostępnionego lub licencjonowaniem opartym na urządzeniach nie mają dostępu do funkcji Application Guard dla Office.
+>
+> plany licencjonowania dokumentów Sejf zezwalają na dostęp do funkcji Application Guard dla Office. Aby uzyskać więcej informacji, zobacz [Sejf Documents in Microsoft 365 E5/A5 (Dokumenty Sejf w Microsoft 365 E5/A5](/microsoft-365/security/office-365-security/safe-docs)).
 
 ## <a name="deploy-application-guard-for-office"></a>Wdrażanie funkcji Application Guard dla Office
 
@@ -69,7 +73,7 @@ Aby dowiedzieć się więcej na temat Office kanałów aktualizacji, zobacz [Om�
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. Wyszukaj **Microsoft Defender Application Guard w trybie zarządzanym**, zasady grupy w **konfiguracji\\ komputeraSzablony\\ administracyjne Windows Składniki\\ Microsoft Defender Application Guard**. Włącz te zasady, ustawiając wartość w obszarze Opcje jako **2** lub **3**, a następnie wybierając przycisk **OK** lub **Zastosuj**.
+3. Wyszukaj **Microsoft Defender Application Guard w trybie zarządzanym**, zasad grupy w **szablonach administracyjnych\\ konfiguracji\\komputera Windows Components\\ Microsoft Defender Application Guard**. Włącz te zasady, ustawiając wartość w obszarze Opcje jako **2** lub **3**, a następnie wybierając przycisk **OK** lub **Zastosuj**.
 
    :::image type="content" source="../../media/ag04-deploy.png" alt-text="Opcja włączenia grupy dostępności w trybie zarządzanym" lightbox="../../media/ag04-deploy.png":::
 
@@ -210,7 +214,7 @@ Możesz również skonfigurować Ochrona usługi Office 365 w usłudze Microsoft
 
 * Niezaufane pliki z udziałów sieciowych lub plików udostępnionych z OneDrive, OneDrive dla Firm lub SharePoint Online z innej organizacji otwarte jako tylko do odczytu w usłudze Application Guard. Użytkownicy mogą zapisać lokalną kopię takich plików, aby kontynuować pracę w kontenerze lub usunąć ochronę, aby bezpośrednio pracować z oryginalnym plikiem.
 
-* Pliki chronione przez usługę Information Rights Management (IRM) są domyślnie blokowane. Jeśli użytkownicy chcą otwierać takie pliki w widoku chronionym, administrator musi skonfigurować ustawienia zasad dla nieobsługiwanych typów plików dla organizacji.
+* Pliki chronione przez Rights Management informacji (IRM) są domyślnie blokowane. Jeśli użytkownicy chcą otwierać takie pliki w widoku chronionym, administrator musi skonfigurować ustawienia zasad dla nieobsługiwanych typów plików dla organizacji.
 
 * Wszelkie dostosowania Office aplikacji w usłudze Application Guard dla Office nie będą utrwalane po wylogowaniu się użytkownika i ponownym zalogowaniu się lub po ponownym uruchomieniu urządzenia.
 
@@ -237,7 +241,7 @@ Po spełnieniu tego heurystycznego Office utworzy wstępnie kontener usługi App
 
 * Wybranie linków internetowych (`http` lub `https`) nie powoduje otwarcia przeglądarki.
 * Domyślnym ustawieniem zasad ochrony przed kopiowaniem i wklejaniem jest włączenie dostępu schowka tylko do tekstu.
-* Domyślnym ustawieniem zasad ochrony nieobsługiwanych typów plików jest zablokowanie otwierania niezaufanych nieobsługiwanych typów plików, które są szyfrowane lub mają ustawioną usługę Zarządzanie prawami do informacji (IRM). Obejmuje to pliki zaszyfrowane przy użyciu etykiet poufności z usługi Microsoft Purview Information Protection.
+* Domyślnym ustawieniem zasad ochrony nieobsługiwanych typów plików jest zablokowanie otwierania niezaufanych nieobsługiwanych typów plików, które są szyfrowane lub mają ustawione Rights Management informacji (IRM). Obejmuje to pliki zaszyfrowane przy użyciu etykiet poufności z Microsoft Purview Information Protection.
 * Pliki CSV i HTML nie są obecnie obsługiwane.
 * Funkcja Application Guard dla Office obecnie nie współpracuje ze skompresowanymi woluminami NTFS. Jeśli występuje błąd "ERROR_VIRTUAL_DISK_LIMITATION", spróbuj usunąć skompresowanie woluminu.
 * Aktualizacje platformy .NET mogą powodować niepowodzenie otwierania plików w usłudze Application Guard. Aby obejść ten problem, użytkownicy mogą ponownie uruchomić swoje urządzenie po wystąpieniu tego błędu. Dowiedz się więcej o problemie w oknie [Otrzymywanie komunikatu o błędzie podczas próby otwarcia Windows Defender Application Guard lub Piaskownica systemu Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

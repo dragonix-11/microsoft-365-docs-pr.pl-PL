@@ -1,5 +1,5 @@
 ---
-title: Lista szablonów programu Microsoft Purview Compliance Manager
+title: lista szablonów programu Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Program Microsoft Purview Compliance Manager udostępnia szablony do kompilowania ocen, które są zgodne z krajowymi, regionalnymi i branżowymi przepisami, standardami i przepisami prawa.
-ms.openlocfilehash: cc07d7aa6fc385fc1066f35c8d20bbe7e2152b93
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: Microsoft Purview Compliance Manager udostępnia szablony do kompilowania ocen, które są zgodne z krajowymi, regionalnymi i branżowymi przepisami, standardami i przepisami prawa.
+ms.openlocfilehash: 1ee28bc4ef79e6565086ba087055b8e00a0fe034
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971500"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692788"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista szablonów Menedżera zgodności
 
@@ -35,7 +35,7 @@ ms.locfileid: "64971500"
 
 ## <a name="overview"></a>Omówienie
 
-[Program Microsoft Purview Compliance Manager](compliance-manager.md) udostępnia kompleksowy zestaw szablonów do tworzenia ocen. Te szablony mogą pomóc twojej organizacji w spełnieniu krajowych, regionalnych i branżowych wymagań regulujących zbieranie i wykorzystywanie danych.
+[Microsoft Purview Compliance Manager](compliance-manager.md) udostępnia kompleksowy zestaw szablonów do tworzenia ocen. Te szablony mogą pomóc twojej organizacji w spełnieniu krajowych, regionalnych i branżowych wymagań regulujących zbieranie i wykorzystywanie danych.
 
 Szablony są dodawane do Menedżera zgodności w miarę wdrażania nowych przepisów. Menedżer zgodności aktualizuje również swoje szablony po zmianie podstawowych przepisów ustawowych lub wykonawczych. Dowiedz się więcej na temat [przeglądania i akceptowania aktualizacji](compliance-manager-assessments.md#accept-updates-to-assessments).
 
@@ -376,7 +376,7 @@ Szablony wymienione poniżej mogą zostać zakupione przez Organizację.
 - EudraLex — zasady regulujące produkty lecznicze w Unii Europejskiej  
 - Europejska Agencja Bezpieczeństwa Sieci i Informacji (ENISA) — Cloud Computing Information Assurance Framework  
 - Finlandia — ustawa o ochronie danych  
-- Fińskie kryteria oceny bezpieczeństwa informacji Cloud Services
+- Fińskie kryteria oceny bezpieczeństwa informacji usług w chmurze
 - Francja — ustawa o ochronie danych  
 - Gruzja Ustawy o ochronie danych osobowych  
 - Niemcy — tekst z adnotacjami minimalnych wymagań dotyczących zarządzania ryzykiem  
@@ -397,6 +397,7 @@ Szablony wymienione poniżej mogą zostać zakupione przez Organizację.
 - Rozporządzenie o ochronie danych w Nigerii  
 - Oman — ustawa o transakcjach elektronicznych  
 - Qatar Cloud Security Policy
+- Katar National Information Assurance (NIA)
 - Rumunia — ustawa o ochronie danych 190/2018  
 - Rosja - Ustawa federalna 149-FZ w sprawie informacji, technologii informatycznych i bezpieczeństwa informacji
 - [Prawo federalne Federacji Rosyjskiej dotyczące danych osobowych](/compliance/regulatory/offering-russia-data-localization)  
@@ -407,11 +408,12 @@ Szablony wymienione poniżej mogą zostać zakupione przez Organizację.
 - Słowacka ustawa o ochronie danych osobowych  
 - Hiszpania — Nation Security Framework  
 - Szwajcaria — federalna ustawa o ochronie danych (FADP)  
-- Turcja — KVKK Ochrona danych osobowych 6698  
+- Turcja — KVKK Ochrona danych osobowych 6698
 - ZJEDNOCZONE EMIRATY ARABSKIE - ustawa dekretu federalnego w sprawie zwalczania przestępstw cybernetycznych  
 - ZJEDNOCZONE EMIRATY ARABSKIE — prawo federalne dotyczące transakcji elektronicznych i handlu
 - ZJEDNOCZONE EMIRATY ARABSKIE — ustawa federalna nr 2 z 2019 r. o korzystaniu z technologii informacyjno-komunikacyjnych (ICT) w dziedzinach zdrowia  
-- ZJEDNOCZONE EMIRATY ARABSKIE — NESA Information Assurance Standards  
+- ZJEDNOCZONE EMIRATY ARABSKIE — NESA Information Assurance Standards
+- Prawo o ochronie prywatności danych ze Zjednoczonych Emiratów Arabskich
 - ZASADY REGULACYJNE ZEA TRA — Internet rzeczy  
 - Ustawa dekretu federalnego ZEA regulująca sektor telekomunikacyjny  
 - Uganda — ustawa o ochronie danych i ochronie prywatności  

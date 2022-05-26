@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c5bdf0cb91853f993a2328b5f92f878de1101e76
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 2bc051baa8d2ac6df9e29f1679402e63c2774cac
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669633"
+ms.locfileid: "65679313"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
@@ -491,7 +491,6 @@ Następujący profil konfiguracji:
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "threatTypeSettings":[
          {
@@ -522,7 +521,6 @@ Poniższy profil konfiguracji zawiera wpisy dla wszystkich ustawień opisanych w
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,

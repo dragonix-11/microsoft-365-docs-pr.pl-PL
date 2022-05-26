@@ -1,7 +1,7 @@
 ---
-title: Ochrona punktu końcowego w usłudze Microsoft Defender laboratorium oceny
-description: Dowiedz się Ochrona punktu końcowego w usłudze Microsoft Defender o możliwościach ataków, uruchamiaj sym symetrie ataków i dowiedz się, jak zapobiega on, wykrywa i rekultywuje zagrożenia.
-keywords: ocenianie Ochrona punktu końcowego w usłudze Microsoft Defender, oceny, laboratorium, symulacyjnej, systemu Windows 10, windows Server 2019, laboratorium oceny
+title: laboratorium ewaluacji Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Dowiedz się więcej o Ochrona punktu końcowego w usłudze Microsoft Defender możliwościach, uruchamianiu symulacji ataków i zobacz, jak zapobiega ono zagrożeniom, wykrywa je i koryguje.
+keywords: ocena Ochrona punktu końcowego w usłudze Microsoft Defender, ocena, laboratorium, symulacja, Windows 10, Windows Server 2019, laboratorium ewaluacyjne
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,286 +16,308 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2b4c1cd9c37921fbb54633c0fc1bf2e42d308081
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3d13c3b126f4aae75ff775ac3170049dfc9c0a2e
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472886"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679445"
 ---
-# <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Ochrona punktu końcowego w usłudze Microsoft Defender laboratorium oceny
+# <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>laboratorium ewaluacji Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Przeprowadzenie kompleksowej oceny produktu zabezpieczającego może być złożonym procesem wymagającym uciążliwego środowiska i konfiguracji urządzenia przed przeprowadzeniem kompleksowej symyki ataków. Dodawanie do złożoności jest wyzwaniem śledzenia działań symulacyjnych, alertów i wyników podczas oceny.
+Przeprowadzenie kompleksowej oceny produktu w zakresie zabezpieczeń może być złożonym procesem wymagającym skomplikowanego środowiska i konfiguracji urządzenia, zanim będzie można faktycznie przeprowadzić kompleksową symulację ataku. Zwiększenie złożoności to wyzwanie związane ze śledzeniem sytuacji, w której działania symulacji, alerty i wyniki są odzwierciedlane podczas oceny.
 
-Laboratorium oceny Ochrona punktu końcowego w usłudze Microsoft Defender zostało zaprojektowane w taki sposób, aby wyeliminować złożoność konfiguracji urządzenia i środowiska, dzięki czemu można skoncentrować się na ocenianiu możliwości platformy, uruchomieniu symulacji oraz prowadzeniu funkcji zapobiegania, wykrywaniu i rozwiązywaniu problemów w działaniu.
+Laboratorium oceny Ochrona punktu końcowego w usłudze Microsoft Defender ma na celu wyeliminowanie złożoności konfiguracji urządzenia i środowiska, dzięki czemu można skoncentrować się na ocenie możliwości platformy, uruchamianiu symulacji oraz wyświetlaniu funkcji zapobiegania, wykrywania i korygowania w działaniu.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUM]
 
-Uproszczona konfiguracja pozwala skupić się na prowadzeniu własnych scenariuszy testowych i wstępnie wykonanych symulowań, aby sprawdzić, jak działa program Defender dla punktu końcowego.
+Dzięki uproszczonemu środowisku konfiguracji możesz skupić się na uruchamianiu własnych scenariuszy testowych i wstępnie utworzonych symulacji, aby zobaczyć, jak działa usługa Defender for Endpoint.
 
-Będziesz mieć pełny dostęp do zaawansowanych możliwości platformy, takich jak zautomatyzowane badania, zaawansowane wyszukiwania i analiza zagrożeń, co pozwala przetestować kompleksowy stos ochrony, który oferuje program Defender for Endpoint.
+Będziesz mieć pełny dostęp do zaawansowanych możliwości platformy, takich jak zautomatyzowane badania, zaawansowane wyszukiwanie zagrożeń i analiza zagrożeń, co pozwala przetestować kompleksowy stos ochrony, który oferuje usługa Defender for Endpoint.
 
-Możesz dodać urządzenia Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 i Linux (Ubuntu), które są wstępnie skonfigurowane do zainstalowania najnowszych wersji systemu operacyjnego i odpowiednich składników zabezpieczeń, Office 2019 Standard.
+Możesz dodać urządzenia Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 i Linux (Ubuntu), które są wstępnie skonfigurowane, aby mieć zainstalowane najnowsze wersje systemu operacyjnego i odpowiednie składniki zabezpieczeń, a także Office 2019 Standard.
 
-Możesz także instalować zagrożenie. Program Defender for Endpoint współpracuje z wiodącymi w branży platformami do symulowania zagrożeń, aby ułatwić testowanie funkcji programu Defender dla punktu końcowego bez konieczności opuszczania portalu.
+Można również zainstalować symulatory zagrożeń. Usługa Defender for Endpoint nawiązała współpracę z wiodącymi w branży platformami symulacji zagrożeń, które ułatwiają testowanie możliwości usługi Defender for Endpoint bez konieczności opuszczania portalu.
 
-Zainstaluj preferowaną aplikację, instaluj scenariusze w laboratorium oceny i błyskawicznie sprawdzaj, jak działa platforma — wszystko to jest łatwo dostępne bez dodatkowych kosztów. Zapewnia również wygodny dostęp do szerokiej gamy symulacyjnych, które można uzyskać do wykazu symulacyjnych i z nich korzystać.
+Zainstaluj preferowany symulator, uruchom scenariusze w laboratorium ewaluacyjnym i natychmiast zobacz, jak działa platforma — wszystko to jest wygodnie dostępne bez dodatkowych kosztów. Będziesz mieć również wygodny dostęp do szerokiej gamy symulacji, do których można uzyskiwać dostęp i uruchamiać z katalogu symulacji.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Musisz spełnić wymagania licencyjne lub uzyskać dostęp [](minimum-requirements.md#licensing-requirements) do wersji próbnej usługi Ochrona punktu końcowego w usłudze Microsoft Defender dostępu do laboratorium oceny.
+Aby uzyskać dostęp do laboratorium oceny, musisz spełnić [wymagania licencyjne](minimum-requirements.md#licensing-requirements) lub mieć dostęp próbny do Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-Uprawnienia do zarządzania **ustawieniami zabezpieczeń są** wymagane do:
+Musisz mieć uprawnienia **Do zarządzania ustawieniami zabezpieczeń** :
 
 - Tworzenie laboratorium
 - Tworzenie urządzeń
 - Resetuj hasło
-- Tworzenie symulacyjnych
+- Tworzenie symulacji
 
-Jeśli włączono kontrolkę dostępu opartą na rolach (RBAC, Role Based Access Control) i utworzono co najmniej jedną grupę komputerową, użytkownicy muszą mieć dostęp do wszystkich grup komputerów.
+Jeśli włączono kontrolę dostępu opartą na rolach (RBAC) i utworzono co najmniej jedną grupę maszyn, użytkownicy muszą mieć dostęp do wszystkich grup maszyn.
 
 Aby uzyskać więcej informacji, zobacz [Tworzenie ról i zarządzanie nimi](user-roles.md).
 
-Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
+Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
 
 ## <a name="get-started-with-the-lab"></a>Wprowadzenie z laboratorium
 
-Dostęp do laboratorium możesz uzyskać z menu. W menu nawigacji wybierz pozycję **Oceny i samouczki > laboratorium oceny**.
+Dostęp do laboratorium można uzyskać z menu. W menu nawigacji wybierz pozycję **Ocena i samouczki > laboratorium ewaluacji**.
 
 > [!NOTE]
 >
 > - W zależności od wybranego typu struktury środowiska urządzenia będą dostępne przez określoną liczbę godzin od dnia aktywacji.
-> - Każde środowisko jest zapewniane za pomocą ograniczonego zestawu urządzeń testowych. Gdy wszystkie urządzenia z obsługi administracyjnej zostały już użyte i usunięte, możesz zażądać kolejnych urządzeń.
-> - Prośbę o zasoby laboratoryjnych możesz prosić raz w miesiącu.
+> - Każde środowisko jest aprowizowane z ograniczonym zestawem urządzeń testowych. Po użyciu aprowizowanych urządzeń i usunięciu ich można zażądać większej liczby urządzeń.
+> - Zasoby laboratorium można żądać raz w miesiącu.
 
-Masz już laboratorium? Pamiętaj, aby włączyć nowe zagrożenia i mieć aktywne urządzenia.
+Masz już laboratorium? Pamiętaj, aby włączyć nowe symulatory zagrożeń i mieć aktywne urządzenia.
 
-## <a name="setup-the-evaluation-lab"></a>Konfigurowanie laboratorium oceny
+## <a name="setup-the-evaluation-lab"></a>Konfigurowanie laboratorium ewaluacyjnego
 
-1. W okienku nawigacji wybierz pozycję **Laboratorium & oceny** \> **, a** następnie wybierz pozycję **Laboratorium konfiguracji**.
+1. W okienku nawigacji wybierz pozycję **Ocena & samouczków** \> **Laboratorium ewaluacji**, a następnie wybierz pozycję **Laboratorium konfiguracji**.
 
-   :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Strona powitania laboratorium oceny" lightbox="../../media/evaluationtutormenu.png":::
+   :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Strona powitalna laboratorium ewaluacji" lightbox="../../media/evaluationtutormenu.png":::
 
-2. W zależności od potrzeb oceny, możesz skonfigurować środowisko z mniejszą liczbą urządzeń przez dłuższy czas lub z większą liczbą urządzeń przez krótszy czas. Wybierz preferowaną konfigurację laboratorium, a następnie wybierz pozycję **Dalej**.
+2. W zależności od potrzeb ewaluacyjnych można skonfigurować środowisko z mniejszą liczbą urządzeń przez dłuższy okres lub więcej urządzeń przez krótszy okres. Wybierz preferowaną konfigurację laboratorium, a następnie wybierz pozycję **Dalej**.
 
     :::image type="content" source="images/lab-creation-page.png" alt-text="Opcje konfiguracji laboratorium" lightbox="images/lab-creation-page.png":::
 
-3. (Opcjonalnie) Możesz zainstalować zagrożenie w laboratorium.
+3. (Opcjonalnie) W laboratorium można zainstalować symulatory zagrożeń.
 
-    :::image type="content" source="images/install-agent.png" alt-text="Strona zainstaluj agenta produktu" lightbox="images/install-agent.png":::
+    :::image type="content" source="images/install-agent.png" alt-text="Strona agenta symulatorów instalacji" lightbox="images/install-agent.png":::
 
    > [!IMPORTANT]
-   > Najpierw musisz zaakceptować postanowienia dotyczące udostępniania informacji i udzielić na nie zgody.
+   > Najpierw musisz zaakceptować i wyrazić zgodę na postanowienia i instrukcje dotyczące udostępniania informacji.
 
-4. Wybierz agenta symulacyjnego zagrożeń, który chcesz użyć, i wprowadź swoje dane. Możesz także zainstalować oprogramowanie zagrożeń w późniejszym czasie. Jeśli zdecydujesz się zainstalować agentów symulacyjnych zagrożeń podczas konfigurowania laboratorium, zyskasz korzyść z wygodnego instalowania ich na dodajenych urządzeniach.
+4. Wybierz agenta symulacji zagrożeń, którego chcesz użyć, i wprowadź swoje szczegóły. Możesz również zainstalować symulatory zagrożeń w późniejszym czasie. Jeśli zdecydujesz się zainstalować agentów symulacji zagrożeń podczas instalacji laboratorium, skorzystasz z zalet ich wygodnej instalacji na dodanych urządzeniach.
 
    :::image type="content" source="images/lab-setup-summary.png" alt-text="Strona podsumowania" lightbox="images/lab-setup-summary.png":::
 
-5. Przejrzyj podsumowanie i wybierz pozycję **Laboratorium instalacyjne**.
+5. Przejrzyj podsumowanie i wybierz pozycję **Laboratorium konfiguracji**.
 
-Po zakończeniu procesu konfiguracji laboratorium można dodawać urządzenia i uruchamiać sym symulacyjne.
+Po zakończeniu procesu konfiguracji laboratorium można dodawać urządzenia i uruchamiać symulacje.
 
-## <a name="add-devices"></a>Dodaj urządzenia
+## <a name="add-devices"></a>Dodawanie urządzeń
 
-Po dodaniu urządzenia do środowiska program Defender for Endpoint konfiguruje prawidłowo skonfigurowane urządzenie ze szczegółami połączenia. Możesz dodać Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 i Linux (Ubuntu).
+Po dodaniu urządzenia do środowiska usługa Defender for Endpoint konfiguruje dobrze skonfigurowane urządzenie ze szczegółami połączenia. Możesz dodać Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 i Linux (Ubuntu).
 
-Urządzenie zostanie skonfigurowane z najnowszą wersją systemu operacyjnego i programu Office 2019 Standard, a także z innymi aplikacjami, takimi jak Java, Python i SysIntenals.
+Urządzenie zostanie skonfigurowane z najbardziej aktualną wersją systemu operacyjnego i Office 2019 Standard, a także innymi aplikacjami, takimi jak Java, Python i SysIntenals.
 
-Jeśli podczas konfiguracji laboratorium dodasz zagrożenie, na wszystkich urządzeniach zostanie zainstalowany agent ochrony przed zagrożeniami.
+Jeśli podczas instalacji laboratorium wybrano opcję dodania symulatora zagrożeń, na dodanych urządzeniach na wszystkich urządzeniach zostanie zainstalowany agent symulatora zagrożeń.
 
-Urządzenie zostanie automatycznie dołączona do dzierżawy z włączonymi zalecanymi Windows zabezpieczeń i w trybie inspekcji — bez żadnych starań, po Twojej stronie.
+Urządzenie zostanie automatycznie dołączone do dzierżawy z zalecanymi Windows składników zabezpieczeń włączonych i w trybie inspekcji — bez wysiłku po twojej stronie.
 
-Na urządzeniach testowych są wstępnie skonfigurowane następujące składniki zabezpieczeń:
+Następujące składniki zabezpieczeń są wstępnie skonfigurowane na urządzeniach testowych:
 
 - [Zmniejszanie obszaru podatnego na ataki](attack-surface-reduction.md)
-- [Blokuj na pierwszy rzut oka](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [Blokuj od pierwszego wejrzenia](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 - [Kontrolowany dostęp do folderu](controlled-folders.md)
-- [Exploit Protection](enable-exploit-protection.md)
+- [Ochrona przed wykorzystywaniem](enable-exploit-protection.md)
 - [Ochrona sieci](network-protection.md)
 - [Potencjalnie niechciane wykrywanie aplikacji](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [Ochrona w chmurze](cloud-protection-microsoft-defender-antivirus.md)
+- [Ochrona dostarczana przez chmurę](cloud-protection-microsoft-defender-antivirus.md)
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Program antywirusowy Microsoft Defender będą w trybie inspekcji (nie będą w trybie inspekcji). Jeśli Program antywirusowy Microsoft Defender blokuje uruchamianie symulacyjnej pracy, możesz wyłączyć ochronę w czasie rzeczywistym na urządzeniu za pomocą Zabezpieczenia Windows. Aby uzyskać więcej informacji, [zobacz Konfigurowanie zawsze na czas ochrony](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Program antywirusowy Microsoft Defender będzie włączone (nie w trybie inspekcji). Jeśli Program antywirusowy Microsoft Defender uniemożliwia uruchamianie symulacji, możesz wyłączyć ochronę urządzenia w czasie rzeczywistym za pośrednictwem Zabezpieczenia Windows. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zawsze włączonej ochrony](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-Ustawienia automatycznego badania zależą od ustawień dzierżawy. Domyślnie będzie ona skonfigurowana jako półautoma korzystająca z półautomału. Aby uzyskać więcej informacji, zobacz [Omówienie zautomatyzowanych badań](automated-investigations.md).
+Ustawienia zautomatyzowanego badania będą zależeć od ustawień dzierżawy. Zostanie on domyślnie skonfigurowany jako półautomatyczny. Aby uzyskać więcej informacji, zobacz [Omówienie zautomatyzowanych badań](automated-investigations.md).
 
 > [!NOTE]
-> Połączenie z urządzeniami testowym odbywa się za pomocą protokołu RDP. Upewnij się, że ustawienia zapory zezwalają na połączenia RDP.
+> Połączenie z urządzeniami testowymi odbywa się przy użyciu protokołu RDP. Upewnij się, że ustawienia zapory zezwalają na połączenia RDP.
 
-1. Na pulpicie nawigacyjnym wybierz **pozycję Dodaj urządzenie**.
+1. Na pulpicie nawigacyjnym wybierz pozycję **Dodaj urządzenie**.
 
-2. Wybierz typ urządzenia do dodania. Możesz dodać dodatki Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 i Linux (Ubuntu).
+2. Wybierz typ urządzenia do dodania. Możesz dodać Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 i Linux (Ubuntu).
 
-   :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="Ustawienia laboratorium z opcjami urządzenia" lightbox="../../media/add-machine-optionsnew.png":::
+   :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="Konfiguracja laboratorium z opcjami urządzenia" lightbox="../../media/add-machine-optionsnew.png":::
 
    > [!NOTE]
-   > Jeśli podczas tworzenia urządzenia coś poszło nie tak, zostaniesz o tym powiadomiony(-a) i konieczne będzie przesłanie nowego żądania. Jeśli tworzenie urządzenia zakończy się niepowodzeniem, nie będzie ono liczone względem ogólnego dozwolonego przydziału.
+   > Jeśli coś pójdzie nie tak z procesem tworzenia urządzenia, otrzymasz powiadomienie i będziesz musiał przesłać nowe żądanie. Jeśli tworzenie urządzenia zakończy się niepowodzeniem, nie zostanie ono zliczone do ogólnego dozwolonego limitu przydziału.
 
-3. Zostaną wyświetlone szczegóły połączenia. Wybierz **pozycję Kopiuj** , aby zapisać hasło dla urządzenia.
+3. Zostaną wyświetlone szczegóły połączenia. Wybierz pozycję **Kopiuj** , aby zapisać hasło dla urządzenia.
 
    > [!NOTE]
    > Hasło jest wyświetlane tylko raz. Pamiętaj, aby zapisać go do późniejszego użycia.
 
     :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="Urządzenie dodane ze szczegółami połączenia" lightbox="../../media/add-machine-eval-lab-new.png":::
 
-4. Rozpocznie się konfigurowanie urządzenia. Może to potrwać do około 30 minut.
+4. Rozpoczyna się konfigurowanie urządzenia. Może to potrwać do około 30 minut.
 
-5. Sprawdź stan urządzeń testowych, poziomy ryzyka i ekspozycji oraz stan instalacji, wybierając **kartę** Urządzenia.
+5. Zobacz stan urządzeń testowych, poziomy ryzyka i narażenia oraz stan instalacji symulatora, wybierając kartę **Urządzenia** .
 
    :::image type="content" source="images/machines-tab.png" alt-text="Karta Urządzenia" lightbox="images/machines-tab.png":::
     
 
    > [!TIP]
-   > W kolumnie **Stan** gry możesz umieścić wskaźnik myszy na ikonie informacji, aby sprawdzić stan instalacji agenta.
+   > W kolumnie **Stan symulatora** możesz zatrzymać kursor na ikonie informacji, aby poznać stan instalacji agenta.
 
 
-## <a name="request-for-more-devices"></a>Poproś o więcej urządzeń
+## <a name="add-a-domain-controller-preview"></a>Dodawanie kontrolera domeny (wersja zapoznawcza)
 
-Gdy wszystkie istniejące urządzenia są używane i usuwane, możesz zażądać większej liczby urządzeń. Prośbę o zasoby laboratoryjnych możesz prosić raz w miesiącu.
+> [!IMPORTANT]
+> Niektóre informacje odnoszą się do wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
-1. Na pulpicie nawigacyjnym laboratorium oceny wybierz pozycję **Poproś o więcej urządzeń**.
+Dodaj kontroler domeny do uruchamiania złożonych scenariuszy, takich jak przenoszenie boczne i ataki wieloetapowe na wielu urządzeniach.
 
-   :::image type="content" source="images/request-more-devices.png" alt-text="Opcja Zażądaj więcej urządzeń" lightbox="images/request-more-devices.png":::
+
+>[!NOTE]
+>Obsługa domeny jest dostępna tylko w portalu Microsoft 365 Defender (security.microsoft.com).
+
+1. Na pulpicie nawigacyjnym wybierz pozycję **Dodaj urządzenie**.
+
+2. Wybierz **pozycję Windows Server 2019**, a następnie wybierz pozycję **Ustaw jako kontroler domeny**. 
+
+3. Po aprowizowaniu kontrolera domeny będzie można tworzyć urządzenia przyłączone do domeny, klikając pozycję **Dodaj urządzenie**. Następnie wybierz pozycję Windows 10/Windows 11 i wybierz pozycję **Dołącz do domeny**. 
+
+>[!NOTE]
+>Jednocześnie może istnieć tylko jeden kontroler domeny. Urządzenie kontrolera domeny pozostanie aktywne tak długo, jak długo będzie z nim połączone urządzenie na żywo.
+
+
+
+## <a name="request-for-more-devices"></a>Żądanie większej liczby urządzeń
+
+Gdy wszystkie istniejące urządzenia są używane i usuwane, możesz poprosić o więcej urządzeń. Zasoby laboratorium można żądać raz w miesiącu.
+
+1. Na pulpicie nawigacyjnym laboratorium ewaluacyjnego wybierz pozycję **Zażądaj większej liczby urządzeń**.
+
+   :::image type="content" source="images/request-more-devices.png" alt-text="Opcja żądania większej liczby urządzeń" lightbox="images/request-more-devices.png":::
 
 2. Wybierz konfigurację.
 3. Prześlij żądanie.
 
-Po pomyślnym przesłaniu żądania zostanie wyświetlony zielony transparent z potwierdzeniem i data ostatniego przesłania.
+Po pomyślnym przesłaniu żądania zobaczysz zielony baner potwierdzający i datę ostatniego przesłania.
 
-Stan żądania można znaleźć na karcie Akcje użytkownika, która  zostanie zatwierdzona w ciągu kilku godzin.
+Stan żądania można znaleźć na karcie **Akcje użytkownika** , która zostanie zatwierdzona w ciągu kilku godzin.
 
-Po zatwierdzeniu żądane urządzenia zostaną dodane do Twojej zestawu laboratoryjnych i będzie można utworzyć więcej urządzeń.
+Po zatwierdzeniu żądane urządzenia zostaną dodane do konfiguracji laboratorium i będzie można utworzyć więcej urządzeń.
 
 > [!TIP]
-> Aby wyelibować więcej z laboratorium, zapoznaj się z biblioteką naszych symulacji.
+> Aby uzyskać więcej informacji z laboratorium, nie zapomnij zapoznać się z naszą biblioteką symulacji.
 
 ## <a name="simulate-attack-scenarios"></a>Symulowanie scenariuszy ataków
 
-Skorzystaj z urządzeń testowych, aby uruchamiać własne symulacje ataków przez połączenie się z nimi.
+Użyj urządzeń testowych, aby uruchamiać własne symulacje ataków, łącząc się z nimi.
 
 Scenariusze ataków można symulować przy użyciu:
 
-- Scenariusze ataków ["Zrób to samodzielnie"](https://security.microsoft.com/tutorials/all)
-- Zagrożenie
+- [Scenariusze ataku "Zrób to sam"](https://security.microsoft.com/tutorials/all)
+- Symulatory zagrożeń
 
-Możesz również korzystać z wyszukiwania [zaawansowanego w](advanced-hunting-overview.md) celu wyszukiwania danych i [analizy zagrożeń](threat-analytics.md) w celu wyświetlania raportów o wyłaniających się zagrożeniach.
+Zaawansowane [wyszukiwanie zagrożeń](advanced-hunting-overview.md) umożliwia również wykonywanie zapytań dotyczących danych i [analizy zagrożeń](threat-analytics.md) w celu wyświetlania raportów dotyczących pojawiających się zagrożeń.
 
-### <a name="do-it-yourself-attack-scenarios"></a>Scenariusze ataków samodzielnie
+### <a name="do-it-yourself-attack-scenarios"></a>Scenariusze ataków typu "zrób to sam"
 
-Jeśli szukasz wstępnie wykonanej symulacyjnej sytuacji, możesz użyć naszych [scenariuszy ataków "Zrób to samodzielnie"](https://security.microsoft.com/tutorials/all). Te skrypty są bezpieczne, udokumentowane i łatwe w użyciu. Te scenariusze będą odzwierciedlać funkcje programu Defender dla punktu końcowego i będą przechodzić przez środowisko badania.
+Jeśli szukasz wstępnie wykonanej symulacji, możesz użyć [scenariuszy ataku "Zrób to sam"](https://security.microsoft.com/tutorials/all). Te skrypty są bezpieczne, udokumentowane i łatwe w użyciu. Te scenariusze będą odzwierciedlać możliwości usługi Defender for Endpoint i przeprowadzą Cię przez środowisko badania.
 
 > [!NOTE]
-> Połączenie z urządzeniami testowym odbywa się za pomocą protokołu RDP. Upewnij się, że ustawienia zapory zezwalają na połączenia RDP.
+> Połączenie z urządzeniami testowymi odbywa się przy użyciu protokołu RDP. Upewnij się, że ustawienia zapory zezwalają na połączenia RDP.
 
-1. Połączenie urządzenia i uruchomić symulację ataków, wybierając pozycję **Połączenie**.
+1. Połączenie do urządzenia i uruchom symulację ataku, wybierając **pozycję Połączenie**.
 
     :::image type="content" source="images/test-machine-table.png" alt-text="Przycisk Połączenie dla urządzeń testowych" lightbox="images/test-machine-table.png":::
 
 
    :::image type="content" source="images/remote-connection.png" alt-text="Ekran połączenia pulpitu zdalnego" lightbox="images/remote-connection.png":::
 
-    Dla **urządzeń z systemem Linux**: musisz użyć lokalnego klienta SSH i podanego polecenia. 
+    W przypadku **urządzeń z systemem Linux**: należy użyć lokalnego klienta SSH i dostarczonego polecenia. 
 
 
     > [!NOTE]
-    > Jeśli podczas początkowej konfiguracji nie zapisano kopii hasła, można je zresetować, wybierając z menu polecenie **Resetuj** hasło:
+    > Jeśli nie masz kopii hasła zapisanej podczas początkowej konfiguracji, możesz zresetować hasło, wybierając pozycję **Resetuj hasło** z menu:
     >
     > :::image type="content" source="images/reset-password-test-machine.png" alt-text="Opcja Resetuj hasło" lightbox="images/reset-password-test-machine.png":::
     >
-    > Urządzenie zmieni stan na "Wykonywanie resetowania hasła". Za kilka minut zostanie ci przedstawione nowe hasło.
+    > Urządzenie zmieni jego stan na "Wykonywanie resetowania hasła", a następnie za kilka minut zostanie wyświetlone nowe hasło.
 
-3. Wprowadź hasło, które było wyświetlane podczas tworzenia urządzenia.
+3. Wprowadź hasło, które zostało wyświetlone podczas kroku tworzenia urządzenia.
 
-   :::image type="content" source="images/enter-password.png" alt-text="Ekran, na którym są wprowadzane poświadczenia" lightbox="images/enter-password.png":::
+   :::image type="content" source="images/enter-password.png" alt-text="Ekran, na którym wprowadzasz poświadczenia" lightbox="images/enter-password.png":::
 
-4. Uruchom na urządzeniu symulacje ataków samodzielnie.
+4. Uruchom symulacje ataków samodzielnych na urządzeniu.
 
-### <a name="threat-simulator-scenarios"></a>Scenariusze dotyczące zagrożeń
+### <a name="threat-simulator-scenarios"></a>Scenariusze symulatora zagrożeń
 
-Jeśli podczas konfigurowania laboratorium wybrano opcję zainstalowania dowolnej z obsługiwanych zagrożeń, można uruchomić wbudowane symulacje na urządzeniach laboratoryjnych oceny.
+Jeśli podczas instalacji laboratorium wybrano instalację dowolnego z obsługiwanych symulatorów zagrożeń, możesz uruchomić wbudowane symulacje na urządzeniach laboratorium ewaluacyjnego.
 
-Uruchomienie symulacyjnych zagrożeń za pomocą platform innych firm to dobry sposób na ocenę Ochrona punktu końcowego w usłudze Microsoft Defender możliwości w środowisku laboratoryjnym.
+Uruchamianie symulacji zagrożeń przy użyciu platform innych firm to dobry sposób oceny Ochrona punktu końcowego w usłudze Microsoft Defender możliwości w granicach środowiska laboratoryjnego.
 
 > [!NOTE]
 >
-> Przed uruchomieniem symulacyjnych upewnij się, że są spełnione następujące wymagania:
+> Przed uruchomieniem symulacji upewnij się, że zostały spełnione następujące wymagania:
 >
-> - Urządzenia muszą zostać dodane do laboratorium oceny
-> - Zagrożenie musi być zainstalowane w laboratorium oceny
+> - Urządzenia muszą zostać dodane do laboratorium ewaluacji
+> - Symulatory zagrożeń muszą być zainstalowane w laboratorium ewaluacyjnym
 
 1. W portalu wybierz pozycję **Utwórz symulację**.
 
-2. Wybierz zagrożenie.
+2. Wybierz symulator zagrożeń.
 
-   :::image type="content" source="images/select-simulator.png" alt-text="Wybór zagrożeń" lightbox="images/select-simulator.png":::
+   :::image type="content" source="images/select-simulator.png" alt-text="Wybór symulatora zagrożeń" lightbox="images/select-simulator.png":::
 
-3. Wybierz symulacyjne lub przejrzyj galerię symulacyjnej, aby przejrzeć dostępne symulacyjne wyniki.
+3. Wybierz symulację lub przejrzyj galerię symulacji, aby przejrzeć dostępne symulacje.
 
-    Do galerii tych symulacyjnych można uzyskać dostęp z:
-    - Główny pulpit nawigacyjny oceny na **kafelku Podglądy lub**
-    - Przechodząc z okienka nawigacji Nawigowanie **po samouczkach** \> & oceny i samouczków **, a** następnie wybierz katalog **Symulacje**.
+    Możesz przejść do galerii symulacji z:
+    - Główny pulpit nawigacyjny oceny na kafelku **Omówienie symulacji** lub
+    - Przechodząc z okienka nawigacji **Ewaluacja i samouczki** \> **symulacji & samouczków**, wybierz pozycję **Wykaz symulacji**.
 
 4. Wybierz urządzenia, na których chcesz uruchomić symulację.
 
-5. Wybierz pozycję **Create simulation (Utwórz symulację**).
+5. Wybierz pozycję **Utwórz symulację**.
 
-6. Aby wyświetlić postęp symulatora, wybierz **kartę Symulatory** . Wyświetlanie stanu symulacyjnego, aktywnych alertów i innych szczegółów.
+6. Wyświetl postęp symulacji, wybierając kartę **Symulacje** . Wyświetl stan symulacji, aktywne alerty i inne szczegóły.
 
    :::image type="content" source="images/simulations-tab.png" alt-text="Karta Symulacje" lightbox="images/simulations-tab.png":::
 
-Po uruchomieniu symulacji zachęcamy do omiń pasek postępu laboratorium i eksplorowanie Ochrona punktu końcowego w usłudze Microsoft Defender wyzwoleniu automatycznego badania **i rozwiązywania problemów**. Zapoznaj się z dowodami zebranymi i przeanalizowania przez tę funkcję.
+Po uruchomieniu symulacji zachęcamy do przejścia przez pasek postępu laboratorium i zbadania **, Ochrona punktu końcowego w usłudze Microsoft Defender wyzwoliły zautomatyzowane badanie i korygowanie**. Zapoznaj się z dowodami zebranymi i przeanalizowanymi przez funkcję.
 
-Szukanie dowodów na ataki przez zaawansowane szukanie przy użyciu zaawansowanego języka zapytań i nieprzetworzonej telemetrii oraz sprawdzanie niektórych zagrożeń na całym świecie udokumentowanych w temacie Analiza zagrożeń.
+Wyszukiwanie dowodów ataków dzięki zaawansowanemu wyszukiwaniu przy użyciu zaawansowanego języka zapytań i nieprzetworzonych danych telemetrycznych oraz zapoznanie się z niektórymi zagrożeniami na całym świecie udokumentowane w analizie zagrożeń.
 
-## <a name="simulation-gallery"></a>Galeria symulacyjna
+## <a name="simulation-gallery"></a>Galeria symulacji
 
-Ochrona punktu końcowego w usłudze Microsoft Defender współpracuje z różnymi platformami symulacyjnych zagrożeń, aby zapewnić Ci wygodny dostęp do testowania możliwości platformy bezpośrednio z poziomu portalu.
+Ochrona punktu końcowego w usłudze Microsoft Defender nawiązała współpracę z różnymi platformami symulacji zagrożeń, aby zapewnić wygodny dostęp do testowania możliwości platformy bezpośrednio z poziomu portalu.
 
-Wyświetl wszystkie dostępne czasy symulacyjne, przechodząc do wykazu  **symulacyjne** \> i samouczki **z**  menu.
+Wyświetl wszystkie dostępne symulacje, przechodząc do **katalogu Symulacje** **i samouczki Symulacje** \> z menu.
 
-W wykazie zamieszczono listę obsługiwanych agentów symulacyjnych zagrożeń innych firm oraz informacje o konkretnych typach symulacyjnych wraz ze szczegółowymi opisami.
+Lista obsługiwanych agentów symulacji zagrożeń innych firm jest wyświetlana, a w wykazie znajdują się określone typy symulacji wraz ze szczegółowymi opisami.
 
-Każdą dostępną symululę można łatwo uruchomić bezpośrednio z wykazu.
+Możesz wygodnie uruchomić dowolną dostępną symulację bezpośrednio z katalogu.
 
-:::image type="content" source="images/simulations-catalog.png" alt-text="Katalog symulowań" lightbox="images/simulations-catalog.png":::
+:::image type="content" source="images/simulations-catalog.png" alt-text="Wykaz symulacji" lightbox="images/simulations-catalog.png":::
 
-Każda symulacyjna zawiera szczegółowy opis scenariusza ataków, a także odwołania, takie jak użyte techniki ataków MITRE i przykładowe uruchomione zaawansowane zapytania myśliwskie.
+Każda symulacja zawiera szczegółowy opis scenariusza ataku i odwołania, takie jak używane techniki ataków MITRE i przykładowe uruchamiane zaawansowane zapytania wyszukiwania zagrożeń.
 
 **Przykłady:**
 
-:::image type="content" source="images/simulation-details-aiq.png" alt-text="Przykład okienka szczegółów opisu symulacyjnego na temat metod utrwalania" lightbox="images/simulation-details-aiq.png":::
+:::image type="content" source="images/simulation-details-aiq.png" alt-text="Przykład okienka szczegółów opisu symulacji dla metod trwałości" lightbox="images/simulation-details-aiq.png":::
 
-:::image type="content" source="images/simulation-details-sb.png" alt-text="Szczegóły opisu symulacyjnego dla aplikacji APT29" lightbox="images/simulation-details-sb.png":::
+:::image type="content" source="images/simulation-details-sb.png" alt-text="Szczegóły opisu symulacji dla APT29" lightbox="images/simulation-details-sb.png":::
 
-## <a name="evaluation-report"></a>Raport oceny
+## <a name="evaluation-report"></a>Raport ewaluacji
 
-Raporty laboratorium podsumowują wyniki symulacyjnych przeprowadzonych na urządzeniach.
+Raporty laboratorium podsumowują wyniki symulacji przeprowadzonych na urządzeniach.
 
-:::image type="content" source="images/eval-report.png" alt-text="Raport oceny" lightbox="images/eval-report.png":::
+:::image type="content" source="images/eval-report.png" alt-text="Raport ewaluacji" lightbox="images/eval-report.png":::
 
-W skrócie można szybko wyświetlić:
+Szybko zobaczysz następujące elementy:
 
 - Zdarzenia, które zostały wyzwolone
 - Wygenerowane alerty
-- Assessments on exposure level
-- Obserwowane kategorie zagrożeń
-- Wykrywanie źródeł
+- Oceny na poziomie narażenia
+- Zaobserwowano kategorie zagrożeń
+- Źródła wykrywania
 - Zautomatyzowane badania
 
 ## <a name="provide-feedback"></a>Przekazywanie opinii
 
-Twoja opinia pomoże nam lepiej chronić Twoje środowisko przed zaawansowanymi atakami. Podziel się swoimi doświadczeniami i podziel się swoimi doświadczeniami z możliwościami produktu i wynikami oceny.
+Twoja opinia pomaga nam lepiej chronić środowisko przed zaawansowanymi atakami. Podziel się swoim doświadczeniem i wrażeniami z możliwości produktu i wyników oceny.
 
-Daj nam znać, co o tym sądzisz, wybierając pozycję **Podaj opinię**.
+Daj nam znać, co myślisz, wybierając pozycję **Przekaż opinię**.
 
 :::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="Strona opinii" lightbox="images/send-us-feedback-eval-lab.png":::

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak symulować ataki wyłudzania informacji i szkolić swoich użytkowników w zakresie zapobiegania wyłudzaniu informacji przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: 55810d65c33796a617421f0796191335821bde98
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 647ea6188e1bd7867e823bbfbb6341255e82960d
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648894"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679467"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Symulowanie ataku wyłudzającego informacje przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
 
@@ -347,7 +347,7 @@ Na tej stronie przedstawiono następujące powiadomienia i ich skonfigurowane j�
 - **Domyślne powiadomienie o przypisaniu szkolenia firmy Microsoft**
 - Wszystkie utworzone wcześniej niestandardowe powiadomienia dotyczące przypisania trenowania.
 
-  Te powiadomienia są również dostępne na karcie **Powiadomienia użytkowników końcowych** w szkoleniu symulacji ataku pod adresem <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Domyślne powiadomienie o przypisaniu szkolenia firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia dotyczące przypisań szkoleniowych są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
+  Te powiadomienia są również dostępne w **powiadomieniach użytkowników końcowych** na karcie **Biblioteka zawartości symulacji** w trenowaniu symulacji ataków pod adresem <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Domyślne powiadomienie o przypisaniu szkolenia firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia dotyczące przypisań szkoleniowych są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
 
 Możesz wybrać istniejące powiadomienie o przypisaniu szkolenia lub utworzyć nowe powiadomienie do użycia:
 
@@ -382,7 +382,7 @@ Strona **powiadomienia Przypomnienie o trenowaniu** jest dostępna tylko wtedy, 
   - **Domyślne powiadomienie o przypomnieniu szkoleniowym firmy Microsoft**
   - Wszystkie utworzone wcześniej powiadomienia o przypomnieniu o trenowaniu niestandardowym.
 
-    Te powiadomienia są również dostępne na karcie **Powiadomienia użytkowników końcowych** w szkoleniu symulacji ataku pod adresem <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Domyślne powiadomienie o przypomnieniu szkoleniowym firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Powiadomienia o przypomnieniu o trenowaniu niestandardowym są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
+    Te powiadomienia są również dostępne w **powiadomieniach użytkowników końcowych** na karcie **Biblioteka zawartości symulacji** w trenowaniu symulacji ataków pod adresem <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Domyślne powiadomienie o przypomnieniu szkoleniowym firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Powiadomienia o przypomnieniu o trenowaniu niestandardowym są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
 
   Możesz wybrać istniejące powiadomienie dotyczące przypomnienia szkoleniowego lub utworzyć nowe powiadomienie do użycia:
 
@@ -419,7 +419,7 @@ Strona **Powiadomienia o pozytywnym wzmocnieniu** jest dostępna tylko wtedy, gd
   - **Domyślne powiadomienie o wzmacnianiu dodatnim firmy Microsoft**
   - Wszystkie utworzone wcześniej niestandardowe powiadomienia o pozytywnym wzmocnieniu.
 
-    Te powiadomienia są również dostępne na karcie **Powiadomienia użytkowników końcowych** w szkoleniu symulacji ataku pod adresem <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Domyślne powiadomienie o pozytywnym wzmocnieniu firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia o pozytywnym wzmacnianiu są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
+    Te powiadomienia są również dostępne w **powiadomieniach użytkowników końcowych** na karcie **Biblioteka zawartości symulacji** w trenowaniu symulacji ataków pod adresem <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Domyślne powiadomienie o pozytywnym wzmocnieniu firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia o pozytywnym wzmacnianiu są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
 
   Możesz wybrać istniejące powiadomienie o pozytywnym wzmocnieniu lub utworzyć nowe powiadomienie do użycia:
 

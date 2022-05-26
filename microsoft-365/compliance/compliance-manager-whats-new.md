@@ -1,5 +1,5 @@
 ---
-title: Co nowego w Menedżerze zgodności firmy Microsoft
+title: Co nowego w menedżerze zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,87 +16,101 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, co nowego w Mangeru zgodności, a co nowego. Przeczytaj o zaktualizowanych ocenach, nowych szablonach oceniania, nowych akcjach i nie tylko.
-ms.openlocfilehash: 0f368be06b33f485ff687c998615fb8578845daf
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Dowiedz się, co nowego w narzędziu Compliance Manger i co ma nadejść. Przeczytaj o zaktualizowanych ocenach, nowych szablonach oceny, nowych akcjach i nie tylko.
+ms.openlocfilehash: cf817b28c6d375e92e7aabdb1f57ea632c6f1a28
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634212"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692744"
 ---
-# <a name="whats-new-in-microsoft-compliance-manager"></a>Co nowego w Menedżerze zgodności firmy Microsoft
+# <a name="whats-new-in-microsoft-purview-compliance-manager"></a>Co nowego w menedżerze zgodności Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **W tym artykule:** Dowiedz się więcej o najnowszych aktualizacjach w Menedżerze zgodności.
 
+## <a name="may-2022"></a>Maj 2022 r.
+
+Menedżer zgodności opublikował następujące nowe szablony oceny:
+
+Europa, Bliski Wschód i Afryka (EMEA)
+- Katar National Information Assurance (NIA)
+- Prawo o ochronie prywatności danych ze Zjednoczonych Emiratów Arabskich
+
+Klienci usług Us Government Community (GCC) Moderate, GCC High i Department of Defense (DoD) powinni zobaczyć te szablony dostępne w ciągu najbliższych kilku tygodni.
+
+Wyświetl [pełną listę szablonów oceny](compliance-manager-templates-list.md).
+
 ## <a name="march-2022"></a>Marzec 2022 r.
 
-### <a name="new-templates-available"></a>Dostępne są nowe szablony
+### <a name="new-templates-available"></a>Dostępne nowe szablony
 
-Menedżer zgodności opublikował następujące nowe szablony ocen:
+Menedżer zgodności opublikował następujące nowe szablony oceny:
 
-**Globalna**
+**Globalne**
 - ISO 37301
-- NIST 800-207 - architektura Zero Trust
+- NIST 800-207 — architektura Zero Trust
 - SIG 2022
 
-**Rząd Stanów Zjednoczonych**
-- CMMC v2 level 1
-- CMMC v2 level 2
+**Instytucje rządowe USA**
+- CMMC v2 Poziom 1
+- CMMC v2 Poziom 2
 
 **Ameryka Północna**
-- Information Security Management Act — prowincja Kolumbii Brytyjskiej, Kalifornia
+- Information Security Management Act - Prowincja Kolumbii Brytyjskiej, CA
 
-Wyświetl pełną [listę szablonów formularzy oceniania](compliance-manager-templates-list.md).
+Wyświetl [pełną listę szablonów oceny](compliance-manager-templates-list.md).
 
-### <a name="continuous-compliance-assessment-of-improvement-actions"></a>Ciągła ocena zgodności działań udoskonalania
+### <a name="continuous-compliance-assessment-of-improvement-actions"></a>Ciągła ocena zgodności akcji poprawy
 
-Dodamy zautomatyzowane testowanie i generowanie dowodów dla ponad 35 działań udoskonalania w Menedżerze zgodności, które wcześniej nie zostały objęte bezpiecznego wyniku. W ramach ciągłej oceny zgodności możesz otrzymywać aktualizacje dotyczące tych działań udoskonalania, które zostały ukończone, jeśli są one odpowiednie dla Twojej oceny zgodności i masz licencję na dostęp do odpowiednich rozwiązań. Ciągła ocena zgodności daje również użytkownikom wgląd w logikę oceniania działań udoskonalania oraz dostarcza szczegółowych informacji i dowodów na to, dlaczego otrzymano określony wynik. Ta funkcja współpracuje z istniejącymi integracjami z Microsoft 365 bezpiecznego wyniku, a wszelkie skonfigurowane wcześniej automatyczne akcje będą nadal działać bez żadnych danych. Dowiedz się więcej o [zautomatyzowanych ustawieniach testowania](compliance-manager-setup.md#set-up-automated-testing).
+Dodajemy automatyczne testowanie i generowanie dowodów dla ponad 35 akcji poprawy w Menedżerze zgodności, które nie były wcześniej objęte bezpiecznym wynikiem. Dzięki ciągłej ocenie zgodności możesz otrzymywać aktualizacje dotyczące tego, które z tych akcji ulepszania zostały wykonane, jeśli są one istotne dla ocen zgodności i masz licencję na dostęp do odpowiednich rozwiązań. Ciągła ocena zgodności zapewnia również użytkownikom wgląd w logikę oceniania twoich akcji poprawy oraz zapewnia wgląd i dowody na to, dlaczego otrzymano określony wynik. Ta funkcja współdziała z istniejącymi integracjami z Microsoft 365 Wskaźnik bezpieczeństwa, a wszystkie wcześniej skonfigurowane zautomatyzowane akcje będą nadal działać zgodnie z rzeczywistym użyciem. Dowiedz się więcej o [ustawieniach testowania automatycznego](compliance-manager-setup.md#set-up-automated-testing).
 
 ## <a name="february-2022"></a>Luty 2022 r.
 
 ### <a name="alerts-and-alert-policies"></a>Alerty i zasady alertów
 
-Użytkownicy mogą teraz ustawiać alerty o zmianach w Menedżerze zgodności, które organizacja chce śledzić. Za pomocą kreatora łatwej konfiguracji możesz utworzyć zasady alertów w celu tworzenia powiadomień w przypadku zdarzeń następujących typów: zmiana wyniku akcji udoskonalania, zmiana przydziału akcji udoskonalania, zmiana testowania lub stanu implementacji w działaniu usprawniacym oraz przekazanie lub usunięcie pliku na karcie Dokumenty akcji udoskonalania. Aby dowiedzieć się więcej, zobacz [Alerty Menedżera zgodności i zasady alertów](compliance-manager-alert-policies.md).
+Użytkownicy mogą teraz ustawiać alerty dotyczące zmian w Menedżerze zgodności, które organizacja chce śledzić. Za pomocą kreatora łatwej konfiguracji można tworzyć zasady alertów, aby tworzyć powiadomienia, gdy wystąpią następujące typy zdarzeń: zmiana wyniku akcji poprawy, zmiana przypisania akcji poprawy, zmiana stanu testowania lub implementacji w akcji poprawy oraz przekazywanie lub usuwanie pliku na karcie Dokumenty akcji poprawy. Dowiedz się więcej, odwiedzając pozycję [Alerty i zasady alertów programu Compliance Manager](compliance-manager-alert-policies.md).
 
-### <a name="try-recommended-assessment-templates-for-your-organization"></a>Wypróbuj zalecane szablony oceniania dla organizacji
+### <a name="try-recommended-assessment-templates-for-your-organization"></a>Wypróbuj zalecane szablony oceny dla organizacji
 
-Twoja organizacja może teraz uzyskać zalecenia z Menedżera zgodności dotyczące poszczególnych ocen, które mogą być dla Ciebie najbardziej istotne, za pomocą szybkiego procesu konfiguracji, który umożliwia szybkie uruchomienie się. Aby dowiedzieć się więcej na temat zaleceń i sposobu wypróbowania szablonów testów premium przed zakupem licencji, zobacz [Rozpoczynanie wersji próbnej premium testów](compliance-manager-setup.md#start-a-premium-assessments-trial).
+Twoja organizacja może teraz uzyskać rekomendacje od Menedżera zgodności dotyczące ocen, które mogą być dla Ciebie najbardziej istotne, dzięki szybkiemu procesowi konfiguracji, który pozwala rozpocząć działanie. Aby dowiedzieć się więcej na temat zaleceń i sposobu wypróbowania szablonów oceny w warstwie Premium przed zakupem licencji, zobacz [Rozpoczynanie wersji próbnej ocen w warstwie Premium](compliance-manager-setup.md#start-a-premium-assessments-trial).
 
 ## <a name="november-2021"></a>Listopad 2021
 
-### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>Zero Trust szablonu Plan bazowy ochrony danych
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>integracja Zero Trust dla szablonu punktu odniesienia ochrony danych
 
-Zero Trust to proaktywne, zintegrowane podejście do zabezpieczeń na wszystkich warstwach cyfrowego rynku, które jawnie i nieprzerwanie sprawdza każdą transakcję, zapewnia najmniejsze uprawnienia i korzysta z analizy, zaawansowanych wykrywania oraz reakcji w czasie rzeczywistym na zagrożenia. Szablon Planu bazowego ochrony danych Menedżera zgodności, dostępny dla wszystkich użytkowników, teraz integruje 57 nowych kontrolek i 36 nowych akcji dla programu Zero Trust dostosowanych do następujących rodzin kontrolek:
+Zero Trust jest proaktywnym, zintegrowanym podejściem do zabezpieczeń we wszystkich warstwach majątku cyfrowego, które jawnie i stale weryfikuje każdą transakcję, zapewnia najmniejsze uprawnienia i opiera się na analizie, zaawansowanym wykrywaniu i reagowaniu na zagrożenia w czasie rzeczywistym. Szablon punktu odniesienia ochrony danych programu Compliance Manager, dostępny dla wszystkich użytkowników, integruje teraz 57 nowych kontrolek i 36 nowych akcji dla Zero Trust dopasowanych do następujących rodzin kontroli:
 
-- Zero Trust aplikacji
-- Zero Trust tworzenia aplikacji
-- Zero Trust punkt końcowy
-- Zero Trust danych
-- Zero Trust tożsamości
-- Zero Trust infrastruktury
-- Zero Trust Network
-- Zero Trust widoczność, automatyzacja i miksowanie
+- aplikacja Zero Trust
+- wskazówki dotyczące tworzenia aplikacji Zero Trust
+- punkt końcowy Zero Trust
+- dane Zero Trust
+- tożsamość Zero Trust
+- infrastruktura Zero Trust
+- sieć Zero Trust
+- Zero Trust widoczność, automatyzacja i orkiestracja
 
-### <a name="new-preview-templates"></a>Nowe szablony podglądu
+### <a name="new-preview-templates"></a>Nowe szablony w wersji zapoznawczej
 
-W wersji zapoznawczej są teraz dostępne następujące szablony oceniania:
+Następujące szablony oceny są teraz dostępne w wersji zapoznawczej:
 
-- ISO 27001:2013 dla platformy Azure (wersja Preview)
-- ISO 27001:2013 dla usługi Dynamics 365 (wersja Preview)
-- FedRAMP Moderate for Dynamics 365 (Preview)
-- FedRAMP Moderate for Azure (Preview)
-- FedRAMP High for Azure (Preview)
-- FedRAMP High for Dynamics 365 (Preview)
-- SOC 2 dla systemu Azure (wersja Preview)
-- SOC 2 dla Dynamics 365 (wersja Preview)
-- ISO 27018:2019 dla platformy Azure (wersja Preview)
-- ISO 27018:2019 dla usługi Dynamics 365 (wersja Preview)
+- ISO 27001:2013 dla platformy Azure (wersja zapoznawcza)
+- ISO 27001:2013 dla usługi Dynamics 365 (wersja zapoznawcza)
+- FedRAMP Moderate for Dynamics 365 (wersja zapoznawcza)
+- FedRAMP Moderate dla platformy Azure (wersja zapoznawcza)
+- FedRAMP High for Azure (wersja zapoznawcza)
+- FedRAMP High for Dynamics 365 (wersja zapoznawcza)
+- SOC 2 dla platformy Azure (wersja zapoznawcza)
+- SOC 2 dla usługi Dynamics 365 (wersja zapoznawcza)
+- ISO 27018:2019 dla platformy Azure (wersja zapoznawcza)
+- ISO 27018:2019 dla usługi Dynamics 365 (wersja zapoznawcza)
 
 ## <a name="october-2021"></a>Październik 2021
 
-### <a name="new-assessment-templates"></a>Nowe szablony oceniania
+### <a name="new-assessment-templates"></a>Nowe szablony oceny
 
-Opublikowano nowe szablony oceniań, w tym:
+Opublikowaliśmy nowe szablony oceny, w tym:
 
 - Colorado Privacy Act (CPA)
 - Virginia Consumer Data Privacy Act (CDPA)
@@ -105,35 +119,35 @@ Opublikowano nowe szablony oceniań, w tym:
 - Australia — ASD Essential 8 Maturity Level 2
 - Australia — ASD Essential 8 Maturity Level 3
 
-### <a name="integration-with-microsoft-priva"></a>Integracja z usługą Microsoft Priva
+### <a name="integration-with-microsoft-priva"></a>Integracja z Microsoft Priva
 
-Menedżer zgodności może teraz współpracować z usługą Microsoft Priva, rozwiązaniem, które może pomóc chronić dane osobowe przechowywane przez Twoją organizację w Microsoft 365. Priva oferuje narzędzia, które ułatwiają wizualizowanie i zrozumienie danych, implementowanie zasad do zarządzania kluczowymi scenariuszami ryzyka i obsługa żądań praw podmiotu. Gdy podejmiesz kroki w priva w celu ochrony danych osobowych, które przechowujesz, może to pomóc w ocenie prywatności w Menedżerze zgodności i pomóc Ci w poprawieniu wyniku w zakresie zgodności. Aby zobaczyć, jak priva i inne rozwiązania współtworzyły Twój wynik, i poznać możliwości dalszego ulepszeń, zobacz kartę  Rozwiązania w Menedżerze zgodności. Aby uzyskać więcej informacji o Priva, zobacz [Dowiedz się więcej o microsoft Priva](/privacy/priva).
+Menedżer zgodności może teraz pracować ramię w ramię z Microsoft Priva, rozwiązaniem, które może pomóc w zabezpieczeniu danych osobowych przechowywanych przez organizację w Microsoft 365. Priva oferuje narzędzia ułatwiające wizualizowanie i zrozumienie danych, implementowanie zasad w celu zarządzania kluczowymi scenariuszami ryzyka i obsługi żądań praw podmiotów. Jeśli podejmujesz kroki w Priva w celu ochrony przechowywanych danych osobowych, może to przyczynić się do oceny prywatności w Menedżerze zgodności i może pomóc w poprawie oceny zgodności. Aby zobaczyć, w jaki sposób Priva i inne rozwiązania przyczyniają się do oceny, i dowiedzieć się więcej o potencjalnych możliwościach dalszych ulepszeń, zobacz kartę **Rozwiązania** w Menedżerze zgodności. Więcej szczegółów na temat Priva można również znaleźć w [artykule Dowiedz się więcej o Microsoft Priva](/privacy/priva).
 
 ## <a name="july-2021"></a>Lipiec 2021
 
-Dodaliśmy możliwość tworzenia ocen dla produktów innych niż Microsoft 365, opartych na nowych uniwersalnych wersjach naszych szablonów. Aby dowiedzieć się więcej, zacznij [od tematu Praca z szablonami oceniania](compliance-manager-templates.md).
+Dodaliśmy możliwość tworzenia ocen dla produktów innych niż Microsoft 365, w oparciu o nowe uniwersalne wersje naszych szablonów. Aby dowiedzieć się więcej, zacznij od [pracy z szablonami oceny](compliance-manager-templates.md).
 
 ## <a name="may-2021"></a>Maj 2021
 
-### <a name="new-assessment-templates"></a>Nowe szablony oceniania
+### <a name="new-assessment-templates"></a>Nowe szablony oceny
 
-Opublikowano 75 nowych szablonów formularzy oceniania, w tym:
+Opublikowaliśmy 75 nowych szablonów oceny, w tym:
 - Australia Privacy Act
-- CiS Microsoft 365 Foundation Levels 1 i 2
-- Niemcy — Wymagania nadzorczy dla it w instytucjach finansowych (IT)
-- Sarbanes-Oxley Act
-- Republika Południowej Afryki — promocja na dostęp do informacji Act
+- Cis Microsoft 365 Foundation Levels 1 i 2
+- Niemcy — Wymagania nadzorcze w zakresie IT w instytucjach finansowych (BAIT)
+- ustawa o Sarbanes-Oxley
+- Republika Południowej Afryki — promocja ustawy o dostępie do informacji
 
-Zapoznaj się z pełną listą szablonów [formularzy oceniania](compliance-manager-templates-list.md).
+Zapoznaj się z pełną listą [szablonów oceny](compliance-manager-templates-list.md).
 
 ## <a name="april-2021"></a>Kwiecień 2021
 
-### <a name="support-for-us-government-dod-customers"></a>Pomoc techniczna dla klientów z amerykańskiego dod
+### <a name="support-for-us-government-dod-customers"></a>Pomoc techniczna dla klientów usługi DoD dla instytucji rządowych USA
 
-Menedżer zgodności jest teraz dostępny dla klientów z amerykańskim rządem doD, a także dla klientów z usługą Government Community (GCC) i GCC Government High.
+Menedżer zgodności jest teraz dostępny dla klientów us Government DoD, oprócz klientów z Community us Government (GCC) Moderate i GCC High.
 
 ## <a name="march-2021"></a>Marzec 2021 r.
 
 ### <a name="active-and-inactive-templates"></a>Aktywne i nieaktywne szablony
 
-Każda strona formularza oceniania i strona szablonu oceny zawiera aktywowane szablony. Ten licznik pokazuje, ile uprawnionych szablonów używasz zgodnie z umową licencyjną. Aby [dowiedzieć się więcej, zobacz Dostępność szablonu](compliance-manager-templates.md#template-availability-and-licensing) i licencjonowanie.
+Każda strona oceny i strona szablonu oceny mają aktywowany licznik szablonów. Ten licznik pokazuje, ile kwalifikujących się szablonów używasz zgodnie z umową licencyjną. Aby dowiedzieć się więcej, zobacz [Dostępność szablonu i licencjonowanie](compliance-manager-templates.md#template-availability-and-licensing) .

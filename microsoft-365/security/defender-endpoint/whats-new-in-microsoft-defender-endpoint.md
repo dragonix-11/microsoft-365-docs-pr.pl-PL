@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 615a68d7725e180e512674909f490e27d3da6771
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 282834b0c582690ff53c8361440bce21fc2d4d0b
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468805"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679281"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Co nowego w ochronie punktu końcowego w usłudze Microsoft Defender
 
@@ -63,6 +63,7 @@ Aby uzyskać więcej informacji na temat Ochrona punktu końcowego w usłudze Mi
 ## <a name="may-2022"></a>Maj 2022 r.
 - [Ochrona przed naruszeniami macOS (wersja zapoznawcza)](tamperprotection-macos.md)<br>Ochrona przed naruszeniami zapobiega nieautoryzowanemu usuwaniu Ochrona punktu końcowego w usłudze Microsoft Defender na macOS.
 
+- [Dodawanie urządzeń kontrolera domeny — ulepszenie laboratorium ewaluacji (wersja zapoznawcza)](evaluation-lab.md#add-a-domain-controller-preview)<br>Dodaj kontroler domeny do uruchamiania złożonych scenariuszy, takich jak przenoszenie boczne i ataki wieloetapowe na wielu urządzeniach.
 
 ## <a name="april-2022"></a>Kwiecień 2022 r.
 - [Zaktualizowano dołączanie i równoważność funkcji dla Windows Server 2012 R2 i Windows Server 2016)](configure-server-endpoints.md)<br/> Nowy pakiet ujednoliconego rozwiązania jest teraz ogólnie dostępny i ułatwia dołączanie serwerów przez usunięcie zależności i kroki instalacji. Ponadto ten ujednolicony pakiet rozwiązań zawiera wiele nowych ulepszeń funkcji.

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: d01cdacc40b58eb940b2773606221b4fdbe18728
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: e485bcf400dbaf36c63e3a0ed8677c9bf7c8f23a
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823195"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692766"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender zaawansowany interfejs API wyszukiwania zagrożeń
 
@@ -53,11 +53,11 @@ Poniższe warunki odnoszą się do wszystkich zapytań.
 6. Kod `429` odpowiedzi HTTP wskazuje, że osiągnięto limit przydziału, liczbę wysłanych żądań lub przydzielony czas wykonywania. Przeczytaj treść odpowiedzi, aby zrozumieć osiągnięty limit. 
 
 > [!NOTE]
-> Wszystkie limity przydziału wymienione powyżej (na przykład 15 wywołań na minutę) są na rozmiar dzierżawy. Te limity przydziału są minimalne.
+> Wszystkie limity przydziału wymienione powyżej (na przykład 15 wywołań na minutę) są szerokie dla dzierżawy. Te limity przydziału są minimalne.
 
 ## <a name="permissions"></a>Uprawnienia
 
-Do wywołania zaawansowanego interfejsu API wyszukiwania zagrożeń jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Uzyskiwanie dostępu do interfejsów API Microsoft 365 Defender Protection](api-access.md)
+Do wywołania zaawansowanego interfejsu API wyszukiwania zagrożeń jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Uzyskiwanie dostępu do interfejsów API Microsoft 365 Defender Protection](api-access.md).
 
 Typ uprawnień | Uprawnienia | Nazwa wyświetlana uprawnień
 -|-|-
@@ -89,7 +89,7 @@ W treści żądania podaj obiekt JSON z następującymi parametrami:
 
 Parametr | Wpisać | Opis
 -|-|-
-Kwerendy | Tekst | Zapytanie do uruchomienia. **Uwaga: wymagane**
+Kwerendy | Tekst | Zapytanie do uruchomienia. **(wymagane)**
 
 ## <a name="response"></a>Odpowiedzi
 
@@ -178,7 +178,7 @@ W poniższym przykładzie użytkownik wysyła poniższe zapytanie i odbiera obie
 }
 ```
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 - [Uzyskiwanie dostępu do interfejsów API Microsoft 365 Defender](api-access.md)
 - [Dowiedz się więcej o limitach interfejsu API i licencjonowaniu](api-terms.md)

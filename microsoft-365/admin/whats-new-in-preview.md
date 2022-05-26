@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Centrum administracyjne platformy Microsoft 365 — informacje o funkcjach, które zostały dodane w tym miesiącu.
-ms.openlocfilehash: 4c730a72252d24145d7555f2684244a2a6531dd2
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 198832f09f6b219579f128b7104ecf3ae2fa3446
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649170"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679357"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Co nowego w Centrum administracyjne platformy Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "65649170"
 
 ::: moniker-end
 
-Ciągle dodajemy nowe funkcje do [Centrum administracyjne platformy Microsoft 365](Omówienie Centrum administracyjne platformy Microsoft 365](admin-overview/admin-center-overview.md), naprawiamy problemy, o których się dowiadujemy, i wprowadzamy zmiany na podstawie Opinii. Spójrz poniżej, aby zobaczyć, co jest dostępne dla Ciebie dzisiaj. Niektóre funkcje są wdrażane z różnymi prędkościami dla naszych klientów. Jeśli nie widzisz jeszcze funkcji, [spróbuj dodać siebie do docelowej wersji](manage/release-options-in-office-365.md).
+Ciągle dodajemy nowe funkcje do [Centrum administracyjne platformy Microsoft 365](Omówienie Centrum administracyjne platformy Microsoft 365](admin-overview/admin-center-overview.md), naprawiamy problemy, o których się dowiadujemy, i wprowadzamy zmiany na podstawie Opinii. Niektóre funkcje są wdrażane z różnymi prędkościami dla naszych klientów. Jeśli nie widzisz jeszcze funkcji, [spróbuj dodać siebie do docelowej wersji](manage/release-options-in-office-365.md).
 
 A jeśli chcesz wiedzieć, co nowego w innych usługach w chmurze firmy Microsoft:
 
@@ -53,23 +53,23 @@ A jeśli chcesz wiedzieć, co nowego w innych usługach w chmurze firmy Microsof
 
 ## <a name="may-2022"></a>Maj 2022 r.
 
-<!-- ### Role based access controls (RBAC)
+### <a name="role-based-access-controls-rbac"></a>Kontrola dostępu oparta na rolach (RBAC)
 
-There are new Azure AD built-in roles in the Microsoft 365 admin center. Give admins only the access they need to manage Virtual Visits.
+W Centrum administracyjne platformy Microsoft 365 istnieją cztery nowe role do zarządzania niestandardowymi atrybutami zabezpieczeń. Te role są dostępne dla wszystkich użytkowników w Centrum administracyjne platformy Microsoft 365 w obszarze **Role**.
 
-There are also 4 new roles in the Microsoft 365 admin center centered around management of custom security attributes. These roles are available for everyone to use in the Role assignments node under Roles.
+- **Administrator przypisań atrybutów**   Przypisz niestandardowe klucze atrybutów zabezpieczeń i wartości do obsługiwanych obiektów Azure AD.
 
-For more information about Azure AD built-in roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+- **Czytelnik przypisań atrybutów**   Odczytuje niestandardowe klucze atrybutów zabezpieczeń i wartości dla obsługiwanych obiektów Azure AD.
 
-**Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
+- **Administrator definicji atrybutów**   Definiowanie definicji niestandardowych atrybutów zabezpieczeń i zarządzanie nimi.
 
-**Attribute Assignment Administrator**   Assign custom security attribute keys and values to supported Azure AD objects.
+- **Czytelnik definicji atrybutów**   Odczytuje definicję niestandardowych atrybutów zabezpieczeń.
 
-**Attribute Assignment Reader**   Reads custom security attribute keys and values for supported Azure AD objects.
+Istnieje również nowa rola, która umożliwia administratorom dostęp potrzebny tylko do zarządzania wizytami wirtualnymi.
 
-**Attribute Definition Administrator**   Define and manage the definition of custom security attributes.
+- **Administrator wizyt wirtualnych**   Zarządzaj informacjami i metrykami wizyt wirtualnych oraz udostępniaj je z centrów administracyjnych lub aplikacji Wizyty wirtualne.
 
-**Attribute Definition Reader**   Reads the definition of custom security attributes. -->
+Aby uzyskać więcej informacji na temat tych ról, zobacz [Azure AD role wbudowane](/azure/active-directory/roles/permissions-reference).
 
 ### <a name="quick-assist"></a>Szybka pomoc
 
@@ -85,7 +85,7 @@ Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z komputerem 
 
 Analizy ankiet nps to pulpit nawigacyjny oparty na sztucznej inteligencji dostępny w Centrum administracyjne platformy Microsoft 365.
 
-W centrum administracyjnym przejdź do **obszaru HealthProduct** **feedbackNPS survey insights (Opinie** >  dotyczące produktów **kondycjiNPS** > ).
+W centrum administracyjnym przejdź do obszaru Informacje o **ankietach nps opinii o** >  **produktach** **kondycji** > .
 
 Ta funkcja ułatwia administratorom, takim jak Ty, uzyskanie praktycznych szczegółowych informacji pochodzących z ankiet nps firmy Microsoft, na które użytkownicy odpowiedzieli. Dowiedz się więcej na [stronie Microsoft product NPS feedback and insights for your organization (Opinie i szczegółowe informacje dotyczące serwera NPS produktów firmy Microsoft dla Twojej organizacji](manage/manage-feedback-product-insights.md)).
 
@@ -152,7 +152,7 @@ Aby rozpocząć korzystanie z Microsoft 365 Lighthouse, zobacz [Tworzenie konta 
 
 Teraz możesz wyświetlać dane ankiety nps i szczegółowe informacje od użytkowników w Centrum administracyjne platformy Microsoft 365. Dzięki tej nowej funkcji możesz uzyskać praktyczne szczegółowe informacje z odpowiedzi na ankiety nps od użytkowników końcowych i osiągnąć większą radość użytkowników końcowych, rozwiązując wszelkie problemy i problemy.
 
-W centrum administracyjnym przejdź do **obszaru HealthProduct** **feedbackNPS survey insights (Opinie** >  dotyczące produktów **kondycjiNPS** > ).
+W centrum administracyjnym przejdź do obszaru Informacje o **ankietach nps opinii o** >  **produktach** **kondycji** > .
 
 :::image type="content" source="../media/feedback-whatsnew.png" alt-text="Zrzut ekranu: wyświetlanie strony opinii w Centrum administracyjne platformy Microsoft 365":::
 
@@ -209,7 +209,7 @@ Dodaliśmy również 2 nowe pola **, Ważność** i **Data zamknięcia** w tabel
 
 :::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="Zrzut ekranu: Tabela przedstawiająca sortowanie biletów pomocy technicznej według ważności i daty.":::
 
-Aby zapoznać się z tymi aktualizacjami w <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, przejdź do obszaru **SupportView Service requests** in left navigation pane (Żądania usługi **SupportView** >  w okienku nawigacji po lewej stronie).
+Aby wyewidencjonować te aktualizacje w <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, przejdź do obszaru Support **View Service requests** in left navigation okienko (Wyświetl żądania usługi **pomocy technicznej** > ) w okienku nawigacji po lewej stronie.
 
 ## <a name="june-2021"></a>Czerwiec 2021
 

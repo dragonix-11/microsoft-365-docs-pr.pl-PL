@@ -28,19 +28,19 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Ochrona firmowych wiadomości e-mail i danych przed zagrożeniami cybernetycznymi, w tym oprogramowaniem wymuszającym okup, wyłudzaniem informacji i złośliwymi załącznikami.
-ms.openlocfilehash: 47e9d935cdf6b44d9ba45cd57d8eb3efeabdf0a3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ca159d8d2adda033b1786355c1505cb4d66b625a
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637676"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679653"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla firm
 
 Jeśli jesteś małą lub średnią organizacją korzystającą z jednego z planów biznesowych firmy Microsoft, wskazówki zawarte w tym artykule ułatwiają zaostrzenie zabezpieczeń organizacji. Wśród twoich wyborów Microsoft 365 Business Premium jest liderem, ponieważ obecnie obejmuje Microsoft Defender dla Firm i inne [zabezpieczenia](../../business-premium/get-microsoft-365-business-premium.md). Zalecane działania zawarte w tym miejscu pomogą Ci osiągnąć cele opisane w [podręczniku Kampanii Cyberbezpieczeństwa](https://go.microsoft.com/fwlink/p/?linkid=2015598) Harvard Kennedy School.
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym artykule, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym artykule, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
 
 ## <a name="watch-a-quick-overview-of-security"></a>Obejrzyj: Krótkie omówienie zabezpieczeń
 
@@ -89,7 +89,7 @@ Włącz lub wyłącz wartości domyślne zabezpieczeń w okienku **Właściwośc
 
 1. Zaloguj się do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) przy użyciu poświadczeń administratora globalnego.
 
-2. W lewym okienku nawigacji wybierz pozycję **Pokaż wszystko** i w obszarze **Centra administracyjne** wybierz **pozycję Azure Active Directory**.
+2. W lewym okienku nawigacyjnym wybierz pozycję **Pokaż wszystko** i w obszarze **Administracja center** wybierz **pozycję Azure Active Directory**.
 
 3. W **centrum administracyjnym Azure Active Directory** wybierz pozycję **Azure Active Directory** >  **Właściwości**.
 
@@ -352,5 +352,5 @@ Aby dowiedzieć się więcej, zobacz następujące zasoby:
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Uwierzytelnianie wieloskładnikowe dla Microsoft 365](multi-factor-authentication-microsoft-365.md) (artykuł)\
-[Zarządzanie kontami priorytetów i monitorowanie ich](../setup/priority-accounts.md) (artykuł)\
+[Zarządzanie kontami priorytetów i monitorowanie ich](/microsoft-365/security/office-365-security/configure-review-priority-account) (artykuł)\
 [Microsoft 365 Raporty w centrum administracyjnym](../activity-reports/activity-reports.md) (wideo)

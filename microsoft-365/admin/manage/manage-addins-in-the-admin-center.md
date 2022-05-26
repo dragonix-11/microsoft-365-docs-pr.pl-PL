@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Dowiedz się więcej o używaniu scentralizowanych dodatków do wdrażania dodatków dla użytkowników i grup w organizacji.
-ms.openlocfilehash: ec972cd8ce837ae21384bc3b97513bd1263a7d84
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 96bbdf5d4d9e4f1697fa0b85f902d8d758d356fa
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435440"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678969"
 ---
 # <a name="manage-add-ins-in-the-microsoft-365-admin-center"></a>Zarządzanie dodatkami w Centrum administracyjne platformy Microsoft 365
 
 Office dodatki ułatwiają personalizację dokumentów i usprawniają sposób uzyskiwania dostępu do informacji w Internecie. Zobacz [Rozpoczynanie korzystania z dodatku Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 
-Po wdrożeniu dodatków przez administratora dla użytkowników w organizacji administrator może wyłączyć lub włączyć dodatki, edytować, usuwać i zarządzać dostępem do dodatków oraz zarządzać nimi.
+Gdy administrator globalny lub administrator programu Exchange wdroży dodatki dla użytkowników w organizacji, może wyłączyć lub włączyć dodatki, edytować, usuwać i zarządzać dostępem do dodatków.
 
 Aby uzyskać więcej informacji na temat instalowania dodatków z centrum administracyjnego, zobacz [Wdrażanie dodatków w centrum administracyjnym](./manage-deployment-of-add-ins.md).
   
@@ -146,7 +146,7 @@ Jeśli wdrożony dodatek nie obsługuje poleceń dodatku lub chcesz wyświetlić
     
 3. Kliknij dwukrotnie wdrożony wcześniej dodatek (w tym przykładzie **Citations**).
 
-    ![Karta Zarządzana przez administratora na stronie dodatków Office.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+    ![Administracja karta Zarządzane na stronie dodatków Office.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>W programie Outlook
 

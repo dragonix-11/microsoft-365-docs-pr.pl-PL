@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak tworzyć niestandardowe ładunki do trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: f0f91eb3936d1dc4ed6c028552b37fecb5df2ff6
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 24655986cd8c30bec4495477a63d692fd1ebb2d2
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648310"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679335"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Tworzenie niestandardowych ładunków na potrzeby trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
 
@@ -30,7 +30,7 @@ W trenowaniu symulacji ataków _ładunek_ to wiadomość e-mail wyłudzająca in
 
 W tym artykule opisano sposób tworzenia własnych ładunków podczas trenowania symulacji ataków. Ładunki niestandardowe można tworzyć w następujących lokalizacjach:
 
-- Karta **Ładunki**: w portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do karty **Ładunki trenowania** \> symulacji **ataków** & **współpracy pocztą** \> e-mail. Aby przejść bezpośrednio do karty **Ładunki**, użyj polecenia <https://security.microsoft.com/attacksimulator?viewid=payload>.
+- **Ładunki**: w portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do karty \> **Ładunki** biblioteki **zawartości Symulacja** **symulacji symulacji** \> & **e-mail & współpracy**\>. Aby przejść bezpośrednio do karty **Biblioteka zawartości symulacji** , użyj polecenia <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 - Podczas tworzenia symulacji: niestandardowe ładunki można tworzyć na stronie **Wybieranie ładunku** (trzecia strona) kreatora tworzenia symulacji. Aby uzyskać więcej informacji, zobacz [Symulowanie ataku wyłudzania informacji w Ochrona usługi Office 365 w usłudze Defender](attack-simulation-training.md).
 
 Aby uzyskać informacje o rozpoczęciu trenowania symulacji ataków, zobacz [Wprowadzenie korzystanie z trenowania symulacji ataków](attack-simulation-training-get-started.md).
@@ -40,7 +40,7 @@ Aby uzyskać informacje o rozpoczęciu trenowania symulacji ataków, zobacz [Wpr
 
 ## <a name="create-a-payload"></a>Tworzenie ładunku
 
-Po kliknięciu przycisku ![Utwórz ikonę ładunku.](../../media/m365-cc-sc-create-icon.png) **Utwórz ładunek** na **karcie Ładunki** szkolenia symulacji ataku lub na stronie **[Wybieranie ładunku](attack-simulation-training.md#select-a-payload)** kreatora tworzenia symulacji zostanie uruchomiony kreator tworzenia ładunku i zostanie opisany w tej sekcji.
+Po kliknięciu przycisku ![Utwórz ikonę ładunku.](../../media/m365-cc-sc-create-icon.png) **Utwórz ładunek** na podstawie **ładunków** na karcie **Biblioteka zawartości symulacji** na karcie Trenowanie symulacji ataku lub na stronie **[Wybierz ładunek](attack-simulation-training.md#select-a-payload)** kreatora tworzenia symulacji kreator tworzenia ładunku zostanie uruchomiony i zostanie opisany w tej sekcji.
 
 ### <a name="select-a-payload-type"></a>Wybieranie typu ładunku
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i ładunki uruchamiane po spełnieniu określonych warunków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: b80d73f6efe398465eecea9967c4bd8d929a51a2
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: ded6a77e72e71a676c0cc05ffdc3be53e3fbada1
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649414"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678860"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatyzacje symulacji na potrzeby trenowania symulacji ataków
 
@@ -29,11 +29,11 @@ Aby uzyskać informacje o rozpoczęciu trenowania symulacji ataków, zobacz [Wpr
 
 Aby utworzyć automatyzację symulacji, wykonaj następujące kroki:
 
-1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com/>przejdź do karty Automatyzacje **symulacji** \> & **poczty e-mail**\>.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com/>przejdź do obszaru Email & collaboration Attack simulation training **Automations** tab \> **Simulation automations (Automatyzacje symulacji** za pomocą **funkcji e-mail & współpracy** \> w **zakresie** \> symulacji ataków).
 
-   Aby przejść bezpośrednio do karty **Automatyzacje symulacji** , użyj polecenia <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
+   Aby przejść bezpośrednio do karty **Automatyzacje** , użyj polecenia <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. Na **karcie Automatyzacje symulacji** wybierz pozycję Utwórz ikonę ![automatyzacji.](../../media/m365-cc-sc-create-icon.png) **Tworzenie automatyzacji**.
+2. W obszarze **Automatyzacje symulacji** wybierz pozycję Utwórz ikonę ![automatyzacji.](../../media/m365-cc-sc-create-icon.png) **Tworzenie automatyzacji**.
 
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Przycisk Utwórz symulację na karcie Automatyzacje symulacji w trenowaniu symulacji ataku w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
@@ -339,7 +339,7 @@ Na tej stronie przedstawiono następujące powiadomienia i ich skonfigurowane j�
 - **Domyślne powiadomienie o przypisaniu szkolenia firmy Microsoft**
 - Wszystkie utworzone wcześniej niestandardowe powiadomienia dotyczące przypisania trenowania.
 
-  Te powiadomienia są również dostępne na karcie **Powiadomienia użytkowników końcowych** w szkoleniu symulacji ataku pod adresem <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Domyślne powiadomienie o przypisaniu szkolenia firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia dotyczące przypisań szkoleniowych są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
+  Te powiadomienia są również dostępne w **powiadomieniach użytkowników końcowych** na karcie **Biblioteka zawartości symulacji** w trenowaniu symulacji ataków pod adresem <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Domyślne powiadomienie o przypisaniu szkolenia firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia dotyczące przypisań szkoleniowych są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
 
 Możesz wybrać istniejące powiadomienie o przypisaniu szkolenia lub utworzyć nowe powiadomienie do użycia:
 
@@ -374,7 +374,7 @@ Strona **powiadomienia Przypomnienie o trenowaniu** jest dostępna tylko wtedy, 
   - **Domyślne powiadomienie o przypomnieniu szkoleniowym firmy Microsoft**
   - Wszystkie utworzone wcześniej powiadomienia o przypomnieniu o trenowaniu niestandardowym.
 
-    Te powiadomienia są również dostępne na karcie **Powiadomienia użytkowników końcowych** w szkoleniu symulacji ataku pod adresem <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Domyślne powiadomienie o przypomnieniu szkoleniowym firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Powiadomienia o przypomnieniu o trenowaniu niestandardowym są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
+    Te powiadomienia są również dostępne w **powiadomieniach użytkowników końcowych** na karcie **Biblioteka zawartości symulacji** w trenowaniu symulacji ataków pod adresem <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Domyślne powiadomienie o przypomnieniu szkoleniowym firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Powiadomienia o przypomnieniu o trenowaniu niestandardowym są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
 
   Możesz wybrać istniejące powiadomienie dotyczące przypomnienia szkoleniowego lub utworzyć nowe powiadomienie do użycia:
 
@@ -411,7 +411,7 @@ Strona **Powiadomienia o pozytywnym wzmocnieniu** jest dostępna tylko wtedy, gd
   - **Domyślne powiadomienie o wzmacnianiu dodatnim firmy Microsoft**
   - Wszystkie utworzone wcześniej niestandardowe powiadomienia o pozytywnym wzmocnieniu.
 
-    Te powiadomienia są również dostępne na karcie **Powiadomienia użytkowników końcowych** w szkoleniu symulacji ataku pod adresem <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. **Domyślne powiadomienie o pozytywnym wzmocnieniu firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia o pozytywnym wzmacnianiu są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
+    Te powiadomienia są również dostępne w **powiadomieniach użytkowników końcowych** na karcie **Biblioteka zawartości symulacji** w trenowaniu symulacji ataków pod adresem <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. **Domyślne powiadomienie o pozytywnym wzmocnieniu firmy Microsoft** jest dostępne na karcie **Powiadomienia globalne** . Niestandardowe powiadomienia o pozytywnym wzmacnianiu są dostępne na karcie **Powiadomienia dzierżawy** . Aby uzyskać więcej informacji, zobacz [Powiadomienia użytkowników końcowych dotyczące trenowania symulacji ataków](attack-simulation-training-end-user-notifications.md).
 
   Możesz wybrać istniejące powiadomienie o pozytywnym wzmocnieniu lub utworzyć nowe powiadomienie do użycia:
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak utworzyć wyodrębniacz w usłudze Microsoft SharePoint Syntex.
-ms.openlocfilehash: 5be59cc7b99d64ceceb08bc400eeb0c44e3de1a8
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 5bfca45442386c15fb8418e306a5631795204c5f
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535487"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679619"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Tworzenie ekstraktora w usłudze Microsoft SharePoint Syntex
 
@@ -42,12 +42,12 @@ Musisz utworzyć wyodrębniacz dla każdej jednostki w dokumencie, który chcesz
 
 2. Na ekranie **Wyodrębnianie nowej jednostki** wpisz nazwę ekstraktora w polu **Nowa nazwa wyodrębniacza** . Na przykład nadaj jej **nazwę Data rozpoczęcia usługi** , jeśli chcesz wyodrębnić datę rozpoczęcia usługi z każdego dokumentu odnawiania kontraktu. Możesz również ponownie użyć wcześniej utworzonej kolumny (na przykład kolumny zarządzanych metadanych).
 
-    Domyślnie typ kolumny to **Pojedynczy wiersz tekstu**. Jeśli chcesz zmienić typ kolumny, wybierz pozycję **Ustawienia** >  **zaawansowaneTyp kolumny**, a następnie wybierz typ, którego chcesz użyć.
+    Domyślnie typ kolumny to **Pojedynczy wiersz tekstu**. Jeśli chcesz zmienić typ kolumny, wybierz pozycję **Ustawienia** >  zaawansowane **Typ kolumny**, a następnie wybierz typ, którego chcesz użyć.
 
     ![Zrzut ekranu przedstawiający część Ustawienia zaawansowane panelu Wyodrębnianie nowej jednostki z opcją Typ kolumny.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > W przypadku wyodrębniaczy o typie kolumny **Pojedynczy wiersz tekstu** maksymalny limit znaków wynosi 255. Wszystkie wpisane znaki przekraczające limit są obcinane.
+    > W przypadku wyodrębniaczy o typie kolumny **Pojedynczy wiersz tekstu** maksymalny limit znaków wynosi 255. Wszystkie wybrane znaki przekraczające limit są obcinane. Aby wybrać więcej niż 255 znaków, wybierz typ kolumny **Wiele wierszy tekstu** podczas tworzenia wyodrębniacza.
 
 3. Po zakończeniu wybierz pozycję **Utwórz**.
 
