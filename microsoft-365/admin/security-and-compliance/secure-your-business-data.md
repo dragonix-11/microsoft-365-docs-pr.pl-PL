@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Ochrona firmowych wiadomości e-mail i danych przed zagrożeniami cybernetycznymi, w tym oprogramowaniem wymuszającym okup, wyłudzaniem informacji i złośliwymi załącznikami.
-ms.openlocfilehash: ca159d8d2adda033b1786355c1505cb4d66b625a
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 44acc5b7b76d1ae355db88e9773982e1d1e1b4d2
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679653"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739510"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla firm
 
@@ -352,5 +352,7 @@ Aby dowiedzieć się więcej, zobacz następujące zasoby:
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Uwierzytelnianie wieloskładnikowe dla Microsoft 365](multi-factor-authentication-microsoft-365.md) (artykuł)\
-[Zarządzanie kontami priorytetów i monitorowanie ich](/microsoft-365/security/office-365-security/configure-review-priority-account) (artykuł)\
-[Microsoft 365 Raporty w centrum administracyjnym](../activity-reports/activity-reports.md) (wideo)
+[Zarządzanie kontami priorytetów i monitorowanie ich](../setup/priority-accounts.md) (artykuł)\
+[Microsoft 365 Raporty w centrum administracyjnym](../activity-reports/activity-reports.md) (wideo)\
+[Microsoft 365 Business Premium — cyberbezpieczeństwo dla małych firm](/microsoft-365/business-premium/) (artykuł)\
+

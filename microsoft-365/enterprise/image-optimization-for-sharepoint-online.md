@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Dowiedz się, jak używać odwzorowania i sprite'ów w celu zwiększenia wydajności obrazów w klasycznych witrynach publikowania SharePoint Online.
-ms.openlocfilehash: d309d2c0d725988ec9958d96ae812b760e8a16e4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 39d0e4c26339ecf70c922636f82dcef82dd4b13e
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095713"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754427"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Optymalizacja obrazów dla klasycznych witryn publikowania w usłudze SharePoint Online
 
-Szybkość ładowania strony internetowej zależy od łącznego rozmiaru wszystkich składników wymaganych do renderowania strony, w tym obrazów, HTML, JavaScript i CSS. Obrazy to doskonały sposób, aby witryna była bardziej atrakcyjna, ale ich rozmiar może mieć wpływ na wydajność. Optymalizując obrazy przy użyciu kompresji i zmiany rozmiaru oraz używając sprite'ów, możesz zrównoważyć efekty bardzo dużych obrazów. Przy użyciu SharePoint odwzorowania obrazów można przekazać jeden duży obraz i wyświetlić sekcje obrazu, co pozwoli na ponowne użycie, a nie ponowne załadowanie.
+Szybkość ładowania strony internetowej zależy od łącznego rozmiaru wszystkich składników wymaganych do renderowania strony, w tym obrazów, HTML, JavaScript i CSS. Obrazy to doskonały sposób, aby witryna była bardziej atrakcyjna, ale ich rozmiar może mieć wpływ na wydajność. Optymalizując obrazy przy użyciu kompresji i zmiany rozmiaru oraz używając elementów sprite, możesz zrównoważyć skutki dużych obrazów. Przy użyciu SharePoint odwzorowania obrazów można przekazać jeden duży obraz i wyświetlić sekcje obrazu, co pozwoli na ponowne użycie, a nie ponowne załadowanie.
 
 >[!NOTE]
 >Ten temat dotyczy klasycznych witryn publikowania SharePoint Online, a nie nowoczesnych witryn portalu. Aby uzyskać informacje na temat optymalizacji obrazów w nowoczesnych witrynach portalu SharePoint Online, zobacz [Optymalizowanie obrazów na nowoczesnych stronach portalu SharePoint Online](modern-image-optimization.md).
@@ -44,13 +44,13 @@ Co jest tutaj omówione:
 - Optymalizacja obrazu
 - SharePoint odwzorowania obrazów
    
-Może to zwiększyć wydajność, ponieważ pobierasz tylko jeden obraz zamiast kilku, a następnie buforujesz i ponownie używasz tego obrazu. Nawet jeśli obraz nie pozostaje w pamięci podręcznej, mając jeden obraz zamiast wielu obrazów, ta metoda zmniejsza całkowitą liczbę żądań HTTP do serwera, co skróci czas ładowania strony. To jest naprawdę forma łączenia obrazów. Jest to bardzo przydatna technika, jeśli obrazy nie zmieniają się zbyt często, na przykład ikony, jak pokazano w powyższym przykładzie SharePoint. Aby to osiągnąć w Microsoft Visual Studio, możesz użyć usługi [Web Essentials](https://vswebessentials.com/), projektu zewnętrznego typu open source opartego na społeczności. Aby uzyskać więcej informacji, zobacz [Artykuł Minification and bundling in SharePoint Online (Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md)).
+Może to zwiększyć wydajność, ponieważ pobierasz tylko jeden obraz zamiast kilku, a następnie buforujesz i ponownie używasz tego obrazu. Nawet jeśli obraz nie pozostaje w pamięci podręcznej, mając jeden obraz zamiast wielu obrazów, ta metoda zmniejsza całkowitą liczbę żądań HTTP do serwera, co skróci czas ładowania strony. To jest naprawdę forma łączenia obrazów. Jest to przydatna technika, jeśli obrazy nie zmieniają się często, na przykład ikony, jak pokazano w przykładzie SharePoint podanym powyżej. Dowiesz się, jak za pomocą usługi [Web Essentials](https://vswebessentials.com/), projektu opartego na społeczności innej firmy, open source, łatwo to osiągnąć w Microsoft Visual Studio. Aby uzyskać więcej informacji, zobacz [Artykuł Minification and bundling in SharePoint Online (Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md)).
   
 ## <a name="using-image-compression-and-optimization-to-speed-up-page-loading"></a>Przyspieszanie ładowania stron przy użyciu kompresji i optymalizacji obrazu
 
 Kompresja i optymalizacja obrazu polega na zmniejszeniu rozmiaru pliku obrazów używanych w witrynie. Często najlepszą techniką zmniejszania rozmiaru obrazu jest zmiana rozmiaru obrazu do maksymalnych wymiarów, które będą wyświetlane w witrynie. Nie ma sensu mieć większego obrazu niż kiedykolwiek będzie wyświetlany. Upewnienie się, że obrazy mają prawidłowe wymiary przy użyciu edytora obrazów, jest szybkim i łatwym sposobem zmniejszenia rozmiaru strony.
   
-Gdy obrazy mają odpowiedni rozmiar, następnym krokiem jest zoptymalizowanie kompresji tych obrazów. Dostępne są różne narzędzia do kompresji i optymalizacji, w tym galeria zdjęć i narzędzia innych firm. Kluczem do kompresji jest jak najbardziej zmniejszenie rozmiaru pliku bez utraty zauważalnej jakości dla użytkowników końcowych. Upewnij się, że przetestujesz skompresowane pliki na ekranie o wysokiej rozdzielczości, aby upewnić się, że nadal będą wyglądać dobrze.
+Gdy obrazy mają odpowiedni rozmiar, następnym krokiem jest zoptymalizowanie kompresji tych obrazów. Dostępne są różne narzędzia do kompresji i optymalizacji, w tym galeria zdjęć i narzędzia innych firm. Kluczem do kompresji jest jak najbardziej zmniejszenie rozmiaru pliku bez utraty zauważalnej jakości dla użytkowników końcowych. Upewnij się, że skompresowane pliki są testowane na ekranie o wysokiej rozdzielczości, aby upewnić się, że nadal będą wyglądać dobrze.
   
 ## <a name="speed-up-page-downloads-by-using-sharepoint-image-renditions"></a>Przyspieszanie pobierania stron przy użyciu odwzorowania obrazów SharePoint
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: W tym artykule przedstawiono sposób diagnozowania typowych problemów z witryną SharePoint Online przy użyciu narzędzi programistycznych programu Internet Explorer.
-ms.openlocfilehash: 274c819df7ffcb7cc18191bdd1c7fa0d4fa40290
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 041619991fdbdcb3e953fe2a06fd63dff0e9201f
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096529"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753809"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnozowanie problemów z wydajnością w usłudze SharePoint Online
 
@@ -65,7 +65,7 @@ Aby wyświetlić narzędzia deweloperskie, naciśnij klawisz **F12** , a następ
   
 ![Zrzut ekranu przedstawiający ikonę Wi-Fi narzędzi programistycznych F12.](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
-Na karcie **Sieć** naciśnij zielony przycisk odtwarzania, aby załadować stronę. Narzędzie zwraca wszystkie pliki żądane przez przeglądarkę w celu uzyskania żądanej strony. Poniższy zrzut ekranu przedstawia jedną z takich list.
+Na karcie **Sieć** naciśnij zielony przycisk odtwarzania, aby załadować stronę. Narzędzie zwraca wszystkie pliki żądane przez przeglądarkę w celu uzyskania żądanej strony. Na poniższym zrzucie ekranu przedstawiono jedną z takich list.
   
 ![Zrzut ekranu przedstawiający listę plików zwróconych z żądaniem strony.](../media/247a9422-76da-4b0c-bed3-ce77b05e4560.png)
   
@@ -83,7 +83,7 @@ Najlepszym sposobem określenia słabych punktów wydajności witryny jest skonf
 ## <a name="viewing-sharepoint-response-header-information"></a>Wyświetlanie informacji nagłówka odpowiedzi SharePoint
 <a name="F12ToolInfo"> </a>
 
-W usłudze SharePoint Online możesz uzyskać dostęp do informacji wysyłanych z powrotem do przeglądarki w nagłówku odpowiedzi dla każdego pliku. Najbardziej przydatną wartością do diagnozowania problemów z wydajnością jest **SPRequestDuration**, która wyświetla czas przetwarzania żądania na serwerze. Może to pomóc w ustaleniu, czy żądanie jest bardzo duże i intensywnie obciąża zasoby. Jest to najlepszy wgląd w to, ile pracy wykonuje serwer, aby obsłużyć stronę.
+W usłudze SharePoint Online możesz uzyskać dostęp do informacji wysyłanych z powrotem do przeglądarki w nagłówku odpowiedzi dla każdego pliku. Najbardziej przydatną wartością do diagnozowania problemów z wydajnością jest **SPRequestDuration**, która wyświetla czas przetwarzania żądania na serwerze. Może to pomóc w ustaleniu, czy żądanie jest duże i intensywnie obciąża zasoby. Jest to najlepszy wgląd w to, ile pracy wykonuje serwer, aby obsłużyć stronę.
 
 ### <a name="to-view-sharepoint-response-header-information"></a>Aby wyświetlić informacje nagłówka odpowiedzi SharePoint
   
@@ -102,8 +102,8 @@ W usłudze SharePoint Online możesz uzyskać dostęp do informacji wysyłanych 
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>Co powoduje problemy z wydajnością w usłudze SharePoint Online?
 <a name="F12ToolInfo"> </a>
 
-W artykule [Opcje nawigacji dla usługi SharePoint Online](navigation-options-for-sharepoint-online.md) przedstawiono przykład użycia wartości SPRequestDuration w celu określenia, że skomplikowana nawigacja strukturalna powodowała, że przetwarzanie strony na serwerze trwało długo. Przyjmując wartość dla lokacji punktu odniesienia (bez dostosowywania), można określić, czy ładowanie danego pliku zajmuje dużo czasu. Przykładem używanym w [opcjach nawigacji dla SharePoint Online](navigation-options-for-sharepoint-online.md) jest główny plik aspx. Ten plik zawiera większość kodu ASP.NET, który jest uruchamiany na potrzeby ładowania strony. W zależności od używanego szablonu witryny może to być start.aspx, home.aspx, default.aspx lub inna nazwa, jeśli dostosujesz stronę główną. Jeśli ta liczba jest znacznie wyższa niż w lokacji odniesienia, dobrze jest wskazać, że na stronie dzieje się coś złożonego, co powoduje problemy z wydajnością.
+W artykule [Opcje nawigacji dla usługi SharePoint Online](navigation-options-for-sharepoint-online.md) przedstawiono przykład użycia wartości SPRequestDuration w celu określenia, że skomplikowana nawigacja strukturalna powodowała, że przetwarzanie strony na serwerze trwało długo. Przyjmując wartość dla lokacji punktu odniesienia (bez dostosowywania), można określić, czy ładowanie danego pliku zajmuje dużo czasu. Przykładem używanym w [opcjach nawigacji dla SharePoint Online](navigation-options-for-sharepoint-online.md) jest główny plik aspx. Ten plik zawiera większość kodu ASP.NET, który jest uruchamiany na potrzeby ładowania strony. W zależności od używanego szablonu witryny może to być start.aspx, home.aspx, default.aspx lub inna nazwa, jeśli dostosujesz stronę główną. Jeśli ta liczba jest znacznie wyższa niż w lokacji odniesienia, oznacza to, że na stronie dzieje się coś złożonego, co powoduje problemy z wydajnością.
   
 Po zidentyfikowaniu problemu specyficznego dla witryny zalecanym sposobem ustalenia, co powoduje niską wydajność, jest wyeliminowanie wszystkich możliwych przyczyn, takich jak dostosowania stron, a następnie dodanie ich z powrotem do witryny jeden po drugim. Po usunięciu wystarczającej liczby dostosowań, które dobrze sprawdzają się na stronie, możesz dodać z powrotem określone dostosowania jeden po drugim.
   
-Jeśli na przykład masz bardzo złożoną nawigację, spróbuj zmienić nawigację, aby nie pokazywać podstrony, sprawdź narzędzia deweloperskie, aby sprawdzić, czy ma to znaczenie. Lub jeśli masz dużą ilość zestawień zawartości, spróbuj usunąć je ze swojej strony i sprawdzić, czy to poprawia sytuację. Jeśli wyeliminujesz wszystkie możliwe przyczyny i dodasz je po kolei, możesz łatwo zidentyfikować, które funkcje są największym problemem, a następnie pracować nad rozwiązaniem.
+Jeśli na przykład masz złożoną nawigację, spróbuj zmienić nawigację, aby nie pokazywać podstrony, sprawdź narzędzia deweloperskie, aby sprawdzić, czy ma to znaczenie. Lub jeśli masz dużą ilość zestawień zawartości, spróbuj usunąć je ze swojej strony i sprawdzić, czy to poprawia sytuację. Jeśli wyeliminujesz wszystkie możliwe przyczyny i dodasz je po kolei, możesz łatwo zidentyfikować, które funkcje są największym problemem, a następnie pracować nad rozwiązaniem.

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak używać automatyzacji ładunków (zbierania ładunków) do zbierania i uruchamiania zautomatyzowanych symulacji na potrzeby trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: 7fb3b0bbad5bbec8044a94da1943b0bd25eba865
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 862547884f9a7697382affda734af0f323c86c4a
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679379"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739566"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>Automatyzacje ładunków na potrzeby trenowania symulacji ataków
 
@@ -31,7 +31,7 @@ Aby utworzyć automatyzację ładunku, wykonaj następujące kroki:
 
 1. W portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com/>przejdź do obszaru Email & collaboration Attack simulation training **Automations** tab \> **Payload automations (Automatyzacje ładunków** za pomocą **funkcji e-mail & współpracy** \> **w zakresie** \> symulacji ataków).
 
-   Aby przejść bezpośrednio do karty **Automatyzacje** , użyj polecenia <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   Aby przejść bezpośrednio do karty **Automatyzacje** , na której można wybrać pozycję **Automatyzacje ładunku**, użyj polecenia <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. W **obszarze Automatyzacje ładunku** wybierz pozycję Utwórz ikonę ![automatyzacji.](../../media/m365-cc-sc-create-icon.png) **Tworzenie automatyzacji**.
 

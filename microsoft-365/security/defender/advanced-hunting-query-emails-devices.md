@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 099ba7abe53be6269c1d01c0d39d9e5cfbe3557d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0ca9a951ffd561113a806341d25bc1f0661732cc
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731697"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739954"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Wyszukiwanie zagrożeń na urządzeniach, w wiadomościach e-mail, aplikacjach i tożsamościach
 
@@ -82,7 +82,10 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
+Obejrzyj ten [krótki film wideo](https://www.youtube.com/watch?v=8qZx7Pp5XgM), aby dowiedzieć się, jak używać język zapytań Kusto do łączenia tabel.  
+
 ### <a name="get-device-information"></a>Pobieranie informacji o urządzeniu
+
 [Zaawansowany schemat wyszukiwania zagrożeń](advanced-hunting-schema-tables.md) zawiera obszerne informacje o urządzeniu w różnych tabelach. Na przykład [tabela DeviceInfo](advanced-hunting-deviceinfo-table.md) zawiera kompleksowe informacje o urządzeniu na podstawie regularnie agregowanych danych zdarzeń. To zapytanie używa `DeviceInfo` tabeli, aby sprawdzić, czy potencjalnie naruszony użytkownik (`<account-name>`) zalogował się na dowolnych urządzeniach, a następnie wyświetla listę alertów, które zostały wyzwolone na tych urządzeniach.
 
 >[!Tip]
@@ -152,9 +155,9 @@ DeviceInfo
 ```
 
 
-### <a name="example-query-for-macos-devices"></a>Przykładowe zapytanie dotyczące urządzeń z systemem macOS
+### <a name="example-query-for-macos-devices"></a>Przykładowe zapytanie dotyczące urządzeń macOS
 
-Użyj następującego przykładowego zapytania, aby wyświetlić wszystkie urządzenia z systemem macOS w wersji starszej niż Catalina.
+Użyj następującego przykładowego zapytania, aby wyświetlić wszystkie urządzenia z systemem macOS z wersją starszą niż Catalina.
 
 ```kusto
 DeviceInfo
@@ -188,6 +191,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>Scenariusze wyszukiwania zagrożeń
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Wyświetlanie listy działań logowania użytkowników, którzy otrzymali wiadomości e-mail, które nie zostały pomyślnie zamapowane
+
 [Automatyczne przeczyszczanie bez godziny (ZAP)](../office-365-security/zero-hour-auto-purge.md) adresuje złośliwe wiadomości e-mail po ich otrzymaniu. Jeśli zap nie powiedzie się, złośliwy kod może ostatecznie uruchomić na urządzeniu i pozostawić konta naruszone. To zapytanie sprawdza działanie logowania wykonane przez adresatów wiadomości e-mail, które nie zostały pomyślnie rozwiązane przez zap.
 
 ```kusto
@@ -205,6 +209,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 ```
 
 ### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Pobieranie prób logowania przez konta domeny objęte kradzieżą poświadczeń
+
 To zapytanie najpierw identyfikuje wszystkie alerty dostępu do poświadczeń w `AlertInfo` tabeli. Następnie scala lub łączy tabelę `AlertEvidence` , która analizuje nazwy kont docelowych i filtry tylko dla kont przyłączonych do domeny. Na koniec sprawdza tabelę `IdentityLogonEvents` , aby uzyskać wszystkie działania logowania przez przyłączone do domeny konta docelowe.
 
 ```kusto
@@ -225,6 +230,7 @@ AlertInfo
 ```
 
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>Sprawdzanie, czy na urządzeniach znajdują się pliki od znanego złośliwego nadawcy
+
 Zakładając, że znasz adres e-mail wysyłający złośliwe pliki (`MaliciousSender@example.com`), możesz uruchomić to zapytanie, aby ustalić, czy pliki tego nadawcy istnieją na urządzeniach. Za pomocą tego zapytania możesz na przykład zidentyfikować urządzenia, których dotyczy kampania dystrybucji złośliwego oprogramowania.
 
 ```kusto
@@ -241,6 +247,7 @@ DeviceFileEvents
 ```
 
 ### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>Przeglądanie prób logowania po otrzymaniu złośliwych wiadomości e-mail
+
 To zapytanie znajduje 10 najnowszych logowania wykonanych przez adresatów poczty e-mail w ciągu 30 minut od otrzymania znanych złośliwych wiadomości e-mail. To zapytanie umożliwia sprawdzenie, czy konta adresatów wiadomości e-mail zostały naruszone.
 
 ```kusto
@@ -261,6 +268,7 @@ IdentityLogonEvents
 ```
 
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>Przejrzyj działania programu PowerShell po otrzymaniu wiadomości e-mail od znanego złośliwego nadawcy
+
 Złośliwe wiadomości e-mail często zawierają dokumenty i inne specjalnie spreparowane załączniki, które uruchamiają polecenia programu PowerShell w celu dostarczenia dodatkowych ładunków. Jeśli wiesz, że wiadomości e-mail pochodzą od znanego złośliwego nadawcy (`MaliciousSender@example.com`), możesz użyć tego zapytania do wyświetlenia listy i przejrzenia działań programu PowerShell, które wystąpiły w ciągu 30 minut po odebraniu wiadomości e-mail od nadawcy.  
 
 ```kusto
@@ -283,6 +291,7 @@ DeviceProcessEvents
 ```
 
 ## <a name="related-topics"></a>Tematy pokrewne
+
 - [Omówienie zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md)
 - [Nauka języka zapytań](advanced-hunting-query-language.md)
 - [Praca z wynikami zapytań](advanced-hunting-query-results.md)

@@ -1,6 +1,6 @@
 ---
-title: Raporty dotyczące magazynu okresów
-description: Dowiedz się, jak raportować aktywność magazynów okresów
+title: Raporty magazynu terminów
+description: Dowiedz się, jak raportować aktywność magazynu terminów
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -13,36 +13,36 @@ ms.collection:
 - m365initiative-viva-topics
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 6daffa44356136615dc002b01bd7da5c575fe1fd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: dfb4841ac80b1018ec1839a6fa36ec36c4ba298b
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329143"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753975"
 ---
-# <a name="term-store-reports"></a>Raporty dotyczące magazynu okresów
+# <a name="term-store-reports"></a>Raporty magazynu terminów
 
-Dostęp do raportów dotyczących <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">magazynu okresów</a> można uzyskać w centrum SharePoint administracyjnego. Ta funkcja wymaga licencji [SharePoint Syntex](index.md) licencji.
+Dostęp do raportów dla <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">magazynu terminów</a> można uzyskać w centrum administracyjnym SharePoint. Ta funkcja wymaga licencji [SharePoint Syntex](index.md).
 
-**Rozwiń pozycję** Raporty, a następnie kliknij **pozycję Usługi zawartości**.
+Rozwiń węzeł **Raporty**, a następnie kliknij pozycję **Usługi zawartości**.
 
 Dostępne są następujące raporty:
 
-### <a name="term-store-operations"></a>Operacje przechowywania okresów
+### <a name="term-store-operations"></a>Operacje magazynu terminów
 
-Wyświetl najważniejsze operacje, które zostały wykonane w magazynie terminy w okresie 15-dniowym, oraz trend dziennych woluminów w tym okresie. Jest to przydatne, gdy trzeba na wysokim poziomie zrozumieć charakter zmian wprowadzonych w magazynie terminów oraz zidentyfikować nieoczekiwane trendy w ilości operacji. 
+Wyświetl najważniejsze operacje, które miały miejsce w magazynie terminów w okresie 15 dni, i zobacz trend dziennych woluminów w tym okresie. Jest to przydatne, gdy chcesz zrozumieć charakter zmian w magazynie terminów na wysokim poziomie i zidentyfikować wszelkie nieoczekiwane trendy w ilościach operacji. 
 
-### <a name="term-store-composition"></a>Skład magazynu terminowego
+### <a name="term-store-composition"></a>Kompozycja magazynu terminów
 
-Wyświetlanie rozkładu typów terminów między terminami zarządzanymi regularnie a słowami kluczowymi przedsiębiorstwa. W razie potrzeby przenieś wiele słów kluczowych do terminów zarządzanych. Jest to przydatne, gdy trzeba sprawdzić, czy użytkownicy aktywnie używa słów kluczowych. Można je przeglądać, aby zidentyfikować potencjalnych kandydatów na zarządzane terminy.
+Wyświetl rozkład typów terminów między zwykłymi terminami zarządzanymi i słowami kluczowymi przedsiębiorstwa. Przenieś wiele słów kluczowych do terminów zarządzanych w razie potrzeby. Jest to przydatne, gdy chcesz określić, czy użytkownicy aktywnie używają słów kluczowych. Możesz je przejrzeć, aby zidentyfikować potencjalnych kandydatów do terminów zarządzanych.
 
 ### <a name="open-and-closed-term-sets"></a>Otwarte i zamknięte zestawy terminów
 
-Wyświetlanie rozkładu otwartych i zamkniętych zestawów terminów. Jest to przydatne, jeśli chcesz dowiedzieć się, ile zestawów terminów umożliwia użytkownikom dodawanie terminów. W razie potrzeby można je przekonwertować na zamknięte, na przykład jeśli nieoczekiwanie rośnie liczba woluminów. 
+Wyświetl rozkład otwartych i zamkniętych zestawów terminów. Jest to przydatne, jeśli chcesz zrozumieć, ile zestawów terminów zezwala użytkownikom na dodawanie terminów. W razie potrzeby można je przekonwertować na zamknięte, na przykład jeśli woluminy nieoczekiwanie rosną. 
 
-### <a name="terms-without-synonyms"></a>Warunki bez synonimów
+### <a name="terms-without-synonyms"></a>Terminy bez synonimów
 
-Wyświetl liczbę terminów w każdym z dodanych języków roboczych, dla których nie zdefiniowano synonimów. Jest to pomocne przy identyfikowaniu języków, w których mają być definiować synonimy. Synonimy ułatwiają użytkownikom końcowemu jednoznacznienie i znajdowanie odpowiednich terminów do oznaczania zawartości.
+Wyświetl liczbę terminów w każdym z dodanych języków roboczych, które nie mają zdefiniowanych synonimów. Jest to przydatne do identyfikowania języków, w których chcesz zdefiniować synonimy. Synonimy ułatwiają użytkownikom końcowym rozróżnianie i znajdowanie prawidłowych terminów do oznaczania ich zawartości.
 
 ## <a name="see-also"></a>Zobacz też
 

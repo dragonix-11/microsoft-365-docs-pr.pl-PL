@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Uwierzytelnianie wieloskładnikowe (MFA) używa zarówno hasła, które powinno być silne, jak i dodatkowej metody weryfikacji.
-ms.openlocfilehash: e7d32776edb0f8fa6eaa4019f394870a6346e1d2
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: f939b187fc81381dae4959fdf14280bc839dadb0
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637654"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739876"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Uwierzytelnianie wieloskładnikowe dla Microsoft 365
 
@@ -62,7 +62,7 @@ Te sposoby są oparte na planie Microsoft 365.
 |Plan|Zalecenie|Typ klienta|
 |---|---|---|
 |Wszystkie plany Microsoft 365|Użyj wartości domyślnych zabezpieczeń, które wymagają uwierzytelniania wieloskładnikowego dla wszystkich kont użytkowników. <p> Uwierzytelnianie wieloskładnikowe dla poszczególnych użytkowników można również skonfigurować na poszczególnych kontach użytkowników, ale nie jest to zalecane.|Małe firmy|
-|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> licencje Premium P1 Azure Active Directory (Azure AD)|Użyj zasad dostępu warunkowego, aby wymagać uwierzytelniania wieloskładnikowego dla kont użytkowników na podstawie członkostwa w grupie, aplikacji lub innych kryteriów.|Małe firmy do przedsiębiorstwa|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> licencje Premium P1 Azure Active Directory (Azure AD)|Użyj [domyślnych zabezpieczeń lub zasad dostępu warunkowego](/microsoft-365/business-premium/m365bp-conditional-access) , aby wymagać uwierzytelniania wieloskładnikowego dla kont użytkowników na podstawie członkostwa w grupach, aplikacji lub innych kryteriów.|Małe firmy do przedsiębiorstwa|
 |Microsoft 365 E5 <p> licencje Azure AD — wersja Premium P2|Użyj usługi Azure AD Identity Protection, aby wymagać uwierzytelniania wieloskładnikowego na podstawie kryteriów ryzyka logowania.|Enterprise|
 ||||
 

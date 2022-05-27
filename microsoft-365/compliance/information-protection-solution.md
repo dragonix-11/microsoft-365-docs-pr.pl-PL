@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie rozwiązania do ochrony informacji za pomocą usługi Microsoft Purview
+title: Wdrażanie rozwiązania do ochrony informacji za pomocą Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,15 +17,15 @@ ms.collection:
 - m365solution-overview
 - m365solution-mip
 - m365initiative-compliance
-description: Opisowe wskazówki dotyczące wdrażania usługi Microsoft Purview Information Protection dla organizacji.
-ms.openlocfilehash: d672e113e4f1bdaca155881afba6262878d0ecb3
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+description: Opisowe wskazówki dotyczące wdrażania Microsoft Purview Information Protection dla organizacji.
+ms.openlocfilehash: fa826e7b9761ebcff34dd9ae6f7c2ee1b268bade
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294761"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759851"
 ---
-# <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Wdrażanie rozwiązania do ochrony informacji za pomocą usługi Microsoft Purview
+# <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Wdrażanie rozwiązania do ochrony informacji za pomocą Microsoft Purview
 
 >*[Licencjonowanie na potrzeby zgodności & zabezpieczeń Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
@@ -33,38 +33,38 @@ ms.locfileid: "65294761"
 
 Strategia ochrony informacji zależy od potrzeb biznesowych. Wiele organizacji musi przestrzegać przepisów, przepisów i praktyk biznesowych. Ponadto organizacje muszą chronić zastrzeżone informacje, takie jak dane dla określonych projektów.
 
-Usługa Microsoft Purview Information Protection (dawniej Microsoft Information Protection) zapewnia strukturę, proces i możliwości, których można użyć do realizacji konkretnych celów biznesowych. 
+Microsoft Purview Information Protection (dawniej Microsoft Information Protection) zapewnia strukturę, proces i możliwości, których można użyć do realizacji określonych celów biznesowych. 
 
-## <a name="microsoft-purview-information-protection-framework"></a>Struktura Information Protection usługi Microsoft Purview
+## <a name="microsoft-purview-information-protection-framework"></a>struktura Microsoft Purview Information Protection
 
-Użyj usługi Microsoft Purview Information Protection, aby ułatwić odnajdywanie, klasyfikowanie, ochronę i zarządzanie poufnymi informacjami wszędzie tam, gdzie się znajdują lub podróżują.
+Użyj Microsoft Purview Information Protection, aby ułatwić odnajdywanie, klasyfikowanie, ochronę i zarządzanie poufnymi informacjami wszędzie tam, gdzie się znajdują lub podróżują.
 
-![Omówienie rozwiązania microsoft Purview Information Protection](../media/mip-solution-overview-extended.png)
+![Omówienie rozwiązania Microsoft Purview Information Protection](../media/mip-solution-overview-extended.png)
 
 Obejrzyj następującą sesję konferencji Ignite, aby zobaczyć, jak te możliwości obsługują się nawzajem i na nich bazują: [Poznaj swoje dane, chroń swoje dane i zapobiegaj utracie danych przy użyciu Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
-Aby uzyskać informacje na temat ładu danych, zobacz [Wdrażanie rozwiązania do zarządzania danymi za pomocą usługi Microsoft Purview](data-governance-solution.md).
+Aby uzyskać informacje na temat zarządzania danymi, zobacz [Wdrażanie rozwiązania do zarządzania danymi za pomocą Microsoft Purview](data-governance-solution.md).
 
 ## <a name="licensing"></a>Licencjonowanie
 
-Funkcje Information Protection usługi Microsoft Purview są dostępne w usłudze Microsoft Purview. Wymagania dotyczące licencjonowania mogą się różnić nawet w zależności od opcji konfiguracji. Aby zidentyfikować wymagania i opcje licencjonowania, zobacz [Microsoft 365 wskazówki dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Microsoft Purview Information Protection możliwości są dołączone do Microsoft Purview. Wymagania dotyczące licencjonowania mogą się różnić nawet w zależności od opcji konfiguracji. Aby zidentyfikować wymagania i opcje licencjonowania, zobacz [Microsoft 365 wskazówki dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="know-your-data"></a>Poznaj swoje dane
 
-![Omówienie danych dotyczących rozwiązania microsoft Purview Information Protection](../media/knowyourdata-mipsolution.png)
+![Omówienie danych dotyczących rozwiązania Microsoft Purview Information Protection](../media/knowyourdata-mipsolution.png)
 
-Wiedza o tym, gdzie znajdują się dane poufne, jest często największym wyzwaniem dla wielu organizacji. Microsoft Purview Information Protection klasyfikacji danych ułatwia odnajdywanie i dokładne klasyfikowanie stale rosnących ilości danych tworzonych przez organizację. Graficzne reprezentacje ułatwiają uzyskanie wglądu w te dane, dzięki czemu można skonfigurować i monitorować zasady w celu ich ochrony i zarządzania nimi.
+Wiedza o tym, gdzie znajdują się dane poufne, jest często największym wyzwaniem dla wielu organizacji. Microsoft Purview Information Protection klasyfikacja danych ułatwia odnajdywanie i dokładne klasyfikowanie stale rosnących ilości danych tworzonych przez organizację. Graficzne reprezentacje ułatwiają uzyskanie wglądu w te dane, dzięki czemu można skonfigurować i monitorować zasady w celu ich ochrony i zarządzania nimi.
 
 
 |Krok|Opis|Więcej informacji|
 |:---|:----------|:---------------|
-|1| Opisz kategorie poufnych informacji, które chcesz chronić. <br /><br /> Masz już pojęcie o tym, jakie typy informacji są najbardziej wartościowe dla Twojej organizacji, a jakie typy nie są. Współpracuj z osobami biorącymi udział w projekcie, aby opisać te kategorie, ponieważ są to Twoje miejsce początkowe. | [Dowiedz się więcej o typach informacji poufnych](sensitive-information-type-learn-about.md) <p> [Dowiedz się więcej o klasyfikatorach z możliwością szkolenia](classifier-learn-about.md)|
+|1| Opisz kategorie poufnych informacji, które chcesz chronić. <br /><br /> Masz już pojęcie o tym, jakie typy informacji są najbardziej wartościowe dla Organizacji, a jakie typy nie są. Współpracuj z osobami biorącymi udział w projekcie, aby opisać te kategorie, które są punktem wyjścia. | [Dowiedz się więcej o typach informacji poufnych](sensitive-information-type-learn-about.md) <p> [Dowiedz się więcej o klasyfikatorach z możliwością szkolenia](classifier-learn-about.md)|
 |2| Odnajdywanie i klasyfikowanie poufnych danych. <br /><br /> Poufne dane w elementach można znaleźć przy użyciu wielu różnych metod, które obejmują domyślne zasady DLP, ręczne etykietowanie przez użytkowników i automatyczne rozpoznawanie wzorców przy użyciu typów informacji poufnych lub uczenia maszynowego. | [Dowiedz się więcej o klasyfikacji danych](data-classification-overview.md) <p> [Wideo: Klasyfikacja danych w centrum zgodności](https://www.microsoft.com/videoplayer/embed/RE4vx8x)|
 |3| Wyświetl poufne elementy.  <br /><br /> Użyj Eksploratora zawartości i Eksploratora działań, aby dokładniej przeanalizować poufne elementy i akcje, które użytkownicy podejmują w tych elementach.| [Wprowadzenie do eksploratora zawartości](data-classification-content-explorer.md) <p> [Wprowadzenie do eksploratora aktywności](data-classification-activity-explorer.md)|
 
 ## <a name="protect-your-data"></a>Chroń swoje dane
 
-![Omówienie ochrony danych dla rozwiązania microsoft Purview Information Protection](../media/protect-mipsolution.png)
+![Omówienie ochrony danych na potrzeby rozwiązania Microsoft Purview Information Protection](../media/protect-mipsolution.png)
 
 Skorzystaj z informacji, które pozwalają dowiedzieć się, gdzie znajdują się dane poufne, aby ułatwić bardziej efektywną ochronę. Nie trzeba jednak czekać — możesz natychmiast zacząć chronić dane za pomocą kombinacji ręcznego, domyślnego i automatycznego etykietowania. Następnie użyj [Eksploratora zawartości](data-classification-content-explorer.md) i [eksploratora działań](data-classification-activity-explorer.md) z poprzedniej sekcji, aby potwierdzić, jakie elementy są oznaczone etykietami i jak są używane etykiety.
 
@@ -74,21 +74,21 @@ Skorzystaj z informacji, które pozwalają dowiedzieć się, gdzie znajdują si�
 | 2|Etykietowanie i ochrona elementów dla Microsoft 365 aplikacji i usług. <br /><br />Etykiety poufności są obsługiwane w przypadku kontenerów Microsoft 365 Word, Excel, PowerPoint, Outlook i kontenerów obejmujących witryny SharePoint i OneDrive oraz grupy Microsoft 365. Użyj kombinacji metod etykietowania, takich jak ręczne etykietowanie, automatyczne etykietowanie, etykieta domyślna i obowiązkowe etykietowanie.| [Zarządzanie etykietami poufności w aplikacjach Office](sensitivity-labels-office-apps.md) <br /><br /> [Włącz etykiety poufności dla plików pakietu Office w programie SharePoint i usłudze OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) <br /><br /> [Włączanie współtworzyła pliki zaszyfrowane przy użyciu etykiet poufności](sensitivity-labels-coauthoring.md) <br /><br /> [Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /><br /> [Używanie etykiet poufności z Microsoft Teams, grupami Microsoft 365 i witrynami SharePoint](sensitivity-labels-teams-groups-sites.md) <br /><br /> [Użyj etykiet poufności, aby ustawić domyślny link do udostępniania witryn i dokumentów w SharePoint i OneDrive](sensitivity-labels-default-sharing-link.md) <br /><br /> [Stosowanie etykiety poufności do modelu w usłudze Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) <br /><br /> [Etykiety poufności w Power BI](/power-bi/admin/service-security-sensitivity-label-overview) |
 |3|Odnajdywanie, etykietowanie i ochrona poufnych elementów znajdujących się w magazynach danych w chmurze przy użyciu [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) z etykietami poufności.| [Odnajdywanie, klasyfikowanie, etykietowanie i ochrona danych regulowanych i poufnych przechowywanych w chmurze](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |4|Odnajdywanie, etykietowanie i ochrona poufnych elementów znajdujących się w lokalnych magazynach danych przez wdrożenie [skanera ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/deploy-aip-scanner) z etykietami poufności.| [Konfigurowanie i instalowanie skanera ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)|
-|5|Rozszerzanie etykiet poufności na platformę Azure przy użyciu usługi [Microsoft Purview Data Map](/azure/purview/overview) w celu odnajdywania i etykietowania elementów dla Azure Blob Storage, plików platformy Azure, Azure Data Lake Storage Gen1 i Azure Data Lake Storage Gen12. | [Etykietowanie w usłudze Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)|
+|5|Rozszerzanie etykiet poufności na platformę Azure przy użyciu [Microsoft Purview Data Map](/azure/purview/overview) w celu odnajdywania i etykietowania elementów dla Azure Blob Storage, plików platformy Azure, Azure Data Lake Storage Gen1 i Azure Data Lake Storage Gen12. | [Etykietowanie w Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)|
 
 Jeśli jesteś deweloperem, który chce rozszerzyć etykiety poufności na aplikacje biznesowe lub aplikacje SaaS innych firm, zobacz [konfigurację i konfigurację zestawu SDK Microsoft Information Protection (MIP](/information-protection/develop/setup-configure-mip)). 
 
 ### <a name="additional-protection-capabilities"></a>Dodatkowe możliwości ochrony
 
-Usługa Microsoft Purview oferuje dodatkowe funkcje ułatwiające ochronę danych. Nie każdy klient potrzebuje tych możliwości, a niektóre mogą zostać zastąpione przez nowsze wersje.
+Microsoft Purview oferuje dodatkowe funkcje ułatwiające ochronę danych. Nie każdy klient potrzebuje tych możliwości, a niektóre mogą zostać zastąpione przez nowsze wersje.
 
-Aby uzyskać pełną listę możliwości ochrony, użyj strony [Ochrona danych za pomocą usługi Microsoft Purview](information-protection.md) .
+Aby uzyskać pełną listę możliwości ochrony, użyj strony [Ochrona danych za pomocą Microsoft Purview](information-protection.md).
 
 ## <a name="prevent-data-loss"></a>Zapobieganie utracie danych
 
-![Zapobieganie utracie danych dla rozwiązania microsoft Purview Information Protection — omówienie](../media/dlp-mipsolution.png)
+![Zapobieganie utracie danych dla rozwiązania Microsoft Purview Information Protection — omówienie](../media/dlp-mipsolution.png)
 
-Wdróż zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview, aby regulować i zapobiegać niewłaściwemu udostępnianiu, transferowi lub używaniu poufnych danych w aplikacjach i usługach. Te zasady ułatwiają użytkownikom podejmowanie właściwych decyzji i podejmowanie właściwych akcji podczas korzystania z poufnych danych.
+Wdróż zasady Ochrona przed utratą danych w Microsoft Purview (DLP), aby regulować i zapobiegać niewłaściwemu udostępnianiu, transferowi lub używaniu poufnych danych w aplikacjach i usługach. Te zasady ułatwiają użytkownikom podejmowanie właściwych decyzji i podejmowanie właściwych akcji podczas korzystania z poufnych danych.
 
 |Krok|Opis|Więcej informacji|
 |:---|:----------|:---------------|
@@ -102,10 +102,10 @@ Wdróż zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview, 
 
 Edukacja moduły dla konsultantów i administratorów:
 
-- [Wprowadzenie do ochrony informacji i ładu w Microsoft 365](/learn/modules/m365-compliance-information-governance)
+- [Wprowadzenie do ochrony informacji i zarządzania cyklem życia danych w Microsoft Purview](/learn/modules/m365-compliance-information-governance)
 - [Klasyfikowanie danych pod kątem ochrony i ładu](/learn/modules/m365-compliance-information-classify-data)
-- [Ochrona informacji w Microsoft 365](/learn/modules/m365-compliance-information-protect-information)
-- [Zapobieganie utracie danych w Microsoft 365](/learn/modules/m365-compliance-information-prevent-data-loss)
+- [Ochrona informacji w Microsoft Purview](/learn/modules/m365-compliance-information-protect-information)
+- [Zapobieganie utracie danych w Microsoft Purview](/learn/modules/m365-compliance-information-prevent-data-loss)
 
 Aby pomóc użytkownikom w trenowaniu stosowania i używania skonfigurowanych dla nich etykiet poufności, zobacz [Dokumentacja użytkownika końcowego dotycząca etykiet poufności](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 

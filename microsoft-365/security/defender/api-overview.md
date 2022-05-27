@@ -1,7 +1,7 @@
 ---
-title: Omówienie Microsoft 365 Defender API
-description: Informacje o dostępnych interfejsach API w programie Microsoft 365 Defender
-keywords: api, api, overview, incident, incidents, threat hunting, microsoft 365 defender
+title: Omówienie interfejsów API usługi Microsoft 365 Defender
+description: Dowiedz się więcej o dostępnych interfejsach API w Microsoft 365 Defender
+keywords: api, apis, overview, incident, incidents, threat hunting, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: ec4a497fd0ee428fbc664ae064ec95f74fcdce85
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: c2a340c2ad147e32082a50e326a2e0c7e11718c2
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010392"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739610"
 ---
-# <a name="overview-of-microsoft-365-defender-apis"></a>Omówienie Microsoft 365 Defender API
+# <a name="overview-of-microsoft-365-defender-apis"></a>Omówienie interfejsów API usługi Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,35 +37,38 @@ ms.locfileid: "63010392"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Niektóre informacje odnoszą się do wstępnie wypuszczonych produktów, które mogą zostać znacząco zmodyfikowane przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+> Niektóre informacje odnoszą się do wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
-Microsoft 365 Defender jest zbudowana na platformie gotowej do integracji.
+Microsoft 365 Defender jest oparta na platformie gotowej do integracji.
 
-Użyj interfejsów API Microsoft 365 Defender, aby zautomatyzować przepływy pracy na podstawie udostępnionych zdarzeń i zaawansowanych tabel chłoń.
+Interfejsy API Microsoft 365 Defender umożliwiają automatyzowanie przepływów pracy na podstawie udostępnionego zdarzenia i zaawansowanych tabel wyszukiwania zagrożeń.
 
-- **[Kolejka połączonych zdarzeń](api-incident.md)** — skoncentruj się na tym, co najważniejsze, grupując pełny zakres ataków i wszystkie zasoby, na które wpływa ten wpływ, przy użyciu interfejsu API zdarzenia.
+- **[Kolejka połączonych zdarzeń](api-incident.md)** — skoncentruj się na tym, co jest krytyczne, grupując pełny zakres ataków i wszystkie zasoby, których dotyczy problem, w ramach interfejsu API zdarzeń.
 
-- **[Poszukiwania zagrożeń między](api-advanced-hunting.md)** produktami — korzystaj z wiedzy organizacyjnej zespołu zabezpieczeń, aby poszukać znaków naruszenia bezpieczeństwa, tworząc własne zapytania niestandardowe w celu przesieszczenia nieprzetworzonych danych zebranych w wielu produktach ochrony.
+- **[Wyszukiwanie zagrożeń między produktami](api-advanced-hunting.md)** — wykorzystaj wiedzę organizacyjną zespołu ds. zabezpieczeń, aby wyszukiwać oznaki naruszenia zabezpieczeń, tworząc własne niestandardowe zapytania służące do przesiewania nieprzetworzonych danych zebranych w wielu produktach ochrony.
 
-- **[Interfejs API przesyłania strumieniowego zdarzeń](streaming-api.md)** — wysyłaj zdarzenia i alerty w czasie rzeczywistym w pojedynczym strumieniu danych w momencie ich wystąpienia.
+- **[Interfejs API przesyłania strumieniowego zdarzeń](streaming-api.md)** — wysyła zdarzenia i alerty w czasie rzeczywistym w pojedynczym strumieniu danych w miarę ich występowania.
 
-Wraz z tymi Microsoft 365 Defender API, wszystkie nasze inne produkty zabezpieczające udostępniają dodatkowe interfejsy [API](api-articles.md), aby ułatwić Ci skorzystanie z ich unikatowych możliwości.
+Wraz z tymi interfejsami API specyficznymi dla Microsoft 365 Defender każdy z naszych innych produktów zabezpieczeń udostępnia [dodatkowe interfejsy API](api-articles.md), aby ułatwić korzystanie z ich unikatowych możliwości.
 
 > [!NOTE]
-> Przejście na ujednolicony portal nie powinno mieć wpływu na pulpity nawigacyjne usługi PowerBi oparte na interfejsach API programu Microsoft Defender dla punktów końcowych. Możesz nadal pracować z istniejącymi interfejsami API niezależnie od przejścia portalu interakcyjnego.
+> Przejście do ujednoliconego portalu nie powinno mieć wpływu na pulpity nawigacyjne usługi PowerBi oparte na interfejsach API Ochrona punktu końcowego w usłudze Microsoft Defender. Możesz kontynuować pracę z istniejącymi interfejsami API niezależnie od interaktywnego przejścia do portalu.
+
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak za pomocą Microsoft 365 Defender zautomatyzować przepływy pracy i zintegrować aplikacje.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M?rel=0]
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-| **Opis sposobu uzyskiwania dostępu do interfejsów API** |
+| **Informacje na temat uzyskiwania dostępu do interfejsów API** |
 |-|
-| [Informacje o przydziałach i licencjonowaniu interfejsu API](api-terms.md) |
-| [Uzyskiwanie dostępu do Microsoft 365 Defender API](api-access.md) |
+| [Dowiedz się więcej o limitach przydziału i licencjonowaniu interfejsu API](api-terms.md) |
+| [Uzyskiwanie dostępu do interfejsów API Microsoft 365 Defender](api-access.md) |
 | **Tworzenie aplikacji** |
-| [Tworzenie aplikacji "Witaj świecie"](api-hello-world.md) |
-| [Tworzenie aplikacji w celu uzyskania Microsoft 365 Defender interfejsów API w imieniu użytkownika](api-create-app-user-context.md) |
-| [Tworzenie aplikacji w celu uzyskania Microsoft 365 Defender dostępu bez użytkownika](api-create-app-web.md) |
-| [Tworzenie aplikacji z dostępem partnera z wieloma dzierżawami do Microsoft 365 Defender API](api-partner-access.md) |
+| [Tworzenie aplikacji "Hello world"](api-hello-world.md) |
+| [Tworzenie aplikacji w celu uzyskania dostępu do interfejsów API Microsoft 365 Defender w imieniu użytkownika](api-create-app-user-context.md) |
+| [Tworzenie aplikacji w celu uzyskania dostępu do Microsoft 365 Defender bez użytkownika](api-create-app-web.md) |
+| [Tworzenie aplikacji z dostępem partnerów z wieloma dzierżawami do interfejsów API Microsoft 365 Defender](api-partner-access.md) |
 | **Rozwiązywanie problemów i obsługa aplikacji** |
-| [Opis kodów błędów interfejsu API](api-error-codes.md) |
-| [Zarządzanie tajemnicami w aplikacjach za pomocą magazynu kluczy platformy Azure](/learn/modules/manage-secrets-with-azure-key-vault/) |
-| [Implementowanie autoryzacji protokołu OAuth 2.0 do logowania użytkownika](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
+| [Omówienie kodów błędów interfejsu API](api-error-codes.md) |
+| [Zarządzanie wpisami tajnymi w aplikacjach przy użyciu usługi Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [Implementowanie autoryzacji protokołu OAuth 2.0 na potrzeby logowania użytkownika](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

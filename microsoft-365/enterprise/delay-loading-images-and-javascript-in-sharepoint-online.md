@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Dowiedz się, jak skrócić czas ładowania stron usługi SharePoint Online przy użyciu języka JavaScript w celu opóźnienia ładowania obrazów i innych niż istotne skrypty JavaScript.
-ms.openlocfilehash: af75b3ede1136894bea0a7f4c00cc9498d194fe3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8252e169e36dc6976a7be0b4815915ee72283eff
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101298"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754737"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Opóźnienie ładowania obrazów i języka JavaScript w usłudze SharePoint Online
 
 W tym artykule opisano sposób skrócenia czasu ładowania stron usługi SharePoint Online przy użyciu języka JavaScript w celu opóźnienia ładowania obrazów, a także oczekiwania na załadowanie nieistotnego kodu JavaScript do momentu załadowania strony.
   
-Obrazy mogą negatywnie wpływać na szybkość ładowania stron w SharePoint Online. Domyślnie większość nowoczesnych przeglądarek internetowych pobiera obrazy wstępnie podczas ładowania strony HTML. Może to spowodować niepotrzebne powolne ładowanie strony, jeśli obrazy nie są widoczne na ekranie, dopóki użytkownik nie przewinie w dół. Obrazy mogą zablokować przeglądarce możliwość ładowania widocznej części strony. Aby obejść ten problem, możesz użyć języka JavaScript, aby najpierw pominąć ładowanie obrazów. Ponadto ładowanie nieistotnego kodu JavaScript może spowolnić czas pobierania na stronach SharePoint. W tym temacie opisano niektóre metody, których można użyć w celu skrócenia czasu ładowania stron za pomocą języka JavaScript w usłudze SharePoint Online.
+Obrazy mogą negatywnie wpływać na szybkość ładowania stron w SharePoint Online. Domyślnie większość nowoczesnych przeglądarek internetowych pobiera obrazy wstępnie podczas ładowania strony HTML. Może to spowodować niepotrzebne spowolnienie ładowania strony, jeśli obrazy nie są widoczne na ekranie, dopóki użytkownik nie przewinie w dół. Obrazy mogą zablokować przeglądarce możliwość ładowania widocznej części strony. Aby obejść ten problem, możesz użyć języka JavaScript, aby najpierw pominąć ładowanie obrazów. Ponadto ładowanie nieistotnego kodu JavaScript może spowolnić czas pobierania na stronach SharePoint. W tym temacie opisano niektóre metody, których można użyć w celu skrócenia czasu ładowania stron za pomocą języka JavaScript w usłudze SharePoint Online.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Skrócenie czasu ładowania strony przez opóźnienie ładowania obrazów na stronach SharePoint Online przy użyciu języka JavaScript
 
@@ -107,7 +107,7 @@ Po zakończeniu pisania delayLoadImages.js możesz dodać zawartość pliku do s
 
 ### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Przykład: odwoływanie się do pliku delayLoadImages.js Języka JavaScript ze strony wzorcowej w usłudze SharePoint Online
   
-Aby to działało, należy również odwołać się do trybu jQuery na stronie wzorcowej. W poniższym przykładzie podczas początkowego ładowania strony widać, że załadowano tylko jeden obraz, ale na stronie jest jeszcze kilka.
+Aby to działało, należy również odwołać się do trybu jQuery na stronie wzorcowej. W poniższym przykładzie na początkowym załadowaniu strony widać, że załadowano tylko jeden obraz, ale na stronie jest ich jeszcze kilka.
   
 ![Zrzut ekranu przedstawiający jeden obraz załadowany na stronie.](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
@@ -115,7 +115,7 @@ Na poniższym zrzucie ekranu przedstawiono pozostałe obrazy pobrane po przewini
   
 ![Zrzut ekranu przedstawiający kilka obrazów załadowanych na stronie.](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-Opóźnienie ładowania obrazów przy użyciu języka JavaScript może być efektywną techniką zwiększania wydajności; Jeśli jednak technika zostanie zastosowana w publicznej witrynie internetowej, wyszukiwarki nie będą mogły przeszukiwać obrazów w taki sam sposób, w jaki przeszukiwałyby regularnie sformułowany obraz. Może to mieć wpływ na klasyfikacje w wyszukiwarkach, ponieważ metadane na samym obrazie nie są tak naprawdę dostępne, dopóki strona nie zostanie załadowana. Przeszukiwarki aparatu wyszukiwania odczytują tylko kod HTML i w związku z tym nie będą widzieć obrazów jako zawartości na stronie. Obrazy są jednym z czynników używanych do klasyfikacji stron w wynikach wyszukiwania. Jednym ze sposobów obejścia tego celu jest użycie tekstu wprowadzającego dla obrazów.
+Opóźnienie ładowania obrazów przy użyciu języka JavaScript może być efektywną techniką zwiększania wydajności; Jeśli jednak technika zostanie zastosowana w publicznej witrynie internetowej, wyszukiwarki nie będą mogły przeszukiwać obrazów w taki sam sposób, w jaki przeszukiwałyby regularnie sformułowany obraz. Może to mieć wpływ na klasyfikacje aparatów wyszukiwania, ponieważ metadane na samym obrazie nie są tak naprawdę dostępne, dopóki strona nie zostanie załadowana. Przeszukiwarki aparatu wyszukiwania odczytują tylko kod HTML i w związku z tym nie będą widzieć obrazów jako zawartości na stronie. Obrazy są jednym z czynników używanych do klasyfikacji stron w wynikach wyszukiwania. Jednym ze sposobów obejścia tego celu jest użycie tekstu wprowadzającego dla obrazów.
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>przykład kodu GitHub: wstrzykiwanie kodu JavaScript w celu zwiększenia wydajności
 

@@ -18,53 +18,53 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: ''
-description: 'Podsumowanie: Office 365 GCC i DoD mają dodatkowe wymagania dotyczące zabezpieczeń sieci'
+description: 'Podsumowanie: Office 365 GCC High i DoD mają dodatkowe wymagania dotyczące zabezpieczeń sieci'
 hideEdit: true
-ms.openlocfilehash: c4fbfc52085b634329130c2785ce683109b8febe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86d3eb3fb4db42eda2be0c2c66fc754fbfd35f1e
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985629"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754273"
 ---
-# <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Dodatkowe wymagania dotyczące zabezpieczeń sieci dla Office 365 GCC High i DOD
+# <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Dodatkowe wymagania dotyczące zabezpieczeń sieci dla usługi Office 365 GCC High i DoD
 
-*Ten artykuł dotyczy najwyższego Office 365 GCC, Office 365 DOD, Microsoft 365 GCC i Microsoft 365 DOD.*
+*Ten artykuł dotyczy Office 365 GCC High, Office 365 DOD, Microsoft 365 GCC High i Microsoft 365 DOD.*
 
-Office 365 GCC High and DOD to bezpieczne środowiska w chmurze zaspokajane przez rząd Stanów Zjednoczonych oraz jego dostawców i wykonawców.  W tych środowiskach w chmurze obowiązują dodatkowe ograniczenia sieciowe, do których mają dostęp zewnętrzne punkty końcowe, do których mogą uzyskać dostęp usługi.
+Office 365 GCC High i DOD to bezpieczne środowiska w chmurze, które spełniają potrzeby Stany Zjednoczone Government oraz jej dostawców i wykonawców.  Te środowiska w chmurze mają dodatkowe ograniczenia sieci, do których mogą uzyskiwać dostęp zewnętrzne punkty końcowe usług.
 
-GCC klienci korzystający z usługi High and DOD, którzy planują korzystać z tożsamości federujących lub współistnienia hybrydowego, mogą wymagać od firmy Microsoft zezwolenia na dostęp przychodzący i/lub wychodzący do Twoich istniejących wdrożeń lokalnych.  Oto przykłady tych działań:
+GCC klienci o wysokiej dostępności i dod planujących korzystanie z tożsamości federacyjnych lub współistnienia hybrydowego mogą wymagać od firmy Microsoft zezwolenia na dostęp przychodzący i/lub wychodzący do istniejących wdrożeń lokalnych.  Przykłady tych działań obejmują:
 
-* Korzystanie z tożsamości federowanych (z usługami federacyjną Active Directory lub podobnymi obsługiwanymi usługami STS)
-* Współistnienie hybrydowe z wdrożeniem lokalnym programu Exchange Server lub Skype dla firm lokalnym
+* Korzystanie z tożsamości federacyjnych (z Active Directory Federation Services lub podobnym obsługiwanym usługą STS)
+* Współistnienie hybrydowe z lokalnym wdrożeniem Exchange Server lub Skype dla firm
 * Migracja istniejącej zawartości użytkownika z systemu lokalnego
 
-Aby zezwolić usłudze na komunikowanie się z lokalnymi punktami końcowymi, musisz wysłać wiadomość e-mail Office 365 inżyniera w celu zmiany sieci.
+Aby umożliwić usłudze komunikowanie się z lokalnymi punktami końcowymi, **należy wysłać** wiadomość e-mail do Office 365 inżynierów w celu wprowadzenia zmian w sieci.
 
 > [!WARNING]
-> Wszystkie żądania mają **t-tygodniową** sla i nie można ich przyspieszyć ze względu na wymagane mechanizmy kontroli zabezpieczeń i zgodności oraz potoki wdrażania.  Obejmuje to wstępne dołączanie żądań sieciowych, a także wszelkie zmiany po migracji do usługi.  Upewnij się, że zespoły sieciowe wiedzą o tej osi czasu i uwzględnij ją w cyklach planowania.
+> Wszystkie żądania mają **trzytygodniową** umową SLA i nie mogą być przyspieszone ze względu na wymagane mechanizmy kontroli zabezpieczeń i zgodności oraz potoki wdrażania.  Obejmuje to początkowe żądania sieciowe dołączania, a także wszelkie zmiany po migracji do usługi.  Upewnij się, że zespoły sieciowe wiedzą o tej osi czasu i uwzględniją ją w swoich cyklach planowania.
 
-Wyślij wiadomość e-mail [do Office 365 dla instytucji rządowych Allow-List prośby](mailto:o365gwlt@microsoft.com) o następujące informacje:
+Wyślij wiadomość e-mail do [Office 365 dla instytucji rządowych Allow-List Requests z następującymi informacjami](mailto:o365gwlt@microsoft.com):
 
-* **Do**: [Office 365 dla instytucji rządowych Allow-List wniosków](mailto:o365gwlt@microsoft.com)
-* **Od**: Administrator dzierżawy — wysyłanie wiadomości e-mail **musi** być zgodne z kontaktem administratora globalnego w dzierżawie
-* **Temat wiadomości e** Office 365 GCC e-mail: żądanie dużej contoso.onmicrosoft.us sieciowe — contoso.onmicrosoft.us (zamienianie na nazwę Twojej dzierżawy)
+* **Do**: [Office 365 dla instytucji rządowych Allow-List żądań](mailto:o365gwlt@microsoft.com)
+* **Od**: Administrator dzierżawy — wyślij wiadomość e-mail **musi być** zgodna z kontaktem administratora globalnego w dzierżawie
+* **Temat wiadomości e-mail**: Office 365 GCC żądanie wysokiej sieci — contoso.onmicrosoft.us (zastąp ciąg nazwą dzierżawy)
 
 Treść wiadomości powinna zawierać następujące dane:
 
-* Nazwa dzierżawy usług Microsoft Online Services (na przykład contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
-* Lista dystrybucyjna poczty e-mail, z która firma Microsoft będzie komunikować w celu komunikacji w ruchu w związku ze zmianami sieci i/lub działań w przypadku nieprawidłowych podsieci
-* Wskazuje, czy planujesz używać Microsoft Teams hybrydowych z wdrożeniami lokalnymi
-* Adres URL (na przykład adres URL usługi sts.contoso.com) i zakres adresów IP w notacji CIDR (na przykład w systemie tożsamości federacji). 10.1.1.0/28)
-* Adres URL listy odwołań certyfikatów i zakres adresów IP lokalnej listy odwołań certyfikatów PKI w notacji CIDR
-* Zewnętrznie dostępny adres URL i zakres adresów IP Exchange Server wdrożenia lokalnego w notacji CIDR
+* Nazwa dzierżawy usługi Microsoft Online Services (na przykład contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
+* Lista dystrybucyjna wiadomości e-mail, z którą firma Microsoft będzie komunikować się w celu komunikacji w trybie ciągłej komunikacji związanej ze zmianami sieci i/lub kontynuacją nieprawidłowych podsieci
+* Określ, czy zamierzasz używać Microsoft Teams współistnienia hybrydowego z wdrożeniami lokalnymi
+* Adres URL systemu tożsamości federacyjnej dostępny zewnętrznie (na przykład sts.contoso.com) i zakres adresów IP w notacji CIDR (na przykład. 10.1.1.0/28)
+* Lokalny adres URL listy odwołania certyfikatów PKI i zakres adresów IP w notacji CIDR
+* Zewnętrznie dostępny adres URL i zakres adresów IP dla Exchange Server wdrożenia lokalnego w notacji CIDR
 * Zewnętrznie dostępny adres URL i zakres adresów IP dla Skype dla firm wdrożenia lokalnego w notacji CIDR
 
-Ze względów bezpieczeństwa i zgodności pamiętaj o następujących ograniczeniach dotyczących Twojego żądania:
+Ze względów bezpieczeństwa i zgodności należy pamiętać o następujących ograniczeniach dotyczących żądania:
 
-* Istnieje cztery ograniczenie podsieci na dzierżawę
-* Podsieci muszą być w notacji CIDR (na przykład 10.1.1.0/28)
+* Istnieje ograniczenie czterech podsieci na dzierżawę
+* Podsieci muszą znajdować się w notacji CIDR (na przykład 10.1.1.0/28)
 * Zakresy podsieci nie mogą być większe niż /24
-* Nie **możemy uwzględniać** żądań zezwalania na dostęp do komercyjnych usług w chmurze (komercyjnych usług Office 365, Google G-Suite, Amazon Web Services itp.).
+* Nie **możemy** uwzględnić żądań zezwalania na dostęp do komercyjnych usług w chmurze (komercyjnych Office 365, Google G-Suite, Amazon Web Services itp.)
 
-Po otrzymaniu i zatwierdzeniu żądania przez firmę Microsoft 3-tygodniowa umowa SLA jest na jej wdrożenie i nie można jej przyspieszyć.  Po otrzymaniu prośby otrzymasz potwierdzenie wstępne i potwierdzanie końcowe po jego ukończeniu.
+Po otrzymaniu i zatwierdzeniu żądania przez firmę Microsoft istnieje trzytygodniowa umowa SLA na potrzeby implementacji i nie można jej przyspieszyć.  Otrzymasz początkowe potwierdzenie, gdy otrzymamy Twoje żądanie i ostateczne potwierdzenie po jego zakończeniu.

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Określanie miejsca przechowywania Microsoft 365 danych klientów w Unii Europejskiej
-ms.openlocfilehash: 2f4a6133724d868f3caeaf977517c74fe56bb4fd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 03f67a91f25f8333a92334ef633687e2b41e80a6
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095383"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753655"
 ---
 # <a name="data-locations-for-the-european-union"></a>Lokalizacje danych dla Unii Europejskiej
 
@@ -94,7 +94,7 @@ Tylko w rzadkich przypadkach inżynier firmy Microsoft potrzebuje dostępu do da
 
 Klienci mogą korzystać z kluczy zarządzanych przez klienta, aby jeszcze bardziej uniemożliwić odczytywanie danych w przypadku nieautoryzowanego dostępu. Szyfrowanie po stronie serwera i po stronie klienta może polegać na kluczach zarządzanych przez klienta lub kluczach dostarczonych przez klienta. W obu przypadkach firma Microsoft nie miałaby dostępu do kluczy szyfrowania i nie może odszyfrować danych. Inspekcja SOC przeprowadzona dwa razy w roku przez audytora akredytowanego przez AICPA w celu zweryfikowania skuteczności naszych mechanizmów kontroli bezpieczeństwa w zakresie inspekcji. Raport zaświadczania SOC 2 typu 2 opublikowany przez audytora wyjaśnia, w jakich okolicznościach może wystąpić dostęp do danych klientów i w jaki sposób.
 
-Oprócz przechowywania i przetwarzania danych podczas korzystania z Usługi online firma Microsoft generuje dane usługi w celu monitorowania kondycji systemu i wykonywania operacji usług, takich jak rozwiązywanie problemów. Jako środek ochrony prywatności firma Microsoft generuje i opiera się na pseudonimicznych identyfikatorach w tej usłudze wygenerowanych danych, aby móc odróżnić jednego użytkownika od innego bez identyfikowania rzeczywistych użytkowników. Identyfikatory pseudonimowe nie identyfikują bezpośrednio osoby, a informacje umożliwiające mapowanie pseudonimicznych identyfikatorów na rzeczywistych użytkowników są chronione jako część danych.
+Oprócz przechowywania i przetwarzania danych podczas korzystania z Usługi online firma Microsoft generuje dane usługi w celu monitorowania kondycji systemu i wykonywania operacji usług, takich jak rozwiązywanie problemów. Jako środek ochrony prywatności firma Microsoft generuje i opiera się na pseudonimicznych identyfikatorach w tej usłudze wygenerowanych danych, aby móc odróżnić jednego użytkownika od innego bez identyfikowania rzeczywistych użytkowników. Identyfikatory pseudonimowe nie identyfikują bezpośrednio osoby, a informacje, które umożliwiają mapowanie pseudonimicznych identyfikatorów rzeczywistym użytkownikom, są chronione jako część danych.
 
 Aby dowiedzieć się więcej, zobacz [KtoTo mogą uzyskiwać dostęp do danych](https://www.microsoft.com/trust-center/privacy/data-access) oraz jakie warunki i [podprocesory oraz prywatność danych](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4qVL2).
 

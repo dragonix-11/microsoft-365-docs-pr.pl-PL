@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 3832cd64ce66e667cced13c41bc34c28d575b373
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: b2d66fce2b1eeffa4500c01a07f271b5b1a96ab7
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637522"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754781"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migracja skrzynki pocztowej między dzierżawami (wersja zapoznawcza)
 
@@ -87,7 +87,7 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [Centrum admi
 
 10. Teraz na lewym pasku nawigacyjnym kliknij pozycję Uprawnienia interfejsu API, aby wyświetlić uprawnienia przypisane do aplikacji.
 
-11. Domyślnie użytkownik. Uprawnienia do odczytu są przypisywane do utworzonej aplikacji, ale nie są one wymagane do migracji skrzynki pocztowej. Możesz usunąć to uprawnienie.
+11. Domyślnie użytkownik. Uprawnienia do odczytu są przypisywane do utworzonej aplikacji, ale nie wymagamy ich w przypadku migracji skrzynki pocztowej, możesz usunąć to uprawnienie.
 
     ![Uprawnienia aplikacji](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
 
@@ -243,7 +243,7 @@ Upewnij się, że w organizacji docelowej ustawiono następujące obiekty i atry
       - UserPrincipalName: nazwa UPN będzie zgodna z nową tożsamością użytkownika lub firmą docelową (na przykład user@northwindtraders.onmicrosoft.com).
       - Podstawowy adres SMTPAddress: podstawowy adres SMTP zostanie dopasowany do nowej firmy użytkownika (na przykład user@northwind.com).
       - TargetAddress/ExternalEmailAddress: Aplikacja MailUser będzie odwoływać się do bieżącej skrzynki pocztowej użytkownika hostowanej w dzierżawie źródłowej (na przykład user@contoso.onmicrosoft.com). Podczas przypisywania tej wartości sprawdź, czy masz/przypisujesz również primarySMTPAddress lub ta wartość ustawi wartość PrimarySMTPAddress, co spowoduje błędy przenoszenia.
-      - Nie można dodać starszych adresów proxy smtp ze źródłowej skrzynki pocztowej do docelowego elementu MailUser. Na przykład nie można obsługiwać contoso.com w jednostce MEU w fabrikam.onmicrosoft.com obiektach dzierżawy). Domeny są skojarzone tylko z jedną dzierżawą Azure AD lub Exchange Online.
+      - Nie można dodać starszych adresów proxy smtp ze źródłowej skrzynki pocztowej do docelowego elementu MailUser. Na przykład nie można obsługiwać contoso.com na jednostce MEU w fabrikam.onmicrosoft.com obiektach dzierżawy). Domeny są skojarzone tylko z jedną dzierżawą Azure AD lub Exchange Online.
 
      Przykładowy **docelowy** obiekt MailUser:
 

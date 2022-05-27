@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak symulować ataki wyłudzania informacji i szkolić swoich użytkowników w zakresie zapobiegania wyłudzaniu informacji przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: 647ea6188e1bd7867e823bbfbb6341255e82960d
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679467"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739654"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Symulowanie ataku wyłudzającego informacje przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
 
@@ -319,7 +319,7 @@ Na stronie **Wybieranie powiadomienia użytkownika końcowego** wybierz jedną z
       - **Dostarczanie po zakończeniu kampanii**
       - **Dostarczanie podczas kampanii**
     - **Akcje**: jeśli klikniesz ikonę ![Widok.](../../media/m365-cc-sc-view-icon.png) **Wyświetl** ikonę, zostanie wyświetlona strona **Przejrzyj powiadomienie** z następującymi informacjami:
-      - Karta **Podgląd**: wyświetl komunikat powiadomienia.
+      - Karta **Podgląd**: wyświetl komunikat powiadomienia, gdy użytkownicy będą go widzieć.
         - Aby wyświetlić komunikat w różnych językach, użyj pola **Wybierz język** .
         - Użyj pola **Wybierz ładunek do wersji zapoznawczej** , aby wybrać komunikat powiadomienia dla symulacji zawierających wiele ładunków.
       - Karta **Szczegóły**: wyświetl szczegóły dotyczące powiadomienia:

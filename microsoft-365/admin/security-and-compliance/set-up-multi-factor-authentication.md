@@ -28,12 +28,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Dowiedz się, jak skonfigurować uwierzytelnianie wieloskładnikowe dla organizacji.
 monikerRange: o365-worldwide
-ms.openlocfilehash: faac2f052b7c184a967f916cca433dfaef6866c7
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 6879a49bf0868081fed6ad8171138ce7001783c4
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637345"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739920"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Konfigurowanie uwierzytelniania wieloskładnikowego dla Microsoft 365
 
@@ -43,14 +43,14 @@ Uwierzytelnianie wieloskładnikowe oznacza, że Ty i Twoi pracownicy muszą zape
 > Jeśli subskrypcja lub wersja próbna została zakupiona po 21 października 2019 r., a po zalogowaniu zostanie wyświetlony monit o uwierzytelnianie [wieloskładnikowe, domyślne ustawienia zabezpieczeń](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) zostały automatycznie włączone dla Twojej subskrypcji.
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>Obejrzyj: Włączanie uwierzytelniania wieloskładnikowego
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
 1. Przejdź do Centrum administracyjne platformy Microsoft 365 pod adresem <a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a>.
-1. Wybierz pozycję **Pokaż wszystko**, a następnie wybierz **centrum administracyjne Azure Active Directory**.
+1. Wybierz pozycję **Pokaż wszystko**, a następnie wybierz **centrum Azure Active Directory Administracja**.
 1. Wybierz **pozycję Azure Active Directory**, **Właściwości**, **Zarządzaj wartościami domyślnymi zabezpieczeń**.
 1. W obszarze **Włącz ustawienia domyślne zabezpieczeń** wybierz pozycję **Tak** , a następnie **pozycję Zapisz**.
 
@@ -78,7 +78,7 @@ Jeśli twoja subskrypcja jest nowa, ustawienia domyślne zabezpieczeń mogą by�
 Ustawienia domyślne zabezpieczeń można włączyć lub wyłączyć w okienku **Właściwości** dla Azure Active Directory (Azure AD) w Azure Portal.
 
 1. Zaloguj się do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) przy użyciu poświadczeń administratora globalnego.
-2. W lewym okienku nawigacji wybierz pozycję **Pokaż wszystko** i w obszarze **Centra administracyjne** wybierz **pozycję Azure Active Directory**.
+2. W lewym okienku nawigacyjnym wybierz pozycję **Pokaż wszystko** i w obszarze **Administracja center** wybierz **pozycję Azure Active Directory**.
 3. W **centrum administracyjnym Azure Active Directory** wybierz **pozycję właściwości Azure Active Directory**\>.
 4. W dolnej części strony wybierz pozycję **Zarządzanie wartościami domyślnymi zabezpieczeń**.
 5. Wybierz pozycję **Tak** , aby włączyć ustawienia domyślne zabezpieczeń lub **Nie** , aby wyłączyć wartości domyślne zabezpieczeń, a następnie wybierz pozycję **Zapisz**.
@@ -122,6 +122,8 @@ W przypadku większości subskrypcji nowoczesne uwierzytelnianie jest automatycz
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Konfigurowanie uwierzytelniania wieloskładnikowego](set-up-multi-factor-authentication.md) (wideo)
+[Konfigurowanie uwierzytelniania wieloskładnikowego](set-up-multi-factor-authentication.md) (wideo)\
 
-[Włączanie uwierzytelniania wieloskładnikowego dla telefonu](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+[Włącz uwierzytelnianie wieloskładnikowe dla telefonu](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (artykuł)\
+
+[Ustawienia domyślne zabezpieczeń i uwierzytelnianie wieloskładnikowe](/microsoft-365/business-premium/m365bp-conditional-access) (artykuł)

@@ -19,16 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Poznaj podstawowe kroki tworzenia słownika słów kluczowych w centrum Office 365 Security & Compliance Center.
-ms.openlocfilehash: 64e431b5d2ef01e85eff55f39f4436786f45664b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: ceb410d09d9869d87681128f2c6e7b45cd8363cb
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758602"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753677"
 ---
 # <a name="create-a-keyword-dictionary"></a>Twórz słownik słów kluczowych
 
-Ochrona przed utratą danych (DLP) może identyfikować, monitorować i chronić poufne elementy. Identyfikowanie poufnych elementów czasami wymaga wyszukania słów kluczowych, szczególnie w przypadku identyfikowania zawartości ogólnej (takiej jak komunikacja związana z opieką zdrowotną) lub nieodpowiedniego lub jawnego języka. Mimo że listy słów kluczowych można tworzyć w typach informacji poufnych, listy słów kluczowych mają ograniczony rozmiar i wymagają modyfikacji kodu XML w celu ich utworzenia lub edytowania. Słowniki słów kluczowych zapewniają prostsze zarządzanie słowami kluczowymi i w znacznie większej skali, obsługując do 1 MB terminów (po kompresji) w słowniku i obsługują dowolny język. Limit dzierżawy wynosi również 1 MB po kompresji. 1 MB limitu po kompresji oznacza, że wszystkie słowniki połączone w dzierżawie mogą mieć blisko 1 milion znaków.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Ochrona przed utratą danych w Microsoft Purview (DLP) może identyfikować, monitorować i chronić poufne elementy. Identyfikowanie poufnych elementów czasami wymaga wyszukania słów kluczowych, szczególnie w przypadku identyfikowania zawartości ogólnej (takiej jak komunikacja związana z opieką zdrowotną) lub nieodpowiedniego lub jawnego języka. Mimo że listy słów kluczowych można tworzyć w typach informacji poufnych, listy słów kluczowych mają ograniczony rozmiar i wymagają modyfikacji kodu XML w celu ich utworzenia lub edytowania. Słowniki słów kluczowych zapewniają prostsze zarządzanie słowami kluczowymi i w znacznie większej skali, obsługując do 1 MB terminów (po kompresji) w słowniku i obsługują dowolny język. Limit dzierżawy wynosi również 1 MB po kompresji. 1 MB limitu po kompresji oznacza, że wszystkie słowniki połączone w dzierżawie mogą mieć blisko 1 milion znaków.
 
 ## <a name="keyword-dictionary-limits"></a>Limity słownika słów kluczowych
 
@@ -74,7 +76,7 @@ Remove-Item $rawFile
 
 Słowa kluczowe słownika mogą pochodzić z różnych źródeł, najczęściej z pliku (na przykład listy .csv lub .txt) zaimportowanej w usłudze lub za pomocą polecenia cmdlet programu PowerShell, z listy wprowadzonej bezpośrednio w poleceniu cmdlet programu PowerShell lub z istniejącego słownika. Podczas tworzenia słownika słów kluczowych należy wykonać te same podstawowe kroki:
 
-1. Użyj programu PowerShell *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> lub połącz się z **centrum zgodności zabezpieczeń&amp;**.
+1. Użyj *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> lub połącz się z **programem portal zgodności Microsoft Purview programu PowerShell**.
 
 2. **Zdefiniuj lub załaduj słowa kluczowe z zamierzonego źródła**. Kreator i polecenie cmdlet akceptują rozdzielaną przecinkami listę słów kluczowych w celu utworzenia niestandardowego słownika słów kluczowych, więc ten krok będzie się nieznacznie różnić w zależności od tego, skąd pochodzą słowa kluczowe. Po załadowaniu są one kodowane i konwertowane na tablicę bajtów przed ich zaimportowaniem.
 
@@ -84,7 +86,7 @@ Słowa kluczowe słownika mogą pochodzić z różnych źródeł, najczęściej 
 
 Wykonaj następujące kroki, aby utworzyć i zaimportować słowa kluczowe dla słownika niestandardowego:
 
-1. Połączenie do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>.
+1. Połączenie do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
 
 2. Przejdź do **pozycji Klasyfikacje > typy informacji poufnych**.
 

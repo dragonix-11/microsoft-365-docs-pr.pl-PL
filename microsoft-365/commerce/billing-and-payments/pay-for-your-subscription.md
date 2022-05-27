@@ -22,13 +22,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/18/2022
-ms.openlocfilehash: d116fe2b9fb2b0b0b96ec44107d486edca19ff04
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.date: 05/26/2022
+ms.openlocfilehash: 05edb03d34644d1f09acaad22bbcff01b3654ac3
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587429"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753853"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Jak zapłacić za subskrypcję
 
@@ -46,6 +46,16 @@ Za kupione produkty możesz zapłacić przy użyciu karty kredytowej lub debetow
 
 - Aby wykonać instrukcje w tym artykule, musisz być administratorem globalnym lub administratorem rozliczeń. W celu uzyskania dodatkowych informacji, zobacz [Informacje o rolach administratora](../../admin/add-users/about-admin-roles.md).
 - Metoda płatności wybrana podczas finalizacji zakupu to forma płatności, która będzie używana we wszystkich przyszłych okresach rozliczeniowych. Możesz to zmienić w dowolnym momencie.
+
+## <a name="new-regulations-from-the-reserve-bank-of-india"></a>Nowe rozporządzenia Banku Rezerw Indii
+
+Od 1 października 2021 r. automatyczne płatności w Indiach mogą blokować niektóre transakcje kart kredytowych, szczególnie transakcje przekraczające 5000 INR. Ze względu na to rozporządzenie może być konieczne ręczne dokonywanie płatności w Centrum administracyjnym platformy Microsoft 365. To rozporządzenie nie będzie miało wpływu na łączną kwotę opłaty za użycie.
+
+[Dowiedz się więcej na temat rozporządzenia Banku Rezerw Indii dotyczącego płatności cyklicznych](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+
+1 lipca 2022 r. firma Microsoft i inni sprzedawcy online nie będą już przechowywać informacji o karcie kredytowej. Aby zapewnić zgodność z tym rozporządzeniem, firma Microsoft usunie wszystkie dane przechowywanej karty z Centrum administracyjnego platformy Microsoft 365. Aby uniknąć przerw w działaniu usługi, należy dodać metodę płatności i dokonać jednorazowej płatności za wszystkie subskrypcje i profile rozliczeniowe.
+
+[Dowiedz się na temat rozporządzenia Banku Rezerw Indii dotyczącego przechowywania kart](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Płacisz kartą kredytową lub debetową albo z konta bankowego?
 

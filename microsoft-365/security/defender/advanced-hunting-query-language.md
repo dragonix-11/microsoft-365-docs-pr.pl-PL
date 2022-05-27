@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217403"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65740020"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Poznaj zaawansowany język zapytań wyszukiwania zagrożeń
 
@@ -33,6 +33,7 @@ ms.locfileid: "65217403"
 
 
 **Dotyczy:**
+
 - Microsoft 365 Defender
 - Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -71,6 +72,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[Uruchamianie tego zapytania w zaawansowanym wyszukiwaniu](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Opisz zapytanie i określ tabele do wyszukania
+
 Na początku zapytania dodano krótki komentarz, aby opisać, do czego służy. Ten komentarz pomaga, jeśli później zdecydujesz się zapisać zapytanie i udostępnić je innym osobom w organizacji. 
 
 ```kusto
@@ -82,7 +84,9 @@ Samo zapytanie zwykle rozpoczyna się od nazwy tabeli, po której następuje kil
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+
 ### <a name="set-the-time-range"></a>Ustawianie zakresu czasu
+
 Pierwszy element potokowy to filtr czasu o zakresie do poprzednich siedmiu dni. Ograniczenie zakresu czasu pomaga zapewnić, że zapytania działają dobrze, zwracają możliwe do zarządzania wyniki i nie przekraczają limitu czasu.
 
 ```kusto
@@ -90,6 +94,7 @@ Pierwszy element potokowy to filtr czasu o zakresie do poprzednich siedmiu dni. 
 ```
 
 ### <a name="check-specific-processes"></a>Sprawdzanie określonych procesów
+
 Po zakresie czasu natychmiast następuje wyszukiwanie nazw plików procesów reprezentujących aplikację programu PowerShell.
 
 ```kusto
@@ -98,6 +103,7 @@ Po zakresie czasu natychmiast następuje wyszukiwanie nazw plików procesów rep
 ```
 
 ### <a name="search-for-specific-command-strings"></a>Wyszukiwanie określonych ciągów poleceń
+
 Następnie zapytanie szuka ciągów w wierszach polecenia, które są zwykle używane do pobierania plików przy użyciu programu PowerShell.
 
 ```kusto
@@ -113,6 +119,7 @@ Następnie zapytanie szuka ciągów w wierszach polecenia, które są zwykle uż
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Dostosowywanie kolumn wyników i długości 
+
 Teraz, gdy zapytanie jasno identyfikuje dane, które chcesz zlokalizować, możesz zdefiniować, jak wyglądają wyniki. `project` zwraca określone kolumny i `top` ogranicza liczbę wyników. Te operatory pomagają zapewnić, że wyniki są dobrze sformatowane i dość duże i łatwe do przetworzenia.
 
 ```kusto
@@ -125,6 +132,8 @@ Wybierz pozycję **Uruchom zapytanie** , aby wyświetlić wyniki.
 
 >[!TIP]
 >Możesz wyświetlać wyniki zapytań jako wykresy i szybko dostosowywać filtry. Aby uzyskać wskazówki, [przeczytaj o pracy z wynikami zapytania](advanced-hunting-query-results.md)
+
+Obejrzyj ten [krótki film wideo](https://www.youtube.com/watch?v=8qZx7Pp5XgM), aby dowiedzieć się, jak używać język zapytań Kusto do łączenia tabel.
 
 ## <a name="learn-common-query-operators"></a>Poznaj typowe operatory zapytań
 
@@ -160,12 +169,14 @@ Zaawansowane wyszukiwanie zagrożeń obsługuje Kusto typów danych, w tym nast�
 Aby dowiedzieć się więcej na temat tych typów danych, [przeczytaj o Kusto skalarnym typie danych](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Uzyskiwanie pomocy podczas pisania zapytań
+
 Skorzystaj z następujących funkcji, aby szybciej pisać zapytania:
-- **Automatyczne sugerowanie** — podczas pisania zapytań zaawansowane wyszukiwanie zagrożeń zapewnia sugestie z funkcji IntelliSense. 
+- **Automatyczne sugerowanie** — podczas pisania zapytań zaawansowane wyszukiwanie zagrożeń zapewnia sugestie z IntelliSense. 
 - **Drzewo schematów** — obok obszaru roboczego znajduje się reprezentacja schematu zawierająca listę tabel i ich kolumn. Aby uzyskać więcej informacji, umieść kursor nad elementem. Kliknij dwukrotnie element, aby wstawić go do edytora zapytań.
 - **[Dokumentacja schematu](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** — dokumentacja w portalu z opisami tabel i kolumn, a także obsługiwanymi typami zdarzeń (`ActionType` wartościami) i przykładowymi zapytaniami
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Praca z wieloma zapytaniami w edytorze
+
 Edytor zapytań umożliwia eksperymentowanie z wieloma zapytaniami. Aby użyć wielu zapytań:
 
 - Rozdziel każde zapytanie pustym wierszem.
@@ -201,6 +212,7 @@ Aby uzyskać więcej informacji na temat języka zapytań Kusto i obsługiwanych
 >Niektóre tabele w tym artykule mogą nie być dostępne w Ochrona punktu końcowego w usłudze Microsoft Defender. [Włącz Microsoft 365 Defender](m365d-enable.md), aby wyszukiwać zagrożenia przy użyciu większej liczby źródeł danych. Zaawansowane przepływy pracy wyszukiwania zagrożeń można przenieść z Ochrona punktu końcowego w usłudze Microsoft Defender do Microsoft 365 Defender, wykonując kroki opisane w [temacie Migrowanie zaawansowanych zapytań wyszukiwania zagrożeń z Ochrona punktu końcowego w usłudze Microsoft Defender](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
+
 - [Omówienie zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md)
 - [Praca z wynikami zapytań](advanced-hunting-query-results.md)
 - [Używanie zapytań udostępnionych](advanced-hunting-shared-queries.md)

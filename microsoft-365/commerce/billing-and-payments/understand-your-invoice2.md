@@ -21,13 +21,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Dowiedz się, jak interpretować opłaty, rozliczenia i informacje dotyczące płatności na rachunku lub fakturze za platformę Microsoft 365 dla firm.
-ms.date: 03/04/2022
-ms.openlocfilehash: e8a27dbdab3f49412f78d0ef7dcb533266d5f4f4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/24/2022
+ms.openlocfilehash: 594ad923c186410ad17085425fc0702d1a245ef9
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322373"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670251"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Opis rachunku lub faktury za platformę Microsoft 365 dla firm
 
@@ -38,9 +38,7 @@ Rachunek lub faktura zawiera podsumowanie opłat za subskrypcję oraz instrukcje
 
 ## <a name="how-often-and-when-am-i-billed"></a>Jak często i kiedy są naliczane opłaty?
 
-W zależności od częstotliwości rozliczeń wybranej podczas zakupu subskrypcji otrzymujesz fakturę co miesiąc albo co rok. Jeśli wybierzesz rozliczenie roczne, otrzymasz tylko jedną fakturę rocznie, chyba że działanie związane z Twoją subskrypcją spowoduje dodanie nowej opłaty lub kredytu.
-
-Czas od daty ostatniej faktury jest nazywany *okresem rozliczeniowym* i jest podany na pierwszej stronie faktury. Ten czas reprezentuje zakres dat, w którym naliczane są opłaty za bieżącą fakturę. Jeśli wprowadzono zmianę subskrypcji poza tym zakresem dat, na przykład dodano lub usunięto licencje, skojarzone opłaty pojawią się na fakturze za następny okres rozliczeniowy.
+W zależności od częstotliwości rozliczeń wybranej podczas zakupu subskrypcji otrzymujesz fakturę miesięczną, kwartalną, półroczną lub roczną. Czas od daty ostatniej faktury jest nazywany *okresem rozliczeniowym* i jest podany na pierwszej stronie faktury. Ten czas reprezentuje zakres dat, w którym naliczane są opłaty za bieżącą fakturę. Jeśli wprowadzono zmianę subskrypcji poza tym zakresem dat, na przykład dodano lub usunięto licencje, skojarzone opłaty pojawią się na fakturze za następny okres rozliczeniowy.
 
 Począwszy od drugiej strony faktury, zobaczysz opłaty pogrupowane według ich *okresu usługi*. Okres usługi to zakres dat, w ramach którego są naliczane opłaty za korzystanie z usługi.
 

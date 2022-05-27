@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Informacje o maksymalnej liczbie zasad i elementów na zasady dotyczące zasad przechowywania i zasad etykiet przechowywania
-ms.openlocfilehash: bb94043f68d46f98f005853cde03da048495e10f
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: a0246fef2ae72dd2b0b176f82bb42559d405eaa5
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285363"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754041"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limity zasad przechowywania i zasad etykiet przechowywania
 
@@ -59,7 +59,7 @@ Mimo że zasady przechowywania dla Microsoft Teams i Yammer używają skrzynek p
 
 ## <a name="maximums-for-adaptive-policy-scopes"></a>Maksymalne wartości dla zakresów zasad adaptacyjnych
 
-Nie ma limitu liczby [zakresów zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention) , które można dodać do zasad przechowywania, ale istnieją pewne maksymalne limity zapytania definiujące każdy zakres adaptacyjny:
+Nie ma limitu liczby [zakresów zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention) , które można dodać do zasad na potrzeby przechowywania, ale istnieją pewne maksymalne limity zapytania definiujące każdy zakres adaptacyjny:
 
 - Długość ciągu dla wartości atrybutu lub właściwości: 200
 - Liczba atrybutów lub właściwości bez grupy lub w grupie: 10
@@ -98,7 +98,7 @@ Poniższe przykłady dotyczą zakresów statycznych i zapewniają pewne rozwiąz
 
 Exchange przykład:
 
-- **Wymaganie**: W organizacji, która ma ponad 40 000 skrzynek pocztowych użytkowników, większość użytkowników musi przechowywać pocztę e-mail przez 7 lat, ale podzestaw zidentyfikowanych użytkowników (425) musi przechowywać pocztę e-mail tylko przez 5 lat.
+- **Wymaganie**: W organizacji, która ma ponad 40 000 skrzynek pocztowych użytkowników, większość użytkowników musi przechowywać pocztę e-mail przez siedem lat, ale podzestaw zidentyfikowanych użytkowników (425) musi przechowywać pocztę e-mail tylko przez pięć lat.
 
 - **Rozwiązanie**: utwórz jedną zasadę przechowywania dla Exchange poczty e-mail z okresem przechowywania wynoszącym 7 lat i wykluczaj podzestaw użytkowników. Następnie utwórz drugie zasady przechowywania dla Exchange wiadomości e-mail z okresem przechowywania wynoszącym 5 lat i uwzględnij podzestaw użytkowników.
 
@@ -108,7 +108,7 @@ Exchange przykład:
 
 SharePoint przykład:
 
-- **Wymaganie**: Organizacja ma kilka tysięcy witryn SharePoint, ale tylko 2000 witryn wymaga okresu przechowywania wynoszącego 10 lat, a 8000 witryn wymaga okresu przechowywania wynoszącego 4 lata.
+- **Wymaganie**: Organizacja ma kilka tysięcy witryn SharePoint, ale tylko 2000 witryn wymaga okresu przechowywania wynoszącego 10 lat, a 8000 witryn wymaga okresu przechowywania wynoszącego cztery lata.
 
 - **Rozwiązanie**: Utwórz 20 zasad przechowywania dla SharePoint z okresem przechowywania wynoszącym 10 lat, który obejmuje 100 określonych lokacji, i utwórz 80 zasad przechowywania dla SharePoint z okresem przechowywania wynoszącym 4 lata, który obejmuje 100 określonych lokacji.
 

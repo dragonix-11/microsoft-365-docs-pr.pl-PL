@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak znaleźć więcej informacji na temat sposobu działania modeli interpretacji dokumentów i przetwarzania formularzy.
-ms.openlocfilehash: e9586bbbd8510611747b81424f1fbe494f212cc5
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 830a56ab4dd0145f1385d628405ee4287de19595
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916188"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754759"
 ---
 # <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Analizowanie sposobu użycia modeli w usłudze Microsoft SharePoint Syntex
 
@@ -39,11 +39,11 @@ Centrum zawartości SharePoint Syntex udostępnia analizę użycia modelu, aby u
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>Zestawienie danych użycia modelu w domyślnym centrum zawartości
 
-W SharePoint Syntex domyślne centrum zawartości jest tworzone podczas instalacji. W razie potrzeby można również utworzyć dodatkowe centra zawartości. Na przykład działy mogą tworzyć własne centra zawartości w celu tworzenia modeli i zarządzania nimi. 
+W SharePoint Syntex domyślne centrum zawartości jest tworzone podczas instalacji. W razie potrzeby można również utworzyć więcej centrów zawartości. Na przykład działy mogą tworzyć własne centra zawartości w celu tworzenia modeli i zarządzania nimi. 
 
 W odniesieniu do analizy użycia modelu należy pamiętać, że:
 
-- Domyślne centrum zawartości wyświetli analizę użycia modelu dla wszystkich centrów zawartości i modeli w organizacji, w tym tych utworzonych w dodatkowych centrach zawartości. Dzięki temu menedżerowie zawartości i inni uczestnicy projektu mają scentralizowany portal do zarządzania centrami zawartości i modelami w całej firmie oraz nadzorowania ich.  
+- Domyślne centrum zawartości wyświetli analizę użycia modelu dla wszystkich centrów zawartości i modeli w organizacji, w tym tych utworzonych w innych centrach zawartości. Dzięki temu menedżerowie zawartości i inni uczestnicy projektu mają scentralizowany portal do zarządzania centrami zawartości i modelami w całej firmie oraz nadzorowania ich.  
 - Inne centra zawartości będą pokazywać analizę użycia modelu tylko dla modeli, które zostały w nich utworzone. Daje to menedżerom zawartości wgląd w dane użycia tylko dla modeli, których dotyczą.
 
 
@@ -78,10 +78,10 @@ Każdy model na liście użycia modelu będzie pokazywać dane użycia:
 
 
 ## <a name="see-also"></a>Zobacz też
-[Tworzenie klasyfikatora](create-a-classifier.md)
+[Utwórz klasyfikator](create-a-classifier.md)
 
-[Tworzenie wyodrębniacza](create-an-extractor.md)
+[Utwórz ekstraktor](create-an-extractor.md)
 
 [Omówienie usługi Document Understanding](document-understanding-overview.md)
 
-[Tworzenie modelu przetwarzania formularzy](create-a-form-processing-model.md)  
+[Utwórz model przetwarzania formularzy](create-a-form-processing-model.md)  

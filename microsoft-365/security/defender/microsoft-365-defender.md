@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 45e63c489093c147895c467c3471f16a8bb99918
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: c454a21b6ad696b84e3b04e20b42fd1d1a0a8b19
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368336"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739544"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -128,6 +128,9 @@ Jeśli potrzebujesz informacji o tym, co zmieniło się w centrum Office 365 Sec
 
 > [!NOTE]
 > Portal Microsoft 365 Defender używa i wymusza istniejący dostęp oparty na rolach i przenosi każdy model zabezpieczeń do ujednoliconego portalu. Każde obciążenie zbieżne ma własny dostęp oparty na rolach. Role już w produktach zostaną automatycznie zbiegają się w portalu Microsoft 365 Defender. Jednak Microsoft Defender for Cloud Apps nadal będzie obsługiwać własne role i uprawnienia.
+
+Obejrzyj ten krótki film wideo, aby dowiedzieć się więcej na temat nowego ujednoliconego portalu w Microsoft 365 Defender.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 ### <a name="what-to-expect"></a>Czego się spodziewać
 

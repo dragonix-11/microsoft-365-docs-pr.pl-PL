@@ -1,5 +1,5 @@
 ---
-title: Automatyczne czyszczenie zerowej godziny w programie Microsoft Defender dla Office 365
+title: Automatyczne przeczyszczanie z zerową godziną w Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,116 +19,120 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Automatyczne czyszczenie zerowej godziny (ZAP) powoduje ponowne przeniesienie dostarczonych wiadomości ze skrzynki pocztowej programu Exchange Online do folderu wiadomości-śmieci lub kwarantanny, w przypadku których wiadomość jest spamem, próbą wyłudzenia informacji lub która zawiera złośliwe oprogramowanie po dostarczeniu.
+description: Automatyczne przeczyszczanie bez godziny powoduje wsteczne przeniesienie dostarczonych wiadomości w skrzynce pocztowej Exchange Online do folderu Wiadomości-śmieci lub kwarantanny, które po dostarczeniu mogą być spamem, wyłudzaniem informacji lub złośliwym oprogramowaniem.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a48f5eb1d45af16ab275c16d2965dc9a578d9312
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: bd9bb3f231e42c625c87669417210281d1d5a3df
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009801"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739466"
 ---
-# <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatyczne czyszczenie zerowej godziny (ZAP) w programie Exchange Online
+# <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatyczne przeczyszczanie o zerowej godzinie (ZAP) w Exchange Online
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-## <a name="zero-hour-auto-purge-zap-basics"></a>Podstawowe informacje o godzinie automatycznego przeczyszczania (ZAP)
+## <a name="zero-hour-auto-purge-zap-basics"></a>Podstawy automatycznego przeczyszczania o zerowej godzinie (ZAP)
 
-W organizacjach Microsoft 365 ze skrzynkami pocztowymi w programie Exchange Online automatyczne przeczyszczanie bezgodzinne to funkcja ochrony poczty e-mail, która wykrywa i wykrywa złośliwe wiadomości służące do wyłudzania informacji, spamu lub złośliwego oprogramowania, które już zostały dostarczone do skrzynek pocztowych programu Exchange Online.
+W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online automatyczne przeczyszczanie o wartości zero godzin (ZAP) jest funkcją ochrony poczty e-mail, która wstecznie wykrywa i neutralizuje złośliwe wiadomości wyłudzające informacje, spam lub złośliwe oprogramowanie, które zostały już dostarczone do Exchange Online skrzynek pocztowych.
 
-Zap nie działa w środowiskach autonomicznych usługi Exchange Online Protection (EOP), które chronią lokalne skrzynki pocztowe Exchange pocztowych.
+Zap nie działa w autonomicznych środowiskach Exchange Online Protection (EOP), które chronią lokalne Exchange skrzynki pocztowe.
 
 ## <a name="how-zap-works"></a>Jak działa zap
 
-Podpisy spamu i złośliwego oprogramowania są codziennie aktualizowane w usłudze w czasie rzeczywistym. Użytkownicy mogą jednak nadal otrzymywać złośliwe wiadomości z różnych powodów, w tym w przypadku, gdy zawartość została zweryfikowana po dostarczaniu jej do użytkowników. Zap rozwiązuje ten problem, stale monitorując aktualizacje podpisów spamu i złośliwego oprogramowania w usłudze. Zap umożliwia znajdowanie i usuwanie wiadomości, które znajdują się już w skrzynce pocztowej użytkownika.
+Sygnatury spamu i złośliwego oprogramowania są codziennie aktualizowane w usłudze w czasie rzeczywistym. Jednak użytkownicy nadal mogą otrzymywać złośliwe komunikaty z różnych powodów, w tym jeśli zawartość jest broniona po dostarczeniu do użytkowników. Zap rozwiązuje ten problem, stale monitorując aktualizacje sygnatur spamu i złośliwego oprogramowania w usłudze. Zap może znajdować i usuwać wiadomości, które znajdują się już w skrzynce pocztowej użytkownika.
 
-Akcja ZAP dla użytkownika jest bezproblemowa; nie są oni powiadomieni, jeśli wiadomość zostanie wykryta i przeniesiona.
+Akcja zap jest bezproblemowa dla użytkownika; nie są powiadamiani, jeśli komunikat zostanie wykryty i przeniesiony.
 
-[Sejf listy nadawców](create-safe-sender-lists-in-office-365.md), reguły przepływu poczty (nazywane także regułami transportu), reguły skrzynki odbiorczej lub dodatkowe filtry mają pierwszeństwo przed zap zapami. Podobnie jak w przypadku przepływu poczty e-mail, oznacza to, że nawet jeśli usługa określi, że dostarczona wiadomość wymaga zap, nie zostanie ona w związku z konfiguracją bezpiecznych nadawców. Jest to jeszcze jeden powód, dla którego należy zachować ostrożność przy konfigurowaniu wiadomości, aby pominąć filtrowanie.
+[Sejf listy nadawców](create-safe-sender-lists-in-office-365.md), reguły przepływu poczty (nazywane również regułami transportu), reguły skrzynki odbiorczej lub dodatkowe filtry mają pierwszeństwo przed zap. Podobnie jak w przypadku przepływu poczty, oznacza to, że nawet jeśli usługa określi, że dostarczona wiadomość wymaga zap, wiadomość nie jest wykonywana ze względu na konfigurację bezpiecznych nadawców. Jest to kolejny powód, aby uważać na konfigurowanie komunikatów w celu obejścia filtrowania.
 
-### <a name="zero-hour-auto-purge-zap-for-malware"></a>Automatyczne czyszczenie o zerowej godzinie (ZAP) dla złośliwego oprogramowania
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak zap w Ochrona usługi Office 365 w usłudze Microsoft Defender automatycznie wykrywa i neutralizuje zagrożenia w wiadomości e-mail. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGrLg]
 
-W **przypadku przeczytanych lub nieprzeczytanych wiadomości** , które po dostarczeniu zawierają złośliwe oprogramowanie, program ZAP podda wiadomość zawierającą załącznik złośliwego oprogramowania. Domyślnie tylko administratorzy mogą wyświetlać wiadomości z kwarantanną złośliwego oprogramowania i zarządzać nimi. Jednak administratorzy mogą tworzyć zasady kwarantanny  i używać ich w celu określenia, co użytkownicy mogą robić w przypadku wiadomości poddanych kwarantannie jako złośliwe oprogramowanie. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+### <a name="zero-hour-auto-purge-zap-for-malware"></a>Automatyczne przeczyszczanie bez godziny (ZAP) w przypadku złośliwego oprogramowania
 
-W zasadach ochrony przed złośliwym oprogramowaniem zap dla złośliwego oprogramowania jest domyślnie włączone. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w uchcie EOP](configure-anti-malware-policies.md).
+W przypadku **komunikatów odczytanych lub nieprzeczytanych** , które zawierają złośliwe oprogramowanie po dostarczeniu, zap podda kwarantannie komunikat zawierający załącznik złośliwego oprogramowania. Domyślnie tylko administratorzy mogą wyświetlać komunikaty o złośliwym oprogramowaniu i zarządzać nimi. Administratorzy mogą jednak tworzyć _zasady kwarantanny_ i używać ich do definiowania, co użytkownicy mogą robić w przypadku komunikatów, które zostały poddane kwarantannie jako złośliwe oprogramowanie. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 
-### <a name="zero-hour-auto-purge-zap-for-phishing"></a>Automatyczne przeczyszczanie bez godzin w celu wyłudzania informacji
+Zap dla złośliwego oprogramowania jest domyślnie włączona w zasadach ochrony przed złośliwym oprogramowaniem. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w ramach EOP](configure-anti-malware-policies.md).
 
-W **przypadku przeczytanych** lub nieprzeczytanych wiadomości zidentyfikowanych jako próby wyłudzenia informacji po dostarczeniu wynik zap zależy od akcji skonfigurowanej  na podstawie werdyktu filtrowania wiadomości wyłudzających informacje w obowiązujących zasadach ochrony przed spamem. Dostępne akcje dyktowania filtrowania na rzecz wyłudzania informacji i ich możliwych wyników za działania zap opisano na poniższej liście:
+### <a name="zero-hour-auto-purge-zap-for-phishing"></a>Automatyczne przeczyszczanie bez godzin (ZAP) w celu wyłudzania informacji
 
-- **Dodaj nagłówek X**, wiersz tematu Przed **tekstem****,** Przekieruj wiadomość na adres e-mail **, Usuń** wiadomość: ZAP nie ma nic przeciwko wiadomości.
+W przypadku **komunikatów odczytanych lub nieprzeczytanych** , które są identyfikowane jako wyłudzanie informacji po dostarczeniu, wynik zap zależy od akcji skonfigurowanej dla werdyktu filtrowania **wiadomości e-mail wyłudzającego informacje** w odpowiednich zasadach ochrony przed spamem. Dostępne akcje filtrowania werdyktu dotyczące wyłudzania informacji i ich możliwych wyników zap są opisane na następującej liście:
 
-- **Przenieś wiadomość do folderu Wiadomości-śmieci**: zap przenosi tę wiadomość do folderu Wiadomości-śmieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci Exchange Online pocztowych w programie Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Dodaj nagłówek X**, **wiersz tematu przedpłaty z tekstem**, **Przekieruj wiadomość na adres e-mail**, **Usuń wiadomość**: ZAP nie podejmuje żadnych działań w tej wiadomości.
 
-- **Poddaj wiadomość** kwarantannie: zap podda wiadomość kwarantannie.
+- **Przenieś wiadomość do wiadomości-śmieci**: zap przenosi wiadomość do folderu Wiadomości-śmieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci w Exchange Online skrzynkach pocztowych w Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-W zasadach ochrony przed spamem jest domyślnie włączone zap dla wyłudzania informacji, a domyślną akcją dla werdyktu filtrowania wiadomości wyłudzających informacje jest kwarantanna **wiadomości, co** oznacza, że zap dla kwarantanny służącej do wyłudzania informacji jest domyślnie sprawdzana.
+- **Komunikat kwarantanny**: zap kwarantanny komunikatu.
 
-Aby uzyskać więcej informacji na temat konfigurowania werdyktów filtrowania spamu, zobacz Konfigurowanie zasad ochrony [przed spamem w programie Microsoft 365](configure-your-spam-filter-policies.md).
+Domyślnie zap dla wyłudzania informacji jest włączona w zasadach ochrony przed spamem, a domyślną akcją dla werdyktu filtrowania **wiadomości e-mail wyłudzania informacji** jest **komunikat kwarantanny**, co oznacza, że zap do wyłudzania informacji kwarantanny wiadomości domyślnie.
 
-### <a name="zero-hour-auto-purge-zap-for-high-confidence-phishing"></a>Automatyczne przeczyszczanie bez godzin w celu wyłudzania informacji o wysokiej pewności
+Aby uzyskać więcej informacji na temat konfigurowania werdyktów filtrowania spamu, zobacz [Konfigurowanie zasad ochrony przed spamem w Microsoft 365](configure-your-spam-filter-policies.md).
 
-W **przypadku wiadomości przeczytanych lub nieprzeczytanych** , które po dostarczeniu są oznaczone jako próby wyłudzenia informacji o wysokiej pewności, program ZAP podda wiadomość kwarantannie. Domyślnie tylko administratorzy mogą wyświetlać wiadomości o wysokiej ufności w kwarantannie i zarządzać nimi. Jednak administratorzy mogą tworzyć zasady kwarantanny  i używać ich w celu określenia, co użytkownicy mogą robić w wiadomościach poddanych kwarantannie jako próby wyłudzenia dużej pewności. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+### <a name="zero-hour-auto-purge-zap-for-high-confidence-phishing"></a>Automatyczne przeczyszczanie bez godziny (ZAP) w celu wyłudzania informacji o wysokim poziomie ufności
 
-Zap dla funkcji wysokiej ufności jest domyślnie włączona. Aby uzyskać więcej informacji, zobacz [Domyślnie bezpieczne w aplikacji Office 365](secure-by-default.md).
+W przypadku **komunikatów odczytanych lub nieprzeczytanych** , które są identyfikowane jako wyłudzanie informacji o wysokim poziomie ufności po dostarczeniu, zap podda je kwarantannie. Domyślnie tylko administratorzy mogą wyświetlać komunikaty phish o wysokiej pewności i zarządzać nimi. Administratorzy mogą jednak tworzyć _zasady kwarantanny_ i używać ich do definiowania, co użytkownicy mogą robić w przypadku komunikatów, które zostały poddane kwarantannie jako wyłudzanie informacji o wysokim poziomie zaufania. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md)
 
-### <a name="zero-hour-auto-purge-zap-for-spam"></a>Automatyczne czyszczenie o zerowej godzinie dla spamu
+Zap dla phish wysokiej ufności jest domyślnie włączona. Aby uzyskać więcej informacji, zobacz [Zabezpieczanie domyślnie w Office 365](secure-by-default.md).
 
-W **przypadku nieprzeczytanych** wiadomości zidentyfikowanych jako spam po dostarczeniu wynik zap zależy od akcji skonfigurowanej werdyktu  filtrowania spamu w obowiązujących zasadach ochrony przed spamem. Dostępne akcje werdyktu filtrowania dotyczące spamu i ich możliwych wyników zap opisano na poniższej liście:
+### <a name="zero-hour-auto-purge-zap-for-spam"></a>Automatyczne przeczyszczanie o zerowej godzinie (ZAP) w przypadku spamu
 
-- **Dodaj nagłówek X**, wiersz tematu Przed **tekstem****,** Przekieruj wiadomość na adres e-mail **, Usuń** wiadomość: ZAP nie ma nic przeciwko wiadomości.
+W przypadku **nieprzeczytanych wiadomości** zidentyfikowanych jako spam po dostarczeniu wynik zap zależy od akcji skonfigurowanej dla werdyktu filtrowania **spamu** w odpowiednich zasadach ochrony przed spamem. Dostępne akcje filtrowania werdyktu dotyczące spamu i ich możliwych wyników zap są opisane na następującej liście:
 
-- **Przenieś wiadomość do folderu Wiadomości-śmieci**: zap przenosi tę wiadomość do folderu Wiadomości-śmieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci Exchange Online pocztowych w programie Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Dodaj nagłówek X**, **wiersz tematu przedpłaty z tekstem**, **Przekieruj wiadomość na adres e-mail**, **Usuń wiadomość**: ZAP nie podejmuje żadnych działań w tej wiadomości.
 
-- **Poddaj wiadomość** kwarantannie: zap podda wiadomość kwarantannie. Domyślnie użytkownicy końcowi mogą wyświetlać wiadomości poddanych kwarantannie antyspamowej, do których są adresatami, i zarządzać nimi. Jednak administratorzy mogą tworzyć zasady kwarantanny  i używać ich w celu określenia, co użytkownicy mogą robić w przypadku wiadomości poddanych kwarantannie jako spam. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
+- **Przenieś wiadomość do wiadomości-śmieci**: zap przenosi wiadomość do folderu Wiadomości-śmieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci w Exchange Online skrzynkach pocztowych w Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-W zasadach ochrony przed spamem jest domyślnie włączone zap spamu, a domyślną akcją  werdykt filtrowania spamu jest Przenoszenie wiadomości do folderu Wiadomości-śmieci **, co** oznacza, że zap spamu domyślnie przenosi nieprzeczytane wiadomości do folderu Wiadomości-śmieci.
+- **Komunikat kwarantanny**: zap kwarantanny komunikatu. Domyślnie użytkownicy końcowi mogą wyświetlać wiadomości poddane kwarantannie i zarządzać nimi, gdzie są adresatami. Administratorzy mogą jednak tworzyć _zasady kwarantanny_ i używać ich do definiowania, co użytkownicy mogą robić w przypadku wiadomości, które zostały poddane kwarantannie jako spam. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md)
 
-Aby uzyskać więcej informacji na temat konfigurowania werdyktów filtrowania spamu, zobacz Konfigurowanie zasad ochrony [przed spamem w programie Microsoft 365](configure-your-spam-filter-policies.md).
+Domyślnie zap spam jest włączony w zasadach antyspamowych, a domyślną akcją werdyktu filtrowania **spamu** jest **przenoszenie wiadomości do folderu Wiadomości-śmieci**, co oznacza, że spam ZAP domyślnie przenosi **nieprzeczytane** wiadomości do folderu Wiadomości-śmieci.
 
-### <a name="zero-hour-auto-purge-zap-considerations-for-microsoft-defender-for-office-365"></a>Zagadnienia dotyczące zerowej godziny automatycznego przeczyszczania programu Microsoft Defender dla systemu Office 365
+Aby uzyskać więcej informacji na temat konfigurowania werdyktów filtrowania spamu, zobacz [Konfigurowanie zasad ochrony przed spamem w Microsoft 365](configure-your-spam-filter-policies.md).
 
-Zap nie będzie poddać kwarantannie żadnych wiadomości, które [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) są w trakcie procesu dostarczania dynamicznego w skanowanie zasad załączników programu Sejf, ani tam, gdzie filtrowanie złośliwego oprogramowania usługi EOP już zamieniło załącznik na plik Text.txtmalware.**** Jeśli dla tego typu wiadomości odebrano sygnał wyłudzania informacji lub spamu, a werdykt filtrowania w zasadach ochrony przed spamem jest ustawiony tak, aby podjąć określone działanie w  związku z wiadomością (Przenieś do wiadomości-śmieci, Przekieruj, Usuń lub Poddaj kwarantannie), program ZAP domyślnie ustawi akcję "Przenieś do wiadomości-śmieci".
+### <a name="zero-hour-auto-purge-zap-considerations-for-microsoft-defender-for-office-365"></a>Zagadnienia dotyczące automatycznego przeczyszczania (ZAP) w godzinach zerowych dla Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-## <a name="how-to-see-if-zap-moved-your-message"></a>Jak sprawdzić, czy zap przeniesiono wiadomość
+Zap nie będzie kwarantanny żadnych komunikatów, które są w trakcie [dynamicznego dostarczania](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) w Sejf skanowanie zasad załączników, lub gdy filtrowanie złośliwego oprogramowania EOP już zastąpił załącznik z **alertem złośliwego oprogramowania Text.txt** pliku. Jeśli otrzymasz sygnał wyłudzania informacji lub spamu dla tego typu wiadomości, a werdykt filtrowania w zasadach ochrony przed spamem zostanie ustawiony na podjęcie pewnych działań w wiadomości (Przenoszenie do wiadomości-śmieci, Przekierowanie, Usuwanie lub Kwarantanna), zap domyślnie użyje akcji "Przenieś na śmieci".
 
-Aby ustalić, czy zap przeniesiono wiadomość, dostępne są następujące opcje:
+## <a name="how-to-see-if-zap-moved-your-message"></a>Jak sprawdzić, czy zap przeniósł komunikat
 
-- **Liczba wiadomości**: Użyj widoku [Przepływ](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) poczty w raporcie o stanie przepływu poczty, aby sprawdzić liczbę wiadomości, których dotyczy problem z zapami w określonym zakresie dat.
-- **Szczegóły wiadomości**: Za pomocą [Eksploratora zagrożeń (i wykrywania](threat-explorer.md) w czasie rzeczywistym)  możesz filtrować wszystkie zdarzenia wiadomości e-mail według wartości **ZAP** dla **kolumny Akcja** dodatkowa.
+Aby ustalić, czy zap przeniósł komunikat, masz następujące opcje:
 
-**Uwaga**: Zap nie jest rejestrowane w dziennikach inspekcji Exchange jako akcja systemowa.
+- **Liczba komunikatów**: użyj [widoku Przepływ poczty w raporcie o stanie przepływu poczty](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) , aby wyświetlić liczbę komunikatów, których dotyczy problem z zap dla określonego zakresu dat.
+- **Szczegóły komunikatu**: użyj [Eksploratora zagrożeń (i wykrywania w czasie rzeczywistym),](threat-explorer.md) aby filtrować **wszystkie zdarzenia poczty e-mail** według wartości **ZAP** dla kolumny **Dodatkowa akcja** .
 
-## <a name="zero-hour-auto-purge-zap-faq"></a>Automatyczne przeczyszczanie bez godzin (ZAP) — często zadawane pytania
+> [!NOTE]
+> Zap nie jest zalogowany w Exchange dzienników inspekcji skrzynki pocztowej jako akcja systemu.
+
+## <a name="zero-hour-auto-purge-zap-faq"></a>Automatyczne przeczyszczanie o zerowej godzinie (ZAP) — często zadawane pytania
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>Co się stanie, jeśli legalna wiadomość zostanie przeniesiona do folderu Wiadomości-śmieci?
 
-Należy postępować zgodnie z normalnym procesem raportowania dla [wyników fałszywie dodatnich](report-junk-email-messages-to-microsoft.md). Jedynym powodem, dla którego wiadomość zostałaby przeniesiona ze skrzynki odbiorczej do folderu Wiadomości-śmieci, jest to, że usługa ustali, że wiadomość jest spamem lub złośliwym.
+Należy postępować zgodnie z normalnym procesem raportowania [dla wyników fałszywie dodatnich](report-junk-email-messages-to-microsoft.md). Jedynym powodem przeniesienia wiadomości ze skrzynki odbiorczej do folderu Wiadomości-śmieci będzie fakt, że usługa ustaliła, że wiadomość była spamem lub złośliwym.
 
-### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Co zrobić, jeśli użyję folderu kwarantanny zamiast folderu Wiadomości-śmieci?
+### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Co zrobić, jeśli użyję folderu Kwarantanna zamiast folderu Wiadomości-śmieci?
 
-Zap podejmie działanie na wiadomości na podstawie konfiguracji zasad ochrony przed spamem w sposób opisany wcześniej w tym artykule.
+Zap podejmie działania na podstawie komunikatu na podstawie konfiguracji zasad ochrony przed spamem zgodnie z opisem we wcześniejszej części tego artykułu.
 
-### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Co zrobić, jeśli korzystam z listy bezpiecznych nadawców, reguł przepływu poczty e-mail lub list dozwolonych/zablokowanych nadawców?
+### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Co zrobić, jeśli używam bezpiecznych nadawców, reguł przepływu poczty lub list dozwolonych/zablokowanych nadawców?
 
-Sejf, reguły przepływu poczty e-mail lub blokowanie i zezwalanie na ustawienia organizacyjne mają pierwszeństwo. Te wiadomości są wykluczone z zap, ponieważ usługa robi to, co skonfigurowano. Jest to jeszcze jeden powód, dla którego należy zachować ostrożność przy konfigurowaniu wiadomości, aby pominąć filtrowanie.
+Sejf nadawcy, reguły przepływu poczty lub blokuj i zezwalaj na ustawienia organizacyjne mają pierwszeństwo. Te komunikaty są wykluczone z zap, ponieważ usługa robi to, co skonfigurowano do wykonania. Jest to kolejny powód, aby uważać na konfigurowanie komunikatów w celu obejścia filtrowania.
 
-### <a name="what-are-the-licensing-requirements-for-zero-hour-auto-purge-zap-to-work"></a>Jakie są wymagania licencyjne dotyczące działania automatycznego przeczyszczania bez godzin?
+### <a name="what-are-the-licensing-requirements-for-zero-hour-auto-purge-zap-to-work"></a>Jakie są wymagania licencyjne dotyczące automatycznego przeczyszczania w godzinach zerowych do działania?
 
-Nie ma żadnych ograniczeń dotyczących licencji. Zap działa we wszystkich skrzynkach pocztowych hostowanych Exchange online. Zap nie działa w środowiskach autonomicznych usługi Exchange Online Protection (EOP), które chronią lokalne skrzynki pocztowe Exchange pocztowych.
+Nie ma żadnych ograniczeń dotyczących licencji. Zap działa na wszystkich skrzynkach pocztowych hostowanych w Exchange online. Zap nie działa w autonomicznych środowiskach Exchange Online Protection (EOP), które chronią lokalne Exchange skrzynki pocztowe.
 
-### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Co zrobić, jeśli wiadomość zostanie przeniesiona do innego folderu (np. do reguł skrzynki odbiorczej)?
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Co zrobić, jeśli komunikat zostanie przeniesiony do innego folderu (np. reguł skrzynki odbiorczej)?
 
-Automatyczne czyszczenie o zerowej godzinie nadal działa, o ile wiadomość nie została usunięta albo jeśli nie zastosowano jeszcze tej samej lub silniejszej akcji. Jeśli na przykład zasady ochrony przed wyłudzaniem informacji są ustawione w kwarantannie, a wiadomość znajduje się już w folderze Wiadomości-śmieci, program ZAP podejmie działania w celu kwarantanny wiadomości.
+Automatyczne przeczyszczanie zerogodzin nadal działa, dopóki komunikat nie został usunięty lub dopóki nie zastosowano jeszcze tej samej lub silniejszej akcji. Jeśli na przykład zasady ochrony przed wyłudzaniem informacji są ustawione na kwarantannę, a komunikat znajduje się już w wiadomości-śmieci, zap podejmie działania w celu kwarantanny komunikatu.
 
-### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Jaki wpływ na skrzynki pocztowe wstrzymywane są zap?
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Jak zap wpływa na skrzynki pocztowe zawieszone?
 
-Automatyczne czyszczenie zerowej godziny będzie wstrzymywać wiadomości ze skrzynek pocztowych w kwarantannie. Zap może przenosić wiadomości do folderu Wiadomości-śmieci na podstawie akcji skonfigurowanej na podstawie werdyktu spamu lub próby wyłudzenia informacji w zasadach ochrony przed spamem.
+Automatyczne przeczyszczanie o wartości zero godzin spowoduje kwarantannę wiadomości ze skrzynek pocztowych wstrzymanych. Zap może przenosić wiadomości do folderu Wiadomości-śmieci na podstawie akcji skonfigurowanej pod kątem spamu lub werdyktu wyłudzania informacji w zasadach ochrony przed spamem.
 
-Aby uzyskać więcej informacji na temat blokady w Exchange Online, zobacz Blokady [w](/Exchange/security-and-compliance/in-place-and-litigation-holds) miejscu i Zawieszenie w związku z postępowaniem sądowym w Exchange Online.
+Aby uzyskać więcej informacji na temat blokad w Exchange Online, zobacz [In-Place Hold and Litigation Hold in Exchange Online (Blokada w miejscu i blokada sporów w Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds)).

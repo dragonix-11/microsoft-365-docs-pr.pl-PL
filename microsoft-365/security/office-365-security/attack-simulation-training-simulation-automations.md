@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i ładunki uruchamiane po spełnieniu określonych warunków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: ded6a77e72e71a676c0cc05ffdc3be53e3fbada1
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 32730dfa36b0140bda246137b4cf6706b3472da7
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678860"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739676"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatyzacje symulacji na potrzeby trenowania symulacji ataków
 
@@ -31,7 +31,7 @@ Aby utworzyć automatyzację symulacji, wykonaj następujące kroki:
 
 1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com/>przejdź do obszaru Email & collaboration Attack simulation training **Automations** tab \> **Simulation automations (Automatyzacje symulacji** za pomocą **funkcji e-mail & współpracy** \> w **zakresie** \> symulacji ataków).
 
-   Aby przejść bezpośrednio do karty **Automatyzacje** , użyj polecenia <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   Aby przejść bezpośrednio do karty **Automatyzacje** , na której można wybrać **pozycję Automatyzacje symulacji**, użyj polecenia <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. W obszarze **Automatyzacje symulacji** wybierz pozycję Utwórz ikonę ![automatyzacji.](../../media/m365-cc-sc-create-icon.png) **Tworzenie automatyzacji**.
 
@@ -311,7 +311,7 @@ Na stronie **Wybieranie powiadomienia użytkownika końcowego** wybierz jedną z
       - **Dostarczanie po zakończeniu kampanii**
       - **Dostarczanie podczas kampanii**
     - **Akcje**: jeśli klikniesz ikonę ![Widok.](../../media/m365-cc-sc-view-icon.png) **Wyświetl** ikonę, zostanie wyświetlona strona **Przejrzyj powiadomienie** z następującymi informacjami:
-      - Karta **Podgląd**: wyświetl komunikat powiadomienia.
+      - Karta **Podgląd**: wyświetl komunikat powiadomienia, gdy użytkownicy będą go widzieć.
         - Aby wyświetlić komunikat w różnych językach, użyj pola **Wybierz język** .
         - Użyj pola **Wybierz ładunek do wersji zapoznawczej** , aby wybrać komunikat powiadomienia dla symulacji zawierających wiele ładunków.
       - Karta **Szczegóły**: wyświetl szczegóły dotyczące powiadomienia:

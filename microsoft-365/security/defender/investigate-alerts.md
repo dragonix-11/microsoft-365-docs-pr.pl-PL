@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: fd043ae1ebabcb8162ed96b973c9392bae5fd2a1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 40e0285f185d112fa508d871e0ccd70c2a09120e
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944442"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739422"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Badanie alertów w Microsoft 365 Defender
 
@@ -57,7 +57,7 @@ W domyślnej kolejce alertów możesz wybrać pozycję **Filtr** , aby wyświetl
 
 Alerty można filtrować zgodnie z następującymi kryteriami:
 
-- Ważności
+- Waga
 - Stan
 - Źródła usług
 - Jednostki (zasoby, których dotyczy problem)
@@ -206,9 +206,8 @@ Aby utworzyć automatyzację, musisz mieć token interfejsu API, aby można był
 
 ### <a name="create-an-automated-flow"></a>Tworzenie zautomatyzowanego przepływu
 
-Aby zapoznać się ze szczegółowym procesem krok po kroku, zobacz wideo [tutaj](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn).
-
-W tym filmie wideo opisano również sposób łączenia usługi Power Automate z usługą Defender dla Chmury Apps.
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak automatyzacja działa wydajnie, aby utworzyć płynny przepływ pracy i jak połączyć Power Automate z aplikacjami Defender dla Chmury. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
 ## <a name="next-steps"></a>Następne kroki
 

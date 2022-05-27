@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: W jaki sposób organizacja, która wdraża najnowszą wersję, używa kanałów do Windows 10 i Microsoft 365 aplikacji.
-ms.openlocfilehash: 6f52bc8fc55fe94361961585aacae1f48c4fbce5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43cd5deed9801de6ff044781bebf9d96cdac7c12
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092144"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754715"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Przykład szerokiego wdrożenia najnowszych wersji
 
@@ -65,7 +65,7 @@ Aby uzyskać więcej informacji na temat metod i strategii wdrażania Windows 10
 
 | Etapie | Kanał | Grupa wdrożeń |
 |:-------|:-------|:-----|
-| Pilot |  **Kanał wersji zapoznawczej**  <ul><li>Przeznaczenie: Wdrażanie aktualizacji funkcji dla pracowników IT i wczesnych użytkowników w celu weryfikacji na reprezentatywnych urządzeniach i konfiguracjach (językach, aplikacjach innych firm). </li><li> Stan: w pełni zgodne i obsługiwane dla klientów komercyjnych i nie jest wliczane do umów pomocy technicznej. </li></ul> | **Win10ReleasePreviewChannel (przykładowa** nazwa) <br><br> Członkowie to grupy zawierające: <ul><li> Windows entuzjastów w różnych działach i lokalizacjach </li><li> Personel z konfiguracjami wymagającymi weryfikacji </li><li> Administratorzy IT i pracownicy wdrożeniowi IT </li><li> Menedżerowie zmian </li><li> Wewnętrzny personel szkoleniowy </li></ul> |
+| Pilot |  **Kanał wersji zapoznawczej**  <ul><li>Przeznaczenie: Wdrażanie aktualizacji funkcji dla pracowników IT i wczesnych użytkowników w celu weryfikacji na reprezentatywnych urządzeniach i konfiguracjach (językach, aplikacjach innych firm). </li><li> Stan: W pełni zgodne i obsługiwane dla klientów komercyjnych i nie jest ono wliczane do umów pomocy technicznej. </li></ul> | **Win10ReleasePreviewChannel (przykładowa** nazwa) <br><br> Członkowie to grupy zawierające: <ul><li> Windows entuzjastów w różnych działach i lokalizacjach </li><li> Personel z konfiguracjami wymagającymi weryfikacji </li><li> Administratorzy IT i pracownicy wdrożeniowi IT </li><li> Menedżerowie zmian </li><li> Wewnętrzny personel szkoleniowy </li></ul> |
 | Produkcja |  **Półroczny kanał**  <ul><li>Przeznaczenie: szerokie wdrażanie najnowszych aktualizacji funkcji w pozostałej części organizacji. </li><li> Stan: W pełni zgodne i obsługiwane. </li></ul> | **Win10SemiAnnualChannel** (przykładowa nazwa) <br><br> Członkowie to wszyscy użytkownicy, którzy nie należą do grupy Win10ReleasePreviewChannel. |
 ||||
 
@@ -111,4 +111,4 @@ Oto produkty, ich kanały i grupy wdrożeń używane przez tę przykładową org
 
 [Microsoft 365 dla przedsiębiorstw — omówienie](microsoft-365-overview.md)
 
-[Przewodniki po laboratorium testowym](m365-enterprise-test-lab-guides.md)
+[Przewodniki laboratorium testowego](m365-enterprise-test-lab-guides.md)

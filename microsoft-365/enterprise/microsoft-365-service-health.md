@@ -17,16 +17,16 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Stan kondycji usługi Microsoft 365
-ms.openlocfilehash: 0b3ede9b35dbf4e0356be8d1479e75561f66fdb2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0f7c7d0d14cdecbfb122d03fdcb4c93fcddbced2
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100396"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753369"
 ---
 # <a name="microsoft-365-network-health-status"></a>stan kondycji sieci Microsoft 365
 
-Ze względu na zwiększone zapotrzebowanie na usługi firmy Microsoft w chmurze podczas kryzysu covid-19 dostarczamy informacje o kondycji globalnej sieci firmy Microsoft, a także informacje o problemach z jakością sieci, które mogą napotkać nasi klienci, ale które nie są przez nas kontrolować.
+Ze względu na zwiększone zapotrzebowanie na usługi firmy Microsoft w chmurze w czasie kryzysu COVID-19 dostarczamy informacje o kondycji globalnej sieci firmy Microsoft oraz informacje o problemach z jakością sieci, które mogą napotkać nasi klienci, ale których nie kontrolujemy.
 
 Te informacje obejmują problemy z siecią, które mają wpływ na wszystkie nasze oferty oprogramowania jako usługi, w tym Microsoft 365.
 

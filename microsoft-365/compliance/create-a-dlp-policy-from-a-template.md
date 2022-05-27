@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: W tym artykule dowiesz się, jak tworzyć zasady DLP przy użyciu jednego z szablonów zawartych w Office 365.
-ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 952a552210b00061717c24db5de5e5a47b84d72b
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759108"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754681"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Twórz zasady DLP na podstawie szablonu
 
-Najprostszym, najbardziej typowym sposobem rozpoczęcia pracy z zasadami DLP jest użycie jednego z szablonów zawartych w centrum zgodności Microsoft 365. Możesz użyć jednego z tych szablonów w następującym stanie, w jakim jest, lub dostosować reguły w celu spełnienia określonych wymagań dotyczących zgodności organizacji.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Najprostszym, najbardziej typowym sposobem rozpoczęcia pracy z zasadami DLP jest użycie jednego z szablonów zawartych w portal zgodności Microsoft Purview. Możesz użyć jednego z tych szablonów w następującym stanie, w jakim jest, lub dostosować reguły w celu spełnienia określonych wymagań dotyczących zgodności organizacji.
 
 Microsoft 365 zawiera ponad 40 gotowych do użycia szablonów, które mogą pomóc w spełnieniu szerokiego zakresu typowych potrzeb związanych z przepisami i zasadami biznesowymi. Zobacz; [Szablony zasad](dlp-policy-reference.md#policy-templates) dla pełnej listy. 
 
@@ -43,7 +45,7 @@ Członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzeb
   
 1. Utwórz grupę w Microsoft 365 i dodaj do niej funkcjonariuszy zgodności.
     
-2. Utwórz grupę ról na stronie **Uprawnienia** Centrum zgodności zabezpieczeń &amp; . 
+2. Utwórz grupę ról na stronie **Uprawnienia** portal zgodności Microsoft Purview. 
 
 3. Podczas tworzenia grupy ról użyj sekcji **Wybierz role** , aby dodać następującą rolę do grupy ról: **Zarządzanie zgodnością DLP**.
     
@@ -51,7 +53,7 @@ Członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzeb
 
 Użyj roli **Zarządzanie zgodnością DLP tylko do wyświetlania** , aby utworzyć grupę ról z uprawnieniami tylko do wyświetlania do zasad DLP i raportów DLP.
 
-Aby uzyskać więcej informacji, zobacz [Udzielanie użytkownikom dostępu do Centrum zgodności Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Aby uzyskać więcej informacji, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
   
 Te uprawnienia są wymagane do utworzenia i zastosowania zasad DLP, aby nie wymuszać zasad.
 
@@ -59,14 +61,14 @@ Te uprawnienia są wymagane do utworzenia i zastosowania zasad DLP, aby nie wymu
 
 W wersji zapoznawczej dostępne są role i grupy ról, które można przetestować, aby dostosować mechanizmy kontroli dostępu.
 
-Oto lista ról Microsoft Information Protection (MIP), które są w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Oto lista odpowiednich ról w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
 
-- administrator Information Protection
+- Information Protection Administracja
 - analityk Information Protection
 - badacz Information Protection
 - czytelnik Information Protection
 
-Oto lista grup ról programu MIP, które są w wersji zapoznawczej. Aby dowiedzieć się więcej na temat programu , zobacz [Grupy ról w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Oto lista odpowiednich grup ról, które są w wersji zapoznawczej. Aby dowiedzieć się więcej na ten temat, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)
 
 - Information Protection
 - administratorzy Information Protection
@@ -76,9 +78,9 @@ Oto lista grup ról programu MIP, które są w wersji zapoznawczej. Aby dowiedzi
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>Tworzenie zasad DLP na podstawie szablonu
 
-1. Zaloguj się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>.
+1. Zaloguj się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
 
-2. W centrum \> zgodności po lewej stronie nawigacji \> Rozwiązania **Zasady** \> **zapobiegania** \> **utracie** \> danych **+ Tworzenie zasad**.
+2. W portal zgodności Microsoft Purview \> lewej nawigacji \> Rozwiązania **Zasady** \> **zapobiegania** \> **utracie** \> danych **+ Tworzenie zasad**.
 
     ![Utwórz przycisk zasad.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -205,7 +207,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 ## View the status of a DLP policy
 
-At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Microsoft Purview compliance portal. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
 
 Here are the different statuses and what they mean.
 

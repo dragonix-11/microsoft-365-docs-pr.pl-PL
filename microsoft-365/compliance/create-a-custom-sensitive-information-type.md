@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak tworzyć, modyfikować, usuwać i testować niestandardowe typy informacji poufnych w Centrum zgodności.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff6a66b092d433fcfde7723f252fea679c2a3050
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0d93259cfe76419e253c450c4cd5ed7f03f3b85c
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759838"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753523"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Tworzenie niestandardowych typów informacji poufnych w Centrum zgodności
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jeśli wstępnie skonfigurowane typy informacji poufnych nie spełniają Twoich potrzeb, możesz utworzyć własne niestandardowe typy informacji poufnych, które zostały w pełni zdefiniowane, lub skopiować jeden ze wstępnie skonfigurowanych typów i zmodyfikować je.
 
@@ -45,7 +47,7 @@ Istnieją dwa sposoby tworzenia nowego typu informacji poufnych:
   - [Funkcje typu informacji poufnych](sit-functions.md)
   - [poziomy ufności](sensitive-information-type-learn-about.md#more-on-confidence-levels)
 
-- Aby utworzyć, przetestować i wdrożyć niestandardowy typ informacji poufnych za pośrednictwem interfejsu użytkownika, musisz mieć uprawnienia administratora globalnego lub administratora zgodności. Zobacz [Informacje o rolach administratora](/office365/admin/add-users/about-admin-roles) w Office 365.
+- Twoja organizacja musi mieć subskrypcję, taką jak Office 365 Enterprise, która obejmuje Ochrona przed utratą danych w Microsoft Purview (DLP). Zobacz [Zasady obsługi komunikatów i zgodność ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
 - Twoja organizacja musi mieć subskrypcję, taką jak Office 365 Enterprise, która obejmuje zapobieganie utracie danych (DLP). Zobacz [Zasady obsługi komunikatów i zgodność ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).
 
@@ -104,7 +106,7 @@ Ta procedura umożliwia utworzenie nowego typu informacji poufnych opartego na i
 
 Można również tworzyć niestandardowe typy informacji poufnych przy użyciu programu PowerShell i funkcji dokładnego dopasowania danych. Aby dowiedzieć się więcej o tych metodach, zobacz:
 
-- [Tworzenie niestandardowego typu informacji poufnych w programie PowerShell Centrum zgodności & zabezpieczeń](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Tworzenie niestandardowego typu informacji poufnych w programie Microsoft Purview programu PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 1. W Centrum zgodności przejdź do **pozycji Typy informacji poufnych** **klasyfikacji** \> danych i wybierz typ informacji poufnych, który chcesz skopiować.
@@ -143,7 +145,7 @@ Możesz przetestować dowolny typ informacji poufnych na liście. Zalecamy przet
 
 2. W Centrum zgodności przejdź do pozycji **Typy informacji poufnych** **klasyfikacji** \> danych i wybierz typ informacji poufnych z listy, aby otworzyć okienko szczegółów i wybrać pozycję **Testuj**.
 
-3. Upload pliku i wybierz pozycję **Testuj**.
+3. Przekaż plik i wybierz pozycję **Test**.
 
 4. Na stronie **Dopasowania wyników** przejrzyj wyniki i wybierz pozycję **Zakończ**.
 
@@ -170,7 +172,7 @@ Limit liczby wystąpień SIT ma zastosowanie, gdy w tych rozwiązaniach są uży
 
 - Zasady DLP
 - Information Protection
-- Zarządzanie informacjami
+- Zarządzanie cyklem życia danych
 - Zgodność z komunikacją
 - Zarządzanie rekordami
 - Microsoft Defender for Cloud Apps

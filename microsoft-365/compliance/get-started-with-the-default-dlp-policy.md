@@ -18,70 +18,72 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak za pomocą raportu uściślić domyślne zasady ochrony przed utratą danych (DLP) organizacji.
-ms.openlocfilehash: 0e63648f78fd5adf2b0a354fa1a26abae4561ba8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak za pomocą raportu uściślić domyślne zasady ochrony przed utratą danych (DLP) w organizacji.
+ms.openlocfilehash: 893aae6dfbc4e5c9fcf48a8eec53694352ead4f2
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987777"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753457"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Wprowadzenie do domyślnych zasad DLP
 
-Zanim utworzysz już pierwszą politykę ochrony przed utratą danych (DLP, Data Loss Prevention), ochrona przed utratą danych pomaga chronić Poufne informacje przy użyciu zasad domyślnych. Te zasady domyślne i ich zalecenia (przedstawione poniżej) ułatwiają zabezpieczanie poufnej zawartości, informując Cię o tym, gdy wiadomości e-mail lub dokumenty zawierające numer karty kredytowej zostały udostępnione osobie spoza Twojej organizacji. Na stronie głównej Centrum  &amp; zgodności zabezpieczeń zobaczysz to zalecenie. 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Przed utworzeniem pierwszych zasad Ochrona przed utratą danych w Microsoft Purview (DLP) DLP pomaga chronić poufne informacje przy użyciu zasad domyślnych. Te domyślne zasady i zalecenia (pokazane poniżej) pomagają chronić poufną zawartość, powiadamiając Cię o udostępnieniu wiadomości e-mail lub dokumentów zawierających numer karty kredytowej osobie spoza organizacji. To zalecenie zostanie wyświetlone na stronie **głównej** portal zgodności Microsoft Purview. 
   
-Za pomocą tego widżetu możesz szybko sprawdzić, kiedy i ile informacji poufnych zostało udostępnionych, a następnie uściślić domyślne zasady DLP za pomocą jednego lub dwóch kliknięcia. Domyślne zasady DLP można także edytować w dowolnym momencie, ponieważ można je w pełni dostosować. Zwróć uwagę, że jeśli na początku nie widzisz zalecenia, kliknij pozycję **+Więcej** u dołu sekcji **Polecane dla** Ciebie. 
+Ten widżet umożliwia szybkie wyświetlanie, kiedy i ile informacji poufnych zostało udostępnionych, a następnie uściślić domyślne zasady DLP za pomocą kliknięcia lub dwóch. Domyślne zasady DLP można również edytować w dowolnym momencie, ponieważ są w pełni dostosowywalne. Pamiętaj, że jeśli na początku nie widzisz zalecenia, spróbuj kliknąć pozycję **+Więcej** w dolnej części sekcji **Zalecane.** 
   
-![Widżet o nazwie Dalsza ochrona udostępnianej zawartości.](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![Widżet o nazwie Dalej chroń udostępnioną zawartość.](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
-## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Wyświetlanie raportu i uściślij domyślne zasady DLP
+## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Wyświetlanie raportu i uściślanie domyślnych zasad DLP
 
 Gdy widżet pokazuje, że użytkownicy udostępniali poufne informacje osobom spoza organizacji, wybierz pozycję **Uściślij zasady DLP** u dołu. 
   
-Raport szczegółowy zawiera informacje o tym, kiedy i ile zawartości zawierającej numery kart kredytowych udostępniono w ciągu ostatnich 30 dni. Pamiętaj, że wyświetlanie dopasowania reguł w widżecie może potrwać do 48 godzin.
+Szczegółowy raport pokazuje, kiedy i ile zawartości zawierającej numery kart kredytowych zostało udostępnione w ciągu ostatnich 30 dni. Pamiętaj, że wyświetlanie dopasowań reguł w widżecie może potrwać do 48 godzin.
   
-Aby chronić informacje poufne, domyślne zasady DLP:
+Aby chronić poufne informacje, domyślne zasady DLP:
   
-- Wykrywa, czy zawartość w Exchange, SharePoint i w OneDrive zawierająca co najmniej jeden numer karty kredytowej jest udostępniana osobom spoza organizacji.
+- Wykrywa, kiedy zawartość Exchange, SharePoint i OneDrive zawierająca co najmniej jeden numer karty kredytowej jest udostępniana osobom spoza organizacji.
     
-- Wyświetla poradę o zasadach i wysyła do użytkowników wiadomość e-mail z powiadomieniem, gdy próbują udostępnić te informacje poufne osobom spoza organizacji. Aby uzyskać więcej informacji o tych opcjach, zobacz Wysyłanie [powiadomień e-mail i wyświetlanie porad dotyczących zasad DLP](use-notifications-and-policy-tips.md).
+- Przedstawia poradę dotyczącą zasad i wysyła powiadomienie e-mail do użytkowników podczas próby udostępnienia tych poufnych informacji osobom spoza organizacji. Aby uzyskać więcej informacji na temat tych opcji, zobacz [Wysyłanie powiadomień e-mail i pokaż wskazówki dotyczące zasad dotyczących zasad DLP](use-notifications-and-policy-tips.md).
     
-- Generuje szczegółowe raporty aktywności, aby śledzić na przykład osoby, które udostępniły zawartość osobom spoza organizacji, i kiedy to zrobiły. Aby wyświetlić te informacje, możesz użyć raportów [funkcji DLP](view-the-dlp-reports.md) i danych [dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md) (gdzie **activityDLP** = ).
+- Generuje szczegółowe raporty aktywności, dzięki czemu można śledzić takie elementy, jak osoby spoza organizacji, które udostępniły zawartość i kiedy ją zrobiły. Aby wyświetlić te informacje, możesz użyć [raportów DLP](view-the-dlp-reports.md) i [danych dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md) (gdzie **DLP działania** = ).
     
-Aby szybko uściślić domyślne zasady DLP, możesz wybrać jedną z tych opcji:
+Aby szybko uściślić domyślne zasady DLP, możesz je wybrać:
   
-- Wyślij do Ciebie wiadomość e-mail z raportem o zdarzeniu, gdy użytkownicy będą udostępniać te poufne informacje osobom spoza organizacji.
+- Wyślij wiadomość e-mail z raportem o zdarzeniu, gdy użytkownicy udostępniają te poufne informacje osobom spoza organizacji.
     
-- Dodaj innych użytkowników do raportu o zdarzeniu poczty e-mail.
+- Dodaj innych użytkowników do raportu o zdarzeniu e-mail.
     
-- Zablokuj dostęp do zawartości zawierającej informacje poufne, ale zezwalaj użytkownikowi na zastępowanie i udostępnianie lub wysyłanie w razie potrzeby.
+- Zablokuj dostęp do zawartości zawierającej informacje poufne, ale w razie potrzeby zezwalaj użytkownikowi na zastępowanie i udostępnianie lub wysyłanie.
     
-Aby uzyskać więcej informacji na temat raportów zdarzeń lub ograniczeń dostępu, zobacz Informacje [dotyczące ochrony przed utratą danych](data-loss-prevention-policies.md).
+Aby uzyskać więcej informacji na temat raportów o zdarzeniach lub ograniczania dostępu, zobacz [Dokumentacja dotycząca zapobiegania utracie danych](data-loss-prevention-policies.md).
   
-Jeśli chcesz później zmienić te opcje, możesz w dowolnym momencie edytować domyślne zasady DLP — zobacz następną sekcję.
+Jeśli chcesz zmienić te opcje później, możesz w dowolnym momencie edytować domyślne zasady DLP — zobacz następną sekcję.
   
-![Ustawienia widżetu o nazwie Dalsza ochrona udostępnianej zawartości.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Ustawienia dla widżetu o nazwie Dalej chroń udostępnioną zawartość.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>Edytowanie domyślnych zasad DLP
 
-Te zasady mają nazwę **Domyślne zasady DLP i** są wyświetlane w obszarze Ochrona przed **utratą** **danych na stronie** Zasady w Centrum &amp; zgodności zabezpieczeń. 
+Te zasady mają nazwę **Domyślne zasady DLP** i są wyświetlane w obszarze **Zapobieganie utracie danych** na stronie **Zasady** portal zgodności Microsoft Purview. 
   
-Te zasady można w pełni dostosowywać, tak samo jak wszelkie zasady DLP, które tworzysz samodzielnie od podstaw. Możesz również wyłączyć lub usunąć zasady, aby twoi użytkownicy nie osyłali już porad dotyczących zasad ani powiadomień e-mail.
+Te zasady można w pełni dostosowywać, tak samo jak wszystkie zasady DLP tworzone samodzielnie od podstaw. Możesz również wyłączyć lub usunąć zasady, aby użytkownicy nie otrzymywali już wskazówek dotyczących zasad ani powiadomień e-mail.
   
 ![Zasady DLP o nazwie Domyślne zasady DLP.](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Gdy widżet jest wyświetlany i nie jest wyświetlany
 
-Widżet o nazwie **Dalsza ochrona udostępnianej** zawartości jest wyświetlany w **sekcji Polecane** dla **Ciebie na stronie** głównej Centrum &amp; zgodności zabezpieczeń. 
+Widżet o nazwie **Dalej chroń udostępnioną zawartość** zostanie wyświetlony w sekcji **Zalecane dla Ciebie** na stronie **głównej** portal zgodności Microsoft Purview. 
   
-Ten widżet jest wyświetlany tylko w przypadku:
+Ten widżet jest wyświetlany tylko wtedy, gdy:
   
-- Centrum zgodności zabezpieczeń &amp; ani centrum administracyjne firmy Exchange nie mają żadnych zasad ochrony przed utratą danych. Ten widżet ma ułatwić Ci rozpoczynanie pracy z zasadami DLP, dlatego nie jest wyświetlany, jeśli masz już zasady DLP.
+- Brak zasad ochrony przed utratą danych w centrum administracyjnym portal zgodności Microsoft Purview lub Exchange. Ten widżet ma ułatwić rozpoczęcie pracy z DLP, więc nie jest wyświetlany, jeśli masz już zasady DLP.
     
-- Zawartość zawierająca co najmniej jedną kartę kredytową została udostępniona osobie spoza Twojej organizacji w ciągu ostatnich 30 dni.
+- Zawartość zawierająca co najmniej jedną kartę kredytową została udostępniona osobie spoza organizacji w ciągu ostatnich 30 dni.
     
-Pamiętaj, że dostęp do dopasowania reguł może potrwać do 48 godzin, więc po wykryciu poufnych informacji udostępnionych zewnętrznie może upłynie do dwóch dni, aż pojawi się zalecenie.
+Pamiętaj, że dostępność dopasowań reguł może potrwać do 48 godzin, więc po wykryciu poufnych informacji udostępnionych zewnętrznie wyświetlenie zalecenia może potrwać do dwóch dni.
   
-Na koniec, po użyciu widżetu do uściśnięcia domyślnych zasad DLP widżet zniknie ze strony **głównej** . 
+Na koniec, gdy użyjesz widżetu do uściślenia domyślnych zasad DLP, widżet zniknie ze strony **głównej** . 
   
 

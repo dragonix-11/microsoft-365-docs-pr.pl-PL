@@ -1,5 +1,5 @@
 ---
-title: Testowanie dokładnego dopasowania danych do typu informacji poufnych
+title: Testuj dokładny typ informacji poufnych oparty na dopasowaniu danych
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,73 +17,74 @@ search.appverid:
 - MET150
 description: konfigurowanie usług
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0870cda205168e73d40adef7cdab333c7f0abdf
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 5b2ae7e5d6e434cd5502373b04a055c6fb2fb4a9
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679945"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754239"
 ---
-# <a name="test-an-exact-data-match-sensitive-information-type"></a>Testowanie dokładnego dopasowania danych do typu informacji poufnych
+# <a name="test-an-exact-data-match-sensitive-information-type"></a>Testuj dokładny typ informacji poufnych oparty na dopasowaniu danych
 
-Po utworzeniu dokładnego dopasowania danych (EDM) do typu informacji poufnych (SIT) i po upływie godziny od sprawdzenia, czy tabela informacji poufnych zakończyła przekazywanie i indeksowanie, możesz sprawdzić, czy wykrywa informacje, które chcesz wykryć, przy użyciu funkcji testowej w sekcji typów informacji poufnych w Centrum zgodności.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Po utworzeniu dokładnego typu informacji poufnych (EDM) i godzinie po sprawdzeniu, czy tabela informacji poufnych zakończyła przekazywanie i indeksowanie, można sprawdzić, czy wykryto informacje, które chcesz wykryć, za pomocą funkcji testowej w sekcji typy informacji poufnych w Centrum zgodności.
  
->[! UWAGA:] Propagowanie zmian w już utworzonym programie EDM SIT może trochę potrwać w całym systemie. Jeśli w typie informacji poufnych usługi EDM są zmiany dotyczące rozwiązywania problemów z wykrywaniem, przed użyciem funkcji testowej należy zaczekać co najmniej godzinę na ich wprowadzenie w celu weryfikacji ich wpływu.
+>[! UWAGA:] Propagowanie zmian w już utworzonym środowisku EDM SIT może zająć trochę czasu. Jeśli wprowadzasz zmiany w typie informacji poufnych EDM w celu rozwiązywania problemów z wykrywaniem, poczekaj co najmniej godzinę po wprowadzeniu tych zmian przed użyciem funkcji testowej w celu zweryfikowania ich wpływu.
 
-## <a name="test-your-edm-sit-in-the-compliance-center"></a>Testowanie swojego konta EDM SIT w Centrum zgodności
+## <a name="test-your-edm-sit-in-the-compliance-center"></a>Testowanie aplikacji EDM SIT w Centrum zgodności
 
-1. Otwórz **Centrum zgodności** KlasyfikacjadanychUniące  >  > **typy informacji.**
+1. Otwórz **centrum** >  zgodności **Typy informacji poufnych** **klasyfikacji** >  danych.
 
-2. Wybierz pozycję EDM SIT z listy, a następnie wybierz **pozycję Test w** okienku wysuwu. Ta opcja jest dostępna tylko w przypadku typów informacji poufnych.
+2. Wybierz z listy pozycję EDM SIT, a następnie wybierz pozycję **Testuj** w okienku wysuwanym. Ta opcja jest dostępna tylko w przypadku typów informacji poufnych.
  
-3. Upload element zawierający dane, które chcesz wykryć. Na przykład utwórz element zawierający podzbiór wierszy w tabeli informacji poufnych. Jeśli w schemacie została użyta funkcja dopasowania konfigurowalna do zdefiniowania zignorowanych ograniczników, upewnij się, że element zawiera przykłady z tymi ogranicznikami i bez nich.
+3. Przekaż element zawierający dane, które chcesz wykryć. Na przykład utwórz element zawierający podzestaw wierszy w tabeli informacji poufnych. Jeśli w schemacie użyto konfigurowalnej funkcji dopasowania do definiowania ignorowanych ograniczników, upewnij się, że element zawiera przykłady z tymi ogranicznikami i bez nich.
 
-4. Po przesłaniu i zeskanowaniu pliku sprawdź, czy jego dopasowania są w Twoim systemie EDM SIT.
+4. Po przekazaniu i zeskanowaniu pliku sprawdź, czy nie ma dopasowań do interfejsu EDM SIT.
 
-5. Jeśli funkcja **Test** w funkcji SIT wykryje dopasowanie, sprawdź, czy nie przycina go lub nie wyodrębnia go niepoprawnie. Na przykład wyodrębniając tylko ciąg podrzędny pełnego ciągu, który powinien zostać wykryć, lub wybierając tylko pierwszy wyraz w ciągu wielosłowowym, albo uwzględniając dodatkowe symbole lub znaki w wyodrębniania. Aby [uzyskać informacje o języku wyrażeń](/dotnet/standard/base-types/regular-expression-language-quick-reference) regularnych, zobacz Język wyrażeń regularnych — podręczny przewodnik. 
+5. Jeśli funkcja **Test** w usłudze SIT wykryje dopasowanie, sprawdź, czy nie przycina jej ani nie wyodrębnia niepoprawnie. Na przykład przez wyodrębnienie tylko podciągu pełnego ciągu, który ma zostać wykryty, lub pobranie tylko pierwszego słowa w ciągu wielowyrazowym lub uwzględnienie dodatkowych symboli lub znaków w wyodrębnianiu. Zobacz [Język wyrażeń regularnych — szybkie odwołanie](/dotnet/standard/base-types/regular-expression-language-quick-reference) do odwołania do języka wyrażeń regularnych. 
 
-5. Możesz też użyć następującego polecenia cmdlet programu PowerShell:
+5. Alternatywnie możesz użyć następującego polecenia cmdlet programu PowerShell:
 
 ```powershell
 Test-DataClassification  -ClassificationNames “[Your EDM sensitive info type]” -TexttoClassify “[your own text to scan for matches]” 
 ```
 
 > [!NOTE]
- W przypadku tworzenia lub edytowania typu informacji poufnych w programie EDM lub podstawowej wersji sit, na której jest oparty typ EDM, cała nowa zawartość i zawartość zmodyfikowana po zmianach w typach informacji poufnych zostanie przeszukana w przypadku tekstu, który pasuje do nowych definicji, ale wcześniejsza zawartość nie zostanie przeszukana do czasu jej zmodyfikowania lub ponownego indeksowania. 
+ Podczas tworzenia lub edytowania typu informacji poufnych EDM lub podstawowego interfejsu SIT, na którym jest oparty typ EDM, cała nowa zawartość i zawartość, które zostały zmodyfikowane po wprowadzeniu zmian w interfejsach SIC, zostaną przeszukane pod kątem tekstu zgodnego z nowymi definicjami, ale istniejąca wcześniej zawartość nie zostanie przeszukana, dopóki nie zostanie zmodyfikowana lub ponownie istniejąca. 
 
-Aby wymusić ponowne przeszukiwanie istniejącej zawartości w witrynie lub bibliotece programu SharePoint albo w bibliotece albo w programie OneDrive, postępuj zgodnie z instrukcjami w te sposób: Ręczne żądanie przeszukiwania i [ponownego](/sharepoint/crawl-site-content) indeksowania witryny, biblioteki lub listy.
+Aby wymusić ponowne przeszukiwanie istniejącej zawartości w witrynie lub bibliotece SharePoint lub w OneDrive, postępuj zgodnie z instrukcjami w [temacie Ręczne przeszukiwanie i ponowne indeksowanie lokacji, biblioteki lub listy](/sharepoint/crawl-site-content).
 
-## <a name="test-your-edm-sit-in-mip-policies"></a>Testowanie zasad EDM SIT w programie MIP
+## <a name="test-your-edm-sit-with-information-protection-policies"></a>Testowanie aplikacji EDM SIT przy użyciu zasad ochrony informacji
 
-Dzięki zasadom można sprawdzić, gdzie jest używany program EDM SIT i jak dokładna jest ona w produkcji:
+Możesz zobaczyć, gdzie jest używane środowisko EDM SIT i jak dokładne jest w środowisku produkcyjnym, używając ich w zasadach:
 
-1. Utwórz zasady [automatycznego oznaczania i](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) uruchom je w omówienie **symulacyjnej.**
+1. Utwórz [zasady automatycznego etykietowania](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) i uruchom ją w **obszarze Omówienie symulacji**.
 
-1. Dodaj zawartość, która wyzwoli usługę EDM SIT, oraz zawartość, która nie będzie wyzwalać usługi EDM SIT, do lokalizacji, która jest monitorowana przez zasady.
+1. Dodaj zawartość, która wyzwoli interfejs EDM SIT, oraz zawartość, która nie wyzwoli EDM SIT, do lokalizacji monitorowanej przez zasady.
 
-1. Otwieranie karty **Elementy do przejrzenia** w celu sprawdzenia dopasowania.
+1. Otwórz kartę **Items to review (Elementy do przeglądu** ), aby sprawdzić dopasowania.
 
-1. Dostosuj zasady zgodnie z potrzebami. 
+1. Dostosuj zasady odpowiednio do potrzeb. 
 
-Gdy wyniki testów i dostosowywania będą zadowałe, niestandardowy sit oparty na funkcji EDM będzie gotowy do użycia w zasadach ochrony informacji, takich jak:
+Gdy wyniki testowania i dostrajania będą zadowalające, niestandardowe środowisko SIT oparte na usłudze EDM będzie gotowe do użycia w zasadach ochrony informacji, takich jak:
 
 - [Zasady DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
-- [Zasady automatycznego oznaczania etykiet](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Usługa Microsoft Defender dla aplikacji w chmurze](/cloud-app-security/data-protection-policies)
+- [Zasady automatycznego etykietowania](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/data-protection-policies)
 
 ## <a name="troubleshooting-tips"></a>Porady dotyczące rozwiązywania problemów
 
-Jeśli nie znajdziesz żadnych dopasowania, oto kilka porad dotyczących rozwiązywania problemów.
+Jeśli nie znajdziesz żadnych dopasowań, oto kilka wskazówek dotyczących rozwiązywania problemów.
 
-
-|Problem  |Porada w zakresie rozwiązywania problemów  |
+|Problem  |Porada dotycząca rozwiązywania problemów  |
 |---------|---------|
-|Nie znaleziono żadnych dopasowania     |  Upewnij się, że poufne dane zostały przekazane poprawnie za pomocą poleceń w tece Skrót i przekaż tabelę źródła informacji poufnych, aby dokładnie dopasować dane [do typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|
-|Nie znaleziono żadnych dopasowania   | Przetestuj usługę SIT używaną podczas konfigurowania podstawowego elementu w każdym z wzorców. Potwierdzi to, że sit jest w stanie dopasować przykłady w pozycji. Używanie nieprawidłowo zdefiniowanej funkcji SIT jako elementu klasyfikacji typu informacji poufnej usługi EDM jest najczęstszą przyczyną błędów wykrywania w funkcji EDM.         |
-|Pozycja SIT wybrana dla podstawowego elementu typu EDM nie znajduje dopasowania w elemencie lub znajduje mniej dopasowań niż oczekiwano    |  Sprawdź, czy obsługuje separatory i ograniczniki w zawartości. Pamiętaj, aby w schemacie uwzględnić zignorowane ograniczniki zdefiniowane.       |
-|Element podstawowy SIT znajduje dopasowania w elemencie, ale nie ma w tym przypadku pozycji EDM SIT.     | - Sprawdź, czy instrukcje REGEX nie mają rozpoczynać lub kończyć przechwytywania ogranicznika whitespace, takiego jak /s. Odstępy nie będą zgodne z wartością skrótu w tabeli danych. Zamiast tego użyj ogranicznika słownego, takiego jak /b. </br> - Sprawdź instrukcje REGEX, aby upewnić się, że przechwycą one cały ciąg, który chcesz przechwycić, a nie tylko ciąg podrzędny. Na przykład ten wzorzec dla adresów e-mail [a-zA-Z]{30}@[a-zA-Z]{20}". a-zA-Z]{2,3} *będzie* odpowiadać user@contoso.com i *user@contoso.co.jp*.  |
-|System EDM SIT z elementami podstawowymi i bez zdefiniowanych elementów pomocniczych wykrywa elementy, ale nie wykrywa ani nie wykrywa mniej niż oczekiwano, gdy są wymagane elementy podstawowe i pomocnicze.  | Upewnij się, że wartości pomocnicze składają się z jednego wyrazu lub ciągu, który nie zawiera spacji, lub użyj instrukcji REGEX, które wykryją ciągi wielosłowne. Na przykład \b[A-Z][a-z]{1,25}([ -][A-Z][a-z]{1,25}){0,4}\b, która będzie odpowiadać dowolnej sekwencji od jednego do pięciu następujących po sobie wyrazów zaczynanych od wielkie litery. Należy użyć tej funkcji SIT jako elementu klasyfikacji dla dodatkowych warunków dowodowych w pliku XML typu informacji poufnych funkcji EDM. Zobacz [Ręczne tworzenie pakietu reguł](sit-get-started-exact-data-match-create-rule-package.md#create-a-rule-package-manually)|
-|Funkcja testowa SIT w ogóle nie wykrywa żadnych wyników.   | Sprawdź, czy wybrany program SIT uwzględnia wymagania dotyczące dodatkowych słów kluczowych lub innych reguł poprawności. Aby uzyskać informacje na temat wbudowanych typów informacji[](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions), zobacz Definicje jednostek typu informacji poufnych w celu sprawdzenia, jakie minimalne wymagania muszą spełniać poszczególne typy danych.        |
-|Funkcja Testuj działa, ale SharePoint lub OneDrive nie są wykrywane w zasadach DLP ani w przypadku automatycznego oznaczania etykiet     | Sprawdź, czy dokumenty, których oczekujesz, są wyświetlane w Eksploratorze zawartości. Jeśli ich tam nie ma, pamiętaj, że jako dopasowania będzie pokazywana tylko zawartość utworzona po zmianie typu informacji poufnych. Aby wyświetlić istniejące wcześniej elementy, należy ponownie odszyfrować witryny i biblioteki. Zobacz [Ręczne żądanie przeszukiwania i ponownego](/sharepoint/crawl-site-content) indeksowania witryny, biblioteki lub listy, aby uzyskać szczegółowe informacje na temat ponownego SharePoint i OneDrive.        |
-|Reguły DLP lub automatyczne oznaczanie wymagające wielu dopasowania nie powodują wyzwolenia     |Sprawdź, czy są spełnione wymagania dotyczące sąsiedztwa zarówno dla typu danych EDM, jak i podstawowych typów informacji poufnych. Jeśli na przykład maksymalna odległość między elementem podstawowym a obsługującymi słowa kluczowe wynosi 300 znaków, ale słowa kluczowe znajdują się tylko w pierwszym wierszu długiej tabeli, tylko kilka pierwszych wierszy pasujących wartości prawdopodobnie będzie spełniało wymagania dotyczące odległości. Zmodyfikuj definicje funkcji SIT, aby obsługiwać bardziej luźne reguły sąsiedztwa, lub użyj dowolnego miejsca w dokumencie, aby uzyskać dodatkowe informacje na temat warunków dowodowych.         |
-|Wykrywanie typu EDM jest niespójne lub błędne     |Sprawdź, czy typ informacji poufnych, który został użyty jako podstawa elementu podstawowego w typie EDM, nie wykrywa niepotrzebnej zawartości. Korzystanie z funkcji SIT w celu dopasowania zbyt dużej ilości niepowiązanej zawartości, na przykład dowolnego wyrazu, dowolnej liczby lub wszystkich adresów e-mail, może spowodować, że usługa nasyci i zignoruje odpowiednie dopasowania. Sprawdź liczbę fragmentów zawartości, które są zgodne z typem poufnym użytym dla podstawowych elementów w Eksploratorze zawartości. </br> Aby oszacować, czy program SIT dopasowywuje zbyt dużo zawartości: </br> — Dzielenie liczby elementów zawartości w Eksploratorze zawartości przez liczbę dni od utworzenia typu poufnego. </br> - Jeśli liczba dopasowania dziennie należy do kilkuset tysięcy lub milionów, może to oznaczać, że podstawowy numer SIT jest zbyt szeroki. Aby [uzyskać zalecenia](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) i najlepsze rozwiązania dotyczące wybierania odpowiedniego typu informacji poufnych dla typu danych EDM, zobacz Informacje o dokładnym dopasowaniu danych na podstawie typów informacji poufnych.         |
+|Nie znaleziono dopasowań     |  Upewnij się, że dane poufne zostały prawidłowo przekazane przy użyciu poleceń opisanych w artykule [Skrót i przekaż tabelę źródła informacji poufnych, aby uzyskać dokładne dane zgodne z typami informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|
+|Nie znaleziono dopasowań   | Przetestuj interfejs SIT używany podczas konfigurowania elementu podstawowego w każdym z wzorców. Spowoduje to potwierdzenie, że usługa SIT jest w stanie dopasować przykłady w elemencie. Użycie nieprawidłowo zdefiniowanego interfejsu SIT jako elementu klasyfikacji typu informacji poufnych EDM jest najczęstszą przyczyną błędów wykrywania w usłudze EDM.         |
+|Pozycja SIT wybrana dla elementu podstawowego w typie EDM nie znajduje dopasowania w elemencie lub znajduje mniej dopasowań niż oczekiwano    |  Sprawdź, czy obsługuje separatory i ograniczniki znajdujące się w zawartości. Pamiętaj, aby uwzględnić ignorowane ograniczniki zdefiniowane w schemacie.       |
+|Podstawowy element SIT znajduje dopasowania w elemencie, ale EDM SIT nie.     | — Sprawdź instrukcje REGEX pod kątem uruchamiania lub kończenia ogranicznika przechwytywania białych znaków, takiego jak /s. Biały obszar nie będzie zgodny z wartością skrótu w tabeli danych. Zamiast tego użyj ogranicznika wyrazów, takiego jak /b. </br> — Sprawdź instrukcje REGEX, aby upewnić się, że przechwytują cały ciąg, który chcesz przechwycić, a nie tylko podciąg. Na przykład ten wzorzec dla adresów e-mail [a-zA-Z]{30}@[a-zA-Z]{20}.[ a-zA-Z]{2,3} będzie odpowiadać *user@contoso.com* i *user@contoso.co.jp*.  |
+|Interfejs EDM SIT z elementami podstawowymi i bez zdefiniowanych elementów pomocniczych wykrywa elementy, ale nie wykrywa ani nie wykrywa mniej niż oczekiwano, gdy wymagane są elementy podstawowe i pomocnicze.  | Upewnij się, że wartości pomocniczych dowodów składają się z jednego słowa lub ciągu, który nie zawiera spacji, lub użyj instrukcji REGEX, które wykrywają ciągi wielowyrazowe. Na przykład \b[A-Z][a-z]{1,25}([ -][A-Z][a-z]{1,25}){0,4}\b, który będzie odpowiadał dowolnej sekwencji od jednego do pięciu kolejnych wyrazów rozpoczynających się wielkimi literami. Użyj tego interfejsu SIT jako elementu klasyfikacji dodatkowych warunków dowodowych w pliku XML typu informacji poufnych EDM. Zobacz [Ręczne tworzenie pakietu reguł](sit-get-started-exact-data-match-create-rule-package.md#create-a-rule-package-manually)|
+|Funkcja testu SIT w ogóle nie wykrywa żadnych dopasowań.   | Sprawdź, czy wybrana funkcja SIT zawiera wymagania dotyczące dodatkowych słów kluczowych lub innych weryfikacji. Aby zapoznać się z wbudowanymi interfejsami SIC, zobacz [Definicje jednostek typów informacji poufnych](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) , aby sprawdzić, jakie są minimalne wymagania dotyczące dopasowywania poszczególnych typów.        |
+|Funkcja testowania działa, ale elementy SharePoint lub OneDrive nie są wykrywane w regułach DLP lub automatycznego etykietowania     | Sprawdź, czy dokumenty, które mają być zgodne, są wyświetlane w Eksploratorze zawartości. Jeśli ich tam nie ma, pamiętaj, że tylko zawartość utworzona po zmianie typu informacji poufnych będzie wyświetlana jako dopasowana. Należy ponownie zszywać witryny i biblioteki, aby były wyświetlane wstępnie istniejące elementy. Aby uzyskać szczegółowe informacje na temat ponownego przeszukiwania SharePoint [i OneDrive, zobacz Ręczne przeszukiwanie i ponowne indeksowanie witryny, biblioteki lub listy](/sharepoint/crawl-site-content).        |
+|Reguły DLP lub automatycznego etykietowania, które wymagają wielu dopasowań, nie są wyzwalane     |Sprawdź, czy są spełnione wymagania dotyczące bliskości zarówno typu EDM, jak i podstawowych typów informacji poufnych. Jeśli na przykład maksymalna odległość między elementem podstawowym a słowami kluczowymi pomocniczymi wynosi 300 znaków, ale słowa kluczowe znajdują się tylko w pierwszym wierszu długiej tabeli, tylko kilka pierwszych wierszy pasujących wartości prawdopodobnie spełni wymagania dotyczące bliskości. Zmodyfikuj definicje SIT, aby obsługiwać bardziej swobodne reguły zbliżeniowe lub użyj dowolnego miejsca w dokumencie w celu spełnienia dodatkowych warunków dowodowych.         |
+|Wykrywanie typu EDM jest niespójne lub niekonsekwentne     |Sprawdź, czy typ informacji poufnych użyty jako podstawa elementu podstawowego w typie EDM nie wykrywa niepotrzebnej zawartości. Użycie funkcji SIT, która pasuje do zbyt dużej ilości niepowiązanej zawartości, takiej jak dowolne słowo, dowolna liczba lub wszystkie adresy e-mail, może spowodować nasycenie i zignorowanie odpowiednich dopasowań przez usługę. Sprawdź liczbę elementów zawartości odpowiadających typowi wrażliwemu użytemu dla elementów podstawowych w Eksploratorze zawartości. </br> Aby oszacować, czy funkcja SIT pasuje do zbyt dużej ilości zawartości: </br> — Dzielenie liczby elementów zawartości w Eksploratorze zawartości przez liczbę dni od utworzenia poufnego typu. </br> - Jeśli liczba meczów dziennie jest w zakresie setek tysięcy lub milionów, możliwe, że podstawowy SIT jest zbyt szeroki. Aby uzyskać zalecenia i najlepsze rozwiązania dotyczące wybierania odpowiedniego typu informacji poufnych dla typu EDM, zobacz [Informacje o dokładnych typach informacji poufnych opartych na dopasowaniu danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) .         |

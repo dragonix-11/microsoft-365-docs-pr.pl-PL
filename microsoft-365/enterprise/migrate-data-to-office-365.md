@@ -16,13 +16,13 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: W tym artykule znajdziesz zasoby ułatwiające migrowanie danych organizacji do Microsoft 365.
-ms.openlocfilehash: d0cf1aa5e744dc545f5a037b63f7cc1981f0e23c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: W tym artykule znajdziesz zasoby ułatwiające migrację danych organizacji do Microsoft 365.
+ms.openlocfilehash: 97846f3a35fdc415b172cbc5670739ca10204b70
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096419"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753435"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Migrowanie danych organizacji do Microsoft 365 Enterprise
 

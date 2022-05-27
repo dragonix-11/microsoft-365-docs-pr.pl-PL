@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Dowiedz się, jak korzystać z usługi Azure ExpressRoute z Office 365 i planować projekt implementacji sieci, jeśli wdrażasz go za jego pomocą.
-ms.openlocfilehash: bbb53913ede8a51d5e6d9bf6e39386cd3e8de304
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1350bf73fdddd2141a2df1cbcec5edebeacf7ad4
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096859"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754295"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Usługa Azure ExpressRoute dla Office 365
 
@@ -60,14 +60,14 @@ Nadal chcesz uzyskać więcej informacji? Dowiedz się, jak [zarządzać ruchem 
 ## <a name="what-office-365-services-are-included"></a>Jakie usługi Office 365 są wliczone w cenę?
 <a name="BKMK_WhatDoIGet"> </a>
 
-W poniższej tabeli wymieniono usługi Office 365 obsługiwane przez usługę ExpressRoute. Zapoznaj się z [artykułem Office 365 punktów końcowych](./urls-and-ip-address-ranges.md), aby dowiedzieć się, które żądania sieciowe dla tych aplikacji wymagają łączności z Internetem.
+W poniższej tabeli wymieniono usługi Office 365 obsługiwane przez usługę ExpressRoute. Zapoznaj się z [artykułem Office 365 endpoints (Punkty końcowe Office 365](./urls-and-ip-address-ranges.md)), aby dowiedzieć się, które żądania sieciowe dla tych aplikacji wymagają łączności z Internetem.
 
 | Dołączone aplikacje |
 |:-----|
 |Exchange Online <sup>1</sup> <br/> Exchange Online Protection <sup>1</sup> <br/> Delve <sup>1</sup> <br/> |
-|Skype dla firm <sup>Online1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
-|SharePoint <sup>Online1</sup> <br/> OneDrive dla Firm <sup>1</sup> <br/> Project Online <sup>1</sup> <br/> |
-|Portal i <sup>udostępnione1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Połączenie <sup>1</sup> <br/> Office <sup>1</sup> <br/> |
+|Skype dla firm Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
+|SharePoint Online<sup>1</sup> <br/> OneDrive dla Firm <sup>1</sup> <br/> Project Online <sup>1</sup> <br/> |
+|Portal i udostępnione<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Połączenie <sup>1</sup> <br/> Office <sup>1</sup> <br/> |
 
 <sup>1</sup> Każda z tych aplikacji ma wymagania dotyczące łączności z Internetem, które nie są obsługiwane za pośrednictwem usługi ExpressRoute, zobacz [artykuł Office 365 punktów końcowych](./urls-and-ip-address-ranges.md), aby uzyskać więcej informacji.
 
@@ -79,11 +79,11 @@ Implementacja usługi ExpressRoute wymaga zaangażowania właścicieli sieci i a
 
 1. W pełni zrozum potrzebę, aby usługa ExpressRoute spełniała wymagania planowania łączności Office 365. Dowiedz się, jakie aplikacje będą korzystać z Internetu lub usługi ExpressRoute, i w pełni zaplanuj wymagania dotyczące pojemności sieci, zabezpieczeń i wysokiej dostępności w kontekście korzystania z Internetu i usługi ExpressRoute dla ruchu Office 365.
 
-2. Określanie lokalizacji ruchu wychodzącego i komunikacji równorzędnej dla ruchu internetowego<sup></sup> i usługi ExpressRoute1.
+2. Określanie lokalizacji ruchu wychodzącego i komunikacji równorzędnej dla ruchu internetowego i usługi ExpressRoute<sup>1</sup>.
 
 3. Określ pojemność wymaganą przez Internet i połączenia usługi ExpressRoute.
 
-4. Masz plan wdrożenia zabezpieczeń i innych standardowych kontrolek <sup>obwodowych1</sup>.
+4. Mają wdrożony plan implementacji zabezpieczeń i innych standardowych kontrolek obwodowych<sup>1</sup>.
 
 5. Masz prawidłowe konto Microsoft Azure, aby subskrybować usługę ExpressRoute.
 
@@ -93,7 +93,7 @@ Implementacja usługi ExpressRoute wymaga zaangażowania właścicieli sieci i a
 
 8. Opcjonalnie [zaimplementuj usługę QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) i oceń rozszerzenie regionalne.
 
-<sup>1</sup> Ważne zagadnienia dotyczące wydajności. Decyzje w tym miejscu mogą znacząco wpłynąć na opóźnienie, które ma kluczowe znaczenie dla aplikacji, takich jak Skype dla firm.
+<sup>1</sup> Ważne zagadnienia dotyczące wydajności. Decyzje w tym miejscu mogą znacząco wpłynąć na opóźnienie, co ma kluczowe znaczenie dla aplikacji, takich jak Skype dla firm.
 
 Aby uzyskać dodatkowe informacje, skorzystaj z naszego [przewodnika routingu](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) oprócz [dokumentacji usługi ExpressRoute](/azure/expressroute/expressroute-introduction).
 

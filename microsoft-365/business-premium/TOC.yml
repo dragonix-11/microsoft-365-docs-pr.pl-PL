@@ -96,6 +96,8 @@
       href: m365bp-security-incident-management.md
     - name: Pobieranie rekomendacji dotyczących zabezpieczeń
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Przeglądanie zagrożeń wykrytych na urządzeniach
+      href: m365bp-review-threats-take-action.md
     - name: Przegadanie akcji korygowania na urządzeniach
       href: m365bp-review-remediation-actions-devices.md
     - name: Reagowanie na konto e-mail z naruszonymi zabezpieczeniami

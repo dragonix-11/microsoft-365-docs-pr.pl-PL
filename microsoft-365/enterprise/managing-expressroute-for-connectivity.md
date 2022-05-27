@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: Dowiedz się, jak zarządzać usługą ExpressRoute dla Office 365, w tym typowymi obszarami do skonfigurowania, takimi jak filtrowanie prefiksów, zabezpieczenia i zgodność.
-ms.openlocfilehash: a601c047a7b8e19f02a728d00708689c795d5a64
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak zarządzać usługą ExpressRoute dla Office 365, w tym typowymi obszarami konfigurowania, takimi jak filtrowanie prefiksów, zabezpieczenia i zgodność.
+ms.openlocfilehash: 493a7c0ca14d05a2b84763b9e9485f828574a930
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098323"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753875"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Zarządzanie usługą ExpressRoute na potrzeby łączności Office 365
 
@@ -45,7 +45,7 @@ Istnieje wiele powodów, aby uniknąć używania [adresów URL Office 365 i zakr
 
 - Adresy URL i zakresy adresów IP Office 365 są przeznaczone do zarządzania listami dozwolonych zapory i infrastrukturą serwera proxy, a nie routingiem.
 
-- Zakresy adresów URL i ADRESÓW IP Office 365 nie obejmują innych usługi firmy Microsoft, które mogą znajdować się w zakresie połączeń usługi ExpressRoute.
+- Zakresy adresów URL i IP Office 365 nie obejmują innych usługi firmy Microsoft, które mogą znajdować się w zakresie połączeń usługi ExpressRoute.
 
 |**Opcja**|**Złożoności**|**Zmienianie kontrolki**|
 |:-----|:-----|:-----|
@@ -59,7 +59,7 @@ Niezależnie od sposobu zarządzania anonsami tras protokołu BGP pochodzącymi 
   
 ### <a name="security"></a>Bezpieczeństwo
 
-Firma Microsoft zaleca utrzymywanie własnych kontroli obwodowych sieci i zabezpieczeń dla połączeń komunikacji równorzędnej usługi ExpressRoute i komunikacji równorzędnej firmy Microsoft, która obejmuje połączenia z usługami Office 365 i z nich. W przypadku żądań sieciowych przesyłanych wychodzących z sieci do sieci firmy Microsoft oraz ruchu przychodzącego z sieci firmy Microsoft do sieci należy stosować mechanizmy zabezpieczeń.
+Firma Microsoft zaleca utrzymywanie własnych kontroli obwodowych sieci i zabezpieczeń dla połączeń komunikacji równorzędnej usługi ExpressRoute i komunikacji równorzędnej firmy Microsoft, która obejmuje połączenia z usługami Office 365 i z nich. W przypadku żądań sieciowych przesyłanych wychodzących z sieci do sieci firmy Microsoft i przychodzących z sieci firmy Microsoft do sieci należy stosować mechanizmy zabezpieczeń.
   
 #### <a name="outbound-from-customer-to-microsoft"></a>Ruch wychodzący od klienta do firmy Microsoft
   
@@ -86,7 +86,7 @@ Istnieje kilka opcjonalnych scenariuszy, które wymagają od firmy Microsoft ini
 
 - Wyślij wiadomość e-mail z dzierżawy Exchange Online do hosta lokalnego.
 
-- SharePoint Poczta online wysyłana z usługi SharePoint Online do hosta lokalnego.
+- SharePoint Poczta online wysłana z usługi SharePoint Online do hosta lokalnego.
 
 - [SharePoint federacyjnego wyszukiwania hybrydowego](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 

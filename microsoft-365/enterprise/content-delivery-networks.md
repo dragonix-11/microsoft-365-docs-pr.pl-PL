@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Skorzystaj z tych informacji, aby dowiedzieć się, jak Office 365 używa sieci dostarczania zawartości (CDN) w celu zwiększenia wydajności.
-ms.openlocfilehash: b2809a524088b3cb53e415d3d83d1f8a02b27dc1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a2ed395ba400e09b87777c381e140a38e32d9210
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092740"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754803"
 ---
 # <a name="content-delivery-networks-cdns"></a>Sieci dostarczania zawartości (CDN)
 
@@ -79,7 +79,7 @@ Chociaż nie jest to część Office 365 CDN, możesz użyć tych sieci CDN w dz
 ### <a name="azure-cdn"></a>Azure CDN
 
 >[!NOTE]
->Począwszy od 3. kwartału 2020 r., usługa SharePoint Online rozpocznie buforowanie filmów wideo na Azure CDN w celu obsługi ulepszonego odtwarzania wideo i niezawodności. Popularne filmy wideo będą przesyłane strumieniowo z punktu końcowego CDN najbliżej użytkownika. Te dane pozostaną w granicach usługi Microsoft Purview. Jest to bezpłatna usługa dla wszystkich dzierżaw i nie wymaga żadnej akcji klienta do skonfigurowania.
+>Począwszy od 3. kwartału 2020 r., usługa SharePoint Online rozpocznie buforowanie filmów wideo na Azure CDN w celu obsługi ulepszonego odtwarzania wideo i niezawodności. Popularne filmy wideo będą przesyłane strumieniowo z punktu końcowego CDN najbliżej użytkownika. Te dane pozostaną w granicach Microsoft Purview. Jest to bezpłatna usługa dla wszystkich dzierżaw i nie wymaga żadnej akcji klienta do skonfigurowania.
 
 Za pomocą **Azure CDN** można wdrożyć własne wystąpienie CDN na potrzeby hostowania niestandardowych składników Web Part, bibliotek i innych zasobów zasobów, co umożliwia stosowanie kluczy dostępu do magazynu CDN i wywieranie większej kontroli nad konfiguracją CDN. Korzystanie z Azure CDN nie jest bezpłatne i wymaga subskrypcji platformy Azure.
 
@@ -113,7 +113,7 @@ Niezależnie od tego, jakie CDN skonfigurować dla dzierżawy Office 365, podsta
 
     b. Jeśli dane są już buforowane w _prywatnym_ pochodzeniu, usługa CDN sprawdza uprawnienia Office 365 konta użytkownika do źródła. Jeśli masz uprawnienia, usługa SharePoint Online dynamicznie generuje niestandardowy adres URL składający się ze ścieżki do zasobu w CDN i dwóch tokenów dostępu oraz zwraca niestandardowy adres URL do klienta. Następnie klient pobiera dane bezpośrednio z najbliższej lokalizacji CDN do klienta przy użyciu niestandardowego adresu URL.
 
-3. Jeśli dane nie są buforowane w CDN, węzeł CDN żąda danych z Office 365, a następnie buforuje dane przez pewien czas po pobraniu danych przez klienta.
+3. Jeśli dane nie są buforowane w CDN, węzeł CDN żąda danych z Office 365, a następnie buforuje dane przez czas po pobraniu danych przez klienta.
 
 CDN określa najbliższe centrum danych w przeglądarce użytkownika, a przy użyciu przekierowania pobiera stamtąd żądane dane. CDN przekierowanie jest szybkie i może zaoszczędzić użytkownikom dużo czasu pobierania.
 
@@ -137,7 +137,7 @@ Sieci CDN używane przez Office 365 zawsze mogą ulec zmianie i w wielu przypadk
 
 Mierzenie określonych różnic w wydajności między danymi pobranymi bezpośrednio z Office 365 i danych pobranych z określonego CDN, takich jak lokalizacja w stosunku do dzierżawy i najbliższego punktu końcowego CDN, liczba zasobów na stronie obsługiwanej przez CDN oraz przejściowe zmiany opóźnienia i przepustowości sieci. Jednak prosty test A/B może pomóc pokazać różnicę w czasie pobierania określonego pliku.
 
-Poniższe zrzuty ekranu ilustrują różnicę w szybkości pobierania między natywną lokalizacją pliku w Office 365 a tym samym plikiem hostowanym w [Content Delivery Network Microsoft Ajax](/aspnet/ajax/cdn/overview). Te zrzuty ekranu pochodzą z karty **Sieć** w narzędziach programistycznych programu Internet Explorer 11. Te zrzuty ekranu pokazują opóźnienie w popularnej bibliotece jQuery. Aby wyświetlić ten ekran, w programie Internet Explorer naciśnij klawisz **F12** i wybierz kartę **Sieć** symbolizowaną ikoną Wi-Fi.
+Poniższe zrzuty ekranu ilustrują różnicę w szybkości pobierania między natywną lokalizacją pliku w Office 365 a tym samym plikiem hostowanym w [Content Delivery Network Microsoft Ajax](/aspnet/ajax/cdn/overview). Te zrzuty ekranu pochodzą z karty **Sieć** w narzędziach programistycznych programu Internet Explorer 11. Te zrzuty ekranu pokazują opóźnienie w popularnej bibliotece jQuery. Aby wyświetlić ten ekran, w programie Internet Explorer naciśnij **klawisz F12** i wybierz kartę **Sieć** , która jest symbolizowana ikoną Wi-Fi.
   
 ![Zrzut ekranu przedstawiający sieć F12.](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
@@ -166,7 +166,7 @@ Aby uzyskać szczegółowe informacje na temat prywatności i ochrony danych dla
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Jak mogę zabezpieczyć sieć za pomocą tych wszystkich usług innych firm?
 
-Wykorzystanie szerokiego zestawu usług partnerskich umożliwia Office 365 skalowanie i spełnianie wymagań dotyczących dostępności, a także rozszerzanie środowiska użytkownika podczas korzystania z Office 365. Usługi innych firm Office 365 wykorzystują zarówno listy odwołania certyfikatów, takie jak crl.microsoft.com lub sa.symcb.com, jak i sieci CDN, takie jak r3.res.outlook.com. Każda CDN nazwa FQDN generowana przez Office 365 jest niestandardową nazwą FQDN dla Office 365. Jeśli na żądanie Office 365 wysłano Cię do nazwy FQDN, możesz mieć pewność, że dostawca CDN kontroluje nazwę FQDN i podstawową zawartość w tej lokalizacji.
+Korzystanie z rozbudowanego zestawu usług partnerskich umożliwia Office 365 skalowanie i spełnianie wymagań dotyczących dostępności oraz ulepszanie środowiska użytkownika podczas korzystania z Office 365. Usługi innych firm Office 365 wykorzystują zarówno listy odwołania certyfikatów, takie jak crl.microsoft.com lub sa.symcb.com, jak i sieci CDN, takie jak r3.res.outlook.com. Każda CDN nazwa FQDN generowana przez Office 365 jest niestandardową nazwą FQDN dla Office 365. Jeśli na żądanie Office 365 zostanie wysłana nazwa FQDN, możesz mieć pewność, że dostawca CDN kontroluje nazwę FQDN i podstawową zawartość w tej lokalizacji.
   
 W przypadku klientów, którzy chcą oddzielić żądania przeznaczone dla firmy Microsoft lub Office 365 centrum danych od żądań przeznaczonych dla innych firm, napisaliśmy wskazówki dotyczące [zarządzania punktami końcowymi Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
 
@@ -180,15 +180,15 @@ Możesz również użyć [Office 365 usługi sieci Web adresów IP i adresów UR
 
 Nieustannie szukamy nowych sposobów obsługi potrzeb naszych klientów i obecnie badamy korzystanie z rozwiązań serwera proxy buforowania i innych lokalnych rozwiązań CDN.
 
-Chociaż nie jest to część Office 365 CDN, można również użyć **Azure CDN** do hostowania niestandardowych składników Web Part, bibliotek i innych zasobów zasobów, co umożliwia stosowanie kluczy dostępu do magazynu CDN i wywieranie większej kontroli nad konfiguracją CDN. Korzystanie z Azure CDN nie jest bezpłatne i wymaga subskrypcji platformy Azure. Aby uzyskać więcej informacji na temat konfigurowania wystąpienia Azure CDN, zobacz [Szybki start: integrowanie konta usługi Azure Storage z Azure CDN](/azure/cdn/cdn-create-a-storage-account-with-cdn).
+Chociaż nie jest to część Office 365 CDN, możesz również użyć **Azure CDN** do hostowania niestandardowych składników Web Part, bibliotek i innych zasobów zasobów, co umożliwia stosowanie kluczy dostępu do magazynu CDN i wywieranie większej kontroli nad konfiguracją CDN. Korzystanie z Azure CDN nie jest bezpłatne i wymaga subskrypcji platformy Azure. Aby uzyskać więcej informacji na temat konfigurowania wystąpienia Azure CDN, zobacz [Szybki start: integrowanie konta usługi Azure Storage z Azure CDN](/azure/cdn/cdn-create-a-storage-account-with-cdn).
 
 ## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>Używam usługi Azure ExpressRoute dla Office 365, czy to coś zmienia?
 
-[Usługa Azure ExpressRoute dla Office 365](azure-expressroute.md) zapewnia dedykowane połączenie z infrastrukturą Office 365, która jest oddzielona od publicznego Internetu. Oznacza to, że klienci nadal będą musieli łączyć się za pośrednictwem połączeń innych niż ExpressRoute, aby nawiązać połączenie z sieciami CDN i inną infrastrukturą firmy Microsoft, która nie jest jawnie uwzględniona na liście usług obsługiwanych przez usługę ExpressRoute. Aby uzyskać więcej informacji na temat sposobu kierowania określonego ruchu, takiego jak żądania przeznaczone dla sieci CDN, zobacz [Office 365 zarządzanie ruchem sieciowym](routing-with-expressroute.md).
+[Usługa Azure ExpressRoute dla Office 365](azure-expressroute.md) zapewnia dedykowane połączenie z infrastrukturą Office 365, która jest oddzielona od publicznego Internetu. Oznacza to, że klienci nadal będą musieli łączyć się za pośrednictwem połączeń innych niż ExpressRoute, aby nawiązać połączenie z sieciami CDN i inną infrastrukturą firmy Microsoft, która nie jest jawnie uwzględniona na liście usług obsługiwanych przez usługę ExpressRoute. Aby uzyskać więcej informacji o sposobie kierowania określonego ruchu, takiego jak żądania przeznaczone dla sieci CDN, zobacz [Office 365 zarządzanie ruchem sieciowym](routing-with-expressroute.md).
 
 ## <a name="can-i-use-cdns-with-sharepoint-server-on-premises"></a>Czy mogę używać sieci CDN z lokalnym serwerem SharePoint?
 
-Używanie sieci CDN ma sens tylko w kontekście usługi SharePoint Online i należy ich unikać w przypadku serwera SharePoint. Wynika to z faktu, że wszystkie zalety lokalizacji geograficznej nie są prawdziwe, jeśli serwer i tak znajduje się lokalnie lub geograficznie blisko. Ponadto jeśli istnieje połączenie sieciowe z serwerami, na których jest hostowane, lokacja może być używana bez połączenia z Internetem i dlatego nie może pobrać plików CDN. W przeciwnym razie należy użyć CDN, jeśli istnieje jeden dostępny i stabilny dla biblioteki i plików potrzebnych dla witryny.
+Używanie sieci CDN ma sens tylko w kontekście usługi SharePoint Online i należy ich unikać w przypadku serwera SharePoint. Wynika to z faktu, że wszystkie zalety lokalizacji geograficznej nie są prawdziwe, jeśli serwer i tak znajduje się lokalnie lub geograficznie blisko. Ponadto jeśli istnieje połączenie sieciowe z serwerami, na których jest hostowane, lokacja może być używana bez połączenia z Internetem i w związku z tym nie może pobrać plików CDN. W przeciwnym razie należy użyć CDN, jeśli istnieje jeden dostępny i stabilny dla biblioteki i plików potrzebnych dla witryny.
   
 Oto krótki link, za pomocą którego możesz wrócić: [https://aka.ms/o365cdns]()
   

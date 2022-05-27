@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania, które mają zastosowanie do Microsoft Teams.
-ms.openlocfilehash: 68e69f198dfd79c1da210cd8d87144471d83abb7
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: cadff304744fcf06c6717b0709b719e05f8ddfb6
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285973"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754361"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Dowiedz się więcej na temat przechowywania Microsoft Teams
 
@@ -67,11 +67,11 @@ Te skrzynki pocztowe są wymienione według atrybutu RecipientTypeDetails:
 - **GroupMailbox**: te skrzynki pocztowe przechowują dane wiadomości dla Teams standardowych kanałów.
 - **SubstrateGroup**: te skrzynki pocztowe przechowują dane wiadomości dla Teams kanałów udostępnionych.
 
-Inne typy skrzynek pocztowych, takie jak RoomMailbox używane do Teams salach konferencyjnych, nie są obsługiwane w przypadku zasad przechowywania Teams.
+Inne typy skrzynek pocztowych, takie jak RoomMailbox używane do Teams sal konferencyjnych, nie są obsługiwane w przypadku zasad przechowywania Teams.
 
 Teams używa usługi czatu opartej na platformie Azure jako podstawowego magazynu dla wszystkich wiadomości (czatów i wiadomości kanału). Jeśli chcesz usunąć komunikaty Teams ze względu na zgodność, zasady przechowywania dla Teams mogą usuwać komunikaty po określonym okresie na podstawie czasu ich utworzenia. Wiadomości są następnie trwale usuwane zarówno ze skrzynek pocztowych Exchange, w których są przechowywane na potrzeby operacji zgodności, jak i z magazynu podstawowego używanego przez podstawową usługę czatu opartą na platformie Azure. Aby uzyskać więcej informacji na temat architektury bazowej, zobacz [Zabezpieczenia i zgodność w Microsoft Teams](/MicrosoftTeams/security-compliance-overview), a w szczególności w sekcji [architektury Information Protection](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Mimo że te dane z czatów Teams i wiadomości kanałów są przechowywane w skrzynkach pocztowych, należy skonfigurować zasady przechowywania dla **wiadomości kanału Teams** i **Teams lokalizacji czatów**. Teams czatów i wiadomości kanałów nie są uwzględniane w zasadach przechowywania skonfigurowanych dla Exchange skrzynek pocztowych użytkowników lub grup. Podobnie zasady przechowywania dla Teams nie wpływają na inne przechowywane skrzynki pocztowe elementów poczty e-mail.
+Mimo że te dane z czatów Teams i wiadomości kanałów są przechowywane w skrzynkach pocztowych, należy skonfigurować zasady przechowywania dla **wiadomości kanału Teams** i **Teams lokalizacji czatów**. Teams wiadomości czatów i kanałów nie są uwzględniane w zasadach przechowywania skonfigurowanych dla Exchange skrzynek pocztowych użytkowników lub grup. Podobnie zasady przechowywania dla Teams nie wpływają na inne przechowywane skrzynki pocztowe elementów poczty e-mail.
 
 Jeśli użytkownik zostanie dodany do czatu, kopia wszystkich udostępnionych mu wiadomości zostanie pozyskiwana do skrzynki pocztowej. Data utworzenia tych komunikatów nie zmienia się dla nowego użytkownika i pozostaje taka sama dla wszystkich użytkowników.
 
@@ -83,7 +83,7 @@ Po skonfigurowaniu zasad przechowywania wiadomości czatu i kanału zadanie czas
 Komunikaty pozostają w folderze SubstrateHolds przez co najmniej 1 dzień, a następnie jeśli kwalifikują się do usunięcia, zadanie czasomierza trwale usuwa je przy następnym uruchomieniu.
 
 > [!IMPORTANT]
-> Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) i Teams wiadomości czatu i kanału są przechowywane w Exchange Online skrzynkach pocztowych, trwałe usunięcie z folderu SubstrateHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania (w tym zasady stosowane do Exchange  lokalizacja), wstrzymanie postępowania sądowego, wstrzymanie opóźnienia lub zastosowanie blokady zbierania elektronicznych materiałów dowodowych do skrzynki pocztowej ze względów prawnych lub śledczych.
+> Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) i Teams wiadomości czatu i kanału są przechowywane w Exchange Online skrzynkach pocztowych, trwałe usunięcie z folderu SubstrateHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania dla tej samej lokalizacji, blokada postępowania sądowego, wstrzymanie opóźnienia lub jeśli do skrzynki pocztowej zastosowano blokadę zbierania elektronicznych materiałów dowodowych ze względów prawnych lub śledczych.
 >
 > Chociaż skrzynka pocztowa jest uwzględniona w odpowiedniej blokadzie, Teams wiadomości czatu i kanału, które zostały usunięte, nie będą już widoczne w aplikacji Teams, ale będą nadal wykrywalne przy użyciu elektronicznego zbierania elektronicznych materiałów dowodowych.
 
@@ -97,7 +97,7 @@ Dla dwóch ścieżek na diagramie:
 
 1. **Jeśli wiadomość czatu lub kanału jest edytowana lub usuwana** przez użytkownika w okresie przechowywania, oryginalna wiadomość jest kopiowana (jeśli jest edytowana) lub przenoszona (jeśli została usunięta) do folderu SubstrateHolds. Wiadomość jest tam przechowywana przez co najmniej 1 dzień. Gdy okres przechowywania wygaśnie, komunikat zostanie trwale usunięty przy następnym uruchomieniu zadania czasomierza (zazwyczaj od 1 do 7 dni).
 
-2. **Jeśli komunikat czatu lub kanału nie zostanie usunięty** przez użytkownika i dla bieżących komunikatów po edycji, wiadomość zostanie przeniesiona do folderu SubstrateHolds po upływie okresu przechowywania. Ta akcja zwykle trwa od 1 do 7 dni od daty wygaśnięcia. Gdy komunikat znajduje się w folderze SubstrateHolds, jest tam przechowywany przez co najmniej 1 dzień, a następnie komunikat jest trwale usuwany przy następnym uruchomieniu zadania czasomierza (zazwyczaj od 1 do 7 dni). 
+2. **Jeśli komunikat czatu lub kanału nie zostanie usunięty** przez użytkownika i dla bieżących komunikatów po edycji, wiadomość zostanie przeniesiona do folderu SubstrateHolds po upływie okresu przechowywania. Ta akcja zwykle trwa od 1 do 7 dni od daty wygaśnięcia. Gdy komunikat znajduje się w folderze SubstrateHolds, jest przechowywany przez co najmniej 1 dzień, a następnie komunikat zostanie trwale usunięty przy następnym uruchomieniu zadania czasomierza (zazwyczaj od 1 do 7 dni). 
 
 > [!NOTE]
 > Wiadomości przechowywane w skrzynkach pocztowych, w tym w ukrytych folderach, można wyszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych. Dopóki komunikaty nie zostaną trwale usunięte z folderu SubstrateHolds, nadal można je przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
@@ -202,7 +202,7 @@ Gdy użytkownicy zewnętrzni zostaną uwzględnieni w spotkaniu hostującym orga
 
 - Jeśli użytkownik zewnętrzny przyłącza się przy użyciu konta gościa w dzierżawie, wszystkie wiadomości ze spotkania są przechowywane zarówno w skrzynce pocztowej użytkowników, jak i w tle skrzynki pocztowej, która jest przyznawana kontu gościa. Zasady przechowywania nie są jednak obsługiwane w przypadku skrzynek pocztowych w tle, mimo że można je zgłaszać jako uwzględnione w zasadach przechowywania dla całej lokalizacji (czasami nazywanej "zasadami w całej organizacji").
 
-- Jeśli użytkownik zewnętrzny dołącza przy użyciu konta z innej organizacji Microsoft 365, zasady przechowywania nie mogą usuwać komunikatów dla tego użytkownika, ponieważ są one przechowywane w skrzynce pocztowej tego użytkownika w innej dzierżawie. Jednak w przypadku tego samego spotkania zasady przechowywania mogą usuwać komunikaty dla użytkowników.
+- Jeśli użytkownik zewnętrzny przyłącza się przy użyciu konta z innej organizacji Microsoft 365, zasady przechowywania nie mogą usuwać komunikatów dla tego użytkownika, ponieważ są one przechowywane w skrzynce pocztowej tego użytkownika w innej dzierżawie. Jednak w przypadku tego samego spotkania zasady przechowywania mogą usuwać komunikaty dla użytkowników.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Gdy użytkownik opuszcza organizację 
 

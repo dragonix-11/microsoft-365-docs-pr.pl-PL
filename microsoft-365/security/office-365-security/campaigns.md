@@ -1,5 +1,5 @@
 ---
-title: Widoki kampanii w Ochrona usługi Office 365 w usłudze Microsoft Defender projektu
+title: Widoki kampanii w planie Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,135 +17,138 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Informacje o widokach kampanii w programie Ochrona usługi Office 365 w usłudze Microsoft Defender.
+description: Dowiedz się więcej o widokach kampanii w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb1e5e6e740accdb9c6102b798df8e60ab47dfff
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5308770e4ddb72ead5e4d5dac7506c507aa407f6
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467736"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739632"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Widoki kampanii w ochronie usługi Office 365 w usłudze Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md)
 
-Widoki kampanii to funkcja dostępna Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2 (na przykład w Microsoft 365 E5 lub organizacjach z dodatku Ochrona usługi Office 365 w usłudze Defender Plan 2). Widoki kampanii w portalu Microsoft 365 Defender identyfikują i kategoryzują ataki służące do wyłudzania informacji w usłudze. Widoki kampanii mogą ułatwić:
+Widoki kampanii to funkcja w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2 (na przykład Microsoft 365 E5 lub organizacje z dodatkiem Ochrona usługi Office 365 w usłudze Defender plan 2). Widoki kampanii w portalu Microsoft 365 Defender identyfikuje i kategoryzuje ataki phishingowe w usłudze. Widoki kampanii mogą pomóc w:
 
-- Efektywne badanie i reagowanie na ataki służące do wyłudzania informacji.
-- Lepsze zrozumienie zakresu ataków.
-- Pokazanie wartości dla osób decyzyjnych.
+- Efektywne badanie ataków wyłudzania informacji i reagowanie na nie.
+- Lepiej zrozumieć zakres ataku.
+- Pokaż wartość decydentom.
 
-Widoki kampanii pozwalają szybciej i pełniej ominić ataki niż użytkownicy.
+Widoki kampanii pozwalają zobaczyć ogólny obraz ataku szybciej i bardziej kompletnie niż jakikolwiek człowiek.
+
+Obejrzyj ten krótki film wideo, w jaki sposób widoki kampanii w Ochrona usługi Office 365 w usłudze Microsoft Defender pomagają zrozumieć kampanie ataków wymierzone w organizację.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGBL8]
 
 ## <a name="what-is-a-campaign"></a>Co to jest kampania?
 
-Kampania to skoordynowany atak poczty e-mail wobec jednej lub wielu organizacji. Ataki poczty e-mail, które ukraść poświadczenia i dane firmowe to duża i dochodowa branża. W związku z zwiększaniem się technologii w celu zatrzymania ataków atakujący modyfikują swoje metody w celu zapewnienia sukcesu.
+Kampania to skoordynowany atak e-mail na jedną lub wiele organizacji. Ataki e-mail, które kradną poświadczenia i dane firmowe, to duża i lukratywna branża. Wraz ze wzrostem liczby technologii w celu powstrzymania ataków osoby atakujące modyfikują swoje metody w celu zapewnienia ciągłego sukcesu.
 
-Firma Microsoft wykorzystuje ogromną ilość danych ochrony przed wyłudzaniem informacji, spamem i złośliwym oprogramowaniem w całej usłudze, aby ułatwić identyfikowanie kampanii. Dane dotyczące ataków są analizowane i klasyfikowane według kilku czynników. Przykład:
+Firma Microsoft korzysta z ogromnych ilości danych chroniących przed wyłudzaniem informacji, ochrony przed spamem i złośliwym oprogramowaniem w całej usłudze, aby ułatwić identyfikowanie kampanii. Analizujemy i klasyfikujemy informacje o ataku według kilku czynników. Przykład:
 
-- **Źródło ataków**: źródłowe adresy IP i domeny poczty e-mail nadawcy.
-- **Właściwości wiadomości**: zawartość, styl i ton wiadomości.
-- **Adresaci wiadomości**: w jaki sposób są powiązani adresaci. Mogą to być na przykład domeny adresatów, funkcje pracy adresata (administratorzy,  kierownictwo itp.), typy firm (duże, małe, publiczne, prywatne itd.) oraz branże.
-- **Ład ataku**: złośliwe linki, załączniki lub inne łady w wiadomościach.
+- **Źródło ataku**: źródłowe adresy IP i domeny wiadomości e-mail nadawcy.
+- **Właściwości komunikatu**: zawartość, styl i ton komunikatów.
+- **Adresaci wiadomości**: jak adresaci są powiązani. Na przykład domeny adresatów, funkcje zadań adresatów (administratorzy, kadra kierownicza itp.), typy firm (duże, małe, publiczne, prywatne itp.) i branże.
+- **Ładunek ataku**: złośliwe linki, załączniki lub inne ładunki w komunikatach.
 
-Kampania może być krótka lub może obejmować kilka dni, tygodni lub miesięcy z okresami aktywnymi i nieaktywnymi. Kampania może zostać rozpoczęta wobec konkretnej organizacji lub może stanowić część większej kampanii w wielu firmach.
+Kampania może być krótkotrwała lub może obejmować kilka dni, tygodni lub miesięcy z aktywnymi i nieaktywnymi okresami. Może zostać uruchomiona kampania przeciwko określonej organizacji lub twoja organizacja może być częścią większej kampanii w wielu firmach.
 
-## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Widoki kampanii w portalu Microsoft 365 Defender kampanii
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Widoki kampanii w portalu Microsoft 365 Defender
 
-Widoki kampanii są dostępne w portalu Microsoft 365 Defender pod <https://security.microsoft.com> adresem Poczta **& kampanie** \> dotyczące współpracy lub bezpośrednio pod adresem .<https://security.microsoft.com/campaigns>
+Wyświetlenia kampanii są dostępne w portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com> **Email & collaboration** \> **Campaigns** lub bezpośrednio pod adresem <https://security.microsoft.com/campaigns>.
 
-:::image type="content" source="../../media/campaigns-overview.png" alt-text="Omówienie kampanii w portalu Microsoft 365 Defender sieci" lightbox="../../media/campaigns-overview.png":::
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="Omówienie kampanii w portalu Microsoft 365 Defender" lightbox="../../media/campaigns-overview.png":::
 
-Do widoków kampanii możesz również uzyskać dostęp w:
+Możesz również uzyskać dostęp do widoków kampanii z:
 
-- **Współpraca za & e-mail** \> **Eksplorator** \> **Widok** \> **Kampanie**
-- **Współpraca za & e-mail** \> **Eksplorator** \> **Widok** \> **Wszystkie wiadomości e-mail** \> **Karta Kampanii**
-- **Współpraca za & e-mail** \> **Eksplorator** \> **Widok** \> **Phish** \> **Karta Kampanii**
-- **Współpraca za & e-mail** \> **Eksplorator** \> **Widok** \> **Złośliwe oprogramowanie** \> **Karta Kampanii**
+- Współpraca \> **& poczty e-mail** **Explorer** \> **Widok** \> **Kampanie**
+- Współpraca \> **& poczty e-mail** **Explorer** \> **Widok** \> **Wszystkie wiadomości e-mail** \> Karta **Kampania**
+- Współpraca \> **& poczty e-mail** **Explorer** \> **Widok** \> **Phish** \> Karta **Kampania**
+- Współpraca \> **& poczty e-mail** **Explorer** \> **Widok** \> **Złośliwego oprogramowania** \> Karta **Kampania**
 
-Aby uzyskać dostęp do widoków kampanii, musisz być członkiem grup ról Zarządzanie **organizacją,** **Administrator** zabezpieczeń lub  Czytnik zabezpieczeń w portalu Microsoft 365 Defender zabezpieczeń. Aby uzyskać więcej informacji, [zobacz Uprawnienia w portalu Microsoft 365 Defender użytkowników](permissions-microsoft-365-security-center.md).
+Aby uzyskać dostęp do widoków kampanii, musisz być członkiem grup ról **Zarządzanie organizacją**, **Administrator zabezpieczeń** lub **Czytelnik zabezpieczeń** w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 ## <a name="campaigns-overview"></a>Omówienie kampanii
 
-Strona przeglądu zawiera informacje na temat wszystkich kampanii.
+Strona przeglądu zawiera informacje o wszystkich kampaniach.
 
-Na domyślnej **karcie Kampania** obszar **Typ** kampanii zawiera wykres słupkowy przedstawiający liczbę adresatów dziennie. Domyślnie na wykresie są zarówno dane **typu Phish** , jak i **Malware** .
+Na domyślnej karcie **Kampania** obszar **Typ kampanii** zawiera wykres słupkowy pokazujący liczbę adresatów dziennie. Domyślnie na wykresie są wyświetlane zarówno dane **języka Phish** , jak i **złośliwego oprogramowania** .
 
 > [!TIP]
-> Jeśli nie widzisz żadnych danych dotyczących kampanii, spróbuj zmienić zakres dat lub [filtry](#filters-and-settings).
+> Jeśli nie widzisz żadnych danych kampanii, spróbuj zmienić zakres dat lub [filtry](#filters-and-settings).
 
 Tabela poniżej wykresu na stronie przeglądu zawiera następujące informacje na karcie **Kampania** :
 
 - **Nazwa**
 
-- **Przykładowy temat**: wiersz tematu jednej z wiadomości w kampanii. Pamiętaj, że wszystkie wiadomości w kampanii niekoniecznie będą mieć ten sam temat.
+- **Przykładowy temat**: wiersz tematu jednego z komunikatów w kampanii. Pamiętaj, że wszystkie komunikaty w kampanii nie muszą mieć tego samego tematu.
 
-- **Kierowane**: Wartość procentowa obliczona przez: (liczba adresatów kampanii w organizacji) / (łączna liczba adresatów w kampanii we wszystkich organizacjach w ramach usługi). Ta wartość wskazuje stopień, w jakim kampania jest kierowana tylko do Twojej organizacji (wyższa wartość) i do innych organizacji w usłudze (niższa wartość).
+- **Docelowe**: wartość procentowa obliczona przez: (liczba adresatów kampanii w organizacji) / (całkowita liczba adresatów w kampanii we wszystkich organizacjach w usłudze). Ta wartość wskazuje stopień, w jakim kampania jest kierowana tylko do organizacji (wyższa wartość) a także skierowana do innych organizacji w usłudze (niższa wartość).
 
 - **Typ**: Ta wartość to **Phish** lub **Malware**.
 
-- **Podtyp**: ta wartość zawiera więcej szczegółów dotyczących kampanii. Przykład:
-  - **Phish**: Jeśli jest dostępny, markę, która jest wyłuddawana w tej kampanii. Na przykład `Microsoft`, `365`, `Unknown``Outlook`, lub `DocuSign`.
-  - **Złośliwe** oprogramowanie: Na przykład lub `HTML/PHISH` `HTML/<MalwareFamilyName>`.
+- **Podtyp**: ta wartość zawiera więcej szczegółów na temat kampanii. Przykład:
+  - **Phish**: Jeśli jest dostępna, marka, która jest phished przez tę kampanię. Na przykład , `Microsoft`, `365`, `Unknown`, `Outlook`lub `DocuSign`.
+  - **Złośliwe oprogramowanie**: na przykład `HTML/PHISH` lub `HTML/<MalwareFamilyName>`.
 
-  Tam, gdzie jest to możliwe, markę, która jest wyłuddawana w ramach tej kampanii. Gdy wykrywanie jest sterowane przez Ochrona usługi Office 365 w usłudze Defender, do wartości podtypu jest dodawany prefiks **ATP**-.
+  Jeśli jest dostępna, marka, która jest phished przez tę kampanię. Gdy wykrywanie jest sterowane przez technologię Ochrona usługi Office 365 w usłudze Defender, prefiks **ATP —** jest dodawany do wartości podtypu.
 
-- **Adresaci**: liczba użytkowników, do których kierowano w ramach tej kampanii.
+- **Adresaci**: liczba użytkowników objętych tą kampanią.
 
-- **Skrzynka odbiorcza**: liczba użytkowników, którzy otrzymywali wiadomości z tej kampanii w swoich skrzynkach odbiorczych (nie jest dostarczana do folderu wiadomości-śmieci).
+- **Skrzynka odbiorcza**: liczba użytkowników, którzy odebrali wiadomości z tej kampanii w skrzynce odbiorczej (nie są dostarczane do folderu Wiadomości-śmieci).
 
-- **Kliknął**: liczba użytkowników, którzy kliknął adres URL lub otworzyli załącznik w wiadomości służącej do wyłudzania informacji.
+- **Kliknięto**: liczba użytkowników, którzy klikną adres URL lub otworzyli załącznik w wiadomości wyłudzającej informacje.
 
-- **Szybkość klikania**: Wartość procentowa obliczona przez wartość "**KlikedInboxed** / ". Wartość ta jest wskaźnikiem skuteczności kampanii. Innymi słowy, jeśli adresaci mogli zidentyfikować wiadomość jako wyłudzającą informacje, a także jeśli nie kliknął adresu URL ładowania.
+- **Współczynnik kliknięć**: procent obliczony przez "**Klikniętą** / **skrzynkę odbiorczą**". Ta wartość jest wskaźnikiem skuteczności kampanii. Innymi słowy, jeśli adresaci byli w stanie zidentyfikować wiadomość jako wyłudzającą informacje i jeśli nie kliknęli adresu URL ładunku.
 
-  Należy pamiętać **, że w kampaniach** złośliwego oprogramowania nie jest używana szybkość klikania.
+  Pamiętaj, że **współczynnik kliknięć** nie jest używany w kampaniach złośliwego oprogramowania.
 
-- **Odwiedzone**: ilu użytkowników rzeczywiście przesu chodziło o witrynę sieci Web z opłatami. Jeśli istnieją wartości **Klikone**, ale Sejf dostęp do witryny sieci Web został zablokowany, ta wartość będzie równa zero.
+- **Odwiedzone**: Ilu użytkowników faktycznie dotarło do witryny sieci Web ładunku. Jeśli istnieją **wartości klikniętych**, ale Sejf Łącza zablokowały dostęp do witryny internetowej, ta wartość będzie równa zero.
 
-Karta **Pochodzenie kampanii** pokazuje źródła wiadomości na mapie świata.
+Na karcie **Źródło kampanii** są wyświetlane źródła komunikatów na mapie świata.
 
 ### <a name="filters-and-settings"></a>Filtry i ustawienia
 
-W górnej części strony **Kampanii znajduje** się kilka ustawień filtrów i zapytań, które ułatwiają znajdowanie i odizolowanie określonych kampanii.
+W górnej części strony **Kampania** istnieje kilka ustawień filtru i zapytań, które ułatwiają znajdowanie i izolowanie określonych kampanii.
 
 :::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="Filtry kampanii" lightbox="../../media/campaign-filters-and-settings.png":::
 
-Najbardziej podstawowym filtrowaniem, które można wykonać, jest data/godzina rozpoczęcia i data/godzina zakończenia.
+Najbardziej podstawowym filtrowaniem, jakie można wykonać, jest data/godzina rozpoczęcia oraz data/godzina zakończenia.
 
-Aby dodatkowo filtrować widok, możesz wykonać jedną właściwość z wieloma filtrami wartości, klikając przycisk Typ  kampanii, zaznaczając odpowiednie opcje, a następnie klikając pozycję **Odśwież**.
+Aby jeszcze bardziej filtrować widok, możesz wykonać pojedynczą właściwość z filtrowaniem wielu wartości, klikając przycisk **Typ kampanii** , wybierając opcję, a następnie klikając przycisk **Odśwież**.
 
-Właściwości kampanii z filtrowaniem dostępne w przycisku **Typ** kampanii opisano na poniższej liście:
+Właściwości kampanii z możliwością filtrowania, które są dostępne na przycisku **Typ kampanii** , zostały opisane na następującej liście:
 
 - **Podstawowe**:
-  - **Typ kampanii**: Wybierz pozycję **Złośliwe oprogramowanie** lub **Wyłudzy**. Wyczyszczenie zaznaczeń ma taki sam wynik, jak zaznaczenie obu.
+  - **Typ kampanii**: wybierz pozycję **Złośliwe oprogramowanie** lub **Phish**. Wyczyszczenie zaznaczeń ma taki sam wynik jak wybranie obu tych opcji.
   - **Nazwa kampanii**
   - **Podtyp kampanii**
-  - **Nadawca**
-  - **Adresaci**
+  - **Nadawcy**
+  - **Adresatów**
   - **Domena nadawcy**
   - **Temat**
   - **Nazwa pliku załącznika**
   - **Rodzina złośliwego oprogramowania**
-  - **Tagi**: użytkownicy lub grupy, do których zastosowano określony tag użytkownika (w tym konta priorytetowe). Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkowników](user-tags.md).
-  - **Akcja dostarczenia**
+  - **Tagi**: użytkownicy lub grupy, dla których zastosowano określony tag użytkownika (w tym konta priorytetowe). Aby uzyskać więcej informacji na temat tagów użytkowników, zobacz [Tagi użytkowników](user-tags.md).
+  - **Akcja dostarczania**
   - **Dodatkowa akcja**
   - **Kierunkowość**
   - **Technologia wykrywania**
   - **Oryginalna lokalizacja dostarczania**
   - **Najnowsza lokalizacja dostarczania**
-  - **Zastępowanie systemu**
+  - **Przesłonięcia systemu**
 
 - **Zaawansowane**:
-  - **Identyfikator wiadomości internetowej**: dostępny w polu **nagłówka identyfikatora** wiadomości w nagłówku wiadomości. Przykładowa wartość to `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (zwróć uwagę na nawiasy kątowe).
-  - **Identyfikator wiadomości sieciowej**: wartość GUID, która jest dostępna w polu **nagłówka X-MS-Exchange-Organization-Network-Message-Id** w nagłówku wiadomości.
+  - **Identyfikator komunikatu internetowego**: dostępny w polu **nagłówka Message-ID** w nagłówku wiadomości. Przykładowa wartość to `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (zwróć uwagę na nawiasy kątowe).
+  - **Identyfikator komunikatu sieciowego**: wartość identyfikatora GUID dostępna w polu nagłówka **X-MS-Exchange-Organization-Network-Message-Id** w nagłówku komunikatu.
   - **Adres IP nadawcy**
-  - **Załącznik SHA256**: Aby znaleźć wartość skrótu SHA256 pliku w programie Windows, uruchom następujące polecenie w wierszu polecenia: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
-  - **Identyfikator klastrów**
+  - **Załącznik SHA256**: Aby znaleźć wartość skrótu SHA256 pliku w Windows, uruchom następujące polecenie w wierszu polecenia: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
+  - **Identyfikator klastra**
   - **Identyfikator alertu**
   - **Identyfikator zasad alertu**
   - **Identyfikator kampanii**
@@ -153,139 +156,139 @@ Właściwości kampanii z filtrowaniem dostępne w przycisku **Typ** kampanii op
 
 - **Adresy URL**:
   - **Domena adresu URL**
-  - **Ścieżka i domena adresu URL**
+  - **Domena i ścieżka adresu URL**
   - **ADRES URL**
   - **Ścieżka adresu URL**
   - **Kliknij werdykt**
 
-Aby utworzyć bardziej zaawansowane filtrowanie, w tym filtrowanie według wielu właściwości, możesz kliknąć przycisk **Filtr** zaawansowany, aby utworzyć zapytanie. Dostępne są te same właściwości kampanii, ale z następującymi ulepszeniami:
+Aby uzyskać bardziej zaawansowane filtrowanie, w tym filtrowanie według wielu właściwości, możesz kliknąć przycisk **Filtr zaawansowany** , aby utworzyć zapytanie. Dostępne są te same właściwości kampanii, ale z następującymi ulepszeniami:
 
-- Możesz kliknąć pozycję **Dodaj warunek,** aby wybrać wiele warunków.
-- Możesz wybrać operator **And** (Oraz **) lub Or (** Lub) między warunkami.
-- Możesz wybrać element **grupy Warunek** u dołu listy warunków, aby utworzyć złożone warunki złożone.
+- Możesz kliknąć **pozycję Dodaj warunek,** aby wybrać wiele warunków.
+- Między warunkami można wybrać operator **And** lub **Or** .
+- Możesz wybrać element **grupy Warunek** w dolnej części listy warunków, aby utworzyć złożone warunki złożone.
 
-Po zakończeniu kliknij **przycisk Zapytanie.**
+Po zakończeniu kliknij przycisk **Zapytanie** .
 
-Po utworzeniu filtru podstawowego lub zaawansowanego można go zapisać przy **użyciu opcji Zapisz** zapytanie lub **Zapisz zapytanie jako**. Później, po powrocie do strony **Kampanie** , możesz załadować zapisany filtr, klikając pozycję **Zapisane ustawienia zapytania**.
+Po utworzeniu filtru podstawowego lub zaawansowanego możesz go zapisać przy użyciu polecenia **Zapisz zapytanie** lub **Zapisz zapytanie jako**. Później, po powrocie do strony **Kampanie** , możesz załadować zapisany filtr, klikając pozycję **Zapisane ustawienia zapytania**.
 
-Aby wyeksportować wykres lub listę kampanii, kliknij pozycję Eksportuj i wybierz pozycję **Eksportuj dane wykresu** lub **Eksportuj listę kampanii**.
+Aby wyeksportować wykres lub listę kampanii, kliknij pozycję **Eksportuj** i wybierz pozycję **Eksportuj dane wykresu** lub **Eksportuj listę kampanii**.
 
-Jeśli masz subskrypcję usługi Ochrona punktu końcowego w usłudze Microsoft Defender, możesz kliknąć pozycję **MdE Ustawienia**, aby połączyć lub odłączyć informacje dotyczące kampanii Ochrona punktu końcowego w usłudze Microsoft Defender. Aby uzyskać więcej informacji, zobacz [Integracja Ochrona usługi Office 365 w usłudze Microsoft Defender z Ochrona punktu końcowego w usłudze Microsoft Defender](integrate-office-365-ti-with-mde.md).
+Jeśli masz subskrypcję Ochrona punktu końcowego w usłudze Microsoft Defender, możesz kliknąć pozycję **MDE Ustawienia**, aby połączyć lub rozłączyć informacje o kampaniach z Ochrona punktu końcowego w usłudze Microsoft Defender. Aby uzyskać więcej informacji, zobacz [Integrowanie Ochrona usługi Office 365 w usłudze Microsoft Defender z Ochrona punktu końcowego w usłudze Microsoft Defender](integrate-office-365-ti-with-mde.md).
 
 ## <a name="campaign-details"></a>Szczegóły kampanii
 
-Po kliknięciu nazwy kampanii jej szczegóły są wyświetlane w wysuwanych informacjach.
+Po kliknięciu nazwy kampanii szczegóły kampanii są wyświetlane w wysuwnym oknie.
 
-### <a name="campaign-information"></a>Informacje dotyczące kampanii
+### <a name="campaign-information"></a>Informacje o kampanii
 
-U góry widoku szczegółów kampanii dostępne są następujące informacje o kampanii:
+W górnej części widoku szczegółów kampanii dostępne są następujące informacje o kampanii:
 
 - **Identyfikator kampanii**: unikatowy identyfikator kampanii.
-- **Działanie**: Czas trwania i działanie kampanii.
-- Następujące dane wybranego filtru zakresu dat (lub wybranego na osi czasu):
+- **Działanie**: czas trwania i aktywność kampanii.
+- Następujące dane dla wybranego filtru zakresu dat (lub wybrane na osi czasu):
 - **Wpływ**
-- **Wiadomości**: Całkowita liczba adresatów.
+- **Komunikaty**: całkowita liczba adresatów.
 - **Skrzynka odbiorcza**: liczba wiadomości dostarczonych do skrzynki odbiorczej, a nie do folderu Wiadomości-śmieci.
-- **Kliknął link**: Ilu użytkowników kliknął ład w adresie URL w wiadomości służącej do wyłudzania informacji.
-- **Odwiedzony link**: ilu użytkowników odwiedziło adres URL.
-- **Targeted(%)**: Wartość procentowa obliczona przez: (liczba adresatów kampanii w organizacji) / (łączna liczba adresatów w kampanii we wszystkich organizacjach w ramach usługi). Należy zauważyć, że ta wartość jest obliczana przez cały okres trwania kampanii i nie zmienia się na podstawie filtrów dat.
-- Data/godzina rozpoczęcia oraz filtry danych/godzin zakończenia dla przepływu kampanii zgodnie z opisem w następnej sekcji.
-- Interakcyjna oś czasu działań kampanii: Oś czasu pokazuje aktywność w całym okresie trwania kampanii. Możesz zatrzymać wskaźnik myszy na punktach danych na wykresie, aby wyświetlić liczbę wykrytych wiadomości.
+- **Kliknięto link**: Ilu użytkowników kliknął ładunek adresu URL w wiadomości wyłudzającej informacje.
+- **Odwiedzone łącze**: Ilu użytkowników odwiedziło adres URL.
+- **Targeted(%)**: procent obliczony przez: (liczbę adresatów kampanii w organizacji) / (całkowita liczba adresatów w kampanii we wszystkich organizacjach w usłudze). Należy pamiętać, że ta wartość jest obliczana przez cały okres istnienia kampanii i nie zmienia się na podstawie filtrów dat.
+- Filtry daty/godziny rozpoczęcia i zakończenia danych/godziny dla przepływu kampanii zgodnie z opisem w następnej sekcji.
+- Interaktywna oś czasu działania kampanii: oś czasu pokazuje aktywność w całym okresie istnienia kampanii. Możesz zatrzymać kursor nad punktami danych na grafie, aby wyświetlić liczbę wykrytych komunikatów.
 
-:::image type="content" source="../../media/campaign-details-campaign-info.png" alt-text="Informacje dotyczące kampanii" lightbox="../../media/campaign-details-campaign-info.png":::
+:::image type="content" source="../../media/campaign-details-campaign-info.png" alt-text="Informacje o kampanii" lightbox="../../media/campaign-details-campaign-info.png":::
 
 ### <a name="campaign-flow"></a>Przepływ kampanii
 
-W środku widoku szczegółów kampanii ważne szczegóły dotyczące kampanii przedstawiono na poziomym diagramie przepływu (nazywanym diagramem _Sankey_ ). Te szczegóły pomogą zrozumieć elementy kampanii i jej potencjalny wpływ na organizację.
+W widoku szczegółów kampanii ważne szczegóły dotyczące kampanii są prezentowane na diagramie przepływu poziomego (znanym jako diagram _Sankeya_ ). Te szczegóły pomogą Ci zrozumieć elementy kampanii i potencjalny wpływ w organizacji.
 
 > [!TIP]
-> Informacja wyświetlana na diagramie przepływu jest kontrolowana przez filtr zakresu dat na osi czasu zgodnie z opisem w poprzedniej sekcji.
+> Informacje wyświetlane na diagramie przepływu są kontrolowane przez filtr zakresu dat na osi czasu zgodnie z opisem w poprzedniej sekcji.
 
 :::image type="content" source="../../media/campaign-details-no-recipient-actions.png" alt-text="Szczegóły kampanii, które nie zawierają kliknięć adresu URL użytkownika" lightbox="../../media/campaign-details-no-recipient-actions.png":::
 
-Gdy najedziesz kursorem na poziomy pasek na diagramie, zobaczysz liczbę powiązanych wiadomości (na przykład wiadomości z określonego źródłowego adresu IP, wiadomości ze źródłowego adresu IP, używając określonej domeny nadawcy itp.).
+Po umieszczeniu wskaźnika myszy na pasmie poziomym na diagramie zobaczysz liczbę powiązanych komunikatów (na przykład komunikatów z określonego źródłowego adresu IP, komunikatów ze źródłowego adresu IP przy użyciu określonej domeny nadawcy itp.).
 
 Diagram zawiera następujące informacje:
 
-- **Sender IPs**
+- **Adresy IP nadawcy**
 - **Domeny nadawcy**
-- **Werdykty filtrów**: wartości werdyktów są związane z dostępnymi werdyktami filtrowania spamu i wyłudzania informacji, zgodnie z opisem w nagłówkach wiadomości ochrony przed [spamem](anti-spam-message-headers.md). Dostępne wartości opisano w poniższej tabeli:
+- **Werdykty filtru**: Wartości werdyktów są związane z dostępnymi werdyktami dotyczącymi wyłudzania informacji i filtrowania spamu zgodnie z opisem w [nagłówkach wiadomości antyspamowych](anti-spam-message-headers.md). Dostępne wartości opisano w poniższej tabeli:
 
   |Value|Werdykt filtru spamu|Opis|
   |---|---|---|
-  |**Dozwolone**|`SFV:SKN` <p> `SFV:SKI`|Wiadomość została oznaczona jako niebędąca spamem i(lub pominięta) filtrowaniem przed rozpoczęciem oceny przez filtrowanie spamu. Na przykład wiadomość została oznaczona przez regułę przepływu poczty jako niebędąc spamem (znana również jako reguła transportu). <p> W wiadomości pominięto filtrowanie spamu z innych przyczyn. Na przykład nadawca i adresat mogą być w tej samej organizacji.|
-  |**Zablokowane**|`SFV:SKS`|Wiadomość została oznaczona jako spam przed rozpoczęciem oceny przez filtrowanie spamu. Na przykład za pomocą reguły przepływu poczty e-mail.|
-  |**Wykryty**|`SFV:SPM`|Wiadomość została oznaczona jako spam przez filtrowanie spamu.|
-  |**Nie wykryto**|`SFV:NSPM`|Wiadomość została oznaczona jako niebędąca spamem przez filtrowanie spamu.|
-  |**Wydano**|`SFV:SKQ`|Wiadomość pominięta w filtrowaniu spamu, ponieważ została zwolniona z kwarantanny.|
-  |**Zezwalaj na dzierżawę**<sup>\*</sup>|`SFV:SKA`|Wiadomość pominięto filtrowanie spamu z powodu ustawień w zasadach ochrony przed spamem. Na przykład nadawca został na liście dozwolonych nadawców lub na liście domen dozwolonych.|
-  |**Blok dzierżawy**<sup>\*\*</sup>|`SFV:SKA`|Wiadomość została zablokowana przez filtrowanie spamu ze względu na ustawienia w zasadach ochrony przed spamem. Na przykład nadawca został na liście dozwolonych nadawców lub na liście domen dozwolonych.|
-  |**Zezwalaj użytkownikom**<sup>\*</sup>|`SFV:SFE`|Wiadomość pominięta w filtrowaniu spamu, ponieważ nadawca był na liście Sejf nadawców.|
-  |**Blokowanie użytkowników**<sup>\*\*</sup>|`SFV:BLK`|Wiadomość została zablokowana przez filtrowanie spamu, ponieważ nadawca był na liście zablokowanych nadawców użytkownika.|
-  |**ZAP**|nie dotyczy|[Automatyczne czyszczenie zerowe (ZAP)](zero-hour-auto-purge.md) przeniesiono dostarczoną wiadomość do folderu wiadomości-śmieci lub kwarantanny. Działanie konfiguruje się w zasadach [ochrony przed spamem](configure-your-spam-filter-policies.md).|
+  |**Dozwolone**|`SFV:SKN` <p> `SFV:SKI`|Wiadomość została oznaczona jako niespamowana i/lub pominięta, zanim została oceniona przez filtrowanie spamu. Na przykład wiadomość została oznaczona jako niespamowanie przez regułę przepływu poczty (znaną również jako reguła transportu). <p> Wiadomość pominąła filtrowanie spamu z innych powodów. Na przykład nadawca i adresat są w tej samej organizacji.|
+  |**Zablokowany**|`SFV:SKS`|Wiadomość została oznaczona jako spam, zanim została oceniona przez filtrowanie spamu. Na przykład przez regułę przepływu poczty.|
+  |**Wykryte**|`SFV:SPM`|Wiadomość została oznaczona jako spam przez filtrowanie spamu.|
+  |**Nie wykryto**|`SFV:NSPM`|Wiadomość została oznaczona jako niespamowana przez filtrowanie spamu.|
+  |**Wydany**|`SFV:SKQ`|Wiadomość pominąła filtrowanie spamu, ponieważ została zwolniona z kwarantanny.|
+  |**Zezwalaj na dzierżawę**<sup>\*</sup>|`SFV:SKA`|Komunikat pominął filtrowanie spamu z powodu ustawień w zasadach ochrony przed spamem. Na przykład nadawca znajdował się na liście dozwolonych nadawców lub na liście dozwolonych domen.|
+  |**Blok dzierżawy**<sup>\*\*</sup>|`SFV:SKA`|Wiadomość została zablokowana przez filtrowanie spamu ze względu na ustawienia zasad ochrony przed spamem. Na przykład nadawca znajdował się na liście dozwolonych nadawców lub na liście dozwolonych domen.|
+  |**Zezwalaj użytkownikowi**<sup>\*</sup>|`SFV:SFE`|Wiadomość pominąła filtrowanie spamu, ponieważ nadawca znajdował się na liście nadawców Sejf użytkownika.|
+  |**Blok użytkownika**<sup>\*\*</sup>|`SFV:BLK`|Wiadomość została zablokowana przez filtrowanie spamu, ponieważ nadawca znajdował się na liście zablokowanych nadawców użytkownika.|
+  |**ZAP**|nie dotyczy|[Automatyczne przeczyszczanie bez godziny (ZAP)](zero-hour-auto-purge.md) przeniosło dostarczoną wiadomość do folderu wiadomości-śmieci lub kwarantanny. Akcję można skonfigurować w [zasadach ochrony przed spamem](configure-your-spam-filter-policies.md).|
 
   <sup>\*</sup> Przejrzyj zasady ochrony przed spamem, ponieważ dozwolona wiadomość prawdopodobnie zostałaby zablokowana przez usługę.
 
-  <sup>\*\*</sup> Przejrzyj zasady ochrony przed spamem, ponieważ te wiadomości powinny być poddawane kwarantannie, a nie dostarczane.
+  <sup>\*\*</sup> Przejrzyj zasady ochrony przed spamem, ponieważ te wiadomości powinny zostać poddane kwarantannie, a nie dostarczone.
 
-- Miejsca **docelowe** wiadomości: Prawdopodobnie chcesz zbadać wiadomości, które zostały dostarczone do adresatów (do skrzynki odbiorczej lub folderu Wiadomości-śmieci), nawet jeśli użytkownicy nie klikną adresu URL ładowania w wiadomości. Możesz również usunąć poddaną kwarantannie wiadomości z kwarantanny. Aby uzyskać więcej informacji, zobacz [Poddaj wiadomościom w kwarantannie usługi EOP](quarantine-email-messages.md).
-  - **Usunięto folder**
-  - **Wrzucono**
-  - **Zewnętrzne**: Adresat znajduje się w lokalnej organizacji poczty e-mail w środowiskach hybrydowych.
+- **Miejsca docelowe wiadomości**: prawdopodobnie będziesz chciał zbadać komunikaty, które zostały dostarczone do adresatów (do skrzynki odbiorczej lub folderu Wiadomości-śmieci), nawet jeśli użytkownicy nie klikną adresu URL ładunku w wiadomości. Można również usunąć komunikaty poddane kwarantannie z kwarantanny. Aby uzyskać więcej informacji, zobacz [Kwarantanna wiadomości e-mail w EOP](quarantine-email-messages.md).
+  - **Usunięty folder**
+  - **Spadła**
+  - **Zewnętrzne**: adresat znajduje się w lokalnej organizacji poczty e-mail w środowiskach hybrydowych.
   - **Zakończone niepowodzeniem**
-  - **Przekazane**
-  - **Skrzynka odbiorcza**
-  - **Folder wiadomości-śmieci**
+  - **Przekazywane**
+  - **Skrzynki odbiorczej**
+  - **Folder śmieci**
   - **Kwarantanna**
   - **Unknown**
 
-- **Kliknięcia adresu URL**: Te wartości są opisane w następnej sekcji.
+- **Kliknięcia adresu URL**: te wartości zostały opisane w następnej sekcji.
 
 > [!NOTE]
-> Na wszystkich warstwach zawierających więcej niż 10 elementów jest wyświetlanych 10 najwyższych elementów, a pozostałe są powiązane ze sobą w obszarze **Inne**.
+> We wszystkich warstwach zawierających więcej niż 10 elementów jest wyświetlanych 10 pierwszych elementów, a pozostałe są powiązane w **innych**.
 
 #### <a name="url-clicks"></a>Kliknięcia adresu URL
 
-Gdy wiadomość wyłudzająca informacje zostanie dostarczona do folderu Skrzynka odbiorcza lub Wiadomości-śmieci adresata, istnieje możliwość, że użytkownik kliknie adres URL ładowania. Nie klikanie adresu URL jest małą miarą sukcesu, ale musisz ustalić, dlaczego wiadomość wyłudzająca informacje została nawet dostarczona do skrzynki pocztowej.
+Gdy wiadomość wyłudzająca informacje zostanie dostarczona do folderu Skrzynka odbiorcza lub Wiadomość-śmieci, zawsze istnieje szansa, że użytkownik kliknie adres URL ładunku. Nie kliknięcie adresu URL jest niewielką miarą powodzenia, ale musisz określić, dlaczego wiadomość wyłudzająca informacje została nawet dostarczona do skrzynki pocztowej.
 
-Jeśli użytkownik kliknął adres URL ładowania w wiadomości służącej do wyłudzania informacji, akcje są wyświetlane w obszarze kliknięć adresu **URL** diagramu w widoku szczegółów kampanii.
+Jeśli użytkownik kliknie adres URL ładunku w wiadomości wyłudzającej informacje, **akcje zostaną wyświetlone w obszarze kliknięć adresu URL** diagramu w widoku szczegółów kampanii.
 
 - **Dozwolone**
-- **BlockPage**: Adresat kliknął adres URL ładowania, ale jego dostęp do złośliwej witryny sieci Web został zablokowany przez zasady usługi [Sejf Linki](safe-links.md) w Twojej organizacji.
-- **BlockPageOverride**: Adresat kliknął adres URL ładowania w wiadomości, ale Sejf Linki próbowały je zatrzymać, ale mógł zastąpić blok. Sprawdź zasady [Sejf sieci Web](set-up-safe-links-policies.md), aby zobaczyć, dlaczego użytkownicy mogą zastępować werdykt linków Sejf i kontynuować pracę ze złośliwą witryną sieci Web.
-- **PendingDetonationPage**: Sejf załączników w programie Ochrona usługi Office 365 w usłudze Microsoft Defender jest w trakcie otwierania i badanie adresu URL ładowania w środowisku komputera wirtualnego.
-- **PendingDetonationPageOverride**: Adresat mógł zastąpić proces detonacji ładowania i otworzyć adres URL bez oczekiwania na wyniki.
+- **BlockPage**: adresat kliknął adres URL ładunku, ale dostęp do złośliwej witryny internetowej został zablokowany przez zasady [Sejf Linki](safe-links.md) w organizacji.
+- **BlockPageOverride**: adresat kliknął adres URL ładunku w wiadomości, Sejf Łącza próbowały je zatrzymać, ale pozwolono im zastąpić blok. Sprawdź [zasady linków Sejf](set-up-safe-links-policies.md), aby sprawdzić, dlaczego użytkownicy mogą zastąpić werdykt Sejf Links i przejść do złośliwej witryny internetowej.
+- **PendingDetonationPage**: Sejf Załączniki w Ochrona usługi Office 365 w usłudze Microsoft Defender jest w trakcie otwierania i badania adresu URL ładunku w środowisku komputera wirtualnego.
+- **PendingDetonationPageOverride**: Adresat mógł zastąpić proces detonacji ładunku i otworzyć adres URL bez oczekiwania na wyniki.
 
 ### <a name="tabs"></a>Karty
 
 Karty w widoku szczegółów kampanii umożliwiają dalsze badanie kampanii.
 
 > [!TIP]
-> Informacja wyświetlana na kartach jest kontrolowana przez filtr zakresu dat na osi czasu zgodnie z opisem w [sekcji Informacje o kampanii](#campaign-information) .
+> Informacje wyświetlane na kartach są kontrolowane przez filtr zakresu dat na osi czasu zgodnie z opisem w sekcji [Informacje o kampanii](#campaign-information) .
 
-- **Klikanie adresu URL**: Jeśli użytkownicy nie klikną adresu URL ładowania w wiadomości, ta sekcja będzie pusta. Jeśli użytkownik mógł kliknąć adres URL, zostaną wypełnione następujące wartości:
-  - **Użytkownik**<sup>\*</sup>
+- **Kliknięcia adresu URL**: jeśli użytkownicy nie kliknieli adresu URL ładunku w wiadomości, ta sekcja będzie pusta. Jeśli użytkownik mógł kliknąć adres URL, zostaną wypełnione następujące wartości:
+  - **Użytkownika**<sup>\*</sup>
   - **ADRES URL**<sup>\*</sup>
   - **Godzina kliknięcia**
   - **Kliknij werdykt**
 
-- **Sender IPs**
+- **Adresy IP nadawcy**
   - **Adres IP nadawcy**<sup>\*</sup>
   - **Łączna liczba**
   - **Skrzynka odbiorcza**
-  - **Bez skrzynki odbiorczej**
-  - **Spf passed**: The sender was authenticated by the [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). Nadawca, który nie przejdzie weryfikacji SPF, wskazuje nieuwierzytanego nadawcę lub wiadomość podszywa się pod wiarygodnego nadawcę.
+  - **Nie skrzynka odbiorcza**
+  - **Przekazano protokół SPF**: nadawca został uwierzytelniony przez [platformę zasad nadawcy (SPF).](how-office-365-uses-spf-to-prevent-spoofing.md) Nadawca, który nie przechodzi weryfikacji SPF, wskazuje nieuwierzytelnionego nadawcę lub wiadomość podszywa się pod uprawnionego nadawcę.
 
-- **Nadawcy**
-  - **Nadawca**: Jest to rzeczywisty adres nadawcy w poleceniu SMTP MAIL FROM, który nie musi być adresem e-mail Od: widzianych przez użytkowników w klientach poczty e-mail.
+- **Nadawców**
+  - **Nadawca**: jest to rzeczywisty adres nadawcy w poleceniu SMTP MAIL FROM, który niekoniecznie jest adresem e-mail Od: widocznym przez użytkowników na klientach poczty e-mail.
   - **Łączna liczba**
   - **Skrzynka odbiorcza**
-  - **Bez skrzynki odbiorczej**
-  - **Pomyślnie przekazano DKIM**: Nadawca został uwierzytelniony za pomocą [dKIM (Domain Keys Identified Mail) (DKIM](support-for-validation-of-dkim-signed-messages.md)). Nadawca, który nie przejdzie weryfikacji DKIM, wskazuje nieuwierzytanego nadawcę lub wiadomość podszywa się pod wiarygodnego nadawcę.
-  - **Przekazano DMARC**: Nadawca został uwierzytelniony za pomocą [DMARC (Domain-based Message Authentication, Reporting, and Conformance).](use-dmarc-to-validate-email.md) Nadawca, który nie przejdzie weryfikacji DMARC, wskazuje nieuwierzytanego nadawcę lub wiadomość podszywa się pod prawdziwego nadawcę.
+  - **Nie skrzynka odbiorcza**
+  - **Przekazano moduł DKIM**: nadawca został uwierzytelniony przez wiadomość [e-mail z identyfikatorem kluczy domeny (DKIM).](support-for-validation-of-dkim-signed-messages.md) Nadawca, który nie przechodzi weryfikacji DKIM wskazuje nieuwierzytelnionego nadawcę lub komunikat podszywa się pod uprawnionego nadawcę.
+  - **Przekazano DMARC**: nadawca został uwierzytelniony przez [uwierzytelnianie komunikatów oparte na domenie, raportowanie i zgodność (DMARC).](use-dmarc-to-validate-email.md) Nadawca, który nie przejdzie weryfikacji DMARC, wskazuje nieuwierzytelnionego nadawcę lub wiadomość podszywa się pod uprawnionego nadawcę.
 
 - **Załączniki**
-  - **Nazwa pliku**
+  - **Pod nazwą**
   - **SHA256**
   - **Rodzina złośliwego oprogramowania**
   - **Łączna liczba**
@@ -294,15 +297,15 @@ Karty w widoku szczegółów kampanii umożliwiają dalsze badanie kampanii.
   - **ADRES URL**<sup>\*</sup>
   - **Łączna liczba**
 
-<sup>\*</sup> Kliknięcie tej wartości spowoduje otwarcie nowego menu wysuwu zawierającego więcej szczegółowych informacji na temat określonego elementu (użytkownik, adres URL itp.) u góry widoku szczegółów kampanii. Aby wrócić do widoku szczegółów kampanii, w nowym  wysuwanych menu kliknij pozycję Gotowe.
+<sup>\*</sup> Kliknięcie tej wartości powoduje otwarcie nowego wysuwanego elementu, który zawiera więcej szczegółów na temat określonego elementu (użytkownika, adresu URL itp.) w widoku szczegółów kampanii. Aby powrócić do widoku szczegółów kampanii, kliknij pozycję **Gotowe** w nowym wysuwu.
 
 ### <a name="buttons"></a>Przyciski
 
 Przyciski w dolnej części widoku szczegółów kampanii umożliwiają badanie i rejestrowanie szczegółów kampanii:
 
-- **Eksplorowanie** wiadomości: Korzystaj z eksploratora zagrożeń, aby dokładniej zbadać kampanię:
-  - **Wszystkie wiadomości**: Otwiera nową kartę wyszukiwania Eksploratora zagrożeń, używając wartości **Identyfikator** kampanii jako filtru wyszukiwania.
-  - **Wiadomości w skrzynce odbiorczej**: Otwiera nową kartę wyszukiwania Eksploratora zagrożeń przy użyciu filtru Identyfikator kampanii i Lokalizacja dostarczania **:** Skrzynka odbiorcza.
-  - **Wiadomości wewnętrzne**. Otwiera nową kartę wyszukiwania Eksploratora zagrożeń, używając jako filtru wyszukiwania Identyfikatora kampanii i **kierunkowości:** Wewnątrz organizacji.
+- **Eksplorowanie komunikatów**: użyj możliwości Eksploratora zagrożeń, aby dokładniej zbadać kampanię:
+  - **Wszystkie komunikaty**: otwiera nową kartę wyszukiwania Eksploratora zagrożeń, używając wartości **Identyfikator kampanii** jako filtru wyszukiwania.
+  - **Komunikaty skrzynki odbiorczej**: otwiera nową kartę wyszukiwania Eksploratora zagrożeń przy użyciu **identyfikatora kampanii** i **lokalizacji dostarczania: Skrzynka odbiorcza** jako filtr wyszukiwania.
+  - **Komunikaty wewnętrzne**: otwiera nową kartę wyszukiwania Eksploratora zagrożeń przy użyciu **identyfikatora kampanii** i **kierunkowości: wewnątrz organizacji** jako filtru wyszukiwania.
 
-- **Pobierz raport zagrożeń**: pobierz szczegóły kampanii do dokumentu programu Word (domyślnie o nazwie CampaignReport.docx). Pamiętaj, że plik do pobrania zawiera szczegółowe informacje przez cały okres trwania kampanii (nie tylko wybrane daty filtrowania).
+- **Pobierz raport o zagrożeniach**: pobierz szczegóły kampanii do dokumentu programu Word (domyślnie o nazwie CampaignReport.docx). Należy pamiętać, że pobieranie zawiera szczegółowe informacje z całego okresu istnienia kampanii (nie tylko wybrane daty filtru).

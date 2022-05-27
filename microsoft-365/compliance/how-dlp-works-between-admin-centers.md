@@ -1,5 +1,5 @@
 ---
-title: Jak działa ochrona przed zagrożeniami (DLP) & Centrum zgodności & Exchange administracyjnego
+title: Jak działa usługa DLP z centrum administracyjnym & zgodności & zabezpieczeń & Exchange
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,49 +16,50 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
-description: Dowiedz się, jak zasady DLP w Centrum & zabezpieczeń i zgodności są zgodne z regułami przepływu poczty (DLP) w centrum administracyjnym usługi Exchange i poczty.
+description: Dowiedz się, jak usługa DLP w Centrum zgodności & zabezpieczeń współpracuje z regułami DLP i przepływem poczty (reguły transportu) w centrum administracyjnym Exchange.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 90706b3dad55ff84d274656673f9a60dbd71e35f
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0c5c6288ed9e3c1f536e7a221a270bad9663cf6b
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017796"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753413"
 ---
-# <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>Jak działa zasady DLP między Centrum zgodności usługi Microsoft 365 a centrum Exchange administracyjnego
+# <a name="how-dlp-works-between-the-compliance-center-and-exchange-admin-center"></a>Jak działa DLP między Centrum zgodności a centrum administracyjnym Exchange
 
-W Microsoft 365 możesz utworzyć zasady ochrony przed utratą danych (DLP) w dwóch różnych centrach aadministracyjnym:
-  
-- W Centrum **Microsoft 365 zgodności** możesz utworzyć jedną zasady DLP, aby chronić zawartość w urządzeniach SharePoint, OneDrive, Exchange, Teams, a teraz na urządzeniach końcowych. Zalecamy utworzenie tutaj zasad DLP. Aby uzyskać więcej informacji, zobacz [Informacje dotyczące ochrony przed utratą danych](data-loss-prevention-policies.md).
-    
-- W centrum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administracyjnego</a> możesz utworzyć zasady DLP, aby chronić zawartość tylko w Exchange. Te zasady mogą używać Exchange przepływu poczty e-mail (nazywane także regułami transportu), dzięki czemu mają więcej opcji specyficznych dla obsługi poczty e-mail. Aby uzyskać więcej informacji, zobacz [Temat zasad DLP w centrum Exchange administracyjnego](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
-    
-Zasady DLP utworzone w tych centrach aadministracyjnym działają obok siebie — w tym temacie wyjaśniono, jak to zrobić.
-  
-![Strony DLP w Centrum zabezpieczeń i zgodności Exchange centrum administracyjnym.](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
-  
-## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>Jak zasady DLP w Centrum & zabezpieczeń i zgodności są zgodne z regułami DLP i przepływem poczty e-mail w centrum Exchange administracyjnego
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po utworzeniu zasad DLP w Centrum & zgodności zabezpieczeń zasady są wdrażane we wszystkich lokalizacjach zawartych w tych zasadach. Jeśli zasady obejmują Exchange Online, zostaną zsynchronizowane i wyegzekwowane dokładnie tak samo, jak zasady DLP utworzone w centrum administracyjnym usługi <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange.</a> 
+W Microsoft Purview można utworzyć zasady ochrony przed utratą danych (DLP) w dwóch różnych centrach administracyjnych:
   
-Jeśli zasady DLP zostały utworzone w centrum administracyjnym usługi Exchange, będą one nadal działać obok wszelkich zasad dotyczących wiadomości e-mail utworzonych w Centrum & zabezpieczeń i zgodności. Pamiętaj jednak, że reguły utworzone w centrum Exchange mają pierwszeństwo. Wszystkie Exchange przepływu poczty e-mail są najpierw przetwarzane, a następnie reguły DLP z Centrum zabezpieczeń & zgodności są przetwarzane.
-  
-Oznacza to, że:
-  
-- Wiadomości blokowane przez reguły przepływu Exchange nie będą skanowane przez reguły DLP utworzone w Centrum & zabezpieczeń i zgodności.
-
-- Wiadomości poddane kwarantannie przez Exchange przepływu poczty e-mail lub inne filtry będą uruchamiane, zanim zasady DLP nie będą skanowane przez zasady DLP.
+- W **portal zgodności Microsoft Purview** można utworzyć pojedyncze zasady DLP, aby chronić zawartość w SharePoint, OneDrive, Exchange, Teams, a teraz urządzeniach punktu końcowego. W tym miejscu zalecamy utworzenie zasad DLP. Aby uzyskać więcej informacji, zobacz [Dokumentacja ochrony przed utratą danych](data-loss-prevention-policies.md).
     
-- Jeśli reguła przepływu poczty e-mail programu Exchange zmodyfikuje wiadomość w sposób, który powoduje dopasowanie jej do zasad DLP w Centrum zgodności usługi & — na przykład dodawania użytkowników zewnętrznych — reguły DLP wykryją to i wymuszą zasady zgodnie z potrzebami.
+- W <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> można utworzyć zasady DLP, aby chronić zawartość tylko w Exchange. Te zasady mogą używać Exchange reguł przepływu poczty (nazywanej również regułami transportu), więc mają bardziej szczegółowe opcje obsługi poczty e-mail. Aby uzyskać więcej informacji, zobacz [DLP w centrum administracyjnym Exchange](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
     
-Pamiętaj także, że Exchange przepływu poczty e-mail, które używają akcji "zatrzymaj przetwarzanie", nie mają wpływu na przetwarzanie reguł ochrony przed zagrożeniami w Centrum zgodności usługi & — będą one nadal przetwarzane.
+Zasady DLP utworzone w tych centrach administracyjnych działają obok siebie — w tym artykule wyjaśniono, jak to zrobić.
   
-## <a name="policy-tips-in-the-security--compliance-center-vs-the-exchange-admin-center"></a>Porady dotyczące zasad w Centrum zabezpieczeń & zgodności a w centrum Exchange administracyjnego
+![Strony DLP w Centrum zabezpieczeń i zgodności oraz w centrum administracyjnym Exchange.](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+  
+## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>Jak usługa DLP w Centrum zgodności & zabezpieczeń współpracuje z regułami DLP i przepływem poczty w centrum administracyjnym Exchange
 
-Porady dotyczące zasad mogą działać zarówno z zasadami DLP, jak i regułami przepływu poczty e-mail utworzonymi w centrum administracyjnym programu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> lub z zasadami DLP utworzonymi w Centrum zgodności usługi &, ale nie obu. Jest tak, ponieważ te zasady są przechowywane w różnych lokalizacjach, ale porady dotyczące zasad mogą rysować tylko z jednej lokalizacji.
+Po utworzeniu zasad DLP w Centrum zgodności & zabezpieczeń zasady są wdrażane we wszystkich lokalizacjach uwzględnionych w zasadach. Jeśli zasady obejmują Exchange Online, zasady są tam synchronizowane i wymuszane w dokładnie taki sam sposób jak zasady DLP utworzone w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. 
   
-Jeśli w centrum administracyjnym usługi Exchange skonfigurowano porady dotyczące zasad, porady dotyczące zasad skonfigurowane w Centrum zgodności usługi & nie będą wyświetlane użytkownikom w programach Outlook w sieci Web ani Outlook 2013 ani nowszych do momentu wyłączenia porad w centrum administracyjnym usługi Exchange. Dzięki temu twoje bieżące reguły przepływu Exchange będą nadal działać, dopóki nie zdecydujesz się na przełączenie do Centrum zabezpieczeń & zgodności.
+Jeśli zasady DLP zostały utworzone w centrum administracyjnym Exchange, zasady te będą nadal działać równolegle z wszelkimi zasadami dotyczącymi poczty e-mail utworzonej w Centrum zgodności & zabezpieczeń. Należy jednak pamiętać, że pierwszeństwo mają reguły utworzone w centrum administracyjnym Exchange. Wszystkie Exchange reguły przepływu poczty są najpierw przetwarzane, a następnie przetwarzane są reguły DLP z Centrum zgodności & zabezpieczeń.
   
-Pamiętaj, że chociaż porady dotyczące zasad mogą rysować tylko z jednej lokalizacji, powiadomienia e-mail są zawsze wysyłane, nawet jeśli korzystasz z zasad DLP zarówno w Centrum zabezpieczeń & zgodności, jak i w centrum administracyjnym usługi Exchange.
+Oznacza to:
+  
+- Wiadomości zablokowane przez reguły przepływu poczty Exchange nie będą skanowane według reguł DLP utworzonych w Centrum zgodności usługi Security &.
+- Wiadomości poddane kwarantannie przez Exchange reguły przepływu poczty lub inne filtry uruchamiane przed skanowaniem DLP nie będą skanowane przez DLP. 
+- Jeśli reguła przepływu poczty Exchange modyfikuje komunikat w taki sposób, aby był zgodny z zasadami DLP w Centrum zgodności & zabezpieczeń, takimi jak dodawanie użytkowników zewnętrznych, reguły DLP wykryje ją i wymuszą zasady zgodnie z potrzebami.
+    
+Należy również pamiętać, że Exchange reguł przepływu poczty, które używają akcji "zatrzymaj przetwarzanie", nie mają wpływu na przetwarzanie reguł DLP w Centrum zgodności & zabezpieczeń — nadal będą przetwarzane.
+  
+## <a name="policy-tips-in-the-security--compliance-center-vs-the-exchange-admin-center"></a>Porady dotyczące zasad w Centrum zgodności & zabezpieczeń a centrum administracyjnym Exchange
+
+Porady dotyczące zasad mogą działać z zasadami DLP i regułami przepływu poczty utworzonymi w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> lub z zasadami DLP utworzonymi w Centrum zgodności usługi Security &, ale nie w obu tych przypadkach. Wynika to z faktu, że te zasady są przechowywane w różnych lokalizacjach, ale wskazówki dotyczące zasad mogą być rysowane tylko z jednej lokalizacji.
+  
+Jeśli w centrum administracyjnym Exchange skonfigurowano wskazówki dotyczące zasad, żadne wskazówki dotyczące zasad skonfigurowane w Centrum zgodności & zabezpieczeń nie będą wyświetlane użytkownikom w Outlook w sieci Web i Outlook 2013 r. i nowszych, dopóki nie wyłączysz porad w centrum administracyjnym Exchange. Dzięki temu bieżące reguły przepływu poczty Exchange będą nadal działać do momentu przełączenia się do Centrum zgodności & zabezpieczeń.
+  
+>[!Note]
+>Porady dotyczące zasad mogą być rysowane tylko z jednej lokalizacji, ale powiadomienia e-mail są zawsze wysyłane, nawet jeśli używasz zasad DLP zarówno w Centrum zgodności & zabezpieczeń, jak i w centrum administracyjnym Exchange.

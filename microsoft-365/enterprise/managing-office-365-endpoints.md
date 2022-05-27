@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Dowiedz się, jak zarządzać punktami końcowymi Office 365, aby działały z architekturą sieci organizacji przedsiębiorstwa.
-ms.openlocfilehash: 68b778ac695c0b37b55dfe84414f72551d10ce68
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: c32b44365a8c926e398e4441b6b50905ea77147d
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587473"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753831"
 ---
 # <a name="managing-office-365-endpoints"></a>Zarządzanie punktami końcowymi usługi Office 365
 
@@ -94,7 +94,7 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 Jeśli pliki PAC nie są używane do bezpośredniego ruchu wychodzącego, nadal chcesz pominąć przetwarzanie na obwodzie sieci, konfigurując serwer proxy. Niektórzy dostawcy serwera proxy włączyli automatyczną konfigurację tego rozwiązania zgodnie z opisem w [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
 
-Jeśli robisz to ręcznie, musisz pobrać dane kategorii Optymalizuj i Zezwalaj na punkty końcowe z usługi sieci Web Office 365 adresów IP i adresów URL oraz skonfigurować serwer proxy do obejścia przetwarzania tych danych. Ważne jest, aby uniknąć podziału protokołu SSL oraz inspekcji i uwierzytelniania serwera proxy dla punktów końcowych optymalizacji i zezwalania na kategorię.
+Jeśli robisz to ręcznie, musisz pobrać dane kategorii Optymalizuj i Zezwalaj na punkty końcowe z usługi sieci Web Office 365 adresu IP i adresu URL oraz skonfigurować serwer proxy do obejścia przetwarzania dla tych elementów. Ważne jest, aby uniknąć podziału protokołu SSL oraz inspekcji i uwierzytelniania serwera proxy dla punktów końcowych optymalizacji i zezwalania na kategorię.
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Zarządzanie zmianami adresów IP i adresów URL Office 365
@@ -103,7 +103,7 @@ Oprócz wybrania odpowiedniej konfiguracji dla obwodu sieci ważne jest wdrożen
 
 Zmiany Office 365 adresów IP i adresów URL są zwykle publikowane w ostatnim dniu każdego miesiąca. Czasami zmiana zostanie opublikowana poza tym harmonogramem z powodu wymagań operacyjnych, pomocy technicznej lub zabezpieczeń.
 
-Po opublikowaniu zmiany, która wymaga działania z powodu dodania adresu IP lub adresu URL, należy oczekiwać 30-dniowego powiadomienia od momentu opublikowania zmiany do momentu utworzenia usługi Office 365 w tym punkcie końcowym. Jest to odzwierciedlone jako data wejścia w życie. Mimo że dążymy do tego okresu powiadomień, nie zawsze jest to możliwe ze względu na wymagania dotyczące działania, pomocy technicznej lub zabezpieczeń. Zmiany, które nie wymagają natychmiastowej akcji w celu utrzymania łączności, takie jak usunięte adresy IP lub adresy URL lub mniej znaczące zmiany, nie obejmują powiadomienia z wyprzedzeniem. W tych przypadkach nie zostanie podana żadna data wejścia w życie. Niezależnie od tego, jakie powiadomienie jest dostarczane, wyświetlamy listę oczekiwanej aktywnej daty usługi dla każdej zmiany.
+Po opublikowaniu zmiany wymagającej działania z powodu dodania adresu IP lub adresu URL należy oczekiwać 30-dniowego powiadomienia od momentu opublikowania zmiany do momentu utworzenia usługi Office 365 w tym punkcie końcowym. Jest to odzwierciedlone jako data wejścia w życie. Mimo że dążymy do tego okresu powiadomień, nie zawsze jest to możliwe ze względu na wymagania dotyczące działania, pomocy technicznej lub zabezpieczeń. Zmiany, które nie wymagają natychmiastowej akcji w celu utrzymania łączności, takie jak usunięte adresy IP lub adresy URL lub mniej znaczące zmiany, nie obejmują powiadomienia z wyprzedzeniem. W tych przypadkach nie zostanie podana żadna data wejścia w życie. Niezależnie od tego, jakie powiadomienie jest dostarczane, wyświetlamy listę oczekiwanej aktywnej daty usługi dla każdej zmiany.
 
 ### <a name="change-notification-using-the-web-service"></a>Zmienianie powiadomienia przy użyciu usługi sieci Web
 
@@ -161,11 +161,11 @@ Komputery klienckie potrzebują rekordu DNS A lub AAAA, który zawiera co najmni
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
 ```
 
-Te przekierowania CNAME są normalną częścią systemu DNS i są niewidoczne dla komputera klienckiego i niewidoczne dla serwerów proxy. Są one używane do równoważenia obciążenia, sieci dostarczania zawartości, wysokiej dostępności i ograniczania zdarzeń usługi. Firma Microsoft nie publikuje pośredniczących rekordów CNAME, mogą one ulec zmianie w dowolnym momencie i nie należy ich konfigurować zgodnie z wymaganiami na serwerze proxy.
+Te przekierowania CNAME są normalną częścią systemu DNS i są niewidoczne dla komputera klienckiego i niewidoczne dla serwerów proxy. Są one używane do równoważenia obciążenia, sieci dostarczania zawartości, wysokiej dostępności i ograniczania zdarzeń usługi. Firma Microsoft nie publikuje pośredniczących rekordów CNAME, mogą one ulec zmianie w dowolnym momencie i nie trzeba konfigurować ich zgodnie z wymaganiami na serwerze proxy.
 
 Serwer proxy weryfikuje początkowy adres URL, który w powyższym przykładzie jest serviceA.office.com, a ten adres URL zostanie uwzględniony w Office 365 publikowania. Serwer proxy żąda rozpoznawania dns tego adresu URL do adresu IP i otrzyma z powrotem IP_1. Nie weryfikuje on pośredniczących rekordów przekierowania CNAME.
 
-Konfiguracje zakodowane na stałe lub korzystające z listy dozwolonych opartej na pośrednich Office 365 nazw FQDN nie są zalecane, nie są obsługiwane przez firmę Microsoft i wiadomo, że powodują problemy z łącznością z klientem. Rozwiązania DNS, które blokują przekierowanie CNAME lub które w inny sposób niepoprawnie rozpoznają Office 365 wpisy DNS, można rozwiązać za pośrednictwem usług przesyłania dalej DNS z włączoną rekursją DNS lub za pomocą wskazówek głównych DNS. Wiele produktów obwodowych sieci innych firm natywnie integruje zalecany punkt końcowy Office 365, aby uwzględnić listę dozwolonych w konfiguracji przy użyciu [usługi sieci Web Office 365 adresów IP i adresów URL](microsoft-365-ip-web-service.md).
+Konfiguracje zakodowane na stałe lub korzystające z listy dozwolonych opartej na pośrednich Office 365 nazw FQDN nie są zalecane, nie są obsługiwane przez firmę Microsoft i są znane z tego, że powodują problemy z łącznością z klientem. Rozwiązania DNS, które blokują przekierowanie CNAME lub które w inny sposób niepoprawnie rozpoznają Office 365 wpisy DNS, można rozwiązać za pośrednictwem usług przesyłania dalej DNS z włączoną rekursją DNS lub za pomocą wskazówek głównych DNS. Wiele produktów obwodowych sieci innych firm natywnie integruje zalecany punkt końcowy Office 365, aby uwzględnić listę dozwolonych w konfiguracji przy użyciu [usługi sieci Web Office 365 adresów IP i adresów URL](microsoft-365-ip-web-service.md).
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Dlaczego w nazwach domen firmy Microsoft są wyświetlane nazwy takie jak nsatc.net lub akadns.net?
@@ -211,12 +211,13 @@ Jeśli próbujesz użyć Office 365 i stwierdzasz, że usługi innych firm są n
 <a name="bkmk_consumer"> </a>
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Jak mogę zablokować dostęp do usług konsumenckich firmy Microsoft?
 
-Funkcja ograniczeń dzierżawy obsługuje teraz blokowanie korzystania ze wszystkich aplikacji konsumenckich firmy Microsoft (aplikacji MSA), takich jak OneDrive, Hotmail i Xbox.com. Używa to oddzielnego nagłówka do punktu końcowego login.live.com. Aby uzyskać więcej informacji, zobacz [Używanie ograniczeń dzierżawy do zarządzania dostępem do aplikacji W chmurze SaaS](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications).
+Funkcja ograniczeń dzierżawy obsługuje teraz blokowanie korzystania ze wszystkich aplikacji konsumenckich firmy Microsoft (aplikacji MSA), takich jak OneDrive, Hotmail i Xbox.com. Używa to oddzielnego nagłówka do punktu końcowego login.live.com. Aby uzyskać więcej informacji, zobacz [Używanie ograniczeń dzierżawy do zarządzania dostępem do aplikacji w chmurze SaaS](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications).
 
 <a name="bkmk_IPOnlyFirewall"> </a>
+
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Moja zapora wymaga adresów IP i nie może przetwarzać adresów URL. Jak mogę skonfigurować go dla Office 365?
 
-Office 365 nie zawiera adresów IP wszystkich wymaganych punktów końcowych sieci. Niektóre z nich są udostępniane tylko jako adresy URL i są kategoryzowane jako domyślne. Adresy URL w kategorii domyślnej, które są wymagane, powinny być dozwolone za pośrednictwem serwera proxy. Jeśli nie masz serwera proxy, sprawdź, jak skonfigurowano żądania internetowe dla adresów URL, które użytkownicy wpisują na pasku adresu przeglądarki internetowej; użytkownik nie podaje również adresu IP. Domyślne adresy URL kategorii Office 365, które nie zawierają adresów IP, powinny być skonfigurowane w taki sam sposób.
+Office 365 nie udostępnia adresów IP wszystkich wymaganych punktów końcowych sieci. Niektóre z nich są udostępniane tylko jako adresy URL i są kategoryzowane jako domyślne. Adresy URL w kategorii domyślnej, które są wymagane, powinny być dozwolone za pośrednictwem serwera proxy. Jeśli nie masz serwera proxy, sprawdź, jak skonfigurowano żądania internetowe dla adresów URL, które użytkownicy wpisują na pasku adresu przeglądarki internetowej; użytkownik nie podaje również adresu IP. Domyślne adresy URL kategorii Office 365, które nie zawierają adresów IP, powinny być skonfigurowane w taki sam sposób.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

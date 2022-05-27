@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: W tym artykule opisano sposób planowania uruchamiania portalu w usłudze SharePoint Online oraz czynności, które należy wykonać w celu pomyślnego uruchomienia
-ms.openlocfilehash: 088416537317a6728e1c5533767badf309de7634
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f04738900a25a2e74e24d6bf0f05b5bd6c7865f4
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097475"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753931"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planowanie planu wdrożenia uruchamiania portalu w usłudze SharePoint Online
 
 Portal to witryna SharePoint w intranecie z wieloma widzami witryn, którzy korzystają z zawartości w witrynie. Duże organizacje mogą mieć kilka portali. Na przykład portal firmy i portal hr. Zazwyczaj portale mają stosunkowo niewiele osób, które tworzą i tworzą witrynę oraz jej zawartość. Większość odwiedzających portal tylko odczytuje i zużywa zawartość.
 
-W tym artykule opisano, jak zaplanować wdrożenie i plan wdrożenia w celu SharePoint Online. Zapewnia również podejścia do naśladowania, ponieważ tradycyjne testowanie obciążenia nie jest dozwolone w usłudze SharePoint Online. SharePoint Online to usługa w chmurze, a możliwości ładowania, kondycja i ogólny saldo obciążenia w usłudze są zarządzane przez firmę Microsoft.
+W tym artykule opisano, jak zaplanować wdrożenie i plan wdrożenia w celu SharePoint Online. Zapewnia również metody do naśladowania, ponieważ tradycyjne testowanie obciążenia nie jest dozwolone w usłudze SharePoint Online. SharePoint Online to usługa w chmurze, a możliwości ładowania, kondycja i ogólny saldo obciążenia w usłudze są zarządzane przez firmę Microsoft.
 
 Aby ułatwić tworzenie pomyślnego portalu, postępuj zgodnie z podstawowymi zasadami, praktykami i zaleceniami opisanymi w [temacie Tworzenie, uruchamianie i utrzymywanie dobrej kondycji portalu](/sharepoint/portal-health)
 

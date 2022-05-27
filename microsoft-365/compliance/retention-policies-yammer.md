@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania, które mają zastosowanie do Yammer.
-ms.openlocfilehash: e90d83cb4b71600f4dbf8b16790454f523ce6c13
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c479b7b08fd74b957a8ef7d23147758948459dc8
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286477"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754317"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Dowiedz się więcej na temat przechowywania Yammer
 
@@ -69,7 +69,7 @@ Mimo że są one przechowywane w Exchange, komunikaty Yammer są uwzględniane t
 Po skonfigurowaniu zasad przechowywania dla komunikatów Yammer zadanie czasomierza z usługi Exchange okresowo ocenia elementy w ukrytym folderze, w którym są przechowywane te komunikaty Yammer. Uruchomienie zadania czasomierza trwa do siedmiu dni. Po wygaśnięciu okresu przechowywania tych elementów są one przenoszone do folderu SubstrateHolds — ukrytego folderu, który znajduje się w każdej skrzynce pocztowej użytkownika lub grupy w celu przechowywania elementów "nietrwale usuniętych", zanim zostaną trwale usunięte.
 
 > [!IMPORTANT]
-> Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) i ponieważ Yammer wiadomości są przechowywane w Exchange Online skrzynkach pocztowych, trwałe usunięcie z folderu SubstrateHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania (w tym zasady stosowane do Exchange  lokalizacja), wstrzymanie postępowania sądowego, wstrzymanie opóźnienia lub zastosowanie blokady zbierania elektronicznych materiałów dowodowych do skrzynki pocztowej ze względów prawnych lub śledczych.
+> Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) i ponieważ Yammer wiadomości są przechowywane w Exchange Online skrzynkach pocztowych, trwałe usunięcie z folderu SubstrateHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania dla tej samej lokalizacji, blokada postępowania sądowego, wstrzymanie opóźnienia lub jeśli do skrzynki pocztowej zastosowano blokadę zbierania elektronicznych materiałów dowodowych ze względów prawnych lub śledczych.
 >
 > Chociaż skrzynka pocztowa jest uwzględniona w odpowiednim blokadzie, Yammer wiadomości, które zostały usunięte, nie będą już widoczne w Yammer, ale będą nadal wykrywalne przy użyciu zbierania elektronicznych materiałów dowodowych.
 

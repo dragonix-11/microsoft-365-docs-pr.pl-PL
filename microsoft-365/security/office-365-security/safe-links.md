@@ -28,16 +28,16 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dowiedz się więcej o ochronie linków Sejf w Ochrona usługi Office 365 w usłudze Defender, aby chronić organizację przed wyłudzaniem informacji i innymi atakami korzystającymi ze złośliwych adresów URL. Odnajdywanie linków Teams Sejf i wyświetlanie grafiki komunikatów Sejf Links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 46ea33c872782845a8d9697a9abbddcef22e94fb
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4b518095404f22631533cbf7eff744a62a9c7bd1
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623470"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739898"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>linki Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
@@ -47,6 +47,9 @@ ms.locfileid: "65623470"
 > Ten artykuł jest przeznaczony dla klientów biznesowych, którzy [mają Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md). Jeśli używasz witryny Outlook.com, Microsoft 365 Family lub Microsoft 365 Personal i szukasz informacji o bezpiecznych linkach w Outlook, zobacz [Zaawansowane zabezpieczenia Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Sejf Links to funkcja w [Ochrona usługi Office 365 w usłudze Defender](defender-for-office-365.md), która umożliwia skanowanie i ponowne zapisywanie adresów URL przychodzących wiadomości e-mail w przepływie poczty oraz weryfikację adresów URL i linków w wiadomościach e-mail i innych lokalizacjach. Sejf Skanowanie linków odbywa się oprócz zwykłych wiadomości [e-mail](anti-spam-protection.md) dla ruchu [przychodzącego i chroniącego przed spamem i chroniącego przed złośliwym oprogramowaniem](anti-malware-protection.md) w Exchange Online Protection (EOP). Sejf Skanowanie linków może pomóc chronić organizację przed złośliwymi linkami używanymi podczas wyłudzania informacji i innych ataków.
+
+Obejrzyj ten krótki film wideo na temat ochrony przed złośliwymi linkami za pomocą linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 Sejf Ochrona linków jest dostępna w następujących lokalizacjach:
 

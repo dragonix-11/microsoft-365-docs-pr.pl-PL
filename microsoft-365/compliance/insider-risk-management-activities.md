@@ -1,7 +1,7 @@
 ---
 title: Badanie działań związanych z zarządzaniem ryzykiem wewnętrznym
-description: Dowiedz się więcej o badaniu działań związanych z zarządzaniem ryzykiem wewnętrznym w Microsoft 365
-keywords: Microsoft 365, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
+description: Dowiedz się więcej o badaniu działań związanych z zarządzaniem ryzykiem wewnętrznym w Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -13,14 +13,16 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b53b67433bea08e20b082f555c26d41edce55daa
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a808e2d52692c44364e542cb8cd9e7a2b0c57cac
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783342"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759873"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Badanie działań związanych z zarządzaniem ryzykiem wewnętrznym
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Badanie ryzykownych działań użytkowników jest ważnym pierwszym krokiem minimalizowania ryzyka związanego z informacjami poufnymi w organizacji. Mogą to być działania generujące alerty na podstawie zasad zarządzania ryzykiem wewnętrznym lub ryzyka związane z działaniami wykrytymi przez zasady, ale nie od razu tworzące alert dotyczący zarządzania ryzykiem wewnętrznym dla użytkowników. Tego typu działania można zbadać przy użyciu **raportów aktywności użytkowników (wersja zapoznawcza)** lub **pulpitu nawigacyjnego alertów**.
 
@@ -105,7 +107,7 @@ Może to pomóc zaoszczędzić czas klasyfikacji dla analityków i badaczy, aby 
 
 Aby odrzucić alert o ryzyku wewnętrznym, wykonaj następujące kroki:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Alerty**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Alerty**.
 2. Na **pulpicie nawigacyjnym Alerty** wybierz alert (lub alerty) ze stanem *Przegląd potrzeb* , który chcesz odrzucić.
 3. Na pasku poleceń Alerty wybierz pozycję **Odrzuć alerty**.
 4. W okienku Szczegół **odrzuć alerty** możesz przejrzeć szczegóły użytkownika i zasad skojarzone z wybranymi alertami.
@@ -115,7 +117,7 @@ Aby odrzucić alert o ryzyku wewnętrznym, wykonaj następujące kroki:
 
 Aby sklasyfikować alert o ryzyku wewnętrznym, wykonaj następujące kroki:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Alerty**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Alerty**.
 2. Na **pulpicie nawigacyjnym Alerty** wybierz alert, który chcesz sklasyfikować.
 3. Na stronie **Szczegóły alertu** możesz przejrzeć informacje o alertie. Możesz potwierdzić alert i utworzyć nowy przypadek, potwierdzić alert i dodać go do istniejącego przypadku lub odrzucić alert. Ta strona zawiera również bieżący stan alertu i poziom ważności zagrożenia alertu, wymieniony jako Wysoki, Średni lub Niski. Jeśli alert nie jest klasyfikowany, poziom ważności może się zwiększać lub zmniejszać w miarę upływu czasu.
 
@@ -168,7 +170,7 @@ Wykres **aktywności użytkowników** jest jednym z najbardziej zaawansowanych n
     - **Kategoria ryzyka**: Filtruj działania według następujących kategorii ryzyka: *Działania z wynikami ryzyka > 15 (chyba że w sekwencji)* i *Działania sekwencji*.
     - **Typ działania**: filtruj działania według następujących typów: *Dostęp*, *Usuwanie*, *Kolekcja*, *Eksfiltracja*, *Infiltracja*, *Zaciemnianie* i *Zabezpieczenia*.
     - **Sortuj według**: wyświetl listę działań osi czasu według *daty lub* *oceny ryzyka*.
-4. **Sekwencja ryzyka (wersja zapoznawcza)**: kolejność chronologiczna ryzykownych działań jest ważnym aspektem badania ryzyka, a zidentyfikowanie tych powiązanych działań jest ważnym elementem oceny ogólnego ryzyka dla organizacji. Powiązane działania alertów są wyświetlane z wierszami łączącymi, aby podkreślić, że te działania są skojarzone z większym obszarem ryzyka. Ten widok działań może pomóc śledczym dosłownie "połączyć kropki" dla działań związanych z ryzykiem, które mogły być postrzegane jako zdarzenia izolowane lub jednorazowe. Wybierz dowolny bąbelek w sekwencji, aby wyświetlić szczegóły wszystkich skojarzonych działań związanych z ryzykiem. Szczegóły obejmują:
+4. **Sekwencja ryzyka**: kolejność chronologiczna ryzykownych działań jest ważnym aspektem badania ryzyka, a zidentyfikowanie tych powiązanych działań jest ważną częścią oceny ogólnego ryzyka dla organizacji. Powiązane działania alertów są wyświetlane z wierszami łączącymi, aby podkreślić, że te działania są skojarzone z większym obszarem ryzyka. Ten widok działań może pomóc śledczym dosłownie "połączyć kropki" dla działań związanych z ryzykiem, które mogły być postrzegane jako zdarzenia izolowane lub jednorazowe. Wybierz dowolny bąbelek w sekwencji, aby wyświetlić szczegóły wszystkich skojarzonych działań związanych z ryzykiem. Szczegóły obejmują:
 
     - **Nazwa** sekwencji.
     - **Zakres daty** lub **daty** sekwencji.
@@ -207,7 +209,7 @@ Użyj filtrów Zakres działania i Analiza ryzyka, aby wyświetlać i sortować 
 
 Aby użyć **Eksploratora działań**, wykonaj następujące kroki:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Alerty**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Alerty**.
 2. Na **pulpicie nawigacyjnym Alerty** wybierz alert, który chcesz sklasyfikować.
 3. W **okienku Szczegóły alertów** wybierz pozycję **Otwórz rozwinięty widok**.
 4. Na stronie wybranego alertu wybierz kartę **Eksplorator działań** .
@@ -225,9 +227,9 @@ Podczas wybierania z osi czasu działania zdarzeń działania liczba działań w
 
 Ponieważ alert jest przeglądany i klasyfikowany, możesz utworzyć nowy przypadek, aby dokładniej zbadać działanie związane z ryzykiem. Aby utworzyć przypadek dla alertu, wykonaj następujące kroki:
 
-1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Alerty**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Alerty**.
 2. Na **pulpicie nawigacyjnym Alerty** wybierz alert, który chcesz potwierdzić, i utwórz nowy przypadek.
-3. W **okienku Szczegóły alertów** wybierz pozycję **AkcjeKonfirmuj alerty & utwórz przypadek**. > 
+3. W **okienku Szczegóły alertów** wybierz pozycję **Akcje** > **Potwierdź alerty & utwórz przypadek**.
 4. W oknie dialogowym **Potwierdzanie alertu i tworzenie przypadku ryzyka związanego z ryzykiem wewnętrznym** wprowadź nazwę sprawy, wybierz użytkowników, którzy mają zostać dodani jako współautorzy, i dodaj komentarze zgodnie z wymaganiami. Komentarze są automatycznie dodawane do sprawy jako notatka o przypadku.
 5. Wybierz pozycję **Utwórz przypadek** , aby utworzyć nowy przypadek, lub wybierz pozycję **Anuluj** , aby zamknąć okno dialogowe bez tworzenia sprawy.
 
@@ -274,4 +276,4 @@ Współcześni użytkownicy w miejscu pracy często mają wiele różnych obowi�
 
 - **Najpierw skoncentruj działania analityków i badaczy na alertach o najwyższym ryzyku**. W zależności od zasad możesz przechwytywać działania i generować alerty o różnym stopniu potencjalnego wpływu na działania związane z ograniczaniem ryzyka. [Filtrowanie alertów](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) według ważności i określanie priorytetów alertów *o wysokiej ważności* .
 - **Przypisz użytkowników jako analityków i badaczy**. Przypisanie odpowiedniego użytkownika do odpowiednich ról jest ważną częścią procesu przeglądu alertów o ryzyku wewnętrznym. Upewnij się, że przypisano odpowiednich użytkowników do grup ról *Insider Risk Management Analysts* i *Insider Risk Management Investigators* .  
-- **Użyj zautomatyzowanych funkcji ryzyka wewnętrznych, aby ułatwić odnajdywanie działań o najwyższym ryzyku**. [Funkcje wykrywania sekwencji zarządzania](insider-risk-management-policies.md#sequence-detection-preview) ryzykiem wewnętrznym i [zbiorczego wykrywania eksfiltracji](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) mogą pomóc w szybkim odnalezieniu zagrożeń w organizacji. Rozważ dostrojenie [dopalaczy oceny ryzyka](insider-risk-management-settings.md#indicators), [wykluczeń typów plików](insider-risk-management-settings.md#file-type-exclusions), [domen](insider-risk-management-settings.md#domains) i [ustawień minimalnego progu wskaźnika](insider-risk-management-settings.md#indicator-level-settings-preview) dla zasad.
+- **Użyj zautomatyzowanych funkcji ryzyka wewnętrznych, aby ułatwić odnajdywanie działań o najwyższym ryzyku**. [Funkcje wykrywania sekwencji zarządzania](insider-risk-management-policies.md#sequence-detection) ryzykiem wewnętrznym i [zbiorczego wykrywania eksfiltracji](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) mogą pomóc w szybkim odnalezieniu zagrożeń w organizacji. Rozważ dostrojenie [dopalaczy oceny ryzyka](insider-risk-management-settings.md#indicators), [wykluczeń typów plików](insider-risk-management-settings.md#file-type-exclusions), [domen](insider-risk-management-settings.md#domains) i [ustawień minimalnego progu wskaźnika](insider-risk-management-settings.md#indicator-level-settings-preview) dla zasad.

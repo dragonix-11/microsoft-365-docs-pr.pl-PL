@@ -1,8 +1,8 @@
 ---
 title: Rozpoczynanie pracy z usługą Microsoft 365 Defender
 ms.reviewer: ''
-description: Dowiedz się, jakie czynności należy wykonać, aby rozpocząć pracę z Microsoft 365 Defender
-keywords: wprowadzenie, usługa Microsoft 365 Defender, włączanie, wdrażanie i wdrażanie
+description: Dowiedz się, jakie kroki należy wykonać, aby rozpocząć pracę z Microsoft 365 Defender
+keywords: wprowadzenie, microsoft 365 defender, włączanie, dołączanie, wdrażanie
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4429226eaebc254676fac5589a2a25ca51acdeb6
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: d4b17e0b8a57c5f3778eff15d8961713c642409e
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499930"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739976"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>Rozpoczynanie pracy z usługą Microsoft 365 Defender
 
@@ -34,30 +34,34 @@ ms.locfileid: "64499930"
 **Dotyczy:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender to ujednolicone środowisko, w którym możesz monitorować zabezpieczenia i zarządzać nimi w przedsiębiorstwie. Dzięki zintegrowanym alertom dla tożsamości, punktów końcowych, danych, aplikacji, poczty e-mail i narzędzi do współpracy — badania i reagowanie na zagrożenia są teraz w centralnym miejscu. 
+Microsoft 365 Defender to ujednolicone środowisko, w którym można monitorować zabezpieczenia i zarządzać nimi w całym przedsiębiorstwie. Dzięki zintegrowanym alertom między tożsamościami, punktami końcowymi, danymi, aplikacjami, pocztą e-mail i narzędziami do współpracy — badanie zagrożeń i reagowanie na nie odbywa się teraz w centralnej lokalizacji. 
 
-Niezależnie od tego, czy jesteś nowym użytkownikiem pakietu produktów zabezpieczających firmy Microsoft, czy znasz poszczególne przepływy pracy, ten temat zawiera przewodnik po prostych krokach, które należy wykonać, aby rozpocząć pracę z usługą Microsoft 365 Defender.
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak Microsoft 365 Defender pomaga zapobiegać, wykrywać, badać i korygować zagrożenia w Microsoft 365.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4FTDg]
 
-:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="Czynności, które należy wykonać, aby rozpocząć pracę z Microsoft 365 Defender portalem" lightbox="../../media/mtp/get-started-m365d.png":::
+Niezależnie od tego, czy dopiero zaczynasz korzystać z pakietu produktów zabezpieczających firmy Microsoft, czy znasz poszczególne przepływy pracy, ten temat przeprowadzi Cię przez proste kroki, które należy wykonać, aby rozpocząć pracę z Microsoft 365 Defender.
 
-Aby rozpocząć, musisz wykonać następujące czynności:
+:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="Kroki umożliwiające rozpoczęcie pracy z portalem Microsoft 365 Defender" lightbox="../../media/mtp/get-started-m365d.png":::
+
+Aby rozpocząć pracę, należy wykonać następujące czynności:
 
 - **[Krok 1. Włączanie Microsoft 365 Defender](m365d-enable.md)** <br>
-    Najpierw musisz włączyć usługę, upewniąc się, że masz właściwą licencję i przypisano odpowiednie role, aby uzyskać dostęp do portalu. 
+    Najpierw należy włączyć usługę, upewniając się, że masz odpowiednią licencję i przypisano role, aby można było uzyskać dostęp do portalu. 
 
-    Następnie zostaną przejdę przez kilka prostych ustawień i potwierdzisz, że usługa jest w użyciu.
+    Następnie przejdziesz przez kilka prostych ustawień, a następnie możesz potwierdzić, że usługa jest włączona.
 
 - **[Krok 2. Wdrażanie obsługiwanych usług](deploy-supported-services.md)** <br>
-    Po wykonaniu początkowych kroków musisz wdrożyć obsługiwane usługi, które są obsługiwane wraz z Microsoft 365 Defender. Wdrażanie usług w praktyce zwiększa widoczność sygnałów poszczególnych zasobów w Twojej sieci.
+    Po wykonaniu początkowych kroków należy wdrożyć obsługiwane usługi z Microsoft 365 Defender. Wdrażanie usług skutecznie zwiększa widoczność sygnałów z zasobów w sieci.
 
 
-## <a name="key-capabilities"></a>Najważniejsze funkcje
-Włączenie Microsoft 365 Defender i wdrażanie usług zapewni Ci dostęp do następujących kluczowych możliwości:
+## <a name="key-capabilities"></a>Kluczowe możliwości
+
+Włączenie Microsoft 365 Defender i wdrożenie usług zapewni ci dostęp do następujących kluczowych możliwości:
 
 
-| Funkcja | Opis |
+| Możliwości | Opis |
 | ------ | ------ |
-| Ochrona punktu końcowego w usłudze Microsoft Defender | Pakiet ochrony punktu końcowego zbudowany wokół zaawansowanych czujnikach zachowania, analizy w chmurze i analizy zagrożeń |
-|Ochrona usługi Office 365 w usłudze Microsoft Defender | Zaawansowana ochrona aplikacji i danych w aplikacji Office 365, w tym poczty e-mail i innych narzędzi do współpracy |
-| Microsoft Defender for Identity | Obrona przed zaawansowanymi zagrożeniami, naruszonymi tożsamościami i złośliwymi testerami za pomocą skorelowanych sygnałów usługi Active Directory |
-| Microsoft Defender for Cloud Apps | Identyfikuj i zwalczaj cyberataki w twoich usługach w chmurze firmy Microsoft i innych firm |
+| Ochrona punktu końcowego w usłudze Microsoft Defender | Pakiet endpoint protection oparty na zaawansowanych czujnikach behawioralnych, analizie chmury i analizie zagrożeń |
+|Ochrona usługi Office 365 w usłudze Microsoft Defender | Zaawansowana ochrona aplikacji i danych w Office 365, w tym poczty e-mail i innych narzędzi do współpracy |
+| Microsoft Defender for Identity | Ochrona przed zaawansowanymi zagrożeniami, tożsamościami z naruszonymi zabezpieczeniami i złośliwymi insiderami przy użyciu skorelowanych sygnałów usługi Active Directory |
+| Microsoft Defender for Cloud Apps | Identyfikowanie i zwalczanie zagrożeń cybernetycznych w usługach firmy Microsoft i innych firm w chmurze |
