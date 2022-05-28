@@ -19,16 +19,16 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak wyświetlać, tworzyć, modyfikować i usuwać zasady linków Sejf i globalne ustawienia linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d60be56f8dad960ca3f15484276324421c00426
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 969e3f3bb3b139a21cd2d84b4a0bd698a74b5107
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623013"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772451"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurowanie zasad linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
@@ -304,6 +304,20 @@ W tym przykładzie zostanie utworzona reguła bezpiecznych łączy o nazwie Cont
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
+Ten przykład tworzy regułę bezpiecznych łączy, która jest podobna do poprzedniego przykładu, ale w tym przykładzie reguła ma zastosowanie do adresatów we wszystkich zaakceptowanych domenach w organizacji.
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+Ten przykład tworzy regułę bezpiecznych łączy podobną do poprzednich przykładów, ale w tym przykładzie reguła ma zastosowanie do adresatów w domenach określonych w pliku .csv.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs $SLDomains
+```
+
 Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule).
 
 ### <a name="use-powershell-to-view-safe-links-policies"></a>Używanie programu PowerShell do wyświetlania zasad bezpiecznych łączy
@@ -389,6 +403,20 @@ Aby zmodyfikować regułę bezpiecznych łączy, użyj tej składni:
 
 ```PowerShell
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+Ten przykład dodaje wszystkie akceptowane domeny w organizacji jako warunek do reguły bezpiecznych łączy o nazwie Contoso All.
+
+```powershell
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+Ten przykład dodaje domeny z określonego .csv jako warunek do reguły bezpiecznych łączy o nazwie Contoso All.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs $SLDomains
 ```
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).

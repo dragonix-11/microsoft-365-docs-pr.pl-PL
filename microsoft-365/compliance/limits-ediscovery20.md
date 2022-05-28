@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o limitach przypadków, limitach indeksowania i limitach wyszukiwania dla rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365.
-ms.openlocfilehash: 7aa9dcd65cb047914a8b1b68de3340bb9d7b728f
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 5b83cd578b8975dd0185fb2902357c2f0c201043
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294624"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772703"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limity w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 
@@ -41,8 +41,8 @@ W poniższej tabeli wymieniono limity dotyczące przypadków i zestawów przegl�
 |Maksymalna liczba zestawów obciążenia na przypadek.|200|
 |Maksymalna liczba zestawów przeglądów na przypadek.|20|
 |Maksymalna liczba grup tagów na przypadek.|1,000|
-|Maksymalna liczba unikatowych tagów na przypadek.|10001<sup></sup>|
-|Maksymalna liczba współbieżnych zadań w organizacji w celu dodania zawartości do zestawu przeglądów. Te zadania mają nazwę **Dodawanie danych do zestawu przeglądów** i są wyświetlane na karcie **Zadania** w danym przypadku.|<sup>102</sup>|
+|Maksymalna liczba unikatowych tagów na przypadek.|1000<sup>1</sup>|
+|Maksymalna liczba współbieżnych zadań w organizacji w celu dodania zawartości do zestawu przeglądów. Te zadania mają nazwę **Dodawanie danych do zestawu przeglądów** i są wyświetlane na karcie **Zadania** w danym przypadku.|10<sup>2</sup>|
 |Maksymalna liczba współbieżnych zadań dodawania zawartości do zestawu przeglądów na użytkownika. Te zadania mają nazwę **Dodawanie danych do zestawu przeglądów** i są wyświetlane na karcie **Zadania** w danym przypadku.|3|
 
 ## <a name="hold-limits"></a>Limity blokady
@@ -51,7 +51,7 @@ W poniższej tabeli wymieniono limity dotyczące blokad skojarzonych z przypadki
 
 | Opis limitu | Limit |
 |:-----|:-----|
-|Maksymalna liczba zasad blokady dla organizacji. Ten limit obejmuje łączną sumę zasad blokady w przypadkach zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i Microsoft Purview eDiscovery (Premium). <br/> |10.000<sup>3</sup>  <br/> |
+|Maksymalna liczba zasad blokady dla organizacji. Ten limit obejmuje łączną sumę zasad blokady w przypadkach Microsoft Purview eDiscovery (Standard) i Microsoft Purview eDiscovery (Premium). <br/> |10.000<sup>3</sup>  <br/> |
 |Maksymalna liczba skrzynek pocztowych w jednym przypadku blokady. Ten limit obejmuje łączną sumę skrzynek pocztowych użytkowników oraz skrzynki pocztowe skojarzone z grupami Grupy Microsoft 365, Microsoft Teams i Yammer. <br/> |1,000  <br/> |
 |Maksymalna liczba witryn w jednym przypadku blokady. Ten limit obejmuje łączną sumę witryn OneDrive dla Firm, witryn SharePoint oraz witryn skojarzonych z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.  <br/> |100  <br/> |
 
@@ -61,10 +61,10 @@ W poniższej tabeli wymieniono limity indeksowania w obszarze eDiscovery (Premiu
 
 |Opis limitu|Limit|
 |---|---|
-|Maksymalna liczba znaków wyodrębnionych z jednego pliku.|10 <sup>milionów4</sup>|
-|Maksymalny rozmiar pojedynczego pliku.|150 <sup>MB4</sup>|
-|Maksymalna głębokość osadzonych elementów w dokumencie.|<sup>254</sup>|
-|Maksymalny rozmiar plików przetwarzanych przez optyczne rozpoznawanie znaków (OCR).|24 <sup>MB4</sup> <br/> |
+|Maksymalna liczba znaków wyodrębnionych z jednego pliku.|10 mln<sup>4</sup>|
+|Maksymalny rozmiar pojedynczego pliku.|150 MB<sup>4</sup>|
+|Maksymalna głębokość osadzonych elementów w dokumencie.|25<sup>4</sup>|
+|Maksymalny rozmiar plików przetwarzanych przez optyczne rozpoznawanie znaków (OCR).|24 MB<sup>4</sup> <br/> |
 |Maksymalna zaawansowana przepływność indeksowania | 2 GB na godzinę |
 
 ## <a name="search-limits"></a>Limity wyszukiwania
@@ -76,10 +76,10 @@ Limity opisane w tej sekcji są związane z używaniem narzędzia wyszukiwania n
 |Maksymalna liczba skrzynek pocztowych lub witryn, które można przeszukiwać w jednym wyszukiwaniu.|Brak limitu|
 |Maksymalna liczba wyszukiwań, które mogą być uruchamiane w tym samym czasie.|Brak limitu|
 |Maksymalna liczba wyszukiwań, które pojedynczy użytkownik może rozpocząć w tym samym czasie.|10|
-|Maksymalna liczba znaków zapytania wyszukiwania (w tym operatory i warunki).|10 <sup>0005</sup>|
-|Maksymalna liczba znaków zapytania wyszukiwania dla witryn SharePoint i OneDrive dla Firm (w tym operatorów i warunków).|10,000<br>4000 z symbolami wieloznaczymi5<sup></sup>|
+|Maksymalna liczba znaków zapytania wyszukiwania (w tym operatory i warunki).|10 000<sup>5</sup>|
+|Maksymalna liczba znaków zapytania wyszukiwania dla witryn SharePoint i OneDrive dla Firm (w tym operatorów i warunków).|10,000<br>4000 z symbolami wieloznaczymi<sup>5</sup>|
 |Minimalna liczba znaków alfa dla symboli wieloznacznych prefiksu; na przykład **one\**_ lub _* set\***.|3|
-|Maksymalna liczba wariantów zwracanych w przypadku używania symbolu wieloznacznego prefiksu do wyszukiwania dokładnej frazy lub używania symbolu wieloznacznego prefiksu i operatora wartości logicznej **NEAR** .|10 <sup>0006</sup>|
+|Maksymalna liczba wariantów zwracanych w przypadku używania symbolu wieloznacznego prefiksu do wyszukiwania dokładnej frazy lub używania symbolu wieloznacznego prefiksu i operatora wartości logicznej **NEAR** .|10 000<sup>6</sup>|
 |Maksymalna liczba elementów na skrzynkę pocztową użytkownika, które są wyświetlane na stronie podglądu dla wyszukiwań. Zostaną wyświetlone najnowsze elementy.|100|
 |Maksymalna liczba elementów ze wszystkich skrzynek pocztowych wyświetlanych na stronie podglądu wyszukiwania.|1,000|
 |Maksymalna liczba skrzynek pocztowych, dla których można wyświetlić podgląd wyników wyszukiwania.  Jeśli istnieje ponad 1000 skrzynek pocztowych zawierających elementy zgodne z zapytaniem wyszukiwania, tylko 1000 pierwszych skrzynek pocztowych z największą ilością wyników jest dostępnych w wersji zapoznawczej.|1,000|
@@ -122,26 +122,26 @@ Limity opisane w tej sekcji są związane z eksportowaniem dokumentów z zestawu
 
 |Opis limitu|Limit|
 |---|---|
-|Całkowity rozmiar pliku lub maksymalna liczba dokumentów pobranych z zestawu przeglądów.|3 MB lub 50 <sup>dokumentów7</sup>|
+|Całkowity rozmiar pliku lub maksymalna liczba dokumentów pobranych z zestawu przeglądów.|3 MB lub 50 dokumentów<sup>7</sup>|
 
-## <a name="notes"></a>Uwagi
 
-> [!NOTE]
-> <sup>1</sup> Jest to maksymalna liczba tagów, które można utworzyć w danym przypadku. Ten limit nie jest związany z liczbą dokumentów, które można otagować.
->
-> <sup>2</sup> Ten limit jest współużytkowany z eksportowaniem zawartości w innych narzędziach zbierania elektronicznych materiałów dowodowych. Oznacza to, że względem tego limitu są stosowane współbieżne eksporty w wyszukiwaniu zawartości i zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) (oraz dodawanie zawartości do przeglądania zestawów zbierania elektronicznych materiałów dowodowych (Premium)).
->
-> <sup>3</sup> Po wstrzymaniu ponad 1000 skrzynek pocztowych lub 100 witryn w zasadach jednego wstrzymania system automatycznie skaluje blokadę zgodnie z potrzebami. Oznacza to, że system automatycznie doda lokalizacje danych do wielu zasad przechowywania, zamiast dodawać je do jednej zasady blokady. Jednak limit 10 000 zasad przechowywania spraw na organizację nadal ma zastosowanie.
->
-> <sup>4</sup> Każdy element, który przekracza limit pojedynczego pliku, zostanie wyświetlony jako błąd przetwarzania.
->
-> <sup>5</sup> Podczas wyszukiwania lokalizacji SharePoint i OneDrive dla Firm znaki w adresach URL wyszukiwanych witryn są liczone względem tego limitu. Całkowita liczba znaków składa się z:
->
-> - Wszystkie znaki w polach Użytkownicy i Filtry.
-> - Wszystkie filtry uprawnień wyszukiwania, które mają zastosowanie do użytkownika.
-> - Znaki z dowolnych właściwości lokalizacji w wyszukiwaniu; obejmuje to ExchangeLocation, PublicFolderLocation, SharPointLocation, ExchangeLocationExclusion, PublicFolderLocationExclusion, SharePointLocationExclusion, OneDriveLocationExclusion.
->   Na przykład uwzględnienie wszystkich witryn SharePoint i kont OneDrive w wyszukiwaniu będzie liczone jako sześć znaków, ponieważ wyraz "ALL" będzie wyświetlany zarówno dla pola SharePointLocation, jak i OneDriveLocation.
->
-> <sup>6</sup> W przypadku zapytań innych niż frazy (wartość słowa kluczowego, która nie używa podwójnego cudzysłowu) używamy specjalnego indeksu prefiksu. Informuje nas to, że słowo występuje w dokumencie, ale nie w miejscu, w którym występuje w dokumencie. Aby wykonać zapytanie frazy (wartość słowa kluczowego z podwójnym cudzysłowem), musimy porównać pozycję w dokumencie dla wyrazów w frazie. Oznacza to, że nie możemy używać indeksu prefiksu dla zapytań fraz. W takim przypadku wewnętrznie rozwiniemy zapytanie o wszystkie możliwe wyrazy, do których rozwija się prefiks; na przykład  **time\**_ może rozwinąć się do _*"czasomierza LUB czasomierza LUB czasu LUB czasu lub czasomierza lub przedziału czasowego LUB ..."**. Limit 10 000 to maksymalna liczba wariantów, do których wyraz może się rozwinąć, a nie liczba dokumentów pasujących do zapytania. Nie ma górnego limitu terminów innych niż frazy.
->
-> <sup>7</sup> Ten limit dotyczy pobierania wybranych dokumentów z zestawu przeglądów. Nie dotyczy eksportowania dokumentów z zestawu przeglądów. Aby uzyskać więcej informacji na temat pobierania i eksportowania dokumentów, zobacz [Export case data in eDiscovery (Premium) (Eksportowanie danych przypadków w usłudze eDiscovery (Premium)).](exporting-data-ediscover20.md)
+## <a name="reference-notes"></a>Notatki referencyjne
+<sup>1</sup> Jest to maksymalna liczba tagów, które można utworzyć w danym przypadku. Ten limit nie jest związany z liczbą dokumentów, które można otagować.
+
+<sup>2</sup> Ten limit jest współużytkowany z eksportowaniem zawartości w innych narzędziach zbierania elektronicznych materiałów dowodowych. Oznacza to, że względem tego limitu są stosowane współbieżne eksporty w wyszukiwaniu zawartości i zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) (oraz dodawanie zawartości do przeglądania zestawów zbierania elektronicznych materiałów dowodowych (Premium)).
+
+<sup>3</sup> Po wstrzymaniu ponad 1000 skrzynek pocztowych lub 100 witryn w zasadach jednego wstrzymania system automatycznie skaluje blokadę zgodnie z potrzebami. Oznacza to, że system automatycznie doda lokalizacje danych do wielu zasad przechowywania, zamiast dodawać je do jednej zasady blokady. Jednak limit 10 000 zasad przechowywania spraw na organizację nadal ma zastosowanie.
+
+<sup>4</sup> Każdy element, który przekracza limit pojedynczego pliku, zostanie wyświetlony jako błąd przetwarzania.
+
+<sup>5</sup> Podczas wyszukiwania lokalizacji SharePoint i OneDrive dla Firm znaki w adresach URL wyszukiwanych witryn są liczone względem tego limitu. Całkowita liczba znaków składa się z:
+
+  - Wszystkie znaki w polach Użytkownicy i Filtry.
+  - Wszystkie filtry uprawnień wyszukiwania, które mają zastosowanie do użytkownika.
+  - Znaki z dowolnych właściwości lokalizacji w wyszukiwaniu, w tym ExchangeLocation, PublicFolderLocation, SharPointLocation, ExchangeLocationExclusion, PublicFolderLocationExclusion, SharePointLocationExclusion i OneDriveLocationExclusion. Na przykład uwzględnienie wszystkich witryn SharePoint i kont OneDrive w wyszukiwaniu będzie liczone jako sześć znaków, ponieważ wyraz "ALL" będzie wyświetlany zarówno dla pola SharePointLocation, jak i OneDriveLocation.
+
+<sup>6</sup> W przypadku zapytań innych niż frazy (wartość słowa kluczowego, która nie używa podwójnego cudzysłowu) używamy specjalnego indeksu prefiksu. Informuje nas to, że słowo występuje w dokumencie, ale nie w miejscu, w którym występuje w dokumencie. Aby wykonać zapytanie frazy (wartość słowa kluczowego z podwójnym cudzysłowem), musimy porównać pozycję w dokumencie dla wyrazów w frazie. Oznacza to, że nie możemy używać indeksu prefiksu dla zapytań fraz. W takim przypadku wewnętrznie rozwiniemy zapytanie o wszystkie możliwe wyrazy, do których rozwija się prefiks; na przykład  **time\**_ może rozwinąć się do _*"czasomierza LUB czasomierza LUB czasu LUB czasu lub czasomierza lub przedziału czasowego LUB ..."**. Limit 10 000 to maksymalna liczba wariantów, do których wyraz może się rozwinąć, a nie liczba dokumentów pasujących do zapytania. Nie ma górnego limitu terminów innych niż frazy.
+
+<sup>7</sup> Okres przedwyższania obiektów blob platformy Azure, w których przechowywane są kolekcje zbierania elektronicznych materiałów dowodowych (Premium), wynosi jeden rok. Każda kolekcja utworzona rok temu może nie być już dostępna.
+ 
+<sup>8</sup> Ten limit dotyczy pobierania wybranych dokumentów z zestawu przeglądów. Nie dotyczy eksportowania dokumentów z zestawu przeglądów. Aby uzyskać więcej informacji na temat pobierania i eksportowania dokumentów, zobacz [Export case data in eDiscovery (Premium) (Eksportowanie danych przypadków w usłudze eDiscovery (Premium)).](exporting-data-ediscover20.md)

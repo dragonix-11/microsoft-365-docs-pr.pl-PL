@@ -18,12 +18,12 @@ ms.custom:
 description: Uwierzytelniony łańcuch odebranych wiadomości e-mail (ARC) to uwierzytelnianie poczty e-mail, które próbuje zachować wyniki uwierzytelniania na różnych urządzeniach i w przypadku wszelkich pośrednich przepływów poczty przesyłanych między nadawcą a odbiorcą. Poniżej przedstawiono sposób tworzenia wyjątków dla zaufanych nadawców usługi ARC.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 625dd27ff59fca6a0e156bd65296e407e22005a6
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 6b3057350f8b1a652a08da8c878a47e191af04d0
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663915"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772344"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>Tworzenie listy zaufanych nadawców usługi ARC w celu zaufania *legalnym* pośrednim przepływom poczty
 
@@ -35,22 +35,20 @@ ms.locfileid: "65663915"
 
 Mechanizmy uwierzytelniania poczty e-mail, takie jak [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md) , służą do weryfikowania nadawców wiadomości e-mail pod kątem *bezpieczeństwa* adresatów wiadomości e-mail, ale niektóre uzasadnione usługi mogą wprowadzać zmiany w wiadomości e-mail między nadawcą a odbiorcą. **W Microsoft 365 Defender usługa ARC pomoże ograniczyć błędy dostarczania SPF, DKIM i DMARC, które występują z powodu *legalnych* pośrednich przepływów poczty.**
 
-## <a name="authenticated-received-chain-arc-for-legitimate-indirect-mailflows-in-microsoft-365-defender-for-office"></a>Uwierzytelniony łańcuch odebranych wiadomości (ARC) dla *legalnych* pośrednich przepływów poczty w Microsoft 365 Defender dla Office
+## <a name="authenticated-received-chain-arc-in-microsoft-365-defender-for-office"></a>Uwierzytelniony łańcuch odebranych (ARC) w Microsoft 365 Defender dla Office
 
-Listy wysyłkowe i usługi, które filtrują lub przekazują wiadomości e-mail, są dobrze znaną i normalną funkcją przepływu poczty w organizacji. Jednak fowarding wiadomości e-mail narusza SPF. Usługi mogą również naruszać uwierzytelnianie poczty e-mail DKIM, zmieniając nagłówki wiadomości e-mail, dodając takie rzeczy jak informacje o skanowaniu wirusów lub usuwając załączniki. Niepowodzenie jednej z tych metod uwierzytelniania poczty e-mail może spowodować niepowodzenie przekazania DMARC.
+Usługi, które modyfikują zawartość podczas transportu wiadomości przed dostarczeniem do organizacji, mogą unieważnić podpis e-mail DKIM i wpłynąć na uwierzytelnianie wiadomości. Gdy te usługi pośredniczące wykonują takie akcje, mogą użyć usługi ARC do podania szczegółów oryginalnego uwierzytelniania przed wystąpieniem modyfikacji, którym organizacja może zaufać, aby pomóc w uwierzytelnieniu komunikatu.  
 
-Planowane interwencje przepływów pocztowych z legalnych usług są często *nazywane pośrednim przepływem poczty* i mogą *przypadkowo* powodować niepowodzenie uwierzytelniania poczty e-mail, gdy przechodzą przez (przeskok do) następnego urządzenia lub usługi w drodze do odbiorcy.
-
-**Zaufane uszczelnienia ARC umożliwiają administratorom dodawanie listy *zaufanych* pośredników do portalu Microsoft 365 Defender.** Zaufane uszczelniacze ARC umożliwiają firmie Microsoft honorowanie podpisów ARC od zaufanych pośredników, uniemożliwiając tym legalnym komunikatom niepowodzenie łańcucha uwierzytelniania.
+**Zaufane uszczelnienia ARC umożliwiają administratorom dodawanie listy *zaufanych* pośredników do portalu Microsoft 365 Defender.** Zaufane uszczelniacze ARC umożliwiają firmie Microsoft honorowanie podpisów arc od tych zaufanych pośredników, uniemożliwiając tym legalnym komunikatom niepowodzenie łańcucha uwierzytelniania.
 
 > [!NOTE]
-> ***Zaufane uszczelniacze ARC to lista utworzona przez administratora dla każdej domeny, której procesy powodują pośredni przepływ poczty i które zaimplementowano uszczelnianie arc.*** Gdy wiadomość e-mail jest kierowana do Office 365 za pośrednictwem usługi ARC i zardzewiałego pośrednika dzierżawy Office 365, firma Microsoft weryfikuje podpis ARC i na podstawie wyników usługi ARC może uwzględniać podane szczegóły uwierzytelniania.
+> ***Zaufane uszczelniacze ARC to utworzona przez administratora lista domen pośredniczących, które zaimplementowano uszczelnianie arc.*** Gdy wiadomość e-mail jest kierowana do Office 365 za pośrednictwem i zaufanego pośrednika usługi ARC dzierżawy Office 365, firma Microsoft weryfikuje podpis arc i na podstawie wyników usługi ARC może uwzględniać podane szczegóły uwierzytelniania.
 
 ## <a name="when-to-use-trusted-arc-sealers"></a>Kiedy używać zaufanych uszczelniaczy ARC?
 
-Lista zaufanych uszczelniaczy ARC jest wymagana tylko wtedy, gdy urządzenia i serwery interweniują w przepływie poczty e-mail organizacji i:
+Lista zaufanych uszczelniaczy ARC jest potrzebna tylko wtedy, gdy pośrednicy są częścią przepływu poczty e-mail organizacji i:
 
-1. Może modyfikować nagłówek wiadomości e-mail lub inną zawartość wiadomości e-mail.
+1. Może modyfikować zawartość nagłówka wiadomości e-mail lub wiadomości e-mail.
 2. Może to spowodować niepowodzenie uwierzytelniania z innych powodów (na przykład przez usunięcie załączników).
  
 Dodając zaufany uszczelniacz ARC, Office 365 będzie weryfikować i ufać wynikom uwierzytelniania dostarczanym przez uszczelniacz podczas dostarczania poczty do dzierżawy w Office 365.
@@ -86,12 +84,12 @@ Zobacz metody uwierzytelniania poczty e-mail na końcu tego bloku nagłówka, ab
 ``
 ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
 40.107.65.78) smtp.rcpttodomain=microsoft.com
-smtp.mailfrom=o365e5test083.onmicrosoft.com; dmarc=bestguesspass action=none
-header.from=o365e5test083.onmicrosoft.com; dkim=none (message not signed);
+smtp.mailfrom=sampledoamin.onmicrosoft.com; dmarc=bestguesspass action=none
+header.from=sampledoamin.onmicrosoft.com; dkim=none (message not signed);
 arc=pass (0 oda=1 ltdi=1
-spf=[1,1,smtp.mailfrom=o365e5test083.onmicrosoft.com]
-dkim=[1,1,header.d=o365e5test083.onmicrosoft.com]
-dmarc=[1,1,header.from=o365e5test083.onmicrosoft.com])
+spf=[1,1,smtp.mailfrom=sampledoamin.onmicrosoft.com]
+dkim=[1,1,header.d=sampledoamin.onmicrosoft.com]
+dmarc=[1,1,header.from=sampledoamin.onmicrosoft.com])
 ``
 
 Aby sprawdzić, czy wynik ARC został użyty do zastąpienia błędu DMARC, poszukaj *wyniku kompauth* i *przyczyny kodu (130)* w nagłówku.
@@ -138,7 +136,7 @@ Te diagramy kontrastują operacje przepływu poczty z zaufanym uszczelniaczem AR
 
 W tym miejscu zobaczysz tę samą **organizację po wykorzystaniu możliwości utworzenia zaufanego uszczelniacza ARC.**
 
-:::image type="content" source="../../media/m365d-indirect-traffic-flow-with-trusted-arc-sealer.PNG" alt-text="W drugiej ilustracji firma Contoso utworzyła listę zaufanych uszczelniaczy ARC. Ten sam użytkownik wysyła drugą wiadomość e-mail z contoso.com do fabrikam.com. Usługa innej firmy zatrudniona przez firmę Contoso modyfikuje adres IP nadawcy w nagłówku wiadomości e-mail. Ale tym razem usługa zaimplementowała uszczelnianie arc, a ponieważ administrator dzierżawy dodał już domenę innej firmy do zaufanych uszczelniaczy ARC, modyfikacja jest akceptowana. SPF kończy się niepowodzeniem dla nowego adresu IP; DKIM kończy się niepowodzeniem z powodu modyfikacji zawartości; DMARC kończy się niepowodzeniem z powodu wcześniejszych awarii; ale usługa ARC rozpoznaje modyfikacje, wystawia przepustkę i akceptuje zmiany. Fałsz również otrzymuje przepustkę. Wiadomość jest wysyłana do skrzynki odbiorczej.":::
+:::image type="content" source="../../media/m365d-indirect-traffic-flow-with-trusted-arc-sealer.PNG" alt-text="W drugiej ilustracji firma Contoso utworzyła listę zaufanych uszczelniaczy ARC. Ten sam użytkownik wysyła drugą wiadomość e-mail z contoso.com do fabrikam.com. Usługa innej firmy zatrudniona przez firmę Contoso modyfikuje adres IP nadawcy w nagłówku wiadomości e-mail. Ale tym razem usługa zaimplementowała uszczelnianie arc, a ponieważ administrator dzierżawy dodał już domenę innej firmy do zaufanych uszczelniaczy ARC, modyfikacja jest akceptowana. Protokół SPF kończy się niepowodzeniem dla nowego adresu IP. DKIM kończy się niepowodzeniem z powodu modyfikacji zawartości. DMARC kończy się niepowodzeniem z powodu wcześniejszych awarii. Jednak usługa ARC rozpoznaje modyfikacje, wystawia przepustkę i akceptuje zmiany. Fałsz również otrzymuje przepustkę. Wiadomość jest wysyłana do skrzynki odbiorczej.":::
 
 ## <a name="next-steps-after-you-set-up-arc-for-microsoft-365-defender-for-office"></a>Następne kroki: Po skonfigurowaniu usługi ARC dla Microsoft 365 Defender dla Office
 

@@ -19,12 +19,12 @@ ms.custom:
 description: Dowiedz się, jak zaktualizować rekord usługi nazw domen (DNS) w celu używania struktury zasad nadawcy (SPF) z domeną niestandardową w Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d29175c471e076b1f69e1edb6da3c005d3857f8f
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: 33e4a6d3644f7a3aab8992130b2b92e09dd665af
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65626046"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772407"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurowanie platformy SPF w celu zapobiegania spoofingowi
 
@@ -152,5 +152,7 @@ Celem uwierzytelniania poczty e-mail [**DKIM**](use-dkim-to-validate-outbound-em
 Celem uwierzytelniania poczty e-mail [**DMARC**](use-dmarc-to-validate-email.md) jest upewnienie się, że informacje SPF i DKIM są zgodne z adresem Od.
 
  Aby uzyskać zaawansowane przykłady i bardziej szczegółową dyskusję na temat obsługiwanej składni SPF, zobacz [Jak działa SPF, aby zapobiec fałszowaniu i wyłudzaniu informacji w Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+
+[Używanie zaufanych nadawców usługi ARC na potrzeby legalnych przepływów poczty](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
 
 *Wybierz pozycję "Ta strona" w obszarze "Opinia", jeśli masz opinię na temat tej dokumentacji.*

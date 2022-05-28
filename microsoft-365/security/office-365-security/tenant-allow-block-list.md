@@ -17,16 +17,16 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58b1fadc85b993701d49b1c33750fc7db2527264
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: e1832f641c5efc582bee7837dcf8e5b67a9256f6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468113"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772096"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -448,7 +448,7 @@ Następujące wpisy są nieprawidłowe:
 
 - **Symbole wieloznaczne środkowe**:
 
-  - conto\* so.com
+  - conto\*so.com
   - conto~so.com
 
 - **Podwójne symbole wieloznaczne**
@@ -468,6 +468,7 @@ Para domeny dla sfałszowanego nadawcy na liście dozwolonych/blokowych dzierża
 - **Wysyłanie infrastruktury**: ta wartość wskazuje źródło komunikatów od sfałszowanego użytkownika. Prawidłowe wartości obejmują:
   - Domena znaleziona w odwrotnym wyszukiwaniu DNS (rekord PTR) adresu IP źródłowego serwera poczty e-mail (na przykład fabrikam.com).
   - Jeśli źródłowy adres IP nie ma rekordu PTR, infrastruktura wysyłania jest identyfikowana jako \<source IP\>/24 (na przykład 192.168.100.100/24).
+  - Zweryfikowana domena DKIM.
 
 Oto kilka przykładów prawidłowych par domen do identyfikowania sfałszowanych nadawców:
 

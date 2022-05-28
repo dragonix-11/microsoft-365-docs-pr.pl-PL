@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak automatycznie tworzyć dokumenty i inną zawartość przy użyciu nowoczesnego szablonu w usłudze Microsoft SharePoint Syntex.
-ms.openlocfilehash: 83ef526504073ae739a82c599663a3d284aaf51c
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 2ec87a1255e7bd53e03e05c53d9cfbb8e6c77be1
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836260"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772495"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Tworzenie dokumentów przy użyciu zestawu zawartości w usłudze Microsoft SharePoint Syntex
 
@@ -33,7 +33,7 @@ W przypadku zestawu zawartości można użyć istniejącego dokumentu do utworze
 
 Wykonaj następujące kroki, aby utworzyć nowoczesny szablon.
 
-1. W bibliotece dokumentów programu Sharepoint wybierz pozycję **NowyUtwórz** >  nowoczesny szablon.
+1. W bibliotece dokumentów SharePoint wybierz pozycję **Nowy** > **utwórz nowoczesny szablon**.
 
    ![Zrzut ekranu przedstawiający bibliotekę dokumentów z wyróżnioną opcją Utwórz nowoczesny szablon.](../media/content-understanding/content-assembly-create-template-1.png)
 
@@ -42,7 +42,7 @@ Wykonaj następujące kroki, aby utworzyć nowoczesny szablon.
    ![Zrzut ekranu przedstawiający stronę przekazywania, na której wybierasz dokument.](../media/content-understanding/content-assembly-create-template-2.png)
 
    > [!NOTE]
-   > Obecnie można przekazywać tylko dokumenty programu Word (rozszerzenie .docx), aby tworzyć szablony. Upload dokumenty programu Word z lokalnego magazynu lub pulpitu.
+   > Obecnie można przekazywać tylko dokumenty programu Word (rozszerzenie .docx), aby tworzyć szablony. Przekaż dokumenty programu Word z lokalnego magazynu lub pulpitu.
 
 3. Po przekazaniu dokumentu dokument zostanie wyświetlony w studio szablonów, w którym można przekonwertować dokument na szablon.
 
@@ -132,15 +132,15 @@ Na panelu **Wszystkie symbole zastępcze** :
 
 Możesz utworzyć tyle symboli zastępczych, ile uważasz za konieczne. Po zakończeniu możesz zapisać szablon jako wersję roboczą lub opublikować szablon.
 
-   - **Zapisz wersję roboczą** — zapisuje szablon jako wersję roboczą i można uzyskać do niego dostęp później. Zapisane wersje robocze można wyświetlać, edytować lub publikować w sekcji **Szablony nowoczesne**, wybierając **menu NowyEdytuj**  >  nowy z biblioteki dokumentów.
+   - **Zapisz wersję roboczą** — zapisuje szablon jako wersję roboczą i można uzyskać do niego dostęp później. Zapisane wersje robocze można wyświetlać, edytować lub publikować w sekcji **Szablony nowoczesne** , wybierając pozycję **Nowe** > **menu Edytuj nowy** z biblioteki dokumentów.
  
-   - **Publikowanie** — publikuje szablon, który ma być używany przez innych użytkowników w organizacji do tworzenia dokumentów. Możesz wyświetlać, edytować lub cofać publikowanie *opublikowanych* szablonów w sekcji **Nowoczesne szablony**, wybierając **menu NowyEdytuj**  >  nowy z biblioteki dokumentów. 
+   - **Publikowanie** — publikuje szablon, który ma być używany przez innych użytkowników w organizacji do tworzenia dokumentów. Możesz wyświetlać, edytować lub cofać publikowanie *opublikowanych* szablonów w sekcji **Nowoczesne szablony** , wybierając pozycję **Nowe** > **menu Edytuj nowy** z biblioteki dokumentów. 
 
 ## <a name="edit-a-modern-template"></a>Edytowanie nowoczesnego szablonu
 
 Jeśli chcesz edytować istniejący szablon lub usunąć lub cofnąć publikowanie szablonu, wykonaj następujące kroki.
 
-1. W bibliotece dokumentów programu Sharepoint wybierz pozycję **NowyEdytuj** >  nowe menu.
+1. W bibliotece dokumentów SharePoint wybierz pozycję **Nowy Edytuj** > **nowe menu**.
 
    ![Zrzut ekranu przedstawiający bibliotekę dokumentów z wyróżnioną opcją Edytuj nowe menu.](../media/content-understanding/content-assembly-edit-template-1.png)
 
@@ -162,7 +162,7 @@ Jeśli chcesz edytować istniejący szablon lub usunąć lub cofnąć publikowan
 
 Możesz użyć *opublikowanego* nowoczesnego szablonu, aby szybko tworzyć podobne dokumenty bez konieczności uruchamiania od podstaw. Aby utworzyć dokument przy użyciu opublikowanego szablonu, wykonaj następujące kroki:
 
-1. W bibliotece dokumentów programu Sharepoint wybierz pozycję **Nowy**, a następnie wybierz nowoczesny szablon, którego chcesz użyć.
+1. W bibliotece dokumentów SharePoint wybierz pozycję **Nowy**, a następnie wybierz nowoczesny szablon, którego chcesz użyć.
 
    ![Zrzut ekranu przedstawiający bibliotekę dokumentów z nowoczesnymi opcjami szablonu w menu Nowy.](../media/content-understanding/content-assembly-create-document-1.png)
 

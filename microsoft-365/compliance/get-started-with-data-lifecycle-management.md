@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Chcesz rozpocząć zarządzanie danymi organizacji, ale nie wiesz, od czego zacząć? Przeczytaj niektóre wskazówki nakazowe, aby rozpocząć pracę.
-ms.openlocfilehash: 0d9545a04b94b75ee1b9429d7db75b39e90b06ef
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 95ce0286d5ec45b5dabcbd2447bd52821f547caf
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286851"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772735"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Wprowadzenie do zarządzania cyklem życia danych
 
@@ -32,7 +32,7 @@ ms.locfileid: "65286851"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Chcesz rozpocząć zarządzanie danymi organizacji, zachowując zawartość, którą musisz przechowywać, i usuwając zawartość, której nie masz? Aby rozpocząć pracę, skorzystaj z poniższych wskazówek dotyczących zarządzania cyklem życia danych usługi Microsoft Purview (dawniej Microsoft Information Governance):
+Chcesz rozpocząć zarządzanie danymi organizacji, zachowując zawartość, którą musisz przechowywać, i usuwając zawartość, której nie masz? Aby rozpocząć pracę, skorzystaj z poniższych wskazówek dotyczących zarządzanie cyklem życia danych Microsoft Purview (dawniej Microsoft Information Governance):
 
 1. **Dowiedz się, jak działa przechowywanie i usuwanie** w Microsoft 365, a następnie zidentyfikuj obciążenia, które wymagają zasad przechowywania i czy musisz utworzyć etykiety przechowywania dla wyjątków: [Dowiedz się więcej o przechowywaniu](retention.md)
     
@@ -43,7 +43,7 @@ Chcesz rozpocząć zarządzanie danymi organizacji, zachowując zawartość, kt�
     
     W razie potrzeby [utwórz i zastosuj etykiety przechowywania dla wyjątków](create-retention-labels-information-governance.md).
 
-3. **Włącz archiwizowanie skrzynek pocztowych** , aby zapewnić użytkownikom dodatkowe miejsce do magazynowania skrzynki pocztowej: [Włącz archiwalne skrzynki pocztowe w portalu zgodności usługi Microsoft Purview](enable-archive-mailboxes.md)
+3. **Włącz archiwizowanie skrzynek pocztowych**, aby zapewnić użytkownikom dodatkowe miejsce do magazynowania skrzynki pocztowej: [Włącz archiwalne skrzynki pocztowe w portal zgodności Microsoft Purview](enable-archive-mailboxes.md)
     
     Jeśli jest to wymagane do obsługi archiwalnych skrzynek pocztowych:
     
@@ -59,7 +59,7 @@ Chcesz rozpocząć zarządzanie danymi organizacji, zachowując zawartość, kt�
 
 Wiele różnych subskrypcji obsługuje możliwości zarządzania cyklem życia danych.
 
-Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z funkcji usługi Microsoft Purview, zobacz [wskazówki dotyczące licencjonowania Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Aby zapoznać się z funkcjami wymienionymi na tej stronie, zobacz sekcję [Zarządzanie cyklem życia danych usługi Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) i powiązane [pobieranie plików PDF](https://go.microsoft.com/fwlink/?linkid=2139145) w celu uzyskania wymagań dotyczących licencjonowania na poziomie funkcji.
+Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z funkcji Microsoft Purview, zobacz [wskazówki dotyczące licencjonowania Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Aby zapoznać się z funkcjami wymienionymi na tej stronie, zobacz sekcję [zarządzanie cyklem życia danych Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) i powiązane [pobieranie plików PDF](https://go.microsoft.com/fwlink/?linkid=2139145), aby zapoznać się z wymaganiami dotyczącymi licencjonowania na poziomie funkcji.
 
 ## <a name="permissions"></a>Uprawnienia
 
@@ -69,11 +69,11 @@ W przypadku uprawnień do zarządzania skrzynkami pocztowymi na potrzeby archiwi
 
 ### <a name="permissions-for-retention-policies-and-retention-labels"></a>Uprawnienia do zasad przechowywania i etykiet przechowywania
 
-Członkowie zespołu ds. zgodności, którzy będą tworzyć zasady przechowywania i etykiety przechowywania oraz zarządzać nimi, potrzebują uprawnień do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>. Domyślnie administrator dzierżawy (administrator globalny) ma dostęp do tej lokalizacji i może udzielić urzędnikom zgodności i innym osobom dostępu bez udzielania im wszystkich uprawnień administratora dzierżawy. Aby udzielić uprawnień dla tej ograniczonej administracji, zalecamy dodanie użytkowników do grupy ról administratora **administratora zgodności** .
+Członkowie zespołu ds. zgodności, którzy będą tworzyć zasady przechowywania i etykiety przechowywania oraz zarządzać nimi, potrzebują uprawnień do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>. Domyślnie administrator dzierżawy (administrator globalny) ma dostęp do tej lokalizacji i może udzielić urzędnikom zgodności i innym osobom dostępu bez udzielania im wszystkich uprawnień administratora dzierżawy. Aby udzielić uprawnień dla tej ograniczonej administracji, zalecamy dodanie użytkowników do grupy ról administratora **administratora zgodności** .
 
 Alternatywnie do korzystania z tej roli domyślnej można utworzyć nową grupę ról i dodać rolę **Zarządzanie przechowywaniem** do tej grupy. W przypadku roli tylko do odczytu użyj funkcji **Zarządzania przechowywaniem tylko do wyświetlania**. 
 
-Aby uzyskać instrukcje dotyczące dodawania użytkowników do ról domyślnych lub tworzenia własnych grup ról, zobacz [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md).
+Aby uzyskać instrukcje dodawania użytkowników do ról domyślnych lub tworzenia własnych grup ról, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 Te uprawnienia są wymagane tylko do tworzenia, konfigurowania i stosowania zasad przechowywania oraz etykiet przechowywania. Osoba konfigurująca te zasady i etykiety nie wymaga dostępu do zawartości.
 
@@ -84,9 +84,9 @@ Poniższa tabela ułatwia mapowanie wymagań biznesowych na najbardziej typowe s
 |Chcę...|Dokumentacji|
 |----------------|---------------|
 |Wydajne przechowywanie lub usuwanie danych dla usług Microsoft 365: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Grupy Microsoft 365 <br />- Teams <br />- Yammer <br />- Skype dla firm |[Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md)|
-|Zapewnianie użytkownikom dodatkowego magazynu skrzynek pocztowych |[Włączanie archiwalnych skrzynek pocztowych w portalu zgodności usługi Microsoft Purview](enable-archive-mailboxes.md)|
+|Zapewnianie użytkownikom dodatkowego magazynu skrzynek pocztowych |[Włączanie archiwalnych skrzynek pocztowych w portal zgodności Microsoft Purview](enable-archive-mailboxes.md)|
 |Zachowywanie danych skrzynki pocztowej po opuszczeniu organizacji przez pracowników |[Twórz nieaktywne skrzynki pocztowe i zarządzaj nimi](create-and-manage-inactive-mailboxes.md)|
-|Upload dane skrzynki pocztowej z plików PST |[Użyj przekazywania sieciowego w celu importu plików PST](use-network-upload-to-import-pst-files.md)|
+|Przekazywanie danych skrzynki pocztowej z plików PST |[Użyj przekazywania sieciowego w celu importu plików PST](use-network-upload-to-import-pst-files.md)|
 
 
 Jeśli masz scenariusz, który wymaga zarządzania danymi poszczególnych elementów, zobacz [typowe scenariusze zarządzania rekordami](get-started-with-records-management.md#common-scenarios). 
@@ -95,7 +95,7 @@ Jeśli masz scenariusz, który wymaga zarządzania danymi poszczególnych elemen
 
 Zapoznaj się z następującą sekcją, aby uzyskać informacje na temat dokumentacji użytkownika końcowego, aby obsługiwać przechowywanie Microsoft 365.
 
-Funkcje zarządzania cyklem życia danych, które obsługują zarządzanie skrzynkami pocztowymi (archiwizowanie, nieaktywne skrzynki pocztowe i importowanie) zwykle nie wymagają dokumentacji użytkownika końcowego.
+Możliwości zarządzania cyklem życia danych dla nieaktywnych skrzynek pocztowych i importowania plików PST nie wymagają dokumentacji użytkownika końcowego, ponieważ są to tylko operacje administratora. Aby ułatwić użytkownikom zrozumienie ich archiwalnych skrzynek pocztowych i interakcję z nimi w Outlook po włączeniu tej funkcji, zobacz [Zarządzanie magazynem poczty e-mail przy użyciu skrzynek pocztowych archiwum online](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ### <a name="end-user-documentation-for-retention-and-deletion"></a>Dokumentacja użytkownika końcowego dotycząca przechowywania i usuwania
 

@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak włączyć lub wyłączyć archiwalne skrzynki pocztowe, aby obsługiwać wymagania dotyczące przechowywania komunikatów, zbierania elektronicznych materiałów dowodowych i przechowywania wiadomości w organizacji.
-ms.openlocfilehash: ba5fdf252fe379798b1126d59affb12bb3725306
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: f95da36b48389bba2bd640825071dbff5c6ddb3d
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647242"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772429"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Włączanie archiwalnych skrzynek pocztowych w portal zgodności Microsoft Purview
 
@@ -48,7 +48,7 @@ Jeśli nie widzisz strony **Archiwum** w portal zgodności Microsoft Purview, po
 
 1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> i zaloguj się.
 
-2. W lewym okienku portalu zgodności wybierz pozycję **Zarządzanie cyklem** >  życia **danychArchiwne**.
+2. W lewym okienku portalu zgodności wybierz pozycję **Archiwum zarządzania cyklem** >  życia danych.
 
    Na stronie **Archiwum** kolumna  **Skrzynka pocztowa Archiwum** określa, czy skrzynka pocztowa archiwum jest włączona, czy wyłączona dla każdego użytkownika.
 
@@ -124,6 +124,10 @@ W Centrum administracyjne platformy Microsoft 365 zostanie otwarta strona wysuwa
 
 > [!NOTE]
 > Aby użyć sprawdzania diagnostycznego skrzynki pocztowej archiwum, musisz być administratorem globalnym Microsoft 365. Ponadto ta funkcja nie jest dostępna w chmurach Microsoft 365 government, Microsoft 365 obsługiwanych przez firmę 21Vianet lub Microsoft 365 Niemczech.
+
+## <a name="instructions-for-end-users"></a>Instrukcje dla użytkowników końcowych
+
+Wyjaśnij użytkownikom, jak działa ich archiwum skrzynki pocztowej i jak mogą z nią korzystać w Outlook na Windows, macOS i w Internecie. Najbardziej efektywna dokumentacja zostanie dostosowana dla Twojej organizacji. Aby uzyskać podstawowe instrukcje, zobacz [Zarządzanie magazynem poczty e-mail przy użyciu skrzynek pocztowych archiwum online](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ## <a name="next-steps"></a>Następne kroki
 

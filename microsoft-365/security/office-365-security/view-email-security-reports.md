@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e57b797ab0b5d5eee90315ae9c3459fcba0a02c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 614cdd62e5884eff0f91b1c0d1f9946a1c8ce891
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621684"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772309"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -392,7 +392,7 @@ Na stronie **Wykrywanie fałszowania** ikona ![Utwórz harmonogram.](../../media
 
 ## <a name="submissions-report"></a>Raport dotyczący przesyłania
 
-Raport **Przesłane** zawiera informacje o elementach, które administratorzy zgłosili firmie Microsoft do analizy. Aby uzyskać więcej informacji, zobacz [Przesyłanie przez administratora w celu przesyłania do firmy Microsoft podejrzanych wiadomości spamowych, phish, adresów URL i plików](admin-submission.md).
+Raport **Przesłane** zawiera informacje o elementach, które administratorzy zgłosili firmie Microsoft do analizy. Aby uzyskać więcej informacji, zobacz [Use Administracja Submission to submited suspected spam, phish, URL, and files to Microsoft (Przesyłanie za pomocą Administracja przesyłania do firmy Microsoft podejrzanych wiadomości spamowych, phish, adresów URL i plików](admin-submission.md)).
 
 Aby wyświetlić raport w portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>, przejdź do pozycji **Raporty Wiadomości** \> **e-mail & współpracy** \> **Wiadomości e-mail & raporty współpracy**. Na stronie **Raporty współpracy & poczty e-mail** znajdź pozycję **Przesłane** , a następnie kliknij pozycję **Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz plik <https://security.microsoft.com/adminSubmissionReport>. Aby przejść do [przesyłania przez administratora w portalu Microsoft 365 Defender](admin-submission.md), kliknij pozycję **Przejdź do pozycji Przesłane**. Administratorzy będą mogli wyświetlać raport przez ostatnie 30 dni.
 
@@ -619,7 +619,7 @@ W widoku **Wyświetl dane według złośliwego oprogramowania poczty e-mail \>**
 - Reputacja <sup>\*</sup>**detonacji plików**: Cała reputacja złośliwych plików generowana przez detonacje Ochrona usługi Office 365 w usłudze Defender.
 - **Reputacja pliku**
 - Aparat <sup>\*</sup>**chroniący przed złośliwym oprogramowaniem**: wykrywanie z aparatów chroniących przed złośliwym oprogramowaniem.
-- **Blok typu pliku zasad ochrony przed złośliwym oprogramowaniem**: są to wiadomości e-mail odfiltrowane ze względu na typ złośliwego pliku zidentyfikowanego w wiadomości.
+- **Blok typu pliku zasad ochrony przed złośliwym oprogramowaniem: wiadomości e-mail** są automatycznie filtrowane ze względu na typ pliku zidentyfikowany w wiadomości (typowe filtrowanie załączników).
 - **Złośliwa reputacja adresu URL**<sup>\*</sup>
 - **Detonacja adresu URL**<sup>\*</sup>
 - **Reputacja detonacji adresu URL**<sup>\*</sup>
@@ -660,7 +660,7 @@ Jeśli klikniesz pozycję **Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj**, **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie **Stan ochronyZajmowanie** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Tworzenie harmonogramu](#schedule-report)**, ![ikona raportu żądania.](../../media/m365-cc-sc-download-icon.png) **[Żądanie raportu](#request-report)** i ![ikona Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przyciski eksportu](#export-report)** są dostępne.
+Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Tworzenie harmonogramu](#schedule-report)**, ![ikona raportu żądania.](../../media/m365-cc-sc-download-icon.png) **[Żądanie raportu](#request-report)** i ![ikona Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przyciski eksportu](#export-report)** są dostępne.
 
 ### <a name="chart-breakdown-by-policy-type"></a>Podział wykresu według typu zasad
 

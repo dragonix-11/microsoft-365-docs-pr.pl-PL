@@ -37,12 +37,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Obsługa serwera SharePoint Server 2007 zakończyła się w październiku 2017 r. W tym artykule przedstawiono opcje uaktualniania, migracji i pomocy technicznej.
-ms.openlocfilehash: 260949f73fbb4530436484e70ca39d4e2f99bbcf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7f98e3652e2836a0c4193efbe33147fd09ced01e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098235"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65771958"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>plan zakończenia wsparcia dla serwera SharePoint Server 2007
 
@@ -119,7 +119,7 @@ Nie można migrować bezpośrednio z SharePoint 2007 r. do usługi SharePoint On
 |**Online pro**|**Konfiguracja online**|
 |:-----|:-----|
 |Firma Microsoft dostarcza sprzęt SPO i całą administrację sprzętem.  <br/> |Dostępne funkcje mogą się różnić w zależności od lokalnego serwera SharePoint i spo.  <br/> |
-|Jesteś administratorem programu Sharepoint lub administratorem globalnym subskrypcji i możesz przypisywać administratorów do witryn SPO.  <br/> |Niektóre akcje dostępne dla administratora farmy w środowisku lokalnym SharePoint Server nie istnieją lub nie muszą być uwzględnione w roli administratora SharePoint w Microsoft 365.  <br/> |
+|Jesteś administratorem SharePoint lub administratorem globalnym subskrypcji i możesz przypisywać administratorów do witryn SPO.  <br/> |Niektóre akcje dostępne dla administratora farmy w środowisku lokalnym SharePoint Server nie istnieją lub nie muszą być uwzględnione w roli administratora SharePoint w Microsoft 365.  <br/> |
 |Firma Microsoft stosuje poprawki, poprawki i aktualizacje bazowego sprzętu i oprogramowania. <br/> |Ponieważ nie ma dostępu do podstawowego systemu plików w usłudze, dostosowywanie jest ograniczone.  <br/> |
 |Firma Microsoft publikuje [umowy dotyczące poziomu usług](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) i szybko przechodzi do rozwiązywania zdarzeń na poziomie usługi. <br/> |Kopie zapasowe i przywracanie oraz inne opcje odzyskiwania są zautomatyzowane przez usługę w usłudze SharePoint Online. Kopie zapasowe są zastępowane, jeśli nie są używane. <br/> |
 |Testy zabezpieczeń i dostrajanie wydajności serwera są przeprowadzane na bieżąco w usłudze przez firmę Microsoft. <br/> |Zmiany interfejsu użytkownika i innych funkcji SharePoint są instalowane przez usługę i mogą wymagać włączania lub wyłączania. <br/> |

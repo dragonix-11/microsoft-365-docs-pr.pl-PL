@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f827046dc9a103e73eb6fb79ba161e523e2b2690
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 66253ed6deab0f41cac3a4ff732201e20d100e98
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649358"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772002"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Zarządzanie sfałszowanymi nadawcami przy użyciu zasad analizy fałszowania i fałszowania analizy w ramach EOP
 
@@ -98,7 +98,7 @@ Aby skonfigurować dozwolonych i zablokowanych nadawców w analizie fałszowania
    ```
 
 2. Edytuj plik CSV, aby dodać lub zmodyfikować następujące wartości:
-   - **Nadawca** (domena w rekordzie PTR serwera źródłowego lub adres IP/24)
+   - **Nadawca** (domena w rekordzie PTR serwera źródłowego, adres IP/24 lub zweryfikowana domena DKIM)
    - **SpoofedUser**: jedna z następujących wartości:
      - Wewnętrzny adres e-mail użytkownika.
      - Domena poczty e-mail użytkownika zewnętrznego.

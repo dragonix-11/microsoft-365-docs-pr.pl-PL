@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Znajdź informacje i zasoby do uaktualnienia z SharePoint 2010 i SharePoint Server 2010. Pomoc techniczna dla obu kończy się 13 kwietnia 2021 r.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be25dd1260c378146d292e6487329065a3020ac8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4ed6cf873442d4fd48cdbf9562e6067fd238384e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077398"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772757"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Uaktualnianie z SharePoint 2010 r.
 
@@ -112,7 +112,7 @@ W przypadku uaktualnienia do wersji SharePoint Server 2013 lub SharePoint Server
 |zalety usługi SharePoint Online|SharePoint w trybie online|
 |---|---|
 |Firma Microsoft dostarcza sprzęt SPO i całą administrację sprzętem.|Dostępne funkcje mogą się różnić w zależności od lokalnego serwera SharePoint i spo.|
-|Jesteś administratorem programu Sharepoint lub administratorem globalnym subskrypcji i możesz przypisywać administratorów do witryn SPO.|Niektóre akcje dostępne dla administratora farmy w środowisku lokalnym SharePoint Server nie istnieją (lub nie są konieczne) w roli administratora SharePoint w Microsoft 365. Jednak SharePoint Administracja, Administracja zbiorem witryn i Własność witryny są lokalne dla Organizacji.|
+|Jesteś administratorem SharePoint lub administratorem globalnym subskrypcji i możesz przypisywać administratorów do witryn SPO.|Niektóre akcje dostępne dla administratora farmy w środowisku lokalnym SharePoint Server nie istnieją (lub nie są konieczne) w roli administratora SharePoint w Microsoft 365. Jednak SharePoint Administracja, Administracja zbiorem witryn i Własność witryny są lokalne dla Organizacji.|
 |Firma Microsoft stosuje poprawki, poprawki i aktualizacje bazowego sprzętu i oprogramowania, w tym serwerów SQL, na których działa SharePoint Online.|Ponieważ nie ma dostępu do podstawowego systemu plików w usłudze, dostosowywanie jest ograniczone.|
 |Firma Microsoft publikuje [umowy dotyczące poziomu usług](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) i szybko przechodzi do rozwiązywania zdarzeń na poziomie usługi.|Kopie zapasowe i przywracanie oraz inne opcje odzyskiwania są zautomatyzowane przez usługę w usłudze SharePoint Online. Kopie zapasowe są zastępowane, jeśli nie są używane.|
 |Testy zabezpieczeń i dostrajanie wydajności serwera są stale przeprowadzane w usłudze przez firmę Microsoft.|Zmiany interfejsu użytkownika i innych funkcji SharePoint są instalowane przez usługę i mogą wymagać włączania lub wyłączania.|
@@ -265,7 +265,7 @@ Ten plakat przedstawia różne ścieżki, które można wykonać, aby uniknąć 
 
 Możesz również [pobrać](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) ten plakat i wydrukować go w formacie literowym, prawnym lub tabloidowym (11 x 17).
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 [Zasoby ułatwiające uaktualnienie z serwerów i klientów Office 2007 lub 2010](upgrade-from-office-2010-servers-and-products.md)
 

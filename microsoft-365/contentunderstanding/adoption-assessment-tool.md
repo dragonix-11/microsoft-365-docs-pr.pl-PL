@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Dowiedz się, jak używać narzędzia do oceny wdrażania, aby zobaczyć, jak twoja organizacja może korzystać z SharePoint Syntex.
-ms.openlocfilehash: 30c3426962a88d582af9d5cadac43ee0eb85bb50
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: dbe9ebe47526f15216e4366bf98f086d86bed5e4
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393711"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772716"
 ---
 # <a name="discover-opportunities-in-sharepoint-syntex-by-using-the-microsoft-365-assessment-tool"></a>Odnajdywanie możliwości w SharePoint Syntex przy użyciu narzędzia Microsoft 365 Assessment
 
@@ -44,7 +44,7 @@ Raport oceny zawiera następujące informacje:
 
 - **Biblioteki z niestandardowymi typami zawartości** — zidentyfikuj biblioteki przy użyciu niestandardowych typów zawartości, w których można używać modeli SharePoint Syntex do automatycznego kategoryzowania plików. 
 
-- **Użycie typu zawartości** — zidentyfikuj wzorce użycia typu zawartości, aby kierować modele syntex programu Sharepoint, w których będą miały maksymalną korzyść. 
+- **Użycie typu zawartości** — zidentyfikuj wzorce użycia typu zawartości, aby kierować SharePoint Syntex modele, w których będą miały maksymalną korzyść. 
 
 - **Biblioteki z etykietami przechowywania** — zidentyfikuj biblioteki, w których są używane etykiety przechowywania, w których można zautomatyzować i poprawić spójność SharePoint Syntex. 
 

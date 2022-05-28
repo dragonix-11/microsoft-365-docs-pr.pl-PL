@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zapoznaj się z ustawieniami, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i pozbyć się tego, czego nie chcesz.
-ms.openlocfilehash: ec7743c2e72016c606decb1346bdd558e40ae412
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: d4bb28255a809737b44324fdcccfc456c6a73dfb
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302133"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772659"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
@@ -85,7 +85,7 @@ Przed skonfigurowaniem zakresu adaptacyjnego użyj poprzedniej sekcji, aby ziden
 
 W przypadku SharePoint lokacji może być wymagana dodatkowa konfiguracja SharePoint, jeśli planujesz używać [niestandardowych właściwości lokacji](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
     
     - Jeśli używasz rozwiązania do zarządzania rekordami:
         - **Rozwiązania** >  **Zarządzanie rekordami** >  **Karta Zakresy adaptacyjne** > + **Tworzenie zakresu**
@@ -445,9 +445,9 @@ Dzięki tym połączonym ustawieniom użytkownicy będą mogli usunąć element 
 
 Opcja ponownego etykietowania na końcu okresu przechowywania ma dwie ścieżki konfiguracji podczas tworzenia etykiety przechowywania:
 
-- Jeśli musisz początkowo zachować zawartość z etykietą podstawową (najbardziej typową): na stronie **Definiowanie ustawień etykiety** wybierz pozycję **Zachowaj elementy na czas nieokreślony lub dla określonego okresu** i określ okres przechowywania. Następnie na stronie **Wybierz, co się stanie po okresie przechowywania**, wybierz pozycję Zmień **etykietęUtwórz** >  etykietę.
+- Jeśli musisz początkowo zachować zawartość z etykietą podstawową (najbardziej typową): na stronie **Definiowanie ustawień etykiety** wybierz pozycję **Zachowaj elementy na czas nieokreślony lub dla określonego okresu** i określ okres przechowywania. Następnie na stronie **Wybierz, co się stanie po okresie przechowywania** wybierz pozycję **Zmień etykietę** > **Wybierz etykietę zastępczą**.
 
-- Jeśli nie musisz początkowo zachowywać zawartości z etykietą podstawową: na stronie **Definiowanie ustawień etykiety** wybierz pozycję **Wymuszaj akcje po określonym okresie**, określ okres przechowywania, a następnie wybierz pozycję **Zmień** **etykietęChoose** >  etykietę.
+- Jeśli nie musisz początkowo zachowywać zawartości z etykietą podstawową: na stronie **Definiowanie ustawień etykiety** wybierz pozycję **Wymuszaj akcje po określonym okresie**, określ okres przechowywania, a następnie wybierz pozycję **Zmień etykietę** > **Wybierz etykietę zastępczą**.
 
 W obu przypadkach etykieta zastępcza musi już zostać utworzona, ale nie musi być uwzględniona w istniejących zasadach etykiet.
 
@@ -491,7 +491,7 @@ Niektórych ustawień nie można zmienić po utworzeniu i zapisaniu zasad przech
 
 Jeśli edytujesz zasady przechowywania, a elementy są już objęte oryginalnymi ustawieniami w zasadach przechowywania, zaktualizowane ustawienia zostaną automatycznie zastosowane do tych elementów oprócz nowo zidentyfikowanych elementów.
 
-Zazwyczaj ta aktualizacja jest dość szybka, ale może potrwać kilka dni. Po zakończeniu replikacji zasad w Microsoft 365 lokalizacjach stan zasad przechowywania w portalu zgodności usługi Microsoft Purview zmieni się z **Włączone (Oczekujące)** **na Włączone (Powodzenie)**.
+Zazwyczaj ta aktualizacja jest dość szybka, ale może potrwać kilka dni. Po zakończeniu replikacji zasad w Microsoft 365 lokalizacjach stan zasad przechowywania zostanie wyświetlony w portal zgodności Microsoft Purview zmieni się z **Włączone (Oczekujące)** **na Włączone (Powodzenie)**.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Blokowanie zasad w celu zapobiegania zmianom
 

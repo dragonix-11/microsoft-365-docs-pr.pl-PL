@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj etykiet poufności, aby chronić zawartość w witrynach SharePoint i Microsoft Teams oraz w grupach Microsoft 365.
-ms.openlocfilehash: 56b6d53d56c8f9fb16e900271b8d6a4c152f6440
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 125be09f9d3d9a519e1985a37c0880e3f2465245
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438010"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772688"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Używanie etykiet poufności do ochrony zawartości w witrynach Microsoft Teams, Microsoft 365 i SharePoint
 
@@ -189,7 +189,7 @@ Aby uzyskać więcej informacji i instrukcji, zobacz [Używanie etykiet poufnoś
 > [!NOTE]
 > To ustawienie etykiety jest obecnie dostępne w wersji zapoznawczej.
 
-Innym zaawansowanym ustawieniem programu PowerShell, które można skonfigurować w celu zastosowania etykiety poufności do witryny SharePoint, jest **MembersCanShare**. To ustawienie jest równoważną konfiguracją, którą można ustawić z poziomu centrum administracyjnego SharePoint > **uprawnienia witrynyUdziel** >  **się w witrynieUżytkuj** > **, jak członkowie mogą udostępniać** >  **uprawnienia do udostępniania**. 
+Innym zaawansowanym ustawieniem programu PowerShell, które można skonfigurować w celu zastosowania etykiety poufności do witryny SharePoint, jest **MembersCanShare**. To ustawienie jest równoważną konfiguracją, którą można ustawić z poziomu centrum administracyjnego SharePoint > **uprawnienia do** >  udostępniania **witryn** > **— Zmiana sposobu udostępniania** > **uprawnień udostępniania** przez członków. 
 
 Te trzy opcje są wyświetlane z równoważnymi wartościami dla ustawienia zaawansowanego programu PowerShell **MembersCanShare**:
 
@@ -361,7 +361,7 @@ W przypadku korzystania z centrów administracyjnych, które obsługują etykiet
 
 Następujące aplikacje i usługi obsługują etykiety poufności skonfigurowane dla witryn i ustawień grupy:
 
-- Centra administracyjne:
+- centra Administracja:
 
   - centrum administracyjne programu SharePoint
   - centrum administracyjne Teams
@@ -379,7 +379,7 @@ Następujące aplikacje i usługi obsługują etykiety poufności skonfigurowane
 
 Następujące aplikacje i usługi nie obsługują obecnie etykiet poufności skonfigurowanych dla witryn i ustawień grupy:
 
-- Centra administracyjne:
+- centra Administracja:
 
   - centrum administracyjne Exchange
 
@@ -389,6 +389,7 @@ Następujące aplikacje i usługi nie obsługują obecnie etykiet poufności sko
   - Yammer
   - Project
   - Power BI
+  - portal Moje aplikacje
 
 ## <a name="classic-azure-ad-group-classification"></a>Klasyczna klasyfikacja grup Azure AD
 

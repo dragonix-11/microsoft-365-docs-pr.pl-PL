@@ -20,16 +20,16 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej na temat analizy fałszowania w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c147396ff47f924d7dd4b2ebd3a0cac106de94b2
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: fc09bb008586b26649e31f409fa3be8114c6d2b6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144734"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772111"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Fałszowanie szczegółowych informacji wywiadowczych w ramach EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -115,6 +115,7 @@ Na stronie **Szczegółowe informacje o fałszowaniu analizy** wyświetlanej po 
 - **Wysyłanie infrastruktury**: znana również jako _infrastruktura_. Infrastruktura wysyłania będzie jedną z następujących wartości:
   - Domena znaleziona w odwrotnym wyszukiwaniu DNS (rekord PTR) adresu IP źródłowego serwera poczty e-mail.
   - Jeśli źródłowy adres IP nie ma rekordu PTR, infrastruktura wysyłania jest identyfikowana jako \<source IP\>/24 (na przykład 192.168.100.100/24).
+  - Zweryfikowana domena DKIM.
 - **Liczba komunikatów**: liczba komunikatów z kombinacji sfałszowanej domeny _i_ infrastruktury wysyłania do organizacji w ciągu ostatnich 7 dni.
 - **Ostatnio widziano**: ostatnia data odebrania komunikatu z infrastruktury wysyłania zawierającej sfałszowaną domenę.
 - **Typ fałszowania**: Jedna z następujących wartości:
@@ -147,7 +148,7 @@ Po wybraniu wpisu z listy zostanie wyświetlony wysuwany szczegół zawierający
 
 ### <a name="about-allowed-spoofed-senders"></a>Informacje o dozwolonych sfałszowanych nadawcach
 
-Dozwolony sfałszowany nadawca w analizie analizy fałszowania lub zablokowany sfałszowany nadawca, który został ręcznie zmieniony na **Zezwalaj na fałszowanie** , zezwala tylko na komunikaty z kombinacji sfałszowanej domeny *i* infrastruktury wysyłania. Nie zezwala na wysyłanie wiadomości e-mail z sfałszowanej domeny z dowolnego źródła ani nie zezwala na wysyłanie wiadomości e-mail z infrastruktury wysyłania dla dowolnej domeny.
+Dozwolony sfałszowany nadawca w analizie analizy fałszowania lub zablokowany sfałszowany nadawca, który został ręcznie zmieniony na **Zezwalaj na fałszowanie** , zezwala tylko na komunikaty z kombinacji sfałszowanej domeny _i_ infrastruktury wysyłania. Nie zezwala na wysyłanie wiadomości e-mail z sfałszowanej domeny z dowolnego źródła ani nie zezwala na wysyłanie wiadomości e-mail z infrastruktury wysyłania dla dowolnej domeny.
 
 Na przykład następujący sfałszowany nadawca może podszywać się pod:
 

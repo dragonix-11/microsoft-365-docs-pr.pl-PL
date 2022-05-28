@@ -19,16 +19,16 @@ ms.localizationpriority: high
 description: Administratorzy mogą dowiedzieć się, jak usługa EOP używa uwierzytelniania poczty e-mail (SPF, DKIM i DMARC), aby zapobiec fałszowaniu, wyłudzaniu informacji i spamowi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5368be5bbecde45d341a737a283a7461a2302dc4
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 2b0a1f1bec76a8dd22bc04502ea7ca09f2c7af66
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973382"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772779"
 ---
 # <a name="email-authentication-in-eop"></a>Uwierzytelnianie za pomocą poczty e-mail w ramach EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -166,7 +166,11 @@ Po rozpoczęciu pracy z rezerwowymi zasadami `?all`SPF programu można stopniowo
 
 Możesz również użyć [analizy fałszowania](learn-about-spoof-intelligence.md) i [listy dozwolonych/zablokowanych dzierżaw](tenant-allow-block-list.md) , aby umożliwić nadawcom przesyłanie nieuwierzytelnionych komunikatów do organizacji.
 
-W przypadku domen zewnętrznych sfałszowany użytkownik jest domeną w polu Adres od, natomiast infrastruktura wysyłania to źródłowy adres IP (podzielony na zakresy CIDR /24) lub domena organizacyjna rekordu odwrotnego dns (PTR).
+W przypadku domen zewnętrznych sfałszowany użytkownik jest domeną w polu Adres od, a infrastruktura wysyłania jest jedną z następujących wartości:
+
+- Źródłowy adres IP (podzielony na zakresy CIDR /24)
+- Domena organizacyjna odwrotnego rekordu DNS (PTR).
+- Zweryfikowana domena DKIM.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Tworzenie wpisu zezwalania dla pary nadawcy/odbiorcy
 
