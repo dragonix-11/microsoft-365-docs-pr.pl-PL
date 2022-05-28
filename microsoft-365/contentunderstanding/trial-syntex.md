@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Dowiedz się, jak planować, tworzyć i uruchamiać pilotażowy program próbny dla SharePoint Syntex w organizacji.
-ms.openlocfilehash: ccbf1208d5c655171825b5a96f3a78b25ea3bbf2
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 5081c3877e005d1e014ad7520beeffd657a31f67
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754449"
+ms.locfileid: "65759807"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Uruchamianie wersji próbnej usługi Microsoft SharePoint Syntex
 
@@ -88,7 +88,7 @@ Po aktywowaniu wersji próbnej można tworzyć modele i przetwarzać pliki. Zoba
 
 ## <a name="during-a-trial"></a>Podczas okresu próbnego
 
-Okresy próbne są ograniczone, dlatego najlepiej skupić się początkowo na tym, czy modele SharePoint Syntex mogą klasyfikować dokumenty i wyodrębniać metadane dla zdefiniowanych przypadków użycia. Po zakończeniu okresu próbnego możesz ocenić, w jaki sposób można wykorzystać metadane.
+Okresy próbne są ograniczone, dlatego najlepiej skupić się początkowo na tym, czy modele SharePoint Syntex mogą klasyfikować dokumenty i wyodrębniać metadane dla zdefiniowanych przypadków użycia. Po zakończeniu okresu próbnego można ocenić, w jaki sposób można używać metadanych.
 
 ## <a name="after-a-trial"></a>Po zakończeniu okresu próbnego
 
@@ -113,3 +113,5 @@ Jeśli licencje nie są kupowane po wersji próbnej:
 ## <a name="see-also"></a>Zobacz też
 
 [Wprowadzenie wdrażanie SharePoint Syntex](adoption-getstarted.md)
+
+[Scenariusze i przypadki użycia dla SharePoint Syntex](adoption-scenarios.md)
