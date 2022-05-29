@@ -156,16 +156,18 @@
           items:
             - name: Uwierzytelnianie poczty e-mail
               href: email-validation-and-authentication.md
+            - name: Konfigurowanie platformy SPF w celu zapobiegania spoofingowi
+              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            - name: 'Jak platforma Microsoft 365 używa platformy SPF, aby zapobiec spoofingowi'
+              href: how-office-365-uses-spf-to-prevent-spoofing.md
             - name: Sprawdzanie poprawności wychodzących wiadomości e-mail przy użyciu funkcji DKIM
               href: use-dkim-to-validate-outbound-email.md
             - name: Obsługa weryfikacji podpisanych komunikatów DKIM
               href: support-for-validation-of-dkim-signed-messages.md
             - name: Sprawdzanie poprawności poczty e-mail przy użyciu usługi DMARC
               href: use-dmarc-to-validate-email.md
-            - name: Konfigurowanie platformy SPF w celu zapobiegania spoofingowi
-              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-            - name: 'Jak platforma Microsoft 365 używa platformy SPF, aby zapobiec spoofingowi'
-              href: how-office-365-uses-spf-to-prevent-spoofing.md
+            - name: Używanie zaufanych nadawców ARC dla wiarygodnych urządzeń i usług między nadawcą i odbiorcą
+              href: use-arc-exceptions-to-mark-trusted-arc-senders.md
         - name: Przepływ poczty e-mail w usłudze EOP
           href: mail-flow-in-eop.md
         - name: Zasady przesyłania dotyczące użytkowników
@@ -394,6 +396,8 @@
           href: quarantine-faq.yml
     - name: Odwołanie
       items:
+        - name: Przechowywanie danych w ochronie usługi Office 365 w usłudze Defender
+          href: mdo-data-retention.md
         - name: Plan zabezpieczeń
           href: security-roadmap.md
         - name: Pomoc i obsługa techniczna dla usługi EOP
