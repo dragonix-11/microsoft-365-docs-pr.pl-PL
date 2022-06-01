@@ -21,12 +21,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 09135faa505aa2d5b95003cc7321a38a0eaddaf3
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 36d3ca7d820d31843df535eddd6c253d0c1f951e
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599216"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810949"
 ---
 # <a name="learn-about-communication-compliance"></a>Dowiedz się więcej o zgodności w komunikacji
 
@@ -57,6 +57,8 @@ Najnowsze prezentacje konferencji Ignite dotyczące zgodności z komunikacją mo
 Aby uzyskać szybki przegląd zgodności z komunikacją, zobacz wideo [Wykrywanie molestowania w miejscu pracy i reagowanie za pomocą zgodności z komunikacją](https://youtu.be/z33ji7a7Zho) w [kanale Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
 Sprawdź, w jaki sposób [TD Securities korzysta ze zgodności komunikacyjnej](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) , aby spełnić swoje zobowiązania regulacyjne i spełnić ich potrzeby w zakresie bezpieczeństwa i stabilności.
+
+Zapoznaj się z [filmem dotyczącym mechaniki firmy Microsoft](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) , w jaki sposób zarządzanie ryzykiem wewnętrznym i zgodność z komunikacją współpracują ze sobą, aby zminimalizować ryzyko związane z danymi ze strony użytkowników w organizacji.
 
 Aby być na bieżąco z najnowszymi aktualizacjami zgodności komunikacji, wybierz pozycję **Co nowego** w [zgodności z komunikacją](https://compliance.microsoft.com/) w organizacji.
 

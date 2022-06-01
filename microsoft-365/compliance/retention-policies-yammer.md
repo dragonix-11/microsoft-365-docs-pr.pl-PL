@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania, które mają zastosowanie do Yammer.
-ms.openlocfilehash: c479b7b08fd74b957a8ef7d23147758948459dc8
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 25a746fcd5fe5dfd0e17edf08c9e7d3f722ce676
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754317"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810577"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Dowiedz się więcej na temat przechowywania Yammer
 
@@ -69,7 +69,7 @@ Mimo że są one przechowywane w Exchange, komunikaty Yammer są uwzględniane t
 Po skonfigurowaniu zasad przechowywania dla komunikatów Yammer zadanie czasomierza z usługi Exchange okresowo ocenia elementy w ukrytym folderze, w którym są przechowywane te komunikaty Yammer. Uruchomienie zadania czasomierza trwa do siedmiu dni. Po wygaśnięciu okresu przechowywania tych elementów są one przenoszone do folderu SubstrateHolds — ukrytego folderu, który znajduje się w każdej skrzynce pocztowej użytkownika lub grupy w celu przechowywania elementów "nietrwale usuniętych", zanim zostaną trwale usunięte.
 
 > [!IMPORTANT]
-> Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) i ponieważ Yammer wiadomości są przechowywane w Exchange Online skrzynkach pocztowych, trwałe usunięcie z folderu SubstrateHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania dla tej samej lokalizacji, blokada postępowania sądowego, wstrzymanie opóźnienia lub jeśli do skrzynki pocztowej zastosowano blokadę zbierania elektronicznych materiałów dowodowych ze względów prawnych lub śledczych.
+> Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) i ponieważ Yammer wiadomości są przechowywane w Exchange Online skrzynkach pocztowych, trwałe usunięcie z folderu SubstrateHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania Yammer dla tej samej lokalizacji, blokada postępowania sądowego, wstrzymanie opóźnienia lub jeśli do skrzynki pocztowej zastosowano blokadę zbierania elektronicznych materiałów dowodowych ze względów prawnych lub śledczych.
 >
 > Chociaż skrzynka pocztowa jest uwzględniona w odpowiednim blokadzie, Yammer wiadomości, które zostały usunięte, nie będą już widoczne w Yammer, ale będą nadal wykrywalne przy użyciu zbierania elektronicznych materiałów dowodowych.
 
@@ -86,7 +86,14 @@ Dla dwóch ścieżek na diagramie:
 2. **Jeśli komunikat Yammer nie zostanie usunięty** i dla bieżących komunikatów po edycji komunikat zostanie przeniesiony do folderu SubstrateHolds po upływie okresu przechowywania. Ta akcja trwa do siedmiu dni od daty wygaśnięcia. Gdy komunikat znajduje się w folderze SubstrateHolds, zostanie on natychmiast trwale usunięty. 
 
 > [!NOTE]
-> Komunikaty w folderze SubstrateHolds można wyszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych. Dopóki komunikaty nie zostaną trwale usunięte (w folderze SubstrateHolds), nadal można je przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
+> Komunikaty w folderze SubstrateHolds można wyszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych. Dopóki komunikaty nie zostaną trwale usunięte z folderu SubstrateHolds, nadal można je przeszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
+
+Gdy okres przechowywania wygaśnie i przeniesie komunikat do folderu SubstrateHolds, operacja usuwania jest przekazywana do usługi Yammer, która następnie przekazuje tę samą operację do Yammer aplikacji klienckiej. Opóźnienia w tej komunikacji lub buforowaniu mogą wyjaśnić, dlaczego przez krótki czas użytkownicy nadal widzą te komunikaty w swojej aplikacji Yammer.
+
+W tym scenariuszu, w którym usługa Yammer otrzymuje polecenie delete z powodu zasad przechowywania, odpowiedni komunikat w aplikacji Yammer zostanie usunięty dla wszystkich użytkowników w konwersacji. Niektórzy z tych użytkowników mogą pochodzić z innej organizacji, mają zasady przechowywania z dłuższym okresem przechowywania lub nie są do nich przypisane żadne zasady przechowywania. W przypadku tych użytkowników kopie wiadomości są nadal przechowywane w ich skrzynkach pocztowych i pozostają możliwe do wyszukiwania pod kątem zbierania elektronicznych materiałów dowodowych, dopóki wiadomości nie zostaną trwale usunięte przez inne zasady przechowywania.
+
+> [!IMPORTANT]
+> Komunikaty widoczne w aplikacji Yammer nie są dokładnym odzwierciedleniem tego, czy są zachowywane, czy trwale usuwane w celu spełnienia wymagań dotyczących zgodności.
 
 Jeśli zasady przechowywania są tylko do zachowania lub tylko do usuwania, ścieżki zawartości są odmianami zachowywania i usuwania.
 
@@ -173,7 +180,7 @@ Obecnie użytkownicy-goście usługi Azure B2B nie są obsługiwana.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Gdy użytkownik opuszcza organizację 
 
-Jeśli użytkownik opuści organizację, a jego konto Microsoft 365 zostanie usunięte, jego Yammer wiadomości użytkowników, które podlegają przechowywaniu, są przechowywane w nieaktywnej skrzynce pocztowej. Te wiadomości pozostają objęte wszelkimi zasadami przechowywania, które zostały umieszczone na użytkowniku, zanim jego skrzynka pocztowa została nieaktywna, a zawartość jest dostępna dla wyszukiwania zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Nieaktywne skrzynki pocztowe w Exchange Online](inactive-mailboxes-in-office-365.md). 
+Jeśli użytkownik opuści organizację, a jego konto Microsoft 365 zostanie usunięte, jego Yammer wiadomości użytkowników, które podlegają przechowywaniu, są przechowywane w nieaktywnej skrzynce pocztowej. Te wiadomości pozostają objęte wszelkimi zasadami przechowywania, które zostały umieszczone na użytkowniku, zanim jego skrzynka pocztowa została nieaktywna, a zawartość jest dostępna dla wyszukiwania zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o nieaktywnych skrzynkach pocztowych](inactive-mailboxes-in-office-365.md).
 
 Jeśli użytkownik przechowywał pliki w Yammer, zobacz [równoważną sekcję](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) SharePoint i OneDrive.
 

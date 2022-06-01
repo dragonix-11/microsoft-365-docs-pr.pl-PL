@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 67ae082e61c3322c28031b2d20e99f4070389dd2
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: ce42709349e5d7464e1809df248c8055bdfaab30
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243035"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810993"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Usługa ochrony punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych Stanów Zjednoczonych
 
@@ -140,8 +140,8 @@ Następujące wersje systemu operacyjnego są obsługiwane podczas korzystania z
 Wersja systemu operacyjnego|GCC|GCC wysoki|DoD
 :---|:---:|:---:|:---:
 Windows Server 2022|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
-Windows Server 2019|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
-System Windows Server 2016|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
+Windows Server 2019|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
+Windows Server 2016|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2008 R2 z dodatkiem SP1|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 |
@@ -174,7 +174,7 @@ Zamiast publicznych identyfikatorów URI wymienionych w naszej [dokumentacji int
 
 |Typ punktu końcowego|GCC|GCC High & DoD|
 |---|---|---|
-|Logowania|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
+|Logowanie|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
 |Defender for Endpoint API|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`|
 |SIEM|`https://wdatp-alertexporter-us.gcc.securitycenter.windows.us`|`https://wdatp-alertexporter-us.securitycenter.windows.us`|
 |
@@ -195,9 +195,13 @@ Są to znane luki:
 |Odnajdywanie sieci|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Raporty: Kontrola urządzenia, kondycja urządzenia, zapora|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|
 |Filtrowanie zawartości sieci Web|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|
-  
+|Wskaźnik bezpieczeństwa Microsoft|![Tak](images/svg/check-yes.svg) <sup>1</sup>|![Nie](images/svg/check-no.svg) Nieobsługiwane|![Nie](images/svg/check-no.svg) Nieobsługiwane|  
 
-Są to funkcje i znane luki w usłudze [Mobile Threat Defense (Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android & iOS)](mtd.md):
+> [!NOTE]
+> <sup>1</sup> Chociaż wskaźnik bezpieczeństwa firmy Microsoft jest dostępny dla GCC klientów, istnieją pewne zalecenia dotyczące zabezpieczeń, które nie są dostępne.
+
+
+Są to funkcje i znane luki w usłudze [Mobile Threat Defense (Ochrona punktu końcowego w usłudze Microsoft Defender na Android & iOS)](mtd.md):
 
 <br />
 
@@ -206,11 +210,9 @@ Są to funkcje i znane luki w usłudze [Mobile Threat Defense (Ochrona punktu ko
 |Nazwa funkcji|GCC|GCC wysoki|DoD|
 |---|:---:|:---:|:---:|
 |Ochrona sieci Web (wskaźniki chroniące przed wyłudzaniem informacji i niestandardowe)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
-|Ochrona przed złośliwym oprogramowaniem (tylko dla systemu Android)|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|
-|Wykrywanie jailbreaka (tylko system iOS)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
+|Ochrona przed złośliwym oprogramowaniem (tylko Android)|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|
+|Wykrywanie jailbreaka (tylko iOS)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Dostęp warunkowy/uruchamianie warunkowe|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Obsługa zarządzania aplikacjami mobilnymi|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Mechanizmy kontroli prywatności|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Zarządzanie zagrożeniami i lukami w zabezpieczeniach (TVM)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
-  
-

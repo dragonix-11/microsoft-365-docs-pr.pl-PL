@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: Dowiedz się, jak za pomocą parametru Region skonfigurować funkcję zbierania elektronicznych materiałów dowodowych do użycia w lokalizacjach satelitarnych w Microsoft 365 Multi-Geo.
-ms.openlocfilehash: a220e68e6dbe010f2eab6876dc2813dcd84d5d6d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 088d6cf861e70185162a74c0b2d9b029849125de
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130938"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810599"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 konfiguracji zbierania elektronicznych materiałów dowodowych
 
@@ -26,7 +26,7 @@ ms.locfileid: "65130938"
 
 Bez możliwości zbierania elektronicznych materiałów dowodowych (Premium) menedżer zbierania elektronicznych materiałów dowodowych lub administrator dzierżawy z wieloma obszarami geograficznymi będzie mógł przeprowadzać zbierania elektronicznych materiałów dowodowych tylko w centralnej lokalizacji tej dzierżawy. Aby obsługiwać możliwość przeprowadzania zbierania elektronicznych materiałów dowodowych dla lokalizacji satelitarnych, nowy parametr filtru zabezpieczeń zgodności o nazwie "Region" jest dostępny za pośrednictwem programu PowerShell. Ten parametr może być używany przez dzierżawców, których centralna lokalizacja znajduje się w Ameryka Północna, Europie lub Regionie Azji i Pacyfiku. eDiscovery (Premium) jest zalecane dla dzierżawców, których centralna lokalizacja nie znajduje się w Ameryka Północna, Europie lub Regionie Azji i Pacyfiku i którzy muszą wykonywać zbierania elektronicznych materiałów dowodowych w lokalizacjach geograficznych satelitów.
 
-Administrator globalny Microsoft 365 musi przypisać uprawnienia menedżera zbierania elektronicznych materiałów dowodowych, aby umożliwić innym osobom wykonywanie zbierania elektronicznych materiałów dowodowych i przypisać parametr "Region" w odpowiednim filtrze zabezpieczeń zgodności w celu określenia regionu do przeprowadzania zbierania elektronicznych materiałów dowodowych jako lokalizacji satelitarnej, w przeciwnym razie nie zostanie przeprowadzone żadne zbierania elektronicznych materiałów dowodowych dla lokalizacji satelitarnej. Obsługiwany jest tylko jeden filtr zabezpieczeń "Region" na użytkownika, więc wszystkie regiony muszą znajdować się w tym samym filtrze zabezpieczeń.
+Administrator globalny Microsoft 365 musi przypisać uprawnienia menedżera zbierania elektronicznych materiałów dowodowych, aby umożliwić innym osobom wykonywanie zbierania elektronicznych materiałów dowodowych i przypisać parametr "Region" w odpowiednim filtrze zabezpieczeń zgodności w celu określenia regionu do przeprowadzania zbierania elektronicznych materiałów dowodowych jako lokalizacji satelitarnej, w przeciwnym razie nie zostanie przeprowadzone żadne zbierania elektronicznych materiałów dowodowych dla lokalizacji satelitarnej. Obsługiwany jest tylko jeden filtr zabezpieczeń "Region" na użytkownika.
 
 Gdy dla określonej lokalizacji satelitarnej ustawiono rolę Menedżera zbierania elektronicznych materiałów dowodowych lub administratora, menedżer zbierania elektronicznych materiałów dowodowych lub administrator będzie mógł wykonywać tylko akcje wyszukiwania zbierania elektronicznych materiałów dowodowych względem witryn SharePoint i OneDrive lokacji znajdujących się w tej lokalizacji satelitarnej. Jeśli menedżer zbierania elektronicznych materiałów dowodowych lub administrator podejmie próbę wyszukania SharePoint lub OneDrive lokacji poza określoną lokalizacją satelitarną, żadne wyniki nie zostaną zwrócone. Ponadto gdy menedżer zbierania elektronicznych materiałów dowodowych lub administrator lokalizacji satelitarnej wyzwala eksport, dane są eksportowane do wystąpienia platformy Azure w tym regionie. Pomaga to organizacjom zachować zgodność, nie zezwalając na eksportowanie zawartości przez kontrolowane granice.
 
