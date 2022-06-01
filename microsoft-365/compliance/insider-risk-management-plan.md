@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ad69d525ac8cf105761286c59e8bce54d446ae8f
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 043ee6cac3a7aa7408d949b4455fd90f7f6a66d0
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599596"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810927"
 ---
 # <a name="plan-for-insider-risk-management"></a>Zaplanuj zarządzanie ryzykiem wewnętrznym
 
@@ -33,6 +33,8 @@ Obejrzyj poniższy film wideo, aby dowiedzieć się, w jaki sposób przepływ pr
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+Zapoznaj się z [filmem dotyczącym mechaniki firmy Microsoft](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) , w jaki sposób zarządzanie ryzykiem wewnętrznym i zgodność z komunikacją współpracują ze sobą, aby zminimalizować ryzyko związane z danymi ze strony użytkowników w organizacji.
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Praca z osobami biorącymi udział w projekcie w organizacji
 
@@ -57,7 +59,7 @@ W zależności od sposobu zarządzania zasadami i alertami dotyczącymi zarządz
 
 Podczas pracy z zarządzaniem ryzykiem wewnętrznym wybierzesz spośród tych opcji grupy ról i akcji rozwiązania:
 
-|**Działania**|**Zarządzanie ryzykiem wewnętrznym**|**Administrator zarządzania ryzykiem wewnętrznym**|**Analitycy zarządzania ryzykiem wewnętrznym**|**Badacze zarządzania ryzykiem wewnętrznym**|**Audytorzy zarządzania ryzykiem wewnętrznym**|
+|**Działania**|**Zarządzanie ryzykiem wewnętrznym**|**Administracja zarządzania ryzykiem wewnętrznym**|**Analitycy zarządzania ryzykiem wewnętrznym**|**Badacze zarządzania ryzykiem wewnętrznym**|**Audytorzy zarządzania ryzykiem wewnętrznym**|
 |:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
 | Konfigurowanie zasad i ustawień | Tak | Tak | Nie | Nie | Nie |
 | Uzyskiwanie dostępu do szczegółowych informacji analitycznych | Tak | Tak | Tak | Nie | Nie |
@@ -68,9 +70,9 @@ Podczas pracy z zarządzaniem ryzykiem wewnętrznym wybierzesz spośród tych op
 | Wyświetlanie dzienników inspekcji eksportu & | Tak | Nie | Nie | Nie | Tak |
 
 >[!IMPORTANT]
->Upewnij się, że zawsze masz co najmniej jednego użytkownika w grupach ról *Insider Risk Management* lub *Insider Risk Management Admin* (w zależności od wybranej opcji), aby konfiguracja zarządzania ryzykiem wewnętrznym nie mogła przejść do scenariusza "zero administratora", jeśli określoni użytkownicy opuszczą Twoją organizację.
+>Upewnij się, że zawsze masz co najmniej jednego użytkownika w grupach ról insider *risk management* lub *insider risk management Administracja* (w zależności od wybranej opcji), aby konfiguracja zarządzania ryzykiem wewnętrznym nie wchodziła do scenariusza "zero administratora", jeśli konkretni użytkownicy opuszczają organizację.
 
-Członkowie następujących ról mogą przypisywać użytkowników do grup ról zarządzania ryzykiem wewnętrznym i mieć te same uprawnienia rozwiązania dołączone do grupy ról *Administrator zarządzania ryzykiem wewnętrznym* :
+Członkowie następujących ról mogą przypisywać użytkowników do grup ról zarządzania ryzykiem wewnętrznym i mieć te same uprawnienia rozwiązania dołączone do grupy ról *Administracja zarządzania ryzykiem wewnętrznym*:
 
 - *administrator globalny* Azure Active Directory
 - *administrator zgodności* Azure Active Directory

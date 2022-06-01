@@ -18,36 +18,36 @@ ms.custom:
 - admindeeplinkEXCHANGE
 f1.keywords:
 - NOCSH
-description: Użyj alertów usługi wykorzystania skrzynki pocztowej, aby monitorować skrzynki pocztowe wstrzymane, które osiągają limit przydziału skrzynki pocztowej.
-ms.openlocfilehash: fdc87e92aa6614d78347984cfa09bf75edc131e5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Skorzystaj z porad dotyczących usługi wykorzystania skrzynek pocztowych, aby monitorować skrzynki pocztowe w stanie wstrzymania, które osiągają limit przydziału skrzynki pocztowej.
+ms.openlocfilehash: 22583cbc6c6495d07caa3f920eeacb6bcd1d7536
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935308"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810555"
 ---
-# <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alerty usługi dotyczące wykorzystania skrzynki pocztowej w monitorowaniu Exchange Online
+# <a name="service-advisories-for-mailbox-utilization-in-exchange-online-monitoring"></a>Porady dotyczące usługi dotyczące wykorzystania skrzynki pocztowej w monitorowaniu Exchange Online
 
-Opublikowaliśmy nowy alert usługi Exchange Online, który informuje o zablokowanych skrzynkach pocztowych, które są zagrożone osiągnięciem lub przekroczeniem limitu przydziału. Te alerty usługi zapewniają wgląd w liczbę skrzynek pocztowych w organizacji, które mogą wymagać interwencji administratora.
+Opublikowaliśmy nowe usługi Exchange Online, które informują o zablokowanych skrzynkach pocztowych, które są zagrożone osiągnięciem lub przekroczeniem limitu przydziału. Te porady dotyczące usług zapewniają wgląd w liczbę skrzynek pocztowych w organizacji, które mogą wymagać interwencji administratora.
 
-Te alerty usługi są wyświetlane w Centrum administracyjne platformy Microsoft 365. Aby wyświetlić te alerty usługi, przejdź do pozycji **Kondycja** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Kondycja usługi**</a> >  **Exchange Online** a następnie kliknij kartę **Aktywne problemy**. Oto przykład alertu dotyczącego usługi wykorzystania skrzynki pocztowej.
+Te porady dotyczące usług są wyświetlane w Centrum administracyjne platformy Microsoft 365. Aby wyświetlić te porady dotyczące usług, przejdź do pozycji **Kondycja** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Kondycja usługi**</a> >  **Exchange Online** a następnie kliknij kartę **Aktywne problemy**. Oto przykład porady dotyczącej usługi wykorzystania skrzynki pocztowej.
 
 :::image type="content" alt-text="Alert usługi wykorzystania skrzynki pocztowej." source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
-Aby wyświetlić listę skrzynek pocztowych, które zbliżają się do limitu przydziału magazynu (nazywanego *raportem użycia skrzynki pocztowej*), kliknij wyróżniony link na poniższym zrzucie ekranu. Ten link jest wyświetlany w alercie usługi.
+Aby wyświetlić listę skrzynek pocztowych, które zbliżają się do limitu przydziału magazynu (nazywanego *raportem użycia skrzynki pocztowej*), kliknij wyróżniony link na poniższym zrzucie ekranu. Ten link jest wyświetlany w poradniku usługi.
 
 :::image type="content" alt-text="Link do raportu użycia skrzynki pocztowej." source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 Alternatywnie bezpośredni adres URL raportu użycia skrzynki pocztowej to <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage>.
 
-## <a name="what-do-these-service-alerts-indicate"></a>Co wskazują te alerty usługi?
+## <a name="what-do-these-service-advisories-indicate"></a>Co wskazują te porady dotyczące usług?
 
-Alerty usługi dotyczące wykorzystania skrzynki pocztowej informują administratorów o wstrzymanych skrzynkach pocztowych, które zbliżają się do limitu przydziału magazynu skrzynki pocztowej. Typ blokad, które można umieścić w skrzynkach pocztowych, obejmuje blokady sporów sądowych, blokadę zbierania elektronicznych materiałów dowodowych i zasady przechowywania Microsoft 365 (skonfigurowane do przechowywania danych). Gdy skrzynka pocztowa jest wstrzymana, użytkownicy (lub zautomatyzowane procesy) nie mogą trwale usuwać danych ze swojej skrzynki pocztowej. Zamiast tego administratorzy muszą skonfigurować zasady przechowywania mrm w Exchange Online (zgodnie z zasadami zgodności organizacji związanymi z przechowywaniem danych), aby przenieść dane z podstawowej skrzynki pocztowej użytkownika do jego skrzynki pocztowej archiwum. Jeśli nie, a skrzynka pocztowa w blokadzie osiągnie stan krytyczny lub ostrzegawczy, administratorzy muszą [włączyć archiwalne skrzynki pocztowe](../compliance/enable-archive-mailboxes.md) i [włączyć automatyczne rozszerzanie archiwizacji](../compliance/enable-autoexpanding-archiving.md) , a następnie upewnić się, że okres przechowywania zasad archiwum przypisanych do skrzynki pocztowej (która przenosi wiadomość e-mail z podstawowej skrzynki pocztowej do archiwum skrzynki pocztowej) jest wystarczająco krótki. Jeśli nic nie zostanie zrobione, aby rozwiązać problemy z limitem przydziału identyfikowane przez alerty usługi wykorzystania skrzynki pocztowej, użytkownicy mogą nie być w stanie wysyłać ani odbierać wiadomości e-mail lub zaproszeń na spotkania.
+Porady dotyczące obsługi użycia skrzynek pocztowych informują administratorów o wstrzymanych skrzynkach pocztowych, które zbliżają się do limitu przydziału magazynu skrzynki pocztowej. Typ blokad, które można umieścić w skrzynkach pocztowych, obejmuje blokady sporów sądowych, blokadę zbierania elektronicznych materiałów dowodowych i zasady przechowywania Microsoft 365 (skonfigurowane do przechowywania danych). Gdy skrzynka pocztowa jest wstrzymana, użytkownicy (lub zautomatyzowane procesy) nie mogą trwale usuwać danych ze swojej skrzynki pocztowej. Zamiast tego administratorzy muszą skonfigurować zasady przechowywania mrm w Exchange Online (zgodnie z zasadami zgodności organizacji związanymi z przechowywaniem danych), aby przenieść dane z podstawowej skrzynki pocztowej użytkownika do jego skrzynki pocztowej archiwum. Jeśli nie, a skrzynka pocztowa w blokadzie osiągnie stan krytyczny lub ostrzegawczy, administratorzy muszą [włączyć archiwalne skrzynki pocztowe](../compliance/enable-archive-mailboxes.md) i [włączyć automatyczne rozszerzanie archiwizacji](../compliance/enable-autoexpanding-archiving.md) , a następnie upewnić się, że okres przechowywania zasad archiwum przypisanych do skrzynki pocztowej (która przenosi wiadomość e-mail z podstawowej skrzynki pocztowej do archiwum skrzynki pocztowej) jest wystarczająco krótki. Jeśli nic nie zostanie zrobione w celu rozwiązania problemów z limitem przydziału, które są identyfikowane przez poradę dotyczącą usługi wykorzystania skrzynki pocztowej, użytkownicy mogą nie być w stanie wysyłać ani odbierać wiadomości e-mail lub zaproszeń na spotkania.
 
-Alert usługi dotyczący wykorzystania skrzynki pocztowej zawiera tabele dotyczące liczby skrzynek pocztowych, które zbliżają się do limitu przydziału. W poniższych sekcjach opisano informacje zawarte w tych tabelach oraz działania, które administratorzy mogą podjąć, aby zapewnić, że te skrzynki pocztowe nie przekroczą limitu przydziału.
+Porada dotycząca obsługi użycia skrzynek pocztowych zawiera tabele dotyczące liczby skrzynek pocztowych, które zbliżają się do limitu przydziału. W poniższych sekcjach opisano informacje zawarte w tych tabelach oraz działania, które administratorzy mogą podjąć, aby zapewnić, że te skrzynki pocztowe nie przekroczą limitu przydziału.
 
 > [!NOTE]
-> Alerty usługi zawierają opisy właściwości przydziału skrzynki pocztowej, które są wyświetlane w kolumnach w tabelach opisanych w poniższych sekcjach.
+> Porady dotyczące usług zawierają opisy właściwości przydziału skrzynki pocztowej, które są wyświetlane w kolumnach w tabelach opisanych w poniższych sekcjach.
 
 ### <a name="mailboxes-on-hold-without-an-archive"></a>Skrzynki pocztowe wstrzymane bez archiwum
 
@@ -80,7 +80,7 @@ Administratorzy powinni również upewnić się, że zasady archiwum MRM, które
 
 ### <a name="mrm-retention-policies-in-your-organization"></a>Zasady przechowywania mrm w organizacji
 
-Alerty usługi dotyczące wykorzystania skrzynki pocztowej mogą również zawierać tabelę z informacjami o zasadach przechowywania mrm w organizacji oraz o tym, czy skrzynki pocztowe, które są zasadami przechowywania, mają skrzynkę pocztową archiwum. Aby uzyskać więcej informacji na temat zasad przechowywania, zobacz [Tagi przechowywania i zasady przechowywania w Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
+Porady dotyczące obsługi użycia skrzynek pocztowych mogą również zawierać tabelę z informacjami o zasadach przechowywania mrm w organizacji oraz o tym, czy skrzynki pocztowe, które są zasadami przechowywania, mają skrzynkę pocztową archiwum. Aby uzyskać więcej informacji na temat zasad przechowywania, zobacz [Tagi przechowywania i zasady przechowywania w Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
 
 | RetentionPolicyGuid | Typ skrzynki pocztowej | HasMoveDumpsterToArchiveTag | HasMovePrimaryToArchiveTag | HasPersonalArchiveTag |  Skrzynek pocztowych |
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
@@ -113,12 +113,12 @@ Na poniższej liście opisano każdą kolumnę w poprzedniej tabeli.
 
 - **Skrzynki pocztowe**: wskazuje liczbę skrzynek pocztowych (z archiwum lub bez niego, co jest wskazane w kolumnie **MailboxType** ), do której są przypisane zasady przechowywania.
 
-## <a name="how-often-will-i-see-these-service-alerts"></a>Jak często będą widoczne te alerty usługi?
+## <a name="how-often-will-i-see-these-service-advisories"></a>Jak często będą widoczne te porady dotyczące usług?
 
-Jeśli nie podejmiesz działań w celu rozwiązania problemów z limitem przydziału, możesz spodziewać się tego typu alertu usługi co cztery dni. Kolejne alerty usługi mogą zawierać większą liczbę skrzynek pocztowych dla innych skrzynek pocztowych, które zbliżają się do limitu przydziału. Jeśli podejmiesz działania w celu rozwiązania problemów z limitem przydziału, ten alert usługi będzie występować tylko wtedy, gdy zostanie zidentyfikowana inna skrzynka pocztowa z problemami z limitem przydziału.
+Jeśli nie podejmiesz działań w celu rozwiązania problemów z limitem przydziału, możesz spodziewać się tego typu porad dotyczących usług co siedem dni. Kolejne porady dotyczące usług mogą zawierać wyższe liczby skrzynek pocztowych dla innych skrzynek pocztowych, które zbliżają się do limitu przydziału. Jeśli podejmiesz działania w celu rozwiązania problemów z limitami przydziału, ta porada dotycząca usługi będzie miała miejsce tylko wtedy, gdy zostanie zidentyfikowana inna skrzynka pocztowa z problemami z limitem przydziału.
 
 ## <a name="more-information"></a>Więcej informacji
 
-- Aby uzyskać informacje na temat rozwiązywania problemów ze skrzynką pocztową archiwum, zobacz [Rozwiązywanie problemów z usługą Microsoft Purview](/office365/troubleshoot/microsoft-365-compliance-welcome).
+- Aby uzyskać informacje na temat rozwiązywania problemów ze skrzynką pocztową archiwum i rozwiązywania ich, zobacz [rozwiązywanie problemów z Microsoft Purview](/office365/troubleshoot/microsoft-365-compliance-welcome).
 
 - Aby uzyskać wskazówki dotyczące identyfikowania blokad umieszczonych w skrzynce pocztowej, zobacz [How to identify the type of hold placed on a mailbox (Jak zidentyfikować typ blokady umieszczonej w skrzynce pocztowej](../compliance/identify-a-hold-on-an-exchange-online-mailbox.md)).

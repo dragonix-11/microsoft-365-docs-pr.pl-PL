@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania, które mają zastosowanie do Microsoft Teams.
-ms.openlocfilehash: cadff304744fcf06c6717b0709b719e05f8ddfb6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: f289b8da5a4b21214887fd6429e977e434a9cd0b
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754361"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811027"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Dowiedz się więcej na temat przechowywania Microsoft Teams
 
@@ -71,7 +71,7 @@ Inne typy skrzynek pocztowych, takie jak RoomMailbox używane do Teams sal konfe
 
 Teams używa usługi czatu opartej na platformie Azure jako podstawowego magazynu dla wszystkich wiadomości (czatów i wiadomości kanału). Jeśli chcesz usunąć komunikaty Teams ze względu na zgodność, zasady przechowywania dla Teams mogą usuwać komunikaty po określonym okresie na podstawie czasu ich utworzenia. Wiadomości są następnie trwale usuwane zarówno ze skrzynek pocztowych Exchange, w których są przechowywane na potrzeby operacji zgodności, jak i z magazynu podstawowego używanego przez podstawową usługę czatu opartą na platformie Azure. Aby uzyskać więcej informacji na temat architektury bazowej, zobacz [Zabezpieczenia i zgodność w Microsoft Teams](/MicrosoftTeams/security-compliance-overview), a w szczególności w sekcji [architektury Information Protection](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Mimo że te dane z czatów Teams i wiadomości kanałów są przechowywane w skrzynkach pocztowych, należy skonfigurować zasady przechowywania dla **wiadomości kanału Teams** i **Teams lokalizacji czatów**. Teams wiadomości czatów i kanałów nie są uwzględniane w zasadach przechowywania skonfigurowanych dla Exchange skrzynek pocztowych użytkowników lub grup. Podobnie zasady przechowywania dla Teams nie wpływają na inne przechowywane skrzynki pocztowe elementów poczty e-mail.
+Mimo że te dane z czatów Teams i wiadomości kanałów są przechowywane w skrzynkach pocztowych, należy skonfigurować zasady przechowywania dla **wiadomości kanału Teams** i **Teams lokalizacji czatów**. Teams wiadomości czatów i kanałów nie są uwzględniane w zasadach przechowywania skonfigurowanych dla Exchange skrzynek pocztowych użytkowników lub grup. Podobnie zasady przechowywania dla Teams nie mają wpływu na inne elementy poczty e-mail przechowywane w skrzynkach pocztowych.
 
 Jeśli użytkownik zostanie dodany do czatu, kopia wszystkich udostępnionych mu wiadomości zostanie pozyskiwana do skrzynki pocztowej. Data utworzenia tych komunikatów nie zmienia się dla nowego użytkownika i pozostaje taka sama dla wszystkich użytkowników.
 
@@ -83,7 +83,7 @@ Po skonfigurowaniu zasad przechowywania wiadomości czatu i kanału zadanie czas
 Komunikaty pozostają w folderze SubstrateHolds przez co najmniej 1 dzień, a następnie jeśli kwalifikują się do usunięcia, zadanie czasomierza trwale usuwa je przy następnym uruchomieniu.
 
 > [!IMPORTANT]
-> Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) i Teams wiadomości czatu i kanału są przechowywane w Exchange Online skrzynkach pocztowych, trwałe usunięcie z folderu SubstrateHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania dla tej samej lokalizacji, blokada postępowania sądowego, wstrzymanie opóźnienia lub jeśli do skrzynki pocztowej zastosowano blokadę zbierania elektronicznych materiałów dowodowych ze względów prawnych lub śledczych.
+> Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) i ponieważ Teams wiadomości czatu i kanału są przechowywane w Exchange Online skrzynkach pocztowych, trwałe usunięcie z folderu SubstrateHolds jest zawsze zawieszone, jeśli na skrzynkę pocztową mają wpływ inne zasady przechowywania Teams dla tej samej lokalizacji, Blokada postępowania sądowego, wstrzymanie opóźnień lub jeśli do skrzynki pocztowej zastosowano blokadę zbierania elektronicznych materiałów dowodowych dla celów prawnych lub śledczych  Powodów.
 >
 > Chociaż skrzynka pocztowa jest uwzględniona w odpowiedniej blokadzie, Teams wiadomości czatu i kanału, które zostały usunięte, nie będą już widoczne w aplikacji Teams, ale będą nadal wykrywalne przy użyciu elektronicznego zbierania elektronicznych materiałów dowodowych.
 
@@ -206,7 +206,7 @@ Gdy użytkownicy zewnętrzni zostaną uwzględnieni w spotkaniu hostującym orga
 
 ## <a name="when-a-user-leaves-the-organization"></a>Gdy użytkownik opuszcza organizację 
 
-Jeśli użytkownik, który ma skrzynkę pocztową w Exchange Online opuszcza organizację, a jego konto Microsoft 365 zostanie usunięty, wiadomości czatu, które podlegają przechowywaniu, są przechowywane w nieaktywnej skrzynce pocztowej. Wiadomości czatu pozostają objęte wszelkimi zasadami przechowywania, które zostały umieszczone na użytkowniku, zanim jego skrzynka pocztowa została nieaktywna, a zawartość jest dostępna dla wyszukiwania zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Nieaktywne skrzynki pocztowe w Exchange Online](inactive-mailboxes-in-office-365.md). 
+Jeśli użytkownik, który ma skrzynkę pocztową w Exchange Online opuszcza organizację, a jego konto Microsoft 365 zostanie usunięty, wiadomości czatu, które podlegają przechowywaniu, są przechowywane w nieaktywnej skrzynce pocztowej. Wiadomości czatu pozostają objęte wszelkimi zasadami przechowywania, które zostały umieszczone na użytkowniku, zanim jego skrzynka pocztowa została nieaktywna, a zawartość jest dostępna dla wyszukiwania zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o nieaktywnych skrzynkach pocztowych](inactive-mailboxes-in-office-365.md). 
 
 Jeśli użytkownik przechowywał pliki w Teams, zobacz [równoważną sekcję](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) dotyczącą SharePoint i OneDrive.
 

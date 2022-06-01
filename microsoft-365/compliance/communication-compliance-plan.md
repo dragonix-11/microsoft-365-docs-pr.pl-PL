@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 22e5ed11c97ed00449cb62439e105bd1e6dc78e7
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 2f9d3ae0bc7a07d515b80d7e98140e91d29db342
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599552"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810817"
 ---
 # <a name="plan-for-communication-compliance"></a>Zaplanuj zgodności w komunikacji
 
@@ -33,6 +33,8 @@ ms.locfileid: "65599552"
 Przed rozpoczęciem pracy ze [zgodnością komunikacji](communication-compliance.md) w organizacji istnieją ważne działania związane z planowaniem i zagadnienia, które powinny zostać przejrzane przez zespoły ds. technologii informatycznych i zarządzania zgodnością. Dokładne zrozumienie i planowanie wdrożenia w następujących obszarach pomoże zapewnić, że implementacja i korzystanie z funkcji zgodności z komunikacją przebiega bezproblemowo i jest zgodne z najlepszymi rozwiązaniami dla rozwiązania.
 
 Aby uzyskać więcej informacji i omówienie procesu planowania dotyczącego zgodności i ryzykownych działań w organizacji, zobacz [Uruchamianie programu do zarządzania ryzykiem wewnętrznym](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
+
+Możesz również zapoznać się z [filmem dotyczącym mechaniki firmy Microsoft](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) , w jaki sposób zarządzanie ryzykiem wewnętrznym i zgodność z komunikacją współpracują ze sobą, aby zminimalizować ryzyko związane z danymi ze strony użytkowników w organizacji.
 
 > [!IMPORTANT]
 > Zgodność z komunikacją jest obecnie dostępna w dzierżawach hostowanych w regionach geograficznych i krajach obsługiwanych przez zależności usługi platformy Azure. Aby sprawdzić, czy zgodność komunikacji jest obsługiwana w organizacji, zobacz [Dostępność zależności platformy Azure według kraju/regionu](/troubleshoot/azure/general/dependency-availability-by-country).
@@ -74,9 +76,9 @@ Istnieje sześć grup ról używanych do konfigurowania początkowych uprawnień
 - grupa ról [*zarządzania organizacją*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portal zgodności Microsoft Purview
 - grupa ról [*administratora zgodności*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portal zgodności Microsoft Purview
 - *Grupa ról Zgodność z komunikacją*
-- *Grupa ról administratora zgodności komunikacji*
+- *Grupa ról Administracja zgodności z komunikacją*
 
-Członkowie następujących ról mają te same uprawnienia rozwiązania dołączone do grupy ról *Administrator zgodności komunikacji* :
+Członkowie następujących ról mają te same uprawnienia rozwiązania dołączone do grupy ról *Administracja zgodności z komunikacją*:
 
 - *administrator globalny* Azure Active Directory
 - *administrator zgodności* Azure Active Directory
@@ -84,7 +86,7 @@ Członkowie następujących ról mają te same uprawnienia rozwiązania dołącz
 - *administrator zgodności* portal zgodności Microsoft Purview
 
 > [!IMPORTANT]
-> Upewnij się, że zawsze masz co najmniej jednego użytkownika w grupach ról *Zgodność z komunikacją* lub *Zgodność z komunikacją Administrator* (w zależności od wybranej opcji), aby konfiguracja zgodności komunikacji nie wchodziła do scenariusza "zero administratora", jeśli określoni użytkownicy opuszczają organizację.
+> Upewnij się, że zawsze masz co najmniej jednego użytkownika w grupach ról *Zgodność z komunikacją* lub *Zgodność z komunikacją Administracja* (w zależności od wybranej opcji), aby konfiguracja zgodności z komunikacją nie wchodziła do scenariusza "zero administratora", jeśli określoni użytkownicy opuszczają organizację.
 
 W zależności od sposobu zarządzania zasadami zgodności komunikacji i alertami należy przypisać użytkowników do określonych grup ról, aby zarządzać różnymi zestawami funkcji zgodności komunikacji. Możesz przypisać użytkowników z różnymi obowiązkami zgodności do określonych grup ról w celu zarządzania różnymi obszarami funkcji zgodności komunikacji. Możesz też zdecydować się na przypisanie wszystkich kont użytkowników wyznaczonym administratorom, analitykom, badaczom i widzom do grupy ról *Zgodność z komunikacją* . Użyj jednej grupy ról lub wielu grup ról, aby najlepiej dopasować wymagania dotyczące zarządzania zgodnością.
 
@@ -93,7 +95,7 @@ Wybierz spośród tych opcji grupy ról rozwiązania podczas konfigurowania zgod
 |**Rola**|**Uprawnienia roli**|
 |:-----|:-----|
 | **Zgodność z komunikacją** | Ta grupa ról służy do zarządzania zgodnością komunikacji dla organizacji w jednej grupie. Dodając wszystkie konta użytkowników dla wyznaczonych administratorów, analityków, badaczy i osób przeglądających, możesz skonfigurować uprawnienia do zgodności komunikacji w jednej grupie. Ta grupa ról zawiera wszystkie role uprawnień zgodności komunikacji. Ta konfiguracja jest najprostszym sposobem szybkiego rozpoczęcia pracy ze zgodnością z komunikacją i jest dobrym rozwiązaniem dla organizacji, które nie potrzebują oddzielnych uprawnień zdefiniowanych dla oddzielnych grup użytkowników. Użytkownicy tworzący zasady jako administrator zgodności komunikacji muszą mieć swoją skrzynkę pocztową hostowaną w Exchange Online. |
-| **Administrator zgodności komunikacji** | Użyj tej grupy ról, aby początkowo skonfigurować zgodność z komunikacją, a później segregować administratorów zgodności komunikacji do zdefiniowanej grupy. Użytkownicy przypisani do tej grupy ról mogą tworzyć, odczytywać, aktualizować i usuwać zasady zgodności komunikacji, ustawienia globalne i przypisania grup ról. Użytkownicy przypisani do tej grupy ról nie mogą wyświetlać alertów komunikatów. Użytkownicy tworzący zasady jako administrator zgodności komunikacji muszą mieć swoją skrzynkę pocztową hostowaną w Exchange Online. |
+| **Administracja zgodności z komunikacją** | Użyj tej grupy ról, aby początkowo skonfigurować zgodność z komunikacją, a później segregować administratorów zgodności komunikacji do zdefiniowanej grupy. Użytkownicy przypisani do tej grupy ról mogą tworzyć, odczytywać, aktualizować i usuwać zasady zgodności komunikacji, ustawienia globalne i przypisania grup ról. Użytkownicy przypisani do tej grupy ról nie mogą wyświetlać alertów komunikatów. Użytkownicy tworzący zasady jako administrator zgodności komunikacji muszą mieć swoją skrzynkę pocztową hostowaną w Exchange Online. |
 | **Analityk zgodności komunikacji** | Ta grupa służy do przypisywania uprawnień do użytkowników, którzy będą pełnić rolę analityków zgodności komunikacji. Użytkownicy przypisani do tej grupy ról mogą wyświetlać zasady, w których są przypisani jako recenzenci, wyświetlać metadane komunikatów (nie zawartość komunikatów), eskalować do dodatkowych recenzentów lub wysyłać powiadomienia do użytkowników. Analitycy nie mogą rozpoznać oczekujących alertów. |
 | **Badacz zgodności z komunikacją** | Ta grupa służy do przypisywania uprawnień do użytkowników, którzy będą pełnić rolę badaczy zgodności z komunikacją. Użytkownicy przypisani do tej grupy ról mogą wyświetlać metadane komunikatów i zawartość, eskalować do dodatkowych recenzentów, eskalować do sprawy zbierania elektronicznych materiałów dowodowych (Premium), wysyłać powiadomienia do użytkowników i rozwiązywać alert. |
 | **Podgląd zgodności komunikacji** | Ta grupa służy do przypisywania uprawnień do użytkowników, którzy będą zarządzać raportami komunikacji. Użytkownicy przypisani do tej grupy ról mogą uzyskiwać dostęp do wszystkich widżetów raportowania na stronie głównej zgodności komunikacji i mogą wyświetlać wszystkie raporty zgodności komunikacji. |

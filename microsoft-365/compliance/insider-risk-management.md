@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 86a56ec16f81eaa6b61a452829e65251b673cb78
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 9b2897a242f7dbbf9af9c9f3b639c0b91623fa25
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599260"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810621"
 ---
 # <a name="learn-about-insider-risk-management"></a>Dowiedz się więcej o zarządzaniu ryzykiem wewnętrznym
 
@@ -43,6 +43,8 @@ Obejrzyj poniższe filmy wideo, aby dowiedzieć się, jak zarządzanie ryzykiem 
 
 **Przepływ pracy zarządzania ryzykiem wewnętrznym**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+Zapoznaj się z [filmem dotyczącym mechaniki firmy Microsoft](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) , w jaki sposób zarządzanie ryzykiem wewnętrznym i zgodność z komunikacją współpracują ze sobą, aby zminimalizować ryzyko związane z danymi ze strony użytkowników w organizacji.
 
 > [!IMPORTANT]
 > Zarządzanie ryzykiem wewnętrznym jest obecnie dostępne w dzierżawach hostowanych w regionach geograficznych i krajach obsługiwanych przez zależności usługi platformy Azure. Aby sprawdzić, czy zarządzanie ryzykiem wewnętrznym jest obsługiwane w organizacji, zobacz [Dostępność zależności platformy Azure według kraju/regionu](/troubleshoot/azure/general/dependency-availability-by-country).
@@ -110,7 +112,7 @@ Możesz wybrać spośród następujących szablonów zasad, aby szybko rozpoczą
 Alerty są generowane automatycznie przez wskaźniki ryzyka zgodne z warunkami zasad i są wyświetlane na [pulpicie nawigacyjnym alertów](insider-risk-management-activities.md#alert-dashboard). Ten pulpit nawigacyjny umożliwia szybki widok wszystkich alertów wymagających przeglądu, otwierania alertów w czasie i statystyk alertów dla organizacji. Wszystkie alerty zasad są wyświetlane z następującymi informacjami, które ułatwiają szybkie identyfikowanie stanu istniejących alertów i nowych alertów, które wymagają akcji:
 
 - Stan
-- Ważności
+- Waga
 - Wykryto czas
 - Przypadku
 - Stan sprawy

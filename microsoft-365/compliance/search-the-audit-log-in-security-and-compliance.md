@@ -21,12 +21,12 @@ description: Użyj portal zgodności Microsoft Purview, aby przeszukać ujednoli
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 70bb6383b67392da1766d3ca8d1ef0806d105bb1
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 9d556facba3fa1a9c1dbafbfe2b2cb519f1b362d
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465981"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810971"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Przeszukiwanie dziennika inspekcji w portalu zgodności
 
@@ -232,7 +232,7 @@ Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości
 
 1. Uruchom wyszukiwanie w dzienniku inspekcji, a następnie popraw kryteria wyszukiwania do momentu uzyskania żądanych wyników.
 
-2. Na stronie wyników wyszukiwania kliknij pozycję **EksportujPobierz** >  **wszystkie wyniki**.
+2. Na stronie wyników wyszukiwania kliknij pozycję **Eksportuj** > **Pobierz wszystkie wyniki**.
 
    Wszystkie wpisy z dziennika inspekcji spełniające kryteria wyszukiwania są eksportowane do pliku CSV. Nieprzetworzone dane z dziennika inspekcji są zapisywane w pliku CSV. Dodatkowe informacje z wpisu dziennika inspekcji są zawarte w kolumnie o nazwie **AuditData** w pliku CSV.
 
@@ -473,7 +473,7 @@ Nie. Zdarzenie mogło zostać zarejestrowane w wyniku wstępnego pobrania przegl
 
 Zdarzenia FilePreviewed i FileAccessed wskazują, że wywołanie użytkownika doprowadziło do odczytu pliku (lub odczytu renderowania miniatury pliku). Chociaż te zdarzenia mają być zgodne z intencją podglądu i dostępu, rozróżnienie zdarzeń nie jest gwarancją intencji użytkownika.
 
-#### <a name="the-appsharepoint-user-in-audit-records"></a>Użytkownik appsharepoint\@ w rekordach inspekcji
+#### <a name="the-appsharepoint-user-in-audit-records"></a>Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji
 
 W rekordach inspekcji niektórych działań dotyczących plików (i innych działań związanych z SharePoint) można zauważyć, że użytkownik, który wykonał działanie (zidentyfikowane w polach Użytkownik i UserId) jest app@sharepoint. Oznacza to, że "użytkownik", który wykonał działanie, był aplikacją. W takim przypadku aplikacji udzielono uprawnień w SharePoint do wykonywania akcji w całej organizacji (takich jak przeszukiwanie witryny SharePoint lub konta OneDrive) w imieniu użytkownika, administratora lub usługi. Ten proces udzielania uprawnień aplikacji jest nazywany *SharePoint dostępu tylko do aplikacji*. Oznacza to, że uwierzytelnianie przedstawione SharePoint w celu wykonania akcji zostało wykonane przez aplikację, a nie przez użytkownika. Dlatego app@sharepoint użytkownik jest identyfikowany w niektórych rekordach inspekcji. Aby uzyskać więcej informacji, zobacz [Udzielanie dostępu przy użyciu SharePoint App-Only](/sharepoint/dev/solution-guidance/security-apponly-azureacs).
 
@@ -491,7 +491,7 @@ W tych i innych scenariuszach zauważysz również, że wiele rekordów inspekcj
 
 ### <a name="folder-activities"></a>Działania folderów
 
-W poniższej tabeli opisano działania folderów w usłudze SharePoint Online i OneDrive dla Firm. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Appsharepoint user in audit records (Użytkownik\@ appsharepoint w rekordach inspekcji](#the-appsharepoint-user-in-audit-records)).
+W poniższej tabeli opisano działania folderów w usłudze SharePoint Online i OneDrive dla Firm. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
@@ -507,7 +507,7 @@ W poniższej tabeli opisano działania folderów w usłudze SharePoint Online i 
 
 ### <a name="sharepoint-list-activities"></a>działania listy SharePoint
 
-W poniższej tabeli opisano działania związane z interakcją użytkowników z listami i elementami listy w usłudze SharePoint Online. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Appsharepoint user in audit records (Użytkownik\@ appsharepoint w rekordach inspekcji](#the-appsharepoint-user-in-audit-records)).
+W poniższej tabeli opisano działania związane z interakcją użytkowników z listami i elementami listy w usłudze SharePoint Online. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
@@ -582,7 +582,7 @@ W poniższej tabeli wymieniono działania synchronizacji plików w usłudze Shar
 
 ### <a name="site-permissions-activities"></a>Działania dotyczące uprawnień witryny
 
-W poniższej tabeli wymieniono zdarzenia związane z przypisywaniem uprawnień w SharePoint i używaniem grup do udzielania (i odwoływania) dostępu do witryn. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Appsharepoint user in audit records (Użytkownik\@ appsharepoint w rekordach inspekcji](#the-appsharepoint-user-in-audit-records)).
+W poniższej tabeli wymieniono zdarzenia związane z przypisywaniem uprawnień w SharePoint i używaniem grup do udzielania (i odwoływania) dostępu do witryn. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
@@ -605,7 +605,7 @@ W poniższej tabeli wymieniono zdarzenia związane z przypisywaniem uprawnień w
 
 ### <a name="site-administration-activities"></a>Działania administracji lokacji
 
-W poniższej tabeli wymieniono zdarzenia wynikające z zadań administracji lokacji w usłudze SharePoint Online. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Appsharepoint user in audit records (Użytkownik\@ appsharepoint w rekordach inspekcji](#the-appsharepoint-user-in-audit-records)).
+W poniższej tabeli wymieniono zdarzenia wynikające z zadań administracji lokacji w usłudze SharePoint Online. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
@@ -805,9 +805,9 @@ Usługa Workplace Analytics zapewnia wgląd w sposób współpracy grup w całej
 |Usunięty wynik|DeletedResult|Analityk usunął wynik zapytania.|
 |Pobrany raport|Pobranyraport|Analityk pobrał plik wyników zapytania.|
 |Wykonane zapytanie|ExecutedQuery|Analityk uruchomił zapytanie.|
-|Zaktualizowane ustawienie dostępu do danych|UpdatedDataAccessSetting|Administrator zaktualizował ustawienia dostępu do danych.|
-|Zaktualizowane ustawienie prywatności|AktualizacjaPrivacySetting|Administrator zaktualizował ustawienia prywatności; na przykład minimalny rozmiar grupy.|
-|Przekazane dane organizacji|UploadedOrgData|Administrator przekazał plik danych organizacji.|
+|Zaktualizowane ustawienie dostępu do danych|UpdatedDataAccessSetting|Administracja zaktualizowane ustawienia dostępu do danych.|
+|Zaktualizowane ustawienie prywatności|AktualizacjaPrivacySetting|Administracja zaktualizowane ustawienia prywatności, na przykład minimalny rozmiar grupy.|
+|Przekazane dane organizacji|UploadedOrgData|Administracja przekazany plik danych organizacji.|
 |Zalogowany użytkownik<sup>*</sup>| UserLoggedIn |Użytkownik zalogował się do swojego konta użytkownika Microsoft 365.|
 |Użytkownik wylogowany<sup>*</sup>| UserLoggedOff |Użytkownik wylogowył się ze swojego konta użytkownika Microsoft 365.
 |Wyświetlone eksplorowanie|ViewedExplore|Wizualizacje przeglądane przez analityków na co najmniej jednej karcie Eksploruj stronę.|
@@ -930,7 +930,7 @@ Jeśli działanie formularzy jest wykonywane przez współautora lub anonimowego
 |Wyświetlona odpowiedź|ViewResponse|Właściciel formularza wyświetla określoną odpowiedź. <br><br>Właściwość ResponseId:string i Właściwość ResponderId:string wskazuje, który wynik jest wyświetlany. <br><br>W przypadku odpowiedzi anonimowej właściwość ResponderId będzie mieć wartość null.|
 |Link do podsumowania utworzonego|GetSummaryLink|Właściciel formularza tworzy link do wyników podsumowania w celu udostępniania wyników.|
 |Link do usuniętego podsumowania|DeleteSummaryLink|Właściciel formularza usuwa link wyników podsumowania.|
-|Zaktualizowany stan wyłudzania informacji o formularzu|UpdatePhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy została zmieniona szczegółowa wartość stanu zabezpieczeń wewnętrznych, niezależnie od tego, czy zmieniono ostateczny stan zabezpieczeń (na przykład formularz jest teraz zamknięty, czy otwarty). Oznacza to, że mogą zostać wyświetlone zduplikowane zdarzenia bez ostatecznej zmiany stanu zabezpieczeń. Możliwe wartości stanu dla tego zdarzenia to:<br/>- Zdjąć <br/>- Take Down by Admin (Wyłączanie przez administratora) <br/>— Odblokowano administratora <br/>— Automatyczne blokowanie <br/>— Automatyczne odblokowywanie <br/>- Zgłoszone przez klienta <br/>- Resetowanie zgłoszonego klienta|
+|Zaktualizowany stan wyłudzania informacji o formularzu|UpdatePhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy została zmieniona szczegółowa wartość stanu zabezpieczeń wewnętrznych, niezależnie od tego, czy zmieniono ostateczny stan zabezpieczeń (na przykład formularz jest teraz zamknięty, czy otwarty). Oznacza to, że mogą zostać wyświetlone zduplikowane zdarzenia bez ostatecznej zmiany stanu zabezpieczeń. Możliwe wartości stanu dla tego zdarzenia to:<br/>- Zdjąć <br/>- Take Down by Administracja <br/>- odblokowane Administracja <br/>— Automatyczne blokowanie <br/>— Automatyczne odblokowywanie <br/>- Zgłoszone przez klienta <br/>- Resetowanie zgłoszonego klienta|
 |Zaktualizowany stan wyłudzania informacji przez użytkownika|UpdateUserPhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy wartość stanu zabezpieczeń użytkownika została zmieniona. Wartość stanu użytkownika w rekordzie inspekcji jest **potwierdzona jako Phisher** , gdy użytkownik utworzył formularz wyłudzania informacji, który został zdjęty przez zespół ds. bezpieczeństwa usługi Microsoft Online. Jeśli administrator odblokuje użytkownika, wartość stanu użytkownika jest ustawiona na **wartość Resetuj jako normalny użytkownik**.|
 |Wysłane formularze Pro zaproszenia|ProInvitation|Użytkownik klika, aby aktywować Pro wersji próbnej.|
 |Zaktualizowane ustawienie formularza<sup>*</sup> |UpdateFormSetting|Właściciel formularza aktualizuje jedno lub wiele ustawień formularza. <br><br>Właściwość FormSettingName:string wskazuje zaktualizowaną nazwę ustawień poufnych. Właściwość NewFormSettings:string wskazuje nazwę zaktualizowanych ustawień i nową wartość. Właściwość thankYouMessageContainsLink:boolean wskazuje zaktualizowany komunikat podziękowania zawiera link url.|
@@ -1015,8 +1015,8 @@ W poniższej tabeli wymieniono działania w wiadomości e-mail z informacją, kt
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:----|:-----|:-----|
-|Zaktualizowane ustawienia prywatności organizacji|UpdatedOrganizationBriefingSettings|Administrator aktualizuje ustawienia prywatności organizacji dla wiadomości e-mail z briefingiem. |
-|Zaktualizowane ustawienia prywatności użytkowników|UpdatedUserBriefingSettings|Administrator aktualizuje ustawienia prywatności użytkownika dla wiadomości e-mail z briefingiem.
+|Zaktualizowane ustawienia prywatności organizacji|UpdatedOrganizationBriefingSettings|Administracja aktualizuje ustawienia prywatności organizacji dla wiadomości e-mail z briefingiem. |
+|Zaktualizowane ustawienia prywatności użytkowników|UpdatedUserBriefingSettings|Administracja aktualizuje ustawienia prywatności użytkownika dla wiadomości e-mail z briefingiem.
 
 ### <a name="myanalytics-activities"></a>Działania myAnalytics
 
@@ -1024,8 +1024,8 @@ W poniższej tabeli wymieniono działania w usłudze MyAnalytics, które są rej
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
-|Zaktualizowano ustawienia myanalytics organizacji|UpdatedOrganizationMyAnalyticsSettings|Administrator aktualizuje ustawienia na poziomie organizacji dla usługi MyAnalytics. |
-|Zaktualizowano ustawienia myanalytics użytkownika|UpdatedUserMyAnalyticsSettings|Administrator aktualizuje ustawienia użytkownika dla usługi MyAnalytics.|
+|Zaktualizowano ustawienia myanalytics organizacji|UpdatedOrganizationMyAnalyticsSettings|Administracja aktualizuje ustawienia na poziomie organizacji dla usługi MyAnalytics. |
+|Zaktualizowano ustawienia myanalytics użytkownika|UpdatedUserMyAnalyticsSettings|Administracja aktualizuje ustawienia użytkownika dla usługi MyAnalytics.|
 
 ### <a name="information-barriers-activities"></a>Działania związane z barierami informacyjnymi
 
@@ -1064,7 +1064,7 @@ W poniższej tabeli wymieniono działania dotyczące raportów użycia, które s
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
-|Zaktualizowane ustawienia prywatności raportu użycia|UpdateUsageReportsPrivacySetting|Administrator zaktualizował ustawienia prywatności raportów użycia. |
+|Zaktualizowane ustawienia prywatności raportu użycia|UpdateUsageReportsPrivacySetting|Administracja zaktualizowane ustawienia prywatności dla raportów użycia. |
 
 ### <a name="exchange-admin-audit-log"></a>dziennik inspekcji administratora Exchange
 
@@ -1130,7 +1130,13 @@ Tak. Interfejs API działania zarządzania Office 365 służy do programowego po
 
 **Czy istnieją inne sposoby uzyskiwania dzienników inspekcji innych niż korzystanie z portalu zabezpieczeń i zgodności lub interfejsu API działania zarządzania Office 365?**
 
-Nie. Są to jedyne dwa sposoby pobierania danych z usługi inspekcji.
+Tak, dzienniki inspekcji można pobrać przy użyciu następujących metod:
+
+- [Interfejs API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
+
+- [Narzędzie do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portal zgodności Microsoft Purview.
+
+- Polecenie cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online programu PowerShell.
 
 **Czy muszę indywidualnie włączyć inspekcję w każdej usłudze, dla której chcę przechwycić dzienniki inspekcji?**
 
