@@ -19,16 +19,16 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak wyświetlać komunikaty poddane kwarantannie i zarządzać nimi dla wszystkich użytkowników w Exchange Online Protection (EOP). Administratorzy w organizacjach z Ochrona usługi Office 365 w usłudze Microsoft Defender mogą również zarządzać plikami poddanymi kwarantannie w usłudze SharePoint Online, OneDrive dla Firm i Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df123916f5f15a8651ba8ad8dcbae95598afbfa8
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 3bd239231cc49684f8b07fb73f33265c9463bad4
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418067"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839804"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator w ramach EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -195,7 +195,7 @@ Po wybraniu komunikatu poddanej kwarantannie z listy w wysuwanym oknie szczegó�
 
   - Nie można zwolnić wiadomości do tego samego adresata więcej niż raz.
   - Na liście potencjalnych adresatów pojawią się tylko adresaci, którzy nie otrzymali wiadomości.
-  - Tylko członkowie grupy ról **Administratorzy zabezpieczeń** mogą wyświetlać **i używać funkcji Prześlij wiadomość do firmy Microsoft w celu ulepszenia wykrywania (fałszywie dodatniego)** i **zezwalania na komunikaty, takie jak te** opcje. 
+  - Tylko członkowie grupy ról **Administratorzy zabezpieczeń** mogą wyświetlać **i używać funkcji Prześlij wiadomość do firmy Microsoft w celu ulepszenia wykrywania (fałszywie dodatniego)** i **zezwalania na komunikaty, takie jak te** opcje.
 
 - ![Ikona udostępniania wiadomości e-mail.](../../media/m365-cc-sc-share-email-icon.png) **Udostępnij wiadomość e-mail**: w wyświetlonym wysuwie dodaj co najmniej jednego adresata, aby otrzymać kopię wiadomości. Po zakończeniu kliknij pozycję **Udostępnij**.
 

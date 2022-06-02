@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a9b75698227c86c58255bad4e3336157c179c4a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: cef91fd3aabb8d857abe8386933c986d62953c42
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419052"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839311"
 ---
 # <a name="list-security-baselines-assessment-configurations"></a>Wyświetl listę konfiguracji oceny punktów odniesienia zabezpieczeń
 
@@ -29,7 +29,7 @@ ms.locfileid: "65419052"
 **Dotyczy:**
 
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
-- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender — aktualizacja](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz doświadczyć Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.- Update](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -66,7 +66,7 @@ W przypadku powodzenia ta metoda zwraca wartość 200 OK z listą konfiguracji p
 
 |Właściwość | Wpisać | Opis |
 |:---|:---|:---|
-|Identyfikator | Ciąg | Unikatowy identyfikator określonej konfiguracji w benchmarku odniesienia.
+|Id | Ciąg | Unikatowy identyfikator określonej konfiguracji w benchmarku odniesienia.
 |Nazwa | Ciąg | Nazwa konfiguracji wyświetlana w testach porównawczych.
 |Opis | Ciąg | Opis konfiguracji wyświetlany w testach porównawczych.
 |Kategorii | Ciąg | Kategoria konfiguracji wyświetlana w testach porównawczych.

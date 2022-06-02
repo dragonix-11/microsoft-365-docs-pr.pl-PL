@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się więcej na temat wdrażania standardowych konfiguracji dzierżawy przy użyciu punktów odniesienia.
-ms.openlocfilehash: 11b8c5ad9adafa4cd6afb6bb4cd19861118e447c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7cdae46105ad225a284bf0ffa8860ad36ffb8691
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647694"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839848"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Omówienie wdrażania standardowych konfiguracji dzierżawy przy użyciu Microsoft 365 Lighthouse planów bazowych 
 
@@ -31,7 +31,7 @@ Możesz wyświetlić domyślny punkt odniesienia i jego kroki wdrażania z pozio
 
 ## <a name="lighthouse-baseline"></a>Punkt odniesienia latarni morskiej
 
-Konfiguracje punktu odniesienia usługi Lighthouse zostały zaprojektowane tak, aby upewnić się, że wszystkie zarządzane dzierżawy są bezpieczne i zgodne. Wybierz pozycję **Punkty odniesienia** w okienku nawigacji po lewej stronie, aby wyświetlić domyślny punkt odniesienia, który ma zastosowanie do wszystkich dzierżaw.  Aby wyświetlić kroki wdrażania zawarte w domyślnej linii bazowej, wybierz pozycję **Wyświetl punkt odniesienia** , aby otworzyć domyślną stronę punktu odniesienia. Wybierz dowolny z kroków wdrażania, aby wyświetlić szczegóły wdrożenia i wpływ na użytkownika.
+Konfiguracje punktu odniesienia usługi Lighthouse zostały zaprojektowane tak, aby upewnić się, że wszystkie zarządzane dzierżawy są bezpieczne i zgodne. Wybierz pozycję **Punkty odniesienia** w okienku nawigacji po lewej stronie, aby wyświetlić domyślny punkt odniesienia, który ma zastosowanie do wszystkich dzierżaw.  Aby wyświetlić kroki wdrażania zawarte w domyślnym punkcie odniesienia, wybierz pozycję **Wyświetl punkt odniesienia** , aby otworzyć domyślną stronę **punktu odniesienia** . Wybierz dowolny z kroków wdrażania, aby wyświetlić szczegóły wdrożenia i wpływ na użytkownika.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Zrzut ekranu przedstawiający domyślną stronę punktu odniesienia.":::
 

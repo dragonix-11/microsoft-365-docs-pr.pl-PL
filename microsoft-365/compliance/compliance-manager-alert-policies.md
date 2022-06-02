@@ -1,5 +1,5 @@
 ---
-title: Alerty i zasady alertów programu Microsoft Purview Compliance Manager
+title: Microsoft Purview Alerty i zasady alertów programu Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak tworzyć alerty dla działań w programie Microsoft Purview Compliance Manager, które mogą mieć wpływ na wynik zgodności.
-ms.openlocfilehash: 32ab22f47d35d64fa72dcc4898f5fff06d20c13c
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: c69e56c693a2994a93b1faccfe6f69fa317d8390
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231742"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839454"
 ---
-# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alerty i zasady alertów programu Microsoft Purview Compliance Manager
+# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Microsoft Purview Alerty i zasady alertów programu Compliance Manager
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -67,19 +67,19 @@ Aby rozpocząć pracę z alertami, zobacz [Wyświetlanie alertów i zarządzanie
 
 W poniższej tabeli przedstawiono, którzy użytkownicy mogą tworzyć i edytować alerty i zasady alertów na podstawie typu roli. Oprócz posiadania roli Menedżera zgodności użytkownicy potrzebują również roli Azure AD w następujący sposób:
 
-- Rola **czytelnika zabezpieczeń** w Azure AD do wyświetlania alertów i zasad alertów
-- Rola **administratora zabezpieczeń** w Azure AD do tworzenia lub aktualizowania zasad alertów
+- Aby wyświetlić alerty i zasady alertów: rola **czytelnika zabezpieczeń** w Azure AD
+- Aby utworzyć lub zaktualizować zasady alertów: **administrator zgodności**, **administrator danych zgodności**, **administrator zabezpieczeń** lub **operator zabezpieczeń** w Azure AD
  
-Dowiedz się więcej o [rolach platformy Azure w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
+Dowiedz się więcej o [rolach platformy Azure w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
 
 | Rola | Może tworzyć i edytować zasady | Może edytować alerty | 
 | :------------- | :-------------: | :------------: |
 | **Administracja programu Compliance Manager**| Tak  | Tak | 
 | **Asesor menedżera zgodności**| Tak | Tak | 
-| **Wkład menedżera zgodności**| Tak | Tak | 
-| **Administrator globalny**| Tak | Tak  | 
+| **Współautor programu Compliance Manager**| Tak | Tak | 
 | **Czytelnik programu Compliance Manager**| Nie | Nie | 
+| **administrator globalny**| Tak | Tak | 
 
 Dowiedz się, jak [ustawić uprawnienia użytkownika i przypisać role dla Menedżera zgodności](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
@@ -105,7 +105,7 @@ Poniżej przedstawiono ustawienia zasad domyślnych:
 
 - Poziom ważności tych alertów jest **średni**.
 
-- Administrator globalny organizacji jest domyślnym odbiorcą powiadomień o alertach.
+- Globalna Administracja dla organizacji jest domyślnym odbiorcą powiadomień o alertach.
 
 - Aby dodać więcej adresatów alertów, wykonaj następujące kroki:
     - Na stronie **Zasady alertów** znajdź **domyślne zasady alertów programu Compliance Manager**.
@@ -190,7 +190,7 @@ Alert może być generowany tylko na podstawie aktywnych zasad. Po wygenerowaniu
 Widok alertów można filtrować, wybierając polecenie **Filtr** nad tabelą na stronie **Alerty** . W okienku **Wysuwany filtr** wybierz jedną z następujących opcji filtru:
 
 - Typ zdarzenia
-- Ważności
+- Waga
 - Stan
 - Użytkownik przypisany do
 - Data wykrycia

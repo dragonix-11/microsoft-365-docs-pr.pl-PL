@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak symulować ataki wyłudzania informacji i szkolić swoich użytkowników w zakresie zapobiegania wyłudzaniu informacji przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8f6ef692885277368c7ca1c194116a4455f52b31
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739654"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839760"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Symulowanie ataku wyłudzającego informacje przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
 
@@ -123,7 +123,7 @@ Jeśli wybierzesz ładunek z listy, szczegóły dotyczące ładunku są wyświet
 
 Jeśli wybierzesz ładunek z listy, klikając nazwę, ikona ![Wyślij ładunek testowy.](../../media/m365-cc-sc-create-icon.png) Na stronie głównej zostanie wyświetlony przycisk **Wyślij test**, na którym można wysłać kopię wiadomości e-mail ładunku do siebie (obecnie zalogowanego użytkownika) w celu przeprowadzenia inspekcji.
 
-Aby utworzyć własny ładunek, kliknij pozycję ![Utwórz ikonę ładunku.](../../media/m365-cc-sc-create-icon.png) **Utwórz ładunek**. Aby uzyskać więcej informacji, zobacz [Create custom payloads for Attack simulation training (Tworzenie niestandardowych ładunków na potrzeby trenowania symulacji ataków](attack-simulation-training-payloads.md)).
+Aby utworzyć własny ładunek, kliknij pozycję ![Utwórz ikonę ładunku.](../../media/m365-cc-sc-create-icon.png) **Utwórz ładunek**. Aby uzyskać więcej informacji, zobacz [Create custom payloads for Attack simulation training (Tworzenie niestandardowych ładunków na potrzeby trenowania symulacji ataków](attack-simulation-training-payloads.md#create-payloads)).
 
 Po zakończeniu kliknij przycisk **Dalej**.
 

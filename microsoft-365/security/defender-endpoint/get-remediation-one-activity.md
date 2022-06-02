@@ -1,7 +1,7 @@
 ---
-title: Uzyskiwanie jednego działania naprawczego według identyfikatora
-description: Zwraca informacje dotyczące określonego działania naprawczego.
-keywords: api, działania naprawcze, api działań naprawczych, uzyskiwanie, zadania naprawcze, działania naprawcze według identyfikatorów,
+title: Pobierz jedną akcję korygującą według identyfikatora
+description: Zwraca informacje dotyczące określonego działania korygowania.
+keywords: apis, korygowanie, interfejs API korygowania, pobieranie, zadania korygowania, korygowanie według identyfikatora,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,24 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6ea413621ad9d2e3b99fc5abdafd843705e7dc87
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: cac976b7c189a44ff206b64bb9fe0f1a5d8c5d4a
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63015806"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839010"
 ---
-# <a name="get-one-remediation-activity-by-id"></a>Uzyskiwanie jednego działania naprawczego według identyfikatora
+# <a name="get-one-remediation-activity-by-id"></a>Pobierz jedną akcję korygującą według identyfikatora
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -41,55 +42,55 @@ ms.locfileid: "63015806"
 
 ## <a name="api-description"></a>Opis interfejsu API
 
-Zwraca informacje dotyczące określonego działania naprawczego. Przedstawia te same kolumny, co kolumna Pobierz [wszystkie](get-remediation-all-activities.md) działania naprawcze", ale zwraca wyniki tylko dla _jednego określonego działania naprawczego_.
+Zwraca informacje dotyczące określonego działania korygowania. Przedstawia te same kolumny co [działanie Pobierz wszystkie korygowanie](get-remediation-all-activities.md)", ale zwraca wyniki _tylko dla jednego określonego działania korygowania_.
 
-[Dowiedz się więcej o działaniach naprawczych](tvm-remediation.md).
+[Dowiedz się więcej o działaniach korygowania](tvm-remediation.md).
 
-## <a name="list-a-specified-remediation-activity-for-id"></a>Lista określonego działania naprawczego dla (ID)
+## <a name="list-a-specified-remediation-activity-for-id"></a>Wyświetl listę określonego działania korygowania (ID)
 
-**Adres URL:** GET: /api/remediationTasks/\{id\}
+**ADRES URL:** GET: /api/remediationTasks/\{id\}
 
 ## <a name="permissions"></a>Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz Używanie interfejsów [API punktów końcowych programu Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 :---|:---|:---
-Aplikacja|RemediationTasks.Read.All|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
-Delegowane (konto służbowe)|RemediationTask.Read.Read|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
+Aplikacja|RemediationTasks.Read.All|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
+Delegowane (konto służbowe)|RemediationTask.Read.Read|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
 
 ## <a name="properties"></a>Właściwości
 
-Właściwość (identyfikator)|Typ danych|Opis|Przykład zwracanej wartości
+Właściwość (ID)|Typ danych|Opis|Przykład zwracanej wartości
 :---|:---|:---|:---
-Kategoria|Ciąg|Kategoria działań naprawczych (konfiguracja oprogramowania/zabezpieczeń)|Oprogramowanie
-completerEmail|Ciąg|Jeśli działania naprawcze zostały wykonane ręcznie przez inną osobę, ta kolumna zawiera adres e-mail tej osoby|Null
-completerId|Ciąg|Jeśli działania naprawcze zostały wykonane ręcznie przez inną osobę, ta kolumna zawiera identyfikator obiektu|Null
-completionMethod|Ciąg|Działania naprawcze mogą być wykonywane "automatycznie" (jeśli wszystkie urządzenia zostały naprawone) lub "ręcznie" przez osobę, która wybierze pozycję "Oznacz jako ukończone".|Automatyczne
-createdOn|DateTime|Godzina utworzenia tego działania naprawczego|2021-01-12T18:54:11.5499478Z
-Opis|Ciąg|Opis tego działania naprawczego|Zaktualizuj program Microsoft Silverlight do nowszej wersji, aby zminimalizować znane luki w zabezpieczeniach wpływających na urządzenia.
-dueOn|DateTime|Termin realizacji tego działania naprawczego ustawiony przez twórcę|2021-01-13T00:00:00Z
+Kategoria|Ciąg|Kategoria działania korygowania (konfiguracja oprogramowania/zabezpieczeń)|Oprogramowanie
+completerEmail|Ciąg|Jeśli działanie korygujące zostało wykonane ręcznie przez kogoś, ta kolumna zawiera adres e-mail|Null
+completerId|Ciąg|Jeśli działanie korygowania zostało wykonane ręcznie przez kogoś, ta kolumna zawiera identyfikator obiektu|Null
+completionMethod|Ciąg|Działanie korygowania może zostać wykonane "automatycznie" (jeśli wszystkie urządzenia zostaną poprawione) lub "ręcznie" przez osobę, która wybierze pozycję "oznacz jako ukończone"|Automatyczne
+createdOn|Datetime|Czas utworzenia tego działania korygowania|2021-01-12T18:54:11.5499478Z
+Opis|Ciąg|Opis tego działania korygowania|Zaktualizuj program Microsoft Silverlight do nowszej wersji, aby ograniczyć znane luki w zabezpieczeniach wpływające na urządzenia.
+dueOn|Datetime|Data ukończenia ustawiona przez twórcę dla tego działania korygowania|2021-01-13T00:00:00Z
 fixedDevices||Liczba urządzeń, które zostały naprawione|2
-Identyfikator|Ciąg|Identyfikator tego działania naprawczego|097d9735-5479-4899-b1b7-77398899df92
-nameId|Ciąg|Powiązana nazwa produktu|Microsoft Silverlight
-Priority (Priorytet)|Ciąg|Priorytet zestawu twórców dla tego działania naprawczego (Wysoki\Średni\Niski)|High (Wysoki)
-productId|Ciąg|Identyfikator produktu pokrewnego|microsoft-_-silverlight
-productivityImpactRemediationType|Ciąg|O kilka zmian w konfiguracji można zażądać tylko w przypadku urządzeń, które nie wpływają na użytkowników. Ta wartość wskazuje wybór między "wszystkimi ujawnione urządzeniami" lub "tylko urządzeniami bez wpływu na użytkownika".|AllExposedAssets
-rbacGroupNames|Ciąg|Nazwy grup urządzeń pokrewnych|[ "Windows Servers", "Windows 11", "Windows 10" ]
-recommendedProgram|Ciąg|Zalecany program do uaktualnienia do wersji|Null
-zalecana firmaVendor|Ciąg|Zaleca się uaktualnienie do wersji zalecanej przez dostawcę|Null
+ID|Ciąg|Identyfikator tego działania korygowania|097d9735-5479-4899-b1b7-77398899df92
+nameId|Ciąg|Pokrewna nazwa produktu|Microsoft Silverlight
+Priority (Priorytet)|Ciąg|Priorytet dla tego działania korygowania ustawionego przez twórcę (High\Medium\Low)|High (Wysoki)
+Productid|Ciąg|Identyfikator produktu pokrewne|microsoft-_-silverlight
+productivityImpactRemediationType|Ciąg|Można zażądać kilku zmian konfiguracji tylko w przypadku urządzeń, które nie mają wpływu na użytkowników. Ta wartość wskazuje wybór między "wszystkimi uwidocznionymi urządzeniami" lub "tylko urządzeniami bez wpływu na użytkownika".|AllExposedAssets
+rbacGroupNames|Ciąg|Nazwy powiązanych grup urządzeń|[ "serwery Windows", "Windows 11", "Windows 10" ]
+recommendedProgram|Ciąg|Zalecany program do uaktualnienia do|Null
+recommendedVendor|Ciąg|Zalecany dostawca do uaktualnienia do|Null
 recommendedVersion|Ciąg|Zalecana wersja do aktualizacji/uaktualnienia do|Null
-relatedComponent|Ciąg|Powiązany składnik tego działania naprawczego (podobny do składnika pokrewnego w przypadku zalecenia zabezpieczeń)|Microsoft Silverlight
+Relatedcomponent|Ciąg|Powiązany składnik tego działania korygowania (podobny do powiązanego składnika zalecenia dotyczącego zabezpieczeń)|Microsoft Silverlight
 requesterEmail|Ciąg|Adres e-mail twórcy|globaladmin@UserName.contoso.com
-requesterId|Ciąg|Identyfikator obiektu Kreatora|r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes|Ciąg|Uwagi (bezpłatny tekst) dodane przez autora w celu działania naprawczego|Null
-Scid|Ciąg|SCID pokrewnego zalecenia zabezpieczeń|Null
-Stan|Ciąg|Stan działań naprawczych (Aktywne/Ukończone)|Aktywny
-statusLastModifiedOn|DateTime|Data zaktualizowania pola stanu|2021-01-12T18:54:11.5499487Z
-targetDevices|Długa|Liczba ujawnionych urządzeń, których działania naprawcze mają zastosowanie|43
-Tytuł|Ciąg|Tytuł tego działania naprawczego|Microsoft Silverlight
-Wpisać|Ciąg|Typ działań naprawczych|Aktualizacja
-vendorId|Ciąg|Nazwa dostawcy pokrewnego|Microsoft
+requesterId|Ciąg|Identyfikator obiektu twórcy|r647211f-2e16-43f2-a480-16ar3a2a796r
+requesterNotes|Ciąg|Notatki (bezpłatny tekst) dodane przez twórcę dla tego działania korygowania|Null
+Scid|Ciąg|SCID powiązanego zalecenia dotyczącego zabezpieczeń|Null
+Stan|Ciąg|Stan działania korygowania (aktywny/ukończony)|Aktywny
+statusLastModifiedOn|Datetime|Data aktualizacji pola stanu|2021-01-12T18:54:11.5499487Z
+targetDevices|Długi|Liczba uwidocznionych urządzeń, których dotyczy to korygowanie|43
+Tytuł|Ciąg|Tytuł tego działania korygowania|Microsoft Silverlight
+Wpisać|Ciąg|Typ korygowania|Aktualizacja
+Vendorid|Ciąg|Nazwa powiązanego dostawcy|Microsoft
 
 ## <a name="example"></a>Przykład
 
@@ -140,8 +141,8 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Metody i właściwości środków zaradczych](get-remediation-methods-properties.md)
-- [Lista wszystkich działań naprawczych](get-remediation-all-activities.md)
-- [Lista dostępnych urządzeń w przypadku jednego działania naprawczego](get-remediation-exposed-devices-activities.md)
-- [Zagrożenia oparte na czynnikach ryzyka & zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
+- [Metody i właściwości korygowania](get-remediation-methods-properties.md)
+- [Wylistuj wszystkie działania korygujące](get-remediation-all-activities.md)
+- [Wylistuj narażone urządzenia z jednym działaniem korygowania](get-remediation-exposed-devices-activities.md)
+- [& zarządzanie lukami w zabezpieczeniach zagrożeń opartych na ryzyku](next-gen-threat-and-vuln-mgt.md)
 - [Luki w zabezpieczeniach w organizacji](tvm-weaknesses.md)

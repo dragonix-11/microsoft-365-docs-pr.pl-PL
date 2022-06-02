@@ -1,7 +1,7 @@
 ---
-title: Ocena luk w zabezpieczeniach oprogramowania na urządzeniu
-description: Odpowiedź interfejsu API jest na urządzenie i zawiera narażone na oprogramowanie zainstalowane na twoich urządzeniach, które są dostępne, oraz wszelkie znane luki w zabezpieczeniach tych produktów. Ta tabela zawiera również informacje o systemie operacyjnym, identyfikatory CVE oraz informacje o ważności luk w zabezpieczeniach.
-keywords: api, apis, ocena eksportu, ocena na urządzenie, raport oceny luk w zabezpieczeniach, ocena luk w zabezpieczeniach urządzenia, raport na temat luki w zabezpieczeniach urządzenia, bezpieczna ocena konfiguracji, bezpieczny raport konfiguracji, ocena luk w oprogramowaniu, raport z lukami w oprogramowaniu, raport o lukach w zabezpieczeniach komputera,
+title: Eksportowanie oceny luk w zabezpieczeniach oprogramowania na urządzenie
+description: Odpowiedź interfejsu API dotyczy poszczególnych urządzeń i zawiera oprogramowanie podatne na zagrożenia zainstalowane na uwidocznionych urządzeniach oraz wszelkie znane luki w zabezpieczeniach tych produktów. Ta tabela zawiera również informacje o systemie operacyjnym, identyfikatory CVE i informacje o ważności luk w zabezpieczeniach.
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,110 +15,111 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d10b96e1d5abfe1c9e9a87b9800dafba081c961
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 86d2b0b09748a83c9b73430c4c6e371ca2e37f31
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013271"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65838993"
 ---
-# <a name="export-software-vulnerabilities-assessment-per-device"></a>Ocena luk w zabezpieczeniach oprogramowania na urządzeniu
+# <a name="export-software-vulnerabilities-assessment-per-device"></a>Eksportowanie oceny luk w zabezpieczeniach oprogramowania na urządzenie
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Wszystkie znane luki w zabezpieczeniach oprogramowania i ich szczegóły dotyczące wszystkich urządzeń są zwracane na podstawie danych urządzenia.
+Zwraca wszystkie znane luki w zabezpieczeniach oprogramowania i ich szczegóły dotyczące wszystkich urządzeń na poszczególnych urządzeniach.
 
-Różne wywołania interfejsu API mają różne typy danych. Ponieważ ilość danych może być duża, można ją pobrać na dwa sposoby:
+Różne wywołania interfejsu API pobierają różne typy danych. Ponieważ ilość danych może być duża, można pobrać je na dwa sposoby:
 
-1. [Eksportowanie odpowiedzi **JSON oceny luk w oprogramowaniu**](#1-export-software-vulnerabilities-assessment-json-response)  Interfejs API ściąga wszystkie dane w organizacji jako odpowiedzi Json. Ta metoda jest najlepsza dla _małych organizacji z urządzeniami o rozmiarze mniejszym niż 100 K_. Odpowiedź jest podzielony na strony, \@więc można użyć pola odata.nextLink z odpowiedzi w celu pobrania następnych wyników.
+1. [Eksportowanie **odpowiedzi JSON** oceny luk w zabezpieczeniach oprogramowania](#1-export-software-vulnerabilities-assessment-json-response)  Interfejs API ściąga wszystkie dane w organizacji jako odpowiedzi JSON. Ta metoda jest najlepsza w _przypadku małych organizacji z urządzeniami o rozmiarze mniejszym niż 100 K_. Odpowiedź jest podzielona na strony, więc możesz użyć \@pola odata.nextLink z odpowiedzi, aby pobrać następne wyniki.
 
-2. [Ocena luk w zabezpieczeniach oprogramowania za **pośrednictwem plików**](#2-export-software-vulnerabilities-assessment-via-files) To rozwiązanie interfejsu API umożliwia szybsze i bardziej niezawodne wyciąganie większych ilości danych. Pliki za pośrednictwem są zalecane dla dużych organizacji, które mają ponad 100 urządzeń o przekierowywce. Ten interfejs API pobiera wszystkie dane w organizacji jako pliki do pobrania. Odpowiedź zawiera adresy URL służące do pobierania wszystkich danych z usługi Azure Storage. Ten interfejs API umożliwia pobieranie wszystkich danych z usługi Azure Storage w następujący sposób:
-   - Wywołaj interfejs API, aby uzyskać listę pobierznych adresów URL wraz ze wszystkimi danymi Twojej organizacji.
-   - Pobierz wszystkie pliki przy użyciu adresów URL pobierania i przetwarzaj dane w sposób, który Ci się podoba.
+2. [Eksportowanie oceny luk w zabezpieczeniach oprogramowania **za pośrednictwem plików**](#2-export-software-vulnerabilities-assessment-via-files) To rozwiązanie interfejsu API umożliwia szybsze i bardziej niezawodne ściąganie większych ilości danych. Usługa Via-files jest zalecana dla dużych organizacji z ponad 100-K urządzeń. Ten interfejs API pobiera wszystkie dane w organizacji jako pliki do pobrania. Odpowiedź zawiera adresy URL umożliwiające pobranie wszystkich danych z usługi Azure Storage. Ten interfejs API umożliwia pobranie wszystkich danych z usługi Azure Storage w następujący sposób:
+   - Wywołaj interfejs API, aby uzyskać listę adresów URL pobierania ze wszystkimi danymi organizacji.
+   - Pobierz wszystkie pliki przy użyciu adresów URL pobierania i przetwórz dane zgodnie z tym, co chcesz.
 
-3. [Odpowiedź JSON oceny luk w **zabezpieczeniach oprogramowania eksportu różnicowego**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Zwraca tabelę z wpisem dla każdej unikatowej kombinacji: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId i EventTimestamp.
-Interfejs API wyciąga dane z Twojej organizacji jako odpowiedzi Json. Odpowiedź jest podzielony na strony, więc można użyć pola @odata.nextLink z odpowiedzi w celu pobrania następnych wyników.
+3. [**Odpowiedź JSON** dotycząca oceny luk w zabezpieczeniach oprogramowania eksportowania różnic](#3-delta-export-software-vulnerabilities-assessment-json-response)  Zwraca tabelę z wpisem dla każdej unikatowej kombinacji elementów: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId i EventTimestamp.
+Interfejs API pobiera dane w organizacji jako odpowiedzi JSON. Odpowiedź jest podzielona na strony, więc możesz użyć pola @odata.nextLink z odpowiedzi, aby pobrać następne wyniki.
 
-   Pełna "ocena luk w oprogramowaniu (odpowiedź JSON)" służy do uzyskania pełnej migawki oceny luk w oprogramowaniu organizacji za pomocą urządzenia. Jednak wywołanie interfejsu API eksportu różnicowego jest używane do pobierania tylko zmian, które miały miejsce między wybraną datą a bieżącą datą (wywołaniem interfejsu API różnicy). Zamiast pełnego eksportu z dużą ilością danych za każdym razem będziesz otrzymywać tylko określone informacje dotyczące nowych, stałych i zaktualizowanych luk w zabezpieczeniach. Za pomocą wywołania interfejsu API odpowiedzi JSON eksportu różnicowego można również obliczać różne wskaźniki KPI, na przykład "ile luk usunięto?". lub "ile nowych luk w zabezpieczeniach dodano do mojej organizacji?".
+   Pełna "ocena luk w zabezpieczeniach oprogramowania (odpowiedź JSON)" służy do uzyskania całej migawki oceny luk w zabezpieczeniach oprogramowania organizacji według urządzenia. Jednak wywołanie interfejsu API eksportu różnicowego służy do pobierania tylko zmian, które wystąpiły między wybraną datą a bieżącą datą (wywołanie interfejsu API "delta"). Zamiast za każdym razem uzyskiwać pełny eksport z dużą ilością danych, uzyskasz tylko konkretne informacje o nowych, stałych i zaktualizowanych lukach w zabezpieczeniach. Wywołanie interfejsu API odpowiedzi JSON eksportu różnicy może być również używane do obliczania różnych wskaźników KPI, takich jak "ile luk w zabezpieczeniach zostało naprawionych?" lub "ile nowych luk w zabezpieczeniach dodano do mojej organizacji?"
 
-   Ponieważ wywołanie interfejsu API odpowiedzi JSON Delta w celu wykorzystania luk w oprogramowaniu zwraca dane tylko dla docelowego zakresu dat, nie jest uznawane za pełne _wyeksportowanie_.
+   Ponieważ wywołanie interfejsu API odpowiedzi JSON eksportu delty dla luk w zabezpieczeniach oprogramowania zwraca dane tylko dla docelowego zakresu dat, nie jest uważane za _pełny eksport_.
 
-Dane zbierane (za pomocą odpowiedzi _Jsona_ lub za pośrednictwem _plików) to_ bieżąca migawka bieżącego stanu. Nie zawiera ona danych historycznych. Aby zbierać dane historyczne, klienci muszą je zapisywać we własnych magazynach danych.
+Zbierane dane (przy użyciu _odpowiedzi JSON_ lub _za pośrednictwem plików_) są bieżącą migawką bieżącego stanu. Nie zawiera danych historycznych. Aby zbierać dane historyczne, klienci muszą zapisywać dane we własnych magazynach danych.
 
 > [!NOTE]
-> O ile nie zaznaczono inaczej, wszystkie wymienione metody **** oceny eksportu są pełne i według **_urządzenia_** (określane również jako **_urządzenia_**).
+> O ile nie wskazano inaczej, wszystkie wymienione metody oceny eksportu to **_pełny eksport_** i **_urządzenie_** (określane również jako **_dla każdego urządzenia_**).
 
-## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. Ocena luk w zabezpieczeniach oprogramowania (odpowiedź JSON)
+## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. Eksportowanie oceny luk w zabezpieczeniach oprogramowania (odpowiedź JSON)
 
 ### <a name="11-api-method-description"></a>Opis metody interfejsu API 1.1
 
-Ta odpowiedź interfejsu API zawiera wszystkie dane zainstalowanego oprogramowania na urządzenie. Zwraca tabelę z wpisem dla każdej unikatowej kombinacji deviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
+Ta odpowiedź interfejsu API zawiera wszystkie dane zainstalowanego oprogramowania na urządzenie. Zwraca tabelę z wpisem dla każdej unikatowej kombinacji elementów DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
-#### <a name="111-limitations"></a>1.1.1 Ograniczenia
+#### <a name="111-limitations"></a>Ograniczenia 1.1.1
 
 - Maksymalny rozmiar strony to 200 000.
-- Ograniczenia stawek dla tego interfejsu API to 30 połączeń na minutę i 1000 połączeń na godzinę.
+- Ograniczenia szybkości dla tego interfejsu API to 30 wywołań na minutę i 1000 wywołań na godzinę.
 
 ### <a name="12-permissions"></a>1.2 Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz Używanie interfejsów [API punktów końcowych programu Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 ---|---|---
-Aplikacja|Vulnerability.Read.All|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
-Delegowane (konto służbowe)|Vulnerability.Read|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
+Aplikacja|Vulnerability.Read.All|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
+Delegowane (konto służbowe)|Luka w zabezpieczeniach.Odczyt|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
 
-### <a name="13-url"></a>1.3 Adres URL
+### <a name="13-url"></a>Adres URL 1.3
 
 ```http
 GET /api/machines/SoftwareVulnerabilitiesByMachine
 ```
 
-### <a name="14-parameters"></a>1.4 Parametry
+### <a name="14-parameters"></a>Parametry 1.4
 
-- pageSize (wartość domyślna = 50 000): Liczba wyników w odpowiedzi.
-- $top: Liczba wyników do zwrócenia (nie zwraca @odata.nextLink, a więc nie powoduje zwrócenia wszystkich danych).
+- pageSize (wartość domyślna = 50 000): liczba wyników w odpowiedzi.
+- $top: liczba wyników do zwrócenia (nie zwraca @odata.nextLink, więc nie ściąga wszystkich danych).
 
-### <a name="15-properties"></a>1,5 Właściwości
+### <a name="15-properties"></a>1.5 Właściwości
 
 > [!NOTE]
 >
-> - Każdy rekord to około 1 KB danych. Należy wziąć to pod uwagę podczas wybierania odpowiedniego parametru pageSize.
-> - Niektóre dodatkowe kolumny mogą być zwracane w odpowiedzi. Te kolumny są tymczasowe i mogą zostać usunięte. Należy używać tylko kolumn z dokumentami.
-> - Właściwości zdefiniowane w poniższej tabeli są wyświetlane alfabetycznie według identyfikatora właściwości. Podczas uruchamiania tego interfejsu API wynik nie musi być zwracany w tej samej kolejności, w tej tabeli.
+> - Każdy rekord to około 1 KB danych. Należy wziąć to pod uwagę podczas wybierania prawidłowego parametru pageSize.
+> - W odpowiedzi mogą zostać zwrócone dodatkowe kolumny. Te kolumny są tymczasowe i mogą zostać usunięte. Użyj tylko udokumentowanych kolumn.
+> - Właściwości zdefiniowane w poniższej tabeli są wyświetlane alfabetycznie według identyfikatora właściwości. Podczas uruchamiania tego interfejsu API wynikowe dane wyjściowe nie muszą być zwracane w tej samej kolejności wymienionej w tej tabeli.
 
 <br>
 
 ****
 
-Właściwość (identyfikator)|Typ danych|Opis|Przykład zwracanej wartości
+Właściwość (ID)|Typ danych|Opis|Przykład zwracanej wartości
 :---|:---|:---|:---
-CveId|Ciąg|Unikatowy identyfikator przypisany do luki w zabezpieczeniach systemu cve (Common Vulnerabilities and Exposures).|CVE-2020-15992
-CvssScore|Ciąg|Wynik CVSS dla CVE.|6.2
-DeviceId|Ciąg|Unikatowy identyfikator urządzenia w usłudze.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+CveId|Ciąg|Unikatowy identyfikator przypisany do luki w zabezpieczeniach w systemie Common Vulnerabilities and Exposures (CVE).|CVE-2020-15992
+CvssScore|Ciąg|Wynik CVSS CVE.|6.2
+Deviceid|Ciąg|Unikatowy identyfikator urządzenia w usłudze.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|Ciąg|W pełni kwalifikowana nazwa domeny (FQDN) urządzenia.|johnlaptop.europe.contoso.com
-DiskPaths|Arraystring\[\]|Dowód dysku, że produkt jest zainstalowany na urządzeniu.|[ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel|Ciąg|Poziom wykorzystania tej luki (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
-FirstSeenTimestamp|Ciąg|Po raz pierwszy cvE tego produktu zostało widziane na urządzeniu.|2020-11-03 10:13:34.8476880
-Identyfikator|Ciąg|Unikatowy identyfikator rekordu.|123ABG55_573AG&mnp!
-LastSeenTimestamp|Ciąg|Ostatni czas, gdy cvE było widoczne na urządzeniu.|2020-11-03 10:13:34.8476880
-OSPlatform|Ciąg|Platforma systemu operacyjnego działającego na urządzeniu. Ta właściwość wskazuje określone systemy operacyjne z odmianami tej samej rodziny, takimi jak Windows 10 i Windows 11. Aby uzyskać szczegółowe informacje, zobacz obsługiwane systemy operacyjne i platformy obsługiwane przez program tvm.|Windows 10 i Windows 11
-RbacGroupName|Ciąg|Grupa kontroli dostępu opartej na rolach (RBAC, role based access control). Jeśli to urządzenie nie jest przypisane do żadnej grupy RBAC, wartością będzie "Nieprzypisane". Jeśli organizacja nie zawiera żadnych grup RBAC, wartość będzie mieć wartość "Brak".|Serwery
-ZalecenieReference|Ciąg|Odwołanie do identyfikatora zalecenia związanego z tym oprogramowaniem.|va-_-microsoft-_-silverlight
-RecommendedSecurityUpdate (opcjonalnie)|Ciąg|Nazwa lub opis aktualizacji zabezpieczeń udostępnianej przez dostawcę oprogramowania w celu rozwiązania problemu.|Aktualizacje zabezpieczeń z kwietnia 2020 r.
-RecommendedSecurityUpdateId (opcjonalnie)|Ciąg|Identyfikator odpowiednich aktualizacji zabezpieczeń lub identyfikator odpowiednich wytycznych lub artykułów z bazy wiedzy (KB)|4550961
-RegistryPaths|Arraystring\[\]|Dowód rejestru, że produkt jest zainstalowany w urządzeniu.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
-Nazwa_oprogramowania|Ciąg|Nazwa produktu.|Chrome
+DiskPaths|Ciąg tablicy\[\]|Dysk wskazuje, że produkt jest zainstalowany na urządzeniu.|[ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
+ExploitabilityLevel|Ciąg|Poziom wykorzystania tej luki w zabezpieczeniach (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
+FirstSeenTimestamp|Ciąg|Po raz pierwszy cve tego produktu był widoczny na urządzeniu.|2020-11-03 10:13:34.8476880
+Id|Ciąg|Unikatowy identyfikator rekordu.|123ABG55_573AG&mnp!
+LastSeenTimestamp|Ciąg|Ostatni raz cve był widoczny na urządzeniu.|2020-11-03 10:13:34.8476880
+OSPlatform|Ciąg|Platforma systemu operacyjnego działającego na urządzeniu. Ta właściwość wskazuje określone systemy operacyjne z odmianami w tej samej rodzinie, takimi jak Windows 10 i Windows 11. Aby uzyskać szczegółowe informacje, zobacz obsługiwane systemy operacyjne i platformy tvm.|Windows10 i Windows 11
+RbacGroupName|Ciąg|Grupa kontroli dostępu opartej na rolach (RBAC). Jeśli to urządzenie nie jest przypisane do żadnej grupy RBAC, wartość będzie mieć wartość "Nieprzypisane". Jeśli organizacja nie zawiera żadnych grup RBAC, wartość będzie mieć wartość "Brak".|Serwery
+ZalecenieReferencja|Ciąg|Odwołanie do identyfikatora zalecenia związanego z tym oprogramowaniem.|_va-microsoft-silverlight_
+RecommendedSecurityUpdate (opcjonalnie)|Ciąg|Nazwa lub opis aktualizacji zabezpieczeń udostępnionej przez dostawcę oprogramowania w celu rozwiązania problemu z luką w zabezpieczeniach.|Aktualizacje zabezpieczeń z kwietnia 2020 r.
+RecommendedSecurityUpdateId (opcjonalnie)|Ciąg|Identyfikator odpowiednich aktualizacji zabezpieczeń lub identyfikatora odpowiednich wskazówek lub artykułów baza wiedzy (KB)|4550961
+RegistryPaths|Ciąg tablicy\[\]|Rejestr wskazuje, że produkt jest zainstalowany na urządzeniu.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
+SoftwareName|Ciąg|Nazwa produktu programowego.|Chrome
 SoftwareVendor|Ciąg|Nazwa dostawcy oprogramowania.|Google
 SoftwareVersion|Ciąg|Numer wersji produktu oprogramowania.|81.0.4044.138
-VulnerabilitySeverityLevel|Ciąg|Poziom ważności przypisany do luki w zabezpieczeniach na podstawie wyniku CVSS i dynamicznych czynników, na które wpływa poziom zagrożeń.|Średni
+VulnerabilitySeverityLevel|Ciąg|Poziom ważności przypisany do luki w zabezpieczeniach na podstawie wyniku CVSS i czynników dynamicznych, na które wpływa poziom zagrożenia.|Średni
 |
 
 ### <a name="16-examples"></a>1.6 Przykłady
@@ -129,7 +130,7 @@ VulnerabilitySeverityLevel|Ciąg|Poziom ważności przypisany do luki w zabezpie
 GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitiesByMachine?pageSize=5
 ```
 
-#### <a name="162-response-example"></a>1.6.2 Przykład odpowiedzi
+#### <a name="162-response-example"></a>Przykład odpowiedzi 1.6.2
 
 ```json
 {
@@ -261,54 +262,54 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
 }
 ```
 
-## <a name="2-export-software-vulnerabilities-assessment-via-files"></a>2. Ocena luk w zabezpieczeniach oprogramowania (za pośrednictwem plików)
+## <a name="2-export-software-vulnerabilities-assessment-via-files"></a>2. Eksportowanie oceny luk w zabezpieczeniach oprogramowania (za pośrednictwem plików)
 
-### <a name="21-api-method-description"></a>Opis metody interfejsu API 2.1
+### <a name="21-api-method-description"></a>Opis metody interfejsu API w wersji 2.1
 
-Ta odpowiedź interfejsu API zawiera wszystkie dane zainstalowanego oprogramowania na urządzenie. Zwraca tabelę z wpisem dla każdej unikatowej kombinacji deviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
+Ta odpowiedź interfejsu API zawiera wszystkie dane zainstalowanego oprogramowania na urządzenie. Zwraca tabelę z wpisem dla każdej unikatowej kombinacji elementów DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
 #### <a name="212-limitations"></a>2.1.2 Ograniczenia
 
-Ograniczenia stawek dla tego interfejsu API to 5 połączeń na minutę i 20 połączeń na godzinę.
+Ograniczenia szybkości dla tego interfejsu API to 5 wywołań na minutę i 20 wywołań na godzinę.
 
 ### <a name="22-permissions"></a>2.2 Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz Używanie interfejsów [API punktów końcowych programu Microsoft Defender, aby uzyskać szczegółowe informacje](apis-intro.md).
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender, aby uzyskać szczegółowe informacje](apis-intro.md).
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 ---|---|---
-Aplikacja|Vulnerability.Read.All|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
-Delegowane (konto służbowe)|Vulnerability.Read|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
+Aplikacja|Vulnerability.Read.All|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
+Delegowane (konto służbowe)|Luka w zabezpieczeniach.Odczyt|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
 
-### <a name="23-url"></a>2.3 Adres URL
+### <a name="23-url"></a>Adres URL 2.3
 
 ```http
 GET /api/machines/SoftwareVulnerabilitiesExport
 ```
 
-### <a name="24-parameters"></a>2.4 Parametry
+### <a name="24-parameters"></a>Parametry 2.4
 
-- sasValidHours: liczba godzin, przez które mają być ważne adresy URL pobierania (maksymalnie 24 godziny).
+- sasValidHours: liczba godzin, przez które adresy URL pobierania będą ważne (maksymalnie 24 godziny).
 
-### <a name="25-properties"></a>2,5 Właściwości
+### <a name="25-properties"></a>2.5 Właściwości
 
 > [!NOTE]
 >
-> - Pliki są skompresowane w formacie GZIP & wieloliniowym formacie Json.
-> - Adresy URL pobierania są ważne tylko przez 3 godziny. w przeciwnym razie możesz użyć parametru.
-> - Aby uzyskać maksymalną szybkość pobierania danych, możesz się upewnić, że pobierasz pliki z tego samego regionu platformy Azure, w którym znajdują się Twoje dane.
+> - Pliki są skompresowane gzip & w wielowierszowym formacie JSON.
+> - Adresy URL pobierania są ważne tylko przez 3 godziny; W przeciwnym razie można użyć parametru .
+> - Aby uzyskać maksymalną szybkość pobierania danych, możesz upewnić się, że pobierasz dane z tego samego regionu świadczenia usługi Azure, w którym znajdują się twoje dane.
 >
-> - Każdy rekord to w przybliżeniu 1 KB danych. Należy wziąć to pod uwagę podczas wybierania odpowiedniego parametru pageSize.
-> - Niektóre dodatkowe kolumny mogą być zwracane w odpowiedzi. Te kolumny są tymczasowe i mogą zostać usunięte. Należy używać tylko kolumn z dokumentami.
+> - Każdy rekord to około 1 KB danych. Należy wziąć to pod uwagę podczas wybierania prawidłowego parametru pageSize.
+> - W odpowiedzi mogą zostać zwrócone dodatkowe kolumny. Te kolumny są tymczasowe i mogą zostać usunięte. Użyj tylko udokumentowanych kolumn.
 
 <br>
 
 ****
 
-Właściwość (identyfikator)|Typ danych|Opis|Przykład zwracanej wartości
+Właściwość (ID)|Typ danych|Opis|Przykład zwracanej wartości
 :---|:---|:---|:---
-Eksportowanie plików|arraystring\[\]|Lista adresów URL pobierania plików z bieżącą migawką organizacji.|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|Ciąg|Godzina wygenerowania eksportu.|2021-05-20T08:00:00Z
+Eksportowanie plików|ciąg tablicy\[\]|Lista adresów URL pobierania plików przechowujących bieżącą migawkę organizacji.|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+GeneratedTime|Ciąg|Czas wygenerowania eksportu.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Przykłady
@@ -319,7 +320,7 @@ GeneratedTime|Ciąg|Godzina wygenerowania eksportu.|2021-05-20T08:00:00Z
 GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabilitiesExport
 ```
 
-#### <a name="262-response-example"></a>2.6.2 Przykład odpowiedzi
+#### <a name="262-response-example"></a>Przykład odpowiedzi 2.6.2
 
 ```json
 {
@@ -333,31 +334,31 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## <a name="3-delta-export-software-vulnerabilities-assessment-json-response"></a>3. Ocena luk w oprogramowaniu eksportu różnicowego (odpowiedź JSON)
+## <a name="3-delta-export-software-vulnerabilities-assessment-json-response"></a>3. Ocena luk w zabezpieczeniach oprogramowania eksportowania różnicowego (odpowiedź JSON)
 
 ### <a name="31-api-method-description"></a>Opis metody interfejsu API 3.1
 
-Zwraca tabelę z wpisem dla każdej unikatowej kombinacji DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Interfejs API wyciąga dane z Twojej organizacji jako odpowiedzi Json. Odpowiedź jest podzielony na strony, więc można użyć pola @odata.nextLink z odpowiedzi w celu pobrania następnych wyników. W przeciwieństwie do pełnej oceny luk w oprogramowaniu (odpowiedź JSON) (która jest używana do uzyskania pełnej migawki oceny luk w oprogramowaniu organizacji według urządzenia), wywołanie interfejsu API odpowiedzi JSON (delta export JSON) jest używane do uzyskiwania zdalnego dostępu tylko do zmian, które miały miejsce między wybraną datą a bieżącą datą (wywołaniem interfejsu API zmiany). Zamiast pełnego eksportu z dużą ilością danych za każdym razem będziesz otrzymywać tylko określone informacje dotyczące nowych, stałych i zaktualizowanych luk w zabezpieczeniach. Za pomocą wywołania interfejsu API odpowiedzi JSON eksportu różnicowego można również obliczać różne wskaźniki KPI, na przykład "ile luk usunięto?". lub "ile nowych luk w zabezpieczeniach dodano do mojej organizacji?".
+Zwraca tabelę z wpisem dla każdej unikatowej kombinacji elementów DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Interfejs API pobiera dane w organizacji jako odpowiedzi JSON. Odpowiedź jest podzielona na strony, więc możesz użyć pola @odata.nextLink z odpowiedzi, aby pobrać następne wyniki. W przeciwieństwie do pełnej oceny luk w zabezpieczeniach oprogramowania (odpowiedź JSON) (która służy do uzyskania całej migawki oceny luk w zabezpieczeniach oprogramowania organizacji według urządzenia) wywołanie interfejsu API odpowiedzi JSON eksportu różnicowego służy do pobierania tylko zmian, które wystąpiły między wybraną datą a bieżącą datą (wywołanie interfejsu API "delta"). Zamiast za każdym razem uzyskiwać pełny eksport z dużą ilością danych, uzyskasz tylko konkretne informacje o nowych, stałych i zaktualizowanych lukach w zabezpieczeniach. Wywołanie interfejsu API odpowiedzi JSON eksportu różnicy może być również używane do obliczania różnych wskaźników KPI, takich jak "ile luk w zabezpieczeniach zostało naprawionych?" lub "ile nowych luk w zabezpieczeniach dodano do mojej organizacji?"
 
 > [!NOTE]
-> Zdecydowanie zalecane jest użycie pełnej oceny luk w oprogramowaniu eksportu przez wywołanie interfejsu API urządzenia co najmniej raz w tygodniu, a te dodatkowe zmiany luk w oprogramowaniu eksportu w interfejsie API urządzenia (delta) wywołują wszystkie pozostałe dni tygodnia. W przeciwieństwie do innych interfejsów API odpowiedzi JSON assessments, eksport różnicowy nie jest pełnym eksportem. Eksport różnicowy obejmuje tylko zmiany, które miały miejsce między wybraną datą a bieżącą datą (wywołanie interfejsu API zmiany).
+> Zdecydowanie zaleca się używanie pełnej oceny luk w zabezpieczeniach oprogramowania eksportu przez wywołanie interfejsu API urządzenia co najmniej raz w tygodniu, a te dodatkowe zmiany luk w zabezpieczeniach oprogramowania eksportu według interfejsu API urządzenia (delta) wywołają wszystkie pozostałe dni tygodnia. W przeciwieństwie do innych interfejsów API odpowiedzi JSON ocen "eksport różnicowy" nie jest pełnym eksportem. Eksport różnicowy obejmuje tylko zmiany, które wystąpiły między wybraną datą a bieżącą datą (wywołanie interfejsu API "delta").
 
 #### <a name="311-limitations"></a>3.1.1 Ograniczenia
 
 - Maksymalny rozmiar strony to 200 000.
 - Parametr sinceTime ma maksymalnie 14 dni.
-- Ograniczenia stawek dla tego interfejsu API to 30 połączeń na minutę i 1000 połączeń na godzinę.
+- Ograniczenia szybkości dla tego interfejsu API to 30 wywołań na minutę i 1000 wywołań na godzinę.
 
 ### <a name="32-permissions"></a>3.2 Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz Używanie interfejsów [API punktów końcowych programu Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 ---|---|---
-Aplikacja|Vulnerability.Read.All|"Odczyt informacji o lukach w zabezpieczeniach i zarządzaniu zagrożeniami"
-Delegowane (konto służbowe)|Vulnerability.Read|"Odczyt informacji o lukach w zabezpieczeniach i zarządzaniu zagrożeniami"
+Aplikacja|Vulnerability.Read.All|"Odczytywanie informacji o lukach w zabezpieczeniach dotyczących zarządzania zagrożeniami i lukami w zabezpieczeniach"
+Delegowane (konto służbowe)|Luka w zabezpieczeniach.Odczyt|"Odczytywanie informacji o lukach w zabezpieczeniach dotyczących zarządzania zagrożeniami i lukami w zabezpieczeniach"
 
-### <a name="33-url"></a>3.3 Adres URL
+### <a name="33-url"></a>Adres URL 3.3
 
 ```http
 GET /api/machines/SoftwareVulnerabilityChangesByMachine
@@ -365,57 +366,57 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### <a name="34-parameters"></a>3.4 Parametry
 
-- sinceTime (wymagane): Dane między wybraną godziną a dniem dzisiejszym.
+- sinceTime (wymagane): dane między wybranym czasem a dniem dzisiejszym.
 - pageSize (wartość domyślna = 50 000): liczba wyników w odpowiedzi.
-- $top: liczba wyników do zwrócenia (nie zwraca ciągu @odata.nextLink, a więc nie powoduje zwrócenia wszystkich danych).
+- $top: liczba wyników do zwrócenia (nie zwraca @odata.nextLink, więc nie ściąga wszystkich danych).
 
 ### <a name="35-properties"></a>3.5 Właściwości
 
-Każdy zwrócony rekord zawiera wszystkie dane z pełnego oceny luk w oprogramowaniu eksportu według interfejsu API urządzenia oraz jeszcze dwa pola:  _**EventTimestamp**_ i _**Status**_.
+Każdy zwrócony rekord zawiera wszystkie dane z pełnej oceny luk w zabezpieczeniach oprogramowania eksportu według interfejsu API urządzenia oraz dwa kolejne pola:  _**EventTimestamp**_ i _**Status**_.
 
 > [!NOTE]
 >
-> - Niektóre dodatkowe kolumny mogą być zwracane w odpowiedzi. Te kolumny są tymczasowe i mogą zostać usunięte, dlatego należy używać tylko kolumn z dokumentami.
-> - Właściwości zdefiniowane w poniższej tabeli są wyświetlane alfabetycznie według identyfikatora właściwości. Podczas uruchamiania tego interfejsu API wynik nie musi być zwracany w tej samej kolejności, w tej tabeli.
+> - W odpowiedzi mogą zostać zwrócone dodatkowe kolumny. Te kolumny są tymczasowe i mogą zostać usunięte, więc użyj tylko udokumentowanych kolumn.
+> - Właściwości zdefiniowane w poniższej tabeli są wyświetlane alfabetycznie według identyfikatora właściwości. Podczas uruchamiania tego interfejsu API wynikowe dane wyjściowe nie muszą być zwracane w tej samej kolejności wymienionej w tej tabeli.
 
 <br>
 
 ****
 
-Właściwość (identyfikator)|Typ danych|Opis|Przykład zwracanej wartości
+Właściwość (ID)|Typ danych|Opis|Przykład zwróconej wartości
 :---|:---|:---|:---
-CveId |Ciąg|Unikatowy identyfikator przypisany do luki w zabezpieczeniach systemu cve (Common Vulnerabilities and Exposures).|CVE-2020-15992  
-CvssScore|Ciąg|Wynik CVSS dla CVE.|6.2  
-DeviceId|Ciąg|Unikatowy identyfikator urządzenia w usłudze.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+CveId |Ciąg|Unikatowy identyfikator przypisany do luki w zabezpieczeniach w systemie Common Vulnerabilities and Exposures (CVE).|CVE-2020-15992  
+CvssScore|Ciąg|Wynik CVSS CVE.|6.2  
+Deviceid|Ciąg|Unikatowy identyfikator urządzenia w usłudze.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
 DeviceName|Ciąg|W pełni kwalifikowana nazwa domeny (FQDN) urządzenia.|johnlaptop.europe.contoso.com  
-DiskPaths|Array[string]|Dowód dysku, że produkt jest zainstalowany na urządzeniu.|["C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
-EventTimestamp|Ciąg|Czas znalezionego zdarzenia różnicowego.|2021-01-11T11:06:08.291Z
-ExploitabilityLevel|Ciąg|Poziom wykorzystania tej luki (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
-FirstSeenTimestamp|Ciąg|Po raz pierwszy cvE tego produktu zostało widziane na urządzeniu.|2020-11-03 10:13:34.8476880  
-Identyfikator|Ciąg|Unikatowy identyfikator rekordu.|123ABG55_573AG&mnp!  
-LastSeenTimestamp|Ciąg|Ostatni czas, gdy cvE było widoczne na urządzeniu.|2020-11-03 10:13:34.8476880  
-OSPlatform|Ciąg|Platforma systemu operacyjnego działającego na urządzeniu; poszczególnych systemów operacyjnych z odmianami tej samej rodziny, takimi jak Windows 10 i Windows 11. Aby uzyskać szczegółowe informacje, zobacz obsługiwane systemy operacyjne i platformy obsługiwane przez program tvm.|Windows 10 i Windows 11 
-RbacGroupName|Ciąg|Grupa kontroli dostępu opartej na rolach (RBAC, role based access control). Jeśli to urządzenie nie jest przypisane do żadnej grupy RBAC, wartością będzie "Nieprzypisane". Jeśli organizacja nie zawiera żadnych grup RBAC, wartość będzie mieć wartość "Brak".|Serwery  
-ZalecenieReference|ciąg|Odwołanie do identyfikatora zalecenia związanego z tym oprogramowaniem.|va--microsoft--silverlight  
-RecommendedSecurityUpdate |Ciąg|Nazwa lub opis aktualizacji zabezpieczeń udostępnianej przez dostawcę oprogramowania w celu rozwiązania problemu.|Aktualizacje zabezpieczeń z kwietnia 2020 r.  
-RecommendedSecurityUpdateId |Ciąg|Identyfikator odpowiednich aktualizacji zabezpieczeń lub identyfikator odpowiednich wytycznych lub artykułów z bazy wiedzy (KB)|4550961  
-RegistryPaths |Array[string]|Dowód rejestru, że produkt jest zainstalowany w urządzeniu.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
-Nazwa_oprogramowania|Ciąg|Nazwa produktu.|Chrome  
+DiskPaths|Tablica[ciąg]|Dysk wskazuje, że produkt jest zainstalowany na urządzeniu.|["C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
+EventTimestamp|Ciąg|Czas znalezienia tego zdarzenia różnicowego.|2021-01-11T11:06:08.291Z
+ExploitabilityLevel|Ciąg|Poziom wykorzystania tej luki w zabezpieczeniach (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
+FirstSeenTimestamp|Ciąg|Po raz pierwszy cve tego produktu był widoczny na urządzeniu.|2020-11-03 10:13:34.8476880  
+Id|Ciąg|Unikatowy identyfikator rekordu.|123ABG55_573AG&mnp!  
+LastSeenTimestamp|Ciąg|Ostatni raz cve był widoczny na urządzeniu.|2020-11-03 10:13:34.8476880  
+OSPlatform|Ciąg|Platforma systemu operacyjnego działającego na urządzeniu; specyficznych systemów operacyjnych z odmianami w tej samej rodzinie, takimi jak Windows 10 i Windows 11. Aby uzyskać szczegółowe informacje, zobacz obsługiwane systemy operacyjne i platformy tvm.|Windows10 i Windows 11 
+RbacGroupName|Ciąg|Grupa kontroli dostępu opartej na rolach (RBAC). Jeśli to urządzenie nie jest przypisane do żadnej grupy RBAC, wartość będzie mieć wartość "Nieprzypisane". Jeśli organizacja nie zawiera żadnych grup RBAC, wartość będzie mieć wartość "Brak".|Serwery  
+ZalecenieReferencja|Ciąg|Odwołanie do identyfikatora zalecenia związanego z tym oprogramowaniem.|va--microsoft--silverlight  
+RecommendedSecurityUpdate |Ciąg|Nazwa lub opis aktualizacji zabezpieczeń udostępnionej przez dostawcę oprogramowania w celu rozwiązania problemu z luką w zabezpieczeniach.|Aktualizacje zabezpieczeń z kwietnia 2020 r.  
+RecommendedSecurityUpdateId |Ciąg|Identyfikator odpowiednich aktualizacji zabezpieczeń lub identyfikatora odpowiednich wskazówek lub artykułów baza wiedzy (KB)|4550961  
+RegistryPaths |Tablica[ciąg]|Rejestr wskazuje, że produkt jest zainstalowany na urządzeniu.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
+SoftwareName|Ciąg|Nazwa produktu programowego.|Chrome  
 SoftwareVendor|Ciąg|Nazwa dostawcy oprogramowania.|Google  
 SoftwareVersion|Ciąg|Numer wersji produktu oprogramowania.|81.0.4044.138  
-Stan|Ciąg|**Nowa** (w przypadku nowej luki w zabezpieczeniach wprowadzona na urządzeniu) ( **1)** Naprawiona (jeśli ta luka nie będzie już istnieć na urządzeniu, co oznacza, że została usunięta). (2) **Zaktualizowano** (jeśli zmieniono lukę w zabezpieczeniach na urządzeniu. Możliwe zmiany to: wynik CVSS, poziom wykorzystania, poziom ważności, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Naprawione
-VulnerabilitySeverityLevel|Ciąg|Poziom ważności przypisany do luki w zabezpieczeniach. Jest on oparty na wynikach CVSS i dynamicznych czynnikach, na które wpływa poziom zagrożeń.|Średni
+Stan|Ciąg|**Nowe** (dla nowej luki w zabezpieczeniach wprowadzonej na urządzeniu) (1) **Naprawiono** (jeśli ta luka w zabezpieczeniach nie istnieje już na urządzeniu, co oznacza, że została skorygowana). (2) **Zaktualizowano** (jeśli luka w zabezpieczeniach na urządzeniu uległa zmianie. Możliwe zmiany to: wynik CVSS, poziom możliwości wykorzystania, poziom ważności, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Stałe
+VulnerabilitySeverityLevel|Ciąg|Poziom ważności przypisany do luki w zabezpieczeniach. Jest ona oparta na wyniku CVSS i czynnikach dynamicznych, na które wpływa poziom zagrożenia.|Średni
 |
 
-#### <a name="clarifications"></a>Objaśnienia
+#### <a name="clarifications"></a>Wyjaśnienia
 
-- Jeśli oprogramowanie zostało zaktualizowane z wersji 1.0 do wersji 2.0 i obie wersje są dostępne dla CVE-A, otrzymasz dwa oddzielne zdarzenia:
-   1. Rozwiązano: Poprawiono CVE-A w wersji 1.0.
-   1. Nowy: dodano CVE-A w wersji 2.0.
+- Jeśli oprogramowanie zostało zaktualizowane z wersji 1.0 do wersji 2.0, a obie wersje są udostępniane CVE-A, otrzymasz dwa oddzielne zdarzenia:
+   1. Naprawiono: naprawiono cve-a w wersji 1.0.
+   1. Nowość: dodano cve-a w wersji 2.0.
 
-- Jeśli w oprogramowaniu z wersją 1.0 dosłyszono określoną lukę (na przykład CVE-A) w oprogramowaniu z wersją 1.0, a kilka dni później to oprogramowanie zostało zaktualizowane do wersji 2.0, która zawierała również tę samą cvE-A, otrzymasz następujące dwa rozdzielone zdarzenia:
-   1. Rozwiązano: CVE-X, FirstSeenTimestamp 10 stycznia, wersja 1,0.
-   1. Nowy: CVE-X, FirstSeenTimestamp 10 stycznia, wersja 2.0.
+- Jeśli określona luka w zabezpieczeniach (na przykład CVE-A) została po raz pierwszy wyświetlona w określonym czasie (na przykład 10 stycznia) w oprogramowaniu w wersji 1.0, a kilka dni później oprogramowanie zostało zaktualizowane do wersji 2.0, która również została uwidoczniona dla tego samego CVE-A, otrzymasz te dwa oddzielone zdarzenia:
+   1. Naprawiono: CVE-X, FirstSeenTimestamp 10 stycznia, wersja 1,0.
+   1. Nowość: CVE-X, FirstSeenTimestamp 10 stycznia, wersja 2.0.
 
 ### <a name="36-examples"></a>3.6 Przykłady
 
@@ -425,7 +426,7 @@ VulnerabilitySeverityLevel|Ciąg|Poziom ważności przypisany do luki w zabezpie
 GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityChangesByMachine?pageSize=5&sinceTime=2021-05-19T18%3A35%3A49.924Z
 ```
 
-#### <a name="362-response-example"></a>3.6.2 Przykład odpowiedzi
+#### <a name="362-response-example"></a>Przykład odpowiedzi 3.6.2
 
 ```json
 {
@@ -579,11 +580,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Eksportowanie metod i właściwości oceny na urządzenie](get-assessment-methods-properties.md)
-- [Eksportowanie bezpiecznego oceny konfiguracji na urządzenie](get-assessment-secure-config.md)
+- [Eksportowanie metod oceny i właściwości na urządzenie](get-assessment-methods-properties.md)
+- [Eksportowanie oceny bezpiecznej konfiguracji na urządzenie](get-assessment-secure-config.md)
 - [Eksportowanie oceny spisu oprogramowania na urządzenie](get-assessment-software-inventory.md)
 
 Inne powiązane
 
-- [Zagrożenia oparte na czynnikach ryzyka & zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
+- [& zarządzanie lukami w zabezpieczeniach zagrożeń opartych na ryzyku](next-gen-threat-and-vuln-mgt.md)
 - [Luki w zabezpieczeniach w organizacji](tvm-weaknesses.md)

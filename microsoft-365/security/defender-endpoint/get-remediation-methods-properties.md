@@ -1,7 +1,7 @@
 ---
-title: Metody i właściwości działań naprawczych
-description: Odpowiedź interfejsu API zawiera zagrożenia & zarządzanie lukami w zabezpieczeniach działania naprawcze utworzone w dzierżawie. Możesz zażądać wszystkich działań naprawczych, tylko jednego działania naprawczego lub informacji o urządzeniach ujawnionych w wybranym zadaniu naprawczym.
-keywords: api, działania naprawcze, api działań naprawczych, uzyskiwanie, zadania naprawcze, metody rozwiązywania problemów, właściwości rozwiązywania problemów,
+title: Metody i właściwości akcji korygowania
+description: Odpowiedź interfejsu API zawiera działania korygujące & zarządzanie lukami w zabezpieczeniach zagrożeń utworzone w dzierżawie. Możesz zażądać wszystkich działań korygowania, tylko jednego działania korygowania lub informacji o uwidocznionych urządzeniach dla wybranego zadania korygowania.
+keywords: apis, korygowanie, interfejs API korygowania, pobieranie, zadania korygowania, metody korygowania, właściwości korygowania,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,24 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 124a44f6a04e4e4e77d80ac91ed4da169e2a4aae
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 14f57d6590d580e0145abc2da788f184c88a721e
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013281"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840260"
 ---
-# <a name="remediation-activity-methods-and-properties"></a>Metody i właściwości działań naprawczych
+# <a name="remediation-activity-methods-and-properties"></a>Metody i właściwości akcji korygowania
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -39,59 +40,59 @@ ms.locfileid: "63013281"
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Odpowiedź interfejsu API zawiera [informacje & zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md) działania naprawcze, które zostały utworzone w dzierżawie.
+Odpowiedź interfejsu API zawiera działania korygowania [& zarządzanie lukami w zabezpieczeniach zagrożeń](next-gen-threat-and-vuln-mgt.md) utworzone w dzierżawie.
 
 ## <a name="methods"></a>Metody
 
 Metoda|Typ danych|Opis
 :---|:---|:---
-[Lista wszystkich działań naprawczych](get-remediation-all-activities.md)|Kolekcja badania|Zwraca informacje o wszystkich działaniach naprawczych.
-[Lista dostępnych urządzeń w przypadku jednego działania naprawczego](get-remediation-exposed-devices-activities.md)|Jednostka badania|Zwraca informacje o urządzeniach ujawnionych dla określonego działania naprawczego.
-[Uzyskiwanie jednego działania naprawczego według identyfikatora](get-remediation-one-activity.md)|Jednostka badania|Zwraca informacje dotyczące określonego działania naprawczego.
+[Wylistuj wszystkie działania korygujące](get-remediation-all-activities.md)|Kolekcja badania|Zwraca informacje o wszystkich działaniach korygowania.
+[Wylistuj narażone urządzenia z jednym działaniem korygowania](get-remediation-exposed-devices-activities.md)|Jednostka badania|Zwraca informacje o uwidocznianych urządzeniach dla określonego działania korygowania.
+[Pobierz jedną akcję korygującą według identyfikatora](get-remediation-one-activity.md)|Jednostka badania|Zwraca informacje dotyczące określonego działania korygowania.
 
-Dowiedz się więcej o [działaniach naprawczych](tvm-remediation.md).
+Dowiedz się więcej o [działaniach korygowania](tvm-remediation.md).
 
 ## <a name="properties"></a>Właściwości
 
 Identyfikator właściwości|Typ danych|Opis
 :---|:---|:---
-Kategoria|Ciąg|Kategoria działań naprawczych (konfiguracja oprogramowania/zabezpieczeń)
-completerEmail|Ciąg|Jeśli działania naprawcze zostały wykonane ręcznie przez inną osobę, ta kolumna zawiera adres e-mail tej osoby
-completerId|Ciąg|Jeśli działania naprawcze zostały wykonane ręcznie przez inną osobę, ta kolumna zawiera identyfikator obiektu
-completionMethod|Ciąg|Działania naprawcze mogą być wykonywane "automatycznie" (jeśli wszystkie urządzenia zostały naprawone) lub "ręcznie" przez osobę, która wybierze pozycję "Oznacz jako ukończone".
-createdOn|DateTime|Godzina utworzenia tego działania naprawczego
-Opis|Ciąg|Opis tego działania naprawczego
-dueOn|DateTime|Termin realizacji tego działania naprawczego ustawiony przez twórcę
+Kategoria|Ciąg|Kategoria działania korygowania (konfiguracja oprogramowania/zabezpieczeń)
+completerEmail|Ciąg|Jeśli działanie korygujące zostało wykonane ręcznie przez kogoś, ta kolumna zawiera adres e-mail
+completerId|Ciąg|Jeśli działanie korygowania zostało wykonane ręcznie przez kogoś, ta kolumna zawiera identyfikator obiektu
+completionMethod|Ciąg|Działanie korygowania może zostać wykonane "automatycznie" (jeśli wszystkie urządzenia zostaną poprawione) lub "ręcznie" przez osobę, która wybierze pozycję "oznacz jako ukończone".
+createdOn|Datetime|Czas utworzenia tego działania korygowania
+Opis|Ciąg|Opis tego działania korygowania
+dueOn|Datetime|Data ukończenia ustawiona przez twórcę dla tego działania korygowania
 fixedDevices||Liczba urządzeń, które zostały naprawione
-Identyfikator|Ciąg|Identyfikator tego działania naprawczego
-nameId|Ciąg|Powiązana nazwa produktu
-Priority (Priorytet)|Ciąg|Priorytet zestawu twórców dla tego działania naprawczego (Wysoki\Średni\Niski)
-productId|Ciąg|Identyfikator produktu pokrewnego
-productivityImpactRemediationType|Ciąg|O kilka zmian w konfiguracji można zażądać tylko w przypadku urządzeń, które nie wpływają na użytkowników. Ta wartość wskazuje wybór między "wszystkimi ujawnione urządzeniami" lub "tylko urządzeniami bez wpływu na użytkownika".
-rbacGroupNames|Ciąg|Nazwy grup urządzeń pokrewnych
-recommendedProgram|Ciąg|Zalecany program do uaktualnienia do wersji
-zalecana firmaVendor|Ciąg|Zaleca się uaktualnienie do wersji zalecanej przez dostawcę
+ID|Ciąg|Identyfikator tego działania korygowania
+nameId|Ciąg|Pokrewna nazwa produktu
+Priority (Priorytet)|Ciąg|Priorytet dla tego działania korygowania ustawionego przez twórcę (High\Medium\Low)
+Productid|Ciąg|Identyfikator produktu pokrewne
+productivityImpactRemediationType|Ciąg|Można zażądać kilku zmian konfiguracji tylko w przypadku urządzeń, które nie mają wpływu na użytkowników. Ta wartość wskazuje wybór między "wszystkimi uwidocznionymi urządzeniami" lub "tylko urządzeniami bez wpływu na użytkownika".
+rbacGroupNames|Ciąg|Nazwy powiązanych grup urządzeń
+recommendedProgram|Ciąg|Zalecany program do uaktualnienia do
+recommendedVendor|Ciąg|Zalecany dostawca do uaktualnienia do
 recommendedVersion|Ciąg|Zalecana wersja do aktualizacji/uaktualnienia do
-relatedComponent|Ciąg|Powiązany składnik tego działania naprawczego (podobny do składnika pokrewnego w przypadku zalecenia zabezpieczeń)
+Relatedcomponent|Ciąg|Powiązany składnik tego działania korygowania (podobny do powiązanego składnika zalecenia dotyczącego zabezpieczeń)
 requesterEmail|Ciąg|Adres e-mail twórcy
-requesterId|Ciąg|Identyfikator obiektu Kreatora
-requesterNotes|Ciąg|Uwagi (bezpłatny tekst) dodane przez autora w celu działania naprawczego
-Scid|Ciąg|SCID pokrewnego zalecenia zabezpieczeń
-Stan|Ciąg|Stan działań naprawczych (Aktywne/Ukończone)
-statusLastModifiedOn|DateTime|Data zaktualizowania pola stanu
-targetDevices|Długa|Liczba ujawnionych urządzeń, których działania naprawcze mają zastosowanie
-Tytuł|Ciąg|Tytuł tego działania naprawczego
-Wpisać|Ciąg|Typ działań naprawczych
-vendorId|Ciąg|Nazwa dostawcy pokrewnego
+requesterId|Ciąg|Identyfikator obiektu twórcy
+requesterNotes|Ciąg|Notatki (bezpłatny tekst) dodane przez twórcę dla tego działania korygowania
+Scid|Ciąg|SCID powiązanego zalecenia dotyczącego zabezpieczeń
+Stan|Ciąg|Stan działania korygowania (aktywny/ukończony)
+statusLastModifiedOn|Datetime|Data aktualizacji pola stanu
+targetDevices|Długi|Liczba uwidocznionych urządzeń, których dotyczy to korygowanie
+Tytuł|Ciąg|Tytuł tego działania korygowania
+Wpisać|Ciąg|Typ korygowania
+Vendorid|Ciąg|Nazwa powiązanego dostawcy
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Uzyskiwanie jednego działania naprawczego według identyfikatora](get-remediation-one-activity.md)
+- [Pobierz jedną akcję korygującą według identyfikatora](get-remediation-one-activity.md)
 
-- [Lista wszystkich działań naprawczych](get-remediation-all-activities.md)
+- [Wylistuj wszystkie działania korygujące](get-remediation-all-activities.md)
 
-- [Lista dostępnych urządzeń w przypadku jednego działania naprawczego](get-remediation-exposed-devices-activities.md)
+- [Wylistuj narażone urządzenia z jednym działaniem korygowania](get-remediation-exposed-devices-activities.md)
 
-- [Zagrożenia oparte na czynnikach ryzyka & zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
+- [& zarządzanie lukami w zabezpieczeniach zagrożeń opartych na ryzyku](next-gen-threat-and-vuln-mgt.md)
 
 - [Luki w zabezpieczeniach w organizacji](tvm-weaknesses.md)

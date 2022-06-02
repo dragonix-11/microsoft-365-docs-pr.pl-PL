@@ -18,16 +18,16 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować skrzynkę pocztową do zbierania wiadomości e-mail dotyczących spamu i wyłudzania informacji zgłaszanych przez użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b73144b678140cd30917b4fd687663ff0a455a3
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: f09054a4ee57ce7105a7b2daffc65be5b91dc8f6
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144800"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839673"
 ---
 # <a name="user-reported-message-settings"></a>Ustawienia komunikatów zgłoszonych przez użytkownika
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -40,7 +40,7 @@ W Microsoft 365 organizacji z Exchange Online skrzynkami pocztowymi można okre�
 - [Dodatek Raport wyłudzający informacje](enable-the-report-phish-add-in.md)
 - [Narzędzia do raportowania innych firm](#third-party-reporting-tools)
 
-Dostarczanie wiadomości zgłoszonych przez użytkownika do niestandardowej skrzynki pocztowej zamiast bezpośrednio do firmy Microsoft umożliwia administratorom selektywne i ręczne zgłaszanie wiadomości do firmy Microsoft przy użyciu [przesyłania przez administratora](admin-submission.md). Te ustawienia były wcześniej nazywane zasadami przesyłania użytkowników.
+Dostarczanie wiadomości zgłoszonych przez użytkownika do niestandardowej skrzynki pocztowej zamiast bezpośrednio do firmy Microsoft umożliwia administratorom selektywne i ręczne zgłaszanie wiadomości do firmy Microsoft przy użyciu [Administracja przesyłania](admin-submission.md). Te ustawienia były wcześniej nazywane zasadami przesyłania użytkowników.
 
   > [!NOTE]
   > Jeśli raportowanie zostało [wyłączone w Outlook w sieci Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), włączenie w tym miejscu komunikatów zgłoszonych przez użytkownika spowoduje zastąpienie tego ustawienia i umożliwi użytkownikom ponowne zgłaszanie komunikatów w Outlook w sieci Web.
@@ -49,17 +49,15 @@ Dostarczanie wiadomości zgłoszonych przez użytkownika do niestandardowej skrz
 
 Poniższe artykuły umożliwiają skonfigurowanie wymaganych wymagań wstępnych, aby wiadomości zgłaszane przez użytkownika przechodziły do niestandardowej skrzynki pocztowej:
 
-- Pomiń filtrowanie spamu w niestandardowej skrzynce pocztowej, tworząc regułę przepływu poczty exchange, aby ustawić poziom ufności spamu. Zobacz [Używanie umowy EAC do tworzenia reguły przepływu poczty, która ustawia listę SCL wiadomości](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) , aby ustawić listę SCL na **wartość Pomijanie filtrowania spamu**.
+- [Identyfikowanie niestandardowej skrzynki pocztowej jako skrzynki pocztowej SecOps w zaawansowanych zasadach dostarczania](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
-- [Utwórz zasady ochrony przed złośliwym oprogramowaniem](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies), które obejmują niestandardową skrzynkę pocztową, w której jest wyłączone automatyczne przeczyszczanie o wartości zero godzin (ZAP) dla złośliwego oprogramowania (sekcja \>**Ustawienia ochrony** **Włącz automatyczne przeczyszczanie bez godzin dla złośliwego oprogramowania** nie jest zaznaczona).
-
-- [Utwórz zasady ochrony przed spamem](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) , które obejmują niestandardową skrzynkę pocztową, w której zap dla spamu i zap dla wyłudzania informacji są wyłączone (**zero godzin auto przeczyszczania** sekcja \> **Włączone zero godzin auto przeczyszczania (ZAP)** nie jest zaznaczone).
+- [Utwórz zasady ochrony przed złośliwym oprogramowaniem](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) dla niestandardowej skrzynki pocztowej, w której jest wyłączone automatyczne przeczyszczanie o godzinie zerowej (ZAP) dla złośliwego oprogramowania (sekcja \>**Ustawienia ochrony** **Włącz automatyczne przeczyszczanie bez godziny dla złośliwego oprogramowania** nie jest zaznaczona).
 
 Jeśli masz Ochrona usługi Office 365 w usłudze Microsoft Defender, należy również skonfigurować następujące ustawienia, aby nasze zaawansowane filtrowanie nie miało wpływu na użytkowników zgłaszających komunikaty:
 
-- [Utwórz zasady Sejf Links zawierające niestandardową](set-up-safe-links-policies.md) skrzynkę pocztową, w której skanowanie Sejf Łącza jest wyłączone (**wybierz akcję dla nieznanych potencjalnie złośliwych adresów URL w** sekcji \> Wiadomości **Wyłączone**).
+- [Utwórz zasady Sejf Łącza](set-up-safe-links-policies.md) dla niestandardowej skrzynki pocztowej, w której skanowanie Sejf Łącza jest wyłączone (**wybierz akcję dla nieznanych potencjalnie złośliwych adresów URL w** sekcji \> Wiadomości **Wyłączone**).
 
-- [Utwórz zasady załączników Sejf](set-up-safe-attachments-policies.md), które zawierają niestandardową skrzynkę pocztową, w której skanowanie Sejf Załączniki jest wyłączone (**Sejf Załączniki — nieznane złośliwe oprogramowanie — sekcja** \> **Wyłączona**).
+- [Utwórz zasady załączników Sejf](set-up-safe-attachments-policies.md) dla niestandardowej skrzynki pocztowej, w której skanowanie Sejf Załączniki jest wyłączone (Sejf Sekcja \>**odpowiedzi nieznanego złośliwego oprogramowania załączników** **jest wyłączona**).
 
 Po upewnieniu się, że skrzynka pocztowa spełnia wszystkie odpowiednie wymagania wstępne, możesz użyć procedur w tym artykule, aby skonfigurować skrzynkę pocztową przesyłania użytkowników.
 

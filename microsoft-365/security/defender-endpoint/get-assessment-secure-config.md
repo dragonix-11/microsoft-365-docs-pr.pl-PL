@@ -1,7 +1,7 @@
 ---
-title: Eksportowanie bezpiecznego oceny konfiguracji na urządzenie
-description: Zwraca pozycję dla każdej unikatowej kombinacji wartości DeviceId, ConfigurationId.
-keywords: api, apis, ocena eksportu, ocena na urządzenie, raport oceny luk w zabezpieczeniach, ocena luk w zabezpieczeniach urządzenia, raport na temat luki w zabezpieczeniach urządzenia, bezpieczna ocena konfiguracji, bezpieczny raport konfiguracji, ocena luk w oprogramowaniu, raport z lukami w oprogramowaniu, raport o lukach w zabezpieczeniach komputera,
+title: Eksportowanie oceny bezpiecznej konfiguracji na urządzenie
+description: Zwraca wpis dla każdej unikatowej kombinacji identyfikatora DeviceId, ConfigurationId.
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,100 +15,101 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2fc9870871641bb7239a6dcdcdf9f54334726384
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 6d706dc8552490b7705cc23fca4751f810211d47
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013293"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839303"
 ---
-# <a name="export-secure-configuration-assessment-per-device"></a>Eksportowanie bezpiecznego oceny konfiguracji na urządzenie
+# <a name="export-secure-configuration-assessment-per-device"></a>Eksportowanie oceny bezpiecznej konfiguracji na urządzenie
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Zwraca wszystkie konfiguracje i ich stan na podstawie  per-device.
+Zwraca wszystkie konfiguracje i ich stan na poszczególnych urządzeniach.
 
-Istnieją różne wywołania interfejsu API w celu uzyskania różnych typów danych. Ponieważ ilość danych może być duża, można ją pobrać na dwa sposoby:
+Istnieją różne wywołania interfejsu API umożliwiające pobieranie różnych typów danych. Ponieważ ilość danych może być duża, można pobrać je na dwa sposoby:
 
-- [Eksportowanie bezpiecznej odpowiedzi **JSON oceny konfiguracji**](#1-export-secure-configuration-assessment-json-response): Interfejs API ściąga wszystkie dane w organizacji jako odpowiedzi Json. Ta metoda jest najlepsza dla _małych organizacji z urządzeniami o rozmiarze mniejszym niż 100 K_. Odpowiedź jest podzielony na strony, \@więc można użyć pola odata.nextLink z odpowiedzi w celu pobrania następnych wyników.
+- [Eksportuj **odpowiedź JSON** oceny bezpiecznej konfiguracji](#1-export-secure-configuration-assessment-json-response): interfejs API ściąga wszystkie dane w organizacji jako odpowiedzi w formacie JSON. Ta metoda jest najlepsza w _przypadku małych organizacji z urządzeniami o rozmiarze mniejszym niż 100 K_. Odpowiedź jest podzielona na strony, więc możesz użyć \@pola odata.nextLink z odpowiedzi, aby pobrać następne wyniki.
 
-- [Eksportowanie bezpiecznego **oceny konfiguracji za pośrednictwem**](#2-export-secure-configuration-assessment-via-files) plików: To rozwiązanie interfejsu API umożliwia szybsze i bardziej niezawodne wyciąganie większych ilości danych. Dlatego jest to zalecane dla dużych organizacji, które mają ponad 100 urządzeń o przekierowywowej sieci WI-Do. Ten interfejs API pobiera wszystkie dane w organizacji jako pliki do pobrania. Odpowiedź zawiera adresy URL służące do pobierania wszystkich danych z usługi Azure Storage. Ten interfejs API umożliwia pobieranie wszystkich danych z usługi Azure Storage w następujący sposób:
+- [Eksportowanie bezpiecznej oceny konfiguracji **za pośrednictwem plików**](#2-export-secure-configuration-assessment-via-files): to rozwiązanie interfejsu API umożliwia szybsze i bardziej niezawodne ściąganie większych ilości danych. W związku z tym jest zalecane w przypadku dużych organizacji z ponad 100-K urządzeń. Ten interfejs API pobiera wszystkie dane w organizacji jako pliki do pobrania. Odpowiedź zawiera adresy URL umożliwiające pobranie wszystkich danych z usługi Azure Storage. Ten interfejs API umożliwia pobranie wszystkich danych z usługi Azure Storage w następujący sposób:
 
-  - Wywołaj interfejs API, aby uzyskać listę pobierznych adresów URL wraz ze wszystkimi danymi Twojej organizacji.
+  - Wywołaj interfejs API, aby uzyskać listę adresów URL pobierania ze wszystkimi danymi organizacji.
 
-  - Pobierz wszystkie pliki przy użyciu adresów URL pobierania i przetwarzaj dane w sposób, który Ci się podoba.
+  - Pobierz wszystkie pliki przy użyciu adresów URL pobierania i przetwórz dane zgodnie z tym, co chcesz.
 
-Dane zbierane (za pomocą odpowiedzi _JSON_ lub za pośrednictwem _plików) to_ bieżąca migawka stanu bieżącego, która nie zawiera danych historycznych. Aby zbierać dane historyczne, klienci muszą zapisać te dane we własnych magazynach danych.
+Zbierane dane (przy użyciu _odpowiedzi JSON_ lub _za pośrednictwem plików_) są bieżącą migawką bieżącego stanu i nie zawierają danych historycznych. Aby zbierać dane historyczne, klienci muszą zapisywać dane we własnych magazynach danych.
 
 > [!NOTE]
-> O ile nie zaznaczono inaczej, wszystkie wymienione metody **** oceny eksportu są pełne i według **_urządzenia_** (określane również jako **_urządzenia_**).
+> O ile nie wskazano inaczej, wszystkie wymienione metody oceny eksportu to **_pełny eksport_** i **_urządzenie_** (określane również jako **_dla każdego urządzenia_**).
 
-## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Eksportowanie bezpiecznej oceny konfiguracji (odpowiedź JSON)
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Eksportowanie oceny bezpiecznej konfiguracji (odpowiedź JSON)
 
 ### <a name="11-api-method-description"></a>Opis metody interfejsu API 1.1
 
-Ta odpowiedź interfejsu API zawiera ocenę bezpiecznej konfiguracji na twoich ujawnionych urządzeniach i zwraca wpis dla każdej unikatowej kombinacji deviceId, ConfigurationId.
+Ta odpowiedź interfejsu API zawiera ocenę bezpiecznej konfiguracji na uwidocznionych urządzeniach i zwraca wpis dla każdej unikatowej kombinacji identyfikatora DeviceId, ConfigurationId.
 
-#### <a name="111-limitations"></a>1.1.1 Ograniczenia
+#### <a name="111-limitations"></a>Ograniczenia 1.1.1
 
 - Maksymalny rozmiar strony to 200 000.
 
-- Ograniczenia stawek dla tego interfejsu API to 30 połączeń na minutę i 1000 połączeń na godzinę.
+- Ograniczenia szybkości dla tego interfejsu API to 30 wywołań na minutę i 1000 wywołań na godzinę.
 
 ### <a name="12-permissions"></a>1.2 Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz Używanie interfejsów [API punktów końcowych programu Microsoft Defender](apis-intro.md) , aby uzyskać szczegółowe informacje.
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender](apis-intro.md), aby uzyskać szczegółowe informacje.
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 ---|---|---
-Aplikacja|Vulnerability.Read.All|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
-Delegowane (konto służbowe)|Vulnerability.Read|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
+Aplikacja|Vulnerability.Read.All|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
+Delegowane (konto służbowe)|Luka w zabezpieczeniach.Odczyt|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
 
-### <a name="13-url"></a>1.3 Adres URL
+### <a name="13-url"></a>Adres URL 1.3
 
 ```http
 GET /api/machines/SecureConfigurationsAssessmentByMachine
 ```
 
-### <a name="14-parameters"></a>1.4 Parametry
+### <a name="14-parameters"></a>Parametry 1.4
 
-- wartość domyślna \(rozmiar strony = 50 000\): Liczba wyników w odpowiedzi.
-- \$top: Liczba wyników do zwrócenia \(nie zwraca \@wyniku odata.nextLink i dlatego nie wyciąga wszystkich danych\).
+- pageSize \(default = 50 000\): liczba wyników w odpowiedzi.
+- \$top: Liczba wyników do zwrócenia \(nie zwraca \@wartości odata.nextLink i dlatego nie ściąga wszystkich danych\).
 
-### <a name="15-properties"></a>1,5 Właściwości
+### <a name="15-properties"></a>1.5 Właściwości
 
 > [!NOTE]
 >
-> - Właściwości zdefiniowane w poniższej tabeli są wyświetlane alfabetycznie według identyfikatora właściwości. Podczas uruchamiania tego interfejsu API wynik nie musi być zwracany w tej samej kolejności, w tej tabeli.
-> - Niektóre dodatkowe kolumny mogą być zwracane w odpowiedzi. Te kolumny są tymczasowe i mogą zostać usunięte. Należy używać tylko kolumn z dokumentami.
+> - Właściwości zdefiniowane w poniższej tabeli są wyświetlane alfabetycznie według identyfikatora właściwości. Podczas uruchamiania tego interfejsu API wynikowe dane wyjściowe nie muszą być zwracane w tej samej kolejności wymienionej w tej tabeli.
+> - W odpowiedzi mogą zostać zwrócone dodatkowe kolumny. Te kolumny są tymczasowe i mogą zostać usunięte. Użyj tylko udokumentowanych kolumn.
 
 <br>
 
 ****
 
-Właściwość (identyfikator)|Typ danych|Opis|Przykład zwracanej wartości
+Właściwość (ID)|Typ danych|Opis|Przykład zwracanej wartości
 ---|---|---|---
-ConfigurationCategory|ciąg|Kategoria lub grupowanie, do których należy konfiguracja: Aplikacja, system operacyjny, sieć, konta, kontrolki zabezpieczeń|Mechanizmy kontroli zabezpieczeń
-ConfigurationId|ciąg|Unikatowy identyfikator określonej konfiguracji|scid-10000
-ConfigurationImpact|ciąg|Wpływ oceny konfiguracji na ogólny wynik konfiguracji (1–10)|9
-ConfigurationName|ciąg|Nazwa wyświetlana konfiguracji|Urządzenia w programie Microsoft Defender dla punktu końcowego
-ConfigurationSubcategory|ciąg|Podkategoria lub podgrupowanie, do którego należy konfiguracja. W wielu przypadkach opisano konkretne funkcje.|Urządzenia wyniesne
-DeviceId|ciąg|Unikatowy identyfikator urządzenia w usłudze.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|ciąg|W pełni kwalifikowana nazwa domeny (FQDN) urządzenia.|johnlaptop.europe.contoso.com
-IsApplicable|bool|Wskazuje, czy konfiguracja lub zasady mają zastosowanie.|true
-IsCompliant|bool|Wskazuje, czy konfiguracja lub zasady są poprawnie skonfigurowane.|fałsz
-IsExpectedUserImpact|bool|Wskazuje, czy jeśli konfiguracja zostanie zastosowana, będzie mieć wpływ na użytkowników|true
-OSPlatform|ciąg|Platforma systemu operacyjnego działającego na urządzeniu. To oznacza określone systemy operacyjne, w tym odmiany w obrębie tej samej rodziny, takie jak Windows 10 i Windows 11. Aby uzyskać szczegółowe informacje, zobacz obsługiwane systemy operacyjne i platformy obsługiwane przez program tvm.|Windows 10 i Windows 11
-RbacGroupName|ciąg|Grupa kontroli dostępu opartej na rolach (RBAC, role based access control). Jeśli to urządzenie nie jest przypisane do żadnej grupy RBAC, wartością będzie "Nieprzypisane". Jeśli organizacja nie zawiera żadnych grup RBAC, wartość będzie mieć wartość "Brak".|Serwery
-ZalecenieReference|ciąg|Odwołanie do identyfikatora zalecenia związanego z tym oprogramowaniem.|sca-_-scid-20000
-Timestamp|ciąg|Ostatni czas, gdy konfiguracja była widziana na urządzeniu|2020-11-03 10:13:34.8476880
+ConfigurationCategory|Ciąg|Kategoria lub grupowanie, do których należy konfiguracja: aplikacja, system operacyjny, sieć, konta, mechanizmy kontroli zabezpieczeń|Mechanizmy kontroli zabezpieczeń
+ConfigurationId|Ciąg|Unikatowy identyfikator określonej konfiguracji|scid-10000
+ConfigurationImpact|Ciąg|Oceniany wpływ konfiguracji na ogólny wynik konfiguracji (1–10)|9
+Configurationname|Ciąg|Nazwa wyświetlana konfiguracji|Dołączanie urządzeń do Ochrona punktu końcowego w usłudze Microsoft Defender
+KonfiguracjaSubcategory|Ciąg|Podkategoria lub podgrupa, do której należy konfiguracja. W wielu przypadkach opisano określone możliwości lub funkcje.|Dołączanie urządzeń
+Deviceid|Ciąg|Unikatowy identyfikator urządzenia w usłudze.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|Ciąg|W pełni kwalifikowana nazwa domeny (FQDN) urządzenia.|johnlaptop.europe.contoso.com
+IsApplicable|Bool|Wskazuje, czy konfiguracja lub zasady mają zastosowanie|True
+IsCompliant|Bool|Wskazuje, czy konfiguracja lub zasady są prawidłowo skonfigurowane|False
+IsExpectedUserImpact|Bool|Wskazuje, czy będzie to miało wpływ na użytkownika, jeśli konfiguracja zostanie zastosowana|True
+OSPlatform|Ciąg|Platforma systemu operacyjnego działającego na urządzeniu. Wskazuje to określone systemy operacyjne, w tym odmiany w tej samej rodzinie, takie jak Windows 10 i Windows 11. Aby uzyskać szczegółowe informacje, zobacz obsługiwane systemy operacyjne i platformy tvm.|Windows10 i Windows 11
+RbacGroupName|Ciąg|Grupa kontroli dostępu opartej na rolach (RBAC). Jeśli to urządzenie nie jest przypisane do żadnej grupy RBAC, wartość będzie mieć wartość "Nieprzypisane". Jeśli organizacja nie zawiera żadnych grup RBAC, wartość będzie mieć wartość "Brak".|Serwery
+ZalecenieReferencja|Ciąg|Odwołanie do identyfikatora zalecenia związanego z tym oprogramowaniem.|sca-_-scid-20000
+Sygnatury czasowej|Ciąg|Ostatni raz konfiguracja była widoczna na urządzeniu|2020-11-03 10:13:34.8476880
 |
 
 ### <a name="16-examples"></a>1.6 Przykłady
@@ -119,7 +120,7 @@ Timestamp|ciąg|Ostatni czas, gdy konfiguracja była widziana na urządzeniu|202
 GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5
 ```
 
-#### <a name="162-response-example"></a>1.6.2 Przykład odpowiedzi
+#### <a name="162-response-example"></a>Przykład odpowiedzi 1.6.2
 
 ```json
 {
@@ -215,26 +216,26 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 }
 ```
 
-## <a name="2-export-secure-configuration-assessment-via-files"></a>2. Eksportowanie bezpiecznego oceniania konfiguracji (za pośrednictwem plików)
+## <a name="2-export-secure-configuration-assessment-via-files"></a>2. Eksportowanie oceny bezpiecznej konfiguracji (za pośrednictwem plików)
 
-### <a name="21-api-method-description"></a>Opis metody interfejsu API 2.1
+### <a name="21-api-method-description"></a>Opis metody interfejsu API w wersji 2.1
 
-Ta odpowiedź interfejsu API zawiera ocenę bezpiecznej konfiguracji na twoich ujawnionych urządzeniach i zwraca wpis dla każdej unikatowej kombinacji deviceId, ConfigurationId.
+Ta odpowiedź interfejsu API zawiera ocenę bezpiecznej konfiguracji na uwidocznionych urządzeniach i zwraca wpis dla każdej unikatowej kombinacji identyfikatora DeviceId, ConfigurationId.
 
 #### <a name="212-limitations"></a>2.1.2 Ograniczenia
 
-Ograniczenia stawek dla tego interfejsu API to 5 połączeń na minutę i 20 połączeń na godzinę.
+Ograniczenia szybkości dla tego interfejsu API to 5 wywołań na minutę i 20 wywołań na godzinę.
 
 ### <a name="22-permissions"></a>2.2 Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz Używanie interfejsów [API punktów końcowych programu Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 ---|---|---
-Aplikacja|Vulnerability.Read.All|\'Odczytywanie informacji Zarządzanie zagrożeniami i lukami o lukach w zabezpieczeniach\'
-Delegowane (konto służbowe)|Vulnerability.Read|\'Odczytywanie informacji Zarządzanie zagrożeniami i lukami o lukach w zabezpieczeniach\'
+Aplikacja|Vulnerability.Read.All|\'Przeczytaj informacje o lukach w zabezpieczeniach "Zarządzanie zagrożeniami i lukami"\'
+Delegowane (konto służbowe)|Luka w zabezpieczeniach.Odczyt|\'Przeczytaj informacje o lukach w zabezpieczeniach "Zarządzanie zagrożeniami i lukami"\'
 
-### <a name="23-url"></a>2.3 Adres URL
+### <a name="23-url"></a>Adres URL 2.3
 
 ```http
 GET /api/machines/SecureConfigurationsAssessmentExport
@@ -242,24 +243,24 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ### <a name="parameters"></a>Parametry
 
-- sasValidHours: liczba godzin, przez które mają być ważne adresy URL pobierania (maksymalnie 24 godziny).
+- sasValidHours: liczba godzin, przez które adresy URL pobierania będą ważne (maksymalnie 24 godziny).
 
-### <a name="25-properties"></a>2,5 Właściwości
+### <a name="25-properties"></a>2.5 Właściwości
 
 > [!NOTE]
 >
-> - Pliki są skompresowane w formacie GZIP & wieloliniowym formacie Json.
-> - Adresy URL pobierania są ważne tylko przez 3 godziny. w przeciwnym razie możesz użyć parametru.
-> - Aby uzyskać maksymalną szybkość pobierania danych, możesz się upewnić, że pobierasz pliki z tego samego regionu platformy Azure, w którym znajdują się Twoje dane.
+> - Pliki są skompresowane gzip & w wielowierszowym formacie JSON.
+> - Adresy URL pobierania są ważne tylko przez 3 godziny; W przeciwnym razie można użyć parametru .
+> - Aby uzyskać maksymalną szybkość pobierania danych, możesz upewnić się, że pobierasz dane z tego samego regionu świadczenia usługi Azure, w którym znajdują się twoje dane.
 
 <br>
 
 ****
 
-Właściwość (identyfikator)|Typ danych|Opis|Przykład zwracanej wartości
+Właściwość (ID)|Typ danych|Opis|Przykład zwracanej wartości
 ---|---|---|---
-Eksportowanie plików|arraystring\[\]|Lista adresów URL pobierania plików z bieżącą migawką organizacji|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|ciąg|Godzina wygenerowania eksportu.|2021-05-20T08:00:00Z
+Eksportowanie plików|ciąg tablicy\[\]|Lista adresów URL pobierania plików przechowujących bieżącą migawkę organizacji|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+GeneratedTime|Ciąg|Czas wygenerowania eksportu.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Przykłady
@@ -270,7 +271,7 @@ GeneratedTime|ciąg|Godzina wygenerowania eksportu.|2021-05-20T08:00:00Z
 GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentExport
 ```
 
-#### <a name="262-response-example"></a>2.6.2 Przykład odpowiedzi
+#### <a name="262-response-example"></a>Przykład odpowiedzi 2.6.2
 
 ```json
 {
@@ -286,11 +287,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Eksportowanie metod i właściwości oceny na urządzenie](get-assessment-methods-properties.md)
+- [Eksportowanie metod oceny i właściwości na urządzenie](get-assessment-methods-properties.md)
 - [Eksportowanie oceny spisu oprogramowania na urządzenie](get-assessment-software-inventory.md)
-- [Ocena luk w zabezpieczeniach oprogramowania na urządzeniu](get-assessment-software-vulnerabilities.md)
+- [Eksportowanie oceny luk w zabezpieczeniach oprogramowania na urządzenie](get-assessment-software-vulnerabilities.md)
 
 Inne powiązane
 
-- [Zagrożenia oparte na czynnikach ryzyka & zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
+- [& zarządzanie lukami w zabezpieczeniach zagrożeń opartych na ryzyku](next-gen-threat-and-vuln-mgt.md)
 - [Luki w zabezpieczeniach w organizacji](tvm-weaknesses.md)

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się więcej o kluczowych różnicach między modelem zrozumienia dokumentu a modelem przetwarzania formularzy.
-ms.openlocfilehash: 571516a7112e3f145d9e3ca392ad3488a33b4887
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8856eade8e271c3b07ec61775c1f462e4b13bcff
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947830"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839880"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Różnice między interpretacją dokumentów a modelami przetwarzania formularzy 
 
@@ -34,7 +34,7 @@ Istnieją dwa niestandardowe typy modeli, których można użyć:
 Chociaż oba modele są zwykle używane w tym samym celu, kluczowe różnice wymienione poniżej wpływają na to, których modeli można użyć.
 
 > [!NOTE]
-> Zobacz [przewodnik SharePoint Syntex adoption: Wprowadzenie ,](./adoption-getstarted.md) aby uzyskać więcej informacji na temat przetwarzania formularzy i przykładów scenariuszy interpretacji dokumentów.
+> Aby uzyskać więcej informacji na temat przetwarzania formularzy i opisu przykładów scenariuszy, zobacz [Wprowadzenie wdrażania SharePoint Syntex](./adoption-getstarted.md).
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Zawartość strukturalna i nieustrukturyzowana i częściowo ustrukturyzowana
 
@@ -68,23 +68,23 @@ Modele interpretacji dokumentów można zastosować do SharePoint bibliotek doku
 
 Modele przetwarzania formularzy można obecnie stosować tylko do biblioteki dokumentów SharePoint, z której zostały utworzone. Umożliwia to licencjonowanym użytkownikom z dostępem do witryny tworzenie modelu przetwarzania formularzy. Należy pamiętać, że administrator musi włączyć przetwarzanie formularzy w bibliotece dokumentów SharePoint, aby była dostępna dla licencjonowanych użytkowników.
 
-## <a name="comparison-of-forms-processing-and-document-understanding"></a>Porównanie przetwarzania formularzy i interpretacji dokumentów
+## <a name="comparison-of-form-processing-and-document-understanding"></a>Porównanie przetwarzania formularzy i interpretacji dokumentów
 
-Poniższa tabela służy do zrozumienia, kiedy używać przetwarzania formularzy i kiedy używać zrozumienia dokumentów.
+Poniższa tabela zawiera informacje o tym, kiedy używać przetwarzania formularzy i kiedy używać zrozumienia dokumentów.
 
-| Funkcja | Przetwarzanie formularzy | Omówienie dokumentu |
+| Funkcja | Przetwarzanie formularza | Analiza dokumentu |
 | ------- | ------- | ------- |
-| Typ modelu — kiedy używać każdego z nich | Służy do częściowo ustrukturyzowanych formatów plików, na przykład plików PDF dla zawartości formularzy, takich jak faktury lub zamówienia zakupu, w których układ i formatowanie są podobne.  | Służy do częściowo ustrukturyzowanych formatów plików — na przykład Office dokumentów, w których występują różnice w układzie, ale nadal podobne informacje do wyodrębnienia. |
+| Typ modelu — kiedy używać każdego z nich | Formaty plików ustrukturyzowane i częściowo ustrukturyzowane, na przykład pliki PDF dla zawartości formularzy, takie jak faktury lub zamówienia zakupu, w których układ i formatowanie są podobne.  | Formaty plików bez struktury lub częściowo ustrukturyzowane, na przykład Office dokumentów, w których występują różnice w układzie, ale nadal podobne informacje do wyodrębnienia. |
 | Tworzenie modelu | Model utworzony w konstruktorze sztucznej inteligencji z bezproblemowym dostępem z biblioteki dokumentów SharePoint.| Model utworzony w SharePoint w nowej witrynie— centrum zawartości. |
 | Typ klasyfikacji| Klasyfikator settable służy do udzielania systemowi wskazówek dotyczących wyodrębniania danych.| Klasyfikator trainable z opcjonalnymi wyodrębniaczami przy użyciu nauczania maszynowego w celu przypisania lokalizacji dokumentu do wyodrębnienia danych.|
 | Lokalizacje | Wytrenowane dla pojedynczej biblioteki dokumentów.| Można zastosować do wielu bibliotek.|
-| Obsługiwane typy plików| Trenuj w formacie PDF, JPG, PNG, łącznie 50 MB i 500 stron.| Wytrenuj pliki PDF, Office lub e-mail 5–10, w tym negatywne przykłady.<br>Office pliki są obcinane przy użyciu 64 tys. znaków. Pliki zeskanowane przez protokół OCR są ograniczone do 20 stron.|
+| Obsługiwane typy plików| Trenuj w formacie PDF, JPG, PNG, łącznie 50 MB i 500 stron.| Wytrenuj pliki PDF, Office lub e-mail 5–10, w tym negatywne przykłady.<br>Office pliki są obcinane przy użyciu znaków 64K. Pliki zeskanowane przez protokół OCR są ograniczone do 20 stron.|
 | Integracja z zarządzanymi metadanymi | Nie | Tak, przez trenowanie wyodrębniania jednostek odwołującego się do skonfigurowanego pola zarządzanych metadanych.|
-| Integracja funkcji zgodności z usługą Microsoft Purview Information Protection | Ustaw opublikowane etykiety przechowywania.<br>Nadchodzą etykiety poufności ustawić. | Ustaw opublikowane etykiety przechowywania.<br>Ustaw opublikowane etykiety poufności. |
+| Integracja funkcji zgodności z Microsoft Purview Information Protection | Ustaw opublikowane etykiety przechowywania.<br>Nadchodzą etykiety poufności ustawić. | Ustaw opublikowane etykiety przechowywania.<br>Ustaw opublikowane etykiety poufności. |
 | Obsługiwane regiony| Przetwarzanie formularzy opiera się na usłudze Power Platform. Aby uzyskać informacje o globalnej dostępności platformy Power Platform i narzędzia AI Builder, zobacz [Dostępność platformy Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Dostępne we wszystkich regionach.|
-| Koszt transakcyjny | Używa środków narzędzia AI Builder.<br>Środki można kupić w partiach po 1 mln.<br>Środki na korzystanie z 1 mln są uwzględniane w przypadku zakupu ponad 300 SharePoint Syntex licencji.<br>Środki w wysokości 1 mln umożliwią przetwarzanie 2000 stron plików.<br>| nd. |
+| Koszt transakcyjny | Używa środków narzędzia AI Builder.<br>3,5 tys. środków są uwzględniane dla każdej licencji SharePoint Syntex miesięcznie.<br>Środki w wysokości 1 mln umożliwią przetwarzanie 2000 stron plików.<br>| Nie dotyczy |
 | Pojemność | Używa domyślnego środowiska platformy Power Platform (środowiska niestandardowe z obsługiwaną bazą danych Dataverse). | Nie ma ograniczeń pojemności.|
-| Obsługiwane języki| Obsługa języka dla większej [liczby 73 języków](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Modele działają we wszystkich językach alfabetu łacińskiego. Oprócz języka angielskiego: niemiecki, szwedzki, francuski, hiszpański, włoski i portugalski.|
+| Obsługiwane języki| Obsługa języka dla ponad [73 języków](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Modele działają we wszystkich językach alfabetu łacińskiego. Oprócz języka angielskiego: niemiecki, szwedzki, francuski, hiszpański, włoski i portugalski.|
 
 
 ## <a name="see-also"></a>Zobacz też

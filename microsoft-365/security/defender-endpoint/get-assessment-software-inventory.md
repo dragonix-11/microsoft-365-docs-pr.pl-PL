@@ -1,7 +1,7 @@
 ---
 title: Eksportowanie oceny spisu oprogramowania na urządzenie
-description: Zwraca tabelę z wpisem dla każdej unikatowej kombinacji DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
-keywords: api, apis, ocena eksportu, ocena na urządzenie, raport oceny luk w zabezpieczeniach, ocena luk w zabezpieczeniach urządzenia, raport na temat luki w zabezpieczeniach urządzenia, bezpieczna ocena konfiguracji, bezpieczny raport konfiguracji, ocena luk w oprogramowaniu, raport z lukami w oprogramowaniu, raport o lukach w zabezpieczeniach komputera,
+description: Zwraca tabelę z wpisem dla każdej unikatowej kombinacji elementów DeviceId, SoftwareVendor, SoftwareName i SoftwareVersion.
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4c3464a3aec242bd098503ac5bca997943ac2a4a
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 296b977452802d8e1ed8949cf6a8871cac171f3a
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013282"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839999"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Eksportowanie oceny spisu oprogramowania na urządzenie
 
@@ -28,84 +28,85 @@ ms.locfileid: "63013282"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Różne wywołania interfejsu API mają różne typy danych. Ponieważ ilość danych może być duża, można ją pobrać na dwa sposoby:
+Różne wywołania interfejsu API pobierają różne typy danych. Ponieważ ilość danych może być duża, można pobrać je na dwa sposoby:
 
-- [Odpowiedź **JSON oceny spisu oprogramowania eksportowego**](#1-export-software-inventory-assessment-json-response) Interfejs API ściąga wszystkie dane w organizacji jako odpowiedzi Json. Ta metoda jest najlepsza dla _małych organizacji z urządzeniami o rozmiarze mniejszym niż 100 K_. Odpowiedź jest podzielony na strony, \@więc można użyć pola odata.nextLink z odpowiedzi w celu pobrania następnych wyników.
+- [Eksportowanie **odpowiedzi JSON** oceny spisu oprogramowania](#1-export-software-inventory-assessment-json-response) Interfejs API ściąga wszystkie dane w organizacji jako odpowiedzi JSON. Ta metoda jest najlepsza w _przypadku małych organizacji z urządzeniami o rozmiarze mniejszym niż 100 K_. Odpowiedź jest podzielona na strony, więc możesz użyć \@pola odata.nextLink z odpowiedzi, aby pobrać następne wyniki.
 
-- [Eksportowanie oceny spisu oprogramowania **za pośrednictwem plików**](#2-export-software-inventory-assessment-via-files)  To rozwiązanie interfejsu API umożliwia szybsze i bardziej niezawodne wyciąganie większych ilości danych. Jest to więc zalecane dla dużych organizacji, które mają ponad 100 urządzeń o przekierowywce. Ten interfejs API pobiera wszystkie dane w organizacji jako pliki do pobrania. Odpowiedź zawiera adresy URL służące do pobierania wszystkich danych z usługi Azure Storage. Ten interfejs API umożliwia pobieranie wszystkich danych z usługi Azure Storage w następujący sposób:
-  - Wywołaj interfejs API, aby uzyskać listę pobierznych adresów URL wraz ze wszystkimi danymi Twojej organizacji.
-  - Pobierz wszystkie pliki przy użyciu adresów URL pobierania i przetwarzaj dane w sposób, który Ci się podoba.
+- [Eksportowanie oceny spisu oprogramowania **za pośrednictwem plików**](#2-export-software-inventory-assessment-via-files)  To rozwiązanie interfejsu API umożliwia szybsze i bardziej niezawodne ściąganie większych ilości danych. Dlatego jest to zalecane w przypadku dużych organizacji z ponad 100-K urządzeń. Ten interfejs API pobiera wszystkie dane w organizacji jako pliki do pobrania. Odpowiedź zawiera adresy URL umożliwiające pobranie wszystkich danych z usługi Azure Storage. Ten interfejs API umożliwia pobranie wszystkich danych z usługi Azure Storage w następujący sposób:
+  - Wywołaj interfejs API, aby uzyskać listę adresów URL pobierania ze wszystkimi danymi organizacji.
+  - Pobierz wszystkie pliki przy użyciu adresów URL pobierania i przetwórz dane zgodnie z tym, co chcesz.
 
-Dane zbierane (za pomocą odpowiedzi _Jsona_ lub za pośrednictwem _plików) to_ bieżąca migawka bieżącego stanu. Nie zawiera ona danych historycznych. Aby zbierać dane historyczne, klienci muszą je zapisywać we własnych magazynach danych.
+Zbierane dane (przy użyciu _odpowiedzi JSON_ lub _za pośrednictwem plików_) są bieżącą migawką bieżącego stanu. Nie zawiera danych historycznych. Aby zbierać dane historyczne, klienci muszą zapisywać dane we własnych magazynach danych.
 
 > [!NOTE]
-> O ile nie zaznaczono inaczej, wszystkie wymienione metody **** oceny eksportu są pełne i według **_urządzenia_** (określane również jako **_urządzenia_**).
+> O ile nie wskazano inaczej, wszystkie wymienione metody oceny eksportu to **_pełny eksport_** i **_urządzenie_** (określane również jako **_dla każdego urządzenia_**).
 
 ## <a name="1-export-software-inventory-assessment-json-response"></a>1. Eksportowanie oceny spisu oprogramowania (odpowiedź JSON)
 
 ### <a name="11-api-method-description"></a>Opis metody interfejsu API 1.1
 
-Ta odpowiedź interfejsu API zawiera wszystkie dane zainstalowanego oprogramowania na urządzenie. Zwraca tabelę z wpisem dla każdej unikatowej kombinacji DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+Ta odpowiedź interfejsu API zawiera wszystkie dane zainstalowanego oprogramowania na urządzenie. Zwraca tabelę z wpisem dla każdej unikatowej kombinacji elementów DeviceId, SoftwareVendor, SoftwareName i SoftwareVersion.
 
 #### <a name="limitations"></a>Ograniczenia
 
 - Maksymalny rozmiar strony to 200 000.
-- Ograniczenia stawek dla tego interfejsu API to 30 połączeń na minutę i 1000 połączeń na godzinę.
+- Ograniczenia szybkości dla tego interfejsu API to 30 wywołań na minutę i 1000 wywołań na godzinę.
 
 ### <a name="12-permissions"></a>1.2 Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz Używanie interfejsów [API punktów końcowych programu Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 ---|---|---
-Aplikacja|Software.Read.All|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
-Delegowane (konto służbowe)|Software.Read|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
+Aplikacja|Software.Read.All|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
+Delegowane (konto służbowe)|Software.Read|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
 
-### <a name="13-url"></a>1.3 Adres URL
+### <a name="13-url"></a>Adres URL 1.3
 
 ```http
 GET /api/machines/SoftwareInventoryByMachine
 ```
 
-### <a name="14-parameters"></a>1.4 Parametry
+### <a name="14-parameters"></a>Parametry 1.4
 
-- pageSize (wartość domyślna = 50 000): Liczba wyników w odpowiedzi.
-- $top: Liczba wyników do zwrócenia (nie zwraca ciągu @odata.nextLink i dlatego nie wyciąga wszystkich danych)
+- pageSize (wartość domyślna = 50 000): liczba wyników w odpowiedzi.
+- $top: liczba wyników do zwrócenia (nie zwraca @odata.nextLink i w związku z tym nie ściąga wszystkich danych)
 
-### <a name="15-properties"></a>1,5 Właściwości
+### <a name="15-properties"></a>1.5 Właściwości
 
 > [!NOTE]
 >
-> - Każdy rekord to w przybliżeniu 0,5 KB danych. Należy wziąć to pod uwagę podczas wybierania odpowiedniego parametru pageSize.
-> - Właściwości zdefiniowane w poniższej tabeli są wyświetlane alfabetycznie według identyfikatora właściwości. Podczas uruchamiania tego interfejsu API wynik nie musi być zwracany w tej samej kolejności, w tej tabeli.
-> - Niektóre dodatkowe kolumny mogą być zwracane w odpowiedzi. Te kolumny są tymczasowe i mogą zostać usunięte. Należy używać tylko kolumn z dokumentami.
+> - Każdy rekord to około 0,5 KB danych. Należy wziąć to pod uwagę podczas wybierania prawidłowego parametru pageSize.
+> - Właściwości zdefiniowane w poniższej tabeli są wyświetlane alfabetycznie według identyfikatora właściwości. Podczas uruchamiania tego interfejsu API wynikowe dane wyjściowe nie muszą być zwracane w tej samej kolejności wymienionej w tej tabeli.
+> - W odpowiedzi mogą zostać zwrócone dodatkowe kolumny. Te kolumny są tymczasowe i mogą zostać usunięte. Użyj tylko udokumentowanych kolumn.
 
 <br>
 
 ****
 
-Właściwość (identyfikator)|Typ danych|Opis|Przykład zwracanej wartości
+Właściwość (ID)|Typ danych|Opis|Przykład zwracanej wartości
 :---|:---|:---|:---
-DeviceId|ciąg|Unikatowy identyfikator urządzenia w usłudze.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|ciąg|W pełni kwalifikowana nazwa domeny (FQDN) urządzenia.|johnlaptop.europe.contoso.com
-DiskPaths|Array[string]|Dowód dysku, że produkt jest zainstalowany na urządzeniu.|[ "C:\\ Program Files (x86)\\MicrosoftSilverlightApplication\\\\\\silverlight.exe" ]
-EndOfSupportDate|ciąg|Data zakończenia obsługi tego oprogramowania.|2020-12-30
-EndOfSupportStatus|ciąg|Stan zakończenia pomocy technicznej. Mogą zawierać następujące możliwe wartości: Brak, Wersja EOS, Nadchodzące wersja systemu EOS, Oprogramowanie EOS, Nadchodzące oprogramowanie EOS.|Nadchodzące urządzenia z systemem EOS
-Identyfikator|ciąg|Unikatowy identyfikator rekordu.|123ABG55_573AG&mnp!
-NumberOfWeaknesses|int|Liczba słabego sprzętu w tym oprogramowaniu na tym urządzeniu|3
-OSPlatform|ciąg|Platforma systemu operacyjnego działającego na urządzeniu. Są to specyficzne systemy operacyjne z odmianami tej samej rodziny, takimi jak Windows 10 i Windows 11. Aby uzyskać szczegółowe informacje, zobacz obsługiwane systemy operacyjne i platformy obsługiwane przez program tvm.|Windows 10 i Windows 11
-RbacGroupName|ciąg|Grupa kontroli dostępu opartej na rolach (RBAC, role based access control). Jeśli to urządzenie nie jest przypisane do żadnej grupy RBAC, wartością będzie "Nieprzypisane". Jeśli organizacja nie zawiera żadnych grup RBAC, wartość będzie mieć wartość "Brak".|Serwery
-RegistryPaths|Array[string]|Dowód rejestru, że produkt jest zainstalowany w urządzeniu.|[ "HKEY_LOCAL_MACHINE\\ SOFTWAREWOW6432NodeMicrosoft\\\\\\ Windows\\ CurrentVersionUninstallMicrosoft\\\\ Silverlight" ]
-SoftwareFirstSeenTimestamp|ciąg|To oprogramowanie było widoczne na urządzeniu po raz pierwszy.|2019-04-07 02:06:47
-Nazwa_oprogramowania|ciąg|Nazwa produktu.|Silverlight
-SoftwareVendor|ciąg|Nazwa dostawcy oprogramowania.|microsoft
-SoftwareVersion|ciąg|Numer wersji produktu oprogramowania.|81.0.4044.138
+Deviceid|Ciąg|Unikatowy identyfikator urządzenia w usłudze.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|Ciąg|W pełni kwalifikowana nazwa domeny (FQDN) urządzenia.|johnlaptop.europe.contoso.com
+DiskPaths|Tablica[ciąg]|Dysk wskazuje, że produkt jest zainstalowany na urządzeniu.|[ "C:\\ Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe" ]
+EndOfSupportDate|Ciąg|Data zakończenia pomocy technicznej dla tego oprogramowania.|2020-12-30
+EndOfSupportStatus|Ciąg|Stan zakończenia pomocy technicznej. Mogą zawierać następujące możliwe wartości: Brak, wersja systemu EOS, nadchodząca wersja systemu EOS, oprogramowanie EOS, nadchodzące oprogramowanie EOS.|Nadchodzący EOS
+Id|Ciąg|Unikatowy identyfikator rekordu.|123ABG55_573AG&mnp!
+LiczbaOfWeaknesses|Int|Liczba słabych stron tego oprogramowania na tym urządzeniu|3
+OSPlatform|Ciąg|Platforma systemu operacyjnego działającego na urządzeniu. Są to specyficzne systemy operacyjne z odmianami w tej samej rodzinie, takie jak Windows 10 i Windows 11. Aby uzyskać szczegółowe informacje, zobacz obsługiwane systemy operacyjne i platformy tvm.|Windows10 i Windows 11
+RbacGroupName|Ciąg|Grupa kontroli dostępu opartej na rolach (RBAC). Jeśli to urządzenie nie jest przypisane do żadnej grupy RBAC, wartość będzie mieć wartość "Nieprzypisane". Jeśli organizacja nie zawiera żadnych grup RBAC, wartość będzie mieć wartość "Brak".|Serwery
+RegistryPaths|Tablica[ciąg]|Rejestr wskazuje, że produkt jest zainstalowany na urządzeniu.|[ "HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Node\\Microsoft\\ Windows\\ CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
+SoftwareFirstSeenTimestamp|Ciąg|Po raz pierwszy to oprogramowanie było widoczne na urządzeniu.|2019-04-07 02:06:47
+SoftwareName|Ciąg|Nazwa produktu programowego.|Silverlight
+SoftwareVendor|Ciąg|Nazwa dostawcy oprogramowania.|Microsoft
+SoftwareVersion|Ciąg|Numer wersji produktu oprogramowania.|81.0.4044.138
 |
 
 ### <a name="16-examples"></a>1.6 Przykłady
@@ -116,7 +117,7 @@ SoftwareVersion|ciąg|Numer wersji produktu oprogramowania.|81.0.4044.138
 GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z
 ```
 
-#### <a name="162-response-example"></a>1.6.2 Przykład odpowiedzi
+#### <a name="162-response-example"></a>Przykład odpowiedzi 1.6.2
 
 ```json
 {
@@ -212,24 +213,24 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 
 ## <a name="2-export-software-inventory-assessment-via-files"></a>2. Eksportowanie oceny spisu oprogramowania (za pośrednictwem plików)
 
-### <a name="21-api-method-description"></a>Opis metody interfejsu API 2.1
+### <a name="21-api-method-description"></a>Opis metody interfejsu API w wersji 2.1
 
-Ta odpowiedź interfejsu API zawiera wszystkie dane zainstalowanego oprogramowania na urządzenie. Zwraca tabelę z wpisem dla każdej unikatowej kombinacji DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+Ta odpowiedź interfejsu API zawiera wszystkie dane zainstalowanego oprogramowania na urządzenie. Zwraca tabelę z wpisem dla każdej unikatowej kombinacji elementów DeviceId, SoftwareVendor, SoftwareName i SoftwareVersion.
 
-#### <a name="211-limitations"></a>2.1.1 Ograniczenia
+#### <a name="211-limitations"></a>Ograniczenia 2.1.1
 
-Ograniczenia stawek dla tego interfejsu API to 5 połączeń na minutę i 20 połączeń na godzinę.
+Ograniczenia szybkości dla tego interfejsu API to 5 wywołań na minutę i 20 wywołań na godzinę.
 
 ### <a name="22-permissions"></a>2.2 Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz Używanie interfejsów [API punktów końcowych programu Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender, aby uzyskać szczegółowe informacje.](apis-intro.md)
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 ---|---|---
-Aplikacja|Software.Read.All|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
-Delegowane (konto służbowe)|Software.Read|\'Odczytywanie informacji o lukach w zabezpieczeniach przed zagrożeniami i zarządzaniem nimi\'
+Aplikacja|Software.Read.All|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
+Delegowane (konto służbowe)|Software.Read|\'Przeczytaj informacje o lukach w zabezpieczeniach dotyczące zarządzania zagrożeniami i lukami w zabezpieczeniach\'
 
-### <a name="23-url"></a>2.3 Adres URL
+### <a name="23-url"></a>Adres URL 2.3
 
 ```http
 GET /api/machines/SoftwareInventoryExport
@@ -237,24 +238,24 @@ GET /api/machines/SoftwareInventoryExport
 
 ### <a name="parameters"></a>Parametry
 
-- sasValidHours: Liczba godzin, przez które będą ważne adresy URL pobierania (maksymalnie 24 godziny)
+- sasValidHours: liczba godzin, przez które adresy URL pobierania będą ważne (maksymalnie 24 godziny)
 
-### <a name="25-properties"></a>2,5 Właściwości
+### <a name="25-properties"></a>2.5 Właściwości
 
 > [!NOTE]
 >
-> - Pliki są skompresowane w formacie & wieloliniowym JSON.
-> - Adresy URL pobierania są ważne tylko przez 3 godziny. W przeciwnym razie możesz użyć parametru.
-> - Aby uzyskać maksymalną szybkość pobierania danych, możesz się upewnić, że pobierasz pliki z tego samego regionu platformy Azure, w którym znajdują się Twoje dane.
+> - Pliki są skompresowane gzip & w wielowierszowym formacie JSON.
+> - Adresy URL pobierania są ważne tylko przez 3 godziny. W przeciwnym razie można użyć parametru .
+> - Aby uzyskać maksymalną szybkość pobierania danych, możesz upewnić się, że pobierasz dane z tego samego regionu świadczenia usługi Azure, w którym znajdują się twoje dane.
 
 <br>
 
 ****
 
-Właściwość (identyfikator)|Typ danych|Opis|Przykład zwracanej wartości
+Właściwość (ID)|Typ danych|Opis|Przykład zwracanej wartości
 :---|:---|:---|:---
-Eksportowanie plików|arraystring\[\]|Lista adresów URL pobierania plików z bieżącą migawką organizacji|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|ciąg|Godzina wygenerowania eksportu.|2021-05-20T08:00:00Z
+Eksportowanie plików|ciąg tablicy\[\]|Lista adresów URL pobierania plików przechowujących bieżącą migawkę organizacji|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+GeneratedTime|Ciąg|Czas wygenerowania eksportu.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Przykłady
@@ -265,7 +266,7 @@ GeneratedTime|ciąg|Godzina wygenerowania eksportu.|2021-05-20T08:00:00Z
 GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExport
 ```
 
-#### <a name="262-response-example"></a>2.6.2 Przykład odpowiedzi
+#### <a name="262-response-example"></a>Przykład odpowiedzi 2.6.2
 
 ```json
 {
@@ -281,11 +282,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Eksportowanie metod i właściwości oceny na urządzenie](get-assessment-methods-properties.md)
-- [Eksportowanie bezpiecznego oceny konfiguracji na urządzenie](get-assessment-secure-config.md)
-- [Ocena luk w zabezpieczeniach oprogramowania na urządzeniu](get-assessment-software-vulnerabilities.md)
+- [Eksportowanie metod oceny i właściwości na urządzenie](get-assessment-methods-properties.md)
+- [Eksportowanie oceny bezpiecznej konfiguracji na urządzenie](get-assessment-secure-config.md)
+- [Eksportowanie oceny luk w zabezpieczeniach oprogramowania na urządzenie](get-assessment-software-vulnerabilities.md)
 
 Inne powiązane
 
-- [Zagrożenia oparte na czynnikach ryzyka & zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
+- [& zarządzanie lukami w zabezpieczeniach zagrożeń opartych na ryzyku](next-gen-threat-and-vuln-mgt.md)
 - [Luki w zabezpieczeniach w organizacji](tvm-weaknesses.md)

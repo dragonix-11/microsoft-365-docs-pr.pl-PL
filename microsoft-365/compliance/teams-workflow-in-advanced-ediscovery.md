@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z Microsoft Teams w usłudze eDiscovery (Premium).
-ms.openlocfilehash: 46fe8491533f6d2fa6954eab76758213eaa7d30d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 754be254c4301fae9fdfff5edee3593e1333eb6c
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414871"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839697"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams
 
@@ -27,11 +27,13 @@ ms.locfileid: "65414871"
 
 Ten artykuł zawiera kompleksowy zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania Microsoft Purview eDiscovery (Premium) do przechowywania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams. Celem tego artykułu jest pomoc w optymalizacji przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem zawartości Teams.
 
-Istnieje pięć kategorii zawartości Teams, które można zbierać i przetwarzać przy użyciu zbierania elektronicznych materiałów dowodowych (Premium):
+Istnieje sześć kategorii zawartości Teams, które można zbierać i przetwarzać przy użyciu zbierania elektronicznych materiałów dowodowych (Premium):
 
 - **Teams czaty 1:1**. Wiadomości czatu, wpisy i załączniki udostępnione w Teams konwersacji między dwiema osobami.  Teams 1:1 czaty są również *nazywane konwersacjami*.
 
 - **Teams czaty grupowe**. Wiadomości czatu, wpisy i załączniki udostępnione w Teams konwersacji między co najmniej trzema osobami. Nazywane również czatami *1:N* lub *konwersacjami grupowymi*.
+
+- **reakcje Teams**. Reakcje stosowane do wiadomości czatu, wpisów i załączników w konwersacji Teams.
 
 - **Teams kanałów**. Wiadomości czatu, wpisy, odpowiedzi i załączniki udostępnione w standardowym kanale Teams.
 
@@ -47,6 +49,7 @@ Wymaganie wstępne do zarządzania zawartością Teams w ramach zbierania elektr
 |---|---|---|
 |czaty Teams 1:1|Wiadomości w czatach 1:1 są przechowywane w Exchange Online skrzynki pocztowej wszystkich uczestników czatu.|Pliki udostępnione podczas czatu 1:1 są przechowywane na koncie OneDrive dla Firm osoby, która udostępniła plik.|
 |Teams czaty grupowe|Wiadomości w czatach grupowych są przechowywane w Exchange Online skrzynce pocztowej wszystkich uczestników czatu.|Pliki udostępnione w czatach grupowych są przechowywane na koncie OneDrive dla Firm osoby, która udostępniła plik.|
+|reakcje Teams|Wiadomości w czatach grupowych są przechowywane w Exchange Online skrzynce pocztowej wszystkich uczestników czatu.|Pliki udostępnione w czatach grupowych są przechowywane na koncie OneDrive dla Firm osoby, która udostępniła plik.|
 |kanały Teams|Wszystkie wiadomości i wpisy kanału są przechowywane w Exchange Online skrzynki pocztowej skojarzonej z zespołem.|Pliki udostępnione w kanale są przechowywane w witrynie SharePoint Online skojarzonej z zespołem.|
 |Kanały prywatne|Wiadomości wysyłane w kanale prywatnym są przechowywane w Exchange Online skrzynkach pocztowych wszystkich członków kanału prywatnego.|Pliki udostępnione w kanale prywatnym są przechowywane w dedykowanej witrynie SharePoint Online skojarzonej z kanałem prywatnym.|
 |Kanały udostępnione|Wiadomości wysyłane w kanale udostępnionym są przechowywane w systemowej skrzynce pocztowej skojarzonej z kanałem udostępnionym. <sup>1</sup>|Pliki udostępnione w kanale udostępnionym są przechowywane w dedykowanej witrynie SharePoint Online skojarzonej z kanałem udostępnionym.|
@@ -88,7 +91,7 @@ Aby dodać opiekunów do sprawy i zachować źródła danych opieki:
 
 1. Przejdź do przypadku zbierania elektronicznych materiałów dowodowych (Premium) utworzonego w poprzedniej sekcji, a następnie kliknij pozycję **Źródła danych**.
 
-2. Na stronie **Źródła danych** kliknij pozycję **Dodaj źródło** >  **danychDodaj nowych opiekunów**.
+2. Na stronie **Źródła danych** kliknij pozycję **Dodaj źródło** >  danych **Dodaj nowych opiekunów**.
 
 3. W kreatorze **Nowy opiekun** dodaj do sprawy co najmniej jednego użytkownika jako opiekuna, wpisując pierwszą część nazwy lub aliasu użytkownika. Po znalezieniu właściwej osoby wybierz jej imię i nazwisko, aby dodać ją do listy.  
 
@@ -137,7 +140,7 @@ Aby utworzyć kolekcję zawartości Teams:
 
 1. Przejdź do sprawy zbierania elektronicznych materiałów dowodowych (Premium), do których dodano opiekunów w poprzedniej sekcji, a następnie kliknij pozycję **Kolekcje**.
 
-2. Na stronie **Kolekcje** wybierz pozycję **Nowa** **kolekcjaStandard** >  kolekcja.
+2. Na stronie **Kolekcje** wybierz pozycję **Nowa kolekcja** > **Kolekcja Standardowa**.
 
 3. Wpisz nazwę (wymagane) i opis (opcjonalnie) dla kolekcji.
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o limitach przypadków, limitach indeksowania i limitach wyszukiwania dla rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365.
-ms.openlocfilehash: 5b83cd578b8975dd0185fb2902357c2f0c201043
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0c288b1d30fa668446421db547e2595f3385cbb7
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772703"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839344"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limity w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
 
@@ -35,8 +35,8 @@ W poniższej tabeli wymieniono limity dotyczące przypadków i zestawów przegl�
 
 |Opis limitu|Limit|
 |---|---|
-|Całkowita liczba dokumentów, które można dodać do sprawy (dla wszystkich zestawów przeglądów w danym przypadku).|3 miliony|
-|Całkowity rozmiar pliku na zestaw ładowania. Obejmuje to ładowanie Office 365 do zestawu przeglądów.|300 GB|
+|Całkowita liczba dokumentów, które można dodać do sprawy (dla wszystkich zestawów przeglądów w danym przypadku).|Do 40 milionów (nowy format przypadku)|
+|Całkowity rozmiar pliku na zestaw ładowania. Obejmuje to ładowanie Office 365 do zestawu przeglądów.|Do 1 TB (nowy format przypadku)|
 |Łączna ilość danych załadowanych do wszystkich zestawów przeglądów w organizacji dziennie.<br/>|2 TB|
 |Maksymalna liczba zestawów obciążenia na przypadek.|200|
 |Maksymalna liczba zestawów przeglądów na przypadek.|20|

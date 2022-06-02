@@ -20,16 +20,16 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak używać trenowania symulacji ataków do przeprowadzania symulowanych ataków wyłudzania informacji i haseł w organizacjach Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 255d0f40cd360f2b4b3e5084f84989bdbe643319
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 79c8db9a088484a56e559ab4c3e33d68ebf33380
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415623"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840150"
 ---
 # <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Wprowadzenie przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy** [planu Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
@@ -121,7 +121,7 @@ Aby uzyskać instrukcje krok po kroku dotyczące tworzenia i wysyłania nowej sy
 
 ### <a name="create-a-payload"></a>Tworzenie ładunku
 
-Aby uzyskać instrukcje krok po kroku dotyczące sposobu tworzenia ładunku do użycia w symulacji, zobacz [Tworzenie niestandardowego ładunku na potrzeby trenowania symulacji ataków](attack-simulation-training-payloads.md).
+Aby uzyskać instrukcje krok po kroku dotyczące sposobu tworzenia ładunku do użycia w symulacji, zobacz [Tworzenie niestandardowego ładunku na potrzeby trenowania symulacji ataków](attack-simulation-training-payloads.md#create-payloads).
 
 ### <a name="gaining-insights"></a>Uzyskiwanie szczegółowych informacji
 

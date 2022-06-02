@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Zaloguj się do Microsoft 365. Chroń swoją firmę, praktykę lub kampanię przed zagrożeniami cyberbezpieczeństwa, pocztą e-mail, danymi i komunikacją.
-ms.openlocfilehash: 4203abe638c15978ac4acd753fdeb6a83ba5920d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c0decc886b30ba63d67e7927c0655e1980a47a57
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099856"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839585"
 ---
 # <a name="sign-in-to-microsoft-365-business-premium"></a>Zaloguj się do Microsoft 365 Business Premium
 
@@ -40,7 +40,7 @@ Jeśli zarejestrujesz się w Microsoft 365 dla kampanii (lub Microsoft 365 Busin
 
 2. W przeglądarce przejdź do Centrum administracyjne platformy Microsoft 365 pod adresem <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-3. Wpisz nazwę użytkownika i hasło. Wybierz pozycję **Zaloguj**.
+3. Wpisz nazwę użytkownika i hasło, a następnie wybierz pozycję **Zaloguj** się.
 
 4. W prawym górnym rogu strony znajdź kontrolkę **Podgląd.** Wybierz **pozycję Wersja zapoznawcza,** aby użyć wszystkich kontrolek opisanych w sekcji [Ochrona przed wzrostem poziomu w kampanii](m365-campaigns-security-overview.md).
 
@@ -48,7 +48,7 @@ Jeśli zarejestrujesz się w Microsoft 365 dla kampanii (lub Microsoft 365 Busin
 
 Użytkownicy, którzy zostali dodaeni do subskrypcji Microsoft 365 for Campaigns (lub Microsoft 365 Business Premium), mogą się zalogować, wykonując następujące kroki:
 
-1. Przejdź do witryny <a href="https://office.com" target="_blank">https://Office.com</a>.
+1. Przejdź do witryny <a href="https://office.com" target="_blank">https://office.com</a>.
 
 2. Zaloguj się przy użyciu nazwy użytkownika i hasła dla konta. Użytkownicy będą mieć te informacje w wiadomości e-mail, która powinna zostać odebrana po dodaniu ich jako użytkowników. Jeśli nie mogą znaleźć wiadomości e-mail, zobacz [Udostępnianie zaproszenia e-mail, ale użytkownik nie otrzymał wiadomości e-mail](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 

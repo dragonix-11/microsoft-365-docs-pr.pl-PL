@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 84304d120f5822d91adc99c86e2c22c0cfb6790c
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 02017a614544cfb10eb43d375212fc7e37124ad3
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789937"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840392"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Ochrona ważnych folderów za pomocą kontrolowanego dostępu do folderów
 
@@ -38,7 +38,7 @@ ms.locfileid: "64789937"
 - System Windows
 
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>Co to jest kontrolowany dostęp do folderu?
 
@@ -77,6 +77,8 @@ Kontrolowany dostęp do folderów jest obsługiwany w następujących wersjach W
 
 - [Windows 10, wersja 1709](/windows/whats-new/whats-new-windows-10-version-1709) i nowsze
 - Windows 11
+- Windows 2012 R2
+- Windows 2016 r.
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 

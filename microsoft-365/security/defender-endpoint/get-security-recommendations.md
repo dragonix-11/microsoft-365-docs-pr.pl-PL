@@ -1,7 +1,7 @@
 ---
-title: Uzyskaj zalecenia dotyczące zabezpieczeń
+title: Pobierz rekomendacje dotyczące zabezpieczeń
 description: Pobiera kolekcję zaleceń dotyczących zabezpieczeń związanych z danym identyfikatorem urządzenia.
-keywords: apis, graph api, supported api, get, list, file, information, security recommendation per device, threat & zarządzanie lukami w zabezpieczeniach api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, supported apis, get, list, file, information, security recommendation per device, threat & zarządzanie lukami w zabezpieczeniach api, Ochrona punktu końcowego w usłudze Microsoft Defender tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6441610fb9c1ebdee823badce2bd2c5439142cf3
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: ebe07abd4e7f87e7abfe4d4a8ccd131e20dc4958
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996253"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839717"
 ---
-# <a name="get-security-recommendations"></a>Uzyskaj zalecenia dotyczące zabezpieczeń
+# <a name="get-security-recommendations"></a>Pobierz rekomendacje dotyczące zabezpieczeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:** 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
+
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,12 +43,12 @@ Pobiera kolekcję zaleceń dotyczących zabezpieczeń związanych z danym identy
 
 ## <a name="permissions"></a>Uprawnienia
 
-Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Używanie programu Microsoft Defender dla interfejsów API punktów końcowych.](apis-intro.md)
+Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Korzystanie z interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender](apis-intro.md)
 
-Typ uprawnień|Uprawnienie|Nazwa wyświetlana uprawnień
+Typ uprawnień|Uprawnienia|Nazwa wyświetlana uprawnień
 :---|:---|:---
-Aplikacja|SecurityRecommendation.Read.All|"Przeczytaj informacje o zaleceniach dotyczących bezpieczeństwa w zakresie zarządzania zagrożeniami i lukami w zabezpieczeniach"
-Delegowane (konto służbowe)|SecurityRecommendation.Read|"Przeczytaj informacje o zaleceniach dotyczących bezpieczeństwa w zakresie zarządzania zagrożeniami i lukami w zabezpieczeniach"
+Aplikacja|SecurityRecommendation.Read.All|"Przeczytaj informacje o zaleceniach dotyczących zabezpieczeń zarządzania zagrożeniami i lukami w zabezpieczeniach"
+Delegowane (konto służbowe)|SecurityRecommendation.Read|"Przeczytaj informacje o zaleceniach dotyczących zabezpieczeń zarządzania zagrożeniami i lukami w zabezpieczeniach"
 
 ## <a name="http-request"></a>Żądanie HTTP
 
@@ -54,25 +56,25 @@ Delegowane (konto służbowe)|SecurityRecommendation.Read|"Przeczytaj informacje
 GET /api/machines/{machineId}/recommendations
 ```
 
-## <a name="request-headers"></a>Żądaj nagłówków
+## <a name="request-headers"></a>Nagłówki żądań
 
 Name (Nazwa)|Wpisać|Opis
 :---|:---|:---
-Autoryzacja|Ciąg|Użytkownik {token}. **Wymagane**.
+Autoryzacji|Ciąg|Element nośny {token}. **Wymagane**.
 
-## <a name="request-body"></a>Treść wniosku
+## <a name="request-body"></a>Treść żądania
 
-Puste
+Pusty
 
-## <a name="response"></a>Odpowiedź
+## <a name="response"></a>Odpowiedzi
 
-Jeśli ta metoda się powiedzie, ta metoda zwróci wartość 200 OK z zaleceniami zabezpieczeń w treści.
+W przypadku powodzenia ta metoda zwraca wartość 200 OK z zaleceniami dotyczącymi zabezpieczeń w treści.
 
 ## <a name="example"></a>Przykład
 
 ### <a name="request-example"></a>Przykład żądania
 
-Oto przykład wniosku.
+Oto przykład żądania.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/recommendations
@@ -114,5 +116,5 @@ Oto przykład odpowiedzi.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Zarządzanie zagrożeniami opartymi na & i zagrożeniach](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Zalecenie & zabezpieczeń dotyczące zagrożeń i luk w zabezpieczeniach](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Zarządzanie lukami w zabezpieczeniach opartymi na ryzyku & zagrożeń](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Zalecenie dotyczące zabezpieczeń luk w zabezpieczeniach & zagrożeń](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

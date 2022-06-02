@@ -1,9 +1,9 @@
 ---
 title: Alerty usługi adresatów zewnętrznych
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: ''
+ms.date: 05/31/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,63 +18,64 @@ ms.custom:
 - admindeeplinkEXCHANGE
 f1.keywords:
 - NOCSH
-description: Alerty usługi adresatów zewnętrznych monitorują skrzynki pocztowe w chmurze, które osiągają limit przydziału skrzynki pocztowej.
-ms.openlocfilehash: 931be51ee51bd5557633415004eed9a1c7e77888
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Użyj alertów usługi adresatów zewnętrznych, aby monitorować skrzynki pocztowe w stanie wstrzymania, które osiągają limit przydziału skrzynki pocztowej.
+ROBOTS: NOINDEX
+ms.openlocfilehash: 2eac85b5a4b6f0f1c7c8737041edc9de50b5a074
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63705220"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840458"
 ---
-# <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>Alerty usługi dotyczące wiadomości oczekujących na dostarczenie do adresatów zewnętrznych w Exchange Online wiadomości
+# <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>Alerty usługi dotyczące komunikatów oczekujących na dostarczenie do adresatów zewnętrznych w ramach monitorowania Exchange Online
 
-Alerty usługi informują administratorów o kolejkowania poczty do adresatów zewnętrznych spoza Exchange Online. Alerty te mogą wymagać działań naprawczych spoza firmy Microsoft, ale mogą dostarczyć Ci informacji potrzebnych do działania naprawczego.
+Alerty usługi informują administratorów o kolejkowaniu poczty do zewnętrznych adresatów spoza Exchange Online. Te alerty mogą wymagać akcji korygowania spoza firmy Microsoft, ale mogą dostarczyć informacji potrzebnych do skorygowania.
 
-Alerty usługi są wyświetlane w centrum administracyjne platformy Microsoft 365. Aby wyświetlić te alerty usługi, przejdź do strony Kondycja usługi <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**HealthService**</a> >  >  **Exchange Online** a następnie kliknij **kartę Aktywne** problemy. Nazwa tych alertów usługi to "Kolejkowanie wiadomości do adresatów zewnętrznych powyżej progów".
+Te alerty usługi są wyświetlane w Centrum administracyjne platformy Microsoft 365. Aby wyświetlić te alerty usługi, przejdź do pozycji **Kondycja** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Kondycja usługi**</a> >  **Exchange Online** a następnie kliknij kartę **Aktywne problemy**. Nazwa tych alertów usługi to "Kolejkowanie komunikatów do zewnętrznych adresatów powyżej progów".
 
-![Alert usługi o wiadomościach oczekujących na dostarczenie do adresatów zewnętrznych wyświetlany na Exchange Online nawigacyjnym monitorowania poczty.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
+![Alert usługi dla komunikatów oczekujących na dostarczenie do adresatów zewnętrznych wyświetlany na pulpicie nawigacyjnym monitorowania Exchange Online.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
 
-Po dwukrotnym kliknięciu alertu usługi zostanie wyświetlona strona wysuuwana podobna do poniższej.
+Po dwukrotnym kliknięciu alertu usługi zostanie wyświetlona strona wysuwana podobna do poniższej.
 
-![Zawartość alertu usługi dla wiadomości oczekujących na dostarczenie wiadomości do adresatów zewnętrznych.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts2.png)
+![Zawartość alertu usługi dla komunikatów oczekujących na dostarczenie do adresatów zewnętrznych.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts2.png)
 
-## <a name="what-do-these-service-alerts-indicate"></a>Co oznaczają te alerty usługi?
+## <a name="what-do-these-service-alerts-indicate"></a>Co wskazują te alerty usługi?
 
-Alerty usługi dla wiadomości oczekujących na dostarczenie do adresatów zewnętrznych informują o tym, że wiadomości przeznaczone do adresatów spoza Exchange Online mogą być opóźnione. Kolejkowanie wiadomości może być spowodowane przez środowisko lokalne lub rozwiązanie do obsługi wiadomości lub dziennika innej firmy.
+Alerty usługi dotyczące komunikatów oczekujących na dostarczenie do adresatów zewnętrznych informują o tym, że wiadomości przeznaczone dla adresatów spoza Exchange Online mogą być opóźnione. Kolejkowanie komunikatów może być spowodowane przez środowisko lokalne lub rozwiązanie do obsługi komunikatów lub dzienników innych firm.
 
-Oto kilka typowych przyczyn kolejkowania wiadomości do adresatów zewnętrznych. Jednak problemy powodujące te alerty usługi mogą nie być ograniczone do tych powodów.
+Poniżej przedstawiono niektóre typowe przyczyny kolejkowania komunikatów do adresatów zewnętrznych. Jednak problemy powodujące te alerty usługi nie mogą być ograniczone do tych przyczyn.
 
-- Zmiany w systemie DNS
+- Zmiany dns
 
-- Nadmiarowe stawki za wysyłanie
+- Nadmierne szybkości wysyłania
 
-- Lokalne agenty transferu wiadomości (MTA) lub rozwiązania do dziennika z małą i bezpłatną przestrzenią dyskową
+- Lokalni agenci transferu komunikatów (MTA) lub rozwiązania do rejestrowania z małą lub małą ilością wolnego miejsca na dysku
 
-- MTA w backpressure
+- MtAs w backpressure
 
-- Problemy z siecią, w tym równoważenie obciążenia
+- Problemy z siecią, w tym moduły równoważenia obciążenia
 
 - Problemy z certyfikatem
 
-Każdy alert usługi zawiera zalecenia wysokiego poziomu dotyczące rozwiązywania problemu. Alert usługi wskazuje również liczbę wiadomości w kolejce w czasie alertu, domenę, do której wiadomości są w kolejce, oraz kod błędu SMTP skojarzony z większość komunikatów w kolejce.
+Każdy alert usługi zawiera zalecenia wysokiego poziomu dotyczące korygowania problemu. Alert usługi wskazuje również liczbę komunikatów umieszczonych w kolejce w czasie alertu, domenę, do której są umieszczane komunikaty w kolejce, oraz kod błędu SMTP skojarzony z większością komunikatów w kolejce.
 
-Aby uzyskać więcej informacji na temat określania głównej przyczyny tych alertów usługi, zobacz Inteligencja [przepływu poczty e-mail w programie Exchange Online](../security/office-365-security/mail-flow-intelligence-in-office-365.md). Ten artykuł zawiera również sugerowane działania mające na celu naprawienie głównej przyczyny.
+Aby uzyskać więcej informacji na temat określania głównej przyczyny tych alertów usługi, zobacz [Analiza przepływu poczty w Exchange Online](../security/office-365-security/mail-flow-intelligence-in-office-365.md). Ten artykuł zawiera również sugerowane akcje naprawy głównej przyczyny.
 
 > [!NOTE]
-> Firma Microsoft nie może uwzględnić wszystkich kodów błędów SMTP dostarczonych przez innych dostawców. W związku z tym od administratorów może być wymagane badanie kodów błędów specyficznych dla ich platformy MTA lub rozwiązań dziennika używanych przez ich organizację.
+> Firma Microsoft nie może uwzględnić każdego kodu błędu SMTP dostarczonego przez dostawców innych firm. W związku z tym administratorzy mogą być zobowiązani do zbadania kodów błędów specyficznych dla ich rozwiązań mta lub dzienników używanych przez organizację.
 
 ## <a name="more-information"></a>Więcej informacji
 
-Jeśli Twoja organizacja ostatnio utworzyła lub zmieniła łączniki przepływu poczty e-mail w Twojej organizacji lokalnej lub Exchange Online, zobacz następujące artykuły, aby uzyskać więcej informacji.
+Jeśli Twoja organizacja niedawno utworzyła lub zmieniła łączniki przepływu poczty w organizacji lokalnej lub Exchange Online, zobacz następujące artykuły, aby uzyskać więcej informacji.
 
-- [Konfigurowanie przepływu poczty e-mail przy użyciu łączników w Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- [Konfigurowanie przepływu poczty przy użyciu łączników w Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
-- [Konfigurowanie łączników do rozsyłania poczty](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)
+- [Konfigurowanie łączników do kierowania poczty](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)
 
-- [Najlepsze rozwiązania dotyczące przepływu poczty e-mail](/exchange/mail-flow-best-practices/mail-flow-best-practices)
+- [Najlepsze rozwiązania dotyczące przepływu poczty](/exchange/mail-flow-best-practices/mail-flow-best-practices)
 
-- [Szczegółowe informacje o przepływie poczty w Centrum & zgodności](/microsoft-365/security/office-365-security/mail-flow-insights-v2)
+- [Szczegółowe informacje o przepływie poczty w Centrum zgodności & zabezpieczeń](/microsoft-365/security/office-365-security/mail-flow-insights-v2)
 
 - [Szczegółowe informacje o kolejkach na pulpicie nawigacyjnym przepływu poczty](/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues#queues-insight-in-the-mail-flow-dashboard)
 
-- [Śledzenie wiadomości e-mail w programie Exchange Online](/exchange/monitoring/trace-an-email-message/trace-an-email-message)
+- [Śledzenie wiadomości e-mail w Exchange Online](/exchange/monitoring/trace-an-email-message/trace-an-email-message)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Podczas tworzenia etykiety poufności możesz automatycznie przypisywać etykietę do plików i wiadomości e-mail lub monitować użytkowników o wybranie zalecanej etykiety.
-ms.openlocfilehash: fc641845907e157e555e70104b2fcb472ad496af
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 9998f71d275d28f10fc950b978cc13ce7fd3c335
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599282"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840436"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiety poufności do zawartości
 
@@ -268,7 +268,7 @@ Przed skonfigurowaniem zasad automatycznego etykietowania upewnij się, że znas
   - Nie ma znaczenia, czy automatyczne etykietowanie w Office ustawienie etykiety aplikacji jest włączone lub wyłączone, ponieważ to ustawienie etykiety uzupełnia zasady automatycznego etykietowania, jak wyjaśniono we wstępie.
   - Jeśli etykiety, których chcesz używać do automatycznego etykietowania, są skonfigurowane do używania oznaczeń wizualnych (nagłówków, stopek, znaków wodnych), pamiętaj, że nie są one stosowane do dokumentów.
   - Jeśli etykiety stosują [szyfrowanie](encryption-sensitivity-labels.md):
-    - Jeśli zasady automatycznego etykietowania zawierają lokalizacje dla SharePoint lub OneDrive, etykieta musi być skonfigurowana dla ustawienia **Przypisz uprawnienia teraz**.
+    - Jeśli zasady automatycznego etykietowania zawierają lokalizacje dla SharePoint lub OneDrive, etykieta musi być skonfigurowana dla ustawienia **Przypisz uprawnienia teraz**, a **dostęp użytkownika do zawartości** wygasa musi być ustawiony na **Nigdy**.
     - Jeśli zasady automatycznego etykietowania są przeznaczone tylko dla Exchange, etykietę można skonfigurować dla opcji **Przypisz uprawnienia teraz** lub **Zezwalaj użytkownikom na przypisywanie uprawnień** (dla opcji Nie przesyłaj dalej lub Encrypt-Only).
 
 ### <a name="learn-about-simulation-mode"></a>Dowiedz się więcej o trybie symulacji
@@ -377,7 +377,7 @@ Na koniec możesz użyć trybu symulacji, aby zapewnić przybliżenie czasu potr
 
 11. Na stronie **Podsumowanie** : przejrzyj konfigurację zasad automatycznego etykietowania i wprowadź wszelkie wymagane zmiany, a następnie ukończ konfigurację.
 
-Teraz na stronie Information **protectionAuto-labeling** (**Ochrona** >  informacji) zasady automatycznego etykietowania są widoczne w sekcji **Symulacja** lub **Wył.**, w zależności od tego, czy zostały uruchomione w trybie symulacji, czy nie. Wybierz zasady, aby wyświetlić szczegóły konfiguracji i stanu (na przykład **symulacja zasad jest nadal uruchomiona**). W przypadku zasad w trybie symulacji wybierz kartę **Dopasowane elementy** , aby zobaczyć, które wiadomości e-mail lub dokumenty pasują do określonych reguł.
+Teraz na stronie **Automatyczne etykietowanie** **ochrony** >  informacji zobaczysz zasady automatycznego **etykietowania w sekcji Symulacja** lub **Wył**., w zależności od tego, czy wybrano jej uruchomienie w trybie symulacji, czy nie. Wybierz zasady, aby wyświetlić szczegóły konfiguracji i stanu (na przykład **symulacja zasad jest nadal uruchomiona**). W przypadku zasad w trybie symulacji wybierz kartę **Dopasowane elementy** , aby zobaczyć, które wiadomości e-mail lub dokumenty pasują do określonych reguł.
 
 Zasady można modyfikować bezpośrednio z tego interfejsu:
 
