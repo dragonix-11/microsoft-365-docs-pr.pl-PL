@@ -1,6 +1,6 @@
 ---
 title: Badaj i koryguj alerty dotyczące zgodności w komunikacji
-description: Badanie i korygowanie alertów zgodności komunikacji w usłudze Microsoft Purview.
+description: Zbadaj i skoryguj alerty zgodności komunikacji w Microsoft Purview.
 keywords: Microsoft 365, Microsoft Purview, zgodność, zgodność z komunikacją
 f1.keywords:
 - NOCSH
@@ -20,26 +20,26 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7f1afe62dcb7dabf55b48985354653b9418d0561
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0d9806d795b434c305869d8409518c462123dbdc
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971632"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842296"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Badaj i koryguj alerty dotyczące zgodności w komunikacji
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po skonfigurowaniu zasad zgodności komunikacji zaczniesz otrzymywać alerty w portalu zgodności usługi Microsoft Purview w przypadku problemów z komunikatami zgodnych z warunkami zasad. Postępuj zgodnie z instrukcjami przepływu pracy tutaj, aby zbadać i rozwiązać problemy z alertami.
+Po skonfigurowaniu zasad zgodności komunikacji zaczniesz otrzymywać w portal zgodności Microsoft Purview alerty dotyczące problemów z komunikatami zgodnych z warunkami zasad. Postępuj zgodnie z instrukcjami przepływu pracy tutaj, aby zbadać i rozwiązać problemy z alertami.
 
 ## <a name="investigate-alerts"></a>Badaj alerty
 
-Pierwszym krokiem do zbadania problemów wykrytych przez zasady jest przejrzenie alertów zgodności komunikacji w portalu zgodności usługi Microsoft Purview. W obszarze rozwiązania do zapewniania zgodności z komunikacją istnieje kilka obszarów, które ułatwiają szybkie badanie alertów, w zależności od tego, jak wolisz wyświetlać grupowanie alertów:
+Pierwszym krokiem do zbadania problemów wykrytych przez zasady jest przejrzenie alertów zgodności komunikacji w portal zgodności Microsoft Purview. W obszarze rozwiązania do zapewniania zgodności z komunikacją istnieje kilka obszarów, które ułatwiają szybkie badanie alertów, w zależności od tego, jak wolisz wyświetlać grupowanie alertów:
 
-- **Strona zasad zgodności komunikacji**: po zalogowaniu się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365 wybierz pozycję **Zgodność komunikacji**, aby wyświetlić stronę **Zasady** zgodności komunikacji. Na tej stronie są wyświetlane zasady zgodności komunikacji skonfigurowane dla organizacji Microsoft 365 i linki do zalecanych szablonów zasad. Wszystkie wymienione zasady obejmują liczbę alertów, które wymagają przeglądu, liczbę elementów eskalowanych i rozwiązanych, stan zasad oraz datę i godzinę ostatniego skanowania zasad. Wybranie zasad powoduje wyświetlenie wszystkich oczekujących alertów dotyczących dopasowań do zasad, wybranie określonego alertu w celu uruchomienia strony szczegółów zasad i rozpoczęcia akcji korygowania.
-- **Alerty**: przejdź do pozycji **Zgodność** >  **komunikacjiAcertyfikacje**, aby wyświetlić alerty z ostatnich 30 dni pogrupowane według dopasowań zasad. Ten widok umożliwia szybkie sprawdzenie, które zasady zgodności komunikacji generują najwięcej alertów uporządkowanych według ważności. Aby rozpocząć akcje korygowania, wybierz zasady skojarzone z alertem, aby uruchomić stronę **Szczegóły zasad** . Na stronie **Szczegóły zasad** możesz przejrzeć podsumowanie działań na stronie **Przegląd** , przejrzeć komunikaty alertów i wykonać je na stronie **Oczekujące** lub przejrzeć historię zamkniętych alertów na stronie **Rozwiązano** .
-- **Raporty**: przejdź do pozycji **Zgodność** >  **komunikacjiRaporty**, aby wyświetlić widżety raportu zgodności komunikacji. Każdy widżet zawiera omówienie działań i stanów zgodności komunikacji, w tym dostęp do bardziej szczegółowych informacji na temat dopasowań zasad i akcji korygowania.
+- **Strona zasad zgodności komunikacji**: po zalogowaniu się do [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365 wybierz pozycję **Zgodność komunikacji**, aby wyświetlić stronę **Zasady** zgodności komunikacji. Na tej stronie są wyświetlane zasady zgodności komunikacji skonfigurowane dla organizacji Microsoft 365 i linki do zalecanych szablonów zasad. Wszystkie wymienione zasady obejmują liczbę alertów, które wymagają przeglądu, liczbę elementów eskalowanych i rozwiązanych, stan zasad oraz datę i godzinę ostatniego skanowania zasad. Wybranie zasad powoduje wyświetlenie wszystkich oczekujących alertów dotyczących dopasowań do zasad, wybranie określonego alertu w celu uruchomienia strony szczegółów zasad i rozpoczęcia akcji korygowania.
+- **Alerty**: przejdź do pozycji **Alerty** **zgodności** >  komunikacji, aby wyświetlić alerty z ostatnich 30 dni pogrupowane według dopasowań zasad. Ten widok umożliwia szybkie sprawdzenie, które zasady zgodności komunikacji generują najwięcej alertów uporządkowanych według ważności. Aby rozpocząć akcje korygowania, wybierz zasady skojarzone z alertem, aby uruchomić stronę **Szczegóły zasad** . Na stronie **Szczegóły zasad** możesz przejrzeć podsumowanie działań na stronie **Przegląd** , przejrzeć komunikaty alertów i wykonać je na stronie **Oczekujące** lub przejrzeć historię zamkniętych alertów na stronie **Rozwiązano** .
+- **Raporty**: przejdź do pozycji **Raporty zgodności** >  komunikacji, aby wyświetlić widżety raportu zgodności komunikacji. Każdy widżet zawiera omówienie działań i stanów zgodności komunikacji, w tym dostęp do bardziej szczegółowych informacji na temat dopasowań zasad i akcji korygowania.
 
 ### <a name="using-filters"></a>Korzystanie z filtrów
 
@@ -53,7 +53,7 @@ Filtry zgodności komunikacji umożliwiają filtrowanie i sortowanie komunikató
 
 W poniższej tabeli przedstawiono szczegóły filtru:
 
-|**Filtr**|**Szczegóły**|
+|**Filtrowanie**|**Szczegóły**|
 |:-----|:-----|
 | **Data** | Data wysłania lub odebrania wiadomości przez użytkownika w organizacji. Aby filtrować dla jednego dnia, wybierz zakres dat rozpoczynający się od dnia, dla który mają zostać wyświetlone wyniki, i zakończ go następnym dniem. Jeśli na przykład chcesz filtrować wyniki dla 20.09.2020 r., wybierz zakres dat filtru 20.09.2020-21.2020.|
 | **Klasa plików** | Klasa komunikatu oparta na typie komunikatu, *wiadomości* lub *załączniku*. |
@@ -72,9 +72,9 @@ W poniższej tabeli przedstawiono szczegóły filtru:
 
 #### <a name="to-configure-a-filter"></a>Aby skonfigurować filtr
 
-1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
+1. Zaloguj się do [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
 
-2. W portalu zgodności usługi Microsoft Purview przejdź do pozycji **Zgodność z komunikacją**.
+2. W portal zgodności Microsoft Purview przejdź do pozycji **Zgodność z komunikacją**.
 
 3. Wybierz kartę **Zasady** , a następnie wybierz zasady do zbadania, kliknij dwukrotnie, aby otworzyć stronę **Zasady** .
 
@@ -96,9 +96,9 @@ Zasady zgodności komunikacji automatycznie skanują i grupują wstępnie w pobl
 
 #### <a name="to-remediate-duplicates"></a>Aby skorygować duplikaty
 
-1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
+1. Zaloguj się do [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
 
-2. W portalu zgodności usługi Microsoft Purview przejdź do pozycji **Zgodność z komunikacją**.
+2. W portal zgodności Microsoft Purview przejdź do pozycji **Zgodność z komunikacją**.
 
 3. Wybierz kartę **Zasady** , a następnie wybierz zasady do zbadania, kliknij dwukrotnie, aby otworzyć stronę **Zasady** .
 
@@ -147,7 +147,7 @@ Po przejrzeniu szczegółów komunikatu dla alertu możesz wybrać kilka akcji k
 - **Powiadom**: możesz użyć **kontrolki Powiadom** , aby przypisać niestandardowy szablon powiadomienia do alertu i wysłać powiadomienie ostrzegawcze do użytkownika. Wybierz odpowiedni szablon powiadomienia skonfigurowany w obszarze **Ustawienia zgodności komunikacji** i wybierz pozycję **Wyślij** do wiadomości e-mail przypomnienie do użytkownika, który wysłał wiadomość i rozwiązać problem.
 - **Eskaluj**: korzystając z **kontrolki Eskaluj** , możesz wybrać, kto jeszcze w organizacji powinien przejrzeć komunikat. Wybierz spośród listy recenzentów skonfigurowanych w zasadach zgodności komunikacji, aby wysłać powiadomienie e-mail z żądaniem dodatkowego przeglądu alertu wiadomości. Wybrany recenzent może użyć linku w powiadomieniu e-mail, aby przejść bezpośrednio do elementów eskalowanych do nich do przeglądu.
 - **Eskaluj w celu zbadania**: za pomocą funkcji **Escalate na potrzeby kontroli badania** możesz utworzyć nowy [przypadek zbierania elektronicznych materiałów dowodowych (Premium)](overview-ediscovery-20.md) dla pojedynczego lub wielu komunikatów. Podasz nazwę i notatki dla nowego przypadku, a użytkownik, który wysłał komunikat zgodny z zasadami, jest automatycznie przypisywany jako opiekun sprawy. Nie potrzebujesz żadnych dodatkowych uprawnień do zarządzania sprawą. Utworzenie sprawy nie rozwiązuje ani nie tworzy nowego tagu dla wiadomości. Podczas tworzenia sprawy zbierania elektronicznych materiałów dowodowych (Premium) podczas procesu korygowania można wybrać łącznie 100 komunikatów. Obsługiwane są komunikaty we wszystkich kanałach komunikacyjnych monitorowanych przez zgodność z komunikacją. Możesz na przykład wybrać 50 czatów Microsoft Teams, 25 Exchange Online wiadomości e-mail i 25 Yammer wiadomości po otwarciu nowego przypadku zbierania elektronicznych materiałów dowodowych (Premium) dla użytkownika.
-- **Usuń komunikat w Teams**: za pomocą kontrolki **Usuń wiadomość w Teams** możesz zablokować nieodpowiednie wiadomości i zawartość identyfikowaną w alertach z kanałów Microsoft Teams oraz czatów grupowych 1:1 i 1:1. Usunięte komunikaty i zawartość są zastępowane poradą dotyczącą zasad, która wyjaśnia, że jest ona zablokowana, oraz zasadami, które mają zastosowanie do jej usuwania z widoku. Adresaci otrzymują link w poradach dotyczących zasad, aby dowiedzieć się więcej o odpowiednich zasadach i procesie przeglądu. Nadawca otrzymuje poradę dotyczącą zasad dla zablokowanej wiadomości i zawartości, ale może przejrzeć szczegóły zablokowanej wiadomości i zawartości pod kątem kontekstu dotyczącego usunięcia.
+- **Usuń komunikat w Teams**: za pomocą kontrolki **Usuń wiadomość w Teams** możesz zablokować nieodpowiednie wiadomości i zawartość identyfikowaną w alertach z kanałów Microsoft Teams oraz czatów grupowych 1:1 i 1:1. Obejmuje to Teams komunikatów czatów zgłaszanych przez użytkowników i wiadomości czatów wykrytych przy użyciu zasad zgodności komunikacji opartych na uczeniu maszynowym i klasyfikatorze. Usunięte komunikaty i zawartość są zastępowane poradą dotyczącą zasad, która wyjaśnia, że jest ona zablokowana, oraz zasadami, które mają zastosowanie do jej usuwania z widoku. Adresaci otrzymują link w poradach dotyczących zasad, aby dowiedzieć się więcej o odpowiednich zasadach i procesie przeglądu. Nadawca otrzymuje poradę dotyczącą zasad dla zablokowanej wiadomości i zawartości, ale może przejrzeć szczegóły zablokowanej wiadomości i zawartości pod kątem kontekstu dotyczącego usunięcia.
 
     ![Usuń komunikat z Microsoft Teams.](../media/communication-compliance-remove-teams-message.png)
 
@@ -159,7 +159,7 @@ Szczegóły komunikatów można wyeksportować lub pobrać, jeśli chcesz zarchi
 
 [Microsoft Power Automate](/power-automate/getting-started) to usługa przepływu pracy, która automatyzuje akcje w aplikacjach i usługach. Korzystając z przepływów z szablonów lub utworzonych ręcznie, można zautomatyzować typowe zadania skojarzone z tymi aplikacjami i usługami. Po włączeniu przepływów Power Automate w celu zapewnienia zgodności z komunikacją można zautomatyzować ważne zadania dla alertów i użytkowników. Możesz skonfigurować przepływy Power Automate, aby powiadamiać menedżerów, gdy użytkownicy mają alerty zgodności z komunikacją i inne aplikacje.
 
-Klienci z subskrypcjami Microsoft 365, które obejmują zgodność z komunikacją, nie potrzebują dodatkowych licencji Power Automate, aby korzystać z zalecanego domyślnego szablonu Power Automate zgodności z komunikacją. Szablon domyślny można dostosować do obsługi organizacji i obejmuje podstawowe scenariusze zgodności z komunikacją. Jeśli wybierzesz opcję używania funkcji Power Automate w warstwie Premium w tych szablonach, utwórz szablon niestandardowy przy użyciu łącznika usługi Microsoft Purview lub użyjesz szablonów Power Automate dla innych obszarów zgodności w usłudze Microsoft Purview, możesz potrzebować dodatkowych licencji Power Automate.
+Klienci z subskrypcjami Microsoft 365, które obejmują zgodność z komunikacją, nie potrzebują dodatkowych licencji Power Automate, aby korzystać z zalecanego domyślnego szablonu Power Automate zgodności z komunikacją. Szablon domyślny można dostosować do obsługi organizacji i obejmuje podstawowe scenariusze zgodności z komunikacją. Jeśli wybierzesz opcję używania funkcji Power Automate w warstwie Premium w tych szablonach, utwórz szablon niestandardowy przy użyciu łącznika Microsoft Purview lub użyjesz szablonów Power Automate dla innych obszarów zgodności w Microsoft Purview, może być konieczne dodatkowe Power Automate  Licencje.
 
 > [!IMPORTANT]
 > Czy podczas testowania przepływów Power Automate otrzymujesz monity o dodatkową walidację licencji? Twoja organizacja mogła jeszcze nie otrzymać aktualizacji usługi dla tej funkcji w wersji zapoznawczej. Aktualizacje są wdrażane, a wszystkie organizacje z subskrypcjami Microsoft 365, które obejmują zgodność z komunikacją, powinny mieć obsługę licencji dla przepływów utworzonych na podstawie zalecanych szablonów Power Automate do 30 października 2020 r.
@@ -179,11 +179,11 @@ Aby utworzyć przepływ Power Automate na podstawie zalecanego szablonu domyśln
 
 Wykonaj następujące kroki, aby utworzyć przepływ Power Automate na podstawie szablonu domyślnego:
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przejdź do pozycji **Zgodność z komunikacjąZasady** >  i wybierz zasady z alertem, który chcesz przejrzeć.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do pozycji **Zasady** **zgodności** >  komunikacji i wybierz zasady z alertem, który chcesz przejrzeć.
 2. Z poziomu zasad wybierz kartę **Oczekujące** i wybierz oczekujący alert.
 3. Wybierz **pozycję Power Automate** z menu akcji alertu.
 4. Na stronie **Power Automate** wybierz szablon domyślny z sekcji **Szablony zgodności komunikacji, które mogą ci się podobać** na stronie.
-5. Przepływ wyświetli listę połączeń osadzonych wymaganych dla przepływu i będzie wyświetlany, jeśli są dostępne stany połączenia. W razie potrzeby zaktualizuj wszystkie połączenia, które nie są wyświetlane jako dostępne. Wybierz pozycję **Kontynuuj**.
+5. Przepływ wyświetli listę połączeń osadzonych wymaganych dla przepływu i będzie wyświetlany, jeśli są dostępne stany połączenia. W razie potrzeby zaktualizuj wszystkie połączenia, które nie są wyświetlane jako dostępne. Naciśnij przycisk **Kontynuuj**.
 6. Domyślnie zalecane przepływy są wstępnie skonfigurowane z zalecanymi polami zgodności komunikacji i Microsoft 365 danych usługi wymaganymi do wykonania przydzielonego zadania dla przepływu. W razie potrzeby dostosuj składniki przepływu przy użyciu kontrolki **Pokaż opcje zaawansowane** i konfigurując dostępne właściwości składnika przepływu.
 7. W razie potrzeby dodaj wszelkie dodatkowe kroki do przepływu, wybierając przycisk **Nowy krok** . W większości przypadków ta zmiana nie powinna być potrzebna w przypadku zalecanych szablonów domyślnych.
 8. Wybierz pozycję **Zapisz wersję roboczą** , aby zapisać przepływ do dalszej konfiguracji później, lub wybierz pozycję **Zapisz** , aby ukończyć konfigurację przepływu.
@@ -196,7 +196,7 @@ Domyślnie przepływy Power Automate utworzone przez użytkownika są dostępne 
 Aby udostępnić przepływ Power Automate, musisz być członkiem co najmniej jednej grupy ról zgodności komunikacji.
 Wykonaj następujące kroki, aby udostępnić przepływ Power Automate:
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przejdź do pozycji **Zgodność z komunikacjąZasady** >  i wybierz zasady z alertem, który chcesz przejrzeć.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do pozycji **Zasady** **zgodności** >  komunikacji i wybierz zasady z alertem, który chcesz przejrzeć.
 2. Z poziomu zasad wybierz kartę **Oczekujące** i wybierz oczekujący alert.
 3. Wybierz **pozycję Power Automate** z menu akcji alertu.
 4. Na stronie **przepływów Power Automate** wybierz kartę **Moje przepływy** lub **Przepływy zespołu**.
@@ -210,11 +210,11 @@ Jeśli chcesz edytować przepływ, użyjesz kontrolki **Power Automate** podczas
 
 Wykonaj następujące kroki, aby edytować przepływ Power Automate:
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przejdź do pozycji **Zgodność z komunikacjąZasady** >  i wybierz zasady z alertem, który chcesz przejrzeć.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do pozycji **Zasady** **zgodności** >  komunikacji i wybierz zasady z alertem, który chcesz przejrzeć.
 2. Z poziomu zasad wybierz kartę **Oczekujące** i wybierz oczekujący alert.
 3. Wybierz **pozycję Power Automate** z menu akcji alertu.
 4. Na stronie **przepływów Power Automate** wybierz pozycję Przepływ do edycji. Wybierz pozycję **Edytuj** z menu sterowania przepływem.
-5. Wybierz **wielokropek** >  **Ustawienia** aby zmienić ustawienie składnika przepływu lub **wielokropekUsuj** > , aby usunąć składnik przepływu.
+5. Wybierz **wielokropek** >  **Ustawienia** aby zmienić ustawienie składnika przepływu lub **wielokropek** > **Usuń**, aby usunąć składnik przepływu.
 6. Wybierz pozycję **Zapisz** , a następnie **zamknij** , aby zakończyć edytowanie przepływu.
 
 #### <a name="delete-a-power-automate-flow"></a>Usuwanie przepływu Power Automate
@@ -223,7 +223,7 @@ Jeśli musisz usunąć przepływ, użyjesz kontrolki **Power Automate** podczas 
 
 Wykonaj następujące kroki, aby usunąć przepływ Power Automate:
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przejdź do pozycji **Zgodność z komunikacjąZasady** >  i wybierz zasady z alertem, który chcesz przejrzeć.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do pozycji **Zasady** **zgodności** >  komunikacji i wybierz zasady z alertem, który chcesz przejrzeć.
 2. Z poziomu zasad wybierz kartę **Oczekujące** i wybierz oczekujący alert.
 3. Wybierz **pozycję Power Automate** z menu akcji alertu.
 4. Na stronie **przepływów Power Automate** wybierz pozycję przepływ do usunięcia. Wybierz pozycję **Usuń** z menu sterowania przepływem.
@@ -269,8 +269,8 @@ Po rozwiązaniu komunikatów są one usuwane z widoku karty **Oczekujące** i wy
 
 Aby rozwiązać komunikaty, wykonaj następujące kroki:
 
-1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń użytkownika przypisanego do grup ról *Analityk zgodności komunikacji* lub *Badacz zgodności komunikacji* w organizacji Microsoft 365.
-2. W portalu zgodności usługi Microsoft Purview przejdź do pozycji **Zgodność z komunikacją**.
+1. Zaloguj się do [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń dla użytkownika przypisanego do grup ról *Analityk zgodności komunikacji* lub *Badacz zgodności komunikacji* w organizacji Microsoft 365.
+2. W portal zgodności Microsoft Purview przejdź do pozycji **Zgodność z komunikacją**.
 3. Wybierz kartę **Zasady** , a następnie wybierz zasady zawierające rozwiązany komunikat alertu, kliknij dwukrotnie, aby otworzyć stronę **Zasady** .
 4. Na stronie **Zasady** wybierz kartę **Rozwiązano** .
 5. Na **rozwiązanej karcie** wybierz co najmniej jeden komunikat, aby wrócić do *oczekującego*.

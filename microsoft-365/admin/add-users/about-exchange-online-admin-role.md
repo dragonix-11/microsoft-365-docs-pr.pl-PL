@@ -1,5 +1,5 @@
 ---
-title: Informacje o roli administratora Exchange Online
+title: Informacje o roli administratora Exchange
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,19 +21,20 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange Online administratorzy zarządzają pocztą e-mail i skrzynkami pocztowymi organizacji, a na przykład odzyskują usunięte elementy w skrzynce pocztowej użytkownika.
-ms.openlocfilehash: 048a435a515c4f88eb688a2cfaf13006e859741c
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Exchange administratorzy zarządzają pocztą e-mail i skrzynkami pocztowymi organizacji, a na przykład odzyskują usunięte elementy w skrzynce pocztowej użytkownika.
+ms.openlocfilehash: 375e2d6a1bf08ab310da28233deaf5dbbbae9be7
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467103"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842262"
 ---
-# <a name="about-the-exchange-online-admin-role"></a>Informacje o roli administratora Exchange Online
+# <a name="about-the-exchange-administrator-role"></a>Informacje o roli administratora Exchange
 
 Aby ułatwić administrowanie Microsoft 365, możesz [przypisać](assign-admin-roles.md) użytkownikom uprawnienia do zarządzania pocztą e-mail i skrzynkami pocztowymi organizacji z <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a>. Można to zrobić, przypisując je do roli administratora Exchange.
   
- **Porada**: Po przypisaniu kogoś do roli administratora Exchange przypisz ją również do roli administratora usługi. Dzięki temu mogą zobaczyć ważne informacje w Centrum administracyjne platformy Microsoft 365, takie jak kondycja usługi Exchange Online oraz powiadomienia o zmianach i wydaniach.
+> [!TIP]
+> Po przypisaniu kogoś do roli administratora Exchange zalecamy przypisanie ich do roli administratora pomocy technicznej usługi. Dzięki temu mogą zobaczyć ważne informacje w Centrum administracyjne platformy Microsoft 365, takie jak kondycja usługi Exchange Online oraz powiadomienia o zmianach i wydaniach.
 
 Poniżej przedstawiono niektóre z kluczowych zadań, które użytkownicy mogą wykonać, gdy są przypisani do roli administratora Exchange:
   
