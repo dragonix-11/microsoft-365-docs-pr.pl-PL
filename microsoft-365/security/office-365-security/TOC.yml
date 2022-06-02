@@ -204,7 +204,7 @@
               href: attack-simulation-training-get-started.md
             - name: Symulowanie ataku polegającego na wyłudzaniu informacji dzięki szkoleniu z symulacji ataku
               href: attack-simulation-training.md
-            - name: Tworzenie niestandardowych ładunków na potrzeby szkolenia z symulacji ataków
+            - name: Ładunki na potrzeby trenowania symulacji ataków
               href: attack-simulation-training-payloads.md
             - name: Automatyzacje symulacji w szkoleniu z symulacji ataków
               href: attack-simulation-training-simulation-automations.md

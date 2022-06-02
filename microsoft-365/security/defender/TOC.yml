@@ -332,6 +332,12 @@
           items:
             - name: Omówienie
               href: defenderexpertsforhuntingprev.md
+        - name: Podręczniki dotyczący oprogramowania wymuszającego okup
+          items:
+            - name: "Wykrywanie ataków związanych z\_oprogramowaniem wymuszających okup obsługiwanych przez człowieka za pomocą usługi Microsoft 365 Defender"
+              href: playbook-detecting-ransomware-m365-defender.md
+            - name: "Reagowanie na ataki związane z\_oprogramowaniem wymuszającym okup"
+              href: playbook-responding-ransomware-m365-defender.md
     - name: Przewodnik na temat operacji dotyczących zabezpieczeń
       items:
         - name: Omówienie
