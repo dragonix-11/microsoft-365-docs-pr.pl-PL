@@ -561,7 +561,7 @@
               href: view-the-dlp-reports.md
             - name: Twórz zapytania w celu znalezienia poufnych danych przechowywanych w witrynach
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: 'Jak działa funkcja DLP między zabezpieczeniami, centrum zgodności i centrum administracyjnym programu Exchange'
+            - name: Jak działa funkcja DLP między portalem zgodności usługi Microsoft Purview a centrum administracyjnym programu Exchange
               href: how-dlp-works-between-admin-centers.md
             - name: Konfiguruj i wyświetlaj alerty dla zasad DLP (wersja zapoznawcza)
               href: dlp-configure-view-alerts-policies.md
