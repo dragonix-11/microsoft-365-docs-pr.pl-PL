@@ -16,16 +16,16 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować zezwolenia na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f1dffb7fd6b13fc1999e51666717dc464e694d0c
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 64b5576015f279efec4c469e18a0ace652b90918
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873407"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Dodawanie zezwoleń na liście dozwolonych/zablokowanych dzierżaw
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -138,7 +138,7 @@ Zezwalaj na pliki na stronie **Przesyłanie** w Microsoft 365 Defender.
 
 ## <a name="add-spoofed-sender-allow-entries-using-powershell"></a>Dodawanie fałszywych wpisów zezwalania nadawcy przy użyciu programu PowerShell
 
-Aby dodać sfałszowane wpisy nadawcy na liście dozwolonych/zablokowanych dzierżaw w [programie Exchange Online programu PowerShell](/exchange/connect-to-exchange-online-powershell), użyj następującej składni:
+Aby dodać sfałszowane wpisy nadawcy na liście dozwolonych/zablokowanych dzierżaw w [programie Exchange Online programu PowerShell](/powershell/exchange/exchange-online-powershell), użyj następującej składni:
 
 ```powershell
 New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
@@ -146,7 +146,7 @@ New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -Sen
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 - [Przesyłanie przez administratora](admin-submission.md)
 - [Zgłaszanie wyników fałszywie dodatnich i fałszywie ujemnych](report-false-positives-and-false-negatives.md)

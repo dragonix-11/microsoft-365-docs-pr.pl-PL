@@ -18,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d2ad08c91d8c28163eccf239f9a7266b15a44927
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: ef9793a1bcbf09f6b7a1640d9213522cdb741891
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872275"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych
 
@@ -31,7 +31,7 @@ ms.locfileid: "65418341"
 > Klienci, którzy zastosowali aktualizację aparatu microsoft defender z marca 2022 r **. (1.1.19100.5**), mogli napotkać wysokie wykorzystanie zasobów (procesor CPU i/lub pamięć). Firma Microsoft wydała aktualizację (**1.1.19200.5**), która rozwiązuje błędy wprowadzone we wcześniejszej wersji. Zaleca się, aby klienci zaktualizowali tę nową kompilację aparatu antywirusowego (**1.1.19200.5**). Aby upewnić się, że wszystkie problemy z wydajnością są w pełni rozwiązane, zaleca się ponowne uruchomienie maszyn po zastosowaniu aktualizacji. Zobacz [Miesięczne wersje platformy i aparatu](#monthly-platform-and-engine-versions) (w tym artykule).
 
 **Dotyczy:**
-- [plany Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender – plan 1 i 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Program antywirusowy Microsoft Defender
 
 **Platformy**
@@ -297,7 +297,7 @@ Brak znanych problemów
 
 ### <a name="whats-new"></a>Co nowego
 - Dodano obsługę sterowania urządzeniami przenośnymi Windows
-- Ochrona potencjalnie niechcianych aplikacji (PUA) jest domyślnie włączona dla użytkowników (zobacz [Potencjalnie niechciane aplikacje będą domyślnie blokowane](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
+- Ochrona potencjalnie niechcianych aplikacji (PUA) jest domyślnie włączona dla użytkowników (zobacz [Blokowanie potencjalnie niechcianych aplikacji za pomocą Program antywirusowy Microsoft Defender](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)).
 - Zaplanowane skanowania dla systemów zarządzanych zasady grupy Object będą zgodne z czasem skanowania skonfigurowanym przez użytkownika
 - Ulepszenia aparatu monitorowania zachowania
 
@@ -459,7 +459,7 @@ Brak znanych problemów
 
 ### <a name="whats-new"></a>Co nowego
 
-- Uprawnienia administratora są wymagane do przywracania plików w kwarantannie
+- Administracja uprawnienia są wymagane do przywracania plików w kwarantannie
 - Zdarzenia w formacie XML są teraz obsługiwane
 - Obsługa programu CSP w celu ignorowania scalania wykluczeń
 - Nowe interfejsy zarządzania dla:
@@ -1032,7 +1032,7 @@ Aby uzyskać więcej informacji, zobacz [Microsoft Defender update for Windows o
 | [aktualizacja Ochrona punktu końcowego w usłudze Microsoft Defender czujnika EDR](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Możesz zaktualizować czujnik EDR (MsSense.exe), który jest dołączony do nowego pakietu ujednoliconego rozwiązania Ochrona punktu końcowego w usłudze Microsoft Defender wydanego w 2021 roku.   |
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

@@ -17,16 +17,15 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 05/20/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 7ac72d88975231bb76f6e097a80f372a8ffac535
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: 36aa48f26e60e2c3afb034a218c3356e27d75ffd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65626970"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873363"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Chroń ustawienia zabezpieczeń z ochroną przed naruszeniami
 
@@ -41,7 +40,7 @@ ms.locfileid: "65626970"
 
 Ochrona przed naruszeniami jest dostępna dla urządzeń z uruchomioną jedną z następujących wersji Windows:
 
-- Windows 11
+- System Windows 11
 - Windows 11 Enterprise wielu sesjach 
 - Windows 10
 - Windows 10 Enterprise wielu sesjach
@@ -115,7 +114,7 @@ Ochronę przed naruszeniami można włączyć lub wyłączyć dla dzierżawy prz
 
 - Na urządzeniach Windows musi działać jedna z następujących wersji Windows:
   
-  - Windows 11
+  - System Windows 11
   - Windows 11 Enterprise wielu sesjach 
   - Windows 10
   - Windows 10 Enterprise wielu sesjach
@@ -154,7 +153,7 @@ Jeśli Organizacja używa Microsoft Endpoint Manager (MEM), możesz włączyć (
 - Urządzenia muszą być [dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/onboarding).
 - Musisz mieć [przypisane odpowiednie uprawnienia](/microsoft-365/security/defender-endpoint/assign-portal-access) , takie jak administrator globalny, administrator zabezpieczeń lub operacje zabezpieczeń.
 - Organizacja używa [Microsoft Endpoint Manager do zarządzania urządzeniami](/mem/endpoint-manager-getting-started). (Microsoft Endpoint Manager licencje (MEM) są wymagane; MEM jest uwzględniony w Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365  Instytucje rządowe G3/G5 i odpowiednie licencje edukacyjne).
-- Urządzenia Windows muszą działać Windows 11 lub Windows 10 [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) lub nowszym. (Aby uzyskać więcej informacji na temat wydań, zobacz [Windows 10 informacje o wersji](/windows/release-health/release-information)).
+- Urządzenia Windows muszą działać Windows 11 lub Windows 10 [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709), [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) lub nowszym. (Aby uzyskać więcej informacji na temat wydań, zobacz [Windows 10 informacje o wersji](/windows/release-health/release-information)).
 - Musisz używać zabezpieczeń Windows z [analizą zabezpieczeń](https://www.microsoft.com/wdsi/definitions) zaktualizowaną do wersji 1.287.60.0 (lub nowszej).
 - Urządzenia muszą używać platformy chroniącej przed złośliwym oprogramowaniem w wersji 4.18.1906.3 (lub nowszej) i wersji `1.1.15500.X` aparatu chroniącego przed złośliwym oprogramowaniem (lub nowszym). ([Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych](manage-updates-baselines-microsoft-defender-antivirus.md)).
 
@@ -200,7 +199,6 @@ Zobacz następujące zasoby:
 
 > [!NOTE]
 > Ochrona przed naruszeniami blokuje próby modyfikowania ustawień Program antywirusowy Microsoft Defender za pośrednictwem rejestru.
->
 > Aby zapewnić, że ochrona przed naruszeniami nie koliduje z produktami zabezpieczeń innych niż microsoft ani skryptami instalacji przedsiębiorstwa modyfikuj te ustawienia, przejdź do **Zabezpieczenia Windows** i **zaktualizuj analizę zabezpieczeń** do wersji 1.287.60.0 lub nowszej. (Zobacz [Aktualizacje analizy zabezpieczeń](https://www.microsoft.com/wdsi/definitions)). Po wprowadzeniu tej aktualizacji ochrona przed naruszeniami nadal chroni ustawienia rejestru, a dzienniki próbują je zmodyfikować bez zwracania błędów.
 
 Jeśli jesteś użytkownikiem domowym lub nie podlegasz ustawieniu zarządzanym przez zespół ds. zabezpieczeń, możesz użyć aplikacji Zabezpieczenia Windows do zarządzania ochroną przed naruszeniami. Aby zmienić ustawienia zabezpieczeń, takie jak ochrona przed naruszeniami, musisz mieć odpowiednie uprawnienia administratora na urządzeniu.
@@ -247,16 +245,16 @@ Aby dowiedzieć się więcej na temat zarządzania lukami w zabezpieczeniach & z
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>W jakich wersjach Windows mogę skonfigurować ochronę przed naruszeniami?
 
-- Windows 11
+- System Windows 11
 - Windows 11 Enterprise wielu sesjach
-- Windows 10 system operacyjny [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) lub nowszy razem z [Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint).
+- Windows 10 system operacyjny [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709), [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) lub nowszy razem z [Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint).
 - Windows 10 Enterprise wielu sesjach
   
 Jeśli używasz Configuration Manager w wersji 2006 z dołączaniem dzierżawy, ochronę przed naruszeniami można rozszerzyć na Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 i Windows Server 2022. Zobacz [Dołączanie dzierżawy: Tworzenie i wdrażanie zasad ochrony antywirusowej zabezpieczeń punktu końcowego z centrum administracyjnego (wersja zapoznawcza).](/mem/configmgr/tenant-attach/deploy-antivirus-policy)
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>Czy ochrona przed naruszeniami wpłynie na rejestrację oprogramowania antywirusowego innej firmy niż Microsoft w aplikacji Zabezpieczenia Windows?
 
-L.p. Oferty programów antywirusowych innych niż Microsoft będą nadal rejestrowane w aplikacji Zabezpieczenia Windows.
+Nie. Oferty programów antywirusowych innych niż Microsoft będą nadal rejestrowane w aplikacji Zabezpieczenia Windows.
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>Co się stanie, jeśli Program antywirusowy Microsoft Defender nie jest aktywna na urządzeniu?
 
@@ -294,7 +292,7 @@ Obecnie konfigurowanie ochrony przed naruszeniami w Intune jest dostępne tylko 
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>Jestem klientem korporacyjnym. Czy administratorzy lokalni mogą zmienić ochronę przed naruszeniami na swoich urządzeniach?
 
-L.p. Administratorzy lokalni nie mogą zmieniać ani modyfikować ustawień ochrony przed naruszeniami.
+Nie. Administratorzy lokalni nie mogą zmieniać ani modyfikować ustawień ochrony przed naruszeniami.
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>Co się stanie, jeśli moje urządzenie zostanie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender, a następnie przejdzie w stan off-boarded?
 

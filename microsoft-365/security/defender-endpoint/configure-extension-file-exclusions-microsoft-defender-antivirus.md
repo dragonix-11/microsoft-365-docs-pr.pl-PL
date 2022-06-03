@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 7b1614738b17d7f3cf78a6bfabb84f85196d42ff
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622990"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873253"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia pliku i lokalizacji folderu
 
@@ -109,6 +109,7 @@ Zobacz [Jak tworzyć i wdrażać zasady ochrony przed złośliwym kodem: ustawie
 3. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Windows Defender** \> **Wykluczenia**.
 
 4. Otwórz ustawienie **Wykluczenia ścieżki** do edycji i dodaj wykluczenia.
+
     1. Ustaw opcję **Włączone**.
     2. W sekcji **Opcje** wybierz pozycję **Pokaż**.
     3. Określ każdy folder we własnym wierszu w kolumnie **Nazwa wartości** .
@@ -118,6 +119,7 @@ Zobacz [Jak tworzyć i wdrażać zasady ochrony przed złośliwym kodem: ustawie
 5. Wybierz pozycję **OK**.
 
 6. Otwórz ustawienie **Wykluczenia rozszerzeń** do edycji i dodaj wykluczenia.
+
     1. Ustaw opcję **Włączone**.
     2. W sekcji **Opcje** wybierz pozycję **Pokaż**.
     3. Wprowadź każde rozszerzenie pliku we własnym wierszu w kolumnie **Nazwa wartości** .
@@ -192,7 +194,6 @@ Podczas definiowania elementów na liście wykluczeń nazwy pliku lub ścieżki 
 
 > [!IMPORTANT]
 > Istnieją kluczowe ograniczenia i scenariusze użycia dla tych symboli wieloznacznych:
->
 > - Użycie zmiennej środowiskowej jest ograniczone do zmiennych maszynowych i tych mających zastosowanie do procesów uruchomionych jako konto NT AUTHORITY\SYSTEM.
 > - Można użyć maksymalnie sześciu symboli wieloznacznych na wpis.
 > - Nie można użyć symbolu wieloznacznego zamiast litery dysku.
@@ -200,8 +201,6 @@ Podczas definiowania elementów na liście wykluczeń nazwy pliku lub ścieżki 
 > - Obecnie Microsoft Endpoint Configuration Manager nie obsługuje symboli wieloznaczowych (takich jak `*` lub `?`).
     
 W poniższej tabeli opisano sposób użycia symboli wieloznacznych i przedstawiono kilka przykładów.
-
-<br/><br/>
 
 |Symbol wieloznaczny|Przykłady|
 |---|---|
@@ -211,9 +210,7 @@ W poniższej tabeli opisano sposób użycia symboli wieloznacznych i przedstawio
 
 > [!IMPORTANT]
 > W przypadku mieszania argumentu wykluczenia pliku z argumentem wykluczenia folderu reguły zostaną zatrzymane w dopasowanym folderze i nie będą wyszukiwać dopasowań plików w żadnych podfolderach.
->
 > Można na przykład wykluczyć wszystkie pliki rozpoczynające się od "date" w folderach `c:\data\final\marked` i `c:\data\review\marked` za pomocą argumentu `c:\data\*\marked\date*`reguły .
->
 > Ten argument nie będzie jednak odpowiadał żadnym plikom w podfolderach w obszarze `c:\data\final\marked` lub `c:\data\review\marked`.
 
 <a id="review"></a>
@@ -289,7 +286,7 @@ W poniższej tabeli wymieniono i opisano zmienne środowiskowe konta systemowego
 
 Elementy na liście wykluczeń można pobrać przy użyciu jednej z następujących metod:
 
-- [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
@@ -297,7 +294,6 @@ Elementy na liście wykluczeń można pobrać przy użyciu jednej z następując
 
 > [!IMPORTANT]
 > Zmiany listy wykluczeń wprowadzone za pomocą zasady grupy **będą wyświetlane** na listach w [aplikacji Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md).
->
 > Zmiany wprowadzone w aplikacji Zabezpieczenia Windows **nie będą wyświetlane** na listach zasady grupy.
 
 Jeśli używasz programu PowerShell, możesz pobrać listę na dwa sposoby:

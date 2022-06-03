@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7f3109048f3a4931d25029df3db9a3c217d6354
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 510064136db8ed374c27ac8039ef78214945e002
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647430"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873837"
 ---
 # <a name="explorer-and-real-time-detections"></a>Wykrywanie eksploratora i czasu rzeczywistego
 
@@ -170,7 +170,7 @@ Do wyświetlania i używania Eksploratora *lub* wykrywania w czasie rzeczywistym
 Aby dowiedzieć się więcej na temat ról i uprawnień, zobacz następujące artykuły:
 
 - [Uprawnienia w portalu usługi Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
-- [Uprawnienia w Exchange Online](/e/exchange/permissions-exo/permissions-exo)
+- [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo)
 
 ## <a name="more-information"></a>Więcej informacji
 

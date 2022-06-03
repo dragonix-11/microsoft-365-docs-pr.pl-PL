@@ -230,7 +230,7 @@
         - name: Podczas przenoszenia danych i po tym procesie
           href: during-and-after-your-data-move.md
         - name: Ogólne często zadawane pytania dotyczące przenoszenia danych
-          href: data-move-faq.yml
+          href: data-move-faq.md
         - name: Miejsce przechowywania danych klienta
           href: o365-data-locations.md
         - name: Lokalizacje danych dla Unii Europejskiej

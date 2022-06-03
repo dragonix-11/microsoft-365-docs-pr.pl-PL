@@ -10,17 +10,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 690ec028b3013bf00e28547ff440c7804b4d0f64
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416425"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872319"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Przewodnik wdrożenia programu antywirusowego Microsoft Defender w środowisku infrastruktury pulpitu wirtualnego
 
@@ -36,7 +35,7 @@ Oprócz standardowych konfiguracji lokalnych lub sprzętowych można również u
 
 Aby uzyskać więcej informacji na temat obsługi usług Pulpit zdalny Microsoft Services i VDI, zobacz [Dokumentacja usługi Azure Virtual Desktop](/azure/virtual-desktop).
 
-W przypadku maszyn wirtualnych opartych na platformie Azure zobacz [Instalowanie Endpoint Protection w Microsoft Defender dla Chmury](/azure/security-center/security-center-install-endpoint-protection).
+W przypadku maszyn wirtualnych opartych na platformie Azure zobacz [Instalowanie Endpoint Protection w Microsoft Defender dla Chmury](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 Dzięki możliwości łatwego wdrażania aktualizacji na maszynach wirtualnych działających w interfejsach VDI skróciliśmy ten przewodnik, aby skupić się na tym, jak można szybko i łatwo uzyskiwać aktualizacje na maszynach. Nie trzeba już okresowo tworzyć i uszczelniać złotych obrazów, ponieważ aktualizacje są rozszerzane na ich bity składników na serwerze hosta, a następnie pobierane bezpośrednio na maszynę wirtualną po jej włączeniu.
 
@@ -268,7 +267,7 @@ Wykluczenia można dodawać, usuwać lub dostosowywać zgodnie z potrzebami.
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie wykluczeń Program antywirusowy Microsoft Defender na serwerze Windows.](configure-exclusions-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

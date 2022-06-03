@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/19/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 774d54aee080fbe3d6f5576fb29c85d887717b70
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ace1eae6ab668a34e4ceff676b9edf01196521dd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872725"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Omówienie planu Ochrona punktu końcowego w usłudze Microsoft Defender 1
 
 **Dotyczy**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Ochrona punktu końcowego w usłudze Microsoft Defender to platforma zabezpieczeń punktów końcowych przedsiębiorstwa, która ułatwia organizacjom takim jak Twoje zapobieganie zaawansowanym zagrożeniom, wykrywanie ich, badanie i reagowanie na nie. Z przyjemnością informujemy, że usługa Defender for Endpoint jest teraz dostępna w dwóch planach: 
 
@@ -58,7 +57,7 @@ Usługa Defender for Endpoint Plan 1 obejmuje następujące możliwości:
 - **[Ręczne akcje reagowania](#manual-response-actions)**, takie jak wysyłanie pliku do kwarantanny, które zespół ds. zabezpieczeń może podjąć na urządzeniach lub plikach po wykryciu zagrożeń
 - **[Możliwości zmniejszania obszaru ataków](#attack-surface-reduction)** , które wzmacniają zabezpieczenia urządzeń, zapobiegają atakom zerowym i zapewniają szczegółową kontrolę nad dostępem do punktów końcowych i zachowaniami
 - **[Scentralizowana konfiguracja i zarządzanie](#centralized-management)** za pomocą portalu Microsoft 365 Defender i integracja z Microsoft Endpoint Manager
-- **[Ochrona różnych platform](#cross-platform-support)**, w tym urządzeń z systemem Windows, macOS, iOS i Android
+- **[Ochrona różnych platform](#cross-platform-support)**, w tym urządzeń Windows, macOS, iOS i Android
 
 Poniższe sekcje zawierają więcej szczegółów na temat tych możliwości. 
 
@@ -120,7 +119,7 @@ Dzięki kontrolowanej kontroli dostępu do folderów uzyskasz środki zaradcze w
 
 Aby dowiedzieć się więcej, zobacz [Protect important folders with controlled folder access (Ochrona ważnych folderów przy użyciu kontrolowanego dostępu do folderów](controlled-folders.md)).
 
-### <a name="device-control"></a>Sterowanie urządzeniem
+### <a name="device-control"></a>Kontrola urządzenia
 
 Czasami zagrożenia dla urządzeń organizacji mają postać plików na dyskach wymiennych, takich jak dyski USB. Usługa Defender for Endpoint oferuje możliwości, które pomagają zapobiegać zagrożeniom, które mogą uniknąć naruszenia urządzeń przez nieautoryzowane urządzenia peryferyjne. Usługę Defender for Endpoint można skonfigurować tak, aby blokowała lub zezwalała na wymienne urządzenia i pliki na urządzeniach wymiennych. 
 
@@ -149,7 +148,7 @@ Dzięki ochronie zapory sieciowej można ustawić reguły określające, który 
 - Ochrona poufnych danych i własności intelektualnej
 - Rozszerzanie inwestycji w zabezpieczenia
 
-Aby dowiedzieć się więcej, zobacz [Windows Defender Firewall with advanced security (Zapora Windows Defender z zaawansowanymi zabezpieczeniami](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)).
+Aby dowiedzieć się więcej, zobacz [Zapora Windows Defender z zabezpieczeniami zaawansowanymi](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### <a name="application-control"></a>Kontrola aplikacji
 
@@ -193,9 +192,12 @@ Większość organizacji korzysta z różnych urządzeń i systemów operacyjnyc
 - Windows 7 (wymagana ESU)
 - Windows 8.1
 - Windows 10, wersja 1709 lub nowsza
-- macOS: 11.5 (Big Sur), 10.15.7 (Catalina) lub 10.14.6 (Mojave)
+- System Windows10 dla firm
+- Windows 10 Enterprise LTSC 2016 (lub nowszy)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+- macOS (obsługiwane są trzy najnowsze wersje)
 - iOS
-- System operacyjny Android
+- system operacyjny Android
 
 ## <a name="next-steps"></a>Następne kroki
 

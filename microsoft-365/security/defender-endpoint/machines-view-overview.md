@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 78cb81b1a0da9f0d1965dab7c209067a4e8d02e6
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368182"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874179"
 ---
 # <a name="device-inventory"></a>Spisz urządzeń
 
@@ -28,12 +28,12 @@ ms.locfileid: "65368182"
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 **Spis urządzeń** zawiera listę urządzeń w sieci, dla których wygenerowano alerty. Domyślnie kolejka wyświetla urządzenia widoczne w ciągu ostatnich 30 dni.
 
@@ -70,7 +70,7 @@ Podczas procesu dołączania Ochrona punktu końcowego w usłudze Microsoft Defe
 
 ## <a name="navigate-to-the-device-inventory-page"></a>Przejdź do strony Spis urządzeń
 
-Uzyskaj dostęp do strony spisu urządzeń, wybierając pozycję **Spis urządzeń** z menu nawigacji **Punkty końcowe** w [portalu Microsoft 365 Defender](/defender/microsoft-365-security-center-mde).
+Uzyskaj dostęp do strony spisu urządzeń, wybierając pozycję **Spis urządzeń** z menu nawigacji **Punkty końcowe** w [portalu Microsoft 365 Defender](/microsoft-365/security/defender-business/mdb-get-started).
 
 ## <a name="device-inventory-overview"></a>Omówienie spisu urządzeń
 
@@ -110,7 +110,7 @@ Liczby na górze każdej karty zostaną zaktualizowane na podstawie bieżącego 
 
 ## <a name="use-filters-to-customize-the-device-inventory-views"></a>Dostosowywanie widoków spisu urządzeń przy użyciu filtrów
 
-Filtr | Opis
+Filtrowanie | Opis
 :---|:---
 **Poziom ryzyka** </br> | Poziom ryzyka odzwierciedla ogólną ocenę ryzyka urządzenia na podstawie kombinacji czynników, w tym typów i ważności aktywnych alertów na urządzeniu. Rozwiązywanie aktywnych alertów, zatwierdzanie działań korygowania i pomijanie kolejnych alertów może obniżyć poziom ryzyka.
 **Poziom ekspozycji** </br> | Poziom narażenia odzwierciedla bieżące narażenie urządzenia na podstawie skumulowanego wpływu oczekujących zaleceń dotyczących zabezpieczeń. Możliwe poziomy są niskie, średnie i wysokie. Niska ekspozycja oznacza, że urządzenia są mniej narażone na eksploatację. </br> </br> Jeśli poziom ekspozycji mówi "Brak dostępnych danych", istnieje kilka powodów, dla których może tak być:</br>— Urządzenie przestało raportować przez ponad 30 dni. W takim przypadku jest ona uznawana za nieaktywną, a ekspozycja nie jest obliczana.</br>— System operacyjny urządzenia nie jest obsługiwany — zobacz [minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/minimum-requirements).</br>— Urządzenie z nieaktuanym agentem (mało prawdopodobne).
@@ -143,6 +143,6 @@ Na karcie **Urządzenia IoT** wybierz pozycję **Dostosuj kolumny** , aby wyświ
 
 ![Obraz przedstawiający kolumny urządzeń IoT](images/iotdevicescolumns.png)
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 [Badanie urządzeń na liście urządzeń Ochrona punktu końcowego w usłudze Microsoft Defender](investigate-machines.md)

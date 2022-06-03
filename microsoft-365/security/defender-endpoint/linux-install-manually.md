@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b467d87f16900375ca2db2f8478bf001780c9059
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a9d16cb82354bcb44e817de3207cb49de66dbf91
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873055"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
@@ -32,7 +32,7 @@ ms.locfileid: "65130346"
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 
 W tym artykule opisano sposób ręcznego wdrażania Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux. Pomyślne wdrożenie wymaga wykonania wszystkich następujących zadań:
@@ -84,8 +84,8 @@ Aby zapoznać się z nowymi funkcjami i przekazać wczesną opinię, zaleca się
     |Wersja & dystrybucji|Pakiet|
     |---|---|
     |Dla RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |Dla RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    |Dla RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |Dla RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
+    <!--|Dla RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
     |Dla fedory 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Dla fedory 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -323,12 +323,12 @@ Pobierz pakiet dołączania z portalu Microsoft 365 Defender.
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
 ## <a name="client-configuration"></a>Konfiguracja klienta
 
-1. Skopiuj MicrosoftDefenderATPOnboardingLinuxServer.sh na urządzenie docelowe.
+1. Skopiuj MicrosoftDefenderATPOnboardingLinuxServer.py na urządzenie docelowe.
 
     > [!NOTE]
     > Początkowo urządzenie klienckie nie jest skojarzone z organizacją, a atrybut *orgId* jest pusty.
@@ -337,10 +337,21 @@ Pobierz pakiet dołączania z portalu Microsoft 365 Defender.
     mdatp health --field org_id
     ```
 
-2. Uruchom MicrosoftDefenderATPOnboardingLinuxServer.sh.
+2. Uruchom MicrosoftDefenderATPOnboardingLinuxServer.py.
+
+    > [!NOTE]
+    > Aby uruchomić to polecenie, musisz mieć `python`  lub `python3` zainstalować na urządzeniu w zależności od wersji i disto. W razie potrzeby zobacz [Instrukcje krok po kroku dotyczące instalowania języka Python w systemie Linux](https://opensource.com/article/20/4/install-python-linux).
+    
+    Jeśli używasz systemu RHEL 8.x lub Ubuntu 20.04 lub nowszego, musisz użyć polecenia `python3`.
 
     ```bash
-    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
+    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
+    ```
+
+    W pozostałych dystrybucjach i wersjach należy użyć polecenia `python`.
+    
+    ```bash
+    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
     
 3. Sprawdź, czy urządzenie jest teraz skojarzone z Twoją organizacją i zgłosi prawidłowy identyfikator organizacji:

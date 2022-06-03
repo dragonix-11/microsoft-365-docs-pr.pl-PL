@@ -1,7 +1,7 @@
 ---
-title: Jak wdrożyć usługę Defender dla punktu końcowego w systemie Linux za pomocą systemu Linux
-description: Dowiedz się, jak wdrożyć program Defender dla punktu końcowego w systemie Linux z Rzeszą
-keywords: microsoft, defender, atp, linux, skanuje, antivirus, microsoft defender for endpoint (linux)
+title: Jak wdrożyć usługę Defender for Endpoint w systemie Linux za pomocą programu Chef
+description: Dowiedz się, jak wdrożyć usługę Defender for Endpoint w systemie Linux za pomocą programu Chef
+keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft defender for endpoint (linux)
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,46 +14,46 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 799fc4d163b120b4197b6cd044efe4740e4a3cc7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8f610821b6c0bef7694d6ce8acd256f59f761f06
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033738"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872941"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Wdrażanie programu Defender dla punktu końcowego w systemie Linux z usługą Linux
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Wdrażaj usługę ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux za pomocą programu Chef
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
-Przed rozpoczęciem: Zainstaluj rozpakuj program, jeśli nie został jeszcze zainstalowany.
+Przed rozpoczęciem: zainstaluj rozpakuj, jeśli nie jest jeszcze zainstalowana.
 
-Składniki Steam są już zainstalowane, a istnieje repozytorium Kucharska Generate Repo \<reponame\>, aby przechować książka kucharska, która będzie używana do wdrażania programu Defender dla punktu końcowego na zarządzanych serwerach Linux.
+Składniki programu Chef są już zainstalowane i istnieje repozytorium Chef (chef generate repo \<reponame\>) do przechowywania książki kucharskiej, która będzie używana do wdrażania w usłudze Defender for Endpoint na serwerach z systemem Linux zarządzanych przez program Chef.
 
-W istniejącym repozytorium możesz utworzyć nową bazę kucharską, uruchamiając następujące polecenie z folderu kuchaczki, który znajduje się w repozytorium kucharską:
+Możesz utworzyć nową książkę kucharską w istniejącym repozytorium, uruchamiając następujące polecenie z folderu książki kucharskiej znajdującego się w repozytorium chef:
 
 ```bash
 chef generate cookbook mdatp
 ```
 
-To polecenie utworzy nową strukturę folderów dla nowej książki kucharskiej o nazwie mdatp. Możesz także użyć istniejącej książki kucharskiej, jeśli masz już takie, do których chcesz dodać wdrożenie MDE.
-Po utworzeniu książki kucharskiej utwórz folder plików wewnątrz właśnie utworzonego folderu kucharskiej:
+To polecenie utworzy nową strukturę folderów dla nowej książki kucharskiej o nazwie mdatp. Możesz również użyć istniejącej książki kucharskiej, jeśli masz już taką, która ma zostać użyta do dodania wdrożenia mde.
+Po utworzeniu książki kucharskiej utwórz folder plików w folderze książki kucharskiej, który właśnie został utworzony:
 
 ```bash
 mkdir mdatp/files
 ```
 
-Przenieś plik zip dołączania do serwera Linux, który można pobrać z portalu Microsoft 365 Defender do tego nowego folderu plików.
+Przenieś plik zip dołączania serwera z systemem Linux, który można pobrać z portalu Microsoft 365 Defender do tego nowego folderu plików.
 
-Na stacji roboczej Dla klienta przejdź do folderu mdatp/recipes. Ten folder jest tworzony po wygenerowaniu książki kucharskiej. Użyj preferowanego edytora tekstów (np. vi lub nano), aby dodać następujące instrukcje na końcu pliku default.rb:
+Na stacji roboczej chef przejdź do folderu mdatp/recipes. Ten folder jest tworzony po wygenerowaniu książki kucharskiej. Użyj preferowanego edytora tekstów (na przykład vi lub nano), aby dodać następujące instrukcje na końcu pliku default.rb:
 
-- include_recipe ':onboard_mdatp'
-- include_recipe '::install_mdatp'
+- include_recipe "::onboard_mdatp"
+- include_recipe "::install_mdatp"
 
 Następnie zapisz i zamknij plik default.rb.
 
-Następnie utwórz nowy plik z przepisami o install_mdatp.rb w folderze przepisy i dodaj ten tekst do pliku:
+Następnie utwórz nowy plik przepisu o nazwie install_mdatp.rb w folderze recipes i dodaj ten tekst do pliku:
 
 ```powershell
 #Add Microsoft Defender
@@ -90,8 +90,8 @@ when 'rhel'
 end
 ```
 
-Musisz zmodyfikować numer wersji, rozpowszechnianie i nazwę ponownego wdrożenia, aby dopasować ją do wersji, w których wdrażasz, i kanału, w którym chcesz wdrożyć.
-Następnie należy utworzyć plik onboard_mdatp.rb w folderze mdatp/recipies. Dodaj do tego pliku następujący tekst:
+Musisz zmodyfikować numer wersji, dystrybucję i nazwę repozytorium, aby była zgodna z wersją, do której wdrażasz, i kanałem, który chcesz wdrożyć.
+Następnie należy utworzyć plik onboard_mdatp.rb w folderze mdatp/recipies. Dodaj następujący tekst do tego pliku:
 
 ```powershell
 #Create MDATP Directory
@@ -115,10 +115,10 @@ bash 'Extract Onbaording Json MDATP' do
 end
 ```
 
-Pamiętaj o zaktualizowaniu nazwy ścieżki do lokalizacji pliku dołączania.
-Aby przetestować jej wdrożenie na stacji roboczej Wiad.``sudo chef-client -z -o mdatp``
-Po wdrożeniu rozważ utworzenie i wdrożenie pliku konfiguracji na serwerach w oparciu o ustawienie preferencji programu [Microsoft Defender dla punktu końcowego w systemie Linux](/linux-preferences.md).
-Po utworzeniu i przetestowaniu pliku konfiguracji możesz umieścić go w folderze książka kucharska/mdatp/pliki, gdzie również umieszczasz pakiet dołączania. Następnie możesz utworzyć plik settings_mdatp.rb w folderze mdatp/recipies i dodać ten tekst:
+Pamiętaj, aby zaktualizować nazwę ścieżki do lokalizacji pliku dołączania.
+Aby przetestować wdrożenie go na stacji roboczej programu Chef, wystarczy uruchomić polecenie ``sudo chef-client -z -o mdatp``.
+Po wdrożeniu należy rozważyć utworzenie i wdrożenie pliku konfiguracji na serwerach w oparciu o [ustawienie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](/microsoft-365/security/defender-endpoint/linux-preferences).
+Po utworzeniu i przetestowaniu pliku konfiguracji możesz umieścić go w folderze cookbook/mdatp/files, w którym również umieszczono pakiet dołączania. Następnie możesz utworzyć plik settings_mdatp.rb w folderze mdatp/recipies i dodać następujący tekst:
 
 ```powershell
 #Copy the configuration file
@@ -131,10 +131,10 @@ cookbook_file '/etc/opt/microsoft/mdatp/managed/mdatp_managed.json' do
 end
 ```
 
-Aby uwzględnić ten krok jako część przepisów, po prostu dodaj plik include_recipe :: settings_mdatp" do pliku default.rb w folderze z przepisami.
-Za pomocą karty crontab możesz także zaplanować automatyczne aktualizacje Zaplanuj aktualizację programu [Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md).
+Aby uwzględnić ten krok jako część przepisu, wystarczy dodać include_recipe ":: settings_mdatp" do pliku default.rb w folderze przepisu.
+Możesz również użyć narzędzia crontab, aby zaplanować aktualizacje automatyczne [Zaplanuj aktualizację Ochrona punktu końcowego w usłudze Microsoft Defender (Linux).](linux-update-MDE-Linux.md).
 
-Odinstaluj album kucharska MDATP:
+Odinstaluj książkę kucharską MDATP:
 
 ```powershell
 #Uninstall the Defender package

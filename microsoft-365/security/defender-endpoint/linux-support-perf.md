@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 369c6a198035418a5c16e2a72d84c8dcfc88be2f
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3452f36068facc92885047184f7e00828f569cbc
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666443"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873011"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Rozwiązywanie problemów z wydajnością Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
@@ -32,7 +32,7 @@ ms.locfileid: "64666443"
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Ten dokument zawiera instrukcje dotyczące sposobu zawężenia problemów z wydajnością związanych z usługą Defender for Endpoint w systemie Linux przy użyciu dostępnych narzędzi diagnostycznych w celu zrozumienia i wyeliminowania istniejących braków zasobów oraz procesów, które sprawiają, że system znajduje się w takich sytuacjach. Problemy z wydajnością są spowodowane głównie wąskimi gardłami w co najmniej jednym podsystemie sprzętowym, w zależności od profilu wykorzystania zasobów w systemie. Czasami aplikacje są wrażliwe na zasoby we/wy dysku i mogą potrzebować większej pojemności procesora CPU, a czasami niektóre konfiguracje nie są trwałe i mogą wyzwalać zbyt wiele nowych procesów i otwierać zbyt wiele deskryptorów plików.
 
@@ -174,7 +174,7 @@ Narzędzie Ochrona punktu końcowego w usłudze Microsoft Defender Client Analyz
 
 - Analizator klienta może działać w obsługiwanych dystrybucjach [systemu Linux](microsoft-defender-endpoint-linux.md#system-requirements) przed dołączeniem do Ochrona punktu końcowego w usłudze Microsoft Defender lub po jego dołączeniu.
 - Pobierz analizator klienta dla systemu Linux z najnowszej wersji zapoznawczej dostępnej do pobrania tutaj: <https://aka.ms/XMDEClientAnalyzer>
-- Jeśli urządzenie znajduje się za serwerem proxy, możesz po prostu przekazać serwer proxy jako zmienną środowiskową do skryptu mde_support_tool.sh. Na przykład: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+- Jeśli urządzenie znajduje się za serwerem proxy, możesz po prostu przekazać serwer proxy jako zmienną środowiskową do skryptu mde_support_tool.sh. Przykład: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 ### <a name="run-the-client-analyzer-on-linux"></a>Uruchamianie analizatora klienta w systemie Linux
 
@@ -190,7 +190,7 @@ Otwórz terminal lub protokół SSH na odpowiedniej maszynie i uruchom następuj
    ![Obraz przedstawiający przykład wiersza polecenia.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 > [!NOTE]
-> - Analizator wymaga pliku "lxml", aby wygenerować dane wyjściowe wyniku. Jeśli nie jest zainstalowany, analizator spróbuje pobrać go z oficjalnego repozytorium dla pakietów języka Python poniżej: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - Analizator wymaga pliku "lxml", aby wygenerować dane wyjściowe wyniku. Jeśli nie jest zainstalowany, analizator spróbuje pobrać go z oficjalnego repozytorium dla pakietów języka Python poniżej: <https://pypi.org/search/?q=lxml>
 > 
 > - Ponadto narzędzie obecnie wymaga zainstalowania języka Python w wersji 3 lub nowszej.
 >
@@ -243,9 +243,9 @@ Otwórz terminal lub protokół SSH na odpowiedniej maszynie i uruchom następuj
 
   Opis: Dodatkowy plik XML używany przez analizator podczas tworzenia raportu HTML.
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  Opis: szczegółowe informacje na temat inspekcji usługi i powiązanych składników systemu [operacyjnego Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)
+  Opis: szczegółowe informacje na temat inspekcji usługi i powiązanych składników systemu [operacyjnego Linux](/microsoft-365/security/defender-endpoint/linux-resources)
 
 - perf_benchmark.tar.gz
 

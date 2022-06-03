@@ -1,8 +1,9 @@
 ---
 title: Microsoft 365 lokalizacji danych
-ms.author: deanw
-author: dmwmsft
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,110 +18,142 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Określanie miejsca przechowywania Microsoft 365 danych klientów na całym świecie
-ms.openlocfilehash: 19741da49baf6890fbc0a7570190df1676990e9e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 07d137c6eda243a1ffa33b486d7cdbea5b37f9d9
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874077"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Miejsce przechowywania danych klienta Microsoft 365
 
 W poniższych tabelach pokazano, gdzie dane klientów są przechowywane w spoczynku dla usług Microsoft 365 we wszystkich globalnych lokalizacjach firmy Microsoft w chmurze. Rozwiń lokalizację kraju adresu rozliczeniowego, aby dowiedzieć się, gdzie będą przechowywane dane klientów dla każdej usługi.
 
-Jeśli Twoja firma znajduje się w Unii Europejskiej, zobacz [Lokalizacje danych dla Unii Europejskiej](EU-data-storage-locations.md) , aby uzyskać więcej informacji. 
+Jeśli Twoja firma znajduje się w Unii Europejskiej, zobacz [Lokalizacje danych dla Unii Europejskiej](EU-data-storage-locations.md) , aby uzyskać więcej informacji.
 
-Klienci powinni wyświetlać informacje o lokalizacji danych specyficzne dla dzierżawy w Centrum administracyjne platformy Microsoft 365 w **obszarze ustawienia Ustawienia** >  **OrgUstawienia** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**profilu organizacji**</a> **tabUstawienia** >  danych. Jeśli [zażądano przeniesienia do nowego obszaru geograficznego](request-your-data-move.md), informacje o lokalizacji danych w Centrum administracyjne platformy Microsoft 365 mogą pokazywać tylko nowe dane geograficzne, nawet jeśli niektóre dane mogą być tymczasowo przechowywane w poprzednim obszarze geograficznym podczas przejścia. 
+Klienci powinni wyświetlać informacje o lokalizacji danych określonej dzierżawy w **Centrum administracyjne platformy Microsoft 365 na** >  karcie Ustawienia **Ustawienia** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**organizacji Profil organizacji** Lokalizacja</a> > **danych**. Jeśli [zażądano przeniesienia do nowego obszaru geograficznego](request-your-data-move.md), informacje o lokalizacji danych w Centrum administracyjne platformy Microsoft 365 mogą pokazywać tylko nowe dane geograficzne, nawet jeśli niektóre dane mogą być tymczasowo przechowywane w poprzednim obszarze geograficznym podczas przejścia.
 
 Nowe dzierżawy Microsoft 365 są domyślnie geograficzne na podstawie kraju transakcji skojarzonej z pierwszą subskrypcją tej dzierżawy.
 
 Informacje o zobowiązaniach umownych dotyczących lokalizacji przechowywania danych klientów magazynowanych znajdują się w [dodatku Microsoft Products and Services Data Protection (DPA).](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
 
-Aby uzyskać Azure Active Directory lokalizacji danych, odwiedź [stronę AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
+Aby uzyskać Azure Active Directory lokalizacji danych, odwiedź stronę [Mapa danych usługi AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 Jeśli adres rozliczeniowy Klienta znajduje się poza Europą, a Klient ma subskrypcję Office 365 Education, niezależnie od sekcji "Lokalizacja danych klienta w spoczynku dla podstawowych usług online" OST, firma Microsoft może aprowizować dzierżawę Office 365 Klienta, przesyłać dane klienta do i przechowywać dane klienta w spoczynku w dowolnym miejscu w Europie lub Ameryka Północna.  Jeśli adres rozliczeniowy Klienta znajduje się w Europie, a Klient ma subskrypcję Office 365 Education, niezależnie od sekcji "Lokalizacja danych klienta w spoczynku dla podstawowych usług online" OST, firma Microsoft może aprowizować dzierżawę Office 365 Klienta, przesyłać dane klienta do i przechowywać dane klienta w spoczynku w dowolnym miejscu w Unii Europejskiej.
-
-
-
 
 ## <a name="faq"></a>Często zadawane pytania
 
 ### <a name="how-does-microsoft-define-data"></a>Jak firma Microsoft definiuje dane?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 Przejrzyj nasze [definicje dla różnych typów danych](https://go.microsoft.com/fwlink/p/?linkid=864390) w Centrum zaufania firmy Microsoft. W [postanowieniach dotyczących ochrony prywatności & zabezpieczeń](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) firma Microsoft zobowiązuje się do realizacji zobowiązań umownych dotyczących danych klientów/twoich danych. Dane podstawowych klientów nazywamy danymi klienta, które są zobowiązane do przechowywania tylko w Twoim regionie zgodnie z [warunkami dotyczącymi ochrony prywatności & zabezpieczeń](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
+</details>
+
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>Gdzie są dokładne adresy centrów danych?
+
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 Firma Microsoft nie ujawnia dokładnych adresów swoich centrów danych. Te zasady zostały ustanowione w celu zabezpieczenia obiektów centrum danych.  Jednak robimy listę lokalizacji miasta. Aby dowiedzieć się więcej [, zobacz Lokalizacje centrum danych](o365-data-locations.md#data-center-locations) .
 
+</details>
+
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>Czy lokalizacja danych klienta ma bezpośredni wpływ na środowisko użytkowników końcowych?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 Wydajność Microsoft 365 nie jest po prostu proporcjonalna do odległości użytkownika do lokalizacji centrum danych. Ciągłe inwestycje firmy Microsoft w globalną sieć w chmurze, globalną infrastrukturę chmury i architekturę usług Microsoft 365 pomagają zapewnić użytkownikom pojedyncze, spójne środowisko niezależnie od tego, gdzie dane klientów są przechowywane w spoczynku. Jeśli użytkownicy mają problemy z wydajnością, należy je szczegółowo rozwiązać. Firma Microsoft opublikowała wskazówki dla klientów Microsoft 365 dotyczące planowania i optymalizowania wydajności użytkowników końcowych w [witrynie internetowej pomocy technicznej Office](./network-planning-and-performance.md).
 
+</details>
+
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>W jaki sposób firma Microsoft pomaga mi przestrzegać przepisów krajowych, regionalnych i branżowych?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 Aby pomóc Ci spełnić krajowe, regionalne i branżowe wymagania dotyczące zbierania i używania danych osób fizycznych, Microsoft 365 oferuje najbardziej kompleksowy zestaw ofert zgodności dowolnego globalnego dostawcy produktywności w chmurze. Przejrzyj [nasze oferty zgodności](/compliance/regulatory/offering-home) i więcej szczegółów w sekcji [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) w Centrum zaufania firmy Microsoft. Ponadto niektóre plany Microsoft 365 oferują dalsze rozwiązania do zapewniania zgodności, które ułatwiają zarządzanie danymi, zgodność z wymaganiami prawnymi i prawnymi oraz monitorowanie działań podejmowanych na danych.
 
+</details>
+
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>KtoTo mogą uzyskiwać dostęp do danych i zgodnie z jakimi regułami?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
  Firma Microsoft wdraża silne środki, aby chronić dane klientów przed niewłaściwym dostępem lub użyciem przez osoby nieupoważnione. Obejmuje to ograniczenie dostępu pracowników i podwykonawców firmy Microsoft oraz dokładne zdefiniowanie wymagań dotyczących odpowiadania na żądania instytucji rządowych dotyczące danych klientów. Możesz jednak uzyskać dostęp do własnych danych klienta w dowolnym momencie i z dowolnego powodu. Więcej szczegółów można znaleźć w [Centrum zaufania firmy Microsoft](https://go.microsoft.com/fwlink/p/?linkid=864392).
 
+</details>
+
 ### <a name="does-microsoft-access-your-data"></a>Czy firma Microsoft uzyskuje dostęp do Twoich danych?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 Firma Microsoft automatyzuje większość operacji Microsoft 365, celowo ograniczając własny dostęp do danych klientów. Pomaga to nam zarządzać Microsoft 365 na dużą skalę i rozwiązywać ryzyko wewnętrznych zagrożeń dla danych klientów. Domyślnie inżynierowie firmy Microsoft nie mają stałych uprawnień administracyjnych ani stałego dostępu do danych klientów w Microsoft 365. Inżynier firmy Microsoft może mieć ograniczony i zarejestrowany dostęp do danych klientów przez ograniczony czas, ale tylko wtedy, gdy jest to konieczne dla normalnych operacji serwisowych i tylko wtedy, gdy zostanie zatwierdzony przez członka kadry kierowniczej wyższego szczebla w firmie Microsoft (oraz dla klientów, którzy mają licencję na funkcję skrytki klienta, przez klienta).
 
+</details>
+
 ### <a name="how-does-microsoft-secure-your-data"></a>W jaki sposób firma Microsoft zabezpiecza Twoje dane?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 Firma Microsoft ma niezawodne zasady, mechanizmy kontroli i systemy wbudowane w Microsoft 365, aby zapewnić bezpieczeństwo informacji. Przejrzyj [sekcję zabezpieczeń Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) w Centrum zaufania firmy Microsoft, aby dowiedzieć się więcej.
 
+</details>
+
 ### <a name="does-microsoft-365-encrypt-your-data"></a>Czy Microsoft 365 szyfrować dane?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 Microsoft 365 korzysta z technologii po stronie usługi, które szyfrują dane klientów magazynowanych i przesyłanych. W przypadku danych klientów magazynowanych Microsoft 365 używa szyfrowania na poziomie woluminu i pliku. W przypadku danych klientów przesyłanych Microsoft 365 używa wielu technologii szyfrowania do komunikacji między centrami danych oraz między klientami i serwerami, takimi jak Transport Layer Security (TLS) i Internet Protocol Security (IPsec). Microsoft 365 obejmuje również funkcje szyfrowania zarządzane przez klienta.
 
+</details>
+
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Gdzie mogę znaleźć informacje o rezydencji danych dla Microsoft Azure?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 Przejrzyj stronę [Produkty dostępne według regionów](https://go.microsoft.com/fwlink/p/?linkid=2093451), aby znaleźć informacje o rezydencji danych dla Microsoft Azure.
 
-### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Co to są możliwości wielu obszarów geograficznych w Microsoft 365?
+</details>
 
-[Funkcja Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) umożliwia klientom przydzielanie podstawowych danych klientów magazynowanych do naszych dostępnych lokalizacji w chmurze Microsoft 365.   
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Co to są możliwości wielu obszarów geograficznych w Microsoft 365?
+<details><summary>Kliknij, aby rozwinąć</summary>
+
+[Funkcja Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) umożliwia klientom przydzielanie podstawowych danych klientów magazynowanych do naszych dostępnych lokalizacji w chmurze Microsoft 365.
+
+</details>  
 
 ### <a name="what-services-support-multi-geo"></a>Jakie usługi obsługują funkcję Multi-Geo?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 [Funkcja Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) jest dostępna dla Exchange Online, OneDrive dla Firm, SharePoint Online i Teams.
 
+</details>
+
 ### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>Dlaczego moje Microsoft 365 żądania obsługi danych magazynowanych łączą się z serwerami w krajach spoza mojego regionu?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 Czasami żądanie klienta może być obsługiwane przez serwery w innym regionie niż lokalizacja, w której dane są przechowywane. Może się tak zdarzyć, gdy decyzje dotyczące routingu sieciowego wybierają inny serwer do przetwarzania żądania, ale w takich przypadkach dane nie są przenoszone do nowej lokalizacji w spoczynku.
 
-### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Jakie są wyjątki dla Intune lokalizacji danych?
+</details>
 
-Firma Microsoft nie będzie przechowywać Intune danych klientów w spoczynku poza określonym obszarem geograficznym. chyba że:
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Jakie są wyjątki dla Intune lokalizacji danych?
+<details><summary>Kliknij, aby rozwinąć</summary>
+
+Firma Microsoft nie będzie przechowywać Intune danych klientów w spoczynku poza podanym obszarem geograficznym, chyba że:
 
 - Firma Microsoft musi zapewnić pomoc techniczną, rozwiązać problemy z usługą lub spełnić wymagania prawne.
 - Klient konfiguruje konto, aby umożliwić takie przechowywanie danych klientów, w tym za pomocą następujących elementów:
-
   - Funkcje, które są przeznaczone do globalnego działania, takie jak Content Delivery Network (CDN), która zapewnia globalną usługę buforowania i przechowuje dane klientów w lokalizacjach brzegowych na całym świecie.
-
-  - Azure Active Directory (Azure AD), które mogą przechowywać dane katalogów globalnie. Nie dotyczy to wdrożeń usługi Azure AD w Stany Zjednoczone (gdzie dane usługi Azure AD są przechowywane wyłącznie w Stany Zjednoczone) lub w Europie (gdzie dane usługi Azure AD są przechowywane w Europie lub Stany Zjednoczone).
-   
+  - Azure Active Directory (Azure AD), które mogą przechowywać dane katalogów globalnie. Nie dotyczy to wdrożeń Azure AD w Stany Zjednoczone (gdzie dane Azure AD są przechowywane wyłącznie w Stany Zjednoczone) lub w Europie (gdzie dane Azure AD są przechowywane w Europie lub Stany Zjednoczone).
   - Wersja zapoznawcza, wersja beta lub inne usługi wstępne, które zwykle przechowują dane klientów w Stany Zjednoczone, ale mogą przechowywać dane globalnie.
 
-Niezależnie od tego firma Microsoft nie kontroluje ani nie ogranicza obszaru geograficznego, z którego klienci lub ich użytkownicy końcowi mogą uzyskiwać dostęp do danych klientów. Podobnie w przypadku, gdy dane klientów w innych usługach zostaną następnie zintegrowane z Intune, pochodzące dane klienta będą nadal przechowywane z zastrzeżeniem własnych zobowiązań geo innych usług (jeśli istnieją); tylko kopia danych klienta zintegrowanych z Intune będzie przechowywana w określonym obszarze geograficznym dla Intune.  
+Niezależnie od tego firma Microsoft nie kontroluje ani nie ogranicza obszaru geograficznego, z którego klienci lub ich użytkownicy końcowi mogą uzyskiwać dostęp do danych klientów. Podobnie w przypadku, gdy dane klientów w innych usługach zostaną następnie zintegrowane z Intune, pochodzące dane klienta będą nadal przechowywane z zastrzeżeniem własnych zobowiązań geo innych usług (jeśli istnieją); tylko kopia danych klienta zintegrowanych z Intune będzie przechowywana w określonym obszarze geograficznym dla Intune.
+
+</details>
 
 ### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>Jakie są zagadnienia dotyczące Microsoft Viva lokalizacji danych?
+<details><summary>Kliknij, aby rozwinąć</summary>
 
 - Zasoby Viva
-
-  - Dane pulpitu nawigacyjnego, zasobów i aplikacji klasycznej są przechowywane w usłudze SharePoint Online. 
-  
-  - Kanał informacyjny zawiera zawartość z usługi SharePoint Online (wiadomości), usługi Stream (przechowywanej w usłudze SharePoint Online) i Yammer (przechowywanej w Yammer).  
-  
+  - Dane pulpitu nawigacyjnego, zasobów i aplikacji klasycznej są przechowywane w usłudze SharePoint Online.
+  - Kanał informacyjny zawiera zawartość z usługi SharePoint Online (wiadomości), usługi Stream (przechowywanej w usłudze SharePoint Online) i Yammer (przechowywanej w Yammer).
 - Szczegółowe informacje Viva
-
   - Miejsce przechowywania danych dla aplikacji Osobista jest oparte na lokalizacji skrzynki pocztowej użytkownika.
-  
   - Region danych programu Manager/Leader i Advanced jest określany przez region podstawowy dzierżawy, a nie poszczególnych użytkowników.
+
+</details>
 
 ## <a name="data-center-locations"></a>Lokalizacje centrum danych
 
@@ -128,7 +161,7 @@ Poniższa tabela definiuje lokalizację danych dla różnych usług. Podczas okr
 
 ### <a name="data-center-geographies"></a>Lokalizacje geograficzne centrum danych
 
-Następujące globalne lokalizacje geograficzne mogą przechowywać dane magazynowane. Lokalizacje, w których mogą być przechowywane dane klienta, mogą ulec zmianie. 
+Następujące globalne lokalizacje geograficzne mogą przechowywać dane magazynowane. Lokalizacje, w których mogą być przechowywane dane klienta, mogą ulec zmianie.
 
 | Globalne lokalizacje geograficzne | Lokalizacje, w których mogą być przechowywane dane klienta |
 | --- | --- |
@@ -140,7 +173,7 @@ Następujące globalne lokalizacje geograficzne mogą przechowywać dane magazyn
 
 W przypadku centrów danych specyficznych dla kraju/regionu poniżej zdefiniowano miasta, w których dane klientów są przechowywane.
 
-| Kraju | Miasto |
+| Kraj | Miasto |
 | --- | --- |
 | Australia | Sydney, Melbourne |
 | Brazylia | Rio, Campinas |
@@ -184,7 +217,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -212,7 +245,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -240,7 +273,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -268,7 +301,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -296,7 +329,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -324,7 +357,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -352,7 +385,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -380,7 +413,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -408,7 +441,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -436,7 +469,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -464,7 +497,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -492,7 +525,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -520,7 +553,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -548,7 +581,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Australia |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Australia |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -576,7 +609,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -604,7 +637,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -632,7 +665,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -660,7 +693,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -688,7 +721,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -716,11 +749,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="belarus"></a>Białoruś
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -745,7 +777,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -773,7 +805,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -801,7 +833,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -829,7 +861,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -857,7 +889,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -885,7 +917,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -913,7 +945,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -941,7 +973,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -969,7 +1001,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -997,7 +1029,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1025,7 +1057,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1053,7 +1085,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Brazylia |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Brazylia |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1081,7 +1113,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1109,7 +1141,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1137,7 +1169,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1165,7 +1197,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1193,7 +1225,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1221,7 +1253,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1249,7 +1281,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1277,7 +1309,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1305,7 +1337,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Kanada |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Kanada |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1333,7 +1365,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1361,7 +1393,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1389,7 +1421,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1417,7 +1449,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1445,7 +1477,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1473,7 +1505,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1501,7 +1533,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1529,7 +1561,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1557,7 +1589,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1585,11 +1617,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="congo-brazzaville"></a>Kongo (Brazzaville)
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -1614,11 +1645,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="congo-kinshasa"></a>Kongo, (Kinszasa)
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -1643,11 +1673,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="cook-islands"></a>Wyspy Cooka
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -1672,7 +1701,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1700,7 +1729,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1728,7 +1757,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1756,7 +1785,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1784,7 +1813,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1812,7 +1841,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1840,7 +1869,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1868,7 +1897,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1896,7 +1925,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1924,7 +1953,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1952,7 +1981,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -1980,7 +2009,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2008,7 +2037,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2036,7 +2065,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2064,7 +2093,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2092,7 +2121,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2120,7 +2149,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2148,7 +2177,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2176,7 +2205,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2204,7 +2233,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2232,7 +2261,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2260,7 +2289,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Australia |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Australia |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2288,7 +2317,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2316,7 +2345,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Francja |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Francja |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2344,7 +2373,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2372,7 +2401,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2400,7 +2429,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2428,7 +2457,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2456,7 +2485,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2484,7 +2513,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2512,7 +2541,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Niemcy |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Niemcy |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2540,7 +2569,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2568,7 +2597,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2596,11 +2625,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="greenland"></a>Grenlandia
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -2625,7 +2653,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2653,7 +2681,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2681,7 +2709,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2709,7 +2737,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2737,7 +2765,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2765,7 +2793,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2793,7 +2821,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2821,7 +2849,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2849,7 +2877,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2877,7 +2905,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2905,7 +2933,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2933,7 +2961,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2961,7 +2989,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -2989,7 +3017,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3017,7 +3045,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3045,7 +3073,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3073,11 +3101,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="india"></a>Indie
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -3102,7 +3129,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Indie |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Indie |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3130,7 +3157,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3158,7 +3185,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3186,7 +3213,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3214,7 +3241,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3242,7 +3269,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3270,7 +3297,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3298,7 +3325,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3326,7 +3353,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Japonia |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Japonia |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3354,7 +3381,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3382,7 +3409,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3410,7 +3437,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3438,7 +3465,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3466,7 +3493,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3494,7 +3521,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Korea Południowa |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Korea Południowa |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3522,7 +3549,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3550,7 +3577,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3578,7 +3605,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3606,7 +3633,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3634,7 +3661,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3662,11 +3689,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="lesotho"></a>Lesotho
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -3691,11 +3717,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="liberia"></a>Liberia
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -3720,7 +3745,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3748,11 +3773,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="liechtenstein"></a>Liechtenstein
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -3777,7 +3801,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Szwajcaria |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Szwajcaria |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3805,7 +3829,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3833,7 +3857,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3861,7 +3885,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3889,7 +3913,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3917,7 +3941,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3945,7 +3969,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -3973,7 +3997,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4001,7 +4025,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4029,7 +4053,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4057,7 +4081,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4085,7 +4109,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4113,7 +4137,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4141,7 +4165,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4169,7 +4193,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4197,7 +4221,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4225,7 +4249,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4253,7 +4277,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4281,7 +4305,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4309,7 +4333,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4337,7 +4361,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4365,7 +4389,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4393,7 +4417,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4421,7 +4445,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4449,11 +4473,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="nepal"></a>Nepal
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -4478,11 +4501,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="netherlands"></a>Holandia
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -4507,7 +4529,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4535,11 +4557,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="new-caledonia"></a>Nowa Kaledonia
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -4564,7 +4585,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4592,7 +4613,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Australia |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Australia |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4620,7 +4641,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4648,7 +4669,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4676,7 +4697,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4704,7 +4725,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4732,7 +4753,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4760,7 +4781,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4788,7 +4809,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Norwegia |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Norwegia |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 
@@ -4817,7 +4838,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4845,7 +4866,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4873,7 +4894,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4901,7 +4922,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4929,7 +4950,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4957,7 +4978,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -4985,7 +5006,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5013,7 +5034,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5041,7 +5062,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5069,7 +5090,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5097,7 +5118,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5125,7 +5146,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5153,7 +5174,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5181,7 +5202,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5209,7 +5230,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5237,7 +5258,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5265,7 +5286,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5273,7 +5294,6 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 ## <a name="russian-federation"></a>Federacja Rosyjska
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
-
 | Usługa | Lokalizacja |
 | --- | --- |
 | Exchange Online | Geografia globalna 1 – EMEA |
@@ -5294,7 +5314,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5302,7 +5322,6 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 ## <a name="rwanda"></a>Rwanda
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
-
 | Usługa | Lokalizacja |
 | --- | --- |
 | Exchange Online | Geografia globalna 1 – EMEA |
@@ -5323,7 +5342,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5331,7 +5350,6 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 ## <a name="saint-helena"></a>Święta Helena
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
-
 | Usługa | Lokalizacja |
 | --- | --- |
 | Exchange Online | Geografia globalna 1 – EMEA |
@@ -5352,7 +5370,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5380,7 +5398,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5408,7 +5426,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5436,7 +5454,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5464,7 +5482,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5492,7 +5510,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5520,7 +5538,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5548,7 +5566,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5576,7 +5594,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5604,7 +5622,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5632,7 +5650,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5660,7 +5678,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5688,7 +5706,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5716,7 +5734,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5744,7 +5762,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5772,7 +5790,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5800,7 +5818,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5828,7 +5846,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5856,7 +5874,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5884,14 +5902,13 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="somalia"></a>Somalia
 <details><summary>Kliknij, aby rozwinąć</summary><p>
-
 
 | Usługa | Lokalizacja |
 | --- | --- |
@@ -5913,7 +5930,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5941,7 +5958,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Republika Południowej Afryki |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Republika Południowej Afryki |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
  </p></details>
@@ -5969,7 +5986,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -5997,7 +6014,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Unia Europejska |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Unia Europejska |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6025,7 +6042,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6053,7 +6070,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6081,7 +6098,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6109,7 +6126,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6137,7 +6154,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Szwecja |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Szwecja |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6165,7 +6182,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Szwajcaria |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Szwajcaria |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6193,7 +6210,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6221,7 +6238,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6249,7 +6266,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6277,7 +6294,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6305,7 +6322,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6333,7 +6350,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6361,7 +6378,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6389,7 +6406,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6417,7 +6434,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6445,7 +6462,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6473,7 +6490,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6501,7 +6518,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6529,7 +6546,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6557,7 +6574,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6585,7 +6602,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6613,7 +6630,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6641,7 +6658,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6669,7 +6686,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Zjednoczone Emiraty Arabskie |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Zjednoczone Emiraty Arabskie |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
  </p></details>
@@ -6697,7 +6714,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Zjednoczone Królestwo |
 | Nauka Viva | Unia Europejska |
 | Szczegółowe informacje Viva — osobiste | Zjednoczone Królestwo |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Unia Europejska |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6725,7 +6742,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6753,7 +6770,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 3 – Ameryka |
 | Nauka Viva | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 3 – Ameryka |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 3 – Ameryka |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 3 – Ameryka |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6781,7 +6798,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6809,7 +6826,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6837,7 +6854,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6864,11 +6881,10 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Stany Zjednoczone |
 | Nauka Viva | Stany Zjednoczone |
 | Szczegółowe informacje Viva — osobiste | Stany Zjednoczone |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Stany Zjednoczone |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
-
 
 ## <a name="vietnam"></a>Wietnam
 <details><summary>Kliknij, aby rozwinąć</summary><p>
@@ -6893,7 +6909,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6921,7 +6937,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Nauka Viva | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 2 – Azja i Pacyfik |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 2 – Azja i Pacyfik |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 2 – Azja i Pacyfik |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6949,7 +6965,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -6977,7 +6993,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -7005,7 +7021,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
@@ -7033,7 +7049,7 @@ Nowe dzierżawy Microsoft 365 są domyślnie określane jako Geograficzne na pod
 | Tematy Viva | Geografia globalna 1 – EMEA |
 | Nauka Viva | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — osobiste | Geografia globalna 1 – EMEA |
-| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera AAD | Geografia globalna 1 – EMEA |
+| Szczegółowe informacje Viva — tylko dane organizacji menedżera/lidera usługi AAD | Geografia globalna 1 – EMEA |
 | Szczegółowe informacje Viva — menedżer/lider tylko z danymi kadr innych firm | Stany Zjednoczone |
 | Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>

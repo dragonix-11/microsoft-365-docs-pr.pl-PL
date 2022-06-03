@@ -21,16 +21,16 @@ ms.custom:
 description: W tym temacie przedstawiono zalecaną konfigurację ustawień dla całej dzierżawy, które mają wpływ na bezpieczeństwo środowiska Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30b46bd541f233430506766eabc2d667fad52c22
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a1a9b7e6a006eb63078f237ce1078d6aa825fa14
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872368"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurowanie dzierżawy platformy Microsoft 365 w celu zwiększenia bezpieczeństwa
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -101,7 +101,7 @@ Pamiętaj, aby odwiedzić te dwa obszary w Azure Active Directory, aby ukończy�
 
 Jeśli Twoja organizacja obejmuje biura z bezpiecznym dostępem do sieci, dodaj zakresy zaufanych adresów IP, aby Azure Active Directory jako nazwane lokalizacje. Ta funkcja pomaga zmniejszyć liczbę zgłoszonych wyników fałszywie dodatnich w przypadku zdarzeń ryzyka logowania.
 
-Zobacz: [Nazwane lokalizacje w Azure Active Directory](/azure/active-directory/active-directory-named-locations)
+Zobacz: [Nazwane lokalizacje w Azure Active Directory](/azure/active-directory/conditional-access/location-condition)
 
 ### <a name="block-apps-that-dont-support-modern-authentication"></a>Blokuj aplikacje, które nie obsługują nowoczesnego uwierzytelniania
 

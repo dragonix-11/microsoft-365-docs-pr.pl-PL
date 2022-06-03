@@ -1,7 +1,7 @@
 ---
 title: Usuwanie pliku z biblioteki odpowiedzi na żywo
 description: Dowiedz się, jak usunąć plik z biblioteki odpowiedzi na żywo.
-keywords: apis, api Graph, obsługiwane api, usuwanie z biblioteki
+keywords: apis, graph api, obsługiwane interfejsy API, usuwanie z biblioteki
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,23 +20,23 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 23625c8b7160d604df5f3a8b1b1387fc31027acf
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 97a2a2152a60ff542cb946c4283fe3f26c4b9c8e
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63705560"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874135"
 ---
 #  <a name="delete-a-file-from-the-live-response-library"></a>Usuwanie pliku z biblioteki odpowiedzi na żywo  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+>Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,50 +44,50 @@ ms.locfileid: "63705560"
 
 ## <a name="api-description"></a>Opis interfejsu API
 
-Usuwanie pliku z biblioteki odpowiedzi na żywo.
+Usuń plik z biblioteki odpowiedzi na żywo.
 
 ## <a name="limitations"></a>Ograniczenia
 
-1.  Ograniczenia stawek dla tego interfejsu API to 100 połączeń na minutę i 1500 połączeń na godzinę.
+1.  Ograniczenia szybkości dla tego interfejsu API to 100 wywołań na minutę i 1500 wywołań na godzinę.
 
 ## <a name="permissions"></a>Uprawnienia
 
 Do wywołania tego interfejsu API jest wymagane jedno z następujących uprawnień. Aby dowiedzieć się więcej, w tym jak wybrać uprawnienia, zobacz [Wprowadzenie](apis-intro.md).
 
-| Typ uprawnień                    | Uprawnienie     | Nazwa wyświetlana uprawnień        |
+| Typ uprawnień                    | Uprawnienia     | Nazwa wyświetlana uprawnień        |
 |------------------------------------|----------------|--------------------------------|
 | Aplikacja                        | Library.Manage | Zarządzanie biblioteką odpowiedzi na żywo |
 | Delegowane (konto służbowe) | Library.Manage | Zarządzanie biblioteką odpowiedzi na żywo |
 
 ## <a name="http-request"></a>Żądanie HTTP
 
-DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/{fileName}
+USUNĄĆ https://api.securitycenter.microsoft.com/api/libraryfiles/{fileName}
 
-## <a name="request-headers"></a>Żądaj nagłówków
+## <a name="request-headers"></a>Nagłówki żądań
 
 | Name (Nazwa)            | Wpisać   | Opis               |
 |-----------------|--------|---------------------------|
-| Autoryzacja   | Ciąg | Bearer\<token>\. Wymagane. |
+| Autoryzacji   | Ciąg | Okaziciela\<token>\. Wymagane. |
 
-## <a name="request-body"></a>Treść wniosku
+## <a name="request-body"></a>Treść żądania
 
-Puste
+Pusty
 
-## <a name="response"></a>Odpowiedź
+## <a name="response"></a>Odpowiedzi
 
--   Jeśli plik istnieje w bibliotece i pomyślnie usunięto 204 Brak zawartości.
+-   Jeśli plik istnieje w bibliotece i został pomyślnie usunięty 204 Brak zawartości.
 
--   Jeśli nie można odnaleźć 404 nie znaleziono określonej nazwy pliku.
+-   Jeśli nie odnaleziono określonej nazwy pliku 404 Nie znaleziono.
 
 ## <a name="example"></a>Przykład
 
-Zażądaj
+Żądanie
 
-Oto przykład wniosku.
+Oto przykład żądania.
 
 ```HTTP
 DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/script1.ps1
 ```
 
 ## <a name="related-topic"></a>Temat pokrewny
-- [Uruchom odpowiedź na żywo](run-live-response.md) 
+- [Uruchom reagowanie w czasie rzeczywistym](run-live-response.md) 

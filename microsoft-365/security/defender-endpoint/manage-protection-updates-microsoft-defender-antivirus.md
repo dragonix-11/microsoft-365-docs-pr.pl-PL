@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9af3694f530660ead6f10008e1642990a20cc0a6
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: b01a9315e143a3fb49cedef84e1f7b9e505441d5
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416623"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873341"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Zarządzaj źródłami aktualizacji programu antywirusowego Microsoft Defender
 
@@ -29,7 +29,7 @@ ms.locfileid: "65416623"
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
 
@@ -68,7 +68,7 @@ Istnieje pięć lokalizacji, w których można określić, gdzie punkt końcowy 
 - [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Udział plików sieciowych](#unc-share)
-- [Aktualizacje analizy zabezpieczeń dla Program antywirusowy Microsoft Defender i innych programów chroniących przed złośliwym oprogramowaniem](https://www.microsoft.com/wdsi/defenderupdates) <sup>firmy Microsoft [[2](#fn1)]<sup></sup>
+- [Aktualizacje analizy zabezpieczeń dla Program antywirusowy Microsoft Defender i innych programów chroniących przed złośliwym oprogramowaniem](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus) <sup>firmy Microsoft [[2](#fn1)]<sup></sup>
 
 (<a id="fn1">1</a>) Intune wewnętrzny serwer aktualizacji definicji — jeśli używasz programu SCCM/SUP do pobierania aktualizacji definicji dla Program antywirusowy Microsoft Defender i potrzebujesz dostępu do Windows Update na zablokowanych urządzeniach klienckich, możesz przejść do współzarządzania i odciążyć obciążenie ochrony punktu końcowego do Intune. W zasadach ochrony przed złośliwym oprogramowaniem skonfigurowanych w Intune istnieje opcja "wewnętrznego serwera aktualizacji definicji", którą można skonfigurować do używania lokalnego programu WSUS jako źródła aktualizacji. Ułatwia to kontrolowanie, które aktualizacje z oficjalnego serwera WU są zatwierdzane dla przedsiębiorstwa, a także pomaga serwerowi proxy i zapisywaniu ruchu sieciowego w oficjalnej sieci Windows UPdates.
 
@@ -83,12 +83,10 @@ Aktualizacje analizy zabezpieczeń są również dostarczane wiele razy dziennie
 
 > [!IMPORTANT]
 > Jeśli aktualizacje [strony analizy zabezpieczeń firmy Microsoft](https://www.microsoft.com/security/portal/definitions/adl.aspx) zostały ustawione jako źródło rezerwowe po Windows Server Update Service lub Microsoft Update, aktualizacje są pobierane z aktualizacji analizy zabezpieczeń i aktualizacji platformy tylko wtedy, gdy bieżąca aktualizacja jest uważana za nieaktualną. (Domyślnie jest to siedem kolejnych dni, w których nie można zastosować aktualizacji z usługi Windows Server Update Lub usług Microsoft Update).
-> Można jednak [ustawić liczbę dni, po których ochrona zostanie zgłoszona jako nieaktualna](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).<p>
+> Można jednak [ustawić liczbę dni, po których ochrona zostanie zgłoszona jako nieaktualna](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus).<p>
 > Od poniedziałku, 21 października 2019 r. aktualizacje analizy zabezpieczeń i aktualizacje platformy będą podpisane wyłącznie przez algorytm SHA-2. Aby uzyskać najnowsze aktualizacje analizy zabezpieczeń i aktualizacje platformy, należy zaktualizować urządzenia w celu obsługi algorytmu SHA-2. Aby dowiedzieć się więcej, zobacz [2019 SHA-2 Code Signing Support requirement for Windows and WSUS (Wymagania dotyczące obsługi podpisywania kodu SHA-2 w wersji 2019 dla Windows i WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)).
 
 Każde źródło ma typowe scenariusze, które zależą od sposobu konfigurowania sieci oprócz tego, jak często publikują aktualizacje, zgodnie z opisem w poniższej tabeli:
-
-<br/><br/>
 
 |Lokalizacja|Przykładowy scenariusz|
 |---|---|
@@ -287,7 +285,7 @@ Skonfiguruj udział plików sieciowych (dysk UNC/mapowany), aby pobierać analiz
     > Nie należy dodawać folderu x64 (lub x86) w ścieżce. Proces mpcmdrun.exe dodaje go automatycznie.
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -296,7 +294,7 @@ Skonfiguruj udział plików sieciowych (dysk UNC/mapowany), aby pobierać analiz
 > - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
 > - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 - [Wdrażanie Program antywirusowy Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych](manage-updates-baselines-microsoft-defender-antivirus.md)

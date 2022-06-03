@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1faff638c9b33b933277dc74248c2d7daa43331c
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 049fd7b7bcec0ebdc4690cd666bdb99ced5bf504
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873495"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfiguruj ustawienia serwera proxy urządzenia i połączenia internetowego
 
@@ -67,7 +67,7 @@ Skonfiguruj oparty na rejestrze statyczny serwer proxy dla czujnika wykrywania i
 > [!NOTE]
 > W przypadku korzystania z tej opcji na Windows 10, Windows 11 lub Windows Server 2019 lub Windows Server 2022 zaleca się utworzenie następującego (lub nowszego) zbiorczego zestawienia aktualizacji:
 >
-> - Windows 11
+> - System Windows 11
 > - Windows 10, wersja 1809 lub Windows Server 2019 lub Windows Server 2022 —<https://support.microsoft.com/kb/5001384>
 > - Windows 10, wersja 1909 —<https://support.microsoft.com/kb/4601380>
 > - Windows 10, wersja 2004 —<https://support.microsoft.com/kb/4601382>
@@ -176,7 +176,7 @@ W poniższym arkuszu kalkulacyjnym do pobrania wymieniono usługi i skojarzone z
 
 |Arkusz kalkulacyjny listy domen| Opis|
 |---|---|
-|lista adresów URL Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów komercyjnych| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+|lista adresów URL Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów komercyjnych| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) <p> Należy pamiętać, że Ochrona punktu końcowego w usłudze Microsoft Defender plan 1 i plan 2 mają te same adresy URL usługi serwera proxy.
 | lista adresów URL Ochrona punktu końcowego w usłudze Microsoft Defender gov/GCC/doD | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów Gov/GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Jeśli serwer proxy lub zapora ma włączoną funkcję skanowania HTTPS (inspekcja SSL), wyklucz domeny wymienione w powyższej tabeli ze skanowania HTTPS.

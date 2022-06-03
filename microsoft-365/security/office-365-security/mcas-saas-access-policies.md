@@ -15,41 +15,41 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.prod: m365-security
-ms.openlocfilehash: a53666c58c8a9cc5793d160c428bc96ea322b274
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8386b01da6d0db5703d74d96f4e22de18b1f7d70
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945544"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873627"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>Zalecane zasady Microsoft Defender for Cloud Apps dla aplikacji SaaS
 
-Microsoft Defender for Cloud Apps opiera się na zasadach dostępu warunkowego usługi Azure AD, aby umożliwić monitorowanie w czasie rzeczywistym i kontrolę szczegółowych akcji za pomocą aplikacji SaaS, takich jak blokowanie pobierania, przekazywania, kopiowania i wklejania oraz drukowania. Ta funkcja dodaje zabezpieczenia do sesji, które wiążą się z nieodłącznym ryzykiem, na przykład wtedy, gdy dostęp do zasobów firmy jest uzyskiwany z urządzeń niezarządzanych lub przez użytkowników-gości.
+Microsoft Defender for Cloud Apps opiera się na Azure AD zasad dostępu warunkowego, aby umożliwić monitorowanie w czasie rzeczywistym i kontrolę szczegółowych akcji za pomocą aplikacji SaaS, takich jak blokowanie pobierania, przekazywania, kopiowania i wklejania oraz drukowania. Ta funkcja dodaje zabezpieczenia do sesji, które wiążą się z nieodłącznym ryzykiem, na przykład wtedy, gdy dostęp do zasobów firmy jest uzyskiwany z urządzeń niezarządzanych lub przez użytkowników-gości.
 
-Defender dla Chmury Apps integruje się również natywnie z usługą Microsoft Purview Information Protection, zapewniając inspekcję zawartości w czasie rzeczywistym w celu znalezienia poufnych danych na podstawie poufnych typów informacji i etykiet poufności oraz podjęcia odpowiednich działań.
+Defender dla Chmury Apps integruje się również natywnie z Microsoft Purview Information Protection, zapewniając inspekcję zawartości w czasie rzeczywistym w celu znalezienia poufnych danych na podstawie typów informacji poufnych i etykiet poufności oraz podjęcia odpowiednich działań.
 
 Te wskazówki obejmują zalecenia dotyczące następujących scenariuszy:
 
 - Wprowadzanie aplikacji SaaS do zarządzania IT
 - Dostrajanie ochrony dla określonych aplikacji SaaS
-- Konfigurowanie ochrony przed utratą danych (DLP) w usłudze Microsoft Purview w celu zapewnienia zgodności z przepisami dotyczącymi ochrony danych
+- Konfigurowanie Microsoft Purview ochrony przed utratą danych (DLP) w celu zapewnienia zgodności z przepisami dotyczącymi ochrony danych
 
 ## <a name="bring-saas-apps-into-it-management"></a>Wprowadzanie aplikacji SaaS do zarządzania IT
 
-Pierwszym krokiem przy użyciu usługi Defender dla Chmury Apps do zarządzania aplikacjami SaaS jest ich odnalezienie, a następnie dodanie ich do dzierżawy usługi Azure AD. Jeśli potrzebujesz pomocy dotyczącej odnajdywania, zobacz [Odnajdywanie aplikacji SaaS i zarządzanie nimi w sieci](/cloud-app-security/tutorial-shadow-it). Po odnalezieniu aplikacji [dodaj je do dzierżawy usługi Azure AD](/azure/active-directory/manage-apps/add-application-portal).
+Pierwszym krokiem przy użyciu Defender dla Chmury Apps do zarządzania aplikacjami SaaS jest ich odnalezienie, a następnie dodanie ich do dzierżawy Azure AD. Jeśli potrzebujesz pomocy dotyczącej odnajdywania, zobacz [Odnajdywanie aplikacji SaaS i zarządzanie nimi w sieci](/cloud-app-security/tutorial-shadow-it). Po odnalezieniu aplikacji [dodaj je do dzierżawy Azure AD](/azure/active-directory/manage-apps/add-application-portal).
 
 Możesz zacząć nimi zarządzać, wykonując następujące czynności:
 
-1. Najpierw w usłudze Azure AD utwórz nowe zasady dostępu warunkowego i skonfiguruj je tak, aby "Używać kontroli aplikacji dostępu warunkowego". Spowoduje to przekierowanie żądania do Defender dla Chmury Apps. Możesz utworzyć jedną zasadę i dodać wszystkie aplikacje SaaS do tych zasad.
+1. Najpierw w Azure AD utwórz nowe zasady dostępu warunkowego i skonfiguruj je tak, aby "Używać kontroli aplikacji dostępu warunkowego". Spowoduje to przekierowanie żądania do Defender dla Chmury Apps. Możesz utworzyć jedną zasadę i dodać wszystkie aplikacje SaaS do tych zasad.
 1. Następnie w Defender dla Chmury Apps utwórz zasady sesji. Utwórz jedną zasadę dla każdej kontrolki, którą chcesz zastosować.
 
-Uprawnienia do aplikacji SaaS są zwykle oparte na potrzebach biznesowych dostępu do aplikacji. Te uprawnienia mogą być wysoce dynamiczne. Korzystanie z zasad Defender dla Chmury Apps zapewnia ochronę danych aplikacji niezależnie od tego, czy użytkownicy są przypisani do grupy usługi Azure AD skojarzonej z punktem początkowym, przedsiębiorstwem czy wyspecjalizowaną ochroną zabezpieczeń.
+Uprawnienia do aplikacji SaaS są zwykle oparte na potrzebach biznesowych dostępu do aplikacji. Te uprawnienia mogą być wysoce dynamiczne. Korzystanie z zasad Defender dla Chmury Apps zapewnia ochronę danych aplikacji niezależnie od tego, czy użytkownicy są przypisani do grupy Azure AD skojarzonej z punktem początkowym, przedsiębiorstwem czy wyspecjalizowaną ochroną zabezpieczeń.
 
-Aby chronić dane w kolekcji aplikacji SaaS, na poniższym diagramie przedstawiono niezbędne zasady dostępu warunkowego usługi Azure AD oraz sugerowane zasady, które można utworzyć w usłudze Defender dla Chmury Apps. W tym przykładzie zasady utworzone w usłudze Defender dla Chmury Apps mają zastosowanie do wszystkich aplikacji SaaS, które zarządzasz. Są one przeznaczone do stosowania odpowiednich kontrolek w zależności od tego, czy urządzenia są zarządzane, a także etykiety poufności, które są już stosowane do plików.
+Aby chronić dane w kolekcji aplikacji SaaS, na poniższym diagramie przedstawiono niezbędne Azure AD zasad dostępu warunkowego oraz sugerowanych zasad, które można utworzyć w usłudze Defender dla Chmury Apps. W tym przykładzie zasady utworzone w usłudze Defender dla Chmury Apps mają zastosowanie do wszystkich aplikacji SaaS, które zarządzasz. Są one przeznaczone do stosowania odpowiednich kontrolek w zależności od tego, czy urządzenia są zarządzane, a także etykiety poufności, które są już stosowane do plików.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Zasady zarządzania aplikacjami SaaS w usłudze Defender dla Chmury Apps" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
-W poniższej tabeli wymieniono nowe zasady dostępu warunkowego, które należy utworzyć w usłudze Azure AD.
+W poniższej tabeli wymieniono nowe zasady dostępu warunkowego, które należy utworzyć w Azure AD.
 
 |Poziom ochrony|Zasad|Więcej informacji|
 |---|---|---|
@@ -65,7 +65,7 @@ W następnej tabeli wymieniono przykładowe zasady przedstawione powyżej, któr
 |Wyspecjalizowane zabezpieczenia|Blokuj pobieranie plików oznaczonych etykietą sklasyfikowaną ze wszystkich urządzeń (zapewnia to dostęp tylko do przeglądarki)|
 |||
 
-Aby uzyskać kompleksowe instrukcje dotyczące konfigurowania kontroli aplikacji dostępu warunkowego, zobacz [Wdrażanie kontroli aplikacji dostępu warunkowego dla polecanych aplikacji](/cloud-app-security/proxy-deployment-aad). W tym artykule przedstawiono proces tworzenia niezbędnych zasad dostępu warunkowego w usłudze Azure AD i testowania aplikacji SaaS.
+Aby uzyskać kompleksowe instrukcje dotyczące konfigurowania kontroli aplikacji dostępu warunkowego, zobacz [Wdrażanie kontroli aplikacji dostępu warunkowego dla polecanych aplikacji](/cloud-app-security/proxy-deployment-aad). W tym artykule przedstawiono proces tworzenia niezbędnych zasad dostępu warunkowego w Azure AD i testowania aplikacji SaaS.
 
 Aby uzyskać więcej informacji, zobacz [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control (Ochrona aplikacji za pomocą Microsoft Defender for Cloud Apps kontroli aplikacji dostępu warunkowego](/cloud-app-security/proxy-intro-aad)).
 
@@ -79,7 +79,7 @@ Na przykład możesz chronić środowisko box za pomocą tego typu wbudowanych s
 - Aktywność z rzadkiego kraju
 - Działanie z podejrzanych adresów IP
 - Niemożliwa podróż
-- Działanie wykonywane przez użytkownika zakończone (wymaga AAD jako dostawcy tożsamości)
+- Działanie wykonywane przez użytkownika zakończone (wymaga usługi AAD jako dostawcy tożsamości)
 - Wykrywanie złośliwego oprogramowania
 - Wiele nieudanych prób logowania
 - Działanie wymuszające okup
@@ -107,4 +107,4 @@ Poniższa ilustracja i tabela zawierają kilka przykładów zasad, które można
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji na temat korzystania z aplikacji Defender dla Chmury, zobacz [dokumentację Microsoft Defender for Cloud Apps](//cloud-app-security/).
+Aby uzyskać więcej informacji na temat korzystania z aplikacji Defender dla Chmury, zobacz [dokumentację Microsoft Defender for Cloud Apps](/defender-cloud-apps/).

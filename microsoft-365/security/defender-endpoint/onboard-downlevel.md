@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0cd1e0aa999200814639f24401bf019774ca1d43
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 8ca88340ae90889c0e45c5905863373d930949b2
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825217"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872967"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Dołącz poprzednią wersję systemu Windows
 
@@ -37,7 +37,7 @@ ms.locfileid: "64825217"
 - Windows 8.1 Enterprise
 - Windows Server 2008 R2 z dodatkiem SP1
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Usługa Defender for Endpoint rozszerza obsługę o systemy operacyjne niższego poziomu, zapewniając zaawansowane funkcje wykrywania ataków i badania w obsługiwanych wersjach Windows.
 
@@ -49,7 +49,7 @@ Aby dołączyć punkty końcowe klienta Windows niższego poziomu do usługi Def
 W przypadku Windows Server 2008 R2 z dodatkiem SP1 można [dołączyć do Microsoft Defender dla Chmury](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> Aby dołączyć serwer Windows za pośrednictwem Microsoft Monitoring Agent (opcja 1) wymagana jest licencja autonomicznego serwera usługi Defender for Endpoint dla każdego węzła. Alternatywnie wymagana jest licencja usługi Microsoft Defender dla serwerów dla każdego węzła, aby dołączyć serwer Windows za pośrednictwem Microsoft Defender dla Chmury (opcja 2), zobacz [Obsługiwane funkcje dostępne w Microsoft Defender dla Chmury](/azure/security-center/security-center-services).
+> Aby dołączyć serwer Windows za pośrednictwem Microsoft Monitoring Agent (opcja 1) wymagana jest licencja autonomicznego serwera usługi Defender for Endpoint dla każdego węzła. Alternatywnie wymagana jest licencja usługi Microsoft Defender dla serwerów dla każdego węzła, aby dołączyć serwer Windows za pośrednictwem Microsoft Defender dla Chmury (opcja 2), zobacz [Obsługiwane funkcje dostępne w Microsoft Defender dla Chmury](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
 
 > [!TIP]
 > Po dołączeniu urządzenia można uruchomić test wykrywania, aby sprawdzić, czy jest ono prawidłowo dołączone do usługi. Aby uzyskać więcej informacji, zobacz [Uruchamianie testu wykrywania w nowo dołączonym punkcie końcowym usługi Defender for Endpoint](run-detection-test.md).
@@ -132,7 +132,7 @@ Po zakończeniu w ciągu godziny powinny zostać wyświetlone dołączone serwer
 
 ## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Dołączanie serwerów Windows za pośrednictwem Microsoft Defender dla Chmury
 
-1. W okienku nawigacji Microsoft 365 Defender wybierz pozycję **Ustawienia** >  **Device** **managementOnboarding** > .
+1. W okienku nawigacji Microsoft 365 Defender wybierz pozycję **Ustawienia** >  Device management **Onboarding (Dołączanie** **do zarządzania urządzeniami** > ).
 
 2. Wybierz **pozycję Windows Server 2008 R2 SP1** jako system operacyjny.
 
@@ -200,7 +200,7 @@ Wykonaj kroki opisane w [temacie Uruchamianie testu wykrywania na nowo dołączo
     Pobieranie aktualizacji dla Windows Server 2008 R2 x64
     
     .NET Framework 3.5.1 (KB315418)<br>
-    [Dla Windows Server 2008 R2 x64](https://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
+    [Dla Windows Server 2008 R2 x64](/iis/install/installing-iis-7/install-windows-server-2008-and-windows-server-2008-r2)
     
     >[!NOTE]
     > W tym artykule przyjęto założenie, że używasz serwerów opartych na systemie x64 (agent MMA .exe x64 Nowa wersja zgodna ze standardem SHA-2).

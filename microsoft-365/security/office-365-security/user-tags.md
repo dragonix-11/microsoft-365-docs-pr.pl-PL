@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak identyfikować określone grupy użytkowników za pomocą tagów użytkowników w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2. Filtrowanie tagów jest dostępne dla alertów, raportów i badań w Ochrona usługi Office 365 w usłudze Microsoft Defender, aby szybko zidentyfikować otagowanych użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3d4f5b82e09c9a58e891fa6fcba009ac490c0cb1
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 24509489259a368fb35773603e3708a265f8ed76
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647474"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873275"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tagi użytkowników w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -53,7 +53,7 @@ Po zastosowaniu tagów systemowych lub tagów niestandardowych do użytkowników
 - [Raport najpopularniejszych nadawców i adresatów](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Symulacja ataku](attack-simulation-training.md#target-users)
 - [Widoki kampanii](campaigns.md)
-- [Przesyłanie przez administratora i użytkownika](admin-submission.md)
+- [przesyłanie Administracja i użytkowników](admin-submission.md)
 - [Kwarantanna](quarantine.md)
 - W przypadku kont o priorytecie możesz użyć [raportu Problemy z pocztą e-mail dla kont priorytetowych](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) w centrum administracyjnym Exchange (EAC).
 
@@ -67,7 +67,7 @@ Aby zobaczyć, jak tagi użytkowników są częścią strategii ochrony kont uż
 
 - Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w portalu Microsoft 365 Defender:
   - Aby tworzyć, modyfikować i usuwać niestandardowe tagi użytkowników, musisz być członkiem grup ról **Zarządzanie organizacją** lub **Administrator zabezpieczeń** .
-  - Aby dodać i usunąć członków z tagu systemu Konta priorytetowego, musisz być członkiem grup ról **administratora zabezpieczeń** i **administratora Exchange**.
+  - Aby dodać i usunąć członków z tagu systemu Konta priorytetowego, musisz być członkiem **grupy administratora zabezpieczeń** i **Exchange Administracja** ról.
   - Aby dodać i usunąć członków z istniejących niestandardowych tagów użytkowników, musisz być członkiem grup ról **Zarządzanie organizacją** lub **Administrator zabezpieczeń** .
   - Aby uzyskać dostęp tylko do odczytu do tagów użytkowników, musisz być członkiem grup ról **Czytelnik globalny**, **Operator zabezpieczeń** lub **Czytelnik zabezpieczeń** .
 
@@ -81,7 +81,7 @@ Aby zobaczyć, jak tagi użytkowników są częścią strategii ochrony kont uż
 
 - Kontami priorytetów można również zarządzać i monitorować w Centrum administracyjne platformy Microsoft 365. Aby uzyskać instrukcje, zobacz [Zarządzanie kontami priorytetów i monitorowanie ich](../../admin/setup/priority-accounts.md).
 
-- Aby uzyskać informacje na temat zabezpieczania _kont uprzywilejowanych_ (kont administratorów), zobacz [ten temat](/azure/architecture/framework/security/critical-impact-accounts).
+- Aby uzyskać informacje na temat zabezpieczania _kont uprzywilejowanych_ (kont administratorów), zobacz [ten temat](/security/compass/critical-impact-accounts).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Tworzenie tagów użytkowników przy użyciu portalu Microsoft 365 Defender
 

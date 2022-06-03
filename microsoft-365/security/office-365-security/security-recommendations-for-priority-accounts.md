@@ -21,12 +21,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak podnieść poziom ustawień zabezpieczeń i używać raportów, alertów i badań dotyczących kont priorytetowych w organizacjach Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50d51bf2861d1ef1b9e4d9694fc9469fc5ec7406
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 99e4726af1226e044715d33e92a176c9292b49ab
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648640"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873385"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Zalecenia dotyczące zabezpieczeń dla kont priorytetowych na platformie Microsoft 365
 
@@ -53,7 +53,7 @@ Microsoft 365 i Ochrona usługi Office 365 w usłudze Microsoft Defender zawiera
 |[Szkolenie użytkowników](#train-users)|![Zawarte.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Zawarte](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Zawarte](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 > [!NOTE]
-> Aby uzyskać informacje na temat zabezpieczania _kont uprzywilejowanych_ (kont administratorów), zobacz [ten temat](/azure/architecture/framework/security/critical-impact-accounts).
+> Aby uzyskać informacje na temat zabezpieczania _kont uprzywilejowanych_ (kont administratorów), zobacz [ten temat](/security/compass/critical-impact-accounts).
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Zwiększanie zabezpieczeń logowania dla kont priorytetowych
 

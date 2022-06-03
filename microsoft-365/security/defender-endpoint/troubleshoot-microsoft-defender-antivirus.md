@@ -10,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/27/2022
+ms.date: 06/02/2022
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9008fe0d6a4c46d544e4d806c3a15b24c53f2f10
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 1a82f1fb6759bd3cfeaa5bc24154e7e030d08355
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872407"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Przejrzyj dzienniki zdarzeń i kody błędów, aby rozwiązać problemy z programem antywirusowym Microsoft Defender
 
@@ -44,7 +44,6 @@ Lista tabel:
 
 > [!TIP]
 > Możesz również odwiedzić witrynę internetową Ochrona punktu końcowego w usłudze Microsoft Defender demo pod adresem [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground), aby potwierdzić, że działają następujące funkcje:
->
 > - Ochrona dostarczana przez chmurę
 > - Szybkie uczenie się (w tym Blok od pierwszego wejrzenia)
 > - Potencjalnie niepożądane blokowanie aplikacji
@@ -109,7 +108,7 @@ Opis:
 </ul>
 </dt>
 <dt>Skanuj zasoby: &lt; Zasoby (takie jak pliki/katalogi/BHO), które zostały zeskanowane.&gt;</dt> 
-<dt>Użytkownika: &lt; Domainlt&gt;\&; Użytkownika&gt;</dt>
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Użytkownika&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -150,8 +149,8 @@ Opis:
 <li>Skanowanie klienta</li>
 </ul>
 </dt>
-<dt>Użytkownika: &lt; Domainlt&gt;\&; UserScan&gt;</dt> 
-<dt>Time: &lt;czas trwania skanowania.&gt;</dt>
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Czas skanowania użytkownika&gt;</dt>
+<dt>: &lt;czas trwania skanowania.&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -192,8 +191,8 @@ Opis:
 <li>Skanowanie klienta</li>
 </ul>
 </dt>
-<dt>Użytkownika: &lt; Domainlt&gt;&amp;; UserScan&gt;</dt> 
-<dt>Time: &lt;czas trwania skanowania.&gt;</dt>
+<dt>Użytkownika: &lt; Domena&gt;&amp;lt; Czas skanowania użytkownika&gt;</dt>
+<dt>: &lt;czas trwania skanowania.&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -234,7 +233,7 @@ Opis:
 <li>Skanowanie klienta</li>
 </ul>
 </dt>
-<dt>Użytkownik: &lt;Domainlt&gt;\&; Użytkownika&gt;</dt>
+<dt>Użytkownik: &lt;Domena&gt;\&lt; Użytkownika&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -275,7 +274,7 @@ Opis:
 <li>Skanowanie klienta</li>
 </ul>
 </dt>
-<dt>Użytkownik: &lt;Domainlt&gt;\&; Użytkownika&gt;</dt>
+<dt>Użytkownik: &lt;Domena&gt;\&lt; Użytkownika&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -316,8 +315,8 @@ Opis:
 <li>Skanowanie klienta</li>
 </ul>
 </dt>
-<dt>Użytkownika: &lt; Domainlt&gt;\&; UserError&gt;</dt> 
-<dt>Code: &lt;Kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Kod błędu użytkownika&gt;</dt>
+<dt>: &lt;kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt>
 </dl>
 </td>
@@ -332,7 +331,7 @@ Aby rozwiązać ten problem:
 <ol>
 <li>Uruchom ponownie skanowanie.</li>
 <li>Jeśli nie powiedzie się w ten sam sposób, przejdź do <a href="https://go.microsoft.com/fwlink/?LinkId=215163">witryny pomoc techniczna firmy Microsoft</a>, wprowadź numer błędu w polu <b>Wyszukiwania</b>, aby wyszukać kod błędu.</li>
-<li>Skontaktuj się z <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Pomocą techniczną firmy Microsoft</a>.
+<li>Skontaktuj się z <a href="/microsoft-365/admin/get-help-support">Pomocą techniczną firmy Microsoft</a>.
 </li>
 </ol>
 </td>
@@ -362,9 +361,9 @@ Opis:
 <td >
 Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -372,8 +371,8 @@ Aby uzyskać więcej informacji, zobacz następujące artykuły:
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; File pathDetection&gt;</dt>
-<dt> Origin: &lt;Wykrywanie źródła&gt;, na przykład:<ul>
+<dt>Ścieżka: &lt; Źródło wykrywania ścieżki&gt;</dt>
+<dt>pliku: &lt;źródło&gt; wykrywania, na przykład:<ul>
 <li>Unknown</li>
 <li>Komputer lokalny</li>
 <li>Udział sieci</li>
@@ -399,12 +398,12 @@ Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <li>Wczesna ochrona przed złośliwym kodem (ELAM). Obejmuje to złośliwe oprogramowanie wykryte przez sekwencję rozruchu</li>
 <li>Zdalne zaświadczanie</li>
 </ul>Interfejs skanowania oprogramowania chroniącego przed złośliwym kodem (AMSI). Służy głównie do ochrony skryptów (PowerShell, VBS), choć może być wywoływany przez inne firmy, jak również.
-UACStatus</dt>
-<dt>: &lt;StatusUser&gt;</dt>
-<dt>: &lt;Domainlt&gt;\&; UserProcess&gt;</dt> 
-<dt>Name: &lt;Process in the PIDSignature&gt;</dt> 
-<dt>Version: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;Antimalware Engine version&gt;</dt>
+Stan funkcji UAC</dt>
+<dt>: &lt;Stan&gt;</dt>
+<dt>użytkownika: &lt;Domena&gt;\&lt; Nazwa procesu użytkownika&gt;</dt>
+<dt>: &lt;proces w wersji podpisu PID&gt;</dt>
+<dt>: &lt;wersja definicji&gt;</dt>
+<dt>wersji aparatu: &lt;wersja Antimalware Engine&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -433,10 +432,10 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender podjęła działania w celu ochrony tej maszyny przed złośliwym oprogramowaniem lub innym potencjalnie niepożądanym oprogramowaniem. Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Użytkownika: &lt; Domainlt&gt;\&; UserName&gt;</dt>
-<dt>: &lt;Threat nameID&gt;</dt>
-<dt>: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Severity&gt;, na przykład:<ul>
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Nazwa użytkownika&gt;</dt>
+<dt>: &lt;Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -454,9 +453,9 @@ Program antywirusowy Microsoft Defender podjęła działania w celu ochrony tej 
 <li>Blokuj: wykonanie zasobu zostało zablokowane</li>
 </ul>
 </dt>
-<dt>Stan: &lt; StatusSignature&gt;</dt> 
-<dt>Version: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;Antimalware Engine version&gt;</dt>
+<dt>Stan: &lt; Wersja&gt;</dt>
+<dt>sygnatury stanu: &lt;wersja definicji&gt;</dt>
+<dt>aparatu: &lt;wersja&gt; Antimalware Engine</dt>
 </dl>
 </td>
 </tr>
@@ -485,10 +484,10 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender napotkał błąd podczas podejmowania akcji dotyczących złośliwego oprogramowania lub innego potencjalnie niechcianego oprogramowania. Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Użytkownika: &lt; Domainlt&gt;\&; UserName&gt;</dt>
-<dt>: &lt;Threat nameID&gt;</dt>
-<dt>: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Severity&gt;, na przykład:<ul>
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Nazwa użytkownika&gt;</dt>
+<dt>: &lt;Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -496,8 +495,8 @@ Program antywirusowy Microsoft Defender napotkał błąd podczas podejmowania ak
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; Ścieżka&gt;</dt>
-<dt> plikuAction: &lt;akcja&gt;, na przykład:<ul>
+<dt>Ścieżka: &lt; Akcja ścieżki&gt;</dt>
+<dt>pliku: &lt;akcja&gt;, na przykład:<ul>
 <li>Czyszczenie: zasób został oczyszczony</li>
 <li>Kwarantanna: zasób został poddany kwarantannie</li>
 <li>Usuń: zasób został usunięty</li>
@@ -509,9 +508,9 @@ Program antywirusowy Microsoft Defender napotkał błąd podczas podejmowania ak
 </dt>
 <dt>Kod błędu: &lt; Kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT. </dt>
 <dt>Opis błędu: &lt;Opis&gt; błędu Opis błędu. </dt> 
-<dt>Stan: &lt; StatusSignature&gt;</dt> 
-<dt>Version: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;Antimalware Engine version&gt;</dt>
+<dt>Stan: &lt; Wersja&gt;</dt>
+<dt>podpisu stanu: &lt;wersja definicji&gt;</dt>
+<dt>wersji aparatu: &lt;wersja Antimalware Engine&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -540,9 +539,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender przywrócił element z kwarantanny. Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -550,10 +549,10 @@ Program antywirusowy Microsoft Defender przywrócił element z kwarantanny. Aby 
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; Ścieżka&gt;</dt> 
-<dt>plikuUżytk: &lt;Domainlt&gt;\&; UserSignature&gt;</dt> 
-<dt>Version: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;Antimalware Engine version&gt;</dt>
+<dt>Ścieżka: &lt; Ścieżka&gt;pliku</dt>
+<dt>Użytkownik: &lt;Domena&gt;\&lt; Wersja podpisu użytkownika&gt;</dt>
+<dt>: &lt;wersja&gt;definicji</dt>
+<dt>wersji aparatu: &lt;wersja&gt; Antimalware Engine</dt>
 </dl>
 </td>
 </tr>
@@ -582,9 +581,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender napotkał błąd podczas próby przywrócenia elementu z kwarantanny. Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -592,12 +591,12 @@ Program antywirusowy Microsoft Defender napotkał błąd podczas próby przywró
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; Ścieżka&gt;</dt> 
-<dt>plikuUżytk: &lt;Domainlt&gt;\&; UserError&gt;</dt> 
-<dt>Code: &lt;Kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT. </dt>
+<dt>Ścieżka: &lt; Ścieżka&gt;pliku</dt>
+<dt>Użytkownik: &lt;Domena&gt;\&lt; Kod błędu użytkownika&gt;</dt>
+<dt>: &lt;kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT. </dt>
 <dt>Opis błędu: &lt;Opis&gt; błędu Opis błędu. </dt> 
-<dt>Wersja podpisu: &lt; &gt;Wersja</dt> 
-<dt>definicjiInne wersja: &lt;wersja&gt; Antimalware Engine</dt>
+<dt>Wersja podpisu: &lt; Wersja definicji&gt;</dt>
+<dt>aparatu: &lt;wersja&gt; Antimalware Engine</dt>
 </dl>
 </td>
 </tr>
@@ -626,9 +625,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender usunięto element z kwarantanny.<br/>Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -636,10 +635,10 @@ Program antywirusowy Microsoft Defender usunięto element z kwarantanny.<br/>Aby
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; Ścieżka&gt;</dt> 
-<dt>plikuUżytk: &lt;Domainlt&gt;\&; UserSignature&gt;</dt> 
-<dt>Version: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;Antimalware Engine version&gt;</dt>
+<dt>Ścieżka: &lt; Ścieżka&gt;pliku</dt>
+<dt>Użytkownik: &lt;Domena&gt;\&lt; Wersja podpisu użytkownika&gt;</dt>
+<dt>: &lt;wersja&gt;definicji</dt>
+<dt>wersji aparatu: &lt;wersja&gt; Antimalware Engine</dt>
 </dl>
 </td>
 </tr>
@@ -669,9 +668,9 @@ Opis:
 Program antywirusowy Microsoft Defender napotkał błąd podczas próby usunięcia elementu z kwarantanny.
 Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -679,12 +678,12 @@ Aby uzyskać więcej informacji, zobacz następujące artykuły:
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; Ścieżka&gt;</dt> 
-<dt>plikuUżytk: &lt;Domainlt&gt;\&; UserError&gt;</dt> 
-<dt>Code: &lt;Kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT. </dt>
+<dt>Ścieżka: &lt; Ścieżka&gt;pliku</dt>
+<dt>Użytkownik: &lt;Domena&gt;\&lt; Kod błędu użytkownika&gt;</dt>
+<dt>: &lt;kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT. </dt>
 <dt>Opis błędu: &lt;Opis&gt; błędu Opis błędu. </dt> 
-<dt>Wersja podpisu: &lt; &gt;Wersja</dt> 
-<dt>definicjiInne wersja: &lt;wersja&gt; Antimalware Engine</dt>
+<dt>Wersja podpisu: &lt; Wersja definicji&gt;</dt>
+<dt>aparatu: &lt;wersja&gt; Antimalware Engine</dt>
 </dl>
 </td>
 </tr>
@@ -714,7 +713,7 @@ Opis:
 Program antywirusowy Microsoft Defender usunięto historię złośliwego oprogramowania i innego potencjalnie niechcianego oprogramowania.
 <dl>
 <dt>Czas: czas wystąpienia zdarzenia, na przykład wtedy, gdy historia jest czyszczona. Ten parametr nie jest używany w zdarzeniach zagrożeń, więc nie ma żadnych pomyłek dotyczących tego, czy jest to czas korygowania, czy czas infekcji. W przypadku tych elementów nazywamy je w szczególności czasem akcji lub czasem wykrywania.</dt> 
-<dt>Użytkownika: &lt; Domainlt&gt;\&; Użytkownika&gt;</dt>
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Użytkownika&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -744,8 +743,8 @@ Opis:
 Program antywirusowy Microsoft Defender napotkał błąd podczas próby usunięcia historii złośliwego oprogramowania i innego potencjalnie niechcianego oprogramowania.
 <dl>
 <dt>Czas: czas wystąpienia zdarzenia, na przykład wtedy, gdy historia jest czyszczona. Ten parametr nie jest używany w zdarzeniach zagrożeń, więc nie ma żadnych pomyłek dotyczących tego, czy jest to czas korygowania, czy czas infekcji. W przypadku tych elementów nazywamy je w szczególności czasem akcji lub czasem wykrywania.</dt> 
-<dt>Użytkownika: &lt; Domainlt&gt;\&; UserError&gt;</dt> 
-<dt>Code: &lt;Kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT. </dt>
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Kod błędu użytkownika&gt;</dt>
+<dt>: &lt;kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT. </dt>
 <dt>Opis błędu: &lt;Opis&gt; błędu Opis błędu. </dt>
 </dl>
 </td>
@@ -775,9 +774,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender wykryła podejrzane zachowanie.<br/>Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -785,8 +784,8 @@ Program antywirusowy Microsoft Defender wykryła podejrzane zachowanie.<br/>Aby 
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; File pathDetection&gt;</dt>
-<dt> Origin: &lt;Wykrywanie źródła&gt;, na przykład:
+<dt>Ścieżka: &lt; Źródło wykrywania ścieżki&gt;</dt>
+<dt>pliku: &lt;źródło&gt; wykrywania, na przykład:
 <ul>
 <li>Unknown</li>
 <li>Komputer lokalny</li>
@@ -813,15 +812,15 @@ Program antywirusowy Microsoft Defender wykryła podejrzane zachowanie.<br/>Aby 
 <li>Wczesna ochrona przed złośliwym kodem (ELAM). Obejmuje to złośliwe oprogramowanie wykryte przez sekwencję rozruchu</li>
 <li>Zdalne zaświadczanie</li>
 </ul>Interfejs skanowania oprogramowania chroniącego przed złośliwym kodem (AMSI). Służy głównie do ochrony skryptów (PowerShell, VBS), choć może być wywoływany przez inne firmy, jak również.
-UACStatus</dt>
-<dt>: &lt;StatusUser&gt;</dt>
-<dt>: &lt;Domainlt&gt;\&; UserProcess Name: Process in the PIDSignature ID: Enumeration matching severity (Nazwa userprocess&gt;</dt>
-<dt>: &lt;proces w identyfikatorze PIDSignature&gt;</dt>
-<dt>: wyliczenie pasującej ważności).</dt> 
-<dt>Wersja podpisu: &lt; Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;Antimalware Engine versionFidelity&gt;</dt> 
-<dt>Label:</dt>
-<dt>Target File Name: &lt;Nazwa&gt; pliku.</dt>
+Stan funkcji UAC</dt>
+<dt>: &lt;Stan&gt;</dt>
+<dt>użytkownika: &lt;Domena&gt;\&lt; Nazwa procesu użytkownika&gt;</dt>
+<dt>: &lt;proces w identyfikatorze podpisu PID&gt;</dt>
+<dt>: ważność dopasowania wyliczenia.</dt> 
+<dt>Wersja podpisu: &lt; &gt;Wersja definicji</dt>
+<dt>Aparatu wersja: &lt;Antimalware Engine wersja&gt;</dt>
+<dt>Fidelity Label:</dt>
+<dt>Nazwa pliku docelowego: &lt;Nazwa&gt; pliku.</dt>
 </dl>
 </td>
 </tr>
@@ -850,9 +849,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender wykryła złośliwe oprogramowanie lub inne potencjalnie niechciane oprogramowanie.<br/>Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -860,8 +859,8 @@ Program antywirusowy Microsoft Defender wykryła złośliwe oprogramowanie lub i
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; File pathDetection&gt;</dt>
-<dt> Origin: &lt;Wykrywanie źródła&gt;, na przykład:
+<dt>Ścieżka: &lt; Źródło wykrywania ścieżki&gt;</dt>
+<dt>pliku: &lt;źródło&gt; wykrywania, na przykład:
 <ul>
 <li>Unknown</li>
 <li>Komputer lokalny</li>
@@ -888,11 +887,11 @@ Program antywirusowy Microsoft Defender wykryła złośliwe oprogramowanie lub i
 <li>Wczesna ochrona przed złośliwym kodem (ELAM). Obejmuje to złośliwe oprogramowanie wykryte przez sekwencję rozruchu</li>
 <li>Zdalne zaświadczanie</li>
 </ul>Interfejs skanowania oprogramowania chroniącego przed złośliwym kodem (AMSI). Służy głównie do ochrony skryptów (PowerShell, VBS), choć może być wywoływany przez inne firmy, jak również.
-UACUser</dt>
-<dt>: &lt;Domainlt&gt;\&; UserProcess&gt;</dt> 
-<dt>Name: &lt;Process in the PIDSignature&gt;</dt> 
-<dt>Version: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;Antimalware Engine version&gt;</dt>
+Użytkownik funkcji UAC</dt>
+<dt>: &lt;Domena&gt;\&lt; Nazwa procesu użytkownika&gt;</dt>
+<dt>: &lt;Proces w wersji sygnatury PID&gt;</dt>
+<dt>: &lt;Wersja aparatu definicji&gt;</dt>
+<dt>: &lt;wersja Antimalware Engine&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -929,9 +928,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender podjęła działania w celu ochrony tej maszyny przed złośliwym oprogramowaniem lub innym potencjalnie niepożądanym oprogramowaniem.<br/>Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -939,8 +938,8 @@ Program antywirusowy Microsoft Defender podjęła działania w celu ochrony tej 
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; File pathDetection&gt;</dt>
-<dt> Origin: &lt;Wykrywanie źródła&gt;, na przykład:
+<dt>Ścieżka: &lt; Źródło wykrywania ścieżki&gt;</dt>
+<dt>pliku: &lt;źródło&gt; wykrywania, na przykład:
 <ul>
 <li>Unknown</li>
 <li>Komputer lokalny</li>
@@ -967,10 +966,10 @@ Program antywirusowy Microsoft Defender podjęła działania w celu ochrony tej 
 <li>Wczesna ochrona przed złośliwym kodem (ELAM). Obejmuje to złośliwe oprogramowanie wykryte przez sekwencję rozruchu</li>
 <li>Zdalne zaświadczanie</li>
 </ul>Interfejs skanowania oprogramowania chroniącego przed złośliwym kodem (AMSI). Służy głównie do ochrony skryptów (PowerShell, VBS), choć może być wywoływany przez inne firmy, jak również.
-UACUser</dt>
-<dt>: &lt;Domainlt&gt;\&; UserProcess&gt;</dt> 
-<dt>Name: &lt;Process in the PIDAction&gt;</dt>
-<dt>: &lt;Action&gt;, na przykład:<ul>
+Użytkownik funkcji UAC</dt>
+<dt>: &lt;Domena&gt;\&lt; Nazwa procesu użytkownika&gt;</dt>
+<dt>: &lt;proces w akcji PID&gt;</dt>
+<dt>: &lt;akcja&gt;, na przykład:<ul>
 <li>Czyszczenie: zasób został oczyszczony</li>
 <li>Kwarantanna: zasób został poddany kwarantannie</li>
 <li>Usuń: zasób został usunięty</li>
@@ -980,11 +979,11 @@ UACUser</dt>
 <li>Blokuj: wykonanie zasobu zostało zablokowane</li>
 </ul>
 </dt>
-<dt>Stan akcji: &lt; Opis dodatkowych akcji&gt;</dt> 
-<dt>Kod błędu: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
+<dt>Stan akcji: &lt; Opis dodatkowych akcji&gt;</dt>
+<dt>Kod błędu: &lt;kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt> 
-<dt>Wersja podpisu: &lt; &gt;Wersja</dt> 
-<dt>definicjiInne wersja: &lt;Antimalware Engine wersja&gt;</dt> UWAGA: Zawsze, gdy Program antywirusowy Microsoft Defender, Microsoft Security Essentials, Narzędzie do usuwania złośliwego oprogramowania lub System Center Endpoint Protection wykrywa złośliwe oprogramowanie, przywróci następujące ustawienia systemowe i usługi, które mogły ulec zmianie przez złośliwe oprogramowanie:<ul>
+<dt>Wersja podpisu: &lt; Wersja definicji&gt;</dt>
+<dt>Aparatu: &lt;wersja Antimalware Engine&gt;</dt> UWAGA: Zawsze, gdy Program antywirusowy Microsoft Defender, Microsoft Security Essentials, Narzędzie do usuwania złośliwego oprogramowania lub System Center Endpoint Protection wykrywa złośliwe oprogramowanie, przywróci następujące ustawienia systemowe i usługi, które mogły ulec zmianie przez złośliwe oprogramowanie:<ul>
 <li>Domyślne ustawienie programu Internet Explorer lub Microsoft Edge</li>
 <li>Ustawienia Access Control użytkownika</li>
 <li>Ustawienia przeglądarki Chrome</li>
@@ -1051,9 +1050,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender napotkał błąd niekrytyczny podczas podejmowania działań dotyczących złośliwego oprogramowania lub innego potencjalnie niechcianego oprogramowania.<br/>Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -1061,8 +1060,8 @@ Program antywirusowy Microsoft Defender napotkał błąd niekrytyczny podczas po
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; File pathDetection&gt;</dt>
-<dt> Origin: &lt;Wykrywanie źródła&gt;, na przykład:
+<dt>Ścieżka: &lt; Źródło wykrywania ścieżki&gt;</dt>
+<dt>pliku: &lt;źródło&gt; wykrywania, na przykład:
 <ul>
 <li>Unknown</li>
 <li>Komputer lokalny</li>
@@ -1089,10 +1088,10 @@ Program antywirusowy Microsoft Defender napotkał błąd niekrytyczny podczas po
 <li>Wczesna ochrona przed złośliwym kodem (ELAM). Obejmuje to złośliwe oprogramowanie wykryte przez sekwencję rozruchu</li>
 <li>Zdalne zaświadczanie</li>
 </ul>Interfejs skanowania oprogramowania chroniącego przed złośliwym kodem (AMSI). Służy głównie do ochrony skryptów (PowerShell, VBS), choć może być wywoływany przez inne firmy, jak również.
-UACUser</dt>
-<dt>: &lt;Domainlt&gt;\&; UserProcess&gt;</dt> 
-<dt>Name: &lt;Process in the PIDAction&gt;</dt>
-<dt>: &lt;Action&gt;, na przykład:<ul>
+Użytkownik funkcji UAC</dt>
+<dt>: &lt;Domena&gt;\&lt; Nazwa procesu użytkownika&gt;</dt>
+<dt>: &lt;proces w akcji PID&gt;</dt>
+<dt>: &lt;akcja&gt;, na przykład:<ul>
 <li>Czyszczenie: zasób został oczyszczony</li>
 <li>Kwarantanna: zasób został poddany kwarantannie</li>
 <li>Usuń: zasób został usunięty</li>
@@ -1102,11 +1101,11 @@ UACUser</dt>
 <li>Blokuj: wykonanie zasobu zostało zablokowane</li>
 </ul>
 </dt>
-<dt>Stan akcji: &lt; Opis dodatkowych akcji&gt;</dt> 
-<dt>Kod błędu: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
+<dt>Stan akcji: &lt; Opis dodatkowych akcji&gt;</dt>
+<dt>Kod błędu: &lt;kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt> 
-<dt>Wersja podpisu: &lt; &gt;Wersja</dt> 
-<dt>definicjiInnezyna wersja: &lt;wersja&gt; Antimalware Engine</dt>
+<dt>Wersja podpisu: &lt; Wersja definicji&gt;</dt>
+<dt>aparatu: &lt;wersja&gt; Antimalware Engine</dt>
 </dl>
 </td>
 </tr>
@@ -1143,9 +1142,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender napotkał błąd krytyczny podczas podejmowania działań dotyczących złośliwego oprogramowania lub innego potencjalnie niechcianego oprogramowania.<br/>Aby uzyskać więcej informacji, zobacz następujące artykuły:
 <dl>
-<dt>Nazwa: &lt; Nazwa&gt;</dt> 
-<dt>zagrożeniaID: &lt;Threat IDSeverity&gt;</dt>
-<dt>: &lt;Ważność&gt;, na przykład:<ul>
+<dt>Nazwa: &lt; Identyfikator nazwy&gt;zagrożenia</dt>
+<dt>: &lt;Ważność identyfikatora&gt;</dt>
+<dt>zagrożenia: &lt;ważność&gt;, na przykład:<ul>
 <li>Niskie</li>
 <li>Umiarkowane</li>
 <li>High (Wysoki)</li>
@@ -1153,8 +1152,8 @@ Program antywirusowy Microsoft Defender napotkał błąd krytyczny podczas podej
 </ul>
 </dt>
 <dt>Kategorii: &lt; Opis&gt; kategorii, na przykład dowolny typ zagrożenia lub złośliwego oprogramowania.</dt> 
-<dt>Ścieżka: &lt; File pathDetection&gt;</dt>
-<dt> Origin: &lt;Wykrywanie źródła&gt;, na przykład:
+<dt>Ścieżka: &lt; Źródło wykrywania ścieżki&gt;</dt>
+<dt>pliku: &lt;źródło&gt; wykrywania, na przykład:
 <ul>
 <li>Unknown</li>
 <li>Komputer lokalny</li>
@@ -1181,10 +1180,10 @@ Program antywirusowy Microsoft Defender napotkał błąd krytyczny podczas podej
 <li>Wczesna ochrona przed złośliwym kodem (ELAM). Obejmuje to złośliwe oprogramowanie wykryte przez sekwencję rozruchu</li>
 <li>Zdalne zaświadczanie</li>
 </ul>Interfejs skanowania oprogramowania chroniącego przed złośliwym kodem (AMSI). Służy głównie do ochrony skryptów (PowerShell, VBS), choć może być wywoływany przez inne firmy, jak również.
-UACUser</dt>
-<dt>: &lt;Domainlt&gt;\&; UserProcess&gt;</dt> 
-<dt>Name: &lt;Process in the PIDAction&gt;</dt>
-<dt>: &lt;Action&gt;, na przykład:<ul>
+Użytkownik funkcji UAC</dt>
+<dt>: &lt;Domena&gt;\&lt; Nazwa procesu użytkownika&gt;</dt>
+<dt>: &lt;proces w akcji PID&gt;</dt>
+<dt>: &lt;akcja&gt;, na przykład:<ul>
 <li>Czyszczenie: zasób został oczyszczony</li>
 <li>Kwarantanna: zasób został poddany kwarantannie</li>
 <li>Usuń: zasób został usunięty</li>
@@ -1194,11 +1193,11 @@ UACUser</dt>
 <li>Blokuj: wykonanie zasobu zostało zablokowane</li>
 </ul>
 </dt>
-<dt>Stan akcji: &lt; Opis dodatkowych akcji&gt;</dt> 
-<dt>Kod błędu: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
+<dt>Stan akcji: &lt; Opis dodatkowych akcji&gt;</dt>
+<dt>Kod błędu: &lt;kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt> 
-<dt>Wersja podpisu: &lt; &gt;Wersja</dt> 
-<dt>definicjiInnezyna wersja: &lt;wersja&gt; Antimalware Engine</dt>
+<dt>Wersja podpisu: &lt; Wersja definicji&gt;</dt>
+<dt>aparatu: &lt;wersja&gt; Antimalware Engine</dt>
 </dl>
 </td>
 </tr>
@@ -1250,7 +1249,7 @@ Sprawdź, czy użytkownik ma uprawnienia dostępu do niezbędnych zasobów.
 Jeśli to zdarzenie będzie się powtarzać:<ol>
 <li>Uruchom ponownie skanowanie.</li>
 <li>Jeśli nie powiedzie się w ten sam sposób, przejdź do <a href="https://go.microsoft.com/fwlink/?LinkId=215163">witryny pomoc techniczna firmy Microsoft</a>, wprowadź numer błędu w polu <b>Wyszukiwania</b>, aby wyszukać kod błędu.</li>
-<li>Skontaktuj się z <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Pomocą techniczną firmy Microsoft</a>.
+<li>Skontaktuj się z <a href="/microsoft-365/admin/get-help-support">Pomocą techniczną firmy Microsoft</a>.
 </li>
 </ol>
 </td>
@@ -1280,8 +1279,8 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender klient działa w dobrej kondycji.
 <dl>
-<dt>Bieżąca wersja platformy: &lt; Bieżąca wersja&gt; platformy</dt> 
-<dt>Ścieżka zasobu: &lt;PathHashes&gt;</dt>
+<dt>Bieżąca wersja platformy: &lt; Bieżąca wersja&gt;platformy</dt>
+<dt>Ścieżka zasobu zagrożeń: &lt;skróty ścieżki&gt;</dt>
 <dt>: &lt;skróty&gt;</dt>
 </dl>
 </td>
@@ -1319,23 +1318,23 @@ Opis:
 Kontrolowany dostęp do folderów zablokował proces niezaufany przed potencjalnie modyfikowaniem sektorów dysków.
 <br/> Aby uzyskać więcej informacji na temat rekordu zdarzenia, zobacz następujące informacje:
 <dl>
-<dt>Eventid: &lt; EventID&gt;, na przykład: 1127Wersja</dt>
-<dt>: &lt;wersja&gt;, na przykład:</dt> 
-<dt>0Poziom: &lt;Poziom&gt;, na przykład: win:</dt>
-<dt>WarningTimeCreated: &lt;SystemTime&gt;, czas utworzenia</dt> 
-<dt>zdarzeniaEventRecordID: &lt;EventRecordID&gt;, numer indeksu zdarzenia w dzienniku zdarzeń</dt> Identyfikator 
-<dt>procesuexecution: &lt;Execution ProcessID&gt;, proces, który wygenerował zdarzenieChannel</dt>
-<dt>: &lt;kanał&gt; zdarzeń, na przykład: Microsoft- Windows-Windows Defender/</dt>
-<dt>OperationalComputer: &lt;Nazwa&gt;</dt> 
-<dt>komputeraZabezpieczenia UserID: &lt;Nazwa produktu UserIDProduct&gt; zabezpieczeń</dt>
-<dt>: &lt;nazwa&gt; produktu, na przykład: Program antywirusowy Microsoft Defender</dt> 
+<dt>Eventid: &lt; EventID&gt;, na przykład: 1127</dt>
+<dt>Wersja: &lt;Wersja&gt;, na przykład: 0</dt>
+<dt>Poziom: &lt;Poziom&gt;, na przykład: win:Warning</dt>
+<dt>TimeCreated: &lt;SystemTime&gt;, czas utworzenia zdarzeniaRecordID</dt>
+<dt>: &lt;EventRecordID&gt;, numer indeksu zdarzenia w dzienniku zdarzeń</dt>
+<dt>Identyfikator wykonywania: &lt;Identyfikator procesu&gt; wykonywania, proces, który wygenerował kanał zdarzeń</dt>
+<dt>: &lt;kanał&gt; zdarzeń, na przykład: Microsoft- Windows-Windows Defender/Komputer operacyjny</dt>
+<dt>: &lt;Nazwa&gt;komputera</dt>
+<dt>UserID zabezpieczeń: &lt;Nazwa produktu UserID&gt;zabezpieczeń</dt>
+<dt>: &lt;Nazwa&gt; produktu, na przykład: Program antywirusowy Microsoft Defender</dt> 
 <dt>W wersji produktu: &lt;wersja&gt; produktu </dt>
-<dt>Czas wykrywania: &lt;czas&gt; wykrywania, czas, kiedy cfa zablokował niezaufany</dt> 
-<dt>procesUser: &lt;Domainlt&gt;\&; UserPath&gt;</dt>
-<dt>: &lt;Nazwa&gt; urządzenia, nazwa urządzenia lub dysku, do którego uzyskano dostęp niezaufany proces w celu modyfikacjiNazwa</dt> 
-<dt>procesu: &lt;ścieżka&gt; procesu, nazwa ścieżki procesu zablokowana przez usługę CFA w celu uzyskania dostępu do urządzenia lub dysku w celu modyfikacjiZabezpieczenia</dt> 
-<dt>Intelligence Version: &lt;Security intelligence versionEngine&gt;</dt> 
-<dt>Version: &lt;Antimalware Engine version&gt;</dt>
+<dt>Czas wykrywania: &lt;czas&gt; wykrywania, czas, kiedy cfa zablokował niezaufany proces</dt>
+<dt>Użytkownik: &lt;Domena&gt;\&lt; Ścieżka użytkownika&gt;</dt>
+<dt>: &lt;nazwa&gt; urządzenia, nazwa urządzenia lub dysku, do którego uzyskano dostęp niezaufany proces w celu modyfikacji</dt>
+<dt>Nazwa procesu: &lt;ścieżka&gt; procesu, nazwa ścieżki procesu, która cfa zablokowała dostęp do urządzenia lub dysku w celu modyfikacji</dt>
+<dt>wersji analizy zabezpieczeń: &lt;Wersja&gt;aparatu analizy zabezpieczeń</dt>
+<dt>: &lt;wersja Antimalware Engine&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -1372,9 +1371,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender klient działa w dobrej kondycji.
 <dl>
-<dt>Wersja platformy: &lt; Bieżąca wersja&gt;</dt> 
-<dt>platformySignature Version: &lt;Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;Antimalware Engine version&gt;</dt>
+<dt>Wersja platformy: &lt; Wersja podpisu bieżącej&gt;platformy</dt>
+<dt>: &lt;wersja&gt;definicji</dt>
+<dt>Wersja aparatu: &lt;wersja Antimalware Engine&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -1412,29 +1411,29 @@ Opis:
 <td >
 Raport kondycji klienta programu antywirusowego.
 <dl>
-<dt>Wersja platformy: &lt; Bieżąca wersja&gt;</dt> 
-<dt>platformyInformacje wersji: &lt;Antimalware Engine wersjaSieć&gt;</dt> 
-<dt>aparatu inspekcji czasu rzeczywistegoSieć sieciowa &lt;wersja&gt; aparatu inspekcji w czasie rzeczywistym</dt> 
-<dt>Wersja podpisu Programu antywirusowego: &lt;wersja sygnatury antywirusowej&gt;</dt> 
-<dt>Wersja sygnatury oprogramowania antywirusowego: &lt;Wersja sygnatury antyszpiegowskiejSieć&gt; sygnatury</dt> czasu 
-<dt>rzeczywistegoSieć sieciowa wersja podpisu inspekcji: &lt; Network Realtime Inspection signature versionRTP&gt;</dt> 
-<dt>state: &lt;Realtime protection state&gt; (Enabled or Disabled)</dt>
-<dt>OA state: &lt;On Access state&gt; (Enabled or Disabled)</dt>
-<dt>IOAV state: &lt;IE Downloads and Outlook Express Attachments state&gt; (Enabled or Disabled)</dt>
-<dt>BM state: &lt;Behavior Monitoring state&gt; (Enabled or Disabled)</dt>
-<dt>Antivirus signature age: Antivirus signature age&gt; (&lt;Wiek podpisu antywirusowego)  (w dniach)</dt> 
+<dt>Wersja platformy: &lt; Bieżąca wersja&gt;platformy</dt>
+<dt>Wersja aparatu: &lt;wersja Antimalware Engine&gt;</dt>
+<dt>wersja Aparatu inspekcji w czasie rzeczywistym sieci: &lt;Wersja sygnatury programu antywirusowego w wersji aparatu&gt;inspekcji w czasie rzeczywistym sieci</dt>
+<dt>: &lt;Wersja podpisu antywirusowego&gt;</dt>
+<dt>Wersja podpisu oprogramowania antywirusowego: &lt;Wersja sygnatury antyszpiegowskiej&gt;Wersja sygnatury</dt>
+<dt>sieciowej Inspekcja w czasie rzeczywistym: &lt; Stan rtp sygnatury&gt;inspekcji w czasie</dt> rzeczywistym 
+<dt>sieci: &lt;stan&gt; ochrony w czasie rzeczywistym (włączone lub wyłączone)</dt>
+<dt>Stan OA: &lt;Stan dostępu&gt; (włączone lub wyłączone)</dt>
+<dt>Stan IOAV: &lt;Pliki do pobrania i Outlook stan&gt; załączników ekspresowych (włączone lub wyłączone)</dt>
+<dt>Stan BM: &lt;Stan&gt; monitorowania zachowania (włączone lub wyłączone)</dt>
+<dt>Wiek podpisu programu antywirusowego: &lt;wiek&gt; podpisu antywirusowego  (w dniach)</dt> 
 <dt>Wiek podpisu oprogramowania chroniącego przed złośliwym oprogramowaniem: &lt; Wiek&gt; podpisu oprogramowania chroniącego przed złośliwym oprogramowaniem (w dniach)</dt>
 <dt>Ostatni szybki wiek skanowania: &lt;Wiek ostatniego szybkiego skanowania&gt; (w dniach)</dt>
 <dt>Ostatni pełny wiek skanowania: &lt;Ostatni pełny wiek&gt; skanowania (w dniach)</dt>
-<dt>Czas tworzenia podpisu programu antywirusowego: ?&lt; Czas&gt; tworzenia sygnatury</dt> 
-<dt>antywirusowejSygnatura oprogramowania antywirusowegoSygnatura oprogramowania antywirusowego: ?&lt; Czas tworzenia sygnatury oprogramowania chroniącego przed złośliwym oprogramowaniemSkład&gt;</dt> 
-<dt>czasu rozpoczęcia szybkiego skanowania: ?&lt; Czas rozpoczęcia&gt; ostatniego szybkiego</dt> 
-<dt>skanowaniaSkład czasu zakończenia szybkiego skanowania: ?&lt; Czas zakończenia&gt; ostatniego szybkiego</dt> 
-<dt>skanowaniaSadowe źródło szybkiego skanowania: &lt;Ostatnie szybkie źródło&gt; skanowania (0 = skanowanie nie zostało uruchomione, 1 = zainicjowano użytkownika, 2 = zainicjowano system)</dt>
-<dt>Czas ostatniego pełnego skanowania: ?&lt; Czas rozpoczęcia&gt; ostatniego pełnego</dt> 
-<dt>skanowaniaSkład czasu zakończenia pełnego skanowania: ?&lt; Czas zakończenia&gt; ostatniego pełnego</dt> 
-<dt>skanowaniaZdaj pełne źródło skanowania: &lt;Ostatnie pełne źródło&gt; skanowania (0 = skanowanie nie zostało uruchomione, 1 = zainicjowane przez użytkownika, 2 = zainicjowane przez system)</dt>
-<dt>Stan produktu: Na potrzeby wewnętrznego rozwiązywania problemów
+<dt>Czas tworzenia podpisu programu antywirusowego: ?&lt; Czas tworzenia sygnatury antywirusowej Czas&gt;</dt>
+<dt>tworzenia sygnatury antyszpiegowskiej: ?&lt; Czas tworzenia podpisu oprogramowania chroniącego przed złośliwym oprogramowaniem&gt;</dt>
+<dt>Czas rozpoczęcia ostatniego szybkiego skanowania: ?&lt; Czas rozpoczęcia&gt;ostatniego szybkiego skanowania</dt>
+<dt>Czas zakończenia ostatniego szybkiego skanowania: ?&lt; Czas zakończenia&gt;ostatniego szybkiego skanowania</dt>
+<dt>Ostatnie źródło szybkiego skanowania: &lt;Ostatnie szybkie źródło&gt; skanowania (0 = skanowanie nie zostało uruchomione, 1 = zainicjowane przez użytkownika, 2 = zainicjowane przez system)</dt>
+<dt>Ostatni pełny czas rozpoczęcia skanowania: ?&lt; Czas rozpoczęcia&gt;ostatniego pełnego skanowania</dt>
+<dt>Czas zakończenia ostatniego pełnego skanowania: ?&lt; Ostatni pełny czas&gt;zakończenia skanowania</dt>
+<dt>Ostatnie pełne źródło skanowania: &lt;Ostatnie pełne źródło&gt; skanowania (0 = skanowanie nie zostało uruchomione, 1 = zainicjowane przez użytkownika, 2 = zainicjowane przez system)</dt>
+<dt>Stan produktu: Na potrzeby rozwiązywania problemów wewnętrznych
 </dl>
 </td>
 </tr>
@@ -1464,9 +1463,9 @@ Opis:
 <td >
 Zaktualizowano wersję sygnatury programu antywirusowego.
 <dl>
-<dt>Bieżąca wersja podpisu: &lt; Bieżąca wersja&gt;</dt> 
-<dt>podpisuPrevious Signature Version: &lt;Poprzednie wersje&gt;</dt>
-<dt> podpisuTyp podpisu: &lt;typ&gt; podpisu, na przykład: <ul>
+<dt>Bieżąca wersja podpisu: &lt; Bieżąca wersja&gt;podpisu</dt>
+<dt>Poprzednia wersja podpisu: &lt;Poprzednia wersja&gt;</dt>
+<dt>podpisu Typ podpisu: &lt;typ&gt; podpisu, na przykład: <ul>
 <li>Antivirus</li>
 <li>Antyspyware</li>
 <li>Antimalware</li>
@@ -1474,9 +1473,9 @@ Zaktualizowano wersję sygnatury programu antywirusowego.
 </ul>
 </dt>
 <dt>Typ aktualizacji: &lt; Typ&gt; aktualizacji— pełny lub delta.</dt> 
-<dt>Użytkownika: &lt; Domainlt&gt;\&; UserCurrent&gt;</dt> 
-<dt>Engine Version: &lt;Bieżąca wersja&gt;</dt> 
-<dt>aparatuPrevious Engine Version: &lt;Poprzednia wersja&gt; aparatu</dt>
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Bieżąca wersja aparatu użytkownika&gt;</dt>
+<dt>: &lt;bieżąca wersja&gt;aparatu</dt>
+<dt>Poprzednia wersja aparatu: &lt;poprzednia wersja&gt; aparatu</dt>
 </dl>
 </td>
 </tr>
@@ -1513,9 +1512,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender napotkał błąd podczas próby zaktualizowania sygnatur.
 <dl>
-<dt>Nowa wersja analizy zabezpieczeń: &lt; Nowy numer&gt;</dt> 
-<dt>wersjiPrevious security intelligence version: &lt;Previous versionUpdate&gt;</dt>
-<dt> Source: &lt;Update source&gt;, na przykład:
+<dt>Nowa wersja analizy zabezpieczeń: &lt; Nowy numer&gt;wersji</dt>
+<dt>Poprzednia wersja analizy zabezpieczeń: &lt;Poprzednia wersja&gt;</dt>
+<dt>Źródło aktualizacji: &lt;Źródło&gt; aktualizacji, na przykład:
 <ul>
 <li>Folder aktualizacji analizy zabezpieczeń</li>
 <li>Wewnętrzny serwer aktualizacji analizy zabezpieczeń</li>
@@ -1540,10 +1539,10 @@ Program antywirusowy Microsoft Defender napotkał błąd podczas próby zaktuali
 </ul>
 </dt>
 <dt>Typ aktualizacji: &lt; Typ&gt; aktualizacji— pełny lub delta.</dt> 
-<dt>Użytkownika: &lt; Domainlt&gt;\&; UserCurrent&gt;</dt> 
-<dt>Engine Version: &lt;Current engine versionPrevious&gt;</dt> Engine Version: Previous engine versionError Code: Error code Result code associated with threat status (Wersja 
-<dt>aparatu: &lt;Poprzednia wersja&gt; aparatu</dt> 
-<dt>Kod: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia). Standardowe wartości HRESULT.</dt> 
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Bieżąca wersja aparatu użytkownika&gt;</dt>
+<dt>: &lt;bieżąca wersja aparatu Poprzednia wersja&gt;</dt>
+<dt>aparatu: &lt;Poprzednia wersja&gt;aparatu</dt>
+<dt>Kod błędu: &lt;Kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt>
 </dl>
 </td>
@@ -1558,7 +1557,7 @@ Aby rozwiązać ten problem:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Zaktualizuj definicje</a> i wymuś ponowne skanowanie bezpośrednio w punkcie końcowym.</li>
 <li>Przejrzyj wpisy w pliku %Windir%\WindowsUpdate.log, aby uzyskać więcej informacji na temat tego błędu.</li>
-<li>Skontaktuj się z <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Pomocą techniczną firmy Microsoft</a>.
+<li>Skontaktuj się z <a href="/microsoft-365/admin/get-help-support">Pomocą techniczną firmy Microsoft</a>.
 </li>
 </ol>
 </td>
@@ -1588,10 +1587,10 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender wersja aparatu została zaktualizowana.
 <dl>
-<dt>Bieżąca wersja aparatu: &lt; Bieżąca wersja aparatuPrevious Engine Version: Previous engine versionEngine Type: Engine type, or antimalware engine or Network Inspection System engine ( Bieżąca wersja&gt; aparatu</dt> aparatu
-<dt>: &lt;Poprzednia wersja&gt; aparatu</dt>
-<dt>: &lt;Typ&gt; aparatu, aparat ochrony przed złośliwym kodem lub aparat systemu inspekcji sieciowej).</dt> 
-<dt>Użytkownika: &lt; Domainlt&gt;\&; Użytkownika&gt;</dt>
+<dt>Bieżąca wersja aparatu: &lt; Bieżąca wersja aparatu Poprzednia wersja&gt;</dt>
+<dt>aparatu: &lt;Poprzednia wersja&gt;aparatu</dt>
+<dt>Typ aparatu: &lt;Typ&gt; aparatu, aparat chroniący przed złośliwym kodem lub aparat systemu inspekcji sieci.</dt> 
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Użytkownika&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -1629,10 +1628,10 @@ Opis:
 Program antywirusowy Microsoft Defender napotkał błąd podczas próby zaktualizowania aparatu.
 <dl>
 <dt>Nowa wersja aparatu:</dt>
-<dt>Poprzednia wersja aparatu: &lt;Poprzednia wersja&gt; aparatuTyp aparatu</dt>
-<dt>: &lt;typ&gt; aparatu, aparat ochrony przed złośliwym kodem lub aparat systemu inspekcji sieci.</dt> 
-<dt>Użytkownika: &lt; Domainlt&gt;\&; UserError&gt;</dt> 
-<dt>Code: &lt;Kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
+<dt>Poprzednia wersja aparatu: &lt;Poprzednia wersja&gt;aparatu</dt>
+<dt>Typ aparatu: &lt;Typ&gt; aparatu, aparat chroniący przed złośliwym kodem lub aparat systemu inspekcji sieci.</dt> 
+<dt>Użytkownika: &lt; Domena&gt;\&lt; Kod błędu użytkownika&gt;</dt>
+<dt>: &lt;kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt>
 </dl>
 </td>
@@ -1646,7 +1645,7 @@ Aktualizacja klienta Program antywirusowy Microsoft Defender nie powiodła się.
 Aby rozwiązać ten problem:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Zaktualizuj definicje</a> i wymuś ponowne skanowanie bezpośrednio w punkcie końcowym.</li>
-<li>Skontaktuj się z <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Pomocą techniczną firmy Microsoft</a>.
+<li>Skontaktuj się z <a href="/microsoft-365/admin/get-help-support">Pomocą techniczną firmy Microsoft</a>.
 </li>
 </ol>
 </td>
@@ -1679,8 +1678,8 @@ Program antywirusowy Microsoft Defender napotkał błąd podczas próby załadow
 <dt>Próbowano sygnatur:</dt>
 <dt>Kod błędu: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt> 
-<dt>Wersja podpisu: &lt; Definition versionEngine&gt;</dt> 
-<dt>Version: &lt;Wersja&gt; aparatu ochrony przed złośliwym kodem</dt>
+<dt>Wersja podpisu: &lt; &gt;Wersja definicji</dt>
+<dt>aparatu: &lt;wersja&gt; aparatu ochrony przed złośliwym kodem</dt>
 </dl>
 </td>
 </tr>
@@ -1696,7 +1695,7 @@ Aby rozwiązać ten problem:
 <li>Pobierz najnowsze definicje z <a href="https://aka.ms/wdsi">witryny Microsoft Security Intelligence</a>.
 Uwaga: rozmiar pliku definicji pobranego z witryny może przekraczać 60 MB i nie powinien być używany jako długoterminowe rozwiązanie do aktualizowania definicji.
 </li>
-<li>Skontaktuj się z <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Pomocą techniczną firmy Microsoft</a>.
+<li>Skontaktuj się z <a href="/microsoft-365/admin/get-help-support">Pomocą techniczną firmy Microsoft</a>.
 </li>
 </ol>
 </td>
@@ -1755,8 +1754,8 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender napotkał błąd podczas próby zaktualizowania platformy.
 <dl>
-<dt>Bieżąca wersja platformy: &lt; Bieżąca wersja&gt; platformy</dt> 
-<dt>Kod błędu: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
+<dt>Bieżąca wersja platformy: &lt; Kod błędu bieżącej wersji&gt;platformy</dt>
+<dt>: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt>
 </dl>
 </td>
@@ -1815,16 +1814,16 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender użyć <i>usługi podpisu dynamicznego</i> do pobrania dodatkowych podpisów w celu ochrony maszyny.
 <dl>
-<dt>Bieżąca wersja podpisu: &lt; Bieżąca wersja&gt;</dt>
-<dt> podpisuTyp podpisu: &lt;typ&gt; podpisu, na przykład: <ul>
+<dt>Bieżąca wersja podpisu: &lt; Typ podpisu bieżącej wersji&gt;</dt>
+<dt>podpisu: &lt;typ&gt; podpisu, na przykład: <ul>
 <li>Antivirus</li>
 <li>Antyspyware</li>
 <li>Antimalware</li>
 <li>System inspekcji sieci</li>
 </ul>
 </dt>
-<dt>Bieżąca wersja aparatu: &lt; Bieżąca wersja&gt;</dt>
-<dt> aparatuTyp podpisu dynamicznego: &lt;typ&gt; podpisu dynamicznego, na przykład:
+<dt>Bieżąca wersja aparatu: &lt; Typ podpisu dynamicznego bieżącej wersji&gt;</dt>
+<dt>aparatu: &lt;typ podpisu dynamicznego&gt;, na przykład:
 <ul>
 <li>Wersja</li>
 <li>Sygnatury czasowej</li>
@@ -1832,10 +1831,10 @@ Program antywirusowy Microsoft Defender użyć <i>usługi podpisu dynamicznego</
 <li>Długość</li>
 </ul>
 </dt>
-<dt>Ścieżka trwałości: &lt; PathDynamic&gt;</dt> 
-<dt>Signature Version: &lt;Version numberDynamic&gt;</dt> 
-<dt>Signature Compilation Timestamp: &lt;TimestampPersistence&gt;</dt>
-<dt> Limit Type: &lt;Persistence limit type&gt;, na przykład:
+<dt>Ścieżka trwałości: &lt; Wersja podpisu dynamicznego ścieżki&gt;</dt>
+<dt>: &lt;numer&gt;wersji</dt>
+<dt>Sygnatura czasowa kompilacji podpisu dynamicznego: &lt;Typ limitu trwałości sygnatury czasowej&gt;</dt>
+<dt>: &lt;typ&gt; limitu trwałości, na przykład:
 <ul>
 <li>Wersja maszyny wirtualnej</li>
 <li>Sygnatury czasowej</li>
@@ -1871,16 +1870,16 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender <i>używana usługa podpisu dynamicznego</i> do odrzucania przestarzałych podpisów.
 <dl>
-<dt>Bieżąca wersja podpisu: &lt; Bieżąca wersja&gt;</dt>
-<dt> podpisuTyp podpisu: &lt;typ&gt; podpisu, na przykład: <ul>
+<dt>Bieżąca wersja podpisu: &lt; Typ podpisu bieżącej wersji&gt;</dt>
+<dt>podpisu: &lt;typ&gt; podpisu, na przykład: <ul>
 <li>Antivirus</li>
 <li>Antyspyware</li>
 <li>Antimalware</li>
 <li>System inspekcji sieci</li>
 </ul>
 </dt>
-<dt>Bieżąca wersja aparatu: &lt; Bieżąca wersja&gt;</dt>
-<dt> aparatuTyp podpisu dynamicznego: &lt;typ&gt; podpisu dynamicznego, na przykład:
+<dt>Bieżąca wersja aparatu: &lt; Typ podpisu dynamicznego bieżącej wersji&gt;</dt>
+<dt>aparatu: &lt;typ podpisu dynamicznego&gt;, na przykład:
 <ul>
 <li>Wersja</li>
 <li>Sygnatury czasowej</li>
@@ -1888,11 +1887,11 @@ Program antywirusowy Microsoft Defender <i>używana usługa podpisu dynamicznego
 <li>Długość</li>
 </ul>
 </dt>
-<dt>Ścieżka trwałości: &lt; PathDynamic&gt;</dt> 
-<dt>Signature Version: &lt;Version numberDynamic&gt;</dt> 
-<dt>Signature Compilation Timestamp: &lt;TimestampRemoval&gt;</dt> 
-<dt>Reason:</dt>
-<dt>Persistence Limit Type: &lt;Persistence limit type&gt;, na przykład:
+<dt>Ścieżka trwałości: &lt; Wersja podpisu dynamicznego ścieżki&gt;</dt>
+<dt>: &lt;numer wersji&gt;</dt>
+<dt>Sygnatura czasowa kompilacji podpisu dynamicznego: &lt;Przyczyna usunięcia sygnatury&gt;czasowej</dt>
+<dt>:</dt>
+<dt>Typ limitu trwałości: &lt;typ&gt; limitu trwałości, na przykład:
 <ul>
 <li>Wersja maszyny wirtualnej</li>
 <li>Sygnatury czasowej</li>
@@ -1936,16 +1935,16 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender napotkał błąd podczas próby użycia <i>usługi podpisu dynamicznego</i>.
 <dl>
-<dt>Bieżąca wersja podpisu: &lt; Bieżąca wersja&gt;</dt>
-<dt> podpisuTyp podpisu: &lt;typ&gt; podpisu, na przykład: <ul>
+<dt>Bieżąca wersja podpisu: &lt; Typ podpisu bieżącej wersji&gt;</dt>
+<dt>podpisu: &lt;typ&gt; podpisu, na przykład: <ul>
 <li>Antivirus</li>
 <li>Antyspyware</li>
 <li>Antimalware</li>
 <li>System inspekcji sieci</li>
 </ul>
 </dt>
-<dt>Bieżąca wersja aparatu: &lt; Bieżąca wersja&gt;</dt> 
-<dt>aparatuKod błędu: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
+<dt>Bieżąca wersja aparatu: &lt; Kod błędu bieżącej wersji&gt;aparatu</dt>
+<dt>: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt>
 <dt> Typ podpisu dynamicznego: &lt;typ podpisu dynamicznego&gt;, na przykład:
 <ul>
@@ -1955,10 +1954,10 @@ Program antywirusowy Microsoft Defender napotkał błąd podczas próby użycia 
 <li>Długość</li>
 </ul>
 </dt>
-<dt>Ścieżka trwałości: &lt; PathDynamic&gt;</dt> 
-<dt>Signature Version: &lt;Version numberDynamic&gt;</dt> 
-<dt>Signature Compilation Timestamp: &lt;TimestampPersistence&gt;</dt>
-<dt> Limit Type: &lt;Persistence limit type&gt;, na przykład:
+<dt>Ścieżka trwałości: &lt; Wersja podpisu dynamicznego ścieżki&gt;</dt>
+<dt>: &lt;numer&gt;wersji</dt>
+<dt>Sygnatura czasowa kompilacji podpisu dynamicznego: &lt;Typ limitu trwałości sygnatury czasowej&gt;</dt>
+<dt>: &lt;typ&gt; limitu trwałości, na przykład:
 <ul>
 <li>Wersja maszyny wirtualnej</li>
 <li>Sygnatury czasowej</li>
@@ -2032,8 +2031,8 @@ Opis:
 Program antywirusowy Microsoft Defender pobrany czysty plik.
 <dl>
 <dt>Pod nazwą: &lt; Nazwa&gt; pliku.</dt> 
-<dt>Bieżąca wersja podpisu: &lt; Bieżąca wersja&gt;</dt> 
-<dt>sygnaturyBieżna wersja aparatu: &lt;bieżąca wersja&gt; aparatu</dt>
+<dt>Bieżąca wersja podpisu: &lt; Bieżąca wersja&gt;</dt>
+<dt>podpisu Bieżąca wersja aparatu: &lt;bieżąca wersja&gt; aparatu</dt>
 </dl>
 </td>
 </tr>
@@ -2063,9 +2062,9 @@ Opis:
 Program antywirusowy Microsoft Defender napotkał błąd podczas próby pobrania czystego pliku.
 <dl>
 <dt>Pod nazwą: &lt; Nazwa&gt; pliku.</dt> 
-<dt>Bieżąca wersja podpisu: &lt; Bieżąca wersja&gt;</dt> 
-<dt>sygnaturyWersja aparatu współbieżnego: &lt;Bieżąca wersja&gt;</dt> 
-<dt>aparatuKod błędu: &lt;kod&gt; błędu Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
+<dt>Bieżąca wersja podpisu: &lt; Bieżąca wersja podpisu Bieżąca wersja&gt;</dt>
+<dt>aparatu: &lt;Bieżąca wersja&gt;aparatu</dt>
+<dt>Kod błędu: &lt;Kod błędu&gt; Kod wyniku skojarzony ze stanem zagrożenia. Standardowe wartości HRESULT.</dt> 
 <dt>Opis błędu: &lt; Opis&gt; błędu Opis błędu. </dt>
 </dl>
 </td>
@@ -2304,7 +2303,7 @@ Program antywirusowy Microsoft Defender ochrona w czasie rzeczywistym ponownie u
 Akcja użytkownika:
 </td>
 <td >
-Funkcja ochrony w czasie rzeczywistym została ponownie uruchomiona. Jeśli to zdarzenie wystąpi ponownie, skontaktuj się z <a href="https://go.microsoft.com/fwlink/?LinkId=215491">pomocą techniczną firmy Microsoft</a>.
+Funkcja ochrony w czasie rzeczywistym została ponownie uruchomiona. Jeśli to zdarzenie wystąpi ponownie, skontaktuj się z <a href="/microsoft-365/admin/get-help-support">pomocą techniczną firmy Microsoft</a>.
 </td>
 </tr>
 <tr>
@@ -2451,9 +2450,9 @@ Opis:
 <td >
 Program antywirusowy Microsoft Defender aparat został zakończony z powodu nieoczekiwanego błędu.
 <dl>
-<dt>Typ błędu: &lt; Typ&gt; błędu, na przykład: Crash lub</dt> 
-<dt>HangException Code: &lt;Error codeResource&gt;</dt>
-<dt>: &lt;Resource&gt;</dt>
+<dt>Typ błędu: &lt; Typ błędu, na przykład: Crash or Hang Exception Code: Error code Resource: Resource (Typ błędu), na przykład: Crash or Hang Exception Code: Error code Resource: Resource (Kod&gt;</dt> błędu 
+<dt>Zasób: zasób&gt;) &lt;</dt>
+<dt>&gt;&lt;</dt>
 </dl>
 </td>
 </tr>
@@ -2469,7 +2468,7 @@ Aby rozwiązać ten problem:<ol>
 </li>
 </ul>
 </li>
-<li>Jeśli nie powiedzie się w ten sam sposób, wyszukaj kod błędu, uzyskując dostęp do <a href="https://go.microsoft.com/fwlink/?LinkId=215163">witryny pomoc techniczna firmy Microsoft</a> i wprowadzając numer błędu w polu <b>Wyszukaj</b>, a następnie skontaktuj się z <a href="https://go.microsoft.com/fwlink/?LinkId=215491">pomocą techniczną firmy Microsoft</a>.</li>
+<li>Jeśli nie powiedzie się w ten sam sposób, wyszukaj kod błędu, uzyskując dostęp do <a href="https://go.microsoft.com/fwlink/?LinkId=215163">witryny pomoc techniczna firmy Microsoft</a> i wprowadzając numer błędu w polu <b>Wyszukaj</b>, a następnie skontaktuj się z <a href="/microsoft-365/admin/get-help-support">pomocą techniczną firmy Microsoft</a>.</li>
 </ol>
 </td>
 </tr>
@@ -2483,7 +2482,7 @@ Aby rozwiązać ten problem:
 <ol>
 <li>Uruchom ponownie skanowanie.</li>
 <li>Jeśli nie powiedzie się w ten sam sposób, przejdź do <a href="https://go.microsoft.com/fwlink/?LinkId=215163">witryny pomoc techniczna firmy Microsoft</a>, wprowadź numer błędu w polu <b>Wyszukiwania</b>, aby wyszukać kod błędu.</li>
-<li>Skontaktuj się z <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Pomocą techniczną firmy Microsoft</a>.
+<li>Skontaktuj się z <a href="/microsoft-365/admin/get-help-support">Pomocą techniczną firmy Microsoft</a>.
 </li>
 </ol>
 </td>

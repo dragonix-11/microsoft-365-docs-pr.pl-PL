@@ -18,16 +18,16 @@ description: Dowiedz się, jak rozpoznawać i korygować Outlook reguły i niest
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10cbb57018cb0e7c30282ca2c89b6a8dab812e24
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 268e50059ad1b128e583a5be383788b545fa6190
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131113"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874101"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Wykrywanie i korygowanie ataków na reguły Outlook i iniekcje formularzy niestandardowych
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Krótki opis** Dowiedz się, jak rozpoznawać i korygować Outlook reguły i niestandardowe ataki iniekcji formularzy w Office 365.
 
@@ -205,7 +205,7 @@ Najlepszym sposobem ochrony kont użytkowników, a zwłaszcza kont [administrato
 
   - **Nietypowe działanie personifikowane (przez użytkownika)**: te zasady profilują środowisko i wyzwalają alerty, gdy użytkownicy wykonują wiele personifikowanych działań w jednej sesji w odniesieniu do poznanego punktu odniesienia, co może wskazywać na próbę naruszenia.
 
-- Użyj narzędzia, takiego jak [Office 365 Secure Score](https://securescore.office.com/), aby zarządzać konfiguracjami i zachowaniami zabezpieczeń konta.
+- Użyj narzędzia, takiego jak [Office 365 Secure Score](/microsoft-365/security/defender/microsoft-secure-score), aby zarządzać konfiguracjami i zachowaniami zabezpieczeń konta.
 
 ### <a name="second-keep-your-outlook-clients-current"></a>Po drugie: zachowaj aktualną Outlook klientów
 

@@ -1,7 +1,7 @@
 ---
-title: Przykłady poleceń odpowiedzi na żywo
-description: Dowiedz się, jak uruchamiać podstawowe lub zaawansowane polecenia odpowiedzi na żywo dla programu Microsoft Defender dla punktu końcowego, oraz zobacz przykłady dotyczące sposobu ich działania.
-keywords: example, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
+title: Przykłady poleceń reagowania w czasie rzeczywistym
+description: Dowiedz się, jak uruchamiać podstawowe lub zaawansowane polecenia odpowiedzi na żywo dla Ochrona punktu końcowego w usłudze Microsoft Defender i zobacz przykłady sposobu ich użycia.
+keywords: przykład, polecenie, interfejs wiersza polecenia, zdalny, powłoka, połączenie, na żywo, odpowiedź, w czasie rzeczywistym, polecenie, skrypt, korygowanie, wyszukiwanie, eksport, dziennik, upuszczanie, pobieranie, plik
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,27 +14,27 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 325146ba7ed40e27c50eaca490c70d3988b1198f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 77a1bd5c9234b7a38266be55825726e683557eb4
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872392"
 ---
-# <a name="live-response-command-examples"></a>Przykłady poleceń odpowiedzi na żywo
+# <a name="live-response-command-examples"></a>Przykłady poleceń reagowania w czasie rzeczywistym
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Dowiedz się więcej o typowych poleceniach używanych w odpowiedzi na żywo i poznaj przykłady ich zwykle używanych poleceń.
+Dowiedz się więcej o typowych poleceniach używanych w odpowiedzi na żywo i zobacz przykłady dotyczące ich typów.
 
-W zależności od posiadanych ról możesz uruchamiać podstawowe lub zaawansowane polecenia odpowiedzi na żywo. Aby uzyskać więcej informacji na temat poleceń podstawowych i zaawansowanych, zobacz [Badanie jednostek na urządzeniach przy użyciu funkcji odpowiedzi na żywo](live-response.md).
+W zależności od posiadanych ról można uruchamiać podstawowe lub zaawansowane polecenia odpowiedzi na żywo. Aby uzyskać więcej informacji na temat podstawowych i zaawansowanych poleceń, zobacz [Badanie jednostek na urządzeniach przy użyciu odpowiedzi na żywo](live-response.md).
 
 ## `analyze`
 
@@ -110,16 +110,16 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> Za pomocą tego polecenia z *poziomu funkcji Live* Response nie można pobrać następujących typów plików:
+> Nie *można* pobrać następujących typów plików przy użyciu tego polecenia z poziomu odpowiedzi na żywo:
 >
-> - [Ponowne rozdęcie plików punktowych](/windows/desktop/fileio/reparse-points/)
-> - [Zarzekasz pliki](/windows/desktop/fileio/sparse-files/)
+> - [Ponowna analiza plików punktów](/windows-hardware/drivers/ifs/reparse-points)
+> - [Rozrzedzone pliki](/windows-server/administration/windows-commands/fsutil-sparse)
 > - Puste pliki
 > - Pliki wirtualne lub pliki, które nie są w pełni obecne lokalnie
 >
-> Te typy *plików są obsługiwane* przez [program PowerShell](/powershell/scripting/overview).
+> Te typy plików *są* obsługiwane przez [program PowerShell](/powershell/scripting/overview).
 >
-> Jeśli masz problemy z używaniem tego polecenia z poziomu funkcji Live Response, użyj programu PowerShell jako alternatywy.
+> Alternatywnie użyj programu PowerShell, jeśli masz problemy z użyciem tego polecenia z poziomu odpowiedzi na żywo.
 
 ## `library`
 
@@ -221,8 +221,8 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 
 > [!NOTE]
 >
-> W przypadku długich poleceń, takich jak "**run**" lub **"getfile**", możesz użyć symbolu "**&**" na końcu polecenia, aby wykonać tę akcję w tle.
-> Umożliwi to kontynuowanie badania komputera i powrót do polecenia w tle po użyciu polecenia "**fg**["](live-response.md#basic-commands).
+> W przypadku długotrwałych poleceń, takich jak "**run**" lub "**getfile**", możesz użyć symbolu "**&**" na końcu polecenia, aby wykonać tę akcję w tle.
+> Umożliwi to kontynuowanie badania maszyny i powrót do polecenia w tle po wykonaniu polecenia "**fg**" [podstawowego](live-response.md#basic-commands).
 
 ## `scheduledtask`
 

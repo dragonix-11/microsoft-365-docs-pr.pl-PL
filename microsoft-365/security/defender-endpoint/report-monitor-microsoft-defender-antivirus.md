@@ -10,23 +10,22 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c36902d6c636c726a42292d7a6e4f0cdec60edb7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 46abb6a11e1752934218a031993b10286d8ab420
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415112"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872253"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Raportuj na temat programu antywirusowego Microsoft Defender
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
 
@@ -39,16 +38,16 @@ W przypadku Program antywirusowy Microsoft Defender masz kilka opcji przeglądan
 
 Jeśli masz serwer zarządzania informacjami o zabezpieczeniach i zdarzeniami innych firm (SIEM), możesz również korzystać [z Windows Defender zdarzeń klienta](/windows/win32/events/windows-events).
 
-Windows zdarzenia obejmują kilka źródeł zdarzeń zabezpieczeń, w tym zdarzenia menedżera kont zabezpieczeń (SAM) ([rozszerzone dla Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), zobacz również temat [Inspekcja zabezpieczeń](/windows/device-security/auditing/security-auditing-overview)) i [zdarzenia Windows Defender](troubleshoot-microsoft-defender-antivirus.md).
+Windows zdarzenia obejmują kilka źródeł zdarzeń zabezpieczeń, w tym zdarzenia menedżera kont zabezpieczeń (SAM) ([rozszerzone dla Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), zobacz również temat [Inspekcja zabezpieczeń](/windows/security/threat-protection/auditing/security-auditing-overview)) i [zdarzenia Windows Defender](troubleshoot-microsoft-defender-antivirus.md).
 
 Te zdarzenia mogą być centralnie agregowane przy użyciu [modułu zbierającego zdarzenia Windows](/windows/win32/wec/windows-event-collector). Często serwery SIEM mają łączniki dla zdarzeń Windows, co umożliwia skorelowanie wszystkich zdarzeń zabezpieczeń na serwerze SIEM.
 
-Zdarzenia [złośliwego oprogramowania można również monitorować przy użyciu rozwiązania Do oceny złośliwego oprogramowania w usłudze Log Analytics](/azure/log-analytics/log-analytics-malware).
+Zdarzenia [złośliwego oprogramowania można również monitorować przy użyciu rozwiązania Do oceny złośliwego oprogramowania w usłudze Log Analytics](/security/benchmark/azure/security-control-logging-monitoring).
 
 Aby monitorować lub określać stan za pomocą programu PowerShell, WMI lub Microsoft Azure, zobacz [(Tabela opcji wdrażania, zarządzania i raportowania)](deploy-manage-report-microsoft-defender-antivirus.md#ref2).
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

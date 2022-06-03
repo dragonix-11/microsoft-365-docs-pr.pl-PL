@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 5a38ed6fbdcebf54dcd8bc34458733b5edefb850
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2000d10918c7e351c7e4bedfe8281b6a011cca9d
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872429"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi
 
@@ -49,7 +49,7 @@ W tym artykule opisano, co dzieje się z Program antywirusowy Microsoft Defender
 > [!IMPORTANT]
 > - Program antywirusowy Microsoft Defender jest dostępna na urządzeniach z systemem Windows 10 i 11, Windows Server 2022, Windows Server 2019, Windows Server, wersja 1803 lub nowsza i Windows Server 2016. 
 > - Program antywirusowy Microsoft Defender jest również dostępna w Windows Server 2012 R2 po dołączeniu przy użyciu [nowoczesnego, ujednoliconego rozwiązania](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
-> - W Windows 8.1 ochrona antywirusowa punktu końcowego na poziomie przedsiębiorstwa jest oferowana jako [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10), który jest zarządzany za pośrednictwem Microsoft Endpoint Configuration Manager.
+> - W Windows 8.1 ochrona antywirusowa punktu końcowego na poziomie przedsiębiorstwa jest oferowana jako [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), która jest zarządzana za pośrednictwem Microsoft Endpoint Configuration Manager.
 > - Windows Defender jest również oferowana dla [urządzeń konsumenckich w Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), chociaż Windows Defender nie zapewnia zarządzania na poziomie przedsiębiorstwa.
 
 ## <a name="antivirus-protection-without-defender-for-endpoint"></a>Ochrona antywirusowa bez usługi Defender dla punktu końcowego
@@ -64,9 +64,9 @@ Poniższa tabela zawiera podsumowanie oczekiwań:
 |Wersje systemu Windows|Podstawowe rozwiązanie antywirusowe/chroniące przed złośliwym kodem|stan Program antywirusowy Microsoft Defender|
 |:---|:---|:---|
 |Windows 10 <br/> Windows 11|Program antywirusowy Microsoft Defender|Tryb aktywny|
-|Windows 10 <br/> Windows 11|Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Tryb wyłączony (odbywa się automatycznie)|
-|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server, wersja 1803 lub nowsza <br/> Windows Server 2016 |Program antywirusowy Microsoft Defender|Tryb aktywny|
-|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, wersja 1803 lub nowsza <br/> Windows Server 2016  |Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Wyłączone (ustaw ręcznie) <sup>[[1](#fn1)]</sup>|
+|Windows 10 <br/> System Windows 11|Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Tryb wyłączony (odbywa się automatycznie)|
+|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server, wersja 1803 lub nowsza <br/> Windows Server 2016 <br/> Windows Server 2012 R2 |Program antywirusowy Microsoft Defender|Tryb aktywny|
+|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, wersja 1803 lub nowsza <br/> Windows Server 2016 |Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Wyłączone (ustaw ręcznie) <sup>[[1](#fn1)]</sup>|
 
 (<a id="fn1">1</a>) Na serwerze Windows, jeśli korzystasz z oprogramowania antywirusowego innego niż Microsoft, możesz odinstalować Program antywirusowy Microsoft Defender, aby zapobiec konfliktom. Jeśli urządzenie jest dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender, możesz użyć Program antywirusowy Microsoft Defender w trybie pasywnym (patrz poniżej).
 
@@ -89,8 +89,8 @@ W poniższej tabeli podsumowano stan Program antywirusowy Microsoft Defender w k
 | Wersje systemu Windows   | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem  | Dołączone do <br/> Defender dla punktu końcowego? | stan Program antywirusowy Microsoft Defender     |
 |:------|:------|:-------|:-------|
 | Windows 10 <br/> Windows 11| Program antywirusowy Microsoft Defender | Tak  | Tryb aktywny | 
-| Windows 10 <br/> Windows 11 | Program antywirusowy Microsoft Defender | Nie   | Tryb aktywny |
-| Windows 10 <br/> Windows 11  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Tak  | Tryb pasywny (automatycznie) |
+| Windows 10 <br/> System Windows 11 | Program antywirusowy Microsoft Defender | Nie   | Tryb aktywny |
+| Windows 10 <br/> System Windows 11  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Tak  | Tryb pasywny (automatycznie) |
 | Windows 10 <br/> Windows 11  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Nie   | Tryb wyłączony (automatycznie)    |
 | Windows Server 2022 <br/> Windows Server 2019 <br/>Windows Server, wersja 1803 lub nowsza  | Program antywirusowy Microsoft Defender  | Tak |         Tryb aktywny  |
 | Windows Server 2022 <br/> Windows Server 2019 <br/> Windows Server, wersja 1803 lub nowsza   | Program antywirusowy Microsoft Defender | Nie  | Tryb aktywny |
