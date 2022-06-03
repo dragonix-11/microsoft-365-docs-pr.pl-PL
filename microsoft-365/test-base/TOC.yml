@@ -20,6 +20,8 @@
           href: uploadApplication.md
     - name: Tworzenie pakietu
       href: buildpackage.md
+    - name: Klonowanie istniejącego pakietu
+      href: clonepackage.md
     - name: Wytyczne dotyczące pakietu
       href: contentguideline.md
     - name: Reguły aplikacji/testu
