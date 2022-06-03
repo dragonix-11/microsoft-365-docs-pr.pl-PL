@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak dodać poradę dotyczącą zasad do zasad ochrony przed utratą danych (DLP), aby powiadomić użytkownika, że pracuje z zawartością, która powoduje konflikt z zasadami DLP.
-ms.openlocfilehash: af3dd2181c5bd8865f02755ba4d17f1feb0514d2
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 13387890ca1096115c5c933627ae674aaad15581
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669545"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863635"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Wyślij powiadomienia e-mail i pokaż porady dotyczące zasad dla zasad DLP
 
@@ -53,7 +53,7 @@ Podczas tworzenia zasad DLP można skonfigurować powiadomienia użytkownika do 
 
 Podczas tworzenia zasad DLP można włączyć **powiadomienia użytkownika**. Gdy powiadomienia użytkowników są włączone, Microsoft 365 wysyła powiadomienia e-mail i wskazówki dotyczące zasad. Możesz dostosować, do kogo wysyłane są wiadomości e-mail z powiadomieniami, tekst wiadomości e-mail i tekst porad zasad.
 
-1. Przejdź do pozycji [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
+1. Przejdź do [portal zgodności Microsoft Purview](https://compliance.microsoft.com/permissions).
 
 2. Zaloguj się przy użyciu konta służbowego.
 
@@ -243,7 +243,10 @@ Obecnie Outlook 2013 r. i nowsze obsługuje wyświetlanie wskazówek dotyczącyc
 - Zawartość zawiera
 - Zawartość jest udostępniana
 
-Należy pamiętać, że wyjątki są uznawane za warunki, a wszystkie te warunki działają w Outlook, gdzie będą one zgodne z zawartością i wymuszają akcje ochronne dotyczące zawartości. Jednak wyświetlanie porad dotyczących zasad użytkownikom nie jest jeszcze obsługiwane. Ponadto Outlook nie obsługuje wyświetlania wskazówek dotyczących zasad dla zasad DLP stosowanych do dynamicznej grupy dystrybucyjnej.
+Należy pamiętać, że wyjątki są uznawane za warunki, a wszystkie te warunki działają w Outlook, gdzie będą one zgodne z zawartością i wymuszają akcje ochronne dotyczące zawartości. Jednak wyświetlanie porad dotyczących zasad użytkownikom nie jest jeszcze obsługiwane. 
+
+> [!NOTE]
+> Outlook nie obsługuje wyświetlania wskazówek dotyczących zasad dotyczących polies DLP, które są stosowane do dynamicznej grupy dystrybucyjnej lub grup zabezpieczeń z obsługą poczty e-mail. 
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>Porady dotyczące zasad w centrum administracyjnym Exchange a portalu Microsoft Purview Compliance
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: W przypadku urządzeń, których nie można zarządzać przy użyciu pakietu Basic Mobility and Security, należy zablokować dostęp Exchange ActiveSync aplikacji do Microsoft 365 poczty e-mail.
-ms.openlocfilehash: 450d694e83b5044efb25adb918f38a124181481f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01b89bc50fb348072873d68f52b75d721830aeb5
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435838"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863133"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Zarządzanie ustawieniami dostępu do urządzeń w usłudze Basic Mobility and Security
 
@@ -40,9 +40,9 @@ Wykonaj następujące kroki:
 
 3. Przejdź do obszaru **Ochrona przed utratą** \> danych **Zasady urządzeń** **zarządzania urządzeniami** \> i wybierz pozycję **Zarządzaj ustawieniami dostępu do urządzeń w całej organizacji**.
 
-4. Wybierz pozycję **Blokuj**.
+4. Wybierz pozycję **Dostęp**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Pole wyboru Podstawowa mobilność i zabezpieczenia blokują dostęp.":::
+    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Pole wyboru Podstawowa mobilność i zabezpieczenia blokują dostęp.":::
 
 5. Wybierz **Zapisz**.
 

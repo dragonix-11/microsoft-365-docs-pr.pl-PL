@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Chcesz rozpocząć zarządzanie danymi organizacji, ale nie wiesz, od czego zacząć? Przeczytaj niektóre wskazówki nakazowe, aby rozpocząć pracę.
-ms.openlocfilehash: 95ce0286d5ec45b5dabcbd2447bd52821f547caf
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 6fe80e32096fc4394ba15786ef378f4b7997af2b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772735"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864465"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Wprowadzenie do zarządzania cyklem życia danych
 
@@ -95,7 +95,7 @@ Jeśli masz scenariusz, który wymaga zarządzania danymi poszczególnych elemen
 
 Zapoznaj się z następującą sekcją, aby uzyskać informacje na temat dokumentacji użytkownika końcowego, aby obsługiwać przechowywanie Microsoft 365.
 
-Możliwości zarządzania cyklem życia danych dla nieaktywnych skrzynek pocztowych i importowania plików PST nie wymagają dokumentacji użytkownika końcowego, ponieważ są to tylko operacje administratora. Aby ułatwić użytkownikom zrozumienie ich archiwalnych skrzynek pocztowych i interakcję z nimi w Outlook po włączeniu tej funkcji, zobacz [Zarządzanie magazynem poczty e-mail przy użyciu skrzynek pocztowych archiwum online](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
+Możliwości zarządzania cyklem życia danych dla nieaktywnych skrzynek pocztowych i importowania plików PST nie wymagają dokumentacji użytkownika końcowego, ponieważ są to tylko operacje administratora. Aby ułatwić użytkownikom zrozumienie ich archiwalnych skrzynek pocztowych i interakcję z nimi w Outlook po włączeniu tej funkcji, zobacz [Zarządzanie magazynem poczty e-mail przy użyciu skrzynek pocztowych archiwum online](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ### <a name="end-user-documentation-for-retention-and-deletion"></a>Dokumentacja użytkownika końcowego dotycząca przechowywania i usuwania
 

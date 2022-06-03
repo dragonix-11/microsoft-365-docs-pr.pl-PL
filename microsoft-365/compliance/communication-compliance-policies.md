@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8418683577ffe3bf63fe7fe3bf4aff2ef55007f5
-ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
+ms.openlocfilehash: 44b177d0215acaa2e637aacda22db3eb16ee7168
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65249636"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864523"
 ---
 # <a name="communication-compliance-policies"></a>Zasady zgodności komunikacji
 
@@ -35,7 +35,7 @@ ms.locfileid: "65249636"
 > [!IMPORTANT]
 > Używanie programu PowerShell do tworzenia zasad zgodności komunikacji i zarządzania nimi nie jest obsługiwane. Aby utworzyć te zasady i zarządzać nimi, należy użyć mechanizmów kontroli zarządzania zasadami w [rozwiązaniu zgodności z komunikacją](https://compliance.microsoft.com/supervisoryreview).
 
-Zasady zgodności komunikacji są tworzone dla organizacji Microsoft 365 w portalu zgodności usługi Microsoft Purview. Zasady zgodności komunikacji określają, które komunikaty i użytkownicy podlegają przeglądowi w organizacji, definiują niestandardowe warunki, które muszą spełniać komunikacja, i określają, kto powinien wykonywać przeglądy. Użytkownicy przypisani do roli *Administrator zgodności komunikacji* mogą konfigurować zasady, a każdy, kto ma przypisaną tę rolę, może uzyskać dostęp do strony **zgodności komunikacji** i ustawień globalnych w portalu zgodności usługi Microsoft Purview. W razie potrzeby można wyeksportować historię modyfikacji zasad do pliku .csv (wartości rozdzielane przecinkami), który zawiera również stan alertów oczekujących na przegląd, elementy eskalowane i rozwiązane elementy. Nie można zmienić nazwy zasad i można je usunąć, gdy nie będą już potrzebne.
+Zasady zgodności komunikacji są tworzone dla organizacji Microsoft 365 w portal zgodności Microsoft Purview. Zasady zgodności komunikacji określają, które komunikaty i użytkownicy podlegają przeglądowi w organizacji, definiują niestandardowe warunki, które muszą spełniać komunikacja, i określają, kto powinien wykonywać przeglądy. Użytkownicy przypisani do roli *Administracja zgodności z komunikacją* mogą konfigurować zasady, a każdy, kto ma przypisaną tę rolę, może uzyskać dostęp do strony **Zgodność komunikacji** i ustawień globalnych w portal zgodności Microsoft Purview. W razie potrzeby można wyeksportować historię modyfikacji zasad do pliku .csv (wartości rozdzielane przecinkami), który zawiera również stan alertów oczekujących na przegląd, elementy eskalowane i rozwiązane elementy. Nie można zmienić nazwy zasad i można je usunąć, gdy nie będą już potrzebne.
 
 ## <a name="policy-templates"></a>Szablony zasad
 
@@ -53,7 +53,7 @@ Komunikacja jest skanowana co 24 godziny od momentu utworzenia zasad. Jeśli na 
 
 ## <a name="pause-a-policy-preview"></a>Wstrzymywanie zasad (wersja zapoznawcza)
 
-Po utworzeniu zasad zgodności komunikacji zasady mogą zostać tymczasowo wstrzymane w razie potrzeby. Wstrzymywanie zasad może służyć do testowania lub rozwiązywania problemów z dopasowaniami zasad lub do optymalizacji warunków zasad. Zamiast usuwać zasady w tych okolicznościach, wstrzymywanie zasad zachowuje również istniejące alerty zasad i komunikaty dla trwających badań i przeglądów. Wstrzymanie zasad uniemożliwia przeprowadzanie inspekcji i generowanie alertów dla wszystkich warunków komunikatów użytkownika zdefiniowanych w zasadach na czas wstrzymania zasad. Aby wstrzymać lub ponownie uruchomić zasady, użytkownicy muszą być członkami grupy ról *Administrator zgodności komunikacji* .
+Po utworzeniu zasad zgodności komunikacji zasady mogą zostać tymczasowo wstrzymane w razie potrzeby. Wstrzymywanie zasad może służyć do testowania lub rozwiązywania problemów z dopasowaniami zasad lub do optymalizacji warunków zasad. Zamiast usuwać zasady w tych okolicznościach, wstrzymywanie zasad zachowuje również istniejące alerty zasad i komunikaty dla trwających badań i przeglądów. Wstrzymanie zasad uniemożliwia przeprowadzanie inspekcji i generowanie alertów dla wszystkich warunków komunikatów użytkownika zdefiniowanych w zasadach na czas wstrzymania zasad. Aby wstrzymać lub ponownie uruchomić zasady, użytkownicy muszą być członkami grupy ról *Administracja zgodności z komunikacją*.
 
 Aby wstrzymać zasady, przejdź do strony **Zasady** , wybierz zasady, a następnie wybierz pozycję **Wstrzymaj zasady** na pasku narzędzi akcji. W okienku **Wstrzymaj zasady** potwierdź, że chcesz wstrzymać zasady, wybierając pozycję **Wstrzymaj**. W niektórych przypadkach wstrzymanie zasad może potrwać do 24 godzin. Po wstrzymaniu zasad alerty dotyczące komunikatów pasujących do zasad nie są tworzone. Jednak komunikaty skojarzone z alertami, które zostały utworzone przed wstrzymaniem zasad, pozostają dostępne do badania, przeglądania i korygowania.
 
@@ -76,7 +76,7 @@ W przypadku organizacji z istniejącymi zasadami zgodności z komunikacją mogą
 - **Wykrywanie i przeglądanie nieodpowiednich komunikatów dla różnych grup użytkowników**: niektóre organizacje mogą preferować tworzenie wielu zasad o tej samej konfiguracji, ale obejmują różnych użytkowników w zakresie i różnych recenzentów dla poszczególnych zasad.
 - **Podobne zasady z niewielkimi zmianami**: w przypadku zasad ze złożonymi konfiguracjami lub warunkami może to zaoszczędzić czas na utworzenie nowych zasad na podstawie podobnych zasad.
 
-Aby skopiować zasady, użytkownicy muszą być członkami grup ról *Administracja zgodności komunikacji* lub *zgodności komunikacji* . Po utworzeniu nowych zasad na podstawie istniejących zasad wyświetlenie komunikatów zgodnych z nową konfiguracją zasad może potrwać do 24 godzin.
+Aby skopiować zasady, użytkownicy muszą być członkami grup ról *Zgodność z komunikacją* lub *Zgodność z komunikacją Administracja*. Po utworzeniu nowych zasad na podstawie istniejących zasad wyświetlenie komunikatów zgodnych z nową konfiguracją zasad może potrwać do 24 godzin.
 
 Aby skopiować zasady i utworzyć nowe zasady, wykonaj następujące kroki:
 
@@ -102,24 +102,24 @@ Podczas procesu przeglądu recenzenci zgodności komunikacji mogą wykonywać ws
 
 ![Zasady komunikatów zgłoszonych przez użytkownika dotyczące zgodności z komunikacją.](../media/communication-compliance-user-reported-messages-policy.png)
 
-Komunikaty zgłaszane przez użytkownika z czatów Teams są jedynymi komunikatami przetworzonymi przez zasady komunikatów zgłaszane przez użytkownika i można modyfikować tylko przypisanych recenzentów zasad. Nie można edytować wszystkich innych właściwości zasad. Po utworzeniu zasad początkowi recenzenci przypisani do zasad są członkami grupy ról *Administratorzy zgodności komunikacji* (jeśli są wypełniani co najmniej jednym użytkownikiem) lub wszyscy członkowie grupy ról *administratora globalnego* organizacji. Twórca zasad jest losowo wybranym użytkownikiem z grupy ról *Administratorzy zgodności komunikacji* (jeśli jest wypełniony co najmniej jednym użytkownikiem) lub losowo wybranym użytkownikiem z grupy ról *administratora globalnego* w organizacji.  
+Komunikaty zgłaszane przez użytkownika z czatów Teams są jedynymi komunikatami przetworzonymi przez zasady komunikatów zgłaszane przez użytkownika i można modyfikować tylko przypisanych recenzentów zasad. Nie można edytować wszystkich innych właściwości zasad. Po utworzeniu zasad początkowi recenzenci przypisani do zasad są członkami grupy ról *Administratorzy zgodności komunikacji* (jeśli są wypełniani co najmniej jednym użytkownikiem) lub wszyscy członkowie globalnej grupy ról *Administracja* organizacji. Twórca zasad jest losowo wybranym użytkownikiem z grupy ról *Administratorzy zgodności komunikacji* (jeśli zostanie wypełniony co najmniej jednym użytkownikiem) lub losowo wybranym użytkownikiem z globalnej grupy ról *Administracja* organizacji.  
 
 Administratorzy powinni natychmiast przypisywać niestandardowych recenzentów do tych zasad odpowiednio do twojej organizacji. Mogą to być recenzenci, tacy jak Oficer zgodności, Oficer ds. ryzyka lub członkowie działu zasobów ludzkich. Aby dostosować recenzentów wiadomości czatu przesłanych jako komunikaty zgłaszane przez użytkownika, wykonaj następujące kroki:
 
-1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) przy użyciu poświadczeń dla konta administratora w organizacji Microsoft 365.
+1. Zaloguj się [do portal zgodności Microsoft Purview](https://compliance.microsoft.com/) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
 2. W portalu zgodności przejdź do pozycji **Zgodność z komunikacją**.
 3. Na karcie **Zasady** wybierz zasady *Komunikaty zgłaszane przez użytkownika* i wybierz pozycję **Edytuj**.
 4. W okienku **Monitorowanie komunikatów zgłaszanych przez użytkownika** przypisz recenzentów do zasad. Recenzenci muszą mieć skrzynki pocztowe hostowane na Exchange Online. Gdy recenzenci są dodawani do zasad, automatycznie otrzymują wiadomość e-mail z powiadomieniem o przypisaniu do zasad i udostępniają linki do informacji o procesie przeglądu.
 5. Wybierz **Zapisz**.
 
-Opcja *Zgłoś problem* jest domyślnie włączona i może być kontrolowana za pośrednictwem zasad obsługi komunikatów Teams w [centrum administracyjnym Teams](/microsoftteams/manage-teams-in-modern-portal). Użytkownicy w organizacji automatycznie otrzymają zasady globalne, chyba że utworzysz i przypiszesz zasady niestandardowe. Edytuj ustawienia w zasadach globalnych lub utwórz i przypisz co najmniej jedną zasadę niestandardową, aby włączyć lub wyłączyć *opcję Zgłoś problem* . Aby dowiedzieć się więcej, zobacz [Zarządzanie zasadami obsługi komunikatów w Teams](/microsoftteams/messaging-policies-in-teams).  
+Opcja *Zgłoś problem* jest domyślnie włączona i może być kontrolowana za pośrednictwem zasad obsługi komunikatów Teams w [centrum Teams Administracja](/microsoftteams/manage-teams-in-modern-portal). Użytkownicy w organizacji automatycznie otrzymają zasady globalne, chyba że utworzysz i przypiszesz zasady niestandardowe. Edytuj ustawienia w zasadach globalnych lub utwórz i przypisz co najmniej jedną zasadę niestandardową, aby włączyć lub wyłączyć *opcję Zgłoś problem* . Aby dowiedzieć się więcej, zobacz [Zarządzanie zasadami obsługi komunikatów w Teams](/microsoftteams/messaging-policies-in-teams).  
 
 >[!IMPORTANT]
->Jeśli używasz programu PowerShell do **włączania lub wyłączania opcji Raportowanie użytkowników końcowych** w centrum administracyjnym Teams, musisz użyć [modułu Microsoft Teams poleceń cmdlet w wersji 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) lub nowszej.
+>Jeśli używasz programu PowerShell do **włączania lub wyłączania opcji Raportowanie użytkowników końcowych** w centrum Teams Administracja, musisz użyć [modułu Microsoft Teams poleceń cmdlet w wersji 4.2.0 lub nowszej](/MicrosoftTeams/teams-powershell-release-notes).
 
 ## <a name="storage-limit-notification-preview"></a>powiadomienie o ograniczeniu Storage (wersja zapoznawcza)
 
-Każda zasada zgodności z komunikacją ma rozmiar limitu magazynu wynoszący 100 GB lub 1 milion komunikatów, w zależności od tego, która z tych wartości zostanie osiągnięta jako pierwsza. Gdy zasady zbliżają się do tych limitów, wiadomości e-mail z powiadomieniami są automatycznie wysyłane do użytkowników przypisanych do grup ról *Administrator zgodności komunikacji* lub *zgodności komunikacji* . Komunikaty powiadomień są wysyłane, gdy rozmiar magazynu lub liczba komunikatów osiągnie 80, 90 i 95 procent limitu. Po osiągnięciu limitu zasad zasady są automatycznie dezaktywowane, a zasady przestają przetwarzać komunikaty dla alertów.
+Każda zasada zgodności z komunikacją ma rozmiar limitu magazynu wynoszący 100 GB lub 1 milion komunikatów, w zależności od tego, która z tych wartości zostanie osiągnięta jako pierwsza. W miarę zbliżania się zasad do tych limitów wiadomości e-mail z powiadomieniami są automatycznie wysyłane do użytkowników przypisanych do grup ról *Zgodność komunikacji* lub *Zgodność z komunikacją Administracja*. Komunikaty powiadomień są wysyłane, gdy rozmiar magazynu lub liczba komunikatów osiągnie 80, 90 i 95 procent limitu. Po osiągnięciu limitu zasad zasady są automatycznie dezaktywowane, a zasady przestają przetwarzać komunikaty dla alertów.
 
 >[!IMPORTANT]
 >Jeśli zasady są dezaktywowane z powodu osiągnięcia limitów magazynu i komunikatów, należy ocenić sposób zarządzania dezaktywowanymi zasadami. Jeśli usuniesz zasady, wszystkie komunikaty, skojarzone załączniki i alerty komunikatów zostaną trwale usunięte. Jeśli chcesz zachować te elementy do użytku w przyszłości, nie usuwaj dezaktywowanych zasad.
@@ -146,7 +146,7 @@ Domyślnie jest wyświetlany warunek **Kierunek** i nie można go usunąć. Usta
 
 ### <a name="sensitive-information-types"></a>Typy informacji poufnych
 
-W ramach zasad zgodności komunikacji można włączyć typy informacji poufnych. Typy informacji poufnych to wstępnie zdefiniowane lub niestandardowe typy danych, które mogą pomóc w identyfikowaniu i ochronie numerów kart kredytowych, numerów kont bankowych, numerów paszportów i innych. W ramach funkcji [Dowiedz się więcej o zapobieganiu utracie danych usługi Microsoft Purview](dlp-learn-about-dlp.md) konfiguracja informacji poufnych może używać wzorców, bliskości znaków, poziomów ufności, a nawet niestandardowych typów danych, aby ułatwić identyfikowanie i oznaczanie zawartości, która może być wrażliwa. Domyślne typy informacji poufnych to:
+W ramach zasad zgodności komunikacji można włączyć typy informacji poufnych. Typy informacji poufnych to wstępnie zdefiniowane lub niestandardowe typy danych, które mogą pomóc w identyfikowaniu i ochronie numerów kart kredytowych, numerów kont bankowych, numerów paszportów i innych. W ramach funkcji [Dowiedz się więcej o Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md) konfiguracja informacji poufnych może używać wzorców, bliskości znaków, poziomów ufności, a nawet niestandardowych typów danych, aby ułatwić identyfikowanie i oznaczanie zawartości, która może być wrażliwa. Domyślne typy informacji poufnych to:
 
 - Finansowych
 - Medycyna i zdrowie
@@ -164,7 +164,7 @@ Skonfiguruj niestandardowe słowniki słów kluczowych (lub leksykony), aby zape
 
 ### <a name="classifiers"></a>Klasyfikatorów
 
-Wbudowane klasyfikatory trenujące i globalne skanują wysyłane lub odbierane komunikaty we wszystkich kanałach komunikacyjnych w organizacji w celu uzyskania różnych typów problemów ze zgodnością. Klasyfikatory używają kombinacji sztucznej inteligencji i słów kluczowych do identyfikowania języka w komunikatach, które mogą naruszać zasady ochrony przed molestowaniem. Wbudowane klasyfikatory obsługują obecnie identyfikację słów kluczowych komunikatów w kilku językach:
+[Wbudowane klasyfikatory trenujące i globalne](/microsoft-365/compliance/classifier-learn-about) skanują wysyłane lub odbierane komunikaty we wszystkich kanałach komunikacyjnych w organizacji w celu uzyskania różnych typów problemów ze zgodnością. Klasyfikatory używają kombinacji sztucznej inteligencji i słów kluczowych do identyfikowania języka w komunikatach, które mogą naruszać zasady ochrony przed molestowaniem. Wbudowane klasyfikatory obsługują obecnie identyfikację słów kluczowych komunikatów w kilku językach:
 
 - Arabski
 - Chiński (uproszczony)
@@ -182,11 +182,12 @@ Wbudowane klasyfikatory trenujące i globalne skanują wysyłane lub odbierane k
 Wbudowane klasyfikatory trenujące i globalne zgodności z komunikacją skanują komunikację pod kątem terminów, obrazów i tonacji dla następujących typów języka i zawartości:
 
 - **Obrazy dla dorosłych**: skanuje obrazy o charakterze jednoznacznie seksualnym.
+- **Skargi klientów**: skanuje opinie i skargi dotyczące produktów lub usług organizacji.
 - **Dyskryminacja**: Skanuje w poszukiwaniu jawnego dyskryminującego języka i jest szczególnie wrażliwa na dyskryminujący język wobec społeczności Afroamerykańskich/Czarnych w porównaniu z innymi społecznościami.
 - **Gory images**: Skanuje obrazy, które przedstawiają przemoc i gore.
+- **Molestowanie**: Skanuje pod kątem obraźliwych zachowań wymierzonych w ludzi w odniesieniu do rasy, koloru, religii, pochodzenia narodowego.
 - **Wulgaryzmy**: Skanuje w poszukiwaniu wulgarnych wyrażeń, które zawstydzają większość ludzi.
 - **Obrazy erotyczne**: Skanuje obrazy, które mają charakter seksualnie sugestywny, ale zawierają mniej jawną zawartość niż obrazy uważane za dorosłe.
-- **Ukierunkowane nękanie**: Skanuje pod kątem obraźliwych zachowań wymierzonych w ludzi w odniesieniu do rasy, koloru, religii, pochodzenia narodowego.
 - **Zagrożenie**: Skanuje pod kątem gróźb popełnienia przemocy lub fizycznej szkody dla osoby lub mienia.
 
 Klasyfikatory obrazów *Adult*, *Racy* i *Gory* skanują pliki w formatach jpeg, .png, .gif i .bmp. Rozmiar plików obrazów musi być mniejszy niż 4 megabajty (MB), a wymiary obrazów muszą być większe niż 50x50 pikseli i większe niż 50 kilobajtów (KB), aby obraz kwalifikował się do oceny. Identyfikacja obrazów jest obsługiwana w przypadku Exchange Online wiadomości e-mail oraz Microsoft Teams kanałów i czatów.
@@ -195,8 +196,6 @@ Wbudowane klasyfikatory trenowalne i globalne nie zawierają wyczerpującej list
 
 > [!NOTE]
 > Zasady używające klasyfikatorów będą sprawdzać i oceniać komunikaty z liczbą wyrazów wynoszącą sześć lub więcej. Komunikaty zawierające mniej niż sześć wyrazów nie są oceniane w zasadach przy użyciu klasyfikatorów. Aby zidentyfikować i podjąć działania w przypadku krótszych komunikatów zawierających nieodpowiednią zawartość, zalecamy dołączenie niestandardowego słownika słów kluczowych do monitorowania zasad zgodności komunikacji dla tego typu zawartości.
-
-Aby uzyskać informacje na temat klasyfikatorów z możliwością trenowania, zobacz [Getting started with trainable classifiers (Wprowadzenie do klasyfikatorów z możliwością trenowania](classifier-get-started-with.md)).
 
 ### <a name="optical-character-recognition-ocr"></a>Optyczne rozpoznawanie znaków (OCR)
 
@@ -279,15 +278,15 @@ W przypadku zasad zgodności z komunikacją domyślnie skonfigurowano następuj�
 > [!NOTE]
 > Ustawienia wyzwalacza progu zasad alertów dla działań obsługują minimalną wartość co najmniej 3 dla zasad zgodności komunikacji.
 
-Możesz zmienić ustawienia domyślne wyzwalaczy dla liczby działań, okresu dla działań i dla określonych użytkowników w zasadach alertów na stronie **Zasady alertów** w portalu zgodności usługi Microsoft Purview.
+Możesz zmienić domyślne ustawienia wyzwalaczy dla liczby działań, okresu dla działań i dla określonych użytkowników w zasadach alertów na stronie **Zasady alertów** w portal zgodności Microsoft Purview.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Zmienianie poziomu ważności dla zasad alertów
 
 Jeśli chcesz zmienić poziom ważności przypisany w zasadach alertów dla określonych zasad zgodności komunikacji, wykonaj następujące kroki:
 
-1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń dla konta administratora w organizacji Microsoft 365.
+1. Zaloguj się [do portal zgodności Microsoft Purview](https://compliance.microsoft.com) przy użyciu poświadczeń konta administratora w organizacji Microsoft 365.
 
-2. W portalu zgodności usługi Microsoft Purview przejdź do pozycji **Zasady**.
+2. W portal zgodności Microsoft Purview przejdź do pozycji **Zasady**.
 
 3. Wybierz **pozycję Office 365 alert** na stronie **Zasady**, aby otworzyć stronę **Zasady alertów**.
 

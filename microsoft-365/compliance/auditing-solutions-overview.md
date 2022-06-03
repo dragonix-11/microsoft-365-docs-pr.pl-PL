@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak przeprowadzać inspekcję działań użytkowników i administratorów w organizacji Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e4dab263a85730f893adadab0d3fa5709d17861
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 8ceaea2b888c144fb5c6bc34d9d7788ab595b56b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649392"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864589"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Rozwiązania inspekcji w Microsoft Purview
 
@@ -101,6 +101,7 @@ W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji
 ### <a name="audit-standard"></a>Usługa Inspekcja (wersja Standardowa)
 
 - Subskrypcja usługi Microsoft Business Basic
+- Subskrypcja usługi Microsoft Business Standard
 - subskrypcja Aplikacje Microsoft 365 for Business
 - subskrypcja Microsoft 365 Enterprise E3
 - Microsoft 365 Business Premium

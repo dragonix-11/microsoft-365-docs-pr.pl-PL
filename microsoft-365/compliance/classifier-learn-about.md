@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Klasyfikatory z możliwością trenowania mogą rozpoznawać różne typy zawartości do etykietowania lub aplikacji zasad, dając jej pozytywne i negatywne próbki do obejrzenia.
-ms.openlocfilehash: a95c74894fd1ab3f9e3f9dd1f398d60afdc597d0
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: f99e9e66f1dae9459f28ba59ca9f197d78ab8bad
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65625804"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864545"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Dowiedz się więcej o klasyfikatorach z możliwością szkolenia
 
@@ -73,9 +73,6 @@ Etykiety poufności mogą używać klasyfikatorów jako warunków. Zobacz [Autom
 
 Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
 
-> [!CAUTION]
-> Wycofywamy wstępnie wytrenowany klasyfikator **języka obraźliwego** , ponieważ generuje on dużą liczbę wyników fałszywie dodatnich. Nie używaj go, a jeśli obecnie go używasz, należy przenieść procesy biznesowe poza ten proces. Zamiast tego zalecamy używanie wstępnie wytrenowanych klasyfikatorów **Threat**, **Profanity** i **Harassment** .
-
 - **Umowy**: Wykrywa zawartość związaną z umowami prawnymi, takimi jak umowy o zachowaniu poufności, oświadczenia o pracy, umowy pożyczki i dzierżawy, umowy o pracę i umowy o zachowaniu konkurencji. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
 - **Życiorysy**: wykrywa dokumenty, .pdf, rtf, .txt elementy, które są tekstowymi kontami osobistymi, edukacyjnymi, zawodowymi, doświadczeniami służbowymi i innymi danymi identyfikacyjnymi wnioskodawcy
@@ -108,8 +105,8 @@ Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
 
 - **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych w 25 najlepszych używanych językach programowania komputerowego na GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
 
-> [!NOTE]
-> Kod źródłowy jest wytrenowany do wykrywania, kiedy większość tekstu to kod źródłowy. Nie wykrywa tekstu kodu źródłowego, który jest przeplatany zwykłym tekstem.
+    > [!NOTE]
+    > Kod źródłowy jest wytrenowany do wykrywania, kiedy większość tekstu to kod źródłowy. Nie wykrywa tekstu kodu źródłowego, który jest przeplatany zwykłym tekstem.
 
 - **Podatek**: Wykrywa zawartość relacji podatkowych, takich jak planowanie podatkowe, formularze podatkowe, zgłoszenia podatkowe, przepisy podatkowe. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 
@@ -118,7 +115,7 @@ Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
 - **Podatek**: Wykrywa zawartość relacji podatkowych, takich jak planowanie podatkowe, formularze podatkowe, zgłoszenia podatkowe, przepisy podatkowe. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 - **Zagrożenie**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka związanych z groźbami popełnienia przemocy lub wyrządzenia fizycznej krzywdy lub szkody osobie lub mienia. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
 
-Są one wyświetlane w widoku **klasyfikatorów** **portal zgodności Microsoft Purview** >  **DataTrainable** >  ze stanem `Ready to use`.
+Są one wyświetlane w widoku **klasyfikatorów klasyfikujących** **portal zgodności Microsoft Purview** >  **Data** >  ze stanem `Ready to use`.
 
 ![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -127,11 +124,15 @@ Są one wyświetlane w widoku **klasyfikatorów** **portal zgodności Microsoft 
 
 Wstępnie wytrenowane klasyfikatory mogą skanować zawartość w następujących językach:
 
+- Arabski
 - Chiński (uproszczony)
+- Chiński (tradycyjny)
+- Dutch
 - English
 - French
 - German
 - Italian
+- Korean
 - Japanese
 - Portugalski
 - Spanish

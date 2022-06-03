@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Utwórz udostępnioną skrzynkę pocztową, aby umożliwić wielu użytkownikom w firmie dzielenie się odpowiedzialnością za odczytywanie i odpowiadanie na wiadomości e-mail wysyłane na jeden adres.
-ms.openlocfilehash: 38e7e1c1371c83fd5b55105bbd91485e2b6c26a3
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 444be08a2083bf184d61ee206dfaa8ab53657b0b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864567"
 ---
 # <a name="create-a-shared-mailbox"></a>Tworzenie udostępnionej skrzynki pocztowej 
 
@@ -47,7 +47,7 @@ Udostępnione skrzynki pocztowe zawierają kalendarz udostępniony. Wiele małyc
 Przed utworzeniem udostępnionej skrzynki pocztowej przeczytaj [informacje o udostępnionych skrzynkach pocztowych](about-shared-mailboxes.md) , aby uzyskać więcej informacji.
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczących kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małej firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy możecie uzyskać całodobowy dostęp do specjalistów ds. małej firmy, gdy rozwijasz swoją firmę, od momentu dołączenia po codzienne użytkowanie.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Tworzenie udostępnionej skrzynki pocztowej i dodawanie członków
   
@@ -93,6 +93,9 @@ Możesz użyć następujących uprawnień w udostępnionej skrzynce pocztowej:
 
 - **Wyślij w imieniu**: uprawnienie Wyślij w imieniu umożliwia użytkownikowi wysyłanie wiadomości e-mail w imieniu udostępnionej skrzynki pocztowej. Jeśli na przykład Jan zaloguje się do udostępnionego budynku recepcji skrzynki pocztowej 32 i wyśle wiadomość e-mail, będzie to wyglądać tak, jakby wiadomość została wysłana przez "Jana w imieniu budynku recepcji 32". Nie można użyć EAC do udzielenia uprawnień Wyślij w imieniu. Należy użyć polecenia cmdlet **Set-Mailbox** z parametrem _GrantSendonBehalf_ .
 
+> [!NOTE]
+> Uprawnienia **Wyślij jako** i **Wyślij w imieniu** nie działają w kliencie stacjonarnym Outlook z *parametrem HiddenFromAddressListsEnabled* w skrzynce pocztowej ustawionej na **wartość True**, ponieważ wymagają one, aby skrzynka pocztowa była widoczna w Outlook za pośrednictwem globalnej listy adresów.
+
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Edytowanie delegowania udostępnionej skrzynki pocztowej za pomocą Centrum administracyjnego programu Exchange
 
 1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> przejdź do **obszaru Skrzynki pocztowe** **adresatów**\>. Wybierz udostępnioną skrzynkę pocztową, a następnie wybierz pozycję **Edytuj** ![ikonę Edycja.](../../media/ITPro-EAC-EditIcon.png)
@@ -133,7 +136,7 @@ Ale co zrobić, jeśli administrator po prostu zresetował hasło udostępnioneg
 
 4. W okienku **Blokuj tego użytkownika?** wybierz pozycję **Blokuj logowanie użytkownika**, a następnie wybierz pozycję **Zapisz zmiany**.
 
-Aby uzyskać instrukcje dotyczące blokowania logowania dla kont przy użyciu programu Azure AD PowerShell (w tym wielu kont w tym samym czasie), zobacz [Blokowanie kont użytkowników za pomocą programu Office 365 programu PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
+Aby uzyskać instrukcje dotyczące blokowania logowania dla kont przy użyciu Azure AD programu PowerShell (w tym wielu kont w tym samym czasie), zobacz [Blokowanie kont użytkowników za pomocą programu Office 365 programu PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>Dodawanie udostępnionej skrzynki pocztowej do programu Outlook
 
@@ -156,7 +159,7 @@ Aby dowiedzieć się więcej o udostępnionych skrzynkach pocztowych w Outlook, 
 ## <a name="use-a-shared-mailbox-on-a-mobile-device-phone-or-tablet"></a>Używanie udostępnionej skrzynki pocztowej na urządzeniu przenośnym (telefonie lub tablecie)
 
 Dostęp do udostępnionej skrzynki pocztowej na urządzeniu przenośnym można uzyskać na dwa sposoby:
-- Dodaj udostępnioną skrzynkę pocztową w <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">Outlook dla aplikacji dla systemu iOS</a> lub <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Outlook dla aplikacji mobilnej systemu Android</a>. 
+- Dodaj udostępnioną skrzynkę pocztową w <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">Outlook dla aplikacji iOS</a> lub <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Outlook dla aplikacji mobilnej Android</a>. 
     
     Aby uzyskać instrukcje, zobacz <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Dodawanie udostępnionej skrzynki pocztowej do Outlook urządzenia przenośnego</a>.
 
@@ -165,7 +168,7 @@ Dostęp do udostępnionej skrzynki pocztowej na urządzeniu przenośnym można u
     Aby uzyskać instrukcje, zobacz <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Dodawanie udostępnionej skrzynki pocztowej do Outlook w sieci Web</a>.
     
 > [!NOTE]
-> Udostępnioną skrzynkę pocztową można dodać tylko do Outlook dla aplikacji systemu iOS lub Outlook dla aplikacji mobilnej systemu Android
+> Udostępnioną skrzynkę pocztową można dodać tylko do Outlook dla aplikacji iOS lub Outlook dla aplikacji mobilnej Android
 
 ## <a name="use-the-shared-calendar"></a>Korzystanie z kalendarza udostępnionego
 
