@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Uzyskaj pomoc dotyczącą zwiększania poziomu ochrony w Microsoft 365 Business Premium
-ms.openlocfilehash: 2bd00329f160c187325fc696114f0fac4e503656
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319138"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863613"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Zwiększanie ochrony przed zagrożeniami dla Microsoft 365 Business Premium
 
@@ -166,7 +166,7 @@ Na poniższej ilustracji przedstawiono niektóre z domyślnych zasad dołączony
 
 ### <a name="view-your-alert-policies"></a>Wyświetlanie zasad alertów
 
-1. Przejdź do centrum zgodności Microsoft 365 pod adresem [https://compliance.microsoft.com](https://compliance.microsoft.com) i zaloguj się.
+1. Przejdź do portal zgodności Microsoft Purview i [https://compliance.microsoft.com](https://compliance.microsoft.com) zaloguj się.
 
 2. W okienku nawigacji wybierz pozycję **Zasady**, a następnie wybierz pozycję **Zasady alertów**.
 
@@ -179,12 +179,12 @@ Na poniższej ilustracji przedstawiono niektóre z domyślnych zasad dołączony
 
 ### <a name="how-to-view-alerts"></a>Jak wyświetlać alerty
 
-W zależności od określonego alertu alerty można wyświetlić w portalu Microsoft 365 Defender lub w centrum zgodności Microsoft 365.
+W zależności od określonego alertu możesz wyświetlić alerty w portalu Microsoft 365 Defender lub w portal zgodności Microsoft Purview.
 
 | Typ alertu  | Co robić  |
 |---------|---------|
-| Alert zabezpieczeń, na przykład gdy użytkownik kliknie złośliwy link, wiadomość e-mail zostanie zgłoszona jako złośliwe oprogramowanie lub phish lub urządzenie zostanie wykryte jako zawierające złośliwe oprogramowanie     | Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> i w obszarze **Współpraca & poczty e-mail** wybierz pozycję **Zasady & regułyZasady** > **.** Alternatywnie możesz przejść bezpośrednio do <https://security.microsoft.com/alertpolicies>. |
-| Alert zgodności, na przykład gdy użytkownik udostępnia poufne lub poufne informacje (alert zapobiegania utracie danych) lub występuje nietypowa ilość zewnętrznego udostępniania plików (alert dotyczący ładu informacji)    | Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>, a następnie wybierz pozycję **ZasadyZasadyAlertuj** >  > .  |
+| Alert zabezpieczeń, na przykład gdy użytkownik kliknie złośliwy link, wiadomość e-mail zostanie zgłoszona jako złośliwe oprogramowanie lub phish lub urządzenie zostanie wykryte jako zawierające złośliwe oprogramowanie     | Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> i w obszarze **Współpraca & poczty e-mail** wybierz pozycję **Zasady & reguły** > **alertów**. Alternatywnie możesz przejść bezpośrednio do <https://security.microsoft.com/alertpolicies>. |
+| Alert zgodności, na przykład gdy użytkownik udostępnia poufne lub poufne informacje (alert zapobiegania utracie danych) lub występuje nietypowa ilość zewnętrznego udostępniania plików (alert dotyczący ładu informacji)    | Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>, a następnie wybierz pozycję **Zasady** >  > **Alerty zasad.**  |
 
 Aby uzyskać więcej informacji, zobacz [Wyświetlanie alertów](../compliance/alert-policies.md#view-alerts).
 

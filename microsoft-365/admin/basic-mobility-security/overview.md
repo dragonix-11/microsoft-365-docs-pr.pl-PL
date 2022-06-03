@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Zarządzaj urządzeniami przenośnymi połączonymi z organizacją Microsoft 365 i zabezpieczaj je, konfigurując i korzystając z pakietu Basic Mobility and Security.
-ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 9a9b3d433408d4ce5225f1a74351d01150744132
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636135"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863211"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Omówienie pakietu Basic Mobility and Security dla Microsoft 365
 
@@ -50,7 +50,7 @@ Oto podsumowanie kroków:
 
 **Krok 3.** Utwórz zasady urządzeń i zastosuj je do grup użytkowników. Gdy to zrobisz, użytkownicy otrzymają komunikat o rejestracji na swoim urządzeniu, a po zakończeniu rejestracji ich urządzenia będą ograniczone przez skonfigurowane dla nich zasady. Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security](enroll-your-mobile-device.md). 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Podstawowe ustawienia zasad zabezpieczeń i mobilności.":::
+:::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Podstawowe ustawienia zasad zabezpieczeń i mobilności.":::
 
 ## <a name="device-management-tasks"></a>Zadania zarządzania urządzeniami
 

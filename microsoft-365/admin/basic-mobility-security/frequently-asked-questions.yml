@@ -20,12 +20,12 @@ metadata:
   search.appverid:
   - MET150
   description: Często zadawane pytania dotyczące pakietu Basic Mobility and Security.
-  ms.openlocfilehash: 68e7143dba70859aa69845f8e1e8e0a5c65ea44f
-  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.openlocfilehash: c404ff1c80952ec3db600e96ceef5cce97c182cd
+  ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 04/19/2022
-  ms.locfileid: "64934208"
+  ms.lasthandoff: 06/03/2022
+  ms.locfileid: "65863015"
 title: Często zadawane pytania dotyczące pakietu Basic Mobility and Security
 summary: Ten artykuł zawiera często zadawane pytania dotyczące pakietu Basic Mobility and Security— funkcji ułatwiającej zarządzanie urządzeniami przenośnymi i zabezpieczanie ich w Microsoft 365. Jeśli nie możesz znaleźć odpowiedzi na swoje pytanie, powiadom nas o tym, pozostawiając komentarz na stronie, abyśmy rozważyli dodanie Twojego pytania do tego artykułu.
 sections:
@@ -40,14 +40,14 @@ sections:
       2.  Przejdź do obszaru Zapobieganie utracie danych > Zarządzanie urządzeniami.
   - question: >
       Jak rozpocząć pracę z zarządzaniem urządzeniami w usłudze Basic Mobility and Security?
-    answer: "Wprowadzenie do pakietu Basic Mobility and Security obejmuje cztery kroki: \n\n1. Aktywuj pakiet Basic Mobility and Security, przechodząc do [obszaru Office 365 Security & Compliance](https://protection.office.com/).\n\n2. Przejdź do obszaru Ochrona przed utratą danych > Zarządzanie urządzeniami > Zasady urządzeń.\n    \n3. Utwórz zasady zarządzania urządzeniami i zastosuj je do grup użytkowników skonfigurowanych w grupach zabezpieczeń. Zalecamy rozpoczęcie od wdrożenia zasad w małej grupie testowej. Aby uzyskać więcej informacji, zobacz [Tworzenie zasad zabezpieczeń urządzeń w usłudze Basic Mobility and Security](create-device-security-policies.md).\n\n4. Użytkownicy, którzy zastosowali do nich zasady, są monitowane o zarejestrowanie swoich urządzeń podczas próby uzyskania dostępu do Microsoft 365 danych. Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security](enroll-your-mobile-device.md).\n\nAby uzyskać więcej informacji, zobacz [Konfigurowanie pakietu Basic Mobility and Security](set-up.md).\n"
+    answer: "Wprowadzenie do pakietu Basic Mobility and Security obejmuje cztery kroki: \n\n1. Aktywuj pakiet Basic Mobility and Security, przechodząc do [obszaru Office 365 Security & Compliance](https://protection.office.com/).\n\n2. Przejdź do pozycji [Podstawowa mobilność i zabezpieczenia (wersja zapoznawcza).](https://compliance.microsoft.com/basicmobilityandsecurity)\n    \n3. Utwórz zasady zarządzania urządzeniami i zastosuj je do grup użytkowników skonfigurowanych w grupach zabezpieczeń. Zalecamy rozpoczęcie od wdrożenia zasad w małej grupie testowej. Aby uzyskać więcej informacji, zobacz [Tworzenie zasad zabezpieczeń urządzeń w usłudze Basic Mobility and Security](create-device-security-policies.md).\n\n4. Użytkownicy, którzy zastosowali do nich zasady, są monitowane o zarejestrowanie swoich urządzeń podczas próby uzyskania dostępu do Microsoft 365 danych. Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security](enroll-your-mobile-device.md).\n\nAby uzyskać więcej informacji, zobacz [Konfigurowanie pakietu Basic Mobility and Security](set-up.md).\n"
   - question: >
       Próbuję skonfigurować usługę Basic Mobility and Security, ale wydaje się, że jest zablokowana. Usługa Microsoft 365 Service Health od jakiegoś czasu wyświetla "aprowizację". Co mogę zrobić?
     answer: >
       Przygotowanie usługi może zająć trochę czasu. Po zakończeniu aprowizacji zostanie wyświetlona strona Podstawowa mobilność i zabezpieczenia. Jeśli czekasz 24 godziny, a stan jest nadal aprowizowany, skontaktuj się z pomocą techniczną, a my pomożemy ustalić, co to jest problem.
   - question: >
       Co mogę zrobić, jeśli rejestracja urządzenia zakończy się niepowodzeniem?
-    answer: "Jeśli masz problemy z zarejestrowaniem urządzenia, najpierw sprawdź następujące kwestie:\n\n- Upewnij się, że urządzenie nie zostało jeszcze zarejestrowane u innego dostawcy zarządzania urządzeniami przenośnymi, takiego jak Intune.\n\n- Upewnij się, że urządzenie jest ustawione na poprawną datę i godzinę.\n\n- Przełącz się do innej sieci WI-FI lub sieci komórkowej na urządzeniu.\n\n- W przypadku urządzeń z systemem Android lub iOS odinstaluj i ponownie zainstaluj aplikację Intune — Portal firmy na urządzeniu.\n    \nJeśli rejestracja nadal nie działa, zobacz [Rozwiązywanie problemów z usługą Basic Mobility and Security](troubleshoot.md).\n"
+    answer: "Jeśli masz problemy z zarejestrowaniem urządzenia, najpierw sprawdź następujące kwestie:\n\n- Upewnij się, że urządzenie nie zostało jeszcze zarejestrowane u innego dostawcy zarządzania urządzeniami przenośnymi, takiego jak Intune.\n\n- Upewnij się, że urządzenie jest ustawione na poprawną datę i godzinę.\n\n- Przełącz się do innej sieci WI-FI lub sieci komórkowej na urządzeniu.\n\n- W przypadku urządzeń Android lub iOS odinstaluj i ponownie zainstaluj aplikację Intune — Portal firmy na urządzeniu.\n    \nJeśli rejestracja nadal nie działa, zobacz [Rozwiązywanie problemów z usługą Basic Mobility and Security](troubleshoot.md).\n"
   - question: >
       Jaka jest różnica między Intune a pakietem Basic Mobility and Security?
     answer: >
@@ -55,7 +55,7 @@ sections:
   - question: >
       Jak działają zasady dla pakietu Basic Mobility and Security? Jak mogę je skonfigurować? Czy je wyłączyć?
     answer: >
-      Po zakończeniu początkowej konfiguracji pakietu Basic Mobility and Security należy utworzyć zasady i zastosować je do grup użytkowników w Centrum zgodności usługi Security &. Zasady wymagają, aby użytkownicy zasad rejestrowali swoje urządzenia w usłudze Basic Mobility and Security, zanim będzie można używać urządzenia do uzyskiwania dostępu do Microsoft 365 danych. Skonfigurowane zasady określają ustawienia dla urządzeń przenośnych, na przykład częstotliwość resetowania haseł lub konieczność szyfrowania danych. Aby uzyskać więcej informacji, zobacz [Tworzenie zasad zabezpieczeń urządzeń w portalu podstawowej mobilności i zabezpieczeń](create-device-security-policies.md) oraz [portalu zgodności usługi Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
+      Po zakończeniu początkowej konfiguracji pakietu Basic Mobility and Security należy utworzyć zasady i zastosować je do grup użytkowników w Centrum zgodności usługi Security &. Zasady wymagają, aby użytkownicy zasad rejestrowali swoje urządzenia w usłudze Basic Mobility and Security, zanim będzie można używać urządzenia do uzyskiwania dostępu do Microsoft 365 danych. Skonfigurowane zasady określają ustawienia dla urządzeń przenośnych, na przykład częstotliwość resetowania haseł lub konieczność szyfrowania danych. Aby uzyskać więcej informacji, zobacz [Tworzenie zasad zabezpieczeń urządzeń w usłudze Basic Mobility and Security](create-device-security-policies.md) i [portal zgodności Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
 
 
       Aby uzyskać instrukcje krok po kroku dotyczące tworzenia i wdrażania zasad urządzeń, zobacz [Tworzenie zasad zabezpieczeń urządzeń w usłudze Basic Mobility and Security](create-device-security-policies.md).

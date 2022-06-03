@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Zaloguj się do Microsoft 365 i skonfiguruj usługę Basic Mobility and Security, aby używać wbudowanego zarządzania urządzeniami przenośnymi do zabezpieczania urządzeń przenośnych użytkowników i zarządzania nimi.
-ms.openlocfilehash: c24d36b1151b22fee228d1a85368bf26a381e4d2
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: b84c97302743177f0a69978ebf358c0fbd1045a8
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435728"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863571"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Zarządzanie urządzeniami zarejestrowanymi w usłudze Mobile Zarządzanie urządzeniami w Microsoft 365
 
@@ -36,13 +36,9 @@ Po skonfigurowaniu tych urządzeń osoby w organizacji muszą zarejestrować swo
 
 Aby przejść do panelu zarządzania urządzeniami, wykonaj następujące kroki:
 
-1. Przejdź do [Centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
+1. Zaloguj się do Centrum administracyjne platformy Microsoft 365 i przejdź do [strony Zarządzanie urządzeniami mobile](https://portal.office.com/adminportal/home?#/MifoDevices).
 
-2. Wpisz Mobile Zarządzanie urządzeniami w polu wyszukiwania i wybierz pozycję **Mobile Zarządzanie urządzeniami** z listy wyników.
-
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opcja zarządzania urządzeniami przenośnymi.":::
-
-3. Wybierz **pozycję Rozpocznijmy**.
+1. Wybierz **pozycję Rozpocznijmy**.
 
 ## <a name="manage-mobile-devices"></a>Zarządzanie urządzeniami przenośnymi
 
@@ -52,9 +48,9 @@ Po skonfigurowaniu pakietu Basic Mobility and Security poniżej przedstawiono ki
 |---|---|
 |Czyszczenie urządzenia|W panelu Zarządzanie urządzeniami wybierz *nazwę urządzenia*, a następnie **pozycję Pełne czyszczenie**, aby usunąć wszystkie informacje lub **Selektywne czyszczenie**, aby usunąć tylko informacje organizacyjne na urządzeniu. Aby uzyskać więcej informacji, zobacz [Czyszczenie urządzenia przenośnego w usłudze Basic Mobility and Security](wipe-mobile-device.md).|
 |Blokuj dostęp nieobsługiwanych urządzeń do Exchange poczty e-mail przy użyciu Exchange ActiveSync|W panelu Zarządzanie urządzeniami wybierz pozycję **Blokuj**.|
-|Konfigurowanie zasad urządzeń, takich jak wymagania dotyczące haseł i ustawienia zabezpieczeń|Na panelu Zarządzanie urządzeniami wybierz pozycję **Zasady** >  zabezpieczeń **urządzeńDodaj +**. Aby uzyskać więcej informacji, zobacz [Tworzenie zasad zabezpieczeń urządzeń w usłudze Basic Mobility and Security](create-device-security-policies.md).|
+|Konfigurowanie zasad urządzeń, takich jak wymagania dotyczące haseł i ustawienia zabezpieczeń|Na panelu Zarządzanie urządzeniami wybierz pozycję Zasady  > **zabezpieczeń urządzeń****Dodaj +**. Aby uzyskać więcej informacji, zobacz [Tworzenie zasad zabezpieczeń urządzeń w usłudze Basic Mobility and Security](create-device-security-policies.md).|
 |Wyświetlanie listy zablokowanych urządzeń|W panelu Zarządzanie urządzeniami w obszarze **Wybierz widok wybierz pozycję** **Zablokowane**.|
-|Odblokowywanie niezgodnego lub nieobsługiwanego urządzenia dla użytkownika lub grupy użytkowników|Wybierz jedną z następujących opcji, aby odblokować urządzenia:<br/>— Usuń użytkownika lub użytkowników z grupy zabezpieczeń, do których zostały zastosowane zasady. Przejdź do Centrum administracyjne platformy Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupy**</a>, a następnie wybierz nazwę grupy. Wybierz pozycję **Edytuj członków i administratorów**.<br/>— Usuń grupę zabezpieczeń, do których należą użytkownicy, z zasad urządzenia. Przejdź do obszaru Centrum zgodności & zabezpieczeń > **Zasady** >  **zabezpieczeńUrządzenia zasad zabezpieczeń**. Wybierz nazwę zasad urządzenia, a następnie wybierz pozycję **EdytujDeployment** > .<br/>— Odblokuj wszystkie niezgodne urządzenia dla zasad urządzeń. Przejdź do obszaru Centrum zgodności & zabezpieczeń > **Zasady** >  **zabezpieczeńUrządzenia zasad zabezpieczeń**. Wybierz nazwę zasad urządzenia, a następnie wybierz pozycję **Edytuj** >  **Wymagania dotyczące funkcjiAccess**. Wybierz pozycję **Zezwalaj na dostęp i naruszenie raportów**.<br/>— Aby odblokować niezgodne lub nieobsługiwane urządzenie dla użytkownika lub grupy użytkowników, przejdź do obszaru Centrum zgodności & zabezpieczeń > **Zasady** >  **zabezpieczeńZarządzanie urządzeniamiZarządzanie** >  **ustawieniami dostępu do urządzeń**. Dodaj grupę zabezpieczeń z elementami członkowskimi, które mają zostać wykluczone z zablokowania dostępu do Microsoft 365. Aby uzyskać więcej informacji, zobacz [Tworzenie, edytowanie lub usuwanie grupy zabezpieczeń w Centrum administracyjne platformy Microsoft 365](../../admin/email/create-edit-or-delete-a-security-group.md).|
+|Odblokowywanie niezgodnego lub nieobsługiwanego urządzenia dla użytkownika lub grupy użytkowników|Wybierz jedną z następujących opcji, aby odblokować urządzenia:<br/>— Usuń użytkownika lub użytkowników z grupy zabezpieczeń, do których zostały zastosowane zasady. Przejdź do Centrum administracyjne platformy Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupy**</a>, a następnie wybierz nazwę grupy. Wybierz pozycję **Edytuj członków i administratorów**.<br/>— Usuń grupę zabezpieczeń, do których należą użytkownicy, z zasad urządzenia. Przejdź do obszaru Centrum zgodności & zabezpieczeń > **zasady** > **zabezpieczeń Zasady zabezpieczeń urządzenia**. Wybierz nazwę zasad urządzenia, a następnie wybierz pozycję **Edytuj** > **wdrożenie**.<br/>— Odblokuj wszystkie niezgodne urządzenia dla zasad urządzeń. Przejdź do obszaru Centrum zgodności & zabezpieczeń > **zasady** > **zabezpieczeń Zasady zabezpieczeń urządzenia**. Wybierz nazwę zasad urządzenia, a następnie wybierz pozycję **Edytuj** > **wymagania dotyczące dostępu**. Wybierz pozycję **Zezwalaj na dostęp i naruszenie raportów**.<br/>— Aby odblokować niezgodne lub nieobsługiane urządzenie dla użytkownika lub grupy użytkowników, przejdź do obszaru Centrum zgodności & zabezpieczeń > **Zasady** >  zabezpieczeń **Zarządzanie urządzeniami Zarządzanie ustawieniami** > **dostępu do urządzeń**. Dodaj grupę zabezpieczeń z elementami członkowskimi, które mają zostać wykluczone z zablokowania dostępu do Microsoft 365. Aby uzyskać więcej informacji, zobacz [Tworzenie, edytowanie lub usuwanie grupy zabezpieczeń w Centrum administracyjne platformy Microsoft 365](../../admin/email/create-edit-or-delete-a-security-group.md).|
 |Usuwanie użytkowników, aby ich urządzenia nie były już zarządzane przez usługi Basic Mobility and Security|Aby usunąć użytkownika, edytuj grupę zabezpieczeń, która ma zasady zarządzania urządzeniami dla pakietu Basic Mobility and Security. Aby uzyskać więcej informacji, zobacz [Tworzenie, edytowanie lub usuwanie grupy zabezpieczeń w Centrum administracyjne platformy Microsoft 365](../../admin/email/create-edit-or-delete-a-security-group.md).<br/>Aby usunąć pakiet Basic Mobility and Security ze wszystkich użytkowników Microsoft 365, zobacz [Wyłączanie pakietu Basic Mobility and Security](turn-off.md).|
 
 Na żywo (wersja 14)

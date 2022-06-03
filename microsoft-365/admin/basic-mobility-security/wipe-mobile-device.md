@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Użyj wbudowanej usługi Basic Mobility and Security, aby usunąć informacje z zarejestrowanych urządzeń.
-ms.openlocfilehash: 959e785958dd6d447713507ee9c48763b814db78
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5ecdfc691d85b86d882cf05dd5328d41dcdfa767
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129095"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863059"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Czyszczenie urządzenia przenośnego w usłudze Basic Mobility and Security
 
@@ -46,25 +46,21 @@ Urządzenia przenośne mogą przechowywać poufne informacje organizacyjne i zap
 
 ## <a name="wipe-a-mobile-device"></a>Czyszczenie urządzenia przenośnego
 
-1. Przejdź do [Centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
+1. Zaloguj się do Centrum administracyjne platformy Microsoft 365 i przejdź do [strony Zarządzanie urządzeniami mobile](https://portal.office.com/adminportal/home?#/MifoDevices).
 
-2. Wpisz Mobile Zarządzanie urządzeniami w polu wyszukiwania i wybierz pozycję **Mobile Zarządzanie urządzeniami** z listy wyników.
+1. Wybierz pozycję **Zarządzaj urządzeniami**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opcja zarządzania urządzeniami przenośnymi Basic Mobility i Secruity.":::
+1. Wybierz urządzenie, które chcesz wyczyścić.
 
-3. Wybierz pozycję **Zarządzaj urządzeniami**.
+1. Wybierz pozycję **Zarządzaj**.
 
-4. Wybierz urządzenie, które chcesz wyczyścić.
-
-5. Wybierz pozycję **Zarządzaj**.
-
-6. Wybierz wymagany typ zdalnego czyszczenia.
+1. Wybierz wymagany typ zdalnego czyszczenia.
 
     - Aby przeprowadzić pełne czyszczenie i przywrócić urządzenie do ustawień fabrycznych, wybierz pozycję **Resetowanie do ustawień fabrycznych**.
     - Aby przeprowadzić selektywne czyszczenie i usuwanie tylko Microsoft 365 informacji o organizacji, wybierz pozycję **Usuń dane firmy**.
     - Aby usunąć urządzenie z organizacji, wybierz pozycję **Usuń urządzenie**.
 
-7. Wybierz pozycję **Tak**, aby potwierdzić.
+1. Wybierz pozycję **Tak**, aby potwierdzić.
 
 ## <a name="how-do-i-know-it-worked"></a>Jak mogę wiedzieć, że to zadziałało?
 
@@ -89,4 +85,4 @@ Czyszczenie jest wysyłane natychmiast do urządzenia przenośnego, a urządzeni
 |Profile poczty e-mail utworzone przez usługi Basic Mobility and Security są usuwane, a buforowana wiadomość e-mail na urządzeniu jest usuwana.|Tak|nd.|
 
 > [!NOTE]
-> Portal firmy aplikacja jest dostępna w App Store dla urządzeń z systemem iOS i Sklep Play dla urządzeń z systemem Android.
+> Portal firmy aplikacja jest dostępna w App Store dla iOS i Sklep Play dla urządzeń Android.

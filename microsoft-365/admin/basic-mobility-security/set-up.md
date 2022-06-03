@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Skonfiguruj usługę Basic Mobility and Security, aby zabezpieczyć urządzenia przenośne użytkowników i zarządzać nimi, wykonując akcje, takie jak zdalne czyszczenie urządzenia.
-ms.openlocfilehash: b26906c0f374f5dc103fe26e4619663195da6ebd
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 04480e59177dc9b51bc50e413715e0ad82c7f461
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780836"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863189"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Skonfiguruj funkcję Podstawowa mobilność i zabezpieczenia
 
@@ -52,17 +52,15 @@ Jeśli nie masz domeny niestandardowej skojarzonej z Microsoft 365 lub nie zarz�
 
 Potrzebujesz pomocy przy konfigurowaniu rekordów? Znajdź rejestratora domen i wybierz nazwę rejestratora, aby przejść do pomocy krok po kroku dotyczącej tworzenia rekordu DNS na liście dostępnej w [temacie Dodawanie rekordów DNS w celu nawiązania połączenia z domeną](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Użyj tych instrukcji, aby utworzyć rekordy CNAME opisane w [temacie Upraszczanie rejestracji Windows bez Azure AD — wersja Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
-Po dodaniu dwóch rekordów CNAME wróć do Centrum zgodności & zabezpieczeń i przejdź do obszaru **Ochrona przed** >  utratą **danychZarządzanie urządzeniami** w celu wykonania następnego kroku.
+Po dodaniu dwóch rekordów CNAME wróć do Centrum zgodności & zabezpieczeń i przejdź do obszaru **Zarządzanie urządzeniami** **w celu zapobiegania** >  utracie danych, aby wykonać następny krok.
 
-### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Krok 2. (Wymagane) Konfigurowanie certyfikatu usługi APNs dla urządzeń z systemem iOS
+### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Krok 2. (Wymagane) Konfigurowanie certyfikatu usługi APNs dla urządzeń iOS
 
-Aby zarządzać urządzeniami z systemem iOS, takimi jak iPad i iPhone, musisz utworzyć certyfikat usługi APNs.
+Aby zarządzać urządzeniami iOS, takimi jak iPad i iPhone, należy utworzyć certyfikat usługi APNs.
 
 1. Zaloguj się do Microsoft 365 przy użyciu konta administratora globalnego.
 
-2. W przeglądarce wpisz: [https://protection.office.com](https://protection.office.com/).
-
-3. Wybierz pozycję **Ochrona przed utratą** >  **danychZarządzanie urządzeniami** i wybierz pozycję **Certyfikat APNs dla urządzeń z systemem iOS**.
+2. Przejdź do [Centrum administracyjne platformy Microsoft 365](https://portal.office.com/adminportal/home?#/MifoDevices) i wybierz pozycję **Certyfikat usługi APNs dla iOS**.
 
 4. Na stronie Apple Push Notification Certificate Ustawienia wybierz pozycję **Dalej**.
 
@@ -93,9 +91,9 @@ Aby zarządzać urządzeniami z systemem iOS, takimi jak iPad i iPhone, musisz u
 
 Uwierzytelnianie wieloskładnikowe pomaga zabezpieczyć logowanie do Microsoft 365 na potrzeby rejestracji urządzeń przenośnych, wymagając drugiej formy uwierzytelniania. Użytkownicy muszą potwierdzić połączenie telefoniczne, wiadomość SMS lub powiadomienie aplikacji na swoim urządzeniu przenośnym po poprawnym wprowadzeniu hasła konta służbowego. Mogą zarejestrować swoje urządzenie dopiero po ukończeniu tej drugiej formy uwierzytelniania. Po zarejestrowaniu urządzeń użytkowników w usłudze Basic Mobility and Security użytkownicy mogą uzyskiwać dostęp Microsoft 365 zasobów tylko przy użyciu konta służbowego.
 
-Aby dowiedzieć się, jak włączyć uwierzytelnianie wieloskładnikowe w portalu usługi Azure AD, zobacz [Konfigurowanie uwierzytelniania wieloskładnikowego](../security-and-compliance/set-up-multi-factor-authentication.md).
+Aby dowiedzieć się, jak włączyć uwierzytelnianie wieloskładnikowe w portalu Azure AD, zobacz [Konfigurowanie uwierzytelniania wieloskładnikowego](../security-and-compliance/set-up-multi-factor-authentication.md).
 
-Po skonfigurowaniu uwierzytelniania wieloskładnikowego wróć do Centrum zgodności & zabezpieczeń i przejdź do obszaru **Zapobieganie** >  **utracie danychZarządzanie** **urządzeniamiZasady** >  urządzeń, aby ukończyć następny krok.
+Po skonfigurowaniu uwierzytelniania wieloskładnikowego wróć do Centrum zgodności & zabezpieczeń i przejdź do obszaru **Zasady urządzeń** **do zarządzania urządzeniami w celu zapobiegania** >  >  utracie danych, aby wykonać kolejny krok.
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>Krok 4. (Zalecane) Zarządzanie zasadami zabezpieczeń urządzeń
 
@@ -107,7 +105,7 @@ Następnym krokiem jest utworzenie i wdrożenie zasad zabezpieczeń urządzeń w
 
 3. Przejdź do **pozycji Zasady urządzeń**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Podstawowe ustawienia zasad zabezpieczeń i mobilności.":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Podstawowe ustawienia zasad zabezpieczeń i mobilności.":::
 
 4. Utwórz i wdróż zasady zabezpieczeń urządzeń odpowiednie dla twojej organizacji, wykonując kroki opisane [w temacie Tworzenie zasad zabezpieczeń urządzeń w usłudze Basic Mobility and Security](create-device-security-policies.md).
 
@@ -126,7 +124,7 @@ Po utworzeniu i wdrożeniu zasad zarządzania urządzeniami przenośnymi każdy 
 > [!IMPORTANT]
 > Jeśli preferowany język użytkownika nie jest obsługiwany przez proces rejestracji, użytkownicy mogą otrzymywać powiadomienia o rejestracji i kroki na swoich urządzeniach przenośnych w innym języku. Nie wszystkie języki obsługiwane w Microsoft 365 są obecnie obsługiwane w procesie rejestracji na urządzeniach przenośnych.
 
-Użytkownicy urządzeń z systemem Android lub iOS muszą zainstalować aplikację Portal firmy w ramach procesu rejestracji.
+Użytkownicy z urządzeniami Android lub iOS muszą zainstalować aplikację Portal firmy w ramach procesu rejestracji.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 

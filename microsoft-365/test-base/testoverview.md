@@ -1,5 +1,5 @@
 ---
-title: Testowanie aplikacji w bazie testowej
+title: Testowanie aplikacji w usłudze Test Base
 description: Jak przetestować aplikację
 search.appverid: MET150
 author: Tinacyt
@@ -14,26 +14,34 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 3c0b5d19c2b96698a2d24d4f165780fe0f9ccfd1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2f0ccded84f7b1c46ff2aeea38eae8f0baadc6ff
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937130"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863587"
 ---
-# <a name="test-your-application-on-test-base"></a>Testowanie aplikacji w bazie testowej
+# <a name="test-your-application-on-test-base"></a>Testowanie aplikacji w usłudze Test Base
 
-Jest to kompleksowy przewodnik umożliwiający utworzenie nowego pakietu i przetestowanie go w bazie testowej przy użyciu różnych typów aplikacji. Zapoznaj się z konkretną dokumentacją własnej aplikacji:
+W tej sekcji dowiesz się, jak tworzyć pakiety z różnymi typami aplikacji do przekazywania i testowania w **bazie testowej**. Typy aplikacji składają się z następujących wartości:
 
-## <a name="test-binaries-package-on-test-base"></a>Testowanie pakietu plików binarnych w bazie testów
+   > [!div class="mx-imgBorder"]
+   > ![Monity o publikowanie pakietów](Media/testoverview01.png)
 
-Zobacz [Testowanie pakietu plików binarnych](testapplication.md) , aby utworzyć pakiet Bazy testów z plikiem binarnym (tj. .exe lub .msi).
+   - **Testowanie plików binarnych**
 
-## <a name="test-your-intune-app-on-test-base"></a>Testowanie aplikacji Intune w bazie testowej
+      Zobacz [Tworzenie i testowanie plików binarnych w bazie testowej](testapplication.md) , aby przygotować pakiet z plikiem aplikacji binarnej (.exe, .msi) do przekazywania i testowania.
 
-Zobacz [Testowanie aplikacji Intune](testintuneapplication.md), aby utworzyć pakiet Bazy testów z aplikacją Intunewin.
+   - **Aplikacja Intunewin**
 
-## <a name="upload-your-test-base-package-zip"></a>Upload pakietu Test Base (Zip)
+      Zobacz [Testowanie aplikacji Intune w bazie testowej](testintuneapplication.md), aby przygotować pakiet z plikiem aplikacji Intune (.intunewin) do przekazywania i testowania.
 
-Aby dowiedzieć się więcej, zobacz [Przekazywanie zip](uploadApplication.md) , jeśli masz już pakiet Bazy testów.
+   - **Wstępnie utworzony pakiet zip**
+
+      Zobacz [Przekazywanie wstępnie skompilowanego pakietu zip](uploadApplication.md) , jeśli masz już pakiet w trybie offline w formacie .zip.
+
+   - **Klonowanie istniejącego pakietu**
+
+      Zobacz [Klonowanie istniejącego pakietu](clonepackage.md) w celu utworzenia nowego pakietu przez duplikowanie wcześniej opublikowanego pakietu.
+
 
