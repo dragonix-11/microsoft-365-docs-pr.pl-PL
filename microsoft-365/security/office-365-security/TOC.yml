@@ -204,7 +204,7 @@
               href: attack-simulation-training-get-started.md
             - name: Symulowanie ataku polegającego na wyłudzaniu informacji dzięki szkoleniu z symulacji ataku
               href: attack-simulation-training.md
-            - name: Ładunki na potrzeby trenowania symulacji ataków
+            - name: Ładunki do szkolenia z symulacji ataków
               href: attack-simulation-training-payloads.md
             - name: Automatyzacje symulacji w szkoleniu z symulacji ataków
               href: attack-simulation-training-simulation-automations.md
@@ -394,6 +394,30 @@
           href: anti-spoofing-protection-faq.yml
         - name: Kwarantanna — często zadawane pytania
           href: quarantine-faq.yml
+    - name: Przewodniki krok po kroku
+      items:
+        - name: (Fałszywie negatywne) Jak obsługiwać przy pomocy usługi Microsoft Defender dla Office 365 złośliwe wiadomości e-mail dostarczane do odbiorców
+          href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
+        - name: '(Fałszywie pozytywne) Jak obsługiwać wiarygodne wiadomości e-mail, które są blokowane przed dostarczeniem przy użyciu usługi Microsoft Defender dla Office 365'
+          href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+        - name: Jak skonfigurować uprawnienia i zasady kwarantanny
+          href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+        - name: Zapewnienie zawsze optymalnych mechanizmów kontroli zabezpieczeń z ustawionymi wstępnie zasadami zabezpieczeń
+          href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+        - name: Jak uruchamiać symulacje ataków dla zespołu
+          href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
+        - name: Jak skonfigurować zautomatyzowane ataki i szkolenia w ramach szkolenia z symulacji ataków
+          href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
+        - name: Optymalizowanie i poprawianie zasad zabezpieczeń za pomocą analizatora konfiguracji
+          href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
+        - name: Ochrona pakietu C z priorytetową ochroną konta
+          href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
+        - name: Wyszukiwanie wiadomości e-mail i korygowanie zagrożeń przy użyciu eksploratora zagrożeń w usłudze Microsoft 365 Defender
+          href: step-by-step-guides/search-for-emails-and-remediate-threats.md
+        - name: Łączenie usługi Microsoft Defender dla Office 365 z usługą Microsoft Sentinel
+          href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+        - name: Jak nadać priorytet i zarządzać funkcją Zautomatyzowane badania i reakcje (AIR)
+          href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
     - name: Odwołanie
       items:
         - name: Przechowywanie danych w ochronie usługi Office 365 w usłudze Defender
