@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e7e26451e2cf4786f73b16f74bedd46ca764f6ed
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 998f074529089f5c0309f6799900a628915d3959
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173750"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893399"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Używanie raportów i inspekcji zgodności komunikacji
 
@@ -65,7 +65,7 @@ Użyj opcji *Eksportuj* , aby utworzyć plik .csv zawierający szczegóły rapor
     - Użytkownik powiadomiony
     - Utworzono przypadek
 
-- **Element i akcje na lokalizację**: przejrzyj i wyeksportuj pasujące elementy oraz akcje korygowania na Microsoft 365 lokalizacji. Zawiera informacje o tym, jak platformy obciążeń są skojarzone z:
+- **Element i akcje na lokalizację**: przeglądanie i eksportowanie pasujących elementów oraz akcji korygowania dla lokalizacji platformy Microsoft 365. Zawiera informacje o tym, jak platformy obciążeń są skojarzone z:
 
     - Elementy dopasowane
     - Elementy eskalowane
@@ -91,10 +91,10 @@ Użyj opcji *Eksportuj* , aby utworzyć plik .csv zawierający szczegóły rapor
 
 - **Typ informacji poufnych na lokalizację** (wersja zapoznawcza): przejrzyj i wyeksportuj informacje o wykrywaniu typów informacji poufnych i skojarzonych źródłach w zasadach zgodności komunikacji. Obejmuje całkowitą sumę i określony podział wystąpień typów informacji poufnych w źródłach skonfigurowanych w organizacji. Wartości dla każdego źródła innej firmy są wyświetlane w oddzielnych kolumnach w pliku .csv. Przykłady:
 
-    - **Wiadomość e-mail**: typy informacji poufnych wykryte w Exchange wiadomościach e-mail.
-    - **Teams**: typy informacji poufnych wykryte w kanałach Microsoft Teams i wiadomościach czatu.
-    - **Skype dla firm**: typy informacji poufnych wykryte w Skype komunikacji biznesowej.
-    - **Yammer**: typy informacji poufnych wykryte w Yammer skrzynkach odbiorczych, wpisach, czatach i odpowiedziach.
+    - **Wiadomość e-mail**: wykryto typy informacji poufnych w wiadomościach e-mail programu Exchange.
+    - **Teams**: typy informacji poufnych wykryte w kanałach usługi Microsoft Teams i wiadomościach czatu.
+    - **Skype dla firm**: wykryto typy informacji poufnych w komunikacji programu Skype dla firm.
+    - **Yammer**: typy informacji poufnych wykryte w skrzynkach odbiorczych usługi Yammer, wpisach, czatach i odpowiedziach.
     - **Źródła innych firm**: wykryto poufne typy informacji dla działań skojarzonych z łącznikami innych firm skonfigurowanymi w organizacji. Aby wyświetlić podział źródeł innych firm dla określonego typu informacji poufnych w raporcie, umieść wskaźnik myszy nad wartością typu informacji poufnych w kolumnie źródła innej firmy.
     - **Inne**: Typy informacji poufnych używane do wewnętrznego przetwarzania systemu. Wybranie lub usunięcie zaznaczenia tego źródła raportu nie wpłynie na żadne wartości.
 
@@ -144,7 +144,7 @@ Raporty szczegółów komunikatów zawierają następujące informacje dla każd
 W niektórych przypadkach należy przekazać informacje audytorom regulacyjnym lub zgodności, aby udowodnić nadzór nad działaniami użytkowników i komunikacją. Te informacje mogą być podsumowaniem wszystkich działań skojarzonych ze zdefiniowanymi zasadami organizacyjnymi lub w dowolnym momencie zmiany zasad zgodności komunikacji. Zasady zgodności komunikacji mają wbudowane ścieżki inspekcji umożliwiające pełną gotowość do wewnętrznych lub zewnętrznych inspekcji. Szczegółowe historie inspekcji każdej akcji tworzenia, edycji i usuwania są przechwytywane przez zasady komunikacji w celu dostarczenia dowodu procedur nadzoru.
 
 > [!IMPORTANT]
-> Aby zdarzenia zgodności z komunikacją były rejestrowane, należy włączyć inspekcję dla organizacji. Aby włączyć inspekcję, zobacz [Włączanie dziennika inspekcji](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Gdy działania wyzwalają zdarzenia przechwycone w dzienniku inspekcji Microsoft 365, wyświetlenie tych zdarzeń w zasadach zgodności komunikacji może potrwać do 48 godzin.
+> Aby zdarzenia zgodności z komunikacją były rejestrowane, należy włączyć inspekcję dla organizacji. Aby włączyć inspekcję, zobacz [Włączanie dziennika inspekcji](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Gdy działania wyzwalają zdarzenia przechwycone w dzienniku inspekcji platformy Microsoft 365, wyświetlenie tych zdarzeń w zasadach zgodności komunikacji może potrwać do 48 godzin.
 
 Aby wyświetlić działania aktualizacji zasad zgodności komunikacji, wybierz kontrolkę **Eksportuj aktualizacje zasad** na stronie głównej dla wszystkich zasad. Aby eksportować działania aktualizacji, musisz mieć przypisane role *administratora globalnego* lub *administratora zgodności komunikacji* . Ta akcja generuje plik inspekcji w formacie .csv, który zawiera następujące informacje:
 
@@ -188,7 +188,7 @@ Dopasowania zasad zgodności komunikacji są przechowywane w skrzynce pocztowej 
 
 Aby sprawdzić rozmiar skrzynki pocztowej nadzoru dla zasad, wykonaj następujące kroki:
 
-1. Użyj polecenia cmdlet [Połączenie-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) w module Exchange Online Programu PowerShell w wersji 2, aby nawiązać połączenie z programem Exchange Online programu PowerShell przy użyciu nowoczesnego uwierzytelniania.
+1. Użyj polecenia cmdlet [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) w module programu PowerShell v2 usługi Exchange Online, aby nawiązać połączenie z programem PowerShell usługi Exchange Online przy użyciu nowoczesnego uwierzytelniania.
 2. Uruchom następujące polecenie w programie PowerShell:
 
     ```PowerShell

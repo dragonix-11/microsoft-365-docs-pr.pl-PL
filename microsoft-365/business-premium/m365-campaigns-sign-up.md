@@ -1,5 +1,5 @@
 ---
-title: Tworzenie konta w celu Microsoft 365 kampanii
+title: Tworzenie konta w usłudze Microsoft 365 for Campaigns
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,21 +23,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Tworzenie konta krok po kroku w celu Microsoft 365 kampanii. Chroń swoją kampanię przed zagrożeniami cyberbezpieczeństwa, pocztą e-mail, danymi i komunikacją.
-ms.openlocfilehash: 08ef22374e69590a3535366463770815c2a2b0ee
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Krok po kroku zarejestruj się w usłudze Microsoft 365 for Campaigns. Chroń swoją kampanię przed zagrożeniami cyberbezpieczeństwa, pocztą e-mail, danymi i komunikacją.
+ms.openlocfilehash: b39d01bc6aa1cf138d230e95493d5f9eeb3cc51b
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096265"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893312"
 ---
-# <a name="sign-up-for-microsoft-365-for-campaigns"></a>Tworzenie konta w celu Microsoft 365 kampanii 
+# <a name="sign-up-for-microsoft-365-for-campaigns"></a>Tworzenie konta w usłudze Microsoft 365 for Campaigns 
 
-Oto jak ukończyć tworzenie konta w celu Microsoft 365 kampanii.
+Oto jak ukończyć tworzenie konta w usłudze Microsoft 365 for Campaigns.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Poproś o zaproszenie do Microsoft 365 kampanii, wykonując kroki opisane w [temacie Get Microsoft 365 for Campaigns (Pobieranie Microsoft 365 kampanii](get-microsoft-365-campaigns.md)).
+- Uzyskaj zaproszenie na platformę Microsoft 365 for Campaigns, wykonując kroki opisane w temacie [Pobieranie platformy Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 - Otwórz zaproszenie e-mail od firmy Microsoft. Zaproszenie ma unikatowy link do rejestracji dla Twojej organizacji. Potrzebujesz tego, aby uzyskać specjalne ceny kampanii.
 - Przygotuj wizytówkę kredytową i telefon.
 
@@ -46,10 +46,10 @@ Oto jak ukończyć tworzenie konta w celu Microsoft 365 kampanii.
 
 ## <a name="steps-to-sign-up"></a>Kroki tworzenia konta
 
-1. W zaproszeniu do Microsoft 365 wiadomości e-mail kampanii wybierz pozycję **ZAREJESTRUJ SWOJĄ ORGANIZACJĘ**. Spowoduje to przejście do strony rejestracji Microsoft 365.
+1. W zaproszeniu do wiadomości e-mail usługi Microsoft 365 for Campaigns wybierz pozycję **ZAREJESTRUJ SWOJĄ ORGANIZACJĘ**. Spowoduje to przejście do strony rejestracji platformy Microsoft 365.
 
     > [!NOTE]
-    > Jeśli masz już istniejącą subskrypcję Microsoft 365 dla firm i chcesz dodać do niej ofertę Microsoft 365 for Campaigns, przejdź do [pozycji Dodaj Microsoft 365 for Campaigns do istniejącej subskrypcji](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
+    > Jeśli masz już istniejącą subskrypcję platformy Microsoft 365 dla firm i chcesz dodać do niej ofertę Platformy Microsoft 365 for Campaigns, przejdź do [witryny Microsoft 365 for Campaigns do istniejącej subskrypcji](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
 
 2. **Na stronie Microsoft 365 Business** wprowadź szczegóły biznesowe. W przypadku **adresu e-mail firmy** użyj bieżącego adresu e-mail. Potrzebujemy tylko tego adresu, aby pozostawać z Tobą w kontakcie podczas procesu konfiguracji. Wybierz pozycję **Dalej**.
 
@@ -59,10 +59,10 @@ Oto jak ukończyć tworzenie konta w celu Microsoft 365 kampanii.
 
     2. W **obszarze Twoja firma** wpisz nazwę kampanii, dla którą pracujesz. Na przykład `ContosoCampaign`. Jeśli masz już domenę, użyj tej nazwy tutaj. 
  
-    3. W **obszarze Wybierz domenę** **wybierz na** razie onmicrosoft.com. Później możemy skonfigurować cię z domeną lub ułatwić nawiązanie połączenia Microsoft 365 z już posiadaną domeną.
+    3. W **obszarze Wybierz domenę** **wybierz na** razie onmicrosoft.com. Możemy skonfigurować cię z domeną później lub ułatwić nawiązanie połączenia platformy Microsoft 365 z już posiadaną domeną.
 
     > [!IMPORTANT]
-    > Nazwa wprowadzona dla `.onmicrosoft.com` domeny będzie używana dla wszystkich adresów URL SharePoint i OneDrive i być może nie będzie można jej zmienić. Upewnij się, że nazwa została uwzględniona z perspektywy znakowania i poprawnie ją wpisać.
+    > Nazwa wprowadzona dla `.onmicrosoft.com` domeny będzie używana dla wszystkich adresów URL programu SharePoint i OneDrive i być może nie będzie można jej zmienić. Upewnij się, że nazwa została uwzględniona z perspektywy znakowania i poprawnie ją wpisać.
 
     4. Utwórz hasło i wybierz pozycję **Utwórz moje konto**.
  
@@ -85,7 +85,7 @@ Oto jak ukończyć tworzenie konta w celu Microsoft 365 kampanii.
 
     2. Jeśli na razie chcesz skonfigurować tylko siebie, wybierz pozycję **Dalej**. 
 
-    3. Opcjonalnie: dodaj teraz dodatkowe licencje, zmieniając liczbę w polu **użytkownika** . [Personel, z którego pracujesz, może w dowolnym momencie otrzymać licencje na Microsoft 365](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json).
+    3. Opcjonalnie: dodaj teraz dodatkowe licencje, zmieniając liczbę w polu **użytkownika** . [Pracownikom, z których pracujesz, można w dowolnym momencie przypisać licencje na platformę Microsoft 365](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) .
 
 7. **Jak chcesz zapłacić? strona**: wybierz pozycję **Nowa karta kredytowa**, wprowadź szczegóły wizytówki i wybierz pozycję **Umieść zamówienie**. Jeśli wolisz, możesz również użyć konta bankowego.
 
@@ -95,14 +95,14 @@ Kroki tworzenia konta zostały ukończone.
 
 Jeśli chcesz kontynuować kolejne kroki, wybierz pozycję **Rozpocznij instalację** lub wróć później, aby zakończyć kroki. Gdy wszystko będzie gotowe, sprawdź adres e-mail (z kroku 2), aby znaleźć nazwę użytkownika i hasło, aby można było zalogować się następnym razem. Są one nazywane poświadczeniami administratora lub administratora globalnego.
 
-## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>Kroki dodawania Microsoft 365 kampanii do istniejącej subskrypcji
+## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>Kroki dodawania usługi Microsoft 365 for Campaigns do istniejącej subskrypcji
 
-Jeśli masz już istniejącą subskrypcję Microsoft 365 dla firm, na przykład Microsoft 365 Business Standard, możesz użyć oferty Microsoft 365 for Campaigns, aby dodać do niej licencje.
+Jeśli masz już istniejącą subskrypcję platformy Microsoft 365 dla firm, na przykład Microsoft 365 Business Standard, możesz użyć oferty Microsoft 365 for Campaigns, aby dodać do niej licencje.
 
 > [!IMPORTANT]
-> Nie można dodać oferty Microsoft 365 for Campaigns do istniejącego konta Microsoft 365.
+> Nie można dodać oferty platformy Microsoft 365 for Campaigns do istniejącego konta platformy Microsoft 365.
 
-1. W zaproszeniu do Microsoft 365 wiadomości e-mail kampanii wybierz pozycję **ZAREJESTRUJ SWOJĄ ORGANIZACJĘ**. Spowoduje to przejście do strony rejestracji Microsoft 365.
+1. W zaproszeniu do wiadomości e-mail usługi Microsoft 365 for Campaigns wybierz pozycję **ZAREJESTRUJ SWOJĄ ORGANIZACJĘ**. Spowoduje to przejście do strony rejestracji platformy Microsoft 365.
 
 2. Na stronie **Witamy sprawdźmy** , czy **chcesz dodać tę opcję do istniejącej subskrypcji? Zaloguj się**.
     
@@ -118,6 +118,6 @@ Po wykonaniu tych kroków możesz [przystąpić do przypisywania nowych licencji
 
 ## <a name="next-steps"></a>Następne kroki
 
-1. [Zaloguj się do Microsoft 365 kampanii](m365-campaigns-sign-in.md).
+1. [Zaloguj się do platformy Microsoft 365 for Campaigns](m365-campaigns-sign-in.md).
 
-2. [Zapoznaj się z procesem z przewodnikiem, aby zapoznać się z podstawową konfiguracją](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+2. [Zapoznaj się z procesem z przewodnikiem, aby zapoznać się z podstawową konfiguracją](m365bp-setup.md#guided-setup-process).

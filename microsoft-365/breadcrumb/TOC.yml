@@ -2,16 +2,19 @@
   tocHref: /
   topicHref: /microsoft-365/index
   items:
-    - name: Latarnia morska
+    - name: Lighthouse
       tocHref: /microsoft-365/lighthouse/
       topicHref: /microsoft-365/lighthouse/m365-lighthouse-overview
+    - name: SharePoint Syntex
+      tocHref: /microsoft-365/contentunderstanding/
+      topicHref: /microsoft-365/contentunderstanding/index
 - name: Microsoft Viva
   tocHref: /microsoft-365/viva/
   topicHref: /microsoft-365/viva/index
   items:
-    - name: Microsoft Viva tematów
+    - name: Tematy Microsoft Viva
       tocHref: /microsoft-365/knowledge/
       topicHref: /microsoft-365/knowledge/index
-    - name: Microsoft Viva Edukacja
+    - name: Nauka Microsoft Viva
       tocHref: /microsoft-365/learning/
       topicHref: /microsoft-365/learning/index

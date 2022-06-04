@@ -1,5 +1,5 @@
 ---
-title: Przeglądanie akcji korygowania w Microsoft 365 Business Premium
+title: Przeglądanie akcji korygowania w usłudze Microsoft 365 Business Premium
 description: Zobacz, jak wyświetlać korygowania, które zostały wykonane automatycznie lub oczekują na zatwierdzenie w Centrum akcji
 search.appverid: MET150
 author: denisebmsft
@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: df99f73275e0aa83216bd1de101638dee628f0f2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1e5d4e278bc70fdf63c951598bf12f88816a43d0
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091902"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893234"
 ---
-# <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Przeglądanie akcji korygowania w Microsoft 365 Business Premium
+# <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Przeglądanie akcji korygowania w usłudze Microsoft 365 Business Premium
 
-W porządku, wykryto naruszenie zabezpieczeń, ale co robisz? To zależy od jego natury. 
+W porządku, wykryto naruszenie zabezpieczeń, ale co robisz? To zależy od jego natury.
 
 Przykłady akcji korygowania obejmują wysyłanie pliku do kwarantanny, zatrzymywanie procesu przed uruchomieniem lub całkowite usunięcie zaplanowanego zadania. Wszystkie akcje korygowania są śledzone w centrum akcji, które znajduje się pod adresem [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
 
@@ -41,7 +41,7 @@ Przykłady akcji korygowania obejmują wysyłanie pliku do kwarantanny, zatrzymy
 
 ## <a name="how-to-use-your-action-center"></a>Jak używać centrum akcji
 
-1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+1. Przejdź do portalu usługi Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
 2. W okienku nawigacji wybierz pozycję **Centrum akcji**.
 

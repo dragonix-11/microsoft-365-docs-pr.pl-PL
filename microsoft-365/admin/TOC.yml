@@ -50,7 +50,7 @@
         - name: Instalowanie aplikacji pakietu Office
           href: setup/install-applications.md
         - name: Skonfiguruj urządzenia z systemem Windows
-          href: setup/set-up-windows-devices.md
+          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
         - name: Konfigurowanie urządzeń przenośnych
           href: setup/set-up-mobile-devices.md
         - name: Skonfiguruj program Outlook dla platformy Microsoft 365 dla Firm (klip wideo)

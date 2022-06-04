@@ -1,5 +1,5 @@
 ---
-title: Zwiększanie ochrony przed zagrożeniami dla Microsoft 365 Business Premium
+title: Zwiększanie ochrony przed zagrożeniami dla platformy Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,26 +24,26 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Uzyskaj pomoc dotyczącą zwiększania poziomu ochrony w Microsoft 365 Business Premium
-ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+description: Uzyskaj pomoc dotyczącą zwiększania poziomu ochrony w usłudze Microsoft 365 Business Premium
+ms.openlocfilehash: dfbde871e31bd4c8e47fb9365ad4da7a9a1f6226
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863613"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893190"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Zwiększanie ochrony przed zagrożeniami dla Microsoft 365 Business Premium
+# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Zwiększanie ochrony przed zagrożeniami dla platformy Microsoft 365 Business Premium
 
-W tym celu zwiększysz ochronę przed zagrożeniami za pomocą Microsoft 365 Business Premium. Ochrona firmy przed wyłudzaniem informacji, złośliwym oprogramowaniem i innymi zagrożeniami ma kluczowe znaczenie. Ten cel obejmuje następujące informacje:
+W tym celu zwiększysz ochronę przed zagrożeniami za pomocą usługi Microsoft 365 Business Premium. Ochrona firmy przed wyłudzaniem informacji, złośliwym oprogramowaniem i innymi zagrożeniami ma kluczowe znaczenie. Ten cel obejmuje następujące informacje:
 
-- [Wstępnie skonfigurowane zasady zabezpieczeń](#review-and-apply-preset-security-policies) , które mogą zaoszczędzić dużo czasu podczas konfigurowania i konfigurowania
+- [Ustawienia wstępne zasad zabezpieczeń](#review-and-apply-preset-security-policies) , które mogą zaoszczędzić dużo czasu podczas konfiguracji i konfiguracji.
 - [Niestandardowe zasady zabezpieczeń](#create-custom-security-policies) , które można zdefiniować zgodnie z potrzebami biznesowymi
-- [Jak dostosować ustawienia udostępniania dla plików i folderów SharePoint i OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
-- [Zasady alertów](#review-your-alert-policies) , które monitorują określone pliki i sposób ich użycia. 
+- Jak [dostosować ustawienia udostępniania plików i folderów programu SharePoint oraz usługi OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [Zasady alertów](#review-your-alert-policies) , które monitorują określone pliki i sposób ich użycia.
 
 ## <a name="review-and-apply-preset-security-policies"></a>Przeglądanie i stosowanie wstępnie ustawionych zasad zabezpieczeń
 
-Twoja subskrypcja obejmuje [wstępnie ustawione zasady zabezpieczeń](../security/office-365-security/preset-security-policies.md) , które używają zalecanych ustawień ochrony przed spamem, ochroną przed złośliwym oprogramowaniem i ochroną przed wyłudzaniem informacji. Domyślnie włączona jest wbudowana ochrona; Należy jednak rozważyć zastosowanie standardowej lub ścisłej ochrony w celu zwiększenia bezpieczeństwa. 
+Twoja subskrypcja obejmuje [wstępnie ustawione zasady zabezpieczeń](../security/office-365-security/preset-security-policies.md) , które używają zalecanych ustawień ochrony przed spamem, ochroną przed złośliwym oprogramowaniem i ochroną przed wyłudzaniem informacji. Domyślnie włączona jest wbudowana ochrona; Należy jednak rozważyć zastosowanie standardowej lub ścisłej ochrony w celu zwiększenia bezpieczeństwa.
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Zrzut ekranu przedstawiający wstępnie ustawione zasady zabezpieczeń.":::
 
@@ -55,14 +55,14 @@ Twoja subskrypcja obejmuje [wstępnie ustawione zasady zabezpieczeń](../securit
 Wstępnie ustawione zasady zabezpieczeń zapewniają ochronę poczty e-mail i zawartości współpracy. Te zasady składają się z następujących elementów:
 
 - *Profile*, które określają poziom ochrony
-- *Zasady* (takie jak ochrona przed spamem, ochrona przed złośliwym oprogramowaniem, ochrona przed wyłudzaniem informacji, ustawienia fałszowania, personifikacja, Sejf załączniki i linki Sejf)
+- *Zasady* (takie jak ochrona przed spamem, ochrona przed złośliwym oprogramowaniem, ochrona przed wyłudzaniem informacji, ustawienia fałszowania, personifikacja, bezpieczne załączniki i bezpieczne linki)
 - *Ustawienia zasad* (takie jak grupy, użytkownicy lub domeny w celu otrzymywania zasad i wszelkich wyjątków)
 
 Poniższa tabela zawiera podsumowanie poziomów ochrony i wstępnie ustawionych typów zasad.
 
 | Poziom ochrony | Opis |
 |:---|:---|
-| **Standardowa ochrona** <br/>(*zalecane dla większości firm*) | Standardowa ochrona używa profilu punktu odniesienia, który jest odpowiedni dla większości użytkowników. Standardowa ochrona obejmuje ochronę przed spamem, ochroną przed złośliwym oprogramowaniem, ochronę przed wyłudzaniem informacji, ustawienia fałszowania, ustawienia personifikacji, linki Sejf i zasady załączników Sejf.  |
+| **Standardowa ochrona** <br/>(*zalecane dla większości firm*) | Standardowa ochrona używa profilu punktu odniesienia, który jest odpowiedni dla większości użytkowników. Standardowa ochrona obejmuje ochronę przed spamem, ochroną przed złośliwym oprogramowaniem, ochronę przed wyłudzaniem informacji, ustawienia fałszowania, ustawienia personifikacji, bezpieczne linki i zasady bezpiecznych załączników.  |
 | **Ścisła ochrona**  | Ścisła ochrona obejmuje te same rodzaje zasad co standardowa ochrona, ale z bardziej rygorystycznymi ustawieniami. Jeśli Twoja firma musi spełniać dodatkowe wymagania lub przepisy dotyczące zabezpieczeń, rozważ zastosowanie ścisłej ochrony co najmniej do użytkowników o priorytecie lub do celów o wysokiej wartości. |
 | **Wbudowana ochrona** | Chroni przed złośliwymi linkami i załącznikami w wiadomości e-mail. Wbudowana ochrona jest domyślnie włączona i stosowana do wszystkich użytkowników.  |
 
@@ -85,20 +85,20 @@ Jeśli użytkownikom przypisano wiele zasad, do zastosowania zasad jest używana
 
 Aby dowiedzieć się więcej na temat wstępnie ustawionych zasad zabezpieczeń, zobacz [Jakie wstępnie ustawione zasady zabezpieczeń są tworzone](../security/office-365-security/preset-security-policies.md#what-preset-security-policies-are-made-of).
 
-### <a name="how-do-i-assign-preset-security-policies-to-users"></a>Jak mogę przypisać wstępnie ustawione zasady zabezpieczeń do użytkowników?
+### <a name="how-do-i-assign-preset-security-policies-to-users"></a>Jak przypisać wstępnie ustawione zasady zabezpieczeń użytkownikom?
 
 > [!IMPORTANT]
-> Przed rozpoczęciem upewnij się, że masz jedną z następujących ról przypisanych w Exchange Online (która jest uwzględniona w twojej subskrypcji):
+> Przed rozpoczęciem upewnij się, że masz jedną z następujących ról przypisanych w usłudze Exchange Online (która jest uwzględniona w twojej subskrypcji):
 > 
 > - Administrator globalny
 > - Zarządzanie organizacją
 > - Administrator zabezpieczeń
 > 
-> Aby dowiedzieć się więcej, zobacz [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo) i [Informacje o rolach administratora](../admin/add-users/about-admin-roles.md).
+> Aby dowiedzieć się więcej, zobacz [Uprawnienia w usłudze Exchange Online](/exchange/permissions-exo/permissions-exo) i [Informacje o rolach administratora](../admin/add-users/about-admin-roles.md).
 
 Aby przypisać wstępnie ustawione zasady zabezpieczeń, wykonaj następujące kroki:
 
-1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+1. Przejdź do portalu usługi Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
 2. Przejdź do **obszaru Zasady współpracy** \> & poczty e-mail **& Reguły** \> **zasad** \> zagrożeń **Wstępnie ustawione zasady zabezpieczeń** w sekcji **Szablony zasad** . (Aby przejść bezpośrednio do strony **Wstępnie ustawione zasady zabezpieczeń** , użyj polecenia <https://security.microsoft.com/presetSecurityPolicies>.)
 
@@ -117,7 +117,7 @@ Aby przypisać wstępnie ustawione zasady zabezpieczeń, wykonaj następujące k
 
    Po zakończeniu wybierz pozycję **Dalej**.
 
-4. Na **Ochrona usługi Office 365 w usłudze Defender ochrony mają zastosowanie do** strony w celu zidentyfikowania wewnętrznych adresatów, do których mają zastosowanie zasady (warunki adresatów). Określ użytkowników, grupy i domeny, tak jak w poprzednim kroku.
+4. Na stronie **Ochrona usługi Defender dla usługi Office 365 mają zastosowanie do** identyfikowania wewnętrznych adresatów, do których mają zastosowanie zasady (warunki adresatów). Określ użytkowników, grupy i domeny, tak jak w poprzednim kroku.
 
    Po zakończeniu kliknij przycisk **Dalej**.
 
@@ -126,7 +126,7 @@ Aby przypisać wstępnie ustawione zasady zabezpieczeń, wykonaj następujące k
 > [!TIP]
 > Aby dowiedzieć się więcej na temat przypisywania wstępnie ustawionych zasad zabezpieczeń, zobacz następujące artykuły:
 > - [Przypisywanie wstępnie ustawionych zasad zabezpieczeń do użytkowników](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users)
-> - [Zalecane ustawienia zawartości poczty e-mail i współpracy](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (Microsoft 365 Business Premium obejmują Exchange Online Protection i Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1)
+> - [Zalecane ustawienia zawartości poczty e-mail i współpracy](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (platforma Microsoft 365 Business Premium obejmuje usługę Exchange Online Protection i usługę Microsoft Defender dla usługi Office 365 Plan 1)
 
 ## <a name="create-custom-security-policies"></a>Tworzenie niestandardowych zasad zabezpieczeń
 
@@ -137,13 +137,13 @@ Skorzystaj z naszego przewodnika szybkiego startu [Ochrona przed zagrożeniami](
 - [Ochrona przed złośliwym kodem](../security/office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [Zaawansowana ochrona przed złośliwym kodem](../security/office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Ochrona przed atakami przeciwspamowych](../security/office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [Sejf łącza i załączniki Sejf](../security/office-365-security/protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Bezpieczne linki i bezpieczne załączniki](../security/office-365-security/protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
-## <a name="set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>Ustawianie ustawień udostępniania plików i folderów SharePoint i OneDrive
+## <a name="set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>Ustawianie ustawień udostępniania plików i folderów programu SharePoint i usługi OneDrive
 
-Domyślnie poziomy udostępniania są ustawione na najbardziej permisywny poziom dla SharePoint i OneDrive. Zalecamy zmianę ustawień domyślnych, aby lepiej chronić firmę.
+Domyślnie poziomy udostępniania są ustawione na najbardziej permisywny poziom zarówno dla programu SharePoint, jak i usługi OneDrive. Zalecamy zmianę ustawień domyślnych, aby lepiej chronić firmę.
 
-1. Przejdź do <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">obszaru **Udostępnianie** w centrum administracyjnym SharePoint</a> i zaloguj się przy użyciu konta z [uprawnieniami administratora dla organizacji](/sharepoint/sharepoint-admin-role).
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">obszaru **Udostępnianie** w centrum administracyjnym programu SharePoint</a> i zaloguj się przy użyciu konta z [uprawnieniami administratora dla organizacji](/sharepoint/sharepoint-admin-role).
  
 2. W obszarze **Udostępnianie zewnętrzne** określ poziom udostępniania. (Zalecamy użycie **metody Najmniej permisywnej** , aby zapobiec udostępnianiu zewnętrznemu).
 
@@ -158,15 +158,15 @@ Domyślnie poziomy udostępniania są ustawione na najbardziej permisywny poziom
 
 ## <a name="review-your-alert-policies"></a>Przeglądanie zasad alertów
 
-Zasady alertów są przydatne do śledzenia działań użytkowników i administratorów, potencjalnych zagrożeń związanych ze złośliwym oprogramowaniem i zdarzeń utraty danych w firmie. Subskrypcja zawiera zestaw zasad domyślnych, ale można również tworzyć niestandardowe. Jeśli na przykład przechowujesz ważny plik w SharePoint nie chcesz, aby ktokolwiek udostępniał go zewnętrznie, możesz utworzyć powiadomienie, które powiadomi Cię, jeśli ktoś go udostępni.
+Zasady alertów są przydatne do śledzenia działań użytkowników i administratorów, potencjalnych zagrożeń związanych ze złośliwym oprogramowaniem i zdarzeń utraty danych w firmie. Subskrypcja zawiera zestaw zasad domyślnych, ale można również tworzyć niestandardowe. Jeśli na przykład przechowujesz w programie SharePoint ważny plik, który nie chce, aby ktokolwiek udostępniał go zewnętrznie, możesz utworzyć powiadomienie, które powiadomi Cię, jeśli ktoś go udostępni.
 
-Na poniższej ilustracji przedstawiono niektóre z domyślnych zasad dołączonych do Microsoft 365 Business Premium.
+Na poniższej ilustracji przedstawiono niektóre z domyślnych zasad dołączonych do usługi Microsoft 365 Business Premium.
 
-![Domyślne zasady alertów dołączone do Microsoft 365.](../media/alertpolicies.png)
+![Domyślne zasady alertów dołączone do platformy Microsoft 365.](../media/alertpolicies.png)
 
 ### <a name="view-your-alert-policies"></a>Wyświetlanie zasad alertów
 
-1. Przejdź do portal zgodności Microsoft Purview i [https://compliance.microsoft.com](https://compliance.microsoft.com) zaloguj się.
+1. Przejdź do portalu zgodności usługi Microsoft Purview pod adresem [https://compliance.microsoft.com](https://compliance.microsoft.com) i zaloguj się.
 
 2. W okienku nawigacji wybierz pozycję **Zasady**, a następnie wybierz pozycję **Zasady alertów**.
 
@@ -179,12 +179,12 @@ Na poniższej ilustracji przedstawiono niektóre z domyślnych zasad dołączony
 
 ### <a name="how-to-view-alerts"></a>Jak wyświetlać alerty
 
-W zależności od określonego alertu możesz wyświetlić alerty w portalu Microsoft 365 Defender lub w portal zgodności Microsoft Purview.
+W zależności od określonego alertu możesz wyświetlić alerty w portalu usługi Microsoft 365 Defender lub portalu zgodności usługi Microsoft Purview.
 
 | Typ alertu  | Co robić  |
 |---------|---------|
-| Alert zabezpieczeń, na przykład gdy użytkownik kliknie złośliwy link, wiadomość e-mail zostanie zgłoszona jako złośliwe oprogramowanie lub phish lub urządzenie zostanie wykryte jako zawierające złośliwe oprogramowanie     | Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> i w obszarze **Współpraca & poczty e-mail** wybierz pozycję **Zasady & reguły** > **alertów**. Alternatywnie możesz przejść bezpośrednio do <https://security.microsoft.com/alertpolicies>. |
-| Alert zgodności, na przykład gdy użytkownik udostępnia poufne lub poufne informacje (alert zapobiegania utracie danych) lub występuje nietypowa ilość zewnętrznego udostępniania plików (alert dotyczący ładu informacji)    | Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>, a następnie wybierz pozycję **Zasady** >  > **Alerty zasad.**  |
+| Alert zabezpieczeń, na przykład gdy użytkownik kliknie złośliwy link, wiadomość e-mail zostanie zgłoszona jako złośliwe oprogramowanie lub phish lub urządzenie zostanie wykryte jako zawierające złośliwe oprogramowanie     | Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu usługi Microsoft 365 Defender</a> i w obszarze **Współpraca & poczty e-mail** wybierz pozycję **Zasady & reguły** > **alertów**. Alternatywnie możesz przejść bezpośrednio do <https://security.microsoft.com/alertpolicies>. |
+| Alert zgodności, na przykład gdy użytkownik udostępnia poufne lub poufne informacje (alert zapobiegania utracie danych) lub występuje nietypowa ilość zewnętrznego udostępniania plików (alert dotyczący ładu informacji)    | Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>, a następnie wybierz pozycję **Zasady** > **alertów** > **alertów zasad**.  |
 
 Aby uzyskać więcej informacji, zobacz [Wyświetlanie alertów](../compliance/alert-policies.md#view-alerts).
 
@@ -192,9 +192,9 @@ Aby uzyskać więcej informacji, zobacz [Wyświetlanie alertów](../compliance/a
 
 Możesz uniemożliwić użytkownikom w organizacji udostępnianie ich kalendarzy. Możesz również zarządzać poziomem szczegółowości, który mogą udostępniać. Na przykład można ograniczyć udostępnianie tylko do wolnych/zajętych czasów.
 
-1. Przejdź [do ustawień organizacji w Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2053743) i zaloguj się.
+1. Przejdź [do ustawień organizacji w centrum administracyjnym platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2053743) i zaloguj się.
 
-2. Wybierz pozycję **Kalendarz** i wybierz, czy osoby w organizacji mogą udostępniać swoje kalendarze osobom spoza firmy, które mają Office 365, Exchange, czy innym osobom.
+2. Wybierz pozycję **Kalendarz** i wybierz, czy osoby w organizacji mogą udostępniać swoje kalendarze osobom spoza usługi Office 365 lub Exchange, czy innym osobom.
 
    Zalecamy wyczyszczenie opcji **Udostępnianie zewnętrzne** .
 
@@ -210,8 +210,8 @@ Możesz uniemożliwić użytkownikom w organizacji udostępnianie ich kalendarzy
 
    ![Zrzut ekranu przedstawiający udostępnianie kalendarza bezpłatnie/zajętości wszystkim osobom.](../media/sharefreebusy.png)
 
-Jeśli użytkownicy mogą udostępniać swoje kalendarze, zapoznaj się z [tymi instrukcjami dotyczącymi](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) udostępniania z Outlook w sieci Web.
+Jeśli użytkownicy mogą udostępniać swoje kalendarze, zapoznaj się z [tymi instrukcjami dotyczącymi](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) udostępniania z programu Outlook w Internecie.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz rozpocznijmy misję [**konfigurowania urządzeń BYOD**](m365bp-devices-overview.md).
+Teraz [**skonfigurujmy te niezarządzane urządzenia BYOD**](m365bp-devices-overview.md).

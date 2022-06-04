@@ -11,18 +11,18 @@ metadata:
   ms.author: efrene
   ms.date: 05/23/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 181254d39d245608bae690f2fdb78f7a6a5c0fa0
-  ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+  ms.openlocfilehash: b8044c7275d4dcae36c1559e4ed802e270679b9c
+  ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 05/24/2022
-  ms.locfileid: "65663387"
+  ms.lasthandoff: 06/04/2022
+  ms.locfileid: "65892755"
 landingContent:
 - title: Wprowadzenie
   linkLists:
   - linkListType: video
     links:
-    - text: Co to jest Microsoft 365
+    - text: Co to jest platforma Microsoft 365
       url: admin-overview/what-is-microsoft-365.md
     - text: Omówienie konfiguracji
       url: setup/plan-your-setup.md
@@ -36,29 +36,29 @@ landingContent:
       url: admin-overview/sign-up-for-office-365.md
     - text: Konfigurowanie usługi
       url: /microsoft-365/business-premium/m365bp-setup
-    - text: Bezpieczne komputery Windows 10
+    - text: Zabezpieczanie komputerów z systemem Windows 10
       url: setup/secure-win-10-pcs.md
 - title: Konfiguracja urządzenia
   linkLists:
   - linkListType: video
     links:
-    - text: Połączenie komputerów do Microsoft 365
-      url: setup/set-up-windows-devices.md
-    - text: Instalowanie aplikacji Microsoft Office
+    - text: Łączenie komputerów z platformą Microsoft 365
+      url: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
+    - text: Instalowanie aplikacji pakietu Microsoft Office
       url: setup/install-applications.md
-    - text: Konfigurowanie Outlook na potrzeby poczty e-mail
+    - text: Konfigurowanie programu Outlook na potrzeby poczty e-mail
       url: setup/setup-outlook.md
     - text: Importowanie i przekierowywanie poczty
       url: setup/migrate-email-and-contacts-admin.md
-    - text: Przenoszenie plików do OneDrive
+    - text: Przenoszenie plików do usługi OneDrive
       url: setup/files-to-onedrive.md
-    - text: Przenoszenie plików firmowych do SharePoint
+    - text: Przenoszenie plików firmowych do programu SharePoint
       url: setup/files-to-sharepoint.md
 - title: Mobile
   linkLists:
   - linkListType: video
     links:
-    - text: Pobieranie aplikacji mobilnej Administracja
+    - text: Pobieranie aplikacji mobilnej administratora
       url: admin-overview/admin-mobile-app.md
 - title: Głos biznesowy
   linkLists:
@@ -118,17 +118,17 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: Zabezpieczanie urządzeń Windows 10 Pro
+    - text: Zabezpieczanie urządzeń z systemem Windows 10 Pro
       url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
-    - text: Zabezpieczanie aplikacji Office na iOS
+    - text: Zabezpieczanie aplikacji pakietu Office w systemie iOS
       url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
 - title: Zgodność & zabezpieczeń
   linkLists:
   - linkListType: video
     links:
-    - text: Omówienie zabezpieczeń Microsoft 365 Business Premium
+    - text: Omówienie zabezpieczeń usługi Microsoft 365 Business Premium
       url: security-and-compliance/secure-your-business-data.md
-    - text: (NOWY!) Microsoft Defender dla Firm
+    - text: (NOWY!) Microsoft Defender dla firm
       url: /microsoft-365/security/defender-business/index.yml
     - text: Zabezpieczanie kont pracowników przy użyciu uwierzytelniania wieloskładnikowego
       url: security-and-compliance/set-up-multi-factor-authentication.md
@@ -158,13 +158,13 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: Konfigurowanie Microsoft 365 migracji obszaru roboczego Google
+    - text: Konfigurowanie migracji platformy Microsoft 365 do obszaru roboczego Google
       url: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
-    - text: Dodawanie domeny obszaru roboczego Google do Microsoft 365
+    - text: Dodawanie domeny obszaru roboczego Google do platformy Microsoft 365
       url: moveto-microsoft-365/add-google-domain.md
     - text: Migrowanie służbowych wiadomości e-mail i kalendarza z obszaru roboczego Google
       url: moveto-microsoft-365/migrate-email.md
-    - text: Połączenie domenę do Microsoft 365 dla firm
+    - text: Łączenie domeny z usługą Microsoft 365 dla firm
       url: moveto-microsoft-365/connect-domain-tom365.md
-    - text: Migrowanie plików Google do Microsoft 365 dla firm za pomocą programu Migration Manager
+    - text: Migrowanie plików Google do usługi Microsoft 365 dla firm za pomocą programu Migration Manager
       url: moveto-microsoft-365/migrate-files-migration-manager.md
