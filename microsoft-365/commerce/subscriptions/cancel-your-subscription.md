@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Dowiedz się, jak anulować subskrypcje usług Dynamics 365, Intune, Power Platform i Microsoft 365 dla firm w wersji próbnej lub płatnych subskrypcjach w centrum administracyjnym platformy Microsoft 365.
-ms.date: 04/29/2022
-ms.openlocfilehash: 4f01946c00a7497f23d086422ffa90718df78a9f
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.date: 06/02/2022
+ms.openlocfilehash: ea2a3bf0e77d11733e19b27f19bef378f691fd73
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145195"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873671"
 ---
 # <a name="cancel-your-business-subscription"></a>Anuluj subskrypcję biznesową
 
@@ -56,6 +56,9 @@ Anulowanie i otrzymywanie zwrotu lub proporcjonalnej kwoty jest możliwe tylko w
 Jeśli musisz anulować subskrypcję w ciągu siedmiu dni od jej rozpoczęcia lub odnowienia, przejdź do [Kroki, aby anulować subskrypcję](#steps-to-cancel-your-subscription) w dalszej części tego artykułu.
 
 Jeśli upłynie więcej niż siedem dni, [wyłącz rozliczanie cykliczne](renew-your-subscription.md). Uniemożliwia to odnowienie subskrypcji po zakończeniu jej okresu.  Zachowasz dostęp do swoich produktów i usług przez pozostałą część subskrypcji. Jeśli masz roczną subskrypcję i płacisz co miesiąc, opłata jest naliczana co miesiąc za pozostałą część okresu subskrypcji.
+
+> [!NOTE]
+> Anuluj bezpłatną wersję próbną w dowolnym momencie, aby zatrzymać przyszłe opłaty. Po 1-miesięcznym bezpłatnym okresie próbnym zostanie naliczona odpowiednia opłata za subskrypcję.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>Jeśli nie masz profilu rozliczeniowego
 

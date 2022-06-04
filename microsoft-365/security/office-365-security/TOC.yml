@@ -204,7 +204,7 @@
               href: attack-simulation-training-get-started.md
             - name: Symulowanie ataku polegającego na wyłudzaniu informacji dzięki szkoleniu z symulacji ataku
               href: attack-simulation-training.md
-            - name: Ładunki do szkolenia z symulacji ataków
+            - name: Ładunki na potrzeby trenowania symulacji ataków
               href: attack-simulation-training-payloads.md
             - name: Automatyzacje symulacji w szkoleniu z symulacji ataków
               href: attack-simulation-training-simulation-automations.md
@@ -396,15 +396,15 @@
           href: quarantine-faq.yml
     - name: Przewodniki krok po kroku
       items:
-        - name: (Fałszywie negatywne) Jak obsługiwać przy pomocy usługi Microsoft Defender dla Office 365 złośliwe wiadomości e-mail dostarczane do odbiorców
+        - name: (Fałszywie negatywne) Jak obsługiwać złośliwe wiadomości e-mail dostarczane do adresatów przy użyciu usługi Microsoft Defender dla Office 365
           href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
-        - name: '(Fałszywie pozytywne) Jak obsługiwać wiarygodne wiadomości e-mail, które są blokowane przed dostarczeniem przy użyciu usługi Microsoft Defender dla Office 365'
+        - name: (Fałszywie pozytywne) Jak obsługiwać wiarygodne wiadomości e-mail blokowane przed dostarczaniem przy użyciu usługi Microsoft Defender dla Office 365
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
         - name: Jak skonfigurować uprawnienia i zasady kwarantanny
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
-        - name: Zapewnienie zawsze optymalnych mechanizmów kontroli zabezpieczeń z ustawionymi wstępnie zasadami zabezpieczeń
+        - name: 'Zapewnianie, że zawsze masz optymalne mechanizmy kontroli zabezpieczeń ze wstępnie ustawionymi zasadami zabezpieczeń'
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
-        - name: Jak uruchamiać symulacje ataków dla zespołu
+        - name: Jak uruchamiać symulacje ataków dla swojego zespołu
           href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
         - name: Jak skonfigurować zautomatyzowane ataki i szkolenia w ramach szkolenia z symulacji ataków
           href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
@@ -452,3 +452,5 @@
           href: /cloud-app-security
         - name: Defender dla Firm
           href: ../defender-business/index.yml
+        - name: Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender
+          href: ../defender-vulnerability-management/index.yml
