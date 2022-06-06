@@ -4,6 +4,8 @@
       href: index.md
     - name: Jak platforma Microsoft 365 pomaga Twojej firmie
       href: m365bp-secure-users.md
+    - name: Podręcznik wersji próbnej platformy Microsoft 365 Business Premium
+      href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Uzyskiwanie usługi Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
     - name: Pobieranie platformy Microsoft 365 for Campaigns
@@ -17,13 +19,7 @@
         - name: Konfigurowanie usługi Microsoft 365 Business Premium
           href: m365bp-setup.md
         - name: Konfigurowanie platformy Microsoft 365 for Campaigns
-          items:
-            - name: Tworzenie konta
-              href: m365-campaigns-sign-up.md
-            - name: Logowanie się
-              href: m365-campaigns-sign-in.md
-            - name: Dostosowywanie strony logowania
-              href: m365-customize-sign-in.md
+          href: m365-campaigns-setup.md
     - name: Zwiększanie ochrony zabezpieczeń
       items:
         - name: Omówienie
@@ -51,7 +47,7 @@
         - name: Omówienie
           href: m365bp-protect-email-overview.md
         - name: Ochrona przed wyłudzaniem informacji i innymi atakami
-          href: avoid-phishing-and-attacks.md
+          href: m365bp-avoid-phishing-and-attacks.md
         - name: Wysyłanie zaszyfrowanej wiadomości e-mail
           href: send-encrypted-email.md
     - name: Bezpieczna współpraca i udostępnianie
@@ -78,14 +74,16 @@
           href: m365bp-onboard-devices-mdb.md
         - name: "Ochrona urządzeń z\_systemem Windows"
           items:
-            - name: "Ustawienia ochrony dla urządzeń z\_systemem Windows"
-              href: m365bp-protection-settings-for-windows-10-devices.md
             - name: "Zabezpieczanie urządzeń z\_systemem Windows"
               href: m365bp-secure-windows-devices.md
             - name: "Zarządzanie urządzeniami z\_systemem Windows"
               href: m365bp-manage-windows-devices.md
             - name: Przygotowywanie do wdrożenia klienta pakietu Office
               href: m365bp-prepare-for-office-client-deployment.md
+            - name: Tworzenie ustawień ochrony aplikacji dla urządzeń z systemem Windows
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: Weryfikowanie ustawień aplikacji na urządzeniach z systemem Windows
+              href: m365bp-validate-settings-on-windows-10-pcs.md
         - name: Przeglądanie i edytowanie zasad urządzeń
           href: m365bp-view-edit-create-mdb-policies.md
         - name: Zarządzanie grupami urządzeń
@@ -130,6 +128,8 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: "Ustawienia ochrony aplikacji dla systemów Android i\_iOS"
       href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: Weryfikowanie ustawień aplikacji w systemie Android lub iOS
+      href: m365bp-validate-settings-on-android-or-ios.md
     - name: Mapuj funkcje ochrony na ustawienia usługi Intune
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Konfigurowanie Menedżera zgodności
