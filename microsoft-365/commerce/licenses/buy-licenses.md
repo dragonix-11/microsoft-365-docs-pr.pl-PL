@@ -21,93 +21,93 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 search.appverid: MET150
-description: Skorzystaj z tej procedury, aby kupić więcej licencji lub zmniejszyć liczbę licencji na subskrypcję usługi Microsoft 365 dla firm.
-ms.date: 09/16/2021
-ms.openlocfilehash: 8520aa57caa53fde0fcbbb677eb4277baeed651a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Wykonaj te kroki, aby kupić więcej licencji lub zmniejszyć liczbę licencji dla subskrypcji platformy Microsoft 365 dla firm.
+ms.date: 06/06/2022
+ms.openlocfilehash: bbeff9310a652a768c92ba3640e84607b8628619
+ms.sourcegitcommit: 23fd850272f39c4202e2320e56d11fb6707b3e2e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328459"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65925093"
 ---
 # <a name="buy-or-remove-licenses"></a>Kupowanie lub usuwanie licencji
 
-Możesz kupić więcej licencji lub zmniejszyć liczbę licencji dla swoich subskrypcji, korzystając z poniższych kroków.
+Możesz kupić więcej licencji lub zmniejszyć liczbę licencji dla subskrypcji, wykonując poniższe kroki.
 
 > [!NOTE]
-> W przypadku niektórych subskrypcji możesz anulować subskrypcję tylko przez ograniczony czas po zakupie lub odnowieniu subskrypcji. Jeśli okno anulowania już minęło, wyłącz rozliczanie cykliczne, aby anulować subskrypcję na koniec okresu jej zakończenia.
+> W przypadku niektórych subskrypcji możesz anulować subskrypcję tylko przez ograniczony czas po zakupie lub odnowieniu subskrypcji. Jeśli termin anulowania już minął, wyłącz rozliczanie cykliczne, aby anulować subskrypcję na koniec okresu jej trwania.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Aby wykonywać zadania opisane w tym artykule, musisz być administratorem globalnym lub rozliczeniowym. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
-- Możesz dodawać [użytkowników i przypisywać licencje w tym samym czasie](../../admin/add-users/add-users.md).
-- Jeśli plan usługi Microsoft 365 dla firm Office 365 Enterprise został kupiony za pośrednictwem partnera innej firmy, musisz kupić dodatkowe licencje za pośrednictwem tego partnera.
+- Aby wykonywać zadania opisane w tym artykule, musisz być administratorem globalnym lub administratorem rozliczeń. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
+- Możesz [jednocześnie dodawać użytkowników i przypisywać licencje](../../admin/add-users/add-users.md).
+- Jeśli zakupiono plan platformy Microsoft 365 dla firm lub usługi Office 365 Enterprise za pośrednictwem partnera innej firmy, musisz kupić dodatkowe licencje za pośrednictwem tego partnera.
 
 ## <a name="watch-buy-new-licenses"></a>Obejrzyj: Kupowanie nowych licencji
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
-Jeśli osoby, dla których kupujesz licencje, nie są jeszcze aktywnymi użytkownikami w Twojej organizacji, następnym krokiem jest dodanie użytkowników i przypisanie [licencji w tym samym czasie](../../admin/add-users/add-users.md).
+Jeśli osoby, dla których kupujesz licencje, nie są jeszcze aktywnymi użytkownikami w organizacji, następnym krokiem jest [dodanie użytkowników i przypisanie licencji w tym samym czasie](../../admin/add-users/add-users.md).
 
 ## <a name="watch-remove-existing-licenses"></a>Obejrzyj: Usuwanie istniejących licencji
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r]
 
-Jeśli usunięto licencje z subskrypcji, następnym krokiem jest usunięcie użytkowników [z organizacji](../../admin/add-users/delete-a-user.md).
+Jeśli licencje zostały usunięte z subskrypcji, następnym krokiem jest [usunięcie użytkowników z organizacji](../../admin/add-users/delete-a-user.md).
 
-## <a name="buy-or-remove-licenses-for-your-business-subscription"></a>Kupowanie lub usuwanie licencji dla subskrypcji dla firm
+## <a name="buy-or-remove-licenses-for-your-business-subscription"></a>Kupowanie lub usuwanie licencji dla subskrypcji biznesowej
 
 ::: moniker range="o365-worldwide"
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">z produktami</a> .
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">z produktami</a> .
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Twoje produkty</a>.
 ::: moniker-end
 
-2. Na **karcie Produkty** znajdź subskrypcję, dla której chcesz kupić lub usunąć licencje. Wybierz trzy kropki (więcej akcji), a następnie wybierz **pozycję Kup licencje**. [Co zrobić, jeśli nie widać przycisków Kup licencje lub Usuń licencje?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+2. Na karcie **Produkty** znajdź subskrypcję, dla której chcesz kupić lub usunąć licencje. Wybierz trzy kropki (więcej akcji), a następnie wybierz pozycję **Kup licencje**. [Co zrobić, jeśli nie widzę przycisków Kup licencje lub Usuń licencje?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 
-3. Jeśli chcesz zmniejszyć liczbę licencji, w górnej części okienka Kupowanie licencji wybierz  pozycję **Usuń licencje**.
+3. Jeśli chcesz zmniejszyć liczbę licencji, w górnej części okienka **Kup licencje** wybierz pozycję **Usuń licencje**.
 
-4. Aby kupić lub usunąć licencje, w obszarze  Nowa liczba w polu Łączna liczba licencji wprowadź łączną liczbę licencji, które chcesz uzyskać dla tej subskrypcji. Jeśli na przykład masz 100 licencji i chcesz dodać jeszcze pięć, wprowadź wartość 105. Jeśli chcesz usunąć pięć z nich, wprowadź wartość 95.
+4. Aby kupić lub usunąć licencje, w obszarze **Nowa ilość** w polu **Łączna liczba licencji** wprowadź całkowitą liczbę licencji, które mają być przeznaczone dla tej subskrypcji. Jeśli na przykład masz 100 licencji i chcesz dodać pięć kolejnych, wprowadź 105. Jeśli chcesz usunąć pięć z nich, wprowadź wartość 95.
 
 5. Wybierz **Zapisz**.
 
 > [!NOTE]
-> Nie można zmniejszyć liczby licencji dla subskrypcji, jeśli wszystkie licencje są obecnie przypisane do użytkowników. Aby zmniejszyć liczbę licencji, najpierw usuń jedną lub więcej licencji [użytkowników, a](../../admin/manage/remove-licenses-from-users.md) następnie usuń je z subskrypcji.
+> Nie można zmniejszyć liczby licencji dla subskrypcji, jeśli wszystkie licencje są obecnie przypisane do użytkowników. Aby zmniejszyć liczbę licencji, najpierw [usuń przypisanie co najmniej jednej licencji od użytkowników](../../admin/manage/remove-licenses-from-users.md), a następnie usuń licencje z subskrypcji.
 
-## <a name="what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons"></a>Co zrobić, jeśli nie widać przycisków Kup licencje lub Usuń licencje?
+## <a name="what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons"></a>Co zrobić, jeśli nie widzę przycisków Kup licencje lub Usuń licencje?
 
-W poniższej tabeli opisano przyczyny, dla których przyciski  Kup **licencje** lub Usuń licencje są niedostępne, oraz możliwe rozwiązania.
+W tej tabeli opisano przyczyny niedostępności **przycisków Kup licencje** lub **Usuń licencje** oraz możliwych rozwiązań.
 
-|Przyczyna  |Opis  |Rozwiązanie  |
+|Powodu  |Opis  |Rozwiązanie  |
 |---------|---------|---------|
-|Trwa oczekiwanie na sprawdzenie zdolności kredytowej. |Jeśli trwa oczekiwanie na sprawdzenie zdolności kredytowej, nie możesz kupić ani usunąć licencji do czasu jego zakończenia.  | Sprawdź później, czy sprawdzanie zdolności kredytowej zostało zakończone. Zazwyczaj sprawdzenie zdolności kredytowej trwa do dwóch dni roboczych.<br/>Po zakończeniu sprawdzania zdolności kredytowej powinny być dostępne przyciski **Kup** licencje i **Usuń licencje** . |
-|Subskrypcja została aktywowana przy użyciu klucza produktu.| Jeśli subskrypcję kupiono i aktywowano przy użyciu 25-znakowego klucza produktu, w kolumnie Kanał zakupu na stronie **Twoje produkty zobaczysz** wyraz  "Przedpłata".  |Zobacz [Dodawanie licencji do subskrypcji opłaconej przy użyciu klucza produktu](add-licenses-using-product-key.md). |
-|Subskrypcja została kupiona za pośrednictwem odsprzedawcy.| W kolumnie Zakup na stronie Twoje produkty zobaczysz słowo  "Reseller" **(Odsprzedawca**). | Jeśli subskrypcję kupiono za pośrednictwem Dostawca rozwiązań w chmurze (CSP), skontaktuj się z partnerem CSP, aby kupić więcej licencji.        |
-|Masz subskrypcję wersji próbnej. | Aby wyświetlić subskrypcje wersji próbnej, wybierz przycisk filtru, a następnie wybierz pozycję **Wersja próbna**. | Najpierw kup subskrypcję wersji próbnej, a następnie kup więcej licencji.|
+|Sprawdzanie środków jest oczekujące. |Jeśli sprawdzanie środków jest w toku, nie można kupić ani usunąć licencji do momentu ukończenia sprawdzania środków.  | Sprawdź później, czy sprawdzanie środków zostało zakończone. Zazwyczaj sprawdzenie zdolności kredytowej trwa do dwóch dni roboczych.<br/>Po zakończeniu sprawdzania środków powinny zostać **wyświetlone przyciski Kup licencje** i **Usuń licencje** . |
+|Subskrypcję aktywowano przy użyciu klucza produktu.| Jeśli subskrypcja została kupiona i aktywowana przy użyciu 25-znakowego klucza produktu, w kolumnie **Kanał zakupów** na stronie **Twoje produkty** zostanie wyświetlone słowo "Przedpłata".  |Zobacz [Dodawanie licencji do subskrypcji płatnej za korzystanie z klucza produktu](add-licenses-using-product-key.md). |
+|Subskrypcję zakupiono za pośrednictwem odsprzedawcy.| Wyraz "Odsprzedawca" zostanie wyświetlony w kolumnie **Kanał zakupu** na stronie **Twoje produkty** . | Jeśli subskrypcja została zakupiona za pośrednictwem partnera dostawcy rozwiązań w chmurze (CSP), skontaktuj się z partnerem CSP, aby kupić więcej licencji.        |
+|Masz subskrypcję wersji próbnej. | Aby wyświetlić subskrypcje wersji próbnej, wybierz przycisk filtru, a następnie wybierz pozycję **Wersja próbna**. | Najpierw kup subskrypcję wersji próbnej, a następnie możesz kupić więcej licencji.|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>Kiedy nowe licencje będą dostępne do przypisania?
 
-Metoda płatności skojarzona z Twoją subskrypcją lub profilem rozliczeniowym jest pobierana zaraz po zakupie kolejnych licencji dla subskrypcji. Licencje są natychmiast dostępne do przypisania użytkownikom.
+Metoda płatności skojarzona z subskrypcją lub profilem rozliczeniowym jest naliczona natychmiast po zakupie większej liczby licencji dla subskrypcji. Licencje są natychmiast dostępne do przypisania użytkownikom.
 
-Jeśli przedpłaty za subskrypcję został opłacony przy użyciu klucza produktu, możesz dodać więcej licencji, używając innego klucza produktu albo dodając kartę kredytową lub debetową albo konto bankowe w celu pokrywania dodatkowych kosztów nowych licencji. Jeśli subskrypcja została opłacona z góry, nie można usunąć licencji.
+W przypadku przedpłaty za subskrypcję za pomocą klucza produktu możesz dodać więcej licencji przy użyciu innego klucza produktu, dodając kartę kredytową lub debetową lub konto bankowe w celu pokrycia dodatkowych kosztów nowych licencji. Jeśli Twoja subskrypcja jest przedpłacona, nie możesz usunąć licencji.
 
-## <a name="how-does-buying-or-removing-licenses-affect-my-billing-statements"></a>Jaki wpływ na zestawienie rozliczeniowe ma kupowanie lub usuwanie licencji?
+## <a name="how-does-buying-or-removing-licenses-affect-my-billing-statements"></a>Jak kupowanie lub usuwanie licencji wpływa na moje zestawienia rozliczeniowe?
 
-- Licencje dodane w środku okresu rozliczeniowego są wyświetlane na następnej fakturze. Jeśli płacisz co rok, faktury za te zmiany są wystawiane w ciągu miesiąca.
-- W następnym zestawieniem rozliczeniowym jest odejmowana poprzednia opłata za oryginalną liczbę licencji. Dodajemy proporcjonalną opłatę za okres z oryginalną liczbą licencji i dodajemy opłatę za nową liczbę licencji. Istnieje również opłata za bieżącą liczbę licencji za resztę okresu rozliczeniowego.
+- Licencje dodane w środku okresu rozliczeniowego są wyświetlane na następnej fakturze. Jeśli płacisz rocznie, otrzymasz faktury w ciągu miesiąca za te zmiany.
+- W następnym zestawieniu rozliczeniowym odejmowana jest poprzednia opłata za oryginalną liczbę licencji. Dodajemy proporcjonalną opłatę za okres z oryginalną liczbą licencji i dodajemy opłatę za nową liczbę licencji. Istnieje również opłata za bieżącą liczbę licencji w pozostałej części okresu rozliczeniowego.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli zakupiono więcej licencji dla subskrypcji, należy je przypisać użytkownikom [w organizacji](../../admin/manage/assign-licenses-to-users.md).
+Jeśli zakupiono więcej licencji dla subskrypcji, następnym krokiem jest [przypisanie tych licencji do użytkowników w organizacji](../../admin/manage/assign-licenses-to-users.md).
 
-Jeśli w ramach subskrypcji została zmniejszona liczba licencji, ponieważ ktoś odszedł z organizacji, możesz usunąć konto tego użytkownika. Aby dowiedzieć się więcej, [zobacz Usuwanie byłego pracownika](../../admin/add-users/remove-former-employee.md).
+Jeśli zmniejszysz liczbę licencji subskrypcji, ponieważ ktoś opuścił Twoją organizację, możesz usunąć konto tego użytkownika. Aby dowiedzieć się więcej, zobacz [Usuwanie byłego pracownika](../../admin/add-users/remove-former-employee.md).
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Przypisywanie licencji użytkownikom](../../admin/manage/assign-licenses-to-users.md) (artykuł)\
-[Opis subskrypcji i licencji](subscriptions-and-licenses.md) (artykuł)\
-[Wypróbuj lub kup subskrypcję Microsoft 365](../try-or-buy-microsoft-365.md) (artykuł)
+[Przypisywanie licencji do użytkowników](../../admin/manage/assign-licenses-to-users.md) (artykuł)\
+[Omówienie subskrypcji i licencji](subscriptions-and-licenses.md) (artykuł)\
+[Wypróbuj lub kup subskrypcję platformy Microsoft 365](../try-or-buy-microsoft-365.md) (artykuł)
