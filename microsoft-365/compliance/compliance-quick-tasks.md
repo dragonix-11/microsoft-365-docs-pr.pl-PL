@@ -1,13 +1,14 @@
 ---
-title: Szybkie zadania dotyczące rozpoczynania pracy z Microsoft 365 zgodnością
-f1.keywords:
-- NOCSH
+title: Szybkie zadania umożliwiające rozpoczęcie pracy ze zgodnością w usłudze Microsoft Purview
+description: Dowiedz się więcej o zadaniach, które pomogą Ci szybko rozpocząć pracę ze zgodnością w usłudze Microsoft Purview.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+f1.keywords:
+- NOCSH
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
@@ -15,146 +16,150 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-description: Dowiedz się więcej o zadaniach, które ułatwiają szybkie rozpoczynanie pracy ze zgodnością w Microsoft 365.
-ms.openlocfilehash: 1fb1a94e41550e10288bc42b3900cb10e76362bc
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: cb8471ffea418ac47921777a0ee9594fa73fe4ac
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010625"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930224"
 ---
-# <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Szybkie zadania dotyczące rozpoczynania pracy z Microsoft 365 zgodnością
+# <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Szybkie zadania umożliwiające rozpoczęcie pracy ze zgodnością w usłudze Microsoft Purview
 
-Jeśli nie masz pomysłu Microsoft 365 zgodności z przepisami i zastanawiasz się, od czego zacząć, ten artykuł zawiera wskazówki dotyczące podstaw i priorytetów ważnych zadań związanych ze zgodnością. Ten artykuł pomoże Ci szybko rozpocząć zarządzanie danymi i monitorowanie ich, ochronę informacji i zminimalizowanie ryzyka w niejawnym programie testów.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Ten artykuł jest również przydatny, jeśli wiesz, jak najlepiej zarządzać ryzykiem, chronić dane i zachować zgodność z przepisami i standardami u nowo zatrudnionych zdalnie. Pracownicy współpracują i kontaktują się ze sobą na nowe sposoby, co oznacza, że istniejące procesy i mechanizmy kontroli zgodności mogą wymagać dostosowania istniejących procesów i kontroli zgodności. Identyfikowanie tych nowych zagrożeń związanych ze zgodnością i zarządzanie nimi w organizacji ma kluczowe znaczenie dla zabezpieczania danych i minimalizowania zagrożeń i zagrożeń.
+Jeśli dopiero zaczynasz pracę w usłudze Microsoft Purview i zastanawiasz się, od czego zacząć, ten artykuł zawiera wskazówki dotyczące podstaw i priorytetyzuje ważne zadania związane z zgodnością. Ten artykuł pomoże Ci szybko rozpocząć pracę z zarządzaniem danymi i ich monitorowaniem, ochroną informacji oraz minimalizowaniem ryzyka związanego z wewnętrznymi informacjami.
 
-Po ukończeniu tych podstawowych zadań dotyczących zgodności rozważ rozszerzenie zakresu zgodności w organizacji, implementując dodatkowe rozwiązania Microsoft 365 zgodności.
+Ten artykuł jest również przydatny, jeśli zastanawiasz się, jak najlepiej zarządzać ryzykiem, chronić dane i zachować zgodność z przepisami i standardami dotyczącymi nowo zdalnej siły roboczej. Pracownicy współpracują teraz ze sobą i łączą się ze sobą w nowy sposób, a ta zmiana oznacza, że istniejące procesy i mechanizmy kontroli zgodności mogą wymagać dostosowania. Identyfikowanie nowych zagrożeń związanych ze zgodnością i zarządzanie nimi w organizacji ma kluczowe znaczenie dla ochrony danych oraz minimalizowania zagrożeń i zagrożeń.
 
-## <a name="task-1-configure-compliance-permissions"></a>Zadanie 1. Konfigurowanie uprawnień dotyczących zgodności
+Po wykonaniu tych podstawowych zadań dotyczących zgodności rozważ rozszerzenie zakresu zgodności w organizacji, implementując dodatkowe rozwiązania usługi Microsoft Purview.
 
-Ważne jest zarządzanie tym, kto w organizacji ma dostęp do witryny, Centrum zgodności platformy Microsoft 365 wyświetlać zawartość i wykonywać zadania zarządzania. Microsoft 365 zapewnia role administracyjne specyficzne dla zgodności i korzystania z narzędzi zawartych w Centrum zgodności platformy Microsoft 365.
+## <a name="task-1-configure-compliance-permissions"></a>Zadanie 1. Konfigurowanie uprawnień zgodności
 
-Zacznij od przypisania uprawnień do zgodności osobom w organizacji, aby one mogą wykonywać te zadania i aby uniemożliwić nieautoryzowanym osobom dostęp do obszarów spoza zakresu obowiązków. Przed rozpoczęciem konfigurowania i wdrażania rozwiązań zgodności dołączonych do programu Microsoft 365 należy upewnić się,  że odpowiednie osoby zostały przypisane  do administratora danych zgodności i ról administratora Microsoft 365. Musisz również przypisać użytkowników do roli globalnego Azure Active Directory, aby wyświetlać dane w Menedżerze zgodności.
+Ważne jest, aby zarządzać tym, kto w organizacji ma dostęp do portalu zgodności usługi Microsoft Purview, aby wyświetlać zawartość i wykonywać zadania zarządzania. Platforma Microsoft 365 udostępnia role administracyjne specyficzne dla zgodności i korzystania z narzędzi dostępnych w portalu zgodności usługi Microsoft Purview.
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania uprawnień i przypisywania osób do ról administratora, zobacz Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+Zacznij od przypisania uprawnień zgodności do osób w organizacji, aby mogły wykonywać te zadania i aby uniemożliwić nieautoryzowanym osobom dostęp do obszarów spoza ich obowiązków. Przed rozpoczęciem konfigurowania i implementowania rozwiązań zgodności dołączonych do platformy Microsoft 365 należy upewnić się, że przypisano odpowiednie osoby do **administratora danych zgodności** i **administratora zgodności** . Musisz również przypisać użytkowników do roli czytelnika globalnego usługi Azure Active Directory, aby wyświetlić dane w Menedżerze zgodności.
 
-## <a name="task-2-know-your-state-of-compliance"></a>Zadanie 2. Poznaw swój stan zgodności
+Aby uzyskać szczegółowe wskazówki dotyczące konfigurowania uprawnień i przypisywania osób do ról administratora, zobacz [Uprawnienia w Centrum zgodności & zabezpieczeń](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Trudno jest wiedzieć, gdzie się udać, jeśli nie wiesz, gdzie się znajdujesz. Spełnienie Wymagań dotyczących zgodności obejmuje zrozumienie bieżącego poziomu ryzyka i tego, jakie aktualizacje mogą być potrzebne w tych zmieniających się czasach. Niezależnie od tego, czy Twoja organizacja nie jest nowym użytkownikiem wymagań dotyczących zgodności z przepisami, czy ma doświadczenie w standardach i regulacjach, które określają branżę, najlepszą rzeczą, jaką możesz zrobić, aby poprawić zgodność z przepisami, jest zrozumienie, gdzie znajduje się Twoja organizacja.
+## <a name="task-2-know-your-state-of-compliance"></a>Zadanie 2. Znajomość stanu zgodności
 
-[Menedżer zgodności firmy Microsoft](compliance-manager.md) może pomóc Ci w zrozumieniu stanu zgodności Twojej organizacji i wyróżnienia obszarów, które mogą wymagać poprawy. Menedżer zgodności używa scentralizowanego pulpitu nawigacyjnego do obliczania wyników opartych na czynnikach ryzyka, pomiaru postępu w realizacji działań, które ułatwiają zmniejszenie ryzyka związanego z ochroną danych i standardami regulacyjną. Menedżera zgodności można także użyć jako narzędzia do śledzenia wszystkich ocen ryzyka. Udostępnia on funkcje przepływów pracy, które ułatwiają wydajne przeprowadzanie oceny ryzyka za pomocą wspólnego narzędzia.
+Trudno jest wiedzieć, gdzie iść, jeśli nie wiesz, gdzie jesteś. Spełnienie wymagań dotyczących zgodności obejmuje zrozumienie bieżącego poziomu ryzyka i tego, jakie aktualizacje mogą być potrzebne w tych stale zmieniających się czasach. Niezależnie od tego, czy Twoja organizacja jest nowa w zakresie wymagań dotyczących zgodności, czy ma głębokie doświadczenie w zakresie standardów i przepisów regulujących twoją branżę, najlepszą rzeczą, jaką możesz zrobić, aby poprawić zgodność, jest zrozumienie, na czym polega twoja organizacja.
 
-Aby uzyskać szczegółowe instrukcje dotyczące rozpoczynania pracy z Menedżerem zgodności, zobacz [Wprowadzenie do Menedżera zgodności](compliance-manager-setup.md).
+[Menedżer zgodności usługi Microsoft Purview](/microsoft-365/compliance/compliance-manager) może pomóc zrozumieć stan zgodności organizacji i wyróżnić obszary, które mogą wymagać poprawy. Menedżer zgodności używa scentralizowanego pulpitu nawigacyjnego do obliczania oceny opartej na ryzyku, mierząc postęp w wykonywaniu akcji, które pomagają zmniejszyć ryzyko związane z ochroną danych i standardami regulacyjnymi. Możesz również użyć Menedżera zgodności jako narzędzia do śledzenia wszystkich ocen ryzyka. Zapewnia możliwości przepływu pracy, które ułatwiają efektywne wykonywanie ocen ryzyka za pomocą wspólnego narzędzia.
+
+Aby uzyskać szczegółowe wskazówki dotyczące rozpoczynania pracy z Menedżerem zgodności, zobacz [Wprowadzenie do Menedżera zgodności](/microsoft-365/compliance/compliance-manager-setup).
 
 > [!IMPORTANT]
-> Zabezpieczenia i zgodność z przepisami są ściśle zintegrowane dla większości organizacji. Ważne jest, aby Twoja organizacja uwzględniała podstawowe obszary zabezpieczeń, ochrony przed zagrożeniami, tożsamości i zarządzania dostępem, aby zapewnić szczegółową obronę zarówno w zakresie zabezpieczeń, jak i zgodności.
+> Zabezpieczenia i zgodność są ściśle zintegrowane w większości organizacji. Ważne jest, aby twoja organizacja zajmuje się podstawowymi obszarami zabezpieczeń, ochrony przed zagrożeniami oraz zarządzania tożsamościami i dostępem, aby ułatwić zapewnienie dogłębnego podejścia do zabezpieczeń i zgodności.
 >
-> Sprawdź swój [Microsoft 365 bezpieczeństwa](../security/defender/microsoft-secure-score.md) w portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender i</a> wykonanie zadań opisanych w następujących artykułach:
+> Sprawdź wskaźnik [bezpieczeństwa platformy Microsoft 365](/microsoft-365/security/defender/microsoft-secure-score) w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu usługi Microsoft 365 Defender</a> i wykonaj zadania opisane w następujących artykułach:
 >
-> - [Plan zabezpieczeń — najważniejsze priorytety pierwszych 30 dni, 90 dni i później](../security/office-365-security/security-roadmap.md)
-> - [12 najlepszych zadań dla zespołów ds. zabezpieczeń na rzecz obsługi pracy z domu](../security/top-security-tasks-for-remote-work.md)
+> - [Plan bezpieczeństwa — najważniejsze priorytety dla pierwszych 30 dni, 90 dni i nie tylko](/microsoft-365/security/office-365-security/security-roadmap)
+> - [12 najważniejszych zadań dla zespołów zabezpieczeń do obsługi pracy z domu](/microsoft-365/security/top-security-tasks-for-remote-work)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>Zadanie 3. Włączanie inspekcji dla organizacji
 
-Teraz, gdy ustalisz bieżący stan organizacji i kto może zarządzać funkcjami zgodności, następnym krokiem jest upewninie się, że masz dane do przeprowadzenia badania zgodności i wygenerowania raportów dotyczących aktywności sieci i użytkowników w organizacji. Włączenie inspekcji jest również ważnym wymaganiem wstępnym dla rozwiązań zgodności ważnych dla zgodności ważnych w dalszej części tego artykułu.
+Po określeniu bieżącego stanu organizacji i możliwości zarządzania funkcjami zgodności następnym krokiem jest upewnienie się, że masz dane do przeprowadzania badań zgodności i generowania raportów dotyczących działań sieciowych i użytkowników w organizacji. Włączenie inspekcji jest również ważnym wymaganiem wstępnym dla rozwiązań zgodności opisanych w dalszej części tego artykułu.
 
-Szczegółowe informacje zapewniane przez dziennik inspekcji to cenne narzędzie pomagające dopasować Wymagania dotyczące zgodności do rozwiązań ułatwiających zarządzanie obszarami zgodności i monitorowanie ich, które wymagają doskonalenia. Rejestrowanie inspekcji musi być włączone, zanim zostaną zarejestrowane działania i będzie można przeszukiwać dziennik inspekcji. Po włączeniu działania użytkowników i administratorów z Twojej organizacji są rejestrowane w dzienniku inspekcji i przechowywane przez 90 dni, a do jednego roku w zależności od licencji przypisanej do użytkowników.
+Szczegółowe informacje udostępniane przez dziennik inspekcji są cennym narzędziem, które pomaga dopasować wymagania dotyczące zgodności do rozwiązań, które ułatwiają zarządzanie obszarami zgodności i monitorowanie ich wymagających ulepszeń. Rejestrowanie inspekcji musi być włączone przed zarejestrowaniem działań i przed przeszukaniem dziennika inspekcji. Po włączeniu działania użytkownika i administratora w organizacji są rejestrowane w dzienniku inspekcji i przechowywane przez 90 dni i do jednego roku w zależności od licencji przypisanej do użytkowników.
 
-Aby uzyskać instrukcje krok po kroku dotyczące dotyczące włączanie inspekcji, zobacz Włączanie lub wyłączanie przeszukiwania [dziennika inspekcji](turn-audit-log-search-on-or-off.md).
+Aby uzyskać instrukcje krok po kroku dotyczące włączania inspekcji, zobacz [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](/microsoft-365/compliance/turn-audit-log-search-on-or-off).
 
-## <a name="task-4-create-policies-to-alert-you-about-potential-compliance-issues"></a>Zadanie 4. Tworzenie zasad w celu powiadamiania Cię o potencjalnych problemach ze zgodnością
+## <a name="task-4-create-policies-to-alert-you-about-potential-compliance-issues"></a>Zadanie 4. Tworzenie zasad w celu powiadamiania o potencjalnych problemach ze zgodnością
 
-Firma Microsoft udostępnia kilka wbudowanych zasad alertów, które ułatwiają identyfikowanie nadużyć dotyczących uprawnień administratora, działań złośliwego oprogramowania, potencjalnych zagrożeń zewnętrznych i wewnętrznych oraz zagrożeń związanych z zarządzaniem informacjami. Te zasady są domyślnie włączone, ale może być konieczne skonfigurowanie alertów niestandardowych w celu zarządzania wymaganiami zgodności specyficznymi dla Organizacji.
+Firma Microsoft udostępnia kilka wbudowanych zasad alertów, które ułatwiają identyfikowanie zagrożeń związanych z uprawnieniami administratora, działaniami złośliwego oprogramowania, potencjalnymi zagrożeniami zewnętrznymi i wewnętrznymi oraz zagrożeniami związanymi z zarządzaniem cyklem życia danych. Te zasady są domyślnie włączone, ale może być konieczne skonfigurowanie alertów niestandardowych, aby ułatwić zarządzanie wymaganiami dotyczącymi zgodności specyficznymi dla organizacji.
 
-Za pomocą zasad alertów i narzędzi pulpitu nawigacyjnego alertów można tworzyć niestandardowe zasady alertów i wyświetlać alerty generowane, gdy użytkownicy wykonują działania zgodne z warunkami zasad. Niektóre przykłady mogą dotyczyć śledzenia działań użytkowników i administratorów dotyczących zgodności z przepisami, uprawnień i zdarzeń dotyczących utraty danych w organizacji za pomocą zasad alertów.
+Użyj zasad alertów i narzędzi pulpitu nawigacyjnego alertów, aby utworzyć niestandardowe zasady alertów i wyświetlić alerty wygenerowane, gdy użytkownicy wykonują działania zgodne z warunkami zasad. Przykładem może być użycie zasad alertów do śledzenia działań użytkowników i administratorów wpływających na wymagania dotyczące zgodności, uprawnienia i zdarzenia utraty danych w organizacji.
 
-Aby uzyskać szczegółowe instrukcje dotyczące tworzenia niestandardowych zasad alertów, zobacz [Alerty dotyczące zasad w Centrum zabezpieczeń i zgodności](alert-policies.md).
+Aby uzyskać szczegółowe wskazówki dotyczące tworzenia niestandardowych zasad alertów, zobacz [Zasady alertów w centrum zabezpieczeń i zgodności](/microsoft-365/compliance/alert-policies).
 
-## <a name="task-5-classify-and-protect-sensitive-data"></a>Zadanie 5. Klasyfikowanie i ochrona danych poufnych
+## <a name="task-5-classify-and-protect-sensitive-data"></a>Zadanie 5. Klasyfikowanie i ochrona poufnych danych
 
-Aby wykonać pracę, osoby w Twojej organizacji współpracują z innymi osobami z organizacji i spoza tej organizacji. Oznacza to, że zawartość nie pozostaje już za zaporą — może być przesyłana wszędzie, na różnych urządzeniach, w aplikacjach i usługach. W celu zapewnienia bezpieczeństwa i ochrony w sposób zgodny z zasadami firmy i zgodnością organizacja może się w ten sposób dzieje.
+Aby wykonać swoją pracę, osoby w organizacji współpracują z innymi osobami zarówno w organizacji, jak i poza nią. Oznacza to, że zawartość nie pozostaje już za zaporą — może poruszać się wszędzie, na urządzeniach, w aplikacjach i usługach. A gdy będzie się poruszać, chcesz, aby odbywało się to w bezpieczny, chroniony sposób, który spełnia zasady biznesowe i zgodności organizacji.
 
-[Etykiety](sensitivity-labels.md) wrażliwości pozwalają klasyfikować i chronić dane organizacji, a jednocześnie zapewnić, że produktywność użytkowników i ich współpraca nie są utrudnione. Użyj etykiet wrażliwości, aby wymusić szyfrowanie i ograniczenia dotyczące użycia, aby zastosować oznaczenia wizualne i chronić informacje na różnych platformach i urządzeniach, lokalnie i w chmurze.
+[Etykiety poufności](/microsoft-365/compliance/sensitivity-labels) umożliwiają klasyfikowanie i ochronę danych organizacji, jednocześnie upewniając się, że produktywność użytkowników i możliwość współpracy nie są utrudnione. Używanie etykiet poufności do wymuszania ograniczeń szyfrowania i użycia stosuje oznaczenia wizualne oraz chroni informacje na różnych platformach i urządzeniach, lokalnie i w chmurze.
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania i używania etykiet wrażliwości, zobacz Wprowadzenie [do etykiet wrażliwości](get-started-with-sensitivity-labels.md).
+Aby uzyskać szczegółowe wskazówki dotyczące konfigurowania i używania etykiet poufności, zobacz Wprowadzenie do [etykiet poufności](/microsoft-365/compliance/get-started-with-sensitivity-labels).
 
 ## <a name="task-6-configure-retention-policies"></a>Zadanie 6. Konfigurowanie zasad przechowywania
 
-Zasady [przechowywania](retention.md) pozwalają aktywnie zdecydować, czy zachować zawartość, usunąć zawartość, czy obie te wartości — zachować, a następnie usunąć tę zawartość na koniec określonego okresu przechowywania. Te działania mogą być potrzebne w celu zachowania zgodności z przepisami branżowymi i zasadami wewnętrznymi, a także zmniejszenia ryzyka w przypadku sporu sądowego lub naruszenia zabezpieczeń.
+[Zasady przechowywania](/microsoft-365/compliance/retention) pozwalają proaktywnie decydować, czy zachować zawartość, usunąć zawartość, czy obie te wartości — zachować, a następnie usunąć zawartość na końcu określonego okresu przechowywania. Te działania mogą być konieczne w celu zachowania zgodności z przepisami branżowymi i zasadami wewnętrznymi oraz zmniejszenia ryzyka w przypadku sporów sądowych lub naruszenia bezpieczeństwa.
 
-Gdy zawartość podlega zasadom przechowywania, inne osoby będą nadal mogą ją edytować i pracować nad zawartością tak, jakby nic się nie zmieniło. Zawartość jest zachowywana w miejscu, w jego pierwotnej lokalizacji. Jeśli jednak ktoś edytuje lub usuwa zawartość podlega zasadom przechowywania, kopia oryginalnej zawartości jest zapisywana w bezpiecznym miejscu, w którym jest zachowywana, podczas gdy zasady przechowywania dla tej zawartości są obowiązywać.
+Jeśli zawartość podlega zasadom przechowywania, użytkownicy mogą nadal edytować zawartość i pracować z nią tak, jakby nic się nie zmieniło. Zawartość jest przechowywana w miejscu, w oryginalnej lokalizacji. Jeśli jednak ktoś edytuje lub usunie zawartość podlegającą zasadom przechowywania, kopia oryginalnej zawartości zostanie zapisana w bezpiecznej lokalizacji, w której jest przechowywana, gdy obowiązują zasady przechowywania tej zawartości.
 
-W środowisku usługi Microsoft 365 można szybko utworzyć zasady przechowywania dla wielu usług, takich jak wiadomości Teams i Yammer, poczta Exchange, witryny SharePoint i konta OneDrive firm. Nie ma żadnych ograniczeń liczby użytkowników, skrzynek pocztowych lub witryn, które mogą automatycznie uwzględniać zasady przechowywania. Jeśli jednak chcesz uzyskać bardziej selektywny dostęp, możesz to zrobić, konfigurując adaptacyjny zakres oparty na kwerendach w celu dynamicznego kierowania określonych wystąpień lub statyczny zakres określający określone wystąpienia, które mają być zawsze dołączane lub wykluczane.
+Zasady przechowywania można szybko wprowadzić dla wielu usług w środowisku platformy Microsoft 365, które obejmują wiadomości usługi Teams i Yammer, pocztę programu Exchange, witryny programu SharePoint i konta usługi OneDrive. Nie ma żadnych ograniczeń dotyczących liczby użytkowników, skrzynek pocztowych lub witryn, które zasady przechowywania mogą być automatycznie uwzględniane. Jeśli jednak chcesz uzyskać bardziej selektywne dane, możesz to zrobić, konfigurując zakres adaptacyjny oparty na zapytaniach w celu dynamicznego określania konkretnych wystąpień lub zakres statyczny, który określa określone wystąpienia, które mają być zawsze uwzględniane lub zawsze wykluczane.
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad przechowywania, zobacz [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md). Ponieważ zasady przechowywania stanowią podstawowy element strategii zarządzania informacjami Microsoft 365, zobacz Wprowadzenie [do zarządzania informacjami](get-started-with-information-governance.md).
+Aby uzyskać szczegółowe wskazówki dotyczące konfigurowania zasad przechowywania, zobacz [Tworzenie i konfigurowanie zasad przechowywania](/microsoft-365/compliance/create-retention-policies). Ponieważ zasady przechowywania stanowią podstawę strategii zarządzania cyklem życia danych dla aplikacji i usług platformy Microsoft 365, zobacz również [Wprowadzenie do zarządzania cyklem życia danych](/microsoft-365/compliance/get-started-with-data-lifecycle-management).
 
-## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Zadanie 7. Konfigurowanie informacji poufnych i obraźliwych zasad dotyczących języka
+## <a name="task-7-configure-sensitive-information-and-inappropriate-language-policies"></a>Zadanie 7. Konfigurowanie informacji poufnych i nieodpowiednich zasad języka
 
-Ochrona informacji poufnych oraz wykrywanie incydentów nękania w miejscu pracy i działanie na nich to istotny element zgodności z wewnętrznymi zasadami i standardami. [Zgodność komunikacji w](communication-compliance.md) programie Microsoft 365 pozwala zminimalizować te zagrożenia, pomagając szybko wykrywać, przechwytywać i podjąć działania naprawcze dotyczące poczty e-mail Microsoft Teams komunikacji. Należą do nich nieodpowiednia komunikacja zawierająca wulgarne, zagrożenia, molestowanie i komunikacja, w których są przekazywane poufne informacje w organizacji i poza nią.
+Ochrona poufnych informacji oraz wykrywanie i działanie w przypadku przypadków molestowania w miejscu pracy jest ważnym elementem zgodności z wewnętrznymi zasadami i standardami. [Zgodność komunikacji](/microsoft-365/compliance/communication-compliance) w usłudze Microsoft Purview pomaga zminimalizować te zagrożenia, pomagając szybko wykrywać, przechwytywać i podejmować działania korygowania dotyczące poczty e-mail i komunikacji w usłudze Microsoft Teams. Obejmują one niewłaściwą komunikację zawierającą wulgaryzmy, groźby oraz nękanie i komunikację, które udostępniają poufne informacje wewnątrz organizacji i poza nią.
 
-Wstępnie zdefiniowany szablon zasad *Obraźliwy* język i zasady ochrony przed molestowaniem umożliwia skanowanie komunikacji wewnętrznej i zewnętrznej w poszukiwaniu dopasowania zasad w celu sprawdzenia ich przez wyznaczonych recenzentów. Recenzentzy mogą badać zeskanowane wiadomości e-mail, wiadomości e-Microsoft Teams, Yammer lub inne firmy w organizacji i podjąć odpowiednie działania naprawcze, aby upewnić się, że są one zgodne ze standardami Twojej organizacji.
+Wstępnie zdefiniowany szablon zasad *Wykrywanie nieodpowiedniego tekstu* umożliwia skanowanie komunikacji wewnętrznej i zewnętrznej pod kątem dopasowań zasad, aby można było je zbadać przez wyznaczonych recenzentów. Recenzenci mogą badać zeskanowaną pocztę e-mail, usługę Microsoft Teams, usługę Yammer lub komunikację innych firm w organizacji i podejmować odpowiednie działania korygujące, aby upewnić się, że są one zgodne ze standardami organizacji.
 
-Wstępnie zdefiniowany szablon zasad  dotyczących informacji poufnych ułatwia szybkie tworzenie zasad do skanowania wiadomości e-mail i komunikacji programu Microsoft Teams zawierającej zdefiniowane typy informacji poufnych lub słowa kluczowe w celu upewnień się, że ważne dane nie są udostępniane osobom, które nie powinny mieć do nich dostępu. Działania te mogą obejmować nieautoryzowaną komunikację na temat poufnych projektów lub reguł branżowych dotyczących notowania niejawnego programu testów lub innych działań z zakresu współpracy.
+Wstępnie zdefiniowany szablon zasad *wykrywania informacji poufnych* pomaga szybko utworzyć zasady skanowania wiadomości e-mail i komunikacji w usłudze Microsoft Teams zawierające zdefiniowane typy informacji poufnych lub słowa kluczowe, aby upewnić się, że ważne dane nie są udostępniane osobom, które nie powinny mieć dostępu. Działania te mogą obejmować nieautoryzowaną komunikację na temat poufnych projektów lub specyficznych dla branży przepisów dotyczących wykorzystywania informacji poufnych lub innych działań związanych z zmową.
 
-Aby uzyskać szczegółowe instrukcje dotyczące planowania i konfigurowania zgodności komunikacji, zobacz [Planowanie](communication-compliance-plan.md) zgodności komunikacji i Wprowadzenie [do zgodności komunikacji](communication-compliance-configure.md). Aby uzyskać informacje dotyczące licencjonowania zgodności komunikacji, [zobacz Microsoft 365 licencjonowania w celu zapewnienia zgodności & komunikacji](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
+Aby uzyskać szczegółowe wskazówki dotyczące planowania i konfigurowania zgodności z komunikacją, zobacz [Planowanie zgodności z komunikacją](/microsoft-365/compliance/communication-compliance-plan) i [Wprowadzenie do zgodności z komunikacją](/microsoft-365/compliance/communication-compliance-configure). Aby uzyskać informacje o licencjonowaniu zgodności komunikacji, zobacz [Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 ## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>Zadanie 8. Zobacz, co się dzieje z poufnymi elementami
 
-Etykiety wrażliwości, typy informacji poufnych, etykiety przechowywania i zasady oraz przeszkolne klasyfikatory mogą być używane do klasyfikowania i oznaczania poufnych elementów w elementach Exchange, SharePoint i OneDrive tak jak w poprzednich zadaniach. Ostatnim krokiem szybkiej podróży po zadaniach jest zobaczenie, które elementy zostały oznaczone etykietą i jakie akcje użytkownicy będą podejmowane w przypadku tych poufnych elementów. [Eksplorator zawartości i](data-classification-content-explorer.md) [Eksplorator aktywności](data-classification-activity-explorer.md) zapewniają tę widoczność.
+Etykiety poufności, poufne typy informacji, etykiety przechowywania i zasady oraz klasyfikatory z możliwością trenowania mogą służyć do klasyfikowania i etykietowania poufnych elementów w programach Exchange, SharePoint i OneDrive, jak pokazano w poprzednich zadaniach. Ostatnim krokiem w szybkiej podróży po zadaniu jest sprawdzenie, które elementy zostały oznaczone etykietą i jakie akcje użytkownicy podejmują w przypadku tych poufnych elementów. [Eksplorator zawartości](/microsoft-365/compliance/data-classification-content-explorer) i [eksplorator działań](/microsoft-365/compliance/data-classification-activity-explorer) zapewniają ten wgląd.
 
 ### <a name="content-explorer"></a>Eksplorator zawartości
-Eksplorator zawartości umożliwia wyświetlanie w natywnym formacie wszystkich elementów sklasyfikowanych jako typ informacji poufnych lub należących do określonej klasyfikacji przez przeszkolny klasyfikatora, a także wszystkich elementów, które mają etykietę wrażliwości lub przechowywania.
 
-Aby uzyskać szczegółowe wskazówki dotyczące korzystania z Eksploratora zawartości, zobacz [Poznanie danych —](data-classification-overview.md) omówienie klasyfikacji danych i Wprowadzenie [do Eksploratora zawartości](data-classification-content-explorer.md).
+Eksplorator zawartości umożliwia wyświetlanie w ich formacie natywnym wszystkich elementów, które zostały sklasyfikowane jako typ informacji poufnych lub należących do określonej klasyfikacji przez klasyfikator trenowalny, oraz wszystkich elementów, które mają zastosowaną etykietę poufności lub przechowywania.
 
-### <a name="activity-explorer"></a>Eksplorator aktywności
-W Eksploratorze aktywności można monitorować, co jest wykonywane wraz z klasyfikowanym i oznaczonym poufnymi elementami w różnych krajach:
+Aby uzyskać szczegółowe wskazówki dotyczące korzystania z Eksploratora zawartości, zobacz [Know your data - data classification overview (Poznanie danych — omówienie klasyfikacji danych](/microsoft-365/compliance/data-classification-overview)) i [Get started with content explorer (Rozpoczynanie pracy z Eksploratorem zawartości](/microsoft-365/compliance/data-classification-content-explorer)).
+
+### <a name="activity-explorer"></a>Eksplorator działań
+
+Eksplorator działań ułatwia monitorowanie czynności wykonywanych za pomocą elementów poufnych sklasyfikowanych i oznaczonych etykietami:
+
 - SharePoint
 - Exchange
 - OneDrive
 
-Dostępnych jest ponad 30 różnych filtrów, niektóre są dostępne:
+Dostępnych jest ponad 30 różnych filtrów, niektóre z nich to:
 
 - zakres dat
 - typ działania
-- lokalizacja
-- użytkownik
-- etykieta wrażliwości
+- Lokalizacji
+- Użytkownika
+- etykieta poufności
 - etykieta przechowywania
 - ścieżka pliku
 - Zasady DLP
 
-Aby uzyskać szczegółowe instrukcje dotyczące korzystania z Eksploratora aktywności, zobacz [Wprowadzenie do Eksploratora aktywności](data-classification-activity-explorer.md).
+Aby uzyskać szczegółowe wskazówki dotyczące korzystania z Eksploratora działań, zobacz [Wprowadzenie do Eksploratora działań](/microsoft-365/compliance/data-classification-activity-explorer).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po skonfigurowaniu podstaw zarządzania zgodnością w organizacji warto rozważyć następujące rozwiązania dotyczące zgodności w programie Microsoft 365, aby ułatwić ochronę poufnych informacji oraz wykrywanie dodatkowych czynników ryzyka w zakresie niejawnego programu testów i działanie na ich podstawie.
+Teraz, po skonfigurowaniu podstaw zarządzania zgodnością dla organizacji, rozważ następujące rozwiązania zgodności w usłudze Microsoft Purview, aby ułatwić ochronę poufnych informacji oraz wykrywanie dodatkowych zagrożeń wewnętrznych i reagowanie na nie.
 
 ### <a name="configure-retention-labels"></a>Konfigurowanie etykiet przechowywania
 
-Zasady przechowywania są automatycznie stosowane do wszystkich elementów na poziomie kontenera (takich jak witryny programu SharePoint, skrzynki pocztowe użytkowników itp[.), natomiast](retention.md#retention-labels) etykiety przechowywania mają zastosowanie do poszczególnych elementów, takich jak dokument programu SharePoint lub wiadomość e-mail. Etykiety te można stosować ręcznie lub automatycznie.
+Zasady przechowywania są automatycznie stosowane do wszystkich elementów na poziomie kontenera (takich jak witryny programu SharePoint, skrzynki pocztowe użytkowników itd.), [etykiety przechowywania](/microsoft-365/compliance/retention#retention-labels) mają zastosowanie do poszczególnych elementów, takich jak dokument programu SharePoint lub wiadomość e-mail. Te etykiety można zastosować ręcznie lub automatycznie.
 
-Etykiety przechowywania mogą być używane w ramach strategii dotyczącej informacji zarządzania zachowaniem tego, czego potrzebujesz, i usuwaniem tego, co nie jest potrzebne. Etykiet tych należy używać, gdy są potrzebne wyjątki od zasad przechowywania, gdy określone dokumenty lub wiadomości e-mail wymagają różnych ustawień przechowywania lub usuwania. Na przykład twoje SharePoint będą zachowywać wszystkie dokumenty przez trzy lata, ale określone dokumenty biznesowe muszą być przechowywane przez pięć lat. Aby uzyskać więcej informacji, zobacz [Tworzenie etykiet przechowywania dla wyjątków od zasad przechowywania](create-retention-labels-information-governance.md).
+Etykiety przechowywania mogą być używane jako część strategii utrzymania ładu danych, aby zachować to, czego potrzebujesz, i usunąć to, czego nie potrzebujesz. Użyj tych etykiet, gdy potrzebujesz wyjątków od zasad przechowywania, gdy określone dokumenty lub wiadomości e-mail wymagają różnych ustawień przechowywania lub usuwania. Na przykład zasady programu SharePoint przechowują wszystkie dokumenty przez trzy lata, ale określone dokumenty biznesowe muszą być przechowywane przez pięć lat. Aby uzyskać więcej informacji, zobacz [Tworzenie etykiet przechowywania dla wyjątków od zasad przechowywania](/microsoft-365/compliance/create-retention-labels-data-lifecycle-management).
 
-Jednak etykiety przechowywania w przypadku korzystania z zarządzania [rekordami](records-management.md) zapewniają o wiele więcej opcji zarządzania w celu obsługi pełnego cyklu życia dokumentów i wiadomości e-mail. Ten poziom zarządzania danymi jest odpowiedni do wymogów przechowywania dokumentacji biznesowej, prawnych lub prawnych o wysokim poziomie wartości. Aby uzyskać więcej informacji, zobacz [Wprowadzenie do zarządzania rekordami](get-started-with-records-management.md).
+Jednak etykiety przechowywania używane w [przypadku zarządzania rekordami](/microsoft-365/compliance/records-management) udostępniają o wiele więcej opcji zarządzania do obsługi dokumentów i wiadomości e-mail na poziomie elementu. Ten poziom zarządzania danymi jest odpowiedni dla elementów o wysokiej wartości dla wymagań dotyczących prowadzenia rejestrów biznesowych, prawnych lub regulacyjnych. Aby uzyskać więcej informacji, zobacz [Wprowadzenie do zarządzania rekordami](/microsoft-365/compliance/get-started-with-records-management).
 
 ### <a name="identify-and-define-sensitive-information-types"></a>Identyfikowanie i definiowanie typów informacji poufnych
 
-Definiowanie typów informacji poufnych na podstawie wzorca zawartego w informacjach w danych organizacji. Wbudowane [typy informacji poufnych](./sensitive-information-type-entity-definitions.md) ułatwiają identyfikowanie i ochronę numerów kart kredytowych, numerów kont bankowych, paszportów i nie tylko. Możesz też utworzyć własne [niestandardowe typy informacji poufnej](create-a-custom-sensitive-information-type.md) specyficzne dla Twojej organizacji.
+Definiowanie typów informacji poufnych na podstawie wzorca zawartego w informacjach w danych organizacji. [Wbudowane typy informacji poufnych](./sensitive-information-type-entity-definitions.md) pomagają identyfikować i chronić numery kart kredytowych, numery kont bankowych, numery paszportów i inne. Możesz też utworzyć własne [niestandardowe typy informacji o poufności](/microsoft-365/compliance/create-a-custom-sensitive-information-type) specyficzne dla twojej organizacji.
 
-Aby uzyskać szczegółowe instrukcje dotyczące definiowania niestandardowych typów informacji poufnych, zobacz Tworzenie niestandardowego typu informacji poufnych w Centrum & [zabezpieczeń](./create-a-custom-sensitive-information-type.md).
+Aby uzyskać szczegółowe wskazówki dotyczące definiowania niestandardowych typów informacji poufnych, zobacz [Create a custom sensitive information type in the Security & Compliance Center (Tworzenie niestandardowego typu informacji poufnych w Centrum zgodności & zabezpieczeń](./create-a-custom-sensitive-information-type.md)).
 
 ### <a name="prevent-data-loss"></a>Zapobieganie utracie danych
 
-[Zasady ochrony przed utratą danych (DLP, Data loss prevention)](dlp-learn-about-dlp.md) umożliwiają identyfikowanie, monitorowanie i automatyczne chroninie poufnych informacji w całej organizacji Microsoft 365 organizacji. Zasady DLP pomagają identyfikować poufne elementy usługi firmy Microsoft, zapobiegać przypadkowemu udostępnianiu poufnych elementów i pomagać użytkownikom nauczyć się, jak zachować zgodność bez przerywania przepływu pracy.
+[Zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview](/microsoft-365/compliance/dlp-learn-about-dlp) umożliwiają identyfikowanie, monitorowanie i automatyczne ochronę poufnych informacji w organizacji platformy Microsoft 365. Użyj zasad DLP, aby identyfikować poufne elementy w usługach firmy Microsoft, zapobiegać przypadkowemu udostępnianiu poufnych elementów i pomagać użytkownikom dowiedzieć się, jak zachować zgodność bez przerywania przepływu pracy.
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad DLP, tworzenia [, testowania i dostosowania zasad DLP](create-test-tune-dlp-policy.md). Aby uzyskać informacje dotyczące licencjonowania zarządzania utratą danych, Microsoft 365 [wskazówki dotyczące licencjonowania w celu zapewnienia & zgodnością](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+Aby uzyskać szczegółowe wskazówki dotyczące konfigurowania zasad DLP, [utwórz, przetestuj i dostosuj zasady DLP](/microsoft-365/compliance/create-test-tune-dlp-policy). Aby uzyskać informacje o licencjonowaniu zarządzania utratą danych, zobacz [Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
-### <a name="detect-and-act-on-insider-risks"></a>Wykrywanie czynników ryzyka w niejawnym programie testów i działanie na ich podstawie
+### <a name="detect-and-act-on-insider-risks"></a>Wykrywanie zagrożeń wewnętrznych i reagowanie na nie
 
-Coraz więcej pracowników ma coraz większy dostęp do tworzenia i udostępniania danych oraz zarządzania nimi w różnych platformach i usługach. W większości przypadków organizacje mają ograniczone zasoby i narzędzia do identyfikowania zagrożeń dla całej organizacji i ich ograniczania, a także spełniają wymagania dotyczące zgodności z przepisami i standardy ochrony prywatności pracowników. Te zagrożenia mogą obejmować kradzież danych przez odchodzące pracowników i wycieki danych spoza organizacji w przypadku przypadkowego oversharingu lub złośliwych intencji.
+Coraz więcej pracowników ma coraz większy dostęp do tworzenia i udostępniania danych oraz zarządzania nimi na wielu platformach i usługach. W większości przypadków organizacje mają ograniczone zasoby i narzędzia do identyfikowania i ograniczania ryzyka w całej organizacji, jednocześnie spełniając wymagania dotyczące zgodności i standardy prywatności pracowników. Te zagrożenia mogą obejmować kradzież danych przez odchodzących pracowników i wycieki danych informacji spoza organizacji przez przypadkowe nadmierne dzielenie lub złośliwe zamiary.
 
-[Zarządzanie ryzykiem](insider-risk-management-policies.md) niejawnego programu testów w programie Microsoft 365 korzysta z pełnej szerokości usługi i wskaźników innych firm, aby ułatwić szybkie identyfikowanie i trygorzy oraz działanie na ryzykownych działaniach użytkowników. Za pomocą dzienników firmy Microsoft 365 i usługi Microsoft Graph zarządzanie ryzykiem w ramach niejawnego programu testów umożliwia definiowanie konkretnych zasad w celu identyfikowania wskaźników ryzyka i podjęcia działań w celu ich zmniejszenia.
+[Zarządzanie ryzykiem wewnętrznym](/microsoft-365/compliance/insider-risk-management-policies) korzysta z pełnego zakresu wskaźników usług i innych firm, aby ułatwić szybkie identyfikowanie, klasyfikowanie i działanie na ryzykownych działaniach użytkowników. Dzięki użyciu dzienników z platformy Microsoft 365 i programu Microsoft Graph zarządzanie ryzykiem wewnętrznym umożliwia definiowanie określonych zasad w celu identyfikowania wskaźników ryzyka i podejmowania działań w celu ograniczenia tych zagrożeń.
 
-Aby uzyskać szczegółowe instrukcje dotyczące planowania i konfigurowania zasad zarządzania ryzykiem w niejawnym programie testów, zobacz [Planowanie](insider-risk-management-plan.md) zarządzania ryzykiem w niejawnym programie testów i Rozpoczynanie pracy z zarządzaniem [ryzykiem w niejawnym programie testów](insider-risk-management-configure.md). Aby uzyskać informacje dotyczące licencjonowania zarządzania ryzykiem w niejawnym programie testów, Microsoft 365 wskazówki dotyczące [licencjonowania w celu zapewnienia & zgodnością](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management).
+Aby uzyskać szczegółowe wskazówki dotyczące planowania i konfigurowania zasad zarządzania ryzykiem wewnętrznym, zobacz [Planowanie zarządzania ryzykiem wewnętrznym](/microsoft-365/compliance/insider-risk-management-plan) i [Wprowadzenie do zarządzania ryzykiem wewnętrznym](/microsoft-365/compliance/insider-risk-management-configure). Aby uzyskać informacje o licencjonowaniu zarządzania ryzykiem wewnętrznym, zobacz [Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management).

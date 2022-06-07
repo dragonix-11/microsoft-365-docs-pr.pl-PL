@@ -14,19 +14,19 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: podręcznik wersji próbnej rozwiązań Microsoft Purview.
-ms.openlocfilehash: cf054a27fb56589c42552bb1b79ae837a666d81f
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Podręcznik wersji próbnej rozwiązań Microsoft Purview.
+ms.openlocfilehash: 72ac87a398decd7f3446bc29ee5c001c9f3773fa
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466289"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930289"
 ---
-# <a name="trial-playbook-microsoft-purview-solutions"></a>Podręcznik wersji próbnej: rozwiązania Microsoft Purview
+# <a name="trial-playbook-microsoft-purview-solutions"></a>Podręcznik wersji próbnej: rozwiązania Usługi Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Witamy w podręczniku wersji próbnej rozwiązań Microsoft Purview. Ten podręcznik pomoże Ci w maksymalnym użyciu 90-dniowej bezpłatnej wersji próbnej, pomagając odkryć niezawodne i kompleksowe możliwości Microsoft Purview i produktów zabezpieczających.
+Witamy w podręczniku wersji próbnej rozwiązań Microsoft Purview. Ten podręcznik pomoże Ci w maksymalnym użyciu 90-dniowej bezpłatnej wersji próbnej, pomagając odkryć niezawodne i kompleksowe możliwości usługi Microsoft Purview i produktów zabezpieczających.
 
 Wypróbowanie każdego rozwiązania pomoże Ci podjąć świadome decyzje w celu spełnienia wymagań organizacji w zakresie zgodności.
 
@@ -36,28 +36,28 @@ Funkcje:
 - [Zgodność z komunikacją](#communication-compliance)
 - [Menedżer zgodności](#compliance-manager)
 - [Zarządzanie cyklem życia danych](#data-lifecycle-management)
-- [Ochrona przed utratą danych w Microsoft Purview](#data-loss-prevention)
+- [Zapobieganie utracie danych w usłudze Microsoft Purview](#data-loss-prevention)
 - [Zbierania elektronicznych materiałów dowodowych](#ediscovery)
-- [Information Protection](#information-protection)
+- [Ochrona informacji](#information-protection)
 - [Zarządzanie ryzykiem wewnętrznym](#insider-risk-management)
 - [Zarządzanie rekordami](#records-management)
 
 Opcjonalne dodatki:
 
 - [Oceny premium programu Compliance Manager](#compliance-manager-premium-assessments)
-- [zarządzanie ryzykiem prywatności Microsoft Priva i żądania praw podmiotów Microsoft Priva](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
+- [Microsoft Priva Privacy Risk Management i Microsoft Priva Subject Rights Requests](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
-## <a name="compliance-actions-with-microsoft-purview"></a>Akcje zgodności z Microsoft Purview
+## <a name="compliance-actions-with-microsoft-purview"></a>Akcje zgodności w usłudze Microsoft Purview
 
 Łatwo i szybko zacznij próbować rozwiązań firmy Microsoft w zakresie zgodności bez zmieniania metadanych organizacji. W zależności od priorytetów możesz zacząć od dowolnego z tych obszarów rozwiązania, aby zobaczyć natychmiastową wartość. Poniżej przedstawiono pięć najważniejszych problemów organizacyjnych przekazywanych przez naszych klientów i zalecane rozwiązania na początek.
 
-:::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Akcje zgodności z Microsoft 365":::
+:::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Akcje zgodności z platformą Microsoft 365":::
 
 ## <a name="audit-premium"></a>Inspekcja (wersja Premium)
 
 **Prowadzenie dochodzeń**:
 
-Microsoft Purview Audit (Premium) pomaga organizacjom w prowadzeniu badań kryminalistycznych i zgodności poprzez zwiększenie przechowywania dzienników inspekcji wymaganych do przeprowadzenia badania, zapewnienie dostępu do kluczowych zdarzeń, które pomagają określić zakres naruszenia zabezpieczeń, oraz zapewnienie szybszego dostępu do interfejsu API działania zarządzania Office 365.
+Inspekcja usługi Microsoft Purview (Premium) pomaga organizacjom w prowadzeniu badań kryminalistycznych i zgodności poprzez zwiększenie przechowywania dzienników inspekcji wymaganych do przeprowadzenia badania, zapewnienie dostępu do kluczowych zdarzeń, które pomagają określić zakres naruszenia zabezpieczeń, i zapewnienie szybszego dostępu do interfejsu API działania zarządzania usługi Office 365.
 
 ### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>Krok 1. [Stosowanie licencji E5 do każdego użytkownika, dla którego chcesz wygenerować zdarzenia E5](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
@@ -66,9 +66,9 @@ Microsoft Purview Audit (Premium) pomaga organizacjom w prowadzeniu badań krymi
 
 Funkcje inspekcji (Premium), takie jak możliwość rejestrowania kluczowych zdarzeń, takich jak MailItemsAccessed i Send, wymagają odpowiedniej licencji E5 przypisanej do użytkowników. Ponadto dla tych użytkowników należy włączyć plan aplikacji/usługi inspekcji zaawansowanej.
 
-Skonfiguruj usługę Audit (Premium) dla użytkowników , aby sprawdzić, czy aplikacja Zaawansowana inspekcja jest przypisana do użytkowników, [wykonaj następujące kroki dla każdego użytkownika](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
+Skonfiguruj usługę Audit (Premium) dla użytkowników — aby sprawdzić, czy aplikacja Zaawansowana inspekcja jest przypisana do użytkowników, [wykonaj następujące kroki dla każdego użytkownika](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
 
-1. Włącz zdarzenia inspekcji (Premium) — włącz inspekcję [zapytań SearchQueryInitiatedExchange i SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) dla każdego użytkownika w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Włącz zdarzenia inspekcji (Premium) — włącz inspekcję [zapytań SearchQueryInitiatedExchange i SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) dla każdego użytkownika w programie [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 1. Konfigurowanie zasad przechowywania inspekcji — [utwórz dodatkowe zasady przechowywania dzienników inspekcji](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) , aby spełnić wymagania zespołów ds. operacji zabezpieczeń, it i zgodności w organizacji.
 1. Wyszukaj zdarzenia inspekcji (Premium) — [wyszukaj kluczowe zdarzenia inspekcji (Premium)](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) i inne działania podczas prowadzenia dochodzeń kryminalistycznych.
 
@@ -77,18 +77,18 @@ Skonfiguruj usługę Audit (Premium) dla użytkowników , aby sprawdzić, czy ap
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: tworzenie w ciągu pierwszych 30 dni
 
-Zasady przechowywania dzienników inspekcji są częścią nowych funkcji inspekcji (Premium) w Microsoft 365. Zasady przechowywania dzienników inspekcji umożliwiają określenie czasu przechowywania dzienników inspekcji w organizacji.
+Zasady przechowywania dzienników inspekcji są częścią nowych funkcji inspekcji (Premium) w usłudze Microsoft Purview. Zasady przechowywania dzienników inspekcji umożliwiają określenie czasu przechowywania dzienników inspekcji w organizacji.
 
 1. Przed utworzeniem zasad przechowywania dziennika inspekcji — [najważniejsze informacje przed](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) utworzeniem zasad.
 1. [Tworzenie zasad przechowywania dziennika inspekcji](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Zarządzanie zasadami przechowywania dzienników inspekcji w portal zgodności Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) — zasady przechowywania dzienników inspekcji są wyświetlane na karcie Zasady przechowywania inspekcji (nazywanej również pulpitem nawigacyjnym). Pulpit nawigacyjny umożliwia wyświetlanie, edytowanie i usuwanie zasad przechowywania inspekcji.
+1. [Zarządzanie zasadami przechowywania dzienników inspekcji w portalu zgodności usługi Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) — zasady przechowywania dzienników inspekcji są wyświetlane na karcie Zasady przechowywania inspekcji (nazywanej również pulpitem nawigacyjnym). Pulpit nawigacyjny umożliwia wyświetlanie, edytowanie i usuwanie zasad przechowywania inspekcji.
 1. Tworzenie zasad przechowywania dzienników inspekcji i zarządzanie nimi w programie PowerShell — do [tworzenia zasad przechowywania dzienników inspekcji i zarządzania nimi](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) można również użyć programu PowerShell & Compliance Center. Jednym z powodów używania programu PowerShell jest utworzenie zasad dla typu rekordu lub działania, które nie są dostępne w interfejsie użytkownika.
 
 ## <a name="communication-compliance"></a>Zgodność z komunikacją
 
 **Identyfikowanie naruszeń zasad kodeksu postępowania i ich działanie**:
 
-Zgodność w komunikacji w Microsoft Purview pomaga inteligentnie identyfikować naruszenia komunikacji w celu obsługi zgodnego i zdrowego środowiska pracy, pomagając wykrywać nieodpowiednie komunikaty, badać możliwe naruszenia zasad i podejmować kroki w celu skorygowania problemu.
+Microsoft Purview Communication Compliance pomaga inteligentnie identyfikować naruszenia komunikacji w celu obsługi zgodnego i zdrowego środowiska pracy, pomagając wykrywać nieodpowiednie komunikaty, badać możliwe naruszenia zasad i podejmować kroki w celu skorygowania problemu.
 
 ### <a name="step-1-enable-permissions-for-communication-compliance"></a>Krok 1. [Włączanie uprawnień do zgodności komunikacji](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
@@ -116,7 +116,7 @@ Aby użyć tej funkcji, włącz inspekcję, aby organizacja mogła rozpocząć r
 
 **Łatwo zarządzaj zgodnością organizacji**:
 
-Microsoft Purview Compliance Manager może pomóc w całej procesie zapewniania zgodności, od tworzenia spisu zagrożeń związanych z ochroną danych po zarządzanie złożonością wdrażania mechanizmów kontroli, aktualizowanie przepisów i certyfikatów oraz raportowanie do audytorów.
+Program Microsoft Purview Compliance Manager może pomóc w całej procesie zapewniania zgodności, od tworzenia spisu zagrożeń związanych z ochroną danych po zarządzanie złożonością wdrażania mechanizmów kontroli, aktualizowanie przepisów i certyfikatów oraz raportowanie do audytorów.
 
 ### <a name="step-1-get-to-know-compliance-manager"></a>Krok 1. [Zapoznanie się z Menedżerem zgodności](compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
 
@@ -131,7 +131,7 @@ Nasza strona przeglądu programu Compliance Manager jest najlepszym pierwszym pr
 - [Filtrowanie widoku pulpitu nawigacyjnego](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Dowiedz się więcej o akcjach ulepszania](compliance-manager-setup.md#improvement-actions-page)
 - [Omówienie ocen](compliance-manager.md#assessments)
-- [Wykonaj szybkie skanowanie środowiska przy użyciu Configuration Manager zgodności firmy Microsoft](compliance-manager-mcca.md)
+- [Szybkie skanowanie środowiska przy użyciu programu Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ![Menedżer zgodności — pulpit nawigacyjny.](../media/compliance-manager-dashboard.png "Pulpit nawigacyjny programu Compliance Manager")
 
@@ -148,7 +148,7 @@ Rozpocznij pracę z ocenami i podejmij działania ulepszeń, aby zaimplementowa�
 1. [Lepiej zrozumieć, jak różne akcje wpływają na wynik zgodności](compliance-score-calculation.md).
 
 > [!NOTE]
-> Subskrypcja Microsoft 365 lub Office 365 E1/E3 obejmuje szablon punktu odniesienia usługi Microsoft Data Protection. Microsoft 365 lub Office 365 E5 zgodność E5 zawiera szablony dla:
+> Subskrypcja platformy Microsoft 365 lub Office 365 E1/E3 obejmuje szablon punktu odniesienia usługi Microsoft Data Protection. Zgodność platformy Microsoft 365 lub Office 365 E5, E5 obejmuje szablony dla:
 >
 > - Punkt odniesienia usługi Microsoft Data Protection
 > - RODO Unii Europejskiej  
@@ -161,7 +161,7 @@ Rozpocznij pracę z ocenami i podejmij działania ulepszeń, aby zaimplementowa�
 
 Niestandardowe oceny są przydatne w:
 
-- Zarządzanie zgodnością produktów innych niż Microsoft 365, takich jak aplikacje i usługi innych firm, aplikacje lokalne i inne zasoby
+- Zarządzanie zgodnością dla produktów innych niż Microsoft 365, takich jak aplikacje i usługi innych firm, aplikacje lokalne i inne zasoby
 - Zarządzanie własnymi niestandardowymi lub specyficznymi dla firmy kontrolami zgodności
 
 1. [Rozszerzanie szablonu programu Compliance Manager przez dodawanie własnych kontrolek i akcji ulepszania](compliance-manager-templates-extend.md)
@@ -192,50 +192,50 @@ Zasady korzystające z zakresów zasad adaptacyjnych pozostają aktualne, gdy or
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: Konfiguracja w ciągu pierwszych 30 dni
 
-Etykiety domyślne umożliwiają automatyczne stosowanie etykiety przechowywania do wszystkich elementów w określonej bibliotece, folderze lub dokumencie ustawionym w SharePoint.
+Etykiety domyślne umożliwiają automatyczne stosowanie etykiety przechowywania do wszystkich elementów w określonej bibliotece, folderze lub dokumencie ustawionym w programie SharePoint.
 
-- Opublikuj etykietę i zastosuj ją jako domyślną w SharePoint
+- Publikowanie etykiety i stosowanie jej jako domyślnej w programie SharePoint
 
 ## <a name="data-loss-prevention"></a>Zapobieganie utracie danych
 
 **Ochrona poufnych danych**:
 
-Aby zapewnić zgodność ze standardami biznesowymi i przepisami branżowymi, organizacje muszą chronić poufne informacje, aby zapobiec ich nieumyślnemu ujawnieniu. Skonfiguruj zasady Ochrona przed utratą danych w Microsoft Purview, aby identyfikować, monitorować i automatycznie chronić poufne informacje w Microsoft 365.
+Aby zapewnić zgodność ze standardami biznesowymi i przepisami branżowymi, organizacje muszą chronić poufne informacje, aby zapobiec ich nieumyślnemu ujawnieniu. Skonfiguruj zasady ochrony przed utratą danych w usłudze Microsoft Purview, aby identyfikować, monitorować i automatycznie chronić poufne informacje na platformie Microsoft 365.
 
-### <a name="step-1-protect-data-loss-on-teams-locations"></a>Krok 1. [Ochrona utraty danych w lokalizacjach Teams](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
+### <a name="step-1-protect-data-loss-on-teams-locations"></a>Krok 1. [Ochrona utraty danych w lokalizacjach usługi Teams](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: Dzień 1
 
-Jeśli Organizacja ma zapobieganie utracie danych (DLP), można zdefiniować zasady, które uniemożliwiają użytkownikom udostępnianie poufnych informacji w Microsoft Teams kanale lub sesji czatu.
+Jeśli Twoja organizacja ma profilaktykę utraty danych (DLP), możesz zdefiniować zasady, które uniemożliwiają użytkownikom udostępnianie poufnych informacji w kanale usługi Microsoft Teams lub sesji czatu.
 
-1. Dowiedz się więcej na temat [licencjonowania DLP dla Microsoft Teams i zakresu ochrony DLP](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
-1. [Dodawanie Microsoft Teams jako lokalizacji do istniejących zasad DLP](dlp-microsoft-teams.md#add-microsoft-teams-as-a-location-to-existing-dlp-policies)
-1. [Skonfiguruj nasze domyślne zasady DLP dla Teams](mip-easy-trials.md) lub [zdefiniuj nowe zasady DLP dla Microsoft Teams](dlp-microsoft-teams.md#define-a-new-dlp-policy-for-microsoft-teams)
+1. Dowiedz się więcej na temat [licencjonowania DLP dla usługi Microsoft Teams i zakresu ochrony DLP](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
+1. [Dodawanie aplikacji Microsoft Teams jako lokalizacji do istniejących zasad DLP](dlp-microsoft-teams.md#add-microsoft-teams-as-a-location-to-existing-dlp-policies)
+1. [Skonfiguruj nasze domyślne zasady DLP dla usługi Teams](mip-easy-trials.md) lub [zdefiniuj nowe zasady DLP dla usługi Microsoft Teams](dlp-microsoft-teams.md#define-a-new-dlp-policy-for-microsoft-teams)
 
 ### <a name="step-2-protect-data-loss-on-device-locations"></a>Krok 2. [Ochrona utraty danych w lokalizacjach urządzeń](endpoint-dlp-getting-started.md)
 
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: Konfiguracja w ciągu pierwszych 30 dni
 
-Rozszerzenie DLP firmy Microsoft dla punktów końcowych umożliwia monitorowanie urządzeń Windows 10 i wykrywanie, kiedy są używane i udostępniane poufne elementy.
+Program Microsoft Endpoint DLP umożliwia monitorowanie urządzeń z systemem Windows 10 i wykrywanie, kiedy są używane i udostępniane poufne elementy.
 
-1. Przygotowywanie punktów końcowych — upewnij się, że Windows 10 i macOS urządzenia, które planujesz wdrożyć w celu [spełnienia tych wymagań](endpoint-dlp-getting-started.md)
-1. [Dołączanie urządzeń do zarządzania urządzeniami](endpoint-dlp-getting-started.md)  — należy włączyć monitorowanie i dołączanie punktów końcowych przed monitorowaniem i ochroną poufnych elementów na urządzeniu. Obie te akcje są wykonywane w portal zgodności Microsoft Purview.
+1. Przygotowywanie punktów końcowych — upewnij się, że urządzenia z systemem Windows 10 i macOS, które planujesz wdrożyć program Endpoint DLP, aby [spełnić te wymagania](endpoint-dlp-getting-started.md)
+1. [Dołączanie urządzeń do zarządzania urządzeniami](endpoint-dlp-getting-started.md)  — należy włączyć monitorowanie i dołączanie punktów końcowych przed monitorowaniem i ochroną poufnych elementów na urządzeniu. Obie te akcje są wykonywane w portalu zgodności usługi Microsoft Purview.
    - Scenariusz 1 — [dołączanie urządzeń](endpoint-dlp-getting-started.md) , które nie zostały jeszcze dołączone.
-   - Scenariusz 2 — [Ochrona punktu końcowego w usłudze Microsoft Defender jest już wdrożony i w programie są raporty punktów końcowych](endpoint-dlp-getting-started.md). Wszystkie te punkty końcowe zostaną wyświetlone na liście urządzeń zarządzanych.
+   - Scenariusz 2 — [usługa Microsoft Defender dla punktu końcowego jest już wdrożona i istnieją punkty końcowe, w których są raporty](endpoint-dlp-getting-started.md). Wszystkie te punkty końcowe zostaną wyświetlone na liście urządzeń zarządzanych.
 1. [Skonfiguruj nasze domyślne zasady DLP dla urządzeń](mip-easy-trials.md#dlp-for-devices) lub [zdefiniuj nowe zasady DLP dla urządzeń](endpoint-dlp-learn-about.md).
 1. [Wyświetl alerty DLP punktu końcowego na pulpicie](dlp-configure-view-alerts-policies.md) nawigacyjnym zarządzania alertami DLP.
 1. [Wyświetlanie danych DLP punktu końcowego](data-classification-activity-explorer.md) w Eksploratorze działań.
 
 ### <a name="step-3-expand-policies-in-scope-or-protection"></a>Krok 3. [Rozwijanie zasad w zakresie lub ochronie](dlp-learn-about-dlp.md#dlp-policy-configuration-overview)
 
-Możesz elastycznie konfigurować zasady DLP. Możesz zacząć od naszych domyślnych zasad DLP dla Teams i urządzeń i rozszerzyć te zasady, aby chronić dodatkowe lokalizacje, typy informacji poufnych lub etykiety. Ponadto możesz rozwinąć akcje zasad i dostosować alerty.
+Możesz elastycznie konfigurować zasady DLP. Możesz zacząć od naszych domyślnych zasad DLP dla aplikacji Teams i urządzeń i rozszerzyć te zasady, aby chronić dodatkowe lokalizacje, typy informacji poufnych lub etykiety. Ponadto możesz rozwinąć akcje zasad i dostosować alerty.
 
 1. Dodawanie lokalizacji
 1. Dodawanie poufnych typów informacji lub etykiet w celu ochrony
 1. Dodawanie akcji
-   - Teams:
+   - Zespołów:
       - [Zapobieganie dostępowi zewnętrznemu do poufnych dokumentów](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [Uzyskiwanie wskazówek dotyczących zasad ułatwiających edukowanie użytkowników i instrukcje dotyczące dostosowywania wskazówek dotyczących zasad](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - Urządzenia: przełącz się tylko z inspekcji, aby zablokować
@@ -252,9 +252,9 @@ Korzystaj z kompleksowego przepływu pracy w celu zachowania, zbierania, analizo
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: Dzień 1
 
-Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Premium) lub zostać dodanym jako członek sprawy zbierania elektronicznych materiałów dowodowych (Premium), użytkownikowi muszą zostać przypisane odpowiednie uprawnienia.
+Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Premium) lub zostać dodanym jako członek sprawy zbierania elektronicznych materiałów dowodowych (Premium), użytkownik musi mieć przypisane odpowiednie uprawnienia.
 
-1. [Konfigurowanie eDiscovery (Premium) — przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+1. [Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium) — przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [Dodaj członków do sprawy lub ich usuń](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### <a name="step-2-required-create-a-case"></a>Krok 2 (wymagany): Tworzenie sprawy
@@ -262,9 +262,9 @@ Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Premi
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: tworzenie w ciągu pierwszych 30 dni
 
-Więcej organizacji korzysta z rozwiązania eDiscovery (Premium) w Microsoft 365 na potrzeby krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe.
+Więcej organizacji korzysta z rozwiązania eDiscovery (Premium) w usłudze Microsoft Purview na potrzeby krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe.
 
-1. Zarządzaniebierania elektronicznych materiałów dowodowych (Premium) — [dowiedz się, jak skonfigurować wykrywanie elektroniczne (Premium), zarządzać przypadkami przy użyciu Centrum zgodności & zabezpieczeń, zarządzać przepływem pracy w usłudze eDiscovery (Premium) i analizować wyniki wyszukiwania zbierania elektronicznych](/learn/modules/manage-advanced-ediscovery) materiałów dowodowych (Premium).
+1. Zarządzaniebierania elektronicznych materiałów dowodowych (Premium) — [dowiedz się, jak skonfigurować wykrywanie elektroniczne (Premium), zarządzać przypadkami przy użyciu Centrum zgodności & zabezpieczeń, zarządzać przepływem pracy w środowisku zbierania elektronicznych materiałów dowodowych (Premium) i analizować wyniki wyszukiwania zbierania elektronicznych materiałów dowodowych (Premium](/learn/modules/manage-advanced-ediscovery)).
 1. [Tworzenie sprawy zbierania elektronicznych materiałów dowodowych przy użyciu nowego formatu sprawy advance eDiscovery](advanced-ediscovery-new-case-format.md)
 1. [Zamknij lub usuń sprawę](close-or-delete-case.md) — po zakończeniu sprawy prawnej lub dochodzenia możesz zamknąć lub usunąć. Możesz również ponownie otworzyć zamkniętą sprawę.
 
@@ -272,13 +272,13 @@ Więcej organizacji korzysta z rozwiązania eDiscovery (Premium) w Microsoft 365
 
 Aby umożliwić osobom w organizacji rozpoczęcie tworzenia i używania przypadków, należy skonfigurować ustawienia globalne, które mają zastosowanie do wszystkich przypadków w organizacji. Obecnie jedynym ustawieniem globalnym jest **wykrywanie uprawnień klienta-adwokata** (więcej ustawień globalnych będzie dostępnych w przyszłości).
 
-1. [Konfigurowanie eDiscovery (Premium) — globalne Ustawienia](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium) — ustawienia globalne](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Konfiguruj ustawienia wyszukiwania i analizy](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 1. [Zarządzanie zadaniami w środowisku zbierania elektronicznych materiałów dowodowych (Premium)](managing-jobs-ediscovery20.md)
 
 ### <a name="step-4-optional-compliance-boundaries"></a>Krok 4 (opcjonalnie): [Granice zgodności](set-up-compliance-boundaries.md)
 
-Granice zgodności tworzą granice logiczne w organizacji kontrolujące lokalizacje zawartości użytkownika (takie jak skrzynki pocztowe, konta OneDrive i witryny SharePoint), które mogą wyszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. Kontrolują również, kto może uzyskiwać dostęp do spraw zbierania elektronicznych materiałów dowodowych używanych do zarządzania badaniami prawnymi, ludzkimi lub innymi badaniami w organizacji.
+Granice zgodności tworzą granice logiczne w organizacji kontrolujące lokalizacje zawartości użytkownika (takie jak skrzynki pocztowe, konta usługi OneDrive i witryny programu SharePoint), które mogą przeszukiwać menedżerowie zbierania elektronicznych materiałów dowodowych. Kontrolują również, kto może uzyskiwać dostęp do spraw zbierania elektronicznych materiałów dowodowych używanych do zarządzania badaniami prawnymi, ludzkimi lub innymi badaniami w organizacji.
 
 ![Granice zgodności składają się z filtrów uprawnień wyszukiwania, które kontrolują dostęp do agencji i grup ról administratora, które kontrolują dostęp do przypadków zbierania elektronicznych materiałów dowodowych.](../media/M365_ComplianceBoundary_OrgChart_v2.png)
 
@@ -291,29 +291,29 @@ Skonfiguruj granice zgodności dla badań zbierania elektronicznych materiałów
 
 ### <a name="step-5-optional-learn-about-content-search-tool"></a>Krok 5 (opcjonalnie): [informacje o narzędziu do wyszukiwania zawartości](search-for-content.md)
 
-Użyj narzędzia do wyszukiwania zawartości w portal zgodności Microsoft Purview, aby szybko znaleźć wiadomości e-mail w Exchange skrzynkach pocztowych, dokumentach w witrynach SharePoint i lokalizacjach OneDrive oraz konwersacje dotyczące wiadomości błyskawicznych w Skype dla firm. Narzędzie do wyszukiwania zawartości umożliwia wyszukiwanie wiadomości e-mail, dokumentów i konwersacji wiadomości błyskawicznych w narzędziach do współpracy, takich jak Microsoft Teams i Grupy Microsoft 365.
+Użyj narzędzia do wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, aby szybko znaleźć wiadomości e-mail w skrzynkach pocztowych programu Exchange, dokumentach w witrynach programu SharePoint i lokalizacjach usługi OneDrive oraz konwersacje dotyczące wiadomości błyskawicznych w programie Skype dla firm. Za pomocą narzędzia do wyszukiwania zawartości można wyszukiwać wiadomości e-mail, dokumenty i konwersacje dotyczące wiadomości błyskawicznych w narzędziach do współpracy, takich jak microsoft teams i grupy platformy Microsoft 365.
 
 - [Dowiedz się więcej o wyszukiwaniu zbierania elektronicznych materiałów dowodowych (Premium)](search-for-content.md#search-for-content)
 
-## <a name="information-protection"></a>Information Protection
+## <a name="information-protection"></a>Ochrona informacji
 
 **Odnajdywanie, klasyfikowanie i ochrona poufnych informacji**:
 
-Zaimplementuj etykiety Microsoft Purview Information Protection i poufności, aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych treści wszędzie tam, gdzie się znajduje lub podróżuje.
+Zaimplementuj usługę Microsoft Purview Information Protection i etykiety poufności, aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnej zawartości wszędzie tam, gdzie się ona znajduje lub podróżuje.
 
 ### <a name="step-1-start-your-information-protection-trial"></a>Krok 1. [Rozpoczynanie wersji próbnej ochrony informacji](mip-easy-trials.md)
 
 > [!TIP]
 > Najlepsze rozwiązanie dotyczące wersji próbnej: Dzień 1
 
-Uprawnieni klienci mogą aktywować domyślne etykiety i zasady dla Microsoft Purview Information Protection. Po włączeniu konfiguracji domyślnej w wersji próbnej skonfigurowanie wszystkich zasad dla dzierżawy potrwa około 2 minut, a wyświetlenie wyników tych domyślnych zasad może potrwać do 24 godzin.
+Uprawnieni klienci mogą aktywować domyślne etykiety i zasady usługi Microsoft Purview Information Protection. Po włączeniu konfiguracji domyślnej w wersji próbnej skonfigurowanie wszystkich zasad dla dzierżawy potrwa około 2 minut, a wyświetlenie wyników tych domyślnych zasad może potrwać do 24 godzin.
 
 Wybranie konfiguracji domyślnej przy użyciu 1 kliknięcia powoduje automatyczne skonfigurowanie następujących elementów:
 
 - Etykiety poufności i zasady etykiet poufności
 - Automatyczne etykietowanie po stronie klienta
 - Automatyczne etykietowanie po stronie usługi
-- Zasady ochrony przed utratą danych (DLP) dla Teams i urządzeń
+- Zasady ochrony przed utratą danych (DLP) dla aplikacji Teams i urządzeń
 
 [Aktywuj domyślne etykiety i zasady](mip-easy-trials.md#activate-the-default-labels-and-policies). W razie potrzeby można edytować ręcznie po zakończeniu konfiguracji.
 
@@ -336,7 +336,7 @@ Podczas tworzenia etykiety poufności można automatycznie przypisywać tę etyk
 
 ### <a name="step-3-review-and-turn-on-auto-labeling-policy"></a>Krok 3. [Przeglądanie i włączanie zasad automatycznego etykietowania](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 
-Teraz na stronie Information **protectionAuto-labeling** (**Ochrona** >  informacjiAuto-labeling) zobaczysz zasady automatycznego **etykietowania w sekcji Symulacja**.
+Teraz na stronie **Automatyczne etykietowanie** **ochrony** >  informacji zobaczysz zasady automatycznego **etykietowania w sekcji Symulacja**.
 
 Wybierz zasady, aby wyświetlić szczegóły konfiguracji i stanu. Po zakończeniu symulacji wybierz kartę Elementy do przejrzenia, aby zobaczyć, które wiadomości e-mail lub dokumenty pasują do określonych reguł.
 
@@ -346,7 +346,7 @@ Gdy wszystko będzie gotowe do uruchomienia zasad bez symulacji, wybierz opcję 
 
 **Wykrywanie i korygowanie ryzyka związanego z informacjami poufnymi**:
 
-Korzystaj ze sztucznej inteligencji, aby ułatwić szybkie identyfikowanie, klasyfikowanie i korygowanie ryzyka wewnętrznego. Korzystając z dzienników z Microsoft 365 i usług platformy Azure, można zdefiniować zasady, które monitorują sygnały ryzyka wewnętrznego, a następnie podejmować działania korygujące, takie jak promowanie edukacji użytkowników lub wszczynanie dochodzenia.
+Korzystaj ze sztucznej inteligencji, aby ułatwić szybkie identyfikowanie, klasyfikowanie i korygowanie ryzyka wewnętrznego. Korzystając z dzienników z platformy Microsoft 365 i usług platformy Azure, można zdefiniować zasady, które monitorują sygnały o ryzyku wewnętrznym, a następnie podejmować działania korygujące, takie jak promowanie edukacji użytkowników lub inicjowanie badania.
 
 ### <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Krok 1 (wymagane): [Włączanie uprawnień do zarządzania ryzykiem wewnętrznym](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
@@ -369,11 +369,11 @@ Szybko rozpocznij pracę i jak najlepiej wykorzystać możliwości zarządzania 
 
 Każda zalecana akcja przeprowadzi Cię przez wymagane działania dla zalecenia, w tym wszelkie wymagania, oczekiwane wymagania i wpływ konfigurowania funkcji w organizacji.
 
-### <a name="step-3-required-enable-the-microsoft-365-audit-log"></a>Krok 3 (wymagany): [Włączanie dziennika inspekcji Microsoft 365](insider-risk-management-configure.md#step-2-required-enable-the-microsoft-365-audit-log)
+### <a name="step-3-required-enable-the-microsoft-365-audit-log"></a>Krok 3 (wymagane): [Włączanie dziennika inspekcji platformy Microsoft 365](insider-risk-management-configure.md#step-2-required-enable-the-microsoft-365-audit-log)
 
-Inspekcja jest domyślnie włączona dla organizacji Microsoft 365. Niektóre organizacje mogły wyłączyć inspekcję z określonych powodów. Jeśli inspekcja jest wyłączona dla Twojej organizacji, może to być spowodowane tym, że inny administrator wyłączył tę inspekcję. Zalecamy potwierdzenie, że podczas wykonywania tego kroku można ponownie włączyć inspekcję.
+Inspekcja jest domyślnie włączona dla organizacji platformy Microsoft 365. Niektóre organizacje mogły wyłączyć inspekcję z określonych powodów. Jeśli inspekcja jest wyłączona dla Twojej organizacji, może to być spowodowane tym, że inny administrator wyłączył tę inspekcję. Zalecamy potwierdzenie, że podczas wykonywania tego kroku można ponownie włączyć inspekcję.
 
-Aby uzyskać instrukcje krok po kroku dotyczące włączania inspekcji, zobacz [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](turn-audit-log-search-on-or-off.md). Po włączeniu inspekcji zostanie wyświetlony komunikat informujący, że dziennik inspekcji jest przygotowywany i że wyszukiwanie można uruchomić w ciągu kilku godzin po zakończeniu przygotowywania. Tę akcję trzeba wykonać tylko raz. Aby uzyskać więcej informacji na temat korzystania z dziennika inspekcji Microsoft 365, zobacz [Przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md).
+Aby uzyskać instrukcje krok po kroku dotyczące włączania inspekcji, zobacz [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](turn-audit-log-search-on-or-off.md). Po włączeniu inspekcji zostanie wyświetlony komunikat informujący, że dziennik inspekcji jest przygotowywany i że wyszukiwanie można uruchomić w ciągu kilku godzin po zakończeniu przygotowywania. Tę akcję trzeba wykonać tylko raz. Aby uzyskać więcej informacji na temat korzystania z dziennika inspekcji platformy Microsoft 365, zobacz [Przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md).
 
 ### <a name="step-4-required-enable-and-view-insider-risk-analytics-insights"></a>Krok 4 (wymagany): [Włączanie i wyświetlanie szczegółowych informacji dotyczących analizy ryzyka dla osób poufnych](insider-risk-management-configure.md#step-3-optional-enable-and-view-insider-risk-analytics-insights)
 
@@ -385,7 +385,7 @@ Aby włączyć analizę ryzyka związanego z informacjami poufnymi, musisz być 
 
 **Zarządzanie elementami o wysokiej wartości dla wymagań biznesowych, prawnych lub regulacyjnych dotyczących prowadzenia dokumentacji**:
 
-Użyj funkcji zarządzania rekordami Microsoft Purview, aby zautomatyzować harmonogram przechowywania dla rekordów regulacyjnych, prawnych i krytycznych dla działania firmy. Wykorzystaj możliwości automatyzacji od utworzenia poprzez współpracę, aby zadeklarować rekordy, zachować zawartość i usunąć je na końcu.
+Funkcje zarządzania rekordami w usłudze Microsoft Purview umożliwiają zautomatyzowanie harmonogramu przechowywania rekordów regulacyjnych, prawnych i krytycznych dla firmy. Wykorzystaj możliwości automatyzacji od utworzenia poprzez współpracę, aby zadeklarować rekordy, zachować zawartość i usunąć je na końcu.
 
 ### <a name="step-1-mark-contents-as-records"></a>Krok 1. Oznaczanie zawartości jako rekordów  
 
@@ -426,22 +426,22 @@ Pomóż swojej organizacji ocenić ryzyko i efektywnie reagować na kraje, wymag
 
 [Więcej informacji na temat wersji próbnej ocen premium programu Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Podręcznik wersji próbnej: oceny Microsoft Purview Compliance Manager w warstwie Premium](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[Podręcznik wersji próbnej: oceny premium programu Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
-### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>zarządzanie ryzykiem prywatności Microsoft Priva i żądania praw podmiotów Microsoft Priva
+### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Microsoft Priva Privacy Risk Management i Microsoft Priva Subject Rights Requests
 
 **Identyfikowanie & zapobiegania zagrożeniom związanym z prywatnością**:
 
 Proaktywne identyfikowanie i ochrona przed zagrożeniami prywatności, takimi jak gromadzenie danych, transfery danych i nadmierne dzielenie danych, oraz ułatwianie organizacji automatyzowania żądań podmiotów i zarządzania nimi na dużą skalę.
 
-[Dowiedz się więcej o Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
+[Dowiedz się więcej o firmie Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
 
 [Podręcznik wersji próbnej: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>Dodatkowe materiały
 
-**Co zawiera**: Aby uzyskać pełną listę Microsoft Purview rozwiązań i funkcji wymienionych w warstwie produktu, wyświetl [macierz funkcji](https://go.microsoft.com/fwlink/?linkid=2139145).
+**Co zawiera**: Aby uzyskać pełną listę rozwiązań i funkcji usługi Microsoft Purview wymienionych w warstwie produktu, zobacz [Macierz funkcji](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 **Biblioteka zawartości technicznej zabezpieczeń firmy Microsoft**: zapoznaj się z tą biblioteką, aby znaleźć interaktywne przewodniki i inną zawartość szkoleniową odpowiadającą Twoim potrzebom. [Odwiedź stronę Biblioteka](/security).
 
-**Zasoby zabezpieczeń firmy Microsoft**: od oprogramowania chroniącego przed złośliwym kodem po Zero Trust uzyskaj wszystkie odpowiednie zasoby dla potrzeb organizacji w zakresie zabezpieczeń.
+**Zasoby zabezpieczeń firmy Microsoft**: od oprogramowania chroniącego przed złośliwym kodem po zero zaufania, pobierz wszystkie odpowiednie zasoby dla potrzeb organizacji w zakresie zabezpieczeń.
