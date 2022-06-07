@@ -1,7 +1,7 @@
 ---
 title: Usługa ochrony punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych Stanów Zjednoczonych
-description: Dowiedz się więcej o dostępnych wymaganiach i możliwościach Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów rządowych USA
-keywords: government, gcc, high, requirements, capabilities, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, endpoint, dod
+description: Dowiedz się więcej o dostępnych wymaganiach i możliwościach usługi Microsoft Defender for Endpoint for US Government
+keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender for Endpoint, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ce42709349e5d7464e1809df248c8055bdfaab30
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 84b91b56a8f34f0fa726684dab513d9356904ff4
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810993"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922958"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Usługa ochrony punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych Stanów Zjednoczonych
 
@@ -29,7 +29,7 @@ ms.locfileid: "65810993"
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów rządowych USA, zbudowanych w środowisku azure us government, korzysta z tych samych technologii, co usługa Defender for Endpoint w usłudze Azure Commercial.
+Usługa Microsoft Defender for Endpoint dla klientów rządowych USA, utworzona w środowisku azure US Government, korzysta z tych samych technologii, co usługa Defender for Endpoint w usłudze Azure Commercial.
 
 Ta oferta jest dostępna dla klientów GCC, GCC High i DoD i jest oparta na tej samej profilaktyce, wykrywaniu, badaniu i korygowaniu co wersja komercyjna. Istnieją jednak pewne różnice w dostępności możliwości tej oferty.
 
@@ -38,7 +38,7 @@ Ta oferta jest dostępna dla klientów GCC, GCC High i DoD i jest oparta na tej 
 
 ## <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
 
-Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów rządowych USA wymaga jednej z następujących ofert licencjonowania zbiorowego firmy Microsoft:
+Usługa Microsoft Defender for Endpoint dla klientów rządowych USA wymaga jednej z następujących ofert licencjonowania zbiorowego firmy Microsoft:
 
 ### <a name="desktop-licensing"></a>Licencjonowanie pulpitu
 
@@ -46,12 +46,12 @@ Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów rządowych
 
 ****
 
-|GCC|GCC wysoki|DoD|
+|GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft 365 GCC G5|Microsoft 365 E5 dla GCC High|Microsoft 365 G5 dla dod|
-|GCC zabezpieczeń Microsoft 365 G5|Microsoft 365 G5 Security for GCC High|Microsoft 365 G5 Security for DOD|
-|Ochrona punktu końcowego w usłudze Microsoft Defender — GCC|Ochrona punktu końcowego w usłudze Microsoft Defender dla GCC High|Ochrona punktu końcowego w usłudze Microsoft Defender dla usługi DOD|
-|Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 dla GCC High|Windows 10 Enterprise E5 for DOD|
+|Microsoft 365 GCC G5|Microsoft 365 E5 for GCC High|Microsoft 365 G5 for DOD|
+|Microsoft 365 G5 Security GCC|Zabezpieczenia platformy Microsoft 365 G5 dla GCC High|Microsoft 365 G5 Security for DOD|
+|Microsoft Defender for Endpoint — GCC|Microsoft Defender for Endpoint for GCC High|Microsoft Defender for Endpoint for DOD|
+|Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 for GCC High|Windows 10 Enterprise E5 for DOD|
 |
 
 ### <a name="server-licensing"></a>Licencjonowanie serwera
@@ -60,15 +60,15 @@ Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów rządowych
 
 ****
 
-|GCC|GCC wysoki|DoD|
+|GCC|GCC High|DoD|
 |---|---|---|
-|GCC serwera Ochrona punktu końcowego w usłudze Microsoft Defender|Ochrona punktu końcowego w usłudze Microsoft Defender Server for GCC High|Ochrona punktu końcowego w usłudze Microsoft Defender Server for DOD|
+|Microsoft Defender for Endpoint Server GCC|Microsoft Defender for Endpoint Server for GCC High|Microsoft Defender for Endpoint Server for DOD|
 |Microsoft Defender dla serwerów|Microsoft Defender dla serwerów — instytucje rządowe|Microsoft Defender dla serwerów — instytucje rządowe|
 |
 
 ## <a name="portal-urls"></a>Adresy URL portalu
 
-Poniżej przedstawiono adresy URL portalu Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów rządowych USA:
+Poniżej przedstawiono adresy URL portalu usługi Microsoft Defender dla punktów końcowych dla klientów rządowych USA:
 
 <br />
 
@@ -77,11 +77,11 @@ Poniżej przedstawiono adresy URL portalu Ochrona punktu końcowego w usłudze M
 |Typ klienta|Adres URL portalu|
 |---|---|
 |GCC|<https://security.microsoft.com>|
-|GCC wysoki|<https://security.microsoft.us>|
+|GCC High|<https://security.microsoft.us>|
 |DoD|<https://security.apps.mil>|
 |
 > [!NOTE]
-> Jeśli jesteś klientem GCC i w trakcie przechodzenia z Ochrona punktu końcowego w usłudze Microsoft Defender komercyjnego do GCC, użyj polecenia https://transition.security.microsoft.com , aby uzyskać dostęp do Ochrona punktu końcowego w usłudze Microsoft Defender komercyjnych Danych.
+> Jeśli jesteś klientem GCC i w trakcie przechodzenia z komercyjnej usługi Microsoft Defender for Endpoint do GCC, użyj polecenia https://transition.security.microsoft.com , aby uzyskać dostęp do danych komercyjnych usługi Microsoft Defender for Endpoint.
 
 ## <a name="endpoint-versions"></a>Wersje punktów końcowych
 
@@ -93,9 +93,9 @@ Obsługiwane są następujące wersje systemu operacyjnego:
 
 ****
 
-Wersja systemu operacyjnego|GCC|GCC wysoki|DoD
+Wersja systemu operacyjnego|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Windows 11|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
+System Windows 11|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows 10, wersja 21H1 i nowsze|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows 10, wersja 20H2 (z [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows 10, wersja 2004 (z [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
@@ -104,11 +104,11 @@ Windows 10, wersja 1903 (z [KB4586819](https://support.microsoft.com/help/458681
 Windows 10, wersja 1809 (z [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows 10, wersja 1803 (z [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows 10, wersja 1709|![Nie.](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Tak](images/svg/check-yes.svg) z [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Uwaga: [Przestarzałe](/lifecycle/announcements/revised-end-of-service-windows-10-1709), uaktualnij|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana
-Windows 10, wersja 1703 lub starsza|![Nie.](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana
+Windows 10, wersja 1703 i starsze|![Nie.](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana|![Nie](images/svg/check-no.svg) <br /> Uwaga: nie będzie obsługiwana
 Windows Server 2022|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2019 (z [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2016 (nowoczesne) <sup>2</sup>|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
-Windows Server 2012 R2 (nowoczesne) <sup>2</sup>|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
+Windows Server 2012 R2 (nowoczesna) <sup>2</sup>|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2016 (starsza wersja) <sup>3</sup>|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2012 R2 (starsza wersja) <sup>3</sup>|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 (starsza wersja) <sup>3</sup>|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
@@ -118,16 +118,16 @@ Windows 7 SP1 Enterprise (starsza wersja) <sup>3</sup>|![Tak.](images/svg/check-
 Windows 7 SP1 Pro (starsza wersja) <sup>3</sup>|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Linux|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 macOS|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
-Android|![Tak.](images/svg/check-yes.svg) <br /> Publiczna wersja zapoznawcza|![Tak](images/svg/check-yes.svg) <br /> Publiczna wersja zapoznawcza|![Tak](images/svg/check-yes.svg) <br /> Publiczna wersja zapoznawcza
-iOS|![Tak.](images/svg/check-yes.svg) <br /> Publiczna wersja zapoznawcza|![Tak](images/svg/check-yes.svg) <br /> Publiczna wersja zapoznawcza|![Tak](images/svg/check-yes.svg) <br /> Publiczna wersja zapoznawcza
+Android|![Tak.](images/svg/check-yes.svg) <br /> |![Tak](images/svg/check-yes.svg) <br /> |![Tak](images/svg/check-yes.svg) <br /> 
+iOS|![Tak.](images/svg/check-yes.svg) <br /> |![Tak](images/svg/check-yes.svg) <br /> |![Tak](images/svg/check-yes.svg) <br /> 
 |
 
 > [!NOTE]
 > <sup>1</sup> Poprawka musi zostać wdrożona przed dołączeniem urządzenia w celu skonfigurowania usługi Defender dla punktu końcowego w odpowiednim środowisku.
 >
-> <sup>2</sup> Poznaj [ujednolicone nowoczesne rozwiązanie dla Windows 2016 i 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). Jeśli serwery zostały wcześniej dołączone przy użyciu programu MMA, postępuj zgodnie ze wskazówkami podanymi w temacie [Migracja serwera](server-migration.md) , aby przeprowadzić migrację do nowego rozwiązania.
+> <sup>2</sup> Poznaj [ujednolicone nowoczesne rozwiązanie dla systemów Windows 2016 i 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). Jeśli serwery zostały wcześniej dołączone przy użyciu programu MMA, postępuj zgodnie ze wskazówkami podanymi w temacie [Migracja serwera](server-migration.md) , aby przeprowadzić migrację do nowego rozwiązania.
 >
-> <sup>3</sup> Podczas korzystania z [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) należy wybrać pozycję "Azure US Government" w obszarze "Azure Cloud" w przypadku korzystania z [kreatora konfiguracji](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) lub jeśli używasz [wiersza polecenia](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) lub [skryptu](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) — ustaw parametr "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" na 1. <br /> Minimalna obsługiwana wersja mma to 10.20.18029 (marzec 2020).
+> <sup>3</sup> W przypadku korzystania z programu [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) należy wybrać pozycję "Azure US Government" w obszarze "Azure Cloud", jeśli używasz [kreatora konfiguracji](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) lub jeśli używasz [wiersza polecenia](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) lub [skryptu](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) — ustaw parametr "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" na 1. <br /> Minimalna obsługiwana wersja mma to 10.20.18029 (marzec 2020).
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Wersje systemu operacyjnego w przypadku korzystania z usługi Microsoft Defender dla serwerów
 
@@ -137,7 +137,7 @@ Następujące wersje systemu operacyjnego są obsługiwane podczas korzystania z
 
 ****
 
-Wersja systemu operacyjnego|GCC|GCC wysoki|DoD
+Wersja systemu operacyjnego|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows Server 2022|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Windows Server 2019|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
@@ -154,8 +154,8 @@ Poniższy arkusz kalkulacyjny do pobrania zawiera listę usług i skojarzonych z
 
 |Arkusz kalkulacyjny listy domen| Opis|
 |---|---|
-|lista adresów URL Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów komercyjnych| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| lista adresów URL Ochrona punktu końcowego w usłudze Microsoft Defender gov/GCC/doD | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów Gov/GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|Lista adresów URL punktu końcowego usługi Microsoft Defender dla klientów komercyjnych| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Lista adresów URL punktu końcowego usługi Microsoft Defender dla gov/GCC/DoD | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów Gov/GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień serwera proxy urządzenia i łączności z Internetem](configure-proxy-internet.md).
 
@@ -189,7 +189,7 @@ Są to znane luki:
 
 ****
 
-|Nazwa funkcji|GCC|GCC wysoki|DoD|
+|Nazwa funkcji|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Oceny sieci|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|
 |Odnajdywanie sieci|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
@@ -198,20 +198,20 @@ Są to znane luki:
 |Wskaźnik bezpieczeństwa Microsoft|![Tak](images/svg/check-yes.svg) <sup>1</sup>|![Nie](images/svg/check-no.svg) Nieobsługiwane|![Nie](images/svg/check-no.svg) Nieobsługiwane|  
 
 > [!NOTE]
-> <sup>1</sup> Chociaż wskaźnik bezpieczeństwa firmy Microsoft jest dostępny dla GCC klientów, istnieją pewne zalecenia dotyczące zabezpieczeń, które nie są dostępne.
+> <sup>1</sup> Chociaż usługa Microsoft Secure Score jest dostępna dla klientów GCC, istnieją pewne zalecenia dotyczące zabezpieczeń, które nie są dostępne.
 
 
-Są to funkcje i znane luki w usłudze [Mobile Threat Defense (Ochrona punktu końcowego w usłudze Microsoft Defender na Android & iOS)](mtd.md):
+Są to funkcje i znane luki w usłudze [Mobile Threat Defense (Microsoft Defender for Endpoint w systemie Android & iOS)](mtd.md):
 
 <br />
 
 ****
 
-|Nazwa funkcji|GCC|GCC wysoki|DoD|
+|Nazwa funkcji|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Ochrona sieci Web (wskaźniki chroniące przed wyłudzaniem informacji i niestandardowe)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
-|Ochrona przed złośliwym oprogramowaniem (tylko Android)|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|
-|Wykrywanie jailbreaka (tylko iOS)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
+|Ochrona przed złośliwym oprogramowaniem (tylko dla systemu Android)|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|![Nie](images/svg/check-no.svg) W programie|
+|Wykrywanie jailbreaka (tylko system iOS)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Dostęp warunkowy/uruchamianie warunkowe|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Obsługa zarządzania aplikacjami mobilnymi|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Mechanizmy kontroli prywatności|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|

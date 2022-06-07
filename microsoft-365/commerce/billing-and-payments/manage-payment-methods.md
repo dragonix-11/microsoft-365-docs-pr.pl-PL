@@ -23,18 +23,18 @@ ms.custom:
 - business_assist
 search.appverid: MET150
 description: Kupowanie produktów lub usług biznesowych firmy Microsoft przy użyciu istniejącej metody płatności lub dodanie nowej w centrum administracyjne platformy Microsoft 365.
-ms.date: 04/02/2021
-ms.openlocfilehash: 1b36a11c2bdb34880f8f02b84788062dfb88c4b1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 06/01/2022
+ms.openlocfilehash: a6f15318e1539ef1f6c2656197c222e068f04f87
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319759"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923002"
 ---
 # <a name="manage-payment-methods"></a>Zarządzanie formami płatności
 
 > [!IMPORTANT]
-> Od 26 stycznia 2021 r. nowe konta bankowe nie są już obsługiwane dla klientów z Belgii, Francji, Włoch, Luksemburga, Portugalii, Hiszpanii i Stanów Zjednoczonych. Jeśli jesteś klientem pochodzącym z jednego z tych krajów, możesz nadal płacić za subskrypcję przy użyciu istniejącego konta bankowego i możesz dodawać do niego nowe subskrypcje, ale tylko pod warunkiem, że konto bankowe działa poprawnie.
+> Od 26 stycznia 2021 r. nowe konta bankowe nie są już obsługiwane dla klientów z Belgii, Francji, Włoch, Luksemburga, Portugalii, Hiszpanii i Stanów Zjednoczonych. Jeśli jesteś obecnym klientem w jednym z tych krajów, możesz nadal płacić za subskrypcję przy użyciu istniejącego konta bankowego, które działa poprawnie. Nie można jednak dodawać nowych subskrypcji do konta bankowego.
 
 Kupując produkty lub usługi biznesowe firmy Microsoft, możesz użyć istniejącej metody płatności lub dodać nową. Za kupione produkty możesz zapłacić przy użyciu karty kredytowej lub debetowej albo konta bankowego.
 
@@ -58,7 +58,7 @@ Z łatwością możesz zaktualizować metodę płatności dla subskrypcji platfo
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Musisz być administratorem globalnym lub administratorem ds. rozliczeń, aby wykonywać zadania opisane w tym artykule. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
+Aby wykonać instrukcje w tym artykule, musisz być administratorem globalnym lub administratorem rozliczeń. W celu uzyskania dodatkowych informacji, zobacz [Informacje o rolach administratora](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="add-a-payment-method"></a>Dodaj formę płatności
 

@@ -1,7 +1,7 @@
 ---
 title: Rozwiąż problemy z wydajnością
-description: Rozwiązywanie problemów z wysokim użyciem procesora CPU związanych z usługą ochrony w czasie rzeczywistym w Ochrona punktu końcowego w usłudze Microsoft Defender.
-keywords: rozwiązywanie problemów, wydajność, wysokie wykorzystanie procesora CPU, wysokie użycie procesora CPU, błąd, poprawka, zgodność aktualizacji, oms, monitorowanie, raport, Program antywirusowy Microsoft Defender
+description: Rozwiązywanie problemów z wysokim użyciem procesora CPU związanych z usługą ochrony w czasie rzeczywistym w usłudze Microsoft Defender for Endpoint.
+keywords: rozwiązywanie problemów, wydajność, wysokie wykorzystanie procesora CPU, wysokie użycie procesora CPU, błąd, poprawka, zgodność aktualizacji, oms, monitorowanie, raport, program antywirusowy Microsoft Defender
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 01db84f3ddd4eae79cae2fa97400f4d3d78ba8da
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 06bcba129646eb7c3f820d95dae5fd3fc77805dd
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419753"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923264"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Rozwiąż problemy z wydajnością związane z ochroną w czasie rzeczywistym
 
@@ -36,7 +36,7 @@ ms.locfileid: "65419753"
 **Platformy**
 - System Windows
 
-Jeśli w systemie występują problemy z wysokim użyciem procesora CPU lub wydajnością związane z usługą ochrony w czasie rzeczywistym w Ochrona punktu końcowego w usłudze Microsoft Defender, możesz przesłać bilet do pomocy technicznej firmy Microsoft. Wykonaj kroki opisane w [temacie Zbieranie danych diagnostycznych Program antywirusowy Microsoft Defender](collect-diagnostic-data.md).
+Jeśli w systemie występuje wysokie użycie procesora CPU lub problemy z wydajnością związane z usługą ochrony w czasie rzeczywistym w usłudze Microsoft Defender for Endpoint, możesz przesłać bilet do pomocy technicznej firmy Microsoft. Wykonaj kroki opisane w [temacie Zbieranie danych diagnostycznych programu antywirusowego Microsoft Defender](collect-diagnostic-data.md).
 
 Jako administrator możesz również samodzielnie rozwiązywać te problemy.
 
@@ -47,15 +47,16 @@ W przeciwnym razie można określić, które oprogramowanie jest związane z zid
 Możesz również udostępnić dodatkowe dzienniki do przesyłania do pomocy technicznej firmy Microsoft, wykonując kroki opisane w temacie:
 
 - [Przechwytywanie dzienników procesów przy użyciu monitora procesów](#capture-process-logs-using-process-monitor)
-- [Przechwytywanie dzienników wydajności przy użyciu rejestratora wydajności Windows](#capture-performance-logs-using-windows-performance-recorder)
+- [Przechwytywanie dzienników wydajności przy użyciu rejestratora wydajności systemu Windows](#capture-performance-logs-using-windows-performance-recorder)
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>Skontaktuj się z dostawcą w celu wyszukania wykluczeń antywirusowych
 
-Jeśli możesz łatwo zidentyfikować oprogramowanie wpływające na wydajność systemu, przejdź do centrum baza wiedzy lub pomocy technicznej dostawcy oprogramowania. Wyszukaj, czy mają zalecenia dotyczące wykluczeń antywirusowych. Jeśli witryna internetowa dostawcy ich nie ma, możesz otworzyć z nim bilet pomocy technicznej i poprosić go o opublikowanie go.
+Jeśli możesz łatwo zidentyfikować oprogramowanie wpływające na wydajność systemu, przejdź do bazy wiedzy lub centrum pomocy technicznej dostawcy oprogramowania. Wyszukaj, czy mają zalecenia dotyczące wykluczeń antywirusowych. Jeśli witryna internetowa dostawcy ich nie ma, możesz otworzyć z nim bilet pomocy technicznej i poprosić go o opublikowanie go.
 
 Zalecamy, aby dostawcy oprogramowania postępowali zgodnie z różnymi wytycznymi w temacie [Współpraca z branżą w celu zminimalizowania wyników fałszywie dodatnich](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). Dostawca może przesłać swoje oprogramowanie za pośrednictwem [portalu Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
 ## <a name="analyze-the-microsoft-protection-log"></a>Analizowanie dziennika ochrony firmy Microsoft
+Plik dziennika ochrony firmy Microsoft można znaleźć w folderze **C:\ProgramData\Microsoft\Windows Defender\Support**.
 
 W **pliku MPLog-xxxxxxxx-xxxxxx.log** można znaleźć informacje o szacowanym wpływie na wydajność uruchamiania oprogramowania jako *EstimatedImpact*:
 
@@ -75,9 +76,9 @@ W **pliku MPLog-xxxxxxxx-xxxxxx.log** można znaleźć informacje o szacowanym w
 |EstimatedImpact|Procent czasu spędzonego na skanowaniach plików, do których ten proces uzyskiwał dostęp poza okresem, w którym ten proces doświadczył działania skanowania|
 |
 
-Jeśli wpływ na wydajność jest wysoki, spróbuj dodać proces do wykluczeń ścieżki/procesu, wykonując kroki opisane w [temacie Konfigurowanie i weryfikowanie wykluczeń dla skanowania Program antywirusowy Microsoft Defender](collect-diagnostic-data.md).
+Jeśli wpływ na wydajność jest wysoki, spróbuj dodać proces do wykluczeń ścieżki/procesu, wykonując kroki opisane w [temacie Konfigurowanie i weryfikowanie wykluczeń dla skanowania programu antywirusowego Microsoft Defender](collect-diagnostic-data.md).
 
-Jeśli poprzedni krok nie rozwiąże problemu, możesz zebrać więcej informacji za pośrednictwem [monitora procesów](#capture-process-logs-using-process-monitor) lub [Windows rejestratora wydajności](#capture-performance-logs-using-windows-performance-recorder) w poniższych sekcjach.
+Jeśli poprzedni krok nie rozwiąże problemu, możesz zebrać więcej informacji za pośrednictwem [monitora procesów](#capture-process-logs-using-process-monitor) lub [rejestratora wydajności systemu Windows](#capture-performance-logs-using-windows-performance-recorder) w poniższych sekcjach.
 
 ## <a name="capture-process-logs-using-process-monitor"></a>Przechwytywanie dzienników procesów przy użyciu monitora procesów
 
@@ -95,7 +96,7 @@ Process Monitor (ProcMon) to zaawansowane narzędzie do monitorowania, które mo
 
 3. Rozpakuj plik w `C:\temp` pliku, aby ścieżka folderu to `C:\temp\ProcessMonitor`.
 
-4. Skopiuj **ProcMon.exe** do klienta Windows lub serwera Windows, z którym rozwiązujesz problemy.
+4. Skopiuj **ProcMon.exe**  do klienta systemu Windows lub serwera z systemem Windows, z którym są rozwiązywane problemy.
 
 5. Przed uruchomieniem narzędzia ProcMon upewnij się, że wszystkie inne aplikacje niezwiązane z problemem z wysokim użyciem procesora CPU zostały zamknięte. Spowoduje to zminimalizowanie liczby procesów do sprawdzenia.
 
@@ -156,15 +157,15 @@ Process Monitor (ProcMon) to zaawansowane narzędzie do monitorowania, które mo
 
 13. Skompresuj plik pml i prześlij go do pomocy technicznej firmy Microsoft.
 
-## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Przechwytywanie dzienników wydajności przy użyciu rejestratora wydajności Windows
+## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Przechwytywanie dzienników wydajności przy użyciu rejestratora wydajności systemu Windows
 
-Możesz użyć Windows Performance Recorder (WPR), aby uwzględnić dodatkowe informacje w przesłaniu do pomocy technicznej firmy Microsoft. WPR to zaawansowane narzędzie do rejestrowania, które tworzy śledzenie zdarzeń dla Windows nagrań.
+Możesz użyć rejestratora wydajności systemu Windows (WPR), aby uwzględnić dodatkowe informacje w przesłaniu do pomocy technicznej firmy Microsoft. WPR to zaawansowane narzędzie do rejestrowania, które tworzy śledzenie zdarzeń dla nagrań systemu Windows.
 
-Funkcja WPR jest częścią zestawu Windows Assessment and Deployment Kit (Windows ADK) i można go pobrać z [witryny Pobierz i zainstaluj zestaw Windows ADK](/windows-hardware/get-started/adk-install). Możesz go również pobrać w ramach zestawu Windows 10 Software Development Kit w [zestawie Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
+Funkcja WPR jest częścią zestawu Windows Assessment and Deployment Kit (Windows ADK) i można go pobrać z [witryny Pobierz i zainstaluj zestaw Windows ADK](/windows-hardware/get-started/adk-install). Można go również pobrać w ramach zestawu Windows 10 Software Development Kit w zestawie [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
 
 Interfejsu użytkownika funkcji WPR można użyć, wykonując kroki opisane w [temacie Przechwytywanie dzienników wydajności przy użyciu interfejsu użytkownika funkcji WPR](#capture-performance-logs-using-the-wpr-ui).
 
-Alternatywnie możesz również użyć narzędzia wiersza polecenia *wpr.exe*, które jest dostępne w Windows 8 i nowszych wersjach, wykonując kroki opisane w [temacie Przechwytywanie dzienników wydajności przy użyciu interfejsu wiersza polecenia funkcji WPR](#capture-performance-logs-using-the-wpr-cli).
+Alternatywnie możesz również użyć narzędzia wiersza polecenia *wpr.exe*, które jest dostępne w systemie Windows 8 i nowszych wersjach, wykonując kroki opisane w [temacie Przechwytywanie dzienników wydajności przy użyciu interfejsu wiersza polecenia funkcji WPR](#capture-performance-logs-using-the-wpr-cli).
 
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>Przechwytywanie dzienników wydajności przy użyciu interfejsu użytkownika funkcji WPR
 
@@ -173,7 +174,7 @@ Alternatywnie możesz również użyć narzędzia wiersza polecenia *wpr.exe*, k
 
 1. Pobierz i zainstaluj samoobsługowe resetowanie hasła.
 
-2. W obszarze *zestawów Windows* kliknij prawym przyciskiem myszy **pozycję Windows Rejestrator wydajności**.
+2. W obszarze *Zestawy systemu Windows* kliknij prawym przyciskiem myszy pozycję **Rejestrator wydajności systemu Windows**.
 
    :::image type="content" source="images/wpr-01.png" alt-text="Menu Start" lightbox="images/wpr-01.png":::
 
@@ -183,7 +184,7 @@ Alternatywnie możesz również użyć narzędzia wiersza polecenia *wpr.exe*, k
 
    :::image type="content" source="images/wpt-yes.png" alt-text="Strona funkcji UAC" lightbox="images/wpt-yes.png":::
 
-4. Następnie pobierz profil [analizy Ochrona punktu końcowego w usłudze Microsoft Defender](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) i zapisz jako `MDAV.wprp` w folderze takim jak `C:\temp`.
+4. Następnie pobierz profil [analizy usługi Microsoft Defender for Endpoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) i zapisz jako `MDAV.wprp` w folderze takim jak `C:\temp`.
 
 5. W oknie dialogowym WPR wybierz pozycję **Więcej opcji**.
 
@@ -192,19 +193,19 @@ Alternatywnie możesz również użyć narzędzia wiersza polecenia *wpr.exe*, k
 
 6. Wybierz pozycję **Dodaj profile...** i przejdź do ścieżki `MDAV.wprp` pliku.
 
-7. Następnie powinien zostać wyświetlony nowy zestaw profilów w obszarze *Miary niestandardowe* o nazwie *Ochrona punktu końcowego w usłudze Microsoft Defender analiza* pod nim.
+7. Następnie powinien zostać wyświetlony nowy profil ustawiony w obszarze *Pomiary niestandardowe* o nazwie *Microsoft Defender dla analizy punktu końcowego* pod nim.
 
    :::image type="content" source="images/wpr-infile.png" alt-text="Plik w pliku" lightbox="images/wpr-infile.png":::
 
     > [!WARNING]
-    > Jeśli serwer Windows ma co najmniej 64 GB pamięci RAM, użyj miary `Microsoft Defender for Endpoint analysis for large servers` niestandardowej `Microsoft Defender for Endpoint analysis`zamiast . W przeciwnym razie system może zużywać dużą ilość niestronicowanej pamięci lub buforów puli, co może prowadzić do niestabilności systemu. Możesz wybrać profile do dodania, rozwijając pozycję **Analiza zasobów**.
+    > Jeśli system Windows Server ma co najmniej 64 GB pamięci RAM, użyj miary `Microsoft Defender for Endpoint analysis for large servers` niestandardowej `Microsoft Defender for Endpoint analysis`zamiast . W przeciwnym razie system może zużywać dużą ilość niestronicowanej pamięci lub buforów puli, co może prowadzić do niestabilności systemu. Możesz wybrać profile do dodania, rozwijając pozycję **Analiza zasobów**.
     Ten profil niestandardowy zapewnia kontekst niezbędny do szczegółowej analizy wydajności.
 
-8. Aby użyć niestandardowego Ochrona punktu końcowego w usłudze Microsoft Defender pełnego profilu analizy w interfejsie użytkownika funkcji WPR:
+8. Aby użyć niestandardowego profilu analizy usługi Microsoft Defender for Endpoint w interfejsie użytkownika funkcji WPR:
 
     1. Upewnij się, że nie wybrano żadnych profilów w grupach *Klasyfikacja pierwszego poziomu*, *Analiza zasobów* i *Analiza scenariuszy* .
     2. Wybierz pozycję **Miary niestandardowe**.
-    3. Wybierz **pozycję Ochrona punktu końcowego w usłudze Microsoft Defender analizy**.
+    3. Wybierz pozycję **Microsoft Defender na potrzeby analizy punktów końcowych**.
     4. Wybierz pozycję **Pełne w** obszarze Poziom *szczegółów* .
     5. Wybierz pozycję **Plik** lub **Pamięć** w trybie rejestrowania.
 
@@ -246,28 +247,28 @@ Alternatywnie możesz również użyć narzędzia wiersza polecenia *wpr.exe*, k
 
     :::image type="content" source="images/wpr-14.png" alt-text="Strona z powiadomieniem o zapisaniu śledzenia funkcji WPR" lightbox="images/wpr-14.png":::
 
-    Dołącz plik i folder do przesyłania do pomoc techniczna firmy Microsoft.
+    Uwzględnij plik i folder w przesłaniu do pomocy technicznej firmy Microsoft.
 
     :::image type="content" source="images/wpr-15.png" alt-text="Szczegóły pliku i folderu" lightbox="images/wpr-15.png":::
 
 ### <a name="capture-performance-logs-using-the-wpr-cli"></a>Przechwytywanie dzienników wydajności przy użyciu interfejsu wiersza polecenia funkcji WPR
 
-Narzędzie wiersza polecenia *wpr.exe* jest częścią systemu operacyjnego, począwszy od Windows 8. Aby zebrać ślad WPR przy użyciu narzędzia wiersza polecenia wpr.exe:
+Narzędzie wiersza polecenia *wpr.exe* jest częścią systemu operacyjnego, począwszy od systemu Windows 8. Aby zebrać ślad WPR przy użyciu narzędzia wiersza polecenia wpr.exe:
 
-1. Pobierz **[profil analizy Ochrona punktu końcowego w usłudze Microsoft Defender](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** na potrzeby śledzenia wydajności do pliku o nazwie `MDAV.wprp` w katalogu lokalnym, takim jak `C:\traces`.
+1. Pobierz profil **[analizy usługi Microsoft Defender for Endpoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** w celu śledzenia wydajności do pliku o nazwie `MDAV.wprp` w katalogu lokalnym, takim jak `C:\traces`.
 
-2. Kliknij prawym przyciskiem myszy ikonę **Menu Start** i wybierz pozycję **Windows PowerShell (administrator)** lub **wiersz polecenia (administrator),** aby otworzyć okno wiersza polecenia administratora.
+2. Kliknij prawym przyciskiem myszy ikonę **Menu Start** i wybierz pozycję **Windows PowerShell (Administrator)** lub **Wiersz polecenia (administrator),** aby otworzyć okno wiersza polecenia administratora.
 
 3. Po wyświetleniu okna dialogowego Kontrola konta użytkownika wybierz pozycję **Tak**.
 
-4. W wierszu polecenia z podwyższonym poziomem uprawnień uruchom następujące polecenie, aby uruchomić ślad wydajności Ochrona punktu końcowego w usłudze Microsoft Defender:
+4. W wierszu polecenia z podwyższonym poziomem uprawnień uruchom następujące polecenie, aby uruchomić śledzenie wydajności usługi Microsoft Defender for Endpoint:
 
     ```console
     wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
 
     > [!WARNING]
-    > Jeśli serwer Windows ma co najmniej 64 GB pamięci RAM, użyj profilów `WDForLargeServers.Light` i `WDForLargeServers.Verbose` zamiast profilów `WD.Light` i `WD.Verbose`, odpowiednio. W przeciwnym razie system może zużywać dużą ilość niestronicowanej pamięci lub buforów puli, co może prowadzić do niestabilności systemu.
+    > Jeśli system Windows Server ma co najmniej 64 GB pamięci RAM, użyj profilów `WDForLargeServers.Light` i `WDForLargeServers.Verbose` zamiast profilów `WD.Light` oraz `WD.Verbose`odpowiednio . W przeciwnym razie system może zużywać dużą ilość niestronicowanej pamięci lub buforów puli, co może prowadzić do niestabilności systemu.
 
 5. Odtwórz problem.
 
@@ -285,7 +286,7 @@ Narzędzie wiersza polecenia *wpr.exe* jest częścią systemu operacyjnego, poc
 8. Dołącz plik i folder do przesyłania do pomocy technicznej firmy Microsoft.
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -296,5 +297,5 @@ Narzędzie wiersza polecenia *wpr.exe* jest częścią systemu operacyjnego, poc
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Zbieranie danych diagnostycznych Program antywirusowy Microsoft Defender](collect-diagnostic-data.md)
-- [Konfigurowanie i weryfikowanie wykluczeń dla skanowania Program antywirusowy Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Zbieranie danych diagnostycznych programu antywirusowego Microsoft Defender](collect-diagnostic-data.md)
+- [Konfigurowanie i weryfikowanie wykluczeń dla skanowania programu antywirusowego Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)

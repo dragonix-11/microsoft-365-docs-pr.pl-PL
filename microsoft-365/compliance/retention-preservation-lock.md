@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj blokady zachowania z zasadami przechowywania i zasadami etykiet przechowywania, aby pomóc w spełnieniu wymagań prawnych i ochronie przed nieautoryzowanymi administratorami.
-ms.openlocfilehash: cf72f0b2eed6328244bf78c9e365447c9f38edeb
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 6ee7937bad487fcac8d1ee15483becfb276d9579
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286017"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922224"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Używanie blokady zachowania w celu ograniczenia zmian zasad przechowywania i zasad etykiet przechowywania
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -50,18 +50,15 @@ Podsumowując, zablokowane zasady można zwiększyć lub rozszerzyć, ale nie mo
 > [!IMPORTANT]
 > Przed zablokowaniem zasad przechowywania lub zasad etykiet przechowywania ważne jest zrozumienie wpływu i potwierdzenie, czy jest to wymagane w organizacji. Na przykład może być konieczne spełnienie wymagań prawnych. Administratorzy nie będą mogli wyłączać ani usuwać tych zasad po zastosowaniu blokady zachowania.
 
-Skonfiguruj blokadę zachowania po utworzeniu [zasad przechowywania](create-retention-policies.md) lub zasad etykiet przechowywania publikowanych [lub](create-apply-retention-labels.md) [automatycznie stosowanych](apply-retention-labels-automatically.md).
-
-> [!NOTE]
-> Zablokowanie zasad etykiet nie uniemożliwia administratorowi skrócenia okresu przechowywania etykiety dołączonej do zablokowanych zasad. To wymaganie, wraz z innymi ograniczeniami, można spełnić podczas konfigurowania etykiety do oznaczania elementów jako [rekordu regulacyjnego](records-management.md#records).
+Skonfiguruj blokadę zachowania po utworzeniu [zasad przechowywania](create-retention-policies.md) lub publikowanych zasad etykiet [przechowywania i zawiera](create-apply-retention-labels.md) tylko etykiety [, które oznaczają elementy jako rekordy regulacyjne](records-management.md#records).
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>Jak zablokować zasady przechowywania lub zasady etykiet przechowywania
 
 Jeśli musisz użyć blokady zachowania, musisz użyć programu PowerShell. Ponieważ administratorzy nie mogą wyłączyć ani usunąć zasad przechowywania po zastosowaniu tej blokady, włączenie tej funkcji nie jest dostępne w interfejsie użytkownika w celu ochrony przed przypadkową konfiguracją.
 
-Wszystkie zasady przechowywania i z dowolną konfiguracją obsługują blokadę zachowania.
+Wszystkie zasady przechowywania z dowolną konfiguracją obsługują blokadę zachowania. Aby zastosować blokadę zachowania dla zasad etykiet przechowywania, musi ona zawierać tylko etykiety, które oznaczają elementy jako rekordy regulacyjne.
 
-1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połącz się z programem PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Znajdź nazwę zasad, które chcesz zablokować, uruchamiając polecenie [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). Przykład:
     

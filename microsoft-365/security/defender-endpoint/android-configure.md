@@ -1,7 +1,7 @@
 ---
 title: Konfiguruj usługę ochrony punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android
-description: Opis sposobu konfigurowania Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android
-keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mde, android, konfiguracja
+description: Opis sposobu konfigurowania usługi Microsoft Defender dla punktu końcowego w systemie Android
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, configuration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,25 +15,25 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e0a8a99444f09d58a43502edd1c94e4cce52301
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1f4ebaadd22a14eb2a9b24194c43fb35a5382adf
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664683"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923244"
 ---
-# <a name="configure-defender-for-endpoint-on-android-features"></a>Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android
+# <a name="configure-defender-for-endpoint-on-android-features"></a>Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>Dostęp warunkowy za pomocą usługi Defender dla punktu końcowego w systemie Android
 
-Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android wraz z Microsoft Intune i Azure Active Directory umożliwia wymuszanie zasad zgodności urządzeń i dostępu warunkowego na podstawie poziomów ryzyka urządzenia. Defender for Endpoint to rozwiązanie usługi Mobile Threat Defense (MTD), które można wdrożyć w celu wykorzystania tej możliwości za pośrednictwem Intune.
+Usługa Microsoft Defender dla punktu końcowego w systemie Android wraz z usługami Microsoft Intune i Azure Active Directory umożliwia wymuszanie zasad zgodności urządzeń i dostępu warunkowego na podstawie poziomów ryzyka urządzenia. Defender for Endpoint to rozwiązanie usługi Mobile Threat Defense (MTD), które można wdrożyć w celu wykorzystania tej możliwości za pośrednictwem usługi Intune.
 
 Aby uzyskać więcej informacji na temat konfigurowania usługi Defender for Endpoint w systemie Android i dostępu warunkowego, zobacz [Defender for Endpoint i Intune](/mem/intune/protect/advanced-threat-protection).
 
@@ -45,16 +45,54 @@ Aby uzyskać więcej informacji na temat konfigurowania usługi Defender for End
 Usługa Defender for Endpoint w systemie Android umożliwia administratorom konfigurowanie niestandardowych wskaźników do obsługi urządzeń z systemem Android. Aby uzyskać więcej informacji na temat konfigurowania wskaźników niestandardowych, zobacz [Zarządzanie wskaźnikami](manage-indicators.md).
 
 ## <a name="configure-web-protection"></a>Konfigurowanie ochrony w Internecie
-Usługa Defender for Endpoint w systemie Android umożliwia administratorom IT konfigurowanie funkcji ochrony w Internecie. Ta funkcja jest dostępna w centrum administracyjnym Microsoft Endpoint Manager.
+Usługa Defender for Endpoint w systemie Android umożliwia administratorom IT konfigurowanie funkcji ochrony w Internecie. Ta funkcja jest dostępna w centrum administracyjnym programu Microsoft Endpoint Manager.
 
 > [!NOTE]
 > Usługa Defender for Endpoint w systemie Android będzie używać sieci VPN w celu zapewnienia funkcji ochrony sieci Web. Nie jest to zwykła sieć VPN i jest lokalną/samopętlaną siecią VPN, która nie przyjmuje ruchu poza urządzeniem.
 > Aby uzyskać więcej informacji, zobacz [Konfigurowanie ochrony w Internecie na urządzeniach z systemem Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
+## <a name="network-protection"></a>Ochrona sieci
+>[!NOTE]
+>Usługa Network Protection w usłudze Microsoft Defender dla punktu końcowego jest teraz dostępna w publicznej wersji zapoznawczej. Poniższe informacje dotyczą wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+
+Ta funkcja zapewnia ochronę przed nieautoryzowanymi zagrożeniami Wi-Fi i nieautoryzowanymi certyfikatami, które są głównym wektorem ataku dla sieci Wi-Fi. Administratorzy mogą wyświetlać listę certyfikatów głównego urzędu certyfikacji (CA) i prywatnych certyfikatów głównego urzędu certyfikacji w centrum administracyjnym programu Microsoft Endpoint Manager i ustanawiać relację zaufania z punktami końcowymi. Zapewnia użytkownikowi środowisko z przewodnikiem, aby nawiązać połączenie z bezpiecznymi sieciami, a także powiadamia go o wykryciu powiązanego zagrożenia. 
+
+Obejmuje ona kilka kontrolek administratora zapewniających elastyczność, takich jak możliwość konfigurowania funkcji z poziomu centrum administracyjnego programu Microsoft Endpoint Manager, a także dodawanie zaufanych certyfikatów. Administratorzy mogą również włączyć [mechanizmy kontroli prywatności](android-configure.md) , aby skonfigurować dane wysyłane przez usługę Defender for Endpoint z urządzeń z systemem Android.
+
+Ochrona sieci w usłudze Microsoft Defender dla punktu końcowego jest domyślnie włączona. Administratorzy mogą wykonać następujące kroki, aby **skonfigurować ochronę sieci na urządzeniach z systemem Android.**
+
+1. W obszarze Administrator programu Microsoft Endpoint Manager przejdź do pozycji Aplikacje > Zasady konfiguracji aplikacji. Utwórz nowe zasady konfiguracji aplikacji.
+    > [!div class="mx-imgBorder"]
+    > ![Obraz przedstawiający sposób tworzenia zasad.](images/create-policy.png)
+1. Podaj nazwę i opis, aby jednoznacznie zidentyfikować zasady. Wybierz **pozycję "Android Enterprise"** jako platformę i **"Tylko profil służbowy należący do użytkownika"** jako typ profilu i **"Microsoft Defender"** jako aplikację docelową.
+    > [!div class="mx-imgBorder"]
+    > ![Obraz przedstawiający szczegóły zasad.](images/appconfigdetails.png)
+1. Na stronie Ustawienia wybierz pozycję **"Użyj projektanta konfiguracji"** i dodaj **wartość "Włącz ochronę sieci w usłudze Microsoft Defender"** jako klucz i wartość **"0"** do funkcji ochrony sieci z możliwością rozwartościowania. (Ochrona sieci jest domyślnie włączona)
+    > [!div class="mx-imgBorder"]
+    > ![Obraz przedstawiający sposób wybierania zasad włączania ochrony sieci](images/selectnp.png)
+    
+    > [!div class="mx-imgBorder"]
+    > ![Obraz przedstawiający dodawanie zasad konfiguracji.](images/npvalue.png)
+1. Jeśli Twoja organizacja korzysta z głównych urzędów certyfikacji, które mogą mieć charakter prywatny, należy ustanowić jawne zaufanie między usługą Intune (rozwiązanie MDM) a urządzeniami użytkownika, aby usługa Defender nie wykrywała ich jako nieautoryzowanych certyfikatów.  
+
+    Aby ustanowić relację zaufania dla głównych urzędów certyfikacji, użyj **opcji "Lista certyfikatów zaufanego urzędu certyfikacji dla ochrony sieci (wersja zapoznawcza)"** jako klucza i wartości dodaj **"rozdzielaną przecinkami listę odcisków palca certyfikatu"**.
+    > [!div class="mx-imgBorder"]
+    > ![Obraz zaufanego certyfikatu urzędu certyfikacji.](images/trustca.png)
+
+1. W przypadku innych konfiguracji związanych z ochroną sieci dodaj następujące klucze i odpowiednią odpowiednią wartość.
+<br>
+
+    | Klucz konfiguracji| Opis|
+    |---|---|
+    |Włącz prywatność ochrony sieci|1 — Włącz , 0 — Wyłącz ; To ustawienie jest zarządzane przez administratorów IT w celu włączenia lub wyłączenia prywatności w ochronie sieci.|
+    |Włączanie użytkownikom zaufania do sieci i certyfikatów|1 — Włącz , 0 — Wyłącz ; To ustawienie jest używane przez administratorów IT do włączania lub wyłączania środowiska użytkownika końcowego w aplikacji, aby ufać niezabezpieczonym i podejrzanym sieciom oraz złośliwym certyfikatom oraz ufać im.|
+    |Automatyczne korygowanie alertów ochrony sieci|1 — Włącz , 0 — Wyłącz ; To ustawienie jest używane przez administratorów IT do włączania lub wyłączania alertów korygowania wysyłanych, gdy użytkownik wykonuje działania korygujące, takie jak przełączanie na bezpieczniejsze punkty dostępu Wi-Fi lub usuwanie podejrzanych certyfikatów wykrytych przez usługę Defender|
+1. Dodaj wymagane grupy, dla których zasady będą musiały zostać zastosowane. Przejrzyj i utwórz zasady.
+
 ## <a name="privacy-controls"></a>Mechanizmy kontroli prywatności
 
 > [!IMPORTANT]
-> Mechanizmy kontroli prywatności dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android są w wersji zapoznawczej. Poniższe informacje dotyczą wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+> Mechanizmy kontroli prywatności dla usługi Microsoft Defender dla punktu końcowego w systemie Android są w wersji zapoznawczej. Poniższe informacje dotyczą wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
 Do konfigurowania danych wysyłanych przez usługę Defender for Endpoint z urządzeń z systemem Android są dostępne następujące mechanizmy kontroli prywatności:
 
@@ -66,15 +104,15 @@ Do konfigurowania danych wysyłanych przez usługę Defender for Endpoint z urz�
 
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>Konfigurowanie oceny luk w zabezpieczeniach aplikacji dla urządzeń BYOD
 
-W wersji 1.0.3425.0303 Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android będzie można przeprowadzić ocenę luk w zabezpieczeniach systemu operacyjnego i aplikacji zainstalowanych na dołączonych urządzeniach przenośnych.
+W wersji 1.0.3425.0303 programu Microsoft Defender for Endpoint w systemie Android będzie można uruchamiać oceny luk w zabezpieczeniach systemu operacyjnego i aplikacji zainstalowanych na dołączonych urządzeniach przenośnych.
 
 > [!NOTE]
-> Ocena luk w zabezpieczeniach jest częścią [zarządzania zagrożeniami i lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md) w Ochrona punktu końcowego w usłudze Microsoft Defender. 
+> Ocena luk w zabezpieczeniach jest częścią usługi [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md) w usłudze Microsoft Defender for Endpoint. 
 
 **Uwagi dotyczące prywatności związanej z aplikacjami z urządzeń osobistych (BYOD):**
 
 - W przypadku systemu Android Enterprise z profilem służbowym obsługiwane będą tylko aplikacje zainstalowane w profilu służbowym.
-- W przypadku innych trybów BYOD domyślnie ocena luk w zabezpieczeniach aplikacji **nie** zostanie włączona. Jednak gdy urządzenie jest w trybie administratora, administratorzy mogą jawnie włączyć tę funkcję za pośrednictwem Microsoft Endpoint Manager, aby uzyskać listę aplikacji zainstalowanych na urządzeniu. Aby uzyskać więcej informacji, zobacz szczegóły poniżej.
+- W przypadku innych trybów BYOD domyślnie ocena luk w zabezpieczeniach aplikacji **nie** zostanie włączona. Jednak gdy urządzenie jest w trybie administratora, administratorzy mogą jawnie włączyć tę funkcję za pośrednictwem programu Microsoft Endpoint Manager, aby uzyskać listę aplikacji zainstalowanych na urządzeniu. Aby uzyskać więcej informacji, zobacz szczegóły poniżej.
 
 ### <a name="configure-privacy-for-device-administrator-mode"></a>Konfigurowanie prywatności dla trybu administratora urządzenia
 
@@ -83,7 +121,7 @@ Wykonaj poniższe kroki, aby **włączyć ocenę luk w zabezpieczeniach aplikacj
 > [!NOTE]
 > Domyślnie jest to wyłączone w przypadku urządzeń zarejestrowanych w trybie administratora urządzenia.
 
-1. W [Microsoft Endpoint Manager centrum administracyjnym](https://go.microsoft.com/fwlink/?linkid=2109431) przejdź do pozycji **UrządzeniaProfile** >  **konfiguracjiUtwórz** >  profil i wprowadź następujące ustawienia:
+1. W [centrum administracyjnym programu Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) przejdź do pozycji **Profile** >  konfiguracji **urządzeń** > **Utwórz profil** i wprowadź następujące ustawienia:
 
    - **Platforma**: wybierz pozycję Administrator urządzenia z systemem Android
    - **Profil**: wybierz pozycję "Niestandardowe" i kliknij pozycję Utwórz
@@ -103,10 +141,10 @@ Wykonaj poniższe kroki, aby **włączyć ocenę luk w zabezpieczeniach aplikacj
 
 Usługa Defender for Endpoint obsługuje ocenę luk w zabezpieczeniach aplikacji w profilu służbowym. Jeśli jednak chcesz wyłączyć tę funkcję dla użytkowników docelowych, możesz wykonać następujące kroki:
 
-1. W [Microsoft Endpoint Manager centrum administracyjnym](https://go.microsoft.com/fwlink/?linkid=2109431) i przejdź do pozycji **AplikacjeZasady** >  >  **konfiguracji** **aplikacjiDodajZarządzane** >  **urządzenia**.
-2. Nadaj zasadom nazwę; **Platforma > Enterprise systemu Android**; wybierz typ profilu.
-3. Wybierz **Ochrona punktu końcowego w usłudze Microsoft Defender** jako aplikację docelową.
-4. Na stronie Ustawienia wybierz pozycję **Użyj projektanta konfiguracji** i dodaj element **DefenderTVMPrivacyMode** jako typ klucza i wartości jako liczbę **całkowitą**
+1. W [centrum administracyjnym programu Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) i przejdź do **pozycji Zasady** >  konfiguracji aplikacji **Aplikacje** > **Dodaj** > **urządzenia zarządzane**.
+2. Nadaj zasadom nazwę; **Platforma > Android Enterprise**; wybierz typ profilu.
+3. Wybierz pozycję **Microsoft Defender dla punktu końcowego** jako aplikację docelową.
+4. Na stronie Ustawienia wybierz pozycję **Użyj projektanta konfiguracji** i dodaj wartość **DefenderTVMPrivacyMode** jako typ klucza i wartości jako liczbę **całkowitą**
    - Aby wyłączyć lukę w zabezpieczeniach aplikacji w profilu służbowym, wprowadź wartość jako `1` i przypisz te zasady użytkownikom. Domyślnie ta wartość jest ustawiona na `0`.
    - W przypadku użytkowników z kluczem ustawionym jako `0`usługa Defender dla punktu końcowego wyśle listę aplikacji z profilu służbowego do usługi zaplecza w celu oceny luk w zabezpieczeniach.
 5. Kliknij przycisk **Dalej** i przypisz ten profil do urządzeń/użytkowników docelowych.
@@ -121,7 +159,7 @@ Kontrola prywatności dla raportu phish może służyć do wyłączania zbierani
 
 Wykonaj następujące kroki, aby włączyć ją dla użytkowników docelowych:
 
-1. W [Microsoft Endpoint Manager centrum administracyjnym](https://go.microsoft.com/fwlink/?linkid=2109431) przejdź do pozycji **UrządzeniaProfile** >  **konfiguracjiUtwórz** >  profil i wprowadź następujące ustawienia:
+1. W [centrum administracyjnym programu Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) przejdź do pozycji **Profile** >  konfiguracji **urządzeń** > **Utwórz profil** i wprowadź następujące ustawienia:
 
    - **Platforma**: wybierz pozycję Administrator urządzenia z systemem Android.
    - **Profil**: wybierz pozycję "Niestandardowe", a następnie kliknij pozycję **Utwórz**.
@@ -143,10 +181,10 @@ Użycie tej kontroli prywatności nie będzie miało wpływu na sprawdzanie zgod
 
 Wykonaj następujące kroki, aby włączyć prywatność dla użytkowników docelowych w profilu służbowym:
 
-1. W [Microsoft Endpoint Manager centrum administracyjnym](https://go.microsoft.com/fwlink/?linkid=2109431) i przejdź do pozycji **AplikacjeZasady** >  >  **konfiguracji** **aplikacjiDodajZarządzane** >  **urządzenia**.
+1. W [centrum administracyjnym programu Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) i przejdź do **pozycji Zasady** >  konfiguracji aplikacji **Aplikacje** > **Dodaj** > **urządzenia zarządzane**.
 2. Nadaj zasadom nazwę **Platform > Android Enterprise**, wybierz typ profilu.
-3. Wybierz **Ochrona punktu końcowego w usłudze Microsoft Defender** jako aplikację docelową.
-4. Na stronie Ustawienia wybierz pozycję **Użyj projektanta konfiguracji** i dodaj **wartość DefenderExcludeURLInReport** jako typ klucza i wartości jako **liczbę całkowitą**.
+3. Wybierz pozycję **Microsoft Defender dla punktu końcowego** jako aplikację docelową.
+4. Na stronie Ustawienia wybierz pozycję **Użyj projektanta konfiguracji** i dodaj wartość **DefenderExcludeURLInReport** jako typ klucza i wartości jako liczbę **całkowitą**.
    - Wprowadź **wartość 1, aby włączyć prywatność**. Wartość domyślna to 0.
 5. Kliknij przycisk **Dalej** i przypisz ten profil do urządzeń/użytkowników docelowych.
 
@@ -160,7 +198,7 @@ Kontrola prywatności dla raportu zagrożeń przed złośliwym oprogramowaniem m
 
 Wykonaj następujące kroki, aby włączyć ją dla użytkowników docelowych:
 
-1. W [Microsoft Endpoint Manager centrum administracyjnym](https://go.microsoft.com/fwlink/?linkid=2109431) przejdź do pozycji **UrządzeniaProfile** >  **konfiguracjiUtwórz** >  profil i wprowadź następujące ustawienia:
+1. W [centrum administracyjnym programu Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) przejdź do pozycji **Profile** >  konfiguracji **urządzeń** > **Utwórz profil** i wprowadź następujące ustawienia:
 
    - **Platforma**: wybierz pozycję Administrator urządzenia z systemem Android.
    - **Profil**: wybierz pozycję "Niestandardowe", a następnie kliknij pozycję **Utwórz**.
@@ -182,9 +220,9 @@ Użycie tej kontroli prywatności nie będzie miało wpływu na sprawdzanie zgod
 
 Wykonaj następujące kroki, aby włączyć prywatność dla użytkowników docelowych w profilu służbowym:
 
-1. W [Microsoft Endpoint Manager centrum administracyjnym](https://go.microsoft.com/fwlink/?linkid=2109431) i przejdź do pozycji **AplikacjeZasady** >  >  **konfiguracji** **aplikacjiDodajZarządzane** >  **urządzenia**.
+1. W [centrum administracyjnym programu Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) i przejdź do **pozycji Zasady** >  konfiguracji aplikacji **Aplikacje** > **Dodaj** > **urządzenia zarządzane**.
 2. Nadaj zasadom nazwę **Platform > Android Enterprise**, wybierz typ profilu.
-3. Wybierz **Ochrona punktu końcowego w usłudze Microsoft Defender** jako aplikację docelową.
+3. Wybierz pozycję **Microsoft Defender dla punktu końcowego** jako aplikację docelową.
 4. Na stronie Ustawienia wybierz pozycję **Użyj projektanta konfiguracji** i dodaj **wartość DefenderExcludeAppInReport** jako typ klucza i wartości jako liczbę **całkowitą**
    - Wprowadź **wartość 1, aby włączyć prywatność**. Wartość domyślna to 0.
 5. Kliknij przycisk **Dalej** i przypisz ten profil do urządzeń/użytkowników docelowych.

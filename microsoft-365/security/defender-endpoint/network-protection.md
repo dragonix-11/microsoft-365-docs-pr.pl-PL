@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 6bf97490d60740b47420d352f7fb537e675678ae
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 20de4c18c46977108c1570ba89bb6daefcf8cfdd
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621137"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923407"
 ---
 # <a name="protect-your-network"></a>Chroń sieć
 
@@ -39,16 +39,16 @@ ms.locfileid: "65621137"
 **Platformy**
 - System Windows
 
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Chcesz poznać usługę Microsoft Defender dla punktu końcowego? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="overview-of-network-protection"></a>Omówienie ochrony sieci
 
-Ochrona sieci pomaga chronić urządzenia przed zdarzeniami internetowymi. Ochrona sieci to możliwość zmniejszania obszaru podatnego na ataki. Pomaga to uniemożliwić pracownikom dostęp do niebezpiecznych domen za pośrednictwem aplikacji. Domeny hostujące wyłudzanie informacji, luki w zabezpieczeniach i inne złośliwe treści w Internecie są uważane za niebezpieczne. Ochrona sieci rozszerza zakres [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview), aby zablokować cały wychodzący ruch HTTP(ów), który próbuje nawiązać połączenie ze źródłami o niskiej reputacji (na podstawie domeny lub nazwy hosta).
+Ochrona sieci pomaga chronić urządzenia przed zdarzeniami internetowymi. Ochrona sieci to możliwość zmniejszania obszaru podatnego na ataki. Pomaga to uniemożliwić pracownikom dostęp do niebezpiecznych domen za pośrednictwem aplikacji. Domeny hostujące wyłudzanie informacji, luki w zabezpieczeniach i inne złośliwe treści w Internecie są uważane za niebezpieczne. Ochrona sieci rozszerza zakres filtru [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) , aby zablokować cały wychodzący ruch HTTP,który próbuje nawiązać połączenie ze źródłami o niskiej reputacji (na podstawie domeny lub nazwy hosta).
 
-Ochrona sieci rozszerza ochronę w [sieci Web](web-protection-overview.md) na poziom systemu operacyjnego. Udostępnia ona funkcje ochrony sieci Web znajdujące się w Microsoft Edge do innych obsługiwanych przeglądarek i aplikacji innych niż przeglądarki. Ochrona sieci zapewnia również widoczność i blokowanie wskaźników naruszenia zabezpieczeń (IOC) w przypadku użycia z [wykrywaniem punktów końcowych i reagowaniem na nie](overview-endpoint-detection-response.md). Na przykład ochrona sieci działa z [niestandardowymi wskaźnikami](manage-indicators.md) , których można użyć do blokowania określonych domen lub nazw hostów.
+Ochrona sieci rozszerza ochronę w [sieci Web](web-protection-overview.md) na poziom systemu operacyjnego. Udostępnia ona funkcje ochrony sieci Web znajdujące się w przeglądarce Microsoft Edge innym obsługiwanym przeglądarom i aplikacjom innym niż przeglądarki. Ochrona sieci zapewnia również widoczność i blokowanie wskaźników naruszenia zabezpieczeń (IOC) w przypadku użycia z [wykrywaniem punktów końcowych i reagowaniem na nie](overview-endpoint-detection-response.md). Na przykład ochrona sieci działa z [niestandardowymi wskaźnikami](manage-indicators.md) , których można użyć do blokowania określonych domen lub nazw hostów.
 
 > [!TIP]
-> Zobacz witrynę Ochrona punktu końcowego w usłudze Microsoft Defender testground w [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground), aby zobaczyć, jak działa ochrona sieci.
+> Zobacz witrynę testów usługi Microsoft Defender for Endpoint pod adresem [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) , aby zobaczyć, jak działa ochrona sieci.
 
 > [!NOTE]
 > Witryna demonstracyjna usługi Defender for Endpoint w demo.wd.microsoft.com jest przestarzała i zostanie usunięta w przyszłości.
@@ -58,32 +58,29 @@ Obejrzyj ten film wideo, aby dowiedzieć się, w jaki sposób ochrona sieci poma
 
 ## <a name="requirements-for-network-protection"></a>Wymagania dotyczące ochrony sieci
 
-Ochrona sieci wymaga Windows 10 Pro lub Enterprise i Program antywirusowy Microsoft Defender ochrony w czasie rzeczywistym.
-
-****
+Ochrona sieci wymaga ochrony systemu Windows 10 Pro lub Enterprise oraz ochrony antywirusowej Microsoft Defender w czasie rzeczywistym.
 
 | Wersje systemu Windows | Program antywirusowy Microsoft Defender |
 |:---|:---|
-| Windows 10 wersji 1709 lub nowszej <br> Windows 11 <br> Windows Server 1803 lub nowszy | [Program antywirusowy Microsoft Defender ochrony w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md) <br> ochrona [dostarczana przez chmurę musi być włączona](enable-cloud-protection-microsoft-defender-antivirus.md) (aktywna)|
+| Windows 10 w wersji 1709 lub nowszej <br> Windows 11 <br> Windows Server 1803 lub nowszy | [Ochrona antywirusowa Microsoft Defender w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md) <br> ochrona [dostarczana przez chmurę musi być włączona](enable-cloud-protection-microsoft-defender-antivirus.md) (aktywna)|
 
 ## <a name="why-network-protection-is-important"></a>Dlaczego ochrona sieci jest ważna
 
 > [!IMPORTANT]
 > Niektóre informacje odnoszą się do wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
->
 > Informacje o funkcjach dostępnych komercyjnie są zgodne z informacjami publicznej wersji zapoznawczej.
 
-Ochrona sieci jest częścią grupy redukcji obszaru ataków rozwiązań w Ochrona punktu końcowego w usłudze Microsoft Defender. Ochrona sieci umożliwia blokowanie adresów URL i adresów IP w warstwie 3 (warstwa sieciowa). Ochrona sieci może blokować dostęp do adresów URL z przeglądarek innych firm i standardowych połączeń sieciowych.
+Ochrona sieci jest częścią grupy redukcji obszaru ataków rozwiązań w usłudze Microsoft Defender for Endpoint. Ochrona sieci umożliwia warstwę warstwy sieciowej blokujących adresów URL i adresów IP. Ochrona sieci może blokować dostęp do adresów URL przy użyciu niektórych przeglądarek i standardowych połączeń sieciowych.
 
-Domyślnie ochrona sieci chroni komputery przed znanymi złośliwymi adresami URL przy użyciu kanału informacyjnego Smart Screen, który blokuje złośliwe adresy URL w sposób podobny do filtru SmartScreen w przeglądarce Microsoft Edge. Funkcje ochrony sieci można rozszerzyć na:
+Domyślnie ochrona sieci chroni komputery przed znanymi złośliwymi adresami URL przy użyciu kanału informacyjnego SmartScreen, który blokuje złośliwe adresy URL w sposób podobny do filtru SmartScreen w przeglądarce Microsoft Edge. Funkcje ochrony sieci można rozszerzyć na:
 
 - Blokuj adres IP/adres URL z własnej funkcji Threat Intel (Wskaźniki)
-- Blokuj niesankcjonowane usługi z Microsoft Cloud App Security (MCAS)
+- Blokuj niesankcjonowane usługi z usługi Microsoft Defender for Cloud Apps (dawniej Microsoft Cloud App Security)
 - Blokowanie witryn na podstawie kategorii (filtrowanie zawartości sieci Web)
 
-Usługa Network Protections jest krytyczną częścią stosu ochrony i odpowiedzi firmy Microsoft.
+Ochrona sieci jest krytyczną częścią stosu ochrony i odpowiedzi firmy Microsoft.
 
-Aby uzyskać szczegółowe informacje na temat ochrony sieci dla Windows Server, Linux, MacOS i MTD, zobacz [Proaktywne wyszukiwanie zagrożeń z zaawansowanym wyszukiwaniem zagrożeń](advanced-hunting-overview.md).
+Aby uzyskać szczegółowe informacje na temat ochrony sieci dla systemów Windows Server, Linux, MacOS i MTD, zobacz [Proaktywne wyszukiwanie zagrożeń z zaawansowanym wyszukiwaniem zagrożeń](advanced-hunting-overview.md).
 
 ### <a name="block-command-and-control-c2-attacks"></a>Blokuj ataki na polecenia i kontrolę (C2)
 
@@ -96,7 +93,7 @@ Serwerów C2 można używać do inicjowania poleceń, które mogą:
 - zakłócanie legalnych aplikacji
 - rozprzestrzenianie złośliwego oprogramowania, takiego jak oprogramowanie wymuszające okup
 
-Składnik ochrony sieci Ochrona punktu końcowego w usłudze Microsoft Defender identyfikuje i blokuje połączenia z infrastrukturami C2 używanymi w atakach wymuszania okupu obsługiwanych przez człowieka przy użyciu technik takich jak uczenie maszynowe i inteligentna identyfikacja wskaźnika naruszenia zabezpieczeń (IoC).
+Składnik Ochrona sieci w usłudze Microsoft Defender dla punktu końcowego identyfikuje i blokuje połączenia z infrastrukturami C2 używanymi w atakach wymuszania okupu obsługiwanych przez człowieka przy użyciu technik takich jak uczenie maszynowe i inteligentna identyfikacja wskaźnika naruszenia zabezpieczeń (IoC).
 
 #### <a name="network-protection-new-toast-notifications"></a>Ochrona sieci: nowe powiadomienia wyskakujące
 
@@ -130,7 +127,7 @@ Użytkownik odwiedza witrynę internetową:
 - Jeśli adres URL ma nieznaną lub niepewną reputację, wyskakujące powiadomienie wyświetli użytkownikowi następujące opcje:
 
   - **Ok** — powiadomienie wyskakujące jest zwalniane (usuwane), a próba uzyskania dostępu do witryny została zakończona.
-  - **Odblokuj** — aby uzyskać dostęp do witryny, użytkownik nie będzie musiał uzyskiwać dostępu do portalu Windows Defender Security Intelligence (WDSI). Użytkownik będzie miał dostęp do witryny przez 24 godziny. w którym momencie blok jest ponownie włączany przez kolejne 24 godziny. Użytkownik może nadal używać funkcji **Odblokuj** , aby uzyskać dostęp do witryny do czasu, gdy administrator zabroni (blokuje) witryny, usuwając w ten sposób opcję **Odblokuj**.
+  - **Odblokuj** — aby uzyskać dostęp do witryny, użytkownik nie będzie musiał uzyskiwać dostępu do portalu analizy zabezpieczeń usługi Windows Defender (WDSI). Użytkownik będzie miał dostęp do witryny przez 24 godziny. w którym momencie blok jest ponownie włączany przez kolejne 24 godziny. Użytkownik może nadal używać funkcji **Odblokuj** , aby uzyskać dostęp do witryny do czasu, gdy administrator zabroni (blokuje) witryny, usuwając w ten sposób opcję **Odblokuj**.
   - **Opinia** — wyskakujące powiadomienie przedstawia użytkownikowi link do przesłania biletu, którego użytkownik może użyć do przesłania opinii do administratora w celu uzasadnienia dostępu do witryny.
 
   > [!div class="mx-imgBorder"]
@@ -171,12 +168,12 @@ Blokowanie komunikacji poleceń i kontroli może poważnie utrudnić ukierunkowa
 
 ## <a name="smart-screen-unblock"></a>Odblokowywanie ekranu inteligentnego
 
-Nowa funkcja w Ochrona punktu końcowego w usłudze Microsoft Defender Indicators umożliwia administratorom zezwalanie użytkownikom końcowym na pomijanie ostrzeżeń generowanych dla niektórych adresów URL i adresów IP. W zależności od tego, dlaczego adres URL został zablokowany, napotkanie bloku Ekranu inteligentnego może oferować administratorom możliwość odblokowania witryny przez maksymalnie 24 godziny. W takich przypadkach zostanie wyświetlone powiadomienie Zabezpieczenia Windows wyskakujące, co umożliwi użytkownikowi końcowemu **odblokowanie** adresu URL lub adresu IP przez zdefiniowany okres.  
+Nowa funkcja w usłudze Microsoft Defender for Endpoint Indicators umożliwia administratorom zezwalanie użytkownikom końcowym na pomijanie ostrzeżeń generowanych dla niektórych adresów URL i adresów IP. W zależności od tego, dlaczego adres URL został zablokowany, napotkanie bloku Ekranu inteligentnego może oferować administratorom możliwość odblokowania witryny przez maksymalnie 24 godziny. W takich przypadkach zostanie wyświetlone powiadomienie wyskakujące zabezpieczenia systemu Windows, dzięki czemu użytkownik końcowy będzie mógł **odblokować** adres URL lub adres IP przez określony czas.  
 
  > [!div class="mx-imgBorder"]
- > ![Zabezpieczenia Windows powiadomienia o ochronie sieci](images/network-protection-smart-screen-block-notification.png)
+ > ![ Powiadomienie o zabezpieczeniach systemu Windows dotyczące ochrony sieci](images/network-protection-smart-screen-block-notification.png)
 
-Ochrona punktu końcowego w usłudze Microsoft Defender Administratorzy mogą skonfigurować funkcję Odblokuj ekran inteligentny w [Microsoft 365 Defender](https://security.microsoft.com/) przy użyciu następującego narzędzia konfiguracji. W portalu Microsoft 365 Defender przejdź do ścieżki do nazwy ConfigToolName.
+Administratorzy usługi Microsoft Defender dla punktów końcowych mogą skonfigurować funkcję odblokowywania ekranu inteligentnego w usłudze [Microsoft 365 Defender](https://security.microsoft.com/) przy użyciu następującego narzędzia konfiguracji. W portalu usługi Microsoft 365 Defender przejdź do ścieżki do nazwy ConfigToolName.
 
 <!-- Hide {this intro with no subsequent list items}
 [Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
@@ -190,7 +187,7 @@ Ochrona punktu końcowego w usłudze Microsoft Defender Administratorzy mogą sk
 Ochrona sieci jest włączona dla każdego urządzenia, co zwykle odbywa się przy użyciu infrastruktury zarządzania. Aby uzyskać obsługiwane metody, zobacz [Włączanie ochrony sieci](enable-network-protection.md).
 
 > [!NOTE]
-> Program antywirusowy Microsoft Defender musi być aktywna, aby włączyć ochronę sieci.
+> Program antywirusowy Microsoft Defender musi być aktywny, aby włączyć ochronę sieci.
 
 Ochronę sieci można włączyć w trybie **inspekcji** lub w trybie **bloku** . Jeśli chcesz ocenić wpływ włączenia ochrony sieci przed zablokowaniem adresów IP lub adresów URL, możesz włączyć go w trybie inspekcji przez pewien czas, aby zebrać dane dotyczące tego, co byłoby zablokowane. Dzienniki trybu inspekcji, gdy użytkownicy końcowi nawiązali połączenie z adresem lub lokacją, która w przeciwnym razie zostałaby zablokowana przez ochronę sieci.
 
@@ -198,7 +195,7 @@ Ochronę sieci można włączyć w trybie **inspekcji** lub w trybie **bloku** .
 
 Jeśli używasz zaawansowanego wyszukiwania zagrożeń do identyfikowania zdarzeń inspekcji, będziesz mieć do 30-dniową historię dostępną w konsoli programu . Zobacz [Zaawansowane wyszukiwanie zagrożeń](advanced-hunting-overview.md).
 
-Dane inspekcji można znaleźć w **temacie Zaawansowane wyszukiwanie zagrożeń** w portalu Ochrona punktu końcowego w usłudze Microsoft Defender.  
+Dane inspekcji można znaleźć w **temacie Zaawansowane wyszukiwanie zagrożeń** w portalu usługi Microsoft Defender for Endpoint.  
 
 Zdarzenia są w deviceevents z ActionType ExploitGuardNetworkProtectionAudited. Bloki są wyświetlane przez exploitGuardNetworkProtectionBlocked.  
 
@@ -249,11 +246,11 @@ Korzystając z tych danych, możesz podjąć świadomą decyzję o włączeniu o
 
 Aby uzyskać informacje o sposobie zgłaszania wyników fałszywie dodatnich, zobacz [Zgłaszanie wyników fałszywie dodatnich](web-protection-overview.md#report-false-positives).
 
-Aby uzyskać szczegółowe informacje na temat tworzenia własnych raportów Power BI, zobacz [Tworzenie niestandardowych raportów przy użyciu Power BI](api-power-bi.md).
+Aby uzyskać szczegółowe informacje na temat tworzenia własnych raportów usługi Power BI, zobacz [Tworzenie raportów niestandardowych przy użyciu usługi Power BI](api-power-bi.md).
 
 ## <a name="configuring-network-protection"></a>Konfigurowanie ochrony sieci
 
-Aby uzyskać więcej informacji na temat włączania ochrony sieci, zobacz **[Włączanie ochrony sieci](enable-network-protection.md)**. Użyj zasady grupy, programu PowerShell lub dostawców CSP mdm, aby włączyć ochronę sieci w sieci i zarządzać nią.
+Aby uzyskać więcej informacji na temat włączania ochrony sieci, zobacz **[Włączanie ochrony sieci](enable-network-protection.md)**. Użyj zasad grupy, programu PowerShell lub dostawców CSP mdm, aby włączyć ochronę sieci w sieci i zarządzać nią.
 
 Po włączeniu usług może być konieczne skonfigurowanie sieci lub zapory w celu zezwolenia na połączenia między usługami i urządzeniami (nazywane również punktami końcowymi).
 
@@ -262,15 +259,15 @@ Po włączeniu usług może być konieczne skonfigurowanie sieci lub zapory w ce
 
 ## <a name="viewing-network-protection-events"></a>Wyświetlanie zdarzeń ochrony sieci
 
-Ochrona sieci działa najlepiej z [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md), co zapewnia szczegółowe raportowanie zdarzeń i bloków ochrony przed lukami w zabezpieczeniach w ramach [scenariuszy badania alertów](investigate-alerts.md).
+Ochrona sieci działa najlepiej z usługą [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), która zapewnia szczegółowe raportowanie zdarzeń i bloków ochrony przed lukami w zabezpieczeniach w ramach [scenariuszy badania alertów](investigate-alerts.md).
 
 Gdy ochrona sieci blokuje połączenie, z Centrum akcji jest wyświetlane powiadomienie. Twój zespół ds. operacji zabezpieczeń może [dostosować powiadomienie](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) przy użyciu szczegółów i informacji kontaktowych organizacji. Ponadto można włączyć i dostosować poszczególne reguły zmniejszania obszaru podatnego na ataki, aby dostosować je do określonych technik monitorowania.
 
 Możesz również użyć [trybu inspekcji](audit-windows-defender.md) , aby ocenić, w jaki sposób ochrona sieci wpłynie na organizację, jeśli zostałaby włączona.
 
-## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>Przeglądanie zdarzeń ochrony sieci w portalu Microsoft 365 Defender
+## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>Przeglądanie zdarzeń ochrony sieci w portalu usługi Microsoft 365 Defender
 
-Ochrona punktu końcowego w usłudze Microsoft Defender udostępnia szczegółowe raporty dotyczące zdarzeń i bloków w ramach [scenariuszy badania alertów](investigate-alerts.md). Te szczegóły można wyświetlić w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) w [kolejce alertów](review-alerts.md) lub przy użyciu [zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md). Jeśli używasz [trybu inspekcji](audit-windows-defender.md), możesz użyć zaawansowanego wyszukiwania zagrożeń, aby zobaczyć, jak ustawienia ochrony sieci wpłyną na środowisko, jeśli zostaną włączone.
+Usługa Microsoft Defender dla punktu końcowego udostępnia szczegółowe raporty dotyczące zdarzeń i bloków w ramach [scenariuszy badania alertów](investigate-alerts.md). Te szczegóły można wyświetlić w portalu usługi Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) w [kolejce alertów](review-alerts.md) lub przy użyciu [zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md). Jeśli używasz [trybu inspekcji](audit-windows-defender.md), możesz użyć zaawansowanego wyszukiwania zagrożeń, aby zobaczyć, jak ustawienia ochrony sieci wpłyną na środowisko, jeśli zostaną włączone.
 
 Oto przykładowe zapytanie dotyczące zaawansowanego wyszukiwania zagrożeń:
 
@@ -279,9 +276,9 @@ DeviceNetworkEvents
 |where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Przejrzyj zdarzenia ochrony sieci w Windows Podgląd zdarzeń
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Przeglądanie zdarzeń ochrony sieci w Przeglądarce zdarzeń systemu Windows
 
-Możesz przejrzeć dziennik zdarzeń Windows, aby wyświetlić zdarzenia, które są tworzone, gdy ochrona sieci blokuje (lub przeprowadza inspekcje) dostępu do złośliwego adresu IP lub domeny:
+Możesz przejrzeć dziennik zdarzeń systemu Windows, aby wyświetlić zdarzenia, które są tworzone, gdy ochrona sieci blokuje (lub przeprowadza inspekcje) dostęp do złośliwego adresu IP lub domeny:
 
 1. [Skopiuj plik XML bezpośrednio](event-views.md).
 
@@ -300,25 +297,25 @@ Ta procedura tworzy widok niestandardowy, który filtruje tylko następujące zd
 
 ## <a name="network-protection-and-the-tcp-three-way-handshake"></a>Ochrona sieci i trójstopnie uzgadnianie protokołu TCP
 
-W przypadku ochrony sieci określenie, czy zezwolić na dostęp do lokacji lub zablokować go, jest wykonywane po zakończeniu [uzgadniania trójstopnienego za pośrednictwem protokołu TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). W związku z tym, gdy lokacja jest zablokowana przez ochronę sieci, w portalu Microsoft 365 Defender może zostać wyświetlony typ `ConnectionSuccess` `NetworkConnectionEvents` akcji poniżej, mimo że witryna została faktycznie zablokowana. `NetworkConnectionEvents` są zgłaszane z warstwy TCP, a nie z ochrony sieci. Po zakończeniu uzgadniania trójstopnienia dostęp do witryny jest dozwolony lub blokowany przez ochronę sieci.
+W przypadku ochrony sieci określenie, czy zezwolić na dostęp do lokacji lub zablokować go, jest wykonywane po zakończeniu [uzgadniania trójstopnienego za pośrednictwem protokołu TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). W związku z tym, gdy witryna jest zablokowana przez ochronę sieci, w portalu usługi Microsoft 365 Defender może zostać wyświetlony typ `ConnectionSuccess` `NetworkConnectionEvents` akcji poniżej, mimo że witryna została faktycznie zablokowana. `NetworkConnectionEvents` są zgłaszane z warstwy TCP, a nie z ochrony sieci. Po zakończeniu uzgadniania trójstopnienia dostęp do witryny jest dozwolony lub blokowany przez ochronę sieci.
 
 Oto przykład tego, jak to działa:
 
 1. Załóżmy, że użytkownik próbuje uzyskać dostęp do witryny internetowej na swoim urządzeniu. Lokacja jest hostowana w niebezpiecznej domenie i powinna zostać zablokowana przez ochronę sieci.  
 
-2. Rozpoczyna się uzgadnianie trójstopnie za pośrednictwem protokołu TCP/IP. Przed zakończeniem `NetworkConnectionEvents` jest rejestrowana akcja, a jej `ActionType` nazwa jest wyświetlana jako `ConnectionSuccess`. Jednak po zakończeniu trójstopnienego procesu uzgadniania ochrona sieci blokuje dostęp do lokacji. Wszystko to dzieje się bardzo szybko. Podobny proces ma miejsce w [przypadku Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)— wtedy trójstopnie uzgadnianie kończy się, gdy jest wykonywane ustalanie, a dostęp do witryny jest zablokowany lub dozwolony.
+2. Rozpoczyna się uzgadnianie trójstopnie za pośrednictwem protokołu TCP/IP. Przed zakończeniem `NetworkConnectionEvents` jest rejestrowana akcja, a jej `ActionType` nazwa jest wyświetlana jako `ConnectionSuccess`. Jednak po zakończeniu trójstopnienego procesu uzgadniania ochrona sieci blokuje dostęp do lokacji. Wszystko to dzieje się bardzo szybko. Podobny proces występuje w przypadku [filtru Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); jest to, gdy uzgadnianie trójstopnie kończy się, że determinacja jest dokonywana, a dostęp do witryny jest zablokowany lub dozwolony.
 
-3. W portalu Microsoft 365 Defender alert jest wyświetlany w [kolejce alertów](alerts-queue.md). Szczegóły tego alertu obejmują zarówno `NetworkConnectionEvents` i `AlertEvents`. Widać, że witryna została zablokowana, mimo że masz `NetworkConnectionEvents` również element o typie ActionType .`ConnectionSuccess`
+3. W portalu usługi Microsoft 365 Defender alert jest wyświetlany w [kolejce alertów](alerts-queue.md). Szczegóły tego alertu obejmują zarówno `NetworkConnectionEvents` i `AlertEvents`. Widać, że witryna została zablokowana, mimo że masz `NetworkConnectionEvents` również element o typie ActionType .`ConnectionSuccess`
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Zagadnienia dotyczące Windows pulpitu wirtualnego uruchomionego Windows 10 Enterprise wielu sesjach
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Zagadnienia dotyczące pulpitu wirtualnego systemu Windows z systemem Windows 10 Enterprise — wiele sesji
 
-Ze względu na charakter wielu użytkowników Windows 10 Enterprise należy pamiętać o następujących kwestiach:
+Ze względu na charakter wielu użytkowników systemu Windows 10 Enterprise należy pamiętać o następujących kwestiach:
 
 1. Ochrona sieci jest funkcją dla całego urządzenia i nie może być przeznaczona dla określonych sesji użytkowników.
 
 2. Zasady filtrowania zawartości sieci Web są również na całym urządzeniu.
 
-3. Jeśli musisz rozróżnić grupy użytkowników, rozważ utworzenie oddzielnych Windows pul hostów i przypisań hostów usługi Virtual Desktop.
+3. Jeśli musisz rozróżnić grupy użytkowników, rozważ utworzenie oddzielnych pul hostów i przypisań usługi Windows Virtual Desktop.
 
 4. Przetestuj ochronę sieci w trybie inspekcji, aby ocenić jej zachowanie przed wdrożeniem.
 
@@ -326,7 +323,7 @@ Ze względu na charakter wielu użytkowników Windows 10 Enterprise należy pami
 
 ### <a name="alternative-option-for-network-protection"></a>Alternatywna opcja ochrony sieci
 
-W przypadku Windows 10 Enterprise z wieloma sesjami 1909 i nowszymi, używanymi w Windows Virtual Desktop na platformie Azure, ochronę sieci dla Microsoft Edge można włączyć przy użyciu następującej metody:
+W przypadku systemu Windows 10 Enterprise Multi-Session 1909 i nowszego, używanego w programie Windows Virtual Desktop na platformie Azure, ochronę sieci dla przeglądarki Microsoft Edge można włączyć przy użyciu następującej metody:
 
 1. Użyj opcji [Włącz ochronę sieci](enable-network-protection.md) i postępuj zgodnie z instrukcjami, aby zastosować zasady.
 
@@ -346,8 +343,14 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 ```
 
+## <a name="optimizing-network-protection-performance"></a>Optymalizowanie wydajności ochrony sieci
+
+Usługa Network Protection ma teraz optymalizację wydajności, która umożliwia trybowi bloku rozpoczęcie asynchronicznej inspekcji długich połączeń po ich zweryfikowaniu i zezwoleniu na korzystanie z filtru SmartScreen, co może zapewnić potencjalne zmniejszenie kosztów inspekcji przepustowości i może również pomóc w rozwiązywaniu problemów ze zgodnością aplikacji. Ta funkcja optymalizacji jest domyślnie włączona. Tę funkcję można wyłączyć przy użyciu następującego polecenia cmdlet programu PowerShell:
+
+`Set-MpPreference -AllowSwitchToAsyncInspection $false`
+
 ## <a name="see-also"></a>Zobacz też
 
 - [Ocena | ochrony sieci](evaluate-network-protection.md) Podejmij się szybkiego scenariusza, który pokazuje, jak działa funkcja i jakie zdarzenia są zwykle tworzone.
-- [Włączanie | ochrony sieci](enable-network-protection.md) Użyj zasady grupy, programu PowerShell lub dostawców CSP mdm, aby włączyć ochronę sieci w sieci i zarządzać nią.
-- [Konfigurowanie możliwości zmniejszania obszaru ataków w Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
+- [Włączanie | ochrony sieci](enable-network-protection.md) Użyj zasad grupy, programu PowerShell lub dostawców CSP mdm, aby włączyć ochronę sieci w sieci i zarządzać nią.
+- [Konfigurowanie możliwości zmniejszania obszaru ataków w usłudze Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

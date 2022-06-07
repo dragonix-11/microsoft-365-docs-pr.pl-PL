@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 2f0ccded84f7b1c46ff2aeea38eae8f0baadc6ff
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 2a59599dc9757935413b977bf9e71ed3b7ba09ea
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863587"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923420"
 ---
 # <a name="test-your-application-on-test-base"></a>Testowanie aplikacji w usłudze Test Base
 
@@ -30,15 +30,15 @@ W tej sekcji dowiesz się, jak tworzyć pakiety z różnymi typami aplikacji do 
 
    - **Testowanie plików binarnych**
 
-      Zobacz [Tworzenie i testowanie plików binarnych w bazie testowej](testapplication.md) , aby przygotować pakiet z plikiem aplikacji binarnej (.exe, .msi) do przekazywania i testowania.
+      Zobacz [Tworzenie i testowanie plików binarnych w bazie testowej](testapplication.md) , aby przygotować pakiet z plikiem aplikacji binarnej (tj. .exe, .msi) do przekazywania i testowania.
 
    - **Aplikacja Intunewin**
 
-      Zobacz [Testowanie aplikacji Intune w bazie testowej](testintuneapplication.md), aby przygotować pakiet z plikiem aplikacji Intune (.intunewin) do przekazywania i testowania.
+      Zobacz [Testowanie aplikacji usługi Intune w bazie testowej](testintuneapplication.md) , aby przygotować pakiet z plikiem aplikacji usługi Intune (intunewin) do przekazywania i testowania.
 
    - **Wstępnie utworzony pakiet zip**
 
-      Zobacz [Przekazywanie wstępnie skompilowanego pakietu zip](uploadApplication.md) , jeśli masz już pakiet w trybie offline w formacie .zip.
+      Zobacz [Przekazywanie wstępnie skompilowanego pakietu zip](uploadapplication.md) , jeśli masz już pakiet w trybie offline w formacie .zip.
 
    - **Klonowanie istniejącego pakietu**
 

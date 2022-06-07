@@ -348,10 +348,6 @@
           href: security-and-compliance/enable-modern-authentication.md
         - name: Zagrożenia wykryte przez program antywirusowy Microsoft Defender
           href: /microsoft-365/business-premium/m365bp-review-threats-take-action
-        - name: Konfigurowanie funkcji zgodności
-          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
-        - name: Wskaźnik bezpieczeństwa
-          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: Przewodnik po zgodności z RODO
           href: security-and-compliance/gdpr-compliance.md
     - name: Zarządzaj urządzeniami i danymi aplikacji
