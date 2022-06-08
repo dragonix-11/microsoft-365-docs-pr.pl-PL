@@ -1,5 +1,5 @@
 ---
-title: Jaka&apos; jest różnica między wiadomościami-śmieciami a wiadomościami e-mail zbiorczymi?
+title: Jaka jest różnica między spamem i pocztą zbiorczą?
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się więcej o różnicach między wiadomościami-śmieciami (spamem) i wiadomościami e-mail zbiorczymi (szara poczta) w Exchange Online Protection (EOP).
+description: Administratorzy mogą dowiedzieć się więcej o różnicach między wiadomościami-śmieciami (spamem) i wiadomościami e-mail zbiorczymi (szara poczta) w usłudze Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f948b45c5f4b26f3fba74f3883511218daa0ef0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: dd876b522a0d565b84e8bb9043e277cd3bc34495
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647848"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940453"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Jaka jest różnica między wiadomościami-śmieciami a zbiorczą wiadomością e-mail w ramach EOP?
 
@@ -33,7 +33,7 @@ ms.locfileid: "65647848"
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych, klienci czasami pytają: "jaka jest różnica między wiadomościami-śmieciami a zbiorczymi wiadomościami e-mail?" W tym temacie wyjaśniono różnicę i opisano kontrolki dostępne w ramach EOP.
+W organizacjach platformy Microsoft 365 ze skrzynkami pocztowymi w usłudze Exchange Online lub autonomicznych organizacjach programu Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online klienci czasami pytają: "jaka jest różnica między wiadomościami-śmieciami a zbiorczymi wiadomościami e-mail?" W tym temacie wyjaśniono różnicę i opisano kontrolki dostępne w ramach EOP.
 
 - **Wiadomości-śmieci** to spam, które są niechciane i powszechnie niechciane wiadomości (po prawidłowym zidentyfikowaniu). Domyślnie EOP odrzuca spam na podstawie reputacji źródłowego serwera poczty e-mail. Jeśli wiadomość przejdzie inspekcję źródłowego adresu IP, zostanie wysłana do filtrowania spamu. Jeśli wiadomość jest klasyfikowana jako spam przez filtrowanie spamu, wiadomość jest (domyślnie) dostarczana do zamierzonych adresatów i przenoszona do folderu Wiadomości-śmieci.
 

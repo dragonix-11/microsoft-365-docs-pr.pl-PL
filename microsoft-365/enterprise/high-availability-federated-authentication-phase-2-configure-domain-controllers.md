@@ -13,28 +13,28 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 'Podsumowanie: Skonfiguruj kontrolery domeny i serwer synchronizacji katalogów na potrzeby uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 w Microsoft Azure.'
-ms.openlocfilehash: a3b5963100072f55c108f29d4437a2ae997ad96d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 'Podsumowanie: Skonfiguruj kontrolery domeny i serwer synchronizacji katalogów pod kątem uwierzytelniania federacyjnego o wysokiej dostępności dla platformy Microsoft 365 na platformie Microsoft Azure.'
+ms.openlocfilehash: 765ccb0aaf2611947f505b53b5689009dadd5148
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098367"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940695"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Uwierzytelnianie federacyjne o wysokiej dostępności — faza 2: konfigurowanie kontrolerów domeny
 
-W tej fazie wdrażania wysokiej dostępności Microsoft 365 uwierzytelniania federacyjnego w usługach infrastruktury platformy Azure skonfigurujesz dwa kontrolery domeny i serwer synchronizacji katalogów w sieci wirtualnej platformy Azure. Żądania sieci Web klienta dotyczące uwierzytelniania można następnie uwierzytelniać w sieci wirtualnej platformy Azure, zamiast wysyłać ten ruch uwierzytelniania przez połączenie sieci VPN typu lokacja-lokacja do sieci lokalnej.
+W tej fazie wdrażania wysokiej dostępności uwierzytelniania federacyjnego platformy Microsoft 365 w usługach infrastruktury platformy Azure skonfigurujesz dwa kontrolery domeny i serwer synchronizacji katalogów w sieci wirtualnej platformy Azure. Żądania sieci Web klienta dotyczące uwierzytelniania można następnie uwierzytelniać w sieci wirtualnej platformy Azure, zamiast wysyłać ten ruch uwierzytelniania przez połączenie sieci VPN typu lokacja-lokacja do sieci lokalnej.
   
 > [!NOTE]
-> Active Directory Federation Services (AD FS) nie może używać Azure Active Directory (Azure AD) jako substytutu kontrolerów domeny Active Directory Domain Services (AD DS). 
+> Usługi Active Directory Federation Services (AD FS) nie mogą używać usługi Azure Active Directory (Azure AD) jako substytutu kontrolerów domeny usług Active Directory Domain Services (AD DS). 
   
-Należy ukończyć tę fazę przed przejściem do [fazy 3: Konfigurowanie serwerów usług AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Zobacz [Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) dla wszystkich faz.
+Należy ukończyć tę fazę przed przejściem do [fazy 3: Konfigurowanie serwerów usług AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Zobacz [Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla platformy Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) , aby zapoznać się ze wszystkimi fazami.
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Tworzenie maszyn wirtualnych kontrolera domeny na platformie Azure
 
 Najpierw należy wypełnić kolumnę **Nazwa maszyny wirtualnej** tabeli M i zmodyfikować rozmiary maszyn wirtualnych zgodnie z potrzebami w kolumnie **Minimalny rozmiar** .
   
-|**Element**|**Nazwa maszyny wirtualnej**|**Obraz galerii**|**typ Storage**|**Minimalny rozmiar**|
+|**Element**|**Nazwa maszyny wirtualnej**|**Obraz galerii**|**Typ magazynu**|**Minimalny rozmiar**|
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![Linii.](../media/Common-Images/TableLine.png) (pierwszy kontroler domeny, przykład DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![Linii.](../media/Common-Images/TableLine.png) (drugi kontroler domeny, przykład DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
@@ -44,11 +44,11 @@ Najpierw należy wypełnić kolumnę **Nazwa maszyny wirtualnej** tabeli M i zmo
 |6.  <br/> |![Linii.](../media/Common-Images/TableLine.png) (pierwszy serwer proxy aplikacji internetowej, przykład WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |7.  <br/> |![Linii.](../media/Common-Images/TableLine.png) (drugi serwer proxy aplikacji internetowej, przykład WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **Tabela M — maszyny wirtualne do uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure**
+ **Tabela M — maszyny wirtualne do uwierzytelniania federacyjnego o wysokiej dostępności dla platformy Microsoft 365 na platformie Azure**
   
-Aby uzyskać pełną listę rozmiarów maszyn wirtualnych, zobacz [Rozmiary maszyn wirtualnych](/azure/virtual-machines/virtual-machines-windows-sizes).
+Aby uzyskać pełną listę rozmiarów maszyn wirtualnych, zobacz [Rozmiary maszyn wirtualnych](/azure/virtual-machines/sizes).
   
-Poniższy blok poleceń Azure PowerShell tworzy maszyny wirtualne dla dwóch kontrolerów domeny. Określ wartości zmiennych, usuwając \< and > znaki. Należy pamiętać, że ten blok poleceń Azure PowerShell używa wartości z następujących tabel:
+Poniższy blok poleceń programu Azure PowerShell tworzy maszyny wirtualne dla dwóch kontrolerów domeny. Określ wartości zmiennych, usuwając \< and > znaki. Należy pamiętać, że ten blok poleceń programu Azure PowerShell używa wartości z następujących tabel:
   
 - Tabela M dla maszyn wirtualnych
     
@@ -65,12 +65,12 @@ Poniższy blok poleceń Azure PowerShell tworzy maszyny wirtualne dla dwóch kon
 Pamiętaj, że w [fazie 1: Konfigurowanie platformy Azure](high-availability-federated-authentication-phase-1-configure-azure.md) zdefiniowano tabele R, V, S, I i A.
   
 > [!NOTE]
-> Poniższe zestawy poleceń używają najnowszej wersji Azure PowerShell. Zobacz [Wprowadzenie z Azure PowerShell](/powershell/azure/get-started-azureps). 
+> Poniższe zestawy poleceń używają najnowszej wersji programu Azure PowerShell. Zobacz [Wprowadzenie do programu Azure PowerShell](/powershell/azure/get-started-azureps). 
   
-Po podaniu wszystkich prawidłowych wartości uruchom wynikowy blok w wierszu Azure PowerShell lub w zintegrowanym środowisku skryptów programu PowerShell (ISE) na komputerze lokalnym.
+Po podaniu wszystkich prawidłowych wartości uruchom wynikowy blok w wierszu polecenia programu Azure PowerShell lub w zintegrowanym środowisku skryptów programu PowerShell (ISE) na komputerze lokalnym.
   
 > [!TIP]
-> Aby wygenerować gotowe do uruchomienia bloki poleceń programu PowerShell na podstawie ustawień niestandardowych, użyj tego [Microsoft Excel skoroszytu konfiguracji](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> Aby wygenerować gotowe do uruchomienia bloki poleceń programu PowerShell na podstawie ustawień niestandardowych, użyj tego [skoroszytu konfiguracji programu Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 ```powershell
 # Set up variables common to both virtual machines
@@ -144,13 +144,13 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Ponieważ te maszyny wirtualne są przeznaczone dla aplikacji intranetowej, nie mają przypisanego publicznego adresu IP ani etykiety nazwy domeny DNS i nie są uwidocznione w Internecie. Jednak oznacza to również, że nie można nawiązać z nimi połączenia z Azure Portal. Opcja **Połączenie** jest niedostępna podczas wyświetlania właściwości maszyny wirtualnej. Użyj akcesorium Podłączanie pulpitu zdalnego lub innego narzędzia pulpitu zdalnego, aby nawiązać połączenie z maszyną wirtualną przy użyciu jej prywatnego adresu IP lub intranetowej nazwy DNS.
+> Ponieważ te maszyny wirtualne są przeznaczone dla aplikacji intranetowej, nie mają przypisanego publicznego adresu IP ani etykiety nazwy domeny DNS i nie są uwidocznione w Internecie. Oznacza to jednak również, że nie można nawiązać z nimi połączenia z poziomu witryny Azure Portal. Opcja **Połącz** jest niedostępna w przypadku wyświetlania właściwości maszyny wirtualnej. Użyj akcesorium Podłączanie pulpitu zdalnego lub innego narzędzia pulpitu zdalnego, aby nawiązać połączenie z maszyną wirtualną przy użyciu jej prywatnego adresu IP lub intranetowej nazwy DNS.
   
 ## <a name="configure-the-first-domain-controller"></a>Konfigurowanie pierwszego kontrolera domeny
 
 Użyj wybranego klienta pulpitu zdalnego i utwórz połączenie pulpitu zdalnego z pierwszą maszyną wirtualną kontrolera domeny. Użyj intranetowej nazwy DNS lub komputera oraz poświadczeń konta administratora lokalnego.
   
-Następnie dodaj dodatkowy dysk danych do pierwszego kontrolera domeny za pomocą tego polecenia z wiersza polecenia Windows PowerShell **na pierwszej maszynie wirtualnej kontrolera domeny**:
+Następnie dodaj dodatkowy dysk danych do pierwszego kontrolera domeny za pomocą tego polecenia z wiersza polecenia programu Windows PowerShell **na pierwszej maszynie wirtualnej kontrolera domeny**:
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -160,7 +160,7 @@ Następnie przetestuj łączność pierwszego kontrolera domeny z lokalizacjami 
   
 Ta procedura gwarantuje, że rozpoznawanie nazw DNS działa poprawnie (że maszyna wirtualna jest poprawnie skonfigurowana z lokalnymi serwerami DNS) oraz że pakiety mogą być wysyłane do i z sieci wirtualnej między środowiskami. Jeśli ten podstawowy test zakończy się niepowodzeniem, skontaktuj się z działem IT, aby rozwiązać problemy z rozpoznawaniem nazw DNS i dostarczaniem pakietów.
   
-Następnie w wierszu polecenia Windows PowerShell na pierwszym kontrolerze domeny uruchom następujące polecenia:
+Następnie w wierszu polecenia programu Windows PowerShell na pierwszym kontrolerze domeny uruchom następujące polecenia:
   
 ```powershell
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
@@ -175,7 +175,7 @@ Zostanie wyświetlony monit o podanie poświadczeń konta administratora domeny.
 
 Użyj wybranego klienta pulpitu zdalnego i utwórz połączenie pulpitu zdalnego z drugą maszyną wirtualną kontrolera domeny. Użyj intranetowej nazwy DNS lub komputera oraz poświadczeń konta administratora lokalnego.
   
-Następnie należy dodać dodatkowy dysk danych do drugiego kontrolera domeny za pomocą tego polecenia z wiersza polecenia Windows PowerShell **na drugiej maszynie wirtualnej kontrolera domeny**:
+Następnie należy dodać dodatkowy dysk danych do drugiego kontrolera domeny za pomocą tego polecenia z wiersza polecenia programu Windows PowerShell **na drugiej maszynie wirtualnej kontrolera domeny**:
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -193,7 +193,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 Zostanie wyświetlony monit o podanie poświadczeń konta administratora domeny. Komputer zostanie ponownie uruchomiony.
   
-Następnie należy zaktualizować serwery DNS dla sieci wirtualnej, aby platforma Azure przypisywać maszynom wirtualnym adresy IP dwóch nowych kontrolerów domeny do użycia jako serwery DNS. Wypełnij zmienne, a następnie uruchom następujące polecenia z wiersza polecenia Windows PowerShell na komputerze lokalnym:
+Następnie należy zaktualizować serwery DNS dla sieci wirtualnej, aby platforma Azure przypisywać maszynom wirtualnym adresy IP dwóch nowych kontrolerów domeny do użycia jako serwery DNS. Wypełnij zmienne, a następnie uruchom następujące polecenia z poziomu wiersza polecenia programu Windows PowerShell na komputerze lokalnym:
   
 ```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -219,7 +219,7 @@ Restart-AzVM -ResourceGroupName $adrgName -Name $secondDCName
 
 Należy pamiętać, że uruchamiamy ponownie dwa kontrolery domeny, aby nie były skonfigurowane z lokalnymi serwerami DNS jako serwerami DNS. Ponieważ oba są serwerami DNS, zostały one automatycznie skonfigurowane przy użyciu lokalnych serwerów DNS jako usługi przesyłania dalej DNS, gdy zostały one awansowane do kontrolerów domeny.
   
-Następnie musimy utworzyć lokację replikacji usługi Active Directory, aby upewnić się, że serwery w sieci wirtualnej platformy Azure korzystają z lokalnych kontrolerów domeny. Połączenie do dowolnego kontrolera domeny przy użyciu konta administratora domeny i uruchom następujące polecenia z poziomu administratora Windows PowerShell monitu:
+Następnie musimy utworzyć lokację replikacji usługi Active Directory, aby upewnić się, że serwery w sieci wirtualnej platformy Azure korzystają z lokalnych kontrolerów domeny. Połącz się z kontrolerem domeny przy użyciu konta administratora domeny i uruchom następujące polecenia z poziomu administratora wiersza polecenia programu Windows PowerShell:
   
 ```powershell
 $vnet="<Table V - Item 1 - Value column>"
@@ -232,7 +232,7 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 Użyj wybranego klienta pulpitu zdalnego i utwórz połączenie pulpitu zdalnego z maszyną wirtualną serwera synchronizacji katalogów. Użyj intranetowej nazwy DNS lub komputera oraz poświadczeń konta administratora lokalnego.
   
-Następnie dołącz go do odpowiedniej domeny usług AD DS za pomocą tych poleceń w wierszu Windows PowerShell.
+Następnie dołącz go do odpowiedniej domeny usług AD DS za pomocą tych poleceń w wierszu polecenia programu Windows PowerShell.
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -245,7 +245,7 @@ Oto konfiguracja wynikająca z pomyślnego zakończenia tej fazy z nazwami kompu
   
 **Faza 2. Kontrolery domeny i serwer synchronizacji katalogów dla infrastruktury uwierzytelniania federacyjnego o wysokiej dostępności na platformie Azure**
 
-![Faza 2 wysokiej dostępności Microsoft 365 infrastruktury uwierzytelniania federacyjnego na platformie Azure z kontrolerami domeny.](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Faza 2 infrastruktury uwierzytelniania federacyjnego platformy Microsoft 365 o wysokiej dostępności na platformie Azure z kontrolerami domeny.](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Następny krok
 
@@ -253,8 +253,8 @@ Użyj [fazy 3: skonfiguruj serwery usług AD FS](high-availability-federated-aut
   
 ## <a name="see-also"></a>Zobacz też
 
-[Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
+[Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności dla platformy Microsoft 365 na platformie Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Tożsamość federacyjna dla środowiska deweloperskiego/testowego Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Tożsamość federacyjna dla środowiska deweloperskiego/testowego platformy Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Centrum rozwiązań i architektury platformy Microsoft 365](../solutions/index.yml)
