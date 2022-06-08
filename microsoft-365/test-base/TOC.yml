@@ -7,7 +7,7 @@
 - name: Przewodniki Szybki start
   items:
     - name: Utwórz konto usługi Test Base
-      href: createAccount.md
+      href: createaccount.md
     - name: Testowanie aplikacji w usłudze Test Base
       items:
         - name: Omówienie
@@ -16,14 +16,16 @@
           href: testapplication.md
         - name: Testowanie aplikacji usługi Intune w usłudze Test Base
           href: testintuneapplication.md
-        - name: Przekaż pakiet usługi Test Base (zip)
-          href: uploadApplication.md
+        - name: Przekazywanie wstępnie utworzonego pakietu zip
+          href: uploadapplication.md
     - name: Tworzenie pakietu
       href: buildpackage.md
     - name: Klonowanie istniejącego pakietu
       href: clonepackage.md
     - name: Wytyczne dotyczące pakietu
       href: contentguideline.md
+    - name: Omówienie kosztów użycia
+      href: usagecost.md
     - name: Reguły aplikacji/testu
       href: rules.md
 - name: Instrukcje

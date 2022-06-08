@@ -314,12 +314,8 @@
           href: ../compliance/ediscovery.md
         - name: Zbieranie elektronicznych materiałów dowodowych w usłudze Microsoft Purview (warstwa Premium)
           href: ../compliance/overview-ediscovery-20.md
-        - name: Plany działań dotyczących zgodności z przepisami
+        - name: Często zadawane pytania dotyczące zgodności z przepisami i plany działań
           items:
-            - name: ISO — zalecany plan działania
-              href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: NIST — zalecany plan działania
-              href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: CCPA — często zadawane pytania
               href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: RODO — zalecany plan działania

@@ -11,12 +11,12 @@ metadata:
   author: v-zhifufeng
   ms.author: v-zhifufeng
   ms.date: 03/29/2021
-  ms.openlocfilehash: a013fd69fda4537c5c3cffbbbb310611236284d2
-  ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+  ms.openlocfilehash: e4e22cc6a7698b543c79f186c95d9c8e9d112e1f
+  ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 06/03/2022
-  ms.locfileid: "65863556"
+  ms.lasthandoff: 06/07/2022
+  ms.locfileid: "65923483"
 landingContent:
 - title: Informacje o usłudze Test Base
   linkLists:
@@ -37,7 +37,7 @@ landingContent:
   - linkListType: quickstart
     links:
     - text: Utwórz konto usługi Test Base
-      url: createAccount.md
+      url: createaccount.md
     - text: Testowanie aplikacji w usłudze Test Base
       url: testoverview.md
     - text: Tworzenie pakietu
@@ -46,6 +46,8 @@ landingContent:
       url: clonepackage.md
     - text: Wytyczne dotyczące pakietu testowego
       url: contentguideline.md
+    - text: Omówienie kosztów użycia
+      url: usagecost.md
     - text: Analiza regresji pamięci
       url: memory.md
     - text: Analiza regresji procesora
