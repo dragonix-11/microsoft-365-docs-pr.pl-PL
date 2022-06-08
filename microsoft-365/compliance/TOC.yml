@@ -10,7 +10,7 @@
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Wprowadzenie
   items:
-    - name: Szybkie zadania umożliwiające rozpoczęcie pracy z usługą Microsoft Purview
+    - name: Szybkie zadania umożliwiające rozpoczęcie pracy ze zgodnością w usłudze Microsoft Purview
       href: compliance-quick-tasks.md
     - name: Katalog rozwiązań platformy Microsoft Purview
       href: microsoft-365-solution-catalog.md
