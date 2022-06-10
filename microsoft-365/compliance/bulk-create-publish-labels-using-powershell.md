@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak za pomocą programu PowerShell tworzyć i publikować etykiety przechowywania z poziomu wiersza polecenia niezależnie od portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 7d650c87aad92cdb65ed9a40c98c8fc3c94e01fb
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: f2a01024f6c2a05eb5d584112f9a828ac2c3058c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287161"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011765"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Tworzenie i publikowanie etykiet przechowywania przy użyciu programu PowerShell
 
@@ -739,11 +739,11 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Krok 4. Uruchamianie skryptu programu PowerShell
 
-Najpierw [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+Najpierw [Połączenie do programu PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell).
 
 Następnie uruchom skrypt, który tworzy i publikuje etykiety przechowywania:
   
-1. W sesji programu PowerShell Usługi Security & Compliance Center wprowadź ścieżkę, a następnie znaki `.\` i nazwę pliku skryptu, a następnie naciśnij klawisz ENTER, aby uruchomić skrypt. Przykład:
+1. W sesji programu PowerShell security & Compliance wprowadź ścieżkę, a następnie znaki `.\` i nazwę pliku skryptu, a następnie naciśnij klawisz ENTER, aby uruchomić skrypt. Przykład:
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1

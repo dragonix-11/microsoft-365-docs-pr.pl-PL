@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -17,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych dowiedz się, jak zarejestrować się w Microsoft 365 Lighthouse.
-ms.openlocfilehash: 8d845ed454a672b1480ca0b6fe6f471cc30a37a6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5596005ff9a3db4e5a873a32f87b2677cdc8efaa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172208"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007135"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Tworzenie konta w Microsoft 365 Lighthouse
 
@@ -30,7 +31,7 @@ Ten artykuł zawiera instrukcje dotyczące rejestrowania się w Microsoft 365 Li
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Microsoft 365 Lighthouse jest wdrażana w dzierżawie partnera nie tylko&mdash; w dzierżawach klientów, ale upewnij się, że Ty i Twoi dzierżawcy klienta spełniacie wymagania wymienione w [Microsoft 365 Lighthouse wymaganiach](m365-lighthouse-requirements.md).
+- Microsoft 365 Lighthouse jest wdrażana w dzierżawie partnera tylko&mdash;nie w dzierżawach klientów, ale upewnij się, że Ty i Twoi dzierżawcy klienta spełniacie wymagania wymienione w [Microsoft 365 Lighthouse wymaganiach](m365-lighthouse-requirements.md).
 
 - Musisz być administratorem globalnym w dzierżawie partnera, do której się logujesz.
 
@@ -38,7 +39,7 @@ Ten artykuł zawiera instrukcje dotyczące rejestrowania się w Microsoft 365 Li
 
 1. Przejdź do Centrum administracyjne platformy Microsoft 365 pod adresem <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> i zaloguj się przy użyciu poświadczeń dzierżawy partnera. 
 
-1. Przejdź do pozycji **RozliczeniaPurchase** >  **ServicesOther** >  Services.
+1. Przejdź do pozycji **Rozliczenia** > **Zakup usług** > **Innych usług**.
 
     Jeśli Microsoft 365 Lighthouse nie znajduje się na liście usług, wybierz pozycję **Zobacz wszystkie inne produkty usług**.
 

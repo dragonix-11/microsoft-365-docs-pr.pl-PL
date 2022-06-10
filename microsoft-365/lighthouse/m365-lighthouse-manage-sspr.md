@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak zarządzać samoobsługowym resetowaniem haseł.
-ms.openlocfilehash: 4d618eb80dfd4a37ad5548de997b3d551bcbbf85
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0af624e93ae9321834e147f829a87f09c36dedf7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022366"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017681"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Zarządzanie samoobsługowym resetowaniem haseł w Microsoft 365 Lighthouse
 
@@ -53,7 +54,7 @@ Karta Resetowanie hasła zawiera omówienie dzierżaw, które włączyły samoob
 
 4. Wybierz pozycję **Edytuj ustawienia samoobsługowego resetowania hasła w Azure Active Directory**, aby przejść do Azure Active Directory (Azure AD).
 
-5. W usłudze Azure AD włącz samoobsługowe resetowanie hasła dla wszystkich lub wybranych użytkowników. Aby dowiedzieć się więcej, zobacz [Samouczek: włączanie użytkownikom odblokowywania konta lub resetowania haseł przy użyciu Azure Active Directory samoobsługowego resetowania haseł](/azure/active-directory/authentication/tutorial-enable-sspr).
+5. W Azure AD włącz samoobsługowe resetowanie hasła dla wszystkich lub wybranych użytkowników. Aby dowiedzieć się więcej, zobacz [Samouczek: włączanie użytkownikom odblokowywania konta lub resetowania haseł przy użyciu Azure Active Directory samoobsługowego resetowania haseł](/azure/active-directory/authentication/tutorial-enable-sspr).
 
 ## <a name="notify-users-to-register-for-sspr"></a>Powiadamianie użytkowników o zarejestrowaniu się na potrzeby samoobsługowego resetowania hasła
 
@@ -75,5 +76,5 @@ Jeśli chcesz użyć innego konta e-mail, możesz wyeksportować listę użytkow
 
 [Planowanie wdrożenia samoobsługowego resetowania haseł Azure Active Directory](/azure/active-directory/authentication/howto-sspr-deployment) (artykuł)\
 [Samouczek: umożliwianie użytkownikom odblokowywania konta lub resetowania haseł przy użyciu Azure Active Directory samoobsługowego resetowania haseł](/azure/active-directory/authentication/tutorial-enable-sspr) (artykuł)\
-[Jak włączyć i skonfigurować samoobsługowe resetowanie hasła w usłudze Azure AD](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (wideo)\
+[Jak włączyć i skonfigurować samoobsługowe resetowanie hasła w Azure AD](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (wideo)\
 [Zarządzanie uwierzytelnianiem wieloskładnikowym w Microsoft 365 Lighthouse](m365-lighthouse-manage-mfa.md) (artykuł)

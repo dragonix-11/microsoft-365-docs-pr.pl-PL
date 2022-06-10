@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: chboyd
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak wyświetlić kondycję usługi dzierżawy.
-ms.openlocfilehash: 3db5085ac4226b3f2800cd46f3542dcb79b311d2
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 53424b98dc47e16971322260a93e30eb707161a7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621019"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007157"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Wyświetlanie kondycji usługi dzierżawy w Microsoft 365 Lighthouse
 

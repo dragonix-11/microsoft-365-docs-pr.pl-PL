@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 416baed923884d9cbabbd6ee7607a48b0a19ab62
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b80db06faea9c76c7df671468b94fc11f0c63df
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092382"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010093"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migrowanie starszych wyszukiwań zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności
 
@@ -35,31 +35,32 @@ Aby ułatwić klientom korzystanie z nowych i ulepszonych funkcji, ten artykuł 
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
+- Musisz zainstalować moduł Exchange Online V2. Aby uzyskać instrukcje, zobacz [Instalowanie i obsługa modułu EXO w wersji 2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+
 - Aby uruchomić polecenia programu PowerShell opisane w tym artykule, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności. Musisz również być członkiem grupy ról Zarządzanie odnajdywaniem w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>.
 
 - Ten artykuł zawiera wskazówki dotyczące tworzenia blokady zbierania elektronicznych materiałów dowodowych. Zasady przechowywania zostaną zastosowane do skrzynek pocztowych w procesie asynchronicznym. Podczas tworzenia blokady zbierania elektronicznych materiałów dowodowych należy utworzyć zarówno caseHoldPolicy, jak i CaseHoldRule, w przeciwnym razie blokada nie zostanie utworzona, a lokalizacje zawartości nie zostaną wstrzymane.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Krok 1. Połączenie do Exchange Online programu PowerShell i programu PowerShell & Security & Compliance Center
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>Krok 1. Połączenie do Exchange Online programu PowerShell i programu PowerShell & zgodności z zabezpieczeniami
 
-Pierwszym krokiem jest nawiązanie połączenia z programem Exchange Online programu PowerShell i programu PowerShell & Security & Compliance Center programu PowerShell. Możesz skopiować następujący skrypt, wkleić go do okna programu PowerShell, a następnie uruchomić go. Zostanie wyświetlony monit o podanie poświadczeń dla organizacji, z którą chcesz nawiązać połączenie. 
+Pierwszym krokiem jest nawiązanie połączenia z programem Exchange Online programu PowerShell i programu PowerShell & Zgodności zabezpieczeń w tym samym oknie programu PowerShell. Możesz skopiować następujące polecenia, wkleić je do okna programu PowerShell, a następnie uruchomić je. Zostanie wyświetlony monit o podanie poświadczeń.
 
 ```powershell
-$UserCredential = Get-Credential
-$sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $sccSession -DisableNameChecking
-$exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $exoSession -AllowClobber -DisableNameChecking
+Connect-IPPSSession
+Connect-ExchangeOnline -UseRPSSession
 ```
 
-Polecenia należy uruchomić w poniższych krokach w tej sesji programu PowerShell.
+Szczegółowe instrukcje można znaleźć [w temacie Połączenie to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) .For detailed instructions (Połączenie to Security & Compliance PowerShell i Połączenie to Exchange Online PowerShell).
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>Krok 2. Pobieranie listy In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych przy użyciu Get-MailboxSearch
 
-Po uwierzytelnieniu możesz uzyskać listę In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych, uruchamiając polecenie cmdlet **Get-MailboxSearch** . Skopiuj i wklej następujące polecenie do programu PowerShell, a następnie uruchom je. Lista wyszukiwań zostanie wyświetlona z ich nazwami i stanem dowolnego In-Place Blokady.
+Po nawiązaniu połączenia możesz uzyskać listę In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych, uruchamiając polecenie cmdlet **Get-MailboxSearch** . Skopiuj i wklej następujące polecenie w oknie programu PowerShell, a następnie uruchom je.
 
 ```powershell
 Get-MailboxSearch
 ```
+
+Lista wyszukiwań zostanie wyświetlona z ich nazwami i stanem dowolnego In-Place Blokady.
 
 Dane wyjściowe polecenia cmdlet będą podobne do następujących:
 
@@ -74,7 +75,7 @@ $search = Get-MailboxSearch -Identity "Search 1"
 ```
 
 ```powershell
-$search | FL
+$search | Format-List
 ```
 
 Dane wyjściowe tych dwóch poleceń będą podobne do następujących:
@@ -82,7 +83,7 @@ Dane wyjściowe tych dwóch poleceń będą podobne do następujących:
 ![Przykład danych wyjściowych programu PowerShell z używania Get-MailboxSearch dla pojedynczego wyszukiwania.](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> Czas trwania blokady In-Place w tym przykładzie jest nieokreślony (*ItemHoldPeriod: Nieograniczony*). Jest to typowe w przypadku scenariuszy zbierania elektronicznych materiałów dowodowych i badań prawnych. Jeśli czas trwania blokady jest inny niż nieokreślony, przyczyna jest prawdopodobna, ponieważ blokada jest używana do przechowywania zawartości w scenariuszu przechowywania. Zamiast używać poleceń cmdlet zbierania elektronicznych materiałów dowodowych w programie PowerShell Centrum zgodności & zabezpieczeń na potrzeby scenariuszy przechowywania, zalecamy zachowanie zawartości za pomocą poleceń [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) i [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) . Wynik użycia tych poleceń cmdlet będzie podobny do użycia poleceń **New-CaseHoldPolicy** i **New-CaseHoldRule**, ale będzie można określić okres przechowywania i akcję przechowywania, na przykład usunięcie zawartości po upływie okresu przechowywania. Ponadto użycie poleceń cmdlet przechowywania nie wymaga skojarzenia blokad przechowywania z przypadkiem zbierania elektronicznych materiałów dowodowych.
+> Czas trwania blokady In-Place w tym przykładzie jest nieokreślony (*ItemHoldPeriod: Nieograniczony*). Jest to typowe w przypadku scenariuszy zbierania elektronicznych materiałów dowodowych i badań prawnych. Jeśli czas trwania blokady jest inny niż nieokreślony, przyczyna jest prawdopodobna, ponieważ blokada jest używana do przechowywania zawartości w scenariuszu przechowywania. Zamiast używać poleceń cmdlet zbierania elektronicznych materiałów dowodowych w programie PowerShell & zgodności zabezpieczeń w scenariuszach przechowywania, zalecamy zachowanie zawartości za pomocą polecenia [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) i [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) . Wynik użycia tych poleceń cmdlet będzie podobny do użycia poleceń **New-CaseHoldPolicy** i **New-CaseHoldRule**, ale będzie można określić okres przechowywania i akcję przechowywania, na przykład usunięcie zawartości po upływie okresu przechowywania. Ponadto użycie poleceń cmdlet przechowywania nie wymaga skojarzenia blokad przechowywania z przypadkiem zbierania elektronicznych materiałów dowodowych.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>Krok 4. Tworzenie sprawy w portalu zgodności usługi Microsoft Purview
 
@@ -91,6 +92,7 @@ Aby utworzyć blokadę zbierania elektronicznych materiałów dowodowych, należ
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
+
 ![Przykład uruchamiania polecenia New-ComplianceCase.](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>Krok 5. Tworzenie blokady zbierania elektronicznych materiałów dowodowych
@@ -152,23 +154,23 @@ Jeśli zmigrujesz In-Place wyszukiwanie zbierania elektronicznych materiałów d
 ## <a name="more-information"></a>Więcej informacji
 
 - Aby uzyskać więcej informacji na temat In-Place eDiscovery & Holds w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>, zobacz:
-  
-  - [Wykrywanie elektroniczne w miejscu](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+
+  - [Miejscowe zbieranie elektronicznych materiałów dowodowych](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
   - [Blokada miejscowa i blokada postępowania sądowego](/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 - Aby uzyskać więcej informacji na temat poleceń cmdlet programu PowerShell używanych w tym artykule, zobacz:
 
   - [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch)
-  
+
   - [New-ComplianceCase](/powershell/module/exchange/new-compliancecase)
 
   - [New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy)
-  
+
   - [New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule)
 
   - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
-  
+
   - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)

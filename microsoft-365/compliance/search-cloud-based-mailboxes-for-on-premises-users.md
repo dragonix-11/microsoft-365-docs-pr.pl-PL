@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Administratorzy mogą używać narzędzi zbierania elektronicznych materiałów dowodowych w Microsoft 365 do wyszukiwania i eksportowania Teams danych czatu dla użytkowników lokalnych w ramach wdrożenia hybrydowego Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e532dc629df1ddc2e3ceaa94a639723dae483714
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4af64bd77d820b67314bc37e574afdff3966d21b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077817"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014349"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Wyszukaj dane czatu aplikacji Teams dla użytkowników lokalnych
 
@@ -46,7 +46,7 @@ Poniżej przedstawiono wymagania i ograniczenia dotyczące włączania magazynu 
   
 ## <a name="how-it-works"></a>Jak to działa
 
-Jeśli użytkownik z obsługą Microsoft Teams ma lokalną skrzynkę pocztową, a jego konto/tożsamość użytkownika zostały zsynchronizowane z chmurą, firma Microsoft tworzy magazyn oparty na chmurze, aby skojarzyć dane rozmów 1xN użytkownika lokalnego Teams. Teams dane czatu dla użytkowników lokalnych są indeksowane do wyszukiwania. Umożliwia to wyszukiwanie zawartości (i wyszukiwania skojarzone z przypadkami zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i Microsoft Purview (Premium) w celu wyszukiwania, podglądu i eksportowania Teams danych czatu dla użytkowników lokalnych. Możesz również użyć poleceń **\*cmdlet ComplianceSearch** w programie PowerShell Security & Compliance Center, aby wyszukać Teams danych czatu dla użytkowników lokalnych.
+Jeśli użytkownik z obsługą Microsoft Teams ma lokalną skrzynkę pocztową, a jego konto/tożsamość użytkownika zostały zsynchronizowane z chmurą, firma Microsoft tworzy magazyn oparty na chmurze, aby skojarzyć dane rozmów 1xN użytkownika lokalnego Teams. Teams dane czatu dla użytkowników lokalnych są indeksowane do wyszukiwania. Umożliwia to wyszukiwanie zawartości (i wyszukiwania skojarzone z przypadkami zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i Microsoft Purview (Premium) w celu wyszukiwania, podglądu i eksportowania Teams danych czatu dla użytkowników lokalnych. Możesz również użyć poleceń **\*cmdlet ComplianceSearch** w programie PowerShell Security & Compliance, aby wyszukać Teams danych czatu dla użytkowników lokalnych.
   
 Na poniższej ilustracji przedstawiono przepływ pracy, w jaki sposób Teams dane czatu dla użytkowników lokalnych są dostępne do wyszukiwania, wyświetlania podglądu i eksportowania.
   
@@ -86,9 +86,9 @@ Poniżej przedstawiono sposób wyszukiwania zawartości w portalu zgodności us�
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>Wyszukiwanie Teams danych czatu dla użytkowników lokalnych przy użyciu programu PowerShell
 
-Polecenia cmdlet **New-ComplianceSearch** w programie PowerShell Centrum zgodności & zabezpieczeń umożliwiają wyszukiwanie Teams danych czatu dla użytkowników lokalnych. Jak wyjaśniono wcześniej, nie trzeba przesyłać wniosku o pomoc techniczną, aby użyć programu PowerShell do wyszukiwania Teams danych czatu dla użytkowników lokalnych.
+Polecenia cmdlet **New-ComplianceSearch** w programie PowerShell security & Compliance umożliwiają wyszukiwanie Teams danych czatu dla użytkowników lokalnych. Jak wyjaśniono wcześniej, nie trzeba przesyłać wniosku o pomoc techniczną, aby użyć programu PowerShell do wyszukiwania Teams danych czatu dla użytkowników lokalnych.
   
-1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Uruchom następujące polecenie programu PowerShell, aby utworzyć wyszukiwanie zawartości, które wyszukuje Teams danych czatu dla użytkowników lokalnych.
 
@@ -120,7 +120,7 @@ Aby uzyskać więcej informacji na temat korzystania z tych poleceń cmdlet, zob
 
 **Czy muszę przesłać wniosek o pomoc techniczną, aby wyszukać wiadomości czatu dla użytkowników lokalnych?**
 
-L.p. Ta funkcja jest domyślnie włączona dla wszystkich organizacji. W pewnym momencie trzeba było skontaktować się z pomoc techniczna firmy Microsoft ale tak już nie jest.
+Nie. Ta funkcja jest domyślnie włączona dla wszystkich organizacji. W pewnym momencie trzeba było skontaktować się z pomoc techniczna firmy Microsoft ale tak już nie jest.
   
  **Czy narzędzia zbierania elektronicznych materiałów dowodowych mogą znaleźć starsze Teams danych czatu dla użytkowników lokalnych przed włączeniem tej funkcji domyślnie dla wszystkich organizacji?**
   
@@ -136,7 +136,7 @@ Teams dane rozmów są przechowywane w preferowanej lokalizacji danych (PDL) dla
 
 **Czy istnieje ryzyko utraty Teams danych czatu, jeśli lokalna skrzynka pocztowa użytkownika zostanie zmigrowana do chmury?**
   
-L.p. Podczas migracji podstawowej skrzynki pocztowej użytkownika lokalnego do chmury Teams dane rozmów dla tego użytkownika zostaną zmigrowane do nowej podstawowej skrzynki pocztowej opartej na chmurze.
+Nie. Podczas migracji podstawowej skrzynki pocztowej użytkownika lokalnego do chmury Teams dane rozmów dla tego użytkownika zostaną zmigrowane do nowej podstawowej skrzynki pocztowej opartej na chmurze.
   
  **Czy mogę zastosować zasady przechowywania lub przechowywania zbierania elektronicznych materiałów dowodowych do użytkowników lokalnych?**
   

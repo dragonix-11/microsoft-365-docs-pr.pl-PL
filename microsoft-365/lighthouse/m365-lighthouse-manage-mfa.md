@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak zarządzać uwierzytelnianiem wieloskładnikowym.
-ms.openlocfilehash: 53f1b0fa9a477ae74b48c96f76f9b2523fe45c10
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 6db13adbce775ea276352b715cf25f0da7324b87
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023200"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017725"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Zarządzanie uwierzytelnianiem wieloskładnikowym w Microsoft 365 Lighthouse
 
@@ -33,7 +34,7 @@ W przypadku klientów małych i średnich firm (SMB) firma Microsoft zaleca wł�
 
 Aby dzierżawa pojawiła się na liście, należy spełnić następujące warunki:
 
-- Dzierżawa klienta musi mieć licencję Azure AD — wersja Premium dla każdego użytkownika. Aby uzyskać więcej informacji o tym, które licencje obsługują uwierzytelnianie wieloskładnikowe, zobacz [Funkcje i licencje dla usługi Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-licensing).
+- Dzierżawa klienta musi mieć licencję Azure AD — wersja Premium dla każdego użytkownika. Aby uzyskać więcej informacji o tym, które licencje obsługują uwierzytelnianie wieloskładnikowe, zobacz [Funkcje i licencje dla Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-licensing).
 
 - Dzierżawa klienta musi być aktywna w Microsoft 365 Lighthouse. Aby dowiedzieć się, jak określić, czy dzierżawa jest aktywna, zobacz [Microsoft 365 Lighthouse omówienie listy dzierżaw](/microsoft-365/lighthouse/m365-lighthouse-tenant-list-overview).
 
@@ -49,7 +50,7 @@ Aby dzierżawa pojawiła się na liście, należy spełnić następujące warunk
 
 5. Wybierz pozycję **Zapisz zmiany**.
 
-Aby włączyć uwierzytelnianie wieloskładnikowe za pomocą dostępu warunkowego, zobacz [Samouczek: zabezpieczanie zdarzeń logowania użytkowników za pomocą usługi Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
+Aby włączyć uwierzytelnianie wieloskładnikowe za pośrednictwem dostępu warunkowego, zobacz [Samouczek: zabezpieczanie zdarzeń logowania użytkownika za pomocą Azure AD multi-Factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>Powiadamianie użytkowników, którzy nie są zarejestrowani w usłudze MFA
 

@@ -14,20 +14,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Dowiedz się, jak oparte na usłudze SMTP uwierzytelnianie dns jednostek nazwanych (DANE) działa w celu zabezpieczenia komunikacji poczty e-mail między serwerami poczty.
-ms.openlocfilehash: fa982671aebb7c857c1c55af027d10437091e0dd
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 200dde9c62fb9825ce36eea7416304727bd6b598
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131025"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015775"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Jak działa uwierzytelnianie oparte na usłudze DNS SMTP dla jednostek nazwanych (DANE)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Protokół SMTP jest głównym protokołem używanym do przesyłania komunikatów między serwerami poczty i domyślnie nie jest bezpieczny. Protokół Transport Layer Security (TLS) został wprowadzony wiele lat temu w celu obsługi szyfrowanej transmisji komunikatów za pośrednictwem protokołu SMTP. Jest to powszechnie używane oportunistycznie, a nie jako wymóg, pozostawiając dużo ruchu poczty e-mail w postaci zwykłego tekstu, podatne na przechwycenie przez nikczemnych aktorów. Ponadto protokół SMTP określa adresy IP serwerów docelowych za pośrednictwem publicznej infrastruktury DNS, która jest podatna na fałszowanie i ataki typu man-in-the-middle (MITM). Doprowadziło to do utworzenia wielu nowych standardów w celu zwiększenia bezpieczeństwa wysyłania i odbierania wiadomości e-mail. Jednym z nich jest uwierzytelnianie nazwane jednostek (DANE) oparte na systemie DNS.
-  
-DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) używa obecności rekordu TLSA (Transport Layer Security Authentication) w rekordzie DNS domeny, aby zasygnalizować domenę, a jej serwery poczty obsługują DANE. Jeśli nie ma rekordu TLSA, rozpoznawanie nazw DNS dla przepływu poczty będzie działać jak zwykle bez próby sprawdzenia DANE. Rekord TLSA bezpiecznie sygnalizuje obsługę protokołu TLS i publikuje zasady DANE dla domeny. Dlatego wysyłanie serwerów poczty może pomyślnie uwierzytelnić prawidłowe serwery poczty odbiorczej przy użyciu protokołu SMTP DANE. Dzięki temu jest odporny na ataki z powodu obniżenia poziomu i mitm. Dane ma bezpośrednie zależności od serwera DNSSEC, który działa poprzez cyfrowe podpisywanie rekordów odnośników DNS przy użyciu kryptografii klucza publicznego. Testy DNSSEC są wykonywane dla cyklicznych rozpoznawania nazw DNS, serwerów DNS, które tworzą zapytania DNS dla klientów. Serwer DNSSEC zapewnia, że rekordy DNS nie są modyfikowane i są autentyczne.  
+Protokół SMTP jest głównym protokołem używanym do przesyłania komunikatów między serwerami poczty i domyślnie nie jest bezpieczny. Protokół Transport Layer Security (TLS) został wprowadzony wiele lat temu w celu obsługi szyfrowanej transmisji komunikatów za pośrednictwem protokołu SMTP. Jest to powszechnie używane oportunistycznie, a nie jako wymóg, pozostawiając dużo ruchu poczty e-mail w postaci zwykłego tekstu, podatne na przechwycenie przez nikczemnych aktorów. Ponadto protokół SMTP określa adresy IP serwerów docelowych za pośrednictwem publicznej infrastruktury DNS, która jest podatna na fałszowanie i ataki typu man-in-the-middle (MITM). Doprowadziło to do utworzenia wielu nowych standardów w celu zwiększenia bezpieczeństwa wysyłania i odbierania wiadomości e-mail. Jednym z nich jest uwierzytelnianie nazwane jednostek (DANE) oparte na systemie DNS. 
 
 DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) używa obecności rekordu TLSA (Transport Layer Security Authentication) w rekordzie DNS domeny, aby zasygnalizować domenę, a jej serwery poczty obsługują DANE. Jeśli nie ma rekordu TLSA, rozpoznawanie nazw DNS dla przepływu poczty będzie działać jak zwykle bez próby sprawdzenia DANE. Rekord TLSA bezpiecznie sygnalizuje obsługę protokołu TLS i publikuje zasady DANE dla domeny. Dlatego wysyłanie serwerów poczty może pomyślnie uwierzytelnić prawidłowe serwery poczty odbiorczej przy użyciu protokołu SMTP DANE. Dzięki temu jest odporny na ataki z powodu obniżenia poziomu i mitm. Dane ma bezpośrednie zależności od serwera DNSSEC, który działa poprzez cyfrowe podpisywanie rekordów odnośników DNS przy użyciu kryptografii klucza publicznego. Testy DNSSEC są wykonywane dla cyklicznych rozpoznawania nazw DNS, serwerów DNS, które tworzą zapytania DNS dla klientów. Serwer DNSSEC zapewnia, że rekordy DNS nie są modyfikowane i są autentyczne.
 
@@ -51,8 +49,8 @@ Istnieją cztery konfigurowalne pola unikatowe dla typu rekordu TLSA:
 
 |Value|Akronim|Opis|
 |---|---|---|
-|01<sup></sup>|PKIX-TA|Używany certyfikat to publiczny urząd certyfikacji zakotwiczony w zaufaniu z łańcucha zaufania X.509.|
-|11<sup></sup>|PKIX-EE|Sprawdzony certyfikat jest serwerem docelowym; Testy DNSSEC muszą zweryfikować jego autentyczność.|
+|0<sup>1</sup>|PKIX-TA|Używany certyfikat to publiczny urząd certyfikacji zakotwiczony w zaufaniu z łańcucha zaufania X.509.|
+|1<sup>1</sup>|PKIX-EE|Sprawdzony certyfikat jest serwerem docelowym; Testy DNSSEC muszą zweryfikować jego autentyczność.|
 |2|DANE-TA|Użyj klucza prywatnego serwera z drzewa X.509, który musi zostać zweryfikowany przez kotwicę zaufania w łańcuchu zaufania. Rekord TLSA określa kotwicę zaufania, która ma być używana do weryfikowania certyfikatów protokołu TLS dla domeny.|
 |3|DANE-EE|Pasuje tylko do certyfikatu serwera docelowego.|
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie Teams przy użyciu trzech warstw zabezpieczeń udostępniania plików
+title: Konfigurowanie Teams z trzema warstwami zabezpieczeń udostępniania plików
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -21,125 +21,124 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
-description: Dowiedz się, jak Teams w celu lepszej zabezpieczeń udostępniania plików przy użyciu trzech poziomów ochrony, co zapewnia równoważenie zabezpieczeń z łatwością współpracy.
-ms.openlocfilehash: 116675ac6736e1761286226a8bf724915627574f
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Dowiedz się, jak skonfigurować Teams w celu zapewnienia lepszych zabezpieczeń udostępniania plików przy użyciu trzech warstw ochrony, równoważąc zabezpieczenia z łatwością współpracy.
+ms.openlocfilehash: 4d287d342371a8182a4c9de5742d2d45ca01a1c6
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712726"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012478"
 ---
-# <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurowanie Teams z trzema poziomami ochrony
+# <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurowanie Teams z trzema warstwami ochrony
 
-Artykuły z tej serii zawierają zalecenia dotyczące konfigurowania zespołów w programie Microsoft Teams i skojarzonych z nimi witryn SharePoint w celu ochrony plików, która zapewnia bezpieczeństwo z łatwością współpracy.
+Artykuły z tej serii zawierają zalecenia dotyczące konfigurowania zespołów w Microsoft Teams i skojarzonych z nimi witryn SharePoint na potrzeby ochrony plików, która równoważy bezpieczeństwo z łatwością współpracy.
 
-W tym artykule zdefiniowano cztery różne konfiguracje, począwszy od zespołu publicznego z najbardziej otwartymi zasadami udostępniania. Każda dodatkowa konfiguracja odzwierciedla istotny krok ochrony, natomiast możliwość dostępu do plików przechowywanych w zespołach i współpracy nad nimi jest ograniczona do odpowiedniego zestawu członków zespołu. 
+W tym artykule zdefiniowano cztery różne konfiguracje, począwszy od zespołu publicznego z najbardziej otwartymi zasadami udostępniania. Każda dodatkowa konfiguracja stanowi znaczący krok w zakresie ochrony, podczas gdy możliwość dostępu do plików przechowywanych w zespołach i współpracy nad nimi jest ograniczona do odpowiedniego zestawu członków zespołu. 
 
-Konfiguracje w tym artykule są zgodne z zaleceniami firmy Microsoft dla trzech warstw ochrony danych, tożsamości i urządzeń:
+Konfiguracje w tym artykule są zgodne z zaleceniami firmy Microsoft dotyczącymi trzech warstw ochrony danych, tożsamości i urządzeń:
 
-- Ochrona planu bazowego
+- Ochrona według planu bazowego
 
-- ochrona po poufnej ochronie
+- ochrona poufna
 
 - Wysoce wrażliwa ochrona
 
-Aby uzyskać więcej informacji o tych warstwach i możliwościach zalecanych dla poszczególnych warstw, zobacz Ilustracje przedstawiające firmę [Microsoft Cloud dla architektów przedsiębiorstwa](./cloud-architecture-models.md)
+Aby uzyskać więcej informacji na temat tych warstw i możliwości zalecanych dla każdej warstwy, zobacz [Ilustracje dotyczące architektury chmury firmy Microsoft dla przedsiębiorstw](./cloud-architecture-models.md)
 
+## <a name="three-tiers-at-a-glance"></a>Trzy warstwy w skrócie
 
-## <a name="three-tiers-at-a-glance"></a>Rzut oka na trzy warstwy
+Poniższa tabela zawiera podsumowanie konfiguracji dla każdej warstwy. Użyj tych konfiguracji jako zaleceń punktu początkowego i dostosuj konfiguracje do potrzeb organizacji. Może nie być potrzebna każda warstwa.
 
-W poniższej tabeli podsumowano konfiguracje poszczególnych warstw. Konfiguracje te należy stosować jako zalecenia punktu początkowego i dostosowywać je do potrzeb organizacji. Każda warstwa może nie być potrzebna.
-
-|-|Plan bazowy (publiczny)|Plan bazowy (prywatna)|Pochylić|Wysoce ważnych|
+|&nbsp;|Punkt odniesienia (publiczny)|Plan bazowy (prywatny)|Wrażliwe|Wysoce wrażliwe|
 |:-----|:-----|:-----|:-----|:-----|
-|Zespół prywatny lub publiczny|Publiczne|Prywatna|Prywatna|Prywatna|
+|Zespół prywatny lub publiczny|Publicznego|Prywatny|Prywatny|Prywatny|
 |KtoTo ma dostęp?|Wszyscy w organizacji, w tym użytkownicy B2B.|Tylko członkowie zespołu. Inne osoby mogą zażądać dostępu do skojarzonej witryny.|Tylko członkowie zespołu.|Tylko członkowie zespołu.|
 |Kanały prywatne|Właściciele i członkowie mogą tworzyć kanały prywatne|Właściciele i członkowie mogą tworzyć kanały prywatne|Tylko właściciele mogą tworzyć kanały prywatne|Tylko właściciele mogą tworzyć kanały prywatne|
 |Kanały udostępnione|Właściciele i członkowie mogą tworzyć kanały udostępnione|Właściciele i członkowie mogą tworzyć kanały udostępnione|Tylko właściciele mogą tworzyć kanały udostępnione|Tylko właściciele mogą tworzyć kanały udostępnione|
-|Dostęp gości na poziomie witryny|**Nowi i istniejący goście** (domyślnie).|**Nowi i istniejący goście** (domyślnie).|**Nowi i istniejący goście** lub **Tylko osoby w Twojej organizacji w** zależności od potrzeb zespołu.|**Nowi i istniejący goście** lub **Tylko osoby w Twojej organizacji w** zależności od potrzeb zespołu.|
-|Ustawienia udostępniania witryn|**Właściciele i członkowie witryny oraz osoby z** uprawnieniami do edytowania mogą udostępniać pliki i foldery, ale tylko właściciele witryn mogą udostępniać witrynę.|**Właściciele i członkowie witryny oraz osoby z** uprawnieniami do edytowania mogą udostępniać pliki i foldery, ale tylko właściciele witryn mogą udostępniać witrynę.|**Właściciele i członkowie witryny oraz osoby z** uprawnieniami do edytowania mogą udostępniać pliki i foldery, ale tylko właściciele witryn mogą udostępniać witrynę.|**Tylko właściciele witryny mogą udostępniać pliki, foldery i witrynę**.<br>Żądania dostępu **są wyłączone**.|
-|Niezamanektowany dostęp do urządzenia na poziomie witryny|**Pełny dostęp z aplikacji klasycznych, aplikacji mobilnych i Internetu** (domyślnie).|**Pełny dostęp z aplikacji klasycznych, aplikacji mobilnych i Internetu** (domyślnie).|**Zezwalaj na ograniczony dostęp tylko w sieci Web**.|**Blokowanie dostępu**.|
-|Domyślny typ linku udostępniania|**Tylko osoby w Twojej organizacji**|**Tylko osoby w Twojej organizacji**|**Określone osoby**|**Osoby z istniejącym dostępem**|
-|Etykiety wrażliwości|Brak|Brak|Etykieta wrażliwości używana do klasyfikowania zespołu i kontrolowania udostępniania gościa oraz niezakieregotowego dostępu do urządzenia.|Etykieta wrażliwości używana do klasyfikowania zespołu i kontrolowania udostępniania gościa oraz niezakieregotowego dostępu do urządzenia. Etykieta może być także używana do szyfrowania plików.|
+|Dostęp gościa na poziomie witryny|**Nowi i istniejący goście** (domyślnie).|**Nowi i istniejący goście** (domyślnie).|**Nowi i istniejący goście** lub **tylko osoby w organizacji w** zależności od potrzeb zespołu.|**Nowi i istniejący goście** lub **tylko osoby w organizacji w** zależności od potrzeb zespołu.|
+|Ustawienia udostępniania witryny|**Właściciele i członkowie witryny oraz osoby z uprawnieniami do edycji mogą udostępniać pliki i foldery, ale tylko właściciele witryn mogą udostępniać witrynę**.|**Właściciele i członkowie witryny oraz osoby z uprawnieniami do edycji mogą udostępniać pliki i foldery, ale tylko właściciele witryn mogą udostępniać witrynę**.|**Właściciele i członkowie witryny oraz osoby z uprawnieniami do edycji mogą udostępniać pliki i foldery, ale tylko właściciele witryn mogą udostępniać witrynę**.|**Tylko właściciele witryn mogą udostępniać pliki, foldery i witrynę**.<br>Żądania dostępu **wyłączone**.|
+|Dostęp do urządzeń niezarządzanych na poziomie lokacji|**Pełny dostęp z aplikacji klasycznych, aplikacji mobilnych i internetu (domyślnie** ).|**Pełny dostęp z aplikacji klasycznych, aplikacji mobilnych i internetu (domyślnie** ).|**Zezwalaj na ograniczony dostęp tylko do Internetu**.|**Blokuj dostęp**.|
+|Domyślny typ łącza udostępniania|**Tylko osoby w organizacji**|**Tylko osoby w organizacji**|**Określone osoby**|**Osoby z istniejącym dostępem**|
+|Etykiety wrażliwości|Brak|Brak|Etykieta poufności używana do klasyfikowania zespołu i kontrolowania udostępniania gościa i niezarządzanego dostępu do urządzenia.|Etykieta poufności używana do klasyfikowania zespołu i kontrolowania udostępniania gościa i niezarządzanego dostępu do urządzenia. Etykieta może być również używana w plikach do szyfrowania plików.|
 
-Odmiana opcji Wysoce wrażliwa, Teams [izolacji](secure-teams-security-isolation.md) zabezpieczeń używa unikatowej etykiety wrażliwości dla jednego zespołu, co zapewnia dodatkowe bezpieczeństwo. Za pomocą tej etykiety możesz szyfrować pliki i tylko członkowie tego zespołu będą mogli je odczytywać.
+Odmiana opcji Wysoce wrażliwe Teams [z izolacją zabezpieczeń](secure-teams-security-isolation.md) używa unikatowej etykiety poufności dla jednego zespołu, która zapewnia dodatkowe zabezpieczenia. Możesz użyć tej etykiety do szyfrowania plików, a tylko członkowie tego zespołu będą mogli je odczytać.
 
-Ochrona podstawowa obejmuje zespoły publiczne i prywatne. Zespoły publiczne mogą być odkryte i dostępne dla każdego użytkownika w organizacji. Prywatne zespoły mogą być odkryte i dostępne tylko dla członków zespołu. Obie te konfiguracje ograniczają udostępnianie skojarzonej SharePoint witrynie zespołu, aby pomóc w zarządzaniu uprawnieniami.
+Ochrona według planu bazowego obejmuje zespoły publiczne i prywatne. Zespoły publiczne mogą być odnalezione i dostępne dla wszystkich osób w organizacji. Prywatne zespoły mogą być odnalezione i dostępne tylko dla członków zespołu. Obie te konfiguracje ograniczają udostępnianie skojarzonej SharePoint lokacji do właścicieli zespołów, aby ułatwić zarządzanie uprawnieniami.
 
-Teams ochrony poufnej i bardzo poufnej to prywatne zespoły, w których udostępnianie i żądanie dostępu do skojarzonej witryny jest ograniczone, a etykiety wrażliwości służą do ustawiania zasad związanych z udostępnianiem gości, dostępem do urządzeń i szyfrowaniem zawartości.
+Teams ochrony poufnej i wysoce wrażliwej to zespoły prywatne, w których udostępnianie i żądanie dostępu do skojarzonej witryny jest ograniczone, a etykiety poufności są używane do ustawiania zasad dotyczących udostępniania gościa, dostępu do urządzeń i szyfrowania zawartości.
 
 ## <a name="sensitivity-labels"></a>Etykiety wrażliwości
 
-Poufne i wysoce poufne warstwy chronią zespół i jego pliki za pomocą etykiet wrażliwości. Aby zaimplementować te warstwy, należy włączyć etykiety wrażliwości, aby chronić zawartość w Microsoft Teams[, Office 365 grupy i SharePoint witrynach](../compliance/sensitivity-labels-teams-groups-sites.md).
+Warstwy wrażliwe i wysoce wrażliwe używają etykiet poufności, aby pomóc w zabezpieczeniu zespołu i jego plików. Aby zaimplementować te warstwy, należy włączyć [etykiety poufności, aby chronić zawartość w witrynach Microsoft Teams, Office 365 i SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-Podczas gdy warstwa podstawowa nie wymaga etykiet wrażliwości, rozważ utworzenie etykiety "ogólne", a następnie wymaganie oznaczenia wszystkich zespołów. Dzięki temu użytkownicy będą mieli możliwość korzystania z opcji wrażliwości podczas tworzenia zespołu. Jeśli planujesz wdrożyć poufne lub wysoce poufne warstwy, zalecamy utworzenie etykiety "ogólne", która będzie używać dla zespołów planu bazowego i dla plików, które nie są poufne.
+Chociaż warstwa odniesienia nie wymaga etykiet poufności, rozważ utworzenie etykiety "ogólne", a następnie wymaganie, aby wszystkie zespoły były oznaczone etykietą. Pomoże to zapewnić, że użytkownicy dokonają świadomego wyboru poufności podczas tworzenia zespołu. Jeśli planujesz wdrożenie warstw poufnych lub wysoce poufnych, zalecamy utworzenie etykiety "ogólnej", która będzie używana dla zespołów odniesienia i plików, które nie są poufne.
 
-Jeśli nie masz jeszcze pomysłu na używanie etykiet wrażliwości, zalecamy zapoznanie się z wprowadzeniem do etykiet [wrażliwości](../compliance/get-started-with-sensitivity-labels.md) . 
+Jeśli dopiero zaczynasz korzystać z etykiet poufności, zalecamy przeczytanie [Wprowadzenie z etykietami poufności](../compliance/get-started-with-sensitivity-labels.md), aby rozpocząć pracę. 
 
-Jeśli w organizacji wpisano już etykiety wrażliwości, zastanów się, w jaki sposób etykiety używane na wrażliwych i wysoce poufnych warstwach są wpasowane w ogólną strategię etykiet. 
+Jeśli etykiety poufności zostały już wdrożone w organizacji, rozważ, w jaki sposób etykiety używane w warstwach poufnych i wysoce wrażliwych pasują do ogólnej strategii etykiet. 
 
-## <a name="sharing-the-sharepoint-site"></a>Udostępnianie SharePoint sieci Web
+## <a name="sharing-the-sharepoint-site"></a>Udostępnianie witryny SharePoint
 
-Z każdym zespołem jest skojarzona SharePoint, w której są przechowywane dokumenty. (To jest karta **Pliki** w kanale zespołu). Witryna SharePoint zachowuje własne zarządzanie uprawnieniami, ale jest połączona z uprawnieniami zespołu. Właściciele zespołu są uwzględniani jako właściciele witryn, a członkowie zespołu są uwzględniani jako członkowie witryny w skojarzonej witrynie.
+Każdy zespół ma skojarzoną witrynę SharePoint, w której przechowywane są dokumenty. (Jest to karta **Pliki** w kanale usługi Teams). Witryna SharePoint zachowuje własne zarządzanie uprawnieniami, ale jest połączona z uprawnieniami zespołu. Właściciele zespołu są uwzględniane jako właściciele witryny i członkowie zespołu są uwzględniane jako członkowie witryny w skojarzonej witrynie.
 
-Uprawnienia wynikające z tego umożliwiają:
+Wynikające z tego uprawnienia umożliwiają:
 
-- Właściciele witrynie mogą administrować witryną i mieć pełną kontrolę nad jej zawartością.
-- Członkowie zespołu mogą tworzyć i edytować pliki w witrynie. 
+- Właściciele zespołu do administrowania witryną i mają pełną kontrolę nad zawartością witryny.
+- Członkowie zespołu będą tworzyć i edytować pliki w witrynie. 
 
-Domyślnie właściciele i członkowie zespołu mogą udostępniać witrynę osobom spoza zespołu bez dodawania ich do zespołu. Zalecamy użycie tej aplikacji, ponieważ komplikuje zarządzanie użytkownikami i może prowadzić do osób, które nie są członkami zespołu, które nie mają dostępu do plików zespołu, nie zdając sobie z tego sprawę. Aby temu zapobiec, począwszy od poziomu ochrony według planu bazowego, zalecamy, aby tylko właściciele mogli udostępniać witrynę bezpośrednio.
+Domyślnie właściciele i członkowie zespołu mogą udostępniać witrynę osobom spoza zespołu bez dodawania ich do zespołu. Zalecamy, aby rozwiązać ten problem, ponieważ komplikuje to zarządzanie użytkownikami i może prowadzić do tego, że osoby, które nie są członkami zespołu, mają dostęp do plików zespołu bez realizacji tego przez właścicieli zespołu. Aby temu zapobiec, począwszy od poziomu bazowego ochrony, zalecamy, aby tylko właściciele mogli bezpośrednio udostępniać witrynę.
 
-Mimo że zespoły nie mają opcji uprawnień tylko do odczytu, witryna SharePoint dostępna. Jeśli masz uczestników projektu z grupami partnerów, którzy muszą mieć możliwość wyświetlania plików zespołu, ale nie edytowania ich, rozważ dodanie ich bezpośrednio do witryny SharePoint z uprawnieniami do odczytu.
+Chociaż zespoły nie mają opcji uprawnień tylko do odczytu, witryna SharePoint. Jeśli masz interesariuszy grup partnerów, którzy muszą mieć możliwość wyświetlania plików zespołu, ale ich nie edytują, rozważ dodanie ich bezpośrednio do witryny SharePoint z uprawnieniami do odczytu.
 
 ## <a name="sharing-files-and-folders"></a>Udostępnianie plików i folderów
 
-Domyślnie właściciele i członkowie zespołu mogą udostępniać pliki i foldery osobom spoza zespołu. Może to dotyczyć osób spoza twojej organizacji, jeśli zezwolisz na udostępnianie gości. We wszystkich trzech warstwach aktualizujemy domyślny typ linku udostępniania, aby zapobiec przypadkowemu zasłaniu. W przypadku bardzo poufnej warstwy takie udostępnianie jest ograniczane tylko do właścicieli zespołu.
+Domyślnie zarówno właściciele, jak i członkowie zespołu mogą udostępniać pliki i foldery osobom spoza zespołu. Może to obejmować osoby spoza organizacji, jeśli zezwolisz na udostępnianie gości. We wszystkich trzech warstwach aktualizujemy domyślny typ linku udostępniania, aby uniknąć przypadkowego nadmiernego udostępniania. W wysoce wrażliwej warstwie takie udostępnianie jest ograniczane tylko do właścicieli zespołów.
 
 ## <a name="sharing-with-people-outside-your-organization"></a>Udostępnianie osobom spoza organizacji
 
-Jeśli chcesz udostępnić Teams osobom spoza organizacji, dostępne są dwie opcje:
+Jeśli musisz udostępnić zawartość Teams osobom spoza organizacji, dostępne są dwie opcje:
 
-- **Udostępnianie gości —** funkcja udostępniania gościa korzysta z współpracy B2B w usłudze Azure AD, która umożliwia użytkownikom udostępnianie plików, folderów, witryn, grup i zespołów osobom spoza organizacji. Te osoby uzyskają dostęp do zasobów udostępnionych przy użyciu kont gości w Twoim katalogu.
-- **Kanały udostępnione** — w kanałach udostępnionych jest używana funkcja bezpośredniego połączenia B2B w usłudze Azure AD, która umożliwia użytkownikom udostępnianie zasobów w organizacji osobom z innych organizacji korzystających z usługi Azure AD. Te osoby uzyskają dostęp do kanałów udostępnionych Teams za pomocą własnego konta służbowego. W Twojej organizacji nie jest tworzone żadne konto gościa.
+- **Udostępnianie gości** — udostępnianie gości używa Azure AD współpracy B2B, która umożliwia użytkownikom udostępnianie plików, folderów, witryn, grup i zespołów osobom spoza organizacji. Te osoby uzyskują dostęp do udostępnionych zasobów przy użyciu kont gościa w katalogu.
+- **Kanały udostępnione** — kanały udostępnione korzystają z Azure AD bezpośredniego połączenia B2B, co umożliwia użytkownikom udostępnianie zasobów w organizacji osobom z innych organizacji Azure AD. Te osoby uzyskują dostęp do udostępnionych kanałów w Teams przy użyciu własnego konta służbowego. W organizacji nie jest tworzone żadne konto gościa.
 
-W zależności od sytuacji zarówno udostępnianie gości, jak i kanały udostępnione są przydatne. Zobacz [Planowanie współpracy zewnętrznej](plan-external-collaboration.md) , aby uzyskać szczegółowe informacje na temat każdego z nich i zdecydować, którego z nich użyć w danym scenariuszu.
+Udostępnianie gościa i kanały udostępnione są przydatne w zależności od sytuacji. Zobacz [Planowanie współpracy zewnętrznej](plan-external-collaboration.md) , aby uzyskać szczegółowe informacje na temat każdego z nich i jak zdecydować, którego użyć w danym scenariuszu.
 
-Jeśli planujesz korzystać z udostępniania gościa, zalecamy skonfigurowanie integracji usług SharePoint i OneDrive z usługą [Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) w celu jak najlepszego udostępniania i obsługi administracyjnej.
+Jeśli planujesz korzystać z udostępniania gości, zalecamy skonfigurowanie [integracji SharePoint i OneDrive z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview), aby uzyskać najlepsze środowisko udostępniania i administrowania.
 
-Teams udostępniania gościa jest domyślnie włączone, ale w razie potrzeby możesz je wyłączyć na poufnych i wysoce poufnych warstwach, używając etykiety wrażliwości. Kanały udostępnione są domyślnie włączone, ale wymaga to skonfigurowania relacji między organizacjami dla każdej organizacji, z którą chcesz współpracować. Aby [uzyskać szczegółowe informacje, zobacz Współpraca z uczestnikami zewnętrznymi w kanale](collaborate-teams-direct-connect.md) .
+Teams udostępnianie gościa jest domyślnie włączone, ale można je wyłączyć w razie potrzeby w warstwach poufnych i wysoce poufnych przy użyciu etykiety poufności. Kanały udostępnione są domyślnie włączone, ale wymagają skonfigurowania relacji między organizacjami dla każdej organizacji, z którą chcesz współpracować. Aby uzyskać szczegółowe informacje, zobacz [Współpraca z uczestnikami zewnętrznymi w kanale](collaborate-teams-direct-connect.md) .
 
-W bardzo poufnej warstwie konfigurujemy etykietę wrażliwości w celu szyfrowania plików, do których jest stosowana. Jeśli potrzebujesz dostępu gości do tych plików, musisz nadać im uprawnienia podczas tworzenia etykiety. Uczestnicy zewnętrzni w kanałach udostępnionych nie mogą mieć uprawnień do etykiet wrażliwości i nie mogą uzyskać dostępu do zawartości zaszyfrowanej za pomocą etykiety wrażliwości.
+W warstwie wysoce wrażliwej konfigurujemy etykietę poufności w celu szyfrowania plików, do których jest stosowana. Jeśli potrzebujesz gości, aby mieć dostęp do tych plików, musisz przyznać im uprawnienia podczas tworzenia etykiety. Uczestnicy zewnętrzni w kanałach udostępnionych nie mogą mieć uprawnień do etykiet poufności i nie mogą uzyskiwać dostępu do zawartości zaszyfrowanej za pomocą etykiety poufności.
 
-Zdecydowanie zalecamy pozostawienie udostępniania gościa dla warstwy podstawowej oraz dla warstw poufnych lub bardzo poufnych, jeśli musisz współpracować z osobami spoza organizacji. Funkcje udostępniania gości w programie Microsoft 365 zapewniają o wiele bezpieczniejsze i lepiej regulalne udostępnianie niż wysyłanie plików jako załączników w wiadomościach e-mail. Pozwala również zmniejszyć ryzyko cienia it, w którym użytkownicy używają odtajonych produktów konsumenckich w celu udostępniania ich zewnętrznym współpracownikom.
+Zdecydowanie zalecamy pozostawienie udostępniania gościa dla warstwy odniesienia i warstw poufnych lub wysoce poufnych, jeśli musisz współpracować z osobami spoza organizacji. Funkcje udostępniania gościa w Microsoft 365 zapewniają znacznie bezpieczniejsze i zarządzane środowisko udostępniania niż wysyłanie plików jako załączników w wiadomościach e-mail. Zmniejsza to również ryzyko w tle IT, gdzie użytkownicy używają niezarządzonych produktów konsumenckich do udostępniania legalnym współpracownikom zewnętrznym.
 
-Jeśli regularnie współpracujesz z innymi organizacjami, które korzystają z usługi Azure AD, dobrym rozwiązaniem może być korzystanie z kanałów udostępnionych. Kanały udostępnione są bezproblemowo wyświetlane w kliencie poczty Teams drugiej organizacji i umożliwiają uczestnikom zewnętrznym korzystanie ze swoich zwykłych kont użytkowników w organizacji zamiast konieczności logowania się osobno przy użyciu konta gościa.
+Jeśli regularnie współpracujesz z innymi organizacjami korzystającymi z Azure AD, dobrym rozwiązaniem mogą być kanały udostępnione. Kanały udostępnione są bezproblemowo wyświetlane w kliencie Teams innej organizacji i umożliwiają uczestnikom zewnętrznym korzystanie z ich zwykłego konta użytkownika w organizacji zamiast logowania się osobno przy użyciu konta gościa.
 
-Zapoznaj się z poniższymi odwołaniami, aby utworzyć bezpieczne i produktywne środowisko udostępniania gościa dla organizacji:
+Zapoznaj się z następującymi odwołaniami, aby utworzyć bezpieczne i produktywne środowisko udostępniania gości dla organizacji:
 
-- [Najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytanych użytkownikom](best-practices-anonymous-sharing.md)
-- [Ograniczanie przypadkowego udostępnienia plików osobom spoza organizacji](share-limit-accidental-exposure.md)
-- [Tworzenie bezpiecznego środowiska udostępniania gości](create-secure-guest-sharing-environment.md)
+- [Najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytelnionym użytkownikom](best-practices-anonymous-sharing.md)
+- [Ograniczanie przypadkowego narażenia na pliki podczas udostępniania osobom spoza organizacji](share-limit-accidental-exposure.md)
+- [Tworzenie bezpiecznego środowiska udostępniania gościa](create-secure-guest-sharing-environment.md)
 
-## <a name="access-from-unmanaged-devices"></a>Dostęp z urządzeń niezamanektowych
+## <a name="access-from-unmanaged-devices"></a>Dostęp z urządzeń niezarządzanych
 
-W przypadku warstw poufnych i bardzo poufnych dostęp do zawartości SharePoint etykietami wrażliwości. Dostęp warunkowy usługi Azure AD oferuje wiele opcji określania sposobu uzyskiwania dostępu do usługi Microsoft 365, w tym ograniczeń dotyczących lokalizacji, ryzyka, zgodności urządzenia i innych czynników. Zalecamy przeczytanie [tematu Co to jest dostęp warunkowy?](/azure/active-directory/conditional-access/overview) i rozważenie, które dodatkowe zasady mogą być odpowiednie dla Twojej organizacji.
+W przypadku warstw poufnych i wysoce poufnych ograniczamy dostęp do zawartości SharePoint z etykietami poufności. Azure AD dostęp warunkowy oferuje wiele opcji określania, w jaki sposób użytkownicy uzyskują dostęp do Microsoft 365, w tym ograniczenia dotyczące lokalizacji, ryzyka, zgodności urządzeń i innych czynników. Zalecamy [przeczytanie tematu Co to jest dostęp warunkowy?](/azure/active-directory/conditional-access/overview) i rozważenie, które dodatkowe zasady mogą być odpowiednie dla Twojej organizacji.
 
-Goście często nie mają urządzeń zarządzanych przez Twoją organizację. Jeśli zezwalasz gościom na dostęp do dowolnej warstwy, rozważ, jakiego rodzaju urządzeń będą oni używać do uzyskiwania dostępu do zespołów i witryn oraz odpowiednio ustawiać zasady dotyczące urządzeń niezawiązywanych.
+Należy pamiętać, że goście często nie mają urządzeń zarządzanych przez organizację. Jeśli zezwolisz gościom w dowolnej warstwie, zastanów się, jakiego rodzaju urządzenia będą używać do uzyskiwania dostępu do zespołów i witryn oraz odpowiednio ustawić zasady urządzeń niezarządzanych.
 
-### <a name="control-device-access-across-microsoft-365"></a>Kontrolowanie dostępu do urządzenia na Microsoft 365
+### <a name="control-device-access-across-microsoft-365"></a>Kontrolowanie dostępu do urządzeń w Microsoft 365
 
-Ustawienie urządzeń niezamanektowych na etykietach wrażliwości ma wpływ tylko na SharePoint dostępu. Jeśli chcesz rozszerzyć kontrolę nad urządzeniami, na których nie są zainstalowane SharePoint, możesz zamiast tego utworzyć zasady dostępu warunkowego programu [Azure Active Directory](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) dla wszystkich aplikacji i usług w organizacji. Aby skonfigurować te zasady w szczególności [Microsoft 365,](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) wybierz aplikację w **Office 365** w obszarze **Aplikacje lub akcje w chmurze**.
+Ustawienie urządzeń niezarządzanych w etykietach poufności ma wpływ tylko na dostęp SharePoint. Jeśli chcesz rozszerzyć kontrolę nad urządzeniami niezarządzanych poza SharePoint, możesz zamiast tego [utworzyć zasady dostępu warunkowego Azure Active Directory dla wszystkich aplikacji i usług w organizacji](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). Aby skonfigurować te zasady specjalnie dla [usług Microsoft 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), wybierz aplikację **w chmurze Office 365** w obszarze **Aplikacje lub akcje w chmurze**.
 
-![Zrzut ekranu przedstawiający aplikację Office 365 w chmurze w Azure Active Directory dostępu warunkowego.](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+![Zrzut ekranu przedstawiający aplikację w chmurze Office 365 w zasadach dostępu warunkowego Azure Active Directory.](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
-Korzystanie z zasad mających wpływ na wszystkie Microsoft 365 może prowadzić do lepszej ochrony i lepszej jakości obsługi dla użytkowników. Na przykład w przypadku zablokowania dostępu do urządzeń nieza zarządzania tylko w usłudze SharePoint użytkownicy mogą uzyskać dostęp do czatu w zespole za pomocą urządzenia nieza zarządzania, ale utracą dostęp, gdy próbują uzyskać dostęp do karty Pliki. Korzystanie  z aplikacji w chmurze Office 365 pomaga uniknąć problemów ze współzależnościami [usługi.](/azure/active-directory/conditional-access/service-dependencies)
+Korzystanie z zasad, które mają wpływ na wszystkie usługi Microsoft 365, może prowadzić do lepszych zabezpieczeń i lepszego środowiska dla użytkowników. Jeśli na przykład blokujesz dostęp do urządzeń niezarządzanych tylko w SharePoint, użytkownicy mogą uzyskiwać dostęp do czatu w zespole z urządzeniem niezarządzanym, ale utracą dostęp podczas próby uzyskania dostępu do karty **Pliki**. Korzystanie z aplikacji w chmurze Office 365 pomaga uniknąć problemów z [zależnościami usług](/azure/active-directory/conditional-access/service-dependencies).
 
 ## <a name="next-step"></a>Następny krok
 
-Zacznij od [skonfigurowania poziomu ochrony według planu bazowego](configure-teams-baseline-protection.md). W razie potrzeby możesz dodać [ochronę ważnych i](configure-teams-sensitive-protection.md) [bardzo wrażliwą](configure-teams-highly-sensitive-protection.md) na wierzchu planu bazowego.
+Rozpocznij od [skonfigurowania poziomu ochrony punktu odniesienia](configure-teams-baseline-protection.md). W razie potrzeby można dodać [ochronę poufną](configure-teams-sensitive-protection.md) i [wysoce wrażliwą ochronę](configure-teams-highly-sensitive-protection.md) na początku punktu odniesienia.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Zabezpieczenia i zgodność z przepisami w Microsoft Teams](/microsoftteams/security-compliance-overview)
+[Zabezpieczenia i zgodność w Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Zasady alertów w centrum zabezpieczeń i zgodności](../compliance/alert-policies.md)
+[Zasady alertów](../compliance/alert-policies.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Skonfiguruj etykiety poufności na potrzeby szyfrowania, które chroni dane, ograniczając dostęp i użycie.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f2a9f399e447e7b483e664da2e0bf7575b9f55d8
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 0b1db15a9ac896bdcc871177ece532aa01d4bc38
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599238"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014327"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Ogranicz dostęp do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania
 
@@ -47,7 +47,7 @@ Na koniec, jako administrator, podczas konfigurowania etykiety poufności w celu
 - **Przypisz teraz uprawnienia**, aby określić dokładnie, którzy użytkownicy uzyskują uprawnienia do zawartości z tą etykietą.
 - **Zezwalaj użytkownikom na przypisywanie uprawnień** podczas stosowania etykiety do zawartości. Dzięki temu możesz zezwolić osobom w organizacji na pewną elastyczność, która może wymagać współpracy i wykonania pracy.
 
-Ustawienia szyfrowania są dostępne podczas [tworzenia etykiety poufności](create-sensitivity-labels.md) w portal zgodności Microsoft Purview.
+Ustawienia szyfrowania są dostępne podczas [tworzenia etykiety poufności](create-sensitivity-labels.md) w portalu zgodności usługi Microsoft Purview.
 
 ## <a name="understand-how-the-encryption-works"></a>Informacje o tym, jak działa szyfrowanie
 
@@ -336,9 +336,9 @@ Na przykład w przypadku klienta ujednoliconego etykietowania usługi Azure Info
 
 W przypadku wbudowanego etykietowania oraz dla klienta ujednoliconego etykietowania usługi Azure Information Protection, gdy [jest włączone współtworzenie](sensitivity-labels-coauthoring.md), użytkownicy widzą to samo okno dialogowe, tak jak w przypadku wybrania następujących opcji:
 
-- Windows: Karta **Plik** > **InfoProtect** >  **DocumentRestrict** >  **AccessRestricted Access** > 
+- Windows: Karta **Plik** > **Informacje** > **Chroń dokument** > **Ograniczanie****dostępu z ograniczonym dostępem** > 
 
-- macOS: **karta Przeglądanie** > **ProtectionPermissionsRestricted** >  >  **Access**
+- macOS: **Karta Przeglądanie** >**Uprawnienia** >  **ochrony** > **ograniczony dostęp**
 
 > [!TIP]
 > Jeśli użytkownicy byli zaznajomieni z konfigurowaniem uprawnień niestandardowych przy użyciu klienta ujednoliconego etykietowania usługi Azure Information Protection przed [włączeniem współtworzenia](sensitivity-labels-coauthoring.md), warto przejrzeć mapowanie poziomów uprawnień na indywidualne prawa użytkowania: [Prawa uwzględnione na poziomach uprawnień](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
@@ -446,11 +446,13 @@ Szyfrowanie najbardziej poufnych dokumentów i wiadomości e-mail pomaga zagwara
 - Gdy autoryzowani użytkownicy otwierają zaszyfrowane dokumenty w swoich aplikacjach Office, widzą nazwę etykiety i opis na żółtym pasku komunikatów w górnej części aplikacji. Gdy uprawnienia szyfrowania rozciągają się na osoby spoza organizacji, dokładnie przejrzyj nazwy etykiet i opisy, które będą widoczne na tym pasku komunikatów po otwarciu dokumentu.
 
 - Aby wielu użytkowników mogło edytować zaszyfrowany plik w tym samym czasie, wszyscy użytkownicy muszą używać Office dla sieci web lub [włączono współtworzenie plików zaszyfrowanych za pomocą etykiet poufności](sensitivity-labels-coauthoring.md), a wszyscy użytkownicy mają [Office aplikacje obsługujące tę funkcję](sensitivity-labels-coauthoring.md#prerequisites). Jeśli tak nie jest, a plik jest już otwarty:
-
+    
   - W aplikacjach Office (Windows, Mac, Android i iOS) użytkownicy widzą komunikat **File In Use** z nazwiskiem osoby, która wyewidencjonowała plik. Następnie mogą wyświetlać kopię tylko do odczytu lub zapisywać i edytować kopię pliku oraz otrzymywać powiadomienia, gdy plik jest dostępny.
   - W Office dla sieci web użytkownicy widzą komunikat o błędzie, że nie mogą edytować dokumentu z innymi osobami. Następnie mogą wybrać pozycję **Otwórz w widoku do czytania**.
 
-- Funkcja [automatycznego zapisywania](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) w aplikacjach Office dla iOS i Android jest wyłączona dla zaszyfrowanych plików. Ta funkcja jest również wyłączona dla zaszyfrowanych plików na komputerach Windows i Mac, jeśli nie [włączono współtworzenia plików zaszyfrowanych za pomocą etykiet poufności](sensitivity-labels-coauthoring.md). Użytkownicy widzą komunikat, że plik ma ograniczone uprawnienia, które muszą zostać usunięte przed włączeniem automatycznego zapisywania.
+- Funkcja [automatycznego zapisywania](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) w aplikacjach Office jest wyłączona dla zaszyfrowanych plików, jeśli nie [włączono współtworzenia plików zaszyfrowanych przy użyciu etykiet poufności](sensitivity-labels-coauthoring.md). Użytkownicy widzą komunikat, że plik ma ograniczone uprawnienia, które muszą zostać usunięte przed włączeniem automatycznego zapisywania.
+
+- Office dla Windows obsługuje etykiety, które stosują szyfrowanie, gdy użytkownicy nie są połączeni z Internetem. Jednak w przypadku innych platform (macOS, iOS, Android) użytkownicy muszą być w trybie online, aby stosować te etykiety w aplikacjach Office. Klient ujednoliconego etykietowania usługi Azure Information Protection musi być również w trybie online, aby zastosować te etykiety w Eksplorator plików i programie PowerShell. Użytkownicy nie muszą być w trybie online, aby otwierać zaszyfrowaną zawartość. Aby uzyskać więcej informacji na temat dostępu w trybie offline, zobacz sekcję [Rights Management use license for offline access (Używanie licencji Rights Management w trybie offline](#rights-management-use-license-for-offline-access)).
 
 - Otwieranie zaszyfrowanych plików może trwać dłużej w aplikacjach Office (Windows, Mac, Android i iOS).
 

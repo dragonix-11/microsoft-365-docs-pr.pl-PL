@@ -17,17 +17,17 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Użyj Windows PowerShell, aby uzyskać szczegółowe informacje o urządzeniach Usługi Basic Mobility and Security w organizacji.
-ms.openlocfilehash: 4cac15e8377370e4bd2f8b359a39aaf830f13d10
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Użyj Azure AD programu PowerShell, aby uzyskać szczegółowe informacje o urządzeniach z systemem Basic Mobility and Security w organizacji.
+ms.openlocfilehash: 816d397f29d6e1726448d92e641856f2a5a31a73
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781078"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007201"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Uzyskiwanie szczegółowych informacji o urządzeniach zarządzanych w usłudze Basic Mobility and Security
 
-W tym artykule przedstawiono sposób używania Windows PowerShell w celu uzyskania szczegółowych informacji o urządzeniach w organizacji skonfigurowanych dla usługi Basic Mobility and Security.
+W tym artykule pokazano, jak za pomocą programu Azure AD PowerShell uzyskać szczegółowe informacje o urządzeniach w organizacji skonfigurowanych dla usługi Basic Mobility and Security.
 
 Poniżej przedstawiono podział szczegółów urządzenia dostępnych dla Ciebie.
 

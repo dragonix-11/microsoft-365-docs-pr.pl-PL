@@ -22,36 +22,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Zaloguj się do konta Microsoft 365, aby ustawić niektóre hasła użytkowników tak, aby nigdy nie wygasały przy użyciu konta Windows PowerShell.
-ms.openlocfilehash: f0eff70b2b95c7e318f8a7e52777d4b684dbd8bf
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Zaloguj się do konta administratora Microsoft 365, aby ustawić niektóre hasła użytkowników, które nigdy nie wygasną przy użyciu programu Azure AD programu PowerShell.
+ms.openlocfilehash: a8357e3c72ea4bcd30234492b30e75eff8cb123a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021237"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010195"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Konfigurowanie hasła konkretnego użytkownika, aby nigdy nie wygasało
 
-W tym artykule wyjaśniono, jak ustawić hasło dla pojedynczego użytkownika, aby nie wygasło. Musisz wykonać te czynności przy użyciu programu PowerShell.
+W tym artykule wyjaśniono, jak ustawić hasło dla poszczególnych użytkowników, aby nie wygasał. Te kroki należy wykonać przy użyciu programu PowerShell.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Ten artykuł jest przeznaczony dla osób, które konfigurują zasady wygasania haseł dla firmy, instytucji edukacyjnej lub organizacji niedochodowej. Aby wykonać te czynności, musisz zalogować się przy użyciu Microsoft 365 administratora. Zobacz [Omówienie centrum administracyjne platformy Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide).
+Ten artykuł jest przeznaczony dla osób, które konfigurują zasady wygasania haseł dla firmy, instytucji edukacyjnej lub organizacji niedochodowej. Aby wykonać te kroki, musisz zalogować się przy użyciu konta administratora Microsoft 365. Zobacz [Omówienie Centrum administracyjne platformy Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview).
 
-Aby wykonać te [czynności, musisz być administratorem globalnym lub administratorem](about-admin-roles.md) hasła.
+Aby wykonać te kroki, musisz być [administratorem globalnym lub administratorem haseł](about-admin-roles.md) .
 
-Administrator globalny usługi firmy Microsoft w chmurze może za pomocą programu [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2) dla systemu Graph ustawić hasła, które nie wygasają dla określonych użytkowników. Za pomocą polecenia cmdlet usługi [AzureAD](/powershell/module/Azuread) możesz również usunąć konfigurację, która nigdy nie wygasa, lub sprawdzić, które hasła użytkowników są tak ustawione, aby nigdy nie wygasały.
+Administrator globalny usługi w chmurze firmy Microsoft może użyć [Azure Active Directory programu PowerShell dla Graph](/powershell/azure/active-directory/install-adv2), aby ustawić hasła, które nie wygasają dla określonych użytkowników. Możesz również użyć poleceń cmdlet [usługi AzureAD](/powershell/module/Azuread) , aby usunąć konfigurację, która nigdy nie wygasa, lub zobaczyć, które hasła użytkowników mają nigdy nie wygasać.
 
-Ten przewodnik dotyczy innych dostawców, takich jak intune czy Microsoft 365, którzy także korzystają z usługi Azure AD w celu korzystania z usług tożsamości i katalogów. Wygaśnięcie hasła to jedyna część zasad, które można zmienić.
+Ten przewodnik dotyczy innych dostawców, takich jak Intune i Microsoft 365, którzy również korzystają z Azure AD dla usług tożsamości i katalogów. Wygaśnięcie hasła to jedyna część zasad, którą można zmienić.
 
+## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Jak sprawdzić zasady wygasania pod kątem hasła
 
-## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Jak sprawdzić zasady wygasania hasła
-
-Aby uzyskać więcej informacji na Get-AzureADUser w module AzureAD, zobacz artykuł referencyjny [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser).
+Aby uzyskać więcej informacji na temat polecenia Get-AzureADUser w module AzureAD, zobacz artykuł referencyjny [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser).
 
 Uruchom jedno z następujących poleceń:
 
-- Aby sprawdzić, czy hasło pojedynczego użytkownika nie jest tak ustawione, aby nigdy nie wygasło, uruchom następujące polecenie cmdlet, używając nazwy UPN (na przykład *user@contoso.onmicrosoft.com*) lub identyfikatora użytkownika, którego chcesz sprawdzić:
+- Aby sprawdzić, czy hasło pojedynczego użytkownika nigdy nie wygasa, uruchom następujące polecenie cmdlet przy użyciu nazwy UPN (na przykład *user@contoso.onmicrosoft.com*) lub identyfikatora użytkownika, który chcesz sprawdzić:
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -75,7 +74,7 @@ Uruchom jedno z następujących poleceń:
      }
     ```
 
-- Aby uzyskać raport o wszystkich użytkownikach korzystających z hasłaNeverExpires w języku Html na pulpicie bieżącego użytkownika z nazwą  **ReportPasswordNeverExpires.html**
+- Aby uzyskać raport wszystkich użytkowników z passwordNeverExpires w języku Html na pulpicie bieżącego użytkownika o nazwie  **ReportPasswordNeverExpires.html**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -83,7 +82,7 @@ Uruchom jedno z następujących poleceń:
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```
 
-- Aby uzyskać raport o wszystkich użytkownikach korzystających z hasłaNeverExpires w formacie CSV na pulpicie bieżącego użytkownika z nazwą **ReportPasswordNeverExpires.csv**
+- Aby uzyskać raport wszystkich użytkowników z passwordNeverExpires w csv na pulpicie bieżącego użytkownika o nazwie **ReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -100,20 +99,20 @@ Run one of the following commands:
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
     ```
 
-- Aby ustawić hasła wszystkich użytkowników w organizacji tak, aby nigdy nie wygasały, uruchom następujące polecenie cmdlet:
+- Aby ustawić hasła wszystkich użytkowników w organizacji, aby nigdy nie wygasały, uruchom następujące polecenie cmdlet:
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 > [!WARNING]
-> Konta użytkowników skonfigurowane z parametrem nadal `-PasswordPolicies DisablePasswordExpiration` mają wiek na podstawie tego `pwdLastSet` atrybutu. W zależności od `pwdLastSet` atrybutu po `-PasswordPolicies None`zmianie daty wygaśnięcia na , wszystkie hasła o wartości pwdLastSet starszej niż 90 dni wymagają, aby użytkownik zmienił je przy następnym logować się. Ta zmiana może mieć wpływ na dużą liczbę użytkowników.
+> Konta użytkowników skonfigurowane przy użyciu parametru `-PasswordPolicies DisablePasswordExpiration` nadal starzeją się na podstawie atrybutu `pwdLastSet` . Na podstawie atrybutu `pwdLastSet` , jeśli zmienisz wygaśnięcie na `-PasswordPolicies None`, wszystkie hasła, które mają pwdLastSet starsze niż 90 dni, wymagają od użytkownika zmiany ich przy następnym zalogowaniu. Ta zmiana może mieć wpływ na dużą liczbę użytkowników.
 
-### <a name="set-a-password-to-expire"></a>Ustawianie hasła do wygaśnięcia
+### <a name="set-a-password-to-expire"></a>Ustawianie wygaśnięcia hasła
 
 Uruchom jedno z następujących poleceń:
 
-- Aby ustawić hasło jednego użytkownika tak, aby hasło wygasło, uruchom następujące polecenie cmdlet przy użyciu nazwy UPN lub identyfikatora użytkownika:
+- Aby ustawić hasło jednego użytkownika w celu wygaśnięcia hasła, uruchom następujące polecenie cmdlet przy użyciu nazwy UPN lub identyfikatora użytkownika użytkownika:
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None
@@ -127,6 +126,6 @@ Uruchom jedno z następujących poleceń:
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Umożliwianie użytkownikom resetowania swoich haseł](../add-users/let-users-reset-passwords.md) (artykuł)\
+[Zezwalaj użytkownikom na resetowanie własnych haseł](../add-users/let-users-reset-passwords.md) (artykuł)\
 [Resetowanie haseł](../add-users/reset-passwords.md) (artykuł)\
 [Ustawianie zasad wygasania haseł dla organizacji](../manage/set-password-expiration-policy.md) (artykuł)

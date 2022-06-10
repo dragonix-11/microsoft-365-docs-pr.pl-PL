@@ -12,14 +12,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Dowiedz się, jak rzucić klucze główne klienta przechowywane na platformie Azure Key Vault używane z kluczem klienta. Usługi obejmują pliki Exchange Online, Skype dla firm, SharePoint Online, OneDrive dla Firm i Teams.
-ms.openlocfilehash: 81d82f49c056f5a6ec9b8731b549aee68d5d658b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: f34e79ee772df1a88058625c0b2df5f62413bcfd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761356"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017339"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Tocz lub obracaj klucz klienta lub klucz dostępności
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!CAUTION]
 > Klucz szyfrowania używany z kluczem klienta jest rzutowany tylko wtedy, gdy wymagania dotyczące zabezpieczeń lub zgodności wymagają wprowadzenia klucza. Ponadto nie usuwaj żadnych kluczy, które są lub były skojarzone z zasadami. Podczas przerzucania kluczy zawartość zostanie zaszyfrowana przy użyciu poprzednich kluczy. Na przykład aktywne skrzynki pocztowe będą często ponownie szyfrowane, nieaktywne, odłączone i wyłączone skrzynki pocztowe mogą nadal być szyfrowane przy użyciu poprzednich kluczy. SharePoint Online wykonuje kopie zapasowe zawartości na potrzeby przywracania i odzyskiwania, więc zawartość może nadal być archiwizowana przy użyciu starszych kluczy.
@@ -53,7 +55,7 @@ Po wdrożeniu jednego z kluczy usługi Azure Key Vault skojarzonych z programem 
 
 Aby poinstruować klienta, aby używał nowego klucza do szyfrowania wielu obciążeń, wykonaj następujące kroki:
 
-1. Na komputerze lokalnym przy użyciu konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) w oknie Windows PowerShell.
+1. Na komputerze lokalnym, używając konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji, [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Uruchom polecenie cmdlet Set-M365DataAtRestEncryptionPolicy.
   
@@ -101,12 +103,12 @@ SharePoint Online umożliwia przerzucenie tylko jednego klucza naraz. Jeśli chc
    Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
    ```
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
-- [Szyfrowanie usługi przy użyciu klucza klienta dla Office 365](customer-key-overview.md)
+- [Szyfrowanie usługi przy użyciu klucza klienta](customer-key-overview.md)
 
-- [Konfigurowanie klucza klienta dla Office 365](customer-key-set-up.md)
+- [Konfigurowanie klucza klienta](customer-key-set-up.md)
 
-- [Zarządzanie kluczem klienta dla Office 365](customer-key-manage.md)
+- [Zarządzanie kluczem klienta](customer-key-manage.md)
 
 - [Dowiedz się więcej o kluczu dostępności](customer-key-availability-key-understand.md)

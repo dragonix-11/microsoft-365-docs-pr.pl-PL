@@ -20,16 +20,16 @@ description: Użytkownicy muszą mieć przypisane uprawnienia w centrum Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bf2f6f99af13de0858b041807f01e25e3516da8
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 4e0ca3874f03d9f0c386a84c9e8b56ea58bbfe72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130763"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018013"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Udzielanie użytkownikom dostępu do Centrum zabezpieczeń i zgodności
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -56,15 +56,15 @@ Aby uzyskać więcej informacji o różnych uprawnieniach, które można przyzna
 
 2. Z listy grup ról wybierz grupę ról, a następnie kliknij pozycję **Edytuj ikonę Edytuj**![.](../../media/O365-MDM-CreatePolicy-EditIcon.gif)
 
-3. Na stronie właściwości grupy ról w obszarze **Członkowie** kliknij pozycję **DodajDodaj**![ ikonę.](../../media/ITPro-EAC-AddIcon.gif) i wybierz nazwę użytkownika (lub użytkowników), którego chcesz dodać.
+3. Na stronie właściwości grupy ról w obszarze **Członkowie** kliknij pozycję **Dodaj**![ikonę.](../../media/ITPro-EAC-AddIcon.gif) i wybierz nazwę użytkownika (lub użytkowników), którego chcesz dodać.
 
 4. Po wybraniu wszystkich użytkowników, których chcesz dodać do grupy ról, kliknij przycisk **dodaj,\>** a następnie przycisk **OK**.
 
 5. Po zakończeniu kliknij przycisk **Zapisz**.
 
-## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Użyj programu PowerShell Usługi Security & Compliance Center, aby udzielić innemu użytkownikowi dostępu do Centrum zgodności & zabezpieczeń
+## <a name="use-security--compliance-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Użyj programu PowerShell zgodności & zabezpieczeń, aby udzielić innemu użytkownikowi dostępu do Centrum zgodności & zabezpieczeń
 
-1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Należy stosować następującą składnię:
 
@@ -88,7 +88,7 @@ Aby sprawdzić, czy pomyślnie udzielono dostępu do Centrum zgodności & zabezp
 
 - W Centrum zgodności & zabezpieczeń przejdź do pozycji **Uprawnienia** i wybierz grupę ról. W wyświetlonym wysuwu szczegółów sprawdź członków grupy ról.
 
-- W programie PowerShell Usługi Security & Compliance Center zastąp \<RoleGroupName\> ciąg nazwą grupy ról i uruchom następujące polecenie:
+- W obszarze Security & Compliance PowerShell zastąp \<RoleGroupName\> ciąg nazwą grupy ról i uruchom następujące polecenie:
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"

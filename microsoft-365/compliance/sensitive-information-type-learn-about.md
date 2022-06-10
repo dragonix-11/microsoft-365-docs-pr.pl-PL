@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Ten artykuł zawiera omówienie typów informacji poufnych oraz sposobu wykrywania poufnych informacji, takich jak numer ubezpieczenia społecznego, karty kredytowej lub konta bankowego w celu identyfikacji poufnych elementów
-ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971356"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014239"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Dowiedz się więcej o typach informacji poufnych
 
@@ -95,7 +95,7 @@ Dowiedz się więcej o poziomach ufności w tym krótkim filmie wideo.
 
 #### <a name="argentina-national-identity-dni-number"></a>Numer tożsamości narodowej Argentyny (DNI)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Osiem cyfr rozdzielonych kropkami
 
@@ -171,7 +171,7 @@ Możesz wybrać jedną z kilku opcji tworzenia niestandardowych typów informacj
 
 - **Użyj rozwiązania EDM** — możesz skonfigurować niestandardowe typy informacji poufnych przy użyciu klasyfikacji opartej na dokładnym dopasowaniu danych (EDM). Ta metoda umożliwia utworzenie dynamicznego typu informacji poufnych przy użyciu bezpiecznej bazy danych, którą można okresowo odświeżać. Zobacz [Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-- **Użyj programu PowerShell** — możesz skonfigurować niestandardowe typy informacji poufnych przy użyciu programu PowerShell. Chociaż ta metoda jest bardziej złożona niż korzystanie z interfejsu użytkownika, masz więcej opcji konfiguracji. Zobacz [Create a custom sensitive information type in Security & Compliance Center PowerShell (Tworzenie niestandardowego typu informacji poufnych w programie PowerShell Centrum zgodności & zabezpieczeń](create-a-custom-sensitive-information-type-in-scc-powershell.md)).
+- **Użyj programu PowerShell** — możesz skonfigurować niestandardowe typy informacji poufnych przy użyciu programu PowerShell. Chociaż ta metoda jest bardziej złożona niż korzystanie z interfejsu użytkownika, masz więcej opcji konfiguracji. Zobacz [Create a custom sensitive information type in Security & Compliance PowerShell (Tworzenie niestandardowego typu informacji poufnych w programie PowerShell security & Compliance](create-a-custom-sensitive-information-type-in-scc-powershell.md)).
 
 > [!NOTE]
 > Ulepszone poziomy ufności są dostępne do natychmiastowego użycia w usługach ochrony przed utratą danych w usłudze Microsoft Purview, ochrony informacji, zgodności z komunikacją, zarządzania cyklem życia danych i zarządzania rekordami.

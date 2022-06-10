@@ -1,5 +1,5 @@
 ---
-title: Omówienie wdrażania reguł zmniejszania obszaru ataków (ASR)
+title: Omówienie wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)
 description: Zawiera omówienie i wskazówki dotyczące wymagań wstępnych dotyczących wdrażania reguł zmniejszania obszaru ataków (ASR).
 keywords: Wdrażanie reguł zmniejszania obszaru ataków, wdrażanie usługi ASR, włączanie reguł asr, konfigurowanie usługi ASR, system zapobiegania włamaniom do hostów, reguły ochrony, reguły ochrony przed lukami w zabezpieczeniach, reguły antyeksploatowania, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł usługi ASR
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 8743d13939e73e25cefd08724d9a2f8d5a7fa410
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 18654dfb1ae6ae10596889fb4491604a37b8ffe8
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705543"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017436"
 ---
-# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Omówienie wdrażania reguł zmniejszania obszaru ataków (ASR)
+# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Omówienie wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)
 
 Powierzchnie ataków to wszystkie miejsca, w których organizacja jest narażona na ataki cybernetyczne i ataki. Obszar ataków organizacji obejmuje wszystkie miejsca, w których osoba atakująca może naruszyć bezpieczeństwo urządzeń lub sieci organizacji. Zmniejszenie obszaru ataków oznacza ochronę urządzeń i sieci organizacji, co sprawia, że osoby atakujące mają mniej sposobów ataku. Konfigurowanie reguł zmniejszania obszaru ataków (ASR) — jednej z wielu funkcji zabezpieczeń znajdujących się w Ochrona punktu końcowego w usłudze Microsoft Defender — może pomóc.
 
@@ -46,7 +46,7 @@ Podczas wstępnego przygotowywania ważne jest, aby zrozumieć możliwości syst
 >[!IMPORTANT]
 >Ten przewodnik zawiera obrazy i przykłady ułatwiające podjęcie decyzji o sposobie konfigurowania reguł usługi ASR. te obrazy i przykłady mogą nie odzwierciedlać najlepszych opcji konfiguracji środowiska.
 
-Przed rozpoczęciem zapoznaj się [z omówieniem zmniejszania obszaru podatnego na ataki](overview-attack-surface-reduction.md) i [demistyfikacją reguł zmniejszania obszaru podatnego na ataki — część 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) , aby uzyskać podstawowe informacje. Aby zrozumieć obszary pokrycia i potencjalny wpływ, zapoznaj się z bieżącym zestawem reguł usługi ASR; zobacz [Dokumentacja reguł zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md).  Podczas zapoznania się z zestawem reguł usługi ASR zanotuj mapowania identyfikatorów GUID dla reguł; zobacz: [Macierz reguł i identyfikatorów GUID usługi ASR](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
+Przed rozpoczęciem zapoznaj się [z omówieniem zmniejszania obszaru podatnego na ataki](overview-attack-surface-reduction.md) i [demistyfikacją reguł zmniejszania obszaru podatnego na ataki — część 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) , aby uzyskać podstawowe informacje. Aby zrozumieć obszary pokrycia i potencjalny wpływ, zapoznaj się z bieżącym zestawem reguł usługi ASR; zobacz [Dokumentacja reguł zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md).  Podczas zapoznania się z zestawem reguł usługi ASR zanotuj mapowania identyfikatorów GUID dla reguł; zobacz: [Reguła usługi ASR do macierzy GUID](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix).
 
 Reguły asr to tylko jedna z możliwości zmniejszania obszaru ataków w ramach Ochrona punktu końcowego w usłudze Microsoft Defender. Ten dokument zawiera bardziej szczegółowe informacje na temat efektywnego wdrażania reguł usługi ASR w celu powstrzymania zaawansowanych zagrożeń, takich jak oprogramowanie wymuszające okup obsługiwane przez człowieka i inne zagrożenia.  
 
@@ -129,13 +129,13 @@ Podobnie jak w przypadku każdej nowej implementacji na szeroką skalę, która 
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tej kolekcji wdrożeń
 
-[Reguły zmniejszania obszaru ataków testowych (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Przetestuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-test.md)
 
-[Włączanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+[Włącz reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-implement.md)
 
-[Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operacjonalizuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Dokumentacja reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-reference.md)
+[Odwołuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md)
 
 ## <a name="reference"></a>Odwołanie
 

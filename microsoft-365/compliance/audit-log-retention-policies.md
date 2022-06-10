@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Zasady przechowywania dzienników inspekcji są częścią nowych funkcji inspekcji usługi Microsoft Purview (Premium). Zasady przechowywania dzienników inspekcji umożliwiają określenie czasu przechowywania dzienników inspekcji w organizacji.
-ms.openlocfilehash: 0a35177c160e80cef2263382e4a1bc04057963b5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e75c88ba3ddd47b433e733984b76716532ab3ffa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099680"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012433"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Zarządzanie zasadami przechowywania dzienników inspekcji
 
@@ -102,7 +102,7 @@ Aby edytować zasady, wybierz je, aby wyświetlić stronę wysuwaną. Możesz zm
 
 > [!IMPORTANT]
 >
-> Jeśli używasz polecenia cmdlet **New-UnifiedAuditLogRetentionPolicy** , możesz utworzyć zasady przechowywania dziennika inspekcji dla typów rekordów lub działań, które nie są dostępne w narzędziu **Tworzenie zasad przechowywania inspekcji** na pulpicie nawigacyjnym. W takim przypadku nie będzie można edytować zasad (na przykład zmienić czasu przechowywania lub dodać i usunąć działania) na pulpicie nawigacyjnym **Zasady przechowywania inspekcji** . Zasady można wyświetlać i usuwać tylko w Centrum zgodności. Aby edytować zasady, musisz użyć polecenia cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) w usłudze Security & Compliance Center PowerShell.>
+> Jeśli używasz polecenia cmdlet **New-UnifiedAuditLogRetentionPolicy** , możesz utworzyć zasady przechowywania dziennika inspekcji dla typów rekordów lub działań, które nie są dostępne w narzędziu **Tworzenie zasad przechowywania inspekcji** na pulpicie nawigacyjnym. W takim przypadku nie będzie można edytować zasad (na przykład zmienić czasu przechowywania lub dodać i usunąć działania) na pulpicie nawigacyjnym **Zasady przechowywania inspekcji** . Zasady będą widoczne i usuwane tylko w portalu zgodności usługi Microsoft Purview. Aby edytować zasady, musisz użyć polecenia cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) w pliku Security & Compliance PowerShell.>
 >
 > **Wskazówka:** W górnej części strony wysuwanej zostanie wyświetlony komunikat dotyczący zasad, które należy edytować przy użyciu programu PowerShell.
 
@@ -112,13 +112,13 @@ Aby usunąć zasady, kliknij ikonę **Usuń**![.](../media/92a9f8e0-d469-48da-ad
 
 ## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>Tworzenie zasad przechowywania dzienników inspekcji i zarządzanie nimi w programie PowerShell
 
-Możesz również użyć programu PowerShell Security & Compliance Center do tworzenia zasad przechowywania dzienników inspekcji i zarządzania nimi. Jednym z powodów używania programu PowerShell jest utworzenie zasad dla typu rekordu lub działania, które nie są dostępne w interfejsie użytkownika.
+Do tworzenia zasad przechowywania dzienników inspekcji i zarządzania nimi można również użyć programu PowerShell security & Compliance. Jednym z powodów używania programu PowerShell jest utworzenie zasad dla typu rekordu lub działania, które nie są dostępne w interfejsie użytkownika.
 
 ### <a name="create-an-audit-log-retention-policy-in-powershell"></a>Tworzenie zasad przechowywania dzienników inspekcji w programie PowerShell
 
 Wykonaj następujące kroki, aby utworzyć zasady przechowywania dzienników inspekcji w programie PowerShell:
 
-1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Uruchom następujące polecenie, aby utworzyć zasady przechowywania dzienników inspekcji:
 
@@ -143,7 +143,7 @@ Aby uzyskać więcej informacji, zobacz [New-UnifiedAuditLogRetentionPolicy](/po
 
 ### <a name="view-policies-in-powershell"></a>Wyświetlanie zasad w programie PowerShell
 
-Użyj polecenia cmdlet [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) w programie PowerShell Security & Compliance Center, aby wyświetlić zasady przechowywania dzienników inspekcji.
+Użyj polecenia cmdlet [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) w programie PowerShell Security & Compliance, aby wyświetlić zasady przechowywania dzienników inspekcji.
 
 Oto przykładowe polecenie umożliwiające wyświetlenie ustawień wszystkich zasad przechowywania dzienników inspekcji w organizacji. To polecenie sortuje zasady z najwyższego do najniższego priorytetu.
 
@@ -156,11 +156,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ### <a name="edit-policies-in-powershell"></a>Edytowanie zasad w programie PowerShell
 
-Użyj polecenia cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) w programie PowerShell Security & Compliance Center, aby edytować istniejące zasady przechowywania dzienników inspekcji.
+Użyj polecenia cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) w programie PowerShell Security & Compliance, aby edytować istniejące zasady przechowywania dzienników inspekcji.
 
 ### <a name="delete-policies-in-powershell"></a>Usuwanie zasad w programie PowerShell
 
-Użyj polecenia cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) w programie PowerShell Security & Compliance Center, aby usunąć zasady przechowywania dzienników inspekcji. Usunięcie zasad z organizacji może potrwać do 30 minut.
+Użyj polecenia cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) w programie PowerShell Security & Compliance, aby usunąć zasady przechowywania dziennika inspekcji. Usunięcie zasad z organizacji może potrwać do 30 minut.
 
 ## <a name="more-information"></a>Więcej informacji
 

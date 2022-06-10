@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie dokładnym schematem dopasowania danych
+title: Zarządzaj schematem dokładnego dopasowania danych
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,27 +15,29 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak edytować lub usuwać schemat dokładnego dopasowania danych.
+description: Dowiedz się, jak edytować lub usunąć dokładny schemat dopasowania danych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e06cb25db0a8c616b5b692a423d9827e8918dc9
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 29cfefbd6bf9bb9f92fe5ed7664575ec75adfa12
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525197"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014679"
 ---
-# <a name="manage-your-exact-data-match-schema"></a>Zarządzanie dokładnym schematem dopasowania danych
+# <a name="manage-your-exact-data-match-schema"></a>Zarządzaj schematem dokładnego dopasowania danych
 
-## <a name="editing-the-schema-for-edm-based-classification-manually"></a>Ręczne edytowanie schematu klasyfikacji na podstawie usługi EDM
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Jeśli chcesz zmienić schemat usługi EDM, na przykład plikedm.xml, na przykład zmienić **** pola używane w klasyfikacji na podstawie usługi EDM, wykonaj następujące czynności:
+## <a name="editing-the-schema-for-edm-based-classification-manually"></a>Ręczne edytowanie schematu klasyfikacji opartej na protokole EDM
+
+Jeśli chcesz wprowadzić zmiany w schemacie EDM, na przykład plik **edm.xml** , taki jak zmiana pól używanych do klasyfikacji opartej na programie EDM, wykonaj następujące kroki:
 
 > [!TIP]
-> Schemat usługi EDM i plik źródłowy tabeli z informacjami poufnymi możesz zmienić, aby skorzystać z możliwości skonfigurowania **dopasowania**. Po skonfigurowaniu program EDM ignoruje różnice między literami i niektóre ograniczniki podczas oceny elementu. Ułatwia to definiowanie schematu XML i plików danych poufnych. Aby uzyskać więcej informacji, [zobacz Korzystanie z pól caseInsensitive i ignorowanychDelimiters](sit-get-started-exact-data-match-create-schema.md#using-the-caseinsensitive-and-ignoreddelimiters-fields).
+> Możesz zmienić schemat EDM i plik źródłowy tabeli informacji poufnych, aby korzystać z **konfigurowalnego dopasowania**. Po skonfigurowaniu program EDM zignoruje różnice wielkości liter i niektóre ograniczniki podczas oceniania elementu. Dzięki temu definiowanie schematu XML i poufnych plików danych jest łatwiejsze. Aby dowiedzieć się więcej, zobacz [Using the caseInsensitive and ignoredDelimiters fields (Używanie pól caseInsensitive i ignoredDelimiters).](sit-get-started-exact-data-match-create-schema.md#using-the-caseinsensitive-and-ignoreddelimiters-fields)
 
-1. Edytuj plik **edm.xml** (jest to plik omówiony w artykule Tworzenie schematu w celu dokładnego dopasowania danych [do typów informacji poufnych](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)).
+1. Edytuj **plikedm.xml** (jest to plik omówiony w sekcji [Tworzenie schematu dla dokładnych typów informacji poufnych opartych na dopasowaniu danych](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
 
-2. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+2. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 3. Aby zaktualizować schemat bazy danych, uruchom następujące polecenie:
 
@@ -45,27 +47,27 @@ Jeśli chcesz zmienić schemat usługi EDM, na przykład plikedm.xml, na przykł
 
       Zostanie wyświetlony monit o potwierdzenie w następujący sposób:
 
-      > Potwierdź
+      > Potwierdzić
       >
       > Czy na pewno chcesz wykonać tę akcję?
       >
-      > Schemat usługi EDM dla magazynu danych (patientrecords) zostanie zaktualizowany.
+      > Schemat EDM dla magazynu danych "patientrecords" zostanie zaktualizowany.
       >
-      > \[Y Yes A Yes to All \[N\] No \[L\] No to All \[?\]\] \[\] Pomoc (domyślna wartość to "Y"):
+      > \[Y\] Tak tak \[\] do wszystkich \[N\] Nie \[L\] Nie dla wszystkich\[?\] Pomoc (wartość domyślna to "Y"):
 
       > [!TIP]
-      > Jeśli chcesz, aby zmiany wprowadzały się bez potwierdzenia, nie używaj ich w kroku `-Confirm:$true` 3.
+      > Jeśli chcesz, aby zmiany wystąpiły bez potwierdzenia, nie używaj ich `-Confirm:$true` w kroku 3.
 
       > [!NOTE]
-      > Zaktualizowanie programu EDMSmSema przy użyciu dodatków może potrwać od 10 do 60 minut. Aktualizacja musi zostać ukończona przed wykonaniem kroków z zastosowaniem dodatków.
+      > Aktualizacja pakietu EDMSchema z dodatkami może potrwać od 10 do 60 minut. Aktualizacja musi zostać ukończona przed wykonaniem kroków korzystających z dodatków.
 
-## <a name="removing-the-schema-for-edm-based-classification-manually"></a>Ręczne usuwanie schematu klasyfikacji na podstawie usługi EDM
+## <a name="removing-the-schema-for-edm-based-classification-manually"></a>Ręczne usuwanie schematu klasyfikacji opartej na protokole EDM
 
-Jeśli chcesz usunąć schemat, którego używasz na podstawie klasyfikacji na podstawie usługi EDM, wykonaj następujące czynności:
+Jeśli chcesz usunąć schemat używany do klasyfikacji opartej na programie EDM, wykonaj następujące kroki:
 
-1. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
-2. Uruchom następujące polecenie, zastępując nazwą magazynu danych "dokumentację pacjentów" na nazwę pacjenta, którą chcesz usunąć (na przykład przy użyciu magazynu dokumentacji pacjenta):
+2. Uruchom następujące polecenie, zastępując nazwę magazynu danych "rekordami pacjentów" tą, którą chcesz usunąć (na przykład używając magazynu patientrecords):
 
       ```powershell
       Remove-DlpEdmSchema -Identity 'patientrecords'
@@ -73,26 +75,26 @@ Jeśli chcesz usunąć schemat, którego używasz na podstawie klasyfikacji na p
 
       Zostanie wyświetlony monit o potwierdzenie:
 
-      > Potwierdź
+      > Potwierdzić
       >
       > Czy na pewno chcesz wykonać tę akcję?
       >
-      > Schemat usługi EDM dla magazynu danych (patientrecords) zostanie usunięty.
+      > Schemat EDM dla magazynu danych "patientrecords" zostanie usunięty.
       >
-      > \[Y Yes A Yes to All \[N\] No \[L\] No to All \[?\]\] \[\] Pomoc (domyślna wartość to "Y"):
+      > \[Y\] Tak tak \[\] do wszystkich \[N\] Nie \[L\] Nie dla wszystkich\[?\] Pomoc (wartość domyślna to "Y"):
 
       > [!TIP]
-      > Jeśli chcesz wprowadzić zmiany bez potwierdzenia, nie używaj ich w kroku `-Confirm:$true` 2.
+      > Jeśli chcesz, aby zmiany wystąpiły bez potwierdzenia, nie używaj ich `-Confirm:$true` w kroku 2.
 
 ### <a name="edit-or-delete-the-edm-schema-with-the-wizard"></a>Edytowanie lub usuwanie schematu EDM za pomocą kreatora
 
-1. Otwórz **centrum zgodności Klasyfikacja** \> **danych** \> **Dokładne dopasowania danych**.
+1. Otwórz **centrum** \> zgodności **Klasyfikacja** \> **danych Dokładne dopasowania danych**.
 
-2. Wybierz **schematy EDM**.
+2. Wybierz **pozycję Schematy EDM**.
 
 3. Wybierz pozycję EDM SIT, którą chcesz edytować.
 
-4. Wybierz **pozycję Edytuj schemat EDM** **lub Usuń schemat EDM** z wysuwanych menu.
+4. Wybierz pozycję **Edytuj schemat EDM** lub **Usuń schemat EDM** z wysuwanego menu.
 
 > [!IMPORTANT]
-> Jeśli chcesz usunąć schemat, który jest już skojarzony z typem informacji poufnych usługi EDM, musisz najpierw usunąć typ informacji poufnych EDM, a następnie usunąć schemat.
+> Jeśli chcesz usunąć schemat i jest on już skojarzony z typem informacji poufnych EDM, musisz najpierw usunąć typ informacji poufnych EDM, a następnie usunąć schemat.

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj etykiet poufności, aby chronić zawartość w witrynach SharePoint i Microsoft Teams oraz w grupach Microsoft 365.
-ms.openlocfilehash: 125be09f9d3d9a519e1985a37c0880e3f2465245
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: dfe76e31eb5816e53a3f6d4ab598f1737cdebaa1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772688"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014305"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Używanie etykiet poufności do ochrony zawartości w witrynach Microsoft Teams, Microsoft 365 i SharePoint
 
@@ -67,7 +67,7 @@ Jeśli nie włączono jeszcze etykiet poufności dla kontenerów, wykonaj nastę
 
 1. Ponieważ ta funkcja korzysta z funkcji Azure AD, postępuj zgodnie z instrukcjami z dokumentacji Azure AD, aby włączyć obsługę etykiet poufności: [Przypisz etykiety poufności do grup Microsoft 365 w Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. Teraz musisz zsynchronizować etykiety poufności z Azure AD. Najpierw [połącz się z programem PowerShell Security & Compliance Center](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. Teraz musisz zsynchronizować etykiety poufności z Azure AD. Najpierw [połącz się z programem PowerShell security & Compliance](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    Na przykład w sesji programu PowerShell uruchamianej jako administrator zaloguj się przy użyciu konta administratora globalnego.
 
@@ -180,7 +180,7 @@ Znane ograniczenia dotyczące tej wersji zapoznawczej:
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>Konfigurowanie ustawień domyślnego typu łącza udostępniania witryny przy użyciu ustawień zaawansowanych programu PowerShell
 
-Oprócz ustawień etykiet dla witryn i grup, które można skonfigurować z portal zgodności Microsoft Purview, można również skonfigurować domyślny typ linku udostępniania dla witryny. Etykiety poufności dokumentów można również skonfigurować dla domyślnego typu łącza udostępniania. Te ustawienia, które pomagają zapobiegać nadmiernemu udostępnianiu, są wybierane automatycznie, gdy użytkownicy wybierają przycisk **Udostępnij** w swoich aplikacjach Office. 
+Oprócz ustawień etykiet dla witryn i grup, które można skonfigurować w portalu zgodności usługi Microsoft Purview, można również skonfigurować domyślny typ linku udostępniania dla witryny. Etykiety poufności dokumentów można również skonfigurować dla domyślnego typu łącza udostępniania. Te ustawienia, które pomagają zapobiegać nadmiernemu udostępnianiu, są wybierane automatycznie, gdy użytkownicy wybierają przycisk **Udostępnij** w swoich aplikacjach Office. 
 
 Aby uzyskać więcej informacji i instrukcji, zobacz [Używanie etykiet poufności do konfigurowania domyślnego typu linku udostępniania witryn i dokumentów w SharePoint i OneDrive](sensitivity-labels-default-sharing-link.md).
 
@@ -313,7 +313,7 @@ Upewnij się, że masz wersję 16.0.19418.12000 lub nowszą powłokę zarządzan
 
 1. Otwórz sesję programu PowerShell z opcją **Uruchom jako administrator** .
 
-2. Jeśli nie znasz identyfikatora GUID etykiety: [Połączenie do programu PowerShell Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell) i uzyskaj listę etykiet poufności i ich identyfikatorów GUID.
+2. Jeśli nie znasz identyfikatora GUID etykiety: [Połączenie do programu PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell) i uzyskaj listę etykiet poufności i ich identyfikatorów GUID.
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -361,7 +361,7 @@ W przypadku korzystania z centrów administracyjnych, które obsługują etykiet
 
 Następujące aplikacje i usługi obsługują etykiety poufności skonfigurowane dla witryn i ustawień grupy:
 
-- centra Administracja:
+- Centra administracyjne:
 
   - centrum administracyjne programu SharePoint
   - centrum administracyjne Teams
@@ -379,7 +379,7 @@ Następujące aplikacje i usługi obsługują etykiety poufności skonfigurowane
 
 Następujące aplikacje i usługi nie obsługują obecnie etykiet poufności skonfigurowanych dla witryn i ustawień grupy:
 
-- centra Administracja:
+- Centra administracyjne:
 
   - centrum administracyjne Exchange
 
@@ -421,7 +421,7 @@ Aby ułatwić zarządzanie współistnieniem etykiet poufności i klasyfikacji A
 
 ### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>Konwertowanie klasyfikacji grup Microsoft 365 na etykiety poufności przy użyciu programu PowerShell
 
-1. Najpierw [połącz się z programem PowerShell Security & Compliance Center](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. Najpierw [połącz się z programem PowerShell security & Compliance](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    Na przykład w sesji programu PowerShell uruchamianej jako administrator zaloguj się przy użyciu konta administratora globalnego:
 

@@ -15,42 +15,44 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak utworzyć i zaimportować niestandardowy typ informacji poufnych dla zasad w Centrum zgodności.
-ms.openlocfilehash: 89c215ca52b255a6e3aed72ff032cdd2475c0d87
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 8678b7c218844d9963bd610b66e8b6c2c2647dea
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015381"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014525"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Tworzenie niestandardowego typu informacji poufnych przy użyciu programu PowerShell
 
-W tym artykule pokazano, jak utworzyć plik pakietu *reguł* XML definiujący niestandardowe [typy informacji poufnych](sensitive-information-type-entity-definitions.md). W tym artykule opisano niestandardowy typ informacji poufnych identyfikujący identyfikator pracownika. Przykładowy kod XML z tego artykułu może być punktem wyjścia dla własnego pliku XML.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Aby uzyskać więcej informacji o typach informacji poufnych, zobacz [Informacje o typach informacji poufnych](sensitive-information-type-learn-about.md).
+W tym artykule przedstawiono sposób tworzenia pliku *pakietu reguł* XML, który definiuje niestandardowe [typy informacji poufnych](sensitive-information-type-entity-definitions.md). W tym artykule opisano niestandardowy typ informacji poufnych, który identyfikuje identyfikator pracownika. Przykładowego kodu XML w tym artykule można użyć jako punktu początkowego dla własnego pliku XML.
 
-Po utworzeniu dobrze utworzonego pliku XML możesz przekazać go do programu Microsoft 365 programu PowerShell. Następnie możesz rozpocząć korzystanie z niestandardowych typów informacji poufnych w zasadach. Możesz przetestować jego skuteczność w wykrywaniu poufnych informacji zgodnie z zamierzeniem.
+Aby uzyskać więcej informacji na temat typów informacji poufnych, zobacz [Informacje o typach informacji poufnych](sensitive-information-type-learn-about.md).
+
+Po utworzeniu dobrze sformułowanego pliku XML możesz przekazać go do Microsoft 365 przy użyciu programu PowerShell. Następnie możesz użyć niestandardowego typu informacji poufnych w zasadach. Możesz przetestować jego skuteczność w wykrywaniu poufnych informacji zgodnie z oczekiwaniami.
 
 > [!NOTE]
-> Jeśli nie potrzebujesz szczegółowej kontroli zapewnianą przez program PowerShell, możesz utworzyć niestandardowe typy informacji poufnych w Centrum zgodności platformy Microsoft 365. Aby uzyskać więcej informacji, [zobacz Tworzenie niestandardowego typu informacji poufnych](create-a-custom-sensitive-information-type.md).
+> Jeśli nie potrzebujesz szczegółowej kontrolki zapewnianej przez program PowerShell, możesz utworzyć niestandardowe typy informacji poufnych w portalu zgodności usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowego typu informacji poufnych](create-a-custom-sensitive-information-type.md).
 
 ## <a name="important-disclaimer"></a>Ważne zastrzeżenie
 
-Pomoc techniczna firmy Microsoft nie może pomóc w tworzeniu definicji pasujących do zawartości.
+pomoc techniczna firmy Microsoft nie może pomóc w tworzeniu definicji pasujących do zawartości.
 
-W celu opracowania, testowania i debugowania niestandardowego dopasowywania zawartości musisz skorzystać z własnych wewnętrznych zasobów IT lub skorzystać z usług doradczych, takich jak Microsoft Consulting Services (MCS). Inżynierowie pomocy technicznej firmy Microsoft mogą zapewnić ograniczoną obsługę tej funkcji, ale nie mogą zagwarantować, że niestandardowe sugestie dopasowywania zawartości w pełni spełnią Twoje potrzeby.
+W przypadku niestandardowego tworzenia, testowania i debugowania zawartości należy użyć własnych wewnętrznych zasobów IT lub skorzystać z usług konsultingowych, takich jak Microsoft Consulting Services (MCS). pomoc techniczna firmy Microsoft inżynierowie mogą zapewnić ograniczoną obsługę tej funkcji, ale nie mogą zagwarantować, że niestandardowe sugestie dopasowywania zawartości w pełni spełnią Twoje potrzeby.
 
-Firma MCS może dostarczać wyrażenia regularne do celów testowych. Mogą także pomóc w rozwiązywaniu problemów z istniejącym wzorcem RegEx, który nie działa zgodnie z oczekiwaniami, z jednym określonym przykładem zawartości.
+Usługa MCS może dostarczać wyrażenia regularne do celów testowych. Mogą również zapewnić pomoc w rozwiązywaniu problemów z istniejącym wzorcem regex, który nie działa zgodnie z oczekiwaniami w przypadku jednego przykładu konkretnej zawartości.
 
-Zobacz [temat Potencjalne problemy sprawdzania poprawności, o których należy pamiętać](#potential-validation-issues-to-be-aware-of) w tym artykule.
+Zobacz [Potencjalne problemy z weryfikacją, o które należy pamiętać](#potential-validation-issues-to-be-aware-of) w tym artykule.
 
-Aby uzyskać więcej informacji na temat aparatu Boost.RegEx (dawniej znanego jako RegEx++), który jest używany do przetwarzania tekstu, zobacz [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
+Aby uzyskać więcej informacji na temat aparatu Boost.RegEx (wcześniej znanego jako RegEx++), który jest używany do przetwarzania tekstu, zobacz [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
 > [!NOTE]
-> Jeśli używasz znaku "i" (&) jako części słowa kluczowego w niestandardowym typie informacji poufnych, musisz dodać kolejny termin ze spacjami wokół znaku. Na _przykład nie ._ `L&P``L & P`
+> Jeśli używasz znaku ampersand (&) jako części słowa kluczowego w niestandardowym typie informacji poufnych, musisz dodać dodatkowy termin ze spacjami wokół znaku. Na przykład _nie_ `L&P`używaj polecenia `L & P` .
 
 ## <a name="sample-xml-of-a-rule-package"></a>Przykładowy kod XML pakietu reguł
 
-Oto przykładowy kod XML pakietu reguł, który utworzymy w tym artykule. W poniższych sekcjach wyjaśniono elementy i atrybuty.
+Oto przykładowy kod XML pakietu reguł, który utworzymy w tym artykule. Elementy i atrybuty zostały wyjaśnione w poniższych sekcjach.
 
 ```xml
 <?xml version="1.0" encoding="UTF-16"?>
@@ -133,123 +135,123 @@ Oto przykładowy kod XML pakietu reguł, który utworzymy w tym artykule. W poni
 </RulePackage>
 ```
 
-## <a name="what-are-your-key-requirements-rule-entity-pattern-elements"></a>Jakie są Twoje kluczowe wymagania? [Reguła, jednostka, elementy deseniu]
+## <a name="what-are-your-key-requirements-rule-entity-pattern-elements"></a>Jakie są Twoje kluczowe wymagania? [Reguła, Jednostka, Elementy wzorca]
 
-Należy zrozumieć podstawową strukturę schematu XML reguły. Znajomość tej struktury pomoże niestandardowych typom informacji poufnych identyfikować właściwą zawartość.
+Ważne jest, aby poznać podstawową strukturę schematu XML dla reguły. Zrozumienie struktury pomoże niestandardowemu typowi informacji poufnych zidentyfikować właściwą zawartość.
 
-Reguła definiuje co najmniej jeden obiekt (nazywany także typami informacji poufnych). Każda jednostka definiuje jedną lub więcej wzorców. Wzorcem jest to, co zasady wyszukuje podczas oceny zawartości (na przykład wiadomości e-mail i dokumentów).
+Reguła definiuje co najmniej jedną jednostkę (znaną również jako typy informacji poufnych). Każda jednostka definiuje co najmniej jeden wzorc. Wzorzec jest tym, czego szukają zasady podczas oceniania zawartości (na przykład wiadomości e-mail i dokumenty).
 
-W znacznikach XML "reguły" oznaczają wzorce definiujące typ informacji poufnych. Nie kojarzenie odwołań do reguł w tym artykule z "warunkami" lub "akcjami", które są wspólne dla innych funkcji firmy Microsoft.
+W znacznikach XML "reguły" oznaczają wzorce definiujące typ informacji poufnych. Nie kojarzyj odwołań do reguł w tym artykule z "warunkami" lub "akcjami", które są powszechne w innych funkcjach firmy Microsoft.
 
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>Najprostszy scenariusz: jednostka z jednym wzorcem
 
-Oto prosty scenariusz: zasady mają określać zawartość zawierającą dziewięciocyfrowe identyfikatory pracowników używane w organizacji. Wzorzec odwołuje się do wyrażenia regularnego reguły identyfikującego liczby dziewięciocyfrowe. Każda zawartość zawierająca dziewięciocyfrową liczbę spełnia warunki.
+Oto prosty scenariusz: chcesz, aby zasady identyfikowały zawartość zawierającą dziewięciocyfrowe identyfikatory pracowników używane w organizacji. Wzorzec odwołuje się do wyrażenia regularnego w regule, które identyfikuje liczby dziewięciocyfrowe. Każda zawartość zawierająca 9-cyfrową liczbę spełnia wzorzec.
 
-![Diagram encji z jednym wzorcem.](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+![Diagram jednostki z jednym wzorcem.](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
 
-Ten wzorzec może jednak identyfikować wszystkie liczby w postaci dziewięciucyfrowej, w tym dłuższe liczby lub inne, dziesiętne cyfry, które nie są identyfikatorami pracowników. Ten typ niechcianego dopasowania jest nazywany wynikami *fałszywie dodatnimi*.
+Jednak ten wzorzec może identyfikować **dowolną** dziewięciocyfrową liczbę, w tym dłuższe liczby lub inne typy liczb dziewięciocyfrowych, które nie są identyfikatorami pracowników. Ten typ niechcianego dopasowania jest znany jako *wynik fałszywie dodatni*.
 
-### <a name="more-common-scenario-entity-with-multiple-patterns"></a>Bardziej typowe scenariusz: jednostka z wieloma wzorcami
+### <a name="more-common-scenario-entity-with-multiple-patterns"></a>Bardziej typowy scenariusz: jednostka z wieloma wzorcami
 
-Ze względu na możliwość wyników fałszywie dodatnich zazwyczaj do zdefiniowania encji używa się więcej niż jednego wzorca. Wiele wzorców stanowi dowód na to, że jest to jednostka docelowa. Na przykład dodatkowe słowa kluczowe, daty lub inny tekst mogą pomóc w zidentyfikowaniu oryginalnej jednostki (na przykład dziewięciocyfrowego numeru pracownika).
+Ze względu na potencjał wyników fałszywie dodatnich zwykle do definiowania jednostki jest używany więcej niż jeden wzorzec. Wiele wzorców dostarcza dowodów potwierdzających dla jednostki docelowej. Na przykład dodatkowe słowa kluczowe, daty lub inny tekst mogą pomóc w zidentyfikowaniu oryginalnej jednostki (na przykład dziewięciocyfrowego numeru pracownika).
 
-Aby na przykład zwiększyć prawdopodobieństwo zidentyfikowania zawartości zawierającej identyfikator pracownika, można zdefiniować inne wzorce wyszukiwania:
+Aby na przykład zwiększyć prawdopodobieństwo zidentyfikowania zawartości zawierającej identyfikator pracownika, można zdefiniować inne wzorce do wyszukania:
 
-- Wzorzec określający datę zatrudnienia.
-- Wzorzec określający zarówno datę zatrudnienia, jak i słowo kluczowe "Identyfikator pracownika".
+- Wzorzec, który identyfikuje datę zatrudnienia.
+- Wzorzec, który identyfikuje zarówno datę zatrudnienia, jak i słowo kluczowe "identyfikator pracownika".
 
-![Diagram encji z wieloma wzorcami.](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+![Diagram jednostki z wieloma wzorcami.](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
 
-W przypadku wielokrotnego dopasowania wzorcowego należy wziąć pod uwagę kilka ważnych punktów:
+Istnieją ważne kwestie, które należy wziąć pod uwagę w przypadku wielu dopasowań wzorca:
 
-- Wzorce wymagające dodatkowych dowodów mają wyższy poziom ufności. W zależności od poziomu ufności można podjąć następujące działania:
-  - Używaj bardziej restrykcyjnych akcji (takich jak blokowanie zawartości) z wyższymi ufnościami.
-  - Używaj mniej restrykcyjnych akcji (takich jak wysyłanie powiadomień) przy dopasowaniach z mniejszą ufnością.
+- Wzorce, które wymagają większej liczby dowodów, mają wyższy poziom ufności. Na podstawie poziomu ufności można wykonać następujące akcje:
+  - Użyj bardziej restrykcyjnych akcji (takich jak zawartość blokowa) z dopasowaniami o większej pewności.
+  - Używaj mniej restrykcyjnych akcji (takich jak wysyłanie powiadomień) z dopasowaniami o niższym poziomie ufności.
 
-- Obsługa i elementy odwołują `IdMatch` się `Match` do słów kluczowych RegExes i słów kluczowych, które w rzeczywistości są elementami kluczowymi`Rule`, a nie .`Pattern` Do tych elementów obsługi odwołuje się element `Pattern`, ale są zawarte w `Rule`. To zachowanie oznacza, że do pojedynczej definicji elementu wsparcia, na przykład zwykłego wyrażenia lub listy słów kluczowych, może odwoływać się wiele obiektów i wzorców.
+- Elementy pomocnicze `IdMatch` i `Match` odwołują się do wyrażeń regularnych i słów kluczowych, które są w rzeczywistości elementami podrzędnymi `Rule` elementu, a `Pattern`nie . Te elementy pomocnicze są przywoływane przez `Pattern`element , ale są uwzględniane w elem.`Rule` To zachowanie oznacza, że do pojedynczej definicji elementu pomocniczego, takiego jak wyrażenie regularne lub lista słów kluczowych, można odwoływać się przez wiele jednostek i wzorców.
 
-## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>Jaki element należy zidentyfikować? [Element encja, atrybut identyfikatora]
+## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>Jaką jednostkę należy zidentyfikować? [Element jednostki, atrybut ID]
 
-Jednostka to typ informacji poufnych, na przykład numer karty kredytowej, który ma dobrze zdefiniowany wzorzec. Każda jednostka ma unikatowy identyfikator GUID.
+Jednostka jest typem informacji poufnych, takim jak numer karty kredytowej, który ma dobrze zdefiniowany wzorzec. Każda jednostka ma unikatowy identyfikator GUID jako swój identyfikator.
 
-### <a name="name-the-entity-and-generate-its-guid"></a>Nadaj nazwę encji i generuj jej identyfikator GUID
+### <a name="name-the-entity-and-generate-its-guid"></a>Nadaj jednostce nazwę i wygeneruj jej identyfikator GUID
 
-1. W wybranej edytorze XML dodaj elementy `Rules` i `Entity` .
-2. Dodaj komentarz zawierający nazwę encji niestandardowej, na przykład Identyfikator pracownika. Później dodasz nazwę jednostki do sekcji zlokalizowanych ciągów i ta nazwa będzie wyświetlana w centrum administracyjnym podczas tworzenia zasad.
-3. Wygeneruj unikatowy identyfikator GUID dla swojej jednostki. Na przykład w Windows PowerShell można uruchomić polecenie `[guid]::NewGuid()`. Później identyfikator GUID zostanie również dodajony do zlokalizowanej sekcji ciągów encji.
+1. W wybranym edytorze XML dodaj elementy `Rules` i `Entity` .
+2. Dodaj komentarz zawierający nazwę jednostki niestandardowej, na przykład Identyfikator pracownika. Później dodasz nazwę jednostki do sekcji zlokalizowanych ciągów, a ta nazwa będzie wyświetlana w centrum administracyjnym podczas tworzenia zasad.
+3. Wygeneruj unikatowy identyfikator GUID dla jednostki. Na przykład w Windows PowerShell możesz uruchomić polecenie `[guid]::NewGuid()`. Później dodasz również identyfikator GUID do sekcji zlokalizowanych ciągów jednostki.
 
-![Xml markup showing Rules and Entity elements.](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+![Znaczniki XML z elementami Reguły i Jednostki.](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
 
-## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>Jaki deseń chcesz dopasować? [Element deseniu, element IdMatch, element Regex]
+## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>Jaki wzorzec chcesz dopasować? [Pattern, IdMatch, Regex, element]
 
-Wzorzec zawiera listę informacji szukanych przez typ informacji poufnych. Wzorzec może zawierać wyrażenia RegExes, słowa kluczowe i funkcje wbudowane. Funkcje to zadanie, takie jak uruchamianie programu RegExes w celu znalezienia dat lub adresów. Typy informacji poufnych mogą mieć wiele wzorców o unikatowych ufnościach.
+Wzorzec zawiera listę informacji poufnych, których szuka typ. Wzorzec może zawierać wyrażenia regex, słowa kluczowe i wbudowane funkcje. Funkcje wykonują zadania, takie jak uruchamianie funkcji RegExes, aby znaleźć daty lub adresy. Typy informacji poufnych mogą mieć wiele wzorców z unikatowymi ufnościami.
 
-Na poniższym diagramie wszystkie wzorce odwołują się do tego samego wyrażenia regularnego. Ten kod RegEx wyszukuje dziewięciocyfrową `(\d{9})` liczbę otoczoną białymi miejscami `(\s) ... (\s)`. Do tego wyrażenia regularnego odwołuje się `IdMatch` element i jest to typowe wymaganie dla wszystkich wzorców wyszukiwania encji Identyfikator pracownika. `IdMatch` to identyfikator, który próbuje się dopasować. Element `Pattern` musi mieć dokładnie jeden `IdMatch` element.
+Na poniższym diagramie wszystkie wzorce odwołują się do tego samego wyrażenia regularnego. Ta funkcja RegEx szuka 9-cyfrowej liczby `(\d{9})` otoczonej białym znakiem `(\s) ... (\s)`. To wyrażenie regularne jest przywoływane przez `IdMatch` element i jest typowym wymaganiem dla wszystkich wzorców, które poszukają jednostki Employee ID. `IdMatch` to identyfikator, który ma być zgodny ze wzorcem. Element `Pattern` musi mieć dokładnie jeden `IdMatch` element.
 
-![Ad markup XML showing multiple Pattern elements referencing single Regex element.](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+![Znaczniki XML przedstawiające wiele elementów wzorca odwołujących się do pojedynczego elementu Regex.](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
 
-Dopasowanie zgodne z wzorcem zwraca poziom ufności i liczby, którego można używać w warunkach określonych w twoich zasadach. Dodanie do zasad warunku wykrywania typu informacji poufnych pozwala edytować poziom ufności i liczności, jak pokazano na poniższym diagramie. W dalszej części tego artykułu wyjaśniono poziom ufności (nazywany również dokładnością dopasowań).
+Zgodne dopasowanie wzorca zwraca poziom liczby i ufności, którego można użyć w warunkach w zasadach. Po dodaniu warunku wykrywania typu informacji poufnych do zasad można edytować poziom liczby i ufności, jak pokazano na poniższym diagramie. Poziom ufności (nazywany również dokładnością dopasowania) został wyjaśniony w dalszej części tego artykułu.
 
 ![Opcje liczby wystąpień i dokładności dopasowania.](../media/sit-confidence-level.png)
 
-Wyrażenia regularne są bardzo zaawansowane, dlatego musisz wiedzieć o nich kilka problemów. Na przykład program RegEx, który identyfikuje zbyt dużo zawartości, może mieć wpływ na wydajność. Aby dowiedzieć się więcej o tych problemach, [zobacz sekcję](#potential-validation-issues-to-be-aware-of) Potencjalne problemy sprawdzania poprawności, o których należy pamiętać w dalszej części tego artykułu.
+Wyrażenia regularne są zaawansowane, więc istnieją problemy, o których musisz wiedzieć. Na przykład regex, który identyfikuje zbyt dużą ilość zawartości, może mieć wpływ na wydajność. Aby dowiedzieć się więcej na temat tych problemów, zobacz [sekcję Potencjalne problemy z weryfikacją, o czym należy pamiętać w dalszej](#potential-validation-issues-to-be-aware-of) części tego artykułu.
 
-## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a>Chcesz wymagać dodatkowych dowodów? [Match element, minCount atrybut]
+## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a>Czy chcesz wymagać dodatkowych dowodów? [Match, element, atrybut minCount]
 
-Oprócz wzorca można `IdMatch`użyć elementu `Match` w celu wymagania dodatkowych dowodów dodatkowych, takich jak słowo kluczowe, RegEx, data lub adres.
+Oprócz `IdMatch`tego wzorzec może używać `Match` elementu w celu wymagania dodatkowych dowodów potwierdzających, takich jak słowo kluczowe, regex, data lub adres.
 
-A `Pattern` może zawierać wiele `Match` elementów:
+Element `Pattern` może zawierać wiele `Match` elementów:
 
 - Bezpośrednio w elemencie `Pattern` .
 - Połączone przy użyciu `Any` elementu.
 
-`Match` są połączone niejawnym operatorem AND. Innymi słowy, wszystkie `Match` elementy muszą być zgodne ze wzorcem.
+`Match` elementy są sprzężone przez niejawny operator AND. Innymi słowy, wszystkie `Match` elementy muszą być spełnione, aby można było dopasować wzorzec.
 
-Za jego pomocą można `Any` wprowadzać operatory AND lub OR. Ten `Any` element został opisany w dalszej części tego artykułu.
+Za pomocą `Any` elementu można wprowadzić operatory AND lub OR. Element `Any` został opisany w dalszej części tego artykułu.
 
-Możesz użyć atrybutu opcjonalnego `minCount` , aby określić, ile wystąpień dopasowania należy znaleźć dla poszczególnych `Match` elementów. Możesz na przykład określić, że wzorzec jest spełniony tylko wtedy, gdy znajdują się co najmniej dwa słowa kluczowe z listy słów kluczowych.
+Możesz użyć opcjonalnego `minCount` atrybutu, aby określić, ile wystąpień dopasowania należy znaleźć dla poszczególnych `Match` elementów. Można na przykład określić, że wzorzec jest spełniony tylko wtedy, gdy znaleziono co najmniej dwa słowa kluczowe z listy słów kluczowych.
 
-![Znacznik XML pokazujący element Match z atrybutem minOccurs.](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+![Znaczniki XML z elementem Match z atrybutem minOccurs.](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
 
-### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Słowa kluczowe [Elementy słowa kluczowego, grupy i terminu, matchStyle i caseSensitive atrybuty]
+### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Słowa kluczowe [elementy słowa kluczowego, grupy i terminu, atrybuty matchStyle i caseSensitive]
 
-Jak opisano wcześniej, zidentyfikowanie informacji poufnych często wymaga dodatkowych słów kluczowych jako dowodów potwierdzających. Oprócz dopasowania numeru dziesiętnego możesz na przykład poszukać słów takich jak "kartka", "znaczek" lub "identyfikator" za pomocą elementu Słowo kluczowe. Element `Keyword` ma atrybut, do `ID` których może odwoływać się wiele `Match` elementów w wielu wzorcach lub jednostkach.
+Jak opisano wcześniej, identyfikacja informacji poufnych często wymaga dodatkowych słów kluczowych jako dowodów potwierdzających. Na przykład oprócz dopasowania liczby dziewięciocyfrowej można wyszukiwać wyrazy takie jak "card", "badge" lub "ID" przy użyciu elementu Keyword. Element `Keyword` ma `ID` atrybut, do którego może odwoływać się wiele `Match` elementów w wielu wzorcach lub jednostkach.
 
-Słowa kluczowe są uwzględniane jako lista elementów `Term` w `Group` elemencie. Element `Group` ma atrybut z `matchStyle` dwiema możliwymi wartościami:
+Słowa kluczowe są uwzględniane jako lista elementów `Term` w elemencie `Group` . Element `Group` ma `matchStyle` atrybut z dwiema możliwymi wartościami:
 
-- **matchStyle="word"**: Dopasowanie wyrazu identyfikuje całe wyrazy otoczone białym znakiem lub innymi ogranicznikami. Zawsze używaj wyrazów **,** chyba że trzeba dopasować części wyrazów lub wyrazów w językach azjatyckich.
+- **matchStyle="word"**: Dopasowanie wyrazów identyfikuje całe wyrazy otoczone białym znakiem lub innymi ogranicznikami. Zawsze należy używać **słowa** , chyba że musisz dopasować części wyrazów lub słów w językach azjatyckich.
 
-- **matchStyle="string"**: Dopasowanie ciągu identyfikuje ciągi niezależnie od tego, co się w nich znajduje. Na przykład "Identyfikator" będzie odpowiadać "oferty" i "pomysłowi". Używaj `string` tylko wtedy, gdy chcesz dopasować wyrazy azjatyckie lub jeśli Twoje słowo kluczowe może być zawarte w innych ciągach.
+- **matchStyle="string"**: dopasowanie ciągu identyfikuje ciągi bez względu na to, przez co są otoczone. Na przykład wartość "ID" będzie zgodna z wartościami "bid" i "idea". Używaj `string` tylko wtedy, gdy musisz dopasować słowa azjatyckie lub jeśli słowo kluczowe może zostać uwzględnione w innych ciągach.
 
-Atrybut elementu umożliwia dokładne `caseSensitive` `Term` dopasowanie zawartości do słowa kluczowego, z uwzględnieniem małych i wielkich liter.
+Na koniec możesz użyć atrybutu `caseSensitive` `Term` elementu, aby określić, że zawartość musi być dokładnie zgodna ze słowem kluczowym, w tym małymi literami i wielkimi literami.
 
-![Znacznik XML przedstawiający pole Dopasuj elementy odwołujące się do słów kluczowych.](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+![Znaczniki XML przedstawiające elementy dopasowania odwołujące się do słów kluczowych.](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
 
-### <a name="regular-expressions-regex-element"></a>Wyrażenia regularne [Element Regex]
+### <a name="regular-expressions-regex-element"></a>Wyrażenia regularne [regex, element]
 
-W tym przykładzie `ID` `IdMatch` jednostka pracownika używa już elementu w celu odwołania się do zwykłego wyrażenia we wzorcu: dziesiętnego numeru dziesiętnego otoczonego białym znakiem. `Match` `Regex` Ponadto za pomocą wzorca można odwołać się do elementu w celu zidentyfikowania dowodu potwierdzającego, takiego jak pięciocyfrowy lub dziewięciocyfrowy numer w formacie kodu pocztowego Stanów Zjednoczonych.
+W tym przykładzie jednostka pracownika `ID` już używa `IdMatch` tego elementu do odwoływania się do wyrażenia regularnego wzorca: dziewięciocyfrowej liczby otoczonej białym znakiem. Ponadto wzorzec może używać `Match` elementu do odwoływania się do dodatkowego `Regex` elementu w celu zidentyfikowania dowodów potwierdzających, takich jak pięciocyfrowy lub dziewięciocyfrowy numer w formacie amerykańskiego kodu pocztowego.
 
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>Dodatkowe wzorce, takie jak daty lub adresy [wbudowane funkcje]
 
-Typy informacji poufnych mogą również używać wbudowanych funkcji do identyfikowania dowodów potwierdzania. Może to być na przykład data w USA, data UE, data wygaśnięcia lub adres w USA. Microsoft 365 nie obsługuje przekazywania własnych funkcji niestandardowych. Jednak po utworzeniu niestandardowego typu informacji poufnych jednostka może odwoływać się do wbudowanych funkcji.
+Typy informacji poufnych mogą również używać wbudowanych funkcji do identyfikowania dowodów potwierdzających. Na przykład data, data UE, data wygaśnięcia lub adres USA. Microsoft 365 nie obsługuje przekazywania własnych funkcji niestandardowych. Jednak podczas tworzenia niestandardowego typu informacji poufnych jednostka może odwoływać się do wbudowanych funkcji.
 
-Na przykład identyfikator pracownika zawiera datę zatrudnienia, `Func_us_date` więc ta jednostka niestandardowa może używać wbudowanej funkcji do identyfikowania daty w formacie używanym w USA.
+Na przykład wskaźnik identyfikatora pracownika ma datę zatrudnienia, więc ta jednostka niestandardowa może używać wbudowanej `Func_us_date` funkcji do identyfikowania daty w formacie powszechnie używanym w Stanach Zjednoczonych.
 
-Aby uzyskać więcej informacji, zobacz [Funkcje typu informacji poufnych](sit-functions.md).
+Aby uzyskać więcej informacji, zobacz [Funkcje typów informacji poufnych](sit-functions.md).
 
-![Znacznik XML przedstawiający pole Wyboru elementu odwołującego się do wbudowanej funkcji.](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+![Znaczniki XML przedstawiające element Match odwołujący się do wbudowanej funkcji.](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
 
-## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>Różne kombinacje dowodów [dowolny element, atrybuty minMatches i maxMatches]
+## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>Różne kombinacje dowodów [Dowolny element, minMatches i atrybuty maxMatches]
 
-W elemencie `Pattern` wszystkie i `IdMatch` elementy `Match` są połączone niejawnym operatorem AND. Innymi słowy, wszystkie dopasowania muszą być spełnione, aby wzorzec był spełniony.
+W elemencie `Pattern` wszystkie `IdMatch` elementy i `Match` są przyłączone przez niejawny operator AND. Innymi słowy, wszystkie dopasowania muszą być spełnione, zanim wzorzec będzie mógł zostać spełniony.
 
-Możesz utworzyć bardziej elastyczną logikę dopasowywania, używając elementu `Any` do grupowania `Match` elementów. Możesz na przykład użyć elementu `Any` , aby dopasować wszystkie, brak lub dokładny podzbiór jego elementów podrzędnych `Match` .
+Możesz utworzyć bardziej elastyczną logikę `Any` dopasowywania, używając elementu do grupowania `Match` elementów. Na przykład można użyć `Any` elementu, aby dopasować wszystkie, brak lub dokładny podzbiór jego elementów podrzędnych `Match` .
 
-Element `Any` ma atrybuty opcjonalne `minMatches` `maxMatches` `Match` i atrybuty, za pomocą których można określić, ile elementów podrzędnych musi spełniać wzorzec. Te atrybuty określają *liczbę elementów*`Match`, a nie liczbę znalezionych wystąpień dowodów na dopasowania. Aby zdefiniować minimalną liczbę wystąpień określonego dopasowania, na przykład dwa słowa kluczowe z listy, `minCount` `Match` użyj atrybutu dla elementu (patrz powyżej).
+Element `Any` ma opcjonalne `minMatches` i `maxMatches` atrybuty, których można użyć do zdefiniowania liczby elementów podrzędnych `Match` , które muszą zostać spełnione przed dopasowaniem wzorca. Te atrybuty definiują *liczbę* elementów `Match` , a nie liczbę wystąpień dowodów znalezionych dla dopasowań. Aby zdefiniować minimalną liczbę wystąpień dla określonego dopasowania, na przykład dwa słowa kluczowe z listy, użyj atrybutu `minCount` elementu `Match` (zobacz powyżej).
 
-### <a name="match-at-least-one-child-match-element"></a>Match at least one child Match element
+### <a name="match-at-least-one-child-match-element"></a>Dopasuj co najmniej jeden podrzędny element Match
 
-Aby wymagać tylko minimalnej liczby `Match` elementów, można użyć tego `minMatches` atrybutu. W efekcie te elementy `Match` są połączone niejawnym operatorem LUB. Ten `Any` element jest zadowoleni, jeśli zostanie znaleziona data w formacie US lub słowo kluczowe z jednej z list.
+Aby wymagać tylko minimalnej liczby elementów `Match` , możesz użyć atrybutu `minMatches` . W efekcie te `Match` elementy są sprzężone przez niejawny operator OR. Ten `Any` element jest spełniony, jeśli znaleziono datę sformatowaną w Stanach Zjednoczonych lub słowo kluczowe z dowolnej listy.
 
 ```xml
 <Any minMatches="1" >
@@ -259,9 +261,9 @@ Aby wymagać tylko minimalnej liczby `Match` elementów, można użyć tego `min
 </Any>
 ```
 
-### <a name="match-an-exact-subset-of-any-children-match-elements"></a>Dopasowanie dokładnego podzbioru dowolnych elementów dopasowania dzieci
+### <a name="match-an-exact-subset-of-any-children-match-elements"></a>Dopasuj dokładny podzbiór elementów podrzędnych Dopasuj elementy
 
-Aby wymagać dokładnej liczby `Match` elementów, należy ustawić `minMatches` tę `maxMatches` samą wartość. Ten `Any` element jest zadowoleni tylko w przypadku, gdy zostanie znaleziona dokładnie jedna data lub słowo kluczowe. Jeśli istnieje więcej dopasowań, wzorzec nie jest do siebie dopasowany.
+Aby wymagać dokładnej liczby elementów `Match` , ustaw `minMatches` wartość i `maxMatches` na tę samą wartość. Ten `Any` element jest spełniony tylko wtedy, gdy znaleziono dokładnie jedną datę lub słowo kluczowe. Jeśli istnieje więcej dopasowań, wzorzec nie jest dopasowany.
 
 ```xml
 <Any minMatches="1" maxMatches="1" >
@@ -271,11 +273,11 @@ Aby wymagać dokładnej liczby `Match` elementów, należy ustawić `minMatches`
 </Any>
 ```
 
-### <a name="match-none-of-children-match-elements"></a>Dopasuj żadne elementy dopasowania dzieci
+### <a name="match-none-of-children-match-elements"></a>Dopasuj żaden z elementów podrzędnych Dopasuj elementy
 
-Jeśli chcesz wymagać braku określonych dowodów, aby wzorzec był spełniony, możesz ustawić zarówno wartość minMatches, jak i maxMatches na 0. Może to być przydatne, jeśli masz listę słów kluczowych lub inne dowody, które mogą wskazywać na wynik fałszywie dodatni.
+Jeśli chcesz wymagać braku konkretnych dowodów, aby wzorzec był spełniony, możesz ustawić wartość minMatches i maxMatches na 0. Może to być przydatne, jeśli masz listę słów kluczowych lub inne dowody, które mogą wskazywać na wynik fałszywie dodatni.
 
-Na przykład jednostka identyfikatora pracownika wyszukuje słowo kluczowe "karta", ponieważ może się ona odnosić do "identyfikatora". Jeśli jednak w tej zawartości pojawia się tylko fraza "karta kredytowa", to mało prawdopodobne, aby w treści pojawiała się fraza "Karta kredytowa". Dlatego możesz dodać "kartę kredytową" jako słowo kluczowe do listy terminów, które chcesz wykluczyć z spełniania tego wzorca.
+Na przykład jednostka identyfikatora pracownika wyszuka słowa kluczowego "card", ponieważ może odnosić się do "karty identyfikatora". Jeśli jednak karta pojawia się tylko w frazie "karta kredytowa", "karta" w tej zawartości jest mało prawdopodobne, aby oznaczała "dowód osobisty". Dzięki temu możesz dodać "kartę kredytową" jako słowo kluczowe do listy terminów, które chcesz wykluczyć z spełniania wzorca.
 
 ```xml
 <Any minMatches="0" maxMatches="0" >
@@ -284,9 +286,9 @@ Na przykład jednostka identyfikatora pracownika wyszukuje słowo kluczowe "kart
 </Any>
 ```
 
-### <a name="match-a-number-of-unique-terms"></a>Liczba unikatowych terminów
+### <a name="match-a-number-of-unique-terms"></a>Dopasuj liczbę unikatowych terminów
 
-Jeśli chcesz dopasować kilka unikatowych terminów, użyj *parametru uniqueResults* ustawionego na wartość *true*, jak pokazano w poniższym przykładzie:
+Jeśli chcesz dopasować kilka unikatowych terminów, użyj parametru *uniqueResults* i ustaw wartość *true*, jak pokazano w poniższym przykładzie:
 
 ```xml
 <Pattern confidenceLevel="75">
@@ -295,53 +297,53 @@ Jeśli chcesz dopasować kilka unikatowych terminów, użyj *parametru uniqueRes
 </Pattern>
 ```
 
-W tym przykładzie wzorzec jest zdefiniowany dla poprawki płac z co najmniej trzema unikatowymi dopasowaniami.
+W tym przykładzie zdefiniowano wzorzec dla korekty wynagrodzenia przy użyciu co najmniej trzech unikatowych dopasowań.
 
-## <a name="how-close-to-the-entity-must-the-other-evidence-be-patternsproximity-attribute"></a>Jak blisko jednostki muszą znajdować się inne informacje? [atrybut patternsProximity]
+## <a name="how-close-to-the-entity-must-the-other-evidence-be-patternsproximity-attribute"></a>Jak blisko jednostki muszą znajdować się inne dowody? [patternsProximity, atrybut]
 
-Typ informacji poufnych szuka wzorca reprezentującego identyfikator pracownika, a w ramach tego wzorca szuka także dowodu w rodzaju dowodu potwierdzającego, takiego jak słowo kluczowe, takie jak "Identyfikator". Warto pamiętać, że im bliżej tych dowodów, tym większe prawdopodobieństwo, że będzie to rzeczywisty identyfikator pracownika. Możesz ustalić, jak blisko innych dowodów we wzorcu musi znajdować się jednostka, używając wymaganego atrybutu patternsProximity elementu Entity.
+Typ informacji poufnych szuka wzorca reprezentującego identyfikator pracownika, a w ramach tego wzorca szuka również dowodów potwierdzających, takich jak słowo kluczowe, takie jak "ID". To ma sens, że im bliżej siebie ten dowód jest, tym bardziej prawdopodobne jest, że wzorzec jest rzeczywisty identyfikator pracownika. Możesz określić, jak blisko innych dowodów we wzorcu musi być jednostka przy użyciu wymaganego atrybutu patternsProximity elementu Entity.
 
-![Xml markup showing patternsProximity attribute.](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+![Znaczniki XML przedstawiające wzorceWłaściwość atrybutu.](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
 
-Dla każdego wzorca w encji wartość atrybutu patternsProximity definiuje odległość (w znakach Unicode) od lokalizacji IdMatch dla wszystkich innych dopasowaniach określonych dla tego wzorca. Okno odległości jest zakotwiczone przez lokalizację IdMatch, a okno rozciąga się do lewej i prawej strony pozycji IdMatch.
+Dla każdego wzorca w jednostce wartość atrybutu patternsProximity definiuje odległość (w znakach Unicode) od lokalizacji IdMatch dla wszystkich innych dopasowań określonych dla tego wzorca. Okno zbliżeniowe jest zakotwiczone przez lokalizację IdMatch, a okno rozciąga się na lewo i prawo od elementu IdMatch.
 
-![Diagram okna odległości.](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![Diagram okna zbliżeniowego.](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
 
-Poniższy przykład ilustruje, jak okno sąsiedztwa wpływa na wzorzec dopasowania, w którym element IdMatch dla encji niestandardowej Identyfikator pracownika wymaga co najmniej jednego dopasowania potwierdzenia słowa kluczowego lub daty. Tylko identyfikator 1 odpowiada, ponieważ w przypadku identyfikatorów ID2 i ID3 nie znaleziono dowodu tylko częściowego potwierdzenia w granicach okna sąsiedztwa.
+W poniższym przykładzie pokazano, jak okno zbliżeniowe wpływa na dopasowanie wzorca, w którym element IdMatch dla jednostki niestandardowej identyfikatora pracownika wymaga co najmniej jednego potwierdzenia dopasowania słowa kluczowego lub daty. Tylko identyfikator ID1 jest zgodny, ponieważ w przypadku identyfikatorów ID2 i ID3 w oknie zbliżeniowym nie znaleziono żadnych lub tylko częściowych dowodów potwierdzających.
 
-![Diagram dowodu potwierdzania i okna sąsiedztwa.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagram dowodów potwierdzających i okna bliskości.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-W przypadku wiadomości e-mail treść wiadomości i każdy załącznik są traktowane jako osobne elementy. Oznacza to, że okno odległości nie rozciąga się poza koniec każdego z tych elementów. W przypadku każdego elementu (załącznika lub treści) w tym elementie muszą się znajdować zarówno informacje idMatch, jak i dowód  corroborative.
+Pamiętaj, że w przypadku wiadomości e-mail treść wiadomości i każdy załącznik są traktowane jako osobne elementy. Oznacza to, że okno zbliżeniowe nie wykracza poza koniec każdego z tych elementów. Dla każdego elementu (załącznika lub treści) zarówno element idMatch, jak i dowody potwierdzające muszą znajdować się w tym elemencie.
 
-## <a name="what-are-the-right-confidence-levels-for-different-patterns-confidencelevel-attribute-recommendedconfidence-attribute"></a>Jakie są właściwe poziomy ufności dla różnych wzorców? [atrybut confidenceLevel, zalecany atrybutConfidence]
+## <a name="what-are-the-right-confidence-levels-for-different-patterns-confidencelevel-attribute-recommendedconfidence-attribute"></a>Jakie są odpowiednie poziomy ufności dla różnych wzorców? [confidenceLevel, atrybut recommendedConfidence]
 
-Im więcej dowodów jest wymaganych we wzorcu, tym większa pewność, że po dopasowaniu wzorca zidentyfikowano rzeczywistą jednostkę (taką jak identyfikator pracownika). Na przykład masz większą pewność co do wzorca, który wymaga dziewięciocyfrowego numeru identyfikacyjnego, daty zatrudnienia i słowa kluczowego w niedalekiej odległości, niż w przypadku wzorca wymagającego tylko dziewięciocyfrowego numeru identyfikacyjnego.
+Tym więcej dowodów, że wzorzec wymaga, tym większa pewność, że rzeczywista jednostka (na przykład identyfikator pracownika) została zidentyfikowana, gdy wzorzec jest dopasowany. Na przykład masz większe zaufanie do wzorca, który wymaga dziewięciocyfrowego numeru identyfikatora, daty zatrudnienia i słowa kluczowego w pobliżu, niż w przypadku wzorca, który wymaga tylko 9-cyfrowego numeru identyfikatora.
 
-Element Pattern ma wymagany atrybut ufności Poziom. Można sobie myślisz o wartości ufności Poziom (liczba całkowita z przedziału od 1 do 100) jako unikatowego identyfikatora dla każdego wzorca w encji — wzorce w encji muszą mieć przypisane różne poziomy ufności. Dokładna wartość liczby całkowitej nie ma znaczenia — wystarczy wybrać liczby, które mają sens dla zespołu zgodności. Po przesłaniu niestandardowego typu informacji poufnych i utworzeniu zasad można odwoływać się do tych poziomów ufności w warunkach tworzyć reguły.
+Element Pattern ma wymagany atrybut confidenceLevel. Wartość confidenceLevel (liczba całkowita z zakresu od 1 do 100) można traktować jako unikatowy identyfikator dla każdego wzorca w jednostce — wzorce w jednostce muszą mieć różne poziomy ufności przypisane. Dokładna wartość liczby całkowitej nie ma znaczenia — wystarczy wybrać liczby, które mają sens dla zespołu ds. zgodności. Po przekazaniu niestandardowego typu informacji poufnych, a następnie utworzeniu zasad można odwołać się do tych poziomów zaufania w warunkach utworzonych reguł.
 
-![Xml markup showing Pattern elements with different values for confidenceLevel attribute.](../media/sit-xml-markedup-2.png)
+![Znaczniki XML przedstawiające elementy wzorca z różnymi wartościami dla atrybutu confidenceLevel.](../media/sit-xml-markedup-2.png)
 
-Oprócz przedziału ufności Dla każdego wzorca encja ma zalecany atrybutConfidence. Zalecany atrybut ufności można określić jako domyślny poziom ufności reguły. Jeśli podczas tworzenia reguły w zasadach nie zostanie określony poziom ufności dla reguły, która ma być używania, reguła ta będzie odpowiadać zalecanemu poziomowi ufności dla encji. Pamiętaj, że zalecany atrybutConfidence jest obowiązkowy dla każdego identyfikatora jednostki w pakiecie reguł, jeśli go brakuje, nie będzie można zapisywać zasad, które korzystają z typu informacji poufnych.
+Oprócz funkcji confidenceLevel dla każdego wzorca jednostka ma atrybut recommendedConfidence. Zalecany atrybut ufności można traktować jako domyślny poziom ufności dla reguły. Gdy tworzysz regułę w zasadach, jeśli nie określisz poziomu ufności dla reguły do użycia, ta reguła będzie zgodna na podstawie zalecanego poziomu ufności dla jednostki. Należy pamiętać, że atrybut recommendedConfidence jest obowiązkowy dla każdego identyfikatora jednostki w pakiecie reguł, jeśli go brakuje, nie będzie można zapisać zasad korzystających z typu informacji poufnych.
 
-## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Czy chcesz obsługiwać inne języki w interfejsie użytkownika Centrum zgodności? [Element LocalizedStrings]
+## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Czy chcesz obsługiwać inne języki w interfejsie użytkownika Centrum zgodności? [LocalizedStrings, element]
 
-Jeśli Zespół zgodności tworzy zasady w Microsoft 365 ustawieniach regionalnych i w różnych językach za pomocą Centrum zgodności, możesz podać zlokalizowane wersje nazwy i opisu niestandardowego typu informacji poufnych. Jeśli Twój zespół zgodności Microsoft 365 w języku, który obsługujesz, w interfejsie użytkownika będzie widzieć nazwę zlokalizowany.
+Jeśli zespół ds. zgodności używa portalu zgodności usługi Microsoft Purview do tworzenia zasad w różnych ustawieniach regionalnych i w różnych językach, możesz podać zlokalizowane wersje nazwy i opisu niestandardowego typu informacji poufnych. Gdy zespół ds. zgodności używa Microsoft 365 w obsługiwanym języku, zobaczy zlokalizowaną nazwę w interfejsie użytkownika.
 
-![Konfiguracja liczby wystąpień i dokładności dopasowania.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Liczba wystąpień i konfiguracja dokładności dopasowania.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-Element Reguły musi zawierać element LocalizedStrings, który zawiera element Zasobu, który odwołuje się do identyfikatora GUID encji niestandardowej. Z kolei każdy element Zasobu zawiera co najmniej jeden element Name (Nazwa) i Description (Opis), dla których każdy z nich używa atrybutu langcode w celu zapewnienia zlokalizowanego ciągu dla określonego języka.
+Element Reguły musi zawierać element LocalizedStrings, który zawiera element Resource odwołujący się do identyfikatora GUID jednostki niestandardowej. Z kolei każdy element Resource zawiera co najmniej jeden element Name i Description, z których każdy używa atrybutu langcode, aby podać zlokalizowany ciąg dla określonego języka.
 
-![Znacznik XML przedstawiający zawartość elementu LocalizedStrings.](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+![Znaczniki XML zawierające zawartość elementu LocalizedStrings.](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
 
-Należy pamiętać, że ciągi zlokalizowane są wykorzystywane tylko w celu zachowania niestandardowego typu informacji poufnych w interfejsie użytkownika Centrum zgodności. Zlokalizowanych ciągów nie można używać do zapewnienia różnych zlokalizowanych wersji listy słów kluczowych lub wyrażenia regularnego.
+Pamiętaj, że używasz zlokalizowanych ciągów tylko w celu wyświetlania niestandardowego typu informacji poufnych w interfejsie użytkownika Centrum zgodności. Nie można używać zlokalizowanych ciągów do udostępniania różnych zlokalizowanych wersji listy słów kluczowych lub wyrażenia regularnego.
 
-## <a name="other-rule-package-markup-rulepack-guid"></a>Inna znacznik wyboru pakietu reguł [Identyfikator GUID pakietu RulePack]
+## <a name="other-rule-package-markup-rulepack-guid"></a>Inne znaczniki pakietu reguł [RulePack GUID]
 
-Na koniec na początku każdego pola RulePackage znajdują się pewne ogólne informacje, które należy wypełnić. Możesz użyć następującej  znacznika jako szablonu i zamienić znak ". . ." z własnymi informacjami.
+Na koniec początek każdego pakietu RulePackage zawiera pewne ogólne informacje, które należy wypełnić. Możesz użyć następujących znaczników jako szablonu i zastąpić element ". . ." symbole zastępcze z własnymi informacjami.
 
-Co najważniejsze, należy wygenerować identyfikator GUID dla zestawu RulePack. Powyżej wygenerowano identyfikator GUID dla encji; jest to drugi identyfikator GUID dla reguły RulePack. Istnieje kilka sposobów generowania identyfikatorów GUID, ale można to zrobić łatwo w programie PowerShell, wpisując [guid]::NewGuid().
+Co najważniejsze, musisz wygenerować identyfikator GUID dla pakietu RulePack. Powyżej wygenerowano identyfikator GUID dla jednostki; Jest to drugi identyfikator GUID pakietu RulePack. Istnieje kilka sposobów generowania identyfikatorów GUID, ale można to łatwo zrobić w programie PowerShell, wpisując ciąg [guid]::NewGuid().
 
-Ważny jest również element Version (Wersja). Podczas przekazywania pakietu reguł po raz pierwszy Microsoft 365 numer wersji. Później, jeśli zaktualizujemy pakiet reguł i przekażemy nową wersję, zaktualizuj numer wersji lub Microsoft 365 nie wdroży pakietu reguł.
+Element Version jest również ważny. Podczas przekazywania pakietu reguł po raz pierwszy Microsoft 365 zwraca numer wersji. Później, jeśli zaktualizujesz pakiet reguł i przekażesz nową wersję, zaktualizuj numer wersji lub Microsoft 365 nie wdrożysz pakietu reguł.
 
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
@@ -364,15 +366,15 @@ Ważny jest również element Version (Wersja). Podczas przekazywania pakietu re
 </RulePackage>
 ```
 
-Po zakończeniu element RulePack powinien wyglądać tak.
+Po zakończeniu element RulePack powinien wyglądać następująco.
 
-![Xml markup showing RulePack element.](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+![Znaczniki XML z elementem RulePack.](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
 
-## <a name="validators"></a>Validators
+## <a name="validators"></a>Walidatory
 
-Microsoft 365 nasyć procesory funkcji dla często używanych jako prawidłowych identyfikatorów (SIT). Oto ich lista.
+Microsoft 365 uwidacznia procesory funkcji dla często używanych interfejsów SIC jako modułów walidatorów. Oto ich lista.
 
-### <a name="list-of-currently-available-validators"></a>Lista obecnie dostępnych validatorów
+### <a name="list-of-currently-available-validators"></a>Lista aktualnie dostępnych modułów walidatorów
 
 - `Func_credit_card`
 - `Func_ssn`
@@ -398,9 +400,9 @@ Microsoft 365 nasyć procesory funkcji dla często używanych jako prawidłowych
 - `Func_japanese_my_number_personal`
 - `Func_japanese_my_number_corporate`
 
-Umożliwia to zdefiniowanie własnego konta RegEx i ich weryfikację. Aby użyć prawidłowych wartości, zdefiniuj własne ustawienia RegEx `Validator` i użyj tej właściwości, aby dodać procesor funkcji do wyboru. Po jej zdefiniowanym określonej funkcji można używać tego wyrażenia RegEx w programie SIT.
+Dzięki temu możesz zdefiniować własne regex i zweryfikować je. Aby użyć modułów walidatorów, zdefiniuj własne regex i użyj `Validator` właściwości , aby dodać wybrany procesor funkcji. Po zdefiniowaniu tego wyrażenia regex można użyć w usłudze SIT.
 
-W poniższym przykładzie wyrażenie regularne — Regex_credit_card_AdditionalDelimiters dla karty kredytowej, a następnie sprawdzana jest poprawność jej użycia przy użyciu funkcji sprawdzania poprawności karty kredytowej przy użyciu funkcji Func_credit_card jako sprawdzania poprawności.
+W poniższym przykładzie wyrażenie regularne — Regex_credit_card_AdditionalDelimiters jest zdefiniowane dla karty kredytowej, która jest następnie weryfikowana przy użyciu funkcji sumy kontrolnej dla karty kredytowej przy użyciu Func_credit_card jako walidatora.
 
 ```xml
 <Regex id="Regex_credit_card_AdditionalDelimiters" validators="Func_credit_card"> (?:^|[\s,;\:\(\)\[\]"'])([0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4})(?:$|[\s,;\:\(\)\[\]"'])</Regex>
@@ -416,11 +418,11 @@ W poniższym przykładzie wyrażenie regularne — Regex_credit_card_AdditionalD
 </Entity>
 ```
 
-Microsoft 365 udostępnia dwa ogólne prawidłowe wartości
+Microsoft 365 udostępnia dwa ogólne moduły sprawdzania poprawności
 
-### <a name="checksum-validator"></a>Sprawdzanie prawidłowego sumy
+### <a name="checksum-validator"></a>Sprawdzanie poprawności sumy kontrolnej
 
-W tym przykładzie zdefiniowano sprawdzanie poprawności identyfikatora pracownika w celu zweryfikowania wartości RegEx dla employeeID.
+W tym przykładzie moduł sprawdzania poprawności sumy kontrolnej dla identyfikatora pracownika jest zdefiniowany w celu zweryfikowania wartości RegEx dla identyfikatora EmployeeID.
 
 ```xml
 <Validators id="EmployeeIDChecksumValidator">
@@ -439,9 +441,9 @@ W tym przykładzie zdefiniowano sprawdzanie poprawności identyfikatora pracowni
 </Entity>
 ```
 
-### <a name="date-validator"></a>Date Validator
+### <a name="date-validator"></a>Moduł sprawdzania poprawności dat
 
-W tym przykładzie dla części RegEx, której część to data, jest zdefiniowany prawidłowy data.
+W tym przykładzie moduł sprawdzania poprawności daty jest zdefiniowany dla części RegEx, której częścią jest data.
 
 ```xml
 <Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
@@ -450,17 +452,17 @@ W tym przykładzie dla części RegEx, której część to data, jest zdefiniowa
 
 ## <a name="changes-for-exchange-online"></a>Zmiany dotyczące Exchange Online
 
-Wcześniej można było używać programu Exchange Online PowerShell do importowania niestandardowych typów informacji poufnych na platformie DLP. Teraz niestandardowe typy informacji poufnych mogą być używane zarówno w centrum administracyjnym usługi <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>, jak i w Centrum zgodności. W ramach tego ulepszenia należy użyć programu PowerShell w Centrum zgodności do importowania niestandardowych typów informacji poufnych — nie można ich już importować z programu Exchange PowerShell. Niestandardowe typy informacji poufnych będą nadal działać tak samo jak wcześniej. Może jednak upłynieć do godziny, zanim zmiany wprowadzone w niestandardowych typach informacji poufnych w Centrum zgodności pojawią się w centrum Exchange administracyjnego.
+Wcześniej można było użyć Exchange Online programu PowerShell do zaimportowania niestandardowych typów informacji poufnych dla programu DLP. Teraz niestandardowe typy informacji poufnych mogą być używane zarówno w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>, jak i w Centrum zgodności. W ramach tego udoskonalenia należy użyć programu PowerShell security & Compliance do zaimportowania niestandardowych typów informacji poufnych — nie można ich już importować z programu Exchange Online programu PowerShell. Niestandardowe typy informacji poufnych będą nadal działać tak samo jak wcześniej. Jednak może upłynąć do jednej godziny, zanim zmiany wprowadzone w niestandardowych typach informacji poufnych w Centrum zgodności pojawią się w centrum administracyjnym Exchange.
 
-Zwróć uwagę, że w Centrum zgodności możesz użyć polecenia cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** w celu przekazania pakietu reguł. (Wcześniej w centrum administracyjnym Exchange było używane polecenie cmdlet **ClassificationRuleCollection**).
+Należy pamiętać, że w Centrum zgodności użyj polecenia cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** , aby przekazać pakiet reguł. (Wcześniej w centrum administracyjnym Exchange użyto polecenia cmdlet **ClassificationRuleCollection**).
 
-## <a name="upload-your-rule-package"></a>Upload pakietu reguł
+## <a name="upload-your-rule-package"></a>Przekazywanie pakietu reguł
 
 Aby przekazać pakiet reguł, wykonaj następujące czynności:
 
-1. Zapisz go jako plik .xml kodowaniem Unicode.
+1. Zapisz go jako plik .xml z kodowaniem Unicode.
 
-2. [Połączenie do Centrum zgodności w programie PowerShell](/powershell/exchange/exchange-online-powershell)
+2. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/exchange-online-powershell)
 
 3. Należy stosować następującą składnię:
 
@@ -468,86 +470,86 @@ Aby przekazać pakiet reguł, wykonaj następujące czynności:
    New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('PathToUnicodeXMLFile'))
    ```
 
-   W tym przykładzie jest przesyłany plik XML Unicode o nazwie MyNewRulePack.xml z folderu C:\Moje dokumenty.
+   Ten przykład przekazuje plik XML Unicode o nazwie MyNewRulePack.xml z pliku C:\Moje dokumenty.
 
    ```powershell
    New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\MyNewRulePack.xml'))
    ```
 
-   Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
+   Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
 
    > [!NOTE]
-   > Maksymalna obsługiwana liczba pakietów reguł wynosi 10, ale każdy pakiet może zawierać definicję wielu typów informacji poufnych.
+   > Maksymalna liczba obsługiwanych pakietów reguł wynosi 10, ale każdy pakiet może zawierać definicję wielu typów informacji poufnych.
 
-4. Aby sprawdzić, czy nowy typ informacji poufnych został utworzony pomyślnie, wykonaj dowolną z następujących czynności:
+4. Aby sprawdzić, czy pomyślnie utworzono nowy typ informacji poufnych, wykonaj dowolne z następujących kroków:
 
-   - Uruchom polecenie [cmdlet Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) , aby sprawdzić, czy na liście znajduje się nowy pakiet reguł:
+   - Uruchom polecenie cmdlet [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) , aby sprawdzić, czy nowy pakiet reguł znajduje się na liście:
 
      ```powershell
      Get-DlpSensitiveInformationTypeRulePackage
      ```
 
-   - Uruchom polecenie [cmdlet Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) , aby sprawdzić, czy na liście znajduje się typ informacji poufnych:
+   - Uruchom polecenie cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) , aby sprawdzić, czy typ informacji poufnych znajduje się na liście:
 
      ```powershell
      Get-DlpSensitiveInformationType
      ```
 
-     W przypadku niestandardowych typów informacji poufnych Publisher wartość właściwości będzie inna niż wartość firmy Microsoft Corporation.
+     W przypadku niestandardowych typów informacji poufnych wartość właściwości Publisher będzie inna niż Microsoft Corporation.
 
-   - Zamień \<Name\> wartość Name (Nazwa) poufnego typu informacji (przykład: Identyfikator pracownika) i uruchom polecenie cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) :
+   - Zastąp \<Name\> wartością Nazwa typu informacji poufnych (przykład: Identyfikator pracownika) i uruchom polecenie cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) :
 
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
      ```
 
-## <a name="potential-validation-issues-to-be-aware-of"></a>Potencjalne problemy sprawdzania poprawności, o których należy pamiętać
+## <a name="potential-validation-issues-to-be-aware-of"></a>Potencjalne problemy z weryfikacją, o które należy pamiętać
 
-Podczas przekazywania pliku XML pakietu reguł system sprawdza poprawność pliku XML i sprawdza znane złe wzorce oraz oczywiste problemy z wydajnością. Oto niektóre znane problemy, które są sprawdzane przez sprawdzanie poprawności — zwykłe wyrażenie:
+Podczas przekazywania pliku XML pakietu reguł system weryfikuje kod XML i sprawdza, czy występują znane nieprawidłowe wzorce i oczywiste problemy z wydajnością. Poniżej przedstawiono kilka znanych problemów sprawdzanych przez walidację — wyrażenie regularne:
 
-- Bezbłędne asertywności w wyrażeniu regularnym powinny mieć tylko stałą długość. Asercja o zmiennej długości spowoduje błędy.
+- Asercje Lookbehind w wyrażeniu regularnym powinny mieć tylko stałą długość. Asercje o zmiennej długości spowodują błędy.
 
-  Na przykład nie `"(?<=^|\s|_)"` zostanie zweryfikowana poprawności. Pierwszy wzorzec (`^`) ma długość zerową, natomiast kolejne dwa wzorce (`\s` i `_`) mają długość jedną. Innym sposobem na pisanie tego wyrażenia regularnego jest `"(?:^|(?<=\s|_))"`.
+  Na przykład `"(?<=^|\s|_)"` nie przejdzie weryfikacji. Pierwszy wzorzec (`^`) ma zero długości, a dwa następne wzorce (`\s` i `_`) mają długość jednego. Alternatywnym sposobem napisania tego wyrażenia regularnego jest `"(?:^|(?<=\s|_))"`.
 
-- Nie można rozpocząć ani zakończyć alternatorem `|`, który odpowiada wszystkim, ponieważ jest to uznawane za puste dopasowanie.
+- Nie można rozpocząć lub zakończyć z alternatorem `|`, który pasuje do wszystkiego, ponieważ jest uważany za puste dopasowanie.
 
-  Na przykład lub nie `|a` `b|` przejdzie weryfikacji.
+  Na przykład `|a` lub `b|` nie przejdzie weryfikacji.
 
-- Nie można zaczynać ani kończyć wzorcem `.{0,m}` działania, który nie ma żadnego celu funkcjonalnego i tylko pogarsza wydajność.
+- Nie można rozpocząć lub zakończyć wzorcem `.{0,m}` , który nie ma celu funkcjonalnego i tylko obniża wydajność.
 
-  Na przykład lub nie `.{0,50}ASDF` `ASDF.{0,50}` przejdzie weryfikacji.
+  Na przykład `.{0,50}ASDF` lub `ASDF.{0,50}` nie przejdzie weryfikacji.
 
-- Nie mogą mieć `.{0,m}` , `.{1,m}` ani w grupach, ani nie mogą mieć `.\*` ani `.+` w grupach.
+- Nie można mieć `.{0,m}` lub `.{1,m}` w grupach i nie może mieć `.\*` ani `.+` w grupach.
 
-  Na przykład nie `(.{0,50000})` zostanie zweryfikowana poprawności.
+  Na przykład `(.{0,50000})` nie przejdzie weryfikacji.
 
-- Nie może mieć żadnych znaków z ani `{0,m}` powtórzeniami `{1,m}` w grupach.
+- Nie można mieć żadnych znaków z `{0,m}` lub `{1,m}` powtarzaczy w grupach.
 
-  Na przykład nie `(a\*)` zostanie zweryfikowana poprawności.
+  Na przykład `(a\*)` nie przejdzie weryfikacji.
 
-- Nie można rozpoczynać ani kończyć się na `.{1,m}`; zamiast tego używać .`.`
+- Nie można rozpocząć ani zakończyć od `.{1,m}`; zamiast tego użyj polecenia `.`.
 
-  Na przykład nie `.{1,m}asdf` zostanie zweryfikowana poprawności. Zamiast tego użyj funkcji `.asdf`.
+  Na przykład `.{1,m}asdf` nie przejdzie weryfikacji. Zamiast tego użyj polecenia `.asdf`.
 
-- Nie może mieć niepowiązanego powtarzania (takiego jak `*` lub `+`) w grupie.
+- Nie można mieć niepowiązanego powtarzacza (takiego jak `*` lub `+`) w grupie.
 
-  Nie zostanie na przykład `(xx)\*` zweryfikowana `(xx)+` poprawności.
+  Na przykład `(xx)\*` i `(xx)+` nie przejdzie weryfikacji.
 
-- Słowa kluczowe mają długość maksymalnie 50 znaków.  Jeśli w grupie znajduje się słowo kluczowe przekraczające tę grupę, sugerowane rozwiązanie to utworzenie grupy terminów jako słownika słów kluczowych i [](./create-a-keyword-dictionary.md) odwołanie się do identyfikatora GUID słownika słów kluczowych w strukturze XML jako części elementu Entity for Match lub idMatch w pliku.
+- Słowa kluczowe mają maksymalnie 50 znaków w obszarze Długość.  Jeśli w grupie znajduje się słowo kluczowe przekraczające to, sugerowanym rozwiązaniem jest utworzenie grupy terminów jako [słownika słów kluczowych](./create-a-keyword-dictionary.md) i odwołanie się do identyfikatora GUID słownika słów kluczowych w strukturze XML w ramach elementu Entity for Match lub idMatch w pliku.
 
-- Każdy niestandardowy typ informacji poufnych może mieć łącznie maksymalnie 2048 słów kluczowych.
+- Każdy niestandardowy typ informacji poufnych może mieć maksymalnie 2048 słów kluczowych.
 
-- Maksymalny rozmiar słowników słów kluczowych w jednej dzierżawie to 480 KB skompresowanych w celu zapewnienia zgodności z limitami schematu AD. Podczas tworzenia niestandardowych typów informacji poufnych można odwoływać się do tego samego słownika tyle razy, ile jest to konieczne. Zacznij od utworzenia niestandardowych list słów kluczowych w typie informacji poufnych i użyj słowników słów kluczowych, jeśli na liście słów kluczowych znajduje się więcej niż 2048 słów kluczowych lub słowo kluczowe ma długość większą niż 50 znaków.
+- Maksymalny rozmiar słowników słów kluczowych w jednej dzierżawie to 480 KB skompresowanych w celu zapewnienia zgodności z limitami schematu usługi AD. Odwołaj się do tego samego słownika tyle razy, ile jest to konieczne podczas tworzenia niestandardowych typów informacji poufnych. Zacznij od utworzenia niestandardowych list słów kluczowych w typie informacji poufnych i użyj słowników słów kluczowych, jeśli masz więcej niż 2048 słów kluczowych na liście słów kluczowych lub słowo kluczowe ma długość większą niż 50 znaków.
 
-- W dzierżawie dozwolonych jest maksymalnie 50 typów informacji poufnych dotyczących słownika opartego na słowach kluczowych.
+- Maksymalnie 50 typów informacji poufnych opartych na słowniku słów kluczowych jest dozwolonych w dzierżawie.
 
-- Upewnij się, że każdy element encja zawiera zalecany atrybutConfidence.
+- Upewnij się, że każdy element jednostki zawiera atrybut recommendedConfidence.
 
-- Podczas korzystania z polecenia cmdlet programu PowerShell maksymalny rozmiar zwracanych danych to około 1 megabajt.   Ma to wpływ na rozmiar pliku XML pakietu reguł. Ograniczenie przekazywanego pliku do 770 kilobajtów jako sugerowanego limitu spójnych wyników bez błędu podczas przetwarzania.
+- W przypadku korzystania z polecenia cmdlet programu PowerShell maksymalny rozmiar zwracanych danych deserializowanych wynosi około 1 megabajt.   Wpłynie to na rozmiar pliku XML pakietu reguł. Pozostaw przekazany plik ograniczony do maksymalnej liczby 770 kilobajtów jako sugerowany limit spójnych wyników bez błędów podczas przetwarzania.
 
-- Struktura XML nie wymaga formatowania znaków, takich jak spacje, tabulatory czy wpisy powrotu karetki/kanału liniowego.  Pamiętaj o tym podczas optymalizowania miejsca podczas przekazywania. Narzędzia, takie jak Microsoft Visual Code, zapewniają funkcje linii sprzężenia do kompaktowania pliku XML.
+- Struktura XML nie wymaga formatowania znaków, takich jak spacje, karty ani wpisy powrotu karetki/kanału wiersza.  Zanotuj to podczas optymalizowania miejsca podczas przekazywania. Narzędzia, takie jak Microsoft Visual Code, udostępniają funkcje linii sprzężenia w celu kompaktowania pliku XML.
 
-Jeśli niestandardowy typ informacji poufnych zawiera problem, który może wpłynąć na wydajność, nie zostanie on przekazany i może zostać wyświetlony jeden z tych komunikatów o błędach:
+Jeśli niestandardowy typ informacji poufnych zawiera problem, który może mieć wpływ na wydajność, nie zostanie przekazany i może zostać wyświetlony jeden z następujących komunikatów o błędach:
 
 - `Generic quantifiers which match more content than expected (e.g., '+', '*')`
 
@@ -555,15 +557,15 @@ Jeśli niestandardowy typ informacji poufnych zawiera problem, który może wpł
 
 - `Complex grouping in conjunction with general quantifiers`
 
-## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>Odszyfruj zawartość, aby zidentyfikować poufne informacje
+## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>Przeszukuj ponownie zawartość, aby zidentyfikować informacje poufne
 
-Microsoft 365 przeszukiwarce wyszukiwania do identyfikowania i klasyfikowania informacji poufnych w zawartości witryny. Zawartość w SharePoint Online i OneDrive dla Firm jest automatycznie recrowana przy każdej aktualizacji. Jednak w celu zidentyfikowania nowego niestandardowego typu informacji poufnych we wszystkich istniejących treściach ta zawartość musi zostać wpisana ponownie.
+Microsoft 365 używa przeszukiwarki do identyfikowania i klasyfikowania poufnych informacji w zawartości witryny. Zawartość w witrynach SharePoint Online i OneDrive dla Firm jest automatycznie ponownie przeszukiwana po każdej aktualizacji. Aby jednak zidentyfikować nowy niestandardowy typ informacji poufnych w całej istniejącej zawartości, ta zawartość musi zostać ponownie zszokowana.
 
-W Microsoft 365 nie można ręcznie zażądać ponownego przeszyfru całej organizacji, ale można ręcznie zażądać ponownej przeszytki dla zbioru witryn, listy lub biblioteki. Aby uzyskać więcej informacji, [zobacz Ręczne żądanie](/sharepoint/crawl-site-content) przeszukiwania i ponownego indeksowania witryny, biblioteki lub listy.
+W Microsoft 365 nie można ręcznie zażądać ponownego zszyfrowania całej organizacji, ale możesz ręcznie zażądać ponownego zszukania zbioru witryn, listy lub biblioteki. Aby uzyskać więcej informacji, zobacz [Ręczne przeszukiwanie żądań i ponowne indeksowanie witryny, biblioteki lub listy](/sharepoint/crawl-site-content).
 
-## <a name="reference-rule-package-xml-schema-definition"></a>Informacje: definicja schematu XML pakietu reguł
+## <a name="reference-rule-package-xml-schema-definition"></a>Odwołanie: Definicja schematu XML pakietu reguł
 
-Możesz skopiować tę znacznik, zapisać ją jako plik XSD i użyć jej do zweryfikowania pliku XML pakietu reguł.
+Możesz skopiować ten znacznik, zapisać go jako plik XSD i użyć go do zweryfikowania pliku XML pakietu reguł.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -910,6 +912,6 @@ Możesz skopiować tę znacznik, zapisać ją jako plik XSD i użyć jej do zwer
 
 ## <a name="more-information"></a>Więcej informacji
 
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
-- [Definicje jednostki typu informacji poufnych](sensitive-information-type-entity-definitions.md)
-- [Funkcje typów informacji poufnych](sit-functions.md)
+- [Dowiedz się więcej o zapobieganiu utracie danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md)
+- [Definicje jednostek typu informacji poufnych](sensitive-information-type-entity-definitions.md)
+- [Funkcje typu informacji poufnych](sit-functions.md)

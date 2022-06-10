@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Jeśli używasz klienta ujednoliconego etykietowania usługi Azure Information Protection (AIP), zapoznaj się z zaletami używania wbudowanego etykietowania dla aplikacji Office, a nie dodatku AIP.
-ms.openlocfilehash: 161f05c1f9c27723ff4940087c715e0556484b79
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c790ee691e6a72228c865b8cdf9911ee83f4dfd4
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287139"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011597"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji Office
 
@@ -32,7 +32,7 @@ ms.locfileid: "65287139"
 
 Jeśli używasz [etykiet poufności](sensitivity-labels.md) w Aplikacje Microsoft 365 na komputerach Windows, możesz użyć etykiet wbudowanych w aplikacje Office lub dodatku z [klienta ujednoliconego etykietowania usługi Azure Information Protection (AIP](/azure/information-protection/rms-client/aip-clientv2)). 
 
-Wbudowane etykietowanie stanowi podstawę [wdrożenia ochrony informacji usługi Microsoft Purview](information-protection-solution.md), ponieważ ta technologia etykietowania obejmuje platformy (Windows, macOS, iOS, Android i internet), a także aplikacje i usługi firmy Microsoft oraz inne. Wbudowane etykietowanie jest również przeznaczone do pracy z innymi funkcjami usługi Microsoft Purview, takimi jak klasyfikacja danych i ochrona przed utratą danych (DLP) w usłudze Microsoft Purview.
+Wbudowane etykietowanie stanowi podstawę [wdrożenia ochrony informacji w usłudze Microsoft Purview](information-protection-solution.md), ponieważ ta technologia etykietowania obejmuje platformy (Windows, macOS, iOS, Android i sieć Web), a także aplikacje i usługi firmy Microsoft i nie tylko. Wbudowane etykietowanie jest również przeznaczone do pracy z innymi funkcjami usługi Microsoft Purview, takimi jak klasyfikacja danych i ochrona przed utratą danych (DLP) w usłudze Microsoft Purview.
 
 Ponieważ wbudowane etykiety nie używają dodatku Office, korzystają z większej stabilności i lepszej wydajności. Obsługują one również najnowsze funkcje usługi Microsoft Purview, takie jak zaawansowane klasyfikatory.
 
@@ -76,6 +76,7 @@ Niektóre funkcje są obsługiwane tylko przez wbudowane etykietowanie dla aplik
     - Dostęp do inteligentnych usług klasyfikacji, które obejmują [klasyfikatory z możliwością trenowania](classifier-learn-about.md), [dokładne dopasowanie danych (EDM)](sit-learn-about-exact-data-match-based-sits.md) i [nazwane jednostki](named-entities-learn.md)
     - Wykrywanie informacji poufnych jako typ użytkowników
     - W programie Word użytkownicy mogą przeglądać i usuwać zidentyfikowaną zawartość poufną
+- [Obsługa plików PDF](sensitivity-labels-office-apps.md#pdf-support)
 - W przypadku etykiet, które umożliwiają użytkownikom przypisywanie uprawnień, użytkownicy lub grupy mogą przyznawać różne uprawnienia (odczyt lub zmiana)
 - Encrypt-Only wiadomości e-mail
 - Widoczność etykiet na pasku stanu
@@ -120,7 +121,7 @@ Pamiętaj, że jeśli ta metoda jest używana do wyłączania dodatku AIP, nadal
 
 Wiele funkcji etykietowania obsługiwanych przez dodatek AIP jest teraz obsługiwanych przez wbudowane etykietowanie. Aby uzyskać bardziej szczegółową listę możliwości, minimalne wersje, które mogą być potrzebne, i informacje o konfiguracji, zobacz [Zarządzanie etykietami poufności w aplikacjach Office](sensitivity-labels-office-apps.md).
 
-Planowane i opracowywane są dodatkowe funkcje. Jeśli interesuje Cię określona funkcja, sprawdź [plan Microsoft 365](https://aka.ms/MIPC/Roadmap) i rozważ dołączenie [do Microsoft Information Protection w Office prywatnej wersji zapoznawczej](https://aka.ms/MIP/PreviewRing).
+Planowane i opracowywane są dodatkowe funkcje. Jeśli interesuje Cię konkretna funkcja, sprawdź [plan Microsoft 365](https://aka.ms/MIPC/Roadmap) i rozważ dołączenie do [Information Protection firmy Microsoft w Office prywatnej wersji zapoznawczej](https://aka.ms/MIP/PreviewRing).
 
 Skorzystaj z poniższych informacji, aby określić, czy używasz funkcji z dodatku usługi AIP, która nie jest jeszcze obsługiwana przez wbudowane etykietowanie:
 

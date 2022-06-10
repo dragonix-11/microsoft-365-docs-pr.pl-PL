@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zaawansowanych zasad dostarczania w Exchange Online Protection (EOP) do identyfikowania komunikatów, które nie powinny być filtrowane w określonych obsługiwanych scenariuszach (symulacje wyłudzania informacji i wiadomości dostarczane do skrzynek pocztowych operacji zabezpieczeń (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9a959e70408af80567d1daed140e0642870b975
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: d9176f73c94df6413e3b79053318f5547788d773
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647804"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011590"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurowanie dostarczania symulacji wyłudzania informacji innych firm użytkownikom i niefiltrowanych wiadomości do skrzynek pocztowych SecOps
 
@@ -45,7 +45,7 @@ Zaawansowane _zasady dostarczania_ w Microsoft 365 uniemożliwiają _filtrowanie
 - [Domyślne alerty systemowe](/microsoft-365/compliance/alert-policies#default-alert-policies) nie są wyzwalane dla tych scenariuszy.
 - [Funkcja AIR i klastrowanie w Ochrona usługi Office 365 w usłudze Defender](office-365-air.md) ignoruje te komunikaty.
 - W szczególności w przypadku symulacji wyłudzania informacji innych firm:
-  - [Administracja przesyłania](admin-submission.md) generuje automatyczną odpowiedź z informacją, że wiadomość jest częścią kampanii symulacji wyłudzania informacji i nie stanowi rzeczywistego zagrożenia. Alerty i air nie zostaną wyzwolone. Środowisko przesyłania przez administratora będzie pokazywać te komunikaty jako symulowane zagrożenie.
+  - [Przesyłanie przez administratora](admin-submission.md) generuje automatyczną odpowiedź z informacją, że wiadomość jest częścią kampanii symulacji wyłudzania informacji i nie stanowi rzeczywistego zagrożenia. Alerty i air nie zostaną wyzwolone. Środowisko przesyłania przez administratora będzie pokazywać te komunikaty jako symulowane zagrożenie.
   - Gdy użytkownik zgłosi komunikat symulacji wyłudzania informacji przy użyciu [komunikatu raportu lub dodatków Wyłudzanie informacji o raporcie](enable-the-report-message-add-in.md), system nie wygeneruje alertu, badania ani zdarzenia. Linki lub pliki nie zostaną zdetonowane, ale komunikat zostanie również wyświetlony na karcie **Komunikaty zgłaszane przez użytkownika** na stronie **Przesłane** .
   - [Sejf Linki w Ochrona usługi Office 365 w usłudze Defender](safe-links.md) nie blokują ani nie detonują określonych adresów URL w tych komunikatach w momencie kliknięcia. Adresy URL są nadal opakowane, ale nie są blokowane.
   - [Sejf Załączniki w Ochrona usługi Office 365 w usłudze Defender](safe-attachments.md) nie detonują załączników w tych wiadomościach.
@@ -54,19 +54,19 @@ Zaawansowane _zasady dostarczania_ w Microsoft 365 uniemożliwiają _filtrowanie
 
 <sup>\*\*</sup> Możesz pominąć zap dla złośliwego oprogramowania, tworząc zasady ochrony przed złośliwym oprogramowaniem dla skrzynki pocztowej SecOps, gdzie zap dla złośliwego oprogramowania jest wyłączony. Aby uzyskać instrukcje, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w ramach EOP](configure-anti-malware-policies.md).
 
-Komunikaty identyfikowane przez zaawansowane zasady dostarczania nie są zagrożeniami bezpieczeństwa, dlatego komunikaty są oznaczone przesłonięciami systemu. Administracja środowiska będą pokazywać te komunikaty z powodu zastąpienia systemu **symulacji wyłudzania informacji** lub zastąpienia systemu **skrzynki pocztowej SecOps**. Administratorzy mogą filtrować i analizować te przesłonięcia systemu w następujących środowiskach:
+Komunikaty identyfikowane przez zaawansowane zasady dostarczania nie są zagrożeniami bezpieczeństwa, dlatego komunikaty są oznaczone przesłonięciami systemu. Środowiska administratora będą wyświetlać te komunikaty z powodu zastąpienia systemu **symulacji wyłudzania informacji** lub zastąpienia systemu **skrzynki pocztowej SecOps** . Administratorzy mogą filtrować i analizować te przesłonięcia systemu w następujących środowiskach:
 
-- [Wykrywanie zagrożeń/wykrywanie w czasie rzeczywistym w Ochrona usługi Office 365 w usłudze Defender planie 2](threat-explorer.md): Administracja może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
-- [Strona jednostki Poczty e-mail w Eksploratorze zagrożeń/Wykrywanie w czasie rzeczywistym](mdo-email-entity-page.md): Administracja może wyświetlić komunikat dozwolony przez zasady organizacji przez **skrzynkę pocztową SecOps** lub **symulację wyłudzania informacji** w obszarze **Zastępowanie dzierżawy** w sekcji **Przesłonięcia**.
-- [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report): Administracja może filtrować według **wyświetlania danych według zastąpienia systemu** w menu rozwijanym i wybrać opcję wyświetlania komunikatów dozwolonych z powodu zastąpienia systemu symulacji wyłudzania informacji. Aby wyświetlić komunikaty dozwolone przez zastąpienie skrzynki pocztowej SecOps, możesz wybrać **podział wykresu według lokalizacji dostarczania** w menu rozwijanym **Podział wykresu według przyczyny** .
+- [Wykrywanie zagrożeń/wykrywanie w czasie rzeczywistym w Ochrona usługi Office 365 w usłudze Defender planie 2](threat-explorer.md): administrator może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
+- [Strona jednostki Poczty e-mail w Eksploratorze zagrożeń/Wykrywanie w czasie rzeczywistym](mdo-email-entity-page.md): administrator może wyświetlić komunikat dozwolony przez zasady organizacji przez **skrzynkę pocztową SecOps** lub **symulację wyłudzania informacji** w obszarze **Zastępowanie dzierżawy** w sekcji **Przesłonięcia**.
+- [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report): Administrator może filtrować według **wyświetlania danych według zastąpienia systemu** w menu rozwijanym i wybrać opcję wyświetlenia komunikatów dozwolonych z powodu zastąpienia systemu symulacji wyłudzania informacji. Aby wyświetlić komunikaty dozwolone przez zastąpienie skrzynki pocztowej SecOps, możesz wybrać **podział wykresu według lokalizacji dostarczania** w menu rozwijanym **Podział wykresu według przyczyny** .
 - [Zaawansowane wyszukiwanie zagrożeń w Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/advanced-hunting-overview.md): symulacja wyłudzania informacji i przesłonięcia systemu skrzynek pocztowych SecOps będą wyświetlane jako opcje w obszarze OrgLevelPolicy w usłudze EmailEvents.
-- [Widoki kampanii](campaigns.md): Administracja może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
+- [Widoki kampanii](campaigns.md): administrator może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
 - Otwórz portal Microsoft 365 Defender pod adresem <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Zaawansowane dostarczanie** , otwórz pozycję <https://security.microsoft.com/advanceddelivery>.
 
-- Aby nawiązać połączenie z programem PowerShell Centrum zgodności usługi Security &, zobacz [Połączenie z programem PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+- Aby nawiązać połączenie z programem PowerShell zgodności & zabezpieczeń, zobacz [Połączenie z programem PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell).
 
 - Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia:
   - Aby tworzyć, modyfikować lub usuwać skonfigurowane ustawienia w zaawansowanych zasadach dostarczania, musisz być członkiem grupy ról **administratora zabezpieczeń** w **portalu Microsoft 365 Defender** i członkiem grupy ról **Zarządzanie organizacją** w **Exchange Online**.
@@ -146,9 +146,9 @@ Oprócz dwóch scenariuszy, w których mogą pomóc zaawansowane zasady dostarcz
 
 - **Wyniki fałszywie dodatnie w trakcie przeglądu**: możesz tymczasowo zezwolić niektórym komunikatom, które są nadal analizowane przez firmę Microsoft za pośrednictwem [przesłanych przez administratorów](admin-submission.md) , na zgłaszanie znanych dobrych wiadomości, które są niepoprawnie oznaczone jako złe dla firmy Microsoft (wyniki fałszywie dodatnie). Podobnie jak w przypadku wszystkich zastąpień, **_zdecydowanie zalecamy, aby_** te dodatki były tymczasowe.
 
-## <a name="security--compliance-center-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procedury programu PowerShell usługi Security & Compliance Center dla skrzynek pocztowych SecOps w zaawansowanych zasadach dostarczania
+## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procedury programu PowerShell dotyczące zgodności & zabezpieczeń dla skrzynek pocztowych SecOps w zaawansowanych zasadach dostarczania
 
-W programie PowerShell Usługi Security & Compliance Center podstawowe elementy skrzynek pocztowych SecOps w zaawansowanych zasadach dostarczania to:
+W programie PowerShell security & Compliance podstawowe elementy skrzynek pocztowych SecOps w zaawansowanych zasadach dostarczania to:
 
 - **Zasady zastępowania secops**: kontrolowane przez **\*polecenia cmdlet -SecOpsOverridePolicy** .
 - **Reguła zastąpienia SecOps**: kontrolowana przez **\*polecenia cmdlet -SecOpsOverrideRule** .
@@ -279,9 +279,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## <a name="security--compliance-center-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procedury programu PowerShell centrum zgodności & zabezpieczeń dla symulacji wyłudzania informacji innych firm w zaawansowanych zasadach dostarczania
+## <a name="security--compliance-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procedury programu PowerShell dotyczące zgodności & zabezpieczeń dla symulacji wyłudzania informacji innych firm w zaawansowanych zasadach dostarczania
 
-W programie PowerShell Security & Compliance Center podstawowe elementy symulacji wyłudzania informacji innych firm w zaawansowanych zasadach dostarczania to:
+W programie PowerShell security & Compliance podstawowe elementy symulacji wyłudzania informacji innych firm w zaawansowanych zasadach dostarczania to:
 
 - **Zasady zastępowania symulacji wyłudzania informacji**: kontrolowane przez **\*polecenia cmdlet -PhishSimOverridePolicy** .
 - **Reguła zastępowania symulacji wyłudzania informacji**: kontrolowana przez **\*polecenia cmdlet -PhishSimOverrideRule** .

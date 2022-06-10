@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Jeśli jesteś administratorem, który zarządza zasadami haseł dla firmy, szkoły lub organizacji non-profit, możesz ustawić silne wymagania dotyczące haseł przy użyciu Windows PowerShell.
-ms.openlocfilehash: 20bea953207a85b589bf1ae821f988a3cfe8e22c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Jeśli jesteś administratorem, który zarządza zasadami haseł dla firmy, szkoły lub organizacji non-profit, możesz ustawić silne wymagania dotyczące haseł przy użyciu Azure AD programu PowerShell.
+ms.openlocfilehash: e98c9a3f7b31cbb53d4c853487f4908a6dec72d5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436190"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010261"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Wyłączanie silnych wymagań dotyczących haseł dla użytkowników
 

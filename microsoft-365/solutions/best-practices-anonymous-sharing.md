@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: W tym artykule poznasz najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytelnionym użytkownikom.
-ms.openlocfilehash: bd153d34e6e9ddc4a4b627a79df90286661353d3
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 783dfce365b34b694f048c7e65e3158678bea244
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128593"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017991"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytelnionym użytkownikom
 
@@ -87,7 +87,8 @@ Po włączeniu *udostępniania przez dowolną* osobę w organizacji domyślny li
 
 Możesz zmniejszyć to ryzyko, zmieniając domyślne ustawienie linku na link, który działa tylko dla osób w organizacji. Użytkownicy, którzy chcą udostępniać nieuwierzytelnione osoby, musieliby wybrać tę opcję.
 
-Aby ustawić domyślny link do udostępniania plików i folderów dla organizacji
+Aby ustawić domyślny link do udostępniania plików i folderów dla organizacji:
+
 1. Otwórz centrum administracyjne SharePoint i wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
 1. W obszarze **Łącza plików i folderów** wybierz pozycję **Tylko osoby w organizacji**.
 
@@ -95,7 +96,7 @@ Aby ustawić domyślny link do udostępniania plików i folderów dla organizacj
 
 1. Wybierz pozycję **Zapisz**
 
-Aby ustawić domyślny link do udostępniania plików i folderów dla określonej witryny
+Aby ustawić domyślny link do udostępniania plików i folderów dla określonej witryny:
 
 1. Otwórz centrum administracyjne SharePoint, rozwiń węzeł **Witryny**, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
 1. Wybierz witrynę, którą chcesz zmienić, a następnie wybierz pozycję **Udostępnianie**.
@@ -109,7 +110,8 @@ Aby ustawić domyślny link do udostępniania plików i folderów dla określone
 
 Aby zapobiec nieuwierzytelnionemu udostępnianiu poufnej zawartości, można użyć funkcji [Microsoft Purview Data Loss Prevention (DLP](../compliance/dlp-learn-about-dlp.md) ). Zapobieganie utracie danych może podejmować działania na podstawie etykiety poufności pliku, etykiety przechowywania lub informacji poufnych w samym pliku.
 
-Aby utworzyć regułę DLP
+Aby utworzyć regułę DLP:
+
 1. W centrum administracyjnym usługi Microsoft Purview przejdź do [strony Zapobieganie utracie danych](https://compliance.microsoft.com/datalossprevention).
 2. Kliknij **pozycję Utwórz zasady**.
 3. Wybierz pozycję **Niestandardowe** i kliknij przycisk **Dalej**.
@@ -133,18 +135,11 @@ Aby utworzyć regułę DLP
 
 ## <a name="protect-against-malicious-files"></a>Ochrona przed złośliwymi plikami
 
-Gdy zezwolisz anonimowym użytkownikom na przekazywanie plików, istnieje zwiększone ryzyko przekazania złośliwego pliku przez kogoś. W Microsoft 365 możesz użyć funkcji *załączników Sejf* w Ochrona usługi Office 365 w usłudze Defender, aby automatycznie skanować przekazane pliki i pliki kwarantanny, które okazały się niebezpieczne.
+Gdy zezwolisz anonimowym użytkownikom na przekazywanie plików, istnieje zwiększone ryzyko przekazania złośliwego pliku przez kogoś. W organizacjach z licencjami Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1 lub Plan 2 (na przykład w Microsoft 365 E5 lub jako dodatku) można użyć funkcji *załączników Sejf* do detonacji przekazanych plików w środowisku wirtualnym w piaskownicy i plików kwarantanny, które zostały znalezione Niebezpieczne.
 
-Aby włączyć bezpieczne załączniki
-1. Otwórz [stronę Załączniki Sejf atp](https://protection.office.com/safeattachmentv2) w centrum administracyjnym Zabezpieczenia i zgodność.
-2. Kliknij pozycję **Ustawienia globalne**.
-3. Włącz usługę ATP dla SharePoint, OneDrive i Microsoft Teams.
+Aby uzyskać instrukcje, zobacz [Włączanie załączników Sejf dla SharePoint, OneDrive i Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md).
 
-   ![Zrzut ekranu przedstawiający ustawienie bezpiecznych załączników w Centrum zabezpieczeń i zgodności.](../media/safe-attachments-setting.png)
-
-4. Opcjonalnie włącz również Sejf Dokumenty, a następnie kliknij przycisk **Zapisz**
-
-Aby uzyskać dodatkowe wskazówki[, zobacz ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams (Włączanie usługi ATP dla SharePoint, OneDrive i Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md)).
+Jeśli masz licencje Microsoft 365 A5 lub E5 Security, możesz również włączyć (i użyć) funkcji *Sejf Documents*. Aby uzyskać więcej informacji, zobacz [Sejf Documents in Microsoft 365 A5 or E5 Security (Dokumenty Sejf w usłudze Microsoft 365 A5 lub E5 Security](../security/office-365-security/safe-docs.md)).
 
 ## <a name="add-copyright-information-to-your-files"></a>Dodawanie informacji o prawach autorskich do plików
 

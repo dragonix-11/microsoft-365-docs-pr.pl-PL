@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak wdrażać Microsoft 365 Lighthouse planach bazowych.
-ms.openlocfilehash: 550ded1383cb402da0943bdfeb6707cbd12b02d1
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 17eda86e80b928fb8b4f56b0e5c719574e4741f5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131135"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012599"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Wdrażanie Microsoft 365 Lighthouse punktów odniesienia
 

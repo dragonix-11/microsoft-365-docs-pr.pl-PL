@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Podczas konfigurowania udostępnionych skrzynek pocztowych mogą wystąpić błędy. Wypróbuj te rozwiązania, jeśli wystąpią problemy z udostępnionymi skrzynkami pocztowymi.
-ms.openlocfilehash: cf121504b53951e0aaaf248d43d045cfa937f4ed
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 08b5bbaa1ea952ee2b9bb6c626328fdb6b91d71c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437112"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008584"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Rozwiązywanie problemów z udostępnionymi skrzynkami pocztowymi
 
@@ -38,9 +38,9 @@ Jeśli podczas tworzenia lub używania udostępnionej skrzynki pocztowej są wy�
 
 Jeśli zostanie wyświetlony komunikat o błędzie, **adres serwera proxy "smtp:<nazwa\> udostępnionej skrzynki pocztowej" jest już używany przez adresy proxy lub LegacyExchangeDN "\<name>". Wybierz inny adres serwera proxy**, co oznacza, że próbujesz nadać udostępnionej skrzynce pocztowej nazwę, która jest już używana. Załóżmy na przykład, że chcesz nadać udostępnionym skrzynkom pocztowym nazwy info@domena1 i info@domena2. Istnieją dwa sposoby wykonywania tej czynności:
 
-  - Za pomocą programu Windows PowerShell. Zobacz ten wpis w blogu, aby uzyskać instrukcje: [Tworzenie udostępnionych skrzynek pocztowych z tym samym aliasem w różnych domenach](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
-    
-  - Nadaj drugiej udostępnionej skrzynce pocztowej nazwę inną niż początkowa, aby obejść błąd. Następnie w centrum administracyjnym zmień nazwę udostępnionej skrzynki pocztowej na odpowiednią.
+- Użyj Exchange Online programu PowerShell. Zobacz ten wpis w blogu, aby uzyskać instrukcje: [Tworzenie udostępnionych skrzynek pocztowych z tym samym aliasem w różnych domenach](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+
+- Nadaj drugiej udostępnionej skrzynce pocztowej nazwę inną niż początkowa, aby obejść błąd. Następnie w centrum administracyjnym zmień nazwę udostępnionej skrzynki pocztowej na odpowiednią.
 
 ## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Błąd dotyczący braku uprawnień do wysyłania w przypadku korzystania z udostępnionej skrzynki pocztowej
 

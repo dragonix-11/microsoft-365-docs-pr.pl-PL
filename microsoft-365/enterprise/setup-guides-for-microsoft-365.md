@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Uzyskaj szczegółowe narzędzia do planowania, migracji i implementowania funkcji w licencjach dzierżawy. Znajdź przewodnik konfigurowania usługi lub aplikacji, którą musisz uruchomić.
-ms.openlocfilehash: 5ffb0652b145bba6ae4e834815c5cb51b7ad2b94
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 451f92aade8a6e7910630629b805065e6910b9de
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535929"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017125"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Przewodniki konfiguracji dla usług Microsoft 365 i Office 365
 
@@ -162,7 +162,7 @@ W [przewodniku konfiguracji Microsoft Intune](https://aka.ms/intunesetupguide) s
 
 Microsoft Exchange Online Protection (EOP) to oparta na chmurze usługa filtrowania poczty e-mail w celu ochrony przed spamem i złośliwym oprogramowaniem, która zapewnia ochronę organizacji przed naruszeniami zasad obsługi komunikatów.
 
-Skorzystaj z [przewodnika konfiguracji Exchange Online Protection](https://aka.ms/EOPguidance), aby skonfigurować funkcję EOP, wybierając, który z trzech scenariuszy&mdash; wdrażaniakonfiguruje lokalne skrzynki pocztowe, skrzynki pocztowe hybrydowe (połączenie lokalnych i chmurowych) lub wszystkie skrzynki pocztowe w chmurzepasują&mdash; twoją organizację. Przewodnik zawiera informacje i zasoby służące do konfigurowania i przeglądania licencjonowania użytkownika, przypisywania uprawnień w Centrum administracyjne platformy Microsoft 365 oraz konfigurowania zasad ochrony przed złośliwym oprogramowaniem i spamem w Centrum zgodności & zabezpieczeń.
+Skorzystaj z [przewodnika konfiguracji Exchange Online Protection](https://aka.ms/EOPguidance), aby skonfigurować funkcję EOP, wybierając, który z trzech scenariuszy wdrażania lokalnych&mdash;skrzynek pocztowych, hybrydowych (kombinacji lokalnych i chmurowych) skrzynek pocztowych lub wszystkich skrzynek pocztowych&mdash;w chmurze pasuje do Twojej organizacji. Przewodnik zawiera informacje i zasoby służące do konfigurowania i przeglądania licencjonowania użytkownika, przypisywania uprawnień w Centrum administracyjne platformy Microsoft 365 oraz konfigurowania zasad ochrony przed złośliwym oprogramowaniem i spamem w Centrum zgodności & zabezpieczeń.
 
 ### <a name="microsoft-defender-for-office-365-setup-guide"></a>Przewodnik konfiguracji ochrony usługi Office 365 w usłudze Microsoft Defender
 
@@ -181,13 +181,13 @@ Rozwiązania w tym przewodniku pomogą Ci uzyskać wgląd w działania użytkown
 * Dzięki rozwiązaniu do zapewniania zgodności z komunikacją można identyfikować zagrożenia komunikacyjne i działać na ich podstawie w przypadku takich elementów jak przemoc w miejscu pracy, wykorzystywanie informacji poufnych, nękanie, kodeks postępowania i naruszenia zgodności z przepisami.
 * Rozwiązanie do zarządzania ryzykiem wewnętrznym pomaga identyfikować, badać i podejmować działania dotyczące ryzyka kradzieży własności intelektualnej, wycieków poufnych danych, naruszeń zabezpieczeń, wycieków danych i naruszeń poufności.
 
-### <a name="microsoft-purview-information-protection-setup-guide"></a>przewodnik konfiguracji Microsoft Purview Information Protection
+### <a name="microsoft-purview-information-protection-setup-guide"></a>Przewodnik konfiguracji Information Protection usługi Microsoft Purview
 
-Zapoznaj się z omówieniem możliwości, które można zastosować do strategii ochrony informacji, aby mieć pewność, że informacje poufne są chronione. Użyj 4-etapowego podejścia do cyklu życia, w którym będzie można odkrywać, klasyfikować, chronić i monitorować informacje poufne. [Przewodnik konfiguracji Microsoft Purview Information Protection](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) zawiera wskazówki dotyczące ukończenia każdego z tych etapów.
+Zapoznaj się z omówieniem możliwości, które można zastosować do strategii ochrony informacji, aby mieć pewność, że informacje poufne są chronione. Użyj 4-etapowego podejścia do cyklu życia, w którym będzie można odkrywać, klasyfikować, chronić i monitorować informacje poufne. [Przewodnik konfiguracji usługi Microsoft Purview Information Protection](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) zawiera wskazówki dotyczące ukończenia każdego z tych etapów.
 
-### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>przewodnik konfiguracji zarządzanie cyklem życia danych Microsoft Purview
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Przewodnik konfiguracji zarządzania cyklem życia danych usługi Microsoft Purview
 
-[Przewodnik konfiguracji zarządzanie cyklem życia danych Microsoft Purview](https://aka.ms/migsetupguide) zawiera informacje potrzebne do skonfigurowania strategii ładu organizacji i zarządzania nimi, aby upewnić się, że dane są klasyfikowane i zarządzane zgodnie z określonymi wytycznymi dotyczącymi cyklu życia. W tym przewodniku dowiesz się, jak tworzyć, automatycznie stosować lub publikować etykiety przechowywania, zasady etykiet przechowywania i zasady przechowywania, które są stosowane do rekordów zawartości i zgodności organizacji. Uzyskasz również informacje na temat importowania plików CSV z planem plików dla scenariuszy zbiorczych lub ich ręcznego stosowania do poszczególnych dokumentów.
+[Przewodnik konfiguracji zarządzania cyklem życia danych usługi Microsoft Purview](https://aka.ms/migsetupguide) zawiera informacje potrzebne do skonfigurowania strategii ładu organizacji i zarządzania nią w celu zapewnienia, że dane są klasyfikowane i zarządzane zgodnie z określonymi wytycznymi dotyczącymi cyklu życia. W tym przewodniku dowiesz się, jak tworzyć, automatycznie stosować lub publikować etykiety przechowywania, zasady etykiet przechowywania i zasady przechowywania, które są stosowane do rekordów zawartości i zgodności organizacji. Uzyskasz również informacje na temat importowania plików CSV z planem plików dla scenariuszy zbiorczych lub ich ręcznego stosowania do poszczególnych dokumentów.
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>przewodnik konfiguracji Microsoft Defender for Cloud Apps
 
@@ -250,3 +250,7 @@ W przypadku organizacji korzystających z Configuration Manager można użyć [A
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>przewodnik konfiguracji współzarządzania Intune Configuration Manager
 
 Użyj [przewodnika konfiguracji współzarządzania Intune Configuration Manager](https://aka.ms/comanagementsetup), aby skonfigurować istniejące Configuration Manager urządzenia klienckie i nowe urządzenia internetowe, które organizacja chce współzarządzać zarówno przy użyciu Microsoft Intune, jak i Configuration Manager. Współzarządzanie umożliwia zarządzanie urządzeniami Windows 10 i dodawanie nowych funkcji do urządzeń organizacji przy jednoczesnym korzystaniu z zalet obu rozwiązań.
+
+#### <a name="school-data-sync-rollover-setup-guide"></a>przewodnik konfiguracji przerzucania School Data Sync
+
+[Przewodnik konfiguracji przerzucania SDS](https://aka.ms/sdsrolloversetupguide) zawiera kroki ułatwiające organizacji synchronizowanie danych informacji o uczniach z Azure Active Directory i Office 365. Ten przewodnik usprawnia proces zarządzania cyklem życia, tworząc grupy Office 365 dla Exchange Online i SharePoint Online, zespoły klas dla Microsoft Teams i OneNote, a także Intune  na potrzeby edukacji oraz integracji z obsługą dyżurów i logowaniem jednokrotnym dla aplikacji innych firm. Wykonasz zamknięcie na koniec roku, oczyszczanie i archiwum dzierżawy, przygotowanie do nowego roku szkolnego i rozpoczęcie nowego roku szkolnego. Następnie możesz tworzyć nowe profile przy użyciu metody wdrażania synchronizacji, która odpowiada Twojej organizacji.

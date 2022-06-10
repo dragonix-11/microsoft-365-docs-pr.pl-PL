@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usługa Basic Mobility and Security ułatwia zabezpieczanie urządzeń przenośnych i zarządzanie nimi za pomocą zasad, które kontrolują dostęp do organizacji Microsoft 365 poczty e-mail i dokumentów.
-ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 55c2a197959e55e2a74f8691b7181f8ee91b0ea9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435860"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010173"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Możliwości funkcji Podstawowa mobilność i zabezpieczenia
 
@@ -63,7 +63,7 @@ Obsługiwane aplikacje dla różnych typów urządzeń przenośnych w poniższej
 > [!NOTE]
 >
 > - Obsługa wersji iOS 10.0 i nowszych obejmuje urządzenia iPhone i iPad.
-> - Zarządzanie urządzeniami z systemem operacyjnym BlackBerry nie jest obsługiwane przez usługi Basic Security i Mobility. Zarządzanie urządzeniami BlackBerry OS za pomocą usług BlackBerry Business Cloud Services (BBCS) firmy BlackBerry. Urządzenia Blackberry z systemem Android OS są obsługiwane jako standardowe urządzenia Android
+> - Zarządzanie urządzeniami z systemem operacyjnym BlackBerry nie jest obsługiwane przez usługi Basic Security i Mobility. Użyj aplikacji BlackBerry Business Cloud Services (BBCS) firmy BlackBerry do zarządzania urządzeniami z systemem operacyjnym BlackBerry. Urządzenia Blackberry z systemem Android OS są obsługiwane jako standardowe urządzenia Android
 > - Użytkownicy nie będą monitować o rejestrację i nie będą blokować ani zgłaszać naruszenia zasad, jeśli korzystają z przeglądarki mobilnej w celu uzyskania dostępu do witryn Microsoft 365 SharePoint, dokumentów w usłudze Office Online lub wiadomości e-mail w Outlook Web App.
 
 Na poniższym diagramie przedstawiono, co się stanie, gdy użytkownik z nowym urządzeniem zaloguje się do aplikacji, która obsługuje kontrolę dostępu przy użyciu pakietu Basic Mobility and Security. Użytkownik ma zablokowany dostęp do Microsoft 365 zasobów w aplikacji, dopóki nie zarejestruje swojego urządzenia.
@@ -110,7 +110,7 @@ W poniższych sekcjach wymieniono ustawienia zasad, których można użyć do za
 
 |Nazwa ustawienia|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Wymagaj szyfrowania danych na <sup>urządzeniach1</sup>|Nie|Tak|Tak|
+|Wymaganie szyfrowania danych na urządzeniach<sup>1</sup>|Nie|Tak|Tak|
 
 <sup>1</sup> W systemie Samsung Knox możesz również wymagać szyfrowania na kartach pamięci.
 
@@ -136,7 +136,7 @@ Poniższa opcja może zablokować użytkownikom dostęp do Microsoft 365 poczty 
 |Blokuj tworzenie kopii zapasowych w chmurze|Tak|Nie|Nie|
 |Blokuj synchronizację dokumentów|Tak|Nie|Nie|
 |Blokuj synchronizację zdjęć|Tak|Nie|Nie|
-|Zezwalaj na tworzenie kopii zapasowych google|nd.|Nie|Tak|
+|Zezwalaj na tworzenie kopii zapasowych google|Nie dotyczy|Nie|Tak|
 |Zezwalaj na automatyczną synchronizację konta Google|Nie dotyczy|Nie|Tak|
 
 ## <a name="system-settings"></a>Ustawienia systemu
@@ -163,7 +163,7 @@ Poniższa opcja może zablokować użytkownikom dostęp do Microsoft 365 poczty 
 
 ## <a name="additional-settings"></a>Ustawienia dodatkowe
 
-Następujące dodatkowe ustawienia zasad można ustawić przy użyciu poleceń cmdlet programu PowerShell centrum zgodności usługi Security &. Aby uzyskać więcej informacji, zobacz [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
+Następujące dodatkowe ustawienia zasad można ustawić przy użyciu poleceń cmdlet programu PowerShell & Zgodności z zabezpieczeniami. Aby uzyskać więcej informacji, zobacz [Security & Compliance PowerShell (Zgodność & zabezpieczeń w programie PowerShell](/powershell/exchange/scc-powershell)).
 
 |Nazwa ustawienia|iOS|Android|
 |---|---|---|
@@ -230,7 +230,7 @@ Te dodatkowe ustawienia zasad można ustawić przy użyciu poleceń cmdlet progr
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Zdalne czyszczenie urządzenia przenośnego
 
-Jeśli urządzenie zostanie utracone lub skradzione, możesz usunąć poufne dane **organizacyjne** i zapobiec dostępowi do zasobów organizacji Microsoft 365, wykonując czyszczenie danych z **portal zgodności Microsoft Purview** >  **Zarządzanie urządzeniami w celu zapobiegania** >  utracie danych. Można przeprowadzić selektywne czyszczenie, aby usunąć tylko dane organizacyjne lub pełne czyszczenie, aby usunąć wszystkie informacje z urządzenia i przywrócić je do ustawień fabrycznych.
+W przypadku utraty lub kradzieży urządzenia można usunąć poufne dane organizacyjne i zapobiec dostępowi do zasobów organizacji Microsoft 365 przez wyczyszczenie danych z portalu  > **zgodności usługi Microsoft Purview****w celu zapobiegania** > **utracie danych Zarządzanie urządzeniami**. Można przeprowadzić selektywne czyszczenie, aby usunąć tylko dane organizacyjne lub pełne czyszczenie, aby usunąć wszystkie informacje z urządzenia i przywrócić je do ustawień fabrycznych.
 
 Aby uzyskać więcej informacji, zobacz [Czyszczenie urządzenia przenośnego w usłudze Basic Mobility and Security](wipe-mobile-device.md).
 

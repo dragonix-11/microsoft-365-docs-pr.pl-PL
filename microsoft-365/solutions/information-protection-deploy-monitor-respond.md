@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Użyj zasad inspekcji i alertów oraz żądań podmiotów danych, aby monitorować zdarzenia dotyczące danych osobowych i reagować na nie.
-ms.openlocfilehash: 730eb42fdf6aed66f5beac69621981848ffa6510
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 5954fc193f6071dbf94277ff57f599e3bb98f7d2
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953332"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013271"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Monitorowanie i reagowanie na zdarzenia związane z prywatnością danych w organizacji
 
@@ -61,13 +61,13 @@ Aby ułatwić rozpoczęcie pracy ze schematem monitorowania i reagowania w Micro
 - Jakiego rodzaju codzienne techniki monitorowania, analizy i raportowania są dostępne dla różnych typów danych i źródeł?
 - Jakie mechanizmy będą potrzebne do obsługi żądań podmiotów danych (DSR) i wszelkich akcji korygowania, takich jak anonimizacja, ponowna akcja i usuwanie.
 
-## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>Zasady inspekcji i alertów w Centrum zabezpieczeń i zgodności
+## <a name="auditing-and-alert-policies-in-the-microsoft-purview-compliance-portal"></a>Zasady inspekcji i alertów w portalu zgodności usługi Microsoft Purview
 
 Zobacz następujące artykuły dotyczące konfigurowania zasad inspekcji, zaawansowanej inspekcji i alertów:
 
 - [Ujednolicona inspekcja](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Inspekcja skrzynki pocztowej](../compliance/enable-mailbox-auditing.md)
-- [Inspekcja (Premium)](../compliance/advanced-audit.md)
+- [Inspekcja (wersja Premium)](../compliance/advanced-audit.md)
 - [Zasady alertów](../compliance/alert-policies.md)
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Żądania podmiotów danych dotyczące RODO i CCPA

@@ -5,6 +5,7 @@ metadata:
   ms.author: sharik
   author: SKjerland
   manager: scotv
+  ms-reviewer: crimora
   audience: Admin
   ms.topic: faq
   ms.prod: microsoft-365-lighthouse
@@ -17,12 +18,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse uzyskaj odpowiedzi na często zadawane pytania dotyczące Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 8afa3364c7b646110dcd4d6cf2b8786c1840eb76
-  ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+  ms.openlocfilehash: a980a6fe8376c71470331ff3efc1d5b1f08acb33
+  ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 05/26/2022
-  ms.locfileid: "65692810"
+  ms.lasthandoff: 06/10/2022
+  ms.locfileid: "66016773"
 title: Microsoft 365 Lighthouse często zadawanych pytań
 summary: >
   Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące Microsoft 365 Lighthouse.
@@ -57,7 +58,7 @@ sections:
     answer: >
       Ładowanie danych dzierżawy klienta w usłudze Lighthouse może potrwać do 48 godzin. Jeśli od ukończenia dołączania minęło ponad 48 godzin, skontaktuj się z naszym zespołem pomocy technicznej, aby uzyskać pomoc. Musisz poinformować ich o zakończeniu dołączania i podać odpowiednie zrzuty ekranu i dzienniki. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie pomocy i obsługi technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: Dlaczego widzę dane dla niektórych dzierżaw klientów, ale nie dla innych?
-    answer: "Aby dane dzierżawy klienta były wyświetlane w aplikacji Lighthouse, dostawcy msps muszą ustanowić delegowany dostęp do zarządzania dzierżawą klienta. Delegowanie uprawnień Administracja (DAP) jest wymagane do dołączenia klientów do usługi Lighthouse. Zalecamy ustanowienie szczegółowych uprawnień delegowanych Administracja (GDAP) z klientami, aby umożliwić bezpieczniejszy dostęp delegowany. Zobacz [Omówienie uprawnień w Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md), aby uzyskać dodatkowe informacje na temat tego, które delegowane i partnerskie role dzierżawy są zalecane do korzystania z usługi Lighthouse. Chociaż dap i GDAP współistnieją, GDAP będzie mieć pierwszeństwo dla klientów, gdzie oba modele są w miejscu. Wkrótce klienci z zaledwie GDAP (i bez dap) będą mogli dołączyć do lighthouse. Aby uzyskać więcej informacji na temat dostępu delegowanego, zobacz [Request a reseller relationship with a customer in Partner Center (Żądanie relacji odsprzedawcy z klientem w Centrum partnerskim](/partner-center/request-a-relationship-with-a-customer)). Dzierżawy muszą mieć również co najmniej jeden Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business lub Microsoft Defender dla Firm  licencji i nie więcej niż 1000 licencjonowanych użytkowników w dzierżawie. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) i [Omówienie strony Dzierżawy w Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).  \n"
+    answer: "Aby dane dzierżawy klienta były wyświetlane w aplikacji Lighthouse, dostawcy msps muszą ustanowić delegowany dostęp do zarządzania dzierżawą klienta. Aby dołączyć klientów do usługi Lighthouse, wymagane są szczegółowe uprawnienia administratora delegowanego (GDAP) oraz relacja pośredniego odsprzedawcy lub relacja delegowane uprawnienia administratora (DAP). Zalecamy ustanowienie protokołu GDAP z klientami, aby umożliwić bezpieczniejszy dostęp delegowany. Jeśli dap i GDAP współistnieją w dzierżawie klienta, uprawnienia GDAP mają pierwszeństwo dla techników MSP w grupach zabezpieczeń z obsługą protokołu GDAP. Wkrótce klienci z relacjami tylko Z GDAP (bez pośrednich relacji odsprzedawców) będą mogli dołączyć do usługi Lighthouse. Aby uzyskać więcej informacji na temat dostępu delegowanego, zobacz [Request a reseller relationship with a customer in Partner Center (Żądanie relacji odsprzedawcy z klientem w Centrum partnerskim](/partner-center/request-a-relationship-with-a-customer)). Dzierżawy muszą mieć również co najmniej jeden Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business lub Microsoft Defender dla Firm  licencji i nie więcej niż 1000 licencjonowanych użytkowników w dzierżawie. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) i [Omówienie strony Dzierżawy w Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).\n\nJeśli protokół GDAP zostanie ustanowiony razem z klientem, technik MSP musi znajdować się w grupie zabezpieczeń z obsługą protokołu GDAP, która ma przypisane odpowiednie role, aby móc zarządzać danymi tego klienta w usłudze Lighthouse. Role GDAP przypisane do tej grupy zabezpieczeń mają wpływ na to, którymi danymi klientów można zarządzać w usłudze Lighthouse. Zobacz [Omówienie uprawnień w Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md), aby uzyskać szczegółowe informacje o tym, które delegowane role dzierżawy i dzierżawy partnera są zalecane do korzystania z usługi Lighthouse. Aby uzyskać instrukcje dotyczące wyświetlania ról GDAP przypisanych do różnych dzierżaw klientów w usłudze Lighthouse, zobacz [Wyświetlanie ról Azure Active Directory w Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   \n"
   - question: Co zrobić, jeśli nie chcę widzieć niektórych dzierżaw w Microsoft 365 Lighthouse?
     answer: >
       Jeśli nie chcesz widzieć niektórych dzierżaw i ich danych w aplikacji Lighthouse, możesz uaktywnić te dzierżawy. Aby uaktywnić dzierżawę, wykonaj następujące kroki:

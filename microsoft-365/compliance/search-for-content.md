@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Użyj narzędzia Do zbierania elektronicznych materiałów dowodowych wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, aby szybko znaleźć wiadomości e-mail w skrzynkach pocztowych Exchange, dokumentach w witrynach SharePoint i lokalizacjach OneDrive oraz konwersacje dotyczące wiadomości błyskawicznych w Skype dla firm.
-ms.openlocfilehash: 30398f91a0ab7807ea3438e6bfdde3606e918a4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cf5c6b61e9b4cc041d9f8e315321c63c78415a63
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092254"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66009436"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Wyszukiwanie zawartości przy użyciu narzędzia do wyszukiwania zawartości
 
@@ -70,7 +70,7 @@ Wyszukiwanie zawartości jest łatwe w użyciu, ale jest również zaawansowanym
 
 ## <a name="use-scripts-for-advanced-scenarios"></a>Używanie skryptów w scenariuszach zaawansowanych
 
-Czasami trzeba wykonywać bardziej zaawansowane, złożone i powtarzalne zadania wyszukiwania zawartości. W takich przypadkach korzystanie z poleceń w programie PowerShell Centrum zgodności & zabezpieczeń jest łatwiejsze i szybsze. Aby ułatwić to, utworzyliśmy szereg skryptów programu PowerShell Centrum zgodności & zabezpieczeń, które ułatwiają wykonywanie złożonych zadań związanych z wyszukiwaniem zawartości.
+Czasami trzeba wykonywać bardziej zaawansowane, złożone i powtarzalne zadania wyszukiwania zawartości. W takich przypadkach łatwiej i szybciej używać poleceń w programie PowerShell security & Compliance. Aby ułatwić to, utworzyliśmy szereg skryptów programu PowerShell & Zgodności zabezpieczeń, które ułatwiają wykonywanie złożonych zadań związanych z wyszukiwaniem zawartości.
 
 - [Wyszukaj określone skrzynki pocztowe i foldery lokacji (nazywane](use-content-search-for-targeted-collections.md)  *docelową* kolekcją), gdy masz pewność, że elementy reagujące na przypadek znajdują się w tym folderze
 

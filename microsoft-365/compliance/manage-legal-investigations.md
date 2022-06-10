@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Użyj przypadków zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview, aby zarządzać badaniem prawnym organizacji.
-ms.openlocfilehash: 464996eb160eff520582e82ab87b74b4472f7a5d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f75d59e58ae51e5cb525044edb775c87b52686d1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077885"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010071"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnymi w Microsoft 365
 
@@ -46,7 +46,7 @@ Przypadki zbierania elektronicznych materiałów dowodowych umożliwiają kontro
 
 ### <a name="use-scripts-for-advanced-scenarios"></a>Używanie skryptów w scenariuszach zaawansowanych
 
-Podobnie jak w poprzedniej sekcji zawierającej skrypty dla scenariuszy wyszukiwania zawartości, utworzyliśmy również niektóre skrypty programu PowerShell Centrum zgodności & zabezpieczeń, aby ułatwić zarządzanie przypadkami zbierania elektronicznych materiałów dowodowych.
+Podobnie jak w poprzedniej sekcji zawierającej skrypty dla scenariuszy wyszukiwania zawartości, utworzyliśmy również niektóre skrypty programu PowerShell dotyczące zabezpieczeń & zgodności, aby ułatwić zarządzanie przypadkami zbierania elektronicznych materiałów dowodowych.
   
 - [Utwórz raport zbierania elektronicznych](create-a-report-on-holds-in-ediscovery-cases.md) materiałów dowodowych zawierający informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych w organizacji.
 

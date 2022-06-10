@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Jeśli nie musisz już zachowywać zawartości nieaktywnej skrzynki pocztowej Microsoft 365, możesz trwale usunąć nieaktywną skrzynkę pocztową.
-ms.openlocfilehash: 640a118a2fc277b05edc181e19008836027dc468
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 1f45e5ce3aca79e4f5abbc13442876ecbb22e90c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772385"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017947"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Usuń nieaktywną skrzynkę pocztową
 
@@ -38,7 +38,7 @@ Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać opis tego,
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Przed usunięciem nieaktywnej skrzynki pocztowej
 
-- Aby usunąć blokady z nieaktywnej skrzynki pocztowej, należy użyć Exchange Online programu PowerShell. Nie można użyć centrum administracyjnego Exchange (EAC) ani portal zgodności Microsoft Purview dla tych procedur. Aby uzyskać instrukcje krok po kroku dotyczące używania Exchange Online programu PowerShell, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Aby usunąć blokady z nieaktywnej skrzynki pocztowej, należy użyć Exchange Online programu PowerShell. Tych procedur nie można użyć centrum administracyjnego Exchange (EAC) ani portalu zgodności usługi Microsoft Purview. Aby uzyskać instrukcje krok po kroku dotyczące używania Exchange Online programu PowerShell, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Zawartość nieaktywnej skrzynki pocztowej można skopiować do innej skrzynki pocztowej przed usunięciem blokady i usunięciem nieaktywnej skrzynki pocztowej. Aby uzyskać szczegółowe informacje, zobacz [Przywracanie nieaktywnej skrzynki pocztowej w Office 365](restore-an-inactive-mailbox.md).
 
@@ -118,7 +118,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>Usuwanie nieaktywnej skrzynki pocztowej z określonych zasad przechowywania lokalizacji
 
-Użyj programu [PowerShell Usługi Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell) , aby usunąć nieaktywną skrzynkę pocztową z jawnych zasad przechowywania:
+Użyj [programu PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell) , aby usunąć nieaktywną skrzynkę pocztową z jawnych zasad przechowywania:
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>

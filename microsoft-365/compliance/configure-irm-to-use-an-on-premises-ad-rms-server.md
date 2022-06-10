@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie usługi IRM do używania lokalnego serwera USŁUG AD RMS
+title: Konfiguruj usługę IRM do korzystania z lokalnego serwera usług AD RMS
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,102 +15,104 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: Dowiedz się, jak skonfigurować usługę Zarządzanie prawami do informacji (IRM) w usłudze Exchange Online na korzystanie z serwera usługi zarządzania prawami dostępu w usłudze Active Directory (AD RMS).
+description: Dowiedz się, jak skonfigurować usługę Information Rights Management (IRM) w Exchange Online do korzystania z serwera usługi Active Directory Rights Management Service (AD RMS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f87992fc9be676b9485d6ec7a7b7ff1f3a4d39d9
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: dac33407a9a45da59d0b3a766ab8a695a0f5a076
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009683"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018146"
 ---
-# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfigurowanie usługi IRM do używania lokalnego serwera USŁUG AD RMS
+# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfiguruj usługę IRM do korzystania z lokalnego serwera usług AD RMS
 
-Do użytku we wdrożeniach lokalnych zarządzanie prawami do informacji (IRM) w programie Exchange Online korzysta z usługi Usługi Active Directory Rights Management (AD RMS), technologii ochrony informacji w programie Windows Server 2008 i nowszych. Ochrona usługi IRM jest stosowana do wiadomości e-mail przez zastosowanie szablonu zasad praw usług AD RMS do wiadomości e-mail. Do wiadomości są dołączane prawa, dzięki czemu ochrona jest chroniony w trybie online i offline oraz wewnątrz i poza zaporą organizacji.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-W tym temacie pokazano, jak skonfigurować usługę IRM do korzystania z serwera usług AD RMS. Aby uzyskać informacje na temat korzystania z nowych możliwości Szyfrowanie wiadomości usługi Office 365 usługami Azure Active Directory i Azure Rights Management, zobacz często zadawane [Szyfrowanie wiadomości usługi Office 365 pytania](./ome-faq.yml).
+Do użytku z wdrożeniami lokalnymi usługa Information Rights Management (IRM) w Exchange Online używa Usługi Active Directory Rights Management (AD RMS), technologii ochrony informacji w programie Windows Server 2008 lub nowszym. Ochrona za pomocą usługi IRM jest stosowana do poczty e-mail przez zastosowanie szablonu zasad praw usług AD RMS do wiadomości e-mail. Prawa są dołączane do samego komunikatu, aby ochrona odbywała się w trybie online i offline oraz wewnątrz i na zewnątrz zapory organizacji.
 
-Aby dowiedzieć się więcej na temat usługi IRM w u Exchange Online, zobacz [Zarządzanie prawami do informacji w programie Exchange Online](information-rights-management-in-exchange-online.md).
+W tym temacie pokazano, jak skonfigurować usługę IRM do korzystania z serwera usług AD RMS. Aby uzyskać informacje na temat korzystania z usługi Microsoft Purview Message Encryption z usługami Azure Active Directory i Azure Rights Management, zobacz [Często zadawane pytania dotyczące szyfrowania komunikatów](./ome-faq.yml).
+
+Aby dowiedzieć się więcej na temat usługi IRM w Exchange Online, zobacz [Information Rights Management in Exchange Online (Informacje Rights Management w Exchange Online](information-rights-management-in-exchange-online.md)).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
 - Szacowany czas wykonania tego zadania: 30 minut
 
-- Do wykonania tych procedur musisz mieć przypisane uprawnienia. Aby sprawdzić, jakich uprawnień potrzebujesz, zobacz wpis "Zarządzanie prawami do informacji" w temacie Uprawnienia dotyczące zasad obsługi wiadomości [i zgodności](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions) .
+- Do wykonania tych procedur musisz mieć przypisane uprawnienia. Aby zobaczyć, jakich uprawnień potrzebujesz, zobacz wpis "Informacje Rights Management" w [temacie Zasady obsługi komunikatów i uprawnienia zgodności](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions).
 
-- Serwer AD RMS musi mieć uruchomiony Windows Server 2008 lub nowszy. Aby uzyskać szczegółowe informacje na temat wdrażania usług AD RMS, zobacz [Instalowanie klastra usług AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
+- Serwer usług AD RMS musi działać Windows Server 2008 lub nowszym. Aby uzyskać szczegółowe informacje o sposobie wdrażania usług AD RMS, zobacz [Instalowanie klastra usług AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
 
-- Aby uzyskać szczegółowe informacje na temat instalowania i konfigurowania Windows PowerShell łączenia się z usługą, zobacz Połączenie do Exchange Online [używania zdalnej obsługi programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Aby uzyskać szczegółowe informacje na temat sposobu instalowania i konfigurowania Windows PowerShell i nawiązywania połączenia z usługą, zobacz [Połączenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Aby uzyskać informacje na temat skrótów klawiaturowych, które mogą dotyczyć procedur zobacz Skróty klawiaturowe w centrum administracyjnym programu [Exchange w programie Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Aby uzyskać informacje o skrótach klawiaturowych, które mogą mieć zastosowanie do procedur w tym temacie, zobacz [Skróty klawiaturowe centrum administracyjnego Exchange w Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Masz problemy? Poproś o pomoc na forach Exchange. Odwiedź fora w [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) lub [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Masz problemy? Poproś o pomoc na forach Exchange. Odwiedź fora pod adresem [Exchange Server,Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=60612) lub [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).[](https://go.microsoft.com/fwlink/p/?linkId=267542)
 
 ## <a name="how-do-you-do-this"></a>Jak to zrobić?
 <a name="sectionSection1"> </a>
 
-### <a name="step-1-use-the-ad-rms-console-to-export-a-trusted-publishing-domain-tpd-from-an-ad-rms-server"></a>Krok 1. Używanie konsoli AD RMS do eksportowania zaufanej domeny publikowania (TPD) z serwera USŁUG AD RMS
+### <a name="step-1-use-the-ad-rms-console-to-export-a-trusted-publishing-domain-tpd-from-an-ad-rms-server"></a>Krok 1. Eksportowanie zaufanej domeny publikowania (TPD) z serwera usług AD RMS przy użyciu konsoli usług AD RMS
 
-Pierwszym krokiem jest wyeksportowanie zaufanej domeny publikowania (TPD) z lokalnego serwera USŁUG AD RMS do pliku XML. TpD zawiera następujące ustawienia wymagane do korzystania z funkcji RMS:
+Pierwszym krokiem jest wyeksportowanie zaufanej domeny publikowania (TPD) z lokalnego serwera usług AD RMS do pliku XML. TPD zawiera następujące ustawienia potrzebne do korzystania z funkcji usługi RMS:
 
 - Certyfikat licencjodawcy serwera (SLC) używany do podpisywania i szyfrowania certyfikatów i licencji
 
 - Adresy URL używane do licencjonowania i publikowania
 
-- Szablony zasad praw usług AD RMS, które zostały utworzone przy użyciu określonego szablonu SLC dla danej usługi TPD
+- Szablony zasad praw usług AD RMS, które zostały utworzone przy użyciu określonego protokołu SLC dla tego TPD
 
-Po zaimportowaniu pliku TPD jest on przechowywany i chroniony w Exchange Online.
+Po zaimportowaniu dysku TPD jest on przechowywany i chroniony w Exchange Online.
 
 1. Otwórz konsolę Usługi Active Directory Rights Management, a następnie rozwiń klaster usług AD RMS.
 
-2. W drzewie konsoli rozwiń pozycję **Zasady zaufania**, a następnie kliknij pozycję **Zaufane domeny publikowania**.
+2. W drzewie konsoli rozwiń węzeł **Zasady zaufania**, a następnie kliknij pozycję **Zaufane domeny publikowania**.
 
 3. W okienku wyników wybierz certyfikat dla domeny, którą chcesz wyeksportować.
 
-4. W **okienku Akcje** kliknij pozycję **Eksportuj zaufaną domenę publikowania**.
+4. W okienku **Akcje** kliknij pozycję **Eksportuj zaufaną domenę publikowania**.
 
-5. W **polu Plik domeny publikowania** kliknij pozycję **Zapisz jako** , aby zapisać plik w określonej lokalizacji na komputerze lokalnym. Wpisz nazwę pliku, upewniąc się, że określono `.xml` rozszerzenie nazwy pliku, a następnie kliknij przycisk **Zapisz**.
+5. W **polu Plik domeny publikowania** kliknij pozycję **Zapisz jako** , aby zapisać plik w określonej lokalizacji na komputerze lokalnym. Wpisz nazwę pliku, upewniając się, że określono rozszerzenie nazwy `.xml` pliku, a następnie kliknij przycisk **Zapisz**.
 
-6. W **polach Hasło** i **Potwierdź** hasło wpisz silne hasło, które będzie używane do szyfrowania zaufanego pliku domeny publikowania. To hasło należy określić podczas importowania pliku TPD do chmurowej organizacji poczty e-mail.
+6. W polach **Hasło** i **Potwierdź hasło** wpisz silne hasło, które będzie używane do szyfrowania zaufanego pliku domeny publikowania. Musisz określić to hasło podczas importowania dysku TPD do organizacji poczty e-mail opartej na chmurze.
 
-### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>Krok 2. Zaimportuj usługę TPD do Exchange przy użyciu powłoki zarządzania danymi Exchange Online
+### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>Krok 2. Zaimportuj identyfikator TPD do Exchange Online za pomocą powłoki zarządzania Exchange
 
-Po wyeksportowaniu pliku TPD do pliku XML należy go zaimportować w celu Exchange Online. W przypadku importowania TPD są również importowane szablony usług AD RMS w organizacji. Po zaimportowaniu pierwszej aplikacji TPD staje się ona domyślną bazą danych TPD dla organizacji opartej na chmurze. Jeśli importujesz inną usługę TPD, możesz użyć przełącznika **Domyślne** , aby ustawić ją jako domyślną usługę TPD dostępną dla użytkowników.
+Po wyeksportowaniu dysku TPD do pliku XML należy go zaimportować, aby Exchange Online. Po zaimportowaniu TPD importowane są również szablony usług AD RMS organizacji. Po zaimportowaniu pierwszego dysku TPD staje się on domyślnym identyfikatorem TPD dla organizacji opartej na chmurze. W przypadku importowania innego TPD można użyć **przełącznika domyślnego** , aby ustawić domyślny identyfikator TPD, który jest dostępny dla użytkowników.
 
-Aby zaimportować dane TPD, uruchom następujące polecenie w programie Windows PowerShell:
+Aby zaimportować TPD, uruchom następujące polecenie w programie Exchange Online programu PowerShell:
 
 ```powershell
 Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<path to exported TPD file>')) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
 ```
 
-Możesz uzyskać wartości parametrów _ExtranetLicensingUrl_ i _IntranetLicensingUrl_ na konsoli Usługi Active Directory Rights Management sieci. Wybierz klaster usług AD RMS w drzewie konsoli. Adresy URL licencji są wyświetlane w okienku wyników. Te adresy URL są używane przez klientów poczty e-mail, gdy zawartość musi zostać odszyfrowana i gdy Exchange Online określić, której protokołu TPD użyć.
+Wartości parametrów _ExtranetLicensingUrl_ i _IntranetLicensingUrl_ można uzyskać w konsoli Usługi Active Directory Rights Management. Wybierz klaster usług AD RMS w drzewie konsoli. Adresy URL licencjonowania są wyświetlane w okienku wyników. Te adresy URL są używane przez klientów poczty e-mail, gdy zawartość musi zostać odszyfrowana, a Exchange Online musi określić, którego dysku TPD użyć.
 
-Po uruchomieniu tego polecenia zostanie wyświetlony monit o hasło. Wprowadź hasło określone podczas eksportowania danych TPD z serwera USŁUG AD RMS.
+Po uruchomieniu tego polecenia zostanie wyświetlony monit o podanie hasła. Wprowadź hasło określone podczas eksportowania dysku TPD z serwera usług AD RMS.
 
-Na przykład następujące polecenie importuje plik TPD o nazwie Exported TPD przy użyciu pliku XML wyeksportowanego z serwera USŁUG AD RMS i zapisany na pulpicie konta administratora. Parametr Name służy do określania nazwy dla parametru TPD.
+Na przykład następujące polecenie importuje identyfikator TPD o nazwie Wyeksportowany identyfikator TPD przy użyciu pliku XML wyeksportowanego z serwera usług AD RMS i zapisanego na pulpicie konta administratora. Parametr Name służy do określania nazwy TPD.
 
 ```powershell
 Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('C:\Users\Administrator\Desktop\ExportTPD.xml')) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
 ```
 
-Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Import-RMSTrustedPublishingDomain](/powershell/module/exchange/import-rmstrustedpublishingdomain).
+Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Import-RMSTrustedPublishingDomain](/powershell/module/exchange/import-rmstrustedpublishingdomain).
 
-#### <a name="how-do-you-know-that-you-successfully-imported-the-tpd"></a>Skąd wiadomo, że dane TPD zostały pomyślnie zaimportowane?
+#### <a name="how-do-you-know-that-you-successfully-imported-the-tpd"></a>Skąd wiesz, że pomyślnie zaimportowano TPD?
 
-Aby sprawdzić, czy dane tpd zostały pomyślnie zaimportowane, uruchom polecenie cmdlet **Get-RMSTrustedPublishingDomain** w celu pobrania identyfikatorów TPD w Exchange Online organizacji. Aby uzyskać szczegółowe informacje, zobacz przykłady w [temacie Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain).
+Aby sprawdzić, czy usługa TPD została pomyślnie zaimportowana, uruchom polecenie cmdlet **Get-RMSTrustedPublishingDomain**, aby pobrać identyfikatory TPD w organizacji Exchange Online. Aby uzyskać szczegółowe informacje, zobacz przykłady w [temacie Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain).
 
-### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Krok 3. Używanie powłoki zarządzania Exchange do rozpowszechniania szablonu zasad praw usług AD RMS
+### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Krok 3. Dystrybuowanie szablonu zasad praw usług AD RMS przy użyciu powłoki zarządzania Exchange
 
-Po zaimportowaniu pliku TPD należy się upewnić, że jest rozpowszechniany szablon zasad praw usług AD RMS. Szablon rozłożony jest widoczny dla Outlook w sieci Web użytkowników (dawniej nazywanych Outlook Web App), którzy następnie mogą stosować szablony do wiadomości e-mail.
+Po zaimportowaniu dysku TPD należy upewnić się, że szablon zasad praw usług AD RMS jest rozproszony. Szablon rozproszony jest widoczny dla użytkowników Outlook w sieci Web (wcześniej znanych jako Outlook Web App), którzy mogą następnie stosować szablony do wiadomości e-mail.
 
-Aby zwrócić listę wszystkich szablonów zawartych w domyślnej aplikacji TPD, uruchom następujące polecenie:
+Aby zwrócić listę wszystkich szablonów zawartych w domyślnym dysku TPD, uruchom następujące polecenie:
 
 ```powershell
 Get-RMSTemplate -Type All | fl
 ```
 
-Jeśli parametr _Type ma wartość_ `Archived`, szablon nie jest widoczny dla użytkowników. W programach Outlook w sieci Web są dostępne tylko szablony rozpowszechniane w domyślnej Outlook w sieci Web.
+Jeśli wartość parametru _Type_ to `Archived`, szablon nie jest widoczny dla użytkowników. Tylko szablony rozproszone w domyślnym dysku TPD są dostępne w Outlook w sieci Web.
 
 Aby rozpowszechnić szablon, uruchom następujące polecenie:
 
@@ -118,52 +120,52 @@ Aby rozpowszechnić szablon, uruchom następujące polecenie:
 Set-RMSTemplate -Identity "<name of the template>" -Type Distributed
 ```
 
-Na przykład następujące polecenie importuje szablon Poufne informacje firmowe.
+Na przykład następujące polecenie importuje szablon Poufne firmy.
 
 ```powershell
 Set-RMSTemplate -Identity "Company Confidential" -Type Distributed
 ```
 
-Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate) i [Set-RMSTemplate](/powershell/module/exchange/set-rmstemplate).
+Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate) i [Set-RMSTemplate](/powershell/module/exchange/set-rmstemplate).
 
 #### <a name="the-do-not-forward-template"></a>Szablon Nie przesyłaj dalej
 
-Po zaimportowaniu domyślnej usługi TPD z organizacji lokalnej do programu Exchange Online jest importowany jeden szablon zasad praw usług AD RMS o nazwie **Nie** przesyłaj dalej. Domyślnie ten szablon jest rozpowszechniany podczas importowania domyślnej wartości TPD. Za pomocą polecenia cmdlet **Set-RMSTemplate** nie można modyfikować szablonu **Nie przesyłaj dalej** .
+Podczas importowania domyślnego identyfikatora TPD z organizacji lokalnej do Exchange Online importowany jest jeden szablon zasad praw usług AD RMS o nazwie Nie przesyłaj **dalej**. Domyślnie ten szablon jest dystrybuowany podczas importowania domyślnego TPD. Nie można użyć polecenia cmdlet **Set-RMSTemplate** w celu zmodyfikowania szablonu **Nie przesyłaj dalej** .
 
-Po **zastosowaniu szablonu Nie przesyłaj** dalej do wiadomości tylko adresaci adresaci wiadomości mogą ją odczytać. Ponadto adresaci nie mogą wykonać następujących czynności:
+Po zastosowaniu szablonu **Nie przesyłaj dalej** do wiadomości tylko adresaci adresaci w wiadomości mogą odczytać wiadomość. Ponadto adresaci nie mogą wykonywać następujących czynności:
 
-- Przesyłanie wiadomości dalej do innej osoby.
-- Skopiować zawartość z wiadomości.
+- Przekaż wiadomość innej osobie.
+- Skopiuj zawartość z wiadomości.
 - Wydrukuj wiadomość.
 
 > [!IMPORTANT]
-> Szablon **Nie przesyłaj dalej** nie może zapobiec kopiowaniu informacji w wiadomości za pomocą programów do przechwytywania zawartości ekranu innych firm, aparatów ani użytkowników, którzy ręcznie je transskrybują
+> Szablon **Nie przesyłaj dalej** nie może uniemożliwić kopiowania informacji w wiadomości za pomocą programów przechwytywania ekranu innych firm, aparatów fotograficznych lub użytkowników ręcznie transkrypcji informacji
 
-Na serwerze usług AD RMS w organizacji lokalnej możesz utworzyć dodatkowe szablony zasad praw usług AD RMS, aby spełnić wymagania dotyczące ochrony usługi IRM. Jeśli utworzysz dodatkowe szablony zasad praw usług AD RMS, musisz ponownie wyeksportować usługę TPD z lokalnego serwera usług AD RMS i odświeżyć tpd w opartej na chmurze organizacji poczty e-mail.
+Możesz utworzyć dodatkowe szablony zasad praw usług AD RMS na serwerze usług AD RMS w organizacji lokalnej, aby spełnić wymagania dotyczące ochrony usługi IRM. Jeśli utworzysz dodatkowe szablony zasad praw usług AD RMS, musisz ponownie wyeksportować TPD z lokalnego serwera usług AD RMS i odświeżyć identyfikator TPD w organizacji poczty e-mail opartej na chmurze.
 
-#### <a name="how-do-you-know-that-you-successfully-distributed-the-ad-rms-rights-policy-template"></a>Skąd wiadomo, że szablon zasad praw usług AD RMS został pomyślnie rozpowszechniony?
+#### <a name="how-do-you-know-that-you-successfully-distributed-the-ad-rms-rights-policy-template"></a>Skąd wiesz, że pomyślnie rozproszono szablon zasad praw usług AD RMS?
 
-Aby sprawdzić, czy pomyślnie rozpowszechniano i czy szablon zasad praw usług AD RMS został pomyślnie rozłożony, uruchom polecenie cmdlet **Get-RMSTemplate** w celu sprawdzenia właściwości szablonu. Aby uzyskać szczegółowe informacje, zobacz przykłady w te [dotyczące usługi Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate).
+Aby sprawdzić, czy pomyślnie rozproszono szablon zasad praw usług AD RMS, uruchom polecenie cmdlet **Get-RMSTemplate** , aby sprawdzić właściwości szablonu. Aby uzyskać szczegółowe informacje, zobacz przykłady w [temacie Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate).
 
-### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>Krok 4. Włączanie usługi IRM Exchange powłoki zarządzania danymi
+### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>Krok 4. Włączanie usługi IRM przy użyciu powłoki zarządzania Exchange
 
-Po zaimportowaniu pliku TPD i rozpowszechnieniu szablonu zasad praw usług AD RMS uruchom następujące polecenie, aby włączyć usługę IRM dla chmurowej organizacji poczty e-mail.
+Po zaimportowaniu dysku TPD i dystrybucji szablonu zasad praw usług AD RMS uruchom następujące polecenie, aby włączyć usługę IRM dla organizacji poczty e-mail opartej na chmurze.
 
 ```powershell
 Set-IRMConfiguration -InternalLicensingEnabled $true
 ```
 
-Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration).
+Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration).
 
-#### <a name="how-do-you-know-that-you-successfully-enabled-irm"></a>Skąd wiadomo, że funkcja IRM została pomyślnie włączona?
+#### <a name="how-do-you-know-that-you-successfully-enabled-irm"></a>Skąd wiesz, że pomyślnie włączono usługę IRM?
 
-Aby sprawdzić, czy funkcja IRM została pomyślnie włączona, uruchom polecenie cmdlet [Get-IRMConfiguration](/powershell/module/exchange/get-irmconfiguration) w celu sprawdzenia konfiguracji usługi IRM w Exchange Online organizacji.
+Aby sprawdzić, czy usługa IRM została pomyślnie włączona, uruchom polecenie cmdlet [Get-IRMConfiguration](/powershell/module/exchange/get-irmconfiguration), aby sprawdzić konfigurację usługi IRM w organizacji Exchange Online.
 
-## <a name="how-do-you-know-this-task-worked"></a>Skąd wiadomo, że to zadanie zadziałało?
+## <a name="how-do-you-know-this-task-worked"></a>Skąd wiesz, że to zadanie zadziałało?
 <a name="sectionSection2"> </a>
 
-Aby sprawdzić, czy funkcja TPD została pomyślnie zaimportowana i włączona funkcja IRM, wykonaj następujące czynności:
+Aby sprawdzić, czy pomyślnie zaimportowano usługę TPD i włączono usługę IRM, wykonaj następujące czynności:
 
-- Użyj polecenia **cmdlet Test-IRMConfiguration** , aby przetestować funkcję usługi IRM. Aby uzyskać szczegółowe informacje, zobacz "Przykład 1" w [teście -IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
+- Użyj polecenia cmdlet **Test-IRMConfiguration** , aby przetestować funkcjonalność usługi IRM. Aby uzyskać szczegółowe informacje, zobacz "Przykład 1" w [temacie Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-- Zredagotuj nową wiadomość w Outlook w sieci Web i chroń ją za pomocą usługi  IRM, wybierając pozycję Ustaw uprawnienia z menu rozszerzonego (![ikona Więcej opcji).](../media/ITPro-EAC-MoreOptionsIcon.gif)
+- Utwórz nowy komunikat w Outlook w sieci Web i IRM-protect, wybierając opcję **Ustaw uprawnienia** z menu rozszerzonego (![Ikona więcej opcji).](../media/ITPro-EAC-MoreOptionsIcon.gif)

@@ -18,24 +18,24 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak utworzyć niestandardowy typ informacji poufnych, który umożliwi korzystanie z reguł spełniających potrzeby organizacji.
-ms.openlocfilehash: f0ebc1bb4b13f9e31ca1a8a1967fce007105cfe6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 69a9808cda2d30cc350da40f6c4f677598c6a000
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753897"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016421"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Dostosuj wbudowany typ informacji poufnych
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Podczas wyszukiwania poufnych informacji w zawartości należy opisać te informacje w tak zwanej *regule*. Ochrona przed utratą danych w Microsoft Purview (DLP) zawiera reguły dla najczęściej używanych typów informacji poufnych, których można używać od razu. Aby korzystać z tych reguł, należy je uwzględnić w zasadach. Może się okazać, że chcesz dostosować te wbudowane reguły do konkretnych potrzeb organizacji i możesz to zrobić, tworząc niestandardowy typ informacji poufnych. W tym temacie przedstawiono sposób dostosowywania pliku XML zawierającego istniejącą kolekcję reguł w celu wykrycia szerszego zakresu potencjalnych informacji o kartach kredytowych.
+Podczas wyszukiwania poufnych informacji w zawartości należy opisać te informacje w tak zwanej *regule*. Usługa Microsoft Purview Data Loss Prevention (DLP) zawiera reguły dotyczące najczęściej używanych typów informacji poufnych, których można używać od razu. Aby korzystać z tych reguł, należy je uwzględnić w zasadach. Może się okazać, że chcesz dostosować te wbudowane reguły do konkretnych potrzeb organizacji i możesz to zrobić, tworząc niestandardowy typ informacji poufnych. W tym temacie przedstawiono sposób dostosowywania pliku XML zawierającego istniejącą kolekcję reguł w celu wykrycia szerszego zakresu potencjalnych informacji o kartach kredytowych.
 
 Możesz skorzystać z tego przykładu i zastosować go do innych wbudowanych typów informacji poufnych. Aby uzyskać listę domyślnych typów informacji poufnych i definicji XML, zobacz [Definicje jednostek typów informacji poufnych](sensitive-information-type-entity-definitions.md).
 
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Eksportowanie pliku XML bieżących reguł
 
-Aby wyeksportować kod XML, musisz [połączyć się z Centrum zabezpieczeń i zgodności za pośrednictwem zdalnego programu PowerShell.](/powershell/exchange/connect-to-scc-powershell)
+Aby wyeksportować kod XML, musisz [połączyć się z programem PowerShell Security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 1. W programie PowerShell wpisz następujące polecenie, aby wyświetlić reguły organizacji na ekranie. Jeśli nie utworzono własnych, zobaczysz tylko domyślne, wbudowane reguły z etykietą "Pakiet reguł firmy Microsoft".
 
@@ -43,7 +43,7 @@ Aby wyeksportować kod XML, musisz [połączyć się z Centrum zabezpieczeń i z
    Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-2. Zapisz reguły organizacji w zmiennej, wpisując następujące polecenie. Przechowywanie czegoś w zmiennej sprawia, że jest ona łatwo dostępna później w formacie, który działa w przypadku zdalnych poleceń programu PowerShell.
+2. Zapisz reguły organizacji w zmiennej, wpisując następujące polecenie. Przechowywanie w zmiennej sprawia, że jest ona łatwo dostępna później w formacie, który działa w przypadku poleceń programu PowerShell.
 
    ```powershell
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
@@ -86,7 +86,7 @@ Po zlokalizowaniu definicji reguły numer karty kredytowej w kodzie XML możesz 
 
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>Modyfikowanie kodu XML i tworzenie nowego typu informacji poufnych
 
-Najpierw należy utworzyć nowy typ informacji poufnych, ponieważ nie można bezpośrednio modyfikować reguł domyślnych. Możesz wykonywać różne czynności przy użyciu niestandardowych typów informacji poufnych, które zostały opisane w temacie [Tworzenie niestandardowego typu informacji poufnych w programie PowerShell Security & Compliance Center](create-a-custom-sensitive-information-type-in-scc-powershell.md). W tym przykładzie zachowamy prostotę i usuniemy tylko dowody potwierdzające i dodamy słowa kluczowe do reguły Numer karty kredytowej.
+Najpierw należy utworzyć nowy typ informacji poufnych, ponieważ nie można bezpośrednio modyfikować reguł domyślnych. Możesz wykonywać różne czynności przy użyciu niestandardowych typów informacji poufnych, które zostały opisane w temacie [Tworzenie niestandardowego typu informacji poufnych w programie PowerShell security & Compliance](create-a-custom-sensitive-information-type-in-scc-powershell.md). W tym przykładzie zachowamy prostotę i usuniemy tylko dowody potwierdzające i dodamy słowa kluczowe do reguły Numer karty kredytowej.
 
 Wszystkie definicje reguł XML są oparte na następującym szablonie ogólnym. Musisz skopiować i wkleić kod XML definicji numeru karty kredytowej w szablonie, zmodyfikować niektóre wartości (zwróć uwagę na ". . ." symbole zastępcze w poniższym przykładzie), a następnie przekaż zmodyfikowany kod XML jako nową regułę, która może być używana w zasadach.
 
@@ -159,7 +159,7 @@ Teraz masz coś, co wygląda podobnie do następującego kodu XML. Ponieważ pak
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>Usuwanie wymogu dowodu potwierdzającego z typu informacji poufnych
 
-Teraz, gdy masz nowy typ informacji poufnych, który możesz przekazać do portal zgodności Microsoft Purview, następnym krokiem jest uczynienie reguły bardziej szczegółową. Zmodyfikuj regułę tak, aby wyszukiwała tylko 16-cyfrowy numer, który przekazuje sumę kontrolną, ale nie wymaga dodatkowych (potwierdzających) dowodów, takich jak słowa kluczowe. W tym celu należy usunąć część kodu XML, która szuka dowodów potwierdzających. Dowody potwierdzające są bardzo pomocne w zmniejszaniu wyników fałszywie dodatnich. W takim przypadku zwykle istnieją pewne słowa kluczowe lub data wygaśnięcia w pobliżu numeru karty kredytowej. Jeśli usuniesz te dowody, dostosuj również pewność, że znaleziono numer karty kredytowej, obniżając `confidenceLevel`wartość , która w tym przykładzie wynosi 85.
+Teraz, gdy masz nowy typ informacji poufnych, który możesz przekazać do portalu zgodności usługi Microsoft Purview, następnym krokiem jest zwiększenie szczegółowości reguły. Zmodyfikuj regułę tak, aby wyszukiwała tylko 16-cyfrowy numer, który przekazuje sumę kontrolną, ale nie wymaga dodatkowych (potwierdzających) dowodów, takich jak słowa kluczowe. W tym celu należy usunąć część kodu XML, która szuka dowodów potwierdzających. Dowody potwierdzające są bardzo pomocne w zmniejszaniu wyników fałszywie dodatnich. W takim przypadku zwykle istnieją pewne słowa kluczowe lub data wygaśnięcia w pobliżu numeru karty kredytowej. Jeśli usuniesz te dowody, dostosuj również pewność, że znaleziono numer karty kredytowej, obniżając `confidenceLevel`wartość , która w tym przykładzie wynosi 85.
 
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
@@ -203,7 +203,7 @@ Aby przekazać regułę, należy wykonać następujące czynności.
 
 1. Zapisz go jako plik .xml z kodowaniem Unicode. Jest to ważne, ponieważ reguła nie będzie działać, jeśli plik zostanie zapisany przy użyciu innego kodowania.
 
-2. [Połączenie do Centrum zabezpieczeń i zgodności za pośrednictwem zdalnego programu PowerShell.](/powershell/exchange/connect-to-scc-powershell)
+2. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 3. W programie PowerShell wpisz następujące polecenie.
 

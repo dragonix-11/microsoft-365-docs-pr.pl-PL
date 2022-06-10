@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Dowiedz się, jak za pomocą programu PowerShell przenieść zawartość ze źródłowego systemu poczty e-mail jednocześnie, przeprowadzając migrację jednorazową do Microsoft 365.
-ms.openlocfilehash: ede2dfc25897012c5cb7e5469abea49e6db4292e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d63b7250cd1c4c34d169521943c3973104b15837
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078696"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008402"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Używanie programu PowerShell do wykonywania migracji jednorazowej do platformy Microsoft 365
 
@@ -41,7 +41,7 @@ Szacowany czas wykonania tego zadania: 2–5 minut na utworzenie partii migracji
 
 Do wykonania tych procedur musisz mieć przypisane uprawnienia. Aby zobaczyć, jakich uprawnień potrzebujesz, zobacz wpis "Migracja" w tabeli w [temacie Uprawnienia adresatów](/exchange/recipients-permissions-exchange-2013-help) .
 
-Aby użyć poleceń cmdlet programu PowerShell Exchange Online, musisz zalogować się i zaimportować polecenia cmdlet do lokalnej sesji Windows PowerShell. Aby uzyskać [instrukcje, zobacz Połączenie, aby Exchange Online za pomocą zdalnego programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Aby użyć poleceń cmdlet programu PowerShell Exchange Online, musisz zalogować się i zaimportować polecenia cmdlet do lokalnej sesji Windows PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie, aby Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Aby uzyskać pełną listę poleceń migracji, zobacz [Przenoszenie i migracja poleceń cmdlet](/powershell/exchange/).
 

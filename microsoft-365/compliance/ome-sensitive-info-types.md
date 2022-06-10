@@ -20,24 +20,26 @@ description: Dowiedz się, jak utworzyć zasady typów informacji poufnych dla o
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: a12c3c559fdd9dcc7bd142e5ee7d58d777211bc7
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 908ec1cf55d8bee06ce9b3b6ccc8eb699d2ba291
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759418"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012301"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Tworzenie zasad typów informacji poufnych dla organizacji przy użyciu szyfrowania komunikatów
 
-Aby utworzyć zasady typów informacji poufnych z Office 365 szyfrowaniem komunikatów, można użyć Exchange reguł przepływu poczty lub ochrony przed utratą danych (DLP). Aby utworzyć regułę przepływu poczty Exchange, możesz użyć <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange (EAC)</a> lub programu PowerShell.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Możesz użyć reguł przepływu poczty Exchange lub ochrony przed utratą danych (DLP) w usłudze Microsoft Purview, aby utworzyć zasady typów informacji poufnych z Office 365 szyfrowaniem komunikatów. Aby utworzyć regułę przepływu poczty Exchange, możesz użyć <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange (EAC)</a> lub programu PowerShell.
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Aby utworzyć zasady przy użyciu reguł przepływu poczty w usłudze EAC
 
-Zaloguj się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a> i przejdź do pozycji **Przepływ** >  **pocztyRules**. Na stronie Reguły utwórz regułę, która ma zastosowanie Office 365 szyfrowania komunikatów. Regułę można utworzyć na podstawie warunków, takich jak obecność niektórych słów kluczowych lub typów informacji poufnych w wiadomości lub załączniku.
+Zaloguj się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a> i przejdź do pozycji **Reguły** **przepływu** >  poczty. Na stronie Reguły utwórz regułę, która ma zastosowanie Office 365 szyfrowania komunikatów. Regułę można utworzyć na podstawie warunków, takich jak obecność niektórych słów kluczowych lub typów informacji poufnych w wiadomości lub załączniku.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Aby utworzyć zasady przy użyciu reguł przepływu poczty w programie PowerShell
 
-Użyj konta służbowego z uprawnieniami administratora globalnego w organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Użyj poleceń cmdlet Set-IRMConfiguration i New-TransportRule, aby utworzyć zasady.
+Użyj konta służbowego z uprawnieniami administratora globalnego w organizacji, aby nawiązać połączenie z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Użyj poleceń cmdlet Set-IRMConfiguration i New-TransportRule, aby utworzyć zasady.
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Przykładowa reguła przepływu poczty utworzona przy użyciu programu PowerShell
 
@@ -66,8 +68,8 @@ Gdy firma Microsoft szyfruje wiadomość, adresaci mają nieograniczony dostęp 
 
 Możesz zaktualizować dowolną odpowiednią dokumentację użytkownika końcowego i materiały szkoleniowe, aby przygotować osoby w organizacji do tej zmiany. W razie potrzeby udostępnij użytkownikom następujące zasoby szyfrowania komunikatów Office 365:
 
-- [Wysyłanie, wyświetlanie i odpowiadanie na zaszyfrowane wiadomości w Outlook dla komputera](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [wideo Microsoft 365 Essentials: szyfrowanie komunikatów Office](https://youtu.be/CQR0cG_iEUc)
+- [Wysyłanie, wyświetlanie i odpowiadanie na zaszyfrowane wiadomości w Outlook dla komputera](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [wideo Microsoft 365 Essentials: szyfrowanie komunikatów](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Wyświetl te zmiany w dzienniku inspekcji
 
@@ -79,4 +81,4 @@ Microsoft 365 przeprowadza inspekcję tego działania i udostępnia ją administ
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Aby wyłączyć lub dostosować zasady typów informacji poufnych
 
-Po utworzeniu reguły przepływu poczty Exchange można [wyłączyć lub edytować regułę](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule), przechodząc do pozycji **Reguły przepływu** >  poczty **w** <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> i wyłączając regułę "*Szyfrowanie wychodzących poufnych wiadomości e-mail (reguła out of box)*".
+Po utworzeniu reguły przepływu poczty Exchange można [wyłączyć lub edytować regułę](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule), przechodząc do pozycji **Reguły** **przepływu** >  poczty w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> i wyłączając regułę "*Szyfrowanie wychodzących poufnych wiadomości e-mail (reguła out of box)*".
