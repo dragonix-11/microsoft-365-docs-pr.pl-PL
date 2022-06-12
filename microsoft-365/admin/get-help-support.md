@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak uzyskać pomoc techniczną online lub telefoniczną dla subskrypcji usługi Microsoft 365 dla firm. Aby uzyskać pomoc techniczną, musisz być administratorem subskrypcji dla firm.
-ms.openlocfilehash: b0caf57ddc71f028cf913f29fa983ed1d7bcffc2
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 3d1b69fef8bd262aada4910c82199203f4cff9ee
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465893"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011787"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>Uzyskiwanie pomocy technicznej dla platformy Microsoft 365 dla firm
 
@@ -59,8 +59,12 @@ Aby zaoszczędzić czas, możesz utworzyć żądanie usługi w trybie online. Po
 
 ## <a name="phone-support"></a>Telefoniczna pomoc techniczna
 
-Pomoc dotycząca rozliczeń jest udzielana w języku angielskim w godzinach 9:00–17:00 (9:00-18:00 w Australii) od poniedziałku do piątku.\
-Pomoc techniczna jest zapewniana w języku angielskim 24 godziny na dobę, 7 dni w tygodniu.\
+Użyj menu rozwijanego poniżej, aby znaleźć numer dla swojego kraju lub regionu.
+
+[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+Godziny pracy działu ds. rozliczeń i pomocy technicznej (oraz języki) są wyświetlane na stronie każdego kraju wybranej z listy rozwijanej.
+
 Dzwoniąc, administratorzy powinni przygotować szczegółowe informacje o koncie.
 
 > [!NOTE]
@@ -73,10 +77,6 @@ Dzwoniąc, administratorzy powinni przygotować szczegółowe informacje o konci
 - **W Kanadzie zadzwoń pod numer 1 800 865 9408.**
 
 - **W Zjednoczonym Królestwie zadzwoń pod numer 0800 032 6417.**
-
-Jeśli numeru telefonu do Twojej pomocy technicznej nie jest wymieniony na powyższej liście, użyj menu rozwijanego poniżej, aby znaleźć numer dla swojego kraju lub regionu.
-
-[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
 
 ## <a name="small-business-support-with-business-assist"></a>Pomoc techniczna dla małych firm przy użyciu Pomocy biznesowej
 
@@ -135,7 +135,7 @@ Firma 21Vianet przypisuje do każdego otwartego zgłoszenia poziom ważności, w
 | Poziom ważności | Opis działań i pomocy | Przykłady |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Poziom A (krytyczny) | Co najmniej jedna z usług nie jest dostępna lub nie nadaje się do użytku. Poważnie wpływa na terminy produkcji, działań lub wdrożenia albo na poziom produkcji lub dochodów. Dotyczy wielu użytkowników lub usług. | <ul><li>Powszechne problemy z wysyłaniem lub odbieraniem poczty.</li><li>Witryna programu SharePoint nie działa.</li><li>Żaden użytkownik nie może wysyłać wiadomości błyskawicznych, dołączać do spotkań programu Skype dla firm ani ich planować lub nawiązywać połączeń przez Skype'a dla firm.</li></ul> |
-| Poziom B (wysoki) | Usługa działa, ale jej sprawność jest ograniczona. Sytuacja ma średni wpływ na działanie firmy i można poradzić sobie z nią w godzinach pracy. Częściowo dotyczy pojedynczego użytkownika, klienta lub usługi. | <ul><li>Przycisk Wyślij w programie Outlook jest zniekształcony.</li><li>Ustawienie jest niemożliwe ze strony Centrum administracyjnego programu Exchange, ale jest możliwe w Windows PowerShell.</li></ul> |
+| Poziom B (wysoki) | Usługa działa, ale jej sprawność jest ograniczona. Sytuacja ma średni wpływ na działanie firmy i można poradzić sobie z nią w godzinach pracy. Częściowo dotyczy pojedynczego użytkownika, klienta lub usługi. | <ul><li>Przycisk Wyślij w programie Outlook jest zniekształcony.</li><li>Ustawienie jest niemożliwe z poziomu Centrum administracyjnego programu Exchange, ale jest możliwe w środowisku PowerShell usługi Exchange Online.</li></ul> |
 | Poziom C (niekrytyczny) | Sytuacja ma minimalny wpływ na działalność firmy. Problem jest istotny, ale nie ma znaczącego wpływu na bieżącą działalność czy produktywność klienta. U jednego użytkownika funkcjonalność usługi jest częściowo zakłócona, ale istnieje akceptowalne obejście problemu. | <ul><li>Jak ustawić hasło użytkownika, które nigdy nie wygasa.</li> <li>Użytkownik nie może usuwać informacji kontaktowych w usłudze Exchange Online.</li></ul> |
 
 ## <a name="technical-support-initial-response-times"></a>Początkowy czas odpowiedzi pomocy technicznej

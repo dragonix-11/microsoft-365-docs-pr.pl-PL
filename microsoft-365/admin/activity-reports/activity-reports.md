@@ -22,23 +22,23 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Uzyskaj okresowy raport o tym, jak osoby w Twojej organizacji korzystają z usług platformy Microsoft 365, i przejdź do szczegółów każdego wykresu, aby uzyskać więcej szczegółowych informacji.
-ms.openlocfilehash: 4757cf72653ffad2caeba45c99d3aabe61517ee4
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 6d773b3f6bf7f2660a2608085b503b1cde1c05c9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144646"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007245"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Raporty platformy Microsoft 365 w centrum administracyjnym
 
-Możesz łatwo sprawdzić, jak osoby w Twojej firmie korzystają z usług platformy Microsoft 365. Na przykład możesz ustalić, kto często korzysta z usługi i osiąga limity przydziału lub kto może w ogóle nie potrzebować licencji platformy Microsoft 365. Model licencji bezterminowej nie zostanie uwzględniony w raportach. 
-  
+Możesz łatwo sprawdzić, jak osoby w Twojej firmie korzystają z usług platformy Microsoft 365. Na przykład możesz ustalić, kto często korzysta z usługi i osiąga limity przydziału lub kto może w ogóle nie potrzebować licencji platformy Microsoft 365. Model licencji bezterminowej nie zostanie uwzględniony w raportach.
+
 Raporty są dostępne dla ostatnich 7 dni, 30 dni, 90 dni i 180 dni. Nie od razu będą istniały dane dla wszystkich okresów raportowania. Raporty stają się dostępne w ciągu 48 godzin.
-  
+
 ## <a name="watch-act-on-a-usage-report-in-office-365"></a>Obejrzyj: Korzystanie z raportu użycia w usłudze Office 365
-  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
-  
+
 ## <a name="how-to-get-to-the-reports-dashboard"></a>Jak przejść do pulpitu nawigacyjnego Raporty
 
 ::: moniker range="o365-worldwide"
@@ -60,13 +60,13 @@ Raporty są dostępne dla ostatnich 7 dni, 30 dni, 90 dni i 180 dni. Nie od razu
 ## <a name="who-can-see-reports"></a>Kto może wyświetlać raporty
 
 Osoby, które mają następujące uprawnienia:
-  
+
 - Administratorzy globalni: Zalecamy przypisanie tej roli tylko kilku osobom w firmie. Pozwala to na ograniczenie ryzyka dla Twojej firmy.
-    
+
 - Administratorzy serwera Exchange
-    
+
 - Administratorzy programu SharePoint
-    
+
 - Administratorzy programu Skype dla firm
 
 - Czytelnik globalny (bez szczegółów użytkownika)
@@ -78,14 +78,14 @@ Osoby, które mają następujące uprawnienia:
 - Administrator aplikacji Teams
 
 - Administrator komunikacji w aplikacji Teams
-    
+
 Aby dowiedzieć się więcej, zobacz [Role administratora — informacje](../add-users/about-admin-roles.md) i [Przypisywanie ról administratorów](../add-users/assign-admin-roles.md).
-  
+
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>Które raporty aktywności są dostępne w centrum administracyjnym
 
 W zależności od subskrypcji we wszystkich środowiskach dostępne są następujące raporty.
 
-|**Raport**|**Publiczny**|**GCC**|**GCC-High**|**DoD**|**Usługa Office 365 obsługiwana przez firmę 21Vianet**|
+|Raport|Publiczne|GCC|GCC-High|DoD|Usługa Office 365 obsługiwana przez firmę 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |[Użycie przeglądarki firmy Microsoft](browser-usage-report.md)|Tak|Nie<sup>1</sup>|Nie<sup>1</sup>|Nie<sup>1</sup>|Nie<sup>1</sup>|
 |[Aktywność poczty e-mail](email-activity-ww.md)|Tak|Tak|Tak|Tak|Tak|
@@ -120,49 +120,46 @@ N/D<sup>2</sup>: usługa nie jest dostępna w środowisku, więc nie ma planu wy
 ## <a name="how-to-view-licensing-information"></a>Jak wyświetlić informacje o licencjonowaniu
 
 - Aby sprawdzić, ile masz licencji przypisanych i nieprzypisanych, w centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencje</a>.
-    
-- Aby sprawdzić, kto ma licencję, kto jej nie ma, a kto jest gościem, przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktywni użytkownicy</a>. 
-  
+
+- Aby sprawdzić, kto ma licencję, kto jej nie ma, a kto jest gościem, przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktywni użytkownicy</a>.
+
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Jak wyświetlić informacje o użyciu dla wybranego użytkownika
 
 Za pomocą raportów usługi dowiesz się, jak często dany użytkownik korzysta z usługi. Aby na przykład dowiedzieć się, ile miejsca do magazynowania skrzynki pocztowej wykorzystał dany użytkownik, otwórz raport użycia skrzynek pocztowych i posortuj użytkowników według nazw. Jeśli masz tysiące użytkowników, wyeksportuj raport do programu Excel, aby szybko przefiltrować listę.
-  
+
 Nie można wygenerować raportu, w którym wprowadzono konto użytkownika, a następnie pobrano listę używanych przez niego usług oraz zakres korzystania z nich.
 
-Istnieją sytuacje, w których nowi użytkownicy są wyświetlani jako **nieznany**. Zwykle jest to spowodowane sporadycznymi opóźnieniami w tworzeniu profilów użytkowników.  
-  
+Istnieją sytuacje, w których nowi użytkownicy są wyświetlani jako **nieznany**. Zwykle jest to spowodowane sporadycznymi opóźnieniami w tworzeniu profilów użytkowników.
+
 ## <a name="show-user-details-in-the-reports"></a>Pokazywanie szczegółów użytkowników w raportach
 
 Domyślnie szczegóły użytkownika będą ukryte dla wszystkich raportów.
-  
-Lista użytkowników będzie wyglądać tak:
- 
-![Raporty — lista zanonimizowanych użytkowników.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
+Lista użytkowników będzie wyglądać tak:
+
+![Raporty — lista zanonimizowanych użytkowników.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
 Jeśli chcesz odkryć informacje na poziomie użytkownika, gdy generujesz raporty, **administrator globalny** może szybko wprowadzić tę zmianę w centrum administracyjnym.
 
 Raporty zawierają informacje o danych użycia organizacji. Domyślnie raporty wyświetlają informacje o identyfikowalnych nazwach użytkowników, grup i witryn. Od 1 września 2021 r. domyślnie ukrywamy informacje o użytkownikach dla wszystkich raportów w ramach naszego stałego zobowiązania, aby pomóc firmom w obsłudze lokalnych przepisów dotyczących prywatności.
 
 Administratorzy globalni mogą cofnąć tę zmianę dla swojej dzierżawy i wyświetlać identyfikowalne informacje o użytkownikach, jeśli zezwalają na to ich praktyki ochrony prywatności w organizacji. Można to osiągnąć w centrum administracyjnym platformy Microsoft 365, wykonując następujące kroki:
-  
+
 1. W centrum administracyjnym przejdź do strony **Ustawienia** \> **Ustawienia organizacji** \> **Usługi**.
 
-2. Wybierz pozycję **Raporty**. 
-  
-3. Usuń zaznaczenie opcji **Wyświetl ukryte nazwy użytkowników, grup i witryn we wszystkich raportach**, a następnie zapisz zmiany.  
-  
-Wprowadzanie tych zmian w raportach na pulpicie nawigacyjnym Raporty potrwa kilka minut. To ustawienie dotyczy również raportów użycia platformy Microsoft 365 w programie [Microsoft Graph](/graph/api/resources/report) i usłudze [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) oraz [raportów użycia w Centrum administracyjnym usługi Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Wyświetlanie identyfikowalnych informacji o użytkowniku jest zarejestrowanym zdarzeniem w dzienniku inspekcji portalu zgodności usługi Microsoft Purview.   
+2. Wybierz pozycję **Raporty**.
 
-  
+3. Usuń zaznaczenie opcji **Wyświetl ukryte nazwy użytkowników, grup i witryn we wszystkich raportach**, a następnie zapisz zmiany.
+
+Wprowadzanie tych zmian w raportach na pulpicie nawigacyjnym Raporty potrwa kilka minut. To ustawienie dotyczy również raportów użycia platformy Microsoft 365 w programie [Microsoft Graph](/graph/api/resources/report) i usłudze [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) oraz [raportów użycia w Centrum administracyjnym usługi Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Wyświetlanie identyfikowalnych informacji o użytkowniku jest zarejestrowanym zdarzeniem w dzienniku inspekcji portalu zgodności usługi Microsoft Purview.
+
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Co się stanie z danymi użycia po zamknięciu konta użytkownika?
 
 Za każdym razem, gdy zamkniesz konto użytkownika, firma Microsoft usunie dane dotyczące użycia tego użytkownika w ciągu 30 dni. Ten użytkownik nadal będzie uwzględniany w sumach wykresu aktywności w okresach, w których był aktywny, ale nie pojawi się w tabeli Szczegóły użytkownika.
-  
+
 Jeśli jednak wybierzesz określony dzień do 28 dni od daty bieżącej, raport będzie przedstawiać użycie danego użytkownika dla tego dnia w tabeli Szczegóły użytkownika.
-  
+
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Raporty w Centrum zabezpieczeń &amp; zgodności](../../compliance/reports-in-security-and-compliance.md) (artykuł)\
 [Analiza użycia platformy Microsoft 365](../usage-analytics/usage-analytics.md) (artykuł)\
 [Dostosowywanie raportów w pakiecie analizy użycia platformy Microsoft 365](../usage-analytics/customize-reports.md) (artykuł)

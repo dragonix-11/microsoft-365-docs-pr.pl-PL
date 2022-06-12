@@ -396,6 +396,8 @@
           href: quarantine-faq.yml
     - name: Przewodniki krok po kroku
       items:
+        - name: Przewodniki krok po kroku dotyczące Ochrony usługi Office 365 w usłudze Microsoft Defender oraz sposób ich używania
+          href: step-by-step-guides/step-by-step-guide-overview.md
         - name: (Fałszywie negatywne) Jak obsługiwać złośliwe wiadomości e-mail dostarczane do adresatów przy użyciu usługi Microsoft Defender dla Office 365
           href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
         - name: (Fałszywie pozytywne) Jak obsługiwać wiarygodne wiadomości e-mail blokowane przed dostarczaniem przy użyciu usługi Microsoft Defender dla Office 365
