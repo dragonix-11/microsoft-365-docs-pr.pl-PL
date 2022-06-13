@@ -22,17 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
-description: Jeśli odpowiadasz za konfigurowanie ustawień poczty e-mail dla wszystkich osób w firmie, w tym artykule wyjaśniono, jak skonfigurować focused skrzynki odbiorcze dla użytkowników.
-ms.openlocfilehash: b2c315b6fb4a4c80f245bcf4731b93996753586a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Jeśli jesteś odpowiedzialny za konfigurowanie ustawień poczty e-mail dla wszystkich osób w firmie, w tym artykule wyjaśniono, jak skonfigurować ukierunkowaną skrzynkę odbiorczą dla użytkowników.
+ms.openlocfilehash: 9c3b17c632c2316f3c36a4f79362895d790b1c7b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984622"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010217"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Konfigurowanie priorytetowej skrzynki odbiorczej dla wszystkich osób w organizacji
 
-Jeśli zakres Twojej odpowiedzialności obejmuje konfigurowanie sposobu działania poczty e-mail dla WSZYSTKICH UŻYTKOWNIKÓW w firmie, ten artykuł jest przeznaczony dla Ciebie. Opisano w nim, jak dostosować lub wyłączyć to konto dla firmy, oraz podawać [odpowiedzi na często zadawane pytania](#faq-for-focused-inbox).
+Jeśli zakres Twojej odpowiedzialności obejmuje konfigurowanie sposobu działania poczty e-mail dla WSZYSTKICH UŻYTKOWNIKÓW w firmie, ten artykuł jest przeznaczony dla Ciebie. Wyjaśniono w nim, jak go dostosować lub wyłączyć dla swojej firmy, oraz odpowiedzi na [często zadawane pytania](#faq-for-focused-inbox).
 
 Jeśli chcesz wyłączyć priorytetową skrzynkę odbiorczą tylko dla siebie, zobacz [Wyłączanie priorytetowej skrzynki odbiorczej](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
 
@@ -40,13 +40,13 @@ Jeśli chcesz zagwarantować, że użytkownicy otrzymują firmowe wiadomości e-
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>Włączanie lub wyłączanie priorytetowej skrzynki odbiorczej w organizacji
 
-Za pomocą programu PowerShell możesz włączyć lub wyłączyć priorytetową skrzynkę odbiorczą dla wszystkich użytkowników w Twojej organizacji. Chcesz to zrobić w programie centrum administracyjne platformy Microsoft 365? Powiadom o tym nasz zespół inżynierów. **[Zagłosuj tutaj!](https://go.microsoft.com/fwlink/?linkid=862489)**
+Za pomocą programu PowerShell możesz włączyć lub wyłączyć priorytetową skrzynkę odbiorczą dla wszystkich użytkowników w Twojej organizacji. Czy chcesz to zrobić w Centrum administracyjne platformy Microsoft 365? Powiadom o tym nasz zespół inżynierów. **[Zagłosuj tutaj!](https://go.microsoft.com/fwlink/?linkid=862489)**
   
 **Aby wyłączyć priorytetową skrzynkę odbiorczą:**
   
 W poniższym przykładzie polecenie programu PowerShell **wyłącza** priorytetową skrzynkę odbiorczą w organizacji. Nie zablokowano jednak w ten sposób dostępności tej funkcji dla użytkowników. W razie potrzeby użytkownicy mogą mimo to ponownie włączyć priorytetową skrzynkę odbiorczą na każdym ze swoich klientów. 
   
-1. [Połączenie użyć Exchange Online zdalnej pracy z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Do wykonania tych procedur musisz mieć przypisane uprawnienia. Aby zobaczyć, jakich uprawnień potrzebujesz, zobacz wpis „Reguły transportu" w artykule [Uprawnienia dotyczące zasad obsługi wiadomości i zgodności](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
@@ -90,13 +90,13 @@ Jeśli użytkownik postanowi zacząć korzystać z priorytetowej skrzynki odbior
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Włączanie lub wyłączanie priorytetowej skrzynki odbiorczej dla określonych użytkowników
 
-W tym przykładzie **wyłączono** priorytetową skrzynkę odbiorczą dla Dominika Michalskiego w organizacji Contoso. Nie zablokowano jednak w ten sposób dostępności tej funkcji dla niego. W razie potrzeby może on mimo to ponownie włączyć focused skrzynki odbiorcze na każdym ze swoich klientów. 
+W tym przykładzie **wyłączono** priorytetową skrzynkę odbiorczą dla Dominika Michalskiego w organizacji Contoso. Nie zablokowano jednak w ten sposób dostępności tej funkcji dla niego. Jeśli chce, nadal może ponownie włączyć skoncentrowaną skrzynkę odbiorczą na każdym ze swoich klientów. 
   
-1. [Połączenie użyć Exchange Online zdalnej pracy z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Do wykonania tych procedur musisz mieć przypisane uprawnienia. Aby zobaczyć, jakich uprawnień potrzebujesz, zobacz wpis „Reguły transportu" w temacie Uprawnienia dotyczące zasad obsługi wiadomości i zgodności.
 
-3. Uruchom polecenie **cmdlet Get-FocusedInbox** , na przykład: 
+3. Uruchom polecenie cmdlet **Get-FocusedInbox** , na przykład: 
 
     ```powershell
     Get-FocusedInbox -Identity <tim@contoso.com>
@@ -106,7 +106,7 @@ W tym przykładzie **wyłączono** priorytetową skrzynkę odbiorczą dla Domini
 
     ![Response from PowerShell on state of Focused Inbox.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
-5. Uruchom następujące polecenie cmdlet, aby wyłączyć focused skrzynkę odbiorczą:
+5. Uruchom następujące polecenie cmdlet, aby wyłączyć skoncentrowaną skrzynkę odbiorczą:
 
     ```powershell
     Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
@@ -122,40 +122,40 @@ W tym przykładzie **wyłączono** priorytetową skrzynkę odbiorczą dla Domini
 
 1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centrum administracyjnego programu Exchange</a>.
 
-2. Przejdź do **reguł przepływu poczty e-mail**\>. Wybierz ikonę ![Dodaj w aplikacji EAC.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) a następnie wybierz **pozycję Utwórz nową regułę...**. 
+2. Przejdź do **pozycji Reguły** **przepływu** \> poczty. Wybierz pozycję ![EAC Dodaj ikonę.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) a następnie wybierz **pozycję Utwórz nową regułę...**. 
 
-3. Po zakończeniu tworzenia nowej reguły **wybierz pozycję Zapisz** , aby uruchomić regułę.
+3. Po zakończeniu tworzenia nowej reguły wybierz pozycję **Zapisz** , aby uruchomić regułę.
 
-    Na poniższej ilustracji przedstawiono przykład, w którym wszystkie wiadomości z "Dział płac" mają być dostarczane do skrzynki odbiorczej, w której mają być dostarczane wiadomości z działu płac.
+    Na poniższej ilustracji przedstawiono przykład, w którym wszystkie komunikaty z "działu płac" mają być dostarczane do skrzynki odbiorczej skoncentrowanej.
 
-    ![focusedinbox payroll.](../../media/focusedinbox-transport-rule.PNG)
+    ![listy płac focusedinbox.](../../media/focusedinbox-transport-rule.PNG)
 
     > [!NOTE]
     > Tekst wartości nagłówka wiadomości w tym przykładzie to **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Użyj programu PowerShell, aby utworzyć regułę transportu kierującą wiadomości e-mail do widoku Priorytetowe u wszystkich użytkowników.
 
-1. [Połączenie użyć Exchange Online zdalnej pracy z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Do wykonania tych procedur musisz mieć przypisane uprawnienia. Aby zobaczyć, jakich uprawnień potrzebujesz, zobacz wpis „Reguły transportu" w artykule [Uprawnienia dotyczące zasad obsługi wiadomości i zgodności](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
-3. Uruchom następujące polecenie, aby zezwolić na przykład na to, aby wszystkie wiadomości z działu płac były dostarczane do skrzynki odbiorczej, która ma być skupiona na wypłatach.
+3. Uruchom następujące polecenie, aby zezwolić na dostarczanie wszystkich komunikatów z "Działu płac", na przykład do ukierunkowanej skrzynki odbiorczej.
 
     ```powershell
     New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
     ```
 
 > [!IMPORTANT]
-> W tym przykładzie zarówno "X-MS-Exchange-Organization-BypassFocusedInbox", jak i "true" są rozróżniana wielkość liter.
-> Ponadto priorytetowa skrzynka odbiorcza będzie korzystać z nagłówka X pomijającej mało istotne, więc jeśli użyjemy tego ustawienia w obszarze Mało istotne, będzie ono używane w priorytetowej skrzynce odbiorczej. Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Polecenie New-TransportRule](/powershell/module/exchange/new-transportrule).
+> W tym przykładzie zarówno "X-MS-Exchange-Organization-BypassFocusedInbox", jak i "true" uwzględniają wielkość liter.
+> Ponadto skoncentrowana skrzynka odbiorcza będzie uwzględniać nagłówek X, który pomija element Clutter, więc jeśli użyjesz tego ustawienia w obszarze Bałagan, będzie ono używane w skoncentrowanej skrzynce odbiorczej. Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Polecenie New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ### <a name="how-do-you-know-this-worked"></a>Skąd wiadomo, że to działanie się powiodło?
 
-Możesz sprawdzić nagłówki wiadomości e-mail, aby ustalić, czy wiadomości e-mail trafiają do skrzynki odbiorczej dzięki pomijaniu reguły transportu priorytetowej skrzynki odbiorczej. Wybierz wiadomość e-mail ze skrzynki pocztowej w Twojej organizacji, w której jest stosowana reguła transportu priorytetowej skrzynki odbiorczej. Spójrz na nagłówki dołączone do wiadomości: powinien być widoczny nagłówek **X-MS-Exchange-Organization-BypassFocusedInbox: true**. Oznacza to, że pomijanie działa. Aby uzyskać informacje [o tym, jak znaleźć informacje o nagłówku](https://go.microsoft.com/fwlink/p/?LinkId=822530) , zobacz artykuł Wyświetlanie informacji nagłówka internetowego wiadomości e-mail.
+Możesz sprawdzić nagłówki wiadomości e-mail, aby ustalić, czy wiadomości e-mail trafiają do skrzynki odbiorczej dzięki pomijaniu reguły transportu priorytetowej skrzynki odbiorczej. Wybierz wiadomość e-mail ze skrzynki pocztowej w Twojej organizacji, w której jest stosowana reguła transportu priorytetowej skrzynki odbiorczej. Spójrz na nagłówki dołączone do wiadomości: powinien być widoczny nagłówek **X-MS-Exchange-Organization-BypassFocusedInbox: true**. Oznacza to, że pomijanie działa. Zapoznaj się z [artykułem Wyświetlanie informacji nagłówka internetu dla wiadomości e-mail](https://go.microsoft.com/fwlink/p/?LinkId=822530) , aby uzyskać informacje na temat znajdowania informacji nagłówka.
 
 ### <a name="what-will-the-user-see"></a>Co zobaczy użytkownik?
 
-Jeśli reguła transportu jest w miejscu, zostanie wyświetlone powiadomienie o zastąpieniu. Outlook w sieci Web ustawienie "Zawsze przekieruj do innych" i zostanie pokazana etykietka narzędzia. Outlook klientów klasycznych zezwala na wybór opcji "Zawsze przekieruj do innej" i spowoduje wyskakujące okno dialogowe.
+Jeśli reguła transportu jest w miejscu, zostanie wyświetlone powiadomienie dla przesłonięcia. Outlook w sieci Web spowoduje wyłączenie opcji "Always move to Other" i wyświetlenie etykietki narzędzia. Outlook klienci na pulpicie będą zezwalać na wybór opcji "Zawsze przenieś do innych" i wyskakują okno dialogowe.
 
 ## <a name="turn-onoff-clutter"></a>Włączanie/wyłączanie funkcji oznaczania jako mało istotne
 
@@ -163,7 +163,7 @@ Otrzymaliśmy zgłoszenia, że funkcja oznaczania jako mało istotne nagle przes
 
 ## <a name="faq-for-focused-inbox"></a>Często zadawane pytania dotyczące priorytetowej skrzynki odbiorczej
 
-Poniżej znajdują się odpowiedzi na często zadawane pytania dotyczące focusedj skrzynki odbiorczej.
+Poniżej przedstawiono odpowiedzi na często zadawane pytania dotyczące ukierunkowanej skrzynki odbiorczej.
 
 ### <a name="can-i-control-how-i-roll-out-focused-inbox-in-my-organization"></a>Czy można kontrolować sposób wdrażania priorytetowej skrzynki odbiorczej w organizacji?
 
@@ -209,10 +209,10 @@ Istnieją dwa polecenia cmdlet umożliwiające kontrolowanie priorytetowej skrzy
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>Czy można uruchomić skrypt, aby zobaczyć, kto ma włączoną priorytetową skrzynkę odbiorczą?
 
-Nie i jest to zamierzone. Włączenie focused inbox is a client-side setting, so all the cmdlet can do is tell you if the user's mailbox is eligible for the client experience. Ta funkcja może być włączona w niektórych klientach i jednocześnie wyłączona w innych, na przykład włączona w aplikacji Outlook i aplikacji mobilnej Outlook oraz wyłączona w aplikacji Outlook w sieci Web.
+Nie i jest to zamierzone. Włączenie skoncentrowanej skrzynki odbiorczej jest ustawieniem po stronie klienta, dlatego polecenie cmdlet może tylko poinformować, czy skrzynka pocztowa użytkownika kwalifikuje się do obsługi klienta. Ta funkcja może być włączona w niektórych klientach i jednocześnie wyłączona w innych, na przykład włączona w aplikacji Outlook i aplikacji mobilnej Outlook oraz wyłączona w aplikacji Outlook w sieci Web.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Konfigurowanie folderu Mało istotne dla organizacji](../email/configure-clutter.md) (artykuł)\
+[Konfigurowanie bałaganu dla organizacji](../email/configure-clutter.md) (artykuł)\
 [Konfigurowanie ustawień udostępnionej skrzynki pocztowej](../email/configure-a-shared-mailbox.md) (artykuł)\
-[Tworzenie podpisów i zastrzeżeń](create-signatures-and-disclaimers.md) (wideo)
+[Tworzenie podpisów i zrzeczenia się odpowiedzialności](create-signatures-and-disclaimers.md) (wideo)

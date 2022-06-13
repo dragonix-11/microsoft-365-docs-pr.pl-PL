@@ -1,5 +1,5 @@
 ---
-title: Odśwież dokładny plik tabeli źródła informacji zgodnych z danymi
+title: Odświeżanie dokładnego pliku tabeli źródła informacji poufnych zgodnych z danymi poufnymi
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Odśwież plik tabeli źródła informacji poufnych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760850"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008850"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Odświeżanie dokładnego pliku tabeli źródła informacji poufnych zgodnych z danymi poufnymi 
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Bazę danych informacji poufnych można odświeżać maksymalnie 5 razy co 24 godziny. Musisz ponownie przekazać i przekazać tabelę źródła informacji poufnych.
 
@@ -39,15 +41,15 @@ Bazę danych informacji poufnych można odświeżać maksymalnie 5 razy co 24 go
 
    |Metoda|Co robić|
    |---|---|
-   |Windows PowerShell|Zobacz dokumentację [scheduledtasks](/powershell/module/scheduledtasks/) i [przykładowy skrypt programu PowerShell](#example-powershell-script-for-task-scheduler) w tym artykule|
+   |PowerShell|Zobacz dokumentację [scheduledtasks](/powershell/module/scheduledtasks/) i [przykładowy skrypt programu PowerShell](#example-powershell-script-for-task-scheduler) w tym artykule|
    |Interfejs API harmonogramu zadań|Zobacz dokumentację [harmonogramu zadań](/windows/desktop/TaskSchd/using-the-task-scheduler)|
    |interfejs użytkownika Windows|W Windows kliknij przycisk **Start** i wpisz Harmonogram zadań. Następnie na liście wyników kliknij prawym przyciskiem myszy harmonogram **zadań** i wybierz pozycję **Uruchom jako administrator**.|
 
-### <a name="example-powershell-script-for-task-scheduler"></a>Przykładowy skrypt programu PowerShell dla harmonogramu zadań 
+## <a name="example-powershell-script-for-task-scheduler"></a>Przykładowy skrypt programu PowerShell dla harmonogramu zadań
 
 Ta sekcja zawiera przykładowy skrypt programu PowerShell, za pomocą którego można zaplanować zadania tworzenia skrótów danych i przekazywania danych skrótu:
 
-#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Planowanie tworzenia skrótów i przekazywania w połączonym kroku
+### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Planowanie tworzenia skrótów i przekazywania w połączonym kroku
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -82,7 +84,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Planowanie tworzenia skrótów i przekazywania jako oddzielnych kroków
+### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Planowanie tworzenia skrótów i przekazywania jako oddzielnych kroków
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)

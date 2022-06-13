@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj etykiet poufności, aby skonfigurować domyślny typ łącza udostępniania dla witryn i dokumentów w SharePoint i OneDrive.
-ms.openlocfilehash: 132a526cc591f34722e4c0e8d4982859790558da
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0c72d35399a0185bbd8cf58b5eac58241a695b72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286895"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012323"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Użyj etykiet poufności, aby skonfigurować domyślny typ łącza udostępniania dla witryn i dokumentów w SharePoint i OneDrive
 
@@ -58,14 +58,14 @@ Aby zastosować domyślny typ łącza udostępniania dla witryn, etykiety poufno
 
 Aby zastosować domyślny typ łącza udostępniania dla dokumentów w SharePoint i OneDrive, należy włączyć etykiety poufności dla tych usług. Jeśli ta funkcja nie jest jeszcze włączona dla dzierżawy, zobacz [Jak włączyć etykiety poufności dla SharePoint i OneDrive (zgoda)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
-W sesji programu PowerShell musisz [nawiązać połączenie z programem PowerShell Office 365 Security & Compliance Center](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell), aby skonfigurować ustawienia domyślnego typu łącza udostępniania.
+W sesji programu PowerShell należy [nawiązać połączenie z programem PowerShell Office 365 Security & Compliance](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell), aby skonfigurować ustawienia domyślnego typu łącza udostępniania.
 
 > [!NOTE]
 > Chociaż nie jest to wymagane, najłatwiej jest najpierw [utworzyć i skonfigurować etykiety poufności w portalu zgodności usługi Microsoft Purview](create-sensitivity-labels.md), a następnie zmodyfikować te etykiety przy użyciu ustawień, które konfigurują domyślny typ łącza udostępniania.
 
 ## <a name="how-to-configure-settings-for-the-default-sharing-link-type"></a>Jak skonfigurować ustawienia domyślnego typu linku udostępniania
 
-Ustawienia konfiguracji domyślnego typu łącza udostępniania używają parametru *AdvancedSettings* programu PowerShell z poleceniami cmdlet [Set-Label](/powershell/module/exchange/set-label) i [New-Label](/powershell/module/exchange/new-labelpolicy) z programu [PowerShell Security & Compliance Center](/powershell/exchange/scc-powershell):
+Ustawienia konfiguracji domyślnego typu łącza udostępniania używają parametru *AdvancedSettings* programu PowerShell z poleceniami cmdlet [Set-Label](/powershell/module/exchange/set-label) i [New-Label](/powershell/module/exchange/new-labelpolicy) z programu [PowerShell Security & Compliance](/powershell/exchange/scc-powershell):
 
 - **DefaultSharingScope**: Dostępne wartości to:
     - **SpecificPeople**: ustawia domyślny link udostępniania witryny na link "Określone osoby"

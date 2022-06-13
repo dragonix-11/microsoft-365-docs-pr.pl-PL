@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: Administratorzy mogą dowiedzieć się, jak usługa EOP używa uwierzytelniania poczty e-mail (SPF, DKIM i DMARC), aby zapobiec fałszowaniu, wyłudzaniu informacji i spamowi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b0a1f1bec76a8dd22bc04502ea7ca09f2c7af66
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0dca070cb6d6d1b2cb26acb3604e331f27824877
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772779"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008872"
 ---
 # <a name="email-authentication-in-eop"></a>Uwierzytelnianie za pomocą poczty e-mail w ramach EOP
 
@@ -170,7 +170,6 @@ W przypadku domen zewnętrznych sfałszowany użytkownik jest domeną w polu Adr
 
 - Źródłowy adres IP (podzielony na zakresy CIDR /24)
 - Domena organizacyjna odwrotnego rekordu DNS (PTR).
-- Zweryfikowana domena DKIM.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Tworzenie wpisu zezwalania dla pary nadawcy/odbiorcy
 

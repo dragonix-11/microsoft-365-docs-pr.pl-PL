@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,20 +17,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak wyświetlać ryzykownych użytkowników i zarządzać nimi.
-ms.openlocfilehash: dad86fedeb27f13752bcd1c07efd0d51aa33cf2a
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 45c91ec0871393f69e7a166cc8582f149479ad1b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022938"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011843"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Wyświetlanie ryzykownych użytkowników i zarządzanie nimi w Microsoft 365 Lighthouse
 
-Firma Microsoft zbiera i analizuje biliony sygnałów logowania użytkowników każdego dnia. Te sygnały służą do tworzenia dobrych wzorców zachowania logowania użytkowników i identyfikowania potencjalnych ryzykownych prób logowania. Azure Active Directory (Azure AD) Identity Protection używa tych sygnałów do przeglądania prób logowania użytkowników i podejmowania działań w przypadku wystąpienia podejrzanych działań.
+Firma Microsoft zbiera i analizuje biliony sygnałów logowania użytkowników każdego dnia. Te sygnały służą do tworzenia dobrych wzorców zachowania logowania użytkowników i identyfikowania potencjalnych ryzykownych prób logowania. Azure Active Directory (Azure AD) Usługa Identity Protection używa tych sygnałów do przeglądania prób logowania użytkowników i podejmowania działań w przypadku wystąpienia podejrzanych działań.
 
-Microsoft 365 Lighthouse pomaga zarządzać ryzykiem wykrytym przez usługę Azure AD Identity Protection, zapewniając pojedynczy widok ryzykownych użytkowników we wszystkich zarządzanych dzierżawach. Możesz szybko zabezpieczyć ryzykownych użytkowników, resetując ich hasło lub blokując im logowanie się do konta Microsoft 365. Możesz również wyświetlić szczegółowe informacje, aby lepiej zrozumieć ryzyko użytkownika i określić kolejne kroki.
+Microsoft 365 Lighthouse pomaga zarządzać ryzykiem wykrytym przez usługę Azure AD Identity Protection, udostępniając jeden widok ryzykownych użytkowników we wszystkich zarządzanych dzierżawach. Możesz szybko zabezpieczyć ryzykownych użytkowników, resetując ich hasło lub blokując im logowanie się do konta Microsoft 365. Możesz również wyświetlić szczegółowe informacje, aby lepiej zrozumieć ryzyko użytkownika i określić kolejne kroki.
 
-Usługa Azure AD Identity Protection identyfikuje zagrożenia wielu typów, w tym:
+Azure AD Identity Protection identyfikuje zagrożenia wielu typów, w tym:
 
 - Wyciek poświadczeń
 - Użycie anonimowego adresu IP
@@ -48,7 +49,7 @@ Aby użytkownicy mogli pojawić się na liście ryzykownych użytkowników, nale
 
 ## <a name="review-detected-risks-and-take-action"></a>Przejrzyj wykryte zagrożenia i podejmij działania
 
-W usłudze Azure AD Identity Protection wykrywanie ryzyka obejmuje wszelkie zidentyfikowane podejrzane akcje związane z kontami użytkowników w usłudze Azure AD.
+W Azure AD Identity Protection wykrywanie ryzyka obejmuje wszelkie zidentyfikowane podejrzane akcje związane z kontami użytkowników w Azure AD.
 
 1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Użytkownicy**.
 
@@ -88,6 +89,6 @@ Aby jednocześnie podjąć działania wobec wielu użytkowników, których dotyc
 > Jeśli organizacja, którą zarządzasz, ma licencję Azure AD — wersja Premium P2, zaleca się włączenie zasad dostępu warunkowego opartego na ryzyku użytkownika. Aby uzyskać więcej informacji, zobacz [Dostęp warunkowy: Dostęp warunkowy oparty na ryzyku użytkownika](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
 
 ## <a name="related-content"></a>Zawartość pokrewna
-[Samouczek: używanie wykrywania ryzyka dla logowań użytkowników w celu wyzwolenia usługi Azure AD Multi-Factor Authentication lub zmian haseł](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (artykuł)\
+[Samouczek: używanie wykrywania ryzyka dla logowań użytkowników do wyzwalania Azure AD multi-factor authentication lub zmian haseł](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (artykuł)\
 [Co to jest ryzyko?](/azure/active-directory/identity-protection/concept-identity-protection-risks) (artykuł) \
 [Korygowanie ryzyka i odblokowywanie użytkowników](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (artykuł)

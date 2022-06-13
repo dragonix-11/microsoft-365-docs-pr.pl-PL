@@ -1,5 +1,5 @@
 ---
-title: Tworzenie zasad DLP w celu ochrony dokumentów za pomocą fci lub innych właściwości
+title: Tworzenie zasad DLP w celu ochrony dokumentów
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,146 +20,146 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkSPO
-description: Dowiedz się, jak używać zasad ochrony przed utratą danych (DLP, Data Loss Prevention) w celu ochrony dokumentów, które mają właściwości z systemu innej firmy.
-ms.openlocfilehash: 0bfb520119717d952a803e0f37fef0a1499ff0da
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak za pomocą zasad ochrony przed utratą danych (DLP) chronić dokumenty, które mają właściwości z systemu innej firmy.
+ms.openlocfilehash: 1b73f1441909c49534c17cef47804021ca2824dd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312157"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007267"
 ---
-# <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Tworzenie zasad DLP w celu ochrony dokumentów za pomocą fci lub innych właściwości
+# <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Twórz zasady DLP w celu ochrony dokumentów z właściwościami FCI lub innymi
 
-Microsoft 365 ochrony przed utratą danych (DLP, data loss prevention) mogą używać właściwości klasyfikacji lub właściwości elementów do identyfikowania poufnych elementów. Możesz na przykład użyć:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-- Windows infrastruktury klasyfikacji plików serwera (FCI)
+Zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview mogą używać właściwości klasyfikacji lub właściwości elementów do identyfikowania poufnych elementów. Można na przykład użyć następujących elementów:
+
+- Właściwości infrastruktury klasyfikacji plików serwera Windows (FCI)
 - SharePoint właściwości dokumentu
-- Właściwości dokumentu systemowego innej firmy
+- Właściwości dokumentu systemu innej firmy
 
-![Diagram przedstawiający Office 365 klasyfikacji i zewnętrznego systemu klasyfikacji.](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
+![Diagram przedstawiający Office 365 i zewnętrzny system klasyfikacji.](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
-Na przykład organizacja może używać funkcji FCI programu Windows Server do identyfikowania elementów danych osobowych, takich jak numery PESEL, a następnie klasyfikować dokument, ustawiając właściwość Informacji umożliwiających identyfikację  użytkownika na **wysoki,** umiarkowany **, niski****, publiczny** lub  nieudostępniany na podstawie typu i liczby wystąpień danych osobowych znalezionych w dokumencie.
+Na przykład organizacja może używać interfejsu FCI serwera Windows do identyfikowania elementów z danymi osobowymi, takich jak numery ubezpieczenia społecznego, a następnie klasyfikować dokument, ustawiając właściwość **Dane osobowe** na **wartość Wysoka**, **Umiarkowana**, **Niska**, **Publiczna** lub **Nie**, na podstawie typu i liczby wystąpień danych osobowych znalezionych w dokumencie.
 
-W programie Microsoft 365 można utworzyć zasady DLP identyfikujące dokumenty, dla których ta właściwość jest ustawiona na określone wartości, takie jak Wysoki i  **Średni, a** następnie akcji, takiej jak blokowanie dostępu do tych plików. Te same zasady mogą mieć inną regułę, która wymaga innej akcji, jeśli właściwość jest ustawiona na Wartość **niska, na** przykład wysłanie powiadomienia e-mail. Dzięki temu ochrona przed zabezpieczeniami DLP jest zintegrowana z usługą Windows Server FCI i pomaga chronić dokumenty Office przekazane lub udostępnione do usługi Microsoft 365 z serwerów plików opartych na Windows Server.
+W Microsoft 365 można utworzyć zasady DLP identyfikujące dokumenty, które mają tę właściwość ustawioną na określone wartości, takie jak **Wysokie** i **Średnie**, a następnie wykonać akcję, taką jak blokowanie dostępu do tych plików. Te same zasady mogą mieć inną regułę, która wykonuje inną akcję, jeśli właściwość jest ustawiona na **Wartość Niska**, na przykład wysyłanie powiadomienia e-mail. W ten sposób DLP integruje się z Windows Server FCI i może pomóc w ochronie Office dokumentów przekazanych lub udostępnionych do Microsoft 365 z serwerów plików opartych na serwerze Windows.
 
-Zasady DLP po prostu wyszukuje określoną parę nazwa/wartość właściwości. Można używać dowolnej właściwości dokumentu, o ile ma ona odpowiadającą jej właściwość zarządzaną do SharePoint wyszukiwania. Na przykład zbiór SharePoint może używać typu zawartości o nazwie **Raport** podróży z wymaganym polem o nazwie **Klient**. Ilekroć osoba tworzy raport z podróży, musi wprowadzić nazwę klienta. Tej pary nazwa/wartość właściwości można także używać w zasadach DLP, na przykład jeśli chcesz, aby reguła blokowała dostęp do dokumentu dla gości, gdy pole Klient zawiera  nazwę **Contoso**.
+Zasady DLP po prostu szukają określonej pary nazw/wartości właściwości. Można użyć dowolnej właściwości dokumentu, o ile właściwość ma odpowiednią właściwość zarządzaną do SharePoint wyszukiwania. Na przykład SharePoint zbioru witryn może używać typu zawartości o nazwie **Trip Report** z wymaganym polem o nazwie **Klient**. Za każdym razem, gdy dana osoba tworzy raport podróży, musi wprowadzić nazwę klienta. Tej pary nazwy/wartości właściwości można również użyć w zasadach DLP — na przykład jeśli chcesz mieć regułę, która blokuje dostęp do dokumentu dla gości, gdy pole **Klient** zawiera firmę **Contoso**.
 
-Jeśli chcesz zastosować zasady DLP do zawartości z określonymi etykietami Microsoft 365, nie należy postępować zgodnie z instrukcjami w tym miejscu. Zamiast tego dowiedz się, jak [używać etykiety przechowywania jako warunku w zasadach DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+Jeśli chcesz zastosować zasady DLP do zawartości z określonymi etykietami Microsoft 365, nie należy postępować zgodnie z poniższymi krokami. Zamiast tego dowiedz się, jak [używać etykiety przechowywania jako warunku w zasadach DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
 ## <a name="before-you-create-the-dlp-policy"></a>Przed utworzeniem zasad DLP
 
-Aby można było używać właściwości Windows Server FCI lub innej właściwości w zasadach DLP, należy utworzyć właściwość zarządzaną w centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint administracyjnego</a>. Oto dlaczego.
+Aby można było użyć właściwości Windows Server FCI lub innej właściwości w zasadach DLP, należy utworzyć właściwość zarządzaną w <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centrum administracyjnym SharePoint</a>. Oto dlaczego.
 
-W SharePoint w trybie online OneDrive dla Firm indeks wyszukiwania jest wbudowany przez przeszukiwanie zawartości witryn. Przeszukiwarka wybiera zawartość i metadane z dokumentów w formie właściwości przeszukanych. Schemat wyszukiwania pomaga przeszukiwarce zdecydować, jaką zawartość i które metadane wybrać. Przykładami metadanych są autor i tytuł dokumentu. Jednak aby pobrać zawartość i metadane z dokumentów do indeksu wyszukiwania, trzeba zamapować właściwości przeszukane na właściwości zarządzane. W indeksie są przechowywane tylko właściwości zarządzane. Na przykład właściwość przeszukana związana z autorem jest mapowana na właściwość zarządzaną związaną z autorem.
+W SharePoint Online i OneDrive dla Firm indeks wyszukiwania jest kompilowany przez przeszukiwanie zawartości w witrynach. Przeszukiwarka pobiera zawartość i metadane z dokumentów w postaci przeszukanych właściwości. Schemat wyszukiwania pomaga przeszukiwarce zdecydować, jaką zawartość i metadane należy pobrać. Przykładami metadanych są autor i tytuł dokumentu. Jednak aby pobrać zawartość i metadane z dokumentów do indeksu wyszukiwania, przeszukane właściwości muszą być mapowane na właściwości zarządzane. W indeksie są przechowywane tylko właściwości zarządzane. Na przykład właściwość przeszukana powiązana z autorem jest mapowana na właściwość zarządzaną powiązaną z autorem.
 
 > [!NOTE]
-> Pamiętaj, aby używać nazwy właściwości zarządzanej, a nie nazwy właściwości przeszukaowej podczas tworzenia reguł DLP przy użyciu `ContentPropertyContainsWords` warunku.
+> Podczas tworzenia reguł DLP przy użyciu warunku należy użyć nazwy właściwości zarządzanej, a nie nazwy właściwości przeszukanej `ContentPropertyContainsWords` .
 
-Jest to szczególnie ważne, ponieważ ta wyszukiwarka używa przeszukiwarki do identyfikowania i klasyfikowania informacji poufnych w witrynach, a następnie do przechowywania tych informacji poufnych w bezpiecznej części indeksu wyszukiwania. Gdy dokument jest przesyłany do Office 365, SharePoint automatycznie tworzy właściwości przeszukane na podstawie właściwości dokumentu. Jednak aby w zasadach DLP użyć właściwości FCI lub innej, ta właściwość przeszukana musi zostać zamapowana na właściwość zarządzaną, aby zawartość tej właściwości był przechowywana w indeksie.
+Jest to ważne, ponieważ DLP używa przeszukiwarki do identyfikowania i klasyfikowania poufnych informacji w witrynach, a następnie przechowywania tych poufnych informacji w bezpiecznej części indeksu wyszukiwania. Podczas przekazywania dokumentu do Office 365 SharePoint automatycznie tworzy właściwości przeszukane na podstawie właściwości dokumentu. Jednak aby użyć interfejsu FCI lub innej właściwości w zasadach DLP, właściwość przeszukana musi zostać zamapowana na właściwość zarządzaną, aby zawartość z tą właściwością była przechowywana w indeksie.
 
-Aby uzyskać więcej informacji na temat wyszukiwania i właściwości zarządzanych, zobacz [Zarządzanie schematem wyszukiwania w u SharePoint Online](/sharepoint/manage-search-schema).
+Aby uzyskać więcej informacji na temat wyszukiwania i właściwości zarządzanych, zobacz [Zarządzanie schematem wyszukiwania w usłudze SharePoint Online](/sharepoint/manage-search-schema).
 
-### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Krok 1. Upload dokument z potrzebną właściwością do Office 365
+### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Krok 1. Przekazywanie dokumentu z wymaganą właściwością do Office 365
 
-Najpierw musisz przekazać dokument z właściwością, do której chcesz się odwołać w zasadach DLP. Microsoft 365 wykryje właściwość i automatycznie utworzy na jej stronie właściwość przeszukaną. W następnym kroku utworzysz właściwość zarządzaną, a następnie zamapujesz tę właściwość zarządzaną na tę właściwość przeszukaną.
+Najpierw musisz przekazać dokument z właściwością, do której chcesz się odwołać w zasadach DLP. Microsoft 365 wykryje właściwość i automatycznie utworzy z niej właściwość przeszukaną. W następnym kroku utworzysz właściwość zarządzaną, a następnie zmapujesz właściwość zarządzaną na tę właściwość przeszukaną.
 
 ### <a name="step-2-create-a-managed-property"></a>Krok 2. Tworzenie właściwości zarządzanej
 
 1. Zaloguj się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjnego usługi Microsoft 365</a>.
 
-2. W lewym okienku nawigacji wybierz pozycję **Centra administracyjne** \> **SharePoint**. Jesteś teraz w centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">administracyjnym SharePoint</a>.
+2. W obszarze nawigacji po lewej stronie wybierz pozycję **Centra** \> administracyjne **SharePoint**. Jesteś teraz w <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centrum administracyjnym SharePoint</a>.
 
-3. W lewym okienku nawigacji wybierz pozycję **wyszukaj** \> na stronie **administracji wyszukiwania** Zarządzaj \> **schematem wyszukiwania**.
+3. W obszarze nawigacji po lewej stronie wybierz **pozycję wyszukaj** \> na stronie \> **administracji wyszukiwania** **Zarządzaj schematem wyszukiwania**.
 
-   ![stronie administracji wyszukiwania w SharePoint administracyjnej.](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+   ![strona administracji wyszukiwania w centrum administracyjnym SharePoint.](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
 
-4. Na stronie **Właściwości zarządzane** Nowa \> **właściwość zarządzana**.
+4. Na stronie \> **Właściwości zarządzane** **Nowa właściwość zarządzana**.
 
    ![Strona Właściwości zarządzane z wyróżnionym przyciskiem Nowa właściwość zarządzana.](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
 
-5. Wprowadź nazwę i opis właściwości. Ta nazwa będzie wyświetlana w twoich zasadach ochrony przed zasadami ochrony przed reklamami.
+5. Wprowadź nazwę i opis właściwości. Ta nazwa będzie wyświetlana w zasadach DLP.
 
-6. W **polu Typ** wybierz pozycję **Tekst**.
+6. W polu **Typ** wybierz pozycję **Tekst**.
 
-7. W **obszarze Główne cechy** wybierz pozycję **Z zapytaniem** **i można go od użytkownika od użytkownika wybrać**.
+7. W obszarze **Główne cechy** wybierz pozycję **Queryable** i **Retrievable**.
 
-8. W **obszarze Mapowania na właściwości przeszukane** \> **Dodaj mapowanie**.
+8. W obszarze **Mapowania na właściwości** \> przeszukane **Dodaj mapowanie**.
 
-9. W **oknie dialogowym** \> Wybieranie właściwości przeszukanych znajdź i wybierz właściwość przeszukaną odpowiadającą właściwości Windows Server FCI lub innej właściwości, która będzie przez Ciebie stosować w twoich zasadach DLP \> **.**
+9. W oknie dialogowym \> **wyboru właściwości przeszukanej** znajdź i wybierz właściwość przeszukaną odpowiadającą właściwości Windows Server FCI lub innej właściwości, która będzie używana w zasadach \> DLP **OK**.
 
-   ![Okno dialogowe wybieranie właściwości przeszukanych.](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
+   ![okno dialogowe wyboru właściwości przeszukanej.](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
-10. U dołu **strony ok.**\>
+10. W dolnej części strony \> **OK**.
 
-## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>Tworzenie zasad DLP, które wykorzystuje właściwość FCI lub inną właściwość
+## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>Tworzenie zasad DLP używających właściwości FCI lub innej właściwości
 
-W tym przykładzie organizacja używa funkcji FCI na serwerach plików opartych na programie Windows Server, a w szczególności używa właściwości klasyfikacji FCI o nazwie **Dane** umożliwiające identyfikację użytkownika z możliwymi wartościami: **Wysoki,** Umiarkowany **, Niski****, Publiczny** i Nieudostępniany. Teraz chcą używać istniejącej klasyfikacji FCI w zasadach DLP w Office 365.
+W tym przykładzie organizacja używa infrastruktury FCI na serwerach plików opartych na serwerze Windows; w szczególności używa ona właściwości klasyfikacji fci o nazwie **Dane osobowe** z możliwymi wartościami **Wysoki**, **Umiarkowany**, **Niski**, **Publiczny** i **Nie pii**. Teraz chcą używać istniejącej klasyfikacji fci w swoich zasadach DLP w Office 365.
 
-Najpierw należy wykonać czynności opisane powyżej w celu utworzenia właściwości zarządzanej w aplikacji SharePoint Online, która jest mapowana na właściwość przeszukaną utworzoną automatycznie na podstawie właściwości FCI.
+Najpierw wykonaj powyższe kroki, aby utworzyć właściwość zarządzaną w usłudze SharePoint Online, która jest mapowana na właściwość przeszukaną utworzoną automatycznie na podstawie właściwości FCI.
 
-Następnie utworzyli zasady DLP z dwiema regułami, które używają warunku **Właściwości dokumentu zawierające dowolną z tych wartości**:
+Następnie tworzą zasady DLP z dwiema regułami, które używają warunku **Właściwości dokumentu zawierają dowolną z tych wartości**:
 
-- **Treści PII FCI — wysoki, umiarkowany** Pierwsza reguła ogranicza dostęp do dokumentu, jeśli właściwość klasyfikacji FCI danych osobowych  jest równa Wysoki lub Umiarkowany,  a dokument jest udostępniany osobom spoza organizacji.
+- **Zawartość interfejsu PII fci — wysoka, umiarkowana** Pierwsza reguła ogranicza dostęp do dokumentu, jeśli właściwość klasyfikacji fci **dane osobowe** są równe **Wysoki** lub **Umiarkowany** , a dokument jest udostępniany osobom spoza organizacji.
 
-- **Treść PII FCI — niska** Druga reguła wysyła powiadomienie do właściciela dokumentu, jeśli właściwość klasyfikacji FCI danych osobowych  jest równa Niskie, a  dokument jest udostępniany osobom spoza organizacji.
+- **Zawartość interfejsu PII usługi FCI — niska** Druga reguła wysyła powiadomienie do właściciela dokumentu, jeśli właściwość klasyfikacji fci **Dane osobowe** jest równa **Niska** , a dokument jest udostępniany osobom spoza organizacji.
 
-### <a name="create-the-dlp-policy-by-using-powershell"></a>Tworzenie zasad DLP przy użyciu programu PowerShell
+### <a name="create-the-dlp-policy-by-using-security--compliance-powershell"></a>Tworzenie zasad DLP przy użyciu programu PowerShell & zgodności z zabezpieczeniami
 
-Warunek **Właściwości dokumentu zawierają dowolną z tych** wartości nie &amp; są tymczasowo dostępne w interfejsie użytkownika Centrum zgodności zabezpieczeń, ale nadal można używać tego warunku przy użyciu programu PowerShell. Przy użyciu tych pól  `New\Set\Get-DlpCompliancePolicy` cmdlet można pracować z zasadami DLP,  `New\Set\Get-DlpComplianceRule` a przy użyciu tych pól cmdlet  `ContentPropertyContainsWords` z parametrem dodać warunek Właściwości dokumentu zawierają dowolną **z tych wartości**.
+Warunek **Właściwości dokumentu zawierający dowolną z tych wartości jest tymczasowo niedostępny** w portalu zgodności usługi Microsoft Purview, ale nadal możesz użyć tego warunku w programie PowerShell Security & Compliance. Za pomocą `New\Set\Get-DlpCompliancePolicy` poleceń cmdlet można pracować z zasadami DLP i używać `New\Set\Get-DlpComplianceRule` poleceń cmdlet z parametrem `ContentPropertyContainsWords` , aby dodać warunek **Właściwości dokumentu zawierają dowolną z tych wartości**.
 
-Aby uzyskać więcej informacji o tych poleceniach cmdlet, zobacz [Polecenia &amp; cmdlet Centrum zgodności zabezpieczeń](/powershell/exchange/exchange-online-powershell).
+1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell)
 
-1. [Połączenie zabezpieczeń &amp; Centrum zgodności przy użyciu zdalnej obsługi programu PowerShell](/powershell/exchange/connect-to-scc-powershell)
+2. Utwórz zasady przy użyciu polecenia `New-DlpCompliancePolicy`.
 
-2. Utwórz zasady przy użyciu .`New-DlpCompliancePolicy`
-
-Ten program PowerShell tworzy zasady DLP stosowane do wszystkich lokalizacji.
+   Ten program PowerShell tworzy zasady DLP, które mają zastosowanie do wszystkich lokalizacji.
 
    ```powershell
    New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
    ```
 
-3. Utwórz dwie reguły opisane powyżej `New-DlpComplianceRule`przy użyciu , gdzie jedna reguła dotyczy wartości Niskie,  a druga dla wartości **Wysoki** **i Umiarkowany**.
+3. Utwórz dwie reguły opisane powyżej przy użyciu `New-DlpComplianceRule`polecenia , gdzie jedna reguła dotyczy wartości **Niska** , a druga dla wartości **Wysoki** i **Umiarkowany** .
 
-   Oto przykład programu PowerShell, który tworzy te dwie reguły. Pary nazwa właściwości/wartość są ujęte w cudzysłów, a nazwa właściwości może określać wiele wartości rozdzielonych przecinkami bez spacji, na przykład  `"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
+   Oto przykład programu PowerShell, który tworzy te dwie reguły. Pary nazw/wartości właściwości są ujęte w cudzysłów, a nazwa właściwości może określać wiele wartości rozdzielonych przecinkami bez spacji, takich jak `"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
    ```powershell
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows FcI serwera zawiera wiele wbudowanych właściwości, w tym informacje umożliwiające identyfikację **użytkownika użyte w** tym przykładzie. Możliwe wartości poszczególnych właściwości mogą być różne dla każdej organizacji. Użyte **tutaj** wartości Wysoki, **Umiarkowany** i Niski to tylko przykład. W swojej organizacji możesz wyświetlić właściwości klasyfikacji Windows FCI serwera z ich możliwymi wartościami w menedżerze zasobów serwera pliku na Windows serwerze opartym na serwerze. Aby uzyskać więcej informacji, [zobacz Tworzenie właściwości klasyfikacji](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11)).
+   Windows Server FCI zawiera wiele wbudowanych właściwości, w tym **dane osobowe** używane w tym przykładzie. Możliwe wartości dla każdej właściwości mogą być różne dla każdej organizacji. Używane tutaj wartości **Wysoki**, **Umiarkowany** i **Niski** są tylko przykładem. W organizacji można wyświetlić właściwości klasyfikacji Windows Server FCI z ich możliwymi wartościami w Resource Manager serwera plików na serwerze plików opartym na serwerze Windows. Aby uzyskać więcej informacji, zobacz [Tworzenie właściwości klasyfikacji](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11)).
 
-Po zakończeniu zasady powinny mieć dwie nowe reguły, które używają właściwości Dokument **zawierają dowolny z tych warunków** wartości. Ten warunek nie będzie wyświetlany w interfejsie użytkownika, chociaż zostaną wyświetlone inne warunki, akcje i ustawienia.
+Po zakończeniu zasady powinny mieć dwie nowe reguły, które używają **właściwości Dokumentu zawierają dowolny z tych warunków wartości** . Ten warunek nie będzie wyświetlany w interfejsie użytkownika, ale zostaną wyświetlone inne warunki, akcje i ustawienia.
 
-Jedna reguła blokuje dostęp do zawartości, w której właściwość informacji umożliwiających **identyfikację** użytkownika jest **równa wartości Wysoki** lub **Umiarkowany**. Druga reguła wysyła powiadomienie o zawartości, w której właściwość Informacji umożliwiających **identyfikację** użytkownika jest równa **niskiej** wartości.
+Jedna reguła blokuje dostęp do zawartości, w której właściwość **Personally Identifiable Information** jest równa **wysokiemu** lub **umiarkowanemu**. Druga reguła wysyła powiadomienie o zawartości, w której **właściwość Personally Identifiable Information** jest równa **Niski**.
 
-![Nowe okno dialogowe zasad DLP przedstawiające właśnie utworzone dwie reguły.](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
+![Nowe okno dialogowe zasad DLP z wyświetloną dwiema właśnie utworzonymi regułami.](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
 
 ## <a name="after-you-create-the-dlp-policy"></a>Po utworzeniu zasad DLP
 
-Wykonanie czynności poprzednich sekcji spowoduje utworzenie zasad DLP, które będą szybko wykrywać zawartość przy użyciu tej właściwości, ale tylko w przypadku, gdy ta zawartość zostanie nowo przesłana (tak, aby zawartość zindeksowana) lub jeśli ta zawartość jest stara, ale po prostu edytowana (w celu ponownego indeksowania zawartości).
+Wykonanie kroków w poprzednich sekcjach spowoduje utworzenie zasad DLP, które szybko wykryje zawartość z tą właściwością, ale tylko wtedy, gdy ta zawartość zostanie nowo przekazana (tak, aby zawartość została zaindeksowana) lub jeśli ta zawartość jest stara, ale po prostu edytowana (aby zawartość została ponownie zindeksowana).
 
-Aby we wszystkich miejscach wykrywać zawartość, warto ręcznie zażądać ponownego indeksowania biblioteki, witryny lub zbioru witryn, aby zasady DLP wiedziały o całej zawartości tej właściwości. W SharePoint Online zawartość jest automatycznie przeszukiwana według zdefiniowanego harmonogramu przeszukiwania. Przeszukiwarka wybiera zawartość, która uległa zmianie od ostatniego przeszukiwania, i aktualizuje indeks. Jeśli chcesz, aby zasady DLP chroniły zawartość przed następnym planowanym przeszukiwaniem, możesz wykonać te czynności.
+Aby wykryć zawartość z tą właściwością wszędzie, możesz ręcznie zażądać ponownego indeksowania biblioteki, witryny lub zbioru witryn, aby zasady DLP wiedziały o całej zawartości z tą właściwością. W SharePoint Online zawartość jest automatycznie przeszukiwana na podstawie zdefiniowanego harmonogramu przeszukiwania. Przeszukiwarka pobiera zawartość, która uległa zmianie od czasu ostatniego przeszukiwania, i aktualizuje indeks. Jeśli potrzebujesz zasad DLP, aby chronić zawartość przed następnym zaplanowanym przeszukiwaniem, możesz wykonać te kroki.
 
 > [!CAUTION]
-> Ponowne indeksowanie witryny może spowodować olbrzymie obciążenie systemu wyszukiwania. Nie zaindeksuj ponownie witryny, chyba że jest to naprawdę konieczne w Twoim scenariuszu.
+> Ponowne indeksowanie witryny może spowodować ogromne obciążenie systemu wyszukiwania. Nie indeksuj ponownie witryny, chyba że scenariusz tego absolutnie wymaga.
 
-Aby uzyskać więcej informacji, [zobacz Ręczne żądanie](/sharepoint/crawl-site-content) przeszukiwania i ponownego indeksowania witryny, biblioteki lub listy.
+Aby uzyskać więcej informacji, zobacz [Ręczne przeszukiwanie żądań i ponowne indeksowanie witryny, biblioteki lub listy](/sharepoint/crawl-site-content).
 
-### <a name="reindex-a-site-optional"></a>Ponowne indeksowanie witryny (opcjonalnie)
+### <a name="reindex-a-site-optional"></a>Ponowne indeksowanie lokacji (opcjonalnie)
 
-1. W witrynie wybierz **pozycję Ustawienia (** ikona koła zębatego w prawym górnym rogu) Site \> **Ustawienia**.
+1. W witrynie wybierz **pozycję Ustawienia** (ikona koła zębatego w prawym górnym rogu) \> **Ustawienia witryny**.
 
-2. W **obszarze Wyszukiwanie** wybierz pozycję **Wyszukaj i dostępność w trybie offline** \> **Ponowne indeksowanie witryny**.
+2. W obszarze **Wyszukaj** wybierz pozycję **Wyszukaj i dostępność** \> w trybie offline **.**
 
 ## <a name="more-information"></a>Więcej informacji
 
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
 
-- [Tworzenie zasad DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md)
+- [Twórz zasady DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md)
 
-- [Wysyłanie powiadomień i wyświetlanie porad dotyczących zasad DLP](use-notifications-and-policy-tips.md)
+- [Wysyłanie powiadomień i wyświetlanie wskazówek dotyczących zasad dotyczących zasad DLP](use-notifications-and-policy-tips.md)
 
-- [Szablony zasad DLP](what-the-dlp-policy-templates-include.md)
+- [Co obejmują szablony zasad DLP](what-the-dlp-policy-templates-include.md)
 
-- [Definicje jednostki typu informacji poufnych](sensitive-information-type-entity-definitions.md)
+- [Definicje jednostek typu informacji poufnych](sensitive-information-type-entity-definitions.md)

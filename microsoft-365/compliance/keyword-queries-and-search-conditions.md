@@ -22,18 +22,18 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o właściwościach poczty e-mail i dokumentu, które można wyszukiwać przy użyciu narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w Microsoft 365.
-ms.openlocfilehash: d6a918f41004a366b9e8c7c53c7e0f2153d57c3b
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: ebea983caedc73c8471d6e460b58314bd76f1861
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319061"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012345"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Zapytania słów kluczowych i warunki wyszukiwania dla zbierania elektronicznych materiałów dowodowych
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-W tym artykule opisano właściwości poczty e-mail i dokumentu, które można wyszukiwać w elementach wiadomości e-mail i Microsoft Teams konwersacjach na czacie w Exchange Online oraz dokumenty przechowywane w witrynach SharePoint i OneDrive dla Firm przy użyciu narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w witrynie portal zgodności Microsoft Purview. Obejmuje to wyszukiwanie zawartości, Microsoft Purview eDiscovery (Standard) i Microsoft Purview eDiscovery (Premium) (wyszukiwania zbierania elektronicznych materiałów dowodowych w Premium) są nazywane *kolekcjami*. Aby wyszukać te właściwości, możesz również użyć **\*poleceń cmdlet -ComplianceSearch** w programie PowerShell Security & Compliance Center. W artykule opisano również:
+W tym artykule opisano właściwości poczty e-mail i dokumentu, które można wyszukiwać w elementach wiadomości e-mail i Microsoft Teams rozmowach na czacie w Exchange Online oraz dokumenty przechowywane w witrynach SharePoint i OneDrive dla Firm przy użyciu narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview. Obejmuje to wyszukiwanie zawartości, zbieranie elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i zbieranie elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) (wyszukiwanie zbierania elektronicznych materiałów dowodowych w Premium) jest nazywane *kolekcjami*. Aby wyszukać te właściwości, możesz również użyć **\*poleceń cmdlet -ComplianceSearch** w programie PowerShell security & Compliance. W artykule opisano również:
 
 - Używanie operatorów wyszukiwania logicznego, warunków wyszukiwania i innych technik wyszukiwania w celu uściślenia wyników wyszukiwania.
 - Wyszukiwanie poufnych typów danych i niestandardowych poufnych typów danych w SharePoint i OneDrive dla Firm.
@@ -46,7 +46,7 @@ Aby uzyskać instrukcje krok po kroku dotyczące tworzenia różnych wyszukiwań
 - [Tworzenie kolekcji roboczej w usłudze eDiscovery (Premium)](create-draft-collection.md)
 
 > [!NOTE]
-> Wyszukiwanie zbierania elektronicznych materiałów dowodowych w portalu zgodności i **odpowiednich\* poleceniach cmdlet -ComplianceSearch** w centrum zgodności & zabezpieczeń programu PowerShell używa języka zapytań słów kluczowych (KQL). Aby uzyskać bardziej szczegółowe informacje, zobacz [Dokumentacja składni języka zapytań słów kluczowych](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+> Wyszukiwanie zbierania elektronicznych materiałów dowodowych w portalu zgodności i odpowiednie **\*polecenia cmdlet -ComplianceSearch** w programie PowerShell security & Compliance używają języka zapytań słów kluczowych (KQL). Aby uzyskać bardziej szczegółowe informacje, zobacz [Dokumentacja składni języka zapytań słów kluczowych](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 ## <a name="searchable-email-properties"></a>Właściwości poczty e-mail z możliwością wyszukiwania
 
@@ -92,7 +92,7 @@ Należy jednak pamiętać, że zapobieganie rozszerzeniu adresatów w zapytaniu 
 
 ## <a name="searchable-site-properties"></a>Właściwości witryny z możliwością wyszukiwania
 
-W poniższej tabeli wymieniono niektóre właściwości SharePoint i OneDrive dla Firm, które można przeszukiwać przy użyciu narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview lub za pomocą polecenia cmdlet **New-ComplianceSearch** lub **Set-ComplianceSearch**. Tabela zawiera przykład składni  _property:value_ dla każdej właściwości oraz opis wyników wyszukiwania zwróconych przez przykłady.
+W poniższej tabeli wymieniono niektóre właściwości SharePoint i OneDrive dla Firm, które można przeszukiwać przy użyciu narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview lub za pomocą polecenia cmdlet **New-ComplianceSearch** lub **Set-ComplianceSearch**. Tabela zawiera przykład składni  _property:value_ dla każdej właściwości oraz opis wyników wyszukiwania zwróconych przez przykłady.
 
 Aby uzyskać pełną listę właściwości SharePoint, które można przeszukiwać, zobacz [Omówienie właściwości przeszukanych i zarządzanych w SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Właściwości oznaczone wartością **Tak** w kolumnie **Queryable** można wyszukiwać.
 
@@ -146,7 +146,7 @@ W poniższej tabeli wymieniono właściwości kontaktu, które są indeksowane i
 
 Narzędzia do wyszukiwania zbierania elektronicznych materiałów dowodowych w portalu zgodności umożliwiają wyszukiwanie poufnych danych, takich jak numery kart kredytowych lub numery ubezpieczenia społecznego, które są przechowywane w dokumentach w witrynach SharePoint i OneDrive dla Firm. Można to zrobić przy użyciu `SensitiveType` właściwości i nazwy (lub identyfikatora) typu informacji poufnych w zapytaniu słowa kluczowego. Na przykład zapytanie `SensitiveType:"Credit Card Number"` zwraca dokumenty zawierające numer karty kredytowej. Zapytanie  `SensitiveType:"U.S. Social Security Number (SSN)"` zwraca dokumenty zawierające amerykański numer ubezpieczenia społecznego.
 
-Aby wyświetlić listę typów informacji poufnych, których można wyszukać, przejdź do pozycji **Klasyfikacje danych** **Typy informacji poufnych** \> w portalu zgodności. Możesz też użyć polecenia cmdlet **Get-DlpSensitiveInformationType** w programie PowerShell Security & Compliance Center, aby wyświetlić listę typów informacji poufnych.
+Aby wyświetlić listę typów informacji poufnych, których można wyszukać, przejdź do pozycji **Klasyfikacje danych** **Typy informacji poufnych** \> w portalu zgodności. Możesz też użyć polecenia cmdlet **Get-DlpSensitiveInformationType** w programie PowerShell Security & Compliance, aby wyświetlić listę typów informacji poufnych.
 
 Aby uzyskać więcej informacji na temat tworzenia zapytań przy użyciu `SensitiveType` właściwości, zobacz [Tworzenie zapytania w celu znalezienia poufnych danych przechowywanych w witrynach](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
@@ -154,7 +154,7 @@ Aby uzyskać więcej informacji na temat tworzenia zapytań przy użyciu `Sensit
 
 - Aby wyszukać niestandardowe typy informacji poufnych, musisz określić identyfikator typu informacji poufnych we `SensitiveType` właściwości . Użycie nazwy niestandardowego typu informacji poufnych (jak pokazano w przykładzie dla wbudowanych typów informacji poufnych w poprzedniej sekcji) nie zwróci żadnych wyników. Użyj kolumny **Publisher** na stronie **Typy informacji poufnych** w centrum zgodności (lub właściwości **Publisher** w programie PowerShell), aby odróżnić wbudowane i niestandardowe typy informacji poufnych. Wbudowane typy danych poufnych mają wartość `Microsoft Corporation` właściwości **Publisher**.
 
-  Aby wyświetlić nazwę i identyfikator niestandardowych poufnych typów danych w organizacji, uruchom następujące polecenie w programie PowerShell Security & Compliance Center:
+  Aby wyświetlić nazwę i identyfikator niestandardowych poufnych typów danych w organizacji, uruchom następujące polecenie w programie PowerShell security & Compliance:
 
   ```powershell
   Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id
@@ -178,13 +178,13 @@ Operatory wyszukiwania logicznego, takie jak **AND**, **OR** i **NOT**, ułatwia
 |NIEDALEKO LOTNISKA|keyword1 NEAR(n) keyword2|Zwraca elementy ze słowami, które znajdują się blisko siebie, gdzie n jest równe liczbie wyrazów od siebie. Na przykład zwraca dowolny element, `best NEAR(5) worst` w którym wyraz "najgorszy" mieści się w pięciu słowach "best". Jeśli nie określono żadnej liczby, domyślna odległość to osiem wyrazów. <sup>2</sup>|
 |:|property:value|Dwukropek (:)  `property:value` w składni określa, że wartość wyszukiwanej właściwości zawiera określoną wartość. Na przykład zwraca dowolną  `recipients:garthf@contoso.com` wiadomość wysłaną do garthf@contoso.com.|
 |=|property=value|Tak samo jak operator **:** .|
-|\<|propertyvalue\<|Oznacza, że przeszukiwana właściwość jest mniejsza niż określona wartość. <sup>1</sup>|
-|\>|propertyvalue\>|Oznacza, że przeszukiwana właściwość jest większa niż określona wartość. <sup>1</sup>|
+|\<|wartość właściwości\<|Oznacza, że przeszukiwana właściwość jest mniejsza niż określona wartość. <sup>1</sup>|
+|\>|wartość właściwości\>|Oznacza, że przeszukiwana właściwość jest większa niż określona wartość. <sup>1</sup>|
 |\<=|property\<=value|Oznacza, że przeszukiwana właściwość jest mniejsza lub równa określonej wartości. <sup>1</sup>|
 |\>=|property\>=value|Oznacza, że przeszukiwana właściwość jest większa lub równa określonej wartości. <sup>1</sup>|
 |..|property:value1.. value2|Oznacza, że przeszukiwana właściwość jest większa lub równa wartości1 i mniejsza lub równa wartości2. <sup>1</sup>|
 |"  "|"wartość godziwa" <p> subject:"Kwartalne dane finansowe"|W zapytaniu słowa kluczowego (w którym wpiszesz `property:value` parę w polu **Słowo kluczowe** ) użyj podwójnego cudzysłowu (" "), aby wyszukać dokładną frazę lub termin. Jeśli jednak używasz warunku [wyszukiwania](#search-conditions) **Temat** lub **Temat/Tytuł**, nie dodaj do wartości podwójnego cudzysłowu, ponieważ znaki cudzysłowu są automatycznie dodawane podczas korzystania z tych warunków wyszukiwania. Jeśli dodasz cudzysłów do wartości, dwie pary podwójnego cudzysłowu zostaną dodane do wartości warunku, a zapytanie wyszukiwania zwróci błąd. |
-|\*|Cat\* <p> subject:set\*|Wyszukiwania prefiksów (nazywane również *dopasowywanie prefiksów*), gdzie symbol wieloznaczny ( * ) jest umieszczany na końcu wyrazu w słowach kluczowych lub `property:value` zapytaniach. W wyszukiwaniach prefiksów wyszukiwanie zwraca wyniki z terminami zawierającymi wyraz, po którym następuje zero lub więcej znaków. Na przykład zwraca dokumenty zawierające `title:set*` słowo "set", "setup" i "setting" (oraz inne słowa rozpoczynające się od "set") w tytule dokumentu. <p> **Uwaga:** Można używać tylko wyszukiwań prefiksów; na przykład **cat\**_ lub _* set\**_. Wyszukiwania sufiksów (_*\*cat**), wyszukiwania poprawek (**ct\***) i wyszukiwania podciągów (**\*cat\***) nie są obsługiwane. <p> Ponadto dodanie kropki ( \. ) do wyszukiwania prefiksu spowoduje zmianę zwracanych wyników. Dzieje się tak, ponieważ kropka jest traktowana jako słowo zatrzymania. Na przykład wyszukiwanie **cat\**_ i wyszukiwanie _* cat.\*** spowoduje zwrócenie różnych wyników. Nie zalecamy używania kropki w wyszukiwaniu prefiksów.|
+|\*|Cat\* <p> subject:set\*|Wyszukiwania prefiksów (nazywane również *dopasowywanie prefiksów*), gdzie symbol wieloznaczny ( * ) jest umieszczany na końcu wyrazu w słowach kluczowych lub `property:value` zapytaniach. W wyszukiwaniach prefiksów wyszukiwanie zwraca wyniki z terminami zawierającymi wyraz, po którym następuje zero lub więcej znaków. Na przykład zwraca dokumenty zawierające `title:set*` słowo "set", "setup" i "setting" (oraz inne słowa rozpoczynające się od "set") w tytule dokumentu. <p> **Uwaga:** Można używać tylko wyszukiwań prefiksów; na przykład **cat\**_ lub _* set\**_. Wyszukiwania sufiksów (_*\*cat**), wyszukiwania poprawek (**c\*t**) i wyszukiwania podciągów (**\*cat\***) nie są obsługiwane. <p> Ponadto dodanie kropki ( \. ) do wyszukiwania prefiksu spowoduje zmianę zwracanych wyników. Dzieje się tak, ponieważ kropka jest traktowana jako słowo zatrzymania. Na przykład wyszukiwanie **cat\**_ i wyszukiwanie _* cat.\*** spowoduje zwrócenie różnych wyników. Nie zalecamy używania kropki w wyszukiwaniu prefiksów.|
 |(  )|(fair OR free) AND (z:contoso.com) <p> (IPO OR initial) AND (akcje LUB akcje) <p> (kwartalne finanse)|Nawiasy grupują frazy logiczne,  `property:value` elementy i słowa kluczowe. Na przykład  `(quarterly financials)` zwraca elementy zawierające wyrazy kwartalne i finansowe.|
 
 > [!NOTE]
@@ -445,7 +445,7 @@ Aby uzyskać więcej informacji na temat limitów znaków, zobacz [Limity wyszuk
 
 - Podczas wyszukiwania właściwości adresata, takiej jak Do, Od, DW lub Adresaci, możesz użyć adresu SMTP, aliasu lub nazwy wyświetlanej, aby oznaczyć adresata. Na przykład można użyć pilarp@contoso.com, pilarp lub "Pilar Pinilla".
 
-- Można używać tylko wyszukiwań prefiksów; na przykład **cat\**_ lub _* set\**_. Wyszukiwania sufiksów (_*\*cat**), wyszukiwania poprawek (**ct\***) i wyszukiwania podciągów (**\*cat\***) nie są obsługiwane.
+- Można używać tylko wyszukiwań prefiksów; na przykład **cat\**_ lub _* set\**_. Wyszukiwania sufiksów (_*\*cat**), wyszukiwania poprawek (**c\*t**) i wyszukiwania podciągów (**\*cat\***) nie są obsługiwane.
 
 - Podczas przeszukiwania właściwości użyj podwójnego cudzysłowu (" "), jeśli wartość wyszukiwania składa się z wielu wyrazów. Na przykład `subject:budget Q1` zwraca komunikaty zawierające **budżet** w wierszu tematu i zawierające **Q1** w dowolnym miejscu w wiadomości lub we właściwościach komunikatu. Użycie `subject:"budget Q1"` polecenia zwraca wszystkie komunikaty zawierające **budżet Q1** w dowolnym miejscu w wierszu tematu.
 

@@ -17,30 +17,30 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
-description: Dowiedz się, jak za pomocą programu PowerShell przeprowadzić migrację protokołu IMAP (Internet Mail Access Protocol) na platformę Microsoft 365.
-ms.openlocfilehash: cc5a68e3a570151044663366b686998b7d3be08e
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+description: Dowiedz się, jak za pomocą programu PowerShell przeprowadzić migrację protokołu IMAP (Internet Mail Access Protocol) do Microsoft 365.
+ms.openlocfilehash: 7f0fd2ded375729d1e738215fec3558fbc93257b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930180"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012665"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Używanie programu PowerShell do wykonywania migracji IMAP do platformy Microsoft 365
 
-*Ten artykuł dotyczy zarówno platformy Microsoft 365 Enterprise, jak i usługi Office 365 Enterprise.*
+*Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-W ramach procesu wdrażania platformy Microsoft 365 można zmigrować zawartość skrzynek pocztowych użytkowników z usługi poczty e-mail protokołu Internet Mail Access Protocol (IMAP) na platformę Microsoft 365. W tym artykule przedstawiono zadania migracji protokołu IMAP poczty e-mail przy użyciu programu PowerShell usługi Exchange Online.
+W ramach procesu wdrażania Microsoft 365 można migrować zawartość skrzynek pocztowych użytkowników z usługi poczty e-mail protokołu IMAP (Internet Mail Access Protocol) do Microsoft 365. W tym artykule przedstawiono zadania migracji protokołu IMAP w wiadomości e-mail przy użyciu Exchange Online programu PowerShell.
 
 > [!NOTE]
-> Możesz również użyć <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego programu Exchange</a> do przeprowadzenia migracji IMAP. Zobacz [Migrowanie skrzynek pocztowych IMAP](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
+> Możesz również użyć <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a>, aby przeprowadzić migrację IMAP. Zobacz [Migrowanie skrzynek pocztowych IMAP](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
-Szacowany czas wykonania tego zadania: 2–5 minut na utworzenie partii migracji. Po uruchomieniu partii migracji czas trwania migracji będzie się różnić w zależności od liczby skrzynek pocztowych w partii, rozmiaru każdej skrzynki pocztowej i dostępnej pojemności sieciowej. Aby uzyskać informacje o innych czynnikach wpływających na czas migrowania skrzynek pocztowych na platformę Microsoft 365, zobacz [Wydajność migracji](/Exchange/mailbox-migration/office-365-migration-best-practices).
+Szacowany czas wykonania tego zadania: 2–5 minut na utworzenie partii migracji. Po uruchomieniu partii migracji czas trwania migracji będzie się różnić w zależności od liczby skrzynek pocztowych w partii, rozmiaru każdej skrzynki pocztowej i dostępnej pojemności sieciowej. Aby uzyskać informacje o innych czynnikach wpływających na czas migrowania skrzynek pocztowych do Microsoft 365, zobacz [Wydajność migracji](/Exchange/mailbox-migration/office-365-migration-best-practices).
 
 Do wykonania tych procedur musisz mieć przypisane uprawnienia. Aby zobaczyć, jakich uprawnień potrzebujesz, zobacz wpis "Migracja" w tabeli w [temacie Uprawnienia adresatów](/exchange/recipients-permissions-exchange-2013-help) .
 
-Aby użyć poleceń cmdlet programu PowerShell usługi Exchange Online, musisz zalogować się i zaimportować polecenia cmdlet do lokalnej sesji programu Windows PowerShell. Aby uzyskać instrukcje, zobacz [Connect to Exchange Online using remote PowerShell (Nawiązywanie połączenia z usługą Exchange Online przy użyciu zdalnego programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ).
+Aby użyć poleceń cmdlet programu PowerShell Exchange Online, musisz zalogować się i zaimportować polecenia cmdlet do lokalnej sesji Windows PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie, aby Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Aby uzyskać pełną listę poleceń migracji, zobacz [Przenoszenie i migracja poleceń cmdlet](/powershell/exchange/).
 
@@ -57,21 +57,21 @@ Migracje IMAP mają zastosowanie do następujących ograniczeń:
 ### <a name="step-1-prepare-for-an-imap-migration"></a>Krok 1. Przygotowanie do migracji IMAP
 <a name="BK_Step1"> </a>
 
-- **Jeśli masz domenę dla swojej organizacji IMAP, dodaj ją jako zaakceptowaną domenę organizacji platformy Microsoft 365.** Jeśli chcesz użyć tej samej domeny, którą już posiadasz dla skrzynek pocztowych platformy Microsoft 365, musisz najpierw dodać ją jako zaakceptowaną domenę do platformy Microsoft 365. Po dodaniu można utworzyć użytkowników na platformie Microsoft 365. Aby uzyskać więcej informacji, zobacz[Weryfikowanie domeny](../admin/setup/add-domain.md).
+- **Jeśli masz domenę dla swojej organizacji IMAP, dodaj ją jako akceptowaną domenę organizacji Microsoft 365.** Jeśli chcesz użyć tej samej domeny, którą już posiadasz dla Microsoft 365 skrzynek pocztowych, musisz najpierw dodać ją jako akceptowaną domenę, aby Microsoft 365. Po dodaniu można utworzyć użytkowników w Microsoft 365. Aby uzyskać więcej informacji, zobacz[Weryfikowanie domeny](../admin/setup/add-domain.md).
 
-- **Dodaj każdego użytkownika do platformy Microsoft 365, aby miał skrzynkę pocztową.** Aby uzyskać instrukcje, zobacz[Dodawanie użytkowników do platformy Microsoft 365 dla firm](../admin/add-users/add-users.md).
+- **Dodaj każdego użytkownika do Microsoft 365, aby miał skrzynkę pocztową.** Aby uzyskać instrukcje, zobacz[Dodawanie użytkowników do Microsoft 365 dla firm](../admin/add-users/add-users.md).
 
 - **Uzyskaj nazwę FQDN serwera IMAP**. Musisz podać w pełni kwalifikowaną nazwę domeny (FQDN) (nazywaną również pełną nazwą komputera) serwera IMAP, z którego będą migrowane dane skrzynki pocztowej podczas tworzenia punktu końcowego migracji IMAP. Użyj klienta IMAP lub polecenia PING, aby sprawdzić, czy ta nazwa FQDN umożliwia komunikację z serwerem IMAP przez Internet.
 
-- **Skonfiguruj zaporę tak, aby zezwalała na połączenia IMAP**. Może być konieczne otwarcie portów w zaporze organizacji hostującej serwer IMAP, aby ruch sieciowy pochodzący z centrum danych firmy Microsoft podczas migracji mógł wejść do organizacji hostującej serwer IMAP. Aby uzyskać listę adresów IP używanych przez centra danych firmy Microsoft, zobacz [Adresy URL i zakresy adresów IP usługi Exchange Online](./urls-and-ip-address-ranges.md).
+- **Skonfiguruj zaporę tak, aby zezwalała na połączenia IMAP**. Może być konieczne otwarcie portów w zaporze organizacji hostującej serwer IMAP, aby ruch sieciowy pochodzący z centrum danych firmy Microsoft podczas migracji mógł wejść do organizacji hostującej serwer IMAP. Aby uzyskać listę adresów IP używanych przez centra danych firmy Microsoft, zobacz [Exchange Online adresów URL i zakresów adresów IP](./urls-and-ip-address-ranges.md).
 
 - **Przypisz uprawnienia konta administratora do uzyskiwania dostępu do skrzynek pocztowych w organizacji IMAP**. Jeśli użyjesz poświadczeń administratora w pliku CSV, konto, z którego korzystasz, musi mieć uprawnienia niezbędne do uzyskania dostępu do wszystkich lokalnych skrzynek pocztowych. Uprawnienia wymagane do uzyskiwania dostępu do skrzynek pocztowych użytkowników są określane przez konkretny serwer IMAP.
 
-- **Aby użyć poleceń cmdlet programu PowerShell usługi Exchange Online**, musisz zalogować się i zaimportować polecenia cmdlet do lokalnej sesji programu Windows PowerShell. Aby uzyskać instrukcje, zobacz [Connect to Exchange Online using remote PowerShell (Nawiązywanie połączenia z usługą Exchange Online przy użyciu zdalnego programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ).
+- **Aby użyć Exchange Online poleceń cmdlet programu PowerShell**, musisz zalogować się i zaimportować polecenia cmdlet do lokalnej sesji Windows PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie, aby Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
     Aby uzyskać pełną listę poleceń migracji, zobacz [Przenoszenie i migracja poleceń cmdlet](/powershell/exchange/).
 
-- **Sprawdź, czy możesz nawiązać połączenie z serwerem IMAP**. Uruchom następujące polecenie w programie PowerShell usługi Exchange Online, aby przetestować ustawienia połączenia z serwerem IMAP.
+- **Sprawdź, czy możesz nawiązać połączenie z serwerem IMAP**. Uruchom następujące polecenie w programie Exchange Online programu PowerShell, aby przetestować ustawienia połączenia z serwerem IMAP.
 
   ```powershell
   Test-MigrationServerAvailability -IMAP -RemoteServer <FQDN of IMAP server> -Port <143 or 993> -Security <None, Ssl, or Tls>
@@ -85,7 +85,7 @@ Zidentyfikuj grupę użytkowników, których skrzynki pocztowe mają być migrow
 
 Opisano tutaj wymagane atrybuty dla poszczególnych użytkowników:
 
-- **EmailAddress** określa identyfikator użytkownika dla skrzynki pocztowej platformy Microsoft 365 użytkownika.
+- **EmailAddress** określa identyfikator użytkownika dla skrzynki pocztowej Microsoft 365 użytkownika.
 
 - **UserName** określa nazwę logowania dla konta do użycia w celu uzyskania dostępu do skrzynki pocztowej na serwerze IMAP.
 
@@ -137,7 +137,7 @@ paulc@contoso.edu,#paul.cannon@contoso-students.edu#mailadmin#,P@ssw0rd
 
  **Courier IMAP:**
 
-Niektóre źródłowe systemy poczty e-mail, takie jak Courier IMAP, nie obsługują korzystania z poświadczeń administratora skrzynki pocztowej w celu migrowania skrzynek pocztowych na platformę Microsoft 365. Możesz jednak skonfigurować źródłowy system poczty e-mail tak, aby korzystał z wirtualnych folderów udostępnionych. Korzystając z wirtualnych folderów udostępnionych, możesz użyć poświadczeń administratora skrzynki pocztowej, aby uzyskać dostęp do skrzynek pocztowych użytkowników w źródłowym systemie poczty e-mail. Aby uzyskać więcej informacji na temat sposobu konfigurowania wirtualnych folderów udostępnionych w systemie Courier IMAP, zobacz [Foldery udostępnione](https://go.microsoft.com/fwlink/p/?LinkId=398870).
+Niektóre źródłowe systemy poczty e-mail, takie jak Courier IMAP, nie obsługują korzystania z poświadczeń administratora skrzynki pocztowej w celu migrowania skrzynek pocztowych do Microsoft 365. Możesz jednak skonfigurować źródłowy system poczty e-mail tak, aby korzystał z wirtualnych folderów udostępnionych. Korzystając z wirtualnych folderów udostępnionych, możesz użyć poświadczeń administratora skrzynki pocztowej, aby uzyskać dostęp do skrzynek pocztowych użytkowników w źródłowym systemie poczty e-mail. Aby uzyskać więcej informacji na temat sposobu konfigurowania wirtualnych folderów udostępnionych w systemie Courier IMAP, zobacz [Foldery udostępnione](https://go.microsoft.com/fwlink/p/?LinkId=398870).
 
 Aby przeprowadzić migrację skrzynek pocztowych po skonfigurowaniu wirtualnych folderów udostępnionych w źródłowym systemie poczty e-mail, wprowadź w pliku migracji opcjonalny atrybut **UserRoot** (katalog główny). Ten atrybut określa lokalizację skrzynek pocztowych poszczególnych użytkowników w strukturze wirtualnych folderów udostępnionych w źródłowym systemie poczty e-mail. Na przykład ścieżka do skrzynki pocztowej Terry'ego to /users/terry.adams.
 
@@ -152,18 +152,18 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>Krok 3. Tworzenie punktu końcowego migracji IMAP
 
-Aby pomyślnie przeprowadzić migrację poczty e-mail, platforma Microsoft 365 musi nawiązać połączenie ze źródłowym systemem poczty e-mail i komunikować się z nią. W tym celu platforma Microsoft 365 używa punktu końcowego migracji. Punkt końcowy migracji definiuje również liczbę skrzynek pocztowych do jednoczesnej migracji oraz liczbę skrzynek pocztowych do jednoczesnej synchronizacji podczas synchronizacji przyrostowej, która występuje raz na 24 godziny. Aby utworzyć punkt końcowy migracji dla migracji IMAP, najpierw [połącz się z usługą Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+Aby pomyślnie przeprowadzić migrację poczty e-mail, Microsoft 365 musi nawiązać połączenie ze źródłowym systemem poczty e-mail i komunikować się z nimi. W tym celu Microsoft 365 używa punktu końcowego migracji. Punkt końcowy migracji definiuje również liczbę skrzynek pocztowych do jednoczesnej migracji oraz liczbę skrzynek pocztowych do jednoczesnej synchronizacji podczas synchronizacji przyrostowej, która występuje raz na 24 godziny. Aby utworzyć punkt końcowy migracji dla migracji IMAP, najpierw [połącz się z Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Aby uzyskać pełną listę poleceń migracji, zobacz [Przenoszenie i migracja poleceń cmdlet](/powershell/exchange/).
 
-Aby utworzyć punkt końcowy migracji IMAP o nazwie "IMAPEndpoint" w programie Exchange Online PowerShell, uruchom następujące polecenie:
+Aby utworzyć punkt końcowy migracji IMAP o nazwie "IMAPEndpoint" w programie Exchange Online programu PowerShell, uruchom następujące polecenie:
 
 ```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 993 -Security Ssl
 
 ```
 
-Można również dodać parametry określające migracje współbieżne, współbieżne migracje przyrostowe i port do użycia. Następujące polecenie programu PowerShell usługi Exchange Online tworzy punkt końcowy migracji IMAP o nazwie "IMAPEndpoint", który obsługuje 50 równoczesnych migracji i maksymalnie 25 współbieżnych synchronizacji przyrostowych. Konfiguruje również punkt końcowy do używania portu 143 na potrzeby szyfrowania TLS.
+Można również dodać parametry określające migracje współbieżne, współbieżne migracje przyrostowe i port do użycia. Następujące polecenie Exchange Online programu PowerShell tworzy punkt końcowy migracji IMAP o nazwie "IMAPEndpoint", który obsługuje 50 równoczesnych migracji i maksymalnie 25 współbieżnych synchronizacji przyrostowych. Konfiguruje również punkt końcowy do używania portu 143 na potrzeby szyfrowania TLS.
 
 ```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 143 -Security Tls -MaxConcurrentMigrations
@@ -174,7 +174,7 @@ Aby uzyskać więcej informacji na temat polecenia cmdlet **New-MigrationEndpoin
 
 #### <a name="verify-it-worked"></a>Sprawdź, czy to zadziałało
 
-Uruchom następujące polecenie w programie PowerShell usługi Exchange Online, aby wyświetlić informacje o "IMAPEndpoint":
+Uruchom następujące polecenie w programie Exchange Online programu PowerShell, aby wyświetlić informacje o "IMAPEndpoint":
 
 ```powershell
 Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,Security,Max*
@@ -184,7 +184,7 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 
 Aby utworzyć partię migracji dla migracji IMAP, można użyć polecenia cmdlet [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) . Możesz utworzyć partię migracji i uruchomić ją automatycznie, dołączając parametr _AutoStart_ . Alternatywnie możesz utworzyć partię migracji, a następnie uruchomić ją później za pomocą polecenia cmdlet[Start-MigrationBatch](/powershell/module/exchange/start-migrationbatch) .
 
-Następujące polecenie programu PowerShell usługi Exchange Online automatycznie uruchomi partię migracji o nazwie "IMAPBatch1" przy użyciu punktu końcowego IMAP o nazwie "IMAPEndpoint":
+Następujące polecenie Exchange Online programu PowerShell automatycznie uruchomi partię migracji o nazwie "IMAPBatch1" przy użyciu punktu końcowego IMAP o nazwie "IMAPEndpoint":
 
 ```powershell
 New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\IMAPmigration_1.csv")) -AutoStart
@@ -204,9 +204,9 @@ Możesz również sprawdzić, czy partia została uruchomiona, uruchamiając nas
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-microsoft-365"></a>Krok 5. Kierowanie wiadomości e-mail na platformę Microsoft 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>Krok 5. Kierowanie wiadomości e-mail do Microsoft 365
 
-Systemy poczty e-mail ustalają lokalizację, do której należy dostarczać wiadomości e-mail, na podstawie rekordu DNS nazywanego rekordem MX. W trakcie procesu migracji poczty e-mail rekord MX wskazywał źródłowy system poczty e-mail. Po zakończeniu migracji poczty e-mail na platformę Microsoft 365 nadszedł czas, aby wskazać rekord MX na platformie Microsoft 365. Pomaga to upewnić się, że wiadomość e-mail jest dostarczana do skrzynek pocztowych platformy Microsoft 365. Przenosząc rekord MX, możesz również wyłączyć stary system poczty e-mail, gdy wszystko będzie gotowe.
+Systemy poczty e-mail ustalają lokalizację, do której należy dostarczać wiadomości e-mail, na podstawie rekordu DNS nazywanego rekordem MX. W trakcie procesu migracji poczty e-mail rekord MX wskazywał źródłowy system poczty e-mail. Po zakończeniu migracji wiadomości e-mail do Microsoft 365 nadszedł czas, aby wskazać rekord MX na Microsoft 365. Pomaga to upewnić się, że wiadomość e-mail jest dostarczana do skrzynek pocztowych Microsoft 365. Przenosząc rekord MX, możesz również wyłączyć stary system poczty e-mail, gdy wszystko będzie gotowe.
 
 W przypadku wielu dostawców hostingu DNS dostępne są szczegółowe instrukcje dotyczące zmieniania rekordu MX. Jeśli Twojego dostawcy hostingu DNS nie ma na liście lub jeśli chcesz zapoznać się z ogólnymi wskazówkami, dostępne są również [ogólne instrukcje dotyczące rekordów MX](https://go.microsoft.com/fwlink/?LinkId=397449).
 
@@ -214,13 +214,13 @@ Rozpoznanie zmienionego rekordu MX przez systemy poczty e-mail Twoich klientów 
 
 ### <a name="step-6-delete-imap-migration-batch"></a>Krok 6. Usuwanie partii migracji IMAP
 
-Po zmianie rekordu MX i sprawdzeniu, czy wszystkie wiadomości e-mail są kierowane do skrzynek pocztowych platformy Microsoft 365, powiadom użytkowników, że ich poczta trafia na platformę Microsoft 365. Następnie możesz usunąć partię migracji IMAP. Przed usunięciem partii migracji sprawdź, czy są spełnione poniższe wymagania.
+Po zmianie rekordu MX i sprawdzeniu, czy wszystkie wiadomości e-mail są kierowane do Microsoft 365 skrzynek pocztowych, powiadom użytkowników, że ich poczta będzie Microsoft 365. Następnie możesz usunąć partię migracji IMAP. Przed usunięciem partii migracji sprawdź, czy są spełnione poniższe wymagania.
 
-- Wszyscy użytkownicy korzystają ze skrzynek pocztowych platformy Microsoft 365. Po usunięciu partii poczta wysłana do skrzynek pocztowych w lokalnym programie Exchange Server nie jest kopiowana do odpowiednich skrzynek pocztowych platformy Microsoft 365.
+- Wszyscy użytkownicy używają Microsoft 365 skrzynek pocztowych. Po usunięciu partii poczta wysłana do skrzynek pocztowych w lokalnym Exchange Server nie jest kopiowana do odpowiednich Microsoft 365 skrzynek pocztowych.
 
-- Skrzynki pocztowe platformy Microsoft 365 były synchronizowane co najmniej raz po tym, jak poczta zaczęła być wysyłana bezpośrednio do nich. W tym celu upewnij się, że wartość w polu Czas ostatniej synchronizacji dla partii migracji jest nowsza niż wtedy, gdy poczta zaczęła być kierowana bezpośrednio do skrzynek pocztowych platformy Microsoft 365.
+- Microsoft 365 skrzynki pocztowe zostały zsynchronizowane co najmniej raz po rozpoczęciu wysyłania wiadomości e-mail bezpośrednio do nich. W tym celu upewnij się, że wartość w polu Czas ostatniej synchronizacji dla partii migracji jest nowsza niż wtedy, gdy poczta zaczęła być kierowana bezpośrednio do Microsoft 365 skrzynek pocztowych.
 
-Aby usunąć partię migracji "IMAPBatch1" z programu PowerShell usługi Exchange Online, uruchom następujące polecenie:
+Aby usunąć partię migracji "IMAPBatch1" z programu Exchange Online programu PowerShell, uruchom następujące polecenie:
 
 ```powershell
 Remove-MigrationBatch -Identity IMAPBatch1
@@ -230,7 +230,7 @@ Aby uzyskać więcej informacji na temat polecenia cmdlet **Remove-MigrationBatc
 
 #### <a name="verify-it-worked"></a>Sprawdź, czy to zadziałało
 
-Uruchom następujące polecenie w programie Exchange Online PowerShell, aby wyświetlić informacje o "IMAPBatch1":
+Uruchom następujące polecenie w programie Exchange Online programu PowerShell, aby wyświetlić informacje o "IMAPBatch1":
 
 ```powershell
 Get-MigrationBatch IMAPBatch1"

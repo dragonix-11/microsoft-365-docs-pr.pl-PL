@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 04eee4c44e0cf2b712ecab84b18837d7b3705cef
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 31af082f66836ecfbe6a7cd804fd3b7bba2ed4bd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669809"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012389"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Włączanie reguł zmniejszania obszaru ataków
 
@@ -142,7 +142,7 @@ Poniższe procedury włączania reguł usługi ASR zawierają instrukcje dotycz�
 
 4. Wybierz przycisk **OK** w trzech okienkach konfiguracji. Następnie wybierz pozycję **Utwórz** , jeśli tworzysz nowy plik ochrony punktu końcowego, lub **zapisz** , jeśli edytujesz istniejący plik.
 
-#### <a name="endpoint-security-policy"></a>Zasady zabezpieczeń punktu końcowego**
+#### <a name="endpoint-security-policy"></a>Zasady zabezpieczeń punktu końcowego
 
 1. Wybierz pozycję **Redukcja obszaru ataków** zabezpieczeń \> **punktu końcowego**. Wybierz istniejącą regułę usługi ASR lub utwórz nową. Aby utworzyć nowy, wybierz pozycję **Utwórz zasady** i wprowadź informacje dotyczące tego profilu. W polu **Typ profilu** wybierz pozycję **Reguły zmniejszania obszaru ataków**. Jeśli wybrano istniejący profil, wybierz pozycję **Właściwości**, a następnie wybierz **pozycję Ustawienia**.
 

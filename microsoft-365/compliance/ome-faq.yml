@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Szyfrowanie wiadomości — często zadawane pytania
+  title: Często zadawane pytania dotyczące szyfrowania wiadomości
   f1.keywords:
   - NOCSH
   ms.author: krowley
@@ -14,98 +14,101 @@ metadata:
   search.appverid:
   - MET150
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
-  description: Masz pytanie dotyczące sposobu działania nowych funkcji ochrony wiadomości? Tu znajdziesz odpowiedź.
+  description: Masz pytanie dotyczące sposobu działania szyfrowania komunikatów usługi Microsoft Purview? Sprawdź odpowiedź tutaj.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 4506c54fde73b7d7c8f4e50ff8edbfca0ef44717
-  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+  ms.openlocfilehash: 92311ec82b7c9e5507cba5b0bd1feb457f9f729f
+  ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 04/04/2022
-  ms.locfileid: "64634982"
-title: Szyfrowanie wiadomości — często zadawane pytania
+  ms.lasthandoff: 06/10/2022
+  ms.locfileid: "66013073"
+title: Szyfrowanie komunikatów — często zadawane pytania
 summary: >
-  Masz pytanie dotyczące sposobu działania nowych funkcji ochrony wiadomości? Tu znajdziesz odpowiedź. Zobacz też Często zadawane pytania dotyczące ochrony danych w usłudze [Azure Information Protection, aby uzyskać odpowiedzi](/information-protection/get-started/faqs-rms) na pytania dotyczące usługi ochrony danych, usługi Azure Rights Management w usłudze Azure Information Protection.
+  [!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+
+  Masz pytanie dotyczące sposobu działania nowych funkcji ochrony komunikatów? Sprawdź odpowiedź tutaj. Zapoznaj się również z [często zadawanym pytaniem dotyczącym ochrony danych w usłudze Azure Information Protection](/information-protection/get-started/faqs-rms), aby uzyskać odpowiedzi na pytania dotyczące usługi ochrony danych, azure Rights Management, w usłudze Azure Information Protection.
 sections:
 - name: Zignorowano
   questions:
-  - question: Co to jest Office 365 szyfrowania wiadomości (OME)?
-    answer: OME łączy funkcje szyfrowania poczty e-mail i zarządzania prawami dostępu. Funkcje zarządzania prawami są obsługiwane przez usługę Azure Information Protection.
+  - question: Co to jest szyfrowanie komunikatów usługi Microsoft Purview (OME)?
+    answer: Usługa Microsoft Purview Message Encryption łączy funkcje szyfrowania poczty e-mail i zarządzania prawami. Możliwości zarządzania prawami są obsługiwane przez usługę Azure Information Protection.
   - question: >
-      KtoTo używać OME?
-    answer: "Możesz korzystać z nowych funkcji OME pod następującymi warunkami:\n  \n- Jeśli jeszcze nigdy nie ustawiono usługi OME ani IRM dla Exchange Online w Office 365.\n\n- Jeśli masz już usługę OME i IRM, możesz wykonać te czynności, jeśli korzystasz z usługi Azure Rights Management z usługi Azure Information Protection.\n\n- Jeśli używasz programu Exchange Online usługą zarządzania prawami dostępu w usłudze Active Directory (AD RMS), nie możesz od razu włączyć tych nowych funkcji. Zamiast tego należy najpierw przeprowadzić [migrację usług AD RMS do usługi Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) usługi. Po zakończeniu migracji możesz pomyślnie skonfigurować obiekt OME.\n\n  Jeśli zdecydujesz się nadal korzystać z lokalnych usług AD RMS z usługą Exchange Online zamiast migrowania do usługi Azure Information Protection, nie będziesz mógł korzystać z tych nowych funkcji.\n"
+      KtoTo może używać szyfrowania komunikatów usługi Microsoft Purview?
+    answer: "Szyfrowania komunikatów usługi Microsoft Purview można użyć w następujących warunkach:\n  \n- Jeśli nigdy nie skonfigurowano Office 365 szyfrowania komunikatów (OME) lub IRM dla Exchange Online w Office 365.\n\n- Jeśli skonfigurowano protokół OME i usługę IRM, możesz wykonać te kroki, jeśli używasz usługi Azure Rights Management z usługi Azure Information Protection.\n\n- Jeśli używasz Exchange Online z usługą Active Directory Rights Management Service (AD RMS), nie możesz od razu włączyć tych nowych możliwości. Zamiast tego należy najpierw [przeprowadzić migrację usług AD RMS do usługi Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). Po zakończeniu migracji można pomyślnie skonfigurować szyfrowanie komunikatów usługi Microsoft Purview.\n\n  Jeśli zdecydujesz się nadal używać lokalnych usług AD RMS z Exchange Online zamiast migrować do usługi Azure Information Protection, nie będzie można używać szyfrowania komunikatów usługi Microsoft Purview.\n"
   - question: >
-      Jakich subskrypcji potrzebuję, aby korzystać z nowych funkcji OME?
+      Jakich subskrypcji potrzebuję do korzystania z szyfrowania komunikatów usługi Microsoft Purview?
     answer: >
-      Aby korzystać z nowych funkcji OME, potrzebujesz jednego z następujących planów:
+      Do korzystania z usługi Microsoft Purview Message Encryption potrzebny jest jeden z następujących planów:
 
 
-      - Office 365 szyfrowanie wiadomości jest oferowane w ramach usług Office 365 Enterprise E3 i E5, Microsoft 365 Enterprise E3 i E5, Microsoft 365 Business Premium, Office 365 A1, A3 i A5 oraz Office 365 dla instytucji rządowych G3 i G5. Nie potrzebujesz dodatkowych licencji, aby uzyskać nowe funkcje ochrony obsługiwane przez usługę Azure Information Protection.
+      - Usługa Microsoft Purview Message Encryption jest oferowana w ramach Office 365 Enterprise E3 i E5, Microsoft 365 Enterprise E3 i E5, Microsoft 365 Business Premium, Office 365 A1, A3 i A5 oraz Office 365 dla instytucji rządowych G3 i G5. Nie potrzebujesz dodatkowych licencji, aby otrzymywać nowe możliwości ochrony obsługiwane przez usługę Azure Information Protection.
 
 
-      - Możesz również dodać usługę Azure Information Protection Plan 1 do następujących planów, aby otrzymać nowe funkcje szyfrowania wiadomości usługi Office 365: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard lub Office 365 Enterprise E1.
+      - Możesz również dodać usługę Azure Information Protection Plan 1 do następujących planów, aby otrzymywać szyfrowanie komunikatów usługi Microsoft Purview: Exchange Online plan 1, Exchange Online plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard lub Office 365 Enterprise E1.
 
 
-      - Każdy użytkownik, który korzysta Office 365 szyfrowanie wiadomości, musi mieć licencję na tę funkcję.
+      - Każdy użytkownik korzystający z szyfrowania komunikatów usługi Microsoft Purview musi mieć licencję, aby był objęty funkcją.
 
 
-      - Aby uzyskać pełną listę, zobacz [opisy Exchange Online usługi](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) do szyfrowania Office 365 wiadomości.
+      - Aby uzyskać pełną listę, zobacz [opisy usługi Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) dla usługi Microsoft Purview Message Encryption.
   - question: >
-      Czy mogę używać programu Exchange Online z własnym kluczem (BYOK) w usłudze Azure Information Protection?
-    answer: "Tak! Firma Microsoft zaleca, aby przed skonfigurowaniem programu OME wykonać kroki niezbędne do skonfigurowania programu BYOK.\n  \nAby uzyskać więcej informacji na temat programu BYOK, zobacz [Planowanie i implementowanie klucza Information Protection dzierżawy usługi Azure](/information-protection/plan-design/plan-implement-tenant-key).\n  \n"
+      Czy mogę używać Exchange Online z użyciem własnego klucza (BYOK) w usłudze Azure Information Protection?
+    answer: "Tak! Firma Microsoft zaleca wykonanie kroków konfigurowania usługi BYOK przed skonfigurowaniem szyfrowania komunikatów usługi Microsoft Purview.\n  \nAby uzyskać więcej informacji o usłudze BYOK, zobacz [Planowanie i implementowanie klucza dzierżawy usługi Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key).\n  \n"
   - question: >
-      Czy OME i BYOK z usługą Azure Information Protection zmienić podejście firmy Microsoft do żądań danych innych firm, takich jak wezwania?
-    answer: "L.p. Standard OME i możliwość podania i kontrolowania Twoich własnych kluczy szyfrowania, nazywanych BYOK, z usługi Azure Information Protection nie były przeznaczone do reagowania na wezwania służące do wykonywania działań porządkowych. Narzędzie OME z standardem BYOK dla platformy Azure Information Protection zostało zaprojektowane dla organizacji skupionych na zgodności z przepisami. Firma Microsoft poważnie zwraca się do innych podmiotów o dane klientów. Jako administrator usługodawca, zawsze wspieramy prywatność Twoich danych. W przypadku uzyskania wezwania zawsze próbujemy przekierować stronę trzecią bezpośrednio do Ciebie w celu uzyskania tych informacji. (Przeczytaj blog Brada Smitha: [Ochrona danych klientów przed odłogiem rządowym](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Okresowo publikujemy szczegółowe informacje o obierania przez nas żądania. Aby uzyskać więcej informacji dotyczących żądań danych innych firm, zobacz Odpowiadanie na żądania organów administracji państwowej i przepisów prawa dotyczące uzyskiwania dostępu do danych klientów w Centrum zaufania firmy Microsoft.[](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Zobacz też \"Ujawnienie danych klientów\" w Warunkach [usług online (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .\n  \n"
+      Czy usługa Microsoft Purview Message Encryption i BYOK za pomocą usługi Azure Information Protection zmienić podejście firmy Microsoft do żądań danych innych firm, takich jak wezwania do sądu?
+    answer: "Nie. Szyfrowanie komunikatów usługi Microsoft Purview oraz możliwość zapewnienia i kontrolowania własnych kluczy szyfrowania o nazwie BYOK z usługi Azure Information Protection nie zostały zaprojektowane tak, aby reagować na wezwania organów ścigania. Protokół OME z rozwiązaniem BYOK dla usługi Azure Information Protection został zaprojektowany dla organizacji ukierunkowanych na zgodność. Firma Microsoft poważnie traktuje żądania innych firm dotyczące danych klientów. Jako dostawca usług w chmurze zawsze opowiadamy się za prywatnością twoich danych. W przypadku otrzymania wezwania do sądu zawsze próbujemy przekierować stronę trzecią bezpośrednio do Ciebie w celu uzyskania informacji. (Przeczytaj blog Brada Smitha: [Ochrona danych klientów przed szpiegowaniem przez rząd](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Okresowo publikujemy szczegółowe informacje o otrzymywanych żądaniach. Aby uzyskać więcej informacji na temat żądań danych innych firm, zobacz [Odpowiadanie na żądania instytucji rządowych i organów ścigania dotyczące dostępu do danych klientów](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) w Centrum zaufania firmy Microsoft. Zobacz również sekcję \"Ujawnienie danych klienta\" w [warunkach korzystania z usług online (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
   - question: >
-      Jak ta funkcja jest powiązana ze starszymi Office 365 szyfrowania wiadomości (OME) i funkcji zarządzania prawami do informacji (IRM)?
-    answer: "Nowe funkcje szyfrowania wiadomości Office 365 to nowość istniejących rozwiązań IRM i starszych rozwiązań OME. Bardziej szczegółowe informacje można znaleźć w poniższej tabeli.\n  \n**Porównanie starszych funkcji OME, IRM i nowych funkcji OME**\n\n| Funkcja | Poprzednie wersje OME | IRM | Nowe funkcje OME |\n|:-----|:-----|:-----|:-----|\n|**Wysyłanie zaszyfrowanej wiadomości e-mail**|Tylko za pośrednictwem Exchange przepływu poczty e-mail|Użytkownik końcowy inicjowany z usługi Outlook dla Windows, Outlook dla komputerów Mac lub Outlook w sieci Web, lub za pośrednictwem Exchange przepływu poczty e-mail|Użytkownik końcowy inicjowany z usługi Outlook dla Windows, Outlook dla komputerów Mac lub Outlook w sieci Web lub za pomocą reguł przepływu poczty e-mail|\n|**Zarządzanie prawami**|-|Opcja Nie przesyłaj dalej i szablony niestandardowe|Opcja Nie przesyłaj dalej, opcja tylko szyfrowania, szablony domyślne i niestandardowe|\n|**Obsługiwany typ adresata**|Tylko adresaci zewnętrzni|Tylko adresaci wewnętrzni|Adresaci wewnętrzni i zewnętrzni|\n|**Środowisko obsługi dla adresata**|Adresaci zewnętrzni otrzymali wiadomość w formacie HTML, która została pobrana i otwarta w przeglądarce lub pobrana aplikacja mobilna.|Adresaci wewnętrzni otrzymywali zaszyfrowane wiadomości e-mail Outlook w Windows, Outlook dla komputerów Mac i Outlook w sieci Web.|Adresaci wewnętrzni i zewnętrzni odbierają wiadomości e-mail Outlook w aplikacjach Windows, Outlook dla komputerów Mac, Outlook w sieci Web, Outlook dla systemu Android i Outlook  dla systemu iOS lub za pośrednictwem portalu sieci Web, niezależnie od tego, czy znajdują się one w tej samej organizacji, czy w dowolnej organizacji. Portal OME nie wymaga osobnego pobrania.|\n|**Wniesienie pomocy technicznej do swojego klucza**|Niedostępny|Niedostępny| Obsługiwane są program BYOK|\n"
+      W jaki sposób ta funkcja jest powiązana ze starszymi funkcjami szyfrowania komunikatów Office 365 (OME) i informacji Rights Management (IRM)?
+    answer: "Szyfrowanie komunikatów usługi Microsoft Purview to ewolucja istniejących rozwiązań IRM i starszych rozwiązań OME. Poniższa tabela zawiera więcej szczegółów.\n  \n**Porównanie starszych rozwiązań OME, IRM i Microsoft Purview Message Encryption**\n\n| Możliwości | Poprzednie wersje protokołu OME | IRM | Szyfrowanie komunikatów usługi Microsoft Purview |\n|:-----|:-----|:-----|:-----|\n|**Wysyłanie zaszyfrowanej wiadomości e-mail**|Tylko za pośrednictwem reguł przepływu poczty Exchange|Użytkownik końcowy zainicjowany z Outlook dla Windows, Outlook dla komputerów Mac lub Outlook w sieci Web; lub za pośrednictwem reguł przepływu poczty Exchange|Użytkownik końcowy zainicjowany z Outlook dla Windows, Outlook dla komputerów Mac lub Outlook w sieci Web; lub za pośrednictwem reguł przepływu poczty|\n|**Zarządzanie prawami**|-|Opcja Nie przesyłaj dalej i szablony niestandardowe|Opcja Nie przesyłaj dalej, opcja tylko szyfrowanie, szablony domyślne i niestandardowe|\n|**Obsługiwany typ adresata**|Tylko adresaci zewnętrzni|Tylko adresaci wewnętrzni|Adresaci wewnętrzni i zewnętrzni|\n|**Środowisko dla adresata**|Adresaci zewnętrzni otrzymali wiadomość HTML, którą pobrali i otworzyli w przeglądarce lub pobranej aplikacji mobilnej.|Adresaci wewnętrzni otrzymywali zaszyfrowaną wiadomość e-mail tylko w Outlook dla Windows, Outlook dla komputerów Mac i Outlook w sieci Web.|Adresaci wewnętrzni i zewnętrzni otrzymują wiadomości e-mail w Outlook dla Windows, Outlook dla komputerów Mac, Outlook w sieci Web, Outlook dla Android i Outlook dla iOS , lub za pośrednictwem portalu internetowego, niezależnie od tego, czy znajdują się w tej samej organizacji, czy w jakiejkolwiek organizacji. Portal OME nie wymaga oddzielnego pobierania.|\n|**Obsługa funkcji Bring Your Own Key**|Niedostępny|Niedostępny| Obsługiwane przez funkcję BYOK|\n"
   - question: >
-      Jak mogę włączyć nowe funkcje OME dla mojej organizacji?
-    answer: "Zobacz [Konfigurowanie nowych funkcji Office 365 szyfrowania wiadomości](set-up-new-message-encryption-capabilities.md).\n  \n"
+      Jak mogę włączyć szyfrowanie komunikatów usługi Microsoft Purview dla mojej organizacji?
+    answer: "Zobacz [Konfigurowanie szyfrowania komunikatów usługi Microsoft Purview](set-up-new-message-encryption-capabilities.md).\n  \n"
   - question: >
       Czy poprzednia wersja OME będzie przestarzała?
     answer: >
-      Nadal możesz używać poprzedniej wersji OME, która obecnie nie będzie przestarzała. Zdecydowanie jednak zachęcamy organizacje do korzystania z nowego i ulepszonego rozwiązania OME. Jeśli jeszcze nie wdrożono jeszcze usługi OME, nie można skonfigurować nowego wdrożenia poprzedniej wersji usługi OME.
+      Nadal można używać poprzedniej wersji OME. W tej chwili nie będzie ona przestarzała. Jednak zdecydowanie zachęcamy organizacje do korzystania z nowego i ulepszonego rozwiązania do szyfrowania komunikatów. Jeśli nie wdrożono jeszcze protokołu OME, nie można skonfigurować nowego wdrożenia poprzedniej wersji OME.
   - question: >
-      Czy moja organizacja korzysta z usługi Zarządzanie prawami dostępu w usłudze Active Directory. Czy mogę korzystać z tej funkcji?
-    answer: "L.p. Jeśli używasz programu Exchange Online usługą zarządzania prawami dostępu w usłudze Active Directory (AD RMS), nie możesz od razu włączyć tych nowych funkcji. Zamiast tego należy najpierw przeprowadzić [migrację usług AD RMS do usługi Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) usługi.\n  \n"
+      Moja organizacja używa usługi Active Directory Rights Management, czy mogę korzystać z tej funkcji?
+    answer: "Nie. Jeśli używasz Exchange Online z usługą Active Directory Rights Management Service (AD RMS), nie możesz od razu włączyć tych nowych możliwości. Zamiast tego należy najpierw [przeprowadzić migrację usług AD RMS do usługi Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms).\n  \n"
   - question: >
-      Moja organizacja ma wdrożenie Exchange hybrydowe. Czy mogę używać tej funkcji?
-    answer: "Lokalni użytkownicy mogą wysyłać zaszyfrowane wiadomości przy Exchange Online przepływu poczty. Aby to zrobić, musisz rozsyłać wiadomości e-mail za pośrednictwem Exchange Online. Aby uzyskać więcej informacji, [zobacz Część 2. Konfigurowanie poczty tak, aby przepływała](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365) z serwera poczty e-mail do Microsoft 365.\n  \n"
+      Moja organizacja ma wdrożenie hybrydowe Exchange. Czy mogę użyć tej funkcji?
+    answer: "Użytkownicy lokalni mogą wysyłać zaszyfrowaną pocztę przy użyciu reguł przepływu poczty Exchange Online. W tym celu należy kierować wiadomości e-mail za pośrednictwem Exchange Online. Aby uzyskać więcej informacji, zobacz [Część 2: Konfigurowanie poczty do przepływu z serwera poczty e-mail do Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).\n  \n"
   - question: >
-      Jakiego klienta poczty e-mail potrzebuję, aby utworzyć zaszyfrowaną wiadomość OME? Jakie aplikacje są obsługiwane w przypadku wysyłania chronionych wiadomości?
-    answer: "Wiadomości chronione można tworzyć w programach Outlook 2016, Outlook 2013 dla komputerów Windows i Mac oraz z Outlook w sieci Web. Aby uzyskać więcej informacji na temat wysyłania zaszyfrowanych wiadomości, zobacz Wysyłanie i wyświetlanie zaszyfrowanych wiadomości oraz odpowiadanie na nie Outlook [komputera PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us).\n  \n"
+      Jakiego klienta poczty e-mail należy użyć, aby utworzyć zaszyfrowaną wiadomość? Jakie aplikacje są obsługiwane w przypadku wysyłania chronionych komunikatów?
+    answer: "Chronione komunikaty można tworzyć z Outlook 2016, Outlook 2013 dla Windows i Mac oraz z Outlook w sieci Web. Aby uzyskać więcej informacji na temat wysyłania zaszyfrowanych wiadomości, zobacz [Wysyłanie, wyświetlanie i odpowiadanie na zaszyfrowane wiadomości w Outlook dla komputera.](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)\n  \n"
   - question: >
-      Którzy klienci poczty e-mail są obsługiwani do czytania chronionych wiadomości e-mail i odpowiadania na nie?
+      Którzy klienci poczty e-mail mogą odczytywać chronione wiadomości e-mail i odpowiadać na nie?
     answer: >
-      Microsoft 365 użytkownicy mogą czytać aplikacje Outlook dla systemów Windows i Mac (2013 i 2016), Outlook w sieci Web i Outlook urządzeniach przenośnych (Android i iOS). Jeśli organizacja na to zezwala, możesz również używać natywnego klienta poczty systemu iOS. Jeśli nie jesteś użytkownikiem Microsoft 365, możesz czytać zaszyfrowane wiadomości i odpowiadać na nie w przeglądarce internetowej.
+      Microsoft 365 użytkownicy mogą odczytywać i odpowiadać z Outlook dla Windows i Mac (2013 i 2016), Outlook w sieci Web i Outlook mobile (Android i iOS). Jeśli organizacja na to zezwala, możesz również użyć natywnego klienta poczty iOS. Jeśli nie jesteś użytkownikiem Microsoft 365, możesz odczytywać zaszyfrowane wiadomości w internecie i odpowiadać na nie za pośrednictwem przeglądarki internetowej.
   - question: >
-      Którzy klienci poczty e-mail obsługują chronione tylko szyfrowanie wiadomości e-mail?
+      Którzy klienci poczty e-mail obsługują wiadomości e-mail chronione tylko za pomocą szyfrowania?
     answer: >
-      Microsoft 365 użytkownicy mogą Outlook 2019 dla komputerów PC i Microsoft 365 do tworzenia poczty chronionej za pomocą zasad tylko do szyfrowania.  Oznacza to, że wiadomości, do których zastosowano nowe zasady szyfrowania, można czytać bezpośrednio w aplikacji Outlook w sieci Web, w aplikacji Outlook dla systemów iOS i Android, a teraz Outlook dla komputerów PC w wersji 2019 i Microsoft 365.
+      Microsoft 365 użytkownicy mogą używać Outlook dla komputerów w wersji 2019 i Microsoft 365 do tworzenia poczty chronionej przy użyciu zasad tylko do szyfrowania.  Oznacza to, że komunikaty, które mają nowe zasady tylko do szyfrowania, mogą być odczytywane bezpośrednio w Outlook w sieci Web, w Outlook dla iOS i Android, a teraz Outlook dla komputerów w wersji 2019 i Microsoft 365.
   - question: >
-      Czy istnieje limit rozmiaru wiadomości, które można wysyłać za pomocą OME?
+      Czy istnieje limit rozmiaru komunikatów, które można wysyłać za pomocą protokołu OME?
     answer: >
-      Tak. Maksymalny rozmiar wiadomości, w tym załączników, to 25 MB. Aby uzyskać więcej informacji, zobacz [Limity wiadomości](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
+      Tak. Maksymalny rozmiar wiadomości, który można wysłać za pomocą szyfrowania komunikatów usługi Microsoft Purview, w tym załączników, wynosi 25 MB. Aby uzyskać więcej informacji, zobacz [Limity komunikatów](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
   - question: >
-      Jakie typy wiadomości obsługuje portal OME?
+      Jakiego typu komunikaty obsługuje portal OME?
     answer: >
       Portal OME obsługuje tylko pocztę. Portal nie obsługuje innych typów wiadomości, takich jak kalendarz lub poczta głosowa.
   - question: >
       Jakie typy plików są obsługiwane jako załączniki w chronionych wiadomościach e-mail? Czy załączniki dziedziczą zasady ochrony skojarzone z chronionymi wiadomościami e-mail?
-    answer: "Do chronionej poczty możesz dołączyć dowolny typ pliku. Z jednym wyjątkiem zasady ochrony są stosowane tylko do formatów plików wymienionych w typach plików obsługiwanych przez Information Protection [Azure](/information-protection/rms-client/client-admin-guide-file-types). Edytor OME nie obsługuje wersji 97–2003 następujących programów pakietu Office: Word (.doc), Excel (.xls) i PowerPoint (.ppt).\n\nJeśli jest obsługiwany format pliku, na przykład plik programu Word Excel, PowerPoint, plik jest zawsze chroniony, nawet po pobraniu załącznika przez adresata. Na przykład załóżmy, że załącznik jest chroniony przez pole Nie przesyłaj dalej. Oryginalny adresat pobierze plik, utworzy wiadomość do nowego adresata i dołączy plik. Gdy nowy adresat otrzyma plik, adresat nie będzie mógł otworzyć chronionego pliku.\n  \n"
+    answer: "Do chronionej poczty można dołączyć dowolny typ pliku. Z jednym wyjątkiem zasady ochrony są stosowane tylko w formatach plików wymienionych w [typach plików obsługiwanych przez klienta usługi Azure Information Protection](/information-protection/rms-client/client-admin-guide-file-types). Usługa Microsoft Purview Message Encryption nie obsługuje wersji 97-2003 następujących programów Office: Word (.doc), Excel (.xls) i PowerPoint (.ppt).\n\nJeśli obsługiwany jest format pliku, taki jak plik programu Word, Excel lub PowerPoint, plik jest zawsze chroniony, nawet po pobraniu załącznika przez adresata. Załóżmy na przykład, że załącznik jest chroniony przez funkcję Nie przesyłaj dalej. Oryginalny adresat pobiera plik, tworzy komunikat do nowego adresata i dołącza plik. Gdy nowy adresat otrzyma plik, adresat nie będzie mógł otworzyć chronionego pliku.\n  \n"
   - question: >
-      Czy załączniki w plikach PDF są obsługiwane?
+      Czy załączniki plików PDF są obsługiwane?
     answer: >
-      Odpowiedź brzmi tak! Jeśli funkcja szyfrowania PDF jest włączona, pozwala chronić poufne dokumenty PDF za pośrednictwem bezpiecznej komunikacji lub bezpiecznej współpracy. Podczas wysyłania wiadomości e-mail usługa Office 365 pliki PDF. Klient Outlook nie szyfruje załączników plików PDF.
+      Krótka odpowiedź brzmi tak! Jeśli ta opcja jest włączona, szyfrowanie plików PDF umożliwia ochronę poufnych dokumentów PDF za pośrednictwem bezpiecznej komunikacji lub bezpiecznej współpracy. Podczas wysyłania wiadomości e-mail usługa Office 365 szyfruje załączniki plików PDF. Klient Outlook nie szyfruje załączników plików PDF.
 
 
-      Na Outlook w sieci Web, Outlook dla systemu iOS i Outlook dla systemu Android możesz szyfrować pliki PDF, które wysyłasz bez konieczności wytłaniania kolejnych kroków. Ci klienci natywnie obsługują szyfrowanie PDF.
+      W przypadku Outlook w sieci Web, Outlook dla iOS i Outlook dla Android można szyfrować pliki PDF wysyłane bez żadnych dodatkowych kroków. Ci klienci natywnie obsługują szyfrowanie plików PDF.
 
 
-      Outlook nie obsługuje natywnie szyfrowania załączników plików PDF. Zamiast tego musisz najpierw skonfigurować reguły przepływu poczty e Exchange lub zasady DLP, aby zastosować szyfrowanie do załączników PDF. Gdy wysyłasz wiadomość z aplikacji Outlook z załącznikiem PDF, klient najpierw wysyła wiadomość z załącznikiem do usługi. Gdy usługa otrzyma plik, usługa stosuje ochronę OME zasad ochrony przed utratą danych (DLP, data loss prevention) lub reguły przepływu poczty e-mail w Exchange Online. Następnie Exchange Online wiadomość z chronionym załącznikiem pliku PDF.
+      Outlook desktop nie obsługuje natywnie szyfrowania załączników plików PDF. Zamiast tego należy najpierw skonfigurować reguły przepływu poczty Exchange lub DLP, aby najpierw zastosować szyfrowanie do załączników PDF. Podczas wysyłania wiadomości e-mail z programu Outlook Desktop z załącznikiem PDF klient wysyła najpierw wiadomość z załącznikiem do usługi. Gdy usługa odbiera plik, usługa stosuje ochronę szyfrowania komunikatów usługi Microsoft Purview zasad ochrony przed utratą danych (DLP) lub reguły przepływu poczty w Exchange Online. Następnie Exchange Online wysyła komunikat z załącznikiem chronionego pliku PDF.
 
 
-      Aby włączyć szyfrowanie załączników PDF, uruchom następujące polecenie w [programie Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+      Aby włączyć szyfrowanie załączników PDF, uruchom następujące polecenie w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 
       ```powershell
@@ -115,71 +118,71 @@ sections:
       ```
 
 
-      Szyfrowanie plików PDF pozwala chronić poufne dokumenty PDF za pośrednictwem bezpiecznej komunikacji lub bezpiecznej współpracy. W przypadku Outlook poczty e-mail wiadomości i niechronione załączniki PDF dziedziczą zasady OME ochrony przed utratą danych (DLP, data loss prevention) lub regułę przepływu poczty w Exchange Online. Ponadto jeśli użytkownik Outlook w sieci Web dołącza niechroniony dokument PDF i stosuje ochronę wiadomości, wiadomość dziedziczy ochronę wiadomości. Użytkownicy mogą otwierać zaszyfrowane załączniki tylko w aplikacjach, które obsługują chronione pliki PDF (na przykład w portalu OME i usłudze Azure Information Protection Viewer).
+      Szyfrowanie plików PDF umożliwia ochronę poufnych dokumentów PDF za pomocą bezpiecznej komunikacji lub bezpiecznej współpracy. Dla wszystkich klientów Outlook wiadomości i niechronione załączniki PDF dziedziczą ochronę szyfrowania komunikatów usługi Microsoft Purview zasad ochrony przed utratą danych (DLP) lub reguły przepływu poczty w Exchange Online. Ponadto jeśli użytkownik Outlook w sieci Web dołącza niechroniony dokument PDF i stosuje ochronę do wiadomości, komunikat dziedziczy ochronę wiadomości. Użytkownicy mogą otwierać zaszyfrowane załączniki tylko w aplikacjach obsługujących chronione pliki PDF (na przykład portal OME i przeglądarkę usługi Azure Information Protection Viewer).
 
 
       > [!IMPORTANT]
 
-      > Outlook klasycznego nie obsługuje szyfrowania PDF.
+      > Outlook klient stacjonarny nie obsługuje szyfrowania PLIKÓW PDF.
   - question: >
-      Czy SharePoint w trybie online OneDrive dla Firm obsługiwane załączniki?
+      Czy załączniki SharePoint Online lub OneDrive dla Firm są obsługiwane?
     answer: >
-      Jeszcze nie. SharePoint w trybie online OneDrive dla Firm załączniki nie są obsługiwane i użytkownicy końcowi mogą szyfrować pocztę, ale nie mogą szyfrować załączników w chmurze.
+      Jeszcze nie. SharePoint Załączniki online lub OneDrive dla Firm nie są obsługiwane, a użytkownicy końcowi mogą szyfrować pocztę, ale nie załączniki w chmurze.
   - question: >
-      Którzy klienci poczty e-mail obsługują podgląd zaszyfrowanych załączników w chronionych wiadomościach e-mail?
-    answer: "Gdy załączniki są chronione za pomocą chronionej poczty, klienci Outlook mogą od razu wyświetlać podgląd dokumentu. Outlook podgląd dokumentów programu Office (docx, xlsx, pptx, doc, xls, ppt). Outlook w sieci Web obsługuje podgląd dokumentów Office (docx, xlsx, pptx) i plików PDF.  \n"
+      Co klienci poczty e-mail obsługują podgląd zaszyfrowanych załączników w chronionych wiadomościach e-mail?
+    answer: "Gdy załączniki są chronione chronioną pocztą, klienci Outlook zapewniają bezpośrednią wersję zapoznawczą dokumentu. Outlook obsługuje podgląd dokumentów Office (docx, xlsx, pptx, doc, xls, ppt). Outlook w sieci Web obsługuje podgląd dokumentów Office (docx, xlsx, pptx) i PDF.  \n"
   - question: >
-      Którzy klienci poczty e-mail obsługują odwołań chronionych wiadomości e-mail?
+      Którzy klienci poczty e-mail obsługują odwoływanie chronionych wiadomości e-mail?
     answer: >
-      Outlook w sieci Web obsługuje odwołań chronionej poczty.  Aby [uzyskać szczegółowe informacje, zobacz Jak odwołać zaszyfrowaną wiadomość wysłaną](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) .
+      Outlook w sieci Web obsługuje odwoływanie chronionej poczty.  Aby uzyskać szczegółowe informacje [, zobacz Jak odwołać wysłaną zaszyfrowaną wiadomość](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) .
   - question: >
       Czy portal OME obsługuje podgląd zaszyfrowanych załączników w chronionych wiadomościach e-mail?
-    answer: "W portalu OME można wyświetlać podgląd zaszyfrowanych kopii załączników dodanych do zaszyfrowanej poczty. Typy plików pomocy technicznej obejmują pliki programu Word, Excel, PowerPoint i pliki PDF.  \n"
+    answer: "Portal OME obsługuje podgląd wszystkich zaszyfrowanych kopii załączników dodanych do zaszyfrowanej poczty. Typy plików pomocy technicznej obejmują pliki Word, Excel, Powerpoint i PDF.  \n"
   - question: >
-      Czy mogę automatycznie szyfrować wiadomości przez skonfigurowanie zasad?
-    answer: "Tak. Reguły przepływu poczty e-mail Exchange Online automatyczne szyfrowanie wiadomości na podstawie określonych warunków. Możesz na przykład utworzyć zasady oparte na identyfikatorze adresata, domenie adresata lub na zawartości w treści bądź temacie wiadomości. Zobacz [Definiowanie reguł przepływu poczty e-mail w celu szyfrowania wiadomości e-mail Office 365](define-mail-flow-rules-to-encrypt-email.md).\n  \n"
+      Czy można automatycznie szyfrować komunikaty, konfigurując zasady?
+    answer: "Tak. Użyj reguł przepływu poczty w Exchange Online, aby automatycznie zaszyfrować wiadomość na podstawie określonych warunków. Można na przykład utworzyć zasady oparte na identyfikatorze adresata, domenie adresata lub zawartości w treści lub temacie wiadomości. Zobacz [Definiowanie reguł przepływu poczty w celu szyfrowania wiadomości e-mail w Office 365](define-mail-flow-rules-to-encrypt-email.md).\n  \n"
   - question: >
       Czy mogę automatycznie usunąć szyfrowanie poczty przychodzącej i wychodzącej?
     answer: >
-      Administratorzy mogą skonfigurować regułę przepływu poczty e-mail w celu usunięcia szyfrowania poczty wychodzącej. Regułę usuwania szyfrowania dla poczty przychodzącej pochodzącej z Organizacji można skonfigurować tylko.
+      Administratorzy mogą skonfigurować regułę przepływu poczty w celu usunięcia szyfrowania poczty wychodzącej. Regułę można skonfigurować tylko w celu usunięcia szyfrowania dla poczty przychodzącej pochodzącej z Organizacji.
   - question: >
-      Czy mogę automatycznie szyfrować wiadomości, ustawiając zasady ochrony przed utratą danych (DLP, Data Loss Prevention) za pośrednictwem Centrum zgodności platformy Microsoft 365?
+      Czy można automatycznie szyfrować komunikaty, konfigurując zasady w usłudze Data Loss Prevention (DLP) za pośrednictwem portalu zgodności usługi Microsoft Purview?
     answer: >
-      Tak! Reguły przepływu poczty e-mail można skonfigurować w programie Exchange Online lub przy użyciu funkcji DLP w Centrum zgodności platformy Microsoft 365.
+      Tak! Reguły przepływu poczty można skonfigurować w Exchange Online lub przy użyciu protokołu DLP w portalu zgodności usługi Microsoft Purview.
   - question: >
-      Czy mogę dostosowywać zaszyfrowane wiadomości za pomocą  marki firmy?
-    answer: "Tak! Aby uzyskać informacje na temat dostosowywania wiadomości e-mail i portalu OME, zobacz Dodawanie marki organizacji do zaszyfrowanych wiadomości. Zobacz [Dodawanie marki organizacji do zaszyfrowanych wiadomości](add-your-organization-brand-to-encrypted-messages.md).\n  \n"
+      Czy mogę dostosować zaszyfrowane wiadomości za pomocą znakowania firmowego?
+    answer: "Tak! Aby uzyskać informacje na temat dostosowywania wiadomości e-mail i portalu OME, zobacz Dodawanie marki organizacji do zaszyfrowanych wiadomości. Zobacz [Dodawanie marki organizacji do zaszyfrowanych komunikatów](add-your-organization-brand-to-encrypted-messages.md).\n  \n"
   - question: >
-      Czy istnieją jakieś funkcje raportowania lub szczegółowe informacje dotyczące zaszyfrowanych wiadomości e-mail?
-    answer: "W Centrum zabezpieczeń i zgodności znajduje się raport szyfrowania. Zobacz [Wyświetlanie raportów zabezpieczeń poczty e-mail w Centrum & zgodności](../security/office-365-security/view-email-security-reports.md).\n  \n"
+      Czy istnieją możliwości raportowania lub szczegółowe informacje dotyczące zaszyfrowanych wiadomości e-mail?
+    answer: "W Centrum zabezpieczeń i zgodności znajduje się raport szyfrowania. Zobacz [Wyświetlanie raportów zabezpieczeń poczty e-mail w Centrum zgodności & zabezpieczeń](../security/office-365-security/view-email-security-reports.md).\n  \n"
   - question: >
-      Czy mogę używać szyfrowania wiadomości z funkcjami zgodności, takimi jak zbierania elektronicznych materiałów dowodowych?
+      Czy mogę używać szyfrowania komunikatów z funkcjami zgodności, takimi jak eDiscovery?
     answer: >
-      Tak, większość wiadomości chronionych za pomocą OME jest wykrywalna. Wiadomości chronione za pomocą usługi OME odbierane od innej organizacji Microsoft 365, która ma niestandardowe znakowanie zastosowane za pomocą reguły przepływu poczty e-mail, nie mogą być odszukiwalne przez usługę zbierania elektronicznych materiałów dowodowych. Innymi słowy, jeśli wiadomość nie jest dostępna za pośrednictwem skrzynki pocztowej użytkownika, a jedynie za pośrednictwem linku do portalu OME, nie można jej przeszukiwać. Aby [uzyskać szczegółowe informacje](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) , zobacz Działania zbierania elektronicznych materiałów dowodowych, które obsługują zaszyfrowane elementy.
+      Tak, większość komunikatów chronionych przez szyfrowanie komunikatów usługi Microsoft Purview jest wykrywalna. Chroniona poczta usługi Microsoft Purview Message Encryption otrzymywana od innej organizacji Microsoft 365, która ma niestandardowe znakowanie stosowane za pośrednictwem reguły przepływu poczty, jest nieodkryta przez usługę zbierania elektronicznych materiałów dowodowych. Innymi słowy, jeśli poczta nie jest dostępna za pośrednictwem skrzynki pocztowej użytkownika, ale raczej za pośrednictwem linku do portalu OME, nie można przeszukiwać poczty. Aby uzyskać szczegółowe informacje [, zobacz działania zbierania elektronicznych materiałów dowodowych, które obsługują zaszyfrowane elementy](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) .
   - question: >
       Czy mogę usunąć szyfrowanie z poczty e-mail?
     answer: >
-      Administratorzy mogą skonfigurować regułę przepływu poczty e-mail w celu usunięcia szyfrowania. Nie można usunąć szyfrowania przy użyciu reguły przepływu poczty e-mail z poczty stosowanej przez inną organizację.
+      Administratorzy mogą skonfigurować regułę przepływu poczty w celu usunięcia szyfrowania. Nie można usunąć szyfrowania przy użyciu reguły przepływu poczty z poczty stosowanej przez inną organizację.
   - question: >
       Czy mogę wysyłać jako udostępnioną skrzynkę pocztową i szyfrować wiadomości e-mail?
     answer: >
-      Gdy ktoś wyśle wiadomość e-mail, która jest inna niż reguła przepływu poczty szyfrowania, wiadomość jest szyfrowana przed jej wysłaniem.
+      Gdy ktoś wyśle wiadomość e-mail zgodną z regułą przepływu poczty szyfrowania, wiadomość zostanie zaszyfrowana przed jej wysłaniem.
   - question: >
-      Czy mogę otwierać zaszyfrowane wiadomości wysłane do udostępnionej skrzynki pocztowej?
+      Czy mogę otworzyć zaszyfrowane wiadomości wysyłane do udostępnionej skrzynki pocztowej?
     answer: >
-      Tak! Zaszyfrowane wiadomości z udostępnionej skrzynki pocztowej można otwierać po zalogowaniu się do obsługiwanego Outlook pocztowej.
+      Tak! Zaszyfrowane wiadomości dla udostępnionej skrzynki pocztowej można otwierać po zalogowaniu się do obsługiwanego klienta Outlook.
 
 
-      - Użytkownicy mogą otwierać chronione wiadomości e-mail w udostępnionej skrzynce pocztowej, w której udostępniona skrzynka pocztowa otrzymała chronioną pocztę w ramach grupy dystrybucyjnej.
+      - Użytkownicy mogą otwierać chronione wiadomości e-mail w udostępnionej skrzynce pocztowej, w której udostępniona skrzynka pocztowa otrzymała chronioną wiadomość e-mail w ramach grupy dystrybucyjnej.
 
 
-      - Użytkownicy mogą wyświetlać załączniki dziedziczące ochronę poczty e-mail, gdy używają aplikacji Outlook dla systemów Windows, Outlook dla komputerów Mac, Outlook dla systemu Android, Outlook dla systemu iOS i Outlook w sieci Web.
+      - Użytkownicy mogą wyświetlać załączniki, które dziedziczą ochronę po wiadomościach e-mail, gdy używają Outlook dla Windows, Outlook dla komputerów Mac, Outlook dla Android, Outlook dla iOS i Outlook w sieci Web.
 
 
       W poniższej tabeli wymieniono obsługiwanych klientów dla udostępnionych skrzynek pocztowych.
 
 
-      | Platforma | Czytanie wiadomości e-mail | Wyświetlanie załączników wiadomości e-mail |
+      | Platforma | Odczytywanie wiadomości e-mail | Wyświetlanie załączników wiadomości e-mail |
 
       |----------|-----------|------------------------|
 
@@ -189,48 +192,48 @@ sections:
 
       | Outlook dla komputerów Mac    | Tak | Tak                |
 
-      | Outlook dla systemu Android| Tak | Tak                |
+      | Outlook dla Android| Tak | Tak                |
 
-      | Outlook dla systemu iOS    | Tak | Tak                 |
+      | Outlook dla iOS    | Tak | Tak                 |
 
 
       > [!NOTE]
 
-      > Systemy Android i iOS będą używać aplikacji Office mobilnej do wyświetlania zaszyfrowanych załączników, a nie bezpośrednio w aplikacji Outlook urządzeniach przenośnych.
+      > Android i iOS będą używać aplikacji mobilnej Office do wyświetlania zaszyfrowanych załączników, a nie bezpośrednio w Outlook urządzeniach przenośnych.
 
 
-      Obecnie istnieją dwa znane ograniczenia:
+      Istnieją obecnie dwa znane ograniczenia:
 
 
-      - Przy użyciu aplikacji mobilnej nie można otwierać załączników do wiadomości e-mail odbieranych na urządzeniach Outlook przenośnych.
+      - Nie można otwierać załączników do wiadomości e-mail odbieranych na urządzeniach przenośnych przy użyciu Outlook mobile.
 
 
-      - W Outlook Win32 użytkownicy przypisani do udostępnionej skrzynki pocztowej za pośrednictwem grupy zabezpieczeń z obsługą poczty e-mail zobaczą wiadomość z powiadomieniem, aby wyświetlić zaszyfrowaną pocztę przy użyciu przeglądarki internetowej.  Aby wyświetlić zaszyfrowaną pocztę bezpośrednio w systemie Outlook Win32, usługa Outlook i klienci ujednoliconego mapowania usługi Azure Information Protection wymagają bezpośredniego przypisania użytkownika do udostępnionej skrzynki pocztowej z włączonymi uprawnieniami pełnego dostępu i automatycznym mapowaniem. Automatyczne mapowanie jest domyślnie włączone dla Exchange Online.
+      - W Outlook Win32 dla użytkowników przypisanych do udostępnionej skrzynki pocztowej za pośrednictwem grupy zabezpieczeń z obsługą poczty e-mail użytkownik zobaczy wiadomość e-mail z powiadomieniem, aby wyświetlić zaszyfrowaną pocztę za pomocą przeglądarki internetowej.  Aby wyświetlić zaszyfrowaną pocztę bezpośrednio w Outlook Win32, Outlook i klienci ujednoliconego etykietowania platformy Azure Information Protection wymagają bezpośredniego przypisania użytkownika do udostępnionej skrzynki pocztowej z włączonymi uprawnieniami pełnego dostępu i automatyczną aplikacją. Automatyczne aplikacje są domyślnie włączone dla Exchange Online.
 
 
       **Aby przypisać użytkownika do udostępnionej skrzynki pocztowej**
 
 
-      1. [Połączenie do Exchange Online przy użyciu zdalnej pracy z programem PowerShell.aspx](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)).
+      1. [Połączenie do Exchange Online programu PowerShell.aspx](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)).
 
 
-      2. Uruchom Add-MailboxPermission cmdlet z parametrem Automapping. W tym przykładzie Ayla ma uprawnienia pełnego dostępu do skrzynki pocztowej pomocy technicznej.
+      2. Uruchom polecenie cmdlet Add-MailboxPermission przy użyciu parametru Automapping. Ten przykład daje aplikacji Ayla pełne uprawnienia dostępu do skrzynki pocztowej pomocy technicznej.
 
          ```powershell
          Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
          ```
   - question: >
-      Czy w przypadku otwierania zaszyfrowanych wiadomości jest obsługiwany dostęp delegowany? Nawet jeśli pełnomocnik ma pełny dostęp do skrzynki pocztowej innego użytkownika?
+      Czy dostęp delegowany jest obsługiwany w przypadku otwierania zaszyfrowanych komunikatów? Nawet jeśli pełnomocnik ma pełny dostęp do skrzynki pocztowej innego użytkownika?
     answer: >
-      Delegowany dostęp do zaszyfrowanej poczty jest obsługiwany w aplikacjach Outlook w sieci Web, Outlook dla komputerów Mac, Outlook dla systemu iOS i Outlook Android.  Outlook dla Windows nie obsługuje dostępu delegowanego.
+      Delegowany dostęp do zaszyfrowanej poczty jest obsługiwany w Outlook w sieci Web, Outlook dla komputerów Mac, Outlook dla iOS i Outlook dla Android.  Outlook dla Windows nie obsługuje dostępu delegowanego.
   - question: >
-      Jak długo mam dostęp do poczty w portalu usługi OME?
+      Jak długo mam dostęp do poczty w portalu OME?
     answer: >
-      Możesz zalogować się do portalu OME, aby pobrać pocztę, o ile organizacja nadawcy jest aktywna, a poczta nie została skonfigurowana do wygaśnięcia.
+      Możesz zalogować się do portalu OME, aby pobrać wiadomość e-mail, o ile organizacja nadawcy jest aktywna, a poczta nie została skonfigurowana do wygaśnięcia.
   - question: >
-      Co zrobić, jeśli po żądaniu kodu nie otrzymam kodu w terminie?
+      Co zrobić, jeśli nie otrzymam jednorazowego kodu dostępu po jego zażądaniu?
     answer: >-
-      Najpierw sprawdź folder wiadomości-śmieci lub spam w kliencie poczty e-mail. Ustawienia DKIM i DMARC w Twojej organizacji mogą powodować, że te wiadomości e-mail będą filtrowane jako spam.
+      Najpierw sprawdź folder wiadomości-śmieci lub spam w kliencie poczty e-mail. Ustawienia DKIM i DMARC dla organizacji mogą spowodować, że te wiadomości e-mail będą filtrowane jako spam.
 
 
-      Następnie sprawdź kwarantannę w Centrum & zgodności. Często wiadomości zawierające kod wytyczysz w miejscu kwarantanny, zwłaszcza te, które są odbierane przez Twoją organizację jako pierwsze.
+      Następnie sprawdź kwarantannę w Centrum zgodności & zabezpieczeń. Często komunikaty zawierające jednorazowy kod dostępu, zwłaszcza te pierwsze, które otrzymuje organizacja, kończą się kwarantanną.

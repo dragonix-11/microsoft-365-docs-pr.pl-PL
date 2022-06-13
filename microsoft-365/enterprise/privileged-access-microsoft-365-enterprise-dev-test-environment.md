@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Skorzystaj z tego przewodnika po laboratorium testowym, aby włączyć zarządzanie dostępem uprzywilejowanym Microsoft 365 dla środowiska testowego przedsiębiorstwa.
-ms.openlocfilehash: 0c92cbd398e4c388fe3c5999c5e0aa9973c4ee06
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8520e4cf224164c62c10858e67359c0fa1a9fc85
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092100"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008446"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Zarządzanie dostępem uprzywilejowanym dla Microsoft 365 dla środowiska testowego przedsiębiorstwa
 
@@ -45,8 +45,8 @@ Jeśli chcesz skonfigurować zarządzanie dostępem uprzywilejowanym w sposób u
   
 Jeśli chcesz skonfigurować zarządzanie dostępem uprzywilejowanym w symulowanym przedsiębiorstwie, postępuj zgodnie z instrukcjami w temacie [Uwierzytelnianie przekazywane](pass-through-auth-m365-ent-test-environment.md).
   
->[!NOTE]
->Testowanie zarządzania dostępem uprzywilejowanym nie wymaga symulowanego środowiska testowego przedsiębiorstwa, które obejmuje symulowany intranet połączony z Internetem i synchronizację katalogów dla lasu Active Directory Domain Services. Jest ona dostępna w tym miejscu jako opcja umożliwiająca testowanie uprzywilejowanego zarządzania dostępem i eksperymentowanie z nim w środowisku reprezentującym typową organizację.
+> [!NOTE]
+> Testowanie zarządzania dostępem uprzywilejowanym nie wymaga symulowanego środowiska testowego przedsiębiorstwa, które obejmuje symulowany intranet połączony z Internetem i synchronizację katalogów dla lasu Active Directory Domain Services. Jest ona dostępna w tym miejscu jako opcja umożliwiająca testowanie uprzywilejowanego zarządzania dostępem i eksperymentowanie z nim w środowisku reprezentującym typową organizację.
 
 ## <a name="phase-2-configure-privileged-access-management"></a>Faza 2. Konfigurowanie zarządzania dostępem uprzywilejowanym
 
@@ -54,11 +54,11 @@ W tej fazie skonfiguruj grupę osób zatwierdzających i włącz zarządzanie do
 
 Aby skonfigurować dostęp uprzywilejowany i korzystać z niego w organizacji, wykonaj następujące kroki.
 
-#### <a name="step-1-create-an-approvers-group"></a>[Krok 1. Tworzenie grupy osoby zatwierdzającą](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
+### <a name="step-1-create-an-approvers-group"></a>[Krok 1. Tworzenie grupy osoby zatwierdzającą](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
 Przed rozpoczęciem korzystania z dostępu uprzywilejowanego określ, kto będzie miał urząd zatwierdzania dla przychodzących żądań dostępu do zadań z podwyższonym poziomem uprawnień i uprzywilejowanych. Wszyscy użytkownicy należący do grupy Osoby zatwierdzające mogą zatwierdzać żądania dostępu. Aby korzystać z dostępu uprzywilejowanego, należy utworzyć grupę zabezpieczeń z obsługą poczty w Microsoft 365. W środowisku testowym nadaj nowej grupie zabezpieczeń nazwę "Osoby zatwierdzające dostęp uprzywilejowany" i dodaj ciąg "Użytkownik 3", który został wcześniej utworzony w poprzednich krokach przewodnika po laboratorium testowym.
 
-#### <a name="step-2-enable-privileged-access"></a>[Krok 2. Włączanie dostępu uprzywilejowanego](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
+### <a name="step-2-enable-privileged-access"></a>[Krok 2. Włączanie dostępu uprzywilejowanego](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
 Dostęp uprzywilejowany musi być jawnie włączony w Microsoft 365 z domyślną grupą osób zatwierdzającą i musi zawierać zestaw kont systemowych, które mają zostać wykluczone z kontroli dostępu do zarządzania dostępem uprzywilejowanym. Pamiętaj, aby włączyć uprzywilejowany dostęp w organizacji przed rozpoczęciem fazy 3 tego przewodnika.
 
@@ -68,24 +68,28 @@ W tej fazie sprawdź, czy zasady dostępu uprzywilejowanego działają i czy uż
 
 ### <a name="test-the-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Testowanie możliwości wykonania zadania NIE zdefiniowanego w zasadach dostępu uprzywilejowanego
 
-Najpierw połącz się z programem PowerShell Exchange Management przy użyciu poświadczeń użytkownika skonfigurowanego przy użyciu roli Exchange Role Management w środowisku testowym i spróbuj utworzyć nową regułę dziennika. Zadanie [New-JournalRule](/powershell/module/exchange/new-journalrule) nie jest obecnie zdefiniowane w zasadach dostępu uprzywilejowanego dla organizacji.
+Najpierw spróbuj utworzyć nową regułę dziennika w programie Exchange Online programu PowerShell. Zadanie [New-JournalRule](/powershell/module/exchange/new-journalrule) nie jest obecnie zdefiniowane w zasadach dostępu uprzywilejowanego dla organizacji.
 
-1. Na komputerze lokalnym otwórz i zaloguj się do modułu Exchange Online Remote PowerShell w firmie **Microsoft Corporation** >  **Microsoft Exchange Online zdalnego modułu programu PowerShell** przy użyciu poświadczeń z rolą zarządzania rolami Exchange dla środowiska testowego.
-2. W programie PowerShell zarządzania Exchange utwórz nową regułę dziennika dla swojej organizacji:
+1. Na komputerze lokalnym [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu poświadczeń z rolą zarządzania rolami Exchange dla środowiska testowego.
+2. Utwórz nową regułę dziennika dla swojej organizacji, uruchamiając następujące polecenie:
 
-   ```ExchangeManagementPowerShell
+   ```PowerShell
    New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
    ```
 
-3. Wyświetl, że nowa reguła dziennika została pomyślnie utworzona w programie PowerShell zarządzania Exchange.
+3. Sprawdź, czy nowa reguła dziennika została pomyślnie utworzona:
+
+   ```PowerShell
+   Get-JournalRule -Identity "JournalRule1"
+   ```
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Tworzenie nowych zasad dostępu uprzywilejowanego dla zadania New-JournalRule
 
->[!NOTE]
->Jeśli kroki 1 i 2 z fazy 2 tego przewodnika nie zostały jeszcze ukończone, wykonaj kroki, aby utworzyć grupę osoby zatwierdzającą o nazwie "Osoby zatwierdzające dostęp do uprawnień", aby włączyć uprzywilejowany dostęp w środowisku testowym.
+> [!NOTE]
+> Jeśli kroki 1 i 2 z fazy 2 tego przewodnika nie zostały jeszcze ukończone, wykonaj kroki, aby utworzyć grupę osoby zatwierdzającą o nazwie "Osoby zatwierdzające dostęp do uprawnień", aby włączyć uprzywilejowany dostęp w środowisku testowym.
 
 1. Zaloguj się do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) przy użyciu poświadczeń z rolą Exchange Role Management dla środowiska testowego.
-2. W Centrum administracyjnym przejdź do **obszaru Ustawienia** >  **Zabezpieczenia &** prywatnośćUprzywilejowany  > **dostęp**.
+2. W Centrum administracyjnym przejdź do **obszaru Ustawienia** >  **Zabezpieczenia &****dostęp uprzywilejowany** prywatności > .
 3. Wybierz pozycję **Zarządzaj zasadami dostępu i żądaniami**.
 4. Wybierz pozycję **Konfiguruj zasady**, a następnie wybierz **pozycję Dodaj zasady**.
 5. Z pól listy rozwijanej wybierz lub wprowadź następujące wartości:
@@ -96,17 +100,17 @@ Najpierw połącz się z programem PowerShell Exchange Management przy użyciu p
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Testowanie wymagań dotyczących zatwierdzania zadania New-JournalRule zdefiniowanego w zasadach dostępu uprzywilejowanego
 
-1. Na komputerze lokalnym otwórz i zaloguj się do modułu Exchange Online Remote PowerShell w firmie **Microsoft Corporation** >  **Microsoft Exchange Online zdalnego modułu programu PowerShell** przy użyciu poświadczeń z rolą zarządzania rolami Exchange dla środowiska testowego.
+1. Na komputerze lokalnym [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu poświadczeń z rolą zarządzania rolami Exchange dla środowiska testowego.
 
-2. W programie PowerShell zarządzania Exchange utwórz nową regułę dziennika dla swojej organizacji:
+2. W Exchange Online programu PowerShell utwórz nową regułę dziennika dla swojej organizacji:
 
-   ```ExchangeManagementPowerShell
+   ```PowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-3. Wyświetl błąd "Niewystarczające uprawnienia" w programie PowerShell zarządzania Exchange:
+3. Wyświetl błąd "Niewystarczające uprawnienia" w Exchange Online programie PowerShell:
 
-   ```ExchangeManagementPowerShell
+   ```PowerShell
    Insufficient permissions. Please raise an elevated access request for this task.
        + CategoryInfo          : NotSpecified: (:) [], LocalizedException
        + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
@@ -118,7 +122,7 @@ Najpierw połącz się z programem PowerShell Exchange Management przy użyciu p
 
 1. Zaloguj się do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) przy użyciu poświadczeń z rolą Exchange Role Management dla środowiska testowego.
 
-2. W Centrum administracyjnym przejdź do **obszaru Ustawienia** >  **Zabezpieczenia &** prywatnośćUprzywilejowany  > **dostęp**.
+2. W Centrum administracyjnym przejdź do **obszaru Ustawienia** >  **Zabezpieczenia &****dostęp uprzywilejowany** prywatności > .
 
 3. Wybierz pozycję **Zarządzaj zasadami dostępu i żądaniami**.
 
@@ -132,7 +136,7 @@ Najpierw połącz się z programem PowerShell Exchange Management przy użyciu p
 
 1. Zaloguj się do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) przy użyciu poświadczeń użytkownika 3 w środowisku testowym (członek grupy zabezpieczeń "Osoby zatwierdzające dostęp uprzywilejowany" w środowisku testowym).
 
-2. W Centrum administracyjnym przejdź do **obszaru Ustawienia** >  **Zabezpieczenia &** prywatnośćUprzywilejowany  > **dostęp**.
+2. W Centrum administracyjnym przejdź do **obszaru Ustawienia** >  **Zabezpieczenia &****dostęp uprzywilejowany** prywatności > .
 
 3. Wybierz pozycję **Zarządzaj zasadami dostępu i żądaniami**.
 
@@ -140,15 +144,19 @@ Najpierw połącz się z programem PowerShell Exchange Management przy użyciu p
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Testowanie tworzenia nowej reguły dziennika z uprzywilejowanym dostępem zatwierdzonym dla zadania New-JournalRule
 
-1. Na komputerze lokalnym otwórz i zaloguj się do modułu Exchange Online Remote PowerShell w firmie **Microsoft Corporation** >  **Microsoft Exchange Online zdalnego modułu programu PowerShell** przy użyciu poświadczeń z rolą zarządzania rolami Exchange dla środowiska testowego.
+1. Na komputerze lokalnym [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu poświadczeń z rolą zarządzania rolami Exchange dla środowiska testowego.
 
-2. W programie PowerShell zarządzania Exchange utwórz nową regułę dziennika dla swojej organizacji:
+2. W Exchange Online programu PowerShell utwórz nową regułę dziennika dla swojej organizacji:
 
-   ```ExchangeManagementPowerShell
+   ```PowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-3. Wyświetl, że nowa reguła dziennika została pomyślnie utworzona w programie PowerShell zarządzania Exchange.
+3. Sprawdź, czy nowa reguła dziennika została pomyślnie utworzona:
+
+   ```PowerShell
+   Get-JournalRule -Identity "JournalRule2"
+   ```
 
 ## <a name="next-step"></a>Następny krok
 

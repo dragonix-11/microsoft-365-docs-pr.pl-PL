@@ -23,18 +23,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Jak utworzyć niestandardowe zasady archiwizacji i usuwania rekordów obsługi komunikatów (MRM), aby automatycznie przenosić elementy do skrzynki pocztowej archiwum użytkownika.
-ms.openlocfilehash: 892f10b7cb57fcc85a7eb364d35730adb2d9c99d
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 9ea642dc9d6aa4e66938703b45a8af0bab53476f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393507"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013007"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Dostosowywanie zasad archiwum i usuwania skrzynek pocztowych w organizacji
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview administratorzy mogą utworzyć zasady archiwizacji i usuwania, które automatycznie przenosi elementy do [skrzynki pocztowej archiwum](archive-mailboxes.md) użytkownika i automatycznie usuwa elementy ze skrzynki pocztowej.
+Administratorzy usługi Microsoft Purview mogą utworzyć zasady archiwizacji i usuwania, które automatycznie przenosi elementy do [skrzynki pocztowej archiwum](archive-mailboxes.md) użytkownika i automatycznie usuwa elementy ze skrzynki pocztowej.
 
 Można to zrobić, tworząc zasady przechowywania zarządzania rekordami obsługi komunikatów (MRM), które następnie są przypisywane do skrzynek pocztowych. Te zasady przenosi elementy do archiwum skrzynki pocztowej użytkownika po określonym czasie, a także usuwa elementy ze skrzynki pocztowej po osiągnięciu określonego limitu wieku.
 
@@ -68,7 +68,7 @@ Możesz wykonać niektóre lub wszystkie kroki opisane w tym artykule, aby skonf
 
 Pierwszym krokiem jest upewnienie się, że każdy użytkownik w organizacji ma archiwum skrzynki pocztowej. Skrzynka pocztowa archiwum użytkownika musi być włączona, aby tag przechowywania z akcją przechowywania "Przenieś do archiwum" mógł przenieść element po upływie wieku przechowywania.
 
-Aby uzyskać instrukcje dotyczące włączania archiwalnych skrzynek pocztowych, zobacz [Włączanie archiwalnych skrzynek pocztowych w portal zgodności Microsoft Purview](enable-archive-mailboxes.md).
+Aby uzyskać instrukcje dotyczące włączania archiwalnych skrzynek pocztowych, zobacz [Włączanie archiwalnych skrzynek pocztowych w portalu zgodności usługi Microsoft Purview](enable-archive-mailboxes.md).
   
 > [!NOTE]
 > Skrzynki pocztowe archiwum można włączyć w dowolnym momencie w trakcie tego procesu, tak długo, jak długo zostaną włączone w pewnym momencie przed ukończeniem procesu. Jeśli skrzynka pocztowa archiwum nie jest włączona, nie jest podejmowana żadna akcja dotycząca żadnych elementów, do których przypisano archiwum lub zasady usuwania.
@@ -87,7 +87,7 @@ Aby utworzyć nowe tagi przechowywania, użyjesz <a href="https://go.microsoft.c
   
 1. Przejdź do obszaru [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) i zaloguj się przy użyciu poświadczeń.
   
-2. W usłudze EAC przejdź do obszaru **Zarządzanie zgodnością** >  **Tagi ponownej obsługi**
+2. W usłudze EAC przejdź do pozycji **Tagi przechowywania** **zarządzania zgodnością** > 
 
     Zostanie wyświetlona lista tagów przechowywania dla organizacji.
 
@@ -95,7 +95,7 @@ Aby utworzyć nowe tagi przechowywania, użyjesz <a href="https://go.microsoft.c
   
 Najpierw utworzysz niestandardowy domyślny tag zasad archiwum (DPT), który przeniesie elementy do skrzynki pocztowej archiwum po 3 latach.
   
-1. Na stronie **Tagi przechowywania** wybierz pozycję **Nowy tagNowa**![ ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), a następnie wybierz pozycję **Zastosowane automatycznie do całej skrzynki pocztowej (wartość domyślna).**
+1. Na stronie **Tagi przechowywania** wybierz pozycję **Nowy tag**![Nowa ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), a następnie wybierz pozycję **Zastosowane automatycznie do całej skrzynki pocztowej (wartość domyślna).**
 
 2. Na stronie **Nowy tag zastosowany automatycznie do całej skrzynki pocztowej (domyślnej)** wypełnij następujące pola: 
 
@@ -117,7 +117,7 @@ Najpierw utworzysz niestandardowy domyślny tag zasad archiwum (DPT), który prz
   
 Następnie utworzysz kolejny niestandardowy program DPT, ale będzie to zasada usuwania, która trwale usuwa elementy po 7 latach.
   
-1. Na stronie **Tagi przechowywania** wybierz pozycję **Nowy tagNowa**![ ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), a następnie wybierz pozycję **Zastosowane automatycznie do całej skrzynki pocztowej (wartość domyślna).**
+1. Na stronie **Tagi przechowywania** wybierz pozycję **Nowy tag**![Nowa ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), a następnie wybierz pozycję **Zastosowane automatycznie do całej skrzynki pocztowej (wartość domyślna).**
 
 2. Na stronie **Nowy tag zastosowany automatycznie do całej skrzynki pocztowej (domyślnej)** wypełnij następujące pola: 
 
@@ -163,7 +163,7 @@ Ostatni tag przechowywania do utworzenia to niestandardowy tag zasad przechowywa
 
 Po utworzeniu niestandardowych tagów przechowywania następnym krokiem jest utworzenie nowych zasad przechowywania i dodanie tagów przechowywania. Dodasz trzy niestandardowe tagi przechowywania utworzone w kroku 2 oraz wbudowane tagi wymienione w pierwszej sekcji. W kroku 4 przypiszesz te nowe zasady przechowywania do skrzynek pocztowych użytkowników.
   
-1. W usłudze EAC przejdź do obszaru **Zarządzanie zgodnościąZasady** >  **ponownej konfiguracji**.
+1. W usłudze EAC przejdź do pozycji **Zasady przechowywania** **zarządzania zgodnością** > .
 
 2. Na stronie **Zasady przechowywania** wybierz pozycję **Nowa** ![ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
 
@@ -192,7 +192,7 @@ Po utworzeniu niestandardowych tagów przechowywania następnym krokiem jest utw
 
 Po utworzeniu nowej skrzynki pocztowej domyślnie są do niej przypisywane zasady przechowywania o nazwie Domyślne zasady MRM. W tym kroku zastąpisz te zasady przechowywania, przypisując nowe zasady przechowywania utworzone w kroku 3 do skrzynek pocztowych użytkowników w organizacji. Wymiana jest wymagana, ponieważ skrzynka pocztowa może mieć przypisane tylko jedną zasadę przechowywania mrm naraz. W tym kroku przyjęto założenie, że nowe zasady zostaną przypisane do wszystkich skrzynek pocztowych w organizacji.
   
-1. W usłudze EAC przejdź do pozycji **AdresaciMailboxes** > .
+1. W usłudze EAC przejdź do **obszaru Skrzynki pocztowe** **adresatów** > .
 
     Zostanie wyświetlona lista wszystkich skrzynek pocztowych użytkowników w organizacji.
 
@@ -288,6 +288,6 @@ Można to zrobić za pomocą programu Exchange Online Programu PowerShell w celu
     |Nigdy nie usuwaj  <br/> |Ten tag uniemożliwia usunięcie elementów przez zasady przechowywania.  <br/> |Wbudowane  <br/> |Osobiste; Ten tag może być stosowany przez użytkowników.  <br/> |
     |Osobiste 1 rok przenieść do archiwum  <br/> |Przenosi elementy do skrzynki pocztowej archiwum po 1 roku.  <br/> |Wbudowane  <br/> |Osobiste; Ten tag może być stosowany przez użytkowników.  <br/> |
 
-    > <sup>\*</sup>Użytkownicy mogą użyć narzędzia Odzyskaj usunięte elementy w Outlook i Outlook w sieci Web (wcześniej znanego jako Outlook Web App), aby odzyskać usunięty element w okresie przechowywania usuniętego elementu, który domyślnie wynosi 14 dni w Exchange Online. Administrator może użyć Windows PowerShell, aby zwiększyć okres przechowywania usuniętych elementów do maksymalnie 30 dni. Aby uzyskać więcej informacji, zobacz: [Odzyskiwanie usuniętych elementów w Outlook dla Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) i [Zmiana okresu przechowywania usuniętego elementu dla skrzynki pocztowej w Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
+    > <sup>\*</sup>Użytkownicy mogą użyć narzędzia Odzyskaj usunięte elementy w Outlook i Outlook w sieci Web (wcześniej znanego jako Outlook Web App), aby odzyskać usunięty element w okresie przechowywania usuniętego elementu, który domyślnie wynosi 14 dni w Exchange Online. Administrator może użyć Exchange Online programu PowerShell, aby skrócić okres przechowywania usuniętych elementów do maksymalnie 30 dni. Aby uzyskać więcej informacji, zobacz: [Odzyskiwanie usuniętych elementów w Outlook dla Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) i [Zmiana okresu przechowywania usuniętego elementu dla skrzynki pocztowej w Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
 - Użycie tagu Przechowywanie **elementów możliwych do odzyskania przez 14 dni pomaga zwolnić** miejsce do magazynowania w folderze Elementy możliwe do odzyskania w podstawowej skrzynce pocztowej użytkownika. Jest to przydatne, gdy skrzynka pocztowa użytkownika jest wstrzymana, co oznacza, że nic nie jest trwale usuwane ze skrzynki pocztowej użytkownika. Bez przenoszenia elementów do skrzynki pocztowej archiwum możliwe jest osiągnięcie limitu przydziału magazynu dla folderu Elementy możliwe do odzyskania w podstawowej skrzynce pocztowej. Aby uzyskać więcej informacji na ten temat i jak tego uniknąć, zobacz [Zwiększanie limitu przydziału elementów możliwych do odzyskania dla skrzynek pocztowych zablokowanych](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrukcje publikowania etykiet przechowywania, dzięki czemu można je zastosować w aplikacjach, aby zachować to, czego potrzebujesz, i usunąć to, czego nie potrzebujesz.
-ms.openlocfilehash: 110115cad46e819ac32d482ab6ecd1eba2129201
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 3acbe0632a387139bbe865b854a92f8e51609cc1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285527"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007333"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach
 
@@ -94,7 +94,7 @@ Jeśli publikujesz etykiety przechowywania w Exchange, wyświetlanie etykiet prz
 
 Jeśli etykiety nie są wyświetlane po siedmiu dniach, sprawdź **stan** zasad etykiety, wybierając je na stronie **Zasady etykiet** w portalu zgodności usługi Microsoft Purview. Jeśli zobaczysz **(błąd)** uwzględniony w stanie i w szczegółach lokalizacji zobaczysz komunikat, że wdrożenie zasad trwa dłużej niż oczekiwano lub spróbuj ponownie wdrożyć zasady, spróbuj uruchomić polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) , aby ponowić próbę dystrybucji zasad:
 
-1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Uruchom jedno z następujących poleceń:
     
